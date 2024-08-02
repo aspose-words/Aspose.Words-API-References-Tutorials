@@ -16,7 +16,7 @@ Hallo daar! Heeft u zich ooit afgevraagd hoe u Word-documenten programmatisch ku
 Voordat we beginnen, zijn er een paar dingen die je nodig hebt:
 
 1. Basiskennis van C#: U hoeft geen expert te zijn, maar een basiskennis van C# kan nuttig zijn.
-2.  Aspose.Words voor .NET: dat kan[download het hier](https://releases.aspose.com/words/net/) Als u het niet meteen wilt aanschaffen, kunt u kiezen voor een[gratis proefperiode](https://releases.aspose.com/).
+2.  Aspose.Words voor .NET: dat kan[download het hier](https://releases.aspose.com/words/net/) . Als u het niet meteen wilt aanschaffen, kunt u kiezen voor een[gratis proefperiode](https://releases.aspose.com/).
 3. Visual Studio: Elke versie zou moeten werken, maar de nieuwste versie wordt aanbevolen.
 4. .NET Framework: zorg ervoor dat het op uw computer is geïnstalleerd.
 
@@ -66,7 +66,7 @@ Nu we onze secties hebben, moeten we ze openen zodat we hun inhoud kunnen manipu
 Section section = doc.Sections[2];
 ```
 
- In deze stap hebben we toegang tot het derde deel van ons document. Houd er rekening mee dat de index op nul is gebaseerd, dus`Sections[2]` verwijst naar het derde deel.
+In deze stap hebben we toegang tot het derde deel van ons document. Houd er rekening mee dat de index op nul is gebaseerd, dus`Sections[2]` verwijst naar het derde deel.
 
 ## Stap 4: Inhoud aan een sectie toevoegen
 
@@ -102,7 +102,7 @@ Hier slaan we het document op als "output.docx". U kunt dit bestand openen in Mi
 
 ## Conclusie
 
- En daar heb je het! U hebt met succes secties in een Word-document gemanipuleerd met Aspose.Words voor .NET. Deze tutorial behandelde de basisprincipes van het maken van een document, het toevoegen van secties en het manipuleren van de inhoud ervan. Met Aspose.Words kun je veel complexere bewerkingen uitvoeren, dus aarzel niet om de mogelijkheden te verkennen[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde functies.
+En daar heb je het! U hebt met succes secties in een Word-document gemanipuleerd met Aspose.Words voor .NET. Deze tutorial behandelde de basisprincipes van het maken van een document, het toevoegen van secties en het manipuleren van de inhoud ervan. Met Aspose.Words kun je veel complexere bewerkingen uitvoeren, dus aarzel niet om de mogelijkheden te verkennen[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde functies.
 
 ## Veelgestelde vragen
 
@@ -116,7 +116,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 
 ## 3. Wat zijn de belangrijkste kenmerken van Aspose.Words voor .NET?
 
-Aspose.Words voor .NET biedt een breed scala aan functies, waaronder het maken, opmaken, converteren en manipuleren van documenten. U kunt meer lezen over de mogelijkheden in de[API-documentatie](https://reference.aspose.com/words/net/).
+ Aspose.Words voor .NET biedt een breed scala aan functies, waaronder het maken, opmaken, converteren en manipuleren van documenten. U kunt meer lezen over de mogelijkheden in de[API-documentatie](https://reference.aspose.com/words/net/).
 
 ## 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 

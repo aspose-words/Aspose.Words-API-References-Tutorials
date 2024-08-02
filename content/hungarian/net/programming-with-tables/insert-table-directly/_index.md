@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-tables/insert-table-directly/
 ---
 ## Bevezetés
-A táblázatok programozott létrehozása komoly kihívást jelenthet, különösen összetett dokumentumszerkezetek kezelésekor. De ne aggódj, azért vagyunk itt, hogy lebontsuk neked! Ebben az útmutatóban az Aspose.Words for .NET segítségével táblázatot közvetlenül Word-dokumentumba illeszthetünk be. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az oktatóanyag segít a folyamat egyszerű elsajátításában.
+táblázatok programozott létrehozása komoly kihívást jelenthet, különösen összetett dokumentumszerkezetek kezelésekor. De ne aggódj, azért vagyunk itt, hogy lebontsuk neked! Ebben az útmutatóban az Aspose.Words for .NET segítségével táblázatot közvetlenül Word-dokumentumba illeszthetünk be. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az oktatóanyag segít a folyamat egyszerű elsajátításában.
 
 ## Előfeltételek
 
@@ -63,7 +63,7 @@ Itt létrehozunk egy új táblázatot, és hozzáfűzzük a dokumentumunk első 
 
 ## 3. lépés: Sorok és cellák hozzáadása
 
-A táblázat sorokból és cellákból áll. Adjuk hozzá ezeket az elemeket lépésről lépésre.
+táblázat sorokból és cellákból áll. Adjuk hozzá ezeket az elemeket lépésről lépésre.
 
 ### Sor hozzáadása
 
@@ -100,7 +100,7 @@ A sejtek hozzáadásának felgyorsítása érdekében klónozhatjuk a meglévő 
 
 ```csharp
 // Ezután megismételjük a folyamatot a táblázat többi cellájára és sorára.
-// Meglévő sejtek és sorok klónozásával is felgyorsíthatjuk a dolgokat.
+//Meglévő sejtek és sorok klónozásával is felgyorsíthatjuk a dolgokat.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Gratulálunk! Sikeresen beszúrt egy táblázatot közvetlenül egy Word-dokumen
  Igen, kérheti a[ingyenes próbaverzió](https://releases.aspose.com/) hogy vásárlás előtt értékelje a könyvtárat.
 
 ### Hogyan vásárolhatom meg az Aspose.Words for .NET fájlt?
- Az Aspose.Words for .NET megvásárolható a[vásárlási oldal](https://purchase.aspose.com/buy).
+Az Aspose.Words for .NET megvásárolható a[vásárlási oldal](https://purchase.aspose.com/buy).
 
 ### Hol találom az Aspose.Words for .NET dokumentációját?
  A dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

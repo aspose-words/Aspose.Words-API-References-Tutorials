@@ -16,8 +16,8 @@ Bu eğitimlerle, belgenizdeki metni, paragrafları ve bölümleri biçimlendirme
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Stillere Erişim](./access-styles/) | Aspose.Words for .NET ile belge stillerine nasıl erişeceğinizi öğrenin. Belgelerinizin stillerini değiştirmek için öğreticiyi tamamlayın. |
-| [Stilleri Kopyala](./copy-styles/) | Aspose.Words for .NET ile stilleri belgeler arasında nasıl kopyalayacağınızı öğrenin. |
-| [Tema Özelliklerini Al](./get-theme-properties/) | Aspose.Words for .NET ile bir belgenin tema özelliklerini keşfedin. Benzersiz bir görünüm için stilleri ve renkleri özelleştirin. |
-| [Tema Özelliklerini Ayarla](./set-theme-properties/) | Aspose.Words for .NET ile tema özelliklerini değiştirerek belgelerinizin görünümünü özelleştirmeyi öğrenin. Profesyonel ve çekici sonuçlar elde edin. |
-| [Stil Ayırıcı Ekle](./insert-style-separator/) | Özel stillere sahip belgeler oluşturmayı ve hassas, profesyonel biçimlendirme için stil ayırıcılar eklemeyi öğrenin. |
+| [Word'de Belge Stillerini Alma](./access-styles/) | Bu ayrıntılı adım adım eğitimle Aspose.Words for .NET kullanarak Word'de belge stillerini nasıl alacağınızı öğrenin. .NET uygulamalarınızda stillere programlı olarak erişin ve bunları yönetin. |
+| [Word Belgesi Stillerini Kopyala](./copy-styles/) | Aspose.Words for .NET kullanarak Word belge stillerini nasıl kopyalayacağınızı öğrenin. Tutarlı belge biçimlendirmesini zahmetsizce sağlamak için adım adım kılavuzumuzu izleyin. |
+| [Word'de Belge Teması Özelliklerini Alma](./get-theme-properties/) | Aspose.Words for .NET kullanarak Word'de belge teması özelliklerine nasıl erişeceğinizi ve bunları nasıl yöneteceğinizi keşfedin. Kılavuzumuzla yazı tiplerini ve renkleri almayı öğrenin. |
+| [Word Belgesinde Tema Özelliklerini Ayarlama](./set-theme-properties/) | Aspose.Words for .NET kullanarak Word belgelerinde tema özelliklerini nasıl ayarlayacağınızı öğrenin. Yazı tiplerini ve renkleri kolayca özelleştirmek için adım adım kılavuzumuzu izleyin. |
+| [Word'e Belge Stili Ayırıcısını Ekle](./insert-style-separator/) | Aspose.Words for .NET kullanarak Word'e nasıl belge stili ayırıcı ekleyeceğinizi öğrenin. Bu kılavuz, belge stillerini yönetmeye ilişkin talimatlar ve ipuçları sağlar. |

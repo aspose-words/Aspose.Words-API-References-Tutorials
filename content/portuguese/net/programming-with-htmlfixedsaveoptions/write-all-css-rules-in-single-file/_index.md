@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Etapa 3: configurar opções de salvamento de HTML
 
- Agora, precisamos configurar as opções de salvamento do HTML. Especificamente, queremos habilitar o recurso que grava todas as regras CSS em um único arquivo. Isto é conseguido definindo o`SaveFontFaceCssSeparately`propriedade para`false`.
+ Agora, precisamos configurar as opções de salvamento de HTML. Especificamente, queremos habilitar o recurso que grava todas as regras CSS em um único arquivo. Isto é conseguido definindo o`SaveFontFaceCssSeparately`propriedade para`false`.
 
 ```csharp
 // Configure opções de backup com o recurso "Gravar todas as regras CSS em um arquivo"

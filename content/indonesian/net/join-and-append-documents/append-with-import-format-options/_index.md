@@ -90,7 +90,7 @@ Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menam
 
 ## FAQ
 
-### Bisakah saya tetap menyimpan penomoran dokumen tujuan dan bukan sumbernya?
+### Bisakah saya menyimpan penomoran dokumen tujuan dan bukan sumbernya?
  Ya, Anda dapat memodifikasinya`ImportFormatOptions` untuk mencapai hal ini.
 
 ### Bagaimana jika saya tidak memiliki Aspose.Words untuk .NET?

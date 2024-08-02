@@ -1,6 +1,6 @@
 ---
-title: 掌握文档格式化技术以实现视觉效果
-linktitle: 掌握文档格式化技术以实现视觉效果
+title: 掌握文档格式化技术以实现视觉冲击
+linktitle: 掌握文档格式化技术以实现视觉冲击
 second_title: Aspose.Words Python 文档管理 API
 description: 了解如何使用 Aspose.Words for Python 掌握文档格式。使用字体样式、表格、图像等创建具有视觉吸引力的文档。带有代码示例的分步指南。
 type: docs

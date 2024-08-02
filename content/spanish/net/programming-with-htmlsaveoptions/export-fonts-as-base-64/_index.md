@@ -9,7 +9,7 @@ url: /es/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## Introducción
 
-Cuando se trata de manipular documentos de Word mediante programación, Aspose.Words para .NET es una potencia. Una de sus ingeniosas funciones es exportar fuentes como Base64 dentro de archivos HTML, lo que garantiza que las fuentes se incrusten y se muestren correctamente en diferentes navegadores y sistemas. En este tutorial, profundizaremos en cómo puede lograr esto. ¿Listo para hacer que las fuentes de sus documentos de Word sean compatibles con la web? ¡Empecemos!
+Cuando se trata de manipular documentos de Word mediante programación, Aspose.Words para .NET es una potencia. Una de sus ingeniosas funciones es exportar fuentes como Base64 dentro de archivos HTML, lo que garantiza que las fuentes se incrusten y se muestren correctamente en diferentes navegadores y sistemas. En este tutorial, profundizaremos en cómo puede lograr esto. ¿Listo para hacer que las fuentes de sus documentos de Word sean compatibles con la Web? ¡Empecemos!
 
 ## Requisitos previos
 

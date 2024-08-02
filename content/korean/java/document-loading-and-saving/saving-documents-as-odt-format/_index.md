@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-odt-format/
 
 이 기사에서는 Aspose.Words for Java를 사용하여 문서를 ODT(Open Document Text) 형식으로 저장하는 방법을 살펴보겠습니다. ODT는 OpenOffice 및 LibreOffice를 포함한 다양한 Office 제품군에서 사용되는 널리 사용되는 개방형 표준 문서 형식입니다. 문서를 ODT 형식으로 저장하면 이러한 소프트웨어 패키지와의 호환성을 보장할 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

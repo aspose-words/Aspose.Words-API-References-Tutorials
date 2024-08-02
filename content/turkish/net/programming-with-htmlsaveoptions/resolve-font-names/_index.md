@@ -9,7 +9,7 @@ url: /tr/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 ## giriiş
 
-Merhaba kodlayıcı arkadaşım! Word belgelerini HTML olarak kaydederken kendinizi yazı tipi sorunlarıyla boğuşurken bulduysanız, yalnız değilsiniz. Yazı tipleri yanıltıcı olabilir ama endişelenmeyin; Arkanı kolluyorum. Bugün Aspose.Words for .NET'i kullanarak Word belgelerinizdeki yazı tipi adlarını nasıl çözümleyeceğinizi ayrıntılı olarak inceleyeceğiz. Bu kılavuz, yazı tiplerinizin HTML biçiminde tam olarak doğru görünmesini sağlayarak süreç boyunca size adım adım yol gösterecektir.
+Merhaba kodlayıcı arkadaşım! Word belgelerini HTML olarak kaydederken kendinizi yazı tipi sorunlarıyla boğuşurken bulduysanız, yalnız değilsiniz. Yazı tipleri yanıltıcı olabilir ama endişelenmeyin; Arkanı kolluyorum. Bugün Aspose.Words for .NET'i kullanarak Word belgelerinizdeki yazı tipi adlarını nasıl çözümleyeceğinizi ayrıntılı olarak inceliyoruz. Bu kılavuz, yazı tiplerinizin HTML biçiminde tam olarak doğru görünmesini sağlayarak süreç boyunca size adım adım yol gösterecektir.
 
 ## Önkoşullar
 

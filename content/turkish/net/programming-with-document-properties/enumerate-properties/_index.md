@@ -40,7 +40,7 @@ using Aspose.Words.Properties;
 
 ## 3. Adım: Belgenizi Yükleyin
 
-Daha sonra çalışmak istediğiniz Word belgesini yükleyelim. Bu örnek için proje dizininizde bulunan "Properties.docx" isimli bir belge kullanacağız.
+Daha sonra çalışmak istediğiniz Word belgesini yükleyelim. Bu örnek için proje dizininizde bulunan "Properties.docx" adlı bir belge kullanacağız.
 
 1. Belge Yolunu Tanımlayın: Belgenizin yolunu belirtin.
 2.  Belgeyi Yükleyin: Aspose.Words'ü kullanın`Document` Belgeyi yüklemek için sınıf.

@@ -9,7 +9,7 @@ url: /tr/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## giriiş
 
-Merhaba geliştirici arkadaşlar! Hiç kendinizi bir Word belgesi projesinin içinde buldunuz mu ve "Dostum, işleri ayırmak için buraya gerçekten yatay bir kural eklemem gerekiyor" diye düşündünüz mü? Öyleyse tahmin et? Şanslısın! Bugünkü dersimizde Aspose.Words for .NET kullanarak bir Word belgesine yatay kuralın nasıl ekleneceği konusunu ele alacağız. Bu sıradan bir eğitim değil; ayrıntılı adımlar, ilgi çekici açıklamalar ve biraz eğlenceyle dolu. O halde kemerlerinizi bağlayın ve Aspose.Words for .NET'i kullanma konusunda profesyonel olmaya hazırlanın!
+Merhaba geliştirici arkadaşlar! Hiç kendinizi bir Word belgesi projesinin içinde buldunuz ve "Dostum, işleri ayırmak için buraya gerçekten yatay bir kural eklemem gerekiyor" diye düşündünüz mü? Öyleyse tahmin et? Şanslısın! Bugünkü dersimizde Aspose.Words for .NET kullanarak bir Word belgesine yatay kuralın nasıl ekleneceği konusunu ele alacağız. Bu sıradan bir eğitim değil; ayrıntılı adımlar, ilgi çekici açıklamalar ve biraz eğlenceyle dolu. O halde kemerlerinizi bağlayın ve Aspose.Words for .NET'i kullanma konusunda profesyonel olmaya hazırlanın!
 
 ## Önkoşullar
 

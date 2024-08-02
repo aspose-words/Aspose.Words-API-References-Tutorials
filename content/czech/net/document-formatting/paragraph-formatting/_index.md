@@ -90,7 +90,7 @@ A voila! Váš dokument se uloží se zadaným formátováním. Snadné, že?
 
 ## Závěr
 
-Formátování odstavců v dokumentu aplikace Word nemusí být skličující úkol. S Aspose.Words for .NET máte k dispozici výkonný nástroj, díky kterému budou vaše dokumenty vypadat profesionálně a bez námahy. Ať už jde o nastavení odsazení, zarovnání nebo mezery, Aspose.Words to vše zvládne jako profesionál. Takže jděte do toho a vyzkoušejte to – transformujte svou hru na formátování dokumentů ještě dnes!
+Formátování odstavců v dokumentu aplikace Word nemusí být skličující úkol. S Aspose.Words for .NET máte k dispozici výkonný nástroj, díky kterému budou vaše dokumenty vypadat profesionálně a bez námahy. Ať už jde o nastavení odsazení, zarovnání nebo mezery, Aspose.Words to vše zvládne jako profesionál. Takže jděte do toho a vyzkoušejte to – transformujte svou hru formátování dokumentů ještě dnes!
 
 ## FAQ
 

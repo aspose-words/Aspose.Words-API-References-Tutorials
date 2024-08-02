@@ -96,7 +96,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，可讓您使用 C# 以
 不可以，一旦清理完成並儲存文檔，您就無法撤銷變更。始終保留原始文件的備份。
 
 ### 我需要 Aspose.Words for .NET 的授權嗎？
-是的，Aspose.Words for .NET 需要完整功能的授權。您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license)或者[購買一個](https://purchase.aspose.com/buy).
+是的，Aspose.Words for .NET 需要完整功能的授權。你可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license)或者[購買一個](https://purchase.aspose.com/buy).
 
 ### 我可以在哪裡找到更多資訊和支援？
 你可以找到詳細的文檔[這裡](https://reference.aspose.com/words/net/)並獲得來自[Aspose論壇](https://forum.aspose.com/c/words/8).

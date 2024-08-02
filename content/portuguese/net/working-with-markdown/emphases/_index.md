@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### P: Como realço texto usando Markdown?
 
-R: Para destacar texto usando Markdown, simplesmente coloque o texto entre os símbolos apropriados. Usar`*` ou`_` para itálico,`**` ou`__` para ousado e`~~` para tachado.
+ R: Para destacar texto usando Markdown, simplesmente coloque o texto entre os símbolos apropriados. Usar`*` ou`_` para itálico,`**` ou`__` para ousado e`~~` para tachado.
 
 #### P: Podemos combinar diferentes destaques no mesmo texto?
 

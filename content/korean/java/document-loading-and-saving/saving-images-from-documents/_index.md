@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/saving-images-from-documents/
 
 이 튜토리얼에서는 Aspose.Words for Java를 사용하여 문서에서 이미지를 저장하는 방법을 살펴보겠습니다. 이미지 저장을 위한 다양한 시나리오와 사용자 정의 옵션을 다룹니다. 이 가이드에서는 소스 코드 예제와 함께 단계별 지침을 제공합니다.
 
-## 전제조건
+## 전제 조건
 
  시작하기 전에 Aspose.Words for Java 라이브러리가 프로젝트에 통합되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/java/).
 

@@ -50,7 +50,7 @@ Most hozzunk létre egy új Word-dokumentumot. Ez a dokumentum vászonként szol
 Document doc = new Document();
 ```
 
-## 3. lépés: A DocumentBuilder használata
+## 3. lépés: Használja a DocumentBuilder programot
 
  A`DocumentBuilder` osztály az Aspose.Words-ben egy hatékony eszköz, amely segít a dokumentumok létrehozásában. Arra használjuk, hogy beszúrjunk egy diagramot a dokumentumunkba.
 
@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 4. lépés: Helyezzen be egy diagramot
 
-Szúrjunk be egy diagramot a dokumentumunkba. Ehhez a példához egy szóródiagramot fogunk használni.
+Szúrjunk be egy diagramot a dokumentumunkba. Ehhez a példához szóródiagramot fogunk használni.
 
  Használni a`InsertChart` módszere a`DocumentBuilder` osztályba, beszúrhatunk egy szóródiagramot a dokumentumunkba.
 

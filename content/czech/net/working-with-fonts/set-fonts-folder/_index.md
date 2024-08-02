@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Nastavte adresář písem
- Vytvořte instanci souboru`FontSettings` třídy a použijte`SetFontsFolder` metoda k určení adresáře obsahujícího fonty. Nahradit`"Fonts"` s názvem aktuálního adresáře písem.
+ Vytvořte instanci souboru`FontSettings` třídy a použijte`SetFontsFolder` metoda k určení adresáře obsahujícího fonty. Nahradit`"Fonts"` s názvem aktuálního adresáře fontů.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -65,7 +65,7 @@ gratuluji! Nyní víte, jak nastavit adresář písem v Aspose.Words pro .NET. T
 
 #### Otázka: Mohu v Aspose.Words nastavit více složek písem?
 
- Odpověď: Ano, můžete nastavit více složek písem v Aspose.Words voláním`SetFontsFolders` metodu vícekrát s cestami různých složek písem, které chcete použít.
+ Odpověď: Ano, můžete nastavit více složek písem v Aspose.Words voláním`SetFontsFolders` vícekrát s cestami různých složek písem, které chcete použít.
 
 #### Otázka: Co se stane, když písmo použité v dokumentu není přítomno v definovaných složkách písem?
 

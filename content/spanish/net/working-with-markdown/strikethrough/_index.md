@@ -53,7 +53,7 @@ builder.Writeln("This text will be StrikeThrough");
 
 #### P: ¿Cómo puedo agregar el texto tachado en Aspose.Words?
 
- R: Para agregar el texto tachado en Aspose.Words, puede usar el`Font.StrikeThrough` propiedad de la`Run`objeto. Puede establecer esta propiedad en`true` para agregar texto tachado a un texto específico. Por ejemplo, puedes usar`run.Font.StrikeThrough=true` para agregar el texto tachado en el`Run` objeto.
+ R: Para agregar el texto tachado en Aspose.Words, puede usar el`Font.StrikeThrough` propiedad de la`Run` objeto. Puede establecer esta propiedad en`true` para agregar texto tachado a un texto específico. Por ejemplo, puedes usar`run.Font.StrikeThrough=true` para agregar el texto tachado en el`Run` objeto.
 
 #### P: ¿Es posible agregar texto tachado a varios fragmentos de texto en el mismo párrafo?
 

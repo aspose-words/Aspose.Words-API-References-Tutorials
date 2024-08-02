@@ -129,7 +129,7 @@ private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
 }
 ```
 
-Most, hogy felvázoltuk a lépéseket, az Aspose.Words for Java segítségével minden lépést megvalósíthat a Java-projektben, és HTML-oldalakra oszthatja fel a dokumentumokat. Ez a folyamat lehetővé teszi dokumentumai strukturált HTML-megjelenítésének létrehozását, így hozzáférhetőbbé és felhasználóbarátabbá téve azokat.
+Most, hogy felvázoltuk a lépéseket, az Aspose.Words for Java segítségével minden lépést megvalósíthat a Java-projektben, hogy a dokumentumokat HTML-oldalakra bontsa. Ez a folyamat lehetővé teszi dokumentumai strukturált HTML-megjelenítésének létrehozását, így hozzáférhetőbbé és felhasználóbarátabbá téve azokat.
 
 ## Következtetés
 

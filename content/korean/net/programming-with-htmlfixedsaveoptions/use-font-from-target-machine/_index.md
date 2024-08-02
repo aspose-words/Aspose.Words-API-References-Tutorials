@@ -11,7 +11,7 @@ url: /ko/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 
 Aspose.Words for .NET의 매혹적인 세계로 뛰어들 준비가 되셨습니까? 버클을 채우세요. 마법 같은 글꼴 영역을 통해 여러분을 여행으로 안내할 것이기 때문입니다. 오늘은 Word 문서 작업 시 대상 컴퓨터의 글꼴을 사용하는 방법에 중점을 두고 있습니다. 이 멋진 기능은 문서를 보는 위치에 관계없이 문서가 의도한 대로 정확하게 보이도록 보장합니다. 시작하자!
 
-## 전제조건
+## 전제 조건
 
 핵심적인 세부 사항을 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
@@ -19,7 +19,7 @@ Aspose.Words for .NET의 매혹적인 세계로 뛰어들 준비가 되셨습니
 2. 개발 환경: Visual Studio와 같은 .NET 개발 환경이 설정되어 있어야 합니다.
 3. 작업할 문서: 테스트할 Word 문서를 준비하세요. 우리는 "대체 글꼴이 있는 글머리 기호.docx"라는 문서를 사용할 것입니다.
 
-이제 기본 사항을 다루었으므로 코드를 살펴보겠습니다!
+이제 기본 사항을 다루었으므로 코드를 살펴보겠습니다.
 
 ## 네임스페이스 가져오기
 
@@ -89,7 +89,7 @@ HTML 파일을 저장한 디렉터리로 이동하여 웹 브라우저에서 엽
 System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
 ```
 
-그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에서 대상 컴퓨터의 글꼴을 성공적으로 사용했습니다.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에서 대상 시스템의 글꼴을 성공적으로 사용했습니다.
 
 ## 결론
 
@@ -110,4 +110,4 @@ System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseF
  예, 다음을 사용할 수 있습니다.`DocumentRenderer` 저장하기 전에 문서를 미리 보는 클래스입니다. .NET용 Aspose.Words를 확인하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은.
 
 ### HTML 출력을 추가로 사용자 정의할 수 있나요?
- 전적으로! 그만큼`HtmlFixedSaveOptions` 클래스는 HTML 출력을 사용자 정의하기 위한 다양한 속성을 제공합니다. 탐험해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 사용 가능한 모든 옵션에 대해.
+ 전적으로! 그만큼`HtmlFixedSaveOptions` 클래스는 HTML 출력을 사용자 정의하기 위한 다양한 속성을 제공합니다. 탐색[선적 서류 비치](https://reference.aspose.com/words/net/) 사용 가능한 모든 옵션에 대해.

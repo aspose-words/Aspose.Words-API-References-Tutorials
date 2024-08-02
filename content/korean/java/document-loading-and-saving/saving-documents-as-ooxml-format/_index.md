@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-ooxml-format/
 
 이 가이드에서는 Aspose.Words for Java를 사용하여 문서를 OOXML 형식으로 저장하는 방법을 살펴보겠습니다. OOXML(Office Open XML)은 Microsoft Word 및 기타 Office 응용 프로그램에서 사용되는 파일 형식입니다. OOXML 형식으로 문서를 저장하기 위한 다양한 옵션과 설정을 다룹니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 프로젝트에 Aspose.Words for Java 라이브러리가 설정되어 있는지 확인하세요.
 

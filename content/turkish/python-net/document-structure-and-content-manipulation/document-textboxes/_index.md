@@ -106,7 +106,7 @@ Bu kılavuzda Aspose.Words Python API'sini kullanarak Word belgelerindeki metin 
 
 ### Metin kutusuna nasıl kenarlık eklerim?
 
- Kullanarak bir metin kutusuna kenarlıklar ekleyebilirsiniz.`textbox.border` mülkiyet ve görünümünün özelleştirilmesi.
+ Kullanarak bir metin kutusuna kenarlıklar ekleyebilirsiniz.`textbox.border`mülkiyet ve görünümünün özelleştirilmesi.
 
 ### Bir metin kutusuna köprüler yerleştirebilir miyim?
 

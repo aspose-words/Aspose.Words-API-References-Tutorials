@@ -2,51 +2,82 @@
 title: Omtrekrand toepassen
 linktitle: Omtrekrand toepassen
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het toepassen van een omtrekrand op een tabel met Aspose.Words voor .NET.
+description: Leer hoe u een omtrekrand toepast op een tabel in Word met behulp van Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor de perfecte tabelopmaak.
 type: docs
 weight: 10
 url: /nl/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u stapsgewijs door het proces om een omtrekrand op een tabel toe te passen met behulp van Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze tutorial heeft u een duidelijk inzicht in hoe u tabelranden in uw Word-documenten kunt manipuleren met Aspose.Words voor .NET.
+In de tutorial van vandaag duiken we in de wereld van documentmanipulatie met Aspose.Words voor .NET. Concreet gaan we leren hoe we een omtrekrand kunnen toepassen op een tabel in een Word-document. Dit is een fantastische vaardigheid om in uw gereedschapskist te hebben als u vaak werkt met het automatisch genereren en formatteren van documenten. Laten we dus beginnen aan deze reis om uw tafels niet alleen functioneel, maar ook visueel aantrekkelijk te maken.
 
-## Stap 1: Definieer de documentmap
-Eerst moet u het pad naar uw documentenmap instellen. Dit is waar uw Word-document wordt opgeslagen. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
+## Vereisten
+
+Voordat we ingaan op de code, zijn er een paar dingen die je nodig hebt:
+
+1.  Aspose.Words voor .NET: Aspose.Words voor .NET moet geïnstalleerd zijn. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een geschikte ontwikkelomgeving zoals Visual Studio.
+3. Basiskennis van C#: Een fundamenteel begrip van C# zal u helpen de tutorial te volgen.
+
+## Naamruimten importeren
+
+Zorg er om te beginnen voor dat u de benodigde naamruimten importeert. Dit is cruciaal voor toegang tot de Aspose.Words-functionaliteiten.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Stap 2: Upload het document
- Vervolgens moet u het Word-document in een exemplaar van het`Document` klas.
+Laten we het proces opsplitsen in eenvoudige, beheersbare stappen.
+
+## Stap 1: Laad het document
+
+Eerst moeten we het Word-document laden dat de tabel bevat die we willen opmaken.
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Stap 3: Ga naar de tabel
- Om een omtrekrand toe te passen, hebben we toegang tot de tabel in het document nodig. De`Table` klasse vertegenwoordigt een tabel in Aspose.Words.
+ In deze stap gebruiken we de`Document` klasse van Aspose.Words om een bestaand document te laden. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw document is opgeslagen.
+
+## Stap 2: Toegang tot de tabel
+
+Vervolgens moeten we toegang krijgen tot de specifieke tabel die we willen opmaken. 
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Stap 4: Lijn de tabel uit met het midden van de pagina
- Nu kunnen we de tabel uitlijnen op het midden van de pagina met behulp van de`Alignment` eigendom van de tafel.
+ Hier,`GetChild` methode haalt de eerste tabel in het document op. De parameters`NodeType.Table, 0, true` Zorg ervoor dat we het juiste knooppunttype krijgen.
+
+## Stap 3: Lijn de tabel uit
+
+Laten we nu de tabel op de pagina centreren.
 
 ```csharp
-table. Alignment = Table Alignment. Center;
+table.Alignment = TableAlignment.Center;
 ```
 
-## Stap 5: Wis bestaande tabelranden
-Om met een nieuwe omtrekrand te beginnen, moeten we eerst alle bestaande randen uit de tabel wissen. Dit kan gedaan worden met behulp van de`ClearBorders()` methode.
+Deze stap zorgt ervoor dat de tafel netjes gecentreerd staat, waardoor deze een professionele uitstraling krijgt.
+
+## Stap 4: Wis bestaande grenzen
+
+Voordat we nieuwe grenzen toepassen, moeten we eventuele bestaande grenzen opruimen.
 
 ```csharp
-table. ClearBorders();
+table.ClearBorders();
 ```
 
-## Stap 6: Definieer een groene rand rond de tafel
- We kunnen nu een groene rand rond de tafel plaatsen met behulp van de`SetBorder()` methode voor elke kant van de tafel. In dit voorbeeld gebruiken we een rand van het type "Enkel" met een dikte van 1,5 punten en een groene kleur.
+Het opruimen van de randen zorgt ervoor dat onze nieuwe randen netjes worden aangebracht, zonder dat oude stijlen zich ermee bemoeien.
+
+## Stap 5: Stel de omtrekranden in
+
+Laten we nu de groene omtrekranden op de tabel toepassen.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -55,45 +86,47 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Stap 7: Vul de cellen met een achtergrondkleur
-Om de visuele presentatie van de tabel te verbeteren, kunnen we de cellen vullen met een grondachtergrondkleur
+ Elk randtype (links, rechts, boven, onder) wordt afzonderlijk ingesteld. We gebruiken`LineStyle.Single` voor een vaste lijn,`1.5` voor de lijndikte, en`Color.Green` voor de randkleur.
 
-idee. In dit voorbeeld gebruiken we een lichtgroene kleur.
+## Stap 6: Pas celschaduw toe
+
+Om de tabel visueel aantrekkelijker te maken, vullen we de cellen met een lichtgroene kleur.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
-## Stap 8: Sla het gewijzigde document op
-Ten slotte slaan we het gewijzigde document op in een bestand. U kunt een geschikte naam en locatie voor het uitvoerdocument kiezen.
+ Hier,`SetShading` wordt gebruikt om een effen lichtgroene kleur op de cellen aan te brengen, waardoor de tafel opvalt.
+
+## Stap 7: Bewaar het document
+
+Sla ten slotte het gewijzigde document op.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-Gefeliciteerd! U hebt nu een omtrekrand op een tabel toegepast met behulp van Aspose.Words voor .NET.
-
-### Voorbeeldbroncode voor Apply Outline Border met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Lijn de tabel uit met het midden van de pagina.
-	table.Alignment = TableAlignment.Center;
-	//Verwijder eventuele bestaande randen uit de tabel.
-	table.ClearBorders();
-	// Plaats een groene rand rond de tafel, maar niet binnenin.
-	table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// Vul de cellen met een lichtgroene effen kleur.
-	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
-```
+Met deze stap slaat u uw document op met de toegepaste opmaak. Je kunt hem openklappen en de mooi opgemaakte tafel zien.
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u een omtrekrand op een tabel kunt toepassen met behulp van Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen, kunt u deze functionaliteit eenvoudig integreren in uw C#-projecten. Het manipuleren van tabelopmaak is een essentieel aspect van documentverwerking, en Aspose.Words biedt een krachtige en flexibele API om dit te bereiken. Met deze kennis kunt u de visuele presentatie van uw Word-documenten verbeteren en aan specifieke eisen voldoen.
+
+En daar heb je het! Door deze stappen te volgen, hebt u met succes een omtrekrand toegepast op een tabel in een Word-document met behulp van Aspose.Words voor .NET. Deze tutorial behandelde het laden van het document, het openen van de tabel, het uitlijnen ervan, het opheffen van bestaande randen, het toepassen van nieuwe randen, het toevoegen van celarcering en ten slotte het opslaan van het document. 
+
+Met deze vaardigheden kunt u de visuele presentatie van uw tabellen verbeteren, waardoor uw documenten professioneler en aantrekkelijker worden. Veel codeerplezier!
+
+## Veelgestelde vragen
+
+### Kan ik verschillende stijlen toepassen op elke rand van de tafel?  
+ Ja, u kunt op elke rand verschillende stijlen en kleuren toepassen door de parameters in het aan te passen`SetBorder` methode.
+
+### Hoe kan ik de breedte van de rand wijzigen?  
+ U kunt de breedte wijzigen door de derde parameter in het`SetBorder` methode. Bijvoorbeeld,`1.5` stelt een breedte van 1,5 punt in.
+
+### Is het mogelijk om schaduw toe te passen op individuele cellen?  
+ Ja, u kunt arcering toepassen op individuele cellen door elke cel te openen en de`SetShading` methode.
+
+### Kan ik andere kleuren gebruiken voor randen en schaduwen?  
+ Absoluut! U kunt elke kleur gebruiken die beschikbaar is in de`System.Drawing.Color` klas.
+
+### Hoe kan ik de tafel horizontaal uitlijnen?  
+ De`table.Alignment = TableAlignment.Center;` regel in de code centreert de tabel horizontaal op de pagina.

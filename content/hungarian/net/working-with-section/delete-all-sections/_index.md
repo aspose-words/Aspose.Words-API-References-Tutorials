@@ -48,7 +48,7 @@ Most, hogy a dokumentumunk betöltődött, a következő lépés az összes szak
 doc.Sections.Clear();
 ```
 
-Ez az egyszerű kódsor törli a betöltött dokumentum összes szakaszát. De hogyan működik? Bontsuk szét:
+Ez az egyszerű kódsor törli a betöltött dokumentum összes szakaszát. De hogyan működik? Bontsuk fel:
 
 - `doc.Sections` eléri a dokumentum részeit.
 - `.Clear()` eltávolítja az összes részt a dokumentumból.

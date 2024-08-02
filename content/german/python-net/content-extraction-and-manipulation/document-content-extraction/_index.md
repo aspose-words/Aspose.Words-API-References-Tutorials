@@ -14,7 +14,7 @@ Das effiziente Extrahieren von Inhalten aus Word-Dokumenten ist eine häufige An
 
 ## Voraussetzungen
 
-Bevor wir uns in den Code vertiefen, stellen Sie sicher, dass Sie Python und die Aspose.Words-Bibliothek installiert haben. Sie können die Bibliothek von der Website herunterladen[Hier](https://releases.aspose.com/words/python/)Stellen Sie außerdem sicher, dass Sie ein Word-Dokument zum Testen bereit haben.
+ Bevor wir uns in den Code vertiefen, stellen Sie sicher, dass Sie Python und die Aspose.Words-Bibliothek installiert haben. Sie können die Bibliothek von der Website herunterladen[Hier](https://releases.aspose.com/words/python/)Stellen Sie außerdem sicher, dass Sie ein Word-Dokument zum Testen bereit haben.
 
 ## Installieren von Aspose.Words für Python
 

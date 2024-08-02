@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/configuring-rtf-load-options/
 
 이 가이드에서는 Aspose.Words for Java를 사용하여 RTF 로드 옵션을 구성하는 방법을 살펴보겠습니다. RTF(Rich Text Format)는 Aspose.Words로 로드하고 조작할 수 있는 널리 사용되는 문서 형식입니다. 우리는 특정 옵션에 중점을 둘 것입니다.`RecognizeUtf8Text`를 사용하면 RTF 문서의 UTF-8 인코딩 텍스트를 인식할지 여부를 제어할 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
  시작하기 전에 Aspose.Words for Java 라이브러리가 프로젝트에 통합되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[웹사이트](https://releases.aspose.com/words/java/).
 

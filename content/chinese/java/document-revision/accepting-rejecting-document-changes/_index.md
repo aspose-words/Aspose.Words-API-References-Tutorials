@@ -27,7 +27,7 @@ Document doc = new Document("document_with_changes.docx");
 
 ## 审阅文档更改
 
-加载文档后，检查更改至关重要。您可以遍历修订版本以查看所做的修改：
+加载文档后，检查更改至关重要。您可以遍历修订版本以查看进行了哪些修改：
 
 ```java
 //迭代修订

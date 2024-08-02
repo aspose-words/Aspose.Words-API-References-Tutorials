@@ -120,7 +120,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 #### S: Aspose.Words for .NET ile OLE paketine OLE nesnesi eklemenin tam bir örneğini verebilir misiniz?
 
-C: Burada Aspose.Words for .NET kullanarak bir OLE paketiyle bir OLE nesnesi eklemek için tam bir örnek kod bulabilirsiniz. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun:
+C: Burada Aspose.Words for .NET kullanarak bir OLE paketiyle bir OLE nesnesi eklemek için tam bir örnek kod bulacaksınız. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun:
 
 ```csharp
 Document doc = new Document();

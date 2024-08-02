@@ -22,7 +22,7 @@ Trước khi bắt tay vào viết mã, hãy đảm bảo bạn có mọi thứ 
 
 ## Nhập không gian tên
 
-Trước tiên, hãy đảm bảo rằng dự án của chúng ta đã sẵn sàng. Chúng ta cần nhập các không gian tên cần thiết. Điều này giống như việc chuẩn bị sân khấu trước màn trình diễn chính.
+Trước tiên, hãy đảm bảo rằng dự án của chúng ta đã sẵn sàng. Chúng ta cần nhập các không gian tên cần thiết. Điều này giống như việc chuẩn bị sân khấu trước màn biểu diễn chính.
 
 ```csharp
 using Aspose.Words;
@@ -61,7 +61,7 @@ Bây giờ, hãy thêm một số nội dung ban đầu vào tài liệu của c
 builder.Writeln("sad mad bad");
 ```
 
-Chúng tôi đã thêm một dòng văn bản đơn giản mà chúng tôi sẽ làm việc. Hãy thoải mái tùy chỉnh nội dung này.
+Chúng tôi đã thêm một dòng văn bản đơn giản mà chúng tôi sẽ làm việc. Vui lòng tùy chỉnh nội dung này.
 
 ## Bước 4: Thực hiện thao tác Tìm và Thay thế
 
@@ -93,7 +93,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 Có, bạn có thể xâu chuỗi nhiều thao tác thay thế hoặc sử dụng biểu thức thông thường để khớp và thay thế nhiều mẫu.
 
 ### Aspose.Words cho .NET có miễn phí không?
- Aspose.Words for .NET là một thư viện trả phí, nhưng bạn có thể có được[dùng thử miễn phí](https://releases.aspose.com/) để kiểm tra các tính năng của nó.
+ Aspose.Words for .NET là một thư viện trả phí, nhưng bạn có thể có được[dùng thử miễn phí](https://releases.aspose.com/) để kiểm tra tính năng của nó.
 
 ### Tôi có thể thay thế văn bản bằng nội dung được định dạng không?
 Tuyệt đối! Aspose.Words cho phép bạn thay thế văn bản bằng nội dung được định dạng, bao gồm các phông chữ, màu sắc và kiểu dáng khác nhau.

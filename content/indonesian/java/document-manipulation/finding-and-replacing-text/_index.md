@@ -167,7 +167,7 @@ footer.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-Ini memungkinkan Anda melakukan penggantian teks khusus di header dan footer.
+Ini memungkinkan Anda melakukan penggantian teks secara khusus di header dan footer.
 
 ## Menampilkan Perubahan Urutan Header dan Footer
 
@@ -333,7 +333,7 @@ Ini memungkinkan Anda melakukan penggantian teks secara khusus di dalam tabel.
 
 ## Kesimpulan
 
-Aspose.Words untuk Java menyediakan kemampuan komprehensif untuk menemukan dan mengganti teks dalam dokumen Word. Apakah Anda perlu melakukan penggantian teks sederhana atau operasi lebih lanjut menggunakan ekspresi reguler, manipulasi bidang, atau evaluator khusus, Aspose.Words untuk Java siap membantu Anda. Pastikan untuk menjelajahi dokumentasi ekstensif dan contoh yang disediakan oleh Aspose untuk memanfaatkan potensi penuh dari perpustakaan Java yang kuat ini.
+Aspose.Words untuk Java memberikan kemampuan komprehensif untuk menemukan dan mengganti teks dalam dokumen Word. Apakah Anda perlu melakukan penggantian teks sederhana atau operasi lebih lanjut menggunakan ekspresi reguler, manipulasi bidang, atau evaluator khusus, Aspose.Words untuk Java siap membantu Anda. Pastikan untuk menjelajahi dokumentasi ekstensif dan contoh yang disediakan oleh Aspose untuk memanfaatkan potensi penuh dari perpustakaan Java yang kuat ini.
 
 ## FAQ
 

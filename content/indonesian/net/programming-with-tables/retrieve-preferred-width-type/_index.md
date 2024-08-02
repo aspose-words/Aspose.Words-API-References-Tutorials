@@ -2,64 +2,120 @@
 title: Ambil Jenis Lebar Pilihan
 linktitle: Ambil Jenis Lebar Pilihan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengambil jenis dan nilai lebar sel yang diinginkan di tabel Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengambil tipe lebar sel tabel yang diinginkan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/retrieve-preferred-width-type/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kita akan mempelajari cara mengambil tipe lebar pilihan dan nilainya dari sel tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan mengikuti panduan langkah demi langkah untuk memahami kode dan menerapkan fitur ini. Di akhir tutorial ini, Anda akan dapat mengambil tipe lebar pilihan (mutlak, relatif, atau otomatis) dan nilainya untuk sel tertentu di tabel dokumen Word Anda.
+Pernahkah Anda bertanya-tanya bagaimana cara mengambil tipe lebar sel tabel yang disukai di dokumen Word Anda menggunakan Aspose.Words untuk .NET? Nah, Anda berada di tempat yang tepat! Dalam tutorial ini, kami akan menguraikan prosesnya langkah demi langkah, menjadikannya sangat mudah. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan berguna dan menarik bagi Anda. Jadi, mari selami dan temukan rahasia di balik pengelolaan lebar sel tabel di dokumen Word.
 
-## Langkah 1: Pengaturan Proyek
-1. Luncurkan Visual Studio dan buat proyek C# baru.
-2. Tambahkan referensi ke perpustakaan Aspose.Words untuk .NET.
+## Prasyarat
 
-## Langkah 2: Memuat dokumen
-Untuk memulai Pemrosesan Kata dengan dokumen, ikuti langkah-langkah berikut:
+Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
 
-```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Anda memerlukan IDE seperti Visual Studio.
+3. Pengetahuan Dasar C#: Memahami dasar-dasar C# akan membantu Anda mengikutinya.
+4.  Contoh Dokumen: Siapkan dokumen Word dengan tabel yang bisa Anda kerjakan. Anda dapat menggunakan dokumen apa pun, tetapi kami akan menyebutnya sebagai`Tables.docx` dalam tutorial ini.
 
-// Muat dokumen
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Impor Namespace
 
-Pastikan untuk mengganti "DIREKTORI DOKUMEN ANDA" dengan jalur sebenarnya ke direktori dokumen Anda dan berikan nama file yang benar.
-
-## Langkah 3: Mengambil jenis dan nilai lebar yang diinginkan
-Selanjutnya, kita akan mengambil tipe lebar pilihan dan nilainya untuk sel tabel tertentu. Gunakan kode berikut:
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Langkah ini penting karena menyiapkan lingkungan kita untuk menggunakan fitur Aspose.Words.
 
 ```csharp
-// Ambil mejanya
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Aktifkan penyesuaian tabel otomatis
-table. AllowAutoFit = true;
-
-// Ambil sel pertama dari baris pertama
-Cell firstCell = table.FirstRow.FirstCell;
-
-// Ambil jenis lebar yang diinginkan dan nilainya
-PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
-double value = firstCell.CellFormat.PreferredWidth.Value;
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Di sini kita menggunakan dokumen untuk mengambil tabel pertama, lalu kita mengaktifkan penyesuaian tabel otomatis dengan`AllowAutoFit` Properti. Lalu kita mengambil sel pertama dari baris pertama tabel. Dari sel ini, kita dapat mengambil tipe lebar yang diinginkan dengan`PreferredWidth.Type` properti dan nilainya dengan`PreferredWidth.Value` Properti.
+## Langkah 1: Siapkan Direktori Dokumen Anda
 
-### Contoh kode sumber untuk Mengambil Jenis Lebar Pilihan menggunakan Aspose.Words untuk .NET 
+Sebelum kita memanipulasi dokumen kita, kita perlu menentukan direktori dimana dokumen itu berada. Ini adalah langkah sederhana namun penting.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda. Ini memberitahu program kita di mana menemukan file yang ingin kita kerjakan.
+
+## Langkah 2: Muat Dokumen
+
+Selanjutnya, kita memuat dokumen Word ke dalam aplikasi kita. Hal ini memungkinkan kita untuk berinteraksi dengan kontennya secara terprogram.
+
+```csharp
 Document doc = new Document(dataDir + "Tables.docx");
+```
+
+ Baris kode ini membuka`Tables.docx` dokumen dari direktori yang ditentukan. Sekarang, dokumen kami siap untuk operasi lebih lanjut.
+
+## Langkah 3: Akses Tabel
+
+Sekarang dokumen kita telah dimuat, kita perlu mengakses tabel yang ingin kita kerjakan. Untuk mempermudah, kami akan menargetkan tabel pertama dalam dokumen.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+Baris ini mengambil tabel pertama dari dokumen. Jika dokumen Anda berisi beberapa tabel, Anda bisa menyesuaikan indeks untuk memilih tabel yang berbeda.
+
+## Langkah 4: Aktifkan AutoFit untuk Tabel
+
+Untuk memastikan tabel menyesuaikan kolomnya secara otomatis, kita perlu mengaktifkan properti AutoFit.
+
+```csharp
 table.AllowAutoFit = true;
+```
+
+ Pengaturan`AllowAutoFit` ke`true` memastikan bahwa kolom tabel diubah ukurannya berdasarkan isinya, memberikan kesan dinamis pada tabel kita.
+
+## Langkah 5: Ambil Jenis Lebar Pilihan dari Sel Pertama
+
+Sekarang sampai pada inti tutorial kita—mengambil tipe lebar sel pertama yang diinginkan dalam tabel.
+
+```csharp
 Cell firstCell = table.FirstRow.FirstCell;
 PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
+ Baris kode ini mengakses sel pertama di baris pertama tabel dan mengambil jenis lebar dan nilai yang diinginkan. Itu`PreferredWidthType` dapat`Auto`, `Percent` , atau`Point`, menunjukkan bagaimana lebar ditentukan.
+
+## Langkah 6: Tampilkan Hasilnya
+
+Terakhir, mari tampilkan informasi yang diambil ke konsol.
+
+```csharp
+Console.WriteLine("Preferred Width Type: " + type);
+Console.WriteLine("Preferred Width Value: " + value);
+```
+
+Baris-baris ini akan mencetak jenis lebar dan nilai yang diinginkan ke konsol, sehingga Anda dapat melihat hasil eksekusi kode Anda.
+
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mengambil tipe lebar pilihan dan nilainya dari sel tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini dan menerapkan kode C# yang disediakan, Anda bisa mengambil informasi ini untuk sel tertentu di tabel dokumen Word Anda.
+
+Dan itu dia! Mengambil tipe lebar sel tabel yang diinginkan di dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah jika dipecah menjadi beberapa langkah yang dapat dikelola. Dengan mengikuti panduan ini, Anda bisa dengan mudah memanipulasi properti tabel di dokumen Word Anda, membuat tugas manajemen dokumen Anda jauh lebih efisien.
+
+## FAQ
+
+### Bisakah saya mengambil tipe lebar yang diinginkan untuk semua sel dalam tabel?
+
+Ya, Anda dapat mengulang setiap sel dalam tabel dan mengambil tipe lebar pilihannya satu per satu.
+
+###  Untuk apa nilai yang mungkin`PreferredWidthType`?
+
+`PreferredWidthType` dapat`Auto`, `Percent` , atau`Point`.
+
+### Apakah mungkin untuk mengatur tipe lebar yang diinginkan secara terprogram?
+
+ Sangat! Anda dapat mengatur jenis dan nilai lebar yang diinginkan menggunakan`PreferredWidth` properti dari`CellFormat` kelas.
+
+### Bisakah saya menggunakan metode ini untuk tabel di dokumen selain Word?
+
+Tutorial ini secara khusus mencakup dokumen Word. Untuk tipe dokumen lainnya, Anda perlu menggunakan pustaka Aspose yang sesuai.
+
+### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
+
+ Ya, Aspose.Words untuk .NET adalah produk berlisensi. Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/) atau izin sementara[Di Sini](https://purchase.aspose.com/temporary-license/).

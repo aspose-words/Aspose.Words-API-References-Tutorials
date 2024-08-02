@@ -37,7 +37,7 @@ fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## Steg 3: Hämta listan över tillgängliga teckensnitt
+## Steg 3: Få listan över tillgängliga typsnitt
  Nu kommer vi att bläddra bland de tillgängliga typsnitten med hjälp av`GetAvailableFonts()` metod på den första uppdaterade teckensnittskällan.
 
 ```csharp

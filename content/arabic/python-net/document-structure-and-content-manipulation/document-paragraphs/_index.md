@@ -119,7 +119,7 @@ page_setup.top_margin = aw.ConvertUtil.inch_to_point(1)
 
 ## تنسيق الجدول وتصميمه
 
-تعد الجداول وسيلة فعالة لتنظيم البيانات وعرضها. يتيح لك Aspose.Words تنسيق الجداول وتصميمها:
+تعد الجداول وسيلة فعالة لتنظيم البيانات وتقديمها. يتيح لك Aspose.Words تنسيق الجداول وتصميمها:
 
 ```python
 # Format and style tables

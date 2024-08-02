@@ -89,7 +89,7 @@ Esta línea guarda el documento con el nuevo formato. Puede consultar el resulta
 
 ## Conclusión
 
-¡Y ahí lo tienes! Acaba de aprender cómo cambiar el espaciado y las sangrías de los párrafos asiáticos en un documento de Word usando Aspose.Words para .NET. No fue tan difícil, ¿verdad? Si sigue estos pasos, podrá asegurarse de que sus documentos tengan un aspecto profesional y con buen formato, incluso cuando se trate de tipografía asiática compleja. Siga experimentando con diferentes valores y vea cuál funciona mejor para sus documentos. ¡Feliz codificación!
+¡Y ahí lo tienes! Acaba de aprender cómo cambiar el espaciado y las sangrías de los párrafos asiáticos en un documento de Word usando Aspose.Words para .NET. No fue tan difícil, ¿verdad? Si sigue estos pasos, podrá asegurarse de que sus documentos luzcan profesionales y con buen formato, incluso cuando se trata de tipografía asiática compleja. Siga experimentando con diferentes valores y vea cuál funciona mejor para sus documentos. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 

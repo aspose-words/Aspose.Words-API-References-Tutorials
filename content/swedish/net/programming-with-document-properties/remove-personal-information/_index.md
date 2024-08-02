@@ -88,4 +88,4 @@ Absolut! Aspose.Words stöder en mängd olika format inklusive DOCX, PDF, HTML o
 
 ### Vilka andra funktioner erbjuder Aspose.Words?
 
-Aspose.Words är fullspäckad med funktioner. Du kan skapa, redigera, konvertera och manipulera dokument på många olika sätt. För en fullständig lista, kolla in[dokumentation](https://reference.aspose.com/words/net/).
+Aspose.Words är fullproppad med funktioner. Du kan skapa, redigera, konvertera och manipulera dokument på många olika sätt. För en fullständig lista, kolla in[dokumentation](https://reference.aspose.com/words/net/).

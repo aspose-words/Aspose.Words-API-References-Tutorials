@@ -73,7 +73,7 @@ Puede personalizar las opciones de guardado de PCL para satisfacer sus requisito
 
 ### ¿Aspose.Words para Java es adecuado para el procesamiento por lotes de documentos de Word?
 
-Sí, Aspose.Words para Java es adecuado para el procesamiento por lotes. Puede automatizar la conversión de varios documentos al formato PCL sin esfuerzo.
+Sí, Aspose.Words para Java es muy adecuado para el procesamiento por lotes. Puede automatizar la conversión de varios documentos al formato PCL sin esfuerzo.
 
 ### ¿Puedo convertir otros formatos de documentos a PCL usando Aspose.Words para Java?
 

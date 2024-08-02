@@ -9,7 +9,7 @@ url: /it/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## introduzione
 
-Ehilà! Hai mai avuto la sensazione che i tuoi documenti Word fossero un po' disordinati? Hai presente quegli stili ed elenchi inutilizzati che restano lì, occupando spazio e facendo sembrare il tuo documento più complesso di quanto dovrebbe essere? Bene, sei fortunato! Oggi ci immergeremo in un piccolo trucchetto utilizzando Aspose.Words per .NET per ripulire gli stili e gli elenchi inutilizzati. È come fare un bel bagno rinfrescante al tuo documento. Quindi, prendi il tuo caffè, siediti e iniziamo!
+Ehilà! Hai mai avuto la sensazione che i tuoi documenti Word fossero un po' disordinati? Hai presente quegli stili ed elenchi inutilizzati che restano lì, occupando spazio e facendo sembrare il tuo documento più complesso di quanto dovrebbe essere? Bene, sei fortunato! Oggi ci immergeremo in un piccolo trucchetto utilizzando Aspose.Words per .NET per ripulire gli stili e gli elenchi inutilizzati. È come fare un bel bagno rinfrescante al tuo documento. Quindi, prendi il tuo caffè, siediti e cominciamo!
 
 ## Prerequisiti
 

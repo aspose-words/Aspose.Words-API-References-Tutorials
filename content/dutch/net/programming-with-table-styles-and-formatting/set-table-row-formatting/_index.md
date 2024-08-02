@@ -2,97 +2,111 @@
 title: Stel de opmaak van de tabelrijen in
 linktitle: Stel de opmaak van de tabelrijen in
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het instellen van de opmaak van tabelrijen met Aspose.Words voor .NET.
+description: Leer in onze handleiding hoe u de opmaak van tabelrijen in Word-documenten instelt met behulp van Aspose.Words voor .NET. Perfect voor het maken van goed opgemaakte en professionele documenten.
 type: docs
 weight: 10
 url: /nl/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u stapsgewijs door het proces om de opmaak van tabelrijen in te stellen met Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze tutorial weet u hoe u de hoogte en opvulling van een tabelrij in uw Word-documenten kunt aanpassen met Aspose.Words voor .NET.
+Als u de kunst van het opmaken van tabellen in Word-documenten onder de knie wilt krijgen met Aspose.Words voor .NET, bent u hier aan het juiste adres. Deze tutorial leidt u door het proces van het instellen van de opmaak van tabelrijen, zodat uw documenten niet alleen functioneel maar ook esthetisch aantrekkelijk zijn. Laten we er dus in duiken en die eenvoudige tabellen omzetten in goed opgemaakte tabellen!
 
-## Stap 1: Definieer de documentmap
-Eerst moet u het pad naar uw documentenmap instellen. Dit is de locatie waar u uw bewerkte Word-document wilt opslaan. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
+## Vereisten
+
+Voordat we met de zelfstudie beginnen, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+
+1.  Aspose.Words voor .NET - Als u dat nog niet heeft gedaan, downloadt en installeert u het vanaf[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving - Elke IDE zoals Visual Studio die .NET ondersteunt.
+3. Basiskennis van C# - Als u de basisconcepten van C# begrijpt, kunt u dit probleemloos volgen.
+
+## Naamruimten importeren
+
+Allereerst moet u de benodigde naamruimten importeren. Dit is van cruciaal belang omdat het ervoor zorgt dat u toegang heeft tot alle functionaliteiten van Aspose.Words voor .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Stap 2: Maak een nieuw document en een documentbuilder
- Vervolgens moet u een nieuw exemplaar van de`Document` klasse en een documentconstructor voor dat document.
+Laten we het proces opsplitsen in eenvoudige, verteerbare stappen. Elke stap bestrijkt een specifiek deel van het tabelopmaakproces.
+
+## Stap 1: Maak een nieuw document
+
+De eerste stap is het maken van een nieuw Word-document. Dit zal dienen als canvas voor uw tafel.
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Start een nieuwe tabel en voeg een cel toe
-Om te beginnen met het maken van de tabel, gebruiken we de`StartTable()` methode van de documentconstructor, vervolgens voegen we een cel aan de tabel toe met behulp van de`InsertCell()` methode.
+## Stap 2: Start een tabel
+
+ Vervolgens begint u met het maken van de tabel. De`DocumentBuilder` class biedt een eenvoudige manier om tabellen in te voegen en op te maken.
 
 ```csharp
-Table table = builder. StartTable();
-builder. InsertCell();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## Stap 4: Definieer de lijnopmaak
- Nu kunnen we de rijopmaak instellen door toegang te krijgen tot de`RowFormat` voorwerp van de`DocumentBuilder` voorwerp. Met de bijbehorende eigenschappen kunnen we de lijnhoogte en de marges (paddings) instellen.
+## Stap 3: Rijopmaak instellen
+
+Nu komt het leuke gedeelte: het instellen van de rijopmaak. U past de hoogte van de rij aan en geeft de hoogteregel op.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## Stap 5: Stel de tabelmarges in
- Vervolgens kunnen we de tabelopvullingen instellen door toegang te krijgen tot de overeenkomstige eigenschappen van de`Table` voorwerp. Deze marges worden toegepast op alle rijen van de tabel.
+## Stap 4: Breng opvulling aan op de tafel
+
+Opvulling voegt ruimte rond de inhoud in een cel toe, waardoor de tekst beter leesbaar wordt. U stelt de opvulling in voor alle zijden van de tafel.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## Stap 6: Voeg inhoud toe aan de rij
- Ten slotte kunnen we inhoud aan de regel toevoegen met behulp van de documentbuilder`Writeln()` methode.
+## Stap 5: Voeg inhoud toe aan de rij
+
+Nu de opmaak is doorgevoerd, is het tijd om wat inhoud aan de rij toe te voegen. Dit kan elke tekst of gegevens zijn die u wilt opnemen.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.Writeln("I'm a wonderfully formatted row.");
+builder.EndRow();
 ```
 
-## Stap 7: Maak de tabel af en sla het document op
-In
+## Stap 6: Maak de tabel af
 
- Uiteindelijk voltooien we het maken van de tabel met behulp van de`EndRow()`En`EndTable()` methode, dan slaan we het gewijzigde document op in een bestand.
+Om het proces voor het maken van de tabel af te ronden, moet u de tabel beëindigen en het document opslaan.
 
 ```csharp
-builder. EndRow();
-builder. EndTable();
+builder.EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-### Voorbeeldbroncode voor Set Table Row Formatting met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Deze opmaakeigenschappen worden ingesteld op de tabel en worden toegepast op alle rijen in de tabel.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
-```
-
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u de opmaak van tabelrijen kunt instellen met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen, kunt u eenvoudig de hoogte en marges van tabelrijen in uw Word-documenten aanpassen. Aspose.Words biedt een krachtige en flexibele API voor het manipuleren en opmaken van tabellen in uw documenten. Met deze kennis kunt u de visuele indeling van uw tafels aanpassen aan uw specifieke behoeften.
+
+En daar heb je het! U hebt met succes een opgemaakte tabel in een Word-document gemaakt met Aspose.Words voor .NET. Dit proces kan worden uitgebreid en aangepast aan complexere vereisten, maar deze basisstappen bieden een solide basis. Experimenteer met verschillende opmaakopties en kijk hoe deze uw documenten verbeteren.
+
+## Veelgestelde vragen
+
+### Kan ik voor elke rij in de tabel een andere opmaak instellen?
+ Ja, u kunt voor elke rij een individuele opmaak instellen door een andere opmaak toe te passen`RowFormat` eigenschappen voor elke rij die u maakt.
+
+### Is het mogelijk om andere elementen, zoals afbeeldingen, aan de tabelcellen toe te voegen?
+ Absoluut! U kunt afbeeldingen, vormen en andere elementen in de tabelcellen invoegen met behulp van de`DocumentBuilder` klas.
+
+### Hoe wijzig ik de tekstuitlijning binnen de tabelcellen?
+ U kunt de tekstuitlijning wijzigen door de`ParagraphFormat.Alignment` eigendom van de`DocumentBuilder` voorwerp.
+
+### Kan ik cellen in een tabel samenvoegen met Aspose.Words voor .NET?
+ Ja, u kunt cellen samenvoegen met behulp van de`CellFormat.HorizontalMerge`En`CellFormat.VerticalMerge` eigenschappen.
+
+### Is er een manier om de tabel op te maken met vooraf gedefinieerde stijlen?
+ Ja, met Aspose.Words voor .NET kunt u vooraf gedefinieerde tabelstijlen toepassen met behulp van de`Table.Style` eigendom.

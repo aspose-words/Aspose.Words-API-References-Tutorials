@@ -92,7 +92,7 @@ Les fichiers TXT ne prennent pas en charge le formatage de texte enrichi, la sor
 
 ### Puis-je convertir des fichiers DOCX vers d'autres formats à l'aide d'Aspose.Words pour .NET ?
 
-Oui, Aspose.Words for .NET prend en charge la conversion de fichiers DOCX vers différents formats tels que PDF, HTML, etc.
+Oui, Aspose.Words for .NET prend en charge la conversion de fichiers DOCX vers divers formats tels que PDF, HTML, etc.
 
 ### Où puis-je trouver davantage de didacticiels et d’assistance pour Aspose.Words for .NET ?
 

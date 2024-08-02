@@ -2,7 +2,7 @@
 title: Detecteer slimme kunstvorm
 linktitle: Detecteer slimme kunstvorm
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u SmartArt-vormen in Word-documenten kunt detecteren met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze handleiding. Perfect voor het automatiseren van uw documentworkflow.
+description: Leer hoe u SmartArt-vormen in Word-documenten kunt detecteren met Aspose.Words voor .NET met deze uitgebreide handleiding. Perfect voor het automatiseren van uw documentworkflow.
 type: docs
 weight: 10
 url: /nl/net/programming-with-shapes/detect-smart-art-shape/
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- In deze stap gebruiken we LINQ om de vormen met SmartArt te filteren en te tellen. De`GetChildNodes` methode haalt alle vormen op, en de`HasSmartArt`eigenschap controleert of een vorm SmartArt bevat.
+ In deze stap gebruiken we LINQ om de vormen met SmartArt te filteren en te tellen. De`GetChildNodes` methode haalt alle vormen op, en de`HasSmartArt` eigenschap controleert of een vorm SmartArt bevat.
 
 ## Stap 4: De code uitvoeren
 
@@ -80,7 +80,7 @@ Vervang 'X' door het werkelijke aantal SmartArt-vormen in uw document.
 
 ## Conclusie
 
- En daar heb je het! U hebt met succes geleerd hoe u SmartArt-vormen in Word-documenten kunt detecteren met Aspose.Words voor .NET. In deze tutorial werd aandacht besteed aan het instellen van uw omgeving, het laden van documenten, het detecteren van SmartArt-vormen en het uitvoeren van de code. Aspose.Words biedt een breed scala aan functies, dus zorg ervoor dat u de[API-documentatie](https://reference.aspose.com/words/net/) om zijn volledige potentieel te ontsluiten.
+En daar heb je het! U hebt met succes geleerd hoe u SmartArt-vormen in Word-documenten kunt detecteren met Aspose.Words voor .NET. In deze tutorial werd aandacht besteed aan het instellen van uw omgeving, het laden van documenten, het detecteren van SmartArt-vormen en het uitvoeren van de code. Aspose.Words biedt een breed scala aan functies, dus zorg ervoor dat u de[API-documentatie](https://reference.aspose.com/words/net/) om zijn volledige potentieel te ontsluiten.
 
 ## Veelgestelde vragen
 

@@ -91,7 +91,7 @@ builder.EndBookmark("FineBookmark");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.DocumentBuilderInsertBookmark.docx");
 ```
 
-يحفظ هذا السطر المستند بالاسم المحدد في الدليل الذي حددناه مسبقًا.
+يحفظ هذا السطر المستند بالاسم المحدد في الدليل الذي حددناه سابقًا.
 
 ## خاتمة
 

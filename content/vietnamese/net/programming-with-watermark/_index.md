@@ -12,4 +12,4 @@ Xử lý văn bản có hình mờ là một tài nguyên toàn diện hướng 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Thêm hình mờ văn bản với các tùy chọn cụ thể](./add-text-watermark-with-specific-options/) | Tìm hiểu cách thêm hình mờ văn bản với các tùy chọn cụ thể bằng Aspose.Words cho .NET. Hướng dẫn từng bước một. |
+| [Thêm hình mờ văn bản với các tùy chọn cụ thể](./add-text-watermark-with-specific-options/) | Tìm hiểu cách thêm hình mờ văn bản với các tùy chọn cụ thể vào tài liệu Word của bạn bằng Aspose.Words for .NET. Tùy chỉnh phông chữ, kích thước, màu sắc và bố cục một cách dễ dàng. |

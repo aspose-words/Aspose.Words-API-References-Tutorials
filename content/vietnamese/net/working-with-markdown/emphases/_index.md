@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### Câu hỏi: Làm cách nào để đánh dấu văn bản bằng Markdown?
 
-Đáp: Để đánh dấu văn bản bằng Markdown, chỉ cần bao quanh văn bản bằng các ký hiệu thích hợp. Sử dụng`*` hoặc`_` cho chữ nghiêng,`**` hoặc`__` cho đậm, và`~~` để gạch ngang.
+ Đáp: Để đánh dấu văn bản bằng Markdown, chỉ cần bao quanh văn bản bằng các ký hiệu thích hợp. Sử dụng`*` hoặc`_` cho chữ nghiêng,`**` hoặc`__` cho đậm, và`~~` để gạch ngang.
 
 #### Hỏi: Chúng ta có thể kết hợp các điểm nổi bật khác nhau trong cùng một văn bản không?
 

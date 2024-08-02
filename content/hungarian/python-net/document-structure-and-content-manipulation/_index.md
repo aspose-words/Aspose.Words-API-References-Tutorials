@@ -34,7 +34,7 @@ Ezeknek az oktatóanyagoknak a végére szilárd alapot kaphat a dokumentumszerk
 ## Dokumentumszerkezeti és tartalomkezelési oktatóanyagok
 ### [Struktúra és tartalom kezelése Word dokumentumokban](./document-structure-content/)
 Ismerje meg, hogyan kezelheti hatékonyan a Word-dokumentumokat az Aspose.Words for Python használatával. Ez a részletes útmutató a dokumentum szerkezetére, a szövegkezelésre, a formázásra, a képekre, táblázatokra és még sok másra vonatkozik. 
-### [Megjegyzés funkciók használata a Word dokumentumokban](./document-comments/)
+### [Megjegyzés funkciók használata Word dokumentumokban](./document-comments/)
 Ismerje meg, hogyan használhatja a megjegyzés funkcióit a Word dokumentumokban az Aspose.Words for Python használatával. Lépésről lépésre útmutató forráskóddal. Fokozza az együttműködést és egyszerűsítse a dokumentumok áttekintését.
 ### [Mezők és adatok kezelése Word dokumentumokban](./document-fields/)
 Ismerje meg, hogyan kezelheti a Word-dokumentumok mezőit és adatait az Aspose.Words for Python használatával. Lépésről lépésre útmutató kódpéldákkal a dinamikus tartalomhoz, az automatizáláshoz és egyebekhez. 
@@ -52,7 +52,7 @@ Ismerje meg, hogyan kezelheti az elválasztást és a szövegáramlást a Word d
 Ismerje meg, hogyan hozhat létre és kezelhet listákat Word dokumentumokban az Aspose.Words Python API használatával. Lépésről lépésre útmutató forráskóddal a lista formázásához, testreszabásához, egymásba ágyazásához és sok máshoz. 
 ### [Markdown formázás használata Word dokumentumokban](./document-markdown/)
 Ismerje meg, hogyan integrálhatja a Markdown formázást Word dokumentumokba az Aspose.Words for Python segítségével. Lépésről lépésre útmutató kódpéldákkal a dinamikus és tetszetős tartalom létrehozásához. 
-### [A dokumentum csomópontjainak megértése és navigálása](./document-nodes/)
+### [A dokumentumcsomópontok megértése és navigálása](./document-nodes/)
 Ismerje meg a Word dokumentumok kezelését az Aspose.Words for Python használatával. Ez a részletes útmutató a betöltésről, formázásról, táblázatokról, képekről és egyebekről szól. Növelje dokumentumfeldolgozási készségeit még ma!
 ### [OLE-objektumok és ActiveX-vezérlők beágyazása Word dokumentumokba](./document-ole-objects-active-x/)
  Ismerje meg, hogyan ágyazhat be OLE-objektumokat és ActiveX-vezérlőket Word dokumentumokba az Aspose.Words for Python használatával. Hozzon létre interaktív és dinamikus dokumentumokat zökkenőmentesen.

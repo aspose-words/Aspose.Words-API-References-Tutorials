@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## Conclusie
 
-En daar heb je het! Door deze eenvoudige stappen te volgen, kunt u de grootte van uw PDF-bestanden efficiënt verkleinen door alleen de benodigde lettertypesubsets in te sluiten met Aspose.Words voor .NET. Dit bespaart niet alleen opslagruimte, maar zorgt ook voor snellere laadtijden en betere prestaties, vooral voor documenten met uitgebreide lettertypen.
+En daar heb je het! Door deze eenvoudige stappen te volgen, kunt u de grootte van uw PDF-bestanden efficiënt verkleinen door alleen de benodigde lettertypesubsets in te sluiten met behulp van Aspose.Words voor .NET. Dit bespaart niet alleen opslagruimte, maar zorgt ook voor snellere laadtijden en betere prestaties, vooral voor documenten met uitgebreide lettertypen.
 
 ## Veelgestelde vragen
 

@@ -52,7 +52,7 @@ Este código simple crea un nuevo documento de Word y agrega un "¡Hola, Aspose.
 
 ## Seguimiento de revisiones de documentos
 
-Una de las características clave de Aspose.Words para Java es su capacidad para realizar un seguimiento de las revisiones de documentos. Esto es particularmente útil cuando varios usuarios colaboran en un documento y es necesario realizar un seguimiento de los cambios realizados por cada usuario.
+Una de las características clave de Aspose.Words para Java es su capacidad para realizar un seguimiento de las revisiones de documentos. Esto es particularmente útil cuando varios usuarios colaboran en un documento y necesita realizar un seguimiento de los cambios realizados por cada usuario.
 
 ### Habilitar el seguimiento de revisiones
 
@@ -115,7 +115,7 @@ En este ejemplo, guardamos una copia del documento con el "_v2" para indicar que
 
 ### ¿Aspose.Words para Java es adecuado tanto para principiantes como para desarrolladores experimentados?
 
-Sí, Aspose.Words para Java es versátil y puede ser utilizado por desarrolladores de todos los niveles. Ofrece potentes funciones para usuarios avanzados sin dejar de ser accesible para principiantes.
+Sí, Aspose.Words para Java es versátil y puede ser utilizado por desarrolladores de todos los niveles. Ofrece funciones potentes para usuarios avanzados sin dejar de ser accesible para principiantes.
 
 ### ¿Dónde puedo descargar Aspose.Words para Java?
 

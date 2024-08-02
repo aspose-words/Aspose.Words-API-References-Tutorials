@@ -16,4 +16,4 @@ Aspose.Words for .NET 教程“使用 WebExtensions 进行文字处理”将引�
 ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [使用 Web 扩展任务窗格](./using-web-extension-task-panes/) | 使用 Aspose.Words for .NET 的 Web 扩展任务窗格的分步指南。 |
+| [使用 Web 扩展任务窗格](./using-web-extension-task-panes/) | 在本详细的分步教程中了解如何使用 Aspose.Words for .NET 在 Word 文档中添加和配置 Web 扩展任务窗格。 |

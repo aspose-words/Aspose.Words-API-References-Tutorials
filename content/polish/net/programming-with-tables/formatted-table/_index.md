@@ -2,42 +2,79 @@
 title: Sformatowana tabela
 linktitle: Sformatowana tabela
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak utworzyć sformatowaną tabelę w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak tworzyć i formatować tabele w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/formatted-table/
 ---
+## Wstęp
 
-W tym samouczku nauczymy się, jak utworzyć sformatowaną tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo tworzyć tabele z niestandardowym formatowaniem w dokumentach programu Word.
+Programowe tworzenie i formatowanie tabel w dokumentach programu Word może wydawać się trudnym zadaniem, ale dzięki Aspose.Words dla .NET staje się to proste i łatwe w zarządzaniu. W tym samouczku przeprowadzimy Cię przez proces tworzenia sformatowanej tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Omówimy wszystko, od skonfigurowania środowiska po zapisanie dokumentu w pięknie sformatowanej tabeli.
 
-## Krok 1: Konfiguracja projektu
-1. Uruchom program Visual Studio i utwórz nowy projekt C#.
-2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
+## Warunki wstępne
 
-## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
-Aby rozpocząć budowanie sformatowanej tabeli, musimy utworzyć nowy dokument i zainicjować generator dokumentów. Wykonaj następujące kroki:
+Zanim zagłębimy się w kod, upewnijmy się, że mamy wszystko, czego potrzebujemy:
+
+1. Aspose.Words dla biblioteki .NET: Pobierz ją z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: IDE takie jak Visual Studio.
+3. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
+
+## Importuj przestrzenie nazw
+
+Przed napisaniem właściwego kodu musisz zaimportować niezbędne przestrzenie nazw:
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//Utwórz dokument i zainicjuj generator dokumentów
+## Krok 1: Skonfiguruj katalog dokumentów
+
+Najpierw musisz zdefiniować ścieżkę, w której zostanie zapisany dokument.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której chcesz zapisać dokument.
+
+## Krok 2: Zainicjuj dokument i narzędzie DocumentBuilder
+
+Teraz zainicjuj nowy dokument i obiekt DocumentBuilder.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Pamiętaj, aby zastąpić „TWOJ KATALOG DOKUMENTÓW” rzeczywistą ścieżką do katalogu dokumentów.
+ The`DocumentBuilder` to klasa pomocnicza, która upraszcza proces tworzenia dokumentów.
 
-## Krok 3: Tworzenie sformatowanej tabeli
-Następnie zbudujemy sformatowaną tabelę, korzystając z metod dostarczonych przez narzędzie do tworzenia dokumentów. Użyj następującego kodu:
+## Krok 3: Uruchom tabelę
+
+ Następnie rozpocznij tworzenie tabeli za pomocą`StartTable` metoda.
 
 ```csharp
-// Rozpocznij budowę tablicy
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// Konstrukcja wiersza nagłówka tabeli
-builder. InsertCell();
-table. LeftIndent = 20.0;
+Aby rozpocząć tabelę, konieczne jest wstawienie komórki.
+
+## Krok 4: Zastosuj formatowanie całej tabeli
+
+Możesz zastosować formatowanie wpływające na całą tabelę. Na przykład ustawienie lewego wcięcia:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## Krok 5: Sformatuj wiersz nagłówka
+
+Ustaw wysokość, wyrównanie i inne właściwości wiersza nagłówka.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+Na tym etapie wyróżniamy wiersz nagłówka, ustawiając kolor tła, rozmiar czcionki i wyrównanie.
+
+## Krok 6: Wstaw dodatkowe komórki nagłówka
+
+Wstaw więcej komórek do wiersza nagłówka:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## Krok 7: Sformatuj wiersze treści
 
-// Budowa korpusu tablicy
+Po ustawieniu nagłówka sformatuj treść tabeli:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// Koniec budowy tablicy
-builder. EndTable();
 ```
 
- Tutaj używamy narzędzia do tworzenia dokumentów, aby krok po kroku zbudować tabelę. Zaczynamy od dzwonienia`StartTable()` aby zainicjować tabelę. Następnie używamy`InsertCell()` aby wstawić komórki i`Write()` aby dodać zawartość do każdej komórki. Używamy także różnych właściwości formatowania do definiowania formatowania wierszy, komórek i tekstu tabeli.
+## Krok 8: Wstaw wiersze treści
 
-## Krok 4: Zapisz dokument
-Na koniec musimy zapisać dokument zawierający sformatowaną tabelę. Użyj następującego kodu:
+Wstaw wiersze treści z treścią:
 
 ```csharp
-// Zapisz dokument
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+Powtórz dla dodatkowych rzędów:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Krok 9: Zapisz dokument
+
+Na koniec zapisz dokument we wskazanym katalogu:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjściowego.
-
-### Przykładowy kod źródłowy sformatowanej tabeli przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// Jeśli w tabeli znajduje się co najmniej jeden wiersz, należy zastosować formatowanie całej tabeli.
-	table.LeftIndent = 20.0;
-	// Ustaw wysokość i zdefiniuj regułę wysokości dla wiersza nagłówka.
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// Nie musimy określać szerokości tej komórki, ponieważ jest ona dziedziczona z poprzedniej komórki.
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// Zresetuj wysokość i zdefiniuj inną regułę wysokości dla treści tabeli.
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// Zresetuj formatowanie czcionki.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+Spowoduje to utworzenie i zapisanie dokumentu programu Word ze sformatowaną tabelą.
 
 ## Wniosek
-tym samouczku nauczyliśmy się, jak utworzyć sformatowaną tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz programowo tworzyć niestandardowe tabele z określonym formatowaniem w dokumentach programu Word. Ta funkcja pozwala prezentować i porządkować dane w atrakcyjny wizualnie i zorganizowany sposób.
+
+I masz to! Wykonując poniższe kroki, możesz utworzyć dobrze sformatowaną tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka ułatwia programowe manipulowanie dokumentami programu Word, oszczędzając czas i wysiłek.
+
+## Często zadawane pytania
+
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do programowego tworzenia, edytowania i konwertowania dokumentów programu Word.
+
+### Czy mogę używać różnych kolorów w różnych rzędach?
+Tak, możesz zastosować różne formatowanie, w tym kolory, do różnych wierszy lub komórek.
+
+### Czy Aspose.Words dla .NET jest darmowy?
+ Aspose.Words dla .NET jest biblioteką płatną, ale możesz ją pobrać[bezpłatna wersja próbna](https://releases.aspose.com/).
+
+### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+ Możesz uzyskać wsparcie od[Fora społeczności Aspose](https://forum.aspose.com/c/words/8).
+
+### Czy mogę tworzyć inne typy dokumentów za pomocą Aspose.Words dla .NET?
+Tak, Aspose.Words dla .NET obsługuje różne formaty dokumentów, w tym PDF, HTML i TXT.

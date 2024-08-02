@@ -100,7 +100,7 @@ Pro urychlení procesu přidávání buněk můžeme klonovat existující buňk
 
 ```csharp
 // Poté bychom postup opakovali pro další buňky a řádky v tabulce.
-// Věci můžeme urychlit také klonováním existujících buněk a řádků.
+//Věci můžeme urychlit také klonováním existujících buněk a řádků.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Gratulujeme! Úspěšně jste vložili tabulku přímo do dokumentu aplikace Wor
  Ano, můžete požádat o a[zkušební verze zdarma](https://releases.aspose.com/) zhodnotit knihovnu před nákupem.
 
 ### Jak koupím Aspose.Words pro .NET?
- Můžete si koupit Aspose.Words pro .NET od[nákupní stránku](https://purchase.aspose.com/buy).
+Můžete si koupit Aspose.Words pro .NET od[nákupní stránku](https://purchase.aspose.com/buy).
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
  Dokumentace je k dispozici[tady](https://reference.aspose.com/words/net/).

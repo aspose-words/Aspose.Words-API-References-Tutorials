@@ -16,7 +16,7 @@ Di dunia di mana rentang perhatian menyusut dan informasi yang berlebihan selalu
 
 Gambar multimedia mencakup berbagai jenis konten visual, seperti foto, diagram, infografis, dan bagan. Mereka dapat digunakan untuk mengilustrasikan konsep, memberikan konteks, menampilkan data, dan membangkitkan emosi. Memasukkan gambar ke dalam dokumen Anda dapat mengubah teks yang membosankan dan monoton menjadi narasi menarik yang disukai pembaca Anda.
 
-## Memulai Aspose.Words untuk Python
+## Memulai dengan Aspose.Words untuk Python
 
 Untuk mulai memanfaatkan kekuatan gambar multimedia, Anda harus mengintegrasikan Aspose.Words for Python API ke dalam lingkungan pengembangan Anda. API ini menyediakan seperangkat alat lengkap untuk bekerja dengan dokumen secara terprogram.
 

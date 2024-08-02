@@ -16,8 +16,8 @@ Hai! Pernah bertanya-tanya bagaimana cara memanipulasi dokumen Word secara terpr
 Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
 
 1. Pengetahuan Dasar C#: Anda tidak perlu menjadi ahli, tetapi pemahaman dasar C# akan sangat membantu.
-2.  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/) Jika Anda tidak ingin langsung membelinya, Anda dapat memilih a[uji coba gratis](https://releases.aspose.com/).
-3. Visual Studio: Versi apa pun dapat berfungsi, tetapi versi terbaru disarankan.
+2.  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/) . Jika Anda tidak ingin langsung membelinya, Anda dapat memilih a[uji coba gratis](https://releases.aspose.com/).
+3. Visual Studio: Versi apa pun dapat digunakan, tetapi versi terbaru disarankan.
 4. .NET Framework: Pastikan Anda telah menginstalnya di mesin Anda.
 
 Baiklah, sekarang semuanya sudah siap, mari beralih ke bagian pengkodean.
@@ -66,7 +66,7 @@ Sekarang setelah kita memiliki bagiannya, kita perlu mengaksesnya sehingga kita 
 Section section = doc.Sections[2];
 ```
 
- Pada langkah ini, kita mengakses bagian ketiga dari dokumen kita. Ingat, indeksnya berbasis nol, jadi`Sections[2]` mengacu pada bagian ketiga.
+Pada langkah ini, kita mengakses bagian ketiga dari dokumen kita. Ingat, indeksnya berbasis nol, jadi`Sections[2]` mengacu pada bagian ketiga.
 
 ## Langkah 4: Mempersiapkan Konten ke Bagian
 
@@ -102,7 +102,7 @@ Di sini, kami menyimpan dokumen sebagai "output.docx". Anda dapat membuka file i
 
 ## Kesimpulan
 
- Dan itu dia! Anda telah berhasil memanipulasi bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini membahas dasar-dasar membuat dokumen, menambahkan bagian, dan memanipulasi kontennya. Dengan Aspose.Words, Anda dapat melakukan operasi yang jauh lebih kompleks, jadi jangan ragu untuk menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk fitur lebih lanjut.
+Dan itu dia! Anda telah berhasil memanipulasi bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini membahas dasar-dasar membuat dokumen, menambahkan bagian, dan memanipulasi kontennya. Dengan Aspose.Words, Anda dapat melakukan operasi yang jauh lebih kompleks, jadi jangan ragu untuk menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk fitur lebih lanjut.
 
 ## FAQ
 
@@ -116,7 +116,7 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang
 
 ## 3. Apa saja fitur utama Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET menawarkan berbagai fitur termasuk pembuatan dokumen, pemformatan, konversi, dan manipulasi. Anda dapat membaca lebih lanjut tentang kemampuannya di[dokumentasi API](https://reference.aspose.com/words/net/).
+ Aspose.Words untuk .NET menawarkan berbagai fitur termasuk pembuatan dokumen, pemformatan, konversi, dan manipulasi. Anda dapat membaca lebih lanjut tentang kemampuannya di[dokumentasi API](https://reference.aspose.com/words/net/).
 
 ## 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
 

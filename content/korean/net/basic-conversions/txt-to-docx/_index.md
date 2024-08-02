@@ -11,7 +11,7 @@ url: /ko/net/basic-conversions/txt-to-docx/
 
 텍스트 파일을 Word 문서로 변환하는 것은 문서 처리 응용 프로그램의 일반적인 요구 사항입니다. .NET용 Aspose.Words는 이 작업을 단순화하는 강력한 API를 제공하여 개발자에게 문서 형식을 효율적으로 조작하고 변환할 수 있는 강력한 도구를 제공합니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 - 컴퓨터에 Microsoft Visual Studio가 설치되어 있습니다.

@@ -64,7 +64,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 Bu kod parçası, belgeleriniz arasında numaralandırma çakışması olması durumunda kaynak belgenin numaralandırmasının geçerli olmasını sağlar. Kullanışlı, değil mi?
 
-## 4. Adım: Belgeleri Ekleyin
+## Adım 4: Belgeleri Ekleyin
 
 Hepsini bir araya getirme zamanı! Tanımlanan içe aktarma formatı seçeneklerini kullanarak kaynak belgeyi hedef belgeye ekleyeceğiz.
 
@@ -103,4 +103,4 @@ Aspose.Words özellikle Word belgeleri içindir. PDF'ler için Aspose.PDF'e ihti
 Görüntüler genellikle sorunsuz bir şekilde işlenir ancak kaynak ve hedef belgelerinizin doğru şekilde biçimlendirildiğinden emin olun.
 
 ###kaydetmeden önce bahsetmek ister misiniz?
-Belgeyi bir akışa dönüştürebilir veya önizlemek için uygulamanızda bir görüntüleyici kullanabilirsiniz.
+Belgeyi bir akışa dönüştürebilir veya önizlemesini yapmak için uygulamanızdaki bir görüntüleyiciyi kullanabilirsiniz.

@@ -52,7 +52,7 @@ doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
 doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 ```
 
-## กรอกซอร์สโค้ดให้สมบูรณ์สำหรับการใช้การสร้างบาร์โค้ดใน Aspose.Words สำหรับ Java
+## กรอกซอร์สโค้ดสำหรับการใช้การสร้างบาร์โค้ดใน Aspose.Words สำหรับ Java
 
 ```java
         Document doc = new Document("Your Directory Path" + "Field sample - BARCODE.docx");

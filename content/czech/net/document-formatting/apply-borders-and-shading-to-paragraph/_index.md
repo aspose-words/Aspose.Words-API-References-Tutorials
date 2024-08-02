@@ -109,7 +109,7 @@ A tady to máte! Pomocí několika řádků kódu jsme přeměnili prostý odsta
 
 ## FAQ
 
-### Mohu pro každé ohraničení použít různé styly čar?  
+### Mohu použít různé styly čar pro každé ohraničení?  
  Absolutně! Aspose.Words for .NET vám umožňuje přizpůsobit každý okraj individuálně. Stačí nastavit`LineStyle` pro každý typ ohraničení, jak je uvedeno v průvodci.
 
 ### Jaké další stínovací textury jsou k dispozici?  

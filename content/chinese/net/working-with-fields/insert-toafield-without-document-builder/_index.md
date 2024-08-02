@@ -2,123 +2,125 @@
 title: 不使用文档生成器插入 TOA 字段
 linktitle: 不使用文档生成器插入 TOA 字段
 second_title: Aspose.Words 文档处理 API
-description: 一步一步指导如何使用 Aspose.Words for .NET 无需 Document Builder 插入 TOA 字段。
+description: 了解如何在 Aspose.Words for .NET 中不使用文档生成器插入 TOA 字段。按照我们的分步指南有效地管理法律引文。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## 介绍
 
-以下是分步指南，用于解释下面的 C# 源代码，该代码使用了 Aspose.Words for .NET 的“TOA 字段插入”功能。请仔细按照每个步骤操作以获得所需的结果。
+在 Word 文档中创建引文表 (TOA) 字段就像拼凑一个复杂的拼图。然而，在 Aspose.Words for .NET 的帮助下，这个过程变得顺畅而简单。在本文中，我们将指导您完成在不使用文档生成器的情况下插入 TOA 字段的步骤，让您轻松管理 Word 文档中的引文和法律参考。
 
-## 步骤 1：文档目录设置
+## 先决条件
 
-在提供的代码中，您必须指定文档的目录。将值“YOUR DOCUMENT DIRECTORY”替换为您的文档目录的相应路径。
+在深入学习本教程之前，让我们先介绍一下您需要的基本知识：
+
+-  Aspose.Words for .NET：确保安装了最新版本。您可以从[Aspose 网站](https://releases.aspose.com/words/net/).
+- 开发环境：与 .NET 兼容的 IDE，如 Visual Studio。
+- 基本 C# 知识：了解基本 C# 语法和概念将会有所帮助。
+- 示例 Word 文档：创建或准备好要插入 TOA 字段的示例文档。
+
+## 导入命名空间
+
+首先，您需要从 Aspose.Words 库导入必要的命名空间。此设置可确保您可以访问文档操作所需的所有类和方法。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## 步骤 2：创建文档和段落
+让我们将这个过程分解成简单易懂的步骤。我们将引导您完成每个阶段，解释每段代码的作用以及它如何有助于创建 TOA 字段。
 
-我们首先创建一个新文档并初始化一个段落。
+## 步骤 1：初始化文档
+
+首先，您需要创建一个实例`Document`类。此对象代表您正在处理的 Word 文档。
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## 步骤 3：插入 TA 字段
+此代码初始化一个新的 Word 文档。您可以将其视为创建一个空白画布，您可以在其中添加内容。
 
-我们使用 FieldTA 类将 TA 字段插入段落。
+## 步骤2：创建并配置TA字段
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## 步骤 4：将段落添加到文档正文
-
-我们将包含 TA 字段的段落添加到文档正文中。
+接下来，我们将添加 TA（授权书目录）字段。此字段标记将出现在 TOA 中的条目。
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## 步骤 5：创建 TOA 字段的段落
-
-我们为 TOA 字段创建一个新段落。
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## 步骤 6：插入 TOA 字段
-
-我们使用 FieldToa 类将 TOA 字段插入段落。
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## 步骤 7：将段落添加到文档正文
-
-我们将包含 TOA 字段的段落添加到文档正文中。
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## 步骤 8：更新 TOA 字段
-
-最后，我们称`Update()`方法来更新TOA字段。
-
-```csharp
-fieldToa.Update();
-```
-
-### 不使用 Document Builder 和 Aspose.Words for .NET 插入 TOA 字段的源代码示例
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
 //我们希望插入如下 TA 和 TOA 字段：
 // { TA \c 1 \l "值 0" }
-// { 目录 \c 1 }
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+具体如下：
+- Paragraph para = new Paragraph(doc);：在文档内创建一个新段落。
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);：向段落添加 TA 字段。`FieldType.FieldTOAEntry`指定这是一个 TOA 输入字段。
+- fieldTA.EntryCategory = "1";：设置条目类别。这对于对不同类型的条目进行分类很有用。
+- fieldTA.LongCitation = "Value 0";：指定长引文文本。这是将出现在 TOA 中的文本。
+- doc.FirstSection.Body.AppendChild(para);：将包含TA字段的段落附加到文档正文。
+
+## 步骤 3：添加 TOA 字段
+
+现在，我们将把编译所有 TA 条目的实际 TOA 字段插入到表中。
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### 常见问题解答
+在此步骤中：
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);：向段落添加 TOA 字段。
+- fieldToa.EntryCategory = "1";：过滤条目以仅包含标有类别“1”的条目。
 
-#### 问：如何使用 Aspose.Words for .NET 自定义插入 Word 文档中的 TOA 字段的外观？
+## 步骤 4：更新 TOA 字段
 
-答：您可以使用`FieldTOA`对象来指定格式选项。
+插入 TOA 字段后，您需要更新它以确保它反映最新的条目。
 
-#### 问：我可以使用 Aspose.Words for .NET 在单个 Word 文档中添加多个 TOA 字段吗？
+```csharp
+fieldToa.Update();
+```
 
-答：是的，您可以使用 Aspose.Words for .NET 在单个 Word 文档中添加多个 TOA 字段。只需对每个字段重复插入步骤即可。
+此命令刷新 TOA 字段，确保所有标记的条目都正确显示在表中。
 
-#### 问：如何使用 Aspose.Words for .NET 检查 TOA 字段是否已成功插入到 Word 文档中？
+## 步骤 5：保存文档
 
-答：要检查 TOA 字段是否成功插入，您可以浏览文档内容并搜索 TOA 字段实例。
+最后，使用新添加的 TOA 字段保存您的文档。
 
-#### 问：如果不使用 DocumentBuilder 插入 TOA 字段是否会影响使用 Aspose.Words for .NET 进行 Word 文档格式化？
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-答：不使用 DocumentBuilder 插入 TOA 字段不会直接影响 Word 文档的格式。但是，TOA 字段格式选项会影响文档的整体格式。
+这行代码将文档保存到指定目录。请确保替换`"YOUR DOCUMENT DIRECTORY"`使用您想要保存文件的实际路径。
+
+## 结论
+
+就这样！您已成功将 TOA 字段添加到 Word 文档，而无需使用文档生成器。通过遵循这些步骤，您可以有效地管理引文并在法律文件中创建全面的引文表。Aspose.Words for .NET 使此过程变得顺畅而高效，为您提供了轻松处理复杂文档任务的工具。
+
+## 常见问题解答
+
+### 我可以添加多个不同类别的 TA 字段吗？
+是的，您可以通过设置添加具有不同类别的多个 TA 字段`EntryCategory`相应的财产。
+
+### 如何自定义 TOA 的外观？
+您可以通过修改 TOA 字段的属性（例如条目格式和类别标签）来定制 TOA 的外观。
+
+### 是否可以自动更新 TOA 字段？
+虽然你可以使用`Update`方法，Aspose.Words 目前不支持文档更改的自动更新。
+
+### 我可以以编程方式在文档的特定部分添加 TA 字段吗？
+是的，您可以通过将 TA 字段插入到所需的段落或部分中来在特定位置添加 TA 字段。
+
+### 如何处理单个文档中的多个 TOA 字段？
+您可以通过分配不同的`EntryCategory`值并确保每个 TOA 字段根据其类别过滤条目。

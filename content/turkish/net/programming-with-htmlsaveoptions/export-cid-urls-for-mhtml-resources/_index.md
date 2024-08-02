@@ -104,5 +104,5 @@ MHTML kaynakları için Cid URL'lerini dışa aktarmak, MHTML dosyanızdaki göm
 ### Bu işlemi birden fazla belge için otomatikleştirebilir miyim?
 Kesinlikle! Toplu işlemleri verimli bir şekilde gerçekleştirmek için Aspose.Words for .NET'in gücünden yararlanarak birden fazla belgenin sürecini otomatikleştirmek amacıyla bir komut dosyası oluşturabilirsiniz.
 
-### Sorunla karşılaşırsam nereden destek alabilirim?
+### Sorunlarla karşılaşırsam nereden destek alabilirim?
 Desteğe ihtiyacınız varsa Aspose destek forumunu ziyaret edin[Burada](https://forum.aspose.com/c/words/8) topluluktan ve Aspose geliştiricilerinden yardım için.

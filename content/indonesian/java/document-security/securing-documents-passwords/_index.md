@@ -13,7 +13,7 @@ Buka kekuatan Aspose.Words untuk Java untuk mengamankan dokumen Anda dengan kata
 
 ## Perkenalan
 
-Di dunia digital saat ini, keamanan data adalah hal yang terpenting. Baik Anda menangani dokumen bisnis rahasia atau file pribadi, memastikan bahwa hanya orang yang berwenang yang dapat mengakses dokumen Anda sangatlah penting. Panduan langkah demi langkah ini akan menunjukkan kepada Anda cara menggunakan Aspose.Words untuk Java untuk menambahkan lapisan keamanan yang kuat pada dokumen Anda dengan menerapkan kata sandi.
+Di dunia digital saat ini, keamanan data adalah hal yang terpenting. Baik Anda menangani dokumen bisnis rahasia atau file pribadi, memastikan bahwa hanya orang yang berwenang yang dapat mengakses dokumen Anda sangatlah penting. Panduan langkah demi langkah ini akan menunjukkan kepada Anda cara menggunakan Aspose.Words untuk Java guna menambahkan lapisan keamanan yang kuat pada dokumen Anda dengan menerapkan kata sandi.
 
 ## Menyiapkan Aspose.Words untuk Java
 

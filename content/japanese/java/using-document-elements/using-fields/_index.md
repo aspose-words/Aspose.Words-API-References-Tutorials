@@ -97,7 +97,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            //すべてのブール値をチェック ボックス フォーム フィールドとして出力することに決定しました。
+            //すべてのブール値をチェック ボックス フォーム フィールドとして出力することにしました。
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // 「カーソル」を現在のマージ フィールドに移動します。

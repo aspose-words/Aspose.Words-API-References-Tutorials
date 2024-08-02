@@ -16,6 +16,6 @@ Aspose.Words for .NET チュートリアルでは、Word 文書の操作にお�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Word 文書に Bidi マークを追加する](./add-bidi-marks/) | Aspose.Words for .NET を使用して Word 文書に Bidi マークを追加し、プロフェッショナルな多言語文書を作成する方法を学習します。 |
-| [リストのインデントにはレベルごとにタブ文字を使用する](./use-tab-character-per-level-for-list-indentation/) | Aspose.Words for .NET のタブ文字機能によるインデント リストの使用方法を学びます。このステップ バイ ステップ ガイドに従って、構造化され読みやすいドキュメントを作成します。この強力な機能を使用して時間を節約し、ワークフローを改善します。今すぐ完全なチュートリアルにアクセスしてください。 |
-| [リストのインデントにはレベルごとにスペース文字を使用する](./use-space-character-per-level-for-list-indentation/) | Aspose.Words for .NET でリストのインデントにレベルごとにスペース文字を使用する手順ガイド。構造化された Word 文書を簡単に作成します。 |
+| [Word 文書に Bidi マークを追加する](./add-bidi-marks/) | このガイドでは、Aspose.Words for .NET を使用して Word 文書に双方向 (Bidi) マークを追加する方法を学習します。多言語コンテンツのテキスト方向が適切であることを確認します。 |
+| [リストのインデントにはレベルごとにタブ文字を使用する](./use-tab-character-per-level-for-list-indentation/) | Aspose.Words for .NET を使用して、タブ付きインデント付きの複数レベルのリストを作成する方法を学びます。ドキュメント内のリストの正確な書式設定については、このガイドに従ってください。 |
+| [リストのインデントにはレベルごとにスペース文字を使用する](./use-space-character-per-level-for-list-indentation/) | Aspose.Words for .NET でスペース文字のインデントを使用して複数レベルのリストを作成する方法を学びます。正確なドキュメントの書式設定のためのステップバイステップ ガイド。 |

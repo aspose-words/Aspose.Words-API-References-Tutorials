@@ -15,7 +15,7 @@ Készen áll, hogy belemerüljön a dokumentumkezelés világába az Aspose.Word
 
 Mielőtt belevágnánk a lényegbe, van néhány dolog, amire szükséged lesz:
 
-1. Visual Studio: Bármilyen verzió, amely kompatibilis a .NET-tel.
+1. Visual Studio: Bármilyen .NET-kompatibilis verzió.
 2.  Aspose.Words for .NET: Töltse le[itt](https://releases.aspose.com/words/net/).
 3. A C# alapjai: Ha tudsz egy egyszerű "Hello World" programot írni, akkor készen állsz.
 4. Word-dokumentum könyvjelzőkkel: Ehhez az oktatóanyaghoz könyvjelzőkkel ellátott mintadokumentumot fogunk használni.
@@ -118,8 +118,8 @@ Ezzel elmenti a dokumentumot az általunk végzett módosításokkal.
 
 ## GYIK
 
-### Válthatok egyszerre több könyvjelzőt?
- Igen, felhívhatod a`ShowHideBookmarkedContent` módszert minden átváltani kívánt könyvjelzőhöz.
+### Válthatok több könyvjelzőt egyszerre?
+ Igen, felhívhatod a`ShowHideBookmarkedContent` módszert minden egyes átkapcsolni kívánt könyvjelzőhöz.
 
 ### A tartalom elrejtése befolyásolja a dokumentum szerkezetét?
 Nem, a tartalom elrejtése csak annak láthatóságát befolyásolja. A tartalom a dokumentumban marad.

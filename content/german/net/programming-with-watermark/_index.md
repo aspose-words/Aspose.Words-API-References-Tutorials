@@ -12,4 +12,4 @@ url: /de/net/programming-with-watermark/
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Textwasserzeichen mit bestimmten Optionen hinzufügen](./add-text-watermark-with-specific-options/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Textwasserzeichen mit bestimmten Optionen hinzufügen. Schritt-für-Schritt-Anleitung. |
+| [Textwasserzeichen mit bestimmten Optionen hinzufügen](./add-text-watermark-with-specific-options/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Ihren Word-Dokumenten ein Textwasserzeichen mit bestimmten Optionen hinzufügen. Passen Sie Schriftart, Größe, Farbe und Layout einfach an. |

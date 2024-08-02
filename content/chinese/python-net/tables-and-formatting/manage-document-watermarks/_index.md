@@ -141,7 +141,7 @@ doc.save(output_path)
 
 虽然水印无法得到完全保护，但您可以通过调整其透明度和位置使其更能抵御篡改。
 
-### Aspose.Words for Python 是否适合 Windows 和 Linux？
+### Aspose.Words for Python 是否适用于 Windows 和 Linux？
 
 是的，Aspose.Words for Python 兼容 Windows 和 Linux 环境。
 

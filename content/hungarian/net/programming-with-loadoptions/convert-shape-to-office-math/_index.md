@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 ```
 
- Ebben a lépésben megadjuk a könyvtárat, ahol a dokumentumunk található, és konfiguráljuk a betöltési beállításokat. A`ConvertShapeToOfficeMath` tulajdonság be van állítva`true` az átalakítás engedélyezéséhez.
+ Ebben a lépésben megadjuk a könyvtárat, ahol a dokumentumunk található, és konfiguráljuk a betöltési beállításokat. A`ConvertShapeToOfficeMath` tulajdonság értékre van állítva`true` az átalakítás engedélyezéséhez.
 
 ## 2. lépés: Töltse be a dokumentumot
 

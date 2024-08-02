@@ -204,7 +204,7 @@ pip install aspose-words
 
 ### Где я могу найти дополнительную информацию о функциях Aspose.Words Python?
 
-Подробную информацию о возможностях Aspose.Words Python см.[документация](https://reference.aspose.com/words/python-net/).
+ Подробную информацию о возможностях Aspose.Words Python см.[документация](https://reference.aspose.com/words/python-net/).
 
 ### Как сохранить документ в формате PDF с помощью Aspose.Words?
 

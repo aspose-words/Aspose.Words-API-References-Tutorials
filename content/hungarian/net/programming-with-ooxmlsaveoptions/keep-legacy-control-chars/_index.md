@@ -56,7 +56,7 @@ Ezután töltse be a Word dokumentumot, amely tartalmazza a régi vezérlőkarak
 
 Most állítsuk be a mentési beállításokat, hogy a régi vezérlőkarakterek érintetlenül maradjanak.
 
-1.  Mentési beállítások létrehozása: Inicializálja a példányt`OoxmlSaveOptions` és állítsa be a`KeepLegacyControlChars`tulajdonát`true`.
+1.  Mentés opciók létrehozása: Inicializálja a példányt`OoxmlSaveOptions` és állítsa be a`KeepLegacyControlChars`tulajdonát`true`.
 
    ```csharp
    OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)

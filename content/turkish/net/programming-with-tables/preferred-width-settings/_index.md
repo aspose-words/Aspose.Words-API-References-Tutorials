@@ -9,7 +9,7 @@ url: /tr/net/programming-with-tables/preferred-width-settings/
 ---
 ## giriiş
 
-Tablolar, Word belgelerinizdeki bilgileri düzenlemenin ve sunmanın güçlü bir yoludur. Aspose.Words for .NET'te tablolarla çalışırken, belgenizin düzenine mükemmel şekilde uymasını sağlamak amacıyla tablo hücrelerinin genişliğini ayarlamak için çeşitli seçenekleriniz vardır. Bu kılavuz, mutlak, göreceli ve otomatik boyutlandırma seçeneklerine odaklanarak Aspose.Words for .NET'i kullanarak tercih edilen genişlik ayarlarına sahip tablolar oluşturma sürecinde size yol gösterecektir. 
+Tablolar, Word belgelerinizdeki bilgileri düzenlemenin ve sunmanın güçlü bir yoludur. Aspose.Words for .NET'te tablolarla çalışırken, belgenizin düzenine mükemmel şekilde uymalarını sağlamak amacıyla tablo hücrelerinin genişliğini ayarlamak için çeşitli seçenekleriniz vardır. Bu kılavuz, mutlak, göreceli ve otomatik boyutlandırma seçeneklerine odaklanarak Aspose.Words for .NET'i kullanarak tercih edilen genişlik ayarlarına sahip tablolar oluşturma sürecinde size yol gösterecektir. 
 
 ## Önkoşullar
 

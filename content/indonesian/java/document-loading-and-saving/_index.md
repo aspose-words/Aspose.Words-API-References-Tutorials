@@ -29,7 +29,7 @@ Bagi mereka yang ingin mendobrak batasan, teknik pemuatan canggih kami memberika
 
 ## Seni Menyimpan Dokumen
 
-Efisiensi tidak berhenti pada pemuatan; itu meluas ke penyimpanan dokumen juga. Aspose.Words untuk Java membekali Anda dengan berbagai opsi untuk menyimpan dokumen yang dimanipulasi dengan presisi.
+Efisiensi tidak berhenti pada pemuatan; itu meluas ke menyimpan dokumen juga. Aspose.Words untuk Java membekali Anda dengan berbagai opsi untuk menyimpan dokumen yang dimanipulasi dengan presisi.
 
 ### Menyimpan dalam Berbagai Format
 

@@ -2,115 +2,110 @@
 title: 空白を含む番号を検出する
 linktitle: 空白を含む番号を検出する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET で空白のあるリスト番号を検出する方法を学びます。ドキュメントの構造を簡単に改善します。
+description: Aspose.Words for .NET を使用してプレーンテキスト ドキュメント内の空白を含む番号を検出し、リストが正しく認識されるようにする方法を説明します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-このチュートリアルでは、Aspose.Words for .NET の「空白を含む番号の検出」機能用に提供されている C# ソース コードについて説明します。この機能を使用すると、リスト番号の後に空白が続くテキスト ドキュメントからリストを検出して作成できます。
+## 導入
 
-## ステップ1: 環境の設定
+.NET 愛好家のための Aspose.Words! 今日は、プレーンテキスト ドキュメント内のリストを簡単に処理できる魅力的な機能を紹介します。テキスト ファイルの行の一部がリストであるはずなのに、Word ドキュメントに読み込んだときに見た目がおかしくなってしまうという経験はありませんか? 私たちには、空白文字を含む番号を検出するという巧妙なトリックがあります。このチュートリアルでは、`DetectNumberingWithWhitespaces` Aspose.Words for .NET のオプションを使用すると、数字とテキストの間に空白がある場合でも、リストが正しく認識されるようになります。
 
-始める前に、Aspose.Words for .NET を使用して開発環境をセットアップしていることを確認してください。必要な参照を追加し、適切な名前空間をインポートしたことを確認してください。
+## 前提条件
 
-## ステップ2: テキストドキュメントの作成
+始める前に、以下のものを用意してください。
+
+-  Aspose.Words for .NET: ダウンロードはこちらから[Aspose リリース](https://releases.aspose.com/words/net/)ページ。
+- 開発環境: Visual Studio またはその他の C# IDE。
+- .NET Framework がマシンにインストールされています。
+- C# の基礎知識: 基礎を理解すると、例を理解しやすくなります。
+
+## 名前空間のインポート
+
+コードに進む前に、プロジェクトに必要な名前空間がインポートされていることを確認してください。開始するための簡単なスニペットを次に示します。
 
 ```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-string textDoc = "Full stop delimiters:\n" +
-                  "1. First list item 1\n" +
-                  "2. First list item 2\n" +
-                  "3. First list item 3\n\n" +
-                  "Right bracket delimiters:\n" +
-                  "1) Second list item 1\n" +
-                  "2) Second list item 2\n" +
-                  "3) Second list item 3\n\n" +
-                  "Bullet delimiters:\n" +
-                  "• Third list item 1\n" +
-                  "• Third list item 2\n" +
-                  "• Third list item 3\n\n" +
-                  "Whitespace delimiters:\n" +
-                  "1 Fourth list item 1\n" +
-                  "2 Fourth list item 2\n" +
-                  "3 Fourth list item 3";
+using System;
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-この手順では、リスト番号とそれに続く空白を含むテキスト ドキュメントをシミュレートするテキスト文字列を作成します。ピリオド、右括弧、箇条書き記号、空白などのさまざまなリスト区切り文字を使用します。
+プロセスをシンプルで管理しやすいステップに分解してみましょう。各ステップでは、必要なコードを説明し、何が起こっているかを説明します。
 
-## ステップ3: アップロードオプションの設定
+## ステップ1: ドキュメントディレクトリを定義する
 
-```csharp
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-```
-
-このステップでは、ドキュメントの読み込みオプションを設定します。新しい`TxtLoadOptions`オブジェクトを設定し、`DetectNumberingWithWhitespaces`財産に`true`これにより、リスト番号の後に空白があっても、Aspose.Words はリスト番号を検出できるようになります。
-
-## ステップ4: ドキュメントの読み込みと保存
+まず最初に、ドキュメント ディレクトリへのパスを設定しましょう。ここに入力ファイルと出力ファイルが保存されます。
 
 ```csharp
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-```
-
-このステップでは、指定されたテキスト文字列と読み込みオプションを使用してドキュメントを読み込みます。`MemoryStream`テキスト文字列をメモリ ストリームに変換します。次に、結果のドキュメントを .docx 形式で保存します。
-
-### Aspose.Words for .NET の空白番号検出機能のサンプル ソース コード。
-
-```csharp
-
-            
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-//リストとして解釈できる部分を含む文字列形式のプレーンテキスト ドキュメントを作成します。
-//ロード時に、最初の3つのリストは常にAspose.Wordsによって検出されます。
-//ロード後にそれらのリスト オブジェクトが作成されます。
-const string textDoc = "Full stop delimiters:\n" +
-					   "1. First list item 1\n" +
-					   "2. First list item 2\n" +
-					   "3. First list item 3\n\n" +
-					   "Right bracket delimiters:\n" +
-					   "1) Second list item 1\n" +
-					   "2) Second list item 2\n" +
-					   "3) Second list item 3\n\n" +
-					   "Bullet delimiters:\n" +
-					   "• Third list item 1\n" +
-					   "• Third list item 2\n" +
-					   "• Third list item 3\n\n" +
-					   "Whitespace delimiters:\n" +
-					   "1 Fourth list item 1\n" +
-					   "2 Fourth list item 2\n" +
-					   "3 Fourth list item 3";
-
-//4番目のリストでは、リスト番号とリスト項目の内容の間に空白が入っています。
-// LoadOptionsオブジェクトの「DetectNumberingWithWhitespaces」がtrueに設定されている場合にのみリストとして検出されます。
-//数字で始まる段落が誤ってリストとして検出されるのを避けるためです。
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-
-// LoadOptions をパラメータとして適用しながらドキュメントをロードし、結果を確認します。
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-            
-        
 ```
 
-これで、ソース コードを実行して、空白のあるリスト番号を含むテキスト ドキュメントを読み込み、検出されたリストを含む .docx ドキュメントを作成できます。出力ファイルは、指定されたディレクトリに「WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx」という名前で保存されます。
+## ステップ2: プレーンテキスト文書を作成する
+
+次に、プレーンテキスト ドキュメントを文字列として作成します。このドキュメントには、リストとして解釈できる部分が含まれます。
+
+```csharp
+const string textDoc = "Full stop delimiters:\n" +
+                       "1. First list item 1\n" +
+                       "2. First list item 2\n" +
+                       "3. First list item 3\n\n" +
+                       "Right bracket delimiters:\n" +
+                       "1) Second list item 1\n" +
+                       "2) Second list item 2\n" +
+                       "3) Second list item 3\n\n" +
+                       "Bullet delimiters:\n" +
+                       "• Third list item 1\n" +
+                       "• Third list item 2\n" +
+                       "• Third list item 3\n\n" +
+                       "Whitespace delimiters:\n" +
+                       "1 Fourth list item 1\n" +
+                       "2 Fourth list item 2\n" +
+                       "3 Fourth list item 3";
+```
+
+## ステップ3: LoadOptionsを構成する
+
+空白を含む番号を検出するには、`DetectNumberingWithWhitespaces`オプション`true`で`TxtLoadOptions`物体。
+
+```csharp
+TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
+```
+
+## ステップ4: ドキュメントを読み込む
+
+さて、ドキュメントをロードしてみましょう。`TxtLoadOptions`パラメータとして。これにより、4 番目のリスト (空白を含む) が正しく検出されるようになります。
+
+```csharp
+Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
+```
+
+## ステップ5: ドキュメントを保存する
+
+最後に、指定したディレクトリにドキュメントを保存します。これにより、正しく検出されたリストを含む Word ドキュメントが出力されます。
+
+```csharp
+doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
+```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET の空白番号検出機能について説明しました。リスト番号の後に空白が続くテキスト ドキュメントからリストを作成する方法を学習しました。
 
-この機能は、さまざまな方法でフォーマットされたリスト番号を含むドキュメントを処理する場合に非常に便利です。適切な読み込みオプションを使用することで、Aspose.Words は、リスト番号の後に空白があっても、これらのリスト番号を検出し、最終ドキュメントで構造化されたリストに変換できます。
+これで完了です。わずか数行のコードで、Aspose.Words for .NET を使用してプレーンテキスト ドキュメント内の空白を含む番号を検出する技術を習得しました。この機能は、さまざまなテキスト形式を扱い、リストが Word ドキュメントで正確に表現されるようにする場合に非常に便利です。次に扱いにくいリストに遭遇したときには、何をすべきか正確にわかるでしょう。
 
-この機能を使用すると、時間を節約し、ワークフローの効率を向上させることができます。テキスト ドキュメントから情報を簡単に抽出し、適切なリストを含む適切に構造化されたドキュメントに変換できます。
+## よくある質問
 
-望ましい結果を得るには、空白文字のダイヤル検出を構成するなどの読み込みオプションを考慮することを忘れないでください。
+### とは`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+`DetectNumberingWithWhitespaces`オプションです`TxtLoadOptions`これにより、番号とリスト項目のテキストの間に空白がある場合でも、Aspose.Words はリストを認識できるようになります。
 
-Aspose.Words for .NET は、ドキュメントの操作と生成のための高度な機能を多数提供します。Aspose.Words が提供するドキュメントと例をさらに詳しく調べることで、この強力なライブラリの機能を最大限に活用できるようになります。
+### この機能を箇条書きや括弧などの他の区切り文字にも使用できますか?
+はい、Aspose.Wordsは箇条書きや括弧などの一般的な区切り文字を含むリストを自動的に検出します。`DetectNumberingWithWhitespaces`特に空白のあるリストに役立ちます。
 
-したがって、躊躇せずに空白番号検出を Aspose.Words for .NET プロジェクトに統合し、その利点を活用して、構造化され読みやすいドキュメントを作成してください。
+### 使わないとどうなるのか`DetectNumberingWithWhitespaces`?
+このオプションがないと、番号とテキストの間に空白があるリストはリストとして認識されず、項目が単純な段落として表示されてしまう可能性があります。
 
+### この機能は他の Aspose 製品でも利用できますか?
+この特定の機能は、Word ドキュメントの処理を処理するように設計された Aspose.Words for .NET 向けにカスタマイズされています。
+
+### Aspose.Words for .NET の一時ライセンスを取得するにはどうすればよいですか?
+臨時免許証は、[Aspose 一時ライセンス](https://purchase.aspose.com/temporary-license/)ページ。
 

@@ -2,111 +2,110 @@
 title: 行の書式設定を適用する
 linktitle: 行の書式設定を適用する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してテーブルに行の書式設定を適用するためのステップ バイ ステップ ガイド。
+description: Aspose.Words for .NET を使用して Word 文書に行の書式設定を適用する方法を学びます。詳細な手順については、ステップバイステップのガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してテーブルに行の書式設定を適用する手順を順を追って説明します。バンドルされている C# ソース コードについて説明し、この機能を理解して独自のプロジェクトに実装するのに役立つ包括的なガイドを提供します。このチュートリアルを完了すると、Aspose.Words for .NET を使用して Word ドキュメントのテーブル行を書式設定する方法を明確に理解できるようになります。
+Word 文書に凝った行の書式設定を加えて、より魅力的なものにしたいとお考えなら、ここがぴったりの場所です。このチュートリアルでは、Aspose.Words for .NET を使用して行の書式設定を適用する方法について詳しく説明します。各ステップを詳しく説明するので、手順に沿って簡単にプロジェクトに適用できます。
 
-## ステップ1: ドキュメントディレクトリを定義する
-まず、ドキュメント ディレクトリへのパスを設定する必要があります。これは、編集した Word 文書を保存する場所です。「YOUR DOCUMENTS DIRECTORY」を適切なパスに置き換えます。
+## 前提条件
+
+コードに進む前に、開始するために必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET: Aspose.Wordsライブラリがインストールされていることを確認してください。まだインストールされていない場合は、[Aspose リリース ページ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio のような C# 開発環境。
+3. C# の基礎知識: C# プログラミングに精通していることが必須です。
+4. ドキュメント ディレクトリ: ドキュメントを保存するディレクトリ。
+
+## 名前空間のインポート
+
+まず、C# プロジェクトに必要な名前空間をインポートする必要があります。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## ステップ2: 新しいドキュメントとドキュメントビルダーを作成する
-次に、新しいインスタンスを作成する必要があります。`Document`クラスとそのドキュメントのドキュメント コンストラクター。
+それでは、プロセスをステップごとに見ていきましょう。
+
+## ステップ1: 新しいドキュメントを作成する
+
+まず、新しいドキュメントを作成する必要があります。これがキャンバスとなり、そこに表を追加して書式を適用します。
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ3: 新しいボードを開始する
-行の書式設定を適用するには、まず、`StartTable()`ドキュメントコンストラクタのメソッド。
+## ステップ2: 新しいテーブルを開始する
+
+次に、`DocumentBuilder`オブジェクト。ここで魔法が起こります。
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## ステップ4: セルを挿入して行形式に移動する
-これで、テーブルにセルを挿入し、ドキュメントビルダーの`InsertCell()`そして`RowFormat`方法。
+## ステップ3: 行の書式設定を定義する
+
+ここでは、行の書式を定義します。これには、行の高さとパディングの設定が含まれます。
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## ステップ5: 行の高さを設定する
-行の高さを設定するには、`Height`そして`HeightRule`行書式のプロパティ。この例では、行の高さを100ポイントに設定し、`Exactly`ルール。
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## ステップ6: 表の書式を定義する
-いくつかの書式設定プロパティはテーブル自体に設定でき、すべてのテーブル行に適用されます。この例では、`LeftPadding`, `RightPadding`, `TopPadding`そして`BottomPadding`プロパティ。
+## ステップ4: セルにコンテンツを挿入する
+
+美しくフォーマットされた行にコンテンツを挿入してみましょう。このコンテンツは、フォーマットがどのように見えるかを示します。
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## ステップ7: 行にコンテンツを追加する
-今ならできる
+## ステップ5: 行と表を終了する
 
-ドキュメントコンストラクタのメソッドを使用して行にコンテンツを追加します。この例では、`Writeln()`行にテキストを追加するメソッド。
+最後に、行とテーブルを終了して構造を完成させる必要があります。
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## ステップ8: 線とテーブルを完成させる
-行にコンテンツを追加したら、`EndRow()`メソッドを使用してテーブルを終了します`EndTable()`方法。
+## ステップ6: ドキュメントを保存する
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## ステップ9: 変更したドキュメントを保存する
-最後に、変更したドキュメントをファイルに保存します。出力ドキュメントに適切な名前と場所を選択できます。
+テーブルの準備ができたので、ドキュメントを保存します。ドキュメント ディレクトリへのパスを指定して、ファイルを保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-おめでとうございます！Aspose.Words for .NET を使用して、テーブルに行の書式設定を適用しました。
-
-### Aspose.Words for .NET を使用して行の書式を適用するためのサンプル ソース コード 
-
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	//これらの書式設定プロパティはテーブルに設定され、テーブル内のすべての行に適用されます。
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用してテーブルに行の書式設定を適用する方法を学習しました。このステップ バイ ステップ ガイドに従うことで、この機能を C# プロジェクトに簡単に統合できます。テーブル行の書式設定の操作はドキュメント処理の重要な側面であり、Aspose.Words はこれを実現するための強力で柔軟な API を提供します。この知識があれば、Word ドキュメントの視覚的なプレゼンテーションを改善し、特定の要件を満たすことができます。
+
+これで完了です。Aspose.Words for .NET を使用して、Word 文書内の表に行の書式設定を適用できました。このシンプルでありながら強力な手法により、文書の読みやすさと美しさが大幅に向上します。
+
+## よくある質問
+
+### 個々の行に異なる書式を適用できますか?  
+はい、各行に異なるプロパティを設定することで、各行を個別にカスタマイズできます。`RowFormat`.
+
+### 列の幅を調整するにはどうすればよいですか?  
+列の幅は、`CellFormat.Width`財産。
+
+### Aspose.Words for .NET でセルを結合することは可能ですか?  
+はい、セルを結合するには`CellMerge`の財産`CellFormat`.
+
+### 行に境界線を追加できますか?  
+もちろんです！行に境界線を追加するには、`Borders`の財産`RowFormat`.
+
+### 行に条件付き書式を適用するにはどうすればよいですか?  
+コード内で条件付きロジックを使用して、特定の条件に基づいて異なる書式を適用できます。

@@ -2,84 +2,97 @@
 title: Tách tài liệu Word theo tiêu đề Html
 linktitle: Theo tiêu đề Html
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước giải thích mã nguồn C# của tài liệu word được chia tách Bằng tính năng HTML Heading của Aspose.Words for .NET
+description: Tìm hiểu cách chia tài liệu Word theo tiêu đề thành HTML bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước của chúng tôi.
 type: docs
 weight: 10
 url: /vi/net/split-document/by-headings-html/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách chia tài liệu Word thành các phần nhỏ hơn bằng cách sử dụng tính năng By HTML Heading của Aspose.Words cho .NET. Thực hiện theo các bước bên dưới để hiểu mã nguồn và tạo các tài liệu HTML riêng biệt dựa trên Tiêu đề.
+## Giới thiệu
 
-## Bước 1: Tải tài liệu
+Việc chia tài liệu Word theo tiêu đề có thể là một yếu tố thay đổi cuộc chơi để quản lý các tài liệu lớn hoặc tạo các đầu ra HTML được phân đoạn. Aspose.Words for .NET cung cấp một cách đơn giản để đạt được điều này. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quá trình, đảm bảo bạn nắm bắt được mọi chi tiết trong quá trình thực hiện.
 
-Để bắt đầu, hãy chỉ định thư mục cho tài liệu của bạn và tải tài liệu vào đối tượng Tài liệu. Đây là cách thực hiện:
+## Điều kiện tiên quyết
+
+Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có những điều sau:
+
+1. Aspose.Words for .NET: Nếu bạn chưa có, hãy tải xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Một IDE như Visual Studio.
+3. Kiến thức cơ bản về C#: Hiểu những điều cơ bản sẽ giúp bạn dễ dàng theo dõi.
+4. Tài liệu mẫu: Chuẩn bị sẵn tài liệu Word mà bạn muốn chia theo tiêu đề.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này rất quan trọng để truy cập các lớp và phương thức Aspose.Words.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Bước 2: Chia tài liệu theo Heading ở định dạng HTML
+## Bước 1: Thiết lập dự án của bạn
 
-Bây giờ chúng ta sẽ thiết lập các tùy chọn lưu để chia tài liệu thành các phần nhỏ hơn dựa trên Heading ở định dạng HTML. Đây là cách thực hiện:
+Để bắt đầu, hãy thiết lập dự án của bạn trong môi trường phát triển. Mở Visual Studio và tạo Ứng dụng Console mới.
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-// Chia tài liệu thành các phần nhỏ hơn, trong trường hợp này tách nó theo tiêu đề.
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. Tạo một dự án mới: Mở Visual Studio, chọn 'Tạo dự án mới', chọn 'Ứng dụng Console (.NET Core)' và nhấp vào 'Tiếp theo'.
+2. Định cấu hình dự án của bạn: Đặt tên cho dự án của bạn, chọn vị trí để lưu dự án và nhấp vào 'Tạo'.
+3.  Cài đặt Aspose.Words cho .NET: Sử dụng Trình quản lý gói NuGet để cài đặt thư viện Aspose.Words. Trong Trình quản lý gói NuGet, tìm kiếm`Aspose.Words` và cài đặt nó.
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## Bước 2: Tải tài liệu của bạn
 
-### Mã nguồn mẫu cho HTML theo tiêu đề sử dụng Aspose.Words cho .NET
+Tiếp theo, bạn cần tải tài liệu Word muốn chia nhỏ. Đảm bảo tài liệu của bạn được đặt trong một thư mục mà bạn có thể dễ dàng truy cập.
 
-Đây là mã nguồn hoàn chỉnh cho tính năng By HTML Heading của Aspose.Words cho .NET:
+1. Xác định đường dẫn thư mục: Tạo một biến cho đường dẫn thư mục tài liệu của bạn.
+2.  Nạp tài liệu: Sử dụng`Document` class để tải tài liệu Word của bạn.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Bước 3: Định cấu hình tùy chọn lưu HTML
+
+Bây giờ, hãy định cấu hình các tùy chọn lưu HTML để chỉ định rằng tài liệu sẽ được chia theo tiêu đề.
+
+1.  Tạo HtmlSaveOptions: Khởi tạo`HtmlSaveOptions` lớp học.
+2.  Đặt tiêu chí phân chia tài liệu: Sử dụng`DocumentSplitCriteria` thuộc tính để chỉ định rằng tài liệu nên được chia theo các đoạn tiêu đề.
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	// Chia tài liệu thành các phần nhỏ hơn, trong trường hợp này là chia theo tiêu đề.
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    // Chia tài liệu thành các phần nhỏ hơn, trong trường hợp này là chia theo tiêu đề.
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## Bước 4: Lưu tài liệu tách
 
+Cuối cùng, lưu tài liệu với các tùy chọn lưu HTML được chỉ định. Điều này sẽ tạo ra một tệp HTML được chia theo các tiêu đề.
+
+1.  Lưu tài liệu: Sử dụng`Save` phương pháp của`Document` class để lưu tài liệu với các tùy chọn đã chỉ định.
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-Với mã này, bạn sẽ có thể chia tài liệu Word thành các phần nhỏ hơn bằng cách sử dụng Aspose.Words for .NET, dựa trên các tiêu đề. Sau đó, bạn có thể tạo các tài liệu HTML riêng biệt cho từng phần.
-
 ## Phần kết luận
 
- Trong hướng dẫn này, chúng ta đã học cách chia tài liệu Word thành các phần nhỏ hơn bằng cách sử dụng tính năng By HTML Heading của Aspose.Words cho .NET. Bằng cách chỉ định`DocumentSplitCriteria` BẰNG`HeadingParagraph` bên trong`HtmlSaveOptions`, chúng tôi có thể tạo các tài liệu HTML riêng biệt dựa trên các tiêu đề có trong tài liệu gốc.
+Và bạn có nó rồi đấy! Bạn đã tách thành công tài liệu Word theo tiêu đề và lưu nó dưới dạng HTML bằng Aspose.Words cho .NET. Phương pháp này có hiệu quả cao trong việc tổ chức các tài liệu lớn và tạo đầu ra HTML được phân đoạn, giúp nội dung của bạn dễ quản lý và dễ truy cập hơn.
 
-Việc chia tài liệu theo tiêu đề có thể hữu ích cho việc tổ chức và quản lý nội dung, đặc biệt là trong các tài liệu lớn có nhiều phần. Aspose.Words for .NET cung cấp giải pháp đáng tin cậy và hiệu quả để xử lý việc phân tách tài liệu và tạo đầu ra ở nhiều định dạng khác nhau.
+## Câu hỏi thường gặp
 
-Vui lòng khám phá các tính năng và tùy chọn bổ sung do Aspose.Words cho .NET cung cấp để nâng cao hơn nữa khả năng xử lý tài liệu của bạn và hợp lý hóa quy trình làm việc của bạn.
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word trong các ứng dụng .NET.
 
-### Câu hỏi thường gặp
+### Tôi có thể chia tài liệu theo tiêu chí khác không?
+Có, Aspose.Words cho phép bạn phân chia tài liệu theo nhiều tiêu chí khác nhau như phần, trang, v.v.
 
-#### Làm cách nào tôi có thể chia tài liệu Word thành các phần nhỏ hơn dựa trên các tiêu đề bằng Aspose.Words cho .NET?
+### Aspose.Words có miễn phí không?
+ Aspose.Words cung cấp bản dùng thử miễn phí nhưng để có đầy đủ các tính năng, bạn sẽ cần phải mua giấy phép. Kiểm tra của họ[trang mua](https://purchase.aspose.com/buy) để biết thêm chi tiết.
 
- Để phân chia tài liệu Word dựa trên các tiêu đề, bạn có thể sử dụng tính năng By HTML Heading của Aspose.Words cho .NET. Thực hiện theo mã nguồn được cung cấp và đặt`DocumentSplitCriteria` ĐẾN`HeadingParagraph` bên trong`HtmlSaveOptions` sự vật. Điều này sẽ chia tài liệu thành các phần nhỏ hơn ở mỗi tiêu đề.
+### Tôi có thể tìm tài liệu ở đâu?
+ Tài liệu đầy đủ có sẵn[đây](https://reference.aspose.com/words/net/).
 
-#### Tôi có thể chia tài liệu Word thành những định dạng nào?
-
- Mã nguồn được cung cấp thể hiện việc chia tài liệu Word thành các phần nhỏ hơn ở định dạng HTML. Tuy nhiên, Aspose.Words for .NET hỗ trợ nhiều định dạng đầu ra khác nhau, bao gồm DOCX, PDF, EPUB, v.v. Bạn có thể sửa đổi mã và chỉ định định dạng đầu ra mong muốn trong`HtmlSaveOptions` đối tượng tương ứng.
-
-#### Tôi có thể chọn tiêu chí khác để chia tài liệu không?
-
-Có, bạn có thể chọn tiêu chí khác để chia tài liệu dựa trên yêu cầu của mình. Aspose.Words for .NET cung cấp một số tùy chọn tiêu chí, chẳng hạn như`HeadingParagraph`, `Page`, `Section` , và hơn thế nữa. Sửa đổi`DocumentSplitCriteria` tài sản ở`HtmlSaveOptions` đối tượng để lựa chọn tiêu chí phân chia thích hợp.
-
-#### Làm cách nào tôi có thể tùy chỉnh HTML đầu ra cho các phần được chia nhỏ?
-
- Aspose.Words for .NET cho phép bạn tùy chỉnh HTML đầu ra cho các phần được phân tách bằng cách chỉ định các tùy chọn bổ sung trong phần`HtmlSaveOptions` sự vật. Bạn có thể kiểm soát nhiều khía cạnh khác nhau như kiểu CSS, hình ảnh, phông chữ, v.v. Tham khảo tài liệu Aspose.Words để biết thêm chi tiết về cách tùy chỉnh đầu ra HTML.
-
-#### Tôi có thể chia tài liệu dựa trên nhiều tiêu chí không?
-
- Có, bạn có thể chia tài liệu dựa trên nhiều tiêu chí bằng cách kết hợp các tùy chọn tiêu chí tương ứng. Ví dụ: bạn có thể chia tài liệu theo cả tiêu đề và trang bằng cách đặt`DocumentSplitCriteria`tài sản để`HeadingParagraph | Page`. Thao tác này sẽ phân chia tài liệu theo từng tiêu đề và từng trang, tạo ra các phần nhỏ hơn dựa trên cả hai tiêu chí.
+### Làm cách nào để nhận được hỗ trợ?
+ Để được hỗ trợ, hãy truy cập Aspose.Words[diễn đàn](https://forum.aspose.com/c/words/8).

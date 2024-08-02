@@ -11,7 +11,7 @@ url: /ko/net/programming-with-htmlsaveoptions/export-resources/
 
 안녕하세요, 기술 애호가 여러분! Word 문서를 HTML로 변환해야 하는 경우, 잘 찾아오셨습니다. 오늘 우리는 .NET용 Aspose.Words의 놀라운 세계로 뛰어들고 있습니다. 이 강력한 라이브러리를 사용하면 프로그래밍 방식으로 Word 문서 작업을 쉽게 수행할 수 있습니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서를 HTML로 저장할 때 글꼴 및 CSS와 같은 리소스를 내보내는 단계를 안내합니다. 재미있고 유익한 라이딩을 위해 버클을 채우세요!
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하겠습니다. 간단한 체크리스트는 다음과 같습니다.
 
@@ -104,4 +104,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
  예, PDF, DOCX, TXT 등 다양한 형식을 지원합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 전체 목록을 보려면.
 
 ### 추가 지원과 리소스는 어디서 얻을 수 있나요?
-더 많은 도움을 받으려면 다음을 방문하세요.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) . 자세한 문서와 예제는 다음에서 찾을 수도 있습니다.[Aspose 웹 사이트](https://reference.aspose.com/words/net/).
+더 많은 도움을 받으려면 다음을 방문하세요.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) . 자세한 문서와 예제는 다음에서 찾을 수도 있습니다.[Aspose 웹사이트](https://reference.aspose.com/words/net/).

@@ -43,7 +43,7 @@ Eerst moeten we de map opgeven waar onze documenten zijn opgeslagen. Dit is hetz
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw map. Dit is waar uw documenten zullen leven en ademen.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw directory. Dit is waar uw documenten zullen leven en ademen.
 
 ## Stap 2: Laad het hoofddocument
 
@@ -155,7 +155,7 @@ En daar heb je het! Een uitgebreide handleiding voor het invoegen van het ene do
 Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch manipuleren van Word-documenten. Hiermee kunt u eenvoudig Word-documenten maken, wijzigen, converteren en verwerken.
 
 ### Kan ik meerdere documenten tegelijk invoegen?
-Ja, u kunt de callback-handler aanpassen om meerdere invoegingen af te handelen door een verzameling documenten te doorlopen.
+Ja, u kunt de callback-handler aanpassen om meerdere invoegingen af te handelen door een verzameling documenten te herhalen.
 
 ### Is er een gratis proefversie beschikbaar?
  Absoluut! U kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).

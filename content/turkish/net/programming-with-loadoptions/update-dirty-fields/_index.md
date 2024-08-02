@@ -33,7 +33,7 @@ Süreci yönetilebilir adımlara ayıralım. Yakından takip edin!
 
 ## 1. Adım: Projenizi Kurun
 
-Öncelikle .NET projenizi kurun ve Aspose.Words for .NET'i yükleyin. Henüz yüklemediyseniz NuGet Paket Yöneticisi aracılığıyla bunu yapabilirsiniz:
+Öncelikle .NET projenizi kurun ve Aspose.Words for .NET'i kurun. Henüz yüklemediyseniz NuGet Paket Yöneticisi aracılığıyla bunu yapabilirsiniz:
 
 ```bash
 Install-Package Aspose.Words

@@ -2,20 +2,41 @@
 title: Thay đổi ngôn ngữ
 linktitle: Thay đổi ngôn ngữ
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thay đổi ngôn ngữ cho định dạng ngày và số trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách thay đổi ngôn ngữ trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn này. Hoàn hảo để xử lý các khách hàng và dự án quốc tế.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/change-locale/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình thay đổi ngôn ngữ trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách sửa đổi ngôn ngữ, bạn có thể kiểm soát định dạng ngày và số trong quá trình phối thư. Chúng tôi sẽ cung cấp cho bạn mã nguồn C# cần thiết và hướng dẫn từng bước để đạt được điều này.
+Làm việc với các tài liệu Word thường đòi hỏi một chút khéo léo, đặc biệt là khi xử lý các ngôn ngữ và nền văn hóa khác nhau. Trong hướng dẫn này, chúng ta sẽ khám phá cách thay đổi ngôn ngữ của tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang tạo tài liệu cho người xem toàn cầu hay chỉ cần chuyển đổi định dạng ngày, hướng dẫn này sẽ giúp bạn.
 
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-- Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tạo Tài liệu và DocumentBuilder
-Để bắt đầu, hãy tạo một thể hiện của lớp Document và đối tượng DocumentBuilder:
+Trước khi đi sâu vào chi tiết, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
+
+-  Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+- Visual Studio: Bất kỳ phiên bản nào hỗ trợ .NET framework.
+- Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# và .NET sẽ giúp bạn theo dõi.
+
+ Đảm bảo bạn đã cài đặt Aspose.Words cho .NET. Nếu chưa, bạn có thể dùng thử miễn phí[đây](https://releases.aspose.com/) hoặc mua nó[đây](https://purchase.aspose.com/buy).
+
+## Nhập không gian tên
+
+Trước khi bắt đầu viết mã, chúng ta cần nhập các không gian tên cần thiết. Đây giống như những thành phần trong một công thức, đảm bảo mọi thứ hoạt động trơn tru.
+
+```csharp
+using System.Globalization;
+using System.Threading;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Thay đổi ngôn ngữ trong tài liệu Word là một quá trình đơn giản. Hãy chia nhỏ nó ra từng bước một.
+
+## Bước 1: Thiết lập tài liệu của bạn
+
+Trước tiên, hãy thiết lập tài liệu và trình tạo tài liệu của chúng ta. Điều này giống như việc thiết lập không gian làm việc của bạn trước khi bắt đầu nấu ăn.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,91 +44,73 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 2: Chèn một trường
-Tiếp theo, chèn trường hợp nhất vào tài liệu bằng phương thức InsertField:
+## Bước 2: Chèn trường hợp nhất
+
+Bây giờ, chúng ta sẽ chèn trường hợp nhất cho ngày tháng. Đây là nơi ngôn ngữ sẽ phát huy tác dụng.
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-Trong đoạn mã trên, chúng tôi chèn trường hợp nhất có tên "Ngày" vào tài liệu.
+## Bước 3: Lưu văn hóa hiện tại
 
-## Bước 3: Thay đổi ngôn ngữ
-Để thay đổi ngôn ngữ cho định dạng ngày và số, bạn có thể sửa đổi văn hóa hiện tại của chuỗi. Trong ví dụ này, chúng tôi sẽ đặt ngôn ngữ thành tiếng Đức ("de-DE"):
+Trước khi thay đổi ngôn ngữ, chúng ta cần lưu văn hóa hiện tại. Hãy coi điều này như việc đánh dấu vị trí của bạn trước khi chuyển sang chương khác.
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+```
+
+## Bước 4: Thay đổi ngôn ngữ
+
+Tiếp theo, chúng tôi sẽ thay đổi văn hóa hiện tại của chuỗi thành tiếng Đức ("de-DE"). Điều này giống như chuyển đổi cài đặt ngôn ngữ trên điện thoại của bạn.
+
+```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-Trong đoạn mã trên, chúng tôi lưu trữ văn bản hiện tại và sau đó đặt văn hóa của luồng hiện tại thành tiếng Đức.
+## Bước 5: Thực hiện trộn thư
 
-## Bước 4: Thực hiện trộn thư
-Thực hiện thao tác trộn thư và cung cấp giá trị ngày cho trường "Ngày":
+Bây giờ, chúng ta thực hiện trộn thư với ngày hiện tại. Điều này sẽ áp dụng ngôn ngữ mới cho định dạng ngày.
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-Trong đoạn mã này, chúng tôi thực hiện thao tác trộn thư và cung cấp ngày hiện tại làm giá trị cho trường "Ngày".
+## Bước 6: Khôi phục văn hóa gốc
 
-## Bước 5: Khôi phục ngôn ngữ gốc
-Sau khi phối thư hoàn tất, hãy khôi phục văn bản ban đầu cho chuỗi:
+Sau khi thực hiện trộn thư, chúng ta sẽ khôi phục văn bản ban đầu. Điều này giống như chuyển về cài đặt ngôn ngữ ưa thích của bạn.
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-Trong đoạn mã trên, chúng tôi khôi phục văn hóa ban đầu của luồng.
+## Bước 7: Lưu tài liệu
 
-## Bước 6: Lưu tài liệu
-Lưu tài liệu đã sửa đổi vào một tệp bằng phương thức Lưu của lớp Tài liệu:
+Cuối cùng, lưu tài liệu vào thư mục được chỉ định của bạn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### Mã nguồn ví dụ để thay đổi ngôn ngữ bằng Aspose.Words cho .NET
-Đây là mã nguồn hoàn chỉnh để thay đổi ngôn ngữ trong tài liệu Word bằng Aspose.Words cho .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField("MERGEFIELD Date");
-
-CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
-
-doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
-
-Thread.CurrentThread.CurrentCulture = currentCulture;
-
-doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
-```
+Và bạn có nó rồi đấy! Bạn đã thay đổi thành công ngôn ngữ trong tài liệu Word của mình bằng Aspose.Words for .NET.
 
 ## Phần kết luận
-Chúc mừng! Bạn đã học thành công cách thay đổi ngôn ngữ trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể kiểm soát định dạng ngày và số trong quá trình trộn thư. Tùy chỉnh ngôn ngữ theo yêu cầu của bạn để đảm bảo định dạng chính xác và nhất quán trong tài liệu của bạn.
 
-### Câu hỏi thường gặp
+Việc thay đổi ngôn ngữ trong tài liệu Word có thể cực kỳ hữu ích, đặc biệt khi làm việc với các khách hàng hoặc dự án quốc tế. Với Aspose.Words for .NET, nhiệm vụ này trở nên dễ dàng. Hãy làm theo các bước sau và bạn sẽ có thể chuyển đổi ngôn ngữ một cách dễ dàng.
 
-#### Hỏi: Aspose.Words có tương thích với các phiên bản Microsoft Word khác nhau không?
+## Câu hỏi thường gặp
 
-Trả lời: Có, Aspose.Words tương thích với các phiên bản Microsoft Word khác nhau bao gồm Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 và Word 2019.
+### Tôi có thể thay đổi ngôn ngữ sang bất kỳ ngôn ngữ nào không?
+Có, Aspose.Words for .NET hỗ trợ thay đổi ngôn ngữ thành bất kỳ ngôn ngữ nào được .NET hỗ trợ.
 
-#### Câu hỏi: Aspose.Words có hỗ trợ các cấu trúc trường phức tạp không?
+### Điều này có ảnh hưởng đến các phần khác trong tài liệu của tôi không?
+Việc thay đổi ngôn ngữ sẽ chủ yếu ảnh hưởng đến định dạng ngày và số. Các văn bản khác sẽ không thay đổi.
 
-Đ: Chắc chắn rồi! Aspose.Words cung cấp hỗ trợ rộng rãi cho các cấu trúc trường phức tạp, bao gồm các trường lồng nhau, các phép tính và biểu thức điều kiện. Bạn có thể sử dụng API mạnh mẽ này để làm việc với bất kỳ loại cấu trúc trường nào.
+### Tôi có cần giấy phép đặc biệt để sử dụng Aspose.Words cho .NET không?
+ Bạn có thể bắt đầu với bản dùng thử miễn phí, nhưng để tiếp tục sử dụng, bạn sẽ cần phải mua giấy phép[đây](https://purchase.aspose.com/buy).
 
-#### Câu hỏi: Aspose.Words có hỗ trợ các hoạt động cập nhật trường không?
+### Tôi có thể trở lại ngôn ngữ ban đầu nếu có sự cố không?
+Có, bằng cách lưu văn bản gốc và khôi phục nó sau, bạn có thể hoàn nguyên về ngôn ngữ ban đầu.
 
-Trả lời: Có, Aspose.Words cho phép bạn cập nhật các trường theo lịch trình. Bạn có thể dễ dàng cập nhật giá trị trường, làm mới các phép tính và thực hiện các hoạt động khác liên quan đến trường bằng API.
-
-#### Câu hỏi: Có thể chuyển đổi các trường thành văn bản thuần túy bằng Aspose.Words không?
-
-Đ: Chắc chắn rồi! Aspose.Words cung cấp các phương thức để chuyển đổi các trường thành văn bản thuần túy. Điều này có thể hữu ích khi bạn cần trích xuất nội dung mà không có bất kỳ định dạng hoặc chức năng nào liên quan đến trường.
-
-#### Câu hỏi: Có thể tạo tài liệu Word có trường động bằng Aspose.Words không?
-
-Đ: Chắc chắn rồi! Aspose.Words cung cấp chức năng mạnh mẽ để tạo tài liệu Word với các trường động. Bạn có thể tạo mẫu với các trường được xác định trước và điền dữ liệu vào chúng một cách linh hoạt, cung cấp giải pháp linh hoạt và hiệu quả để tạo tài liệu.
+### Tôi có thể nhận hỗ trợ ở đâu nếu gặp vấn đề?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose[đây](https://forum.aspose.com/c/words/8).

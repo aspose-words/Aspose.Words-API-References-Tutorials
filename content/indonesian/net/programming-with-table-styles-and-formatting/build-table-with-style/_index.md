@@ -2,96 +2,35 @@
 title: Bangun Meja Dengan Gaya
 linktitle: Bangun Meja Dengan Gaya
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk membuat tabel dengan gaya kustom menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara membuat dan menata tabel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/build-table-with-style/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah untuk membuat tabel bergaya menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan paket kode sumber C# dan memberi Anda panduan komprehensif untuk membantu Anda memahami dan menerapkan fitur ini dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan mengetahui cara membuat tabel dengan gaya kustom di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+Membuat dokumen yang bergaya dan profesional sering kali memerlukan lebih dari sekadar teks biasa. Tabel adalah cara luar biasa untuk mengatur data, namun membuatnya terlihat menarik adalah tantangan yang sangat berbeda. Masukkan Aspose.Words untuk .NET! Dalam tutorial ini, kita akan mendalami cara membuat tabel dengan gaya, membuat dokumen Word Anda terlihat rapi dan profesional.
 
-## Langkah 1: Tentukan direktori dokumen
-Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ini adalah lokasi di mana Anda ingin menyimpan dokumen Word yang telah Anda edit. Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai.
+## Prasyarat
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Sebelum kita masuk ke panduan langkah demi langkah, pastikan Anda memiliki semua yang Anda butuhkan:
 
-## Langkah 2: Buat dokumen baru dan pembuat dokumen
- Selanjutnya, Anda perlu membuat instance baru dari`Document` kelas dan konstruktor dokumen untuk dokumen itu.
+1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh dan instal[Aspose.Kata-kata untuk .NET](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Anda harus menyiapkan lingkungan pengembangan. Visual Studio adalah pilihan bagus untuk tutorial ini.
+3. Pengetahuan Dasar tentang C#: Keakraban dengan pemrograman C# akan membantu Anda mengikutinya dengan lebih mudah.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## Impor Namespace
 
-## Langkah 3: Mulai tabel baru dan masukkan sel
- Untuk mulai membuat tabel, kami menggunakan`StartTable()` metode pembuat dokumen, lalu kita masukkan sel ke dalam tabel menggunakan`InsertCell()` metode.
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan. Ini akan memberi Anda akses ke kelas dan metode yang diperlukan untuk memanipulasi dokumen Word.
 
 ```csharp
-Table table = builder. StartTable();
-builder.InsertCell();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Langkah 4: Tentukan gaya tabel
- Sekarang kita dapat mengatur gaya tabel menggunakan`StyleIdentifier` Properti. Dalam contoh ini, kita menggunakan gaya "MediumShading1Accent1".
+## Langkah 1: Buat Dokumen Baru dan DocumentBuilder
 
-```csharp
-table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-```
-
-## Langkah 5: Terapkan opsi gaya ke tabel
- Kita dapat menentukan karakteristik mana yang harus diformat berdasarkan gaya menggunakan`StyleOptions`properti dari array. Dalam contoh ini, kami menerapkan opsi berikut: "FirstColumn", "RowBands" dan "FirstRow".
-
-```csharp
-table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-```
-
-## Langkah 6: Sesuaikan ukuran tabel secara otomatis
- Untuk menyesuaikan ukuran array secara otomatis berdasarkan isinya, kami menggunakan`AutoFit()` metode dengan`AutoFitBehavior.AutoFitToContents` perilaku.
-
-```csharp
-table.AutoFit(AutoFitBehavior.AutoFitToContents);
-```
-
-## Langkah 7: Tambahkan konten ke sel
- Sekarang kita dapat menambahkan konten ke sel menggunakan`Writeln()`Dan`InsertCell()` metode pembuat dokumen. Dalam contoh ini, kita menambahkan header untuk "Item" dan "Quantity (
-
-kg)" dan data terkait.
-
-```csharp
-builder.Writeln("Item");
-builder.CellFormat.RightPadding = 40;
-builder.InsertCell();
-builder.Writen("Quantity (kg)");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Apples");
-builder.InsertCell();
-builder.Writeln("20");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Bananas");
-builder.InsertCell();
-builder.Writen("40");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Carrots");
-builder.InsertCell();
-builder.Writeln("50");
-builder.EndRow();
-```
-
-## Langkah 8: Simpan dokumen yang dimodifikasi
-Terakhir, kami menyimpan dokumen yang dimodifikasi ke sebuah file. Anda dapat memilih nama dan lokasi yang sesuai untuk dokumen keluaran.
-
-```csharp
-doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
-```
-
-Selamat! Anda sekarang telah membuat tabel bergaya khusus menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Membangun Tabel Dengan Gaya menggunakan Aspose.Words untuk .NET 
+ Hal pertama yang pertama, Anda perlu membuat dokumen baru dan a`DocumentBuilder` obyek. Ini`DocumentBuilder` akan membantu Anda membuat tabel di dokumen Anda.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -99,37 +38,111 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## Langkah 2: Mulailah Membangun Tabel
+
+Sekarang dokumen dan pembuatnya sudah siap, mari mulai membuat tabel.
+
+```csharp
 Table table = builder.StartTable();
-// Kita harus menyisipkan setidaknya satu baris terlebih dahulu sebelum mengatur format tabel apa pun.
+```
+
+## Langkah 3: Masukkan Baris Pertama
+
+Tabel tanpa baris hanyalah sebuah struktur kosong. Kita perlu memasukkan setidaknya satu baris sebelum kita dapat mengatur format tabel apa pun.
+
+```csharp
 builder.InsertCell();
-// Atur gaya tabel yang digunakan berdasarkan pengidentifikasi gaya unik.
+```
+
+## Langkah 4: Atur Gaya Tabel
+
+ Dengan sel pertama yang disisipkan, saatnya menambahkan beberapa gaya ke tabel kita. Kami akan menggunakan`StyleIdentifier` untuk menerapkan gaya yang telah ditentukan sebelumnya.
+
+```csharp
+// Atur gaya tabel yang digunakan berdasarkan pengidentifikasi gaya unik
 table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-// Terapkan fitur mana yang harus diformat berdasarkan gaya.
-table.StyleOptions =
-	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+```
+
+## Langkah 5: Tentukan Opsi Gaya
+
+Opsi gaya tabel menentukan bagian mana dari tabel yang akan diberi gaya. Misalnya, kita dapat memilih gaya kolom pertama, pita baris, dan baris pertama.
+
+```csharp
+// Terapkan fitur mana yang harus diformat berdasarkan gaya
+table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+```
+
+## Langkah 6: Sesuaikan Tabel agar Sesuai dengan Isi
+
+ Untuk memastikan meja kita terlihat rapi dan rapi, kita bisa menggunakan`AutoFit` metode untuk menyesuaikan tabel agar sesuai dengan isinya.
+
+```csharp
 table.AutoFit(AutoFitBehavior.AutoFitToContents);
+```
+
+## Langkah 7: Masukkan Data ke dalam Tabel
+
+Sekarang saatnya mengisi tabel kita dengan beberapa data. Kita akan mulai dengan baris header dan kemudian menambahkan beberapa contoh data.
+
+### Memasukkan Baris Header
+
+```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
 builder.InsertCell();
 builder.Writeln("Quantity (kg)");
 builder.EndRow();
+```
+
+#### Memasukkan Baris Data
+
+```csharp
 builder.InsertCell();
 builder.Writeln("Apples");
 builder.InsertCell();
 builder.Writeln("20");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Bananas");
 builder.InsertCell();
 builder.Writeln("40");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Carrots");
 builder.InsertCell();
 builder.Writeln("50");
 builder.EndRow();
+```
+
+## Langkah 8: Simpan Dokumen
+
+Setelah semua data dimasukkan, langkah terakhir adalah menyimpan dokumen.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara membuat tabel bergaya menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda bisa dengan mudah mengkustomisasi gaya tabel di dokumen Word Anda. Aspose.Words menawarkan API yang kuat dan fleksibel untuk memanipulasi dan memformat tabel di dokumen Anda. Dengan pengetahuan ini, Anda dapat meningkatkan presentasi visual dokumen Word Anda dan memenuhi kebutuhan spesifik.
+
+Dan itu dia! Anda telah berhasil membuat tabel bergaya di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan otomatisasi dan penyesuaian dokumen Word untuk memenuhi kebutuhan Anda. Baik Anda membuat laporan, faktur, atau jenis dokumen lainnya, Aspose.Words siap membantu Anda.
+
+## FAQ
+
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, mengedit, dan memanipulasi dokumen Word secara terprogram menggunakan C#.
+
+### Bisakah saya menggunakan Aspose.Words untuk .NET untuk menata tabel yang ada?
+Ya, Aspose.Words untuk .NET dapat digunakan untuk menata tabel baru dan yang sudah ada di dokumen Word Anda.
+
+### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
+ Ya, Aspose.Words untuk .NET memerlukan lisensi untuk fungsionalitas penuh. Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) atau beli yang lengkap[Di Sini](https://purchase.aspose.com/buy).
+
+### Bisakah saya mengotomatiskan jenis dokumen lain dengan Aspose.Words untuk .NET?
+Sangat! Aspose.Words untuk .NET mendukung berbagai jenis dokumen, termasuk DOCX, PDF, HTML, dan banyak lagi.
+
+### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi?
+ Anda dapat menemukan dokumentasi dan contoh yang komprehensif di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/).

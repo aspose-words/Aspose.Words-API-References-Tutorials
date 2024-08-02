@@ -85,7 +85,7 @@ En conclusión, dominar el arte de aceptar y rechazar cambios en documentos util
 
  Puede acceder a la información del autor de cada revisión utilizando el`getAuthor` método en el`Revision` objeto.
 
-### ¿Puedo personalizar la apariencia de los cambios registrados en el documento?
+### ¿Puedo personalizar la apariencia de los cambios rastreados en el documento?
 
 Sí, puede personalizar la apariencia de los cambios rastreados modificando las opciones de formato para las revisiones.
 

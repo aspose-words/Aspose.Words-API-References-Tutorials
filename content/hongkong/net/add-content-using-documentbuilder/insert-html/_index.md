@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 
 將 HTML 插入 Word 文件從未如此簡單，對吧？透過 Aspose.Words for .NET，您可以將 HTML 的強大功能與 Word 文件的多功能性無縫融合。無論您是自動產生報告還是製作格式精美的文檔，此工具都是您的首選解決方案。
 
-如果您有任何疑問或需要進一步協助，請隨時查看[文件](https://reference.aspose.com/words/net/), [支援論壇](https://forum.aspose.com/c/words/8)，或者給自己找一個[臨時執照](https://purchase.aspose.com/temporary-license/)釋放 Aspose.Words for .NET 的全部潛能。
+如果您有任何疑問或需要進一步協助，請隨時查看[文件](https://reference.aspose.com/words/net/), [支援論壇](https://forum.aspose.com/c/words/8)，或者給自己一個[臨時執照](https://purchase.aspose.com/temporary-license/)釋放 Aspose.Words for .NET 的全部潛能。
 
 快樂編碼！
 

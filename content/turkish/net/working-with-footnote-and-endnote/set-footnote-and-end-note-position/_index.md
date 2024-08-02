@@ -58,7 +58,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel gereksinimlerinize göre değ
 
 #### S: Aspose.Words'te dipnotları ve son notları nasıl konumlandırabilirim?
 
- C: Aspose.Words'te dipnotları ve son notları konumlandırmak için`FootnoteOptions` sınıf ve`Position` mülk. Bu özelliği istediğiniz herhangi bir değere ayarlayabilirsiniz.`BottomOfPage` (sayfanın altında) veya`EndOfSection` (bölümün sonunda).
+ C: Aspose.Words'te dipnotları ve sonnotları konumlandırmak için`FootnoteOptions` sınıf ve`Position` mülk. Bu özelliği istediğiniz herhangi bir değere ayarlayabilirsiniz.`BottomOfPage` (sayfanın altında) veya`EndOfSection` (bölümün sonunda).
 
 #### S: Belgenin her sayfası veya bölümü için dipnotların ve son notların konumunu özelleştirmek mümkün müdür?
 

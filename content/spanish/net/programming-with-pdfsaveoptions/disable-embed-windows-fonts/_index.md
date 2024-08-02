@@ -9,7 +9,7 @@ url: /es/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 ## Introducción
 
-Reducir el tamaño de los archivos PDF puede ser crucial para un almacenamiento eficiente y un intercambio rápido. Una forma eficaz de hacerlo es desactivar las fuentes incrustadas, especialmente cuando las fuentes estándar ya están disponibles en la mayoría de los sistemas. En este tutorial, exploraremos cómo reducir el tamaño de un PDF deshabilitando las fuentes incrustadas usando Aspose.Words para .NET. Revisaremos cada paso para asegurarnos de que pueda implementarlo fácilmente en sus propios proyectos.
+Reducir el tamaño de los archivos PDF puede ser crucial para un almacenamiento eficiente y un intercambio rápido. Una forma eficaz de hacerlo es desactivando las fuentes incrustadas, especialmente cuando las fuentes estándar ya están disponibles en la mayoría de los sistemas. En este tutorial, exploraremos cómo reducir el tamaño de un PDF deshabilitando las fuentes incrustadas usando Aspose.Words para .NET. Revisaremos cada paso para asegurarnos de que pueda implementarlo fácilmente en sus propios proyectos.
 
 ## Requisitos previos
 

@@ -61,7 +61,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table.Range.Replace("Carrots", "Eggs", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- Эта строка кода заменяет текст «Морковь» на «Яйца» во всем диапазоне таблицы.`FindReplaceOptions` Параметр определяет направление поиска.
+ Эта строка кода заменяет текст «Морковь» на «Яйца» во всем диапазоне таблицы.`FindReplaceOptions` Параметр указывает направление поиска.
 
 ## Шаг 4. Замените текст в определенной ячейке
 

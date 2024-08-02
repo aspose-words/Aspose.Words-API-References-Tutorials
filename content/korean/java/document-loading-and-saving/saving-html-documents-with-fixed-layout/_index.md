@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/saving-html-documents-with-fixed-layou
 
 이 종합 가이드에서는 Aspose.Words for Java를 사용하여 고정 레이아웃으로 HTML 문서를 저장하는 과정을 안내합니다. 단계별 지침과 코드 예제를 통해 이를 원활하게 달성하는 방법을 배울 수 있습니다. 그럼 바로 들어가 보겠습니다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

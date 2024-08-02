@@ -9,14 +9,14 @@ url: /es/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
 ## Introducción
 
-Crear y administrar documentos de Word mediante programación a veces puede parecer como navegar por un laberinto. Pero con Aspose.Words para .NET, ¡es muy fácil! Esta guía lo guiará a través del proceso de insertar un marcador en un documento de Word usando la biblioteca Aspose.Words para .NET. Así que abróchese el cinturón y sumérjase en el mundo de la automatización de documentos.
+Crear y administrar documentos de Word mediante programación a veces puede parecer como navegar por un laberinto. Pero con Aspose.Words para .NET, ¡es pan comido! Esta guía lo guiará a través del proceso de insertar un marcador en un documento de Word usando la biblioteca Aspose.Words para .NET. Así que abróchese el cinturón y sumérjase en el mundo de la automatización de documentos.
 
 ## Requisitos previos
 
 Antes de ensuciarnos las manos con algún código, asegurémonos de tener todo lo que necesitamos:
 
 1.  Aspose.Words para .NET: descargue e instale la última versión desde[aquí](https://releases.aspose.com/words/net/).
-2. Entorno de desarrollo: asegúrese de tener un IDE como Visual Studio configurado para el desarrollo .NET.
+2. Entorno de desarrollo: asegúrese de tener un IDE como Visual Studio configurado para el desarrollo de .NET.
 3. Conocimientos básicos de C#: será útil tener cierta familiaridad con C#.
 
 ## Importar espacios de nombres

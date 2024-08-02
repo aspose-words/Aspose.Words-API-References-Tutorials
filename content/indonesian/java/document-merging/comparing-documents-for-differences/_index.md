@@ -40,7 +40,7 @@ Document docModified = new Document("modified_document.docx");
 
 ## Langkah 2: Bandingkan Dokumen
 
-Sekarang setelah Anda memuat dokumen, sekarang saatnya membandingkannya. Aspose.Words menyediakan metode mudah untuk membandingkan dokumen. Inilah cara Anda melakukannya:
+Sekarang Anda telah memuat dokumen, sekarang saatnya membandingkannya. Aspose.Words menyediakan metode mudah untuk membandingkan dokumen. Inilah cara Anda melakukannya:
 
 ```java
 // Bandingkan kedua dokumen tersebut
@@ -85,4 +85,4 @@ Ya, Aspose.Words memungkinkan Anda menyesuaikan tampilan perbedaan dalam dokumen
 
 ### Apakah ada versi uji coba Aspose.Words yang tersedia untuk pengujian?
 
-Ya, Anda dapat meminta Aspose.Words for Java versi uji coba gratis dari situs web. Ini memungkinkan Anda menjelajahi fitur dan kemampuannya sebelum melakukan pembelian.
+Ya, Anda dapat meminta Aspose.Words untuk Java versi uji coba gratis dari situs web. Ini memungkinkan Anda menjelajahi fitur dan kemampuannya sebelum melakukan pembelian.

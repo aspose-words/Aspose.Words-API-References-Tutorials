@@ -2,7 +2,7 @@
 title: Word Belgesine İçindekiler Tablosu Ekleme
 linktitle: Word Belgesine İçindekiler Tablosu Ekleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word'e nasıl İçindekiler ekleyeceğinizi öğrenin. Belgelerde kusursuz gezinme için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak Word'e nasıl İçindekiler ekleyeceğinizi öğrenin. Belgelerde kusursuz gezinme için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-table-of-contents/

@@ -9,7 +9,7 @@ url: /ja/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff
 ---
 ## 導入
 
-Word 文書で TIFF バイナリ化のしきい値を制御する方法を知りたいと思ったことはありませんか? まさにその通りです! このガイドでは、Aspose.Words for .NET を使用して、そのプロセスをステップごとに説明します。熟練した開発者でも、始めたばかりの開発者でも、このチュートリアルは魅力的でわかりやすく、作業を完了するために必要なすべての詳細が詰まっていることがわかります。始める準備はできましたか? さあ始めましょう!
+Word 文書で TIFF バイナリ化のしきい値を制御する方法を知りたいと思ったことはありませんか? まさにその通りです! このガイドでは、Aspose.Words for .NET を使用して、そのプロセスをステップごとに説明します。熟練した開発者でも、初心者でも、このチュートリアルは魅力的でわかりやすく、作業を完了するために必要なすべての詳細が詰まっていることがわかります。始める準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ2: ドキュメントを読み込む
 
-次に、処理したい文書を読み込む必要があります。この例では、`Rendering.docx`.
+次に、処理したいドキュメントを読み込む必要があります。この例では、`Rendering.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

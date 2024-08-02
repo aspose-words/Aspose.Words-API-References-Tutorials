@@ -2,104 +2,117 @@
 title: Függőleges összevonás
 linktitle: Függőleges összevonás
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan lehet függőleges egyesíteni a cellákat egy táblázatban egy Word-dokumentumban az Aspose.Words for .NET használatával.
+description: Ezzel a részletes útmutatóval sajátítsa el a vertikális összevonást Word-táblázatokban az Aspose.Words for .NET használatával. Ismerje meg a professzionális dokumentumformázás lépésenkénti utasításait.
 type: docs
 weight: 10
 url: /hu/net/programming-with-tables/vertical-merge/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban megtanuljuk, hogyan lehet függőleges egyesíteni a cellákat egy Word-dokumentum táblázatában az Aspose.Words for .NET használatával. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Ennek az oktatóanyagnak a végén képes lesz függőleges egyesíteni a cellákat a Word dokumentumok táblázataiban.
+Előfordult már, hogy belegabalyodott a Word dokumentumok táblázatainak kezelésének bonyolultságába? Az Aspose.Words for .NET segítségével leegyszerűsítheti munkáját, és szervezettebbé és látványosabbá teheti dokumentumait. Ebben az oktatóanyagban a táblázatokban történő függőleges egyesítés folyamatát mutatjuk be, amely egy praktikus funkció, amely lehetővé teszi a cellák függőleges egyesítését, zökkenőmentes adatáramlást létrehozva. Függetlenül attól, hogy számlákat, jelentéseket vagy bármilyen táblázatos adatokat tartalmazó dokumentumot hoz létre, a függőleges egyesítés elsajátítása a dokumentum formázását a következő szintre emelheti.
 
-## 1. lépés: A projekt beállítása
-1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# projektet.
-2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
+## Előfeltételek
 
-## 2. lépés: A dokumentum betöltése
-A szövegszerkesztés elindításához a dokumentummal, kövesse az alábbi lépéseket:
+Mielőtt belevágnánk a vertikális egyesítés finomságába, győződjünk meg arról, hogy mindent beállítottunk a zökkenőmentes élményhez. Íme, amire szüksége lesz:
+
+-  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: működő fejlesztői környezet, mint a Visual Studio.
+- Alapszintű C# ismerete: A C# programozási nyelv ismerete előnyt jelent.
+
+## Névterek importálása
+
+Az Aspose.Words használatához importálnia kell a szükséges névtereket a projektbe. Ezt úgy teheti meg, hogy a következő sorokat adja hozzá a kód elejéhez:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Most, hogy megvannak az előfeltételeink, és importáltuk a névtereket, folytassuk a függőleges összevonás lépésenkénti útmutatójával.
+
+## 1. lépés: A dokumentum beállítása
+
+Az első lépés egy új dokumentum és egy dokumentumkészítő beállítása. A dokumentumkészítő segítségével könnyen hozzáadhatunk és kezelhetünk elemeket a dokumentumon belül.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Hozzon létre egy új dokumentumot
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
+Itt létrehozunk egy új dokumentumot, és inicializálunk egy DocumentBuilder objektumot, hogy működjön együtt a dokumentumunkkal.
 
-## 3. lépés: Cellák függőleges egyesítése
-Ezután összevonjuk a táblázat függőleges celláit. Használja a következő kódot:
+## 2. lépés: Az első cella beszúrása
+
+Most illesszük be az első cellát a táblázatunkba, és állítsuk be a függőleges egyesítést az egyesített tartomány első cellájára.
 
 ```csharp
-// Helyezzen be egy cellát
-builder. InsertCell();
-
-// Alkalmazza a függőleges egyesítést az első cellára
+builder.InsertCell();
 builder.CellFormat.VerticalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
-
-// Szúrjon be egy másik cellát
-builder. InsertCell();
-
-// Ne alkalmazzon függőleges egyesítést a cellára
-builder.CellFormat.VerticalMerge = CellMerge.None;
-builder.Write("Text in a cell");
-builder. EndRow();
-
-// Helyezzen be egy cellát
-builder. InsertCell();
-
-// Alkalmazza a függőleges összevonást az előző cellával
-builder.CellFormat.VerticalMerge = CellMerge.Previous;
-
-// Szúrjon be egy másik cellát
-builder. InsertCell();
-
-// Ne alkalmazzon függőleges egyesítést a cellára
-builder.CellFormat.VerticalMerge = CellMerge.None;
-builder.Write("Text in another cell");
-builder. EndRow();
-
-//Fejezze be a táblázat létrehozását
-builder. EndTable();
 ```
 
-Ebben a kódban a DocumentBuilder konstruktort használjuk cellák beszúrására egy táblázatba. A CellFormat.VerticalMerge tulajdonság segítségével függőleges összevonást alkalmazunk a cellákban. Az első cellaegyesítéshez a CellMerge.First-et, a CellMerge.Previous-t az előző cellával való egyesítéséhez, a CellMerge.None-t pedig a függőleges egyesítéshez használjuk.
+ Ebben a lépésben beillesztjük az első cellát, és beállítjuk a függőleges összevonási tulajdonságát`CellMerge.First`, jelezve, hogy ez az egyesítés kezdő cellája. Ezután adunk hozzá szöveget ehhez a cellához.
 
-## 4. lépés: Mentse el a módosított dokumentumot
-Végül el kell mentenünk a módosított dokumentumot az egyesített cellákkal. Használja a következő kódot:
+## 3. lépés: A második cella beszúrása ugyanabba a sorba
+
+Ezután beszúrunk egy másik cellát ugyanabba a sorba, de nem vonjuk össze függőlegesen.
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.VerticalMerge = CellMerge.None;
+builder.Write("Text in one cell");
+builder.EndRow();
+```
+
+ Ide beszúrunk egy cellát, és a függőleges összevonási tulajdonságát értékre állítjuk`CellMerge.None`, és adjunk hozzá szöveget. Ezután befejezzük az aktuális sort.
+
+## 4. lépés: A második sor beszúrása és függőleges egyesítése
+
+Ebben a lépésben beszúrjuk a második sort, és az első cellát függőlegesen egyesítjük a felette lévő cellával.
+
+```csharp
+builder.InsertCell();
+// Ez a cella függőlegesen egyesül a fenti cellával, és üresnek kell lennie.
+builder.CellFormat.VerticalMerge = CellMerge.Previous;
+builder.InsertCell();
+builder.CellFormat.VerticalMerge = CellMerge.None;
+builder.Write("Text in another cell");
+builder.EndRow();
+builder.EndTable();
+```
+
+ Kezdjük azzal, hogy beszúrunk egy cellát, és beállítjuk a függőleges összevonási tulajdonságát`CellMerge.Previous`, jelezve, hogy egyesíteni kell a felette lévő cellával. Ezután beszúrunk egy másik cellát ugyanabba a sorba, szöveget adunk hozzá, és befejezzük a táblázatot.
+
+## 5. lépés: A dokumentum mentése
+
+Végül elmentjük a dokumentumunkat a megadott könyvtárba.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-Ügyeljen arra, hogy a megfelelő elérési utat és fájlnevet adja meg a kimeneti dokumentumhoz.
-
-### Minta forráskód a Vertical Merge számára az Aspose.Words for .NET használatával 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.InsertCell();
-	builder.CellFormat.VerticalMerge = CellMerge.First;
-	builder.Write("Text in merged cells.");
-	builder.InsertCell();
-	builder.CellFormat.VerticalMerge = CellMerge.None;
-	builder.Write("Text in one cell");
-	builder.EndRow();
-	builder.InsertCell();
-	// Ez a cella függőlegesen össze van vonva a fenti cellával, és üresnek kell lennie.
-	builder.CellFormat.VerticalMerge = CellMerge.Previous;
-	builder.InsertCell();
-	builder.CellFormat.VerticalMerge = CellMerge.None;
-	builder.Write("Text in another cell");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
-```
+Ez a sor a megadott fájlnévvel menti a dokumentumot a kijelölt könyvtárba.
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet függőleges egyesíteni a cellákat egy Word-dokumentum táblázatában az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C# kódot, könnyedén egyesítheti a Vertical cellákat a táblázatokban.
+
+És megvan! Az alábbi lépések végrehajtásával sikeresen megvalósította a függőleges egyesítést egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a funkció jelentősen javíthatja a dokumentumok olvashatóságát és rendszerezését, ezáltal professzionálisabbá és könnyebben navigálhatóvá teszi őket. Legyen szó egyszerű táblázatokról vagy összetett adatstruktúrákról, a függőleges egyesítés elsajátítása előnyt jelent a dokumentumformázásban.
+
+## GYIK
+
+### Mit jelent a függőleges összevonás a Word-táblázatokban?
+A függőleges összevonás lehetővé teszi, hogy egy oszlopban több cellát egyetlen cellává egyesítsen, így áramvonalasabb és rendezettebb táblázatelrendezés jön létre.
+
+### Egyesíthetem a cellákat függőlegesen és vízszintesen is?
+Igen, az Aspose.Words for .NET támogatja a táblázatban lévő cellák függőleges és vízszintes összevonását is.
+
+### Az Aspose.Words for .NET kompatibilis a Word különböző verzióival?
+Igen, az Aspose.Words for .NET kompatibilis a Microsoft Word különféle verzióival, így a dokumentumok zökkenőmentesen működnek a különböző platformokon.
+
+### Az Aspose.Words for .NET használatához telepíteni kell a Microsoft Word programot?
+Nem, az Aspose.Words for .NET a Microsoft Word-től függetlenül működik. A Word-dokumentumok létrehozásához vagy kezeléséhez nincs szükség Word-re telepítve a gépére.
+
+### Használhatom az Aspose.Words for .NET-et meglévő Word-dokumentumok manipulálására?
+Teljesen! Az Aspose.Words for .NET lehetővé teszi a meglévő Word dokumentumok egyszerű létrehozását, módosítását és kezelését.

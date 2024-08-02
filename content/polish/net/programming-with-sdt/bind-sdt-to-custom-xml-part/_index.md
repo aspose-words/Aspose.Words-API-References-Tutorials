@@ -2,70 +2,112 @@
 title: Powiąż SDT z niestandardową częścią Xml
 linktitle: Powiąż SDT z niestandardową częścią Xml
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak powiązać SDT z niestandardową częścią Xml za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak powiązać znaczniki dokumentów strukturalnych (SDT) z niestandardowymi częściami XML w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
+## Wstęp
 
-W tym samouczku pokazano, jak powiązać znacznik dokumentu strukturalnego (SDT) z niestandardową częścią Xml za pomocą Aspose.Words dla .NET. Zestawy SDT umożliwiają dodawanie formantów zawartości strukturalnej do dokumentu programu Word, a komponenty CustomXmlParts umożliwiają przechowywanie niestandardowych danych XML skojarzonych z dokumentem.
+Tworzenie dynamicznych dokumentów programu Word, które wchodzą w interakcję z niestandardowymi danymi XML, może znacznie zwiększyć elastyczność i funkcjonalność aplikacji. Aspose.Words dla .NET zapewnia solidne funkcje wiązania znaczników dokumentów strukturalnych (SDT) z niestandardowymi częściami XML, umożliwiając tworzenie dokumentów, które dynamicznie wyświetlają dane. W tym samouczku przeprowadzimy Cię krok po kroku przez proces wiązania SDT z niestandardową częścią XML. Zanurzmy się!
 
 ## Warunki wstępne
-Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 
-- Zainstalowana biblioteka Aspose.Words dla .NET.
-- Podstawowa znajomość C# i XML.
+Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
 
-## Krok 1: Skonfiguruj katalog dokumentów
- Rozpocznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+-  Aspose.Words dla .NET: Możesz pobrać najnowszą wersję z[Aspose.Words dla wydań .NET](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Visual Studio lub dowolne inne kompatybilne środowisko .NET IDE.
+- Podstawowa znajomość C#: Znajomość języka programowania C# i frameworku .NET.
+
+## Importuj przestrzenie nazw
+
+Aby efektywnie używać Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. Dodaj następujące dyrektywy using na górze pliku kodu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Markup;
+using Aspose.Words.Saving;
 ```
 
-## Krok 2: Utwórz dokument i plik CustomXmlPart
- Utwórz nową instancję`Document` klasa i A`CustomXmlPart` do przechowywania niestandardowych danych XML. Niestandardowy kod XML powinien być w prawidłowym formacie XML. W tym przykładzie używamy prostego ciągu XML`<root><text>Hello, World!</text></root>`.
+Podzielmy proces na łatwe do wykonania kroki, aby ułatwić jego przestrzeganie. Każdy krok będzie dotyczył określonej części zadania.
+
+## Krok 1: Zainicjuj dokument
+
+Najpierw musisz utworzyć nowy dokument i skonfigurować środowisko.
 
 ```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Zainicjuj nowy dokument
 Document doc = new Document();
+```
+
+Na tym etapie inicjujemy nowy dokument, który będzie zawierał nasze niestandardowe dane XML i SDT.
+
+## Krok 2: Dodaj niestandardową część XML
+
+Następnie dodajemy do dokumentu niestandardową część XML. Ta część będzie zawierać dane XML, które chcemy powiązać z SDT.
+
+```csharp
+// Dodaj niestandardową część XML do dokumentu
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<root><text>Hello, World!</text></root>");
 ```
 
-## Krok 3: Dodaj StructuredDocumentTag (SDT) do dokumentu
- Dodać`StructuredDocumentTag`do dokumentu, aby służyć jako kontrola zawartości. Określić`SdtType` Jak`PlainText` i`MarkupLevel` Jak`Block` aby utworzyć SDT na poziomie bloku.
+Tutaj tworzymy nową niestandardową część XML z unikalnym identyfikatorem i dodajemy przykładowe dane XML.
+
+## Krok 3: Utwórz znacznik dokumentu strukturalnego (SDT)
+
+Po dodaniu niestandardowej części XML tworzymy SDT do wyświetlania danych XML.
 
 ```csharp
+// Utwórz znacznik dokumentu strukturalnego (SDT)
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## Krok 4: Ustaw mapowanie XML dla SDT
- Zamapuj SDT na`CustomXmlPart` za pomocą`SetMapping` metoda`XmlMapping` nieruchomość. Określić`CustomXmlPart` , wyrażenie XPath służące do zlokalizowania żądanego węzła XML i, jeśli to konieczne, przedrostek przestrzeni nazw. W tym przykładzie mapujemy SDT na`/root[1]/text[1]`.
+Tworzymy SDT typu PlainText i dołączamy go do pierwszej sekcji treści dokumentu.
+
+## Krok 4: Powiąż SDT z niestandardową częścią XML
+
+Teraz wiążemy SDT z niestandardową częścią XML za pomocą wyrażenia XPath.
 
 ```csharp
+// Powiąż SDT z niestandardową częścią XML
 sdt.XmlMapping.SetMapping(xmlPart, "/root[1]/text[1]", "");
 ```
 
+ Ten krok mapuje SDT na`<text>` element wewnątrz`<root>` węzeł naszej niestandardowej części XML.
+
 ## Krok 5: Zapisz dokument
- Zapisz zmodyfikowany dokument w określonym katalogu za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.BindSDTtoCustomXmlPart.doc”.
+
+Na koniec zapisujemy dokument we wskazanym katalogu.
 
 ```csharp
+// Zapisz dokument
 doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 ```
 
-### Przykładowy kod źródłowy dla Bind Sd Tto Custom Xml Part przy użyciu Aspose.Words dla .NET 
+To polecenie zapisuje dokument z powiązanym SDT w wyznaczonym katalogu.
 
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Wniosek
 
-	Document doc = new Document();
-	CustomXmlPart xmlPart =
-		doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<root><text>Hello, World!</text></root>");
-	StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
-	doc.FirstSection.Body.AppendChild(sdt);
-	sdt.XmlMapping.SetMapping(xmlPart, "/root[1]/text[1]", "");
-	doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
-```
+Gratulacje! Pomyślnie powiązałeś SDT z niestandardową częścią XML za pomocą Aspose.Words dla .NET. Ta zaawansowana funkcja umożliwia tworzenie dynamicznych dokumentów, które można łatwo aktualizować o nowe dane, po prostu modyfikując zawartość XML. Niezależnie od tego, czy generujesz raporty, tworzysz szablony, czy automatyzujesz obieg dokumentów, Aspose.Words dla .NET oferuje narzędzia, których potrzebujesz, aby Twoje zadania były łatwiejsze i wydajniejsze.
 
-Otóż to! Pomyślnie powiązałeś SDT z CustomXmlPart w dokumencie Word przy użyciu Aspose.Words dla .NET.
+## Często zadawane pytania
+
+### Co to jest znacznik dokumentu strukturalnego (SDT)?
+Znacznik dokumentu strukturalnego (SDT) to element kontroli treści w dokumentach programu Word, którego można używać do wiązania danych dynamicznych, dzięki czemu dokumenty są interaktywne i oparte na danych.
+
+### Czy mogę powiązać wiele SDT z różnymi częściami XML w jednym dokumencie?
+Tak, możesz powiązać wiele SDT z różnymi częściami XML w tym samym dokumencie, co pozwala na tworzenie złożonych szablonów opartych na danych.
+
+### Jak zaktualizować dane XML w niestandardowej części XML?
+ Możesz zaktualizować dane XML, uzyskując dostęp do pliku`CustomXmlPart` obiekt i bezpośrednio modyfikując jego zawartość XML.
+
+### Czy można powiązać SDT z atrybutami XML zamiast z elementami?
+Tak, można powiązać SDT z atrybutami XML, określając odpowiednie wyrażenie XPath, które odnosi się do żądanego atrybutu.
+
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+ Obszerną dokumentację dotyczącą Aspose.Words dla .NET można znaleźć pod adresem[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/).

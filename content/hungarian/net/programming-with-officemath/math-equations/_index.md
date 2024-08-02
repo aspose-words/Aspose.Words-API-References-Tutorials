@@ -66,7 +66,7 @@ officeMath.DisplayType = OfficeMathDisplayType.Display;
 officeMath.Justification = OfficeMathJustification.Left;
 ```
 
- Itt beállítjuk a`DisplayType`tulajdonát`Display` , amely biztosítja, hogy az egyenlet a saját sorában jelenjen meg, így könnyebben olvasható. A`Justification` tulajdonság be van állítva`Left`, az egyenletet az oldal bal oldalához igazítva.
+ Itt beállítjuk a`DisplayType`tulajdonát`Display` , amely biztosítja, hogy az egyenlet a saját sorában jelenjen meg, így könnyebben olvasható. A`Justification` tulajdonság értékre van állítva`Left`, az egyenletet az oldal bal oldalához igazítva.
 
 ## 4. lépés: Mentse el a dokumentumot a matematikai egyenlettel
 

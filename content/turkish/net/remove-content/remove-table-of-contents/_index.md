@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/remove-content/remove-table-of-contents/
 ---
-## Aspose.Words for .NET Kullanarak Word Belgesindeki İçindekiler Tablosunu Kaldırma
+## giriiş
 
 Word belgelerinizde istenmeyen İçindekiler Tablosu (TOC) ile uğraşmaktan yoruldunuz mu? Hepimiz oradaydık; bazen TOC gerekli değildir. Şanslısınız ki Aspose.Words for .NET, TOC'yi programlı olarak kaldırmayı kolaylaştırıyor. Bu eğitimde size süreç boyunca adım adım rehberlik edeceğim, böylece bu konuda çok kısa sürede ustalaşabilirsiniz. Haydi hemen dalalım!
 
@@ -41,7 +41,7 @@ Belgenizi değiştirebilmemiz için önce nerede bulunduğunu tanımlamamız ger
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belge klasörünüzün yolu ile. Burası Word dosyanızın bulunduğu yerdir.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge klasörünüzün yolu ile. Burası Word dosyanızın bulunduğu yerdir.
 
 ## Adım 2: Belgeyi Yükleyin
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 İşte olanlar:
 - `doc.Range.Fields`: Bu, belgedeki tüm alanlara erişir.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: Bu, yalnızca içindekiler kısmını bulmak için alanları filtreler.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Bu, yalnızca içindekiler kısmını bulmak için alanları filtreler.
 - `.ToList().ForEach(f => f.Remove())`: Bu, filtrelenen alanları bir listeye dönüştürür ve her birini kaldırır.
 
 ## Adım 4: Değiştirilen Belgeyi Kaydedin
@@ -81,24 +81,24 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesinden TOC'yi kaldırmak, işlemi bu basit adımlara ayırdığınızda çok kolaydır. Bu güçlü kitaplık yalnızca İçindekiler'in kaldırılmasına yardımcı olmakla kalmaz, aynı zamanda sayısız diğer belge işlemlerini de gerçekleştirebilir. Öyleyse devam edin ve deneyin!
 
-## SSS
+## SSS'ler
 
-### 1. Aspose.Words for .NET nedir?
+### Aspose.Words for .NET nedir?
 
 Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan, belge işlemeye yönelik güçlü bir .NET kitaplığıdır.
 
-### 2. Aspose.Words'ü ücretsiz kullanabilir miyim?
+### Aspose.Words'ü ücretsiz kullanabilir miyim?
 
  Evet, Aspose.Words'ü aşağıdakilerle kullanabilirsiniz:[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/).
 
-### 3. Aspose.Words kullanarak diğer alanları kaldırmak mümkün mü?
+### Aspose.Words kullanarak diğer alanları kaldırmak mümkün mü?
 
 Kesinlikle! Filtre koşulunda türünü belirterek herhangi bir alanı kaldırabilirsiniz.
 
-### 4. Aspose.Words'ü kullanmak için Visual Studio'ya ihtiyacım var mı?
+### Aspose.Words'ü kullanmak için Visual Studio'ya ihtiyacım var mı?
 
 Geliştirme kolaylığı açısından Visual Studio şiddetle tavsiye edilse de, .NET'i destekleyen herhangi bir IDE'yi kullanabilirsiniz.
 
-### 5. Aspose.Words hakkında daha fazla bilgiyi nerede bulabilirim?
+### Aspose.Words hakkında daha fazla bilgiyi nerede bulabilirim?
 
  Daha ayrıntılı belgeler için şu adresi ziyaret edin:[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/).

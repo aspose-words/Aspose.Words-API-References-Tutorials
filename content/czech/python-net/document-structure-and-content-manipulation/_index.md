@@ -52,7 +52,7 @@ Naučte se, jak spravovat dělení slov a tok textu v dokumentech aplikace Word 
 Naučte se vytvářet a spravovat seznamy v dokumentech aplikace Word pomocí Aspose.Words Python API. Podrobný průvodce se zdrojovým kódem pro formátování seznamu, přizpůsobení, vnořování a další. 
 ### [Využití formátování Markdown v dokumentech aplikace Word](./document-markdown/)
 Naučte se, jak integrovat formátování Markdown do dokumentů aplikace Word pomocí Aspose.Words pro Python. Podrobný průvodce s příklady kódu pro dynamickou a vizuálně přitažlivou tvorbu obsahu. 
-### [Pochopení uzlů dokumentu a navigace](./document-nodes/)
+### [Pochopení a navigace v uzlech dokumentu](./document-nodes/)
 Naučte se manipulovat s dokumenty aplikace Word pomocí Aspose.Words pro Python. Tento podrobný průvodce pokrývá načítání, formátování, tabulky, obrázky a další. Zvyšte své dovednosti v oblasti zpracování dokumentů ještě dnes!
 ### [Vkládání objektů OLE a ovládacích prvků ActiveX do dokumentů aplikace Word](./document-ole-objects-active-x/)
  Naučte se vkládat objekty OLE a ovládací prvky ActiveX do dokumentů aplikace Word pomocí Aspose.Words pro Python. Bezproblémově vytvářejte interaktivní a dynamické dokumenty.

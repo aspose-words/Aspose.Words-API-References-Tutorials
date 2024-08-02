@@ -11,7 +11,7 @@ url: /ko/net/find-and-replace-text/replace-with-regex/
 
 안녕하세요! Word 문서에서 텍스트를 바꿔야 하는데 단순한 찾기 및 바꾸기보다 더 강력한 기능이 필요한 경우가 있습니까? 패턴과 와일드카드를 처리할 수 있는 것이 필요할까요? 글쎄, 당신은 운이 좋다! .NET용 Aspose.Words는 정규식 기반 찾기 및 바꾸기 기능을 제공합니다. 이 튜토리얼에서는 정규식을 사용하여 .NET용 Aspose.Words를 사용하여 Word 문서의 텍스트를 바꾸는 방법을 살펴보겠습니다. 우리는 모든 것을 단계별로 분석할 것이므로 regex나 Aspose.Words를 처음 사용하는 경우에도 즉시 따라하고 속도를 높일 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 1. .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
@@ -93,7 +93,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 전적으로! Aspose.Words는 광범위한 정규식 패턴을 지원합니다. 필요한 것과 정확히 일치하도록 패턴을 맞춤화할 수 있습니다.
 
 ### .NET용 Aspose.Words는 다른 텍스트 작업을 지원합니까?  
-네, 그렇습니다. Aspose.Words for .NET은 텍스트 추출, 서식 지정 등을 포함하여 Word 문서를 조작하기 위한 풍부한 기능 세트를 제공합니다.
+예, 그렇습니다. Aspose.Words for .NET은 텍스트 추출, 서식 지정 등을 포함하여 Word 문서를 조작하기 위한 풍부한 기능 세트를 제공합니다.
 
 ### 문서의 특정 섹션에 있는 텍스트를 바꿀 수 있나요?  
 그래 넌 할수있어. 다양한 방법을 사용하여 문서의 특정 섹션, 단락 또는 머리글과 바닥글을 대상으로 지정할 수 있습니다.

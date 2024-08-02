@@ -100,7 +100,7 @@ builder.Document.Save(dataDir + "Test.md");
 
 O: Nagłówek Setext Markdown to alternatywny sposób tworzenia nagłówków w dokumencie Markdown. Używa znaków podkreślenia (= lub -), aby wskazać różne poziomy nagłówków.
 
-#### P: Jak korzystać z nagłówków Setext Markdown?
+#### P: Jak używać nagłówków Setext Markdown?
 
 Odp.: Aby użyć nagłówków Setext Markdown, umieść podkreślenia pod tekstem tytułu. Użyj znaków równości (=) dla nagłówka poziomu 1 i łączników (-) dla nagłówka poziomu 2.
 

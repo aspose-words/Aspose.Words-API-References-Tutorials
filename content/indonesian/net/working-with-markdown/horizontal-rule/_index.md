@@ -45,7 +45,7 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur aturan horizonta
 
 A: Untuk membuat penggaris horizontal di Markdown, Anda dapat menggunakan salah satu simbol berikut pada baris kosong: tiga tanda bintang (\***), tiga garis (\---), atau tiga garis bawah (\___).
 
-#### T: Bisakah saya menyesuaikan tampilan penggaris horizontal di Markdown?
+#### T: Dapatkah saya menyesuaikan tampilan penggaris horizontal di Markdown?
 
 J: Dalam Markdown standar, tidak ada cara untuk menyesuaikan tampilan penggaris horizontal. Namun, beberapa editor dan ekstensi Markdown tingkat lanjut menawarkan fitur penyesuaian tambahan.
 

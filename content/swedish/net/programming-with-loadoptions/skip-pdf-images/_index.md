@@ -99,4 +99,4 @@ Du kan öppna utdatadokumentet i en ordbehandlare för att visuellt bekräfta fr
 
 ### Vad händer om PDF-filen inte har några bilder?
 
- Dokumentet laddas som vanligt, utan inverkan på processen. De`SkipPdfImages` alternativet har helt enkelt ingen effekt i detta fall.
+ Dokumentet laddas som vanligt, utan inverkan på processen. De`SkipPdfImages` alternativet har helt enkelt ingen effekt i det här fallet.

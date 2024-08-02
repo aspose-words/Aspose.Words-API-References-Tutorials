@@ -51,7 +51,7 @@ builder. InsertOleObject("http://www.aspose.com”, „plik html”, prawda, pra
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 ```
 
-To jest kompletny przykładowy kod do wstawiania obiektu OLE za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać opisane wcześniej kroki, aby zintegrować ten kod ze swoim projektem.
+To jest kompletny przykładowy kod do wstawiania obiektu OLE za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać kroki opisane wcześniej, aby zintegrować ten kod ze swoim projektem.
 
 ## Wniosek
 

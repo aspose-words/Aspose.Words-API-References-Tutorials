@@ -16,7 +16,7 @@ Hallå där! Har du någonsin sett dig själv att behöva slå samman två Word-
 Innan vi hoppar in i koden, låt oss se till att du har allt du behöver:
 
 1.  Aspose.Words för .NET: Om du inte redan har gjort det, ladda ner biblioteket från[här](https://releases.aspose.com/words/net/).
-2. Utvecklingsmiljö: Du kan använda Visual Studio eller någon annan .NET-kompatibel IDE.
+2. Utvecklingsmiljö: Du kan använda Visual Studio eller vilken annan .NET-kompatibel IDE som helst.
 3. Grundläggande kunskaper om C#: Denna handledning förutsätter att du har en grundläggande förståelse för C#-programmering.
 4. Två Word-dokument: Se till att du har två Word-dokument redo att slås samman.
 

@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## Word-documenten laden en maken
 
-U kunt een bestaand Word-document laden of een geheel nieuw document maken. Hier is hoe:
+kunt een bestaand Word-document laden of een geheel nieuw document maken. Hier is hoe:
 
 ```python
 from aspose.words import Document
@@ -204,7 +204,7 @@ Absoluut! Met Aspose.Words kunt u het genereren van documenten automatiseren doo
 
 ### Waar kan ik meer informatie vinden over Aspose.Words Python-functies?
 
-Voor uitgebreide informatie over Aspose.Words Python-functies raadpleegt u de[documentatie](https://reference.aspose.com/words/python-net/).
+ Voor uitgebreide informatie over Aspose.Words Python-functies raadpleegt u de[documentatie](https://reference.aspose.com/words/python-net/).
 
 ### Hoe sla ik mijn document op in PDF-formaat met Aspose.Words?
 

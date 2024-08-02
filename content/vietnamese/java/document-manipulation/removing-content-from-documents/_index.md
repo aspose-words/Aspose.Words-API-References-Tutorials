@@ -2,7 +2,7 @@
 title: Xóa nội dung khỏi tài liệu trong Aspose.Words cho Java
 linktitle: Xóa nội dung khỏi tài liệu
 second_title: API xử lý tài liệu Java Aspose.Words
-description: Tìm hiểu cách xóa nội dung khỏi tài liệu Word trong Java bằng Aspose.Words for Java. Xóa ngắt trang, ngắt phần, v.v. Tối ưu hóa việc xử lý tài liệu của bạn.
+description: Tìm hiểu cách xóa nội dung khỏi tài liệu Word trong Java bằng Aspose.Words cho Java. Xóa ngắt trang, ngắt phần, v.v. Tối ưu hóa việc xử lý tài liệu của bạn.
 type: docs
 weight: 16
 url: /vi/java/document-manipulation/removing-content-from-documents/

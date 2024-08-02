@@ -16,8 +16,8 @@ Que vous soyez un débutant ou un développeur expérimenté, les didacticiels A
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Accéder aux styles](./access-styles/) | Découvrez comment accéder aux styles de documents avec Aspose.Words pour .NET. Tutoriel complet pour manipuler les styles de vos documents. |
-| [Styles de copie](./copy-styles/) | Découvrez comment copier des styles entre des documents avec Aspose.Words pour .NET. |
-| [Obtenir les propriétés du thème](./get-theme-properties/) | Explorez les propriétés du thème d'un document avec Aspose.Words pour .NET. Personnalisez les styles et les couleurs pour un look unique. |
-| [Définir les propriétés du thème](./set-theme-properties/) | Apprenez à personnaliser l'apparence de vos documents en modifiant les propriétés du thème avec Aspose.Words for .NET. Obtenez des résultats professionnels et attrayants. |
-| [Insérer un séparateur de style](./insert-style-separator/) | Apprenez à créer des documents avec des styles personnalisés et à insérer des séparateurs de style pour un formatage précis et professionnel. |
+| [Obtenir des styles de documents dans Word](./access-styles/) | Découvrez comment obtenir des styles de document dans Word à l'aide d'Aspose.Words pour .NET avec ce didacticiel détaillé étape par étape. Accédez et gérez les styles par programmation dans vos applications .NET. |
+| [Copier les styles de documents Word](./copy-styles/) | Découvrez comment copier des styles de documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour garantir un formatage cohérent des documents sans effort. |
+| [Obtenir les propriétés du thème du document dans Word](./get-theme-properties/) | Découvrez comment accéder et gérer les propriétés du thème du document dans Word à l'aide d'Aspose.Words pour .NET. Apprenez à récupérer les polices et les couleurs avec notre guide. |
+| [Définir les propriétés du thème dans un document Word](./set-theme-properties/) | Découvrez comment définir les propriétés du thème dans les documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour personnaliser facilement les polices et les couleurs. |
+| [IInsérer un séparateur de style de document dans Word](./insert-style-separator/) | Découvrez comment insérer un séparateur de style de document dans Word à l'aide d'Aspose.Words pour .NET. Ce guide fournit des instructions et des conseils pour gérer les styles de documents. |

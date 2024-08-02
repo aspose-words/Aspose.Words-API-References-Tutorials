@@ -100,7 +100,7 @@ row.AppendChild(cell);
 
 ```csharp
 // จากนั้นเราจะทำซ้ำขั้นตอนนี้กับเซลล์และแถวอื่นๆ ในตาราง
-// นอกจากนี้เรายังสามารถเร่งความเร็วได้ด้วยการโคลนเซลล์และแถวที่มีอยู่
+//นอกจากนี้เรายังสามารถเร่งความเร็วได้ด้วยการโคลนเซลล์และแถวที่มีอยู่
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
  ใช่ คุณสามารถขอ[ทดลองฟรี](https://releases.aspose.com/) เพื่อประเมินห้องสมุดก่อนซื้อ
 
 ### ฉันจะซื้อ Aspose.Words สำหรับ .NET ได้อย่างไร
- คุณสามารถซื้อ Aspose.Words สำหรับ .NET ได้จาก[หน้าซื้อ](https://purchase.aspose.com/buy).
+คุณสามารถซื้อ Aspose.Words สำหรับ .NET ได้จาก[หน้าซื้อ](https://purchase.aspose.com/buy).
 
 ### ฉันจะหาเอกสารสำหรับ Aspose.Words สำหรับ .NET ได้ที่ไหน
  เอกสารก็มีให้[ที่นี่](https://reference.aspose.com/words/net/).

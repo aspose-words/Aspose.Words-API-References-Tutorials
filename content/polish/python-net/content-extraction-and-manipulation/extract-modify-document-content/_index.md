@@ -79,7 +79,7 @@ shape.get_image_data().set_source("path/to/image.jpg")
 
 ## Zapisywanie zmodyfikowanego dokumentu
 
-Po dokonaniu zmian zapisz dokument:
+Po dokonaniu modyfikacji zapisz dokument:
 
 ```python
 doc.save("path/to/modified/document.docx")
@@ -112,7 +112,7 @@ header.get_paragraphs().add("Header content")
 ```python
 run = doc.get_first_section().get_body().get_first_paragraph().get_runs().get(0)
 run.get_font().set_color(0, 0, 255)
-doc.get_hyperlinks().add(run, "https://www.przyklad.com”)
+doc.get_hyperlinks().add(run, "https://www.przyklad.com")
 ```
 
 ## Konwersja do innych formatów

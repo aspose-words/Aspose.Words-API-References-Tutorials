@@ -2,55 +2,37 @@
 title: Vložit ASKField bez Tvůrce dokumentů
 linktitle: Vložit ASKField bez Tvůrce dokumentů
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit pole ASK do dokumentů aplikace Word pomocí Aspose.Words for .NET.
+description: Přečtěte si, jak vložit pole ASK bez použití Tvůrce dokumentů v Aspose.Words pro .NET. Chcete-li dynamicky vylepšit své dokumenty Word, postupujte podle tohoto průvodce.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## Úvod
 
-Zde je podrobný návod k vysvětlení zdrojového kódu C# níže, který používá funkci "Vložit pole ASK bez DocumentBuilder" Aspose.Words for .NET. Ujistěte se, že pečlivě dodržujete každý krok, abyste dosáhli požadovaných výsledků.
+Chcete zvládnout automatizaci dokumentů pomocí Aspose.Words pro .NET? Jste na správném místě! Dnes vás provedeme tím, jak vložit pole ASK bez použití Tvůrce dokumentů. Toto je šikovná funkce, když chcete, aby váš dokument vyzval uživatele ke konkrétnímu vstupu, díky čemuž budou vaše dokumenty Word interaktivnější a dynamičtější. Pojďme se tedy ponořit a udělat vaše dokumenty chytřejšími!
 
-## Krok 1: Nastavení adresáře dokumentů
+## Předpoklady
 
-V poskytnutém kódu musíte zadat adresář vašich dokumentů. Nahraďte hodnotu „VÁŠ ADRESÁŘ DOKUMENTŮ“ příslušnou cestou k adresáři vašich dokumentů.
+Než si ušpiníme ruce nějakým kódem, ujistěte se, že máme vše nastaveno:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto knihovnu. Pokud ne, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Vhodné IDE jako Visual Studio.
+3. .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 
-## Krok 2: Vytvoření dokumentu a odstavce
+Skvělý! Nyní, když jsme vše připraveni, začněme importem potřebných jmenných prostorů.
 
-Začneme vytvořením nového dokumentu a načtením prvního odstavce.
+## Importovat jmenné prostory
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## Krok 3: Vložení pole ASK
-
- Používáme`AppendField()` metoda pro vložení pole ASK do odstavce.
+Nejprve musíme importovat jmenný prostor Aspose.Words, abychom získali přístup ke všem funkcím Aspose.Words pro .NET. Postup je následující:
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Poté nakonfigurujeme různé vlastnosti pole ASK zadáním požadovaných hodnot.
+## Krok 1: Vytvořte nový dokument
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
- Nakonec zavoláme`Update()` způsob aktualizace pole.
-
-```csharp
-field. Update();
-```
-
-### Příklad zdrojového kódu pro vložení pole ASK bez DocumentBuilder s Aspose.Words for .NET
+Než budeme moci vložit pole ASK, potřebujeme dokument, se kterým budeme pracovat. Zde je návod, jak vytvořit nový dokument:
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Vytvoření dokumentu.
 Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
+Tento fragment kódu nastaví nový dokument aplikace Word, kam přidáme pole ASK.
+
+## Krok 2: Otevřete uzel odstavce
+
+V dokumentu aplikace Word je obsah uspořádán do uzlů. Potřebujeme přístup k prvnímu bodu odstavce, kam vložíme pole ASK:
+
+```csharp
+Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
+
+Tento řádek kódu načte první odstavec v dokumentu, připravený pro vložení pole ASK.
+
+## Krok 3: Vložte pole ASK
+
+Nyní přejdeme k hlavní události – vložení pole ASK. Toto pole vyzve uživatele k zadání při otevření dokumentu.
+
+```csharp
 // Vložte pole ASK.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+Zde k odstavci připojíme pole ASK. Jednoduché, že?
 
-field. Update();
+## Krok 4: Nakonfigurujte pole ASK
 
+Musíme nastavit některé vlastnosti, abychom definovali, jak se pole ASK chová. Pojďme nakonfigurovat název záložky, text výzvy, výchozí odpověď a chování hromadné korespondence:
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName: Jedinečný identifikátor pro pole ASK.
+- PromptText: Text, který uživatele vyzve k zadání.
+- DefaultResponse: Předvyplněná odpověď, kterou může uživatel změnit.
+- PromptOnceOnMailMerge: Určuje, zda se výzva během hromadné korespondence zobrazí pouze jednou.
+
+## Krok 5: Aktualizujte pole
+
+Po konfiguraci pole ASK jej musíme aktualizovat, abychom zajistili správnost použití všech nastavení:
+
+```csharp
+field.Update();
+```
+
+Tento příkaz zajistí, že naše pole ASK je připraveno a správně nastaveno v dokumentu.
+
+## Krok 6: Uložte dokument
+
+Nakonec uložíme dokument do našeho zadaného adresáře:
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-tomto příkladu jsme vytvořili nový dokument, vložili pole ASK bez použití DocumentBuilder, nakonfigurovali různé vlastnosti pole a uložili dokument se zadaným názvem souboru.
+Tento řádek uloží dokument s vloženým polem ASK. A tady to máte – váš dokument je nyní vybaven dynamickým polem ASK!
 
-Tímto končí náš průvodce používáním funkce "Vložit pole ASK bez DocumentBuilder" s Aspose.Words pro .NET.
+## Závěr
 
-### FAQ
+Gratulujeme! Právě jste přidali pole ASK do dokumentu aplikace Word pomocí Aspose.Words for .NET bez Tvůrce dokumentů. Tato funkce může výrazně zlepšit interakci uživatele s vašimi dokumenty, díky čemuž jsou flexibilnější a uživatelsky přívětivější. Pokračujte v experimentování s různými poli a vlastnostmi, abyste odemkli plný potenciál Aspose.Words. Šťastné kódování!
 
-#### Otázka: Co je pole ASK v Aspose.Words?
+## FAQ
 
-A: Pole ASK v Aspose.Words se používá k položení otázky uživateli při otevírání dokumentu. Často se používá k vyžádání konkrétních informací nebo zpětné vazby, které se mohou lišit od uživatele k uživateli.
+### Co je pole ASK v Aspose.Words?
+Pole ASK v Aspose.Words je pole, které uživatele vyzve k zadání konkrétního vstupu při otevření dokumentu, což umožňuje dynamické zadávání dat.
 
-#### Otázka: Jak vložit pole ASK do dokumentu aplikace Word bez použití Tvůrce dokumentů v Aspose.Words?
+### Mohu použít více polí ASK v jednom dokumentu?
+Ano, do dokumentu můžete vložit více polí ASK, každé s jedinečnými výzvami a odpověďmi.
 
-Odpověď: Chcete-li vložit pole ASK do dokumentu aplikace Word bez použití Tvůrce dokumentů v Aspose.Words, můžete postupovat takto:
+###  Jaký je účel`PromptOnceOnMailMerge` property?
+ The`PromptOnceOnMailMerge` vlastnost určuje, zda se výzva ASK zobrazí pouze jednou během operace hromadné korespondence nebo pokaždé.
 
-1. Importujte třídu Document a Field z oboru názvů Aspose.Words.Fields.
-2. Vytvořte instanci dokumentu načtením existujícího dokumentu.
-3. Pomocí metody InsertField vložte pole ASK zadáním názvu otázky.
-4. Uložte dokument.
+### Musím aktualizovat pole ASK po nastavení jeho vlastností?
+Ano, aktualizace pole ASK zajistí, že všechny vlastnosti budou správně použity a pole bude fungovat podle očekávání.
 
-#### Otázka: Jak získám uživatelskou odpověď pro pole ASK v dokumentu aplikace Word?
-
-Odpověď: Chcete-li získat odpověď uživatele na pole ASK v dokumentu aplikace Word, můžete použít metodu GetFieldNames dostupnou ve třídě Document. Tato metoda vrací seznam názvů polí přítomných v dokumentu. Poté můžete zkontrolovat, zda je v seznamu přítomen název pole ASK, a získat přidruženou odpověď.
-
-#### Otázka: Lze pole ASK použít k vyžádání dalších informací od uživatele?
-
-Odpověď: Ano, pole ASK lze použít k vyžádání více informací od uživatele. Do dokumentu můžete vložit více polí ASK, každé s jinou otázkou. Po otevření dokumentu bude uživatel vyzván k zadání odpovídajících odpovědí.
+### Mohu upravit text výzvy a výchozí odpověď?
+Absolutně! Můžete nastavit vlastní text výzvy a výchozí odpovědi, abyste pole ASK přizpůsobili svým konkrétním potřebám.

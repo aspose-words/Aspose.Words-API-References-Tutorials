@@ -56,7 +56,7 @@ Console.WriteLine(info.IsEncrypted);
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書の暗号化状態を正常に確認できました。数行のコードでこんなにも作業が楽になるなんて驚きですね。ご質問や問題がございましたら、お気軽にお問い合わせください。[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).
+これで完了です。Aspose.Words for .NET を使用して Word 文書の暗号化状態を正常に確認できました。数行のコードでこんなにも作業が楽になるなんて驚きですね。ご質問や問題がありましたら、お気軽にお問い合わせください。[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).
 
 ## よくある質問
 

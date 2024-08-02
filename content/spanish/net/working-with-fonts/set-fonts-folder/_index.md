@@ -2,7 +2,7 @@
 title: Establecer carpeta de fuentes
 linktitle: Establecer carpeta de fuentes
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo configurar el directorio de fuentes en Aspose.Words para .NET y garantice la disponibilidad de las fuentes utilizadas en sus documentos.
+description: Aprenda a configurar el directorio de fuentes en Aspose.Words para .NET y garantice la disponibilidad de las fuentes utilizadas en sus documentos.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-fonts-folder/

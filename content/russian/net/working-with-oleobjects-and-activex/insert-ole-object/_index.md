@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Вопрос: Как вставить объект OLE в документ?
 
- А: Используйте`InsertOleObject` метод конструктора документов (`DocumentBuilder`), чтобы вставить объект OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые параметры. Вот пример:
+ А: Используйте`InsertOleObject` метод конструктора документов (`DocumentBuilder`), чтобы вставить объект OLE в документ. Укажите URL-адрес объекта OLE, тип объекта, параметры отображения и другие необходимые настройки. Вот пример:
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);

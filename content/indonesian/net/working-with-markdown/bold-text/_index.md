@@ -53,7 +53,7 @@ Selamat! Anda sekarang telah mempelajari cara menebalkan teks dengan Aspose.Word
 
 #### T: Bagaimana cara membuat teks tebal di Aspose.Words?
 
- A: Untuk membuat teks tebal di Aspose.Words, Anda dapat menggunakan`Font.Bold` properti dari`Run`obyek. Anda dapat mengatur properti ini menjadi`true` untuk menebalkan teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.Bold=true` untuk menebalkan teks di dalamnya`Run` obyek.
+ A: Untuk membuat teks tebal di Aspose.Words, Anda dapat menggunakan`Font.Bold` properti dari`Run` obyek. Anda dapat mengatur properti ini menjadi`true` untuk menebalkan teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.Bold=true` untuk menebalkan teks di dalamnya`Run` obyek.
 
 #### Q: Apakah mungkin untuk menebalkan beberapa bagian teks dalam satu paragraf?
 

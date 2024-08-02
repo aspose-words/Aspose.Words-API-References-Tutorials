@@ -12,4 +12,4 @@ Words Processing with Watermark は、Aspose.Words for .NET ライブラリを�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [特定のオプションでテキスト透かしを追加する](./add-text-watermark-with-specific-options/) | Aspose.Words for .NET を使用して、特定のオプションでテキスト透かしを追加する方法を学習します。ステップバイステップ ガイド。 |
+| [特定のオプションでテキスト透かしを追加する](./add-text-watermark-with-specific-options/) | Aspose.Words for .NET を使用して、特定のオプションを使用して Word 文書にテキスト透かしを追加する方法を学びます。フォント、サイズ、色、レイアウトを簡単にカスタマイズします。 |

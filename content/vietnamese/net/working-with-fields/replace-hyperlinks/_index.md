@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## Giới thiệu
 
 Trong thế giới phát triển .NET, việc quản lý và thao tác tài liệu là một nhiệm vụ quan trọng, thường đòi hỏi phải xử lý hiệu quả các siêu liên kết trong tài liệu. Aspose.Words for .NET cung cấp các khả năng mạnh mẽ để thay thế liền mạch các siêu liên kết, đảm bảo tài liệu của bạn được liên kết động với đúng tài nguyên. Hướng dẫn này đi sâu vào cách bạn có thể đạt được điều này bằng cách sử dụng Aspose.Words cho .NET, hướng dẫn bạn từng bước trong suốt quy trình.
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 Việc thay thế siêu liên kết trong tài liệu bằng Aspose.Words cho .NET rất đơn giản và nâng cao tính chất động của tài liệu của bạn. Cho dù cập nhật URL hay chuyển đổi nội dung tài liệu theo chương trình, Aspose.Words đều đơn giản hóa các tác vụ này, đảm bảo quản lý tài liệu hiệu quả.
 
-## Câu hỏi thường gặp (FAQ)
+## Câu hỏi thường gặp
 
 ### Aspose.Words cho .NET có thể xử lý các cấu trúc tài liệu phức tạp không?
 Có, Aspose.Words hỗ trợ các cấu trúc phức tạp như bảng, hình ảnh và siêu liên kết một cách liền mạch.

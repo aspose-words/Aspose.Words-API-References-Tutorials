@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /ar/net/remove-content/remove-table-of-contents/
 ---
-## قم بإزالة جدول المحتويات في مستند Word باستخدام Aspose.Words لـ .NET
+## مقدمة
 
 هل سئمت من التعامل مع جدول المحتويات (TOC) غير المرغوب فيه في مستندات Word الخاصة بك؟ لقد مررنا جميعًا بذلك - في بعض الأحيان لا يكون جدول المحتويات ضروريًا. من حسن حظك أن Aspose.Words for .NET يجعل من السهل إزالة جدول المحتويات برمجيًا. في هذا البرنامج التعليمي، سأرشدك خلال العملية خطوة بخطوة، حتى تتمكن من إتقانها في لمح البصر. دعونا نتعمق في الأمر!
 
@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"`مع المسار إلى مجلد المستندات الخاص بك. هذا هو المكان الذي يوجد فيه ملف Word الخاص بك.
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار إلى مجلد المستندات الخاص بك. هذا هو المكان الذي يوجد فيه ملف Word الخاص بك.
 
 ## الخطوة 2: قم بتحميل المستند
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 إليك ما يحدث:
 - `doc.Range.Fields`: يؤدي هذا إلى الوصول إلى كافة الحقول الموجودة في المستند.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: يؤدي ذلك إلى تصفية الحقول للعثور على تلك التي تمثل جداول المحتويات فقط.
+- `.Where(f => f.Type == FieldType.FieldTOC)`يؤدي ذلك إلى تصفية الحقول للعثور على تلك التي تمثل جداول المحتويات فقط.
 - `.ToList().ForEach(f => f.Remove())`: يؤدي هذا إلى تحويل الحقول التي تمت تصفيتها إلى قائمة وإزالة كل منها.
 
 ## الخطوة 4: احفظ المستند المعدل
@@ -83,22 +83,22 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## الأسئلة الشائعة
 
-### 1. ما هو Aspose.Words لـ .NET؟
+### ما هو Aspose.Words لـ .NET؟
 
 Aspose.Words for .NET هي مكتبة .NET قوية لمعالجة المستندات، مما يسمح للمطورين بإنشاء مستندات Word وتعديلها وتحويلها برمجيًا.
 
-### 2. هل يمكنني استخدام Aspose.Words مجانًا؟
+### هل يمكنني استخدام Aspose.Words مجانًا؟
 
  نعم، يمكنك استخدام Aspose.Words مع[تجربة مجانية](https://releases.aspose.com/) أو الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/).
 
-### 3. هل من الممكن إزالة الحقول الأخرى باستخدام Aspose.Words؟
+### هل من الممكن إزالة الحقول الأخرى باستخدام Aspose.Words؟
 
 قطعاً! يمكنك إزالة أي حقل عن طريق تحديد نوعه في حالة التصفية.
 
-### 4. هل أحتاج إلى Visual Studio لاستخدام Aspose.Words؟
+### هل أحتاج إلى Visual Studio لاستخدام Aspose.Words؟
 
 بينما يوصى بشدة باستخدام Visual Studio لسهولة التطوير، يمكنك استخدام أي بيئة تطوير متكاملة (IDE) تدعم .NET.
 
-### 5. أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words؟
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words؟
 
  لمزيد من الوثائق التفصيلية، قم بزيارة[Aspose.Words لوثائق .NET API](https://reference.aspose.com/words/net/).

@@ -2,118 +2,106 @@
 title: Use caractere de espaço por nível para recuo de lista
 linktitle: Use caractere de espaço por nível para recuo de lista
 second_title: API de processamento de documentos Aspose.Words
-description: Guia passo a passo para usar um caractere de espaço por nível para recuo de lista em Aspose.Words for .NET. Crie documentos Word bem estruturados com facilidade.
+description: Aprenda como criar listas de vários níveis com recuo de caracteres de espaço em Aspose.Words for .NET. Guia passo a passo para formatação precisa de documentos.
 type: docs
 weight: 10
 url: /pt/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e manipular documentos do Word em um aplicativo C#. Entre as funcionalidades oferecidas pelo Aspose.Words está a possibilidade de utilizar um caractere de espaço por nível para o recuo de listas. Neste guia, mostraremos como usar o código-fonte C# do Aspose.Words for .NET para implementar esta funcionalidade.
+## Introdução
 
-## Compreendendo a biblioteca Aspose.Words
+Quando se trata de formatação de documentos, especialmente ao trabalhar com listas, a precisão é fundamental. Em cenários onde você precisa criar documentos com vários níveis de recuo, Aspose.Words for .NET oferece ferramentas poderosas para realizar essa tarefa. Um recurso específico que pode ser útil é configurar o recuo da lista em arquivos de texto. Este guia orientará você sobre como usar caracteres de espaço para recuo de lista, garantindo que seu documento mantenha a estrutura e a legibilidade desejadas.
 
-Antes de mergulhar no código, é importante entender a biblioteca Aspose.Words para .NET. Aspose.Words é uma biblioteca popular que torna o processamento de palavras com documentos do Word fácil e eficiente. Oferece uma ampla gama de funcionalidades para criação, modificação e manipulação de documentos Word, incluindo gerenciamento de listas e recuos.
+## Pré-requisitos
 
-## Criando o documento e adicionando conteúdo
+Antes de mergulhar no tutorial, aqui está o que você precisa:
 
-primeira etapa é criar um novo documento e adicionar conteúdo a ele. Use a classe Document para criar uma nova instância de documento. Em seguida, use a classe DocumentBuilder para adicionar texto e criar uma lista com vários níveis de recuo. Aqui está um exemplo :
+-  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Se você ainda não o possui, pode baixá-lo no site[Aspor site](https://releases.aspose.com/words/net/).
+- Visual Studio: um ambiente de desenvolvimento para escrever e testar seu código.
+- Compreensão básica de C#: A familiaridade com C# e .NET framework o ajudará a seguir em frente sem problemas.
+
+## Importar namespaces
+
+Para começar a trabalhar com Aspose.Words, você precisará importar os namespaces necessários. Veja como você pode incluí-los em seu projeto:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Vamos detalhar o processo de criação de um documento com uma lista de vários níveis e a especificação de caracteres de espaço para recuo. 
+
+## Etapa 1: configure seu documento
+
+ Primeiro, você precisará criar um novo documento e inicializar o`DocumentBuilder` objeto. Este objeto permitirá que você adicione facilmente conteúdo e formate-o conforme necessário.
+
+```csharp
+// Caminho para o diretório do seu documento
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// Crie o documento e adicione conteúdo
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ Neste trecho, substitua`"YOUR DOCUMENTS DIRECTORY"` com o caminho real onde você deseja salvar seu documento.
+
+## Etapa 2: crie uma lista com vários níveis de recuo
+
+ Com o`DocumentBuilder` Por exemplo, agora você pode criar uma lista com diferentes níveis de recuo. Use o`ListFormat` propriedade para aplicar numeração e recuar os itens da lista conforme necessário.
+
+```csharp
 // Crie uma lista com três níveis de recuo
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Neste exemplo, criamos um novo documento e usamos o DocumentBuilder para adicionar texto e criar uma lista com três níveis de recuo. Adicionamos três itens à lista, com cada item recuado em um nível adicional.
+ Nesta etapa,`ApplyNumberDefault` configura o formato da lista e`ListIndent` é usado para aumentar o nível de recuo para cada item de lista subsequente.
 
-## Usando um caractere de espaço por nível para recuo da lista
+## Etapa 3: configurar o caractere de espaço para recuo
 
-Uma vez adicionado o conteúdo, podemos agora configurar o recuo das listas usando um caractere de espaço por nível. Para isso utilizamos a classe TxtSaveOptions e definimos a propriedade ListIndentation.Count para o número de níveis de indentação e a propriedade ListIndentation.Character para o caractere de espaço a ser utilizado. Veja como:
+Agora que você configurou sua lista, a próxima etapa é configurar como o recuo da lista é tratado ao salvar o documento em um arquivo de texto. Você usará`TxtSaveOptions` para especificar que caracteres de espaço devem ser usados para recuo.
 
 ```csharp
+// Use um caractere de espaço por nível para recuo da lista
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+ Aqui,`ListIndentation.Count` especifica o número de caracteres de espaço por nível de recuo e`ListIndentation.Character` define o caractere real usado para recuo.
+
+## Etapa 4: salve o documento com as opções especificadas
+
+Por fim, salve seu documento usando as opções configuradas. Isso aplicará as configurações de recuo e salvará seu arquivo no formato desejado.
+
+```csharp
+// Salve o documento com as opções especificadas
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-Neste exemplo, criamos uma instância de TxtSaveOptions e definimos a propriedade ListIndentation.Count como 3 para indicar que existem três níveis de recuo na lista. Também definimos a propriedade ListIndentation.Character como o caractere de espaço (' ') que queremos usar para recuo.
-
-### Exemplo de código-fonte para o recurso "Usar um caractere de espaço por nível para recuo de lista" com Aspose.Words for .NET
-
-Aqui está o exemplo de código-fonte completo para o recurso "Usar um caractere de espaço por nível para recuo de lista" com Aspose.Words for .NET:
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             // Caminho para o diretório do seu documento
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             // Crie o documento e adicione conteúdo
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             // Crie uma lista com três níveis de recuo
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             // Use um caractere de espaço por nível para recuo da lista
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             // Salve o documento com as opções especificadas
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+ Este trecho de código salva o documento no caminho especificado em`dataDir` com o nome do arquivo`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. O arquivo salvo terá a lista formatada de acordo com suas configurações de recuo.
 
 ## Conclusão
 
-Neste guia, explicamos como usar Aspose.Words for .NET para aplicar a funcionalidade "Usar um caractere de espaço por nível para recuo de lista". Seguindo as etapas fornecidas e usando o código-fonte C# fornecido, você pode configurar facilmente o recuo de listas em seus documentos do Word usando um caractere de espaço por nível. Aspose.Words oferece enorme flexibilidade e poder para processamento de palavras com formatação de texto e gerenciamento de lista, permitindo criar documentos bem estruturados em seu aplicativo C#.
+Seguindo essas etapas, você criou com êxito um documento com recuo de lista de vários níveis usando caracteres de espaço para formatação. Essa abordagem garante que suas listas sejam bem estruturadas e fáceis de ler, mesmo quando salvas como arquivos de texto. Aspose.Words for .NET fornece ferramentas robustas para manipulação de documentos, e dominar esses recursos pode melhorar significativamente seus fluxos de trabalho de processamento de documentos.
 
-### perguntas frequentes
+## Perguntas frequentes
 
-#### P: O que é Aspose.Words para .NET?
-Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e manipular documentos Word em um aplicativo C#. Ele oferece muitos recursos para processamento de palavras com documentos do Word, incluindo a capacidade de usar um espaço por nível para recuar listas.
+### Posso usar caracteres diferentes para recuo de lista além de espaços?
+ Sim, você pode especificar caracteres diferentes para recuo da lista definindo a opção`Character` propriedade em`TxtSaveOptions`.
 
-#### P: Como posso usar um espaço por nível para recuo de lista com Aspose.Words for .NET?
-Você pode usar um espaço por nível para recuo da lista seguindo estas etapas:
+### Como aplico marcadores em vez de números nas listas?
+ Usar`ListFormat.ApplyBulletDefault()` em vez de`ApplyNumberDefault()` para criar uma lista com marcadores.
 
- Crie um novo documento usando o`Document` aula.
+### Posso ajustar dinamicamente o número de espaços para recuo?
+ Sim, você pode ajustar o`ListIndentation.Count` propriedade para definir o número de espaços com base em seus requisitos.
 
- Use o`DocumentBuilder`class para adicionar conteúdo ao documento e criar uma lista com vários níveis de recuo.
+### É possível alterar o recuo da lista após a criação do documento?
+Sim, você pode modificar as configurações de formatação e recuo da lista a qualquer momento antes de salvar o documento.
 
- Depois de adicionar o conteúdo e configurar o recuo da lista, use o comando`TxtSaveOptions` classe e definir o`ListIndentation.Count` propriedade para o número de níveis de indentação e o`ListIndentation.Character` propriedade no espaço (`' '`) usar.
-
- Salve o documento com as opções especificadas usando o`Save` método do`Document` aula.
-
-#### P: O Aspose.Words oferece suporte a outros caracteres para recuo de lista?
-Sim, Aspose.Words suporta outros caracteres para recuar listas. Você pode usar caracteres que não sejam espaços em branco, como tabulações (`'\t'` ) ou outros caracteres especiais, definindo o`ListIndentation.Character` propriedade para o caractere desejado.
-
-#### P: É possível personalizar o número de espaços por nível para recuo da lista?
- Sim, você pode personalizar o número de espaços por nível para recuo da lista alterando o valor do`ListIndentation.Count` propriedade no`TxtSaveOptions` aula. Você pode especificar o número de espaços desejados para cada nível de recuo.
-
-#### P: Que outros recursos o Aspose.Words oferece para gerenciamento de listas?
-Aspose.Words oferece muitos recursos para gerenciar listas em documentos do Word. Você pode criar listas numeradas ou com marcadores, definir níveis de recuo, personalizar o estilo das listas, adicionar itens de lista e muito mais.
+### Que outros formatos de documento suportam configurações de recuo de lista?
+Além dos arquivos de texto, as configurações de recuo da lista podem ser aplicadas a outros formatos, como DOCX, PDF e HTML ao usar Aspose.Words.

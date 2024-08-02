@@ -40,7 +40,7 @@ Bemästra dokumentutskrift med Aspose.Words för Java! Automatisera utskriftsins
 ### [Dokumentsäkerhet](./document-security/)
 Förbättra dokumentsäkerheten med Aspose.Words för Java! Implementera skydd, kryptering och digitala signaturer för robust dataskydd. 
 ### [Dokumentdelning](./document-splitting/)
-Dela dokument enkelt med Aspose.Words för Java! Dela upp stora filer effektivt baserat på sidintervall, antal stycken eller anpassade kriterier.
+Dela dokument med lätthet med Aspose.Words för Java! Dela upp stora filer effektivt baserat på sidintervall, antal stycken eller anpassade kriterier.
 ### [Dokumentrevision](./document-revision/)
 Effektivisera dokumentrevisioner med Aspose.Words för Java! Spåra ändringar, hantera versionskontroll och automatisera revisionsuppgifter utan ansträngning. 
 ### [Laddar och sparar dokument](./document-loading-and-saving/)

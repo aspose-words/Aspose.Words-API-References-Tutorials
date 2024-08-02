@@ -2,7 +2,7 @@
 title: Szegélyek és árnyékolások alkalmazása a Word-dokumentum bekezdésére
 linktitle: Szegélyek és árnyékolások alkalmazása a Word-dokumentum bekezdésére
 second_title: Aspose.Words Document Processing API
-description: Szegélyek és árnyékolások alkalmazása a Word-dokumentumok bekezdéseire az Aspose.Words for .NET segítségével. Kövesse lépésenkénti útmutatónkat a dokumentum formázásának javításához.
+description: Szegélyek és árnyékolások alkalmazása a Word-dokumentumok bekezdéseinél az Aspose.Words for .NET segítségével. Kövesse lépésenkénti útmutatónkat a dokumentum formázásának javításához.
 type: docs
 weight: 10
 url: /hu/net/document-formatting/apply-borders-and-shading-to-paragraph/
@@ -112,7 +112,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ### Használhatok különböző vonalstílusokat minden szegélyhez?  
  Teljesen! Az Aspose.Words for .NET lehetővé teszi az egyes szegélyek egyéni testreszabását. Csak állítsd be a`LineStyle` minden szegélytípushoz az útmutatóban látható módon.
 
-### Milyen egyéb árnyékoló textúrák állnak rendelkezésre?  
+### Milyen más árnyékoló textúrák állnak rendelkezésre?  
  Számos textúra használható, például tömör, vízszintes csík, függőleges csík stb. Ellenőrizd a[Aspose dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
 
 ### Hogyan tudom megváltoztatni a keret színét?  

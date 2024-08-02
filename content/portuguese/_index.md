@@ -32,7 +32,7 @@ Estes são links para alguns recursos úteis:
 - [Clonar e combinar documentos](./net/clone-and-combine-documents/) 
 - [Comparar documentos](./net/compare-documents/) 
 - [Formatação de documentos](./net/document-formatting/)      
-- [Programação com marca d’água](./net/programming-with-watermark/)    
+- [Programação com marca d'água](./net/programming-with-watermark/)    
 - [Programando com opções Markdownsave](./net/programming-with-markdownsaveoptions/)   
 - [Conversões básicas](./net/basic-conversions/)   
 

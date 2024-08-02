@@ -2,84 +2,97 @@
 title: Rozdělit dokument Word podle nadpisů Html
 linktitle: Podle nadpisů Html
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce vysvětlující zdrojový kód C# dokumentu rozděleného slova podle nadpisu HTML funkce Aspose.Words for .NET
+description: Naučte se, jak rozdělit dokument aplikace Word podle nadpisů do HTML pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/split-document/by-headings-html/
 ---
-V tomto tutoriálu vás provedeme tím, jak rozdělit dokument aplikace Word na menší části pomocí funkce By HTML Heading Aspose.Words for .NET. Chcete-li porozumět zdrojovému kódu a vygenerovat samostatné dokumenty HTML na základě nadpisu, postupujte podle následujících kroků.
+## Úvod
 
-## Krok 1: Načtení dokumentu
+Rozdělení dokumentu aplikace Word podle nadpisů může změnit hru pro správu velkých dokumentů nebo vytváření segmentovaných výstupů HTML. Aspose.Words for .NET poskytuje přímý způsob, jak toho dosáhnout. V tomto tutoriálu vás provedeme celým procesem a zajistíme, že na cestě pochopíte každý detail.
 
-Chcete-li začít, zadejte adresář pro váš dokument a načtěte dokument do objektu Document. Zde je postup:
+## Předpoklady
+
+Než se pustíte do výukového programu, ujistěte se, že máte následující:
+
+1. Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji z[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: IDE jako Visual Studio.
+3. Základní znalost C#: Pochopení základů vám pomůže snadno pokračovat.
+4. Ukázkový dokument: Připravte si dokument aplikace Word, který chcete rozdělit podle nadpisů.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. To je klíčové pro přístup k třídám a metodám Aspose.Words.
 
 ```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Krok 2: Rozdělení dokumentu podle nadpisu ve formátu HTML
+## Krok 1: Nastavte svůj projekt
 
-Nyní nastavíme možnosti uložení pro rozdělení dokumentu na menší části na základě nadpisu ve formátu HTML. Zde je postup:
+Chcete-li začít, nastavte svůj projekt ve vývojovém prostředí. Otevřete Visual Studio a vytvořte novou konzolovou aplikaci.
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-// Rozdělte dokument na menší části, v tomto případě jej oddělte podle názvu.
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. Vytvoření nového projektu: Otevřete Visual Studio, vyberte „Vytvořit nový projekt“, vyberte „Konzolová aplikace (.NET Core)“ a klikněte na „Další“.
+2. Nakonfigurujte svůj projekt: Pojmenujte svůj projekt, vyberte umístění pro jeho uložení a klikněte na „Vytvořit“.
+3.  Instalace Aspose.Words for .NET: K instalaci knihovny Aspose.Words použijte NuGet Package Manager. Ve Správci balíčků NuGet vyhledejte`Aspose.Words` a nainstalujte jej.
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## Krok 2: Vložte svůj dokument
 
-### Příklad zdrojového kódu pro By Headings HTML pomocí Aspose.Words pro .NET
+Dále musíte načíst dokument aplikace Word, který chcete rozdělit. Ujistěte se, že je dokument umístěn v adresáři, ke kterému máte snadný přístup.
 
-Zde je kompletní zdrojový kód pro funkci By HTML Heading Aspose.Words pro .NET:
+1. Definujte cestu k adresáři: Vytvořte proměnnou pro cestu k adresáři vašeho dokumentu.
+2.  Vložte dokument: Použijte`Document` třídy k načtení dokumentu aplikace Word.
 
 ```csharp
 // Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Krok 3: Nakonfigurujte možnosti uložení HTML
+
+Nyní nakonfigurujme možnosti uložení HTML, aby bylo možné určit, že dokument má být rozdělen podle nadpisů.
+
+1.  Create HtmlSaveOptions: Vytvořte instanci`HtmlSaveOptions` třída.
+2.  Nastavit kritéria rozdělení dokumentu: Použijte`DocumentSplitCriteria` vlastnost, která určuje, že dokument má být rozdělen podle odstavců nadpisů.
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	// Rozdělte dokument na menší části, v tomto případě rozdělené podle nadpisu.
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    // Rozdělte dokument na menší části, v tomto případě rozdělené podle nadpisu.
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## Krok 4: Uložte rozdělený dokument
 
+Nakonec uložte dokument se zadanými možnostmi uložení HTML. Tím se vygeneruje soubor HTML rozdělený podle nadpisů.
+
+1.  Uložit dokument: Použijte`Save` metoda`Document` třídy k uložení dokumentu se zadanými možnostmi.
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-S tímto kódem budete moci rozdělit dokument aplikace Word na menší části pomocí Aspose.Words for .NET na základě nadpisů. Pro každou část pak můžete vygenerovat samostatné HTML dokumenty.
-
 ## Závěr
 
- V tomto tutoriálu jsme se naučili, jak rozdělit dokument aplikace Word na menší části pomocí funkce By HTML Heading Aspose.Words for .NET. Zadáním`DocumentSplitCriteria` tak jako`HeadingParagraph` v`HtmlSaveOptions`, byli jsme schopni vygenerovat samostatné HTML dokumenty na základě nadpisů přítomných v původním dokumentu.
+A tady to máte! Úspěšně jste rozdělili dokument aplikace Word podle nadpisů a uložili jej jako HTML pomocí Aspose.Words for .NET. Tato metoda je vysoce efektivní pro organizaci velkých dokumentů a vytváření segmentovaných výstupů HTML, díky čemuž je váš obsah lépe spravovatelný a přístupný.
 
-Rozdělení dokumentu podle nadpisů může být užitečné pro organizaci a správu obsahu, zejména ve velkých dokumentech s více oddíly. Aspose.Words for .NET poskytuje spolehlivé a efektivní řešení pro manipulaci s rozdělováním dokumentů a generování výstupu v různých formátech.
+## FAQ
 
-Neváhejte a prozkoumejte další funkce a možnosti poskytované Aspose.Words pro .NET, abyste dále zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro práci s dokumenty Wordu v aplikacích .NET.
 
-### Nejčastější dotazy
+### Mohu rozdělit dokument podle jiných kritérií?
+Ano, Aspose.Words vám umožňuje rozdělit dokumenty podle různých kritérií, jako jsou sekce, stránky a další.
 
-#### Jak mohu rozdělit dokument aplikace Word na menší části na základě nadpisů pomocí Aspose.Words for .NET?
+### Je Aspose.Words zdarma?
+ Aspose.Words nabízí bezplatnou zkušební verzi, ale pro plné funkce si budete muset zakoupit licenci. Zkontrolujte jejich[koupit stránku](https://purchase.aspose.com/buy) Více podrobností.
 
- Chcete-li rozdělit dokument aplikace Word na základě nadpisů, můžete použít funkci Podle nadpisu HTML aplikace Aspose.Words for .NET. Postupujte podle poskytnutého zdrojového kódu a nastavte`DocumentSplitCriteria` na`HeadingParagraph` v`HtmlSaveOptions` objekt. Tím se dokument rozdělí na menší části v každém nadpisu.
+### Kde najdu dokumentaci?
+ K dispozici je obsáhlá dokumentace[tady](https://reference.aspose.com/words/net/).
 
-#### Na jaké formáty mohu rozdělit dokument aplikace Word?
-
- Poskytnutý zdrojový kód ukazuje rozdělení dokumentu aplikace Word na menší části ve formátu HTML. Aspose.Words for .NET však podporuje různé výstupní formáty, včetně DOCX, PDF, EPUB a dalších. Můžete upravit kód a zadat požadovaný výstupní formát v`HtmlSaveOptions` objekt podle toho.
-
-#### Mohu zvolit jiná kritéria pro rozdělení dokumentu?
-
-Ano, můžete si vybrat jiná kritéria pro rozdělení dokumentu na základě vašich požadavků. Aspose.Words for .NET poskytuje několik možností kritérií, jako např`HeadingParagraph`, `Page`, `Section` , a více. Upravte`DocumentSplitCriteria` nemovitost v`HtmlSaveOptions` objektu a vyberte vhodná kritéria pro rozdělení.
-
-#### Jak mohu přizpůsobit výstupní HTML pro rozdělené části?
-
- Aspose.Words for .NET vám umožňuje přizpůsobit výstupní HTML pro rozdělené části zadáním dalších možností v`HtmlSaveOptions` objekt. Můžete ovládat různé aspekty, jako jsou styly CSS, obrázky, písma a další. Další podrobnosti o přizpůsobení výstupu HTML naleznete v dokumentaci Aspose.Words.
-
-#### Mohu rozdělit dokument na základě více kritérií?
-
- Ano, dokument můžete rozdělit na základě více kritérií tak, že odpovídajícím způsobem zkombinujete možnosti kritérií. Můžete například rozdělit dokument jak podle nadpisu, tak podle stránky nastavením`DocumentSplitCriteria`majetek do`HeadingParagraph | Page`. Tím se dokument rozdělí na každý nadpis a každou stránku a vytvoří menší části na základě obou kritérií.
+### Jak získám podporu?
+ Pro podporu navštivte Aspose.Words[Fórum](https://forum.aspose.com/c/words/8).

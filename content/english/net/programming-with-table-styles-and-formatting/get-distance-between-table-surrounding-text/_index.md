@@ -2,53 +2,97 @@
 title: Get Distance Between Table Surrounding Text
 linktitle: Get Distance Between Table Surrounding Text
 second_title: Aspose.Words Document Processing API
-description: Step-by-step guide to get the distance between text and a table in a Word document using Aspose.Words for .NET.
+description: Learn how to retrieve the distance between a table and the surrounding text in Word documents using Aspose.Words for .NET. Improve your document layout with this guide.
 type: docs
 weight: 10
 url: /net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
+## Introduction
 
-In this tutorial, we'll walk you through the step-by-step process to get the distance between surrounding text in a table using Aspose.Words for .NET. We'll explain the bundled C# source code and provide you with a comprehensive guide to help you understand and implement this feature in your own projects. At the end of this tutorial, you will know how to access the various distances between a table and the surrounding text in your Word documents using Aspose.Words for .NET.
+Imagine you're preparing a sleek report or an important document, and you want your tables to look just right. You need to ensure there's enough space between the tables and the text around them, making the document easy to read and visually appealing. Using Aspose.Words for .NET, you can easily retrieve and adjust these distances programmatically. This tutorial will guide you through the steps to achieve this, making your documents stand out with that extra touch of professionalism.
 
-## Step 1: Define the document directory
-First, you need to set the path to your documents directory. This is where your Word document is located. Replace "YOUR DOCUMENTS DIRECTORY" with the appropriate path.
+## Prerequisites
+
+Before we jump into the code, let's make sure you have everything you need:
+
+1. Aspose.Words for .NET Library: You need to have the Aspose.Words for .NET library installed. If you haven't already, you can download it from the [Aspose Releases](https://releases.aspose.com/words/net/) page.
+2. Development Environment: A working development environment with .NET Framework installed. Visual Studio is a good option.
+3. Sample Document: A Word document (.docx) containing at least one table to test the code.
+
+## Import Namespaces
+
+First things first, let's import the necessary namespaces into your project. This will enable you to access the classes and methods required to manipulate Word documents using Aspose.Words for .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Step 2: Load existing document
-Next, you need to load the existing Word document into an instance of the `Document` class.
+Now, let's break down the process into easy-to-follow steps. We'll cover everything from loading your document to retrieving the distances around your table.
+
+## Step 1: Load Your Document
+
+The first step is to load your Word document into the Aspose.Words `Document` object. This object represents the entire document.
 
 ```csharp
+// Path to your document directory
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Load the document
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Step 3: Get the distance between the table and the surrounding text
-To get the distance between the table and the surrounding text, we need to access the table in the document using the `GetChild()` method and the `NodeType.Table` property. We can then display the different distances using the array properties `DistanceTop`, `DistanceBottom`, `DistanceRight` and `DistanceLeft`.
+## Step 2: Access the Table
+
+Next, you need to access the table within your document. The `GetChild` method allows you to retrieve the first table found in the document.
 
 ```csharp
+// Get the first table in the document
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-Console.WriteLine("Distance between table and top text: " + table.DistanceTop);
-Console.WriteLine("Distance between table and bottom text: " + table.DistanceBottom);
-Console.WriteLine("Distance between the table and the text on the right: " + table.DistanceRight);
-Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### Sample source code for Get Distance Between Table Surrounding Text using Aspose.Words for .NET 
+## Step 3: Retrieve Distance Values
+
+Now that you have the table, it's time to get the distance values. These values represent the space between the table and the surrounding text from each side: top, bottom, left, and right.
 
 ```csharp
-	// Path to your document directory 
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Get distance between table and surrounding text
+Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
+```
 
-	Document doc = new Document(dataDir + "Tables.docx");
-	Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Console.WriteLine(table.DistanceTop);
-	Console.WriteLine(table.DistanceBottom);
-	Console.WriteLine(table.DistanceRight);
-	Console.WriteLine(table.DistanceLeft);
+## Step 4: Display the Distances
+
+Finally, you can display the distances. This can help you verify the spacing and make any necessary adjustments to ensure your table looks perfect in the document.
+
+```csharp
+// Display the distances
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ```
 
 ## Conclusion
-In this tutorial, we learned how to get the distance between surrounding text in a table using Aspose.Words for .NET. By following this step-by-step guide, you can easily access the various distances between a table and the surrounding text in your Word documents. Aspose.Words offers a powerful and flexible API for manipulating and formatting tables in your documents. With this knowledge, you can analyze the layout of your tables in relation to the text and meet specific needs.
+
+And there you have it! By following these steps, you can easily retrieve the distances between a table and the surrounding text in your Word documents using Aspose.Words for .NET. This simple yet powerful technique allows you to fine-tune your document layout, making it more readable and visually appealing. Happy coding!
+
+## FAQ's
+
+### Can I adjust the distances programmatically?
+Yes, you can adjust the distances programmatically using Aspose.Words by setting the `DistanceTop`, `DistanceBottom`, `DistanceRight`, and `DistanceLeft` properties of the `Table` object.
+
+### What if my document has multiple tables?
+You can loop through the document's child nodes and apply the same method to each table. Use `GetChildNodes(NodeType.Table, true)` to get all tables.
+
+### Can I use Aspose.Words with .NET Core?
+Absolutely! Aspose.Words supports .NET Core, and you can use the same code with minor adjustments for .NET Core projects.
+
+### How do I install Aspose.Words for .NET?
+You can install Aspose.Words for .NET via NuGet Package Manager in Visual Studio. Simply search for "Aspose.Words" and install the package.
+
+### Are there any limitations on the document types supported by Aspose.Words?
+Aspose.Words supports a wide range of document formats, including DOCX, DOC, PDF, HTML, and more. Check the [documentation](https://reference.aspose.com/words/net/) for a full list of supported formats.

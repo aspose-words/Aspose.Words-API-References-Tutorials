@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Phần kết luận
 
-Và thế là xong! Bạn đã sao chép thành công văn bản được đánh dấu từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp này rất hiệu quả để tự động hóa các tác vụ thao tác tài liệu, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn.
+Và thế là xong! Bạn đã sao chép thành công văn bản được đánh dấu từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp này rất mạnh mẽ để tự động hóa các tác vụ thao tác tài liệu, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn.
 
 ## Câu hỏi thường gặp
 

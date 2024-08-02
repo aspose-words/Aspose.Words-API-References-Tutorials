@@ -7,42 +7,51 @@ type: docs
 weight: 10
 url: /hu/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
+## Bevezetés
 
-Ez az oktatóanyag bemutatja, hogyan hozható létre egy ismétlődő szakaszt tartalmazó táblázat egy Word-dokumentum egyéni Xml-részéhez leképezve az Aspose.Words for .NET használatával. Az ismétlődő szakasz lehetővé teszi sorok dinamikus hozzáadását az Egyéni Xml-részben tárolt XML-adatok alapján.
+Ebben az oktatóanyagban egy olyan ismétlődő szakaszt tartalmazó táblázat létrehozásának folyamatát mutatjuk be, amely egy egyéni XML-részhez van leképezve az Aspose.Words for .NET használatával. Ez különösen hasznos a strukturált adatokon alapuló dokumentumok dinamikus generálásához.
 
 ## Előfeltételek
-Az oktatóanyag követéséhez a következőkre van szükség:
 
-- Aspose.Words for .NET könyvtár telepítve.
-- C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+1.  Aspose.Words for .NET könyvtár telepítve. Letöltheti a[Aspose honlapja](https://releases.aspose.com/words/net/).
+2. A C# és XML alapvető ismerete.
 
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+## Névterek importálása
+
+Ügyeljen arra, hogy a szükséges névtereket tartalmazza a projektben:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Markup;
+using Aspose.Words.Tables;
+```
+
+## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuilder-t
+
+ Először hozzon létre egy új dokumentumot, és inicializálja a`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
 
-## 2. lépés: Hozzon létre egy dokumentumot és a DocumentBuildert
- Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` a dokumentum tartalmának felépítéséhez.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Adjon hozzá egyéni XML-adatokat egy CustomXmlPart-hoz
- Hozzon létre egy`CustomXmlPart` és egyéni XML-adatokat adjon hozzá. Ebben a példában egy XML-karakterláncot hozunk létre, amely könyvek gyűjteményét képviseli a címükkel és szerzőikkel.
+## 2. lépés: Egyéni XML-alkatrész hozzáadása
+
+Adjon hozzá egy egyéni XML részt a dokumentumhoz. Ez az XML tartalmazza azokat az adatokat, amelyeket le akarunk képezni a táblánkra:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-	"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-	"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
+    "<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
+    "<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
+    "<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## 4. lépés: Hozzon létre egy táblázatot és táblázatszerkezetet
-Kezdje el a táblázat létrehozását a`StartTable` módszere a`DocumentBuilder` . Adja hozzá a táblázat celláit és tartalmát a`InsertCell`és`Write` mód.
+## 3. lépés: A táblázatszerkezet létrehozása
+
+ Ezután használja a`DocumentBuilder` a táblázat fejlécének létrehozásához:
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,94 +63,60 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## 5. lépés: Hozzon létre egy egyéni XML-re leképezett Ismétlődő szakaszt
- Hozzon létre egy`StructuredDocumentTag` val vel`SdtType.RepeatingSection` az ismétlődő szakasz ábrázolására. Állítsa be az ismétlődő szakasz XML-leképezését a`SetMapping` módszere a`XmlMapping` ingatlan. Ebben a példában leképezzük az ismétlődő szakaszt`/books[1]/book`.
+## 4. lépés: Ismétlődő szakasz létrehozása
+
+ Hozzon létre egy`StructuredDocumentTag` (SDT) az ismétlődő szakaszhoz, és leképezi az XML adatokra:
 
 ```csharp
-StructuredDocumentTag repeatingSectionSdt =
-	new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
 repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## 6. lépés: Hozza létre az Ismétlődő szakasz elemet, és adja hozzá a cellákat
- Hozzon létre egy`StructuredDocumentTag` val vel`SdtType.RepeatingSectionItem` hogy képviselje az ismétlődő szakaszelemet. Gyermekként fűzze hozzá az ismétlődő részhez.
+## 5. lépés: Ismétlődő szakaszelem létrehozása
+
+Hozzon létre egy SDT-t az ismétlődő szakaszelemhez, és adja hozzá az ismétlődő szakaszhoz:
 
 ```csharp
-StructuredDocumentTag repeatingSectionItemSdt = 
-	new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-```
-
- Hozzon létre egy`Row` hogy az ismétlődő szakasz minden elemét képviselje, és hozzáfűzze az ismétlődő szakaszelemhez.
-
-```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## 7. lépés: Adjon hozzá tartalomvezérlőket az Ismétlés szakaszhoz
- Teremt`StructuredDocumentTag` tárgyakkal`SdtType.PlainText`
+## 6. lépés: XML adatok leképezése táblázatcellákra
 
-  a cím és a szerző tartalomvezérlőinek megjelenítésére. Állítsa be az XML-leképezést minden tartalomvezérlőhöz a segítségével`SetMapping` módszere a`XmlMapping` ingatlan. Ebben a példában a címvezérlőt a következőre rendeljük`/books[1]/book[1]/title[1]` és a szerző vezérli`/books[1]/book[1]/author[1]`.
+Hozzon létre SDT-ket a címhez és a szerzőhöz, rendelje hozzá őket az XML-adatokhoz, és fűzze hozzá a sorhoz:
 
 ```csharp
-StructuredDocumentTag titleSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
 row.AppendChild(titleSdt);
 
-StructuredDocumentTag authorSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag authorSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## 8. lépés: Mentse el a dokumentumot
- Mentse el a módosított dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx" néven mentjük.
+## 7. lépés: Mentse el a dokumentumot
+
+Végül mentse a dokumentumot a megadott könyvtárba:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### Példa forráskódra az Aspose.Words for .NET használatával táblázatismétlő szakasz létrehozásához egyéni Xml-részhez leképezve 
+## Következtetés
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Az alábbi lépések végrehajtásával sikeresen létrehozott egy táblát, amely ismétlődő szakaszt tartalmaz egy egyéni XML-részhez az Aspose.Words for .NET használatával. Ez lehetővé teszi a strukturált adatokon alapuló dinamikus tartalomgenerálást, rugalmasabbá és hatékonyabbá téve a dokumentumkészítést.
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-		"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-		"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-		"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Title");
-	builder.InsertCell();
-	builder.Write("Author");
-	builder.EndRow();
-	builder.EndTable();
-	StructuredDocumentTag repeatingSectionSdt =
-		new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
-	repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
-	table.AppendChild(repeatingSectionSdt);
-	StructuredDocumentTag repeatingSectionItemSdt = 
-		new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
-	repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-	Row row = new Row(doc);
-	repeatingSectionItemSdt.AppendChild(row);
-	StructuredDocumentTag titleSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
-	row.AppendChild(titleSdt);
-	StructuredDocumentTag authorSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
-	row.AppendChild(authorSdt);
-	doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
+## GYIK
 
-```
+### Mi az a StructuredDocumentTag (SDT)?
+Az SDT, más néven tartalomvezérlő, egy korlátozott terület a dokumentumban, amely strukturált adatok tárolására szolgál.
 
-Ez az! Az Aspose.Words for .NET segítségével sikeresen létrehozott egy táblázatot, amely ismétlődő szakaszt tartalmaz a Word-dokumentum CustomXmlPart-részére leképezve.
+### Használhatok más adattípusokat az egyéni XML részben?
+Igen, egyéni XML-részét bármilyen adattípussal strukturálhatja, és ennek megfelelően leképezheti őket.
+
+### Hogyan adhatok további sorokat az ismétlődő szakaszhoz?
+Az ismétlődő szakasz automatikusan megismétli a sorszerkezetet a leképezett XML-útvonal minden eleméhez.

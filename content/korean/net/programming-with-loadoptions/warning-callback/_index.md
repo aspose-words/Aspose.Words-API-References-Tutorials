@@ -11,14 +11,14 @@ url: /ko/net/programming-with-loadoptions/warning-callback/
 
 프로그래밍 방식으로 Word 문서를 작업하는 동안 경고를 포착하고 처리하는 방법이 궁금하신가요? .NET용 Aspose.Words를 사용하면 경고 콜백을 구현하여 문서 처리 중에 발생할 수 있는 잠재적인 문제를 관리할 수 있습니다. 이 튜토리얼에서는 프로젝트에서 경고 콜백 기능을 구성하고 사용하는 방법을 포괄적으로 이해할 수 있도록 프로세스를 단계별로 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 구현을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
 - C# 프로그래밍에 대한 기본 지식
 - 컴퓨터에 설치된 Visual Studio
 -  .NET 라이브러리용 Aspose.Words(다운로드 가능)[여기](https://releases.aspose.com/words/net/))
--  Aspose.Words에 대한 유효한 라이센스(없으면[임시면허](https://purchase.aspose.com/temporary-license/))
+-  Aspose.Words에 대한 유효한 라이센스(없으면[임시 면허증](https://purchase.aspose.com/temporary-license/))
 
 ## 네임스페이스 가져오기
 

@@ -138,9 +138,9 @@ doc.save("output.docx")
 
 ## Python-könyvtárak kihasználása a dokumentumintelligencia érdekében
 
-### NLP technikák a dokumentumelemzéshez
+### NLP-technikák a dokumentumelemzéshez
 
-Kombinálja a természetes nyelvi feldolgozás (NLP) könyvtárak erejét az Aspose.Words-szel, hogy mélyreható dokumentumelemzést, hangulatelemzést és entitásfelismerést végezzen.
+A természetes nyelvi feldolgozó (NLP) könyvtárak erejét kombinálja az Aspose.Words-szel, hogy mélyreható dokumentumelemzést, hangulatelemzést és entitásfelismerést végezzen.
 
 ```python
 # Use a Python NLP library (e.g., spaCy) in combination with Aspose.Words for document analysis
@@ -219,7 +219,7 @@ print(predicted_label)
 
 ### Dokumentummunkafolyamatok automatizálása
 
-Fedezze fel, hogyan használják a szervezetek a dokumentumintelligenciát az ismétlődő feladatok, például a számlafeldolgozás, a szerződések létrehozása és a jelentéskészítés automatizálására.
+Fedezze fel, hogyan használják a szervezetek a dokumentumintelligenciát az ismétlődő feladatok automatizálására, például a számlafeldolgozásra, a szerződések létrehozására és a jelentéskészítésre.
 
 ```python
 # Implementing document automation using Aspose.Words for Python

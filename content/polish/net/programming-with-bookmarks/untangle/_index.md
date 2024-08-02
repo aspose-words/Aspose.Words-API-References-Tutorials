@@ -97,7 +97,7 @@ row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 
 ## Wniosek
 
-Rozplątanie zakładek w dokumencie programu Word przy użyciu Aspose.Words dla .NET może wydawać się trudne, ale podzielenie go na łatwe do wykonania kroki, proces staje się znacznie jaśniejszy. Przeszliśmy przez ładowanie dokumentu, przeglądanie zakładek, identyfikowanie odpowiednich wierszy, sprawdzanie przylegania i na koniec przesuwanie węzła końcowego zakładki. Dzięki temu przewodnikowi powinieneś być w stanie efektywniej obsługiwać zakładki w dokumentach programu Word.
+Rozplątywanie zakładek w dokumencie programu Word za pomocą Aspose.Words dla .NET może wydawać się trudne, ale podzielenie go na łatwe do wykonania kroki, proces staje się znacznie jaśniejszy. Przeszliśmy przez ładowanie dokumentu, przeglądanie zakładek, identyfikowanie odpowiednich wierszy, sprawdzanie przylegania i na koniec przesuwanie węzła końcowego zakładki. Dzięki temu przewodnikowi powinieneś być w stanie efektywniej obsługiwać zakładki w dokumentach programu Word.
 
 ## Często zadawane pytania
 

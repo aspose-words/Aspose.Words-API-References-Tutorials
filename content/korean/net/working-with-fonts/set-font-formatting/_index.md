@@ -9,7 +9,7 @@ url: /ko/net/working-with-fonts/set-font-formatting/
 ---
 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 글꼴 서식을 설정하는 방법을 보여줍니다. 굵게, 색상, 기울임꼴, 글꼴, 크기, 간격, 밑줄 등의 스타일을 적용하는 방법을 알아봅니다.
 
-## 전제조건
+## 전제 조건
 시작하기 전에 다음 항목이 있는지 확인하세요.
 - C# 프로그래밍 언어에 대한 실무 지식
 - 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리

@@ -56,7 +56,7 @@ Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasiny
 
 ### FAQ
 
-#### T: Bagaimana cara menyisipkan bidang formulir jenis teks di Aspose.Words?
+#### T: Bagaimana cara menyisipkan bidang formulir tipe teks di Aspose.Words?
 
  A: Untuk menyisipkan kolom formulir jenis teks di Aspose.Words, Anda dapat menggunakan`FormField` kelas dan mengaturnya`Type`properti ke`FormFieldType.Text`. Anda juga dapat menyesuaikan properti lain seperti nama, label, dan opsi.
 

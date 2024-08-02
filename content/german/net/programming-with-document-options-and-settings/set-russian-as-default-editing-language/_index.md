@@ -46,7 +46,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 ```
 
- In diesem Schritt erstellen Sie eine Instanz von`LoadOptions` und setzen Sie seine`DefaultEditingLanguage`Eigentum an`EditingLanguage.Russian`. Dadurch wird Aspose.Words angewiesen, Russisch als Standardbearbeitungssprache zu behandeln, wenn ein Dokument mit diesen Optionen geladen wird.
+ In diesem Schritt erstellen Sie eine Instanz von`LoadOptions` und setzen Sie seine`DefaultEditingLanguage`Eigentum an`EditingLanguage.Russian`. Dies weist Aspose.Words an, Russisch als Standardbearbeitungssprache zu behandeln, wenn ein Dokument mit diesen Optionen geladen wird.
 
 ## Schritt 2: Laden Sie das Dokument
 
@@ -111,6 +111,6 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgest
 
  Ja, Sie können jede von Aspose.Words unterstützte Sprache einstellen, indem Sie die entsprechende`EditingLanguage` Wert auf`DefaultEditingLanguage`.
 
-### Wie kann ich Support für Aspose.Words für .NET erhalten?
+### Wie erhalte ich Support für Aspose.Words für .NET?
 
  Unterstützung erhalten Sie vom[Aspose-Unterstützung](https://forum.aspose.com/c/words/8) Forum, wo Sie Fragen stellen und Hilfe von der Community und den Aspose-Entwicklern erhalten können.

@@ -35,7 +35,7 @@ Oké, laten we het stap voor stap opsplitsen. Elke stap begeleidt u door het pro
 
 ### Maak een nieuw project
 
-Open eerst Visual Studio en maak een nieuw C# Console Application-project. Noem het zoiets als "AsposeSkipPdfImages" om alles overzichtelijk te houden.
+Open eerst Visual Studio en maak een nieuw C# Console Application-project. Noem het zoiets als "AsposeSkipPdfImages" om alles georganiseerd te houden.
 
 ### Voeg Aspose.Words-referentie toe
 

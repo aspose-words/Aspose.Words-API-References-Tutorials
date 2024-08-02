@@ -68,7 +68,7 @@ Cette ligne de code initialise un nouveau document Word vide.
 
 ## Étape 4 : initialiser DocumentBuilder
 
- Pour ajouter du contenu à notre document, nous utiliserons le`DocumentBuilder` classe. Cette classe offre un moyen pratique d'insérer divers éléments dans un document Word.
+ Pour ajouter du contenu à notre document, nous utiliserons le`DocumentBuilder` classe. Cette classe offre un moyen pratique d’insérer divers éléments dans un document Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

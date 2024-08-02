@@ -16,6 +16,6 @@ Bằng cách sử dụng Aspose.Words, bạn có thể tự động hóa các t�
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Phát hiện đánh số bằng khoảng trắng](./detect-numbering-with-whitespaces/) | Tìm hiểu cách phát hiện số danh sách có khoảng trắng trong Aspose.Words for .NET. Cải thiện cấu trúc tài liệu của bạn một cách dễ dàng. |
-| [Tùy chọn xử lý không gian](./handle-spaces-options/) | Tìm hiểu cách quản lý khoảng trắng trong tài liệu TXT của bạn bằng Aspose.Words for .NET. Loại bỏ các khoảng trống không cần thiết và cải thiện khả năng đọc. |
-| [Hướng văn bản tài liệu](./document-text-direction/) | Tìm hiểu cách chỉ định hướng văn bản trong tài liệu của bạn bằng Aspose.Words for .NET. Cải thiện hiển thị cho các ngôn ngữ từ phải sang trái. Truy cập hướng dẫn đầy đủ ngay bây giờ. |
+| [Phát hiện đánh số bằng khoảng trắng](./detect-numbering-with-whitespaces/) | Khám phá cách sử dụng Aspose.Words cho .NET để phát hiện việc đánh số có khoảng trắng trong tài liệu văn bản gốc và đảm bảo danh sách của bạn được nhận dạng chính xác. |
+| [Tùy chọn xử lý không gian](./handle-spaces-options/) | Tìm hiểu cách xử lý khoảng trắng ở đầu và cuối trong tài liệu văn bản bằng Aspose.Words for .NET. Hướng dẫn này cung cấp hướng dẫn để làm sạch định dạng văn bản. |
+| [Hướng văn bản tài liệu](./document-text-direction/) | Tìm hiểu cách đặt hướng văn bản tài liệu trong Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo để xử lý các ngôn ngữ từ phải sang trái. |

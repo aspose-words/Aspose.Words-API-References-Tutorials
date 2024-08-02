@@ -9,7 +9,7 @@ url: /cs/net/split-document/merge-documents/
 ---
 ## Úvod
 
-Nazdárek! Přistihli jste se někdy, že potřebujete sloučit více dokumentů Wordu do jednoho soudržného souboru? Ať už sestavujete zprávy, sestavujete projekt nebo se jen snažíte uklidit, sloučení dokumentů vám může ušetřit spoustu času a úsilí. S Aspose.Words pro .NET se tento proces stává hračkou. V tomto tutoriálu si projdeme, jak sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET, přičemž si rozebereme jednotlivé kroky, abyste je mohli snadno sledovat. Na konci budete slučovat dokumenty jako profesionál!
+Přistihli jste se někdy, že potřebujete sloučit více dokumentů Wordu do jednoho soudržného souboru? Ať už sestavujete zprávy, sestavujete projekt nebo se jen snažíte uklidit, sloučení dokumentů vám může ušetřit spoustu času a úsilí. S Aspose.Words pro .NET se tento proces stává hračkou. V tomto tutoriálu si projdeme, jak sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET, přičemž si rozebereme jednotlivé kroky, abyste je mohli snadno sledovat. Na konci budete slučovat dokumenty jako profesionál!
 
 ## Předpoklady
 
@@ -78,7 +78,7 @@ Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx",
 
 ## Krok 5: Vytvoření instance dokumentu ze sloučených dokumentů
 
-Někdy možná budete chtít se sloučeným dokumentem před uložením dále pracovat. Můžete vytvořit a`Document` instance ze sloučených dokumentů:
+ Někdy možná budete chtít se sloučeným dokumentem před uložením dále pracovat. Můžete vytvořit a`Document` instance ze sloučených dokumentů:
 
 ```csharp
 Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
@@ -91,24 +91,24 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
  A tady to máte! Naučili jste se sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením vašeho prostředí, prováděním jednoduchých sloučení, sloučením s možnostmi uložení, převodem sloučených dokumentů do PDF a vytvořením instance dokumentu ze sloučených dokumentů. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout svůj plný potenciál.
 
-## Nejčastější dotazy
+## FAQ
 
-### 1. Co je Aspose.Words pro .NET?
+### Co je Aspose.Words for .NET?
 
 Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty Wordu programově. Je ideální pro automatizaci úloh souvisejících s dokumenty.
 
-### 2. Mohu používat Aspose.Words pro .NET zdarma?
+### Mohu používat Aspose.Words pro .NET zdarma?
 
  Můžete zkusit Aspose.Words for .NET pomocí a[zkušební verze zdarma](https://releases.aspose.com/). Pro dlouhodobé používání si budete muset zakoupit licenci.
 
-### 3. Jak zvládnu různé formátování během slučování?
+### Jak zvládnu různé formátování během slučování?
 
- Aspose.Words poskytuje různé režimy formátu sloučení, jako je`KeepSourceFormatting`a`MergeFormatting` . Odkazovat na[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
+ Aspose.Words poskytuje různé režimy formátu sloučení, jako je`KeepSourceFormatting`a`MergeFormatting` Odkazovat na[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
 
-### 4. Jak získám podporu pro Aspose.Words for .NET?
+### Jak získám podporu pro Aspose.Words for .NET?
 
 Podporu můžete získat návštěvou stránky[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
 
-### 5. Mohu s Aspose.Words pro .NET sloučit jiné formáty souborů?
+### Mohu sloučit jiné formáty souborů s Aspose.Words pro .NET?
 
 Ano, Aspose.Words podporuje slučování různých formátů souborů, včetně DOCX, PDF a HTML.

@@ -12,6 +12,6 @@ Processamento de palavras com caixas de texto é um recurso abrangente que o con
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Criar link no Word](./create-a-link/) | Aprenda como criar link em word entre TextBoxes em um documento Word com Aspose.Words for .NET. |
-| [Sequência de verificação](./check-sequence/) | Aprenda como verificar a sequência de TextBoxes em um documento Word com Aspose.Words for .NET. |
-| [Quebrar link de encaminhamento em documento do Word](./break-a-link/) | Aprenda como quebrar links diretos em um documento do Word com Aspose.Words for .NET. |
+| [Vinculando caixas de texto no Word](./create-a-link/) | Aprenda como criar e vincular caixas de texto em documentos do Word usando Aspose.Words for .NET. Siga nosso guia completo para uma personalização perfeita de documentos! |
+| [Verificação de sequência de TextBox no Word](./check-sequence/) | Descubra como verificar a sequência de caixas de texto em documentos do Word usando Aspose.Words for .NET. Siga nosso guia detalhado para dominar o fluxo de documentos! |
+| [Quebrar link de encaminhamento em documento do Word](./break-a-link/) | Aprenda como quebrar links diretos em caixas de texto de documentos do Word usando Aspose.Words for .NET. Siga nosso guia para uma experiência de gerenciamento de documentos mais tranquila. |

@@ -98,7 +98,7 @@ builder.Document.Save(dataDir + "Test.md");
 
 #### P: ¿Qué es un encabezado Setext Markdown?
 
-R: Un encabezado de Setext Markdown es una forma alternativa de crear encabezados en un documento de Markdown. Utiliza caracteres de subrayado (= o -) para indicar diferentes niveles de títulos.
+R: Un encabezado Setext Markdown es una forma alternativa de crear encabezados en un documento Markdown. Utiliza caracteres de subrayado (= o -) para indicar diferentes niveles de títulos.
 
 #### P: ¿Cómo utilizar los encabezados Setext Markdown?
 

@@ -66,7 +66,7 @@ builder.writeln("In this tutorial, we will explore how to use the Content Builde
 builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 ```
 
-必要に応じて、次のようなさまざまなタイプのセクション区切りを挿入できます。`SECTION_BREAK_NEW_PAGE`, `SECTION_BREAK_CONTINUOUS` 、 または`SECTION_BREAK_EVEN_PAGE`.
+必要に応じて、次のようなさまざまなタイプのセクション区切りを挿入できます。`SECTION_BREAK_NEW_PAGE`, `SECTION_BREAK_CONTINUOUS`、 または`SECTION_BREAK_EVEN_PAGE`.
 
 ## 使用例: 履歴書の作成
 

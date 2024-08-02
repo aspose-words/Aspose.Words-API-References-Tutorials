@@ -9,7 +9,7 @@ url: /id/net/split-document/merge-documents/
 ---
 ## Perkenalan
 
-Hai! Pernahkah Anda merasa perlu menggabungkan beberapa dokumen Word menjadi satu file yang kohesif? Baik Anda sedang menyusun laporan, menyusun proyek, atau sekadar mencoba merapikan, menggabungkan dokumen dapat menghemat banyak waktu dan tenaga. Dengan Aspose.Words untuk .NET, proses ini menjadi mudah. Dalam tutorial ini, kita akan membahas cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET, menguraikan setiap langkah sehingga Anda dapat mengikutinya dengan mudah. Pada akhirnya, Anda akan menggabungkan dokumen seperti seorang profesional!
+Pernahkah Anda merasa perlu menggabungkan beberapa dokumen Word menjadi satu file yang kohesif? Baik Anda sedang menyusun laporan, menyusun proyek, atau sekadar mencoba merapikan, menggabungkan dokumen dapat menghemat banyak waktu dan tenaga. Dengan Aspose.Words untuk .NET, proses ini menjadi mudah. Dalam tutorial ini, kita akan membahas cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET, menguraikan setiap langkah sehingga Anda dapat mengikutinya dengan mudah. Pada akhirnya, Anda akan menggabungkan dokumen seperti seorang profesional!
 
 ## Prasyarat
 
@@ -78,7 +78,7 @@ Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx",
 
 ## Langkah 5: Membuat Instans Dokumen dari Dokumen yang Digabung
 
-Terkadang, Anda mungkin ingin mengerjakan dokumen gabungan lebih jauh sebelum menyimpannya. Anda dapat membuat`Document` contoh dari dokumen yang digabungkan:
+ Terkadang, Anda mungkin ingin mengerjakan dokumen gabungan lebih jauh sebelum menyimpannya. Anda dapat membuat`Document` contoh dari dokumen yang digabungkan:
 
 ```csharp
 Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
@@ -93,22 +93,22 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## FAQ
 
-### 1. Apa itu Aspose.Words untuk .NET?
+### Apa itu Aspose.Words untuk .NET?
 
 Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatisasi tugas-tugas yang berhubungan dengan dokumen.
 
-### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
+### Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
 
  Anda dapat mencoba Aspose.Words untuk .NET menggunakan a[uji coba gratis](https://releases.aspose.com/). Untuk penggunaan jangka panjang, Anda harus membeli lisensi.
 
-### 3. Bagaimana cara menangani pemformatan yang berbeda selama penggabungan?
+### Bagaimana cara menangani pemformatan yang berbeda selama penggabungan?
 
- Aspose.Words menyediakan berbagai mode format penggabungan seperti`KeepSourceFormatting`Dan`MergeFormatting` . Mengacu kepada[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
+ Aspose.Words menyediakan berbagai mode format penggabungan seperti`KeepSourceFormatting`Dan`MergeFormatting` Mengacu kepada[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
 
-### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
+### Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
 Anda bisa mendapatkan dukungan dengan mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8).
 
-### 5. Bisakah saya menggabungkan format file lain dengan Aspose.Words untuk .NET?
+### Bisakah saya menggabungkan format file lain dengan Aspose.Words untuk .NET?
 
 Ya, Aspose.Words mendukung penggabungan berbagai format file, termasuk DOCX, PDF, dan HTML.

@@ -11,7 +11,7 @@ url: /ko/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 
 안녕하세요, 기술 매니아 여러분! .NET용 Aspose.Words를 사용하여 PDF 문서에 글꼴을 포함시키려고 애쓰던 적이 있습니까? 글쎄, 당신은 바로 이곳에 있어요! 이 튜토리얼에서는 PDF에 글꼴을 포함하는 핵심에 대해 자세히 알아봅니다. 초보자이든 노련한 전문가이든 이 가이드는 간단하고 매력적인 방식으로 각 단계를 안내합니다. 결국, PDF를 어디에서 보든 의도한 모양과 느낌을 유지하는 데 능숙해질 것입니다. 자, 시작해 볼까요?
 
-## 전제조건
+## 전제 조건
 
 단계별 가이드를 시작하기 전에 필요한 모든 것을 갖추었는지 확인하세요. 간단한 체크리스트는 다음과 같습니다.
 
@@ -42,7 +42,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오. 이곳은 모든 마법이 일어날 곳입니다!
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요. 이곳은 모든 마법이 일어날 곳입니다!
 
 ## 2단계: Word 문서 로드
 

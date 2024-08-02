@@ -34,7 +34,7 @@ doc.save("WorkingWithSDT.docx");
 
 ## Kiểm tra trạng thái hiện tại của hộp kiểm SDT
 
-Khi bạn đã thêm hộp kiểm SDT vào tài liệu của mình, bạn có thể muốn kiểm tra trạng thái hiện tại của nó theo chương trình. Điều này có thể hữu ích khi bạn cần xác thực thông tin nhập của người dùng hoặc thực hiện các hành động cụ thể dựa trên trạng thái hộp kiểm.
+Khi bạn đã thêm hộp kiểm SDT vào tài liệu của mình, bạn có thể muốn kiểm tra trạng thái hiện tại của nó theo chương trình. Điều này có thể hữu ích khi bạn cần xác thực dữ liệu nhập của người dùng hoặc thực hiện các hành động cụ thể dựa trên trạng thái hộp kiểm.
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");

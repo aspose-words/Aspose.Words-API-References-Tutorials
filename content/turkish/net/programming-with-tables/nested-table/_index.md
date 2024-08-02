@@ -2,98 +2,140 @@
 title: İç İçe Tablo
 linktitle: İç İçe Tablo
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesinde nasıl iç içe tablo oluşturulacağını öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerinde iç içe tabloların nasıl oluşturulacağını kılavuzumuzla öğrenin. Programlı olarak karmaşık belge düzenleri oluşturmak için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/nested-table/
 ---
+## giriiş
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde iç içe tablonun nasıl oluşturulacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerinizde programlı olarak iç içe tablolar oluşturabileceksiniz.
+Kendinizi bir Word belgesinde programlı olarak iç içe geçmiş bir tablo oluşturmaya ihtiyaç duyduğunuzda hiç buldunuz mu? İster rapor, ister fatura, ister ayrıntılı tablo yapısı gerektiren herhangi bir belge oluşturuyor olun, Aspose.Words for .NET en iyi arkadaşınız olabilir. Bu eğitimde Aspose.Words for .NET'i kullanarak Word belgelerinde iç içe tablolar oluşturma sürecini ayrıntılı olarak ele alacağız. Önkoşullardan son kod uygulamasına kadar her şeyi ele alacağız. Öyleyse başlayalım!
 
-## Adım 1: Proje Kurulumu
-1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
-2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
+## Önkoşullar
 
-## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
-Belge ve belge oluşturucuyla Sözcük İşleme'yi başlatmak için şu adımları izleyin:
+Koda geçmeden önce ihtiyacınız olacak birkaç şey var:
+
+-  Aspose.Words for .NET: Buradan indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio veya başka herhangi bir C# IDE.
+- Temel C# Bilgisi: C# sözdizimi ve kavramlarının anlaşılması.
+
+Devam etmeden önce bu ayarları yaptığınızdan emin olun.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bu ad alanları, Word belgeleriyle çalışmak için gereken sınıflara ve yöntemlere erişmemizi sağlayacaktır.
 
 ```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Belge oluşturma
+## Adım 1: Document'ı ve DocumentBuilder'ı başlatın
+
+ Başlamak için yeni bir Word belgesi oluşturacağız ve`DocumentBuilder` tabloyu oluşturmamıza yardımcı olacak nesne.
+
+```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-
-// Belge oluşturucuyu başlat
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
+## Adım 2: Dış Tabloyu Oluşturun
 
-## Adım 3: İç İçe Tabloyu Oluşturma
-Daha sonra, dış tabloya hücreler yerleştirerek ve ilk hücrenin içinde yeni bir tablo oluşturarak iç içe geçmiş tabloyu oluşturacağız. Aşağıdaki kodu kullanın:
+Şimdi dış tabloyu oluşturalım. İlk hücreyi ekleyip ona biraz içerik ekleyerek başlayacağız.
+
+### Adım 2.1: Dış Tablonun İlk Hücresini Yerleştirin
 
 ```csharp
-// Dış tablonun ilk hücresini ekleyin
-Cell cell = builder. InsertCell();
-builder.Writeln("Cell 1 of the outer table");
-
-// Dış tablonun ikinci hücresini ekleyin
-builder. InsertCell();
-builder.Writeln("Cell 2 of the outer table");
-
-// Dış tablonun sonlandırılması
-builder. EndTable();
-
-// Dış tablonun ilk hücresine git
-builder.MoveTo(cell.FirstParagraph);
-
-// İç masayı oluşturun
-builder. InsertCell();
-builder.Writeln("Cell 1 of inner table");
-builder. InsertCell();
-builder.Writeln("Cell 2 of the inner table");
-
-// İç tablonun sonu
-builder. EndTable();
+Cell cell = builder.InsertCell();
+builder.Writeln("Outer Table Cell 1");
 ```
 
-Burada dış tabloya hücre ve içerik eklemek için belge oluşturucuyu kullanıyoruz. Daha sonra belge oluşturucunun imlecini dış tablonun ilk hücresine hareket ettiriyoruz ve içine hücreler ve içerik ekleyerek yeni bir tablo oluşturuyoruz.
+### Adım 2.2: Dış Tablonun İkinci Hücresini Yerleştirin
 
-## Adım 4: Değiştirilen belgeyi kaydetme
-Son olarak değiştirilen belgeyi iç içe geçmiş tabloyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
+Daha sonra ikinci hücreyi ekleyip biraz içerik ekleyeceğiz.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Outer Table Cell 2");
+```
+
+### Adım 2.3: Dış Tabloyu Sonlandırın
+
+Tabloyu burada bitirmek, iç içe geçmiş tabloyu ilk hücrede başlatmamıza izin verdiği için çok önemlidir.
+
+```csharp
+builder.EndTable();
+```
+
+## Adım 3: İç Tabloyu Oluşturun
+
+Yuvalanmış bir tablo oluşturmak için imleci dış tablonun ilk hücresine hareket ettirmemiz ve ardından iç tabloyu oluşturmaya başlamamız gerekir.
+
+### Adım 3.1: Dış Tablonun İlk Hücresine Geçin
+
+```csharp
+builder.MoveTo(cell.FirstParagraph);
+```
+
+### Adım 3.2: İç Tablonun İlk Hücresini Yerleştirin
+
+Şimdi iç tablonun ilk hücresini ekleyelim ve biraz içerik ekleyelim.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Inner Table Cell 1");
+```
+
+### Adım 3.3: İç Tablonun İkinci Hücresini Yerleştirin
+
+Son olarak ikinci hücreyi ekleyip biraz içerik ekleyeceğiz.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Inner Table Cell 2");
+```
+
+### Adım 3.4: İç Tabloyu Sonlandırın
+
+İç tabloyu sonlandırarak bitiriyoruz.
+
+```csharp
+builder.EndTable();
+```
+
+## Adım 4: Belgeyi Kaydedin
+
+Son adım, belgeyi belirttiğiniz dizine kaydetmektir.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanan Nested Table için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Cell cell = builder.InsertCell();
-	builder.Writeln("Outer Table Cell 1");
-	builder.InsertCell();
-	builder.Writeln("Outer Table Cell 2");
-	// Bu çağrı, ilk tablonun içinde iç içe bir tablo oluşturmak için önemlidir.
-	//Bu çağrı olmadan aşağıya eklenen hücreler dış tabloya eklenecektir.
-	builder.EndTable();
-	// Dış tablonun ilk hücresine gidin.
-	builder.MoveTo(cell.FirstParagraph);
-	// İç masayı oluşturun.
-	builder.InsertCell();
-	builder.Writeln("Inner Table Cell 1");
-	builder.InsertCell();
-	builder.Writeln("Inner Table Cell 2");
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
-```
-
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde iç içe tablonun nasıl oluşturulacağını öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, program aracılığıyla Word belgelerinizde özel ihtiyaçlarınıza göre iç içe geçmiş tablolar oluşturabilirsiniz.
+
+İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla iç içe geçmiş bir tablo oluşturdunuz. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi inanılmaz derecede kolaylaştırır. İster karmaşık raporlar ister basit tablolar oluşturuyor olun, Aspose.Words for .NET ihtiyacınızı karşılar.
+
+## SSS'ler
+
+### İç içe geçmiş tablo nedir?
+
+Yuvalanmış tablo, tablo içindeki tablodur. Belgelerde formlar veya ayrıntılı veri sunumları gibi karmaşık düzenler oluşturmak için kullanılır.
+
+### Aspose.Words for .NET'i neden kullanmalısınız?
+
+Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmak, değiştirmek ve dönüştürmek için güçlü bir dizi özellik sunar; bu da onu geliştiriciler için ideal bir seçim haline getirir.
+
+### Daha fazla iç içe geçmiş tablo düzeyi ekleyebilir miyim?
+
+Evet, geçerli tabloyu sonlandırıp hücre içinde yeni bir tablo başlatma işlemini tekrarlayarak birden çok düzeyde iç içe geçmiş tablo oluşturabilirsiniz.
+
+### Aspose.Words for .NET, Word'ün tüm sürümleriyle uyumlu mu?
+
+Aspose.Words for .NET, DOC, DOCX, RTF ve daha fazlasını içeren çok çeşitli Word belge formatlarıyla uyumludur.
+
+### Aspose.Words for .NET için nasıl destek alabilirim?
+
+ adresinden destek alabilirsiniz.[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8).

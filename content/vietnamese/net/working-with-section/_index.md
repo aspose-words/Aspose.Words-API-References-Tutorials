@@ -18,13 +18,13 @@ Bằng cách làm theo các hướng dẫn này, bạn sẽ có thể quản lý
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Thêm phần](./add-section/) | Trong hướng dẫn này, hãy tìm hiểu cách thêm một phần vào tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước để cấu trúc tài liệu của bạn. |
+| [Thêm phần](./add-section/) | Tìm hiểu cách thêm các phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm mọi thứ từ tạo tài liệu đến thêm và quản lý các phần. |
 | [Xóa phần](./delete-section/) | Thao tác tài liệu thành thạo với Aspose.Words cho .NET. Tìm hiểu cách xóa các phần khỏi tài liệu Word bằng một vài bước đơn giản. |
 | [Xóa tất cả các phần](./delete-all-sections/) | Tìm hiểu cách xóa tất cả các phần trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước dễ thực hiện này. |
 | [Nối phần nội dung Word](./append-section-content/) | Trong hướng dẫn này, hãy tìm hiểu cách thêm nội dung từ vào các phần cụ thể của tài liệu Word bằng Aspose.Words cho .NET.  |
-| [Phần nhân bản](./clone-section/) | Trong hướng dẫn này, hãy tìm hiểu cách sao chép một phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước một. |
-| [Sao chép phần](./copy-section/) | Trong hướng dẫn này, hãy tìm hiểu cách sao chép một phần từ tài liệu Word sang tài liệu khác bằng Aspose.Words cho .NET. |
-| [Xóa nội dung Header Footer](./delete-header-footer-content/) | Trong hướng dẫn này, hãy tìm hiểu cách xóa nội dung đầu trang và chân trang khỏi tài liệu Word bằng Aspose.Words cho .NET.  |
-| [Xóa nội dung phần](./delete-section-content/) | Trong hướng dẫn này, hãy tìm hiểu cách xóa nội dung khỏi một phần cụ thể của tài liệu Word bằng Aspose.Words cho .NET. |
+| [Phần nhân bản](./clone-section/) | Tìm hiểu cách sao chép các phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm các hướng dẫn từng bước để thao tác tài liệu hiệu quả. |
+| [Sao chép phần](./copy-section/) | Tìm hiểu cách sao chép các phần giữa các tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm các hướng dẫn từng bước để quản lý tài liệu hiệu quả. |
+| [Xóa nội dung Header Footer](./delete-header-footer-content/) | Tìm hiểu cách xóa đầu trang và chân trang trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước này đảm bảo quản lý tài liệu hiệu quả.  |
+| [Xóa nội dung phần](./delete-section-content/) | Tìm hiểu cách xóa nội dung phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước này đảm bảo quản lý tài liệu hiệu quả. |
 | [Sửa đổi thiết lập trang Word trong tất cả các phần](./modify-page-setup-in-all-sections/) | Trong hướng dẫn này, hãy tìm hiểu cách sửa đổi thiết lập trang từ trong tất cả các phần của tài liệu Word bằng Aspose.Words cho .NET. |
-| [Truy cập các phần theo chỉ mục](./sections-access-by-index/) | Trong hướng dẫn này, hãy tìm hiểu cách truy cập các phần của tài liệu Word theo chỉ mục và thay đổi cài đặt của chúng bằng Aspose.Words cho .NET. |
+| [Truy cập các phần theo chỉ mục](./sections-access-by-index/) | Tìm hiểu cách truy cập và thao tác các phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước này đảm bảo quản lý tài liệu hiệu quả. |

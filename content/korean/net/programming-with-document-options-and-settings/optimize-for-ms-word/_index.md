@@ -11,7 +11,7 @@ url: /ko/net/programming-with-document-options-and-settings/optimize-for-ms-word
 
 안녕하세요! Word 문서를 다양한 버전의 MS Word와 완벽하게 호환되게 만드는 방법이 궁금하신가요? 완벽한 문서를 작성하는 데 몇 시간을 소비했지만 누군가 다른 버전의 Word에서 문서를 열면 모든 것이 엉망인 것처럼 보인다고 상상해 보세요. 안타까운 일이죠? 글쎄, 그것이 .NET용 Aspose.Words가 들어오는 곳입니다! 이 멋진 도구를 사용하면 단 몇 줄의 코드만으로 다양한 버전의 MS Word에 맞게 문서를 최적화할 수 있습니다. 이 작업을 손쉽게 수행할 수 있는 방법을 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 손을 더럽히기 전에 필요한 모든 것이 있는지 확인합시다.
 
@@ -76,7 +76,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
  전적으로! Aspose.Words는 여러 버전을 지원합니다. 그냥 교체하세요`MsWordVersion.Word2016` 필요한 버전으로.
 
 ### .NET용 Aspose.Words는 무료인가요?
- 다음을 사용하여 무료로 사용해 볼 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/), 그러나 장기간 사용하려면 라이센스를 구입해야 합니다.
+ 다음을 사용하여 무료로 사용해 볼 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/), 그러나 장기간 사용하려면 라이센스를 구입해야 합니다.
 
 ### 추가 문서는 어디서 찾을 수 있나요?
  자세한 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/words/net/).

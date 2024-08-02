@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 步骤 3：配置图像保存选项
 
-我们需要配置保存图像的选项。在本例中，我们将页面保存为 PNG 文件。
+我们需要配置保存图片的选项。在本例中，我们将页面保存为 PNG 文件。
 
 ```csharp
 ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)

@@ -46,7 +46,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Langkah 2: Atur Jenis Tampilan
 
-Selanjutnya, kita akan mengubah tipe tampilan dokumen. Tipe tampilan menentukan cara dokumen ditampilkan, seperti Tata Letak Cetak, Tata Letak Web, atau Tampilan Kerangka.
+Selanjutnya, kita akan mengubah tipe tampilan dokumen. Tipe tampilan menentukan cara dokumen ditampilkan, misalnya Tata Letak Cetak, Tata Letak Web, atau Tampilan Kerangka.
 
 ```csharp
 doc.ViewOptions.ViewType = ViewType.PageLayout;

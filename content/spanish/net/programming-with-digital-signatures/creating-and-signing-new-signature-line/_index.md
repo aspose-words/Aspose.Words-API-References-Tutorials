@@ -18,7 +18,7 @@ Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
 2. Se recomienda encarecidamente un entorno de desarrollo .NET: Visual Studio.
 3. Un documento para firmar: cree un documento de Word sencillo o utilice uno existente.
 4.  Un archivo de certificado: es necesario para las firmas digitales. Puedes usar un`.pfx` archivo.
-5. Imágenes para la línea de firma: opcionalmente, un archivo de imagen para la firma.
+5. Imágenes para Línea de Firma: opcionalmente, un archivo de imagen para la firma.
 
 ## Importar espacios de nombres
 
@@ -97,7 +97,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Conclusión
 
-¡Y ahí lo tienes! Con estos pasos, habrá creado con éxito un nuevo documento de Word, agregado una línea de firma y firmado digitalmente usando Aspose.Words para .NET. Es una herramienta poderosa que facilita la automatización de documentos. Ya sea que se trate de contratos, acuerdos o cualquier documento formal, este método garantiza que estén firmados y autenticados de forma segura.
+¡Y ahí lo tienes! Con estos pasos, creó exitosamente un nuevo documento de Word, agregó una línea de firma y lo firmó digitalmente usando Aspose.Words para .NET. Es una herramienta poderosa que facilita la automatización de documentos. Ya sea que se trate de contratos, acuerdos o cualquier documento formal, este método garantiza que estén firmados y autenticados de forma segura.
 
 ## Preguntas frecuentes
 

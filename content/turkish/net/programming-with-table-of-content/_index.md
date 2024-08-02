@@ -16,5 +16,5 @@ Bu eğitimlerde, adım adım kod örnekleri ve içindekiler tablolarıyla çalı
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Word Belgesinde Toc Stilini Değiştirme](./change-style-of-toc-level/) | Aspose.Words for .NET'i kullanarak bir Word belgesindeki içindekiler tablosu düzeyinin stilini nasıl kolayca değiştireceğinizi öğrenin. |
-| [Word Belgesinde Toc Sekmesi Duraklarını Değiştirme](./change-toc-tab-stops/) | Aspose.Words for .NET kullanarak bir Word belgesindeki içindekiler sekmelerini nasıl değiştireceğinizi öğrenin. |
+| [Word Belgesinde Toc Stilini Değiştirme](./change-style-of-toc-level/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki TOC stilini nasıl değiştireceğinizi öğrenin. İçindekiler Tablonuzu zahmetsizce özelleştirin. |
+| [Word Belgesinde Toc Sekmesi Duraklarını Değiştirme](./change-toc-tab-stops/) | Aspose.Words for .NET kullanarak Word belgelerindeki TOC sekme duraklarını nasıl değiştireceğinizi öğrenin. Bu adım adım kılavuz, profesyonel görünümlü bir İçindekiler oluşturmanıza yardımcı olacaktır. |

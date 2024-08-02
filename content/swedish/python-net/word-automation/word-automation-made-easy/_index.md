@@ -110,7 +110,7 @@ När vi har arbetat klart med dokumentet kan vi spara det i olika format.
 doc.save("output.docx", aw.SaveFormat.DOCX)
 ```
 
-## Avancerade ordautomatiseringsfunktioner
+## Avancerade funktioner för ordautomatisering
 
 Aspose.Words tillhandahåller avancerade funktioner såsom sammanslagning, dokumentkryptering och arbete med bokmärken, hyperlänkar och kommentarer.
 

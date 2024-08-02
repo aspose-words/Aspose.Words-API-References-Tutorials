@@ -92,7 +92,7 @@ doc.save("output.docx")
 
 ## Wniosek
 
-tym przewodniku zbadaliśmy proces ulepszania treści wizualnych za pomocą pól tekstowych w dokumentach programu Word przy użyciu interfejsu API języka Python Aspose.Words. Pola tekstowe umożliwiają elastyczny sposób organizowania, formatowania i stylizowania treści w dokumentach, czyniąc je bardziej wciągającymi i atrakcyjnymi wizualnie.
+W tym przewodniku zbadaliśmy proces ulepszania treści wizualnych za pomocą pól tekstowych w dokumentach programu Word przy użyciu interfejsu API języka Python Aspose.Words. Pola tekstowe umożliwiają elastyczny sposób organizowania, formatowania i stylizowania treści w dokumentach, czyniąc je bardziej wciągającymi i atrakcyjnymi wizualnie.
 
 ## Często zadawane pytania
 
@@ -106,7 +106,7 @@ tym przewodniku zbadaliśmy proces ulepszania treści wizualnych za pomocą pól
 
 ### Jak dodać obramowanie do pola tekstowego?
 
- Możesz dodać obramowanie do pola tekstowego za pomocą`textbox.border` nieruchomości i dostosowywania jej wyglądu.
+ Możesz dodać obramowanie do pola tekstowego za pomocą`textbox.border`nieruchomości i dostosowywania jej wyglądu.
 
 ### Czy mogę osadzić hiperłącza w polu tekstowym?
 

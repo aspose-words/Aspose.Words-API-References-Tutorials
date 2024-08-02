@@ -2,55 +2,37 @@
 title: Voeg ASKField in zonder Document Builder
 linktitle: Voeg ASKField in zonder Document Builder
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een ASK-veld in uw Word-documenten invoegt met Aspose.Words voor .NET.
+description: Leer hoe u een ASK-veld invoegt zonder Document Builder te gebruiken in Aspose.Words voor .NET. Volg deze handleiding om uw Word-documenten dynamisch te verbeteren.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van de functie "Een ASK-veld invoegen zonder DocumentBuilder" van Aspose.Words voor .NET. Zorg ervoor dat u elke stap zorgvuldig volgt om de gewenste resultaten te krijgen.
+Wilt u documentautomatisering onder de knie krijgen met Aspose.Words voor .NET? U bent bij ons aan het juiste adres! Vandaag laten we u zien hoe u een ASK-veld kunt invoegen zonder een Document Builder te gebruiken. Dit is een handige functie als u wilt dat uw document gebruikers om specifieke invoer vraagt, waardoor uw Word-documenten interactiever en dynamischer worden. Dus laten we erin duiken en uw documenten slimmer maken!
 
-## Stap 1: Documentmap instellen
+## Vereisten
 
-In de verstrekte code moet u de directory van uw documenten opgeven. Vervang de waarde "UW DOCUMENTENMAP" door het juiste pad naar uw documentenmap.
+Voordat we onze handen vuil maken met wat code, moeten we ervoor zorgen dat we alles hebben ingesteld:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words voor .NET: Zorg ervoor dat deze bibliotheek is geïnstalleerd. Als dit niet het geval is, kunt u deze downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een geschikte IDE zoals Visual Studio.
+3. .NET Framework: Zorg ervoor dat .NET Framework is geïnstalleerd.
 
-## Stap 2: Het document en de alinea maken
+Geweldig! Nu we helemaal klaar zijn, gaan we beginnen met het importeren van de benodigde naamruimten.
 
-We beginnen met het maken van een nieuw document en het ophalen van de eerste alinea.
+## Naamruimten importeren
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## Stap 3: Het ASK-veld invoegen
-
- Wij gebruiken de`AppendField()` methode om een ASK-veld in de alinea in te voegen.
+Allereerst moeten we de naamruimte Aspose.Words importeren om toegang te krijgen tot alle functies van Aspose.Words voor .NET. Zo doe je het:
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Vervolgens configureren we de verschillende eigenschappen van het ASK-veld door de gewenste waarden op te geven.
+## Stap 1: Maak een nieuw document
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
- Tenslotte noemen wij de`Update()` methode om het veld bij te werken.
-
-```csharp
-field. Update();
-```
-
-### Voorbeeld van de broncode voor het invoegen van een ASK-veld zonder DocumentBuilder met Aspose.Words voor .NET
+Voordat we een ASK-veld kunnen invoegen, hebben we een document nodig om mee te werken. Zo maakt u een nieuw document:
 
 ```csharp
 // Het pad naar de documentenmap.
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Documentcreatie.
 Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
+Met dit codefragment wordt een nieuw Word-document ingesteld waarin we ons ASK-veld toevoegen.
+
+## Stap 2: Ga naar het alineaknooppunt
+
+In een Word-document is de inhoud georganiseerd in knooppunten. We moeten toegang krijgen tot het eerste alineaknooppunt waar we ons ASK-veld zullen invoegen:
+
+```csharp
+Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
+
+Met deze coderegel wordt de eerste alinea in het document opgehaald, klaar voor het invoegen van ons ASK-veld.
+
+## Stap 3: Voeg het ASK-veld in
+
+Laten we nu naar de hoofdgebeurtenis gaan: het invoegen van het ASK-veld. Dit veld zal de gebruiker om invoer vragen wanneer het document wordt geopend.
+
+```csharp
 // Voeg het VRAAG-veld in.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+Hier voegen we een ASK-veld toe aan de alinea. Simpel, toch?
 
-field. Update();
+## Stap 4: Configureer het ASK-veld
 
+We moeten enkele eigenschappen instellen om te definiëren hoe het ASK-veld zich gedraagt. Laten we de bladwijzernaam, prompttekst, standaardantwoord en samenvoeggedrag configureren:
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName: Een unieke identificatie voor het ASK-veld.
+- PromptText: de tekst die de gebruiker om invoer vraagt.
+- DefaultResponse: Het vooraf ingevulde antwoord dat de gebruiker kan wijzigen.
+- PromptOnceOnMailMerge: Bepaalt of de prompt slechts één keer verschijnt tijdens een samenvoegbewerking.
+
+## Stap 5: Werk het veld bij
+
+Nadat we het ASK-veld hebben geconfigureerd, moeten we het bijwerken om ervoor te zorgen dat alle instellingen correct worden toegepast:
+
+```csharp
+field.Update();
+```
+
+Deze opdracht zorgt ervoor dat ons ASK-veld gereed is en correct is ingesteld in het document.
+
+## Stap 6: Sla het document op
+
+Laten we ten slotte het document opslaan in de door u opgegeven map:
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-In dit voorbeeld hebben we een nieuw document gemaakt, een ASK-veld ingevoegd zonder DocumentBuilder te gebruiken, de verschillende eigenschappen van het veld geconfigureerd en het document opgeslagen met een opgegeven bestandsnaam.
+Deze regel slaat het document op met het ingevoegde ASK-veld. En daar heb je het: je document is nu uitgerust met een dynamisch ASK-veld!
 
-Dit is het einde van onze handleiding over het gebruik van de functie "Vraagveld invoegen zonder DocumentBuilder" met Aspose.Words voor .NET.
+## Conclusie
 
-### Veelgestelde vragen
+Gefeliciteerd! U hebt zojuist een ASK-veld aan een Word-document toegevoegd met Aspose.Words voor .NET zonder de Document Builder. Deze functie kan de gebruikersinteractie met uw documenten aanzienlijk verbeteren, waardoor ze flexibeler en gebruiksvriendelijker worden. Blijf experimenteren met verschillende velden en eigenschappen om het volledige potentieel van Aspose.Words te ontsluiten. Veel codeerplezier!
 
-#### Vraag: Wat is een ASK-veld in Aspose.Words?
+## Veelgestelde vragen
 
-A: Een ASK-veld in Aspose.Words wordt gebruikt om de gebruiker een vraag te stellen bij het openen van een document. Het wordt vaak gebruikt om specifieke informatie of feedback op te vragen, die van gebruiker tot gebruiker kan verschillen.
+### Wat is een ASK-veld in Aspose.Words?
+Een ASK-veld in Aspose.Words is een veld dat de gebruiker om specifieke invoer vraagt wanneer het document wordt geopend, waardoor dynamische gegevensinvoer mogelijk is.
 
-#### Vraag: Hoe kan ik het ASK-veld in een Word-document invoegen zonder Document Builder in Aspose.Words te gebruiken?
+### Kan ik meerdere ASK-velden in één document gebruiken?
+Ja, u kunt meerdere ASK-velden in een document invoegen, elk met unieke aanwijzingen en antwoorden.
 
-A: Om een ASK-veld in een Word-document in te voegen zonder Document Builder in Aspose.Words te gebruiken, kunt u deze stappen volgen:
+###  Wat is het doel van de`PromptOnceOnMailMerge` property?
+ De`PromptOnceOnMailMerge` eigenschap bepaalt of de ASK-prompt slechts één keer verschijnt tijdens een samenvoegbewerking of elke keer.
 
-1. Importeer de document- en veldklasse uit de Aspose.Words.Fields-naamruimte.
-2. Maak een exemplaar van Document door uw bestaande document te laden.
-3. Gebruik de InsertField-methode om een ASK-veld in te voegen door de vraagnaam op te geven.
-4. Bewaar het document.
+### Moet ik het ASK-veld bijwerken nadat ik de eigenschappen ervan heb ingesteld?
+Ja, het bijwerken van het ASK-veld zorgt ervoor dat alle eigenschappen correct worden toegepast en dat het veld naar verwachting functioneert.
 
-#### Vraag: Hoe krijg ik de gebruikersreactie voor een ASK-veld in een Word-document?
-
-A: Om het antwoord van de gebruiker op een ASK-veld in een Word-document te krijgen, kunt u de GetFieldNames-methode gebruiken die beschikbaar is in de Document-klasse. Deze methode retourneert een lijst met de namen van de velden in het document. Vervolgens kunt u controleren of de ASK-veldnaam in de lijst aanwezig is en het bijbehorende antwoord ophalen.
-
-#### Vraag: Kan het ASK-veld worden gebruikt om meer informatie van de gebruiker op te vragen?
-
-A: Ja, het VRAAG-veld kan worden gebruikt om meerdere gegevens van de gebruiker op te vragen. U kunt meerdere ASK-velden in uw document invoegen, elk met een andere vraag. Wanneer het document wordt geopend, wordt de gebruiker om de bijbehorende antwoorden gevraagd.
+### Kan ik de prompttekst en het standaardantwoord aanpassen?
+Absoluut! U kunt aangepaste prompttekst en standaardantwoorden instellen om het VRAAG-veld aan uw specifieke behoeften aan te passen.

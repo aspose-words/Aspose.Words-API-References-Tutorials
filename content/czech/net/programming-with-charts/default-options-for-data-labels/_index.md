@@ -16,7 +16,7 @@ Nazdárek! Rádi se ponoříte do světa automatizace dokumentů? Dnes se podív
 Než začneme, ujistíme se, že spolu s tímto návodem máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
 - Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET: Zde budete psát a spouštět svůj kód.
--  Aspose.Words pro .NET: Můžete[stáhněte si nejnovější verzi](https://releases.aspose.com/words/net/) a nainstalujte jej do svého projektu.
+-  Aspose.Words pro .NET: Můžete[stáhnout nejnovější verzi](https://releases.aspose.com/words/net/) a nainstalujte jej do svého projektu.
 - Základní znalost programování v C#: I když je tato příručka vhodná pro začátečníky, trocha znalosti C# vám pomůže.
 - Nainstalované rozhraní .NET Framework: Ujistěte se, že máte na počítači nastaveno rozhraní .NET Framework.
 -  Dočasná licence pro Aspose.Words: Získejte jednu[tady](https://purchase.aspose.com/temporary-license/) pro odemknutí plné funkčnosti.

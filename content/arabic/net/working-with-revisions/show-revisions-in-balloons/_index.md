@@ -31,7 +31,7 @@ doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Rig
 
 ## الخطوة 3: احفظ المستند بتنسيق PDF
 
-أخيرًا، سنقوم بحفظ المستند كملف PDF مع المراجعات المعروضة في البالونات.
+وأخيرًا، سنقوم بحفظ المستند كملف PDF مع المراجعات المعروضة في البالونات.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");

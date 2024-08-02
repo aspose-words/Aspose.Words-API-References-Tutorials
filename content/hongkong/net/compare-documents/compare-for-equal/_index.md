@@ -65,7 +65,7 @@ docA.Compare(docBClone, "user", DateTime.Now);
 
 ## 第 5 步：檢查修訂
 
-對比文件後，您可以檢查`Revisions`收集一下看看有沒有差異。如果集合為空，則文件是相同的。
+對比文件後，您可以檢查`Revisions`集合看看是否有差異。如果集合為空，則文件是相同的。
 
 ```csharp
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");

@@ -16,7 +16,7 @@ Ei! Você já coçou a cabeça e se perguntou como anexar perfeitamente um docum
 Antes de entrarmos no âmago da questão, há algumas coisas que você precisa ter em mente:
 
 1.  Biblioteca Aspose.Words for .NET: você pode baixá-lo do[Aspose Lançamentos](https://releases.aspose.com/words/net/).
-2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 3. Compreensão básica de C#: Embora mantenhamos as coisas simples, um pouco de familiaridade com C# será de grande ajuda.
 4. Documento de origem: um documento do Word que você deseja anexar ao documento em branco.
 5.  Licença (Opcional): Se você não estiver usando a versão de teste, poderá precisar de uma[licença temporária](https://purchase.aspose.com/temporary-license/) ou um[licença completa](https://purchase.aspose.com/buy).
@@ -33,7 +33,7 @@ using Aspose.Words;
 
 Para começar, você precisará configurar o ambiente do seu projeto. Isso envolve a criação de um novo projeto no Visual Studio e a instalação da biblioteca Aspose.Words for .NET.
 
-### Criando um Novo Projeto
+### Criando um novo projeto
 
 1. Abra o Visual Studio e selecione Arquivo > Novo > Projeto.
 2. Escolha um aplicativo de console (.NET Core) ou um aplicativo de console (.NET Framework).

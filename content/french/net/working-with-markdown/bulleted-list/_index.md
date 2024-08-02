@@ -75,7 +75,7 @@ Félicitation ! Vous avez maintenant appris à créer une liste à puces avec As
 
 ### FAQ
 
-#### : Comment créer une liste à puces dans Markdown ?
+#### Q : Comment créer une liste à puces dans Markdown ?
 
 R : Pour créer une liste à puces dans Markdown, commencez chaque élément de la liste par un symbole de puce (`-`, `*` , ou`+`), suivi d'un espace.
 

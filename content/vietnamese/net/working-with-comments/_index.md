@@ -13,7 +13,7 @@ Trong các hướng dẫn này, bạn sẽ tìm hiểu các khía cạnh khác n
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Thêm nhận xét](./add-comments/) | Tìm hiểu cách thêm nhận xét vào tài liệu Word bằng Aspose.Words cho .NET. |
-| [Bình luận neo](./anchor-comment/) | Tìm hiểu cách neo các câu trả lời nhận xét vào văn bản cụ thể trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Thêm Xóa Bình luận Trả lời](./add-remove-comment-reply/) | Tìm hiểu cách thêm và xóa trả lời nhận xét trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Bình luận đã được giải quyết và trả lời](./comment-resolved-and-replies/) | Tìm hiểu cách giải quyết các nhận xét và câu trả lời của chúng trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Thêm nhận xét](./add-comments/) | Tìm hiểu cách thêm nhận xét vào tài liệu Word của bạn bằng Aspose.Words dành cho .NET với hướng dẫn của chúng tôi. Nâng cao quá trình cộng tác tài liệu của bạn một cách dễ dàng. |
+| [Bình luận neo](./anchor-comment/) | Tìm hiểu cách thêm nhận xét neo trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để cộng tác tài liệu hiệu quả. |
+| [Thêm Xóa Bình luận Trả lời](./add-remove-comment-reply/) | Tìm hiểu cách thêm và xóa trả lời nhận xét trong tài liệu Word bằng Aspose.Words cho .NET. Nâng cao khả năng cộng tác trên tài liệu của bạn với hướng dẫn từng bước này. |
+| [Bình luận đã được giải quyết và trả lời](./comment-resolved-and-replies/) | Tự động giải quyết và trả lời nhận xét trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn từng bước bao gồm. |

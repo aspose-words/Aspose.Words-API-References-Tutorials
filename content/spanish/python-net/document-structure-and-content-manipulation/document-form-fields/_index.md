@@ -29,7 +29,7 @@ Antes de profundizar en la creación y el dominio de campos de formulario, confi
    import aspose.words
    ```
 
-Una vez realizada la configuración, pasemos a los conceptos básicos de creación y administración de campos de formulario.
+Una vez realizada la configuración, pasemos a los conceptos básicos de creación y gestión de campos de formulario.
 
 ## Crear campos de formulario
 

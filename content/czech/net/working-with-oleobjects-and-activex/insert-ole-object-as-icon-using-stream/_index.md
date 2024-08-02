@@ -115,7 +115,7 @@ A.  Chcete-li dokument uložit do souboru, můžete použít`Save` metoda dokume
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-#### Dotaz: Jak vložím kód pro vložení objektu OLE jako ikonu z proudu do mého projektu?
+#### Dotaz: Jak mohu vložit kód pro vložení objektu OLE jako ikonu z proudu do mého projektu?
 
 A. Chcete-li do projektu vložit kód pro vložení objektu OLE jako ikonu ze streamu, postupujte takto:
 - Importujte potřebné reference přidáním příslušných`using` prohlášení.

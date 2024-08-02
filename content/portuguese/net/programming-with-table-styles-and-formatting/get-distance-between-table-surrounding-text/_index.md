@@ -2,53 +2,97 @@
 title: Obtenha distância entre o texto ao redor da tabela
 linktitle: Obtenha distância entre o texto ao redor da tabela
 second_title: API de processamento de documentos Aspose.Words
-description: Guia passo a passo para obter a distância entre o texto e uma tabela em um documento do Word usando Aspose.Words for .NET.
+description: Aprenda como recuperar a distância entre uma tabela e o texto ao redor em documentos do Word usando Aspose.Words for .NET. Melhore o layout do seu documento com este guia.
 type: docs
 weight: 10
 url: /pt/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
+## Introdução
 
-Neste tutorial, orientaremos você no processo passo a passo para obter a distância entre o texto ao redor em uma tabela usando Aspose.Words for .NET. Explicaremos o código-fonte C# incluído e forneceremos um guia completo para ajudá-lo a entender e implementar esse recurso em seus próprios projetos. Ao final deste tutorial, você saberá como acessar as diversas distâncias entre uma tabela e o texto ao redor em seus documentos Word usando Aspose.Words for .NET.
+Imagine que você está preparando um relatório elegante ou um documento importante e deseja que suas tabelas tenham a aparência perfeita. Você precisa garantir que haja espaço suficiente entre as tabelas e o texto ao seu redor, tornando o documento fácil de ler e visualmente atraente. Usando Aspose.Words for .NET, você pode facilmente recuperar e ajustar essas distâncias de forma programática. Este tutorial irá guiá-lo pelas etapas para conseguir isso, fazendo com que seus documentos se destaquem com aquele toque extra de profissionalismo.
 
-## Passo 1: Defina o diretório do documento
-Primeiro, você precisa definir o caminho para o diretório de documentos. É aqui que o seu documento do Word está localizado. Substitua "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho apropriado.
+## Pré-requisitos
+
+Antes de entrarmos no código, vamos ter certeza de que você tem tudo o que precisa:
+
+1.  Biblioteca Aspose.Words for .NET: Você precisa ter a biblioteca Aspose.Words for .NET instalada. Se ainda não o fez, você pode baixá-lo no site[Aspose Lançamentos](https://releases.aspose.com/words/net/) página.
+2. Ambiente de desenvolvimento: um ambiente de desenvolvimento funcional com o .NET Framework instalado. Visual Studio é uma boa opção.
+3. Documento de amostra: um documento Word (.docx) contendo pelo menos uma tabela para testar o código.
+
+## Importar namespaces
+
+Primeiramente, vamos importar os namespaces necessários para o seu projeto. Isso permitirá que você acesse as classes e métodos necessários para manipular documentos do Word usando Aspose.Words for .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Etapa 2: carregar o documento existente
- Em seguida, você precisa carregar o documento Word existente em uma instância do`Document` aula.
+Agora, vamos dividir o processo em etapas fáceis de seguir. Cobriremos tudo, desde o carregamento do seu documento até a recuperação das distâncias ao redor da sua mesa.
+
+## Etapa 1: carregue seu documento
+
+ A primeira etapa é carregar seu documento do Word no Aspose.Words`Document` objeto. Este objeto representa todo o documento.
 
 ```csharp
+// Caminho para o diretório do seu documento
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Carregue o documento
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Etapa 3: obtenha a distância entre a tabela e o texto ao redor
- Para obter a distância entre a tabela e o texto ao redor, precisamos acessar a tabela no documento usando o`GetChild()` método e o`NodeType.Table` propriedade. Podemos então exibir as diferentes distâncias usando as propriedades do array`DistanceTop`, `DistanceBottom`, `DistanceRight`e`DistanceLeft`.
+## Passo 2: Acesse a Tabela
+
+ Em seguida, você precisa acessar a tabela do seu documento. O`GetChild` O método permite recuperar a primeira tabela encontrada no documento.
 
 ```csharp
+// Obtenha a primeira tabela do documento
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-Console.WriteLine("Distance between table and top text: " + table.DistanceTop);
-Console.WriteLine("Distance between table and bottom text: " + table.DistanceBottom);
-Console.WriteLine("Distance between the table and the text on the right: " + table.DistanceRight);
-Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### Exemplo de código-fonte para obter distância entre o texto circundante da tabela usando Aspose.Words for .NET 
+## Etapa 3: recuperar valores de distância
+
+Agora que você tem a tabela, é hora de obter os valores de distância. Esses valores representam o espaço entre a tabela e o texto ao redor de cada lado: superior, inferior, esquerdo e direito.
 
 ```csharp
-	// Caminho para o diretório do seu documento
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Obtenha distância entre a tabela e o texto ao redor
+Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
+```
 
-	Document doc = new Document(dataDir + "Tables.docx");
-	Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Console.WriteLine(table.DistanceTop);
-	Console.WriteLine(table.DistanceBottom);
-	Console.WriteLine(table.DistanceRight);
-	Console.WriteLine(table.DistanceLeft);
+## Etapa 4: exibir as distâncias
+
+Finalmente, você pode exibir as distâncias. Isso pode ajudá-lo a verificar o espaçamento e fazer os ajustes necessários para garantir que sua tabela fique perfeita no documento.
+
+```csharp
+// Exibir as distâncias
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ```
 
 ## Conclusão
-Neste tutorial, aprendemos como obter a distância entre o texto circundante em uma tabela usando Aspose.Words for .NET. Seguindo este guia passo a passo, você pode acessar facilmente as várias distâncias entre uma tabela e o texto ao redor em seus documentos do Word. Aspose.Words oferece uma API poderosa e flexível para manipular e formatar tabelas em seus documentos. Com esse conhecimento, você poderá analisar o layout de suas tabelas em relação ao texto e atender necessidades específicas.
+
+E aí está! Seguindo essas etapas, você pode recuperar facilmente as distâncias entre uma tabela e o texto ao redor em seus documentos do Word usando Aspose.Words for .NET. Esta técnica simples, mas poderosa, permite ajustar o layout do documento, tornando-o mais legível e visualmente atraente. Boa codificação!
+
+## Perguntas frequentes
+
+### Posso ajustar as distâncias programaticamente?
+ Sim, você pode ajustar as distâncias programaticamente usando Aspose.Words definindo o`DistanceTop`, `DistanceBottom`, `DistanceRight` , e`DistanceLeft` propriedades do`Table` objeto.
+
+### E se meu documento tiver várias tabelas?
+ Você pode percorrer os nós filhos do documento e aplicar o mesmo método a cada tabela. Usar`GetChildNodes(NodeType.Table, true)` para obter todas as tabelas.
+
+### Posso usar Aspose.Words com .NET Core?
+Absolutamente! Aspose.Words suporta .NET Core e você pode usar o mesmo código com pequenos ajustes para projetos .NET Core.
+
+### Como instalo o Aspose.Words para .NET?
+Você pode instalar o Aspose.Words for .NET por meio do NuGet Package Manager no Visual Studio. Basta pesquisar “Aspose.Words” e instalar o pacote.
+
+### Há alguma limitação nos tipos de documentos suportados pelo Aspose.Words?
+ Aspose.Words oferece suporte a uma ampla variedade de formatos de documentos, incluindo DOCX, DOC, PDF, HTML e muito mais. Verifica a[documentação](https://reference.aspose.com/words/net/) para obter uma lista completa de formatos suportados.

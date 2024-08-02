@@ -2,7 +2,7 @@
 title: 文档合并与比较
 linktitle: 文档合并与比较
 second_title: Aspose.Words Python 文档管理 API
-description: 发现使用 Aspose.Words for Python 和 .NET 进行文档合并和比较的全面教程。了解如何无缝合并和比较文档，增强您的文档处理工作流程。
+description: 发现使用 Aspose.Words for Python 和 .NET 进行文档合并和比较的全面教程。了解如何无缝合并和比较文档，从而增强文档处理工作流程。
 type: docs
 weight: 12
 url: /zh/python-net/document-combining-and-comparison/
@@ -38,7 +38,7 @@ url: /zh/python-net/document-combining-and-comparison/
 释放结构化文档标签 (SDT) 的强大功能，用于组织内容。了解如何使用 Aspose.Words for Python 实现 SDT。
 ### [应用样式和主题来转换文档](./apply-styles-themes-documents/)
 使用 Aspose.Words for Python 增强文档美观度。轻松应用样式、主题和自定义。
-### [为 Word 文档制作综合目录](./generate-table-contents/)
+### [为 Word 文档制作全面的目录](./generate-table-contents/)
 使用 Aspose.Words for Python 制作易于阅读的目录。学习无缝生成、自定义和更新文档结构。
 ### [使用先进的保护技术确保文档安全](./secure-documents-protection/)
 使用 Aspose.Words for Python 为您的文档提供高级保护。了解如何添加密码、加密内容、应用数字签名等。

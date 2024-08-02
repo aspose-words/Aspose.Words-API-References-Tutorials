@@ -12,9 +12,9 @@ url: /ko/python-net/content-extraction-and-manipulation/document-content-extract
 
 Word 문서에서 콘텐츠를 효율적으로 추출하는 것은 데이터 처리, 콘텐츠 분석 등의 일반적인 요구 사항입니다. Aspose.Words for Python은 Word 문서를 프로그래밍 방식으로 작업할 수 있는 포괄적인 도구를 제공하는 강력한 라이브러리입니다.
 
-## 전제조건
+## 전제 조건
 
-코드를 살펴보기 전에 Python과 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 홈페이지에서 라이브러리를 다운로드 받으실 수 있습니다[여기](https://releases.aspose.com/words/python/). 또한 테스트할 Word 문서가 준비되어 있는지 확인하세요.
+ 코드를 살펴보기 전에 Python과 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 홈페이지에서 라이브러리를 다운로드 받으실 수 있습니다[여기](https://releases.aspose.com/words/python/). 또한 테스트할 Word 문서가 준비되어 있는지 확인하세요.
 
 ## Python용 Aspose.Words 설치
 

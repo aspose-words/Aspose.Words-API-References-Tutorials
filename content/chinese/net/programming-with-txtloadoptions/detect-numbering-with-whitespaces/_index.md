@@ -2,115 +2,110 @@
 title: 检测带有空格的数字
 linktitle: 检测带有空格的数字
 second_title: Aspose.Words 文档处理 API
-description: 了解如何在 Aspose.Words for .NET 中检测带有空格的列表编号。轻松改进文档结构。
+description: 了解如何使用 Aspose.Words for .NET 检测纯文本文档中带有空格的编号并确保正确识别您的列表。
 type: docs
 weight: 10
 url: /zh/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-在本教程中，我们将探索 Aspose.Words for .NET 提供的“检测带空格的编号”功能的 C# 源代码。此功能允许您从包含列表编号后跟空格的文本文档中检测和创建列表。
+## 介绍
 
-## 步骤 1：设置环境
+Aspose.Words 是 .NET 爱好者的福音！今天，我们将深入研究一项令人着迷的功能，它可以轻松处理纯文本文档中的列表。您是否曾经处理过这样的文本文件：其中某些行应该是列表，但加载到 Word 文档中时它们看起来不太正确？好吧，我们有一个巧妙的技巧：检测带有空格的编号。本教程将引导您了解如何使用`DetectNumberingWithWhitespaces`Aspose.Words for .NET 中的选项可确保您的列表被正确识别，即使数字和文本之间存在空格。
 
-开始之前，请确保您已使用 Aspose.Words for .NET 设置开发环境。请确保您已添加必要的引用并导入适当的命名空间。
+## 先决条件
 
-## 第 2 步：创建文本文档
+在开始之前，请确保您已准备好以下内容：
+
+-  Aspose.Words for .NET：您可以从[Aspose 版本](https://releases.aspose.com/words/net/)页。
+- 开发环境：Visual Studio 或任何其他 C# IDE。
+- 您的机器上安装了 .NET Framework。
+- C# 基础知识：了解基础知识将帮助您理解示例。
+
+## 导入命名空间
+
+在开始编写代码之前，请确保已在项目中导入必要的命名空间。以下是一段快速入门代码：
 
 ```csharp
-//文档目录的路径
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-string textDoc = "Full stop delimiters:\n" +
-                  "1. First list item 1\n" +
-                  "2. First list item 2\n" +
-                  "3. First list item 3\n\n" +
-                  "Right bracket delimiters:\n" +
-                  "1) Second list item 1\n" +
-                  "2) Second list item 2\n" +
-                  "3) Second list item 3\n\n" +
-                  "Bullet delimiters:\n" +
-                  "• Third list item 1\n" +
-                  "• Third list item 2\n" +
-                  "• Third list item 3\n\n" +
-                  "Whitespace delimiters:\n" +
-                  "1 Fourth list item 1\n" +
-                  "2 Fourth list item 2\n" +
-                  "3 Fourth list item 3";
+using System;
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-在此步骤中，我们创建一个文本字符串，模拟包含列表编号和空格的文本文档。我们使用不同的列表分隔符，例如句点、右括号、项目符号和空格。
+让我们将这个过程分解成简单、易于管理的步骤。每个步骤都会引导您完成必要的代码并解释正在发生的事情。
 
-## 步骤 3：配置上传选项
+## 步骤 1：定义文档目录
 
-```csharp
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-```
-
-在此步骤中，我们配置文档加载选项。我们创建一个新的`TxtLoadOptions`对象并设置`DetectNumberingWithWhitespaces`财产`true`。这将允许 Aspose.Words 检测列表数字，即使它们后面有空格。
-
-## 步骤 4：加载文档并保存
+首先，让我们设置文档目录的路径。这是存储输入和输出文件的地方。
 
 ```csharp
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-```
-
-在此步骤中，我们使用指定的文本字符串和加载选项加载文档。我们使用`MemoryStream`将文本字符串转换为内存流。然后我们将生成的文档保存为 .docx 格式。
-
-### 使用 Aspose.Words for .NET 的空白编号检测功能的示例源代码。
-
-```csharp
-
-            
 //文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-//创建一个字符串形式的纯文本文档，其中某些部分可以解释为列表。
-//加载后，Aspose.Words 将始终检测到前三个列表，
-//并且在加载后将为它们创建 List 对象。
-const string textDoc = "Full stop delimiters:\n" +
-					   "1. First list item 1\n" +
-					   "2. First list item 2\n" +
-					   "3. First list item 3\n\n" +
-					   "Right bracket delimiters:\n" +
-					   "1) Second list item 1\n" +
-					   "2) Second list item 2\n" +
-					   "3) Second list item 3\n\n" +
-					   "Bullet delimiters:\n" +
-					   "• Third list item 1\n" +
-					   "• Third list item 2\n" +
-					   "• Third list item 3\n\n" +
-					   "Whitespace delimiters:\n" +
-					   "1 Fourth list item 1\n" +
-					   "2 Fourth list item 2\n" +
-					   "3 Fourth list item 3";
-
-//第四个列表，列表编号和列表项内容之间有空格，
-//仅当 LoadOptions 对象中的“DetectNumberingWithWhitespaces”设置为 true 时，才会被检测为列表，
-//以避免以数字开头的段落被误检测为列表。
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-
-//应用 LoadOptions 作为参数来加载文档并验证结果。
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-            
-        
 ```
 
-现在您可以运行源代码来加载包含带有空格的列表数字的文本文档，然后使用检测到的列表创建一个 .docx 文档。输出文件将保存在指定的目录中，名称为“WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx”。
+## 第 2 步：创建纯文本文档
+
+接下来，我们将创建一个纯文本文档作为字符串。此文档将包含可能被解释为列表的部分。
+
+```csharp
+const string textDoc = "Full stop delimiters:\n" +
+                       "1. First list item 1\n" +
+                       "2. First list item 2\n" +
+                       "3. First list item 3\n\n" +
+                       "Right bracket delimiters:\n" +
+                       "1) Second list item 1\n" +
+                       "2) Second list item 2\n" +
+                       "3) Second list item 3\n\n" +
+                       "Bullet delimiters:\n" +
+                       "• Third list item 1\n" +
+                       "• Third list item 2\n" +
+                       "• Third list item 3\n\n" +
+                       "Whitespace delimiters:\n" +
+                       "1 Fourth list item 1\n" +
+                       "2 Fourth list item 2\n" +
+                       "3 Fourth list item 3";
+```
+
+## 步骤 3：配置 LoadOptions
+
+为了检测带有空格的数字，我们需要设置`DetectNumberingWithWhitespaces`选择`true`在一个`TxtLoadOptions`目的。
+
+```csharp
+TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
+```
+
+## 步骤 4：加载文档
+
+现在，让我们使用`TxtLoadOptions`作为参数。这确保第四个列表（带有空格）被正确检测到。
+
+```csharp
+Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
+```
+
+## 步骤 5：保存文档
+
+最后，将文档保存到您指定的目录。这将输出一个包含正确检测列表的 Word 文档。
+
+```csharp
+doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
+```
 
 ## 结论
-在本教程中，我们探索了 Aspose.Words for .NET 中的空格编号检测功能。我们学习了如何从包含列表编号和空格的文本文档创建列表。
 
-此功能对于处理包含以不同方式格式化的列表编号的文档非常有用。通过使用适当的加载选项，Aspose.Words 能够检测这些列表编号（即使它们后面有空格），并将它们转换为最终文档中的结构化列表。
+就这样！只需几行代码，您就掌握了使用 Aspose.Words for .NET 检测纯文本文档中带有空格的编号的技巧。此功能在处理各种文本格式并确保列表在 Word 文档中准确显示时非常方便。因此，下次您遇到这些棘手的列表时，您就会确切知道该怎么做。
 
-使用此功能可以节省您的时间并提高您的工作流程效率。您可以轻松地从文本文档中提取信息并将其转换为具有适当列表的结构良好的文档。
+## 常见问题解答
 
-记住考虑加载选项，例如配置白色拨号检测，以实现所需的结果。
+### 什么是`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+`DetectNumberingWithWhitespaces`是一个选项`TxtLoadOptions`即使编号和列表项文本之间存在空格，Aspose.Words 也能够识别列表。
 
-Aspose.Words for .NET 提供了许多用于文档操作和生成的高级功能。通过进一步探索 Aspose.Words 提供的文档和示例，您将能够充分利用这个强大库的功能。
+### 我可以将此功能用于其他分隔符（例如项目符号和括号）吗？
+是的，Aspose.Words 会自动检测带有常见分隔符（如项目符号和括号）的列表。`DetectNumberingWithWhitespaces`特别有助于解决带有空格的列表。
 
-因此，请不要犹豫，将空白编号检测集成到您的 Aspose.Words for .NET 项目中，并利用其优势来创建结构良好且可读的文档。
+### 如果我不使用会发生什么`DetectNumberingWithWhitespaces`?
+如果没有此选项，编号和文本之间有空格的列表可能无法被识别为列表，并且项目可能会显示为普通段落。
 
+### 其他 Aspose 产品也有这个功能吗？
+此特定功能是针对 Aspose.Words for .NET 量身定制的，旨在处理 Word 文档。
+
+### 如何获取 Aspose.Words for .NET 的临时许可证？
+您可以从[Aspose 临时许可证](https://purchase.aspose.com/temporary-license/)页。
 

@@ -16,19 +16,19 @@ Tutorial ini akan membantu pengembang menguasai teknik penting untuk Pemrosesan 
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Dapatkan Jarak Antar Teks di Sekitar Tabel](./get-distance-between-table-surrounding-text/) | Panduan langkah demi langkah untuk mendapatkan jarak antara teks dan tabel di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Terapkan Batas Garis Besar](./apply-outline-border/) | Panduan langkah demi langkah untuk menerapkan batas kerangka ke tabel menggunakan Aspose.Words untuk .NET. |
-| [Bangun Tabel Dengan Batas](./build-table-with-borders/) | Panduan langkah demi langkah untuk membuat tabel dengan batas menggunakan Aspose.Words untuk .NET. |
-| [Ubah Pemformatan Baris](./modify-row-formatting/) | Panduan langkah demi langkah untuk mengubah format baris tabel menggunakan Aspose.Words untuk .NET. |
-| [Terapkan Pemformatan Baris](./apply-row-formatting/) | Panduan langkah demi langkah untuk menerapkan pemformatan baris ke tabel menggunakan Aspose.Words untuk .NET. |
-| [Atur Bantalan Sel](./set-cell-padding/) | Panduan langkah demi langkah untuk mengatur margin sel tabel menggunakan Aspose.Words untuk .NET. |
-| [Ubah Pemformatan Sel](./modify-cell-formatting/) | Panduan langkah demi langkah untuk mengubah format sel dalam tabel menggunakan Aspose.Words untuk .NET. |
-| [Format Tabel Dan Sel Dengan Batas Berbeda](./format-table-and-cell-with-different-borders/) | Panduan langkah demi langkah untuk memformat tabel dan sel dengan batas berbeda menggunakan Aspose.Words untuk .NET. |
-| [Tetapkan Judul dan Deskripsi Tabel](./set-table-title-and-description/) | Panduan langkah demi langkah untuk menetapkan judul dan deskripsi tabel menggunakan Aspose.Words untuk .NET. |
-| [Izinkan Spasi Sel](./allow-cell-spacing/) | Panduan langkah demi langkah untuk mengizinkan penspasian sel menggunakan Aspose.Words untuk .NET. |
-| [Bangun Meja Dengan Gaya](./build-table-with-style/) | Panduan langkah demi langkah untuk membuat tabel dengan gaya kustom menggunakan Aspose.Words untuk .NET. |
-| [Perluas Pemformatan Pada Sel Dan Baris Dari Gaya](./expand-formatting-on-cells-and-row-from-style/) | Panduan langkah demi langkah untuk memperluas pemformatan ke sel dan baris dari gaya tabel menggunakan Aspose.Words untuk .NET. |
-| [Buat Gaya Tabel](./create-table-style/) | Panduan langkah demi langkah untuk membuat gaya tabel kustom menggunakan Aspose.Words untuk .NET. |
-| [Tentukan Pemformatan Bersyarat](./define-conditional-formatting/) | Panduan langkah demi langkah untuk menentukan pemformatan bersyarat dalam tabel menggunakan Aspose.Words untuk .NET. |
-| [Atur Pemformatan Sel Tabel](./set-table-cell-formatting/) | Panduan langkah demi langkah untuk mengatur pemformatan sel tabel menggunakan Aspose.Words untuk .NET. |
-| [Atur Pemformatan Baris Tabel](./set-table-row-formatting/) | Panduan langkah demi langkah untuk mengatur pemformatan baris tabel menggunakan Aspose.Words untuk .NET. |
+| [Dapatkan Jarak Antar Teks di Sekitar Tabel](./get-distance-between-table-surrounding-text/) | Pelajari cara mengambil jarak antara tabel dan teks di sekitarnya dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tingkatkan tata letak dokumen Anda dengan panduan ini. |
+| [Terapkan Batas Garis Besar](./apply-outline-border/) | Pelajari cara menerapkan batas kerangka ke tabel di Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk pemformatan tabel yang sempurna. |
+| [Bangun Tabel Dengan Batas](./build-table-with-borders/) | Pelajari cara membuat dan mengkustomisasi batas tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk petunjuk rinci. |
+| [Ubah Pemformatan Baris](./modify-row-formatting/) | Pelajari cara mengubah pemformatan baris di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami. Sempurna untuk pengembang dari semua tingkatan. |
+| [Terapkan Pemformatan Baris](./apply-row-formatting/) | Pelajari cara menerapkan pemformatan baris dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk petunjuk rinci. |
+| [Atur Bantalan Sel](./set-cell-padding/) | Pelajari cara mengatur padding sel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Tingkatkan format tabel dokumen Anda dengan mudah. |
+| [Ubah Pemformatan Sel](./modify-cell-formatting/) | Pelajari cara mengubah pemformatan sel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. |
+| [Format Tabel Dan Sel Dengan Batas Berbeda](./format-table-and-cell-with-different-borders/) | Pelajari cara memformat tabel dan sel dengan batas berbeda menggunakan Aspose.Words untuk .NET. Sempurnakan dokumen Word Anda dengan gaya tabel dan bayangan sel yang disesuaikan. |
+| [Tetapkan Judul dan Deskripsi Tabel](./set-table-title-and-description/) | Pelajari cara mengatur judul dan deskripsi tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci kami untuk meningkatkan profesionalisme dokumen Anda. |
+| [Izinkan Spasi Sel](./allow-cell-spacing/) | Pelajari cara mengizinkan spasi sel dalam tabel menggunakan Aspose.Words untuk .NET dengan panduan terperinci kami. Sempurna untuk pengembang yang ingin menyempurnakan format dokumen Word mereka. |
+| [Bangun Meja Dengan Gaya](./build-table-with-style/) | Pelajari cara membuat dan menata tabel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
+| [Perluas Pemformatan Pada Sel Dan Baris Dari Gaya](./expand-formatting-on-cells-and-row-from-style/) | Pelajari cara memperluas pemformatan pada sel dan baris dari gaya di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah disertakan. |
+| [Buat Gaya Tabel](./create-table-style/) | Membuat dan menata tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Pelajari langkah demi langkah untuk menyempurnakan dokumen Anda dengan pemformatan tabel profesional. |
+| [Tentukan Pemformatan Bersyarat](./define-conditional-formatting/) | Pelajari cara menentukan pemformatan bersyarat dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tingkatkan daya tarik visual dan keterbacaan dokumen Anda dengan panduan kami. |
+| [Atur Pemformatan Sel Tabel](./set-table-cell-formatting/) | Sempurnakan dokumen Word Anda dengan pemformatan sel tabel profesional menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini menyederhanakan prosesnya untuk Anda. |
+| [Atur Pemformatan Baris Tabel](./set-table-row-formatting/) | Pelajari cara mengatur pemformatan baris tabel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan kami. Sempurna untuk membuat dokumen yang diformat dengan baik dan profesional. |

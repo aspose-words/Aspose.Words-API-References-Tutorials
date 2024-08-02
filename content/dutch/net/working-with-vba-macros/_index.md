@@ -16,8 +16,8 @@ Door deze tutorials te volgen, leert u hoe u Aspose.Words voor .NET effectief ku
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Vba-project maken](./create-vba-project/) | In deze zelfstudie leert u hoe u een VBA-project in een Word-document maakt met Aspose.Words voor .NET. |
-| [Lees Vba-macro's](./read-vba-macros/) | In deze zelfstudie leert u hoe u VBA-macro's uit een Word-document leest met Aspose.Words voor .NET. |
-| [Wijzig Vba-macro's](./modify-vba-macros/) | In deze zelfstudie leert u hoe u VBA-macro's van een Word-document bewerkt met Aspose.Words voor .NET. |
-| [Kloon Vba-project](./clone-vba-project/) | In deze zelfstudie leert u hoe u een VBA-project uit een Word-document kunt klonen met Aspose.Words voor .NET.|
-| [Kloon Vba-module](./clone-vba-module/) | In deze zelfstudie leert u hoe u een VBA-module uit een Word-document kunt klonen met Aspose.Words voor .NET. |
+| [Vba-project maken](./create-vba-project/) | Leer VBA-projecten maken in Word-documenten met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor naadloze documentautomatisering! |
+| [Lees Vba-macro's](./read-vba-macros/) | Ik leer hoe u VBA-macro's uit Word-documenten leest met Aspose.Words voor .NET. Volg onze gedetailleerde gids voor naadloze documentautomatisering! |
+| [Wijzig Vba-macro's](./modify-vba-macros/) | Leer hoe u VBA-macro's in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding voor naadloze documentautomatisering! |
+| [Kloon Vba-project](./clone-vba-project/) | Leer hoe u VBA-projecten in Word-documenten kunt klonen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor naadloze documentmanipulatie!|
+| [Kloon Vba-module](./clone-vba-module/) | Kloon VBA-modules in Word-documenten moeiteloos met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor naadloze documentmanipulatie! |

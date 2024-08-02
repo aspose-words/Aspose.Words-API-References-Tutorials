@@ -111,5 +111,5 @@ Tak, możesz dodać wiele zakładek. Upewnij się tylko, że każda zakładka ma
 ### Czy mogę dodać złożoną treść do zakładki?
 Absolutnie! Do zakładki możesz dodać tekst, tabele, obrazy lub inne elementy.
 
-### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
+### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
 Aspose.Words dla .NET jest produktem komercyjnym, ale możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/).

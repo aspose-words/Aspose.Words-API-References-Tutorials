@@ -69,7 +69,7 @@ Magyarázat:
 - `doc.Range.Bookmarks["MyBookmark3"]`: Ezzel eléri a "MyBookmark3" nevű könyvjelzőt.
 - `Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];` : Ez eltárolja az elért könyvjelzőt a`bookmark2` változó.
 
-## 4. lépés: Manipulálja a könyvjelzők tartalmát
+## 4. lépés: Manipulálja a könyvjelző tartalmát
 
 Miután hozzáfért egy könyvjelzőhöz, módosíthatja annak tartalmát. Például frissítheti a könyvjelzőn belüli szöveget.
 

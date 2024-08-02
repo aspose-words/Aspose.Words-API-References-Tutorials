@@ -2,7 +2,7 @@
 title: Reemplazar texto en la tabla
 linktitle: Reemplazar texto en la tabla
 second_title: API de procesamiento de documentos Aspose.Words
-description: Reemplace sin esfuerzo texto en una tabla de Word usando Aspose.Words para .NET con esta guía detallada paso a paso.
+description: Reemplace texto sin esfuerzo en una tabla de Word usando Aspose.Words para .NET con esta guía detallada paso a paso.
 type: docs
 weight: 10
 url: /es/net/find-and-replace-text/replace-text-in-table/
@@ -15,7 +15,7 @@ url: /es/net/find-and-replace-text/replace-text-in-table/
 
 Antes de pasar a la parte divertida, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Aspose.Words para .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE de C# con el que se sienta cómodo.
 3. Documento de Word de muestra: un documento de Word (`Tables.docx`) que contiene tablas en las que desea reemplazar texto.
 

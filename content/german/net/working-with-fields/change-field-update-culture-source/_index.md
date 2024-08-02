@@ -2,20 +2,38 @@
 title: Feld „Kulturquelle aktualisieren“ ändern
 linktitle: Feld „Kulturquelle aktualisieren“ ändern
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Feld „Kulturquelle ändern“ aktualisieren, Schritt-für-Schritt-Anleitung zum Ändern der Kulturquelle in Aspose.Words für .NET.
+description: Erfahren Sie in diesem Handbuch, wie Sie die Kulturquelle für Feldaktualisierungen in Aspose.Words für .NET ändern. Steuern Sie die Datumsformatierung basierend auf verschiedenen Kulturen ganz einfach.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/change-field-update-culture-source/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch den Prozess zum Ändern der Kulturquelle für Feldaktualisierungen in Word-Dokumenten mit Aspose.Words für .NET. Durch Ändern der Kulturquelle können Sie die Datumsformatierung während Feldaktualisierungs- und Seriendruckvorgängen steuern. Wir stellen Ihnen den erforderlichen C#-Quellcode und schrittweise Anweisungen zur Verfügung, um dies zu erreichen.
+In diesem Tutorial tauchen wir in die Welt von Aspose.Words für .NET ein und erkunden, wie man die Kulturquelle für Feldaktualisierungen ändert. Wenn Sie mit Word-Dokumenten arbeiten, die Datumsfelder enthalten, und Sie steuern müssen, wie diese Daten basierend auf verschiedenen Kulturen formatiert werden, ist dieser Leitfaden genau das Richtige für Sie. Lassen Sie uns den Prozess Schritt für Schritt durchgehen, um sicherzustellen, dass Sie jedes Konzept verstehen und es effektiv in Ihren Projekten anwenden können.
 
 ## Voraussetzungen
-Bevor wir beginnen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllen:
-- Auf Ihrem System ist die Bibliothek Aspose.Words für .NET installiert.
 
-## Schritt 1: Erstellen Sie ein Dokument und einen DocumentBuilder
-Erstellen Sie zunächst eine Instanz der Document-Klasse und ein DocumentBuilder-Objekt:
+Bevor wir in den Code einsteigen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+
+-  Aspose.Words für .NET: Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Jede .NET-kompatible IDE (z. B. Visual Studio).
+- Grundkenntnisse in C#: Dieses Tutorial setzt grundlegende Kenntnisse der C#-Programmierung voraus.
+
+## Namespaces importieren
+
+Importieren wir zunächst die erforderlichen Namespaces für unser Projekt. Dadurch wird sichergestellt, dass wir Zugriff auf alle erforderlichen Klassen und Methoden haben, die von Aspose.Words bereitgestellt werden.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Lassen Sie uns das Beispiel nun in mehrere Schritte aufteilen, damit Sie verstehen, wie Sie die Kulturquelle der Feldaktualisierung in Aspose.Words für .NET ändern.
+
+## Schritt 1: Initialisieren Sie das Dokument
+
+ Der erste Schritt besteht in der Erstellung einer neuen Instanz des`Document` Klasse und eine`DocumentBuilder`Dies legt die Grundlage für die Erstellung und Bearbeitung unseres Word-Dokuments.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,80 +41,58 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Inhalte mit spezifischem Gebietsschema einfügen
-Stellen Sie als nächstes die Sprache auf Deutsch ein und fügen Sie Felder mit Datumsformatierung ein:
+## Schritt 2: Felder mit spezifischem Gebietsschema einfügen
+
+Als nächstes müssen wir Felder in das Dokument einfügen. Für dieses Beispiel fügen wir zwei Datumsfelder ein. Wir setzen das Gebietsschema der Schriftart auf Deutsch (LocaleId = 1031), um zu demonstrieren, wie sich die Kultur auf das Datumsformat auswirkt.
 
 ```csharp
-builder.Font.LocaleId = 1031;
+builder.Font.LocaleId = 1031; // Deutsch
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-Im obigen Code stellen wir das Schriftgebietsschema auf Deutsch ein (Gebietsschema-ID 1031) und fügen zwei Felder mit spezifischer Datumsformatierung ein.
+## Schritt 3: Kulturquelle für Feldaktualisierung festlegen
 
-## Schritt 3: Kulturquelle für Feldaktualisierung ändern
-Um die Kulturquelle der Feldaktualisierung zu ändern, verwenden Sie die Klasse FieldOptions:
+ Um die Kultur zu steuern, die beim Aktualisieren der Felder verwendet wird, setzen wir die`FieldUpdateCultureSource` Eigentum der`FieldOptions`Klasse. Diese Eigenschaft bestimmt, ob die Kultur aus dem Feldcode oder dem Dokument übernommen wird.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
 
-In diesem Beispiel legen wir fest, dass die während der Feldaktualisierung verwendete Kultur aus der vom Feld verwendeten Kultur ausgewählt wird.
+## Schritt 4: Serienbrief ausführen
 
-## Schritt 4: Serienbrief erstellen
-Führen Sie einen Serienbriefvorgang durch und geben Sie den Datumswert für das Feld „Datum2“ an:
+Wir müssen nun einen Serienbrief ausführen, um die Felder mit tatsächlichen Daten zu füllen. In diesem Beispiel setzen wir das zweite Datumsfeld (`Date2`) bis 1. Januar 2011.
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
-
-In diesem Codeausschnitt führen wir den Serienbriefvorgang aus und stellen einen DateTime-Wert für das Feld „Date2“ bereit.
 
 ## Schritt 5: Speichern Sie das Dokument
-Speichern Sie das geänderte Dokument mit der Save-Methode der Document-Klasse in einer Datei:
+
+Abschließend speichern wir das Dokument im angegebenen Verzeichnis. Damit ist die Änderung der Kulturquelle für die Feldaktualisierung abgeschlossen.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
-```
-
-### Beispielquellcode zum Ändern der Feldaktualisierungskulturquelle mit Aspose.Words für .NET
-Hier ist der vollständige Quellcode zum Ändern der Feldaktualisierungskulturquelle in Word-Dokumenten mit Aspose.Words für .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Font.LocaleId = 1031;
-builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
-builder.Write(" - ");
-builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
-
-doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
-
-doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
-
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Abschluss
-Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie die Kulturquelle für Feldaktualisierungen in Word-Dokumenten mit Aspose.Words für .NET ändern. Indem Sie der Schritt-für-Schritt-Anleitung folgen und den bereitgestellten Quellcode verwenden, können Sie jetzt die Kultur steuern, die für die Datumsformatierung während Feldaktualisierungs- und Seriendruckvorgängen verwendet wird. Passen Sie die Kulturquelle entsprechend Ihren Anforderungen an, um genaue und konsistente Daten sicherzustellen.
 
-### Häufig gestellte Fragen
+Und da haben Sie es! Sie haben die Kulturquelle für die Feldaktualisierung in Aspose.Words für .NET erfolgreich geändert. Indem Sie diese Schritte befolgen, können Sie sicherstellen, dass Ihre Word-Dokumente Datumsangaben und andere Feldwerte entsprechend den angegebenen Kultureinstellungen anzeigen. Dies kann insbesondere beim Erstellen von Dokumenten für ein internationales Publikum nützlich sein.
 
-#### F: Wie kann ich die Kulturquelle der Feldaktualisierung in Aspose.Words für .NET ändern?
+## Häufig gestellte Fragen
 
- A: Um die Kulturquelle für das Feldupdate in Aspose.Words für .NET zu ändern, können Sie den`Document.FieldOptions.CultureSource` und legen Sie den Wert fest auf`FieldCultureSource.FieldCode` oder`FieldCultureSource.CurrentThread` Sie können beispielsweise`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` um die im Feldcode definierte Kultur zu verwenden.
+###  Was ist der Zweck der Festlegung der`LocaleId`?
+ Der`LocaleId` Gibt die Kultureinstellungen für den Text an, die sich auf die Formatierung von Datumsangaben und anderen gebietsschemaabhängigen Daten auswirken.
 
-#### F: Wie kann ich eine bestimmte Kultur zum Aktualisieren von Feldern in Aspose.Words für .NET angeben?
+### Kann ich ein anderes Gebietsschema als Deutsch verwenden?
+ Ja, Sie können die`LocaleId`zu jedem gültigen Gebietsschemabezeichner. Zum Beispiel 1033 für Englisch (USA).
 
- A: Um eine bestimmte Kultur für die Aktualisierung von Feldern in Aspose.Words für .NET anzugeben, können Sie den`Document.FieldOptions.FieldUpdateCultureInfo` und legen Sie die`CultureInfo` Objekt, das der gewünschten Kultur entspricht. Sie können beispielsweise`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` um die französische (französische) Kultur anzugeben.
+###  Was passiert, wenn ich die`FieldUpdateCultureSource` property?
+Wenn diese Eigenschaft nicht festgelegt ist, werden beim Aktualisieren von Feldern die Standardkultureinstellungen des Dokuments verwendet.
 
-#### F: Ist es möglich, die automatische Feldaktualisierung in Aspose.Words für .NET zu deaktivieren?
+### Ist es möglich, Felder basierend auf der Kultur des Dokuments statt auf dem Feldcode zu aktualisieren?
+ Ja, Sie können einstellen`FieldUpdateCultureSource` Zu`FieldUpdateCultureSource.Document` um die Kultureinstellungen des Dokuments zu verwenden.
 
- A: Ja, es ist möglich, die automatische Feldaktualisierung in Aspose.Words für .NET zu deaktivieren. Sie können die`Document.FieldOptions.UpdateFields` und legen Sie sie auf`false` um die automatische Aktualisierung von Feldern zu verhindern. So können Sie die Aktualisierung von Feldern nach Bedarf manuell steuern.
-
-#### F: Wie kann ich Dokumentfelder in Aspose.Words für .NET manuell aktualisieren?
-
- A: Um Felder in einem Dokument in Aspose.Words für .NET manuell zu aktualisieren, können Sie den`Field.Update` Methode für jedes Feld einzeln. Sie können beispielsweise`field.Update()` um das jeweilige Feld zu aktualisieren.
+### Wie formatiere ich Daten in einem anderen Muster?
+ Sie können das Datumsformatmuster im`InsertField` Methode durch Ändern der`\\@` Schalterwert.

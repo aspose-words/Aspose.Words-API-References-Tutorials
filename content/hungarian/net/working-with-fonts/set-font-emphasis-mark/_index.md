@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: A dokumentum létrehozása és testreszabása
- Hozzon létre egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` a dokumentumtartalom felépítéséhez. Használja a`Font.EmphasisMark` tulajdonság a betűk kiemelési stílusának beállításához`EmphasisMark.UnderSolidCircle` . Ezután használja a`Write`és`Writeln` módszerei a`DocumentBuilder` szöveg hozzáadásához a megadott betűk hangsúlyozásával.
+ Hozzon létre egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` a dokumentumtartalom felépítéséhez. Használja a`Font.EmphasisMark` tulajdonság a betűk kiemelési stílusának beállításához`EmphasisMark.UnderSolidCircle` . Ezután használja a`Write`és`Writeln` módszerei a`DocumentBuilder` szöveg hozzáadásához a megadott betűtípussal.
 
 ```csharp
 Document document = new Document();
@@ -73,7 +73,7 @@ V: Igen, az Aspose.Words segítségével megváltoztathatja az ékezetes jelek s
 
 #### K: Hogyan távolíthatok el minden ékezetes jelet egy Word-dokumentumból az Aspose.Words használatával?
 
-V: Ha az Aspose.Words használatával eltávolíthat minden ékezetjelet egy Word-dokumentumból, az API segítségével böngészhet a dokumentumban, észlelheti a meglévő ékezetes jeleket, és eltávolíthatja azokat a megfelelő módszerekkel. Ezzel eltávolítja az összes kiemelő jelet a dokumentumból.
+V: Ha egy Word-dokumentumból az Aspose.Words használatával szeretne eltávolítani minden ékezetet, az API segítségével böngészhet a dokumentumban, észlelheti a meglévő ékezetes jeleket, és eltávolíthatja azokat a megfelelő módszerekkel. Ezzel eltávolítja az összes kiemelő jelet a dokumentumból.
 
 #### K: Hozzáadhatok ékezetes jeleket egy adott szövegrészhez egy Word-dokumentumban?
 

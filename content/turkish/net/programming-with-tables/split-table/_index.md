@@ -2,96 +2,121 @@
 title: Bölünmüş Tablo
 linktitle: Bölünmüş Tablo
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu nasıl böleceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki tabloları nasıl böleceğinizi öğrenin. Adım adım kılavuzumuz masa yönetimini kolay ve verimli hale getirir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/split-table/
 ---
+## giriiş
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir tabloyu nasıl böleceğimizi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki belirli bir satırdan bir tabloyu bölebileceksiniz.
+Hiç kendinizi bir Word belgesinde büyük bir tabloyla çalışırken buldunuz mu ve onu daha küçük, daha kolay yönetilebilir iki tabloya bölmeyi dilediniz mi? Bugün Aspose.Words for .NET kullanarak bunu tam olarak nasıl başarabileceğinizi inceliyoruz. İster kapsamlı veri tablolarıyla ister karmaşık belge yapılarıyla ilgileniyor olun, tabloları bölmek okunabilirliği ve düzeni artırmanıza yardımcı olabilir. Aspose.Words for .NET kullanarak bir tabloyu bölmek için adım adım süreci inceleyelim.
 
-## Adım 1: Proje Kurulumu
-1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
-2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
+## Önkoşullar
 
-## Adım 2: Belgeyi yükleme
-Belgeyle Sözcük İşleme'yi başlatmak için şu adımları izleyin:
+Eğiticiye geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET kütüphanesini indirip yüklediğinizden emin olun. Şu adresten alabilirsiniz:[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi .NET framework desteğine sahip bir geliştirme ortamı kurun.
+3. Örnek Belge: Word belgesi hazırlayın (`Tables.docx`) bölme işlemini uygulamak için en az bir tabloyla.
 
-// Belgeyi yükleyin
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Ad Alanlarını İçe Aktar
 
-"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
-
-## 3. Adım: Masayı bölme
-Daha sonra tabloyu belirli bir satırdan böleceğiz. Aşağıdaki kodu kullanın:
+Öncelikle gerekli ad alanlarını projenize aktarın. Bu, Aspose.Words tarafından sağlanan sınıflara ve yöntemlere erişmenizi sağlar.
 
 ```csharp
-// İlk tabloyu al
-Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-// Masanın bölüneceği hattın belirlenmesi
-Row row = firstTable.Rows[2];
-
-// Bölünmüş tablo için yeni bir kapsayıcı oluşturun
-Table table = (Table)firstTable.Clone(false);
-
-// Kabı orijinal tablonun arkasına yerleştirin
-firstTable.ParentNode.InsertAfter(table, firstTable);
-
-// Tablolar arasındaki mesafeyi korumak için ara paragraf ekleyin
-firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
-
-// Satırları orijinal tablodan bölünmüş tabloya taşıma
-Row currentRow;
-do
-{
-currentRow = firstTable.LastRow;
-table. PrependChild(currentRow);
-} while (currentRow != row);
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Burada belgeyi, belge düğümünden ilk tabloyu almak için kullanırız. Daha sonra tabloyu bölmek istediğimiz satırı belirliyoruz, bu örnekte üçüncü satırdır (indeks 2). Daha sonra orijinal tabloyu kopyalayarak yeni bir kap oluşturuyoruz ve bunu orijinal tablonun arkasına ekliyoruz. Ayrıca iki tablo arasındaki mesafeyi korumak için bir tampon paragraf da ekliyoruz. Daha sonra belirtilen satıra ulaşana kadar satırları orijinal tablodan bölünmüş tabloya do-while döngüsü kullanarak taşırız.
+## 1. Adım: Belgeyi Yükleyin
 
-## Adım 4: Değiştirilen belgeyi kaydetme
-Son olarak kaydetmemiz gerekiyor
-
-  bölünmüş tabloyla değiştirilmiş belge. Aşağıdaki kodu kullanın:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
-```
-
-Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanan Bölünmüş Tablo için örnek kaynak kodu 
+Bölmek istediğiniz tabloyu içeren belgeyi yükleyerek başlayalım. Belgenizin doğru yolunu belirttiğinizden emin olun.
 
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
-Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// Tabloyu üçüncü satıra (dahil) böleceğiz.
+```
+
+## Adım 2: Bölünecek Tabloyu Belirleyin
+
+Daha sonra bölmek istediğiniz tabloyu tanımlayın ve alın. Bu örnekte belgedeki ilk tabloyu hedefleyeceğiz.
+
+```csharp
+Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Adım 3: Bölünecek Satırı Seçin
+
+Tabloyu bölmek istediğiniz satırı belirleyin. Burada tabloyu üçüncü satıra (dahil) bölüyoruz.
+
+```csharp
 Row row = firstTable.Rows[2];
-// Bölünmüş tablo için yeni bir kapsayıcı oluşturun.
-Table table = (Table) firstTable.Clone(false);
-// Kabı orijinalin arkasına yerleştirin.
+```
+
+## Adım 4: Yeni Bir Masa Kabı Oluşturun
+
+Orijinal tablodan taşınacak satırları tutacak yeni bir tablo kapsayıcısı oluşturun.
+
+```csharp
+Table table = (Table)firstTable.Clone(false);
+```
+
+## Adım 5: Yeni Masa Kabını Takın
+
+Yeni masa kabını belgedeki orijinal masanın hemen sonrasına ekleyin.
+
+```csharp
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// Tabloların ayrı kalmasını sağlamak için bir ara paragraf ekleyin.
+```
+
+## Adım 6: Tampon Paragrafı Ekleme
+
+İki tablonun ayrı kalmasını sağlamak için arasına bir tampon paragraf ekleyin.
+
+```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
+```
+
+## Adım 7: Satırları Yeni Tabloya Taşı
+
+Satırları orijinal tablodan yeni tablo kapsayıcısına taşıyın. Bu döngü belirtilen satır (dahil) taşınıncaya kadar devam eder.
+
+```csharp
 Row currentRow;
 do
 {
-	currentRow = firstTable.LastRow;
-	table.PrependChild(currentRow);
+    currentRow = firstTable.LastRow;
+    table.PrependChild(currentRow);
 } while (currentRow != row);
+```
+
+## Adım 8: Belgeyi Kaydedin
+
+Son olarak, değiştirilen belgeyi tablolar bölünmüş olarak kaydedin.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu nasıl böleceğimizi öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, Word belgelerinizdeki tabloları belirli bir satırdan kolayca bölebilirsiniz.
+
+İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak bir Word belgesindeki tabloyu kolayca bölebilirsiniz. Bu yaklaşım, büyük tabloları daha etkili bir şekilde yönetmenize yardımcı olarak belgelerinizin okunabilirliğini ve organizasyonunu geliştirir. Bir deneyin ve Word belgelerindeki tablolarla çalışmanızı nasıl kolaylaştırdığını görün.
+
+## SSS'ler
+
+### Bir tabloyu birden fazla satıra bölebilir miyim?
+Evet, her bölme noktası için işlemi tekrarlayarak bir tabloyu birden çok satıra bölebilirsiniz.
+
+### Orijinal tablonun formatına ne olur?
+Yeni tablo, orijinal tablonun biçimlendirmesini devralır. Gerektiğinde yeni tabloya belirli biçimlendirme değişiklikleri uygulanabilir.
+
+### Tabloları tekrar birleştirmek mümkün mü?
+Evet, benzer yöntemleri kullanarak satırları bir tablodan diğerine taşıyarak tabloları birleştirebilirsiniz.
+
+### Bu yöntem iç içe geçmiş tablolarla çalışır mı?
+Evet, Aspose.Words for .NET iç içe tablolardaki işlemleri de destekler.
+
+### Bu işlemi birden fazla belge için otomatikleştirebilir miyim?
+Kesinlikle! Birden fazla belge için tablo bölme işlemini otomatikleştirmek amacıyla bir komut dosyası veya uygulama oluşturabilirsiniz.

@@ -97,7 +97,7 @@ header.removeAllChildren();
 
 Tak, możesz mieć różne nagłówki i stopki dla stron nieparzystych i parzystych. Aspose.Words for Java umożliwia określenie oddzielnych nagłówków i stopek dla różnych typów stron, takich jak strony nieparzyste, parzyste i pierwsze.
 
-### Czy można dodać hiperłącza w nagłówkach i stopkach?
+### Czy można dodać hiperłącza w nagłówkach lub stopkach?
 
  Z pewnością! Możesz dodawać hiperłącza w nagłówkach i stopkach, używając Aspose.Words dla Java. Użyj`Hyperlink` class, aby utworzyć hiperłącza i wstawić je do treści nagłówka lub stopki.
 

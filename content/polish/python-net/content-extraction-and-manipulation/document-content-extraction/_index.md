@@ -14,7 +14,7 @@ Efektywne wyodrębnianie treści z dokumentów programu Word jest powszechnym wy
 
 ## Warunki wstępne
 
-Zanim zagłębimy się w kod, upewnij się, że masz zainstalowany język Python i bibliotekę Aspose.Words. Bibliotekę można pobrać ze strony internetowej[Tutaj](https://releases.aspose.com/words/python/). Dodatkowo upewnij się, że masz dokument programu Word gotowy do testowania.
+ Zanim zagłębimy się w kod, upewnij się, że masz zainstalowany język Python i bibliotekę Aspose.Words. Bibliotekę można pobrać ze strony internetowej[Tutaj](https://releases.aspose.com/words/python/). Dodatkowo upewnij się, że masz dokument programu Word gotowy do testowania.
 
 ## Instalowanie Aspose.Words dla Pythona
 

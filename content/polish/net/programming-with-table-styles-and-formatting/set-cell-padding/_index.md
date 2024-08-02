@@ -2,77 +2,102 @@
 title: Ustaw dopełnienie komórek
 linktitle: Ustaw dopełnienie komórek
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący ustawiania marginesów komórek tabeli przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak ustawić dopełnienie komórek w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Z łatwością popraw formatowanie tabeli swojego dokumentu.
 type: docs
 weight: 10
 url: /pl/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię krok po kroku przez proces ustawiania marginesów komórek tabeli za pomocą Aspose.Words dla .NET. Wyjaśnimy dołączony kod źródłowy C# i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć tę funkcję we własnych projektach. Pod koniec tego samouczka będziesz wiedział, jak dostosować lewy, górny, prawy i dolny margines (odstęp) zawartości komórek w tabelach w dokumentach programu Word przy użyciu Aspose.Words dla .NET.
+Czy zastanawiałeś się kiedyś, jak dodać trochę dodatkowej przestrzeni wokół tekstu w komórce tabeli w dokumencie programu Word? Cóż, jesteś we właściwym miejscu! Ten samouczek przeprowadzi Cię przez proces ustawiania dopełnienia komórek przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy chcesz nadać swojemu dokumentowi bardziej dopracowany wygląd, czy po prostu chcesz wyróżnić dane w tabeli, dostosowywanie dopełnienia komórek to proste, ale potężne narzędzie. Podzielimy każdy krok, abyś mógł łatwo go wykonać, nawet jeśli jesteś nowy w Aspose.Words dla .NET.
 
-## Krok 1: Zdefiniuj katalog dokumentów
-Najpierw musisz ustawić ścieżkę do katalogu dokumentów. To jest lokalizacja, w której chcesz zapisać edytowany dokument programu Word. Zastąp „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką.
+## Warunki wstępne
+
+Zanim zagłębimy się w temat, upewnij się, że masz następujące elementy:
+
+1. Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj Aspose.Words dla .NET ze strony[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Potrzebujesz środowiska IDE takiego jak Visual Studio skonfigurowanego na swoim komputerze.
+3. Podstawowa znajomość języka C#: Choć wszystko wyjaśnimy, podstawowa znajomość języka C# pomoże Ci w dalszym ciągu.
+
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw. Dzięki temu będziesz miał wszystkie narzędzia potrzebne do pracy z Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Krok 2: Utwórz nowy dokument i narzędzie do tworzenia dokumentów
- Następnie musisz utworzyć nową instancję pliku`Document` class i konstruktor dokumentu dla tego dokumentu.
+Podzielmy proces na proste, łatwe do wykonania etapy. Gotowy? Chodźmy!
+
+## Krok 1: Utwórz nowy dokument
+
+Zanim zaczniemy dodawać tabele i ustawiać dopełnienie komórek, potrzebujemy dokumentu, z którym będziemy mogli pracować. Oto jak utworzyć nowy dokument:
 
 ```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Utwórz nowy dokument
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Rozpocznij nową tabelę i dodaj komórkę
-Aby rozpocząć tworzenie tabeli, używamy`StartTable()` metodą konstruktora dokumentu, następnie dodajemy komórkę do tabeli za pomocą metody`InsertCell()` metoda.
+## Krok 2: Zacznij budować swój stół
+
+ Teraz, gdy mamy już nasz dokument, zacznijmy budować tabelę. Skorzystamy z`DocumentBuilder` aby wstawić komórki i wiersze.
 
 ```csharp
-builder. StartTable();
-builder. InsertCell();
+// Zacznij budować stół
+builder.StartTable();
+builder.InsertCell();
 ```
 
-## Krok 4: Ustaw marginesy komórek
- Teraz możemy ustawić marginesy komórek za pomocą`SetPaddings()` metoda`CellFormat` obiekt. Marginesy są definiowane w punktach i podawane w kolejności: lewy, górny, prawy i dolny.
+## Krok 3: Ustaw dopełnienie komórek
+
+To tutaj dzieje się magia! Ustalimy ilość miejsca (w punktach), którą należy dodać po lewej, górnej, prawej i dolnej części zawartości komórki.
 
 ```csharp
+// Ustaw wypełnienie komórki
 builder.CellFormat.SetPaddings(30, 50, 30, 50);
+builder.Writeln("I'm a wonderfully formatted cell.");
 ```
 
-## Krok 5: Dodaj zawartość do komórki
- Następnie możemy dodać treść do komórki za pomocą narzędzia do tworzenia dokumentów`Writeln()` metoda.
+## Krok 4: Uzupełnij tabelę
+
+Po ustawieniu wypełnienia zakończmy nasz stół, kończąc wiersz i tabelę.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted cell.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## Krok 6: Zakończ tabelę i zapisz dokument
- Na koniec kończymy tworzenie tabeli za pomocą`EndRow()` metoda i`EndTable()`, następnie zapisujemy zmodyfikowany dokument do pliku.
+## Krok 5: Zapisz dokument
+
+Na koniec musimy zapisać nasz dokument. Wybierz lokalizację w swoim katalogu, aby zapisać nowo utworzony plik Word.
 
 ```csharp
-builder. EndRow();
-builder. EndTable();
+// Zapisz dokument
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
-```
- 
-### Przykładowy kod źródłowy dla Ustaw dopełnienie komórek przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.StartTable();
-	builder.InsertCell();
-	// Ustawia ilość miejsca (w punktach), którą należy dodać po lewej/górze/prawej/dół zawartości komórki.
-	builder.CellFormat.SetPaddings(30, 50, 30, 50);
-	builder.Writeln("I'm a wonderful formatted cell.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ```
 
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak ustawić marginesy komórki tabeli za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz łatwo dostosować marginesy komórek, aby utworzyć odstępy po lewej, górnej, prawej i dolnej stronie treści tabel w dokumentach programu Word. Aspose.Words oferuje potężny i elastyczny interfejs API do manipulowania i formatowania tabel w dokumentach. Dzięki tej wiedzy możesz dostosować formatowanie tabel do swoich konkretnych potrzeb.
+
+I masz to! Pomyślnie ustawiłeś dopełnienie komórek w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta prosta, ale potężna funkcja może znacząco poprawić czytelność i estetykę Twoich tabel. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, mamy nadzieję, że ten przewodnik był pomocny i łatwy w obsłudze. Miłego kodowania!
+
+## Często zadawane pytania
+
+### Czy mogę ustawić różne wartości dopełnienia dla każdej komórki w tabeli?
+ Tak, możesz ustawić różne wartości dopełnienia dla każdej komórki, stosując opcję`SetPaddings` metodę do każdej komórki indywidualnie.
+
+### Jakie jednostki są używane do dopełniania wartości w Aspose.Words?
+Wartości dopełnienia podawane są w punktach. Na cal przypada 72 punkty.
+
+### Czy mogę zastosować dopełnienie tylko do określonych stron komórki?
+Tak, możesz określić wyściółkę indywidualnie dla lewej, górnej, prawej i dolnej strony.
+
+### Czy istnieje ograniczenie ilości dopełnienia, które mogę ustawić?
+Nie ma określonego limitu, ale nadmierne dopełnienie może mieć wpływ na układ tabeli i dokumentu.
+
+### Czy mogę ustawić dopełnienie komórek za pomocą programu Microsoft Word?
+Tak, możesz ustawić dopełnianie komórek w programie Microsoft Word, ale użycie Aspose.Words dla .NET pozwala na zautomatyzowaną i programowalną manipulację dokumentami.

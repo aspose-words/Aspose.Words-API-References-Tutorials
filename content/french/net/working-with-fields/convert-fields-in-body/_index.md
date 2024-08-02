@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /fr/net/working-with-fields/convert-fields-in-body/
 ---
-
 ## Introduction
 
 Dans le domaine du développement .NET, la gestion dynamique du contenu des documents est essentielle, nécessitant souvent la manipulation de différents types de champs au sein des documents. Aspose.Words for .NET se distingue comme un ensemble d'outils puissants pour les développeurs, offrant des fonctionnalités robustes pour gérer efficacement les champs de documents. Ce guide complet se concentre sur la façon de convertir les champs dans le corps d'un document à l'aide d'Aspose.Words pour .NET, fournissant des instructions étape par étape pour permettre aux développeurs d'améliorer l'automatisation et la gestion des documents.
@@ -31,9 +30,7 @@ using System.Linq;
 
 Ces espaces de noms sont essentiels pour accéder aux fonctionnalités Aspose.Words et aux requêtes LINQ.
 
-## Guide étape par étape pour convertir les champs dans le corps avec Aspose.Words pour .NET
-
-### Étape 1 : Charger le document
+## Étape 1 : Charger le document
 
 Commencez par charger le document dans lequel vous souhaitez convertir les champs :
 
@@ -44,7 +41,7 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
  Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès à votre document actuel.
 
-### Étape 2 : identifier et convertir les champs
+## Étape 2 : identifier et convertir les champs
 
 Identifiez et convertissez des champs spécifiques dans le corps du document. Par exemple, pour convertir les champs PAGE en texte :
 
@@ -57,7 +54,7 @@ doc.FirstSection.Body.Range.Fields
 
 Cet extrait de code utilise LINQ pour rechercher tous les champs PAGE dans le corps du document, puis les dissocie, les convertissant ainsi en texte statique.
 
-### Étape 3 : Enregistrez le document
+## Étape 3 : Enregistrez le document
 
 Enregistrez le document modifié après avoir converti les champs :
 
@@ -71,7 +68,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 Maîtriser l'art de la manipulation des champs de documents à l'aide d'Aspose.Words for .NET permet aux développeurs d'automatiser efficacement les flux de travail des documents. Qu'il s'agisse de convertir des champs en texte brut ou de gérer des types de champs plus complexes, Aspose.Words simplifie ces tâches grâce à son API intuitive et à son ensemble de fonctionnalités robustes, garantissant une intégration transparente dans les applications .NET.
 
-## Foire aux questions (FAQ)
+## FAQ
 
 ### Que sont les champs de document dans Aspose.Words pour .NET ?
 Les champs de document dans Aspose.Words sont des espaces réservés qui peuvent stocker et afficher des données dynamiques, telles que des dates, des numéros de page et des calculs.

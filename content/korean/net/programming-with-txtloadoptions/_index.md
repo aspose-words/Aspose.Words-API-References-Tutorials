@@ -16,6 +16,6 @@ Aspose.Words를 사용하면 Word 문서 처리 작업을 효과적으로 자동
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [공백으로 번호 매기기 감지](./detect-numbering-with-whitespaces/) | .NET용 Aspose.Words에서 공백이 포함된 목록 번호를 감지하는 방법을 알아보세요. 문서 구조를 쉽게 개선하세요. |
-| [핸들 공간 옵션](./handle-spaces-options/) | .NET용 Aspose.Words를 사용하여 TXT 문서의 공간을 관리하는 방법을 알아보세요. 불필요한 공백을 제거하고 가독성을 높입니다. |
-| [문서 텍스트 방향](./document-text-direction/) | .NET용 Aspose.Words를 사용하여 문서에서 텍스트 방향을 지정하는 방법을 알아보세요. 오른쪽에서 왼쪽으로 쓰는 언어에 대한 표시를 개선합니다. 지금 전체 튜토리얼에 액세스하세요. |
+| [공백으로 번호 매기기 감지](./detect-numbering-with-whitespaces/) | .NET용 Aspose.Words를 사용하여 일반 텍스트 문서에서 공백이 포함된 번호 매기기를 감지하고 목록이 올바르게 인식되는지 확인하는 방법을 알아보세요. |
+| [핸들 공간 옵션](./handle-spaces-options/) | .NET용 Aspose.Words를 사용하여 텍스트 문서의 선행 및 후행 공백을 처리하는 방법을 알아보세요. 이 튜토리얼에서는 텍스트 서식을 정리하는 방법을 제공합니다. |
+| [문서 텍스트 방향](./document-text-direction/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word에서 문서 텍스트 방향을 설정하는 방법을 알아보세요. 오른쪽에서 왼쪽으로 쓰는 언어를 처리하는 데 적합합니다. |

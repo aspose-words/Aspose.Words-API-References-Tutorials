@@ -11,11 +11,11 @@ url: /ko/net/apply-license/apply-metered-license/
 
 Aspose.Words for .NET은 .NET 애플리케이션에서 Word 문서 작업을 할 수 있게 해주는 강력한 라이브러리입니다. 뛰어난 기능 중 하나는 계량 라이센스를 적용하는 기능입니다. 이 라이선스 모델은 종량제 방식을 선호하는 기업과 개발자에게 적합합니다. 종량제 라이선스를 사용하면 사용한 만큼만 비용을 지불하므로 유연하고 비용 효과적인 솔루션이 됩니다. 이 가이드에서는 Aspose.Words for .NET 프로젝트에 계량 라이선스를 적용하는 과정을 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
-1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 라이브러리를 다운로드하세요.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 라이브러리를 다운로드하세요.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 2. 유효한 계량 라이센스 키: 계량 라이센스를 활성화하려면 키가 필요합니다. 이러한 내용은 다음에서 얻을 수 있습니다.[Aspose 구매 페이지](https://purchase.aspose.com/buy).
 3. 개발 환경: .NET 개발 환경이 설정되어 있는지 확인하세요. Visual Studio가 널리 사용되지만 .NET을 지원하는 모든 IDE를 사용할 수 있습니다.
 

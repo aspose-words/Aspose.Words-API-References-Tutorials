@@ -13,7 +13,7 @@ Ezekben az oktatóanyagokban az Aspose.Words for .NET használatával megismerhe
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Megjegyzések hozzáadása](./add-comments/) | Ismerje meg, hogyan adhat megjegyzéseket Word-dokumentumokhoz az Aspose.Words for .NET használatával. |
-| [Horgony megjegyzés](./anchor-comment/) | Ismerje meg, hogyan rögzítheti a megjegyzésekre adott válaszokat Word-dokumentumokban az Aspose.Words for .NET használatával. |
-| [Hozzáadás: Hozzászólás eltávolítása Válasz](./add-remove-comment-reply/) | Ismerje meg, hogyan adhat hozzá és távolíthat el megjegyzésekre adott válaszokat Word-dokumentumokban az Aspose.Words for .NET használatával. |
-| [Megjegyzés megoldva és válaszok](./comment-resolved-and-replies/) | Ismerje meg, hogyan oldhatja fel a megjegyzéseket és a rájuk adott válaszokat a Word-dokumentumokban az Aspose.Words for .NET használatával. |
+| [Megjegyzések hozzáadása](./add-comments/) | Útmutatónkból megtudhatja, hogyan írhat megjegyzéseket Word-dokumentumaihoz az Aspose.Words for .NET használatával. Fokozza könnyedén a dokumentumok együttműködési folyamatát. |
+| [Horgony megjegyzés](./anchor-comment/) | Ismerje meg, hogyan adhat hozzá horgonyzó megjegyzéseket a Word-dokumentumokhoz az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a hatékony dokumentum-együttműködés érdekében. |
+| [Hozzáadás: Megjegyzés eltávolítása Válasz](./add-remove-comment-reply/) | Ismerje meg, hogyan adhat hozzá és távolíthat el megjegyzésekre adott válaszokat Word-dokumentumokban az Aspose.Words for .NET használatával. Fokozza a dokumentumokkal való együttműködést ezzel a lépésenkénti útmutatóval. |
+| [Megjegyzés megoldva és válaszok](./comment-resolved-and-replies/) | Automatizálja a Word-dokumentumok megjegyzéseinek feloldását és megválaszolását az Aspose.Words for .NET segítségével. Lépésről lépésre útmutató mellékelve. |

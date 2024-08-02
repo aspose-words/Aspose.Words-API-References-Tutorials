@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /fr/net/working-with-fields/insert-merge-field-using-dom/
 ---
+## Introduction
 
 Si vous travaillez avec le traitement de documents dans .NET, vous avez probablement rencontré Aspose.Words. Cette puissante bibliothèque offre un large éventail de fonctionnalités pour manipuler des documents Word par programmation. Dans ce didacticiel, nous nous concentrerons sur une fonctionnalité spécifique : l'insertion d'un champ de fusion à l'aide du modèle objet de document (DOM) dans Aspose.Words pour .NET. Ce guide vous guidera à travers chaque étape, de la configuration de votre environnement à l'insertion et à la mise à jour d'un champ de fusion dans un document Word.
 
@@ -14,26 +15,26 @@ Si vous travaillez avec le traitement de documents dans .NET, vous avez probable
 
 Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin pour suivre ce didacticiel.
 
-1. **Basic Knowledge of C#:** Vous devez être à l'aise avec la programmation C#.
-2. **Visual Studio Installed:** Assurez-vous que Visual Studio ou tout autre IDE C# est installé sur votre ordinateur.
-3. **Aspose.Words for .NET:** Téléchargez et installez la dernière version d'Aspose.Words pour .NET à partir du[Sorties](https://releases.aspose.com/words/net/).
-4. **Valid License:** Si vous n'avez pas de permis, vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
+1. Connaissance de base de C# : Vous devez être à l'aise avec la programmation C#.
+2. Visual Studio installé : assurez-vous que Visual Studio ou tout autre IDE C# est installé sur votre ordinateur.
+3.  Aspose.Words for .NET : téléchargez et installez la dernière version d'Aspose.Words for .NET à partir du[Sorties](https://releases.aspose.com/words/net/).
+4.  Licence valide : si vous n'avez pas de licence, vous pouvez obtenir une[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
 
 ## Étape 1 : Configurez votre projet
 
 Tout d’abord, configurons un nouveau projet dans Visual Studio.
 
-1. **Open Visual Studio.**
-2. **Create a New Project:** Accédez à Fichier > Nouveau > Projet. Sélectionnez une application console C#.
-3. **Name Your Project:** Donnez à votre projet un nom significatif et cliquez sur Créer.
+1. Ouvrez Visual Studio.
+2. Créer un nouveau projet : accédez à Fichier > Nouveau > Projet. Sélectionnez une application console C#.
+3. Nommez votre projet : donnez un nom significatif à votre projet et cliquez sur Créer.
 
 ## Étape 2 : Installer Aspose.Words
 
 Pour utiliser Aspose.Words, vous devez l'ajouter à votre projet. Cela peut être fait via NuGet Package Manager.
 
-1. **Open NuGet Package Manager:** Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions, puis sélectionnez Gérer les packages NuGet.
-2. **Search for Aspose.Words:** Dans le gestionnaire de packages NuGet, recherchez « Aspose.Words ».
-3. **Install the Package:** Cliquez sur Installer pour ajouter Aspose.Words à votre projet.
+1. Ouvrez le gestionnaire de packages NuGet : cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions, puis sélectionnez Gérer les packages NuGet.
+2. Recherchez Aspose.Words : dans le gestionnaire de packages NuGet, recherchez « Aspose.Words ».
+3. Installez le package : cliquez sur Installer pour ajouter Aspose.Words à votre projet.
 
 ## Étape 3 : Importer des espaces de noms
 
@@ -106,17 +107,17 @@ En suivant ces étapes, vous pouvez facilement insérer et configurer des champs
 
 ## FAQ
 
-### 1. Qu'est-ce qu'un champ de fusion ?
+###  Qu'est-ce qu'un champ de fusion ?
 Un champ de fusion est un espace réservé dans un document qui peut être remplacé dynamiquement par des données provenant d'une source de données, telle qu'une base de données ou un fichier CSV.
 
-### 2. Puis-je utiliser Aspose.Words gratuitement ?
+###  Puis-je utiliser Aspose.Words gratuitement ?
  Aspose.Words propose un essai gratuit que vous pouvez télécharger[ici](https://releases.aspose.com/). Pour une utilisation à long terme, vous devrez acheter une licence.
 
-### 3. Comment puis-je obtenir une licence temporaire pour Aspose.Words ?
+###  Comment puis-je obtenir une licence temporaire pour Aspose.Words ?
  Vous pouvez obtenir une licence temporaire sur le site Aspose[ici](https://purchase.aspose.com/temporary-license/).
 
-### 4. Quelles versions de .NET sont prises en charge par Aspose.Words ?
+### Quelles versions de .NET sont prises en charge par Aspose.Words ?
 Aspose.Words prend en charge plusieurs versions de .NET, notamment .NET Framework, .NET Core et .NET Standard.
 
-### 5. Où puis-je trouver la documentation de l'API pour Aspose.Words ?
+###  Où puis-je trouver la documentation de l'API pour Aspose.Words ?
  La documentation de l'API est disponible[ici](https://reference.aspose.com/words/net/).

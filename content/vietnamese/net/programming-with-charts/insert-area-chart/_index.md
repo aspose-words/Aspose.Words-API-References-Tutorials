@@ -109,7 +109,7 @@ Có, Aspose.Words for .NET hỗ trợ các ngôn ngữ .NET khác như VB.NET.
 Tuyệt đối! Aspose.Words for .NET cung cấp các tùy chọn mở rộng để tùy chỉnh giao diện biểu đồ của bạn.
 
 ### Tôi có thể thêm nhiều biểu đồ vào một tài liệu Word không?
-Có, bạn có thể chèn bao nhiêu biểu đồ tùy ý vào một tài liệu Word.
+Có, bạn có thể chèn bao nhiêu biểu đồ tùy thích vào một tài liệu Word.
 
 ### Aspose.Words for .NET có hỗ trợ các loại biểu đồ khác không?
 Có, Aspose.Words for .NET hỗ trợ nhiều loại biểu đồ khác nhau bao gồm thanh, đường, hình tròn, v.v.

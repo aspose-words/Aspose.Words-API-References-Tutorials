@@ -11,7 +11,7 @@ url: /ko/net/add-content-using-documentbuilder/move-to-paragraph/
 
 안녕하세요, 기술 매니아 여러분! 프로그래밍 방식으로 Word 문서의 특정 단락으로 이동해야 하는 경우가 있습니까? 문서 생성을 자동화하거나 단순히 작업 흐름을 간소화하려는 경우 Aspose.Words for .NET이 도움을 드립니다. 이 가이드에서는 Aspose.Words for .NET을 사용하여 Word 문서의 특정 단락으로 이동하는 과정을 안내합니다. 간단하고 따라하기 쉬운 단계로 나누어 보겠습니다. 그럼 바로 들어가 보겠습니다!
 
-## 전제조건
+## 전제 조건
 
 핵심적인 내용으로 넘어가기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
@@ -88,7 +88,7 @@ builder.Writeln("This is the 3rd paragraph.");
  전적으로! 텍스트, 이미지, 표 등을 삽입할 수 있습니다.`DocumentBuilder` 수업.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ### 더 자세한 문서는 어디서 찾을 수 있나요?
  자세한 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/words/net/).

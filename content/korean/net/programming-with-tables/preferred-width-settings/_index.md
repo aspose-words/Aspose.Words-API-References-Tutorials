@@ -11,7 +11,7 @@ url: /ko/net/programming-with-tables/preferred-width-settings/
 
 표는 Word 문서의 정보를 구성하고 표시하는 강력한 방법입니다. .NET용 Aspose.Words에서 테이블 작업을 할 때 문서 레이아웃에 완벽하게 맞도록 테이블 셀의 너비를 설정하는 몇 가지 옵션이 있습니다. 이 가이드는 절대, 상대 및 자동 크기 조정 옵션에 중점을 두고 Aspose.Words for .NET을 사용하여 기본 너비 설정으로 테이블을 만드는 과정을 안내합니다. 
 
-## 전제조건
+## 전제 조건
 
 튜토리얼을 시작하기 전에 다음 사항을 확인하세요.
 

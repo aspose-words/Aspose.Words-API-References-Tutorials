@@ -83,7 +83,7 @@ Và bạn có nó rồi đấy! Bạn vừa tự động hóa quá trình cập 
 Trường bẩn là các trường đã được đánh dấu để cập nhật vì kết quả hiển thị của chúng đã lỗi thời.
 
 ### Tại sao việc cập nhật các trường bẩn lại quan trọng?
-Cập nhật các trường bẩn đảm bảo rằng thông tin hiển thị trong tài liệu là cập nhật và chính xác, điều này rất quan trọng đối với các tài liệu chuyên nghiệp.
+Việc cập nhật các trường dirty đảm bảo rằng thông tin hiển thị trong tài liệu là cập nhật và chính xác, điều này rất quan trọng đối với các tài liệu chuyên nghiệp.
 
 ### Tôi có thể cập nhật các trường cụ thể thay vì tất cả các trường bẩn không?
 Có, Aspose.Words cung cấp tính linh hoạt để cập nhật các trường cụ thể, nhưng việc cập nhật tất cả các trường bẩn thường đơn giản hơn và ít xảy ra lỗi hơn.

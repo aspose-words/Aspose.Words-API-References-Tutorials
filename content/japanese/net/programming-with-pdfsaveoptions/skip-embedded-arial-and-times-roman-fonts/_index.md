@@ -71,7 +71,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
 ## よくある質問
 
-### Arial フォントと Times Roman フォントの埋め込みをスキップする必要があるのはなぜですか?
+### Arial および Times Roman フォントの埋め込みをスキップする必要があるのはなぜですか?
 ほとんどのシステムではこれらのフォントが既にインストールされているため、これらの一般的なフォントをスキップすると PDF ファイルのサイズが小さくなる可能性があります。
 
 ### これは PDF の外観に影響しますか?

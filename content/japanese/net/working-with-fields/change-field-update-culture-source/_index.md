@@ -2,20 +2,38 @@
 title: フィールドの変更 カルチャーソースの更新
 linktitle: フィールドの変更 カルチャーソースの更新
 second_title: Aspose.Words ドキュメント処理 API
-description: フィールド更新カルチャ ソースの変更、Aspose.Words for .NET でカルチャ ソースを変更するためのステップ バイ ステップ ガイド。
+description: このガイドでは、Aspose.Words for .NET でフィールド更新カルチャ ソースを変更する方法を学習します。さまざまなカルチャに基づいて日付の書式を簡単に制御します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/change-field-update-culture-source/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のフィールド更新カルチャ ソースを変更する手順を説明します。カルチャ ソースを変更することで、フィールド更新および差し込み印刷操作中に日付の書式を制御できます。これを実現するために必要な C# ソース コードと手順を説明します。
+このチュートリアルでは、Aspose.Words for .NET の世界を詳しく見ていき、フィールド更新カルチャ ソースを変更する方法を探ります。日付フィールドを含む Word 文書を扱っていて、さまざまなカルチャに基づいてこれらの日付の書式設定を制御する必要がある場合は、このガイドが役立ちます。各概念を理解し、プロジェクトに効果的に適用できるように、プロセスを段階的に説明しましょう。
 
 ## 前提条件
-始める前に、次の前提条件を満たしていることを確認してください。
-- Aspose.Words for .NET ライブラリがシステムにインストールされています。
 
-## ステップ1: ドキュメントとDocumentBuilderを作成する
-まず、Document クラスのインスタンスと DocumentBuilder オブジェクトを作成します。
+コードに進む前に、次のものを用意してください。
+
+-  Aspose.Words for .NET: ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: .NET 互換の IDE (Visual Studio など)。
+- C# の基本知識: このチュートリアルでは、C# プログラミングの基礎を理解していることを前提としています。
+
+## 名前空間のインポート
+
+まず、プロジェクトに必要な名前空間をインポートしましょう。これにより、Aspose.Words によって提供されるすべての必要なクラスとメソッドにアクセスできるようになります。
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+ここで、Aspose.Words for .NET でフィールド更新カルチャ ソースを変更する方法を理解できるように、例を複数の手順に分解してみましょう。
+
+## ステップ1: ドキュメントを初期化する
+
+最初のステップは、`Document`クラスと`DocumentBuilder`これにより、Word 文書の作成と操作の基盤が確立されます。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,80 +41,58 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ2: 特定のロケールのコンテンツを挿入する
-次に、ロケールをドイツ語に設定し、日付形式のフィールドを挿入します。
+## ステップ2: 特定のロケールのフィールドを挿入する
+
+次に、ドキュメントにフィールドを挿入する必要があります。この例では、2 つの日付フィールドを挿入します。フォントのロケールをドイツ語 (LocaleId = 1031) に設定して、カルチャが日付形式にどのように影響するかを示します。
 
 ```csharp
-builder.Font.LocaleId = 1031;
+builder.Font.LocaleId = 1031; //ドイツ人
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-上記のコードでは、フォント ロケールをドイツ語 (ロケール ID 1031) に設定し、特定の日付形式を持つ 2 つのフィールドを挿入します。
+## ステップ3: フィールド更新カルチャソースを設定する
 
-## ステップ 3: フィールドの変更、カルチャー ソースの更新
-フィールド更新カルチャ ソースを変更するには、FieldOptions クラスを使用します。
+フィールドを更新するときに使用する文化を制御するには、`FieldUpdateCultureSource`の財産`FieldOptions`クラス。このプロパティは、カルチャがフィールド コードから取得されるか、ドキュメントから取得されるかを決定します。
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
-
-この例では、フィールドの更新時に使用されるカルチャを、フィールドで使用されるカルチャから選択するように設定します。
 
 ## ステップ4: 差し込み印刷を実行する
-差し込み印刷操作を実行し、「Date2」フィールドに日付の値を指定します。
+
+次に、実際のデータをフィールドに入力するために差し込み印刷を実行する必要があります。この例では、2番目の日付フィールドを設定します（`Date2`）から2011年1月1日まで。
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
-
-このコード スニペットでは、差し込み印刷操作を実行し、「Date2」フィールドに DateTime 値を指定します。
 
 ## ステップ5: ドキュメントを保存する
-Document クラスの Save メソッドを使用して、変更したドキュメントをファイルに保存します。
+
+最後に、ドキュメントを指定されたディレクトリに保存します。この手順で、フィールド更新カルチャ ソースを変更するプロセスが完了します。
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
-```
-
-### Aspose.Words for .NET を使用してフィールド更新カルチャ ソースを変更するためのサンプル ソース コード
-以下は、Aspose.Words for .NET を使用して Word 文書内のフィールド更新カルチャ ソースを変更するための完全なソース コードです。
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Font.LocaleId = 1031;
-builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
-builder.Write(" - ");
-builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
-
-doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
-
-doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
-
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## 結論
-おめでとうございます! Aspose.Words for .NET を使用して Word 文書のフィールド更新カルチャ ソースを変更する方法を学習しました。ステップ バイ ステップ ガイドに従い、提供されているソース コードを利用することで、フィールド更新および差し込み印刷操作中に日付の書式設定に使用されるカルチャを制御できるようになりました。正確で一貫性のある日付を確保するために、要件に応じてカルチャ ソースをカスタマイズします。
 
-### よくある質問
+これで完了です。Aspose.Words for .NET でフィールド更新カルチャ ソースを正常に変更できました。次の手順に従うことで、Word ドキュメントに日付やその他のフィールド値が指定されたカルチャ設定に従って表示されるようになります。これは、国際的なユーザー向けのドキュメントを生成する場合に特に役立ちます。
 
-#### Q: Aspose.Words for .NET でフィールド更新カルチャ ソースを変更するにはどうすればよいですか?
+## よくある質問
 
- A: Aspose.Words for .NETでフィールド更新カルチャソースを変更するには、`Document.FieldOptions.CultureSource`プロパティを設定し、その値を`FieldCultureSource.FieldCode`または`FieldCultureSource.CurrentThread`たとえば、`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode`フィールド コードで定義されたカルチャを使用します。
+### 設定の目的は何ですか？`LocaleId`?
+の`LocaleId`テキストのカルチャ設定を指定します。これは、日付やその他のロケールに依存するデータの書式設定に影響します。
 
-#### Q: Aspose.Words for .NET でフィールドを更新するために特定のカルチャを指定するにはどうすればよいですか?
+### ドイツ語以外のロケールを使用できますか?
+はい、設定できます`LocaleId`有効なロケール識別子に置き換えます。たとえば、英語 (米国) の場合は 1033 です。
 
- A: Aspose.Words for .NETでフィールドを更新するための特定のカルチャを指定するには、`Document.FieldOptions.FieldUpdateCultureInfo`プロパティを設定し、`CultureInfo`目的の文化に対応するオブジェクト。たとえば、`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")`フランス語 (フランス) の文化を指定します。
+### 設定しないとどうなるか`FieldUpdateCultureSource` property?
+このプロパティが設定されていない場合、フィールドを更新するときにドキュメントのデフォルトのカルチャ設定が使用されます。
 
-#### Q: Aspose.Words for .NET で自動フィールド更新を無効にすることは可能ですか?
+### フィールド コードではなく、ドキュメントのカルチャに基づいてフィールドを更新することは可能ですか?
+はい、設定できます`FieldUpdateCultureSource`に`FieldUpdateCultureSource.Document`ドキュメントのカルチャ設定を使用します。
 
- A: はい、Aspose.Words for .NETではフィールドの自動更新を無効にすることができます。`Document.FieldOptions.UpdateFields`プロパティを設定し、`false`フィールドの自動更新を防止します。これにより、必要に応じてフィールドの更新を手動で制御できます。
-
-#### Q: Aspose.Words for .NET でドキュメント フィールドを手動で更新するにはどうすればよいですか?
-
- A: Aspose.Words for .NETでドキュメント内のフィールドを手動で更新するには、`Field.Update`各フィールドごとにメソッドを個別に使用できます。たとえば、`field.Update()`特定のフィールドを更新します。
+### 日付を別のパターンでフォーマットするにはどうすればよいですか?
+日付のフォーマットパターンは、`InsertField`方法を変更することにより`\\@`スイッチ値。

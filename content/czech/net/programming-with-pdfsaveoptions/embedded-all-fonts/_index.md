@@ -35,7 +35,7 @@ Nyní si tento proces rozdělíme do snadno pochopitelných kroků. Každý krok
 
 ## Krok 1: Nastavte adresář dokumentů
 
-Než se ponoříte do kódu, musíte nastavit adresář dokumentů. Zde je váš ukázkový dokument Word (`Rendering.docx`) a výstupní PDF zůstane.
+Než se ponoříte do kódu, musíte nastavit adresář dokumentů. Zde je váš vzorový dokument aplikace Word (`Rendering.docx`) a bude uloženo výstupní PDF.
 
 ```csharp
 // Cesta k adresáři dokumentů.

@@ -92,7 +92,7 @@ Dalam tutorial ini, kita menjelajahi cara menggunakan modul Pembuat Konten Aspos
  Anda dapat menginstalnya menggunakan perintah:`pip install aspose-words`.
 
 ### Jenis hentian bagian apa yang tersedia?
-Aspose.Words untuk Python menyediakan berbagai jenis hentian bagian, seperti hentian halaman baru, terus menerus, dan hentian halaman genap.
+Aspose.Words untuk Python menyediakan berbagai tipe hentian bagian, seperti hentian halaman baru, terus menerus, dan hentian halaman genap.
 
 ### Bisakah saya menyesuaikan format setiap bagian?
 Ya, Anda dapat menerapkan pemformatan, gaya, dan font yang berbeda ke setiap bagian menggunakan modul Pembuat Konten.

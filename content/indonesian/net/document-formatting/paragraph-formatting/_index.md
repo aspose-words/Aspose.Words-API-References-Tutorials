@@ -16,7 +16,7 @@ Pernahkah Anda terjebak dalam pertarungan tanpa akhir dengan format dokumen Word
 Sebelum kita memulai petualangan pemformatan ini, mari siapkan perangkat kita. Inilah yang Anda perlukan:
 
 1.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/).
-2. Visual Studio: Editor kode terpercaya Anda.
+2. Visual Studio: Editor kode tepercaya Anda.
 3. .NET Framework: Pastikan sudah diinstal.
 4. Pengetahuan Dasar C#: Jangan khawatir, Anda tidak perlu menjadi seorang penyihir, cukup beberapa pemahaman dasar saja sudah cukup.
 

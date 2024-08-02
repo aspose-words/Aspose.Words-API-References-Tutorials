@@ -2,118 +2,111 @@
 title: Získejte názvy polí hromadné korespondence
 linktitle: Získejte názvy polí hromadné korespondence
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak získat názvy polí hromadné korespondence v dokumentech aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak extrahovat názvy polí hromadné korespondence z dokumentu aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/get-mail-merge-field-names/
 ---
+## Úvod
 
-Zde je podrobný průvodce vysvětlením níže uvedeného zdrojového kódu C#, který používá funkci "Get Merge Field Names" Aspose.Words for .NET. Ujistěte se, že pečlivě dodržujete každý krok, abyste dosáhli požadovaných výsledků.
+Vítejte v této příručce o extrahování názvů polí hromadné korespondence z dokumentu aplikace Word pomocí Aspose.Words for .NET. Pole hromadné korespondence jsou nezbytná, ať už generujete personalizované dopisy, vytváříte vlastní sestavy nebo jednoduše automatizujete pracovní toky dokumentů. Fungují jako zástupné symboly ve vašem dokumentu, které jsou během procesu sloučení nahrazeny skutečnými daty. Pokud pracujete s Aspose.Words pro .NET, máte štěstí – tato výkonná knihovna neuvěřitelně usnadňuje interakci s těmito poli. V tomto kurzu projdeme jednoduchým, ale účinným způsobem, jak načíst názvy polí hromadné korespondence v dokumentu, což vám umožní lépe porozumět a spravovat operace hromadné korespondence.
 
-## Krok 1: Nastavení adresáře dokumentů
+## Předpoklady
 
-V poskytnutém kódu musíte zadat adresář vašich dokumentů. Nahraďte hodnotu „VÁŠ ADRESÁŘ DOKUMENTŮ“ příslušnou cestou k adresáři vašich dokumentů.
+Než se pustíte do výukového programu, ujistěte se, že máte následující:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete si jej stáhnout z[Aspose webové stránky](https://releases.aspose.com/words/net/).
 
-## Krok 2: Načtení dokumentu
+2. Vývojové prostředí: Měli byste mít nastavené vývojové prostředí pro .NET, jako je Visual Studio.
 
-Prvním krokem je načtení dokumentu, kde chcete získat názvy slučovacích polí.
+3. Dokument aplikace Word s poli hromadné korespondence: Připravte si dokument aplikace Word, který obsahuje pole hromadné korespondence. Toto bude dokument, se kterým budete pracovat při extrahování názvů polí.
 
-```csharp
-Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
-```
+4. Základní znalost C#: Znalost programování v C# a .NET bude užitečné sledovat spolu s příklady.
 
-Nezapomeňte nahradit "VÁŠ SOUBOR DOKUMENTU" názvem svého vlastního souboru.
+## Importovat jmenné prostory
 
-## Krok 3: Získejte názvy slučovacích polí
-
- Používáme`GetFieldNames()` metoda k získání pole obsahujícího názvy slučovacích polí přítomných v dokumentu.
+Chcete-li začít, musíte do kódu C# importovat potřebné jmenné prostory. To vám umožní přístup k funkcím Aspose.Words. Zde je návod, jak je zahrnout:
 
 ```csharp
-string[] fieldNames = doc.MailMerge.GetFieldNames();
+using Aspose.Words;
+using System;
 ```
 
- The`fieldNames` proměnná nyní obsahuje názvy slučovacích polí.
+ The`Aspose.Words` jmenný prostor vám poskytuje přístup ke všem třídám a metodám potřebným k manipulaci s dokumenty Wordu`System` se používá pro základní funkce, jako je výstup konzoly.
 
-### Příklad zdrojového kódu pro získání názvů slučovacích polí s Aspose.Words pro .NET
+Pojďme si rozebrat proces extrahování názvů polí hromadné korespondence do jasného průvodce krok za krokem.
+
+## Krok 1: Definujte adresář dokumentů
+
+Nadpis: Zadejte cestu k vašim dokumentům
+
+Nejprve musíte nastavit cestu k adresáři, kde se nachází váš dokument aplikace Word. To je zásadní, protože to říká vaší aplikaci, kde má soubor najít. Postup je následující:
 
 ```csharp
 // Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Nahradit`"YOUR DOCUMENTS DIRECTORY"`se skutečnou cestou, kde se váš dokument nachází. Tohle by mohlo být něco jako`"C:\\Documents\\MyDoc.docx"`.
+
+## Krok 2: Vložte dokument
+
+Nadpis: Načtěte dokument aplikace Word
+
+ Dále načtete dokument do instance souboru`Document` třídy poskytuje Aspose.Words. To vám umožní programově pracovat s dokumentem.
+
+```csharp
 // Vložte dokument.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
+```
 
+ Nahradit`"YOUR DOCUMENT FILE"` s názvem vašeho souboru dokumentu Word, jako je např`"example.docx"`. Tento řádek kódu načte dokument z určeného adresáře a připraví jej pro další manipulaci.
+
+## Krok 3: Načtěte názvy polí hromadné korespondence
+
+Nadpis: Výpis názvů polí hromadné korespondence
+
+ Nyní jste připraveni získat názvy polí hromadné korespondence obsažených v dokumentu. To je místo, kde Aspose.Words září – jeho`MailMerge` class poskytuje snadný způsob, jak získat názvy polí.
+
+```csharp
 // Získejte názvy slučovacích polí.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
+```
 
+ The`GetFieldNames()` metoda vrací pole řetězců, z nichž každý představuje název pole hromadné korespondence nalezený v dokumentu. Toto jsou zástupné symboly, které uvidíte v dokumentu aplikace Word.
+
+## Krok 4: Zobrazte počet slučovacích polí
+
+Nadpis: Zadejte počet polí
+
+Chcete-li potvrdit, že jste úspěšně načetli názvy polí, můžete zobrazit počet polí pomocí konzoly.
+
+```csharp
 // Zobrazte počet slučovacích polí.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- V tomto příkladu jsme načetli dokument a získali názvy slučovacích polí pomocí`GetFieldNames()` a zobrazil počet slučovacích polí přítomných v dokumentu.
+Tento řádek kódu vytiskne celkový počet polí hromadné korespondence v dokumentu, což vám pomůže ověřit, že proces extrakce fungoval správně.
 
-Tímto končí náš průvodce používáním funkce „Získat názvy polí sloučení“ s Aspose.Words pro .NET.
+## Závěr
 
-### Nejčastější dotazy
+Gratulujeme! Nyní jste se naučili, jak extrahovat názvy polí hromadné korespondence z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato technika je cenným nástrojem pro správu a automatizaci pracovních toků dokumentů, což usnadňuje práci s personalizovaným obsahem. Pomocí těchto kroků můžete efektivně identifikovat pole hromadné korespondence v dokumentech a pracovat s nimi.
 
-#### Q1: Co je hromadná korespondence v Aspose.Words?
+ Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte prozkoumat[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se připojte k[Aspose komunita](https://forum.aspose.com/c/words/8) pro podporu. Šťastné kódování!
 
-Hromadná korespondence v Aspose.Words je proces slučování dat z externího zdroje (např. tabulky Excel nebo databáze) se šablonou dokumentu aplikace Word pro vytváření personalizovaných dokumentů. To usnadňuje automatizované generování dopisů, zpráv a dalších podobných dokumentů.
+## FAQ
 
-#### Q2: Jak získám seznam polí hromadné korespondence dostupných v dokumentu aplikace Word?
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat a spravovat dokumenty Wordu programově v aplikacích .NET.
 
-Chcete-li získat seznam polí hromadné korespondence dostupných v dokumentu aplikace Word, postupujte takto:
+### Jak získám bezplatnou zkušební verzi Aspose.Words?
+ Můžete získat bezplatnou zkušební verzi návštěvou[Aspose stránku vydání](https://releases.aspose.com/).
 
-1. Importujte třídy Document a MailMergeFieldNames z oboru názvů Aspose.Words.
-2. Vytvořte instanci dokumentu načtením dokumentu aplikace Word.
-3. Pomocí metody GetMailMergeFieldNames objektu Document získáte seznam dostupných polí hromadné korespondence.
+### Mohu používat Aspose.Words bez zakoupení licence?
+ Ano, můžete jej používat během zkušebního období, ale pro trvalé používání si budete muset zakoupit licenci od[Nákupní stránka Aspose](https://purchase.aspose.com/buy).
 
-Zde je ukázkový kód pro ilustraci procesu:
+### Co mám dělat, když narazím na problémy s Aspose.Words?
+ Pro podporu můžete navštívit[Aspose fórum](https://forum.aspose.com/c/words/8) kde můžete klást otázky a získat pomoc od komunity.
 
-```csharp
-// Importujte potřebné jmenné prostory
-using Aspose.Words;
-using Aspose.Words.MailMerging;
-
-// Načtěte existující dokument
-Document document = new Document("FilePath");
-
-// Získejte seznam polí hromadné korespondence
-MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
-
-// Procházejte dostupnými poli hromadné korespondence
-foreach (string fieldName in fieldNames)
-{
-     // Udělejte něco s názvem pole
-     Console.WriteLine(fieldName);
-}
-```
-### FAQ
-
-#### Otázka: Co je hromadná korespondence v Aspose.Words?
-
-Odpověď: Hromadná korespondence v Aspose.Words je proces slučování dat z externího zdroje (např. tabulky Excel nebo databáze) se šablonou dokumentu aplikace Word pro vytváření personalizovaných dokumentů. To usnadňuje automatizované generování dopisů, zpráv a dalších podobných dokumentů.
-
-#### Otázka: Jak získám seznam polí hromadné korespondence dostupných v dokumentu aplikace Word?
-
-Odpověď: Chcete-li získat seznam polí hromadné korespondence dostupných v dokumentu aplikace Word, postupujte takto:
-
-1. Importujte třídy Document a MailMergeFieldNames z oboru názvů Aspose.Words.
-2. Vytvořte instanci dokumentu načtením dokumentu aplikace Word.
-3. Pomocí metody GetMailMergeFieldNames objektu Document získáte seznam dostupných polí hromadné korespondence.
-
-#### Otázka: Mohu získat pole hromadné korespondence z externího zdroje dat, jako je například tabulka aplikace Excel?
-
-Odpověď: Ano, pole hromadné korespondence můžete získat z externího zdroje dat, jako je například tabulka aplikace Excel. K tomu můžete použít funkce datové vazby Aspose.Words k navázání spojení se zdrojem dat a získání názvů dostupných polí.
-
-#### Otázka: Je možné filtrovat pole hromadné korespondence na základě určitých kritérií?
-
-Odpověď: Ano, je možné filtrovat pole hromadné korespondence na základě určitých kritérií. K filtrování polí hromadné korespondence můžete použít regulární výrazy nebo specifické podmínky a získat pouze ta, která splňují vaše konkrétní kritéria.
-
-#### Otázka: Jak mohu manipulovat s poli hromadné korespondence v Aspose.Words?
-
-Odpověď: Pro manipulaci s poli hromadné korespondence v Aspose.Words můžete použít metody a vlastnosti poskytované objekty Document a MailMergeField. Můžete přidávat, odebírat nebo aktualizovat pole hromadné korespondence a také načítat a upravovat hodnoty spojené s poli.
+### Jak mohu získat dočasnou licenci pro Aspose.Words?
+ O dočasnou licenci můžete požádat prostřednictvím[Dočasná licenční stránka Aspose](https://purchase.aspose.com/temporary-license/).

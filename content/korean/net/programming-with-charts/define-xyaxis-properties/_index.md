@@ -11,7 +11,7 @@ url: /ko/net/programming-with-charts/define-xyaxis-properties/
 
 차트는 데이터를 시각화하는 강력한 도구입니다. 동적 차트가 포함된 전문적인 문서를 작성해야 할 때 Aspose.Words for .NET은 매우 귀중한 라이브러리입니다. 이 문서에서는 Aspose.Words for .NET을 사용하여 차트에서 XY 축 속성을 정의하는 과정을 안내하고 명확성과 이해 용이성을 보장하기 위해 각 단계를 세분화합니다.
 
-## 전제조건
+## 전제 조건
 
 코딩을 시작하기 전에 갖춰야 할 몇 가지 전제 조건이 있습니다.
 

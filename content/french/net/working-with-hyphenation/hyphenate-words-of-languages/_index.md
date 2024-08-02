@@ -71,11 +71,11 @@ N'hésitez pas à utiliser ce code dans vos propres projets et à le modifier en
 
 #### Q : Comment puis-je syllaber un mot dans une langue spécifique avec Aspose.Words ?
 
- R : Pour syllabiser un mot dans une langue spécifique avec Aspose.Words, vous pouvez utiliser le`Hyphenation` la classe et le`Hyphenate()` méthode. Créez une instance du`Hyphenation` class en précisant la langue souhaitée, puis appelez la`Hyphenate()` méthode passant le mot à syllaber comme argument. Cela vous donnera les syllabes du mot dans la langue spécifiée.
+ R : Pour syllabiser un mot dans une langue spécifique avec Aspose.Words, vous pouvez utiliser le`Hyphenation` la classe et le`Hyphenate()` méthode. Créez une instance du`Hyphenation` classe spécifiant la langue souhaitée, puis appelez la`Hyphenate()` méthode passant le mot à syllaber comme argument. Cela vous donnera les syllabes du mot dans la langue spécifiée.
 
 #### Q : Quels codes de langue dois-je utiliser pour spécifier la langue de syllabation dans Aspose.Words ?
 
-: Pour spécifier la langue de syllabisation dans Aspose.Words, vous devez utiliser les codes de langue appropriés. Par exemple, vous pouvez utiliser « en » pour l'anglais, « fr » pour le français, « es » pour l'espagnol, « de » pour l'allemand, etc. Consultez la documentation Aspose.Words pour une liste complète des codes de langue pris en charge.
+R : Pour spécifier la langue de syllabisation dans Aspose.Words, vous devez utiliser les codes de langue appropriés. Par exemple, vous pouvez utiliser « en » pour l'anglais, « fr » pour le français, « es » pour l'espagnol, « de » pour l'allemand, etc. Consultez la documentation Aspose.Words pour une liste complète des codes de langue pris en charge.
 
 #### Q : La syllabisation fonctionne-t-elle pour toutes les langues dans Aspose.Words ?
 

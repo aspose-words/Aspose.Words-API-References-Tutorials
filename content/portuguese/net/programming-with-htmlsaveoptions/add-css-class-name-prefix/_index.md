@@ -84,7 +84,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
-### Etapa 3.2: Definir o prefixo do nome da classe CSS
+### Etapa 3.2: definir o prefixo do nome da classe CSS
 
  Agora, vamos definir o`CssClassNamePrefix` propriedade para o prefixo desejado. Para este exemplo, usaremos`"pfx_"`.
 

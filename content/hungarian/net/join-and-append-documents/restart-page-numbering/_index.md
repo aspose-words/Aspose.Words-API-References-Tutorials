@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Settings;
 ```
 
- Ez a kódrészlet importálja a`Aspose.Words` névtér, amely hozzáférést biztosít az alapvető dokumentumkezelési osztályokhoz. Ezen kívül importáljuk a`Aspose.Words.Settings` névtér, amely lehetőséget kínál a dokumentumok viselkedésének testreszabására.
+ Ez a kódrészlet importálja a`Aspose.Words` névtér, amely hozzáférést biztosít az alapvető dokumentumkezelési osztályokhoz. Ezen kívül importálunk a`Aspose.Words.Settings` névtér, amely lehetőséget kínál a dokumentumok viselkedésének testreszabására.
 
 
 Most pedig nézzük meg a dokumentumokon belüli oldalszámozás újraindításának gyakorlati lépéseit:

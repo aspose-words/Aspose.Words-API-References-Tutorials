@@ -17,7 +17,7 @@ Antes de sujarmos as mãos, vamos garantir que você tenha tudo o que precisa:
 
 1.  Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. .NET Framework: qualquer versão que suporte Aspose.Words for .NET.
-3. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+3. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 4. Conhecimento básico de C#: apenas o básico para entender a sintaxe e a estrutura.
 
 ## Importar namespaces

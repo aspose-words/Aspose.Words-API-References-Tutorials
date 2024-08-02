@@ -53,7 +53,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie den durchgestrichenen 
 
 #### F: Wie kann ich den durchgestrichenen Text in Aspose.Words hinzufügen?
 
- A: Um den durchgestrichenen Text in Aspose.Words hinzuzufügen, können Sie den`Font.StrikeThrough` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf`true` um bestimmten Text durchgestrichenen Text hinzuzufügen. Sie können beispielsweise`run.Font.StrikeThrough=true` , um den durchgestrichenen Text in das`Run` Objekt.
+ A: Um den durchgestrichenen Text in Aspose.Words hinzuzufügen, können Sie den`Font.StrikeThrough` Eigentum der`Run` Objekt. Sie können diese Eigenschaft auf`true` um bestimmten Text durchgestrichenen Text hinzuzufügen. Sie können beispielsweise`run.Font.StrikeThrough=true` , um den durchgestrichenen Text in das`Run` Objekt.
 
 #### F: Ist es möglich, den durchgestrichenen Text mehreren Textteilen im selben Absatz hinzuzufügen?
 

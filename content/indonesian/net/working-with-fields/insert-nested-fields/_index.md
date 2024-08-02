@@ -2,68 +2,36 @@
 title: Sisipkan Bidang Bersarang
 linktitle: Sisipkan Bidang Bersarang
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan bidang bersarang dengan mudah ke dalam dokumen Word Anda dengan Aspose.Words untuk .NET.
+description: Pelajari cara menyisipkan bidang bertingkat di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk pengembang yang ingin mengotomatiskan pembuatan dokumen.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/insert-nested-fields/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini, yang menggunakan fitur "Sisipkan Bidang Bersarang" dari Aspose.Words untuk .NET. Pastikan untuk mengikuti setiap langkah dengan hati-hati untuk mendapatkan hasil yang diinginkan.
+Pernahkah Anda merasa perlu menyisipkan bidang bersarang di dokumen Word Anda secara terprogram? Mungkin Anda ingin menampilkan teks berbeda secara kondisional berdasarkan nomor halaman? Nah, Anda beruntung! Tutorial ini akan memandu Anda melalui proses menyisipkan kolom bertingkat menggunakan Aspose.Words untuk .NET. Ayo selami!
 
-## Langkah 1: Pengaturan Direktori Dokumen
+## Prasyarat
 
-Dalam kode yang diberikan, Anda harus menentukan direktori dokumen Anda. Ganti nilai "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai ke direktori dokumen Anda.
+Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET: Pastikan Anda memiliki perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: IDE seperti Visual Studio.
+3. Pengetahuan Dasar C#: Pemahaman bahasa pemrograman C#.
 
-## Langkah 2: Membuat Dokumen dan DocumentBuilder
+## Impor Namespace
 
-Kita mulai dengan membuat dokumen baru dan menginisialisasi DocumentBuilder.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Langkah 3: Memasukkan hentian halaman
-
-Kami menggunakan loop untuk memasukkan beberapa hentian halaman ke dalam dokumen.
+Pertama, pastikan untuk mengimpor namespace yang diperlukan dalam proyek Anda. Namespace ini berisi kelas yang Anda perlukan untuk berinteraksi dengan Aspose.Words.
 
 ```csharp
-for (int i = 0; i < 5; i++)
-     builder. InsertBreak(BreakType.PageBreak);
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.HeaderFooter;
 ```
 
-## Langkah 4: Pindah ke Footer
+## Langkah 1: Inisialisasi Dokumen
 
- Kami menggunakan`MoveToHeaderFooter()` metode DocumentBuilder untuk memindahkan kursor ke footer utama.
-
-```csharp
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-## Langkah 5: Memasukkan bidang bersarang
-
- Kami menggunakan DocumentBuilder`InsertField()` metode untuk menyisipkan bidang bersarang ke footer.
-
-```csharp
-Field field = builder. InsertField(@"IF ");
-builder.MoveTo(field.Separator);
-builder. InsertField("PAGE");
-builder. Write(" <> ");
-builder.InsertField("NUMPAGES");
-builder.Write(" \"See next page\" \"Last page\" ");
-```
-
- Akhirnya, kami menelepon`Update()` metode untuk memperbarui bidang.
-
-```csharp
-field. Update();
-```
-
-### Contoh kode sumber untuk menyisipkan bidang bersarang dengan Aspose.Words untuk .NET
+Langkah pertama adalah membuat dokumen baru dan objek DocumentBuilder. Kelas DocumentBuilder membantu dalam membuat dan memodifikasi dokumen Word.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -72,52 +40,79 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Buat dokumen dan DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Langkah 2: Sisipkan Hentian Halaman
+
+Selanjutnya, kita akan menyisipkan beberapa hentian halaman ke dalam dokumen. Ini akan memungkinkan kita mendemonstrasikan bidang bersarang secara efektif.
+
+```csharp
 // Sisipkan hentian halaman.
 for (int i = 0; i < 5; i++)
-     builder. InsertBreak(BreakType.PageBreak);
+{
+    builder.InsertBreak(BreakType.PageBreak);
+}
+```
 
+## Langkah 3: Pindah ke Footer
+
+Setelah menyisipkan hentian halaman, kita perlu berpindah ke footer dokumen. Di sinilah kita akan menyisipkan bidang bersarang kita.
+
+```csharp
 // Pindah ke catatan kaki.
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+```
 
+## Langkah 4: Sisipkan Bidang Bersarang
+
+Sekarang, mari masukkan bidang bersarang. Kami akan menggunakan bidang IF untuk menampilkan teks secara kondisional berdasarkan nomor halaman saat ini.
+
+```csharp
 // Sisipkan bidang bersarang.
-Field field = builder. InsertField(@"IF ");
+Field field = builder.InsertField(@"IF ");
 builder.MoveTo(field.Separator);
-builder. InsertField("PAGE");
-builder. Write(" <> ");
+builder.InsertField("PAGE");
+builder.Write(" <> ");
 builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
+```
 
+Pada langkah ini, pertama-tama kita masukkan kolom IF, pindah ke pemisahnya, lalu masukkan kolom PAGE dan NUMPAGES. Bidang IF memeriksa apakah nomor halaman saat ini (PAGE) tidak sama dengan jumlah halaman total (NUMPAGES). Jika benar, maka akan ditampilkan “Lihat halaman berikutnya”, jika tidak, akan ditampilkan “Halaman terakhir”.
+
+## Langkah 5: Perbarui Bidang
+
+Terakhir, kami memperbarui bidang tersebut untuk memastikan bidang tersebut menampilkan teks yang benar.
+
+```csharp
 // Perbarui bidangnya.
-field. Update();
+field.Update();
+```
 
+## Langkah 6: Simpan Dokumen
+
+Langkah terakhir adalah menyimpan dokumen ke direktori yang Anda tentukan.
+
+```csharp
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-Dalam contoh ini, kita membuat dokumen baru, menyisipkan hentian halaman, memindahkan kursor ke footer, lalu menyisipkan kolom bersarang di footer.
+## Kesimpulan
 
-### FAQ
+Dan itu dia! Anda telah berhasil menyisipkan bidang bersarang ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka yang kuat ini membuatnya sangat mudah untuk memanipulasi dokumen Word secara terprogram. Baik Anda membuat laporan, membuat templat, atau mengotomatiskan alur kerja dokumen, Aspose.Words siap membantu Anda.
 
-#### T: Bagaimana cara menyisipkan bidang bertumpuk dalam dokumen Word menggunakan Aspose.Words untuk .NET?
+## FAQ
 
-J: Untuk menyisipkan bidang bertumpuk dalam dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
+### Apa yang dimaksud dengan bidang bersarang di dokumen Word?
+Bidang bersarang adalah bidang yang berisi bidang lain di dalamnya. Hal ini memungkinkan konten yang lebih kompleks dan bersyarat dalam dokumen.
 
-1. Dapatkan paragraf tempat Anda ingin menyisipkan bidang bersarang.
-2.  Membuat`FieldStart` objek untuk bidang induk.
-3.  Tambahkan bidang anak menggunakan`FieldStart.NextSibling` metode melewati yang sesuai`FieldStart` objek sebagai parameter.
+### Bisakah saya menggunakan kolom lain dalam kolom IF?
+Ya, Anda dapat menyarangkan berbagai bidang seperti TANGGAL, WAKTU, dan AUTHOR dalam bidang IF untuk membuat konten dinamis.
 
-#### T: Apa manfaat menggunakan bidang bertumpuk di dokumen Word dengan Aspose.Words untuk .NET?
+### Apakah Aspose.Words untuk .NET gratis?
+ Aspose.Words untuk .NET adalah perpustakaan komersial, tetapi Anda bisa mendapatkan a[uji coba gratis](https://releases.aspose.com/) untuk mencobanya.
 
-J: Menggunakan bidang bertingkat menawarkan beberapa keuntungan dalam dokumen Word dengan Aspose.Words untuk .NET. Hal ini memungkinkan fleksibilitas yang lebih besar dalam membuat templat dokumen dinamis, dengan memungkinkan penyisipan nilai variabel dan perhitungan ke dalam bidang yang disarangkan. Bidang bersarang juga dapat memfasilitasi pembuatan konten otomatis, seperti membuat daftar isi, nomor halaman, dll.
+### Bisakah saya menggunakan Aspose.Words dengan bahasa .NET lainnya?
+Ya, Aspose.Words mendukung semua bahasa .NET, termasuk VB.NET dan F#.
 
-#### T: Bisakah saya memiliki bidang bertingkat bertingkat di dokumen Word dengan Aspose.Words untuk .NET?
-
-J: Ya, dimungkinkan untuk memiliki bidang bertingkat bertingkat dalam dokumen Word dengan Aspose.Words untuk .NET. Anda dapat membuat hierarki kompleks dari bidang bersarang dengan menggunakan`FieldStart.NextSibling` metode untuk menambahkan bidang anak ke bidang induk yang ada.
-
-#### T: Bagaimana cara mengkustomisasi properti bidang bertumpuk di dokumen Word dengan Aspose.Words untuk .NET?
-
- J: Untuk mengkustomisasi properti bidang bertumpuk dalam dokumen Word dengan Aspose.Words untuk .NET, Anda dapat mengakses yang sesuai`FieldStart` objek dan memodifikasi propertinya sesuai kebutuhan. Anda dapat mengatur opsi pemformatan, nilai, perhitungan, dll., dari bidang bersarang untuk mencapai hasil yang diinginkan.
-
-#### T: Apakah menyisipkan bidang bertumpuk memengaruhi kinerja dokumen Word dengan Aspose.Words untuk .NET?
-
-J: Menyisipkan bidang bertumpuk dapat memengaruhi kinerja dokumen Word dengan Aspose.Words untuk .NET, terutama jika dokumen berisi bidang bertumpuk dalam jumlah besar atau hierarki yang kompleks. Disarankan untuk mengoptimalkan kode dengan menghindari operasi yang tidak perlu atau berulang pada bidang bersarang untuk meningkatkan kinerja.
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+ Anda dapat menemukan dokumentasi terperinci[Di Sini](https://reference.aspose.com/words/net/).

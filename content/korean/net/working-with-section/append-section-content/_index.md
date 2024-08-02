@@ -11,12 +11,12 @@ url: /ko/net/working-with-section/append-section-content/
 
 안녕하세요! .NET을 사용하여 프로그래밍 방식으로 Word 문서를 조작하는 방법이 궁금하신가요? Word 문서 작업을 처리하기 위한 강력한 라이브러리를 찾고 있다면 Aspose.Words for .NET이 최선의 선택입니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서 내에 섹션을 추가하는 과정을 안내하겠습니다. 초보자이든 노련한 개발자이든 이 튜토리얼은 기본 사항과 일부 고급 개념을 익히는 데 도움이 됩니다. 그럼, 뛰어 들어 봅시다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 몇 가지 사항이 있습니다.
 
 1. C# 기본 지식: 전문가가 될 필요는 없지만 C#에 대한 기본적인 이해가 있으면 도움이 됩니다.
-2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) 바로 구매하기 싫으신 분들은 옵션을 선택하시면 됩니다[무료 시험판](https://releases.aspose.com/).
+2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) . 바로 구매하기 싫으신 분들은 옵션을 선택하시면 됩니다[무료 시험판](https://releases.aspose.com/).
 3. Visual Studio: 모든 버전이 작동하지만 최신 버전을 권장합니다.
 4. .NET Framework: 컴퓨터에 설치되어 있는지 확인하세요.
 
@@ -66,7 +66,7 @@ builder.Write("Section 3");
 Section section = doc.Sections[2];
 ```
 
- 이 단계에서는 문서의 세 번째 섹션에 액세스합니다. 인덱스는 0부터 시작하므로`Sections[2]` 세 번째 부분을 가리킨다.
+이 단계에서는 문서의 세 번째 섹션에 액세스합니다. 인덱스는 0부터 시작하므로`Sections[2]` 세 번째 부분을 가리킨다.
 
 ## 4단계: 섹션에 콘텐츠 추가
 
@@ -102,7 +102,7 @@ doc.Save("output.docx");
 
 ## 결론
 
- 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서의 섹션을 성공적으로 조작했습니다. 이 튜토리얼에서는 문서 작성, 섹션 추가 및 내용 조작의 기본 사항을 다루었습니다. Aspose.Words를 사용하면 훨씬 더 복잡한 작업을 수행할 수 있으므로 주저하지 말고[API 문서](https://reference.aspose.com/words/net/) 더 고급 기능을 사용하려면
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서의 섹션을 성공적으로 조작했습니다. 이 튜토리얼에서는 문서 작성, 섹션 추가 및 내용 조작의 기본 사항을 다루었습니다. Aspose.Words를 사용하면 훨씬 더 복잡한 작업을 수행할 수 있으므로 주저하지 말고[API 문서](https://reference.aspose.com/words/net/) 더 고급 기능을 사용하려면
 
 ## 자주 묻는 질문
 
@@ -116,7 +116,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
 
 ## 3. Aspose.Words for .NET의 주요 기능은 무엇입니까?
 
-Aspose.Words for .NET은 문서 생성, 서식 지정, 변환 및 조작을 포함한 광범위한 기능을 제공합니다. 해당 기능에 대한 자세한 내용은 다음에서 확인할 수 있습니다.[API 문서](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET은 문서 생성, 서식 지정, 변환 및 조작을 포함한 광범위한 기능을 제공합니다. 해당 기능에 대한 자세한 내용은 다음에서 확인할 수 있습니다.[API 문서](https://reference.aspose.com/words/net/).
 
 ## 4. .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
 

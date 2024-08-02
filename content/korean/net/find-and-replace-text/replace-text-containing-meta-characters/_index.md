@@ -11,7 +11,7 @@ url: /ko/net/find-and-replace-text/replace-text-containing-meta-characters/
 
 Word 문서에서 텍스트 대체의 미로에 갇힌 적이 있습니까? 고개를 끄덕이고 있다면 안전벨트를 단단히 매세요. 우리가 .NET용 Aspose.Words를 사용하는 흥미로운 튜토리얼을 살펴보고 있으니까요. 오늘은 메타 문자가 포함된 텍스트를 바꾸는 방법을 다루겠습니다. 문서 조작을 그 어느 때보다 원활하게 만들 준비가 되셨나요? 시작하자!
 
-## 전제조건
+## 전제 조건
 
 핵심적인 내용으로 넘어가기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 -  .NET용 Aspose.Words:[다운로드 링크](https://releases.aspose.com/words/net/)

@@ -1,104 +1,118 @@
 ---
-title: Krijg documentstijlen in Word
-linktitle: Krijg documentstijlen in Word
+title: Documentstijlen ophalen in Word
+linktitle: Documentstijlen ophalen in Word
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u documentstijlen in Word kunt verkrijgen met Aspose.Words voor .NET. Volledige tutorial om de stijlen van uw documenten te manipuleren.
+description: Leer hoe u documentstijlen in Word kunt verkrijgen met Aspose.Words voor .NET met deze gedetailleerde stapsgewijze zelfstudie. Krijg toegang tot en beheer stijlen programmatisch in uw .NET-applicaties.
 type: docs
 weight: 10
 url: /nl/net/programming-with-styles-and-themes/access-styles/
 ---
+## Invoering
 
-In deze zelfstudie verkennen we de meegeleverde C#-broncode voor het verkrijgen van documentstijlen in Word met behulp van Aspose.Words voor .NET. Met deze functie kunt u de volledige verzameling stijlen in het document verkrijgen.
+Ben je klaar om een duik te nemen in de wereld van documentstyling in Word? Of u nu een complex rapport maakt of eenvoudigweg uw cv aanpast, inzicht in hoe u stijlen kunt openen en manipuleren kan een gamechanger zijn. In deze zelfstudie onderzoeken we hoe u documentstijlen kunt verkrijgen met Aspose.Words voor .NET, een krachtige bibliotheek waarmee u programmatisch kunt communiceren met Word-documenten.
 
-## Stap 1: De omgeving instellen
+## Vereisten
 
-Zorg ervoor dat u, voordat u begint, uw ontwikkelomgeving hebt ingesteld met Aspose.Words voor .NET. Zorg ervoor dat u de benodigde referenties hebt toegevoegd en de juiste naamruimten hebt geïmporteerd.
+Voordat we beginnen, zorg ervoor dat je het volgende hebt:
 
-## Stap 2: Het document aanmaken
+1.  Aspose.Words voor .NET: deze bibliotheek moet in uw .NET-omgeving zijn geïnstalleerd. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+2. Basiskennis van .NET: Bekendheid met C# of een andere .NET-taal zal u helpen de verstrekte codefragmenten te begrijpen.
+3. Een ontwikkelomgeving: Zorg ervoor dat u een IDE zoals Visual Studio hebt ingesteld om .NET-code te schrijven en uit te voeren.
+
+## Naamruimten importeren
+
+Om met Aspose.Words te gaan werken, moet u de benodigde naamruimten importeren. Dit zorgt ervoor dat uw code de Aspose.Words-klassen en -methoden kan herkennen en gebruiken.
+
+```csharp
+using Aspose.Words;
+using System;
+```
+
+## Stap 1: Maak een nieuw document
+
+Eerst moet u een exemplaar maken van de`Document` klas. Deze klasse vertegenwoordigt uw Word-document en biedt toegang tot verschillende documenteigenschappen, inclusief stijlen.
 
 ```csharp
 Document doc = new Document();
 ```
 
- In deze stap maken we een nieuw leeg bestand aan`Document` voorwerp.
+ Hier,`Document` is een klasse van Aspose.Words waarmee u programmatisch met Word-documenten kunt werken.
 
-## Stap 3: Toegang tot de stijlcollectie
+## Stap 2: Toegang tot de stijlencollectie
+
+Zodra u uw documentobject hebt, heeft u toegang tot de stijlencollectie ervan. Deze verzameling bevat alle stijlen die in het document zijn gedefinieerd. 
+
+```csharp
+StyleCollection styles = doc.Styles;
+```
+
+`StyleCollection` is een verzameling van`Style` voorwerpen. Elk`Style` object vertegenwoordigt een enkele stijl binnen het document.
+
+## Stap 3: Herhaal de stijlen
+
+Vervolgens wilt u de stijlencollectie doorlopen om de naam van elke stijl te openen en weer te geven. Hier kunt u de uitvoer aanpassen aan uw behoeften.
 
 ```csharp
 string styleName = "";
 
-StyleCollection styles = doc.Styles;
-```
-
- In deze stap krijgen we toegang tot de stijlcollectie van het document met behulp van de`Styles` eigendom. Deze verzameling bevat alle stijlen die in het document aanwezig zijn.
-
-## Stap 4: Blader door stijlen
-
-```csharp
-foreach(Style style in styles)
-{
-     if (styleName == "")
-     {
-         styleName = style.Name;
-         Console.WriteLine(styleName);
-     }
-     else
-     {
-         styleName = styleName + "," + style.Name;
-         Console.WriteLine(styleName);
-     }
-}
-```
-
- In deze laatste stap doorlopen we elke stijl in de collectie met behulp van een`foreach` lus. We geven de naam van elke stijl weer op de console en voegen ze samen met komma's voor een betere leesbaarheid.
-
-Nu kunt u de broncode uitvoeren om toegang te krijgen tot stijlen in een document en hun namen weer te geven in de console. Deze functie kan handig zijn voor het analyseren van stijlen in een document, het uitvoeren van specifieke bewerkingen op bepaalde stijlen of het verkrijgen van eenvoudigweg informatie over beschikbare stijlen.
-
-### Voorbeeldbroncode voor Access Styles met Aspose.Words voor .NET 
-```csharp
-
-Document doc = new Document();
-
-string styleName = "";
-
-//Haal de stijlencollectie op uit het document.
-StyleCollection styles = doc.Styles;
 foreach (Style style in styles)
 {
-	if (styleName == "")
-	{
-		styleName = style.Name;
-		Console.WriteLine(styleName);
-	}
-	else
-	{
-		styleName = styleName + ", " + style.Name;
-		Console.WriteLine(styleName);
-	}
+    if (styleName == "")
+    {
+        styleName = style.Name;
+        Console.WriteLine(styleName);
+    }
+    else
+    {
+        styleName = styleName + ", " + style.Name;
+        Console.WriteLine(styleName);
+    }
 }
-            
-        
 ```
+
+Hier is een overzicht van wat deze code doet:
+
+-  Initialiseren`styleName`: We beginnen met een lege string om onze lijst met stijlnamen samen te stellen.
+-  Loop door de stijlen: The`foreach` lus itereert over elk`Style` in de`styles` verzameling.
+- Bijwerken en weergeven`styleName` : Voor elke stijl voegen we de naam toe`styleName` en print het uit.
+
+## Stap 4: Uitvoer aanpassen
+
+Afhankelijk van uw behoeften wilt u mogelijk aanpassen hoe de stijlen worden weergegeven. U kunt de uitvoer bijvoorbeeld anders opmaken of stijlen filteren op basis van bepaalde criteria.
+
+```csharp
+foreach (Style style in styles)
+{
+    if (style.IsBuiltin)
+    {
+        Console.WriteLine("Built-in Style: " + style.Name);
+    }
+    else
+    {
+        Console.WriteLine("Custom Style: " + style.Name);
+    }
+}
+```
+
+ In dit voorbeeld maken we onderscheid tussen ingebouwde en aangepaste stijlen door de`IsBuiltin` eigendom.
 
 ## Conclusie
 
- In deze zelfstudie hebben we geleerd hoe u de stijlen in een Word-document kunt ophalen en openen met behulp van Aspose.Words voor .NET. Door gebruik te maken van de`Styles` eigendom van de`Document` object, hebben we de verzameling stijlen verkregen en er doorheen gelust om hun namen weer te geven. Deze functie biedt waardevolle inzichten in de stijlen die in een document worden gebruikt en maakt verdere aanpassingen en analyses mogelijk.
+Het openen en manipuleren van stijlen in Word-documenten met Aspose.Words voor .NET kan veel documentverwerkingstaken stroomlijnen. Of u nu het maken van documenten automatiseert, stijlen bijwerkt of eenvoudigweg documenteigenschappen verkent, begrijpen hoe u met stijlen moet werken, is een belangrijke vaardigheid. Met de stappen die in deze zelfstudie worden beschreven, bent u goed op weg om documentstijlen onder de knie te krijgen.
 
-Door gebruik te maken van de krachtige API van Aspose.Words voor .NET kunnen ontwikkelaars eenvoudig documentstijlen manipuleren en ermee werken, waardoor ze meer controle krijgen over de opmaak en documentverwerking.
+## Veelgestelde vragen
 
-### Veelgestelde vragen
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een bibliotheek waarmee u Word-documenten programmatisch kunt maken, bewerken en manipuleren binnen .NET-toepassingen.
 
-#### Hoe kan ik toegang krijgen tot de stijlen in een Word-document met Aspose.Words voor .NET?
+### Moet ik nog andere bibliotheken installeren om met Aspose.Words te kunnen werken?
+Nee, Aspose.Words is een zelfstandige bibliotheek en vereist geen extra bibliotheken voor basisfunctionaliteit.
 
-Volg deze stappen om toegang te krijgen tot de stijlen in een Word-document:
-1.  Maak een nieuwe`Document` voorwerp.
-2.  Haal de`StyleCollection` door toegang te krijgen tot de`Styles` eigendom van het document.
-3. Doorloop de stijlen met behulp van een lus om elke stijl afzonderlijk te openen en te verwerken.
+### Heb ik toegang tot stijlen vanuit een Word-document dat al inhoud bevat?
+Ja, u kunt stijlen in zowel bestaande als nieuw gemaakte documenten openen en bewerken.
 
-#### Wat kan ik doen met de stijlcollectie die ik heb verkregen met Aspose.Words voor .NET?
+### Hoe kan ik stijlen filteren zodat alleen specifieke typen worden weergegeven?
+ U kunt stijlen filteren door eigenschappen zoals`IsBuiltin` of gebruik aangepaste logica op basis van stijlkenmerken.
 
-Zodra u over de stijlcollectie beschikt, kunt u verschillende bewerkingen uitvoeren, zoals het analyseren van de stijlen die in een document worden gebruikt, het wijzigen van specifieke stijlen, het toepassen van stijlen op documentelementen of het extraheren van informatie over beschikbare stijlen. Het biedt u flexibiliteit en controle over de stijl en opmaak van documenten.
-
-#### Hoe kan ik de verkregen stijlinformatie gebruiken in mijn aanvraag?
-
-U kunt de verkregen stijlinformatie gebruiken om de documentverwerking aan te passen, consistente opmaak toe te passen, rapporten te genereren of gegevensanalyses uit te voeren op basis van specifieke stijlen. De stijlinformatie kan dienen als basis voor het automatiseren van documentgerelateerde taken en het bereiken van de gewenste opmaakresultaten.
+### Waar kan ik meer bronnen vinden over Aspose.Words voor .NET?
+ Je kunt meer verkennen[hier](https://reference.aspose.com/words/net/).

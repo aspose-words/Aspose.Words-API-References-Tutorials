@@ -11,7 +11,7 @@ url: /ko/net/programming-with-digital-signatures/signing-encrypted-document/
 
 암호화된 Word 문서에 서명하는 방법이 궁금하신가요? 오늘은 .NET용 Aspose.Words를 사용하여 이 프로세스를 살펴보겠습니다. 버클을 채우고 자세하고 흥미롭고 재미있는 튜토리얼을 준비하세요!
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 

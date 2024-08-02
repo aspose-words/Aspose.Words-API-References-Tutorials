@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### Otázka: Je možné upravit předponu a příponu číslování restartovaných seznamů v Aspose.Words?
 
- Odpověď: Ano, můžete upravit předponu a příponu číslování restartovaných seznamů v Aspose.Words. The`ListLevel` třída nabízí vlastnosti jako např`ListLevel.NumberPrefix`a`ListLevel.NumberSuffix`které umožňují zadat předponu a příponu pro každou úroveň v seznamu. Tyto vlastnosti můžete použít k přizpůsobení předpony a přípony podle potřeby.
+ Odpověď: Ano, můžete upravit předponu a příponu číslování restartovaných seznamů v Aspose.Words. The`ListLevel`třída nabízí vlastnosti jako např`ListLevel.NumberPrefix`a`ListLevel.NumberSuffix` které umožňují zadat předponu a příponu pro každou úroveň v seznamu. Tyto vlastnosti můžete použít k přizpůsobení předpony a přípony podle potřeby.
 
 #### Otázka: Jak mohu zadat konkrétní hodnotu číslování, od které má být seznam restartován?
 

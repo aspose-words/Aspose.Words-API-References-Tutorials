@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Namespace ini memberi Anda akses ke fungsi Aspose.Words dan opsi penyimpanan untuk mengekspor dokumen Anda.
+Namespace ini memberi Anda akses ke fungsionalitas Aspose.Words dan opsi penyimpanan untuk mengekspor dokumen Anda.
 
 ## Langkah 1: Siapkan Jalur Dokumen Anda
 

@@ -27,7 +27,7 @@ Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode"
 builder.ParagraphFormat.Style = fencedCode;
 ```
 
-## Steg 3: Lägga till inhägnad kod utan info
+## Steg 3: Lägga till inhägnad kod utan information
 
 Nu kan vi lägga till ett inhägnat kodblock utan informationssträng med den anpassade stilen "FencedCode".
 

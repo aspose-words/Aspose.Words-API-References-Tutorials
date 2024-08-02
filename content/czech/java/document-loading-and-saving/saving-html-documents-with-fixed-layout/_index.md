@@ -27,7 +27,7 @@ Nejprve musíme načíst dokument, který chceme uložit ve formátu HTML. Můž
 Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
- Nahradit`"YourDocument.docx"` s cestou k dokumentu aplikace Word.
+ Nahradit`"YourDocument.docx"` s cestou k vašemu dokumentu aplikace Word.
 
 ## Krok 2: Nakonfigurujte pevné možnosti uložení HTML
 

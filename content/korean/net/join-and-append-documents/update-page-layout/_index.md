@@ -11,7 +11,7 @@ url: /ko/net/join-and-append-documents/update-page-layout/
 
 안녕하세요! 프로그래밍 방식으로 Word 문서를 작업해 본 적이 있다면 페이지 레이아웃을 효과적으로 관리하는 것이 얼마나 중요한지 알 것입니다. 보고서를 생성하든, 템플릿을 생성하든, 단순히 문서 디자인을 수정하든 페이지 레이아웃을 최신 상태로 유지하는 것이 중요합니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서의 페이지 레이아웃을 업데이트하는 방법을 살펴보겠습니다. 프로세스를 단계별로 안내해 드리므로 귀하는 문서 레이아웃을 자신있게 처리하고 모든 것이 올바르게 표시되는지 확인할 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 준비되어 있는지 확인하세요.
 
@@ -21,7 +21,7 @@ url: /ko/net/join-and-append-documents/update-page-layout/
 
 3. C#의 기본 지식: C#에 대한 기본적인 이해는 보다 원활하게 작업을 진행하는 데 도움이 됩니다.
 
-4.  Aspose 라이센스: 무료 평가판이 제공되는 동안[여기](https://releases.aspose.com/) , 상업적으로 사용하려면 정식 라이센스가 필요할 수 있습니다. 당신은 하나를 얻을 수 있습니다[여기](https://purchase.aspose.com/buy) 또는[임시면허](https://purchase.aspose.com/temporary-license/).
+4.  Aspose 라이센스: 무료 평가판이 제공되는 동안[여기](https://releases.aspose.com/) , 상업적으로 사용하려면 정식 라이센스가 필요할 수 있습니다. 당신은 하나를 얻을 수 있습니다[여기](https://purchase.aspose.com/buy) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 5. 문서 디렉토리: 문서를 저장하고 로드할 디렉토리가 설정되어 있는지 확인하십시오.
 
@@ -114,10 +114,10 @@ Aspose.Words for .NET을 사용하여 Word 문서의 페이지 레이아웃을 �
 Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 생성, 수정 및 변환하는 데 사용되는 라이브러리입니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?  
- 예, 상업적으로 사용하려면 라이센스가 필요합니다. 면허증을 취득하실 수 있습니다[여기](https://purchase.aspose.com/buy) 또는[임시면허](https://purchase.aspose.com/temporary-license/).
+ 예, 상업적으로 사용하려면 라이센스가 필요합니다. 면허증을 취득하실 수 있습니다[여기](https://purchase.aspose.com/buy) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words를 어떻게 시작하나요?  
- 다음에서 라이브러리를 다운로드하여 시작할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/)를 클릭한 다음 필요한 네임스페이스를 C# 프로젝트로 가져옵니다.
+ 다음에서 라이브러리를 다운로드하여 시작할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/)를 클릭한 다음 필요한 네임스페이스를 C# 프로젝트로 가져옵니다.
 
 ### .NET용 Aspose.Words를 무료로 사용할 수 있나요?  
  Aspose는 라이브러리의 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/).

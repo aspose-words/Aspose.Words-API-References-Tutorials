@@ -2,98 +2,140 @@
 title: Beágyazott táblázat
 linktitle: Beágyazott táblázat
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan hozhat létre beágyazott táblázatot Word-dokumentumban az Aspose.Words for .NET segítségével.
+description: Útmutatónkból megtudhatja, hogyan hozhat létre beágyazott táblázatokat Word dokumentumokban az Aspose.Words for .NET használatával. Tökéletes összetett dokumentumelrendezések programozott létrehozásához.
 type: docs
 weight: 10
 url: /hu/net/programming-with-tables/nested-table/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban megtanuljuk, hogyan hozhat létre beágyazott táblázatot Word-dokumentumban az Aspose.Words for .NET használatával. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Az oktatóanyag végére programozottan beágyazott táblázatokat hozhat létre Word-dokumentumaiban.
+Előfordult már, hogy programozottan beágyazott táblázatot kell létrehoznia egy Word-dokumentumban? Függetlenül attól, hogy jelentéseket, számlákat vagy bármilyen részletes táblázatos szerkezetet igénylő dokumentumot készít, az Aspose.Words for .NET a legjobb barátja lehet. Ebben az oktatóanyagban belevetjük magunkat a Word dokumentumokba ágyazott táblázatok létrehozásának folyamatába az Aspose.Words for .NET használatával. Mindent lefedünk az előfeltételektől a végső kód implementációig. Szóval, kezdjük!
 
-## 1. lépés: A projekt beállítása
-1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# projektet.
-2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
+## Előfeltételek
 
-## 2. lépés: A dokumentum létrehozása és a dokumentumgenerátor inicializálása
-A Szövegfeldolgozás elindításához a dokumentummal és a dokumentumgenerátorral, kövesse az alábbi lépéseket:
+Mielőtt belevágnánk a kódba, néhány dologra lesz szüksége:
+
+-  Aspose.Words for .NET: Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Visual Studio vagy bármely más C# IDE.
+- C# alapismeretek: A C# szintaxis és fogalmak megértése.
+
+A folytatás előtt győződjön meg arról, hogy ezeket beállította.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket. Ezek a névterek lehetővé teszik számunkra, hogy hozzáférjünk a Word dokumentumokkal való munkavégzéshez szükséges osztályokhoz és metódusokhoz.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
+
+ Kezdésként létrehozunk egy új Word-dokumentumot, és inicializáljuk a`DocumentBuilder` objektumot, amely segít a táblázat elkészítésében.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Dokumentumkészítés
 Document doc = new Document();
-
-// Inicializálja a dokumentumgenerátort
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
+## 2. lépés: Hozd létre a külső táblázatot
 
-## 3. lépés: A beágyazott asztal felépítése
-Ezután elkészítjük a beágyazott táblát úgy, hogy cellákat szúrunk be a külső táblába, és hozunk létre egy új táblázatot az első cellában. Használja a következő kódot:
+Most hozzuk létre a külső táblázatot. Kezdjük azzal, hogy beszúrjuk az első cellát, és hozzáadunk némi tartalmat.
+
+### 2.1. lépés: Illessze be a külső táblázat első celláját
 
 ```csharp
-// Szúrja be a külső táblázat első celláját
-Cell cell = builder. InsertCell();
-builder.Writeln("Cell 1 of the outer table");
-
-// Illessze be a külső táblázat második celláját
-builder. InsertCell();
-builder.Writeln("Cell 2 of the outer table");
-
-// A külső asztal megszűnése
-builder. EndTable();
-
-// Lépjen a külső táblázat első cellájába
-builder.MoveTo(cell.FirstParagraph);
-
-// Építsd meg a belső asztalt
-builder. InsertCell();
-builder.Writeln("Cell 1 of inner table");
-builder. InsertCell();
-builder.Writeln("Cell 2 of the inner table");
-
-// A belső asztal vége
-builder. EndTable();
+Cell cell = builder.InsertCell();
+builder.Writeln("Outer Table Cell 1");
 ```
 
-Itt a dokumentumkészítőt használjuk cellák és tartalom beszúrására a külső táblázatba. Ezután mozgassuk a dokumentumkészítő kurzort a külső tábla első cellájába, és cellák és tartalom beszúrásával építsünk be egy új táblát.
+### 2.2. lépés: Illessze be a külső táblázat második celláját
 
-## 4. lépés: Mentse el a módosított dokumentumot
-Végül el kell mentenünk a módosított dokumentumot a beágyazott táblával. Használja a következő kódot:
+Ezután beillesztjük a második cellát, és hozzáadunk egy kis tartalmat.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Outer Table Cell 2");
+```
+
+### 2.3. lépés: Zárja be a külső táblázatot
+
+A táblázat itt történő befejezése kulcsfontosságú, mivel lehetővé teszi a beágyazott tábla elindítását az első cellában.
+
+```csharp
+builder.EndTable();
+```
+
+## 3. lépés: Hozza létre a belső táblázatot
+
+Egy beágyazott tábla létrehozásához a kurzort a külső tábla első cellájába kell mozgatnunk, majd el kell kezdenünk a belső tábla felépítését.
+
+### 3.1. lépés: Lépjen a külső táblázat első cellájára
+
+```csharp
+builder.MoveTo(cell.FirstParagraph);
+```
+
+### 3.2. lépés: Illessze be a belső táblázat első celláját
+
+Most illesszük be a belső táblázat első celláját, és adjunk hozzá némi tartalmat.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Inner Table Cell 1");
+```
+
+### 3.3. lépés: Illessze be a belső táblázat második celláját
+
+Végül beszúrjuk a második cellát, és hozzáadunk egy kis tartalmat.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Inner Table Cell 2");
+```
+
+### 3.4. lépés: Zárja be a belső táblázatot
+
+A belső táblázat befejezésével zárjuk.
+
+```csharp
+builder.EndTable();
+```
+
+## 4. lépés: Mentse el a dokumentumot
+
+Az utolsó lépés a dokumentum mentése a megadott könyvtárba.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-Ügyeljen arra, hogy a megfelelő elérési utat és névfájlt adja meg a kimeneti dokumentumhoz.
-
-### Minta forráskód a beágyazott táblázathoz az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Cell cell = builder.InsertCell();
-	builder.Writeln("Outer Table Cell 1");
-	builder.InsertCell();
-	builder.Writeln("Outer Table Cell 2");
-	// Ez a hívás fontos egy beágyazott tábla létrehozásához az első táblán belül.
-	// hívás nélkül az alább beszúrt cellák hozzá lesznek fűzve a külső táblázathoz.
-	builder.EndTable();
-	// Lépjen a külső táblázat első cellájába.
-	builder.MoveTo(cell.FirstParagraph);
-	// Építsd meg a belső asztalt.
-	builder.InsertCell();
-	builder.Writeln("Inner Table Cell 1");
-	builder.InsertCell();
-	builder.Writeln("Inner Table Cell 2");
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
-```
-
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet beágyazott táblázatot létrehozni egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C#-kódot, beágyazott táblákat hozhat létre programozottan a Word-dokumentumokban saját igényei szerint.
+
+És megvan! Sikeresen létrehozott egy beágyazott táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár hihetetlenül egyszerűvé teszi a Word-dokumentumok programozott kezelését. Akár összetett jelentéseket, akár egyszerű táblázatokat hoz létre, az Aspose.Words for .NET mindenre kiterjed.
+
+## GYIK
+
+### Mi az a beágyazott táblázat?
+
+beágyazott táblázat egy táblázat egy táblán belül. A dokumentumokon belüli összetett elrendezések, például űrlapok vagy részletes adatbemutatók létrehozására szolgál.
+
+### Miért használja az Aspose.Words-t .NET-hez?
+
+Az Aspose.Words for .NET robusztus szolgáltatáskészletet kínál Word-dokumentumok programozott létrehozásához, módosításához és konvertálásához, így ideális választás a fejlesztők számára.
+
+### Hozzáadhatok több szintet beágyazott táblázatokhoz?
+
+Igen, több szinten is létrehozhat beágyazott táblákat, ha megismétli az aktuális tábla befejezésének folyamatát, és egy cellán belül újat indít.
+
+### Az Aspose.Words for .NET kompatibilis a Word összes verziójával?
+
+Az Aspose.Words for .NET a Word dokumentumformátumok széles skálájával kompatibilis, beleértve a DOC-t, DOCX-et, RTF-et és még sok mást.
+
+### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
+
+ Támogatást kaphat a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).

@@ -12,9 +12,9 @@ Split Document je komplexní zdroj, který vysvětluje, jak rozdělit dokument n
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Podle nadpisů Html](./by-headings-html/) | Podrobný průvodce vysvětlující zdrojový kód C# funkce By Heading HTML Aspose.Words for .NET |
-| [Podle sekcí Html](./by-sections-html/) | Zjistěte, jak rozdělit dokument aplikace Word na části Html pomocí Aspose.Words for .NET s úplným příkladem kódu. |
-| [Podle sekcí](./by-sections/) | Naučte se, jak rozdělit dokument aplikace Word do samostatných sekcí pomocí Aspose.Words for .NET s úplným příkladem kódu. |
-| [Stránku po stránce](./page-by-page/) | Podrobný průvodce vysvětlující zdrojový kód C# funkce Aspose.Words Stránka po stránce pro .NET |
+| [Rozdělit dokument Word podle nadpisů Html](./by-headings-html/) | Naučte se, jak rozdělit dokument aplikace Word podle nadpisů do HTML pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem. |
+| [Rozdělit dokument Word podle oddílů HTML](./by-sections-html/) | Naučte se, jak rozdělit dokument aplikace Word podle sekcí do HTML pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. |
+| [Rozdělit dokument Word podle sekcí](./by-sections/) | Naučte se, jak rozdělit dokument aplikace Word podle sekcí pomocí Aspose.Words for .NET. Postupujte podle tohoto podrobného průvodce krok za krokem pro efektivní správu dokumentů. |
+| [Rozdělit dokument Word podle stránky](./page-by-page/) | Naučte se, jak rozdělit dokument aplikace Word podle stránek pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. Ideální pro efektivní správu velkých dokumentů. |
 | [Sloučit dokumenty](./merge-documents/) | Průvodce krok za krokem vysvětlující zdrojový kód C# funkce Sloučit dokumenty Aspose.Words pro .NET |
-| [Podle rozsahu stránek](./by-page-range/) | Snadno extrahujte podle rozsahu stránek z dokumentu aplikace Word pomocí Aspose.Words for .NET Podrobný průvodce. |
+| [Rozdělit dokument Word podle rozsahu stránek](./by-page-range/) | Naučte se, jak rozdělit dokument aplikace Word podle rozsahu stránek pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro vývojáře. |

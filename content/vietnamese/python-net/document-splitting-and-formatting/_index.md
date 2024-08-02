@@ -2,7 +2,7 @@
 title: Tách và định dạng tài liệu
 linktitle: Tách và định dạng tài liệu
 second_title: API quản lý tài liệu Python Aspose.Words
-description: Khám phá các hướng dẫn Aspose.Words về phân tách và định dạng tài liệu trong Python và .NET. Tìm hiểu cách phân chia và định dạng tài liệu một cách hiệu quả, nâng cao tác vụ xử lý tài liệu của bạn.
+description: Khám phá các hướng dẫn Aspose.Words về phân tách và định dạng tài liệu bằng Python và .NET. Tìm hiểu cách phân chia và định dạng tài liệu một cách hiệu quả, nâng cao tác vụ xử lý tài liệu của bạn.
 type: docs
 weight: 13
 url: /vi/python-net/document-splitting-and-formatting/
@@ -14,7 +14,7 @@ Chào mừng bạn đến với thế giới của các hướng dẫn Aspose.Wo
 
 ## Tại sao việc chia tách và định dạng tài liệu lại quan trọng
 
-Trong lĩnh vực xử lý tài liệu, khả năng phân chia và định dạng tài liệu là điều tối quan trọng. Tách tài liệu cho phép bạn trích xuất các phần, trang hoặc nội dung cụ thể từ tài liệu, cho phép phân tích và phân phối tập trung hơn. Mặt khác, định dạng đảm bảo rằng tài liệu của bạn hấp dẫn về mặt hình ảnh, nhất quán và phù hợp với nhận dạng thương hiệu của bạn. Cho dù bạn đang làm việc trên các tài liệu pháp lý, báo cáo hay tài liệu giáo dục, việc nắm vững cách phân chia và định dạng tài liệu là điều cần thiết để quản lý tài liệu hiệu quả và hiệu quả.
+Trong lĩnh vực xử lý tài liệu, khả năng phân chia và định dạng tài liệu là điều tối quan trọng. Tách tài liệu cho phép bạn trích xuất các phần, trang hoặc nội dung cụ thể từ tài liệu, cho phép phân tích và phân phối tập trung hơn. Mặt khác, định dạng đảm bảo rằng tài liệu của bạn hấp dẫn về mặt hình ảnh, nhất quán và phù hợp với nhận diện thương hiệu của bạn. Cho dù bạn đang làm việc trên các tài liệu pháp lý, báo cáo hay tài liệu giáo dục, việc nắm vững cách phân chia và định dạng tài liệu là điều cần thiết để quản lý tài liệu hiệu quả và hiệu quả.
 
 ## Bạn sẽ học được gì
 

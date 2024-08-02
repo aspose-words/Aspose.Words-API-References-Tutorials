@@ -68,7 +68,7 @@ builder.ListFormat.RemoveNumbers();
 
 ## Langkah 6: Simpan dokumen yang dimodifikasi
 
-Terakhir, simpan dokumen yang dimodifikasi:
+Terakhir, simpan dokumen yang diubah:
 
 ```csharp
 builder.Document.Save(dataDir + "ResetListNumber.docx");
@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### T: Apakah mungkin untuk menyesuaikan awalan dan akhiran penomoran daftar yang dimulai ulang di Aspose.Words?
 
- A: Ya, Anda dapat menyesuaikan awalan dan akhiran penomoran daftar yang dimulai ulang di Aspose.Words. Itu`ListLevel` kelas menawarkan properti seperti`ListLevel.NumberPrefix`Dan`ListLevel.NumberSuffix`yang memungkinkan Anda menentukan awalan dan akhiran untuk setiap level dalam daftar. Anda dapat menggunakan properti ini untuk menyesuaikan awalan dan akhiran sesuai kebutuhan.
+ A: Ya, Anda dapat menyesuaikan awalan dan akhiran penomoran daftar yang dimulai ulang di Aspose.Words. Itu`ListLevel`kelas menawarkan properti seperti`ListLevel.NumberPrefix`Dan`ListLevel.NumberSuffix` yang memungkinkan Anda menentukan awalan dan akhiran untuk setiap level dalam daftar. Anda dapat menggunakan properti ini untuk menyesuaikan awalan dan akhiran sesuai kebutuhan.
 
 #### T: Bagaimana cara menentukan nilai penomoran tertentu untuk memulai ulang daftar?
 

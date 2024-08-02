@@ -78,7 +78,7 @@ A tady to máte! Pomocí několika řádků kódu jste pomocí Aspose.Words for 
 
 ## FAQ
 
-### Co je 1Bpp indexovaný obrázek?
+### Co je to indexovaný obrázek 1Bpp?
 Indexovaný obrázek 1Bpp (1 bit na pixel) je formát černobílého obrázku, kde je každý pixel reprezentován jedním bitem, buď 0, nebo 1. Tento formát je vysoce prostorově nenáročný.
 
 ### Mohu převést více stránek dokumentu aplikace Word najednou?

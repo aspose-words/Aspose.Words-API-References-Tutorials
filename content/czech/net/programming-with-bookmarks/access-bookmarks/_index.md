@@ -69,7 +69,7 @@ Vysvětlení:
 - `doc.Range.Bookmarks["MyBookmark3"]`: Toto zpřístupní záložku s názvem "MyBookmark3".
 - `Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];` : Toto uloží zpřístupněnou záložku do`bookmark2` variabilní.
 
-## Krok 4: Manipulujte s obsahem záložek
+## Krok 4: Manipulujte s obsahem záložky
 
 Jakmile vstoupíte do záložky, můžete manipulovat s jejím obsahem. Můžete například aktualizovat text v záložce.
 

@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 3: تحديد حدود الفقرة
 
-الآن، دعونا نضيف بعض الحدود الأنيقة إلى فقرتنا. سنقوم بتحديد المسافة من النص وتعيين أنماط الحدود المختلفة.
+الآن، دعونا نضيف بعض الحدود الأنيقة إلى فقرتنا. سنقوم بتحديد المسافة من النص وتعيين أنماط حدود مختلفة.
 
 ```csharp
 BorderCollection borders = builder.ParagraphFormat.Borders;

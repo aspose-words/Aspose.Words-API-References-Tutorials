@@ -58,7 +58,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 
 ## Etapa 3: salve o documento criptografado
 
-Por fim, salvaremos o documento usando as opções de salvamento configuradas na etapa anterior.
+Por fim, salvaremos o documento utilizando as opções de salvamento configuradas na etapa anterior.
 
 ```csharp
 // Salve o documento criptografado

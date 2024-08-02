@@ -10,7 +10,7 @@ url: /pl/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 ## Wprowadzenie do zaawansowanych technik znajdowania i zamieniania w dokumentach programu Word
 
-W dzisiejszym cyfrowym świecie praca z dokumentami jest zadaniem podstawowym. Zwłaszcza dokumenty Word są szeroko stosowane do różnych celów, od tworzenia raportów po pisanie ważnych listów. Jednym z powszechnych wymagań podczas pracy z dokumentami jest konieczność znalezienia i zamiany określonego tekstu lub formatowania w całym dokumencie. Ten artykuł poprowadzi Cię przez zaawansowane techniki wyszukiwania i zamiany w dokumentach programu Word przy użyciu interfejsu API Aspose.Words dla języka Python.
+W dzisiejszym cyfrowym świecie praca z dokumentami jest zadaniem podstawowym. W szczególności dokumenty Word są szeroko stosowane do różnych celów, od tworzenia raportów po pisanie ważnych listów. Jednym z powszechnych wymagań podczas pracy z dokumentami jest konieczność znalezienia i zamiany określonego tekstu lub formatowania w całym dokumencie. Ten artykuł poprowadzi Cię przez zaawansowane techniki wyszukiwania i zamiany w dokumentach programu Word przy użyciu interfejsu API Aspose.Words dla języka Python.
 
 ## Warunki wstępne
 
@@ -18,7 +18,7 @@ Zanim zagłębimy się w zaawansowane techniki, upewnij się, że spełniasz nas
 
 1.  Instalacja Pythona: Upewnij się, że Python jest zainstalowany w Twoim systemie. Można go pobrać z[Tutaj](https://www.python.org/downloads/).
 
-2.  Aspose.Words dla Pythona: Musisz mieć zainstalowany Aspose.Words dla Pythona. Można go pobrać z[Tutaj](https://releases.aspose.com/words/python/).
+2. Aspose.Words dla Pythona: Musisz mieć zainstalowany Aspose.Words dla Pythona. Można go pobrać z[Tutaj](https://releases.aspose.com/words/python/).
 
 3. Przygotowanie dokumentu: Przygotuj dokument programu Word, na którym chcesz wykonać operacje wyszukiwania i zamiany.
 
@@ -75,7 +75,7 @@ doc.range.replace("old_text", "new_text", False, False, condition_callback)
 
 ## Krok 6: Zamiana formatowania
 
-Zastąp tekst, zachowując formatowanie:
+Zamień tekst, zachowując formatowanie:
 
 ```python
 def format_callback(sender, args):

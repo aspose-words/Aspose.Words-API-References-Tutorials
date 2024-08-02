@@ -11,7 +11,7 @@ url: /ko/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 
 안녕하세요, 동료 개발자 여러분! .NET용 Aspose.Words를 사용하여 Word 문서에 이미지를 WMF(Windows 메타파일)로 저장하는 방법이 궁금하신가요? 글쎄, 당신은 바로 이곳에 있어요! 이 튜토리얼에서는 .NET용 Aspose.Words의 세계를 살펴보고 이미지를 WMF로 저장하는 방법을 살펴보겠습니다. 이미지 품질을 유지하고 다양한 플랫폼 간의 호환성을 보장하는 데 매우 편리합니다. 준비가 된? 시작하자!
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 원활하게 진행하는 데 필요한 모든 것이 있는지 확인하겠습니다.
 

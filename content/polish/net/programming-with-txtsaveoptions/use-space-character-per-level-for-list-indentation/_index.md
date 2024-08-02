@@ -2,118 +2,106 @@
 title: Użyj znaku spacji na poziomie dla wcięcia listy
 linktitle: Użyj znaku spacji na poziomie dla wcięcia listy
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący używania znaku spacji na każdym poziomie w celu wcięcia listy w Aspose.Words dla .NET. Z łatwością twórz dobrze zorganizowane dokumenty programu Word.
+description: Dowiedz się, jak tworzyć listy wielopoziomowe z wcięciem spacji w Aspose.Words dla .NET. Przewodnik krok po kroku dotyczący precyzyjnego formatowania dokumentu.
 type: docs
 weight: 10
 url: /pl/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words dla .NET to potężna biblioteka do tworzenia, edytowania i manipulowania dokumentami Word w aplikacji C#. Wśród funkcji oferowanych przez Aspose.Words jest możliwość użycia jednego znaku spacji na poziom do wcięcia list. W tym przewodniku pokażemy, jak używać kodu źródłowego C# Aspose.Words dla .NET do wdrożenia tej funkcjonalności.
+## Wstęp
 
-## Zrozumienie biblioteki Aspose.Words
+Jeśli chodzi o formatowanie dokumentów, zwłaszcza podczas pracy z listami, kluczowa jest precyzja. W scenariuszach, w których konieczne jest utworzenie dokumentów o różnych poziomach wcięć, Aspose.Words dla .NET oferuje potężne narzędzia do obsługi tego zadania. Szczególną funkcją, która może się przydać, jest konfiguracja wcięć list w plikach tekstowych. W tym przewodniku dowiesz się, jak używać spacji do wcięcia listy, zapewniając, że dokument zachowa pożądaną strukturę i czytelność.
 
-Przed zagłębieniem się w kod ważne jest zapoznanie się z biblioteką Aspose.Words dla platformy .NET. Aspose.Words to popularna biblioteka, która sprawia, że przetwarzanie tekstu w dokumentach Word jest łatwe i wydajne. Oferuje szeroką gamę funkcjonalności umożliwiających tworzenie, modyfikowanie i manipulowanie dokumentami Word, w tym zarządzanie listami i wcięciami.
+## Warunki wstępne
 
-## Tworzenie dokumentu i dodawanie treści
+Zanim zagłębisz się w samouczek, oto czego będziesz potrzebować:
 
-Pierwszym krokiem jest utworzenie nowego dokumentu i dodanie do niego treści. Użyj klasy Document, aby utworzyć nową instancję dokumentu. Następnie użyj klasy DocumentBuilder, aby dodać tekst i utworzyć listę z wieloma poziomami wcięć. Oto przykład :
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli jeszcze go nie masz, możesz go pobrać ze strony[Strona Aspose](https://releases.aspose.com/words/net/).
+- Visual Studio: środowisko programistyczne do pisania i testowania kodu.
+- Podstawowa znajomość języka C#: Znajomość języka C# i platformy .NET pomoże Ci płynnie działać.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć pracę z Aspose.Words, musisz zaimportować niezbędne przestrzenie nazw. Oto jak możesz uwzględnić je w swoim projekcie:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Rozłóżmy proces tworzenia dokumentu z listą wielopoziomową i określaniem spacji dla wcięć. 
+
+## Krok 1: Skonfiguruj swój dokument
+
+ Najpierw musisz utworzyć nowy dokument i zainicjować plik`DocumentBuilder` obiekt. Obiekt ten umożliwi Ci łatwe dodawanie treści i formatowanie ich według potrzeb.
+
+```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// Utwórz dokument i dodaj treść
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ W tym fragmencie zamień`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką, w której chcesz zapisać dokument.
+
+## Krok 2: Utwórz listę z wieloma poziomami wcięć
+
+ Z`DocumentBuilder` na przykład możesz teraz utworzyć listę z różnymi poziomami wcięć. Użyj`ListFormat` właściwość, aby zastosować numerację i wciąć elementy listy zgodnie z wymaganiami.
+
+```csharp
 // Utwórz listę z trzema poziomami wcięć
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-W tym przykładzie tworzymy nowy dokument i za pomocą narzędzia DocumentBuilder dodajemy tekst i tworzymy listę z trzema poziomami wcięć. Dodaliśmy trzy pozycje do listy, a każda pozycja ma wcięcie o dodatkowy poziom.
+ Na tym etapie`ApplyNumberDefault` konfiguruje format listy i`ListIndent` służy do zwiększania poziomu wcięcia dla każdego kolejnego elementu listy.
 
-## Użycie jednego znaku spacji na poziom w celu wcięcia listy
+## Krok 3: Skonfiguruj spację dla wcięcia
 
-Po dodaniu treści możemy teraz skonfigurować wcięcie list, używając jednego znaku spacji na poziom. W tym celu używamy klasy TxtSaveOptions i ustawiamy właściwość ListIndentation.Count na liczbę poziomów wcięć, a właściwość ListIndentation.Character na używany znak spacji. Oto jak:
+Teraz, gdy masz już skonfigurowaną listę, następnym krokiem jest skonfigurowanie sposobu obsługi wcięć listy podczas zapisywania dokumentu w pliku tekstowym. Użyjesz`TxtSaveOptions` aby określić, że w przypadku wcięć należy używać spacji.
 
 ```csharp
+// Do wcięcia listy użyj jednego znaku spacji na poziom
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+ Tutaj,`ListIndentation.Count` określa liczbę znaków spacji na poziom wcięcia oraz`ListIndentation.Character` ustawia rzeczywisty znak używany do wcięcia.
+
+## Krok 4: Zapisz dokument z określonymi opcjami
+
+Na koniec zapisz dokument, korzystając ze skonfigurowanych opcji. Spowoduje to zastosowanie ustawień wcięć i zapisanie pliku w żądanym formacie.
+
+```csharp
+// Zapisz dokument z określonymi opcjami
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-tym przykładzie tworzymy instancję TxtSaveOptions i ustawiamy właściwość ListIndentation.Count na 3, aby wskazać, że na liście są trzy poziomy wcięć. Ustawiamy także właściwość ListIndentation.Character na znak spacji („ ”), którego chcemy użyć do wcięcia.
-
-### Przykładowy kod źródłowy funkcji „Użyj jednego znaku spacji na poziom dla wcięcia listy” w Aspose.Words dla .NET
-
-Oto kompletny przykładowy kod źródłowy funkcji „Użyj jednego znaku spacji na poziom dla wcięcia listy” w Aspose.Words dla .NET:
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             // Ścieżka do katalogu dokumentów
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             // Utwórz dokument i dodaj treść
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             // Utwórz listę z trzema poziomami wcięć
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             // Do wcięcia listy użyj jednego znaku spacji na poziom
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             // Zapisz dokument z określonymi opcjami
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+ Ten fragment kodu zapisuje dokument w ścieżce określonej w`dataDir` z nazwą pliku`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. Zapisany plik będzie miał listę sformatowaną zgodnie z ustawieniami wcięć.
 
 ## Wniosek
 
-tym przewodniku wyjaśniliśmy, jak używać Aspose.Words dla .NET do zastosowania funkcji „Użyj jednego znaku spacji na poziom dla wcięcia listy”. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo skonfigurować wcięcia list w dokumentach programu Word, używając jednego znaku spacji na poziom. Aspose.Words oferuje ogromną elastyczność i możliwości przetwarzania tekstu z formatowaniem tekstu i zarządzaniem listami, umożliwiając tworzenie dokumentów o dobrze zorganizowanej strukturze w aplikacji C#.
+Wykonując poniższe kroki, udało Ci się utworzyć dokument z wielopoziomowym wcięciem listy, używając spacji do formatowania. Takie podejście gwarantuje, że listy będą dobrze zorganizowane i łatwe do odczytania, nawet jeśli zostaną zapisane w postaci plików tekstowych. Aspose.Words dla .NET zapewnia solidne narzędzia do manipulacji dokumentami, a opanowanie tych funkcji może znacznie usprawnić przepływ pracy w przetwarzaniu dokumentów.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-#### P: Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do tworzenia, edytowania i manipulowania dokumentami Word w aplikacji C#. Oferuje wiele funkcji do przetwarzania słów w dokumentach Word, w tym możliwość użycia jednej spacji na poziom w przypadku list wcięć.
+### Czy mogę używać innych znaków do wcięcia listy oprócz spacji?
+ Tak, możesz określić różne znaki dla wcięcia listy, ustawiając opcję`Character` nieruchomość w`TxtSaveOptions`.
 
-#### P: Jak mogę użyć jednej spacji na poziom do wcięcia listy w Aspose.Words dla .NET?
-Możesz użyć jednej spacji na poziom dla wcięcia listy, wykonując następujące kroki:
+### Jak zastosować wypunktowania zamiast liczb na listach?
+ Używać`ListFormat.ApplyBulletDefault()` zamiast`ApplyNumberDefault()` aby utworzyć listę punktowaną.
 
- Utwórz nowy dokument za pomocą`Document` klasa.
+### Czy mogę dynamicznie dostosowywać liczbę spacji dla wcięć?
+ Tak, możesz dostosować`ListIndentation.Count` właściwość, aby ustawić liczbę spacji w oparciu o Twoje wymagania.
 
- Użyj`DocumentBuilder`class, aby dodać treść do dokumentu i utworzyć listę z wieloma poziomami wcięć.
+### Czy można zmienić wcięcie listy po utworzeniu dokumentu?
+Tak, w dowolnym momencie przed zapisaniem dokumentu możesz zmodyfikować ustawienia formatowania listy i wcięć.
 
- Po dodaniu treści i skonfigurowaniu wcięcia listy użyj opcji`TxtSaveOptions` klasę i ustaw`ListIndentation.Count` właściwość do liczby poziomów wcięcia i`ListIndentation.Character` własność przestrzeni (`' '`) używać.
-
- Zapisz dokument z określonymi opcjami za pomocą`Save` metoda`Document` klasa.
-
-#### P: Czy Aspose.Words obsługuje inne znaki w przypadku wcięcia listy?
-Tak, Aspose.Words obsługuje inne znaki w przypadku list wcięć. Można używać znaków innych niż białe znaki, takich jak tabulatory (`'\t'` ) lub inne znaki specjalne, ustawiając opcję`ListIndentation.Character` właściwość do żądanego znaku.
-
-#### P: Czy można dostosować liczbę spacji na poziom dla wcięcia listy?
- Tak, możesz dostosować liczbę spacji na poziom wcięcia listy, zmieniając wartość parametru`ListIndentation.Count` nieruchomość w`TxtSaveOptions` klasa. Możesz określić liczbę spacji dla każdego poziomu wcięcia.
-
-#### P: Jakie inne funkcje oferuje Aspose.Words do zarządzania listami?
-Aspose.Words oferuje wiele funkcji do zarządzania listami w dokumentach Word. Możesz tworzyć listy numerowane lub punktowane, ustawiać poziomy wcięć, dostosowywać styl list, dodawać elementy list i nie tylko.
+### Jakie inne formaty dokumentów obsługują ustawienia wcięć list?
+Oprócz plików tekstowych ustawienia wcięć list można zastosować do innych formatów, takich jak DOCX, PDF i HTML, podczas korzystania z Aspose.Words.

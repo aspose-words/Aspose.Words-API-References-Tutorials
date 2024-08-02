@@ -10,7 +10,7 @@ url: /nl/java/document-manipulation/using-document-options-and-settings/
 
 ## Inleiding tot het gebruik van documentopties en -instellingen in Aspose.Words voor Java
 
-In deze uitgebreide handleiding onderzoeken we hoe u de krachtige functies van Aspose.Words voor Java kunt gebruiken om met documentopties en -instellingen te werken. Of u nu een doorgewinterde ontwikkelaar bent of net begint, u vindt er waardevolle inzichten en praktische voorbeelden om uw documentverwerkingstaken te verbeteren.
+In deze uitgebreide handleiding onderzoeken we hoe u de krachtige functies van Aspose.Words voor Java kunt gebruiken om met documentopties en -instellingen te werken. Of u nu een doorgewinterde ontwikkelaar bent of net begint, u vindt waardevolle inzichten en praktische voorbeelden om uw documentverwerkingstaken te verbeteren.
 
 ## Documenten optimaliseren voor compatibiliteit
 

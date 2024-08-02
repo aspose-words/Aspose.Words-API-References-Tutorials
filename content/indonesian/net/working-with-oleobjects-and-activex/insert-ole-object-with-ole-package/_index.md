@@ -120,7 +120,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 #### T: Dapatkah Anda memberikan contoh lengkap menyisipkan objek OLE dengan paket OLE dengan Aspose.Words untuk .NET?
 
-A: Berikut adalah contoh kode lengkap untuk menyisipkan objek OLE dengan paket OLE menggunakan Aspose.Words untuk .NET. Pastikan untuk mengimpor referensi yang diperlukan dan ikuti langkah-langkah yang dijelaskan sebelumnya untuk mengintegrasikan kode ini ke dalam proyek Anda:
+J: Berikut adalah contoh kode lengkap untuk menyisipkan objek OLE dengan paket OLE menggunakan Aspose.Words untuk .NET. Pastikan untuk mengimpor referensi yang diperlukan dan ikuti langkah-langkah yang dijelaskan sebelumnya untuk mengintegrasikan kode ini ke dalam proyek Anda:
 
 ```csharp
 Document doc = new Document();

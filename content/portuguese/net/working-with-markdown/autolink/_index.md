@@ -45,7 +45,7 @@ Finalmente, podemos salvar o documento no formato desejado.
 // Use um construtor de documentos para adicionar conteúdo ao documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Insira o hyperlink.
+// Insira o hyperlink.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", falso);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ Parabéns! Agora você aprendeu como usar o recurso "Autolink" com Aspose.Words 
 
 #### P: É possível personalizar o texto de exibição de um link automático no Aspose.Words?
 
- R: Sim, você pode personalizar o texto de exibição de um link automático no Aspose.Words. Em vez de usar o endereço URL como texto de exibição, você pode usar qualquer outro texto substituindo o conteúdo entre os`<a>` Tag. Por exemplo, você pode usar`<a href="https://www.aspose.com">Click here</a>` para exibir o texto "Clique aqui" como um link automático.
+ R: Sim, você pode personalizar o texto de exibição de um link automático no Aspose.Words. Em vez de usar o endereço URL como texto de exibição, você pode usar qualquer outro texto substituindo o conteúdo entre os`<a>` Tag. Por exemplo, você pode usar`<a href="https://www.aspose.com">Click here</a>`para exibir o texto "Clique aqui" como um link automático.
 
 #### P: Como posso adicionar atributos adicionais a um link automático no Aspose.Words?
 
-R: Para adicionar atributos adicionais a um link automático no Aspose.Words, você pode usar atributos HTML adicionais dentro do`<a>` marcação. Por exemplo, você pode usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir o link em uma nova janela ou guia usando o` attribute target="_blank"`.
+ R: Para adicionar atributos adicionais a um link automático no Aspose.Words, você pode usar atributos HTML adicionais dentro do`<a>` marcação. Por exemplo, você pode usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir o link em uma nova janela ou guia usando o` attribute target="_blank"`.

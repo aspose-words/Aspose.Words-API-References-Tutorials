@@ -79,7 +79,7 @@ bookmark.Name = "RenamedBookmark";
 
 ## 5. Adım: Yer İşareti Metnini Güncelleyin
 
- Şimdi heyecan verici kısım geliyor: yer imiyle ilişkili gerçek içeriğin değiştirilmesi. Aspose.Words doğrudan güncellemenizi sağlar`Text` mülkiyeti`Bookmark` nesne:
+ Şimdi heyecan verici kısım geliyor: yer imiyle ilişkili gerçek içeriğin değiştirilmesi. Aspose.Words doğrudan güncellemenize olanak tanır`Text` mülkiyeti`Bookmark` nesne:
 
 ```csharp
 bookmark.Text = "This is a new bookmarked text.";
@@ -107,7 +107,7 @@ Bu adımları izleyerek Aspose.Words'ün Word belgelerinizdeki yer imi verilerin
 
 ### Programlı olarak yeni yer imleri oluşturabilir miyim?
 
-Kesinlikle! Aspose.Words, belgenizdeki belirli konumlara yer imleri eklemek için yöntemler sunar. Ayrıntılı talimatlar için belgelere bakın.
+Kesinlikle! Aspose.Words, belgenizdeki belirli konumlara yer imleri eklemek için yöntemler sağlar. Ayrıntılı talimatlar için belgelere bakın.
 
 ### Tek bir belgede birden fazla yer imini güncelleyebilir miyim?
 

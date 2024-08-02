@@ -60,7 +60,7 @@ il gioco è fatto! Eliminare tutte le sezioni in un documento Word utilizzando A
 ## Domande frequenti
 
 ### Cos'è Aspose.Words per .NET?
- Aspose.Words per .NET è una potente libreria per manipolare i documenti Word a livello di codice. Puoi trovare maggiori informazioni[Qui](https://reference.aspose.com/words/net/).
+ Aspose.Words per .NET è una potente libreria per manipolare i documenti Word a livello di codice. Puoi trovare ulteriori informazioni[Qui](https://reference.aspose.com/words/net/).
 
 ### Posso provare Aspose.Words per .NET gratuitamente?
  Sì, puoi scaricare una versione di prova gratuita da[Qui](https://releases.aspose.com/).

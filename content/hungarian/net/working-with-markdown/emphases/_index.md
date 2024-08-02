@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### K: Hogyan emelhetek ki szöveget a Markdown segítségével?
 
-V: A Markdown használatával szöveg kiemeléséhez egyszerűen vegye körül a szöveget a megfelelő szimbólumokkal. Használat`*` vagy`_` dőlt betűhöz,`**` vagy`__` merész, és`~~` az áthúzáshoz.
+ V: A Markdown használatával szöveg kiemeléséhez egyszerűen vegye körül a szöveget a megfelelő szimbólumokkal. Használat`*` vagy`_` dőlt betűhöz,`**` vagy`__` merész, és`~~` az áthúzáshoz.
 
 #### K: Kombinálhatunk-e különböző kiemeléseket ugyanabban a szövegben?
 

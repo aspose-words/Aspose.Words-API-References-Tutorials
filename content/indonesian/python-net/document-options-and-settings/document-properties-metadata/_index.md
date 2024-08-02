@@ -12,7 +12,7 @@ url: /id/python-net/document-options-and-settings/document-properties-metadata/
 
 Properti dokumen dan metadata merupakan komponen penting dari dokumen elektronik. Mereka memberikan informasi penting tentang dokumen, seperti penulis, tanggal pembuatan, dan kata kunci. Metadata dapat mencakup informasi kontekstual tambahan, yang membantu dalam kategorisasi dan pencarian dokumen. Aspose.Words untuk Python menyederhanakan proses pengelolaan aspek-aspek ini secara terprogram.
 
-## Memulai Aspose.Words untuk Python
+## Memulai dengan Aspose.Words untuk Python
 
 Sebelum kita mendalami pengelolaan properti dokumen dan metadata, mari siapkan lingkungan kita dengan Aspose.Words untuk Python.
 

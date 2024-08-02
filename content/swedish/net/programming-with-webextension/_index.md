@@ -16,4 +16,4 @@ Genom att följa dessa tutorials kommer du att fullt ut kunna utnyttja funktione
 ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Använda aktivitetsrutor för webbtillägg](./using-web-extension-task-panes/) | Steg-för-steg-guide för hur du använder webbtilläggsuppgiftsrutor med Aspose.Words för .NET. |
+| [Använda aktivitetsrutor för webbtillägg](./using-web-extension-task-panes/) | Lär dig hur du lägger till och konfigurerar webbtilläggsuppgiftsrutor i Word-dokument med Aspose.Words för .NET i denna detaljerade, steg-för-steg handledning. |

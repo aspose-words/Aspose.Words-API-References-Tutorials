@@ -35,7 +35,7 @@ Muy bien, dividamos el proceso de creación de una tabla en un documento de Word
 
 ## Paso 1: Inicialice el documento y DocumentBuilder
 
- Primero, necesitamos configurar nuestro documento y el generador de documentos. El`Document` la clase representa el documento de Word y`DocumentBuilder` es nuestra práctica herramienta para agregarle contenido.
+ Primero, necesitamos configurar nuestro documento y el generador de documentos. El`Document` La clase representa el documento de Word y`DocumentBuilder` es nuestra práctica herramienta para agregarle contenido.
 
 ```csharp
 Document doc = new Document();

@@ -2,20 +2,38 @@
 title: Thay đổi nguồn văn hóa cập nhật trường
 linktitle: Thay đổi nguồn văn hóa cập nhật trường
 second_title: API xử lý tài liệu Aspose.Words
-description: Thay đổi nguồn văn hóa cập nhật trường, Hướng dẫn từng bước để sửa đổi nguồn văn hóa trong Aspose.Words cho .NET.
+description: Tìm hiểu cách thay đổi nguồn văn hóa cập nhật trường trong Aspose.Words cho .NET bằng hướng dẫn này. Kiểm soát định dạng ngày dựa trên các nền văn hóa khác nhau một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/change-field-update-culture-source/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình thay đổi nguồn văn hóa cập nhật trường trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách sửa đổi nguồn văn hóa, bạn có thể kiểm soát định dạng ngày trong quá trình cập nhật trường và phối thư. Chúng tôi sẽ cung cấp cho bạn mã nguồn C# cần thiết và hướng dẫn từng bước để đạt được điều này.
+Trong hướng dẫn này, chúng ta sẽ đi sâu vào thế giới của Aspose.Words dành cho .NET và khám phá cách thay đổi nguồn văn hóa cập nhật trường. Nếu bạn đang xử lý các tài liệu Word bao gồm các trường ngày tháng và bạn cần kiểm soát cách các ngày này được định dạng dựa trên các nền văn hóa khác nhau thì hướng dẫn này là dành cho bạn. Hãy xem qua quy trình từng bước một để đảm bảo bạn nắm bắt từng khái niệm và có thể áp dụng nó một cách hiệu quả trong các dự án của mình.
 
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-- Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tạo Tài liệu và DocumentBuilder
-Để bắt đầu, hãy tạo một thể hiện của lớp Document và đối tượng DocumentBuilder:
+Trước khi chúng tôi chuyển sang mã, hãy đảm bảo bạn có những điều sau:
+
+-  Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Bất kỳ IDE tương thích .NET nào (ví dụ: Visual Studio).
+- Kiến thức cơ bản về C#: Hướng dẫn này giả định rằng bạn có hiểu biết cơ bản về lập trình C#.
+
+## Nhập không gian tên
+
+Đầu tiên, hãy nhập các không gian tên cần thiết cho dự án của chúng ta. Điều này sẽ đảm bảo rằng chúng ta có quyền truy cập vào tất cả các lớp và phương thức cần thiết do Aspose.Words cung cấp.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Bây giờ, hãy chia ví dụ thành nhiều bước để giúp bạn hiểu cách thay đổi nguồn văn hóa cập nhật trường trong Aspose.Words cho .NET.
+
+## Bước 1: Khởi tạo tài liệu
+
+ Bước đầu tiên là tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder`. Điều này đặt nền tảng cho việc xây dựng và thao tác với tài liệu Word của chúng ta.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,80 +41,58 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 2: Chèn nội dung với ngôn ngữ cụ thể
-Tiếp theo, đặt ngôn ngữ thành tiếng Đức và chèn các trường có định dạng ngày:
+## Bước 2: Chèn các trường có ngôn ngữ cụ thể
+
+Tiếp theo, chúng ta cần chèn các trường vào tài liệu. Trong ví dụ này, chúng tôi sẽ chèn hai trường ngày. Chúng tôi sẽ đặt ngôn ngữ của phông chữ thành tiếng Đức (LocaleId = 1031) để chứng minh văn hóa ảnh hưởng đến định dạng ngày như thế nào.
 
 ```csharp
-builder.Font.LocaleId = 1031;
+builder.Font.LocaleId = 1031; // tiếng Đức
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-Trong đoạn mã trên, chúng tôi đặt ngôn ngữ phông chữ thành tiếng Đức (ID ngôn ngữ 1031) và chèn hai trường có định dạng ngày cụ thể.
+## Bước 3: Đặt nguồn văn hóa cập nhật trường
 
-## Bước 3: Thay đổi nguồn văn hóa cập nhật trường
-Để thay đổi nguồn văn hóa cập nhật trường, hãy sử dụng lớp FieldOptions:
+ Để kiểm soát văn hóa được sử dụng khi cập nhật các trường, chúng tôi đặt`FieldUpdateCultureSource` tài sản của`FieldOptions`lớp học. Thuộc tính này xác định liệu văn hóa được lấy từ mã trường hay tài liệu.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
-
-Trong ví dụ này, chúng tôi đặt văn hóa được sử dụng trong quá trình cập nhật trường được chọn từ văn hóa được trường sử dụng.
 
 ## Bước 4: Thực hiện trộn thư
-Thực hiện thao tác trộn thư và chỉ định giá trị ngày cho trường "Date2":
+
+Bây giờ chúng ta cần thực hiện trộn thư để điền dữ liệu thực tế vào các trường. Trong ví dụ này, chúng tôi sẽ đặt trường ngày thứ hai (`Date2`) đến ngày 1 tháng 1 năm 2011.
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
-
-Trong đoạn mã này, chúng tôi thực hiện thao tác trộn thư và cung cấp giá trị DateTime cho trường "Date2".
 
 ## Bước 5: Lưu tài liệu
-Lưu tài liệu đã sửa đổi vào một tệp bằng phương thức Lưu của lớp Tài liệu:
+
+Cuối cùng, chúng tôi lưu tài liệu vào thư mục được chỉ định. Bước này hoàn tất quá trình thay đổi nguồn văn hóa cập nhật trường.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
-```
-
-### Mã nguồn ví dụ để thay đổi nguồn văn hóa cập nhật trường bằng Aspose.Words cho .NET
-Đây là mã nguồn hoàn chỉnh để thay đổi nguồn văn hóa cập nhật trường trong tài liệu Word bằng Aspose.Words cho .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Font.LocaleId = 1031;
-builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
-builder.Write(" - ");
-builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
-
-doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
-
-doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
-
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Phần kết luận
-Chúc mừng! Bạn đã học thành công cách thay đổi nguồn văn hóa cập nhật trường trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể kiểm soát văn hóa được sử dụng để định dạng ngày trong quá trình cập nhật trường và phối thư. Tùy chỉnh nguồn nuôi cấy theo yêu cầu của bạn để đảm bảo ngày tháng chính xác và nhất quán.
 
-### Câu hỏi thường gặp
+Và bạn có nó rồi đấy! Bạn đã thay đổi thành công nguồn văn hóa cập nhật trường trong Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng tài liệu Word của mình hiển thị ngày tháng và các giá trị trường khác theo cài đặt văn hóa đã chỉ định. Điều này có thể đặc biệt hữu ích khi tạo tài liệu cho khán giả quốc tế.
 
-#### Câu hỏi: Làm cách nào tôi có thể thay đổi nguồn văn hóa cập nhật trường trong Aspose.Words cho .NET?
+## Câu hỏi thường gặp
 
- Trả lời: Để thay đổi nguồn văn hóa cập nhật trường trong Aspose.Words cho .NET, bạn có thể sử dụng`Document.FieldOptions.CultureSource` thuộc tính và đặt giá trị của nó thành`FieldCultureSource.FieldCode` hoặc`FieldCultureSource.CurrentThread` . Ví dụ, bạn có thể sử dụng`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` để sử dụng văn hóa được xác định trong mã trường.
+###  Mục đích của việc thiết lập là gì`LocaleId`?
+ Các`LocaleId` chỉ định cài đặt văn hóa cho văn bản, điều này ảnh hưởng đến cách định dạng ngày tháng và dữ liệu nhạy cảm với ngôn ngữ khác.
 
-#### Câu hỏi: Làm cách nào tôi có thể chỉ định một nền văn hóa cụ thể để cập nhật các trường trong Aspose.Words cho .NET?
+### Tôi có thể sử dụng ngôn ngữ khác ngoài tiếng Đức không?
+ Có, bạn có thể đặt`LocaleId`tới bất kỳ định danh địa phương hợp lệ nào. Ví dụ: 1033 cho tiếng Anh (Hoa Kỳ).
 
- Trả lời: Để chỉ định một nền văn hóa cụ thể để cập nhật các trường trong Aspose.Words cho .NET, bạn có thể sử dụng`Document.FieldOptions.FieldUpdateCultureInfo` thuộc tính và thiết lập`CultureInfo` đối tượng tương ứng với nền văn hóa mong muốn. Ví dụ, bạn có thể sử dụng`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` để chỉ rõ văn hóa Pháp (Pháp).
+###  Điều gì xảy ra nếu tôi không đặt`FieldUpdateCultureSource` property?
+Nếu thuộc tính này không được đặt thì cài đặt văn bản mặc định của tài liệu sẽ được sử dụng khi cập nhật các trường.
 
-#### Câu hỏi: Có thể tắt tính năng cập nhật trường tự động trong Aspose.Words cho .NET không?
+### Có thể cập nhật các trường dựa trên văn hóa của tài liệu thay vì mã trường không?
+ Có, bạn có thể đặt`FieldUpdateCultureSource` ĐẾN`FieldUpdateCultureSource.Document` để sử dụng cài đặt văn hóa của tài liệu.
 
- Trả lời: Có, có thể tắt cập nhật trường tự động trong Aspose.Words cho .NET. Bạn có thể dùng`Document.FieldOptions.UpdateFields` thuộc tính và đặt nó thành`false` để ngăn các trường tự động cập nhật. Điều này cho phép bạn kiểm soát việc cập nhật các trường theo cách thủ công nếu cần.
-
-#### Câu hỏi: Làm cách nào tôi có thể cập nhật thủ công các trường tài liệu trong Aspose.Words cho .NET?
-
- Trả lời: Để cập nhật thủ công các trường trong tài liệu trong Aspose.Words cho .NET, bạn có thể sử dụng`Field.Update` phương pháp riêng cho từng trường. Ví dụ, bạn có thể sử dụng`field.Update()` để cập nhật trường cụ thể.
+### Làm cách nào để định dạng ngày theo mẫu khác?
+ Bạn có thể thay đổi mẫu định dạng ngày trong`InsertField` phương pháp bằng cách sửa đổi`\\@` giá trị chuyển đổi.

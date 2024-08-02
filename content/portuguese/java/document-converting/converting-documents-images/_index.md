@@ -58,7 +58,7 @@ public class DocumentToImageConverter {
 
 ## Conclusão
 
-conversão de documentos em imagens em Java é facilitada com Aspose.Words for Java. Ele fornece uma maneira robusta e eficiente de lidar com conversões de documentos. Você pode integrar essa funcionalidade em seus aplicativos Java para atender a diversos requisitos de processamento de documentos.
+conversão de documentos em imagens em Java é facilitada com Aspose.Words for Java. Ele fornece uma maneira robusta e eficiente de lidar com conversões de documentos. Você pode integrar essa funcionalidade em seus aplicativos Java para atender a vários requisitos de processamento de documentos.
 
 ## Perguntas frequentes
 

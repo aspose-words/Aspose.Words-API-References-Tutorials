@@ -9,7 +9,7 @@ url: /fr/net/join-and-append-documents/simple-append-document/
 ---
 ## Introduction
 
-Salut! Avez-vous déjà eu besoin de fusionner deux documents Word de manière transparente ? Eh bien, vous avez de la chance ! Aujourd'hui, nous plongeons dans le monde d'Aspose.Words for .NET, une bibliothèque puissante qui vous permet de manipuler des documents Word par programme. Plus précisément, nous nous concentrerons sur la façon d'ajouter un document à un autre en quelques étapes simples. Que vous créiez des rapports, combiniez des sections d'un projet ou rationalisiez simplement la gestion de documents, ce guide est là pour vous. Alors, commençons!
+Salut! Avez-vous déjà eu besoin de fusionner deux documents Word de manière transparente ? Eh bien, vous avez de la chance ! Aujourd'hui, nous plongeons dans le monde d'Aspose.Words for .NET, une bibliothèque puissante qui vous permet de manipuler des documents Word par programme. Plus précisément, nous nous concentrerons sur la façon d'ajouter un document à un autre en quelques étapes simples. Que vous créiez des rapports, combiniez des sections d'un projet ou rationalisiez simplement la gestion de documents, ce guide est là pour vous. Alors, commençons!
 
 ## Conditions préalables
 

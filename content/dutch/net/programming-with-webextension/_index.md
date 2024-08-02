@@ -16,4 +16,4 @@ Door deze tutorials te volgen, kunt u de mogelijkheden van webextensies in uw Wo
 ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Taakvensters voor webextensies gebruiken](./using-web-extension-task-panes/) | Stapsgewijze handleiding voor het gebruik van taakvensters voor webextensies met Aspose.Words voor .NET. |
+| [Taakvensters voor webextensies gebruiken](./using-web-extension-task-panes/) | Leer hoe u taakvensters voor webextensies kunt toevoegen en configureren in Word-documenten met behulp van Aspose.Words voor .NET in deze gedetailleerde, stapsgewijze zelfstudie. |

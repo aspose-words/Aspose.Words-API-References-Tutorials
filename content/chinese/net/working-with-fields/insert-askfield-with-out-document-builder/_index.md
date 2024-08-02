@@ -2,55 +2,37 @@
 title: 不使用文档生成器插入 ASKField
 linktitle: 不使用文档生成器插入 ASKField
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入 ASK 字段。
+description: 了解如何在不使用 Aspose.Words for .NET 中的 Document Builder 的情况下插入 ASK 字段。按照本指南动态增强您的 Word 文档。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## 介绍
 
-以下是分步指南，用于解释下面的 C# 源代码，该代码使用了 Aspose.Words for .NET 的“插入不带 DocumentBuilder 的 ASK 字段”功能。请务必仔细遵循每个步骤以获得所需的结果。
+您是否希望使用 Aspose.Words for .NET 掌握文档自动化？您来对地方了！今天，我们将引导您了解如何在不使用文档生成器的情况下插入 ASK 字段。当您希望文档提示用户进行特定输入时，这是一个很棒的功能，可让您的 Word 文档更具交互性和动态性。所以，让我们深入研究并让您的文档更智能！
 
-## 步骤 1：文档目录设置
+## 先决条件
 
-在提供的代码中，您必须指定文档的目录。将值“YOUR DOCUMENT DIRECTORY”替换为您的文档目录的相应路径。
+在我们开始编写代码之前，让我们先确保所有设置都已完成：
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET：请确保您已安装此库。如果没有，您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：合适的 IDE，如 Visual Studio。
+3. .NET Framework：确保您已安装.NET Framework。
 
-## 步骤 2：创建文档和段落
+太棒了！现在一切就绪，让我们开始导入必要的命名空间。
 
-我们首先创建一个新文档并获取第一段。
+## 导入命名空间
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## 步骤 3：插入 ASK 字段
-
-我们使用`AppendField()`方法将 ASK 字段插入段落。
+首先，我们需要导入 Aspose.Words 命名空间来访问 Aspose.Words for .NET 的所有功能。操作方法如下：
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-然后，我们通过指定所需的值来配置 ASK 字段的各种属性。
+## 步骤 1：创建新文档
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
-最后，我们称`Update()`方法来更新字段。
-
-```csharp
-field. Update();
-```
-
-### 使用 Aspose.Words for .NET 插入 ASK 字段（无需 DocumentBuilder）的源代码示例
+在插入 ASK 字段之前，我们需要一个文档来处理。以下是创建新文档的方法：
 
 ```csharp
 //文档目录的路径。
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 //文档创建。
 Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
+此代码片段设置了一个新的 Word 文档，我们将在其中添加 ASK 字段。
+
+## 步骤 2：访问段落节点
+
+在 Word 文档中，内容被组织成节点。我们需要访问第一个段落节点，我们将在其中插入 ASK 字段：
+
+```csharp
+Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
+
+这行代码检索文档中的第一个段落，为插入 ASK 字段做好准备。
+
+## 步骤 3：插入 ASK 字段
+
+现在，让我们进入正题——插入 ASK 字段。此字段将在文档打开时提示用户输入。
+
+```csharp
 //插入 ASK 字段。
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+在这里，我们在段落中添加一个 ASK 字段。很简单，对吧？
 
-field. Update();
+## 步骤 4：配置 ASK 字段
 
+我们需要设置一些属性来定义 ASK 字段的行为方式。让我们配置书签名称、提示文本、默认响应和邮件合并行为：
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName：ASK 字段的唯一标识符。
+- PromptText：提示用户输入的文本。
+- DefaultResponse：用户可以更改的预填充响应。
+- PromptOnceOnMailMerge：确定在邮件合并期间提示是否只出现一次。
+
+## 步骤 5：更新字段
+
+配置 ASK 字段后，我们需要更新它以确保所有设置都正确应用：
+
+```csharp
+field.Update();
+```
+
+此命令确保我们的 ASK 字段已准备就绪并在文档中正确设置。
+
+## 步骤 6：保存文档
+
+最后，我们将文档保存到我们指定的目录：
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-在这个例子中，我们创建了一个新文档，插入了一个 ASK 字段（没有使用 DocumentBuilder），配置了该字段的各种属性，并使用指定的文件名保存了该文档。
+此行将保存已插入 ASK 字段的文档。现在，您的文档已配备动态 ASK 字段！
 
-这就是我们关于使用 Aspose.Words for .NET 的“不使用 DocumentBuilder 插入 ASK 字段”功能的指南。
+## 结论
 
-### 常见问题解答
+恭喜！您刚刚使用 Aspose.Words for .NET（无需 Document Builder）向 Word 文档添加了 ASK 字段。此功能可以显著增强用户与文档的交互，使其更加灵活和用户友好。继续尝试不同的字段和属性，以充分发挥 Aspose.Words 的潜力。祝您编码愉快！
 
-#### 问：Aspose.Words 中的 ASK 字段是什么？
+## 常见问题解答
 
-答：Aspose.Words 中的 ASK 字段用于在打开文档时向用户询问问题。它通常用于请求特定信息或反馈，具体信息或反馈可能因用户而异。
+### Aspose.Words 中的 ASK 字段是什么？
+Aspose.Words 中的 ASK 字段是在打开文档时提示用户进行特定输入的字段，允许动态数据输入。
 
-#### 问：如何在不使用 Aspose.Words 中的文档生成器的情况下在 Word 文档中插入 ASK 字段？
+### 我可以在单个文档中使用多个 ASK 字段吗？
+是的，您可以在文档中插入多个 ASK 字段，每个字段都有独特的提示和响应。
 
-答：要在 Word 文档中插入 ASK 字段而不使用 Aspose.Words 中的 Document Builder，您可以按照以下步骤操作：
+### 的目的是什么`PromptOnceOnMailMerge` property?
+这`PromptOnceOnMailMerge`属性确定 ASK 提示在邮件合并操作期间是否仅出现一次还是每次都出现。
 
-1. 从 Aspose.Words.Fields 命名空间导入 Document 和 Field 类。
-2. 通过加载现有文档来创建 Document 的实例。
-3. 使用 InsertField 方法通过指定问题名称插入 ASK 字段。
-4. 保存文档。
+### 设置 ASK 字段的属性后，是否需要更新它？
+是的，更新 ASK 字段可确保所有属性都得到正确应用并且该字段按预期运行。
 
-#### 问：如何获取 Word 文档中 ASK 字段的用户响应？
-
-答：要获取用户对 Word 文档中 ASK 字段的响应，您可以使用 Document 类中提供的 GetFieldNames 方法。此方法返回文档中存在的字段名称列表。然后，您可以检查列表中是否存在 ASK 字段名称并检索相关响应。
-
-#### 问：ASK 字段可以用来向用户请求更多信息吗？
-
-答：是的，ASK 字段可用于向用户请求多条信息。您可以在文档中插入多个 ASK 字段，每个字段包含不同的问题。打开文档时，系统会提示用户输入相应的答案。
+### 我可以自定义提示文本和默认响应吗？
+当然可以！您可以设置自定义提示文本和默认响应，以根据您的特定需求定制 ASK 字段。

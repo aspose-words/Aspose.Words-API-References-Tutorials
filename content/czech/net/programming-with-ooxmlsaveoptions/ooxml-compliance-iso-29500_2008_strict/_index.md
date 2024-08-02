@@ -97,7 +97,7 @@ Ano, můžete nastavit různé úrovně souladu změnou`OoxmlCompliance` majetek
 ### Co se stane, když je cesta dokumentu nesprávná?
  Pokud je cesta dokumentu nesprávná,`Document` konstruktor vyvolá a`FileNotFoundException`. Ujistěte se, že cesta je správná.
 
-### Potřebuji optimalizovat pro Word 2016?
+### Musím optimalizovat pro Word 2016?
 I když to není povinné, optimalizace pro konkrétní verzi aplikace Word může zlepšit kompatibilitu a výkon.
 
 ### Kde najdu další zdroje na Aspose.Words pro .NET?

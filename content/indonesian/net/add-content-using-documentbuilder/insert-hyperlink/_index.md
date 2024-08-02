@@ -16,7 +16,7 @@ Membuat dan mengelola dokumen Word adalah tugas mendasar di banyak aplikasi. Bai
 Sebelum kita mulai, pastikan kita memiliki semua yang kita butuhkan:
 
 1.  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
-2. Visual Studio: Versi apa pun dapat berfungsi, tetapi versi terbaru disarankan.
+2. Visual Studio: Versi apa pun dapat digunakan, tetapi versi terbaru disarankan.
 3. .NET Framework: Pastikan Anda telah menginstal .NET Framework di sistem Anda.
 
 ## Impor Namespace

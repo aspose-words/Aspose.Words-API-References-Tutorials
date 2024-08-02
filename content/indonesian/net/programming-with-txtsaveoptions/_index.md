@@ -16,6 +16,6 @@ Berkat tutorial ini, Anda akan dapat memanfaatkan sepenuhnya fungsi Aspose.Words
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Tambahkan Tanda Bidi di Dokumen Word](./add-bidi-marks/) | Pelajari cara menambahkan tanda Bidi ke dokumen Word menggunakan Aspose.Words untuk .NET dan membuat dokumen multibahasa profesional. |
-| [Gunakan Karakter Tab Per Level Untuk Indentasi Daftar](./use-tab-character-per-level-for-list-indentation/) | Pelajari cara menggunakan fitur daftar inden dengan karakter tab di Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk membuat dokumen yang terstruktur dengan baik dan mudah dibaca. Hemat waktu dan tingkatkan alur kerja Anda dengan fitur canggih ini. Akses tutorial lengkapnya sekarang. |
-| [Gunakan Karakter Spasi Per Level Untuk Indentasi Daftar](./use-space-character-per-level-for-list-indentation/) | Panduan langkah demi langkah untuk menggunakan karakter spasi per level untuk indentasi daftar di Aspose.Words untuk .NET. Buat dokumen Word yang terstruktur dengan baik dengan mudah. |
+| [Tambahkan Tanda Bidi di Dokumen Word](./add-bidi-marks/) | Pelajari cara menambahkan tanda dua arah (Bidi) di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan ini. Pastikan arah teks yang tepat untuk konten multi-bahasa. |
+| [Gunakan Karakter Tab Per Level Untuk Indentasi Daftar](./use-tab-character-per-level-for-list-indentation/) | Pelajari cara membuat daftar bertingkat dengan lekukan tab menggunakan Aspose.Words untuk .NET. Ikuti panduan ini untuk pemformatan daftar yang tepat di dokumen Anda. |
+| [Gunakan Karakter Spasi Per Level Untuk Indentasi Daftar](./use-space-character-per-level-for-list-indentation/) | Pelajari cara membuat daftar bertingkat dengan lekukan karakter spasi di Aspose.Words untuk .NET. Panduan langkah demi langkah untuk pemformatan dokumen yang tepat. |

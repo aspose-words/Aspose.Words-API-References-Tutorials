@@ -7,12 +7,11 @@ type: docs
 weight: 10
 url: /ko/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## 소개
 
 .NET 개발 세계에서 문서 관리 및 조작은 중요한 작업이며 문서 내 하이퍼링크를 효율적으로 처리해야 하는 경우가 많습니다. Aspose.Words for .NET은 하이퍼링크를 원활하게 대체할 수 있는 강력한 기능을 제공하여 문서가 올바른 리소스에 동적으로 연결되도록 합니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 이를 달성하는 방법을 자세히 설명하고 프로세스를 단계별로 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 하이퍼링크를 .NET용 Aspose.Words로 대체하기 전에 다음 사항이 있는지 확인하세요.
 
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 .NET용 Aspose.Words를 사용하여 문서의 하이퍼링크를 바꾸는 것은 간단하며 문서의 동적 특성을 향상시킵니다. URL을 업데이트하든 문서 내용을 프로그래밍 방식으로 변환하든 Aspose.Words는 이러한 작업을 단순화하여 효율적인 문서 관리를 보장합니다.
 
-## 자주 묻는 질문(FAQ)
+## FAQ
 
 ### .NET용 Aspose.Words가 복잡한 문서 구조를 처리할 수 있습니까?
 예, Aspose.Words는 테이블, 이미지, 하이퍼링크와 같은 복잡한 구조를 원활하게 지원합니다.

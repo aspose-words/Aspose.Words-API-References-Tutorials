@@ -28,7 +28,7 @@ Naučte se tisknout dokumenty programově v Javě pomocí Aspose.Words pro Javu.
 Naučte se automatizovat tisk dokumentů pomocí Aspose.Words for Java. Podrobný průvodce s příklady kódu pro efektivní správu dokumentů v Javě.
 ### [Tisk dokumentů s nastavením stránky](./printing-documents-page-setup/)
 Naučte se tisknout dokumenty s přesným nastavením stránky pomocí Aspose.Words for Java. Přizpůsobte si rozvržení, velikost papíru a další.
-### [Tisk dokumentů na míru](./customized-document-printing/)
+### [Tisk dokumentů na zakázku](./customized-document-printing/)
 Naučte se, jak snadno dosáhnout přizpůsobeného tisku dokumentů pomocí Aspose.Words for Java. Tento podrobný průvodce pokrývá vše od nastavení až po pokročilé přizpůsobení.
 ### [Tisk konkrétních stránek dokumentu](./printing-specific-document-pages/)
 Naučte se tisknout konkrétní stránky z dokumentů Word pomocí Aspose.Words for Java. Podrobný průvodce pro vývojáře Java.

@@ -2,7 +2,7 @@
 title: Appliquer des bordures et un ombrage au paragraphe dans un document Word
 linktitle: Appliquer des bordures et un ombrage au paragraphe dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Appliquez des bordures et un ombrage aux paragraphes des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour améliorer la mise en forme de vos documents.
+description: Appliquez des bordures et un ombrage aux paragraphes des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour améliorer la mise en forme de votre document.
 type: docs
 weight: 10
 url: /fr/net/document-formatting/apply-borders-and-shading-to-paragraph/

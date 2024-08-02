@@ -60,7 +60,7 @@ doc.acceptAllRevisions();
 
 ## Conclusion
 
-La collaboration et la révision des documents sont des aspects essentiels de la gestion moderne des documents. Aspose.Words for Java propose des outils et des fonctionnalités robustes pour rationaliser ce processus, permettant ainsi aux équipes de travailler ensemble plus facilement sur des documents de manière efficace.
+La collaboration et la révision des documents sont des aspects essentiels de la gestion moderne des documents. Aspose.Words for Java propose des outils et des fonctionnalités robustes pour rationaliser ce processus, permettant ainsi aux équipes de travailler ensemble efficacement sur des documents.
 
 ## FAQ
 

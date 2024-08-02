@@ -2,12 +2,12 @@
 title: Aktivera Inaktivera teckensnittsersättning
 linktitle: Aktivera Inaktivera teckensnittsersättning
 second_title: Aspose.Words Document Processing API
-description: I den här handledningen lär du dig hur du aktiverar eller inaktiverar teckensnittsersättning i ett Word-dokument med Aspose.Words för .NET.
+description: den här handledningen lär du dig hur du aktiverar eller inaktiverar teckensnittsersättning i ett Word-dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/enable-disable-font-substitution/
 ---
-den här handledningen går vi igenom hur du aktiverar eller inaktiverar teckensnittsersättning i ett Word-dokument när du renderar det med Aspose.Words-biblioteket för .NET. Genom att aktivera eller inaktivera teckensnittsersättning kan du kontrollera om saknade teckensnitt automatiskt ersätts med ett standardteckensnitt. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+I den här handledningen går vi igenom hur du aktiverar eller inaktiverar teckensnittsersättning i ett Word-dokument när du renderar det med Aspose.Words-biblioteket för .NET. Genom att aktivera eller inaktivera teckensnittsersättning kan du kontrollera om saknade teckensnitt automatiskt ersätts med ett standardteckensnitt. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
 
 ## Förutsättningar
 Innan du börjar, se till att du har följande saker:

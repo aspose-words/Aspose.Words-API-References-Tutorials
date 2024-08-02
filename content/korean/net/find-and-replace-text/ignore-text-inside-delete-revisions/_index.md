@@ -11,7 +11,7 @@ url: /ko/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 
 .NET 개발 영역에서 Aspose.Words는 Microsoft Word 문서를 프로그래밍 방식으로 작업하기 위한 강력한 라이브러리로 돋보입니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 Aspose.Words의 기능을 익히면 Word 문서를 효율적으로 조작, 생성 및 관리하는 능력이 크게 향상됩니다. 이 튜토리얼에서는 강력한 기능 중 하나인 .NET용 Aspose.Words를 사용하여 문서 내에서 추적된 개정을 처리하는 방법에 대해 자세히 알아봅니다.
 
-## 전제조건
+## 전제 조건
 
 이 튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 - C# 프로그래밍 언어에 대한 기본 지식.

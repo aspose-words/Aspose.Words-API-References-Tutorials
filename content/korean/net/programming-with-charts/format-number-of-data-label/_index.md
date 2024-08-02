@@ -11,14 +11,14 @@ url: /ko/net/programming-with-charts/format-number-of-data-label/
 
 매력적이고 유익한 문서를 작성하려면 형식이 잘 지정된 데이터 레이블이 있는 차트를 포함해야 하는 경우가 많습니다. 정교한 차트로 Word 문서를 향상시키려는 .NET 개발자라면 Aspose.Words for .NET은 이를 달성하는 데 도움이 되는 환상적인 라이브러리입니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 차트의 숫자 레이블 형식을 지정하는 과정을 단계별로 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 준비해야 할 몇 가지 전제 조건이 있습니다.
 
 -  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 아직 설치하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 - 개발 환경: .NET 개발 환경이 설정되어 있어야 합니다. Visual Studio를 적극 권장합니다.
 - C#에 대한 기본 지식: 이 튜토리얼에는 C# 코드 작성 및 이해가 포함되므로 C# 프로그래밍에 대한 지식이 필수적입니다.
--  임시 라이선스: Aspose.Words를 제한 없이 사용하려면[임시면허](https://purchase.aspose.com/temporary-license/).
+-  임시 라이선스: Aspose.Words를 제한 없이 사용하려면[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 이제 차트에서 숫자 레이블의 서식을 지정하는 단계별 프로세스를 살펴보겠습니다.
 
@@ -40,7 +40,7 @@ Word 문서 조작을 시작하기 전에 문서가 저장될 디렉터리를 �
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
 
 ## 2단계: 문서 및 DocumentBuilder 초기화
 

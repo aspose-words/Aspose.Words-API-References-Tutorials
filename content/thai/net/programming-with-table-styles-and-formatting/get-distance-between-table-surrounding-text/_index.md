@@ -2,53 +2,97 @@
 title: รับระยะห่างระหว่างข้อความล้อมรอบตาราง
 linktitle: รับระยะห่างระหว่างข้อความล้อมรอบตาราง
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: คำแนะนำทีละขั้นตอนเพื่อรับระยะห่างระหว่างข้อความและตารางในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีดึงระยะห่างระหว่างตารางและข้อความโดยรอบในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ปรับปรุงเค้าโครงเอกสารของคุณด้วยคำแนะนำนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
+## การแนะนำ
 
-ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดกระบวนการทีละขั้นตอนเพื่อรับระยะห่างระหว่างข้อความที่อยู่รอบๆ ในตารางโดยใช้ Aspose.Words สำหรับ .NET เราจะอธิบายซอร์สโค้ด C# ที่ให้มาและให้คำแนะนำที่ครอบคลุมเพื่อช่วยให้คุณเข้าใจและนำคุณสมบัตินี้ไปใช้ในโครงการของคุณเอง ในตอนท้ายของบทช่วยสอนนี้ คุณจะรู้วิธีเข้าถึงระยะห่างต่างๆ ระหว่างตารางและข้อความโดยรอบในเอกสาร Word ของคุณโดยใช้ Aspose.Words สำหรับ .NET
+ลองจินตนาการว่าคุณกำลังเตรียมรายงานที่ทันสมัยหรือเอกสารสำคัญ และคุณต้องการให้ตารางของคุณดูเหมาะสม คุณต้องแน่ใจว่ามีช่องว่างเพียงพอระหว่างตารางและข้อความรอบๆ ทำให้เอกสารอ่านง่ายและดึงดูดสายตา การใช้ Aspose.Words สำหรับ .NET ทำให้คุณสามารถดึงข้อมูลและปรับระยะทางเหล่านี้โดยทางโปรแกรมได้อย่างง่ายดาย บทช่วยสอนนี้จะแนะนำคุณตลอดขั้นตอนเพื่อให้บรรลุเป้าหมายนี้ ทำให้เอกสารของคุณโดดเด่นด้วยความเป็นมืออาชีพเป็นพิเศษ
 
-## ขั้นตอนที่ 1: กำหนดไดเร็กทอรีเอกสาร
-ขั้นแรก คุณต้องกำหนดเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ นี่คือที่ตั้งเอกสาร Word ของคุณ แทนที่ "ไดเรกทอรีเอกสารของคุณ" ด้วยเส้นทางที่เหมาะสม
+## ข้อกำหนดเบื้องต้น
+
+ก่อนที่เราจะพูดถึงโค้ด โปรดตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
+
+1.  Aspose.Words สำหรับ .NET Library: คุณต้องติดตั้งไลบรารี Aspose.Words สำหรับ .NET หากคุณยังไม่มี คุณสามารถดาวน์โหลดได้จาก[กำหนดเผยแพร่](https://releases.aspose.com/words/net/) หน้าหนังสือ.
+2. สภาพแวดล้อมการพัฒนา: สภาพแวดล้อมการพัฒนาการทำงานที่ติดตั้ง .NET Framework Visual Studio เป็นตัวเลือกที่ดี
+3. เอกสารตัวอย่าง: เอกสาร Word (.docx) ที่มีตารางอย่างน้อยหนึ่งตารางสำหรับทดสอบโค้ด
+
+## นำเข้าเนมสเปซ
+
+ก่อนอื่น มานำเข้าเนมสเปซที่จำเป็นลงในโปรเจ็กต์ของคุณกันก่อน สิ่งนี้จะช่วยให้คุณสามารถเข้าถึงคลาสและวิธีการที่จำเป็นในการจัดการเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## ขั้นตอนที่ 2: โหลดเอกสารที่มีอยู่
- ถัดไป คุณต้องโหลดเอกสาร Word ที่มีอยู่ลงในอินสแตนซ์ของ`Document` ระดับ.
+ตอนนี้ เรามาแบ่งกระบวนการออกเป็นขั้นตอนที่ง่ายต่อการปฏิบัติตาม เราจะครอบคลุมทุกอย่างตั้งแต่การโหลดเอกสารของคุณไปจนถึงการดึงระยะทางรอบโต๊ะของคุณ
+
+## ขั้นตอนที่ 1: โหลดเอกสารของคุณ
+
+ ขั้นตอนแรกคือการโหลดเอกสาร Word ของคุณลงใน Aspose.Words`Document` วัตถุ. วัตถุนี้แสดงถึงเอกสารทั้งหมด
 
 ```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// โหลดเอกสาร
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## ขั้นตอนที่ 3: หาระยะห่างระหว่างตารางกับข้อความโดยรอบ
- เพื่อให้ได้ระยะห่างระหว่างตารางและข้อความโดยรอบ เราจำเป็นต้องเข้าถึงตารางในเอกสารโดยใช้`GetChild()` วิธีการและ`NodeType.Table` คุณสมบัติ. จากนั้นเราสามารถแสดงระยะทางที่แตกต่างกันโดยใช้คุณสมบัติอาร์เรย์`DistanceTop`, `DistanceBottom`, `DistanceRight`และ`DistanceLeft`.
+## ขั้นตอนที่ 2: เข้าถึงตาราง
+
+ ถัดไป คุณต้องเข้าถึงตารางภายในเอกสารของคุณ ที่`GetChild` วิธีการช่วยให้คุณสามารถดึงข้อมูลตารางแรกที่พบในเอกสาร
 
 ```csharp
+// รับตารางแรกในเอกสาร
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-Console.WriteLine("Distance between table and top text: " + table.DistanceTop);
-Console.WriteLine("Distance between table and bottom text: " + table.DistanceBottom);
-Console.WriteLine("Distance between the table and the text on the right: " + table.DistanceRight);
-Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### ซอร์สโค้ดตัวอย่างสำหรับรับระยะห่างระหว่างตารางรอบข้อความโดยใช้ Aspose.Words สำหรับ .NET 
+## ขั้นตอนที่ 3: ดึงค่าระยะทาง
+
+ตอนนี้คุณมีตารางแล้ว ก็ถึงเวลาหาค่าระยะทาง ค่าเหล่านี้แสดงถึงช่องว่างระหว่างตารางและข้อความโดยรอบจากแต่ละด้าน: บน ล่าง ซ้าย และขวา
 
 ```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// รับระยะห่างระหว่างตารางและข้อความโดยรอบ
+Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
+```
 
-	Document doc = new Document(dataDir + "Tables.docx");
-	Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Console.WriteLine(table.DistanceTop);
-	Console.WriteLine(table.DistanceBottom);
-	Console.WriteLine(table.DistanceRight);
-	Console.WriteLine(table.DistanceLeft);
+## ขั้นตอนที่ 4: แสดงระยะทาง
+
+สุดท้ายคุณสามารถแสดงระยะทางได้ วิธีนี้สามารถช่วยคุณตรวจสอบระยะห่างและทำการปรับเปลี่ยนที่จำเป็นเพื่อให้แน่ใจว่าตารางของคุณดูสมบูรณ์แบบในเอกสาร
+
+```csharp
+// แสดงระยะทาง
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ```
 
 ## บทสรุป
-ในบทช่วยสอนนี้ เราได้เรียนรู้วิธีหาระยะห่างระหว่างข้อความโดยรอบในตารางโดยใช้ Aspose.Words สำหรับ .NET เมื่อทำตามคำแนะนำทีละขั้นตอนนี้ คุณจะสามารถเข้าถึงระยะห่างต่างๆ ระหว่างตารางและข้อความโดยรอบในเอกสาร Word ของคุณได้อย่างง่ายดาย Aspose.Words นำเสนอ API ที่ทรงพลังและยืดหยุ่นสำหรับจัดการและจัดรูปแบบตารางในเอกสารของคุณ ด้วยความรู้นี้ คุณสามารถวิเคราะห์เค้าโครงตารางของคุณโดยสัมพันธ์กับข้อความและตอบสนองความต้องการเฉพาะได้
+
+และคุณก็ได้แล้ว! ด้วยการทำตามขั้นตอนเหล่านี้ คุณสามารถดึงระยะห่างระหว่างตารางและข้อความโดยรอบในเอกสาร Word ของคุณได้อย่างง่ายดายโดยใช้ Aspose.Words for .NET เทคนิคที่เรียบง่ายแต่ทรงพลังนี้ช่วยให้คุณปรับแต่งเค้าโครงเอกสารของคุณ ทำให้อ่านง่ายขึ้นและดึงดูดสายตา ขอให้มีความสุขในการเขียนโค้ด!
+
+## คำถามที่พบบ่อย
+
+### ฉันสามารถปรับระยะทางโดยทางโปรแกรมได้หรือไม่?
+ ได้ คุณสามารถปรับระยะทางโดยทางโปรแกรมได้โดยใช้ Aspose.Words โดยตั้งค่า`DistanceTop`, `DistanceBottom`, `DistanceRight` , และ`DistanceLeft` คุณสมบัติของ`Table` วัตถุ.
+
+### จะเกิดอะไรขึ้นถ้าเอกสารของฉันมีหลายตาราง?
+ คุณสามารถวนซ้ำโหนดย่อยของเอกสารและใช้วิธีการเดียวกันกับแต่ละตารางได้ ใช้`GetChildNodes(NodeType.Table, true)` เพื่อให้ได้โต๊ะทั้งหมด
+
+### ฉันสามารถใช้ Aspose.Words กับ .NET Core ได้หรือไม่
+อย่างแน่นอน! Aspose.Words รองรับ .NET Core และคุณสามารถใช้โค้ดเดียวกันกับการปรับเปลี่ยนเล็กน้อยสำหรับโปรเจ็กต์ .NET Core ได้
+
+### ฉันจะติดตั้ง Aspose.Words สำหรับ .NET ได้อย่างไร
+คุณสามารถติดตั้ง Aspose.Words สำหรับ .NET ผ่าน NuGet Package Manager ใน Visual Studio เพียงค้นหา "Aspose.Words" และติดตั้งแพ็คเกจ
+
+### มีข้อจำกัดเกี่ยวกับประเภทเอกสารที่ Aspose.Words รองรับหรือไม่
+ Aspose.Words รองรับรูปแบบเอกสารที่หลากหลาย รวมถึง DOCX, DOC, PDF, HTML และอื่นๆ อีกมากมาย ตรวจสอบ[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับรายการรูปแบบที่รองรับทั้งหมด

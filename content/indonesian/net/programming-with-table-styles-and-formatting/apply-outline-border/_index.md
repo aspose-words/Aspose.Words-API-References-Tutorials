@@ -2,51 +2,82 @@
 title: Terapkan Batas Garis Besar
 linktitle: Terapkan Batas Garis Besar
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk menerapkan batas kerangka ke tabel menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menerapkan batas kerangka ke tabel di Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk pemformatan tabel yang sempurna.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah untuk menerapkan batas kerangka ke tabel menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan paket kode sumber C# dan memberi Anda panduan komprehensif untuk membantu Anda memahami dan menerapkan fitur ini dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan memiliki pemahaman yang jelas tentang cara memanipulasi batas tabel di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+Dalam tutorial hari ini, kita mendalami dunia manipulasi dokumen menggunakan Aspose.Words untuk .NET. Secara khusus, kita akan mempelajari cara menerapkan batas kerangka ke tabel di dokumen Word. Ini adalah keterampilan yang luar biasa untuk dimiliki dalam perangkat Anda jika Anda sering bekerja dengan pembuatan dan pemformatan dokumen otomatis. Jadi, mari kita mulai perjalanan untuk membuat meja Anda tidak hanya fungsional tetapi juga menarik secara visual.
 
-## Langkah 1: Tentukan direktori dokumen
-Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda disimpan. Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai.
+## Prasyarat
+
+Sebelum kita beralih ke kode, ada beberapa hal yang Anda perlukan:
+
+1.  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan yang sesuai seperti Visual Studio.
+3. Pengetahuan Dasar C#: Pemahaman mendasar tentang C# akan membantu Anda mengikuti tutorial.
+
+## Impor Namespace
+
+Untuk memulainya, pastikan Anda telah mengimpor namespace yang diperlukan. Ini penting untuk mengakses fungsionalitas Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Langkah 2: Unggah dokumen
- Selanjutnya, Anda perlu memuat dokumen Word ke dalam instance`Document` kelas.
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dikelola.
+
+## Langkah 1: Muat Dokumen
+
+Pertama, kita perlu memuat dokumen Word yang berisi tabel yang ingin kita format.
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Langkah 3: Akses tabel
- Untuk menerapkan batas garis, kita perlu mengakses tabel di dokumen. Itu`Table` kelas mewakili tabel di Aspose.Words.
+ Pada langkah ini, kami menggunakan`Document` kelas dari Aspose.Words untuk memuat dokumen yang ada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda disimpan.
+
+## Langkah 2: Akses Tabel
+
+Selanjutnya, kita perlu mengakses tabel tertentu yang ingin kita format. 
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Langkah 4: Sejajarkan tabel ke tengah halaman
- Sekarang kita bisa menyelaraskan tabel ke tengah halaman menggunakan`Alignment` properti tabel.
+ Di Sini,`GetChild` metode mengambil tabel pertama dalam dokumen. Parameternya`NodeType.Table, 0, true` pastikan kita mendapatkan tipe node yang benar.
+
+## Langkah 3: Sejajarkan Tabel
+
+Sekarang, mari kita ratakan tengah tabel pada halaman.
 
 ```csharp
-table. Alignment = Table Alignment. Center;
+table.Alignment = TableAlignment.Center;
 ```
 
-## Langkah 5: Hapus batas tabel yang ada
-Untuk memulai dengan batas garis baru, pertama-tama kita perlu menghapus semua batas yang ada dari tabel. Ini dapat dilakukan dengan menggunakan`ClearBorders()` metode.
+Langkah ini memastikan meja berada di tengah dengan rapi, sehingga memberikan tampilan profesional.
+
+## Langkah 4: Hapus Batas yang Ada
+
+Sebelum kita menerapkan perbatasan baru, kita perlu menghapus perbatasan yang sudah ada.
 
 ```csharp
-table. ClearBorders();
+table.ClearBorders();
 ```
 
-## Langkah 6: Tentukan batas hijau di sekeliling tabel
- Kita sekarang dapat mengatur batas hijau di sekeliling tabel menggunakan`SetBorder()` metode untuk setiap sisi meja. Dalam contoh ini, kita menggunakan border tipe "Tunggal" dengan ketebalan 1,5 poin dan warna hijau.
+Menghapus perbatasan memastikan bahwa perbatasan baru kami diterapkan dengan bersih tanpa ada gangguan gaya lama.
+
+## Langkah 5: Tetapkan Batas Garis Besar
+
+Sekarang, mari terapkan batas garis hijau pada tabel.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -55,45 +86,47 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Langkah 7: Isi sel dengan warna latar belakang
-Untuk meningkatkan presentasi visual tabel, kita bisa mengisi sel dengan warna latar belakang dasar
+ Setiap jenis batas (kiri, kanan, atas, bawah) diatur satu per satu. Kita gunakan`LineStyle.Single` untuk garis padat,`1.5` untuk lebar garis, dan`Color.Green` untuk warna perbatasan.
 
-ide. Dalam contoh ini, kita menggunakan warna hijau muda.
+## Langkah 6: Terapkan Shading Sel
+
+Untuk membuat tabel lebih menarik secara visual, mari isi sel dengan warna hijau muda.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
-## Langkah 8: Simpan dokumen yang dimodifikasi
-Terakhir, kami menyimpan dokumen yang dimodifikasi ke sebuah file. Anda dapat memilih nama dan lokasi yang sesuai untuk dokumen keluaran.
+ Di Sini,`SetShading` digunakan untuk menerapkan warna hijau muda solid pada sel, membuat tabel menonjol.
+
+## Langkah 7: Simpan Dokumen
+
+Terakhir, simpan dokumen yang dimodifikasi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-Selamat! Anda sekarang telah menerapkan batas kerangka ke tabel menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Menerapkan Batas Garis Besar menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Sejajarkan tabel ke tengah halaman.
-	table.Alignment = TableAlignment.Center;
-	//Hapus semua batas yang ada dari tabel.
-	table.ClearBorders();
-	// Tetapkan batas hijau di sekeliling meja tetapi tidak di dalam.
-	table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// Isi sel dengan warna solid hijau muda.
-	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
-```
+Langkah ini menyimpan dokumen Anda dengan format yang diterapkan. Anda dapat membukanya untuk melihat tabel yang diformat dengan indah.
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara menerapkan batas kerangka ke tabel menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah mengintegrasikan fungsi ini ke dalam proyek C# Anda. Memanipulasi pemformatan tabel merupakan aspek penting dalam pemrosesan dokumen, dan Aspose.Words menawarkan API yang kuat dan fleksibel untuk mencapai hal ini. Dengan pengetahuan ini, Anda dapat meningkatkan presentasi visual dokumen Word Anda dan memenuhi persyaratan tertentu.
+
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda telah berhasil menerapkan batas kerangka ke tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup memuat dokumen, mengakses tabel, menyelaraskannya, menghapus batas yang ada, menerapkan batas baru, menambahkan bayangan sel, dan terakhir menyimpan dokumen. 
+
+Dengan keterampilan ini, Anda dapat meningkatkan presentasi visual tabel Anda, menjadikan dokumen Anda lebih profesional dan menarik. Selamat membuat kode!
+
+## FAQ
+
+### Bisakah saya menerapkan gaya berbeda pada setiap batas tabel?  
+ Ya, Anda dapat menerapkan gaya dan warna berbeda pada setiap batas dengan menyesuaikan parameter di`SetBorder` metode.
+
+### Bagaimana cara mengubah lebar perbatasan?  
+ Anda dapat mengubah lebarnya dengan memodifikasi parameter ketiga di`SetBorder` metode. Misalnya,`1.5` menetapkan lebar 1,5 poin.
+
+### Apakah mungkin untuk menerapkan bayangan pada sel individual?  
+ Ya, Anda dapat menerapkan bayangan ke masing-masing sel dengan mengakses setiap sel dan menggunakan`SetShading` metode.
+
+### Bisakah saya menggunakan warna lain untuk pembatas dan bayangan?  
+ Sangat! Anda dapat menggunakan warna apa pun yang tersedia di`System.Drawing.Color` kelas.
+
+### Bagaimana cara menyelaraskan tabel secara horizontal?  
+ Itu`table.Alignment = TableAlignment.Center;` baris dalam kode memusatkan tabel secara horizontal pada halaman.

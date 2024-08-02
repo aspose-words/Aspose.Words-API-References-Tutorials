@@ -39,7 +39,7 @@ Utforska mångsidigheten hos Aspose.Words för Java när vi fördjupar oss i att
 
 Dokumentinställningar är nyckeln till att leverera dokument som är skräddarsydda för dina exakta krav. Lär dig hur du justerar inställningar som sidstorlek, marginaler och teckensnitt för att uppnå önskad utskrift.
 
-Aspose.Words för Java ger dig möjlighet att ta kontroll över dokumentladdning och lagring som aldrig förr. Vår lista med självstudier fungerar som din färdplan för att bemästra detta kraftfulla bibliotek. Med en solid grund inom dokumenthantering kommer du att vara rustad att hantera även de mest komplexa uppgifterna med lätthet.
+Aspose.Words för Java ger dig möjlighet att ta kontroll över dokumentladdning och lagring som aldrig förr. Vår lista med självstudier fungerar som din färdplan för att bemästra detta kraftfulla bibliotek. Med en solid grund i dokumenthantering kommer du att vara rustad att hantera även de mest komplexa uppgifterna med lätthet.
 
 ## Handledning för att ladda och spara dokument
 ### [Ladda och spara HTML-dokument med Aspose.Words för Java](./loading-and-saving-html-documents/)

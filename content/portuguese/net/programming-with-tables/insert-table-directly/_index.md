@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Etapa 2: Criando o Objeto Tabela
 
-seguir, criamos o objeto tabela. É aqui que definiremos a estrutura da nossa tabela.
+A seguir, criamos o objeto tabela. É aqui que definiremos a estrutura da nossa tabela.
 
 ```csharp
 // Começamos criando o objeto tabela. Observe que devemos passar o objeto document
@@ -100,7 +100,7 @@ Para acelerar o processo de adição de células, podemos clonar células existe
 
 ```csharp
 // Repetiríamos então o processo para as outras células e linhas da tabela.
-// Também podemos acelerar as coisas clonando células e linhas existentes.
+//Também podemos acelerar as coisas clonando células e linhas existentes.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Parabéns! Você inseriu com sucesso uma tabela diretamente em um documento do W
  Sim, você pode solicitar um[teste grátis](https://releases.aspose.com/) avaliar a biblioteca antes de comprar.
 
 ### Como faço para adquirir o Aspose.Words para .NET?
- Você pode comprar Aspose.Words para .NET no[página de compra](https://purchase.aspose.com/buy).
+Você pode comprar Aspose.Words para .NET no[página de compra](https://purchase.aspose.com/buy).
 
 ### Onde posso encontrar a documentação do Aspose.Words for .NET?
  A documentação está disponível[aqui](https://reference.aspose.com/words/net/).

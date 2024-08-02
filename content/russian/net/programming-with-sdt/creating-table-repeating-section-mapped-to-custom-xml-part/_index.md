@@ -7,42 +7,51 @@ type: docs
 weight: 10
 url: /ru/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
+## Введение
 
-В этом руководстве показано, как создать таблицу с повторяющимся разделом, сопоставленную с пользовательской частью Xml в документе Word, с помощью Aspose.Words для .NET. Повторяющийся раздел позволяет динамически добавлять строки на основе данных XML, хранящихся в пользовательской части XML.
+В этом руководстве мы рассмотрим процесс создания таблицы с повторяющимся разделом, который сопоставляется с пользовательской частью XML с помощью Aspose.Words для .NET. Это особенно полезно для динамического создания документов на основе структурированных данных.
 
 ## Предварительные условия
-Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
-- Установлена библиотека Aspose.Words для .NET.
-- Базовые знания C# и обработки документов Word.
+Прежде чем мы начнем, убедитесь, что у вас есть следующее:
+1.  Установлена библиотека Aspose.Words для .NET. Вы можете скачать его с сайта[Веб-сайт Aspose](https://releases.aspose.com/words/net/).
+2. Базовое понимание C# и XML.
 
-## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+## Импортировать пространства имен
+
+Обязательно включите в свой проект необходимые пространства имен:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Markup;
+using Aspose.Words.Tables;
+```
+
+## Шаг 1. Инициализируйте документ и DocumentBuilder
+
+ Сначала создайте новый документ и инициализируйте`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
 
-## Шаг 2. Создайте документ и DocumentBuilder
- Создайте новый экземпляр`Document` класс и`DocumentBuilder` для построения содержания документа.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Шаг 3. Добавьте пользовательские XML-данные в CustomXmlPart.
- Создать`CustomXmlPart` и добавьте в него пользовательские XML-данные. В этом примере мы создаем строку XML, представляющую коллекцию книг с их названиями и авторами.
+## Шаг 2. Добавьте пользовательскую часть XML
+
+Добавьте в документ пользовательскую часть XML. Этот XML содержит данные, которые мы хотим сопоставить с нашей таблицей:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-	"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-	"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
+    "<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
+    "<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
+    "<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## Шаг 4. Создайте таблицу и структуру таблицы.
-Начните создавать таблицу с помощью`StartTable` метод`DocumentBuilder` . Добавьте ячейки и содержимое таблицы, используя`InsertCell`и`Write` методы.
+## Шаг 3. Создайте структуру таблицы
+
+ Далее используйте`DocumentBuilder` чтобы создать заголовок таблицы:
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,94 +63,60 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Шаг 5. Создайте повторяющийся раздел, сопоставленный с пользовательским XML
- Создать`StructuredDocumentTag` с`SdtType.RepeatingSection` для обозначения повторяющегося раздела. Установите сопоставление XML для повторяющегося раздела с помощью`SetMapping` метод`XmlMapping` свойство. В этом примере мы сопоставляем повторяющийся раздел с`/books[1]/book`.
+## Шаг 4: Создайте повторяющийся раздел
+
+ Создать`StructuredDocumentTag` (SDT) для повторяющегося раздела и сопоставьте его с данными XML:
 
 ```csharp
-StructuredDocumentTag repeatingSectionSdt =
-	new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
 repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Шаг 6. Создайте повторяющийся элемент раздела и добавьте ячейки
- Создать`StructuredDocumentTag` с`SdtType.RepeatingSectionItem` для представления повторяющегося элемента раздела. Добавьте его как дочерний элемент в повторяющийся раздел.
+## Шаг 5. Создайте повторяющийся элемент раздела
+
+Создайте SDT для элемента повторяющегося раздела и добавьте его в повторяющийся раздел:
 
 ```csharp
-StructuredDocumentTag repeatingSectionItemSdt = 
-	new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-```
-
- Создать`Row` для представления каждого элемента в повторяющемся разделе и добавления его к элементу повторяющегося раздела.
-
-```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## Шаг 7. Добавьте элементы управления содержимым в повторяющийся раздел.
- Создавать`StructuredDocumentTag` объекты с`SdtType.PlainText`
+## Шаг 6. Сопоставьте XML-данные с ячейками таблицы
 
-  для представления элементов управления заголовком и авторским контентом. Установите сопоставление XML для каждого элемента управления содержимым, используя`SetMapping` метод`XmlMapping` свойство. В этом примере мы сопоставляем элемент управления заголовком с`/books[1]/book[1]/title[1]` и автор контролирует`/books[1]/book[1]/author[1]`.
+Создайте SDT для названия и автора, сопоставьте их с данными XML и добавьте в строку:
 
 ```csharp
-StructuredDocumentTag titleSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
 row.AppendChild(titleSdt);
 
-StructuredDocumentTag authorSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag authorSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## Шаг 8: Сохраните документ
- Сохраните измененный документ в указанную директорию, используя команду`Save`метод. Укажите желаемое имя файла с соответствующим расширением. В этом примере мы сохраняем документ как «WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx».
+## Шаг 7: Сохраните документ
+
+Наконец, сохраните документ в указанном каталоге:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### Пример исходного кода для создания повторяющегося раздела таблицы, сопоставленного с пользовательской частью XML, с использованием Aspose.Words для .NET 
+## Заключение
 
-```csharp
-	// Путь к каталогу ваших документов
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Выполнив эти шаги, вы успешно создали таблицу с повторяющимся разделом, сопоставленную с пользовательской частью XML с помощью Aspose.Words для .NET. Это позволяет создавать динамический контент на основе структурированных данных, что делает создание документов более гибким и эффективным.
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-		"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-		"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-		"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Title");
-	builder.InsertCell();
-	builder.Write("Author");
-	builder.EndRow();
-	builder.EndTable();
-	StructuredDocumentTag repeatingSectionSdt =
-		new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
-	repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
-	table.AppendChild(repeatingSectionSdt);
-	StructuredDocumentTag repeatingSectionItemSdt = 
-		new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
-	repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-	Row row = new Row(doc);
-	repeatingSectionItemSdt.AppendChild(row);
-	StructuredDocumentTag titleSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
-	row.AppendChild(titleSdt);
-	StructuredDocumentTag authorSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
-	row.AppendChild(authorSdt);
-	doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
+## Часто задаваемые вопросы
 
-```
+### Что такое тег структурированного документа (SDT)?
+SDT, также известный как элемент управления содержимым, представляет собой ограниченную область документа, которая используется для хранения структурированных данных.
 
-Вот и все! Вы успешно создали таблицу с повторяющимся разделом, сопоставленным с CustomXmlPart в вашем документе Word, используя Aspose.Words для .NET.
+### Могу ли я использовать другие типы данных в пользовательской части XML?
+Да, вы можете структурировать свою пользовательскую часть XML с любыми типами данных и соответствующим образом сопоставить их.
+
+### Как добавить больше строк в повторяющийся раздел?
+Повторяющийся раздел автоматически реплицирует структуру строк для каждого элемента сопоставленного пути XML.

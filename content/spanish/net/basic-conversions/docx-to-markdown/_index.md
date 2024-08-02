@@ -74,7 +74,7 @@ Aspose.Words admite una amplia gama de formatos de documentos, incluidos DOCX, D
 ### ¿Puede Aspose.Words manejar estructuras de documentos complejas como tablas e imágenes?
 Sí, Aspose.Words proporciona API sólidas para manipular tablas, imágenes, formato de texto y más dentro de los documentos.
 
-### ¿Dónde puedo encontrar documentación detallada sobre Aspose.Words para .NET?
+### ¿Dónde puedo encontrar documentación detallada de Aspose.Words para .NET?
  La documentación detallada está disponible.[aquí](https://reference.aspose.com/words/net/).
 
 ### ¿Cómo puedo obtener una licencia temporal de Aspose.Words para .NET?

@@ -2,97 +2,111 @@
 title: تعيين تنسيق صف الجدول
 linktitle: تعيين تنسيق صف الجدول
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لإعداد تنسيق صف الجدول باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية ضبط تنسيق صف الجدول في مستندات Word باستخدام Aspose.Words لـ .NET مع دليلنا. مثالي لإنشاء مستندات جيدة التنسيق واحترافية.
 type: docs
 weight: 10
 url: /ar/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنرشدك خلال العملية خطوة بخطوة لتعيين تنسيق صف الجدول باستخدام Aspose.Words for .NET. سنشرح لك التعليمات البرمجية المصدرية المجمعة لـ C# ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي، ستعرف كيفية ضبط الارتفاع وحشوات صف الجدول في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+إذا كنت تتطلع إلى إتقان فن تنسيق الجداول في مستندات Word باستخدام Aspose.Words for .NET، فأنت في المكان الصحيح. سيرشدك هذا البرنامج التعليمي خلال عملية إعداد تنسيق صف الجدول، مما يضمن أن مستنداتك ليست وظيفية فحسب، بل أيضًا جذابة من الناحية الجمالية. لذلك، دعونا نتعمق في هذه الجداول البسيطة ونحولها إلى جداول جيدة التنسيق!
 
-## الخطوة 1: تحديد دليل المستند
-أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو الموقع الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات الخاصة بك" بالمسار المناسب.
+## المتطلبات الأساسية
+
+قبل أن ننتقل إلى البرنامج التعليمي، تأكد من أن لديك المتطلبات الأساسية التالية:
+
+1.  Aspose.Words for .NET - إذا لم تكن قد قمت بذلك بالفعل، قم بتنزيله وتثبيته من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير - أي بيئة تطوير متكاملة مثل Visual Studio تدعم .NET.
+3. المعرفة الأساسية بـ C# - سيساعدك فهم مفاهيم C# الأساسية على المتابعة بسلاسة.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، تحتاج إلى استيراد مساحات الأسماء الضرورية. يعد هذا أمرًا بالغ الأهمية لأنه يضمن لك الوصول إلى جميع الوظائف التي يوفرها Aspose.Words لـ .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ المستندات
- بعد ذلك، تحتاج إلى إنشاء مثيل جديد لـ`Document` فئة ومنشئ مستند لتلك الوثيقة.
+دعونا نقسم العملية إلى خطوات بسيطة وسهلة الهضم. ستغطي كل خطوة جزءًا محددًا من عملية تنسيق الجدول.
+
+## الخطوة 1: إنشاء مستند جديد
+
+الخطوة الأولى هي إنشاء مستند Word جديد. سيكون هذا بمثابة قماش لطاولتك.
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: ابدأ جدولاً جديدًا وأضف خلية
-للبدء في إنشاء الجدول، نستخدم`StartTable()` طريقة منشئ المستند، ثم نضيف خلية إلى الجدول باستخدام`InsertCell()` طريقة.
+## الخطوة 2: ابدأ الجدول
+
+ بعد ذلك، ستبدأ في إنشاء الجدول. ال`DocumentBuilder` يوفر class طريقة مباشرة لإدراج الجداول وتنسيقها.
 
 ```csharp
-Table table = builder. StartTable();
-builder. InsertCell();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## الخطوة 4: تحديد تنسيق الخط
- يمكننا الآن ضبط تنسيق الصف عن طريق الوصول إلى ملف`RowFormat` كائن من`DocumentBuilder` هدف. يمكننا ضبط ارتفاع الخط والهوامش (الحشوات) باستخدام الخصائص المقابلة.
+## الخطوة 3: ضبط تنسيق الصف
+
+الآن يأتي الجزء الممتع - تحديد تنسيق الصف. ستقوم بضبط ارتفاع الصف وتحديد قاعدة الارتفاع.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## الخطوة 5: تعيين هوامش الجدول
- بعد ذلك، يمكننا ضبط حشوات الجدول عن طريق الوصول إلى الخصائص المقابلة للملف`Table` هدف. سيتم تطبيق هذه الهوامش على كافة صفوف الجدول.
+## الخطوة 4: تطبيق الحشو على الجدول
+
+تضيف المساحة المتروكة مساحة حول المحتوى داخل الخلية، مما يجعل النص أكثر قابلية للقراءة. ستقوم بتعيين الحشو لجميع جوانب الجدول.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## الخطوة 6: إضافة محتوى إلى الصف
- وأخيرًا، يمكننا إضافة محتوى إلى السطر باستخدام أداة إنشاء المستندات`Writeln()` طريقة.
+## الخطوة 5: إضافة محتوى إلى الصف
+
+بعد أن تم التنسيق، حان الوقت لإضافة بعض المحتوى إلى الصف. يمكن أن يكون هذا أي نص أو بيانات ترغب في تضمينها.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.Writeln("I'm a wonderfully formatted row.");
+builder.EndRow();
 ```
 
-## الخطوة 7: قم بإنهاء الجدول وحفظ المستند
-في
+## الخطوة 6: وضع اللمسات النهائية على الجدول
 
- في النهاية، ننتهي من إنشاء الجدول باستخدام`EndRow()`و`EndTable()` الطريقة، ثم نقوم بحفظ المستند المعدل إلى ملف.
+لإنهاء عملية إنشاء الجدول، تحتاج إلى إنهاء الجدول وحفظ المستند.
 
 ```csharp
-builder. EndRow();
-builder. EndTable();
+builder.EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لتعيين تنسيق صف الجدول باستخدام Aspose.Words لـ .NET 
-
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// يتم تعيين خصائص التنسيق هذه على الجدول ويتم تطبيقها على كافة الصفوف في الجدول.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
-```
-
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية ضبط تنسيق صف الجدول باستخدام Aspose.Words لـ .NET. باتباع هذا الدليل خطوة بخطوة، يمكنك بسهولة ضبط ارتفاع صف الجدول والهوامش في مستندات Word. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة، يمكنك تخصيص التخطيط المرئي لجداولك وفقًا لاحتياجاتك المحددة.
+
+وهناك لديك! لقد نجحت في إنشاء جدول منسق في مستند Word باستخدام Aspose.Words لـ .NET. يمكن توسيع هذه العملية وتخصيصها لتناسب المتطلبات الأكثر تعقيدًا، لكن هذه الخطوات الأساسية توفر أساسًا متينًا. قم بتجربة خيارات التنسيق المختلفة وشاهد كيف تعمل على تحسين مستنداتك.
+
+## الأسئلة الشائعة
+
+### هل يمكنني تعيين تنسيق مختلف لكل صف في الجدول؟
+ نعم، يمكنك تعيين تنسيق فردي لكل صف من خلال تطبيق تنسيق مختلف`RowFormat` خصائص لكل صف تقوم بإنشائه.
+
+### هل من الممكن إضافة عناصر أخرى، مثل الصور، إلى خلايا الجدول؟
+ قطعاً! يمكنك إدراج الصور والأشكال والعناصر الأخرى في خلايا الجدول باستخدام`DocumentBuilder` فصل.
+
+### كيف يمكنني تغيير محاذاة النص داخل خلايا الجدول؟
+ يمكنك تغيير محاذاة النص عن طريق ضبط`ParagraphFormat.Alignment` ملكية`DocumentBuilder` هدف.
+
+### هل يمكنني دمج الخلايا في جدول باستخدام Aspose.Words لـ .NET؟
+ نعم، يمكنك دمج الخلايا باستخدام`CellFormat.HorizontalMerge`و`CellFormat.VerticalMerge` ملكيات.
+
+### هل هناك طريقة لتصميم الجدول باستخدام أنماط محددة مسبقًا؟
+ نعم، يسمح لك Aspose.Words for .NET بتطبيق أنماط جدول محددة مسبقًا باستخدام`Table.Style` ملكية.

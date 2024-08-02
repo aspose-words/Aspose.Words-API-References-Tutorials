@@ -21,7 +21,7 @@ Tutorial mendalam mencakup enkripsi dan tanda tangan digital, memungkinkan penge
 Dengan menguasai keamanan dokumen menggunakan Aspose.Words untuk Java, pengembang dapat meningkatkan alur kerja pemrosesan kata dan pemrosesan dokumen mereka. Tutorial ini menawarkan petunjuk langkah demi langkah dan contoh praktis untuk memandu pengembang dalam menerapkan perlindungan dokumen yang kuat. Gunakan tutorial ini untuk mengamankan informasi sensitif dan menumbuhkan kepercayaan dalam proses manajemen dokumen Anda.
 
 ## Tutorial Keamanan Dokumen
-### [Cara Menjaga Dokumen Anda Tetap Aman dan Terjamin](./keep-documents-safe-secure/)
+### [Cara Menjaga Dokumen Anda Aman dan Terjamin](./keep-documents-safe-secure/)
 Amankan dokumen Anda dengan Aspose.Words untuk Java. Enkripsi, lindungi, dan tambahkan tanda tangan digital dengan mudah. Jaga keamanan data Anda.
 ### [Mengamankan Dokumen dengan Kata Sandi](./securing-documents-passwords/)
 Temukan cara mengamankan dokumen dengan kata sandi menggunakan Aspose.Words untuk Java. Panduan langkah demi langkah ini mencakup kode sumber dan tip ahli. Lindungi data Anda.

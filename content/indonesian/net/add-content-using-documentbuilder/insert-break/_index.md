@@ -9,7 +9,7 @@ url: /id/net/add-content-using-documentbuilder/insert-break/
 ---
 ## Perkenalan
 
-Hai! Apakah Anda siap terjun ke dunia Aspose.Words untuk .NET? Perpustakaan canggih ini seperti pisau Swiss Army untuk manipulasi dokumen Word. Baik Anda sedang menangani tugas otomatisasi dokumen yang rumit atau hanya perlu menambahkan hentian halaman sederhana, Aspose.Words siap membantu Anda. Dalam tutorial ini, kita akan mempelajari cara menyisipkan jeda di dokumen Word selangkah demi selangkah. Jadi, ambillah secangkir kopi, dan mari kita mulai!
+Hai! Apakah Anda siap terjun ke dunia Aspose.Words untuk .NET? Perpustakaan canggih ini seperti pisau Swiss Army untuk manipulasi dokumen Word. Baik Anda sedang menangani tugas otomatisasi dokumen yang rumit atau hanya perlu menambahkan hentian halaman sederhana, Aspose.Words siap membantu Anda. Dalam tutorial ini, kita akan mempelajari cara menyisipkan jeda di dokumen Word langkah demi langkah. Jadi, ambillah secangkir kopi, dan mari kita mulai!
 
 ## Prasyarat
 

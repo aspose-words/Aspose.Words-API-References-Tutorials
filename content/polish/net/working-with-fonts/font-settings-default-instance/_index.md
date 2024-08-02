@@ -51,7 +51,7 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 
 W tym przykładzie:
 - `SystemFontSource` reprezentuje domyślne czcionki systemu.
-- `FolderFontSource` wskazuje folder niestandardowy (`C:\\MyFonts\\` ) gdzie przechowywane są dodatkowe czcionki. The`true` Parametr wskazuje, że ten folder powinien być skanowany rekurencyjnie.
+- `FolderFontSource` wskazuje folder niestandardowy (`C:\\MyFonts\\` ) gdzie przechowywane są dodatkowe czcionki. The`true` parametr wskazuje, że ten folder powinien być skanowany rekurencyjnie.
 
 ## Krok 3: Załaduj dokument
 

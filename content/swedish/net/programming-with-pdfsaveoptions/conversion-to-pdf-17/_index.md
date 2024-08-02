@@ -63,7 +63,7 @@ Slutligen sparar vi Word-dokumentet som en PDF-fil med hjälp av sparaalternativ
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOptions);
 ```
 
- I detta steg kallar vi`Save` metod på vår`Document` objekt, som passerar i sökvägen där vi vill spara PDF-filen och spara alternativen.
+ I det här steget kallar vi`Save` metod på vår`Document` objekt, som passerar i sökvägen där vi vill spara PDF-filen och spara alternativen.
 
 ## Slutsats
 

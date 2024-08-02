@@ -10,7 +10,7 @@ url: /fr/net/programming-with-loadoptions/update-dirty-fields/
 
 ## Introduction
 
-Avez-vous déjà été dans une situation où vous avez un document Word rempli de champs qui doivent être mis à jour, mais le faire manuellement, c'est comme courir un marathon pieds nus ? Eh bien, vous avez de la chance ! Avec Aspose.Words pour .NET, vous pouvez mettre à jour automatiquement ces champs, ce qui vous fait gagner beaucoup de temps et d'efforts. Ce guide vous guidera tout au long du processus, étape par étape, afin que vous puissiez le maîtriser en un rien de temps.
+Avez-vous déjà été dans une situation où vous avez un document Word rempli de champs qui doivent être mis à jour, mais le faire manuellement, c'est comme courir un marathon pieds nus ? Eh bien, vous avez de la chance ! Avec Aspose.Words pour .NET, vous pouvez mettre à jour automatiquement ces champs, ce qui vous fait gagner beaucoup de temps et d'efforts. Ce guide vous guidera tout au long du processus, étape par étape, afin que vous puissiez le maîtriser en un rien de temps.
 
 ## Conditions préalables
 

@@ -11,7 +11,7 @@ Los tutoriales de programación de gráficos de Aspose.Words para .NET ofrecen u
 
 En estos tutoriales, aprenderá a crear diferentes tipos de gráficos, como gráficos de barras, gráficos circulares, gráficos de áreas, gráficos de líneas, etc. También aprenderá a personalizar elementos de gráficos como títulos, leyendas, etiquetas de datos y ejes. Los tutoriales le mostrarán cómo manipular los datos del gráfico agregando, modificando o eliminando series de datos.
 
-Con estos tutoriales, podrá mejorar sus documentos de Word agregando gráficos visualmente atractivos e informativos. Aprenderá cómo aprovechar las funciones de gráficos avanzadas de Aspose.Words para .NET e integrarlas de manera efectiva en sus aplicaciones. Explore estos tutoriales para ampliar sus habilidades gráficas en Aspose.Words.
+Con estos tutoriales, podrá mejorar sus documentos de Word agregando gráficos visualmente atractivos e informativos. Aprenderá cómo aprovechar las funciones gráficas avanzadas de Aspose.Words para .NET e integrarlas de manera efectiva en sus aplicaciones. Explore estos tutoriales para ampliar sus habilidades gráficas en Aspose.Words.
 
  ## Tutoriales
 | Título | Descripción |

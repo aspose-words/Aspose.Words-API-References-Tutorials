@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 
 在深入研究程式碼之前，請確保您具備以下條件：
 
--  Aspose.Words for .NET：如果您還沒有安裝它，請從[下載連結](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：如果您還沒有安裝，請從[下載連結](https://releases.aspose.com/words/net/).
 - .NET 開發環境：Visual Studio 是個受歡迎的選擇。
 - 範例 Word 文件：準備好要轉換為 PDF 的 DOCX 文件。
 

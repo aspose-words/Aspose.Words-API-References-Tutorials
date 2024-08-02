@@ -77,10 +77,10 @@ Und da haben Sie es! Mit nur wenigen Codezeilen haben Sie Ihr Word-Dokument erfo
 ## Häufig gestellte Fragen
 
 ### Warum sollte ich für meine HTML-Ausgabe eine einzelne CSS-Datei verwenden?
-Die Verwendung einer einzigen CSS-Datei vereinfacht die Verwaltung und Pflege Ihrer Stile. Ihr HTML wird übersichtlicher und effizienter.
+Die Verwendung einer einzigen CSS-Datei vereinfacht die Verwaltung und Wartung Ihrer Stile. Dadurch wird Ihr HTML übersichtlicher und effizienter.
 
 ### Kann ich die CSS-Regeln für Schriftarten bei Bedarf trennen?
- Ja, durch die Einstellung`SaveFontFaceCssSeparately` Zu`true`, Sie können die CSS-Regeln für Schriftarten in eine andere Datei auslagern.
+ Ja, durch die Einstellung`SaveFontFaceCssSeparately` Zu`true`können Sie die CSS-Regeln für Schriftarten in eine andere Datei auslagern.
 
 ### Ist die Nutzung von Aspose.Words für .NET kostenlos?
  Aspose.Words bietet eine kostenlose Testversion an, die Sie[Hier herunterladen](https://releases.aspose.com/) . Für die weitere Nutzung sollten Sie den Kauf einer Lizenz in Erwägung ziehen[Hier](https://purchase.aspose.com/buy).

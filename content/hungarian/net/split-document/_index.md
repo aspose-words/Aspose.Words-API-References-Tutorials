@@ -12,9 +12,9 @@ Split Document egy átfogó forrás, amely elmagyarázza, hogyan lehet egy dokum
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Címsorok Html szerint](./by-headings-html/) | Útmutató lépésről lépésre az Aspose.Words for .NET címsor szerinti HTML-szolgáltatásának C# forráskódjának magyarázatához |
-| [szakaszok szerint Html](./by-sections-html/) | Ismerje meg, hogyan oszthat fel egy Word-dokumentumot HTML szakaszokra az Aspose.Words for .NET használatával a teljes kódpéldával. |
-| [Szakaszok szerint](./by-sections/) | Ismerje meg, hogyan oszthat fel egy Word-dokumentumot külön szakaszokra az Aspose.Words for .NET használatával, a teljes kódpéldával. |
-| [Oldalról oldalra](./page-by-page/) | Útmutató lépésről lépésre az Aspose.Words .NET oldalról oldalra szolgáltatásának C# forráskódjának magyarázatához |
+| [A Word-dokumentum felosztása címsorok szerint HTML](./by-headings-html/) | Ismerje meg, hogyan oszthat fel Word-dokumentumot fejlécekkel HTML-be az Aspose.Words for .NET használatával. Kövesse részletes, lépésenkénti útmutatónkat. |
+| [A Word dokumentum felosztása HTML szakaszok szerint](./by-sections-html/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan oszthat fel egy Word-dokumentumot szakaszonként HTML-re az Aspose.Words for .NET használatával. |
+| [A Word dokumentum felosztása szakaszok szerint](./by-sections/) | Ismerje meg, hogyan oszthat fel egy Word-dokumentumot szakaszokra az Aspose.Words for .NET használatával. Kövesse ezt a részletes, lépésenkénti útmutatót a hatékony dokumentumkezelés érdekében. |
+| [Word-dokumentum felosztása oldalak szerint](./page-by-page/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan oszthat fel egy Word-dokumentumot oldalanként az Aspose.Words for .NET segítségével. Tökéletes nagyméretű dokumentumok hatékony kezelésére. |
 | [Dokumentumok egyesítése](./merge-documents/) | Útmutató lépésről lépésre az Aspose.Words for .NET Dokumentumok egyesítése funkciójának C# forráskódjának magyarázatához |
-| [Oldaltartomány szerint](./by-page-range/) | Az Aspose.Words for .NET segítségével könnyedén kibonthatja oldaltartományonként a Word-dokumentumokat. Lépésről lépésre. |
+| [A Word dokumentum felosztása oldaltartomány szerint](./by-page-range/) | Részletes, lépésenkénti útmutatónkban megtudhatja, hogyan oszthat fel egy Word-dokumentumot oldaltartományonként az Aspose.Words for .NET használatával. Tökéletes fejlesztőknek. |

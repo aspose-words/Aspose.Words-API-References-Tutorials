@@ -9,7 +9,7 @@ url: /vi/net/programming-with-bookmarks/update-bookmark-data/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ gặp phải tình huống cần cập nhật động các phần cụ thể trong tài liệu Word chưa? Có lẽ bạn đang tạo báo cáo có phần giữ chỗ cho dữ liệu hoặc có thể bạn đang làm việc với các mẫu yêu cầu chỉnh sửa nội dung thường xuyên. Thôi, đừng băn khoăn nữa! Aspose.Words for .NET xuất hiện với tư cách là hiệp sĩ của bạn trong bộ áo giáp sáng ngời, cung cấp giải pháp mạnh mẽ và thân thiện với người dùng để quản lý dấu trang và cập nhật tài liệu của bạn.
+Bạn đã bao giờ gặp phải tình huống cần cập nhật động các phần cụ thể trong tài liệu Word chưa? Có thể bạn đang tạo báo cáo có phần giữ chỗ cho dữ liệu hoặc có thể bạn đang làm việc với các mẫu yêu cầu chỉnh sửa nội dung thường xuyên. Thôi, đừng băn khoăn nữa! Aspose.Words for .NET xuất hiện với tư cách là hiệp sĩ của bạn trong bộ áo giáp sáng ngời, cung cấp giải pháp mạnh mẽ và thân thiện với người dùng để quản lý dấu trang và cập nhật tài liệu của bạn.
 
 ## Điều kiện tiên quyết
 

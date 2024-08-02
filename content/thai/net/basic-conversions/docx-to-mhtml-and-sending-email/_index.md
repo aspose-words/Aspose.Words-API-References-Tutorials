@@ -22,7 +22,7 @@ url: /th/net/basic-conversions/docx-to-mhtml-and-sending-email/
 
 ## นำเข้าเนมสเปซ
 
-หากต้องการใช้ Aspose.Words และ Aspose.Email ในโปรเจ็กต์ของคุณ คุณต้องนำเข้าเนมสเปซที่จำเป็น เพิ่มคำสั่งต่อไปนี้ที่ด้านบนของไฟล์ C# ของคุณ:
+หากต้องการใช้ Aspose.Words และ Aspose.Email ในโปรเจ็กต์ของคุณ คุณจะต้องนำเข้าเนมสเปซที่จำเป็น เพิ่มคำสั่งต่อไปนี้ที่ด้านบนของไฟล์ C# ของคุณ:
 
 ```csharp
 using Aspose.Words;
@@ -97,5 +97,5 @@ client.Send(message);
 ### ฉันต้องมีใบอนุญาตสำหรับ Aspose.Words และ Aspose.Email หรือไม่
  ใช่ ห้องสมุดทั้งสองแห่งจำเป็นต้องมีใบอนุญาต คุณสามารถขอรับใบอนุญาตชั่วคราวได้จาก[กำหนดหน้าการซื้อ](https://purchase.aspose.com/temporary-license/) เพื่อวัตถุประสงค์ในการประเมินผล
 
-### ฉันจะหาเอกสารเพิ่มเติมได้ที่ไหน?
+### ฉันจะหาเอกสารเพิ่มเติมได้จากที่ไหน?
  คุณสามารถดูเอกสารประกอบโดยละเอียดสำหรับ Aspose.Words[ที่นี่](https://reference.aspose.com/words/net/) และสำหรับ Aspose.Email[ที่นี่](https://reference.aspose.com/email/net/).

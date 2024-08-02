@@ -7,42 +7,51 @@ type: docs
 weight: 10
 url: /net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
+## Introduction
 
-This tutorial demonstrates how to create a table with a repeating section mapped to a Custom Xml Part in a Word document using Aspose.Words for .NET. The repeating section allows you to dynamically add rows based on the XML data stored in the Custom Xml Part.
+In this tutorial, we'll walk through the process of creating a table with a repeating section that is mapped to a custom XML part using Aspose.Words for .NET. This is particularly useful for dynamically generating documents based on structured data.
 
 ## Prerequisites
-To follow this tutorial, you need to have the following:
 
-- Aspose.Words for .NET library installed.
-- Basic knowledge of C# and Words Processing with Word documents.
+Before we begin, make sure you have the following:
+1. Aspose.Words for .NET library installed. You can download it from the [Aspose website](https://releases.aspose.com/words/net/).
+2. A basic understanding of C# and XML.
 
-## Step 1: Set up the Document Directory
-Begin by setting up the path to your document directory. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to the directory where you want to save the document.
+## Import Namespaces
+
+Make sure to include the necessary namespaces in your project:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Markup;
+using Aspose.Words.Tables;
+```
+
+## Step 1: Initialize Document and DocumentBuilder
+
+First, create a new document and initialize a `DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
 
-## Step 2: Create a Document and DocumentBuilder
-Create a new instance of the `Document` class and a `DocumentBuilder` to build the document's content.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Step 3: Add Custom XML Data to a CustomXmlPart
-Create a `CustomXmlPart` and add custom XML data to it. In this example, we create an XML string representing a collection of books with their titles and authors.
+## Step 2: Add Custom XML Part
+
+Add a custom XML part to the document. This XML contains the data we want to map to our table:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-	"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-	"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
+    "<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
+    "<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
+    "<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## Step 4: Create a Table and Table Structure
-Start creating a table using the `StartTable` method of the `DocumentBuilder`. Add table cells and content using the `InsertCell` and `Write` methods.
+## Step 3: Create the Table Structure
+
+Next, use the `DocumentBuilder` to create the table header:
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,94 +63,60 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Step 5: Create the Repeating Section Mapped to Custom XML
-Create a `StructuredDocumentTag` with `SdtType.RepeatingSection` to represent the repeating section. Set the XML mapping for the repeating section using the `SetMapping` method of the `XmlMapping` property. In this example, we map the repeating section to `/books[1]/book`.
+## Step 4: Create Repeating Section
+
+Create a `StructuredDocumentTag` (SDT) for the repeating section and map it to the XML data:
 
 ```csharp
-StructuredDocumentTag repeatingSectionSdt =
-	new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
 repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Step 6: Create the Repeating Section Item and Add Cells
-Create a `StructuredDocumentTag` with `SdtType.RepeatingSectionItem` to represent the repeating section item. Append it as a child to the repeating section.
+## Step 5: Create Repeating Section Item
+
+Create an SDT for the repeating section item and add it to the repeating section:
 
 ```csharp
-StructuredDocumentTag repeatingSectionItemSdt = 
-	new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-```
-
-Create a `Row` to represent each item in the repeating section and append it to the repeating section item.
-
-```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## Step 7: Add Content Controls within the Repeating Section
-Create `StructuredDocumentTag` objects with `SdtType.PlainText`
+## Step 6: Map XML Data to Table Cells
 
- to represent the title and author content controls. Set the XML mapping for each content control using the `SetMapping` method of the `XmlMapping` property. In this example, we map the title control to `/books[1]/book[1]/title[1]` and the author control to `/books[1]/book[1]/author[1]`.
+Create SDTs for the title and author, map them to the XML data, and append them to the row:
 
 ```csharp
-StructuredDocumentTag titleSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
 row.AppendChild(titleSdt);
 
-StructuredDocumentTag authorSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag authorSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## Step 8: Save the Document
-Save the modified document to the specified directory using the `Save` method. Provide the desired filename with the appropriate file extension. In this example, we save the document as "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+## Step 7: Save the Document
+
+Finally, save the document to the specified directory:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### Example source code for Creating Table Repeating Section Mapped To Custom Xml Part using Aspose.Words for .NET 
+## Conclusion
 
-```csharp
-	// Path to your document directory 
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+By following these steps, you've successfully created a table with a repeating section mapped to a custom XML part using Aspose.Words for .NET. This allows for dynamic content generation based on structured data, making document creation more flexible and powerful.
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-		"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-		"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-		"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Title");
-	builder.InsertCell();
-	builder.Write("Author");
-	builder.EndRow();
-	builder.EndTable();
-	StructuredDocumentTag repeatingSectionSdt =
-		new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
-	repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
-	table.AppendChild(repeatingSectionSdt);
-	StructuredDocumentTag repeatingSectionItemSdt = 
-		new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
-	repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-	Row row = new Row(doc);
-	repeatingSectionItemSdt.AppendChild(row);
-	StructuredDocumentTag titleSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
-	row.AppendChild(titleSdt);
-	StructuredDocumentTag authorSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
-	row.AppendChild(authorSdt);
-	doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
+## FAQ's
 
-```
+### What is a StructuredDocumentTag (SDT)?
+An SDT, also known as a content control, is a bounded region in a document that is used to contain structured data.
 
-That's it! You have successfully created a table with a repeating section mapped to a CustomXmlPart in your Word document using Aspose.Words for .NET.
+### Can I use other data types in the custom XML part?
+Yes, you can structure your custom XML part with any data types and map them accordingly.
+
+### How do I add more rows to the repeating section?
+The repeating section automatically replicates the row structure for each item in the mapped XML path.

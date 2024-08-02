@@ -91,7 +91,7 @@ Kesimpulannya, menguasai hentian halaman dan penomoran di Aspose.Words untuk .NE
 
 ## FAQ
 
-### Bisakah saya memulai ulang penomoran halaman di tengah suatu bagian?
+### Bisakah saya memulai ulang penomoran halaman di tengah bagian?
 
  Sayangnya, Aspose.Words untuk .NET tidak secara langsung mendukung memulai ulang penomoran halaman dalam satu bagian. Namun, Anda dapat mencapai efek serupa dengan membuat bagian baru pada titik dan pengaturan yang diinginkan`RestartPageNumbering` ke`true` untuk bagian itu.
 

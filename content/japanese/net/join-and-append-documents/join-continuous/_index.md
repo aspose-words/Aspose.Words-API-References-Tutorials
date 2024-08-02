@@ -53,7 +53,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## ステップ3: セクションの開始を連続として設定する
 
-ソース文書の内容を宛先文書の直後に表示させるには、`SectionStart`ソース文書の最初のセクションのプロパティを`Continuous`.
+ソース文書の内容をターゲット文書の直後に表示させるには、`SectionStart`ソース文書の最初のセクションのプロパティを`Continuous`.
 
 ```csharp
 //ドキュメントを、宛先ドキュメントのコンテンツの直後に表示します。

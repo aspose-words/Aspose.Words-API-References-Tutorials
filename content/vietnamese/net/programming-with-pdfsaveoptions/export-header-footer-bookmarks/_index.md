@@ -72,7 +72,7 @@ Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn 
 
 ### Tôi có thể xuất tất cả dấu trang từ tài liệu Word sang PDF không?
 
- Có, bạn có thể. bên trong`PdfSaveOptions`, bạn có thể điều chỉnh cài đặt để bao gồm tất cả dấu trang nếu cần.
+ Vâng, bạn có thể. bên trong`PdfSaveOptions`, bạn có thể điều chỉnh cài đặt để bao gồm tất cả dấu trang nếu cần.
 
 ### Nếu tôi cũng muốn xuất dấu trang từ nội dung tài liệu thì sao?
 

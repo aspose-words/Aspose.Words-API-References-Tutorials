@@ -2,99 +2,112 @@
 title: Feld einfügen, Text einschließen ohne Dokumentgenerator
 linktitle: FieldIncludeText ohne Document Builder einfügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein FieldIncludeText-Feld in Ihre Word-Dokumente einfügen.
+description: Erfahren Sie mit unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie in Aspose.Words für .NET einen FieldIncludeText einfügen, ohne DocumentBuilder zu verwenden.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## Einführung
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes unten, der die Funktion „FieldIncludeText-Feld einfügen“ von Aspose.Words für .NET verwendet. Befolgen Sie jeden Schritt sorgfältig, um die gewünschten Ergebnisse zu erzielen.
+In der Welt der Dokumentenautomatisierung und -bearbeitung ist Aspose.Words für .NET ein leistungsstarkes Tool. Heute tauchen wir in eine detaillierte Anleitung ein, wie man einen FieldIncludeText einfügt, ohne DocumentBuilder zu verwenden. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess und stellt sicher, dass Sie jeden Teil des Codes und seinen Zweck verstehen.
 
-## Schritt 1: Einrichten des Dokumentverzeichnisses
+## Voraussetzungen
 
-Im angegebenen Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version installiert haben. Sie können sie herunterladen von[Hier](https://releases.aspose.com/words/net/).
+2. .NET-Entwicklungsumgebung: Jede .NET-kompatible IDE wie Visual Studio.
+3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen das Folgen.
 
-## Schritt 2: Erstellen des Dokuments und des Absatzes
+## Namespaces importieren
 
-Wir beginnen mit der Erstellung eines neuen Dokuments und der Initialisierung eines Absatzes.
-
-```csharp
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-```
-
-## Schritt 3: Einfügen des FieldIncludeText-Felds
-
- Wir benutzen das`AppendField()` Methode, um ein FieldIncludeText-Feld in den Absatz einzufügen.
+Als Erstes müssen wir die erforderlichen Namespaces importieren. Diese Namespaces bieten Zugriff auf die Klassen und Methoden, die zum Bearbeiten von Word-Dokumenten erforderlich sind.
 
 ```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Anschließend konfigurieren wir die Eigenschaften des Felds FieldIncludeText, indem wir den Namen des Lesezeichens und den Namen der Quelldatei angeben.
+Lassen Sie uns nun das Beispiel in mehrere Schritte unterteilen. Jeder Schritt wird zur Gewährleistung der Klarheit ausführlich erklärt.
 
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
+## Schritt 1: Verzeichnispfad festlegen
 
-Als Nächstes fügen wir den Absatz zum Hauptteil des Dokuments hinzu.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
- Schließlich nennen wir die`Update()` Methode zum Aktualisieren des Felds.
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### Beispiel des Quellcodes zum Einfügen eines FieldIncludeText-Felds mit Aspose.Words für .NET
+Der erste Schritt besteht darin, den Pfad zu Ihrem Dokumentverzeichnis zu definieren. Hier werden Ihre Word-Dokumente gespeichert und abgerufen.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Schritt 2: Erstellen Sie das Dokument und den Absatz
+
+Als nächstes erstellen wir ein neues Dokument und einen Absatz innerhalb dieses Dokuments. Dieser Absatz enthält das Feld FieldIncludeText.
+
+```csharp
 // Erstellen Sie das Dokument und den Absatz.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
+```
 
+## Schritt 3: FieldIncludeText-Feld einfügen
+
+Nun fügen wir das Feld FieldIncludeText in den Absatz ein. Mit diesem Feld können Sie Text aus einem anderen Dokument einfügen.
+
+```csharp
 // Fügen Sie das Feld FieldIncludeText ein.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## Schritt 4: Feldeigenschaften festlegen
+
+Wir müssen die Eigenschaften für das Feld FieldIncludeText angeben. Dazu gehört das Festlegen des Lesezeichennamens und des vollständigen Pfads des Quelldokuments.
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## Schritt 5: Absatz zum Dokument hinzufügen
+
+Nachdem das Feld eingerichtet ist, fügen wir den Absatz an den ersten Abschnittstext des Dokuments an.
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## Schritt 6: Feld aktualisieren
+
+Bevor wir das Dokument speichern, müssen wir FieldIncludeText aktualisieren, um sicherzustellen, dass der richtige Inhalt aus dem Quelldokument übernommen wird.
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## Schritt 7: Speichern Sie das Dokument
+
+Abschließend speichern wir das Dokument im angegebenen Verzeichnis.
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-In diesem Beispiel haben wir ein neues Dokument erstellt, einen Absatz initialisiert, ein FieldIncludeTexten mit dem Lesezeichennamen und dem Quelldateinamen eingefügt und das Dokument unter einem angegebenen Dateinamen gespeichert.
+## Abschluss
 
-Damit schließen wir unsere Anleitung zur Verwendung der Funktion „FieldIncludeText einfügen“ mit Aspose.Words für .NET ab.
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie problemlos einen FieldIncludeText einfügen, ohne DocumentBuilder in Aspose.Words für .NET zu verwenden. Dieser Ansatz bietet eine optimierte Möglichkeit, Inhalte aus einem Dokument in ein anderes einzufügen, wodurch Ihre Aufgaben zur Dokumentautomatisierung erheblich vereinfacht werden.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Wie kann ich die Quelldatei für das Texteinschlussfeld in Aspose.Words für .NET angeben?
+### Was ist Aspose.Words für .NET?  
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die Arbeit mit Word-Dokumenten in .NET-Anwendungen. Sie ermöglicht das programmgesteuerte Erstellen, Bearbeiten und Konvertieren von Dokumenten.
 
- A: Um die Quelldatei für das Text-Inklusionsfeld in Aspose.Words für .NET anzugeben, können Sie den`FieldIncludeText.SourceFullName`-Eigenschaft, um den vollständigen Pfad der Quelldatei festzulegen. Stellen Sie sicher, dass die Quelldatei zugänglich ist und den Inhalt enthält, den Sie in das Texteinschlussfeld aufnehmen möchten.
+### Warum FieldIncludeText verwenden?  
+FieldIncludeText ist nützlich, um Inhalte dynamisch aus einem Dokument in ein anderes einzufügen und so modularere und wartbarere Dokumente zu ermöglichen.
 
-#### F: Kann ich mit Aspose.Words für .NET Text aus einem Makro in das Texteinschlussfeld einfügen?
+### Kann ich mit dieser Methode Text aus anderen Dateiformaten einfügen?  
+FieldIncludeText funktioniert speziell mit Word-Dokumenten. Für andere Formate benötigen Sie möglicherweise andere Methoden oder Klassen, die von Aspose.Words bereitgestellt werden.
 
- A: Ja, Sie können Text aus einem Makro in das Text-Einschlussfeld mit Aspose.Words für .NET einbinden. Sie können das`FieldIncludeText.IncludeText` um den Namen des Makros anzugeben, dessen Inhalt in das Feld aufgenommen werden soll.
+### Ist Aspose.Words für .NET mit .NET Core kompatibel?  
+Ja, Aspose.Words für .NET unterstützt .NET Framework, .NET Core und .NET 5/6.
 
-#### F: Hat das Einfügen eines Text-Include-Felds ohne den Dokument-Generator Auswirkungen auf die Word-Dokumentstruktur mit Aspose.Words für .NET?
-
-A: Das Einfügen eines Text-Include-Felds ohne den Dokument-Generator hat keine direkten Auswirkungen auf die Struktur des Word-Dokuments. Es fügt dem Dokumentinhalt jedoch ein neues Feldelement hinzu. Sie können die Dokumentstruktur bearbeiten, indem Sie die vorhandenen Elemente nach Bedarf hinzufügen, löschen oder ändern.
-
-#### F: Kann ich das Erscheinungsbild des Texteinschlussfelds in einem Word-Dokument mit Aspose.Words für .NET anpassen?
-
-A: Das Texteinschlussfeld passt sein Erscheinungsbild in einem Word-Dokument nicht direkt an. Sie können den eingefügten Text jedoch mithilfe der Absatzeigenschaften, Schrifteigenschaften und anderer Formatierungsobjekte formatieren, die in Aspose.Words für .NET verfügbar sind.
+### Wie kann ich eine kostenlose Testversion von Aspose.Words für .NET erhalten?  
+ Sie können eine kostenlose Testversion erhalten von[Hier](https://releases.aspose.com/).

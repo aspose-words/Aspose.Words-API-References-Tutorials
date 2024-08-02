@@ -2,74 +2,101 @@
 title: Tentukan Lokal Di Tingkat Bidang
 linktitle: Tentukan Lokal Di Tingkat Bidang
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menentukan lokalisasi tingkat bidang di dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara menentukan lokal untuk bidang di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan kami untuk menyesuaikan format dokumen Anda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/specify-locale-at-field-level/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# berikut yang memungkinkan penentuan lokalisasi di tingkat bidang menggunakan fitur Aspose.Words untuk .NET. Pastikan Anda telah menyertakan perpustakaan Aspose.Words di proyek Anda sebelum menggunakan kode ini.
+Apakah Anda siap terjun ke dunia Aspose.Words untuk .NET? Hari ini, kita akan mempelajari cara menentukan lokal di tingkat lapangan. Fitur praktis ini sangat berguna ketika Anda ingin dokumen Anda mematuhi format budaya atau regional tertentu. Anggap saja seperti memberikan paspor pada dokumen Anda yang memberi tahu bagaimana harus berperilaku berdasarkan tempat "berkunjungnya". Di akhir tutorial ini, Anda akan dapat menyesuaikan pengaturan lokal untuk kolom di dokumen Word Anda dengan mudah. Mari kita mulai!
 
-## Langkah 1: Tetapkan jalur direktori dokumen
+## Prasyarat
+
+Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
+
+1.  Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan .NET lainnya.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda mengikuti contoh.
+4. Lisensi Aspose: Jika Anda tidak memiliki lisensi, Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) untuk mencoba semua fitur.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini penting untuk bekerja dengan Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Baiklah, sekarang kita sudah menyelesaikan prasyaratnya, mari kita uraikan prosesnya langkah demi langkah. Setiap langkah akan memiliki judul dan penjelasan agar sangat mudah untuk diikuti.
+
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Pertama, kita perlu menyiapkan direktori tempat kita menyimpan dokumen kita. Anggap saja ini sebagai panggung untuk permainan kita.
 
 ```csharp
 // Jalur ke direktori dokumen.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 ```
 
-Pastikan untuk menentukan jalur yang benar ke direktori dokumen Anda tempat dokumen yang diedit akan disimpan.
+ Mengganti`"YOUR_DOCUMENT_DIRECTORY"` dengan jalur sebenarnya ke direktori Anda.
 
-## Langkah 2: Buat pembuat dokumen
+## Langkah 2: Inisialisasi DocumentBuilder
+
+ Selanjutnya, kita akan membuat instance baru`DocumentBuilder`. Ini seperti pena dan kertas kita untuk membuat dan mengedit dokumen Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Di sini kita membuat sebuah instance dari`DocumentBuilder` kelas yang memungkinkan kita menambahkan bidang ke dokumen.
+## Langkah 3: Sisipkan Bidang
 
-## Langkah 3: Masukkan kolom tanggal dengan lokasi tertentu
+Sekarang, mari masukkan field ke dalam dokumen. Bidang adalah elemen dinamis yang dapat menampilkan data, seperti tanggal, nomor halaman, atau perhitungan.
 
 ```csharp
-Field field = builder. InsertField(FieldType.FieldDate, true);
+Field field = builder.InsertField(FieldType.FieldDate, true);
+```
+
+## Langkah 4: Tentukan Lokal
+
+ Inilah keajaibannya! Kami akan mengatur lokal untuk bidang tersebut. ID lokal`1049`sesuai dengan bahasa Rusia. Ini berarti kolom tanggal kami akan mengikuti aturan format Rusia.
+
+```csharp
 field.LocaleId = 1049;
 ```
 
- Kami menggunakan pembuat dokumen untuk menyisipkan bidang tipe`FieldType.FieldDate` ke dalam dokumen. Dengan mengatur`LocaleId`properti ke`1049`, kami menentukan lokalisasi Rusia untuk bidang ini.
+## Langkah 5: Simpan Dokumen
 
-## Langkah 4: Simpan dokumen yang dimodifikasi
-
-```csharp
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
-```
-
-Terakhir, kami menyimpan dokumen yang dimodifikasi dengan lokasi tertentu ke file tertentu.
-
-### Contoh kode sumber untuk menentukan lokalisasi tingkat bidang dengan Aspose.Words untuk .NET
+Terakhir, mari simpan dokumen kita. Langkah ini menyelesaikan semua perubahan yang telah kami buat.
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-DocumentBuilder builder = new DocumentBuilder();
-
-Field field = builder. InsertField(FieldType.FieldDate, true);
-field.LocaleId = 1049;
-
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
+builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.docx");
 ```
 
-Ini adalah contoh kode sumber untuk menentukan lokalisasi di tingkat bidang dalam dokumen menggunakan Aspose.Words untuk .NET. Anda dapat menggunakan kode ini untuk menyisipkan kolom tanggal dengan lokasi tertentu di dokumen Word Anda.
+## Kesimpulan
 
-### FAQ
+Dan itu dia! Anda telah berhasil menentukan lokal untuk bidang di dokumen Word Anda menggunakan Aspose.Words untuk .NET. Fitur canggih ini memungkinkan Anda menyesuaikan dokumen Anda untuk memenuhi persyaratan budaya dan regional tertentu, menjadikan aplikasi Anda lebih serbaguna dan ramah pengguna. Selamat membuat kode!
 
-#### T: Bagaimana cara menentukan lokal tingkat bidang di Aspose.Words untuk .NET?
+## FAQ
 
- J: Untuk menentukan lokal di tingkat bidang di Aspose.Words untuk .NET, Anda dapat menggunakan`FieldOptions` kelas dan itu`FieldLocale` properti untuk mengatur lokal yang diinginkan. Misalnya, Anda bisa menggunakan`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` untuk menentukan lokal Perancis (Prancis).
+### Apa itu ID lokal di Aspose.Words?
 
-#### T: Apakah mungkin untuk menentukan lokal yang berbeda untuk setiap bidang di Aspose.Words untuk .NET?
+ID lokal di Aspose.Words adalah pengidentifikasi numerik yang mewakili budaya atau wilayah tertentu, yang memengaruhi cara data seperti tanggal dan angka diformat.
 
- J: Ya, dimungkinkan untuk menentukan lokal yang berbeda untuk setiap bidang di Aspose.Words untuk .NET. Anda dapat menggunakan`FieldOptions.FieldLocale` properti sebelum membuat atau memperbarui bidang tertentu untuk menetapkan lokal yang berbeda.
+### Bisakah saya menentukan lokasi berbeda untuk bidang berbeda dalam dokumen yang sama?
 
-#### T: Bagaimana cara mendapatkan lokal yang saat ini digunakan untuk bidang di Aspose.Words untuk .NET?
+Ya, Anda dapat menentukan lokal berbeda untuk bidang berbeda dalam dokumen yang sama untuk memenuhi berbagai persyaratan pemformatan.
 
- J: Untuk mendapatkan lokal yang saat ini digunakan untuk bidang di Aspose.Words untuk .NET, Anda dapat menggunakan bidang tersebut`Field.LocaleId`Properti. Ini akan memungkinkan Anda untuk mendapatkan pengenal lokal yang terkait dengan bidang tersebut.
+### Di mana saya dapat menemukan daftar ID lokal?
+
+Anda dapat menemukan daftar ID lokal di dokumentasi Microsoft atau dalam dokumentasi Aspose.Words API.
+
+### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
+
+ Meskipun Anda dapat menggunakan Aspose.Words untuk .NET tanpa lisensi dalam mode evaluasi, disarankan untuk mendapatkan[lisensi](https://purchase.aspose.com/buy) untuk membuka kunci fungsionalitas penuh.
+
+### Bagaimana cara memperbarui perpustakaan Aspose.Words ke versi terbaru?
+
+ Anda dapat mengunduh Aspose.Words untuk .NET versi terbaru dari[Unduh Halaman](https://releases.aspose.com/words/net/).

@@ -16,12 +16,12 @@ Pomocí Aspose.Words for .NET a následováním těchto výukových programů bu
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Přidat tvar skupiny](./add-group-shape/) | Naučte se, jak přidat tvar skupiny s více tvary do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Vložit tvar](./insert-shape/) | Naučte se vkládat tvary do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Poměr stran uzamčen](./aspect-ratio-locked/) | Naučte se zamknout nebo odemknout poměr stran tvaru v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Rozložení v buňce](./layout-in-cell/) | Naučte se rozvržení tvaru v buňce tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Přidat rohy ustřižené](./add-corners-snipped/) | Naučte se, jak přidat tvar s oříznutými rohy do dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Získejte skutečné body za hranice tvaru](./get-actual-shape-bounds-points/) | Naučte se, jak získat skutečné hranice tvaru v bodech (jednotka měření) v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Vertikální kotva](./vertical-anchor/) | Naučte se, jak umístit tvar svisle v dokumentu pomocí funkce svislého ukotvení v Aspose.Words pro .NET.|
-| [Detekce Smart Art Shape](./detect-smart-art-shape/) | Naučte se detekovat tvary Smart Art v dokumentu aplikace Word pomocí Aspose.Words for .NET a identifikovat grafické znázornění. |
-| [Aktualizujte Smart Art Drawing](./update-smart-art-drawing/) | Naučte se aktualizovat kresbu Smart Art v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Přidat tvar skupiny](./add-group-shape/) | Naučte se, jak přidávat tvary skupin do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí tohoto komplexního, podrobného kurzu. |
+| [Vložit tvar](./insert-shape/) | Naučte se vkládat a manipulovat s tvary v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí našeho podrobného průvodce. |
+| [Poměr stran uzamčen](./aspect-ratio-locked/) | Naučte se, jak uzamknout poměr stran tvarů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle tohoto podrobného průvodce, aby byly obrázky a tvary proporcionální. |
+| [Rozložení v buňce](./layout-in-cell/) | Naučte se, jak nastavit rozvržení v buňce pomocí Aspose.Words pro .NET pomocí tohoto komplexního průvodce. Ideální pro vývojáře, kteří chtějí upravit dokumenty aplikace Word. |
+| [Přidat rohy ustřižené](./add-corners-snipped/) | Naučte se, jak přidat tvar s odříznutými rohy do dokumentů aplikace Word pomocí Aspose.Words for .NET. Tento podrobný průvodce vám zajistí snadné vylepšení vašich dokumentů. |
+| [Získejte skutečné body za hranice tvaru](./get-actual-shape-bounds-points/) | Zjistěte, jak získat skutečné hraniční body tvaru v dokumentech aplikace Word pomocí Aspose.Words pro .NET. Naučte se přesnou manipulaci s tvarem pomocí tohoto podrobného průvodce. |
+| [Vertikální kotva](./vertical-anchor/) | Naučte se, jak nastavit vertikální pozice ukotvení pro textová pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Včetně jednoduchého průvodce krok za krokem.|
+| [Detekce Smart Art Shape](./detect-smart-art-shape/) | Naučte se, jak detekovat tvary SmartArt v dokumentech Word pomocí Aspose.Words for .NET, pomocí tohoto komplexního průvodce. Ideální pro automatizaci pracovního toku dokumentů. |
+| [Aktualizujte Smart Art Drawing](./update-smart-art-drawing/) | Naučte se, jak aktualizovat kresby Smart Art v dokumentech Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce. Ujistěte se, že vaše vizualizace jsou vždy přesné. |

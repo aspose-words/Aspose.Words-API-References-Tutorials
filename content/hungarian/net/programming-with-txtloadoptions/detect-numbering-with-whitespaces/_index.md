@@ -2,115 +2,110 @@
 title: Számozás észlelése szóközökkel
 linktitle: Számozás észlelése szóközökkel
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan észlelheti a listaszámokat szóközökkel az Aspose.Words for .NET programban. Egyszerűen javíthatja dokumentumai szerkezetét.
+description: Fedezze fel, hogyan használhatja az Aspose.Words for .NET-et a szóközökkel ellátott számozás észlelésére egyszerű szöveges dokumentumokban, és biztosíthatja a listák helyes felismerését.
 type: docs
 weight: 10
 url: /hu/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-Ebben az oktatóanyagban megvizsgáljuk az Aspose.Words for .NET "számozás észlelése szóközökkel" funkciójához biztosított C# forráskódot. Ez a funkció lehetővé teszi listák észlelését és létrehozását egy szöveges dokumentumból, amely listaszámokat és szóközöket tartalmaz.
+## Bevezetés
 
-## 1. lépés: A környezet beállítása
+Aspose.Words .NET rajongóknak! Ma egy lenyűgöző funkcióba merülünk bele, amely gyerekjáték megkönnyítheti a listák kezelését az egyszerű szöveges dokumentumokban. Foglalkozott már olyan szöveges fájlokkal, amelyekben egyes soroknak listáknak kellene lenniük, de nem néznek ki egészen jól, amikor betöltik egy Word dokumentumba? Nos, van egy ügyes trükkünk: a számozás felismerése szóközökkel. Ez az oktatóanyag végigvezeti Önt a`DetectNumberingWithWhitespaces` opciót az Aspose.Words for .NET-ben, hogy biztosítsa a listák helyes felismerését, még akkor is, ha szóköz van a számok és a szöveg között.
 
-Mielőtt elkezdené, győződjön meg arról, hogy beállította fejlesztői környezetét az Aspose.Words for .NET segítségével. Győződjön meg arról, hogy hozzáadta a szükséges hivatkozásokat, és importálta a megfelelő névtereket.
+## Előfeltételek
 
-## 2. lépés: A szöveges dokumentum létrehozása
+Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkkel:
+
+-  Aspose.Words for .NET: Letöltheti a[Aspose Releases](https://releases.aspose.com/words/net/) oldalon.
+- Fejlesztői környezet: Visual Studio vagy bármely más C# IDE.
+- .NET Framework telepítve van a gépére.
+- Alapvető C# ismerete: Az alapok megértése segít a példák követésében.
+
+## Névterek importálása
+
+Mielőtt belevágna a kódba, győződjön meg arról, hogy a szükséges névtereket importálta a projektbe. Íme egy gyors részlet a kezdéshez:
 
 ```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-string textDoc = "Full stop delimiters:\n" +
-                  "1. First list item 1\n" +
-                  "2. First list item 2\n" +
-                  "3. First list item 3\n\n" +
-                  "Right bracket delimiters:\n" +
-                  "1) Second list item 1\n" +
-                  "2) Second list item 2\n" +
-                  "3) Second list item 3\n\n" +
-                  "Bullet delimiters:\n" +
-                  "• Third list item 1\n" +
-                  "• Third list item 2\n" +
-                  "• Third list item 3\n\n" +
-                  "Whitespace delimiters:\n" +
-                  "1 Fourth list item 1\n" +
-                  "2 Fourth list item 2\n" +
-                  "3 Fourth list item 3";
+using System;
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-Ebben a lépésben létrehozunk egy szöveges karakterláncot, amely egy listaszámokat és szóközöket tartalmazó szöveges dokumentumot szimulál. Különböző listahatárolókat használunk, például pontot, jobb zárójelet, felsorolásjelet és szóközöket.
+Bontsuk le a folyamatot egyszerű, kezelhető lépésekre. Minden lépés végigvezeti Önt a szükséges kódon, és elmagyarázza, mi történik.
 
-## 3. lépés: A feltöltési beállítások konfigurálása
+## 1. lépés: Határozza meg a dokumentumkönyvtárat
 
-```csharp
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-```
-
- Ebben a lépésben konfiguráljuk a dokumentumbetöltési beállításokat. Létrehozunk egy újat`TxtLoadOptions` objektumot és állítsa be a`DetectNumberingWithWhitespaces`tulajdonát`true`. Ez lehetővé teszi, hogy az Aspose.Words felismerje a listaszámokat még akkor is, ha szóközök követik őket.
-
-## 4. lépés: A dokumentum betöltése és mentése
+Először is állítsuk be a dokumentumkönyvtár elérési útját. Itt tárolódnak a bemeneti és kimeneti fájlok.
 
 ```csharp
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-```
-
- Ebben a lépésben betöltjük a dokumentumot a megadott szöveges karakterlánc és betöltési beállítások segítségével. Használjuk a`MemoryStream` a szöveges karakterlánc memóriafolyammá alakításához. Ezután a kapott dokumentumot .docx formátumban mentjük.
-
-### Minta forráskód az Aspose.Words for .NET-hez.
-
-```csharp
-
-            
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-// Hozzon létre egy egyszerű szöveges dokumentumot karakterlánc formájában, amely részek listákként értelmezhetők.
-// Betöltéskor az első három listát mindig észleli az Aspose.Words,
-// és a Lista objektumok a betöltés után jönnek létre számukra.
-const string textDoc = "Full stop delimiters:\n" +
-					   "1. First list item 1\n" +
-					   "2. First list item 2\n" +
-					   "3. First list item 3\n\n" +
-					   "Right bracket delimiters:\n" +
-					   "1) Second list item 1\n" +
-					   "2) Second list item 2\n" +
-					   "3) Second list item 3\n\n" +
-					   "Bullet delimiters:\n" +
-					   "• Third list item 1\n" +
-					   "• Third list item 2\n" +
-					   "• Third list item 3\n\n" +
-					   "Whitespace delimiters:\n" +
-					   "1 Fourth list item 1\n" +
-					   "2 Fourth list item 2\n" +
-					   "3 Fourth list item 3";
-
-// A negyedik lista, szóközzel a lista száma és a listaelem tartalma között,
-// csak akkor észlelhető listaként, ha egy LoadOptions objektum "DetectNumberingWithWhitespaces" értéke igaz,
-// hogy elkerüljük, hogy a számokkal kezdődő bekezdések tévesen listákként jelenjenek meg.
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-
-// Töltse be a dokumentumot a LoadOptions paraméterként történő alkalmazása közben, és ellenőrizze az eredményt.
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-            
-        
 ```
 
-Most futtathatja a forráskódot a listaszámokat és szóközöket tartalmazó szöveges dokumentum betöltéséhez, majd létrehozhat egy .docx dokumentumot az észlelt listákkal. A kimeneti fájl a megadott könyvtárba kerül mentésre "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx" néven.
+## 2. lépés: Hozzon létre egy egyszerű szöveges dokumentumot
+
+Ezután egy egyszerű szöveges dokumentumot hozunk létre karakterláncként. Ez a dokumentum listaként értelmezhető részeket tartalmaz.
+
+```csharp
+const string textDoc = "Full stop delimiters:\n" +
+                       "1. First list item 1\n" +
+                       "2. First list item 2\n" +
+                       "3. First list item 3\n\n" +
+                       "Right bracket delimiters:\n" +
+                       "1) Second list item 1\n" +
+                       "2) Second list item 2\n" +
+                       "3) Second list item 3\n\n" +
+                       "Bullet delimiters:\n" +
+                       "• Third list item 1\n" +
+                       "• Third list item 2\n" +
+                       "• Third list item 3\n\n" +
+                       "Whitespace delimiters:\n" +
+                       "1 Fourth list item 1\n" +
+                       "2 Fourth list item 2\n" +
+                       "3 Fourth list item 3";
+```
+
+## 3. lépés: A LoadOptions konfigurálása
+
+ A szóközökkel történő számozás észleléséhez be kell állítanunk a`DetectNumberingWithWhitespaces` opciót`true` a`TxtLoadOptions` tárgy.
+
+```csharp
+TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
+```
+
+## 4. lépés: Töltse be a dokumentumot
+
+ Most töltsük be a dokumentumot a`TxtLoadOptions` paraméterként. Ez biztosítja a negyedik lista (szóközökkel) helyes észlelését.
+
+```csharp
+Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
+```
+
+## 5. lépés: Mentse el a dokumentumot
+
+Végül mentse a dokumentumot a megadott könyvtárba. Ez egy Word-dokumentumot fog kiadni a helyesen észlelt listákkal.
+
+```csharp
+doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
+```
 
 ## Következtetés
-Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET szóközök számozási funkcióját. Megtanultuk, hogyan lehet listákat készíteni egy szöveges dokumentumból, amely listaszámokat és szóközöket tartalmaz.
 
-Ez a funkció rendkívül hasznos a különböző módon formázott listaszámokat tartalmazó dokumentumok feldolgozásához. A megfelelő betöltési opciók használatával az Aspose.Words képes felismerni ezeket a listaszámokat, még akkor is, ha szóközök követik őket, és strukturált listákká alakítja át a végleges dokumentumban.
+És megvan! Néhány sornyi kóddal elsajátította a szóközökkel történő számozás felismerését egyszerű szöveges dokumentumokban az Aspose.Words for .NET segítségével. Ez a funkció hihetetlenül hasznos lehet, amikor különféle szövegformátumokkal foglalkozik, és biztosítja, hogy a listák pontosan megjelenjenek a Word-dokumentumokban. Így ha legközelebb ezekkel a trükkös listákkal találkozik, pontosan tudni fogja, mit kell tennie.
 
-funkció használatával időt takaríthat meg, és javíthatja a munkafolyamat hatékonyságát. Könnyedén kinyerhet információkat a szöveges dokumentumokból, és megfelelő listákkal jól strukturált dokumentumokká alakíthatja azokat.
+## GYIK
 
-A kívánt eredmény elérése érdekében ne felejtse el fontolóra venni a betöltési lehetőségeket, például a szóköztárcsázás érzékelésének konfigurálását.
+###  Mi a`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+`DetectNumberingWithWhitespaces` lehetőség van benne`TxtLoadOptions` amely lehetővé teszi az Aspose.Words számára a listák felismerését még akkor is, ha szóköz van a számozás és a listaelem szövege között.
 
-Az Aspose.Words for .NET számos fejlett szolgáltatást kínál a dokumentumok kezeléséhez és létrehozásához. Az Aspose.Words által biztosított dokumentáció és példák további tanulmányozásával teljes mértékben kiaknázhatja ennek a nagy teljesítményű könyvtárnak a lehetőségeit.
+### Használhatom ezt a funkciót más határolójelekhez, például golyókhoz és zárójelekhez?
+ Igen, az Aspose.Words automatikusan észleli az általános határolójelekkel, például pontokkal és zárójelekkel ellátott listákat. A`DetectNumberingWithWhitespaces` kifejezetten segít a szóközt tartalmazó listáknál.
 
-Tehát ne habozzon integrálni a szóközök számozását az Aspose.Words for .NET projektjébe, és kihasználja előnyeit jól strukturált és olvasható dokumentumok létrehozásához.
+###  Mi történik, ha nem használom`DetectNumberingWithWhitespaces`?
+E beállítás nélkül előfordulhat, hogy a számozás és a szöveg között szóközt tartalmazó listákat a rendszer nem ismeri fel listaként, és az elemek egyszerű bekezdésként jelenhetnek meg.
 
+### Elérhető ez a funkció más Aspose termékekben?
+Ez a speciális szolgáltatás az Aspose.Words for .NET-hez lett szabva, és a Word dokumentumfeldolgozás kezelésére szolgál.
+
+### Hogyan szerezhetek ideiglenes licencet az Aspose.Words for .NET-hez?
+ Ideiglenes engedélyt szerezhet a[Aspose ideiglenes engedélye](https://purchase.aspose.com/temporary-license/) oldalon.
 

@@ -2,34 +2,70 @@
 title: Yorum Çözüldü ve Cevaplar
 linktitle: Yorum Çözüldü ve Cevaplar
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerindeki yorumları ve yanıtlarını nasıl çözümleyeceğinizi öğrenin.
+description: Aspose.Words for .NET ile Word belgelerindeki yorumları çözümlemeyi ve yanıtlamayı otomatikleştirin. Adım adım kılavuz dahildir.
 type: docs
 weight: 10
 url: /tr/net/working-with-comments/comment-resolved-and-replies/
 ---
+## giriiş
 
-Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki yorumları ve yanıtlarını nasıl çözümleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda yorum çözümlemesini yönetebilecek ve yorumların durumunu ve yanıtlarını güncelleyebileceksiniz.
+Word belgeleriyle çalışıyorsanız muhtemelen yorumlarla ilgilenmişsinizdir. İşbirliği için harikadırlar ancak bunları yönetmek güçlük yaratabilir. Aspose.Words for .NET ile yorumları çözümleme ve yanıtlama sürecini otomatikleştirebilirsiniz. Bu kılavuz, tam da bunu yapmanıza yönelik adımlarda size yol gösterecektir.
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-- Aspose.Words for .NET kütüphanesi sisteminizde kuruludur.
 
-## 1. Adım: Belgeyi Yükleyin ve Yorumlara Erişin
-Başlamak için, Document sınıfını kullanarak yorumları içeren belgeyi yükleyin ve yorumlar koleksiyonuna erişin:
+Dalışa başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+1.  Aspose.Words for .NET: Buradan indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: .NET Framework ile kurulum yapın.
+3. Temel C# Bilgisi: Sözdizimi ve kavramlara aşinalık.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bu, ihtiyacımız olan tüm sınıfların ve yöntemlerin hazır olmasını sağlar.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+Süreci basit, takip edilmesi kolay adımlara ayıralım. Her adım, kodu ve işlevselliğini anlamanıza yardımcı olacaktır.
+
+## 1. Adım: Belgeyi Yükleyin
+
+ Başlamak için yorumları içeren Word belgesini yükleyin. Kullan`Document` Bunun için sınıf.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+ Bu kod satırı yeni bir`Document` Word belgenizin yolunu içeren nesne.
+
+## 2. Adım: Yorumları Alın
+
+ Daha sonra belgedeki tüm yorumları almamız gerekiyor. biz kullanacağız`GetChildNodes` koleksiyonunu geri alma yöntemi`Comment` düğümler.
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## 2. Adım: Yorumları ve Yanıtlarını Çözümleyin
-Ardından, yorumları ve yanıtlarını yineleyerek çözümlendi olarak işaretleyin:
+Bu kod, belgedeki tüm yorumları alır ve bunları bir dosyada saklar.`NodeCollection`.
+
+## 3. Adım: Ebeveyn Yorumuna Erişim
+
+Örneğimiz için koleksiyondaki ilk yoruma odaklanacağız. Bu bizim ebeveyn yorumumuz olacak.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+ Burada koleksiyondaki ilk düğümü bir`Comment` nesne.
+
+## Adım 4: Yanıtlar Arasında Geçiş Yapın
+
+ Şimdi ana yoruma verilen yanıtlara göz atalım. Bir kullanacağız`foreach` Her yanıtın yinelenmesi için döngü.
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-Yukarıdaki kodda ana yoruma erişiyoruz ve yanıtlarını yineliyoruz. Ana yorum kimliğini ve çözüm durumunu alabiliriz. Ardından, çözümü belirtmek için her yorum yanıtının "Bitti" işaretini güncelleriz.
+Bu döngüde ata yorumunun ID'sini ve durumunu (tamamlanıp yapılmadığını) yazdırıyoruz. Daha sonra her yanıtı tamamlandı olarak işaretliyoruz.
 
-## 3. Adım: Belgeyi Kaydedin
-Yorumları çözümledikten ve durumlarını güncelledikten sonra, değiştirilen belgeyi Document sınıfının Save yöntemini kullanarak bir dosyaya kaydedin:
+## Adım 5: Belgeyi Kaydedin
+
+Son olarak değiştirilen belgeyi dizininize kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### Aspose.Words for .NET Kullanarak Yorumları ve Yanıtlarını Çözümlemeye Yönelik Örnek Kaynak Kodu
-Aspose.Words for .NET kullanarak yorumları ve yanıtlarını çözümlemeye yönelik kaynak kodun tamamı burada:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-Kodu, belge dosya yolu ve ek özelleştirme dahil olmak üzere özel gereksinimlerinize göre ayarlamayı unutmayın.
+Bu kod, değişiklikleri yeni bir belgeye kaydederek orijinal dosyanızın dokunulmadan kalmasını sağlar.
 
 ## Çözüm
-Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesindeki yorumları ve yanıtlarını nasıl çözümleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak artık yorum çözümlemesini yönetebilir ve yorumların durumunu ve yanıtlarını gereksinimlerinize göre güncelleyebilirsiniz.
 
-Yorum çözünürlüğü, bir belgedeki geri bildirimin izlenmesine ve yönetilmesine yardımcı olur. Farklı yorum durumlarını deneyin ve belgelerinizdeki işbirliğini ve inceleme süreçlerini geliştirmek için bunları özelleştirin.
+Word belgelerindeki yorumların işlenmesi manuel bir iş olmak zorunda değildir. Aspose.Words for .NET ile süreci otomatikleştirerek zamandan tasarruf edebilir ve hataları azaltabilirsiniz. Belgelerinizdeki yorumları etkili bir şekilde çözümlemek ve yanıtlamak için bu kılavuzu izleyin.
 
-### SSS'ler
+## SSS'ler
 
-#### S: Aspose.Words for .NET'te bir yorumu nasıl çözümleyebilirim?
+### Aspose.Words for .NET ile yorumla ilgili diğer görevleri otomatikleştirebilir miyim?  
+Evet, yorum ekleme, silme ve değiştirme gibi çeşitli görevleri otomatikleştirebilirsiniz.
 
- C: Aspose.Words for .NET'te bir yorumu çözümlemek için`Comment.Resolve` belirten yöntem`Comment` çözmek istediğiniz nesneyi seçin. Bu, yorumu çözümlendi olarak işaretleyecek ve son belgede gizleyecektir.
+### Aspose.Words for .NET, .NET Core ile uyumlu mu?  
+Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core'u destekler.
 
-#### S: Aspose.Words for .NET'te çözümlenen bir yoruma nasıl yanıt eklerim?
+### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?  
+ Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
- C: Son belgede çözümlenen yorumlar varsayılan olarak gizlense de, çözümlenen bir yoruma yine de yanıt ekleyebilirsiniz.`Comment.AddReply`Yanıt metnini ve onu nereye eklemek istediğinizi belirten yöntem.
+### Aspose.Words for .NET'i diğer belge türleriyle çalışmak için kullanabilir miyim?  
+Evet, Aspose.Words DOCX, PDF, HTML ve daha fazlasını içeren çeşitli formatları destekler.
 
-#### S: Aspose.Words for .NET'te çözümlenen yorumları nasıl görüntüleyebilirim?
-
- C: Varsayılan olarak çözümlenen yorumlar son belgede gizlenir. Ancak bunları kullanarak gösterebilirsiniz.`CommentOptions.ShowResolvedComments` mülkiyeti`Document` nesne ve onu buna ayarlamak`true`.
-
-#### S: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları nasıl gizleyebilirim?
-
- C: Aspose.Words for .NET'te yanıtlar dahil tüm yorumları gizlemek için`CommentOptions.CommentDisplayMode` mülkiyeti`Document` nesneyi seçin ve buna ayarlayın`CommentDisplayMode.None`.
-
-#### S: Aspose.Words for .NET'te çözümlenen bir yorumun metnini düzenleyebilir miyim?
-
- C: Evet, Aspose.Words for .NET'te çözümlenen bir yorumun metnini şu adrese erişerek düzenleyebilirsiniz:`Comment.Text` karşılık gelen mülk`Comment` nesneyi seçin ve metni gerektiği gibi değiştirin.
+### Aspose.Words for .NET'in ayrıntılı belgelerini nerede bulabilirim?  
+ Dokümantasyona ulaşabilirsiniz[Burada](https://reference.aspose.com/words/net/).

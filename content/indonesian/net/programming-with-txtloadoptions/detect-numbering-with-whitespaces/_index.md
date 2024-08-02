@@ -2,115 +2,110 @@
 title: Deteksi Penomoran Dengan Spasi Putih
 linktitle: Deteksi Penomoran Dengan Spasi Putih
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mendeteksi nomor daftar dengan spasi putih di Aspose.Words untuk .NET. Perbaiki struktur dokumen Anda dengan mudah.
+description: Temukan cara menggunakan Aspose.Words untuk .NET untuk mendeteksi penomoran dengan spasi putih dalam dokumen teks biasa dan memastikan daftar Anda dikenali dengan benar.
 type: docs
 weight: 10
 url: /id/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-Dalam tutorial ini, kita akan menjelajahi kode sumber C# yang disediakan untuk fitur "Deteksi penomoran dengan spasi" dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda mendeteksi dan membuat daftar dari dokumen teks yang berisi nomor daftar diikuti dengan spasi.
+## Perkenalan
 
-## Langkah 1: Menyiapkan lingkungan
+Aspose.Words untuk penggemar .NET! Hari ini, kita akan mendalami fitur menarik yang dapat mempermudah penanganan daftar dalam dokumen teks biasa. Pernahkah Anda berurusan dengan file teks yang beberapa barisnya seharusnya berupa daftar, tetapi baris-baris tersebut terlihat kurang tepat saat dimuat ke dalam dokumen Word? Ya, kami punya trik menarik: mendeteksi penomoran dengan spasi. Tutorial ini akan memandu Anda tentang cara menggunakan`DetectNumberingWithWhitespaces` opsi di Aspose.Words untuk .NET untuk memastikan daftar Anda dikenali dengan benar, meskipun ada spasi antara angka dan teks.
 
-Sebelum memulai, pastikan Anda telah menyiapkan lingkungan pengembangan dengan Aspose.Words untuk .NET. Pastikan Anda telah menambahkan referensi yang diperlukan dan mengimpor namespace yang sesuai.
+## Prasyarat
 
-## Langkah 2: Membuat dokumen teks
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
+
+-  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Asumsikan Rilis](https://releases.aspose.com/words/net/) halaman.
+- Lingkungan Pengembangan: Visual Studio atau C# IDE lainnya.
+- .NET Framework diinstal pada mesin Anda.
+- Pengetahuan Dasar C#: Memahami dasar-dasarnya akan membantu Anda mengikuti contoh.
+
+## Impor Namespace
+
+Sebelum beralih ke kode, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda. Berikut cuplikan singkat untuk membantu Anda memulai:
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-string textDoc = "Full stop delimiters:\n" +
-                  "1. First list item 1\n" +
-                  "2. First list item 2\n" +
-                  "3. First list item 3\n\n" +
-                  "Right bracket delimiters:\n" +
-                  "1) Second list item 1\n" +
-                  "2) Second list item 2\n" +
-                  "3) Second list item 3\n\n" +
-                  "Bullet delimiters:\n" +
-                  "• Third list item 1\n" +
-                  "• Third list item 2\n" +
-                  "• Third list item 3\n\n" +
-                  "Whitespace delimiters:\n" +
-                  "1 Fourth list item 1\n" +
-                  "2 Fourth list item 2\n" +
-                  "3 Fourth list item 3";
+using System;
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-Pada langkah ini, kita membuat string teks yang menyimulasikan dokumen teks yang berisi nomor daftar diikuti dengan spasi putih. Kami menggunakan pembatas daftar yang berbeda seperti titik, tanda kurung siku, simbol poin, dan spasi.
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dikelola. Setiap langkah akan memandu Anda melalui kode yang diperlukan dan menjelaskan apa yang terjadi.
 
-## Langkah 3: Mengonfigurasi opsi unggahan
+## Langkah 1: Tentukan Direktori Dokumen Anda
 
-```csharp
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-```
-
- Pada langkah ini, kami mengonfigurasi opsi pemuatan dokumen. Kami membuat yang baru`TxtLoadOptions` objek dan atur`DetectNumberingWithWhitespaces`properti ke`true`. Ini akan memungkinkan Aspose.Words mendeteksi nomor daftar meskipun diikuti oleh spasi.
-
-## Langkah 4: Memuat dokumen dan menyimpannya
+Hal pertama yang pertama, mari siapkan jalur ke direktori dokumen Anda. Di sinilah file input dan output Anda akan disimpan.
 
 ```csharp
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-```
-
- Pada langkah ini, kita memuat dokumen menggunakan string teks yang ditentukan dan opsi memuat. Kami menggunakan a`MemoryStream` untuk mengubah string teks menjadi aliran memori. Kemudian kita simpan dokumen yang dihasilkan dalam format .docx.
-
-### Contoh kode sumber untuk fitur Deteksi Penomoran Spasi Putih dengan Aspose.Words untuk .NET.
-
-```csharp
-
-            
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-// Buat dokumen plaintext berbentuk string dengan bagian-bagian yang dapat diartikan sebagai daftar.
-// Saat memuat, tiga daftar pertama akan selalu terdeteksi oleh Aspose.Words,
-// dan objek Daftar akan dibuat untuknya setelah dimuat.
-const string textDoc = "Full stop delimiters:\n" +
-					   "1. First list item 1\n" +
-					   "2. First list item 2\n" +
-					   "3. First list item 3\n\n" +
-					   "Right bracket delimiters:\n" +
-					   "1) Second list item 1\n" +
-					   "2) Second list item 2\n" +
-					   "3) Second list item 3\n\n" +
-					   "Bullet delimiters:\n" +
-					   "• Third list item 1\n" +
-					   "• Third list item 2\n" +
-					   "• Third list item 3\n\n" +
-					   "Whitespace delimiters:\n" +
-					   "1 Fourth list item 1\n" +
-					   "2 Fourth list item 2\n" +
-					   "3 Fourth list item 3";
-
-// Daftar keempat, dengan spasi di antara nomor daftar dan isi item daftar,
-// hanya akan terdeteksi sebagai daftar jika "DetectNumberingWithWhitespaces" di objek LoadOptions disetel ke true,
-// untuk menghindari paragraf yang dimulai dengan angka salah dideteksi sebagai daftar.
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-
-// Muat dokumen sambil menerapkan LoadOptions sebagai parameter dan verifikasi hasilnya.
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-            
-        
 ```
 
-Sekarang Anda dapat menjalankan kode sumber untuk memuat dokumen teks yang berisi nomor daftar dengan spasi putih, lalu membuat dokumen .docx dengan daftar yang terdeteksi. File keluaran akan disimpan di direktori yang ditentukan dengan nama "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx".
+## Langkah 2: Buat Dokumen Plaintext
+
+Selanjutnya, kita akan membuat dokumen plaintext sebagai string. Dokumen ini akan berisi bagian-bagian yang dapat diartikan sebagai daftar.
+
+```csharp
+const string textDoc = "Full stop delimiters:\n" +
+                       "1. First list item 1\n" +
+                       "2. First list item 2\n" +
+                       "3. First list item 3\n\n" +
+                       "Right bracket delimiters:\n" +
+                       "1) Second list item 1\n" +
+                       "2) Second list item 2\n" +
+                       "3) Second list item 3\n\n" +
+                       "Bullet delimiters:\n" +
+                       "• Third list item 1\n" +
+                       "• Third list item 2\n" +
+                       "• Third list item 3\n\n" +
+                       "Whitespace delimiters:\n" +
+                       "1 Fourth list item 1\n" +
+                       "2 Fourth list item 2\n" +
+                       "3 Fourth list item 3";
+```
+
+## Langkah 3: Konfigurasikan LoadOptions
+
+ Untuk mendeteksi penomoran dengan spasi, kita perlu mengatur`DetectNumberingWithWhitespaces` pilihan untuk`true` di sebuah`TxtLoadOptions` obyek.
+
+```csharp
+TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
+```
+
+## Langkah 4: Muat Dokumen
+
+ Sekarang, mari kita memuat dokumen menggunakan`TxtLoadOptions` sebagai parameter. Hal ini memastikan bahwa daftar keempat (dengan spasi) terdeteksi dengan benar.
+
+```csharp
+Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
+```
+
+## Langkah 5: Simpan Dokumen
+
+Terakhir, simpan dokumen ke direktori yang Anda tentukan. Ini akan menampilkan dokumen Word dengan daftar yang terdeteksi dengan benar.
+
+```csharp
+doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
+```
 
 ## Kesimpulan
-Dalam tutorial ini, kita menjelajahi fitur deteksi penomoran spasi putih di Aspose.Words untuk .NET. Kita mempelajari cara membuat daftar dari dokumen teks yang berisi nomor daftar diikuti dengan spasi.
 
-Fitur ini sangat berguna untuk memproses dokumen yang berisi nomor daftar yang diformat dengan cara berbeda. Dengan menggunakan opsi pemuatan yang sesuai, Aspose.Words dapat mendeteksi nomor daftar ini, meskipun diikuti oleh spasi, dan mengubahnya menjadi daftar terstruktur di dokumen akhir.
+Dan itu dia! Hanya dengan beberapa baris kode, Anda telah menguasai seni mendeteksi penomoran dengan spasi di dokumen teks biasa menggunakan Aspose.Words untuk .NET. Fitur ini bisa sangat berguna ketika menangani berbagai format teks dan memastikan daftar Anda terwakili secara akurat dalam dokumen Word Anda. Jadi, lain kali Anda menemukan daftar rumit tersebut, Anda akan tahu persis apa yang harus dilakukan.
 
-Menggunakan fitur ini dapat menghemat waktu dan meningkatkan efisiensi alur kerja Anda. Anda dapat dengan mudah mengekstrak informasi dari dokumen teks dan mengubahnya menjadi dokumen terstruktur dengan baik dengan daftar yang tepat.
+## FAQ
 
-Ingatlah untuk mempertimbangkan opsi pemuatan, seperti mengonfigurasi deteksi panggilan spasi, untuk mencapai hasil yang diinginkan.
+###  Apa`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+`DetectNumberingWithWhitespaces` adalah pilihan di`TxtLoadOptions` yang memungkinkan Aspose.Words mengenali daftar bahkan ketika ada spasi antara penomoran dan teks item daftar.
 
-Aspose.Words untuk .NET menawarkan banyak fitur lanjutan untuk manipulasi dan pembuatan dokumen. Dengan menjelajahi lebih jauh dokumentasi dan contoh yang disediakan oleh Aspose.Words, Anda akan dapat memanfaatkan sepenuhnya kemampuan perpustakaan canggih ini.
+### Bisakah saya menggunakan fitur ini untuk pembatas lain seperti poin dan tanda kurung?
+ Ya, Aspose.Words secara otomatis mendeteksi daftar dengan pembatas umum seperti poin dan tanda kurung. Itu`DetectNumberingWithWhitespaces` secara khusus membantu dengan daftar yang memiliki spasi.
 
-Jadi, jangan ragu untuk mengintegrasikan deteksi penomoran spasi ke dalam proyek Aspose.Words untuk .NET Anda dan manfaatkan manfaatnya untuk membuat dokumen yang terstruktur dengan baik dan mudah dibaca.
+###  Apa yang terjadi jika saya tidak menggunakannya`DetectNumberingWithWhitespaces`?
+Tanpa opsi ini, daftar dengan spasi antara penomoran dan teks mungkin tidak dikenali sebagai daftar, dan item dapat muncul sebagai paragraf biasa.
 
+### Apakah fitur ini tersedia di produk Aspose lainnya?
+Fitur khusus ini disesuaikan untuk Aspose.Words untuk .NET, dirancang untuk menangani pemrosesan dokumen Word.
+
+### Bagaimana saya bisa mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
+ Anda dapat memperoleh lisensi sementara dari[Ajukan Lisensi Sementara](https://purchase.aspose.com/temporary-license/) halaman.
 

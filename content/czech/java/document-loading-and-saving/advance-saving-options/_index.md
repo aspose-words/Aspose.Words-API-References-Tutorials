@@ -40,7 +40,7 @@ DocSaveOptions saveOptions = new DocSaveOptions();
 doc.save("Your Directory Path" + "EncryptedDocument.docx", saveOptions);
 ```
 
-## Malé metasoubory se nekomprimují
+## Nekomprimuje malé metasoubory
 
 Metasoubory jsou nezbytné v dokumentech aplikace Word, ale možná nebudete chtít komprimovat malé soubory. Jak toho dosáhnout:
 
@@ -121,7 +121,7 @@ Můžete získat bezplatnou zkušební verzi Aspose.Words for Java[tady](https:/
 
 ### 3. Kde najdu podporu pro Aspose.Words for Java?
 
- Pro podporu a komunitní diskuze navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).
+ Pro podporu a komunitní diskuse navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).
 
 ### 4. Mohu používat Aspose.Words for Java s jinými knihovnami Java?
 

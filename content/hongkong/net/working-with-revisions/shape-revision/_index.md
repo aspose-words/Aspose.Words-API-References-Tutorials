@@ -116,7 +116,7 @@ doc = new Document(MyDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
 Assert.AreEqual(2, shapes.Count);
 
-//這是修正的過程，也是到達目的地的形狀。
+//這是向修正的移動，也是到達目的地的形狀。
 Assert.False(shapes[0].IsMoveFromRevision);
 Assert.True(shapes[0].IsMoveToRevision);
 

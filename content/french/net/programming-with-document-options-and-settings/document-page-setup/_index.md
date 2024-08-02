@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Étape 2 : définir le mode de mise en page
 
-Le mode de mise en page détermine la façon dont le texte est disposé sur la page. Dans cet exemple, nous utiliserons le mode de disposition en grille. Ceci est particulièrement utile lorsqu'il s'agit de documents en langues asiatiques.
+Le mode de mise en page détermine la manière dont le texte est disposé sur la page. Dans cet exemple, nous utiliserons le mode de disposition en grille. Ceci est particulièrement utile lorsqu'il s'agit de documents en langues asiatiques.
 
 ```csharp
 // Définissez le mode de mise en page d'une section permettant de définir le comportement de la grille du document.

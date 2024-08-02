@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Helyezze be a szórási diagramot
+## 2. lépés: Helyezze be a szóródiagramot
 
  Használja a`InsertChart` módszere a`DocumentBuilder` osztályban szóródiagramot szúrjon be a dokumentumba.
 

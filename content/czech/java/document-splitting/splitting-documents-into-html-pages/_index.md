@@ -34,11 +34,11 @@ V kódu Java musíte nejprve načíst dokument aplikace Word, který chcete rozd
 Document doc = new Document("your-document.docx");
 ```
 
- Nahradit`"your-document.docx"` s cestou k dokumentu aplikace Word.
+ Nahradit`"your-document.docx"` s cestou k vašemu dokumentu aplikace Word.
 
 ## Rozdělení dokumentu
 
-Nyní rozdělme dokument na HTML stránky. Aspose.Words tento úkol zjednodušuje:
+Nyní rozdělme dokument na stránky HTML. Aspose.Words tento úkol zjednodušuje:
 
 ```java
 DocumentSplitOptions splitOptions = new DocumentSplitOptions();

@@ -38,7 +38,7 @@ Dit zijn links naar enkele nuttige bronnen:
 
 ## Aspose.Words-tutorials voor documentverwerking voor Java
 {{% alert color="primary" %}}
-Deze uitgebreide verzameling zelfstudies biedt stapsgewijze begeleiding over hoe u programmatisch effectief met Microsoft Word-documenten kunt werken. Van het maken en manipuleren van documenten tot geavanceerde functies zoals samenvoegen, tabelopmaak en documentversleuteling: deze tutorials behandelen een breed scala aan functionaliteiten. Door deze tutorials te volgen, kunnen ontwikkelaars Aspose.Words naadloos integreren in hun Java-projecten, waardoor efficiënte documentverwerking mogelijk wordt en hun applicaties worden uitgebreid met professionele documentbeheermogelijkheden. 
+Deze uitgebreide verzameling zelfstudies biedt stapsgewijze begeleiding over hoe u effectief programmatisch met Microsoft Word-documenten kunt werken. Van het maken en manipuleren van documenten tot geavanceerde functies zoals samenvoegen, tabelopmaak en documentversleuteling: deze tutorials behandelen een breed scala aan functionaliteiten. Door deze tutorials te volgen kunnen ontwikkelaars Aspose.Words naadloos integreren in hun Java-projecten, waardoor efficiënte documentverwerking mogelijk wordt en hun applicaties worden uitgebreid met professionele documentbeheermogelijkheden. 
 {{% /alert %}}
 
 Dit zijn links naar enkele nuttige bronnen:

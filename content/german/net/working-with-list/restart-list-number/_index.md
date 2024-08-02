@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### F: Ist es möglich, Präfix und Suffix der neu gestarteten Listennummerierung in Aspose.Words anzupassen?
 
- A: Ja, Sie können Präfix und Suffix der neu gestarteten Listennummerierung in Aspose.Words anpassen. Die`ListLevel` Klasse bietet Eigenschaften wie`ListLevel.NumberPrefix`Und`ListLevel.NumberSuffix`Damit können Sie das Präfix und Suffix für jede Ebene in der Liste angeben. Mit diesen Eigenschaften können Sie das Präfix und Suffix nach Bedarf anpassen.
+ A: Ja, Sie können Präfix und Suffix der neu gestarteten Listennummerierung in Aspose.Words anpassen. Die`ListLevel`Klasse bietet Eigenschaften wie`ListLevel.NumberPrefix`Und`ListLevel.NumberSuffix` Damit können Sie das Präfix und Suffix für jede Ebene in der Liste angeben. Mit diesen Eigenschaften können Sie das Präfix und Suffix nach Bedarf anpassen.
 
 #### F: Wie kann ich einen bestimmten Nummerierungswert angeben, ab dem die Liste neu gestartet werden soll?
 

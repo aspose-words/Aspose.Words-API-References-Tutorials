@@ -11,7 +11,7 @@ url: /ko/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 
 Word 문서를 PDF로 변환하는 것은 일반적인 작업입니다. 특히 서식을 유지하면서 문서를 공유하거나 보관하려는 경우에는 더욱 그렇습니다. 때로는 이러한 문서의 머리글과 바닥글에 중요한 책갈피가 포함되어 있는 경우도 있습니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 PDF로 이러한 책갈피를 내보내는 과정을 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 자세히 알아보기 전에 다음 사항이 있는지 확인하세요.
 

@@ -12,9 +12,9 @@ Split Document ist eine umfassende Ressource, die erklärt, wie man ein Dokument
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Nach Überschriften HTML](./by-headings-html/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der By Heading HTML-Funktion von Aspose.Words für .NET |
-| [Nach Abschnitten Html](./by-sections-html/) | Erfahren Sie anhand eines vollständigen Codebeispiels, wie Sie mit Aspose.Words für .NET ein Word-Dokument in HTML-Abschnitte aufteilen. |
-| [Nach Abschnitten](./by-sections/) | Erfahren Sie anhand eines vollständigen Codebeispiels, wie Sie mit Aspose.Words für .NET ein Word-Dokument in separate Abschnitte aufteilen. |
-| [Seite für Seite](./page-by-page/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Aspose.Words-Seite-für-Seite-Funktion für .NET |
+| [Word-Dokument nach Überschriften aufteilen (HTML)](./by-headings-html/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Word-Dokument nach Überschriften in HTML aufteilen. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung. |
+| [Word-Dokument nach HTML-Abschnitten aufteilen](./by-sections-html/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET ein Word-Dokument nach Abschnitten in HTML aufteilen. |
+| [Word-Dokument nach Abschnitten aufteilen](./by-sections/) | Erfahren Sie, wie Sie ein Word-Dokument mit Aspose.Words für .NET in Abschnitte aufteilen. Folgen Sie dieser detaillierten Schritt-für-Schritt-Anleitung für eine effiziente Dokumentenverwaltung. |
+| [Word-Dokument seitenweise aufteilen](./page-by-page/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie ein Word-Dokument mit Aspose.Words für .NET seitenweise aufteilen. Perfekt für die effiziente Verwaltung großer Dokumente. |
 | [Dokumente zusammenführen](./merge-documents/) | Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes der Funktion „Dokumente zusammenführen“ von Aspose.Words für .NET |
-| [Nach Seitenbereich](./by-page-range/) | Einfaches Extrahieren nach Seitenbereich aus einem Word-Dokument mit der Schritt-für-Schritt-Anleitung von Aspose.Words für .NET. |
+| [Word-Dokument nach Seitenbereich aufteilen](./by-page-range/) | Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET ein Word-Dokument nach Seitenbereich aufteilen. Perfekt für Entwickler. |

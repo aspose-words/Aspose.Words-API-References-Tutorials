@@ -41,7 +41,7 @@ Minden projekt a fájlok rendezésével kezdődik. Mutassuk a kódunkat arra a k
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumokat tárolják. Könnyű, igaz?
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahol a dokumentumokat tárolják. Könnyű, igaz?
 
 ## 2. lépés: Töltse be a forrás- és céldokumentumokat
 
@@ -64,7 +64,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## 4. lépés: Csatolja a forrásdokumentumot a céldokumentumhoz
 
-Most pedig végezzük az összevonást. Itt történik a varázslat. A forrásdokumentumot hozzáfűzzük a céldokumentumhoz, miközben a megadott importálási beállításokat használjuk.
+Most végezzük el az egyesítést. Itt történik a varázslat. A forrásdokumentumot hozzáfűzzük a céldokumentumhoz, miközben a megadott importálási beállításokat használjuk.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

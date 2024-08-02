@@ -88,7 +88,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
 ```
 
-- `bookmarkName`: Tên của bookmark bạn muốn điều hướng đến.
+- `bookmarkName`: Tên của bookmark bạn muốn điều hướng tới.
 - `isBookmarkStart` : Nếu đặt thành`true`, di chuyển đến đầu dấu trang.
 - `isBookmarkEnd` : Nếu đặt thành`true`, di chuyển đến cuối dấu trang.
 

@@ -13,7 +13,7 @@ Ei! Você já se viu enterrado em um documento do Word, tentando descobrir como 
 
 ## Pré-requisitos
 
-Antes de entrarmos no âmago da questão, vamos colocar nossos patos em ordem. Aqui está o que você precisa para começar:
+Antes de entrarmos no âmago da questão, vamos colocar nossos patos em uma fileira. Aqui está o que você precisa para começar:
 
 -  Visual Studio: certifique-se de ter o Visual Studio instalado em sua máquina. Se não, você pode baixá-lo[aqui](https://visualstudio.microsoft.com/).
 -  Aspose.Words para .NET: Você precisa da biblioteca Aspose.Words. Você pode baixá-lo em[esse link](https://releases.aspose.com/words/net/).

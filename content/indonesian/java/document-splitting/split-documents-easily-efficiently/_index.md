@@ -8,7 +8,7 @@ weight: 10
 url: /id/java/document-splitting/split-documents-easily-efficiently/
 ---
 
-Dalam panduan langkah demi langkah ini, kita akan mempelajari cara membagi dokumen dengan mudah dan efisien menggunakan Aspose.Words untuk Java. Aspose.Words untuk Java adalah pustaka pengolah kata dan pengolah dokumen canggih yang memungkinkan pengembang bekerja dengan dokumen Word secara terprogram, menyediakan berbagai fitur untuk memanipulasi dan mengelola dokumen dengan lancar.
+Dalam panduan langkah demi langkah ini, kita akan mempelajari cara membagi dokumen dengan mudah dan efisien menggunakan Aspose.Words untuk Java. Aspose.Words untuk Java adalah pustaka pengolah kata dan pemrosesan dokumen canggih yang memungkinkan pengembang bekerja dengan dokumen Word secara terprogram, menyediakan berbagai fitur untuk memanipulasi dan mengelola dokumen dengan lancar.
 
 ## 1. Perkenalan
 
@@ -132,7 +132,7 @@ Saat menangani dokumen berukuran besar, penting untuk mempertimbangkan optimalis
 
 ## 11. Kesimpulan
 
-Dalam panduan ini, kita telah mempelajari cara membagi dokumen dengan mudah dan efisien menggunakan Aspose.Words untuk Java. Dengan membagi dokumen besar menjadi bagian-bagian yang lebih kecil dan lebih mudah dikelola, pengembang dapat bekerja dengan bagian tertentu dan menyederhanakan tugas pemrosesan dokumen. Aspose.Words untuk Java menawarkan berbagai metode untuk membagi dokumen berdasarkan halaman, paragraf, judul, dan bagian, memberikan fleksibilitas kepada pengembang untuk menyesuaikan proses pemisahan dengan kebutuhan spesifik mereka.
+Dalam panduan ini, kita telah mempelajari cara membagi dokumen dengan mudah dan efisien menggunakan Aspose.Words untuk Java. Dengan membagi dokumen besar menjadi bagian-bagian yang lebih kecil dan lebih mudah dikelola, pengembang dapat bekerja dengan bagian tertentu dan menyederhanakan tugas pemrosesan dokumen. Aspose.Words untuk Java menawarkan berbagai metode untuk membagi dokumen berdasarkan halaman, paragraf, judul, dan bagian, memberikan pengembang fleksibilitas untuk menyesuaikan proses pemisahan dengan kebutuhan spesifik mereka.
 
 ## 12. Pertanyaan Umum
 

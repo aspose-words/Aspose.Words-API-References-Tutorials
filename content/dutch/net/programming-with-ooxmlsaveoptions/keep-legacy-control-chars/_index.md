@@ -56,7 +56,7 @@ Vervolgens laadt u het Word-document dat de oude besturingstekens bevat.
 
 Laten we nu de opslagopties configureren om de oude stuurtekens intact te houden.
 
-1.  Creëer opslagopties: Initialiseer een exemplaar van`OoxmlSaveOptions` en stel de`KeepLegacyControlChars`eigendom aan`true`.
+1.  Creëer opslagopties: initialiseer een exemplaar van`OoxmlSaveOptions` en stel de`KeepLegacyControlChars`eigendom aan`true`.
 
    ```csharp
    OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)

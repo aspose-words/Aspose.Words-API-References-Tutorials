@@ -11,7 +11,7 @@ url: /ko/net/programming-with-loadoptions/convert-shape-to-office-math/
 
 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 도형을 Office Math로 변환하는 방법을 살펴보겠습니다. 문서 처리를 간소화하거나 문서 서식 기능을 향상시키려는 경우 이 가이드가 전체 프로세스를 단계별로 안내합니다. 이 튜토리얼이 끝나면 Aspose.Words for .NET을 활용하여 이 작업을 효율적으로 수행하는 방법을 명확하게 이해하게 될 것입니다.
 
-## 전제조건
+## 전제 조건
 
 세부 사항을 살펴보기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
@@ -33,7 +33,7 @@ using Aspose.Words.Loading;
 
 ## 1단계: 로드 옵션 구성
 
-먼저 "도형을 Office 수학으로 변환" 기능을 활성화하도록 로드 옵션을 구성해야 합니다.
+먼저 "Office Math로 도형 변환" 기능을 활성화하려면 로드 옵션을 구성해야 합니다.
 
 ```csharp
 // 문서 디렉토리 경로
@@ -73,7 +73,7 @@ Aspose.Words for .NET을 사용하여 Word 문서에서 도형을 Office Math로
 
 ## FAQ
 
-### 오피스 수학이란 무엇입니까?  
+### 사무실 수학이란 무엇입니까?  
 Office Math는 복잡한 수학 방정식과 기호를 생성하고 편집할 수 있는 Microsoft Word의 기능입니다.
 
 ### 특정 도형만 Office Math로 변환할 수 있나요?  

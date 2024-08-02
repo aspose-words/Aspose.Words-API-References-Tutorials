@@ -2,46 +2,37 @@
 title: 在Word文檔中新增雙向標記
 linktitle: 在Word文檔中新增雙向標記
 second_title: Aspose.Words 文件處理 API
-description: 學習使用 Aspose.Words for .NET 將 Bidi 標籤新增至 Word 文件並建立專業的多語言文件。
+description: 透過本指南了解如何使用 Aspose.Words for .NET 在 Word 文件中新增雙向 (Bidi) 標記。確保多語言內容的文字方向正確。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
+## 介紹
 
-Aspose.Words for .NET 是一個功能強大的程式庫，用於在 C# 應用程式中建立、編輯和操作 Word 文件。 Aspose.Words 提供的功能之一是能夠為文件添加 Bidi（雙向）標記。在本指南中，我們將引導您了解如何使用 Aspose.Words for .NET 的 C# 原始程式碼為文件新增 Bidi 標記。
+在文件處理領域，雙向 (Bidi) 文字的管理通常有點棘手。在處理具有不同文字方向的語言（例如阿拉伯語或希伯來語）時尤其如此。幸運的是，Aspose.Words for .NET 可以輕鬆處理這類場景。在本教學中，我們將介紹如何使用 Aspose.Words for .NET 將 Bidi 標籤新增至 Word 文件。
 
-## 了解 Aspose.Words 函式庫
+## 先決條件
 
-在深入研究程式碼之前，了解 .NET 的 Aspose.Words 函式庫非常重要。 Aspose.Words 是一個受歡迎的函式庫，它讓 Word 文件的文字處理變得簡單有效率。它提供了用於建立、編輯和操作 Word 文件的廣泛功能，包括添加 Bidi 標記。
+在我們深入研究程式碼之前，請確保您具備以下條件：
 
-## 建立文件並添加內容
+1.  Aspose.Words for .NET：您需要安裝 Aspose.Words for .NET。您可以從[Aspose 下載頁面](https://releases.aspose.com/words/net/).
+2. .NET Framework 或 .NET Core：確保設定了相容的 .NET 環境來執行範例。
+3. C#基礎：熟悉C#程式語言和.NET中的基本操作。
 
-第一步是建立一個新文件並在其中添加內容。使用 Document 類別建立一個新的文檔實例。然後使用 DocumentBuilder 類別將文字新增到文件中。這是一個例子：
+## 導入命名空間
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. Writen("Hello world!");
-builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
-```
-
-在此範例中，我們建立一個新文件並使用 DocumentBuilder 新增文字。我們添加了三行文本：一行是英語，一行是希伯來語，一行是阿拉伯語，以演示如何添加不同語言的內容。
-
-## 新增了 Bidi 標記
-
-新增內容後，我們現在可以將 Bidi 標記新增到文件中。為此，我們使用 TxtSaveOptions 類別並將 AddBidiMarks 屬性設為 true。就是這樣：
+首先，您需要匯入必要的命名空間。以下是將它們包含在您的項目中的方法：
 
 ```csharp
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-在此範例中，我們建立 TxtSaveOptions 的實例並將 AddBidiMarks 屬性設為 true。接下來，我們使用 Document 類別的 Save 方法來保存帶有 Bidi 標記的文件。
+讓我們將在 Word 文件中加入 Bidi 標記的過程分解為清晰的步驟。每個步驟將引導您了解程式碼及其用途。
 
-### 使用 Aspose.Words for .NET 的「新增 Bidi 標記」功能的範例原始碼
+## 第 1 步：設定您的文檔
+
+首先建立一個新實例`Document`類別和一個`DocumentBuilder`向文件添加內容。
 
 ```csharp
 //文檔目錄的路徑
@@ -50,44 +41,52 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 //建立文件並添加內容
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-builder. Writen("Hello world!");
+在此步驟中，您將初始化一個新的 Word 文件並設置`DocumentBuilder`以方便內容插入。
+
+## 第 2 步：將內容新增至文件中
+
+接下來，在文件中添加一些文字。在這裡，我們將添加不同語言的文字來說明 Bidi 文字處理。
+
+```csharp
+builder.Writeln("Hello world!");
 builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
+builder.Writeln("שלום עולם!");
+builder.Writeln("مرحبا بالعالم!");
+```
 
+在這裡，我們首先添加一個標準的英語短語。然後，我們為後續文字（以希伯來語和阿拉伯語編寫）啟用 Bidi 文字格式。這示範如何合併雙向文字。
+
+## 步驟 3：配置 Bidi 標記的儲存選項
+
+為了確保Bidi標記正確保存在文件中，您需要配置`TxtSaveOptions`並啟用`AddBidiMarks`選項。
+
+```csharp
 //新增 Bidi 標記
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true
-
-  };
+TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
+在這一步驟中，我們建立一個實例`TxtSaveOptions`並設定`AddBidiMarks`財產給`true`。這可確保將文件另存為文字檔案時包含 Bidi 標記。
+
 ## 結論
 
-在本指南中，我們解釋如何使用 Aspose.Words for .NET 使用提供的 C# 原始程式碼將 Bidi 標籤新增至 Word 文件。透過按照提供的步驟操作，您可以輕鬆地將 Bidi 標記新增至 C# 應用程式中的 Word 文件。 Aspose.Words 透過文字格式設定和語言管理為文字處理提供了巨大的靈活性和強大功能，使您能夠專業地建立多語言文件。
+在處理包含不同文字方向的語言的多語言內容時，在 Word 文件中新增 Bidi 標記可能是至關重要的一步。透過 Aspose.Words for .NET，這個過程既簡單又有效率。透過執行上述步驟，您可以確保您的文件正確表示 Bidi 文本，從而提高可讀性和準確性。
 
-### 經常問的問題
+## 常見問題解答
 
-#### Q：什麼是 Aspose.Words for .NET？
-Aspose.Words for .NET 是一個功能強大的程式庫，用於在 C# 應用程式中建立、編輯和操作 Word 文件。它為 Word 文件的文字處理提供了許多功能，包括添加 Bidi（雙向）標記。
+### 什麼是 Bidi 商標以及它們為何如此重要？
+雙向標記是用於控製文件中文字方向的特殊字元。它們對於正確顯示從右向左閱讀的語言（例如阿拉伯語和希伯來語）至關重要。
 
-#### Q：Aspose.Words for .NET 提供哪些功能？
-Aspose.Words for .NET 提供了廣泛的用於建立、編輯和操作 Word 文件的功能。其中一些功能包括建立文件、新增內容、格式化文字、管理表格、合併和分割文件、轉換文件等。
+### 我可以使用 Aspose.Words for .NET 處理其他類型的文字方向問題嗎？
+是的，Aspose.Words for .NET 為各種文字方向和格式需求提供全面支持，包括從右到左和從左到右語言。
 
-#### Q：如何使用 Aspose.Words for .NET 將 Bidi 標籤新增至 Word 文件？
-您可以按照以下步驟將 Bidi 標記新增至 Word 文件：
+### 是否可以將 Bidi 格式僅應用於文件的特定部分？
+是的，您可以根據需要將 Bidi 格式套用至文件的特定段落或部分。
 
-使用建立一個新文檔`Document`班級。
+### 我可以將帶有 Bidi 標記的文檔儲存為哪些格式？
+在提供的範例中，文件被儲存為文字檔案。但是，Aspose.Words 也支援以各種格式儲存文檔，同時保留 Bidi 標記。
 
-使用`DocumentBuilder`類別會向文件添加內容。
-
-新增內容後，使用`TxtSaveOptions`類別並設定`AddBidiMarks`財產給`true`.
-
-使用以下命令儲存帶有 Bidi 標記的文檔`Save`的方法`Document`班級。
-
-#### Q：Aspose.Words 是否支援多種語言添加 Bidi 標記？
-是的，Aspose.Words 支援多種語言添加 Bidi 標記。您可以使用 Aspose.Words for .NET 將 Bidi 標籤新增至不同語言的文字中，例如英語、希伯來語和阿拉伯語。
-
-#### Q：是否有其他選項可以保存帶有 Bidi 標記的文件？
-是的，您可以在使用 Bidi 標記儲存文件時指定其他選項`TxtSaveOptions`班級。例如，您可以設定文件儲存格式、編碼選項等。
+### 在哪裡可以找到有關 Aspose.Words for .NET 的更多資訊？
+您可以透過以下方式探索有關 Aspose.Words for .NET 的更多信息[Aspose文檔](https://reference.aspose.com/words/net/)並訪問[支援論壇](https://forum.aspose.com/c/words/8)以獲得更多幫助。

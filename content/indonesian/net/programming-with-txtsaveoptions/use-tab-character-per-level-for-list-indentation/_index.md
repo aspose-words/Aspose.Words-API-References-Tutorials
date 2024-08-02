@@ -2,115 +2,126 @@
 title: Gunakan Karakter Tab Per Level Untuk Indentasi Daftar
 linktitle: Gunakan Karakter Tab Per Level Untuk Indentasi Daftar
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan fitur daftar inden dengan karakter tab di Aspose.Words untuk .NET. Hemat waktu dan tingkatkan alur kerja Anda dengan fitur canggih ini.
+description: Pelajari cara membuat daftar bertingkat dengan lekukan tab menggunakan Aspose.Words untuk .NET. Ikuti panduan ini untuk pemformatan daftar yang tepat di dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kita akan menjelajahi kode sumber C# yang disediakan untuk fitur "Gunakan satu karakter tab per level untuk indentasi daftar" dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menerapkan karakter tab untuk membuat indentasi daftar di setiap tingkat, memberikan fleksibilitas dan kontrol lebih besar terhadap tampilan dokumen Anda.
+Daftar merupakan hal mendasar dalam mengatur konten, baik Anda sedang menyusun laporan, menulis makalah penelitian, atau menyiapkan presentasi. Namun, ketika menyajikan daftar dengan beberapa tingkat indentasi, mencapai format yang diinginkan bisa jadi agak rumit. Menggunakan Aspose.Words untuk .NET, Anda dapat dengan mudah mengelola indentasi daftar dan menyesuaikan cara setiap level direpresentasikan. Dalam tutorial ini, kita akan fokus membuat daftar dengan beberapa tingkat indentasi, menggunakan karakter tab untuk pemformatan yang tepat. Di akhir panduan ini, Anda akan memiliki pemahaman yang jelas tentang cara menyiapkan dan menyimpan dokumen Anda dengan gaya indentasi yang benar.
 
-## Langkah 1: Menyiapkan lingkungan
+## Prasyarat
 
-Sebelum memulai, pastikan Anda telah menyiapkan lingkungan pengembangan dengan Aspose.Words untuk .NET. Pastikan Anda telah menambahkan referensi yang diperlukan dan mengimpor namespace yang sesuai.
+Sebelum kita mendalami langkah-langkahnya, pastikan Anda telah menyiapkan hal berikut:
 
-## Langkah 2: Membuat dokumen dan generator
+1.  Aspose.Words untuk .NET Terpasang: Anda memerlukan perpustakaan Aspose.Words. Jika Anda belum menginstalnya, Anda dapat mendownloadnya dari[Asumsikan Unduhan](https://releases.aspose.com/words/net/).
+
+2. Pemahaman Dasar C# dan .NET: Keakraban dengan pemrograman C# dan kerangka .NET sangat penting untuk mengikuti tutorial ini.
+
+3. Lingkungan Pengembangan: Pastikan Anda memiliki IDE atau editor teks untuk menulis dan mengeksekusi kode C# Anda (misalnya, Visual Studio).
+
+4. Contoh Direktori Dokumen: Siapkan direktori tempat Anda akan menyimpan dan menguji dokumen Anda. 
+
+## Impor Namespace
+
+Pertama, Anda perlu mengimpor namespace yang diperlukan untuk menggunakan Aspose.Words di aplikasi .NET Anda. Tambahkan arahan penggunaan berikut di awal file C# Anda:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Di bagian ini, kita akan membuat daftar bertingkat dengan lekukan tab menggunakan Aspose.Words untuk .NET. Ikuti langkah ini:
+
+## Langkah 1: Siapkan Dokumen Anda
+
+Buat Dokumen Baru dan DocumentBuilder
 
 ```csharp
 // Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Buat dokumen baru
 Document doc = new Document();
+
+// Inisialisasi DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Pada langkah ini, kami membuat yang baru`Document` objek dan yang terkait`DocumentBuilder` obyek. Objek-objek ini akan memungkinkan kita memanipulasi dan menghasilkan dokumen kita.
+ Di sini, kami menyiapkan yang baru`Document` objek dan a`DocumentBuilder` untuk mulai membuat konten dalam dokumen.
 
-## Langkah 3: Membuat daftar dengan tiga tingkat lekukan
+## Langkah 2: Terapkan Pemformatan Daftar Default
+
+Buat dan Format Daftar
 
 ```csharp
+// Terapkan gaya penomoran default ke daftar
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+```
+
+Pada langkah ini, kami menerapkan format penomoran default ke daftar kami. Ini akan membantu dalam membuat daftar bernomor yang kemudian dapat kita sesuaikan.
+
+## Langkah 3: Tambahkan Item Daftar dengan Level Berbeda
+
+Sisipkan Item Daftar dan Indentasi
+
+```csharp
+//Tambahkan item daftar pertama
+builder.Write("Element 1");
+
+// Indentasi untuk membuat level kedua
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
+
+// Indentasi lebih jauh untuk membuat level ketiga
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Pada langkah ini, kami menerapkan format default nomor daftar menggunakan`ApplyNumberDefault()` metode pemformat daftar. Selanjutnya, kami menambahkan tiga item ke daftar kami menggunakan pembuat dokumen`Writeln()`Dan`Write()` metode. Kami menggunakan`ListIndent()` metode untuk menambah lekukan di setiap level.
+ Di sini, kami menambahkan tiga elemen ke daftar kami, masing-masing dengan tingkat indentasi yang semakin meningkat. Itu`ListIndent` metode ini digunakan untuk meningkatkan level indentasi untuk setiap item berikutnya.
 
-## Langkah 4: Konfigurasikan opsi perekaman
+## Langkah 4: Konfigurasikan Opsi Penyimpanan
+
+Atur Indentasi untuk Menggunakan Karakter Tab
 
 ```csharp
+// Konfigurasikan opsi penyimpanan untuk menggunakan karakter tab untuk lekukan
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- Pada langkah ini, kami mengonfigurasi opsi untuk menyimpan dokumen. Kami membuat yang baru`TxtSaveOptions` objek dan atur`ListIndentation.Count` properti ke 1 untuk menentukan jumlah karakter tab per tingkat lekukan. Kami juga mengatur`ListIndentation.Character` properti ke '\t' untuk menentukan bahwa kita ingin menggunakan karakter tab.
+ Kami mengkonfigurasi`TxtSaveOptions` untuk menggunakan karakter tab untuk lekukan dalam file teks yang disimpan. Itu`ListIndentation.Character` properti disetel ke`'\t'`, yang mewakili karakter tab.
 
-## Langkah 5: Simpan dokumen
+## Langkah 5: Simpan Dokumen
+
+Simpan Dokumen dengan Opsi Tertentu
 
 ```csharp
+// Simpan dokumen dengan opsi yang ditentukan
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- Pada langkah terakhir ini, kita menyimpan dokumen dengan opsi penyimpanan yang ditentukan. Kami menggunakan`Save()` metode dokumen melewati jalur lengkap file keluaran dan opsi penyimpanan.
+ Terakhir, kami menyimpan dokumen menggunakan`Save` metode dengan kebiasaan kita`TxtSaveOptions`. Hal ini memastikan bahwa daftar disimpan dengan karakter tab untuk tingkat indentasi.
 
+## Kesimpulan
 
-Sekarang Anda dapat menjalankan kode sumber untuk menghasilkan dokumen dengan indentasi daftar menggunakan karakter tab. File keluaran akan disimpan di direktori yang ditentukan dengan nama "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
+Dalam tutorial ini, kita telah mempelajari pembuatan daftar multi-level dengan lekukan tab menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengelola dan memformat daftar di dokumen Anda, memastikan bahwa daftar tersebut disajikan dengan jelas dan profesional. Baik Anda sedang mengerjakan laporan, presentasi, atau jenis dokumen lainnya, teknik ini akan membantu Anda mencapai kontrol yang tepat atas pemformatan daftar Anda.
 
-### Contoh sumber kode untuk fitur Gunakan satu karakter tab per level untuk indentasi daftar dengan Aspose.Words untuk .NET:
+## FAQ
 
-```csharp
+### Bagaimana cara mengubah karakter indentasi dari tab menjadi spasi?
+ Anda dapat memodifikasi`saveOptions.ListIndentation.Character` properti untuk menggunakan karakter spasi alih-alih tab.
 
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+### Bisakah saya menerapkan gaya daftar yang berbeda ke level yang berbeda?
+Ya, Aspose.Words memungkinkan penyesuaian gaya daftar di berbagai tingkatan. Anda dapat mengubah opsi pemformatan daftar untuk mendapatkan gaya yang berbeda.
 
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+### Bagaimana jika saya perlu menerapkan poin-poin, bukan angka?
+ Menggunakan`ListFormat.ApplyBulletDefault()` metode sebagai gantinya`ApplyNumberDefault()` untuk membuat daftar berpoin.
 
-// Buat daftar dengan tiga tingkat lekukan
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
-builder.ListFormat.ListIndent();
-builder.Write("Element 3");
+### Bagaimana cara menyesuaikan ukuran karakter tab yang digunakan untuk indentasi?
+ Sayangnya, ukuran tab masuk`TxtSaveOptions`telah diperbaiki. Untuk menyesuaikan ukuran lekukan, Anda mungkin perlu menggunakan spasi atau menyesuaikan format daftar secara langsung.
 
-TxtSaveOptions saveOptions = new TxtSaveOptions();
-saveOptions.ListIndentation.Count = 1;
-saveOptions.ListIndentation.Character = '\t';
-
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
-
-```
-
-Sekarang setelah Anda selesai membuat dokumen dengan lekukan daftar menggunakan karakter tab, Anda dapat menggunakan Markdown untuk memformat konten artikel Anda. Pastikan untuk menggunakan tag pemformatan yang sesuai untuk menyorot judul, subjudul, dan kode sumber yang disertakan.
-
-### Pertanyaan yang Sering Diajukan
-
-#### T: Apa yang dimaksud dengan fitur "Gunakan satu karakter tab per level untuk indentasi daftar" dengan Aspose.Words untuk .NET?
-Fitur "Gunakan satu karakter tab per level untuk indentasi daftar" dengan Aspose.Words untuk .NET memungkinkan penerapan karakter tab untuk indentasi daftar di setiap level. Hal ini memberikan fleksibilitas dan kontrol yang lebih besar terhadap tampilan dokumen Anda.
-
-#### T: Bagaimana cara menggunakan fitur ini dengan Aspose.Words untuk .NET?
-Untuk menggunakan fitur ini dengan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
-
-Siapkan lingkungan pengembangan Anda dengan menambahkan referensi yang diperlukan dan mengimpor namespace yang sesuai.
-
- Buat yang baru`Document` objek dan yang terkait`DocumentBuilder` obyek.
-
- Menggunakan`DocumentBuilder`untuk membuat daftar dengan beberapa tingkat lekukan menggunakan metode`ApplyNumberDefault()` untuk menerapkan format nomor daftar default,`Writeln()`Dan`Write()` untuk menambahkan item ke daftar, dan`ListIndent()` untuk menambah lekukan di setiap level.
-
- Konfigurasikan opsi penyimpanan dengan membuat`TxtSaveOptions` objek dan mengatur propertinya`ListIndentation.Count` dengan jumlah karakter tab per level dan`ListIndentation.Character` ke`'\t'` untuk menggunakan karakter tab.
-
- Simpan dokumen menggunakan`Save()` metode dokumen yang menentukan jalur lengkap file keluaran dan opsi penyimpanan.
-
-#### T: Apakah mungkin untuk menyesuaikan jumlah karakter tab per level untuk indentasi daftar?
- Ya, Anda dapat menyesuaikan jumlah karakter tab per level untuk indentasi daftar dengan mengubah nilai`ListIndentation.Count` properti di`TxtSaveOptions` kelas. Anda dapat menentukan jumlah karakter tab yang Anda inginkan untuk setiap tingkat indentasi.
-
-#### T: Karakter lain apa yang dapat saya gunakan untuk indentasi daftar dengan Aspose.Words untuk .NET?
-Selain karakter tab, Anda juga dapat menggunakan karakter lain untuk indentasi daftar dengan Aspose.Words untuk .NET. Anda dapat mengatur`ListIndentation.Character` properti ke karakter apa pun yang diinginkan, seperti spasi (`' '`), untuk membuat indentasi daftar.
-
-#### T: Apakah Aspose.Words untuk .NET menawarkan fitur lain untuk mengelola daftar?
-Ya, Aspose.Words untuk .NET menawarkan banyak fitur untuk mengelola daftar di dokumen Word. Anda dapat membuat daftar bernomor atau berpoin, mengatur tingkat indentasi, mengkustomisasi gaya daftar, menambahkan item daftar, dan banyak lagi.
+### Bisakah saya menggunakan pengaturan ini saat mengekspor ke format lain seperti PDF atau DOCX?
+Pengaturan karakter tab tertentu berlaku untuk file teks. Untuk format seperti PDF atau DOCX, Anda perlu menyesuaikan opsi pemformatan dalam format tersebut.

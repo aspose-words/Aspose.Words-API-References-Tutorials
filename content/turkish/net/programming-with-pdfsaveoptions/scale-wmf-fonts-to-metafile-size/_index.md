@@ -103,7 +103,7 @@ Evet, Aspose.Words, WMF'nin yanı sıra EMF (Gelişmiş Meta Dosyası) da dahil 
 
 ### Bu teknik tüm Word belgesi türlerine uygulanabilir mi?
 
-Evet, bu teknik WMF grafikleri içeren herhangi bir Word belgesine uygulanabilir ve oluşturulan PDF'nin boyutunun optimize edilmesine yardımcı olur.
+Evet, bu teknik, WMF grafikleri içeren herhangi bir Word belgesine uygulanabilir ve oluşturulan PDF'nin boyutunun optimize edilmesine yardımcı olur.
 
 ### Aspose.Words hakkında daha fazla bilgiyi nerede bulabilirim?
 

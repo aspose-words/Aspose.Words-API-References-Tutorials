@@ -16,7 +16,7 @@ Word 문서를 조작, 생성, 변환 또는 생성해야 하는 경우 .NET용 
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Word 문서에서 페이지 나누기 제거](./remove-page-breaks/) | .NET용 Aspose.Words 라이브러리를 사용하여 Word 문서에서 페이지 나누기를 제거하는 방법을 알아보세요. 원활한 레이아웃을 위해 단계별 가이드를 따르세요. |
-| [Word 문서에서 섹션 나누기 제거](./remove-section-breaks/) | .NET용 Aspose.Words 라이브러리를 사용하여 Word 문서에서 섹션 나누기를 제거하는 방법을 알아보세요. 문서 서식을 방해할 수 있는 섹션 나누기를 효과적으로 제거합니다.|
-| [Word 문서에서 바닥글 제거](./remove-footers/) | Aspose.Words for .NET을 사용하여 Word 문서에서 바닥글을 쉽게 제거하는 방법을 알아보세요. DOCX 파일을 효율적으로 처리하려면 단계별 가이드를 따르세요. |
+| [Word 문서에서 페이지 나누기 제거](./remove-page-breaks/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 페이지 나누기를 제거하는 방법을 알아보세요. 문서 처리 기술을 향상시키세요. |
+| [Word 문서에서 섹션 나누기 제거](./remove-section-breaks/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 섹션 나누기를 제거하는 방법을 알아보세요. 이 상세한 단계별 가이드는 원활한 문서 관리 및 편집을 보장합니다.|
+| [Word 문서에서 바닥글 제거](./remove-footers/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 바닥글을 제거하는 방법을 알아보세요. |
 | [Word 문서에서 목차 제거](./remove-table-of-contents/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 목차를 제거하는 방법을 알아보세요. |

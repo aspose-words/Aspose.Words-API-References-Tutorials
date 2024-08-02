@@ -2,7 +2,7 @@
 title: حل أسماء الخطوط
 linktitle: حل أسماء الخطوط
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية حل أسماء الخطوط في مستندات Word عند التحويل إلى HTML باستخدام Aspose.Words لـ .NET. دليل خطوة بخطوة مع شرح مفصل.
+description: تعرف على كيفية حل أسماء الخطوط في مستندات Word عند التحويل إلى HTML باستخدام Aspose.Words for .NET. دليل خطوة بخطوة مع شرح مفصل.
 type: docs
 weight: 10
 url: /ar/net/programming-with-htmlsaveoptions/resolve-font-names/

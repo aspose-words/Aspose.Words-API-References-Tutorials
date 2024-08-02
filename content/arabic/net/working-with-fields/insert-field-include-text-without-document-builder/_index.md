@@ -2,99 +2,112 @@
 title: إدراج حقل يتضمن نصًا بدون أداة إنشاء المستندات
 linktitle: قم بإدراج FieldIncludeText بدون منشئ المستندات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج حقل FieldIncludeText في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إدراج FieldIncludeText دون استخدام DocumentBuilder في Aspose.Words لـ .NET من خلال دليلنا التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## مقدمة
 
-فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه، والتي تستخدم وظيفة "إدراج حقل FieldIncludeText" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+في عالم أتمتة المستندات ومعالجتها، يمثل Aspose.Words for .NET أداة قوية. اليوم، نحن نتعمق في دليل تفصيلي حول كيفية إدراج FieldIncludeText دون استخدام DocumentBuilder. سيرشدك هذا البرنامج التعليمي خلال العملية خطوة بخطوة، مما يضمن فهمك لكل جزء من الكود والغرض منه.
 
-## الخطوة 1: إعداد دليل المستندات
+## المتطلبات الأساسية
 
-في الكود المقدم، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب لدليل المستندات الخاص بك.
+قبل أن نتعمق في الكود، دعنا نتأكد من أن لديك كل ما تحتاجه:
+
+1.  Aspose.Words for .NET: تأكد من تثبيت أحدث إصدار لديك. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة تطوير .NET: أي بيئة تطوير متكاملة متوافقة مع .NET مثل Visual Studio.
+3. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيساعدك على المتابعة.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، نحتاج إلى استيراد مساحات الأسماء الضرورية. توفر مساحات الأسماء هذه إمكانية الوصول إلى الفئات والأساليب المطلوبة لمعالجة مستندات Word.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+الآن، دعونا نقسم المثال إلى خطوات متعددة. سيتم شرح كل خطوة بالتفصيل لضمان الوضوح.
+
+## الخطوة 1: قم بتعيين مسار الدليل
+
+الخطوة الأولى هي تحديد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي سيتم فيه تخزين مستندات Word الخاصة بك والوصول إليها.
+
+```csharp
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء الوثيقة والفقرة
 
-نبدأ بإنشاء مستند جديد وتهيئة فقرة.
+بعد ذلك، نقوم بإنشاء مستند جديد وفقرة داخل هذا المستند. ستحتوي هذه الفقرة على الحقل FieldIncludeText.
 
 ```csharp
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-```
-
-## الخطوة 3: إدراج حقل FieldIncludeText
-
- نحن نستخدم ال`AppendField()` طريقة لإدراج حقل FieldIncludeText في الفقرة.
-
-```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
-```
-
-نقوم بعد ذلك بتكوين خصائص حقل FieldIncludeText عن طريق تحديد اسم الإشارة المرجعية واسم الملف المصدر.
-
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
-
-بعد ذلك، نضيف الفقرة إلى نص الوثيقة.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
- وأخيراً نسمي`Update()` طريقة تحديث الحقل
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### مثال على التعليمات البرمجية المصدر لإدراج حقل FieldIncludeText باستخدام Aspose.Words لـ .NET
-
-```csharp
-// المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
 // قم بإنشاء المستند والفقرة.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
+```
 
+## الخطوة 3: أدخل حقل FieldIncludeText
+
+الآن، نقوم بإدراج الحقل FieldIncludeText في الفقرة. يسمح لك هذا الحقل بتضمين النص من مستند آخر.
+
+```csharp
 // أدخل حقل FieldIncludeText.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## الخطوة 4: تعيين خصائص الحقل
+
+نحتاج إلى تحديد خصائص حقل FieldIncludeText. يتضمن ذلك تعيين اسم الإشارة المرجعية والمسار الكامل للمستند المصدر.
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## الخطوة 5: إلحاق فقرة بالمستند
+
+بعد إعداد الحقل، نقوم بإلحاق الفقرة بنص القسم الأول من المستند.
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## الخطوة 6: تحديث الحقل
+
+قبل حفظ المستند، نحتاج إلى تحديث FieldIncludeText للتأكد من أنه يسحب المحتوى الصحيح من المستند المصدر.
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## الخطوة 7: احفظ المستند
+
+وأخيرًا، نقوم بحفظ المستند في الدليل المحدد.
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-في هذا المثال، قمنا بإنشاء مستند جديد، وقمنا بتهيئة فقرة، وإدراج FieldIncludeTexten لتحديد اسم الإشارة المرجعية واسم الملف المصدر، وحفظنا المستند باسم ملف محدد.
+## خاتمة
 
-بهذا نختتم دليلنا حول استخدام ميزة "إدراج ملف FieldIncludeText" مع Aspose.Words لـ .NET.
+وهناك لديك! باتباع هذه الخطوات، يمكنك بسهولة إدراج FieldIncludeText دون استخدام DocumentBuilder في Aspose.Words لـ .NET. يوفر هذا الأسلوب طريقة مبسطة لتضمين محتوى من مستند إلى آخر، مما يجعل مهام أتمتة المستندات الخاصة بك أكثر بساطة.
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: كيف يمكنني تحديد الملف المصدر لحقل تضمين النص في Aspose.Words لـ .NET؟
+### ما هو Aspose.Words لـ .NET؟  
+Aspose.Words for .NET هي مكتبة قوية للعمل مع مستندات Word في تطبيقات .NET. يسمح بإنشاء المستندات وتحريرها وتحويلها برمجياً.
 
- ج: لتحديد الملف المصدر لحقل تضمين النص في Aspose.Words لـ .NET، يمكنك استخدام`FieldIncludeText.SourceFullName`الخاصية لتعيين المسار الكامل للملف المصدر. تأكد من إمكانية الوصول إلى الملف المصدر وأنه يحتوي على المحتوى الذي تريد تضمينه في حقل تضمين النص.
+### لماذا استخدام FieldIncludeText؟  
+يعد FieldIncludeText مفيدًا لتضمين المحتوى ديناميكيًا من مستند إلى آخر، مما يتيح المزيد من المستندات المعيارية والقابلة للصيانة.
 
-#### س: هل يمكنني تضمين نص من ماكرو في حقل تضمين النص باستخدام Aspose.Words لـ .NET؟
+### هل يمكنني استخدام هذه الطريقة لتضمين نص من تنسيقات ملفات أخرى؟  
+يعمل FieldIncludeText بشكل خاص مع مستندات Word. بالنسبة للتنسيقات الأخرى، قد تحتاج إلى أساليب أو فئات مختلفة توفرها Aspose.Words.
 
- ج: نعم، يمكنك تضمين نص من ماكرو في حقل تضمين النص باستخدام Aspose.Words لـ .NET. يمكنك استخدام ال`FieldIncludeText.IncludeText` الخاصية لتحديد اسم الماكرو الذي يجب تضمين محتواه في الحقل.
+### هل Aspose.Words for .NET متوافق مع .NET Core؟  
+نعم، يدعم Aspose.Words for .NET .NET Framework و.NET Core و.NET 5/6.
 
-#### س: هل يؤثر إدراج حقل تضمين النص بدون أداة إنشاء المستندات على بنية مستند Word مع Aspose.Words for .NET؟
-
-ج: إن إدراج حقل تضمين نص بدون أداة إنشاء المستندات لا يؤثر بشكل مباشر على بنية مستند Word. ومع ذلك، فإنه يضيف عنصر حقل جديد إلى محتوى المستند. يمكنك التعامل مع بنية المستند عن طريق إضافة العناصر الموجودة أو حذفها أو تعديلها وفقًا لاحتياجاتك.
-
-#### س: هل يمكنني تخصيص مظهر حقل تضمين النص في مستند Word باستخدام Aspose.Words لـ .NET؟
-
-ج: لا يقوم حقل تضمين النص بتخصيص مظهره مباشرة في مستند Word. ومع ذلك، يمكنك تنسيق النص المضمن باستخدام خصائص الفقرة، وخصائص الخط، وكائنات التنسيق الأخرى المتوفرة في Aspose.Words for .NET.
+### كيف يمكنني الحصول على نسخة تجريبية مجانية من Aspose.Words لـ .NET؟  
+ يمكنك الحصول على نسخة تجريبية مجانية من[هنا](https://releases.aspose.com/).

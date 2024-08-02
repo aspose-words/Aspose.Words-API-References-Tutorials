@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-这`Document`对象代表整个 Word 文档，并且`DocumentBuilder`帮助我们添加和格式化内容。
+这`Document`对象代表我们的整个 Word 文档，并且`DocumentBuilder`帮助我们添加和格式化内容。
 
 ## 步骤 3：定义段落边框
 

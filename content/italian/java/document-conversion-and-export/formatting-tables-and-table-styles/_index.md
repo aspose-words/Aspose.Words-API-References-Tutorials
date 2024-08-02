@@ -45,7 +45,7 @@ table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
 table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
 ```
 
-## Costruisci una tabella con bordi
+## Costruisci una tabella con i bordi
 
 Questo frammento di codice mostra come creare una tabella e impostare i bordi sia per la tabella che per le sue celle:
 

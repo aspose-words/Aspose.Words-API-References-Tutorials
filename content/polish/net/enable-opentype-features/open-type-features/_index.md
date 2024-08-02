@@ -9,7 +9,7 @@ url: /pl/net/enable-opentype-features/open-type-features/
 ---
 ## Wstęp
 
-Czy jesteś gotowy, aby zanurzyć się w świat funkcji OpenType przy użyciu Aspose.Words dla .NET? Zapnij pasy, bo zaraz wyruszymy w wciągającą podróż, która nie tylko ulepszy Twoje dokumenty Word, ale także uczyni Cię ekspertem Aspose.Words. Zacznijmy!
+Czy jesteś gotowy, aby zanurzyć się w świat funkcji OpenType przy użyciu Aspose.Words dla .NET? Zapnij pasy, ponieważ zaraz wyruszymy w wciągającą podróż, która nie tylko ulepszy Twoje dokumenty Word, ale także uczyni Cię ekspertem Aspose.Words. Zacznijmy!
 
 ## Warunki wstępne
 

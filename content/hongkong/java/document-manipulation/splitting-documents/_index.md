@@ -17,7 +17,7 @@ url: /zh-hant/java/document-manipulation/splitting-documents/
 處理大型文件時的常見要求之一是根據標題拆分它們。 Aspose.Words for Java 讓這項任務變得簡單。讓我們來看看按標題分割文件的程式碼片段。
 
 ```java
-//使用 Aspose.Words for Java 按標題分割文件的 Java 程式碼
+//使用 Aspose.Words for Java 按標題拆分文件的 Java 程式碼
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
 HtmlSaveOptions options = new HtmlSaveOptions();
 options.setDocumentSplitCriteria(DocumentSplitCriteria.HEADING_PARAGRAPH);

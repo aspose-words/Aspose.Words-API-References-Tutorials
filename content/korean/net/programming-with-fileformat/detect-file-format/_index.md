@@ -11,11 +11,11 @@ url: /ko/net/programming-with-fileformat/detect-file-format/
 
 오늘날의 디지털 세계에서는 다양한 문서 형식을 효율적으로 관리하는 것이 중요합니다. Word, PDF, HTML 또는 기타 형식을 처리하는 경우 이러한 파일을 올바르게 감지하고 처리할 수 있으면 많은 시간과 노력을 절약할 수 있습니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 문서 파일 형식을 감지하는 방법을 살펴보겠습니다. 이 가이드는 전제 조건부터 자세한 단계별 가이드까지 알아야 할 모든 것을 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
--  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/) . 유효한 라이센스가 있는지 확인하십시오. 그렇지 않은 경우[임시면허](https://purchase.aspose.com/temporary-license/).
+-  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/) . 유효한 라이센스가 있는지 확인하십시오. 그렇지 않은 경우[임시 면허증](https://purchase.aspose.com/temporary-license/).
 - Visual Studio: 모든 최신 버전이 정상적으로 작동합니다.
 - .NET Framework: 올바른 버전이 설치되어 있는지 확인하세요.
 

@@ -2,104 +2,150 @@
 title: Geavanceerd veld invoegen zonder Document Builder
 linktitle: Geavanceerd veld invoegen zonder Document Builder
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een geavanceerd veld in uw Word-documenten kunt invoegen met Aspose.Words voor .NET.
+description: Leer hoe u een voortgangsveld kunt invoegen zonder DocumentBuilder te gebruiken in Aspose.Words voor .NET. Volg deze gids om uw vaardigheden op het gebied van documentverwerking te verbeteren.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van de functie "Geavanceerde veldinvoeging zonder DocumentBuilder" van Aspose.Words voor .NET. Zorg ervoor dat u elke stap zorgvuldig volgt om de gewenste resultaten te krijgen.
+Wilt u uw Word-documentmanipulaties verbeteren met Aspose.Words voor .NET? Nou, je bent op de juiste plek! In deze zelfstudie leiden we u door het proces van het invoegen van een voortgangsveld in een Word-document zonder de klasse DocumentBuilder te gebruiken. Aan het einde van deze handleiding heeft u een goed begrip van hoe u dit kunt bereiken met Aspose.Words voor .NET. Laten we er dus in duiken en uw documentverwerking nog krachtiger en veelzijdiger maken!
 
-## Stap 1: Documentmap instellen
+## Vereisten
 
-In de verstrekte code moet u de directory van uw documenten opgeven. Vervang de waarde "UW DOCUMENTENMAP" door het juiste pad naar uw documentenmap.
+Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
+
+-  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+- Visual Studio: elke recente versie is voldoende.
+- Basiskennis van C#: Deze tutorial gaat ervan uit dat je een fundamenteel begrip hebt van programmeren in C#.
+-  Aspose.Words-licentie: verkrijg een tijdelijke licentie[hier](https://purchase.aspose.com/temporary-license/) als je er geen hebt.
+
+## Naamruimten importeren
+
+Voordat u in de code duikt, moet u ervoor zorgen dat de benodigde naamruimten in uw project zijn geïmporteerd:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+## Stap 1: Stel uw project in
+
+Laten we eerst ons Visual Studio-project opzetten.
+
+### Maak een nieuw project
+
+1. Open Visuele Studio.
+2. Selecteer Een nieuw project maken.
+3. Kies Console-app (.NET Core) en klik op Volgende.
+4. Geef uw project een naam en klik op Maken.
+
+### Installeer Aspose.Words voor .NET
+
+1. Klik met de rechtermuisknop op uw project in de Solution Explorer.
+2. Selecteer NuGet-pakketten beheren.
+3. Zoek naar Aspose.Words en installeer de nieuwste versie.
+
+## Stap 2: Initialiseer document en alinea
+
+Nu ons project is opgezet, moeten we een nieuw document en een paragraaf initialiseren waarin we het voortgangsveld zullen invoegen.
+
+### Initialiseer document
+
+1.  In uw`Program.cs` bestand, begin met het maken van een nieuw document:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
 ```
 
-## Stap 2: Het document en de alinea maken
+Hiermee wordt een nieuw, leeg document aangemaakt.
 
-We beginnen met het maken van een nieuw document en het ophalen van de eerste alinea.
+### Voeg een alinea toe
+
+2. Haal de eerste alinea in het document op:
 
 ```csharp
-Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Stap 3: Het geavanceerde veld invoegen
+Dit zorgt ervoor dat we een paragraaf hebben om mee te werken.
 
- Wij gebruiken de`AppendField()` methode om een geavanceerd veld in de alinea in te voegen.
+## Stap 3: Voeg het veld Geavanceerd in
+
+Laten we nu het voortgangsveld in onze paragraaf invoegen.
+
+### Maak het veld
+
+1. Voeg het voortgangsveld toe aan de alinea:
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-Vervolgens configureren we de verschillende eigenschappen van het geavanceerde veld door de gewenste waarden op te geven.
+Hierdoor ontstaat er een nieuw voortgangsveld in onze paragraaf.
+
+### Veldeigenschappen instellen
+
+2. Configureer de veldeigenschappen om offsets en posities op te geven:
 
 ```csharp
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
+field.DownOffset = "10";
+field.LeftOffset = "10";
+field.RightOffset = "-3.3";
+field.UpOffset = "0";
 field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
+field.VerticalPosition = "100";
 ```
 
- Tenslotte noemen wij de`Update()` methode om het veld bij te werken.
+Deze instellingen passen de positie van de tekst aan ten opzichte van de normale positie.
+
+## Stap 4: Werk het document bij en sla het op
+
+Nu het veld is ingevoegd en geconfigureerd, is het tijd om het document bij te werken en op te slaan.
+
+### Werk het veld bij
+
+1. Zorg ervoor dat het veld wordt bijgewerkt om onze wijzigingen weer te geven:
 
 ```csharp
-field. Update();
+field.Update();
 ```
 
-### Voorbeeld van de broncode voor het invoegen van een geavanceerd veld zonder DocumentBuilder met Aspose.Words voor .NET
+Dit zorgt ervoor dat alle veldeigenschappen correct worden toegepast.
+
+### Sla het document op
+
+2. Sla uw document op in de opgegeven map:
 
 ```csharp
-// Het pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Documentcreatie.
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-
-// Voeg het geavanceerde veld in.
-FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
-
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
-field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
-
-field. Update();
-
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-In dit voorbeeld hebben we een nieuw document gemaakt, een geavanceerd veld ingevoegd zonder DocumentBuilder te gebruiken, de verschillende veldeigenschappen geconfigureerd en het document opgeslagen met een opgegeven bestandsnaam.
+Hiermee wordt het document opgeslagen, inclusief het voortgangsveld.
 
-Dit is het einde van onze handleiding over het gebruik van de functie "Geavanceerd veld invoegen zonder DocumentBuilder" met Aspose.Words voor .NET.
+## Conclusie
 
-### Veelgestelde vragen
+En daar heb je het! U hebt met succes een voortgangsveld in een Word-document ingevoegd zonder de klasse DocumentBuilder te gebruiken. Door deze stappen te volgen, hebt u de kracht van Aspose.Words voor .NET benut om Word-documenten programmatisch te manipuleren. Of u nu het genereren van rapporten automatiseert of complexe documentsjablonen maakt, deze kennis zal ongetwijfeld van pas komen. Blijf experimenteren en ontdek de mogelijkheden van Aspose.Words om uw documentverwerking naar een hoger niveau te tillen!
 
-#### Vraag: Wat is een geavanceerd veld in Aspose.Words?
+## Veelgestelde vragen
 
-A: Een Advance Field in Aspose.Words is een speciaal type veld waarmee u berekeningen kunt uitvoeren, voorwaarden kunt opnemen en complexe bewerkingen kunt uitvoeren in een Word-document. Het biedt grote flexibiliteit om dynamische en aangepaste velden te creëren.
+### Wat is een voorveld in Aspose.Words?
 
-#### Vraag: Hoe kan ik een geavanceerd veld in een Word-document invoegen zonder Document Builder in Aspose.Words te gebruiken?
+Met een voortgangsveld in Aspose.Words kunt u de positionering van tekst ten opzichte van de normale positie bepalen, waardoor u nauwkeurige controle krijgt over de tekstopmaak in uw documenten.
 
-A: Om een geavanceerd veld in een Word-document in te voegen zonder Document Builder in Aspose.Words te gebruiken, kunt u deze stappen volgen:
+### Kan ik DocumentBuilder gebruiken met geavanceerde velden?
 
-1. Importeer de document- en veldklasse uit de Aspose.Words.Fields-naamruimte.
-2. Maak een exemplaar van Document door uw bestaande document te laden.
-3. Gebruik de InsertField-methode om een geavanceerd veld in te voegen door de geavanceerde veldcode op te geven.
-4. Bewaar het document.
+Ja, u kunt DocumentBuilder gebruiken om geavanceerde velden in te voegen, maar deze tutorial laat zien hoe u dit kunt doen zonder DocumentBuilder te gebruiken, voor meer flexibiliteit en controle.
 
-#### Vraag: Hoe krijg ik het resultaat van een geavanceerd veld in een Word-document?
+### Waar kan ik meer voorbeelden vinden van het gebruik van Aspose.Words?
 
-A: Om het resultaat van een geavanceerd veld in een Word-document te krijgen, kunt u de eigenschap Resultaat gebruiken die beschikbaar is in de klasse Veld. Deze eigenschap retourneert het berekende resultaat van het veld.
+ Uitgebreide documentatie en voorbeelden vindt u op de website[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) bladzijde.
 
-#### Vraag: Kan ik de formule van een geavanceerd veld wijzigen nadat ik deze in een Word-document heb ingevoegd?
+### Is Aspose.Words voor .NET gratis te gebruiken?
 
-A: Ja, u kunt de formule van een geavanceerd veld bewerken nadat u deze in een Word-document hebt ingevoegd. U kunt dit doen door de eigenschap FieldCode van de klasse Field te openen en de formule bij te werken door de formuletekst te wijzigen.
+ Aspose.Words voor .NET biedt een gratis proefversie, die u kunt downloaden[hier](https://releases.aspose.com/). Voor volledige functionaliteit moet u een licentie aanschaffen.
+
+### Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
+
+ Voor ondersteuning kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).

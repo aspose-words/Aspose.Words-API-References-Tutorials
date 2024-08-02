@@ -1,6 +1,6 @@
 ---
-title: Flytta till sidhuvuden Sidfötter i Word-dokument
-linktitle: Flytta till sidhuvuden Sidfötter i Word-dokument
+title: Flytta till sidhuvuden sidfötter i Word-dokument
+linktitle: Flytta till sidhuvuden sidfötter i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du flyttar till sidhuvuden och sidfötter i ett Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Förbättra dina färdigheter i att skapa dokument.
 type: docs

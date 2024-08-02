@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fields/insert-merge-field-using-dom/
 ---
+## Wstęp
 
 Jeśli pracujesz z przetwarzaniem dokumentów w .NET, prawdopodobnie natknąłeś się na Aspose.Words. Ta potężna biblioteka oferuje szeroką gamę funkcji do programowego manipulowania dokumentami programu Word. W tym samouczku skupimy się na jednej konkretnej funkcji: wstawieniu pola scalania przy użyciu modelu obiektowego dokumentu (DOM) w Aspose.Words dla .NET. Ten przewodnik przeprowadzi Cię przez każdy krok, od skonfigurowania środowiska po wstawienie i aktualizację pola scalania w dokumencie programu Word.
 
@@ -14,26 +15,26 @@ Jeśli pracujesz z przetwarzaniem dokumentów w .NET, prawdopodobnie natknąłe�
 
 Zanim zagłębisz się w kod, upewnij się, że masz wszystko, czego potrzebujesz, wraz z tym samouczkiem.
 
-1. **Basic Knowledge of C#:** Powinieneś znać się na programowaniu w języku C#.
-2. **Visual Studio Installed:** Upewnij się, że na komputerze jest zainstalowany program Visual Studio lub inne środowisko C# IDE.
-3. **Aspose.Words for .NET:** Pobierz i zainstaluj najnowszą wersję Aspose.Words dla .NET z[Wydania](https://releases.aspose.com/words/net/).
-4. **Valid License:** Jeśli nie masz licencji, możesz ją uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+1. Podstawowa znajomość języka C#: Powinieneś czuć się komfortowo w programowaniu w języku C#.
+2. Zainstalowany program Visual Studio: Upewnij się, że na komputerze jest zainstalowany program Visual Studio lub inne środowisko C# IDE.
+3.  Aspose.Words dla .NET: Pobierz i zainstaluj najnowszą wersję Aspose.Words dla .NET ze strony[Wydania](https://releases.aspose.com/words/net/).
+4.  Ważna licencja: Jeśli nie masz licencji, możesz uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
 
 ## Krok 1: Skonfiguruj swój projekt
 
 Na początek skonfigurujmy nowy projekt w Visual Studio.
 
-1. **Open Visual Studio.**
-2. **Create a New Project:** Przejdź do Plik > Nowy > Projekt. Wybierz aplikację konsolową C#.
-3. **Name Your Project:** Nadaj swojemu projektowi znaczącą nazwę i kliknij Utwórz.
+1. Otwórz Visual Studio.
+2. Utwórz nowy projekt: Przejdź do Plik > Nowy > Projekt. Wybierz aplikację konsolową C#.
+3. Nazwij swój projekt: nadaj swojemu projektowi znaczącą nazwę i kliknij Utwórz.
 
 ## Krok 2: Zainstaluj Aspose.Words
 
 Aby używać Aspose.Words, musisz dodać go do swojego projektu. Można to zrobić za pomocą Menedżera pakietów NuGet.
 
-1. **Open NuGet Package Manager:** Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie wybierz opcję Zarządzaj pakietami NuGet.
-2. **Search for Aspose.Words:** W Menedżerze pakietów NuGet wyszukaj „Aspose.Words”.
-3. **Install the Package:** Kliknij Zainstaluj, aby dodać Aspose.Words do swojego projektu.
+1. Otwórz Menedżera pakietów NuGet: kliknij projekt prawym przyciskiem myszy w Eksploratorze rozwiązań, a następnie wybierz opcję Zarządzaj pakietami NuGet.
+2. Wyszukaj Aspose.Words: w Menedżerze pakietów NuGet wyszukaj „Aspose.Words”.
+3. Zainstaluj pakiet: Kliknij Zainstaluj, aby dodać Aspose.Words do swojego projektu.
 
 ## Krok 3: Importuj przestrzenie nazw
 
@@ -106,17 +107,17 @@ Wykonując poniższe kroki, możesz łatwo wstawiać i konfigurować pola scalan
 
 ## Często zadawane pytania
 
-### 1. Co to jest pole scalania?
+###  Co to jest pole scalania?
 Pole scalania to element zastępczy w dokumencie, który można dynamicznie zastępować danymi ze źródła danych, takiego jak baza danych lub plik CSV.
 
-### 2. Czy mogę korzystać z Aspose.Words za darmo?
+###  Czy mogę używać Aspose.Words za darmo?
  Aspose.Words oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/). W przypadku długotrwałego użytkowania konieczne będzie wykupienie licencji.
 
-### 3. Jak uzyskać tymczasową licencję na Aspose.Words?
- Licencję tymczasową można uzyskać na stronie internetowej Aspose[Tutaj](https://purchase.aspose.com/temporary-license/).
+###  Jak uzyskać tymczasową licencję na Aspose.Words?
+ Licencję tymczasową można uzyskać ze strony internetowej Aspose[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-### 4. Jakie wersje .NET są obsługiwane przez Aspose.Words?
+### Jakie wersje .NET są obsługiwane przez Aspose.Words?
 Aspose.Words obsługuje wiele wersji .NET, w tym .NET Framework, .NET Core i .NET Standard.
 
-### 5. Gdzie mogę znaleźć dokumentację API dla Aspose.Words?
+###  Gdzie mogę znaleźć dokumentację API dla Aspose.Words?
  Dostępna jest dokumentacja API[Tutaj](https://reference.aspose.com/words/net/).

@@ -16,6 +16,6 @@ Dengan menggunakan Aspose.Words, Anda dapat secara efektif mengotomatiskan tugas
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Deteksi Penomoran Dengan Spasi Putih](./detect-numbering-with-whitespaces/) | Pelajari cara mendeteksi nomor daftar dengan spasi putih di Aspose.Words untuk .NET. Perbaiki struktur dokumen Anda dengan mudah. |
-| [Menangani Opsi Spasi](./handle-spaces-options/) | Pelajari cara mengelola spasi di dokumen TXT Anda dengan Aspose.Words untuk .NET. Hapus spasi yang tidak perlu dan tingkatkan keterbacaan. |
-| [Arah Teks Dokumen](./document-text-direction/) | Pelajari cara menentukan arah teks dalam dokumen Anda dengan Aspose.Words untuk .NET. Tingkatkan tampilan untuk bahasa kanan-ke-kiri. Akses tutorial lengkapnya sekarang. |
+| [Deteksi Penomoran Dengan Spasi Putih](./detect-numbering-with-whitespaces/) | Temukan cara menggunakan Aspose.Words untuk .NET untuk mendeteksi penomoran dengan spasi putih dalam dokumen teks biasa dan memastikan daftar Anda dikenali dengan benar. |
+| [Menangani Opsi Spasi](./handle-spaces-options/) | Pelajari cara menangani spasi awal dan akhir dalam dokumen teks dengan Aspose.Words untuk .NET. Tutorial ini memberikan panduan untuk membersihkan pemformatan teks. |
+| [Arah Teks Dokumen](./document-text-direction/) | Pelajari cara mengatur arah teks dokumen di Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk menangani bahasa kanan-ke-kiri. |

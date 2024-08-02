@@ -45,7 +45,7 @@ Finalmente, podremos guardar el documento en el formato deseado.
 // Utilice un generador de documentos para agregar contenido al documento.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Insertar hipervínculo.
+// Insertar hipervínculo.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", falso);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### P: ¿Es posible personalizar el texto que se muestra de un enlace automático en Aspose.Words?
 
- R: Sí, puede personalizar el texto que se muestra de un enlace automático en Aspose.Words. En lugar de utilizar la dirección URL como texto para mostrar, puede utilizar cualquier otro texto reemplazando el contenido entre los`<a>` etiquetas. Por ejemplo, puedes usar`<a href="https://www.aspose.com">Click here</a>` para mostrar el texto "Haga clic aquí" como enlace automático.
+ R: Sí, puede personalizar el texto que se muestra de un enlace automático en Aspose.Words. En lugar de utilizar la dirección URL como texto para mostrar, puede utilizar cualquier otro texto reemplazando el contenido entre los`<a>` etiquetas. Por ejemplo, puedes usar`<a href="https://www.aspose.com">Click here</a>`para mostrar el texto "Haga clic aquí" como enlace automático.
 
 #### P: ¿Cómo puedo agregar atributos adicionales a un enlace automático en Aspose.Words?
 
-R: Para agregar atributos adicionales a un enlace automático en Aspose.Words, puede usar atributos HTML adicionales dentro del`<a>` etiqueta. Por ejemplo, puedes usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir el enlace en una nueva ventana o pestaña usando el` attribute target="_blank"`.
+ R: Para agregar atributos adicionales a un enlace automático en Aspose.Words, puede usar atributos HTML adicionales dentro del`<a>` etiqueta. Por ejemplo, puedes usar`<a href="https://www.aspose.com" target="_blank">Link</a>` para abrir el enlace en una nueva ventana o pestaña usando el` attribute target="_blank"`.

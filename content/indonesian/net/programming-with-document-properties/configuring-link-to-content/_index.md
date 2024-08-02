@@ -13,7 +13,7 @@ Pernah bertanya-tanya bagaimana cara menautkan konten dalam dokumen Word secara 
 
 ## Prasyarat
 
-Sebelum kita mendalami panduan langkah demi langkah, pastikan Anda memiliki semua yang dibutuhkan untuk memulai:
+Sebelum kita mendalami panduan langkah demi langkah, pastikan Anda memiliki semua yang diperlukan untuk memulai:
 
 -  Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 - .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.

@@ -9,7 +9,7 @@ url: /it/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## introduzione
 
-Ti sei mai chiesto come salvare un documento Word come immagine in bianco e nero con solo poche righe di codice? Bene, sei fortunato! Oggi ci immergeremo in un piccolo trucchetto utilizzando Aspose.Words per .NET che ti consente di convertire i tuoi documenti in immagini indicizzate da 1 Bpp. Questo formato è perfetto per alcuni tipi di archiviazione digitale, stampa o quando è necessario risparmiare spazio. Analizzeremo ogni passaggio per renderlo facile come una torta. Pronti per iniziare? Immergiamoci!
+Ti sei mai chiesto come salvare un documento Word come immagine in bianco e nero con solo poche righe di codice? Bene, sei fortunato! Oggi ci immergeremo in un piccolo trucchetto utilizzando Aspose.Words per .NET che ti consente di convertire i tuoi documenti in immagini indicizzate da 1 Bpp. Questo formato è perfetto per alcuni tipi di archiviazione digitale, stampa o quando è necessario risparmiare spazio. Analizzeremo ogni passaggio per renderlo facile come una torta. Pronto per iniziare? Immergiamoci!
 
 ## Prerequisiti
 

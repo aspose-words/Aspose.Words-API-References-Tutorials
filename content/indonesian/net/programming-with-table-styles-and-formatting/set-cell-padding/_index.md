@@ -2,77 +2,102 @@
 title: Atur Bantalan Sel
 linktitle: Atur Bantalan Sel
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengatur margin sel tabel menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengatur padding sel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Tingkatkan format tabel dokumen Anda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah untuk mengatur margin sel tabel menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan paket kode sumber C# dan memberi Anda panduan komprehensif untuk membantu Anda memahami dan menerapkan fitur ini dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan mengetahui cara menyesuaikan margin (spasi) kiri, atas, kanan, dan bawah konten sel dalam tabel di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+Pernah bertanya-tanya bagaimana cara menambahkan sedikit ruang ekstra di sekitar teks dalam sel tabel di dokumen Word Anda? Nah, Anda berada di tempat yang tepat! Tutorial ini akan memandu Anda melalui proses pengaturan padding sel menggunakan Aspose.Words untuk .NET. Baik Anda ingin membuat dokumen Anda terlihat lebih rapi atau hanya ingin membuat data tabel Anda menonjol, menyesuaikan padding sel adalah alat yang sederhana namun ampuh. Kami akan menguraikan setiap langkah untuk memastikan Anda dapat mengikutinya dengan mudah, bahkan jika Anda baru mengenal Aspose.Words untuk .NET.
 
-## Langkah 1: Tentukan direktori dokumen
-Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ini adalah lokasi di mana Anda ingin menyimpan dokumen Word yang telah Anda edit. Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai.
+## Prasyarat
+
+Sebelum kita mendalaminya, pastikan Anda memiliki hal berikut:
+
+1. Aspose.Words for .NET: Jika Anda belum melakukannya, unduh dan instal Aspose.Words for .NET dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Anda memerlukan IDE seperti Visual Studio yang disiapkan di mesin Anda.
+3. Pengetahuan Dasar tentang C#: Meskipun kami akan menjelaskan semuanya, pemahaman dasar tentang C# akan membantu Anda mengikutinya.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini akan memastikan bahwa Anda memiliki semua alat yang Anda perlukan untuk bekerja dengan Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Langkah 2: Buat dokumen baru dan pembuat dokumen
- Selanjutnya, Anda perlu membuat instance baru dari`Document` kelas dan konstruktor dokumen untuk dokumen itu.
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dikelola. Siap? Ayo pergi!
+
+## Langkah 1: Buat Dokumen Baru
+
+Sebelum kita dapat mulai menambahkan tabel dan mengatur padding sel, kita memerlukan dokumen untuk digunakan. Inilah cara Anda membuat dokumen baru:
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Buat dokumen baru
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 3: Mulai tabel baru dan tambahkan sel
-Untuk mulai membuat tabel, kami menggunakan`StartTable()` metode konstruktor dokumen, lalu kita menambahkan sel ke tabel menggunakan`InsertCell()` metode.
+## Langkah 2: Mulailah Membangun Meja Anda
+
+ Sekarang setelah kita memiliki dokumen, mari mulai membuat tabel. Kami akan menggunakan`DocumentBuilder` untuk menyisipkan sel dan baris.
 
 ```csharp
-builder. StartTable();
-builder. InsertCell();
+// Mulailah membangun meja
+builder.StartTable();
+builder.InsertCell();
 ```
 
-## Langkah 4: Tetapkan margin sel
- Sekarang kita dapat mengatur margin sel menggunakan`SetPaddings()` metode`CellFormat` obyek. Margin ditentukan dalam poin dan ditentukan dalam urutan kiri, atas, kanan, dan bawah.
+## Langkah 3: Atur Bantalan Sel
+
+Ini adalah dimana keajaiban terjadi! Kita akan mengatur jumlah ruang (dalam poin) untuk ditambahkan ke kiri, atas, kanan, dan bawah konten sel.
 
 ```csharp
+// Atur padding untuk sel
 builder.CellFormat.SetPaddings(30, 50, 30, 50);
+builder.Writeln("I'm a wonderfully formatted cell.");
 ```
 
-## Langkah 5: Tambahkan konten ke sel
- Lalu kita bisa menambahkan konten ke sel menggunakan pembuat dokumen`Writeln()` metode.
+## Langkah 4: Lengkapi Tabelnya
+
+Setelah mengatur padding, mari selesaikan tabel kita dengan mengakhiri baris dan tabelnya.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted cell.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## Langkah 6: Selesaikan tabel dan simpan dokumen
- Akhirnya, kita selesai membuat tabel menggunakan`EndRow()` metode dan`EndTable()`, lalu kita simpan dokumen yang dimodifikasi ke sebuah file.
+## Langkah 5: Simpan Dokumen
+
+Terakhir, kita perlu menyimpan dokumen kita. Pilih lokasi di direktori Anda untuk menyimpan file Word yang baru dibuat.
 
 ```csharp
-builder. EndRow();
-builder. EndTable();
+// Simpan dokumennya
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
-```
- 
-### Contoh kode sumber untuk Mengatur Padding Sel menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.StartTable();
-	builder.InsertCell();
-	// Mengatur jumlah spasi (dalam poin) untuk ditambahkan ke kiri/atas/kanan/bawah konten sel.
-	builder.CellFormat.SetPaddings(30, 50, 30, 50);
-	builder.Writeln("I'm a wonderful formatted cell.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mengatur margin sel tabel menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah menyesuaikan margin sel untuk membuat spasi di kiri, atas, kanan, dan bawah konten tabel di dokumen Word Anda. Aspose.Words menawarkan API yang kuat dan fleksibel untuk memanipulasi dan memformat tabel di dokumen Anda. Dengan pengetahuan ini, Anda dapat menyesuaikan format tabel dengan kebutuhan spesifik Anda.
+
+Dan itu dia! Anda telah berhasil mengatur padding sel di dokumen Word menggunakan Aspose.Words untuk .NET. Fitur sederhana namun kuat ini dapat meningkatkan keterbacaan dan estetika tabel Anda secara signifikan. Baik Anda seorang pengembang berpengalaman atau baru memulai, kami harap panduan ini bermanfaat dan mudah diikuti. Selamat membuat kode!
+
+## FAQ
+
+### Bisakah saya menetapkan nilai padding yang berbeda untuk setiap sel dalam tabel?
+ Ya, Anda dapat menetapkan nilai padding yang berbeda untuk setiap sel dengan menerapkan`SetPaddings` metode untuk setiap sel secara individual.
+
+### Unit apa yang digunakan untuk nilai padding di Aspose.Words?
+Nilai padding ditentukan dalam poin. Ada 72 poin dalam satu inci.
+
+### Bisakah saya menerapkan padding pada sisi sel tertentu saja?
+Ya, Anda dapat menentukan bantalan untuk sisi kiri, atas, kanan, dan bawah satu per satu.
+
+### Apakah ada batasan berapa banyak padding yang dapat saya atur?
+Tidak ada batasan khusus, namun padding yang berlebihan mungkin mempengaruhi tata letak tabel dan dokumen Anda.
+
+### Bisakah saya mengatur padding sel menggunakan Microsoft Word?
+Ya, Anda dapat mengatur padding sel di Microsoft Word, tetapi menggunakan Aspose.Words untuk .NET memungkinkan manipulasi dokumen otomatis dan dapat diprogram.

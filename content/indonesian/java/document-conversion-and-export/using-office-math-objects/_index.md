@@ -2,7 +2,7 @@
 title: Menggunakan Objek Office Math di Aspose.Words untuk Java
 linktitle: Menggunakan Objek Matematika Office
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Temukan kekuatan persamaan matematika dalam dokumen dengan Aspose.Words untuk Java. Belajar memanipulasi dan menampilkan objek Office Math dengan mudah.
+description: Buka kekuatan persamaan matematika dalam dokumen dengan Aspose.Words untuk Java. Belajar memanipulasi dan menampilkan objek Office Math dengan mudah.
 type: docs
 weight: 13
 url: /id/java/document-conversion-and-export/using-office-math-objects/

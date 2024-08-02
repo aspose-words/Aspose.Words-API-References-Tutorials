@@ -2,57 +2,41 @@
 title: Wijzig de Toc-tabstops in een Word-document
 linktitle: Wijzig de Toc-tabstops in een Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de tabbladen met de inhoudsopgave in een Word-document kunt wijzigen met Aspose.Words voor .NET.
+description: Leer hoe u de TOC-tabstops in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Met deze stapsgewijze handleiding kunt u een professioneel ogende inhoudsopgave maken.
 type: docs
 weight: 10
 url: /nl/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, bewerken en manipuleren van Word-documenten in een C#-toepassing. Onder de functionaliteiten die Aspose.Words biedt, bestaat de mogelijkheid om de tabbladen te wijzigen die worden gebruikt in een inhoudsopgave van een Word-document. In deze handleiding laten we u zien hoe u de C#-broncode van Aspose.Words voor .NET kunt gebruiken om van tabblad te wisselen in de inhoudsopgave van een document.
+## Invoering
 
-## Inzicht in de Aspose.Words-bibliotheek
+Heeft u zich ooit afgevraagd hoe u de inhoudsopgave (TOC) in uw Word-documenten kunt verfraaien? Misschien wilt u dat de tabstops perfect uitgelijnd zijn voor een professionele uitstraling. Je bent op de juiste plek! Vandaag gaan we dieper in op de manier waarop u de TOC-tabstops kunt wijzigen met Aspose.Words voor .NET. Blijf nog even hangen, en ik beloof dat je weggaat met alle kennis om je inhoudsopgave er hip en netjes uit te laten zien.
 
-Voordat u in de code duikt, is het belangrijk dat u de Aspose.Words-bibliotheek voor .NET begrijpt. Aspose.Words is een populaire bibliotheek die het verwerken van woorden met Word-documenten eenvoudig en efficiënt maakt. Het biedt een breed scala aan functies voor het maken, bewerken en manipuleren van Word-documenten, inclusief het wijzigen van tabbladen met de inhoudsopgave.
+## Vereisten
 
-## Het document met de inhoudsopgave laden
+Voordat we aan de slag gaan, zorgen we ervoor dat u over alles beschikt wat u nodig heeft:
 
-De eerste stap is het laden van het Word-document met de inhoudsopgave die u wilt wijzigen. Gebruik de klasse Document om het document uit het bronbestand te laden. Hier is een voorbeeld :
+1.  Aspose.Words voor .NET: dat kan[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Visual Studio of een C#-compatibele IDE.
+3. Een Word-document: specifiek een document dat een inhoudsopgave bevat.
 
-```csharp
-Document doc = new Document(dataDir + "Table of contents.docx");
-```
+Heb je dat allemaal? Geweldig! Laten we gaan.
 
-In dit voorbeeld laden we het document "Inhoudsopgave.docx" in de documentenmap.
+## Naamruimten importeren
 
-## Tabbladen in de inhoudsopgave wijzigen
-
-Zodra het document is geladen, doorlopen we elke paragraaf van het document en controleren of deze is opgemaakt met behulp van de resultaatstijlen van de inhoudsopgave (TOC). Als dat zo is, passen we de tabbladen aan die worden gebruikt om de paginanummers uit te lijnen. Hier is hoe:
+Allereerst moet u de benodigde naamruimten importeren. Dit is hetzelfde als het inpakken van uw gereedschap voordat u aan een project begint.
 
 ```csharp
-foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
-{
-     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
-         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
-     {
-         TabStop tab = para.ParagraphFormat.TabStops[0];
-         para.ParagraphFormat.TabStops.RemoveByPosition(tab.Position);
-         para.ParagraphFormat.TabStops.Add(tab.Position - 50, tab.Alignment, tab.Leader);
-     }
-}
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-In dit voorbeeld gebruiken we een lus om elke alinea in het document te doorlopen. Vervolgens controleren we of de alinea is opgemaakt met behulp van de inhoudsopgave-resultaatstijlen (TOC). Als dat het geval is, gaan we naar het eerste tabblad dat in deze paragraaf wordt gebruikt en passen we dit aan door het oude tabblad te verwijderen en een nieuw tabblad toe te voegen met een gewijzigde positie.
+Laten we dit proces opsplitsen in eenvoudige, verteerbare stappen. We gaan door met het laden van het document, het wijzigen van de TOC-tabstops en het opslaan van het bijgewerkte document.
 
-## Bewaar het gewijzigde document
+## Stap 1: Laad het document
 
-Nadat u de nodige wijzigingen heeft aangebracht in de tabbladen in de inhoudsopgave, kunt u het gewijzigde document opslaan met de Save-methode van de Document-klasse. Hier is een voorbeeld :
+Waarom? We hebben toegang nodig tot het Word-document dat de inhoudsopgave bevat die we willen wijzigen.
 
-```csharp
-doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
-```
-
-In dit voorbeeld slaan we het gewijzigde document op als "WorkingWithTableOfContent.ChangeTocTabStops.docx".
-
-### Voorbeeldbroncode voor de functie "Tabbladen met inhoudsopgave bewerken" met Aspose.Words voor .NET
+Hoe? Hier is een eenvoudig codefragment om u op weg te helpen:
 
 ```csharp
 // Pad naar uw documentenmap
@@ -60,50 +44,34 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Laad het document met de inhoudsopgave
 Document doc = new Document(dataDir + "Table of contents.docx");
-
-// Wijzig de tabbladen van de inhoudsopgave
-foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
-{
-     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
-         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
-     {
-         TabStop tab = para.ParagraphFormat.TabStops[0];
-         para.ParagraphFormat.TabStops.RemoveByPosition(tab.Position);
-         para.ParagraphFormat.TabStops.Add(tab.Position - 50, tab.Alignment, tab.Leader);
-     }
-}
-
-// Sla het gewijzigde document op
-doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## Conclusie
+Stel je voor dat je document op een taart lijkt en dat we op het punt staan wat glazuur toe te voegen. De eerste stap is om die taart uit de doos te halen.
 
-In deze handleiding hebben we besproken hoe u Aspose.Words voor .NET kunt gebruiken om de tabbladen in de inhoudsopgave van een Word-document te wijzigen met behulp van de meegeleverde C#-broncode. Door de aangegeven stappen te volgen, kunt u eenvoudig de tabbladen met de inhoudsopgave in uw Word-documenten in uw C#-toepassing aanpassen. Aspose.Words biedt enorme flexibiliteit en kracht om te werken met de stijlen en opmaak van uw documenten, waardoor u aantrekkelijke en professionele Word-documenten kunt maken.
+## Stap 2: Identificeer TOC-paragrafen
 
-### Veelgestelde vragen over het wijzigen van tabbladstops in een Word-document
+Waarom? We moeten de paragrafen identificeren waaruit de inhoudsopgave bestaat. 
 
-#### Vraag: Wat is het doel van de functionaliteit "Toc-tabstops wijzigen in Word-document" in Aspose.Words voor .NET?
-
-A: Met de functionaliteit "Toc-tabstops in Word-document wijzigen" in Aspose.Words voor .NET kunt u de tabstops wijzigen die worden gebruikt in de inhoudsopgave van een Word-document. Hiermee kunt u de uitlijning en positionering van de paginanummers en bijbehorende koppen binnen de inhoudsopgave aanpassen.
-
-#### Vraag: Wat is Aspose.Words voor .NET?
-
-A: Aspose.Words voor .NET is een krachtige bibliotheek ontworpen voor woordenverwerking met Word-documenten in .NET-toepassingen. Het biedt uitgebreide functies voor het programmatisch maken, bewerken, manipuleren en converteren van Word-documenten met behulp van C# of andere .NET-talen.
-
-#### Vraag: Hoe laad ik een Word-document met een inhoudsopgave met Aspose.Words voor .NET?
-
- A: Om een Word-document met een inhoudsopgave te laden met Aspose.Words voor .NET, kunt u de`Document` klasse en zijn constructor. Door het bestandspad van het document op te geven, kunt u het in een`Document` voorwerp. Hier is een voorbeeld:
+Hoe? Loop door de paragrafen en controleer hun stijlen:
 
 ```csharp
-Document doc = new Document(dataDir + "Table of contents.docx");
+foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
+{
+    if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
+        para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
+    {
+        // TOC-paragraaf gevonden
+    }
+}
 ```
 
-Dit codefragment laadt het document "Inhoudsopgave.docx" in de opgegeven map.
+Zie het als het scannen van een menigte om je vrienden te vinden. Hier zoeken we naar alinea's die zijn opgemaakt als inhoudsopgave-items.
 
-#### Vraag: Hoe kan ik de tabbladen wijzigen die in de inhoudsopgave worden gebruikt met Aspose.Words voor .NET?
+## Stap 3: Pas de tabstops aan
 
-A: Zodra het document is geladen, kunt u elke alinea van het document doorlopen en controleren of het is opgemaakt met de resultaatstijlen van de inhoudsopgave (TOC). Als een alinea is opgemaakt als inhoudsopgavestijl, kunt u de tabbladen wijzigen die worden gebruikt om de paginanummers uit te lijnen. In Aspose.Words voor .NET hebt u toegang tot de`ParagraphFormat` eigenschap van elke alinea om de tabstops op te halen en te wijzigen. Hier is een voorbeeld:
+Waarom? Dit is waar de magie gebeurt. Als u de tabstops wijzigt, ziet uw inhoudsopgave er netter uit.
+
+Hoe? Verwijder de bestaande tabstop en voeg een nieuwe toe op een gewijzigde positie:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -118,34 +86,38 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-In deze code loopt de lus door elke alinea in het document. Als een alinea een inhoudsopgavestijl heeft, wordt toegang verkregen tot de eerste tabstop die in die alinea wordt gebruikt, wordt deze verwijderd en wordt een nieuwe tabstop met een gewijzigde positie toegevoegd.
+Het is alsof je het meubilair in je woonkamer aanpast totdat het precies goed voelt. We passen deze tabstops aan voor perfectie.
 
-#### Vraag: Kan ik de tabbladen voor meerdere niveaus in de inhoudsopgave wijzigen met Aspose.Words voor .NET?
+## Stap 4: Sla het gewijzigde document op
 
-A: Ja, u kunt de tabbladen voor meerdere niveaus in de inhoudsopgave wijzigen met Aspose.Words voor .NET. Door elke alinea te doorlopen en de inhoudsopgavestijl te controleren, kunt u de tabbladen voor elk niveau afzonderlijk aanpassen. U kunt toegang krijgen tot het gewenste niveau van de inhoudsopgave en de tabstops dienovereenkomstig aanpassen.
+Waarom? Om ervoor te zorgen dat al uw harde werk wordt opgeslagen en kan worden bekeken of gedeeld.
 
-#### Vraag: Hoe sla ik het gewijzigde document op nadat ik de tabbladen in de inhoudsopgave heb gewijzigd met Aspose.Words voor .NET?
-
- A: Nadat u de nodige wijzigingen heeft aangebracht in de tabbladen in de inhoudsopgave, kunt u het gewijzigde document opslaan met behulp van de`Save` werkwijze van de`Document` klas. Geef het gewenste bestandspad en de gewenste naam voor het uitvoerdocument op als parameter voor het`Save` methode. Hier is een voorbeeld:
+Hoe? Sla het document op met een nieuwe naam om het origineel intact te houden:
 
 ```csharp
+// Sla het gewijzigde document op
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-Met deze code wordt het gewijzigde document opgeslagen als "WorkingWithTableOfContent.ChangeTocTabStops.docx".
+En voila! Uw inhoudsopgave heeft nu de tabstops precies waar u ze wilt hebben.
 
-#### Vraag: Kan ik andere aspecten van de inhoudsopgave aanpassen met Aspose.Words voor .NET?
+## Conclusie
 
-A: Ja, met Aspose.Words voor .NET kunt u verschillende aspecten van de inhoudsopgave aanpassen. Naast het wijzigen van de tabbladen kunt u ook de lettertypestijlen, grootte, uitlijning en andere opmaakeigenschappen van de inhoudsopgave-items en paginanummers wijzigen. Bovendien kunt u de inspringing, de afstand en de opmaak van de overeenkomstige koppen aanpassen.
+Het wijzigen van TOC-tabstops in een Word-document met Aspose.Words voor .NET is eenvoudig als je het eenmaal hebt opgesplitst. Door uw document te laden, de TOC-paragrafen te identificeren, de tabstops aan te passen en het document op te slaan, kunt u een verzorgde en professionele uitstraling krijgen. Vergeet niet dat oefening kunst baart, dus blijf experimenteren met verschillende tabstopposities om precies de gewenste lay-out te krijgen.
 
-#### Q:. Kan ik de tabuitlijning en aanlooptekens voor de inhoudsopgave wijzigen met Aspose.Words voor .NET?
+## Veelgestelde vragen
 
-A: Ja, u kunt de tabuitlijning en aanlooptekens voor de inhoudsopgave wijzigen met Aspose.Words voor .NET. Door de tabstops te openen en hun uitlijnings- en verwijslijneigenschappen aan te passen, kunt u de uitlijning en visuele weergave van de paginanummers en bijbehorende koppen in de inhoudsopgave bepalen.
+### Kan ik tabstops voor verschillende TOC-niveaus afzonderlijk wijzigen?
+Ja, dat kan! Controleer gewoon elk specifiek TOC-niveau (Toc1, Toc2, enz.) en pas het dienovereenkomstig aan.
 
-#### Vraag: Ondersteunt Aspose.Words voor .NET het wijzigen van andere stijlen en opmaak in Word-documenten?
+### Wat moet ik doen als mijn document meerdere inhoudsopgaven heeft?
+De code scant op alle alinea's in TOC-stijl, zodat alle inhoudsopgaven in het document worden gewijzigd.
 
-A: Ja, Aspose.Words voor .NET biedt uitgebreide ondersteuning voor het wijzigen van verschillende stijlen en opmaak in Word-documenten. Hiermee kunt u stijlen wijzigen voor verschillende elementen, zoals alinea's, koppen, tabellen, lijsten en meer. U kunt lettertypen, kleuren, uitlijning, inspringing, spatiëring en andere opmaakaspecten naar wens wijzigen.
+### Is het mogelijk om meerdere tabstops toe te voegen aan een inhoudsopgave?
+ Absoluut! U kunt zoveel tabstops toevoegen als nodig is door de`para.ParagraphFormat.TabStops` verzameling.
 
-#### Vraag: Kan ik de tabbladen in de inhoudsopgave van een bestaand Word-document wijzigen met Aspose.Words voor .NET?
+### Kan ik de uitlijning van de tabstops en de leaderstijl wijzigen?
+Ja, u kunt verschillende uitlijningen en verwijsstijlen opgeven wanneer u een nieuwe tabstop toevoegt.
 
-A: Ja, u kunt de tabbladen in de inhoudsopgave van een bestaand Word-document wijzigen met Aspose.Words voor .NET. Door het document te laden, de alinea's te doorlopen en de nodige wijzigingen aan te brengen in de tabstops, kunt u de tabbladen in de inhoudsopgave bijwerken. Sla ten slotte het document op om de wijzigingen toe te passen.
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
+ Ja, u heeft een geldige licentie nodig om Aspose.Words voor .NET na de proefperiode te gebruiken. Je kunt een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) of[koop er een](https://purchase.aspose.com/buy).

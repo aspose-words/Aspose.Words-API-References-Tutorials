@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.DocumentBuilder;
 ```
 
-## Étape 1 : Charger les documents
+## Étape 1 : Charger des documents
 
  Tout d'abord, chargez les documents source et de destination dans Aspose.Words`Document` objets.
 

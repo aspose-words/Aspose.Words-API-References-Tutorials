@@ -21,7 +21,7 @@ Antes de sumergirnos, asegúrese de tener lo siguiente:
 
 ## Importar espacios de nombres
 
-Para comenzar, asegúrese de tener importados los espacios de nombres necesarios en su proyecto:
+Para comenzar, asegúrese de haber importado los espacios de nombres necesarios en su proyecto:
 
 ```csharp
 using Aspose.Words;
@@ -61,7 +61,7 @@ CompositeNode dstNode = dstDoc.LastSection.Body;
 
 ## Paso 4: Importar contenido marcado
 
- Para garantizar que se conserven los estilos y el formato, utilice`NodeImporter` para importar el contenido marcado desde el documento de origen al documento de destino.
+ Para garantizar que se conserven los estilos y el formato, utilice`NodeImporter` para importar el contenido marcado como favorito desde el documento de origen al documento de destino.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);

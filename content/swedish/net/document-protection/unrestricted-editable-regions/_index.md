@@ -73,7 +73,7 @@ Därefter ställer vi in dokumentet på skrivskyddat. Detta säkerställer att i
 
 ## Steg 4: Skapa redigerbara intervall
 
-Här händer magin. Vi kommer att skapa avsnitt i dokumentet som kan redigeras trots det övergripande skrivskyddet.
+Det är här magin händer. Vi kommer att skapa avsnitt i dokumentet som kan redigeras trots det övergripande skrivskyddet.
 
 1. Starta redigerbart intervall: Definiera början på det redigerbara intervallet.
    ```csharp

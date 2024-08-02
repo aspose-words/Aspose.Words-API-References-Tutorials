@@ -17,14 +17,14 @@ The code samples provided in the tutorials will help you understand the concepts
 | Title | Description |
 | --- | --- |
 | [Check Box Type Content Control](./check-box-type-content-control/) | Learn how to add a Check Box Type Content Control in Word documents using Aspose.Words for .NET with this detailed, step-by-step tutorial. |
-| [Current State Of Check Box](./current-state-of-check-box/) | Learn how to retrieve and set the current state of a check box content control in a Word document using Aspose.Words for .NET. |
-| [Modify Content Controls](./modify-content-controls/) | Learn how to modify text, dropdown lists, and images within content controls in a Word document using Aspose.Words for .NET. |
-| [Combo Box Content Control](./combo-box-content-control/) | Learn how to create a Combo Box Content Control in a Word document using Aspose.Words for .NET. |
-| [Rich Text Box Content Control](./rich-text-box-content-control/) | Learn how to create a rich text box content control in a Word document using Aspose.Words for .NET enabling text formatting and styling. |
-| [Set Content Control Color](./set-content-control-color/) | Learn how to set the color of a content control in a Word document using Aspose.Words for .NET, customizing its appearance. |
+| [Current State Of Check Box](./current-state-of-check-box/) | Learn how to manage checkboxes in Word documents with Aspose.Words for .NET. This guide covers setting up, updating, and saving checkboxes programmatically. |
+| [Modify Content Controls](./modify-content-controls/) | Learn how to modify structured document tags in Word using Aspose.Words for .NET. Update text, dropdowns, and images step-by-step. |
+| [Combo Box Content Control](./combo-box-content-control/) | Create a combo box content control in Word documents using Aspose.Words for .NET with our detailed, tutorial. Perfect for enhancing your document's interactivity. |
+| [Rich Text Box Content Control](./rich-text-box-content-control/) | Learn how to add and customize a Rich Text Box Content Control in a Word document using Aspose.Words for .NET with this detailed, step-by-step guide. |
+| [Set Content Control Color](./set-content-control-color/) | Easily set the color of Structured Document Tags in Word using Aspose.Words for .NET. Customize your SDTs to enhance document appearance with this simple guide. |
 | [Clear Contents Control](./clear-contents-control/) | Learn how to clear contents control in a Word document using Aspose.Words for .NET with our step-by-step guide. |
-| [Bind SDT to Custom Xml Part](./bind-sdt-to-custom-xml-part/) | Learn how to bind a SDT to a Custom Xml Part using Aspose.Words for .NET. |
-| [Set Content Control Style](./set-content-control-style/) | Learn how to set the style of a content control in a Word document using Aspose.Words for .NET, applying consistent formatting. |
+| [Bind SDT to Custom Xml Part](./bind-sdt-to-custom-xml-part/) | Learn how to bind Structured Document Tags (SDTs) to Custom XML Parts in Word documents using Aspose.Words for .NET with this step-by-step tutorial. |
+| [Set Content Control Style](./set-content-control-style/) | Learn how to set content control styles in Word documents using Aspose.Words for .NET with this detailed, step-by-step guide. Perfect for enhancing document aesthetics. |
 | [Creating Table Repeating Section Mapped To Custom Xml Part](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Learn how to create a table with a repeating section mapped to a CustomXmlPart in a Word document using Aspose.Words for .NET. |
-| [Multi Section](./multi-section/) | Learn how to retrieve and process multi-section structured document tags in a Word document using Aspose.Words for .NET. |
-| [Structured Document Tag Range Start Xml Mapping](./structured-document-tag-range-start-xml-mapping/) | Learn how to set up XML mapping for a structured document tag range start in a Word document using Aspose.Words for .NET. |
+| [Multi Section](./multi-section/) | Learn how to work with multi-section structured document tags in Aspose.Words for .NET with this step-by-step tutorial. Ideal for dynamic document manipulation. |
+| [Structured Document Tag Range Start Xml Mapping](./structured-document-tag-range-start-xml-mapping/) | Learn how to dynamically bind XML data to structured document tags in Word using Aspose.Words for .NET. Follow our step-by-step guide. |

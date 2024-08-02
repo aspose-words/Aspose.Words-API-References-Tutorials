@@ -92,7 +92,7 @@ Nakonec uložte kombinovaný dokument do svého adresáře.
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 ```
 
-Tento řádek kódu uloží sloučený dokument pod novým názvem, což zajistí, že vaše původní soubory zůstanou nezměněny.
+Tento řádek kódu uloží sloučený dokument pod novým názvem, čímž zajistí, že vaše původní soubory zůstanou nezměněny.
 
 ## Závěr
 
@@ -104,7 +104,7 @@ tady to máte! Úspěšně jste přidali jeden dokument aplikace Word k jinému 
 
  Absolutně! Opakovaným voláním můžete připojit tolik dokumentů, kolik potřebujete`AppendDocument` metoda s různými zdrojovými dokumenty.
 
-### Co když moje dokumenty mají jiné formátování?
+### Co když mají moje dokumenty jiné formátování?
 
  Způsob zpracování formátování můžete ovládat pomocí`ImportFormatMode` parametr. Možnosti zahrnují`KeepSourceFormatting`, `UseDestinationStyles`, a více.
 

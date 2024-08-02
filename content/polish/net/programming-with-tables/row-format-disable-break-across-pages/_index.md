@@ -2,67 +2,86 @@
 title: Format wiersza Wyłącz podział stron
 linktitle: Format wiersza Wyłącz podział stron
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wyłączyć podział wiersza w tabeli na wielu stronach w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wyłączyć podziały wierszy na stronach w dokumentach programu Word za pomocą Aspose.Words dla .NET, aby zachować czytelność i formatowanie tabeli.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
+## Wstęp
 
-tym samouczku nauczymy się, jak wyłączyć łamanie wierszy wielostronicowej tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł wyłączyć łamanie linii dla wszystkich wierszy tabeli w dokumentach programu Word.
+Pracując z tabelami w dokumentach programu Word, warto upewnić się, że wiersze nie dzielą się na strony, co może mieć istotne znaczenie dla zachowania czytelności i formatowania dokumentów. Aspose.Words dla .NET zapewnia łatwy sposób wyłączania podziału wierszy na stronach.
 
-## Krok 1: Konfiguracja projektu
-1. Uruchom program Visual Studio i utwórz nowy projekt C#.
-2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
+W tym samouczku przeprowadzimy Cię przez proces wyłączania podziałów wierszy na stronach w dokumencie programu Word za pomocą Aspose.Words dla .NET.
 
-## Krok 2: Załaduj dokument
-Aby rozpocząć przetwarzanie tekstu w dokumencie, wykonaj następujące kroki:
+## Warunki wstępne
 
-```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
+- Zainstalowana biblioteka Aspose.Words dla .NET.
+- Dokument programu Word z tabelą obejmującą wiele stron.
 
-// Załaduj dokument
-Document doc = new Document(dataDir + "Table spanning two pages.docx");
-```
+## Importuj przestrzenie nazw
 
-Pamiętaj, aby zastąpić „TWOJ KATALOG DOKUMENTÓW” rzeczywistą ścieżką do katalogu dokumentów i podać poprawną nazwę pliku.
-
-## Krok 3: Wyłącz podział wierszy tabeli
-Następnie wyłączymy dzielenie wierszy dla wszystkich wierszy w tabeli. Użyj następującego kodu:
+Najpierw zaimportuj niezbędne przestrzenie nazw do swojego projektu:
 
 ```csharp
-// Odzyskaj stół
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Wyłącz podział wierszy dla wszystkich wierszy w tabeli
-foreach(Row row in table.Rows)
-row.RowFormat.AllowBreakAcrossPages = false;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- W tym przypadku używamy dokumentu do pobrania pierwszej tabeli, a następnie iterujemy po wszystkich wierszach tabeli za pomocą pętli foreach. Wewnątrz pętli wyłączamy dzielenie wierszy dla każdego wiersza, ustawiając opcję`RowFormat.AllowBreakAcrossPages`własność do`false`.
+## Krok 1: Załaduj dokument
 
-## Krok 4: Zapisanie zmodyfikowanego dokumentu
-Na koniec musimy zapisać zmodyfikowany dokument z wyłączonym podziałem wierszy tabeli. Użyj następującego kodu:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
-```
-
-Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjściowego.
-
-### Przykładowy kod źródłowy dla formatu wierszy Wyłącz podział na stronach przy użyciu Aspose.Words dla .NET 
+Załaduj dokument zawierający tabelę zajmującą wiele stron.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
+```
+
+## Krok 2: Uzyskaj dostęp do tabeli
+
+Uzyskaj dostęp do pierwszej tabeli w dokumencie. Zakłada się, że tabela, którą chcesz zmodyfikować, jest pierwszą tabelą w dokumencie.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Krok 3: Wyłącz dzielenie stron dla wszystkich wierszy
+
+ Wykonaj pętlę przez każdy wiersz tabeli i ustaw opcję`AllowBreakAcrossPages`własność do`false`. Dzięki temu wiersze nie będą się rozdzielać na stronach.
+
+```csharp
 // Wyłącz dzielenie stron dla wszystkich wierszy w tabeli.
 foreach (Row row in table.Rows)
-	row.RowFormat.AllowBreakAcrossPages = false;
+    row.RowFormat.AllowBreakAcrossPages = false;
+```
+
+## Krok 4: Zapisz dokument
+
+Zapisz zmodyfikowany dokument w określonym katalogu.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
 ## Wniosek
-tym samouczku dowiedzieliśmy się, jak wyłączyć podział wiersza wielostronicowej tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz zastosować to wyłączenie do tabel w dokumentach programu Word.
+
+W tym samouczku pokazaliśmy, jak wyłączyć podziały wierszy na stronach w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Wykonując czynności opisane powyżej, możesz mieć pewność, że wiersze tabeli pozostaną nienaruszone i nie zostaną podzielone na strony, zachowując czytelność i formatowanie dokumentu.
+
+## Często zadawane pytania
+
+### Czy mogę wyłączyć podział wierszy na stronach dla określonego wiersza zamiast dla wszystkich wierszy?  
+ Tak, możesz wyłączyć podział wierszy dla określonych wierszy, uzyskując dostęp do żądanego wiersza i ustawiając go`AllowBreakAcrossPages`własność do`false`.
+
+### Czy ta metoda działa w przypadku tabel ze scalonymi komórkami?  
+ Tak, ta metoda działa w przypadku tabel ze scalonymi komórkami. Własność`AllowBreakAcrossPages` dotyczy całego wiersza, niezależnie od scalania komórek.
+
+### Czy ta metoda zadziała, jeśli tabela jest zagnieżdżona w innej tabeli?  
+Tak, możesz uzyskać dostęp do zagnieżdżonych tabel i je modyfikować w ten sam sposób. Upewnij się, że poprawnie odwołujesz się do zagnieżdżonej tabeli poprzez jej indeks lub inne właściwości.
+
+### Jak mogę sprawdzić, czy wiersz umożliwia dzielenie stron?  
+ Możesz sprawdzić, czy wiersz umożliwia dzielenie stron, uzyskując dostęp do`AllowBreakAcrossPages` własność`RowFormat` i sprawdzenie jego wartości.
+
+### Czy istnieje sposób na zastosowanie tego ustawienia do wszystkich tabel w dokumencie?  
+Tak, możesz przeglądać wszystkie tabele w dokumencie i zastosować to ustawienie do każdej z nich.

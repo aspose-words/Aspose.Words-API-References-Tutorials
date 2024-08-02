@@ -2,71 +2,121 @@
 title: نطاق علامات المستند المنظم ابدأ تعيين XML
 linktitle: نطاق علامات المستند المنظم ابدأ تعيين XML
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إعداد تعيين XML لنطاق علامات مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية ربط بيانات XML ديناميكيًا بعلامات المستندات المنظمة في Word باستخدام Aspose.Words for .NET. اتبع دليلنا خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
+## مقدمة
 
-يشرح هذا البرنامج التعليمي كيفية إعداد تعيين XML لنطاق علامات مستند منظم يبدأ في مستند Word باستخدام Aspose.Words for .NET. يسمح لك تعيين XML بعرض أجزاء محددة من مصدر بيانات XML ضمن عنصر تحكم المحتوى.
+هل سبق لك أن أردت إدراج بيانات XML ديناميكيًا في مستند Word؟ حسنًا، أنت محظوظ! Aspose.Words for .NET يجعل هذه المهمة في غاية السهولة. في هذا البرنامج التعليمي، سنتعمق في نطاق علامات المستند المنظم لبدء تعيين XML. تسمح لك هذه الميزة بربط أجزاء XML المخصصة بعناصر التحكم في المحتوى، مما يضمن تحديث محتوى مستندك بسلاسة مع بيانات XML الخاصة بك. جاهز لتحويل مستنداتك إلى روائع ديناميكية.
 
 ## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي، يجب أن يكون لديك ما يلي:
 
-- تم تثبيت Aspose.Words لمكتبة .NET.
-- المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
+قبل أن ننتقل إلى جزء البرمجة، دعونا نتأكد من أن لديك كل ما تحتاجه:
 
-## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي يوجد به المستند الخاص بك.
+1.  Aspose.Words لمكتبة .NET: تأكد من أن لديك الإصدار الأحدث. يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة أخرى تدعم لغة C#.
+3. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# أمر لا بد منه.
+4. مستند Word: نموذج مستند Word للعمل معه.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. سيضمن هذا أن لدينا إمكانية الوصول إلى كافة الفئات والأساليب المطلوبة في Aspose.Words for .NET.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Markup;
+using System.Text;
+```
+
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+كل مشروع يحتاج إلى أساس، أليس كذلك؟ هنا، قمنا بإعداد المسار إلى دليل المستندات الخاص بك.
+
+```csharp
+// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل المستند وإنشاء جزء XML
- قم بتحميل مستند Word باستخدام`Document` منشئ، وتمرير المسار إلى الوثيقة كمعلمة. قم بإنشاء جزء XML يحتوي على البيانات التي تريد عرضها ضمن علامة المستند المنظمة.
+## الخطوة 2: قم بتحميل مستند Word
+
+بعد ذلك، نقوم بتحميل مستند Word. هذا هو المستند الذي سنقوم فيه بإدراج بيانات XML الخاصة بنا.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
+```
+
+## الخطوة 3: إضافة جزء XML مخصص
+
+نحتاج إلى إنشاء جزء XML يحتوي على البيانات التي نريد إدراجها وإضافتها إلى مجموعة CustomXmlPart الخاصة بالمستند. سيكون جزء XML المخصص هذا بمثابة مصدر بيانات لعلامات المستندات المنظمة الخاصة بنا.
+
+### إنشاء جزء XML
+
+أولاً، قم بإنشاء معرف فريد لجزء XML وحدد محتواه.
+
+```csharp
+// قم بإنشاء جزء XML يحتوي على بيانات وأضفه إلى مجموعة CustomXmlPart الخاصة بالمستند.
 string xmlPartId = Guid.NewGuid().ToString("B");
 string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2</text></root>";
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
 ```
 
-## الخطوة 3: تعيين تعيين XML لعلامة المستند المنظمة
-استرداد نطاق علامات المستند المنظم بدءًا من المستند. بعد ذلك، قم بتعيين تعيين XML لعلامة المستند المنظمة لعرض جزء معين من جزء XML المخصص باستخدام تعبير XPath.
+### تحقق من محتوى جزء XML
+
+للتأكد من إضافة جزء XML بشكل صحيح، نقوم بطباعة محتواه.
+
+```csharp
+Console.WriteLine(Encoding.UTF8.GetString(xmlPart.Data));
+```
+
+## الخطوة 4: إنشاء علامة مستند منظمة
+
+علامة الوثيقة المنظمة (SDT) هي عنصر تحكم في المحتوى يمكن ربطه بجزء XML. هنا، نقوم بإنشاء SDT الذي سيعرض محتويات جزء XML المخصص الخاص بنا.
+
+أولاً، حدد موقع نطاق SDT الذي يبدأ في المستند.
 
 ```csharp
 StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
+```
+
+## الخطوة 5: تعيين تعيين XML لـ SDT
+
+حان الوقت الآن لربط جزء XML الخاص بنا بـ SDT. من خلال تعيين تعيين XML، نحدد أي جزء من بيانات XML يجب أن يتم عرضه في SDT.
+
+ يشير XPath إلى العنصر المحدد في جزء XML الذي نريد عرضه. وهنا نشير إلى الثاني`<text>` عنصر داخل`<root>` عنصر.
+
+```csharp
+// قم بتعيين تعيين لـ StructuredDocumentTag الخاص بنا
 sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل في الدليل المحدد باستخدام الملف`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
+## الخطوة 6: احفظ المستند
+
+وأخيرًا، احفظ المستند لترى التغييرات قيد التنفيذ. ستعرض الآن SDT في مستند Word محتوى XML المحدد.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-### مثال للتعليمة البرمجية المصدر لنطاق علامات المستند الهيكلي، ابدأ تعيين Xml باستخدام Aspose.Words لـ .NET 
+## خاتمة
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+وهناك لديك! لقد نجحت في تعيين جزء XML إلى علامة مستند منظمة في مستند Word باستخدام Aspose.Words for .NET. تمكنك هذه الميزة القوية من إنشاء مستندات ديناميكية تعتمد على البيانات دون عناء. سواء كنت تقوم بإنشاء تقارير أو فواتير أو أي نوع آخر من المستندات، يمكن أن يؤدي تعيين XML إلى تبسيط سير عملك بشكل كبير.
 
-	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
-	// قم بإنشاء جزء XML يحتوي على بيانات وأضفه إلى مجموعة CustomXmlPart الخاصة بالمستند.
-	string xmlPartId = Guid.NewGuid().ToString("B");
-	string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2</text></root>";
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
-	Console.WriteLine(Encoding.UTF8.GetString(xmlPart.Data));
-	// قم بإنشاء StructuredDocumentTag الذي سيعرض محتويات CustomXmlPart في المستند.
-	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
-	// إذا قمنا بتعيين تعيين لـ StructuredDocumentTag الخاص بنا،
-	// سيعرض فقط جزءًا من CustomXmlPart الذي يشير إليه XPath.
-	// سيشير XPath هذا إلى محتويات العنصر "<text>" الثاني للعنصر "<root>" الأول في CustomXmlPart الخاص بنا.
-	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
-	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
-```
+## الأسئلة الشائعة
 
-هذا كل شيء! لقد قمت بنجاح بإعداد تعيين XML لنطاق علامات مستند منظم يبدأ في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+### ما هي علامة المستند المنظمة في Word؟
+علامات المستندات المنظمة، والمعروفة أيضًا بعناصر تحكم المحتوى، هي حاويات لأنواع معينة من المحتوى في مستندات Word. ويمكن استخدامها لربط البيانات أو تقييد التحرير أو توجيه المستخدمين في إنشاء المستندات.
+
+### كيف يمكنني تحديث محتوى جزء XML ديناميكيًا؟
+ يمكنك تحديث محتوى جزء XML عن طريق تعديل ملف`xmlPartContent` السلسلة قبل إضافتها إلى المستند. ما عليك سوى تحديث السلسلة بالبيانات الجديدة وإضافتها إلى ملف`CustomXmlParts` مجموعة.
+
+### هل يمكنني ربط أجزاء XML متعددة بأدوات SDT مختلفة في نفس المستند؟
+نعم، يمكنك ربط أجزاء XML متعددة بأدوات SDT مختلفة في نفس المستند. يمكن أن يكون لكل SDT جزء XML فريد خاص بها وتعيين XPath.
+
+### هل من الممكن تعيين هياكل XML المعقدة إلى SDTs؟
+قطعاً! يمكنك تعيين بنيات XML المعقدة إلى SDTs باستخدام تعبيرات XPath التفصيلية التي تشير بدقة إلى العناصر المطلوبة داخل جزء XML.
+
+### كيف يمكنني إزالة جزء XML من المستند؟
+ يمكنك إزالة جزء XML عن طريق الاتصال بـ`Remove` الطريقة على`CustomXmlParts` جمع، ويمر`xmlPartId` لجزء XML الذي تريد إزالته.

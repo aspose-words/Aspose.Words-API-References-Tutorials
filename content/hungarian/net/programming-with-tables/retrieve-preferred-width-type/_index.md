@@ -2,64 +2,120 @@
 title: Preferált szélességtípus lekérése
 linktitle: Preferált szélességtípus lekérése
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan kérheti le egy cella típusát és preferált szélességi értékét Word-táblázatban az Aspose.Words for .NET segítségével.
+description: A lépésenkénti útmutatónkból megtudhatja, hogyan kérheti le a kívánt szélességű táblázatcellák Word-dokumentumokban az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-tables/retrieve-preferred-width-type/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban megtanuljuk, hogyan lehet lekérni a preferált szélességtípust és annak értékét egy Word-dokumentum táblázatcellájából az Aspose.Words for .NET használatával. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Az oktatóanyag végén lekérheti az előnyben részesített szélességtípust (abszolút, relatív vagy automatikus) és értékét a Word-dokumentumtáblázatok egy adott cellájához.
+Gondolkozott már azon, hogyan kérheti le a kívánt szélességű táblázatcellákat a Word-dokumentumokban az Aspose.Words for .NET használatával? Nos, jó helyen jársz! Ebben az oktatóanyagban lépésről lépésre lebontjuk a folyamatot, így olyan egyszerűvé válik, mint a pite. Akár tapasztalt fejlesztő, akár csak kezdő, ez az útmutató hasznosnak és vonzónak találja majd. Tehát merüljünk bele, és fedjük fel a Word-dokumentumok táblázatcellaszélesség-kezelésének titkait.
 
-## 1. lépés: A projekt beállítása
-1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# projektet.
-2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
+## Előfeltételek
 
-## 2. lépés: A dokumentum betöltése
-A szövegszerkesztés elindításához a dokumentummal, kövesse az alábbi lépéseket:
+Mielőtt elkezdenénk, van néhány dolog, amire szüksége lesz:
 
-```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzió van telepítve. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztési környezet: Szüksége lesz egy IDE-re, például a Visual Studiora.
+3. Alapvető C# ismerete: A C# alapjainak megértése segít a követésben.
+4.  Mintadokumentum: Készítsen Word-dokumentumot táblázatokkal, amelyeken dolgozhat. Bármilyen dokumentumot használhat, de mi úgy fogjuk hivatkozni rá`Tables.docx` ebben az oktatóanyagban.
 
-// Töltse be a dokumentumot
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Névterek importálása
 
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára, és adja meg a megfelelő fájlnevet.
-
-## 3. lépés: A kívánt szélességtípus és érték lekérése
-Ezután lekérjük a kívánt szélességtípust és annak értékét egy adott táblázatcellához. Használja a következő kódot:
+Először is importáljuk a szükséges névtereket. Ez a lépés kulcsfontosságú, mivel beállítja a környezetünket az Aspose.Words funkcióinak használatára.
 
 ```csharp
-// Vedd vissza az asztalt
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Aktiválja az automatikus asztal beállítást
-table. AllowAutoFit = true;
-
-// Az első sor első cellájának lekérése
-Cell firstCell = table.FirstRow.FirstCell;
-
-// Keresse meg a kívánt szélességtípust és annak értékét
-PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
-double value = firstCell.CellFormat.PreferredWidth.Value;
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Itt a dokumentumot használjuk az első táblázat lekérésére, majd engedélyezzük az automatikus táblázatillesztést a`AllowAutoFit` ingatlan. Ezután lekérjük a táblázat első sorának első celláját. Ebből a cellából lekérhetjük a kívánt szélességtípust a`PreferredWidth.Type` ingatlan és annak értéke a`PreferredWidth.Value` ingatlan.
+## 1. lépés: Állítsa be a dokumentumkönyvtárat
 
-### Minta forráskód a Retrieve Preferred Width Type funkcióhoz az Aspose.Words for .NET használatával 
+Mielőtt manipulálnánk a dokumentumunkat, meg kell adnunk a könyvtárat, ahol az található. Ez egy egyszerű, de elengedhetetlen lépés.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával. Ez megmondja a programunknak, hogy hol találja meg azt a fájlt, amellyel dolgozni akarunk.
+
+## 2. lépés: Töltse be a dokumentumot
+
+Ezután betöltjük a Word dokumentumot az alkalmazásunkba. Ez lehetővé teszi számunkra, hogy programozottan kommunikáljunk a tartalmával.
+
+```csharp
 Document doc = new Document(dataDir + "Tables.docx");
+```
+
+ Ez a kódsor megnyitja a`Tables.docx` dokumentumot a megadott könyvtárból. Most dokumentumunk készen áll a további műveletekre.
+
+## 3. lépés: Nyissa meg a táblázatot
+
+Most, hogy a dokumentumunk betöltődött, el kell érnünk azt a táblázatot, amellyel dolgozni szeretnénk. Az egyszerűség kedvéért a dokumentum első táblázatát célozzuk meg.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+Ez a sor az első táblázatot kéri le a dokumentumból. Ha a dokumentum több táblázatot tartalmaz, módosíthatja az indexet, hogy egy másikat válasszon.
+
+## 4. lépés: Engedélyezze az Automatikus illeszkedést a táblázathoz
+
+Ahhoz, hogy a táblázat automatikusan beállítsa oszlopait, engedélyeznünk kell az AutoFit tulajdonságot.
+
+```csharp
 table.AllowAutoFit = true;
+```
+
+ Beállítás`AllowAutoFit` nak nek`true` biztosítja, hogy a táblázat oszlopai tartalmuk alapján átméreteződjenek, dinamikus hangulatot adva a táblázatunknak.
+
+## 5. lépés: Az első cella preferált szélességtípusának lekérése
+
+Most következik az oktatóanyagunk lényege – a táblázat első cellájának preferált szélességi típusának lekérése.
+
+```csharp
 Cell firstCell = table.FirstRow.FirstCell;
 PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
+ Ezek a kódsorok elérik a táblázat első sorának első celláját, és lekérik a kívánt szélességtípust és értéket. A`PreferredWidthType` lehet`Auto`, `Percent` , vagy`Point`, jelzi a szélesség meghatározásának módját.
+
+## 6. lépés: Jelenítse meg az eredményeket
+
+Végül jelenítsük meg a letöltött információkat a konzolon.
+
+```csharp
+Console.WriteLine("Preferred Width Type: " + type);
+Console.WriteLine("Preferred Width Value: " + value);
+```
+
+Ezek a sorok kiírják a kívánt szélességtípust és értéket a konzolra, így láthatja a kódvégrehajtás eredményeit.
+
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet lekérni a preferált szélességtípust és annak értékét egy Word-dokumentum táblázatcellájából az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C# kódot, lekérheti ezeket az információkat a Word dokumentumtáblázataiban lévő egyes cellákhoz.
+
+És megvan! A kívánt szélességű táblázatcellák lekérése a Word dokumentumokban az Aspose.Words for .NET használatával egyszerű, ha kezelhető lépésekre bontja le. Az útmutató követésével könnyedén módosíthatja a tábla tulajdonságait a Word-dokumentumokban, így sokkal hatékonyabbá teheti a dokumentumkezelési feladatokat.
+
+## GYIK
+
+### Lekérhetem a kívánt szélességtípust a táblázat összes cellájához?
+
+Igen, a táblázat minden egyes celláján keresztül léphet, és külön-külön lekérheti a kívánt szélességi típusokat.
+
+###  Mik a lehetséges értékek`PreferredWidthType`?
+
+`PreferredWidthType` lehet`Auto`, `Percent` , vagy`Point`.
+
+### Lehetséges programozottan beállítani a kívánt szélességtípust?
+
+ Teljesen! A kívánt szélességtípust és értéket a gombbal állíthatja be`PreferredWidth` tulajdona a`CellFormat` osztály.
+
+### Használhatom ezt a módszert a Wordtől eltérő dokumentumok táblázataihoz?
+
+Ez az oktatóanyag kifejezetten a Word dokumentumokra vonatkozik. Más dokumentumtípusokhoz a megfelelő Aspose könyvtárat kell használnia.
+
+### Szükségem van licencre az Aspose.Words for .NET használatához?
+
+ Igen, az Aspose.Words for .NET licencelt termék. Ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/) vagy ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).

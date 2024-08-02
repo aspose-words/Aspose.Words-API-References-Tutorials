@@ -11,7 +11,7 @@ url: /ko/net/programming-with-digital-signatures/signing-existing-signature-line
 
 안녕하세요! 디지털 문서에 서명해야 했지만 그것이 다소 번거로웠던 적이 있습니까? 오늘은 Aspose.Words for .NET을 사용하여 Word 문서의 기존 서명란에 쉽게 서명할 수 있는 방법을 알아보겠습니다. 이 튜토리얼에서는 프로세스를 단계별로 안내하여 이 작업을 즉시 마스터할 수 있도록 합니다.
 
-## 전제조건
+## 전제 조건
 
 핵심적인 세부 사항을 살펴보기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 

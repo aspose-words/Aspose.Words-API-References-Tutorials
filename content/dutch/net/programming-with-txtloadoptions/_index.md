@@ -16,6 +16,6 @@ Door Aspose.Words te gebruiken, kunt u de verwerkingstaken van Word-documenten e
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Detecteer nummering met witruimtes](./detect-numbering-with-whitespaces/) | Leer hoe u lijstnummers met spaties kunt detecteren in Aspose.Words voor .NET. Verbeter eenvoudig de structuur van uw documenten. |
-| [Opties voor omgaan met spaties](./handle-spaces-options/) | Leer hoe u spaties in uw TXT-documenten beheert met Aspose.Words voor .NET. Verwijder onnodige spaties en verbeter de leesbaarheid. |
-| [Documenttekstrichting](./document-text-direction/) | Leer hoe u de tekstrichting in uw documenten kunt opgeven met Aspose.Words voor .NET. Verbeter de weergave voor talen die van rechts naar links worden geschreven. Bekijk nu de volledige tutorial. |
+| [Detecteer nummering met witruimtes](./detect-numbering-with-whitespaces/) | Ontdek hoe u Aspose.Words voor .NET kunt gebruiken om nummering met spaties in platte tekstdocumenten te detecteren en ervoor te zorgen dat uw lijsten correct worden herkend. |
+| [Opties voor omgaan met spaties](./handle-spaces-options/) | Leer hoe u omgaat met voorloop- en volgspaties in tekstdocumenten met Aspose.Words voor .NET. Deze zelfstudie biedt een handleiding voor het opschonen van tekstopmaak. |
+| [Documenttekstrichting](./document-text-direction/) | Leer met deze stapsgewijze handleiding hoe u de tekstrichting van een document in Word instelt met behulp van Aspose.Words voor .NET. Perfect voor het verwerken van talen van rechts naar links. |

@@ -61,7 +61,7 @@ ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 
 ## ขั้นตอนที่ 4: ใช้การโทรกลับการบันทึกหน้า
 
-ตอนนี้ ลองใช้คลาสโทรกลับที่จัดการวิธีการบันทึกแต่ละหน้า
+ตอนนี้ ลองใช้คลาสโทรกลับที่จัดการวิธีการบันทึกแต่ละเพจ
 
 ```csharp
 private class HandlePageSavingCallback : IPageSavingCallback

@@ -89,7 +89,7 @@ doc.FontSettings = fontSettings;
 
 ## Steg 6: Spara dokumentet
 
-Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna och hanterat eventuella teckensnittsersättningar. Spara den i ett valfritt format; här sparar vi den som PDF.
+Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna och hanterat eventuella teckensnittsersättningar. Spara den i ett valfritt format; här sparar vi den som en PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");

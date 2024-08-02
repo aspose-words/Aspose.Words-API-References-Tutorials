@@ -17,7 +17,7 @@ Antes de mergulhar nas etapas, certifique-se de ter o seguinte:
 
 1. Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Se não, você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: este tutorial pressupõe que você tenha um ambiente de desenvolvimento .NET configurado (como o Visual Studio) onde você pode escrever e executar código C#.
-3. Compreensão básica de programação .NET: Familiaridade com conceitos básicos de programação .NET e sintaxe C# será útil.
+3. Compreensão básica da programação .NET: A familiaridade com os conceitos básicos de programação .NET e a sintaxe C# será útil.
 4. Documento Word com gráficos WMF: Você precisará de um documento Word contendo gráficos WMF. Você pode usar seu próprio documento ou criar um para teste.
 
 ## Importar namespaces

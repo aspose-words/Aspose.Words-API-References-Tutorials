@@ -87,7 +87,7 @@ catch (Exception e)
 ### ¿Por qué necesito solicitar una licencia para Aspose.Words?
 La aplicación de una licencia desbloquea todas las funciones de Aspose.Words, eliminando cualquier limitación o marca de agua.
 
-### ¿Puedo usar una licencia de prueba?
+### ¿Puedo utilizar una licencia de prueba?
  Sí, puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para fines de evaluación.
 
 ### ¿Qué pasa si mi archivo de licencia está dañado?

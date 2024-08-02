@@ -8,7 +8,7 @@ weight: 10
 url: /id/java/word-processing/
 ---
 
-Aspose.Words untuk Java adalah perpustakaan yang kuat dan serbaguna yang memungkinkan pengembang Java membuat, mengedit, memanipulasi, dan mengelola dokumen Microsoft Word secara terprogram. Dengan Aspose.Words, pengembang dapat dengan mudah melakukan berbagai tugas pemrosesan kata, seperti membuat laporan, mengotomatiskan pembuatan dokumen, dan mengekstrak data dari file.
+Aspose.Words untuk Java adalah perpustakaan yang kuat dan serbaguna yang memungkinkan pengembang Java membuat, mengedit, memanipulasi, dan mengelola dokumen Microsoft Word secara terprogram. Dengan Aspose.Words, pengembang dapat dengan mudah melakukan berbagai tugas pemrosesan kata, seperti membuat laporan, mengotomatiskan pembuatan dokumen, dan mengekstraksi data dari file.
 
 Kumpulan API perpustakaan yang komprehensif memberi pengembang kontrol menyeluruh atas konten dan pemformatan dokumen Word. Pengembang dapat menggunakan Aspose.Words untuk menambahkan teks, gambar, tabel, dan bagan ke dokumen, serta menerapkan berbagai gaya dan opsi pemformatan. Aspose.Words juga mendukung perlindungan dokumen, memungkinkan pengembang mengamankan informasi sensitif di dalam dokumen.
 

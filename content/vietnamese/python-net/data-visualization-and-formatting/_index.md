@@ -29,7 +29,7 @@ Trong suốt loạt bài hướng dẫn này, chúng tôi sẽ hướng dẫn b�
 - Định dạng tùy chỉnh: Tìm hiểu cách áp dụng định dạng tùy chỉnh cho phù hợp với yêu cầu tài liệu cụ thể.
 - Tích hợp Python và .NET: Hưởng lợi từ các hướng dẫn phục vụ cho cả nhà phát triển Python và .NET.
 
-Đến cuối loạt bài này, bạn sẽ thành thạo trong việc chuyển đổi dữ liệu thành các tài liệu và báo cáo trực quan hấp dẫn. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, những hướng dẫn này sẽ cung cấp cho bạn kiến thức và kỹ năng bạn cần để đạt được định dạng và trực quan hóa dữ liệu có tác động bằng cách sử dụng Aspose.Words.
+Đến cuối loạt bài này, bạn sẽ thành thạo trong việc chuyển đổi dữ liệu thành các tài liệu và báo cáo trực quan hấp dẫn. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, những hướng dẫn này sẽ cung cấp cho bạn kiến thức và kỹ năng bạn cần để đạt được định dạng và trực quan hóa dữ liệu hiệu quả bằng Aspose.Words.
 
 ## Hướng dẫn trực quan hóa và định dạng dữ liệu
 ### [Trực quan hóa dữ liệu bằng biểu đồ tài liệu động](./visualize-data-document-charts/)

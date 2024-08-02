@@ -216,7 +216,7 @@ System.out.println(table.getLastRow().getLastCell().getRange().getText());
 ## Képek kibontása fájlba
 
 ```java
-// Java kódminta képek fájlba bontásához
+// Java kódminta képek fájlokba történő kibontásához
 Document doc = new Document("Your Directory Path" + "Images.docx");
 NodeCollection shapes = doc.getChildNodes(NodeType.SHAPE, true);
 int imageIndex = 0;

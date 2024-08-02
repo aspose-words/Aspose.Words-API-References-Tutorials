@@ -21,7 +21,7 @@ Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## Schritt 2: Erstellen und formatieren Sie das Dokument
+## Schritt 2: Erstellen und Formatieren des Dokuments
  Erstellen Sie eine Instanz des`Document` Klasse und die`DocumentBuilder` Klasse, um das Dokument zu erstellen. Verwenden Sie die`Font` Eigentum der`DocumentBuilder` um auf die Schriftformatierungseigenschaften zuzugreifen.
 
 ```csharp

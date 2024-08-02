@@ -70,7 +70,7 @@ AppendBookmarkedText(importer, srcBookmark, dstNode);
 
 ## Steg 5: Definiera metoden AppendBookmarkedText
 
-Här händer magin. Definiera en metod för att hantera kopieringen av den bokmärkta texten:
+Det är här magin händer. Definiera en metod för att hantera kopieringen av den bokmärkta texten:
 
 ```csharp
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)

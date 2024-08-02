@@ -16,7 +16,7 @@ Này! Nếu bạn cần sửa đổi thiết lập trang trên nhiều phần tr
 Trước khi đi sâu vào, hãy đảm bảo chúng ta có mọi thứ mình cần:
 
 1. Kiến thức cơ bản về C#: Cần phải làm quen với cú pháp và khái niệm C#.
-2.  Aspose.Words cho .NET: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/) . Nếu bạn chỉ đang thử nó, một[dùng thử miễn phí](https://releases.aspose.com/) có sẵn.
+2.  Aspose.Words cho .NET: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/) Nếu bạn chỉ đang thử nó, một[dùng thử miễn phí](https://releases.aspose.com/) có sẵn.
 3. Visual Studio: Mọi phiên bản gần đây đều hoạt động nhưng nên sử dụng phiên bản mới nhất để có trải nghiệm tốt nhất.
 4. .NET Framework: Đảm bảo bạn đã cài đặt nó trên hệ thống của mình.
 
@@ -89,7 +89,7 @@ Dòng mã này lưu tài liệu vào thư mục được chỉ định với tê
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã sửa đổi thành công thiết lập trang cho tất cả các phần trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đã hướng dẫn bạn cách tạo tài liệu, thêm các phần và điều chỉnh thống nhất cách thiết lập trang của chúng. Aspose.Words cung cấp một bộ tính năng phong phú, vì vậy hãy thoải mái khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để có những khả năng nâng cao hơn.
+ Và bạn có nó rồi đấy! Bạn đã sửa đổi thành công thiết lập trang cho tất cả các phần trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đã hướng dẫn bạn cách tạo tài liệu, thêm các phần và điều chỉnh thống nhất cách thiết lập trang của chúng. Aspose.Words cung cấp một bộ tính năng phong phú, vì vậy hãy thoải mái khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để có những khả năng nâng cao hơn.
 
 ## Câu hỏi thường gặp
 

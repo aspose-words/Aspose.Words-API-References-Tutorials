@@ -2,57 +2,41 @@
 title: Word 文書の目次タブ位置を変更する
 linktitle: Word 文書の目次タブ位置を変更する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書の目次タブを変更する方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書の目次タブ ストップを変更する方法を学びます。このステップ バイ ステップ ガイドは、プロフェッショナルな外観の目次を作成するのに役立ちます。
 type: docs
 weight: 10
 url: /ja/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words for .NET は、C# アプリケーションで Word 文書を作成、編集、操作するための強力なライブラリです。Aspose.Words が提供する機能の中には、Word 文書の目次で使用されるタブを変更する機能があります。このガイドでは、Aspose.Words for .NET の C# ソース コードを使用して、文書の目次のタブを変更する方法を説明します。
+## 導入
 
-## Aspose.Words ライブラリを理解する
+Word 文書の目次 (TOC) を華やかにするにはどうしたらよいか考えたことはありますか? プロフェッショナルなタッチを出すために、タブ ストップを完璧に揃えたいとお考えかもしれません。ここで詳しく説明します。今日は、Aspose.Words for .NET を使用して TOC タブ ストップを変更する方法について詳しく説明します。最後までお読みいただければ、TOC をおしゃれですっきりと見せるためのノウハウをすべて習得できることをお約束します。
 
-コードに進む前に、.NET 用の Aspose.Words ライブラリを理解することが重要です。Aspose.Words は、Word ドキュメントでの Words 処理を簡単かつ効率的にする人気のライブラリです。目次タブの変更など、Word ドキュメントの作成、編集、操作のための幅広い機能を提供します。
+## 前提条件
 
-## 目次を含むドキュメントを読み込む
+始める前に、必要なものがすべて揃っていることを確認しましょう。
 
-最初のステップは、変更する目次を含む Word 文書を読み込むことです。Document クラスを使用して、ソース ファイルから文書を読み込みます。次に例を示します。
+1.  Aspose.Words for .NET: 次のようなことができます[ここからダウンロード](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio または C# 互換の IDE。
+3. Word 文書: 具体的には、目次を含む文書。
 
-```csharp
-Document doc = new Document(dataDir + "Table of contents.docx");
-```
+全部理解できましたか？素晴らしい！始めましょう。
 
-この例では、ドキュメント ディレクトリにあるドキュメント「Table of Contents.docx」を読み込みます。
+## 名前空間のインポート
 
-## 目次のタブを変更する
-
-ドキュメントが読み込まれたら、ドキュメントの各段落を調べて、目次 (TOC) 結果スタイルを使用してフォーマットされているかどうかを確認します。フォーマットされている場合は、ページ番号を揃えるために使用されるタブを変更します。方法は次のとおりです。
+まず最初に、必要な名前空間をインポートする必要があります。これは、プロジェクトを開始する前にツールを梱包するようなものです。
 
 ```csharp
-foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
-{
-     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
-         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
-     {
-         TabStop tab = para.ParagraphFormat.TabStops[0];
-         para.ParagraphFormat.TabStops.RemoveByPosition(tab.Position);
-         para.ParagraphFormat.TabStops.Add(tab.Position - 50, tab.Alignment, tab.Leader);
-     }
-}
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-この例では、ループを使用してドキュメント内の各段落をループします。次に、段落が目次結果 (TOC) スタイルを使用してフォーマットされているかどうかを確認します。フォーマットされている場合は、この段落で使用されている最初のタブにアクセスし、古いタブを削除して位置を変更した新しいタブを追加してタブを変更します。
+このプロセスを、シンプルで理解しやすいステップに分解してみましょう。ドキュメントの読み込み、目次タブ ストップの変更、更新されたドキュメントの保存について説明します。
 
-## 変更した文書を保存する
+## ステップ1: ドキュメントを読み込む
 
-目次のタブに必要な変更を加えたら、Document クラスの Save メソッドを使用して変更したドキュメントを保存できます。次に例を示します。
+なぜでしょうか? 変更したい目次が含まれている Word 文書にアクセスする必要があるからです。
 
-```csharp
-doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
-```
-
-この例では、変更されたドキュメントを「WorkingWithTableOfContent.ChangeTocTabStops.docx」として保存します。
-
-### Aspose.Words for .NET の「目次タブの編集」機能のサンプル ソース コード
+どうやって？始めるための簡単なコード スニペットを次に示します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -60,50 +44,34 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 //目次を含む文書を読み込む
 Document doc = new Document(dataDir + "Table of contents.docx");
-
-//目次のタブを変更する
-foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
-{
-     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
-         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
-     {
-         TabStop tab = para.ParagraphFormat.TabStops[0];
-         para.ParagraphFormat.TabStops.RemoveByPosition(tab.Position);
-         para.ParagraphFormat.TabStops.Add(tab.Position - 50, tab.Alignment, tab.Leader);
-     }
-}
-
-//変更したドキュメントを保存する
-doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## 結論
+ドキュメントがケーキのようなもので、これからアイシングを加えるところだと想像してください。最初のステップは、ケーキを箱から取り出すことです。
 
-このガイドでは、提供されている C# ソース コードを使用して、Aspose.Words for .NET で Word 文書の目次のタブを変更する方法について説明しました。提供されている手順に従うことで、C# アプリケーションで Word 文書の目次のタブを簡単にカスタマイズできます。Aspose.Words は、文書のスタイルと書式設定を操作するための優れた柔軟性とパワーを提供し、魅力的でプロフェッショナルな Word 文書を作成できます。
+## ステップ2: TOC段落を特定する
 
-### Word 文書の目次タブ ストップの変更に関する FAQ
+なぜでしょうか? TOC を構成する段落を正確に特定する必要があるからです。 
 
-#### Q: Aspose.Words for .NET の「Word 文書の目次タブ ストップの変更」機能の目的は何ですか?
-
-A: Aspose.Words for .NET の「Word 文書の目次タブ ストップ変更」機能を使用すると、Word 文書の目次で使用されるタブ ストップを変更できます。これにより、目次内のページ番号と対応する見出しの配置と位置をカスタマイズできます。
-
-#### Q: Aspose.Words for .NET とは何ですか?
-
-A: Aspose.Words for .NET は、.NET アプリケーションで Word 文書を処理するために設計された強力なライブラリです。C# またはその他の .NET 言語を使用してプログラムで Word 文書を作成、編集、操作、変換するための包括的な機能を提供します。
-
-#### Q: Aspose.Words for .NET を使用して目次を含む Word 文書を読み込むにはどうすればよいでしょうか?
-
- A: Aspose.Words for .NETを使用して目次を含むWord文書を読み込むには、`Document`クラスとそのコンストラクタ。ドキュメントのファイルパスを指定すると、`Document`オブジェクト。次に例を示します。
+方法は？段落をループしてスタイルを確認します。
 
 ```csharp
-Document doc = new Document(dataDir + "Table of contents.docx");
+foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
+{
+    if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
+        para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
+    {
+        //目次の段落が見つかりました
+    }
+}
 ```
 
-このコード スニペットは、指定されたディレクトリにあるドキュメント「Table of Contents.docx」を読み込みます。
+群衆をスキャンして友達を見つけるようなものだと考えてください。ここでは、目次エントリとしてスタイル設定された段落を探します。
 
-#### Q: Aspose.Words for .NET を使用して目次で使用されるタブを変更するにはどうすればよいですか?
+## ステップ3: タブストップを変更する
 
-A: ドキュメントが読み込まれたら、ドキュメントの各段落を反復処理して、目次 (TOC) 結果スタイルを使用して書式設定されているかどうかを確認できます。段落が TOC スタイルとして書式設定されている場合は、ページ番号を揃えるために使用されるタブを変更できます。Aspose.Words for .NET では、`ParagraphFormat`各段落のプロパティを使用してタブ ストップを取得および変更します。次に例を示します。
+なぜでしょうか? ここで魔法が起こります。タブ ストップを変更すると、目次がよりすっきりした外観になります。
+
+方法は? 既存のタブ ストップを削除し、変更された位置に新しいタブ ストップを追加します。
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -118,34 +86,38 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-このコードでは、ループはドキュメント内の各段落を反復処理します。段落に TOC スタイルがある場合は、その段落で使用されている最初のタブ ストップにアクセスしてそれを削除し、位置を変更した新しいタブ ストップを追加します。
+それは、リビングルームの家具をちょうどいい感じになるまで調整するようなものです。私たちは、完璧さを求めてタブ ストップを微調整しています。
 
-#### Q: Aspose.Words for .NET を使用して、目次内の複数レベルのタブを変更できますか?
+## ステップ4: 変更したドキュメントを保存する
 
-A: はい、Aspose.Words for .NET を使用すると、目次の複数のレベルのタブを変更できます。各段落を反復処理して TOC スタイルを確認することで、各レベルのタブを個別に変更できます。目次の目的のレベルにアクセスし、それに応じてタブ ストップを調整できます。
+なぜでしょうか? あなたの努力がすべて保存され、閲覧または共有できるようにするためです。
 
-#### Q: Aspose.Words for .NET を使用して目次のタブを変更した後、変更したドキュメントを保存するにはどうすればよいですか?
-
- A: 目次のタブに必要な変更を加えた後、`Save`方法の`Document`クラス。出力ドキュメントのファイルパスと名前をパラメータとして指定します。`Save`方法。次に例を示します。
+方法は？ 元のドキュメントをそのまま残すために、新しい名前でドキュメントを保存します。
 
 ```csharp
+//変更したドキュメントを保存する
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-このコードは、変更されたドキュメントを「WorkingWithTableOfContent.ChangeTocTabStops.docx」として保存します。
+すると、出来上がりです。TOC のタブ ストップが希望どおりの位置に設定されます。
 
-#### Q: Aspose.Words for .NET を使用して目次の他の側面をカスタマイズできますか?
+## 結論
 
-A: はい、Aspose.Words for .NET を使用すると、目次のさまざまな側面をカスタマイズできます。タブの変更以外にも、目次のエントリやページ番号のフォント スタイル、サイズ、配置、その他の書式設定プロパティを変更できます。さらに、対応する見出しのインデント、間隔、書式設定を調整できます。
+Aspose.Words for .NET を使用して Word 文書の TOC タブ ストップを変更するのは、一度分解してしまえば簡単です。文書を読み込み、TOC 段落を識別し、タブ ストップを変更して文書を保存することで、洗練されたプロフェッショナルな外観を実現できます。練習を重ねれば完璧になります。さまざまなタブ ストップ位置を試して、希望どおりのレイアウトを実現してください。
 
-#### Q: Aspose.Words for .NET を使用して目次のタブ配置とリーダー文字を変更できますか?
+## よくある質問
 
-A: はい、Aspose.Words for .NET を使用して、目次のタブ配置とリーダー文字を変更できます。タブ ストップにアクセスし、その配置とリーダーのプロパティを調整することで、目次のページ番号と対応する見出しの配置と外観を制御できます。
+### 異なる TOC レベルのタブ ストップを個別に変更できますか?
+はい、できます。それぞれの特定の TOC レベル (Toc1、Toc2 など) を確認し、それに応じて調整するだけです。
 
-#### Q: Aspose.Words for .NET は、Word 文書内の他のスタイルや書式の変更をサポートしていますか?
+### ドキュメントに複数の目次がある場合はどうなりますか?
+コードはすべての TOC スタイルの段落をスキャンし、ドキュメント内に存在するすべての TOC を変更します。
 
-A: はい、Aspose.Words for .NET は、Word 文書のさまざまなスタイルや書式を変更するための広範なサポートを提供します。段落、見出し、表、リストなどのさまざまな要素のスタイルを変更できます。フォント、色、配置、インデント、間隔、その他の書式設定の側面を、要件に応じて変更できます。
+### TOC エントリに複数のタブ ストップを追加することは可能ですか?
+もちろんです！タブストップを必要な数だけ追加するには、`para.ParagraphFormat.TabStops`コレクション。
 
-#### Q: Aspose.Words for .NET を使用して、既存の Word 文書の目次のタブを変更できますか?
+### タブ ストップの配置とリーダー スタイルを変更できますか?
+はい、新しいタブ ストップを追加するときに、異なる配置とリーダー スタイルを指定できます。
 
-A: はい、Aspose.Words for .NET を使用して、既存の Word ドキュメントの目次のタブを変更できます。ドキュメントを読み込み、段落を反復処理し、タブ ストップに必要な変更を加えることで、目次のタブを更新できます。最後に、ドキュメントを保存して変更を適用します。
+### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
+はい、試用期間を超えてAspose.Words for .NETを使用するには有効なライセンスが必要です。[一時ライセンス](https://purchase.aspose.com/temporary-license/)または[1つ買う](https://purchase.aspose.com/buy).

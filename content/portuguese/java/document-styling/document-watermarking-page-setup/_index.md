@@ -21,20 +21,20 @@ Adicionar marcas d'água a documentos pode ser crucial para promover a marca ou 
 // Carregue o documento
 Document doc = new Document("document.docx");
 
-// Crie uma marca d'água
+// Crie uma marca d’água
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(300);
 watermark.setHeight(100);
 
-// Posicione a marca d'água
+// Posicione a marca d’água
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
 watermark.setWrapType(WrapType.NONE);
 watermark.setVerticalAlignment(VerticalAlignment.CENTER);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
 
-// Insira a marca d'água
+// Insira a marca d’água
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 // Salve o documento
@@ -126,7 +126,7 @@ A fonte padrão para marcas d'água é Calibri com tamanho de fonte 36.
 
 ### Como posso adicionar números de página a partir de uma página específica?
 
-Você pode conseguir isso definindo o número da página inicial em seu documento da seguinte forma:
+Você pode conseguir isso definindo o número da página inicial em seu documento da seguinte maneira:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageStartingNumber(5);
@@ -138,6 +138,6 @@ Você pode centralizar o texto no cabeçalho ou rodapé usando o método setAlig
 
 ## Conclusão
 
-Neste guia extenso, exploramos a arte da marca d’água de documentos e configuração de páginas usando Aspose.Words para Java. Armado com os trechos de código-fonte e insights fornecidos, agora você possui as ferramentas para manipular e formatar seus documentos com sutileza. Aspose.Words for Java permite que você crie documentos profissionais de marca, adaptados às suas especificações exatas.
+Neste guia extenso, exploramos a arte da marca d'água de documentos e configuração de páginas usando Aspose.Words para Java. Armado com os trechos de código-fonte e insights fornecidos, agora você possui as ferramentas para manipular e formatar seus documentos com sutileza. Aspose.Words for Java permite que você crie documentos profissionais de marca, adaptados às suas especificações exatas.
 
 Dominar a manipulação de documentos é uma habilidade valiosa para desenvolvedores, e Aspose.Words for Java é seu companheiro confiável nesta jornada. Comece a criar documentos impressionantes hoje mesmo!

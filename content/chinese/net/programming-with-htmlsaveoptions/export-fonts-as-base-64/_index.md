@@ -34,7 +34,7 @@ using Aspose.Words.Saving;
 
 ### 1.1 创建新项目
 
-打开 Visual Studio 并创建一个新的控制台应用程序项目。将其命名为“ExportFontsBase64”等有意义的名称。
+打开 Visual Studio 并创建一个新的控制台应用程序项目。将其命名为有意义的名称，例如“ExportFontsBase64”。
 
 ### 1.2 安装 Aspose.Words
 

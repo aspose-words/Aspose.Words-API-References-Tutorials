@@ -45,7 +45,7 @@ Nakonec můžeme dokument uložit v požadovaném formátu.
 // K přidání obsahu do dokumentu použijte tvůrce dokumentů.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Vložit hypertextový odkaz.
+// Vložit hypertextový odkaz.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", nepravda);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ gratuluji! Nyní jste se naučili, jak používat funkci "Autolink" s Aspose.Wor
 
 #### Otázka: Je možné upravit zobrazovaný text automatického odkazu v Aspose.Words?
 
- Odpověď: Ano, můžete upravit zobrazovaný text automatického odkazu v Aspose.Words. Místo použití adresy URL jako zobrazovaného textu můžete použít jakýkoli jiný text nahrazením obsahu mezi`<a>` značky. Můžete například použít`<a href="https://www.aspose.com">Click here</a>` pro zobrazení textu „Klikněte sem“ jako automatického odkazu.
+ Odpověď: Ano, můžete upravit zobrazovaný text automatického odkazu v Aspose.Words. Místo použití adresy URL jako zobrazovaného textu můžete použít jakýkoli jiný text nahrazením obsahu mezi`<a>` značky. Můžete například použít`<a href="https://www.aspose.com">Click here</a>`pro zobrazení textu „Klikněte sem“ jako automatického odkazu.
 
 #### Otázka: Jak mohu přidat další atributy k automatickému odkazu v Aspose.Words?
 
-A: Chcete-li přidat další atributy k automatickému odkazu v Aspose.Words, můžete použít další atributy HTML uvnitř`<a>` štítek. Můžete například použít`<a href="https://www.aspose.com" target="_blank">Link</a>` pro otevření odkazu v novém okně nebo na kartě pomocí` attribute target="_blank"`.
+ A: Chcete-li přidat další atributy k automatickému odkazu v Aspose.Words, můžete použít další atributy HTML uvnitř`<a>` štítek. Můžete například použít`<a href="https://www.aspose.com" target="_blank">Link</a>` pro otevření odkazu v novém okně nebo na kartě pomocí` attribute target="_blank"`.

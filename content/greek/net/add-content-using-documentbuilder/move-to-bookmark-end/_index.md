@@ -100,7 +100,7 @@ bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEn
 builder.MoveToBookmark("MyBookmark1", false, true);
 ```
 
-## Βήμα 5: Εισαγάγετε κείμενο στο τέλος του σελιδοδείκτη
+## Βήμα 5: Εισαγάγετε κείμενο στο τέλος σελιδοδεικτών
 
 
 Μόλις φτάσετε στο τέλος του σελιδοδείκτη, μπορείτε να εισαγάγετε κείμενο ή οποιοδήποτε άλλο περιεχόμενο. Ας προσθέσουμε μια απλή γραμμή κειμένου:

@@ -61,7 +61,7 @@ Ahora que tenemos nuestro documento cargado, analicemos su estructura:
 // Crear un visitante de documentos
 DocumentVisitor visitor = new DocumentVisitor();
 
-// Recorrer el documento.
+// Recorrer el documento
 doc.accept(visitor);
 
 //El contenido extraído ahora está disponible para el visitante.

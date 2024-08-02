@@ -16,8 +16,8 @@ Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programist
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Style dostępu](./access-styles/) | Dowiedz się, jak uzyskać dostęp do stylów dokumentów za pomocą Aspose.Words dla .NET. Kompletny samouczek dotyczący manipulowania stylami dokumentów. |
-| [Skopiuj style](./copy-styles/) | Dowiedz się, jak kopiować style między dokumentami za pomocą Aspose.Words dla .NET. |
-| [Uzyskaj właściwości motywu](./get-theme-properties/) | Przeglądaj właściwości motywu dokumentu za pomocą Aspose.Words dla .NET. Dostosuj style i kolory, aby uzyskać niepowtarzalny wygląd. |
-| [Ustaw właściwości motywu](./set-theme-properties/) | Dowiedz się, jak dostosować wygląd swoich dokumentów, zmieniając właściwości motywu za pomocą Aspose.Words dla .NET. Uzyskaj profesjonalne i atrakcyjne rezultaty. |
-| [Wstaw separator stylu](./insert-style-separator/) | Dowiedz się, jak tworzyć dokumenty z niestandardowymi stylami i wstawiać separatory stylów w celu uzyskania precyzyjnego, profesjonalnego formatowania. |
+| [Uzyskaj style dokumentu w programie Word](./access-styles/) | Dowiedz się, jak uzyskać style dokumentu w programie Word przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego samouczka krok po kroku. Uzyskaj dostęp do stylów i zarządzaj nimi programowo w aplikacjach .NET. |
+| [Skopiuj style dokumentu programu Word](./copy-styles/) | Dowiedz się, jak kopiować style dokumentów programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bez wysiłku zapewnić spójne formatowanie dokumentu. |
+| [Uzyskaj właściwości motywu dokumentu w programie Word](./get-theme-properties/) | Dowiedz się, jak uzyskać dostęp do właściwości motywu dokumentu i zarządzać nimi w programie Word przy użyciu Aspose.Words dla .NET. Dowiedz się, jak odzyskiwać czcionki i kolory, korzystając z naszego przewodnika. |
+| [Ustaw właściwości motywu w dokumencie programu Word](./set-theme-properties/) | Dowiedz się, jak ustawić właściwości motywu w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby łatwo dostosować czcionki i kolory. |
+| [IIWstaw separator stylu dokumentu w programie Word](./insert-style-separator/) | Dowiedz się, jak wstawić separator stylu dokumentu w programie Word przy użyciu Aspose.Words dla .NET. Ten przewodnik zawiera instrukcje i wskazówki dotyczące zarządzania stylami dokumentów. |

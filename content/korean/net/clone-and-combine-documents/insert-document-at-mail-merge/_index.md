@@ -11,11 +11,11 @@ url: /ko/net/clone-and-combine-documents/insert-document-at-mail-merge/
 
 .NET용 Aspose.Words를 사용하여 문서 자동화의 세계에 오신 것을 환영합니다! 메일 병합 작업 중에 기본 문서 내의 특정 필드에 문서를 동적으로 삽입하는 방법에 대해 궁금한 적이 있습니까? 글쎄, 당신은 바로 이곳에 있습니다. 이 튜토리얼은 Aspose.Words for .NET을 사용하여 편지 병합 필드에 문서를 삽입하는 과정을 단계별로 안내합니다. 마치 퍼즐을 맞춰가는 것과 같으며 각 조각이 완벽하게 들어맞습니다. 그럼, 뛰어 들어 봅시다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
-1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기서 최신 버전을 다운로드하세요](https://releases.aspose.com/words/net/) . 라이센스를 구매해야 하는 경우 그렇게 할 수 있습니다.[여기](https://purchase.aspose.com/buy) . 또는[임시면허](https://purchase.aspose.com/temporary-license/) 아니면[무료 시험판](https://releases.aspose.com/).
+1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기서 최신 버전을 다운로드하세요](https://releases.aspose.com/words/net/) . 라이센스를 구매해야 하는 경우 그렇게 할 수 있습니다.[여기](https://purchase.aspose.com/buy) . 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 아니면[무료 시험판](https://releases.aspose.com/).
 2. 개발 환경: Visual Studio 또는 기타 C# IDE.
 3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 이 튜토리얼을 쉽게 만들 수 있습니다.
 

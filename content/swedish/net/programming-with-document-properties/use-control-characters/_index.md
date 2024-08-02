@@ -64,7 +64,7 @@ string newText = "example";
 
 ### Byt ut texten
 
-Låt oss nu ersätta den gamla texten med den nya. Här händer magin.
+Låt oss nu ersätta den gamla texten med den nya. Det är här magin händer.
 
 ```csharp
 doc.Range.Replace(oldText, newText, new FindReplaceOptions());

@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## introduzione
 
 Nel mondo dello sviluppo .NET, la gestione e la manipolazione dei documenti è un compito cruciale, che spesso richiede una gestione efficiente dei collegamenti ipertestuali all'interno dei documenti. Aspose.Words per .NET offre potenti funzionalità per sostituire perfettamente i collegamenti ipertestuali, garantendo che i tuoi documenti siano collegati dinamicamente alle risorse giuste. Questo tutorial approfondisce come è possibile ottenere questo risultato utilizzando Aspose.Words per .NET, guidandoti passo dopo passo attraverso il processo.
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 Sostituire i collegamenti ipertestuali nei documenti utilizzando Aspose.Words per .NET è semplice e migliora la natura dinamica dei tuoi documenti. Sia che si tratti di aggiornare gli URL o di trasformare il contenuto dei documenti a livello di codice, Aspose.Words semplifica queste attività, garantendo una gestione efficiente dei documenti.
 
-## Domande frequenti (FAQ)
+## Domande frequenti
 
 ### Aspose.Words per .NET può gestire strutture di documenti complesse?
 Sì, Aspose.Words supporta strutture complesse come tabelle, immagini e collegamenti ipertestuali senza problemi.

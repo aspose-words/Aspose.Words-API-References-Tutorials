@@ -9,7 +9,7 @@ url: /vi/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ tự hỏi làm cách nào để kiểm soát ngưỡng nhị phân TIFF trong tài liệu Word của mình chưa? Bạn đang ở đúng nơi! Hướng dẫn này sẽ hướng dẫn bạn từng bước quy trình bằng cách sử dụng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới bắt đầu, bạn sẽ thấy hướng dẫn này hấp dẫn, dễ làm theo và có tất cả thông tin chi tiết bạn cần để hoàn thành công việc. Sẵn sàng để đi sâu vào? Đi nào!
+Bạn đã bao giờ tự hỏi làm cách nào để kiểm soát ngưỡng nhị phân TIFF trong tài liệu Word của mình chưa? Bạn đang ở đúng nơi! Hướng dẫn này sẽ hướng dẫn bạn từng bước quy trình bằng cách sử dụng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, bạn sẽ thấy hướng dẫn này hấp dẫn, dễ làm theo và có tất cả thông tin chi tiết bạn cần để hoàn thành công việc. Sẵn sàng để đi sâu vào? Đi nào!
 
 ## Điều kiện tiên quyết
 
@@ -85,7 +85,7 @@ Và bạn có nó rồi đấy! Bạn vừa học cách hiển thị kiểm soá
 
 ## Câu hỏi thường gặp
 
-### Nhị phân hóa TIFF là gì?
+### Nhị phân TIFF là gì?
 Nhị phân hóa TIFF là quá trình chuyển đổi hình ảnh thang độ xám hoặc màu thành hình ảnh đen trắng (nhị phân).
 
 ### Tại sao nên sử dụng phối màu Floyd-Steinberg?

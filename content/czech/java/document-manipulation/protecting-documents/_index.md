@@ -12,7 +12,7 @@ url: /cs/java/document-manipulation/protecting-documents/
 
 Ochrana dokumentů je zásadní funkcí při práci s citlivými informacemi. Aspose.Words for Java poskytuje robustní možnosti pro ochranu vašich dokumentů před neoprávněným přístupem.
 
-## Ochrana dokumentů pomocí hesel
+## Ochrana dokumentů hesly
 
 Chcete-li chránit své dokumenty, můžete nastavit heslo. K dokumentu budou mít přístup pouze uživatelé, kteří znají heslo. Podívejme se, jak to udělat v kódu:
 

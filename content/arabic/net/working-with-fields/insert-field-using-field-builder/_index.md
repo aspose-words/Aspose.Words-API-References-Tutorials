@@ -2,107 +2,118 @@
 title: إدراج حقل باستخدام منشئ الحقول
 linktitle: إدراج حقل باستخدام منشئ الحقول
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج حقول مخصصة في مستندات Word الخاصة بك باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إدراج الحقول الديناميكية في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. مثالية للمطورين.
 type: docs
 weight: 10
 url: /ar/net/working-with-fields/insert-field-using-field-builder/
 ---
+## مقدمة
 
-فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه، والتي تستخدم ميزة "إدراج حقل باستخدام FieldBuilder" في Aspose.Words for .NET. تأكد من اتباع كل خطوة بعناية للحصول على النتائج المرجوة.
+مرحبًا يا من هناك! هل وجدت نفسك في حيرة من أمرك وتتساءل عن كيفية إدراج الحقول الديناميكية في مستندات Word الخاصة بك برمجيًا؟ حسنا، لا تقلق بعد الآن! في هذا البرنامج التعليمي، سوف نتعمق في عجائب Aspose.Words for .NET، وهي مكتبة قوية تتيح لك إنشاء مستندات Word ومعالجتها وتحويلها بسلاسة. وعلى وجه التحديد، سنتعرف على كيفية إدراج الحقول باستخدام Field Builder. هيا بنا نبدأ!
 
-## الخطوة 1: إعداد دليل المستندات
+## المتطلبات الأساسية
 
-في الكود المقدم، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب لدليل المستندات الخاص بك.
+قبل أن نتعمق في التفاصيل الجوهرية، دعونا نتأكد من حصولك على كل ما تحتاجه:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. Aspose.Words لـ .NET: ستحتاج إلى تثبيت Aspose.Words لـ .NET. إذا لم تكن قد فعلت ذلك بعد، يمكنك الاستيلاء عليها[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: بيئة تطوير مناسبة مثل Visual Studio.
+3. المعرفة الأساسية بـ C#: سيكون من المفيد أن تكون على دراية بأساسيات C# و.NET.
 
-## الخطوة 2: إنشاء الوثيقة
+## استيراد مساحات الأسماء
 
-نبدأ بإنشاء مستند جديد.
-
-```csharp
-Document doc = new Document();
-```
-
-## الخطوة 3: إنشاء حقل IF باستخدام FieldBuilder
-
-نستخدم فئة FieldBuilder لإنشاء حقل IF بحقلين MERGEFIELD متداخلين. في هذا المثال، يعرض الحقل IF الاسم الأول والأخير بناءً على الشرط.
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. سيتضمن هذا مساحات الأسماء الأساسية لـ Aspose.Words والتي سنستخدمها خلال برنامجنا التعليمي.
 
 ```csharp
-FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
-     .AddArgument("left expression")
-     .AddArgument("=")
-     .AddArgument("right expression")
-     .AddArgument(
-         new FieldArgumentBuilder()
-             .AddText("Firstname: ")
-             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("firstname")))
-     .AddArgument(
-         new FieldArgumentBuilder()
-             .AddText("Lastname: ")
-             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## الخطوة 4: إدراج حقل IF في المستند
+حسنًا، دعنا نقسم العملية خطوة بخطوة. بحلول نهاية هذا، ستكون محترفًا في إدراج الحقول باستخدام Field Builder في Aspose.Words for .NET.
 
- نحن نستخدم ال`BuildAndInsert()` طريقة لإنشاء حقل IF وإدراجه في موقع محدد في المستند.
+## الخطوة 1: قم بإعداد مشروعك
 
-```csharp
-Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
-field. Update();
+قبل أن ننتقل إلى جزء البرمجة، تأكد من إعداد مشروعك بشكل صحيح. قم بإنشاء مشروع C# جديد في بيئة التطوير الخاصة بك وقم بتثبيت حزمة Aspose.Words عبر NuGet Package Manager.
+
+```bash
+Install-Package Aspose.Words
 ```
 
-### مثال على التعليمات البرمجية المصدر لإدراج حقل باستخدام FieldBuilder مع Aspose.Words لـ .NET
+## الخطوة 2: إنشاء مستند جديد
+
+لنبدأ بإنشاء مستند Word جديد. سيكون هذا المستند بمثابة لوحة الرسم الخاصة بنا لإدراج الحقول.
 
 ```csharp
 // المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// إنشاء الوثيقة.
+// إنشاء مستند جديد.
 Document doc = new Document();
+```
 
-// بناء حقل IF باستخدام FieldBuilder.
+## الخطوة 3: تهيئة FieldBuilder
+
+إن FieldBuilder هو اللاعب الرئيسي هنا. يسمح لنا ببناء الحقول بشكل ديناميكي.
+
+```csharp
+//بناء حقل IF باستخدام FieldBuilder.
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
-     .AddArgument("left expression")
-     .AddArgument("=")
-     .AddArgument("right expression")
-     .AddArgument(
-         new FieldArgumentBuilder()
-             .AddText("Firstname: ")
-             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("firstname")))
-     .AddArgument(
-         new FieldArgumentBuilder()
-             .AddText("Lastname: ")
-             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
+    .AddArgument("left expression")
+    .AddArgument("=")
+    .AddArgument("right expression");
+```
 
+## الخطوة 4: إضافة الوسائط إلى FieldBuilder
+
+الآن، سنقوم بإضافة الوسائط الضرورية إلى FieldBuilder الخاص بنا. سيتضمن ذلك تعبيراتنا والنص الذي نريد إدراجه.
+
+```csharp
+fieldBuilder.AddArgument(
+    new FieldArgumentBuilder()
+        .AddText("Firstname: ")
+        .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("firstname")))
+    .AddArgument(
+        new FieldArgumentBuilder()
+            .AddText("Lastname: ")
+            .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
+```
+
+## الخطوة 5: أدخل الحقل في المستند
+
+بعد الانتهاء من إعداد FieldBuilder، حان الوقت لإدراج الحقل في وثيقتنا. سنفعل ذلك من خلال استهداف الفقرة الأولى من القسم الأول.
+
+```csharp
 // أدخل الحقل IF في المستند.
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
-field. Update();
+field.Update();
+```
 
+## الخطوة 6: احفظ المستند
+
+وأخيرا، دعونا نحفظ مستندنا ونتحقق من النتائج.
+
+```csharp
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-في هذا المثال، قمنا بإنشاء مستند جديد، وقمنا بإنشاء حقل IF باستخدام حقول MERGEFIELD المتداخلة، ثم قمنا بإدراج هذا الحقل في المستند في موقع محدد. ثم يتم حفظ المستند باسم ملف محدد.
+وهناك لديك! لقد نجحت في إدراج حقل في مستند Word باستخدام Aspose.Words لـ .NET.
 
-### الأسئلة الشائعة
+## خاتمة
 
-#### س: ما هو مُنشئ الحقل في Aspose.Words؟
+تهانينا! لقد تعلمت للتو كيفية إدراج الحقول ديناميكيًا في مستند Word باستخدام Aspose.Words لـ .NET. يمكن أن تكون هذه الميزة القوية مفيدة بشكل لا يصدق لإنشاء مستندات ديناميكية تتطلب دمج البيانات في الوقت الفعلي. استمر في تجربة أنواع الحقول المختلفة واستكشف الإمكانات الواسعة لـ Aspose.Words.
 
-ج: يعد منشئ الحقول في Aspose.Words أداة قوية لإنشاء الحقول ومعالجتها في مستند Word. وهو يوفر ميزات متقدمة لإنشاء الحقول وتخصيصها، بما في ذلك إدراج رموز الحقول وإدارة خيارات التنسيق.
+## الأسئلة الشائعة
 
-#### س: ما أنواع الحقول التي يمكن إدراجها باستخدام منشئ الحقول؟
+### ما هو Aspose.Words لـ .NET؟
+Aspose.Words for .NET هي مكتبة قوية تمكن المطورين من إنشاء مستندات Word ومعالجتها وتحويلها برمجيًا باستخدام لغة C#.
 
-ج: يسمح لك منشئ الحقول في Aspose.Words بإدراج أنواع مختلفة من الحقول في مستند Word. فيما يلي بعض الأمثلة على أنواع الحقول شائعة الاستخدام:
+### هل يمكنني استخدام Aspose.Words مجانًا؟
+ يقدم Aspose.Words نسخة تجريبية مجانية يمكنك تنزيلها[هنا](https://releases.aspose.com/) . للاستخدام طويل الأمد، ستحتاج إلى شراء ترخيص[هنا](https://purchase.aspose.com/buy).
 
-- MERGEFIELD: يستخدم لدمج البيانات من مصادر خارجية.
-- التاريخ: يعرض التاريخ الحالي.
-- PAGE: يعرض رقم الصفحة الحالية.
-- IF: يسمح بتكييف عرض المحتوى وفقًا للشرط.
-- جدول المحتويات: يقوم تلقائيًا بإنشاء جدول محتويات استنادًا إلى أنماط عنوان المستند.
+### ما أنواع الحقول التي يمكنني إدراجها باستخدام FieldBuilder؟
+ يدعم FieldBuilder نطاقًا واسعًا من الحقول، بما في ذلك IF وMERGEFIELD والمزيد. يمكنك العثور على وثائق مفصلة[هنا](https://reference.aspose.com/words/net/).
 
-#### س: كيفية تخصيص الحقول المدرجة باستخدام منشئ الحقول؟
+### كيف أقوم بتحديث حقل بعد إدراجه؟
+ يمكنك تحديث الحقل باستخدام`Update` الطريقة كما هو موضح في الدرس .
 
-ج: يقدم منشئ الحقول خيارات التخصيص للحقول المدرجة. يمكنك استخدام أساليب وخصائص منشئ الحقل لتعيين خيارات مثل تنسيق الحقل والوسائط والمفاتيح والقيم الافتراضية. على سبيل المثال، يمكنك تعيين تنسيق التاريخ، وتنسيق الأرقام، وفاصل الآلاف، وما إلى ذلك.
-  
+### أين يمكنني الحصول على الدعم لـ Aspose.Words؟
+ لأية أسئلة أو دعم، قم بزيارة منتدى دعم Aspose.Words[هنا](https://forum.aspose.com/c/words/8).

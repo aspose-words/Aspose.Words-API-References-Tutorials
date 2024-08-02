@@ -136,7 +136,7 @@ Ebben a példában megnyitunk egy dokumentumot egy táblázattal és egyesítés
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanulta, hogyan használhatja az Aspose.Words for Java törlési beállításait dokumentumok kezeléséhez és tisztításához a körlevél-egyesítési folyamat során. Ezek az opciók finom vezérlést biztosítanak a dokumentumtisztítás felett, lehetővé téve a csiszolt és testreszabott dokumentumok könnyű létrehozását.
+Ebben az oktatóanyagban megtanulta, hogyan használhatja az Aspose.Words for Java tisztítási beállításait a dokumentumok kezeléséhez és tisztításához a körlevél-egyesítési folyamat során. Ezek az opciók finom vezérlést biztosítanak a dokumentumtisztítás felett, lehetővé téve a csiszolt és testreszabott dokumentumok könnyű létrehozását.
 
 ## GYIK
 

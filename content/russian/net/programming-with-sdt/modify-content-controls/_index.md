@@ -2,123 +2,182 @@
 title: Изменить элементы управления содержимым
 linktitle: Изменить элементы управления содержимым
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как изменять текст, раскрывающиеся списки и изображения в элементах управления содержимым в документе Word с помощью Aspose.Words для .NET.
+description: Узнайте, как изменять теги структурированных документов в Word с помощью Aspose.Words для .NET. Обновляйте текст, раскрывающиеся списки и изображения шаг за шагом.
 type: docs
 weight: 10
 url: /ru/net/programming-with-sdt/modify-content-controls/
 ---
+## Введение
 
-В этом руководстве объясняется, как изменить различные типы элементов управления содержимым в документе Word с помощью Aspose.Words для .NET. Вы можете обновить текст, выбранное значение раскрывающегося списка или заменить изображение в элементах управления содержимым.
+Если вы когда-либо работали с документами Word и вам нужно было изменить элементы управления структурированным содержимым (например, обычный текст, раскрывающиеся списки или изображения) с помощью Aspose.Words for .NET, вы попали по адресу! Структурированные теги документов (SDT) — это мощные инструменты, которые делают автоматизацию документов более простой и гибкой. В этом уроке мы углубимся в то, как вы можете изменить эти SDT в соответствии с вашими потребностями. Независимо от того, обновляете ли вы текст, меняете элементы раскрывающегося списка или заменяете изображения, это руководство шаг за шагом проведет вас через этот процесс.
 
 ## Предварительные условия
-Чтобы следовать этому руководству, вам необходимо иметь следующее:
 
-- Установлена библиотека Aspose.Words для .NET.
-- Базовые знания C# и обработки документов Word.
+Прежде чем мы перейдем к подробностям изменения элементов управления содержимым, убедитесь, что у вас есть следующее:
 
-## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором находится ваш документ.
+1.  Установлен Aspose.Words для .NET: убедитесь, что у вас установлена библиотека Aspose.Words. Если нет, вы можете[скачай это здесь](https://releases.aspose.com/words/net/).
+
+2. Базовые знания C#. В этом руководстве предполагается, что вы знакомы с основными концепциями программирования на C#.
+
+3. Среда разработки .NET. У вас должна быть интегрированная среда разработки, например Visual Studio, настроенная для запуска приложений .NET.
+
+4. Образец документа. Мы будем использовать образец документа Word с различными типами SDT. Вы можете использовать вариант из примера или создать свой собственный.
+
+5.  Доступ к документации Aspose: Для получения более подробной информации посетите[Документация Aspose.Words](https://reference.aspose.com/words/net/).
+
+## Импортировать пространства имен
+
+Чтобы начать работать с Aspose.Words, вам необходимо импортировать соответствующие пространства имен в ваш проект C#. Вот как это сделать:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+Эти пространства имен предоставят вам доступ к классам и методам, необходимым для управления тегами структурированных документов в документах Word.
+
+## Шаг 1. Настройте путь к документу
+
+ Прежде чем вносить какие-либо изменения, вам необходимо указать путь к вашему документу. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем, где хранится ваш документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
-## Шаг 2. Загрузите документ и перебирайте элементы управления содержимым
- Загрузите документ Word, используя`Document` конструктор, передавая путь к документу в качестве параметра. Перебрать все теги структурированного документа в документе, используя`foreach` петля.
+## Шаг 2. Перебор тегов структурированного документа
+
+ Чтобы изменить SDT, сначала необходимо просмотреть все SDT в документе. Это делается с помощью`GetChildNodes` метод для получения всех узлов типа`StructuredDocumentTag`.
 
 ```csharp
-Document doc = new Document(dataDir + "Structured document tags.docx");
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
 {
-    // Выполнять действия в зависимости от типа контроля контента
+    // Измените SDT в зависимости от их типа.
 }
 ```
 
-## Шаг 3. Измените элемент управления содержимым в виде простого текста
- Для элементов управления содержимым типа`SdtType.PlainText`, удалите все существующие дочерние элементы, создайте новый абзац и добавьте фрагмент с нужным текстом.
+## Шаг 3. Изменение SDT в виде обычного текста
+
+Если SDT представляет собой обычный текстовый тип, вы можете заменить его содержимое. Сначала очистите существующее содержимое, затем добавьте новый текст.
 
 ```csharp
-case SdtType.PlainText:
+if (sdt.SdtType == SdtType.PlainText)
 {
     sdt.RemoveAllChildren();
     Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
     Run run = new Run(doc, "new text goes here");
     para.AppendChild(run);
-    break;
 }
 ```
 
-## Шаг 4. Измените элемент управления содержимым раскрывающегося списка
- Для элементов управления содержимым типа`SdtType.DropDownList` , обновите выбранное значение, установив для него определенное значение`SdtListItem`.
+ Пояснение: Здесь`RemoveAllChildren()`очищает существующее содержимое SDT. Затем мы создаем новый`Paragraph`и`Run` объект для вставки нового текста.
+
+## Шаг 4. Изменение SDT раскрывающегося списка
+
+ Для SDT раскрывающегося списка вы можете изменить выбранный элемент, открыв`ListItems` коллекция. Здесь мы выбираем третий элемент в списке.
 
 ```csharp
-case SdtType.DropDownList:
+if (sdt.SdtType == SdtType.DropDownList)
 {
     SdtListItem secondItem = sdt.ListItems[2];
     sdt.ListItems.SelectedValue = secondItem;
-    break;
 }
 ```
 
-## Шаг 5. Измените элемент управления содержимым изображения
- Для элементов управления содержимым типа`SdtType.Picture`, извлеките фигуру из элемента управления содержимым и замените ее изображение новым.
+Объяснение: Этот фрагмент кода выбирает элемент с индексом 2 (третий элемент) из раскрывающегося списка. Настройте индекс в соответствии с вашими потребностями.
+
+## Шаг 5. Измените SDT изображения
+
+Чтобы обновить изображение в SDT изображения, вы можете заменить существующее изображение новым.
 
 ```csharp
-case SdtType.Picture:
+if (sdt.SdtType == SdtType.Picture)
 {
-    Shape shape = (Shape)sdt.GetChild(NodeType.Shape, 0, true);
+    Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
     if (shape.HasImage)
     {
         shape.ImageData.SetImage(ImagesDir + "Watermark.png");
     }
-    break;
 }
 ```
 
+ Объяснение: Этот код проверяет, содержит ли фигура изображение, а затем заменяет его новым изображением, расположенным по адресу`ImagesDir`.
+
 ## Шаг 6. Сохраните измененный документ
- Сохраните измененный документ в указанную директорию, используя команду`Save` метод. Укажите желаемое имя файла с соответствующим расширением. В этом примере мы сохраняем документ как «WorkingWithSdt.ModifyContentControls.docx».
+
+После внесения всех необходимых изменений сохраните измененный документ под новым именем, чтобы сохранить исходный документ нетронутым.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ```
 
+Объяснение: При этом документ сохраняется под новым именем, чтобы его можно было легко отличить от оригинала.
+
+## Заключение
+
+Изменение элементов управления содержимым в документе Word с помощью Aspose.Words for .NET не вызывает затруднений, если вы понимаете необходимые шаги. Независимо от того, обновляете ли вы текст, меняете выбор в раскрывающемся списке или меняете изображения, Aspose.Words предоставляет надежный API для этих задач. Следуя этому руководству, вы сможете эффективно управлять и настраивать элементы управления структурированным содержимым вашего документа, делая ваши документы более динамичными и адаптированными к вашим потребностям.
+
+## Часто задаваемые вопросы
+
+1. Что такое тег структурированного документа (SDT)?
+
+SDT — это элементы в документах Word, которые помогают управлять и форматировать содержимое документа, например текстовые поля, раскрывающиеся списки или изображения.
+
+2. Как добавить новый раскрывающийся элемент в SDT?
+
+ Чтобы добавить новый элемент, используйте`ListItems` свойство и добавить новое`SdtListItem` в коллекцию.
+
+3. Могу ли я использовать Aspose.Words для удаления SDT из документа?
+
+Да, вы можете удалить SDT, получив доступ к узлам документа и удалив нужный SDT.
+
+4. Как обрабатывать SDT, вложенные в другие элементы?
+
+ Использовать`GetChildNodes` метод с соответствующими параметрами для доступа к вложенным SDT.
+
+5. Что делать, если SDT, который мне нужно изменить, не отображается в документе?
+
+Убедитесь, что SDT не скрыт и не защищен. Проверьте настройки документа и убедитесь, что ваш код правильно ориентирован на тип SDT.
+
+
 ### Пример исходного кода для изменения элементов управления содержимым с помощью Aspose.Words для .NET 
 
 ```csharp
-	// Путь к каталогу ваших документов
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Путь к каталогу ваших документов
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Structured document tags.docx");
-	foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
+Document doc = new Document(dataDir + "Structured document tags.docx");
+foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
+{
+	switch (sdt.SdtType)
 	{
-		switch (sdt.SdtType)
+		case SdtType.PlainText:
 		{
-			case SdtType.PlainText:
+			sdt.RemoveAllChildren();
+			Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
+			Run run = new Run(doc, "new text goes here");
+			para.AppendChild(run);
+			break;
+		}
+		case SdtType.DropDownList:
+		{
+			SdtListItem secondItem = sdt.ListItems[2];
+			sdt.ListItems.SelectedValue = secondItem;
+			break;
+		}
+		case SdtType.Picture:
+		{
+			Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
+			if (shape.HasImage)
 			{
-				sdt.RemoveAllChildren();
-				Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
-				Run run = new Run(doc, "new text goes here");
-				para.AppendChild(run);
-				break;
+				shape.ImageData.SetImage(ImagesDir + "Watermark.png");
 			}
-			case SdtType.DropDownList:
-			{
-				SdtListItem secondItem = sdt.ListItems[2];
-				sdt.ListItems.SelectedValue = secondItem;
-				break;
-			}
-			case SdtType.Picture:
-			{
-				Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
-				if (shape.HasImage)
-				{
-					shape.ImageData.SetImage(ImagesDir + "Watermark.png");
-				}
-				break;
-			}
+			break;
 		}
 	}
-	doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
+}
+doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 

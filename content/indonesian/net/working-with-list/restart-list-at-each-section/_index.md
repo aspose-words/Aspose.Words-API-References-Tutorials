@@ -47,7 +47,7 @@ Dalam contoh ini, kita menyisipkan pemisah bagian setelah item daftar ke-15 untu
 
 ## Langkah 3: Simpan dokumen yang dimodifikasi
 
-Terakhir, simpan dokumen yang dimodifikasi:
+Terakhir, simpan dokumen yang diubah:
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };

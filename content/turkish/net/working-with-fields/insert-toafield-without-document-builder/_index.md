@@ -2,123 +2,125 @@
 title: Belge Oluşturucu Olmadan TOA Alanını Ekle
 linktitle: Belge Oluşturucu Olmadan TOA Alanını Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Document Builder olmadan TOA alanı eklemek için adım adım kılavuz.
+description: Aspose.Words for .NET'te belge oluşturucu kullanmadan TOA alanını nasıl ekleyeceğinizi öğrenin. Yasal alıntıları verimli bir şekilde yönetmek için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## giriiş
 
-Aşağıda Aspose.Words for .NET'in "TOA Alan Ekleme" özelliğini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstenilen sonuçları elde etmek için her adımı dikkatlice izleyin.
+Bir Word belgesinde Yetki Tablosu (TOA) alanı oluşturmak, karmaşık bir bulmacanın parçalarını bir araya getirmek gibi gelebilir. Ancak Aspose.Words for .NET'in yardımıyla süreç sorunsuz ve anlaşılır hale geliyor. Bu makalede, bir belge oluşturucu kullanmadan TOA alanı ekleme adımlarında size yol göstererek, Word belgelerinizdeki alıntılarınızı ve yasal referanslarınızı yönetmenizi kolaylaştıracağız.
 
-## Adım 1: Belge Dizini Kurulumu
+## Önkoşullar
 
-Verilen kodda belgelerinizin dizinini belirtmelisiniz. "BELGE DİZİNİNİZ" değerini, belge dizininizin uygun yolu ile değiştirin.
+Eğiticiye dalmadan önce ihtiyacınız olacak temel bilgileri ele alalım:
+
+-  Aspose.Words for .NET: En son sürümün kurulu olduğundan emin olun. adresinden indirebilirsiniz.[Web sitesi](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio gibi .NET uyumlu bir IDE.
+- Temel C# Bilgisi: Temel C# sözdizimini ve kavramlarını anlamak faydalı olacaktır.
+- Örnek Word Belgesi: TOA alanını eklemek istediğiniz yere örnek bir belge oluşturun veya hazır bulundurun.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için gerekli ad alanlarını Aspose.Words kütüphanesinden içe aktarmanız gerekir. Bu kurulum, belge işleme için gereken tüm sınıflara ve yöntemlere erişmenizi sağlar.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Adım 2: Belgeyi ve Paragrafı Oluşturma
+Süreci basit, takip edilmesi kolay adımlara ayıralım. Her kod parçasının ne yaptığını ve TOA alanının oluşturulmasına nasıl katkıda bulunduğunu açıklayarak her aşamada size rehberlik edeceğiz.
 
-Yeni bir belge oluşturup bir paragrafı başlatarak başlıyoruz.
+## 1. Adım: Belgeyi Başlatın
+
+ İlk önce bir örneğini oluşturmanız gerekir.`Document` sınıf. Bu nesne üzerinde çalıştığınız Word belgesini temsil eder.
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## 3. Adım: TA alanını ekleme
+Bu kod yeni bir Word belgesini başlatır. Bunu, içeriğinizi ekleyeceğiniz boş bir tuval oluşturmak olarak düşünebilirsiniz.
 
-Paragrafa TA alanı eklemek için FieldTA sınıfını kullanıyoruz.
+## 2. Adım: TA Alanını Oluşturun ve Yapılandırın
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## Adım 4: Paragrafı belgenin gövdesine ekleme
-
-TA alanını içeren paragrafı belgenin gövdesine ekliyoruz.
+Daha sonra TA (Yetki Tablosu) alanını ekleyeceğiz. Bu alan TOA'da görünecek girişleri işaretler.
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Adım 5: TOA alanı için paragraf oluşturma
-
-TOA alanı için yeni bir paragraf oluşturuyoruz.
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## Adım 6: TOA alanını ekleme
-
-Paragrafa TOA alanı eklemek için FieldToa sınıfını kullanıyoruz.
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## Adım 7: Paragrafı belgenin gövdesine ekleme
-
-TOA alanını içeren paragrafı belgenin gövdesine ekliyoruz.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## 8. Adım: TOA Alanını Güncelleyin
-
- Son olarak şunu diyoruz:`Update()` TOA alanını güncelleme yöntemi.
-
-```csharp
-fieldToa.Update();
-```
-
-### Aspose.Words for .NET ile Document Builder olmadan TOA alanı eklemeye yönelik kaynak kodu örneği
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
 // TA ve TOA alanlarını şu şekilde eklemek istiyoruz:
 // { TA \c 1 \l "Değer 0" }
-// { TOA \c 1 }
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+İşte bir döküm:
+- Paragraf para = yeni Paragraf(doc);: Belge içinde yeni bir paragraf oluşturur.
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: Paragrafa bir TA alanı ekler.`FieldType.FieldTOAEntry` bunun bir TOA giriş alanı olduğunu belirtir.
+- fieldTA.EntryCategory = "1";: Giriş kategorisini ayarlar. Bu, farklı giriş türlerini kategorize etmek için kullanışlıdır.
+- fieldTA.LongCitation = "Değer 0";: Uzun alıntı metnini belirtir. Bu TOA'da görünecek metindir.
+- doc.FirstSection.Body.AppendChild(para);: TA alanını içeren paragrafı belgenin gövdesine ekler.
+
+## 3. Adım: TOA Alanını Ekleyin
+
+Şimdi, tüm TA girişlerini bir tabloya derleyen gerçek TOA alanını ekleyeceğiz.
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### SSS'ler
+Bu adımda:
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);: Paragrafa bir TOA alanı ekler.
+- fieldToa.EntryCategory = "1";: Girişleri yalnızca "1" kategorisiyle işaretlenenleri içerecek şekilde filtreler.
 
-#### S: Aspose.Words for .NET ile Word belgesine eklenen TOA alanının görünümü nasıl özelleştirilir?
+## 4. Adım: TOA Alanını Güncelleyin
 
- C: Eklenen TOA alanının görünümünü, TOA alanının özelliklerini kullanarak özelleştirebilirsiniz.`FieldTOA` Biçimlendirme seçeneklerini belirtmek için nesne.
+TOA alanını ekledikten sonra, en son girişleri yansıttığından emin olmak için alanı güncellemeniz gerekir.
 
-#### S: Aspose.Words for .NET'i kullanarak tek bir Word belgesine birden fazla TOA alanı ekleyebilir miyim?
+```csharp
+fieldToa.Update();
+```
 
-C: Evet, Aspose.Words for .NET'i kullanarak tek bir Word belgesine birden fazla TOA alanı ekleyebilirsiniz. Her alan için ekleme adımlarını tekrarlamanız yeterlidir.
+Bu komut TOA alanını yenileyerek tüm işaretli girişlerin tabloda doğru şekilde görüntülenmesini sağlar.
 
-#### S: TOA alanının Aspose.Words for .NET ile Word belgesine başarıyla eklenip eklenmediğini nasıl kontrol edebilirim?
+## Adım 5: Belgeyi Kaydedin
 
-C: TOA alanının başarıyla eklenip eklenmediğini kontrol etmek için belge içeriğine göz atabilir ve TOA alanı örneklerini arayabilirsiniz.
+Son olarak yeni eklenen TOA alanıyla belgenizi kaydedin.
 
-#### S: DocumentBuilder kullanmadan TOA alanı eklemek Aspose.Words for .NET ile Word belgesi formatını etkiler mi?
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-C: DocumentBuilder'ı kullanmadan TOA alanı eklemek, Word belgesinin biçimlendirmesini doğrudan etkilemez. Ancak TOA alanı biçimlendirme seçenekleri belgenin genel biçimlendirmesini etkileyebilir.
+ Bu kod satırı belgeyi belirtilen dizine kaydeder. Değiştirdiğinizden emin olun`"YOUR DOCUMENT DIRECTORY"` dosyanızı kaydetmek istediğiniz gerçek yolla.
+
+## Çözüm
+
+İşte buyur! Bir belge oluşturucuyu kullanmadan bir Word belgesine başarıyla bir TOA alanı eklediniz. Bu adımları izleyerek alıntıları verimli bir şekilde yönetebilir ve yasal belgelerinizde kapsamlı yetki tabloları oluşturabilirsiniz. Aspose.Words for .NET bu süreci sorunsuz ve verimli hale getirerek karmaşık belge görevlerini kolaylıkla halletmeniz için gerekli araçları sağlar.
+
+## SSS'ler
+
+### Farklı kategorilere sahip birden fazla TA alanı ekleyebilir miyim?
+ Evet, farklı kategorilerdeki birden fazla TA alanını ayarlayarak ekleyebilirsiniz.`EntryCategory`buna göre mülk.
+
+### TOA'nın görünümünü nasıl özelleştirebilirim?
+TOA alanının giriş biçimlendirmesi ve kategori etiketleri gibi özelliklerini değiştirerek TOA'nın görünümünü özelleştirebilirsiniz.
+
+### TOA alanını otomatik olarak güncellemek mümkün mü?
+ TOA alanını kullanarak manuel olarak güncelleyebilirsiniz.`Update` Aspose.Words şu anda belge değişikliklerinde otomatik güncellemeleri desteklememektedir.
+
+### Belgenin belirli bölümlerine TA alanlarını programlı olarak ekleyebilir miyim?
+Evet, TA alanlarını istediğiniz paragraf veya bölümlere ekleyerek belirli konumlara ekleyebilirsiniz.
+
+### Tek bir belgede birden fazla TOA alanını nasıl yönetirim?
+ Farklı TOA alanlarını atayarak birden fazla TOA alanını yönetebilirsiniz.`EntryCategory` değerler ve her TOA alanının girdileri kategorisine göre filtrelemesini sağlamak.

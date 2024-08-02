@@ -11,7 +11,7 @@ url: /ko/net/programming-with-document-properties/enumerate-properties/
 
 프로그래밍 방식으로 Word 문서 작업을 원하시나요? Aspose.Words for .NET은 바로 이를 달성하는 데 도움이 되는 강력한 도구입니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서의 속성을 열거하는 방법을 안내하겠습니다. 초보자이시든 경험이 있으신가요? 이 가이드는 대화식이며 따라하기 쉬운 방식으로 단계별로 설명합니다.
 
-## 전제조건
+## 전제 조건
 
 튜토리얼을 시작하기 전에 시작해야 할 몇 가지 사항이 있습니다.
 

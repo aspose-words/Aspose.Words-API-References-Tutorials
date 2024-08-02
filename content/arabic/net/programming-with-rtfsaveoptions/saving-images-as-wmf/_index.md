@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Document.docx");
 RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 ```
 
- شرح: هنا، نقوم بإنشاء مثيل لـ`RtfSaveOptions` وتعيين`SaveImagesAsWmf`الملكية ل`true`. هذا يخبر Aspose.Words بحفظ الصور بتنسيق WMF عند حفظ المستند.
+ الشرح: هنا، نقوم بإنشاء مثيل لـ`RtfSaveOptions` وتعيين`SaveImagesAsWmf`الملكية ل`true`. هذا يخبر Aspose.Words بحفظ الصور بتنسيق WMF عند حفظ المستند.
 
 ## الخطوة 3: احفظ المستند
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
 ### هل أحتاج إلى ترخيص لاستخدام Aspose.Words لـ .NET؟
  نعم، يتطلب Aspose.Words for .NET ترخيصًا. يمكنك شراء واحدة[هنا](https://purchase.aspose.com/buy) أو الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/).
 
-### هل يمكنني الحصول على الدعم إذا واجهت مشاكل؟
+### هل يمكنني الحصول على الدعم إذا واجهت مشكلات؟
  قطعاً! يقدم Aspose الدعم الشامل من خلال المنتديات الخاصة بهم. يمكنك الوصول إلى الدعم[هنا](https://forum.aspose.com/c/words/8).
 
 ### هل هناك أي متطلبات نظام محددة لـ Aspose.Words for .NET؟

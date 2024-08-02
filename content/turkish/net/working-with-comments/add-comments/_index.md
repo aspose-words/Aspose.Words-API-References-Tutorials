@@ -2,103 +2,115 @@
 title: Yorum ekle
 linktitle: Yorum ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerine nasıl yorum ekleyeceğinizi öğrenin.
+description: Rehberimizi kullanarak Aspose.Words for .NET'i kullanarak Word belgelerinize nasıl yorum ekleyeceğinizi öğrenin. Belge işbirliği sürecinizi zahmetsizce geliştirin.
 type: docs
 weight: 10
 url: /tr/net/working-with-comments/add-comments/
 ---
+## giriiş
 
-Bu kapsamlı eğitimde Aspose.Words for .NET kullanarak bir Word belgesine nasıl yorum ekleyeceğinizi öğreneceksiniz. Süreç boyunca size rehberlik edeceğiz ve gerekli C# kod parçacıklarını sağlayacağız. Bu kılavuzun sonunda belgelerinize yorum ekleyebilecek ve bunların içeriğini özelleştirebileceksiniz.
+Aspose.Words for .NET kullanarak Word belgelerinize yorum eklemeyle ilgili ayrıntılı kılavuzumuza hoş geldiniz! Yorumları programlı bir şekilde dahil ederek belge inceleme sürecinizi kolaylaştırmak istiyorsanız doğru yere geldiniz. Bu eğitim, ortamınızı ayarlamaktan Word belgelerinize yorum yazmaya ve kaydetmeye kadar bilmeniz gereken her şeyde size yol gösterecektir. Haydi hemen konuya dalalım ve belge işbirliğini çocuk oyuncağı haline getirelim!
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
-- Aspose.Words for .NET kütüphanesi sisteminizde kuruludur.
 
-## 1. Adım: Yeni Bir Belge ve DocumentBuilder Oluşturun
-Başlamak için Document sınıfını kullanarak yeni bir belge oluşturun ve bir DocumentBuilder nesnesini başlatın:
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+
+1. Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. .NET Framework: Makinenizde .NET Framework'ün kurulu olduğundan emin olun.
+3. Geliştirme Ortamı: Kodunuzu yazmak ve yürütmek için Visual Studio benzeri bir IDE.
+4. Temel C# Bilgisi: C# programlama diline aşinalık, örnekleri takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını projenize aktarmanız gerekir. Bu, Aspose.Words ile çalışmak için gereken sınıflara ve yöntemlere erişmenizi sağlayacaktır.
+
+```csharp
+using System;
+using Aspose.Words;
+```
+
+Şimdi süreci takip edilmesi kolay adımlara ayıralım. Her adımda mantığı ve işlevselliği anlamanıza yardımcı olacak ayrıntılı bir açıklama yer alacaktır.
+
+## 1. Adım: Belge Dizininizi Kurun
+
+ Öncelikle belgenizin kaydedileceği dizini tanımlamamız gerekiyor. Bir yer tutucu kullanacağız`YOUR DOCUMENT DIRECTORY` bunu gerçek dizin yolunuzla değiştirmeniz gerekir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Adım 2: Belgeyi Başlatın
+
+Daha sonra yeni bir belge ve DocumentBuilder nesnesini başlatacağız. DocumentBuilder belgeyi oluşturmamıza ve değiştirmemize yardımcı olur.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Belgeye İçerik Ekleme
-Daha sonra DocumentBuilder nesnesini kullanarak istediğiniz içeriği belgeye ekleyin. Bu örnekte bir miktar metin ekliyoruz:
+## 3. Adım: Belgeye Metin Ekleme
+
+DocumentBuilder'ı kullanarak belgeye bir miktar metin ekleyeceğiz. Bu metin yorumumuzu ekleyeceğimiz yer olacaktır.
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## 3. Adım: Yorum Oluşturun ve İçerik Ekleyin
-Yorum eklemek için, Document nesnesini, yazarın adını, yazarın adının baş harflerini ve geçerli tarihi ileten Comment sınıfının bir örneğini oluşturun:
+## 4. Adım: Yorum Oluşturun ve Ekleyin
+
+Şimdi yorum oluşturmanın zamanı geldi. Belgeyi, yazarın adını, baş harflerini ve tarihi belirterek yeni bir Yorum nesnesini başlatacağız.
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-Ardından, yorumu geçerli paragrafa ekleyin:
+## Adım 5: Yorumu Paragrafa Eklemek
+
+Yorumu metni eklediğimiz mevcut paragrafa eklememiz gerekiyor. Bu, yorumun paragrafa eklenmesiyle yapılır.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-Yoruma paragraf ve metin gibi içerikler ekleyin:
+## 6. Adım: Yoruma İçerik Ekleyin
+
+Son olarak yoruma içerik ekleyeceğiz. Yorum metnini tutmak için yeni bir Paragraf ve Çalıştır oluşturacağız, ardından bunları yoruma ekleyeceğiz.
 
 ```csharp
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
-## Adım 4: Belgeyi Kaydedin
-Yorumu ve içeriğini ekledikten sonra, Document sınıfının Kaydet yöntemini kullanarak belgeyi bir dosyaya kaydedin:
+## Adım 7: Belgeyi Kaydedin
+
+Son adım, belgeyi yorumlarla birlikte kaydetmektir. Dizini ve dosya adını belirteceğiz.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
-```
-
-## Aspose.Words for .NET kullanarak Yorum Eklemek için Örnek Kaynak Kodu
-Aspose.Words for .NET kullanarak yorum eklemeye yönelik kaynak kodun tamamı burada:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Write("Some text is added.");
-
-Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-builder.CurrentParagraph.AppendChild(comment);
-
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
 ## Çözüm
-Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesine nasıl yorum ekleyeceğinizi başarıyla öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak artık belgelerinize yorum ekleyebilir ve bunların içeriğini özelleştirebilirsiniz.
 
-Yorumlar işbirliği yapmak, ek bilgi sağlamak veya bir belgede not almak için kullanışlıdır. Özel gereksinimlerinizi karşılamak için farklı yazar adları, baş harfleri ve yorum içerikleriyle denemeler yapın.
+İşte aldın! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla yorum eklediniz. Bu güçlü özellik, belge inceleme sürecinizi büyük ölçüde geliştirebilir, işbirliği yapmayı ve geri bildirimde bulunmayı kolaylaştırabilir. Belge yönetimi görevlerinizi daha da kolaylaştırmak için Aspose.Words'ün diğer özelliklerini keşfetmeyi unutmayın.
 
-### SSS'ler
+## SSS'ler
 
-#### S: Aspose.Words for .NET belgesine nasıl yorum ekleyebilirim?
+### Aspose.Words for .NET nedir?
 
-C: Aspose.Words for .NET belgesine yorum eklemek için eğitimde belirtilen adımları izlemeniz gerekir.
+Aspose.Words for .NET, geliştiricilerin .NET dillerini kullanarak Word belgelerini programlı olarak oluşturmasına, yönetmesine ve dönüştürmesine olanak tanıyan güçlü bir API'dir.
 
-#### S: Aspose.Words for .NET'te yorum metnini formatlayabilir miyim?
+### Tek bir belgeye birden fazla yorum ekleyebilir miyim?
 
-C: Evet, Aspose.Words for .NET'te mevcut formatlama özelliklerini kullanarak yorum metnini formatlayabilirsiniz.
+Evet, farklı paragraflara veya metin dizilerine yorum oluşturma ve ekleme işlemini tekrarlayarak tek bir belgeye birden fazla yorum ekleyebilirsiniz.
 
-#### S: Bir belgede bulunan tüm yorumları nasıl alabilirim?
+### Yorumların görünümünü nasıl özelleştirebilirim?
 
- C: Bir belgede bulunan tüm yorumları aşağıdaki komutu kullanarak alabilirsiniz:`Document.Comments` mülk.
+Aspose.Words yorumların içeriğine ve yapısına odaklanırken görünüm, Word'ün yerleşik biçimlendirme özellikleri kullanılarak özelleştirilebilir.
 
-#### S: Aspose.Words for .NET'te belirli bir yorumu silebilir miyim?
+### Yorumları programlı olarak kaldırmak mümkün mü?
 
- C: Evet, Aspose.Words for .NET'te belirli bir yorumu aşağıdaki komutu kullanarak kaldırabilirsiniz:`Comment.Remove` yöntem.
+Evet, belgedeki yorumları yineleyerek ve gerektiğinde kaldırarak yorumları programlı bir şekilde kaldırabilirsiniz.
 
-#### S: Aspose.Words for .NET'te mevcut bir yorumun metnini nasıl değiştirebilirim?
+### Yorumlara yanıt ekleyebilir miyim?
 
- C: Aspose.Words for .NET'te mevcut bir yorumun metnini değiştirmek için`Comment.Text` karşılık gelen mülk`Comment` nesneyi seçin ve metni gerektiği gibi değiştirin.
+Aspose.Words, zincir halindeki yorumlarla çalışmanıza olanak tanıyarak, daha ayrıntılı tartışmalar için mevcut yorumlara yanıtlar eklemenizi sağlar.

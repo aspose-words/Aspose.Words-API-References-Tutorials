@@ -127,7 +127,7 @@ Evet, Aspose.Words for .NET çubuk, sütun, pasta ve daha fazlasını içeren ç
 ### Aspose.Words for .NET için nasıl geçici lisans alabilirim?
  Geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
-### Veri etiketlerini Excel'deki kaynak hücrelere bağlamak mümkün müdür?
+### Veri etiketlerini Excel'deki kaynak hücrelere bağlamak mümkün mü?
 Evet, veri etiketlerini kaynak hücrelere bağlayarak sayı biçiminin kaynak hücreden devralınmasına olanak tanıyabilirsiniz.
 
 ### Aspose.Words for .NET için daha ayrıntılı belgeleri nerede bulabilirim?

@@ -2,123 +2,125 @@
 title: ドキュメントビルダーを使用せずに TOA フィールドを挿入する
 linktitle: ドキュメントビルダーを使用せずに TOA フィールドを挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、ドキュメント ビルダーを使用せずに TOA フィールドを挿入する手順ガイド。
+description: Aspose.Words for .NET でドキュメント ビルダーを使用せずに TOA フィールドを挿入する方法を学びます。法的引用を効率的に管理するには、ステップ バイ ステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## 導入
 
-ここでは、Aspose.Words for .NET の「TOA フィールド挿入」機能を使用する以下の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。目的の結果を得るには、各ステップを慎重に実行してください。
+Word 文書に引用文献一覧 (TOA) フィールドを作成するのは、複雑なパズルを組み立てるような作業です。しかし、Aspose.Words for .NET を使用すると、プロセスはスムーズかつ簡単になります。この記事では、ドキュメント ビルダーを使用せずに TOA フィールドを挿入する手順を説明します。これにより、Word 文書内で引用文献や法的な参照を簡単に管理できるようになります。
 
-## ステップ1: ドキュメントディレクトリの設定
+## 前提条件
 
-提供されたコードでは、ドキュメントのディレクトリを指定する必要があります。値「YOUR DOCUMENT DIRECTORY」をドキュメント ディレクトリへの適切なパスに置き換えます。
+チュートリアルに進む前に、必要な基本事項について説明しましょう。
+
+-  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。[Aspose ウェブサイト](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio などの .NET 互換 IDE。
+- 基本的な C# の知識: 基本的な C# の構文と概念を理解しておくと役立ちます。
+- サンプル Word 文書: TOA フィールドを挿入する場所にサンプル文書を作成するか、用意しておきます。
+
+## 名前空間のインポート
+
+開始するには、Aspose.Words ライブラリから必要な名前空間をインポートする必要があります。このセットアップにより、ドキュメント操作に必要なすべてのクラスとメソッドにアクセスできるようになります。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## ステップ2: 文書と段落を作成する
+プロセスをシンプルでわかりやすいステップに分解してみましょう。各段階をガイドしながら、各コードが何を実行し、それが TOA フィールドの作成にどのように貢献するかを説明します。
 
-まず、新しいドキュメントを作成し、段落を初期化します。
+## ステップ1: ドキュメントを初期化する
+
+まず、インスタンスを作成する必要があります`Document`クラス。このオブジェクトは、作業中の Word 文書を表します。
 
 ```csharp
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## ステップ3: TAフィールドの挿入
+このコードは、新しい Word 文書を初期化します。コンテンツを追加する空白のキャンバスを作成するものと考えることができます。
 
-FieldTA クラスを使用して、段落に TA フィールドを挿入します。
+## ステップ2: TAフィールドを作成して構成する
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## ステップ4: 文書の本文に段落を追加する
-
-TA フィールドを含む段落をドキュメントの本文に追加します。
+次に、TA (Table of Authorities) フィールドを追加します。このフィールドは、TOA に表示されるエントリをマークします。
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## ステップ5: TOAフィールドの段落を作成する
-
-TOA フィールドに新しい段落を作成します。
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## ステップ6: TOAフィールドの挿入
-
-FieldToa クラスを使用して、段落に TOA フィールドを挿入します。
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## ステップ7: 文書の本文に段落を追加する
-
-TOA フィールドを含む段落をドキュメントの本文に追加します。
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## ステップ8: TOAフィールドを更新する
-
-最後に、`Update()`TOA フィールドを更新する方法。
-
-```csharp
-fieldToa.Update();
-```
-
-### Aspose.Words for .NET を使用した Document Builder なしの TOA フィールド挿入のソース コード例
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
-//TA フィールドと TOA フィールドを次のように挿入します。
+// TA フィールドと TOA フィールドを次のように挿入します。
 // { TA \c 1 \l "値 0" }
-// {TOA \c 1}
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+内訳は次のとおりです。
+- Paragraph para = new Paragraph(doc);: ドキュメント内に新しい段落を作成します。
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: 段落にTAフィールドを追加します。`FieldType.FieldTOAEntry`これは TOA エントリ フィールドであることを指定します。
+- fieldTA.EntryCategory = "1";: エントリ カテゴリを設定します。これは、さまざまな種類のエントリを分類するのに役立ちます。
+- fieldTA.LongCitation = "Value 0";: 長い引用テキストを指定します。これは TOA に表示されるテキストです。
+- doc.FirstSection.Body.AppendChild(para);: TA フィールドを含む段落をドキュメントの本文に追加します。
+
+## ステップ3: TOAフィールドを追加する
+
+ここで、すべての TA エントリをテーブルにコンパイルする実際の TOA フィールドを挿入します。
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### よくある質問
+このステップでは、次の操作を行います。
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);: TOA フィールドを段落に追加します。
+- fieldToa.EntryCategory = "1";: カテゴリ「1」でマークされたエントリのみを含むようにエントリをフィルタリングします。
 
-#### Q: Aspose.Words for .NET を使用して Word 文書に挿入された TOA フィールドの外観をカスタマイズするにはどうすればよいですか?
+## ステップ4: TOAフィールドを更新する
 
- A: 挿入されたTOAフィールドの外観は、`FieldTOA`書式設定オプションを指定するオブジェクト。
+TOA フィールドを挿入した後、最新のエントリが反映されるように更新する必要があります。
 
-#### Q: Aspose.Words for .NET を使用して、単一の Word 文書に複数の TOA フィールドを追加できますか?
+```csharp
+fieldToa.Update();
+```
 
-A: はい、Aspose.Words for .NET を使用して、1 つの Word 文書に複数の TOA フィールドを追加できます。各フィールドに対して挿入手順を繰り返すだけです。
+このコマンドは TOA フィールドを更新し、マークされたすべてのエントリがテーブルに正しく表示されるようにします。
 
-#### Q: Aspose.Words for .NET を使用して TOA フィールドが Word 文書に正常に挿入されたかどうかを確認するにはどうすればよいですか?
+## ステップ5: ドキュメントを保存する
 
-A: TOA フィールドが正常に挿入されたかどうかを確認するには、ドキュメント コンテンツを参照して TOA フィールド インスタンスを検索します。
+最後に、新しく追加された TOA フィールドを含むドキュメントを保存します。
 
-#### Q: DocumentBuilder を使用せずに TOA フィールドを挿入すると、Aspose.Words for .NET による Word 文書の書式設定に影響しますか?
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-A: DocumentBuilder を使用せずに TOA フィールドを挿入しても、Word 文書の書式設定には直接影響しません。ただし、TOA フィールドの書式設定オプションは、文書全体の書式設定に影響を与える可能性があります。
+このコード行は、指定されたディレクトリにドキュメントを保存します。`"YOUR DOCUMENT DIRECTORY"`ファイルを保存する実際のパスを入力します。
+
+## 結論
+
+これで完了です。ドキュメント ビルダーを使用せずに、Word ドキュメントに TOA フィールドを正常に追加できました。これらの手順に従うことで、法務文書の引用を効率的に管理し、包括的な引用文献一覧を作成できます。Aspose.Words for .NET を使用すると、このプロセスがスムーズかつ効率的になり、複雑なドキュメント タスクを簡単に処理できるツールが提供されます。
+
+## よくある質問
+
+### 異なるカテゴリの複数の TA フィールドを追加できますか?
+はい、異なるカテゴリの複数のTAフィールドを追加できます。`EntryCategory`それに応じて財産。
+
+### TOA の外観をカスタマイズするにはどうすればよいですか?
+エントリの書式設定やカテゴリ ラベルなどの TOA フィールドのプロパティを変更することで、TOA の外観をカスタマイズできます。
+
+### TOA フィールドを自動的に更新することは可能ですか?
+ TOAフィールドを手動で更新することもできますが、`Update`メソッドでは、Aspose.Words は現在、ドキュメントの変更に対する自動更新をサポートしていません。
+
+### ドキュメントの特定の部分に TA フィールドをプログラムで追加できますか?
+はい、目的の段落またはセクションに TA フィールドを挿入することで、特定の場所に TA フィールドを追加できます。
+
+### 1 つのドキュメントで複数の TOA フィールドを処理するにはどうすればよいですか?
+異なるTOAフィールドを割り当てることで複数のTOAフィールドを管理できます。`EntryCategory`値を設定し、各 TOA フィールドがカテゴリに基づいてエントリをフィルター処理できるようにします。

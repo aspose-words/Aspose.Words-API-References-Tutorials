@@ -2,54 +2,42 @@
 title: Pole Zobrazit výsledky
 linktitle: Pole Zobrazit výsledky
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Průvodce krok za krokem pro zobrazení výsledků polí ve vašich dokumentech aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak aktualizovat a zobrazovat výsledky polí v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Ideální pro automatizaci dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/field-display-results/
 ---
+## Úvod
 
-Zde je podrobný návod k vysvětlení zdrojového kódu C# níže, který používá funkci "Zobrazit výsledky polí" Aspose.Words for .NET. Ujistěte se, že pečlivě dodržujete každý krok, abyste dosáhli požadovaných výsledků.
+Pokud jste někdy pracovali s dokumenty Microsoft Word, víte, jak výkonná pole mohou být. Jsou jako malé dynamické zástupné symboly, které mohou zobrazovat věci jako data, vlastnosti dokumentu nebo dokonce výpočty. Co se ale stane, když potřebujete aktualizovat tato pole a zobrazit jejich výsledky programově? To je místo, kde přichází Aspose.Words pro .NET. Tato příručka vás provede procesem aktualizace a zobrazení výsledků polí v dokumentech aplikace Word pomocí Aspose.Words pro .NET. Nakonec budete vědět, jak tyto úkoly snadno automatizovat, ať už se zabýváte složitým dokumentem nebo jednoduchou sestavou.
 
-## Krok 1: Nastavení adresáře dokumentů
+## Předpoklady
 
-V poskytnutém kódu musíte zadat adresář vašich dokumentů. Nahraďte hodnotu „VÁŠ ADRESÁŘ DOKUMENTŮ“ příslušnou cestou k adresáři vašich dokumentů.
+Než se ponoříte do kódu, ujistěte se, že máte vše nastaveno:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud jste jej ještě nenainstalovali, můžete jej získat z[Aspose webové stránky](https://releases.aspose.com/words/net/).
 
-## Krok 2: Načtení dokumentu
+2. Visual Studio: Pro psaní a spouštění kódu .NET budete potřebovat IDE jako Visual Studio.
 
-Prvním krokem je načtení dokumentu, ve kterém chcete zobrazit výsledky pole.
+3. Základní znalost C#: Tato příručka předpokládá, že máte základní znalosti o programování v C#.
 
-```csharp
-Document document = new Document(dataDir + "Miscellaneous fields.docx");
-```
+4. Dokument s poli: Vytvořte dokument aplikace Word s již vloženými některými poli. Můžete použít poskytnutý vzorový dokument nebo vytvořit dokument s různými typy polí.
 
-Nezapomeňte nahradit "Miscellaneous Fields.docx" názvem svého vlastního souboru.
+## Importovat jmenné prostory
 
-## Krok 3: Aktualizujte pole
-
- Používáme`UpdateFields()` metoda pro aktualizaci všech polí v dokumentu.
+Chcete-li začít pracovat s Aspose.Words for .NET, musíte do svého projektu C# importovat potřebné jmenné prostory. Tyto jmenné prostory poskytují přístup ke všem třídám a metodám, které budete potřebovat.
 
 ```csharp
-document. UpdateFields();
+using Aspose.Words;
+using Aspose.Words.Fields;
+using System;
 ```
 
-Tento krok je důležitý, protože zajišťuje správné zobrazení výsledků polí.
+## Krok 1: Vložte dokument
 
-## Krok 4: Zobrazení výsledků pole
+Nejprve musíte načíst dokument aplikace Word obsahující pole, která chcete aktualizovat a zobrazit.
 
- Používáme a`foreach` loop pro procházení všech polí v dokumentu a zobrazení jejich výsledků.
-
-```csharp
-foreach(Field field in document.Range.Fields)
-     Console.WriteLine(field.DisplayResult);
-```
-
- Při každé iteraci cyklu přistupujeme k`DisplayResult` vlastnost pole pro získání zobrazeného výsledku.
-
-### Příklad zdrojového kódu pro výsledky zobrazovaného pole s Aspose.Words pro .NET
+### Načítání dokumentu
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -57,33 +45,56 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Vložte dokument.
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
-
-// Aktualizujte pole.
-document. UpdateFields();
-
-// Zobrazení výsledků pole.
-foreach(Field field in document.Range.Fields)
-     Console.WriteLine(field.DisplayResult);
 ```
 
-V tomto příkladu jsme nahráli dokument, aktualizovali všechna pole a poté jsme cyklicky procházeli poli, abychom zobrazili jejich výsledky. Tento krok můžete přizpůsobit pomocí své vlastní logiky pro zpracování výsledků pole.
+ V tomto kroku vyměňte`"YOUR DOCUMENTS DIRECTORY"` s cestou, kde je dokument uložen. The`Document` třída se používá k načtení souboru aplikace Word do paměti.
 
-Tímto končí náš průvodce používáním funkce "Zobrazit výsledky pole" s Aspose.Words pro .NET.
+## Krok 2: Aktualizujte pole
 
-### FAQ
+Pole v dokumentech aplikace Word mohou být dynamická, což znamená, že nemusí vždy zobrazovat nejaktuálnější data. Chcete-li zajistit, aby byla všechna pole aktuální, musíte je aktualizovat.
 
-#### Otázka: Co je pole zobrazení výsledku v Aspose.Words?
+### Aktualizace polí
 
-Odpověď: Pole zobrazení výsledku v Aspose.Words je typ pole, které zobrazuje výsledek operace nebo výpočtu v dokumentu aplikace Word. Pole zobrazení výsledku lze například použít k zobrazení součtu několika hodnot nebo výsledku matematického vzorce.
+```csharp
+//Aktualizujte pole.
+document.UpdateFields();
+```
 
-#### Otázka: Jak aktualizovat pole zobrazení výsledků v dokumentu aplikace Word pomocí Aspose.Words?
+ The`UpdateFields` metoda iteruje všechna pole v dokumentu a aktualizuje je nejnovějšími daty. Tento krok je zásadní, pokud vaše pole závisí na dynamickém obsahu, jako jsou data nebo výpočty.
 
-Odpověď: Chcete-li aktualizovat pole zobrazení výsledků v dokumentu aplikace Word pomocí Aspose.Words, můžete použít metodu UpdateFields. Tato metoda prochází dokumentem a aktualizuje všechna pole, včetně polí zobrazení výsledků, přičemž přepočítává hodnoty na základě aktuálních dat.
+## Krok 3: Zobrazení výsledků pole
 
-#### Otázka: Mohu formátovat výsledek zobrazený v poli zobrazení výsledku?
+Nyní, když jsou vaše pole aktualizována, můžete přistupovat k jejich výsledkům a zobrazovat je. To je užitečné pro ladění nebo pro generování sestav, které obsahují hodnoty polí.
 
-Odpověď: Ano, výsledek zobrazený v poli zobrazení výsledku můžete formátovat pomocí příslušné syntaxe pro určení formátu. Můžete například formátovat čísla s určitým počtem desetinných míst nebo použít vlastní formáty data.
+### Zobrazení výsledků pole
 
-#### Otázka: Jak mohu odstranit pole zobrazení výsledku z dokumentu aplikace Word pomocí Aspose.Words?
+```csharp
+// Zobrazit výsledky pole.
+foreach (Field field in document.Range.Fields)
+{
+    Console.WriteLine(field.DisplayResult);
+}
+```
 
-Odpověď: Chcete-li odstranit pole zobrazení výsledku z dokumentu aplikace Word pomocí Aspose.Words, můžete použít metodu Odebrat. Tato metoda odebere pole a nahradí jej jeho statickým výsledkem.
+ The`DisplayResult` majetek z`Field` class vrátí formátovanou hodnotu pole. The`foreach` smyčka prochází všechna pole v dokumentu a vytiskne jejich výsledky.
+
+## Závěr
+
+Aktualizace a zobrazení výsledků polí v dokumentech aplikace Word pomocí Aspose.Words for .NET je přímočarý proces, který vám může ušetřit spoustu času. Ať už pracujete s dynamickým obsahem nebo generujete složité sestavy, tyto kroky vám pomohou efektivně spravovat a prezentovat vaše data. Podle této příručky můžete zautomatizovat únavnou aktualizaci polí a zajistit, aby vaše dokumenty vždy odrážely nejnovější informace.
+
+## FAQ
+
+### Jaké typy polí mohu aktualizovat pomocí Aspose.Words for .NET?  
+Můžete aktualizovat různé typy polí, včetně polí data, vlastností dokumentu a polí vzorců.
+
+### Musím dokument po aktualizaci polí uložit?  
+ Ne, volám`UpdateFields` neuloží dokument automaticky. Použijte`Save` způsob uložení změn.
+
+### Mohu aktualizovat pole v konkrétní části dokumentu?  
+ Ano, můžete použít`Document.Sections` pro přístup ke konkrétním sekcím a aktualizaci polí v nich.
+
+### Jak zpracuji pole, která vyžadují vstup uživatele?  
+Pole vyžadující vstup uživatele (jako pole formuláře) bude nutné vyplnit ručně nebo pomocí dodatečného kódu.
+
+### Je možné zobrazit výsledky polí v jiném formátu?  
+ The`DisplayResult` vlastnost poskytuje formátovaný výstup. Pokud potřebujete jiný formát, zvažte další zpracování na základě vašich požadavků.

@@ -11,7 +11,7 @@ url: /ko/net/programming-with-bookmarks/bookmark-table-columns/
 
 문서 자동화 기술을 향상시키고 싶다면 좋은 선택이 될 것입니다. 이 튜토리얼은 Aspose.Words for .NET을 사용하여 Word 문서의 테이블 열을 북마크하는 과정을 안내합니다. 다이빙할 준비가 되셨나요? 시작하자!
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 준비해야 할 몇 가지 사항이 있습니다.
 

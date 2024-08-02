@@ -66,7 +66,7 @@ builder.writeln("In this tutorial, we will explore how to use the Content Builde
 builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 ```
 
-您可以根据需要插入不同类型的分节符，例如`SECTION_BREAK_NEW_PAGE`, `SECTION_BREAK_CONTINUOUS` ， 或者`SECTION_BREAK_EVEN_PAGE`.
+您可以根据需要插入不同类型的分节符，例如`SECTION_BREAK_NEW_PAGE`, `SECTION_BREAK_CONTINUOUS`， 或者`SECTION_BREAK_EVEN_PAGE`.
 
 ## 用例示例：创建简历
 

@@ -2,118 +2,111 @@
 title: Kérje le a körlevél mezőneveket
 linktitle: Kérje le a körlevél mezőneveket
 second_title: Aspose.Words Document Processing API
-description: Az Aspose.Words for .NET segítségével megtudhatja, hogyan töltheti be a körlevél-mezőneveket Word-dokumentumaiba.
+description: Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan vonhatja ki a körlevél-mezők neveit Word-dokumentumból az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/working-with-fields/get-mail-merge-field-names/
 ---
+## Bevezetés
 
-Íme egy lépésről lépésre bemutatott útmutató az alábbi C# forráskód magyarázatához, amely az Aspose.Words for .NET "Get Merge Field Names" funkcióját használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
+Üdvözöljük ebben az útmutatóban, amely az Aspose.Words for .NET segítségével kivonja a körlevél-mezőneveket Word-dokumentumból. Akár személyre szabott leveleket, akár egyéni jelentéseket készít, akár egyszerűen automatizálja a dokumentumok munkafolyamatait, a körlevél-mezők elengedhetetlenek. Helyőrzőként működnek a dokumentumban, amelyeket valós adatokkal helyettesítenek az egyesítési folyamat során. Ha az Aspose.Words for .NET programmal dolgozik, szerencséje van – ez a hatékony könyvtár hihetetlenül egyszerűvé teszi az interakciót ezekkel a mezőkkel. Ebben az oktatóanyagban egy egyszerű, de hatékony módszert mutatunk be a dokumentumban lévő körlevél-mezők nevének lekérésére, amely lehetővé teszi a körlevél-műveletek jobb megértését és kezelését.
 
-## 1. lépés: Dokumentumkönyvtár beállítása
+## Előfeltételek
 
-A megadott kódban meg kell adnia dokumentumai könyvtárát. Cserélje le a „DOKUMENTUMKÖNYVTÁR” értéket a dokumentumkönyvtár megfelelő elérési útjára.
+Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor letöltheti a[Aspose honlapja](https://releases.aspose.com/words/net/).
 
-## 2. lépés: A dokumentum betöltése
+2. Fejlesztői környezet: A .NET-hez be kell állítani egy fejlesztői környezetet, például a Visual Studio-t.
 
-Első lépésként töltse be azt a dokumentumot, ahonnan az egyesítési mezők neveit szeretné lekérni.
+3. Word-dokumentum körlevél-mezőkkel: Készítsen Word-dokumentumot, amely körlevél-mezőket tartalmaz. Ezzel a dokumentummal fog dolgozni a mezőnevek kinyeréséhez.
 
-```csharp
-Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
-```
+4. Alapvető C# ismeretek: A C# és .NET programozás ismerete hasznos lesz a példák mellett.
 
-Feltétlenül cserélje ki a „DOKUMENTUMFÁJL” elemet a saját fájl nevére.
+## Névterek importálása
 
-## 3. lépés: Szerezzen be egyesítési mezőneveket
-
- Használjuk a`GetFieldNames()` metódussal kap egy tömböt, amely a dokumentumban található egyesítési mezők neveit tartalmazza.
+A kezdéshez importálnia kell a szükséges névtereket a C# kódba. Ez lehetővé teszi az Aspose.Words funkció elérését. A következőképpen veheti fel őket:
 
 ```csharp
-string[] fieldNames = doc.MailMerge.GetFieldNames();
+using Aspose.Words;
+using System;
 ```
 
- A`fieldNames` változó mostantól tartalmazza az egyesítési mezők nevét.
+ A`Aspose.Words` A névtér hozzáférést biztosít a Word dokumentumok kezeléséhez szükséges összes osztályhoz és metódushoz`System` olyan alapvető funkciókhoz használják, mint a konzol kimenet.
 
-### Forráskód-példa az Aspose.Words .NET-hez tartozó egyesített mezőnevek lekéréséhez
+Bontsuk le a körlevél-mezőnevek kibontásának folyamatát egy világos, lépésenkénti útmutatóban.
+
+## 1. lépés: Határozza meg a dokumentumkönyvtárat
+
+Címsor: Adja meg a dokumentumok elérési útját
+
+Először is be kell állítania annak a könyvtárnak az elérési útját, ahol a Word-dokumentum található. Ez döntő fontosságú, mert megmondja az alkalmazásnak, hogy hol találja a fájlt. Íme, hogyan kell csinálni:
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Cserélje ki`"YOUR DOCUMENTS DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található. Ez valami ilyesmi lehet`"C:\\Documents\\MyDoc.docx"`.
+
+## 2. lépés: Töltse be a dokumentumot
+
+Címsor: Töltse be a Word dokumentumot
+
+ Ezután betölti a dokumentumot a`Document` osztály által biztosított Aspose.Words. Ez lehetővé teszi, hogy programozottan kommunikáljon a dokumentummal.
+
+```csharp
 // Töltse be a dokumentumot.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
+```
 
+ Cserélje ki`"YOUR DOCUMENT FILE"` a Word dokumentumfájl nevével, mint pl`"example.docx"`. Ez a kódsor beolvassa a dokumentumot a megadott könyvtárból, és előkészíti a további manipulációra.
+
+## 3. lépés: Keresse le a körlevél mezőneveket
+
+Címsor: Körlevél-mezőnevek kibontása
+
+ Most készen áll a dokumentumban található körlevél-mezők nevének lekérésére. Itt ragyog Aspose.Words – annak`MailMerge` osztály egyszerű módot biztosít a mezőnevek lekérésére.
+
+```csharp
 // Az egyesítési mezők neveinek lekérése.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
+```
 
+ A`GetFieldNames()` metódus karakterláncok tömbjét adja vissza, amelyek mindegyike a dokumentumban található körlevél-mezőnevet képviseli. Ezek azok a helyőrzők, amelyeket a Word-dokumentumban láthat.
+
+## 4. lépés: Jelenítse meg az egyesítési mezők számát
+
+Címsor: adja meg a mezők számát
+
+A mezőnevek sikeres lekérésének ellenőrzéséhez a konzol segítségével megjelenítheti a mezők számát.
+
+```csharp
 // Az egyesítési mezők számának megjelenítése.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- Ebben a példában betöltöttünk egy dokumentumot, és az összevonási mezők neveit a`GetFieldNames()` módszert, és megjelenítette a dokumentumban található egyesítési mezők számát.
+Ez a kódsor kinyomtatja a dokumentumban lévő körlevél-mezők teljes számát, így segít ellenőrizni, hogy a kibontási folyamat megfelelően működött.
 
-Ezzel véget is értünk az Aspose.Words for .NET-hez készült "Get Merge Field Names" funkció használatáról szóló útmutatónkat.
+## Következtetés
 
-### GYIK
+Gratulálunk! Most megtanulta, hogyan lehet kivonatolni a körlevél-mezők neveit Word-dokumentumból az Aspose.Words for .NET segítségével. Ez a technika értékes eszköz a dokumentumok munkafolyamatainak kezelésére és automatizálására, megkönnyítve a személyre szabott tartalmak kezelését. Ha követi ezeket a lépéseket, hatékonyan azonosíthatja és kezelheti a dokumentumok körlevél-mezőit.
 
-#### 1. kérdés: Mi az a körlevél az Aspose.Words programban?
+ Ha bármilyen kérdése van, vagy további segítségre van szüksége, keresse fel a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy csatlakozzon a[Aspose közösség](https://forum.aspose.com/c/words/8) támogatásért. Boldog kódolást!
 
-Az Aspose.Words levelezőegyesítése egy olyan folyamat, amely külső forrásból (pl. Excel-táblázatból vagy adatbázisból) származó adatokat egyesít egy Word-dokumentum sablonnal, így személyre szabott dokumentumokat hozhat létre. Ez megkönnyíti a levelek, jelentések és más hasonló dokumentumok automatikus generálását.
+## GYIK
 
-#### 2. kérdés: Hogyan kaphatom meg a Word-dokumentumban elérhető körlevél-mezők listáját?
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását és kezelését .NET-alkalmazásokban.
 
-A Word-dokumentumban elérhető körlevél-mezők listájának megtekintéséhez kövesse az alábbi lépéseket:
+### Hogyan juthatok hozzá az Aspose.Words ingyenes próbaverziójához?
+ Ingyenes próbaverziót kaphat, ha felkeresi a[Az Aspose kiadási oldala](https://releases.aspose.com/).
 
-1. Importálja a Document és MailMergeFieldNames osztályokat az Aspose.Words névtérből.
-2. Hozzon létre egy dokumentumpéldányt a Word-dokumentum betöltésével.
-3. Használja a Dokumentum objektum GetMailMergeFieldNames metódusát az elérhető körlevél-mezők listájának lekéréséhez.
+### Használhatom az Aspose.Words-t licenc megvásárlása nélkül?
+ Igen, használhatja a próbaidőszak alatt, de a folyamatos használathoz licencet kell vásárolnia a[Aspose vásárlási oldala](https://purchase.aspose.com/buy).
 
-Íme egy mintakód a folyamat szemléltetésére:
+### Mi a teendő, ha problémákat tapasztalok az Aspose.Words programmal?
+ Támogatásért látogassa meg a[Aspose fórum](https://forum.aspose.com/c/words/8) ahol kérdéseket tehet fel, és segítséget kérhet a közösségtől.
 
-```csharp
-// Importálja a szükséges névtereket
-using Aspose.Words;
-using Aspose.Words.MailMerging;
-
-// Töltse be a meglévő dokumentumot
-Document document = new Document("FilePath");
-
-// Lekérheti a körlevél mezők listáját
-MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
-
-// Váltson végig az elérhető körlevél-mezőkön
-foreach (string fieldName in fieldNames)
-{
-     // Csináljon valamit a mező nevével
-     Console.WriteLine(fieldName);
-}
-```
-### GYIK
-
-#### K: Mi az a körlevél az Aspose.Words programban?
-
-V: Az Aspose.Words körlevél-összevonása egy olyan folyamat, amely külső forrásból (pl. Excel-táblázatból vagy adatbázisból) származó adatokat egyesít egy Word dokumentumsablonnal, így személyre szabott dokumentumokat hozhat létre. Ez megkönnyíti a levelek, jelentések és más hasonló dokumentumok automatikus generálását.
-
-#### K: Hogyan kaphatom meg a Word-dokumentumban elérhető körlevél-mezők listáját?
-
-V: A Word-dokumentumban elérhető körlevél-mezők listájának megtekintéséhez kövesse az alábbi lépéseket:
-
-1. Importálja a Document és MailMergeFieldNames osztályokat az Aspose.Words névtérből.
-2. Hozzon létre egy dokumentumpéldányt a Word-dokumentum betöltésével.
-3. Használja a Dokumentum objektum GetMailMergeFieldNames metódusát az elérhető körlevél-mezők listájának lekéréséhez.
-
-#### K: Kaphatok-e körlevél-mezőket külső adatforrásból, például Excel-táblázatból?
-
-V: Igen, lekérheti a körlevél mezőket külső adatforrásból, például Excel-táblázatból. Ehhez használhatja az Aspose.Words adat-összerendelési szolgáltatásait, hogy kapcsolatot létesítsen az adatforrással, és lekérje az elérhető mezők nevét.
-
-#### K: Lehetséges-e bizonyos kritériumok alapján szűrni a körlevél-mezőket?
-
-V: Igen, lehetséges a körlevél mezők szűrése bizonyos kritériumok alapján. Használhat reguláris kifejezéseket vagy speciális feltételeket a körlevél-mezők szűrésére, és csak azokat kaphatja meg, amelyek megfelelnek az adott feltételeknek.
-
-#### K: Hogyan kezelhetem az Aspose.Words körlevél-egyesítési mezőit?
-
-V: Az Aspose.Words körlevél-mezőinek kezeléséhez használhatja a Document és MailMergeField objektumok által biztosított metódusokat és tulajdonságokat. Hozzáadhat, eltávolíthat vagy frissíthet körlevél-mezőket, valamint lekérheti és szerkesztheti a mezőkkel társított értékeket.
+### Hogyan szerezhetek ideiglenes licencet az Aspose.Words számára?
+ Ideiglenes jogosítványt igényelhetsz[Aspose ideiglenes licenc oldala](https://purchase.aspose.com/temporary-license/).

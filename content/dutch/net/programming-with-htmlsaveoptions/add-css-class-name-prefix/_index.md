@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## Stap 5: Controleer de uitvoer
 
- Nadat u uw project hebt uitgevoerd, navigeert u naar uw`Documents` map. Je zou een HTML-bestand moeten vinden met de naam`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Open dit bestand in een teksteditor of browser om te controleren of de CSS-klassen het voorvoegsel hebben`pfx_`.
+ Nadat u uw project heeft uitgevoerd, navigeert u naar uw`Documents` map. Je zou een HTML-bestand moeten vinden met de naam`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Open dit bestand in een teksteditor of browser om te controleren of de CSS-klassen het voorvoegsel hebben`pfx_`.
 
 ## Conclusie
 

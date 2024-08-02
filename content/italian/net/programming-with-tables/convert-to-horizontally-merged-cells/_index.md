@@ -2,55 +2,82 @@
 title: Converti in celle unite orizzontalmente
 linktitle: Converti in celle unite orizzontalmente
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come convertire le celle della tabella in celle unite orizzontalmente in un documento Word con Aspose.Words per .NET.
+description: Converti celle unite verticalmente in celle unite orizzontalmente nei documenti Word utilizzando Aspose.Words per .NET. Guida passo passo per un layout della tabella senza interruzioni.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
+## introduzione
 
-In questo tutorial impareremo come utilizzare Aspose.Words per .NET per convertire le celle della tabella in celle unite orizzontalmente in un documento Word. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzionalità. Alla fine di questo tutorial, sarai in grado di manipolare le celle della tabella nei tuoi documenti Word a livello di codice.
+Quando si lavora con le tabelle nei documenti Word, spesso è necessario gestire l'unione delle celle per ottenere un layout più pulito e organizzato. Aspose.Words per .NET fornisce un modo potente per convertire celle unite verticalmente in celle unite orizzontalmente, assicurando che la tua tabella abbia l'aspetto desiderato. In questo tutorial ti guideremo attraverso il processo passo dopo passo.
 
-## Passaggio 1: impostazione del progetto
-1. Avvia Visual Studio e crea un nuovo progetto C#.
-2. Aggiungi un riferimento alla libreria Aspose.Words per .NET.
+## Prerequisiti
 
-## Passaggio 2: caricamento del documento e accesso alla tabella
-Per avviare l'elaborazione testi con la tabella, dobbiamo caricare il documento che la contiene e accedervi. Segui questi passi:
+Prima di immergerci nel codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
+
+1.  Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words per .NET. Puoi scaricarlo da[pagina di rilascio](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: un ambiente di sviluppo come Visual Studio.
+3. Conoscenza di base di C#: familiarità con il linguaggio di programmazione C#.
+
+## Importa spazi dei nomi
+
+Innanzitutto, dobbiamo importare gli spazi dei nomi necessari per il nostro progetto. Questo ci consentirà di utilizzare le funzionalità di Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Suddividiamo il processo in semplici passaggi per renderlo facile da seguire.
+
+## Passaggio 1: carica il documento
+
+Per prima cosa devi caricare il documento contenente la tabella che desideri modificare. Questo documento dovrebbe già esistere nella directory del tuo progetto.
 
 ```csharp
 // Percorso della directory dei documenti
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Caricare il documento
 Document doc = new Document(dataDir + "Table with merged cells.docx");
+```
 
-// Accesso all'array
+## Passaggio 2: accedi alla tabella
+
+Successivamente, dobbiamo accedere alla tabella specifica all'interno del documento. In questo caso presupponiamo che la tabella si trovi nella prima sezione del documento.
+
+```csharp
+// Accedi alla prima tabella del documento
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti. Inoltre, assicurati che il documento contenga una tabella con celle unite orizzontalmente.
+## Passaggio 3: Converti in celle unite orizzontalmente
 
-## Passaggio 3: converti in celle unite orizzontalmente
- Successivamente, convertiremo le celle della tabella in celle unite orizzontalmente utilizzando il comando`ConvertToHorizontallyMergedCells()` metodo. Utilizza il seguente codice:
-
-```csharp
-// Converti in celle unite orizzontalmente
-table. ConvertToHorizontallyMergedCells();
-```
-
- Qui chiamiamo semplicemente il`ConvertToHorizontallyMergedCells()` metodo sull'array per eseguire la conversione.
-
-### Codice sorgente di esempio per Converti in celle unite orizzontalmente utilizzando Aspose.Words per .NET 
+ Ora convertiremo le celle unite verticalmente nella tabella in celle unite orizzontalmente. Questo viene fatto utilizzando il`ConvertToHorizontallyMergedCells` metodo.
 
 ```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table with merged cells.docx");
-	Table table = doc.FirstSection.Body.Tables[0];
-	// Ora le celle unite hanno i flag di unione appropriati.
-	table.ConvertToHorizontallyMergedCells();
+// Converti celle unite verticalmente in celle unite orizzontalmente
+table.ConvertToHorizontallyMergedCells();
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come convertire le celle della tabella in celle unite orizzontalmente in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo e implementando il codice C# fornito, puoi manipolare le celle della tabella nei documenti Word a livello di codice. Questa funzionalità ti consente di gestire e organizzare i tuoi dati in modo flessibile e personalizzato in una tabella.
+
+E questo è tutto! Hai convertito con successo le celle unite verticalmente in celle unite orizzontalmente in un documento Word utilizzando Aspose.Words per .NET. Questo metodo garantisce che le tabelle siano ben organizzate e più facili da leggere. Seguendo questi passaggi, puoi personalizzare e manipolare i tuoi documenti Word per soddisfare le tue esigenze specifiche.
+
+## Domande frequenti
+
+### Posso utilizzare Aspose.Words per .NET con altri linguaggi di programmazione?  
+Aspose.Words per .NET è progettato principalmente per linguaggi .NET come C#. Tuttavia, puoi usarlo con altri linguaggi supportati da .NET come VB.NET.
+
+### È disponibile una prova gratuita per Aspose.Words per .NET?  
+ Sì, puoi scaricare un file[prova gratuita](https://releases.aspose.com/) dal sito Aspose.
+
+### Come posso ottenere supporto se riscontro problemi?  
+ Puoi visitare il[Aspose forum di supporto](https://forum.aspose.com/c/words/8) per assistenza.
+
+### Posso applicare una licenza da un file o da uno stream?  
+Sì, Aspose.Words per .NET ti consente di applicare una licenza sia da un file che da uno stream. Puoi trovare maggiori informazioni in[documentazione](https://reference.aspose.com/words/net/).
+
+### Quali altre funzionalità offre Aspose.Words per .NET?  
+ Aspose.Words per .NET offre un'ampia gamma di funzionalità tra cui la generazione, la manipolazione, la conversione e il rendering di documenti. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.

@@ -73,7 +73,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 Далее нам нужно настроить параметры сохранения HTML, чтобы включить префикс имени класса CSS.
 
-### Шаг 3.1. Создайте параметры сохранения HTML.
+### Шаг 3.1: Создайте параметры сохранения HTML
 
  Создайте экземпляр`HtmlSaveOptions` объект и установите тип таблицы стилей CSS на`External`.
 
@@ -126,4 +126,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  Абсолютно! Вы можете сохранить документ в потоке, передав объект потока в`Save` метод.
 
 ### Как мне получить поддержку, если у меня возникнут проблемы?
- Вы можете получить поддержку от[Aspose форум](https://forum.aspose.com/c/words/8).
+ Вы можете получить поддержку от[Форум Aspose](https://forum.aspose.com/c/words/8).

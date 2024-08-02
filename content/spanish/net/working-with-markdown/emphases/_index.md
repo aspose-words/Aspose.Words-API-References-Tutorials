@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### P: ¿Cómo resalto texto usando Markdown?
 
-R: Para resaltar texto usando Markdown, simplemente rodee el texto con los símbolos apropiados. Usar`*` o`_` para cursiva,`**` o`__` por negrita, y`~~` para tachado.
+ R: Para resaltar texto usando Markdown, simplemente rodee el texto con los símbolos apropiados. Usar`*` o`_` para cursiva,`**` o`__` por negrita, y`~~` para tachado.
 
 #### P: ¿Podemos combinar diferentes destacados en un mismo texto?
 

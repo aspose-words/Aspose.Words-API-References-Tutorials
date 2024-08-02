@@ -2,55 +2,82 @@
 title: Convertir en cellules fusionnées horizontalement
 linktitle: Convertir en cellules fusionnées horizontalement
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment convertir des cellules de tableau en cellules fusionnées horizontalement dans un document Word avec Aspose.Words pour .NET.
+description: Convertissez les cellules fusionnées verticalement en cellules fusionnées horizontalement dans les documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape pour une disposition de table transparente.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
+## Introduction
 
-Dans ce didacticiel, nous apprendrons comment utiliser Aspose.Words for .NET pour convertir les cellules d'un tableau en cellules fusionnées horizontalement dans un document Word. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure de manipuler par programme les cellules d’un tableau de vos documents Word.
+Lorsque vous travaillez avec des tableaux dans des documents Word, vous devez souvent gérer la fusion de cellules pour obtenir une mise en page plus propre et plus organisée. Aspose.Words for .NET fournit un moyen puissant de convertir des cellules fusionnées verticalement en cellules fusionnées horizontalement, garantissant ainsi que votre tableau ressemble exactement à ce que vous souhaitez. Dans ce didacticiel, nous vous guiderons pas à pas tout au long du processus.
 
-## Étape 1 : Configuration du projet
-1. Lancez Visual Studio et créez un nouveau projet C#.
-2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
+## Conditions préalables
 
-## Étape 2 : Chargement du document et accès au tableau
-Pour démarrer le traitement de texte avec le tableau, nous devons charger le document qui le contient et y accéder. Suivez ces étapes:
+Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
+
+1.  Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Vous pouvez le télécharger depuis le[page de sortie](https://releases.aspose.com/words/net/).
+2. Environnement de développement : un environnement de développement comme Visual Studio.
+3. Connaissance de base de C# : Familiarité avec le langage de programmation C#.
+
+## Importer des espaces de noms
+
+Tout d’abord, nous devons importer les espaces de noms nécessaires à notre projet. Cela nous permettra d'utiliser les fonctionnalités d'Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Décomposons le processus en étapes simples pour le rendre facile à suivre.
+
+## Étape 1 : Chargez votre document
+
+Tout d'abord, vous devez charger le document contenant le tableau que vous souhaitez modifier. Ce document devrait déjà exister dans le répertoire de votre projet.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Charger le document
 Document doc = new Document(dataDir + "Table with merged cells.docx");
+```
 
-// Accès au tableau
+## Étape 2 : accéder au tableau
+
+Ensuite, nous devons accéder au tableau spécifique dans le document. Ici, nous supposons que le tableau se trouve dans la première section du document.
+
+```csharp
+// Accéder au premier tableau du document
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel d'accès à votre répertoire de documents. Assurez-vous également que le document contient un tableau avec des cellules fusionnées horizontalement.
-
 ## Étape 3 : Convertir en cellules fusionnées horizontalement
- Ensuite, nous convertirons les cellules du tableau en cellules fusionnées horizontalement à l'aide du`ConvertToHorizontallyMergedCells()` méthode. Utilisez le code suivant :
+
+ Nous allons maintenant convertir les cellules fusionnées verticalement du tableau en cellules fusionnées horizontalement. Cela se fait en utilisant le`ConvertToHorizontallyMergedCells` méthode.
 
 ```csharp
-// Convertir en cellules fusionnées horizontalement
-table. ConvertToHorizontallyMergedCells();
-```
-
- Ici, nous appelons simplement le`ConvertToHorizontallyMergedCells()` méthode sur le tableau pour effectuer la conversion.
-
-### Exemple de code source pour convertir en cellules fusionnées horizontalement à l'aide d'Aspose.Words pour .NET 
-
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table with merged cells.docx");
-	Table table = doc.FirstSection.Body.Tables[0];
-	// Les cellules fusionnées ont désormais les indicateurs de fusion appropriés.
-	table.ConvertToHorizontallyMergedCells();
+// Convertir les cellules fusionnées verticalement en cellules fusionnées horizontalement
+table.ConvertToHorizontallyMergedCells();
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à convertir des cellules de tableau en cellules fusionnées horizontalement dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez manipuler les cellules de tableau dans vos documents Word par programme. Cette fonctionnalité vous permet de gérer et d'organiser vos données de manière flexible et personnalisée dans un tableau.
+
+Et c'est tout! Vous avez réussi à convertir des cellules fusionnées verticalement en cellules fusionnées horizontalement dans un document Word à l'aide d'Aspose.Words pour .NET. Cette méthode garantit que vos tableaux sont bien organisés et plus faciles à lire. En suivant ces étapes, vous pouvez personnaliser et manipuler vos documents Word pour répondre à vos besoins spécifiques.
+
+## FAQ
+
+### Puis-je utiliser Aspose.Words pour .NET avec d’autres langages de programmation ?  
+Aspose.Words for .NET est principalement conçu pour les langages .NET comme C#. Cependant, vous pouvez l'utiliser avec d'autres langages pris en charge par .NET comme VB.NET.
+
+### Existe-t-il un essai gratuit disponible pour Aspose.Words pour .NET ?  
+ Oui, vous pouvez télécharger un[essai gratuit](https://releases.aspose.com/) sur le site Web d'Aspose.
+
+### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?  
+ Vous pouvez visiter le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8) à l'aide.
+
+### Puis-je appliquer une licence à partir d’un fichier ou d’un flux ?  
+Oui, Aspose.Words for .NET vous permet d'appliquer une licence à la fois à partir d'un fichier et d'un flux. Vous pouvez trouver plus d'informations dans le[Documentation](https://reference.aspose.com/words/net/).
+
+### Quelles autres fonctionnalités Aspose.Words pour .NET offre-t-il ?  
+ Aspose.Words for .NET offre un large éventail de fonctionnalités, notamment la génération, la manipulation, la conversion et le rendu de documents. Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.

@@ -11,7 +11,7 @@ url: /ko/net/basic-conversions/docx-to-epub/
 
 .NET 개발 영역에서 Word 문서를 효율적으로 조작하는 것은 많은 응용 프로그램에 매우 중요합니다. Aspose.Words for .NET은 DOCX 파일을 EPUB 형식으로 변환하는 것을 포함하여 문서 처리 작업을 단순화하는 강력한 도구 키트를 제공합니다. 이 튜토리얼은 .NET용 Aspose.Words를 사용하여 이를 달성하는 데 필요한 단계를 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 변환 프로세스를 시작하기 전에 다음 전제 조건이 설정되어 있는지 확인하세요.
 - 개발 환경: Visual Studio 또는 기타 .NET IDE가 설치되어 있습니다.

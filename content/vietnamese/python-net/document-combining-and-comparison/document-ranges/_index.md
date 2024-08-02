@@ -133,7 +133,7 @@ for hyperlink in doc.range.get_child_nodes(NodeType.FIELD_HYPERLINK, True):
 
 ## Phần kết luận
 
-Điều hướng phạm vi tài liệu là một kỹ năng cần thiết để chỉnh sửa chính xác. Thư viện Aspose.Words for Python trao quyền cho các nhà phát triển các công cụ để điều hướng các đoạn văn, phần, bảng, v.v. Bằng cách nắm vững các kỹ thuật này, bạn sẽ hợp lý hóa quy trình chỉnh sửa của mình và tạo các tài liệu chuyên nghiệp một cách dễ dàng.
+Điều hướng phạm vi tài liệu là một kỹ năng cần thiết để chỉnh sửa chính xác. Thư viện Aspose.Words for Python trao quyền cho các nhà phát triển các công cụ để điều hướng các đoạn văn, phần, bảng, v.v. Bằng cách nắm vững các kỹ thuật này, bạn sẽ hợp lý hóa quy trình chỉnh sửa của mình và tạo tài liệu chuyên nghiệp một cách dễ dàng.
 
 ## Câu hỏi thường gặp
 
@@ -146,7 +146,7 @@ pip install aspose-words
 
 ### Tôi có thể trích xuất nội dung cụ thể từ một tài liệu không?
 
-Có, bạn có thể. Xác định phạm vi nội dung bằng kỹ thuật điều hướng tài liệu, sau đó trích xuất nội dung mong muốn bằng phạm vi đã xác định.
+Vâng, bạn có thể. Xác định phạm vi nội dung bằng kỹ thuật điều hướng tài liệu, sau đó trích xuất nội dung mong muốn bằng phạm vi đã xác định.
 
 ### Có thể hợp nhất nhiều tài liệu bằng Aspose.Words cho Python không?
 

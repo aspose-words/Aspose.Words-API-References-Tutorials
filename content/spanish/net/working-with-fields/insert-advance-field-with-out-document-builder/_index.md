@@ -2,104 +2,150 @@
 title: Insertar campo avanzado sin generador de documentos
 linktitle: Insertar campo avanzado sin generador de documentos
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo insertar un campo avanzado en sus documentos de Word con Aspose.Words para .NET.
+description: Aprenda cómo insertar un campo avanzado sin usar DocumentBuilder en Aspose.Words para .NET. Siga esta guía para mejorar sus habilidades de procesamiento de documentos.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
+## Introducción
 
-Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza la función "Inserción avanzada de campos sin DocumentBuilder" de Aspose.Words para .NET. Asegúrese de seguir cada paso cuidadosamente para obtener los resultados deseados.
+¿Está buscando mejorar la manipulación de sus documentos de Word utilizando Aspose.Words para .NET? Bueno, ¡estás en el lugar correcto! En este tutorial, lo guiaremos a través del proceso de insertar un campo avanzado en un documento de Word sin usar la clase DocumentBuilder. Al final de esta guía, tendrá una comprensión sólida de cómo lograr esto usando Aspose.Words para .NET. Entonces, ¡profundicemos y hagamos que el procesamiento de documentos sea aún más poderoso y versátil!
 
-## Paso 1: Configuración del directorio de documentos
+## Requisitos previos
 
-En el código proporcionado, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
+Antes de comenzar, asegúrese de tener lo siguiente:
+
+-  Aspose.Words para la biblioteca .NET: puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
+- Visual Studio: cualquier versión reciente servirá.
+- Conocimientos básicos de C#: este tutorial asume que tienes un conocimiento fundamental de la programación en C#.
+-  Licencia Aspose.Words: Obtenga una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/) si no tienes uno.
+
+## Importar espacios de nombres
+
+Antes de profundizar en el código, asegúrese de haber importado los espacios de nombres necesarios a su proyecto:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+## Paso 1: configura tu proyecto
+
+Primero lo primero, configuremos nuestro proyecto de Visual Studio.
+
+### Crear un nuevo proyecto
+
+1. Abra Visual Studio.
+2. Seleccione Crear un nuevo proyecto.
+3. Elija Aplicación de consola (.NET Core) y haga clic en Siguiente.
+4. Asigne un nombre a su proyecto y haga clic en Crear.
+
+### Instalar Aspose.Words para .NET
+
+1. Haga clic derecho en su proyecto en el Explorador de soluciones.
+2. Seleccione Administrar paquetes NuGet.
+3. Busque Aspose.Words e instale la última versión.
+
+## Paso 2: Inicializar documento y párrafo
+
+Ahora que nuestro proyecto está configurado, necesitamos inicializar un nuevo documento y un párrafo donde insertaremos el campo de avance.
+
+### Inicializar documento
+
+1.  En tus`Program.cs` archivo, comience creando un nuevo documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
 ```
 
-## Paso 2: crear el documento y el párrafo
+Esto configura un documento nuevo y vacío.
 
-Comenzamos creando un nuevo documento y buscando el primer párrafo.
+### Agregar un párrafo
+
+2. Obtenga el primer párrafo del documento:
 
 ```csharp
-Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Paso 3: Insertar el campo avanzado
+Esto asegura que tenemos un párrafo con el que trabajar.
 
- Usamos el`AppendField()` Método para insertar un campo avanzado en el párrafo.
+## Paso 3: inserte el campo avanzado
+
+Ahora, insertemos el campo de avance en nuestro párrafo.
+
+### Crear el campo
+
+1. Agregue el campo de avance al párrafo:
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-Luego configuramos las distintas propiedades del campo avanzado especificando los valores deseados.
+Esto crea un nuevo campo de avance en nuestro párrafo.
+
+### Establecer propiedades de campo
+
+2. Configure las propiedades del campo para especificar desplazamientos y posiciones:
 
 ```csharp
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
+field.DownOffset = "10";
+field.LeftOffset = "10";
+field.RightOffset = "-3.3";
+field.UpOffset = "0";
 field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
+field.VerticalPosition = "100";
 ```
 
- Finalmente llamamos al`Update()` método para actualizar el campo.
+Estas configuraciones ajustan la posición del texto en relación con su posición normal.
+
+## Paso 4: actualice y guarde el documento
+
+Con el campo insertado y configurado, es momento de actualizar y guardar el documento.
+
+### Actualizar el campo
+
+1. Asegúrese de que el campo esté actualizado para reflejar nuestros cambios:
 
 ```csharp
-field. Update();
+field.Update();
 ```
 
-### Ejemplo del código fuente para insertar un campo avanzado sin DocumentBuilder con Aspose.Words para .NET
+Esto asegura que todas las propiedades del campo se apliquen correctamente.
+
+### Guardar el documento
+
+2. Guarde su documento en el directorio especificado:
 
 ```csharp
-// La ruta al directorio de documentos.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Creación de documentos.
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-
-// Inserte el campo avanzado.
-FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
-
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
-field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
-
-field. Update();
-
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-En este ejemplo, creamos un nuevo documento, insertamos un campo avanzado sin usar DocumentBuilder, configuramos las diversas propiedades del campo y guardamos el documento con un nombre de archivo específico.
+Esto guarda el documento con el campo de avance incluido.
 
-Con esto concluye nuestra guía sobre cómo utilizar la función "Insertar campo avanzado sin DocumentBuilder" con Aspose.Words para .NET.
+## Conclusión
 
-### Preguntas frecuentes
+¡Y ahí lo tienes! Ha insertado con éxito un campo avanzado en un documento de Word sin utilizar la clase DocumentBuilder. Al seguir estos pasos, habrá aprovechado el poder de Aspose.Words para .NET para manipular documentos de Word mediante programación. Ya sea que esté automatizando la generación de informes o creando plantillas de documentos complejas, este conocimiento sin duda le resultará útil. ¡Sigue experimentando y explorando las capacidades de Aspose.Words para llevar el procesamiento de tus documentos al siguiente nivel!
 
-#### P: ¿Qué es un campo avanzado en Aspose.Words?
+## Preguntas frecuentes
 
-R: Un campo avanzado en Aspose.Words es un tipo especial de campo que le permite realizar cálculos, incluir condiciones y realizar operaciones complejas en un documento de Word. Ofrece una gran flexibilidad para crear campos dinámicos y personalizados.
+### ¿Qué es un campo avanzado en Aspose.Words?
 
-#### P: ¿Cómo insertar un campo avanzado en un documento de Word sin usar el Generador de documentos en Aspose.Words?
+Un campo avanzado en Aspose.Words le permite controlar la posición del texto en relación con su posición normal, proporcionando un control preciso sobre el diseño del texto en sus documentos.
 
-R: Para insertar un campo avanzado en un documento de Word sin usar el Generador de documentos en Aspose.Words, puede seguir estos pasos:
+### ¿Puedo usar DocumentBuilder con campos avanzados?
 
-1. Importe la clase Documento y Campo desde el espacio de nombres Aspose.Words.Fields.
-2. Cree una instancia de Documento cargando su documento existente.
-3. Utilice el método InsertField para insertar un campo avanzado especificando el código del campo avanzado.
-4. Guarde el documento.
+Sí, puedes usar DocumentBuilder para insertar campos avanzados, pero este tutorial muestra cómo hacerlo sin usar DocumentBuilder para mayor flexibilidad y control.
 
-#### P: ¿Cómo obtener el resultado de un campo avanzado en un documento de Word?
+### ¿Dónde puedo encontrar más ejemplos del uso de Aspose.Words?
 
-R: Para obtener el resultado de un campo avanzado en un documento de Word, puede usar la propiedad Resultado disponible en la clase Campo. Esta propiedad devuelve el resultado calculado del campo.
+ Puede encontrar documentación completa y ejemplos en el[Aspose.Words para la documentación de .NET](https://reference.aspose.com/words/net/) página.
 
-#### P: ¿Puedo modificar la fórmula de un campo avanzado después de insertarlo en un documento de Word?
+### ¿Aspose.Words para .NET es de uso gratuito?
 
-R: Sí, puedes editar la fórmula de un campo avanzado después de insertarlo en un documento de Word. Puede hacer esto accediendo a la propiedad FieldCode de la clase Field y actualizando la fórmula modificando el texto de la fórmula.
+ Aspose.Words para .NET ofrece una prueba gratuita, que puedes descargar[aquí](https://releases.aspose.com/). Para obtener una funcionalidad completa, deberá adquirir una licencia.
+
+### ¿Cómo obtengo soporte para Aspose.Words para .NET?
+
+ Para obtener soporte, puede visitar el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8).

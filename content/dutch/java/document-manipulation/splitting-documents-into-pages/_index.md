@@ -8,7 +8,7 @@ weight: 23
 url: /nl/java/document-manipulation/splitting-documents-into-pages/
 ---
 
-Als u met documentverwerking in Java werkt, is Aspose.Words voor Java een krachtige API waarmee u documenten efficiënt in afzonderlijke pagina's kunt splitsen. In deze stapsgewijze zelfstudie begeleiden we u door het proces van het splitsen van documenten met behulp van de meegeleverde broncode. Aan het einde van deze zelfstudie kunt u documenten eenvoudig splitsen, waardoor uw mogelijkheden voor documentbeheer worden verbeterd.
+Als u met documentverwerking in Java werkt, is Aspose.Words voor Java een krachtige API waarmee u documenten efficiënt in afzonderlijke pagina's kunt opsplitsen. In deze stapsgewijze zelfstudie begeleiden we u door het proces van het splitsen van documenten met behulp van de meegeleverde broncode. Aan het einde van deze zelfstudie kunt u documenten eenvoudig splitsen, waardoor uw mogelijkheden voor documentbeheer worden verbeterd.
 
 ## 1. Inleiding
 

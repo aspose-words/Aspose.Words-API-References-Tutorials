@@ -2,53 +2,97 @@
 title: Dapatkan Jarak Antar Teks di Sekitar Tabel
 linktitle: Dapatkan Jarak Antar Teks di Sekitar Tabel
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mendapatkan jarak antara teks dan tabel di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengambil jarak antara tabel dan teks di sekitarnya dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tingkatkan tata letak dokumen Anda dengan panduan ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah untuk mendapatkan jarak antara teks di sekitarnya dalam tabel menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan paket kode sumber C# dan memberi Anda panduan komprehensif untuk membantu Anda memahami dan menerapkan fitur ini dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan mengetahui cara mengakses berbagai jarak antara tabel dan teks di sekitarnya dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+Bayangkan Anda sedang menyiapkan laporan rapi atau dokumen penting, dan Anda ingin tabel Anda terlihat bagus. Anda perlu memastikan ada cukup ruang antara tabel dan teks di sekitarnya, sehingga dokumen mudah dibaca dan menarik secara visual. Menggunakan Aspose.Words untuk .NET, Anda dapat dengan mudah mengambil dan menyesuaikan jarak ini secara terprogram. Tutorial ini akan memandu Anda melalui langkah-langkah untuk mencapai hal ini, membuat dokumen Anda menonjol dengan sentuhan profesionalisme ekstra.
 
-## Langkah 1: Tentukan direktori dokumen
-Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda berada. Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai.
+## Prasyarat
+
+Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
+
+1.  Aspose.Words untuk .NET Library: Anda harus menginstal perpustakaan Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Asumsikan Rilis](https://releases.aspose.com/words/net/) halaman.
+2. Lingkungan Pengembangan: Lingkungan pengembangan yang berfungsi dengan .NET Framework terinstal. Visual Studio adalah pilihan yang bagus.
+3. Contoh Dokumen: Dokumen Word (.docx) berisi setidaknya satu tabel untuk menguji kode.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan ke dalam proyek Anda. Ini akan memungkinkan Anda mengakses kelas dan metode yang diperlukan untuk memanipulasi dokumen Word menggunakan Aspose.Words untuk .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Langkah 2: Muat dokumen yang ada
- Selanjutnya, Anda perlu memuat dokumen Word yang ada ke dalam instance`Document` kelas.
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah yang mudah diikuti. Kami akan membahas semuanya mulai dari memuat dokumen Anda hingga mengambil jarak di sekitar meja Anda.
+
+## Langkah 1: Muat Dokumen Anda
+
+ Langkah pertama adalah memuat dokumen Word Anda ke Aspose.Words`Document` obyek. Objek ini mewakili keseluruhan dokumen.
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Muat dokumen
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Langkah 3: Dapatkan jarak antara tabel dan teks di sekitarnya
- Untuk mendapatkan jarak antara tabel dan teks di sekitarnya, kita perlu mengakses tabel di dokumen menggunakan`GetChild()` metode dan`NodeType.Table` Properti. Kami kemudian dapat menampilkan jarak yang berbeda menggunakan properti array`DistanceTop`, `DistanceBottom`, `DistanceRight`Dan`DistanceLeft`.
+## Langkah 2: Akses Tabel
+
+ Selanjutnya, Anda perlu mengakses tabel di dalam dokumen Anda. Itu`GetChild` metode ini memungkinkan Anda mengambil tabel pertama yang ditemukan dalam dokumen.
 
 ```csharp
+// Dapatkan tabel pertama di dokumen
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-Console.WriteLine("Distance between table and top text: " + table.DistanceTop);
-Console.WriteLine("Distance between table and bottom text: " + table.DistanceBottom);
-Console.WriteLine("Distance between the table and the text on the right: " + table.DistanceRight);
-Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### Contoh kode sumber untuk Mendapatkan Jarak Antar Teks di Sekitar Tabel menggunakan Aspose.Words untuk .NET 
+## Langkah 3: Ambil Nilai Jarak
+
+Sekarang setelah Anda memiliki tabelnya, sekarang saatnya mendapatkan nilai jarak. Nilai-nilai ini mewakili jarak antara tabel dan teks di sekitarnya dari setiap sisi: atas, bawah, kiri, dan kanan.
 
 ```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Dapatkan jarak antara tabel dan teks di sekitarnya
+Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
+```
 
-	Document doc = new Document(dataDir + "Tables.docx");
-	Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Console.WriteLine(table.DistanceTop);
-	Console.WriteLine(table.DistanceBottom);
-	Console.WriteLine(table.DistanceRight);
-	Console.WriteLine(table.DistanceLeft);
+## Langkah 4: Tampilkan Jarak
+
+Terakhir, Anda dapat menampilkan jaraknya. Ini dapat membantu Anda memverifikasi spasi dan membuat penyesuaian yang diperlukan untuk memastikan tabel Anda terlihat sempurna di dokumen.
+
+```csharp
+// Tampilkan jaraknya
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mendapatkan jarak antara teks di sekitarnya dalam tabel menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah mengakses berbagai jarak antara tabel dan teks di sekitarnya dalam dokumen Word Anda. Aspose.Words menawarkan API yang kuat dan fleksibel untuk memanipulasi dan memformat tabel di dokumen Anda. Dengan pengetahuan ini, Anda dapat menganalisis tata letak tabel Anda sehubungan dengan teks dan memenuhi kebutuhan spesifik.
+
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengambil jarak antara tabel dan teks di sekitarnya dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET. Teknik sederhana namun kuat ini memungkinkan Anda menyempurnakan tata letak dokumen Anda, membuatnya lebih mudah dibaca dan menarik secara visual. Selamat membuat kode!
+
+## FAQ
+
+### Bisakah saya menyesuaikan jarak secara terprogram?
+ Ya, Anda dapat mengatur jarak secara terprogram menggunakan Aspose.Words dengan mengatur`DistanceTop`, `DistanceBottom`, `DistanceRight` , Dan`DistanceLeft` properti dari`Table` obyek.
+
+### Bagaimana jika dokumen saya memiliki banyak tabel?
+ Anda dapat mengulang node anak dokumen dan menerapkan metode yang sama ke setiap tabel. Menggunakan`GetChildNodes(NodeType.Table, true)` untuk mendapatkan semua tabel.
+
+### Bisakah saya menggunakan Aspose.Words dengan .NET Core?
+Sangat! Aspose.Words mendukung .NET Core, dan Anda dapat menggunakan kode yang sama dengan sedikit penyesuaian untuk proyek .NET Core.
+
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
+Anda dapat menginstal Aspose.Words untuk .NET melalui NuGet Package Manager di Visual Studio. Cukup cari "Aspose.Words" dan instal paketnya.
+
+### Apakah ada batasan pada jenis dokumen yang didukung oleh Aspose.Words?
+ Aspose.Words mendukung berbagai format dokumen, termasuk DOCX, DOC, PDF, HTML, dan banyak lagi. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk daftar lengkap format yang didukung.

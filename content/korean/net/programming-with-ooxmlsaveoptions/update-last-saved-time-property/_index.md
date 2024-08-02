@@ -11,7 +11,7 @@ url: /ko/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 
 프로그래밍 방식으로 Word 문서에서 마지막으로 저장된 시간 속성을 추적하는 방법이 궁금하신가요? 여러 문서를 다루고 메타데이터를 유지해야 하는 경우 마지막으로 저장된 시간 속성을 업데이트하는 것이 매우 편리할 수 있습니다. 오늘은 Aspose.Words for .NET을 사용하여 이 과정을 안내하겠습니다. 그러니 버클을 채우고 뛰어들어 보세요!
 
-## 전제조건
+## 전제 조건
 
 단계별 가이드를 시작하기 전에 필요한 몇 가지 사항이 있습니다.
 

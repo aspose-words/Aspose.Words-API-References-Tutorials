@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", s
 
 ### هل يمكنني تشفير أنواع أخرى من الملفات باستخدام Aspose.Words لـ .NET؟
 
-يتعامل Aspose.Words for .NET بشكل أساسي مع مستندات Word. بالنسبة لأنواع الملفات الأخرى، فكر في استخدام منتجات Aspose الأخرى مثل ملفات Aspose.Cells لـ Excel.
+يتعامل Aspose.Words for .NET بشكل أساسي مع مستندات Word. بالنسبة لأنواع الملفات الأخرى، فكر في استخدام منتجات Aspose الأخرى مثل Aspose.Cells لملفات Excel.
 
 ### ماذا يحدث إذا نسيت كلمة المرور لمستند مشفر؟
 

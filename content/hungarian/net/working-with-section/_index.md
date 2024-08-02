@@ -18,13 +18,13 @@ Ezeket az oktatóanyagokat követve könnyedén kezelheti a Word-dokumentumok sz
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Szakasz hozzáadása](./add-section/) | Ebből az oktatóanyagból megtudhatja, hogyan adhat hozzá szakaszt egy Word-dokumentumhoz az Aspose.Words for .NET használatával. Útmutató lépésről lépésre a dokumentum felépítéséhez. |
+| [Szakasz hozzáadása](./add-section/) | Ismerje meg, hogyan adhat hozzá szakaszokat Word-dokumentumokhoz az Aspose.Words for .NET használatával. Ez az útmutató mindenre kiterjed, a dokumentum létrehozásától a szakaszok hozzáadásáig és kezeléséig. |
 | [Szakasz törlése](./delete-section/) | Dokumentumkezelési alap az Aspose.Words for .NET segítségével. Néhány egyszerű lépésben megtudhatja, hogyan törölhet szakaszokat a Word dokumentumokból. |
 | [Minden szakasz törlése](./delete-all-sections/) | Ebből a könnyen követhető, lépésenkénti útmutatóból megtudhatja, hogyan törölheti a Word-dokumentum összes szakaszát az Aspose.Words for .NET használatával. |
 | [Szakasz Word tartalma hozzáfűzése](./append-section-content/) | Ebből az oktatóanyagból megtudhatja, hogyan adhat Word-tartalmat egy Word-dokumentum adott szakaszaihoz az Aspose.Words for .NET használatával.  |
-| [Klón szakasz](./clone-section/) | Ebből az oktatóanyagból megtudhatja, hogyan klónozhat egy szakaszt egy Word-dokumentumban az Aspose.Words for .NET használatával. Lépésről lépésre útmutató. |
-| [Szakasz másolása](./copy-section/) | Ebből az oktatóanyagból megtudhatja, hogyan másolhat át egy szakaszt egy Word-dokumentumból egy másik dokumentumba az Aspose.Words for .NET használatával. |
-| [Törölje a fejléc-lábléc tartalmát](./delete-header-footer-content/) | Ebből az oktatóanyagból megtudhatja, hogyan távolíthat el fejléc- és lábléctartalmat egy Word-dokumentumból az Aspose.Words for .NET segítségével.  |
-| [A szakasz tartalmának törlése](./delete-section-content/) | Ebből az oktatóanyagból megtudhatja, hogyan törölhet tartalmat egy Word-dokumentum adott szakaszából az Aspose.Words for .NET segítségével. |
+| [Klón szakasz](./clone-section/) | Ismerje meg, hogyan klónozhat szakaszokat Word dokumentumokban az Aspose.Words for .NET használatával. Ez az útmutató lépésről lépésre tartalmazza a hatékony dokumentumkezelést. |
+| [Szakasz másolása](./copy-section/) | Ismerje meg, hogyan másolhat szakaszokat a Word dokumentumok között az Aspose.Words for .NET használatával. Ez az útmutató lépésről lépésre tartalmazza a hatékony dokumentumkezelést. |
+| [Törölje a fejléc-lábléc tartalmát](./delete-header-footer-content/) | Ismerje meg, hogyan törölhet fejlécet és láblécet Word dokumentumokból az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató biztosítja a hatékony dokumentumkezelést.  |
+| [A szakasz tartalmának törlése](./delete-section-content/) | Ismerje meg, hogyan törölheti a szakasz tartalmát a Word dokumentumokból az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató biztosítja a hatékony dokumentumkezelést. |
 | [Módosítsa a Word oldalbeállításait minden szakaszban](./modify-page-setup-in-all-sections/) | Ebből az oktatóanyagból megtudhatja, hogyan módosíthatja a Word-dokumentum összes szakaszában a Word oldal beállítását az Aspose.Words for .NET segítségével. |
-| [A szakaszok elérése index szerint](./sections-access-by-index/) | Ebből az oktatóanyagból megtudhatja, hogyan érheti el a Word-dokumentum részeit index segítségével, és hogyan módosíthatja azok beállításait az Aspose.Words for .NET segítségével. |
+| [A szakaszok elérése index szerint](./sections-access-by-index/) | Ismerje meg, hogyan érheti el és kezelheti a Word-dokumentumok szakaszait az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató biztosítja a hatékony dokumentumkezelést. |

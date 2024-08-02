@@ -56,7 +56,7 @@ Kloning dokumen sering kali diperlukan saat Anda perlu menggunakan kembali konte
 
 ### Klon Dalam vs. Klon Dangkal
 
-Kloning dalam membuat salinan baru dari seluruh hierarki dokumen, termasuk konten dan pemformatan. Sebaliknya, klon dangkal hanya menyalin strukturnya, menjadikannya pilihan yang ringan.
+Klon mendalam membuat salinan baru dari seluruh hierarki dokumen, termasuk konten dan pemformatan. Sebaliknya, klon dangkal hanya menyalin strukturnya, menjadikannya pilihan yang ringan.
 
 ### Kloning Bagian dan Node
 

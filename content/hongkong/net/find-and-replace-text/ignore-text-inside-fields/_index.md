@@ -87,10 +87,10 @@ doc.Range.Replace(regex, "*", options);
 是的，Aspose.Words 允許您使用 FindReplaceOptions 實作條件邏輯，以根據特定條件控製文字替換。
 
 ### Aspose.Words 與 .NET Core 應用程式相容嗎？
-是的，Aspose.Words 支援 .NET Core，確保跨平台相容性，滿足您的文件自動化需求。
+是的，Aspose.Words 支援 .NET Core，確保跨平台相容性滿足您的文件自動化需求。
 
 ### 在哪裡可以找到更多 Aspose.Words 範例和資源？
 訪問[Aspose.Words 文檔](https://reference.aspose.com/words/net/)取得綜合指南、API 參考和程式碼範例。
 
-### 如何獲得 Aspose.Words 的技術支援？
-如需技術協助，請訪問[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8)您可以在其中發佈疑問並與社區互動。
+### 我如何獲得 Aspose.Words 的技術支援？
+如需技術協助，請訪問[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8)您可以在其中發布您的疑問並與社區互動。

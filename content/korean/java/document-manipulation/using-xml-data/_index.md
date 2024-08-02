@@ -12,7 +12,7 @@ url: /ko/java/document-manipulation/using-xml-data/
 
 이 가이드에서는 Aspose.Words for Java를 사용하여 XML 데이터로 작업하는 방법을 살펴보겠습니다. 중첩된 메일 병합을 포함하여 메일 병합 작업을 수행하는 방법과 DataSet과 함께 Mustache 구문을 활용하는 방법을 배우게 됩니다. 시작하는 데 도움이 되는 단계별 지침과 소스 코드 예제를 제공하겠습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 - [Aspose.Words for Java](https://products.aspose.com/words/java/) 설치되었습니다.

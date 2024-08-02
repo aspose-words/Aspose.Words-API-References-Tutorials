@@ -12,11 +12,11 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-pcl-format/
 
 문서 조작 영역에서 Aspose.Words for Java는 강력한 도구로 돋보입니다. 이를 통해 다양한 형식으로 문서를 저장하는 것을 포함하여 Word 문서에 대해 프로그래밍 방식으로 다양한 작업을 수행할 수 있습니다. 이러한 형식 중 하나는 레이저 프린터에서 문서를 인쇄하는 데 일반적으로 사용되는 PCL(프린터 명령 언어)입니다. 이 종합 가이드에서는 Aspose.Words for Java를 사용하여 문서를 PCL 형식으로 저장하는 과정을 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 코드와 단계별 프로세스를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
-- Java용 Aspose.Words: Java 개발 환경에 Aspose.Words for Java가 설치 및 설정되어 있는지 확인하세요.
+- Aspose.Words for Java: Java 개발 환경에 Aspose.Words for Java가 설치 및 설정되어 있는지 확인하세요.
 
 ## 1단계: Word 문서 로드
 
@@ -79,7 +79,7 @@ doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformed
 
 Aspose.Words for Java는 주로 Word 문서를 다룹니다. PDF 또는 HTML과 같은 다른 형식을 PCL로 변환하려면 해당 특정 형식에 적합한 Aspose 제품을 사용하는 것이 좋습니다.
 
-### Aspose.Words for Java 평가판이 있습니까?
+### Aspose.Words for Java 평가판이 있나요?
 
 예, 구매하기 전에 Aspose.Words for Java 평가판에 액세스하여 기능을 살펴볼 수 있습니다. 자세한 내용은 Aspose 웹사이트를 방문하세요.
 

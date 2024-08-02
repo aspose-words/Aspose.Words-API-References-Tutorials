@@ -62,8 +62,8 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### Q: Aspose.Words で自動リンクの表示テキストをカスタマイズすることは可能ですか?
 
- A: はい、Aspose.Wordsでは自動リンクの表示テキストをカスタマイズできます。表示テキストとしてURLアドレスを使用する代わりに、URLとURLの間の内容を置き換えることで他のテキストを使用できます。`<a>`タグ。例えば、`<a href="https://www.aspose.com">Click here</a>` 「ここをクリック」というテキストを自動リンクとして表示します。
+ A: はい、Aspose.Wordsでは自動リンクの表示テキストをカスタマイズできます。表示テキストとしてURLアドレスを使用する代わりに、URLとURLの間の内容を置き換えることで他のテキストを使用できます。`<a>`タグ。例えば、`<a href="https://www.aspose.com">Click here</a>`「ここをクリック」というテキストを自動リンクとして表示します。
 
 #### Q: Aspose.Words の自動リンクに追加の属性を追加するにはどうすればよいですか?
 
-A: Aspose.Wordsの自動リンクに追加の属性を追加するには、`<a>`タグ。例えば、`<a href="https://www.aspose.com" target="_blank">Link</a>`リンクを新しいウィンドウまたはタブで開くには、` attribute target="_blank"`.
+ A: Aspose.Wordsの自動リンクに追加の属性を追加するには、`<a>`タグ。例えば、`<a href="https://www.aspose.com" target="_blank">Link</a>`リンクを新しいウィンドウまたはタブで開くには、` attribute target="_blank"`.

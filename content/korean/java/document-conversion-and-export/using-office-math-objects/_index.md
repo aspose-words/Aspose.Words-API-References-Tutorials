@@ -12,7 +12,7 @@ url: /ko/java/document-conversion-and-export/using-office-math-objects/
 
 Java의 문서 처리 영역에서 Aspose.Words는 안정적이고 강력한 도구입니다. 덜 알려진 보석 중 하나는 Office Math 개체를 사용하여 작업하는 기능입니다. 이 포괄적인 가이드에서는 Aspose.Words for Java에서 Office Math 개체를 활용하여 문서 내에서 수학 방정식을 조작하고 표시하는 방법을 자세히 살펴보겠습니다. 
 
-## 전제조건
+## 전제 조건
 
 Aspose.Words for Java에서 Office Math 작업의 복잡한 작업을 시작하기 전에 모든 것이 설정되었는지 확인하겠습니다. 다음 사항을 확인하세요.
 

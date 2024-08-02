@@ -128,5 +128,5 @@ Bu seçenek olmadan kaynak belgenin stilleri iyi bir şekilde bütünleşmeyebil
 ### Bu yöntemi farklı dosya formatları için kullanabilir miyim?
 Bu eğitim Word belgelerine (.docx) özeldir. Diğer formatlar için ek adımlara veya farklı yöntemlere ihtiyacınız olabilir.
 
-### Sorunla karşılaşırsam nereden destek alabilirim?
+### Sorunlarla karşılaşırsam nereden destek alabilirim?
  Herhangi bir sorun için şu adresi ziyaret edin:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).

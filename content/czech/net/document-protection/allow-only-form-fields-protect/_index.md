@@ -86,7 +86,7 @@ tady to máte! Právě jste se naučili, jak chránit dokument aplikace Word tak
 ## FAQ
 
 ###	 Jak mohu odstranit ochranu z dokumentu?  
- Pro odstranění ochrany použijte`doc.Unprotect("password")` metoda, kde "heslo" je heslo používané k ochraně dokumentu.
+ K odstranění ochrany použijte`doc.Unprotect("password")` metoda, kde "heslo" je heslo používané k ochraně dokumentu.
 
 ###	 Mohu použít různé typy ochrany pomocí Aspose.Words pro .NET?  
  Ano, Aspose.Words podporuje různé typy ochrany jako např`ReadOnly`, `NoProtection` , a`AllowOnlyRevisions`.

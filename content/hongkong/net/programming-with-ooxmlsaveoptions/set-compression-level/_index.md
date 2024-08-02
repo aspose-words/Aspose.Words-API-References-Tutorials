@@ -21,7 +21,7 @@ url: /zh-hant/net/programming-with-ooxmlsaveoptions/set-compression-level/
 
 3. C# 基礎知識：熟悉 C# 程式設計對於遵循本指南至關重要。
 
-4. 範例文件：在專案目錄中準備好一個 Word 文件（例如「Document.docx」）。
+4. 範例文件：在專案目錄中準備一個 Word 文件（例如「Document.docx」）。
 
 ## 導入命名空間
 

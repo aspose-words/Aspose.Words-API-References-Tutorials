@@ -14,7 +14,7 @@ url: /zh/java/document-manipulation/using-cleanup-options/
 
 ## 先决条件
 
-在我们开始之前，请确保您已将 Aspose.Words for Java 库集成到您的项目中。您可以从以下网址下载[这里](https://releases.aspose.com/words/java/).
+在开始之前，请确保已将 Aspose.Words for Java 库集成到项目中。您可以从以下网址下载[这里](https://releases.aspose.com/words/java/).
 
 ## 步骤 1：删除空段落
 
@@ -166,7 +166,7 @@ Aspose.Words for Java 中的清理选项是允许您在邮件合并过程中控�
 
 ### 有什么区别`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
-这`REMOVE_EMPTY_FIELDS`选项会在邮件合并过程中删除没有数据或为空的合并字段。另一方面，`REMOVE_UNUSED_FIELDS`选项会删除合并过程中未填充数据的合并字段。选择哪个取决于您是要删除没有内容的字段，还是要删除特定合并操作中未使用的字段。
+这`REMOVE_EMPTY_FIELDS`选项会在邮件合并过程中删除没有数据或为空的合并字段。另一方面，`REMOVE_UNUSED_FIELDS`选项会删除合并过程中未填充数据的合并字段。选择哪个取决于您是要删除没有内容的字段还是要删除特定合并操作中未使用的字段。
 
 ### 如何才能删除带标点符号的段落？
 
@@ -174,4 +174,4 @@ Aspose.Words for Java 中的清理选项是允许您在邮件合并过程中控�
 
 ### 我可以自定义 Aspose.Words for Java 中的清理选项吗？
 
-是的，您可以根据自己的特定需求自定义清理选项。您可以选择要应用的清理选项，并根据文档清理要求对其进行配置，以确保最终文档符合您的期望标准。
+是的，您可以根据自己的特定需求自定义清理选项。您可以选择要应用的清理选项，并根据文档清理要求进行配置，以确保最终文档符合您的期望标准。

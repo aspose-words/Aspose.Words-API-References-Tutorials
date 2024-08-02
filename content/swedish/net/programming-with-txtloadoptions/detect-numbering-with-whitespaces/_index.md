@@ -2,115 +2,110 @@
 title: Upptäck numrering med blanksteg
 linktitle: Upptäck numrering med blanksteg
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du upptäcker listnummer med blanksteg i Aspose.Words för .NET. Förbättra strukturen på dina dokument med lätthet.
+description: Upptäck hur du använder Aspose.Words för .NET för att upptäcka numrering med blanktecken i klartextdokument och se till att dina listor känns igen korrekt.
 type: docs
 weight: 10
 url: /sv/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-den här handledningen kommer vi att utforska C#-källkoden som tillhandahålls för funktionen "Detektering av numrering med blanksteg" med Aspose.Words för .NET. Den här funktionen låter dig upptäcka och skapa listor från ett textdokument som innehåller listnummer följt av blanksteg.
+## Introduktion
 
-## Steg 1: Sätta upp miljön
+Aspose.Words för .NET-entusiaster! Idag dyker vi in i en fascinerande funktion som kan göra det enkelt att hantera listor i klartextdokument. Har du någonsin hanterat textfiler där vissa rader ska vara listor, men de ser helt enkelt inte riktigt ut när de laddas in i ett Word-dokument? Nåväl, vi har ett snyggt trick i rockärmen: att upptäcka numrering med blanksteg. Denna handledning går igenom hur du använder`DetectNumberingWithWhitespaces` alternativet i Aspose.Words för .NET för att säkerställa att dina listor känns igen korrekt, även när det finns blanksteg mellan siffrorna och texten.
 
-Innan du börjar, se till att du har ställt in din utvecklingsmiljö med Aspose.Words för .NET. Se till att du har lagt till nödvändiga referenser och importerat lämpliga namnområden.
+## Förutsättningar
 
-## Steg 2: Skapa textdokumentet
+Innan vi börjar, se till att du har följande:
+
+-  Aspose.Words för .NET: Du kan ladda ner det från[Aspose släpper](https://releases.aspose.com/words/net/) sida.
+- Utvecklingsmiljö: Visual Studio eller någon annan C# IDE.
+- .NET Framework installerat på din dator.
+- Grundläggande kunskaper om C#: Att förstå grunderna hjälper dig att följa exemplen.
+
+## Importera namnområden
+
+Innan du hoppar in i koden, se till att du har de nödvändiga namnrymden importerade i ditt projekt. Här är ett snabbt utdrag för att komma igång:
 
 ```csharp
-// Sökväg till din dokumentkatalog
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-string textDoc = "Full stop delimiters:\n" +
-                  "1. First list item 1\n" +
-                  "2. First list item 2\n" +
-                  "3. First list item 3\n\n" +
-                  "Right bracket delimiters:\n" +
-                  "1) Second list item 1\n" +
-                  "2) Second list item 2\n" +
-                  "3) Second list item 3\n\n" +
-                  "Bullet delimiters:\n" +
-                  "• Third list item 1\n" +
-                  "• Third list item 2\n" +
-                  "• Third list item 3\n\n" +
-                  "Whitespace delimiters:\n" +
-                  "1 Fourth list item 1\n" +
-                  "2 Fourth list item 2\n" +
-                  "3 Fourth list item 3";
+using System;
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-I det här steget skapar vi en textsträng som simulerar ett textdokument som innehåller listnummer följt av blanksteg. Vi använder olika listavgränsare som punkt, höger parentes, punktsymbol och blanksteg.
+Låt oss dela upp processen i enkla, hanterbara steg. Varje steg guidar dig genom den nödvändiga koden och förklarar vad som händer.
 
-## Steg 3: Konfigurera uppladdningsalternativ
+## Steg 1: Definiera din dokumentkatalog
 
-```csharp
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-```
-
- I det här steget konfigurerar vi alternativen för dokumentladdning. Vi skapar en ny`TxtLoadOptions` objekt och ställ in`DetectNumberingWithWhitespaces`egendom till`true`. Detta gör att Aspose.Words kan upptäcka listnummer även om de följs av blanksteg.
-
-## Steg 4: Ladda dokumentet och spara
+Först och främst, låt oss ställa in sökvägen till din dokumentkatalog. Det är här dina in- och utdatafiler kommer att lagras.
 
 ```csharp
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-```
-
- I det här steget laddar vi dokumentet med den angivna textsträngen och laddningsalternativ. Vi använder a`MemoryStream` för att konvertera textsträngen till en minnesström. Sedan sparar vi det resulterande dokumentet i .docx-format.
-
-### Exempel på källkod för White Space Numbering Detection-funktionen med Aspose.Words för .NET.
-
-```csharp
-
-            
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-// Skapa ett klartextdokument i form av en sträng med delar som kan tolkas som listor.
-// Vid laddning kommer de tre första listorna alltid att upptäckas av Aspose.Words,
-// och Listobjekt kommer att skapas för dem efter laddning.
-const string textDoc = "Full stop delimiters:\n" +
-					   "1. First list item 1\n" +
-					   "2. First list item 2\n" +
-					   "3. First list item 3\n\n" +
-					   "Right bracket delimiters:\n" +
-					   "1) Second list item 1\n" +
-					   "2) Second list item 2\n" +
-					   "3) Second list item 3\n\n" +
-					   "Bullet delimiters:\n" +
-					   "• Third list item 1\n" +
-					   "• Third list item 2\n" +
-					   "• Third list item 3\n\n" +
-					   "Whitespace delimiters:\n" +
-					   "1 Fourth list item 1\n" +
-					   "2 Fourth list item 2\n" +
-					   "3 Fourth list item 3";
-
-// Den fjärde listan, med blanksteg mellan listnumret och listobjektets innehåll,
-// kommer bara att upptäckas som en lista om "DetectNumberingWithWhitespaces" i ett LoadOptions-objekt är satt till true,
-// för att undvika att stycken som börjar med siffror av misstag upptäcks som listor.
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-
-// Ladda dokumentet medan du använder LoadOptions som en parameter och verifiera resultatet.
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-            
-        
 ```
 
-Nu kan du köra källkoden för att ladda textdokumentet som innehåller listnummer med blanksteg, och sedan skapa ett .docx-dokument med de upptäckta listorna. Utdatafilen kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx".
+## Steg 2: Skapa ett klartextdokument
+
+Därefter skapar vi ett klartextdokument som en sträng. Detta dokument kommer att innehålla delar som kan tolkas som listor.
+
+```csharp
+const string textDoc = "Full stop delimiters:\n" +
+                       "1. First list item 1\n" +
+                       "2. First list item 2\n" +
+                       "3. First list item 3\n\n" +
+                       "Right bracket delimiters:\n" +
+                       "1) Second list item 1\n" +
+                       "2) Second list item 2\n" +
+                       "3) Second list item 3\n\n" +
+                       "Bullet delimiters:\n" +
+                       "• Third list item 1\n" +
+                       "• Third list item 2\n" +
+                       "• Third list item 3\n\n" +
+                       "Whitespace delimiters:\n" +
+                       "1 Fourth list item 1\n" +
+                       "2 Fourth list item 2\n" +
+                       "3 Fourth list item 3";
+```
+
+## Steg 3: Konfigurera LoadOptions
+
+ För att upptäcka numrering med blanksteg måste vi ställa in`DetectNumberingWithWhitespaces` möjlighet att`true` i en`TxtLoadOptions` objekt.
+
+```csharp
+TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
+```
+
+## Steg 4: Ladda dokumentet
+
+ Låt oss nu ladda dokumentet med hjälp av`TxtLoadOptions` som en parameter. Detta säkerställer att den fjärde listan (med blanksteg) detekteras korrekt.
+
+```csharp
+Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
+```
+
+## Steg 5: Spara dokumentet
+
+Slutligen, spara dokumentet i din angivna katalog. Detta kommer att mata ut ett Word-dokument med korrekt upptäckta listor.
+
+```csharp
+doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
+```
 
 ## Slutsats
-I den här handledningen utforskade vi funktionen för upptäckt av blankstegsnumrering i Aspose.Words för .NET. Vi lärde oss hur man skapar listor från ett textdokument som innehåller listnummer följt av blanksteg.
 
-Den här funktionen är extremt användbar för att behandla dokument som innehåller listnummer formaterade på olika sätt. Genom att använda lämpliga laddningsalternativ kan Aspose.Words upptäcka dessa listnummer, även om de följs av blanksteg, och konvertera dem till strukturerade listor i det slutliga dokumentet.
+Och där har du det! Med bara några rader kod har du bemästrat konsten att upptäcka numrering med blanktecken i klartextdokument med Aspose.Words för .NET. Den här funktionen kan vara otroligt praktisk när du hanterar olika textformat och ser till att dina listor är korrekt representerade i dina Word-dokument. Så nästa gång du stöter på de där knepiga listorna vet du exakt vad du ska göra.
 
-Genom att använda den här funktionen kan du spara tid och förbättra ditt arbetsflöde. Du kan enkelt extrahera information från textdokument och konvertera dem till välstrukturerade dokument med ordentliga listor.
+## FAQ's
 
-Kom ihåg att överväga laddningsalternativ, som att konfigurera detektering av blankstegsuppringning, för att uppnå önskat resultat.
+###  Vad är`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+`DetectNumberingWithWhitespaces` är ett alternativ i`TxtLoadOptions` som gör att Aspose.Words kan känna igen listor även när det finns blanksteg mellan numreringen och listobjektets text.
 
-Aspose.Words för .NET erbjuder många avancerade funktioner för dokumenthantering och generering. Genom att ytterligare utforska dokumentationen och exemplen som tillhandahålls av Aspose.Words kommer du att fullt ut kunna utnyttja funktionerna i detta kraftfulla bibliotek.
+### Kan jag använda den här funktionen för andra avgränsare som kulor och parenteser?
+ Ja, Aspose.Words upptäcker automatiskt listor med vanliga avgränsare som punkter och parenteser. De`DetectNumberingWithWhitespaces` hjälper specifikt med listor som har blanksteg.
 
-Så tveka inte att integrera blankstegsnumrering i dina Aspose.Words för .NET-projekt och dra nytta av dess fördelar för att skapa välstrukturerade och läsbara dokument.
+###  Vad händer om jag inte använder`DetectNumberingWithWhitespaces`?
+Utan detta alternativ kanske listor med blanksteg mellan numreringen och texten inte känns igen som listor, och objekten kan visas som vanliga stycken.
 
+### Är den här funktionen tillgänglig i andra Aspose-produkter?
+Denna specifika funktion är skräddarsydd för Aspose.Words för .NET, designad för att hantera Word-dokumentbehandling.
+
+### Hur kan jag få en tillfällig licens för Aspose.Words för .NET?
+ Du kan få en tillfällig licens från[Aspose tillfällig licens](https://purchase.aspose.com/temporary-license/) sida.
 

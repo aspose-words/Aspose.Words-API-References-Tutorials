@@ -103,7 +103,7 @@ Comparar documentos en Aspose.Words para Java es una capacidad poderosa que se p
 
 ### ¿Puedo comparar documentos con formato complejo usando Aspose.Words para Java?
 
-Sí, Aspose.Words para Java ofrece opciones para comparar documentos con formato complejo. Puede personalizar la comparación para adaptarla a sus necesidades.
+Sí, Aspose.Words para Java ofrece opciones para comparar documentos con formatos complejos. Puede personalizar la comparación para adaptarla a sus necesidades.
 
 ### ¿Aspose.Words para Java es adecuado para sistemas de gestión de documentos?
 

@@ -16,7 +16,7 @@ url: /zh-hant/net/programming-with-loadoptions/update-dirty-fields/
 
 在我們深入討論細節之前，讓我們確保您擁有所需的一切：
 
-1.  Aspose.Words for .NET：確保您擁有最新版本。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：確保您擁有最新版本。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. .NET Framework：與 Aspose.Words 相容的任何版本。
 3. C# 基礎：熟悉 C# 程式設計將會很有幫助。
 4. 範例 Word 文件：包含需要更新的髒欄位的文件。

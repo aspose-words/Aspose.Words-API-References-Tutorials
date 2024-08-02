@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ```csharp
 // Wyjściowy plik PDF będzie zawierał podzbiory czcionek w dokumencie.
-// Czcionki PDF uwzględniają tylko glify użyte w dokumencie.
+// Czcionki PDF uwzględniają wyłącznie glify użyte w dokumencie.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 

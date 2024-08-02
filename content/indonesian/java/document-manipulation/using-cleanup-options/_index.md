@@ -42,7 +42,7 @@ doc.getMailMerge().execute(new String[] { "Option_1", "Option_2" }, new Object[]
 doc.save("WorkingWithCleanupOptions.CleanupParagraphsWithPunctuationMarks.docx");
 ```
 
-Dalam contoh ini, kita membuat dokumen baru, menyisipkan bidang gabungan, dan mengatur opsi pembersihan untuk menghapus paragraf kosong. Selain itu, kami mengaktifkan penghapusan paragraf dengan tanda baca. Setelah menjalankan gabungan surat, dokumen disimpan dengan pembersihan yang ditentukan diterapkan.
+Dalam contoh ini, kita membuat dokumen baru, menyisipkan kolom gabungan, dan mengatur opsi pembersihan untuk menghapus paragraf kosong. Selain itu, kami mengaktifkan penghapusan paragraf dengan tanda baca. Setelah menjalankan gabungan surat, dokumen disimpan dengan pembersihan yang ditentukan diterapkan.
 
 ## Langkah 2: Menghapus Wilayah yang Tidak Digabung
 

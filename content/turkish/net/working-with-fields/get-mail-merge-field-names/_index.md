@@ -2,118 +2,111 @@
 title: Adres Mektup Birleştirme Alan Adlarını Alma
 linktitle: Adres Mektup Birleştirme Alan Adlarını Alma
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile Word belgelerinizde adres-mektup birleştirme alan adlarını nasıl alacağınızı öğrenin.
+description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak adres-mektup birleştirme alan adlarını bir Word belgesinden nasıl çıkaracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/get-mail-merge-field-names/
 ---
+## giriiş
 
-Aşağıda Aspose.Words for .NET'in "Birleştirme Alan Adlarını Al" özelliğini kullanan C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. İstediğiniz sonuçları elde etmek için her adımı dikkatlice takip ettiğinizden emin olun.
+Aspose.Words for .NET kullanarak bir Word belgesinden adres-mektup birleştirme alan adlarının çıkarılmasıyla ilgili bu kılavuza hoş geldiniz. İster kişiselleştirilmiş mektuplar oluşturuyor olun, ister özel raporlar oluşturuyor olun, ister yalnızca belge iş akışlarını otomatikleştiriyor olun, adres-mektup birleştirme alanları çok önemlidir. Belgenizde, birleştirme işlemi sırasında gerçek verilerle değiştirilen yer tutucular gibi davranırlar. Aspose.Words for .NET ile çalışıyorsanız şanslısınız; bu güçlü kütüphane, bu alanlarla etkileşimi inanılmaz derecede kolaylaştırıyor. Bu öğreticide, bir belgedeki adres-mektup birleştirme alanlarının adlarını almanın basit ama etkili bir yolunu anlatacağız; böylece adres-mektup birleştirme işlemlerinizi daha iyi anlamanıza ve yönetmenize olanak sağlayacağız.
 
-## Adım 1: Belge Dizini Kurulumu
+## Önkoşullar
 
-Verilen kodda belgelerinizin dizinini belirtmelisiniz. "BELGE DİZİNİNİZ" değerini, belge dizininizin uygun yolu ile değiştirin.
+Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET Library: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Değilse, adresinden indirebilirsiniz.[Web sitesi](https://releases.aspose.com/words/net/).
 
-## Adım 2: Belgeyi yükleme
+2. Geliştirme Ortamı: .NET için Visual Studio gibi kurulmuş bir geliştirme ortamına sahip olmalısınız.
 
-İlk adım, belgeyi birleştirme alanı adlarını almak istediğiniz yere yüklemektir.
+3. Adres Mektup Birleştirme Alanları İçeren Bir Word Belgesi: Adres-mektup birleştirme alanlarını içeren bir Word belgesini hazır bulundurun. Bu, alan adlarını çıkarmak için üzerinde çalışacağınız belge olacaktır.
 
-```csharp
-Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
-```
+4. Temel C# Bilgisi: C# ve .NET programlamaya aşinalık, örneklerle birlikte takip edilmesi faydalı olacaktır.
 
-"BELGE DOSYALARINIZ" kısmını kendi dosyanızın adıyla değiştirdiğinizden emin olun.
+## Ad Alanlarını İçe Aktar
 
-## 3. Adım: Birleştirme alanı adlarını alın
-
- biz kullanıyoruz`GetFieldNames()` Belgede bulunan birleştirme alanlarının adlarını içeren bir dizi elde etme yöntemi.
+Başlamak için gerekli ad alanlarını C# kodunuza aktarmanız gerekir. Bu, Aspose.Words işlevselliğine erişmenizi sağlar. Bunları nasıl ekleyeceğiniz aşağıda açıklanmıştır:
 
 ```csharp
-string[] fieldNames = doc.MailMerge.GetFieldNames();
+using Aspose.Words;
+using System;
 ```
 
-`fieldNames` değişken artık birleştirme alanlarının adlarını içeriyor.
+`Aspose.Words` ad alanı, Word belgelerini yönetmek için gereken tüm sınıflara ve yöntemlere erişmenizi sağlarken,`System` konsol çıkışı gibi temel işlevler için kullanılır.
 
-### Aspose.Words for .NET ile Birleştirme Alan Adlarını Almak için Kaynak Kodu Örneği
+Adres-mektup birleştirme alan adlarını çıkarma sürecini anlaşılır, adım adım bir kılavuza ayıralım.
+
+## Adım 1: Belge Dizinini Tanımlayın
+
+Başlık: Belgelerinizin Yolunu Belirtin
+
+Öncelikle Word belgenizin bulunduğu dizinin yolunu ayarlamanız gerekir. Bu çok önemlidir çünkü uygulamanıza dosyayı nerede bulacağını söyler. İşte bunu nasıl yapacağınız:
 
 ```csharp
 // Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"`belgenizin bulunduğu gerçek yolla. Bu şöyle bir şey olabilir`"C:\\Documents\\MyDoc.docx"`.
+
+## Adım 2: Belgeyi Yükleyin
+
+Başlık: Word Belgesini Yükleme
+
+ Daha sonra, belgeyi bir örneğine yükleyeceksiniz.`Document` Aspose.Words tarafından sağlanan sınıf. Bu, belgeyle programlı olarak etkileşim kurmanıza olanak tanır.
+
+```csharp
 // Belgeyi yükleyin.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
+```
 
+ Yer değiştirmek`"YOUR DOCUMENT FILE"` Word belge dosyanızın adıyla birlikte, örneğin`"example.docx"`. Bu kod satırı, belgeyi belirttiğiniz dizinden okur ve onu daha sonraki işlemler için hazırlar.
+
+## 3. Adım: Adres Mektup Birleştirme Alan Adlarını Alın
+
+Başlık: Adres Mektup Birleştirme Alan Adlarını Çıkarma
+
+ Artık belgede bulunan adres-mektup birleştirme alanlarının adlarını almaya hazırsınız. Aspose.Words'ün parladığı yer burasıdır;`MailMerge` class, alan adlarını almanın kolay bir yolunu sağlar.
+
+```csharp
 // Birleştirme alanı adlarını alın.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
+```
 
+`GetFieldNames()` yöntemi, her biri belgede bulunan adres-mektup birleştirme alan adını temsil eden bir dizi dize döndürür. Bunlar Word belgenizde göreceğiniz yer tutuculardır.
+
+## Adım 4: Birleştirme Alanı Sayısını Görüntüleyin
+
+Başlık: Alan Sayısının Çıktısı
+
+Alan adlarını başarıyla aldığınızı onaylamak için konsolu kullanarak alan sayısını görüntüleyebilirsiniz.
+
+```csharp
 // Birleştirme alanlarının sayısını görüntüleyin.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- Bu örnekte bir belge yükledik, birleştirme alanı adlarını aldık.`GetFieldNames()` yöntemi ve belgede bulunan birleştirme alanlarının sayısını görüntüledi.
+Bu kod satırı, belgedeki adres-mektup birleştirme alanlarının toplam sayısını yazdırarak çıkarma işleminizin doğru şekilde çalıştığını doğrulamanıza yardımcı olur.
 
-Bu, Aspose.Words for .NET ile "Birleştirme Alan Adlarını Al" özelliğinin kullanımına ilişkin kılavuzumuzu tamamlıyor.
+## Çözüm
 
-### SSS
+Tebrikler! Artık Aspose.Words for .NET kullanarak bir Word belgesinden adres-mektup birleştirme alan adlarını nasıl çıkaracağınızı öğrendiniz. Bu teknik, belge iş akışlarını yönetmek ve otomatikleştirmek için değerli bir araçtır ve kişiselleştirilmiş içeriğin işlenmesini kolaylaştırır. Bu adımları izleyerek belgelerinizdeki adres-mektup birleştirme alanlarını etkili bir şekilde tanımlayabilir ve bunlarla çalışabilirsiniz.
 
-#### S1: Aspose.Words'te adres-mektup birleştirme nedir?
+ Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, araştırmaktan çekinmeyin.[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya katıl[Topluluğu düşünün](https://forum.aspose.com/c/words/8) destek için. Mutlu kodlama!
 
-Aspose.Words'de adres-mektup birleştirme, kişiselleştirilmiş belgeler oluşturmak için harici bir kaynaktan (örn. Excel elektronik tablosu veya veritabanı) verileri şablon bir Word belgesiyle birleştirme işlemidir. Bu, mektupların, raporların ve diğer benzer belgelerin otomatik olarak oluşturulmasını kolaylaştırır.
+## SSS'ler
 
-#### S2: Bir Word belgesinde bulunan adres-mektup birleştirme alanlarının listesini nasıl edinebilirim?
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve yönetmesine olanak tanıyan güçlü bir kitaplıktır.
 
-Bir Word belgesinde bulunan adres-mektup birleştirme alanlarının listesini almak için şu adımları takip edebilirsiniz:
+### Aspose.Words'ün ücretsiz deneme sürümünü nasıl edinebilirim?
+ adresini ziyaret ederek ücretsiz deneme sürümünden yararlanabilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/).
 
-1. Document ve MailMergeFieldNames sınıflarını Aspose.Words ad alanından içe aktarın.
-2. Word belgenizi yükleyerek bir Belge örneği oluşturun.
-3. Kullanılabilir adres-mektup birleştirme alanlarının listesini almak için Document nesnesinin GetMailMergeFieldNames yöntemini kullanın.
+### Aspose.Words'ü lisans satın almadan kullanabilir miyim?
+ Evet, deneme süresi boyunca kullanabilirsiniz ancak sürekli kullanım için adresinden bir lisans satın almanız gerekir.[Aspose'un satın alma sayfası](https://purchase.aspose.com/buy).
 
-İşlemi açıklamak için örnek bir kod aşağıda verilmiştir:
+### Aspose.Words'te sorunlarla karşılaşırsam ne yapmalıyım?
+ Destek için şu adresi ziyaret edebilirsiniz:[Forumu aspose](https://forum.aspose.com/c/words/8) soru sorabileceğiniz ve topluluktan yardım alabileceğiniz yer.
 
-```csharp
-// Gerekli ad alanlarını içe aktarın
-using Aspose.Words;
-using Aspose.Words.MailMerging;
-
-// Mevcut belgeyi yükleyin
-Document document = new Document("FilePath");
-
-// Adres-mektup birleştirme alanlarının listesini alın
-MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
-
-// Kullanılabilir adres-mektup birleştirme alanları arasında geçiş yapın
-foreach (string fieldName in fieldNames)
-{
-     // Alan adıyla bir şeyler yapın
-     Console.WriteLine(fieldName);
-}
-```
-### SSS'ler
-
-#### S: Aspose.Words'te adres-mektup birleştirme nedir?
-
-C: Aspose.Words'de adres-mektup birleştirme, kişiselleştirilmiş belgeler oluşturmak için harici bir kaynaktan (örn. Excel elektronik tablosu veya veri tabanı) verileri şablon Word belgesiyle birleştirme işlemidir. Bu, mektupların, raporların ve diğer benzer belgelerin otomatik olarak oluşturulmasını kolaylaştırır.
-
-#### S: Bir Word belgesinde bulunan adres-mektup birleştirme alanlarının listesini nasıl edinebilirim?
-
-C: Bir Word belgesinde bulunan adres-mektup birleştirme alanlarının listesini almak için şu adımları takip edebilirsiniz:
-
-1. Document ve MailMergeFieldNames sınıflarını Aspose.Words ad alanından içe aktarın.
-2. Word belgenizi yükleyerek bir Belge örneği oluşturun.
-3. Kullanılabilir adres-mektup birleştirme alanlarının listesini almak için Document nesnesinin GetMailMergeFieldNames yöntemini kullanın.
-
-#### S: Adres-mektup birleştirme alanlarını Excel elektronik tablosu gibi harici bir veri kaynağından alabilir miyim?
-
-C: Evet, adres-mektup birleştirme alanlarını Excel elektronik tablosu gibi harici bir veri kaynağından alabilirsiniz. Bunun için Aspose.Words'ün veri bağlama özelliklerini kullanarak veri kaynağıyla bağlantı kurabilir ve mevcut alanların adlarını alabilirsiniz.
-
-#### S: Adres-mektup birleştirme alanlarını belirli ölçütlere göre filtrelemek mümkün mü?
-
-C: Evet, adres-mektup birleştirme alanlarını belirli ölçütlere göre filtrelemek mümkündür. Adres-mektup birleştirme alanlarını filtrelemek ve yalnızca belirli ölçütlerinize uyanları almak için normal ifadeleri veya belirli koşulları kullanabilirsiniz.
-
-#### S: Aspose.Words'te adres-mektup birleştirme alanlarını nasıl değiştirebilirim?
-
-C: Aspose.Words'teki adres-mektup birleştirme alanlarını değiştirmek için Document ve MailMergeField nesnelerinin sağladığı yöntem ve özellikleri kullanabilirsiniz. Adres-mektup birleştirme alanlarını ekleyebilir, kaldırabilir veya güncelleyebilir, ayrıca alanlarla ilişkili değerleri alabilir ve düzenleyebilirsiniz.
+### Aspose.Words için nasıl geçici lisans alabilirim?
+ Geçici lisans başvurusunda bulunabilirsiniz.[Aspose'un geçici lisans sayfası](https://purchase.aspose.com/temporary-license/).

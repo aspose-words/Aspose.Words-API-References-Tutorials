@@ -45,7 +45,7 @@ Enfin, nous pouvons enregistrer le document au format souhaité.
 // Utilisez un générateur de documents pour ajouter du contenu au document.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Insérer un lien hypertexte.
+// Insérer un lien hypertexte.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", faux) ;
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité « Au
 
 #### Q : Est-il possible de personnaliser le texte d'affichage d'un lien automatique dans Aspose.Words ?
 
- R : Oui, vous pouvez personnaliser le texte d'affichage d'un lien automatique dans Aspose.Words. Au lieu d'utiliser l'adresse URL comme texte à afficher, vous pouvez utiliser n'importe quel autre texte en remplaçant le contenu entre le`<a>` Mots clés. Par exemple, vous pouvez utiliser`<a href="https://www.aspose.com">Click here</a>` pour afficher le texte "Cliquez ici" sous forme de lien automatique.
+ R : Oui, vous pouvez personnaliser le texte d'affichage d'un lien automatique dans Aspose.Words. Au lieu d'utiliser l'adresse URL comme texte à afficher, vous pouvez utiliser n'importe quel autre texte en remplaçant le contenu entre le`<a>` Mots clés. Par exemple, vous pouvez utiliser`<a href="https://www.aspose.com">Click here</a>`pour afficher le texte "Cliquez ici" sous forme de lien automatique.
 
 #### Q : Comment puis-je ajouter des attributs supplémentaires à un lien automatique dans Aspose.Words ?
 
-R : Pour ajouter des attributs supplémentaires à un lien automatique dans Aspose.Words, vous pouvez utiliser des attributs HTML supplémentaires dans le fichier`<a>` étiqueter. Par exemple, vous pouvez utiliser`<a href="https://www.aspose.com" target="_blank">Link</a>` pour ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet à l'aide du` attribute target="_blank"`.
+ R : Pour ajouter des attributs supplémentaires à un lien automatique dans Aspose.Words, vous pouvez utiliser des attributs HTML supplémentaires dans le fichier`<a>` étiqueter. Par exemple, vous pouvez utiliser`<a href="https://www.aspose.com" target="_blank">Link</a>` pour ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet à l'aide du` attribute target="_blank"`.

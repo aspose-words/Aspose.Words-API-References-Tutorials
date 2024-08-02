@@ -2,84 +2,97 @@
 title: Pisahkan Dokumen Word Berdasarkan Judul Html
 linktitle: Dengan Judul Html
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk menjelaskan kode sumber C# dari dokumen kata terpisah Dengan fitur Heading HTML dari Aspose.Words untuk .NET
+description: Pelajari cara membagi dokumen Word dengan judul menjadi HTML menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci.
 type: docs
 weight: 10
 url: /id/net/split-document/by-headings-html/
 ---
-Dalam tutorial ini, kami akan memandu Anda tentang cara membagi dokumen Word menjadi bagian-bagian yang lebih kecil menggunakan fitur By HTML Heading dari Aspose.Words untuk .NET. Ikuti langkah-langkah di bawah ini untuk memahami kode sumber dan menghasilkan dokumen HTML terpisah berdasarkan Judul.
+## Perkenalan
 
-## Langkah 1: Memuat dokumen
+Memisahkan dokumen Word berdasarkan judul dapat menjadi terobosan baru dalam mengelola dokumen berukuran besar atau membuat keluaran HTML tersegmentasi. Aspose.Words untuk .NET menyediakan cara mudah untuk mencapai hal ini. Dalam tutorial ini, kami akan memandu Anda melalui seluruh proses, memastikan Anda memahami setiap detail di sepanjang prosesnya.
 
-Untuk memulai, tentukan direktori untuk dokumen Anda dan muat dokumen ke dalam objek Dokumen. Begini caranya:
+## Prasyarat
+
+Sebelum masuk ke tutorial, pastikan Anda memiliki hal berikut:
+
+1. Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: IDE seperti Visual Studio.
+3. Pengetahuan Dasar C#: Memahami dasar-dasarnya akan membantu Anda mengikutinya dengan mudah.
+4. Contoh Dokumen: Siapkan dokumen Word yang ingin Anda pisahkan berdasarkan judul.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini penting untuk mengakses kelas dan metode Aspose.Words.
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Langkah 2: Membagi dokumen dengan Heading dalam format HTML
+## Langkah 1: Siapkan Proyek Anda
 
-Sekarang kita akan mengatur opsi penyimpanan untuk membagi dokumen menjadi bagian-bagian yang lebih kecil berdasarkan Heading dalam format HTML. Begini caranya:
+Untuk memulai, siapkan proyek Anda di lingkungan pengembangan Anda. Buka Visual Studio dan buat Aplikasi Konsol baru.
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-// Pisahkan dokumen menjadi bagian-bagian yang lebih kecil, dalam hal ini pisahkan berdasarkan judul.
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. Buat Proyek Baru: Buka Visual Studio, pilih 'Buat proyek baru', pilih 'Aplikasi Konsol (.NET Core)', dan klik 'Berikutnya'.
+2. Konfigurasikan Proyek Anda: Beri nama proyek Anda, pilih lokasi untuk menyimpannya, dan klik 'Buat'.
+3.  Instal Aspose.Words untuk .NET: Gunakan NuGet Package Manager untuk menginstal perpustakaan Aspose.Words. Di Manajer Paket NuGet, cari`Aspose.Words` dan menginstalnya.
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## Langkah 2: Muat Dokumen Anda
 
-### Contoh kode sumber By Headings HTML menggunakan Aspose.Words untuk .NET
+Selanjutnya, Anda perlu memuat dokumen Word yang ingin Anda pisahkan. Pastikan dokumen Anda ditempatkan di direktori yang mudah Anda akses.
 
-Berikut ini source code lengkap fitur By HTML Heading Aspose.Words for .NET:
+1. Tentukan Jalur Direktori: Buat variabel untuk jalur direktori dokumen Anda.
+2.  Memuat Dokumen: Gunakan`Document` kelas untuk memuat dokumen Word Anda.
 
 ```csharp
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Langkah 3: Konfigurasikan Opsi Penyimpanan HTML
+
+Sekarang, mari konfigurasikan opsi penyimpanan HTML untuk menentukan bahwa dokumen harus dibagi berdasarkan judul.
+
+1.  Buat HtmlSaveOptions: Buat instance`HtmlSaveOptions` kelas.
+2.  Tetapkan Kriteria Pemisahan Dokumen: Gunakan`DocumentSplitCriteria` properti untuk menentukan bahwa dokumen harus dipisahkan berdasarkan paragraf judul.
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	// Pisahkan dokumen menjadi beberapa bagian yang lebih kecil, dalam hal ini pisahkan berdasarkan judul.
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    // Pisahkan dokumen menjadi beberapa bagian yang lebih kecil, dalam hal ini pisahkan berdasarkan judul.
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## Langkah 4: Simpan Dokumen Terpisah
 
+Terakhir, simpan dokumen dengan opsi penyimpanan HTML yang ditentukan. Ini akan menghasilkan file HTML yang dibagi berdasarkan judul.
+
+1.  Simpan Dokumen: Gunakan`Save` metode`Document` kelas untuk menyimpan dokumen dengan opsi yang ditentukan.
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-Dengan kode ini, Anda akan dapat membagi dokumen Word menjadi bagian-bagian yang lebih kecil menggunakan Aspose.Words untuk .NET, berdasarkan judulnya. Anda kemudian dapat membuat dokumen HTML terpisah untuk setiap bagian.
-
 ## Kesimpulan
 
- Dalam tutorial ini, kita mempelajari cara membagi dokumen Word menjadi bagian-bagian yang lebih kecil menggunakan fitur By HTML Heading dari Aspose.Words untuk .NET. Dengan menentukan`DocumentSplitCriteria` sebagai`HeadingParagraph` dalam`HtmlSaveOptions`, kami dapat membuat dokumen HTML terpisah berdasarkan judul yang ada di dokumen asli.
+Dan itu dia! Anda telah berhasil membagi dokumen Word berdasarkan judul dan menyimpannya sebagai HTML menggunakan Aspose.Words untuk .NET. Metode ini sangat efektif untuk mengatur dokumen berukuran besar dan membuat keluaran HTML tersegmentasi, membuat konten Anda lebih mudah dikelola dan diakses.
 
-Memisahkan dokumen berdasarkan judul dapat berguna untuk mengatur dan mengelola konten, terutama dalam dokumen besar dengan banyak bagian. Aspose.Words untuk .NET memberikan solusi yang andal dan efisien untuk menangani pemisahan dokumen dan menghasilkan keluaran dalam berbagai format.
+## FAQ
 
-Jangan ragu untuk menjelajahi fitur dan opsi tambahan yang disediakan oleh Aspose.Words untuk .NET untuk lebih meningkatkan kemampuan pemrosesan dokumen dan menyederhanakan alur kerja Anda.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET.
 
-### FAQ
+### Bisakah saya membagi dokumen berdasarkan kriteria lain?
+Ya, Aspose.Words memungkinkan Anda membagi dokumen berdasarkan berbagai kriteria seperti bagian, halaman, dan lainnya.
 
-#### Bagaimana cara membagi dokumen Word menjadi bagian-bagian yang lebih kecil berdasarkan judul menggunakan Aspose.Words untuk .NET?
+### Apakah Aspose.Words gratis?
+ Aspose.Words menawarkan uji coba gratis, tetapi untuk fitur lengkap, Anda harus membeli lisensi. Periksa mereka[halaman beli](https://purchase.aspose.com/buy) untuk lebih jelasnya.
 
- Untuk membagi dokumen Word berdasarkan judul, Anda dapat menggunakan fitur Berdasarkan Judul HTML dari Aspose.Words untuk .NET. Ikuti kode sumber yang disediakan dan atur`DocumentSplitCriteria` ke`HeadingParagraph` dalam`HtmlSaveOptions` obyek. Ini akan membagi dokumen menjadi bagian-bagian yang lebih kecil di setiap judul.
+### Di mana saya dapat menemukan dokumentasinya?
+ Dokumentasi komprehensif tersedia[Di Sini](https://reference.aspose.com/words/net/).
 
-#### Dalam format apa saya dapat membagi dokumen Word?
-
- Kode sumber yang disediakan menunjukkan pemisahan dokumen Word menjadi bagian-bagian kecil dalam format HTML. Namun, Aspose.Words untuk .NET mendukung berbagai format keluaran, termasuk DOCX, PDF, EPUB, dan banyak lagi. Anda dapat memodifikasi kode dan menentukan format keluaran yang diinginkan di`HtmlSaveOptions` objek sesuai.
-
-#### Bisakah saya memilih kriteria lain untuk memisahkan dokumen?
-
-Ya, Anda dapat memilih kriteria berbeda untuk memisahkan dokumen berdasarkan kebutuhan Anda. Aspose.Words for .NET menyediakan beberapa pilihan kriteria, seperti`HeadingParagraph`, `Page`, `Section` , dan banyak lagi. Ubah`DocumentSplitCriteria` properti di`HtmlSaveOptions` objek untuk memilih kriteria pemisahan yang sesuai.
-
-#### Bagaimana cara menyesuaikan HTML keluaran untuk bagian yang terpisah?
-
- Aspose.Words untuk .NET memungkinkan Anda menyesuaikan HTML keluaran untuk bagian yang terpisah dengan menentukan opsi tambahan di`HtmlSaveOptions` obyek. Anda dapat mengontrol berbagai aspek seperti gaya CSS, gambar, font, dan lainnya. Lihat dokumentasi Aspose.Words untuk detail selengkapnya tentang menyesuaikan output HTML.
-
-#### Bisakah saya membagi dokumen berdasarkan beberapa kriteria?
-
- Ya, Anda dapat membagi dokumen berdasarkan beberapa kriteria dengan menggabungkan opsi kriteria yang sesuai. Misalnya, Anda dapat membagi dokumen berdasarkan judul dan halaman dengan mengatur`DocumentSplitCriteria`properti ke`HeadingParagraph | Page`. Ini akan membagi dokumen pada setiap judul dan setiap halaman, membuat bagian-bagian yang lebih kecil berdasarkan kedua kriteria tersebut.
+### Bagaimana cara mendapatkan dukungan?
+ Untuk dukungan, kunjungi Aspose.Words[forum](https://forum.aspose.com/c/words/8).

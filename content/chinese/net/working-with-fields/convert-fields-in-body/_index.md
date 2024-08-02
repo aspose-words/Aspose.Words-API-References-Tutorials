@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /zh/net/working-with-fields/convert-fields-in-body/
 ---
-
 ## 介绍
 
 在 .NET 开发领域，动态管理文档内容至关重要，通常需要操作文档内的各种字段类型。Aspose.Words for .NET 是开发人员的强大工具集，提供强大的功能来高效处理文档字段。本综合指南重点介绍如何使用 Aspose.Words for .NET 转换文档正文中的字段，提供分步说明，帮助开发人员增强文档自动化和管理。
@@ -31,9 +30,7 @@ using System.Linq;
 
 这些命名空间对于访问 Aspose.Words 功能和 LINQ 查询至关重要。
 
-## 使用 Aspose.Words for .NET 转换正文中字段的分步指南
-
-### 步骤 1：加载文档
+## 步骤 1：加载文档
 
 首先加载您想要转换字段的文档：
 
@@ -44,7 +41,7 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 代替`"YOUR DOCUMENT DIRECTORY"`使用您的实际文档的路径。
 
-### 第 2 步：识别并转换字段
+## 第 2 步：识别并转换字段
 
 识别并转换文档正文中的特定字段。例如，要将 PAGE 字段转换为文本：
 
@@ -57,7 +54,7 @@ doc.FirstSection.Body.Range.Fields
 
 此代码片段使用 LINQ 查找文档正文中的所有 PAGE 字段，然后取消它们的链接，有效地将它们转换为静态文本。
 
-### 步骤 3：保存文档
+## 步骤 3：保存文档
 
 转换字段后保存修改后的文档：
 
@@ -71,7 +68,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 掌握使用 Aspose.Words for .NET 处理文档字段的技巧，开发人员可以高效地自动化文档工作流程。无论是将字段转换为纯文本还是处理更复杂的字段类型，Aspose.Words 都可以通过其直观的 API 和强大的功能集简化这些任务，确保无缝集成到 .NET 应用程序中。
 
-## 常见问题 (FAQ)
+## 常见问题解答
 
 ### Aspose.Words for .NET 中的文档字段是什么？
 Aspose.Words 中的文档字段是可以存储和显示动态数据（例如日期、页码和计算）的占位符。

@@ -53,7 +53,7 @@ Félicitation ! Vous avez maintenant appris à appliquer le style de texte barr�
 
 #### Q : Comment puis-je ajouter le texte barré dans Aspose.Words ?
 
- R : Pour ajouter le texte barré dans Aspose.Words, vous pouvez utiliser le`Font.StrikeThrough` propriété du`Run`objet. Vous pouvez définir cette propriété sur`true` pour ajouter du texte barré à un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.StrikeThrough=true` pour ajouter le texte barré dans le`Run` objet.
+ R : Pour ajouter le texte barré dans Aspose.Words, vous pouvez utiliser le`Font.StrikeThrough` propriété du`Run` objet. Vous pouvez définir cette propriété sur`true` pour ajouter du texte barré à un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.StrikeThrough=true` pour ajouter le texte barré dans le`Run` objet.
 
 #### Q : Est-il possible d’ajouter le texte barré à plusieurs morceaux de texte dans un même paragraphe ?
 

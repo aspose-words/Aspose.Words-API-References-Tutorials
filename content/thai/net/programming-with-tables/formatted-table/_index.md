@@ -2,42 +2,79 @@
 title: ตารางที่จัดรูปแบบแล้ว
 linktitle: ตารางที่จัดรูปแบบแล้ว
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีสร้างตารางที่จัดรูปแบบในเอกสาร Word ด้วย Aspose.Words for .NET
+description: เรียนรู้วิธีสร้างและจัดรูปแบบตารางในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนโดยละเอียดนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-tables/formatted-table/
 ---
+## การแนะนำ
 
-ในบทช่วยสอนนี้ เราจะได้เรียนรู้วิธีสร้างตารางที่จัดรูปแบบในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เราจะทำตามคำแนะนำทีละขั้นตอนเพื่อทำความเข้าใจโค้ดและใช้งานคุณลักษณะนี้ ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถสร้างตารางที่มีการจัดรูปแบบแบบกำหนดเองในเอกสาร Word ของคุณโดยทางโปรแกรมได้
+การสร้างและการจัดรูปแบบตารางในเอกสาร Word โดยทางโปรแกรมอาจดูเหมือนเป็นงานที่น่ากังวล แต่ด้วย Aspose.Words สำหรับ .NET จะทำให้ตรงไปตรงมาและจัดการได้ง่าย ในบทช่วยสอนนี้ เราจะอธิบายวิธีสร้างตารางที่จัดรูปแบบในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เราจะครอบคลุมทุกอย่างตั้งแต่การตั้งค่าสภาพแวดล้อมของคุณไปจนถึงการบันทึกเอกสารของคุณด้วยตารางที่มีรูปแบบสวยงาม
 
-## ขั้นตอนที่ 1: การตั้งค่าโครงการ
-1. เรียกใช้ Visual Studio และสร้างโครงการ C# ใหม่
-2. เพิ่มการอ้างอิงไปยังไลบรารี Aspose.Words สำหรับ .NET
+## ข้อกำหนดเบื้องต้น
 
-## ขั้นตอนที่ 2: การสร้างเอกสารและการเริ่มต้นตัวสร้างเอกสาร
-เพื่อเริ่มสร้างตารางที่จัดรูปแบบแล้ว เราจำเป็นต้องสร้างเอกสารใหม่และเริ่มต้นตัวสร้างเอกสาร ทำตามขั้นตอนเหล่านี้:
+ก่อนที่จะเจาะลึกโค้ด โปรดตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
+
+1. Aspose.Words สำหรับ .NET Library: ดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/net/).
+2. สภาพแวดล้อมการพัฒนา: IDE เช่น Visual Studio
+3. .NET Framework: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง .NET Framework บนเครื่องของคุณ
+
+## นำเข้าเนมสเปซ
+
+ก่อนที่จะเขียนโค้ดจริง คุณต้องนำเข้าเนมสเปซที่จำเป็นก่อน:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสารของคุณ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//สร้างเอกสารและเริ่มต้นตัวสร้างเอกสาร
+## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสารของคุณ
+
+ขั้นแรก คุณต้องกำหนดเส้นทางที่จะบันทึกเอกสารของคุณ
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงที่คุณต้องการบันทึกเอกสาร
+
+## ขั้นตอนที่ 2: เริ่มต้นเอกสารและ DocumentBuilder
+
+ตอนนี้ เริ่มต้นเอกสารใหม่และวัตถุ DocumentBuilder
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-อย่าลืมแทนที่ "ไดเรกทอรีเอกสารของคุณ" ด้วยเส้นทางจริงไปยังไดเรกทอรีเอกสารของคุณ
+ ที่`DocumentBuilder` เป็นคลาสตัวช่วยที่ทำให้กระบวนการสร้างเอกสารง่ายขึ้น
 
-## ขั้นตอนที่ 3: สร้างตารางที่จัดรูปแบบ
-ต่อไป เราจะสร้างตารางที่จัดรูปแบบโดยใช้วิธีการที่ได้รับจากตัวสร้างเอกสาร ใช้รหัสต่อไปนี้:
+## ขั้นตอนที่ 3: เริ่มตาราง
+
+ จากนั้นให้เริ่มสร้างตารางโดยใช้`StartTable` วิธี.
 
 ```csharp
-// เริ่มต้นการสร้างอาร์เรย์
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// การสร้างแถวส่วนหัวของตาราง
-builder. InsertCell();
-table. LeftIndent = 20.0;
+จำเป็นต้องแทรกเซลล์เพื่อเริ่มตาราง
+
+## ขั้นตอนที่ 4: ใช้การจัดรูปแบบทั้งตาราง
+
+คุณสามารถใช้การจัดรูปแบบที่ส่งผลต่อทั้งตารางได้ ตัวอย่างเช่น การตั้งค่าการเยื้องซ้าย:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## ขั้นตอนที่ 5: จัดรูปแบบแถวส่วนหัว
+
+ตั้งค่าความสูง การจัดตำแหน่ง และคุณสมบัติอื่นๆ สำหรับแถวส่วนหัว
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+ในขั้นตอนนี้ เราทำให้แถวส่วนหัวโดดเด่นด้วยการตั้งค่าสีพื้นหลัง ขนาดตัวอักษร และการจัดแนว
+
+## ขั้นตอนที่ 6: แทรกเซลล์ส่วนหัวเพิ่มเติม
+
+แทรกเซลล์เพิ่มเติมสำหรับแถวส่วนหัว:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## ขั้นตอนที่ 7: จัดรูปแบบแถวเนื้อหา
 
-// การสร้างตัวอาร์เรย์
+หลังจากตั้งค่าส่วนหัวแล้ว ให้จัดรูปแบบเนื้อหาของตาราง:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// สิ้นสุดการสร้างอาร์เรย์
-builder. EndTable();
 ```
 
- ที่นี่เราใช้ตัวสร้างเอกสารเพื่อสร้างตารางทีละขั้นตอน เราเริ่มต้นด้วยการโทร`StartTable()` เพื่อเริ่มต้นตาราง แล้วเราก็ใช้`InsertCell()` เพื่อแทรกเซลล์และ`Write()` เพื่อเพิ่มเนื้อหาลงในแต่ละเซลล์ นอกจากนี้เรายังใช้คุณสมบัติการจัดรูปแบบที่แตกต่างกันเพื่อกำหนดการจัดรูปแบบของแถวตาราง เซลล์ และข้อความ
+## ขั้นตอนที่ 8: แทรกแถวเนื้อหา
 
-## ขั้นตอนที่ 4: บันทึกเอกสาร
-สุดท้าย เราจำเป็นต้องบันทึกเอกสารที่มีตารางที่จัดรูปแบบแล้ว ใช้รหัสต่อไปนี้:
+แทรกแถวเนื้อหาด้วยเนื้อหา:
 
 ```csharp
-// บันทึกเอกสาร
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+ทำซ้ำสำหรับแถวเพิ่มเติม:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## ขั้นตอนที่ 9: บันทึกเอกสาร
+
+สุดท้าย ให้บันทึกเอกสารลงในไดเร็กทอรีที่ระบุ:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้องสำหรับเอกสารเอาต์พุต
-
-### ตัวอย่างซอร์สโค้ดสำหรับตารางที่จัดรูปแบบโดยใช้ Aspose.Words สำหรับ .NET 
-
-```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// ต้องใช้การจัดรูปแบบทั้งตารางหลังจากมีอย่างน้อยหนึ่งแถวในตาราง
-	table.LeftIndent = 20.0;
-	// ตั้งค่าความสูงและกำหนดกฎความสูงสำหรับแถวส่วนหัว
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// เราไม่จำเป็นต้องระบุความกว้างของเซลล์นี้เนื่องจากสืบทอดมาจากเซลล์ก่อนหน้า
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// รีเซ็ตความสูงและกำหนดกฎความสูงอื่นสำหรับเนื้อหาของตาราง
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// รีเซ็ตการจัดรูปแบบตัวอักษร
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+เพื่อสร้างและบันทึกเอกสาร Word ด้วยตารางที่จัดรูปแบบแล้ว
 
 ## บทสรุป
-ในบทช่วยสอนนี้ เราได้เรียนรู้วิธีสร้างตารางที่จัดรูปแบบในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ด้วยการทำตามคำแนะนำทีละขั้นตอนนี้และนำโค้ด C# ที่ให้มาไปใช้ คุณสามารถสร้างตารางแบบกำหนดเองพร้อมการจัดรูปแบบเฉพาะในเอกสาร Word ของคุณโดยทางโปรแกรมได้ คุณลักษณะนี้ช่วยให้คุณสามารถนำเสนอและจัดโครงสร้างข้อมูลของคุณในลักษณะที่ดึงดูดสายตาและจัดระเบียบได้
+
+และคุณก็ได้แล้ว! เมื่อทำตามขั้นตอนเหล่านี้ คุณจะสามารถสร้างตารางที่มีการจัดรูปแบบอย่างดีในเอกสาร Word โดยใช้ Aspose.Words for .NET ไลบรารีอันทรงพลังนี้ทำให้การจัดการเอกสาร Word โดยทางโปรแกรมเป็นเรื่องง่าย ช่วยคุณประหยัดเวลาและความพยายาม
+
+## คำถามที่พบบ่อย
+
+### Aspose.Words สำหรับ .NET คืออะไร
+Aspose.Words for .NET เป็นไลบรารีที่มีประสิทธิภาพสำหรับการสร้าง แก้ไข และแปลงเอกสาร Word โดยทางโปรแกรม
+
+### ฉันสามารถใช้สีที่ต่างกันสำหรับแถวที่ต่างกันได้หรือไม่
+ได้ คุณสามารถใช้การจัดรูปแบบที่แตกต่างกัน รวมถึงสี กับแถวหรือเซลล์ต่างๆ ได้
+
+### Aspose.Words สำหรับ .NET ฟรีหรือไม่
+ Aspose.Words สำหรับ .NET เป็นไลบรารีแบบชำระเงิน แต่คุณสามารถรับได้[ทดลองฟรี](https://releases.aspose.com/).
+
+### ฉันจะรับการสนับสนุนสำหรับ Aspose.Words สำหรับ .NET ได้อย่างไร
+ คุณสามารถรับการสนับสนุนจาก[กำหนดฟอรัมชุมชน](https://forum.aspose.com/c/words/8).
+
+### ฉันสามารถสร้างเอกสารประเภทอื่นด้วย Aspose.Words สำหรับ .NET ได้หรือไม่
+ใช่ Aspose.Words สำหรับ .NET รองรับรูปแบบเอกสารที่หลากหลาย รวมถึง PDF, HTML และ TXT

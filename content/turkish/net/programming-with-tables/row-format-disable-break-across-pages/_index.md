@@ -2,67 +2,86 @@
 title: Satır Formatı Sayfalar Arasında Kesmeyi Devre Dışı Bırak
 linktitle: Satır Formatı Sayfalar Arasında Kesmeyi Devre Dışı Bırak
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesinde birden çok sayfadaki bir tablo için satır sonunu nasıl devre dışı bırakacağınızı öğrenin.
+description: Tablo okunabilirliğini ve formatını korumak için Aspose.Words for .NET'i kullanarak Word belgelerindeki sayfalar arasında satır sonlarını nasıl devre dışı bırakacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde çok sayfalı bir tablonun satır sonunun nasıl devre dışı bırakılacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablonuzdaki tüm satırlar için satır kesmeyi devre dışı bırakabileceksiniz.
+Word belgelerindeki tablolarla çalışırken satırların sayfalara bölünmediğinden emin olmak isteyebilirsiniz; bu, belgelerinizin okunabilirliğini ve biçimlendirmesini korumak için önemli olabilir. Aspose.Words for .NET sayfalar arasında satır sonlarını devre dışı bırakmanın kolay bir yolunu sunar.
 
-## Adım 1: Proje Kurulumu
-1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
-2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
+Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki sayfalar arasındaki satır sonlarını devre dışı bırakma sürecinde size yol göstereceğiz.
 
-## Adım 2: Belgeyi yükleme
-Belgeyle Sözcük İşleme'yi başlatmak için şu adımları izleyin:
+## Önkoşullar
 
-```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+- Aspose.Words for .NET kütüphanesi kuruldu.
+- Birden çok sayfaya yayılan bir tablo içeren bir Word belgesi.
 
-// Belgeyi yükleyin
-Document doc = new Document(dataDir + "Table spanning two pages.docx");
-```
+## Ad Alanlarını İçe Aktar
 
-"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
-
-## 3. Adım: Tablo satır sonunu devre dışı bırakın
-Daha sonra tablodaki tüm satırlar için satır kesmeyi devre dışı bırakacağız. Aşağıdaki kodu kullanın:
+Öncelikle projenize gerekli ad alanlarını içe aktarın:
 
 ```csharp
-// Masayı geri al
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Tablodaki tüm satırlar için satır sonunu devre dışı bırak
-foreach(Row row in table.Rows)
-row.RowFormat.AllowBreakAcrossPages = false;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Burada belgeyi ilk tabloyu getirmek için kullanıyoruz ve ardından foreach döngüsü kullanarak tablodaki tüm satırları yineliyoruz. Döngünün içinde, her satır için satır kesmeyi devre dışı bırakırız.`RowFormat.AllowBreakAcrossPages`mülkiyet`false`.
+## 1. Adım: Belgeyi Yükleyin
 
-## Adım 4: Değiştirilen belgeyi kaydetme
-Son olarak, değiştirilen belgeyi tablo satırı sonu devre dışı bırakılarak kaydetmemiz gerekir. Aşağıdaki kodu kullanın:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
-```
-
-Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanarak Sayfalar Arasında Kesmeyi Devre Dışı Bırakma Satır Formatı için örnek kaynak kodu 
+Birden fazla sayfaya yayılan tabloyu içeren belgeyi yükleyin.
 
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
+```
+
+## Adım 2: Tabloya Erişin
+
+Belgedeki ilk tabloya erişin. Bu, değiştirmek istediğiniz tablonun belgedeki ilk tablo olduğunu varsayar.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## 3. Adım: Tüm Satırlar için Sayfalar Arasında Geçişi Devre Dışı Bırakma
+
+ Tablodaki her satırda döngü yapın ve`AllowBreakAcrossPages`mülkiyet`false`. Bu, satırların sayfalar arasında bölünmemesini sağlar.
+
+```csharp
 // Tablodaki tüm satırlar için sayfalar arası bölmeyi devre dışı bırakın.
 foreach (Row row in table.Rows)
-	row.RowFormat.AllowBreakAcrossPages = false;
+    row.RowFormat.AllowBreakAcrossPages = false;
+```
+
+## Adım 4: Belgeyi Kaydedin
+
+Değiştirilen belgeyi belirttiğiniz dizine kaydedin.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde çok sayfalı bir tablonun satır sonunun nasıl devre dışı bırakılacağını öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak bu devre dışı bırakma işlemini Word belgelerinizdeki tablolarınıza uygulayabilirsiniz.
+
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki sayfalar arasındaki satır sonlarının nasıl devre dışı bırakılacağını gösterdik. Yukarıda özetlenen adımları izleyerek tablo satırlarınızın sağlam kalmasını ve sayfalara bölünmemesini sağlayarak belgenin okunabilirliğini ve biçimlendirmesini koruyabilirsiniz.
+
+## SSS'ler
+
+### Tüm satırlar yerine belirli bir satır için sayfalar arasındaki satır sonlarını devre dışı bırakabilir miyim?  
+ Evet, istediğiniz satıra erişip satır sonlarını ayarlayarak belirli satırlar için satır sonlarını devre dışı bırakabilirsiniz.`AllowBreakAcrossPages`mülkiyet`false`.
+
+### Bu yöntem birleştirilmiş hücreli tablolar için işe yarar mı?  
+ Evet, bu yöntem birleştirilmiş hücreli tablolar için işe yarar. Özellikler`AllowBreakAcrossPages` hücre birleşmesinden bağımsız olarak tüm satıra uygulanır.
+
+### Tablo başka bir tablonun içine yerleştirilmişse bu yöntem işe yarar mı?  
+Evet, iç içe geçmiş tablolara aynı şekilde erişebilir ve bunları değiştirebilirsiniz. Yuvalanmış tabloya dizinine veya diğer özelliklerine göre doğru bir şekilde başvuruda bulunduğunuzdan emin olun.
+
+### Bir satırın sayfalar arasında bölünmeye izin verip vermediğini nasıl kontrol edebilirim?  
+ Bir satırın sayfalar arasında bölünmeye izin verip vermediğini şu adrese erişerek kontrol edebilirsiniz:`AllowBreakAcrossPages` mülkiyeti`RowFormat` ve değerini kontrol ediyoruz.
+
+### Bu ayarı bir belgedeki tüm tablolara uygulamanın bir yolu var mı?  
+Evet, belgedeki tüm tablolar arasında geçiş yapabilir ve bu ayarı her birine uygulayabilirsiniz.

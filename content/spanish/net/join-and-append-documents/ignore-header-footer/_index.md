@@ -15,7 +15,7 @@ Fusionar documentos de Word a veces puede resultar un poco complicado, especialm
 
 Antes de comenzar, asegurémonos de tener todo lo que necesitamos:
 
--  Aspose.Words para .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 - Visual Studio: cualquier versión reciente debería funcionar.
 - Comprensión básica de C#: no te preocupes, te guiaré a través del código.
 - Dos Documentos Word: Uno para anexar al otro.

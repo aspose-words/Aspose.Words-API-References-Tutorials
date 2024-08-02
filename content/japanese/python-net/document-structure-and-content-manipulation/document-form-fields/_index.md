@@ -93,7 +93,7 @@ date_picker.name = "birth_date"
 
 ### プレースホルダーテキストの追加
 
-テキスト入力フィールドのプレースホルダーテキストは、ユーザーに想定される入力形式を案内します。`PlaceholderText`プレースホルダーを追加するプロパティ:
+テキスト入力フィールドのプレースホルダーテキストは、ユーザーに期待される入力形式を案内します。`PlaceholderText`プレースホルダーを追加するプロパティ:
 
 ```python
 text_input_field.placeholder_text = "Enter your full name"

@@ -103,4 +103,4 @@ Ja, Aspose.Words ondersteunt verschillende indelingen, zodat u documenten van in
 Absoluut! Integreer deze code in uw applicaties of scripts om het conversieproces te automatiseren als onderdeel van uw documentbeheerworkflows.
 
 ### Waar kan ik meer hulp vinden als ik problemen tegenkom?
- Bezoek de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor gemeenschapshulp en ondersteuning met betrekking tot Aspose.Words.
+ Bezoek de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp en ondersteuning van de gemeenschap met betrekking tot Aspose.Words.

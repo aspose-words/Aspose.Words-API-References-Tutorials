@@ -2,77 +2,94 @@
 title: Tartsa együtt az asztalt
 linktitle: Tartsa együtt az asztalt
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan tarthat össze egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET segítségével.
+description: Az Aspose.Words for .NET segítségével megtudhatja, hogyan akadályozhatja meg, hogy a táblázatok oldalakra törjenek a Word-dokumentumokban. Kövesse útmutatónkat a professzionális, olvasható dokumentumok karbantartásához.
 type: docs
 weight: 10
 url: /hu/net/programming-with-tables/keep-table-together/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban megtudjuk, hogyan lehet egy táblázatot összetartani egy Word-dokumentumban az Aspose.Words for .NET használatával. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Ennek az oktatóanyagnak a végére képes lesz megőrizni a táblázatot érintetlenül anélkül, hogy az több oldalra osztódna a Word-dokumentumokban.
+Volt már olyan, hogy csalódott volt, amikor a Word-dokumentumban lévő táblázat két oldalra szakad? Mintha a gondosan összeállított információid hirtelen úgy döntöttek volna, hogy félúton szünetet tartanak! A táblázatok egy oldalon tartása kulcsfontosságú az olvashatóság és a megjelenítés szempontjából. Legyen szó jelentésről, projektjavaslatról vagy csak egy személyes dokumentumról, a táblázatok felosztása meglehetősen idegesítő lehet. Szerencsére az Aspose.Words for .NET remek megoldást kínál a probléma megoldására. Ebben az oktatóanyagban végigvezetjük azokat a lépéseket, amelyekkel az asztalok épek és élesek maradnak. Merüljünk el!
 
-## 1. lépés: A projekt beállítása
-1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# projektet.
-2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
+## Előfeltételek
 
-## 2. lépés: A dokumentum betöltése és a táblázat előhívása
-A Szövegfeldolgozás elindításához a táblázattal be kell töltenünk a dokumentumot, és le kell kérnünk a táblázatot, amelyet együtt szeretnénk tartani. Kovesd ezeket a lepeseket:
+Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkkel:
+
+1.  Aspose.Words for .NET – Ha még nem telepítette, letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2. Word-dokumentum táblázattal – Olyan mintadokumentummal fogunk dolgozni, amelynek több oldalt átívelő táblázata van.
+3. Alapvető C# ismerete – Ez az oktatóanyag feltételezi, hogy rendelkezik a C# programozás alapvető ismereteivel.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket. Ez hozzáférést biztosít számunkra az Aspose.Words for .NET-hez szükséges osztályokhoz és metódusokhoz.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Bontsuk le a folyamatot könnyű, emészthető lépésekre. Kezdjük a dokumentumunk betöltésével, és a frissített dokumentum mentésével fejezzük be, ahol a táblázat együtt marad.
+
+## 1. lépés: Töltse be a dokumentumot
+
+ A Word-dokumentum használatához először be kell töltenünk azt. Használjuk a`Document` osztály erre.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Töltse be a dokumentumot
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
-
-// Vedd vissza az asztalt
-Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
+## 2. lépés: Nyissa meg a táblázatot
 
-## 3. lépés: Engedélyezze a „KeepWithNext” opciót
-Annak érdekében, hogy a táblázat egyben maradjon, és ne váljon szét több oldalra, engedélyeznünk kell a "KeepWithNext" opciót a táblázat minden bekezdésénél, kivéve a táblázat utolsó sorának utolsó bekezdéseit. Használja a következő kódot:
+Ezután meg kell szereznünk azt az asztalt, amelyet együtt szeretnénk tartani. Feltételezzük, hogy ez a dokumentum első táblázata.
 
 ```csharp
-foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## 3. lépés: Állítsa be a KeepWithNext beállítást a bekezdésekhez
+
+ Ahhoz, hogy a táblázat ne törjön oldalakra, be kell állítanunk a`KeepWithNext` tulajdonságot a táblázat minden bekezdéséhez, kivéve az utolsó sor utolsó bekezdéseit.
+
+```csharp
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-cell.EnsureMinimum();
-foreach(Paragraph para in cell.Paragraphs)
-if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
-para.ParagraphFormat.KeepWithNext = true;
+    cell.EnsureMinimum();
+    foreach (Paragraph para in cell.Paragraphs)
+    {
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
+    }
 }
 ```
 
-Itt végigpörgetjük a táblázat minden celláját, és engedélyezzük a "KeepWithNext" opciót a cellában lévő minden egyes bekezdéshez, kivéve a táblázat utolsó sorának utolsó bekezdéseit.
+## 4. lépés: Mentse el a dokumentumot
 
-## 4. lépés: Mentse el a módosított dokumentumot
-Végül el kell mentenünk a módosított dokumentumot a táblázat összetartásával. Használja a következő kódot:
+Végül elmentjük a frissített dokumentumot. Ez alkalmazza a módosításainkat, és biztosítja, hogy a táblázat egy oldalon maradjon.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
-Ügyeljen arra, hogy a megfelelő elérési utat és fájlnevet adja meg a kimeneti dokumentumhoz.
-
-### Minta forráskód a Keep Table Together programhoz az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table spanning two pages.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Engedélyeznünk kell a KeepWithNext funkciót a táblázat minden bekezdéséhez, hogy ne törjön át egy oldalon,
-	//kivéve a táblázat utolsó sorának utolsó bekezdéseit.
-	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
-	{
-		cell.EnsureMinimum();
-		foreach (Paragraph para in cell.Paragraphs)
-			if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
-				para.ParagraphFormat.KeepWithNext = true;
-	}
-	doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
-```
-
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet összetartani egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C#-kódot, megőrizheti a táblázat érintetlenségét, és megakadályozhatja, hogy a dokumentumokban több oldalra oszlana fel. Ezzel a funkcióval jobban szabályozhatja a dokumentumokban lévő táblázatok megjelenését és elrendezését.
+
+És megvan! Csak néhány sornyi kóddal megakadályozhatja, hogy a táblázatok oldalakra váljanak a Word-dokumentumokban. Ez az egyszerű, de hatékony megoldás gondoskodik arról, hogy táblázatai tiszták és professzionálisak maradjanak, javítva a dokumentumok olvashatóságát. Az Aspose.Words for .NET megkönnyíti az ilyen formázási problémák kezelését, és lehetővé teszi, hogy a nagyszerű tartalom létrehozására összpontosítson.
+
+## GYIK
+
+### Tarthatok több táblát együtt ezzel a módszerrel?  
+Igen, ugyanazt a logikát több táblára is alkalmazhatja, ha végigfut a dokumentumban minden táblán.
+
+### Mi van, ha a táblázatom túl nagy ahhoz, hogy elférjen egy oldalon?  
+Ha egy táblázat túl nagy ahhoz, hogy egyetlen oldalon elférjen, akkor is átfogja az oldalakat. Ez a módszer biztosítja, hogy a kisebb asztalok sértetlenek maradjanak szétválás nélkül.
+
+### Van mód ennek automatizálására egy dokumentum összes táblájára?  
+ Igen, végignézheti a dokumentum összes táblázatát, és alkalmazhatja a`KeepWithNext` tulajdonság minden bekezdéshez.
+
+### Szükségem van fizetős licencre az Aspose.Words for .NET-hez?  
+Kezdheti egy ingyenes próbaverzióval[itt](https://releases.aspose.com/), de a teljes funkcionalitás érdekében fizetős licenc ajánlott.
+
+### Alkalmazhatok más formázást a táblázatra, miközben egyben tartom?  
+Teljesen! A táblázatot szükség szerint formázhatja, miközben gondoskodik arról, hogy egy oldalon maradjon.

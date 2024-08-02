@@ -11,7 +11,7 @@ url: /ko/net/programming-with-bookmarks/copy-bookmarked-text/
 
 한 Word 문서에서 다른 Word 문서로 특정 섹션을 복사해야 했던 적이 있습니까? 글쎄, 당신은 운이 좋다! 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 북마크된 텍스트를 한 Word 문서에서 다른 Word 문서로 복사하는 방법을 안내합니다. 동적 보고서를 작성하든 문서 생성을 자동화하든 이 가이드는 프로세스를 단순화합니다.
 
-## 전제조건
+## 전제 조건
 
 자세히 알아보기 전에 다음 사항이 있는지 확인하세요.
 

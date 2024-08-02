@@ -62,7 +62,7 @@ J: Markdown header adalah elemen yang digunakan untuk membuat judul dan subjudul
 
 #### T: Bagaimana cara menggunakan berbagai tingkat judul penurunan harga?
 
-J: Untuk menggunakan berbagai tingkat judul penurunan harga, Anda dapat menambahkan simbol pagar (#) dalam jumlah yang bervariasi sebelum teks judul.
+J: Untuk menggunakan berbagai tingkat judul penurunan harga, Anda dapat menambahkan sejumlah simbol pagar (#) yang bervariasi sebelum teks judul.
 
 #### T: Apakah ada batasan dalam menggunakan header Markdown?
 

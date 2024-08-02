@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /net/working-with-fields/delete-fields/
 ---
-
 ## Introduction
 
 In the realm of document processing and automation, Aspose.Words for .NET stands out as a powerful toolset for developers looking to manipulate, create, and manage Word documents programmatically. This tutorial aims to guide you through the process of utilizing Aspose.Words for .NET to delete fields within Word documents. Whether you're a seasoned developer or just starting with .NET development, this guide will break down the steps needed to effectively remove fields from your documents using clear, concise examples and explanations.
@@ -44,9 +43,9 @@ Ensure you have a new or existing C# project in Visual Studio where you've integ
 ## Step 2: Add Aspose.Words Reference
 
 If you haven't already, add a reference to Aspose.Words in your Visual Studio project. You can do this by:
-   - Right-clicking on your project in Solution Explorer.
-   - Selecting "Manage NuGet Packages..."
-   - Searching for "Aspose.Words" and installing it into your project.
+- Right-clicking on your project in Solution Explorer.
+- Selecting "Manage NuGet Packages..."
+- Searching for "Aspose.Words" and installing it into your project.
 
 ## Step 3: Prepare Your Document
 
@@ -86,20 +85,20 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 In conclusion, this tutorial has provided a comprehensive guide on how to effectively remove fields from Word documents using Aspose.Words for .NET. By following these steps, you can automate the process of field removal within your applications, enhancing productivity and efficiency in document management tasks.
 
-## FAQs
+## FAQ's
 
 ### Can I remove specific types of fields instead of all fields?
-   - Yes, you can modify the loop condition to check for specific types of fields before removing them.
+Yes, you can modify the loop condition to check for specific types of fields before removing them.
 
 ### Is Aspose.Words compatible with .NET Core?
-   - Yes, Aspose.Words supports .NET Core, allowing you to use it in cross-platform applications.
+Yes, Aspose.Words supports .NET Core, allowing you to use it in cross-platform applications.
 
 ### How can I handle errors when processing documents with Aspose.Words?
-   - You can use try-catch blocks to handle exceptions that may occur during document processing operations.
+You can use try-catch blocks to handle exceptions that may occur during document processing operations.
 
 ### Can I delete fields without altering other content in the document?
-   - Yes, the method shown here specifically targets only fields and leaves other content unchanged.
+Yes, the method shown here specifically targets only fields and leaves other content unchanged.
 
 ### Where can I find more resources and support for Aspose.Words?
-   - Visit the [Aspose.Words for .NET API documentation](https://reference.aspose.com/words/net/) and the [Aspose.Words forum](https://forum.aspose.com/c/words/8) for further assistance.
+Visit the [Aspose.Words for .NET API documentation](https://reference.aspose.com/words/net/) and the [Aspose.Words forum](https://forum.aspose.com/c/words/8) for further assistance.
 

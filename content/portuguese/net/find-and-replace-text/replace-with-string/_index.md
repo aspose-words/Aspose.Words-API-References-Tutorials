@@ -81,7 +81,7 @@ Finalmente, salvamos o documento modificado. Este é o momento em que enquadramo
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 ```
 
- O documento é salvo no diretório especificado com o nome`FindAndReplace.ReplaceWithString.docx`. E pronto! Realizamos com sucesso uma operação de localizar e substituir.
+ O documento é salvo no diretório especificado com o nome`FindAndReplace.ReplaceWithString.docx`. E pronto! Realizamos com sucesso uma operação de localização e substituição.
 
 ## Conclusão
 

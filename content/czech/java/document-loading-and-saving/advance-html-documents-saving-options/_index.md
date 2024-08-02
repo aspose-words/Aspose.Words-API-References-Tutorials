@@ -60,7 +60,7 @@ public void exportResources() throws Exception {
 ```java
 @Test
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
@@ -70,7 +70,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```java
 @Test
 public void convertMetafilesToSvg() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
@@ -94,7 +94,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```java
 @Test
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
@@ -104,7 +104,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```java
 @Test
 public void resolveFontNames() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 
@@ -114,7 +114,7 @@ public void resolveFontNames() throws Exception {
 ```java
 @Test
 public void exportTextInputFormFieldAsText() throws Exception {
-    // Fragment kódu se pro stručnost nezobrazuje.
+    // Fragment kódu není pro stručnost zobrazen.
 }
 ```
 

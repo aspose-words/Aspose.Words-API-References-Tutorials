@@ -2,7 +2,7 @@
 title: 检测智能艺术形状
 linktitle: 检测智能艺术形状
 second_title: Aspose.Words 文档处理 API
-description: 通过这份全面的分步指南，了解如何使用 Aspose.Words for .NET 检测 Word 文档中的 SmartArt 形状。非常适合自动化您的文档工作流程。
+description: 通过这份全面的指南了解如何使用 Aspose.Words for .NET 检测 Word 文档中的 SmartArt 形状。非常适合自动化您的文档工作流程。
 type: docs
 weight: 10
 url: /zh/net/programming-with-shapes/detect-smart-art-shape/

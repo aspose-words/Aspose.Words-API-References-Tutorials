@@ -129,7 +129,7 @@ doc.save("ChangeAsianParagraphSpacingAndIndents.docx");
 
 ## Memotret ke Grid
 
-Optimalkan tata letak saat bekerja dengan karakter Asia dengan mengklik grid:
+Optimalkan tata letak saat bekerja dengan karakter Asia dengan menjentikkan ke grid:
 
 ```java
 Document doc = new Document();

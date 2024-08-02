@@ -42,7 +42,7 @@ Naučte se efektivně používat pole Aspose.Words pro Java v tomto podrobném t
 ### [Použití písem v Aspose.Words pro Javu](./using-fonts/)
 Prozkoumejte formátování písem v Aspose.Words pro Java: velikost, styl, barva a další. Snadno vytvářejte krásně formátované dokumenty.
 ### [Použití poznámek pod čarou a vysvětlivky v Aspose.Words pro Java](./using-footnotes-and-endnotes/)
-Naučte se efektivně používat poznámky pod čarou a vysvětlivky v Aspose.Words for Java. Vylepšete své dovednosti v oblasti formátování dokumentů ještě dnes!
+Naučte se efektivně používat poznámky pod čarou a vysvětlivky v Aspose.Words pro Java. Vylepšete své dovednosti v oblasti formátování dokumentů ještě dnes!
 ### [Použití formulářových polí v Aspose.Words pro Java](./using-form-fields/)
 "Naučte se používat Aspose.Words for Java k vytváření interaktivních dokumentů Wordu s poli formuláře. Začněte hned!"
 ### [Použití HarfBuzz v Aspose.Words pro Java](./using-harfbuzz/)
@@ -56,7 +56,7 @@ Naučte se používat seznamy v Aspose.Words pro Java pomocí tohoto podrobného
 ### [Použití Markdown v Aspose.Words pro Java](./using-markdown/)
 Naučte se používat Markdown v Aspose.Words pro Java pomocí tohoto podrobného návodu. Vytvářejte, upravujte a ukládejte dokumenty Markdown bez námahy.
 ### [Použití uzlů v Aspose.Words pro Javu](./using-nodes/)
-Naučte se manipulovat s uzly v Aspose.Words pro Java pomocí tohoto podrobného tutoriálu. Odemkněte výkon zpracování dokumentů.
+Naučte se manipulovat s uzly v Aspose.Words pro Java pomocí tohoto podrobného návodu. Odemkněte výkon zpracování dokumentů.
 ### [Použití objektů OLE a ovládacích prvků ActiveX v Aspose.Words for Java](./using-ole-objects-and-activex/)
 Naučte se používat OLE objekty a ovládací prvky ActiveX v Aspose.Words for Java. Vytvářejte snadno interaktivní dokumenty. Začněte hned!
 ### [Použití revizí v Aspose.Words pro Javu](./using-revisions/)

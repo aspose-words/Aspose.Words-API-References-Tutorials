@@ -34,7 +34,7 @@ Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah d
 ## Langkah 1: Menyiapkan Proyek Anda
 
 ### Langkah 1.1: Buat Proyek Baru
-Buka Visual Studio dan buat proyek C# baru. Pilih template Aplikasi Konsol untuk mempermudah.
+Buka Visual Studio dan buat proyek C# baru. Pilih templat Aplikasi Konsol untuk mempermudah.
 
 ### Langkah 1.2: Tambahkan Aspose.Words untuk Referensi .NET
 Untuk menggunakan Aspose.Words untuk .NET, Anda perlu menambahkan referensi ke perpustakaan Aspose.Words. Anda dapat melakukan ini melalui Manajer Paket NuGet:

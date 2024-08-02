@@ -11,11 +11,11 @@ url: /ko/net/programming-with-pdfsaveoptions/additional-text-positioning/
 
 .NET용 Aspose.Words의 세계로 뛰어들어 PDF에서 정확한 텍스트 위치 지정의 마법을 풀 준비가 되셨습니까? 버클을 채우세요. 이 가이드는 추가 텍스트 위치 지정 기능을 사용하여 PDF 텍스트 위치 지정을 향상시키는 단계를 통해 흥미진진한 여정을 안내할 것입니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼은 여러분이 알아야 할 모든 것을 제공합니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 모든 도구와 리소스가 준비되어 있는지 확인하세요.
 
--  .NET용 Aspose.Words: 최신 버전의 .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 최신 버전의 .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio와 같은 통합 개발 환경(IDE)입니다.
 - .NET Framework: .NET Framework 4.0 이상이 설치되어 있는지 확인하세요.
 - C#에 대한 기본 지식: C# 프로그래밍 언어에 익숙하면 도움이 됩니다.
@@ -86,10 +86,10 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 아니요. 추가 텍스트 위치 지정 기능은 PDF 변환에만 적용됩니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
- 예, 다음을 얻을 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 또는 정식 라이센스를 구매하세요[여기](https://purchase.aspose.com/buy).
+ 예, 다음을 얻을 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는 정식 라이센스를 구매하세요[여기](https://purchase.aspose.com/buy).
 
 ### 무료 평가판이 제공되나요?
  예, 다음을 다운로드할 수 있습니다.[무료 시험판](https://releases.aspose.com/) .NET용 Aspose.Words.
 
 ### .NET용 Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
- 자세한 문서는 다음에서 확인할 수 있습니다.[Aspose 웹 사이트](https://reference.aspose.com/words/net/).
+ 자세한 문서는 다음에서 확인할 수 있습니다.[Aspose 웹사이트](https://reference.aspose.com/words/net/).

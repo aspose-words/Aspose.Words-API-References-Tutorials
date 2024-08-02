@@ -2,7 +2,7 @@
 title: Aspose.Words for Java에서 구조화된 문서 태그(SDT) 사용하기
 linktitle: 구조화된 문서 태그(SDT) 사용
 second_title: Aspose.Words Java 문서 처리 API
-description: 이 포괄적인 가이드를 통해 Java용 Aspose.Words에서 구조화된 문서 태그(SDT)를 사용하는 방법을 알아보세요. SDT를 생성, 수정하고 사용자 정의 XML 데이터에 바인딩합니다.
+description: 이 포괄적인 가이드를 통해 Java용 Aspose.Words에서 구조적 문서 태그(SDT)를 사용하는 방법을 알아보세요. SDT를 생성, 수정하고 사용자 정의 XML 데이터에 바인딩합니다.
 type: docs
 weight: 19
 url: /ko/java/document-manipulation/using-structured-document-tags/
@@ -86,7 +86,7 @@ if (sdtDropDown.getSdtType() == SdtType.DROP_DOWN_LIST) {
 doc.save("ModifiedDocument.docx");
 ```
 
-### 사진 콘텐츠 컨트롤 수정
+### 사진 콘텐츠 제어 수정
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");

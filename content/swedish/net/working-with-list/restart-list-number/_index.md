@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### F: Är det möjligt att anpassa prefix och suffix för omstartad listnumrering i Aspose.Words?
 
- S: Ja, du kan anpassa prefix och suffix för omstartad listnumrering i Aspose.Words. De`ListLevel` klass erbjuder fastigheter som t.ex`ListLevel.NumberPrefix`och`ListLevel.NumberSuffix`som låter dig ange prefix och suffix för varje nivå i listan. Du kan använda dessa egenskaper för att anpassa prefixet och suffixet efter behov.
+ S: Ja, du kan anpassa prefix och suffix för omstartad listnumrering i Aspose.Words. De`ListLevel`klass erbjuder fastigheter som t.ex`ListLevel.NumberPrefix`och`ListLevel.NumberSuffix` som låter dig ange prefix och suffix för varje nivå i listan. Du kan använda dessa egenskaper för att anpassa prefixet och suffixet efter behov.
 
 #### F: Hur kan jag ange ett specifikt numreringsvärde från vilket listan ska startas om?
 

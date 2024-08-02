@@ -99,7 +99,7 @@ Dengan mengikuti langkah-langkah ini, Anda telah mengonfigurasi aplikasi Anda un
 
 ## Kesimpulan
 
-Anda sekarang telah menguasai proses menerima pemberitahuan untuk penggantian font menggunakan Aspose.Words untuk .NET. Keterampilan ini akan membantu Anda memastikan bahwa dokumen Anda selalu terlihat terbaik, bahkan ketika font yang diperlukan tidak tersedia. Teruslah bereksperimen dengan pengaturan berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
+Anda sekarang telah menguasai proses penerimaan notifikasi untuk penggantian font menggunakan Aspose.Words untuk .NET. Keterampilan ini akan membantu Anda memastikan bahwa dokumen Anda selalu terlihat terbaik, bahkan ketika font yang diperlukan tidak tersedia. Teruslah bereksperimen dengan pengaturan berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
 
 ## FAQ
 

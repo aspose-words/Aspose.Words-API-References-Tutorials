@@ -18,13 +18,13 @@ Dengan mengikuti tutorial ini, Anda akan dapat mengelola bagian dalam dokumen Wo
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Tambahkan Bagian](./add-section/) | Dalam tutorial ini, pelajari cara menambahkan bagian ke dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah untuk menyusun dokumen Anda. |
+| [Tambahkan Bagian](./add-section/) | Pelajari cara menambahkan bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini mencakup segalanya mulai dari membuat dokumen hingga menambahkan dan mengelola bagian. |
 | [Hapus Bagian](./delete-section/) | Manipulasi dokumen master dengan Aspose.Words untuk .NET. Pelajari cara menghapus bagian dari dokumen Word dalam beberapa langkah sederhana. |
 | [Hapus Semua Bagian](./delete-all-sections/) | Pelajari cara menghapus semua bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mudah diikuti ini. |
 | [Tambahkan Konten Kata Bagian](./append-section-content/) | Dalam tutorial ini, pelajari cara menambahkan konten kata ke bagian tertentu dokumen Word menggunakan Aspose.Words untuk .NET.  |
-| [Bagian Klon](./clone-section/) | Dalam tutorial ini, pelajari cara mengkloning bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah. |
-| [Salin Bagian](./copy-section/) | Dalam tutorial ini, pelajari cara menyalin bagian dari dokumen Word ke dokumen lain menggunakan Aspose.Words untuk .NET. |
-| [Hapus Konten Header Footer](./delete-header-footer-content/) | Dalam tutorial ini, pelajari cara menghapus konten header dan footer dari dokumen Word dengan Aspose.Words untuk .NET.  |
-| [Hapus Konten Bagian](./delete-section-content/) | Dalam tutorial ini, pelajari cara menghapus konten dari bagian tertentu dokumen Word dengan Aspose.Words untuk .NET. |
+| [Bagian Klon](./clone-section/) | Pelajari cara mengkloning bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini mencakup petunjuk langkah demi langkah untuk manipulasi dokumen yang efisien. |
+| [Salin Bagian](./copy-section/) | Pelajari cara menyalin bagian antar dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini mencakup petunjuk langkah demi langkah untuk pengelolaan dokumen yang efisien. |
+| [Hapus Konten Header Footer](./delete-header-footer-content/) | Pelajari cara menghapus header dan footer di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini memastikan pengelolaan dokumen yang efisien.  |
+| [Hapus Konten Bagian](./delete-section-content/) | Pelajari cara menghapus konten bagian di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini memastikan pengelolaan dokumen yang efisien. |
 | [Ubah Pengaturan Halaman Word Di Semua Bagian](./modify-page-setup-in-all-sections/) | Dalam tutorial ini, pelajari cara mengubah pengaturan halaman kata di semua bagian dokumen Word dengan Aspose.Words untuk .NET. |
-| [Akses Bagian Berdasarkan Indeks](./sections-access-by-index/) | Dalam tutorial ini, pelajari cara mengakses bagian dokumen Word berdasarkan indeks dan mengubah pengaturannya dengan Aspose.Words untuk .NET. |
+| [Akses Bagian Berdasarkan Indeks](./sections-access-by-index/) | Pelajari cara mengakses dan memanipulasi bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini memastikan pengelolaan dokumen yang efisien. |

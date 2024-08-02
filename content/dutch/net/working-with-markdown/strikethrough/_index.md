@@ -53,7 +53,7 @@ Gefeliciteerd! U hebt nu geleerd hoe u de doorgehaalde tekststijl kunt toepassen
 
 #### Vraag: Hoe kan ik de doorgehaalde tekst toevoegen in Aspose.Words?
 
- A: Om de doorgehaalde tekst in Aspose.Words toe te voegen, kunt u de`Font.StrikeThrough` eigendom van de`Run`voorwerp. U kunt deze eigenschap instellen op`true` om doorgehaalde tekst toe te voegen aan specifieke tekst. U kunt bijvoorbeeld gebruiken`run.Font.StrikeThrough=true` om de doorgestreepte tekst toe te voegen aan het`Run` voorwerp.
+ A: Om de doorgehaalde tekst in Aspose.Words toe te voegen, kunt u de`Font.StrikeThrough` eigendom van de`Run` voorwerp. U kunt deze eigenschap instellen op`true` om doorgehaalde tekst toe te voegen aan specifieke tekst. U kunt bijvoorbeeld gebruiken`run.Font.StrikeThrough=true` om de doorgestreepte tekst toe te voegen aan het`Run` voorwerp.
 
 #### Vraag: Is het mogelijk om de doorgestreepte tekst toe te voegen aan verschillende stukken tekst in dezelfde alinea?
 

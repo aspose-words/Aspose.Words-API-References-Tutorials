@@ -16,8 +16,8 @@ Seguendo questi tutorial, imparerai come utilizzare in modo efficace Aspose.Word
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Crea progetto Vba](./create-vba-project/) | In questo tutorial, scopri come creare un progetto VBA in un documento Word con Aspose.Words per .NET. |
-| [Leggi le macro Vba](./read-vba-macros/) | In questo tutorial, scopri come leggere le macro VBA da un documento Word con Aspose.Words per .NET. |
-| [Modifica macro Vba](./modify-vba-macros/) | In questo tutorial, scopri come modificare le macro VBA di un documento Word con Aspose.Words per .NET. |
-| [Clona progetto Vba](./clone-vba-project/) | In questo tutorial, scopri come clonare un progetto VBA da un documento Word con Aspose.Words per .NET.|
-| [Clonare il modulo Vba](./clone-vba-module/) | In questo tutorial, scopri come clonare un modulo VBA da un documento Word con Aspose.Words per .NET. |
+| [Crea progetto Vba](./create-vba-project/) | Impara a creare progetti VBA in documenti Word utilizzando Aspose.Words per .NET. Segui la nostra guida passo passo per automatizzare i documenti senza problemi! |
+| [Leggi le macro Vba](./read-vba-macros/) | Impara come leggere le macro VBA dai documenti Word utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata per automatizzare i documenti senza problemi! |
+| [Modifica macro Vba](./modify-vba-macros/) | Scopri come modificare le macro VBA nei documenti Word utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata passo dopo passo per automatizzare i documenti senza problemi! |
+| [Clona progetto Vba](./clone-vba-project/) | Scopri come clonare progetti VBA in documenti Word utilizzando Aspose.Words per .NET. Segui la nostra guida passo passo per una manipolazione fluida dei documenti!|
+| [Clonare il modulo Vba](./clone-vba-module/) | Clona facilmente i moduli VBA nei documenti Word con Aspose.Words per .NET. Segui la nostra guida passo passo per una manipolazione fluida dei documenti! |

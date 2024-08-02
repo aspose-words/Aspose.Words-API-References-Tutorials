@@ -2,111 +2,110 @@
 title: Applica formattazione riga
 linktitle: Applica formattazione riga
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per applicare la formattazione delle righe a una tabella utilizzando Aspose.Words per .NET.
+description: Scopri come applicare la formattazione delle righe in un documento Word utilizzando Aspose.Words per .NET. Segui la nostra guida passo passo per istruzioni dettagliate.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## introduzione
 
-In questo tutorial ti guideremo attraverso il processo passo passo per applicare la formattazione delle righe a una tabella utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, avrai una chiara comprensione di come formattare le righe della tabella nei tuoi documenti Word utilizzando Aspose.Words per .NET.
+Se stai cercando di ravvivare i tuoi documenti Word con una formattazione delle righe fantasiosa, sei nel posto giusto! In questo tutorial, approfondiremo come applicare la formattazione delle righe utilizzando Aspose.Words per .NET. Analizzeremo ogni passaggio, rendendo più facile per te seguirlo e applicarlo ai tuoi progetti.
 
-## Passaggio 1: definire la directory dei documenti
-Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento Word modificato. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.
+## Prerequisiti
+
+Prima di immergerci nel codice, assicuriamoci di avere tutto il necessario per iniziare:
+
+1.  Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words installata. Se non lo hai, puoi scaricarlo da[Pagina delle versioni di Aspose](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: ambiente di sviluppo AC# come Visual Studio.
+3. Conoscenza di base di C#: la familiarità con la programmazione C# è essenziale.
+4. Directory dei documenti: una directory in cui salverai il tuo documento.
+
+## Importa spazi dei nomi
+
+Per cominciare, dovrai importare gli spazi dei nomi necessari nel tuo progetto C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Passaggio 2: crea un nuovo documento e un generatore di documenti
- Successivamente, è necessario creare una nuova istanza del file`Document` classe e un costruttore di documenti per quel documento.
+Ora, esaminiamo il processo passo dopo passo.
+
+## Passaggio 1: crea un nuovo documento
+
+Per prima cosa dobbiamo creare un nuovo documento. Questa sarà la nostra tela in cui aggiungeremo la nostra tabella e applicheremo la formattazione.
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 3: avvia una nuova scheda
- Per applicare la formattazione delle righe, dobbiamo prima iniziare una nuova tabella utilizzando il file`StartTable()` metodo del costruttore del documento.
+## Passaggio 2: avvia una nuova tabella
+
+ Successivamente, inizieremo una nuova tabella utilizzando il file`DocumentBuilder`oggetto. Qui è dove avviene la magia.
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## Passaggio 4: inserisci la cella e vai al formato riga
-Ora possiamo inserire una cella nella tabella e accedere al formato di riga per quella cella utilizzando il generatore di documenti`InsertCell()`E`RowFormat` metodi.
+## Passaggio 3: definire la formattazione della riga
+
+Qui definiremo la formattazione della riga. Ciò include l'impostazione dell'altezza e del riempimento della riga.
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## Passaggio 5: imposta l'altezza della riga
- Per impostare l'altezza della riga, utilizziamo il`Height`E`HeightRule` proprietà del formato di riga. In questo esempio impostiamo un'altezza di riga pari a 100 punti e utilizziamo il metodo`Exactly` regola.
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## Passaggio 6: definire la formattazione della tabella
- Alcune proprietà di formattazione possono essere impostate sulla tabella stessa e vengono applicate a tutte le righe della tabella. In questo esempio, impostiamo le proprietà del margine della tabella utilizzando il file`LeftPadding`, `RightPadding`, `TopPadding`E`BottomPadding` proprietà.
+## Passaggio 4: inserisci il contenuto nella cella
+
+Inseriamo alcuni contenuti nella nostra riga splendidamente formattata. Questo contenuto mostrerà l'aspetto della formattazione.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## Passaggio 7: aggiungi contenuto alla riga
-Ora possiamo
+## Passaggio 5: termina la riga e la tabella
 
- Aggiungeremo contenuto alla riga utilizzando i metodi del costruttore del documento. In questo esempio utilizziamo il file`Writeln()` metodo per aggiungere testo alla riga.
+Infine, dobbiamo terminare la riga e la tabella per completare la nostra struttura.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## Passaggio 8: termina la linea e la tabella
- Una volta aggiunto il contenuto alla riga, possiamo terminare la riga utilizzando il comando`EndRow()` metodo e quindi terminare la tabella utilizzando il metodo`EndTable()` metodo.
+## Passaggio 6: salva il documento
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## Passaggio 9: salva il documento modificato
-Infine, salviamo il documento modificato in un file. È possibile scegliere un nome e una posizione appropriati per il documento di output.
+Ora che la nostra tabella è pronta, è ora di salvare il documento. Specificare il percorso della directory dei documenti e salvare il file.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-Congratulazioni! Ora hai applicato la formattazione delle righe a una tabella utilizzando Aspose.Words per .NET.
-
-### Codice sorgente di esempio per applicare la formattazione delle righe utilizzando Aspose.Words per .NET 
-
-```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Queste proprietà di formattazione vengono impostate sulla tabella e applicate a tutte le righe della tabella.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## Conclusione
-In questo tutorial, abbiamo imparato come applicare la formattazione delle righe a una tabella utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo, puoi integrare facilmente questa funzionalità nei tuoi progetti C#. La manipolazione della formattazione delle righe della tabella è un aspetto essenziale dell'elaborazione dei documenti e Aspose.Words offre un'API potente e flessibile per raggiungere questo obiettivo. Con questa conoscenza, puoi migliorare la presentazione visiva dei tuoi documenti Word e soddisfare requisiti specifici.
+
+E il gioco è fatto! Hai applicato con successo la formattazione delle righe a una tabella in un documento di Word utilizzando Aspose.Words per .NET. Questa tecnica semplice ma potente può migliorare notevolmente la leggibilità e l'estetica dei tuoi documenti.
+
+## Domande frequenti
+
+### Posso applicare una formattazione diversa alle singole righe?  
+ Sì, puoi personalizzare ciascuna riga individualmente impostando proprietà diverse per`RowFormat`.
+
+### Come posso regolare la larghezza delle colonne?  
+ È possibile impostare la larghezza delle colonne utilizzando il comando`CellFormat.Width` proprietà.
+
+### È possibile unire le celle in Aspose.Words per .NET?  
+ Sì, puoi unire le celle utilizzando il file`CellMerge` proprietà del`CellFormat`.
+
+### Posso aggiungere bordi alle righe?  
+ Assolutamente! Puoi aggiungere bordi alle righe impostando il file`Borders` proprietà del`RowFormat`.
+
+### Come posso applicare la formattazione condizionale alle righe?  
+Puoi utilizzare la logica condizionale nel codice per applicare una formattazione diversa in base a condizioni specifiche.

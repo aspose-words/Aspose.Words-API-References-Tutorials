@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fields/convert-fields-in-body/
 ---
-
 ## Giới thiệu
 
 Trong lĩnh vực phát triển .NET, việc quản lý nội dung tài liệu một cách linh hoạt là điều cần thiết, thường yêu cầu thao tác với nhiều loại trường khác nhau trong tài liệu. Aspose.Words for .NET nổi bật như một bộ công cụ mạnh mẽ dành cho các nhà phát triển, cung cấp các chức năng mạnh mẽ để xử lý các trường tài liệu một cách hiệu quả. Hướng dẫn toàn diện này tập trung vào cách chuyển đổi các trường trong nội dung tài liệu bằng Aspose.Words cho .NET, cung cấp hướng dẫn từng bước để trao quyền cho các nhà phát triển trong việc tăng cường quản lý và tự động hóa tài liệu.
@@ -31,9 +30,7 @@ using System.Linq;
 
 Các không gian tên này rất cần thiết để truy cập các chức năng Aspose.Words và truy vấn LINQ.
 
-## Hướng dẫn từng bước để chuyển đổi các trường trong nội dung bằng Aspose.Words cho .NET
-
-### Bước 1: Tải tài liệu
+## Bước 1: Tải tài liệu
 
 Bắt đầu bằng cách tải tài liệu nơi bạn muốn chuyển đổi các trường:
 
@@ -44,7 +41,7 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
  Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến tài liệu thực tế của bạn.
 
-### Bước 2: Xác định và chuyển đổi trường
+## Bước 2: Xác định và chuyển đổi trường
 
 Xác định và chuyển đổi các trường cụ thể trong nội dung tài liệu. Ví dụ: để chuyển đổi các trường TRANG thành văn bản:
 
@@ -57,7 +54,7 @@ doc.FirstSection.Body.Range.Fields
 
 Đoạn mã này sử dụng LINQ để tìm tất cả các trường TRANG trong nội dung tài liệu rồi hủy liên kết chúng, chuyển đổi chúng thành văn bản tĩnh một cách hiệu quả.
 
-### Bước 3: Lưu tài liệu
+## Bước 3: Lưu tài liệu
 
 Lưu tài liệu đã sửa đổi sau khi chuyển đổi các trường:
 
@@ -71,7 +68,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 Nắm vững nghệ thuật thao tác các trường tài liệu bằng Aspose.Words cho .NET trao quyền cho các nhà phát triển tự động hóa quy trình làm việc tài liệu một cách hiệu quả. Cho dù chuyển đổi các trường thành văn bản thuần túy hay xử lý các loại trường phức tạp hơn, Aspose.Words đều đơn giản hóa các tác vụ này bằng API trực quan và bộ tính năng mạnh mẽ, đảm bảo tích hợp liền mạch vào các ứng dụng .NET.
 
-## Câu hỏi thường gặp (FAQ)
+## Câu hỏi thường gặp
 
 ### Các trường tài liệu trong Aspose.Words cho .NET là gì?
 Các trường tài liệu trong Aspose.Words là các phần giữ chỗ có thể lưu trữ và hiển thị dữ liệu động, chẳng hạn như ngày tháng, số trang và phép tính.

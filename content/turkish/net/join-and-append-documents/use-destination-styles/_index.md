@@ -2,7 +2,7 @@
 title: Hedef Stillerini Kullan
 linktitle: Hedef Stillerini Kullan
 second_title: Aspose.Words Belge İşleme API'si
-description: Tutarlı formatlamayı korurken belgeleri sorunsuz bir şekilde eklemek için Aspose.Words for .NET ile hedef stillerini nasıl kullanacağınızı öğrenin.
+description: Tutarlı biçimlendirmeyi korurken belgeleri sorunsuz bir şekilde eklemek için Aspose.Words for .NET ile hedef stillerini nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/use-destination-styles/

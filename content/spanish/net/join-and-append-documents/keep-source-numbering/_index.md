@@ -9,7 +9,7 @@ url: /es/net/join-and-append-documents/keep-source-numbering/
 ---
 ## Introducción
 
- Cuando se trabaja con Aspose.Words para .NET, la importación de documentos de una fuente a otra manteniendo el formato se puede manejar de manera eficiente usando el`NodeImporter` clase. Este tutorial lo guiará a través del proceso paso a paso.
+ Cuando se trabaja con Aspose.Words para .NET, la importación de documentos de una fuente a otra mientras se conserva el formato se puede manejar de manera eficiente utilizando el`NodeImporter` clase. Este tutorial lo guiará a través del proceso paso a paso.
 
 ## Requisitos previos
 

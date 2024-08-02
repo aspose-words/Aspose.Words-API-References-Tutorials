@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- V tomto kroku definujeme cestu, kam bude dokument uložen. Poté vytvoříme nový`Document` objekt a a`DocumentBuilder` začněte budovat náš dokument.
+ V tomto kroku definujeme cestu, kam bude dokument uložen. Poté vytvoříme nový`Document` objekt a a`DocumentBuilder` objekt začít budovat náš dokument.
 
 ## Krok 2: Vložte graf
 

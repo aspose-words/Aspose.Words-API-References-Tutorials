@@ -96,7 +96,7 @@ Tuyệt đối! Aspose.Words hỗ trợ nhiều mẫu biểu thức chính quy. 
 Vâng, nó có. Aspose.Words for .NET cung cấp một bộ tính năng phong phú để thao tác với tài liệu Word, bao gồm trích xuất văn bản, định dạng, v.v.
 
 ### Tôi có thể thay thế văn bản trong các phần cụ thể của tài liệu không?  
-Có, bạn có thể. Bạn có thể sử dụng các phương pháp khác nhau để nhắm mục tiêu các phần, đoạn văn cụ thể hoặc thậm chí là đầu trang và chân trang trong tài liệu của mình.
+Vâng, bạn có thể. Bạn có thể sử dụng các phương pháp khác nhau để nhắm mục tiêu các phần, đoạn văn cụ thể hoặc thậm chí là đầu trang và chân trang trong tài liệu của mình.
 
 ### Có cách nào để xem trước các thay đổi trước khi lưu tài liệu không?  
 Mặc dù Aspose.Words không cung cấp tính năng xem trước trực tiếp nhưng bạn luôn có thể lưu bản sao của tài liệu trước khi thực hiện thay đổi và so sánh các phiên bản.

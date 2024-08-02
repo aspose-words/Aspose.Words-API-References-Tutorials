@@ -2,64 +2,120 @@
 title: Haal het gewenste breedtetype op
 linktitle: Haal het gewenste breedtetype op
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u het type en de gewenste breedtewaarde van een cel in een Word-tabel kunt ophalen met Aspose.Words voor .NET.
+description: Leer hoe u het gewenste breedtetype van tabelcellen in Word-documenten kunt ophalen met behulp van Aspose.Words voor .NET met onze stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-tables/retrieve-preferred-width-type/
 ---
+## Invoering
 
-In deze zelfstudie leren we hoe u het gewenste breedtetype en de waarde ervan kunt ophalen uit een tabelcel in een Word-document met behulp van Aspose.Words voor .NET. We zullen een stapsgewijze handleiding volgen om de code te begrijpen en deze functie te implementeren. Aan het einde van deze zelfstudie kunt u het gewenste breedtetype (absoluut, relatief of automatisch) en de waarde ervan voor een specifieke cel in uw Word-documenttabellen ophalen.
+Heeft u zich ooit afgevraagd hoe u het gewenste breedtetype van tabelcellen in uw Word-documenten kunt ophalen met Aspose.Words voor .NET? Nou, je bent op de juiste plek! In deze zelfstudie leggen we het proces stap voor stap uit, waardoor het heel eenvoudig wordt. Of u nu een doorgewinterde ontwikkelaar bent of net begint, u zult deze handleiding nuttig en boeiend vinden. Laten we er dus in duiken en de geheimen ontdekken achter het beheren van tabelcelbreedtes in Word-documenten.
 
-## Stap 1: Projectconfiguratie
-1. Start Visual Studio en maak een nieuw C#-project.
-2. Voeg een verwijzing toe naar de Aspose.Words voor .NET-bibliotheek.
+## Vereisten
 
-## Stap 2: Het document laden
-Volg deze stappen om de tekstverwerking met het document te starten:
+Voordat we beginnen, zijn er een paar dingen die je nodig hebt:
 
-```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words voor .NET: Zorg ervoor dat de nieuwste versie is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: je hebt een IDE zoals Visual Studio nodig.
+3. Basiskennis van C#: Als u de basisprincipes van C# begrijpt, kunt u dit volgen.
+4.  Voorbeelddocument: Zorg dat u een Word-document gereed heeft met tabellen waaraan u kunt werken. U kunt elk document gebruiken, maar wij zullen ernaar verwijzen als`Tables.docx` in deze zelfstudie.
 
-// Laad het document
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Naamruimten importeren
 
-Zorg ervoor dat u "UW DOCUMENTENMAP" vervangt door het daadwerkelijke pad naar uw documentenmap en geef de juiste bestandsnaam op.
-
-## Stap 3: Het gewenste breedtetype en de gewenste waarde ophalen
-Vervolgens halen we het gewenste breedtetype en de waarde ervan voor een specifieke tabelcel op. Gebruik de volgende code:
+Laten we eerst de benodigde naamruimten importeren. Deze stap is cruciaal omdat hiermee onze omgeving wordt ingesteld voor het gebruik van Aspose.Words-functies.
 
 ```csharp
-// Haal de tabel op
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Automatische tafelaanpassing activeren
-table. AllowAutoFit = true;
-
-// Haal de eerste cel van de eerste rij op
-Cell firstCell = table.FirstRow.FirstCell;
-
-// Haal het gewenste breedtetype en de waarde ervan op
-PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
-double value = firstCell.CellFormat.PreferredWidth.Value;
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Hier gebruiken we het document om de eerste tabel op te halen, waarna we automatische tabelaanpassing inschakelen met de`AllowAutoFit` eigendom. Vervolgens halen we de eerste cel van de eerste rij van de tabel op. Vanuit deze cel kunnen we het gewenste breedtetype ophalen met de`PreferredWidth.Type` eigendom en de waarde ervan met de`PreferredWidth.Value` eigendom.
+## Stap 1: Stel uw documentenmap in
 
-### Voorbeeldbroncode voor het ophalen van het gewenste breedtetype met Aspose.Words voor .NET 
+Voordat we ons document manipuleren, moeten we de map opgeven waar het zich bevindt. Dit is een eenvoudige maar essentiële stap.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap. Dit vertelt ons programma waar het het bestand kan vinden waarmee we willen werken.
+
+## Stap 2: Laad het document
+
+Vervolgens laden we het Word-document in onze applicatie. Hierdoor kunnen we programmatisch met de inhoud communiceren.
+
+```csharp
 Document doc = new Document(dataDir + "Tables.docx");
+```
+
+ Deze coderegel opent het`Tables.docx` document uit de opgegeven map. Nu is ons document klaar voor verdere bewerkingen.
+
+## Stap 3: Toegang tot de tabel
+
+Nu ons document is geladen, moeten we toegang krijgen tot de tabel waarmee we willen werken. Voor de eenvoud richten we ons op de eerste tabel in het document.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+Deze regel haalt de eerste tabel uit het document op. Als uw document meerdere tabellen bevat, kunt u de index aanpassen om een andere te selecteren.
+
+## Stap 4: Schakel AutoFit in voor de tabel
+
+Om ervoor te zorgen dat de tabel zijn kolommen automatisch aanpast, moeten we de eigenschap AutoFit inschakelen.
+
+```csharp
 table.AllowAutoFit = true;
+```
+
+ Instelling`AllowAutoFit` naar`true` zorgt ervoor dat het formaat van de tabelkolommen wordt aangepast op basis van hun inhoud, waardoor onze tabel een dynamisch gevoel krijgt.
+
+## Stap 5: Haal het gewenste breedtetype van de eerste cel op
+
+Nu komt de kern van onze tutorial: het ophalen van het gewenste breedtetype van de eerste cel in de tabel.
+
+```csharp
 Cell firstCell = table.FirstRow.FirstCell;
 PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
+ Deze coderegels hebben toegang tot de eerste cel in de eerste rij van de tabel en halen het gewenste breedtetype en de gewenste waarde op. De`PreferredWidthType` kan zijn`Auto`, `Percent` , of`Point`, waarmee wordt aangegeven hoe de breedte wordt bepaald.
+
+## Stap 6: Geef de resultaten weer
+
+Laten we ten slotte de opgehaalde informatie op de console weergeven.
+
+```csharp
+Console.WriteLine("Preferred Width Type: " + type);
+Console.WriteLine("Preferred Width Value: " + value);
+```
+
+Deze regels zullen het gewenste breedtetype en de gewenste waarde naar de console afdrukken, zodat u de resultaten van uw code-uitvoering kunt zien.
+
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u het gewenste breedtetype en de waarde ervan kunt ophalen uit een tabelcel in een Word-document met behulp van Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde C#-code te implementeren, kunt u deze informatie voor specifieke cellen in uw Word-documenttabellen ophalen.
+
+En daar heb je het! Het ophalen van het gewenste breedtetype van tabelcellen in Word-documenten met Aspose.Words voor .NET is eenvoudig als het wordt opgesplitst in beheersbare stappen. Door deze handleiding te volgen, kunt u eenvoudig tabeleigenschappen in uw Word-documenten manipuleren, waardoor uw documentbeheertaken veel efficiënter worden.
+
+## Veelgestelde vragen
+
+### Kan ik het gewenste breedtetype voor alle cellen in een tabel ophalen?
+
+Ja, u kunt elke cel in de tabel doorlopen en de gewenste breedtetypen afzonderlijk ophalen.
+
+###  Waar zijn de mogelijke waarden voor`PreferredWidthType`?
+
+`PreferredWidthType` kan zijn`Auto`, `Percent` , of`Point`.
+
+### Is het mogelijk om het gewenste breedtetype programmatisch in te stellen?
+
+ Absoluut! U kunt het gewenste breedtetype en de gewenste waarde instellen met behulp van de`PreferredWidth` eigendom van de`CellFormat` klas.
+
+### Kan ik deze methode gebruiken voor tabellen in andere documenten dan Word?
+
+Deze tutorial behandelt specifiek Word-documenten. Voor andere documenttypen moet u de juiste Aspose-bibliotheek gebruiken.
+
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
+
+ Ja, Aspose.Words voor .NET is een gelicentieerd product. U kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/) of een tijdelijke licentie[hier](https://purchase.aspose.com/temporary-license/).

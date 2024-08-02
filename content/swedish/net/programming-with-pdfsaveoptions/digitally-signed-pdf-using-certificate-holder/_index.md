@@ -38,7 +38,7 @@ Skapa ett nytt C#-projekt i Visual Studio. Lägg till en referens till Aspose.Wo
 
 ## Steg 2: Ladda eller skapa ett dokument
 
-Du behöver ett dokument för att skriva under. Du kan antingen ladda ett befintligt dokument eller skapa ett nytt. För den här handledningen skapar vi ett nytt dokument och lägger till lite exempeltext.
+Du behöver ett dokument för att underteckna. Du kan antingen ladda ett befintligt dokument eller skapa ett nytt. För den här handledningen skapar vi ett nytt dokument och lägger till lite exempeltext.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.

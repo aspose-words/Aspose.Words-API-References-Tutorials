@@ -31,7 +31,7 @@ doc.FootnoteOptions.Columns = 3;
 
 ## Langkah 3: Menyimpan Dokumen
 
-Terakhir, simpan dokumen yang dimodifikasi:
+Terakhir, simpan dokumen yang diubah:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootNoteColumns.docx");
@@ -57,7 +57,7 @@ Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasiny
 
 #### T: Bagaimana cara mengonfigurasi jumlah kolom untuk catatan kaki di Aspose.Words?
 
-J: Untuk mengonfigurasi jumlah kolom catatan kaki di Aspose.Words, Anda perlu menggunakan`FootnoteOptions` kelas dan`ColumnsCount` Properti. Anda dapat mengatur properti ini ke sejumlah kolom yang Anda inginkan.
+A: Untuk mengonfigurasi jumlah kolom catatan kaki di Aspose.Words, Anda perlu menggunakan`FootnoteOptions` kelas dan`ColumnsCount` Properti. Anda dapat mengatur properti ini ke sejumlah kolom yang Anda inginkan.
 
 #### T: Apa manfaat menyiapkan kolom catatan kaki?
 

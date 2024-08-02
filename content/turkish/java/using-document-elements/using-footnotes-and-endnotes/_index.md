@@ -16,7 +16,7 @@ Dipnotlar ve son notlar, bir belge içinde ek bilgi veya alıntılar sağlayan e
 
 ## 2. Ortamınızı Kurmak
 
-Dipnotlar ve son notlarla çalışmaya başlamadan önce geliştirme ortamınızı ayarlamanız gerekir. Aspose.Words for Java API'nin projenizde kurulu ve yapılandırılmış olduğundan emin olun.
+Dipnotlar ve sonnotlarla çalışmaya başlamadan önce geliştirme ortamınızı ayarlamanız gerekir. Aspose.Words for Java API'nin projenizde kurulu ve yapılandırılmış olduğundan emin olun.
 
 ## 3. Belgenize Dipnot Eklemek
 

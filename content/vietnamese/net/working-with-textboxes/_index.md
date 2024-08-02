@@ -12,6 +12,6 @@ Xử lý từ bằng hộp văn bản là tài nguyên toàn diện hướng d�
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Tạo liên kết trong Word](./create-a-link/) | Tìm hiểu cách tạo liên kết trong word giữa các TextBox trong tài liệu Word với Aspose.Words for .NET. |
-| [Kiểm tra trình tự](./check-sequence/) | Tìm hiểu cách kiểm tra trình tự TextBox trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Phá vỡ liên kết chuyển tiếp trong tài liệu Word](./break-a-link/) | Tìm hiểu cách ngắt liên kết chuyển tiếp trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Liên kết các hộp văn bản trong Word](./create-a-link/) | Tìm hiểu cách tạo và liên kết các hộp văn bản trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn toàn diện của chúng tôi để tùy chỉnh tài liệu liền mạch! |
+| [Kiểm tra trình tự hộp văn bản trong Word](./check-sequence/) | Khám phá cách kiểm tra trình tự các hộp văn bản trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để làm chủ luồng tài liệu! |
+| [Phá vỡ liên kết chuyển tiếp trong tài liệu Word](./break-a-link/) | Tìm hiểu cách ngắt liên kết chuyển tiếp trong hộp văn bản tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn của chúng tôi để có trải nghiệm quản lý tài liệu mượt mà hơn. |

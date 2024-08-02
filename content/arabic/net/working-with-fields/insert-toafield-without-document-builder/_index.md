@@ -2,123 +2,125 @@
 title: أدخل حقل TOA بدون أداة إنشاء المستندات
 linktitle: أدخل حقل TOA بدون أداة إنشاء المستندات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لإدراج حقل TOA بدون Document Builder باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إدراج حقل TOA دون استخدام أداة إنشاء المستندات في Aspose.Words لـ .NET. اتبع دليلنا خطوة بخطوة لإدارة الاستشهادات القانونية بكفاءة.
 type: docs
 weight: 10
 url: /ar/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## مقدمة
 
-فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه، والتي تستخدم ميزة "TOA Field Insertion" في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+قد يبدو إنشاء حقل جدول المراجع المصدقة (TOA) في مستند Word وكأنه تجميع لغز معقد معًا. ومع ذلك، بمساعدة Aspose.Words for .NET، تصبح العملية سلسة ومباشرة. في هذه المقالة، سنرشدك خلال خطوات إدراج حقل TOA دون استخدام أداة إنشاء المستندات، مما يسهل عليك إدارة الاستشهادات والمراجع القانونية داخل مستندات Word الخاصة بك.
 
-## الخطوة 1: إعداد دليل المستندات
+## المتطلبات الأساسية
 
-في الكود المقدم، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب لدليل المستندات الخاص بك.
+قبل الغوص في البرنامج التعليمي، دعونا نغطي الأساسيات التي ستحتاج إليها:
+
+-  Aspose.Words for .NET: تأكد من تثبيت أحدث إصدار لديك. يمكنك تنزيله من[موقع أسبوز](https://releases.aspose.com/words/net/).
+- بيئة التطوير: بيئة تطوير متكاملة متوافقة مع .NET مثل Visual Studio.
+- المعرفة الأساسية لـ C#: سيكون فهم بناء جملة ومفاهيم C# الأساسية مفيدًا.
+- نموذج مستند Word: قم بإنشاء نموذج مستند أو جعله جاهزًا حيث تريد إدراج حقل TOA.
+
+## استيراد مساحات الأسماء
+
+للبدء، ستحتاج إلى استيراد مساحات الأسماء الضرورية من مكتبة Aspose.Words. يضمن هذا الإعداد أن لديك إمكانية الوصول إلى كافة الفئات والأساليب المطلوبة لمعالجة المستندات.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## الخطوة 2: إنشاء الوثيقة والفقرة
+دعونا نقسم العملية إلى خطوات بسيطة وسهلة المتابعة. سنرشدك خلال كل مرحلة، موضحًا ما تفعله كل قطعة من التعليمات البرمجية وكيف تساهم في إنشاء حقل TOA.
 
-نبدأ بإنشاء مستند جديد وتهيئة فقرة.
+## الخطوة 1: تهيئة المستند
+
+ أولاً، تحتاج إلى إنشاء مثيل لـ`Document` فصل. يمثل هذا الكائن مستند Word الذي تعمل عليه.
 
 ```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## الخطوة 3: إدخال حقل TA
+يقوم هذا الرمز بتهيئة مستند Word جديد. يمكنك التفكير في الأمر على أنه إنشاء لوحة فارغة ستضيف إليها المحتوى الخاص بك.
 
-نستخدم فئة FieldTA لإدراج حقل TA في الفقرة.
+## الخطوة 2: إنشاء وتكوين حقل TA
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## الخطوة 4: إضافة الفقرة إلى نص الوثيقة
-
-نضيف الفقرة التي تحتوي على حقل TA إلى نص الوثيقة.
+بعد ذلك، سنقوم بإضافة حقل TA (جدول المراجع المصدقة). يشير هذا الحقل إلى الإدخالات التي ستظهر في TOA.
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## الخطوة 5: إنشاء الفقرة لحقل TOA
-
-نقوم بإنشاء فقرة جديدة لحقل TOA.
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## الخطوة 6: إدخال حقل TOA
-
-نستخدم فئة FieldToa لإدراج حقل TOA في الفقرة.
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## الخطوة 7: إضافة الفقرة إلى نص الوثيقة
-
-نضيف الفقرة التي تحتوي على حقل TOA إلى نص المستند.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## الخطوة 8: تحديث حقل TOA
-
- وأخيراً نسمي`Update()` طريقة تحديث حقل TOA.
-
-```csharp
-fieldToa.Update();
-```
-
-### مثال على التعليمات البرمجية المصدر لإدراج حقل TOA بدون Document Builder باستخدام Aspose.Words لـ .NET
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
 // نريد إدراج حقلي TA وTOA مثل هذا:
 // { تا \c 1 \l "القيمة 0" }
-// { توا \ج 1 }
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+وهنا تفصيل:
+- Paragraph para = new Paragraph(doc);: إنشاء فقرة جديدة داخل المستند.
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: إضافة حقل TA إلى الفقرة. ال`FieldType.FieldTOAEntry` يحدد أن هذا هو حقل إدخال TOA.
+- fieldTA.EntryCategory = "1"؛: تعيين فئة الإدخال. وهذا مفيد لتصنيف أنواع مختلفة من الإدخالات.
+- fieldTA.LongCitation = "القيمة 0"؛: يحدد نص الاقتباس الطويل. هذا هو النص الذي سيظهر في TOA.
+- doc.FirstSection.Body.AppendChild(para);: إلحاق الفقرة مع حقل TA بنص المستند.
+
+## الخطوة 3: أضف حقل TOA
+
+الآن، سنقوم بإدراج حقل TOA الفعلي الذي يجمع كافة إدخالات TA في جدول.
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### الأسئلة الشائعة
+في هذه الخطوة:
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);: إضافة حقل TOA إلى الفقرة.
+- fieldToa.EntryCategory = "1";: يقوم بتصفية الإدخالات لتشمل فقط تلك التي تم وضع علامة عليها بالفئة "1".
 
-#### س: كيفية تخصيص مظهر حقل TOA المدرج في مستند Word باستخدام Aspose.Words لـ .NET؟
+## الخطوة 4: تحديث حقل TOA
 
- ج: يمكنك تخصيص مظهر حقل TOA المدرج باستخدام خصائص ملف`FieldTOA` كائن لتحديد خيارات التنسيق.
+بعد إدراج حقل TOA، يتعين عليك تحديثه للتأكد من أنه يعكس أحدث الإدخالات.
 
-#### س: هل يمكنني إضافة حقول TOA متعددة في مستند Word واحد باستخدام Aspose.Words لـ .NET؟
+```csharp
+fieldToa.Update();
+```
 
-ج: نعم، يمكنك إضافة حقول TOA متعددة في مستند Word واحد باستخدام Aspose.Words لـ .NET. فقط كرر خطوات الإدراج لكل حقل.
+يقوم هذا الأمر بتحديث حقل TOA، مما يضمن عرض كافة الإدخالات المحددة بشكل صحيح في الجدول.
 
-#### س: كيف يمكنني التحقق من إدراج حقل TOA بنجاح في مستند Word باستخدام Aspose.Words for .NET؟
+## الخطوة 5: احفظ المستند
 
-ج: للتحقق من إدراج حقل TOA بنجاح، يمكنك تصفح محتوى المستند والبحث عن مثيلات حقل TOA.
+وأخيرًا، احفظ مستندك باستخدام حقل TOA المُضاف حديثًا.
 
-#### س: هل يؤثر إدراج حقل TOA بدون استخدام DocumentBuilder على تنسيق مستند Word باستخدام Aspose.Words لـ .NET؟
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-ج: إن إدراج حقل TOA بدون استخدام DocumentBuilder لا يؤثر بشكل مباشر على تنسيق مستند Word. ومع ذلك، يمكن أن تؤثر خيارات تنسيق حقل TOA على التنسيق العام للمستند.
+ يقوم سطر التعليمات البرمجية هذا بحفظ المستند في الدليل المحدد. تأكد من استبدال`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي الذي تريد حفظ ملفك فيه.
+
+## خاتمة
+
+وهناك لديك! لقد قمت بنجاح بإضافة حقل TOA إلى مستند Word دون استخدام أداة إنشاء المستندات. باتباع هذه الخطوات، يمكنك إدارة الاستشهادات بكفاءة وإنشاء جداول شاملة للمراجع في مستنداتك القانونية. يجعل Aspose.Words for .NET هذه العملية سلسة وفعالة، مما يوفر لك الأدوات اللازمة للتعامل مع مهام المستندات المعقدة بسهولة.
+
+## الأسئلة الشائعة
+
+### هل يمكنني إضافة حقول TA متعددة بفئات مختلفة؟
+ نعم، يمكنك إضافة حقول TA متعددة بفئات مختلفة عن طريق تعيين`EntryCategory`الممتلكات وفقا لذلك.
+
+### كيف يمكنني تخصيص مظهر TOA؟
+يمكنك تخصيص مظهر TOA عن طريق تعديل خصائص حقل TOA، مثل تنسيق الإدخال وتسميات الفئات.
+
+### هل من الممكن تحديث حقل TOA تلقائيًا؟
+ بينما يمكنك تحديث حقل TOA يدويًا باستخدام ملف`Update` الطريقة، لا يدعم Aspose.Words حاليًا التحديثات التلقائية لتغييرات المستند.
+
+### هل يمكنني إضافة حقول TA برمجياً في أجزاء محددة من المستند؟
+نعم، يمكنك إضافة حقول TA في مواقع محددة عن طريق إدراجها في الفقرات أو الأقسام المطلوبة.
+
+### كيف يمكنني التعامل مع حقول TOA المتعددة في مستند واحد؟
+ يمكنك إدارة حقول TOA متعددة عن طريق تعيين حقول مختلفة`EntryCategory` القيم والتأكد من أن كل حقل TOA يقوم بتصفية الإدخالات بناءً على فئته.

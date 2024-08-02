@@ -77,7 +77,7 @@ builder.Writeln("Item 2b");
 
 ## Kesimpulan
 
-Membuat daftar berurutan dalam dokumen Word secara terprogram mungkin tampak menakutkan pada awalnya, namun dengan Aspose.Words untuk .NET, semuanya menjadi sangat mudah. Dengan mengikuti langkah-langkah sederhana ini, Anda dapat dengan mudah menambahkan dan mengelola daftar di dokumen Anda. Baik Anda membuat laporan, membuat dokumen terstruktur, atau sekadar mengotomatiskan alur kerja Anda, Aspose.Words untuk .NET siap membantu Anda. Jadi, mengapa menunggu? Mulailah membuat kode dan lihat keajaibannya terungkap!
+Membuat daftar terurut dalam dokumen Word secara terprogram mungkin tampak menakutkan pada awalnya, tetapi dengan Aspose.Words untuk .NET, semuanya menjadi sangat mudah. Dengan mengikuti langkah-langkah sederhana ini, Anda dapat dengan mudah menambahkan dan mengelola daftar di dokumen Anda. Baik Anda membuat laporan, membuat dokumen terstruktur, atau sekadar mengotomatiskan alur kerja Anda, Aspose.Words untuk .NET siap membantu Anda. Jadi, mengapa menunggu? Mulailah membuat kode dan lihat keajaibannya terungkap!
 
 ## FAQ
 

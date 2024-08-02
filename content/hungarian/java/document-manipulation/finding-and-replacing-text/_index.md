@@ -214,7 +214,7 @@ doc.save("modified-document.docx");
 
  Ebben a példában a szöveget mezőkre cseréljük, és megadjuk a mező típusát (pl.`FieldType.FIELD_MERGE_FIELD`).
 
-## Csere értékelővel
+## Csere kiértékelővel
 
 Egyéni kiértékelő segítségével dinamikusan meghatározhatja a helyettesítő szöveget.
 
@@ -353,6 +353,6 @@ Igen, használhat reguláris kifejezéseket a szöveg cseréjéhez az Aspose.Wor
 
  Igen, lecserélheti a Word-dokumentum fejlécében és láblécében lévő szöveget. Egyszerűen nyissa meg a megfelelő fejlécet vagy láblécet, és használja a`replace` módszerrel a kívánt`FindReplaceOptions`.
 
-### Mire való a UseLegacyOrder opció?
+### Mire jó a UseLegacyOrder opció?
 
  A`UseLegacyOrder` opció be`FindReplaceOptions` lehetővé teszi az örökölt sorrend használatát a keresési és csereműveletek végrehajtásakor. Ez hasznos lehet bizonyos forgatókönyvekben, amikor az örökölt rendelési viselkedés kívánatos.

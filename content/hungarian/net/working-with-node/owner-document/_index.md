@@ -107,4 +107,4 @@ V: A legtöbb esetben a csomópont dokumentumtulajdonosa a csomópont létrehoz�
 
 #### K: Hogyan lehet elérni a tulajdonos dokumentumának csomópontjait?
 
-V: A védett dokumentum csomópontjainak eléréséhez használhatja a Node.js környezetben használt XML API által biztosított módszereket és tulajdonságokat. Például használhat olyan módszereket, mint`getElementsByTagName` vagy`querySelector` adott csomópontok kiválasztásához a dokumentumban.
+V: A védett dokumentum csomópontjainak eléréséhez használhatja a Node.js környezetben használt XML API által biztosított módszereket és tulajdonságokat. Használhat például olyan módszereket, mint`getElementsByTagName` vagy`querySelector` adott csomópontok kiválasztásához a dokumentumban.

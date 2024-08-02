@@ -60,7 +60,7 @@ doc.WriteProtection.SetPassword("MyPassword");
 Uitleg:
 
 -  De`SetPassword` methode wordt aangeroepen op de`WriteProtection` eigendom van het document.
-- Wij verstrekken een wachtwoord (“MyPassword” in dit geval) dat nodig is om de beveiliging op te heffen.
+- Wij verstrekken een wachtwoord ("MyPassword" in dit geval) dat nodig is om de beveiliging op te heffen.
 
 ## Stap 3: Alleen-lezen aanbeveling inschakelen
 

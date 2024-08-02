@@ -154,7 +154,7 @@ As opções de limpeza em Aspose.Words for Java são configurações que permite
 
 ### Posso remover linhas vazias da tabela de um documento usando Aspose.Words for Java?
 
- Sim, você pode remover linhas vazias da tabela de um documento definindo a opção`MailMergeCleanupOptions.REMOVE_EMPTY_TABLE_ROWS`opção de limpeza como verdadeira. Isso excluirá automaticamente todas as linhas da tabela que não contenham dados, garantindo uma tabela bem estruturada em seu documento.
+ Sim, você pode remover linhas vazias da tabela de um documento definindo o`MailMergeCleanupOptions.REMOVE_EMPTY_TABLE_ROWS`opção de limpeza como verdadeira. Isso excluirá automaticamente todas as linhas da tabela que não contenham dados, garantindo uma tabela bem estruturada em seu documento.
 
 ###  O que acontece quando eu defino o`REMOVE_CONTAINING_FIELDS` option?
 

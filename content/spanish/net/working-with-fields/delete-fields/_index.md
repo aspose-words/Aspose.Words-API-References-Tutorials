@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /es/net/working-with-fields/delete-fields/
 ---
-
 ## Introducción
 
 En el ámbito del procesamiento y la automatización de documentos, Aspose.Words para .NET se destaca como un poderoso conjunto de herramientas para desarrolladores que buscan manipular, crear y administrar documentos de Word mediante programación. Este tutorial tiene como objetivo guiarlo a través del proceso de utilización de Aspose.Words para .NET para eliminar campos dentro de documentos de Word. Ya sea que sea un desarrollador experimentado o esté comenzando con el desarrollo de .NET, esta guía desglosará los pasos necesarios para eliminar campos de sus documentos de manera efectiva mediante ejemplos y explicaciones claras y concisas.
@@ -44,13 +43,13 @@ Asegúrese de tener un proyecto C# nuevo o existente en Visual Studio donde haya
 ## Paso 2: Agregar referencia de Aspose.Words
 
 Si aún no lo ha hecho, agregue una referencia a Aspose.Words en su proyecto de Visual Studio. Puedes hacer esto mediante:
-   - Haciendo clic derecho en su proyecto en el Explorador de soluciones.
-   - Seleccionando "Administrar paquetes NuGet..."
-   - Busque "Aspose.Words" e instálelo en su proyecto.
+- Haciendo clic derecho en su proyecto en el Explorador de soluciones.
+- Seleccionando "Administrar paquetes NuGet..."
+- Busque "Aspose.Words" e instálelo en su proyecto.
 
 ## Paso 3: prepare su documento
 
- Coloque el documento que desea modificar (p. ej.,`your-document.docx`) en el directorio de su proyecto o proporcione la ruta completa al mismo.
+ Coloque el documento que desea modificar (p. ej.,`your-document.docx`en el directorio de su proyecto o proporcione la ruta completa al mismo.
 
 ## Paso 4: Inicializar el objeto de documento Aspose.Words
 
@@ -89,16 +88,16 @@ En conclusión, este tutorial ha proporcionado una guía completa sobre cómo el
 ## Preguntas frecuentes
 
 ### ¿Puedo eliminar tipos específicos de campos en lugar de todos los campos?
-   - Sí, puede modificar la condición del bucle para comprobar tipos específicos de campos antes de eliminarlos.
+Sí, puede modificar la condición del bucle para comprobar tipos específicos de campos antes de eliminarlos.
 
 ### ¿Aspose.Words es compatible con .NET Core?
-   - Sí, Aspose.Words es compatible con .NET Core, lo que le permite usarlo en aplicaciones multiplataforma.
+Sí, Aspose.Words es compatible con .NET Core, lo que le permite usarlo en aplicaciones multiplataforma.
 
 ### ¿Cómo puedo manejar los errores al procesar documentos con Aspose.Words?
-   - Puede utilizar bloques try-catch para manejar las excepciones que pueden ocurrir durante las operaciones de procesamiento de documentos.
+Puede utilizar bloques try-catch para manejar las excepciones que pueden ocurrir durante las operaciones de procesamiento de documentos.
 
 ### ¿Puedo eliminar campos sin alterar otro contenido del documento?
-   - Sí, el método que se muestra aquí se dirige específicamente solo a campos y deja el resto del contenido sin cambios.
+Sí, el método que se muestra aquí se dirige específicamente solo a campos y deja el resto del contenido sin cambios.
 
 ### ¿Dónde puedo encontrar más recursos y soporte para Aspose.Words?
-   -  Visita el[Aspose.Words para la documentación de la API .NET](https://reference.aspose.com/words/net/) y el[Foro Aspose.Words](https://forum.aspose.com/c/words/8) para obtener más ayuda.
+ Visita el[Aspose.Words para la documentación de la API .NET](https://reference.aspose.com/words/net/) y el[Foro Aspose.Words](https://forum.aspose.com/c/words/8) para obtener más ayuda.

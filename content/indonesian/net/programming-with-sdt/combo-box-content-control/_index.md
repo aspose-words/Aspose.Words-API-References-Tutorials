@@ -2,71 +2,115 @@
 title: Kontrol Konten Kotak Kombo
 linktitle: Kontrol Konten Kotak Kombo
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat Kontrol Konten Kotak Kombo di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Buat kontrol konten kotak kombo di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial terperinci kami. Sempurna untuk meningkatkan interaktivitas dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-sdt/combo-box-content-control/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara membuat Kontrol Konten Kotak Kombo di dokumen Word menggunakan Aspose.Words untuk .NET. Kontrol konten kotak kombo memungkinkan pengguna memilih item dari daftar dropdown.
+Apakah Anda ingin menambahkan elemen interaktif ke dokumen Word Anda? Nah, Anda datang ke tempat yang tepat! Dalam panduan ini, kami akan memandu Anda tentang cara membuat kontrol konten kotak kombo di dokumen Word menggunakan Aspose.Words untuk .NET. Di akhir tutorial ini, Anda akan memiliki pemahaman yang kuat tentang cara menyisipkan dan memanipulasi kontrol konten kotak kombo, menjadikan dokumen Anda lebih dinamis dan ramah pengguna.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
-- Aspose.Words untuk perpustakaan .NET diinstal.
-- Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
+Sebelum kita menyelami seluk beluk pengkodean, pastikan Anda memiliki semua yang Anda butuhkan:
 
-## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+1.  Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.
+3. Lingkungan Pengembangan Terpadu (IDE): Visual Studio direkomendasikan untuk pengembangan .NET.
+4. Pemahaman Dasar C#: Tutorial ini mengasumsikan Anda memiliki pemahaman dasar tentang pemrograman C#.
+
+## Impor Namespace
+
+Untuk mulai menggunakan Aspose.Words di proyek Anda, Anda harus mengimpor namespace yang diperlukan. Inilah cara Anda melakukannya:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Markup;
 ```
 
-## Langkah 2: Buat Dokumen dan StructuredDocumentTag
- Buat instance baru dari`Document` kelas dan a`StructuredDocumentTag` untuk mewakili kontrol konten kotak kombo. Menentukan`SdtType.ComboBox` sebagai tipe dan`MarkupLevel.Block` sebagai tingkat markup untuk membuat kotak kombo tingkat blok.
+Baiklah, mari masuk ke bagian yang menyenangkan – coding! Kami akan membagi prosesnya menjadi langkah-langkah yang mudah diikuti.
+
+## Langkah 1: Siapkan Proyek Anda
+
+Hal pertama yang pertama, siapkan proyek baru di IDE Anda. Begini caranya:
+
+- Buka Visual Studio.
+- Buat proyek Aplikasi Konsol C# baru.
+- Instal paket Aspose.Words untuk .NET melalui NuGet Package Manager. Anda dapat melakukannya dengan menjalankan perintah berikut di Konsol Manajer Paket:
+  ```
+  Install-Package Aspose.Words
+  ```
+
+## Langkah 2: Inisialisasi Dokumen Anda
+
+Pada langkah ini, kita akan menginisialisasi dokumen Word baru di mana kita akan menambahkan kontrol konten kotak kombo.
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Inisialisasi dokumen
 Document doc = new Document();
+```
+
+## Langkah 3: Buat Kontrol Konten Kotak Kombo
+
+Sekarang, mari buat kontrol konten kotak kombo. Kontrol ini akan memungkinkan pengguna untuk memilih dari daftar item yang telah ditentukan sebelumnya.
+
+```csharp
+// Buat kontrol konten ComboBox
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
 ```
 
-## Langkah 3: Tambahkan Item ke Kotak Kombo
- Tambahkan item ke kotak kombo dengan menggunakan`ListItems` properti dari`StructuredDocumentTag` . Setiap item diwakili oleh sebuah`SdtListItem` objek, yang mengambil teks tampilan dan nilai. Dalam contoh ini, kita menambahkan tiga item ke kotak kombo.
+## Langkah 4: Tambahkan Item ke Kotak Kombo
+
+Kotak kombo tidak banyak gunanya tanpa item untuk dipilih. Mari tambahkan beberapa item ke dalamnya.
 
 ```csharp
+// Tambahkan item ke ComboBox
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
 sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
 sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
 ```
 
-## Langkah 4: Tambahkan StructuredDocumentTag ke Dokumen
- Tambahkan kontrol konten kotak kombo ke isi dokumen dengan menggunakan`AppendChild` metode isi bagian pertama dokumen.
+## Langkah 5: Masukkan Kotak Kombo ke dalam Dokumen
+
+Selanjutnya, kita perlu memasukkan kotak kombo ini ke dalam dokumen. Kami akan menambahkannya ke badan bagian pertama dokumen kami.
 
 ```csharp
+// Tambahkan ComboBox ke badan dokumen
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## Langkah 5: Simpan Dokumen
- Simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.ComboBoxContentControl.docx".
+## Langkah 6: Simpan Dokumen Anda
+
+Terakhir, mari kita simpan dokumennya sehingga kita bisa melihat kotak kombo kita beraksi.
 
 ```csharp
+// Simpan dokumennya
 doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ```
 
-### Contoh kode sumber untuk Kontrol Konten Kotak Kombo menggunakan Aspose.Words untuk .NET 
+## Kesimpulan
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Dan itu dia! Anda telah berhasil membuat kontrol konten kotak kombo di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat menambahkan elemen interaktif ke dokumen Anda, meningkatkan fungsionalitas dan pengalaman penggunanya.
 
-	Document doc = new Document();
-	StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
-	sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
-	sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
-	sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
-	doc.FirstSection.Body.AppendChild(sdt);
-	doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
-```
+Jangan ragu untuk bereksperimen dengan berbagai jenis kontrol konten dan sesuaikan dengan kebutuhan Anda. Jika Anda memiliki pertanyaan atau mengalami masalah apa pun, jangan ragu untuk menghubungi dukungan.
 
-Itu dia! Anda telah berhasil membuat Kontrol Konten Kotak Kombo di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+## FAQ
+
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Ini memungkinkan Anda membuat, memodifikasi, mengonversi, dan merender dokumen Word dalam berbagai format.
+
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan kerangka .NET lainnya?
+Ya, Aspose.Words untuk .NET mendukung berbagai kerangka .NET termasuk .NET Core dan .NET Standard.
+
+### Bagaimana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?
+ Anda dapat mengunduh uji coba gratis Aspose.Words untuk .NET[Di Sini](https://releases.aspose.com/).
+
+### Jenis kontrol konten apa lagi yang dapat saya buat menggunakan Aspose.Words?
+Selain kotak kombo, Anda dapat membuat kontrol input teks, kotak centang, pemilih tanggal, dan banyak lagi.
+
+### Di mana saya dapat menemukan dokumentasi lebih rinci tentang Aspose.Words untuk .NET?
+ Untuk dokumentasi terperinci, kunjungi[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/).

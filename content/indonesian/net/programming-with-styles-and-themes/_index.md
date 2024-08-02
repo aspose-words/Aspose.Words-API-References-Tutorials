@@ -16,8 +16,8 @@ Baik Anda seorang pemula atau pengembang berpengalaman, tutorial Aspose.Words un
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Gaya Akses](./access-styles/) | Pelajari cara mengakses gaya dokumen dengan Aspose.Words untuk .NET. Tutorial lengkap untuk memanipulasi gaya dokumen Anda. |
-| [Salin Gaya](./copy-styles/) | Pelajari cara menyalin gaya antar dokumen dengan Aspose.Words untuk .NET. |
-| [Dapatkan Properti Tema](./get-theme-properties/) | Jelajahi properti tema dokumen dengan Aspose.Words untuk .NET. Sesuaikan gaya dan warna untuk tampilan yang unik. |
-| [Atur Properti Tema](./set-theme-properties/) | Pelajari cara mengkustomisasi tampilan dokumen Anda dengan mengubah properti tema dengan Aspose.Words untuk .NET. Dapatkan hasil yang profesional dan menarik. |
-| [Sisipkan Pemisah Gaya](./insert-style-separator/) | Pelajari cara membuat dokumen dengan gaya khusus dan menyisipkan pemisah gaya untuk pemformatan profesional dan presisi. |
+| [Dapatkan Gaya Dokumen Di Word](./access-styles/) | Pelajari cara mendapatkan gaya dokumen di Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang mendetail ini. Akses dan kelola gaya secara terprogram di aplikasi .NET Anda. |
+| [Salin Gaya Dokumen Word](./copy-styles/) | Pelajari cara menyalin gaya dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk memastikan pemformatan dokumen yang konsisten dengan mudah. |
+| [Dapatkan Properti Tema Dokumen Di Word](./get-theme-properties/) | Temukan cara mengakses dan mengelola properti tema dokumen di Word menggunakan Aspose.Words untuk .NET. Pelajari cara mengambil font dan warna dengan panduan kami. |
+| [Atur Properti Tema di Dokumen Word](./set-theme-properties/) | Pelajari cara mengatur properti tema di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk menyesuaikan font dan warna dengan mudah. |
+| [IMasukkan Pemisah Gaya Dokumen di Word](./insert-style-separator/) | Pelajari cara menyisipkan pemisah gaya dokumen di Word menggunakan Aspose.Words untuk .NET. Panduan ini memberikan instruksi dan tip untuk mengelola gaya dokumen. |

@@ -75,7 +75,7 @@ format.LineUnitBefore = 5;  // ParagraphFormat.SpaceBefore sera mis à jour
 format.LineUnitAfter = 10;  // ParagraphFormat.SpaceAfter sera mis à jour
 ```
 
-La définition de l'unité de ligne avant et après sur 5 et 10 unités, respectivement, garantit un espace suffisant entre les paragraphes, rendant le document plus lisible.
+Définir l'unité de ligne avant et après sur 5 et 10 unités, respectivement, garantit qu'il y a un espace suffisant entre les paragraphes, rendant le document plus lisible.
 
 ## Étape 5 : Enregistrez le document
 

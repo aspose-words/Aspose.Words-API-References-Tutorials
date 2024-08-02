@@ -68,7 +68,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtM
 
 ## 結論
 
-可以使用多種技術來完成 Aspose.Words for Java 中的複製和組合文件。無論您需要複製文件、在替換點、書籤處插入內容，還是在郵件合併過程中，Aspose.Words 都提供了強大的功能來無縫操作文件。
+可以使用多種技術來完成 Aspose.Words for Java 中的複製和合併文件。無論您需要複製文件、在替換點、書籤處插入內容，還是在郵件合併過程中，Aspose.Words 都提供了強大的功能來無縫操作文件。
 
 ## 常見問題解答
 

@@ -106,7 +106,7 @@ Neste guia, exploramos o processo de aprimoramento de conteúdo visual com caixa
 
 ### Como adiciono bordas a uma caixa de texto?
 
- Você pode adicionar bordas a uma caixa de texto usando o`textbox.border` propriedade e personalizando sua aparência.
+ Você pode adicionar bordas a uma caixa de texto usando o`textbox.border`propriedade e personalizando sua aparência.
 
 ### Posso incorporar hiperlinks em uma caixa de texto?
 

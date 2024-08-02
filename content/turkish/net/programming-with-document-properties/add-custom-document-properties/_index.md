@@ -99,7 +99,7 @@ Belgenin revizyon numarasını takip etmek için bir özellik de ekleyebiliriz. 
 customDocumentProperties.Add("Authorized Revision", doc.BuiltInDocumentProperties.RevisionNumber);
 ```
 
-Burada "Yetkili Revizyon" adında bir özellik ekliyoruz ve ona belgenin mevcut revizyon numarasını atamaktayız.
+Burada "Yetkili Revizyon" adında bir özellik ekliyoruz ve ona belgenin mevcut revizyon numarasını atadık.
 
 ## Adım 8: Sayısal Özellik Ekleme
 

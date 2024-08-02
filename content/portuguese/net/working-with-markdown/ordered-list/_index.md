@@ -16,7 +16,7 @@ Então, você decidiu mergulhar no Aspose.Words for .NET para criar documentos W
 Antes de mergulharmos no código, há algumas coisas que você precisará:
 
 1.  Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Se não, você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 3. Conhecimento básico de C#: você deve estar confortável com os conceitos básicos de C# para acompanhar facilmente.
 
 ## Importar namespaces
@@ -94,4 +94,4 @@ Criar uma lista ordenada em um documento do Word programaticamente pode parecer 
 Sim, você pode continuar a numeração usando o mesmo formato de lista. Aspose.Words permite controlar a numeração da lista em diferentes parágrafos.
 
 ### Como posso remover o formato da lista?  
- Você pode remover o formato da lista chamando`ListFormat.RemoveNumbers()`. Isso transformará os itens da lista novamente em parágrafos regulares.
+ Você pode remover o formato da lista chamando`ListFormat.RemoveNumbers()`. Isso transformará os itens da lista novamente em parágrafos normais.

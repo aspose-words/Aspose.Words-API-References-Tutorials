@@ -2,7 +2,7 @@
 title: Použití uzlů v Aspose.Words pro Javu
 linktitle: Pomocí uzlů
 second_title: Aspose.Words Java Document Processing API
-description: Naučte se manipulovat s uzly v Aspose.Words pro Java pomocí tohoto podrobného tutoriálu. Odemkněte výkon zpracování dokumentů.
+description: Naučte se manipulovat s uzly v Aspose.Words pro Java pomocí tohoto podrobného návodu. Odemkněte výkon zpracování dokumentů.
 type: docs
 weight: 20
 url: /cs/java/using-document-elements/using-nodes/

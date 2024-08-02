@@ -14,7 +14,7 @@ Trích xuất nội dung từ tài liệu Word một cách hiệu quả là yêu
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn đã cài đặt Python và thư viện Aspose.Words. Bạn có thể tải thư viện từ trang web[đây](https://releases.aspose.com/words/python/). Ngoài ra, hãy đảm bảo bạn có sẵn tài liệu Word để thử nghiệm.
+ Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn đã cài đặt Python và thư viện Aspose.Words. Bạn có thể tải thư viện từ trang web[đây](https://releases.aspose.com/words/python/). Ngoài ra, hãy đảm bảo bạn có sẵn tài liệu Word để thử nghiệm.
 
 ## Cài đặt Aspose.Words cho Python
 

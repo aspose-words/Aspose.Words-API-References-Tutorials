@@ -82,7 +82,7 @@ Korzystanie z pojedynczego pliku CSS upraszcza zarządzanie stylami i ich konser
 ### Czy w razie potrzeby mogę oddzielić reguły CSS dotyczące czcionek?
  Tak, poprzez ustawienie`SaveFontFaceCssSeparately` Do`true`, możesz oddzielić reguły CSS dotyczące kroju czcionki do innego pliku.
 
-### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
+### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
  Aspose.Words oferuje bezpłatną wersję próbną, którą możesz[Pobierz tutaj](https://releases.aspose.com/) . Aby móc dalej korzystać, rozważ zakup licencji[Tutaj](https://purchase.aspose.com/buy).
 
 ### Na jakie inne formaty można konwertować Aspose.Words dla .NET?

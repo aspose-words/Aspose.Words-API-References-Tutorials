@@ -9,7 +9,7 @@ url: /fr/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## Introduction
 
-Vous êtes-vous déjà demandé comment enregistrer un document Word sous forme d’image en noir et blanc avec seulement quelques lignes de code ? Eh bien, vous avez de la chance ! Aujourd'hui, nous nous penchons sur une petite astuce intéressante utilisant Aspose.Words pour .NET qui vous permet de convertir vos documents en images indexées de 1 Mb/s. Ce format est parfait pour certains types d’archivage numérique, d’impression ou lorsque vous avez besoin de gagner de la place. Nous décomposerons chaque étape pour que ce soit aussi simple que du gâteau. Prêt à commencer? Allons-y !
+Vous êtes-vous déjà demandé comment enregistrer un document Word sous forme d’image en noir et blanc avec seulement quelques lignes de code ? Eh bien, vous avez de la chance ! Aujourd'hui, nous nous penchons sur une petite astuce intéressante utilisant Aspose.Words pour .NET qui vous permet de convertir vos documents en images indexées de 1 Mb/s. Ce format est parfait pour certains types d’archivage numérique, d’impression ou lorsque vous avez besoin de gagner de la place. Nous décomposerons chaque étape pour que ce soit aussi simple que du gâteau. Prêt à commencer? Allons-y !
 
 ## Conditions préalables
 
@@ -64,7 +64,7 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 - ImageColorMode.BlackAndWhite : Ceci définit l’image en noir et blanc.
 - ImagePixelFormat.Format1bppIndexed : Ceci définit le format de l'image sur 1 Bpp indexé.
 
-## Étape 4 : Enregistrez le document en tant qu'image
+## Étape 4 : Enregistrez le document en tant qu’image
 
  Enfin, nous enregistrons le document sous forme d'image en utilisant le`Save` méthode du`Document` objet.
 

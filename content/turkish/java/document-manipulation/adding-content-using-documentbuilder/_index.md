@@ -122,7 +122,7 @@ builder.insertHtml("<p>This is an HTML paragraph.</p>");
 doc.save("path/to/your/document.docx");
 ```
 
-## Köprüler Ekleme
+## Köprü Ekleme
 
 ```java
 Document doc = new Document();
@@ -149,7 +149,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // İçindekiler tablosu ekleme
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-// Belge içeriği ekle
+// Belge içeriği ekleyin
 // ...
 
 // İçindekiler tablosunu güncelleyin
@@ -252,7 +252,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // İçindekiler alanı ekleme
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-// Belge içeriği ekle
+// Belge içeriği ekleyin
 // ...
 
 // İçindekiler tablosunu güncelleyin

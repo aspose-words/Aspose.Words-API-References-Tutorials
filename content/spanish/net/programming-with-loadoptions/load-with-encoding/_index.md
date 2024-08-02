@@ -77,7 +77,7 @@ Esta línea de código carga el documento desde la ruta especificada utilizando 
 ### ¿Qué es la codificación UTF-7?
 UTF-7 (formato de transformación Unicode de 7 bits) es una codificación diseñada para representar texto Unicode utilizando una secuencia de caracteres ASCII.
 
-### ¿Puedo usar otras codificaciones con Aspose.Words?
+### ¿Puedo utilizar otras codificaciones con Aspose.Words?
  Sí, Aspose.Words admite varias codificaciones, como UTF-8, UTF-16 y más. Simplemente configura el`Encoding` propiedad en`LoadOptions` respectivamente.
 
 ### ¿Aspose.Words es de uso gratuito?

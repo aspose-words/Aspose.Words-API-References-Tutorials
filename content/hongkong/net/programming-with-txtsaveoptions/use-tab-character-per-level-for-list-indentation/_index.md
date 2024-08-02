@@ -2,115 +2,126 @@
 title: 每級使用製表符進行列表縮排
 linktitle: 每級使用製表符進行列表縮排
 second_title: Aspose.Words 文件處理 API
-description: 了解如何在 Aspose.Words for .NET 中使用帶有製表符功能的縮排清單。利用這項強大的功能節省時間並改善您的工作流程。
+description: 了解如何使用 Aspose.Words for .NET 建立具有選項卡式縮排的多層清單。請依照本指南在文件中精確設定清單格式。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
+## 介紹
 
-在本教程中，我們將探索為 Aspose.Words for .NET 的「每級使用一個製表符進行列表縮排」功能提供的 C# 原始程式碼。此功能可讓您應用製表符來縮排每個層級的列表，從而提供更大的靈活性和對文件外觀的控制。
+無論您是起草報告、撰寫研究論文還是準備演示文稿，清單都是組織內容的基礎。然而，當涉及到呈現具有多層縮排的清單時，實現所需的格式可能有點棘手。使用 Aspose.Words for .NET，您可以輕鬆管理清單縮排並自訂每個層級的表示方式。在本教程中，我們將重點放在建立具有多個縮排等級的列表，並使用製表符進行精確格式化。讀完本指南後，您將清楚地了解如何使用正確的縮排樣式設定和儲存文件。
 
-## 第一步：建構環境
+## 先決條件
 
-在開始之前，請確保您已使用 Aspose.Words for .NET 設定開發環境。確保您已新增必要的引用並匯入適當的命名空間。
+在我們深入了解這些步驟之前，請確保您已準備好以下內容：
 
-## 第 2 步：建立文件和產生器
+1. 已安裝 Aspose.Words for .NET：您需要 Aspose.Words 函式庫。如果您還沒有安裝，可以從以下位置下載[Aspose下載](https://releases.aspose.com/words/net/).
+
+2. 對 C# 和 .NET 的基本了解：熟悉 C# 程式設計和 .NET 框架對於學習本教學至關重要。
+
+3. 開發環境：確保您有 IDE 或文字編輯器來編寫和執行 C# 程式碼（例如 Visual Studio）。
+
+4. 範例文檔目錄：設定一個用於儲存和測試文檔的目錄。 
+
+## 導入命名空間
+
+首先，您需要匯入必要的命名空間才能在 .NET 應用程式中使用 Aspose.Words。在 C# 檔案的開頭加入以下 using 指令：
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+在本節中，我們將使用 Aspose.Words for .NET 建立一個具有選項卡式縮排的多層清單。按著這些次序：
+
+## 第 1 步：設定您的文檔
+
+建立新文件和 DocumentBuilder
 
 ```csharp
 //文檔目錄的路徑
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+//建立一個新文檔
 Document doc = new Document();
+
+//初始化文檔產生器
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-在這一步驟中，我們創建一個新的`Document`對象和關聯的`DocumentBuilder`目的。這些物件將允許我們操作和產生我們的文件。
+在這裡，我們設定了一個新的`Document`物件和一個`DocumentBuilder`開始在文件中建立內容。
 
-## 步驟 3：建立具有三級縮排的列表
+## 第 2 步：套用預設清單格式
+
+建立清單並設定其格式
 
 ```csharp
+//將預設編號樣式套用至列表
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+```
+
+在此步驟中，我們將預設編號格式套用至清單。這將有助於建立編號列表，然後我們可以自訂該列表。
+
+## 步驟3：新增不同層級的清單項
+
+插入列表項目和縮排
+
+```csharp
+//新增第一個列表項
+builder.Write("Element 1");
+
+//縮排以建立第二級
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
+
+//進一步縮排以建立第三層
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-在此步驟中，我們使用以下命令套用清單編號的預設格式`ApplyNumberDefault()`列表格式化程式的方法。接下來，我們使用文檔產生器將三個項目新增到清單中`Writeln()`和`Write()`方法。我們使用`ListIndent()`增加每個層級縮排的方法。
+在這裡，我們為清單中新增了三個元素，每個元素的縮排等級不斷增加。這`ListIndent`方法用於增加每個後續項目的縮排等級。
 
-## 第 4 步：配置錄製選項
+## 步驟 4：配置儲存選項
+
+設定縮排以使用製表符
 
 ```csharp
+//配置儲存選項以使用製表符進行縮排
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
-在此步驟中，我們配置用於保存文件的選項。我們創建一個新的`TxtSaveOptions`對象並設定`ListIndentation.Count`屬性設定為 1 以指定每個縮排等級的製表符數量。我們還設定了`ListIndentation.Character`屬性為 '\t' 以指定我們要使用製表符。
+我們配置`TxtSaveOptions`在已儲存的文字檔案中使用製表符進行縮排。這`ListIndentation.Character`屬性設定為`'\t'`，代表製表符。
 
 ## 第 5 步：儲存文檔
 
+使用指定選項儲存文檔
+
 ```csharp
+//使用指定選項儲存文檔
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-在最後一步中，我們使用指定的儲存選項來儲存文件。我們使用`Save()`文件的方法傳遞輸出檔案的完整路徑和儲存選項。
+最後，我們使用以下命令儲存文檔`Save`與我們自訂的方法`TxtSaveOptions`。這可確保使用縮排等級的製表符儲存清單。
 
+## 結論
 
-現在您可以執行原始程式碼來產生使用製表符進行清單縮排的文件。輸出檔案將保存在指定目錄中，名稱為「WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt」。
+在本教程中，我們逐步介紹了使用 Aspose.Words for .NET 建立具有選項卡式縮排的多層清單。透過執行這些步驟，您可以輕鬆管理文件中的清單並設定其格式，確保它們清晰、專業地呈現。無論您正在處理報表、簡報或任何其他文件類型，這些技術都將幫助您實現對清單格式的精確控制。
 
-### Aspose.Words for .NET 的「每級使用一個製表符進行清單縮排」功能的範例程式碼來源：
+## 常見問題解答
 
-```csharp
+### 如何將縮排字元從製表符變更為空格？
+您可以修改`saveOptions.ListIndentation.Character`屬性使用空格字元而不是製表符。
 
-//文檔目錄的路徑
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+### 我可以將不同的清單樣式套用到不同的等級嗎？
+是的，Aspose.Words 允許在各個層級自訂清單樣式。您可以修改清單格式選項以實現不同的樣式。
 
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+### 如果我需要應用項目符號而不是數字怎麼辦？
+使用`ListFormat.ApplyBulletDefault()`方法而不是`ApplyNumberDefault()`建立項目符號清單。
 
-//建立具有三級縮排的列表
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
-builder.ListFormat.ListIndent();
-builder.Write("Element 3");
+### 如何調整用於縮排的製表符的大小？
+不幸的是，選項卡大小為`TxtSaveOptions`是固定的。若要調整縮排大小，您可能需要使用空格或直接自訂清單格式。
 
-TxtSaveOptions saveOptions = new TxtSaveOptions();
-saveOptions.ListIndentation.Count = 1;
-saveOptions.ListIndentation.Character = '\t';
-
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
-
-```
-
-現在您已經完成了使用製表符產生帶有清單縮排的文檔，您可以使用 Markdown 來格式化您的文章內容。請務必使用適當的格式標記來反白標題、副標題和包含的原始程式碼。
-
-### 經常問的問題
-
-#### Q：Aspose.Words for .NET 的「每級使用一個製表符進行清單縮排」功能是什麼？
-Aspose.Words for .NET 的「每級使用一個製表符進行清單縮排」功能允許在每一層對清單縮排應用製表符。這提供了對文件外觀的更大靈活性和控制。
-
-#### Q：如何在 Aspose.Words for .NET 中使用此功能？
-若要將此功能與 Aspose.Words for .NET 一起使用，您可以按照下列步驟操作：
-
-透過新增必要的引用並匯入適當的命名空間來設定您的開發環境。
-
-創建一個新的`Document`對象和關聯的`DocumentBuilder`目的。
-
-使用`DocumentBuilder`使用下列方法建立具有多層縮排的列表`ApplyNumberDefault()`若要套用預設清單編號格式，`Writeln()`和`Write()`將項目新增至清單中，以及`ListIndent()`增加每個等級的縮排。
-
-透過建立配置儲存選項`TxtSaveOptions`對象並設定屬性`ListIndentation.Count`每個等級的製表符數量以及`ListIndentation.Character`到`'\t'`使用製表符。
-
-使用儲存文檔`Save()`文件的方法指定輸出檔案的完整路徑和儲存選項。
-
-#### Q：是否可以自訂清單縮排每級的製表符數量？
-是的，您可以透過變更清單縮排的值來自訂每個層級的製表符字元數`ListIndentation.Count`財產在`TxtSaveOptions`班級。您可以指定每個縮排等級所需的製表符數量。
-
-#### Q：Aspose.Words for .NET 的清單縮排還可以使用哪些其他字元？
-除了製表符之外，您還可以使用 Aspose.Words for .NET 的其他字元進行清單縮排。您可以設定`ListIndentation.Character`屬性為任何所需的字符，例如空格（`' '`)，用於縮排列表。
-
-#### Q：Aspose.Words for .NET 是否提供任何其他管理清單的功能？
-是的，Aspose.Words for .NET 提供了許多用於管理 Word 文件中的清單的功能。您可以建立編號清單或項目符號清單、設定縮排等級、自訂清單樣式、新增清單項目等等。
+### 匯出為其他格式（例如 PDF 或 DOCX）時可以使用這些設定嗎？
+特定製表符設定適用於文字檔案。對於 PDF 或 DOCX 等格式，您需要調整這些格式中的格式選項。

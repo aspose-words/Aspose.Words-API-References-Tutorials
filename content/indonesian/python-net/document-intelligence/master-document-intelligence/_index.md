@@ -16,7 +16,7 @@ Kecerdasan dokumen mengacu pada proses mengekstraksi informasi berharga dari dok
 
 Python telah muncul sebagai bahasa pemrograman yang kuat dan serbaguna, menjadikannya pilihan populer untuk tugas intelijen dokumen. Kumpulan perpustakaan dan paketnya yang kaya, dikombinasikan dengan kesederhanaan dan keterbacaannya, menjadikan Python bahasa yang ideal untuk menangani tugas pemrosesan dokumen yang kompleks.
 
-## Memulai Aspose.Words untuk Python
+## Memulai dengan Aspose.Words untuk Python
 
 Aspose.Words adalah pustaka Python terkemuka yang menyediakan berbagai kemampuan pemrosesan dokumen. Untuk memulai, Anda perlu menginstal perpustakaan dan mengatur lingkungan Python Anda. Di bawah ini adalah kode sumber untuk menginstal Aspose.Words:
 

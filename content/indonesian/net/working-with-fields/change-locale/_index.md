@@ -2,20 +2,41 @@
 title: Ubah Lokal
 linktitle: Ubah Lokal
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengubah lokal untuk pemformatan tanggal dan angka di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengubah lokal di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan ini. Sempurna untuk menangani klien dan proyek internasional.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/change-locale/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses mengubah lokal di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengubah lokal, Anda dapat mengontrol format tanggal dan angka selama operasi gabungan surat. Kami akan memberi Anda kode sumber C# yang diperlukan dan petunjuk langkah demi langkah untuk mencapai hal ini.
+Bekerja dengan dokumen Word seringkali memerlukan sedikit kemahiran, terutama ketika berhadapan dengan lokasi dan budaya yang berbeda. Dalam tutorial ini, kita akan mempelajari cara mengubah lokal dokumen Word menggunakan Aspose.Words untuk .NET. Baik Anda membuat dokumen untuk audiens global atau hanya perlu mengubah format tanggal, panduan ini siap membantu Anda.
 
 ## Prasyarat
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
-- Aspose.Words untuk perpustakaan .NET diinstal pada sistem Anda.
 
-## Langkah 1: Buat Dokumen dan DocumentBuilder
-Untuk memulai, buat sebuah instance dari kelas Dokumen dan objek DocumentBuilder:
+Sebelum kita menyelami seluk beluknya, mari pastikan kita memiliki semua yang kita butuhkan:
+
+-  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Visual Studio: Versi apa pun yang mendukung kerangka .NET.
+- Pengetahuan Dasar C#: Pemahaman dasar-dasar C# dan .NET akan membantu Anda mengikutinya.
+
+ Pastikan Anda telah menginstal Aspose.Words untuk .NET. Jika belum, Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/) atau membelinya[Di Sini](https://purchase.aspose.com/buy).
+
+## Impor Namespace
+
+Sebelum kita memulai coding, kita perlu mengimpor namespace yang diperlukan. Ini seperti bahan-bahan dalam resep, memastikan semuanya berjalan lancar.
+
+```csharp
+using System.Globalization;
+using System.Threading;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Mengubah lokal di dokumen Word adalah proses yang mudah. Mari kita uraikan langkah demi langkah.
+
+## Langkah 1: Siapkan Dokumen Anda
+
+Hal pertama yang pertama, mari siapkan dokumen dan pembuat dokumen kita. Ini seperti menyiapkan ruang kerja Anda sebelum mulai memasak.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,91 +44,73 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Sisipkan Bidang
-Selanjutnya, masukkan bidang gabungan ke dalam dokumen menggunakan metode SisipkanField:
+## Langkah 2: Sisipkan Bidang Gabungan
+
+Sekarang, kita akan menyisipkan kolom gabungan untuk tanggal tersebut. Di sinilah peran lokal akan berperan.
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-Dalam kode di atas, kita menyisipkan kolom gabungan bernama "Tanggal" ke dalam dokumen.
+## Langkah 3: Simpan Budaya Saat Ini
 
-## Langkah 3: Ubah Lokal
-Untuk mengubah lokal format tanggal dan angka, Anda dapat mengubah budaya thread saat ini. Dalam contoh ini, kita akan menyetel lokal ke Jerman ("de-DE"):
+Sebelum kita mengubah lokal, kita perlu menyelamatkan budaya yang ada. Anggap saja ini sebagai menandai tempat Anda sebelum melanjutkan ke bab lain.
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+```
+
+## Langkah 4: Ubah Lokal
+
+Selanjutnya, kita akan mengubah budaya thread saat ini ke bahasa Jerman ("de-DE"). Ini seperti mengganti pengaturan bahasa di ponsel Anda.
+
+```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-Dalam kode di atas, kita menyimpan budaya saat ini dan kemudian mengatur budaya thread saat ini ke bahasa Jerman.
+## Langkah 5: Jalankan Penggabungan Surat
 
-## Langkah 4: Lakukan Penggabungan Surat
-Lakukan operasi gabungan surat dan berikan nilai tanggal untuk bidang "Tanggal":
+Sekarang, kami menjalankan gabungan surat dengan tanggal saat ini. Ini akan menerapkan lokal baru ke format tanggal.
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-Dalam cuplikan kode ini, kami menjalankan operasi gabungan surat dan memberikan tanggal saat ini sebagai nilai untuk bidang "Tanggal".
+## Langkah 6: Kembalikan Budaya Asli
 
-## Langkah 5: Kembalikan Lokal Asli
-Setelah gabungan surat selesai, kembalikan budaya asli untuk thread:
+Setelah menjalankan gabungan surat, kami akan mengembalikan budaya aslinya. Ini seperti beralih kembali ke pengaturan bahasa pilihan Anda.
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-Pada kode di atas, kami mengembalikan budaya asli thread.
+## Langkah 7: Simpan Dokumen
 
-## Langkah 6: Simpan Dokumen
-Simpan dokumen yang dimodifikasi ke file menggunakan metode Simpan dari kelas Dokumen:
+Terakhir, simpan dokumen ke direktori yang Anda tentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### Contoh Source Code untuk Mengubah Lokal menggunakan Aspose.Words for .NET
-Berikut kode sumber lengkap untuk mengubah lokal di dokumen Word menggunakan Aspose.Words for .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField("MERGEFIELD Date");
-
-CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
-
-doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
-
-Thread.CurrentThread.CurrentCulture = currentCulture;
-
-doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
-```
+Dan itu dia! Anda telah berhasil mengubah lokal di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
 
 ## Kesimpulan
-Selamat! Anda telah berhasil mempelajari cara mengubah lokal di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda kini dapat mengontrol format tanggal dan angka selama operasi gabungan surat. Sesuaikan lokal sesuai dengan kebutuhan Anda untuk memastikan pemformatan yang akurat dan konsisten dalam dokumen Anda.
 
-### FAQ
+Mengubah lokal di dokumen Word bisa sangat berguna, terutama ketika berhadapan dengan klien atau proyek internasional. Dengan Aspose.Words untuk .NET, tugas ini menjadi mudah. Ikuti langkah-langkah berikut, dan Anda akan dapat berpindah lokal dengan mudah.
 
-#### T: Apakah Aspose.Words kompatibel dengan versi Microsoft Word yang berbeda?
+## FAQ
 
-J: Ya, Aspose.Words kompatibel dengan berbagai versi Microsoft Word termasuk Word 2003, Word 2007, Word 2010, Word 2013, Word 2016, dan Word 2019.
+### Bisakah saya mengubah lokal ke bahasa apa pun?
+Ya, Aspose.Words untuk .NET mendukung perubahan lokal ke bahasa apa pun yang didukung oleh .NET.
 
-#### T: Apakah Aspose.Words mendukung struktur bidang yang kompleks?
+### Apakah ini akan mempengaruhi bagian lain dari dokumen saya?
+Mengubah lokal terutama akan memengaruhi format tanggal dan angka. Teks lainnya tidak akan berubah.
 
-J: Tentu saja! Aspose.Words menawarkan dukungan ekstensif untuk struktur bidang yang kompleks, termasuk bidang bertumpuk, penghitungan, dan ekspresi kondisional. Anda dapat menggunakan API canggih ini untuk bekerja dengan semua jenis struktur bidang.
+### Apakah saya memerlukan lisensi khusus untuk menggunakan Aspose.Words untuk .NET?
+ Anda dapat memulai dengan uji coba gratis, namun untuk terus menggunakannya, Anda harus membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
-#### T: Apakah Aspose.Words mendukung operasi pembaruan lapangan?
+### Bisakah saya kembali ke lokasi asli jika terjadi kesalahan?
+Ya, dengan menyelamatkan budaya asli dan mengembalikannya nanti, Anda bisa kembali ke lokasi aslinya.
 
-J: Ya, Aspose.Words memungkinkan Anda memperbarui bidang sesuai jadwal. Anda dapat dengan mudah memperbarui nilai bidang, menyegarkan perhitungan, dan melakukan operasi terkait bidang lainnya menggunakan API.
-
-#### T: Apakah mungkin untuk mengonversi kolom menjadi teks biasa menggunakan Aspose.Words?
-
-J: Tentu saja! Aspose.Words menyediakan metode untuk mengubah bidang menjadi teks biasa. Ini dapat berguna ketika Anda perlu mengekstraksi konten tanpa pemformatan atau fungsionalitas terkait bidang apa pun.
-
-#### T: Apakah mungkin membuat dokumen Word dengan bidang dinamis menggunakan Aspose.Words?
-
-J: Tentu saja! Aspose.Words menawarkan fungsionalitas yang kuat untuk menghasilkan dokumen Word dengan bidang dinamis. Anda dapat membuat templat dengan bidang yang telah ditentukan sebelumnya dan mengisinya dengan data secara dinamis, memberikan solusi yang fleksibel dan efisien untuk pembuatan dokumen.
+### Di mana saya bisa mendapatkan dukungan jika saya mengalami masalah?
+ Anda bisa mendapatkan dukungan dari komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).

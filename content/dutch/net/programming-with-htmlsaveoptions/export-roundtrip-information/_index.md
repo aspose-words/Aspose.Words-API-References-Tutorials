@@ -82,4 +82,4 @@ Ja, u kunt het gebruiken met een tijdelijke licentie die u kunt krijgen[hier](ht
  U kunt ondersteuning krijgen van de Aspose-gemeenschap[hier](https://forum.aspose.com/c/words/8).
 
 ### Is het mogelijk om de opmaak te behouden bij het converteren van Word-documenten naar HTML?
-Ja, door de eigenschap ExportRoundtripInformation in HtmlSaveOptions te gebruiken, kunt u alle opmaak behouden tijdens de conversie.
+Ja, door de eigenschap ExportRoundtripInformation in HtmlSaveOptions te gebruiken, kunt u alle opmaak tijdens de conversie behouden.

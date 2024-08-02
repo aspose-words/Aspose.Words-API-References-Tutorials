@@ -12,7 +12,7 @@ url: /ko/java/document-converting/exporting-documents-to-pdf/
 
 이 단계별 가이드에서는 Aspose.Words for Java를 사용하여 문서를 PDF로 내보내는 방법을 배웁니다. Aspose.Words for Java는 프로그래밍 방식으로 Word 문서 작업을 수행할 수 있는 강력한 API입니다. 보관, 공유 또는 인쇄 목적으로 Word 문서를 PDF로 변환해야 하는 경우 Aspose.Words는 프로세스를 단순화합니다. 자세한 내용을 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

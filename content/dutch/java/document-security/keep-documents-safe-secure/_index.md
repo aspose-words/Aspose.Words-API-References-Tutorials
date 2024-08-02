@@ -43,7 +43,7 @@ Voordat we verder gaan met documentbeveiliging, laten we eerst vertrouwd raken m
   Bezoek de[Aspose.Releases](https://releases.aspose.com/words/java/) en download de nieuwste versie van Aspose.Words voor Java.
 
 2. ### Installeer de bibliotheek:
- Zodra het downloaden is voltooid, volgt u de installatie-instructies om Aspose.Words in uw Java-project in te stellen.
+ Zodra de download is voltooid, volgt u de installatie-instructies om Aspose.Words in uw Java-project in te stellen.
 
 ## 4. Aspose.Words voor Java installeren
 

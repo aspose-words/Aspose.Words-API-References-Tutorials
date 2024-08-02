@@ -38,7 +38,7 @@ builder.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 doc.save("modified-document.docx");
 ```
 
- In dit voorbeeld laden we een Word-document, maken een`DocumentBuilder` en gebruik de`replace` methode om "oude tekst" te vinden en te vervangen door "nieuwe tekst" in het document.
+ In dit voorbeeld laden we een Word-document, maken we een`DocumentBuilder` en gebruik de`replace` methode om "oude tekst" te vinden en te vervangen door "nieuwe tekst" in het document.
 
 ## Reguliere expressies gebruiken
 
@@ -177,7 +177,7 @@ U kunt Aspose.Words gebruiken om wijzigingen in de kop- en voettekstvolgorde in 
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Haal het eerste gedeelte
+// Verkrijg het eerste gedeelte
 Section firstPageSection = doc.getFirstSection();
 
 // Maak een FindReplaceOptions-instantie en pas deze toe op het bereik van het document

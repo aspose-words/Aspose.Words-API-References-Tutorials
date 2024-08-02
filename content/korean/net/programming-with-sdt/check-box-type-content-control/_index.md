@@ -11,7 +11,7 @@ url: /ko/net/programming-with-sdt/check-box-type-content-control/
 
 .NET용 Aspose.Words를 사용하여 Word 문서에 확인란 유형 콘텐츠 컨트롤을 삽입하는 방법에 대한 최고의 가이드에 오신 것을 환영합니다! 문서 작성 프로세스를 자동화하고 확인란과 같은 대화형 요소를 추가하려는 경우 올바른 위치에 오셨습니다. 이 튜토리얼에서는 전제 조건부터 이 기능 구현에 대한 단계별 가이드까지 알아야 할 모든 것을 안내합니다. 이 기사를 마치면 .NET용 Aspose.Words를 사용하여 확인란을 사용하여 Word 문서를 향상시키는 방법을 명확하게 이해하게 될 것입니다.
 
-## 전제조건
+## 전제 조건
 
 코딩 부분을 살펴보기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
@@ -90,13 +90,13 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 라이브러리입니다.
 
 ### .NET용 Aspose.Words를 어떻게 설치하나요?
- Visual Studio의 NuGet 패키지 관리자를 통해 .NET용 Aspose.Words를 설치하거나 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+ Visual Studio의 NuGet 패키지 관리자를 통해 .NET용 Aspose.Words를 설치하거나 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 
 ### Aspose.Words를 사용하여 다른 유형의 콘텐츠 컨트롤을 추가할 수 있나요?
 예, Aspose.Words는 텍스트, 날짜 및 콤보 상자 컨트롤을 포함한 다양한 유형의 콘텐츠 컨트롤을 지원합니다.
 
 ### .NET용 Aspose.Words에 대한 무료 평가판이 있습니까?
- 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).
+ 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/).
 
 ### 문제가 발생하면 어디서 지원을 받을 수 있나요?
  당신은 방문 할 수 있습니다[Aspose 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.

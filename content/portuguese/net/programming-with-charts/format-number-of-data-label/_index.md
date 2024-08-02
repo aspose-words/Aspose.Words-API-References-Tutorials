@@ -9,7 +9,7 @@ url: /pt/net/programming-with-charts/format-number-of-data-label/
 ---
 ## Introdução
 
-A criação de documentos envolventes e informativos geralmente envolve a inclusão de gráficos com rótulos de dados bem formatados. Se você é um desenvolvedor .NET e deseja aprimorar seus documentos do Word com gráficos sofisticados, Aspose.Words for .NET é uma biblioteca fantástica para ajudá-lo a conseguir isso. Este tutorial irá guiá-lo através do processo de formatação de rótulos numéricos em um gráfico usando Aspose.Words for .NET, passo a passo.
+A criação de documentos envolventes e informativos geralmente envolve a inclusão de gráficos com rótulos de dados bem formatados. Se você é um desenvolvedor .NET que deseja aprimorar seus documentos do Word com gráficos sofisticados, Aspose.Words for .NET é uma biblioteca fantástica para ajudá-lo a conseguir isso. Este tutorial irá guiá-lo através do processo de formatação de rótulos numéricos em um gráfico usando Aspose.Words for .NET, passo a passo.
 
 ## Pré-requisitos
 

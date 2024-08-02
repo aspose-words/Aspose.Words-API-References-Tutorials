@@ -12,4 +12,4 @@ Procesamiento de palabras con marcas de agua es un recurso integral que lo guía
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Agregar marca de agua de texto con opciones específicas](./add-text-watermark-with-specific-options/) | Aprenda a agregar una marca de agua de texto con opciones específicas usando Aspose.Words para .NET. Guía paso por paso. |
+| [Agregar marca de agua de texto con opciones específicas](./add-text-watermark-with-specific-options/) | Aprenda cómo agregar una marca de agua de texto con opciones específicas a sus documentos de Word usando Aspose.Words para .NET. Personalice la fuente, el tamaño, el color y el diseño fácilmente. |

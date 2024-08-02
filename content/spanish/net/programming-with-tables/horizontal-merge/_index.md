@@ -2,90 +2,117 @@
 title: Fusión horizontal
 linktitle: Fusión horizontal
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo fusionar celdas horizontalmente en una tabla de Word con Aspose.Words para .NET.
+description: Aprenda cómo fusionar celdas horizontalmente en un documento de Word usando Aspose.Words para .NET con este tutorial detallado paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/horizontal-merge/
 ---
+## Introducción
 
-En este tutorial, aprenderemos cómo fusionar horizontalmente celdas en una tabla en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá fusionar celdas horizontalmente en sus tablas de Word mediante programación.
+¡Hola! ¿Listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy vamos a abordar una característica muy útil: la combinación horizontal de tablas. Esto puede sonar un poco técnico, pero no te preocupes, te cubro las espaldas. Al final de este tutorial, serás un profesional en la combinación de celdas en tus documentos de Word mediante programación. Entonces, ¡arremanguémonos y comencemos!
 
-## Paso 1: configuración del proyecto
-1. Inicie Visual Studio y cree un nuevo proyecto de C#.
-2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
+## Requisitos previos
 
-## Paso 2: crear el documento e inicializar el generador de documentos
-Para iniciar el procesamiento de palabras con la tabla y las celdas, necesitamos crear un nuevo documento e inicializar el generador de documentos. Sigue estos pasos:
+Antes de entrar en el meollo de la cuestión, hay algunas cosas que necesitará tener implementadas:
+
+1. Biblioteca Aspose.Words para .NET: si aún no lo ha hecho, descargue la biblioteca Aspose.Words para .NET. puedes agarrarlo[aquí](https://releases.aspose.com/words/net/).
+2. Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo adecuado, como Visual Studio.
+3. Conocimientos básicos de C#: Será beneficioso tener un conocimiento básico de la programación en C#.
+
+Una vez que los haya ordenado, ¡estará listo para comenzar!
+
+## Importar espacios de nombres
+
+Antes de profundizar en el código, asegurémonos de haber importado los espacios de nombres necesarios. En su proyecto C#, asegúrese de incluir:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Muy bien, analicemos el proceso de fusionar horizontalmente celdas de una tabla en un documento de Word usando Aspose.Words para .NET.
+
+## Paso 1: configurar su documento
+
+ Primero lo primero, necesitamos crear un nuevo documento de Word e inicializar el`DocumentBuilder`:
 
 ```csharp
 // Ruta a su directorio de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//Cree el documento e inicialice el generador de documentos.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
+ Este fragmento de código configura un nuevo documento y prepara el`DocumentBuilder` Para acción.
 
-## Paso 3: construir la tabla con combinación horizontal de celdas
-continuación, crearemos la tabla y aplicaremos la combinación de celdas horizontales utilizando las propiedades proporcionadas por Aspose.Words para .NET. Utilice el siguiente código:
+## Paso 2: insertar la primera celda
+
+A continuación, comenzamos insertando la primera celda y marcándola para fusión horizontal:
 
 ```csharp
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
-builder. InsertCell();
+```
+
+ Aquí, insertamos una nueva celda y configuramos su`HorizontalMerge`propiedad a`CellMerge.First`, lo que indica que esta celda es el comienzo de una secuencia de celdas fusionadas.
+
+## Paso 3: insertar la celda combinada
+
+Ahora, insertamos la celda que se fusionará con la anterior:
+
+```csharp
+builder.InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-// Esta celda está fusionada con la anterior y debe estar vacía.
-builder. EndRow();
+builder.EndRow();
+```
 
-builder. InsertCell();
+ Esta celda está configurada para fusionarse con la celda anterior usando`CellMerge.Previous` . Observe cómo terminamos la fila con`builder.EndRow()`.
+
+## Paso 4: insertar celdas no fusionadas
+
+Para ilustrar la diferencia, insertemos un par de celdas no fusionadas:
+
+```csharp
+builder.InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.None;
-builder.Write("Text in a cell.");
-builder. InsertCell();
+builder.Write("Text in one cell.");
+builder.InsertCell();
 builder.Write("Text in another cell.");
-builder. EndRow();
-builder. EndTable();
+builder.EndRow();
 ```
 
- Aquí utilizamos el generador de documentos para crear la tabla y establecer las propiedades de combinación horizontal de las celdas. Usamos el`HorizontalMerge` propiedad de la`CellFormat` objeto para especificar el tipo de combinación horizontal que se aplicará a cada celda. Usando`CellMerge.First` fusionamos la primera celda con la siguiente, mientras usamos`CellMerge.Previous` Fusionamos la celda actual con la celda anterior.`CellMerge.None` indica que la celda no debe fusionarse.
+Aquí, insertamos dos celdas sin fusión horizontal. Esto muestra cómo se comportan las celdas cuando no forman parte de una secuencia fusionada.
 
-## Paso 4: guardar el documento modificado
-Finalmente, debemos guardar el documento modificado con las celdas fusionadas horizontalmente. Utilice el siguiente código:
+## Paso 5: terminar la mesa
+
+Finalmente, finalizamos la tabla y guardamos el documento:
 
 ```csharp
-doc.Save(data
-
-Dir + "WorkingWithTables.HorizontalMerge.docx");
+builder.EndTable();
+doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
-
-### Código fuente de muestra para combinación horizontal usando Aspose.Words para .NET 
-
-```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.InsertCell();
-	builder.CellFormat.HorizontalMerge = CellMerge.First;
-	builder.Write("Text in merged cells.");
-	builder.InsertCell();
-	// Esta celda está fusionada con la anterior y debe estar vacía.
-	builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.HorizontalMerge = CellMerge.None;
-	builder.Write("Text in one cell.");
-	builder.InsertCell();
-	builder.Write("Text in another cell.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
-```
+Este fragmento de código completa la tabla y guarda el documento en el directorio especificado.
 
 ## Conclusión
-En este tutorial, aprendimos cómo fusionar horizontalmente celdas en una tabla en un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede aplicar la combinación de celdas horizontales en sus tablas de Word mediante programación. Esta función le permite crear diseños de tablas más complejos y organizar mejor sus datos.
+
+¡Y ahí lo tienes! Acaba de dominar el arte de fusionar celdas horizontalmente en un documento de Word usando Aspose.Words para .NET. Si sigue estos pasos, podrá crear estructuras de tablas complejas con facilidad. Continúe experimentando y explorando las capacidades de Aspose.Words para hacer que sus documentos sean tan dinámicos y flexibles como necesite. ¡Feliz codificación!
+
+## Preguntas frecuentes
+
+### ¿Qué es Aspose.Words para .NET?
+Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrolladores crear, editar y manipular documentos de Word mediante programación en aplicaciones .NET.
+
+### ¿Puedo fusionar celdas verticalmente con Aspose.Words para .NET?
+ Sí, también puedes fusionar celdas verticalmente usando el`CellFormat.VerticalMerge` propiedad.
+
+### ¿Aspose.Words para .NET es de uso gratuito?
+ Aspose.Words para .NET ofrece una prueba gratuita, pero para obtener una funcionalidad completa, deberá adquirir una licencia. Puedes obtener una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
+
+### ¿Cómo puedo obtener más información sobre Aspose.Words para .NET?
+ Puedes explorar la documentación detallada.[aquí](https://reference.aspose.com/words/net/).
+
+### ¿Dónde puedo obtener soporte para Aspose.Words para .NET?
+ Para cualquier consulta o problema, puede visitar el foro de soporte de Aspose.[aquí](https://forum.aspose.com/c/words/8).

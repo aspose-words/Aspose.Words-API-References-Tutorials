@@ -2,7 +2,7 @@
 title: スマートアートシェイプの検出
 linktitle: スマートアートシェイプの検出
 second_title: Aspose.Words ドキュメント処理 API
-description: この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を説明します。ドキュメント ワークフローの自動化に最適です。
+description: この包括的なガイドでは、Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を説明します。ドキュメント ワークフローの自動化に最適です。
 type: docs
 weight: 10
 url: /ja/net/programming-with-shapes/detect-smart-art-shape/
@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を学習しました。このチュートリアルでは、環境の設定、文書の読み込み、SmartArt 図形の検出、コードの実行について説明しました。Aspose.Words は幅広い機能を提供しているので、ぜひ詳細を確認してください。[APIドキュメント](https://reference.aspose.com/words/net/)その潜在能力を最大限に引き出すために。
+これで完了です。Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を学習しました。このチュートリアルでは、環境の設定、文書の読み込み、SmartArt 図形の検出、コードの実行について説明しました。Aspose.Words は幅広い機能を提供しているので、ぜひ試してみてください。[APIドキュメント](https://reference.aspose.com/words/net/)その潜在能力を最大限に引き出すために。
 
 ## よくある質問
 

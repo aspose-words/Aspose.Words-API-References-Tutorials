@@ -2,87 +2,131 @@
 title: Wijzig Vba-macro's van een Word-document
 linktitle: Wijzig Vba-macro's van een Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: In deze zelfstudie leert u hoe u VBA-macro's van een Word-document bewerkt met Aspose.Words voor .NET.
+description: Leer hoe u VBA-macro's in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding voor naadloze documentautomatisering!
 type: docs
 weight: 10
 url: /nl/net/working-with-vba-macros/modify-vba-macros/
 ---
-In deze zelfstudie leggen we uit hoe u VBA-macro's van een Word-document kunt wijzigen met behulp van de Aspose.Words-bibliotheek voor .NET. Door VBA-macro's te bewerken, kunt u bestaande VBA-code in uw Word-document bijwerken. We nemen u stap voor stap mee om u te helpen de code in uw .NET-project te begrijpen en te implementeren.
+## Invoering
+
+Hallo, mede-codeerders en liefhebbers van documentautomatisering! Ben je klaar om je Word-documentspel naar een hoger niveau te tillen? Vandaag duiken we in de fascinerende wereld van VBA-macro's (Visual Basic for Applications) in Word-documenten. We zullen specifiek onderzoeken hoe u bestaande VBA-macro's kunt wijzigen met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het gemakkelijk om taken te automatiseren, documenten aan te passen en zelfs die vervelende macro's aan te passen. Of u nu uw macro's wilt bijwerken of gewoon nieuwsgierig bent naar het proces, deze tutorial heeft de oplossing voor u. Dus laten we beginnen!
 
 ## Vereisten
-Zorg ervoor dat u over de volgende items beschikt voordat u begint:
-- Een praktische kennis van de programmeertaal C#
-- De Aspose.Words-bibliotheek voor .NET die in uw project is geïnstalleerd
-- Een Word-document met VBA-macro's die u wilt wijzigen
 
-## Stap 1: Definieer de documentmap
- Eerst moet u het mappad instellen op de locatie van uw Word-document. Vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad.
+Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+
+1.  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat u de nieuwste versie van Aspose.Words voor .NET hebt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een .NET-ontwikkelomgeving zoals Visual Studio is essentieel voor het schrijven en testen van uw code.
+3. Basiskennis van C#: Een basiskennis van C# helpt u de codefragmenten te volgen.
+4.  Voorbeeld van een Word-document: Heb een[Word document](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) met bestaande VBA-macro's gereed. Dit zal ons proefpersoon zijn voor het aanpassen van de macro's.
+
+## Naamruimten importeren
+
+Om de functies van Aspose.Words te gebruiken, moet u de benodigde naamruimten importeren. Deze omvatten klassen en methoden voor het omgaan met Word-documenten en VBA-projecten.
+
+Hier is de code om ze te importeren:
 
 ```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Vba;
 ```
 
-## Stap 2: Laad het document met de VBA-macro's
-Vervolgens laden we het Word-document met de VBA-macro's die we willen wijzigen.
+Deze naamruimten bieden alle tools die we nodig hebben om met Word-documenten en VBA-macro's te werken.
+
+## Stap 1: Uw documentenmap instellen
+
+Eerst moeten we het pad naar uw documentmap definiëren. Deze map zal de locatie zijn waar uw Word-documenten worden opgeslagen en waar we ons gewijzigde document zullen opslaan.
+
+### Het pad definiëren
+
+Stel het pad naar uw map als volgt in:
 
 ```csharp
-// Laad het document met de VBA-macro's
-Document doc = new Document(dataDir + "VBA project.docm");
-VbaProject project = doc.VbaProject;
-```
-
-## Stap 3: Wijzig de macrobroncode
-We gaan nu de broncode van de eerste macro van het VBA-project aanpassen. Vervang de`newSourceCode` variabele met de nieuwe broncode die u wilt gebruiken.
-
-```csharp
-const string newSourceCode = "Test change source code";
-project.Modules[0].SourceCode = newSourceCode;
-```
-
-## Stap 4: Sla het gewijzigde document op
-Ten slotte slaan we het gewijzigde document met de bijgewerkte VBA-macro's op in een bestand.
-
-```csharp
-doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
-```
-
-### Voorbeeldbroncode voor het wijzigen van Vba-macro's met Aspose.Words voor .NET
- 
-```csharp
-
-// Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "VBA project.docm");
-VbaProject project = doc.VbaProject;
-const string newSourceCode = "Test change source code";
-project.Modules[0].SourceCode = newSourceCode;
-doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
-
 ```
+
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw Word-documenten zich bevinden. Deze map zal onze werkruimte zijn voor de zelfstudie.
+
+## Stap 2: Het Word-document laden
+
+Nu onze map is ingesteld, is de volgende stap het laden van het Word-document dat de VBA-macro's bevat die u wilt wijzigen. Dit document zal dienen als bron voor onze wijzigingen.
+
+### Het document laden
+
+Zo laadt u uw document:
+
+```csharp
+Document doc = new Document(dataDir + "VBA project.docm");
+```
+
+ Deze regel laadt het Word-document met de naam "VBA project.docm" vanuit de door u opgegeven map naar het`doc` voorwerp.
+
+## Stap 3: Toegang tot het VBA-project
+
+Nu we ons document hebben geladen, is de volgende stap het openen van het VBA-project binnen het document. Het VBA-project bevat alle macro's en modules die we kunnen aanpassen.
+
+### Het VBA-project verkrijgen
+
+Laten we het VBA-project als volgt openen:
+
+```csharp
+VbaProject project = doc.VbaProject;
+```
+
+ Deze regel haalt het VBA-project op uit het geladen document en slaat het op in de`project` variabel.
+
+## Stap 4: De VBA-macro wijzigen
+
+Met toegang tot het VBA-project kunnen we nu de bestaande VBA-macro's wijzigen. In dit voorbeeld wijzigen we de broncode van de eerste module in het project.
+
+### De macrocode wijzigen
+
+Zo wijzigt u de macro:
+
+```csharp
+const string newSourceCode = "Sub TestChange()\nMsgBox \"Source code changed!\"\nEnd Sub";
+project.Modules[0].SourceCode = newSourceCode;
+```
+
+In deze regels:
+- We definiëren een nieuwe macrobroncode als een constante tekenreeks. Deze code geeft een berichtvenster weer met de tekst: "Broncode gewijzigd!"
+-  Vervolgens stellen wij de`SourceCode` eigenschap van de eerste module in het project naar de nieuwe code.
+
+## Stap 5: Het gewijzigde document opslaan
+
+Na het wijzigen van de VBA-macro is de laatste stap het opslaan van het document. Dit zorgt ervoor dat al uw wijzigingen behouden blijven en dat de nieuwe macrocode in het document wordt opgeslagen.
+
+### Het document opslaan
+
+Hier is de code om uw gewijzigde document op te slaan:
+
+```csharp
+doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
+```
+
+Deze regel slaat het document met de gewijzigde VBA-macro op als "WorkingWithVba.ModifyVbaMacros.docm" in de door u opgegeven map.
 
 ## Conclusie
-In deze zelfstudie hebben we gezien hoe u VBA-macro's in een Word-document kunt bewerken met Aspose.Words voor .NET. Door VBA-macro's te bewerken, kunt u bestaande VBA-code in uw document bijwerken om wijzigingen of verbeteringen aan te brengen. U kunt deze functie gerust gebruiken om uw Word-documenten verder aan te passen en te automatiseren.
 
-### Veelgestelde vragen
+En daar heb je het! U hebt met succes VBA-macro's in een Word-document gewijzigd met Aspose.Words voor .NET. Deze tutorial behandelde alles, van het laden van uw document en toegang tot het VBA-project tot het wijzigen van de macrocode en het opslaan van het gewijzigde document. Met Aspose.Words kunt u eenvoudig taken automatiseren, uw documenten aanpassen en zelfs met VBA-macro's spelen om aan uw behoeften te voldoen.
 
-#### Vraag: Wat is een VBA-macro in een Word-document?
+ Als je meer wilt ontdekken, kun je terecht bij de[API-documentatie](https://reference.aspose.com/words/net/) is een fantastische hulpbron. En als je ooit een probleem tegenkomt, de[Helpforum](https://forum.aspose.com/c/words/8) staat altijd klaar om u te helpen.
 
-A: Een VBA-macro in een Word-document is een stukje code dat kan worden uitgevoerd om specifieke acties in het document uit te voeren. Met VBA-macro's kunt u taken automatiseren, aangepaste functionaliteit toevoegen en communiceren met documentinhoud.
+Veel codeerplezier, en onthoud: de sky is the limit als het gaat om het automatiseren van uw Word-documenten!
 
-#### Vraag: Wat zijn de vereisten voor het bewerken van VBA-macro's in een Word-document?
+## Veelgestelde vragen
 
-A: Voordat u VBA-macro's in een Word-document kunt bewerken, moet u praktische kennis hebben van de programmeertaal C#. U moet ook de Aspose.Words voor .NET-bibliotheek in uw project installeren. U hebt ook een Word-document nodig met de VBA-macro's die u wilt wijzigen.
+### Wat is Aspose.Words voor .NET?  
+Aspose.Words voor .NET is een uitgebreide bibliotheek waarmee ontwikkelaars Word-documenten in .NET-toepassingen kunnen maken, bewerken en manipuleren. Het is perfect voor het automatiseren van documentworkflows, inclusief het werken met VBA-macro's.
 
-#### Vraag: Hoe kan ik de documentmap in de code instellen?
+### Kan ik VBA-macro's in Word-documenten wijzigen met Aspose.Words?  
+Ja, Aspose.Words biedt de functionaliteit voor het openen en wijzigen van VBA-macro's in Word-documenten. U kunt de macrocode wijzigen, nieuwe modules toevoegen en meer.
 
- A: In de verstrekte code moet u vervangen`"YOUR DOCUMENTS DIRECTORY"` met het juiste pad naar de map waar uw Word-document met de VBA-macro's zich bevindt.
+### Hoe test ik mijn aangepaste VBA-macro's?  
+Om uw gewijzigde VBA-macro's te testen, opent u het opgeslagen Word-document in Microsoft Word, gaat u naar het tabblad Ontwikkelaar en voert u de macro's uit. U kunt ze ook rechtstreeks in de VBA-editor debuggen.
 
-#### Vraag: Hoe specificeer ik de nieuwe broncode van de macro die moet worden gewijzigd?
+### Wat gebeurt er als ik een document opsla zonder macro's in te schakelen?  
+Als u een Word-document opslaat met VBA-macro's zonder deze in te schakelen, worden de macro's niet uitgevoerd. Zorg ervoor dat u het document opslaat in een indeling waarin macro's mogelijk zijn (.docm) en schakel macro's in de Word-instellingen in.
 
- A: Om de nieuwe broncode op te geven van de macro die u wilt wijzigen, kunt u de`SourceCode` eigendom van de corresponderende`VbaModule` object door er een tekenreeks aan toe te wijzen die de nieuwe VBA-code bevat.
-
-#### Vraag: Kan ik meerdere VBA-macro's tegelijk in een Word-document bewerken?
-
- A: Ja, u kunt meerdere VBA-macro's in een Word-document wijzigen door een lus te gebruiken of rechtstreeks toegang te krijgen tot de overeenkomstige`VbaModule` voorwerpen in de`Modules` verzameling van de`VbaProject` voorwerp. Hierdoor kunt u meerdere VBA-macro's tegelijkertijd in één handeling bijwerken.
+### Waar kan ik Aspose.Words voor .NET kopen?  
+ U kunt Aspose.Words voor .NET kopen bij de[aankooppagina](https://purchase.aspose.com/buy).

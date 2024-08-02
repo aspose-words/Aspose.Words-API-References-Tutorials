@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/remove-content/remove-table-of-contents/
 ---
-## 使用 Aspose.Words for .NET 刪除 Word 文件中的目錄
+## 介紹
 
 您是否厭倦了處理 Word 文件中不需要的目錄 (TOC)？我們都經歷過這樣的情況——有時 TOC 是不必要的。幸運的是，Aspose.Words for .NET 可以輕鬆地以程式設計方式刪除 TOC。在本教程中，我將逐步指導您完成該過程，以便您可以立即掌握它。讓我們開始吧！
 
@@ -83,22 +83,22 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## 常見問題解答
 
-### 1. 什麼是 Aspose.Words for .NET？
+### 什麼是 Aspose.Words for .NET？
 
-Aspose.Words for .NET 是一個用於文件操作的強大 .NET 函式庫，可讓開發人員以程式設計方式建立、修改和轉換 Word 文件。
+Aspose.Words for .NET 是一個強大的 .NET 文件操作庫，可讓開發人員以程式設計方式建立、修改和轉換 Word 文件。
 
-### 2. 我可以免費使用Aspose.Words嗎？
+### 我可以免費使用 Aspose.Words 嗎？
 
 是的，您可以將 Aspose.Words 與[免費試用](https://releases.aspose.com/)或得到一個[臨時執照](https://purchase.aspose.com/temporary-license/).
 
-### 3. 是否可以使用Aspose.Words刪除其他欄位？
+### 是否可以使用 Aspose.Words 刪除其他欄位？
 
 絕對地！您可以透過在篩選條件中指定其類型來刪除任何欄位。
 
-### 4. 我需要 Visual Studio 才能使用 Aspose.Words 嗎？
+### 我需要 Visual Studio 才能使用 Aspose.Words 嗎？
 
 雖然強烈建議使用 Visual Studio 來簡化開發，但您可以使用任何支援 .NET 的 IDE。
 
-### 5. 在哪裡可以找到有關 Aspose.Words 的更多資訊？
+### 在哪裡可以找到有關 Aspose.Words 的更多資訊？
 
 如需更詳細的文檔，請訪問[Aspose.Words for .NET API 文檔](https://reference.aspose.com/words/net/).

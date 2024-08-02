@@ -16,6 +16,6 @@ Pomocí Aspose.Words můžete efektivně automatizovat úlohy zpracování dokum
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Detekce číslování s mezerami](./detect-numbering-with-whitespaces/) | Zjistěte, jak v Aspose.Words for .NET zjistit čísla seznamů s prázdnými znaky. Snadno vylepšete strukturu svých dokumentů. |
-| [Zpracovat možnosti prostorů](./handle-spaces-options/) | Naučte se spravovat prostory v dokumentech TXT pomocí Aspose.Words pro .NET. Odstraňte zbytečné mezery a zlepšujte čitelnost. |
-| [Směr textu dokumentu](./document-text-direction/) | Naučte se, jak určit směr textu v dokumentech pomocí Aspose.Words for .NET. Vylepšete zobrazení pro jazyky se zápisem zprava doleva. Získejte přístup k úplnému tutoriálu nyní. |
+| [Detekce číslování s mezerami](./detect-numbering-with-whitespaces/) | Zjistěte, jak používat Aspose.Words for .NET k detekci číslování s mezerami v dokumentech s prostým textem a zajistit, aby byly vaše seznamy správně rozpoznány. |
+| [Zpracovat možnosti prostorů](./handle-spaces-options/) | Naučte se, jak zacházet s úvodními a koncovými mezerami v textových dokumentech pomocí Aspose.Words pro .NET. Tento tutoriál poskytuje návod, jak vyčistit formátování textu. |
+| [Směr textu dokumentu](./document-text-direction/) | Naučte se, jak nastavit směr textu dokumentu ve Wordu pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce. Perfektní pro práci s jazyky psanými zprava doleva. |

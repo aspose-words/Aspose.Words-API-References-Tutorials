@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /id/net/working-with-fields/delete-fields/
 ---
-
 ## Perkenalan
 
 Di bidang pemrosesan dan otomatisasi dokumen, Aspose.Words untuk .NET menonjol sebagai perangkat canggih bagi pengembang yang ingin memanipulasi, membuat, dan mengelola dokumen Word secara terprogram. Tutorial ini bertujuan untuk memandu Anda melalui proses penggunaan Aspose.Words untuk .NET untuk menghapus bidang dalam dokumen Word. Baik Anda seorang pengembang berpengalaman atau baru memulai pengembangan .NET, panduan ini akan menguraikan langkah-langkah yang diperlukan untuk menghapus bidang dari dokumen Anda secara efektif menggunakan contoh dan penjelasan yang jelas dan ringkas.
@@ -44,13 +43,13 @@ Pastikan Anda memiliki proyek C# baru atau yang sudah ada di Visual Studio tempa
 ## Langkah 2: Tambahkan Referensi Aspose.Words
 
 Jika Anda belum melakukannya, tambahkan referensi ke Aspose.Words di proyek Visual Studio Anda. Anda dapat melakukannya dengan:
-   - Klik kanan pada proyek Anda di Solution Explorer.
-   - Memilih "Kelola Paket NuGet..."
-   - Mencari "Aspose.Words" dan menginstalnya ke proyek Anda.
+- Klik kanan pada proyek Anda di Solution Explorer.
+- Memilih "Kelola Paket NuGet..."
+- Mencari "Aspose.Words" dan menginstalnya ke proyek Anda.
 
 ## Langkah 3: Siapkan Dokumen Anda
 
- Tempatkan dokumen yang ingin Anda modifikasi (misalnya,`your-document.docx`) di direktori proyek Anda atau berikan jalur lengkap ke direktori tersebut.
+ Tempatkan dokumen yang ingin Anda modifikasi (misalnya,`your-document.docx`di direktori proyek Anda atau berikan jalur lengkap ke direktori tersebut.
 
 ## Langkah 4: Inisialisasi Objek Dokumen Aspose.Words
 
@@ -89,16 +88,16 @@ Kesimpulannya, tutorial ini telah memberikan panduan komprehensif tentang cara m
 ## FAQ
 
 ### Bisakah saya menghapus jenis bidang tertentu, bukan semua bidang?
-   - Ya, Anda dapat mengubah kondisi perulangan untuk memeriksa jenis bidang tertentu sebelum menghapusnya.
+Ya, Anda dapat mengubah kondisi perulangan untuk memeriksa jenis bidang tertentu sebelum menghapusnya.
 
 ### Apakah Aspose.Words kompatibel dengan .NET Core?
-   - Ya, Aspose.Words mendukung .NET Core, memungkinkan Anda menggunakannya dalam aplikasi lintas platform.
+Ya, Aspose.Words mendukung .NET Core, memungkinkan Anda menggunakannya dalam aplikasi lintas platform.
 
 ### Bagaimana cara menangani kesalahan saat memproses dokumen dengan Aspose.Words?
-   - Anda dapat menggunakan blok coba-tangkap untuk menangani pengecualian yang mungkin terjadi selama operasi pemrosesan dokumen.
+Anda dapat menggunakan blok coba-tangkap untuk menangani pengecualian yang mungkin terjadi selama operasi pemrosesan dokumen.
 
 ### Bisakah saya menghapus kolom tanpa mengubah konten lain di dokumen?
-   - Ya, metode yang ditampilkan di sini secara khusus hanya menargetkan bidang dan tidak mengubah konten lainnya.
+Ya, metode yang ditampilkan di sini secara khusus hanya menargetkan bidang dan tidak mengubah konten lainnya.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk Aspose.Words?
-   -  Mengunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/) dan itu[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8) untuk bantuan selanjutnya.
+ Mengunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/) dan itu[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8) untuk bantuan selanjutnya.

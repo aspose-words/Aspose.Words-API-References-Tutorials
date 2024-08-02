@@ -34,7 +34,7 @@ Hãy chia quá trình thành các bước đơn giản. Mỗi bước sẽ đư�
 
 ## Bước 1: Khởi tạo tài liệu
 
-Bước đầu tiên là khởi tạo một tài liệu mới và một đối tượng DocumentBuilder. Lớp DocumentBuilder cho phép bạn xây dựng và thao tác với tài liệu.
+Bước đầu tiên là khởi tạo một tài liệu mới và đối tượng DocumentBuilder. Lớp DocumentBuilder cho phép bạn xây dựng và thao tác với tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.

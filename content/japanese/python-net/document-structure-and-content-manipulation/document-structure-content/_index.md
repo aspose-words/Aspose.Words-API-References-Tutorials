@@ -204,7 +204,7 @@ pip install aspose-words
 
 ### Aspose.Words Python 機能の詳細情報はどこで入手できますか?
 
-Aspose.Words Python機能に関する包括的な情報については、[ドキュメンテーション](https://reference.aspose.com/words/python-net/).
+ Aspose.Words Python機能に関する包括的な情報については、[ドキュメンテーション](https://reference.aspose.com/words/python-net/).
 
 ### Aspose.Words を使用してドキュメントを PDF 形式で保存するにはどうすればよいですか?
 

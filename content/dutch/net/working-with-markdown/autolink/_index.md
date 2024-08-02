@@ -45,7 +45,7 @@ Ten slotte kunnen we het document in het gewenste formaat opslaan.
 // Gebruik een documentbuilder om inhoud aan het document toe te voegen.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Voeg hyperlink in.
+// Voeg hyperlink in.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ Gefeliciteerd! U hebt nu geleerd hoe u de functie "Autolink" kunt gebruiken met 
 
 #### Vraag: Is het mogelijk om de weergavetekst van een automatische link in Aspose.Words aan te passen?
 
- A: Ja, u kunt de weergavetekst van een automatische link in Aspose.Words aanpassen. In plaats van het URL-adres als weergavetekst te gebruiken, kunt u elke andere tekst gebruiken door de inhoud tussen de`<a>` labels. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com">Click here</a>` om de tekst "Klik hier" als automatische link weer te geven.
+ A: Ja, u kunt de weergavetekst van een automatische link in Aspose.Words aanpassen. In plaats van het URL-adres als weergavetekst te gebruiken, kunt u elke andere tekst gebruiken door de inhoud tussen de`<a>` labels. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com">Click here</a>`om de tekst "Klik hier" als automatische link weer te geven.
 
 #### Vraag: Hoe kan ik extra attributen toevoegen aan een autolink in Aspose.Words?
 
-A: Om extra attributen toe te voegen aan een automatische link in Aspose.Words, kunt u extra HTML-attributen gebruiken in de`<a>` label. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com" target="_blank">Link</a>` om de link in een nieuw venster of tabblad te openen met behulp van de` attribute target="_blank"`.
+ A: Om extra attributen toe te voegen aan een automatische link in Aspose.Words, kunt u extra HTML-attributen gebruiken in de`<a>` label. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com" target="_blank">Link</a>` om de link in een nieuw venster of tabblad te openen met behulp van de` attribute target="_blank"`.

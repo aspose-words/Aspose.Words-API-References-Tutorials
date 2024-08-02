@@ -11,11 +11,11 @@ url: /ko/net/programming-with-pdfsaveoptions/image-compression/
 
 오늘날의 디지털 시대에 문서 크기 관리는 성능과 저장 효율성 모두에 매우 중요합니다. 대규모 보고서를 처리하든 복잡한 프레젠테이션을 처리하든 품질을 저하시키지 않으면서 파일 크기를 줄이는 것이 필수적입니다. PDF 문서의 이미지 압축은 이러한 목표를 달성하기 위한 핵심 기술입니다. .NET용 Aspose.Words를 사용하고 있다면 행운이 따릅니다! 이 튜토리얼은 .NET용 Aspose.Words를 사용하여 PDF 문서의 이미지를 압축하는 과정을 안내합니다. 다양한 압축 옵션과 이를 효과적으로 적용하여 PDF가 품질과 크기 모두에 최적화되도록 하는 방법을 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
-1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 
 2. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 이 자습서에서 제공되는 코드 예제를 이해하는 데 도움이 됩니다.
 

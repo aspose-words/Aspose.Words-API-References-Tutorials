@@ -10,7 +10,7 @@ url: /ko/net/programming-with-tables/insert-table-directly/
 ## 소개
 프로그래밍 방식으로 테이블을 만드는 것은 특히 복잡한 문서 구조를 처리할 때 상당히 어려울 수 있습니다. 하지만 걱정하지 마세요. 저희가 여러분을 위해 문제를 해결해 드리겠습니다! 이 가이드에서는 Aspose.Words for .NET을 사용하여 Word 문서에 직접 표를 삽입하는 단계를 안내합니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼은 프로세스를 쉽게 익히는 데 도움이 될 것입니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하십시오. 간단한 체크리스트는 다음과 같습니다.
 
@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
- 이 코드는 새 Word 문서를 초기화합니다. 교체하셔야 합니다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+ 이 코드는 새 Word 문서를 초기화합니다. 교체하셔야 합니다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
 
 ## 2단계: 테이블 개체 생성
 
@@ -100,7 +100,7 @@ row.AppendChild(cell);
 
 ```csharp
 // 그런 다음 테이블의 다른 셀과 행에 대해 프로세스를 반복합니다.
-// 기존 셀과 행을 복제하여 작업 속도를 높일 수도 있습니다.
+//기존 셀과 행을 복제하여 작업 속도를 높일 수도 있습니다.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
  예, 요청하실 수 있습니다[무료 시험판](https://releases.aspose.com/) 구매하기 전에 라이브러리를 평가하십시오.
 
 ### .NET용 Aspose.Words를 어떻게 구매하나요?
- .NET용 Aspose.Words를 다음에서 구입할 수 있습니다.[구매 페이지](https://purchase.aspose.com/buy).
+.NET용 Aspose.Words를 다음에서 구입할 수 있습니다.[구매 페이지](https://purchase.aspose.com/buy).
 
 ### .NET용 Aspose.Words에 대한 설명서는 어디서 찾을 수 있나요?
  문서를 사용할 수 있습니다[여기](https://reference.aspose.com/words/net/).

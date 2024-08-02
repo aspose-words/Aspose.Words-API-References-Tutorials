@@ -114,7 +114,7 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 
 ### 8.1 Egyedi szakaszok felosztása külön dokumentumokra
 
-Bizonyos esetekben előfordulhat, hogy csak bizonyos szakaszokat kíván külön dokumentumokra felosztani. Az Aspose.Words for Java lehetővé teszi, hogy egyéni feltételeket határozzon meg a felosztandó szakaszok meghatározásához.
+Bizonyos esetekben előfordulhat, hogy csak bizonyos szakaszokat szeretne külön dokumentumokra felosztani. Az Aspose.Words for Java lehetővé teszi, hogy egyéni feltételeket határozzon meg a felosztandó szakaszok meghatározásához.
 
 ## 8.2 Dokumentumok felosztása egyéni kritériumok alapján
 

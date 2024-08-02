@@ -2,99 +2,112 @@
 title: ドキュメント ビルダーなしでテキストを含むフィールドを挿入する
 linktitle: ドキュメント ビルダーを使用せずに FieldIncludeText を挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書に FieldIncludeText フィールドを挿入する方法を学習します。
+description: 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET で DocumentBuilder を使用せずに FieldIncludeText を挿入する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## 導入
 
-ここでは、Aspose.Words for .NET の「FieldIncludeText フィールドの挿入」機能を使用する以下の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。目的の結果を得るには、各手順を慎重に実行してください。
+ドキュメントの自動化と操作の世界では、Aspose.Words for .NET は強力なツールとして知られています。今日は、DocumentBuilder を使用せずに FieldIncludeText を挿入する方法について、詳細なガイドを紹介します。このチュートリアルでは、プロセスをステップごとに説明し、コードの各部分とその目的を理解できるようにします。
 
-## ステップ1: ドキュメントディレクトリの設定
+## 前提条件
 
-提供されたコードでは、ドキュメントのディレクトリを指定する必要があります。値「YOUR DOCUMENT DIRECTORY」をドキュメント ディレクトリへの適切なパスに置き換えます。
+コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。ダウンロードはこちらからできます。[ここ](https://releases.aspose.com/words/net/).
+2. .NET 開発環境: Visual Studio などの .NET 互換 IDE。
+3. C# の基礎知識: C# プログラミングの知識があると、理解しやすくなります。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートする必要があります。これらの名前空間は、Word 文書の操作に必要なクラスとメソッドへのアクセスを提供します。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+それでは、例を複数のステップに分解してみましょう。わかりやすくするために、各ステップを詳しく説明します。
+
+## ステップ1: ディレクトリパスを設定する
+
+最初のステップは、ドキュメント ディレクトリへのパスを定義することです。これは、Word ドキュメントが保存され、アクセスされる場所です。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ステップ2: 文書と段落を作成する
 
-まず、新しいドキュメントを作成し、段落を初期化します。
+次に、新しいドキュメントを作成し、そのドキュメント内に段落を作成します。この段落には FieldIncludeText フィールドが含まれます。
 
 ```csharp
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-```
-
-## ステップ3: FieldIncludeTextフィールドを挿入する
-
-私たちは`AppendField()`段落に FieldIncludeText フィールドを挿入するメソッド。
-
-```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
-```
-
-次に、ブックマークの名前とソース ファイルの名前を指定して、FieldIncludeText フィールドのプロパティを構成します。
-
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
-
-次に、ドキュメントの本文に段落を追加します。
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-最後に、`Update()`フィールドを更新するメソッド。
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### Aspose.Words for .NET を使用して FieldIncludeText フィールドを挿入するためのソース コードの例
-
-```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
 //ドキュメントと段落を作成します。
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
+```
 
+## ステップ3: フィールドを挿入するテキストフィールドを含める
+
+ここで、FieldIncludeText フィールドを段落に挿入します。このフィールドを使用すると、別のドキュメントのテキストを含めることができます。
+
+```csharp
 // FieldIncludeText フィールドを挿入します。
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## ステップ4: フィールドプロパティを設定する
+
+FieldIncludeText フィールドのプロパティを指定する必要があります。これには、ブックマーク名とソース ドキュメントの完全なパスの設定が含まれます。
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## ステップ5: 文書に段落を追加する
+
+フィールドを設定したら、ドキュメントの最初のセクション本体に段落を追加します。
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## ステップ6: フィールドの更新
+
+ドキュメントを保存する前に、FieldIncludeText を更新して、ソース ドキュメントから正しいコンテンツが取得されるようにする必要があります。
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## ステップ7: ドキュメントを保存する
+
+最後に、ドキュメントを指定されたディレクトリに保存します。
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-この例では、新しいドキュメントを作成し、段落を初期化し、ブックマーク名とソース ファイル名を指定する FieldIncludeTexten を挿入し、指定されたファイル名でドキュメントを保存しました。
+## 結論
 
-これで、Aspose.Words for .NET の「FieldIncludeText の挿入」機能の使用に関するガイドは終了です。
+これで完了です。これらの手順に従うと、Aspose.Words for .NET で DocumentBuilder を使用せずに FieldIncludeText を簡単に挿入できます。このアプローチにより、あるドキュメントのコンテンツを別のドキュメントに組み込むための効率的な方法が提供され、ドキュメントの自動化タスクが大幅に簡素化されます。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET のテキスト包含フィールドのソース ファイルを指定するにはどうすればよいですか?
+### Aspose.Words for .NET とは何ですか?  
+Aspose.Words for .NET は、.NET アプリケーションで Word 文書を操作するための強力なライブラリです。プログラムで文書を作成、編集、変換できます。
 
- A: Aspose.Words for .NETのテキスト包含フィールドのソースファイルを指定するには、`FieldIncludeText.SourceFullName`プロパティを使用して、ソース ファイルの完全なパスを設定します。ソース ファイルがアクセス可能であり、テキスト包含フィールドに含めるコンテンツが含まれていることを確認します。
+### FieldIncludeText を使用する理由は何ですか?  
+FieldIncludeText は、あるドキュメントのコンテンツを別のドキュメントに動的に含め、よりモジュール化され保守しやすいドキュメントを作成するのに役立ちます。
 
-#### Q: Aspose.Words for .NET のテキスト包含フィールドにマクロからのテキストを含めることはできますか?
+### この方法を使用して、他のファイル形式のテキストを含めることはできますか?  
+FieldIncludeText は、特に Word 文書で機能します。他の形式では、Aspose.Words によって提供される別のメソッドまたはクラスが必要になる場合があります。
 
- A: はい、Aspose.Words for .NETのテキスト挿入フィールドにマクロのテキストを挿入することができます。`FieldIncludeText.IncludeText`フィールドに含める内容のマクロの名前を指定するプロパティ。
+### Aspose.Words for .NET は .NET Core と互換性がありますか?  
+はい、Aspose.Words for .NET は .NET Framework、.NET Core、.NET 5/6 をサポートしています。
 
-#### Q: ドキュメント ビルダーを使用せずにテキスト インクルード フィールドを挿入すると、Aspose.Words for .NET を使用した Word ドキュメントの構造に影響しますか?
-
-A: ドキュメント ビルダーを使用せずにテキスト インクルード フィールドを挿入しても、Word ドキュメントの構造に直接影響はありません。ただし、ドキュメント コンテンツに新しいフィールド要素が追加されます。必要に応じて既存の要素を追加、削除、または変更することで、ドキュメント構造を操作できます。
-
-#### Q: Aspose.Words for .NET を使用して Word 文書内のテキスト包含フィールドの外観をカスタマイズできますか?
-
-A: テキスト挿入フィールドは、Word 文書内での外観を直接カスタマイズするものではありません。ただし、段落プロパティ、フォント プロパティ、および Aspose.Words for .NET で使用できるその他の書式設定オブジェクトを使用して、挿入テキストを書式設定できます。
+### Aspose.Words for .NET の無料試用版を入手するにはどうすればいいですか?  
+無料トライアルはこちらから[ここ](https://releases.aspose.com/).

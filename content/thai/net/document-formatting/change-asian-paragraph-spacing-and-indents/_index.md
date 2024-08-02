@@ -99,7 +99,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 ### ฉันต้องมีใบอนุญาตเพื่อใช้ Aspose.Words สำหรับ .NET หรือไม่
  ใช่ Aspose.Words สำหรับ .NET เป็นไลบรารีแบบชำระเงิน แต่คุณสามารถรับ[ทดลองฟรี](https://releases.aspose.com/) หรือก[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อลองดู
 
-### ฉันจะหาเอกสารเพิ่มเติมได้ที่ไหน?
+### ฉันจะหาเอกสารเพิ่มเติมได้จากที่ไหน?
  คุณสามารถค้นหาเอกสารที่ครอบคลุมได้ที่[หน้าเอกสาร Aspose.Words สำหรับ .NET](https://reference.aspose.com/words/net/).
 
 ### ฉันสามารถทำให้กระบวนการนี้เป็นอัตโนมัติสำหรับเอกสารหลายฉบับได้หรือไม่

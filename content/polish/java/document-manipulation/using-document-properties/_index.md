@@ -53,7 +53,7 @@ public void addCustomDocumentProperties() throws Exception
 }
 ```
 
-Ten fragment kodu demonstruje, jak dodać niestandardowe właściwości dokumentu, w tym wartość logiczną, ciąg znaków, datę, numer wersji i wartość liczbową.
+Ten fragment kodu pokazuje, jak dodać niestandardowe właściwości dokumentu, w tym wartość logiczną, ciąg znaków, datę, numer wersji i wartość liczbową.
 
 ## Usuwanie właściwości dokumentu
 

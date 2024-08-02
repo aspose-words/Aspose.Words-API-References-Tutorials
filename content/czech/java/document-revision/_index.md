@@ -12,7 +12,7 @@ Revize dokumentu je zásadním aspektem zpracování textu a zpracování dokume
 
 ## Sledování revizí pomocí Aspose.Words
 
-V těchto kurzech se vývojáři naučí, jak sledovat revize pomocí Aspose.Words for Java. Knihovna poskytuje výkonné funkce pro sledování revizí, které uživatelům umožňují zvýrazňovat změny, vkládat komentáře a společně spravovat revize. Zvládnutím sledování revizí mohou vývojáři zefektivnit proces revize a zajistit přesnost a kvalitu dokumentů.
+V těchto kurzech se vývojáři naučí, jak sledovat revize pomocí Aspose.Words for Java. Knihovna poskytuje výkonné funkce pro sledování revizí, které uživatelům umožňují zvýrazňovat změny, vkládat komentáře a společně spravovat revize. Zvládnutím sledování revizí mohou vývojáři zjednodušit proces revize a zajistit přesnost a kvalitu dokumentů.
 
 ## Správa verzí a historie dokumentů
 

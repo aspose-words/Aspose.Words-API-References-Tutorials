@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
 
 ## Závěr
 
-tady to máte! Pomocí několika řádků kódu můžete uložit obrázky jako WMF do dokumentů aplikace Word pomocí Aspose.Words for .NET. To může být neuvěřitelně užitečné pro udržení vysoce kvalitních obrázků a zajištění kompatibility napříč různými platformami. Vyzkoušejte to a uvidíte rozdíl!
+tady to máte! Pomocí několika řádků kódu můžete uložit obrázky jako WMF do dokumentů aplikace Word pomocí Aspose.Words for .NET. To může být neuvěřitelně užitečné pro udržení vysoce kvalitních obrázků a zajištění kompatibility napříč různými platformami. Vyzkoušejte to a uvidíte rozdíl, který to dělá!
 
 ## FAQ
 

@@ -16,7 +16,7 @@ Ať už chcete převést dokumenty aplikace Word do formátu PDF pro online dist
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Zobrazit název dokumentu v záhlaví okna](./display-doc-title-in-window-titlebar/) | Naučte se, jak zobrazit název dokumentu v záhlaví okna vašich PDF pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce. |
+| [Zobrazení názvu dokumentu v záhlaví okna](./display-doc-title-in-window-titlebar/) | Naučte se, jak zobrazit název dokumentu v záhlaví okna vašich PDF pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce. |
 | [Upozornění k vykreslení PDF](./pdf-render-warnings/) | Podrobný průvodce řešením varování při vykreslování PDF pomocí Aspose.Words pro .NET. |
 | [Přidejte digitální podpis do PDF pomocí držitele certifikátu](./digitally-signed-pdf-using-certificate-holder/) | Zabezpečte své soubory PDF digitálním podpisem pomocí Aspose.Words for .NET. Postupujte podle tohoto podrobného průvodce a snadno přidejte digitální podpis do souborů PDF. |
 | [Vložení písem do dokumentu PDF](./embedded-all-fonts/) | Vkládejte písma do dokumentů PDF bez námahy pomocí Aspose.Words pro .NET s tímto podrobným průvodcem krok za krokem. Zajistěte konzistentní vzhled na všech zařízeních. |

@@ -351,7 +351,7 @@ Tak, możesz używać wyrażeń regularnych do zastępowania tekstu w Aspose.Wor
 
 ### Czy mogę zastąpić tekst wewnątrz nagłówków i stopek?
 
- Tak, możesz zastąpić tekst wewnątrz nagłówków i stopek dokumentu Word. Po prostu przejdź do odpowiedniego nagłówka lub stopki i użyj przycisku`replace` metoda z pożądanym`FindReplaceOptions`.
+ Tak, możesz zastąpić tekst wewnątrz nagłówków i stopek dokumentu programu Word. Po prostu przejdź do odpowiedniego nagłówka lub stopki i użyj przycisku`replace` metoda z pożądanym`FindReplaceOptions`.
 
 ### Do czego służy opcja UseLegacyOrder?
 

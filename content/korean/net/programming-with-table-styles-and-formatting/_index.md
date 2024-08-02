@@ -16,19 +16,19 @@ url: /ko/net/programming-with-table-styles-and-formatting/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [테이블 주변 텍스트 사이의 거리 가져오기](./get-distance-between-table-surrounding-text/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 텍스트와 표 사이의 거리를 계산하는 단계별 가이드입니다. |
-| [외곽선 테두리 적용](./apply-outline-border/) | .NET용 Aspose.Words를 사용하여 테이블에 윤곽선 테두리를 적용하는 방법에 대한 단계별 가이드입니다. |
-| [테두리가 있는 테이블 만들기](./build-table-with-borders/) | .NET용 Aspose.Words를 사용하여 테두리가 있는 테이블을 만드는 방법을 단계별로 안내합니다. |
-| [행 형식 수정](./modify-row-formatting/) | .NET용 Aspose.Words를 사용하여 테이블 행 형식을 변경하는 단계별 가이드입니다. |
-| [행 서식 적용](./apply-row-formatting/) | .NET용 Aspose.Words를 사용하여 테이블에 행 서식을 적용하는 단계별 가이드입니다. |
-| [셀 패딩 설정](./set-cell-padding/) | .NET용 Aspose.Words를 사용하여 표 셀 여백을 설정하는 단계별 가이드입니다. |
-| [셀 서식 수정](./modify-cell-formatting/) | .NET용 Aspose.Words를 사용하여 테이블의 셀 서식을 변경하는 단계별 가이드입니다. |
-| [테두리가 다른 테이블과 셀 서식 지정](./format-table-and-cell-with-different-borders/) | .NET용 Aspose.Words를 사용하여 테두리가 다른 테이블과 셀의 형식을 지정하는 단계별 안내입니다. |
-| [테이블 제목 및 설명 설정](./set-table-title-and-description/) | .NET용 Aspose.Words를 사용하여 테이블의 제목과 설명을 설정하는 단계별 가이드입니다. |
-| [셀 간격 허용](./allow-cell-spacing/) | .NET용 Aspose.Words를 사용하여 셀 간격을 허용하는 단계별 가이드입니다. |
-| [스타일로 테이블 만들기](./build-table-with-style/) | .NET용 Aspose.Words를 사용하여 사용자 정의 스타일로 테이블을 구축하는 방법에 대한 단계별 가이드입니다. |
-| [스타일에서 셀 및 행의 서식 확장](./expand-formatting-on-cells-and-row-from-style/) | .NET용 Aspose.Words를 사용하여 테이블 스타일에서 셀과 행으로 서식을 확장하는 단계별 가이드입니다. |
-| [테이블 스타일 만들기](./create-table-style/) | .NET용 Aspose.Words를 사용하여 사용자 정의 테이블 스타일을 만드는 방법에 대한 단계별 가이드입니다. |
-| [조건부 서식 정의](./define-conditional-formatting/) | .NET용 Aspose.Words를 사용하여 테이블에서 조건부 서식을 정의하는 단계별 가이드입니다. |
-| [표 셀 서식 설정](./set-table-cell-formatting/) | .NET용 Aspose.Words를 사용하여 테이블 셀 서식을 설정하는 단계별 가이드입니다. |
-| [테이블 행 서식 설정](./set-table-row-formatting/) | .NET용 Aspose.Words를 사용하여 테이블 행 형식을 설정하는 단계별 가이드입니다. |
+| [테이블 주변 텍스트 사이의 거리 가져오기](./get-distance-between-table-surrounding-text/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 표와 주변 텍스트 사이의 거리를 검색하는 방법을 알아보세요. 이 가이드를 통해 문서 레이아웃을 개선하세요. |
+| [외곽선 테두리 적용](./apply-outline-border/) | .NET용 Aspose.Words를 사용하여 Word의 표에 윤곽선 테두리를 적용하는 방법을 알아보세요. 완벽한 표 형식을 지정하려면 단계별 가이드를 따르세요. |
+| [테두리가 있는 테이블 만들기](./build-table-with-borders/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 표 테두리를 만들고 사용자 정의하는 방법을 알아보세요. 자세한 지침은 단계별 가이드를 따르세요. |
+| [행 형식 수정](./modify-row-formatting/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 행 형식을 수정하는 방법을 알아보세요. 모든 수준의 개발자에게 적합합니다. |
+| [행 서식 적용](./apply-row-formatting/) | .NET용 Aspose.Words를 사용하여 Word 문서에 행 서식을 적용하는 방법을 알아보세요. 자세한 지침은 단계별 가이드를 따르세요. |
+| [셀 패딩 설정](./set-cell-padding/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 셀 패딩을 설정하는 방법을 알아보세요. 문서의 표 형식을 쉽게 개선하세요. |
+| [셀 서식 수정](./modify-cell-formatting/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 셀 서식을 수정하는 방법을 알아보세요. |
+| [테두리가 다른 테이블과 셀 서식 지정](./format-table-and-cell-with-different-borders/) | .NET용 Aspose.Words를 사용하여 다양한 테두리가 있는 테이블과 셀의 서식을 지정하는 방법을 알아보세요. 사용자 정의된 표 스타일과 셀 음영으로 Word 문서를 향상하세요. |
+| [테이블 제목 및 설명 설정](./set-table-title-and-description/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 표 제목과 설명을 설정하는 방법을 알아보세요. 문서의 전문성을 강화하려면 자세한 가이드를 따르세요. |
+| [셀 간격 허용](./allow-cell-spacing/) | 자세한 가이드를 통해 .NET용 Aspose.Words를 사용하여 테이블에서 셀 간격을 허용하는 방법을 알아보세요. Word 문서 형식을 향상시키려는 개발자에게 적합합니다. |
+| [스타일로 테이블 만들기](./build-table-with-style/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 테이블을 만들고 스타일을 지정하는 방법을 알아보세요. |
+| [스타일에서 셀 및 행의 서식 확장](./expand-formatting-on-cells-and-row-from-style/) | .NET용 Aspose.Words를 사용하여 Word 문서의 스타일에서 셀과 행의 서식을 확장하는 방법을 알아보세요. 단계별 가이드가 포함되어 있습니다. |
+| [테이블 스타일 만들기](./create-table-style/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 테이블을 만들고 스타일을 지정합니다. 전문적인 표 서식을 사용하여 문서를 개선하는 방법을 단계별로 알아보세요. |
+| [조건부 서식 정의](./define-conditional-formatting/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 조건부 서식을 정의하는 방법을 알아보세요. 가이드를 통해 문서의 시각적 매력과 가독성을 향상시키세요. |
+| [표 셀 서식 설정](./set-table-cell-formatting/) | .NET용 Aspose.Words를 사용하여 전문적인 표 셀 서식으로 Word 문서를 향상하세요. 이 단계별 가이드는 프로세스를 단순화합니다. |
+| [테이블 행 서식 설정](./set-table-row-formatting/) | 가이드와 함께 .NET용 Aspose.Words를 사용하여 Word 문서에서 테이블 행 서식을 설정하는 방법을 알아보세요. 올바른 형식의 전문적인 문서를 만드는 데 적합합니다. |

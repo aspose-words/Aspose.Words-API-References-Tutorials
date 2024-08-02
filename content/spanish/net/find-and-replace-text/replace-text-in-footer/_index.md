@@ -31,7 +31,7 @@ using Aspose.Words.Replacing;
 
 ## Paso 1: cargue su documento
 
- Para comenzar, necesitamos cargar el documento de Word que contiene el texto del pie de página que queremos reemplazar. Especificaremos la ruta al documento y usaremos el`Document` clase para cargarlo.
+ Para comenzar, debemos cargar el documento de Word que contiene el texto del pie de página que queremos reemplazar. Especificaremos la ruta al documento y usaremos el`Document` clase para cargarlo.
 
 ```csharp
 // La ruta al directorio de documentos.

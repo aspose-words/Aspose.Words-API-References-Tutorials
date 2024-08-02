@@ -16,12 +16,12 @@ Genom att använda Aspose.Words för .NET och följa dessa tutorials kommer du a
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Lägg till gruppform](./add-group-shape/) | Lär dig hur du lägger till en gruppform med flera former i ett Word-dokument med Aspose.Words för .NET. |
-| [Infoga form](./insert-shape/) | Lär dig hur du infogar former i ett Word-dokument med Aspose.Words för .NET. |
-| [Bildförhållande låst](./aspect-ratio-locked/) | Lär dig hur du låser eller låser upp bildförhållandet för en form i ett Word-dokument med Aspose.Words för .NET. |
-| [Layout I Cell](./layout-in-cell/) | Lär dig hur du layoutar en form i en tabellcell i ett Word-dokument med Aspose.Words för .NET. |
-| [Lägg till hörn avklippta](./add-corners-snipped/) | Lär dig hur du lägger till en form med hörn avklippta i ett Word-dokument med Aspose.Words för .NET. |
-| [Få faktiska Shape Bounds-poäng](./get-actual-shape-bounds-points/) | Lär dig hur du hämtar de faktiska gränserna för en form i punkter (måttenhet) i ett Word-dokument med Aspose.Words för .NET. |
-| [Vertikalt ankare](./vertical-anchor/) | Lär dig hur du placerar en form vertikalt i ett dokument med den vertikala ankarfunktionen i Aspose.Words för .NET.|
-| [Upptäck Smart Art Shape](./detect-smart-art-shape/) | Lär dig hur du upptäcker Smart Art-former i ett Word-dokument med Aspose.Words för .NET, som identifierar grafiska representationer. |
-| [Uppdatera Smart Art Drawing](./update-smart-art-drawing/) | Lär dig hur du uppdaterar Smart Art-ritningen i ett Word-dokument med Aspose.Words för .NET. |
+| [Lägg till gruppform](./add-group-shape/) | Lär dig hur du lägger till gruppformer i Word-dokument med Aspose.Words för .NET med denna omfattande, steg-för-steg-handledning. |
+| [Infoga form](./insert-shape/) | Lär dig hur du infogar och manipulerar former i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. |
+| [Bildförhållande låst](./aspect-ratio-locked/) | Lär dig hur du låser bildförhållandet för former i Word-dokument med Aspose.Words för .NET. Följ den här steg-för-steg-guiden för att hålla dina bilder och former proportionerliga. |
+| [Layout I Cell](./layout-in-cell/) | Lär dig hur du ställer in layouten i cellen med Aspose.Words för .NET med denna omfattande guide. Perfekt för utvecklare som vill anpassa Word-dokument. |
+| [Lägg till hörn avklippta](./add-corners-snipped/) | Lär dig hur du lägger till en form av klippt hörn i dina Word-dokument med Aspose.Words för .NET. Denna steg-för-steg-guide säkerställer att du enkelt kan förbättra dina dokument. |
+| [Få faktiska Shape Bounds-poäng](./get-actual-shape-bounds-points/) | Upptäck hur du får de faktiska formgränserna i Word-dokument med Aspose.Words för .NET. Lär dig exakt formmanipulation med denna detaljerade guide. |
+| [Vertikalt ankare](./vertical-anchor/) | Lär dig hur du ställer in vertikala ankarpositioner för textrutor i Word-dokument med Aspose.Words för .NET. Enkel steg-för-steg guide ingår.|
+| [Upptäck Smart Art Shape](./detect-smart-art-shape/) | Lär dig hur du upptäcker SmartArt-former i Word-dokument med Aspose.Words för .NET med den här omfattande guiden. Perfekt för att automatisera ditt dokumentarbetsflöde. |
+| [Uppdatera Smart Art Drawing](./update-smart-art-drawing/) | Lär dig hur du uppdaterar Smart Art-ritningar i Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. Se till att dina bilder alltid är korrekta. |

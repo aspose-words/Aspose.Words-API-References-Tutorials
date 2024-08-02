@@ -27,7 +27,7 @@ Sekarang kita sudah menyiapkan perpustakaan, mari kita lanjutkan menambahkan tan
 Tanda air teks adalah pilihan umum ketika Anda ingin menambahkan informasi tekstual ke dokumen Anda. Berikut cara menambahkan tanda air teks menggunakan Aspose.Words untuk Java:
 
 ```java
-//Buat instance Dokumen
+//Buat contoh Dokumen
 Document doc = new Document("Document.docx");
 
 // Tentukan Opsi TextWatermark
@@ -50,7 +50,7 @@ doc.save("DocumentWithWatermark.docx");
 Selain tanda air teks, Anda juga dapat menambahkan tanda air gambar ke dokumen Anda. Berikut cara menambahkan watermark gambar:
 
 ```java
-//Buat instance Dokumen
+//Buat contoh Dokumen
 Document doc = new Document("Document.docx");
 
 // Muat gambar untuk tanda air
@@ -80,7 +80,7 @@ Anda dapat menyesuaikan tanda air dengan menyesuaikan tampilan dan posisinya. Un
 Untuk menghilangkan watermark pada dokumen, Anda dapat menggunakan kode berikut:
 
 ```java
-//Buat instance Dokumen
+//Buat contoh Dokumen
 Document doc = new Document("DocumentWithWatermark.docx");
 
 // Hapus tanda air

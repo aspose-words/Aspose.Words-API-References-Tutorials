@@ -2,20 +2,38 @@
 title: Alterar fonte de cultura de atualização de campo
 linktitle: Alterar fonte de cultura de atualização de campo
 second_title: API de processamento de documentos Aspose.Words
-description: Alterar fonte de cultura de atualização de campo, guia passo a passo para modificar a fonte de cultura em Aspose.Words for .NET.
+description: Aprenda como alterar a fonte da cultura de atualização do campo em Aspose.Words for .NET com este guia. Controle facilmente a formatação de datas com base em diferentes culturas.
 type: docs
 weight: 10
 url: /pt/net/working-with-fields/change-field-update-culture-source/
 ---
+## Introdução
 
-Neste tutorial, iremos guiá-lo através do processo de alteração da fonte de cultura de atualização de campo em documentos do Word usando Aspose.Words for .NET. Ao modificar a origem da cultura, você pode controlar a formatação da data durante as operações de atualização de campo e de mala direta. Forneceremos a você o código-fonte C# necessário e instruções passo a passo para fazer isso.
+Neste tutorial, vamos mergulhar no mundo do Aspose.Words for .NET e explorar como alterar a fonte da cultura de atualização do campo. Se você estiver lidando com documentos do Word que incluem campos de data e precisar controlar como essas datas são formatadas com base em diferentes culturas, este guia é para você. Vamos percorrer o processo passo a passo, garantindo que você compreenda cada conceito e possa aplicá-lo de forma eficaz em seus projetos.
 
 ## Pré-requisitos
-Antes de começarmos, certifique-se de ter os seguintes pré-requisitos:
-- Biblioteca Aspose.Words for .NET instalada em seu sistema.
 
-## Etapa 1: crie um documento e o DocumentBuilder
-Para começar, crie uma instância da classe Document e um objeto DocumentBuilder:
+Antes de entrarmos no código, certifique-se de ter o seguinte:
+
+-  Aspose.Words for .NET: você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+- Ambiente de Desenvolvimento: Qualquer IDE compatível com .NET (por exemplo, Visual Studio).
+- Conhecimento básico de C#: Este tutorial pressupõe que você tenha um conhecimento fundamental de programação C#.
+
+## Importar namespaces
+
+Primeiro, vamos importar os namespaces necessários para o nosso projeto. Isso garantirá que tenhamos acesso a todas as classes e métodos necessários fornecidos pelo Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Agora, vamos dividir o exemplo em várias etapas para ajudá-lo a entender como alterar a fonte da cultura de atualização do campo no Aspose.Words for .NET.
+
+## Etapa 1: inicializar o documento
+
+ O primeiro passo é criar uma nova instância do`Document` aula e um`DocumentBuilder`. Isso estabelece a base para construir e manipular nosso documento do Word.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,80 +41,58 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Etapa 2: inserir conteúdo com localidade específica
-Em seguida, defina a localidade como alemão e insira campos com formatação de data:
+## Etapa 2: inserir campos com localidade específica
+
+A seguir, precisamos inserir campos no documento. Neste exemplo, inseriremos dois campos de data. Definiremos a localidade da fonte como alemão (LocaleId = 1031) para demonstrar como a cultura afeta o formato da data.
 
 ```csharp
-builder.Font.LocaleId = 1031;
+builder.Font.LocaleId = 1031; // Alemão
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-No código acima, definimos a localidade da fonte como Alemão (ID de localidade 1031) e inserimos dois campos com formatação de data específica.
+## Etapa 3: definir a origem da cultura de atualização de campo
 
-## Etapa 3: alterar a origem da cultura de atualização de campo
-Para alterar a origem da cultura de atualização de campo, use a classe FieldOptions:
+ Para controlar a cultura utilizada na atualização dos campos, definimos o`FieldUpdateCultureSource` propriedade do`FieldOptions`aula. Esta propriedade determina se a cultura é obtida do código do campo ou do documento.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
 
-Neste exemplo, definimos a cultura usada durante a atualização do campo para ser escolhida a partir da cultura usada pelo campo.
+## Etapa 4: executar mala direta
 
-## Etapa 4: realizar a mala direta
-Execute uma operação de mala direta e especifique o valor de data para o campo "Data2":
+Agora precisamos executar uma mala direta para preencher os campos com dados reais. Neste exemplo, definiremos o segundo campo de data (`Date2`) até 1º de janeiro de 2011.
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
-
-Neste trecho de código, executamos a operação de mala direta e fornecemos um valor DateTime para o campo “Date2”.
 
 ## Etapa 5: salve o documento
-Salve o documento modificado em um arquivo usando o método Save da classe Document:
+
+Finalmente, salvamos o documento no diretório especificado. Esta etapa conclui o processo de alteração da origem da cultura de atualização de campo.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
-```
-
-### Exemplo de código-fonte para alterar a fonte da cultura de atualização de campo usando Aspose.Words para .NET
-Aqui está o código-fonte completo para alterar a fonte da cultura de atualização de campo em documentos do Word usando Aspose.Words for .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Font.LocaleId = 1031;
-builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
-builder.Write(" - ");
-builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
-
-doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
-
-doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
-
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Conclusão
-Parabéns! Você aprendeu com sucesso como alterar a origem da cultura de atualização de campo em documentos do Word usando Aspose.Words for .NET. Seguindo o guia passo a passo e utilizando o código-fonte fornecido, agora você pode controlar a cultura usada para formatação de data durante operações de atualização de campo e mala direta. Personalize a fonte de cultura de acordo com suas necessidades para garantir datas precisas e consistentes.
 
-### Perguntas frequentes
+E aí está! Você alterou com êxito a origem da cultura de atualização do campo em Aspose.Words for .NET. Seguindo essas etapas, você pode garantir que seus documentos do Word exibam datas e outros valores de campo de acordo com as configurações de cultura especificadas. Isto pode ser particularmente útil ao gerar documentos para um público internacional.
 
-#### P: Como posso alterar a fonte da cultura de atualização do campo no Aspose.Words for .NET?
+## Perguntas frequentes
 
- R: Para alterar a fonte da cultura de atualização do campo no Aspose.Words for .NET, você pode usar o`Document.FieldOptions.CultureSource` propriedade e defina seu valor como`FieldCultureSource.FieldCode` ou`FieldCultureSource.CurrentThread` . Por exemplo, você pode usar`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` para usar a cultura definida no código do campo.
+###  Qual é o propósito de definir o`LocaleId`?
+ O`LocaleId` especifica as configurações de cultura do texto, o que afeta como as datas e outros dados sensíveis à localidade são formatados.
 
-#### P: Como posso especificar uma cultura específica para atualizar campos no Aspose.Words for .NET?
+### Posso usar uma localidade diferente do alemão?
+ Sim, você pode definir o`LocaleId`para qualquer identificador de localidade válido. Por exemplo, 1033 para inglês (Estados Unidos).
 
- R: Para especificar uma cultura específica para atualização de campos no Aspose.Words for .NET, você pode usar o`Document.FieldOptions.FieldUpdateCultureInfo` propriedade e definir o`CultureInfo` objeto correspondente à cultura desejada. Por exemplo, você pode usar`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` para especificar a cultura francesa (França).
+###  O que acontece se eu não definir o`FieldUpdateCultureSource` property?
+Se esta propriedade não estiver configurada, as configurações de cultura padrão do documento serão utilizadas na atualização dos campos.
 
-#### P: É possível desabilitar a atualização automática de campos no Aspose.Words for .NET?
+### É possível atualizar campos com base na cultura do documento em vez do código do campo?
+ Sim, você pode definir`FieldUpdateCultureSource` para`FieldUpdateCultureSource.Document` para usar as configurações de cultura do documento.
 
- R: Sim, é possível desabilitar a atualização automática de campos no Aspose.Words for .NET. Você pode usar o`Document.FieldOptions.UpdateFields` propriedade e configure-a para`false` para evitar que os campos sejam atualizados automaticamente. Isso permite controlar manualmente a atualização dos campos conforme necessário.
-
-#### P: Como posso atualizar manualmente os campos do documento no Aspose.Words for .NET?
-
- R: Para atualizar manualmente os campos em um documento no Aspose.Words for .NET, você pode usar o`Field.Update` método para cada campo individualmente. Por exemplo, você pode usar`field.Update()` para atualizar o campo específico.
+### Como formato datas em um padrão diferente?
+ Você pode alterar o padrão de formato de data no`InsertField` método modificando o`\\@` valor de troca.

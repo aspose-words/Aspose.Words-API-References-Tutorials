@@ -15,7 +15,7 @@ url: /zh-hant/net/apply-license/apply-license-from-stream/
 
 在我們動手之前，讓我們確保您擁有所需的一切：
 
-1.  Aspose.Words for .NET：確保您已安裝程式庫。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：確保您已安裝程式庫。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. 許可證文件：您需要有效的許可證文件。如果您沒有，您可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)用於測試目的。
 3. 基本 C# 知識：假設您對 C# 程式設計有基本了解。
 

@@ -14,7 +14,7 @@ In de snelle wereld van vandaag is het automatiseren van taken essentieel geword
 
 ## Woordautomatisering begrijpen
 
-Word-automatisering omvat het gebruik van programmeren om zonder handmatige tussenkomst met Microsoft Word-documenten te communiceren. Dit stelt ons in staat om documenten dynamisch te creëren, verschillende tekst- en opmaakbewerkingen uit te voeren en waardevolle gegevens uit bestaande documenten te extraheren.
+Word-automatisering omvat het gebruik van programmeren om zonder handmatige tussenkomst met Microsoft Word-documenten te communiceren. Dit stelt ons in staat om dynamisch documenten te creëren, verschillende tekst- en opmaakbewerkingen uit te voeren en waardevolle gegevens uit bestaande documenten te extraheren.
 
 ## Aan de slag met Aspose.Words voor Python
 

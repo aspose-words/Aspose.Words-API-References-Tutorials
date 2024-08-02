@@ -16,7 +16,7 @@ Hallo! Wenn Sie schon einmal Seiteneinstellungen in mehreren Abschnitten eines W
 Bevor wir loslegen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
 1. Grundkenntnisse in C#: Vertrautheit mit der Syntax und den Konzepten von C# ist erforderlich.
-2.  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/) Wenn Sie es nur ausprobieren möchten,[Kostenlose Testphase](https://releases.aspose.com/) ist verfügbar.
+2.  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/)Wenn Sie es nur ausprobieren möchten,[Kostenlose Testphase](https://releases.aspose.com/) ist verfügbar.
 3. Visual Studio: Jede aktuelle Version sollte funktionieren, für ein optimales Erlebnis wird jedoch die neueste Version empfohlen.
 4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem System installiert ist.
 
@@ -64,7 +64,7 @@ In diesem Schritt fügen wir unserem Dokument vier Abschnitte hinzu. Jeder Absch
 
 ## Schritt 3: Seiteneinrichtung verstehen
 
-Bevor wir das Seiten-Setup ändern, ist es wichtig zu verstehen, dass jeder Abschnitt in einem Word-Dokument sein eigenes Seiten-Setup haben kann. Diese Flexibilität ermöglicht unterschiedliche Formatierungen innerhalb eines einzelnen Dokuments.
+Bevor wir das Seitenlayout ändern, müssen wir uns darüber im Klaren sein, dass jeder Abschnitt in einem Word-Dokument sein eigenes Seitenlayout haben kann. Diese Flexibilität ermöglicht unterschiedliche Formatierungen innerhalb eines einzelnen Dokuments.
 
 ## Schritt 4: Seiteneinrichtung in allen Abschnitten ändern
 
@@ -89,7 +89,7 @@ Diese Codezeile speichert das Dokument im angegebenen Verzeichnis mit einem eind
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich das Seiten-Setup für alle Abschnitte in einem Word-Dokument mit Aspose.Words für .NET geändert. Dieses Tutorial hat Sie durch das Erstellen eines Dokuments, das Hinzufügen von Abschnitten und das einheitliche Anpassen ihrer Seiten-Setups geführt. Aspose.Words bietet eine Vielzahl von Funktionen, also erkunden Sie die[API-Dokumentation](https://reference.aspose.com/words/net/) für erweiterte Funktionen.
+ Und da haben Sie es! Sie haben erfolgreich das Seiten-Setup für alle Abschnitte in einem Word-Dokument mit Aspose.Words für .NET geändert. Dieses Tutorial hat Sie durch das Erstellen eines Dokuments, das Hinzufügen von Abschnitten und das einheitliche Anpassen ihrer Seiten-Setups geführt. Aspose.Words bietet eine Vielzahl von Funktionen, also erkunden Sie die[API-Dokumentation](https://reference.aspose.com/words/net/) für erweiterte Funktionen.
 
 ## FAQs
 

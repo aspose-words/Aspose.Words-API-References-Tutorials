@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/working-with-fonts/set-fonts-folders/
 ---
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントをレンダリングするときにフォント フォルダーを設定する手順を順を追って説明します。バンドルされている C# ソース コードについて説明し、この機能を理解して独自のプロジェクトに実装するのに役立つ包括的なガイドを提供します。このチュートリアルを終了すると、Aspose.Words for .NET を使用してドキュメントをレンダリングするときに使用するフォント フォルダーを指定する方法がわかります。
+このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントをレンダリングするときにフォント フォルダーを設定する手順を順を追って説明します。バンドルされている C# ソース コードについて説明し、この機能を理解して独自のプロジェクトに実装するのに役立つ包括的なガイドを提供します。このチュートリアルの最後には、Aspose.Words for .NET を使用してドキュメントをレンダリングするときに使用するフォント フォルダーを指定する方法がわかります。
 
 ## ステップ1: ドキュメントディレクトリを定義する
 まず、ドキュメント ディレクトリへのパスを設定する必要があります。これは、編集したレンダリングされたドキュメントを保存する場所です。「YOUR DOCUMENTS DIRECTORY」を適切なパスに置き換えます。
@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-### Aspose.Words for .NET を使用してフォント フォルダーを設定するためのサンプル ソース コード 
+### Aspose.Words for .NET を使用してフォント フォルダーを設定するサンプル ソース コード 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -16,8 +16,8 @@ Akár kezdő, akár tapasztalt fejlesztő, az Aspose.Words for .NET szövegfeldo
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Hozzáférés a stílusokhoz](./access-styles/) | Ismerje meg, hogyan érheti el a dokumentumstílusokat az Aspose.Words for .NET segítségével. Teljes oktatóanyag a dokumentumok stílusának kezeléséhez. |
-| [Stílusok másolása](./copy-styles/) | Ismerje meg, hogyan másolhat stílusokat a dokumentumok között az Aspose.Words for .NET segítségével. |
-| [Szerezze be a téma tulajdonságait](./get-theme-properties/) | Fedezze fel egy dokumentum tématulajdonságait az Aspose.Words for .NET segítségével. Testreszabhatja a stílusokat és a színeket az egyedi megjelenés érdekében. |
-| [Állítsa be a téma tulajdonságait](./set-theme-properties/) | Tanulja meg, hogyan testreszabhatja a dokumentumok megjelenését a téma tulajdonságainak módosításával az Aspose.Words for .NET segítségével. Professzionális és vonzó eredményeket érhet el. |
-| [Helyezze be a stíluselválasztót](./insert-style-separator/) | Tanuljon meg dokumentumokat egyéni stílusokkal létrehozni, és stíluselválasztókat szúrjon be a precíz, professzionális formázás érdekében. |
+| [Szerezzen be dokumentumstílusokat a Wordben](./access-styles/) | Ebből a részletes, lépésenkénti oktatóanyagból megtudhatja, hogyan szerezhet be dokumentumstílusokat a Wordben az Aspose.Words for .NET használatával. A stílusok programozott elérése és kezelése .NET-alkalmazásaiban. |
+| [Word dokumentumstílusok másolása](./copy-styles/) | Ismerje meg, hogyan másolhat Word dokumentumstílusokat az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat, hogy könnyedén biztosítsa a konzisztens dokumentumformázást. |
+| [Szerezze be a dokumentumtéma tulajdonságait a Wordben](./get-theme-properties/) | Fedezze fel, hogyan érheti el és kezelheti a dokumentumtéma tulajdonságait a Wordben az Aspose.Words for .NET használatával. Útmutatónk segítségével tanulja meg a betűtípusok és színek lekérését. |
+| [Állítsa be a téma tulajdonságait a Word dokumentumban](./set-theme-properties/) | Ismerje meg, hogyan állíthat be tématulajdonságokat Word dokumentumokban az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a betűtípusok és színek egyszerű testreszabásához. |
+| [Illessze be a dokumentumstílus-elválasztót a Wordbe](./insert-style-separator/) | Ismerje meg, hogyan illeszthet be dokumentumstílus-elválasztót a Wordbe az Aspose.Words for .NET használatával. Ez az útmutató utasításokat és tippeket tartalmaz a dokumentumstílusok kezeléséhez. |

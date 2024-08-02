@@ -16,8 +16,8 @@ Podle těchto výukových programů se naučíte, jak efektivně používat Aspo
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Vytvořte projekt Vba](./create-vba-project/) | tomto kurzu se dozvíte, jak vytvořit projekt VBA v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Přečtěte si makra Vba](./read-vba-macros/) | V tomto kurzu se dozvíte, jak číst makra VBA z dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Upravte makra Vba](./modify-vba-macros/) | V tomto kurzu se dozvíte, jak upravit makra VBA dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Projekt klonování Vba](./clone-vba-project/) | V tomto tutoriálu se dozvíte, jak klonovat projekt VBA z dokumentu aplikace Word pomocí Aspose.Words for .NET.|
-| [Klonovat modul Vba](./clone-vba-module/) | V tomto tutoriálu se dozvíte, jak klonovat modul VBA z dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Vytvořte projekt Vba](./create-vba-project/) | Naučte se vytvářet projekty VBA v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou automatizaci dokumentů! |
+| [Přečtěte si makra Vba](./read-vba-macros/) | INaučte se číst makra VBA z dokumentů aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou automatizaci dokumentů! |
+| [Upravte makra Vba](./modify-vba-macros/) | Naučte se upravovat makra VBA v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem pro bezproblémovou automatizaci dokumentů! |
+| [Projekt klonování Vba](./clone-vba-project/) | Naučte se klonovat projekty VBA v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou manipulaci s dokumenty!|
+| [Klonovat modul Vba](./clone-vba-module/) | Klonujte moduly VBA v dokumentech aplikace Word bez námahy pomocí Aspose.Words pro .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou manipulaci s dokumenty! |

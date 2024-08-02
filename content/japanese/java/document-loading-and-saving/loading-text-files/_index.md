@@ -160,7 +160,7 @@ public void documentTextDirection() throws Exception {
 
 ### Aspose.Words for Java とは何ですか?
 
-Aspose.Words for Java は、開発者が Java アプリケーションでプログラム的に Word 文書を作成、操作、変換できるようにする強力なドキュメント処理ライブラリです。テキスト、表、画像、その他のドキュメント要素を操作するための幅広い機能を提供します。
+Aspose.Words for Java は、開発者が Java アプリケーションで Word 文書をプログラム的に作成、操作、変換できるようにする強力なドキュメント処理ライブラリです。テキスト、表、画像、その他のドキュメント要素を操作するための幅広い機能を提供します。
 
 ### Aspose.Words for Java を使い始めるにはどうすればよいですか?
 

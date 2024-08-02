@@ -16,6 +16,6 @@ Aspose.Words を使用すると、Word ドキュメントの処理タスクを�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [空白を含む番号を検出する](./detect-numbering-with-whitespaces/) | Aspose.Words for .NET で空白のあるリスト番号を検出する方法を学びます。ドキュメントの構造を簡単に改善します。 |
-| [スペース処理オプション](./handle-spaces-options/) | Aspose.Words for .NET を使用して TXT ドキュメント内のスペースを管理する方法を学びます。不要なスペースを削除して読みやすさを向上させます。 |
-| [文書のテキスト方向](./document-text-direction/) | Aspose.Words for .NET を使用してドキュメント内のテキスト方向を指定する方法を学びます。右から左に記述する言語の表示を改善します。完全なチュートリアルに今すぐアクセスしてください。 |
+| [空白を含む番号を検出する](./detect-numbering-with-whitespaces/) | Aspose.Words for .NET を使用してプレーンテキスト ドキュメント内の空白を含む番号を検出し、リストが正しく認識されるようにする方法を説明します。 |
+| [スペース処理オプション](./handle-spaces-options/) | Aspose.Words for .NET を使用してテキスト ドキュメントの先頭と末尾のスペースを処理する方法を学びます。このチュートリアルでは、テキストの書式設定をクリーンアップするためのガイドを提供します。 |
+| [文書のテキスト方向](./document-text-direction/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word でドキュメントのテキスト方向を設定する方法を説明します。右から左に記述する言語の処理に最適です。 |

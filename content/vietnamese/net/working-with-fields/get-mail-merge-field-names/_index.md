@@ -2,118 +2,111 @@
 title: Nhận tên trường trộn thư
 linktitle: Nhận tên trường trộn thư
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách lấy tên trường phối thư trong tài liệu Word của bạn bằng Aspose.Words dành cho .NET.
+description: Tìm hiểu cách trích xuất tên trường trộn thư từ tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/get-mail-merge-field-names/
 ---
+## Giới thiệu
 
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# bên dưới, sử dụng tính năng "Nhận tên trường hợp nhất" của Aspose.Words cho .NET. Hãy chắc chắn làm theo từng bước một cách cẩn thận để có được kết quả mong muốn.
+Chào mừng bạn đến với hướng dẫn này về cách trích xuất tên trường trộn thư từ tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang tạo thư được cá nhân hóa, tạo báo cáo tùy chỉnh hay chỉ đơn giản là tự động hóa quy trình làm việc của tài liệu thì trường trộn thư đều rất cần thiết. Chúng hoạt động giống như phần giữ chỗ trong tài liệu của bạn và được thay thế bằng dữ liệu thực trong quá trình hợp nhất. Nếu bạn đang làm việc với Aspose.Words cho .NET thì bạn thật may mắn—thư viện mạnh mẽ này giúp bạn tương tác với các trường này cực kỳ dễ dàng. Trong hướng dẫn này, chúng ta sẽ tìm hiểu một cách đơn giản nhưng hiệu quả để truy xuất tên của các trường phối thư trong tài liệu, cho phép bạn hiểu rõ hơn và quản lý các hoạt động phối thư của mình.
 
-## Bước 1: Thiết lập thư mục tài liệu
+## Điều kiện tiên quyết
 
-Trong mã được cung cấp, bạn phải chỉ định thư mục tài liệu của mình. Thay thế giá trị "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp tới thư mục tài liệu của bạn.
+Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có những điều sau:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET Library: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu không, bạn có thể tải xuống từ[trang web giả định](https://releases.aspose.com/words/net/).
 
-## Bước 2: Tải tài liệu
+2. Môi trường phát triển: Bạn nên thiết lập môi trường phát triển cho .NET, chẳng hạn như Visual Studio.
 
-Bước đầu tiên là tải tài liệu mà bạn muốn lấy tên trường hợp nhất.
+3. Tài liệu Word có trường phối thư: Chuẩn bị sẵn tài liệu Word chứa các trường phối thư. Đây sẽ là tài liệu bạn sẽ làm việc để trích xuất tên trường.
 
-```csharp
-Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
-```
+4. Kiến thức cơ bản về C#: Làm quen với lập trình C# và .NET sẽ hữu ích khi làm theo các ví dụ.
 
-Đảm bảo thay thế "TỆP TÀI LIỆU CỦA BẠN" bằng tên tệp của riêng bạn.
+## Nhập không gian tên
 
-## Bước 3: Lấy tên trường hợp nhất
-
- Chúng tôi sử dụng`GetFieldNames()` phương thức để lấy một mảng chứa tên của các trường hợp nhất có trong tài liệu.
+Để bắt đầu, bạn cần nhập các vùng tên cần thiết vào mã C# của mình. Điều này cho phép bạn truy cập chức năng Aspose.Words. Đây là cách bao gồm chúng:
 
 ```csharp
-string[] fieldNames = doc.MailMerge.GetFieldNames();
+using Aspose.Words;
+using System;
 ```
 
- Các`fieldNames` biến hiện chứa tên của các trường hợp nhất.
+ Các`Aspose.Words` không gian tên cho phép bạn truy cập vào tất cả các lớp và phương thức cần thiết để thao tác với tài liệu Word, trong khi`System` được sử dụng cho chức năng cơ bản như đầu ra của bàn điều khiển.
 
-### Ví dụ về mã nguồn để lấy tên trường hợp nhất với Aspose.Words cho .NET
+Hãy chia nhỏ quá trình trích xuất tên trường trộn thư thành hướng dẫn từng bước rõ ràng.
+
+## Bước 1: Xác định thư mục tài liệu
+
+Tiêu đề: Chỉ định đường dẫn đến tài liệu của bạn
+
+Trước tiên, bạn cần thiết lập đường dẫn đến thư mục chứa tài liệu Word của bạn. Điều này rất quan trọng vì nó cho ứng dụng của bạn biết nơi tìm tệp. Đây là cách bạn làm điều đó:
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Thay thế`"YOUR DOCUMENTS DIRECTORY"`với đường dẫn thực tế nơi tài liệu của bạn cư trú. Đây có thể là một cái gì đó giống như`"C:\\Documents\\MyDoc.docx"`.
+
+## Bước 2: Tải tài liệu
+
+Tiêu đề: Tải tài liệu Word
+
+ Tiếp theo, bạn sẽ tải tài liệu vào một phiên bản của`Document` lớp được cung cấp bởi Aspose.Words. Điều này cho phép bạn tương tác với tài liệu theo chương trình.
+
+```csharp
 // Tải tài liệu.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
+```
 
+ Thay thế`"YOUR DOCUMENT FILE"` với tên tệp tài liệu Word của bạn, chẳng hạn như`"example.docx"`. Dòng mã này đọc tài liệu từ thư mục được chỉ định của bạn và chuẩn bị cho các thao tác tiếp theo.
+
+## Bước 3: Truy xuất tên trường trộn thư
+
+Tiêu đề: Trích xuất tên trường trộn thư
+
+ Bây giờ, bạn đã sẵn sàng lấy tên của các trường phối thư có trong tài liệu. Đây là nơi Aspose.Words tỏa sáng—nó`MailMerge` class cung cấp một cách dễ dàng để lấy tên trường.
+
+```csharp
 // Nhận tên trường hợp nhất.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
+```
 
+ Các`GetFieldNames()` phương thức trả về một chuỗi các chuỗi, mỗi chuỗi đại diện cho một tên trường phối thư được tìm thấy trong tài liệu. Đây là những phần giữ chỗ bạn sẽ thấy trong tài liệu Word của mình.
+
+## Bước 4: Hiển thị số trường hợp nhất
+
+Tiêu đề: Xuất số lượng trường
+
+Để xác nhận rằng bạn đã truy xuất thành công tên trường, bạn có thể hiển thị số lượng trường bằng bảng điều khiển.
+
+```csharp
 // Hiển thị số lượng trường hợp nhất.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- Trong ví dụ này, chúng tôi đã tải một tài liệu, lấy tên trường hợp nhất bằng cách sử dụng`GetFieldNames()` phương thức và hiển thị số lượng trường hợp nhất có trong tài liệu.
+Dòng mã này in ra tổng số trường trộn thư trong tài liệu, giúp bạn xác minh rằng quy trình trích xuất của bạn hoạt động chính xác.
 
-Phần này kết thúc hướng dẫn của chúng tôi về cách sử dụng tính năng "Nhận tên trường hợp nhất" với Aspose.Words cho .NET.
+## Phần kết luận
 
-### Câu hỏi thường gặp
+Chúc mừng! Bây giờ bạn đã học cách trích xuất tên trường trộn thư từ tài liệu Word bằng Aspose.Words cho .NET. Kỹ thuật này là một công cụ có giá trị để quản lý và tự động hóa quy trình làm việc của tài liệu, giúp xử lý nội dung được cá nhân hóa dễ dàng hơn. Bằng cách làm theo các bước này, bạn có thể xác định và làm việc hiệu quả với các trường phối thư trong tài liệu của mình.
 
-#### Câu hỏi 1: Trộn thư trong Aspose.Words là gì?
+ Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm, vui lòng khám phá[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc tham gia[Cộng đồng đề xuất](https://forum.aspose.com/c/words/8) để hỗ trợ. Chúc mừng mã hóa!
 
-Trộn thư trong Aspose.Words là một quá trình hợp nhất dữ liệu từ nguồn bên ngoài (ví dụ: bảng tính Excel hoặc cơ sở dữ liệu) với tài liệu Word mẫu để tạo tài liệu được cá nhân hóa. Điều này tạo điều kiện thuận lợi cho việc tạo thư, báo cáo và các tài liệu tương tự khác một cách tự động.
+## Câu hỏi thường gặp
 
-#### Câu hỏi 2: Làm cách nào để có được danh sách các trường phối thư có sẵn trong tài liệu Word?
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và quản lý tài liệu Word theo chương trình trong các ứng dụng .NET.
 
-Để có được danh sách các trường trộn thư có sẵn trong tài liệu Word, bạn có thể làm theo các bước sau:
+### Làm cách nào để tôi có thể dùng thử miễn phí Aspose.Words?
+ Bạn có thể dùng thử miễn phí bằng cách truy cập[Trang phát hành Aspose](https://releases.aspose.com/).
 
-1. Nhập các lớp Document và MailMergeFieldNames từ không gian tên Aspose.Words.
-2. Tạo một phiên bản Tài liệu bằng cách tải tài liệu Word của bạn.
-3. Sử dụng phương thức GetMailMergeFieldNames của đối tượng Tài liệu để lấy danh sách các trường trộn thư có sẵn.
+### Tôi có thể sử dụng Aspose.Words mà không cần mua giấy phép không?
+ Có, bạn có thể sử dụng nó trong thời gian dùng thử, nhưng để sử dụng liên tục, bạn sẽ cần mua giấy phép từ[Trang mua hàng của Aspose](https://purchase.aspose.com/buy).
 
-Đây là một mã mẫu để minh họa quá trình:
+### Tôi nên làm gì nếu gặp sự cố với Aspose.Words?
+ Để được hỗ trợ, bạn có thể truy cập[diễn đàn giả định](https://forum.aspose.com/c/words/8) nơi bạn có thể đặt câu hỏi và nhận trợ giúp từ cộng đồng.
 
-```csharp
-// Nhập các không gian tên cần thiết
-using Aspose.Words;
-using Aspose.Words.MailMerging;
-
-// Tải tài liệu hiện có
-Document document = new Document("FilePath");
-
-// Lấy danh sách các trường trộn thư
-MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
-
-// Duyệt qua các trường phối thư có sẵn
-foreach (string fieldName in fieldNames)
-{
-     // Làm điều gì đó với tên trường
-     Console.WriteLine(fieldName);
-}
-```
-### Câu hỏi thường gặp
-
-#### Câu hỏi: Trộn thư trong Aspose.Words là gì?
-
-Trả lời: Trộn thư trong Aspose.Words là một quá trình hợp nhất dữ liệu từ nguồn bên ngoài (ví dụ: bảng tính Excel hoặc cơ sở dữ liệu) với tài liệu Word mẫu để tạo tài liệu được cá nhân hóa. Điều này tạo điều kiện thuận lợi cho việc tạo thư, báo cáo và các tài liệu tương tự khác một cách tự động.
-
-#### Hỏi: Làm cách nào để có được danh sách các trường phối thư có sẵn trong tài liệu Word?
-
-Trả lời: Để có được danh sách các trường phối thư có sẵn trong tài liệu Word, bạn có thể làm theo các bước sau:
-
-1. Nhập các lớp Document và MailMergeFieldNames từ không gian tên Aspose.Words.
-2. Tạo một phiên bản Tài liệu bằng cách tải tài liệu Word của bạn.
-3. Sử dụng phương thức GetMailMergeFieldNames của đối tượng Tài liệu để lấy danh sách các trường trộn thư có sẵn.
-
-#### Hỏi: Tôi có thể lấy trường phối thư từ nguồn dữ liệu bên ngoài như bảng tính Excel không?
-
-Đáp: Có, bạn có thể lấy các trường phối thư từ nguồn dữ liệu bên ngoài, chẳng hạn như bảng tính Excel. Đối với điều này, bạn có thể sử dụng các tính năng liên kết dữ liệu của Aspose.Words để thiết lập kết nối với nguồn dữ liệu và lấy tên của các trường có sẵn.
-
-#### Câu hỏi: Có thể lọc các trường trộn thư dựa trên các tiêu chí nhất định không?
-
-Đáp: Có, có thể lọc các trường phối thư dựa trên các tiêu chí nhất định. Bạn có thể sử dụng biểu thức thông thường hoặc điều kiện cụ thể để lọc các trường phối thư và chỉ lấy những trường đáp ứng tiêu chí cụ thể của bạn.
-
-#### Câu hỏi: Làm cách nào tôi có thể thao tác các trường trộn thư trong Aspose.Words?
-
-Đáp: Để thao tác các trường trộn thư trong Aspose.Words, bạn có thể sử dụng các phương thức và thuộc tính được cung cấp bởi các đối tượng Document và MailMergeField. Bạn có thể thêm, xóa hoặc cập nhật các trường phối thư cũng như truy xuất và chỉnh sửa các giá trị được liên kết với các trường.
+### Làm cách nào tôi có thể nhận được giấy phép tạm thời cho Aspose.Words?
+ Bạn có thể nộp đơn xin giấy phép tạm thời thông qua[Trang giấy phép tạm thời của Aspose](https://purchase.aspose.com/temporary-license/).

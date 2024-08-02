@@ -12,7 +12,7 @@ Belge işleme ve işleme dünyasında Aspose.Words for Java güçlü bir araç o
 
 ## 1. Aspose.Words for Java'ya Giriş
 
-Aspose.Words for Java, geliştiricilerin Word belgeleriyle programlı olarak çalışmasına olanak tanıyan bir Java API'sidir. Word belgelerini oluşturmak, düzenlemek ve dönüştürmek için çok çeşitli özellikler sunar.
+Aspose.Words for Java, geliştiricilerin Word belgeleriyle programlı olarak çalışmasına olanak tanıyan bir Java API'sidir. Word belgelerini oluşturmak, düzenlemek ve dönüştürmek için çok çeşitli özellikler sağlar.
 
 ## 2. Geliştirme Ortamınızı Kurma
 

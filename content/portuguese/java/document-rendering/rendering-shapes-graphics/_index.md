@@ -129,7 +129,7 @@ Aspose.Words for Java é versátil e pode ser usado em vários cenários:
 
 ## Dicas de soluções de problemas
 
-Se você encontrar problemas ao trabalhar com formas e gráficos, consulte a documentação do Aspose.Words para Java ou os fóruns da comunidade para obter soluções. Problemas comuns incluem compatibilidade de formato de imagem e problemas relacionados a fontes.
+Se você encontrar problemas ao trabalhar com formas e gráficos, consulte a documentação do Aspose.Words for Java ou os fóruns da comunidade para obter soluções. Problemas comuns incluem compatibilidade de formato de imagem e problemas relacionados a fontes.
 
 ## Conclusão
 

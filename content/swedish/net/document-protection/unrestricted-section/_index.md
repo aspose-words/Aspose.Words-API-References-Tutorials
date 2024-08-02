@@ -18,7 +18,7 @@ Innan vi hoppar in i det roliga, se till att du har allt du behöver:
 -  Aspose.Words för .NET: Om du inte redan har gjort det kan du[ladda ner den här](https://releases.aspose.com/words/net/).
 - Visual Studio: Eller någon annan .NET-kompatibel IDE.
 - Grundläggande förståelse för C#: Lite bekantskap med C# hjälper dig att ta dig igenom den här handledningen.
--  Aspose-licens: Ta en[gratis provperiod](https://releases.aspose.com/) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) om du behöver den för att testa.
+-  Aspose-licens: Ta en[gratis provperiod](https://releases.aspose.com/) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) om du behöver det för att testa.
 
 ## Importera namnområden
 

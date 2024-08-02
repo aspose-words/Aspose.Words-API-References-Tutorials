@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Gut, da wir nun unsere Tools bereit haben, können wir mit der schrittweisen Optimierung Ihres Dokuments für MS Word beginnen.
+Gut, jetzt, da wir unsere Tools bereit haben, können wir mit der schrittweisen Optimierung Ihres Dokuments für MS Word beginnen.
 
 ## Schritt 1: Einrichten Ihres Dokumentverzeichnisses
 

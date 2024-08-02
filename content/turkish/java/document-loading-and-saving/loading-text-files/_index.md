@@ -169,7 +169,7 @@ Aspose.Words for Java'yı kullanmaya başlamak için şu adımları izleyin:
 2.  adresindeki belgelere bakın.[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/)detaylı bilgi ve örnekler için.
 3. Kitaplığın etkili bir şekilde nasıl kullanılacağını öğrenmek için örnek kodu ve öğreticileri keşfedin.
 
-### Aspose.Words for Java kullanarak bir metin belgesini nasıl yüklerim?
+### Aspose.Words for Java'yı kullanarak bir metin belgesini nasıl yüklerim?
 
  Aspose.Words for Java'yı kullanarak bir metin belgesi yüklemek için`TxtLoadOptions` sınıf ve`Document` sınıf. Gerektiğinde boşlukları ve metin yönünü işlemek için uygun seçenekleri belirttiğinizden emin olun. Ayrıntılı bir örnek için bu makaledeki adım adım kılavuza bakın.
 

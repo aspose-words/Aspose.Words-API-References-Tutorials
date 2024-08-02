@@ -2,14 +2,14 @@
 title: Localizar e substituir texto simples no Word
 linktitle: Localizar e substituir texto simples no Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como localizar e substituir facilmente texto em documentos do Word usando Aspose.Words for .NET. Guia passo a passo incluído.
+description: Aprenda como localizar e substituir texto sem esforço em documentos do Word usando Aspose.Words for .NET. Guia passo a passo incluído.
 type: docs
 weight: 10
 url: /pt/net/find-and-replace-text/simple-find-replace/
 ---
 ## Introdução
 
-Olá, aspirante a programador! Você já precisou atualizar várias ocorrências de uma palavra ou frase em um documento do Word sem a tediosa tarefa de localizar e substituir manualmente cada uma delas? Imagine que você tem um modelo que diz "_CustomerName_" e você precisa dizer "James Bond". Fácil, certo? Bem, pode ser com Aspose.Words for .NET! Neste tutorial, orientaremos você no processo de localização e substituição de texto em um Word documento usando Aspose.Words for .NET. Aperte os cintos e prepare-se para agilizar suas tarefas de manipulação de texto!
+Olá, aspirante a programador! Você já precisou atualizar várias instâncias de uma palavra ou frase em um documento do Word sem a tediosa tarefa de localizar e substituir manualmente cada uma delas? Imagine que você tem um modelo que diz "_CustomerName_" e você precisa dizer "James Bond". Fácil, certo? Bem, pode ser com Aspose.Words for .NET! Neste tutorial, orientaremos você no processo de localização e substituição de texto em um Word documento usando Aspose.Words for .NET. Aperte os cintos e prepare-se para agilizar suas tarefas de manipulação de texto!
 
 ## Pré-requisitos
 

@@ -90,7 +90,7 @@ PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
 {
 	// Imposta la conformità su PDF/A-2u
     Compliance = PdfCompliance.PdfA2u,
-	// Usa la compressione JPEG
+	// Utilizza la compressione JPEG
     ImageCompression = PdfImageCompression.Jpeg,
 	// Regola la qualità JPEG per controllare il livello di compressione
     JpegQuality = 100 

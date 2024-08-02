@@ -11,7 +11,7 @@ url: /ko/net/basic-conversions/docx-to-markdown/
 
 .NET 개발 영역에서 Word 문서를 프로그래밍 방식으로 조작하면 생산성과 기능이 크게 향상될 수 있습니다. Aspose.Words for .NET은 개발자가 문서 처리 기능을 애플리케이션에 원활하게 통합할 수 있게 해주는 강력한 API로 돋보입니다. 처음부터 문서를 변환, 생성, 수정 또는 생성하려는 경우 Aspose.Words는 이러한 작업을 효율적으로 간소화할 수 있는 강력한 도구를 제공합니다.
 
-## 전제조건
+## 전제 조건
 
 .NET용 Aspose.Words를 사용하여 DOCX 파일을 Markdown으로 변환하기 전에 다음 전제 조건이 있는지 확인하세요.
 

@@ -2,25 +2,58 @@
 title: एंकर टिप्पणी
 linktitle: एंकर टिप्पणी
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में विशिष्ट पाठ पर टिप्पणी उत्तरों को एंकर करना सीखें।
+description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में एंकर टिप्पणियाँ जोड़ने का तरीका जानें। कुशल दस्तावेज़ सहयोग के लिए हमारे चरण-दर-चरण मार्गदर्शिका का पालन करें।
 type: docs
 weight: 10
 url: /hi/net/working-with-comments/anchor-comment/
 ---
+## परिचय
 
-इस व्यापक ट्यूटोरियल में, आप सीखेंगे कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में विशिष्ट टेक्स्ट पर टिप्पणी उत्तरों को कैसे एंकर किया जाए। हम आपको इस प्रक्रिया के माध्यम से मार्गदर्शन करेंगे और आपको आवश्यक C# कोड स्निपेट प्रदान करेंगे। इस गाइड के अंत तक, आप अपने दस्तावेज़ों में विशिष्ट टेक्स्ट के साथ टिप्पणियों को संबद्ध करने में सक्षम होंगे।
+क्या आपने कभी खुद को ऐसी स्थिति में पाया है जहाँ आपको प्रोग्रामेटिक रूप से Word दस्तावेज़ में विशिष्ट टेक्स्ट अनुभागों में टिप्पणियाँ जोड़ने की आवश्यकता थी? कल्पना करें कि आप अपनी टीम के साथ एक दस्तावेज़ पर सहयोग कर रहे हैं, और आपको दूसरों की समीक्षा के लिए टिप्पणियों के साथ कुछ भागों को हाइलाइट करने की आवश्यकता है। इस ट्यूटोरियल में, हम .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में एंकर टिप्पणियाँ सम्मिलित करने के तरीके के बारे में गहराई से जानेंगे। हम इस प्रक्रिया को सरल चरणों में विभाजित करेंगे, जिससे आपके लिए इसका पालन करना और अपनी परियोजनाओं में लागू करना आसान हो जाएगा।
 
 ## आवश्यक शर्तें
-शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ हैं:
-- आपके सिस्टम पर Aspose.Words for .NET लाइब्रेरी स्थापित है।
 
-## चरण 1: नया दस्तावेज़ बनाएँ और टेक्स्ट जोड़ें
-आरंभ करने के लिए, Document वर्ग का उपयोग करके एक नया दस्तावेज़ बनाएं और इच्छित पाठ जोड़ें:
+आरंभ करने से पहले, आइए सुनिश्चित करें कि आपके पास वह सब कुछ है जो आपको चाहिए:
+
+-  .NET के लिए Aspose.Words: सुनिश्चित करें कि आपके पास Aspose.Words लाइब्रेरी स्थापित है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/).
+- विकास वातावरण: कोई भी .NET विकास वातावरण जैसे विजुअल स्टूडियो.
+- C# की बुनियादी समझ: C# प्रोग्रामिंग से परिचित होने से आपको चरणों का आसानी से पालन करने में मदद मिलेगी।
+
+अब, आइए उन नामस्थानों पर नज़र डालें जिन्हें आपको इस कार्य के लिए आयात करना होगा।
+
+## नामस्थान आयात करें
+
+सबसे पहले, सुनिश्चित करें कि आपने अपने प्रोजेक्ट में आवश्यक नेमस्पेस आयात कर लिए हैं। यहाँ आवश्यक नेमस्पेस दिए गए हैं:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.CommentRangeStart;
+using Aspose.Words.CommentRangeEnd;
+```
 
+पूर्वावश्यकताओं और नामस्थानों से निपट लेने के बाद, आइए अब मज़ेदार भाग की ओर बढ़ें: प्रक्रिया को चरण दर चरण तोड़ना।
+
+## चरण 1: नया दस्तावेज़ बनाएँ
+
+सबसे पहले, आइए एक नया वर्ड डॉक्यूमेंट बनाएं। यह हमारी टिप्पणियों के लिए कैनवास का काम करेगा।
+
+```csharp
+// वह निर्देशिका निर्धारित करें जहां दस्तावेज़ सहेजा जाएगा
+string dataDir = "YOUR DOCUMENT DIRECTORY";        
+
+// दस्तावेज़ वर्ग का एक उदाहरण बनाएँ
+Document doc = new Document();
+```
+
+ इस चरण में, हम एक नया आरंभ करते हैं`Document` ऑब्जेक्ट जिसका उपयोग हमारी टिप्पणियाँ जोड़ने के लिए किया जाएगा।
+
+## चरण 2: दस्तावेज़ में पाठ जोड़ें
+
+इसके बाद, हम दस्तावेज़ में कुछ पाठ जोड़ेंगे। यह पाठ हमारी टिप्पणियों का लक्ष्य होगा।
+
+```csharp
+// पहला पैराग्राफ़ और रन बनाएँ
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
 Run run2 = new Run(doc, "text ");
@@ -28,6 +61,7 @@ para1.AppendChild(run1);
 para1.AppendChild(run2);
 doc.FirstSection.Body.AppendChild(para1);
 
+// दूसरा पैराग्राफ़ बनाएँ और चलाएँ
 Paragraph para2 = new Paragraph(doc);
 Run run3 = new Run(doc, "is ");
 Run run4 = new Run(doc, "added ");
@@ -36,89 +70,68 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
-## चरण 2: एक टिप्पणी बनाएं और टिप्पणी श्रेणी जोड़ें
-इसके बाद, एक टिप्पणी बनाएं और उसे CommentRangeStart और CommentRangeEnd ऑब्जेक्ट का उपयोग करके विशिष्ट टेक्स्ट के साथ संबद्ध करें:
+ यहाँ, हम कुछ पाठ के साथ दो पैराग्राफ बनाते हैं। पाठ का प्रत्येक भाग एक में समाहित है`Run` ऑब्जेक्ट, जिसे फिर पैराग्राफ में जोड़ा जाता है।
+
+## चरण 3: एक टिप्पणी बनाएँ
+
+अब, आइए एक टिप्पणी बनाएं जिसे हम अपने पाठ के साथ संलग्न करेंगे।
 
 ```csharp
+// एक नई टिप्पणी बनाएँ
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+```
 
+ इस चरण में, हम एक बनाते हैं`Comment` ऑब्जेक्ट और टिप्पणी पाठ के साथ एक पैराग्राफ और एक रन जोड़ें।
+
+## चरण 4: टिप्पणी सीमा निर्धारित करें
+
+टिप्पणी को विशिष्ट पाठ से जोड़ने के लिए, हमें टिप्पणी श्रेणी के प्रारंभ और अंत को परिभाषित करना होगा।
+
+```csharp
+// CommentRangeStart और CommentRangeEnd को परिभाषित करें
 CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
 
+// दस्तावेज़ में CommentRangeStart और CommentRangeEnd डालें
 run1.ParentNode.InsertAfter(commentRangeStart, run1);
 run3.ParentNode.InsertAfter(commentRangeEnd, run3);
+
+// दस्तावेज़ में टिप्पणी जोड़ें
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
-## चरण 3: दस्तावेज़ सहेजें
-टिप्पणी को विशिष्ट पाठ पर एंकर करने के बाद, Document वर्ग की Save विधि का उपयोग करके दस्तावेज़ को फ़ाइल में सहेजें:
+ यहाँ, हम बनाते हैं`CommentRangeStart`और`CommentRangeEnd` ऑब्जेक्ट्स को उसकी आईडी द्वारा टिप्पणी से लिंक करते हुए। फिर हम इन श्रेणियों को दस्तावेज़ में सम्मिलित करते हैं, जिससे हमारी टिप्पणी निर्दिष्ट पाठ से प्रभावी रूप से जुड़ जाती है।
+
+## चरण 5: दस्तावेज़ सहेजें
+
+अंत में, आइए अपने दस्तावेज़ को निर्दिष्ट निर्देशिका में सेव करें।
 
 ```csharp
+// दस्तावेज़ सहेजें
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ```
 
-### .NET के लिए Aspose.Words का उपयोग करके एंकर टिप्पणी उत्तर के लिए उदाहरण स्रोत कोड
-.NET के लिए Aspose.Words का उपयोग करके टिप्पणी उत्तर को एंकर करने के लिए पूरा स्रोत कोड यहां दिया गया है:
+यह चरण दस्तावेज़ को आपके निर्दिष्ट निर्देशिका में एंकर्ड टिप्पणी के साथ सहेजता है।
 
-```csharp
-// दस्तावेज़ का एक उदाहरण बनाएँ.
-string dataDir = "YOUR DOCUMENT DIRECTORY";        
-Document doc = new Document();
+## निष्कर्ष
 
-// तीन रन ऑब्जेक्ट बनाएं.
-//पहले दो में कुछ पाठ है, जबकि तीसरे में एक टिप्पणी है
+और अब आप यह कर सकते हैं! आपने सफलतापूर्वक सीखा है कि Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में विशिष्ट टेक्स्ट अनुभागों में एंकर टिप्पणियाँ कैसे जोड़ें। यह तकनीक दस्तावेज़ सहयोग के लिए अविश्वसनीय रूप से उपयोगी है, जिससे आप टेक्स्ट के विशिष्ट भागों को आसानी से हाइलाइट और टिप्पणी कर सकते हैं। चाहे आप अपनी टीम के साथ किसी प्रोजेक्ट पर काम कर रहे हों या दस्तावेज़ों की समीक्षा कर रहे हों, यह विधि आपकी उत्पादकता को बढ़ाएगी और आपके वर्कफ़्लो को सुव्यवस्थित करेगी।
 
-Paragraph para1 = new Paragraph(doc);
-Run run1 = new Run(doc, "Some ");
-Run run2 = new Run(doc, "text ");
-para1.AppendChild(run1);
-para1.AppendChild(run2);
-doc.FirstSection.Body.AppendChild(para1);
+## अक्सर पूछे जाने वाले प्रश्न
 
-Paragraph para2 = new Paragraph(doc);
-Run run3 = new Run(doc, "is ");
-Run run4 = new Run(doc, "added ");
-para2.AppendChild(run3);
-para2.AppendChild(run4);
-doc.FirstSection.Body.AppendChild(para2);
+### वर्ड दस्तावेज़ों में एंकर टिप्पणियों का उपयोग करने का उद्देश्य क्या है?
+एंकर टिप्पणियों का उपयोग पाठ के विशिष्ट अनुभागों को हाइलाइट करने और उन पर टिप्पणी करने के लिए किया जाता है, जिससे फीडबैक प्रदान करना और दस्तावेजों पर सहयोग करना आसान हो जाता है।
 
-Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+### क्या मैं एक ही पाठ अनुभाग में एकाधिक टिप्पणियाँ जोड़ सकता हूँ?
+हां, आप एकाधिक टिप्पणी श्रेणियां परिभाषित करके एक ही पाठ अनुभाग में एकाधिक टिप्पणियां जोड़ सकते हैं।
 
-// प्रत्येक Run ऑब्जेक्ट में एक CommentRangeStart और CommentRangeEnd ऑब्जेक्ट संबद्ध होता है।
+### क्या .NET के लिए Aspose.Words का उपयोग निःशुल्क है?
+Aspose.Words for .NET एक निःशुल्क परीक्षण प्रदान करता है जिसे आप डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/) पूर्ण सुविधाओं के लिए, आप लाइसेंस खरीद सकते हैं[यहाँ](https://purchase.aspose.com/buy).
 
-CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
-CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
+### क्या मैं टिप्पणियों के स्वरूप को अनुकूलित कर सकता हूँ?
+जबकि Aspose.Words कार्यक्षमता पर ध्यान केंद्रित करता है, Word दस्तावेज़ों में टिप्पणियों की उपस्थिति आमतौर पर Word द्वारा ही नियंत्रित होती है।
 
-run1.ParentNode.InsertAfter(commentRangeStart, run1);
-run3.ParentNode.InsertAfter(commentRangeEnd, run3);
-commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
-
-doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
-```
-
-### अक्सर पूछे जाने वाले प्रश्न
-
-#### प्रश्न: Aspose.Words for .NET में टिप्पणी एंकर क्या है?
-
-उत्तर: .NET के लिए Aspose.Words में, एक टिप्पणी एंकर एक मार्कर है जो एक टिप्पणी को दस्तावेज़ में एक विशिष्ट स्थान से जोड़ता है।
-
-#### प्रश्न: मैं Aspose.Words for .NET दस्तावेज़ में टिप्पणी एंकर कैसे जोड़ सकता हूं?
-
-उत्तर: Aspose.Words for .NET दस्तावेज़ में टिप्पणी एंकर जोड़ने के लिए, ट्यूटोरियल में बताए गए चरणों का पालन करें।
-
-#### प्रश्न: मैं Aspose.Words for .NET में मौजूदा टिप्पणी एंकर तक कैसे पहुंच सकता हूं?
-
- A: आप Aspose.Words for .NET में मौजूदा टिप्पणी एंकर तक पहुंच सकते हैं`Comment.Anchor` संपत्ति।
-
-#### प्रश्न: क्या मैं .NET के लिए Aspose.Words में एक टिप्पणी एंकर का समर्थन कर सकता हूं?
-
- उत्तर: हां, आप .NET के लिए Aspose.Words में टिप्पणी एंकर को हटा सकते हैं`Comment.Remove` तरीका।
-
-#### प्रश्न: मैं Aspose.Words for .NET में टिप्पणी एंकर से जुड़ी टिप्पणी के पाठ को कैसे संपादित कर सकता हूं?
-
-A: Aspose.Words for .NET में टिप्पणी एंकर से जुड़ी टिप्पणी के पाठ को संशोधित करने के लिए, आप इसका उपयोग कर सकते हैं`Comment.Text` संबंधित संपत्ति`Comment` ऑब्जेक्ट पर क्लिक करें और आवश्यकतानुसार पाठ को संशोधित करें।
-
+### मैं .NET के लिए Aspose.Words पर अधिक दस्तावेज़ कहां पा सकता हूं?
+ आप विस्तृत दस्तावेज पा सकते हैं[यहाँ](https://reference.aspose.com/words/net/).

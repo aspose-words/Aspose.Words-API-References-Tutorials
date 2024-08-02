@@ -11,14 +11,14 @@ url: /ko/net/document-protection/password-protection/
 
 안녕하세요! 원치 않는 편집과 다른 사람의 시선으로부터 Word 문서를 보호하는 방법이 궁금하신가요? 오늘 우리는 .NET용 Aspose.Words를 사용하여 비밀번호 보호의 세계로 뛰어들었기 때문에 운이 좋았습니다. 일기장에 자물쇠를 걸어 두는 것과 같습니다. 더 멋지고 기술에 정통합니다. 이 여정을 함께 시작하여 문서를 안전하고 건전하게 유지하는 방법을 알아봅시다!
 
-## 전제조건
+## 전제 조건
 
 Word 문서를 암호로 보호하는 핵심 사항에 대해 알아보기 전에 필요한 몇 가지 사항이 있습니다.
 
 1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 C# 개발 환경.
 3. 기본 C# 지식: C# 프로그래밍에 대한 기본적인 이해입니다.
-4.  라이선스 Aspose: 다음에서 라이선스를 받으세요.[여기](https://purchase.aspose.com/buy)또는[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+4.  라이선스 Aspose: 다음에서 라이선스를 받으세요.[여기](https://purchase.aspose.com/buy)또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ## 네임스페이스 가져오기
 

@@ -54,7 +54,7 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 連字符在保持文件的品質和美觀方面起著至關重要的作用，尤其是在處理多語言內容時。 Aspose.Words for Java 簡化了套用連字號規則的過程，以確保您的文件具有最佳外觀。
 
-立即開始使用 Aspose.Words for Java 的連字功能建立專業且具有視覺吸引力的文件！
+立即開始使用 Aspose.Words for Java 的連字號功能建立專業且具有視覺吸引力的文件！
 
 ## 常見問題解答
 

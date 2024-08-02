@@ -65,7 +65,7 @@ Console.WriteLine("Existing Bookmark Name: " + name);
 Console.WriteLine("Existing Bookmark Text: " + text);
 ```
 
-Ten fragment kodu pobiera bieżącą nazwę (`name`) i tekst (`text`) docelowej zakładki i wyświetla je na konsoli (możesz to modyfikować do własnych potrzeb, na przykład rejestrując informacje do pliku). Ten krok jest opcjonalny, ale może być przydatny do debugowania lub weryfikowania zakładki, z którą pracujesz.
+Ten fragment kodu pobiera bieżącą nazwę (`name`) i tekst (`text`) docelowej zakładki i wyświetla je na konsoli (możesz to modyfikować do własnych potrzeb, np. rejestrując informacje do pliku). Ten krok jest opcjonalny, ale może być przydatny do debugowania lub weryfikowania zakładki, z którą pracujesz.
 
 ## Krok 4: Zaktualizuj nazwę zakładki (opcjonalnie)
 

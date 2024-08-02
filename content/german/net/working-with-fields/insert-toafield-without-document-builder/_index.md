@@ -2,123 +2,125 @@
 title: TOA-Feld ohne Document Builder einfügen
 linktitle: TOA-Feld ohne Document Builder einfügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Einfügen eines TOA-Felds ohne Document Builder mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie ein TOA-Feld einfügen, ohne einen Dokumentgenerator in Aspose.Words für .NET zu verwenden. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um juristische Zitate effizient zu verwalten.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## Einführung
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des folgenden C#-Quellcodes, der die Funktion „TOA Field Insertion“ von Aspose.Words für .NET verwendet. Befolgen Sie jeden Schritt sorgfältig, um die gewünschten Ergebnisse zu erzielen.
+Das Erstellen eines Tabellenfelds (TOA) in einem Word-Dokument kann sich anfühlen wie das Zusammensetzen eines komplexen Puzzles. Mithilfe von Aspose.Words für .NET wird der Vorgang jedoch reibungslos und unkompliziert. In diesem Artikel führen wir Sie durch die Schritte zum Einfügen eines TOA-Felds ohne Verwendung eines Dokumentgenerators, sodass Sie Ihre Zitate und Rechtsverweise in Ihren Word-Dokumenten ganz einfach verwalten können.
 
-## Schritt 1: Einrichten des Dokumentverzeichnisses
+## Voraussetzungen
 
-Im angegebenen Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
+Bevor wir uns in das Tutorial vertiefen, wollen wir uns mit den wichtigsten Dingen befassen, die Sie benötigen:
+
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version installiert haben. Sie können sie herunterladen von der[Aspose-Website](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Eine .NET-kompatible IDE wie Visual Studio.
+- Grundlegende C#-Kenntnisse: Das Verständnis der grundlegenden C#-Syntax und -Konzepte ist hilfreich.
+- Beispiel-Word-Dokument: Erstellen Sie ein Beispieldokument oder halten Sie ein solches bereit, in das Sie das TOA-Feld einfügen möchten.
+
+## Namespaces importieren
+
+Um zu beginnen, müssen Sie die erforderlichen Namespaces aus der Aspose.Words-Bibliothek importieren. Dieses Setup stellt sicher, dass Sie Zugriff auf alle Klassen und Methoden haben, die für die Dokumentbearbeitung erforderlich sind.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Schritt 2: Erstellen des Dokuments und des Absatzes
+Lassen Sie uns den Prozess in einfache, leicht verständliche Schritte unterteilen. Wir führen Sie durch jede Phase und erklären, was jeder Codeabschnitt tut und wie er zur Erstellung des TOA-Felds beiträgt.
 
-Wir beginnen mit der Erstellung eines neuen Dokuments und der Initialisierung eines Absatzes.
+## Schritt 1: Initialisieren Sie das Dokument
+
+ Zuerst müssen Sie eine Instanz des`Document` Klasse. Dieses Objekt stellt das Word-Dokument dar, an dem Sie arbeiten.
 
 ```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## Schritt 3: Einfügen des TA-Feldes
+Dieser Code initialisiert ein neues Word-Dokument. Sie können es sich so vorstellen, als ob Sie eine leere Leinwand erstellen, der Sie Ihren Inhalt hinzufügen.
 
-Wir verwenden die Klasse FieldTA, um ein TA-Feld in den Absatz einzufügen.
+## Schritt 2: Erstellen und Konfigurieren des TA-Felds
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## Schritt 4: Hinzufügen des Absatzes zum Hauptteil des Dokuments
-
-Wir fügen den Absatz, der das TA-Feld enthält, dem Hauptteil des Dokuments hinzu.
+Als Nächstes fügen wir ein TA-Feld (Table of Authorities, Verzeichnis der Rechtsgrundlagen) hinzu. Dieses Feld markiert die Einträge, die im TOA erscheinen.
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Schritt 5: Absatz für das TOA-Feld erstellen
-
-Wir erstellen einen neuen Absatz für das TOA-Feld.
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## Schritt 6: Einfügen des TOA-Feldes
-
-Wir verwenden die Klasse FieldToa, um ein TOA-Feld in den Absatz einzufügen.
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## Schritt 7: Hinzufügen des Absatzes zum Hauptteil des Dokuments
-
-Wir fügen den Absatz, der das TOA-Feld enthält, dem Hauptteil des Dokuments hinzu.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Schritt 8: TOA-Feld aktualisieren
-
- Schließlich nennen wir die`Update()` Methode zum Aktualisieren des TOA-Felds.
-
-```csharp
-fieldToa.Update();
-```
-
-### Quellcodebeispiel für TOA-Feldeinfügung ohne Document Builder mit Aspose.Words für .NET
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
 // Wir möchten TA- und TOA-Felder wie folgt einfügen:
 // { TA \c 1 \l "Wert 0" }
-// { TOA \c 1 }
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+Hier ist eine Aufschlüsselung:
+- Absatz para = neuer Absatz(doc);: Erstellt einen neuen Absatz innerhalb des Dokuments.
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: Fügt dem Absatz ein TA-Feld hinzu. Das`FieldType.FieldTOAEntry` gibt an, dass dies ein TOA-Eingabefeld ist.
+- fieldTA.EntryCategory = "1";: Legt die Eintragskategorie fest. Dies ist nützlich, um verschiedene Arten von Einträgen zu kategorisieren.
+- fieldTA.LongCitation = "Wert 0";: Gibt den langen Zitattext an. Dies ist der Text, der im TOA angezeigt wird.
+- doc.FirstSection.Body.AppendChild(para);: Fügt den Absatz mit dem TA-Feld an den Hauptteil des Dokuments an.
+
+## Schritt 3: Hinzufügen des TOA-Felds
+
+Nun fügen wir das eigentliche TOA-Feld ein, das alle TA-Einträge in einer Tabelle zusammenfasst.
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### Häufig gestellte Fragen
+In diesem Schritt:
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);: Fügt dem Absatz ein TOA-Feld hinzu.
+- fieldToa.EntryCategory = "1";: Filtert die Einträge, um nur diejenigen einzuschließen, die mit der Kategorie "1" markiert sind.
 
-#### F: Wie kann ich das Erscheinungsbild des in das Word-Dokument eingefügten TOA-Felds mit Aspose.Words für .NET anpassen?
+## Schritt 4: Aktualisieren Sie das TOA-Feld
 
- A: Sie können das Erscheinungsbild des eingefügten TOA-Feldes anpassen, indem Sie die Eigenschaften des`FieldTOA` Objekt, um Formatierungsoptionen anzugeben.
+Nachdem Sie das TOA-Feld eingefügt haben, müssen Sie es aktualisieren, um sicherzustellen, dass es die neuesten Einträge widerspiegelt.
 
-#### F: Kann ich mit Aspose.Words für .NET mehrere TOA-Felder in ein einzelnes Word-Dokument einfügen?
+```csharp
+fieldToa.Update();
+```
 
-A: Ja, Sie können mit Aspose.Words für .NET mehrere TOA-Felder in ein einzelnes Word-Dokument einfügen. Wiederholen Sie einfach die Einfügeschritte für jedes Feld.
+Dieser Befehl aktualisiert das TOA-Feld und stellt sicher, dass alle markierten Einträge korrekt in der Tabelle angezeigt werden.
 
-#### F: Wie kann ich überprüfen, ob ein TOA-Feld mit Aspose.Words für .NET erfolgreich in ein Word-Dokument eingefügt wurde?
+## Schritt 5: Speichern Sie das Dokument
 
-A: Um zu überprüfen, ob ein TOA-Feld erfolgreich eingefügt wurde, können Sie den Dokumentinhalt durchsuchen und nach TOA-Feldinstanzen suchen.
+Speichern Sie abschließend Ihr Dokument mit dem neu hinzugefügten TOA-Feld.
 
-#### F: Hat das Einfügen eines TOA-Felds ohne Verwendung von DocumentBuilder Auswirkungen auf die Formatierung von Word-Dokumenten mit Aspose.Words für .NET?
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-A: Das Einfügen eines TOA-Felds ohne Verwendung von DocumentBuilder wirkt sich nicht direkt auf die Formatierung des Word-Dokuments aus. Die Formatierungsoptionen des TOA-Felds können sich jedoch auf die Gesamtformatierung des Dokuments auswirken.
+ Diese Codezeile speichert das Dokument im angegebenen Verzeichnis. Ersetzen Sie unbedingt`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad, in dem Sie Ihre Datei speichern möchten.
+
+## Abschluss
+
+Und da haben Sie es! Sie haben erfolgreich ein TOA-Feld zu einem Word-Dokument hinzugefügt, ohne einen Dokumentgenerator zu verwenden. Indem Sie diese Schritte befolgen, können Sie Zitate effizient verwalten und umfassende Quellenverzeichnisse in Ihren juristischen Dokumenten erstellen. Aspose.Words für .NET macht diesen Prozess reibungslos und effizient und gibt Ihnen die Werkzeuge, um komplexe Dokumentaufgaben mit Leichtigkeit zu bewältigen.
+
+## Häufig gestellte Fragen
+
+### Kann ich mehrere TA-Felder mit unterschiedlichen Kategorien hinzufügen?
+ Ja, Sie können mehrere TA-Felder mit unterschiedlichen Kategorien hinzufügen, indem Sie die`EntryCategory`Eigentum entsprechend.
+
+### Wie kann ich das Erscheinungsbild des TOA anpassen?
+Sie können das Erscheinungsbild des TOA anpassen, indem Sie die Eigenschaften des TOA-Felds, beispielsweise die Eintragsformatierung und die Kategoriebeschriftungen, ändern.
+
+### Ist es möglich, das TOA-Feld automatisch zu aktualisieren?
+ Sie können das TOA-Feld manuell aktualisieren, indem Sie`Update` Methode: Aspose.Words unterstützt derzeit keine automatischen Updates bei Dokumentänderungen.
+
+### Kann ich TA-Felder programmgesteuert in bestimmten Teilen des Dokuments hinzufügen?
+Ja, Sie können TA-Felder an bestimmten Stellen hinzufügen, indem Sie sie in die gewünschten Absätze oder Abschnitte einfügen.
+
+### Wie verarbeite ich mehrere TOA-Felder in einem einzelnen Dokument?
+ Sie können mehrere TOA-Felder verwalten, indem Sie unterschiedliche`EntryCategory` Werte und Sicherstellung, dass jedes TOA-Feld Einträge basierend auf seiner Kategorie filtert.

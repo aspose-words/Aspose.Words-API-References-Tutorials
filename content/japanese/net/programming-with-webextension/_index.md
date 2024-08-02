@@ -16,4 +16,4 @@ WebExtensions を使用した Words Processing に関する Aspose.Words for .NE
 ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Web拡張機能タスクパネルの使用](./using-web-extension-task-panes/) | Aspose.Words for .NET で Web 拡張タスク ペインを使用するためのステップ バイ ステップ ガイド。 |
+| [Web拡張機能タスクパネルの使用](./using-web-extension-task-panes/) | この詳細なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に Web 拡張タスク ペインを追加および構成する方法を学習します。 |

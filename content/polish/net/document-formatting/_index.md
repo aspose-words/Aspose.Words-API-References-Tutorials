@@ -13,7 +13,7 @@ Samouczek obejmuje różne aspekty, takie jak formatowanie tekstu, akapitów, ta
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Odstęp między tekstem azjatyckim i łacińskim w dokumencie programu Word](./space-between-asian-and-latin-text/) | Dowiedz się, jak automatycznie dostosowywać odstępy między tekstem azjatyckim i łacińskim w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. |
+| [Odstęp między tekstem azjatyckim i łacińskim w dokumencie programu Word](./space-between-asian-and-latin-text/) | Dowiedz się, jak automatycznie dostosowywać odstępy między tekstem azjatyckim i łacińskim w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. |
 | [Grupa podziału linii typografii azjatyckiej w dokumencie programu Word](./asian-typography-line-break-group/) | Opanuj podziały linii w typografii azjatyckiej w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik zawiera samouczek krok po kroku dotyczący precyzyjnego formatowania. |
 | [Formatowanie akapitu w dokumencie programu Word](./paragraph-formatting/) | Dowiedz się, jak bez wysiłku formatować akapity w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. |
 | [Wielopoziomowe formatowanie listy w dokumencie programu Word](./multilevel-list-formatting/) | Dowiedz się, jak opanować wielopoziomowe formatowanie list w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Bez wysiłku ulepszaj strukturę dokumentu. |

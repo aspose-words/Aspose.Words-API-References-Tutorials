@@ -95,7 +95,7 @@ Siéntase libre de utilizar este código en sus propios proyectos y modificarlo 
 
 #### P: ¿Puedo personalizar el formato de numeración de las listas en Aspose.Words?
 
- R: Sí, puedes personalizar el formato de numeración de las listas en Aspose.Words. El`List` La clase ofrece varias propiedades para esto, como por ejemplo`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, etc. Puede utilizar estas propiedades para configurar el tipo de lista (numerada, con viñetas, etc.), el formato de numeración (números arábigos, números romanos, letras, etc.) y otras opciones de formato de numeración.
+ R: Sí, puedes personalizar el formato de numeración de las listas en Aspose.Words. El`List` La clase ofrece varias propiedades para esto, como`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, etc. Puede utilizar estas propiedades para configurar el tipo de lista (numerada, con viñetas, etc.), el formato de numeración (números arábigos, números romanos, letras, etc.) y otras opciones de formato de numeración.
 
 #### P: ¿Es posible agregar niveles adicionales a una lista numerada en Aspose.Words?
 

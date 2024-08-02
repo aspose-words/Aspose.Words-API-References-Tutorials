@@ -32,7 +32,7 @@ Laten we het proces opsplitsen in eenvoudige, beheersbare stappen. Elke stap lei
 
 ## Stap 1: Initialiseer uw document
 
-Eerst moeten we het Word-document laden dat u naar een PDF wilt converteren. Dit is waar uw reis begint.
+Eerst moeten we het Word-document laden dat u naar een PDF wilt converteren. Dit is waar jouw reis begint.
 
 ```csharp
 // Het pad naar de documentenmap.

@@ -43,7 +43,7 @@ Indítsuk el a dolgokat egy új projekt létrehozásával a Visual Studióban.
 
 Most pedig vegyük be az Aspose.Words könyvtárat a projektünkbe.
 
-1. Nyissa meg a NuGet Package Manager alkalmazást a Visual Studióban.
+1. Nyissa meg a NuGet Package Manager alkalmazást a Visual Studio alkalmazásban.
 2. Keresse meg az "Aspose.Words" kifejezést, és telepítse.
 
 ## 2. lépés: Word-dokumentum betöltése

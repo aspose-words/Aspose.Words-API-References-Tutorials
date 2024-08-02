@@ -9,7 +9,7 @@ url: /sv/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin undrat hur man hanterar URI:er när du sparar ett Word-dokument som PDF med Aspose.Words för .NET? Du är på rätt plats! Idag kommer vi att dyka djupt in i flyktiga URI:er i PDF-dokument för att säkerställa att de fungerar korrekt när ditt dokument konverteras. Låt oss ge oss ut på denna resa tillsammans, steg-för-steg, så att du förstår varje koncept på vägen.
+Hallå där! Har du någonsin undrat hur man hanterar URI:er när du sparar ett Word-dokument som PDF med Aspose.Words för .NET? Du är på rätt plats! Idag ska vi dyka djupt ner i flyktiga URI:er i PDF-dokument för att säkerställa att de fungerar korrekt när ditt dokument konverteras. Låt oss ge oss ut på denna resa tillsammans, steg-för-steg, så att du förstår varje koncept på vägen.
 
 ## Förutsättningar
 

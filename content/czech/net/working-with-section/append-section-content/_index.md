@@ -16,7 +16,7 @@ Nazdárek! Přemýšleli jste někdy, jak programově manipulovat s dokumenty Wo
 Než začneme, budete potřebovat několik věcí:
 
 1. Základní znalost C#: Nemusíte být expert, ale základní znalost C# vám pomůže.
-2.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) Pokud jej nechcete kupovat hned, můžete se rozhodnout pro a[zkušební verze zdarma](https://releases.aspose.com/).
+2.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Pokud jej nechcete kupovat hned, můžete se rozhodnout pro a[zkušební verze zdarma](https://releases.aspose.com/).
 3. Visual Studio: Jakákoli verze by měla fungovat, ale doporučujeme nejnovější verzi.
 4. .NET Framework: Ujistěte se, že je na vašem počítači nainstalováno.
 
@@ -66,7 +66,7 @@ Nyní, když máme své sekce, potřebujeme k nim přistupovat, abychom mohli ma
 Section section = doc.Sections[2];
 ```
 
- V tomto kroku vstoupíme do třetí části našeho dokumentu. Pamatujte, že index je založen na nule`Sections[2]` odkazuje na třetí oddíl.
+ tomto kroku vstoupíme do třetí části našeho dokumentu. Pamatujte, že index je založen na nule`Sections[2]` odkazuje na třetí oddíl.
 
 ## Krok 4: Předřazení obsahu sekci
 
@@ -88,7 +88,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-tomto kroku přistoupíme k druhé části a její obsah připojíme ke třetí části. Nyní třetí oddíl obsahuje obsah prvního i druhého oddílu.
+V tomto kroku přistoupíme k druhé části a její obsah připojíme ke třetí části. Nyní třetí oddíl obsahuje obsah prvního i druhého oddílu.
 
 ## Krok 6: Uložení dokumentu
 
@@ -102,7 +102,7 @@ Zde dokument uložíme jako „output.docx“. Tento soubor můžete otevřít v
 
 ## Závěr
 
- A tady to máte! Úspěšně jste manipulovali s oddíly v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výukový program se zabýval základy vytváření dokumentu, přidáváním oddílů a manipulací s jejich obsahem. S Aspose.Words můžete provádět mnohem složitější operace, takže neváhejte a prozkoumejte[API dokumentace](https://reference.aspose.com/words/net/) pro pokročilejší funkce.
+ tady to máte! Úspěšně jste manipulovali s oddíly v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výukový program se zabýval základy vytváření dokumentu, přidáváním oddílů a manipulací s jejich obsahem. S Aspose.Words můžete provádět mnohem složitější operace, takže neváhejte a prozkoumejte[API dokumentace](https://reference.aspose.com/words/net/) pro pokročilejší funkce.
 
 ## Nejčastější dotazy
 
@@ -116,7 +116,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ## 3. Jaké jsou hlavní rysy Aspose.Words pro .NET?
 
-Aspose.Words for .NET nabízí širokou škálu funkcí včetně vytváření, formátování, konverze a manipulace s dokumenty. Více o jeho schopnostech si můžete přečíst v[API dokumentace](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET nabízí širokou škálu funkcí včetně vytváření, formátování, konverze a manipulace s dokumenty. Více o jeho schopnostech si můžete přečíst v[API dokumentace](https://reference.aspose.com/words/net/).
 
 ## 4. Jak získám podporu pro Aspose.Words for .NET?
 

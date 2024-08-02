@@ -38,5 +38,5 @@ Se você deseja formatar texto com fontes diferentes, definir regras de substitu
 | [Obtenha uma lista de fontes disponíveis](./get-list-of-available-fonts/) | Neste tutorial, aprenda como obter a lista de fontes disponíveis no Aspose.Words for .NET. |
 | [Receba notificações de fontes](./receive-notifications-of-fonts/) | Aprenda como receber notificações de fontes ausentes ou substituídas ao usar Aspose.Words for .NET. |
 | [Receber notificação de aviso](./receive-warning-notification/) | Aprenda como receber uma notificação de aviso ao usar Aspose.Words for .NET e gerenciar quaisquer problemas ou avisos em seus documentos. |
-| [Exemplo de fonte de fonte Steam de recursos](./resource-steam-font-source-example/) | Aprenda como usar o Resource Stream Font Source para carregar fontes personalizadas no Aspose.Words for .NET. |
+| [Exemplo de fonte de fonte Steam de recurso](./resource-steam-font-source-example/) | Aprenda como usar o Resource Stream Font Source para carregar fontes personalizadas no Aspose.Words for .NET. |
 | [Obtenha substituição sem sufixos](./get-substitution-without-suffixes/) | Neste tutorial, aprenda como obter substituições sem sufixo em um documento do Word com Aspose.Words for .NET. |

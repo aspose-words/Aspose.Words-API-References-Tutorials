@@ -14,7 +14,7 @@ url: /ar/python-net/content-extraction-and-manipulation/document-content-extract
 
 ## المتطلبات الأساسية
 
-قبل أن نتعمق في التعليمات البرمجية، تأكد من تثبيت Python ومكتبة Aspose.Words. يمكنك تحميل المكتبة من الموقع[هنا](https://releases.aspose.com/words/python/). بالإضافة إلى ذلك، تأكد من أن لديك مستند Word جاهزًا للاختبار.
+ قبل أن نتعمق في التعليمات البرمجية، تأكد من تثبيت Python ومكتبة Aspose.Words. يمكنك تحميل المكتبة من الموقع[هنا](https://releases.aspose.com/words/python/). بالإضافة إلى ذلك، تأكد من أن لديك مستند Word جاهزًا للاختبار.
 
 ## تثبيت Aspose.Words لبيثون
 

@@ -339,7 +339,7 @@ Aspose.Words for Java 提供了全面的功能，可用于在 Word 文档中查�
 
 ### 如何下载 Aspose.Words for Java？
 
-您可以从网站下载 Aspose.Words for Java，网址：[此链接](https://releases.aspose.com/words/java/).
+您可以从网站下载 Aspose.Words for Java，网址为：[此链接](https://releases.aspose.com/words/java/).
 
 ### 我可以使用正则表达式进行文本替换吗？
 

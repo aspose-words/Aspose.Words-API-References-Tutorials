@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 
 #### Q：設定多個字體資料夾是否會影響使用 Aspose.Words 處理的所有文件？
 
-答：是的，設定多個字體資料夾會影響使用 Aspose.Words 處理的所有文件。定義字體資料夾後，Aspose.Words 將使用這些位置在所有文件中搜尋字體。
+答：是的，設定多個字體資料夾會影響使用 Aspose.Words 處理的所有文件。定義字體資料夾後，Aspose.Words 將使用這些位置來搜尋所有文件中的字體。
 
 #### Q：我可以在 Aspose.Words 中定義多少個字體資料夾？
 

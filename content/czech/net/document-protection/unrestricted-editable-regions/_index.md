@@ -96,7 +96,7 @@ Upravitelný rozsah není úplný bez konce. Dále to přidáme.
    ```csharp
    EditableRangeEnd edRangeEnd = builder.EndEditableRange();
    ```
-2. Přidat text jen pro čtení mimo rozsah: Vložení textu mimo upravitelný rozsah pro demonstraci ochrany.
+2. Přidat text jen pro čtení mimo rozsah: Chcete-li předvést ochranu, vložte text mimo upravitelný rozsah.
    ```csharp
    builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
    ```

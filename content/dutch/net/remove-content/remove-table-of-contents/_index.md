@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/remove-content/remove-table-of-contents/
 ---
-## Verwijder de inhoudsopgave in een Word-document met Aspose.Words voor .NET
+## Invoering
 
 Bent u het beu om met een ongewenste inhoudsopgave (TOC) in uw Word-documenten te kampen? We hebben het allemaal meegemaakt; soms is de TOC gewoon niet nodig. Gelukkig voor jou maakt Aspose.Words voor .NET het gemakkelijk om een inhoudsopgave programmatisch te verwijderen. In deze tutorial leid ik je stap voor stap door het proces, zodat je het binnen de kortste keren onder de knie hebt. Laten we er meteen in duiken!
 
@@ -41,7 +41,7 @@ Voordat we uw document kunnen manipuleren, moeten we definiëren waar het zich b
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"`met het pad naar uw documentmap. Dit is waar uw Word-bestand zich bevindt.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw documentmap. Dit is waar uw Word-bestand zich bevindt.
 
 ## Stap 2: Laad het document
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Dit is wat er gebeurt:
 - `doc.Range.Fields`: Hiermee heeft u toegang tot alle velden in het document.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: Hiermee worden de velden gefilterd om alleen de inhoudsopgaven te vinden.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Hiermee worden de velden gefilterd om alleen de inhoudsopgaven te vinden.
 - `.ToList().ForEach(f => f.Remove())`: Dit converteert de gefilterde velden naar een lijst en verwijdert ze allemaal.
 
 ## Stap 4: Sla het gewijzigde document op
@@ -83,22 +83,22 @@ En daar heb je het! Het verwijderen van een inhoudsopgave uit een Word-document 
 
 ## Veelgestelde vragen
 
-### 1. Wat is Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
 
 Aspose.Words voor .NET is een robuuste .NET-bibliotheek voor documentmanipulatie, waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren.
 
-### 2. Kan ik Aspose.Words gratis gebruiken?
+### Kan ik Aspose.Words gratis gebruiken?
 
  Ja, je kunt Aspose.Words gebruiken met een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
-### 3. Is het mogelijk om andere velden te verwijderen met Aspose.Words?
+### Is het mogelijk om andere velden te verwijderen met Aspose.Words?
 
 Absoluut! U kunt elk veld verwijderen door het type ervan op te geven in de filtervoorwaarde.
 
-### 4. Heb ik Visual Studio nodig om Aspose.Words te gebruiken?
+### Heb ik Visual Studio nodig om Aspose.Words te gebruiken?
 
 Hoewel Visual Studio ten zeerste wordt aanbevolen vanwege het gemak van de ontwikkeling, kunt u elke IDE gebruiken die .NET ondersteunt.
 
-### 5. Waar kan ik meer informatie vinden over Aspose.Words?
+### Waar kan ik meer informatie vinden over Aspose.Words?
 
  Voor meer gedetailleerde documentatie, bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/).

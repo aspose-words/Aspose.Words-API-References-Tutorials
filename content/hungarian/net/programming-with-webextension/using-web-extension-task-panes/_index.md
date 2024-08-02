@@ -2,40 +2,86 @@
 title: Webbővítmény munkaablak használata
 linktitle: Webbővítmény munkaablak használata
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a webbővítmény munkaablakok használatához az Aspose.Words for .NET használatával.
+description: Ebből a részletes, lépésenkénti oktatóanyagból megtudhatja, hogyan adhat hozzá és konfigurálhat webbővítmény munkaablakokat Word dokumentumokhoz az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-webextension/using-web-extension-task-panes/
 ---
+## Bevezetés
 
-Ez a cikk lépésről lépésre bemutatja a webbővítmény munkaablakainak használatát az Aspose.Words for .NET programmal. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan adhat hozzá és konfigurálhat munkaablakokat webbővítményekhez.
+Üdvözöljük ebben a részletes oktatóanyagban a webbővítmény munkaablakok használatáról Word-dokumentumban az Aspose.Words for .NET használatával. Ha valaha is szerette volna Word-dokumentumait interaktív munkaablakokkal bővíteni, akkor jó helyen jár. Ez az útmutató végigvezeti Önt minden lépésen, hogy ezt zökkenőmentesen elérje.
 
-Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
+## Előfeltételek
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
+Mielőtt belemerülnénk, győződjünk meg arról, hogy mindent megvan, amire szüksége van:
 
- A kezdéshez meg kell határoznia annak a könyvtárnak az elérési útját, ahová a generált dokumentumot menteni szeretné. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+-  Aspose.Words for .NET: Letöltheti[itt](https://releases.aspose.com/words/net/).
+- .NET fejlesztői környezet: Visual Studio vagy bármely más IDE, amit szeretne.
+- Alapvető C# ismerete: Ez segít a kódpéldák követésében.
+-  Licenc az Aspose.Words számára: Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
+
+## Névterek importálása
+
+kódolás megkezdése előtt győződjön meg arról, hogy a következő névtereket importálta a projektbe:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.WebExtensions;
+```
+
+## Útmutató lépésről lépésre
+
+Most bontsuk le a folyamatot könnyen követhető lépésekre.
+
+### 1. lépés: A dokumentumkönyvtár beállítása
+
+Először is be kell állítanunk a dokumentumkönyvtár elérési útját. Ide kerül mentésre a Word-dokumentum.
+
+```csharp
+// A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 2. lépés: Hozzon létre és konfiguráljon egy munkaablakot
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentummappa tényleges elérési útjával.
 
- Létrehozunk a`TaskPane` objektumot, és adja hozzá a dokumentumhoz`s `WebExtensionTaskPanes gyűjtemény. Ezután konfiguráljuk a munkaablak tulajdonságait, például dokkolt állapotát, láthatóságát és szélességét.
+### 2. lépés: Új dokumentum létrehozása
+
+Ezután létrehozunk egy új Word-dokumentumot az Aspose.Words használatával.
 
 ```csharp
 Document doc = new Document();
+```
 
+ Ez a sor inicializálja a`Document` osztály, amely egy Word dokumentumot képvisel.
+
+### 3. lépés: Feladatablak hozzáadása
+
+Most hozzáadunk egy munkaablakot a dokumentumunkhoz. A munkaablakok hasznosak további funkciók és eszközök biztosításához a Word-dokumentumokban.
+
+```csharp
 TaskPane taskPane = new TaskPane();
 doc.WebExtensionTaskPanes.Add(taskPane);
+```
 
+ Itt létrehozunk egy újat`TaskPane` objektumot, és adja hozzá a dokumentumhoz`WebExtensionTaskPanes` Gyűjtemény.
+
+### 4. lépés: A munkaablak konfigurálása
+
+A munkaablak láthatóvá tételéhez és tulajdonságainak beállításához a következő kódot használjuk:
+
+```csharp
 taskPane.DockState = TaskPaneDockState.Right;
 taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-Beállítjuk a webbővítmény hitelesítő adatait is, beleértve a katalógusazonosítót, a verziót és az üzlet típusát.
+- `DockState` beállítja, hogy hol jelenjen meg a Feladatablak. Ebben az esetben a jobb oldalon van.
+- `IsVisible` biztosítja a munkaablak láthatóságát.
+- `Width` beállítja a munkaablak szélességét.
+
+### 5. lépés: A webbővítmény referencia beállítása
+
+Ezután beállítjuk a Web Extension Reference-t, amely tartalmazza az azonosítót, a verziót, az áruház típusát és az áruházat.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -44,77 +90,78 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-Végül tulajdonságokat és kötéseket adunk a webbővítményhez.
+- `Id` webbővítmény egyedi azonosítója.
+- `Version` megadja a kiterjesztés verzióját.
+- `StoreType` az üzlet típusát jelzi (jelen esetben OMEX).
+- `Store` megadja az üzlet nyelvi/kultúra kódját.
+
+### 6. lépés: Tulajdonságok hozzáadása a webbővítményhez
+
+Tulajdonságokat adhat a webbővítményhez, hogy meghatározza annak viselkedését vagy tartalmát.
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
-taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
-	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## 3. lépés: Mentse el és töltse be a dokumentumot
+ Itt adunk hozzá egy nevű tulajdonságot`mailchimpCampaign`.
 
-A dokumentumot a megadott könyvtárban konfigurált munkaablakokkal mentjük.
+### 7. lépés: A webbővítmény összerendelése
+
+Végül kötéseket adunk a webbővítményünkhöz. A kötések lehetővé teszik, hogy a kiterjesztést a dokumentum meghatározott részeihez kapcsolja.
+
+```csharp
+taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545", WebExtensionBindingType.Text, "194740422"));
+```
+
+- `UnnamedBinding_0_1506535429545` a kötés neve.
+- `WebExtensionBindingType.Text` azt jelzi, hogy a kötés szöveges típusú.
+- `194740422` a dokumentum azon részének azonosítója, amelyhez a kiterjesztés hozzá van kötve.
+
+### 8. lépés: A dokumentum mentése
+
+Miután mindent beállított, mentse el a dokumentumot.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## 4. lépés: Jelenítse meg a munkaablak adatait
+Ez a sor menti a dokumentumot a megadott könyvtárba a megadott fájlnévvel.
 
-Ezután betöltjük a dokumentumot, és megjelenítjük a munkaablak forrásinformációit.
+### 9. lépés: A munkaablak információinak betöltése és megjelenítése
+
+munkaablak információinak ellenőrzéséhez és megjelenítéséhez betöltjük a dokumentumot, és ismételjük a munkaablakokon.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-Console.WriteLine("Task Panes Sources:\n");
 
-foreach(TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
+Console.WriteLine("Task panes sources:\n");
+
+foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
 {
-WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
-
-
-Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version}\", catalog id: \"{reference.Id}\";");
+    WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
+    Console.WriteLine($"Provider: \"{reference.Store}\", version: \"{reference.Version}\", catalog identifier: \"{reference.Id}\";");
 }
 ```
 
-Ez minden ! Sikeresen használta az Aspose.Words for .NET webbővítmény munkaablakait.
+Ez a kód betölti a dokumentumot, és kinyomtatja a konzol minden egyes munkaablakának szolgáltatóját, verzióját és katalógusazonosítóját.
 
-### Példa forráskódra webbővítmény munkaablakok használatához az Aspose.Words for .NET használatával
+## Következtetés
 
+És ez az! Sikeresen hozzáadott és konfigurált egy webbővítmény munkaablakot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony funkció jelentősen javíthatja Word-dokumentumait, mivel további funkciókat biztosít közvetlenül a dokumentumon belül. 
 
-```csharp
+## GYIK
 
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
+### Mi az a munkaablak a Wordben?
+A munkaablak olyan felületelem, amely további eszközöket és funkciókat biztosít a Word-dokumentumban, javítva a felhasználói interakciót és a termelékenységet.
 
-	TaskPane taskPane = new TaskPane();
-	doc.WebExtensionTaskPanes.Add(taskPane);
+### Testreszabhatom a munkaablak megjelenését?
+ Igen, testreszabhatja a munkaablak megjelenését a tulajdonságok beállításával, mint pl`DockState`, `IsVisible` , és`Width`.
 
-	taskPane.DockState = TaskPaneDockState.Right;
-	taskPane.IsVisible = true;
-	taskPane.Width = 300;
+### Mik azok a webbővítmény tulajdonságai?
+A webbővítmény tulajdonságai egyéni tulajdonságok, amelyeket hozzáadhat egy webbővítményhez, hogy meghatározza annak viselkedését vagy tartalmát.
 
-	taskPane.WebExtension.Reference.Id = "wa102923726";
-	taskPane.WebExtension.Reference.Version = "1.0.0.0";
-	taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
-	taskPane.WebExtension.Reference.Store = "th-TH";
-	taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
-	taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
-		WebExtensionBindingType.Text, "194740422"));
+### Hogyan köthetek webbővítményt a dokumentum egy részéhez?
+ A webbővítményt a dokumentum egy részéhez kötheti a`WebExtensionBinding` osztályban, megadva a kötés típusát és a célazonosítót.
 
-	doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-	
-	
-	
-	doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-	
-	Console.WriteLine("Task panes sources:\n");
-
-	foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
-	{
-		WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
-		Console.WriteLine($"Provider: \"{reference.Store}\", version: \"{reference.Version}\", catalog identifier: \"{reference.Id}\";");
-	}
- 
-```
+### Hol találhatok további információt az Aspose.Words for .NET-ről?
+ Részletes dokumentációt találhat[itt](https://reference.aspose.com/words/net/).

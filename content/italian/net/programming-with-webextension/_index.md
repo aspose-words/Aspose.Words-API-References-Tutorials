@@ -16,4 +16,4 @@ Seguendo questi tutorial potrai sfruttare appieno le funzionalità delle estensi
 ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Utilizzo dei riquadri attività delle estensioni Web](./using-web-extension-task-panes/) | Guida dettagliata all'utilizzo dei pannelli attività delle estensioni Web con Aspose.Words per .NET. |
+| [Utilizzo dei riquadri attività delle estensioni Web](./using-web-extension-task-panes/) | Scopri come aggiungere e configurare i riquadri attività delle estensioni Web nei documenti di Word utilizzando Aspose.Words per .NET in questo tutorial dettagliato e dettagliato. |

@@ -12,6 +12,6 @@ url: /ko/net/working-with-textboxes/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Word에서 링크 만들기](./create-a-link/) | .NET용 Aspose.Words를 사용하여 Word 문서의 TextBox 간에 Word로 링크를 만드는 방법을 알아보세요. |
-| [확인 순서](./check-sequence/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 TextBox의 순서를 확인하는 방법을 알아보세요. |
-| [Word 문서에서 앞으로 링크 끊기](./break-a-link/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 정방향 링크를 끊는 방법을 알아보세요. |
+| [Word에서 텍스트 상자 연결](./create-a-link/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 텍스트 상자를 만들고 연결하는 방법을 알아보세요. 원활한 문서 사용자 정의를 위한 포괄적인 가이드를 따르십시오! |
+| [Word에서 TextBox 시퀀스 확인](./check-sequence/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 텍스트 상자의 순서를 확인하는 방법을 알아보세요. 마스터 문서 흐름에 대한 자세한 가이드를 따르세요! |
+| [Word 문서에서 앞으로 링크 끊기](./break-a-link/) | .NET용 Aspose.Words를 사용하여 Word 문서 텍스트 상자의 정방향 링크를 끊는 방법을 알아보세요. 보다 원활한 문서 관리 경험을 위해 가이드를 따르십시오. |

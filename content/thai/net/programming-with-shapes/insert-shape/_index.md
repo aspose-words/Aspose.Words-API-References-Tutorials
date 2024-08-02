@@ -2,77 +2,120 @@
 title: แทรกรูปร่าง
 linktitle: แทรกรูปร่าง
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีแทรกรูปร่างลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีแทรกและจัดการรูปร่างในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนของเรา
 type: docs
 weight: 10
 url: /th/net/programming-with-shapes/insert-shape/
 ---
+## การแนะนำ
 
-บทช่วยสอนนี้จะอธิบายวิธีแทรกรูปร่างลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET สามารถใช้รูปร่างเพื่อปรับปรุงรูปลักษณ์และเค้าโครงของเอกสารของคุณได้
+เมื่อพูดถึงการสร้างเอกสาร Word ที่ดึงดูดสายตาและมีโครงสร้างที่ดี รูปร่างสามารถมีบทบาทสำคัญได้ ไม่ว่าคุณจะเพิ่มลูกศร กล่อง หรือแม้แต่รูปร่างที่กำหนดเองที่ซับซ้อน ความสามารถในการจัดการองค์ประกอบเหล่านี้โดยทางโปรแกรมจะให้ความยืดหยุ่นที่ไม่มีใครเทียบได้ ในบทช่วยสอนนี้ เราจะสำรวจวิธีการแทรกและจัดการรูปร่างในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
 
 ## ข้อกำหนดเบื้องต้น
-หากต้องการติดตามบทช่วยสอนนี้ คุณจะต้องมีสิ่งต่อไปนี้:
 
-- ติดตั้ง Aspose.Words สำหรับไลบรารี .NET แล้ว
-- ความรู้พื้นฐานเกี่ยวกับ C# และการประมวลผลคำด้วยเอกสาร Word
+ก่อนที่จะเข้าสู่บทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
 
-## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
+1.  Aspose.Words สำหรับ .NET: ดาวน์โหลดและติดตั้งเวอร์ชันล่าสุดจาก[กำหนดหน้าการเผยแพร่](https://releases.aspose.com/words/net/).
+2. สภาพแวดล้อมการพัฒนา: สภาพแวดล้อมการพัฒนา .NET ที่เหมาะสม เช่น Visual Studio
+3. ความรู้พื้นฐานของ C#: ความคุ้นเคยกับภาษาการเขียนโปรแกรม C# และแนวคิดพื้นฐาน
+
+## นำเข้าเนมสเปซ
+
+ในการเริ่มต้น คุณจะต้องนำเข้าเนมสเปซที่จำเป็นในโปรเจ็กต์ C# ของคุณ:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## ขั้นตอนที่ 2: สร้างเอกสารใหม่และ DocumentBuilder
- สร้างอินสแตนซ์ใหม่ของ`Document` คลาสและก`DocumentBuilder` คัดค้านการทำงานกับเอกสาร
+## ขั้นตอนที่ 1: ตั้งค่าโครงการของคุณ
+
+ก่อนที่คุณจะเริ่มแทรกรูปร่างได้ คุณต้องตั้งค่าโปรเจ็กต์ของคุณและเพิ่มไลบรารี Aspose.Words สำหรับ .NET ก่อน
+
+1. สร้างโครงการใหม่: เปิด Visual Studio และสร้างโครงการแอปพลิเคชันคอนโซล C# ใหม่
+2. เพิ่ม Aspose.Words สำหรับ .NET: ติดตั้งไลบรารี Aspose.Words สำหรับ .NET ผ่าน NuGet Package Manager
+
+```bash
+Install-Package Aspose.Words
+```
+
+## ขั้นตอนที่ 2: เริ่มต้นเอกสาร
+
+ขั้นแรก คุณจะต้องเริ่มต้นเอกสารใหม่และตัวสร้างเอกสาร ซึ่งจะช่วยในการสร้างเอกสาร
 
 ```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// เริ่มต้นเอกสารใหม่
 Document doc = new Document();
+
+// เตรียมใช้งาน DocumentBuilder เพื่อช่วยสร้างเอกสาร
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: แทรกรูปร่าง
- ใช้`InsertShape` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกรูปร่างลงในเอกสาร ระบุประเภทรูปร่าง ตำแหน่งแนวนอนและแนวตั้งที่สัมพันธ์กัน ขนาดหน้า ขนาด และประเภทการตัด คุณยังสามารถกำหนดมุมการหมุนของรูปร่างได้หากต้องการ
+
+ตอนนี้ เรามาแทรกรูปร่างลงในเอกสารกันดีกว่า เราจะเริ่มต้นด้วยการเพิ่มกล่องข้อความธรรมดา
 
 ```csharp
-Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
-	RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
-shape.Rotation = 30.0;
-builder.Writeln();
-shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
+// แทรกรูปร่างกล่องข้อความลงในเอกสาร
+Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100, RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
+
+// หมุนรูปร่าง
 shape.Rotation = 30.0;
 ```
 
-## ขั้นตอนที่ 4: บันทึกเอกสาร
- บันทึกเอกสารไปยังไดเร็กทอรีที่ระบุโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithShapes.InsertShape.docx"
+ในตัวอย่างนี้ เราแทรกกล่องข้อความที่ตำแหน่ง (100, 100) โดยมีความกว้างและความสูงช่องละ 50 หน่วย เรายังหมุนรูปร่าง 30 องศา
+
+## ขั้นตอนที่ 4: เพิ่มรูปร่างอื่น
+
+มาเพิ่มรูปร่างอื่นให้กับเอกสาร คราวนี้โดยไม่ต้องระบุตำแหน่ง
 
 ```csharp
+// เพิ่มรูปร่างกล่องข้อความอื่น
+Shape secondShape = builder.InsertShape(ShapeType.TextBox, 50, 50);
+
+// หมุนรูปร่าง
+secondShape.Rotation = 30.0;
+```
+
+ข้อมูลโค้ดนี้จะแทรกกล่องข้อความอื่นที่มีขนาดและการหมุนเหมือนกับกล่องแรกแต่ไม่ได้ระบุตำแหน่ง
+
+## ขั้นตอนที่ 5: บันทึกเอกสาร
+
+ หลังจากเพิ่มรูปร่างแล้ว ขั้นตอนสุดท้ายคือการบันทึกเอกสาร เราจะใช้`OoxmlSaveOptions` เพื่อระบุรูปแบบการบันทึก
+
+```csharp
+// กำหนดตัวเลือกการบันทึกตามข้อกำหนด
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 {
-	Compliance = OoxmlCompliance.Iso29500_2008_Transitional
+    Compliance = OoxmlCompliance.Iso29500_2008_Transitional
 };
+
+// บันทึกเอกสาร
 doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับการแทรกรูปร่างโดยใช้ Aspose.Words สำหรับ .NET 
+## บทสรุป
 
-```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+และคุณก็ได้แล้ว! คุณได้แทรกและปรับแต่งรูปร่างในเอกสาร Word สำเร็จโดยใช้ Aspose.Words สำหรับ .NET บทช่วยสอนนี้ครอบคลุมพื้นฐาน แต่ Aspose.Words นำเสนอคุณสมบัติขั้นสูงอีกมากมายสำหรับการทำงานกับรูปร่าง เช่น สไตล์ที่กำหนดเอง ตัวเชื่อมต่อ และรูปร่างกลุ่ม
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
-		RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
-	shape.Rotation = 30.0;
-	builder.Writeln();
-	shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
-	shape.Rotation = 30.0;
-	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
-	{
-		Compliance = OoxmlCompliance.Iso29500_2008_Transitional
-	};
-	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
-```
+ หากต้องการข้อมูลรายละเอียดเพิ่มเติม โปรดไปที่[Aspose.Words สำหรับเอกสาร .NET](https://reference.aspose.com/words/net/).
 
-แค่นั้นแหละ! คุณได้แทรกรูปร่างลงในเอกสาร Word ของคุณสำเร็จแล้วโดยใช้ Aspose.Words for .NET
+## คำถามที่พบบ่อย
+
+### ฉันจะแทรกรูปร่างประเภทต่างๆ ได้อย่างไร
+คุณสามารถเปลี่ยน`ShapeType` ใน`InsertShape` วิธีการแทรกรูปทรงต่างๆ เช่น วงกลม สี่เหลี่ยม และลูกศร
+
+### ฉันสามารถเพิ่มข้อความภายในรูปร่างได้หรือไม่
+ ใช่ คุณสามารถใช้`builder.Write` วิธีการเพิ่มข้อความภายในรูปร่างหลังจากแทรกแล้ว
+
+### สามารถจัดรูปแบบรูปร่างได้หรือไม่?
+ ใช่ คุณสามารถจัดสไตล์รูปร่างได้โดยการตั้งค่าคุณสมบัติ เช่น`FillColor`, `StrokeColor` , และ`StrokeWeight`.
+
+### ฉันจะวางตำแหน่งรูปร่างให้สัมพันธ์กับองค์ประกอบอื่นๆ ได้อย่างไร
+ ใช้`RelativeHorizontalPosition`และ`RelativeVerticalPosition` คุณสมบัติในการวางตำแหน่งรูปร่างสัมพันธ์กับองค์ประกอบอื่นๆ ในเอกสาร
+
+### ฉันสามารถจัดกลุ่มรูปร่างหลายแบบเข้าด้วยกันได้หรือไม่
+ ใช่ Aspose.Words สำหรับ .NET ช่วยให้คุณสามารถจัดกลุ่มรูปร่างโดยใช้`GroupShape` ระดับ.

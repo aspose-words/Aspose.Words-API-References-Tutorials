@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 ## 常見問題解答
 
 ### 我可以一次載入多個頁面範圍嗎？
-Aspose.Words 允許您一次指定單一範圍的頁面。要載入多個範圍，您需要單獨載入它們，然後將它們組合起來。
+Aspose.Words 允許您一次指定一個頁面範圍。要載入多個範圍，您需要單獨載入它們，然後將它們組合起來。
 
 ### Aspose.Words for .NET 與 .NET Core 相容嗎？
 是的，Aspose.Words for .NET 與 .NET Core 完全相容，使其適用於各種專案類型。

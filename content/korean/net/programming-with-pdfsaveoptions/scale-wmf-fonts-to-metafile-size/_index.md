@@ -11,7 +11,7 @@ url: /ko/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 
 PDF 파일, 특히 WMF(Windows Metafile) 그래픽이 포함된 Word 문서에서 생성된 파일로 작업할 때 크기 관리는 문서 처리의 중요한 측면이 될 수 있습니다. PDF 크기를 제어하는 한 가지 방법은 문서 내에서 WMF 글꼴이 렌더링되는 방식을 조정하는 것입니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 WMF 글꼴을 메타파일 크기로 조정하여 PDF 크기를 줄이는 방법을 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 단계를 시작하기 전에 다음 사항을 확인하세요.
 

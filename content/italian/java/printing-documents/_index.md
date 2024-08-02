@@ -30,4 +30,4 @@ In questo articolo ti abbiamo presentato il mondo della stampa di documenti util
 
 ## Esercitazioni sulla stampa di documenti
 ### [Stampa di documenti in Aspose.Words per Java](./printing-documents/)
-Scopri come stampare documenti utilizzando Aspose.Words per Java. Guida passo passo per una stampa senza interruzioni nelle tue applicazioni Java.
+Scopri come stampare documenti utilizzando Aspose.Words per Java. Guida passo passo per stampare senza problemi nelle tue applicazioni Java.

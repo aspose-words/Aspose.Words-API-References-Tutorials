@@ -33,7 +33,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## إنشاء مهمة طباعة
 
-بعد ذلك، سنقوم بإنشاء مهمة طباعة لطباعة المستند الذي تم تحميله. يقوم مقتطف الكود أدناه بتهيئة مهمة طباعة ويضبط إعدادات الطابعة المطلوبة.
+بعد ذلك، سنقوم بإنشاء مهمة طباعة لطباعة المستند الذي تم تحميله. يقوم مقتطف الكود أدناه بتهيئة مهمة الطباعة وتعيين إعدادات الطابعة المطلوبة.
 
 ```java
 // قم بإنشاء مهمة طباعة لطباعة وثيقتنا بها.
@@ -131,7 +131,7 @@ class MultipagePrintDocument implements Printable
                 if (mPrintPageBorders) {
                     // احصل على الحجم الحقيقي للصفحة بنسبة 100% بالنقاط.
                     Point2D.Float pageSize = mDocument.getPageInfo(pageIndex).getSizeInPoints();
-                    // ارسم الحد حول الصفحة التي تم تغيير حجمها باستخدام عامل القياس المعروف.
+                    // ارسم الحدود حول الصفحة التي تم تغيير حجمها باستخدام عامل القياس المعروف.
                     g.setColor(Color.black);
                     g.drawRect(leftPos, topPos, (int) (pageSize.x * scale), (int) (pageSize.y * scale));
                     // ارسم الحد حول العنصر النائب للصورة المصغرة.

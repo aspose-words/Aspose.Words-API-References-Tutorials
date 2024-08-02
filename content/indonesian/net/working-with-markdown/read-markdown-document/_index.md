@@ -73,4 +73,4 @@ J: Pustaka .NET yang direkomendasikan untuk memanipulasi dokumen Markdown adalah
 
 #### T: Bagaimana cara menangani kesalahan saat membaca dokumen Markdown?
 
-J: Saat membaca dokumen Markdown menggunakan .NET, disarankan untuk menerapkan penanganan kesalahan yang tepat. Anda dapat menggunakan mekanisme penanganan pengecualian untuk mendeteksi dan menangani kesalahan apa pun saat menguraikan dokumen Penurunan Harga.
+J: Saat membaca dokumen Markdown menggunakan .NET, disarankan untuk menerapkan penanganan kesalahan yang tepat. Anda dapat menggunakan mekanisme penanganan pengecualian untuk mendeteksi dan menangani kesalahan apa pun saat menguraikan dokumen Penurunan harga.

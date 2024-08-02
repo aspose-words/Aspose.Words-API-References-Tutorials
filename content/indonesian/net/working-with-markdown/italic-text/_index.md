@@ -46,7 +46,7 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur teks miring deng
 
 #### T: Bagaimana cara membuat teks miring di Aspose.Words?
 
- A: Untuk membuat teks miring di Aspose.Words, Anda dapat menggunakan`Font.Italic` properti dari`Run`obyek. Anda dapat mengatur properti ini menjadi`true` untuk mencetak miring teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.Italic=true` untuk mencetak miring teks yang terdapat dalam`Run` obyek.
+ A: Untuk membuat teks miring di Aspose.Words, Anda dapat menggunakan`Font.Italic` properti dari`Run` obyek. Anda dapat mengatur properti ini menjadi`true` untuk mencetak miring teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.Italic=true` untuk mencetak miring teks yang terdapat dalam`Run` obyek.
 
 #### Q: Apakah mungkin untuk mencetak miring beberapa bagian teks dalam satu paragraf?
 

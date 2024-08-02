@@ -11,7 +11,7 @@ url: /ko/net/join-and-append-documents/ignore-header-footer/
 
 Word 문서를 병합하는 것은 때때로 약간 까다로울 수 있습니다. 특히 머리글 및 바닥글과 같은 다른 부분을 무시하고 일부 부분을 그대로 유지하려는 경우 더욱 그렇습니다. 운 좋게도 .NET용 Aspose.Words는 이를 처리하는 우아한 방법을 제공합니다. 이 튜토리얼에서는 프로세스를 단계별로 안내하여 모든 부분을 이해할 수 있도록 하겠습니다. 마치 친구와 대화하는 것처럼 가볍고, 대화적이고, 흥미를 끄는 대화를 유지하겠습니다. 준비가 된? 뛰어들어보자!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
@@ -36,7 +36,7 @@ using Aspose.Words.Saving;
 Visual Studio에서 새 콘솔 앱 프로젝트를 만드는 것부터 시작해 보겠습니다.
 
 1. 비주얼 스튜디오를 엽니다.
-2. "새 프로젝트 만들기"를 선택합니다.
+2. "새 프로젝트 만들기"를 선택하세요.
 3. "콘솔 앱(.NET Core)"을 선택합니다.
 4. 프로젝트 이름을 지정하고 "만들기"를 클릭하세요.
 
@@ -125,4 +125,4 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ### .NET용 Aspose.Words에 대한 추가 예제와 문서는 어디서 찾을 수 있나요?
 
- 다음에서 포괄적인 문서와 예제를 찾을 수 있습니다.[Aspose 웹 사이트](https://reference.aspose.com/words/net/).
+ 다음에서 포괄적인 문서와 예제를 찾을 수 있습니다.[Aspose 웹사이트](https://reference.aspose.com/words/net/).

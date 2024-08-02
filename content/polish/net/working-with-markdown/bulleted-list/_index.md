@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-markdown/bulleted-list/
 ---
 
-tym samouczku powiemy Ci, jak utworzyć listę punktowaną za pomocą Aspose.Words dla .NET. Lista punktowana służy do wyszczególniania elementów bez stosowania numeracji.
+W tym samouczku powiemy Ci, jak utworzyć listę punktowaną za pomocą Aspose.Words dla .NET. Lista punktowana służy do wyszczególniania elementów bez stosowania numeracji.
 
 ## Krok 1: Korzystanie z generatora dokumentów
 

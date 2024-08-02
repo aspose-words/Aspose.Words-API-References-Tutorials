@@ -31,7 +31,7 @@ Mari kita uraikan proses menampilkan kesalahan tata bahasa dan ejaan di dokumen 
 
 ## Langkah 1: Siapkan Proyek Anda
 
- Sebelum kita mendalami kodenya, pastikan proyek Anda sudah diatur dengan benar. Buka IDE Anda dan buat proyek .NET baru. Tambahkan referensi ke perpustakaan Aspose.Words. Jika Anda belum mendownloadnya, Anda bisa mendapatkannya dari[Di Sini](https://releases.aspose.com/words/net/).
+ Sebelum kita mendalami kodenya, pastikan proyek Anda sudah disiapkan dengan benar. Buka IDE Anda dan buat proyek .NET baru. Tambahkan referensi ke perpustakaan Aspose.Words. Jika Anda belum mendownloadnya, Anda bisa mendapatkannya dari[Di Sini](https://releases.aspose.com/words/net/).
 
 ## Langkah 2: Tentukan Direktori Dokumen
 

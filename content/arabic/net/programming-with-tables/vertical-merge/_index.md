@@ -2,104 +2,117 @@
 title: دمج عمودي
 linktitle: دمج عمودي
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words لـ .NET.
+description: أتقن الدمج الرأسي في جداول Word باستخدام Aspose.Words لـ .NET مع هذا الدليل التفصيلي. تعرف على الإرشادات خطوة بخطوة لتنسيق المستندات بشكل احترافي.
 type: docs
 weight: 10
 url: /ar/net/programming-with-tables/vertical-merge/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سوف نتعلم كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. سنتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي، ستتمكن من دمج الخلايا عموديًا في جداولك في مستندات Word.
+هل سبق لك أن وجدت نفسك متشابكًا في تعقيدات التعامل مع الجداول في مستندات Word؟ باستخدام Aspose.Words for .NET، يمكنك تبسيط عملك وجعل مستنداتك أكثر تنظيمًا وجاذبية بصريًا. في هذا البرنامج التعليمي، سوف نتعمق في عملية الدمج الرأسي في الجداول، وهي ميزة مفيدة تسمح لك بدمج الخلايا عموديًا، مما يؤدي إلى إنشاء تدفق سلس للبيانات. سواء كنت تقوم بإنشاء فواتير أو تقارير أو أي مستند يتضمن بيانات جدولية، فإن إتقان الدمج الرأسي يمكن أن ينقل تنسيق المستند إلى المستوى التالي.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وقم بإنشاء مشروع C# جديد.
-2. قم بإضافة مرجع إلى مكتبة Aspose.Words for .NET.
+## المتطلبات الأساسية
 
-## الخطوة 2: تحميل الوثيقة
-لبدء معالجة الكلمات مع المستند، اتبع الخطوات التالية:
+قبل أن ننتقل إلى التفاصيل الجوهرية للدمج العمودي، دعنا نتأكد من إعداد كل شيء للحصول على تجربة سلسة. إليك ما ستحتاج إليه:
+
+-  Aspose.Words for .NET: تأكد من تثبيت Aspose.Words for .NET. إذا لم يكن الأمر كذلك، يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+- بيئة التطوير: بيئة تطوير عمل مثل Visual Studio.
+- المعرفة الأساسية بـ C#: الإلمام بلغة البرمجة C# سيكون مفيدًا.
+
+## استيراد مساحات الأسماء
+
+لبدء العمل مع Aspose.Words، ستحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروعك. يمكن القيام بذلك عن طريق إضافة الأسطر التالية في بداية الكود الخاص بك:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+الآن بعد أن وضعنا متطلباتنا الأساسية وتم استيراد مساحات الأسماء، فلننتقل إلى الدليل التفصيلي خطوة بخطوة للدمج الرأسي.
+
+## الخطوة 1: إعداد المستند الخاص بك
+
+الخطوة الأولى هي إعداد مستند جديد ومنشئ المستندات. سيساعدنا منشئ المستندات على إضافة العناصر ومعالجتها بسهولة داخل المستند.
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// إنشاء مستند جديد
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل مستنداتك" بالمسار الفعلي لدليل مستنداتك.
+هنا، نقوم بإنشاء مستند جديد وتهيئة كائن DocumentBuilder للعمل مع مستندنا.
 
-## الخطوة 3: دمج الخلايا عموديًا
-بعد ذلك سنقوم بدمج الخلايا عموديًا في الجدول. استخدم الكود التالي:
+## الخطوة 2: إدخال الخلية الأولى
+
+الآن، دعونا ندرج الخلية الأولى في جدولنا ونضبط الدمج الرأسي الخاص بها على الخلية الأولى في النطاق المدمج.
 
 ```csharp
-// أدخل خلية
-builder. InsertCell();
-
-// قم بتطبيق الدمج العمودي على الخلية الأولى
+builder.InsertCell();
 builder.CellFormat.VerticalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
-
-// أدخل خلية أخرى
-builder. InsertCell();
-
-// لا يتم تطبيق أي دمج رأسي على الخلية
-builder.CellFormat.VerticalMerge = CellMerge.None;
-builder.Write("Text in a cell");
-builder. EndRow();
-
-// أدخل خلية
-builder. InsertCell();
-
-// قم بتطبيق الدمج العمودي مع الخلية السابقة
-builder.CellFormat.VerticalMerge = CellMerge.Previous;
-
-// أدخل خلية أخرى
-builder. InsertCell();
-
-// لا يتم تطبيق أي دمج رأسي على الخلية
-builder.CellFormat.VerticalMerge = CellMerge.None;
-builder.Write("Text in another cell");
-builder. EndRow();
-
-//إنهاء إنشاء الجدول
-builder. EndTable();
 ```
 
-في هذا الكود، نستخدم منشئ DocumentBuilder لإدراج الخلايا في الجدول. نحن نطبق الدمج الرأسي على الخلايا باستخدام خاصية CellFormat.VerticalMerge. نحن نستخدم CellMerge.First لدمج الخلية الأولى، وCellMerge.Previous للدمج مع الخلية السابقة، وCellMerge.None لعدم الدمج الرأسي.
+ في هذه الخطوة، نقوم بإدخال الخلية الأولى وضبط خاصية الدمج العمودي الخاصة بها على`CellMerge.First`، للإشارة إلى أن هذه هي خلية البداية للدمج. ثم نقوم بإضافة بعض النص إلى هذه الخلية.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا، نحتاج إلى حفظ المستند المعدل بالخلايا المدمجة. استخدم الكود التالي:
+## الخطوة 3: إدراج الخلية الثانية في نفس الصف
+
+بعد ذلك، نقوم بإدراج خلية أخرى في نفس الصف ولكن لا ندمجها عموديًا.
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.VerticalMerge = CellMerge.None;
+builder.Write("Text in one cell");
+builder.EndRow();
+```
+
+ هنا، نقوم بإدراج خلية، وضبط خاصية الدمج العمودي الخاصة بها على`CellMerge.None`، وأضف بعض النص إليها. ثم نقوم بإنهاء الصف الحالي.
+
+## الخطوة 4: إدراج الصف الثاني ودمجه عموديًا
+
+في هذه الخطوة نقوم بإدراج الصف الثاني ودمج الخلية الأولى عموديًا مع الخلية التي فوقها.
+
+```csharp
+builder.InsertCell();
+// يتم دمج هذه الخلية عموديًا في الخلية أعلاه ويجب أن تكون فارغة.
+builder.CellFormat.VerticalMerge = CellMerge.Previous;
+builder.InsertCell();
+builder.CellFormat.VerticalMerge = CellMerge.None;
+builder.Write("Text in another cell");
+builder.EndRow();
+builder.EndTable();
+```
+
+ نبدأ بإدراج خلية وتعيين خاصية الدمج الرأسي الخاصة بها على`CellMerge.Previous`، مما يشير إلى أنه يجب دمجه مع الخلية الموجودة فوقه. نقوم بعد ذلك بإدراج خلية أخرى في نفس الصف، وإضافة بعض النص إليها، وإنهاء الجدول.
+
+## الخطوة 5: حفظ المستند
+
+وأخيرًا، نقوم بحفظ وثيقتنا في الدليل المحدد.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
-
-### نموذج التعليمات البرمجية المصدر للدمج العمودي باستخدام Aspose.Words لـ .NET 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.InsertCell();
-	builder.CellFormat.VerticalMerge = CellMerge.First;
-	builder.Write("Text in merged cells.");
-	builder.InsertCell();
-	builder.CellFormat.VerticalMerge = CellMerge.None;
-	builder.Write("Text in one cell");
-	builder.EndRow();
-	builder.InsertCell();
-	// يتم دمج هذه الخلية عموديًا مع الخلية الموجودة أعلاه ويجب أن تكون فارغة.
-	builder.CellFormat.VerticalMerge = CellMerge.Previous;
-	builder.InsertCell();
-	builder.CellFormat.VerticalMerge = CellMerge.None;
-	builder.Write("Text in another cell");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
-```
+يحفظ هذا السطر المستند باسم الملف المحدد في الدليل المخصص لك.
 
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية دمج الخلايا رأسيًا في جدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي وتنفيذ كود C# المقدم، يمكنك بسهولة دمج الخلايا عموديًا في جداولك.
+
+وهناك لديك! باتباع هذه الخطوات، تكون قد نجحت في تنفيذ الدمج الرأسي في مستند Word باستخدام Aspose.Words لـ .NET. يمكن أن تعمل هذه الميزة على تحسين إمكانية قراءة مستنداتك وتنظيمها بشكل كبير، مما يجعلها أكثر احترافية وأسهل في التنقل. سواء كنت تتعامل مع جداول بسيطة أو هياكل بيانات معقدة، فإن إتقان الدمج الرأسي سيمنحك الأفضلية في تنسيق المستندات.
+
+## الأسئلة الشائعة
+
+### ما هو الدمج الرأسي في جداول Word؟
+يتيح لك الدمج العمودي دمج خلايا متعددة في عمود في خلية واحدة، مما يؤدي إلى إنشاء تخطيط جدول أكثر انسيابية وتنظيمًا.
+
+### هل يمكنني دمج الخلايا عموديا وأفقيا؟
+نعم، يدعم Aspose.Words for .NET الدمج الرأسي والأفقي للخلايا في الجدول.
+
+### هل يتوافق Aspose.Words for .NET مع إصدارات مختلفة من Word؟
+نعم، يتوافق Aspose.Words for .NET مع إصدارات مختلفة من Microsoft Word، مما يضمن عمل مستنداتك بسلاسة عبر الأنظمة الأساسية المختلفة.
+
+### هل أحتاج إلى تثبيت Microsoft Word لاستخدام Aspose.Words لـ .NET؟
+لا، يعمل Aspose.Words for .NET بشكل مستقل عن Microsoft Word. لا تحتاج إلى تثبيت Word على جهازك لإنشاء مستندات Word أو معالجتها.
+
+### هل يمكنني استخدام Aspose.Words for .NET لمعالجة مستندات Word الموجودة؟
+قطعاً! يتيح لك Aspose.Words for .NET إنشاء مستندات Word الموجودة وتعديلها وإدارتها بسهولة.

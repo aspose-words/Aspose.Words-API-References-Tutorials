@@ -2,89 +2,40 @@
 title: كرر الصفوف في الصفحات اللاحقة
 linktitle: كرر الصفوف في الصفحات اللاحقة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تكرار صفوف الجدول في الصفحات اللاحقة في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إنشاء مستندات Word مع صفوف رؤوس الجدول المتكررة باستخدام Aspose.Words لـ .NET. اتبع هذا الدليل لضمان الحصول على مستندات احترافية ومصقولة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سوف نتعلم كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. سنتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بحلول نهاية هذا البرنامج التعليمي، ستتمكن من تحديد الصفوف التي تريد تكرارها في الصفحات اللاحقة من الجدول الخاص بك في مستندات Word الخاصة بك.
+يمكن أن يكون إنشاء مستند Word برمجياً مهمة شاقة، خاصة عندما تحتاج إلى الحفاظ على التنسيق عبر صفحات متعددة. هل سبق لك أن حاولت إنشاء جدول في Word، ثم أدركت أن صفوف رأسك لا تتكرر في الصفحات اللاحقة؟ لا تخافوا! باستخدام Aspose.Words for .NET، يمكنك بسهولة التأكد من تكرار رؤوس الجدول في كل صفحة، مما يوفر مظهرًا احترافيًا ومصقولًا لمستنداتك. في هذا البرنامج التعليمي، سنرشدك خلال خطوات تحقيق ذلك باستخدام أمثلة التعليمات البرمجية البسيطة والشروحات التفصيلية. دعونا الغوص في!
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وقم بإنشاء مشروع C# جديد.
-2. قم بإضافة مرجع إلى مكتبة Aspose.Words for .NET.
+## المتطلبات الأساسية
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستندات
-لبدء معالجة الكلمات باستخدام منشئ المستندات والمستندات، اتبع الخطوات التالية:
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-```csharp
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words لـ .NET: يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+2. .NET Framework مثبتًا على جهازك.
+3. Visual Studio أو أي بيئة تطوير متكاملة أخرى تدعم تطوير .NET.
+4. الفهم الأساسي للبرمجة C#.
 
-// إنشاء الوثيقة
-Document doc = new Document();
+تأكد من تثبيت Aspose.Words لـ .NET وإعداد بيئة التطوير الخاصة بك قبل المتابعة.
 
-// تهيئة منشئ المستندات
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## استيراد مساحات الأسماء
 
-تأكد من استبدال "دليل مستنداتك" بالمسار الفعلي لدليل مستنداتك.
-
-## الخطوة 3: بناء الجدول بالصفوف المتكررة
-بعد ذلك، سنقوم بإنشاء جدول يحتوي على صفوف متكررة في الصفحات اللاحقة. استخدم الكود التالي:
+للبدء، تحتاج إلى استيراد مساحات الأسماء الضرورية في مشروعك. أضف ما يلي باستخدام التوجيهات الموجودة أعلى ملف C# الخاص بك:
 
 ```csharp
-// بداية الجدول
-builder. StartTable();
-
-// تكوين معلمات السطر الأول (خطوط الرأس)
-builder.RowFormat.HeadingFormat = true;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.CellFormat.Width = 100;
-
-// أدخل الخلية الأولى من الصف الأول
-builder. InsertCell();
-builder.Writeln("Header line 1");
-builder. EndRow();
-
-// أدخل الخلية الثانية من الصف الأول
-builder. InsertCell();
-builder.Writeln("Header line 2");
-builder. EndRow();
-
-// تكوين معلمات الأسطر التالية
-builder.CellFormat.Width = 50;
-builder.ParagraphFormat.ClearFormatting();
-
-// قم بإجراء حلقة لإدراج الخلايا في الصفوف التالية
-for (int i = 0; i < 50; i++)
-{
-builder. InsertCell();
-builder.RowFormat.HeadingFormat = false;
-builder.Write("Text column 1");
-builder. InsertCell();
-builder.Write("Text column 2");
-builder. EndRow();
-}
-
-// نهاية الجدول
-builder. EndTable();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- نستخدم هنا أداة إنشاء المستندات لإنشاء جدول يحتوي على صفين للرؤوس وصفوف بيانات متعددة. ال`RowFormat.HeadingFormat` تُستخدم المعلمات لتحديد صفوف الرأس التي يجب تكرارها في الصفحات اللاحقة.
+تتضمن مساحات الأسماء هذه الفئات والأساليب المطلوبة لمعالجة مستندات وجداول Word.
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرا الولايات المتحدة
+## الخطوة 1: تهيئة المستند
 
-  تحتاج إلى حفظ المستند المعدل مع تكرار صفوف الرأس في الصفحات اللاحقة من الجدول. استخدم الكود التالي:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
-```
-
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
-
-### نموذج التعليمات البرمجية المصدر لتكرار الصفوف في الصفحات اللاحقة باستخدام Aspose.Words لـ .NET 
+ أولاً، لنقم بإنشاء مستند Word جديد وملف`DocumentBuilder` لبناء طاولتنا.
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
@@ -92,29 +43,79 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+ يقوم هذا الرمز بتهيئة مستند جديد و`DocumentBuilder` الكائن، مما يساعد في بناء هيكل الوثيقة.
+
+## الخطوة 2: ابدأ الجدول وحدد صفوف الرأس
+
+بعد ذلك، سنبدأ الجدول ونحدد صفوف الرأس التي نريد تكرارها في الصفحات اللاحقة.
+
+```csharp
 builder.StartTable();
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
+
 builder.InsertCell();
 builder.Writeln("Heading row 1");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Heading row 2");
 builder.EndRow();
+```
+
+ هنا، نبدأ جدولًا جديدًا، ونضبطه`HeadingFormat`الملكية ل`true` للإشارة إلى أن الصفوف هي رؤوس، وتحديد محاذاة الخلايا وعرضها.
+
+## الخطوة 3: إضافة صفوف البيانات إلى الجدول
+
+الآن، سنقوم بإضافة صفوف بيانات متعددة إلى جدولنا. لن تتكرر هذه الصفوف في الصفحات اللاحقة.
+
+```csharp
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 for (int i = 0; i < 50; i++)
 {
-	builder.InsertCell();
-	builder.RowFormat.HeadingFormat = false;
-	builder.Write("Column 1 Text");
-	builder.InsertCell();
-	builder.Write("Column 2 Text");
-	builder.EndRow();
+    builder.InsertCell();
+    builder.RowFormat.HeadingFormat = false;
+    builder.Write("Column 1 Text");
+    
+    builder.InsertCell();
+    builder.Write("Column 2 Text");
+    builder.EndRow();
 }
+```
+
+ تقوم هذه الحلقة بإدراج 50 صفًا من البيانات في الجدول، مع عمودين في كل صف. ال`HeadingFormat` تم ضبطه على`false` لهذه الصفوف، لأنها ليست صفوف رأس.
+
+## الخطوة 4: احفظ المستند
+
+وأخيرًا، نقوم بحفظ المستند في الدليل المحدد.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
+يؤدي هذا إلى حفظ المستند بالاسم المحدد في دليل المستندات الخاص بك.
+
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية تكرار صفوف الجدول في الصفحات اللاحقة من مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي وتنفيذ كود C# المقدم، يمكنك تحديد الأسطر التي سيتم تكرارها وفقًا لاحتياجاتك المحددة في مستندات Word الخاصة بك.
+
+وهناك لديك! باستخدام بضعة أسطر فقط من التعليمات البرمجية، يمكنك إنشاء مستند Word يحتوي على جداول تحتوي على صفوف رؤوس متكررة في الصفحات اللاحقة باستخدام Aspose.Words for .NET. وهذا لا يعزز سهولة قراءة مستنداتك فحسب، بل يضمن أيضًا مظهرًا متسقًا واحترافيًا. الآن، تفضل وجرب هذا في مشاريعك!
+
+## الأسئلة الشائعة
+
+### هل يمكنني تخصيص صفوف الرأس بشكل أكبر؟
+ نعم، يمكنك تطبيق تنسيق إضافي على صفوف الرأس عن طريق تعديل خصائصها`ParagraphFormat`, `RowFormat` ، و`CellFormat`.
+
+### هل من الممكن إضافة المزيد من الأعمدة إلى الجدول؟
+ قطعاً! يمكنك إضافة أي عدد تريده من الأعمدة عن طريق إدراج المزيد من الخلايا داخل`InsertCell` طريقة.
+
+### كيف يمكنني تكرار الصفوف الأخرى في الصفحات اللاحقة؟
+ لتكرار أي صف، قم بتعيين`RowFormat.HeadingFormat`الملكية ل`true` لهذا الصف المحدد.
+
+### هل يمكنني استخدام هذه الطريقة للجداول الموجودة في المستند؟
+ نعم، يمكنك تعديل الجداول الموجودة عن طريق الوصول إليها من خلال`Document` كائن وتطبيق تنسيق مماثل.
+
+### ما هي خيارات تنسيق الجدول الأخرى المتوفرة في Aspose.Words لـ .NET؟
+ يوفر Aspose.Words for .NET نطاقًا واسعًا من خيارات تنسيق الجدول، بما في ذلك دمج الخلايا وإعدادات الحدود ومحاذاة الجدول. تفحص ال[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.

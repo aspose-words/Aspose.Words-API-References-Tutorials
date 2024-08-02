@@ -2,55 +2,37 @@
 title: Insérer ASKField sans Document Builder
 linktitle: Insérer ASKField sans Document Builder
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment insérer un champ ASK dans vos documents Word avec Aspose.Words pour .NET.
+description: Découvrez comment insérer un champ ASK sans utiliser Document Builder dans Aspose.Words pour .NET. Suivez ce guide pour améliorer dynamiquement vos documents Word.
 type: docs
 weight: 10
 url: /fr/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## Introduction
 
-Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité « Insérer un champ ASK sans DocumentBuilder » d'Aspose.Words pour .NET. Assurez-vous de suivre attentivement chaque étape pour obtenir les résultats souhaités.
+Cherchez-vous à maîtriser l’automatisation des documents avec Aspose.Words pour .NET ? Vous êtes arrivé au bon endroit! Aujourd'hui, nous allons vous expliquer comment insérer un champ ASK sans utiliser de Document Builder. Il s'agit d'une fonctionnalité intéressante lorsque vous souhaitez que votre document invite les utilisateurs à effectuer des saisies spécifiques, rendant ainsi vos documents Word plus interactifs et dynamiques. Alors allons-y et rendons vos documents plus intelligents !
 
-## Étape 1 : configuration du répertoire de documents
+## Conditions préalables
 
-Dans le code fourni, vous devez préciser le répertoire de vos documents. Remplacez la valeur « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin approprié vers votre répertoire de documents.
+Avant de nous salir les mains avec du code, assurons-nous que tout est configuré :
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words pour .NET : assurez-vous que cette bibliothèque est installée. Sinon, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : un IDE approprié comme Visual Studio.
+3. .NET Framework : assurez-vous que .NET Framework est installé.
 
-## Étape 2 : Création du document et du paragraphe
+Super! Maintenant que nous sommes tous prêts, commençons par importer les espaces de noms nécessaires.
 
-Nous commençons par créer un nouveau document et récupérer le premier paragraphe.
+## Importer des espaces de noms
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## Étape 3 : Insérer le champ ASK
-
- Nous utilisons le`AppendField()` méthode pour insérer un champ ASK dans le paragraphe.
+Tout d’abord, nous devons importer l’espace de noms Aspose.Words pour accéder à toutes les fonctionnalités d’Aspose.Words pour .NET. Voici comment procéder :
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-On configure ensuite les différentes propriétés du champ ASK en précisant les valeurs souhaitées.
+## Étape 1 : Créer un nouveau document
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
- Enfin, nous appelons le`Update()` méthode pour mettre à jour le champ.
-
-```csharp
-field. Update();
-```
-
-### Exemple de code source pour insérer un champ ASK sans DocumentBuilder avec Aspose.Words pour .NET
+Avant de pouvoir insérer un champ ASK, nous avons besoin d'un document avec lequel travailler. Voici comment créer un nouveau document :
 
 ```csharp
 // Le chemin d'accès au répertoire des documents.
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Création de documents.
 Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
+Cet extrait de code configure un nouveau document Word dans lequel nous ajouterons notre champ ASK.
+
+## Étape 2 : accéder au nœud de paragraphe
+
+Dans un document Word, le contenu est organisé en nœuds. Nous devons accéder au premier nœud de paragraphe où nous insérerons notre champ ASK :
+
+```csharp
+Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
+
+Cette ligne de code récupère le premier paragraphe du document, prêt pour l'insertion de notre champ ASK.
+
+## Étape 3 : Insérez le champ ASK
+
+Passons maintenant à l'événement principal : l'insertion du champ ASK. Ce champ invitera l'utilisateur à entrer des données lors de l'ouverture du document.
+
+```csharp
 // Insérez le champ ASK.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+Ici, nous ajoutons un champ ASK au paragraphe. Simple, non ?
 
-field. Update();
+## Étape 4 : configurer le champ ASK
 
+Nous devons définir certaines propriétés pour définir le comportement du champ ASK. Configurons le nom du signet, le texte de l'invite, la réponse par défaut et le comportement de publipostage :
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName : un identifiant unique pour le champ ASK.
+- PromptText : texte qui invite l'utilisateur à effectuer une saisie.
+- DefaultResponse : la réponse pré-remplie que l'utilisateur peut modifier.
+- PromptOnceOnMailMerge : détermine si l'invite apparaît une seule fois lors d'un publipostage.
+
+## Étape 5 : Mettre à jour le champ
+
+Après avoir configuré le champ ASK, nous devons le mettre à jour pour garantir que tous les paramètres sont appliqués correctement :
+
+```csharp
+field.Update();
+```
+
+Cette commande garantit que notre champ ASK est prêt et correctement configuré dans le document.
+
+## Étape 6 : Enregistrez le document
+
+Enfin, sauvegardons le document dans notre répertoire spécifié :
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-Dans cet exemple, nous avons créé un nouveau document, inséré un champ ASK sans utiliser DocumentBuilder, configuré les différentes propriétés du champ et enregistré le document avec un nom de fichier spécifié.
+Cette ligne enregistre le document avec le champ ASK inséré. Et voilà, votre document est désormais équipé d’un champ ASK dynamique !
 
-Ceci conclut notre guide sur l'utilisation de la fonctionnalité « Insérer un champ ASK sans DocumentBuilder » avec Aspose.Words pour .NET.
+## Conclusion
 
-### FAQ
+Toutes nos félicitations! Vous venez d'ajouter un champ ASK à un document Word à l'aide d'Aspose.Words pour .NET sans Document Builder. Cette fonctionnalité peut améliorer considérablement l'interaction de l'utilisateur avec vos documents, les rendant plus flexibles et conviviaux. Continuez à expérimenter différents champs et propriétés pour libérer tout le potentiel d’Aspose.Words. Bon codage !
 
-#### Q : Qu'est-ce qu'un champ ASK dans Aspose.Words ?
+## FAQ
 
-R : Un champ ASK dans Aspose.Words est utilisé pour poser une question à l'utilisateur lors de l'ouverture d'un document. Il est souvent utilisé pour demander des informations ou des commentaires spécifiques qui peuvent varier d'un utilisateur à l'autre.
+### Qu'est-ce qu'un champ ASK dans Aspose.Words ?
+Un champ ASK dans Aspose.Words est un champ qui invite l'utilisateur à effectuer une saisie spécifique lors de l'ouverture du document, permettant ainsi la saisie dynamique de données.
 
-#### Q : Comment insérer le champ ASK dans un document Word sans utiliser Document Builder dans Aspose.Words ?
+### Puis-je utiliser plusieurs champs ASK dans un seul document ?
+Oui, vous pouvez insérer plusieurs champs ASK dans un document, chacun avec des invites et des réponses uniques.
 
-R : Pour insérer un champ ASK dans un document Word sans utiliser Document Builder dans Aspose.Words, vous pouvez suivre ces étapes :
+###  Quel est le but du`PromptOnceOnMailMerge` property?
+ Le`PromptOnceOnMailMerge` La propriété détermine si l'invite ASK apparaît une seule fois lors d'une opération de publipostage ou à chaque fois.
 
-1. Importez les classes Document et Field à partir de l’espace de noms Aspose.Words.Fields.
-2. Créez une instance de Document en chargeant votre document existant.
-3. Utilisez la méthode InsertField pour insérer un champ ASK en spécifiant le nom de la question.
-4. Enregistrez le document.
+### Dois-je mettre à jour le champ ASK après avoir défini ses propriétés ?
+Oui, la mise à jour du champ ASK garantit que toutes les propriétés sont correctement appliquées et que le champ fonctionne comme prévu.
 
-#### Q : Comment puis-je obtenir la réponse de l'utilisateur pour un champ ASK dans un document Word ?
-
-: Pour obtenir la réponse de l'utilisateur pour un champ ASK dans un document Word, vous pouvez utiliser la méthode GetFieldNames disponible dans la classe Document. Cette méthode renvoie une liste des noms des champs présents dans le document. Vous pouvez alors vérifier si le nom du champ ASK est présent dans la liste et récupérer la réponse associée.
-
-#### Q : Le champ ASK peut-il être utilisé pour demander plus d’informations à l’utilisateur ?
-
-R : Oui, le champ ASK peut être utilisé pour demander plusieurs informations à l'utilisateur. Vous pouvez insérer plusieurs champs ASK dans votre document, chacun avec une question différente. A l'ouverture du document, l'utilisateur sera invité à fournir les réponses correspondantes.
+### Puis-je personnaliser le texte de l'invite et la réponse par défaut ?
+Absolument! Vous pouvez définir un texte d'invite personnalisé et des réponses par défaut pour adapter le champ ASK à vos besoins spécifiques.

@@ -16,12 +16,12 @@ Aspose.Words for .NET 關於形狀文字處理的教學提供了操作和管理 
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [新增群組形狀](./add-group-shape/) | 了解如何使用 Aspose.Words for .NET 將具有多個形狀的群組形狀新增至 Word 文件。 |
-| [刀片形狀](./insert-shape/) | 了解如何使用 Aspose.Words for .NET 將形狀插入 Word 文件中。 |
-| [寬高比鎖定](./aspect-ratio-locked/) | 了解如何使用 Aspose.Words for .NET 鎖定或解鎖 Word 文件中形狀的長寬比。 |
-| [單元格佈局](./layout-in-cell/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件的表格儲存格內佈局形狀。 |
-| [添加剪掉的角](./add-corners-snipped/) | 了解如何使用 Aspose.Words for .NET 將帶有剪角的形狀新增至 Word 文件。 |
-| [取得實際形狀邊界點](./get-actual-shape-bounds-points/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中擷取以點（測量單位）為單位的形狀的實際邊界。 |
-| [垂直錨](./vertical-anchor/) | 了解如何使用 Aspose.Words for .NET 中的垂直錨點功能在文件中垂直定位形狀。|
-| [偵測智能藝術形狀](./detect-smart-art-shape/) | 了解如何使用 Aspose.Words for .NET 偵測 Word 文件中的 Smart Art 形狀，辨識圖形表示。 |
-| [更新智慧藝術繪圖](./update-smart-art-drawing/) | 了解如何使用 Aspose.Words for .NET 更新 Word 文件中的 Smart Art 繪圖。 |
+| [新增群組形狀](./add-group-shape/) | 透過這個全面的逐步教學，了解如何使用 Aspose.Words for .NET 將群組形狀新增至 Word 文件。 |
+| [刀片形狀](./insert-shape/) | 透過我們的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中插入和操作形狀。 |
+| [寬高比鎖定](./aspect-ratio-locked/) | 了解如何使用 Aspose.Words for .NET 鎖定 Word 文件中形狀的長寬比。請按照此逐步指南保持圖像和形狀的比例。 |
+| [單元格佈局](./layout-in-cell/) | 透過這份綜合指南，了解如何使用 Aspose.Words for .NET 在儲存格中設定佈局。非常適合希望自訂 Word 文件的開發人員。 |
+| [添加剪掉的角](./add-corners-snipped/) | 了解如何使用 Aspose.Words for .NET 將剪角形狀新增至 Word 文件。本逐步指南可確保您輕鬆增強文件。 |
+| [取得實際形狀邊界點](./get-actual-shape-bounds-points/) | 了解如何使用 Aspose.Words for .NET 取得 Word 文件中的實際形狀邊界點。透過這份詳細的指南學習精確的形狀操作。 |
+| [垂直錨](./vertical-anchor/) | 了解如何使用 Aspose.Words for .NET 設定 Word 文件中文字方塊的垂直錨點位置。包括簡單的逐步指南。|
+| [偵測智能藝術形狀](./detect-smart-art-shape/) | 透過這份綜合指南，了解如何使用 Aspose.Words for .NET 偵測 Word 文件中的 SmartArt 形狀。非常適合自動化文件工作流程。 |
+| [更新智慧藝術繪圖](./update-smart-art-drawing/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 更新 Word 文件中的 Smart Art 繪圖。確保您的視覺效果始終準確。 |

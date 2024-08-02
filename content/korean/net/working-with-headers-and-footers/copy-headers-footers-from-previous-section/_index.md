@@ -10,7 +10,7 @@ url: /ko/net/working-with-headers-and-footers/copy-headers-footers-from-previous
 
 문서에 머리글과 바닥글을 추가하고 복사하면 전문성과 일관성이 크게 향상될 수 있습니다. .NET용 Aspose.Words를 사용하면 이 작업이 간단해지고 사용자 정의가 가능해집니다. 이 포괄적인 튜토리얼에서는 Word 문서의 한 섹션에서 다른 섹션으로 머리글과 바닥글을 복사하는 과정을 단계별로 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 튜토리얼을 시작하기 전에 다음 사항을 확인하세요.
 

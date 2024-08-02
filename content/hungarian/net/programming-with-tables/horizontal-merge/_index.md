@@ -2,90 +2,117 @@
 title: Vízszintes összevonás
 linktitle: Vízszintes összevonás
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan lehet vízszintesen egyesíteni cellákat Word-táblázatban az Aspose.Words for .NET segítségével.
+description: Ebből a részletes, lépésenkénti oktatóanyagból megtudhatja, hogyan lehet vízszintesen egyesíteni a cellákat egy Word-dokumentumban az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-tables/horizontal-merge/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban megtanuljuk, hogyan lehet vízszintesen egyesíteni cellákat egy Word-dokumentum táblázatában az Aspose.Words for .NET használatával. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Ennek az oktatóanyagnak a végére képes lesz programozottan egyesíteni a cellákat vízszintesen a Word-táblázatokban.
+Halihó! Készen áll, hogy belemerüljön az Aspose.Words for .NET világába? Ma egy rendkívül hasznos funkcióval fogunk foglalkozni: a táblázatok vízszintes egyesítésével. Ez kissé technikailag hangzik, de ne aggódj, támogatom. Az oktatóanyag végére profi lesz a Word-dokumentumok celláinak programozott egyesítésében. Szóval, feltűrjük az ingujjunkat, és kezdjük!
 
-## 1. lépés: A projekt beállítása
-1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# projektet.
-2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
+## Előfeltételek
 
-## 2. lépés: A dokumentum létrehozása és a dokumentumgenerátor inicializálása
-A táblával és cellákkal való szövegfeldolgozás elindításához új dokumentumot kell létrehoznunk, és inicializálnunk kell a dokumentumgenerátort. Kovesd ezeket a lepeseket:
+Mielőtt belevágnánk az apróságokba, van néhány dolog, amit a helyére kell tennie:
+
+1. Aspose.Words for .NET Library: Ha még nem tette meg, töltse le az Aspose.Words for .NET könyvtárat. Megfoghatod[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztési környezet: Győződjön meg arról, hogy megfelelő fejlesztői környezetet állít be, például a Visual Studio-t.
+3. Alapvető C# ismeretek: A C# programozás alapvető ismerete előnyt jelent.
+
+Ha ezeket rendezte, már indulhat is!
+
+## Névterek importálása
+
+Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a szükséges névtereket importálta. A C# projektben feltétlenül tartalmazza:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Rendben, bontsuk le a táblázatcellák vízszintes egyesítésének folyamatát egy Word-dokumentumban az Aspose.Words for .NET használatával.
+
+## 1. lépés: A dokumentum beállítása
+
+ Először is létre kell hoznunk egy új Word-dokumentumot, és inicializálnunk kell a`DocumentBuilder`:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//Hozzon létre egy dokumentumot, és inicializálja a dokumentumgenerátort
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
+ Ez a kódrészlet létrehoz egy új dokumentumot, és előkészíti a`DocumentBuilder` cselekvésre.
 
-## 3. lépés: A táblázat felépítése a cellák vízszintes egyesítésével
-Ezután elkészítjük a táblázatot, és vízszintes cellaegyesítést alkalmazunk az Aspose.Words for .NET tulajdonságainak használatával. Használja a következő kódot:
+## 2. lépés: Az első cella beszúrása
+
+Ezután kezdjük az első cella beszúrásával, és megjelöljük vízszintes egyesítéshez:
 
 ```csharp
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
-builder. InsertCell();
+```
+
+ Itt beszúrunk egy új cellát, és beállítjuk`HorizontalMerge`tulajdonát`CellMerge.First`, jelezve, hogy ez a cella egy egyesített cellasorozat kezdete.
+
+## 3. lépés: Az egyesített cella beszúrása
+
+Most beillesztjük azt a cellát, amely össze lesz vonva az előzővel:
+
+```csharp
+builder.InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-// Ez a cella egyesül az előzővel, és üresnek kell lennie.
-builder. EndRow();
+builder.EndRow();
+```
 
-builder. InsertCell();
+ Ez a cella úgy van beállítva, hogy a használatával egyesüljön az előző cellával`CellMerge.Previous` . Figyeljük meg, hogyan fejezzük be a sort a következővel:`builder.EndRow()`.
+
+## 4. lépés: Nem egyesített cellák beszúrása
+
+A különbség szemléltetésére illesszünk be néhány nem egyesített cellát:
+
+```csharp
+builder.InsertCell();
 builder.CellFormat.HorizontalMerge = CellMerge.None;
-builder.Write("Text in a cell.");
-builder. InsertCell();
+builder.Write("Text in one cell.");
+builder.InsertCell();
 builder.Write("Text in another cell.");
-builder. EndRow();
-builder. EndTable();
+builder.EndRow();
 ```
 
- Itt a dokumentumkészítőt használjuk a táblázat felépítéséhez és a cella vízszintes egyesítési tulajdonságainak beállításához. Használjuk a`HorizontalMerge` tulajdona a`CellFormat` objektumot az egyes cellákra alkalmazandó vízszintes egyesítés típusának megadásához. Használata`CellMerge.First` használat közben egyesítjük az első cellát a következővel`CellMerge.Previous` összevonjuk az aktuális cellát az előző cellával.`CellMerge.None` azt jelzi, hogy a cellát nem szabad összevonni.
+Itt két cellát szúrunk be vízszintes egyesítés nélkül. Ez megmutatja, hogyan viselkednek a cellák, ha nem részei egy egyesített sorozatnak.
 
-## 4. lépés: Mentse el a módosított dokumentumot
-Végül el kell mentenünk a módosított dokumentumot a vízszintesen összevont cellákkal. Használja a következő kódot:
+## 5. lépés: A táblázat befejezése
+
+Végül befejezzük a táblázatot és mentjük a dokumentumot:
 
 ```csharp
-doc.Save(data
-
-Dir + "WorkingWithTables.HorizontalMerge.docx");
+builder.EndTable();
+doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-Ügyeljen arra, hogy a megfelelő elérési utat és fájlnevet adja meg a kimeneti dokumentumhoz.
-
-### Minta forráskód a vízszintes egyesítéshez az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.InsertCell();
-	builder.CellFormat.HorizontalMerge = CellMerge.First;
-	builder.Write("Text in merged cells.");
-	builder.InsertCell();
-	// Ez a cella egyesül az előzővel, és üresnek kell lennie.
-	builder.CellFormat.HorizontalMerge = CellMerge.Previous;
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.HorizontalMerge = CellMerge.None;
-	builder.Write("Text in one cell.");
-	builder.InsertCell();
-	builder.Write("Text in another cell.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
-```
+Ez a kódrészlet kiegészíti a táblázatot, és elmenti a dokumentumot a megadott könyvtárba.
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet vízszintesen egyesíteni cellákat egy Word-dokumentum táblázatában az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C# kódot, akkor programozottan alkalmazhatja a vízszintes cellaegyesítést a Word-táblázatokban. Ez a funkció lehetővé teszi összetettebb táblázatelrendezések létrehozását és az adatok jobb rendszerezését.
+
+És megvan! Éppen most sajátította el a cellák vízszintes egyesítésének művészetét egy Word-dokumentumban az Aspose.Words for .NET használatával. Ezen lépések követésével könnyedén hozhat létre összetett táblaszerkezeteket. Folyamatosan kísérletezzen és fedezze fel az Aspose.Words képességeit, hogy dokumentumait olyan dinamikus és rugalmas legyen, amennyire szüksége van. Boldog kódolást!
+
+## GYIK
+
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, szerkesztését és kezelését .NET-alkalmazásokban.
+
+### Egyesíthetem függőlegesen a cellákat az Aspose.Words for .NET segítségével?
+ Igen, a cellákat függőlegesen is egyesítheti a`CellFormat.VerticalMerge` ingatlan.
+
+### Ingyenesen használható az Aspose.Words for .NET?
+ Az Aspose.Words for .NET ingyenes próbaverziót kínál, de a teljes funkcionalitás érdekében licencet kell vásárolnia. Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+
+### Hogyan tudhatok meg többet az Aspose.Words for .NET-ről?
+ Megnézheti a részletes dokumentációt[itt](https://reference.aspose.com/words/net/).
+
+### Hol kaphatok támogatást az Aspose.Words for .NET-hez?
+ Bármilyen kérdés vagy probléma esetén keresse fel az Aspose támogatási fórumát[itt](https://forum.aspose.com/c/words/8).

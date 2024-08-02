@@ -2,95 +2,92 @@
 title: Konversi Bidang Dalam Paragraf
 linktitle: Konversi Bidang Dalam Paragraf
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Ubah bidang IF menjadi teks biasa dalam paragraf dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengonversi bidang IF menjadi teks biasa di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/convert-fields-in-paragraph/
 ---
+## Perkenalan
 
-Berikut adalah tutorial yang menunjukkan cara menggunakan fitur Konversi Bidang ke Paragraf dengan Aspose.Words untuk .NET. Kode ini mengonversi semua kolom tipe IF yang ditemukan di paragraf terakhir dokumen menjadi teks biasa. Ikuti langkah-langkah di bawah ini untuk memahami dan menjalankan kode ini.
+Pernahkah Anda menemukan diri Anda terjerat dalam jaringan bidang di dokumen Word Anda, terutama ketika Anda hanya mencoba mengubah bidang IF yang tersembunyi itu menjadi teks biasa? Ya, kamu tidak sendirian. Hari ini, kita akan mendalami bagaimana Anda dapat menguasainya dengan Aspose.Words untuk .NET. Bayangkan menjadi seorang penyihir dengan tongkat ajaib, mengubah bidang dengan jentikan kode Anda. Kedengarannya menarik? Mari kita mulai perjalanan ajaib ini!
 
-Pastikan Anda telah menginstal Aspose.Words untuk .NET dan menyiapkan lingkungan pengembangan sebelum memulai.
+## Prasyarat
 
-## Langkah 1: Impor referensi
+Sebelum kita beralih ke perapalan ejaan, eh, pengkodean, ada beberapa hal yang perlu Anda siapkan. Anggap saja ini sebagai perangkat wizard Anda:
 
-Untuk menggunakan Aspose.Words dalam proyek Anda, Anda perlu menambahkan referensi yang diperlukan. Pastikan Anda telah menambahkan referensi ke perpustakaan Aspose.Words di proyek Anda.
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan. Anda bisa mendapatkannya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan .NET: Baik itu Visual Studio atau IDE lain, siapkan lingkungan Anda.
+- Pengetahuan Dasar tentang C#: Sedikit keakraban dengan C# akan sangat bermanfaat.
 
-## Langkah 2: Memuat dokumen
+## Impor Namespace
 
-Sebelum Anda dapat mengonversi bidang, Anda harus memuat dokumen yang berisi bidang yang akan dikonversi. Pastikan untuk menentukan jalur yang benar ke direktori yang berisi dokumen tersebut. Berikut cara mengunggah dokumen:
+Sebelum kita mendalami kodenya, pastikan kita telah mengimpor semua namespace yang diperlukan. Ini seperti mengumpulkan semua buku mantra sebelum merapal mantra.
+
+```csharp
+using System;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Sekarang, mari kita uraikan proses konversi kolom IF dalam paragraf menjadi teks biasa. Kami akan melakukan ini selangkah demi selangkah, sehingga mudah untuk diikuti.
+
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Hal pertama yang pertama, Anda perlu menentukan di mana dokumen Anda berada. Anggap saja ini sebagai menyiapkan ruang kerja Anda.
 
 ```csharp
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Langkah 2: Muat Dokumen
+
+Selanjutnya, Anda perlu memuat dokumen yang ingin Anda kerjakan. Ini seperti membuka buku mantra Anda ke halaman kanan.
+
+```csharp
 // Muat dokumen.
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur sebenarnya ke direktori dokumen Anda.
+## Langkah 3: Identifikasi Bidang IF di Paragraf Terakhir
 
-## Langkah 3: Mengubah bidang menjadi teks
-
-Sekarang setelah dokumen dimuat, kita dapat melanjutkan dengan mengonversi kolom tipe menjadi teks biasa. Dalam contoh ini, kami hanya menargetkan bidang yang ada di paragraf terakhir dokumen. Berikut adalah kode yang melakukan konversi ini:
+Sekarang, kita akan memusatkan perhatian pada kolom IF di paragraf terakhir dokumen. Di sinilah keajaiban sesungguhnya terjadi.
 
 ```csharp
-doc.FirstSection.Body.LastParagraph.Range.Fields
-     .Where(f => f.Type == FieldType.FieldIf)
-     .ToList()
-     .ForEach(f => f.Unlink());
-```
-
- Kode ini menggunakan kombinasi metode LINQ untuk memfilter bidang di paragraf terakhir dokumen dan kemudian mengubahnya menjadi teks biasa dengan memanggil`Unlink()` metode.
-
-## Langkah 4: Menyimpan dokumen yang dimodifikasi
-
- Setelah bidang dikonversi, Anda dapat menyimpan dokumen yang dimodifikasi. Menggunakan`Save()` metode untuk ini. Berikut ini contohnya:
-
-```csharp
-doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
-```
-
-Pastikan untuk menentukan jalur dan nama file yang benar untuk cadangan.
-
-### Contoh kode sumber untuk Konversi Bidang Dalam Paragraf menggunakan Aspose.Words untuk .NET
-
-```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Muat dokumen.
-Document doc = new Document(dataDir + "Linked fields.docx");
-
 // Ubah bidang IF menjadi teks biasa di paragraf terakhir dokumen.
 doc.FirstSection.Body.LastParagraph.Range.Fields
      .Where(f => f.Type == FieldType.FieldIf)
      .ToList()
      .ForEach(f => f.Unlink());
+```
 
+## Langkah 4: Simpan Dokumen yang Dimodifikasi
+
+Terakhir, simpan dokumen Anda yang baru diubah. Di sinilah Anda mengagumi hasil karya Anda dan melihat hasil keajaiban Anda.
+
+```csharp
 // Simpan dokumen yang diubah.
 doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ```
 
-### FAQ
+## Kesimpulan
 
-#### T: Apa yang dimaksud dengan bidang konversi di Aspose.Words?
+Dan itu dia! Anda telah berhasil mengubah bidang IF menjadi teks biasa menggunakan Aspose.Words untuk .NET. Ini seperti mengubah mantra kompleks menjadi mantra sederhana, membuat pengelolaan dokumen Anda menjadi lebih mudah. Jadi, lain kali Anda menghadapi ladang yang berantakan, Anda tahu persis apa yang harus dilakukan. Selamat membuat kode!
 
-J: Bidang konversi di Aspose.Words adalah tipe bidang yang mengonversi nilai atau ekspresi ke format atau tipe data lain. Misalnya, Anda dapat menggunakan bidang konversi untuk mengonversi tanggal ke format tertentu, angka menjadi teks, atau melakukan jenis konversi lainnya.
+## FAQ
 
-#### T: Bagaimana cara menyisipkan bidang konversi dalam paragraf dengan Aspose.Words?
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen tanpa perlu menginstal Microsoft Word.
 
-A: Untuk menyisipkan kolom konversi dalam paragraf dengan Aspose.Words, Anda dapat mengikuti langkah-langkah berikut:
+### Bisakah saya menggunakan metode ini untuk mengonversi jenis bidang lainnya?
+ Ya, Anda dapat mengadaptasi metode ini untuk mengonversi berbagai jenis bidang dengan mengubah`FieldType`.
 
-1. Impor kelas Dokumen dari namespace Aspose.Words.
-2. Buat instance Dokumen dengan memuat dokumen Anda yang sudah ada.
-3. Dapatkan paragraf di mana Anda ingin menyisipkan bidang konversi.
-4. Gunakan metode InsertField untuk menyisipkan bidang konversi dengan sintaks yang benar.
+### Apakah mungkin untuk mengotomatiskan proses ini untuk banyak dokumen?
+Sangat! Anda dapat menelusuri direktori dokumen dan menerapkan langkah yang sama ke masing-masing direktori.
 
-#### T: Format konversi apa yang didukung Aspose.Words?
+### Apa yang terjadi jika dokumen tidak berisi kolom IF apa pun?
+Metode ini tidak akan membuat perubahan apa pun, karena tidak ada bidang yang harus diputuskan tautannya.
 
-J: Aspose.Words mendukung berbagai format konversi dalam bidang, termasuk format tanggal, format angka, format teks, format mata uang, format persentase, dan banyak lagi. Anda dapat memeriksa dokumentasi Aspose.Words untuk daftar lengkap format konversi yang tersedia.
-
-#### T: Bagaimana cara memperbarui bidang konversi di dokumen Word dengan Aspose.Words?
-
-J: Untuk memperbarui bidang konversi di dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode UpdateFields. Metode ini mengulang dokumen dan memperbarui semua bidang, termasuk bidang konversi, menghitung ulang nilai berdasarkan data saat ini.
+### Bisakah saya mengembalikan perubahan setelah membatalkan tautan bidang?
+Tidak, setelah tautan bidang dibatalkan dan dikonversi menjadi teks biasa, Anda tidak dapat mengembalikannya ke bidang.

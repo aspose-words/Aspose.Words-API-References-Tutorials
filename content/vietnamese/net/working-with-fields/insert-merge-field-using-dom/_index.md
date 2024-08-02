@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fields/insert-merge-field-using-dom/
 ---
+## Giới thiệu
 
 Nếu bạn đang làm việc với việc xử lý tài liệu trong .NET, có thể bạn đã gặp Aspose.Words. Thư viện mạnh mẽ này cung cấp nhiều tính năng để thao tác tài liệu Word theo chương trình. Trong hướng dẫn này, chúng ta sẽ tập trung vào một tính năng cụ thể: chèn trường hợp nhất bằng Mô hình đối tượng tài liệu (DOM) trong Aspose.Words cho .NET. Hướng dẫn này sẽ hướng dẫn bạn từng bước, từ thiết lập môi trường đến chèn và cập nhật trường hợp nhất trong tài liệu Word.
 
@@ -14,26 +15,26 @@ Nếu bạn đang làm việc với việc xử lý tài liệu trong .NET, có 
 
 Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ bạn cần để làm theo hướng dẫn này.
 
-1. **Basic Knowledge of C#:** Bạn nên cảm thấy thoải mái với lập trình C#.
-2. **Visual Studio Installed:** Đảm bảo bạn đã cài đặt Visual Studio hoặc bất kỳ C# IDE nào khác trên máy của mình.
-3. **Aspose.Words for .NET:** Tải xuống và cài đặt phiên bản mới nhất của Aspose.Words cho .NET từ[phát hành](https://releases.aspose.com/words/net/).
-4. **Valid License:** Nếu bạn không có giấy phép, bạn có thể nhận được[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
+1. Kiến thức cơ bản về C#: Bạn nên thành thạo lập trình C#.
+2. Đã cài đặt Visual Studio: Đảm bảo bạn đã cài đặt Visual Studio hoặc bất kỳ C# IDE nào khác trên máy của mình.
+3.  Aspose.Words for .NET: Tải xuống và cài đặt phiên bản mới nhất của Aspose.Words cho .NET từ[phát hành](https://releases.aspose.com/words/net/).
+4.  Giấy phép hợp lệ: Nếu bạn không có giấy phép, bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
 
 ## Bước 1: Thiết lập dự án của bạn
 
 Trước tiên, hãy thiết lập một dự án mới trong Visual Studio.
 
-1. **Open Visual Studio.**
-2. **Create a New Project:** Đi tới Tệp > Mới > Dự án. Chọn ứng dụng bảng điều khiển C#.
-3. **Name Your Project:** Đặt cho dự án của bạn một cái tên có ý nghĩa và nhấp vào Tạo.
+1. Mở Visual Studio.
+2. Tạo một dự án mới: Đi tới Tệp > Mới > Dự án. Chọn ứng dụng bảng điều khiển C#.
+3. Đặt tên cho dự án của bạn: Đặt cho dự án của bạn một cái tên có ý nghĩa và nhấp vào Tạo.
 
 ## Bước 2: Cài đặt Aspose.Words
 
 Để sử dụng Aspose.Words, bạn cần thêm nó vào dự án của mình. Điều này có thể được thực hiện thông qua Trình quản lý gói NuGet.
 
-1. **Open NuGet Package Manager:** Nhấp chuột phải vào dự án của bạn trong Solution Explorer, sau đó chọn Quản lý gói NuGet.
-2. **Search for Aspose.Words:** Trong Trình quản lý gói NuGet, tìm kiếm "Aspose.Words".
-3. **Install the Package:** Nhấp vào Cài đặt để thêm Aspose.Words vào dự án của bạn.
+1. Mở Trình quản lý gói NuGet: Nhấp chuột phải vào dự án của bạn trong Solution Explorer, sau đó chọn Quản lý gói NuGet.
+2. Tìm kiếm Aspose.Words: Trong Trình quản lý gói NuGet, tìm kiếm "Aspose.Words".
+3. Cài đặt gói: Nhấp vào Cài đặt để thêm Aspose.Words vào dự án của bạn.
 
 ## Bước 3: Nhập không gian tên
 
@@ -106,17 +107,17 @@ Bằng cách làm theo các bước này, bạn có thể dễ dàng chèn và �
 
 ## Câu hỏi thường gặp
 
-### 1. Trường hợp nhất là gì?
+###  Trường hợp nhất là gì?
 Trường hợp nhất là phần giữ chỗ trong tài liệu có thể được thay thế động bằng dữ liệu từ nguồn dữ liệu, chẳng hạn như cơ sở dữ liệu hoặc tệp CSV.
 
-### 2. Tôi có thể sử dụng Aspose.Words miễn phí không?
+###  Tôi có thể sử dụng Aspose.Words miễn phí không?
  Aspose.Words cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/). Để sử dụng lâu dài, bạn sẽ cần phải mua giấy phép.
 
-### 3. Làm cách nào để có được giấy phép tạm thời cho Aspose.Words?
+###  Làm cách nào để có được giấy phép tạm thời cho Aspose.Words?
  Bạn có thể lấy giấy phép tạm thời từ trang web Aspose[đây](https://purchase.aspose.com/temporary-license/).
 
-### 4. Aspose.Words hỗ trợ phiên bản .NET nào?
+### Phiên bản .NET nào được Aspose.Words hỗ trợ?
 Aspose.Words hỗ trợ nhiều phiên bản .NET, bao gồm .NET Framework, .NET Core và .NET Standard.
 
-### 5. Tôi có thể tìm tài liệu API cho Aspose.Words ở đâu?
+###  Tôi có thể tìm tài liệu API cho Aspose.Words ở đâu?
  Tài liệu API có sẵn[đây](https://reference.aspose.com/words/net/).

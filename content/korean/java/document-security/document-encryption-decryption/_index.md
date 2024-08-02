@@ -13,7 +13,7 @@ url: /ko/java/document-security/document-encryption-decryption/
 
 이 튜토리얼에서는 Aspose.Words for Java를 사용하여 문서를 암호화하고 해독하는 방법을 살펴보겠습니다. 문서 암호화는 중요한 데이터를 안전하게 유지하고 승인된 사용자만 액세스할 수 있도록 보장합니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 

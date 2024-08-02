@@ -12,7 +12,7 @@ url: /ko/java/document-manipulation/finding-and-replacing-text/
 
 Aspose.Words for Java는 Word 문서를 프로그래밍 방식으로 작업할 수 있는 강력한 Java API입니다. Word 문서를 다룰 때 일반적인 작업 중 하나는 텍스트를 찾고 바꾸는 것입니다. 템플릿의 자리 표시자를 업데이트해야 하거나 더 복잡한 텍스트 조작을 수행해야 하는 경우 Aspose.Words for Java는 목표를 효율적으로 달성하는 데 도움이 될 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
 텍스트 찾기 및 바꾸기에 대해 자세히 알아보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

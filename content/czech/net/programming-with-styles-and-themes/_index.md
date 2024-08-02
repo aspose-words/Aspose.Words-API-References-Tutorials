@@ -16,8 +16,8 @@ Ať už jste začátečník nebo zkušený vývojář, výukové programy pro zp
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Styly přístupu](./access-styles/) | Naučte se přistupovat ke stylům dokumentů pomocí Aspose.Words pro .NET. Kompletní výukový program pro manipulaci se styly vašich dokumentů. |
-| [Kopírovat styly](./copy-styles/) | Naučte se kopírovat styly mezi dokumenty pomocí Aspose.Words for .NET. |
-| [Získejte vlastnosti motivu](./get-theme-properties/) | Prozkoumejte vlastnosti motivu dokumentu pomocí Aspose.Words for .NET. Přizpůsobte si styly a barvy pro jedinečný vzhled. |
-| [Nastavte vlastnosti motivu](./set-theme-properties/) | Naučte se přizpůsobit vzhled svých dokumentů změnou vlastností motivu pomocí Aspose.Words pro .NET. Získejte profesionální a atraktivní výsledky. |
-| [Vložit oddělovač stylu](./insert-style-separator/) | Naučte se vytvářet dokumenty s vlastními styly a vkládat oddělovače stylů pro přesné a profesionální formátování. |
+| [Získejte styly dokumentů ve Wordu](./access-styles/) | Naučte se, jak získat styly dokumentů ve Wordu pomocí Aspose.Words for .NET, pomocí tohoto podrobného podrobného tutoriálu. Získejte a spravujte styly programově ve svých aplikacích .NET. |
+| [Kopírovat styly dokumentů aplikace Word](./copy-styles/) | Naučte se kopírovat styly dokumentů aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce, abyste bez námahy zajistili konzistentní formátování dokumentu. |
+| [Získejte vlastnosti motivu dokumentu v aplikaci Word](./get-theme-properties/) | Zjistěte, jak získat přístup a spravovat vlastnosti motivu dokumentu ve Wordu pomocí Aspose.Words for .NET. Naučte se získávat písma a barvy s naším průvodcem. |
+| [Nastavte vlastnosti motivu v dokumentu aplikace Word](./set-theme-properties/) | Naučte se, jak nastavit vlastnosti motivu v dokumentech aplikace Word pomocí Aspose.Words for .NET. Chcete-li snadno přizpůsobit písma a barvy, postupujte podle našeho podrobného průvodce. |
+| [Vložit oddělovač stylu dokumentu do aplikace Word](./insert-style-separator/) | Naučte se, jak vložit oddělovač stylu dokumentu do aplikace Word pomocí Aspose.Words for .NET. Tato příručka obsahuje pokyny a tipy pro správu stylů dokumentů. |

@@ -11,7 +11,7 @@ url: /ko/net/basic-conversions/pdf-to-docx/
 
 안녕하세요, 기술 매니아 여러분! 특히 PDF 및 Word 문서를 처리할 때 파일 형식을 변환하는 웹에서 얽힌 적이 있습니까? 그렇다면, 당신은 혼자가 아닙니다. 우리는 모두 머리를 긁적이며 PDF를 Word 문서(Docx)로 변환하는 가장 좋은 방법을 찾으려고 노력했습니다. 운 좋게도 Aspose.Words for .NET은 슈퍼히어로처럼 급습하여 이 작업을 아주 쉽게 만들어줍니다. 오늘은 Aspose.Words for .NET을 사용하여 PDF를 Word 형식으로 저장하는 방법에 대한 자세한 단계별 가이드를 살펴보겠습니다. 인생을 단순화할 준비가 되셨나요? 시작하자!
 
-## 전제조건
+## 전제 조건
 
 파일 변환의 마법 같은 세계로 뛰어들기 전에 필요한 모든 것이 갖추어져 있는지 확인합시다.
 
@@ -22,7 +22,7 @@ url: /ko/net/basic-conversions/pdf-to-docx/
 
 ### 환경 설정
 
-1.  .NET용 Aspose.Words 다운로드 및 설치:[Aspose 웹 사이트](https://releases.aspose.com/words/net/) 그리고 최신 버전을 받으세요.
+1.  .NET용 Aspose.Words 다운로드 및 설치:[Aspose 웹사이트](https://releases.aspose.com/words/net/) 그리고 최신 버전을 받으세요.
 2. 새 프로젝트 만들기: IDE를 열고 새 .NET 프로젝트를 만든 다음 Aspose.Words에 대한 참조를 추가합니다.
 3. PDF 문서 준비: 변환하려는 PDF 문서를 프로젝트 디렉토리에 준비하세요.
 

@@ -2,104 +2,139 @@
 title: Utwórz projekt VBA w dokumencie Word
 linktitle: Utwórz projekt VBA w dokumencie Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: W tym samouczku dowiesz się, jak utworzyć projekt VBA w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Naucz się tworzyć projekty VBA w dokumentach Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku dotyczącym bezproblemowej automatyzacji dokumentów!
 type: docs
 weight: 10
 url: /pl/net/working-with-vba-macros/create-vba-project/
 ---
 
-W tym samouczku pokażemy Ci, jak utworzyć projekt VBA w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla platformy .NET. Tworzenie projektu VBA umożliwia dodanie niestandardowego kodu VBA do dokumentu programu Word. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+## Wstęp
+
+Hej, miłośnicy technologii! Czy jesteś gotowy na poznanie fascynującego świata VBA (Visual Basic for Applications) w dokumentach Word? Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik pokaże Ci, jak utworzyć projekt VBA w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka umożliwia automatyzację zadań, tworzenie makr i zwiększanie funkcjonalności dokumentów programu Word. Zakasujmy więc rękawy i przejdźmy do tutoriala krok po kroku!
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
 
-## Krok 1: Zdefiniuj katalog dokumentów
- Najpierw musisz ustawić ścieżkę katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+Zanim zaczniemy kodować, upewnijmy się, że masz wszystko, czego potrzebujesz:
+
+1.  Biblioteka Aspose.Words dla .NET: Będziesz potrzebować najnowszej wersji Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Środowisko programistyczne .NET, takie jak Visual Studio, będzie niezbędne do pisania i testowania kodu.
+3. Podstawowa znajomość języka C#: Podstawowa znajomość języka C# będzie pomocna podczas poruszania się po kodzie.
+4. Przykładowy katalog dokumentów: Przygotuj katalog, w którym będziesz zapisywać dokumenty programu Word. To tutaj dzieje się magia!
+
+## Importuj przestrzenie nazw
+
+Aby skorzystać z funkcjonalności Aspose.Words, należy zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw obejmują wszystkie klasy i metody wymagane do tworzenia dokumentów Word i projektów VBA oraz zarządzania nimi.
+
+Oto kod umożliwiający ich zaimportowanie:
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Vba;
 ```
 
-## Krok 2: Utwórz nowy dokument i projekt VBA
- Następnie utworzymy nowy dokument, tworząc instancję pliku`Document` klasę i pusty projekt VBA, tworząc instancję`VbaProject` klasa.
+Linie te wyznaczają grunt dla naszych zadań związanych z manipulacją dokumentami i VBA.
+
+## Krok 1: Konfigurowanie katalogu dokumentów
+
+Na początek zdefiniujmy ścieżkę do katalogu dokumentów. Ten katalog będzie obszarem roboczym, w którym będą przechowywane i zapisywane dokumenty programu Word.
+
+### Określenie ścieżki
+
+Ustaw ścieżkę do swojego katalogu w następujący sposób:
 
 ```csharp
-// Utwórz nowy dokument
-Document doc = new Document();
-
-//Utwórz nowy projekt VBA
-VbaProject project = new VbaProject();
-project.Name = "AsposeProject";
-doc.VbaProject = project;
-```
-
-## Krok 3: Utwórz nowy moduł i określ kod źródłowy makra
- Stworzymy nowy moduł, tworząc instancję`VbaModule` class i podanie nazwy makra, typu (moduł proceduralny) i kodu źródłowego.
-
-```csharp
-// Utwórz nowy moduł
-VbaModule module = new VbaModule();
-module.Name = "AsposeModule";
-module.Type = VbaModuleType.ProceduralModule;
-module.SourceCode = "New Source Code";
-
-// Dodaj moduł do projektu VBA
-doc.VbaProject.Modules.Add(module);
-```
-
-## Krok 4: Zapisz dokument
-Na koniec zapiszemy dokument z utworzonym projektem VBA w pliku.
-
-```csharp
-doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
-```
-
-### Przykładowy kod źródłowy narzędzia Utwórz projekt Vba przy użyciu Aspose.Words dla platformy .NET 
-
-```csharp
-
-// Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do miejsca, w którym chcesz przechowywać dokumenty programu Word. To będzie Twój plac zabaw dla tutoriala!
+
+## Krok 2: Tworzenie nowego dokumentu programu Word
+
+Teraz, gdy mamy już skonfigurowany katalog, czas utworzyć nowy dokument programu Word. Dokument ten posłuży jako kontener dla naszego projektu VBA.
+
+### Inicjowanie dokumentu
+
+Oto jak możesz utworzyć nowy dokument:
+
+```csharp
 Document doc = new Document();
+```
+
+ Ta linia inicjuje nową instancję klasy`Document` class, reprezentująca pusty dokument programu Word.
+
+## Krok 3: Tworzenie projektu VBA
+
+Po przygotowaniu dokumentu kolejnym krokiem jest utworzenie projektu VBA. Projekt VBA to zasadniczo zbiór modułów i formularzy VBA zawierających makra i kod.
+
+### Tworzenie projektu VBA
+
+Stwórzmy projekt VBA i ustawmy jego nazwę:
+
+```csharp
 VbaProject project = new VbaProject();
 project.Name = "AsposeProject";
 doc.VbaProject = project;
-// Utwórz nowy moduł i określ kod źródłowy makra.
+```
+
+ W tych liniach tworzymy nowy`VbaProject` obiekt i przypisz go do dokumentu. Nadaliśmy także projektowi nazwę „AsposeProject”, ale możesz nadać mu dowolną nazwę!
+
+## Krok 4: Dodanie modułu VBA
+
+Projekt VBA składa się z modułów, z których każdy zawiera procedury i funkcje. W tym kroku utworzymy nowy moduł i dodamy do niego kod VBA.
+
+### Tworzenie modułu
+
+Oto jak utworzyć moduł i ustawić jego właściwości:
+
+```csharp
 VbaModule module = new VbaModule();
 module.Name = "AsposeModule";
 module.Type = VbaModuleType.ProceduralModule;
-module.SourceCode = "New source code";
-// Dodaj moduł do projektu VBA.
+module.SourceCode = "Sub HelloWorld() \n MsgBox \"Hello, World!\" \n End Sub";
 doc.VbaProject.Modules.Add(module);
-doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
-
 ```
+
+W tym fragmencie:
+-  Tworzymy nowe`VbaModule` obiekt.
+- Ustawiamy nazwę modułu na „AsposeModule”.
+-  Typ modułu definiujemy jako`VbaModuleType.ProceduralModule`, co oznacza, że zawiera procedury (podprogramy lub funkcje).
+-  Ustawiamy`SourceCode` właściwość na proste „Hello, World!” makro.
+
+## Krok 5: Zapisywanie dokumentu
+
+Skoro już skonfigurowaliśmy nasz projekt VBA i dodaliśmy moduł z kodem, czas zapisać dokument. Ten krok zapewnia zachowanie wszystkich zmian w dokumencie programu Word.
+
+### Zapisywanie dokumentu
+
+Oto kod umożliwiający zapisanie dokumentu:
+
+```csharp
+doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
+```
+
+Ta linia zapisuje dokument jako „WorkingWithVba.CreateVbaProject.docm” w określonym katalogu. I voila! Utworzyłeś dokument Word z projektem VBA.
 
 ## Wniosek
-W tym samouczku widzieliśmy, jak utworzyć projekt VBA w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Tworzenie projektu VBA umożliwia dodawanie i dostosowywanie kodu VBA w dokumencie programu Word. Możesz używać tej funkcji do automatyzacji zadań lub dodawania niestandardowych funkcji do dokumentów programu Word.
 
-### Często zadawane pytania
+Gratulacje! Pomyślnie utworzyłeś projekt VBA w dokumencie programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono wszystko, od konfiguracji środowiska po pisanie i zapisywanie kodu VBA. Dzięki Aspose.Words możesz automatyzować zadania, tworzyć makra i dostosowywać dokumenty programu Word w sposób, o jakim nigdy wcześniej nie myślałeś, że jest to możliwe.
 
-#### P: Co to jest projekt VBA w dokumencie programu Word?
+ Jeśli chcesz poznać więcej,[Dokumentacja API](https://reference.aspose.com/words/net/) jest skarbnicą informacji. A jeśli kiedykolwiek będziesz potrzebować pomocy,[forum wsparcia](https://forum.aspose.com/c/words/8) to tylko jedno kliknięcie.
 
-Odp.: Projekt VBA w dokumencie programu Word to zbiór modułów VBA zawierających kod, którego można używać do automatyzacji zadań, dodawania niestandardowych funkcji lub wykonywania określonych operacji w dokumencie programu Word.
+Udanego kodowania i pamiętaj, że jedynym ograniczeniem jest Twoja wyobraźnia!
 
-#### P: Jakie są wymagania wstępne dotyczące utworzenia projektu VBA w dokumencie programu Word?
+## Często zadawane pytania
 
-Odp.: Zanim będzie można utworzyć projekt VBA w dokumencie programu Word, należy posiadać praktyczną wiedzę na temat języka programowania C#. Musisz także zainstalować w swoim projekcie bibliotekę Aspose.Words for .NET.
+### Co to jest Aspose.Words dla .NET?  
+Aspose.Words dla .NET to obszerna biblioteka, która pozwala programistom tworzyć, edytować i konwertować dokumenty Word w aplikacjach .NET. Jest idealny do automatyzacji obiegu dokumentów i zwiększania funkcjonalności dzięki VBA.
 
-#### P: Jak ustawić katalog dokumentów w kodzie?
+### Czy mogę wypróbować Aspose.Words za darmo?  
+ Tak, możesz wypróbować Aspose.Words z[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
 
- Odp.: w podanym kodzie należy wymienić`"YOUR DOCUMENTS DIRECTORY"` z odpowiednią ścieżką do katalogu, w którym chcesz zapisać dokument Worda z projektem VBA.
+### Jak dodać kod VBA do dokumentu programu Word?  
+ Możesz dodać kod VBA, tworząc plik`VbaModule` i ustawienie jego`SourceCode` właściwość za pomocą kodu makra. Następnie dodaj moduł do swojego`VbaProject`.
 
-#### P: Jak określić kod źródłowy makra w module VBA?
+### Jakie typy modułów VBA mogę stworzyć?  
+Moduły VBA mogą być różnych typów, np. moduły proceduralne (dla funkcji i podrzędnych), moduły klasowe i formularze użytkownika. W tym samouczku stworzyliśmy moduł proceduralny.
 
- Odp.: Aby określić kod źródłowy makra w module VBA, możesz użyć metody`SourceCode` własność`VbaModule` class, przypisując jej ciąg znaków zawierający kod VBA.
-
-#### P: Czy mogę dodać wiele modułów VBA do projektu VBA w dokumencie programu Word?
-
-O: Tak, możesz dodać wiele modułów VBA do projektu VBA w dokumencie programu Word, tworząc ich instancje`VbaModule` obiektów i dodawanie ich do`Modules` zbiór`VbaProject` obiekt. Umożliwia to zorganizowanie kodu VBA w różne moduły w celu lepszego zarządzania i ponownego wykorzystania.
+### Gdzie mogę kupić Aspose.Words dla .NET?  
+Możesz kupić Aspose.Words dla .NET w sklepie[strona zakupu](https://purchase.aspose.com/buy).

@@ -215,7 +215,7 @@ Nắm vững cách kết xuất tài liệu là điều cần thiết để xây
 
 ## Câu hỏi thường gặp
 
-### Sự khác biệt giữa hiển thị tài liệu và xử lý tài liệu là gì?
+### Sự khác biệt giữa kết xuất tài liệu và xử lý tài liệu là gì?
 
 Kết xuất tài liệu liên quan đến việc chuyển đổi tài liệu điện tử thành dạng trình bày trực quan để người dùng xem, chỉnh sửa hoặc in, trong khi xử lý tài liệu bao gồm các tác vụ như trộn thư, chuyển đổi và bảo vệ.
 

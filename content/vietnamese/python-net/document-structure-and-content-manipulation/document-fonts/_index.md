@@ -159,6 +159,6 @@ Có, Aspose.Words cho phép bạn điều chỉnh khoảng cách ký tự bằng
 
 Có, Aspose.Words hỗ trợ nhúng phông chữ từ các nguồn bên ngoài để đảm bảo hiển thị nhất quán trên các hệ thống khác nhau.
 
-### Tôi có thể truy cập Aspose.Words cho tài liệu và tải xuống Python ở đâu?
+### Tôi có thể truy cập Aspose.Words cho tài liệu và nội dung tải xuống Python ở đâu?
 
  Để xem tài liệu Aspose.Words dành cho Python, hãy truy cập[đây](https://reference.aspose.com/words/python-net/) . Để tải xuống thư viện, hãy truy cập[đây](https://releases.aspose.com/words/python/).

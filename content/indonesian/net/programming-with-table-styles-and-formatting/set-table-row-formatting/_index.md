@@ -2,97 +2,111 @@
 title: Atur Pemformatan Baris Tabel
 linktitle: Atur Pemformatan Baris Tabel
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengatur pemformatan baris tabel menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengatur pemformatan baris tabel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan kami. Sempurna untuk membuat dokumen yang diformat dengan baik dan profesional.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah untuk mengatur pemformatan baris tabel menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan paket kode sumber C# dan memberi Anda panduan komprehensif untuk membantu Anda memahami dan menerapkan fitur ini dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan mengetahui cara menyesuaikan tinggi dan bantalan baris tabel di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+Jika Anda ingin menguasai seni memformat tabel di dokumen Word menggunakan Aspose.Words untuk .NET, Anda berada di tempat yang tepat. Tutorial ini akan memandu Anda melalui proses pengaturan format baris tabel, memastikan dokumen Anda tidak hanya fungsional tetapi juga estetis. Jadi, mari selami dan ubah tabel biasa tersebut menjadi tabel yang berformat baik!
 
-## Langkah 1: Tentukan direktori dokumen
-Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ini adalah lokasi di mana Anda ingin menyimpan dokumen Word yang telah Anda edit. Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai.
+## Prasyarat
+
+Sebelum kita masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
+
+1.  Aspose.Words untuk .NET - Jika Anda belum melakukannya, unduh dan instal dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan - IDE apa pun seperti Visual Studio yang mendukung .NET.
+3. Pengetahuan Dasar C# - Memahami konsep dasar C# akan membantu Anda mengikutinya dengan lancar.
+
+## Impor Namespace
+
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan. Ini penting karena memastikan Anda memiliki akses ke semua fungsi yang disediakan oleh Aspose.Words untuk .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Langkah 2: Buat dokumen baru dan pembuat dokumen
- Selanjutnya, Anda perlu membuat instance baru dari`Document` kelas dan konstruktor dokumen untuk dokumen itu.
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dicerna. Setiap langkah akan mencakup bagian tertentu dari proses pemformatan tabel.
+
+## Langkah 1: Buat Dokumen Baru
+
+Langkah pertama adalah membuat dokumen Word baru. Ini akan berfungsi sebagai kanvas untuk meja Anda.
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 3: Mulai tabel baru dan tambahkan sel
-Untuk mulai membuat tabel, kami menggunakan`StartTable()` metode konstruktor dokumen, lalu kita menambahkan sel ke tabel menggunakan`InsertCell()` metode.
+## Langkah 2: Mulai Tabel
+
+ Selanjutnya, Anda akan mulai membuat tabel. Itu`DocumentBuilder` class menyediakan cara mudah untuk menyisipkan dan memformat tabel.
 
 ```csharp
-Table table = builder. StartTable();
-builder. InsertCell();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## Langkah 4: Tentukan format garis
- Sekarang kita dapat mengatur format baris dengan mengakses`RowFormat` objek dari`DocumentBuilder` obyek. Kita dapat mengatur tinggi garis dan margin (padding) menggunakan properti yang sesuai.
+## Langkah 3: Atur Pemformatan Baris
+
+Sekarang sampai pada bagian yang menyenangkan - mengatur format baris. Anda akan menyesuaikan tinggi baris dan menentukan aturan ketinggian.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## Langkah 5: Tetapkan margin tabel
- Selanjutnya, kita dapat mengatur padding tabel dengan mengakses properti yang sesuai dari`Table` obyek. Margin ini akan diterapkan ke semua baris tabel.
+## Langkah 4: Terapkan Padding ke Tabel
+
+Padding menambahkan ruang di sekitar konten dalam sel, membuat teks lebih mudah dibaca. Anda akan mengatur bantalan untuk semua sisi meja.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## Langkah 6: Tambahkan konten ke baris
- Terakhir, kita dapat menambahkan konten ke baris menggunakan pembuat dokumen`Writeln()` metode.
+## Langkah 5: Tambahkan Konten ke Baris
+
+Dengan pemformatan yang ada, saatnya menambahkan beberapa konten ke baris. Ini bisa berupa teks atau data apa pun yang ingin Anda sertakan.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.Writeln("I'm a wonderfully formatted row.");
+builder.EndRow();
 ```
 
-## Langkah 7: Selesaikan tabel dan simpan dokumen
-Di dalam
+## Langkah 6: Selesaikan Tabel
 
- selesai, kita selesaikan pembuatan tabel menggunakan`EndRow()`Dan`EndTable()` metode, lalu kami menyimpan dokumen yang dimodifikasi ke file.
+Untuk menyelesaikan proses pembuatan tabel, Anda perlu mengakhiri tabel dan menyimpan dokumen.
 
 ```csharp
-builder. EndRow();
-builder. EndTable();
+builder.EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-### Contoh kode sumber untuk Mengatur Pemformatan Baris Tabel menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Properti pemformatan ini diatur pada tabel dan diterapkan ke semua baris dalam tabel.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
-```
-
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mengatur pemformatan baris tabel menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah menyesuaikan tinggi dan margin baris tabel di dokumen Word Anda. Aspose.Words menawarkan API yang kuat dan fleksibel untuk memanipulasi dan memformat tabel di dokumen Anda. Dengan pengetahuan ini, Anda dapat menyesuaikan tata letak visual tabel dengan kebutuhan spesifik Anda.
+
+Dan itu dia! Anda telah berhasil membuat tabel yang diformat dalam dokumen Word menggunakan Aspose.Words untuk .NET. Proses ini dapat diperluas dan disesuaikan agar sesuai dengan kebutuhan yang lebih kompleks, namun langkah-langkah dasar ini memberikan dasar yang kuat. Bereksperimenlah dengan berbagai opsi pemformatan dan lihat bagaimana opsi tersebut menyempurnakan dokumen Anda.
+
+## FAQ
+
+### Bisakah saya mengatur format berbeda untuk setiap baris dalam tabel?
+ Ya, Anda dapat mengatur pemformatan individual untuk setiap baris dengan menerapkan berbeda`RowFormat` properti untuk setiap baris yang Anda buat.
+
+### Apakah mungkin untuk menambahkan elemen lain, seperti gambar, ke dalam sel tabel?
+ Sangat! Anda dapat menyisipkan gambar, bentuk, dan elemen lainnya ke dalam sel tabel menggunakan`DocumentBuilder` kelas.
+
+### Bagaimana cara mengubah perataan teks di dalam sel tabel?
+ Anda dapat mengubah perataan teks dengan mengatur`ParagraphFormat.Alignment` properti dari`DocumentBuilder` obyek.
+
+### Bisakah saya menggabungkan sel dalam tabel menggunakan Aspose.Words untuk .NET?
+ Ya, Anda dapat menggabungkan sel menggunakan`CellFormat.HorizontalMerge`Dan`CellFormat.VerticalMerge` properti.
+
+### Apakah ada cara untuk menata tabel dengan gaya yang telah ditentukan sebelumnya?
+ Ya, Aspose.Words untuk .NET memungkinkan Anda menerapkan gaya tabel yang telah ditentukan sebelumnya menggunakan`Table.Style` Properti.

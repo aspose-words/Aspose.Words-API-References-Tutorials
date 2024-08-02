@@ -16,8 +16,8 @@ url: /zh-hant/net/programming-with-styles-and-themes/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [訪問方式](./access-styles/) | 了解如何使用 Aspose.Words for .NET 存取文件樣式。操作文檔樣式的完整教學。 |
-| [複製樣式](./copy-styles/) | 了解如何使用 Aspose.Words for .NET 在文件之間複製樣式。 |
-| [取得主題屬性](./get-theme-properties/) | 使用 Aspose.Words for .NET 探索文件的主題屬性。客製化樣式和顏色以獲得獨特的外觀。 |
-| [設定主題屬性](./set-theme-properties/) | 了解透過使用 Aspose.Words for .NET 變更主題屬性來自訂文件的外觀。獲得專業且有吸引力的結果。 |
-| [插入樣式分隔符](./insert-style-separator/) | 了解使用自訂樣式建立文件並插入樣式分隔符號以實現精確、專業的格式設定。 |
+| [取得Word中的文檔樣式](./access-styles/) | 透過這個詳細的逐步教學，了解如何使用 Aspose.Words for .NET 在 Word 中取得文件樣式。在 .NET 應用程式中以程式設計方式存取和管理樣式。 |
+| [複製 Word 文件樣式](./copy-styles/) | 了解如何使用 Aspose.Words for .NET 複製 Word 文件樣式。按照我們的逐步指南輕鬆確保文件格式一致。 |
+| [取得Word中的文檔主題屬性](./get-theme-properties/) | 了解如何使用 Aspose.Words for .NET 存取和管理 Word 中的文件主題屬性。透過我們的指南學習檢索字體和顏色。 |
+| [在 Word 文件中設定主題屬性](./set-theme-properties/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定主題屬性。按照我們的逐步指南輕鬆自訂字體和顏色。 |
+| [I在Word中插入文檔樣式分隔符](./insert-style-separator/) | 了解如何使用 Aspose.Words for .NET 在 Word 中插入文件樣式分隔符號。本指南提供了管理文件樣式的說明和提示。 |

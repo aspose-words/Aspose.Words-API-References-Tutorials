@@ -8,7 +8,7 @@ weight: 19
 url: /zh-hant/java/document-revision/
 ---
 
-文件修訂是文字處理和文件處理的重要方面，確保文件經過徹底的審查和更新。 Aspose.Words for Java 提供有關文件修訂的全面教程，使開發人員能夠有效管理修訂並維護版本控制。
+文件修訂是文字處理和文件處理的重要方面，確保文件經過徹底的審查和更新。 Aspose.Words for Java 提供了有關文件修訂的全面教程，使開發人員能夠有效地管理修訂並維護版本控制。
 
 ## 使用 Aspose.Words 追蹤修訂
 

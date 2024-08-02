@@ -17,14 +17,14 @@ Kodexemplen i handledningarna hjälper dig att förstå begreppen och öva på f
 | Titel | Beskrivning |
 | --- | --- |
 | [Kryssruta Typ Innehållskontroll](./check-box-type-content-control/) | Lär dig hur du lägger till en kryssrutatyp Innehållskontroll i Word-dokument med Aspose.Words för .NET med denna detaljerade, steg-för-steg handledning. |
-| [Aktuellt tillstånd för kryssrutan](./current-state-of-check-box/) | Lär dig hur du hämtar och ställer in det aktuella tillståndet för en innehållskontroll i en kryssruta i ett Word-dokument med Aspose.Words för .NET. |
-| [Ändra innehållskontroller](./modify-content-controls/) | Lär dig hur du ändrar text, rullgardinslistor och bilder i innehållskontroller i ett Word-dokument med Aspose.Words för .NET. |
-| [Combo Box Innehållskontroll](./combo-box-content-control/) | Lär dig hur du skapar en Combo Box Innehållskontroll i ett Word-dokument med Aspose.Words för .NET. |
-| [Innehållskontroll för Rich Text Box](./rich-text-box-content-control/) | Lär dig hur du skapar en innehållskontroll för rik textruta i ett Word-dokument med Aspose.Words för .NET som möjliggör textformatering och stil. |
-| [Ställ in innehållskontrollfärg](./set-content-control-color/) | Lär dig hur du ställer in färgen på en innehållskontroll i ett Word-dokument med Aspose.Words för .NET och anpassar dess utseende. |
+| [Aktuellt tillstånd för kryssrutan](./current-state-of-check-box/) | Lär dig hur du hanterar kryssrutor i Word-dokument med Aspose.Words för .NET. Den här guiden handlar om att ställa in, uppdatera och spara kryssrutor programmatiskt. |
+| [Ändra innehållskontroller](./modify-content-controls/) | Lär dig hur du ändrar strukturerade dokumenttaggar i Word med Aspose.Words för .NET. Uppdatera text, rullgardinsmenyer och bilder steg för steg. |
+| [Combo Box Innehållskontroll](./combo-box-content-control/) | Skapa en kombinationsruta innehållskontroll i Word-dokument med Aspose.Words för .NET med vår detaljerade handledning. Perfekt för att förbättra ditt dokuments interaktivitet. |
+| [Innehållskontroll för Rich Text Box](./rich-text-box-content-control/) | Lär dig hur du lägger till och anpassar en Rich Text Box-innehållskontroll i ett Word-dokument med Aspose.Words för .NET med denna detaljerade, steg-för-steg-guide. |
+| [Ställ in innehållskontrollfärg](./set-content-control-color/) | Ställ enkelt in färgen på strukturerade dokumenttaggar i Word med Aspose.Words för .NET. Anpassa dina SDT:er för att förbättra dokumentets utseende med denna enkla guide. |
 | [Rensa innehållskontroll](./clear-contents-control/) | Lär dig hur du rensar innehållskontrollen i ett Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. |
-| [Bind SDT till anpassad XML-del](./bind-sdt-to-custom-xml-part/) | Lär dig hur du binder en SDT till en anpassad XML-del med Aspose.Words för .NET. |
-| [Ställ in stil för innehållskontroll](./set-content-control-style/) | Lär dig hur du ställer in stilen för en innehållskontroll i ett Word-dokument med Aspose.Words för .NET, med konsekvent formatering. |
+| [Bind SDT till anpassad XML-del](./bind-sdt-to-custom-xml-part/) | Lär dig hur du binder strukturerade dokumenttaggar (SDT) till anpassade XML-delar i Word-dokument med Aspose.Words för .NET med denna steg-för-steg handledning. |
+| [Ställ in stil för innehållskontroll](./set-content-control-style/) | Lär dig hur du ställer in stilar för innehållskontroll i Word-dokument med Aspose.Words för .NET med denna detaljerade steg-för-steg-guide. Perfekt för att förbättra dokumentets estetik. |
 | [Skapa tabellupprepande avsnitt mappas till anpassad XML-del](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Lär dig hur du skapar en tabell med ett upprepande avsnitt mappat till en CustomXmlPart i ett Word-dokument med Aspose.Words för .NET. |
-| [Flersektion](./multi-section/) | Lär dig hur du hämtar och bearbetar strukturerade dokumenttaggar i flera sektioner i ett Word-dokument med Aspose.Words för .NET. |
-| [Structured Document Tag Range Starta XML-mappning](./structured-document-tag-range-start-xml-mapping/) | Lär dig hur du ställer in XML-mappning för ett strukturerat dokumenttaggintervall med start i ett Word-dokument med Aspose.Words för .NET. |
+| [Flersektion](./multi-section/) | Lär dig hur du arbetar med strukturerade dokumenttaggar i flera sektioner i Aspose.Words för .NET med denna steg-för-steg-handledning. Idealisk för dynamisk dokumenthantering. |
+| [Structured Document Tag Range Starta XML-mappning](./structured-document-tag-range-start-xml-mapping/) | Lär dig hur du dynamiskt binder XML-data till strukturerade dokumenttaggar i Word med Aspose.Words för .NET. Följ vår steg-för-steg-guide. |

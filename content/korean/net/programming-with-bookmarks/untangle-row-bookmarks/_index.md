@@ -13,7 +13,7 @@ url: /ko/net/programming-with-bookmarks/untangle-row-bookmarks/
 
 이 가이드는 .NET용 Aspose.Words를 사용하여 Word 문서에서 행 북마크를 푸는 과정을 안내합니다. 코드를 이해하기 쉬운 단계로 나누고 각 기능의 목적을 설명하여 성가신 북마크 문제를 자신있게 해결할 수 있도록 도와드립니다.
 
-## 전제조건
+## 전제 조건
 
 다이빙을 시작하기 전에 몇 가지 사항이 필요합니다.
 

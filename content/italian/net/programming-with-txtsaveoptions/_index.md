@@ -16,6 +16,6 @@ Grazie a questi tutorial potrai sfruttare appieno le funzionalità di Aspose.Wor
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Aggiungi segni Bidi nel documento Word](./add-bidi-marks/) | Impara ad aggiungere segni Bidi a un documento Word utilizzando Aspose.Words per .NET e crea documenti multilingue professionali. |
-| [Utilizza il carattere di tabulazione per livello per il rientro dell'elenco](./use-tab-character-per-level-for-list-indentation/) | Scopri come utilizzare gli elenchi di rientri con la funzionalità dei caratteri di tabulazione in Aspose.Words per .NET. Segui questa guida passo passo per creare documenti ben strutturati e leggibili. Risparmia tempo e migliora il tuo flusso di lavoro con questa potente funzionalità. Accedi subito al tutorial completo. |
-| [Utilizza il carattere spazio per livello per il rientro dell'elenco](./use-space-character-per-level-for-list-indentation/) | Guida dettagliata all'utilizzo di un carattere spazio per livello per il rientro dell'elenco in Aspose.Words per .NET. Crea con facilità documenti Word ben strutturati. |
+| [Aggiungi segni Bidi nel documento Word](./add-bidi-marks/) | Scopri come aggiungere segni bidirezionali (Bidi) nei documenti di Word utilizzando Aspose.Words per .NET con questa guida. Garantire la corretta direzione del testo per i contenuti multilingue. |
+| [Utilizza il carattere di tabulazione per livello per il rientro dell'elenco](./use-tab-character-per-level-for-list-indentation/) | Scopri come creare elenchi multilivello con rientro a schede utilizzando Aspose.Words per .NET. Segui questa guida per una formattazione precisa dell'elenco nei tuoi documenti. |
+| [Utilizza il carattere spazio per livello per il rientro dell'elenco](./use-space-character-per-level-for-list-indentation/) | Scopri come creare elenchi multilivello con rientro dei caratteri spaziali in Aspose.Words per .NET. Guida passo passo per una formattazione precisa dei documenti. |

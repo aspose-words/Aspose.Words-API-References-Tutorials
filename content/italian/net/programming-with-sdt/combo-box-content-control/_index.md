@@ -2,71 +2,115 @@
 title: Controllo del contenuto della casella combinata
 linktitle: Controllo del contenuto della casella combinata
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come creare un controllo contenuto casella combinata in un documento Word utilizzando Aspose.Words per .NET.
+description: Crea un controllo del contenuto della casella combinata nei documenti di Word utilizzando Aspose.Words per .NET con il nostro tutorial dettagliato. Perfetto per migliorare l'interattività del tuo documento.
 type: docs
 weight: 10
 url: /it/net/programming-with-sdt/combo-box-content-control/
 ---
+## introduzione
 
-Questo tutorial spiega come creare un controllo contenuto casella combinata in un documento Word utilizzando Aspose.Words per .NET. I controlli del contenuto della casella combinata consentono agli utenti di selezionare un elemento da un elenco a discesa.
+Stai cercando di aggiungere elementi interattivi ai tuoi documenti Word? Bene, sei arrivato nel posto giusto! In questa guida ti spiegheremo come creare un controllo del contenuto di una casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Alla fine di questo tutorial, avrai una conoscenza approfondita di come inserire e manipolare i controlli del contenuto della casella combinata, rendendo i tuoi documenti più dinamici e intuitivi.
 
 ## Prerequisiti
-Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- Aspose.Words per la libreria .NET installata.
-- Conoscenza base di C# ed elaborazione testi con documenti Word.
+Prima di immergerci nei dettagli della codifica, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui desideri salvare il documento.
+1.  Aspose.Words per .NET: assicurati di avere installata la versione più recente. Puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+2. .NET Framework: assicurati di avere .NET Framework installato sul tuo computer.
+3. Ambiente di sviluppo integrato (IDE): Visual Studio è consigliato per lo sviluppo .NET.
+4. Comprensione di base di C#: questo tutorial presuppone che tu abbia una conoscenza di base della programmazione C#.
+
+## Importa spazi dei nomi
+
+Per iniziare a utilizzare Aspose.Words nel tuo progetto, dovrai importare gli spazi dei nomi necessari. Ecco come farlo:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Markup;
 ```
 
-## Passaggio 2: crea un documento e un tag StructuredDocument
- Crea una nuova istanza di`Document` classe e a`StructuredDocumentTag` per rappresentare il controllo del contenuto della casella combinata. Specificare`SdtType.ComboBox` come il tipo e`MarkupLevel.Block` come livello di markup per creare una casella combinata a livello di blocco.
+Va bene, entriamo nella parte divertente: la programmazione! Suddivideremo il processo in passaggi facili da seguire.
+
+## Passaggio 1: imposta il tuo progetto
+
+Per prima cosa, imposta un nuovo progetto nel tuo IDE. Ecco come:
+
+- Apri VisualStudio.
+- Creare un nuovo progetto di applicazione console C#.
+- Installare il pacchetto Aspose.Words per .NET tramite NuGet Package Manager. Puoi farlo eseguendo il comando seguente nella Console di gestione pacchetti:
+  ```
+  Install-Package Aspose.Words
+  ```
+
+## Passaggio 2: inizializza il documento
+
+In questo passaggio, inizializzeremo un nuovo documento Word in cui aggiungeremo il controllo del contenuto della casella combinata.
 
 ```csharp
+// Percorso della directory dei documenti
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Inizializzare il documento
 Document doc = new Document();
+```
+
+## Passaggio 3: crea il controllo del contenuto della casella combinata
+
+Ora creiamo il controllo del contenuto della casella combinata. Questo controllo consentirà agli utenti di selezionare da un elenco predefinito di elementi.
+
+```csharp
+// Creare un controllo contenuto ComboBox
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
 ```
 
-## Passaggio 3: aggiungi elementi alla casella combinata
- Aggiungi elementi alla casella combinata utilizzando il comando`ListItems` proprietà del`StructuredDocumentTag` . Ogni elemento è rappresentato da un`SdtListItem` oggetto, che accetta un testo visualizzato e un valore. In questo esempio aggiungiamo tre elementi alla casella combinata.
+## Passaggio 4: aggiungi elementi alla casella combinata
+
+Una casella combinata non è molto utile senza elementi tra cui selezionare. Aggiungiamo alcuni elementi ad esso.
 
 ```csharp
+// Aggiungi elementi al ComboBox
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
 sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
 sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
 ```
 
-## Passaggio 4: aggiungi StructuredDocumentTag al documento
- Aggiungi il controllo del contenuto della casella combinata al corpo del documento utilizzando il comando`AppendChild` metodo del corpo della prima sezione del documento.
+## Passaggio 5: inserire la casella combinata nel documento
+
+Successivamente, dobbiamo inserire questa casella combinata nel documento. Lo aggiungeremo al corpo della prima sezione del nostro documento.
 
 ```csharp
+// Aggiungi il ComboBox al corpo del documento
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## Passaggio 5: salva il documento
- Salvare il documento nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithSdt.ComboBoxContentControl.docx".
+## Passaggio 6: salva il documento
+
+Infine, salviamo il documento in modo da poter vedere la nostra casella combinata in azione.
 
 ```csharp
+// Salva il documento
 doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ```
 
-### Codice sorgente di esempio per il controllo del contenuto della casella combinata utilizzando Aspose.Words per .NET 
+## Conclusione
 
-```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+E il gioco è fatto! Hai creato con successo un controllo del contenuto della casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi aggiungere elementi interattivi ai tuoi documenti, migliorandone la funzionalità e l'esperienza utente.
 
-	Document doc = new Document();
-	StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
-	sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
-	sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
-	sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
-	doc.FirstSection.Body.AppendChild(sdt);
-	doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
-```
+Sentiti libero di sperimentare diversi tipi di controlli dei contenuti e personalizzarli in base alle tue esigenze. Se hai domande o riscontri problemi, non esitare a contattare il supporto.
 
-Questo è tutto! Hai creato con successo un controllo del contenuto della casella combinata nel tuo documento Word utilizzando Aspose.Words per .NET.
+## Domande frequenti
+
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria per lavorare con documenti Word a livello di codice. Ti consente di creare, modificare, convertire ed eseguire il rendering di documenti Word in vari formati.
+
+### Posso utilizzare Aspose.Words per .NET con altri framework .NET?
+Sì, Aspose.Words per .NET supporta vari framework .NET tra cui .NET Core e .NET Standard.
+
+### Come posso ottenere una prova gratuita di Aspose.Words per .NET?
+ È possibile scaricare una versione di prova gratuita di Aspose.Words per .NET[Qui](https://releases.aspose.com/).
+
+### Quali altri tipi di controlli del contenuto posso creare utilizzando Aspose.Words?
+Oltre alle caselle combinate, puoi creare controlli di input di testo, caselle di controllo, selettori di date e altro ancora.
+
+### Dove posso trovare una documentazione più dettagliata su Aspose.Words per .NET?
+ Per la documentazione dettagliata, visitare il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/).

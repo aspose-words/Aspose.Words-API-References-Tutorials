@@ -2,96 +2,121 @@
 title: 分割表
 linktitle: 分割表
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 分割 Word 文件中的表格。
+description: 了解如何使用 Aspose.Words for .NET 分割 Word 文件中的表格。我們的逐步指南使餐桌管理變得簡單且有效率。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-tables/split-table/
 ---
+## 介紹
 
-在本教學中，我們將學習如何使用 Aspose.Words for .NET 分割 Word 文件中的表格。我們將按照逐步指南來理解程式碼並實現此功能。在本教學結束時，您將能夠從 Word 文件中的特定行拆分錶格。
+您是否曾經發現自己在 Word 文件中使用一個大表格，並希望將其拆分為兩個更小、更易於管理的表格？今天，我們將深入探討如何使用 Aspose.Words for .NET 來實現這一目標。無論您是處理大量資料表還是複雜的文件結構，分割表都可以幫助增強可讀性和組織性。讓我們來探索使用 Aspose.Words for .NET 分割表格的逐步流程。
 
-## 第 1 步：項目設置
-1. 啟動 Visual Studio 並建立一個新的 C# 專案。
-2. 新增對 Aspose.Words for .NET 函式庫的參考。
+## 先決條件
 
-## 第 2 步：載入文檔
-若要啟動文件的文字處理，請依照下列步驟操作：
+在我們開始學習本教學之前，請確保您具備以下條件：
 
-```csharp
-//文檔目錄的路徑
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words for .NET 程式庫：請確定您已下載並安裝 Aspose.Words for .NET 程式庫。您可以從[Aspose 發佈頁面](https://releases.aspose.com/words/net/).
+2. 開發環境：建置支援.NET框架的開發環境，例如Visual Studio。
+3. 範例文件：準備一個 Word 文件（`Tables.docx`）至少有一個表格來應用拆分操作。
 
-//載入文檔
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## 導入命名空間
 
-請務必將「您的文件目錄」替換為文件目錄的實際路徑，並提供正確的檔案名稱。
-
-## 第三步：劃分錶格
-接下來我們將從某一行拆分錶。使用以下程式碼：
+首先，將必要的命名空間匯入到您的專案中。這允許您存取 Aspose.Words 提供的類別和方法。
 
 ```csharp
-//檢索第一個表
-Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-//確定表格的分割線
-Row row = firstTable.Rows[2];
-
-//為拆分錶建立一個新容器
-Table table = (Table)firstTable.Clone(false);
-
-//將容器插入原始表格之後
-firstTable.ParentNode.InsertAfter(table, firstTable);
-
-//新增緩衝段落以保持表格之間的距離
-firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
-
-//將行從原始表移動到拆分錶
-Row currentRow;
-do
-{
-currentRow = firstTable.LastRow;
-table. PrependChild(currentRow);
-} while (currentRow != row);
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-這裡我們使用文檔從文檔節點檢索第一個表。然後我們確定要從中拆分資料表的行，在本例中為第三行（索引 2）。然後，我們透過克隆原始表來建立一個新容器，然後將其插入到原始表之後。我們還新增了一個緩衝段落來保持兩個表格之間的距離。然後，我們使用 do-while 循環將行從原始表移至拆分錶，直到到達指定的行。
+## 第 1 步：載入文檔
 
-## 第四步：儲存修改後的文檔
-最後，我們需要保存
-
-  使用拆分錶修改的文檔。使用以下程式碼：
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
-```
-
-請務必為輸出文件指定正確的路徑和檔案名稱。
-
-### 使用 Aspose.Words for .NET 的分割表示例原始碼 
+讓我們先載入包含要拆分的表的文檔。確保指定文件的正確路徑。
 
 ```csharp
 //文檔目錄的路徑
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
-Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-//我們將在第三行（含）處拆分錶格。
+```
+
+## 第 2 步：確定要拆分的表
+
+接下來，識別並檢索您想要拆分的表。在此範例中，我們將定位文件中的第一個表。
+
+```csharp
+Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
+```
+
+## 步驟 3：選擇要分割的行
+
+確定要拆分錶的行。在這裡，我們在第三行（含）處拆分錶格。
+
+```csharp
 Row row = firstTable.Rows[2];
-//為拆分錶建立一個新容器。
-Table table = (Table) firstTable.Clone(false);
-//將容器插入原件之後。
+```
+
+## 步驟4：建立一個新的表容器
+
+建立一個新的表容器來保存將從原始表中移動的行。
+
+```csharp
+Table table = (Table)firstTable.Clone(false);
+```
+
+## 第 5 步：插入新表容器
+
+將新表格容器插入文件中原始表格之後。
+
+```csharp
 firstTable.ParentNode.InsertAfter(table, firstTable);
-//新增一個緩衝段落以確保表格保持分開。
+```
+
+## 步驟6：新增緩衝段落
+
+在兩個表之間新增一個緩衝區段落以確保它們保持獨立。
+
+```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
+```
+
+## 步驟 7：將行移至新表
+
+將行從原始表移至新表容器。此循環將繼續，直到指定的行（包括）被移動。
+
+```csharp
 Row currentRow;
 do
 {
-	currentRow = firstTable.LastRow;
-	table.PrependChild(currentRow);
+    currentRow = firstTable.LastRow;
+    table.PrependChild(currentRow);
 } while (currentRow != row);
+```
+
+## 第 8 步：儲存文檔
+
+最後，儲存修改後的文件並拆分錶格。
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## 結論
-在本教學中，我們學習如何使用 Aspose.Words for .NET 分割 Word 文件中的表格。透過遵循本逐步指南並實現提供的 C# 程式碼，您可以輕鬆地從 Word 文件中的某一行拆分錶格。
+
+現在你就擁有了！透過執行下列步驟，您可以使用 Aspose.Words for .NET 輕鬆分割 Word 文件中的表格。此方法可幫助您更有效地管理大型表格，從而提高文件的可讀性和組織性。嘗試一下，看看它如何簡化您在 Word 文件中使用表格的工作。
+
+## 常見問題解答
+
+### 我可以將一個表拆分為多行嗎？
+是的，您可以透過對每個拆分點重複此程序來將表拆分為多行。
+
+### 原始表格的格式會發生什麼變化？
+新表繼承了原始表的格式。任何特定的格式變更都可以根據需要套用於新表。
+
+### 是否可以將表重新合併在一起？
+是的，您可以透過使用類似的方法將行從一個表移動到另一個表來合併表。
+
+### 此方法適用於巢狀表嗎？
+是的，Aspose.Words for .NET 也支援巢狀資料表的操作。
+
+### 我可以針對多個文件自動執行此程序嗎？
+絕對地！您可以建立腳本或應用程式來自動執行多個文件的表拆分過程。

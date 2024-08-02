@@ -16,4 +16,4 @@ Budete-li se řídit těmito výukovými programy, budete moci plně využívat 
 ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Použití podoken úloh webového rozšíření](./using-web-extension-task-panes/) | Podrobný průvodce používáním podoken úloh rozšíření webu s Aspose.Words pro .NET. |
+| [Použití podoken úloh webového rozšíření](./using-web-extension-task-panes/) | Naučte se přidávat a konfigurovat podokna úloh rozšíření webu v dokumentech aplikace Word pomocí Aspose.Words for .NET v tomto podrobném, podrobném kurzu. |

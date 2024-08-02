@@ -2,103 +2,115 @@
 title: Dodaj Komentarze
 linktitle: Dodaj Komentarze
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać komentarze do dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak dodawać komentarze do dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika. Ulepsz proces współpracy nad dokumentami bez wysiłku.
 type: docs
 weight: 10
 url: /pl/net/working-with-comments/add-comments/
 ---
+## Wstęp
 
-W tym obszernym samouczku dowiesz się, jak dodawać komentarze do dokumentu programu Word za pomocą Aspose.Words dla .NET. Przeprowadzimy Cię przez proces i udostępnimy niezbędne fragmenty kodu C#. Pod koniec tego przewodnika będziesz mógł wstawiać komentarze i dostosowywać ich treść w swoich dokumentach.
+Witamy w naszym szczegółowym przewodniku na temat dodawania komentarzy do dokumentów programu Word przy użyciu Aspose.Words dla .NET! Jeśli chcesz usprawnić proces recenzji dokumentów poprzez programowe uwzględnianie komentarzy, trafiłeś we właściwe miejsce. Ten samouczek przeprowadzi Cię przez wszystko, co musisz wiedzieć, od konfiguracji środowiska po pisanie i zapisywanie komentarzy w dokumentach programu Word. Zagłębmy się w szczegóły i sprawmy, aby współpraca nad dokumentami była prosta!
 
 ## Warunki wstępne
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim systemie.
 
-## Krok 1: Utwórz nowy dokument i narzędzie DocumentBuider
-Aby rozpocząć, utwórz nowy dokument za pomocą klasy Document i zainicjuj obiekt DocumentBuilder:
+Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
+
+1. Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET Framework na swoim komputerze.
+3. Środowisko programistyczne: IDE, takie jak Visual Studio, do pisania i wykonywania kodu.
+4. Podstawowa znajomość języka C#: Znajomość języka programowania C# pomoże Ci śledzić przykłady.
+
+## Importuj przestrzenie nazw
+
+Najpierw musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. Umożliwi to dostęp do klas i metod wymaganych do pracy z Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+```
+
+Podzielmy teraz proces na łatwe do wykonania kroki. Każdy krok będzie zawierał szczegółowe wyjaśnienie, które pomoże Ci zrozumieć logikę i funkcjonalność.
+
+## Krok 1: Skonfiguruj katalog dokumentów
+
+ Najpierw musimy zdefiniować katalog, w którym zostanie zapisany dokument. Użyjemy symbolu zastępczego`YOUR DOCUMENT DIRECTORY` który powinieneś zastąpić rzeczywistą ścieżką katalogu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Krok 2: Zainicjuj dokument
+
+Następnie zainicjujemy nowy dokument i obiekt DocumentBuilder. DocumentBuilder pomaga nam budować i modyfikować dokument.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Dodaj treść do dokumentu
-Następnie dodaj żądaną treść do dokumentu za pomocą obiektu DocumentBuilder. W tym przykładzie dodajemy tekst:
+## Krok 3: Dodaj tekst do dokumentu
+
+Dodamy tekst do dokumentu za pomocą narzędzia DocumentBuilder. W tym tekście zamieścimy nasz komentarz.
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## Krok 3: Utwórz komentarz i dodaj treść
-Aby dodać komentarz należy utworzyć instancję klasy Comment, przekazując obiekt Document, nazwisko autora, inicjały autora oraz aktualną datę:
+## Krok 4: Utwórz i dołącz komentarz
+
+Teraz czas na utworzenie komentarza. Zainicjujemy nowy obiekt Komentarz, podając dokument, nazwisko autora, inicjały i datę.
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-Następnie dołącz komentarz do bieżącego akapitu:
+## Krok 5: Dołącz komentarz do akapitu
+
+Musimy dołączyć komentarz do bieżącego akapitu, w którym dodaliśmy tekst. Dokonuje się tego poprzez dodanie komentarza do akapitu.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-Dodaj treść do komentarza, na przykład akapit i tekst:
+## Krok 6: Dodaj treść do komentarza
+
+Na koniec dodamy treść komentarza. Utworzymy nowy akapit i przebieg, w którym będzie przechowywany tekst komentarza, a następnie dodamy je do komentarza.
 
 ```csharp
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
-## Krok 4: Zapisz dokument
-Po dodaniu komentarza i jego zawartości zapisz dokument do pliku korzystając z metody Save klasy Document:
+## Krok 7: Zapisz dokument
+
+Ostatnim krokiem jest zapisanie dokumentu wraz z komentarzami. Określimy katalog i nazwę pliku.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
-```
-
-## Przykładowy kod źródłowy dodawania komentarzy przy użyciu Aspose.Words dla .NET
-Oto kompletny kod źródłowy do dodawania komentarzy przy użyciu Aspose.Words dla .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Write("Some text is added.");
-
-Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-builder.CurrentParagraph.AppendChild(comment);
-
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
 ## Wniosek
-Gratulacje! Pomyślnie nauczyłeś się dodawać komentarze do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z udostępnionego kodu źródłowego, możesz teraz wstawiać komentarze i dostosowywać ich treść w swoich dokumentach.
 
-Komentarze są przydatne do współpracy, dostarczania dodatkowych informacji lub robienia notatek w dokumencie. Eksperymentuj z różnymi nazwiskami autorów, inicjałami i treścią komentarzy, aby spełnić Twoje specyficzne wymagania.
+Masz to! Pomyślnie dodałeś komentarze do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może znacznie usprawnić proces przeglądania dokumentów, ułatwiając współpracę i przekazywanie opinii. Nie zapomnij poznać innych możliwości Aspose.Words, aby jeszcze bardziej usprawnić zadania związane z zarządzaniem dokumentami.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jak mogę dodać komentarz w dokumencie Aspose.Words for .NET?
+### Co to jest Aspose.Words dla .NET?
 
-Odp.: Aby dodać komentarz w dokumencie Aspose.Words for .NET, musisz wykonać kroki wymienione w samouczku.
+Aspose.Words dla .NET to potężny interfejs API, który umożliwia programistom programowe tworzenie, manipulowanie i konwertowanie dokumentów programu Word przy użyciu języków .NET.
 
-#### P: Czy mogę sformatować tekst komentarza w Aspose.Words dla .NET?
+### Czy mogę dodać wiele komentarzy do jednego dokumentu?
 
-O: Tak, możesz sformatować tekst komentarza w Aspose.Words dla .NET, korzystając z dostępnych właściwości formatowania.
+Tak, możesz dodać wiele komentarzy do jednego dokumentu, powtarzając proces tworzenia i dołączania komentarzy do różnych akapitów lub ciągów tekstu.
 
-#### P: Jak mogę odzyskać wszystkie komentarze znajdujące się w dokumencie?
+### Jak mogę dostosować wygląd komentarzy?
 
- Odp.: Możesz pobrać wszystkie komentarze znajdujące się w dokumencie za pomocą`Document.Comments` nieruchomość.
+Chociaż Aspose.Words koncentruje się na treści i strukturze komentarzy, ich wygląd można dostosować za pomocą wbudowanych funkcji formatowania programu Word.
 
-#### P: Czy mogę usunąć konkretny komentarz w Aspose.Words dla .NET?
+### Czy można programowo usunąć komentarze?
 
- O: Tak, możesz usunąć konkretny komentarz w Aspose.Words dla .NET za pomocą`Comment.Remove` metoda.
+Tak, możesz programowo usuwać komentarze, przeglądając komentarze w dokumencie i usuwając je w razie potrzeby.
 
-#### P: Jak mogę zmodyfikować tekst istniejącego komentarza w Aspose.Words dla .NET?
+### Czy mogę dodawać odpowiedzi na komentarze?
 
- O: Aby zmodyfikować tekst istniejącego komentarza w Aspose.Words dla .NET, możesz uzyskać dostęp do`Comment.Text` właściwość odpowiedniego`Comment` obiekt i zmodyfikuj tekst według potrzeb.
+Aspose.Words umożliwia pracę z wątkowymi komentarzami, umożliwiając dodawanie odpowiedzi do istniejących komentarzy w celu uzyskania bardziej szczegółowych dyskusji.

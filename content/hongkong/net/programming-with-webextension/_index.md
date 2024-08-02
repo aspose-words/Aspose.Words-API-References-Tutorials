@@ -16,4 +16,4 @@ url: /zh-hant/net/programming-with-webextension/
 ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [使用 Web 擴充任務窗格](./using-web-extension-task-panes/) | 將 Web 擴充任務窗格與 Aspose.Words for .NET 結合使用的逐步指南。 |
+| [使用 Web 擴充任務窗格](./using-web-extension-task-panes/) | 在此詳細的逐步教學中，了解如何使用 Aspose.Words for .NET 在 Word 文件中新增和設定 Web 擴充任務窗格。 |

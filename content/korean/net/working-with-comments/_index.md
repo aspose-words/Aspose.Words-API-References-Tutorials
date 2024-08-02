@@ -13,7 +13,7 @@ url: /ko/net/working-with-comments/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [댓글 추가](./add-comments/) | .NET용 Aspose.Words를 사용하여 Word 문서에 설명을 추가하는 방법을 알아보세요. |
-| [앵커댓글](./anchor-comment/) | .NET용 Aspose.Words를 사용하여 Word 문서의 특정 텍스트에 주석 응답을 고정하는 방법을 알아보세요. |
-| [추가 댓글 답글 삭제](./add-remove-comment-reply/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 댓글 답글을 추가하고 제거하는 방법을 알아보세요. |
-| [해결된 댓글 및 답변](./comment-resolved-and-replies/) | .NET용 Aspose.Words를 사용하여 Word 문서의 댓글과 답변을 해결하는 방법을 알아보세요. |
+| [댓글 추가](./add-comments/) | 가이드와 함께 Aspose.Words for .NET을 사용하여 Word 문서에 주석을 추가하는 방법을 알아보세요. 문서 공동 작업 프로세스를 손쉽게 향상하세요. |
+| [앵커댓글](./anchor-comment/) | .NET용 Aspose.Words를 사용하여 Word 문서에 앵커 주석을 추가하는 방법을 알아보세요. 효율적인 문서 협업을 위한 단계별 가이드를 따르세요. |
+| [추가 댓글 답글 삭제](./add-remove-comment-reply/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 댓글 답글을 추가하고 제거하는 방법을 알아보세요. 이 단계별 가이드를 통해 문서 공동작업을 강화하세요. |
+| [해결된 댓글 및 답변](./comment-resolved-and-replies/) | .NET용 Aspose.Words를 사용하여 Word 문서의 주석을 자동으로 해결하고 응답할 수 있습니다. 단계별 가이드가 포함되어 있습니다. |

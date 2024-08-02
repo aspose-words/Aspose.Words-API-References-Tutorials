@@ -11,12 +11,12 @@ url: /ko/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 
 안녕하세요, 기술 매니아 여러분! 암호화된 PDF로 작업하는 웹에 얽힌 적이 있습니까? 그렇다면, 당신은 치료를 받고 있습니다. 오늘 우리는 암호화된 PDF를 쉽게 처리할 수 있게 해주는 환상적인 도구인 Aspose.Words for .NET의 세계에 대해 알아봅니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 가이드는 프로세스의 모든 단계를 안내합니다. PDF의 마법을 풀 준비가 되셨나요? 시작하자!
 
-## 전제조건
+## 전제 조건
 
 핵심적인 내용을 살펴보기 전에 필요한 몇 가지 사항이 있습니다.
 
 1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다운로드하세요.[여기](https://releases.aspose.com/words/net/).
-2.  유효한 라이센스: 제한 없이 모든 기능에 액세스하려면 라이센스 구매를 고려하십시오.[여기](https://purchase.aspose.com/buy) . 또는 다음을 사용할 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/).
+2.  유효한 라이센스: 제한 없이 모든 기능에 액세스하려면 라이센스 구매를 고려하십시오.[여기](https://purchase.aspose.com/buy) . 또는 다음을 사용할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/).
 3. 개발 환경: Visual Studio와 같은 모든 .NET 호환 IDE가 가능합니다.
 4. C#에 대한 기본 지식: C# 및 .NET 프레임워크에 익숙하면 도움이 됩니다.
 

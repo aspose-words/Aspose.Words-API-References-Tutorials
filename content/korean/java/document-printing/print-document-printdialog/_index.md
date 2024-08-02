@@ -13,7 +13,7 @@ url: /ko/java/document-printing/print-document-printdialog/
 
 문서 인쇄는 많은 Java 애플리케이션의 일반적인 요구 사항입니다. Aspose.Words for Java는 문서 조작 및 인쇄를 위한 편리한 API를 제공하여 이 작업을 단순화합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

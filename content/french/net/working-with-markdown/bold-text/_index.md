@@ -26,7 +26,7 @@ DocumentBuilder builder = new DocumentBuilder();
 builder.Font.Bold = true;
 ```
 
-## Étape 3 : ajouter du contenu au document
+## Étape 3 : Ajouter du contenu au document
 
  Nous pouvons désormais ajouter du contenu au document à l'aide des méthodes de création de documents, telles que`Writeln`, ce qui ajoute une ligne de texte.
 
@@ -53,7 +53,7 @@ Félicitation ! Vous avez maintenant appris à mettre du texte en gras avec Aspo
 
 #### Q : Comment puis-je mettre du texte en gras dans Aspose.Words ?
 
- R : Pour mettre le texte en gras dans Aspose.Words, vous pouvez utiliser l'option`Font.Bold` propriété du`Run`objet. Vous pouvez définir cette propriété sur`true` mettre en gras un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Bold=true` pour mettre le texte en gras à l'intérieur du`Run` objet.
+ R : Pour mettre le texte en gras dans Aspose.Words, vous pouvez utiliser l'option`Font.Bold` propriété du`Run` objet. Vous pouvez définir cette propriété sur`true` mettre en gras un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Bold=true` pour mettre le texte en gras à l'intérieur du`Run` objet.
 
 #### Q : Est-il possible de mettre en gras plusieurs morceaux de texte dans un même paragraphe ?
 

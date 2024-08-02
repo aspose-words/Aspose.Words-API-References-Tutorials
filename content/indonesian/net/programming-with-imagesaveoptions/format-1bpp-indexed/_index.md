@@ -82,7 +82,7 @@ Dan itu dia! Hanya dengan beberapa baris kode, Anda telah mengubah dokumen Word 
 Gambar berindeks 1Bpp (1 Bit Per Piksel) adalah format gambar hitam putih yang setiap pikselnya diwakili oleh satu bit, baik 0 atau 1. Format ini sangat hemat ruang.
 
 ### Bisakah saya mengonversi beberapa halaman dokumen Word sekaligus?
- Ya kamu bisa. Ubah`PageSet` properti di`ImageSaveOptions` untuk menyertakan beberapa halaman atau seluruh dokumen.
+ Ya kamu bisa. Ubah`PageSet` properti di`ImageSaveOptions` untuk menyertakan beberapa halaman atau keseluruhan dokumen.
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
  Ya, Aspose.Words untuk .NET memerlukan lisensi untuk fungsionalitas penuh. Anda bisa mendapatkan[izin sementara di sini](https://purchase.aspose.com/temporary-license/).

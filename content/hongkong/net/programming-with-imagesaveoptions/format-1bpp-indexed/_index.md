@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 是的你可以。修改`PageSet`財產在`ImageSaveOptions`包括多個頁面或整個文件。
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
-是的，Aspose.Words for .NET 需要完整功能的授權。您可以獲得[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
+是的，Aspose.Words for .NET 需要完整功能的授權。你可以獲得一個[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
 
 ### 我可以將 Word 文件轉換為哪些其他圖像格式？
  Aspose.Words 支援各種影像格式，包括 JPEG、BMP 和 TIFF。只需更改`SaveFormat`在裡面`ImageSaveOptions`.

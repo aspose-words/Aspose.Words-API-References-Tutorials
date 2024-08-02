@@ -2,7 +2,7 @@
 title: Belge Düzenleme ve Veri Koruma
 linktitle: Belge Düzenleme ve Veri Koruma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak belgelerinizi nasıl güvence altına alacağınızı ve hassas verileri nasıl düzelteceğinizi öğrenin. Kaynak koduyla adım adım kılavuz.
+description: Aspose.Words for Java'yı kullanarak belgelerinizi nasıl güvence altına alacağınızı ve hassas verileri nasıl çıkaracağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
 type: docs
 weight: 14
 url: /tr/java/document-security/document-redaction-data-protection/

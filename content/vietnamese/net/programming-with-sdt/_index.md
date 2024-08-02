@@ -17,14 +17,14 @@ Các mẫu mã được cung cấp trong hướng dẫn sẽ giúp bạn hiểu 
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
 | [Kiểm soát nội dung loại hộp kiểm](./check-box-type-content-control/) | Tìm hiểu cách thêm Kiểm soát nội dung loại hộp kiểm trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. |
-| [Hộp kiểm trạng thái hiện tại](./current-state-of-check-box/) | Tìm hiểu cách truy xuất và đặt trạng thái hiện tại của điều khiển nội dung hộp kiểm trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Sửa đổi kiểm soát nội dung](./modify-content-controls/) | Tìm hiểu cách sửa đổi văn bản, danh sách thả xuống và hình ảnh trong điều khiển nội dung trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Kiểm soát nội dung hộp tổ hợp](./combo-box-content-control/) | Tìm hiểu cách tạo Kiểm soát nội dung hộp tổ hợp trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Kiểm soát nội dung hộp văn bản có định dạng](./rich-text-box-content-control/) | Tìm hiểu cách tạo điều khiển nội dung hộp văn bản có định dạng trong tài liệu Word bằng cách sử dụng Aspose.Words for .NET cho phép định dạng và tạo kiểu văn bản. |
-| [Đặt màu kiểm soát nội dung](./set-content-control-color/) | Tìm hiểu cách đặt màu của điều khiển nội dung trong tài liệu Word bằng Aspose.Words cho .NET, tùy chỉnh giao diện của nó. |
+| [Hộp kiểm trạng thái hiện tại](./current-state-of-check-box/) | Tìm hiểu cách quản lý các hộp kiểm trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm việc thiết lập, cập nhật và lưu các hộp kiểm theo chương trình. |
+| [Sửa đổi kiểm soát nội dung](./modify-content-controls/) | Tìm hiểu cách sửa đổi thẻ tài liệu có cấu trúc trong Word bằng Aspose.Words cho .NET. Cập nhật văn bản, danh sách thả xuống và hình ảnh theo từng bước. |
+| [Kiểm soát nội dung hộp tổ hợp](./combo-box-content-control/) | Tạo điều khiển nội dung hộp tổ hợp trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết của chúng tôi. Hoàn hảo để nâng cao tính tương tác của tài liệu của bạn. |
+| [Kiểm soát nội dung hộp văn bản có định dạng](./rich-text-box-content-control/) | Tìm hiểu cách thêm và tùy chỉnh Kiểm soát nội dung hộp văn bản đa dạng thức trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. |
+| [Đặt màu kiểm soát nội dung](./set-content-control-color/) | Dễ dàng đặt màu của Thẻ tài liệu có cấu trúc trong Word bằng Aspose.Words cho .NET. Tùy chỉnh SDT của bạn để cải thiện hình thức tài liệu bằng hướng dẫn đơn giản này. |
 | [Kiểm soát nội dung rõ ràng](./clear-contents-control/) | Tìm hiểu cách xóa kiểm soát nội dung trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. |
-| [Liên kết SDT với phần Xml tùy chỉnh](./bind-sdt-to-custom-xml-part/) | Tìm hiểu cách liên kết SDT với Phần Xml tùy chỉnh bằng Aspose.Words cho .NET. |
-| [Đặt kiểu kiểm soát nội dung](./set-content-control-style/) | Tìm hiểu cách đặt kiểu điều khiển nội dung trong tài liệu Word bằng Aspose.Words cho .NET, áp dụng định dạng nhất quán. |
+| [Liên kết SDT với phần Xml tùy chỉnh](./bind-sdt-to-custom-xml-part/) | Tìm hiểu cách liên kết Thẻ tài liệu có cấu trúc (SDT) với các Phần XML tùy chỉnh trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. |
+| [Đặt kiểu kiểm soát nội dung](./set-content-control-style/) | Tìm hiểu cách đặt kiểu kiểm soát nội dung trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Hoàn hảo để nâng cao tính thẩm mỹ của tài liệu. |
 | [Tạo phần lặp lại bảng được ánh xạ tới phần Xml tùy chỉnh](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Tìm hiểu cách tạo bảng có phần lặp lại được ánh xạ tới CustomXmlPart trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [nhiều phần](./multi-section/) | Tìm hiểu cách truy xuất và xử lý thẻ tài liệu có cấu trúc nhiều phần trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Phạm vi thẻ tài liệu có cấu trúc Bắt đầu ánh xạ Xml](./structured-document-tag-range-start-xml-mapping/) | Tìm hiểu cách thiết lập ánh xạ XML cho phạm vi thẻ tài liệu có cấu trúc bắt đầu trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [nhiều phần](./multi-section/) | Tìm hiểu cách làm việc với thẻ tài liệu có cấu trúc nhiều phần trong Aspose.Words for .NET với hướng dẫn từng bước này. Lý tưởng cho thao tác tài liệu động. |
+| [Phạm vi thẻ tài liệu có cấu trúc Bắt đầu ánh xạ Xml](./structured-document-tag-range-start-xml-mapping/) | Tìm hiểu cách liên kết động dữ liệu XML với các thẻ tài liệu có cấu trúc trong Word bằng Aspose.Words cho .NET. Thực hiện theo hướng dẫn từng bước của chúng tôi. |

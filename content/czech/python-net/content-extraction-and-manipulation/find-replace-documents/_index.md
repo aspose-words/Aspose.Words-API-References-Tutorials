@@ -18,7 +18,7 @@ Než se pustíme do pokročilých technik, ujistěte se, že máte splněny nás
 
 1.  Instalace Pythonu: Ujistěte se, že je ve vašem systému nainstalován Python. Můžete si jej stáhnout z[tady](https://www.python.org/downloads/).
 
-2.  Aspose.Words pro Python: Musíte mít nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/python/).
+2. Aspose.Words pro Python: Musíte mít nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/python/).
 
 3. Příprava dokumentu: Připravte si dokument aplikace Word, na kterém chcete provádět operace hledání a nahrazení.
 

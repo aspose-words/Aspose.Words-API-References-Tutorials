@@ -2,84 +2,97 @@
 title: Word-Dokument nach Überschriften aufteilen (HTML)
 linktitle: Nach Überschriften HTML
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes des geteilten Word-Dokuments anhand der HTML-Überschriftfunktion von Aspose.Words für .NET
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Word-Dokument nach Überschriften in HTML aufteilen. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung.
 type: docs
 weight: 10
 url: /de/net/split-document/by-headings-html/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie ein Word-Dokument mithilfe der Funktion „Nach HTML-Überschrift“ von Aspose.Words für .NET in kleinere Teile aufteilen. Befolgen Sie die nachstehenden Schritte, um den Quellcode zu verstehen und separate HTML-Dokumente basierend auf Überschriften zu erstellen.
+## Einführung
 
-## Schritt 1: Dokument einlegen
+Das Aufteilen eines Word-Dokuments nach Überschriften kann für die Verwaltung großer Dokumente oder das Erstellen segmentierter HTML-Ausgaben von entscheidender Bedeutung sein. Aspose.Words für .NET bietet hierfür eine einfache Möglichkeit. In diesem Tutorial führen wir Sie durch den gesamten Prozess und stellen sicher, dass Sie dabei jedes Detail verstehen.
 
-Geben Sie zunächst das Verzeichnis für Ihr Dokument an und laden Sie das Dokument in ein Dokumentobjekt. So geht's:
+## Voraussetzungen
+
+Bevor Sie mit dem Lernprogramm beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+
+1. Aspose.Words für .NET: Falls noch nicht geschehen, laden Sie es herunter von[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Eine IDE wie Visual Studio.
+3. Grundkenntnisse in C#: Wenn Sie die Grundlagen verstehen, können Sie den Schritten problemlos folgen.
+4. Ein Beispieldokument: Halten Sie ein Word-Dokument bereit, das Sie nach Überschriften aufteilen möchten.
+
+## Namespaces importieren
+
+Als Erstes importieren wir die erforderlichen Namespaces. Dies ist für den Zugriff auf die Klassen und Methoden von Aspose.Words von entscheidender Bedeutung.
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Schritt 2: Aufteilen des Dokuments nach Überschriften im HTML-Format
+## Schritt 1: Richten Sie Ihr Projekt ein
 
-Jetzt legen wir Speicheroptionen fest, um das Dokument basierend auf der Überschrift im HTML-Format in kleinere Teile aufzuteilen. So geht's:
+Richten Sie zunächst Ihr Projekt in Ihrer Entwicklungsumgebung ein. Öffnen Sie Visual Studio und erstellen Sie eine neue Konsolenanwendung.
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-// Teilen Sie das Dokument in kleinere Teile auf, in diesem Fall trennen Sie es nach Titel.
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. Neues Projekt erstellen: Öffnen Sie Visual Studio, wählen Sie „Neues Projekt erstellen“, wählen Sie „Konsolen-App (.NET Core)“ und klicken Sie auf „Weiter“.
+2. Konfigurieren Sie Ihr Projekt: Geben Sie Ihrem Projekt einen Namen, wählen Sie einen Speicherort aus und klicken Sie auf „Erstellen“.
+3.  Installieren Sie Aspose.Words für .NET: Verwenden Sie den NuGet Package Manager, um die Aspose.Words-Bibliothek zu installieren. Suchen Sie im NuGet Package Manager nach`Aspose.Words` und installieren Sie es.
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## Schritt 2: Laden Sie Ihr Dokument
 
-### Beispielquellcode für By Headings HTML mit Aspose.Words für .NET
+Als nächstes müssen Sie das Word-Dokument laden, das Sie teilen möchten. Stellen Sie sicher, dass Ihr Dokument in einem Verzeichnis abgelegt ist, auf das Sie leicht zugreifen können.
 
-Hier ist der vollständige Quellcode für die Funktion „Nach HTML-Überschrift“ von Aspose.Words für .NET:
+1. Definieren Sie den Verzeichnispfad: Erstellen Sie eine Variable für den Verzeichnispfad Ihres Dokuments.
+2.  Laden Sie das Dokument: Verwenden Sie die`Document` Klasse, um Ihr Word-Dokument zu laden.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Schritt 3: HTML-Speicheroptionen konfigurieren
+
+Konfigurieren wir nun die HTML-Speicheroptionen, um anzugeben, dass das Dokument nach Überschriften aufgeteilt werden soll.
+
+1.  HtmlSaveOptions erstellen: Instanziieren Sie die`HtmlSaveOptions` Klasse.
+2.  Kriterien für die Dokumentenaufteilung festlegen: Verwenden Sie die`DocumentSplitCriteria` -Eigenschaft, um anzugeben, dass das Dokument nach Überschriftenabsätzen aufgeteilt werden soll.
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	// Teilen Sie ein Dokument in kleinere Teile auf, in diesem Fall nach Überschrift.
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    // Teilen Sie ein Dokument in kleinere Teile auf, in diesem Fall nach Überschrift.
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## Schritt 4: Speichern Sie das geteilte Dokument
 
+Speichern Sie das Dokument abschließend mit den angegebenen HTML-Speicheroptionen. Dadurch wird eine nach Überschriften unterteilte HTML-Datei generiert.
+
+1.  Speichern Sie das Dokument: Verwenden Sie die`Save` Methode der`Document` Klasse, um das Dokument mit den angegebenen Optionen zu speichern.
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-Mit diesem Code können Sie ein Word-Dokument mit Aspose.Words für .NET basierend auf Überschriften in kleinere Teile aufteilen. Sie können dann für jeden Teil separate HTML-Dokumente generieren.
-
 ## Abschluss
 
- In diesem Tutorial haben wir gelernt, wie man ein Word-Dokument mithilfe der Funktion „Nach HTML-Überschrift“ von Aspose.Words für .NET in kleinere Teile aufteilt. Durch Angabe der`DocumentSplitCriteria` als`HeadingParagraph` im`HtmlSaveOptions`konnten wir separate HTML-Dokumente basierend auf den im Originaldokument vorhandenen Überschriften generieren.
+Und da haben Sie es! Sie haben ein Word-Dokument erfolgreich nach Überschriften aufgeteilt und es mit Aspose.Words für .NET als HTML gespeichert. Diese Methode ist äußerst effektiv, um große Dokumente zu organisieren und segmentierte HTML-Ausgaben zu erstellen, wodurch Ihre Inhalte besser verwaltbar und zugänglicher werden.
 
-Das Aufteilen eines Dokuments nach Überschriften kann für die Organisation und Verwaltung von Inhalten nützlich sein, insbesondere bei großen Dokumenten mit mehreren Abschnitten. Aspose.Words für .NET bietet eine zuverlässige und effiziente Lösung für die Handhabung des Dokumentaufteilens und die Generierung von Ausgaben in verschiedenen Formaten.
+## Häufig gestellte Fragen
 
-Erkunden Sie die zusätzlichen Funktionen und Optionen von Aspose.Words für .NET, um Ihre Dokumentverarbeitungsfunktionen weiter zu verbessern und Ihren Arbeitsablauf zu optimieren.
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die Arbeit mit Word-Dokumenten in .NET-Anwendungen.
 
-### FAQs
+### Kann ich ein Dokument nach anderen Kriterien aufteilen?
+Ja, Aspose.Words ermöglicht Ihnen, Dokumente nach verschiedenen Kriterien wie Abschnitten, Seiten und mehr aufzuteilen.
 
-#### Wie kann ich mit Aspose.Words für .NET ein Word-Dokument basierend auf Überschriften in kleinere Teile aufteilen?
+### Ist Aspose.Words kostenlos?
+ Aspose.Words bietet eine kostenlose Testversion an, für den vollen Funktionsumfang müssen Sie jedoch eine Lizenz erwerben. Überprüfen Sie deren[Kaufen-Seite](https://purchase.aspose.com/buy) für mehr Details.
 
- Um ein Word-Dokument anhand von Überschriften aufzuteilen, können Sie die Funktion „Nach HTML-Überschrift“ von Aspose.Words für .NET verwenden. Folgen Sie dem bereitgestellten Quellcode und setzen Sie die`DocumentSplitCriteria` Zu`HeadingParagraph` im`HtmlSaveOptions` Objekt. Dadurch wird das Dokument bei jeder Überschrift in kleinere Teile aufgeteilt.
+### Wo finde ich die Dokumentation?
+ Umfassende Dokumentation verfügbar[Hier](https://reference.aspose.com/words/net/).
 
-#### In welche Formate kann ich das Word-Dokument aufteilen?
-
- Der bereitgestellte Quellcode demonstriert das Aufteilen des Word-Dokuments in kleinere Teile im HTML-Format. Aspose.Words für .NET unterstützt jedoch verschiedene Ausgabeformate, darunter DOCX, PDF, EPUB und mehr. Sie können den Code ändern und das gewünschte Ausgabeformat im`HtmlSaveOptions` Objekt entsprechend.
-
-#### Kann ich zum Aufteilen des Dokuments andere Kriterien auswählen?
-
-Ja, Sie können je nach Ihren Anforderungen ein anderes Kriterium für die Aufteilung des Dokuments auswählen. Aspose.Words für .NET bietet mehrere Kriterienoptionen, wie z. B.`HeadingParagraph`, `Page`, `Section` und mehr. Ändern Sie die`DocumentSplitCriteria` Eigentum in der`HtmlSaveOptions` Objekt, um die entsprechenden Kriterien für die Aufteilung auszuwählen.
-
-#### Wie kann ich das Ausgabe-HTML für die aufgeteilten Teile anpassen?
-
- Mit Aspose.Words für .NET können Sie die Ausgabe-HTML für die geteilten Teile anpassen, indem Sie zusätzliche Optionen in der`HtmlSaveOptions` Objekt. Sie können verschiedene Aspekte wie CSS-Stile, Bilder, Schriftarten und mehr steuern. Weitere Informationen zum Anpassen der HTML-Ausgabe finden Sie in der Aspose.Words-Dokumentation.
-
-#### Kann ich das Dokument anhand mehrerer Kriterien aufteilen?
-
- Ja, Sie können das Dokument anhand mehrerer Kriterien aufteilen, indem Sie die Kriterienoptionen entsprechend kombinieren. Sie können das Dokument beispielsweise sowohl nach Überschrift als auch nach Seite aufteilen, indem Sie die`DocumentSplitCriteria`Eigentum an`HeadingParagraph | Page`. Dadurch wird das Dokument an jeder Überschrift und jeder Seite aufgeteilt, wobei basierend auf beiden Kriterien kleinere Teile erstellt werden.
+### Wie bekomme ich Unterstützung?
+ Für Unterstützung besuchen Sie die Aspose.Words[Forum](https://forum.aspose.com/c/words/8).

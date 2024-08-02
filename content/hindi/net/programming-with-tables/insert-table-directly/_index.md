@@ -100,7 +100,7 @@ row.AppendChild(cell);
 
 ```csharp
 // फिर हम तालिका में अन्य कक्षों और पंक्तियों के लिए यही प्रक्रिया दोहराएंगे।
-// हम मौजूदा कोशिकाओं और पंक्तियों की क्लोनिंग करके भी काम को गति दे सकते हैं।
+//हम मौजूदा कोशिकाओं और पंक्तियों की क्लोनिंग करके भी काम को गति दे सकते हैं।
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
  हां, आप अनुरोध कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) खरीदने से पहले पुस्तकालय का मूल्यांकन करें।
 
 ### मैं .NET के लिए Aspose.Words कैसे खरीदूं?
- आप .NET के लिए Aspose.Words को यहाँ से खरीद सकते हैं।[खरीद पृष्ठ](https://purchase.aspose.com/buy).
+आप .NET के लिए Aspose.Words को यहाँ से खरीद सकते हैं।[खरीद पृष्ठ](https://purchase.aspose.com/buy).
 
 ### मैं .NET के लिए Aspose.Words का दस्तावेज़ कहां पा सकता हूं?
  दस्तावेज़ उपलब्ध है[यहाँ](https://reference.aspose.com/words/net/).

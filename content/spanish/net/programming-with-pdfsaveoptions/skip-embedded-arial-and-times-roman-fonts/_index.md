@@ -14,7 +14,7 @@ url: /es/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman
 ## Requisitos previos
 
 Antes de entrar en el meollo de la cuestión, hay algunas cosas que necesitará:
--  Aspose.Words para .NET: asegúrese de tener instalada esta potente biblioteca. Si no, puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: asegúrese de tener instalada esta poderosa biblioteca. Si no, puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 - Un conocimiento básico de C#: esto le ayudará a seguir los fragmentos de código.
 - Un documento de Word: usaremos un documento de muestra para demostrar el proceso. 
 

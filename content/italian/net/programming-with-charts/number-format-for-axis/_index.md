@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai formattato con successo i numeri sull'asse Y del tuo grafico utilizzando Aspose.Words per .NET. Ciò non solo conferisce ai tuoi grafici un aspetto più professionale, ma migliora anche la leggibilità. Aspose.Words offre una vasta gamma di funzionalità che possono aiutarti a creare straordinari documenti Word a livello di programmazione. Quindi, perché non esplorare di più e vedere cos'altro puoi fare?
+E il gioco è fatto! Hai formattato con successo i numeri sull'asse Y del tuo grafico utilizzando Aspose.Words per .NET. Ciò non solo conferisce ai tuoi grafici un aspetto più professionale, ma migliora anche la leggibilità. Aspose.Words offre una vasta gamma di funzionalità che possono aiutarti a creare straordinari documenti Word a livello di codice. Quindi, perché non esplorare di più e vedere cos'altro puoi fare?
 
 ## Domande frequenti
 

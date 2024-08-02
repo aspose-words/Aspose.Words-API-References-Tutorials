@@ -9,7 +9,7 @@ url: /ko/net/working-with-fonts/set-fonts-folder/
 ---
 이 튜토리얼에서는 .NET용 Aspose.Words에서 글꼴 디렉터리를 설정하는 방법을 보여줍니다. Word 문서에 사용된 글꼴이 포함된 디렉터리를 지정하는 방법을 배우게 됩니다.
 
-## 전제조건
+## 전제 조건
 시작하기 전에 다음 항목이 있는지 확인하세요.
 - C# 프로그래밍 언어에 대한 실무 지식
 - 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리

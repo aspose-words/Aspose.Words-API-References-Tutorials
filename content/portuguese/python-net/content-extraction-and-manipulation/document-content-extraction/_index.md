@@ -10,11 +10,11 @@ url: /pt/python-net/content-extraction-and-manipulation/document-content-extract
 
 ## Introdução
 
-A extração eficiente de conteúdo de documentos do Word é um requisito comum no processamento de dados, análise de conteúdo e muito mais. Aspose.Words for Python é uma biblioteca poderosa que fornece ferramentas abrangentes para trabalhar programaticamente com documentos do Word.
+extração eficiente de conteúdo de documentos do Word é um requisito comum no processamento de dados, análise de conteúdo e muito mais. Aspose.Words for Python é uma biblioteca poderosa que fornece ferramentas abrangentes para trabalhar programaticamente com documentos do Word.
 
 ## Pré-requisitos
 
-Antes de mergulharmos no código, certifique-se de ter o Python e a biblioteca Aspose.Words instalados. Você pode baixar a biblioteca do site[aqui](https://releases.aspose.com/words/python/). Além disso, certifique-se de ter um documento Word pronto para teste.
+ Antes de mergulharmos no código, certifique-se de ter o Python e a biblioteca Aspose.Words instalados. Você pode baixar a biblioteca do site[aqui](https://releases.aspose.com/words/python/). Além disso, certifique-se de ter um documento Word pronto para teste.
 
 ## Instalando Aspose.Words para Python
 
@@ -103,7 +103,7 @@ for section in doc.sections:
 
 ## Conclusão
 
-extração eficiente de conteúdo de documentos do Word é possível com Aspose.Words for Python. Esta poderosa biblioteca simplifica o processo de trabalho com conteúdo textual e visual, permitindo que os desenvolvedores extraiam, manipulem e analisem dados de documentos do Word de maneira integrada.
+A extração eficiente de conteúdo de documentos do Word é possível com Aspose.Words for Python. Esta poderosa biblioteca simplifica o processo de trabalho com conteúdo textual e visual, permitindo que os desenvolvedores extraiam, manipulem e analisem dados de documentos do Word de maneira integrada.
 
 ## Perguntas frequentes
 

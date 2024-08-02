@@ -84,7 +84,7 @@ Console.WriteLine(
         : "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
 ```
 
-此代碼檢查預設的 FarEast 語言是否設定為日語並列印相應的訊息。
+此代碼檢查預設遠東語言是否設定為日文並列印相應的訊息。
 
 ## 結論
 

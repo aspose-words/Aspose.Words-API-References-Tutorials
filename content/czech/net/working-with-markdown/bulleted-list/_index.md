@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-markdown/bulleted-list/
 ---
 
-tomto tutoriálu vám řekneme, jak vytvořit seznam s odrážkami pomocí Aspose.Words pro .NET. Seznam s odrážkami se používá k výpisu položek bez použití číslování.
+V tomto tutoriálu vám řekneme, jak vytvořit seznam s odrážkami pomocí Aspose.Words pro .NET. Seznam s odrážkami se používá k výpisu položek bez použití číslování.
 
 ## Krok 1: Použití generátoru dokumentů
 

@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 2: Infoga ett diagram
 
- Därefter kommer du att infoga ett linjediagram i dokumentet. De`DocumentBuilder.InsertChart` metoden används för detta ändamål.
+ Därefter kommer du att infoga ett linjediagram i dokumentet. De`DocumentBuilder.InsertChart` metod används för detta ändamål.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);

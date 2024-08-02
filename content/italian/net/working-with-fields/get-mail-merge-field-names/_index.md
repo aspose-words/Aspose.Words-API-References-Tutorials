@@ -2,118 +2,111 @@
 title: Ottieni nomi di campi di stampa unione
 linktitle: Ottieni nomi di campi di stampa unione
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come ottenere i nomi dei campi di stampa unione nei tuoi documenti Word con Aspose.Words per .NET.
+description: Scopri come estrarre i nomi dei campi di stampa unione da un documento Word utilizzando Aspose.Words per .NET con questa guida dettagliata passo passo.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/get-mail-merge-field-names/
 ---
+## introduzione
 
-Ecco una guida passo passo per spiegare il codice sorgente C# di seguito, che utilizza la funzionalità "Ottieni nomi campi unione" di Aspose.Words per .NET. Assicurati di seguire attentamente ogni passaggio per ottenere i risultati desiderati.
+Benvenuti in questa guida sull'estrazione dei nomi dei campi di stampa unione da un documento Word utilizzando Aspose.Words per .NET. Che tu stia generando lettere personalizzate, creando report personalizzati o semplicemente automatizzando i flussi di lavoro dei documenti, i campi della stampa unione sono essenziali. Fungono come segnaposto nel documento che vengono sostituiti con dati reali durante il processo di unione. Se lavori con Aspose.Words per .NET, sei fortunato: questa potente libreria semplifica incredibilmente l'interazione con questi campi. In questo tutorial, illustreremo un modo semplice ma efficace per recuperare i nomi dei campi di stampa unione in un documento, consentendoti di comprendere e gestire meglio le operazioni di stampa unione.
 
-## Passaggio 1: impostazione della directory dei documenti
+## Prerequisiti
 
-Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "LA TUA DIRECTORY DOCUMENTI" con il percorso appropriato della directory dei tuoi documenti.
+Prima di immergerti nel tutorial, assicurati di avere quanto segue:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Libreria Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words installata. In caso contrario, puoi scaricarlo da[Sito web Aspose](https://releases.aspose.com/words/net/).
 
-## Passaggio 2: caricamento del documento
+2. Ambiente di sviluppo: è necessario disporre di un ambiente di sviluppo configurato per .NET, ad esempio Visual Studio.
 
-Il primo passo è caricare il documento in cui desideri ottenere i nomi dei campi di unione.
+3. Un documento di Word con campi di stampa unione: tieni pronto un documento di Word che contenga campi di stampa unione. Questo sarà il documento con cui lavorerai per estrarre i nomi dei campi.
 
-```csharp
-Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
-```
+4. Conoscenza di base di C#: la familiarità con la programmazione C# e .NET sarà utile da seguire insieme agli esempi.
 
-Assicurati di sostituire "IL TUO FILE DOCUMENTO" con il nome del tuo file.
+## Importa spazi dei nomi
 
-## Passaggio 3: ottieni i nomi dei campi di unione
-
- Noi usiamo il`GetFieldNames()` metodo per ottenere un array contenente i nomi dei campi di unione presenti nel documento.
+Per iniziare, devi importare gli spazi dei nomi necessari nel codice C#. Ciò ti consente di accedere alla funzionalità Aspose.Words. Ecco come includerli:
 
 ```csharp
-string[] fieldNames = doc.MailMerge.GetFieldNames();
+using Aspose.Words;
+using System;
 ```
 
- IL`fieldNames` la variabile ora contiene i nomi dei campi di unione.
+ IL`Aspose.Words` namespace ti dà accesso a tutte le classi e i metodi necessari per manipolare i documenti di Word, mentre`System` viene utilizzato per funzionalità di base come l'output della console.
 
-### Esempio di codice sorgente per ottenere nomi di campi di unione con Aspose.Words per .NET
+Analizziamo il processo di estrazione dei nomi dei campi della stampa unione in una guida chiara e dettagliata.
+
+## Passaggio 1: definire la directory dei documenti
+
+Intestazione: specifica il percorso dei tuoi documenti
+
+Innanzitutto, devi impostare il percorso della directory in cui si trova il tuo documento Word. Questo è fondamentale perché indica alla tua applicazione dove trovare il file. Ecco come farlo:
 
 ```csharp
 // Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Sostituire`"YOUR DOCUMENTS DIRECTORY"`con il percorso effettivo in cui risiede il documento. Potrebbe essere qualcosa del genere`"C:\\Documents\\MyDoc.docx"`.
+
+## Passaggio 2: caricare il documento
+
+Intestazione: Carica il documento Word
+
+ Successivamente, caricherai il documento in un'istanza del file`Document` classe fornita da Aspose.Words. Ciò consente di interagire con il documento a livello di codice.
+
+```csharp
 // Caricare il documento.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
+```
 
+ Sostituire`"YOUR DOCUMENT FILE"` con il nome del file di documento Word, ad esempio`"example.docx"`. Questa riga di codice legge il documento dalla directory specificata e lo prepara per ulteriori manipolazioni.
+
+## Passaggio 3: recuperare i nomi dei campi della stampa unione
+
+Intestazione: Estrai nomi campi stampa unione
+
+ Ora sei pronto per ottenere i nomi dei campi di stampa unione presenti nel documento. È qui che Aspose.Words brilla: è`MailMerge` fornisce un modo semplice per recuperare i nomi dei campi.
+
+```csharp
 // Ottieni i nomi dei campi di unione.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
+```
 
+ IL`GetFieldNames()` Il metodo restituisce un array di stringhe, ciascuna rappresentante un nome di campo di stampa unione trovato nel documento. Questi sono i segnaposto che vedrai nel tuo documento Word.
+
+## Passaggio 4: visualizza il numero di campi di unione
+
+Intestazione: visualizza il numero di campi
+
+Per confermare di aver recuperato correttamente i nomi dei campi, puoi visualizzare il conteggio dei campi utilizzando la console.
+
+```csharp
 // Visualizza il numero di campi di unione.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- In questo esempio, abbiamo caricato un documento, ottenuto i nomi dei campi di unione utilizzando il file`GetFieldNames()` metodo e visualizzato il numero di campi unione presenti nel documento.
+Questa riga di codice stampa il numero totale di campi di stampa unione nel documento, aiutandoti a verificare che il processo di estrazione abbia funzionato correttamente.
 
-Questo conclude la nostra guida sull'utilizzo della funzione "Ottieni nomi campi unione" con Aspose.Words per .NET.
+## Conclusione
 
-### Domande frequenti
+Congratulazioni! Ora hai imparato come estrarre i nomi dei campi di stampa unione da un documento di Word utilizzando Aspose.Words per .NET. Questa tecnica è uno strumento prezioso per gestire e automatizzare i flussi di lavoro dei documenti, semplificando la gestione dei contenuti personalizzati. Seguendo questi passaggi è possibile identificare e utilizzare in modo efficiente i campi di stampa unione nei documenti.
 
-#### Q1: Cos'è la stampa unione in Aspose.Words?
+ Se hai domande o hai bisogno di ulteriore assistenza, non esitare a esplorare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o unisciti a[Chiedi comunità](https://forum.aspose.com/c/words/8) per supporto. Buona programmazione!
 
-La stampa unione in Aspose.Words è un processo per unire dati da una fonte esterna (ad esempio foglio di calcolo Excel o database) con un modello di documento Word per creare documenti personalizzati. Ciò facilita la generazione automatizzata di lettere, rapporti e altri documenti simili.
+## Domande frequenti
 
-#### Q2: Come posso ottenere l'elenco dei campi di stampa unione disponibili in un documento di Word?
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di creare, modificare e gestire documenti Word a livello di codice nelle applicazioni .NET.
 
-Per ottenere l'elenco dei campi di stampa unione disponibili in un documento di Word, puoi seguire questi passaggi:
+### Come posso ottenere una prova gratuita di Aspose.Words?
+ Puoi ottenere una prova gratuita visitando il[Pagina delle versioni di Aspose](https://releases.aspose.com/).
 
-1. Importa le classi Document e MailMergeFieldNames dallo spazio dei nomi Aspose.Words.
-2. Crea un'istanza di documento caricando il tuo documento Word.
-3. Utilizzare il metodo GetMailMergeFieldNames dell'oggetto Document per ottenere l'elenco dei campi di stampa unione disponibili.
+### Posso utilizzare Aspose.Words senza acquistare una licenza?
+ Sì, puoi utilizzarlo durante il periodo di prova, ma per l'uso continuativo dovrai acquistare una licenza da[Pagina di acquisto di Aspose](https://purchase.aspose.com/buy).
 
-Ecco un codice di esempio per illustrare il processo:
+### Cosa devo fare se riscontro problemi con Aspose.Words?
+ Per supporto è possibile visitare il[Aspose forum](https://forum.aspose.com/c/words/8) dove puoi porre domande e ottenere aiuto dalla community.
 
-```csharp
-// Importa gli spazi dei nomi necessari
-using Aspose.Words;
-using Aspose.Words.MailMerging;
-
-// Carica il documento esistente
-Document document = new Document("FilePath");
-
-// Ottieni l'elenco dei campi della stampa unione
-MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
-
-// Scorri i campi di stampa unione disponibili
-foreach (string fieldName in fieldNames)
-{
-     // Fai qualcosa con il nome del campo
-     Console.WriteLine(fieldName);
-}
-```
-### Domande frequenti
-
-#### D: Cos'è la stampa unione in Aspose.Words?
-
-R: La stampa unione in Aspose.Words è un processo per unire i dati da una fonte esterna (ad esempio, un foglio di calcolo o un database Excel) con un modello di documento Word per creare documenti personalizzati. Ciò facilita la generazione automatizzata di lettere, rapporti e altri documenti simili.
-
-#### D: Come posso ottenere l'elenco dei campi di stampa unione disponibili in un documento di Word?
-
-R: Per ottenere l'elenco dei campi di stampa unione disponibili in un documento di Word, puoi seguire questi passaggi:
-
-1. Importa le classi Document e MailMergeFieldNames dallo spazio dei nomi Aspose.Words.
-2. Crea un'istanza di documento caricando il tuo documento Word.
-3. Utilizzare il metodo GetMailMergeFieldNames dell'oggetto Document per ottenere l'elenco dei campi di stampa unione disponibili.
-
-#### D: Posso ottenere campi di stampa unione da un'origine dati esterna come un foglio di calcolo Excel?
-
-R: Sì, puoi ottenere i campi della stampa unione da un'origine dati esterna come un foglio di calcolo Excel. Per questo, puoi utilizzare le funzionalità di associazione dati di Aspose.Words per stabilire una connessione con l'origine dati e ottenere i nomi dei campi disponibili.
-
-#### D: È possibile filtrare i campi della stampa unione in base a determinati criteri?
-
-R: Sì, è possibile filtrare i campi della stampa unione in base a determinati criteri. Puoi utilizzare espressioni regolari o condizioni specifiche per filtrare i campi della stampa unione e ottenere solo quelli che soddisfano i tuoi criteri specifici.
-
-#### D: Come posso manipolare i campi di stampa unione in Aspose.Words?
-
-R: Per manipolare i campi di stampa unione in Aspose.Words, è possibile utilizzare i metodi e le proprietà forniti dagli oggetti Document e MailMergeField. È possibile aggiungere, rimuovere o aggiornare i campi della stampa unione, nonché recuperare e modificare i valori associati ai campi.
+### Come posso ottenere una licenza temporanea per Aspose.Words?
+ È possibile richiedere una licenza temporanea tramite[Pagina della licenza temporanea di Aspose](https://purchase.aspose.com/temporary-license/).

@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Etapa 2: carregue o documento do Word
 
-Em seguida, carregue o documento Word que deseja converter. Para este tutorial, usaremos um documento chamado "Rendering.docx".
+Em seguida, carregue o documento do Word que deseja converter. Para este tutorial, usaremos um documento chamado "Rendering.docx".
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -81,5 +81,5 @@ Sim, você pode usá-lo com uma licença temporária que pode ser obtida[aqui](h
 ### Como obtenho suporte para Aspose.Words for .NET?
  Você pode obter suporte da comunidade Aspose[aqui](https://forum.aspose.com/c/words/8).
 
-### É possível preservar a formatação ao converter documentos Word para HTML?
+### É possível preservar a formatação ao converter documentos Word em HTML?
 Sim, usando a propriedade ExportRoundtripInformation em HtmlSaveOptions, você pode preservar toda a formatação durante a conversão.

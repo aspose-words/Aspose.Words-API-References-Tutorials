@@ -2,115 +2,126 @@
 title: Utilice el carácter de tabulación por nivel para la sangría de la lista
 linktitle: Utilice el carácter de tabulación por nivel para la sangría de la lista
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a utilizar la función de listas de sangría con caracteres de tabulación en Aspose.Words para .NET. Ahorre tiempo y mejore su flujo de trabajo con esta potente función.
+description: Aprenda a crear listas de varios niveles con sangría con pestañas usando Aspose.Words para .NET. Siga esta guía para obtener un formato de lista preciso en sus documentos.
 type: docs
 weight: 10
 url: /es/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
+## Introducción
 
-En este tutorial, exploraremos el código fuente de C# proporcionado para la función "Usar un carácter de tabulación por nivel para la sangría de la lista" con Aspose.Words para .NET. Esta característica le permite aplicar caracteres de tabulación para sangrar las listas en cada nivel, lo que brinda mayor flexibilidad y control sobre la apariencia de sus documentos.
+Las listas son fundamentales para organizar el contenido, ya sea que esté redactando un informe, escribiendo un trabajo de investigación o preparando una presentación. Sin embargo, cuando se trata de presentar listas con múltiples niveles de sangría, lograr el formato deseado puede resultar un poco complicado. Con Aspose.Words para .NET, puede administrar fácilmente la sangría de la lista y personalizar cómo se representa cada nivel. En este tutorial, nos centraremos en crear una lista con múltiples niveles de sangría, usando caracteres de tabulación para un formato preciso. Al final de esta guía, comprenderá claramente cómo configurar y guardar su documento con el estilo de sangría correcto.
 
-## Paso 1: configurar el entorno
+## Requisitos previos
 
-Antes de comenzar, asegúrese de haber configurado su entorno de desarrollo con Aspose.Words para .NET. Asegúrese de haber agregado las referencias necesarias e importado los espacios de nombres apropiados.
+Antes de profundizar en los pasos, asegúrese de tener lo siguiente listo:
 
-## Paso 2: Crear el documento y el generador
+1.  Aspose.Words para .NET instalado: necesita la biblioteca Aspose.Words. Si aún no lo has instalado, puedes descargarlo desde[Descargas Aspose](https://releases.aspose.com/words/net/).
+
+2. Comprensión básica de C# y .NET: la familiaridad con la programación de C# y el marco .NET es esencial para seguir este tutorial.
+
+3. Entorno de desarrollo: asegúrese de tener un IDE o un editor de texto para escribir y ejecutar su código C# (por ejemplo, Visual Studio).
+
+4. Directorio de documentos de muestra: configure un directorio donde guardará y probará su documento. 
+
+## Importar espacios de nombres
+
+Primero, necesita importar los espacios de nombres necesarios para usar Aspose.Words en su aplicación .NET. Agregue las siguientes directivas de uso al comienzo de su archivo C#:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+En esta sección, crearemos una lista de varios niveles con sangría con pestañas usando Aspose.Words para .NET. Sigue estos pasos:
+
+## Paso 1: configure su documento
+
+Crear un nuevo documento y DocumentBuilder
 
 ```csharp
 // Ruta a su directorio de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Crear un nuevo documento
 Document doc = new Document();
+
+// Inicializar DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- En este paso, creamos un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto. Estos objetos nos permitirán manipular y generar nuestro documento.
+ Aquí, configuramos un nuevo`Document` objeto y un`DocumentBuilder` para comenzar a crear contenido dentro del documento.
 
-## Paso 3: crear una lista con tres niveles de sangría
+## Paso 2: aplicar el formato de lista predeterminado
+
+Crear y formatear la lista
 
 ```csharp
+// Aplicar estilo de numeración predeterminado a la lista
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+```
+
+En este paso, aplicamos el formato de numeración predeterminado a nuestra lista. Esto ayudará a crear una lista numerada que luego podremos personalizar.
+
+## Paso 3: agregar elementos de la lista con diferentes niveles
+
+Insertar elementos de lista y sangría
+
+```csharp
+//Agregar el primer elemento de la lista
+builder.Write("Element 1");
+
+// Sangría para crear el segundo nivel.
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
+
+// Sangrar más para crear el tercer nivel.
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-En este paso, aplicamos el formato predeterminado de números de lista usando el`ApplyNumberDefault()` método del formateador de listas. A continuación, agregamos tres elementos a nuestra lista usando la herramienta del generador de documentos.`Writeln()`y`Write()` métodos. Usamos el`ListIndent()` Método para incrementar la sangría en cada nivel.
+ Aquí, agregamos tres elementos a nuestra lista, cada uno con niveles crecientes de sangría. El`ListIndent` El método se utiliza para aumentar el nivel de sangría para cada elemento posterior.
 
-## Paso 4: configurar las opciones de grabación
+## Paso 4: configurar las opciones de guardar
+
+Establecer sangría para usar caracteres de tabulación
 
 ```csharp
+// Configure las opciones de guardar para usar caracteres de tabulación para la sangría
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- En este paso configuramos las opciones para guardar el documento. Creamos un nuevo`TxtSaveOptions` objeto y establecer el`ListIndentation.Count` propiedad a 1 para especificar el número de caracteres de tabulación por nivel de sangría. También fijamos el`ListIndentation.Character` propiedad a '\t' para especificar que queremos usar caracteres de tabulación.
+ Configuramos el`TxtSaveOptions` para utilizar caracteres de tabulación para la sangría en el archivo de texto guardado. El`ListIndentation.Character` la propiedad está establecida en`'\t'`, que representa un carácter de tabulación.
 
 ## Paso 5: guarde el documento
 
+Guarde el documento con las opciones especificadas
+
 ```csharp
+// Guarde el documento con las opciones especificadas.
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- En este último paso guardamos el documento con las opciones de guardado especificadas. Usamos el`Save()` método del documento pasando la ruta completa del archivo de salida y las opciones de guardado.
+ Finalmente guardamos el documento usando el`Save` método con nuestra costumbre`TxtSaveOptions`. Esto garantiza que la lista se guarde con caracteres de tabulación para los niveles de sangría.
 
+## Conclusión
 
-Ahora puede ejecutar el código fuente para generar un documento con sangría de lista usando caracteres de tabulación. El archivo de salida se guardará en el directorio especificado con el nombre "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
+En este tutorial, hemos explicado la creación de una lista de varios niveles con sangría con pestañas usando Aspose.Words para .NET. Si sigue estos pasos, podrá administrar y dar formato fácilmente a las listas de sus documentos, asegurándose de que se presenten de forma clara y profesional. Ya sea que esté trabajando en informes, presentaciones o cualquier otro tipo de documento, estas técnicas lo ayudarán a lograr un control preciso sobre el formato de su lista.
 
-### Fuente de código de ejemplo para la función Usar un carácter de tabulación por nivel para sangría de lista con Aspose.Words para .NET:
+## Preguntas frecuentes
 
-```csharp
+### ¿Cómo puedo cambiar el carácter de sangría de una tabulación a un espacio?
+ Puedes modificar el`saveOptions.ListIndentation.Character` propiedad para utilizar un carácter de espacio en lugar de una tabulación.
 
-// Ruta a su directorio de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+### ¿Puedo aplicar diferentes estilos de lista a diferentes niveles?
+Sí, Aspose.Words permite la personalización de estilos de lista en varios niveles. Puede modificar las opciones de formato de la lista para lograr diferentes estilos.
 
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+### ¿Qué pasa si necesito aplicar viñetas en lugar de números?
+ Utilizar el`ListFormat.ApplyBulletDefault()` método en lugar de`ApplyNumberDefault()` para crear una lista con viñetas.
 
-// Crea una lista con tres niveles de sangría
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
-builder.ListFormat.ListIndent();
-builder.Write("Element 3");
+### ¿Cómo puedo ajustar el tamaño del carácter de tabulación utilizado para la sangría?
+ Desafortunadamente, el tamaño de la pestaña en`TxtSaveOptions`está arreglado. Para ajustar el tamaño de la sangría, es posible que necesite utilizar espacios o personalizar el formato de la lista directamente.
 
-TxtSaveOptions saveOptions = new TxtSaveOptions();
-saveOptions.ListIndentation.Count = 1;
-saveOptions.ListIndentation.Character = '\t';
-
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
-
-```
-
-Ahora que ha terminado de generar su documento con sangría de lista usando caracteres de tabulación, puede usar Markdown para formatear el contenido de su artículo. Asegúrese de utilizar etiquetas de formato adecuadas para resaltar títulos, subtítulos y el código fuente incluido.
-
-### Preguntas frecuentes
-
-#### P: ¿Qué es la función "Usar un carácter de tabulación por nivel para sangría de lista" con Aspose.Words para .NET?
-La función "Usar un carácter de tabulación por nivel para la sangría de la lista" con Aspose.Words para .NET permite aplicar caracteres de tabulación para la sangría de la lista en cada nivel. Esto proporciona mayor flexibilidad y control sobre la apariencia de sus documentos.
-
-#### P: ¿Cómo puedo utilizar esta función con Aspose.Words para .NET?
-Para utilizar esta función con Aspose.Words para .NET, puede seguir estos pasos:
-
-Configure su entorno de desarrollo agregando las referencias necesarias e importando los espacios de nombres apropiados.
-
- Crear un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto.
-
- Utilizar el`DocumentBuilder`para crear una lista con múltiples niveles de sangría usando los métodos`ApplyNumberDefault()` para aplicar el formato de número de lista predeterminado,`Writeln()`y`Write()` para agregar elementos a la lista, y`ListIndent()` para incrementar la sangría en cada nivel.
-
- Configure las opciones de guardado creando un`TxtSaveOptions` objeto y estableciendo las propiedades`ListIndentation.Count` al número de caracteres de tabulación por nivel y`ListIndentation.Character` a`'\t'` para utilizar los caracteres de tabulación.
-
- Guarde el documento usando el`Save()` método del documento especificando la ruta completa del archivo de salida y las opciones de guardado.
-
-#### P: ¿Es posible personalizar la cantidad de caracteres de tabulación por nivel para la sangría de la lista?
- Sí, puede personalizar el número de caracteres de tabulación por nivel para la sangría de la lista cambiando el valor de`ListIndentation.Count` propiedad en el`TxtSaveOptions` clase. Puede especificar la cantidad de caracteres de tabulación que desea para cada nivel de sangría.
-
-#### P: ¿Qué otros caracteres puedo usar para la sangría de listas con Aspose.Words para .NET?
-Además de los caracteres de tabulación, también puede utilizar otros caracteres para la sangría de la lista con Aspose.Words para .NET. Puedes configurar el`ListIndentation.Character` propiedad a cualquier carácter deseado, como el espacio (`' '`), para sangrar listas.
-
-#### P: ¿Aspose.Words para .NET ofrece otras funciones para administrar listas?
-Sí, Aspose.Words para .NET ofrece muchas funciones para administrar listas en documentos de Word. Puede crear listas numeradas o con viñetas, establecer niveles de sangría, personalizar el estilo de las listas, agregar elementos de lista y más.
+### ¿Puedo usar esta configuración al exportar a otros formatos como PDF o DOCX?
+La configuración específica de caracteres de tabulación se aplica a los archivos de texto. Para formatos como PDF o DOCX, deberá ajustar las opciones de formato dentro de esos formatos.

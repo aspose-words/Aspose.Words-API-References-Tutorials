@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、開発者がプログラムで Word 文書を作成、操作、変換できるようにする強力なライブラリです。
+Aspose.Words for .NET は、開発者がプログラムによって Word 文書を作成、操作、変換できるようにする強力なライブラリです。
 
 ### Aspose.Words for .NET をインストールするにはどうすればよいですか?
 Aspose.Words for .NETはVisual StudioのNuGetパッケージマネージャーからインストールするか、[Aspose ウェブサイト](https://releases.aspose.com/words/net/).

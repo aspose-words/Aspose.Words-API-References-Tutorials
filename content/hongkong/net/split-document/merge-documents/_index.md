@@ -9,7 +9,7 @@ url: /zh-hant/net/split-document/merge-documents/
 ---
 ## 介紹
 
-嘿！您是否曾經發現自己需要將多個 Word 文件合併為一個內聚文件？無論您是在編譯報告、組裝專案還是只是想整理一下，合併文件都可以為您節省大量時間和精力。有了 Aspose.Words for .NET，這個過程變得輕而易舉。在本教學中，我們將介紹如何使用 Aspose.Words for .NET 合併 Word 文檔，分解每個步驟，以便您可以輕鬆地進行操作。最後，您將像專業人士一樣合併文件！
+您是否曾經發現自己需要將多個 Word 文件合併為一個內聚文件？無論您是在編譯報告、組裝專案還是只是想整理一下，合併文件都可以為您節省大量時間和精力。有了 Aspose.Words for .NET，這個過程變得輕而易舉。在本教學中，我們將介紹如何使用 Aspose.Words for .NET 合併 Word 文檔，分解每個步驟，以便您可以輕鬆地進行操作。最後，您將像專業人士一樣合併文件！
 
 ## 先決條件
 
@@ -89,26 +89,26 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## 結論
 
-現在你就擁有了！您已經學習如何使用 Aspose.Words for .NET 合併 Word 文件。本教學介紹了設定環境、執行簡單合併、使用儲存選項進行合併、將合併文件轉換為 PDF 以及從合併文件建立文件實例。 Aspose.Words 提供了廣泛的功能，因此請務必探索[API文件](https://reference.aspose.com/words/net/)釋放其全部潛力。
+現在你就擁有了！您已經了解如何使用 Aspose.Words for .NET 合併 Word 文件。本教學介紹了設定環境、執行簡單合併、使用儲存選項進行合併、將合併文件轉換為 PDF 以及從合併文件建立文件實例。 Aspose.Words 提供了廣泛的功能，因此請務必探索[API文件](https://reference.aspose.com/words/net/)釋放其全部潛力。
 
 ## 常見問題解答
 
-### 1. 什麼是 Aspose.Words for .NET？
+### 什麼是 Aspose.Words for .NET？
 
 Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以程式設計方式建立、操作和轉換 Word 文件。它非常適合自動化文件相關任務。
 
-### 2. 我可以免費使用Aspose.Words for .NET嗎？
+### 我可以免費使用 Aspose.Words for .NET 嗎？
 
 您可以嘗試使用 Aspose.Words for .NET[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
 
-### 3. 合併時如何處理不同的格式？
+### 合併期間如何處理不同的格式？
 
  Aspose.Words提供了各種合併格式模式，例如`KeepSourceFormatting`和`MergeFormatting`。請參閱[API文件](https://reference.aspose.com/words/net/)取得詳細說明。
 
-### 4. 如何獲得 Aspose.Words for .NET 支援？
+### 如何獲得 Aspose.Words for .NET 支援？
 
 您可以透過訪問獲得支持[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
 
-### 5. 我可以將其他檔案格式與 Aspose.Words for .NET 合併嗎？
+### 我可以將其他文件格式與 Aspose.Words for .NET 合併嗎？
 
 是的，Aspose.Words 支援合併各種文件格式，包括 DOCX、PDF 和 HTML。

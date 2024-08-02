@@ -12,12 +12,12 @@ url: /ko/java/document-converting/converting-documents-images/
 
 오늘날 디지털 시대에 문서 관리는 다양한 산업 분야에서 중요한 역할을 합니다. 때로는 웹 사이트에 콘텐츠를 표시하거나 문서의 축소판을 만드는 등 다양한 목적을 위해 문서를 이미지로 변환해야 할 수도 있습니다. Java 개발자는 문서 조작을 위한 강력한 API인 Aspose.Words for Java를 사용하여 이 작업을 효율적으로 수행할 수 있습니다. 이 단계별 가이드에서는 Aspose.Words for Java를 사용하여 문서를 이미지로 변환하는 방법을 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 코딩 부분을 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
 - Java 개발 환경: 시스템에 JDK(Java Development Kit)가 설치되어 있어야 합니다.
-- Aspose.Words for Java: 다음에서 Aspose.Words for Java 라이브러리를 다운로드하고 설정하세요.[Aspose 웹 사이트](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java: 다음에서 Aspose.Words for Java 라이브러리를 다운로드하고 설정하세요.[Aspose 웹사이트](https://releases.aspose.com/words/java/).
 
 ## Java 프로젝트 설정
 

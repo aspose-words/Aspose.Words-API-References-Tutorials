@@ -128,7 +128,7 @@ Aspose.Words för Java tillhandahåller också funktionalitet för att kombinera
 
 När du hanterar stora dokument är det viktigt att överväga prestandaoptimeringar. Aspose.Words
 
- för Java är utformad för att hantera stora filer effektivt, men utvecklare kan förbättra prestandan ytterligare genom att följa bästa praxis.
+ for Java är utformad för att hantera stora filer effektivt, men utvecklare kan förbättra prestandan ytterligare genom att följa bästa praxis.
 
 ## 11. Slutsats
 

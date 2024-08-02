@@ -84,7 +84,7 @@ In deze code vervangen we de tekst 'sectie' gevolgd door een alinea-einde (`&p`)
 
 ## Stap 5: Sectie-einden invoegen
 
-Vervolgens vervangen we een aangepaste teksttag door een sectie-einde. Het is alsof je een tijdelijke aanduiding vervangt door iets functionelers.
+Vervolgens vervangen we een aangepaste teksttag door een sectie-einde. Het is alsof je een tijdelijke aanduiding vervangt door iets functioneler.
 
 ```csharp
 // Voeg een sectie-einde in in plaats van een aangepaste teksttag.

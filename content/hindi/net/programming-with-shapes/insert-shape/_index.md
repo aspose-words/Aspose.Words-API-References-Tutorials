@@ -2,77 +2,120 @@
 title: आकृति डालें
 linktitle: आकृति डालें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में आकृतियाँ सम्मिलित करना सीखें।
+description: हमारे चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में आकृतियों को सम्मिलित करना और उनमें हेरफेर करना सीखें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-shapes/insert-shape/
 ---
+## परिचय
 
-यह ट्यूटोरियल बताता है कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में आकृतियाँ कैसे डालें। आकृतियों का उपयोग आपके दस्तावेज़ों के दृश्य स्वरूप और लेआउट को बढ़ाने के लिए किया जा सकता है।
+जब दृश्य रूप से आकर्षक और अच्छी तरह से संरचित Word दस्तावेज़ बनाने की बात आती है, तो आकृतियाँ एक महत्वपूर्ण भूमिका निभा सकती हैं। चाहे आप तीर, बक्से या यहां तक कि जटिल कस्टम आकृतियाँ जोड़ रहे हों, इन तत्वों को प्रोग्रामेटिक रूप से हेरफेर करने की क्षमता अद्वितीय लचीलापन प्रदान करती है। इस ट्यूटोरियल में, हम .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में आकृतियों को सम्मिलित करने और हेरफेर करने का तरीका जानेंगे।
 
 ## आवश्यक शर्तें
-इस ट्यूटोरियल का अनुसरण करने के लिए आपके पास निम्नलिखित चीजें होनी चाहिए:
 
-- Aspose.Words for .NET लाइब्रेरी स्थापित की गई।
-- C# और वर्ड दस्तावेजों के साथ वर्ड प्रोसेसिंग का बुनियादी ज्ञान।
+ट्यूटोरियल में शामिल होने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ हैं:
 
-## चरण 1: दस्तावेज़ निर्देशिका सेट करें
- अपने दस्तावेज़ निर्देशिका का पथ सेट करके प्रारंभ करें।`"YOUR DOCUMENT DIRECTORY"` उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
+1.  Aspose.Words for .NET: नवीनतम संस्करण डाउनलोड करें और इंस्टॉल करें[Aspose रिलीज़ पेज](https://releases.aspose.com/words/net/).
+2. विकास वातावरण: एक उपयुक्त .NET विकास वातावरण जैसे कि विजुअल स्टूडियो.
+3. C# का बुनियादी ज्ञान: C# प्रोग्रामिंग भाषा और बुनियादी अवधारणाओं से परिचित होना।
+
+## नामस्थान आयात करें
+
+आरंभ करने के लिए, आपको अपने C# प्रोजेक्ट में आवश्यक नेमस्पेस आयात करने होंगे:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## चरण 2: नया दस्तावेज़ और दस्तावेज़बिल्डर बनाएँ
- एक नया उदाहरण बनाएँ`Document` कक्षा और एक`DocumentBuilder` दस्तावेज़ के साथ काम करने पर आपत्ति।
+## चरण 1: अपना प्रोजेक्ट सेट करें
+
+इससे पहले कि आप आकृतियाँ सम्मिलित करना शुरू करें, आपको अपना प्रोजेक्ट सेट करना होगा और Aspose.Words for .NET लाइब्रेरी को जोड़ना होगा।
+
+1. नया प्रोजेक्ट बनाएं: Visual Studio खोलें और एक नया C# कंसोल अनुप्रयोग प्रोजेक्ट बनाएं।
+2. .NET के लिए Aspose.Words जोड़ें: NuGet पैकेज मैनेजर के माध्यम से .NET के लिए Aspose.Words लाइब्रेरी स्थापित करें।
+
+```bash
+Install-Package Aspose.Words
+```
+
+## चरण 2: दस्तावेज़ को आरंभ करें
+
+सबसे पहले, आपको एक नया दस्तावेज़ और एक दस्तावेज़ बिल्डर आरंभ करना होगा, जो दस्तावेज़ के निर्माण में मदद करेगा।
 
 ```csharp
+// आपके दस्तावेज़ निर्देशिका का पथ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// नया दस्तावेज़ आरंभ करें
 Document doc = new Document();
+
+// दस्तावेज़ बनाने में सहायता के लिए DocumentBuilder आरंभ करें
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## चरण 3: आकृतियाँ सम्मिलित करें
- उपयोग`InsertShape` की विधि`DocumentBuilder` दस्तावेज़ में आकृतियाँ डालने के लिए ऑब्जेक्ट। आकृति का प्रकार, सापेक्ष क्षैतिज और ऊर्ध्वाधर स्थितियाँ, पृष्ठ आयाम, आकार और रैपिंग प्रकार निर्दिष्ट करें। आप चाहें तो आकृतियों का रोटेशन कोण भी सेट कर सकते हैं।
+## चरण 3: एक आकृति डालें
+
+अब, चलिए डॉक्यूमेंट में एक आकृति डालें। हम एक साधारण टेक्स्ट बॉक्स जोड़कर शुरुआत करेंगे।
 
 ```csharp
-Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
-	RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
-shape.Rotation = 30.0;
-builder.Writeln();
-shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
+// दस्तावेज़ में टेक्स्ट बॉक्स आकार डालें
+Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100, RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
+
+// आकृति को घुमाएँ
 shape.Rotation = 30.0;
 ```
 
-## चरण 4: दस्तावेज़ सहेजें
- दस्तावेज़ को निर्दिष्ट निर्देशिका में सहेजें`Save` विधि। उचित फ़ाइल एक्सटेंशन के साथ वांछित फ़ाइल नाम प्रदान करें। इस उदाहरण में, हम दस्तावेज़ को "WorkingWithShapes.InsertShape.docx" के रूप में सहेजते हैं।
+इस उदाहरण में, हम (100, 100) स्थिति पर एक टेक्स्ट बॉक्स डालते हैं जिसकी चौड़ाई और ऊँचाई 50 इकाई होती है। हम आकृति को 30 डिग्री घुमाते भी हैं।
+
+## चरण 4: एक और आकृति जोड़ें
+
+आइए दस्तावेज़ में एक और आकृति जोड़ें, इस बार स्थिति निर्दिष्ट किए बिना।
 
 ```csharp
+// एक और टेक्स्ट बॉक्स आकार जोड़ें
+Shape secondShape = builder.InsertShape(ShapeType.TextBox, 50, 50);
+
+// आकृति को घुमाएँ
+secondShape.Rotation = 30.0;
+```
+
+यह कोड स्निपेट पहले वाले के समान आयाम और घुमाव के साथ एक अन्य टेक्स्ट बॉक्स सम्मिलित करता है, लेकिन इसकी स्थिति निर्दिष्ट किए बिना।
+
+## चरण 5: दस्तावेज़ सहेजें
+
+ आकृतियाँ जोड़ने के बाद, अंतिम चरण दस्तावेज़ को सहेजना है। हम इसका उपयोग करेंगे`OoxmlSaveOptions` सहेजने का प्रारूप निर्दिष्ट करने के लिए.
+
+```csharp
+// अनुपालन के साथ सहेजने के विकल्प परिभाषित करें
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 {
-	Compliance = OoxmlCompliance.Iso29500_2008_Transitional
+    Compliance = OoxmlCompliance.Iso29500_2008_Transitional
 };
+
+// दस्तावेज़ सहेजें
 doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-### .NET के लिए Aspose.Words का उपयोग करके Insert Shape के लिए उदाहरण स्रोत कोड 
+## निष्कर्ष
 
-```csharp
-	// आपके दस्तावेज़ निर्देशिका का पथ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+और अब यह हो गया! आपने .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में आकृतियों को सफलतापूर्वक सम्मिलित और हेरफेर किया है। इस ट्यूटोरियल में मूल बातें शामिल हैं, लेकिन Aspose.Words आकृतियों के साथ काम करने के लिए कई और उन्नत सुविधाएँ प्रदान करता है, जैसे कि कस्टम शैलियाँ, कनेक्टर और समूह आकृतियाँ।
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
-		RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
-	shape.Rotation = 30.0;
-	builder.Writeln();
-	shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
-	shape.Rotation = 30.0;
-	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
-	{
-		Compliance = OoxmlCompliance.Iso29500_2008_Transitional
-	};
-	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
-```
+ अधिक विस्तृत जानकारी के लिए, कृपया देखें[.NET दस्तावेज़ीकरण के लिए Aspose.Words](https://reference.aspose.com/words/net/).
 
-बस! आपने Aspose.Words for .NET का उपयोग करके अपने Word दस्तावेज़ में सफलतापूर्वक आकृतियाँ सम्मिलित कर ली हैं।
+## अक्सर पूछे जाने वाले प्रश्न
+
+### मैं विभिन्न प्रकार की आकृतियाँ कैसे सम्मिलित करूँ?
+आप बदल सकते हैं`ShapeType` में`InsertShape` विभिन्न प्रकार की आकृतियाँ जैसे वृत्त, आयत और तीर सम्मिलित करने की विधि।
+
+### क्या मैं आकृतियों के अंदर पाठ जोड़ सकता हूँ?
+ हां, आप इसका उपयोग कर सकते हैं`builder.Write` आकृतियों को सम्मिलित करने के बाद उनके अंदर पाठ जोड़ने की विधि।
+
+### क्या आकृतियों को स्टाइल करना संभव है?
+ हां, आप इस तरह के गुण सेट करके आकृतियों को स्टाइल कर सकते हैं`FillColor`, `StrokeColor` , और`StrokeWeight`.
+
+### मैं आकृतियों को अन्य तत्वों के सापेक्ष कैसे स्थान दूँ?
+ उपयोग`RelativeHorizontalPosition`और`RelativeVerticalPosition` दस्तावेज़ में अन्य तत्वों के सापेक्ष आकृतियों को स्थान देने के लिए गुण।
+
+### क्या मैं एकाधिक आकृतियों को एक साथ समूहीकृत कर सकता हूँ?
+ हां, .NET के लिए Aspose.Words आपको आकृतियों को समूहीकृत करने की अनुमति देता है`GroupShape` कक्षा।

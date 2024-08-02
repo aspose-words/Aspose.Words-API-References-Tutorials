@@ -59,7 +59,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 
 ## Langkah 3: Tetapkan Opsi Penyimpanan PDF
 
-Sekarang, konfigurasikan opsi penyimpanan PDF untuk menggunakan opsi rendering metafile yang baru saja Anda atur. Ini memberitahu Aspose.Words cara menangani metafile saat menyimpan dokumen sebagai PDF.
+Sekarang, konfigurasikan opsi penyimpanan PDF untuk menggunakan opsi rendering metafile yang baru saja Anda atur. Ini memberi tahu Aspose.Words cara menangani metafile saat menyimpan dokumen sebagai PDF.
 
 ```csharp
 // Buat instance baru dari PdfSaveOptions
@@ -99,7 +99,7 @@ Menskalakan font WMF ke ukuran metafile dapat membantu mengurangi ukuran PDF sec
 
 ### Bisakah saya menggunakan format metafile lain dengan Aspose.Words?
 
-Ya, Aspose.Words mendukung berbagai format metafile, termasuk EMF (Enhanced Metafile) dan WMF.
+Ya, Aspose.Words mendukung berbagai format metafile, termasuk EMF (Enhanced Metafile) selain WMF.
 
 ### Apakah teknik ini berlaku untuk semua jenis dokumen Word?
 

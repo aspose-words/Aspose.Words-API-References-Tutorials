@@ -9,7 +9,7 @@ url: /nl/net/split-document/merge-documents/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit meerdere Word-documenten moeten samenvoegen tot één samenhangend bestand? Of u nu rapporten samenstelt, een project samenstelt of gewoon probeert op te ruimen, het samenvoegen van documenten kan u een hoop tijd en moeite besparen. Met Aspose.Words voor .NET wordt dit proces een fluitje van een cent. In deze zelfstudie laten we zien hoe u Word-documenten kunt samenvoegen met Aspose.Words voor .NET, waarbij we elke stap opsplitsen, zodat u deze gemakkelijk kunt volgen. Tegen het einde zul je documenten samenvoegen als een professional!
+Heeft u ooit meerdere Word-documenten moeten samenvoegen tot één samenhangend bestand? Of u nu rapporten samenstelt, een project samenstelt of gewoon probeert op te ruimen, het samenvoegen van documenten kan u een hoop tijd en moeite besparen. Met Aspose.Words voor .NET wordt dit proces een fluitje van een cent. In deze zelfstudie laten we zien hoe u Word-documenten kunt samenvoegen met Aspose.Words voor .NET, waarbij we elke stap opsplitsen, zodat u deze gemakkelijk kunt volgen. Tegen het einde zul je documenten samenvoegen als een professional!
 
 ## Vereisten
 
@@ -78,7 +78,7 @@ Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx",
 
 ## Stap 5: Een documentinstantie maken op basis van samengevoegde documenten
 
-Soms wilt u misschien verder met het samengevoegde document werken voordat u het opslaat. U kunt een`Document` exemplaar uit samengevoegde documenten:
+ Soms wilt u misschien verder met het samengevoegde document werken voordat u het opslaat. U kunt een`Document` exemplaar uit samengevoegde documenten:
 
 ```csharp
 Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
@@ -93,22 +93,22 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## Veelgestelde vragen
 
-### 1. Wat is Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
 
 Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en converteren. Het is ideaal voor het automatiseren van documentgerelateerde taken.
 
-### 2. Kan ik Aspose.Words voor .NET gratis gebruiken?
+### Kan ik Aspose.Words voor .NET gratis gebruiken?
 
  U kunt Aspose.Words voor .NET proberen met behulp van een[gratis proefperiode](https://releases.aspose.com/). Voor langdurig gebruik moet u een licentie aanschaffen.
 
-### 3. Hoe ga ik om met verschillende opmaak tijdens het samenvoegen?
+### Hoe ga ik om met verschillende opmaak tijdens het samenvoegen?
 
- Aspose.Words biedt verschillende samenvoegformaten, zoals`KeepSourceFormatting`En`MergeFormatting` . Verwijs naar de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
+ Aspose.Words biedt verschillende samenvoegformaten, zoals`KeepSourceFormatting`En`MergeFormatting` Verwijs naar de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
 
-### 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
+### Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 
  kunt ondersteuning krijgen door naar de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
-### 5. Kan ik andere bestandsformaten samenvoegen met Aspose.Words voor .NET?
+### Kan ik andere bestandsformaten samenvoegen met Aspose.Words voor .NET?
 
 Ja, Aspose.Words ondersteunt het samenvoegen van verschillende bestandsformaten, waaronder DOCX, PDF en HTML.

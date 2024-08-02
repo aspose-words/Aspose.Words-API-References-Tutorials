@@ -9,7 +9,7 @@ url: /ko/net/working-with-fonts/load-noto-fallback-settings/
 ---
 이 튜토리얼에서는 .NET용 Aspose.Words 라이브러리를 사용하여 Noto 글꼴 대체 설정을 Word 문서에 로드하는 방법을 안내합니다. Noto 글꼴 대체 설정을 사용하면 문서를 표시하거나 인쇄할 때 글꼴 대체를 관리할 수 있습니다. .NET 프로젝트에서 코드를 이해하고 구현하는 데 도움이 되도록 단계별로 안내해 드리겠습니다.
 
-## 전제조건
+## 전제 조건
 시작하기 전에 다음 항목이 있는지 확인하세요.
 - C# 프로그래밍 언어에 대한 실무 지식
 - 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리

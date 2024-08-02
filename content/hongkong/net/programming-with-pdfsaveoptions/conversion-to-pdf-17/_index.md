@@ -81,7 +81,7 @@ PDF 1.7 包含改進的安全性和增強的文件導航等功能，使其比早
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
 
-是的，Aspose.Words for .NET 需要完整功能的授權。您可以獲得[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
+是的，Aspose.Words for .NET 需要完整功能的授權。你可以獲得一個[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
 
 ### 我可以進一步自訂 PDF 儲存選項嗎？
 

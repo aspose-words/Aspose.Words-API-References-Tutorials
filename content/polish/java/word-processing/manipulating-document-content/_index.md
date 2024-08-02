@@ -14,7 +14,7 @@ url: /pl/java/word-processing/manipulating-document-content/
 
 ## Pierwsze kroki z Aspose.Words dla Java
 
-Zanim zagłębimy się w szczegóły manipulowania treścią dokumentu, upewnijmy się, że dysponujesz niezbędnymi narzędziami i wiedzą, aby rozpocząć. Wykonaj następujące kroki:
+Zanim zagłębimy się w szczegóły manipulowania zawartością dokumentu, upewnijmy się, że dysponujesz niezbędnymi narzędziami i wiedzą, aby rozpocząć. Wykonaj następujące kroki:
 
 1. Instalacja i konfiguracja
    

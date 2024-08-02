@@ -79,7 +79,7 @@ public class HandleDocumentWarnings : IWarningCallback
 
 ## Krok 5: Przypisz ustawienia wywołania zwrotnego i czcionki do dokumentu
 
-Przypisz ostrzeżenie i skonfigurowane ustawienia czcionki do dokumentu. Dzięki temu wszelkie problemy z czcionkami zostaną wychwytywane i rejestrowane.
+Przypisz ostrzeżenie i skonfigurowane ustawienia czcionki do dokumentu. Dzięki temu wszelkie problemy z czcionkami zostaną przechwycone i zarejestrowane.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();

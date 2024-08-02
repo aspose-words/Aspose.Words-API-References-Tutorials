@@ -2,123 +2,182 @@
 title: Modificar controles de conteúdo
 linktitle: Modificar controles de conteúdo
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como modificar texto, listas suspensas e imagens dentro de controles de conteúdo em um documento do Word usando Aspose.Words for .NET.
+description: Aprenda como modificar tags de documentos estruturados no Word usando Aspose.Words for .NET. Atualize texto, menus suspensos e imagens passo a passo.
 type: docs
 weight: 10
 url: /pt/net/programming-with-sdt/modify-content-controls/
 ---
+## Introdução
 
-Este tutorial explica como modificar diferentes tipos de controles de conteúdo em um documento do Word usando Aspose.Words for .NET. Você pode atualizar o texto, o valor selecionado de uma lista suspensa ou substituir uma imagem nos controles de conteúdo.
+Se você já trabalhou com documentos do Word e precisou modificar controles de conteúdo estruturados – como texto simples, listas suspensas ou imagens – usando Aspose.Words for .NET, você está no lugar certo! Tags de documentos estruturados (SDTs) são ferramentas poderosas que tornam a automação de documentos mais fácil e flexível. Neste tutorial, veremos como você pode modificar esses SDTs para atender às suas necessidades. Esteja você atualizando texto, alterando seleções suspensas ou trocando imagens, este guia irá guiá-lo passo a passo pelo processo.
 
 ## Pré-requisitos
-Para seguir este tutorial, você precisa ter o seguinte:
 
-- Biblioteca Aspose.Words para .NET instalada.
-- Conhecimento básico de C# e processamento de palavras com documentos Word.
+Antes de começarmos a modificar os controles de conteúdo, certifique-se de ter o seguinte:
 
-## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde seu documento está localizado.
+1.  Aspose.Words for .NET instalado: Certifique-se de ter a biblioteca Aspose.Words instalada. Se não, você pode[baixe aqui](https://releases.aspose.com/words/net/).
+
+2. Conhecimento básico de C#: este tutorial pressupõe que você esteja familiarizado com os conceitos básicos de programação em C#.
+
+3. Um ambiente de desenvolvimento .NET: você deve ter um IDE como o Visual Studio configurado para executar aplicativos .NET.
+
+4. Um documento de amostra: usaremos um documento do Word de amostra com vários tipos de SDTs. Você pode usar o do exemplo ou criar o seu próprio.
+
+5.  Acesso à documentação do Aspose: Para informações mais detalhadas, confira o[Documentação Aspose.Words](https://reference.aspose.com/words/net/).
+
+## Importar namespaces
+
+Para começar a trabalhar com Aspose.Words, você precisa importar os namespaces relevantes para o seu projeto C#. Veja como você faz isso:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+Esses namespaces darão acesso às classes e métodos necessários para manipular tags de documentos estruturados em seus documentos do Word.
+
+## Etapa 1: configure o caminho do seu documento
+
+ Antes de fazer qualquer alteração, você precisa especificar o caminho do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde seu documento está armazenado.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
-## Etapa 2: carregar o documento e iterar sobre os controles de conteúdo
- Carregue o documento do Word usando o`Document` construtor, passando o caminho para o documento como parâmetro. Itere sobre todas as tags de documento estruturadas no documento usando um`foreach` laço.
+## Etapa 2: percorrer tags de documentos estruturados
+
+ Para modificar SDTs, primeiro você precisa percorrer todos os SDTs do documento. Isto é feito usando o`GetChildNodes` método para obter todos os nós do tipo`StructuredDocumentTag`.
 
 ```csharp
-Document doc = new Document(dataDir + "Structured document tags.docx");
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
 {
-    // Execute ações com base no tipo de controle de conteúdo
+    // Modifique SDTs com base em seu tipo
 }
 ```
 
-## Etapa 3: modificar o controle de conteúdo de texto simples
- Para controles de conteúdo do tipo`SdtType.PlainText`, remova todos os filhos existentes, crie um novo parágrafo e anexe uma execução com o texto desejado.
+## Etapa 3: modificar SDTs de texto simples
+
+Se o SDT for um tipo de texto simples, você poderá substituir seu conteúdo. Primeiro, limpe o conteúdo existente e depois adicione o novo texto.
 
 ```csharp
-case SdtType.PlainText:
+if (sdt.SdtType == SdtType.PlainText)
 {
     sdt.RemoveAllChildren();
     Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
     Run run = new Run(doc, "new text goes here");
     para.AppendChild(run);
-    break;
 }
 ```
 
-## Etapa 4: modificar o controle de conteúdo da lista suspensa
- Para controles de conteúdo do tipo`SdtType.DropDownList` , atualize o valor selecionado definindo-o para um valor específico`SdtListItem`.
+ Explicação: Aqui,`RemoveAllChildren()`limpa o conteúdo existente do SDT. Criamos então um novo`Paragraph`e`Run` objeto para inserir o novo texto.
+
+## Etapa 4: modificar SDTs da lista suspensa
+
+ Para SDTs da lista suspensa, você pode alterar o item selecionado acessando o`ListItems` coleção. Aqui, selecionamos o terceiro item da lista.
 
 ```csharp
-case SdtType.DropDownList:
+if (sdt.SdtType == SdtType.DropDownList)
 {
     SdtListItem secondItem = sdt.ListItems[2];
     sdt.ListItems.SelectedValue = secondItem;
-    break;
 }
 ```
 
-## Etapa 5: modificar o controle de conteúdo de imagem
- Para controles de conteúdo do tipo`SdtType.Picture`, recupere a forma no controle de conteúdo e substitua sua imagem por uma nova.
+Explicação: Este trecho de código seleciona o item no índice 2 (terceiro item) da lista suspensa. Ajuste o índice com base nas suas necessidades.
+
+## Etapa 5: modificar SDTs de imagem
+
+Para atualizar uma imagem dentro de uma imagem SDT, você pode substituir a imagem existente por uma nova.
 
 ```csharp
-case SdtType.Picture:
+if (sdt.SdtType == SdtType.Picture)
 {
-    Shape shape = (Shape)sdt.GetChild(NodeType.Shape, 0, true);
+    Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
     if (shape.HasImage)
     {
         shape.ImageData.SetImage(ImagesDir + "Watermark.png");
     }
-    break;
 }
 ```
 
-## Etapa 6: salve o documento modificado
- Salve o documento modificado no diretório especificado usando o`Save` método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithSdt.ModifyContentControls.docx".
+ Explicação: Este código verifica se a forma contém uma imagem e a substitui por uma nova imagem localizada em`ImagesDir`.
+
+## Etapa 6: salve seu documento modificado
+
+Depois de fazer todas as alterações necessárias, salve o documento modificado com um novo nome para manter o documento original intacto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ```
 
+Explicação: Isso salva o documento com um novo nome de arquivo para que você possa diferenciá-lo facilmente do original.
+
+## Conclusão
+
+Modificar os controles de conteúdo em um documento do Word usando Aspose.Words for .NET é simples quando você entende as etapas envolvidas. Esteja você atualizando texto, alterando seleções suspensas ou trocando imagens, Aspose.Words fornece uma API robusta para essas tarefas. Seguindo este tutorial, você pode gerenciar e personalizar com eficiência os controles de conteúdo estruturado do seu documento, tornando seus documentos mais dinâmicos e adaptados às suas necessidades.
+
+## Perguntas frequentes
+
+1. O que é uma etiqueta de documento estruturado (SDT)?
+
+SDTs são elementos em documentos do Word que ajudam a gerenciar e formatar o conteúdo do documento, como caixas de texto, listas suspensas ou imagens.
+
+2. Como posso adicionar um novo item suspenso a um SDT?
+
+ Para adicionar um novo item, use o`ListItems` propriedade e anexar um novo`SdtListItem` para a coleção.
+
+3. Posso usar Aspose.Words para remover SDTs de um documento?
+
+Sim, você pode remover SDTs acessando os nós do documento e excluindo o SDT desejado.
+
+4. Como lidar com SDTs aninhados em outros elementos?
+
+ Use o`GetChildNodes` método com parâmetros apropriados para acessar SDTs aninhados.
+
+5. que devo fazer se o SDT que preciso modificar não estiver visível no documento?
+
+Certifique-se de que o SDT não esteja oculto ou protegido. Verifique as configurações do documento e certifique-se de que seu código esteja direcionado corretamente ao tipo SDT.
+
+
 ### Exemplo de código-fonte para modificar controles de conteúdo usando Aspose.Words for .NET 
 
 ```csharp
-	// Caminho para o diretório do seu documento
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Caminho para o diretório do seu documento
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Structured document tags.docx");
-	foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
+Document doc = new Document(dataDir + "Structured document tags.docx");
+foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
+{
+	switch (sdt.SdtType)
 	{
-		switch (sdt.SdtType)
+		case SdtType.PlainText:
 		{
-			case SdtType.PlainText:
+			sdt.RemoveAllChildren();
+			Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
+			Run run = new Run(doc, "new text goes here");
+			para.AppendChild(run);
+			break;
+		}
+		case SdtType.DropDownList:
+		{
+			SdtListItem secondItem = sdt.ListItems[2];
+			sdt.ListItems.SelectedValue = secondItem;
+			break;
+		}
+		case SdtType.Picture:
+		{
+			Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
+			if (shape.HasImage)
 			{
-				sdt.RemoveAllChildren();
-				Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
-				Run run = new Run(doc, "new text goes here");
-				para.AppendChild(run);
-				break;
+				shape.ImageData.SetImage(ImagesDir + "Watermark.png");
 			}
-			case SdtType.DropDownList:
-			{
-				SdtListItem secondItem = sdt.ListItems[2];
-				sdt.ListItems.SelectedValue = secondItem;
-				break;
-			}
-			case SdtType.Picture:
-			{
-				Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
-				if (shape.HasImage)
-				{
-					shape.ImageData.SetImage(ImagesDir + "Watermark.png");
-				}
-				break;
-			}
+			break;
 		}
 	}
-	doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
+}
+doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 

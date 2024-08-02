@@ -10,7 +10,7 @@ url: /ko/java/using-document-elements/using-markdown/
 
 문서 처리 분야에서 Aspose.Words for Java는 개발자가 Word 문서 작업을 쉽게 할 수 있게 해주는 강력한 도구입니다. 그 기능 중 하나는 Markdown 문서를 생성하는 기능으로, 다양한 응용 프로그램에 다용도로 사용할 수 있습니다. 이 튜토리얼에서는 Aspose.Words for Java에서 Markdown을 사용하는 과정을 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

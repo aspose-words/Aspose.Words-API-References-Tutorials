@@ -12,9 +12,9 @@ Split Document es un recurso completo que explica cómo dividir un documento en 
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Por encabezados HTML](./by-headings-html/) | Guía paso a paso para explicar el código fuente C# de la función By Heading HTML de Aspose.Words para .NET |
-| [Por secciones HTML](./by-sections-html/) | Aprenda a dividir un documento de Word en secciones HTML usando Aspose.Words para .NET con un ejemplo de código completo. |
-| [Por Secciones](./by-sections/) | Aprenda cómo dividir un documento de Word en secciones separadas usando Aspose.Words para .NET con un ejemplo de código completo. |
-| [Por páginas](./page-by-page/) | Guía paso a paso para explicar el código fuente C# de la función Página por página de Aspose.Words para .NET |
+| [Dividir documento de Word por encabezados HTML](./by-headings-html/) | Aprenda a dividir un documento de Word por encabezados en HTML usando Aspose.Words para .NET. Siga nuestra guía detallada paso a paso. |
+| [Dividir documento de Word por secciones HTML](./by-sections-html/) | Aprenda cómo dividir un documento de Word por secciones en HTML usando Aspose.Words para .NET con esta guía detallada paso a paso. |
+| [Dividir documento de Word por secciones](./by-sections/) | Aprenda a dividir un documento de Word en secciones usando Aspose.Words para .NET. Siga esta guía detallada paso a paso para una gestión eficiente de los documentos. |
+| [Dividir documento de Word por página](./page-by-page/) | Aprenda cómo dividir un documento de Word por página usando Aspose.Words para .NET con esta guía detallada paso a paso. Perfecto para gestionar documentos grandes de forma eficiente. |
 | [Fusionar documentos](./merge-documents/) | Guía paso a paso para explicar el código fuente C# de la función Fusionar documentos de Aspose.Words para .NET |
-| [Por rango de páginas](./by-page-range/) | Extraiga fácilmente por rango de páginas de un documento de Word utilizando la guía paso a paso de Aspose.Words para .NET. |
+| [Dividir documento de Word por rango de páginas](./by-page-range/) | Aprenda cómo dividir un documento de Word por rango de páginas usando Aspose.Words para .NET con nuestra guía detallada paso a paso. Perfecto para desarrolladores. |

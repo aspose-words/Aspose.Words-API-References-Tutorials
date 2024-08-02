@@ -29,7 +29,7 @@ In deze reeks tutorials verdiep je je in de fijne kneepjes van documentstructuur
 - Documenten samenvoegen: Ontdek strategieën voor het samenvoegen van meerdere documenten tot een samenhangend geheel.
 - Documentconversie: begrijp hoe u documenten naar verschillende formaten converteert, zoals PDF of HTML.
 
-Aan het einde van deze tutorials beschikt u over een solide basis in het navigeren, extraheren en manipuleren van de documentstructuur en inhoud met Aspose.Words. Met gedetailleerde uitleg en broncodevoorbeelden bent u goed toegerust om documentgerelateerde taken efficiënt en effectief aan te pakken.
+Aan het einde van deze tutorials beschikt u over een solide basis in het navigeren, extraheren en manipuleren van de documentstructuur en inhoud met behulp van Aspose.Words. Met gedetailleerde uitleg en broncodevoorbeelden bent u goed toegerust om documentgerelateerde taken efficiënt en effectief aan te pakken.
 
 ## Tutorials voor documentstructuur en inhoudmanipulatie
 ### [Structuur en inhoud in Word-documenten beheren](./document-structure-content/)

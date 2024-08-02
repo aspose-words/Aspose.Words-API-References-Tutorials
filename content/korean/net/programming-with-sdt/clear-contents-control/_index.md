@@ -11,7 +11,7 @@ url: /ko/net/programming-with-sdt/clear-contents-control/
 
 .NET용 Aspose.Words의 세계로 뛰어들 준비가 되셨습니까? 오늘은 이 강력한 라이브러리를 사용하여 Word 문서에서 내용 제어를 지우는 방법을 살펴보겠습니다. 따라하기 쉬운 단계별 가이드로 시작해 보세요!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

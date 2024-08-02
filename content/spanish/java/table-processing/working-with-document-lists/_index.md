@@ -59,7 +59,7 @@ public class DocumentListExample {
 
 ## Modificar una lista de documentos
 
-Una vez que haya creado una lista de documentos, es posible que deba modificarla agregando, eliminando o actualizando elementos de la lista. Así es como puedes hacerlo:
+Una vez que haya creado una lista de documentos, es posible que necesite modificarla agregando, eliminando o actualizando elementos de la lista. Así es como puedes hacerlo:
 
 1. Cargue un documento existente.
 2. Accede a la lista que deseas modificar.
@@ -116,7 +116,7 @@ public class ExtractListItemsExample {
 ## Preguntas frecuentes (FAQ)
 
 ### ¿Cómo agrego viñetas a una lista de documentos?
- Para agregar viñetas a una lista de documentos, utilice el ListTemplate apropiado al crear la lista. Por ejemplo, utilice`ListTemplate.BULLET_DEFAULT` en lugar de`ListTemplate.NUMBER_DEFAULT`.
+ Para agregar viñetas a una lista de documentos, utilice el ListTemplate adecuado al crear la lista. Por ejemplo, utilice`ListTemplate.BULLET_DEFAULT` en lugar de`ListTemplate.NUMBER_DEFAULT`.
 
 ### ¿Puedo cambiar el formato de los elementos de la lista?
 Sí, puede personalizar el formato de los elementos de la lista, incluida la fuente, el tamaño, el color y más, utilizando las funciones de formato de Aspose.Words para Java.
@@ -132,4 +132,4 @@ Sí, Aspose.Words para Java proporciona un amplio soporte para trabajar con tabl
 
 ## Conclusión
 
-En esta guía completa, exploramos el mundo del trabajo con listas de documentos utilizando Aspose.Words para Java. Ha aprendido a crear, modificar y extraer información de listas de documentos, todo con el poder y la flexibilidad de Aspose.Words para Java. Comience a implementar estas técnicas en sus proyectos Java hoy y agilice sus tareas de automatización de documentos.
+En esta guía completa, exploramos el mundo del trabajo con listas de documentos usando Aspose.Words para Java. Ha aprendido a crear, modificar y extraer información de listas de documentos, todo con el poder y la flexibilidad de Aspose.Words para Java. Comience a implementar estas técnicas en sus proyectos Java hoy y agilice sus tareas de automatización de documentos.

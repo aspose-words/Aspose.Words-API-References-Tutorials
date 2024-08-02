@@ -53,7 +53,7 @@ Parabéns! Agora você aprendeu como aplicar o estilo de texto tachado com Aspos
 
 #### P: Como posso adicionar texto tachado em Aspose.Words?
 
- R: Para adicionar texto tachado em Aspose.Words, você pode usar o`Font.StrikeThrough` propriedade do`Run`objeto. Você pode definir esta propriedade como`true` para adicionar texto tachado a um texto específico. Por exemplo, você pode usar`run.Font.StrikeThrough=true` para adicionar o texto tachado ao`Run` objeto.
+ R: Para adicionar texto tachado em Aspose.Words, você pode usar o`Font.StrikeThrough` propriedade do`Run` objeto. Você pode definir esta propriedade como`true` para adicionar texto tachado a um texto específico. Por exemplo, você pode usar`run.Font.StrikeThrough=true` para adicionar o texto tachado ao`Run` objeto.
 
 #### P: É possível adicionar texto tachado a vários trechos de texto no mesmo parágrafo?
 

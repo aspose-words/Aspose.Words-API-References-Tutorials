@@ -21,7 +21,7 @@ Antes de sumergirse en el tutorial, asegúrese de cumplir con los siguientes req
 
 3. Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo .NET, como Visual Studio.
 
-4. Documento de muestra: tenga listo un documento de Word de muestra (p. ej., "Rendering.docx") para probar la compresión de imágenes.
+4. Documento de muestra: tenga un documento de Word de muestra (por ejemplo, "Rendering.docx") listo para probar la compresión de imágenes.
 
 5. Licencia de Aspose: si está utilizando una versión con licencia de Aspose.Words para .NET, asegúrese de tener la licencia configurada correctamente. Si necesita una licencia temporal, puede obtener una de[Página de licencia temporal de Aspose](https://purchase.aspose.com/temporary-license/).
 
@@ -148,7 +148,7 @@ PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
 {
 	Compliance = PdfCompliance.PdfA2u,
 	ImageCompression = PdfImageCompression.Jpeg,
-	JpegQuality = 100, // Utilice compresión JPEG con una calidad del 50% para reducir el tamaño del archivo.
+	JpegQuality = 100, // Utilice la compresión JPEG con una calidad del 50 % para reducir el tamaño del archivo.
 };
 
 

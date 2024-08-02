@@ -24,7 +24,7 @@ Aspose.Words는 Python에서 Word 문서 작업을 단순화하는 인기 있는
 
 Python용 Aspose.Words를 설치하려면 다음 단계를 따르세요.
 
-1. 컴퓨터에 Python이 설치되어 있는지 확인하세요.
+1. 컴퓨터에 Python이 설치되어 있는지 확인하십시오.
 2. Aspose.Words for Python 패키지를 다운로드하세요.
 3. pip를 사용하여 패키지를 설치합니다.
 

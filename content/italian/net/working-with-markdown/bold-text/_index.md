@@ -53,7 +53,7 @@ Congratulazioni! Ora hai imparato come scrivere in grassetto con Aspose.Words pe
 
 #### D: Come posso rendere il testo in grassetto in Aspose.Words?
 
- A: Per rendere il testo in grassetto in Aspose.Words, puoi usare il`Font.Bold` proprietà del`Run`oggetto. È possibile impostare questa proprietà su`true` al testo specifico in grassetto. Ad esempio, puoi usare`run.Font.Bold=true` per mettere in grassetto il testo all'interno di`Run` oggetto.
+ A: Per rendere il testo in grassetto in Aspose.Words, puoi usare il`Font.Bold` proprietà del`Run` oggetto. È possibile impostare questa proprietà su`true` al testo specifico in grassetto. Ad esempio, puoi usare`run.Font.Bold=true` per mettere in grassetto il testo all'interno di`Run` oggetto.
 
 #### D: È possibile mettere in grassetto più parti di testo nello stesso paragrafo?
 

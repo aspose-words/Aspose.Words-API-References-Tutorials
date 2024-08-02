@@ -9,7 +9,7 @@ url: /pl/net/programming-with-loadoptions/use-temp-folder/
 ---
 ## Wstęp
 
-Czy kiedykolwiek miałeś do czynienia z dużymi dokumentami programu Word, które po prostu nie ładowały się wydajnie? A może napotkałeś problemy z wydajnością podczas pracy z rozbudowanymi plikami? Cóż, pozwólcie, że przedstawię wam fajną funkcję w Aspose.Words dla .NET, która może pomóc wam uporać się z tym problemem: używanie folderu tymczasowego podczas ładowania dokumentów. Ten samouczek przeprowadzi Cię przez proces konfigurowania i używania folderu tymczasowego w dokumentach programu Word w celu zwiększenia wydajności i efektywnego zarządzania zasobami.
+Czy kiedykolwiek miałeś do czynienia z dużymi dokumentami programu Word, które po prostu nie ładowały się wydajnie? A może napotkałeś problemy z wydajnością podczas pracy z rozbudowanymi plikami? Cóż, pozwólcie, że przedstawię wam fajną funkcję w Aspose.Words dla .NET, która może pomóc wam uporać się z tym problemem: używanie folderu tymczasowego podczas ładowania dokumentów. Ten samouczek poprowadzi Cię przez proces konfigurowania i używania folderu tymczasowego w dokumentach programu Word w celu zwiększenia wydajności i efektywnego zarządzania zasobami.
 
 ## Warunki wstępne
 

@@ -16,7 +16,7 @@ Se hai bisogno di manipolare, creare, convertire o generare documenti Word, i tu
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Rimuovere le interruzioni di pagina nel documento di Word](./remove-page-breaks/) | Scopri come rimuovere le interruzioni di pagina nel documento Word utilizzando la libreria Aspose.Words per .NET. Segui la nostra guida passo passo per un layout senza interruzioni. |
-| [Rimuovere le interruzioni di sezione nel documento di Word](./remove-section-breaks/) | Scopri come rimuovere le interruzioni di sezione in un documento Word utilizzando la libreria Aspose.Words per .NET. Elimina in modo efficace le interruzioni di sezione che possono interrompere la formattazione del documento.|
-| [Rimuovi i piè di pagina nel documento di Word](./remove-footers/) | Scopri come rimuovere facilmente i piè di pagina nei documenti di Word con Aspose.Words per .NET. Segui la nostra guida passo passo per una gestione efficiente dei file DOCX. |
+| [Rimuovere le interruzioni di pagina nel documento di Word](./remove-page-breaks/) | Scopri come rimuovere le interruzioni di pagina in un documento Word utilizzando Aspose.Words per .NET con la nostra guida passo passo. Migliora le tue capacità di manipolazione dei documenti. |
+| [Rimuovere le interruzioni di sezione nel documento di Word](./remove-section-breaks/) | Scopri come rimuovere le interruzioni di sezione nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida dettagliata e passo passo garantisce una gestione e una modifica fluida dei documenti.|
+| [Rimuovi i piè di pagina nel documento di Word](./remove-footers/) | Scopri come rimuovere i piè di pagina dai documenti Word utilizzando Aspose.Words per .NET con questa guida passo passo completa. |
 | [Rimuovi il sommario nel documento di Word](./remove-table-of-contents/) | Scopri come rimuovere il sommario in un documento di Word utilizzando Aspose.Words per .NET. |

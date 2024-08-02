@@ -12,4 +12,4 @@ Le traitement de mots avec filigrane est une ressource complète qui vous guide 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Ajouter un filigrane de texte avec des options spécifiques](./add-text-watermark-with-specific-options/) | Découvrez comment ajouter un filigrane de texte avec des options spécifiques à l'aide d'Aspose.Words pour .NET. Guide étape par étape. |
+| [Ajouter un filigrane de texte avec des options spécifiques](./add-text-watermark-with-specific-options/) | Découvrez comment ajouter un filigrane de texte avec des options spécifiques à vos documents Word à l'aide d'Aspose.Words pour .NET. Personnalisez facilement la police, la taille, la couleur et la mise en page. |

@@ -80,7 +80,7 @@ doc_builder.write("Content after page break.")
 
 ## Závěr
 
-Závěrem lze říci, že Aspose.Words pro Python umožňuje vývojářům bezproblémově spravovat sekce dokumentu, rozvržení a formátování. Tento výukový program poskytl informace o vytváření, úpravách sekcí, přizpůsobení rozvržení stránky, práci se záhlavími a zápatím a správě zalomení stránek.
+Závěrem lze říci, že Aspose.Words pro Python umožňuje vývojářům bezproblémově spravovat sekce dokumentu, rozvržení a formátování. Tento výukový program poskytl přehled o vytváření, úpravách sekcí, přizpůsobení rozvržení stránky, práci se záhlavími a zápatími a správě zalomení stránek.
 
 Další informace a podrobné reference API naleznete na adrese[Aspose.Words pro dokumentaci Pythonu](https://reference.aspose.com/words/python-net/).
 
@@ -96,7 +96,7 @@ Ano, v dokumentu můžete mít více oddílů, z nichž každý má vlastní nas
 Ano, Aspose.Words podporuje různé formáty Wordu, včetně DOC, DOCX, RTF a dalších.
 
 ### Jak přidám obrázky do záhlaví nebo zápatí?
- Můžete použít`Shape` třídy pro přidání obrázků do záhlaví nebo zápatí. Podrobné pokyny najdete v dokumentaci API.
+ Můžete použít`Shape` třídy pro přidání obrázků do záhlaví nebo zápatí. Podrobné pokyny naleznete v dokumentaci API.
 
 ### Kde si mohu stáhnout nejnovější verzi Aspose.Words pro Python?
  Nejnovější verzi Aspose.Words pro Python si můžete stáhnout z webu[Stránka vydání Aspose.Words](https://releases.aspose.com/words/python/).

@@ -9,7 +9,7 @@ url: /nl/net/programming-with-loadoptions/use-temp-folder/
 ---
 ## Invoering
 
-Heeft u ooit te maken gehad met grote Word-documenten die niet efficiënt konden worden geladen? Of bent u misschien prestatieproblemen tegengekomen bij het werken met omvangrijke bestanden? Welnu, ik wil u kennis laten maken met een handige functie in Aspose.Words voor .NET die u kan helpen dit probleem direct aan te pakken: het gebruik van een tijdelijke map tijdens het laden van documenten. Deze tutorial leidt u door het proces van het configureren en gebruiken van een tijdelijke map in uw Word-documenten om de prestaties te verbeteren en bronnen effectief te beheren.
+Heeft u ooit te maken gehad met grote Word-documenten die niet efficiënt konden worden geladen? Of bent u misschien prestatieproblemen tegengekomen bij het werken met omvangrijke bestanden? Welnu, ik wil u kennis laten maken met een handige functie in Aspose.Words voor .NET die u kan helpen dit probleem direct aan te pakken: het gebruik van een tijdelijke map tijdens het laden van documenten. Deze zelfstudie leidt u door het proces van het configureren en gebruiken van een tijdelijke map in uw Word-documenten om de prestaties te verbeteren en bronnen effectief te beheren.
 
 ## Vereisten
 
@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 LoadOptions loadOptions = new LoadOptions { TempFolder = dataDir };
 ```
 
- Hier,`LoadOptions` wordt gebruikt om de tijdelijke map op te geven. Vervangen`"YOUR DOCUMENTS DIRECTORY"`met het pad naar uw map.
+ Hier,`LoadOptions` wordt gebruikt om de tijdelijke map op te geven. Vervangen`"YOUR DOCUMENTS DIRECTORY"`met het pad naar uw directory.
 
 ## Stap 3: Het document laden
 

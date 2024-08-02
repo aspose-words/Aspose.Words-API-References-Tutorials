@@ -56,7 +56,7 @@ Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
 
 ## Etapa 4: remover a linha
 
-Agora que você identificou a linha, você pode removê-la do documento. Certifique-se de lidar com quaisquer possíveis valores nulos para evitar exceções.
+Agora que identificou a linha, você pode removê-la do documento. Certifique-se de lidar com quaisquer valores nulos potenciais para evitar exceções.
 
 ```csharp
 row?.Remove();

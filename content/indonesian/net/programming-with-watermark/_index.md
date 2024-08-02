@@ -12,4 +12,4 @@ Pemrosesan Kata dengan Tanda Air adalah sumber daya komprehensif yang memandu An
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Tambahkan Tanda Air Teks Dengan Opsi Tertentu](./add-text-watermark-with-specific-options/) | Pelajari cara menambahkan tanda air teks dengan opsi spesifik menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah. |
+| [Tambahkan Tanda Air Teks Dengan Opsi Tertentu](./add-text-watermark-with-specific-options/) | Pelajari cara menambahkan tanda air teks dengan opsi spesifik ke dokumen Word Anda menggunakan Aspose.Words untuk .NET. Sesuaikan font, ukuran, warna, dan tata letak dengan mudah. |

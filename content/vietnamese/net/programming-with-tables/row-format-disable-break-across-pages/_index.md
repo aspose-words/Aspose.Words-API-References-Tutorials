@@ -2,67 +2,86 @@
 title: Định dạng hàng Tắt ngắt trên các trang
 linktitle: Định dạng hàng Tắt ngắt trên các trang
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tắt tính năng ngắt dòng cho một bảng trên nhiều trang trong tài liệu Word bằng Aspose.Words for .NET.
+description: Tìm hiểu cách tắt ngắt hàng trên các trang trong tài liệu Word bằng Aspose.Words for .NET để duy trì khả năng đọc và định dạng bảng.
 type: docs
 weight: 10
 url: /vi/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách tắt tính năng ngắt dòng của bảng nhiều trang trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ làm theo hướng dẫn từng bước để hiểu mã và triển khai tính năng này. Đến cuối hướng dẫn này, bạn sẽ có thể tắt tính năng ngắt dòng cho tất cả các hàng trong bảng trong tài liệu Word của mình.
+Khi làm việc với các bảng trong tài liệu Word, bạn có thể muốn đảm bảo rằng các hàng không bị ngắt giữa các trang, điều này có thể cần thiết để duy trì khả năng đọc và định dạng tài liệu của bạn. Aspose.Words for .NET cung cấp một cách dễ dàng để vô hiệu hóa ngắt hàng trên các trang.
 
-## Bước 1: Thiết lập dự án
-1. Khởi chạy Visual Studio và tạo một dự án C# mới.
-2. Thêm tham chiếu đến thư viện Aspose.Words for .NET.
+Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình vô hiệu hóa ngắt hàng trên các trang trong tài liệu Word bằng Aspose.Words cho .NET.
 
-## Bước 2: Tải tài liệu
-Để bắt đầu Xử lý văn bản với tài liệu, hãy làm theo các bước sau:
+## Điều kiện tiên quyết
 
-```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
+- Đã cài đặt thư viện Aspose.Words cho .NET.
+- Tài liệu Word có bảng trải dài trên nhiều trang.
 
-// Tải tài liệu
-Document doc = new Document(dataDir + "Table spanning two pages.docx");
-```
+## Nhập không gian tên
 
-Đảm bảo thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng đường dẫn thực tế đến thư mục tài liệu của bạn và cung cấp tên tệp chính xác.
-
-## Bước 3: Tắt tính năng ngắt hàng của bảng
-Tiếp theo, chúng tôi sẽ tắt tính năng ngắt hàng cho tất cả các hàng trong bảng. Sử dụng mã sau đây:
+Đầu tiên, nhập các không gian tên cần thiết trong dự án của bạn:
 
 ```csharp
-// Truy xuất bảng
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Vô hiệu hóa ngắt hàng cho tất cả các hàng trong bảng
-foreach(Row row in table.Rows)
-row.RowFormat.AllowBreakAcrossPages = false;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Ở đây, chúng tôi sử dụng tài liệu để tìm nạp bảng đầu tiên và sau đó lặp qua tất cả các hàng trong bảng bằng vòng lặp foreach. Bên trong vòng lặp, chúng tôi vô hiệu hóa việc ngắt hàng cho mỗi hàng bằng cách đặt`RowFormat.AllowBreakAcrossPages`tài sản để`false`.
+## Bước 1: Tải tài liệu
 
-## Bước 4: Lưu tài liệu đã sửa đổi
-Cuối cùng, chúng ta cần lưu tài liệu đã sửa đổi với tính năng ngắt dòng trong bảng bị tắt. Sử dụng mã sau đây:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
-```
-
-Đảm bảo chỉ định đúng đường dẫn và tên tệp cho tài liệu đầu ra.
-
-### Mã nguồn mẫu cho định dạng hàng Vô hiệu hóa ngắt giữa các trang bằng Aspose.Words cho .NET 
+Tải tài liệu chứa bảng trải dài trên nhiều trang.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
+```
+
+## Bước 2: Truy cập bảng
+
+Truy cập bảng đầu tiên trong tài liệu. Điều này giả định rằng bảng bạn muốn sửa đổi là bảng đầu tiên trong tài liệu.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Bước 3: Vô hiệu hóa tính năng ngắt trang cho tất cả các hàng
+
+ Lặp qua từng hàng trong bảng và đặt`AllowBreakAcrossPages`tài sản để`false`. Điều này đảm bảo rằng các hàng sẽ không bị ngắt giữa các trang.
+
+```csharp
 // Tắt tính năng ngắt trang cho tất cả các hàng trong bảng.
 foreach (Row row in table.Rows)
-	row.RowFormat.AllowBreakAcrossPages = false;
+    row.RowFormat.AllowBreakAcrossPages = false;
+```
+
+## Bước 4: Lưu tài liệu
+
+Lưu tài liệu đã sửa đổi vào thư mục được chỉ định của bạn.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã tìm hiểu cách tắt tính năng ngắt dòng của bảng nhiều trang trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này và triển khai mã C# được cung cấp, bạn có thể áp dụng tính năng vô hiệu hóa này cho các bảng trong tài liệu Word của mình.
+
+Trong hướng dẫn này, chúng tôi đã trình bày cách tắt ngắt hàng trên các trang trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được nêu ở trên, bạn có thể đảm bảo rằng các hàng trong bảng vẫn còn nguyên và không bị phân chia giữa các trang, duy trì khả năng đọc và định dạng của tài liệu.
+
+## Câu hỏi thường gặp
+
+### Tôi có thể tắt tính năng ngắt hàng trên các trang cho một hàng cụ thể thay vì tất cả các hàng không?  
+ Có, bạn có thể vô hiệu hóa ngắt hàng cho các hàng cụ thể bằng cách truy cập vào hàng mong muốn và đặt nó`AllowBreakAcrossPages`tài sản để`false`.
+
+### Phương pháp này có hoạt động với các bảng có ô được hợp nhất không?  
+ Có, phương pháp này áp dụng cho các bảng có ô được hợp nhất. Bất động sản`AllowBreakAcrossPages` áp dụng cho toàn bộ hàng, bất kể việc hợp nhất ô.
+
+### Phương pháp này có hoạt động không nếu bảng được lồng bên trong một bảng khác?  
+Có, bạn có thể truy cập và sửa đổi các bảng lồng nhau theo cách tương tự. Đảm bảo bạn tham chiếu chính xác bảng lồng nhau theo chỉ mục của nó hoặc các thuộc tính khác.
+
+### Làm cách nào để kiểm tra xem một hàng có cho phép ngắt giữa các trang hay không?  
+ Bạn có thể kiểm tra xem một hàng có cho phép ngắt giữa các trang hay không bằng cách truy cập vào`AllowBreakAcrossPages` tài sản của`RowFormat` và kiểm tra giá trị của nó.
+
+### Có cách nào để áp dụng cài đặt này cho tất cả các bảng trong tài liệu không?  
+Có, bạn có thể lặp qua tất cả các bảng trong tài liệu và áp dụng cài đặt này cho từng bảng.

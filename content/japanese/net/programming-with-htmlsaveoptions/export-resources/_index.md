@@ -36,7 +36,7 @@ Word 文書を HTML として保存するときにリソースをエクスポー
 
 ## ステップ1: ドキュメントディレクトリを設定する
 
-まず最初に、ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ドキュメントが保存され、HTML ファイルが保存される場所です。
+まず最初に、ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ドキュメントが保存される場所であり、HTML ファイルが保存される場所です。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ2: Word文書を読み込む
 
-次に、HTMLに変換したいWord文書を読み込みます。このチュートリアルでは、次の名前の文書を使用します。`Rendering.docx`.
+次に、HTMLに変換したいWord文書を読み込みます。このチュートリアルでは、次の文書を使用します。`Rendering.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

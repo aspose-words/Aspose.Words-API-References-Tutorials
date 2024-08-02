@@ -38,7 +38,7 @@ Ini adalah tautan ke beberapa sumber yang bermanfaat:
 
 ## Tutorial Pengolahan Dokumen Aspose.Words untuk Java
 {{% alert color="primary" %}}
-Kumpulan tutorial komprehensif ini memberikan panduan langkah demi langkah tentang cara bekerja secara efektif dengan dokumen Microsoft Word secara terprogram. Dari pembuatan dan manipulasi dokumen hingga fitur-fitur canggih seperti gabungan surat, pemformatan tabel, dan enkripsi dokumen, tutorial ini mencakup berbagai fungsi. Dengan mengikuti tutorial ini, pengembang dapat dengan mudah mengintegrasikan Aspose.Words ke dalam proyek Java mereka, memungkinkan pemrosesan dokumen yang efisien dan meningkatkan aplikasi mereka dengan kemampuan manajemen dokumen tingkat profesional. 
+Kumpulan tutorial komprehensif ini memberikan panduan langkah demi langkah tentang cara bekerja secara efektif dengan dokumen Microsoft Word secara terprogram. Dari pembuatan dan manipulasi dokumen hingga fitur-fitur canggih seperti penggabungan surat, pemformatan tabel, dan enkripsi dokumen, tutorial ini mencakup berbagai fungsi. Dengan mengikuti tutorial ini, pengembang dapat dengan mudah mengintegrasikan Aspose.Words ke dalam proyek Java mereka, memungkinkan pemrosesan dokumen yang efisien dan meningkatkan aplikasi mereka dengan kemampuan manajemen dokumen tingkat profesional. 
 {{% /alert %}}
 
 Ini adalah tautan ke beberapa sumber yang bermanfaat:

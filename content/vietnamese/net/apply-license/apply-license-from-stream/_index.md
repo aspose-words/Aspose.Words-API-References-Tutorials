@@ -9,7 +9,7 @@ url: /vi/net/apply-license/apply-license-from-stream/
 ---
 ## Giới thiệu
 
-Này các bạn lập trình viên! Nếu bạn đang tìm hiểu sâu hơn về thế giới của Aspose.Words dành cho .NET, một trong những điều đầu tiên bạn cần làm là xin giấy phép để khai thác toàn bộ tiềm năng của thư viện. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách đăng ký giấy phép từ luồng. Tin tôi đi, điều đó dễ hơn bạn tưởng và khi kết thúc hướng dẫn này, bạn sẽ thiết lập và chạy ứng dụng của mình một cách trơn tru. Sẵn sàng để bắt đầu? Hãy nhảy ngay vào!
+Này các bạn lập trình viên! Nếu bạn đang tìm hiểu về thế giới Aspose.Words dành cho .NET, một trong những điều đầu tiên bạn cần làm là xin giấy phép để khai thác toàn bộ tiềm năng của thư viện. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách đăng ký giấy phép từ luồng. Tin tôi đi, điều đó dễ hơn bạn tưởng và khi kết thúc hướng dẫn này, bạn sẽ thiết lập và chạy ứng dụng của mình một cách trơn tru. Sẵn sàng để bắt đầu? Hãy nhảy ngay vào!
 
 ## Điều kiện tiên quyết
 

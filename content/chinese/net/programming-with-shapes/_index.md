@@ -16,12 +16,12 @@ Aspose.Words for .NET 教程“使用形状进行文字处理”提供了有关�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [添加组形状](./add-group-shape/) | 了解如何使用 Aspose.Words for .NET 将具有多个形状的组形状添加到 Word 文档。 |
-| [刀片形状](./insert-shape/) | 了解如何使用 Aspose.Words for .NET 将形状插入 Word 文档。 |
-| [长宽比已锁定](./aspect-ratio-locked/) | 了解如何使用 Aspose.Words for .NET 锁定或解锁 Word 文档中形状的纵横比。 |
-| [单元格布局](./layout-in-cell/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中的表格单元格内布局形状。 |
-| [添加角剪断](./add-corners-snipped/) | 了解如何使用 Aspose.Words for .NET 将带有角剪切的形状添加到 Word 文档。 |
-| [获取实际形状边界点](./get-actual-shape-bounds-points/) | 了解如何使用 Aspose.Words for .NET 检索 Word 文档中形状的实际边界（以点为单位，测量单位）。 |
-| [垂直锚](./vertical-anchor/) | 了解如何使用 Aspose.Words for .NET 中的垂直锚点功能在文档内垂直定位形状。|
-| [检测智能艺术形状](./detect-smart-art-shape/) | 了解如何使用 Aspose.Words for .NET 检测 Word 文档中的 Smart Art 形状并识别图形表示。 |
-| [更新智能艺术绘图](./update-smart-art-drawing/) | 了解如何使用 Aspose.Words for .NET 更新 Word 文档中的 Smart Art 绘图。 |
+| [添加组形状](./add-group-shape/) | 通过本全面的分步教程学习如何使用 Aspose.Words for .NET 将组形状添加到 Word 文档。 |
+| [刀片形状](./insert-shape/) | 通过我们的分步指南学习如何使用 Aspose.Words for .NET 在 Word 文档中插入和操作形状。 |
+| [长宽比已锁定](./aspect-ratio-locked/) | 了解如何使用 Aspose.Words for .NET 锁定 Word 文档中形状的纵横比。按照此分步指南保持图像和形状的比例。 |
+| [单元格布局](./layout-in-cell/) | 通过这份全面的指南学习如何使用 Aspose.Words for .NET 设置单元格布局。非常适合希望自定义 Word 文档的开发人员。 |
+| [添加角剪断](./add-corners-snipped/) | 了解如何使用 Aspose.Words for .NET 向 Word 文档添加角剪切形状。本分步指南可确保您轻松增强文档。 |
+| [获取实际形状边界点](./get-actual-shape-bounds-points/) | 了解如何使用 Aspose.Words for .NET 获取 Word 文档中的实际形状边界点。通过此详细指南学习精确的形状操作。 |
+| [垂直锚](./vertical-anchor/) | 了解如何使用 Aspose.Words for .NET 设置 Word 文档中文本框的垂直锚点位置。包含简单的分步指南。|
+| [检测智能艺术形状](./detect-smart-art-shape/) | 通过这份全面的指南了解如何使用 Aspose.Words for .NET 检测 Word 文档中的 SmartArt 形状。非常适合自动化您的文档工作流程。 |
+| [更新智能艺术绘图](./update-smart-art-drawing/) | 通过本分步指南了解如何使用 Aspose.Words for .NET 更新 Word 文档中的 Smart Art 绘图。确保您的视觉效果始终准确。 |

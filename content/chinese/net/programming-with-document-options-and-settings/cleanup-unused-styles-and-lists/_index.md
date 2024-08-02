@@ -40,7 +40,7 @@ Document doc = new Document(dataDir + "Unused styles.docx");
 
 ## 第 2 步：检查当前样式和列表
 
-在开始清理之前，最好先查看文档中当前有多少样式和列表。这将为我们在清理后提供比较的基准。
+在开始清理之前，最好先看看文档中目前有多少样式和列表。这将为我们在清理后提供比较的基准。
 
 ```csharp
 Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
@@ -82,7 +82,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 
 ## 结论
 
-就这样！您已成功使用 Aspose.Words for .NET 删除未使用的样式和列表，从而清理了 Word 文档。这就像整理您的数字办公桌，让您的文档更易于管理和更高效。为自己出色的工作点赞吧！
+就这样！您已成功使用 Aspose.Words for .NET 删除了未使用的样式和列表，从而清理了 Word 文档。这就像整理您的数字办公桌，让您的文档更易于管理和更高效。为自己出色的工作感到自豪吧！
 
 ## 常见问题解答
 

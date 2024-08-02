@@ -1,6 +1,6 @@
 ---
-title: Spojení a připojení dokumentů
-linktitle: Spojení a připojení dokumentů
+title: Připojování a připojování dokumentů
+linktitle: Připojování a připojování dokumentů
 second_title: Aspose.Words Java Document Processing API
 description: Naučte se spojovat a připojovat dokumenty pomocí Aspose.Words for Java. Podrobný průvodce s příklady kódu pro efektivní manipulaci s dokumenty.
 type: docs

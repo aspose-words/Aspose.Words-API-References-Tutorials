@@ -12,6 +12,6 @@ Procesamiento de palabras con cuadros de texto es un recurso integral que lo lle
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Crear enlace en Word](./create-a-link/) | Aprenda a crear un vínculo en Word entre cuadros de texto en un documento de Word con Aspose.Words para .NET. |
-| [Verificar secuencia](./check-sequence/) | Aprenda a verificar la secuencia de cuadros de texto en un documento de Word con Aspose.Words para .NET. |
-| [Romper enlace directo en documento de Word](./break-a-link/) | Aprenda a romper enlaces directos en un documento de Word con Aspose.Words para .NET. |
+| [Vincular cuadros de texto en Word](./create-a-link/) | Aprenda a crear y vincular cuadros de texto en documentos de Word usando Aspose.Words para .NET. ¡Siga nuestra guía completa para una personalización perfecta de los documentos! |
+| [Comprobación de secuencia de cuadro de texto en Word](./check-sequence/) | Descubra cómo verificar la secuencia de cuadros de texto en documentos de Word usando Aspose.Words para .NET. ¡Siga nuestra guía detallada para dominar el flujo de documentos! |
+| [Romper enlace directo en documento de Word](./break-a-link/) | Aprenda a dividir enlaces directos en cuadros de texto de documentos de Word usando Aspose.Words para .NET. Siga nuestra guía para disfrutar de una experiencia de gestión de documentos más fluida. |

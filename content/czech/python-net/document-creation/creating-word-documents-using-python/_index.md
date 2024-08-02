@@ -12,7 +12,7 @@ této obsáhlé příručce se ponoříme do procesu vytváření dokumentů Mic
 
 ## Úvod do vytváření dokumentů Python Word
 
-Automatizace vytváření dokumentů aplikace Word pomocí jazyka Python může výrazně zvýšit produktivitu a zjednodušit úlohy generování dokumentů. Flexibilita Pythonu a bohatý ekosystém knihoven z něj činí vynikající volbu pro tento účel. Využitím síly Pythonu můžete automatizovat opakované procesy generování dokumentů a bezproblémově je začlenit do svých aplikací Python.
+Automatizace vytváření dokumentů Word pomocí Pythonu může výrazně zvýšit produktivitu a zjednodušit úlohy generování dokumentů. Flexibilita Pythonu a bohatý ekosystém knihoven z něj činí vynikající volbu pro tento účel. Využitím síly Pythonu můžete automatizovat opakované procesy generování dokumentů a bezproblémově je začlenit do svých aplikací Python.
 
 ## Pochopení struktury dokumentu MS Word
 

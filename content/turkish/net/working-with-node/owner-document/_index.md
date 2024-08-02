@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## 4. Adım: Üst düğümü ve sahip belgesini kontrol edin
-Artık paragraf düğümünü oluşturduğumuza göre, onun bir üst düğümü olup olmadığını ve sahip olduğu belgenin paragraf düğümüyle aynı olup olmadığını kontrol edebiliriz.`doc`.
+Artık paragraf düğümünü oluşturduğumuza göre, onun bir üst düğümü olup olmadığını ve sahibi olan belgenin paragraf düğümüyle aynı olup olmadığını kontrol edebiliriz.`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));

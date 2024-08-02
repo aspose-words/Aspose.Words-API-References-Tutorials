@@ -12,7 +12,7 @@ url: /ko/java/document-merging/merging-documents-documentbuilder/
 
 문서 처리 세계에서 Aspose.Words for Java는 문서를 조작하고 관리하는 강력한 도구입니다. 주요 기능 중 하나는 DocumentBuilder를 사용하여 문서를 원활하게 병합하는 기능입니다. 이 단계별 가이드에서는 코드 예제를 통해 이를 달성하는 방법을 살펴보고 이 기능을 활용하여 문서 관리 워크플로를 향상시킬 수 있는지 확인합니다.
 
-## 전제조건
+## 전제 조건
 
 문서 병합 프로세스를 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

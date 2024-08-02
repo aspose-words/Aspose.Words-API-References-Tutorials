@@ -11,7 +11,7 @@ url: /ko/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_s
 
 OOXML ISO 29500_2008_Strict를 준수하는 문서 준수의 세계로 뛰어들 준비가 되셨습니까? .NET용 Aspose.Words를 사용하여 이 포괄적인 튜토리얼을 살펴보겠습니다. 우리는 각 단계를 세분화하여 매우 쉽게 따라하고 구현할 수 있도록 하겠습니다. 그러니 버클을 채우고 시작해 보세요!
 
-## 전제조건
+## 전제 조건
 
 핵심적인 내용으로 넘어가기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 

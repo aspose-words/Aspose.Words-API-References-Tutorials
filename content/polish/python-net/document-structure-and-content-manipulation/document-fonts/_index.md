@@ -33,7 +33,7 @@ Style czcionek podkreślają tekst. Pogrubiony tekst oznacza znaczenie, podczas 
 
 ## Kolor tekstu i wyróżnianie
 
-Kolor i wyróżnianie tekstu wpływają na wizualną hierarchię dokumentu. Aby zapewnić czytelność, użyj kontrastujących kolorów tekstu i tła. Podkreślenie istotnych informacji kolorem tła może przyciągnąć uwagę.
+Kolor i wyróżnianie tekstu wpływają na wizualną hierarchię dokumentu. Aby zapewnić czytelność, użyj kontrastujących kolorów tekstu i tła. Podkreślenie istotnych informacji kolorem tła może zwrócić uwagę.
 
 ## Wyrównanie i odstępy między wierszami
 
@@ -47,7 +47,7 @@ Nagłówki i podtytuły organizują treść i prowadzą czytelników przez struk
 
 Aspose.Words dla Pythona to potężne narzędzie do programowego tworzenia i manipulowania dokumentami Word. Przyjrzyjmy się, jak zastosować styl czcionki i tekstu za pomocą tego interfejsu API.
 
-### Dodawanie wyróżnień za pomocą kursywy
+### Dodawanie podkreśleń za pomocą kursywy
 
 Możesz użyć Aspose.Words, aby zastosować kursywę do określonych fragmentów tekstu. Oto przykład, jak to osiągnąć:
 
@@ -139,7 +139,7 @@ Aspose.Words dla Pythona zapewnia szeroką gamę opcji stylizacji czcionek i tek
 
 ## Wniosek
 
-W dziedzinie tworzenia dokumentów czcionki i stylizacja tekstu to potężne narzędzia poprawiające atrakcyjność wizualną i skuteczne przekazywanie informacji. Rozumiejąc podstawy czcionek, stylów tekstu i korzystając z narzędzi takich jak Aspose.Words dla Pythona, możesz tworzyć profesjonalne dokumenty, które przykują i utrzymają uwagę odbiorców.
+W dziedzinie tworzenia dokumentów czcionki i stylizacja tekstu to potężne narzędzia poprawiające atrakcyjność wizualną i skuteczne przekazywanie informacji. Rozumiejąc podstawy czcionek, stylów tekstu i korzystając z narzędzi takich jak Aspose.Words dla języka Python, możesz tworzyć profesjonalne dokumenty, które przykują i utrzymają uwagę odbiorców.
 
 ## Często zadawane pytania
 

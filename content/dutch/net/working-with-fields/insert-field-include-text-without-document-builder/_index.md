@@ -2,99 +2,112 @@
 title: Veld invoegen Tekst opnemen zonder Document Builder
 linktitle: FieldIncludeText invoegen zonder Document Builder
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een FieldIncludeText-veld invoegt in uw Word-documenten met Aspose.Words voor .NET.
+description: Leer hoe u een FieldIncludeText invoegt zonder DocumentBuilder te gebruiken in Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van de functionaliteit "Een FieldIncludeText-veld invoegen" van Aspose.Words voor .NET. Zorg ervoor dat u elke stap zorgvuldig volgt om de gewenste resultaten te krijgen.
+In de wereld van documentautomatisering en -manipulatie is Aspose.Words voor .NET een krachtig hulpmiddel. Vandaag duiken we in een gedetailleerde handleiding over hoe u een FieldIncludeText kunt invoegen zonder DocumentBuilder te gebruiken. In deze tutorial wordt u stap voor stap door het proces geleid, zodat u elk onderdeel van de code en het doel ervan begrijpt.
 
-## Stap 1: Documentmap instellen
+## Vereisten
 
-In de verstrekte code moet u de directory van uw documenten opgeven. Vervang de waarde "UW DOCUMENTENMAP" door het juiste pad naar uw documentenmap.
+Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words voor .NET: Zorg ervoor dat de nieuwste versie is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. .NET-ontwikkelomgeving: elke .NET-compatibele IDE zoals Visual Studio.
+3. Basiskennis van C#: Bekendheid met programmeren in C# helpt u mee te volgen.
 
-## Stap 2: Het document en de alinea maken
+## Naamruimten importeren
 
-We beginnen met het maken van een nieuw document en het initialiseren van een paragraaf.
-
-```csharp
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-```
-
-## Stap 3: Het veld FieldIncludeText invoegen
-
- Wij gebruiken de`AppendField()` methode om een FieldIncludeText-veld in de alinea in te voegen.
+Allereerst moeten we de benodigde naamruimten importeren. Deze naamruimten bieden toegang tot de klassen en methoden die nodig zijn voor het manipuleren van Word-documenten.
 
 ```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Vervolgens configureren we de eigenschappen van het veld FieldIncludeText door de naam van de bladwijzer en de naam van het bronbestand op te geven.
+Laten we het voorbeeld nu in meerdere stappen opsplitsen. Om de duidelijkheid te garanderen, wordt elke stap gedetailleerd uitgelegd.
 
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
+## Stap 1: Stel het directorypad in
 
-Vervolgens voegen we de paragraaf toe aan de hoofdtekst van het document.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
- Tenslotte noemen wij de`Update()` methode om het veld bij te werken.
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### Voorbeeld van de broncode voor het invoegen van een FieldIncludeText-veld met Aspose.Words voor .NET
+De eerste stap is het definiëren van het pad naar uw documentenmap. Dit is waar uw Word-documenten worden opgeslagen en geopend.
 
 ```csharp
 // Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Stap 2: Maak het document en de alinea
+
+Vervolgens maken we een nieuw document en een paragraaf binnen dat document. Deze paragraaf bevat het veld FieldIncludeText.
+
+```csharp
 // Maak het document en de alinea.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
+```
 
+## Stap 3: VeldIncludeText invoegen
+
+Nu voegen we het veld FieldIncludeText in de alinea in. Met dit veld kunt u de tekst uit een ander document opnemen.
+
+```csharp
 // VeldIncludeText invoegen.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## Stap 4: Stel veldeigenschappen in
+
+We moeten de eigenschappen voor het veld FieldIncludeText opgeven. Dit omvat het instellen van de bladwijzernaam en het volledige pad van het brondocument.
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## Stap 5: Voeg een alinea toe aan het document
+
+Nadat het veld is ingesteld, voegen we de alinea toe aan de eerste sectie van het document.
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## Stap 6: Veld bijwerken
+
+Voordat we het document opslaan, moeten we de FieldIncludeText bijwerken om ervoor te zorgen dat de juiste inhoud uit het brondocument wordt opgehaald.
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## Stap 7: Bewaar het document
+
+Ten slotte slaan we het document op in de opgegeven map.
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-In dit voorbeeld hebben we een nieuw document gemaakt, een alinea geïnitialiseerd, een FieldIncludeTexten ingevoegd waarin de bladwijzernaam en de naam van het bronbestand zijn opgegeven, en het document opgeslagen met een opgegeven bestandsnaam.
+## Conclusie
 
-Dit is het einde van onze handleiding over het gebruik van de functie "Insert a FieldIncludeText" met Aspose.Words voor .NET.
+En daar heb je het! Door deze stappen te volgen, kunt u eenvoudig een FieldIncludeText invoegen zonder DocumentBuilder te gebruiken in Aspose.Words voor .NET. Deze aanpak biedt een gestroomlijnde manier om inhoud van het ene document in het andere op te nemen, waardoor uw documentautomatiseringstaken veel eenvoudiger worden.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Hoe kan ik het bronbestand opgeven voor het tekstopnameveld in Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?  
+Aspose.Words voor .NET is een krachtige bibliotheek voor het werken met Word-documenten in .NET-toepassingen. Het maakt het programmatisch maken, bewerken en converteren van documenten mogelijk.
 
- A: Om het bronbestand voor het tekstopnameveld in Aspose.Words voor .NET op te geven, kunt u de`FieldIncludeText.SourceFullName`eigenschap om het volledige pad van het bronbestand in te stellen. Zorg ervoor dat het bronbestand toegankelijk is en de inhoud bevat die u in het tekstopnameveld wilt opnemen.
+### Waarom FieldIncludeText gebruiken?  
+FieldIncludeText is handig voor het dynamisch opnemen van inhoud van het ene document in het andere, waardoor meer modulaire en onderhoudbare documenten mogelijk worden.
 
-#### Vraag: Kan ik tekst uit een macro opnemen in het tekstinvoegveld met Aspose.Words voor .NET?
+### Kan ik deze methode gebruiken om tekst uit andere bestandsindelingen op te nemen?  
+FieldIncludeText werkt specifiek met Word-documenten. Voor andere formaten heb je mogelijk andere methoden of klassen nodig die door Aspose.Words worden geleverd.
 
- A: Ja, u kunt tekst uit een macro opnemen in het tekstopnameveld met Aspose.Words voor .NET. U kunt gebruik maken van de`FieldIncludeText.IncludeText` eigenschap om de naam op te geven van de macro waarvan de inhoud in het veld moet worden opgenomen.
+### Is Aspose.Words voor .NET compatibel met .NET Core?  
+Ja, Aspose.Words voor .NET ondersteunt .NET Framework, .NET Core en .NET 5/6.
 
-#### Vraag: Heeft het invoegen van een tekstinclude-veld zonder de documentbuilder invloed op de Word-documentstructuur met Aspose.Words voor .NET?
-
-A: Het invoegen van een tekstinvoegveld zonder de documentbuilder heeft geen directe invloed op de structuur van het Word-document. Het voegt echter een nieuw veldelement toe aan de documentinhoud. U kunt de documentstructuur manipuleren door de bestaande elementen toe te voegen, te verwijderen of te wijzigen, afhankelijk van uw behoeften.
-
-#### Vraag: Kan ik de weergave van het tekstinvoegveld in een Word-document aanpassen met Aspose.Words voor .NET?
-
-A: Het tekstopnameveld past de weergave ervan in een Word-document niet rechtstreeks aan. U kunt de opgenomen tekst echter opmaken met behulp van de alinea-eigenschappen, lettertype-eigenschappen en andere opmaakobjecten die beschikbaar zijn in Aspose.Words voor .NET.
+### Hoe kan ik een gratis proefversie van Aspose.Words voor .NET krijgen?  
+ U kunt een gratis proefversie krijgen van[hier](https://releases.aspose.com/).

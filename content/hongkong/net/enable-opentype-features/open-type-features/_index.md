@@ -16,7 +16,7 @@ url: /zh-hant/net/enable-opentype-features/open-type-features/
 在我們開始之前，請確保您具備以下條件：
 
 1.  Aspose.Words for .NET：您可以下載它[這裡](https://releases.aspose.com/words/net/).
-2. .NET Framework：確保您安裝了相容版本的 .NET Framework。
+2. .NET Framework：請確保您安裝了相容版本的 .NET Framework。
 3. Visual Studio：用於編碼的整合開發環境 (IDE)。
 4. C# 基礎知識：本教學假設您對 C# 程式設計有基本了解。
 
@@ -97,7 +97,7 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ## 常見問題解答
 
 ### OpenType 有哪些功能？
-OpenType 功能包括進階排版功能，例如連字、字距調整和風格設置，可改善文件中文字的外觀。
+OpenType 功能包括進階排版功能，例如連字、字距調整和樣式集，可改善文件中文字的外觀。
 
 ### 為什麼將 HarfBuzz 與 Aspose.Words 結合使用？
 HarfBuzz 是一個開源文字整形引擎，可為 OpenType 功能提供強大的支持，從而提高文件的排版品質。

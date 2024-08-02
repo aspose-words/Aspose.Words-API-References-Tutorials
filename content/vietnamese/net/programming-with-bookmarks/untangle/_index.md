@@ -97,7 +97,7 @@ row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 
 ## Phần kết luận
 
-Việc gỡ rối dấu trang trong tài liệu Word bằng Aspose.Words cho .NET có vẻ khó khăn, nhưng bằng cách chia nhỏ thành các bước có thể quản lý được, quy trình sẽ trở nên rõ ràng hơn nhiều. Chúng tôi đã thực hiện quá trình tải tài liệu, duyệt qua dấu trang, xác định các hàng có liên quan, kiểm tra tính liền kề và cuối cùng là di chuyển nút cuối dấu trang. Với hướng dẫn này, bạn sẽ có thể xử lý dấu trang trong tài liệu Word của mình hiệu quả hơn.
+Việc gỡ rối dấu trang trong tài liệu Word bằng Aspose.Words cho .NET có vẻ khó khăn, nhưng bằng cách chia nhỏ thành các bước có thể quản lý được, quy trình sẽ trở nên rõ ràng hơn nhiều. Chúng tôi đã thực hiện quá trình tải tài liệu, duyệt qua các dấu trang, xác định các hàng có liên quan, kiểm tra tính liền kề và cuối cùng là di chuyển nút cuối của dấu trang. Với hướng dẫn này, bạn sẽ có thể xử lý dấu trang trong tài liệu Word của mình hiệu quả hơn.
 
 ## Câu hỏi thường gặp
 

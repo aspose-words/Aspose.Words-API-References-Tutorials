@@ -14,7 +14,7 @@ Trong thế giới kỹ thuật số ngày nay, khả năng chuyển đổi tài
 
 ## Bắt đầu với Aspose.Words cho Java
 
-Trước khi đi sâu vào chi tiết về chuyển đổi tài liệu, hãy bắt đầu với Aspose.Words cho Java.
+Trước khi đi sâu vào chi tiết chuyển đổi tài liệu, hãy bắt đầu với Aspose.Words cho Java.
 
 ## Bước 1: Cài đặt
 

@@ -2,46 +2,37 @@
 title: Thêm dấu Bidi vào tài liệu Word
 linktitle: Thêm dấu Bidi vào tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thêm dấu Bidi vào tài liệu Word bằng Aspose.Words cho .NET và tạo tài liệu đa ngôn ngữ chuyên nghiệp.
+description: Tìm hiểu cách thêm dấu hai chiều (Bidi) trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn này. Đảm bảo hướng văn bản phù hợp cho nội dung đa ngôn ngữ.
 type: docs
 weight: 10
 url: /vi/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
+## Giới thiệu
 
-Aspose.Words for .NET là một thư viện mạnh mẽ để tạo, chỉnh sửa và thao tác các tài liệu Word trong ứng dụng C#. Trong số các tính năng được Aspose.Words cung cấp là khả năng thêm dấu Bidi (Hai chiều) vào tài liệu. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách sử dụng mã nguồn C# của Aspose.Words cho .NET để thêm dấu Bidi vào tài liệu.
+Trong thế giới xử lý tài liệu, văn bản hai chiều (Bidi) thường có thể hơi khó quản lý. Điều này đặc biệt đúng khi xử lý các ngôn ngữ có hướng văn bản khác nhau, chẳng hạn như tiếng Ả Rập hoặc tiếng Do Thái. May mắn thay, Aspose.Words for .NET giúp bạn dễ dàng xử lý các tình huống như vậy. Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách thêm dấu Bidi vào tài liệu Word bằng Aspose.Words cho .NET.
 
-## Tìm hiểu thư viện Aspose.Words
+## Điều kiện tiên quyết
 
-Trước khi đi sâu vào mã, điều quan trọng là phải hiểu thư viện Aspose.Words cho .NET. Aspose.Words là một thư viện phổ biến giúp việc Xử lý văn bản bằng tài liệu Word trở nên dễ dàng và hiệu quả. Nó cung cấp nhiều tính năng để tạo, chỉnh sửa và thao tác với tài liệu Word, bao gồm cả việc thêm dấu Bidi.
+Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn có những điều sau:
 
-## Tạo tài liệu và thêm nội dung
+1.  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống từ[Trang tải xuống Aspose](https://releases.aspose.com/words/net/).
+2. .NET Framework hoặc .NET Core: Đảm bảo rằng bạn đã thiết lập môi trường .NET tương thích để chạy các ví dụ.
+3. Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# và các thao tác cơ bản trong .NET.
 
-Bước đầu tiên là tạo một tài liệu mới và thêm nội dung vào đó. Sử dụng lớp Tài liệu để tạo một phiên bản tài liệu mới. Sau đó sử dụng lớp DocumentBuilder để thêm văn bản vào tài liệu. Đây là một ví dụ :
+## Nhập không gian tên
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. Writen("Hello world!");
-builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
-```
-
-Trong ví dụ này, chúng tôi tạo một tài liệu mới và sử dụng DocumentBuilder để thêm văn bản. Chúng tôi đã thêm ba dòng văn bản: một bằng tiếng Anh, một bằng tiếng Do Thái và một bằng tiếng Ả Rập để minh họa việc thêm nội dung bằng các ngôn ngữ khác nhau.
-
-## Đã thêm dấu Bidi
-
-Sau khi đã thêm nội dung, bây giờ chúng ta có thể thêm dấu Bidi vào tài liệu. Để làm điều này, chúng tôi sử dụng lớp TxtSaveOptions và đặt thuộc tính AddBidiMarks thành true. Đây là cách thực hiện:
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết. Đây là cách bạn có thể đưa chúng vào dự án của mình:
 
 ```csharp
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Trong ví dụ này, chúng tôi tạo một phiên bản TxtSaveOptions và đặt thuộc tính AddBidiMarks thành true. Tiếp theo, chúng ta sử dụng phương thức Save của lớp Document để lưu tài liệu có dấu Bidi.
+Hãy chia nhỏ quy trình thêm dấu Bidi trong tài liệu Word thành các bước rõ ràng. Mỗi bước sẽ hướng dẫn bạn về mã và mục đích của nó.
 
-### Mã nguồn ví dụ cho chức năng "Thêm nhãn giá thầu" với Aspose.Words cho .NET
+## Bước 1: Thiết lập tài liệu của bạn
+
+ Bắt đầu bằng cách tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` để thêm nội dung vào tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -50,44 +41,52 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Tạo tài liệu và thêm nội dung
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-builder. Writen("Hello world!");
+ Ở bước này, bạn khởi tạo một tài liệu Word mới và thiết lập một`DocumentBuilder` để thuận tiện cho việc chèn nội dung.
+
+## Bước 2: Thêm nội dung vào tài liệu của bạn
+
+Tiếp theo, thêm một số văn bản vào tài liệu của bạn. Ở đây, chúng tôi sẽ thêm văn bản bằng các ngôn ngữ khác nhau để minh họa cách xử lý văn bản Bidi.
+
+```csharp
+builder.Writeln("Hello world!");
 builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
+builder.Writeln("שלום עולם!");
+builder.Writeln("مرحبا بالعالم!");
+```
 
+Ở đây, trước tiên chúng tôi thêm một cụm từ tiếng Anh chuẩn. Sau đó, chúng tôi kích hoạt định dạng văn bản Bidi cho văn bản tiếp theo, được viết bằng tiếng Do Thái và tiếng Ả Rập. Điều này thể hiện cách kết hợp văn bản hai chiều.
+
+## Bước 3: Định cấu hình tùy chọn lưu cho nhãn hiệu Bidi
+
+ Để đảm bảo rằng các dấu Bidi được lưu chính xác trong tài liệu, bạn cần định cấu hình`TxtSaveOptions` và kích hoạt`AddBidiMarks` lựa chọn.
+
+```csharp
 // Thêm dấu Bidi
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true
-
-  };
+TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
+ Trong bước này, chúng ta tạo một thể hiện của`TxtSaveOptions` và thiết lập`AddBidiMarks`tài sản để`true`. Điều này đảm bảo rằng các dấu Bidi được bao gồm khi lưu tài liệu dưới dạng tệp văn bản.
+
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách sử dụng Aspose.Words cho .NET để thêm dấu Bidi vào tài liệu Word bằng mã nguồn C# được cung cấp. Bằng cách làm theo các bước được cung cấp, bạn có thể dễ dàng thêm dấu Bidi vào tài liệu Word trong ứng dụng C# của mình. Aspose.Words cung cấp tính linh hoạt và sức mạnh to lớn cho Xử lý văn bản với định dạng văn bản và quản lý ngôn ngữ, cho phép bạn tạo tài liệu đa ngôn ngữ một cách chuyên nghiệp.
+Thêm dấu Bidi vào tài liệu Word của bạn có thể là một bước quan trọng khi xử lý nội dung đa ngôn ngữ bao gồm các ngôn ngữ có hướng văn bản khác nhau. Với Aspose.Words for .NET, quá trình này rất đơn giản và hiệu quả. Bằng cách làm theo các bước được nêu ở trên, bạn có thể đảm bảo rằng tài liệu của mình thể hiện chính xác văn bản Bidi, nâng cao khả năng đọc và độ chính xác.
 
-### Các câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Aspose.Words dành cho .NET là gì?
-Aspose.Words for .NET là một thư viện mạnh mẽ để tạo, chỉnh sửa và thao tác các tài liệu Word trong ứng dụng C#. Nó cung cấp nhiều tính năng để Xử lý văn bản với tài liệu Word, bao gồm thêm dấu Bidi (hai chiều).
+### Nhãn hiệu Bidi là gì và tại sao chúng quan trọng?
+Dấu Bidi là các ký tự đặc biệt dùng để điều khiển hướng văn bản trong tài liệu. Chúng rất cần thiết để hiển thị chính xác các ngôn ngữ đọc từ phải sang trái, như tiếng Ả Rập và tiếng Do Thái.
 
-#### Câu hỏi: Aspose.Words for .NET cung cấp những tính năng gì?
-Aspose.Words for .NET cung cấp nhiều tính năng để tạo, chỉnh sửa và thao tác với tài liệu Word. Một số tính năng này bao gồm tạo tài liệu, thêm nội dung, định dạng văn bản, quản lý bảng, hợp nhất và chia tách tài liệu, chuyển đổi tài liệu, v.v.
+### Tôi có thể sử dụng Aspose.Words cho .NET để xử lý các loại vấn đề về hướng văn bản khác không?
+Có, Aspose.Words for .NET cung cấp hỗ trợ toàn diện cho các nhu cầu định dạng và định hướng văn bản khác nhau, bao gồm các ngôn ngữ từ phải sang trái và từ trái sang phải.
 
-#### Câu hỏi: Làm cách nào tôi có thể thêm dấu Bidi vào tài liệu Word bằng Aspose.Words cho .NET?
-Bạn có thể thêm dấu Bidi vào tài liệu Word bằng cách làm theo các bước sau:
+### Có thể chỉ áp dụng định dạng Bidi cho các phần cụ thể của tài liệu không?
+Có, bạn có thể áp dụng định dạng Bidi cho các đoạn hoặc phần cụ thể trong tài liệu của mình nếu cần.
 
- Tạo một tài liệu mới bằng cách sử dụng`Document` lớp học.
+### Tôi có thể lưu tài liệu bằng nhãn Bidi ở định dạng nào?
+Trong ví dụ được cung cấp, tài liệu được lưu dưới dạng tệp văn bản. Tuy nhiên, Aspose.Words cũng hỗ trợ lưu tài liệu ở nhiều định dạng khác nhau mà vẫn giữ được dấu Bidi.
 
- Sử dụng`DocumentBuilder` class để thêm nội dung vào tài liệu.
-
- Khi bạn đã thêm nội dung, hãy sử dụng`TxtSaveOptions` lớp và thiết lập`AddBidiMarks`tài sản để`true`.
-
- Lưu tài liệu có dấu Bidi bằng cách sử dụng`Save` phương pháp của`Document` lớp học.
-
-#### Câu hỏi: Aspose.Words có hỗ trợ nhiều ngôn ngữ để thêm nhãn Bidi không?
-Có, Aspose.Words hỗ trợ nhiều ngôn ngữ để thêm nhãn Bidi. Bạn có thể thêm dấu Bidi vào văn bản bằng các ngôn ngữ khác nhau, chẳng hạn như tiếng Anh, tiếng Do Thái và tiếng Ả Rập, bằng cách sử dụng Aspose.Words cho .NET.
-
-#### Hỏi: Có tùy chọn bổ sung nào để lưu tài liệu bằng nhãn Bidi không?
- Có, bạn có thể chỉ định các tùy chọn khác khi lưu tài liệu có dấu Bidi bằng cách sử dụng`TxtSaveOptions` lớp học. Ví dụ: bạn có thể đặt định dạng lưu tài liệu, tùy chọn mã hóa, v.v.
+### Tôi có thể tìm thêm thông tin về Aspose.Words cho .NET ở đâu?
+ Bạn có thể khám phá thêm về Aspose.Words for .NET thông qua[Cung cấp tài liệu](https://reference.aspose.com/words/net/) và truy cập[Diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được trợ giúp thêm.

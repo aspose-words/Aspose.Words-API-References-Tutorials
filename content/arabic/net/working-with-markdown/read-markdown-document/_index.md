@@ -12,7 +12,7 @@ url: /ar/net/working-with-markdown/read-markdown-document/
 
 ## الخطوة 1: قراءة مستند Markdown
 
- أولاً، سوف نستخدم`Document` فئة لقراءة وثيقة تخفيض السعر. نحن بحاجة إلى تحديد مسار ملف Markdown للقراءة.
+ أولا، سوف نستخدم`Document` فئة لقراءة وثيقة تخفيض السعر. نحن بحاجة إلى تحديد مسار ملف Markdown للقراءة.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

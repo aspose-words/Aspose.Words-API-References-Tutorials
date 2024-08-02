@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 Document doc = new Document("path/to/the/document.docx");
 ```
 
-#### ถาม: จะซ่อนความคิดเห็นใน PDF ที่สร้างด้วย Aspose.Words สำหรับ .NET ได้อย่างไร
+#### ถาม: จะซ่อนความคิดเห็นในรูปแบบ PDF ที่สร้างด้วย Aspose.Words สำหรับ .NET ได้อย่างไร
 
  ตอบ: ใช้`CommentDisplayMode` ทรัพย์สินของ`LayoutOptions` วัตถุเพื่อกำหนดค่าวิธีการแสดงความคิดเห็นเมื่อสร้าง PDF หากต้องการซ่อนความคิดเห็น ให้ตั้งค่าคุณสมบัตินี้เป็น`CommentDisplayMode.Hide`.
 

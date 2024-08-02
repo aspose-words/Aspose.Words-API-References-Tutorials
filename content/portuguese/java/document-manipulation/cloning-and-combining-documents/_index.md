@@ -64,7 +64,7 @@ mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Yo
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
- Neste exemplo, definimos um retorno de chamada de mesclagem de campo usando o`InsertDocumentAtMailMergeHandler` classe para tratar a inserção do documento especificado pelo campo "Document_1".
+ Neste exemplo, definimos um retorno de chamada de mesclagem de campo usando o`InsertDocumentAtMailMergeHandler` classe para tratar a inserção do documento especificado pelo campo "Documento_1".
 
 ## Conclusão
 

@@ -9,7 +9,7 @@ url: /pl/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
 ## Wstęp
 
-Wyobraź sobie, że pracujesz z dokumentem programu Word zawierającym różne przekształcone elementy, takie jak obrócony tekst lub obrazy. Konwertując ten dokument do formatu PCL (Printer Command Language), warto upewnić się, że przekształcone elementy są poprawnie rasteryzowane. W tym samouczku przyjrzymy się, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET.
+Wyobraź sobie, że pracujesz z dokumentem programu Word zawierającym różne przekształcone elementy, takie jak obrócony tekst lub obrazy. Konwertując ten dokument do formatu PCL (Printer Command Language), warto upewnić się, że przekształcone elementy są poprawnie rastrowane. W tym samouczku przyjrzymy się, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET.
 
 ## Warunki wstępne
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl",
 
 ## Wniosek
 
-Konwertowanie dokumentów Worda z przekształconymi elementami do formatu PCL może być nieco trudne, ale dzięki Aspose.Words dla .NET staje się to prostym procesem. Wykonując kroki opisane w tym samouczku, możesz łatwo kontrolować, czy rasteryzować te elementy podczas konwersji.
+Konwersja dokumentów Worda z przekształconymi elementami do formatu PCL może być nieco trudna, ale dzięki Aspose.Words dla .NET staje się to prostym procesem. Wykonując kroki opisane w tym samouczku, możesz łatwo kontrolować, czy rasteryzować te elementy podczas konwersji.
 
 ## Często zadawane pytania
 

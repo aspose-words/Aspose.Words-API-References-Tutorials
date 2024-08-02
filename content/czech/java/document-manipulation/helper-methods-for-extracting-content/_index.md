@@ -57,7 +57,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     Node originalStartNode = startNode;
     Node originalEndNode = endNode;
 
-    //Extrahujte obsah na základě uzlů na úrovni bloku (odstavců a tabulek). Procházejte nadřazené uzly a najděte je.
+    //Extrahujte obsah na základě uzlů na úrovni bloku (odstavců a tabulek). Procházejte nadřazené uzly, abyste je našli.
     // Rozdělíme obsah prvního a posledního uzlu v závislosti na tom, zda jsou uzly značek v řadě.
     startNode = getAncestorInBody(startNode);
     endNode = getAncestorInBody(endNode);
@@ -71,7 +71,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     // Tato metoda je o něco složitější než běžný extraktor, jak musíme zohlednit
     // při extrakci pomocí vložených uzlů, polí, záložek atd., aby to bylo užitečné.
     while (isExtracting) {
-        // Naklonujte aktuální uzel a jeho potomky, abyste získali kopii.
+        // Klonujte aktuální uzel a jeho potomky, abyste získali kopii.
         Node cloneNode = currNode.deepClone(true);
         boolean isEndingNode = currNode.equals(endNode);
         if (isStartingNode || isEndingNode) {

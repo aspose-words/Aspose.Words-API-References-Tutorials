@@ -2,51 +2,82 @@
 title: Áp dụng đường viền phác thảo
 linktitle: Áp dụng đường viền phác thảo
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để áp dụng đường viền phác thảo cho bảng bằng Aspose.Words for .NET.
+description: Tìm hiểu cách áp dụng đường viền phác thảo cho bảng trong Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để định dạng bảng hoàn hảo.
 type: docs
 weight: 10
 url: /vi/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để áp dụng đường viền phác thảo cho bảng bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Đến cuối hướng dẫn này, bạn sẽ hiểu rõ về cách thao tác viền bảng trong tài liệu Word bằng Aspose.Words cho .NET.
+Trong hướng dẫn hôm nay, chúng ta sẽ đi sâu vào thế giới thao tác tài liệu bằng Aspose.Words cho .NET. Cụ thể, chúng ta sẽ tìm hiểu cách áp dụng đường viền phác thảo cho bảng trong tài liệu Word. Đây là một kỹ năng tuyệt vời cần có trong bộ công cụ của bạn nếu bạn thường xuyên làm việc với việc tạo và định dạng tài liệu tự động. Vì vậy, hãy bắt đầu hành trình làm cho bảng của bạn không chỉ hoạt động hiệu quả mà còn hấp dẫn về mặt hình ảnh.
 
-## Bước 1: Xác định thư mục tài liệu
-Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là nơi tài liệu Word của bạn được lưu trữ. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.
+## Điều kiện tiên quyết
+
+Trước khi chúng ta chuyển sang mã, có một số thứ bạn cần:
+
+1.  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Môi trường phát triển phù hợp như Visual Studio.
+3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp bạn làm theo hướng dẫn.
+
+## Nhập không gian tên
+
+Để bắt đầu, hãy đảm bảo bạn đã nhập các không gian tên cần thiết. Điều này rất quan trọng để truy cập các chức năng của Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Tải tài liệu lên
- Tiếp theo, bạn cần tải tài liệu Word vào một phiên bản của`Document` lớp học.
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ quản lý.
+
+## Bước 1: Tải tài liệu
+
+Đầu tiên chúng ta cần tải tài liệu Word chứa bảng mà chúng ta muốn định dạng.
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Bước 3: Truy cập vào bảng
- Để áp dụng đường viền phác thảo, chúng ta cần truy cập vào bảng trong tài liệu. Các`Table` lớp đại diện cho một bảng trong Aspose.Words.
+ Ở bước này, chúng tôi đang sử dụng`Document` lớp từ Aspose.Words để tải tài liệu hiện có. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
+
+## Bước 2: Truy cập bảng
+
+Tiếp theo, chúng ta cần truy cập vào bảng cụ thể mà chúng ta muốn định dạng. 
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Bước 4: Căn chỉnh bảng vào giữa trang
- Bây giờ chúng ta có thể căn chỉnh bảng vào giữa trang bằng cách sử dụng`Alignment` thuộc tính của bảng.
+ Đây,`GetChild` phương thức tìm nạp bảng đầu tiên trong tài liệu. Những thông số`NodeType.Table, 0, true` đảm bảo chúng tôi có được loại nút chính xác.
+
+## Bước 3: Căn chỉnh bảng
+
+Bây giờ, hãy căn giữa bảng trên trang.
 
 ```csharp
-table. Alignment = Table Alignment. Center;
+table.Alignment = TableAlignment.Center;
 ```
 
-## Bước 5: Xóa viền bảng hiện có
-Để bắt đầu với đường viền phác thảo mới, trước tiên chúng ta cần xóa tất cả các đường viền hiện có khỏi bảng. Điều này có thể được thực hiện bằng cách sử dụng`ClearBorders()` phương pháp.
+Bước này đảm bảo bàn được căn giữa gọn gàng, mang lại vẻ chuyên nghiệp.
+
+## Bước 4: Xóa đường viền hiện có
+
+Trước khi áp dụng các đường viền mới, chúng ta cần xóa mọi đường viền hiện có.
 
 ```csharp
-table. ClearBorders();
+table.ClearBorders();
 ```
 
-## Bước 6: Xác định đường viền xanh xung quanh bảng
- Bây giờ chúng ta có thể thiết lập đường viền màu xanh xung quanh bảng bằng cách sử dụng`SetBorder()` phương pháp cho mỗi cạnh của bảng. Trong ví dụ này, chúng tôi đang sử dụng đường viền loại "Đơn" có độ dày 1,5 điểm và có màu xanh lục.
+Việc xóa các đường viền đảm bảo rằng các đường viền mới của chúng ta được áp dụng rõ ràng mà không có bất kỳ kiểu cũ nào can thiệp.
+
+## Bước 5: Đặt đường viền phác thảo
+
+Bây giờ, hãy áp dụng các đường viền viền màu xanh lá cây cho bảng.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -55,45 +86,47 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Bước 7: Tô màu nền cho các ô
-Để cải thiện cách trình bày trực quan của bảng, chúng ta có thể tô màu nền cho các ô
+ Mỗi loại đường viền (trái, phải, trên, dưới) được đặt riêng. Chúng tôi sử dụng`LineStyle.Single` đối với một đường liền nét,`1.5` cho độ rộng của đường và`Color.Green` cho màu đường viền.
 
-ý tưởng. Trong ví dụ này, chúng tôi đang sử dụng màu xanh nhạt.
+## Bước 6: Áp dụng tô bóng ô
+
+Để làm cho bảng trông hấp dẫn hơn, hãy tô màu xanh nhạt vào các ô.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
-## Bước 8: Lưu tài liệu đã sửa đổi
-Cuối cùng, chúng tôi lưu tài liệu đã sửa đổi vào một tệp. Bạn có thể chọn tên và vị trí thích hợp cho tài liệu đầu ra.
+ Đây,`SetShading` được sử dụng để áp dụng màu xanh lục nhạt đồng nhất cho các ô, làm cho bảng nổi bật.
+
+## Bước 7: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu đã sửa đổi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-Xin chúc mừng! Bây giờ bạn đã áp dụng đường viền phác thảo cho bảng bằng Aspose.Words cho .NET.
-
-### Mã nguồn mẫu cho Áp dụng đường viền phác thảo bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Căn chỉnh bảng vào giữa trang.
-	table.Alignment = TableAlignment.Center;
-	//Xóa mọi đường viền hiện có khỏi bảng.
-	table.ClearBorders();
-	// Đặt đường viền màu xanh lá cây xung quanh bàn nhưng không viền bên trong.
-	table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// Tô màu các ô bằng màu xanh nhạt.
-	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
-```
+Bước này lưu tài liệu của bạn với định dạng được áp dụng. Bạn có thể mở nó để xem bảng được định dạng đẹp mắt.
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách áp dụng đường viền phác thảo cho bảng bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này, bạn có thể dễ dàng tích hợp chức năng này vào các dự án C# của mình. Thao tác định dạng bảng là một khía cạnh thiết yếu của quá trình xử lý tài liệu và Aspose.Words cung cấp API mạnh mẽ và linh hoạt để đạt được điều này. Với kiến thức này, bạn có thể cải thiện cách trình bày trực quan các tài liệu Word của mình và đáp ứng các yêu cầu cụ thể.
+
+Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã áp dụng thành công đường viền phác thảo cho bảng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này đề cập đến việc tải tài liệu, truy cập vào bảng, căn chỉnh nó, xóa các đường viền hiện có, áp dụng các đường viền mới, thêm bóng mờ cho ô và cuối cùng là lưu tài liệu. 
+
+Với những kỹ năng này, bạn có thể nâng cao cách trình bày trực quan các bảng của mình, làm cho tài liệu của bạn trở nên chuyên nghiệp và hấp dẫn hơn. Chúc mừng mã hóa!
+
+## Câu hỏi thường gặp
+
+### Tôi có thể áp dụng các kiểu khác nhau cho mỗi đường viền của bảng không?  
+ Có, bạn có thể áp dụng các kiểu và màu sắc khác nhau cho từng đường viền bằng cách điều chỉnh các tham số trong`SetBorder` phương pháp.
+
+### Làm cách nào để thay đổi độ rộng của đường viền?  
+ Bạn có thể thay đổi độ rộng bằng cách sửa đổi tham số thứ ba trong`SetBorder` phương pháp. Ví dụ,`1.5` đặt chiều rộng là 1,5 điểm.
+
+### Có thể áp dụng bóng cho từng ô riêng lẻ không?  
+ Có, bạn có thể áp dụng bóng cho từng ô riêng lẻ bằng cách truy cập từng ô và sử dụng`SetShading` phương pháp.
+
+### Tôi có thể sử dụng các màu khác cho đường viền và bóng không?  
+ Tuyệt đối! Bạn có thể sử dụng bất kỳ màu nào có sẵn trong`System.Drawing.Color` lớp học.
+
+### Làm cách nào để căn giữa bảng theo chiều ngang?  
+ Các`table.Alignment = TableAlignment.Center;` dòng trong mã sẽ căn giữa bảng theo chiều ngang trên trang.

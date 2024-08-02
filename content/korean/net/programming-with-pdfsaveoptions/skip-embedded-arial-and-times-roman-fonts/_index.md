@@ -11,7 +11,7 @@ url: /ko/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman
 
 PDF 파일 크기가 너무 큰 상황에 처한 적이 있습니까? 그것은 휴가를 위해 짐을 꾸렸는데 여행가방이 터지는 것을 깨닫는 것과 같습니다. 살을 좀 빼야 한다는 걸 알지만, 무엇을 버릴 수 있나요? PDF 파일, 특히 Word 문서에서 변환된 파일로 작업할 때 포함된 글꼴로 인해 파일 크기가 커질 수 있습니다. 고맙게도 Aspose.Words for .NET은 PDF를 간결하고 의미있게 유지하는 세련된 솔루션을 제공합니다. 이 튜토리얼에서는 내장된 Arial 및 Times Roman 글꼴을 건너뛰어 PDF 크기를 최적화하는 방법을 살펴보겠습니다. 시작하자!
 
-## 전제조건
+## 전제 조건
 
 핵심적인 내용으로 넘어가기 전에 필요한 몇 가지 사항이 있습니다.
 -  .NET용 Aspose.Words: 이 강력한 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않은 경우 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).

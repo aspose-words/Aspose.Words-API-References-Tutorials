@@ -9,7 +9,7 @@ url: /fr/net/document-protection/get-protection-type/
 ---
 ## Introduction
 
-Salut! Vous êtes-vous déjà demandé comment vérifier le type de protection de vos documents Word par programmation ? Que vous protégiez des données sensibles ou que vous soyez simplement curieux de connaître l'état du document, savoir comment obtenir le type de protection peut s'avérer très pratique. Aujourd'hui, nous allons parcourir le processus à l'aide d'Aspose.Words pour .NET, une bibliothèque puissante qui facilite grandement l'utilisation de documents Word. Attachez votre ceinture et plongeons-nous !
+Salut! Vous êtes-vous déjà demandé comment vérifier le type de protection de vos documents Word par programmation ? Que vous protégiez des données sensibles ou que vous soyez simplement curieux de connaître l'état du document, savoir comment obtenir le type de protection peut s'avérer très utile. Aujourd'hui, nous allons parcourir le processus à l'aide d'Aspose.Words pour .NET, une bibliothèque puissante qui facilite grandement l'utilisation de documents Word. Attachez votre ceinture et plongeons-nous !
 
 ## Conditions préalables
 

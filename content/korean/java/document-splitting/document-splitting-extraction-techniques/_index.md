@@ -14,7 +14,7 @@ url: /ko/java/document-splitting/document-splitting-extraction-techniques/
 
 Aspose.Words for Java는 Microsoft Word 문서를 효율적으로 사용할 수 있게 해주는 Java 기반 API입니다. 이 가이드에서는 문서를 더 작은 부분으로 분할하고 문서에서 특정 콘텐츠를 추출하는 두 가지 기본 작업에 중점을 둘 것입니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

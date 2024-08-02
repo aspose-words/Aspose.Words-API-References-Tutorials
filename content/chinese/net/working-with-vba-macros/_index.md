@@ -16,8 +16,8 @@ url: /zh/net/working-with-vba-macros/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [创建 Vba 项目](./create-vba-project/) | 在本教程中，学习如何使用 Aspose.Words for .NET 在 Word 文档中创建 VBA 项目。 |
-| [读取 Vba 宏](./read-vba-macros/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档读取 VBA 宏。 |
-| [修改 Vba 宏](./modify-vba-macros/) | 在本教程中，学习如何使用 Aspose.Words for .NET 编辑 Word 文档的 VBA 宏。 |
-| [克隆 Vba 项目](./clone-vba-project/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档克隆 VBA 项目。|
-| [克隆 Vba 模块](./clone-vba-module/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档克隆 VBA 模块。 |
+| [创建 Vba 项目](./create-vba-project/) | 学习使用 Aspose.Words for .NET 在 Word 文档中创建 VBA 项目。按照我们的分步指南实现无缝文档自动化！ |
+| [读取 Vba 宏](./read-vba-macros/) | 了解如何使用 Aspose.Words for .NET 从 Word 文档读取 VBA 宏。按照我们的详细指南实现无缝文档自动化！ |
+| [修改 Vba 宏](./modify-vba-macros/) | 了解如何使用 Aspose.Words for .NET 修改 Word 文档中的 VBA 宏。按照我们详细的分步指南实现无缝文档自动化！ |
+| [克隆 Vba 项目](./clone-vba-project/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中克隆 VBA 项目。按照我们的分步指南进行无缝文档操作！|
+| [克隆 Vba 模块](./clone-vba-module/) | 使用 Aspose.Words for .NET 轻松克隆 Word 文档中的 VBA 模块。按照我们的分步指南进行无缝文档操作！ |

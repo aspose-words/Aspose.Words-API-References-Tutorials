@@ -2,118 +2,106 @@
 title: リストのインデントにはレベルごとにスペース文字を使用する
 linktitle: リストのインデントにはレベルごとにスペース文字を使用する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET でリストのインデントにレベルごとにスペース文字を使用する手順ガイド。構造化された Word 文書を簡単に作成します。
+description: Aspose.Words for .NET でスペース文字のインデントを使用して複数レベルのリストを作成する方法を学びます。正確なドキュメントの書式設定のためのステップバイステップ ガイド。
 type: docs
 weight: 10
 url: /ja/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET は、C# アプリケーションで Word 文書を作成、編集、および操作するための強力なライブラリです。Aspose.Words が提供する機能の 1 つに、リストのインデントにレベルごとに 1 つのスペース文字を使用できる機能があります。このガイドでは、Aspose.Words for .NET の C# ソース コードを使用してこの機能を実装する方法を説明します。
+## 導入
 
-## Aspose.Words ライブラリを理解する
+ドキュメントの書式設定、特にリストを扱う場合、精度が重要です。さまざまなレベルのインデントを持つドキュメントを作成する必要がある場合、Aspose.Words for .NET にはこのタスクを処理するための強力なツールが用意されています。特に便利なのは、テキスト ファイルでリストのインデントを構成する機能です。このガイドでは、リストのインデントにスペース文字を使用する方法を説明し、ドキュメントが目的の構造と読みやすさを維持するようにします。
 
-コードに進む前に、.NET 用の Aspose.Words ライブラリを理解することが重要です。Aspose.Words は、Word ドキュメントでの Words 処理を簡単かつ効率的にする人気のライブラリです。リストやインデントの管理など、Word ドキュメントを作成、変更、操作するための幅広い機能を提供します。
+## 前提条件
 
-## ドキュメントの作成とコンテンツの追加
+チュートリアルを始める前に、次のものを用意してください。
 
-最初のステップは、新しいドキュメントを作成し、それにコンテンツを追加することです。Document クラスを使用して、新しいドキュメント インスタンスを作成します。次に、DocumentBuilder クラスを使用してテキストを追加し、複数レベルのインデントを持つリストを作成します。次に例を示します。
+-  Aspose.Words for .NET: Aspose.Wordsライブラリがインストールされていることを確認してください。まだインストールされていない場合は、[Aspose ウェブサイト](https://releases.aspose.com/words/net/).
+- Visual Studio: コードを記述してテストするための開発環境。
+- C# の基本的な理解: C# と .NET フレームワークに精通していると、スムーズに理解できるようになります。
+
+## 名前空間のインポート
+
+Aspose.Words の使用を開始するには、必要な名前空間をインポートする必要があります。プロジェクトに名前空間を含める方法は次のとおりです。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+複数レベルのリストを含むドキュメントを作成し、インデント用のスペース文字を指定するプロセスを分解してみましょう。 
+
+## ステップ1: ドキュメントを設定する
+
+まず、新しいドキュメントを作成し、`DocumentBuilder`オブジェクト。このオブジェクトを使用すると、コンテンツを簡単に追加し、必要に応じてフォーマットすることができます。
+
+```csharp
+//ドキュメントディレクトリへのパス
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+//ドキュメントを作成し、コンテンツを追加する
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+このスニペットでは、`"YOUR DOCUMENTS DIRECTORY"`ドキュメントを保存する実際のパスを入力します。
+
+## ステップ2: 複数レベルのインデントを持つリストを作成する
+
+とともに`DocumentBuilder`たとえば、異なるレベルのインデントを持つリストを作成できるようになりました。`ListFormat`必要に応じてリスト項目に番号付けとインデントを適用するプロパティ。
+
+```csharp
 // 3段階のインデントを持つリストを作成する
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-この例では、新しいドキュメントを作成し、DocumentBuilder を使用してテキストを追加し、3 レベルのインデントを持つリストを作成します。リストに 3 つの項目を追加し、各項目に 1 レベルずつインデントを設定しました。
+このステップでは、`ApplyNumberDefault`リストのフォーマットを設定し、`ListIndent`後続のリスト項目ごとにインデント レベルを増やすために使用されます。
 
-## リストのインデントにレベルごとに1つのスペース文字を使用する
+## ステップ3: インデント用のスペース文字を設定する
 
-コンテンツを追加したら、レベルごとに 1 つのスペース文字を使用してリストのインデントを構成できます。これを行うには、TxtSaveOptions クラスを使用し、ListIndentation.Count プロパティをインデント レベルの数に設定し、ListIndentation.Character プロパティを使用するスペース文字に設定します。方法は次のとおりです。
+リストの設定が完了したら、次のステップは、文書をテキストファイルに保存するときにリストのインデントをどのように処理するかを設定することです。`TxtSaveOptions`インデントにスペース文字を使用することを指定します。
 
 ```csharp
+//リストのインデントにはレベルごとに1つのスペース文字を使用します
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+ここ、`ListIndentation.Count`インデントレベルごとのスペース文字数を指定します。`ListIndentation.Character`インデントに使用される実際の文字を設定します。
+
+## ステップ4: 指定したオプションでドキュメントを保存する
+
+最後に、設定したオプションを使用してドキュメントを保存します。これにより、インデント設定が適用され、ファイルが希望の形式で保存されます。
+
+```csharp
+//指定されたオプションでドキュメントを保存します
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-この例では、TxtSaveOptions のインスタンスを作成し、ListIndentation.Count プロパティを 3 に設定して、リストに 3 つのインデント レベルがあることを示します。また、ListIndentation.Character プロパティを、インデントに使用するスペース文字 (' ') に設定します。
-
-### Aspose.Words for .NET の「リストのインデントにレベルごとに 1 つのスペース文字を使用する」機能のサンプル ソース コード
-
-以下は、Aspose.Words for .NET の「リストのインデントにはレベルごとに 1 つのスペース文字を使用する」機能の完全なサンプル ソース コードです。
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             //ドキュメントディレクトリへのパス
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             //ドキュメントを作成し、コンテンツを追加する
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             // 3段階のインデントを持つリストを作成する
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             //リストのインデントにはレベルごとに1つのスペース文字を使用します
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             //指定されたオプションでドキュメントを保存します
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+このコードスニペットは、ドキュメントを指定されたパスに保存します。`dataDir`ファイル名`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`保存されたファイルには、インデント設定に従ってフォーマットされたリストが含まれます。
 
 ## 結論
 
-このガイドでは、Aspose.Words for .NET を使用して「リストのインデントにレベルごとに 1 つのスペース文字を使用する」機能を適用する方法について説明しました。提供されている手順に従い、提供されている C# ソース コードを使用すると、レベルごとに 1 つのスペース文字を使用して、Word 文書内のリストのインデントを簡単に構成できます。Aspose.Words は、テキストの書式設定とリスト管理によって Words 処理に非常に柔軟で強力な機能を提供し、C# アプリケーションで適切に構造化された文書を作成できます。
+これらの手順に従うことで、スペース文字を使用して書式設定し、複数レベルのリスト インデントを持つドキュメントを正常に作成できました。この方法により、テキスト ファイルとして保存した場合でも、リストが適切に構造化され、読みやすくなります。Aspose.Words for .NET はドキュメント操作用の強力なツールを提供し、これらの機能を習得すると、ドキュメント処理ワークフローを大幅に強化できます。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、C# アプリケーションで Word 文書を作成、編集、操作するための強力なライブラリです。リストのインデントにレベルごとに 1 つのスペースを使用する機能など、Word 文書での Words Processing のための多くの機能を提供します。
+### リストのインデントにスペース以外の文字を使用できますか?
+はい、リストのインデントに異なる文字を指定するには、`Character`不動産の`TxtSaveOptions`.
 
-#### Q: Aspose.Words for .NET でリストのインデントにレベルごとに 1 つのスペースを使用するにはどうすればよいでしょうか?
-次の手順に従って、リストのインデントにレベルごとに 1 つのスペースを使用できます。
+### リストに数字の代わりに箇条書きを適用するにはどうすればよいですか?
+使用`ListFormat.ApplyBulletDefault()`の代わりに`ApplyNumberDefault()`箇条書きリストを作成します。
 
-新しい文書を作成するには、`Document`クラス。
+### インデントのスペース数を動的に調整できますか?
+はい、調整できます`ListIndentation.Count`要件に応じてスペースの数を設定するプロパティ。
 
-使用`DocumentBuilder`クラスを使用してドキュメントにコンテンツを追加し、複数レベルのインデントを持つリストを作成します。
+### ドキュメントを作成した後にリストのインデントを変更することは可能ですか?
+はい、ドキュメントを保存する前であれば、いつでもリストの書式設定とインデント設定を変更できます。
 
-コンテンツを追加し、リストのインデントを設定したら、`TxtSaveOptions`クラスを設定し、`ListIndentation.Count`インデントレベルの数と`ListIndentation.Character`空間上のプロパティ（`' '`）を使用します。
-
-指定されたオプションを使用して文書を保存します。`Save`方法の`Document`クラス。
-
-#### Q: Aspose.Words はリストのインデントに他の文字をサポートしていますか?
-はい、Aspose.Words はリストのインデントに他の文字をサポートしています。タブ (`'\t'` ）やその他の特殊文字を設定するには、`ListIndentation.Character`プロパティを目的の文字に変更します。
-
-#### Q: リストのインデントのレベルごとのスペース数をカスタマイズすることは可能ですか?
-はい、リストのインデントレベルごとのスペース数をカスタマイズするには、`ListIndentation.Count`の財産`TxtSaveOptions`クラス。インデントのレベルごとに必要なスペースの数を指定できます。
-
-#### Q: Aspose.Words にはリスト管理のための他のどのような機能がありますか?
-Aspose.Words には、Word 文書内のリストを管理するための多くの機能が用意されています。番号付きリストや箇条書きリストを作成したり、インデント レベルを設定したり、リストのスタイルをカスタマイズしたり、リスト項目を追加したりできます。
+### リストのインデント設定をサポートする他のドキュメント形式は何ですか?
+Aspose.Words を使用すると、テキスト ファイル以外にも、DOCX、PDF、HTML などの他の形式にリストのインデント設定を適用できます。

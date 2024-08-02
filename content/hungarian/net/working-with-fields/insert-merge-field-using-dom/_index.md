@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/working-with-fields/insert-merge-field-using-dom/
 ---
+## Bevezetés
 
 Ha dokumentumfeldolgozással dolgozik .NET-ben, valószínűleg találkozott már az Aspose.Words-szel. Ez a hatékony könyvtár a funkciók széles skáláját kínálja a Word-dokumentumok programozott kezeléséhez. Ebben az oktatóanyagban egy konkrét funkcióra összpontosítunk: egy összevonási mező beszúrására az Aspose.Words for .NET dokumentumobjektum-modellje (DOM) használatával. Ez az útmutató végigvezeti Önt minden lépésen, a környezet beállításától a Word-dokumentumban lévő egyesítő mezők beszúrásáig és frissítéséig.
 
@@ -14,26 +15,26 @@ Ha dokumentumfeldolgozással dolgozik .NET-ben, valószínűleg találkozott má
 
 Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel rendelkezünk, ami ehhez az oktatóanyaghoz szükséges.
 
-1. **Basic Knowledge of C#:** Kényelmesnek kell lennie a C# programozással.
-2. **Visual Studio Installed:** Győződjön meg arról, hogy a Visual Studio vagy bármely más C# IDE telepítve van a gépen.
-3. **Aspose.Words for .NET:** Töltse le és telepítse az Aspose.Words for .NET legújabb verzióját a[Kiadások](https://releases.aspose.com/words/net/).
-4. **Valid License:** Ha nincs jogosítványod, szerezhetsz a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
+1. C# alapismeretek: Kényelmesnek kell lennie a C# programozásban.
+2. Visual Studio telepítve: Győződjön meg arról, hogy a Visual Studio vagy bármely más C# IDE telepítve van a gépen.
+3.  Aspose.Words for .NET: Töltse le és telepítse az Aspose.Words for .NET legújabb verzióját a webhelyről[Kiadások](https://releases.aspose.com/words/net/).
+4.  Érvényes jogosítvány: Ha nincs jogosítványa, megszerezheti a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
 
 ## 1. lépés: Állítsa be a projektet
 
 Először is állítsunk be egy új projektet a Visual Studióban.
 
-1. **Open Visual Studio.**
-2. **Create a New Project:** Lépjen a Fájl > Új > Projekt menüpontra. Válasszon ki egy C# konzolalkalmazást.
-3. **Name Your Project:** Adjon értelmes nevet a projektnek, majd kattintson a Létrehozás gombra.
+1. Nyissa meg a Visual Studio-t.
+2. Új projekt létrehozása: Válassza a Fájl > Új > Projekt menüpontot. Válasszon egy C# konzolalkalmazást.
+3. Nevezze el projektjét: Adjon értelmes nevet a projektnek, majd kattintson a Létrehozás gombra.
 
 ## 2. lépés: Telepítse az Aspose.Words programot
 
 Az Aspose.Words használatához hozzá kell adnia a projekthez. Ezt a NuGet Package Manager segítségével teheti meg.
 
-1. **Open NuGet Package Manager:** Kattintson a jobb gombbal a projektre a Solution Explorerben, majd válassza a Manage NuGet Packages lehetőséget.
-2. **Search for Aspose.Words:** A NuGet Package Managerben keressen rá az „Aspose.Words” kifejezésre.
-3. **Install the Package:** Kattintson a Telepítés gombra az Aspose.Words projekthez való hozzáadásához.
+1. Nyissa meg a NuGet Package Managert: Kattintson jobb gombbal a projektre a Solution Explorerben, majd válassza a Manage NuGet Packages lehetőséget.
+2. Aspose.Words keresése: A NuGet Package Managerben keresse meg az „Aspose.Words” kifejezést.
+3. Telepítse a csomagot: Kattintson a Telepítés gombra az Aspose.Words projekthez való hozzáadásához.
 
 ## 3. lépés: Névterek importálása
 
@@ -106,17 +107,17 @@ Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével egysze
 
 ## GYIK
 
-### 1. Mi az egyesítési mező?
+###  Mi az egyesítési mező?
 Az egyesítési mező egy olyan helyőrző a dokumentumban, amely dinamikusan lecserélhető adatforrásból, például adatbázisból vagy CSV-fájlból származó adatokkal.
 
-### 2. Használhatom ingyenesen az Aspose.Words-t?
+###  Használhatom ingyenesen az Aspose.Words-t?
  Az Aspose.Words ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/). A hosszú távú használathoz licencet kell vásárolnia.
 
-### 3. Hogyan szerezhetek ideiglenes licencet az Aspose.Words számára?
+###  Hogyan szerezhetek ideiglenes licencet az Aspose.Words számára?
  Ideiglenes licencet az Aspose webhelyéről szerezhet be[itt](https://purchase.aspose.com/temporary-license/).
 
-### 4. A .NET mely verzióit támogatja az Aspose.Words?
+### A .NET mely verzióit támogatja az Aspose.Words?
 Az Aspose.Words a .NET több verzióját támogatja, beleértve a .NET Framework-et, a .NET Core-t és a .NET Standard-t.
 
-### 5. Hol találom az Aspose.Words API dokumentációját?
+###  Hol találom az Aspose.Words API dokumentációját?
  Az API dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

@@ -12,7 +12,7 @@ url: /ko/net/document-protection/remove-document-protection/
 
 안녕하세요! 보호 설정으로 인해 자신의 Word 문서가 잠긴 적이 있습니까? 그것은 잘못된 열쇠로 문을 열려고 하는 것과 같습니다. 좌절스럽죠, 그렇죠? 하지만 두려워하지 마세요! .NET용 Aspose.Words를 사용하면 Word 문서에서 보호 기능을 쉽게 제거할 수 있습니다. 이 튜토리얼에서는 프로세스를 단계별로 안내하여 즉시 문서에 대한 완전한 제어권을 다시 얻을 수 있도록 합니다. 뛰어들어보자!
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "ProtectedDocument.docx");
 ```
 
- 여기서는 문서가 포함된 디렉터리의 경로를 지정합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+ 여기서는 문서가 포함된 디렉터리의 경로를 지정합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
 
 ## 2단계: 비밀번호 없이 보호 제거
 

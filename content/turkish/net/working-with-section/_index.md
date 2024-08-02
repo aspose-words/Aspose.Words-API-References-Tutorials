@@ -18,13 +18,13 @@ Bu eğitimleri takip ederek Aspose.Words for .NET'i kullanarak Word belgeleriniz
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Bölüm Ekle](./add-section/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine nasıl bölüm ekleyeceğinizi öğrenin. Belgenizi yapılandırmak için adım adım kılavuz. |
+| [Bölüm Ekle](./add-section/) | Aspose.Words for .NET kullanarak Word belgelerine nasıl bölüm ekleyeceğinizi öğrenin. Bu kılavuz, belge oluşturmaktan bölümleri eklemeye ve yönetmeye kadar her şeyi kapsar. |
 | [Bölümü Sil](./delete-section/) | Aspose.Words for .NET ile belge manipülasyonunda ustalaşın. Birkaç basit adımda Word belgelerinden bölümleri nasıl sileceğinizi öğrenin. |
 | [Tüm Bölümleri Sil](./delete-all-sections/) | Bu takip edilmesi kolay, adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesindeki tüm bölümleri nasıl sileceğinizi öğrenin. |
 | [Bölüm Word İçeriğini Ekle](./append-section-content/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin belirli bölümlerine nasıl sözcük içeriği ekleyeceğinizi öğrenin.  |
-| [Klon Bölümü](./clone-section/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümün nasıl kopyalanacağını öğrenin. Adım adım rehber. |
-| [Bölümü Kopyala](./copy-section/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümü başka bir belgeye nasıl kopyalayacağınızı öğrenin. |
-| [Üstbilgi Altbilgi İçeriğini Sil](./delete-header-footer-content/) | Bu eğitimde Aspose.Words for .NET ile bir Word belgesinden üstbilgi ve altbilgi içeriğini nasıl kaldıracağınızı öğrenin.  |
-| [Bölüm İçeriğini Sil](./delete-section-content/) | Bu eğitimde Aspose.Words for .NET ile bir Word belgesinin belirli bir bölümündeki içeriğin nasıl silineceğini öğrenin. |
+| [Klon Bölümü](./clone-section/) | Aspose.Words for .NET kullanarak Word belgelerindeki bölümleri nasıl kopyalayacağınızı öğrenin. Bu kılavuz, verimli belge işleme için adım adım talimatları kapsar. |
+| [Bölümü Kopyala](./copy-section/) | Aspose.Words for .NET kullanarak Word belgeleri arasında bölümleri nasıl kopyalayacağınızı öğrenin. Bu kılavuz, verimli belge yönetimi için adım adım talimatları kapsar. |
+| [Üstbilgi Altbilgi İçeriğini Sil](./delete-header-footer-content/) | Aspose.Words for .NET kullanarak Word belgelerindeki üstbilgileri ve altbilgileri nasıl sileceğinizi öğrenin. Bu adım adım kılavuz, verimli belge yönetimi sağlar.  |
+| [Bölüm İçeriğini Sil](./delete-section-content/) | Aspose.Words for .NET kullanarak Word belgelerindeki bölüm içeriğini nasıl sileceğinizi öğrenin. Bu adım adım kılavuz, verimli belge yönetimi sağlar. |
 | [Tüm Bölümlerdeki Word Sayfası Ayarını Değiştirin](./modify-page-setup-in-all-sections/) | Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinin tüm bölümlerindeki kelime sayfası düzenini nasıl değiştireceğinizi öğrenin. |
-| [Dizine Göre Bölüm Erişimi](./sections-access-by-index/) | Bu eğitimde, bir Word belgesinin bölümlerine dizine göre nasıl erişeceğinizi ve Aspose.Words for .NET ile bunların ayarlarını nasıl değiştireceğinizi öğrenin. |
+| [Dizine Göre Bölüm Erişimi](./sections-access-by-index/) | Aspose.Words for .NET kullanarak Word belgelerindeki bölümlere nasıl erişeceğinizi ve bunları nasıl değiştireceğinizi öğrenin. Bu adım adım kılavuz, verimli belge yönetimi sağlar. |

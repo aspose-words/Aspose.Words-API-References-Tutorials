@@ -18,7 +18,7 @@ Antes de comenzar a codificar, asegúrese de cumplir con los siguientes requisit
 
 1.  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
-2. Entorno de desarrollo Java: asegúrese de tener un entorno de desarrollo Java configurado en su máquina.
+2. Entorno de desarrollo de Java: asegúrese de tener un entorno de desarrollo de Java configurado en su máquina.
 
 ## Paso 1: crear un proyecto Java
 

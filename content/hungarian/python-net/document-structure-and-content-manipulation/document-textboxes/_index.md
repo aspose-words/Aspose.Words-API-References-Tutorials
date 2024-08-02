@@ -8,11 +8,11 @@ weight: 25
 url: /hu/python-net/document-structure-and-content-manipulation/document-textboxes/
 ---
 
-A szövegdobozok a Word-dokumentumok hatékony funkciói, amelyek lehetővé teszik, hogy tetszetős és szervezett tartalomelrendezéseket hozzon létre. Az Aspose.Words for Python segítségével a dokumentumgenerálást a következő szintre emelheti azáltal, hogy zökkenőmentesen integrálja a szövegdobozokat a dokumentumokba. Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan javítható a vizuális tartalom szövegdobozokkal az Aspose.Words Python API használatával.
+szövegdobozok a Word-dokumentumok hatékony funkciói, amelyek lehetővé teszik, hogy tetszetős és szervezett tartalomelrendezéseket hozzon létre. Az Aspose.Words for Python segítségével a dokumentumgenerálást a következő szintre emelheti azáltal, hogy zökkenőmentesen integrálja a szövegdobozokat a dokumentumokba. Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan javítható a vizuális tartalom szövegdobozokkal az Aspose.Words Python API használatával.
 
 ## Bevezetés
 
-szövegdobozok sokoldalú módot kínálnak a tartalom megjelenítésére egy Word-dokumentumban. Lehetővé teszik a szövegek és képek elkülönítését, pozicionálásuk szabályozását, és kifejezetten a szövegdobozban lévő tartalomra formázást alkalmazhatnak. Ez az útmutató végigvezeti Önt az Aspose.Words for Python használatán a szövegdobozok létrehozásához és testreszabásához a dokumentumokban.
+A szövegdobozok sokoldalú módot kínálnak a tartalom megjelenítésére egy Word-dokumentumban. Lehetővé teszik a szövegek és képek elkülönítését, pozicionálásuk szabályozását, és kifejezetten a szövegdobozban lévő tartalomra formázást alkalmazhatnak. Ez az útmutató végigvezeti Önt az Aspose.Words for Python használatán a szövegdobozok létrehozásához és testreszabásához a dokumentumokban.
 
 ## Előfeltételek
 
@@ -24,7 +24,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel
 
 ## Az Aspose.Words for Python telepítése
 
-A kezdéshez telepítenie kell az Aspose.Words for Python csomagot. Ezt megteheti a pip, a Python csomagtelepítő segítségével a következő paranccsal:
+kezdéshez telepítenie kell az Aspose.Words for Python csomagot. Ezt megteheti a pip, a Python csomagtelepítő segítségével a következő paranccsal:
 
 ```python
 pip install aspose-words
@@ -65,7 +65,7 @@ textbox.top = aw.ConvertUtil.inch_to_points(2)
 
 ## Képek hozzáadása szövegdobozokhoz
 
-A szövegdobozok képeket is tartalmazhatnak. Ha képet szeretne hozzáadni egy szövegmezőhöz, használja a következő kódrészletet:
+szövegdobozok képeket is tartalmazhatnak. Ha képet szeretne hozzáadni egy szövegmezőhöz, használja a következő kódrészletet:
 
 ```python
 shape = textbox.append_child(aw.drawing.Shape(doc, aw.drawing.ShapeType.IMAGE))
@@ -106,7 +106,7 @@ Ebben az útmutatóban megvizsgáltuk a vizuális tartalom szövegdobozokkal tö
 
 ### Hogyan adhatok szegélyeket egy szövegdobozhoz?
 
- Szegélyeket adhat hozzá a szövegdobozokhoz a`textbox.border` ingatlan és megjelenésének testreszabása.
+ Szegélyeket adhat hozzá a szövegdobozokhoz a`textbox.border`ingatlan és megjelenésének testreszabása.
 
 ### Beágyazhatok hiperhivatkozásokat egy szövegdobozba?
 

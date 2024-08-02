@@ -99,7 +99,7 @@ public class DocumentMerger {
 
 ## 6. Memasukkan Istirahat Dokumen
 
-Terkadang, hentian halaman atau hentian bagian perlu disisipkan di antara dokumen yang digabungkan untuk mempertahankan struktur dokumen yang benar. Aspose.Words menyediakan opsi untuk menyisipkan jeda selama penggabungan:
+Terkadang, hentian halaman atau hentian bagian perlu disisipkan di antara dokumen yang digabungkan untuk mempertahankan struktur dokumen yang tepat. Aspose.Words menyediakan opsi untuk menyisipkan jeda selama penggabungan:
 
 - `doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);`:
 Menggabungkan dokumen tanpa jeda.

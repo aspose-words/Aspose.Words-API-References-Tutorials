@@ -2,96 +2,121 @@
 title: Tabella divisa
 linktitle: Tabella divisa
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come dividere una tabella in un documento Word utilizzando Aspose.Words per .NET.
+description: Scopri come dividere le tabelle nei documenti Word utilizzando Aspose.Words per .NET. La nostra guida passo passo rende la gestione delle tabelle semplice ed efficiente.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/split-table/
 ---
+## introduzione
 
-In questo tutorial impareremo come dividere una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguiremo una guida passo passo per comprendere il codice e implementare questa funzionalità. Alla fine di questo tutorial sarai in grado di dividere una tabella da una determinata riga nei tuoi documenti Word.
+Ti sei mai trovato a lavorare con una tabella di grandi dimensioni in un documento Word e vorresti poterla dividere in due tabelle più piccole e più gestibili? Bene, oggi approfondiremo esattamente come ottenere questo risultato utilizzando Aspose.Words per .NET. Che tu abbia a che fare con tabelle di dati estese o strutture di documenti complesse, dividere le tabelle può aiutare a migliorare la leggibilità e l'organizzazione. Esploriamo il processo passo passo per dividere una tabella utilizzando Aspose.Words per .NET.
 
-## Passaggio 1: impostazione del progetto
-1. Avvia Visual Studio e crea un nuovo progetto C#.
-2. Aggiungi un riferimento alla libreria Aspose.Words per .NET.
+## Prerequisiti
 
-## Passaggio 2: caricamento del documento
-Per avviare l'elaborazione parole con il documento, attenersi alla seguente procedura:
+Prima di passare al tutorial, assicurati di avere quanto segue:
 
-```csharp
-// Percorso della directory dei documenti
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Libreria Aspose.Words per .NET: assicurati di aver scaricato e installato la libreria Aspose.Words per .NET. Puoi ottenerlo da[Pagina delle versioni di Aspose](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: configura un ambiente di sviluppo con il supporto di .NET Framework, come Visual Studio.
+3. Documento di esempio: preparare un documento Word (`Tables.docx`) con almeno una tabella per applicare l'operazione di suddivisione.
 
-// Caricare il documento
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Importa spazi dei nomi
 
-Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti e fornisci il nome file corretto.
-
-## Passaggio 3: divisione della tabella
-Successivamente divideremo la tabella da una determinata riga. Utilizza il seguente codice:
+Innanzitutto, importa gli spazi dei nomi necessari nel tuo progetto. Ciò consente di accedere alle classi e ai metodi forniti da Aspose.Words.
 
 ```csharp
-// Recupera la prima tabella
-Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-// Determinazione della linea da cui dividere la tabella
-Row row = firstTable.Rows[2];
-
-// Crea un nuovo contenitore per la tabella divisa
-Table table = (Table)firstTable.Clone(false);
-
-// Inserire il contenitore dopo la tabella originale
-firstTable.ParentNode.InsertAfter(table, firstTable);
-
-// Aggiungi un paragrafo buffer per mantenere una distanza tra le tabelle
-firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
-
-// Sposta le righe dalla tabella originale alla tabella divisa
-Row currentRow;
-do
-{
-currentRow = firstTable.LastRow;
-table. PrependChild(currentRow);
-} while (currentRow != row);
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Qui utilizziamo il documento per recuperare la prima tabella dal nodo del documento. Successivamente determiniamo la riga da cui vogliamo dividere la tabella, in questo esempio è la terza riga (indice 2). Creiamo quindi un nuovo contenitore clonando la tabella originale e quindi inserendolo dopo la tabella originale. Aggiungiamo anche un paragrafo buffer per mantenere una distanza tra le due tabelle. Quindi spostiamo le righe dalla tabella originale alla tabella divisa utilizzando un ciclo do- while finché non raggiungiamo la riga specificata.
+## Passaggio 1: caricare il documento
 
-## Passaggio 4: salvataggio del documento modificato
-Infine, dobbiamo salvare il file
-
-  documento modificato con la tabella divisa. Utilizza il seguente codice:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
-```
-
-Assicurati di specificare il percorso e il nome file corretti per il documento di output.
-
-### Codice sorgente di esempio per Split Table utilizzando Aspose.Words per .NET 
+Iniziamo caricando il documento contenente la tabella che desideri dividere. Assicurati di specificare il percorso corretto del documento.
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
-Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// Divideremo la tabella nella terza riga (inclusa).
+```
+
+## Passaggio 2: identificare la tabella da dividere
+
+Successivamente, identifica e recupera la tabella che desideri dividere. In questo esempio, prenderemo di mira la prima tabella del documento.
+
+```csharp
+Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Passaggio 3: seleziona la riga in cui dividere
+
+Determina la riga in cui vuoi dividere la tabella. Qui stiamo dividendo la tabella nella terza riga (inclusa).
+
+```csharp
 Row row = firstTable.Rows[2];
-// Crea un nuovo contenitore per la tabella divisa.
-Table table = (Table) firstTable.Clone(false);
-// Inserire il contenitore dopo l'originale.
+```
+
+## Passaggio 4: crea un nuovo contenitore di tabella
+
+Crea un nuovo contenitore di tabella per contenere le righe che verranno spostate dalla tabella originale.
+
+```csharp
+Table table = (Table)firstTable.Clone(false);
+```
+
+## Passaggio 5: inserire il nuovo contenitore tabella
+
+Inserisci il nuovo contenitore della tabella subito dopo la tabella originale nel documento.
+
+```csharp
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// Aggiungi un paragrafo buffer per garantire che le tabelle rimangano separate.
+```
+
+## Passaggio 6: aggiungere un paragrafo buffer
+
+Aggiungi un paragrafo buffer tra le due tabelle per garantire che rimangano separate.
+
+```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
+```
+
+## Passaggio 7: sposta le righe nella nuova tabella
+
+Sposta le righe dalla tabella originale al nuovo contenitore della tabella. Questo ciclo continua finché la riga specificata (inclusa) non viene spostata.
+
+```csharp
 Row currentRow;
 do
 {
-	currentRow = firstTable.LastRow;
-	table.PrependChild(currentRow);
+    currentRow = firstTable.LastRow;
+    table.PrependChild(currentRow);
 } while (currentRow != row);
+```
+
+## Passaggio 8: salva il documento
+
+Infine, salva il documento modificato con le tabelle divise.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come dividere una tabella in un documento Word utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo e implementando il codice C# fornito, puoi facilmente dividere le tabelle da una determinata riga nei tuoi documenti Word.
+
+E il gioco è fatto! Seguendo questi passaggi, puoi facilmente dividere una tabella in un documento Word utilizzando Aspose.Words per .NET. Questo approccio ti aiuta a gestire tabelle di grandi dimensioni in modo più efficace, migliorando la leggibilità e l'organizzazione dei tuoi documenti. Provalo e scopri come semplifica il tuo lavoro con le tabelle nei documenti di Word.
+
+## Domande frequenti
+
+### Posso dividere una tabella su più righe?
+Sì, puoi dividere una tabella su più righe ripetendo il processo per ogni punto di divisione.
+
+### Cosa succede alla formattazione della tabella originale?
+La nuova tabella eredita la formattazione della tabella originale. Eventuali modifiche di formattazione specifiche possono essere applicate alla nuova tabella secondo necessità.
+
+### È possibile unire nuovamente le tabelle?
+Sì, puoi unire le tabelle spostando le righe da una tabella all'altra utilizzando metodi simili.
+
+### Questo metodo funziona con le tabelle nidificate?
+Sì, Aspose.Words per .NET supporta anche operazioni su tabelle nidificate.
+
+### Posso automatizzare questo processo per più documenti?
+Assolutamente! È possibile creare uno script o un'applicazione per automatizzare il processo di suddivisione della tabella per più documenti.

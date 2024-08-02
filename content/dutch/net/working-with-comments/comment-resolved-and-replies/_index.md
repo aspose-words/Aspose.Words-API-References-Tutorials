@@ -2,34 +2,70 @@
 title: Commentaar opgelost en antwoorden
 linktitle: Commentaar opgelost en antwoorden
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u opmerkingen en hun antwoorden in Word-documenten kunt oplossen met Aspose.Words voor .NET.
+description: Automatiseer het oplossen en beantwoorden van opmerkingen in Word-documenten met Aspose.Words voor .NET. Stap-voor-stap handleiding inbegrepen.
 type: docs
 weight: 10
 url: /nl/net/working-with-comments/comment-resolved-and-replies/
 ---
+## Invoering
 
-In deze uitgebreide zelfstudie leert u hoe u opmerkingen en hun antwoorden in een Word-document kunt oplossen met behulp van Aspose.Words voor .NET. Wij begeleiden u door het proces en voorzien u van de benodigde C#-codefragmenten. Aan het einde van deze handleiding kunt u de reactieresolutie beheren en de status van reacties en hun antwoorden bijwerken.
+Als u met Word-documenten werkt, heeft u waarschijnlijk wel eens met opmerkingen te maken gehad. Ze zijn ideaal voor samenwerking, maar het beheren ervan kan lastig zijn. Met Aspose.Words voor .NET kunt u het proces van het oplossen en beantwoorden van opmerkingen automatiseren. Deze gids leidt u door de stappen om precies dat te doen.
 
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd op uw systeem.
 
-## Stap 1: Laad het document en open opmerkingen
-Laad om te beginnen het document dat de opmerkingen bevat met behulp van de klasse Document en open de verzameling opmerkingen:
+Zorg ervoor dat je het volgende bij je hebt voordat je erin duikt:
+
+1.  Aspose.Words voor .NET: Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: ingesteld met .NET Framework.
+3. Basiskennis van C#: Bekendheid met de syntaxis en concepten.
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Dit zorgt ervoor dat alle klassen en methoden die we nodig hebben direct beschikbaar zijn.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+Laten we het proces opsplitsen in eenvoudige, gemakkelijk te volgen stappen. Elke stap helpt u de code en de functionaliteit ervan te begrijpen.
+
+## Stap 1: Laad het document
+
+ Laad om te beginnen het Word-document met de opmerkingen. Gebruik de`Document` klasse hiervoor.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+ Deze coderegel initialiseert een nieuw`Document` object met het pad naar uw Word-document.
+
+## Stap 2: Opmerkingen ophalen
+
+ Vervolgens moeten we alle opmerkingen in het document krijgen. Wij gebruiken de`GetChildNodes` methode om een verzameling op te halen`Comment` knooppunten.
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## Stap 2: Los opmerkingen en hun antwoorden op
-Blader vervolgens door de opmerkingen en hun antwoorden om ze als opgelost te markeren:
+Deze code haalt alle opmerkingen in het document op en slaat deze op in een`NodeCollection`.
+
+## Stap 3: Open het oudercommentaar
+
+Voor ons voorbeeld concentreren we ons op de eerste opmerking in de verzameling. Dit zal onze oudercommentaar zijn.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+ Hier casten we het eerste knooppunt in de verzameling naar a`Comment` voorwerp.
+
+## Stap 4: Loop door antwoorden
+
+ Laten we nu de antwoorden op de bovenliggende opmerking doornemen. We gebruiken een`foreach` lus om elk antwoord te herhalen.
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-In de bovenstaande code hebben we toegang tot de bovenliggende opmerking en doorlopen we de antwoorden ervan. We kunnen de bovenliggende reactie-ID en de resolutiestatus ervan ophalen. Vervolgens werken we de markering 'Gereed' van elk reactieantwoord bij om de oplossing aan te geven.
+In deze lus afdrukken we de ID van de ouderopmerking en de status ervan (of deze nu klaar is of niet). Vervolgens markeren we elk antwoord als voltooid.
 
-## Stap 3: Sla het document op
-Nadat u de opmerkingen hebt opgelost en hun status hebt bijgewerkt, slaat u het gewijzigde document op in een bestand met behulp van de Save-methode van de Document-klasse:
+## Stap 5: Sla het document op
+
+Sla ten slotte het gewijzigde document op in uw map.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### Voorbeeldbroncode voor het oplossen van opmerkingen en hun antwoorden met Aspose.Words voor .NET
-Hier is de volledige broncode voor het oplossen van opmerkingen en hun antwoorden met Aspose.Words voor .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-Vergeet niet om de code aan te passen aan uw specifieke vereisten, inclusief het documentbestandspad en aanvullende aanpassingen
+Deze code slaat de wijzigingen op in een nieuw document, zodat uw originele bestand onaangetast blijft.
 
 ## Conclusie
-Gefeliciteerd! U hebt met succes geleerd hoe u opmerkingen en hun antwoorden in een Word-document kunt oplossen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu de reactieresolutie beheren en de status van reacties en hun antwoorden bijwerken volgens uw vereisten.
 
-Het oplossen van opmerkingen helpt bij het volgen en beheren van feedback binnen een document. Experimenteer met verschillende commentaarstatussen en pas ze aan om de samenwerking en beoordelingsprocessen in uw documenten te verbeteren.
+Het verwerken van opmerkingen in Word-documenten hoeft geen handmatig karwei te zijn. Met Aspose.Words voor .NET kunt u het proces automatiseren, waardoor u tijd bespaart en fouten vermindert. Volg deze handleiding om opmerkingen in uw documenten efficiënt op te lossen en te beantwoorden.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Hoe los ik een opmerking op in Aspose.Words voor .NET?
+### Kan ik andere commentaargerelateerde taken automatiseren met Aspose.Words voor .NET?  
+Ja, u kunt verschillende taken automatiseren, zoals het toevoegen, verwijderen en wijzigen van opmerkingen.
 
- A: Om een opmerking in Aspose.Words voor .NET op te lossen, kunt u de`Comment.Resolve` methode die specificeert`Comment` object dat u wilt oplossen. Hierdoor wordt de opmerking als opgelost gemarkeerd en in het definitieve document verborgen.
+### Is Aspose.Words voor .NET compatibel met .NET Core?  
+Ja, Aspose.Words voor .NET ondersteunt zowel .NET Framework als .NET Core.
 
-#### Vraag: Hoe voeg ik een antwoord toe aan een opgeloste opmerking in Aspose.Words voor .NET?
+### Hoe kan ik een gratis proefversie van Aspose.Words voor .NET krijgen?  
+ U kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).
 
- A: Hoewel opgeloste opmerkingen standaard verborgen zijn in het definitieve document, kunt u nog steeds een antwoord toevoegen aan een opgeloste opmerking met behulp van de`Comment.AddReply`methode die de antwoordtekst specificeert en waar u deze wilt toevoegen.
+### Kan ik Aspose.Words voor .NET gebruiken om met andere documenttypen te werken?  
+Ja, Aspose.Words ondersteunt verschillende formaten, waaronder DOCX, PDF, HTML en meer.
 
-#### Vraag: Hoe bekijk ik opgeloste opmerkingen in Aspose.Words voor .NET?
-
- A: Standaard worden opgeloste opmerkingen verborgen in het definitieve document. U kunt ze echter wel weergeven met behulp van de`CommentOptions.ShowResolvedComments` eigendom van de`Document` object en stel het in`true`.
-
-#### Vraag: Hoe kan ik alle opmerkingen, inclusief antwoorden, verbergen in Aspose.Words voor .NET?
-
- A: Om alle opmerkingen, inclusief antwoorden, in Aspose.Words voor .NET te verbergen, kunt u de`CommentOptions.CommentDisplayMode` eigendom van de`Document` object en stel het in`CommentDisplayMode.None`.
-
-#### Vraag: Kan ik de tekst van een opgeloste opmerking in Aspose.Words voor .NET bewerken?
-
- A: Ja, u kunt de tekst van een opgeloste opmerking in Aspose.Words voor .NET bewerken door naar de`Comment.Text` eigendom van de corresponderende`Comment` object en wijzig de tekst indien nodig.
+### Waar kan ik gedetailleerde documentatie vinden voor Aspose.Words voor .NET?  
+ U heeft toegang tot de documentatie[hier](https://reference.aspose.com/words/net/).

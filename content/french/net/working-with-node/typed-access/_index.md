@@ -87,7 +87,7 @@ R : L'accès typé dans Node.js fait référence à l'utilisation de types de n
 
 #### Q : Comment accéder aux nœuds à l’aide d’un accès typé ?
 
- R : Pour accéder aux nœuds à l'aide d'un accès typé dans Node.js, vous pouvez utiliser des méthodes spécifiques en fonction du type de nœud auquel vous souhaitez accéder. Par exemple, vous pouvez utiliser le`getElementsByTagName` méthode pour accéder à tous les nœuds d'un type spécifique, le`getAttribute` méthode pour accéder à la valeur d’un attribut, etc.
+ R : Pour accéder aux nœuds à l'aide d'un accès typé dans Node.js, vous pouvez utiliser des méthodes spécifiques en fonction du type de nœud auquel vous souhaitez accéder. Par exemple, vous pouvez utiliser le`getElementsByTagName` méthode pour accéder à tous les nœuds d'un type spécifique, le`getAttribute` méthode pour accéder à la valeur d'un attribut, etc.
 
 #### Q : Quels sont les avantages de l’accès typé par rapport à l’accès non typé ?
 
@@ -95,7 +95,7 @@ R : L’accès typé présente plusieurs avantages par rapport à l’accès n
 
 #### Q : À quels types de nœuds est-il possible d'accéder avec un accès typé ?
 
-R : Avec l'accès typé dans Node.js, vous pouvez accéder à différents types de nœuds, tels que les nœuds d'éléments, les nœuds de texte, les nœuds d'attributs, etc. Chaque type de nœud a ses propres méthodes et propriétés spécifiques pour accéder à ses caractéristiques et valeurs.
+R : Avec l'accès typé dans Node.js, vous pouvez accéder à différents types de nœuds, tels que les nœuds d'éléments, les nœuds de texte, les nœuds d'attribut, etc. Chaque type de nœud a ses propres méthodes et propriétés spécifiques pour accéder à ses caractéristiques et valeurs.
 
 #### Q : Comment gérer les erreurs lors d’un accès tapé ?
 

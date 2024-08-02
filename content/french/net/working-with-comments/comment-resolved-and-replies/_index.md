@@ -2,34 +2,70 @@
 title: Commentaire résolu et réponses
 linktitle: Commentaire résolu et réponses
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment résoudre les commentaires et leurs réponses dans les documents Word à l'aide d'Aspose.Words pour .NET.
+description: Automatisez la résolution et la réponse aux commentaires dans les documents Word avec Aspose.Words pour .NET. Guide étape par étape inclus.
 type: docs
 weight: 10
 url: /fr/net/working-with-comments/comment-resolved-and-replies/
 ---
+## Introduction
 
-Dans ce didacticiel complet, vous apprendrez comment résoudre les commentaires et leurs réponses dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous guiderons tout au long du processus et vous fournirons les extraits de code C# nécessaires. À la fin de ce guide, vous serez en mesure de gérer la résolution des commentaires et de mettre à jour le statut des commentaires et de leurs réponses.
+Si vous travaillez avec des documents Word, vous avez probablement déjà eu affaire à des commentaires. Ils sont parfaits pour la collaboration, mais leur gestion peut s'avérer fastidieuse. Avec Aspose.Words pour .NET, vous pouvez automatiser le processus de résolution et de réponse aux commentaires. Ce guide vous guidera à travers les étapes pour y parvenir.
 
 ## Conditions préalables
-Avant de commencer, assurez-vous que vous disposez des prérequis suivants :
-- Bibliothèque Aspose.Words pour .NET installée sur votre système.
 
-## Étape 1 : charger le document et accéder aux commentaires
-Pour commencer, chargez le document qui contient les commentaires à l'aide de la classe Document et accédez à la collection de commentaires :
+Avant de vous lancer, assurez-vous d'avoir les éléments suivants :
+
+1.  Aspose.Words pour .NET : vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : configuré avec .NET Framework.
+3. Connaissance de base de C# : Familiarité avec la syntaxe et les concepts.
+
+## Importer des espaces de noms
+
+Tout d’abord, importons les espaces de noms nécessaires. Cela garantit que toutes les classes et méthodes dont nous avons besoin sont facilement disponibles.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+Décomposons le processus en étapes simples et faciles à suivre. Chaque étape vous aidera à comprendre le code et ses fonctionnalités.
+
+## Étape 1 : Charger le document
+
+ Pour commencer, chargez le document Word contenant les commentaires. Utilisez le`Document` classe pour ça.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+ Cette ligne de code initialise un nouveau`Document` objet avec le chemin d’accès à votre document Word.
+
+## Étape 2 : Récupérer les commentaires
+
+ Ensuite, nous devons obtenir tous les commentaires dans le document. Nous utiliserons le`GetChildNodes` méthode pour récupérer une collection de`Comment` nœuds.
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## Étape 2 : Résoudre les commentaires et leurs réponses
-Ensuite, parcourez les commentaires et leurs réponses pour les marquer comme résolus :
+Ce code récupère tous les commentaires du document et les stocke dans un`NodeCollection`.
+
+## Étape 3 : Accédez au commentaire des parents
+
+Pour notre exemple, nous nous concentrerons sur le premier commentaire de la collection. Ce sera le commentaire de nos parents.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+ Ici, nous convertissons le premier nœud de la collection en un`Comment` objet.
+
+## Étape 4 : parcourir les réponses en boucle
+
+ Passons maintenant en revue les réponses au commentaire parent. Nous utiliserons un`foreach` boucle pour parcourir chaque réponse.
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-Dans le code ci-dessus, nous accédons au commentaire parent et parcourons ses réponses. Nous pouvons récupérer l'ID du commentaire parent et son statut de résolution. Ensuite, nous mettons à jour la marque « Terminé » de chaque réponse de commentaire pour indiquer la résolution.
+Dans cette boucle, nous imprimons l'ID du commentaire ancêtre et son statut (qu'il soit fait ou non). Ensuite, nous marquons chaque réponse comme terminée.
 
-## Étape 3 : Enregistrez le document
-Après avoir résolu les commentaires et mis à jour leur statut, enregistrez le document modifié dans un fichier à l'aide de la méthode Save de la classe Document :
+## Étape 5 : Enregistrez le document
+
+Enfin, enregistrez le document modifié dans votre répertoire.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### Exemple de code source pour résoudre les commentaires et leurs réponses à l'aide d'Aspose.Words pour .NET
-Voici le code source complet pour résoudre les commentaires et leurs réponses à l'aide d'Aspose.Words for .NET :
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-N'oubliez pas d'ajuster le code en fonction de vos besoins spécifiques, y compris le chemin du fichier du document et une personnalisation supplémentaire
+Ce code enregistre les modifications apportées à un nouveau document, garantissant que votre fichier d'origine reste intact.
 
 ## Conclusion
-Toutes nos félicitations! Vous avez appris avec succès comment résoudre les commentaires et leurs réponses dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez désormais gérer la résolution des commentaires et mettre à jour le statut des commentaires et de leurs réponses en fonction de vos besoins.
 
-La résolution des commentaires aide à suivre et à gérer les commentaires dans un document. Expérimentez avec différents statuts de commentaires et personnalisez-les pour améliorer les processus de collaboration et de révision dans vos documents.
+La gestion des commentaires dans les documents Word ne doit pas nécessairement être une tâche manuelle. Avec Aspose.Words pour .NET, vous pouvez automatiser le processus, gagner du temps et réduire les erreurs. Suivez ce guide pour résoudre et répondre efficacement aux commentaires dans vos documents.
 
-### FAQ
+## FAQ
 
-#### Q : Comment résoudre un commentaire dans Aspose.Words pour .NET ?
+### Puis-je automatiser d'autres tâches liées aux commentaires avec Aspose.Words for .NET ?  
+Oui, vous pouvez automatiser diverses tâches telles que l'ajout, la suppression et la modification de commentaires.
 
- R : Pour résoudre un commentaire dans Aspose.Words for .NET, vous pouvez utiliser l'outil`Comment.Resolve` méthode spécifiant le`Comment` objet que vous souhaitez résoudre. Cela marquera le commentaire comme résolu et le masquera dans le document final.
+### Aspose.Words pour .NET est-il compatible avec .NET Core ?  
+Oui, Aspose.Words for .NET prend en charge à la fois .NET Framework et .NET Core.
 
-#### Q : Comment ajouter une réponse à un commentaire résolu dans Aspose.Words pour .NET ?
+### Comment puis-je obtenir un essai gratuit d’Aspose.Words pour .NET ?  
+ Vous pouvez télécharger un essai gratuit à partir de[ici](https://releases.aspose.com/).
 
- R : Bien que les commentaires résolus soient masqués par défaut dans le document final, vous pouvez toujours ajouter une réponse à un commentaire résolu en utilisant le`Comment.AddReply`méthode spécifiant le texte de la réponse et l'endroit où vous souhaitez l'ajouter.
+### Puis-je utiliser Aspose.Words for .NET pour travailler avec d’autres types de documents ?  
+Oui, Aspose.Words prend en charge divers formats, notamment DOCX, PDF, HTML, etc.
 
-#### Q : Comment afficher les commentaires résolus dans Aspose.Words pour .NET ?
-
- R : Par défaut, les commentaires résolus sont masqués dans le document final. Cependant, vous pouvez les afficher en utilisant le`CommentOptions.ShowResolvedComments` propriété du`Document` objet et le définir sur`true`.
-
-#### Q : Comment puis-je masquer tous les commentaires, y compris les réponses, dans Aspose.Words for .NET ?
-
- R : Pour masquer tous les commentaires, y compris les réponses, dans Aspose.Words for .NET, vous pouvez utiliser l'option`CommentOptions.CommentDisplayMode` propriété du`Document` objet et réglez-le sur`CommentDisplayMode.None`.
-
-#### Q : Puis-je modifier le texte d'un commentaire résolu dans Aspose.Words pour .NET ?
-
- R : Oui, vous pouvez modifier le texte d'un commentaire résolu dans Aspose.Words for .NET en accédant au`Comment.Text` propriété du correspondant`Comment` objet et en modifiant le texte si nécessaire.
+### Où puis-je trouver une documentation détaillée pour Aspose.Words pour .NET ?  
+ Vous pouvez accéder à la documentation[ici](https://reference.aspose.com/words/net/).

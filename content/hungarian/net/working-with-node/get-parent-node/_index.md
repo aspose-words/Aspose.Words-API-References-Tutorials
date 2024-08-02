@@ -33,7 +33,7 @@ Node section = doc.FirstChild;
 ```
 
 ## 4. lépés: Ellenőrizze a szülőcsomópontot
-Most, hogy megvan az adott csomópont, ellenőrizhetjük, hogy a szülőcsomópontja megegyezik-e magával a dokumentummal. Ebben a példában összehasonlítjuk a szülő csomópontot a dokumentummal az egyenlőség operátor (`==`), és megjeleníti az eredményt.
+Most, hogy megvan az adott csomópont, ellenőrizhetjük, hogy a szülőcsomópontja megegyezik-e magával a dokumentummal. Ebben a példában összehasonlítjuk a szülő csomópontot a dokumentummal az egyenlőség operátor (`==`) és megjeleníti az eredményt.
 
 ```csharp
 Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));

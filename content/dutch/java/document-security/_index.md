@@ -30,6 +30,6 @@ Leer hoe u documentmachtigingen effectief kunt beheren met Aspose.Words voor Jav
 ### [Documentcodering en decodering](./document-encryption-decryption/)
 Leer hoe u documenten kunt coderen en decoderen met Aspose.Words voor Java. Beveilig uw gegevens efficiënt met stapsgewijze begeleiding en broncodevoorbeelden.
 ### [Digitale handtekeningen in documenten](./digital-signatures-in-documents/)
-Leer hoe u veilige digitale handtekeningen in documenten implementeert met Aspose.Words voor Java. Zorg voor documentintegriteit met stapsgewijze begeleiding en broncode
+Leer hoe u veilige digitale handtekeningen in documenten implementeert met Aspose.Words voor Java. Waarborg de documentintegriteit met stapsgewijze begeleiding en broncode
 ### [Documentredactie en gegevensbescherming](./document-redaction-data-protection/)
 Leer hoe u uw documenten kunt beveiligen en gevoelige gegevens kunt redigeren met Aspose.Words voor Java. Stap-voor-stap handleiding met broncode.

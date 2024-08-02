@@ -9,7 +9,7 @@ url: /ko/python-net/document-splitting-and-formatting/split-format-documents/
 ---
 오늘날 빠르게 변화하는 디지털 세계에서 문서를 효율적으로 관리하고 서식을 지정하는 것은 기업과 개인 모두에게 중요합니다. Aspose.Words for Python은 문서를 쉽게 조작하고 형식을 지정할 수 있는 강력하고 다양한 API를 제공합니다. 이 튜토리얼에서는 Python용 Aspose.Words를 사용하여 문서를 효율적으로 분할하고 서식을 지정하는 방법을 단계별로 안내합니다. 또한 각 단계에 대한 소스 코드 예제를 제공하여 프로세스에 대한 실질적인 이해를 보장합니다.
 
-## 전제조건
+## 전제 조건
 튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 - Python 프로그래밍 언어에 대한 기본 이해.
 -  Python용 Aspose.Words를 설치했습니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/).

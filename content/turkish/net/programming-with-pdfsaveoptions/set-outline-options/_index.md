@@ -94,7 +94,7 @@ Hayır, anahat ayarları belgenin tamamına genel olarak uygulanır. Ancak benze
 
 Anahatın nasıl göründüğünü kontrol etmek için anahat gezinmesini destekleyen PDF görüntüleyicileri kullanabilirsiniz. Bazı uygulamalar bunun için bir önizleme özelliği sağlar.
 
-### PDF'yi kaydettikten sonra taslağı kaldırmak mümkün mü?
+### PDF'yi kaydettikten sonra taslağı kaldırmak mümkün müdür?
 
 Evet, PDF düzenleme yazılımını kullanarak ana hatları kaldırabilirsiniz ancak PDF oluşturulduktan sonra bunu Aspose.Words ile doğrudan başarmak mümkün değildir.
 

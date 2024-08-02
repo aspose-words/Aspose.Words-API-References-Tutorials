@@ -2,115 +2,126 @@
 title: Pro odsazení seznamu použijte znak tabulátoru na úroveň
 linktitle: Pro odsazení seznamu použijte znak tabulátoru na úroveň
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se používat funkci seznamů odsazení se znaky tabulátoru v Aspose.Words pro .NET. Ušetřete čas a vylepšete svůj pracovní postup s touto výkonnou funkcí.
+description: Naučte se vytvářet víceúrovňové seznamy s odsazením s kartami pomocí Aspose.Words for .NET. Postupujte podle tohoto průvodce pro přesné formátování seznamu ve vašich dokumentech.
 type: docs
 weight: 10
 url: /cs/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
+## Úvod
 
-V tomto tutoriálu prozkoumáme zdrojový kód C# poskytovaný pro funkci "Použít jeden znak tabulátoru na úroveň pro odsazení seznamu" s Aspose.Words pro .NET. Tato funkce umožňuje použít znaky tabulátoru pro odsazení seznamů na každé úrovni, což poskytuje větší flexibilitu a kontrolu nad vzhledem vašich dokumentů.
+Seznamy jsou zásadní při organizování obsahu, ať už připravujete zprávu, píšete výzkumnou práci nebo připravujete prezentaci. Pokud však jde o prezentaci seznamů s více úrovněmi odsazení, může být dosažení požadovaného formátu trochu složité. Pomocí Aspose.Words for .NET můžete snadno spravovat odsazení seznamu a přizpůsobit, jak je každá úroveň zastoupena. V tomto tutoriálu se zaměříme na vytvoření seznamu s více úrovněmi odsazení s použitím znaků tabulátoru pro přesné formátování. Na konci této příručky budete mít jasno v tom, jak nastavit a uložit dokument se správným stylem odsazení.
 
-## Krok 1: Nastavení prostředí
+## Předpoklady
 
-Než začnete, ujistěte se, že jste nastavili své vývojové prostředí s Aspose.Words for .NET. Ujistěte se, že jste přidali potřebné reference a importovali příslušné jmenné prostory.
+Než se pustíme do kroků, ujistěte se, že máte připraveno následující:
 
-## Krok 2: Vytvoření dokumentu a generátoru
+1.  Instalováno Aspose.Words for .NET: Potřebujete knihovnu Aspose.Words. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout z[Aspose ke stažení](https://releases.aspose.com/words/net/).
+
+2. Základní porozumění C# a .NET: Pro sledování tohoto kurzu je nezbytná znalost programování v C# a .NET frameworku.
+
+3. Vývojové prostředí: Ujistěte se, že máte IDE nebo textový editor pro psaní a spouštění kódu C# (např. Visual Studio).
+
+4. Vzorový adresář dokumentů: Nastavte adresář, do kterého budete dokument ukládat a testovat. 
+
+## Importovat jmenné prostory
+
+Nejprve musíte importovat potřebné jmenné prostory, abyste mohli používat Aspose.Words ve vaší aplikaci .NET. Přidejte následující pomocí direktiv na začátek souboru C#:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+V této části vytvoříme víceúrovňový seznam s odsazením s kartami pomocí Aspose.Words for .NET. Následuj tyto kroky:
+
+## Krok 1: Nastavte svůj dokument
+
+Vytvořte nový dokument a DocumentBuilder
 
 ```csharp
 // Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Vytvořte nový dokument
 Document doc = new Document();
+
+// Inicializujte DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- V tomto kroku vytvoříme nový`Document` objekt a přidružený`DocumentBuilder` objekt. Tyto objekty nám umožní manipulovat a generovat náš dokument.
+ Zde jsme založili nový`Document` objekt a a`DocumentBuilder` začít vytvářet obsah v dokumentu.
 
-## Krok 3: Vytvoření seznamu se třemi úrovněmi odsazení
+## Krok 2: Použijte výchozí formátování seznamu
+
+Vytvořte a naformátujte seznam
 
 ```csharp
+// Použít výchozí styl číslování na seznam
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+```
+
+V tomto kroku použijeme na náš seznam výchozí formát číslování. To nám pomůže při vytváření číslovaného seznamu, který pak můžeme upravit.
+
+## Krok 3: Přidejte položky seznamu s různými úrovněmi
+
+Vložit položky seznamu a odsadit
+
+```csharp
+//Přidejte první položku seznamu
+builder.Write("Element 1");
+
+// Odsazením vytvoříte druhou úroveň
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
+
+// Dalším odsazením vytvoříte třetí úroveň
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- tomto kroku použijeme výchozí formát čísel seznamu pomocí`ApplyNumberDefault()` metoda formátovače seznamu. Dále do našeho seznamu přidáme tři položky pomocí nástroje pro tvorbu dokumentů`Writeln()`a`Write()` metody. Používáme`ListIndent()` metoda pro zvýšení odsazení na každé úrovni.
+ Zde do našeho seznamu přidáváme tři prvky, každý s rostoucí úrovní odsazení. The`ListIndent` metoda se používá ke zvýšení úrovně odsazení pro každou následující položku.
 
-## Krok 4: Nakonfigurujte možnosti nahrávání
+## Krok 4: Nakonfigurujte možnosti uložení
+
+Nastavte Odsazení na Použít znaky tabulátoru
 
 ```csharp
+// Nakonfigurujte možnosti uložení tak, aby byly k odsazení použity znaky tabulátoru
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- V tomto kroku nakonfigurujeme možnosti uložení dokumentu. Vytváříme nový`TxtSaveOptions` objekt a nastavte`ListIndentation.Count` vlastnost na 1 k určení počtu znaků tabulátoru na úroveň odsazení. Nastavili jsme také`ListIndentation.Character` vlastnost na '\t' k určení, že chceme používat znaky tabulátoru.
+ Nakonfigurujeme`TxtSaveOptions` pro použití tabulátorů pro odsazení v uloženém textovém souboru. The`ListIndentation.Character` vlastnost je nastavena na`'\t'`, což představuje znak tabulátoru.
 
 ## Krok 5: Uložte dokument
 
+Uložte dokument se zadanými možnostmi
+
 ```csharp
+// Uložte dokument se zadanými možnostmi
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- V tomto posledním kroku uložíme dokument se zadanými možnostmi uložení. Používáme`Save()` metoda dokumentu předá celou cestu k výstupnímu souboru a možnosti uložení.
+ Nakonec dokument uložíme pomocí`Save` metodou s naším zvykem`TxtSaveOptions`. Tím je zajištěno, že se seznam uloží se znaky tabulátoru pro úrovně odsazení.
 
+## Závěr
 
-Nyní můžete spustit zdrojový kód a vygenerovat dokument s odsazením seznamu pomocí znaků tabulátoru. Výstupní soubor bude uložen do zadaného adresáře s názvem "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
+tomto tutoriálu jsme prošli vytvořením víceúrovňového seznamu s odsazením pomocí karet pomocí Aspose.Words pro .NET. Pomocí těchto kroků můžete snadno spravovat a formátovat seznamy v dokumentech a zajistit, aby byly prezentovány jasně a profesionálně. Ať už pracujete na sestavách, prezentacích nebo jakémkoli jiném typu dokumentu, tyto techniky vám pomohou dosáhnout přesné kontroly nad formátováním seznamu.
 
-### Příklad zdroje kódu pro funkci Použít jeden znak tabulátoru na úroveň pro funkci odsazení seznamu s Aspose.Words pro .NET:
+## FAQ
 
-```csharp
+### Jak mohu změnit znak odsazení z tabulátoru na mezeru?
+ Můžete upravit`saveOptions.ListIndentation.Character` vlastnost použít znak mezery místo tabulátoru.
 
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+### Mohu použít různé styly seznamů na různé úrovně?
+Ano, Aspose.Words umožňuje přizpůsobení stylů seznamů na různých úrovních. Chcete-li dosáhnout různých stylů, můžete upravit možnosti formátování seznamu.
 
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+### Co když potřebuji použít odrážky místo čísel?
+ Použijte`ListFormat.ApplyBulletDefault()` metoda místo toho`ApplyNumberDefault()` vytvořit seznam s odrážkami.
 
-// Vytvořte seznam se třemi úrovněmi odsazení
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
-builder.ListFormat.ListIndent();
-builder.Write("Element 3");
+### Jak mohu upravit velikost znaku tabulátoru použitého pro odsazení?
+ Bohužel velikost záložky v`TxtSaveOptions`je opraveno. Chcete-li upravit velikost odsazení, možná budete muset použít mezery nebo přímo přizpůsobit formátování seznamu.
 
-TxtSaveOptions saveOptions = new TxtSaveOptions();
-saveOptions.ListIndentation.Count = 1;
-saveOptions.ListIndentation.Character = '\t';
-
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
-
-```
-
-Nyní, když jste dokončili generování dokumentu s odsazením seznamu pomocí znaků tabulátoru, můžete použít Markdown k formátování obsahu článku. Ujistěte se, že používáte vhodné formátovací značky pro zvýraznění titulků, titulků a obsaženého zdrojového kódu.
-
-### Často kladené otázky
-
-#### Otázka: Co je funkce "Použít jeden znak tabulátoru na úroveň pro odsazení seznamu" s Aspose.Words pro .NET?
-Funkce "Použít jeden znak tabulátoru na úroveň pro odsazení seznamu" s Aspose.Words pro .NET umožňuje použití znaků tabulátoru pro odsazení seznamu na každé úrovni. To poskytuje větší flexibilitu a kontrolu nad vzhledem vašich dokumentů.
-
-#### Otázka: Jak mohu použít tuto funkci s Aspose.Words pro .NET?
-Chcete-li použít tuto funkci s Aspose.Words pro .NET, postupujte takto:
-
-Nastavte své vývojové prostředí přidáním nezbytných odkazů a importem příslušných jmenných prostorů.
-
- Vytvoř nový`Document` objekt a přidružený`DocumentBuilder` objekt.
-
- Použijte`DocumentBuilder` vytvoření seznamu s více úrovněmi odsazení pomocí metod`ApplyNumberDefault()` použít výchozí formát čísel seznamu,`Writeln()`a`Write()` pro přidání položek do seznamu a`ListIndent()` pro zvýšení odsazení na každé úrovni.
-
- Nakonfigurujte možnosti uložení vytvořením a`TxtSaveOptions` objektu a nastavení vlastností`ListIndentation.Count` na počet znaků tabulátoru na úroveň a`ListIndentation.Character` na`'\t'` používat znaky tabulátoru.
-
- Uložte dokument pomocí`Save()` metoda dokumentu specifikující úplnou cestu k výstupnímu souboru a možnosti uložení.
-
-#### Otázka: Je možné upravit počet znaků tabulátoru na úroveň pro odsazení seznamu?
- Ano, můžete upravit počet znaků tabulátoru na úroveň pro odsazení seznamu změnou hodnoty`ListIndentation.Count` nemovitost v`TxtSaveOptions` třída. Můžete zadat požadovaný počet znaků tabulátoru pro každou úroveň odsazení.
-
-#### Otázka: Jaké další znaky mohu použít pro odsazení seznamu pomocí Aspose.Words pro .NET?
-Kromě znaků tabulátoru můžete pro odsazení seznamu pomocí Aspose.Words for .NET použít i jiné znaky. Můžete nastavit`ListIndentation.Character` vlastnost libovolnému požadovanému znaku, jako je mezera (`' '`), pro odsazení seznamů.
-
-#### Otázka: Nabízí Aspose.Words for .NET nějaké další funkce pro správu seznamů?
-Ano, Aspose.Words for .NET nabízí mnoho funkcí pro správu seznamů v dokumentech aplikace Word. Můžete vytvářet číslované seznamy nebo seznamy s odrážkami, nastavovat úrovně odsazení, přizpůsobovat styl seznamů, přidávat položky seznamu a další.
+### Mohu tato nastavení použít při exportu do jiných formátů, jako je PDF nebo DOCX?
+Konkrétní nastavení znaků tabulátoru platí pro textové soubory. U formátů jako PDF nebo DOCX budete muset upravit možnosti formátování v rámci těchto formátů.

@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-text-files/
 
 이 튜토리얼에서는 Aspose.Words for Java 라이브러리를 사용하여 문서를 텍스트 파일로 저장하는 방법을 살펴보겠습니다. Aspose.Words는 Word 문서 작업을 위한 강력한 Java API이며 일반 텍스트를 포함하여 다양한 형식으로 문서를 저장할 수 있는 다양한 옵션을 제공합니다. 이를 달성하기 위한 단계를 다루고 그 과정에서 샘플 Java 코드를 제공할 것입니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

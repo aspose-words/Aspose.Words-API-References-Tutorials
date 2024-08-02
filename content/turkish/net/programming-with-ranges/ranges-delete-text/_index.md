@@ -91,7 +91,7 @@ Aspose.Words for .NET, Word belgelerinin işlenmesine yönelik bir sınıf küt�
 
 Evet, istediğiniz paragrafa erişerek ve düğmeyi kullanarak belirli bir paragraftaki metni silebilirsiniz.`Range.Delete` yöntem.
 
-### Metni koşullu olarak silmek mümkün müdür?
+### Metni koşullu olarak silmek mümkün mü?
 
 Kesinlikle! Metni anahtar kelimeler veya biçimlendirme gibi belirli ölçütlere göre silmek için koşullu mantığı uygulayabilirsiniz.
 

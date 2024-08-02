@@ -16,8 +16,8 @@ Wykonując te samouczki, dowiesz się, jak efektywnie używać Aspose.Words dla 
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Utwórz projekt VBA](./create-vba-project/) | tym samouczku dowiesz się, jak utworzyć projekt VBA w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Przeczytaj makra VBA](./read-vba-macros/) | W tym samouczku dowiesz się, jak czytać makra VBA z dokumentu Word za pomocą Aspose.Words dla .NET. |
-| [Zmodyfikuj makra VBA](./modify-vba-macros/) | W tym samouczku dowiesz się, jak edytować makra VBA dokumentu Word za pomocą Aspose.Words dla .NET. |
-| [Projekt klonowania VBA](./clone-vba-project/) | W tym samouczku dowiesz się, jak sklonować projekt VBA z dokumentu Word za pomocą Aspose.Words dla .NET.|
-| [Klonuj moduł VBA](./clone-vba-module/) | W tym samouczku dowiesz się, jak sklonować moduł VBA z dokumentu Word za pomocą Aspose.Words dla .NET. |
+| [Utwórz projekt VBA](./create-vba-project/) | Naucz się tworzyć projekty VBA w dokumentach Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku dotyczącym bezproblemowej automatyzacji dokumentów! |
+| [Przeczytaj makra VBA](./read-vba-macros/) | IDowiedz się, jak czytać makra VBA z dokumentów Worda przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem dotyczącym bezproblemowej automatyzacji dokumentów! |
+| [Zmodyfikuj makra VBA](./modify-vba-macros/) | Dowiedz się, jak modyfikować makra VBA w dokumentach Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku dotyczącym bezproblemowej automatyzacji dokumentów! |
+| [Projekt klonowania VBA](./clone-vba-project/) | Dowiedz się, jak klonować projekty VBA w dokumentach Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bezproblemowo manipulować dokumentami!|
+| [Klonuj moduł VBA](./clone-vba-module/) | Klonuj moduły VBA w dokumentach Word bez wysiłku dzięki Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bezproblemowo manipulować dokumentami! |

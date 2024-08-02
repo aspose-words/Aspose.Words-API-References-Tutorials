@@ -16,8 +16,8 @@ In diesen Tutorials lernen Sie, wie Sie Aspose.Words für .NET effektiv nutzen, 
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [VBA-Projekt erstellen](./create-vba-project/) | Erfahren Sie in diesem Tutorial, wie Sie mit Aspose.Words für .NET ein VBA-Projekt in einem Word-Dokument erstellen. |
-| [VBA-Makros lesen](./read-vba-macros/) | Erfahren Sie in diesem Tutorial, wie Sie mit Aspose.Words für .NET VBA-Makros aus einem Word-Dokument lesen. |
-| [VBA-Makros ändern](./modify-vba-macros/) | Erfahren Sie in diesem Tutorial, wie Sie VBA-Makros eines Word-Dokuments mit Aspose.Words für .NET bearbeiten. |
-| [VBA-Projekt klonen](./clone-vba-project/) | Erfahren Sie in diesem Tutorial, wie Sie mit Aspose.Words für .NET ein VBA-Projekt aus einem Word-Dokument klonen.|
-| [VBA-Modul klonen](./clone-vba-module/) | Erfahren Sie in diesem Tutorial, wie Sie mit Aspose.Words für .NET ein VBA-Modul aus einem Word-Dokument klonen. |
+| [VBA-Projekt erstellen](./create-vba-project/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET VBA-Projekte in Word-Dokumenten erstellen. Folgen Sie unserer Schritt-für-Schritt-Anleitung zur nahtlosen Dokumentenautomatisierung! |
+| [VBA-Makros lesen](./read-vba-macros/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET VBA-Makros aus Word-Dokumenten lesen. Folgen Sie unserer ausführlichen Anleitung zur nahtlosen Dokumentenautomatisierung! |
+| [VBA-Makros ändern](./modify-vba-macros/) | Erfahren Sie, wie Sie VBA-Makros in Word-Dokumenten mit Aspose.Words für .NET ändern. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung zur nahtlosen Dokumentenautomatisierung! |
+| [VBA-Projekt klonen](./clone-vba-project/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET VBA-Projekte in Word-Dokumenten klonen. Folgen Sie unserer Schritt-für-Schritt-Anleitung zur nahtlosen Dokumentbearbeitung!|
+| [VBA-Modul klonen](./clone-vba-module/) | Klonen Sie VBA-Module in Word-Dokumenten mühelos mit Aspose.Words für .NET. Folgen Sie unserer Schritt-für-Schritt-Anleitung zur nahtlosen Dokumentbearbeitung! |

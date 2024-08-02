@@ -2,51 +2,82 @@
 title: Aplicar borde de contorno
 linktitle: Aplicar borde de contorno
 second_title: API de procesamiento de documentos Aspose.Words
-description: Guía paso a paso para aplicar un borde de contorno a una tabla usando Aspose.Words para .NET.
+description: Aprenda a aplicar un borde de contorno a una tabla en Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para un formato de tabla perfecto.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
+## Introducción
 
-En este tutorial, lo guiaremos paso a paso para aplicar un borde de contorno a una tabla usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarle a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, comprenderá claramente cómo manipular los bordes de las tablas en sus documentos de Word usando Aspose.Words para .NET.
+En el tutorial de hoy, nos sumergiremos en el mundo de la manipulación de documentos utilizando Aspose.Words para .NET. Específicamente, aprenderemos cómo aplicar un borde de contorno a una tabla en un documento de Word. Esta es una habilidad fantástica para tener en su caja de herramientas si trabaja frecuentemente con la generación y el formato automatizados de documentos. Entonces, comencemos este viaje para hacer que sus mesas no solo sean funcionales sino también visualmente atractivas.
 
-## Paso 1: definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se almacena su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
+## Requisitos previos
+
+Antes de pasar al código, hay algunas cosas que necesitarás:
+
+1.  Aspose.Words para .NET: Debe tener instalado Aspose.Words para .NET. Puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
+2. Entorno de desarrollo: un entorno de desarrollo adecuado como Visual Studio.
+3. Conocimientos básicos de C#: una comprensión fundamental de C# le ayudará a seguir el tutorial.
+
+## Importar espacios de nombres
+
+Para empezar, asegúrese de haber importado los espacios de nombres necesarios. Esto es crucial para acceder a las funcionalidades de Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Paso 2: Sube el documento
- A continuación, debe cargar el documento de Word en una instancia del`Document` clase.
+Dividamos el proceso en pasos simples y manejables.
+
+## Paso 1: cargue el documento
+
+Primero, necesitamos cargar el documento de Word que contiene la tabla que queremos formatear.
 
 ```csharp
+// Ruta a su directorio de documentos
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Paso 3: Accede a la mesa
- Para aplicar un borde de contorno, debemos acceder a la tabla del documento. El`Table` La clase representa una tabla en Aspose.Words.
+ En este paso, estamos usando el`Document` clase de Aspose.Words para cargar un documento existente. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde está almacenado su documento.
+
+## Paso 2: accede a la mesa
+
+A continuación, debemos acceder a la tabla específica que queremos formatear. 
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Paso 4: alinee la tabla con el centro de la página
- Ahora podemos alinear la tabla con el centro de la página usando el`Alignment` propiedad de la mesa.
+ Aquí,`GetChild` El método recupera la primera tabla del documento. Los parametros`NodeType.Table, 0, true` asegurarnos de obtener el tipo de nodo correcto.
+
+## Paso 3: alinear la mesa
+
+Ahora, alineemos la tabla en el centro de la página.
 
 ```csharp
-table. Alignment = Table Alignment. Center;
+table.Alignment = TableAlignment.Center;
 ```
 
-## Paso 5: borre los bordes de la tabla existente
-Para comenzar con un nuevo borde de contorno, primero debemos borrar todos los bordes existentes de la tabla. Esto se puede hacer usando el`ClearBorders()` método.
+Este paso asegura que la mesa esté perfectamente centrada, dándole un aspecto profesional.
+
+## Paso 4: borrar los límites existentes
+
+Antes de aplicar nuevas fronteras, debemos borrar las existentes.
 
 ```csharp
-table. ClearBorders();
+table.ClearBorders();
 ```
 
-## Paso 6: define un borde verde alrededor de la mesa
- Ahora podemos establecer un borde verde alrededor de la mesa usando el`SetBorder()` método para cada lado de la mesa. En este ejemplo, estamos utilizando un borde de tipo "Único" con un grosor de 1,5 puntos y color verde.
+Limpiar los límites garantiza que nuestros nuevos límites se apliquen limpiamente sin que ningún estilo antiguo interfiera.
+
+## Paso 5: establecer los bordes del contorno
+
+Ahora, apliquemos los bordes del contorno verde a la mesa.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -55,45 +86,47 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Paso 7: llena las celdas con un color de fondo
-Para mejorar la presentación visual de la tabla, podemos rellenar las celdas con un color de fondo básico.
+ Cada tipo de borde (izquierdo, derecho, superior, inferior) se configura individualmente. Usamos`LineStyle.Single` para una línea continua,`1.5` para el ancho de línea, y`Color.Green` para el color del borde.
 
-idea. En este ejemplo, utilizamos un color verde claro.
+## Paso 6: aplicar sombreado de celda
+
+Para que la tabla sea más atractiva visualmente, llenemos las celdas con un color verde claro.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
-## Paso 8: guarde el documento modificado
-Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación apropiados para el documento de salida.
+ Aquí,`SetShading` se utiliza para aplicar un color verde claro sólido a las celdas, haciendo que la tabla se destaque.
+
+## Paso 7: guarde el documento
+
+Finalmente, guarde el documento modificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-¡Enhorabuena! Ahora ha aplicado un borde de contorno a una tabla usando Aspose.Words para .NET.
-
-### Código fuente de muestra para Aplicar borde de contorno usando Aspose.Words para .NET 
-
-```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Alinee la tabla con el centro de la página.
-	table.Alignment = TableAlignment.Center;
-	//Borre los bordes existentes de la tabla.
-	table.ClearBorders();
-	// Establece un borde verde alrededor de la mesa pero no dentro.
-	table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// Llene las celdas con un color sólido verde claro.
-	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
-```
+Este paso guarda su documento con el formato aplicado. Puede abrirlo para ver la tabla bellamente formateada.
 
 ## Conclusión
-En este tutorial, aprendimos cómo aplicar un borde de contorno a una tabla usando Aspose.Words para .NET. Si sigue esta guía paso a paso, podrá integrar fácilmente esta funcionalidad en sus proyectos de C#. La manipulación del formato de tablas es un aspecto esencial del procesamiento de documentos y Aspose.Words ofrece una API potente y flexible para lograrlo. Con este conocimiento, podrás mejorar la presentación visual de tus documentos de Word y cumplir con requisitos específicos.
+
+¡Y ahí lo tienes! Si sigue estos pasos, habrá aplicado con éxito un borde de contorno a una tabla en un documento de Word usando Aspose.Words para .NET. Este tutorial cubrió cómo cargar el documento, acceder a la tabla, alinearlo, borrar los bordes existentes, aplicar nuevos bordes, agregar sombreado de celdas y finalmente guardar el documento. 
+
+Con estas habilidades, puede mejorar la presentación visual de sus tablas, haciendo que sus documentos sean más profesionales y atractivos. ¡Feliz codificación!
+
+## Preguntas frecuentes
+
+### ¿Puedo aplicar diferentes estilos a cada borde de la mesa?  
+ Sí, puedes aplicar diferentes estilos y colores a cada borde ajustando los parámetros en el`SetBorder` método.
+
+### ¿Cómo puedo cambiar el ancho del borde?  
+ Puede cambiar el ancho modificando el tercer parámetro en el`SetBorder` método. Por ejemplo,`1.5` establece un ancho de 1,5 puntos.
+
+### ¿Es posible aplicar sombreado a celdas individuales?  
+ Sí, puede aplicar sombreado a celdas individuales accediendo a cada celda y usando el`SetShading` método.
+
+### ¿Puedo usar otros colores para bordes y sombreado?  
+ ¡Absolutamente! Puedes usar cualquier color disponible en el`System.Drawing.Color` clase.
+
+### ¿Cómo alineo la mesa horizontalmente al centro?  
+ El`table.Alignment = TableAlignment.Center;` La línea en el código centra la tabla horizontalmente en la página.

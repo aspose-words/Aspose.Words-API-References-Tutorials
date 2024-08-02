@@ -16,12 +16,12 @@ Dengan menggunakan Aspose.Words untuk .NET dan mengikuti tutorial ini, Anda akan
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Tambahkan Bentuk Grup](./add-group-shape/) | Pelajari cara menambahkan bentuk grup dengan beberapa bentuk ke dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Sisipkan Bentuk](./insert-shape/) | Pelajari cara menyisipkan bentuk ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Rasio Aspek Terkunci](./aspect-ratio-locked/) | Pelajari cara mengunci atau membuka kunci rasio aspek bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Tata Letak Dalam Sel](./layout-in-cell/) | Pelajari cara menata letak bentuk dalam sel tabel di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Tambahkan Sudut Terpotong](./add-corners-snipped/) | Pelajari cara menambahkan bentuk dengan sudut yang dipotong ke dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Dapatkan Poin Batas Bentuk Aktual](./get-actual-shape-bounds-points/) | Pelajari cara mengambil batas sebenarnya dari suatu bentuk dalam titik (satuan pengukuran) dalam dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Jangkar Vertikal](./vertical-anchor/) | Pelajari cara memposisikan bentuk secara vertikal dalam dokumen menggunakan fitur jangkar vertikal di Aspose.Words untuk .NET.|
-| [Deteksi Bentuk Seni Cerdas](./detect-smart-art-shape/) | Pelajari cara mendeteksi bentuk Smart Art di dokumen Word menggunakan Aspose.Words untuk .NET, yang mengidentifikasi representasi grafis. |
-| [Perbarui Gambar Seni Cerdas](./update-smart-art-drawing/) | Pelajari cara memperbarui gambar Smart Art di dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Tambahkan Bentuk Grup](./add-group-shape/) | Pelajari cara menambahkan bentuk grup ke dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang komprehensif ini. |
+| [Sisipkan Bentuk](./insert-shape/) | Pelajari cara menyisipkan dan memanipulasi bentuk di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. |
+| [Rasio Aspek Terkunci](./aspect-ratio-locked/) | Pelajari cara mengunci rasio aspek bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk menjaga gambar dan bentuk Anda tetap proporsional. |
+| [Tata Letak Dalam Sel](./layout-in-cell/) | Pelajari cara mengatur tata letak sel menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Sempurna untuk pengembang yang ingin menyesuaikan dokumen Word. |
+| [Tambahkan Sudut Terpotong](./add-corners-snipped/) | Pelajari cara menambahkan bentuk potongan sudut ke dokumen Word Anda menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini memastikan Anda dapat menyempurnakan dokumen Anda dengan mudah. |
+| [Dapatkan Poin Batas Bentuk Aktual](./get-actual-shape-bounds-points/) | Temukan cara mendapatkan titik batas bentuk sebenarnya di dokumen Word menggunakan Aspose.Words untuk .NET. Pelajari manipulasi bentuk yang tepat dengan panduan terperinci ini. |
+| [Jangkar Vertikal](./vertical-anchor/) | Pelajari cara mengatur posisi jangkar vertikal untuk kotak teks di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah yang mudah disertakan.|
+| [Deteksi Bentuk Seni Cerdas](./detect-smart-art-shape/) | Pelajari cara mendeteksi bentuk SmartArt di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda. |
+| [Perbarui Gambar Seni Cerdas](./update-smart-art-drawing/) | Pelajari cara memperbarui gambar Smart Art di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Pastikan visual Anda selalu akurat. |

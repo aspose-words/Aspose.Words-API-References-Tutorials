@@ -16,7 +16,7 @@ Ať už potřebujete manipulovat, vytvářet, převádět nebo generovat dokumen
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Odebrat konce stránek v dokumentu aplikace Word](./remove-page-breaks/) | Přečtěte si, jak odstranit konce stránek v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Postupujte podle našeho podrobného průvodce pro bezproblémové rozvržení. |
-| [Odebrat konce oddílů v dokumentu aplikace Word](./remove-section-breaks/) | Naučte se, jak odstranit konce oddílů v dokumentu aplikace Word pomocí knihovny Aspose.Words pro .NET. Efektivně eliminujte konce oddílů, které mohou narušit formátování vašeho dokumentu.|
-| [Odebrat zápatí v dokumentu aplikace Word](./remove-footers/) | Naučte se, jak snadno odstranit zápatí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro efektivní manipulaci se soubory DOCX. |
+| [Odebrat konce stránek v dokumentu aplikace Word](./remove-page-breaks/) | Naučte se, jak odstranit konce stránek v dokumentu aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem. Vylepšete své dovednosti v manipulaci s dokumenty. |
+| [Odebrat konce oddílů v dokumentu aplikace Word](./remove-section-breaks/) | Přečtěte si, jak odstranit konce oddílů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento podrobný průvodce krok za krokem zajišťuje bezproblémovou správu a úpravy dokumentů.|
+| [Odebrat zápatí v dokumentu aplikace Word](./remove-footers/) | Naučte se, jak odstranit zápatí z dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí tohoto komplexního průvodce krok za krokem. |
 | [Odebrat obsah v dokumentu aplikace Word](./remove-table-of-contents/) | Naučte se, jak odstranit obsah v dokumentu aplikace Word pomocí Aspose.Words for .NET. |

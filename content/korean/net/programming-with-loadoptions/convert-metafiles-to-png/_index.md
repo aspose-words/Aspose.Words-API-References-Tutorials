@@ -11,7 +11,7 @@ url: /ko/net/programming-with-loadoptions/convert-metafiles-to-png/
 
 올바른 도구와 지침을 사용하면 Word 문서에서 메타파일을 PNG로 쉽게 변환할 수 있습니다. 이 튜토리얼은 .NET용 Aspose.Words를 사용하는 과정을 안내합니다. 결국에는 전문가처럼 메타파일을 처리할 수 있게 될 것입니다!
 
-## 전제조건
+## 전제 조건
 
 다이빙을 시작하기 전에 다음 사항을 확인하세요.
 
@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 메타파일은 원래 형식으로 유지되므로 일부 애플리케이션이나 장치와 호환되지 않을 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 라이선스가 필요합니까?
- 예, 전체 기능을 사용하려면 라이센스가 필요합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 재판 목적으로.
+ 예, 전체 기능을 사용하려면 라이센스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 재판 목적으로.
 
 ### JPEG 또는 GIF와 같은 다른 그래픽 형식에 이 방법을 사용할 수 있습니까?
  이 특정 방법은 메타파일을 위한 것이지만 .NET용 Aspose.Words는 다양한 이미지 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은.

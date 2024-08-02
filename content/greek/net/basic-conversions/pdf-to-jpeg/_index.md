@@ -88,7 +88,7 @@ Install-Package Aspose.Words
 Πράγματι, είναι. Το Aspose.Words υποστηρίζει τόσο .NET Framework όσο και .NET Core.
 
 ### Χρειάζομαι άδεια χρήσης για να χρησιμοποιήσω το Aspose.Words;
- Μπορείτε να λάβετε μια δωρεάν δοκιμή[εδώ](https://releases.aspose.com/) ή αγοράστε μια άδεια[εδώ](https://purchase.aspose.com/buy).
+ Μπορείτε να λάβετε μια δωρεάν δοκιμή[εδώ](https://releases.aspose.com/) ή αγοράστε άδεια[εδώ](https://purchase.aspose.com/buy).
 
 ### Πού μπορώ να βρω περισσότερα μαθήματα για το Aspose.Words;
  Ελέγξτε το[τεκμηρίωση](https://reference.aspose.com/words/net/) για μια πληθώρα σεμιναρίων και οδηγών.

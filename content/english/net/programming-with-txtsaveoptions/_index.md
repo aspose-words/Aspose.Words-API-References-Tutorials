@@ -16,6 +16,6 @@ Thanks to these tutorials, you will be able to fully exploit the functionalities
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Add Bidi Marks in Word Document](./add-bidi-marks/) | Learn to add Bidi marks to a Word document using Aspose.Words for .NET and create professional multilingual documents. |
-| [Use Tab Character Per Level For List Indentation](./use-tab-character-per-level-for-list-indentation/) | Learn how to use the indent lists with tab characters feature in Aspose.Words for .NET. Follow this step-by-step guide to create well-structured and readable documents. Save time and improve your workflow with this powerful feature. Access the full tutorial now. |
-| [Use Space Character Per Level For List Indentation](./use-space-character-per-level-for-list-indentation/) | Step-by-step guide to using a space character per level for list indentation in Aspose.Words for .NET. Create well-structured Word documents with ease. |
+| [Add Bidi Marks in Word Document](./add-bidi-marks/) | Learn how to add bidirectional (Bidi) marks in Word documents using Aspose.Words for .NET with this guide. Ensure proper text direction for multi-language content. |
+| [Use Tab Character Per Level For List Indentation](./use-tab-character-per-level-for-list-indentation/) | Learn how to create multi-level lists with tabbed indentation using Aspose.Words for .NET. Follow this guide for precise list formatting in your documents. |
+| [Use Space Character Per Level For List Indentation](./use-space-character-per-level-for-list-indentation/) | Learn how to create multi-level lists with space character indentation in Aspose.Words for .NET. Step-by-step guide for precise document formatting. |

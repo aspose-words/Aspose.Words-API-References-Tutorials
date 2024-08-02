@@ -11,11 +11,11 @@ url: /ko/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff
 
 Word 문서에서 TIFF 이진화에 대한 임계값을 제어하는 방법이 궁금하신가요? 당신은 바로 이곳에 있습니다! 이 가이드는 .NET용 Aspose.Words를 사용하는 프로세스를 단계별로 안내합니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 관계없이 이 튜토리얼은 흥미롭고 따라하기 쉬우며 작업을 완료하는 데 필요한 모든 세부 정보가 포함되어 있습니다. 다이빙할 준비가 되셨나요? 갑시다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
-1.  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/) . 아직 라이센스가 없다면 라이센스를 얻을 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/).
+1.  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/) . 아직 라이센스가 없다면 라이센스를 얻을 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/).
 2. 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE.
 3. C#에 대한 기본 지식: C#에 조금 익숙해지면 도움이 되지만, 초보자라도 걱정하지 마세요. 모든 내용을 자세히 설명해 드리겠습니다.
 
@@ -37,7 +37,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
 
 ## 2단계: 문서 로드
 
@@ -98,4 +98,4 @@ Floyd-Steinberg 디더링은 최종 이미지의 시각적 아티팩트를 줄�
 Aspose.Words for .NET은 상용 라이브러리이지만 무료 평가판이나 임시 라이센스를 받아 해당 기능을 평가할 수 있습니다.
 
 ### 추가 문서는 어디서 찾을 수 있나요?
- .NET용 Aspose.Words에 대한 포괄적인 문서는 다음에서 찾을 수 있습니다.[Aspose 웹 사이트](https://reference.aspose.com/words/net/).
+ .NET용 Aspose.Words에 대한 포괄적인 문서는 다음에서 찾을 수 있습니다.[Aspose 웹사이트](https://reference.aspose.com/words/net/).

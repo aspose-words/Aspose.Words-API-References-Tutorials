@@ -2,64 +2,120 @@
 title: 優先幅タイプを取得
 linktitle: 優先幅タイプを取得
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word テーブル内のセルの種類と推奨幅の値を取得する方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書内の表セルの推奨幅タイプを取得する方法を、ステップバイステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-tables/retrieve-preferred-width-type/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書の表のセルから優先幅の種類とその値を取得する方法を学習します。ステップ バイ ステップ ガイドに従ってコードを理解し、この機能を実装します。このチュートリアルの最後には、Word 文書の表の特定のセルの優先幅の種類 (絶対、相対、または自動) とその値を取得できるようになります。
+Aspose.Words for .NET を使用して、Word 文書内の表セルの優先幅タイプを取得する方法を考えたことがありますか? まさにその通りです! このチュートリアルでは、プロセスをステップごとに分解して、簡単に実行できるようにします。経験豊富な開発者でも、初心者でも、このガイドは役に立ち、興味深いものになるでしょう。それでは、Word 文書内の表セル幅の管理の秘密を詳しく見ていきましょう。
 
-## ステップ1: プロジェクトのセットアップ
-1. Visual Studio を起動し、新しい C# プロジェクトを作成します。
-2. Aspose.Words for .NET ライブラリへの参照を追加します。
+## 前提条件
 
-## ステップ2: ドキュメントの読み込み
-ドキュメントで Words Processing を開始するには、次の手順に従います。
+始める前に、いくつか必要なものがあります:
 
-```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。ダウンロードはこちらからできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio などの IDE が必要です。
+3. C# の基礎知識: C# の基礎を理解しておくと、理解しやすくなります。
+4. サンプル文書: 作業できる表を含むWord文書を用意してください。任意の文書を使用できますが、ここでは次のように呼びます。`Tables.docx`このチュートリアルでは。
 
-//ドキュメントを読み込む
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## 名前空間のインポート
 
-必ず「YOUR DOCUMENTS DIRECTORY」を実際のドキュメント ディレクトリへのパスに置き換え、正しいファイル名を指定してください。
-
-## ステップ3: 優先幅のタイプと値を取得する
-次に、特定のテーブル セルの推奨される幅のタイプとその値を取得します。次のコードを使用します。
+まず最初に、必要な名前空間をインポートしましょう。この手順は、Aspose.Words の機能を使用するための環境を設定するため、非常に重要です。
 
 ```csharp
-//テーブルを取得する
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-//自動テーブル調整を有効にする
-table. AllowAutoFit = true;
-
-//最初の行の最初のセルを取得します
-Cell firstCell = table.FirstRow.FirstCell;
-
-//優先幅タイプとその値を取得する
-PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
-double value = firstCell.CellFormat.PreferredWidth.Value;
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-ここでは、ドキュメントを使用して最初のテーブルを取得し、次に自動テーブルフィットを有効にします。`AllowAutoFit`プロパティ。次に、表の最初の行の最初のセルを取得します。このセルから、`PreferredWidth.Type`財産とその価値`PreferredWidth.Value`財産。
+## ステップ1: ドキュメントディレクトリを設定する
 
-### Aspose.Words for .NET を使用して推奨幅タイプを取得するためのサンプル ソース コード 
+ドキュメントを操作する前に、ドキュメントが保存されているディレクトリを指定する必要があります。これは単純ですが重要なステップです。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。これにより、プログラムが作業するファイルの場所がわかります。
+
+## ステップ2: ドキュメントを読み込む
+
+次に、Word 文書をアプリケーションに読み込みます。これにより、プログラムでその内容を操作できるようになります。
+
+```csharp
 Document doc = new Document(dataDir + "Tables.docx");
+```
+
+このコード行は、`Tables.docx`指定されたディレクトリからドキュメントを取得します。これで、ドキュメントはさらなる操作の準備が整いました。
+
+## ステップ3: テーブルにアクセスする
+
+ドキュメントが読み込まれたので、操作するテーブルにアクセスする必要があります。簡単にするために、ドキュメントの最初のテーブルをターゲットにします。
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+この行は、ドキュメントから最初のテーブルを取得します。ドキュメントに複数のテーブルが含まれている場合は、インデックスを調整して別のテーブルを選択できます。
+
+## ステップ4: 表の自動調整を有効にする
+
+テーブルの列が自動的に調整されるようにするには、AutoFit プロパティを有効にする必要があります。
+
+```csharp
 table.AllowAutoFit = true;
+```
+
+設定`AllowAutoFit`に`true`テーブルの列がその内容に基づいてサイズ変更され、テーブルに動的な感覚が与えられます。
+
+## ステップ5: 最初のセルの推奨幅タイプを取得する
+
+ここで、このチュートリアルの核心である、テーブルの最初のセルの推奨される幅タイプを取得します。
+
+```csharp
 Cell firstCell = table.FirstRow.FirstCell;
 PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
+これらのコード行は、表の最初の行の最初のセルにアクセスし、その優先幅タイプと値を取得します。`PreferredWidthType`できる`Auto`, `Percent`、 または`Point`幅がどのように決定されるかを示します。
+
+## ステップ6: 結果を表示する
+
+最後に、取得した情報をコンソールに表示しましょう。
+
+```csharp
+Console.WriteLine("Preferred Width Type: " + type);
+Console.WriteLine("Preferred Width Value: " + value);
+```
+
+これらの行は、優先される幅のタイプと値をコンソールに出力し、コード実行の結果を確認できるようにします。
+
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書内の表のセルから推奨される幅の種類とその値を取得する方法を学習しました。このステップ バイ ステップ ガイドに従い、提供されている C# コードを実装することで、Word 文書の表内の特定のセルのこの情報を取得できます。
+
+これで完了です。Aspose.Words for .NET を使用して Word 文書内の表セルの推奨幅タイプを取得することは、管理しやすい手順に分割すれば簡単です。このガイドに従うことで、Word 文書内の表プロパティを簡単に操作でき、文書管理タスクの効率が大幅に向上します。
+
+## よくある質問
+
+### テーブル内のすべてのセルの優先幅タイプを取得できますか?
+
+はい、テーブル内の各セルをループして、優先される幅のタイプを個別に取得できます。
+
+### 考えられる値は？`PreferredWidthType`?
+
+`PreferredWidthType`できる`Auto`, `Percent`、 または`Point`.
+
+### 優先する幅のタイプをプログラムで設定することは可能ですか?
+
+もちろんです！好みの幅のタイプと値を設定するには、`PreferredWidth`の財産`CellFormat`クラス。
+
+### この方法は Word 以外の文書の表にも使用できますか?
+
+このチュートリアルでは、特に Word 文書について説明します。他の種類の文書の場合は、適切な Aspose ライブラリを使用する必要があります。
+
+### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
+
+はい、Aspose.Words for .NETはライセンス製品です。無料トライアルをご利用いただけます。[ここ](https://releases.aspose.com/)または一時ライセンス[ここ](https://purchase.aspose.com/temporary-license/).

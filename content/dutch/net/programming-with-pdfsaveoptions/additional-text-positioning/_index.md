@@ -60,7 +60,7 @@ Zodra uw project is opgezet, is de volgende stap het laden van het Word-document
     ```csharp
     PdfSaveOptions saveOptions = new PdfSaveOptions();
     ```
-2.  Extra tekstpositionering inschakelen: Stel de`AdditionalTextPositioning`eigendom aan`true`.
+2.  Schakel aanvullende tekstpositionering in: Stel de`AdditionalTextPositioning`eigendom aan`true`.
     ```csharp
     saveOptions.AdditionalTextPositioning = true;
     ```

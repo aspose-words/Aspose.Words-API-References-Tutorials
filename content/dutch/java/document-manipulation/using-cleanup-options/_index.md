@@ -60,7 +60,7 @@ doc.getMailMerge().executeWithRegions(data);
 doc.save("WorkingWithCleanupOptions.RemoveUnmergedRegions.docx");
 ```
 
-In dit voorbeeld openen we een bestaand document met samenvoeggebieden, stellen we de opschoonopties in om ongebruikte regio's te verwijderen en voeren we vervolgens de samenvoegbewerking uit met lege gegevens. Dit proces verwijdert automatisch de ongebruikte gebieden uit het document.
+In dit voorbeeld openen we een bestaand document met samenvoegregio's, stellen we de opschoonopties zo in dat ongebruikte regio's worden verwijderd en voeren we vervolgens de samenvoegbewerking uit met lege gegevens. Dit proces verwijdert automatisch de ongebruikte gebieden uit het document.
 
 ## Stap 3: Lege velden verwijderen
 

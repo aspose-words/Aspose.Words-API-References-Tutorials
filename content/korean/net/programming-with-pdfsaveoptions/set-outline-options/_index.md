@@ -11,7 +11,7 @@ url: /ko/net/programming-with-pdfsaveoptions/set-outline-options/
 
 특히 전문적 또는 학문적 목적으로 문서 작업을 할 때 콘텐츠를 효과적으로 구성하는 것이 중요합니다. PDF 문서의 유용성을 높이는 한 가지 방법은 개요 옵션을 설정하는 것입니다. 개요 또는 책갈피를 사용하면 사용자는 책의 장처럼 문서를 효율적으로 탐색할 수 있습니다. 이 가이드에서는 .NET용 Aspose.Words를 사용하여 이러한 옵션을 설정하여 PDF 파일을 잘 구성하고 사용자 친화적으로 만드는 방법을 자세히 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 확인해야 할 몇 가지 사항은 다음과 같습니다.
 
@@ -38,7 +38,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- 위의 코드 조각에서`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오. 이는 프로그램에 Word 문서를 찾을 수 있는 위치를 알려줍니다.
+ 위의 코드 조각에서`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요. 이는 프로그램에 Word 문서를 찾을 수 있는 위치를 알려줍니다.
 
 ## 2단계: PDF 저장 옵션 구성
 

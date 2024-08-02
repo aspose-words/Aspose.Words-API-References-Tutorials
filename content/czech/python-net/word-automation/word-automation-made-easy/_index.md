@@ -137,7 +137,7 @@ Ano, Aspose.Words je navržen tak, aby efektivně zvládal velké objemy zpracov
 Ano, Aspose.Words lze používat ve spojení s cloudovými platformami, takže je ideální pro cloudové aplikace.
 
 ### Co je Word Automation a jak ji Aspose.Words usnadňuje?
-Automatizace aplikace Word zahrnuje programovou interakci s dokumenty aplikace Word. Aspose.Words pro Python zjednodušuje tento proces tím, že poskytuje výkonnou knihovnu s širokou škálou funkcí pro bezproblémové vytváření, manipulaci a zpracování dokumentů Wordu.
+Automatizace aplikace Word zahrnuje programovou interakci s dokumenty aplikace Word. Aspose.Words for Python zjednodušuje tento proces tím, že poskytuje výkonnou knihovnu se širokou škálou funkcí pro bezproblémové vytváření, manipulaci a zpracování dokumentů Wordu.
 
 ### Mohu používat Aspose.Words pro Python na různých operačních systémech?**
 Ano, Aspose.Words pro Python je kompatibilní s různými operačními systémy, včetně Windows, macOS a Linuxu, díky čemuž je univerzální pro různá vývojová prostředí.

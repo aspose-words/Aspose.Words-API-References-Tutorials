@@ -106,7 +106,7 @@ Ja, Aspose.Words voor .NET kan worden geïntegreerd met elke .NET-toepassing, in
 
 ### Is het mogelijk om het formulierveld van het selectievakje aan te passen?
 
-Absoluut! Aspose.Words voor .NET biedt verschillende parameters om het formulierveld van het selectievakje aan te passen, inclusief de grootte, standaardstatus en meer.
+Absoluut! Aspose.Words voor .NET biedt verschillende parameters om het formulierveld van het selectievakje aan te passen, inclusief de grootte, de standaardstatus en meer.
 
 ### Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?
 

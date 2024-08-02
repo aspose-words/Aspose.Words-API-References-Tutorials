@@ -2,103 +2,115 @@
 title: 댓글 추가
 linktitle: 댓글 추가
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에 설명을 추가하는 방법을 알아보세요.
+description: 가이드와 함께 Aspose.Words for .NET을 사용하여 Word 문서에 주석을 추가하는 방법을 알아보세요. 문서 공동 작업 프로세스를 손쉽게 향상하세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-comments/add-comments/
 ---
+## 소개
 
-이 포괄적인 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 주석을 추가하는 방법을 배웁니다. 우리는 프로세스를 안내하고 필요한 C# 코드 조각을 제공할 것입니다. 이 가이드가 끝나면 문서에 주석을 삽입하고 해당 내용을 사용자 정의할 수 있게 됩니다.
+.NET용 Aspose.Words를 사용하여 Word 문서에 주석을 추가하는 방법에 대한 자세한 가이드에 오신 것을 환영합니다! 프로그래밍 방식으로 주석을 통합하여 문서 검토 프로세스를 간소화하려는 경우 올바른 위치에 오셨습니다. 이 튜토리얼은 환경 설정부터 Word 문서에 주석 작성 및 저장까지 알아야 할 모든 것을 안내합니다. 본격적으로 문서 공동작업을 쉽게 만들어 보세요!
 
-## 전제조건
-시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
-- 시스템에 설치된 .NET 라이브러리용 Aspose.Words.
+## 전제 조건
 
-## 1단계: 새 문서 및 DocumentBuilder 만들기
-시작하려면 Document 클래스를 사용하여 새 문서를 만들고 DocumentBuilder 객체를 초기화합니다.
+시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
+
+1. .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+2. .NET Framework: 컴퓨터에 .NET Framework가 설치되어 있는지 확인하세요.
+3. 개발 환경: 코드를 작성하고 실행하기 위한 Visual Studio와 같은 IDE입니다.
+4. C#에 대한 기본 지식: C# 프로그래밍 언어에 익숙하면 예제를 따라가는 데 도움이 됩니다.
+
+## 네임스페이스 가져오기
+
+먼저, 필요한 네임스페이스를 프로젝트로 가져와야 합니다. 이를 통해 Aspose.Words 작업에 필요한 클래스와 메서드에 액세스할 수 있습니다.
+
+```csharp
+using System;
+using Aspose.Words;
+```
+
+이제 프로세스를 따라하기 쉬운 단계로 나누어 보겠습니다. 각 단계에는 논리와 기능을 이해하는 데 도움이 되는 자세한 설명이 포함되어 있습니다.
+
+## 1단계: 문서 디렉토리 설정
+
+ 먼저 문서가 저장될 디렉터리를 정의해야 합니다. 자리 표시자를 사용하겠습니다.`YOUR DOCUMENT DIRECTORY` 실제 디렉터리 경로로 바꿔야 합니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## 2단계: 문서 초기화
+
+다음으로 새 문서와 DocumentBuilder 개체를 초기화하겠습니다. DocumentBuilder는 문서를 작성하고 수정하는 데 도움이 됩니다.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2단계: 문서에 콘텐츠 추가
-그런 다음 DocumentBuilder 개체를 사용하여 문서에 원하는 내용을 추가합니다. 이 예에서는 일부 텍스트를 추가합니다.
+## 3단계: 문서에 텍스트 추가
+
+DocumentBuilder를 사용하여 문서에 일부 텍스트를 추가하겠습니다. 이 텍스트에 의견을 첨부할 것입니다.
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## 3단계: 댓글 작성 및 내용 추가
-댓글을 추가하려면 Document 객체, 작성자 이름, 작성자 이니셜 및 현재 날짜를 전달하여 Comment 클래스의 인스턴스를 만듭니다.
+## 4단계: 댓글 작성 및 추가
+
+이제 댓글을 작성할 차례입니다. 문서, 작성자 이름, 이니셜 및 날짜를 지정하여 새 Comment 개체를 초기화합니다.
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-그런 다음 현재 단락에 주석을 추가합니다.
+## 5단계: 단락에 주석 첨부
+
+텍스트를 추가한 현재 단락에 주석을 첨부해야 합니다. 이는 단락에 주석을 추가하여 수행됩니다.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-단락, 텍스트 등 댓글에 내용을 추가합니다.
+## 6단계: 댓글에 콘텐츠 추가
+
+마지막으로 댓글에 내용을 추가하겠습니다. 주석 텍스트를 보관할 새 단락 및 실행을 만든 다음 이를 주석에 추가합니다.
 
 ```csharp
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
-## 4단계: 문서 저장
-주석과 해당 내용을 추가한 후 Document 클래스의 Save 메서드를 사용하여 문서를 파일에 저장합니다.
+## 7단계: 문서 저장
+
+마지막 단계는 주석이 포함된 문서를 저장하는 것입니다. 디렉토리와 파일 이름을 지정하겠습니다.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
-```
-
-## .NET용 Aspose.Words를 사용하여 주석 추가를 위한 예제 소스 코드
-다음은 .NET용 Aspose.Words를 사용하여 주석을 추가하는 전체 소스 코드입니다.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Write("Some text is added.");
-
-Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-builder.CurrentParagraph.AppendChild(comment);
-
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
 ## 결론
-축하해요! Aspose.Words for .NET을 사용하여 Word 문서에 주석을 추가하는 방법을 성공적으로 배웠습니다. 단계별 가이드를 따르고 제공된 소스 코드를 활용하면 이제 문서에 주석을 삽입하고 해당 내용을 사용자 정의할 수 있습니다.
 
-댓글은 공동작업, 추가 정보 제공, 문서 내 메모 작성에 유용합니다. 특정 요구 사항을 충족하기 위해 다양한 작성자 이름, 이니셜 및 설명 내용을 실험해 보세요.
+거기 있어요! .NET용 Aspose.Words를 사용하여 Word 문서에 주석을 성공적으로 추가했습니다. 이 강력한 기능은 문서 검토 프로세스를 크게 향상시켜 보다 쉽게 협업하고 피드백을 전달할 수 있도록 해줍니다. 문서 관리 작업을 더욱 간소화하려면 Aspose.Words의 다른 기능을 탐색하는 것을 잊지 마십시오.
 
-### FAQ
+## FAQ
 
-#### Q: Aspose.Words for .NET 문서에 주석을 어떻게 추가할 수 있나요?
+### .NET용 Aspose.Words란 무엇입니까?
 
-A: Aspose.Words for .NET 문서에 주석을 추가하려면 튜토리얼에 언급된 단계를 따라야 합니다.
+Aspose.Words for .NET은 개발자가 .NET 언어를 사용하여 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있도록 하는 강력한 API입니다.
 
-#### Q: .NET용 Aspose.Words에서 주석 텍스트의 서식을 지정할 수 있나요?
+### 단일 문서에 여러 댓글을 추가할 수 있나요?
 
-A: 예, 사용 가능한 서식 지정 속성을 사용하여 .NET용 Aspose.Words에서 주석 텍스트의 서식을 지정할 수 있습니다.
+예, 다양한 단락이나 텍스트 실행에 댓글을 만들고 추가하는 과정을 반복하여 단일 문서에 여러 댓글을 추가할 수 있습니다.
 
-#### Q: 문서에 있는 모든 댓글을 어떻게 검색할 수 있나요?
+### 댓글 모양을 어떻게 맞춤설정할 수 있나요?
 
- A: 다음을 사용하여 문서에 있는 모든 주석을 검색할 수 있습니다.`Document.Comments` 재산.
+Aspose.Words는 주석의 내용과 구조에 중점을 두고 있지만 Word에 내장된 서식 기능을 사용하여 모양을 사용자 정의할 수 있습니다.
 
-#### Q: Aspose.Words for .NET에서 특정 댓글을 삭제할 수 있나요?
+### 프로그래밍 방식으로 주석을 제거할 수 있습니까?
 
- A: 예, 다음을 사용하여 .NET용 Aspose.Words에서 특정 주석을 제거할 수 있습니다.`Comment.Remove` 방법.
+예, 문서의 주석을 반복하고 필요에 따라 제거하여 프로그래밍 방식으로 주석을 제거할 수 있습니다.
 
-#### Q: Aspose.Words for .NET에서 기존 주석 텍스트를 어떻게 수정합니까?
+### 댓글에 답글을 추가할 수 있나요?
 
- A: Aspose.Words for .NET의 기존 주석 텍스트를 수정하려면`Comment.Text` 해당 속성`Comment` 개체를 선택하고 필요에 따라 텍스트를 수정합니다.
+Aspose.Words를 사용하면 스레드된 댓글로 작업할 수 있으므로 기존 댓글에 답변을 추가하여 더 자세한 토론을 할 수 있습니다.

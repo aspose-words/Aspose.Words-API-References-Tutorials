@@ -115,7 +115,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以�
 是的，透過使用`ImportFormatMode.KeepSourceFormatting`，當來源文件插入目標文件時，會保留來源文件的格式。
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？  
-是的，Aspose.Words for .NET 需要完整功能的授權。您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
+是的，Aspose.Words for .NET 需要完整功能的授權。你可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
 
 ### 我可以自動化這個流程嗎？  
 絕對地！所描述的方法可以合併到更大的應用程式中以自動化文件處理任務。

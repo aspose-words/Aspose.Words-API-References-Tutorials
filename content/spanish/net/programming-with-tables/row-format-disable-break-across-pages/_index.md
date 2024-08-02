@@ -2,67 +2,86 @@
 title: Formato de fila Desactivar salto entre páginas
 linktitle: Formato de fila Desactivar salto entre páginas
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo deshabilitar el salto de línea para una tabla en varias páginas en un documento de Word con Aspose.Words para .NET.
+description: Aprenda a deshabilitar los saltos de fila entre páginas en documentos de Word usando Aspose.Words para .NET para mantener la legibilidad y el formato de las tablas.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
+## Introducción
 
-En este tutorial, aprenderemos cómo deshabilitar el salto de línea de una tabla de varias páginas en un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá desactivar el salto de línea para todas las filas de su tabla en sus documentos de Word.
+Cuando trabaje con tablas en documentos de Word, es posible que desee asegurarse de que las filas no se divida entre páginas, lo que puede ser esencial para mantener la legibilidad y el formato de sus documentos. Aspose.Words para .NET proporciona una forma sencilla de desactivar los saltos de fila entre páginas.
 
-## Paso 1: configuración del proyecto
-1. Inicie Visual Studio y cree un nuevo proyecto de C#.
-2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
+En este tutorial, lo guiaremos a través del proceso de deshabilitar los saltos de fila entre páginas en un documento de Word usando Aspose.Words para .NET.
 
-## Paso 2: cargar el documento
-Para iniciar el procesamiento de textos con el documento, siga estos pasos:
+## Requisitos previos
 
-```csharp
-// Ruta a su directorio de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
+- Aspose.Words para la biblioteca .NET instalada.
+- Un documento de Word con una tabla que abarca varias páginas.
 
-// Cargar el documento
-Document doc = new Document(dataDir + "Table spanning two pages.docx");
-```
+## Importar espacios de nombres
 
-Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos y proporcione el nombre de archivo correcto.
-
-## Paso 3: deshabilite el salto de fila de la tabla
-A continuación, desactivaremos la división de filas para todas las filas de la tabla. Utilice el siguiente código:
+Primero, importe los espacios de nombres necesarios en su proyecto:
 
 ```csharp
-// recuperar la mesa
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Deshabilitar el salto de fila para todas las filas de la tabla
-foreach(Row row in table.Rows)
-row.RowFormat.AllowBreakAcrossPages = false;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Aquí usamos el documento para buscar la primera tabla y luego recorrer todas las filas de la tabla usando un bucle foreach. Dentro del bucle, deshabilitamos la división de filas para cada fila configurando el`RowFormat.AllowBreakAcrossPages`propiedad a`false`.
+## Paso 1: cargue el documento
 
-## Paso 4: guardar el documento modificado
-Finalmente, debemos guardar el documento modificado con el salto de línea de la tabla deshabilitado. Utilice el siguiente código:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
-```
-
-Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
-
-### Código fuente de muestra para formato de fila Deshabilitar salto entre páginas usando Aspose.Words para .NET 
+Cargue el documento que contiene la tabla que abarca varias páginas.
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
+```
+
+## Paso 2: accede a la mesa
+
+Accede a la primera tabla del documento. Esto supone que la tabla que desea modificar es la primera tabla del documento.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-// Deshabilite la división entre páginas para todas las filas de la tabla.
+```
+
+## Paso 3: deshabilite la división de páginas para todas las filas
+
+ Recorra cada fila de la tabla y establezca el`AllowBreakAcrossPages`propiedad a`false`. Esto garantiza que las filas no se dividirán entre páginas.
+
+```csharp
+// Deshabilite la división de páginas para todas las filas de la tabla.
 foreach (Row row in table.Rows)
-	row.RowFormat.AllowBreakAcrossPages = false;
+    row.RowFormat.AllowBreakAcrossPages = false;
+```
+
+## Paso 4: guarde el documento
+
+Guarde el documento modificado en su directorio especificado.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo deshabilitar el salto de línea de una tabla de varias páginas en un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede aplicar esta desactivación a sus tablas en sus documentos de Word.
+
+En este tutorial, demostramos cómo deshabilitar los saltos de fila entre páginas en un documento de Word usando Aspose.Words para .NET. Si sigue los pasos descritos anteriormente, puede asegurarse de que las filas de su tabla permanezcan intactas y no se divida en páginas, manteniendo la legibilidad y el formato del documento.
+
+## Preguntas frecuentes
+
+### ¿Puedo desactivar los saltos de fila entre páginas para una fila específica en lugar de para todas las filas?  
+ Sí, puede desactivar los saltos de fila para filas específicas accediendo a la fila deseada y configurando su`AllowBreakAcrossPages`propiedad a`false`.
+
+### ¿Este método funciona para tablas con celdas combinadas?  
+ Sí, este método funciona para tablas con celdas combinadas. La propiedad`AllowBreakAcrossPages` se aplica a toda la fila, independientemente de la combinación de celdas.
+
+### ¿Funcionará este método si la tabla está anidada dentro de otra tabla?  
+Sí, puedes acceder y modificar tablas anidadas de la misma manera. Asegúrese de hacer referencia correctamente a la tabla anidada por su índice u otras propiedades.
+
+### ¿Cómo puedo comprobar si una fila permite dividir páginas?  
+ Puedes comprobar si una fila permite dividir páginas accediendo al`AllowBreakAcrossPages` propiedad de la`RowFormat` y comprobando su valor.
+
+### ¿Hay alguna manera de aplicar esta configuración a todas las tablas de un documento?  
+Sí, puede recorrer todas las tablas del documento y aplicar esta configuración a cada una.

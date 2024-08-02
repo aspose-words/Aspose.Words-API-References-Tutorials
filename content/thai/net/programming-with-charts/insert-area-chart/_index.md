@@ -2,7 +2,7 @@
 title: แทรกแผนภูมิพื้นที่ลงในเอกสาร Word
 linktitle: แทรกแผนภูมิพื้นที่ลงในเอกสาร Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีแทรกแผนภูมิพื้นที่ลงในเอกสารโดยใช้ Aspose.Words สำหรับ .NET เพิ่มข้อมูลชุดและบันทึกเอกสารด้วยแผนภูมิ
+description: เรียนรู้วิธีแทรกแผนภูมิพื้นที่ลงในเอกสารโดยใช้ Aspose.Words สำหรับ .NET เพิ่มข้อมูลซีรีส์และบันทึกเอกสารด้วยแผนภูมิ
 type: docs
 weight: 10
 url: /th/net/programming-with-charts/insert-area-chart/

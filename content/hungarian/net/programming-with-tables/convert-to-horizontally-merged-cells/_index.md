@@ -2,55 +2,82 @@
 title: Konvertálás vízszintesen egyesített cellákká
 linktitle: Konvertálás vízszintesen egyesített cellákká
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan alakíthat át táblázatcellákat vízszintesen egyesített cellákká egy Word-dokumentumban az Aspose.Words for .NET segítségével.
+description: A függőlegesen egyesített cellákat vízszintesen egyesített cellákká alakíthatja át a Word dokumentumokban az Aspose.Word for .NET segítségével. Lépésről lépésre útmutató a zökkenőmentes asztalelrendezéshez.
 type: docs
 weight: 10
 url: /hu/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban megtanuljuk, hogyan lehet az Aspose.Words for .NET-et használni a táblázatcellák vízszintesen egyesített celláivá alakítására egy Word-dokumentumban. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Ennek az oktatóanyagnak a végén képes lesz programozottan kezelni a Word-dokumentumokban lévő táblázatcellákat.
+Amikor Word dokumentumokban táblázatokkal dolgozik, gyakran kell kezelnie a cellaegyesítést a tisztább és rendezettebb elrendezés elérése érdekében. Az Aspose.Words for .NET hatékony módot kínál a függőlegesen egyesített cellák vízszintesen egyesített cellákká alakítására, így biztosítva, hogy a táblázat úgy nézzen ki, ahogyan szeretné. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a folyamaton.
 
-## 1. lépés: A projekt beállítása
-1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# projektet.
-2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
+## Előfeltételek
 
-## 2. lépés: A dokumentum betöltése és a táblázat elérése
-A Szövegfeldolgozás elindításához a táblázattal be kell töltenünk az azt tartalmazó dokumentumot, és hozzá kell férnünk. Kovesd ezeket a lepeseket:
+Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindennel rendelkezik, amire szüksége van:
+
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Letöltheti a[kiadási oldal](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Olyan fejlesztői környezet, mint a Visual Studio.
+3. C# alapismeretek: C# programozási nyelv ismerete.
+
+## Névterek importálása
+
+Először is importálnunk kell a projektünkhöz szükséges névtereket. Ez lehetővé teszi számunkra az Aspose.Words funkciók használatát.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Bontsuk le a folyamatot egyszerű lépésekre, hogy könnyebben követhető legyen.
+
+## 1. lépés: Töltse be a dokumentumot
+
+Először be kell töltenie a módosítani kívánt táblázatot tartalmazó dokumentumot. Ennek a dokumentumnak már léteznie kell a projektkönyvtárban.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Töltse be a dokumentumot
 Document doc = new Document(dataDir + "Table with merged cells.docx");
+```
 
-// Hozzáférés a tömbhöz
+## 2. lépés: Nyissa meg a táblázatot
+
+Ezután el kell érnünk a dokumentumon belüli adott táblázatot. Feltételezzük, hogy a táblázat a dokumentum első részében található.
+
+```csharp
+// Nyissa meg a dokumentum első táblázatát
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára. Győződjön meg arról is, hogy a dokumentum tartalmaz egy táblázatot vízszintesen egyesített cellákkal.
-
 ## 3. lépés: Konvertálás vízszintesen egyesített cellákká
- Ezután a táblázat celláit vízszintesen egyesített cellákká alakítjuk át a`ConvertToHorizontallyMergedCells()` módszer. Használja a következő kódot:
+
+ Most a táblázat függőlegesen egyesített celláit vízszintesen egyesített cellákká alakítjuk. Ez a`ConvertToHorizontallyMergedCells` módszer.
 
 ```csharp
-// Konvertálás vízszintesen egyesített cellákká
-table. ConvertToHorizontallyMergedCells();
-```
-
- Itt csak a`ConvertToHorizontallyMergedCells()` metódus a tömbön az átalakítás végrehajtásához.
-
-### Minta forráskód a vízszintesen egyesített cellákká konvertáláshoz az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table with merged cells.docx");
-	Table table = doc.FirstSection.Body.Tables[0];
-	// Most az egyesített cellák megfelelő egyesítési jelzőkkel rendelkeznek.
-	table.ConvertToHorizontallyMergedCells();
+// A függőlegesen egyesített cellákat vízszintesen egyesített cellákká alakíthatja
+table.ConvertToHorizontallyMergedCells();
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet táblázatcellákat vízszintesen egyesített cellákká alakítani egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C# kódot, akkor programozottan kezelheti a Word-dokumentumok táblázatcelláit. Ez a funkció lehetővé teszi adatainak rugalmas és személyre szabott táblázatban történő kezelését és rendszerezését.
+
+És ez az! Sikeresen konvertálta a függőlegesen egyesített cellákat vízszintesen egyesített cellákká egy Word-dokumentumban az Aspose.Words for .NET segítségével. Ezzel a módszerrel a táblázatok jól rendszerezettek és könnyebben olvashatók lesznek. Az alábbi lépések követésével testreszabhatja és módosíthatja a Word-dokumentumokat, hogy megfeleljenek sajátos igényeinek.
+
+## GYIK
+
+### Használhatom az Aspose.Words for .NET-et más programozási nyelvekkel?  
+Az Aspose.Words for .NET elsősorban olyan .NET-nyelvekhez készült, mint a C#. Használhatja azonban más .NET által támogatott nyelvekkel, például a VB.NET-tel.
+
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?  
+ Igen, letöltheti a[ingyenes próbaverzió](https://releases.aspose.com/) az Aspose webhelyéről.
+
+### Hogyan kaphatok támogatást, ha problémákba ütközöm?  
+ Meglátogathatja a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
+
+### Jelentkezhetek licencet fájlból vagy adatfolyamból?  
+Igen, az Aspose.Words for .NET lehetővé teszi a licenc alkalmazását fájlból és adatfolyamból egyaránt. További információt a[dokumentáció](https://reference.aspose.com/words/net/).
+
+### Milyen egyéb funkciókat kínál az Aspose.Words for .NET?  
+ Az Aspose.Words for .NET szolgáltatások széles skáláját kínálja, beleértve a dokumentumok generálását, manipulálását, konvertálását és megjelenítését. Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.

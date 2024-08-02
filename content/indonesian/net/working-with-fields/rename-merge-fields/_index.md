@@ -2,63 +2,42 @@
 title: Ganti nama Bidang Gabungan
 linktitle: Ganti nama Bidang Gabungan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Dalam tutorial ini, Anda akan mempelajari cara mengganti nama bidang gabungan dalam dokumen menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengganti nama bidang gabungan di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk memanipulasi dokumen Anda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/rename-merge-fields/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini yang menggunakan fitur penggantian nama bidang gabungan Aspose.Words untuk .NET. Ikuti setiap langkah dengan hati-hati untuk mendapatkan hasil yang diinginkan.
+Mengganti nama bidang gabungan di dokumen Word bisa menjadi tugas yang menakutkan jika Anda tidak terbiasa dengan alat dan teknik yang tepat. Tapi jangan khawatir, saya siap membantu Anda! Dalam panduan ini, kita akan mendalami proses penggantian nama bidang gabungan menggunakan Aspose.Words untuk .NET, pustaka canggih yang memudahkan manipulasi dokumen. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial langkah demi langkah ini akan memandu Anda melalui semua yang perlu Anda ketahui.
 
-## Langkah 1: Pengaturan Direktori Dokumen
+## Prasyarat
 
-Dalam kode yang diberikan, Anda harus menentukan direktori dokumen Anda. Ganti nilai "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai ke direktori dokumen Anda.
+Sebelum kita mendalami detailnya, pastikan Anda memiliki semua yang Anda butuhkan:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan sangat membantu.
 
-## Langkah 2: Membuat dokumen dan menyisipkan bidang gabungan
+## Impor Namespace
 
-Kita mulai dengan membuat dokumen baru dan menggunakan a`DocumentBuilder` untuk menyisipkan bidang gabungan.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
-builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
-```
-
-## Langkah 3: Mengganti Nama Bidang Gabungan
-
-Kami mengulangi setiap bidang dalam rentang dokumen, dan jika itu adalah bidang gabungan, kami mengganti nama bidang tersebut dengan menambahkan "_Berganti nama menjadi "akhiran.
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini akan memastikan bahwa kode kita memiliki akses ke semua kelas dan metode yang kita perlukan.
 
 ```csharp
-foreach(Field f in doc.Range.Fields)
-{
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
-}
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Langkah 4: Menyimpan dokumen
+Baiklah, setelah kita memahami dasar-dasarnya, mari kita masuk ke bagian yang menyenangkan! Ikuti langkah-langkah berikut untuk mengganti nama bidang gabungan di dokumen Word Anda.
 
- Akhirnya, kami menelepon`Save()` metode untuk menyimpan dokumen yang dimodifikasi.
+## Langkah 1: Buat Dokumen dan Sisipkan Bidang Gabungan
 
-```csharp
-doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
-```
-
-### Contoh kode sumber untuk mengganti nama bidang gabungan dengan Aspose.Words untuk .NET
+Untuk memulai, kita perlu membuat dokumen baru dan menyisipkan beberapa kolom gabungan. Ini akan menjadi titik awal kami.
 
 ```csharp
 // Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Buat dokumen dan masukkan bidang gabungan.
 Document doc = new Document();
@@ -66,42 +45,62 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
+```
 
+ Di sini, kami membuat dokumen baru dan menggunakan`DocumentBuilder` kelas untuk menyisipkan dua bidang gabungan:`MyMergeField1`Dan`MyMergeField2`.
+
+## Langkah 2: Ulangi Bidang dan Ganti Namanya
+
+Sekarang, mari tulis kode untuk menemukan dan mengganti nama bidang gabungan. Kami akan mengulang semua bidang dalam dokumen, memeriksa apakah bidang tersebut merupakan bidang gabungan, dan mengganti namanya.
+
+```csharp
 // Ganti nama bidang gabungan.
-foreach(Field f in doc.Range.Fields)
+foreach (Field f in doc.Range.Fields)
 {
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
+    if (f.Type == FieldType.FieldMergeField)
+    {
+        FieldMergeField mergeField = (FieldMergeField)f;
+        mergeField.FieldName = mergeField.FieldName + "_Renamed";
+        mergeField.Update();
+    }
 }
+```
 
+ Dalam cuplikan ini, kami menggunakan a`foreach` loop untuk mengulangi semua bidang dalam dokumen. Untuk setiap bidang, kami memeriksa apakah itu menggunakan bidang gabungan`f.Type == FieldType.FieldMergeField` . Jika ya, kami melemparkannya ke`FieldMergeField` dan menambahkan`_Renamed` untuk namanya.
+
+## Langkah 3: Simpan Dokumen
+
+Terakhir, mari simpan dokumen kita dengan bidang gabungan yang diganti namanya.
+
+```csharp
 // Simpan dokumennya.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-Ikuti langkah-langkah berikut untuk mengganti nama bidang gabungan di dokumen Anda menggunakan Aspose.Words untuk .NET.
+ Baris kode ini menyimpan dokumen ke direktori tertentu dengan nama`WorkingWithFields.RenameMergeFields.docx`.
 
-### FAQ
+## Kesimpulan
 
-#### T: Bagaimana cara mengganti nama bidang gabungan di dokumen Word menggunakan Aspose.Words untuk .NET?
+Dan itu dia! Mengganti nama bidang gabungan di dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah setelah Anda mengetahui langkah-langkahnya. Dengan mengikuti panduan ini, Anda dapat dengan mudah memanipulasi dan menyesuaikan dokumen Word agar sesuai dengan kebutuhan Anda. Baik Anda membuat laporan, membuat surat yang dipersonalisasi, atau mengelola data, teknik ini akan berguna.
 
- J: Untuk mengganti nama bidang gabungan dalam dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengulang bidang dalam dokumen menggunakan`FieldMergingArgs` kelas dan gunakan`FieldMergingArgs.FieldName` metode untuk mengganti nama bidang.
+## FAQ
 
-#### T: Apakah mungkin untuk mengganti nama hanya bidang gabungan tertentu dalam dokumen Word dengan Aspose.Words untuk .NET?
+### Bisakah saya mengganti nama beberapa bidang gabungan sekaligus?
 
-J: Ya, dimungkinkan untuk mengganti nama hanya bidang gabungan tertentu dalam dokumen Word dengan Aspose.Words untuk .NET. Anda dapat memfilter bidang mana yang akan diganti namanya menggunakan kriteria tertentu, seperti nama bidang atau properti relevan lainnya. Kemudian Anda dapat mengganti nama bidang terkait menggunakan`FieldMergingArgs.FieldName` metode.
+Sangat! Kode yang diberikan sudah menunjukkan cara mengulang dan mengganti nama semua bidang gabungan dalam dokumen.
 
-#### T: Bagaimana cara memeriksa apakah bidang gabungan berhasil diganti namanya di dokumen Word dengan Aspose.Words untuk .NET?
+### Apa yang terjadi jika bidang gabungan tidak ada?
 
- J: Untuk memeriksa apakah bidang gabungan berhasil diganti namanya dalam dokumen Word dengan Aspose.Words untuk .NET, Anda dapat menggunakan`FieldMergedArgs` kelas dan akses`FieldMergedArgs.IsMerged` properti untuk menentukan apakah bidang tersebut diganti namanya dengan hit.
+Jika bidang gabungan tidak ada, kode akan melewatinya begitu saja. Tidak ada kesalahan yang akan terjadi.
 
-#### T: Apa konsekuensi mengganti nama bidang gabungan di dokumen Word dengan Aspose.Words untuk .NET?
+### Bisakah saya mengubah awalan alih-alih menambahkan nama?
 
-J: Saat Anda mengganti nama bidang gabungan di dokumen Word dengan Aspose.Words untuk .NET, hal ini akan mengubah nama bidang dalam dokumen, yang mungkin berdampak pada fungsionalitas atau proses lain yang bergantung pada nama bidang. Pastikan untuk mempertimbangkan potensi konsekuensi ini sebelum mengganti nama bidang gabungan.
+ Ya, Anda dapat memodifikasinya`mergeField.FieldName` tugas untuk mengaturnya ke nilai apa pun yang Anda inginkan.
 
-#### T: Apakah mungkin memulihkan nama asli bidang gabungan setelah mengganti namanya dengan Aspose.Words untuk .NET?
+### Apakah Aspose.Words untuk .NET gratis?
 
-J: Ya, dimungkinkan untuk memulihkan nama asli bidang gabungan setelah mengganti namanya dengan Aspose.Words untuk .NET. Anda dapat menyimpan nama asli bidang dalam variabel atau daftar, lalu menggunakan informasi tersebut untuk memulihkan nama asli jika diperlukan.
+ Aspose.Words untuk .NET adalah produk komersial, tetapi Anda dapat menggunakan a[uji coba gratis](https://releases.aspose.com/) untuk mengevaluasinya.
+
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+
+ Anda dapat menemukan dokumentasi yang komprehensif[Di Sini](https://reference.aspose.com/words/net/).

@@ -74,7 +74,7 @@ Dzięki Aspose.Words dla Java manipulacja dokumentami staje się dziecinnie pros
 
 ### Jak mogę dostosować proces separacji stron?
 
-Możesz dostosować proces rozdzielania stron, określając różne kryteria, takie jak podział strony lub określone akapity, w celu podzielenia dokumentu.
+Możesz dostosować proces rozdzielania stron, określając różne kryteria, takie jak podziały stron lub określone akapity, w celu podzielenia dokumentu.
 
 ### Czy Aspose.Words obsługuje inne formaty dokumentów oprócz DOCX?
 

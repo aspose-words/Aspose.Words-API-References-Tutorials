@@ -121,6 +121,6 @@ Aspose.Words for .NET Normal, Maksimum, Hızlı ve Süper Hızlı dahil olmak ü
 
 Evet, Aspose.Words for .NET, DOCX, PDF ve daha fazlasını içeren çeşitli belge formatları için sıkıştırmayı destekler.
 
-### Sorunla karşılaşırsam nereden destek alabilirim?
+### Sorunlarla karşılaşırsam nereden destek alabilirim?
 
  Aspose topluluğunu ziyaret ederek destek alabilirsiniz.[Destek Forumu](https://forum.aspose.com/c/words/8).

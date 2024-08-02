@@ -2,102 +2,108 @@
 title: Tạo kiểu bảng
 linktitle: Tạo kiểu bảng
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để tạo kiểu bảng tùy chỉnh bằng Aspose.Words cho .NET.
+description: Tạo và tạo kiểu bảng trong tài liệu Word bằng Aspose.Words cho .NET. Tìm hiểu từng bước để cải thiện tài liệu của bạn bằng định dạng bảng chuyên nghiệp.
 type: docs
 weight: 10
 url: /vi/net/programming-with-table-styles-and-formatting/create-table-style/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để tạo kiểu bảng bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Ở cuối hướng dẫn này, bạn sẽ biết cách tạo kiểu tùy chỉnh cho các bảng trong tài liệu Word bằng Aspose.Words cho .NET.
+Bạn đã bao giờ thấy mình bị mắc kẹt khi cố gắng tạo kiểu cho các bảng trong tài liệu Word bằng .NET chưa? Đừng lo lắng! Hôm nay chúng ta sẽ đi sâu vào thế giới tuyệt vời của Aspose.Words dành cho .NET. Chúng tôi sẽ hướng dẫn cách tạo bảng, áp dụng các kiểu tùy chỉnh và lưu tài liệu của bạn—tất cả đều bằng giọng điệu đàm thoại đơn giản. Cho dù bạn là người mới bắt đầu hay một chuyên gia dày dạn kinh nghiệm, hướng dẫn này sẽ có thứ gì đó dành cho bạn. Bạn đã sẵn sàng biến những chiếc bàn nhàm chán của mình thành những chiếc bàn đầy phong cách và chuyên nghiệp chưa? Bắt đầu nào!
 
-## Bước 1: Xác định thư mục tài liệu
-Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là vị trí bạn muốn lưu tài liệu Word đã chỉnh sửa của mình. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.
+## Điều kiện tiên quyết
+
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
+- Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện mạnh mẽ này. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
+- Kiến thức cơ bản về C#: Một số kiến thức quen thuộc về lập trình C# sẽ rất hữu ích.
+
+## Nhập không gian tên
+
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết. Bước này đảm bảo rằng mã của chúng tôi có quyền truy cập vào tất cả các lớp và phương thức do Aspose.Words cung cấp cho .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Tạo tài liệu mới và trình tạo tài liệu
- Tiếp theo, bạn cần tạo một phiên bản mới của`Document` lớp và một hàm tạo tài liệu cho tài liệu đó.
+## Bước 1: Khởi tạo Document và DocumentBuilder
+
+ Trong bước này, chúng ta sẽ khởi tạo một tài liệu mới và một`DocumentBuilder` . Các`DocumentBuilder` lớp cung cấp một cách dễ dàng để tạo và định dạng nội dung trong tài liệu Word.
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 3: Bắt đầu một bảng mới và thêm ô
-Để bắt đầu tạo bảng, chúng ta sử dụng`StartTable()` của trình tạo tài liệu, sau đó chúng ta thêm các ô vào bảng bằng cách sử dụng`InsertCell()` phương thức và chúng tôi ghi nội dung của các ô vào bằng cách sử dụng`Write()` phương pháp.
+ Giải thích: Chúng tôi đang tạo một tài liệu mới và một`DocumentBuilder` ví dụ sẽ giúp chúng tôi thêm và định dạng nội dung trong tài liệu của mình.
+
+## Bước 2: Bắt đầu bảng và chèn ô
+
+Bây giờ, hãy bắt đầu xây dựng bảng của chúng ta. Chúng ta sẽ bắt đầu bằng cách chèn các ô và thêm một số văn bản vào chúng.
 
 ```csharp
-Table table = builder. StartTable();
-builder. InsertCell();
+Table table = builder.StartTable();
+builder.InsertCell();
 builder.Write("Name");
-builder. InsertCell();
+builder.InsertCell();
 builder.Write("Value");
-builder. EndRow();
-builder. InsertCell();
-builder. InsertCell();
-builder. EndTable();
+builder.EndRow();
+builder.InsertCell();
+builder.InsertCell();
+builder.EndTable();
 ```
 
-## Bước 4: Tạo kiểu bảng
- Bây giờ chúng ta có thể tạo kiểu bảng bằng cách sử dụng`TableStyle` lớp học và`Add()` phương pháp từ tài liệu`s `Bộ sưu tập Styles. Chúng tôi xác định các thuộc tính của kiểu, chẳng hạn như đường viền, lề và phần đệm.
+ Giải thích: Ở đây chúng ta sử dụng`StartTable` phương pháp để bắt đầu bảng của chúng tôi. Sau đó, chúng tôi chèn các ô và thêm văn bản ("Tên" và "Giá trị"). Cuối cùng, chúng ta kết thúc hàng và bảng.
+
+## Bước 3: Thêm và tùy chỉnh kiểu bảng
+
+Bước này liên quan đến việc tạo kiểu bảng tùy chỉnh và áp dụng nó cho bảng của chúng tôi. Các kiểu tùy chỉnh làm cho bảng của chúng tôi trông chuyên nghiệp và nhất quán hơn.
 
 ```csharp
-TableStyle tableStyle = (TableStyle)doc.Styles.Add(StyleType.Table, "MyTableStyle1");
+TableStyle tableStyle = (TableStyle) doc.Styles.Add(StyleType.Table, "MyTableStyle1");
 tableStyle.Borders.LineStyle = LineStyle.Double;
 tableStyle.Borders.LineWidth = 1;
-tableStyle. LeftPadding = 18;
-tableStyle. RightPadding = 18;
+tableStyle.LeftPadding = 18;
+tableStyle.RightPadding = 18;
 tableStyle.TopPadding = 12;
 tableStyle.BottomPadding = 12;
-```
-
-## Bước 5: Áp dụng kiểu bảng cho bảng
- Cuối cùng, chúng ta áp dụng kiểu bảng mà chúng ta đã tạo cho bảng bằng cách sử dụng`Style` thuộc tính của bảng.
-
-```csharp
 table.Style = tableStyle;
 ```
 
-## Bước 6: Lưu tài liệu đã sửa đổi
-Cuối cùng lưu tài liệu đã sửa đổi vào một tập tin. Bạn có thể chọn tên và vị trí thích hợp cho tài liệu đầu ra.
+Giải thích: Chúng tôi thêm kiểu bảng mới có tên "MyTableStyle1" và tùy chỉnh kiểu bảng đó bằng cách đặt kiểu đường viền, độ rộng đường viền và phần đệm. Cuối cùng, chúng ta áp dụng kiểu này cho bảng của mình.
+
+## Bước 4: Lưu tài liệu
+
+Sau khi tạo kiểu cho bảng của chúng ta, đã đến lúc lưu tài liệu. Bước này đảm bảo rằng các thay đổi của chúng tôi được lưu trữ và chúng tôi có thể mở tài liệu để xem bảng được tạo kiểu của mình.
 
 ```csharp
-
-
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
 ```
 
-Xin chúc mừng! Bây giờ bạn đã tạo kiểu tùy chỉnh cho bảng của mình bằng Aspose.Words cho .NET.
-
-### Mã nguồn mẫu để Tạo kiểu bảng bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Name");
-	builder.InsertCell();
-	builder.Write("Value");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.InsertCell();
-	builder.EndTable();
-	TableStyle tableStyle = (TableStyle) doc.Styles.Add(StyleType.Table, "MyTableStyle1");
-	tableStyle.Borders.LineStyle = LineStyle.Double;
-	tableStyle.Borders.LineWidth = 1;
-	tableStyle.LeftPadding = 18;
-	tableStyle.RightPadding = 18;
-	tableStyle.TopPadding = 12;
-	tableStyle.BottomPadding = 12;
-	table.Style = tableStyle;
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.CreateTableStyle.docx");
-```
+Giải thích: Chúng tôi lưu tài liệu của mình vào thư mục được chỉ định với tên tệp mô tả.
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách tạo kiểu bảng bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này, bạn có thể dễ dàng tùy chỉnh kiểu bảng trong tài liệu Word của mình. Aspose.Words cung cấp API mạnh mẽ và linh hoạt để thao tác và định dạng bảng trong tài liệu của bạn. Với kiến thức này, bạn có thể cải thiện cách trình bày trực quan các tài liệu Word của mình và đáp ứng các nhu cầu cụ thể.
+
+Chúc mừng! Bạn đã tạo và tạo kiểu thành công cho bảng trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn này, giờ đây bạn có thể thêm các bảng trông chuyên nghiệp vào tài liệu của mình, nâng cao khả năng đọc và sức hấp dẫn trực quan của chúng. Hãy tiếp tục thử nghiệm các phong cách và tùy chỉnh khác nhau để làm cho tài liệu của bạn nổi bật!
+
+## Câu hỏi thường gặp
+
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu ở nhiều định dạng khác nhau.
+
+### Tôi có thể sử dụng Aspose.Words cho .NET với các ngôn ngữ .NET khác không?
+Có, bạn có thể sử dụng Aspose.Words cho .NET với bất kỳ ngôn ngữ .NET nào, bao gồm VB.NET và F#.
+
+### Làm cách nào để áp dụng kiểu bảng cho bảng hiện có?
+ Bạn có thể áp dụng kiểu bảng cho bảng hiện có bằng cách tạo kiểu rồi đặt các thuộc tính của bảng.`Style` tài sản theo phong cách mới.
+
+### Có cách nào khác để tùy chỉnh kiểu bảng không?
+Có, bạn có thể tùy chỉnh kiểu bảng theo nhiều cách, bao gồm thay đổi màu nền, kiểu phông chữ, v.v.
+
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+ Bạn có thể tìm tài liệu chi tiết hơn[đây](https://reference.aspose.com/words/net/).

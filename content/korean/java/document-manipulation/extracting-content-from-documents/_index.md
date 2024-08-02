@@ -12,7 +12,7 @@ url: /ko/java/document-manipulation/extracting-content-from-documents/
 
 문서 처리 세계에서는 문서에서 콘텐츠를 추출하는 것이 일반적인 요구 사항입니다. 텍스트, 표, 이미지 또는 특정 문서 요소를 추출해야 하는 경우 Aspose.Words for Java는 이 작업을 쉽게 수행할 수 있는 강력한 도구를 제공합니다. 이 종합 가이드에서는 Aspose.Words for Java를 사용하여 문서에서 콘텐츠를 추출하는 과정을 안내합니다. 
 
-## 전제조건
+## 전제 조건
 
 추출 프로세스를 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
@@ -236,7 +236,7 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## FAQ
 
-### 특정 문서 섹션에서 콘텐츠를 어떻게 추출합니까?
+### 특정 문서 섹션에서 콘텐츠를 어떻게 추출하나요?
 
 특정 문서 섹션에서 콘텐츠를 추출하려면 섹션의 시작점과 끝점을 식별하고 적절한 Java용 Aspose.Words 메서드를 사용하여 섹션 사이의 콘텐츠를 추출할 수 있습니다.
 

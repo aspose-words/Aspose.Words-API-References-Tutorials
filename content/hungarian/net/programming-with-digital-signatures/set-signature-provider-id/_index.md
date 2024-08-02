@@ -21,7 +21,7 @@ Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkk
 4.  Digitális tanúsítvány: A`.pfx` tanúsítvány fájl (pl.`morzal.pfx`).
 5. Alapvető C# ismeretek: Csak az alapok – ne aggódjon, itt vagyunk, hogy segítsünk!
 
-Most pedig ugorjunk bele az akcióba!
+Most pedig vágjunk bele az akcióba!
 
 ## Névterek importálása
 

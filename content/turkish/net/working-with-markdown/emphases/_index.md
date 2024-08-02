@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### S: Markdown'ı kullanarak metni nasıl vurgularım?
 
-C: Markdown'ı kullanarak metni vurgulamak için metni uygun sembollerle çevrelemeniz yeterlidir. Kullanmak`*` veya`_` italikler için,`**` veya`__` kalın için ve`~~` üstü çizili için.
+ C: Markdown'ı kullanarak metni vurgulamak için metni uygun sembollerle çevrelemeniz yeterlidir. Kullanmak`*` veya`_` italikler için,`**` veya`__` kalın için ve`~~` üstü çizili için.
 
 #### S: Farklı vurguları aynı metinde birleştirebilir miyiz?
 

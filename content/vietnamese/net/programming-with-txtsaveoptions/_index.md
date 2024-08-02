@@ -16,6 +16,6 @@ Nhờ những hướng dẫn này, bạn sẽ có thể khai thác đầy đủ 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Thêm dấu Bidi vào tài liệu Word](./add-bidi-marks/) | Tìm hiểu cách thêm dấu Bidi vào tài liệu Word bằng Aspose.Words cho .NET và tạo tài liệu đa ngôn ngữ chuyên nghiệp. |
-| [Sử dụng ký tự tab trên mỗi cấp độ để thụt danh sách](./use-tab-character-per-level-for-list-indentation/) | Tìm hiểu cách sử dụng tính năng danh sách thụt lề với các ký tự tab trong Aspose.Words dành cho .NET. Hãy làm theo hướng dẫn từng bước này để tạo tài liệu có cấu trúc tốt và dễ đọc. Tiết kiệm thời gian và cải thiện quy trình làm việc của bạn với tính năng mạnh mẽ này. Truy cập hướng dẫn đầy đủ ngay bây giờ. |
-| [Sử dụng ký tự khoảng trắng trên mỗi cấp độ để thụt danh sách](./use-space-character-per-level-for-list-indentation/) | Hướng dẫn từng bước về cách sử dụng ký tự khoảng trắng theo cấp độ để thụt lề danh sách trong Aspose.Words for .NET. Tạo tài liệu Word có cấu trúc tốt một cách dễ dàng. |
+| [Thêm dấu Bidi vào tài liệu Word](./add-bidi-marks/) | Tìm hiểu cách thêm dấu hai chiều (Bidi) trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn này. Đảm bảo hướng văn bản phù hợp cho nội dung đa ngôn ngữ. |
+| [Sử dụng ký tự tab trên mỗi cấp độ để thụt danh sách](./use-tab-character-per-level-for-list-indentation/) | Tìm hiểu cách tạo danh sách nhiều cấp với thụt lề theo thẻ bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn này để định dạng danh sách chính xác trong tài liệu của bạn. |
+| [Sử dụng ký tự khoảng trắng trên mỗi cấp độ để thụt danh sách](./use-space-character-per-level-for-list-indentation/) | Tìm hiểu cách tạo danh sách nhiều cấp với thụt lề ký tự khoảng trắng trong Aspose.Words cho .NET. Hướng dẫn từng bước để định dạng tài liệu chính xác. |

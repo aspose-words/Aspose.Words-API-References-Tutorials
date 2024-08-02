@@ -2,118 +2,106 @@
 title: Sử dụng ký tự khoảng trắng trên mỗi cấp độ để thụt danh sách
 linktitle: Sử dụng ký tự khoảng trắng trên mỗi cấp độ để thụt danh sách
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước về cách sử dụng ký tự khoảng trắng theo cấp độ để thụt lề danh sách trong Aspose.Words for .NET. Tạo tài liệu Word có cấu trúc tốt một cách dễ dàng.
+description: Tìm hiểu cách tạo danh sách nhiều cấp với thụt lề ký tự khoảng trắng trong Aspose.Words cho .NET. Hướng dẫn từng bước để định dạng tài liệu chính xác.
 type: docs
 weight: 10
 url: /vi/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET là một thư viện mạnh mẽ để tạo, chỉnh sửa và thao tác các tài liệu Word trong ứng dụng C#. Trong số các tính năng được Aspose.Words cung cấp là khả năng sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách. Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách sử dụng mã nguồn C# của Aspose.Words cho .NET để triển khai chức năng này.
+## Giới thiệu
 
-## Tìm hiểu thư viện Aspose.Words
+Khi nói đến định dạng tài liệu, đặc biệt là khi làm việc với danh sách, độ chính xác là điều quan trọng nhất. Trong trường hợp bạn cần tạo tài liệu với nhiều mức độ thụt lề khác nhau, Aspose.Words for .NET cung cấp các công cụ mạnh mẽ để xử lý tác vụ này. Một tính năng cụ thể có thể hữu ích là định cấu hình thụt lề danh sách trong tệp văn bản. Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng các ký tự khoảng trắng để thụt lề danh sách, đảm bảo tài liệu của bạn duy trì cấu trúc và khả năng đọc mong muốn.
 
-Trước khi đi sâu vào mã, điều quan trọng là phải hiểu thư viện Aspose.Words cho .NET. Aspose.Words là một thư viện phổ biến giúp việc Xử lý văn bản bằng tài liệu Word trở nên dễ dàng và hiệu quả. Nó cung cấp nhiều chức năng để tạo, sửa đổi và thao tác với tài liệu Word, bao gồm quản lý danh sách và thụt lề.
+## Điều kiện tiên quyết
 
-## Tạo tài liệu và thêm nội dung
+Trước khi đi sâu vào hướng dẫn, đây là những gì bạn cần:
 
-Bước đầu tiên là tạo một tài liệu mới và thêm nội dung vào đó. Sử dụng lớp Tài liệu để tạo một phiên bản tài liệu mới. Sau đó, sử dụng lớp DocumentBuilder để thêm văn bản và tạo danh sách có nhiều cấp độ thụt lề. Đây là một ví dụ :
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu chưa có, bạn có thể tải xuống từ[trang web giả định](https://releases.aspose.com/words/net/).
+- Visual Studio: Môi trường phát triển để viết và kiểm tra mã của bạn.
+- Hiểu biết cơ bản về C#: Làm quen với C# và .NET framework sẽ giúp bạn theo dõi suôn sẻ.
+
+## Nhập không gian tên
+
+Để bắt đầu làm việc với Aspose.Words, bạn cần nhập các không gian tên cần thiết. Đây là cách bạn có thể đưa chúng vào dự án của mình:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Hãy chia nhỏ quy trình tạo tài liệu với danh sách đa cấp và chỉ định các ký tự khoảng trắng để thụt lề. 
+
+## Bước 1: Thiết lập tài liệu của bạn
+
+ Trước tiên, bạn cần tạo một tài liệu mới và khởi tạo`DocumentBuilder` sự vật. Đối tượng này sẽ cho phép bạn dễ dàng thêm nội dung và định dạng nó nếu cần.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// Tạo tài liệu và thêm nội dung
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ Trong đoạn mã này, thay thế`"YOUR DOCUMENTS DIRECTORY"` với đường dẫn thực tế nơi bạn muốn lưu tài liệu của mình.
+
+## Bước 2: Tạo danh sách có nhiều cấp độ thụt lề
+
+ Với`DocumentBuilder` Ví dụ: bây giờ bạn có thể tạo danh sách với các mức thụt lề khác nhau. Sử dụng`ListFormat` thuộc tính để áp dụng đánh số và thụt lề các mục trong danh sách theo yêu cầu.
+
+```csharp
 // Tạo danh sách có ba cấp độ thụt lề
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Trong ví dụ này, chúng tôi tạo một tài liệu mới và sử dụng DocumentBuilder để thêm văn bản và tạo danh sách có ba cấp độ thụt lề. Chúng tôi đã thêm ba mục vào danh sách, với mỗi mục được thụt vào một cấp độ bổ sung.
+ Ở bước này,`ApplyNumberDefault` thiết lập định dạng danh sách và`ListIndent` được sử dụng để tăng mức độ thụt lề cho từng mục danh sách tiếp theo.
 
-## Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách
+## Bước 3: Định cấu hình ký tự khoảng trắng cho thụt lề
 
-Sau khi đã thêm nội dung, giờ đây chúng ta có thể định cấu hình thụt lề danh sách bằng cách sử dụng một ký tự khoảng trắng cho mỗi cấp độ. Để làm điều này, chúng tôi sử dụng lớp TxtSaveOptions và đặt thuộc tính ListIndentation.Count thành số mức thụt lề và thuộc tính ListIndentation.Character cho ký tự khoảng trắng sẽ sử dụng. Đây là cách thực hiện:
+Bây giờ bạn đã thiết lập danh sách của mình, bước tiếp theo là định cấu hình cách xử lý thụt lề danh sách khi lưu tài liệu vào tệp văn bản. Bạn sẽ sử dụng`TxtSaveOptions` để chỉ định rằng các ký tự khoảng trắng nên được sử dụng để thụt lề.
 
 ```csharp
+// Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+ Đây,`ListIndentation.Count` chỉ định số lượng ký tự khoảng trắng cho mỗi mức thụt lề và`ListIndentation.Character` đặt ký tự thực tế được sử dụng để thụt lề.
+
+## Bước 4: Lưu tài liệu với các tùy chọn được chỉ định
+
+Cuối cùng, lưu tài liệu của bạn bằng các tùy chọn đã định cấu hình. Thao tác này sẽ áp dụng cài đặt thụt lề và lưu tệp của bạn ở định dạng mong muốn.
+
+```csharp
+// Lưu tài liệu với các tùy chọn được chỉ định
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-Trong ví dụ này, chúng tôi tạo một phiên bản của TxtSaveOptions và đặt thuộc tính ListIndentation.Count thành 3 để cho biết rằng có ba mức thụt lề trong danh sách. Chúng tôi cũng đặt thuộc tính ListIndentation.Character thành ký tự khoảng trắng (' ') mà chúng tôi muốn sử dụng để thụt lề.
-
-### Mã nguồn mẫu cho tính năng "Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách" với Aspose.Words for .NET
-
-Đây là mã nguồn mẫu hoàn chỉnh cho tính năng "Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách" với Aspose.Words dành cho .NET:
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             // Đường dẫn đến thư mục tài liệu của bạn
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             // Tạo tài liệu và thêm nội dung
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             // Tạo danh sách có ba cấp độ thụt lề
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             // Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             // Lưu tài liệu với các tùy chọn được chỉ định
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+ Đoạn mã này lưu tài liệu vào đường dẫn được chỉ định trong`dataDir` với tên tập tin`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. Tệp đã lưu sẽ có danh sách được định dạng theo cài đặt thụt lề của bạn.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách sử dụng Aspose.Words cho .NET để áp dụng chức năng "Sử dụng một ký tự khoảng trắng cho mỗi cấp độ cho thụt lề danh sách". Bằng cách làm theo các bước được cung cấp và sử dụng mã nguồn C# được cung cấp, bạn có thể dễ dàng định cấu hình thụt lề danh sách trong tài liệu Word của mình bằng cách sử dụng một ký tự khoảng trắng cho mỗi cấp độ. Aspose.Words cung cấp tính linh hoạt và sức mạnh to lớn cho Xử lý văn bản với định dạng văn bản và quản lý danh sách, cho phép bạn tạo các tài liệu có cấu trúc tốt trong ứng dụng C# của mình.
+Bằng cách làm theo các bước này, bạn đã tạo thành công một tài liệu có thụt lề danh sách đa cấp bằng cách sử dụng các ký tự khoảng trắng để định dạng. Cách tiếp cận này đảm bảo rằng danh sách của bạn có cấu trúc tốt và dễ đọc, ngay cả khi được lưu dưới dạng tệp văn bản. Aspose.Words for .NET cung cấp các công cụ mạnh mẽ để thao tác tài liệu và việc nắm vững các tính năng này có thể nâng cao đáng kể quy trình xử lý tài liệu của bạn.
 
-### Các câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Aspose.Words dành cho .NET là gì?
-Aspose.Words for .NET là một thư viện mạnh mẽ để tạo, chỉnh sửa và thao tác các tài liệu Word trong ứng dụng C#. Nó cung cấp nhiều tính năng để Xử lý văn bản bằng tài liệu Word, bao gồm khả năng sử dụng một khoảng trắng cho mỗi cấp độ để thụt lề danh sách.
+### Tôi có thể sử dụng các ký tự khác để thụt lề danh sách ngoài dấu cách không?
+ Có, bạn có thể chỉ định các ký tự khác nhau cho việc thụt lề danh sách bằng cách đặt`Character` tài sản ở`TxtSaveOptions`.
 
-#### Câu hỏi: Làm cách nào tôi có thể sử dụng một khoảng trắng cho mỗi cấp độ để thụt lề danh sách với Aspose.Words cho .NET?
-Bạn có thể sử dụng một khoảng trắng cho mỗi cấp độ để thụt lề danh sách bằng cách làm theo các bước sau:
+### Làm cách nào để áp dụng dấu đầu dòng thay vì số trong danh sách?
+ Sử dụng`ListFormat.ApplyBulletDefault()` thay vì`ApplyNumberDefault()` để tạo một danh sách có dấu đầu dòng.
 
- Tạo một tài liệu mới bằng cách sử dụng`Document` lớp học.
+### Tôi có thể điều chỉnh số lượng khoảng trắng để thụt lề một cách linh hoạt không?
+ Có, bạn có thể điều chỉnh`ListIndentation.Count` property để đặt số lượng khoảng trắng dựa trên yêu cầu của bạn.
 
- Sử dụng`DocumentBuilder`class để thêm nội dung vào tài liệu và tạo danh sách có nhiều cấp độ thụt lề.
+### Có thể thay đổi thụt lề danh sách sau khi tài liệu được tạo không?
+Có, bạn có thể sửa đổi cài đặt thụt lề và định dạng danh sách bất kỳ lúc nào trước khi lưu tài liệu.
 
- Khi bạn đã thêm nội dung và định cấu hình thụt lề danh sách, hãy sử dụng`TxtSaveOptions` lớp và thiết lập`ListIndentation.Count` thuộc tính với số lượng mức thụt lề và`ListIndentation.Character` thuộc tính trên không gian (`' '`) để sử dụng.
-
- Lưu tài liệu với các tùy chọn đã chỉ định bằng cách sử dụng`Save` phương pháp của`Document` lớp học.
-
-#### Câu hỏi: Aspose.Words có hỗ trợ các ký tự khác để thụt lề danh sách không?
-Có, Aspose.Words hỗ trợ các ký tự khác để thụt lề danh sách. Bạn có thể sử dụng các ký tự không phải khoảng trắng, chẳng hạn như tab (`'\t'` ) hoặc các ký tự đặc biệt khác, bằng cách đặt`ListIndentation.Character` thuộc tính cho ký tự mong muốn.
-
-#### Câu hỏi: Có thể tùy chỉnh số lượng khoảng trắng trên mỗi cấp độ để thụt lề danh sách không?
- Có, bạn có thể tùy chỉnh số lượng khoảng trắng trên mỗi cấp độ để thụt lề danh sách bằng cách thay đổi giá trị của`ListIndentation.Count` tài sản ở`TxtSaveOptions` lớp học. Bạn có thể chỉ định số lượng khoảng trắng bạn muốn cho mỗi cấp độ thụt lề.
-
-#### Câu hỏi: Aspose.Words cung cấp những tính năng nào khác để quản lý danh sách?
-Aspose.Words cung cấp nhiều tính năng để quản lý danh sách trong tài liệu Word. Bạn có thể tạo danh sách được đánh số hoặc đánh dấu đầu dòng, đặt mức thụt lề, tùy chỉnh kiểu danh sách, thêm mục danh sách, v.v.
+### Những định dạng tài liệu nào khác hỗ trợ cài đặt thụt lề danh sách?
+Bên cạnh các tệp văn bản, cài đặt thụt lề danh sách có thể được áp dụng cho các định dạng khác như DOCX, PDF và HTML khi sử dụng Aspose.Words.

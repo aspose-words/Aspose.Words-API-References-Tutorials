@@ -35,7 +35,7 @@ Przeanalizujmy krok po kroku proces pokazywania błędów gramatycznych i ortogr
 
 ## Krok 2: Zdefiniuj katalog dokumentów
 
-Najpierw musisz zdefiniować ścieżkę do katalogu dokumentów. Tutaj znajdują się Twoje dokumenty Word.
+Najpierw musisz zdefiniować ścieżkę do katalogu dokumentów. Tutaj znajdują się Twoje dokumenty programu Word.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.

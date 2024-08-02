@@ -69,7 +69,7 @@ tomto tutoriálu jsme se naučili, jak nastavit více složek písem při vykres
 
 #### Otázka: Jak mohu v Aspose.Words nastavit více složek písem?
 
- A: Chcete-li nastavit více složek písem v Aspose.Words, můžete použít`SetFontsFolders` metoda`Fonts` třídy poskytující seznam umístění složek vlastních písem.
+ A: Chcete-li nastavit více složek písem v Aspose.Words, můžete použít`SetFontsFolders` metoda`Fonts` class poskytující seznam umístění vlastních složek písem.
 
 #### Otázka: Má nastavení více složek písem vliv na všechny dokumenty zpracovávané pomocí Aspose.Words?
 

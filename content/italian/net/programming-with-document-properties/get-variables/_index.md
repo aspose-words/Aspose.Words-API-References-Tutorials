@@ -9,7 +9,7 @@ url: /it/net/programming-with-document-properties/get-variables/
 ---
 ## introduzione
 
-Ehi, collega programmatore! Pronto a tuffarti nel mondo di Aspose.Words per .NET? Allacciate le cinture, perché stiamo per intraprendere un viaggio che renderà la gestione dei documenti Word nelle vostre applicazioni .NET un gioco da ragazzi. In questa guida analizzeremo tutto ciò che devi sapere, passo dopo passo, con spiegazioni chiare e un tono colloquiale. Quindi, prendi una tazza di caffè, mettiti comodo e cominciamo!
+Ehi, collega programmatore! Pronto a tuffarti nel mondo di Aspose.Words per .NET? Allacciate le cinture, perché stiamo per intraprendere un viaggio che renderà la gestione dei documenti Word nelle vostre applicazioni .NET un gioco da ragazzi. In questa guida analizzeremo tutto ciò che devi sapere, passo dopo passo, con spiegazioni chiare e un tono colloquiale. Quindi, prendi una tazza di caffè, mettiti comodo e iniziamo!
 
 ## Prerequisiti
 

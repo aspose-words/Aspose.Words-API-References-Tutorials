@@ -76,9 +76,9 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
         boolean isEndingNode = currNode.equals(endNode);
         if (isStartingNode || isEndingNode) {
             // Her işaretçiyi ayrı ayrı işlememiz gerekiyor, bu nedenle onu ayrı bir yönteme aktarın.
-            // Düğüm indekslerini tutmak için ilk önce End işlenmelidir.
+            // Düğüm indekslerini korumak için ilk önce End işlenmelidir.
             if (isEndingNode) {
-                // !isStartingNode: işaretçiler aynı düğümse düğümü iki kez eklemeyin.
+                // !isStartingNode: İşaretleyiciler aynı düğümse düğümü iki kez eklemeyin.
                 processMarker(cloneNode, nodes, originalEndNode, currNode, isInclusive,
                         false, !isStartingNode, false);
                 isExtracting = false;

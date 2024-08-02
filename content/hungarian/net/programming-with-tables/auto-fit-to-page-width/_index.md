@@ -90,7 +90,7 @@ Ezzel a módosított dokumentumot az automatikusan illesztett táblázattal egy 
 ### Automatikusan illeszthetek több táblázatot egy dokumentumba?  
 Igen, végigpörgetheti a dokumentum összes táblázatát, és mindegyikre alkalmazhatja az automatikus illesztés módszerét.
 
-### Befolyásolja-e az automatikus illesztés a táblázat tartalmát?  
+### Az automatikus illesztés befolyásolja a táblázat tartalmát?  
 Nem, az automatikus illesztés beállítja a táblázat szélességét, de nem módosítja a cellák tartalmát.
 
 ### Mi a teendő, ha a táblázatomnak meghatározott oszlopszélességei vannak, amelyeket meg akarok tartani?  

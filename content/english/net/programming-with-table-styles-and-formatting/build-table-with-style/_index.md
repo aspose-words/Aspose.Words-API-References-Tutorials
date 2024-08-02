@@ -2,134 +2,147 @@
 title: Build Table With Style
 linktitle: Build Table With Style
 second_title: Aspose.Words Document Processing API
-description: Step-by-step guide to building a table with a custom style using Aspose.Words for .NET.
+description: Learn how to create and style tables in Word documents using Aspose.Words for .NET with this comprehensive step-by-step guide.
 type: docs
 weight: 10
 url: /net/programming-with-table-styles-and-formatting/build-table-with-style/
 ---
+## Introduction
 
-In this tutorial, we'll walk you through the step-by-step process to build a styled table using Aspose.Words for .NET. We'll explain the bundled C# source code and provide you with a comprehensive guide to help you understand and implement this feature in your own projects. At the end of this tutorial, you will know how to create a table with a custom style in your Word documents using Aspose.Words for .NET.
+Creating stylish, professional documents often requires more than just plain text. Tables are a fantastic way to organize data, but making them look appealing is an entirely different challenge. Enter Aspose.Words for .NET! In this tutorial, we'll dive into how to build a table with style, making your Word documents look polished and professional.
 
-## Step 1: Define the document directory
-First, you need to set the path to your documents directory. This is the location where you want to save your edited Word document. Replace "YOUR DOCUMENTS DIRECTORY" with the appropriate path.
+## Prerequisites
+
+Before we jump into the step-by-step guide, let’s ensure you have everything you need:
+
+1. Aspose.Words for .NET: If you haven't already, download and install [Aspose.Words for .NET](https://releases.aspose.com/words/net/).
+2. Development Environment: You should have a development environment set up. Visual Studio is a great option for this tutorial.
+3. Basic Knowledge of C#: Familiarity with C# programming will help you follow along more easily.
+
+## Import Namespaces
+
+To get started, you need to import the necessary namespaces. This will give you access to the classes and methods required to manipulate Word documents.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Step 2: Create a new document and document builder
-Next, you need to create a new instance of the `Document` class and a document constructor for that document.
+## Step 1: Create a New Document and DocumentBuilder
+
+First things first, you need to create a new document and a `DocumentBuilder` object. This `DocumentBuilder` will help you construct the table in your document.
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Step 3: Start a new table and insert a cell
-To start building the table, we use the `StartTable()` method of the document builder, then we insert a cell into the table using the `InsertCell()` method.
-
-```csharp
-Table table = builder. StartTable();
-builder.InsertCell();
-```
-
-## Step 4: Define the style of the table
-Now we can set the table style using the `StyleIdentifier` property. In this example, we are using the "MediumShading1Accent1" style.
-
-```csharp
-table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-```
-
-## Step 5: Apply style options to the table
-We can specify which characteristics should be formatted by the style using the `StyleOptions` property of the array. In this example, we apply the following options: "FirstColumn", "RowBands" and "FirstRow".
-
-```csharp
-table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-```
-
-## Step 6: Automatically adjust table size
-To automatically adjust the size of the array based on its contents, we use the `AutoFit()` method with the `AutoFitBehavior.AutoFitToContents` behavior.
-
-```csharp
-table.AutoFit(AutoFitBehavior.AutoFitToContents);
-```
-
-## Step 7: Add content to cells
-Now we can add content to cells using the `Writeln()` and `InsertCell()` methods of the document builder. In this example, we add the headers for the "Item" and "Quantity (
-
-kg)" and the corresponding data.
-
-```csharp
-builder.Writeln("Item");
-builder.CellFormat.RightPadding = 40;
-builder.InsertCell();
-builder.Writen("Quantity (kg)");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Apples");
-builder.InsertCell();
-builder.Writeln("20");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Bananas");
-builder.InsertCell();
-builder.Writen("40");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Carrots");
-builder.InsertCell();
-builder.Writeln("50");
-builder.EndRow();
-```
-
-## Step 8: Save the modified document
-Finally, we save the modified document to a file. You can choose an appropriate name and location for the output document.
-
-```csharp
-doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
-```
-
-Congratulation ! You have now built a custom styled table using Aspose.Words for .NET.
-
-### Sample source code for Build Table With Style using Aspose.Words for .NET 
-
-```csharp
-// Path to your document directory 
+// Path to your document directory
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## Step 2: Start Building the Table
+
+Now that we have our document and builder ready, let's start creating the table.
+
+```csharp
 Table table = builder.StartTable();
-// We must insert at least one row first before setting any table formatting.
+```
+
+## Step 3: Insert the First Row
+
+A table without rows is just an empty structure. We need to insert at least one row before we can set any table formatting.
+
+```csharp
 builder.InsertCell();
-// Set the table style used based on the unique style identifier.
+```
+
+## Step 4: Set the Table Style
+
+With the first cell inserted, it's time to add some style to our table. We'll use the `StyleIdentifier` to apply a predefined style.
+
+```csharp
+// Set the table style used based on the unique style identifier
 table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-// Apply which features should be formatted by the style.
-table.StyleOptions =
-	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+```
+
+## Step 5: Define Style Options
+
+The table style options define which parts of the table will be styled. For example, we can choose to style the first column, row bands, and the first row.
+
+```csharp
+// Apply which features should be formatted by the style
+table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+```
+
+## Step 6: Adjust Table to Fit Contents
+
+To ensure our table looks neat and tidy, we can use the `AutoFit` method to adjust the table to fit its contents.
+
+```csharp
 table.AutoFit(AutoFitBehavior.AutoFitToContents);
+```
+
+## Step 7: Insert Data into the Table
+
+Now it's time to fill our table with some data. We’ll start with the header row and then add some sample data.
+
+### Inserting Header Row
+
+```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
 builder.InsertCell();
 builder.Writeln("Quantity (kg)");
 builder.EndRow();
+```
+
+#### Inserting Data Rows
+
+```csharp
 builder.InsertCell();
 builder.Writeln("Apples");
 builder.InsertCell();
 builder.Writeln("20");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Bananas");
 builder.InsertCell();
 builder.Writeln("40");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Carrots");
 builder.InsertCell();
 builder.Writeln("50");
 builder.EndRow();
+```
+
+## Step 8: Save the Document
+
+After inserting all the data, the final step is to save the document.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## Conclusion
-In this tutorial, we learned how to build a styled table using Aspose.Words for .NET. By following this step-by-step guide, you can easily customize the style of your tables in your Word documents. Aspose.Words offers a powerful and flexible API for manipulating and formatting tables in your documents. With this knowledge, you can improve the visual presentation of your Word documents and meet specific needs.
+
+And there you have it! You've successfully created a stylish table in a Word document using Aspose.Words for .NET. This powerful library makes it easy to automate and customize Word documents to meet your exact needs. Whether you're creating reports, invoices, or any other type of document, Aspose.Words has you covered.
+
+## FAQ's
+
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library that allows developers to create, edit, and manipulate Word documents programmatically using C#.
+
+### Can I use Aspose.Words for .NET to style existing tables?
+Yes, Aspose.Words for .NET can be used to style both new and existing tables in your Word documents.
+
+### Do I need a license to use Aspose.Words for .NET?
+Yes, Aspose.Words for .NET requires a license for full functionality. You can get a [temporary license](https://purchase.aspose.com/temporary-license/) or buy a full one [here](https://purchase.aspose.com/buy).
+
+### Can I automate other document types with Aspose.Words for .NET?
+Absolutely! Aspose.Words for .NET supports various document types, including DOCX, PDF, HTML, and more.
+
+### Where can I find more examples and documentation?
+You can find comprehensive documentation and examples on the [Aspose.Words for .NET documentation page](https://reference.aspose.com/words/net/).

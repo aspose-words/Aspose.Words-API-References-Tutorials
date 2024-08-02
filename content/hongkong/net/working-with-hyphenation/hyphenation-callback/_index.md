@@ -20,7 +20,7 @@ url: /zh-hant/net/working-with-hyphenation/hyphenation-callback/
 2. IDE：類似 Visual Studio 的開發環境。
 3. C#基礎：了解C#和.NET架構。
 4. 連接詞詞典：您計劃使用的語言的連字詞典。
-5.  Aspose 許可證：有效的 Aspose 許可證。您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)如果你沒有的話。
+5.  Aspose 許可證：有效的 Aspose 許可證。你可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)如果你沒有的話。
 
 ## 導入命名空間
 
@@ -62,7 +62,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 3 步：載入文檔
 
-現在，讓我們載入需要連字符的文檔。
+現在，讓我們載入需要連字的文檔。
 
 ```csharp
 Document document = new Document(dataDir + "German text.docx");

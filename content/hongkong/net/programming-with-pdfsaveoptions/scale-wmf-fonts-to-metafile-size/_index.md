@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-si
 
 在深入了解這些步驟之前，請確保您具備以下條件：
 
-1. Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. 開發環境：本教學假設您設定了 .NET 開發環境（如 Visual Studio），您可以在其中編寫和執行 C# 程式碼。
 3. 對 .NET 程式設計的基本了解：熟悉基本的 .NET 程式設計概念和 C# 語法將會有所幫助。
 4. 帶有 WMF 圖形的 Word 文件：您需要一個包含 WMF 圖形的 Word 文件。您可以使用自己的文件或建立一個文件進行測試。

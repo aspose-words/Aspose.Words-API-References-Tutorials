@@ -2,55 +2,37 @@
 title: Wstaw pole ASKField bez narzędzia do tworzenia dokumentów
 linktitle: Wstaw pole ASKField bez narzędzia do tworzenia dokumentów
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić pole ASK do dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawić pole ASK bez użycia Konstruktora dokumentów w Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem, aby dynamicznie ulepszać dokumenty programu Word.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## Wstęp
 
-Oto przewodnik krok po kroku wyjaśniający poniższy kod źródłowy C#, który wykorzystuje funkcję „Wstaw pole ASK bez narzędzia DocumentBuilder” w Aspose.Words dla .NET. Pamiętaj, aby dokładnie wykonać każdy krok, aby uzyskać pożądane rezultaty.
+Czy chcesz opanować automatyzację dokumentów za pomocą Aspose.Words dla .NET? Trafiłeś we właściwe miejsce! Dzisiaj przeprowadzimy Cię przez proces wstawiania pola ASK bez korzystania z Konstruktora dokumentów. Jest to przydatna funkcja, jeśli chcesz, aby Twój dokument monitował użytkowników o określone dane wejściowe, dzięki czemu dokumenty programu Word będą bardziej interaktywne i dynamiczne. Zanurzmy się więc i sprawmy, aby Twoje dokumenty były mądrzejsze!
 
-## Krok 1: Konfiguracja katalogu dokumentów
+## Warunki wstępne
 
-W podanym kodzie musisz określić katalog swoich dokumentów. Zastąp wartość „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką do katalogu dokumentów.
+Zanim zabrudzimy sobie ręce jakimś kodem, upewnijmy się, że mamy wszystko skonfigurowane:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną tę bibliotekę. Jeśli nie, możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: odpowiednie IDE, takie jak Visual Studio.
+3. .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET Framework.
 
-## Krok 2: Tworzenie dokumentu i akapitu
+Świetnie! Teraz, gdy już wszystko gotowe, zacznijmy od zaimportowania niezbędnych przestrzeni nazw.
 
-Zaczynamy od utworzenia nowego dokumentu i pobrania pierwszego akapitu.
+## Importuj przestrzenie nazw
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## Krok 3: Wstawienie pola ASK
-
- Używamy`AppendField()` metoda wstawienia pola ASK do akapitu.
+Po pierwsze, musimy zaimportować przestrzeń nazw Aspose.Words, aby uzyskać dostęp do wszystkich funkcji Aspose.Words dla .NET. Oto jak to zrobić:
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Następnie konfigurujemy różne właściwości pola ASK, podając żądane wartości.
+## Krok 1: Utwórz nowy dokument
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
- Na koniec nazywamy`Update()` metoda aktualizacji pola.
-
-```csharp
-field. Update();
-```
-
-### Przykład kodu źródłowego do wstawienia pola ASK bez DocumentBuilder z Aspose.Words dla .NET
+Zanim będziemy mogli wstawić pole ASK, potrzebujemy dokumentu, z którym będziemy mogli pracować. Oto jak utworzyć nowy dokument:
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Tworzenie dokumentów.
 Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
+Ten fragment kodu konfiguruje nowy dokument programu Word, w którym dodamy nasze pole ASK.
+
+## Krok 2: Uzyskaj dostęp do węzła akapitu
+
+W dokumencie programu Word zawartość jest zorganizowana w węzły. Musimy uzyskać dostęp do pierwszego węzła akapitu, w którym wstawimy nasze pole ASK:
+
+```csharp
+Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
+
+Ta linia kodu pobiera pierwszy akapit dokumentu, gotowy do wstawienia przez nas pola ASK.
+
+## Krok 3: Wstaw pole ASK
+
+Przejdźmy teraz do głównego wydarzenia – wstawienia pola ASK. To pole poprosi użytkownika o wprowadzenie danych po otwarciu dokumentu.
+
+```csharp
 // Wstaw pole ZAPYTAJ.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+Tutaj dołączamy pole ASK do akapitu. Proste, prawda?
 
-field. Update();
+## Krok 4: Skonfiguruj pole ASK
 
+Musimy ustawić pewne właściwości, aby zdefiniować zachowanie pola ASK. Skonfigurujmy nazwę zakładki, tekst zachęty, domyślną odpowiedź i zachowanie korespondencji seryjnej:
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName: Unikalny identyfikator pola ASK.
+- PromptText: Tekst monitujący użytkownika o wprowadzenie danych.
+- DefaultResponse: Wstępnie wypełniona odpowiedź, którą użytkownik może zmienić.
+- PromptOnceOnMailMerge: Określa, czy monit pojawia się tylko raz podczas korespondencji seryjnej.
+
+## Krok 5: Zaktualizuj pole
+
+Po skonfigurowaniu pola ASK należy je zaktualizować, aby mieć pewność, że wszystkie ustawienia zostały zastosowane poprawnie:
+
+```csharp
+field.Update();
+```
+
+Dzięki temu poleceniu nasze pole ASK jest gotowe i prawidłowo skonfigurowane w dokumencie.
+
+## Krok 6: Zapisz dokument
+
+Na koniec zapiszmy dokument w określonym przez nas katalogu:
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy pole ASK bez użycia narzędzia DocumentBuilder, skonfigurowaliśmy różne właściwości pola i zapisaliśmy dokument pod określoną nazwą pliku.
+Linia ta zapisuje dokument z wstawionym polem ASK. I gotowe – Twój dokument jest teraz wyposażony w dynamiczne pole ASK!
 
-Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Wstaw pole ASK bez narzędzia DocumentBuilder” w Aspose.Words dla .NET.
+## Wniosek
 
-### Często zadawane pytania
+Gratulacje! Właśnie dodałeś pole ASK do dokumentu Word przy użyciu Aspose.Words dla .NET bez Konstruktora dokumentów. Ta funkcja może znacznie usprawnić interakcję użytkownika z dokumentami, czyniąc je bardziej elastycznymi i przyjaznymi dla użytkownika. Eksperymentuj z różnymi polami i właściwościami, aby odblokować pełny potencjał Aspose.Words. Miłego kodowania!
 
-#### P: Co to jest pole ASK w Aspose.Words?
+## Często zadawane pytania
 
-O: Pole ASK w Aspose.Words służy do zadawania użytkownikowi pytania podczas otwierania dokumentu. Często służy do żądania określonych informacji lub opinii, które mogą się różnić w zależności od użytkownika.
+### Co to jest pole ASK w Aspose.Words?
+Pole ASK w Aspose.Words to pole, które po otwarciu dokumentu monituje użytkownika o wprowadzenie określonych danych, umożliwiając dynamiczne wprowadzanie danych.
 
-#### P: Jak wstawić pole ASK do dokumentu Word bez użycia Konstruktora dokumentów w Aspose.Words?
+### Czy mogę użyć wielu pól ASK w jednym dokumencie?
+Tak, możesz wstawić wiele pól ASK w dokumencie, każde z unikalnymi monitami i odpowiedziami.
 
-Odp.: Aby wstawić pole ASK do dokumentu Word bez korzystania z Konstruktora dokumentów w Aspose.Words, możesz wykonać następujące kroki:
+###  Jaki jest cel`PromptOnceOnMailMerge` property?
+ The`PromptOnceOnMailMerge` Właściwość określa, czy monit ASK pojawia się tylko raz podczas operacji korespondencji seryjnej, czy za każdym razem.
 
-1. Zaimportuj klasę Dokument i Pole z przestrzeni nazw Aspose.Words.Fields.
-2. Utwórz instancję dokumentu, ładując istniejący dokument.
-3. Użyj metody InsertField, aby wstawić pole ASK, podając nazwę pytania.
-4. Zapisz dokument.
+### Czy muszę aktualizować pole ASK po ustawieniu jego właściwości?
+Tak, aktualizacja pola ASK gwarantuje, że wszystkie właściwości zostaną poprawnie zastosowane, a pole będzie działać zgodnie z oczekiwaniami.
 
-#### P: Jak uzyskać odpowiedź użytkownika na pole ASK w dokumencie programu Word?
-
-O: Aby uzyskać odpowiedź użytkownika na pole ASK w dokumencie programu Word, można skorzystać z metody GetFieldNames dostępnej w klasie Dokument. Metoda ta zwraca listę nazw pól występujących w dokumencie. Następnie możesz sprawdzić, czy nazwa pola ASK znajduje się na liście i pobrać powiązaną odpowiedź.
-
-#### P: Czy można użyć pola ASK, aby poprosić użytkownika o więcej informacji?
-
-Odpowiedź: Tak, pola ASK można używać do żądania od użytkownika wielu informacji. Możesz wstawić do swojego dokumentu wiele pól ASK, każde z innym pytaniem. Po otwarciu dokumentu użytkownik zostanie poproszony o podanie odpowiednich odpowiedzi.
+### Czy mogę dostosować tekst zachęty i domyślną odpowiedź?
+Absolutnie! Możesz ustawić niestandardowy tekst podpowiedzi i domyślne odpowiedzi, aby dostosować pole ASK do swoich konkretnych potrzeb.

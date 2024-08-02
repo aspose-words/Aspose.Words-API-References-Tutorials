@@ -2,71 +2,115 @@
 title: Inhoudscontrole van keuzelijst met invoervak
 linktitle: Inhoudscontrole van keuzelijst met invoervak
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een Combo Box Content Control in een Word-document kunt maken met Aspose.Words voor .NET.
+description: Maak een keuzelijst voor inhoudscontrole in Word-documenten met behulp van Aspose.Words voor .NET met onze gedetailleerde zelfstudie. Perfect om de interactiviteit van uw document te verbeteren.
 type: docs
 weight: 10
 url: /nl/net/programming-with-sdt/combo-box-content-control/
 ---
+## Invoering
 
-In deze tutorial wordt uitgelegd hoe u een Combo Box Content Control in een Word-document kunt maken met behulp van Aspose.Words voor .NET. Met de inhoudsbesturingselementen voor keuzelijsten met keuzelijst kunnen gebruikers een item uit een vervolgkeuzelijst selecteren.
+Wilt u interactieve elementen toevoegen aan uw Word-documenten? Dan ben je hier aan het juiste adres! In deze handleiding laten we u zien hoe u een inhoudsbesturingselement voor een keuzelijst met invoervak in een Word-document kunt maken met Aspose.Words voor .NET. Aan het einde van deze zelfstudie begrijpt u goed hoe u inhoudsbesturingselementen voor keuzelijsten met invoervakken kunt invoegen en manipuleren, waardoor uw documenten dynamischer en gebruiksvriendelijker worden.
 
 ## Vereisten
-Om deze tutorial te volgen, heb je het volgende nodig:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd.
-- Basiskennis van C# en woordenverwerking met Word-documenten.
+Voordat we in de kern van coderen duiken, zorgen we ervoor dat u alles heeft wat u nodig heeft:
 
-## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+1.  Aspose.Words voor .NET: Zorg ervoor dat de nieuwste versie is geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+2. .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
+3. Integrated Development Environment (IDE): Visual Studio wordt aanbevolen voor .NET-ontwikkeling.
+4. Basiskennis van C#: Deze tutorial gaat ervan uit dat je een basiskennis hebt van programmeren in C#.
+
+## Naamruimten importeren
+
+Om Aspose.Words in uw project te gaan gebruiken, moet u de benodigde naamruimten importeren. Zo doe je het:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Markup;
 ```
 
-## Stap 2: Maak een document en StructuredDocumentTag
- Maak een nieuw exemplaar van de`Document` klasse en een`StructuredDocumentTag` om het inhoudsbeheer van de keuzelijst met invoervak weer te geven. Specificeer`SdtType.ComboBox` als het type en`MarkupLevel.Block` als het opmaakniveau om een keuzelijst met invoervak op blokniveau te maken.
+Oké, laten we beginnen met het leuke gedeelte: coderen! We zullen het proces opsplitsen in eenvoudig te volgen stappen.
+
+## Stap 1: Stel uw project in
+
+Zet eerst een nieuw project op in uw IDE. Hier is hoe:
+
+- Open Visuele Studio.
+- Maak een nieuw C# Console-toepassingsproject.
+- Installeer het Aspose.Words voor .NET-pakket via NuGet Package Manager. U kunt dit doen door de volgende opdracht uit te voeren in de Package Manager Console:
+  ```
+  Install-Package Aspose.Words
+  ```
+
+## Stap 2: Initialiseer uw document
+
+In deze stap initialiseren we een nieuw Word-document waarin we ons keuzemenu voor de inhoudscontrole toevoegen.
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Initialiseer het document
 Document doc = new Document();
+```
+
+## Stap 3: Maak het inhoudsbeheer van de combobox
+
+Laten we nu het inhoudsbesturingselement voor de combobox maken. Met dit besturingselement kunnen gebruikers kiezen uit een vooraf gedefinieerde lijst met items.
+
+```csharp
+// Maak een ComboBox-inhoudscontrole
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
 ```
 
-## Stap 3: Voeg items toe aan de keuzelijst met invoervak
- Voeg items toe aan de keuzelijst met invoervak met behulp van de`ListItems` eigendom van de`StructuredDocumentTag` . Elk item wordt vertegenwoordigd door een`SdtListItem` object, waaraan een weergavetekst en een waarde moeten doorgegeven worden. In dit voorbeeld voegen we drie items toe aan de keuzelijst met invoervak.
+## Stap 4: Voeg items toe aan de keuzelijst met invoervak
+
+Een keuzelijst met invoervak heeft niet veel nut zonder items waaruit u kunt kiezen. Laten we er wat items aan toevoegen.
 
 ```csharp
+// Voeg artikelen toe aan de ComboBox
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
 sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
 sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
 ```
 
-## Stap 4: Voeg de StructuredDocumentTag toe aan het document
- Voeg het inhoudsbesturingselement voor de keuzelijst met invoervak toe aan de hoofdtekst van het document met behulp van de`AppendChild` methode van de hoofdtekst van de eerste sectie van het document.
+## Stap 5: Plaats de keuzelijst met invoervak in het document
+
+Vervolgens moeten we deze keuzelijst met invoervak in het document invoegen. We voegen het toe aan de hoofdtekst van het eerste gedeelte van ons document.
 
 ```csharp
+// Voeg de ComboBox toe aan de documenttekst
 doc.FirstSection.Body.AppendChild(sdt);
 ```
 
-## Stap 5: Sla het document op
- Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.ComboBoxContentControl.docx".
+## Stap 6: Bewaar uw document
+
+Laten we ten slotte het document opslaan, zodat we onze keuzelijst met invoervak in actie kunnen zien.
 
 ```csharp
+// Bewaar het document
 doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 ```
 
-### Voorbeeldbroncode voor Combo Box Content Control met behulp van Aspose.Words voor .NET 
+## Conclusie
 
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+En daar heb je het! U hebt met succes een inhoudsbesturingselement voor een keuzelijst met invoervak gemaakt in een Word-document met behulp van Aspose.Words voor .NET. Door deze stappen te volgen, kunt u interactieve elementen aan uw documenten toevoegen, waardoor de functionaliteit en gebruikerservaring ervan wordt verbeterd.
 
-	Document doc = new Document();
-	StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, MarkupLevel.Block);
-	sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
-	sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
-	sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
-	doc.FirstSection.Body.AppendChild(sdt);
-	doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
-```
+Experimenteer gerust met verschillende soorten inhoudsbesturingselementen en pas deze aan uw behoeften aan. Als u vragen heeft of tegen problemen aanloopt, aarzel dan niet om contact op te nemen voor ondersteuning.
 
-Dat is het! U hebt met succes een Combo Box Content Control in uw Word-document gemaakt met Aspose.Words voor .NET.
+## Veelgestelde vragen
+
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunt u Word-documenten in verschillende formaten maken, wijzigen, converteren en renderen.
+
+### Kan ik Aspose.Words voor .NET gebruiken met andere .NET-frameworks?
+Ja, Aspose.Words voor .NET ondersteunt verschillende .NET-frameworks, waaronder .NET Core en .NET Standard.
+
+### Hoe kan ik een gratis proefversie van Aspose.Words voor .NET krijgen?
+ U kunt een gratis proefversie van Aspose.Words voor .NET downloaden[hier](https://releases.aspose.com/).
+
+### Welke andere soorten inhoudsbesturingselementen kan ik maken met Aspose.Words?
+Naast keuzelijsten met invoervak kunt u bedieningselementen voor tekstinvoer, selectievakjes, datumkiezers en meer maken.
+
+### Waar kan ik meer gedetailleerde documentatie vinden over Aspose.Words voor .NET?
+ Voor gedetailleerde documentatie, bezoek de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/).

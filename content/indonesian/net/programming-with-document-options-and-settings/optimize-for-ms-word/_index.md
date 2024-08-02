@@ -13,7 +13,7 @@ Hai! Pernah bertanya-tanya bagaimana cara membuat dokumen Word Anda sangat kompa
 
 ## Prasyarat
 
-Sebelum kita mengotori tangan kita, mari pastikan kita memiliki semua yang kita butuhkan:
+Sebelum kita mengotori tangan kita, pastikan kita memiliki semua yang kita butuhkan:
 
 1.  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang mendukung .NET.

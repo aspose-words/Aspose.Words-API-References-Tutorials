@@ -2,74 +2,101 @@
 title: Especifique a localidade no nível do campo
 linktitle: Especifique a localidade no nível do campo
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como especificar a localização em nível de campo em documentos do Word com Aspose.Words for .NET.
+description: Aprenda como especificar a localidade dos campos em documentos do Word usando Aspose.Words for .NET. Siga nosso guia para personalizar facilmente a formatação do seu documento.
 type: docs
 weight: 10
 url: /pt/net/working-with-fields/specify-locale-at-field-level/
 ---
+## Introdução
 
-Aqui está um guia passo a passo para explicar o seguinte código-fonte C# que permite especificar a localização no nível do campo usando o recurso Aspose.Words for .NET. Certifique-se de incluir a biblioteca Aspose.Words em seu projeto antes de usar este código.
+Você está pronto para mergulhar no mundo do Aspose.Words for .NET? Hoje, exploraremos como especificar a localidade no nível do campo. Este recurso útil é especialmente útil quando você precisa que seus documentos sigam formatos culturais ou regionais específicos. Pense nisso como dar ao seu documento um passaporte que informa como se comportar com base no local onde está “visitando”. Ao final deste tutorial, você poderá personalizar facilmente as configurações de localidade dos campos em seus documentos do Word. Vamos começar!
 
-## Etapa 1: definir o caminho do diretório do documento
+## Pré-requisitos
+
+Antes de entrarmos no código, vamos ter certeza de que você tem tudo o que precisa:
+
+1.  Aspose.Words for .NET: Certifique-se de ter a versão mais recente instalada. Você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro ambiente de desenvolvimento .NET.
+3. Conhecimento básico de C#: A familiaridade com a programação C# o ajudará a acompanhar os exemplos.
+4. Licença Aspose: Se você não tiver uma licença, poderá obter uma[licença temporária](https://purchase.aspose.com/temporary-license/) para experimentar todos os recursos.
+
+## Importar namespaces
+
+Primeiramente, vamos importar os namespaces necessários. Eles são essenciais para trabalhar com Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Tudo bem, agora que eliminamos os pré-requisitos, vamos detalhar o processo passo a passo. Cada etapa terá um título e uma explicação para facilitar o acompanhamento.
+
+## Etapa 1: configure seu diretório de documentos
+
+Primeiro, precisamos configurar o diretório onde salvaremos nosso documento. Pense nisso como uma preparação para a nossa peça.
 
 ```csharp
 // O caminho para o diretório de documentos.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 ```
 
-Certifique-se de especificar o caminho correto para o diretório de documentos onde o documento editado será salvo.
+ Substituir`"YOUR_DOCUMENT_DIRECTORY"` com o caminho real para o seu diretório.
 
-## Passo 2: Crie um gerador de documentos
+## Etapa 2: inicializar o DocumentBuilder
+
+ A seguir, criaremos uma nova instância de`DocumentBuilder`. É como nossa caneta e papel para criar e editar o documento do Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Aqui estamos criando uma instância do`DocumentBuilder` classe que nos permitirá adicionar campos ao documento.
+## Etapa 3: inserir um campo
 
-## Etapa 3: insira um campo de data com um local específico
+Agora, vamos inserir um campo no documento. Os campos são elementos dinâmicos que podem exibir dados, como datas, números de páginas ou cálculos.
 
 ```csharp
-Field field = builder. InsertField(FieldType.FieldDate, true);
+Field field = builder.InsertField(FieldType.FieldDate, true);
+```
+
+## Etapa 4: especifique a localidade
+
+ Aí vem a magia! Definiremos a localidade do campo. O ID da localidade`1049`corresponde ao russo. Isso significa que nosso campo de data seguirá as regras de formatação russas.
+
+```csharp
 field.LocaleId = 1049;
 ```
 
- Usamos o gerador de documentos para inserir um campo do tipo`FieldType.FieldDate` no documento. Ao definir o`LocaleId`propriedade para`1049`, especificamos a localização russa para este campo.
+## Etapa 5: salve o documento
 
-## Etapa 4: salve o documento modificado
-
-```csharp
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
-```
-
-Finalmente, salvamos o documento modificado com o local especificado em um arquivo especificado.
-
-### Exemplo de código-fonte para especificar a localização em nível de campo com Aspose.Words for .NET
+Finalmente, vamos salvar nosso documento. Esta etapa finaliza todas as alterações que fizemos.
 
 ```csharp
-// O caminho para o diretório de documentos.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-DocumentBuilder builder = new DocumentBuilder();
-
-Field field = builder. InsertField(FieldType.FieldDate, true);
-field.LocaleId = 1049;
-
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
+builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.docx");
 ```
 
-Este foi um exemplo de código-fonte para especificar a localização no nível do campo em um documento usando Aspose.Words for .NET. Você pode usar este código para inserir campos de data com locais específicos em seus documentos do Word.
+## Conclusão
 
-### Perguntas frequentes
+E aí está! Você especificou com êxito a localidade de um campo em seu documento do Word usando Aspose.Words for .NET. Este poderoso recurso permite que você personalize seus documentos para atender a requisitos culturais e regionais específicos, tornando seus aplicativos mais versáteis e fáceis de usar. Boa codificação!
 
-#### P: Como posso especificar a localidade em nível de campo no Aspose.Words for .NET?
+## Perguntas frequentes
 
- R: Para especificar a localidade no nível do campo no Aspose.Words for .NET, você pode usar o`FieldOptions` classe e sua`FieldLocale` propriedade para definir a localidade desejada. Por exemplo, você pode usar`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` para especificar o código do idioma francês (França).
+### O que é um ID de localidade no Aspose.Words?
 
-#### P: É possível especificar uma localidade diferente para cada campo no Aspose.Words for .NET?
+Um ID de localidade em Aspose.Words é um identificador numérico que representa uma cultura ou região específica, influenciando como dados como datas e números são formatados.
 
- R: Sim, é possível especificar uma localidade diferente para cada campo no Aspose.Words for .NET. Você pode usar o`FieldOptions.FieldLocale` propriedade antes de criar ou atualizar um campo específico para atribuir a ele um código de idioma diferente.
+### Posso especificar localidades diferentes para campos diferentes no mesmo documento?
 
-#### P: Como posso obter a localidade usada atualmente para um campo no Aspose.Words for .NET?
+Sim, você pode especificar localidades diferentes para campos diferentes no mesmo documento para atender a vários requisitos de formatação.
 
- R: Para obter a localidade usada atualmente para um campo no Aspose.Words for .NET, você pode usar o campo`Field.LocaleId`propriedade. Isso permitirá que você obtenha o identificador de localidade associado ao campo.
+### Onde posso encontrar a lista de IDs de localidade?
+
+Você pode encontrar a lista de IDs de localidade na documentação da Microsoft ou na documentação da API Aspose.Words.
+
+### Preciso de uma licença para usar o Aspose.Words for .NET?
+
+ Embora você possa usar o Aspose.Words for .NET sem licença no modo de avaliação, é recomendável obter um[licença](https://purchase.aspose.com/buy) para desbloquear todas as funcionalidades.
+
+### Como atualizo a biblioteca Aspose.Words para a versão mais recente?
+
+ Você pode baixar a versão mais recente do Aspose.Words for .NET em[página de download](https://releases.aspose.com/words/net/).

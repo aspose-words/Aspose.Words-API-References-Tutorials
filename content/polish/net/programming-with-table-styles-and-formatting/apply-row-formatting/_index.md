@@ -2,111 +2,110 @@
 title: Zastosuj formatowanie wierszy
 linktitle: Zastosuj formatowanie wierszy
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący stosowania formatowania wierszy w tabeli przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak zastosować formatowanie wierszy w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Aby uzyskać szczegółowe instrukcje, postępuj zgodnie z naszym przewodnikiem krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## Wstęp
 
-tym samouczku przeprowadzimy Cię krok po kroku przez proces stosowania formatowania wierszy w tabeli za pomocą Aspose.Words dla .NET. Wyjaśnimy dołączony kod źródłowy C# i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć tę funkcję we własnych projektach. Pod koniec tego samouczka będziesz już dobrze wiedział, jak formatować wiersze tabeli w dokumentach programu Word przy użyciu Aspose.Words dla .NET.
+Jeśli chcesz urozmaicić swoje dokumenty Word za pomocą fantazyjnego formatowania wierszy, trafiłeś we właściwe miejsce! W tym samouczku omówimy, jak zastosować formatowanie wierszy za pomocą Aspose.Words dla .NET. Omówimy każdy krok, dzięki czemu łatwiej będzie Ci go śledzić i zastosować w swoich projektach.
 
-## Krok 1: Zdefiniuj katalog dokumentów
-Najpierw musisz ustawić ścieżkę do katalogu dokumentów. To jest lokalizacja, w której chcesz zapisać edytowany dokument programu Word. Zastąp „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką.
+## Warunki wstępne
+
+Zanim zagłębimy się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
+
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go ze strony[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: środowisko programistyczne AC#, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest niezbędna.
+4. Katalog dokumentów: Katalog, w którym zapiszesz swój dokument.
+
+## Importuj przestrzenie nazw
+
+Na początek musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Krok 2: Utwórz nowy dokument i narzędzie do tworzenia dokumentów
- Następnie musisz utworzyć nową instancję pliku`Document` class i konstruktor dokumentu dla tego dokumentu.
+Teraz przeanalizujmy proces krok po kroku.
+
+## Krok 1: Utwórz nowy dokument
+
+Najpierw musimy utworzyć nowy dokument. To będzie nasze płótno, do którego dodamy naszą tabelę i zastosujemy formatowanie.
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Rozpocznij nową tablicę
- Aby zastosować formatowanie wierszy, musimy najpierw rozpocząć nową tabelę za pomocą`StartTable()` metoda konstruktora dokumentu.
+## Krok 2: Rozpocznij nowy stół
+
+ Następnie rozpoczniemy nową tabelę za pomocą metody`DocumentBuilder`obiekt. To tutaj dzieje się magia.
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## Krok 4: Wstaw komórkę i przejdź do formatu wiersza
-Teraz możemy wstawić komórkę do tabeli i uzyskać dostęp do formatu wiersza dla tej komórki za pomocą narzędzia do tworzenia dokumentów`InsertCell()`I`RowFormat` metody.
+## Krok 3: Zdefiniuj formatowanie wierszy
+
+Tutaj zdefiniujemy formatowanie wierszy. Obejmuje to ustawienie wysokości wiersza i dopełnienia.
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## Krok 5: Ustaw wysokość wiersza
- Aby ustawić wysokość wiersza, używamy`Height`I`HeightRule` właściwości formatu wiersza. W tym przykładzie ustawiliśmy wysokość wiersza na 100 punktów i użyliśmy metody`Exactly` reguła.
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## Krok 6: Zdefiniuj formatowanie tabeli
- Niektóre właściwości formatowania można ustawić w samej tabeli i zastosować do wszystkich wierszy tabeli. W tym przykładzie ustawiamy właściwości marginesów tabeli za pomocą`LeftPadding`, `RightPadding`, `TopPadding`I`BottomPadding` nieruchomości.
+## Krok 4: Wstaw zawartość do komórki
+
+Wstawmy trochę treści do naszego pięknie sformatowanego wiersza. Ta treść pokaże, jak wygląda formatowanie.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## Krok 7: Dodaj treść do wiersza
-Teraz możemy
+## Krok 5: Zakończ wiersz i tabelę
 
- Zamierzamy dodać treść do linii za pomocą metod konstruktora dokumentu. W tym przykładzie używamy`Writeln()` metoda dodawania tekstu do linii.
+Na koniec musimy zakończyć wiersz i tabelę, aby zakończyć naszą strukturę.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## Krok 8: Zakończ linię i stół
- Po dodaniu treści do wiersza możemy zakończyć wiersz za pomocą`EndRow()` metodę, a następnie zakończ tabelę za pomocą metody`EndTable()` metoda.
+## Krok 6: Zapisz dokument
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## Krok 9: Zapisz zmodyfikowany dokument
-Na koniec zapisujemy zmodyfikowany dokument do pliku. Możesz wybrać odpowiednią nazwę i lokalizację dokumentu wyjściowego.
+Teraz, gdy nasza tabela jest już gotowa, czas zapisać dokument. Określ ścieżkę do katalogu dokumentów i zapisz plik.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-Gratulacje! Zastosowałeś teraz formatowanie wierszy do tabeli przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy dla Zastosuj formatowanie wierszy przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Te właściwości formatowania są ustawiane w tabeli i stosowane do wszystkich wierszy w tabeli.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak zastosować formatowanie wierszy w tabeli za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz łatwo zintegrować tę funkcjonalność ze swoimi projektami C#. Manipulowanie formatowaniem wierszy tabeli jest istotnym aspektem przetwarzania dokumentów, a Aspose.Words oferuje potężny i elastyczny interfejs API, który pozwala to osiągnąć. Dzięki tej wiedzy możesz poprawić wizualną prezentację dokumentów Word i spełnić określone wymagania.
+
+I masz to! Pomyślnie zastosowałeś formatowanie wierszy do tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta prosta, ale skuteczna technika może znacznie poprawić czytelność i estetykę dokumentów.
+
+## Często zadawane pytania
+
+### Czy mogę zastosować różne formatowanie do poszczególnych wierszy?  
+ Tak, możesz dostosować każdy wiersz indywidualnie, ustawiając różne właściwości`RowFormat`.
+
+### Jak dostosować szerokość kolumn?  
+ Możesz ustawić szerokość kolumn za pomocą`CellFormat.Width` nieruchomość.
+
+### Czy możliwe jest łączenie komórek w Aspose.Words dla .NET?  
+ Tak, możesz łączyć komórki za pomocą`CellMerge` własność`CellFormat`.
+
+### Czy mogę dodać obramowania do wierszy?  
+ Absolutnie! Możesz dodać obramowania do wierszy, ustawiając opcję`Borders` własność`RowFormat`.
+
+### Jak zastosować formatowanie warunkowe do wierszy?  
+Możesz użyć logiki warunkowej w swoim kodzie, aby zastosować różne formatowanie w oparciu o określone warunki.

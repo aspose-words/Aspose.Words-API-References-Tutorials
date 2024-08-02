@@ -2,123 +2,125 @@
 title: Insertar campo TOA sin generador de documentos
 linktitle: Insertar campo TOA sin generador de documentos
 second_title: API de procesamiento de documentos Aspose.Words
-description: Guía paso a paso para insertar el campo TOA sin Document Builder usando Aspose.Words para .NET.
+description: Aprenda a insertar un campo TOA sin utilizar un generador de documentos en Aspose.Words para .NET. Siga nuestra guía paso a paso para gestionar eficientemente las citaciones legales.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## Introducción
 
-Aquí hay una guía paso a paso para explicar el código fuente de C# a continuación, que utiliza la función "Inserción de campo TOA" de Aspose.Words para .NET. Siga cada paso cuidadosamente para obtener los resultados deseados.
+Crear un campo de Tabla de autoridades (TOA) en un documento de Word puede parecer como armar un rompecabezas complejo. Sin embargo, con la ayuda de Aspose.Words para .NET, el proceso se vuelve sencillo y sencillo. En este artículo, lo guiaremos a través de los pasos para insertar un campo TOA sin usar un generador de documentos, lo que le facilitará la administración de sus citas y referencias legales dentro de sus documentos de Word.
 
-## Paso 1: Configuración del directorio de documentos
+## Requisitos previos
 
-En el código proporcionado, debe especificar el directorio de sus documentos. Reemplace el valor "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada a su directorio de documentos.
+Antes de sumergirnos en el tutorial, cubramos los elementos esenciales que necesitará:
+
+-  Aspose.Words para .NET: asegúrese de tener instalada la última versión. Puedes descargarlo desde el[Aspose sitio web](https://releases.aspose.com/words/net/).
+- Entorno de desarrollo: un IDE compatible con .NET como Visual Studio.
+- Conocimientos básicos de C#: será útil comprender la sintaxis y los conceptos básicos de C#.
+- Documento de Word de muestra: cree o tenga listo un documento de muestra donde desee insertar el campo TOA.
+
+## Importar espacios de nombres
+
+Para comenzar, deberá importar los espacios de nombres necesarios de la biblioteca Aspose.Words. Esta configuración garantiza que tenga acceso a todas las clases y métodos necesarios para la manipulación de documentos.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Paso 2: crear el documento y el párrafo
+Dividamos el proceso en pasos simples y fáciles de seguir. Lo guiaremos a través de cada etapa, explicando qué hace cada fragmento de código y cómo contribuye a crear el campo TOA.
 
-Comenzamos creando un nuevo documento e inicializando un párrafo.
+## Paso 1: Inicializar el documento
+
+ Primero, necesita crear una instancia del`Document` clase. Este objeto representa el documento de Word en el que estás trabajando.
 
 ```csharp
+// La ruta al directorio de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## Paso 3: Insertar el campo TA
+Este código inicializa un nuevo documento de Word. Puedes considerarlo como crear un lienzo en blanco al que agregarás tu contenido.
 
-Usamos la clase FieldTA para insertar un campo TA en el párrafo.
+## Paso 2: crear y configurar el campo TA
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## Paso 4: Agregar el párrafo al cuerpo del documento
-
-Agregamos el párrafo que contiene el campo TA al cuerpo del documento.
+A continuación, agregaremos un campo TA (Tabla de autoridades). Este campo marca las entradas que aparecerán en el TOA.
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Paso 5: Crear el párrafo para el campo TOA
-
-Creamos un nuevo párrafo para el campo TOA.
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## Paso 6: Insertar el campo TOA
-
-Usamos la clase FieldToa para insertar un campo TOA en el párrafo.
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## Paso 7: Agregar el párrafo al cuerpo del documento
-
-Agregamos el párrafo que contiene el campo TOA al cuerpo del documento.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Paso 8: actualice el campo TOA
-
- Finalmente llamamos al`Update()` método para actualizar el campo TOA.
-
-```csharp
-fieldToa.Update();
-```
-
-### Ejemplo de código fuente para inserción de campos TOA sin Document Builder con Aspose.Words para .NET
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
 // Queremos insertar campos TA y TOA como este:
 // { TA \c 1 \l "Valor 0" }
-// { TOA \c 1 }
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+Aquí hay un desglose:
+- Párrafo para = nuevo párrafo(doc);: Crea un nuevo párrafo dentro del documento.
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: Agrega un campo TA al párrafo. El`FieldType.FieldTOAEntry` especifica que este es un campo de entrada TOA.
+- fieldTA.EntryCategory = "1";: Establece la categoría de entrada. Esto es útil para categorizar diferentes tipos de entradas.
+- fieldTA.LongCitation = "Valor 0";: Especifica el texto largo de la cita. Este es el texto que aparecerá en el TOA.
+- doc.FirstSection.Body.AppendChild(para);: Agrega el párrafo con el campo TA al cuerpo del documento.
+
+## Paso 3: agregue el campo TOA
+
+Ahora, insertaremos el campo TOA real que compila todas las entradas TA en una tabla.
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### Preguntas frecuentes
+En este paso:
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);: Agrega un campo TOA al párrafo.
+- fieldToa.EntryCategory = "1";: Filtra las entradas para incluir solo aquellas marcadas con la categoría "1".
 
-#### P: ¿Cómo personalizar la apariencia del campo TOA insertado en el documento de Word con Aspose.Words para .NET?
+## Paso 4: actualice el campo TOA
 
- R: Puede personalizar la apariencia del campo TOA insertado utilizando las propiedades del`FieldTOA` objeto para especificar opciones de formato.
+Después de insertar el campo TOA, debe actualizarlo para asegurarse de que refleje las últimas entradas.
 
-#### P: ¿Puedo agregar varios campos TOA en un solo documento de Word usando Aspose.Words para .NET?
+```csharp
+fieldToa.Update();
+```
 
-R: Sí, puede agregar varios campos TOA en un solo documento de Word usando Aspose.Words para .NET. Simplemente repita los pasos de inserción para cada campo.
+Este comando actualiza el campo TOA, asegurando que todas las entradas marcadas se muestren correctamente en la tabla.
 
-#### P: ¿Cómo puedo comprobar si un campo TOA se insertó correctamente en un documento de Word con Aspose.Words para .NET?
+## Paso 5: guarde el documento
 
-R: Para comprobar si un campo TOA se insertó correctamente, puede explorar el contenido del documento y buscar instancias de campo TOA.
+Finalmente, guarde su documento con el campo TOA recién agregado.
 
-#### P: ¿La inserción de un campo TOA sin utilizar DocumentBuilder afecta el formato de documentos de Word con Aspose.Words para .NET?
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-R: Insertar un campo TOA sin usar DocumentBuilder no afecta directamente el formato del documento de Word. Sin embargo, las opciones de formato del campo TOA pueden afectar el formato general del documento.
+ Esta línea de código guarda el documento en el directorio especificado. Asegúrate de reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde desea guardar su archivo.
+
+## Conclusión
+
+¡Y ahí lo tienes! Ha agregado con éxito un campo TOA a un documento de Word sin utilizar un generador de documentos. Si sigue estos pasos, podrá gestionar citaciones de manera eficiente y crear tablas completas de autoridades en sus documentos legales. Aspose.Words para .NET hace que este proceso sea fluido y eficiente, brindándole las herramientas para manejar tareas de documentos complejas con facilidad.
+
+## Preguntas frecuentes
+
+### ¿Puedo agregar varios campos TA con diferentes categorías?
+ Sí, puede agregar múltiples campos TA con diferentes categorías configurando el`EntryCategory`propiedad en consecuencia.
+
+### ¿Cómo puedo personalizar la apariencia del TOA?
+Puede personalizar la apariencia del TOA modificando las propiedades del campo TOA, como el formato de entrada y las etiquetas de categoría.
+
+### ¿Es posible actualizar el campo TOA automáticamente?
+ Si bien puede actualizar manualmente el campo TOA usando el`Update` método, Aspose.Words actualmente no admite actualizaciones automáticas sobre cambios en documentos.
+
+### ¿Puedo agregar campos TA mediante programación en partes específicas del documento?
+Sí, puede agregar campos TA en ubicaciones específicas insertándolos en los párrafos o secciones deseados.
+
+### ¿Cómo manejo múltiples campos TOA en un solo documento?
+ Puede administrar múltiples campos TOA asignando diferentes`EntryCategory` valores y garantizar que cada campo TOA filtre las entradas según su categoría.

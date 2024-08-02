@@ -16,12 +16,12 @@ Al utilizar Aspose.Words para .NET y seguir estos tutoriales, podrá dominar la 
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Agregar forma de grupo](./add-group-shape/) | Aprenda a agregar una forma de grupo con varias formas a un documento de Word usando Aspose.Words para .NET. |
-| [Insertar forma](./insert-shape/) | Aprenda a insertar formas en un documento de Word usando Aspose.Words para .NET. |
-| [Relación de aspecto bloqueada](./aspect-ratio-locked/) | Aprenda a bloquear o desbloquear la relación de aspecto de una forma en un documento de Word usando Aspose.Words para .NET. |
-| [Diseño en celda](./layout-in-cell/) | Aprenda a diseñar una forma dentro de una celda de una tabla en un documento de Word usando Aspose.Words para .NET. |
-| [Agregar esquinas recortadas](./add-corners-snipped/) | Aprenda a agregar una forma con esquinas recortadas a un documento de Word usando Aspose.Words para .NET. |
-| [Obtener puntos de límites de forma reales](./get-actual-shape-bounds-points/) | Aprenda cómo recuperar los límites reales de una forma en puntos (unidad de medida) en un documento de Word usando Aspose.Words para .NET. |
-| [Ancla vertical](./vertical-anchor/) | Aprenda a colocar una forma verticalmente dentro de un documento usando la función de anclaje vertical en Aspose.Words para .NET.|
-| [Detectar formas artísticas inteligentes](./detect-smart-art-shape/) | Aprenda a detectar formas Smart Art en un documento de Word utilizando Aspose.Words para .NET, identificando representaciones gráficas. |
-| [Actualizar dibujo artístico inteligente](./update-smart-art-drawing/) | Aprenda cómo actualizar el dibujo Smart Art en un documento de Word usando Aspose.Words para .NET. |
+| [Agregar forma de grupo](./add-group-shape/) | Aprenda a agregar formas de grupo a documentos de Word usando Aspose.Words para .NET con este completo tutorial paso a paso. |
+| [Insertar forma](./insert-shape/) | Aprenda a insertar y manipular formas en documentos de Word usando Aspose.Words para .NET con nuestra guía paso a paso. |
+| [Relación de aspecto bloqueada](./aspect-ratio-locked/) | Aprenda a bloquear la relación de aspecto de las formas en documentos de Word usando Aspose.Words para .NET. Siga esta guía paso a paso para mantener sus imágenes y formas proporcionadas. |
+| [Diseño en celda](./layout-in-cell/) | Aprenda cómo configurar el diseño en la celda usando Aspose.Words para .NET con esta guía completa. Perfecto para desarrolladores que buscan personalizar documentos de Word. |
+| [Agregar esquinas recortadas](./add-corners-snipped/) | Aprenda a agregar una forma recortada en las esquinas a sus documentos de Word usando Aspose.Words para .NET. Esta guía paso a paso le garantiza que podrá mejorar sus documentos fácilmente. |
+| [Obtener puntos de límites de forma reales](./get-actual-shape-bounds-points/) | Descubra cómo obtener los puntos de límites de forma reales en documentos de Word usando Aspose.Words para .NET. Aprenda la manipulación precisa de formas con esta guía detallada. |
+| [Ancla vertical](./vertical-anchor/) | Aprenda a establecer posiciones de anclaje verticales para cuadros de texto en documentos de Word usando Aspose.Words para .NET. Incluye una sencilla guía paso a paso.|
+| [Detectar formas artísticas inteligentes](./detect-smart-art-shape/) | Aprenda a detectar formas SmartArt en documentos de Word usando Aspose.Words para .NET con esta guía completa. Perfecto para automatizar el flujo de trabajo de sus documentos. |
+| [Actualizar dibujo artístico inteligente](./update-smart-art-drawing/) | Aprenda cómo actualizar dibujos Smart Art en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso. Asegúrese de que sus imágenes sean siempre precisas. |

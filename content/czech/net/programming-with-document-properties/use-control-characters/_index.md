@@ -107,7 +107,7 @@ Gratuluji! Právě jste udělali první kroky do světa automatizace dokumentů 
 Aspose.Words for .NET je knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově.
 
 ### Mohu používat Aspose.Words zdarma?
- Můžete to vyzkoušet zdarma stažením a[zkušební verze zdarma](https://releases.aspose.com/). Pro plné funkce si budete muset zakoupit licenci.
+ Můžete si to vyzkoušet zdarma stažením a[zkušební verze zdarma](https://releases.aspose.com/). Pro plné funkce si budete muset zakoupit licenci.
 
 ### Jaké formáty zvládne Aspose.Words?
 Podporuje různé formáty, včetně .doc, .docx, .pdf, .html a dalších.

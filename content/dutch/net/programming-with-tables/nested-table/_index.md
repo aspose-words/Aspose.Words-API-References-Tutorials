@@ -2,98 +2,140 @@
 title: Geneste tabel
 linktitle: Geneste tabel
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een geneste tabel in een Word-document maakt met Aspose.Words voor .NET.
+description: Leer met onze gids hoe u geneste tabellen in Word-documenten kunt maken met Aspose.Words voor .NET. Perfect voor het programmatisch genereren van complexe documentlay-outs.
 type: docs
 weight: 10
 url: /nl/net/programming-with-tables/nested-table/
 ---
+## Invoering
 
-In deze zelfstudie leren we hoe u een geneste tabel in een Word-document kunt maken met Aspose.Words voor .NET. We zullen een stapsgewijze handleiding volgen om de code te begrijpen en deze functie te implementeren. Aan het einde van deze zelfstudie kunt u programmatisch geneste tabellen in uw Word-documenten maken.
+Heeft u ooit behoefte gehad aan het programmatisch maken van een geneste tabel in een Word-document? Of u nu rapporten, facturen of welk document dan ook genereert waarvoor een gedetailleerde tabelstructuur nodig is, Aspose.Words voor .NET kan uw beste vriend zijn. In deze zelfstudie duiken we in het proces van het maken van geneste tabellen in Word-documenten met Aspose.Words voor .NET. We behandelen alles, van de vereisten tot de uiteindelijke code-implementatie. Dus laten we beginnen!
 
-## Stap 1: Projectconfiguratie
-1. Start Visual Studio en maak een nieuw C#-project.
-2. Voeg een verwijzing toe naar de Aspose.Words voor .NET-bibliotheek.
+## Vereisten
 
-## Stap 2: Het document aanmaken en de documentgenerator initialiseren
-Volg deze stappen om Woordenverwerking te starten met de document- en documentgenerator:
+Voordat we ingaan op de code, zijn er een paar dingen die je nodig hebt:
+
+-  Aspose.Words voor .NET: Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Visual Studio of een andere C# IDE.
+- Basiskennis van C#: begrip van de syntaxis en concepten van C#.
+
+Zorg ervoor dat u deze hebt ingesteld voordat u doorgaat.
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Met deze naamruimten hebben we toegang tot de klassen en methoden die nodig zijn voor het werken met Word-documenten.
 
 ```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Documentcreatie
+## Stap 1: Initialiseer het document en DocumentBuilder
+
+ Om te beginnen maken we een nieuw Word-document en initialiseren we het`DocumentBuilder` object, dat ons zal helpen de tafel te construeren.
+
+```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-
-// Initialiseer de documentgenerator
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Zorg ervoor dat u "UW DOCUMENTENMAP" vervangt door het daadwerkelijke pad naar uw documentenmap.
+## Stap 2: Maak de buitenste tabel
 
-## Stap 3: De geneste tabel bouwen
-Vervolgens bouwen we de geneste tabel door cellen in de buitenste tabel in te voegen en een nieuwe tabel in de eerste cel te maken. Gebruik de volgende code:
+Laten we nu de buitenste tabel maken. We beginnen met het invoegen van de eerste cel en het toevoegen van wat inhoud.
+
+### Stap 2.1: Plaats de eerste cel van de buitenste tabel
 
 ```csharp
-// Voeg de eerste cel van de buitenste tabel in
-Cell cell = builder. InsertCell();
-builder.Writeln("Cell 1 of the outer table");
-
-// Voeg de tweede cel van de buitenste tabel in
-builder. InsertCell();
-builder.Writeln("Cell 2 of the outer table");
-
-// Beëindiging van de buitenste tafel
-builder. EndTable();
-
-// Ga naar de eerste cel van de buitenste tabel
-builder.MoveTo(cell.FirstParagraph);
-
-// Bouw de binnentafel
-builder. InsertCell();
-builder.Writeln("Cell 1 of inner table");
-builder. InsertCell();
-builder.Writeln("Cell 2 of the inner table");
-
-// Einde van de binnentafel
-builder. EndTable();
+Cell cell = builder.InsertCell();
+builder.Writeln("Outer Table Cell 1");
 ```
 
-Hier gebruiken we de documentbouwer om cellen en inhoud in de buitenste tabel in te voegen. Vervolgens verplaatsen we de documentbuilder-cursor naar de eerste cel van de buitenste tabel en bouwen we daarbinnen een nieuwe tabel door cellen en inhoud in te voegen.
+### Stap 2.2: Plaats de tweede cel van de buitenste tabel
 
-## Stap 4: Het gewijzigde document opslaan
-Ten slotte moeten we het gewijzigde document opslaan met de geneste tabel. Gebruik de volgende code:
+Vervolgens voegen we de tweede cel in en voegen we wat inhoud toe.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Outer Table Cell 2");
+```
+
+### Stap 2.3: Beëindig de buitenste tabel
+
+Het beëindigen van de tabel hier is van cruciaal belang, omdat we hierdoor de geneste tabel in de eerste cel kunnen starten.
+
+```csharp
+builder.EndTable();
+```
+
+## Stap 3: Maak de binnentafel
+
+Om een geneste tabel te maken, moeten we de cursor naar de eerste cel van de buitenste tabel verplaatsen en vervolgens beginnen met het bouwen van de binnenste tabel.
+
+### Stap 3.1: Ga naar de eerste cel van de buitenste tabel
+
+```csharp
+builder.MoveTo(cell.FirstParagraph);
+```
+
+### Stap 3.2: Plaats de eerste cel van de binnentabel
+
+Laten we nu de eerste cel van de binnenste tabel invoegen en wat inhoud toevoegen.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Inner Table Cell 1");
+```
+
+### Stap 3.3: Plaats de tweede cel van de binnentabel
+
+Ten slotte voegen we de tweede cel in en voegen we wat inhoud toe.
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Inner Table Cell 2");
+```
+
+### Stap 3.4: Beëindig de binnentafel
+
+We sluiten af met het beëindigen van de binnentabel.
+
+```csharp
+builder.EndTable();
+```
+
+## Stap 4: Sla het document op
+
+De laatste stap is het opslaan van het document in de door u opgegeven map.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-Zorg ervoor dat u het juiste pad en naambestand voor het uitvoerdocument opgeeft.
-
-### Voorbeeldbroncode voor geneste tabel met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Cell cell = builder.InsertCell();
-	builder.Writeln("Outer Table Cell 1");
-	builder.InsertCell();
-	builder.Writeln("Outer Table Cell 2");
-	// Deze aanroep is belangrijk om een geneste tabel binnen de eerste tabel te maken.
-	//Zonder deze aanroep worden de hieronder ingevoegde cellen aan de buitenste tabel toegevoegd.
-	builder.EndTable();
-	// Ga naar de eerste cel van de buitenste tabel.
-	builder.MoveTo(cell.FirstParagraph);
-	// Bouw de binnentafel.
-	builder.InsertCell();
-	builder.Writeln("Inner Table Cell 1");
-	builder.InsertCell();
-	builder.Writeln("Inner Table Cell 2");
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
-```
-
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u een geneste tabel in een Word-document kunt maken met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde C#-code te implementeren, kunt u programmatisch geneste tabellen maken in uw Word-documenten volgens uw specifieke behoeften.
+
+En daar heb je het! U hebt met succes een geneste tabel in een Word-document gemaakt met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het ongelooflijk eenvoudig om Word-documenten programmatisch te manipuleren. Of u nu complexe rapporten of eenvoudige tabellen genereert, Aspose.Words voor .NET staat voor u klaar.
+
+## Veelgestelde vragen
+
+### Wat is een geneste tabel?
+
+Een geneste tabel is een tabel binnen een tabel. Het wordt gebruikt om complexe lay-outs binnen documenten te creëren, zoals formulieren of gedetailleerde gegevenspresentaties.
+
+### Waarom Aspose.Words gebruiken voor .NET?
+
+Aspose.Words voor .NET biedt een robuuste set functies voor het programmatisch maken, wijzigen en converteren van Word-documenten, waardoor het een ideale keuze is voor ontwikkelaars.
+
+### Kan ik meer niveaus van geneste tabellen toevoegen?
+
+Ja, u kunt meerdere niveaus van geneste tabellen maken door het proces van het beëindigen van de huidige tabel en het starten van een nieuwe binnen een cel te herhalen.
+
+### Is Aspose.Words voor .NET compatibel met alle versies van Word?
+
+Aspose.Words voor .NET is compatibel met een breed scala aan Word-documentformaten, waaronder DOC, DOCX, RTF en meer.
+
+### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
+
+ U kunt ondersteuning krijgen van de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).

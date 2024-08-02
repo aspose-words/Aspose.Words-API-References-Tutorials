@@ -2,72 +2,36 @@
 title: 表とセルを異なる境界線で書式設定する
 linktitle: 表とセルを異なる境界線で書式設定する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、異なる境界線でテーブルとセルをフォーマットするためのステップ バイ ステップ ガイド。
+description: Aspose.Words for .NET を使用して、さまざまな境界線で表とセルを書式設定する方法を学びます。カスタマイズされた表のスタイルとセルの網かけを使用して、Word 文書を強化します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、表とセルをさまざまな境界線で書式設定する手順を順を追って説明します。バンドルされている C# ソース コードについて説明し、この機能を理解して独自のプロジェクトに実装するのに役立つ包括的なガイドを提供します。このチュートリアルの最後には、Aspose.Words for .NET を使用して Word 文書内の特定の表とセルにカスタム境界線を適用する方法がわかります。
+表やセルの境界線をカスタマイズして、Word 文書をよりプロフェッショナルに見せようとしたことがありますか? まだ試したことがなければ、ぜひお試しください。このチュートリアルでは、Aspose.Words for .NET を使用して、表やセルをさまざまな境界線で書式設定する手順を説明します。わずか数行のコードで表の外観を変更できるとしたらどうでしょう。興味が湧きましたか? 早速、これを簡単に実現する方法を詳しく見ていきましょう。
 
-## ステップ1: ドキュメントディレクトリを定義する
-まず、ドキュメント ディレクトリへのパスを設定する必要があります。これは、編集した Word 文書を保存する場所です。「YOUR DOCUMENTS DIRECTORY」を適切なパスに置き換えます。
+## 前提条件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+始める前に、次の前提条件が満たされていることを確認してください。
+- C# プログラミングの基本的な理解。
+- Visual Studio がコンピューターにインストールされています。
+-  Aspose.Words for .NETライブラリ。まだインストールしていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- 有効なAsposeライセンス。無料トライアルまたは一時ライセンスは以下から入手できます。[ここ](https://purchase.aspose.com/temporary-license/).
 
-## ステップ2: 新しいドキュメントとドキュメントビルダーを作成する
-次に、新しいインスタンスを作成する必要があります。`Document`クラスとそのドキュメントのドキュメント コンストラクター。
+## 名前空間のインポート
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## ステップ3: 新しい表を作成してセルを追加する
-テーブルの作成を開始するには、`StartTable()`ドキュメントビルダーのメソッドを使用してテーブルにセルを追加します。`InsertCell()`メソッドを使用してセルの内容を書き込みます`Writeln()`方法。
+Aspose.Words for .NET を使用するには、必要な名前空間をプロジェクトにインポートする必要があります。コード ファイルの先頭に次の using ディレクティブを追加します。
 
 ```csharp
-Table table = builder. StartTable();
-builder.InsertCell();
-//表全体の境界線を設定します。
-table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-//このセルのパディングを設定します。
-builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-builder.Writeln("Cell #1");
-builder.InsertCell();
-// 2 番目のセルに異なるセル パディングを指定します。
-builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-builder.Writeln("Cell #2");
-builder.EndRow();
-//以前の操作によるセルの書式設定をクリアします。
-builder.CellFormat.ClearFormatting();
-builder.InsertCell();
-//この行の最初のセルに太い罫線を作成します。
-//テーブルに定義された境界線を基準にします。
-builder.CellFormat.Borders.Left.LineWidth = 4.0;
-builder.CellFormat.Borders.Right.LineWidth = 4.0;
-builder.CellFormat.Borders.Top.LineWidth = 4.0;
-builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-builder.Writeln("Cell #3");
-builder.InsertCell();
-builder.CellFormat.ClearFormatting();
-builder.Writeln("Cell #4");
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System.Drawing;
 ```
 
-## ステップ4: ドキュメントを保存する
+## ステップ 1: Document と DocumentBuilder を初期化する
 
-  修正された
-最後に、変更したドキュメントをファイルに保存します。出力ドキュメントに適切な名前と場所を選択できます。
-
-```csharp
-doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
-```
-
-おめでとうございます！Aspose.Words for .NET を使用して、異なる境界線を持つテーブルとセルをフォーマットしました。
-
-### Aspose.Words for .NET を使用して表とセルを異なる境界線で書式設定するためのサンプル ソース コード 
+まず、新しいドキュメントを作成し、ドキュメント コンテンツの構築に役立つ DocumentBuilder を初期化する必要があります。 
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -75,20 +39,64 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## ステップ2: テーブルの作成を開始する
+
+次に、DocumentBuilder を使用してテーブルの作成を開始し、最初のセルを挿入します。
+
+```csharp
 Table table = builder.StartTable();
 builder.InsertCell();
+```
+
+## ステップ3: 表の境界線を設定する
+
+表全体の境界線を設定します。この手順により、特に指定がない限り、表内のすべてのセルの境界線スタイルが統一されます。
+
+```csharp
 //表全体の境界線を設定します。
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+```
+
+## ステップ4: セルの網掛けを適用する
+
+セルに網掛けを適用して、視覚的に区別できるようにします。この例では、最初のセルの背景色を赤に設定します。
+
+
+```csharp
 //このセルのセルの網掛けを設定します。
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
+```
+
+## ステップ5: 異なる網掛けのセルを挿入する
+
+番目のセルを挿入し、異なる網掛け色を適用します。これにより、表がよりカラフルになり、読みやすくなります。
+
+```csharp
 builder.InsertCell();
 // 2 番目のセルに異なるセルの網かけを指定します。
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
 builder.EndRow();
+```
+
+## ステップ6: セルの書式設定をクリアする
+
+前の操作からセルの書式設定をクリアして、次のセルが同じスタイルを継承しないようにします。
+
+
+```csharp
 //以前の操作によるセルの書式設定をクリアします。
 builder.CellFormat.ClearFormatting();
+```
+
+## ステップ 7: 特定のセルの境界線をカスタマイズする
+
+特定のセルの境界線をカスタマイズして目立たせます。ここでは、新しい行の最初のセルに大きな境界線を設定します。
+
+```csharp
 builder.InsertCell();
 //この行の最初のセルに大きい境界線を作成します。これは異なります
 //テーブルに設定された境界線と比較します。
@@ -97,11 +105,43 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
+```
+
+## ステップ8: 最終セルを挿入する
+
+最後のセルを挿入し、その書式設定がクリアされて、テーブルの既定のスタイルが使用されることを確認します。
+
+```csharp
 builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
+```
+
+## ステップ9: ドキュメントを保存する
+
+最後に、ドキュメントを指定されたディレクトリに保存します。
+
+```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して、表とセルを異なる境界線で書式設定する方法を学びました。このステップバイステップ ガイドに従うことで、Word 文書内の表とセルの境界線を簡単にカスタマイズできます。Aspose.Words は、文書内の表を操作および書式設定するための強力で柔軟な API を提供します。この知識があれば、Word 文書の視覚的なプレゼンテーションを改善し、特定のニーズを満たすことができます。
+
+これで完了です。Aspose.Words for .NET を使用して、表とセルをさまざまな境界線で書式設定する方法を学びました。表の境界線とセルの網掛けをカスタマイズすることで、ドキュメントの見た目を大幅に向上させることができます。さあ、さまざまなスタイルを試して、ドキュメントを目立たせましょう。
+
+## よくある質問
+
+### セルごとに異なる境界線スタイルを使用できますか?
+はい、セルごとに異なる境界線スタイルを設定できます。`CellFormat.Borders`財産。
+
+### テーブルからすべての境界線を削除するにはどうすればよいですか?
+境界線スタイルを次のように設定すると、すべての境界線を削除できます。`LineStyle.None`.
+
+### セルごとに異なる境界線の色を設定することは可能ですか?
+もちろんです！各セルの境界線の色は、`CellFormat.Borders.Color`財産。
+
+### セルの背景として画像を使用できますか?
+Aspose.Words はセルの背景として画像を直接サポートしていませんが、画像をセルに挿入し、セル領域をカバーするようにサイズを調整することができます。
+
+### 表内のセルを結合するにはどうすればよいですか?
+セルを結合するには、`CellFormat.HorizontalMerge`そして`CellFormat.VerticalMerge`プロパティ。

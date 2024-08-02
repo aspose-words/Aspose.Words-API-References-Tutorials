@@ -417,7 +417,7 @@ Ja, Aspose.Words voor Java is compatibel met Java 11 en latere versies.
  kunt paginamarges instellen voor specifieke secties van uw document met behulp van de`PageSetup` klas. Hier is een voorbeeld:
 
 ```java
-Section section = doc.getSections().get(0); // Haal het eerste gedeelte
+Section section = doc.getSections().get(0); // Verkrijg het eerste gedeelte
 PageSetup pageSetup = section.getPageSetup();
 pageSetup.setLeftMargin(72);   // Linkermarge in punten
 pageSetup.setRightMargin(72);  // Rechtermarge in punten

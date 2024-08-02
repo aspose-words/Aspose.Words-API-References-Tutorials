@@ -51,7 +51,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 3: Flytta till specifik tabellcell
 
-Här händer magin. Vi flyttar byggaren till en specifik cell i tabellen. I det här exemplet flyttar vi till rad 3, cell 4 i den första tabellen i dokumentet.
+Det är här magin händer. Vi flyttar byggaren till en specifik cell i tabellen. I det här exemplet flyttar vi till rad 3, cell 4 i den första tabellen i dokumentet.
 
 ```csharp
 // Flytta byggaren till rad 3, cell 4 i den första tabellen.

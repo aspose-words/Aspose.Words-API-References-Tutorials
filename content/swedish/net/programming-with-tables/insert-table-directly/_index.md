@@ -100,7 +100,7 @@ För att påskynda processen att lägga till celler kan vi klona befintliga cell
 
 ```csharp
 // Vi skulle sedan upprepa processen för de andra cellerna och raderna i tabellen.
-// Vi kan också påskynda saker och ting genom att klona befintliga celler och rader.
+//Vi kan också påskynda saker och ting genom att klona befintliga celler och rader.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Grattis! Du har framgångsrikt infogat en tabell direkt i ett Word-dokument med 
  Ja, du kan begära en[gratis provperiod](https://releases.aspose.com/) att utvärdera biblioteket innan köp.
 
 ### Hur köper jag Aspose.Words för .NET?
- Du kan köpa Aspose.Words för .NET från[köpsidan](https://purchase.aspose.com/buy).
+Du kan köpa Aspose.Words för .NET från[köpsidan](https://purchase.aspose.com/buy).
 
 ### Var kan jag hitta dokumentationen för Aspose.Words för .NET?
  Dokumentationen finns tillgänglig[här](https://reference.aspose.com/words/net/).

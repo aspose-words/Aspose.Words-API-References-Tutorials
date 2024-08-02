@@ -2,7 +2,7 @@
 title: 偵測智能藝術形狀
 linktitle: 偵測智能藝術形狀
 second_title: Aspose.Words 文件處理 API
-description: 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 偵測 Word 文件中的 SmartArt 形狀。非常適合自動化文件工作流程。
+description: 透過這份綜合指南，了解如何使用 Aspose.Words for .NET 偵測 Word 文件中的 SmartArt 形狀。非常適合自動化文件工作流程。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-shapes/detect-smart-art-shape/

@@ -36,7 +36,7 @@ Maintenant que le décor est planté, passons à la partie passionnante : le gui
 
 ## Étape 1 : initialiser le document et DocumentBuilder
 
-Avant de commencer le formatage, nous avons besoin d’un document avec lequel travailler. Considérez cette étape comme la création d’une toile vierge pour votre chef-d’œuvre.
+Avant de commencer le formatage, nous avons besoin d'un document avec lequel travailler. Considérez cette étape comme la création d’une toile vierge pour votre chef-d’œuvre.
 
 ```csharp
 // Le chemin d'accès au répertoire des documents.

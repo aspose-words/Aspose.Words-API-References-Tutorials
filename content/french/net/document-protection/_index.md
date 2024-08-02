@@ -11,7 +11,7 @@ Les didacticiels Aspose.Words for .NET Document Protection offrent un guide éta
 
 Grâce à ces didacticiels, vous apprendrez à utiliser les fonctionnalités de protection d'Aspose.Words for .NET pour protéger vos documents sensibles contre tout accès non autorisé. Vous apprendrez à gérer les mots de passe, à restreindre les autorisations de modification, à verrouiller des sections spécifiques du document et à ajouter des signatures numériques pour garantir l'authenticité du document.
 
-Les didacticiels Aspose.Words pour la protection des documents .NET vous guident à travers des exemples pratiques et des explications étape par étape, facilitant ainsi l'application de mesures de sécurité avancées à vos documents Word. Protégez vos informations confidentielles, empêchez les modifications non autorisées et assurez l'intégrité de vos documents avec ces didacticiels complets.
+Les didacticiels Aspose.Words pour la protection des documents .NET vous guident à travers des exemples pratiques et des explications étape par étape, facilitant l'application de mesures de sécurité avancées à vos documents Word. Protégez vos informations confidentielles, empêchez les modifications non autorisées et assurez l'intégrité de vos documents avec ces didacticiels complets.
 
  ## Tutoriels
 | Titre | Description |

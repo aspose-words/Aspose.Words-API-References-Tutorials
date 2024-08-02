@@ -41,7 +41,7 @@ doc = aw.Document()
 
 ## การเพิ่มเนื้อหาด้วย Content Builder
 
-โมดูล Content Builder ช่วยให้เราสามารถเพิ่มเนื้อหาลงในเอกสารได้อย่างมีประสิทธิภาพ มาเพิ่มชื่อเรื่องและข้อความเกริ่นนำกันดีกว่า
+โมดูล Content Builder ช่วยให้เราสามารถเพิ่มเนื้อหาลงในเอกสารได้อย่างมีประสิทธิภาพ มาเพิ่มชื่อเรื่องและข้อความแนะนำกันดีกว่า
 
 ```python
 builder = aw.DocumentBuilder(doc)
@@ -59,7 +59,7 @@ builder.writeln("In this tutorial, we will explore how to use the Content Builde
 
 ## การแบ่งเอกสารเพื่อความแม่นยำ
 
-มาถึงฟังก์ชันหลักแล้ว โดยการแบ่งเอกสารออกเป็นส่วนๆ เราจะใช้ Content Builder เพื่อแทรกตัวแบ่งส่วน
+มาถึงฟังก์ชันหลักแล้ว โดยการแบ่งเอกสารออกเป็นส่วนต่างๆ เราจะใช้ Content Builder เพื่อแทรกตัวแบ่งส่วน
 
 ```python
 # Insert a section break

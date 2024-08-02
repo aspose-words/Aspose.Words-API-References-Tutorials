@@ -10,7 +10,7 @@ url: /tr/java/document-conversion-and-export/using-barcode-generation/
 
 ## Aspose.Words for Java'da Barkod Oluşturmayı Kullanmaya Giriş
 
-Belge işleme ve otomasyon alanında Aspose.Words for Java çok yönlü ve güçlü bir kütüphane olarak duruyor. Bu makale Aspose.Words for Java'yı kullanarak barkod oluşturma sürecinde size rehberlik edecektir. Barkod oluşturmayı Java uygulamalarınıza nasıl adım adım dahil edebileceğinizi keşfedeceğiz. Öyleyse hemen dalalım!
+Belge işleme ve otomasyon alanında Aspose.Words for Java çok yönlü ve güçlü bir kütüphane olarak duruyor. Bu makale Aspose.Words for Java'yı kullanarak barkod oluşturma sürecinde size rehberlik edecektir. Barkod oluşturmayı Java uygulamalarınıza nasıl adım adım dahil edebileceğinizi keşfedeceğiz. O halde hemen içeri dalalım!
 
 ## Önkoşullar
 
@@ -30,7 +30,7 @@ import com.aspose.words.FieldOptions;
 
 ## Belge Nesnesi Oluşturma
 
- Bir başlat`Document` Barkod alanı içeren mevcut bir Word belgesini yükleyerek nesneyi tarayın. Yer değiştirmek`"Field sample - BARCODE.docx"` Word belgenizin yolu ile:
+ Bir başlat`Document` Barkod alanı içeren mevcut bir Word belgesini yükleyerek nesneyi tarayın. Yer değiştirmek`"Field sample - BARCODE.docx"` Word belgenizin yolu ile birlikte:
 
 ```java
 Document doc = new Document("Field sample - BARCODE.docx");

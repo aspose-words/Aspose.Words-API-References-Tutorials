@@ -12,7 +12,7 @@ Trong thời đại kỹ thuật số, việc quản lý và thao tác tài li�
 
 ## Giới thiệu về Aspose.Words cho Java
 
-Aspose.Words for Java là một thư viện giàu tính năng cho phép các nhà phát triển Java tạo, thao tác và chuyển đổi tài liệu Word một cách dễ dàng. Cho dù bạn cần tạo báo cáo, tự động tạo tài liệu hay chuyển đổi tệp giữa các định dạng khác nhau, Aspose.Words for Java đều đáp ứng được nhu cầu của bạn.
+Aspose.Words for Java là một thư viện giàu tính năng cho phép các nhà phát triển Java tạo, thao tác và chuyển đổi tài liệu Word một cách dễ dàng. Cho dù bạn cần tạo báo cáo, tự động hóa việc tạo tài liệu hay chuyển đổi tệp giữa các định dạng khác nhau, Aspose.Words for Java đều đáp ứng được nhu cầu của bạn.
 
 ## Thiết lập môi trường phát triển của bạn
 

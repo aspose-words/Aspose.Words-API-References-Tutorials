@@ -98,7 +98,7 @@ Ja, Sie können das Erscheinungsbild von Fußnoten und Endnoten mit Aspose.Words
 
 ### Was ist der Unterschied zwischen Fußnoten und Endnoten?
 
-Fußnoten erscheinen unten auf der Seite, während Endnoten am Ende des Dokuments oder Abschnitts stehen. Sie dienen demselben Zweck, nämlich der Bereitstellung zusätzlicher Informationen oder Referenzen.
+Fußnoten erscheinen unten auf der Seite, während Endnoten am Ende des Dokuments oder Abschnitts stehen. Sie dienen demselben Zweck, nämlich zusätzliche Informationen oder Referenzen bereitzustellen.
 
 ### Wie verwalte ich die Reihenfolge von Fußnoten oder Endnoten?
 

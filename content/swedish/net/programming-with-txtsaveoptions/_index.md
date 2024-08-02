@@ -16,6 +16,6 @@ Tack vare dessa handledningar kommer du att fullt ut kunna utnyttja funktionerna
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Lägg till Bidi-märken i Word-dokument](./add-bidi-marks/) | Lär dig att lägga till Bidi-märken i ett Word-dokument med Aspose.Words för .NET och skapa professionella flerspråkiga dokument. |
-| [Använd fliktecken per nivå för listindrag](./use-tab-character-per-level-for-list-indentation/) | Lär dig hur du använder funktionen för indragslistor med tabbtecken i Aspose.Words för .NET. Följ denna steg-för-steg-guide för att skapa välstrukturerade och läsbara dokument. Spara tid och förbättra ditt arbetsflöde med denna kraftfulla funktion. Få tillgång till hela handledningen nu. |
-| [Använd mellanslagstecken per nivå för listindrag](./use-space-character-per-level-for-list-indentation/) | Steg-för-steg-guide för att använda ett mellanslagstecken per nivå för listindrag i Aspose.Words för .NET. Skapa välstrukturerade Word-dokument med lätthet. |
+| [Lägg till Bidi-märken i Word-dokument](./add-bidi-marks/) | Lär dig hur du lägger till dubbelriktade (Bidi)-märken i Word-dokument med Aspose.Words för .NET med den här guiden. Säkerställ korrekt textriktning för flerspråkigt innehåll. |
+| [Använd fliktecken per nivå för listindrag](./use-tab-character-per-level-for-list-indentation/) | Lär dig hur du skapar listor på flera nivåer med flikar med indrag med hjälp av Aspose.Words för .NET. Följ den här guiden för exakt listformatering i dina dokument. |
+| [Använd mellanslagstecken per nivå för listindrag](./use-space-character-per-level-for-list-indentation/) | Lär dig hur du skapar listor på flera nivåer med indrag i mellanslagstecken i Aspose.Words för .NET. Steg-för-steg-guide för exakt dokumentformatering. |

@@ -2,7 +2,7 @@
 title: Phát hiện hình dạng nghệ thuật thông minh
 linktitle: Phát hiện hình dạng nghệ thuật thông minh
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách phát hiện các hình dạng SmartArt trong tài liệu Word bằng Aspose.Words for .NET với hướng dẫn từng bước toàn diện này. Hoàn hảo để tự động hóa quy trình làm việc tài liệu của bạn.
+description: Tìm hiểu cách phát hiện các hình dạng SmartArt trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn toàn diện này. Hoàn hảo để tự động hóa quy trình làm việc tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/programming-with-shapes/detect-smart-art-shape/
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Ở bước này, chúng ta sử dụng LINQ để lọc và đếm các hình có SmartArt. Các`GetChildNodes` phương thức lấy tất cả các hình dạng và`HasSmartArt`kiểm tra thuộc tính xem hình dạng có chứa SmartArt hay không.
+ Ở bước này, chúng ta sử dụng LINQ để lọc và đếm các hình có SmartArt. Các`GetChildNodes` phương thức lấy tất cả các hình dạng và`HasSmartArt` kiểm tra thuộc tính xem hình dạng có chứa SmartArt hay không.
 
 ## Bước 4: Chạy mã
 
@@ -80,7 +80,7 @@ Thay thế "X" bằng số lượng hình dạng SmartArt thực tế trong tài
 
 ## Phần kết luận
 
- Và bạn có nó rồi đấy! Bạn đã học thành công cách phát hiện các hình dạng SmartArt trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, tải tài liệu, phát hiện các hình dạng SmartArt và chạy mã. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
+Và bạn có nó rồi đấy! Bạn đã học thành công cách phát hiện các hình dạng SmartArt trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, tải tài liệu, phát hiện các hình dạng SmartArt và chạy mã. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
 
 ## Câu hỏi thường gặp
 

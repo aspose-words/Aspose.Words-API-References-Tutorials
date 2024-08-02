@@ -2,7 +2,7 @@
 title: Getalnotatie voor as in een diagram
 linktitle: Getalnotatie voor as in een diagram
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u diagramasnummers kunt opmaken met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter moeiteloos de leesbaarheid en professionaliteit van uw document.
+description: Leer hoe u diagramasnummers opmaakt met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter moeiteloos de leesbaarheid en professionaliteit van uw document.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/number-format-for-axis/

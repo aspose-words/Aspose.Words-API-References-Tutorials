@@ -13,7 +13,7 @@ url: /zh/net/working-with-comments/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [添加评论](./add-comments/) | 了解如何使用 Aspose.Words for .NET 向 Word 文档添加注释。 |
-| [锚评论](./anchor-comment/) | 了解如何使用 Aspose.Words for .NET 将评论回复锚定到 Word 文档中的特定文本。 |
-| [添加删除评论回复](./add-remove-comment-reply/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中添加和删除评论回复。 |
-| [评论已解决并回复](./comment-resolved-and-replies/) | 了解如何使用 Aspose.Words for .NET 解决 Word 文档中的评论及其回复。 |
+| [添加评论](./add-comments/) | 通过我们的指南学习如何使用 Aspose.Words for .NET 向您的 Word 文档添加注释。轻松增强您的文档协作流程。 |
+| [锚评论](./anchor-comment/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中添加锚点注释。按照我们的分步指南进行高效的文档协作。 |
+| [添加删除评论回复](./add-remove-comment-reply/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中添加和删除评论回复。通过本分步指南增强您的文档协作。 |
+| [评论已解决并回复](./comment-resolved-and-replies/) | 使用 Aspose.Words for .NET 自动解析和回复 Word 文档中的注释。 包含分步指南。 |

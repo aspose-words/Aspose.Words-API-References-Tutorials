@@ -2,53 +2,97 @@
 title: 表の周囲のテキスト間の距離を取得する
 linktitle: 表の周囲のテキスト間の距離を取得する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内のテキストと表の間の距離を取得するためのステップバイステップ ガイド。
+description: Aspose.Words for .NET を使用して、Word 文書内の表と周囲のテキスト間の距離を取得する方法を学びます。このガイドを使用して、文書のレイアウトを改善します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、表内の周囲のテキスト間の距離を取得するプロセスを段階的に説明します。バンドルされている C# ソース コードについて説明し、この機能を理解して独自のプロジェクトに実装するのに役立つ包括的なガイドを提供します。このチュートリアルの最後には、Aspose.Words for .NET を使用して Word 文書内の表と周囲のテキスト間のさまざまな距離にアクセスする方法がわかります。
+洗練されたレポートや重要なドキュメントを準備していて、表の見栄えを良くしたいとします。表とその周囲のテキストの間に十分なスペースを確保して、ドキュメントを読みやすく、見た目に美しくする必要があります。Aspose.Words for .NET を使用すると、これらの距離をプログラムで簡単に取得および調整できます。このチュートリアルでは、これを実現するための手順を説明し、プロフェッショナルなタッチでドキュメントを際立たせます。
 
-## ステップ1: ドキュメントディレクトリを定義する
-まず、ドキュメント ディレクトリへのパスを設定する必要があります。これは Word ドキュメントが保存されている場所です。「YOUR DOCUMENTS DIRECTORY」を適切なパスに置き換えます。
+## 前提条件
+
+コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET ライブラリ: Aspose.Words for .NET ライブラリがインストールされている必要があります。まだインストールしていない場合は、次のサイトからダウンロードできます。[Aspose リリース](https://releases.aspose.com/words/net/)ページ。
+2. 開発環境: .NET Framework がインストールされた実用的な開発環境。Visual Studio が適切な選択肢です。
+3. サンプル ドキュメント: コードをテストするための少なくとも 1 つの表を含む Word ドキュメント (.docx)。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をプロジェクトにインポートしましょう。これにより、Aspose.Words for .NET を使用して Word ドキュメントを操作するために必要なクラスとメソッドにアクセスできるようになります。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## ステップ2: 既存のドキュメントを読み込む
-次に、既存のWord文書を`Document`クラス。
+それでは、プロセスをわかりやすい手順に分解してみましょう。ドキュメントの読み込みからテーブル周囲の距離の取得まで、すべてをカバーします。
+
+## ステップ1: ドキュメントを読み込む
+
+最初のステップは、Word文書をAspose.Wordsに読み込むことです。`Document`オブジェクト。このオブジェクトはドキュメント全体を表します。
 
 ```csharp
+//ドキュメントディレクトリへのパス
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//ドキュメントを読み込む
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## ステップ3: 表と周囲のテキスト間の距離を取得する
-表と周囲のテキストの間の距離を取得するには、`GetChild()`方法と`NodeType.Table`プロパティ。配列プロパティを使用してさまざまな距離を表示できます。`DistanceTop`, `DistanceBottom`, `DistanceRight`そして`DistanceLeft`.
+## ステップ2: テーブルにアクセスする
+
+次に、文書内の表にアクセスする必要があります。`GetChild`メソッドを使用すると、ドキュメント内で最初に見つかったテーブルを取得できます。
 
 ```csharp
+//ドキュメントの最初のテーブルを取得する
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-Console.WriteLine("Distance between table and top text: " + table.DistanceTop);
-Console.WriteLine("Distance between table and bottom text: " + table.DistanceBottom);
-Console.WriteLine("Distance between the table and the text on the right: " + table.DistanceRight);
-Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### Aspose.Words for .NET を使用して表の周囲のテキスト間の距離を取得するためのサンプル ソース コード 
+## ステップ3: 距離値を取得する
+
+表ができたので、次は距離の値を取得します。これらの値は、表と周囲のテキストとの間の各側 (上、下、左、右) のスペースを表します。
 
 ```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+//表と周囲のテキスト間の距離を取得する
+Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
+```
 
-	Document doc = new Document(dataDir + "Tables.docx");
-	Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Console.WriteLine(table.DistanceTop);
-	Console.WriteLine(table.DistanceBottom);
-	Console.WriteLine(table.DistanceRight);
-	Console.WriteLine(table.DistanceLeft);
+## ステップ4: 距離を表示する
+
+最後に、距離を表示できます。これにより、間隔を確認し、必要な調整を行って、表がドキュメント内で完璧に表示されるようにすることができます。
+
+```csharp
+//距離を表示する
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して、表内の周囲のテキスト間の距離を取得する方法を学習しました。このステップバイステップ ガイドに従うことで、Word ドキュメント内の表と周囲のテキスト間のさまざまな距離に簡単にアクセスできます。Aspose.Words は、ドキュメント内の表を操作および書式設定するための強力で柔軟な API を提供します。この知識があれば、テキストに関連して表のレイアウトを分析し、特定のニーズを満たすことができます。
+
+これで完了です。これらの手順に従うと、Aspose.Words for .NET を使用して、Word 文書内の表と周囲のテキスト間の距離を簡単に取得できます。このシンプルでありながら強力な手法により、文書のレイアウトを微調整して、読みやすく視覚的に魅力的なものにすることができます。コーディングを楽しんでください。
+
+## よくある質問
+
+### プログラムで距離を調整できますか?
+はい、Aspose.Wordsを使用してプログラム的に距離を調整することができます。`DistanceTop`, `DistanceBottom`, `DistanceRight` 、 そして`DistanceLeft`の特性`Table`物体。
+
+### ドキュメントに複数の表がある場合はどうなりますか?
+ドキュメントの子ノードをループして、各テーブルに同じメソッドを適用することができます。`GetChildNodes(NodeType.Table, true)`すべてのテーブルを取得します。
+
+### Aspose.Words を .NET Core で使用できますか?
+もちろんです! Aspose.Words は .NET Core をサポートしており、わずかな調整を加えるだけで同じコードを .NET Core プロジェクトに使用できます。
+
+### Aspose.Words for .NET をインストールするにはどうすればよいですか?
+Aspose.Words for .NET は、Visual Studio の NuGet パッケージ マネージャーからインストールできます。「Aspose.Words」を検索してパッケージをインストールするだけです。
+
+### Aspose.Words でサポートされるドキュメントの種類に制限はありますか?
+ Aspose.Wordsは、DOCX、DOC、PDF、HTMLなど、幅広いドキュメント形式をサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)サポートされている形式の完全なリストについては、こちらをご覧ください。

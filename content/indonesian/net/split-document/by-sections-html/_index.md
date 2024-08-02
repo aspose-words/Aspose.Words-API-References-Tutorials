@@ -2,82 +2,100 @@
 title: Pisahkan Dokumen Word Berdasarkan Bagian HTML
 linktitle: Berdasarkan Bagian Html
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membagi dokumen Word menjadi beberapa bagian Html menggunakan Aspose.Words untuk .NET dengan contoh kode lengkap.
+description: Pelajari cara membagi dokumen Word per bagian menjadi HTML menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini.
 type: docs
 weight: 10
 url: /id/net/split-document/by-sections-html/
 ---
+## Perkenalan
 
-Dalam contoh ini, kami akan menunjukkan kepada Anda cara membagi dokumen Word menjadi beberapa bagian terpisah dalam format HTML menggunakan fitur Berdasarkan Bagian HTML di Aspose.Words untuk .NET. Ikuti langkah-langkah di bawah ini untuk memahami kode sumber dan menghasilkan dokumen HTML terpisah untuk setiap bagian.
+Apakah Anda mendalami dunia otomatisasi dokumen dan ingin mempelajari cara membagi dokumen Word per bagian menjadi HTML menggunakan Aspose.Words untuk .NET? Anda berada di tempat yang tepat! Panduan ini dibuat khusus untuk Anda, dikemas dengan langkah-langkah mendetail, penjelasan menarik, dan nada ramah. Mari menyingsingkan lengan baju dan memulai perjalanan menarik ini!
 
-## Langkah 1: Memuat dokumen
+## Prasyarat
 
-Untuk memulai, tentukan direktori untuk dokumen Anda dan muat dokumen ke dalam objek Dokumen. Begini caranya:
+Sebelum kita mulai bertindak, ada beberapa hal yang perlu Anda siapkan:
+
+1.  Aspose.Words for .NET Library: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan seperti Visual Studio.
+3. Pengetahuan Dasar C#: Pemahaman dasar tentang pemrograman C# akan sangat membantu.
+4. Dokumen Word: Dokumen Word yang ingin Anda bagi menjadi beberapa bagian.
+
+Setelah Anda menyiapkannya, kita dapat mulai membuat kode!
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini akan memungkinkan kita untuk menggunakan kelas dan metode yang disediakan oleh perpustakaan Aspose.Words untuk .NET.
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Langkah 2: Membagi dokumen menjadi beberapa bagian dalam format HTML
+Dengan namespace ini, Anda siap untuk mulai bekerja dengan Aspose.Words.
 
-Sekarang kita akan mengatur opsi penyimpanan untuk membagi dokumen menjadi beberapa bagian dalam format HTML. Berikut cara melakukannya:
+## Langkah 1: Siapkan Direktori Dokumen
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
-
-doc.Save(dataDir + "SplitDocument.ParSectionsHtml.html", options);
-```
-
-### Contoh kode sumber untuk By Sections HTML menggunakan Aspose.Words untuk .NET
-
-Berikut adalah kode sumber lengkap untuk fitur By HTML Sections Aspose.Words untuk .NET:
+Sebelum kita dapat memanipulasi dokumen apa pun, kita perlu menentukan di mana dokumen kita disimpan. Ini akan menjadi direktori kerja kami.
 
 ```csharp
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+```
 
+## Langkah 2: Muat Dokumen Word
 
-HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
+ Sekarang direktori kita sudah siap, kita perlu memuat dokumen Word yang ingin kita pisahkan. Ini dilakukan dengan menggunakan`Document` kelas dari Aspose.Words.
 
+```csharp
+// Muat dokumen Word.
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Langkah 3: Konfigurasikan Opsi Penyimpanan HTML
+
+ Untuk membagi dokumen menjadi beberapa bagian, kita perlu mengatur opsi penyimpanan yang sesuai. Itu`HtmlSaveOptions`kelas memungkinkan kita menentukan bagaimana kita ingin menyimpan dokumen ke HTML.
+
+```csharp
+// Konfigurasikan opsi penyimpanan HTML.
+HtmlSaveOptions options = new HtmlSaveOptions
+{
+    DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak
+};
+```
+
+## Langkah 4: Simpan Dokumen sebagai HTML
+
+Dengan opsi penyimpanan kami dikonfigurasi, langkah terakhir adalah menyimpan dokumen sebagai file HTML. Ini akan membagi dokumen menjadi beberapa bagian berdasarkan kriteria yang kita tetapkan.
+
+```csharp
+// Simpan dokumen sebagai HTML.
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-Dengan kode ini Anda akan dapat membagi dokumen Word menjadi beberapa bagian terpisah dalam format HTML menggunakan Aspose.Words untuk .NET.
-
-Sekarang Anda dapat membuat dokumen HTML terpisah untuk setiap bagian dokumen awal.
+Dan itu dia! Anda telah berhasil membagi dokumen Word per bagian menjadi HTML menggunakan Aspose.Words untuk .NET.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara membagi dokumen Word menjadi beberapa bagian terpisah dalam format HTML menggunakan fitur Berdasarkan Bagian HTML dari Aspose.Words untuk .NET. Dengan mengikuti kode sumber yang disediakan, Anda dapat menghasilkan dokumen HTML individual untuk setiap bagian dokumen asli.
+Memisahkan dokumen Word per bagian menjadi HTML sangatlah mudah dengan Aspose.Words untuk .NET. Hanya dengan beberapa baris kode, Anda dapat mengotomatiskan pemrosesan dokumen dan menyempurnakan aplikasi Anda. Ingat, latihan membuat sempurna, jadi teruslah bereksperimen dan jelajahi kemampuan Aspose.Words. Selamat membuat kode!
 
-Membagi dokumen menjadi beberapa bagian dapat berguna untuk berbagai tujuan seperti membuat halaman web, mengekstraksi konten tertentu, atau mengatur informasi. Aspose.Words untuk .NET menyediakan API canggih yang memungkinkan Anda memanipulasi dan menyesuaikan dokumen Word sesuai kebutuhan Anda.
+## FAQ
 
-Jangan ragu untuk menjelajahi fitur tambahan yang ditawarkan oleh Aspose.Words untuk .NET untuk lebih meningkatkan kemampuan pemrosesan dokumen dan meningkatkan alur kerja Anda.
+### Apa itu Aspose.Words untuk .NET?
 
-### FAQ
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
 
-#### Bagaimana cara menyesuaikan format keluaran HTML?
+### Bisakah saya membagi dokumen Word berdasarkan kriteria lain?
 
-Aspose.Words for .NET menyediakan berbagai opsi untuk menyesuaikan format output HTML. Anda dapat mengubah gaya, pengaturan font, resolusi gambar, dan banyak aspek lain dari dokumen HTML dengan menyesuaikan opsi penyimpanan. Lihat dokumentasi Aspose.Words untuk .NET untuk informasi mendetail tentang opsi yang tersedia dan cara menggunakannya.
+Ya, Aspose.Words untuk .NET memungkinkan Anda membagi dokumen berdasarkan berbagai kriteria, seperti hentian halaman, judul, dan struktur logika kustom.
 
-#### Bisakah saya membagi dokumen berdasarkan kriteria yang berbeda?
+### Apakah Aspose.Words untuk .NET gratis?
 
-Ya, selain menggunakan hentian bagian sebagai kriteria pemisahan, Aspose.Words untuk .NET menawarkan opsi lain seperti hentian paragraf, gaya judul, atau konten tertentu sebagai kriteria untuk membagi dokumen. Anda dapat memilih kriteria yang paling sesuai berdasarkan kebutuhan Anda dan menyesuaikan kodenya.
+ Aspose.Words untuk .NET adalah produk komersial, tetapi Anda dapat mengunduh uji coba gratis dari .NET[Halaman rilis Aspose](https://releases.aspose.com/).
 
-#### Apakah mungkin untuk membagi dokumen ke dalam format selain HTML?
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
 
-Ya, Aspose.Words untuk .NET mendukung pemisahan dokumen ke dalam berbagai format termasuk PDF, teks biasa, gambar, dan banyak lagi. Anda dapat mengubah opsi penyimpanan untuk menghasilkan format keluaran yang diinginkan. Lihat dokumentasi Aspose.Words untuk .NET untuk detail selengkapnya tentang format yang tersedia dan cara menentukannya dalam opsi penyimpanan.
+ Anda dapat menemukan dokumentasi lengkap di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/).
 
-#### Bisakah saya membagi beberapa dokumen secara bersamaan?
+### Format apa lagi yang dapat saya gunakan untuk mengonversi dokumen Word?
 
-Ya, Anda dapat menerapkan proses pemisahan ke beberapa dokumen secara bersamaan dengan melakukan iterasi melalui kumpulan dokumen dan mengeksekusi kode pemisahan untuk setiap dokumen satu per satu. Ini memungkinkan Anda memproses banyak dokumen secara efisien dan menghasilkan bagian terpisah untuk masing-masing dokumen.
-
-#### Bagaimana cara menggabungkan kembali bagian-bagian tersebut menjadi satu dokumen?
-
-Aspose.Words untuk .NET juga menyediakan metode untuk menggabungkan beberapa dokumen atau bagian kembali menjadi satu dokumen. Dengan memanfaatkan fitur penggabungan ini, Anda dapat menggabungkan bagian yang dibuat secara terpisah dan membuat dokumen terpadu. Lihat dokumentasi Aspose.Words untuk .NET untuk informasi selengkapnya tentang cara menggabungkan dokumen atau bagian.
-
-
+Aspose.Words for .NET mendukung berbagai format, termasuk PDF, DOCX, TXT, dan masih banyak lagi.

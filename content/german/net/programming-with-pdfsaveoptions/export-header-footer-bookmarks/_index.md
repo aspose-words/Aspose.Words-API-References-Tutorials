@@ -52,7 +52,7 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
- Hier richten wir die`PdfSaveOptions` . Der`DefaultBookmarksOutlineLevel` legt die Gliederungsebene für Lesezeichen fest, und die`HeaderFooterBookmarksExportMode` -Eigenschaft stellt sicher, dass nur das erste Vorkommen von Lesezeichen in Kopf- und Fußzeilen exportiert wird.
+ Hier richten wir die`PdfSaveOptions` . Der`DefaultBookmarksOutlineLevel` Eigenschaft legt die Gliederungsebene für Lesezeichen fest, und die`HeaderFooterBookmarksExportMode` -Eigenschaft stellt sicher, dass nur das erste Vorkommen von Lesezeichen in Kopf- und Fußzeilen exportiert wird.
 
 ## Schritt 3: Speichern Sie das Dokument als PDF
 

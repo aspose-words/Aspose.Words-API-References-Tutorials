@@ -37,7 +37,7 @@ Fedezze fel az Aspose.Words Python és .NET oktatóanyagokat, amelyek a dokument
 ### [Tartalom kinyerése és manipulálása](./content-extraction-and-manipulation/)
 Fedezze fel a tartalomkivonás és -manipuláció világát az Aspose.Words oktatóanyagaival. Tanulja meg, hogyan lehet hatékonyan kivonni és kezelni a tartalmat Python és .NET használatával, javítva dokumentumfeldolgozási képességeit.
 ### [Dokumentumok összevonása és összehasonlítása](./document-combining-and-comparison/)
-Fedezzen fel átfogó oktatóanyagokat a dokumentumok egyesítéséről és összehasonlításáról az Aspose.Words for Python és .NET használatával. Tanulja meg, hogyan lehet zökkenőmentesen egyesíteni és összehasonlítani a dokumentumokat, javítva ezzel a dokumentumfeldolgozási munkafolyamatokat.
+Fedezze fel a dokumentumok egyesítésével és összehasonlításával kapcsolatos átfogó oktatóanyagokat az Aspose.Words for Python és .NET használatával. Tanulja meg, hogyan lehet zökkenőmentesen egyesíteni és összehasonlítani a dokumentumokat, javítva ezzel a dokumentumfeldolgozási munkafolyamatokat.
 ### [Dokumentum felosztása és formázása](./document-splitting-and-formatting/)
 Fedezze fel az Aspose.Words oktatóanyagokat a dokumentumok felosztásáról és formázásáról Pythonban és .NET-ben. Tanulja meg a dokumentumok hatékony felosztását és formázását, javítva ezzel a dokumentumfeldolgozási feladatokat. 
 ### [Dokumentum opciók és beállítások](./document-options-and-settings/)

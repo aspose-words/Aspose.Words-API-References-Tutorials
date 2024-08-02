@@ -2,34 +2,70 @@
 title: Comment Resolved And Replies
 linktitle: Comment Resolved And Replies
 second_title: Aspose.Words Document Processing API
-description: Learn how to resolve comments and their replies in Word documents using Aspose.Words for .NET. 
+description: Automate resolving and replying to comments in Word documents with Aspose.Words for .NET. Step-by-step guide included.
 type: docs
 weight: 10
 url: /net/working-with-comments/comment-resolved-and-replies/
 ---
+## Introduction
 
-In this comprehensive tutorial, you will learn how to resolve comments and their replies in a Word document using Aspose.Words for .NET. We will guide you through the process and provide you with the necessary C# code snippets. By the end of this guide, you will be able to manage comment resolution and update the status of comments and their replies.
+If you're working with Word documents, you've probably dealt with comments. They're great for collaboration, but managing them can be a hassle. With Aspose.Words for .NET, you can automate the process of resolving and replying to comments. This guide will walk you through the steps to do just that.
 
 ## Prerequisites
-Before we begin, ensure that you have the following prerequisites:
-- Aspose.Words for .NET library installed on your system.
 
-## Step 1: Load the Document and Access Comments
-To start, load the document that contains the comments using the Document class and access the comments collection:
+Before diving in, make sure you have the following:
+
+1. Aspose.Words for .NET: You can download it from [here](https://releases.aspose.com/words/net/).
+2. Development Environment: Set up with .NET Framework.
+3. Basic Knowledge of C#: Familiarity with the syntax and concepts.
+
+## Import Namespaces
+
+First things first, let's import the necessary namespaces. This ensures that all the classes and methods we need are readily available.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+Let's break down the process into simple, easy-to-follow steps. Each step will help you understand the code and its functionality.
+
+## Step 1: Load the Document
+
+To begin, load the Word document containing the comments. Use the `Document` class for this.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+This line of code initializes a new `Document` object with the path to your Word document.
+
+## Step 2: Retrieve Comments
+
+Next, we need to get all the comments in the document. We'll use the `GetChildNodes` method to retrieve a collection of `Comment` nodes.
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## Step 2: Resolve Comments and Their Replies
-Next, iterate through the comments and their replies to mark them as resolved:
+This code retrieves all the comments in the document and stores them in a `NodeCollection`.
+
+## Step 3: Access the Parent Comment
+
+For our example, we'll focus on the first comment in the collection. This will be our parent comment.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+Here, we're casting the first node in the collection to a `Comment` object.
+
+## Step 4: Loop Through Replies
+
+Now, let's loop through the replies to the parent comment. We'll use a `foreach` loop to iterate over each reply.
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-In the above code, we access the parent comment and iterate through its replies. We can retrieve the parent comment ID and its resolution status. Then, we update the "Done" mark of each comment reply to indicate resolution.
+In this loop, we print the ID of the ancestor comment and its status (whether it's done or not). Then, we mark each reply as done.
 
-## Step 3: Save the Document
-After resolving the comments and updating their status, save the modified document to a file using the Save method of the Document class:
+## Step 5: Save the Document
+
+Finally, save the modified document to your directory.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### Example Source Code for Resolving Comments and Their Replies using Aspose.Words for .NET
-Here is the complete source code for resolving comments and their replies using Aspose.Words for .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-Remember to adjust the code according to your specific requirements, including the document file path and additional customization
+This code saves the changes to a new document, ensuring your original file remains untouched.
 
 ## Conclusion
-Congratulations! You have successfully learned how to resolve comments and their replies in a Word document using Aspose.Words for .NET. By following the step-by-step guide and utilizing the provided source code, you can now manage comment resolution and update the status of comments and their replies according to your requirements.
 
-Comment resolution helps in tracking and managing feedback within a document. Experiment with different comment statuses and customize them to improve collaboration and review processes in your documents.
+Handling comments in Word documents doesn't have to be a manual chore. With Aspose.Words for .NET, you can automate the process, saving time and reducing errors. Follow this guide to efficiently resolve and reply to comments in your documents.
 
-### FAQ's
+## FAQ's
 
-#### Q: How do I resolve a comment in Aspose.Words for .NET?
+### Can I automate other comment-related tasks with Aspose.Words for .NET?  
+Yes, you can automate various tasks like adding, deleting, and modifying comments.
 
-A: To resolve a comment in Aspose.Words for .NET, you can use the `Comment.Resolve` method specifying the `Comment` object you want to resolve. This will mark the comment as resolved and hide it in the final document.
+### Is Aspose.Words for .NET compatible with .NET Core?  
+Yes, Aspose.Words for .NET supports both .NET Framework and .NET Core.
 
-#### Q: How do I add a reply to a resolved comment in Aspose.Words for .NET?
+### How can I get a free trial of Aspose.Words for .NET?  
+You can download a free trial from [here](https://releases.aspose.com/).
 
-A: Although resolved comments are hidden by default in the final document, you can still add a reply to a resolved comment using the `Comment.AddReply` method specifying the reply text and where you want to add it .
+### Can I use Aspose.Words for .NET to work with other document types?  
+Yes, Aspose.Words supports various formats including DOCX, PDF, HTML, and more.
 
-#### Q: How do I view resolved comments in Aspose.Words for .NET?
-
-A: By default, resolved comments are hidden in the final document. However, you can show them by using the `CommentOptions.ShowResolvedComments` property of the `Document` object and setting it to `true`.
-
-#### Q: How can I hide all comments, including replies, in Aspose.Words for .NET?
-
-A: To hide all comments, including replies, in Aspose.Words for .NET, you can use the `CommentOptions.CommentDisplayMode` property of the `Document` object and set it to `CommentDisplayMode.None`.
-
-#### Q: Can I edit the text of a resolved comment in Aspose.Words for .NET?
-
-A: Yes, you can edit the text of a resolved comment in Aspose.Words for .NET by accessing the `Comment.Text` property of the corresponding `Comment` object and modifying the text as needed.
+### Where can I find detailed documentation for Aspose.Words for .NET?  
+You can access the documentation [here](https://reference.aspose.com/words/net/).

@@ -16,5 +16,5 @@ Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programist
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Zmień styl Toc w dokumencie programu Word](./change-style-of-toc-level/) | Dowiedz się, jak łatwo zmienić styl poziomu spisu treści w dokumencie programu Word przy użyciu Aspose.Words dla .NET. |
-| [Zmień tabulatory Toc w dokumencie programu Word](./change-toc-tab-stops/) | Dowiedz się, jak zmieniać karty spisu treści w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
+| [Zmień styl Toc w dokumencie programu Word](./change-style-of-toc-level/) | Dowiedz się, jak zmienić styl spisu treści w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Dostosuj spis treści bez wysiłku. |
+| [Zmień tabulatory Toc w dokumencie programu Word](./change-toc-tab-stops/) | Dowiedz się, jak zmieniać tabulatory spisu treści w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci stworzyć profesjonalnie wyglądający spis treści. |

@@ -86,7 +86,7 @@ private class DocumentLoadingWarningCallback : IWarningCallback
 
 ## 结论
 
-通过遵循这些步骤，您可以在使用 Aspose.Words for .NET 处理 Word 文档时有效地管理和处理警告。此功能可确保您能够主动解决潜在问题，从而使您的文档处理更加稳健和可靠。
+通过遵循这些步骤，您可以在使用 Aspose.Words for .NET 处理 Word 文档时有效地管理和处理警告。此功能可确保您能够主动解决潜在问题，从而使您的文档处理更加强大和可靠。
 
 ## 常见问题解答
 

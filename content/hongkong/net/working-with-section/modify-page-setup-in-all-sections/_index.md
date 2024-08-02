@@ -16,7 +16,7 @@ url: /zh-hant/net/working-with-section/modify-page-setup-in-all-sections/
 在開始之前，讓我們確保我們擁有所需的一切：
 
 1. C# 基礎知識：需要熟悉 C# 文法和概念。
-2.  Aspose.Words for .NET：您可以[在這裡下載](https://releases.aspose.com/words/net/) 。如果您只是嘗試一下，[免費試用](https://releases.aspose.com/)可用。
+2.  Aspose.Words for .NET：您可以[在這裡下載](https://releases.aspose.com/words/net/)。如果您只是嘗試一下，[免費試用](https://releases.aspose.com/)可用。
 3. Visual Studio：任何最新版本都應該可以使用，但建議使用最新版本以獲得最佳體驗。
 4. .NET Framework：確保您的系統上已安裝它。
 
@@ -44,11 +44,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-在這裡，我們定義用於保存文件的目錄路徑，並初始化一個新文件以及文件產生器。
+在這裡，我們定義用於保存文件的目錄路徑，並初始化一個新文件以及文件建構器。
 
 ## 第 2 步：新增部分
 
-接下來，我們需要在文件中新增多個部分。每個部分將包含一些文字來幫助我們視覺化變更。
+接下來，我們需要在文件中新增多個部分。每個部分將包含一些文字來幫助我們視覺化更改。
 
 ```csharp
 builder.Writeln("Section 1");

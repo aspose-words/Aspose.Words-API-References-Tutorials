@@ -10,7 +10,7 @@ url: /pl/python-net/document-splitting-and-formatting/
 
 ## Wprowadzenie do dzielenia i formatowania dokumentów za pomocą samouczków Aspose.Words
 
-Witamy w świecie samouczków Aspose.Words poświęconych dzieleniu i formatowaniu dokumentów! Ta seria samouczków ma na celu wyposażenie programistów korzystających zarówno z języka Python, jak i .NET w wiedzę i umiejętności potrzebne do wydajnego dzielenia i formatowania dokumentów. Niezależnie od tego, czy masz do czynienia z dużymi plikami, wyodrębnianiem określonych sekcji, czy zapewnianiem spójnego formatowania, te samouczki zapewnią Ci narzędzia usprawniające zadania związane z przetwarzaniem dokumentów.
+Witamy w świecie samouczków Aspose.Words poświęconych dzieleniu i formatowaniu dokumentów! Ta seria samouczków ma na celu wyposażenie programistów korzystających zarówno z języka Python, jak i .NET w wiedzę i umiejętności potrzebne do wydajnego dzielenia i formatowania dokumentów. Niezależnie od tego, czy zajmujesz się dużymi plikami, wyodrębniasz określone sekcje, czy zapewniasz spójne formatowanie, te samouczki zapewnią Ci narzędzia usprawniające zadania związane z przetwarzaniem dokumentów.
 
 ## Dlaczego dzielenie i formatowanie dokumentów ma znaczenie
 

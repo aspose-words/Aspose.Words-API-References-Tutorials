@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /tr/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## giriiş
 
 .NET geliştirme dünyasında, belgeleri yönetmek ve değiştirmek çok önemli bir görevdir ve genellikle belgeler içindeki köprülerin verimli bir şekilde ele alınmasını gerektirir. Aspose.Words for .NET, köprüleri sorunsuz bir şekilde değiştirmek için güçlü özellikler sunarak belgelerinizin doğru kaynaklara dinamik olarak bağlanmasını sağlar. Bu eğitim, Aspose.Words for .NET kullanarak bunu nasıl başarabileceğinizi derinlemesine ele alıyor ve süreç boyunca size adım adım yol gösteriyor.
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 Aspose.Words for .NET kullanarak belgelerdeki köprüleri değiştirmek oldukça basittir ve belgelerinizin dinamik yapısını geliştirir. URL'leri güncellemek veya belge içeriğini programlı olarak dönüştürmek olsun, Aspose.Words bu görevleri basitleştirerek verimli belge yönetimi sağlar.
 
-## Sıkça Sorulan Sorular (SSS)
+## SSS'ler
 
 ### Aspose.Words for .NET karmaşık belge yapılarını yönetebilir mi?
 Evet, Aspose.Words tablolar, resimler ve köprüler gibi karmaşık yapıları sorunsuz bir şekilde destekler.

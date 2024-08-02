@@ -16,8 +16,8 @@ Whether you're a beginner or an experienced developer, Aspose.Words for .NET tut
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Access Styles](./access-styles/) | Learn how to access document styles with Aspose.Words for .NET. Complete tutorial to manipulate the styles of your documents. |
-| [Copy Styles](./copy-styles/) | Learn how to copy styles between documents with Aspose.Words for .NET. |
-| [Get Theme Properties](./get-theme-properties/) | Explore a document's theme properties with Aspose.Words for .NET. Customize styles and colors for a unique look. |
-| [Set Theme Properties](./set-theme-properties/) | Learn to customize the look of your documents by changing theme properties with Aspose.Words for .NET. Get professional and attractive results. |
-| [Insert Style Separator](./insert-style-separator/) | Learn to create documents with custom styles and insert style separators for precise, professional formatting. |
+| [Get Document Styles In Word](./access-styles/) | Learn how to get document styles in Word using Aspose.Words for .NET with this detailed step-by-step tutorial. Access and manage styles programmatically in your .NET applications. |
+| [Copy Word Document Styles](./copy-styles/) | Learn how to copy Word document styles using Aspose.Words for .NET. Follow our step-by-step guide to ensure consistent document formatting effortlessly. |
+| [Get Document Theme Properties In Word](./get-theme-properties/) | Discover how to access and manage document theme properties in Word using Aspose.Words for .NET. Learn to retrieve fonts and colors with our guide. |
+| [Set Theme Properties in Word Document](./set-theme-properties/) | Learn how to set theme properties in Word documents using Aspose.Words for .NET. Follow our step-by-step guide to customize fonts and colors easily. |
+| [IInsert Document Style Separator in Word](./insert-style-separator/) | Learn how to insert a document style separator in Word using Aspose.Words for .NET. This guide provides instructions and tips for managing document styles. |

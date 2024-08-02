@@ -18,13 +18,13 @@ Mielőtt belemerülnénk a fejlett technikákba, győződjön meg arról, hogy a
 
 1.  Python telepítés: Győződjön meg arról, hogy a Python telepítve van a rendszeren. Letöltheti innen[itt](https://www.python.org/downloads/).
 
-2.  Aspose.Words for Python: telepítenie kell az Aspose.Words for Python programot. Letöltheti innen[itt](https://releases.aspose.com/words/python/).
+2. Aspose.Words for Python: telepítenie kell az Aspose.Words for Python programot. Letöltheti innen[itt](https://releases.aspose.com/words/python/).
 
 3. Dokumentum előkészítés: Készítsen egy Word-dokumentumot, amelyen keresési és csereműveleteket szeretne végrehajtani.
 
 ## 1. lépés: A szükséges könyvtárak importálása
 
-kezdéshez importálja a szükséges könyvtárakat az Aspose.Words for Pythonból:
+A kezdéshez importálja a szükséges könyvtárakat az Aspose.Words for Pythonból:
 
 ```python
 import aspose.words as aw

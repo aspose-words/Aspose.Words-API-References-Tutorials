@@ -73,7 +73,7 @@ Ismerje meg, hogyan javíthatja a dokumentumok formázását az Aspose.Words for
 ### [Tartalomjegyzék létrehozása az Aspose.Words for Java programban](./generating-table-of-contents/)
 Ismerje meg, hogyan hozhat létre és szabhat testre tartalomjegyzéket (TOC) az Aspose.Words for Java használatával. Rendezett és professzionális dokumentumokat készíthet könnyedén.
 ### [Dokumentumok védelme az Aspose.Words for Java programban](./protecting-documents/)
-Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje adatait jelszóval és még sok mással.
+Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje meg adatait jelszóval és még sok mással.
 ### [Dokumentumok felosztása oldalakra az Aspose.Words for Java programban](./splitting-documents-into-pages/)
 Ismerje meg, hogyan oszthat fel dokumentumokat oldalakra az Aspose.Words for Java használatával. Lépésről lépésre útmutató forráskóddal a hatékony dokumentumfeldolgozás érdekében.
 ### [Dokumentumok felosztása az Aspose.Words for Java-ban](./splitting-documents/)
@@ -83,7 +83,7 @@ Ismerje meg, hogyan oszthat fel dokumentumokat HTML-oldalakra az Aspose.Words fo
 ### [Tartalom hozzáadása az Aspose.Words for Java DocumentBuilder használatával](./adding-content-using-documentbuilder/)
 Fődokumentumkészítés az Aspose.Words for Java segítségével. Útmutató lépésről lépésre szövegek, táblázatok, képek és egyebek hozzáadásához. Lenyűgöző Word dokumentumokat készíthet könnyedén.
 ### [Dokumentumok klónozása és kombinálása az Aspose.Words for Java programban](./cloning-and-combining-documents/)
-Ismerje meg, hogyan klónozhat és kombinálhat dokumentumokat az Aspose.Words for Java programban. Lépésről lépésre útmutató forráskód-példákkal.
+Ismerje meg, hogyan klónozhat és kombinálhat dokumentumokat az Aspose.Words for Java programban. Lépésről lépésre, forráskód-példákkal.
 ### [Aspose.Words for Java dokumentumok összehasonlítása](./comparing-documents/)
 Tanulja meg a dokumentumok összehasonlítását az Aspose.Words for Java programban, amely egy hatékony Java-könyvtár a hatékony dokumentumelemzéshez. 
 ### [Dokumentumok formázása az Aspose.Words for Java programban](./formatting-documents/)

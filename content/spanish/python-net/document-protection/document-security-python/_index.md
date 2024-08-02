@@ -163,7 +163,7 @@ Además de las funciones de seguridad, Aspose.Words proporciona numerosas funcio
 
 En conclusión, proteger sus documentos es esencial para proteger la información confidencial y mantener la confidencialidad. Siguiendo esta guía paso a paso, habrá aprendido cómo implementar la seguridad de documentos con Python usando Aspose.Words para Python. Recordar
 
- para aplicar las mejores prácticas y ser proactivo en la protección de sus activos digitales.
+ para aplicar las mejores prácticas y mantenerse proactivo en la protección de sus activos digitales.
 
 ## Preguntas frecuentes (Preguntas frecuentes)
 

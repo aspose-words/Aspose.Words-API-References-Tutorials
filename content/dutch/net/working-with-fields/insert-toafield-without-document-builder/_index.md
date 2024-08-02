@@ -2,123 +2,125 @@
 title: TOA-veld invoegen zonder Document Builder
 linktitle: TOA-veld invoegen zonder Document Builder
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het invoegen van TOA-velden zonder Document Builder met behulp van Aspose.Words voor .NET.
+description: Leer hoe u een TOA-veld invoegt zonder een documentbuilder te gebruiken in Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om juridische citaten efficiënt te beheren.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van de functie "TOA Field Insertion" van Aspose.Words voor .NET. Volg elke stap zorgvuldig om de gewenste resultaten te krijgen.
+Het maken van een TOA-veld (Tabel met autoriteiten) in een Word-document kan aanvoelen als het samenstellen van een complexe puzzel. Met de hulp van Aspose.Words voor .NET wordt het proces echter soepel en eenvoudig. In dit artikel begeleiden we u bij de stappen om een TOA-veld in te voegen zonder gebruik te maken van een documentbuilder, waardoor u gemakkelijk uw citaten en juridische verwijzingen in uw Word-documenten kunt beheren.
 
-## Stap 1: Documentmap instellen
+## Vereisten
 
-In de verstrekte code moet u de directory van uw documenten opgeven. Vervang de waarde "UW DOCUMENTENMAP" door het juiste pad naar uw documentenmap.
+Voordat we in de tutorial duiken, laten we eerst de essentiële zaken bespreken die je nodig hebt:
+
+-  Aspose.Words voor .NET: Zorg ervoor dat de nieuwste versie is geïnstalleerd. Je kunt het downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: een .NET-compatibele IDE zoals Visual Studio.
+- Basiskennis van C#: Het begrijpen van de basissyntaxis en concepten van C# zal nuttig zijn.
+- Voorbeeld van een Word-document: Maak een voorbeelddocument of zorg dat u het bij de hand heeft waarin u het TOA-veld wilt invoegen.
+
+## Naamruimten importeren
+
+Om aan de slag te gaan, moet u de benodigde naamruimten uit de Aspose.Words-bibliotheek importeren. Deze opstelling zorgt ervoor dat u toegang heeft tot alle klassen en methoden die nodig zijn voor documentmanipulatie.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Stap 2: Het document en de alinea maken
+Laten we het proces opsplitsen in eenvoudige, gemakkelijk te volgen stappen. We begeleiden u bij elke fase en leggen uit wat elk stukje code doet en hoe het bijdraagt aan het creëren van het TOA-veld.
 
-We beginnen met het maken van een nieuw document en het initialiseren van een paragraaf.
+## Stap 1: Initialiseer het document
+
+ Eerst moet u een exemplaar maken van de`Document` klas. Dit object vertegenwoordigt het Word-document waaraan u werkt.
 
 ```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## Stap 3: Het TA-veld invoegen
+Deze code initialiseert een nieuw Word-document. U kunt het zien als het creëren van een leeg canvas waaraan u uw inhoud toevoegt.
 
-We gebruiken de klasse FieldTA om een TA-veld in de alinea in te voegen.
+## Stap 2: Maak en configureer het TA-veld
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## Stap 4: De alinea toevoegen aan de hoofdtekst van het document
-
-We voegen de paragraaf met het TA-veld toe aan de hoofdtekst van het document.
+Vervolgens voegen we een TA-veld (Table of Authorities) toe. Dit veld markeert de vermeldingen die in de TOA zullen verschijnen.
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Stap 5: De alinea voor het TOA-veld maken
-
-We maken een nieuwe paragraaf voor het TOA-veld.
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## Stap 6: Het TOA-veld invoegen
-
-We gebruiken de klasse FieldToa om een TOA-veld in de alinea in te voegen.
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## Stap 7: De alinea toevoegen aan de hoofdtekst van het document
-
-We voegen de paragraaf met het TOA-veld toe aan de hoofdtekst van het document.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Stap 8: TOA-veld bijwerken
-
- Tenslotte noemen wij de`Update()` methode om het TOA-veld bij te werken.
-
-```csharp
-fieldToa.Update();
-```
-
-### Broncodevoorbeeld voor TOA-veldinvoeging zonder Document Builder met Aspose.Words voor .NET
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
 // We willen TA- en TOA-velden als volgt invoegen:
 // { TA \c 1 \l "Waarde 0" }
-// { TOA \c 1 }
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+Hier is een overzicht:
+- Paragraaf para = new Paragraph(doc);: Creëert een nieuwe paragraaf binnen het document.
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: Voegt een TA-veld toe aan de alinea. De`FieldType.FieldTOAEntry` geeft aan dat dit een TOA-invoerveld is.
+- fieldTA.EntryCategory = "1";: Stelt de itemcategorie in. Dit is handig voor het categoriseren van verschillende soorten vermeldingen.
+- fieldTA.LongCitation = "Waarde 0";: Specificeert de lange citatietekst. Dit is de tekst die in de TOA zal verschijnen.
+- doc.FirstSection.Body.AppendChild(para);: Voegt de alinea met het TA-veld toe aan de hoofdtekst van het document.
+
+## Stap 3: Voeg het TOA-veld toe
+
+Nu voegen we het daadwerkelijke TOA-veld in dat alle TA-gegevens in een tabel verzamelt.
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### Veelgestelde vragen
+In deze stap:
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);: Voegt een TOA-veld toe aan de alinea.
+- fieldToa.EntryCategory = "1";: Filtert de vermeldingen zodat deze alleen de vermeldingen bevat die zijn gemarkeerd met categorie "1".
 
-#### Vraag: Hoe kan ik het uiterlijk van het TOA-veld dat in het Word-document is ingevoegd, aanpassen met Aspose.Words voor .NET?
+## Stap 4: Werk het TOA-veld bij
 
- A: U kunt het uiterlijk van het ingevoegde TOA-veld aanpassen door de eigenschappen van het`FieldTOA` object om opmaakopties op te geven.
+Nadat u het TOA-veld heeft ingevoegd, moet u het bijwerken om er zeker van te zijn dat het de nieuwste vermeldingen weerspiegelt.
 
-#### Vraag: Kan ik meerdere TOA-velden toevoegen aan één Word-document met Aspose.Words voor .NET?
+```csharp
+fieldToa.Update();
+```
 
-A: Ja, u kunt meerdere TOA-velden toevoegen aan één Word-document met Aspose.Words voor .NET. Herhaal gewoon de invoegstappen voor elk veld.
+Deze opdracht vernieuwt het TOA-veld en zorgt ervoor dat alle gemarkeerde vermeldingen correct in de tabel worden weergegeven.
 
-#### Vraag: Hoe kan ik controleren of een TOA-veld met succes in een Word-document is ingevoegd met Aspose.Words voor .NET?
+## Stap 5: Sla het document op
 
-A: Om te controleren of een TOA-veld succesvol is ingevoegd, kunt u door de documentinhoud bladeren en zoeken naar TOA-veldexemplaren.
+Sla ten slotte uw document op met het nieuw toegevoegde TOA-veld.
 
-#### Vraag: Heeft het invoegen van een TOA-veld zonder DocumentBuilder invloed op de opmaak van Word-documenten met Aspose.Words voor .NET?
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-A: Het invoegen van een TOA-veld zonder DocumentBuilder heeft geen directe invloed op de opmaak van het Word-document. De opmaakopties voor TOA-velden kunnen echter van invloed zijn op de algehele opmaak van het document.
+ Met deze coderegel wordt het document in de opgegeven map opgeslagen. Zorg ervoor dat u vervangt`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar u uw bestand wilt opslaan.
+
+## Conclusie
+
+En daar heb je het! U hebt met succes een TOA-veld aan een Word-document toegevoegd zonder gebruik te maken van een documentbuilder. Door deze stappen te volgen, kunt u citaten efficiënt beheren en uitgebreide tabellen met autoriteiten in uw juridische documenten maken. Aspose.Words voor .NET maakt dit proces soepel en efficiënt, waardoor u de tools krijgt om complexe documenttaken met gemak uit te voeren.
+
+## Veelgestelde vragen
+
+### Kan ik meerdere TA-velden met verschillende categorieën toevoegen?
+ Ja, u kunt meerdere TA-velden met verschillende categorieën toevoegen door de`EntryCategory`eigendom dienovereenkomstig.
+
+### Hoe kan ik het uiterlijk van de TOA aanpassen?
+U kunt het uiterlijk van de TOA aanpassen door de eigenschappen van het TOA-veld te wijzigen, zoals de invoeropmaak en categorielabels.
+
+### Is het mogelijk om het TOA-veld automatisch bij te werken?
+ Hoewel u het TOA-veld handmatig kunt bijwerken met behulp van de`Update` methode ondersteunt Aspose.Words momenteel geen automatische updates van documentwijzigingen.
+
+### Kan ik TA-velden programmatisch toevoegen aan specifieke delen van het document?
+Ja, u kunt op specifieke locaties TA-velden toevoegen door deze in de gewenste paragrafen of secties in te voegen.
+
+### Hoe ga ik om met meerdere TOA-velden in één document?
+ U kunt meerdere TOA-velden beheren door er verschillende toe te wijzen`EntryCategory` waarden en ervoor te zorgen dat elk TOA-veld vermeldingen filtert op basis van zijn categorie.

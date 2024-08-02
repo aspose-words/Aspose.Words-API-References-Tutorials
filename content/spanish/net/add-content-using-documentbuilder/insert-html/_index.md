@@ -9,7 +9,7 @@ url: /es/net/add-content-using-documentbuilder/insert-html/
 ---
 ## Introducción
 
-¡Hola, compañero entusiasta de la codificación! ¿Alguna vez te has preguntado cómo insertar HTML en un documento de Word usando Aspose.Words para .NET? Ya sea que esté buscando agregar algún formato sofisticado o simplemente desee agilizar el proceso de creación de documentos, está en el lugar correcto. En este tutorial, profundizaremos en el meollo del uso de Aspose.Words para .NET para incrustar HTML directamente en sus documentos de Word. Y no te preocupes; ¡Mantendremos las cosas simples, atractivas y francamente divertidas!
+¡Hola, compañero entusiasta de la codificación! ¿Alguna vez te has preguntado cómo insertar HTML en un documento de Word usando Aspose.Words para .NET? Ya sea que esté buscando agregar algún formato sofisticado o simplemente desee agilizar el proceso de creación de documentos, está en el lugar correcto. En este tutorial, profundizaremos en el meollo de la cuestión del uso de Aspose.Words para .NET para incrustar HTML directamente en sus documentos de Word. Y no te preocupes; ¡Mantendremos las cosas simples, atractivas y francamente divertidas!
 
 ## Requisitos previos
 

@@ -12,7 +12,7 @@ url: /ko/java/document-rendering/rendering-document-pages-images/
 
 기술적인 세부 사항을 살펴보기 전에 Aspose.Words for Java에 대해 간략하게 소개하겠습니다. 개발자가 프로그래밍 방식으로 Word 문서를 생성, 조작 및 렌더링할 수 있는 강력한 Java 라이브러리입니다. Aspose.Words를 사용하면 문서 페이지를 이미지로 렌더링하는 것을 포함하여 Word 문서와 관련된 광범위한 작업을 수행할 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
 코딩을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

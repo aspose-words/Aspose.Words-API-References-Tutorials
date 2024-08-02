@@ -34,7 +34,7 @@ Pastikan Anda memiliki file kamus yang sesuai di direktori data Anda.
 
 ## Langkah 3: Simpan dokumen yang dimodifikasi
 
-Terakhir, simpan dokumen yang dimodifikasi:
+Terakhir, simpan dokumen yang diubah:
 
 ```csharp
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");

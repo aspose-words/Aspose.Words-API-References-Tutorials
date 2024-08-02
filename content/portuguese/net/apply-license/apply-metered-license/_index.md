@@ -32,7 +32,7 @@ Tudo bem, vamos decompô-lo. Seguiremos o processo passo a passo, para que você
 
 ## Etapa 1: inicializar a classe medida
 
- Primeiramente, precisamos criar uma instância do`Metered` aula. Esta classe é responsável por definir a licença medida.
+ Primeiramente, precisamos criar uma instância do`Metered` aula. Esta classe é responsável por definir a licença limitada.
 
 ```csharp
 Metered metered = new Metered();
@@ -64,7 +64,7 @@ Para confirmar se a licença foi aplicada corretamente, vamos realizar uma opera
 Console.WriteLine(doc.PageCount);
 ```
 
-Esta etapa garante que seu documento seja carregado e processado usando a licença medida.
+Esta etapa garante que seu documento seja carregado e processado usando a licença limitada.
 
 ## Etapa 5: lidar com exceções
 

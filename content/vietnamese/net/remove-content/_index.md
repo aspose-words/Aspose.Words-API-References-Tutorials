@@ -16,7 +16,7 @@ Cho dù bạn cần thao tác, tạo, chuyển đổi hay tạo tài liệu Word
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Xóa ngắt trang trong tài liệu Word](./remove-page-breaks/) | Tìm hiểu cách xóa ngắt trang trong tài liệu word bằng Thư viện Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để có bố cục liền mạch. |
-| [Xóa phần ngắt trong tài liệu Word](./remove-section-breaks/) | Tìm hiểu cách loại bỏ dấu ngắt phần trong tài liệu Word bằng thư viện Aspose.Words cho .NET. Loại bỏ hiệu quả các ngắt phần có thể làm gián đoạn việc định dạng tài liệu của bạn.|
-| [Xóa chân trang trong tài liệu Word](./remove-footers/) | Tìm hiểu cách dễ dàng xóa chân trang trong tài liệu Word bằng Aspose.Words for .NET. Làm theo hướng dẫn từng bước của chúng tôi để xử lý hiệu quả các tệp DOCX. |
+| [Xóa ngắt trang trong tài liệu Word](./remove-page-breaks/) | Tìm hiểu cách xóa ngắt trang trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước của chúng tôi. Nâng cao kỹ năng thao tác tài liệu của bạn. |
+| [Xóa phần ngắt trong tài liệu Word](./remove-section-breaks/) | Tìm hiểu cách loại bỏ dấu ngắt phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn chi tiết từng bước này đảm bảo quản lý và chỉnh sửa tài liệu suôn sẻ.|
+| [Xóa chân trang trong tài liệu Word](./remove-footers/) | Tìm hiểu cách xóa chân trang khỏi tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
 | [Xóa mục lục trong tài liệu Word](./remove-table-of-contents/) | Tìm hiểu cách xóa mục lục trong tài liệu Word bằng Aspose.Words cho .NET. |

@@ -28,7 +28,7 @@ Celkově lze říci, že výukové programy slučování dokumentů pomocí Aspo
 Naučte se bezproblémově slučovat dokumenty aplikace Word pomocí Aspose.Words for Java. Efektivně kombinovat, formátovat a řešit konflikty v několika krocích. Začněte hned!
 ### [Kombinování a klonování dokumentů](./combining-cloning-documents/)
 Naučte se, jak snadno kombinovat a klonovat dokumenty v Javě pomocí Aspose.Words. Tento průvodce krok za krokem obsahuje vše, co potřebujete vědět.
-### [Spojení a připojení dokumentů](./joining-appending-documents/)
+### [Připojování a připojování dokumentů](./joining-appending-documents/)
 Naučte se spojovat a připojovat dokumenty pomocí Aspose.Words for Java. Podrobný průvodce s příklady kódu pro efektivní manipulaci s dokumenty.
 ### [Porovnání rozdílů mezi dokumenty](./comparing-documents-for-differences/)
 Naučte se, jak porovnávat rozdíly mezi dokumenty pomocí Aspose.Words v Javě. Náš průvodce krok za krokem zajišťuje přesnou správu dokumentů.

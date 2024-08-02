@@ -11,7 +11,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-inline-image/
 
 .NET 애플리케이션을 사용한 문서 처리 영역에서 Aspose.Words는 Word 문서를 프로그래밍 방식으로 조작하기 위한 강력한 솔루션으로 우뚝 서 있습니다. 주요 기능 중 하나는 인라인 이미지를 손쉽게 삽입하여 문서의 시각적 매력과 기능을 향상시키는 기능입니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 활용하여 Word 문서에 이미지를 원활하게 포함시키는 방법에 대해 자세히 설명합니다.
 
-## 전제조건
+## 전제 조건
 
 .NET용 Aspose.Words를 사용하여 인라인 이미지를 삽입하는 프로세스를 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

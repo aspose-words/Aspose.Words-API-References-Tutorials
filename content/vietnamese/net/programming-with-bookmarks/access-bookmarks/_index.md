@@ -113,7 +113,7 @@ Giải trình:
 
 ## Phần kết luận
 
-Truy cập và thao tác dấu trang trong tài liệu Word bằng Aspose.Words cho .NET là một quy trình đơn giản có thể nâng cao đáng kể khả năng xử lý tài liệu của bạn. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng tải tài liệu, truy cập dấu trang theo chỉ mục hoặc tên, thao tác nội dung dấu trang, thêm dấu trang mới và lưu các thay đổi của mình. Cho dù bạn đang tự động hóa các báo cáo, tạo tài liệu động hay chỉ cần một cách đáng tin cậy để xử lý dấu trang, Aspose.Words for .NET đều đáp ứng được nhu cầu của bạn.
+Truy cập và thao tác dấu trang trong tài liệu Word bằng Aspose.Words cho .NET là một quy trình đơn giản có thể nâng cao đáng kể khả năng xử lý tài liệu của bạn. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng tải tài liệu, truy cập dấu trang theo chỉ mục hoặc tên, thao tác nội dung dấu trang, thêm dấu trang mới và lưu các thay đổi của mình. Cho dù bạn đang tự động hóa các báo cáo, tạo tài liệu động hay chỉ cần một cách đáng tin cậy để xử lý dấu trang, Aspose.Words for .NET đều có thể đáp ứng được nhu cầu của bạn.
 
 ## Câu hỏi thường gặp
 

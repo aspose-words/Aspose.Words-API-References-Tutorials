@@ -90,7 +90,7 @@ Para obter mais informações e referências detalhadas da API, visite o[Documen
  Você pode instalar Aspose.Words para Python usando pip. Simplesmente execute`pip install aspose-words` no seu terminal.
 
 ### Posso aplicar layouts diferentes em um único documento?
-Sim, você pode ter diversas seções em um documento, cada uma com suas próprias configurações de layout. Isso permite que você aplique vários layouts conforme necessário.
+Sim, você pode ter várias seções em um documento, cada uma com suas próprias configurações de layout. Isso permite que você aplique vários layouts conforme necessário.
 
 ### O Aspose.Words é compatível com diferentes formatos do Word?
 Sim, Aspose.Words suporta vários formatos Word, incluindo DOC, DOCX, RTF e muito mais.

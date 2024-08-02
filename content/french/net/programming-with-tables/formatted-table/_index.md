@@ -2,42 +2,79 @@
 title: Tableau formaté
 linktitle: Tableau formaté
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment créer un tableau formaté dans un document Word avec Aspose.Words pour .NET.
+description: Apprenez à créer et formater des tableaux dans des documents Word à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/formatted-table/
 ---
+## Introduction
 
-Dans ce didacticiel, nous apprendrons comment créer un tableau formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous serez en mesure de créer par programme des tableaux avec une mise en forme personnalisée dans vos documents Word.
+La création et le formatage de tableaux dans des documents Word par programmation peuvent sembler une tâche ardue, mais avec Aspose.Words pour .NET, cela devient simple et gérable. Dans ce didacticiel, nous vous expliquerons comment créer un tableau formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Nous couvrirons tout, de la configuration de votre environnement à l'enregistrement de votre document avec un tableau magnifiquement formaté.
 
-## Étape 1 : Configuration du projet
-1. Lancez Visual Studio et créez un nouveau projet C#.
-2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
+## Conditions préalables
 
-## Étape 2 : Création du document et initialisation du générateur de documents
-Pour commencer à créer le tableau formaté, nous devons créer un nouveau document et initialiser le générateur de documents. Suivez ces étapes:
+Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
+
+1. Aspose.Words pour la bibliothèque .NET : téléchargez-la depuis[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : un IDE comme Visual Studio.
+3. .NET Framework : assurez-vous que .NET Framework est installé sur votre ordinateur.
+
+## Importer des espaces de noms
+
+Avant d'écrire le code proprement dit, vous devez importer les espaces de noms nécessaires :
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//Créer le document et initialiser le générateur de documents
+## Étape 1 : Configurez votre répertoire de documents
+
+Tout d’abord, vous devez définir le chemin où votre document sera enregistré.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où vous souhaitez enregistrer le document.
+
+## Étape 2 : initialiser le document et DocumentBuilder
+
+Maintenant, initialisez un nouveau document et un objet DocumentBuilder.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel d'accès à votre répertoire de documents.
+ Le`DocumentBuilder` est une classe d'assistance qui simplifie le processus de création de documents.
 
-## Étape 3 : Création du tableau formaté
-Ensuite, nous allons créer le tableau formaté à l'aide des méthodes fournies par le générateur de documents. Utilisez le code suivant :
+## Étape 3 : démarrer la table
+
+ Ensuite, commencez à créer le tableau en utilisant le`StartTable` méthode.
 
 ```csharp
-// Commencer la construction du tableau
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// Construction de la ligne d'en-tête du tableau
-builder. InsertCell();
-table. LeftIndent = 20.0;
+L'insertion d'une cellule est nécessaire pour commencer le tableau.
+
+## Étape 4 : Appliquer le formatage à l’échelle du tableau
+
+Vous pouvez appliquer une mise en forme qui affecte l'ensemble du tableau. Par exemple, en définissant le retrait à gauche :
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## Étape 5 : Formater la ligne d'en-tête
+
+Définissez la hauteur, l'alignement et d'autres propriétés de la ligne d'en-tête.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+Dans cette étape, nous faisons ressortir la ligne d'en-tête en définissant une couleur d'arrière-plan, une taille de police et un alignement.
+
+## Étape 6 : Insérer des cellules d'en-tête supplémentaires
+
+Insérez plus de cellules pour la ligne d'en-tête :
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## Étape 7 : Formater les lignes du corps
 
-// Construction du corps du tableau
+Après avoir configuré l'en-tête, formatez le corps du tableau :
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// Fin de la construction du tableau
-builder. EndTable();
 ```
 
- Ici, nous utilisons le générateur de documents pour construire le tableau étape par étape. On commence par appeler`StartTable()` pour initialiser la table. Ensuite, nous utilisons`InsertCell()` pour insérer des cellules et`Write()` pour ajouter du contenu à chaque cellule. Nous utilisons également différentes propriétés de mise en forme pour définir la mise en forme des lignes, des cellules et du texte du tableau.
+## Étape 8 : Insérer des lignes de corps
 
-## Étape 4 : Enregistrez le document
-Enfin, nous devons enregistrer le document contenant le tableau formaté. Utilisez le code suivant :
+Insérez les lignes du corps avec le contenu :
 
 ```csharp
-// Enregistrez le document
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+Répétez l'opération pour les lignes supplémentaires :
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Étape 9 : Enregistrez le document
+
+Enfin, enregistrez le document dans le répertoire spécifié :
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Assurez-vous de spécifier le chemin et le nom de fichier corrects pour le document de sortie.
-
-### Exemple de code source pour un tableau formaté utilisant Aspose.Words pour .NET 
-
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// Le formatage à l’échelle du tableau doit être appliqué une fois qu’au moins une ligne est présente dans le tableau.
-	table.LeftIndent = 20.0;
-	// Définissez la hauteur et définissez la règle de hauteur pour la ligne d'en-tête.
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// Nous n'avons pas besoin de spécifier la largeur de cette cellule car elle est héritée de la cellule précédente.
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// Réinitialisez la hauteur et définissez une règle de hauteur différente pour le corps du tableau.
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// Réinitialisez le formatage de la police.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+Cela créera et enregistrera un document Word avec le tableau formaté.
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à créer un tableau formaté dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez créer par programme des tableaux personnalisés avec une mise en forme spécifique dans vos documents Word. Cette fonctionnalité vous permet de présenter et de structurer vos données de manière visuellement attrayante et organisée.
+
+Et voila! En suivant ces étapes, vous pouvez créer un tableau bien formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation par programmation de documents Word, vous permettant ainsi d'économiser du temps et des efforts.
+
+## FAQ
+
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+Aspose.Words for .NET est une bibliothèque puissante permettant de créer, modifier et convertir des documents Word par programme.
+
+### Puis-je utiliser différentes couleurs pour différentes lignes ?
+Oui, vous pouvez appliquer différentes mises en forme, notamment des couleurs, à différentes lignes ou cellules.
+
+### Aspose.Words pour .NET est-il gratuit ?
+ Aspose.Words for .NET est une bibliothèque payante, mais vous pouvez obtenir un[essai gratuit](https://releases.aspose.com/).
+
+### Comment puis-je obtenir une assistance pour Aspose.Words pour .NET ?
+ Vous pouvez bénéficier du soutien du[Forums communautaires Aspose](https://forum.aspose.com/c/words/8).
+
+### Puis-je créer d’autres types de documents avec Aspose.Words pour .NET ?
+Oui, Aspose.Words for .NET prend en charge divers formats de documents, notamment PDF, HTML et TXT.

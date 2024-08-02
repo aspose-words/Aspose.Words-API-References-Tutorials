@@ -45,7 +45,7 @@ Abschließend können wir das Dokument im gewünschten Format speichern.
 // Verwenden Sie einen Dokument-Generator, um dem Dokument Inhalt hinzuzufügen.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Hyperlink einfügen.
+// Hyperlink einfügen.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion "Autolink
 
 #### F: Ist es möglich, den Anzeigetext eines automatischen Links in Aspose.Words anzupassen?
 
- A: Ja, Sie können den Anzeigetext eines automatischen Links in Aspose.Words anpassen. Anstatt die URL-Adresse als Anzeigetext zu verwenden, können Sie jeden anderen Text verwenden, indem Sie den Inhalt zwischen den`<a>` Tags. Sie können beispielsweise`<a href="https://www.aspose.com">Click here</a>` um den Text „Klicken Sie hier“ als automatischen Link anzuzeigen.
+ A: Ja, Sie können den Anzeigetext eines automatischen Links in Aspose.Words anpassen. Anstatt die URL-Adresse als Anzeigetext zu verwenden, können Sie jeden anderen Text verwenden, indem Sie den Inhalt zwischen den`<a>` Tags. Sie können beispielsweise`<a href="https://www.aspose.com">Click here</a>`um den Text „Klicken Sie hier“ als automatischen Link anzuzeigen.
 
 #### F: Wie kann ich einem Autolink in Aspose.Words zusätzliche Attribute hinzufügen?
 
-A: Um zusätzliche Attribute zu einem automatischen Link in Aspose.Words hinzuzufügen, können Sie zusätzliche HTML-Attribute innerhalb des`<a>` Tag. Sie können beispielsweise`<a href="https://www.aspose.com" target="_blank">Link</a>` , um den Link in einem neuen Fenster oder Tab zu öffnen, indem Sie` attribute target="_blank"`.
+ A: Um zusätzliche Attribute zu einem automatischen Link in Aspose.Words hinzuzufügen, können Sie zusätzliche HTML-Attribute innerhalb des`<a>` Tag. Sie können beispielsweise`<a href="https://www.aspose.com" target="_blank">Link</a>` , um den Link in einem neuen Fenster oder Tab zu öffnen, indem Sie` attribute target="_blank"`.

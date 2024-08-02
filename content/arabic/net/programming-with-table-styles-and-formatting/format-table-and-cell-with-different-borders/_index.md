@@ -2,72 +2,36 @@
 title: تنسيق الجدول والخلية بحدود مختلفة
 linktitle: تنسيق الجدول والخلية بحدود مختلفة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لتنسيق الجدول والخلية بحدود مختلفة باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية تنسيق الجداول والخلايا ذات الحدود المختلفة باستخدام Aspose.Words لـ .NET. قم بتحسين مستندات Word الخاصة بك باستخدام أنماط الجدول المخصصة وتظليل الخلايا.
 type: docs
 weight: 10
 url: /ar/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنرشدك خلال العملية خطوة بخطوة لتنسيق جدول وخلية بحدود مختلفة باستخدام Aspose.Words for .NET. سنشرح لك التعليمات البرمجية المصدرية المجمعة لـ C# ونزودك بدليل شامل لمساعدتك على فهم هذه الميزة وتنفيذها في مشاريعك الخاصة. في نهاية هذا البرنامج التعليمي، ستعرف كيفية تطبيق حدود مخصصة على جدول وخلايا معينة في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+هل سبق لك أن حاولت جعل مستندات Word الخاصة بك تبدو أكثر احترافية من خلال تخصيص حدود الجداول والخلايا؟ إذا لم يكن الأمر كذلك، فأنت في علاج! سيرشدك هذا البرنامج التعليمي خلال عملية تنسيق الجداول والخلايا ذات الحدود المختلفة باستخدام Aspose.Words for .NET. تخيل أن لديك القدرة على تغيير مظهر جداولك باستخدام بضعة أسطر فقط من التعليمات البرمجية. مفتون؟ دعنا نتعمق ونستكشف كيف يمكنك تحقيق ذلك بسهولة.
 
-## الخطوة 1: تحديد دليل المستند
-أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو الموقع الذي تريد حفظ مستند Word الذي تم تحريره فيه. استبدل "دليل المستندات الخاصة بك" بالمسار المناسب.
+## المتطلبات الأساسية
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
+- فهم أساسي للبرمجة C#.
+- تم تثبيت Visual Studio على جهاز الكمبيوتر الخاص بك.
+-  Aspose.Words لمكتبة .NET. إذا لم تقم بتثبيته بعد، يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+-  ترخيص Aspose صالح. يمكنك الحصول على نسخة تجريبية مجانية أو ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
 
-## الخطوة 2: إنشاء مستند جديد ومنشئ المستندات
- بعد ذلك، تحتاج إلى إنشاء مثيل جديد لـ`Document` فئة ومنشئ مستند لتلك الوثيقة.
+## استيراد مساحات الأسماء
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## الخطوة 3: ابدأ جدولاً جديدًا وأضف الخلايا
-للبدء في إنشاء الجدول، نستخدم`StartTable()` طريقة منشئ المستندات، ثم نضيف خلايا إلى الجدول باستخدام`InsertCell()` الطريقة ونكتب محتويات الخلايا باستخدام`Writeln()` طريقة.
+للعمل مع Aspose.Words لـ .NET، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروعك. أضف ما يلي باستخدام التوجيهات في الجزء العلوي من ملف التعليمات البرمجية الخاص بك:
 
 ```csharp
-Table table = builder. StartTable();
-builder.InsertCell();
-// تعيين حدود للجدول بأكمله.
-table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-// تعيين الحشو لهذه الخلية.
-builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-builder.Writeln("Cell #1");
-builder.InsertCell();
-// حدد حشوة خلية مختلفة للخلية الثانية.
-builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-builder.Writeln("Cell #2");
-builder.EndRow();
-// مسح تنسيق الخلية من العمليات السابقة.
-builder.CellFormat.ClearFormatting();
-builder.InsertCell();
-// قم بإنشاء حدود أكثر سمكًا للخلية الأولى في هذا الصف. سيكون مختلفا
-// بالنسبة للحدود المحددة للجدول.
-builder.CellFormat.Borders.Left.LineWidth = 4.0;
-builder.CellFormat.Borders.Right.LineWidth = 4.0;
-builder.CellFormat.Borders.Top.LineWidth = 4.0;
-builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-builder.Writeln("Cell #3");
-builder.InsertCell();
-builder.CellFormat.ClearFormatting();
-builder.Writeln("Cell #4");
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System.Drawing;
 ```
 
-## الخطوة 4: احفظ المستند
+## الخطوة 1: تهيئة المستند و DocumentBuilder
 
-  معدل
-أخيرًا احفظ المستند المعدل في ملف. يمكنك اختيار الاسم والموقع المناسبين للمستند الناتج.
-
-```csharp
-doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
-```
-
-تهنئة ! لقد قمت الآن بتنسيق جدول وخلية بحدود مختلفة باستخدام Aspose.Words لـ .NET.
-
-### نموذج التعليمات البرمجية المصدر لتنسيق الجدول والخلية بحدود مختلفة باستخدام Aspose.Words لـ .NET 
+أولاً، تحتاج إلى إنشاء مستند جديد وتهيئة DocumentBuilder، مما يساعد في بناء محتوى المستند. 
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
@@ -75,20 +39,64 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## الخطوة 2: البدء في إنشاء جدول
+
+بعد ذلك، استخدم DocumentBuilder لبدء إنشاء جدول وإدراج الخلية الأولى.
+
+```csharp
 Table table = builder.StartTable();
 builder.InsertCell();
-//تعيين الحدود للجدول بأكمله.
+```
+
+## الخطوة 3: تعيين حدود الجدول
+
+تعيين الحدود للجدول بأكمله. تضمن هذه الخطوة أن جميع الخلايا الموجودة في الجدول لها نمط حدود ثابت ما لم يتم تحديد خلاف ذلك.
+
+```csharp
+// تعيين الحدود للجدول بأكمله.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+```
+
+## الخطوة 4: تطبيق تظليل الخلية
+
+تطبيق التظليل على الخلايا لجعلها متميزة بصريا. في هذا المثال، سنقوم بتعيين لون خلفية الخلية الأولى إلى اللون الأحمر.
+
+
+```csharp
 // قم بتعيين تظليل الخلية لهذه الخلية.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
+```
+
+## الخطوة 5: أدخل خلية أخرى ذات تظليل مختلف
+
+أدخل الخلية الثانية وقم بتطبيق لون تظليل مختلف. وهذا يجعل الجدول أكثر ألوانًا وأسهل في القراءة.
+
+```csharp
 builder.InsertCell();
 // حدد تظليلًا مختلفًا للخلية الثانية.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
 builder.EndRow();
+```
+
+## الخطوة 6: مسح تنسيق الخلية
+
+امسح تنسيق الخلية من العمليات السابقة للتأكد من أن الخلايا التالية لا ترث نفس الأنماط.
+
+
+```csharp
 // امسح تنسيق الخلية من العمليات السابقة.
 builder.CellFormat.ClearFormatting();
+```
+
+## الخطوة 7: تخصيص الحدود لخلايا معينة
+
+قم بتخصيص الحدود لخلايا معينة لجعلها مميزة. هنا، سنقوم بتعيين حدود أكبر للخلية الأولى من الصف الجديد.
+
+```csharp
 builder.InsertCell();
 // قم بإنشاء حدود أكبر للخلية الأولى من هذا الصف. هذا سيكون مختلفا
 // مقارنة بالحدود المحددة للجدول.
@@ -97,11 +105,43 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
+```
+
+## الخطوة 8: أدخل الخلية النهائية
+
+قم بإدراج الخلية النهائية وتأكد من مسح تنسيقها، بحيث تستخدم الأنماط الافتراضية للجدول.
+
+```csharp
 builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
+```
+
+## الخطوة 9: احفظ المستند
+
+وأخيرا، احفظ المستند في الدليل المحدد.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية تنسيق جدول وخلية بحدود مختلفة باستخدام Aspose.Words for .NET. باتباع هذا الدليل المفصّل خطوة بخطوة، يمكنك بسهولة تخصيص حدود الجدول والخلايا في مستندات Word. يقدم Aspose.Words واجهة برمجة تطبيقات قوية ومرنة لمعالجة الجداول وتنسيقها في مستنداتك. باستخدام هذه المعرفة، يمكنك تحسين العرض المرئي لمستندات Word الخاصة بك وتلبية الاحتياجات المحددة.
+
+وهناك لديك! لقد تعلمت للتو كيفية تنسيق الجداول والخلايا ذات الحدود المختلفة باستخدام Aspose.Words لـ .NET. من خلال تخصيص حدود الجدول وتظليل الخلايا، يمكنك تحسين المظهر المرئي لمستنداتك بشكل كبير. لذا، تفضل، وقم بتجربة أنماط مختلفة، واجعل مستنداتك مميزة!
+
+## الأسئلة الشائعة
+
+### هل يمكنني استخدام أنماط حدود مختلفة لكل خلية؟
+ نعم، يمكنك تعيين أنماط حدود مختلفة لكل خلية باستخدام`CellFormat.Borders` ملكية.
+
+### كيف يمكنني إزالة كافة الحدود من الجدول؟
+ يمكنك إزالة جميع الحدود عن طريق ضبط نمط الحدود على`LineStyle.None`.
+
+### هل من الممكن تعيين ألوان حدود مختلفة لكل خلية؟
+ قطعاً! يمكنك تخصيص لون الحدود لكل خلية باستخدام`CellFormat.Borders.Color` ملكية.
+
+### هل يمكنني استخدام الصور كخلفيات للخلايا؟
+على الرغم من أن Aspose.Words لا يدعم الصور كخلفيات خلايا بشكل مباشر، إلا أنه يمكنك إدراج صورة في خلية وضبط حجمها لتغطية مساحة الخلية.
+
+### كيف يمكنني دمج الخلايا في الجدول؟
+ يمكنك دمج الخلايا باستخدام`CellFormat.HorizontalMerge`و`CellFormat.VerticalMerge` ملكيات.

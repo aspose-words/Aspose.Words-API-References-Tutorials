@@ -16,12 +16,12 @@ Door Aspose.Words voor .NET te gebruiken en deze tutorials te volgen, kunt u de 
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Groepsvorm toevoegen](./add-group-shape/) | Leer hoe u een groepsvorm met meerdere vormen aan een Word-document kunt toevoegen met Aspose.Words voor .NET. |
-| [Vorm invoegen](./insert-shape/) | Leer hoe u vormen invoegt in een Word-document met Aspose.Words voor .NET. |
-| [Beeldverhouding vergrendeld](./aspect-ratio-locked/) | Leer hoe u de beeldverhouding van een vorm in een Word-document kunt vergrendelen of ontgrendelen met Aspose.Words voor .NET. |
-| [Indeling in cel](./layout-in-cell/) | Leer hoe u een vorm in een tabelcel in een Word-document kunt opmaken met Aspose.Words voor .NET. |
-| [Hoeken toevoegen, geknipt](./add-corners-snipped/) | Leer hoe u een vorm met afgeknipte hoeken aan een Word-document kunt toevoegen met Aspose.Words voor .NET. |
-| [Ontvang werkelijke vormgrenspunten](./get-actual-shape-bounds-points/) | Leer hoe u de werkelijke grenzen van een vorm in punten (meeteenheid) kunt ophalen in een Word-document met behulp van Aspose.Words voor .NET. |
-| [Verticaal anker](./vertical-anchor/) | Leer hoe u een vorm verticaal in een document plaatst met behulp van de verticale ankerfunctie in Aspose.Words voor .NET.|
-| [Detecteer slimme kunstvorm](./detect-smart-art-shape/) | Leer hoe u Smart Art-vormen in een Word-document kunt detecteren met Aspose.Words voor .NET, waarmee u grafische representaties kunt identificeren. |
-| [Update Smart Art-tekening](./update-smart-art-drawing/) | Leer hoe u de Smart Art-tekening in een Word-document kunt bijwerken met Aspose.Words voor .NET. |
+| [Groepsvorm toevoegen](./add-group-shape/) | Leer hoe u groepsvormen aan Word-documenten kunt toevoegen met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze zelfstudie. |
+| [Vorm invoegen](./insert-shape/) | Leer hoe u vormen in Word-documenten kunt invoegen en manipuleren met Aspose.Words voor .NET met onze stapsgewijze handleiding. |
+| [Beeldverhouding vergrendeld](./aspect-ratio-locked/) | Leer hoe u de beeldverhouding van vormen in Word-documenten kunt vergrendelen met Aspose.Words voor .NET. Volg deze stapsgewijze handleiding om uw afbeeldingen en vormen proportioneel te houden. |
+| [Indeling in cel](./layout-in-cell/) | Leer hoe u de lay-out in cellen instelt met Aspose.Words voor .NET met deze uitgebreide handleiding. Perfect voor ontwikkelaars die Word-documenten willen aanpassen. |
+| [Hoeken toevoegen, geknipt](./add-corners-snipped/) | Leer hoe u een uit hoeken geknipte vorm aan uw Word-documenten kunt toevoegen met Aspose.Words voor .NET. Met deze stapsgewijze handleiding kunt u uw documenten eenvoudig verbeteren. |
+| [Ontvang werkelijke vormgrenspunten](./get-actual-shape-bounds-points/) | Ontdek hoe u de werkelijke vormgrenspunten in Word-documenten kunt verkrijgen met behulp van Aspose.Words voor .NET. Leer nauwkeurige vormmanipulatie met deze gedetailleerde gids. |
+| [Verticaal anker](./vertical-anchor/) | Leer hoe u verticale ankerposities instelt voor tekstvakken in Word-documenten met Aspose.Words voor .NET. Gemakkelijke stap-voor-stap handleiding inbegrepen.|
+| [Detecteer slimme kunstvorm](./detect-smart-art-shape/) | Leer hoe u SmartArt-vormen in Word-documenten kunt detecteren met Aspose.Words voor .NET met deze uitgebreide handleiding. Perfect voor het automatiseren van uw documentworkflow. |
+| [Update Smart Art-tekening](./update-smart-art-drawing/) | Leer hoe u Smart Art-tekeningen in Word-documenten kunt bijwerken met Aspose.Words voor .NET met deze stapsgewijze handleiding. Zorg ervoor dat uw beelden altijd accuraat zijn. |

@@ -2,118 +2,106 @@
 title: Gebruik een spatie per niveau voor het inspringen van de lijst
 linktitle: Gebruik een spatie per niveau voor het inspringen van de lijst
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het gebruik van een spatie per niveau voor het inspringen van een lijst in Aspose.Words voor .NET. Creëer eenvoudig goed gestructureerde Word-documenten.
+description: Leer hoe u lijsten met meerdere niveaus maakt met inspringing van spaties in Aspose.Words voor .NET. Stapsgewijze handleiding voor nauwkeurige documentopmaak.
 type: docs
 weight: 10
 url: /nl/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, bewerken en manipuleren van Word-documenten in een C#-toepassing. Een van de functies die Aspose.Words biedt, is de mogelijkheid om één spatie per niveau te gebruiken voor het inspringen van lijsten. In deze handleiding laten we u zien hoe u de C#-broncode van Aspose.Words voor .NET kunt gebruiken om deze functionaliteit te implementeren.
+## Invoering
 
-## Inzicht in de Aspose.Words-bibliotheek
+Als het gaat om documentopmaak, vooral als u met lijsten werkt, is precisie van cruciaal belang. In scenario's waarin u documenten met verschillende inspringingsniveaus moet maken, biedt Aspose.Words voor .NET krachtige tools om deze taak uit te voeren. Een bijzondere functie die van pas kan komen, is het configureren van lijstinspringing in tekstbestanden. In deze handleiding leest u hoe u spaties kunt gebruiken voor het inspringen van lijsten, zodat uw document de gewenste structuur en leesbaarheid behoudt.
 
-Voordat u in de code duikt, is het belangrijk dat u de Aspose.Words-bibliotheek voor .NET begrijpt. Aspose.Words is een populaire bibliotheek die het verwerken van woorden met Word-documenten eenvoudig en efficiënt maakt. Het biedt een breed scala aan functionaliteiten voor het maken, wijzigen en manipuleren van Word-documenten, inclusief het beheer van lijsten en inspringen.
+## Vereisten
 
-## Het document maken en inhoud toevoegen
+Voordat je in de tutorial duikt, heb je het volgende nodig:
 
-De eerste stap is het maken van een nieuw document en het toevoegen van inhoud eraan. Gebruik de klasse Document om een nieuw documentexemplaar te maken. Gebruik vervolgens de klasse DocumentBuilder om tekst toe te voegen en een lijst te maken met meerdere inspringingsniveaus. Hier is een voorbeeld :
+-  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words-bibliotheek is geïnstalleerd. Als u deze nog niet heeft, kunt u deze downloaden via de[Aspose-website](https://releases.aspose.com/words/net/).
+- Visual Studio: Een ontwikkelomgeving om uw code te schrijven en te testen.
+- Basiskennis van C#: Bekendheid met C# en het .NET-framework zal u helpen dit probleemloos te volgen.
+
+## Naamruimten importeren
+
+Om met Aspose.Words te gaan werken, moet u de benodigde naamruimten importeren. Zo kunt u ze in uw project opnemen:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Laten we het proces van het maken van een document met een lijst met meerdere niveaus en het specificeren van spaties voor inspringen nader bekijken. 
+
+## Stap 1: Stel uw document in
+
+ Eerst moet u een nieuw document maken en het`DocumentBuilder` voorwerp. Met dit object kunt u eenvoudig inhoud toevoegen en deze indien nodig opmaken.
+
+```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// Maak het document en voeg inhoud toe
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ In dit fragment vervangt u`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad waar u uw document wilt opslaan.
+
+## Stap 2: Maak een lijst met meerdere inspringingsniveaus
+
+ Met de`DocumentBuilder` U kunt nu bijvoorbeeld een lijst maken met verschillende inspringingsniveaus. Gebruik de`ListFormat` eigenschap om nummering toe te passen en de lijstitems naar wens te laten inspringen.
+
+```csharp
 // Maak een lijst met drie inspringingsniveaus
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-In dit voorbeeld maken we een nieuw document en gebruiken we de DocumentBuilder om tekst toe te voegen en een lijst te maken met drie inspringingsniveaus. We hebben drie items aan de lijst toegevoegd, waarbij elk item een extra niveau heeft ingesprongen.
+ In deze stap,`ApplyNumberDefault` stelt het lijstformaat in, en`ListIndent` wordt gebruikt om het inspringniveau voor elk volgend lijstitem te vergroten.
 
-## Gebruik één spatie per niveau voor het inspringen van de lijst
+## Stap 3: Configureer het spatieteken voor inspringing
 
-Nadat de inhoud is toegevoegd, kunnen we nu de inspringing van de lijsten configureren met één spatie per niveau. Hiervoor gebruiken we de klasse TxtSaveOptions en stellen we de eigenschap ListIndentation.Count in op het aantal inspringingsniveaus en de eigenschap ListIndentation.Character op het spatieteken dat moet worden gebruikt. Hier is hoe:
+Nu u uw lijst hebt ingesteld, is de volgende stap het configureren van de manier waarop de lijstinspringing wordt afgehandeld wanneer u het document in een tekstbestand opslaat. Je zult gebruiken`TxtSaveOptions` om op te geven dat spaties moeten worden gebruikt voor inspringen.
 
 ```csharp
+// Gebruik één spatie per niveau voor het inspringen van de lijst
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+ Hier,`ListIndentation.Count` specificeert het aantal spaties per inspringingsniveau, en`ListIndentation.Character` stelt het daadwerkelijke teken in dat wordt gebruikt voor inspringen.
+
+## Stap 4: Sla het document op met de opgegeven opties
+
+Sla ten slotte uw document op met behulp van de geconfigureerde opties. Hierdoor worden de inspringingsinstellingen toegepast en wordt uw bestand in het gewenste formaat opgeslagen.
+
+```csharp
+// Sla het document op met de opgegeven opties
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-In dit voorbeeld maken we een exemplaar van TxtSaveOptions en stellen we de eigenschap ListIndentation.Count in op 3 om aan te geven dat er drie inspringingsniveaus in de lijst zijn. We hebben ook de eigenschap ListIndentation.Character ingesteld op het spatieteken (' ') dat we willen gebruiken voor inspringen.
-
-### Voorbeeldbroncode voor de functie 'Gebruik één spatie per niveau voor het inspringen van de lijst' met Aspose.Words voor .NET
-
-Hier is de volledige voorbeeldbroncode voor de functie "Gebruik één spatie per niveau voor het inspringen van de lijst" met Aspose.Words voor .NET:
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             // Pad naar uw documentmap
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             // Maak het document en voeg inhoud toe
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             // Maak een lijst met drie inspringingsniveaus
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             // Gebruik één spatie per niveau voor het inspringen van de lijst
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             // Sla het document op met de opgegeven opties
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+ Met dit codefragment wordt het document opgeslagen op het pad dat is opgegeven in`dataDir` met de bestandsnaam`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. In het opgeslagen bestand is de lijst opgemaakt volgens uw inspringingsinstellingen.
 
 ## Conclusie
 
-In deze handleiding hebben we uitgelegd hoe u Aspose.Words voor .NET kunt gebruiken om de functionaliteit 'Gebruik één spatie per niveau voor het inspringen van de lijst' toe te passen. Door de aangegeven stappen te volgen en de meegeleverde C#-broncode te gebruiken, kunt u eenvoudig de inspringing van lijsten in uw Word-documenten configureren met één spatie per niveau. Aspose.Words biedt enorme flexibiliteit en kracht voor woordenverwerking met tekstopmaak en lijstbeheer, waardoor u goed gestructureerde documenten kunt maken in uw C#-toepassing.
+Door deze stappen te volgen, hebt u met succes een document gemaakt met lijstinspringing op meerdere niveaus, waarbij gebruik wordt gemaakt van spaties voor de opmaak. Deze aanpak zorgt ervoor dat uw lijsten goed gestructureerd en gemakkelijk te lezen zijn, zelfs als ze als tekstbestanden zijn opgeslagen. Aspose.Words voor .NET biedt robuuste tools voor documentmanipulatie, en het beheersen van deze functies kan uw documentverwerkingsworkflows aanzienlijk verbeteren.
 
-### Veel Gestelde Vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, bewerken en manipuleren van Word-documenten in een C#-toepassing. Het biedt veel functies voor woordenverwerking met Word-documenten, waaronder de mogelijkheid om één spatie per niveau te gebruiken voor het inspringen van lijsten.
+### Kan ik naast spaties ook andere tekens gebruiken voor het inspringen van de lijst?
+ Ja, u kunt verschillende tekens opgeven voor het inspringen van de lijst door de`Character` eigendom in`TxtSaveOptions`.
 
-#### Vraag: Hoe kan ik één spatie per niveau gebruiken voor het inspringen van lijsten met Aspose.Words voor .NET?
-U kunt één spatie per niveau gebruiken voor het inspringen van de lijst door deze stappen te volgen:
+### Hoe pas ik opsommingstekens toe in plaats van getallen in lijsten?
+ Gebruik`ListFormat.ApplyBulletDefault()` in plaats van`ApplyNumberDefault()` om een lijst met opsommingstekens te maken.
 
- Maak een nieuw document met behulp van de`Document` klas.
+### Kan ik het aantal spaties voor inspringing dynamisch aanpassen?
+ Ja, u kunt de`ListIndentation.Count` eigenschap om het aantal spaties in te stellen op basis van uw vereisten.
 
- Gebruik de`DocumentBuilder`class om inhoud aan het document toe te voegen en een lijst met meerdere inspringingsniveaus te maken.
+### Is het mogelijk om de inspringing van de lijst te wijzigen nadat het document is gemaakt?
+Ja, u kunt de lijstopmaak en de inspringingsinstellingen op elk gewenst moment wijzigen voordat u het document opslaat.
 
- Nadat u de inhoud hebt toegevoegd en de lijstinspringing hebt geconfigureerd, gebruikt u de`TxtSaveOptions` klasse en stel de`ListIndentation.Count` eigenschap aan het aantal inspringingsniveaus en de`ListIndentation.Character` eigendom op de ruimte (`' '`) gebruiken.
-
- Sla het document op met de opgegeven opties met behulp van de`Save` werkwijze van de`Document` klas.
-
-#### Vraag: Ondersteunt Aspose.Words andere tekens voor het inspringen van lijsten?
-Ja, Aspose.Words ondersteunt andere tekens voor het inspringen van lijsten. U kunt niet-witruimtetekens gebruiken, zoals tabs (`'\t'` ) of andere speciale tekens, door de`ListIndentation.Character` eigenschap naar het gewenste karakter.
-
-#### Vraag: Is het mogelijk om het aantal spaties per niveau voor het inspringen van de lijst aan te passen?
- Ja, u kunt het aantal spaties per niveau voor het inspringen van de lijst aanpassen door de waarde van de`ListIndentation.Count` eigendom in de`TxtSaveOptions` klas. U kunt voor elk inspringingsniveau het gewenste aantal spaties opgeven.
-
-#### Vraag: Welke andere functies biedt Aspose.Words voor lijstbeheer?
-Aspose.Words biedt veel functies voor het beheren van lijsten in Word-documenten. U kunt genummerde lijsten of lijsten met opsommingstekens maken, inspringingsniveaus instellen, de stijl van lijsten aanpassen, lijstitems toevoegen en meer.
+### Welke andere documentformaten ondersteunen instellingen voor het inspringen van lijsten?
+Naast tekstbestanden kunnen instellingen voor het inspringen van lijsten worden toegepast op andere formaten zoals DOCX, PDF en HTML bij gebruik van Aspose.Words.

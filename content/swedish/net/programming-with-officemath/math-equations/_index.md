@@ -13,7 +13,7 @@ url: /sv/net/programming-with-officemath/math-equations/
 
 ## Förutsättningar
 
-Innan vi hoppar in i de små detaljerna, låt oss se till att du har allt du behöver följa tillsammans med den här handledningen:
+Innan vi hoppar in i de nitty-gritty detaljerna, låt oss se till att du har allt du behöver följa tillsammans med den här handledningen:
 
 1.  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Om du inte har det än så kan du[ladda ner den här](https://releases.aspose.com/words/net/).
 2. Visual Studio: Alla versioner av Visual Studio kommer att fungera, men se till att den är installerad och redo att användas.

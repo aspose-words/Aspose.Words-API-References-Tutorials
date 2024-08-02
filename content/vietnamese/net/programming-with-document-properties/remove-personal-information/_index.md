@@ -66,7 +66,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ trong vài bước đơn giản, chúng tôi đã xóa thông tin cá nhân khỏi tài liệu bằng Aspose.Words for .NET. Đây chỉ là phần nổi của tảng băng chìm khi nói đến những gì bạn có thể làm với thư viện mạnh mẽ này. Cho dù bạn đang tự động hóa báo cáo, quản lý khối lượng lớn tài liệu hay chỉ đơn giản là làm cho quy trình làm việc của bạn mượt mà hơn một chút, Aspose.Words đều có thể giúp bạn.
+Và bạn có nó rồi đấy! Chỉ trong vài bước đơn giản, chúng tôi đã xóa thông tin cá nhân khỏi tài liệu bằng Aspose.Words for .NET. Đây chỉ là phần nổi của tảng băng trôi khi nói đến những gì bạn có thể làm với thư viện mạnh mẽ này. Cho dù bạn đang tự động hóa báo cáo, quản lý khối lượng lớn tài liệu hay chỉ đơn giản là làm cho quy trình làm việc của bạn mượt mà hơn một chút, Aspose.Words đều có thể giúp bạn.
 
 ## Câu hỏi thường gặp
 

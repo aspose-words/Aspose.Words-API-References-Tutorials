@@ -11,7 +11,7 @@ url: /ko/net/document-protection/remove-read-only-restriction/
 
 올바른 도구와 방법을 모른다면 Word 문서에서 읽기 전용 제한을 제거하는 것이 매우 어려울 수 있습니다. 다행히도 .NET용 Aspose.Words는 이를 달성할 수 있는 원활한 방법을 제공합니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 읽기 전용 제한을 제거하는 과정을 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 단계별 가이드를 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

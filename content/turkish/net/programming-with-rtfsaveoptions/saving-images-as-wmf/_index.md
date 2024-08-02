@@ -17,7 +17,7 @@ Koda geçmeden önce, sorunsuz bir şekilde takip etmeniz gereken her şeye sahi
 
 -  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Değilse, adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Visual Studio gibi bir C# geliştirme ortamına sahip olmalısınız.
-- Temel C# Bilgisi: C# programlamanın temel bir anlayışı faydalı olacaktır.
+- Temel C# Bilgisi: C# programlamanın temel bir anlayışı yararlı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 

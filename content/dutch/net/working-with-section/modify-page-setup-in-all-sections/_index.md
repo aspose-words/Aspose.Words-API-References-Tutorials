@@ -16,7 +16,7 @@ Hallo daar! Als u ooit pagina-instellingen in meerdere secties in een Word-docum
 Voordat we erin duiken, zorgen we ervoor dat we alles hebben wat we nodig hebben:
 
 1. Basiskennis van C#: Bekendheid met de syntaxis en concepten van C# is noodzakelijk.
-2.  Aspose.Words voor .NET: dat kan[download het hier](https://releases.aspose.com/words/net/) . Als je het gewoon probeert, a[gratis proefperiode](https://releases.aspose.com/) is beschikbaar.
+2.  Aspose.Words voor .NET: dat kan[download het hier](https://releases.aspose.com/words/net/) Als je het gewoon probeert, a[gratis proefperiode](https://releases.aspose.com/) is beschikbaar.
 3. Visual Studio: Elke recente versie zou moeten werken, maar voor de beste ervaring wordt de nieuwste versie aanbevolen.
 4. .NET Framework: zorg ervoor dat het op uw systeem is geïnstalleerd.
 
@@ -62,7 +62,7 @@ builder.Writeln("Section 4");
 
 In deze stap voegen we vier secties toe aan ons document. Elke sectie wordt aan het document toegevoegd en bevat een regel tekst.
 
-## Stap 3: Pagina-instelling begrijpen
+## Stap 3: Pagina-instellingen begrijpen
 
 Voordat we de pagina-instelling wijzigen, is het essentieel om te begrijpen dat elke sectie in een Word-document zijn eigen unieke pagina-instelling kan hebben. Deze flexibiliteit maakt diverse opmaak binnen één document mogelijk.
 
@@ -89,7 +89,7 @@ Deze coderegel slaat het document op in de opgegeven map met een duidelijke best
 
 ## Conclusie
 
-En daar heb je het! U hebt de pagina-instellingen voor alle secties in een Word-document met succes gewijzigd met Aspose.Words voor .NET. In deze zelfstudie leert u hoe u een document maakt, secties toevoegt en de pagina-instellingen uniform aanpast. Aspose.Words biedt een rijke reeks functies, dus voel je vrij om de[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde mogelijkheden.
+ En daar heb je het! U hebt de pagina-instellingen voor alle secties in een Word-document met succes gewijzigd met Aspose.Words voor .NET. In deze zelfstudie leert u hoe u een document maakt, secties toevoegt en de pagina-instellingen uniform aanpast. Aspose.Words biedt een rijke reeks functies, dus voel je vrij om de[API-documentatie](https://reference.aspose.com/words/net/) voor meer geavanceerde mogelijkheden.
 
 ## Veelgestelde vragen
 

@@ -2,89 +2,40 @@
 title: Lặp lại hàng trên các trang tiếp theo
 linktitle: Lặp lại hàng trên các trang tiếp theo
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách lặp lại các hàng trong bảng trên các trang tiếp theo trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách tạo tài liệu Word có các hàng tiêu đề bảng lặp lại bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn này để đảm bảo tài liệu được chuyên nghiệp và bóng bẩy.
 type: docs
 weight: 10
 url: /vi/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách lặp lại các hàng của bảng trên các trang tiếp theo của tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ làm theo hướng dẫn từng bước để hiểu mã và triển khai tính năng này. Đến cuối hướng dẫn này, bạn sẽ có thể chỉ định các hàng sẽ lặp lại trên các trang tiếp theo của bảng trong tài liệu Word của mình.
+Tạo tài liệu Word theo chương trình có thể là một nhiệm vụ khó khăn, đặc biệt khi bạn cần duy trì định dạng trên nhiều trang. Bạn đã bao giờ thử tạo một bảng trong Word và nhận ra rằng các hàng tiêu đề của bạn không lặp lại trên các trang tiếp theo chưa? Đừng sợ! Với Aspose.Words for .NET, bạn có thể dễ dàng đảm bảo rằng các tiêu đề bảng lặp lại trên mỗi trang, mang lại giao diện chuyên nghiệp và bóng bẩy cho tài liệu của bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để đạt được điều này bằng cách sử dụng các ví dụ mã đơn giản và giải thích chi tiết. Hãy đi sâu vào!
 
-## Bước 1: Thiết lập dự án
-1. Khởi chạy Visual Studio và tạo một dự án C# mới.
-2. Thêm tham chiếu đến thư viện Aspose.Words for .NET.
+## Điều kiện tiên quyết
 
-## Bước 2: Tạo tài liệu và khởi tạo trình tạo tài liệu
-Để bắt đầu Xử lý Từ bằng trình tạo tài liệu và tài liệu, hãy làm theo các bước sau:
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
-```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words for .NET: Bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+2. .NET Framework được cài đặt trên máy của bạn.
+3. Visual Studio hoặc bất kỳ IDE nào khác hỗ trợ phát triển .NET.
+4. Hiểu biết cơ bản về lập trình C#.
 
-// Tạo tài liệu
-Document doc = new Document();
+Đảm bảo bạn đã cài đặt Aspose.Words cho .NET và thiết lập môi trường phát triển của mình trước khi tiếp tục.
 
-// Khởi tạo trình tạo tài liệu
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## Nhập không gian tên
 
-Đảm bảo thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng đường dẫn thực tế đến thư mục tài liệu của bạn.
-
-## Bước 3: Xây dựng bảng với các hàng lặp lại
-Tiếp theo, chúng ta sẽ tạo một bảng có các hàng lặp lại trên các trang tiếp theo. Sử dụng mã sau đây:
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết vào dự án của mình. Thêm các lệnh sử dụng sau vào đầu tệp C# của bạn:
 
 ```csharp
-// Đầu bảng
-builder. StartTable();
-
-// Cấu hình các tham số dòng đầu tiên (dòng tiêu đề)
-builder.RowFormat.HeadingFormat = true;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.CellFormat.Width = 100;
-
-// Chèn ô đầu tiên của hàng đầu tiên
-builder. InsertCell();
-builder.Writeln("Header line 1");
-builder. EndRow();
-
-// Chèn ô thứ hai của hàng đầu tiên
-builder. InsertCell();
-builder.Writeln("Header line 2");
-builder. EndRow();
-
-// Cấu hình thông số các dòng sau
-builder.CellFormat.Width = 50;
-builder.ParagraphFormat.ClearFormatting();
-
-// Vòng lặp để chèn các ô vào các hàng sau
-for (int i = 0; i < 50; i++)
-{
-builder. InsertCell();
-builder.RowFormat.HeadingFormat = false;
-builder.Write("Text column 1");
-builder. InsertCell();
-builder.Write("Text column 2");
-builder. EndRow();
-}
-
-// Cuối bảng
-builder. EndTable();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Ở đây chúng tôi sử dụng trình tạo tài liệu để xây dựng một bảng có hai hàng tiêu đề và nhiều hàng dữ liệu. Các`RowFormat.HeadingFormat` các tham số được sử dụng để đánh dấu các hàng tiêu đề cần được lặp lại trên các trang tiếp theo.
+Các không gian tên này bao gồm các lớp và phương thức cần thiết để thao tác với các tài liệu và bảng Word.
 
-## Bước 4: Lưu tài liệu đã sửa đổi
-Cuối cùng là Mỹ
+## Bước 1: Khởi tạo tài liệu
 
-  cần lưu tài liệu đã sửa đổi với các hàng tiêu đề được lặp lại trên các trang tiếp theo của bảng. Sử dụng mã sau đây:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
-```
-
-Đảm bảo chỉ định đúng đường dẫn và tên tệp cho tài liệu đầu ra.
-
-### Mã nguồn mẫu cho các hàng lặp lại trên các trang tiếp theo bằng cách sử dụng Aspose.Words for .NET 
+ Trước tiên, hãy tạo một tài liệu Word mới và một`DocumentBuilder` để xây dựng bảng của chúng tôi.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -92,29 +43,79 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+ Mã này khởi tạo một tài liệu mới và một`DocumentBuilder` object, giúp xây dựng cấu trúc tài liệu.
+
+## Bước 2: Bắt đầu bảng và xác định các hàng tiêu đề
+
+Tiếp theo, chúng ta sẽ bắt đầu bảng và xác định các hàng tiêu đề mà chúng ta muốn lặp lại trên các trang tiếp theo.
+
+```csharp
 builder.StartTable();
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
+
 builder.InsertCell();
 builder.Writeln("Heading row 1");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Heading row 2");
 builder.EndRow();
+```
+
+ Ở đây, chúng ta bắt đầu một bảng mới, thiết lập`HeadingFormat`tài sản để`true` để chỉ ra rằng các hàng là tiêu đề và xác định căn chỉnh cũng như chiều rộng của các ô.
+
+## Bước 3: Thêm hàng dữ liệu vào bảng
+
+Bây giờ, chúng ta sẽ thêm nhiều hàng dữ liệu vào bảng của mình. Những hàng này sẽ không lặp lại trên các trang tiếp theo.
+
+```csharp
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 for (int i = 0; i < 50; i++)
 {
-	builder.InsertCell();
-	builder.RowFormat.HeadingFormat = false;
-	builder.Write("Column 1 Text");
-	builder.InsertCell();
-	builder.Write("Column 2 Text");
-	builder.EndRow();
+    builder.InsertCell();
+    builder.RowFormat.HeadingFormat = false;
+    builder.Write("Column 1 Text");
+    
+    builder.InsertCell();
+    builder.Write("Column 2 Text");
+    builder.EndRow();
 }
+```
+
+ Vòng lặp này chèn 50 hàng dữ liệu vào bảng, mỗi hàng có hai cột. Các`HeadingFormat` được đặt thành`false` cho những hàng này vì chúng không phải là hàng tiêu đề.
+
+## Bước 4: Lưu tài liệu
+
+Cuối cùng, chúng tôi lưu tài liệu vào thư mục được chỉ định.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
+Thao tác này sẽ lưu tài liệu với tên được chỉ định trong thư mục tài liệu của bạn.
+
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách lặp lại các hàng của bảng trên các trang tiếp theo của tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này và triển khai mã C# được cung cấp, bạn có thể chỉ định những dòng nào sẽ lặp lại theo nhu cầu cụ thể của mình trong tài liệu Word.
+
+Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn có thể tạo tài liệu Word có các bảng có hàng tiêu đề lặp lại trên các trang tiếp theo bằng cách sử dụng Aspose.Words cho .NET. Điều này không chỉ nâng cao khả năng đọc tài liệu của bạn mà còn đảm bảo hình thức nhất quán và chuyên nghiệp. Bây giờ, hãy tiếp tục và thử điều này trong các dự án của bạn!
+
+## Câu hỏi thường gặp
+
+### Tôi có thể tùy chỉnh thêm các hàng tiêu đề không?
+ Có, bạn có thể áp dụng định dạng bổ sung cho các hàng tiêu đề bằng cách sửa đổi các thuộc tính của`ParagraphFormat`, `RowFormat` , Và`CellFormat`.
+
+### Có thể thêm nhiều cột vào bảng không?
+ Tuyệt đối! Bạn có thể thêm bao nhiêu cột nếu cần bằng cách chèn thêm ô vào trong`InsertCell` phương pháp.
+
+### Làm cách nào tôi có thể làm cho các hàng khác lặp lại trên các trang tiếp theo?
+ Để lặp lại bất kỳ hàng nào, hãy đặt`RowFormat.HeadingFormat`tài sản để`true` cho hàng cụ thể đó.
+
+### Tôi có thể sử dụng phương pháp này cho các bảng hiện có trong tài liệu không?
+ Có, bạn có thể sửa đổi các bảng hiện có bằng cách truy cập chúng thông qua`Document` đối tượng và áp dụng định dạng tương tự.
+
+### Những tùy chọn định dạng bảng nào khác có sẵn trong Aspose.Words cho .NET?
+ Aspose.Words for .NET cung cấp nhiều tùy chọn định dạng bảng, bao gồm hợp nhất ô, cài đặt đường viền và căn chỉnh bảng. Kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.

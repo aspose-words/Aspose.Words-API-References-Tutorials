@@ -16,19 +16,19 @@ These tutorials will help developers master the essential techniques for Words P
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Get Distance Between Table Surrounding Text](./get-distance-between-table-surrounding-text/) | Step-by-step guide to get the distance between text and a table in a Word document using Aspose.Words for .NET. |
-| [Apply Outline Border](./apply-outline-border/) | Step-by-step guide to applying an outline border to a table using Aspose.Words for .NET. |
-| [Build Table With Borders](./build-table-with-borders/) | Step by step guide to building a table with borders using Aspose.Words for .NET. |
-| [Modify Row Formatting](./modify-row-formatting/) | Step-by-step guide to change table row formatting using Aspose.Words for .NET. |
-| [Apply Row Formatting](./apply-row-formatting/) | Step by step guide to apply row formatting to a table using Aspose.Words for .NET. |
-| [Set Cell Padding](./set-cell-padding/) | Step-by-step guide to setting table cell margins using Aspose.Words for .NET. |
-| [Modify Cell Formatting](./modify-cell-formatting/) | Step by step guide to change the formatting of a cell in a table using Aspose.Words for .NET. |
-| [Format Table And Cell With Different Borders](./format-table-and-cell-with-different-borders/) | Step by step guide to format table and cell with different borders using Aspose.Words for .NET. |
-| [Set Table Title And Description](./set-table-title-and-description/) | Step by step guide to set title and description of a table using Aspose.Words for .NET. |
-| [Allow Cell Spacing](./allow-cell-spacing/) | Step by step guide to allow cell spacing using Aspose.Words for .NET. |
-| [Build Table With Style](./build-table-with-style/) | Step-by-step guide to building a table with a custom style using Aspose.Words for .NET. |
-| [Expand Formatting On Cells And Row From Style](./expand-formatting-on-cells-and-row-from-style/) | Step-by-step guide to expand formatting to cells and rows from a table style using Aspose.Words for .NET. |
-| [Create Table Style](./create-table-style/) | Step-by-step guide to creating a custom table style using Aspose.Words for .NET. |
-| [Define Conditional Formatting](./define-conditional-formatting/) | Step by step guide to define conditional formatting in a table using Aspose.Words for .NET. |
-| [Set Table Cell Formatting](./set-table-cell-formatting/) | Step-by-step guide to setting table cell formatting using Aspose.Words for .NET. |
-| [Set Table Row Formatting](./set-table-row-formatting/) | Step-by-step guide to setting table row formatting using Aspose.Words for .NET. |
+| [Get Distance Between Table Surrounding Text](./get-distance-between-table-surrounding-text/) | Learn how to retrieve the distance between a table and the surrounding text in Word documents using Aspose.Words for .NET. Improve your document layout with this guide. |
+| [Apply Outline Border](./apply-outline-border/) | Learn how to apply an outline border to a table in Word using Aspose.Words for .NET. Follow our step-by-step guide for perfect table formatting. |
+| [Build Table With Borders](./build-table-with-borders/) | Learn how to build and customize table borders in Word documents using Aspose.Words for .NET. Follow our step-by-step guide for detailed instructions. |
+| [Modify Row Formatting](./modify-row-formatting/) | Learn how to modify row formatting in Word documents using Aspose.Words for .NET with our detailed step-by-step guide. Perfect for developers of all levels. |
+| [Apply Row Formatting](./apply-row-formatting/) | Learn how to apply row formatting in a Word document using Aspose.Words for .NET. Follow our step-by-step guide for detailed instructions. |
+| [Set Cell Padding](./set-cell-padding/) | Learn how to set cell padding in Word documents using Aspose.Words for .NET with our step-by-step guide. Improve your document's table formatting easily. |
+| [Modify Cell Formatting](./modify-cell-formatting/) | Learn how to modify cell formatting in Word documents using Aspose.Words for .NET with this detailed step-by-step guide. |
+| [Format Table And Cell With Different Borders](./format-table-and-cell-with-different-borders/) | Learn how to format tables and cells with different borders using Aspose.Words for .NET. Enhance your Word documents with customized table styles and cell shading. |
+| [Set Table Title And Description](./set-table-title-and-description/) | Learn how to set table titles and descriptions in Word documents using Aspose.Words for .NET. Follow our detailed, guide to enhance your document’s professionalism. |
+| [Allow Cell Spacing](./allow-cell-spacing/) | Learn how to allow cell spacing in a table using Aspose.Words for .NET with our detailed, guide. Perfect for developers looking to enhance their Word document formatting. |
+| [Build Table With Style](./build-table-with-style/) | Learn how to create and style tables in Word documents using Aspose.Words for .NET with this comprehensive step-by-step guide. |
+| [Expand Formatting On Cells And Row From Style](./expand-formatting-on-cells-and-row-from-style/) | Learn how to expand formatting on cells and rows from styles in Word documents using Aspose.Words for .NET. Step-by-step guide included. |
+| [Create Table Style](./create-table-style/) | Create and style tables in Word documents using Aspose.Words for .NET. Learn step-by-step to enhance your documents with professional table formatting. |
+| [Define Conditional Formatting](./define-conditional-formatting/) | Learn how to define conditional formatting in Word documents using Aspose.Words for .NET. Enhance your document's visual appeal and readability with our guide. |
+| [Set Table Cell Formatting](./set-table-cell-formatting/) | Enhance your Word documents with professional table cell formatting using Aspose.Words for .NET. This step-by-step guide simplifies the process for you. |
+| [Set Table Row Formatting](./set-table-row-formatting/) | Learn how to set table row formatting in Word documents using Aspose.Words for .NET with our guide. Perfect for creating well-formatted and professional documents. |

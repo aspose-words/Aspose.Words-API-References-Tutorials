@@ -2,77 +2,94 @@
 title: Håll ihop bordet
 linktitle: Håll ihop bordet
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du håller ihop ett bord i ett Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du förhindrar att tabeller delas över sidor i Word-dokument med Aspose.Words för .NET. Följ vår guide för att underhålla professionella, läsbara dokument.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/keep-table-together/
 ---
+## Introduktion
 
-I den här handledningen ska vi lära oss hur man håller ihop en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av den här handledningen kommer du att kunna behålla en tabell intakt utan att den delas över flera sidor i dina Word-dokument.
+Har du någonsin varit frustrerad när en tabell i ditt Word-dokument är uppdelad på två sidor? Det är som att din noggrant upplagda information plötsligt bestämde sig för att ta en paus halvvägs! Att hålla ihop tabeller på en sida är avgörande för läsbarhet och presentation. Oavsett om det är för en rapport, ett projektförslag eller bara ett personligt dokument, kan det vara ganska jobbigt att ha uppdelade tabeller. Tur för oss, Aspose.Words för .NET har ett smart sätt att lösa detta problem. I den här handledningen går vi igenom stegen för att hålla dina bord intakta och ser skarpa ut. Låt oss dyka in!
 
-## Steg 1: Projektinställning
-1. Starta Visual Studio och skapa ett nytt C#-projekt.
-2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
+## Förutsättningar
 
-## Steg 2: Ladda dokumentet och hämta tabellen
-För att starta ordbehandling med tabellen måste vi ladda dokumentet och hämta tabellen vi vill behålla tillsammans. Följ dessa steg:
+Innan vi börjar, se till att du har följande:
+
+1.  Aspose.Words för .NET - Om du inte har installerat det ännu kan du ladda ner det från[här](https://releases.aspose.com/words/net/).
+2. Ett Word-dokument med en tabell - Vi kommer att arbeta med ett exempeldokument som har en tabell som spänner över flera sidor.
+3. Grundläggande kunskaper om C# - Denna handledning förutsätter att du har en grundläggande förståelse för C#-programmering.
+
+## Importera namnområden
+
+Till att börja med, låt oss importera de nödvändiga namnrymden. Detta ger oss tillgång till de klasser och metoder vi behöver från Aspose.Words för .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Låt oss dela upp processen i lättsmälta steg. Vi börjar med att ladda vårt dokument och avslutar med att spara det uppdaterade dokumentet där tabellen stannar ihop.
+
+## Steg 1: Ladda dokumentet
+
+ För att arbeta med ett Word-dokument måste vi först ladda det. Vi kommer att använda`Document` klass för detta.
 
 ```csharp
 // Sökväg till din dokumentkatalog
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Ladda dokumentet
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
-
-// Hämta bordet
-Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
+## Steg 2: Gå till tabellen
 
-## Steg 3: Aktivera alternativet "KeepWithNext".
-För att hålla ihop tabellen och förhindra att den delas upp över flera sidor, måste vi aktivera alternativet "KeepWithNext" för varje stycke i tabellen förutom de sista styckena i den sista raden i tabellen. Använd följande kod:
+Därefter måste vi få det bord vi vill hålla ihop. Vi antar att det är den första tabellen i dokumentet.
 
 ```csharp
-foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Steg 3: Ställ in KeepWithNext för stycken
+
+ För att förhindra att tabellen delas över sidor måste vi ställa in`KeepWithNext` egenskap för varje stycke i tabellen, förutom de sista styckena i den sista raden.
+
+```csharp
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-cell.EnsureMinimum();
-foreach(Paragraph para in cell.Paragraphs)
-if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
-para.ParagraphFormat.KeepWithNext = true;
+    cell.EnsureMinimum();
+    foreach (Paragraph para in cell.Paragraphs)
+    {
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
+    }
 }
 ```
 
-Här går vi igenom varje cell i tabellen och aktiverar alternativet "KeepWithNext" för varje stycke i cellen förutom de sista styckena i den sista raden i tabellen.
+## Steg 4: Spara dokumentet
 
-## Steg 4: Spara det ändrade dokumentet
-Slutligen måste vi spara det ändrade dokumentet med tabellen sammanhållen. Använd följande kod:
+Slutligen sparar vi det uppdaterade dokumentet. Detta kommer att tillämpa våra ändringar och säkerställa att tabellen förblir tillsammans på en sida.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
-Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
-
-### Exempel på källkod för Keep Table Together med Aspose.Words för .NET 
-
-```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table spanning two pages.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Vi måste aktivera KeepWithNext för varje stycke i tabellen för att förhindra att den bryts över en sida,
-	//förutom de sista styckena i den sista raden i tabellen.
-	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
-	{
-		cell.EnsureMinimum();
-		foreach (Paragraph para in cell.Paragraphs)
-			if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
-				para.ParagraphFormat.KeepWithNext = true;
-	}
-	doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
-```
-
 ## Slutsats
-I den här handledningen lärde vi oss hur man håller ihop en tabell i ett Word-dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden och implementera den medföljande C#-koden kan du behålla en tabell intakt och förhindra att den delas upp på flera sidor i dina dokument. Den här funktionen ger dig mer kontroll över utseendet och layouten på dina tabeller i dina dokument.
+
+Och där har du det! Med bara några rader kod kan du förhindra att dina tabeller delas över sidor i dina Word-dokument. Denna enkla men effektiva lösning säkerställer att dina bord förblir snygga och professionella, vilket förbättrar läsbarheten för dina dokument. Aspose.Words för .NET gör det enkelt att hantera sådana formateringsproblem, vilket gör att du kan fokusera på att skapa bra innehåll.
+
+## FAQ's
+
+### Kan jag hålla flera tabeller tillsammans med den här metoden?  
+Ja, du kan tillämpa samma logik på flera tabeller genom att iterera genom varje tabell i ditt dokument.
+
+### Vad händer om mitt bord är för stort för att få plats på en sida?  
+Om en tabell är för stor för att få plats på en enda sida spänner den fortfarande över sidorna. Denna metod säkerställer att mindre bord förblir intakta utan att delas.
+
+### Finns det något sätt att automatisera detta för alla tabeller i ett dokument?  
+ Ja, du kan gå igenom alla tabeller i ditt dokument och använda`KeepWithNext` egendom till varje stycke.
+
+### Behöver jag en betald licens för Aspose.Words för .NET?  
+Du kan börja med en gratis provperiod från[här](https://releases.aspose.com/), men för full funktionalitet rekommenderas en betald licens.
+
+### Kan jag använda annan formatering på tabellen samtidigt som jag håller ihop den?  
+Absolut! Du kan formatera din tabell efter behov samtidigt som du ser till att den förblir ihop på en sida.

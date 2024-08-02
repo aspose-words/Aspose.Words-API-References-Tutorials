@@ -2,7 +2,7 @@
 title: 使用 Aspose.Words Python 記錄表格樣式和格式
 linktitle: 文件表格樣式和格式
 second_title: Aspose.Words Python 文件管理 API
-description: 了解如何使用 Aspose.Words for Python 設定文件表格的樣式和格式。透過逐步指南和程式碼範例建立、自訂和匯出表格。立即增強您的文件示範！
+description: 了解如何使用 Aspose.Words for Python 設定文件表格的樣式和格式。透過逐步指南和程式碼範例建立、自訂和匯出表。立即增強您的文件示範！
 type: docs
 weight: 12
 url: /zh-hant/python-net/tables-and-formatting/document-table-styles-formatting/
@@ -135,7 +135,7 @@ Aspose.Words for Python 提供了一系列樣式選項，使您的表單在視�
     row.row_format.height_rule = aspose.words.HeightRule.AUTO
     ```
 
-2. 調整列寬：自動調整列寬以適合內容。
+2. 調整列寬：自動調整列寬以適應內容。
 
     ```python
     table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)

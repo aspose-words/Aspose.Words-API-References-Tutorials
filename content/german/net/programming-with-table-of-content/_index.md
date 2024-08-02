@@ -16,5 +16,5 @@ Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials helfen I
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Inhaltsverzeichnisstil im Word-Dokument ändern](./change-style-of-toc-level/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ganz einfach den Stil einer Inhaltsverzeichnisebene in einem Word-Dokument ändern können. |
-| [Inhaltsverzeichnis-Tabstopps im Word-Dokument ändern](./change-toc-tab-stops/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Registerkarten des Inhaltsverzeichnisses in einem Word-Dokument ändern. |
+| [Inhaltsverzeichnisstil im Word-Dokument ändern](./change-style-of-toc-level/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie den Inhaltsverzeichnisstil in Word-Dokumenten mit Aspose.Words für .NET ändern. Passen Sie Ihr Inhaltsverzeichnis mühelos an. |
+| [Inhaltsverzeichnis-Tabstopps im Word-Dokument ändern](./change-toc-tab-stops/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Inhaltsverzeichnis-Tabstopps in Word-Dokumenten ändern. Diese Schritt-für-Schritt-Anleitung hilft Ihnen beim Erstellen eines professionell aussehenden Inhaltsverzeichnisses. |

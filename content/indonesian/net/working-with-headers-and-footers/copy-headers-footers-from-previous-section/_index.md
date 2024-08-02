@@ -8,11 +8,11 @@ weight: 10
 url: /id/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 
-Menambahkan dan menyalin header dan footer di dokumen Anda dapat meningkatkan profesionalisme dan konsistensinya secara signifikan. Dengan Aspose.Words untuk .NET, tugas ini menjadi mudah dan sangat dapat disesuaikan. Dalam tutorial komprehensif ini, kami akan memandu Anda melalui proses menyalin header dan footer dari satu bagian ke bagian lain di dokumen Word Anda, langkah demi langkah.
+Menambahkan dan menyalin header dan footer di dokumen Anda dapat meningkatkan profesionalisme dan konsistensinya. Dengan Aspose.Words untuk .NET, tugas ini menjadi mudah dan sangat dapat disesuaikan. Dalam tutorial komprehensif ini, kami akan memandu Anda melalui proses menyalin header dan footer dari satu bagian ke bagian lain di dokumen Word Anda, langkah demi langkah.
 
 ## Prasyarat
 
-Sebelum kita mendalami tutorialnya, pastikan Anda memiliki hal-hal berikut:
+Sebelum kita mendalami tutorialnya, pastikan Anda memiliki hal berikut:
 
 -  Aspose.Words untuk .NET: Unduh dan instal dari[tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Seperti Visual Studio, untuk menulis dan menjalankan kode C# Anda.

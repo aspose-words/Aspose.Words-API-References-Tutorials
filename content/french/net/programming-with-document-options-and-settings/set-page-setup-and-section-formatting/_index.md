@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
 
 Et voila! En suivant ces étapes simples, vous avez appris à configurer l'orientation de la page, à ajuster les marges et à sélectionner les formats de papier à l'aide d'Aspose.Words for .NET. Ces fonctionnalités vous permettent de créer par programmation des documents bien structurés et formatés de manière professionnelle.
 
-Que vous travailliez sur un petit projet ou que vous traitiez des documents à grande échelle, la maîtrise de ces configurations de base peut améliorer considérablement la présentation et la convivialité de vos documents. Plongez plus profondément dans le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour des fonctionnalités plus avancées et des options de personnalisation.
+Que vous travailliez sur un petit projet ou que vous traitiez un document à grande échelle, la maîtrise de ces configurations de base peut améliorer considérablement la présentation et la convivialité de vos documents. Plongez plus profondément dans le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour des fonctionnalités plus avancées et des options de personnalisation.
 
 ## FAQ
 

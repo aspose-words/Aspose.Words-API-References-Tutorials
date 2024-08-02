@@ -22,6 +22,6 @@ Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh ng
 | [Xóa nhận xét trong tệp PDF](./remove-comments-in-pdf/) | Xóa nhận xét trong tệp PDF bằng Aspose.Words cho .NET. |
 | [Hiển thị các bản sửa đổi trong bong bóng](./show-revisions-in-balloons/) | Hiển thị các bản sửa đổi dưới dạng bong bóng với Aspose.Words for .NET. |
 | [Nhận thông tin chi tiết về nhóm sửa đổi](./get-revision-group-details/) | Nhận thông tin chi tiết về nhóm sửa đổi trong tài liệu Word bằng Aspose.Words for .NET. |
-| [Truy cập phiên bản sửa đổi](./access-revised-version/) | Truy cập phiên bản sửa đổi của tài liệu Word bằng Aspose.Words for .NET. |
+| [Truy cập phiên bản sửa đổi](./access-revised-version/) | Truy cập phiên bản sửa đổi của tài liệu Word bằng Aspose.Words cho .NET. |
 | [Di chuyển nút trong tài liệu được theo dõi](./move-node-in-tracked-document/) | Di chuyển các nút trong tài liệu được theo dõi bằng Aspose.Words for .NET. |
 | [Sửa đổi hình dạng](./shape-revision/) | Sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words cho .NET. |

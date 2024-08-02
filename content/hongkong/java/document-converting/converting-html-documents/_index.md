@@ -88,7 +88,7 @@ try {
 
 絕對地！ Aspose.Words 旨在有效處理大規模文件處理任務，使其成為企業級應用程式的可靠選擇。
 
-### 使用 Aspose.Words 有任何授權要求嗎？
+### 使用 Aspose.Words 是否有任何授權要求？
 
 是的，Aspose.Words 需要有效的商業用途授權。您可以從 Aspose 的網站取得許可證。
 

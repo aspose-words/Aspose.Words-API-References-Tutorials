@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/remove-content/remove-table-of-contents/
 ---
-## Eliminar tabla de contenido en un documento de Word usando Aspose.Words para .NET
+## Introducción
 
 ¿Está cansado de lidiar con una tabla de contenido (TOC) no deseada en sus documentos de Word? Todos hemos pasado por eso; a veces, la TOC simplemente no es necesaria. Por suerte para ti, Aspose.Words para .NET facilita la eliminación de un TOC mediante programación. En este tutorial, te guiaré a través del proceso paso a paso, para que puedas dominarlo en poco tiempo. ¡Vamos a sumergirnos de lleno!
 
@@ -41,7 +41,7 @@ Antes de que podamos manipular su documento, debemos definir dónde se encuentra
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta a su carpeta de documentos. Aquí es donde reside su archivo de Word.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta a su carpeta de documentos. Aquí es donde reside su archivo de Word.
 
 ## Paso 2: cargue el documento
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Esto es lo que está pasando:
 - `doc.Range.Fields`: Accede a todos los campos del documento.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: Esto filtra los campos para encontrar solo aquellos que son TOC.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Esto filtra los campos para encontrar solo aquellos que son TOC.
 - `.ToList().ForEach(f => f.Remove())`: Esto convierte los campos filtrados en una lista y elimina cada uno.
 
 ## Paso 4: guarde el documento modificado
@@ -83,22 +83,22 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Preguntas frecuentes
 
-### 1. ¿Qué es Aspose.Words para .NET?
+### ¿Qué es Aspose.Words para .NET?
 
 Aspose.Words para .NET es una biblioteca .NET sólida para la manipulación de documentos, que permite a los desarrolladores crear, modificar y convertir documentos de Word mediante programación.
 
-### 2. ¿Puedo utilizar Aspose.Words gratis?
+### ¿Puedo utilizar Aspose.Words gratis?
 
  Sí, puedes usar Aspose.Words con un[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
-### 3. ¿Es posible eliminar otros campos usando Aspose.Words?
+### ¿Es posible eliminar otros campos usando Aspose.Words?
 
 ¡Absolutamente! Puede eliminar cualquier campo especificando su tipo en la condición de filtro.
 
-### 4. ¿Necesito Visual Studio para usar Aspose.Words?
+### ¿Necesito Visual Studio para usar Aspose.Words?
 
 Si bien se recomienda encarecidamente Visual Studio para facilitar el desarrollo, puede utilizar cualquier IDE que admita .NET.
 
-### 5. ¿Dónde puedo encontrar más información sobre Aspose.Words?
+### ¿Dónde puedo encontrar más información sobre Aspose.Words?
 
  Para obtener documentación más detallada, visite el[Aspose.Words para la documentación de la API .NET](https://reference.aspose.com/words/net/).

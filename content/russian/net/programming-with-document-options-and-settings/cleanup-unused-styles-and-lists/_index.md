@@ -99,4 +99,4 @@ Aspose.Words for .NET — это мощная библиотека, котора
  Да, для полной функциональности Aspose.Words for .NET требуется лицензия. Вы можете получить[временная лицензия](https://purchase.aspose.com/temporary-license) или[купить один](https://purchase.aspose.com/buy).
 
 ### Где я могу найти дополнительную информацию и поддержку?
- Вы можете найти подробную документацию[здесь](https://reference.aspose.com/words/net/) и получить поддержку от[Aspose форум](https://forum.aspose.com/c/words/8).
+ Вы можете найти подробную документацию[здесь](https://reference.aspose.com/words/net/) и получить поддержку от[Форум Aspose](https://forum.aspose.com/c/words/8).

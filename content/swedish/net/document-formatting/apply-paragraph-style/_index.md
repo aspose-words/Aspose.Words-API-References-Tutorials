@@ -44,7 +44,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Skapa ett nytt dokument
 
-Låt oss nu skapa ett nytt dokument. Det är som att öppna en tom duk.
+Låt oss nu skapa ett nytt dokument. Det här är som att öppna en tom duk.
 
 ```csharp
 Document doc = new Document();

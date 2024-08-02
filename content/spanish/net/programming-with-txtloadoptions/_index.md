@@ -16,6 +16,6 @@ Al utilizar Aspose.Words, puede automatizar eficazmente las tareas de procesamie
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Detectar numeración con espacios en blanco](./detect-numbering-with-whitespaces/) | Aprenda a detectar números de lista con espacios en blanco en Aspose.Words para .NET. Mejore la estructura de sus documentos con facilidad. |
-| [Opciones de manejo de espacios](./handle-spaces-options/) | Aprenda a administrar espacios en sus documentos TXT con Aspose.Words para .NET. Elimine espacios innecesarios y mejore la legibilidad. |
-| [Dirección del texto del documento](./document-text-direction/) | Aprenda a especificar la dirección del texto en sus documentos con Aspose.Words para .NET. Mejorar la visualización de idiomas de derecha a izquierda. Accede ahora al tutorial completo. |
+| [Detectar numeración con espacios en blanco](./detect-numbering-with-whitespaces/) | Descubra cómo utilizar Aspose.Words para .NET para detectar numeraciones con espacios en blanco en documentos de texto sin formato y asegurarse de que sus listas se reconozcan correctamente. |
+| [Opciones de manejo de espacios](./handle-spaces-options/) | Aprenda a manejar espacios iniciales y finales en documentos de texto con Aspose.Words para .NET. Este tutorial proporciona una guía para limpiar el formato de texto. |
+| [Dirección del texto del documento](./document-text-direction/) | Aprenda cómo configurar la dirección del texto del documento en Word usando Aspose.Words para .NET con esta guía paso a paso. Perfecto para manejar idiomas de derecha a izquierda. |

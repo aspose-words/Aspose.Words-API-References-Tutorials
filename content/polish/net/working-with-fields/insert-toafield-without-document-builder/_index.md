@@ -2,123 +2,125 @@
 title: Wstaw pole TOA bez narzędzia do tworzenia dokumentów
 linktitle: Wstaw pole TOA bez narzędzia do tworzenia dokumentów
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku, jak wstawić pole TOA bez Konstruktora dokumentów przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawić pole TOA bez użycia narzędzia do tworzenia dokumentów w Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby skutecznie zarządzać cytatami prawnymi.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## Wstęp
 
-Oto przewodnik krok po kroku wyjaśniający poniższy kod źródłowy C#, który wykorzystuje funkcję „Wstawianie pola TOA” w Aspose.Words dla .NET. Uważnie postępuj zgodnie z każdym krokiem, aby uzyskać pożądane rezultaty.
+Tworzenie pola tabeli źródeł (TOA) w dokumencie programu Word może przypominać układanie złożonej układanki. Jednak przy pomocy Aspose.Words dla .NET proces staje się płynny i prosty. W tym artykule przeprowadzimy Cię przez kolejne etapy wstawiania pola TOA bez korzystania z narzędzia do tworzenia dokumentów, co ułatwi Ci zarządzanie cytatami i odniesieniami prawnymi w dokumentach programu Word.
 
-## Krok 1: Konfiguracja katalogu dokumentów
+## Warunki wstępne
 
-W podanym kodzie musisz określić katalog swoich dokumentów. Zastąp wartość „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką do katalogu dokumentów.
+Zanim zagłębisz się w samouczek, omówmy najważniejsze rzeczy, których będziesz potrzebować:
+
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną najnowszą wersję. Można go pobrać z[Strona Aspose](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: IDE zgodne z platformą .NET, takie jak Visual Studio.
+- Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstawowej składni i pojęć języka C#.
+- Przykładowy dokument programu Word: Utwórz lub przygotuj przykładowy dokument, w którym chcesz wstawić pole TOA.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw z biblioteki Aspose.Words. Taka konfiguracja zapewnia dostęp do wszystkich klas i metod wymaganych do manipulowania dokumentami.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Krok 2: Tworzenie dokumentu i akapitu
+Podzielmy proces na proste, łatwe do wykonania kroki. Przeprowadzimy Cię przez każdy etap, wyjaśniając, co robi każdy fragment kodu i jak przyczynia się do tworzenia pola TOA.
 
-Zaczynamy od utworzenia nowego dokumentu i zainicjowania akapitu.
+## Krok 1: Zainicjuj dokument
+
+ Najpierw musisz utworzyć instancję`Document` klasa. Ten obiekt reprezentuje dokument programu Word, nad którym pracujesz.
 
 ```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## Krok 3: Wstawienie pola TA
+Ten kod inicjuje nowy dokument programu Word. Możesz o tym pomyśleć jako o utworzeniu pustego płótna, do którego dodasz swoją treść.
 
-Do wstawienia pola TA do akapitu używamy klasy FieldTA.
+## Krok 2: Utwórz i skonfiguruj pole TA
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## Krok 4: Dodanie akapitu do treści dokumentu
-
-Do treści dokumentu dodajemy akapit zawierający pole TA.
+Następnie dodamy pole TA (tabela źródeł). To pole zaznacza wpisy, które pojawią się w TOA.
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Krok 5: Tworzenie akapitu dla pola TOA
-
-Tworzymy nowy akapit dla pola TOA.
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## Krok 6: Wstawienie pola TOA
-
-Aby wstawić pole TOA do akapitu, używamy klasy FieldToa.
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## Krok 7: Dodanie akapitu do treści dokumentu
-
-Do treści dokumentu dodajemy akapit zawierający pole TOA.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Krok 8: Zaktualizuj pole TOA
-
- Na koniec nazywamy`Update()` metoda aktualizacji pola TOA.
-
-```csharp
-fieldToa.Update();
-```
-
-### Przykładowy kod źródłowy do wstawiania pola TOA bez Konstruktora dokumentów z Aspose.Words dla .NET
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
 // Chcemy wstawić pola TA i TOA w następujący sposób:
 // { TA \c 1 \l "Wartość 0" }
-// { TOA \c 1 }
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+Oto zestawienie:
+- Akapit para = nowy akapit (doc);: Tworzy nowy akapit w dokumencie.
+-  FieldTA poleTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: Dodaje pole TA do akapitu. The`FieldType.FieldTOAEntry` określa, że jest to pole wejściowe TOA.
+- FieldTA.EntryCategory = "1";: Ustawia kategorię wpisu. Jest to przydatne do kategoryzowania różnych typów wpisów.
+- FieldTA.LongCitation = "Wartość 0";: Określa długi tekst cytatu. To jest tekst, który pojawi się w TOA.
+- doc.FirstSection.Body.AppendChild(para);: Dołącza akapit z polem TA do treści dokumentu.
+
+## Krok 3: Dodaj pole TOA
+
+Teraz wstawimy rzeczywiste pole TOA, które kompiluje wszystkie wpisy TA w tabeli.
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### Często zadawane pytania
+W tym kroku:
+- FieldToa FieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);: Dodaje pole TOA do akapitu.
+- FieldToa.EntryCategory = "1";: Filtruje wpisy tak, aby zawierały tylko te oznaczone kategorią "1".
 
-#### P: Jak dostosować wygląd pola TOA wstawionego w dokumencie Word za pomocą Aspose.Words dla .NET?
+## Krok 4: Zaktualizuj pole TOA
 
- Odp.: Możesz dostosować wygląd wstawionego pola TOA, korzystając z właściwości pliku`FieldTOA` obiekt, aby określić opcje formatowania.
+Po wstawieniu pola TOA należy je zaktualizować, aby odzwierciedlało najnowsze wpisy.
 
-#### P: Czy mogę dodać wiele pól TOA w jednym dokumencie programu Word przy użyciu Aspose.Words dla .NET?
+```csharp
+fieldToa.Update();
+```
 
-Odp.: Tak, możesz dodać wiele pól TOA w jednym dokumencie programu Word przy użyciu Aspose.Words dla .NET. Po prostu powtórz kroki wstawiania dla każdego pola.
+Polecenie to odświeża pole TOA, zapewniając prawidłowe wyświetlenie wszystkich zaznaczonych wpisów w tabeli.
 
-#### P: Jak mogę sprawdzić, czy pole TOA zostało pomyślnie wstawione do dokumentu Word za pomocą Aspose.Words dla .NET?
+## Krok 5: Zapisz dokument
 
-Odp.: Aby sprawdzić, czy pole TOA zostało pomyślnie wstawione, możesz przeglądać zawartość dokumentu i wyszukiwać wystąpienia pól TOA.
+Na koniec zapisz dokument z nowo dodanym polem TOA.
 
-#### P: Czy wstawienie pola TOA bez użycia narzędzia DocumentBuilder wpływa na formatowanie dokumentu programu Word za pomocą Aspose.Words dla .NET?
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-Odp.: Wstawienie pola TOA bez użycia narzędzia DocumentBuilder nie ma bezpośredniego wpływu na formatowanie dokumentu programu Word. Jednak opcje formatowania pola TOA mogą mieć wpływ na ogólne formatowanie dokumentu.
+ Ta linia kodu zapisuje dokument w określonym katalogu. Pamiętaj o wymianie`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której chcesz zapisać plik.
+
+## Wniosek
+
+I masz to! Pomyślnie dodałeś pole TOA do dokumentu Word bez użycia narzędzia do tworzenia dokumentów. Wykonując poniższe kroki, możesz efektywnie zarządzać cytatami i tworzyć kompleksowe tabele autorytetów w swoich dokumentach prawnych. Aspose.Words dla .NET sprawia, że proces ten przebiega płynnie i wydajnie, zapewniając narzędzia do łatwej obsługi złożonych zadań związanych z dokumentami.
+
+## Często zadawane pytania
+
+### Czy mogę dodać wiele pól TA z różnymi kategoriami?
+ Tak, możesz dodać wiele pól TA z różnymi kategoriami, ustawiając`EntryCategory`odpowiednio własność.
+
+### Jak mogę dostosować wygląd TOA?
+Możesz dostosować wygląd TOA, modyfikując właściwości pola TOA, takie jak formatowanie wpisów i etykiety kategorii.
+
+### Czy możliwa jest automatyczna aktualizacja pola TOA?
+ Chociaż możesz ręcznie zaktualizować pole TOA za pomocą`Update` metoda Aspose.Words nie obsługuje obecnie automatycznych aktualizacji zmian w dokumentach.
+
+### Czy mogę programowo dodać pola TA w określonych częściach dokumentu?
+Tak, możesz dodać pola TA w określonych miejscach, wstawiając je w odpowiednich akapitach lub sekcjach.
+
+### Jak obsługiwać wiele pól TOA w jednym dokumencie?
+ Możesz zarządzać wieloma polami TOA, przypisując różne`EntryCategory` wartości i zapewnienie, że każde pole TOA filtruje wpisy na podstawie swojej kategorii.

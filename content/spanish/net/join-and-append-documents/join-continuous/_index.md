@@ -9,7 +9,7 @@ url: /es/net/join-and-append-documents/join-continuous/
 ---
 ## Introducción
 
-¿Está buscando fusionar dos documentos de Word en uno sin interrupciones? Aspose.Words para .NET ofrece una manera fantástica de lograr esto mediante el uso de la función Salto de sección continua. Este tutorial lo guiará paso a paso a través del proceso, asegurándole que pueda unir documentos fácilmente y sin ningún problema. ¡Vamos a sumergirnos!
+¿Está buscando fusionar dos documentos de Word en uno sin interrupciones? Aspose.Words para .NET ofrece una manera fantástica de lograr esto mediante el uso de la función Salto de sección continua. Este tutorial lo guiará paso a paso a través del proceso, asegurándose de que pueda unir documentos fácilmente y sin problemas. ¡Vamos a sumergirnos!
 
 ## Requisitos previos
 

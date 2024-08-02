@@ -46,7 +46,7 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de te
 
 #### Q : Comment puis-je mettre du texte en italique dans Aspose.Words ?
 
- R : Pour mettre du texte en italique dans Aspose.Words, vous pouvez utiliser le`Font.Italic` propriété du`Run`objet. Vous pouvez définir cette propriété sur`true` pour mettre en italique un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Italic=true` pour mettre en italique le texte contenu dans le`Run` objet.
+ R : Pour mettre du texte en italique dans Aspose.Words, vous pouvez utiliser le`Font.Italic` propriété du`Run` objet. Vous pouvez définir cette propriété sur`true` pour mettre en italique un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.Italic=true` pour mettre en italique le texte contenu dans le`Run` objet.
 
 #### Q : Est-il possible de mettre en italique plusieurs morceaux de texte dans un même paragraphe ?
 

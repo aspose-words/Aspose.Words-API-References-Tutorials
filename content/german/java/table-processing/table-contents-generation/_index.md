@@ -12,7 +12,7 @@ Sind Sie bereit, sich auf eine Reise zu begeben, um die Generierung von Inhaltsv
 
 ## Einführung
 
-Das Inhaltsverzeichnis (TOC) ist ein wesentlicher Bestandteil jedes gut strukturierten Dokuments. Es bietet den Lesern eine Orientierungshilfe, mit der sie problemlos durch lange Dokumente navigieren können. Aspose.Words für Java ist eine leistungsstarke API, die die Inhaltsverzeichniserstellung in Java-Anwendungen vereinfacht. In dieser Schritt-für-Schritt-Anleitung behandeln wir alles, was Sie wissen müssen, um Inhaltsverzeichnisse dynamisch mit Aspose.Words für Java zu erstellen.
+Das Inhaltsverzeichnis (TOC) ist ein wesentlicher Bestandteil jedes gut strukturierten Dokuments. Es bietet den Lesern eine Orientierungshilfe, mit der sie problemlos durch lange Dokumente navigieren können. Aspose.Words für Java ist eine leistungsstarke API, die die Inhaltsverzeichniserstellung in Java-Anwendungen vereinfacht. In dieser Schritt-für-Schritt-Anleitung behandeln wir alles, was Sie wissen müssen, um mit Aspose.Words für Java dynamisch Inhaltsverzeichnisse zu erstellen.
 
 ## Erste Schritte mit Aspose.Words für Java
 

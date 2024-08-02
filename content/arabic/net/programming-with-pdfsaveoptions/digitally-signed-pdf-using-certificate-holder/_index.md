@@ -2,7 +2,7 @@
 title: أضف التوقيع الرقمي إلى PDF باستخدام حامل الشهادة
 linktitle: أضف التوقيع الرقمي إلى PDF باستخدام حامل الشهادة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: قم بتأمين ملفات PDF الخاصة بك باستخدام التوقيع الرقمي باستخدام Aspose.Words for .NET. اتبع هذا الدليل المفصّل خطوة بخطوة لإضافة توقيع رقمي إلى ملفات PDF الخاصة بك بسهولة.
+description: قم بتأمين ملفات PDF الخاصة بك باستخدام التوقيع الرقمي باستخدام Aspose.Words for .NET. اتبع هذا الدليل خطوة بخطوة لإضافة توقيع رقمي إلى ملفات PDF الخاصة بك دون عناء.
 type: docs
 weight: 10
 url: /ar/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/

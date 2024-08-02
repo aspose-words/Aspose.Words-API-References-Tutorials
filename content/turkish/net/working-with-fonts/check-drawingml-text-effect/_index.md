@@ -80,7 +80,7 @@ C: Bir Word belgesindeki DrawingML metin efektinin rengini kontrol etmek için, 
 
 #### S: Birden çok bölüm içeren Word belgelerindeki metin efektlerini denetlemek mümkün mü?
 
-C: Evet, Aspose.Words, birden fazla bölüm içeren Word belgelerindeki metin efektlerinin kontrol edilmesine olanak sağlar. Belgenin her bölümünde gezinebilir ve her bölüm için ayrı ayrı metin efektlerine erişebilirsiniz.
+C: Evet, Aspose.Words, birden fazla bölüm içeren Word belgelerindeki metin efektlerinin kontrol edilmesine olanak tanır. Belgenin her bölümünde gezinebilir ve her bölüm için ayrı ayrı metin efektlerine erişebilirsiniz.
 
 #### S: Bir Word belgesindeki DrawingML metin efektinin opaklığını nasıl kontrol edebilirim?
 

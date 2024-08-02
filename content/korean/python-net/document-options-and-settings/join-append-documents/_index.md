@@ -12,7 +12,7 @@ url: /ko/python-net/document-options-and-settings/join-append-documents/
 
 Aspose.Words for Python은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 수정 및 조작할 수 있는 기능이 풍부한 라이브러리입니다. 문서를 쉽게 결합하고 추가하는 기능을 포함하여 다양한 기능을 제공합니다.
 
-## 전제조건
+## 전제 조건
 
 코드 예제를 살펴보기 전에 시스템에 Python이 설치되어 있는지 확인하세요. 또한 Aspose.Words에 대한 유효한 라이센스가 필요합니다. 아직 없으시다면 Aspose 웹사이트에서 받으실 수 있습니다.
 

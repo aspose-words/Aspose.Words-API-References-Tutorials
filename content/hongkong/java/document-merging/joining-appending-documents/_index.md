@@ -91,7 +91,7 @@ doc1.save("joined_document.docx");
 
 ### 使用 Aspose.Words 連接文件時有任何限制嗎？
 
-雖然 Aspose.Words 提供了強大的文件操作功能，但必須考慮文件的複雜性和大小，以確保最佳效能。
+雖然 Aspose.Words 提供強大的文件操作功能，但必須考慮文件的複雜性和大小，以確保最佳效能。
 
 ### 我需要支付授權費用才能使用 Aspose.Words for Java 嗎？
 

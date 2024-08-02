@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-properties/add-custom-document-properties
 ---
 ## Introduktion
 
-Hallå där! Dyker du in i Aspose.Words-världen för .NET och undrar hur du lägger till anpassade dokumentegenskaper till dina Word-filer? Nåväl, du har kommit till rätt ställe! Anpassade egenskaper kan vara otroligt användbara för att lagra ytterligare metadata som inte täcks av inbyggda egenskaper. Oavsett om det handlar om att auktorisera ett dokument, lägga till ett revisionsnummer eller till och med infoga specifika datum, har anpassade egenskaper täckt dig. I den här handledningen går vi igenom stegen för att sömlöst lägga till dessa egenskaper med Aspose.Words för .NET. Redo att börja? Låt oss dyka in!
+Hallå där! Dyker du in i Aspose.Words-världen för .NET och undrar hur du lägger till anpassade dokumentegenskaper till dina Word-filer? Nåväl, du har kommit till rätt ställe! Anpassade egenskaper kan vara otroligt användbara för att lagra ytterligare metadata som inte täcks av inbyggda egenskaper. Oavsett om det handlar om att auktorisera ett dokument, lägga till ett revisionsnummer eller till och med infoga specifika datum, har anpassade egenskaper täckt dig. I den här handledningen går vi igenom stegen för att sömlöst lägga till dessa egenskaper med Aspose.Words för .NET. Redo att komma igång? Låt oss dyka in!
 
 ## Förutsättningar
 
@@ -81,7 +81,7 @@ customDocumentProperties.Add("Authorized By", "John Smith");
 
 Här lägger vi till en egenskap som heter "Authorized By" med värdet "John Smith". Byt gärna ut "John Smith" med något annat namn du föredrar.
 
-## Steg 6: Lägga till en datumegenskap
+## Steg 6: Lägga till en Date Property
 
 Låt oss lägga till en egenskap för att lagra auktoriseringsdatumet. Detta hjälper till att hålla reda på när dokumentet auktoriserades.
 

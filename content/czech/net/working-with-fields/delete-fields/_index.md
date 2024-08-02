@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/delete-fields/
 ---
-
 ## Úvod
 
 V oblasti zpracování a automatizace dokumentů vyniká Aspose.Words for .NET jako výkonná sada nástrojů pro vývojáře, kteří chtějí programově manipulovat, vytvářet a spravovat dokumenty Word. Tento výukový program vás provede procesem využití Aspose.Words for .NET k odstranění polí v dokumentech aplikace Word. Ať už jste zkušený vývojář nebo s vývojem .NET teprve začínáte, tato příručka rozebere kroky potřebné k efektivnímu odstranění polí z vašich dokumentů pomocí jasných, stručných příkladů a vysvětlení.
@@ -44,13 +43,13 @@ Ujistěte se, že máte nový nebo existující projekt C# v sadě Visual Studio
 ## Krok 2: Přidejte odkaz Aspose.Words
 
 Pokud jste to ještě neudělali, přidejte odkaz na Aspose.Words ve svém projektu sady Visual Studio. Můžete to udělat takto:
-   - Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
-   - Výběr "Spravovat balíčky NuGet..."
-   - Vyhledání "Aspose.Words" a jeho instalace do vašeho projektu.
+- Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
+- Výběr "Spravovat balíčky NuGet..."
+- Vyhledání "Aspose.Words" a jeho instalace do vašeho projektu.
 
 ## Krok 3: Připravte si dokument
 
- Umístěte dokument, který chcete upravit (např.`your-document.docx`) ve vašem projektovém adresáři nebo k němu uveďte úplnou cestu.
+ Umístěte dokument, který chcete upravit (např.`your-document.docx`ve vašem projektovém adresáři nebo k němu uveďte úplnou cestu.
 
 ## Krok 4: Inicializujte objekt dokumentu Aspose.Words
 
@@ -86,19 +85,19 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 Závěrem lze říci, že tento tutoriál poskytuje komplexní návod, jak efektivně odstranit pole z dokumentů aplikace Word pomocí Aspose.Words for .NET. Dodržením těchto kroků můžete zautomatizovat proces odstraňování polí ve vašich aplikacích a zvýšit tak produktivitu a efektivitu úkolů správy dokumentů.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Mohu odebrat konkrétní typy polí místo všech polí?
-   - Ano, podmínku smyčky můžete upravit tak, abyste před jejich odstraněním zkontrolovali konkrétní typy polí.
+Ano, podmínku smyčky můžete upravit tak, abyste před jejich odstraněním zkontrolovali konkrétní typy polí.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
-   - Ano, Aspose.Words podporuje .NET Core, což vám umožňuje používat jej v multiplatformních aplikacích.
+Ano, Aspose.Words podporuje .NET Core, což vám umožňuje používat jej v multiplatformních aplikacích.
 
 ### Jak mohu řešit chyby při zpracování dokumentů pomocí Aspose.Words?
-   - Bloky try-catch můžete použít ke zpracování výjimek, které mohou nastat během operací zpracování dokumentů.
+Bloky try-catch můžete použít ke zpracování výjimek, které mohou nastat během operací zpracování dokumentů.
 
 ### Mohu odstranit pole, aniž bych změnil další obsah v dokumentu?
-   - Ano, zde uvedená metoda konkrétně cílí pouze na pole a ostatní obsah ponechává beze změny.
+Ano, zde uvedená metoda konkrétně cílí pouze na pole a ostatní obsah ponechává beze změny.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words?
-   -  Navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/) a[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) pro další pomoc.
+ Navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/) a[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) pro další pomoc.

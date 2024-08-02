@@ -2,42 +2,79 @@
 title: Tabel Terformat
 linktitle: Tabel Terformat
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat tabel berformat dalam dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara membuat dan memformat tabel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah mendetail ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/formatted-table/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kita akan mempelajari cara membuat tabel berformat dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan mengikuti panduan langkah demi langkah untuk memahami kode dan menerapkan fitur ini. Di akhir tutorial ini, Anda akan dapat membuat tabel dengan format khusus di dokumen Word Anda secara terprogram.
+Membuat dan memformat tabel dalam dokumen Word secara terprogram mungkin tampak seperti tugas yang menakutkan, namun dengan Aspose.Words untuk .NET, hal ini menjadi mudah dan mudah dikelola. Dalam tutorial ini, kami akan memandu Anda tentang cara membuat tabel berformat di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan membahas semuanya mulai dari menyiapkan lingkungan Anda hingga menyimpan dokumen Anda dengan tabel yang diformat dengan indah.
 
-## Langkah 1: Pengaturan Proyek
-1. Luncurkan Visual Studio dan buat proyek C# baru.
-2. Tambahkan referensi ke perpustakaan Aspose.Words untuk .NET.
+## Prasyarat
 
-## Langkah 2: Membuat dokumen dan menginisialisasi pembuat dokumen
-Untuk mulai membuat tabel yang diformat, kita perlu membuat dokumen baru dan menginisialisasi pembuat dokumen. Ikuti langkah ini:
+Sebelum mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
+
+1. Aspose.Words untuk .NET Library: Unduh dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: IDE seperti Visual Studio.
+3. .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.
+
+## Impor Namespace
+
+Sebelum menulis kode sebenarnya, Anda perlu mengimpor namespace yang diperlukan:
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//Buat dokumen dan inisialisasi pembuat dokumen
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Pertama, Anda perlu menentukan jalur penyimpanan dokumen Anda.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen.
+
+## Langkah 2: Inisialisasi Dokumen dan DocumentBuilder
+
+Sekarang, inisialisasi dokumen baru dan objek DocumentBuilder.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Pastikan untuk mengganti "DIREKTORI DOKUMEN ANDA" dengan jalur sebenarnya ke direktori dokumen Anda.
+ Itu`DocumentBuilder` adalah kelas pembantu yang menyederhanakan proses pembuatan dokumen.
 
-## Langkah 3: Membangun Tabel Terformat
-Selanjutnya, kita akan membuat tabel yang diformat menggunakan metode yang disediakan oleh pembuat dokumen. Gunakan kode berikut:
+## Langkah 3: Mulai Tabel
+
+ Selanjutnya, mulailah membuat tabel menggunakan`StartTable` metode.
 
 ```csharp
-// Mulailah konstruksi susunan
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// Konstruksi baris header tabel
-builder. InsertCell();
-table. LeftIndent = 20.0;
+Memasukkan sel diperlukan untuk memulai tabel.
+
+## Langkah 4: Terapkan Pemformatan Seluruh Tabel
+
+Anda dapat menerapkan pemformatan yang memengaruhi keseluruhan tabel. Misalnya, mengatur indentasi kiri:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## Langkah 5: Format Baris Header
+
+Atur tinggi, perataan, dan properti lainnya untuk baris header.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+Pada langkah ini, kita menonjolkan baris header dengan mengatur warna latar belakang, ukuran font, dan perataan.
+
+## Langkah 6: Masukkan Sel Header Tambahan
+
+Sisipkan lebih banyak sel untuk baris header:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## Langkah 7: Format Baris Tubuh
 
-// Konstruksi badan array
+Setelah menyiapkan header, format badan tabel:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// Akhir dari konstruksi susunan
-builder. EndTable();
 ```
 
- Di sini kita menggunakan pembuat dokumen untuk membuat tabel langkah demi langkah. Kami mulai dengan menelepon`StartTable()` untuk menginisialisasi tabel. Lalu kita gunakan`InsertCell()` untuk menyisipkan sel dan`Write()` untuk menambahkan konten ke setiap sel. Kami juga menggunakan properti pemformatan yang berbeda untuk menentukan pemformatan baris tabel, sel, dan teks.
+## Langkah 8: Sisipkan Baris Tubuh
 
-## Langkah 4: Simpan dokumen
-Terakhir, kita perlu menyimpan dokumen yang berisi tabel yang diformat. Gunakan kode berikut:
+Sisipkan baris isi dengan konten:
 
 ```csharp
-// Simpan dokumennya
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+Ulangi untuk baris tambahan:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Langkah 9: Simpan Dokumen
+
+Terakhir, simpan dokumen ke direktori yang ditentukan:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Pastikan untuk menentukan jalur dan nama file yang benar untuk dokumen keluaran.
-
-### Contoh kode sumber untuk Tabel Terformat menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// Pemformatan lebar tabel harus diterapkan setelah setidaknya satu baris ada dalam tabel.
-	table.LeftIndent = 20.0;
-	// Tetapkan tinggi dan tentukan aturan ketinggian untuk baris header.
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// Kita tidak perlu menentukan lebar sel ini karena merupakan warisan dari sel sebelumnya.
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// Setel ulang ketinggian dan tentukan aturan ketinggian yang berbeda untuk badan tabel.
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// Setel ulang pemformatan font.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+Ini akan membuat dan menyimpan dokumen Word dengan tabel yang diformat.
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara membuat tabel berformat dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini dan menerapkan kode C# yang disediakan, Anda dapat membuat tabel khusus dengan format tertentu di dokumen Word Anda secara terprogram. Fitur ini memungkinkan Anda menyajikan dan menyusun data Anda dengan cara yang menarik dan terorganisir secara visual.
+
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda bisa membuat tabel yang diformat dengan baik di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan manipulasi dokumen Word secara terprogram, sehingga menghemat waktu dan tenaga Anda.
+
+## FAQ
+
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, mengedit, dan mengonversi dokumen Word secara terprogram.
+
+### Bisakah saya menggunakan warna berbeda untuk baris berbeda?
+Ya, Anda dapat menerapkan pemformatan berbeda, termasuk warna, ke baris atau sel berbeda.
+
+### Apakah Aspose.Words untuk .NET gratis?
+ Aspose.Words untuk .NET adalah perpustakaan berbayar, tetapi Anda bisa mendapatkan a[uji coba gratis](https://releases.aspose.com/).
+
+### Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
+ Anda bisa mendapatkan dukungan dari[Asumsikan forum komunitas](https://forum.aspose.com/c/words/8).
+
+### Bisakah saya membuat jenis dokumen lain dengan Aspose.Words untuk .NET?
+Ya, Aspose.Words untuk .NET mendukung berbagai format dokumen, termasuk PDF, HTML, dan TXT.

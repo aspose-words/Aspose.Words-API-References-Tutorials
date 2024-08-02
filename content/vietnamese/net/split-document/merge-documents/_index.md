@@ -9,7 +9,7 @@ url: /vi/net/split-document/merge-documents/
 ---
 ## Giới thiệu
 
-Này! Bạn có bao giờ thấy mình cần hợp nhất nhiều tài liệu Word thành một tệp gắn kết không? Cho dù bạn đang biên soạn báo cáo, tập hợp một dự án hay chỉ cố gắng dọn dẹp, việc hợp nhất các tài liệu có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức. Với Aspose.Words for .NET, quá trình này trở nên dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách hợp nhất các tài liệu Word bằng Aspose.Words cho .NET, chia nhỏ từng bước để bạn có thể dễ dàng thực hiện. Cuối cùng, bạn sẽ hợp nhất được các tài liệu như một người chuyên nghiệp!
+Bạn có bao giờ thấy mình cần hợp nhất nhiều tài liệu Word thành một tệp gắn kết không? Cho dù bạn đang biên soạn báo cáo, tập hợp một dự án hay chỉ cố gắng dọn dẹp, việc hợp nhất các tài liệu có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức. Với Aspose.Words for .NET, quá trình này trở nên dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách hợp nhất các tài liệu Word bằng Aspose.Words cho .NET, chia nhỏ từng bước để bạn có thể dễ dàng thực hiện. Cuối cùng, bạn sẽ hợp nhất được các tài liệu như một người chuyên nghiệp!
 
 ## Điều kiện tiên quyết
 
@@ -78,7 +78,7 @@ Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx",
 
 ## Bước 5: Tạo một phiên bản tài liệu từ các tài liệu đã hợp nhất
 
-Đôi khi, bạn có thể muốn làm việc thêm với tài liệu đã hợp nhất trước khi lưu. Bạn có thể tạo một`Document` ví dụ từ các tài liệu được hợp nhất:
+ Đôi khi, bạn có thể muốn làm việc thêm với tài liệu đã hợp nhất trước khi lưu. Bạn có thể tạo một`Document` ví dụ từ các tài liệu được hợp nhất:
 
 ```csharp
 Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
@@ -93,22 +93,22 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## Câu hỏi thường gặp
 
-### 1. Aspose.Words cho .NET là gì?
+### Aspose.Words cho .NET là gì?
 
 Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển tạo, thao tác và chuyển đổi tài liệu Word theo chương trình. Đó là lý tưởng để tự động hóa các tác vụ liên quan đến tài liệu.
 
-### 2. Tôi có thể sử dụng Aspose.Words cho .NET miễn phí không?
+### Tôi có thể sử dụng Aspose.Words cho .NET miễn phí không?
 
  Bạn có thể thử Aspose.Words cho .NET bằng cách sử dụng[dùng thử miễn phí](https://releases.aspose.com/). Để sử dụng lâu dài, bạn sẽ cần phải mua giấy phép.
 
-### 3. Làm cách nào để xử lý các định dạng khác nhau trong quá trình hợp nhất?
+### Làm cách nào để xử lý các định dạng khác nhau trong quá trình hợp nhất?
 
- Aspose.Words cung cấp nhiều chế độ định dạng hợp nhất khác nhau như`KeepSourceFormatting`Và`MergeFormatting` . Tham khảo đến[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
+ Aspose.Words cung cấp nhiều chế độ định dạng hợp nhất khác nhau như`KeepSourceFormatting`Và`MergeFormatting` Tham khảo đến[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
 
-### 4. Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
+### Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 
 Bạn có thể nhận được hỗ trợ bằng cách truy cập[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
 
-### 5. Tôi có thể hợp nhất các định dạng tệp khác với Aspose.Words cho .NET không?
+### Tôi có thể hợp nhất các định dạng tệp khác với Aspose.Words cho .NET không?
 
 Có, Aspose.Words hỗ trợ hợp nhất nhiều định dạng tệp khác nhau, bao gồm DOCX, PDF và HTML.

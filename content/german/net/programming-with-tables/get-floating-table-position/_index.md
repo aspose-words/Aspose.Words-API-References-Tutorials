@@ -2,77 +2,111 @@
 title: Schwebende Tabellenposition abrufen
 linktitle: Schwebende Tabellenposition abrufen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Position schwebender Tabellen in einem Word-Dokument abrufen.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET schwebende Tabellenpositionen in Word-Dokumenten erhalten. Diese detaillierte Schritt-für-Schritt-Anleitung führt Sie durch alles, was Sie wissen müssen.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/get-floating-table-position/
 ---
+## Einführung
 
-In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET die Position einer schwebenden Tabelle in einem Word-Dokument ermitteln. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie die Positionierungseigenschaften einer schwebenden Tabelle in Ihren Word-Dokumenten programmgesteuert abrufen.
+Sind Sie bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute nehmen wir Sie mit auf eine Reise, um die Geheimnisse schwebender Tabellen in Word-Dokumenten zu lüften. Stellen Sie sich vor, Sie haben eine Tabelle, die nicht einfach stillsteht, sondern elegant um den Text herum schwebt. Ziemlich cool, oder? Dieses Tutorial zeigt Ihnen, wie Sie die Positionierungseigenschaften solcher schwebenden Tabellen erhalten. Also, legen wir los!
 
-## Schritt 1: Projekt-Setup
-1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
+## Voraussetzungen
 
-## Schritt 2: Laden des Dokuments und Zugriff auf die Tabellen
-Um die Textverarbeitung mit Tabellen zu starten, müssen wir das Dokument, das sie enthält, laden und darauf zugreifen. Folgen Sie diesen Schritten:
+Bevor wir uns auf den spaßigen Teil stürzen, müssen Sie ein paar Dinge vorbereitet haben:
+
+1.  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, laden Sie Aspose.Words für .NET herunter und installieren Sie es von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung eingerichtet haben. Visual Studio ist eine gute Option.
+3. Beispieldokument: Sie benötigen ein Word-Dokument mit einer schwebenden Tabelle. Sie können eins erstellen oder ein vorhandenes Dokument verwenden. 
+
+## Namespaces importieren
+
+Um zu beginnen, müssen Sie die erforderlichen Namespaces importieren. Dadurch wird sichergestellt, dass Sie Zugriff auf die Aspose.Words-Klassen und -Methoden haben, die zum Bearbeiten von Word-Dokumenten erforderlich sind.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Okay, lassen Sie uns den Vorgang in leicht verständliche Schritte unterteilen.
+
+## Schritt 1: Laden Sie Ihr Dokument
+
+Als Erstes müssen Sie Ihr Word-Dokument laden. Dieses Dokument sollte die schwebende Tabelle enthalten, die Sie untersuchen möchten.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Laden Sie das Dokument
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-Ersetzen Sie unbedingt „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. Stellen Sie außerdem sicher, dass das Dokument schwebende Tabellen enthält.
+ In diesem Schritt teilen Sie Aspose.Words im Wesentlichen mit, wo Ihr Dokument zu finden ist. Achten Sie darauf,`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokument.
 
-## Schritt 3: Positionierungseigenschaften für schwebende Tabellen abrufen
-Als Nächstes durchlaufen wir alle Tabellen im Dokument und ermitteln die Positionierungseigenschaften der schwebenden Tabellen. Verwenden Sie den folgenden Code:
+## Schritt 2: Zugriff auf die Tabellen im Dokument
+
+Als Nächstes müssen Sie auf die Tabellen im ersten Abschnitt des Dokuments zugreifen. Stellen Sie sich das Dokument als großen Container vor, in dem Sie nach allen Tabellen suchen.
 
 ```csharp
-foreach(Table table in doc.FirstSection.Body.Tables)
+foreach (Table table in doc.FirstSection.Body.Tables)
 {
-// Wenn das Array ein Floating-Typ ist, drucken Sie seine Positionierungseigenschaften.
+    // Ihr Code zur Verarbeitung der einzelnen Tabellen kommt hierhin
+}
+```
+
+Hier durchlaufen Sie jede Tabelle im Hauptteil des ersten Abschnitts Ihres Dokuments.
+
+## Schritt 3: Überprüfen Sie, ob die Tabelle schwebt
+
+Nun müssen Sie feststellen, ob es sich bei der Tabelle um eine schwebende Tabelle handelt. Schwebende Tabellen verfügen über spezielle Einstellungen für den Textumbruch.
+
+```csharp
 if (table.TextWrapping == TextWrapping.Around)
 {
-Console.WriteLine(table.HorizontalAnchor);
-Console.WriteLine(table.VerticalAnchor);
-Console.WriteLine(table.AbsoluteHorizontalDistance);
-Console.WriteLine(table.AbsoluteVerticalDistance);
-Console.WriteLine(table.AllowOverlap);
-Console.WriteLine(table.AbsoluteHorizontalDistance);
-Console.WriteLine(table.RelativeVerticalAlignment);
-Console.WriteLine("...............................");
-}
+    // Ihr Code zum Drucken der Tabellenpositionierungseigenschaften wird hier eingefügt.
 }
 ```
 
- Hier verwenden wir eine`foreach` loop, um alle Arrays im Dokument zu durchlaufen. Wir prüfen, ob das Array vom Typ float ist, indem wir den`TextWrapping` Eigenschaft. Wenn ja, drucken wir die Positionierungseigenschaften der Tabelle, wie horizontalen Anker, vertikalen Anker, absolute horizontale und vertikale Abstände, Überlappungsberechtigung, absoluten horizontalen Abstand und vertikale relative Ausrichtung.
- 
-### Beispielquellcode zum Abrufen der Floating Table Position mit Aspose.Words für .NET 
+Diese Bedingung prüft, ob der Textumbruchstil der Tabelle auf „Rund“ eingestellt ist, was darauf hinweist, dass es sich um eine schwebende Tabelle handelt.
+
+## Schritt 4: Drucken Sie die Positionierungseigenschaften
+
+Zum Schluss extrahieren und drucken wir die Positionierungseigenschaften der schwebenden Tabelle. Diese Eigenschaften geben Aufschluss darüber, wo die Tabelle im Verhältnis zum Text und zur Seite positioniert ist.
 
 ```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table wrapped by text.docx");
-	foreach (Table table in doc.FirstSection.Body.Tables)
-	{
-		// Wenn es sich bei der Tabelle um eine schwebende Tabelle handelt, drucken Sie ihre Positionierungseigenschaften.
-		if (table.TextWrapping == TextWrapping.Around)
-		{
-			Console.WriteLine(table.HorizontalAnchor);
-			Console.WriteLine(table.VerticalAnchor);
-			Console.WriteLine(table.AbsoluteHorizontalDistance);
-			Console.WriteLine(table.AbsoluteVerticalDistance);
-			Console.WriteLine(table.AllowOverlap);
-			Console.WriteLine(table.AbsoluteHorizontalDistance);
-			Console.WriteLine(table.RelativeVerticalAlignment);
-			Console.WriteLine("..............................");
-		}
-	}
+if (table.TextWrapping == TextWrapping.Around)
+{
+    Console.WriteLine("Horizontal Anchor: " + table.HorizontalAnchor);
+    Console.WriteLine("Vertical Anchor: " + table.VerticalAnchor);
+    Console.WriteLine("Absolute Horizontal Distance: " + table.AbsoluteHorizontalDistance);
+    Console.WriteLine("Absolute Vertical Distance: " + table.AbsoluteVerticalDistance);
+    Console.WriteLine("Allow Overlap: " + table.AllowOverlap);
+    Console.WriteLine("Relative Vertical Alignment: " + table.RelativeVerticalAlignment);
+    Console.WriteLine("..............................");
+}
 ```
 
+Diese Eigenschaften geben Ihnen einen detaillierten Einblick in die Verankerung und Positionierung der Tabelle im Dokument.
+
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET die Position einer schwebenden Tabelle in einem Word-Dokument ermittelt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie die Positionierungseigenschaften schwebender Tabellen in Ihren Word-Dokumenten programmgesteuert ermitteln. Mit dieser Funktion können Sie schwebende Tabellen entsprechend Ihren spezifischen Anforderungen analysieren und bearbeiten.
+
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie die Positionierungseigenschaften schwebender Tabellen in Ihren Word-Dokumenten mit Aspose.Words für .NET problemlos abrufen und drucken. Egal, ob Sie die Dokumentverarbeitung automatisieren oder einfach nur neugierig auf Tabellenlayouts sind, dieses Wissen wird Ihnen auf jeden Fall nützlich sein.
+
+Denken Sie daran, dass die Arbeit mit Aspose.Words für .NET eine Welt voller Möglichkeiten zur Dokumentbearbeitung und -automatisierung eröffnet. Viel Spaß beim Programmieren!
+
+## Häufig gestellte Fragen
+
+### Was ist eine schwebende Tabelle in Word-Dokumenten?
+Eine schwebende Tabelle ist eine Tabelle, die nicht am Text befestigt ist, sondern sich bewegen kann, normalerweise mit umlaufendem Text.
+
+### Wie kann ich mit Aspose.Words für .NET feststellen, ob eine Tabelle schwebt?
+ Sie können überprüfen, ob eine Tabelle schwebt, indem Sie deren`TextWrapping` Eigenschaft. Wenn es auf`TextWrapping.Around`, der Tisch schwebt.
+
+### Kann ich die Positionierungseigenschaften einer schwebenden Tabelle ändern?
+Ja, mit Aspose.Words für .NET können Sie die Positionierungseigenschaften einer schwebenden Tabelle ändern, um ihr Layout anzupassen.
+
+### Ist Aspose.Words für .NET für die Dokumentenautomatisierung im großen Maßstab geeignet?
+Auf jeden Fall! Aspose.Words für .NET ist für die leistungsstarke Dokumentenautomatisierung konzipiert und kann groß angelegte Vorgänge effizient verarbeiten.
+
+### Wo finde ich weitere Informationen und Ressourcen zu Aspose.Words für .NET?
+Detaillierte Dokumentationen und Ressourcen finden Sie auf der[Aspose.Words für .NET-Dokumentationsseite](https://reference.aspose.com/words/net/).

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/remove-content/remove-table-of-contents/
 ---
-## 使用 Aspose.Words for .NET 删除 Word 文档中的目录
+## 介绍
 
 您是否厌倦了处理 Word 文档中不需要的目录 (TOC)？我们都遇到过这种情况 — 有时目录根本就没有必要。幸运的是，Aspose.Words for .NET 可让您轻松地以编程方式删除目录。在本教程中，我将逐步指导您完成该过程，以便您能够快速掌握它。让我们开始吧！
 
@@ -83,22 +83,22 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## 常见问题解答
 
-### 1.什么是 Aspose.Words for .NET？
+### 什么是 Aspose.Words for .NET？
 
 Aspose.Words for .NET 是一个强大的.NET 文档操作库，允许开发人员以编程方式创建、修改和转换 Word 文档。
 
-### 2. 我可以免费使用Aspose.Words吗？
+### 我可以免费使用 Aspose.Words 吗？
 
 是的，你可以使用 Aspose.Words[免费试用](https://releases.aspose.com/)或者得到[临时执照](https://purchase.aspose.com/temporary-license/).
 
-### 3. 是否可以使用 Aspose.Words 删除其他字段？
+### 是否可以使用 Aspose.Words 删除其他字段？
 
 当然可以！您可以通过在过滤条件中指定字段类型来删除任何字段。
 
-### 4. 我需要Visual Studio来使用Aspose.Words吗？
+### 我需要 Visual Studio 来使用 Aspose.Words 吗？
 
 虽然强烈推荐使用 Visual Studio 来简化开发，但您可以使用任何支持 .NET 的 IDE。
 
-### 5. 在哪里可以找到有关 Aspose.Words 的更多信息？
+### 在哪里可以找到有关 Aspose.Words 的更多信息？
 
 如需更详细的文档，请访问[Aspose.Words for .NET API 文档](https://reference.aspose.com/words/net/).

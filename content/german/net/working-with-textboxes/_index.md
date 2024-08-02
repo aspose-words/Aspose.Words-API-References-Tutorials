@@ -12,6 +12,6 @@ url: /de/net/working-with-textboxes/
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Link in Word erstellen](./create-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Links zwischen Textfeldern in einem Word-Dokument erstellen. |
-| [Prüfreihenfolge](./check-sequence/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Reihenfolge von Textfeldern in einem Word-Dokument überprüfen. |
-| [Weiterleitungslink im Word-Dokument unterbrechen](./break-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Vorwärtslinks in einem Word-Dokument unterbrechen. |
+| [Verknüpfen von Textfeldern in Word](./create-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Textfelder in Word-Dokumenten erstellen und verknüpfen. Folgen Sie unserem umfassenden Leitfaden zur nahtlosen Dokumentanpassung! |
+| [TextBox-Reihenfolgeprüfung in Word](./check-sequence/) | Entdecken Sie, wie Sie mit Aspose.Words für .NET die Reihenfolge von Textfeldern in Word-Dokumenten überprüfen. Folgen Sie unserer ausführlichen Anleitung zum Master-Dokumentenfluss! |
+| [Weiterleitungslink im Word-Dokument unterbrechen](./break-a-link/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Vorwärtslinks in Textfeldern von Word-Dokumenten unterbrechen. Folgen Sie unserer Anleitung für eine reibungslosere Dokumentenverwaltung. |

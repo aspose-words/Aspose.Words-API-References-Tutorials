@@ -56,7 +56,7 @@ com.aspose.words.Document doc = new com.aspose.words.Document();
 Τώρα που έχουμε γερές βάσεις, ας δημιουργήσουμε ένα βασικό TOC χρησιμοποιώντας το Aspose.Words για Java.
 
 ```java
-// Δημιουργήστε έναν νέο Πίνακα Περιεχομένων
+// Δημιουργήστε έναν νέο πίνακα περιεχομένων
 com.aspose.words.Field tocField = doc.getRange().addField("TOC", "");
 tocField.update();
 ```

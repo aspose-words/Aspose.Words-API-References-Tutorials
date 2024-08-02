@@ -2,68 +2,36 @@
 title: Wstaw zagnieżdżone pola
 linktitle: Wstaw zagnieżdżone pola
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak łatwo wstawiać zagnieżdżone pola do dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawiać zagnieżdżone pola w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Idealny dla programistów chcących zautomatyzować tworzenie dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/insert-nested-fields/
 ---
+## Wstęp
 
-Oto przewodnik krok po kroku wyjaśniający poniższy kod źródłowy C#, który wykorzystuje funkcję „Wstaw zagnieżdżone pola” Aspose.Words dla .NET. Pamiętaj, aby dokładnie wykonać każdy krok, aby uzyskać pożądane rezultaty.
+Czy kiedykolwiek zdarzyło Ci się programowo wstawiać zagnieżdżone pola w dokumentach programu Word? Może chcesz warunkowo wyświetlać różne teksty na podstawie numeru strony? Cóż, masz szczęście! Ten samouczek poprowadzi Cię przez proces wstawiania zagnieżdżonych pól przy użyciu Aspose.Words dla .NET. Zanurzmy się!
 
-## Krok 1: Konfiguracja katalogu dokumentów
+## Warunki wstępne
 
-W podanym kodzie musisz określić katalog swoich dokumentów. Zastąp wartość „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką do katalogu dokumentów.
+Zanim zaczniemy, potrzebujesz kilku rzeczy:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: IDE takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Znajomość języka programowania C#.
 
-## Krok 2: Tworzenie dokumentu i narzędzia DocumentBuilder
+## Importuj przestrzenie nazw
 
-Zaczynamy od utworzenia nowego dokumentu i zainicjowania narzędzia DocumentBuilder.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Krok 3: Wstawianie podziałów stron
-
-Używamy pętli, aby wstawić wiele podziałów stron do dokumentu.
+Najpierw pamiętaj o zaimportowaniu niezbędnych przestrzeni nazw do swojego projektu. Te przestrzenie nazw zawierają klasy, które będą potrzebne do interakcji z Aspose.Words.
 
 ```csharp
-for (int i = 0; i < 5; i++)
-     builder. InsertBreak(BreakType.PageBreak);
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.HeaderFooter;
 ```
 
-## Krok 4: Przejdź do stopki
+## Krok 1: Zainicjuj dokument
 
- Używamy`MoveToHeaderFooter()` metoda DocumentBuilder, aby przenieść kursor do głównej stopki.
-
-```csharp
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-## Krok 5: Wstawianie zagnieżdżonego pola
-
- Używamy narzędzia DocumentBuilder`InsertField()` metoda wstawienia zagnieżdżonego pola do stopki.
-
-```csharp
-Field field = builder. InsertField(@"IF ");
-builder.MoveTo(field.Separator);
-builder. InsertField("PAGE");
-builder. Write(" <> ");
-builder.InsertField("NUMPAGES");
-builder.Write(" \"See next page\" \"Last page\" ");
-```
-
- Na koniec nazywamy`Update()` metoda aktualizacji pola.
-
-```csharp
-field. Update();
-```
-
-### Przykładowy kod źródłowy do wstawiania zagnieżdżonych pól za pomocą Aspose.Words dla .NET
+Pierwszym krokiem jest utworzenie nowego dokumentu i obiektu DocumentBuilder. Klasa DocumentBuilder pomaga w budowaniu i modyfikowaniu dokumentów programu Word.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -72,52 +40,79 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Utwórz dokument i narzędzie DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Krok 2: Wstaw podziały stron
+
+Następnie wstawimy do dokumentu kilka podziałów stron. Pozwoli nam to skutecznie zademonstrować zagnieżdżone pola.
+
+```csharp
 // Wstaw podziały stron.
 for (int i = 0; i < 5; i++)
-     builder. InsertBreak(BreakType.PageBreak);
+{
+    builder.InsertBreak(BreakType.PageBreak);
+}
+```
 
+## Krok 3: Przejdź do stopki
+
+Po wstawieniu podziałów stron należy przejść do stopki dokumentu. Tutaj wstawimy nasze zagnieżdżone pole.
+
+```csharp
 // Przejdź do stopki.
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+```
 
+## Krok 4: Wstaw zagnieżdżone pole
+
+Teraz wstawmy zagnieżdżone pole. Użyjemy pola JEŻELI, aby warunkowo wyświetlić tekst na podstawie bieżącego numeru strony.
+
+```csharp
 // Wstaw zagnieżdżone pole.
-Field field = builder. InsertField(@"IF ");
+Field field = builder.InsertField(@"IF ");
 builder.MoveTo(field.Separator);
-builder. InsertField("PAGE");
-builder. Write(" <> ");
+builder.InsertField("PAGE");
+builder.Write(" <> ");
 builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
+```
 
+W tym kroku najpierw wstawimy pole IF, przejdziemy do jego separatora, a następnie wstawimy pola PAGE i NUMPAGES. Pole JEŻELI sprawdza, czy numer bieżącej strony (PAGE) nie jest równy całkowitej liczbie stron (NUMPAGES). Jeśli to prawda, wyświetla „Zobacz następną stronę”, w przeciwnym razie wyświetla „Ostatnią stronę”.
+
+## Krok 5: Zaktualizuj pole
+
+Na koniec aktualizujemy pole, aby mieć pewność, że wyświetla poprawny tekst.
+
+```csharp
 // Zaktualizuj pole.
-field. Update();
+field.Update();
+```
 
+## Krok 6: Zapisz dokument
+
+Ostatnim krokiem jest zapisanie dokumentu we wskazanym katalogu.
+
+```csharp
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-W tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy podziały stron, przesunęliśmy kursor do stopki, a następnie wstawiliśmy zagnieżdżone pole w stopce.
+## Wniosek
 
-### Często zadawane pytania
+masz to! Pomyślnie wstawiłeś zagnieżdżone pola do dokumentu Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że niezwykle łatwo jest programowo manipulować dokumentami programu Word. Niezależnie od tego, czy generujesz raporty, tworzysz szablony, czy automatyzujesz obieg dokumentów, Aspose.Words pomoże Ci.
 
-#### P: Jak mogę wstawić zagnieżdżone pola w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
+## Często zadawane pytania
 
-Odp.: Aby wstawić zagnieżdżone pola w dokumencie programu Word przy użyciu Aspose.Words dla .NET, możesz wykonać następujące kroki:
+### Co to jest pole zagnieżdżone w dokumentach programu Word?
+Pole zagnieżdżone to pole zawierające w sobie inne pola. Pozwala na bardziej złożoną i warunkową treść w dokumentach.
 
-1. Pobierz akapit, w którym chcesz wstawić zagnieżdżone pola.
-2.  Stwórz`FieldStart` obiekt dla pola nadrzędnego.
-3.  Dodaj pola podrzędne za pomocą`FieldStart.NextSibling` metoda przekazująca odpowiednią`FieldStart` obiekty jako parametry.
+### Czy mogę użyć innych pól w polu JEŻELI?
+Tak, możesz zagnieżdżać różne pola, takie jak DATA, CZAS i AUTOR, w polu JEŻELI, aby tworzyć dynamiczną treść.
 
-#### P: Jakie są korzyści z używania zagnieżdżonych pól w dokumencie programu Word w Aspose.Words dla .NET?
+### Czy Aspose.Words dla .NET jest darmowy?
+ Aspose.Words dla .NET jest biblioteką komercyjną, ale można ją pobrać[bezpłatna wersja próbna](https://releases.aspose.com/) żeby to wypróbować.
 
-Odp.: Korzystanie z zagnieżdżonych pól oferuje kilka korzyści w dokumencie Word z Aspose.Words dla .NET. Pozwala to na większą elastyczność w tworzeniu dynamicznych szablonów dokumentów, umożliwiając wstawianie wartości zmiennych i obliczeń do zagnieżdżonych pól. Pola zagnieżdżone mogą również ułatwiać automatyczne generowanie treści, np. generowanie spisów treści, numerów stron itp.
+### Czy mogę używać Aspose.Words z innymi językami .NET?
+Tak, Aspose.Words obsługuje wszystkie języki .NET, w tym VB.NET i F#.
 
-#### P: Czy mogę mieć wielopoziomowe zagnieżdżone pola w dokumencie programu Word za pomocą Aspose.Words dla .NET?
-
-Odp.: Tak, możliwe jest posiadanie wielopoziomowych zagnieżdżonych pól w dokumencie Word za pomocą Aspose.Words dla .NET. Można tworzyć złożone hierarchie zagnieżdżonych pól, korzystając z opcji`FieldStart.NextSibling` metoda dodawania pól podrzędnych do istniejących pól nadrzędnych.
-
-#### P: Jak mogę dostosować właściwości zagnieżdżonych pól w dokumencie programu Word za pomocą Aspose.Words dla .NET?
-
- O: Aby dostosować właściwości zagnieżdżonych pól w dokumencie Word za pomocą Aspose.Words dla .NET, możesz uzyskać dostęp do odpowiedniego`FieldStart` obiektów i modyfikować ich właściwości według potrzeb. Możesz ustawić opcje formatowania, wartości, obliczenia itp. zagnieżdżonych pól, aby osiągnąć pożądany wynik.
-
-#### P: Czy wstawianie zagnieżdżonych pól wpływa na wydajność dokumentu Word w Aspose.Words dla .NET?
-
-Odp.: Wstawianie zagnieżdżonych pól może mieć wpływ na wydajność dokumentu programu Word w Aspose.Words dla .NET, szczególnie jeśli dokument zawiera dużą liczbę zagnieżdżonych pól lub złożonych hierarchii. Zaleca się optymalizację kodu, unikając niepotrzebnych lub powtarzających się operacji na zagnieżdżonych polach, aby poprawić wydajność.
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+ Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).

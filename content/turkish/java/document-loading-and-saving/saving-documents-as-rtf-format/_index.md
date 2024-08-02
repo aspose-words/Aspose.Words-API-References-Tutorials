@@ -83,7 +83,7 @@ Bu kılavuzda Aspose.Words for Java kullanarak belgelerin RTF formatında nasıl
 
  Evet, kullanarak RTF belgesinin kodlamasını belirleyebilirsiniz.`saveOptions.setEncoding(Charset.forName("UTF-8"))`örneğin UTF-8 kodlamasında kaydetmek için.
 
-### RTF belgesini resimler olmadan kaydetmek mümkün müdür?
+### RTF belgesini resimler olmadan kaydetmek mümkün mü?
 
  Kesinlikle. kullanarak görüntü kaydetmeyi devre dışı bırakabilirsiniz.`saveOptions.setSaveImagesAsWmf(false)`.
 

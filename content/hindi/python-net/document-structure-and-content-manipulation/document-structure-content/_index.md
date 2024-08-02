@@ -204,7 +204,7 @@ pip install aspose-words
 
 ### मैं Aspose.Words पायथन सुविधाओं के बारे में अधिक जानकारी कहां पा सकता हूं?
 
-Aspose.Words पायथन सुविधाओं के बारे में व्यापक जानकारी के लिए, देखें[प्रलेखन](https://reference.aspose.com/words/python-net/).
+ Aspose.Words पायथन सुविधाओं के बारे में व्यापक जानकारी के लिए, देखें[प्रलेखन](https://reference.aspose.com/words/python-net/).
 
 ### मैं Aspose.Words का उपयोग करके अपने दस्तावेज़ को PDF प्रारूप में कैसे सहेजूँ?
 

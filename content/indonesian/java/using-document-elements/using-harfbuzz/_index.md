@@ -66,7 +66,7 @@ doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita telah mempelajari cara menggunakan HarfBuzz untuk pembentukan teks di Aspose.Words untuk Java. Dengan mengikuti langkah-langkah ini, Anda dapat meningkatkan kemampuan pemrosesan dokumen Word dan memastikan rendering skrip dan bahasa yang kompleks dengan benar.
+Dalam tutorial ini, kita telah mempelajari cara menggunakan HarfBuzz untuk pembentukan teks di Aspose.Words untuk Java. Dengan mengikuti langkah-langkah ini, Anda dapat meningkatkan kemampuan pemrosesan dokumen Word dan memastikan rendering skrip dan bahasa yang rumit dengan benar.
 
 ## FAQ
 

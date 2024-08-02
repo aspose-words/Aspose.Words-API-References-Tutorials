@@ -677,7 +677,7 @@ Per aggiungere Aspose.Words per Java al tuo progetto, procedi nel seguente modo:
 
 ### Posso dividere documenti in altri formati, come PDF o DOCX?
 
-No, questa guida tratta specificamente la suddivisione dei documenti nel formato DOC utilizzando Aspose.Words per Java. Se devi dividere documenti in altri formati, potresti dover esplorare altre librerie o strumenti che supportano tali formati.
+No, questa guida copre specificamente la suddivisione dei documenti nel formato DOC utilizzando Aspose.Words per Java. Se devi dividere documenti in altri formati, potresti dover esplorare altre librerie o strumenti che supportano tali formati.
 
 ### Aspose.Words per Java è una libreria gratuita?
 

@@ -112,7 +112,7 @@ Tak, Aspose.Words inteligentnie obsługuje zakładki i hiperłącza, zapewniają
 
 ### Czy można zautomatyzować proces łączenia?
 
-Absolutnie możesz enkapsulować logikę łączenia w funkcje lub klasy, aby zautomatyzować proces i poprawić możliwość ponownego użycia kodu.
+Absolutnie możesz enkapsulować logikę łączenia w funkcje lub klasy, aby zautomatyzować proces i poprawić możliwość ponownego wykorzystania kodu.
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla Pythona?
 

@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 Dessa namnrymder ger dig tillgång till Aspose.Words funktioner och sparalternativen för att exportera ditt dokument.
 
-## Steg 1: Ställ in din dokumentsökväg
+## Steg 1: Konfigurera din dokumentsökväg
 
 Först och främst måste du definiera sökvägen där dina dokument lagras. Det är här du ska ladda ditt Word-dokument och spara PDF-utdata.
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Steg 4: Spara dokumentet som en PDF
 
- Med alternativen konfigurerade är det dags att spara ditt dokument som en PDF. Använd`Save` metod för`Document` klass och anger sökvägen och spara alternativen.
+ Med alternativen konfigurerade är det dags att spara ditt dokument som en PDF. Använd`Save` metod för`Document` klass, anger sökvägen och spara alternativen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);

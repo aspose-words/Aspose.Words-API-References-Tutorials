@@ -2,40 +2,86 @@
 title: การใช้บานหน้าต่างงานส่วนขยายของเว็บ
 linktitle: การใช้บานหน้าต่างงานส่วนขยายของเว็บ
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: คำแนะนำทีละขั้นตอนในการใช้บานหน้าต่างงานส่วนขยายเว็บกับ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีเพิ่มและกำหนดค่าบานหน้าต่างงานส่วนขยายเว็บในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ในบทช่วยสอนแบบละเอียดทีละขั้นตอนนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-webextension/using-web-extension-task-panes/
 ---
+## การแนะนำ
 
-บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีการใช้บานหน้าต่างงานส่วนขยายเว็บด้วย Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนโดยละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีเพิ่มและกำหนดค่าบานหน้าต่างงานสำหรับส่วนขยายเว็บได้
+ยินดีต้อนรับสู่บทช่วยสอนเชิงลึกเกี่ยวกับการใช้บานหน้าต่างงานส่วนขยายเว็บในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET หากคุณเคยต้องการปรับปรุงเอกสาร Word ของคุณด้วยบานหน้าต่างงานแบบโต้ตอบ แสดงว่าคุณมาถูกที่แล้ว คู่มือนี้จะแนะนำคุณตลอดทุกขั้นตอนเพื่อให้บรรลุเป้าหมายนี้อย่างราบรื่น
 
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งและกำหนดค่าไลบรารี Aspose.Words สำหรับ .NET ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดูไลบรารีและคำแนะนำในการติดตั้งได้จากเว็บไซต์ Aspose
+## ข้อกำหนดเบื้องต้น
 
-## ขั้นตอนที่ 1: กำหนดไดเร็กทอรีเอกสาร
+ก่อนที่เราจะดำดิ่งลง มาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
 
- ในการเริ่มต้น คุณต้องกำหนดเส้นทางไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสารที่สร้างขึ้น แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีเอกสารของคุณ
+-  Aspose.Words สำหรับ .NET: คุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/words/net/).
+- .NET Development Environment: Visual Studio หรือ IDE อื่นๆ ที่คุณต้องการ
+- ความรู้พื้นฐานของ C#: สิ่งนี้จะช่วยให้คุณปฏิบัติตามตัวอย่างโค้ดได้
+-  ใบอนุญาตสำหรับ Aspose.Words: คุณสามารถซื้อได้[ที่นี่](https://purchase.aspose.com/buy) หรือได้รับใบอนุญาตชั่วคราว[ที่นี่](https://purchase.aspose.com/temporary-license/).
+
+## นำเข้าเนมสเปซ
+
+ก่อนที่เราจะเริ่มเขียนโค้ด ตรวจสอบให้แน่ใจว่าคุณได้นำเข้าเนมสเปซต่อไปนี้ในโปรเจ็กต์ของคุณ:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.WebExtensions;
+```
+
+## คำแนะนำทีละขั้นตอน
+
+ตอนนี้ เรามาแบ่งกระบวนการออกเป็นขั้นตอนที่ง่ายต่อการปฏิบัติตาม
+
+### ขั้นตอนที่ 1: การตั้งค่าไดเร็กทอรีเอกสารของคุณ
+
+ก่อนอื่น เราต้องตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ นี่คือที่ที่เอกสาร Word ของคุณจะถูกบันทึกไว้
+
+```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ขั้นตอนที่ 2: สร้างและกำหนดค่าบานหน้าต่างงาน
+ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังโฟลเดอร์เอกสารของคุณ
 
- เราสร้างก`TaskPane` วัตถุและเพิ่มลงในเอกสาร`s `คอลเลกชันของ WebExtensionTaskPanes ต่อไป เราจะกำหนดค่าคุณสมบัติของบานหน้าต่างงาน เช่น สถานะที่เทียบชิดขอบ การมองเห็น และความกว้าง
+### ขั้นตอนที่ 2: การสร้างเอกสารใหม่
+
+ต่อไป เราจะสร้างเอกสาร Word ใหม่โดยใช้ Aspose.Words
 
 ```csharp
 Document doc = new Document();
+```
 
+ บรรทัดนี้เริ่มต้นอินสแตนซ์ใหม่ของ`Document` คลาสซึ่งแสดงถึงเอกสาร Word
+
+### ขั้นตอนที่ 3: การเพิ่มบานหน้าต่างงาน
+
+ตอนนี้เราจะเพิ่มบานหน้าต่างงานลงในเอกสารของเรา บานหน้าต่างงานมีประโยชน์สำหรับการจัดเตรียมฟังก์ชันและเครื่องมือเพิ่มเติมภายในเอกสาร Word
+
+```csharp
 TaskPane taskPane = new TaskPane();
 doc.WebExtensionTaskPanes.Add(taskPane);
+```
 
+ ที่นี่เราสร้างใหม่`TaskPane` วัตถุและเพิ่มลงในเอกสาร`WebExtensionTaskPanes` ของสะสม.
+
+### ขั้นตอนที่ 4: การกำหนดค่าบานหน้าต่างงาน
+
+เพื่อให้ Task Pane ของเรามองเห็นและตั้งค่าคุณสมบัติได้ เราใช้โค้ดต่อไปนี้:
+
+```csharp
 taskPane.DockState = TaskPaneDockState.Right;
 taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-นอกจากนี้เรายังตั้งค่าข้อมูลรับรองส่วนขยายเว็บ รวมถึงรหัสแค็ตตาล็อก เวอร์ชัน และประเภทร้านค้า
+- `DockState` กำหนดตำแหน่งที่ Task Pane จะปรากฏขึ้น ในกรณีนี้จะอยู่ทางขวา
+- `IsVisible` ช่วยให้มั่นใจว่าสามารถมองเห็นบานหน้าต่างงานได้
+- `Width` กำหนดความกว้างของบานหน้าต่างงาน
+
+### ขั้นตอนที่ 5: การตั้งค่าการอ้างอิงส่วนขยายเว็บ
+
+ต่อไป เราจะตั้งค่าการอ้างอิงส่วนขยายเว็บซึ่งรวมถึง ID เวอร์ชัน ประเภทร้านค้า และร้านค้า
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -44,77 +90,78 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-สุดท้ายนี้ เราเพิ่มคุณสมบัติและการผูกเข้ากับส่วนขยายของเว็บ
+- `Id`คือตัวระบุเฉพาะสำหรับส่วนขยายเว็บ
+- `Version` ระบุเวอร์ชันของส่วนขยาย
+- `StoreType` ระบุประเภทของร้านค้า (ในกรณีนี้คือ OMEX)
+- `Store` ระบุรหัสภาษา/วัฒนธรรมของร้านค้า
+
+### ขั้นตอนที่ 6: การเพิ่มคุณสมบัติให้กับส่วนขยายเว็บ
+
+คุณสามารถเพิ่มคุณสมบัติให้กับส่วนขยายเว็บของคุณเพื่อกำหนดลักษณะการทำงานหรือเนื้อหาได้
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
-taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
-	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## ขั้นตอนที่ 3: บันทึกและโหลดเอกสาร
+ ที่นี่เราเพิ่มคุณสมบัติชื่อ`mailchimpCampaign`.
 
-เราบันทึกเอกสารด้วยบานหน้าต่างงานที่กำหนดค่าไว้ในไดเร็กทอรีที่ระบุ
+### ขั้นตอนที่ 7: การผูกส่วนขยายเว็บ
+
+ในที่สุด เราก็เพิ่มการผูกเข้ากับส่วนขยายเว็บของเรา การผูกช่วยให้คุณสามารถเชื่อมโยงส่วนขยายไปยังส่วนเฉพาะของเอกสารได้
+
+```csharp
+taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545", WebExtensionBindingType.Text, "194740422"));
+```
+
+- `UnnamedBinding_0_1506535429545` เป็นชื่อของการผูกมัด
+- `WebExtensionBindingType.Text` แสดงว่าการเชื่อมเป็นประเภทข้อความ
+- `194740422` คือ ID ของส่วนของเอกสารที่ผูกกับส่วนขยาย
+
+### ขั้นตอนที่ 8: บันทึกเอกสาร
+
+หลังจากตั้งค่าทุกอย่างแล้ว ให้บันทึกเอกสารของคุณ
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## ขั้นตอนที่ 4: แสดงข้อมูลบานหน้าต่างงาน
+บรรทัดนี้จะบันทึกเอกสารลงในไดเร็กทอรีที่ระบุด้วยชื่อไฟล์ที่กำหนด
 
-ต่อไป เราจะโหลดเอกสารและแสดงข้อมูลแหล่งที่มาของบานหน้าต่างงาน
+### ขั้นตอนที่ 9: การโหลดและการแสดงข้อมูลบานหน้าต่างงาน
+
+เพื่อตรวจสอบและแสดงข้อมูลบานหน้าต่างงาน เราจะโหลดเอกสารและวนซ้ำผ่านบานหน้าต่างงาน
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-Console.WriteLine("Task Panes Sources:\n");
 
-foreach(TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
+Console.WriteLine("Task panes sources:\n");
+
+foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
 {
-WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
-
-
-Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version}\", catalog id: \"{reference.Id}\";");
+    WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
+    Console.WriteLine($"Provider: \"{reference.Store}\", version: \"{reference.Version}\", catalog identifier: \"{reference.Id}\";");
 }
 ```
 
-นั่นคือทั้งหมดที่ ! คุณใช้บานหน้าต่างงานส่วนขยายเว็บกับ Aspose.Words สำหรับ .NET สำเร็จแล้ว
+รหัสนี้จะโหลดเอกสารและพิมพ์ผู้ให้บริการ เวอร์ชัน และตัวระบุแค็ตตาล็อกของแต่ละบานหน้าต่างงานในคอนโซล
 
-### ตัวอย่างซอร์สโค้ดสำหรับการใช้บานหน้าต่างงานส่วนขยายเว็บด้วย Aspose.Words สำหรับ .NET
+## บทสรุป
 
+แค่นั้นแหละ! คุณได้เพิ่มและกำหนดค่าบานหน้าต่างงานส่วนขยายเว็บในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET สำเร็จแล้ว คุณลักษณะอันทรงพลังนี้สามารถปรับปรุงเอกสาร Word ของคุณได้อย่างมากโดยมอบฟังก์ชันเพิ่มเติมภายในเอกสารโดยตรง 
 
-```csharp
+## คำถามที่พบบ่อย
 
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
+### บานหน้าต่างงานใน Word คืออะไร?
+บานหน้าต่างงานเป็นองค์ประกอบอินเทอร์เฟซที่ให้เครื่องมือและฟังก์ชันเพิ่มเติมภายในเอกสาร Word ซึ่งช่วยเพิ่มการโต้ตอบและประสิทธิภาพการทำงานของผู้ใช้
 
-	TaskPane taskPane = new TaskPane();
-	doc.WebExtensionTaskPanes.Add(taskPane);
+### ฉันสามารถปรับแต่งลักษณะที่ปรากฏของบานหน้าต่างงานได้หรือไม่
+ ใช่ คุณสามารถปรับแต่งลักษณะที่ปรากฏของบานหน้าต่างงานได้โดยการตั้งค่าคุณสมบัติเช่น`DockState`, `IsVisible` , และ`Width`.
 
-	taskPane.DockState = TaskPaneDockState.Right;
-	taskPane.IsVisible = true;
-	taskPane.Width = 300;
+### คุณสมบัติส่วนขยายของเว็บคืออะไร?
+คุณสมบัติส่วนขยายเว็บเป็นคุณสมบัติที่กำหนดเองที่คุณสามารถเพิ่มลงในส่วนขยายเว็บเพื่อกำหนดลักษณะการทำงานหรือเนื้อหาได้
 
-	taskPane.WebExtension.Reference.Id = "wa102923726";
-	taskPane.WebExtension.Reference.Version = "1.0.0.0";
-	taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
-	taskPane.WebExtension.Reference.Store = "th-TH";
-	taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
-	taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
-		WebExtensionBindingType.Text, "194740422"));
+### ฉันจะผูกส่วนขยายเว็บกับส่วนหนึ่งของเอกสารได้อย่างไร
+ คุณสามารถผูกส่วนขยายเว็บกับส่วนหนึ่งของเอกสารได้โดยใช้`WebExtensionBinding` คลาส ระบุประเภทการโยงและ ID เป้าหมาย
 
-	doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-	
-	
-	
-	doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-	
-	Console.WriteLine("Task panes sources:\n");
-
-	foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
-	{
-		WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
-		Console.WriteLine($"Provider: \"{reference.Store}\", version: \"{reference.Version}\", catalog identifier: \"{reference.Id}\";");
-	}
- 
-```
+### ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+ คุณสามารถค้นหาเอกสารรายละเอียดได้[ที่นี่](https://reference.aspose.com/words/net/).

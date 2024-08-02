@@ -11,7 +11,7 @@ url: /ko/net/add-content-using-documentbuilder/move-to-section/
 
 오늘날의 디지털 세계에서 자동화는 생산성 향상의 핵심입니다. Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 조작할 수 있는 강력한 라이브러리입니다. 일반적인 작업 중 하나는 콘텐츠를 추가하거나 수정하기 위해 문서 내의 다른 섹션으로 이동하는 것입니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 특정 섹션으로 이동하는 방법을 살펴보겠습니다. 쉽게 따라하실 수 있도록 프로세스를 단계별로 나누어 보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
@@ -94,4 +94,4 @@ Aspose.Words for .NET을 사용하면 프로그래밍 방식으로 Word 문서�
  에서 지원을 받으실 수 있습니다.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).
 
 ### 상용 프로젝트에서 Aspose.Words for .NET을 사용할 수 있나요?
- 예, 하지만 다음에서 라이센스를 구매해야 합니다.[구매링크](https://purchase.aspose.com/buy).
+ 예, 하지만 다음에서 라이센스를 구매해야 합니다.[구매 링크](https://purchase.aspose.com/buy).

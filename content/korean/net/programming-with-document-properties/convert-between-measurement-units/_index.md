@@ -11,7 +11,7 @@ url: /ko/net/programming-with-document-properties/convert-between-measurement-un
 
 안녕하세요! .NET용 Aspose.Words를 사용하여 Word 문서 작업을 하는 개발자이신가요? 그렇다면 다양한 측정 단위로 여백, 머리글 또는 바닥글을 설정해야 하는 경우가 종종 있습니다. 라이브러리의 기능에 익숙하지 않은 경우 인치와 포인트 등의 단위 간 변환이 까다로울 수 있습니다. 이 포괄적인 튜토리얼에서는 Aspose.Words for .NET을 사용하여 측정 단위 간 변환 과정을 안내합니다. 이러한 전환을 자세히 살펴보고 단순화해 보겠습니다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 

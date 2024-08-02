@@ -11,7 +11,7 @@ url: /ko/net/programming-with-bookmarks/untangle/
 
 프로그래밍 방식으로 Word 문서를 탐색하는 것은 미로에서 길을 찾는 것과 비슷할 수 있습니다. 책갈피, 제목, 표 및 기타 조작해야 하는 요소가 나타날 수 있습니다. 오늘 우리는 일반적이면서도 복잡한 작업인 Aspose.Words for .NET을 사용하여 Word 문서에서 얽힌 책갈피를 푸는 작업에 대해 알아봅니다. 이 튜토리얼은 프로세스를 단계별로 안내하여 여정의 모든 부분을 이해할 수 있도록 해줍니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
@@ -119,4 +119,4 @@ Aspose.Words for .NET을 사용하여 Word 문서에서 책갈피를 푸는 것�
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
 
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 라이센스를 구매하실 수 있습니다[여기](https://purchase.aspose.com/buy) 또는 요청[임시면허](https://purchase.aspose.com/temporary-license) 평가 목적으로.
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 라이센스를 구매하실 수 있습니다[여기](https://purchase.aspose.com/buy) 또는 요청[임시 면허증](https://purchase.aspose.com/temporary-license) 평가 목적으로.

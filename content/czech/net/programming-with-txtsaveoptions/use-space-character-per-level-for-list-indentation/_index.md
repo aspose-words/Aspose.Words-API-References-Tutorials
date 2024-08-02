@@ -2,118 +2,106 @@
 title: Pro odsazení seznamu použijte mezeru na úroveň
 linktitle: Pro odsazení seznamu použijte mezeru na úroveň
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce používáním mezery na úrovni pro odsazení seznamu v Aspose.Words pro .NET. Snadno vytvářejte dobře strukturované dokumenty aplikace Word.
+description: Zjistěte, jak v Aspose.Words for .NET vytvářet víceúrovňové seznamy s odsazením znaků mezery. Podrobný průvodce pro přesné formátování dokumentu.
 type: docs
 weight: 10
 url: /cs/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET je výkonná knihovna pro vytváření, úpravy a manipulaci s dokumenty Wordu v aplikaci C#. Mezi funkce nabízené Aspose.Words patří možnost použití jednoho znaku mezery na úroveň pro odsazení seznamů. V této příručce vám ukážeme, jak použít zdrojový kód C# Aspose.Words for .NET k implementaci této funkce.
+## Úvod
 
-## Porozumění knihovně Aspose.Words
+Pokud jde o formátování dokumentů, zejména při práci se seznamy, je klíčová přesnost. Ve scénářích, kdy potřebujete vytvořit dokumenty s různými úrovněmi odsazení, nabízí Aspose.Words for .NET výkonné nástroje pro zvládnutí tohoto úkolu. Jedna konkrétní funkce, která se může hodit, je konfigurace odsazení seznamu v textových souborech. Tato příručka vás provede tím, jak používat mezery k odsazení seznamu, aby si dokument zachová požadovanou strukturu a čitelnost.
 
-Než se ponoříte do kódu, je důležité porozumět knihovně Aspose.Words pro .NET. Aspose.Words je oblíbená knihovna, která usnadňuje a zefektivňuje zpracování textu s dokumenty aplikace Word. Nabízí širokou škálu funkcí pro vytváření, úpravu a manipulaci s dokumenty Word, včetně správy seznamů a odsazení.
+## Předpoklady
 
-## Vytvoření dokumentu a přidání obsahu
+Než se pustíte do výukového programu, budete potřebovat následující:
 
-Prvním krokem je vytvoření nového dokumentu a přidání obsahu do něj. Pomocí třídy Document vytvořte novou instanci dokumentu. Poté pomocí třídy DocumentBuilder přidejte text a vytvořte seznam s více úrovněmi odsazení. Zde je příklad:
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud jej ještě nemáte, můžete si jej stáhnout z[Aspose webové stránky](https://releases.aspose.com/words/net/).
+- Visual Studio: Vývojové prostředí pro psaní a testování kódu.
+- Základní porozumění C#: Znalost C# a .NET frameworku vám pomůže hladce pokračovat.
+
+## Importovat jmenné prostory
+
+Chcete-li začít pracovat s Aspose.Words, budete muset importovat potřebné jmenné prostory. Zde je návod, jak je můžete zahrnout do svého projektu:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Pojďme si rozebrat proces vytváření dokumentu s víceúrovňovým seznamem a určení mezer pro odsazení. 
+
+## Krok 1: Nastavte svůj dokument
+
+ Nejprve budete muset vytvořit nový dokument a inicializovat jej`DocumentBuilder` objekt. Tento objekt vám umožní snadno přidávat obsah a formátovat jej podle potřeby.
+
+```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// Vytvořte dokument a přidejte obsah
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ V tomto úryvku nahraďte`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou, kam chcete dokument uložit.
+
+## Krok 2: Vytvořte seznam s více úrovněmi odsazení
+
+ s`DocumentBuilder` instance, nyní můžete vytvořit seznam s různými úrovněmi odsazení. Použijte`ListFormat` vlastnost použít číslování a odsadit položky seznamu podle potřeby.
+
+```csharp
 // Vytvořte seznam se třemi úrovněmi odsazení
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-V tomto příkladu vytvoříme nový dokument a pomocí DocumentBuilder přidáme text a vytvoříme seznam se třemi úrovněmi odsazení. Do seznamu jsme přidali tři položky, přičemž každá položka byla odsazena o další úroveň.
+ V tomto kroku`ApplyNumberDefault` nastaví formát seznamu a`ListIndent` se používá ke zvýšení úrovně odsazení pro každou následující položku seznamu.
 
-## Použití jednoho znaku mezery na úroveň pro odsazení seznamu
+## Krok 3: Konfigurace mezerového znaku pro odsazení
 
-Po přidání obsahu můžeme nyní nakonfigurovat odsazení seznamů pomocí jedné mezery na úroveň. K tomu použijeme třídu TxtSaveOptions a vlastnost ListIndentation.Count nastavíme na počet úrovní odsazení a vlastnost ListIndentation.Character na znak mezery, který se má použít. Zde je postup:
+Nyní, když máte svůj seznam nastavený, je dalším krokem konfigurace, jak se bude pracovat s odsazením seznamu při ukládání dokumentu do textového souboru. Budete používat`TxtSaveOptions` určit, že pro odsazení mají být použity mezery.
 
 ```csharp
+// Pro odsazení seznamu použijte jednu mezeru na úroveň
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+ Tady,`ListIndentation.Count` určuje počet mezer na úrovni odsazení a`ListIndentation.Character` nastaví skutečný znak použitý pro odsazení.
+
+## Krok 4: Uložte dokument se zadanými možnostmi
+
+Nakonec uložte dokument pomocí nakonfigurovaných možností. Tím se použije nastavení odsazení a soubor se uloží v požadovaném formátu.
+
+```csharp
+// Uložte dokument se zadanými možnostmi
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-tomto příkladu vytvoříme instanci TxtSaveOptions a nastavíme vlastnost ListIndentation.Count na 3, abychom indikovali, že v seznamu jsou tři úrovně odsazení. Vlastnost ListIndentation.Character jsme také nastavili na znak mezery (' '), který chceme použít pro odsazení.
-
-### Příklad zdrojového kódu pro funkci "Použít jeden znak mezery na úroveň pro odsazení seznamu" s Aspose.Words for .NET
-
-Zde je úplný ukázkový zdrojový kód pro funkci "Použít jeden znak mezery na úroveň pro odsazení seznamu" s Aspose.Words pro .NET:
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             // Cesta k vašemu adresáři dokumentů
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             // Vytvořte dokument a přidejte obsah
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             // Vytvořte seznam se třemi úrovněmi odsazení
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             // Pro odsazení seznamu použijte jednu mezeru na úroveň
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             // Uložte dokument se zadanými možnostmi
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+ Tento fragment kódu uloží dokument do cesty zadané v`dataDir` s názvem souboru`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. Uložený soubor bude mít seznam formátovaný podle vašeho nastavení odsazení.
 
 ## Závěr
 
-této příručce jsme vysvětlili, jak pomocí Aspose.Words for .NET použít funkcionalitu „Použít jeden znak mezery na úroveň pro odsazení seznamu“. Podle uvedených kroků a pomocí poskytnutého zdrojového kódu C# můžete snadno nakonfigurovat odsazení seznamů v dokumentech aplikace Word pomocí jedné mezery na úroveň. Aspose.Words nabízí obrovskou flexibilitu a výkon pro textové zpracování s formátováním textu a správou seznamů, což vám umožňuje vytvářet dobře strukturované dokumenty ve vaší aplikaci C#.
+Pomocí těchto kroků jste úspěšně vytvořili dokument s víceúrovňovým odsazením seznamu pomocí mezer pro formátování. Tento přístup zajišťuje, že vaše seznamy jsou dobře strukturované a snadno čitelné, i když jsou uloženy jako textové soubory. Aspose.Words for .NET poskytuje robustní nástroje pro manipulaci s dokumenty a zvládnutí těchto funkcí může výrazně zlepšit vaše pracovní postupy zpracování dokumentů.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co je Aspose.Words for .NET?
-Aspose.Words for .NET je výkonná knihovna pro vytváření, úpravy a manipulaci s dokumenty Word v aplikaci C#. Nabízí mnoho funkcí pro zpracování textu s dokumenty Word, včetně možnosti použít jednu mezeru na úroveň pro odsazení seznamů.
+### Mohu pro odsazení seznamu kromě mezer použít jiné znaky?
+ Ano, můžete zadat různé znaky pro odsazení seznamu nastavením`Character` majetek v`TxtSaveOptions`.
 
-#### Otázka: Jak mohu použít jednu mezeru na úroveň pro odsazení seznamu pomocí Aspose.Words pro .NET?
-Pro odsazení seznamu můžete použít jednu mezeru na úroveň:
+### Jak mohu v seznamech použít odrážky místo čísel?
+ Použití`ListFormat.ApplyBulletDefault()` namísto`ApplyNumberDefault()` vytvořit seznam s odrážkami.
 
- Vytvořte nový dokument pomocí`Document` třída.
+### Mohu dynamicky upravit počet mezer pro odsazení?
+ Ano, můžete upravit`ListIndentation.Count` vlastnost nastavit počet míst na základě vašich požadavků.
 
- Použijte`DocumentBuilder`třídy přidat obsah do dokumentu a vytvořit seznam s více úrovněmi odsazení.
+### Je možné po vytvoření dokumentu změnit odsazení seznamu?
+Ano, před uložením dokumentu můžete kdykoli upravit formátování seznamu a nastavení odsazení.
 
- Jakmile přidáte obsah a nakonfigurujete odsazení seznamu, použijte`TxtSaveOptions` třídu a nastavte`ListIndentation.Count` vlastnost k počtu úrovní odsazení a`ListIndentation.Character` nemovitost na prostranství (`' '`) použít.
-
- Uložte dokument se zadanými možnostmi pomocí`Save` metoda`Document` třída.
-
-#### Otázka: Podporuje Aspose.Words jiné znaky pro odsazení seznamu?
-Ano, Aspose.Words podporuje jiné znaky pro odsazení seznamů. Můžete použít znaky bez mezer, jako jsou tabulátory (`'\t'` ) nebo jiné speciální znaky nastavením`ListIndentation.Character` vlastnost na požadovaný znak.
-
-#### Otázka: Je možné upravit počet mezer na úrovni pro odsazení seznamu?
- Ano, můžete upravit počet mezer na úrovni pro odsazení seznamu změnou hodnoty`ListIndentation.Count` nemovitost v`TxtSaveOptions` třída. Můžete zadat požadovaný počet mezer pro každou úroveň odsazení.
-
-#### Otázka: Jaké další funkce nabízí Aspose.Words pro správu seznamu?
-Aspose.Words nabízí mnoho funkcí pro správu seznamů v dokumentech aplikace Word. Můžete vytvářet číslované seznamy nebo seznamy s odrážkami, nastavovat úrovně odsazení, přizpůsobovat styl seznamů, přidávat položky seznamu a další.
+### Jaké další formáty dokumentů podporují nastavení odsazení seznamu?
+Kromě textových souborů lze při použití Aspose.Words použít nastavení odsazení seznamu na jiné formáty, jako je DOCX, PDF a HTML.

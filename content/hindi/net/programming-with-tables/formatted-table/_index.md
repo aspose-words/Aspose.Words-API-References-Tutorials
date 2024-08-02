@@ -2,42 +2,79 @@
 title: स्वरूपित तालिका
 linktitle: स्वरूपित तालिका
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words के साथ Word दस्तावेज़ में स्वरूपित तालिका बनाने का तरीका जानें।
+description: इस विस्तृत चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में तालिकाओं को बनाने और प्रारूपित करने का तरीका जानें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-tables/formatted-table/
 ---
+## परिचय
 
-इस ट्यूटोरियल में, हम सीखेंगे कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में फ़ॉर्मेट की गई तालिका कैसे बनाई जाए। हम कोड को समझने और इस सुविधा को लागू करने के लिए चरण-दर-चरण मार्गदर्शिका का पालन करेंगे। इस ट्यूटोरियल के अंत में, आप अपने Word दस्तावेज़ों में प्रोग्रामेटिक रूप से कस्टम फ़ॉर्मेटिंग के साथ तालिकाएँ बनाने में सक्षम होंगे।
+Word दस्तावेज़ों में प्रोग्रामेटिक रूप से टेबल बनाना और फ़ॉर्मेट करना एक कठिन काम लग सकता है, लेकिन Aspose.Words for .NET के साथ, यह सरल और प्रबंधनीय हो जाता है। इस ट्यूटोरियल में, हम आपको Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में फ़ॉर्मेट की गई टेबल बनाने का तरीका बताएँगे। हम आपके परिवेश को सेट करने से लेकर आपके दस्तावेज़ को एक सुंदर फ़ॉर्मेट की गई टेबल के साथ सहेजने तक सब कुछ कवर करेंगे।
 
-## चरण 1: प्रोजेक्ट सेटअप
-1. Visual Studio लॉन्च करें और एक नया C# प्रोजेक्ट बनाएं।
-2. Aspose.Words for .NET लाइब्रेरी में संदर्भ जोड़ें।
+## आवश्यक शर्तें
 
-## चरण 2: दस्तावेज़ बनाना और दस्तावेज़ जनरेटर को आरंभ करना
-फ़ॉर्मेटेड टेबल बनाना शुरू करने के लिए, हमें एक नया दस्तावेज़ बनाना होगा और दस्तावेज़ जनरेटर को आरंभ करना होगा। इन चरणों का पालन करें:
+कोड में गोता लगाने से पहले, आइए सुनिश्चित करें कि आपके पास वह सब कुछ है जो आपको चाहिए:
+
+1. .NET लाइब्रेरी के लिए Aspose.Words: इसे यहाँ से डाउनलोड करें[यहाँ](https://releases.aspose.com/words/net/).
+2. विकास पर्यावरण: विजुअल स्टूडियो जैसा एक IDE.
+3. .NET फ्रेमवर्क: सुनिश्चित करें कि आपके मशीन पर .NET फ्रेमवर्क स्थापित है।
+
+## नामस्थान आयात करें
+
+वास्तविक कोड लिखने से पहले, आपको आवश्यक नामस्थान आयात करने होंगे:
 
 ```csharp
-// आपके दस्तावेज़ निर्देशिका का पथ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//दस्तावेज़ बनाएँ और दस्तावेज़ जनरेटर आरंभ करें
+## चरण 1: अपनी दस्तावेज़ निर्देशिका सेट करें
+
+सबसे पहले, आपको वह पथ निर्धारित करना होगा जहां आपका दस्तावेज़ सहेजा जाएगा।
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उस वास्तविक पथ के साथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं.
+
+## चरण 2: दस्तावेज़ और दस्तावेज़बिल्डर को आरंभ करें
+
+अब, एक नया दस्तावेज़ और एक DocumentBuilder ऑब्जेक्ट आरंभ करें।
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-"आपकी दस्तावेज़ निर्देशिका" को अपनी दस्तावेज़ निर्देशिका के वास्तविक पथ से प्रतिस्थापित करना सुनिश्चित करें।
+`DocumentBuilder` एक सहायक वर्ग है जो दस्तावेज़ निर्माण की प्रक्रिया को सरल बनाता है।
 
-## चरण 3: स्वरूपित तालिका बनाना
-इसके बाद, हम दस्तावेज़ बिल्डर द्वारा प्रदान की गई विधियों का उपयोग करके स्वरूपित तालिका का निर्माण करेंगे। निम्नलिखित कोड का उपयोग करें:
+## चरण 3: टेबल शुरू करें
+
+ इसके बाद, का उपयोग करके तालिका बनाना शुरू करें`StartTable` तरीका।
 
 ```csharp
-// सरणी निर्माण शुरू करें
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// तालिका शीर्ष पंक्ति का निर्माण
-builder. InsertCell();
-table. LeftIndent = 20.0;
+तालिका शुरू करने के लिए एक सेल सम्मिलित करना आवश्यक है।
+
+## चरण 4: टेबल-वाइड फ़ॉर्मेटिंग लागू करें
+
+आप संपूर्ण तालिका को प्रभावित करने वाला स्वरूपण लागू कर सकते हैं। उदाहरण के लिए, बायाँ इंडेंट सेट करना:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## चरण 5: हेडर पंक्ति को प्रारूपित करें
+
+शीर्ष लेख पंक्ति के लिए ऊँचाई, संरेखण और अन्य गुण सेट करें.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+इस चरण में, हम पृष्ठभूमि का रंग, फ़ॉन्ट आकार और संरेखण निर्धारित करके हेडर पंक्ति को प्रमुख बनाते हैं।
+
+## चरण 6: अतिरिक्त हेडर सेल डालें
+
+शीर्ष पंक्ति के लिए अधिक कक्ष सम्मिलित करें:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## चरण 7: मुख्य पंक्तियों को प्रारूपित करें
 
-// सरणी निकाय का निर्माण
+शीर्षलेख सेट करने के बाद, तालिका के मुख्य भाग को प्रारूपित करें:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// सारणी निर्माण का अंत
-builder. EndTable();
 ```
 
- यहाँ हम टेबल को चरण दर चरण बनाने के लिए डॉक्यूमेंट बिल्डर का उपयोग करते हैं। हम कॉल करके शुरू करते हैं`StartTable()` तालिका को आरंभ करने के लिए। फिर हम उपयोग करते हैं`InsertCell()` कोशिकाओं को सम्मिलित करने के लिए और`Write()` प्रत्येक सेल में सामग्री जोड़ने के लिए। हम तालिका पंक्तियों, कोशिकाओं और पाठ के स्वरूपण को परिभाषित करने के लिए विभिन्न स्वरूपण गुणों का भी उपयोग करते हैं।
+## चरण 8: बॉडी रो डालें
 
-## चरण 4: दस्तावेज़ सहेजें
-अंत में, हमें फ़ॉर्मेट की गई तालिका वाले दस्तावेज़ को सहेजना होगा। निम्नलिखित कोड का उपयोग करें:
+मुख्य पंक्तियां सामग्री के साथ डालें:
 
 ```csharp
-// दस्तावेज़ सहेजें
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+अतिरिक्त पंक्तियों के लिए दोहराएँ:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## चरण 9: दस्तावेज़ सहेजें
+
+अंत में, दस्तावेज़ को निर्दिष्ट निर्देशिका में सहेजें:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-आउटपुट दस्तावेज़ के लिए सही पथ और फ़ाइल नाम निर्दिष्ट करना सुनिश्चित करें।
-
-### .NET के लिए Aspose.Words का उपयोग करके स्वरूपित तालिका के लिए नमूना स्रोत कोड 
-
-```csharp
-	// आपके दस्तावेज़ निर्देशिका का पथ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// तालिका में कम से कम एक पंक्ति मौजूद होने के बाद तालिका वाइड फ़ॉर्मेटिंग लागू की जानी चाहिए।
-	table.LeftIndent = 20.0;
-	// शीर्ष पंक्ति के लिए ऊंचाई निर्धारित करें और ऊंचाई नियम परिभाषित करें।
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// हमें इस सेल की चौड़ाई निर्दिष्ट करने की आवश्यकता नहीं है क्योंकि यह पिछली सेल से विरासत में मिली है।
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// ऊंचाई रीसेट करें और तालिका बॉडी के लिए एक अलग ऊंचाई नियम परिभाषित करें।
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// फ़ॉन्ट स्वरूपण रीसेट करें.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+इससे स्वरूपित तालिका के साथ एक वर्ड दस्तावेज़ निर्मित और सहेजा जाएगा।
 
 ## निष्कर्ष
-इस ट्यूटोरियल में, हमने सीखा कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में फ़ॉर्मेट की गई तालिका कैसे बनाई जाती है। इस चरण-दर-चरण मार्गदर्शिका का पालन करके और दिए गए C# कोड को लागू करके, आप अपने Word दस्तावेज़ों में प्रोग्रामेटिक रूप से विशिष्ट फ़ॉर्मेटिंग के साथ कस्टम टेबल बना सकते हैं। यह सुविधा आपको अपने डेटा को आकर्षक और व्यवस्थित तरीके से प्रस्तुत करने और संरचित करने की अनुमति देती है।
+
+और अब यह हो गया! इन चरणों का पालन करके, आप .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में एक अच्छी तरह से स्वरूपित तालिका बना सकते हैं। यह शक्तिशाली लाइब्रेरी Word दस्तावेज़ों को प्रोग्रामेटिक रूप से हेरफेर करना आसान बनाती है, जिससे आपका समय और प्रयास बचता है।
+
+## अक्सर पूछे जाने वाले प्रश्न
+
+### .NET के लिए Aspose.Words क्या है?
+.NET के लिए Aspose.Words, Word दस्तावेज़ों को प्रोग्रामेटिक रूप से बनाने, संपादित करने और परिवर्तित करने के लिए एक शक्तिशाली लाइब्रेरी है।
+
+### क्या मैं अलग-अलग पंक्तियों के लिए अलग-अलग रंगों का उपयोग कर सकता हूँ?
+हां, आप अलग-अलग पंक्तियों या कक्षों पर रंगों सहित अलग-अलग स्वरूपण लागू कर सकते हैं।
+
+### क्या Aspose.Words for .NET निःशुल्क है?
+ Aspose.Words for .NET एक सशुल्क लाइब्रेरी है, लेकिन आप एक प्राप्त कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/).
+
+### मैं .NET के लिए Aspose.Words का समर्थन कैसे प्राप्त करूं?
+ आप यहाँ से सहायता प्राप्त कर सकते हैं[Aspose सामुदायिक मंच](https://forum.aspose.com/c/words/8).
+
+### क्या मैं .NET के लिए Aspose.Words के साथ अन्य प्रकार के दस्तावेज़ बना सकता हूँ?
+हां, .NET के लिए Aspose.Words पीडीएफ, HTML और TXT सहित विभिन्न दस्तावेज़ स्वरूपों का समर्थन करता है।

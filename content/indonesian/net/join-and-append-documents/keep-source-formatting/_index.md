@@ -77,7 +77,7 @@ dstDoc.Save(dataDir + "MergedDocument.docx");
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami telah membahas cara menggabungkan dokumen Word sambil mempertahankan format asli menggunakan Aspose.Words untuk .NET. Pendekatan ini memastikan bahwa gaya, font, dan tata letak dari dokumen sumber diintegrasikan dengan mulus ke dalam dokumen tujuan, memberikan solusi yang kuat untuk tugas perakitan dokumen.
+Dalam tutorial ini, kami telah membahas cara menggabungkan dokumen Word sambil mempertahankan format asli menggunakan Aspose.Words untuk .NET. Pendekatan ini memastikan bahwa gaya, font, dan tata letak dari dokumen sumber diintegrasikan secara mulus ke dalam dokumen tujuan, memberikan solusi yang kuat untuk tugas perakitan dokumen.
 
 ## FAQ
 

@@ -63,7 +63,7 @@ Di sini, kita membuat tabel baru dan menambahkannya ke badan bagian pertama doku
 
 ## Langkah 3: Menambahkan Baris dan Sel
 
-Sebuah tabel terdiri dari baris dan sel. Mari tambahkan elemen ini langkah demi langkah.
+Sebuah tabel terdiri dari baris dan sel. Mari tambahkan elemen ini selangkah demi selangkah.
 
 ### Menambahkan Baris
 
@@ -100,7 +100,7 @@ Untuk mempercepat proses penambahan sel, kita bisa mengkloning sel yang sudah ad
 
 ```csharp
 // Kami kemudian akan mengulangi proses untuk sel dan baris lain dalam tabel.
-// Kita juga dapat mempercepatnya dengan mengkloning sel dan baris yang ada.
+//Kita juga dapat mempercepatnya dengan mengkloning sel dan baris yang ada.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Selamat! Anda telah berhasil menyisipkan tabel langsung ke dokumen Word mengguna
  Ya, Anda dapat meminta a[uji coba gratis](https://releases.aspose.com/) untuk mengevaluasi perpustakaan sebelum membeli.
 
 ### Bagaimana cara membeli Aspose.Words untuk .NET?
- Anda dapat membeli Aspose.Words untuk .NET dari[halaman pembelian](https://purchase.aspose.com/buy).
+Anda dapat membeli Aspose.Words untuk .NET dari[halaman pembelian](https://purchase.aspose.com/buy).
 
 ### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
  Dokumentasi tersedia[Di Sini](https://reference.aspose.com/words/net/).

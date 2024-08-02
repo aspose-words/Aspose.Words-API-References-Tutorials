@@ -16,12 +16,12 @@ Aspose.Words for .NET を使用してこれらのチュートリアルに従う�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [グループシェイプを追加](./add-group-shape/) | Aspose.Words for .NET を使用して、複数の図形を含むグループ図形を Word 文書に追加する方法を学びます。 |
-| [図形を挿入](./insert-shape/) | Aspose.Words for .NET を使用して Word 文書に図形を挿入する方法を学習します。 |
-| [アスペクト比が固定されています](./aspect-ratio-locked/) | Aspose.Words for .NET を使用して、Word 文書内の図形のアスペクト比をロックまたはロック解除する方法を学習します。 |
-| [セル内のレイアウト](./layout-in-cell/) | Aspose.Words for .NET を使用して、Word 文書の表セル内に図形をレイアウトする方法を学習します。 |
-| [切り取ったコーナーを追加](./add-corners-snipped/) | Aspose.Words for .NET を使用して、角を切り取った図形を Word 文書に追加する方法を学びます。 |
-| [実際の形状境界ポイントを取得する](./get-actual-shape-bounds-points/) | Aspose.Words for .NET を使用して、Word 文書内の図形の実際の境界をポイント (測定単位) 単位で取得する方法を学習します。 |
-| [垂直アンカー](./vertical-anchor/) | Aspose.Words for .NET の垂直アンカー機能を使用して、ドキュメント内で図形を垂直に配置する方法を学習します。|
-| [スマートアートシェイプの検出](./detect-smart-art-shape/) | Aspose.Words for .NET を使用して Word 文書内のスマート アート図形を検出し、グラフィカルな表現を識別する方法を学習します。 |
-| [スマートアート描画の更新](./update-smart-art-drawing/) | Aspose.Words for .NET を使用して Word 文書内の Smart Art 描画を更新する方法を学習します。 |
+| [グループシェイプを追加](./add-group-shape/) | この包括的なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書にグループ図形を追加する方法を学習します。 |
+| [図形を挿入](./insert-shape/) | ステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書に図形を挿入および操作する方法を学習します。 |
+| [アスペクト比が固定されています](./aspect-ratio-locked/) | Aspose.Words for .NET を使用して、Word 文書内の図形の縦横比を固定する方法を学びます。このステップ バイ ステップ ガイドに従って、画像と図形の比率を維持します。 |
+| [セル内のレイアウト](./layout-in-cell/) | この包括的なガイドでは、Aspose.Words for .NET を使用してセルのレイアウトを設定する方法を学習します。Word ドキュメントをカスタマイズしたい開発者に最適です。 |
+| [切り取ったコーナーを追加](./add-corners-snipped/) | Aspose.Words for .NET を使用して、Word 文書に角を切り取った図形を追加する方法を学びます。このステップ バイ ステップ ガイドにより、文書を簡単に強化できます。 |
+| [実際の形状境界ポイントを取得する](./get-actual-shape-bounds-points/) | Aspose.Words for .NET を使用して Word 文書内の実際の図形境界ポイントを取得する方法を説明します。この詳細なガイドで正確な図形操作を学習します。 |
+| [垂直アンカー](./vertical-anchor/) | Aspose.Words for .NET を使用して、Word 文書内のテキスト ボックスの垂直アンカー位置を設定する方法を学びます。簡単なステップ バイ ステップ ガイドが含まれています。|
+| [スマートアートシェイプの検出](./detect-smart-art-shape/) | この包括的なガイドでは、Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を説明します。ドキュメント ワークフローの自動化に最適です。 |
+| [スマートアート描画の更新](./update-smart-art-drawing/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の Smart Art 描画を更新する方法を説明します。ビジュアルが常に正確であることを確認します。 |

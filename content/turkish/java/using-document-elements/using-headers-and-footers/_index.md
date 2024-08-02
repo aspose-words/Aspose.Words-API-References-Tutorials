@@ -207,7 +207,7 @@ copyHeadersFootersFromPreciousSection yönteminin kaynak kodu
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for Java'da üstbilgi ve altbilgilerle çalışmanın temellerini ele aldık. Üstbilgi ve altbilgilerin nasıl oluşturulacağını, özelleştirileceğini ve stillendirileceğinin yanı sıra diğer önemli belge biçimlendirme tekniklerini de öğrendiniz.
+Bu eğitimde Aspose.Words for Java'da üstbilgiler ve altbilgilerle çalışmanın temellerini ele aldık. Üstbilgi ve altbilgilerin nasıl oluşturulacağını, özelleştirileceğini ve stillendirileceğinin yanı sıra diğer önemli belge biçimlendirme tekniklerini de öğrendiniz.
 
  Daha fazla ayrıntı ve gelişmiş özellikler için bkz.[Aspose.Words Java Belgeleri](https://reference.aspose.com/words/java/).
 

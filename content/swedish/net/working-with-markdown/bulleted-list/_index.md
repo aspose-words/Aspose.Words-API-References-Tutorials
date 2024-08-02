@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/bulleted-list/
 ---
 
-den här handledningen kommer vi att berätta för dig hur du skapar en punktlista med Aspose.Words för .NET. En punktlista används för att lista objekt utan att använda numrering.
+I den här handledningen kommer vi att berätta för dig hur du skapar en punktlista med Aspose.Words för .NET. En punktlista används för att lista objekt utan att använda numrering.
 
 ## Steg 1: Använda en dokumentgenerator
 

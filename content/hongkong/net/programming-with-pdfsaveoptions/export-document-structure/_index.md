@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/export-document-structure/
 
 在開始這趟旅程之前，讓我們先收集一下開始所需的所有必需品。
 
-- Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 - 開發環境：與 .NET 相容的開發環境，例如 Visual Studio。
 - 範例文件：Word 文件（例如，`Paragraphs.docx`）您將其轉換為 PDF。
 

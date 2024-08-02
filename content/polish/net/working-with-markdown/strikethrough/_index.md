@@ -53,7 +53,7 @@ Gratulacje! Nauczyłeś się teraz, jak zastosować styl przekreślonego tekstu 
 
 #### P: Jak mogę dodać przekreślony tekst w Aspose.Words?
 
- O: Aby dodać przekreślony tekst w Aspose.Words, możesz użyć metody`Font.StrikeThrough` własność`Run`obiekt. Możesz ustawić tę właściwość na`true` , aby dodać przekreślony tekst do określonego tekstu. Możesz na przykład użyć`run.Font.StrikeThrough=true` , aby dodać przekreślony tekst do pliku`Run` obiekt.
+ O: Aby dodać przekreślony tekst w Aspose.Words, możesz użyć metody`Font.StrikeThrough` własność`Run` obiekt. Możesz ustawić tę właściwość na`true` , aby dodać przekreślony tekst do określonego tekstu. Możesz na przykład użyć`run.Font.StrikeThrough=true` , aby dodać przekreślony tekst do pliku`Run` obiekt.
 
 #### P: Czy można dodać przekreślony tekst do kilku fragmentów tekstu w tym samym akapicie?
 

@@ -14,4 +14,4 @@ url: /hi/net/working-with-hyphenation/
 | --- | --- |
 | [भाषाओं के शब्दों को हाइफ़न करें](./hyphenate-words-of-languages/) | .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में विभिन्न भाषाओं में शब्दों को हाइफ़न करने का तरीका जानें। |
 | [भाषा के लिए हाइफ़नेशन शब्दकोश लोड करें](./load-hyphenation-dictionary-for-language/) |Aspose.Words for .NET में किसी विशिष्ट भाषा के लिए हाइफ़नेशन शब्दकोश लोड करना सीखें। |
-| [हाइफ़नेशन कॉलबैक](./hyphenation-callback/) | शब्द हाइफ़नेशन को संभालने के लिए .NET के लिए Aspose.Words में हाइफ़नेशन कॉलबैक का उपयोग करना सीखें। |
+| [हाइफ़नेशन कॉलबैक](./hyphenation-callback/) | शब्द हाइफ़नेशन को संभालने के लिए Aspose.Words for .NET में हाइफ़नेशन कॉलबैक का उपयोग करना सीखें। |

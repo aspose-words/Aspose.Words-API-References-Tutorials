@@ -38,7 +38,7 @@ Mielőtt belemerülne a kódba, győződjön meg arról, hogy a projekt készen 
 Nyissa meg a Visual Studio-t, és hozzon létre egy új Console App (.NET Core) projektet.
 
 ### 1.2. lépés: Az Aspose.Words for .NET telepítése
-Keresse meg a NuGet Package Manager alkalmazást, és telepítse az Aspose.Words for .NET programot. Ezt megteheti a Csomagkezelő konzolon keresztül:
+Keresse meg a NuGet Package Manager alkalmazást, és telepítse az Aspose.Words for .NET programot. Ezt a Csomagkezelő konzolon keresztül teheti meg:
 
 ```sh
 Install-Package Aspose.Words

@@ -83,7 +83,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
  Burada, her iki satırın da bulunup bulunmadığını ve bitişik olup olmadıklarını kontrol etmek için bir koşul ekliyoruz.`NextSibling` mülkiyet bitişikliği doğrulamamıza yardımcı olur.
 
-## Adım 5: Yer İşaretinin Sonunu Taşı
+## Adım 5: Yer İşaretinin Sonunu Taşıyın
 
 Son olarak, eğer koşullar karşılanırsa, yer imi bitiş düğümünü üst satırın son hücresindeki son paragrafın sonuna taşırız. Bu adım, yer imini etkili bir şekilde çözer.
 

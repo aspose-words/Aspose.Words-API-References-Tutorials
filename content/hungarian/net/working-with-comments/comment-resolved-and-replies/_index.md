@@ -2,34 +2,70 @@
 title: Megjegyzés megoldva és válaszok
 linktitle: Megjegyzés megoldva és válaszok
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan oldhatja fel a megjegyzéseket és a rájuk adott válaszokat a Word-dokumentumokban az Aspose.Words for .NET használatával.
+description: Automatizálja a Word-dokumentumok megjegyzéseinek feloldását és megválaszolását az Aspose.Words for .NET segítségével. Lépésről lépésre útmutató mellékelve.
 type: docs
 weight: 10
 url: /hu/net/working-with-comments/comment-resolved-and-replies/
 ---
+## Bevezetés
 
-Ebből az átfogó oktatóanyagból megtudhatja, hogyan oldhatja meg a megjegyzéseket és a rájuk adott válaszokat egy Word-dokumentumban az Aspose.Words for .NET használatával. Végigvezetjük a folyamaton, és biztosítjuk a szükséges C# kódrészleteket. Ennek az útmutatónak a végére kezelheti a megjegyzések felbontását, valamint frissítheti a megjegyzések állapotát és a rájuk adott válaszokat.
+Ha Word-dokumentumokkal dolgozik, valószínűleg foglalkozott a megjegyzésekkel. Együttműködésre kiválóan alkalmasak, de a kezelésük gondot okozhat. Az Aspose.Words for .NET segítségével automatizálhatja a megjegyzések feloldásának és megválaszolásának folyamatát. Ez az útmutató végigvezeti Önt az ehhez szükséges lépéseken.
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
-## 1. lépés: Töltse be a dokumentumot és a megjegyzéseket
-Kezdésként töltse be a megjegyzéseket tartalmazó dokumentumot a Dokumentum osztály segítségével, és nyissa meg a megjegyzésgyűjteményt:
+Búvárkodás előtt győződjön meg arról, hogy rendelkezik az alábbiakkal:
+
+1.  Aspose.Words for .NET: Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztési környezet: Beállítás .NET-keretrendszerrel.
+3. C# alapismeretek: a szintaxis és a fogalmak ismerete.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket. Ez biztosítja, hogy az összes szükséges osztály és metódus könnyen elérhető legyen.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+Bontsuk le a folyamatot egyszerű, könnyen követhető lépésekre. Minden lépés segít megérteni a kódot és annak funkcióit.
+
+## 1. lépés: Töltse be a dokumentumot
+
+ Kezdésként töltse be a megjegyzéseket tartalmazó Word dokumentumot. Használja a`Document` osztály erre.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+ Ez a kódsor inicializál egy újat`Document` objektumot a Word-dokumentum elérési útjával.
+
+## 2. lépés: A megjegyzések lekérése
+
+ Ezután be kell szereznünk a dokumentumban szereplő összes megjegyzést. Használjuk a`GetChildNodes` gyűjtemény lekérésének módszere`Comment` csomópontok.
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## 2. lépés: A megjegyzések és válaszaik megoldása
-Ezután ismételje meg a megjegyzéseket és válaszaikat, hogy megoldottként jelölje meg őket:
+Ez a kód lekéri a dokumentumban található összes megjegyzést, és eltárolja azokat a`NodeCollection`.
+
+## 3. lépés: Nyissa meg a szülői megjegyzést
+
+Példánkban a gyűjtemény első megjegyzésére fogunk összpontosítani. Ez lesz a szülői megjegyzésünk.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+ Itt átküldjük a gyűjtemény első csomópontját a`Comment` tárgy.
+
+## 4. lépés: Ismételje meg a válaszokat
+
+ Most nézzük át a szülő megjegyzésére adott válaszokat. Használjuk a`foreach` ciklus az egyes válaszok ismétléséhez.
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-fenti kódban elérjük a szülő megjegyzést, és a válaszokon keresztül iterálunk. Lekérhetjük a szülő megjegyzés azonosítóját és annak felbontási állapotát. Ezután minden megjegyzésre adott válasznál frissítjük a „Kész” jelölést, jelezve a megoldást.
+Ebben a ciklusban kinyomtatjuk az ős megjegyzés azonosítóját és állapotát (akár kész, akár nem). Ezután minden választ késznek jelölünk.
 
-## 3. lépés: Mentse el a dokumentumot
-A megjegyzések feloldása és állapotfrissítése után mentse a módosított dokumentumot fájlba a Dokumentum osztály Mentés metódusával:
+## 5. lépés: Mentse el a dokumentumot
+
+Végül mentse el a módosított dokumentumot a könyvtárába.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### Példa forráskód megjegyzések és válaszaik feloldásához az Aspose.Words for .NET használatával
-Íme a teljes forráskód a megjegyzések és a rájuk adott válaszok megoldásához az Aspose.Words for .NET használatával:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-Ne felejtse el módosítani a kódot saját igényei szerint, beleértve a dokumentumfájl elérési útját és a további testreszabásokat
+Ez a kód egy új dokumentumba menti a módosításokat, így biztosítva, hogy az eredeti fájl érintetlen maradjon.
 
 ## Következtetés
-Gratulálunk! Sikeresen megtanulta, hogyan lehet feloldani a megjegyzéseket és a rájuk adott válaszokat egy Word-dokumentumban az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével és a mellékelt forráskód használatával mostantól kezelheti a megjegyzések felbontását, és igénye szerint frissítheti a megjegyzések és válaszaik állapotát.
 
-A megjegyzésfeloldás segít a visszajelzések nyomon követésében és kezelésében a dokumentumon belül. Kísérletezzen a különböző megjegyzésállapotokkal, és szabja testre azokat, hogy javítsa az együttműködést és a dokumentumok áttekintési folyamatait.
+A Word-dokumentumokban lévő megjegyzések kezelésének nem kell manuális munkának lennie. Az Aspose.Words for .NET segítségével automatizálhatja a folyamatot, így időt takaríthat meg és csökkentheti a hibákat. Kövesse ezt az útmutatót a dokumentumaiban lévő megjegyzések hatékony megoldásához és megválaszolásához.
 
-### GYIK
+## GYIK
 
-#### K: Hogyan oldhatok meg egy megjegyzést az Aspose.Words for .NET-ben?
+### Automatizálhatok más megjegyzésekkel kapcsolatos feladatokat az Aspose.Words for .NET segítségével?  
+Igen, automatizálhat különféle feladatokat, például megjegyzések hozzáadását, törlését és módosítását.
 
- V: Az Aspose.Words for .NET-ben található megjegyzések megoldásához használhatja a`Comment.Resolve` módszer, amely meghatározza a`Comment` feloldani kívánt objektumot. Ezzel megoldottként jelöli meg a megjegyzést, és elrejti a végleges dokumentumban.
+### Az Aspose.Words for .NET kompatibilis a .NET Core-al?  
+Igen, az Aspose.Words for .NET támogatja a .NET-keretrendszert és a .NET Core-t is.
 
-#### K: Hogyan adhatok választ egy megoldott megjegyzésre az Aspose.Words for .NET-ben?
+### Hogyan szerezhetem be az Aspose.Words for .NET ingyenes próbaverzióját?  
+ Ingyenes próbaverziót letölthet a webhelyről[itt](https://releases.aspose.com/).
 
- V: Bár a megoldott megjegyzések alapértelmezés szerint el vannak rejtve a végleges dokumentumban, továbbra is hozzáadhat választ a megoldott megjegyzésekre a`Comment.AddReply`metódus, amely megadja a válaszszöveget és azt, hogy hol szeretné hozzáadni.
+### Használhatom az Aspose.Words for .NET-et más dokumentumtípusokkal való együttműködéshez?  
+Igen, az Aspose.Words különféle formátumokat támogat, beleértve a DOCX, PDF, HTML és egyebeket.
 
-#### K: Hogyan tekinthetem meg a megoldott megjegyzéseket az Aspose.Words for .NET-ben?
-
- V: Alapértelmezés szerint a feloldott megjegyzések el vannak rejtve a végleges dokumentumban. Megmutathatja azonban őket a`CommentOptions.ShowResolvedComments` tulajdona a`Document` objektumot és annak beállítását`true`.
-
-#### K: Hogyan rejthetem el az összes megjegyzést, beleértve a válaszokat is, az Aspose.Words for .NET-ben?
-
- V: Ha az Aspose.Words for .NET-ben el szeretné rejteni az összes megjegyzést, beleértve a válaszokat is, használja a`CommentOptions.CommentDisplayMode` tulajdona a`Document` objektumot, és állítsa be`CommentDisplayMode.None`.
-
-#### K: Szerkeszthetem egy megoldott megjegyzés szövegét az Aspose.Words for .NET-ben?
-
- V: Igen, szerkesztheti egy megoldott megjegyzés szövegét az Aspose.Words for .NET-ben a`Comment.Text` a megfelelő tulajdonsága`Comment` objektumot, és szükség szerint módosítani kell a szöveget.
+### Hol találom az Aspose.Words for .NET részletes dokumentációját?  
+ Hozzáférhet a dokumentációhoz[itt](https://reference.aspose.com/words/net/).

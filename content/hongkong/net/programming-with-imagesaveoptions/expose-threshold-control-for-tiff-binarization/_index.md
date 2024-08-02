@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBin
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 在 Word 文件中公開 TIFF 二值化的閾值控制。這個強大的程式庫使您可以輕鬆地以各種方式操作 Word 文檔，包括使用自訂設定將它們轉換為不同的格式。嘗試一下，看看它如何簡化您的文件處理任務！
+現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 在 Word 文件中公開 TIFF 二值化的閾值控制。這個功能強大的庫可以輕鬆地以各種方式操作 Word 文檔，包括使用自訂設定將其轉換為不同的格式。嘗試一下，看看它如何簡化您的文件處理任務！
 
 ## 常見問題解答
 

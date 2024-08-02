@@ -16,7 +16,7 @@ Selam! .NET kullanarak Word belgelerini programlı olarak nasıl değiştireceğ
 Başlamadan önce ihtiyacınız olacak birkaç şey var:
 
 1. Temel C# Bilgisi: Uzman olmanıza gerek yok, ancak temel C# anlayışı faydalı olacaktır.
-2.  Aspose.Words for .NET: Yapabilirsin[buradan indir](https://releases.aspose.com/words/net/) Hemen satın almak istemiyorsanız,[ücretsiz deneme](https://releases.aspose.com/).
+2.  Aspose.Words for .NET: Yapabilirsin[buradan indir](https://releases.aspose.com/words/net/) . Hemen satın almak istemiyorsanız,[ücretsiz deneme](https://releases.aspose.com/).
 3. Visual Studio: Herhangi bir sürüm çalışmalıdır ancak en son sürüm önerilir.
 4. .NET Framework: Makinenizde kurulu olduğundan emin olun.
 
@@ -66,7 +66,7 @@ Artık bölümlerimiz olduğuna göre, içeriklerini değiştirebilmek için onl
 Section section = doc.Sections[2];
 ```
 
- Bu adımda belgemizin üçüncü bölümüne ulaşıyoruz. Unutmayın, endeks sıfır tabanlıdır, dolayısıyla`Sections[2]` üçüncü bölüme atıfta bulunmaktadır.
+Bu adımda belgemizin üçüncü bölümüne ulaşıyoruz. Unutmayın, endeks sıfır tabanlıdır, dolayısıyla`Sections[2]` üçüncü bölüme atıfta bulunmaktadır.
 
 ## Adım 4: İçeriği Bir Bölüme Ekleme
 
@@ -102,7 +102,7 @@ Burada belgeyi "output.docx" olarak kaydediyoruz. Değişiklikleri görmek için
 
 ## Çözüm
 
- İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki bölümleri başarıyla değiştirdiniz. Bu eğitimde belge oluşturmanın, bölümleri eklemenin ve içeriklerini değiştirmenin temelleri anlatıldı. Aspose.Words ile çok daha karmaşık işlemleri gerçekleştirebilirsiniz, bu yüzden keşfetmekten çekinmeyin.[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş özellikler için.
+İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki bölümleri başarıyla değiştirdiniz. Bu eğitimde belge oluşturmanın, bölümleri eklemenin ve içeriklerini değiştirmenin temelleri anlatıldı. Aspose.Words ile çok daha karmaşık işlemleri gerçekleştirebilirsiniz, bu yüzden keşfetmekten çekinmeyin.[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş özellikler için.
 
 ## SSS
 
@@ -116,7 +116,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ## 3. Aspose.Words for .NET'in ana özellikleri nelerdir?
 
-Aspose.Words for .NET, belge oluşturma, biçimlendirme, dönüştürme ve işleme gibi çok çeşitli özellikler sunar. Yetenekleri hakkında daha fazla bilgiyi şuradan okuyabilirsiniz.[API belgeleri](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET, belge oluşturma, biçimlendirme, dönüştürme ve işleme gibi çok çeşitli özellikler sunar. Yetenekleri hakkında daha fazla bilgiyi şuradan okuyabilirsiniz.[API belgeleri](https://reference.aspose.com/words/net/).
 
 ## 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

@@ -2,55 +2,37 @@
 title: Insira ASKField sem o Document Builder
 linktitle: Insira ASKField sem o Document Builder
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como inserir um campo ASK em seus documentos do Word com Aspose.Words for .NET.
+description: Aprenda como inserir um campo ASK sem usar o Document Builder no Aspose.Words for .NET. Siga este guia para aprimorar seus documentos do Word de forma dinâmica.
 type: docs
 weight: 10
 url: /pt/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## Introdução
 
-Aqui está um guia passo a passo para explicar o código-fonte C# abaixo, que usa o recurso "Inserir um campo ASK sem DocumentBuilder" do Aspose.Words for .NET. Certifique-se de seguir cada etapa cuidadosamente para obter os resultados desejados.
+Você está procurando dominar a automação de documentos com Aspose.Words for .NET? Você veio ao lugar certo! Hoje, orientaremos você sobre como inserir um campo ASK sem usar um Document Builder. Este é um recurso interessante quando você deseja que seu documento solicite aos usuários informações específicas, tornando seus documentos do Word mais interativos e dinâmicos. Então, vamos mergulhar e tornar seus documentos mais inteligentes!
 
-## Etapa 1: configuração do diretório de documentos
+## Pré-requisitos
 
-No código fornecido, você deve especificar o diretório dos seus documentos. Substitua o valor "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho apropriado para o diretório de documentos.
+Antes de sujarmos as mãos com algum código, vamos garantir que temos tudo configurado:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET: Certifique-se de ter esta biblioteca instalada. Caso contrário, você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: um IDE adequado como o Visual Studio.
+3. .NET Framework: certifique-se de ter o .NET Framework instalado.
 
-## Etapa 2: Criando o Documento e o Parágrafo
+Ótimo! Agora que está tudo pronto, vamos começar importando os namespaces necessários.
 
-Começamos criando um novo documento e buscando o primeiro parágrafo.
+## Importar namespaces
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## Passo 3: Inserindo o campo ASK
-
- Nós usamos o`AppendField()` método para inserir um campo ASK no parágrafo.
+Primeiramente, precisamos importar o namespace Aspose.Words para acessar todos os recursos do Aspose.Words for .NET. Veja como você faz isso:
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Em seguida, configuramos as diversas propriedades do campo ASK especificando os valores desejados.
+## Etapa 1: crie um novo documento
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
- Por fim, chamamos o`Update()` método para atualizar o campo.
-
-```csharp
-field. Update();
-```
-
-### Exemplo de código fonte para inserir um campo ASK sem DocumentBuilder com Aspose.Words for .NET
+Antes de podermos inserir um campo ASK, precisamos de um documento para trabalhar. Veja como criar um novo documento:
 
 ```csharp
 // O caminho para o diretório de documentos.
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Criação de documentos.
 Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
+Este trecho de código configura um novo documento do Word onde adicionaremos nosso campo ASK.
+
+## Etapa 2: acesse o nó do parágrafo
+
+Em um documento do Word, o conteúdo é organizado em nós. Precisamos acessar o nó do primeiro parágrafo onde inseriremos nosso campo ASK:
+
+```csharp
+Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
+
+Esta linha de código recupera o primeiro parágrafo do documento, pronto para a inserção do nosso campo ASK.
+
+## Etapa 3: insira o campo ASK
+
+Agora vamos ao evento principal – inserir o campo ASK. Este campo solicitará a entrada do usuário quando o documento for aberto.
+
+```csharp
 // Insira o campo ASK.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+Aqui, anexamos um campo ASK ao parágrafo. Simples, certo?
 
-field. Update();
+## Etapa 4: configurar o campo ASK
 
+Precisamos definir algumas propriedades para definir como o campo ASK se comporta. Vamos configurar o nome do marcador, o texto do prompt, a resposta padrão e o comportamento da mala direta:
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName: Um identificador exclusivo para o campo ASK.
+- PromptText: o texto que solicita entrada do usuário.
+- DefaultResponse: a resposta pré-preenchida que o usuário pode alterar.
+- PromptOnceOnMailMerge: determina se o prompt aparece apenas uma vez durante uma mala direta.
+
+## Etapa 5: atualize o campo
+
+Após configurar o campo ASK, precisamos atualizá-lo para garantir que todas as configurações sejam aplicadas corretamente:
+
+```csharp
+field.Update();
+```
+
+Este comando garante que nosso campo ASK esteja pronto e configurado corretamente no documento.
+
+## Etapa 6: salve o documento
+
+Finalmente, vamos salvar o documento em nosso diretório especificado:
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-Neste exemplo, criamos um novo documento, inserimos um campo ASK sem usar o DocumentBuilder, configuramos as diversas propriedades do campo e salvamos o documento com um nome de arquivo especificado.
+Esta linha salva o documento com o campo ASK inserido. E aí está – seu documento agora está equipado com um campo ASK dinâmico!
 
-Isso conclui nosso guia sobre como usar o recurso "Inserir campo ASK sem DocumentBuilder" com Aspose.Words for .NET.
+## Conclusão
 
-### Perguntas frequentes
+Parabéns! Você acabou de adicionar um campo ASK a um documento do Word usando Aspose.Words for .NET sem o Document Builder. Esse recurso pode melhorar significativamente a interação do usuário com seus documentos, tornando-os mais flexíveis e fáceis de usar. Continue experimentando diferentes campos e propriedades para desbloquear todo o potencial do Aspose.Words. Boa codificação!
 
-#### P: O que é um campo ASK no Aspose.Words?
+## Perguntas frequentes
 
-R: Um campo ASK no Aspose.Words é usado para fazer uma pergunta ao usuário ao abrir um documento. Muitas vezes é usado para solicitar informações ou comentários específicos que podem variar de usuário para usuário.
+### O que é um campo ASK no Aspose.Words?
+Um campo ASK em Aspose.Words é um campo que solicita ao usuário uma entrada específica quando o documento é aberto, permitindo a entrada dinâmica de dados.
 
-#### P: Como inserir o campo ASK em um documento do Word sem usar o Document Builder no Aspose.Words?
+### Posso usar vários campos ASK em um único documento?
+Sim, você pode inserir vários campos ASK em um documento, cada um com prompts e respostas exclusivos.
 
-R: Para inserir um campo ASK em um documento do Word sem usar o Document Builder no Aspose.Words, você pode seguir estas etapas:
+###  Qual é o propósito do`PromptOnceOnMailMerge` property?
+ O`PromptOnceOnMailMerge` A propriedade determina se o prompt ASK aparece apenas uma vez durante uma operação de mala direta ou sempre.
 
-1. Importe a classe Documento e Campo do namespace Aspose.Words.Fields.
-2. Crie uma instância de Document carregando seu documento existente.
-3. Use o método InsertField para inserir um campo ASK especificando o nome da pergunta.
-4. Salve o documento.
+### Preciso atualizar o campo ASK depois de definir suas propriedades?
+Sim, a atualização do campo ASK garante que todas as propriedades sejam aplicadas corretamente e que o campo funcione conforme o esperado.
 
-#### P: Como obtenho a resposta do usuário para um campo ASK em um documento do Word?
-
-R: Para obter a resposta do usuário para um campo ASK em um documento do Word, você pode usar o método GetFieldNames disponível na classe Document. Este método retorna uma lista com os nomes dos campos presentes no documento. Você pode então verificar se o nome do campo ASK está presente na lista e recuperar a resposta associada.
-
-#### P: O campo ASK pode ser usado para solicitar mais informações do usuário?
-
-R: Sim, o campo ASK pode ser usado para solicitar diversas informações do usuário. Você pode inserir vários campos ASK em seu documento, cada um com uma pergunta diferente. Quando o documento for aberto, o usuário será solicitado a fornecer as respostas correspondentes.
+### Posso personalizar o texto do prompt e a resposta padrão?
+Absolutamente! Você pode definir textos de prompt personalizados e respostas padrão para adaptar o campo ASK às suas necessidades específicas.

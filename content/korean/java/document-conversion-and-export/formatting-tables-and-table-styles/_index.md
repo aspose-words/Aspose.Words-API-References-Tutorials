@@ -12,7 +12,7 @@ url: /ko/java/document-conversion-and-export/formatting-tables-and-table-styles/
 
 표는 문서의 정보를 구조화하고 구성하는 데 중요한 역할을 합니다. Aspose.Words for Java는 테이블 서식을 지정하고 테이블 스타일을 적용하여 문서의 시각적 매력을 향상시키는 강력한 기능을 제공합니다. 이 단계별 가이드에서는 Aspose.Words for Java를 사용하여 테이블 형식 지정 및 테이블 스타일 적용의 다양한 측면을 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 세부 사항을 살펴보기 전에 Aspose.Words for Java 라이브러리가 프로젝트에 통합되어 있는지 확인하세요. Aspose 웹사이트에서 다운로드할 수 있습니다:[Java용 Aspose.Words 다운로드](https://releases.aspose.com/words/java/).
 

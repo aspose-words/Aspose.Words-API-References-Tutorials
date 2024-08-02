@@ -56,7 +56,7 @@ Mã này lưu từng phần phân tách bằng tên tệp như "split-part-1.doc
 Để phân chia tài liệu theo từ khóa, bạn có thể duyệt qua nội dung của tài liệu và tìm từ khóa. Khi bạn tìm thấy nó, hãy tạo một tài liệu mới và thêm nội dung vào thời điểm đó.
 
 ### Tôi có thể chia tài liệu thành tệp PDF không?
-Có, bạn có thể. Sau khi tách tài liệu bằng Aspose.Words for Java, bạn có thể sử dụng Aspose.PDF for Java để lưu từng phần dưới dạng tệp PDF.
+Vâng, bạn có thể. Sau khi tách tài liệu bằng Aspose.Words for Java, bạn có thể sử dụng Aspose.PDF for Java để lưu từng phần dưới dạng tệp PDF.
 
 ### Aspose.Words cho Java có được sử dụng miễn phí không?
 Aspose.Words for Java là một thư viện thương mại nhưng nó cung cấp bản dùng thử miễn phí. Bạn có thể kiểm tra giá cả và giấy phép của họ trên trang web của họ.

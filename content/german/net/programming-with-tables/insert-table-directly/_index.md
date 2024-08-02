@@ -100,7 +100,7 @@ Um das Hinzufügen von Zellen zu beschleunigen, können wir vorhandene Zellen kl
 
 ```csharp
 // Wir würden den Vorgang dann für die anderen Zellen und Zeilen in der Tabelle wiederholen.
-// Wir können die Dinge auch beschleunigen, indem wir vorhandene Zellen und Zeilen klonen.
+//Wir können die Dinge auch beschleunigen, indem wir vorhandene Zellen und Zeilen klonen.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Herzlichen Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich eine T
  Ja, Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) um die Bibliothek vor dem Kauf zu bewerten.
 
 ### Wie kaufe ich Aspose.Words für .NET?
- Sie können Aspose.Words für .NET kaufen bei der[Kaufseite](https://purchase.aspose.com/buy).
+Sie können Aspose.Words für .NET kaufen bei der[Kaufseite](https://purchase.aspose.com/buy).
 
 ### Wo finde ich die Dokumentation für Aspose.Words für .NET?
  Die Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).

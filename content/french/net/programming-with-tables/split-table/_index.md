@@ -2,96 +2,121 @@
 title: Tableau divisé
 linktitle: Tableau divisé
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment diviser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment diviser des tableaux dans des documents Word à l'aide d'Aspose.Words pour .NET. Notre guide étape par étape rend la gestion des tables simple et efficace.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/split-table/
 ---
+## Introduction
 
-Dans ce didacticiel, nous allons apprendre à diviser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous pourrez diviser un tableau d'une certaine ligne dans vos documents Word.
+Vous êtes-vous déjà retrouvé à travailler avec un grand tableau dans un document Word et souhaiteriez-vous pouvoir le diviser en deux tableaux plus petits et plus faciles à gérer ? Eh bien, aujourd'hui, nous examinons exactement comment vous pouvez y parvenir en utilisant Aspose.Words pour .NET. Que vous ayez affaire à des tableaux de données volumineux ou à des structures de documents complexes, le fractionnement des tableaux peut contribuer à améliorer la lisibilité et l'organisation. Explorons le processus étape par étape pour diviser une table à l'aide d'Aspose.Words pour .NET.
 
-## Étape 1 : Configuration du projet
-1. Lancez Visual Studio et créez un nouveau projet C#.
-2. Ajoutez une référence à la bibliothèque Aspose.Words pour .NET.
+## Conditions préalables
 
-## Étape 2 : Chargement du document
-Pour démarrer le traitement de texte avec le document, procédez comme suit :
+Avant de passer au didacticiel, assurez-vous d'avoir les éléments suivants :
 
-```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Bibliothèque Aspose.Words pour .NET : assurez-vous d'avoir téléchargé et installé la bibliothèque Aspose.Words pour .NET. Vous pouvez l'obtenir auprès du[Page des versions d'Aspose](https://releases.aspose.com/words/net/).
+2. Environnement de développement : configurez un environnement de développement avec la prise en charge du framework .NET, tel que Visual Studio.
+3. Exemple de document : préparer un document Word (`Tables.docx`) avec au moins une table pour appliquer l'opération de fractionnement.
 
-// Charger le document
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Importer des espaces de noms
 
-Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel d'accès à votre répertoire de documents et fournissez le nom de fichier correct.
-
-## Étape 3 : Diviser la table
-Ensuite, nous diviserons le tableau d'une certaine ligne. Utilisez le code suivant :
+Tout d’abord, importez les espaces de noms nécessaires dans votre projet. Cela vous permet d'accéder aux classes et méthodes fournies par Aspose.Words.
 
 ```csharp
-// Récupérer le premier tableau
-Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-// Détermination de la ligne à partir de laquelle diviser le tableau
-Row row = firstTable.Rows[2];
-
-// Créer un nouveau conteneur pour la table fractionnée
-Table table = (Table)firstTable.Clone(false);
-
-// Insérez le conteneur après le tableau d'origine
-firstTable.ParentNode.InsertAfter(table, firstTable);
-
-// Ajouter un paragraphe tampon pour maintenir une distance entre les tableaux
-firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
-
-// Déplacer les lignes de la table d'origine vers la table fractionnée
-Row currentRow;
-do
-{
-currentRow = firstTable.LastRow;
-table. PrependChild(currentRow);
-} while (currentRow != row);
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Ici, nous utilisons le document pour récupérer la première table du nœud de document. Ensuite, nous déterminons la ligne à partir de laquelle nous voulons diviser le tableau, dans cet exemple il s'agit de la troisième ligne (index 2). Nous créons ensuite un nouveau conteneur en clonant la table d'origine, puis l'insérons après la table d'origine. Nous ajoutons également un paragraphe tampon pour maintenir une distance entre les deux tableaux. Ensuite, nous déplaçons les lignes de la table d'origine vers la table fractionnée à l'aide d'une boucle do-while jusqu'à ce que nous atteignions la ligne spécifiée.
+## Étape 1 : Charger le document
 
-## Étape 4 : Sauvegarde du document modifié
-Enfin, nous devons sauvegarder le
-
-  document modifié avec la table fractionnée. Utilisez le code suivant :
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
-```
-
-Assurez-vous de spécifier le chemin et le nom de fichier corrects pour le document de sortie.
-
-### Exemple de code source pour Split Table à l'aide d'Aspose.Words pour .NET 
+Commençons par charger le document contenant le tableau que vous souhaitez diviser. Assurez-vous de spécifier le chemin correct vers votre document.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
-Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// Nous diviserons le tableau à la troisième ligne (incluse).
+```
+
+## Étape 2 : Identifiez la table à diviser
+
+Ensuite, identifiez et récupérez la table que vous souhaitez diviser. Dans cet exemple, nous ciblerons le premier tableau du document.
+
+```csharp
+Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Étape 3 : Sélectionnez la ligne à diviser
+
+Déterminez la ligne où vous souhaitez diviser le tableau. Ici, nous divisons le tableau à la troisième ligne (incluse).
+
+```csharp
 Row row = firstTable.Rows[2];
-// Créez un nouveau conteneur pour la table fractionnée.
-Table table = (Table) firstTable.Clone(false);
-// Insérez le récipient après l'original.
+```
+
+## Étape 4 : Créer un nouveau conteneur de table
+
+Créez un nouveau conteneur de table pour contenir les lignes qui seront déplacées de la table d'origine.
+
+```csharp
+Table table = (Table)firstTable.Clone(false);
+```
+
+## Étape 5 : Insérez le nouveau conteneur de table
+
+Insérez le nouveau conteneur de table juste après la table d'origine dans le document.
+
+```csharp
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// Ajoutez un paragraphe tampon pour garantir que les tableaux restent séparés.
+```
+
+## Étape 6 : ajouter un paragraphe tampon
+
+Ajoutez un paragraphe tampon entre les deux tableaux pour garantir qu'ils restent séparés.
+
+```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
+```
+
+## Étape 7 : déplacer les lignes vers la nouvelle table
+
+Déplacez les lignes de la table d'origine vers le nouveau conteneur de table. Cette boucle continue jusqu'à ce que la ligne spécifiée (incluse) soit déplacée.
+
+```csharp
 Row currentRow;
 do
 {
-	currentRow = firstTable.LastRow;
-	table.PrependChild(currentRow);
+    currentRow = firstTable.LastRow;
+    table.PrependChild(currentRow);
 } while (currentRow != row);
+```
+
+## Étape 8 : Enregistrez le document
+
+Enfin, enregistrez le document modifié avec les tableaux divisés.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à diviser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide étape par étape et en implémentant le code C# fourni, vous pouvez facilement diviser les tableaux d'une certaine ligne dans vos documents Word.
+
+Et voila! En suivant ces étapes, vous pouvez facilement diviser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Cette approche vous aide à gérer plus efficacement les grands tableaux, améliorant ainsi la lisibilité et l’organisation de vos documents. Essayez-le et voyez comment il simplifie votre travail avec les tableaux dans les documents Word.
+
+## FAQ
+
+### Puis-je diviser un tableau en plusieurs lignes ?
+Oui, vous pouvez diviser un tableau sur plusieurs lignes en répétant le processus pour chaque point de partage.
+
+### Qu'arrive-t-il au formatage du tableau d'origine ?
+Le nouveau tableau hérite du formatage du tableau d'origine. Toute modification de formatage spécifique peut être appliquée au nouveau tableau selon les besoins.
+
+### Est-il possible de fusionner à nouveau les tables ?
+Oui, vous pouvez fusionner des tables en déplaçant des lignes d'une table à une autre en utilisant des méthodes similaires.
+
+### Cette méthode fonctionne-t-elle avec des tables imbriquées ?
+Oui, Aspose.Words for .NET prend également en charge les opérations sur les tables imbriquées.
+
+### Puis-je automatiser ce processus pour plusieurs documents ?
+Absolument! Vous pouvez créer un script ou une application pour automatiser le processus de fractionnement de table pour plusieurs documents.

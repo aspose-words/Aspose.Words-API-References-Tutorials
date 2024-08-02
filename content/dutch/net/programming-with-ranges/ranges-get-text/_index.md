@@ -9,7 +9,7 @@ url: /nl/net/programming-with-ranges/ranges-get-text/
 ---
 ## Invoering
 
-Heeft u ooit programmatisch tekst uit een Word-document moeten extraheren? Of u nu de documentverwerking automatiseert of eenvoudigweg specifieke inhoud uit een Word-bestand wilt halen, Aspose.Words voor .NET staat voor u klaar. Met deze krachtige bibliotheek kunt u gemakkelijk Word-documenten manipuleren en krachtige hulpmiddelen bieden voor het extraheren, bewerken en maken van inhoud. In deze zelfstudie leiden we u door het proces van het extraheren van tekst uit een Word-document met Aspose.Words voor .NET, waarbij we dit stap voor stap opsplitsen om ervoor te zorgen dat u dit naadloos kunt volgen.
+Heeft u ooit programmatisch tekst uit een Word-document moeten extraheren? Of u nu de documentverwerking automatiseert of eenvoudigweg specifieke inhoud uit een Word-bestand wilt halen, Aspose.Words voor .NET staat voor u klaar. Met deze krachtige bibliotheek kunt u gemakkelijk Word-documenten manipuleren en krachtige hulpmiddelen bieden voor het extraheren, bewerken en maken van inhoud. In deze zelfstudie leiden we u door het proces van het extraheren van tekst uit een Word-document met Aspose.Words voor .NET, waarbij we dit stap voor stap opsplitsen om ervoor te zorgen dat u dit probleemloos kunt volgen.
 
 ## Vereisten
 

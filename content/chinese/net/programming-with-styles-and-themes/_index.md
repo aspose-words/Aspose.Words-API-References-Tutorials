@@ -16,8 +16,8 @@ Aspose.Words for .NET 教程“在 Word 文档中使用主题和样式”为学�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [访问样式](./access-styles/) | 了解如何使用 Aspose.Words for .NET 访问文档样式。完整的教程来操作文档的样式。 |
-| [复制样式](./copy-styles/) | 了解如何使用 Aspose.Words for .NET 在文档之间复制样式。 |
-| [获取主题属性](./get-theme-properties/) | 使用 Aspose.Words for .NET 探索文档的主题属性。自定义样式和颜色以获得独特的外观。 |
-| [设置主题属性](./set-theme-properties/) | 学习使用 Aspose.Words for .NET 更改主题属性来自定义文档的外观。获得专业且有吸引力的结果。 |
-| [插入式分隔符](./insert-style-separator/) | 学习创建具有自定义样式的文档并插入样式分隔符以实现精确、专业的格式。 |
+| [在 Word 中获取文档样式](./access-styles/) | 通过本详细的分步教程学习如何使用 Aspose.Words for .NET 在 Word 中获取文档样式。在 .NET 应用程序中以编程方式访问和管理样式。 |
+| [复制 Word 文档样式](./copy-styles/) | 了解如何使用 Aspose.Words for .NET 复制 Word 文档样式。按照我们的分步指南，轻松确保文档格式一致。 |
+| [在 Word 中获取文档主题属性](./get-theme-properties/) | 了解如何使用 Aspose.Words for .NET 访问和管理 Word 中的文档主题属性。通过我们的指南学习如何检索字体和颜色。 |
+| [在 Word 文档中设置主题属性](./set-theme-properties/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置主题属性。按照我们的分步指南轻松自定义字体和颜色。 |
+| [在 Word 中插入文档样式分隔符](./insert-style-separator/) | 了解如何使用 Aspose.Words for .NET 在 Word 中插入文档样式分隔符。本指南提供了管理文档样式的说明和技巧。 |

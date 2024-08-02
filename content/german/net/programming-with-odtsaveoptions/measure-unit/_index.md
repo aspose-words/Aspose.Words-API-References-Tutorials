@@ -91,5 +91,5 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgest
 ### Wo finde ich Dokumentation für Aspose.Words für .NET?
  Eine ausführliche Dokumentation zu Aspose.Words für .NET finden Sie unter[dieser Link](https://reference.aspose.com/words/net/).
 
-### Wie kann ich Support für Aspose.Words für .NET erhalten?
+### Wie erhalte ich Support für Aspose.Words für .NET?
  Für Unterstützung können Sie das Aspose.Words-Forum unter besuchen.[dieser Link](https://forum.aspose.com/c/words/8).

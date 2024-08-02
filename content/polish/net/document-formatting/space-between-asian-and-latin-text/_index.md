@@ -2,7 +2,7 @@
 title: Odstęp między tekstem azjatyckim i łacińskim w dokumencie programu Word
 linktitle: Odstęp między tekstem azjatyckim i łacińskim w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak automatycznie dostosowywać odstępy między tekstem azjatyckim i łacińskim w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku.
+description: Dowiedz się, jak automatycznie dostosowywać odstępy między tekstem azjatyckim i łacińskim w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/document-formatting/space-between-asian-and-latin-text/

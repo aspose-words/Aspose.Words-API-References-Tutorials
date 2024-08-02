@@ -16,5 +16,5 @@ Aspose.Words for .NET 教程“使用目录进行文字处理”将引导您完�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [在 Word 文档中更改目录样式](./change-style-of-toc-level/) | 了解如何使用 Aspose.Words for .NET 轻松更改 Word 文档中目录级别的样式。 |
-| [更改 Word 文档中的目录制表位](./change-toc-tab-stops/) | 了解如何使用 Aspose.Words for .NET 更改 Word 文档中的目录选项卡。 |
+| [在 Word 文档中更改目录样式](./change-style-of-toc-level/) | 通过本分步指南了解如何使用 Aspose.Words for .NET 更改 Word 文档中的目录样式。轻松自定义目录。 |
+| [更改 Word 文档中的目录制表位](./change-toc-tab-stops/) | 了解如何使用 Aspose.Words for .NET 更改 Word 文档中的目录制表位。本分步指南将帮助您创建具有专业外观的目录。 |

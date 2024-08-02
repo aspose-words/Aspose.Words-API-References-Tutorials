@@ -18,7 +18,7 @@ Aspose.Words for Java는 Java 개발자가 문서 처리의 다양한 측면을 
 
 문서 목록 작업에 대해 자세히 알아보기 전에 모든 것이 올바르게 설정되었는지 확인하겠습니다.
 
-### 전제조건
+### 전제 조건
 
 - 시스템에 JDK(Java Development Kit)가 설치되어 있습니다.
 - Java 라이브러리용 Aspose.Words가 다운로드되어 프로젝트에 추가되었습니다.

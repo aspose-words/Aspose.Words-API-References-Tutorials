@@ -12,9 +12,9 @@ Podziel dokument to wszechstronne źródło wyjaśniające, jak podzielić dokum
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Według nagłówków HTML](./by-headings-html/) | Przewodnik krok po kroku wyjaśniający kod źródłowy C# funkcji By Heading HTML w Aspose.Words dla .NET |
-| [Według sekcji HTML](./by-sections-html/) | Dowiedz się, jak podzielić dokument programu Word na sekcje HTML przy użyciu Aspose.Words dla .NET z pełnym przykładem kodu. |
-| [Według sekcji](./by-sections/) | Dowiedz się, jak podzielić dokument programu Word na osobne sekcje przy użyciu Aspose.Words dla .NET z pełnym przykładem kodu. |
-| [Strona po stronie](./page-by-page/) | Przewodnik krok po kroku wyjaśniający kod źródłowy C# funkcji Aspose.Words Page by Page dla .NET |
+| [Podziel dokument programu Word według nagłówków HTML](./by-headings-html/) | Dowiedz się, jak podzielić dokument programu Word za pomocą nagłówków na kod HTML przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku. |
+| [Podziel dokument programu Word według sekcji HTML](./by-sections-html/) | Dowiedz się, jak podzielić dokument programu Word na sekcje na kod HTML przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. |
+| [Podziel dokument programu Word według sekcji](./by-sections/) | Dowiedz się, jak podzielić dokument programu Word według sekcji za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym szczegółowym przewodnikiem krok po kroku, aby efektywnie zarządzać dokumentami. |
+| [Podziel dokument programu Word według stron](./page-by-page/) | Dowiedz się, jak podzielić dokument programu Word według stron za pomocą Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. Idealny do wydajnego zarządzania dużymi dokumentami. |
 | [Połącz dokumenty](./merge-documents/) | Przewodnik krok po kroku wyjaśniający kod źródłowy C# funkcji Połącz dokumenty w Aspose.Words dla .NET |
-| [Według zakresu stron](./by-page-range/) | Z łatwością wyodrębnij według zakresu stron z dokumentu programu Word za pomocą przewodnika krok po kroku Aspose.Words dla .NET. |
+| [Podziel dokument programu Word według zakresu stron](./by-page-range/) | Dowiedz się, jak podzielić dokument programu Word według zakresu stron za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. Idealny dla programistów. |

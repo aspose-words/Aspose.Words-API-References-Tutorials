@@ -20,7 +20,7 @@ Bu kapsamlı kılavuzda Aspose.Words for Java'daki belge şekillerinin dünyası
 
 ### GroupShape Ekleme
 
- A`GroupShape` birden çok şekli birlikte gruplandırmanıza olanak tanır. İşte nasıl oluşturup ekleyebileceğiniz`GroupShape`:
+ A`GroupShape` birden çok şekli birlikte gruplamanıza olanak tanır. İşte nasıl oluşturup ekleyebileceğiniz`GroupShape`:
 
 ```java
 Document doc = new Document();

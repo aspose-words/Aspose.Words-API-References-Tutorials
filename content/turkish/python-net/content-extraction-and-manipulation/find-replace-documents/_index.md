@@ -18,7 +18,7 @@ Gelişmiş tekniklere dalmadan önce aşağıdaki önkoşulların mevcut olduğu
 
 1.  Python Kurulumu: Sisteminizde Python'un kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://www.python.org/downloads/).
 
-2.  Aspose.Words for Python: Aspose.Words for Python'un kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/).
+2. Aspose.Words for Python: Aspose.Words for Python'un kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/).
 
 3. Belge Hazırlama: Bul ve değiştir işlemlerini gerçekleştirmek istediğiniz bir Word belgesini hazır bulundurun.
 

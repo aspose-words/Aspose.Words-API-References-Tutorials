@@ -73,7 +73,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## ステップ5: 警告コールバックを実装する
 
-を実装するクラスを作成します`IWarningCallback`ドキュメント処理中に生成された警告を処理するためのインターフェース。
+を実装するクラスを作成します。`IWarningCallback`ドキュメント処理中に生成された警告を処理するためのインターフェース。
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback

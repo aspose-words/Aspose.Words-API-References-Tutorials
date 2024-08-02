@@ -51,7 +51,7 @@ Document doc = new Document();
 
 Chúng tôi vừa tạo một tài liệu Word trống. Khá tuyệt phải không?
 
-## Bước 3: Thêm nội dung bằng DocumentBuilder
+## Bước 3: Thêm nội dung với DocumentBuilder
 
 ### Khởi tạo DocumentBuilder
 

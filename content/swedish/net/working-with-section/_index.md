@@ -18,13 +18,13 @@ Genom att följa dessa tutorials kommer du att kunna hantera avsnitt i dina Word
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Lägg till avsnitt](./add-section/) | I den här självstudien lär du dig hur du lägger till ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide för att strukturera ditt dokument. |
+| [Lägg till avsnitt](./add-section/) | Lär dig hur du lägger till avsnitt i Word-dokument med Aspose.Words för .NET. Den här guiden täcker allt från att skapa ett dokument till att lägga till och hantera avsnitt. |
 | [Ta bort avsnitt](./delete-section/) | Bemästra dokumentmanipulation med Aspose.Words för .NET. Lär dig hur du tar bort avsnitt från Word-dokument i några enkla steg. |
 | [Ta bort alla avsnitt](./delete-all-sections/) | Lär dig hur du tar bort alla avsnitt i ett Word-dokument med Aspose.Words för .NET med den här lätta att följa, steg-för-steg-guide. |
 | [Lägg till avsnittsordinnehåll](./append-section-content/) | I den här självstudien lär du dig hur du lägger till ordinnehåll i specifika delar av ett Word-dokument med Aspose.Words för .NET.  |
-| [Klonsektion](./clone-section/) | den här handledningen lär du dig hur du klona ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg för steg guide. |
-| [Kopiera avsnitt](./copy-section/) | I den här handledningen lär du dig hur du kopierar ett avsnitt från ett Word-dokument till ett annat dokument med Aspose.Words för .NET. |
-| [Ta bort innehåll i sidhuvud](./delete-header-footer-content/) | I den här handledningen lär du dig hur du tar bort sidhuvud och sidfotsinnehåll från ett Word-dokument med Aspose.Words för .NET.  |
-| [Ta bort avsnittsinnehåll](./delete-section-content/) | I den här handledningen lär du dig hur du tar bort innehåll från en specifik del av ett Word-dokument med Aspose.Words för .NET. |
+| [Klonsektion](./clone-section/) | Lär dig hur du klona avsnitt i Word-dokument med Aspose.Words för .NET. Den här guiden täcker steg-för-steg-instruktioner för effektiv dokumenthantering. |
+| [Kopiera avsnitt](./copy-section/) | Lär dig hur du kopierar avsnitt mellan Word-dokument med Aspose.Words för .NET. Den här guiden täcker steg-för-steg-instruktioner för effektiv dokumenthantering. |
+| [Ta bort innehåll i sidhuvud](./delete-header-footer-content/) | Lär dig hur du tar bort sidhuvuden och sidfötter i Word-dokument med Aspose.Words för .NET. Denna steg-för-steg-guide säkerställer effektiv dokumenthantering.  |
+| [Ta bort avsnittsinnehåll](./delete-section-content/) | Lär dig hur du tar bort avsnittsinnehåll i Word-dokument med Aspose.Words för .NET. Denna steg-för-steg-guide säkerställer effektiv dokumenthantering. |
 | [Ändra Word Page Setup i alla avsnitt](./modify-page-setup-in-all-sections/) | I den här självstudien kan du lära dig hur du ändrar sidinställningarna för Word i alla delar av ett Word-dokument med Aspose.Words för .NET. |
-| [Avsnitt Åtkomst via index](./sections-access-by-index/) | I den här handledningen lär du dig hur du kommer åt delar av ett Word-dokument genom att indexera och ändrar deras inställningar med Aspose.Words för .NET. |
+| [Avsnitt Åtkomst via index](./sections-access-by-index/) | Lär dig hur du kommer åt och manipulerar avsnitt i Word-dokument med Aspose.Words för .NET. Denna steg-för-steg-guide säkerställer effektiv dokumenthantering. |

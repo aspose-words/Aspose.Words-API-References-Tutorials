@@ -9,9 +9,9 @@ url: /ko/net/split-document/merge-documents/
 ---
 ## 소개
 
-안녕하세요! 여러 Word 문서를 하나의 응집력 있는 파일로 병합해야 했던 적이 있습니까? 보고서를 편집하든, 프로젝트를 구성하든, 아니면 그냥 정리하든 문서를 병합하면 많은 시간과 노력을 절약할 수 있습니다. .NET용 Aspose.Words를 사용하면 이 프로세스가 매우 쉬워집니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서를 병합하는 방법을 단계별로 설명하므로 쉽게 따라할 수 있습니다. 마지막에는 전문가처럼 문서를 병합하게 될 것입니다!
+여러 Word 문서를 하나의 응집력 있는 파일로 병합해야 했던 적이 있습니까? 보고서를 편집하든, 프로젝트를 구성하든, 아니면 그냥 정리하든 문서를 병합하면 많은 시간과 노력을 절약할 수 있습니다. .NET용 Aspose.Words를 사용하면 이 프로세스가 매우 쉬워집니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서를 병합하는 방법을 단계별로 설명하므로 쉽게 따라할 수 있습니다. 마지막에는 전문가처럼 문서를 병합하게 될 것입니다!
 
-## 전제조건
+## 전제 조건
 
 자세히 알아보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
@@ -78,7 +78,7 @@ Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx",
 
 ## 5단계: 병합된 문서에서 문서 인스턴스 만들기
 
-때로는 저장하기 전에 병합된 문서에 대한 추가 작업을 원할 수도 있습니다. 당신은 만들 수 있습니다`Document` 병합된 문서의 인스턴스:
+ 때로는 저장하기 전에 병합된 문서에 대한 추가 작업을 원할 수도 있습니다. 당신은 만들 수 있습니다`Document` 병합된 문서의 인스턴스:
 
 ```csharp
 Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
@@ -91,24 +91,24 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
  그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서를 병합하는 방법을 배웠습니다. 이 자습서에서는 환경 설정, 간단한 병합 수행, 저장 옵션을 사용한 병합, 병합된 문서를 PDF로 변환 및 병합된 문서에서 문서 인스턴스 만들기를 다루었습니다. Aspose.Words는 다양한 기능을 제공하므로 꼭 살펴보세요.[API 문서](https://reference.aspose.com/words/net/) 잠재력을 최대한 발휘할 수 있습니다.
 
-## 자주 묻는 질문
+## FAQ
 
-### 1. .NET용 Aspose.Words란 무엇입니까?
+### .NET용 Aspose.Words란 무엇입니까?
 
 Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 라이브러리입니다. 문서 관련 작업을 자동화하는 데 이상적입니다.
 
-### 2. Aspose.Words for .NET을 무료로 사용할 수 있나요?
+### .NET용 Aspose.Words를 무료로 사용할 수 있나요?
 
  다음을 사용하여 .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
 
-### 3. 병합 중에 다른 서식을 어떻게 처리합니까?
+### 병합 중에 다른 서식을 어떻게 처리합니까?
 
- Aspose.Words는 다음과 같은 다양한 병합 형식 모드를 제공합니다.`KeepSourceFormatting`그리고`MergeFormatting` . 다음을 참조하세요.[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
+ Aspose.Words는 다음과 같은 다양한 병합 형식 모드를 제공합니다.`KeepSourceFormatting`그리고`MergeFormatting` 다음을 참조하세요.[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
 
-### 4. .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
+### .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
 
 방문하시면 지원을 받으실 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
 
-### 5. .NET용 Aspose.Words와 다른 파일 형식을 병합할 수 있나요?
+### .NET용 Aspose.Words와 다른 파일 형식을 병합할 수 있나요?
 
 예, Aspose.Words는 DOCX, PDF 및 HTML을 포함한 다양한 파일 형식 병합을 지원합니다.

@@ -62,7 +62,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 ```
 
 ## Slutsats
-I den här handledningen såg vi hur man kontrollerar DrawingML-texteffekter i ett Word-dokument med Aspose.Words för .NET. Genom att markera DrawingML-texteffekter kan du identifiera delar av text som har specifika effekter tillämpade. Använd gärna den här funktionen för att manipulera och analysera texteffekter i dina Word-dokument.
+den här handledningen såg vi hur man kontrollerar DrawingML-texteffekter i ett Word-dokument med Aspose.Words för .NET. Genom att markera DrawingML-texteffekter kan du identifiera delar av text som har specifika effekter tillämpade. Använd gärna den här funktionen för att manipulera och analysera texteffekter i dina Word-dokument.
 
 ### FAQ's
 

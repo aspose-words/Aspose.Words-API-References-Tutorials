@@ -45,7 +45,7 @@ Terakhir, kita bisa menyimpan dokumen dalam format yang diinginkan.
 // Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Sisipkan hyperlink.
+// Sisipkan hyperlink.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", salah);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur "Tautan Otomatis
 
 #### T: Apakah mungkin untuk menyesuaikan teks tampilan tautan otomatis di Aspose.Words?
 
- A: Ya, Anda dapat menyesuaikan teks tampilan tautan otomatis di Aspose.Words. Daripada menggunakan alamat URL sebagai teks tampilan, Anda dapat menggunakan teks lain dengan mengganti konten di antara`<a>` tag. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com">Click here</a>` untuk menampilkan teks "Klik di sini" sebagai tautan otomatis.
+ A: Ya, Anda dapat menyesuaikan teks tampilan tautan otomatis di Aspose.Words. Daripada menggunakan alamat URL sebagai teks tampilan, Anda dapat menggunakan teks lain dengan mengganti konten di antara`<a>` tag. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com">Click here</a>`untuk menampilkan teks "Klik di sini" sebagai tautan otomatis.
 
 #### T: Bagaimana cara menambahkan atribut tambahan ke tautan otomatis di Aspose.Words?
 
-A: Untuk menambahkan atribut tambahan pada tautan otomatis di Aspose.Words, Anda dapat menggunakan atribut HTML tambahan di dalamnya`<a>` menandai. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com" target="_blank">Link</a>` untuk membuka tautan di jendela atau tab baru menggunakan` attribute target="_blank"`.
+ A: Untuk menambahkan atribut tambahan pada tautan otomatis di Aspose.Words, Anda dapat menggunakan atribut HTML tambahan di dalamnya`<a>` menandai. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com" target="_blank">Link</a>` untuk membuka tautan di jendela atau tab baru menggunakan` attribute target="_blank"`.

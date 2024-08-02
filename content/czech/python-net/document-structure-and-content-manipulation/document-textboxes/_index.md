@@ -92,7 +92,7 @@ doc.save("output.docx")
 
 ## Závěr
 
-této příručce jsme prozkoumali proces vylepšování vizuálního obsahu pomocí textových polí v dokumentech aplikace Word pomocí rozhraní Aspose.Words Python API. Textová pole poskytují flexibilní způsob, jak organizovat, formátovat a stylovat obsah v dokumentech, díky čemuž jsou poutavější a vizuálně přitažlivější.
+V této příručce jsme prozkoumali proces vylepšování vizuálního obsahu pomocí textových polí v dokumentech aplikace Word pomocí rozhraní Aspose.Words Python API. Textová pole poskytují flexibilní způsob, jak organizovat, formátovat a stylovat obsah v dokumentech, díky čemuž jsou poutavější a vizuálně přitažlivější.
 
 ## Nejčastější dotazy
 
@@ -106,7 +106,7 @@ této příručce jsme prozkoumali proces vylepšování vizuálního obsahu pom
 
 ### Jak přidám ohraničení do textového pole?
 
- Ohraničení do textového pole můžete přidat pomocí`textbox.border` nemovitosti a přizpůsobení jejího vzhledu.
+ Ohraničení do textového pole můžete přidat pomocí`textbox.border`nemovitosti a přizpůsobení jejího vzhledu.
 
 ### Mohu vložit hypertextové odkazy do textového pole?
 
@@ -116,4 +116,4 @@ Absolutně! Do obsahu textového pole můžete vložit hypertextové odkazy a po
 
  Ano, můžete zkopírovat textové pole z jednoho dokumentu a vložit jej do jiného pomocí`builder.insert_node` metoda.
 
-Aspose.Words pro Python máte nástroje k vytváření vizuálně přitažlivých a dobře strukturovaných dokumentů, které hladce obsahují textová pole. Experimentujte s různými styly, rozvržením a obsahem, abyste zvýšili účinek svých dokumentů Word. Hodně štěstí při navrhování dokumentů!
+S Aspose.Words pro Python máte nástroje k vytváření vizuálně přitažlivých a dobře strukturovaných dokumentů, které hladce obsahují textová pole. Experimentujte s různými styly, rozvržením a obsahem, abyste zvýšili účinek svých dokumentů Word. Hodně štěstí při navrhování dokumentů!

@@ -14,7 +14,7 @@ Efektivní extrahování obsahu z dokumentů aplikace Word je běžným požadav
 
 ## Předpoklady
 
-Než se ponoříme do kódu, ujistěte se, že máte nainstalovaný Python a knihovnu Aspose.Words. Knihovnu si můžete stáhnout z webu[tady](https://releases.aspose.com/words/python/). Kromě toho se ujistěte, že máte dokument Word připravený k testování.
+ Než se ponoříme do kódu, ujistěte se, že máte nainstalovaný Python a knihovnu Aspose.Words. Knihovnu si můžete stáhnout z webu[tady](https://releases.aspose.com/words/python/). Kromě toho se ujistěte, že máte dokument Word připravený k testování.
 
 ## Instalace Aspose.Words pro Python
 
@@ -58,7 +58,7 @@ for shape in doc.get_child_nodes(doc.is_shape, True):
 
 ## Správa formátování
 
-Zachování formátování během extrakce:
+Zachování formátování při extrakci:
 
 ```python
 for run in doc.get_child_nodes(doc.is_run, True):

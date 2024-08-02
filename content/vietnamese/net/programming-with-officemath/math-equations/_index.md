@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Office math.docx");
 
 ## Bước 2: Lấy phần tử OfficeMath
 
-Tiếp theo, chúng ta cần lấy phần tử OfficeMath từ tài liệu. Phần tử OfficeMath biểu diễn phương trình toán học trong tài liệu.
+Tiếp theo, chúng ta cần lấy phần tử OfficeMath từ tài liệu. Phần tử OfficeMath thể hiện phương trình toán học trong tài liệu.
 
 ```csharp
 // Lấy phần tử OfficeMath

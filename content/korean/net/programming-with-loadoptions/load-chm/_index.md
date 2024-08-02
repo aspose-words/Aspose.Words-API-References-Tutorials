@@ -11,7 +11,7 @@ url: /ko/net/programming-with-loadoptions/load-chm/
 
 CHM 파일을 Word 문서에 통합할 때 Aspose.Words for .NET은 완벽한 솔루션을 제공합니다. 기술 문서를 작성하든 다양한 리소스를 단일 문서로 통합하든 이 튜토리얼은 명확하고 매력적인 방식으로 각 단계를 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 단계를 시작하기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 -  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[라이브러리를 다운로드하세요](https://releases.aspose.com/words/net/) 사이트에서.

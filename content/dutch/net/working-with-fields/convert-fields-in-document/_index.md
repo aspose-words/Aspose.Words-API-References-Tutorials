@@ -2,92 +2,91 @@
 title: Velden in document converteren
 linktitle: Velden in document converteren
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het converteren van documentvelden naar tekst met Aspose.Words voor .NET.
+description: Leer met deze handleiding hoe u velden in Word-documenten converteert met Aspose.Words voor .NET. Volg onze tutorial om velden in uw documenten efficiënt te beheren en te transformeren.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/convert-fields-in-document/
 ---
+## Invoering
 
-In deze zelfstudie begeleiden we u stapsgewijze handleiding met behulp van de ConvertFieldsInDocument-functie van Aspose.Words voor .NET-software. We leggen in detail de C#-broncode uit die nodig is voor deze functie en bieden voorbeelden van uitvoerformaten voor prijsverlagingen.
+Wilt u velden in uw Word-documenten moeiteloos omzetten? Je bent op de juiste plek! In deze handleiding leiden we u door het proces van het converteren van velden in een Word-document met Aspose.Words voor .NET. Of u nu nieuw bent bij Aspose.Words of uw vaardigheden wilt verfijnen, deze tutorial biedt een uitgebreide, stapsgewijze handleiding om u te helpen uw doel te bereiken.
 
-## Stap 1: Vereisten
-Zorg ervoor dat u over het volgende beschikt voordat u begint:
+## Vereisten
 
-- Aspose.Words voor .NET geïnstalleerd op uw ontwikkelmachine.
-- Een Word-document met gekoppelde velden die u naar tekst wilt converteren.
-- Een documentmap waarin u het getransformeerde document kunt opslaan.
+Voordat we ingaan op de details, zijn er een aantal vereisten waaraan u moet voldoen:
 
-## Stap 2: De omgeving instellen
-Zorg ervoor dat u uw ontwikkelomgeving correct hebt geconfigureerd voor het gebruik van Aspose.Words voor .NET. Importeer de benodigde naamruimten en stel het pad in naar uw documentenmap.
+1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een ontwikkelomgeving zoals Visual Studio.
+3. Basiskennis van C#: Bekendheid met programmeren in C# is een voordeel.
+
+## Naamruimten importeren
+
+Om aan de slag te gaan, moet u de benodigde naamruimten in uw project importeren. Hierdoor hebt u toegang tot de klassen en methoden die nodig zijn voor het manipuleren van Word-documenten met Aspose.Words voor .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+using System.Linq;
+```
+
+In dit gedeelte zullen we het proces opsplitsen in beheersbare stappen, zodat u de oplossing effectief kunt volgen en implementeren.
+
+## Stap 1: Stel de documentmap in
+
+Eerst moet u het pad naar uw documentmap definiëren. Dit is waar uw Word-document wordt opgeslagen en waar het geconverteerde document wordt opgeslagen.
 
 ```csharp
 // Het pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Stap 3: Laad het document
- Gebruik de`Document`klasse van Aspose.Words om het Word-document te laden met de gekoppelde velden die u wilt converteren.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+
+## Stap 2: Laad het document
+
+Vervolgens laadt u het Word-document dat de velden bevat die u wilt converteren. In dit voorbeeld werken we met een document met de naam 'Gekoppelde velden.docx'.
 
 ```csharp
-Document doc = new Document(MyDir + "Linked fields.docx");
+Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## Stap 4: Converteer gebonden velden naar tekst
- Gebruik de`Unlink()` methode om alle velden van het type "IF" die u in het document tegenkomt, naar tekst te converteren. Deze methode wordt gebruikt om gekoppelde velden om te zetten in hun tekstuele inhoud.
+## Stap 3: IF-velden naar tekst converteren
+
+Nu zullen we alle IF-velden in het document naar tekst converteren. IF-velden zijn voorwaardelijke velden die in Word-documenten worden gebruikt om tekst in te voegen op basis van bepaalde voorwaarden.
 
 ```csharp
+//Geef de juiste parameters door om alle IF-velden die in het document voorkomen (inclusief kop- en voetteksten) naar tekst te converteren.
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
 ```
 
-## Stap 5: Sla het getransformeerde document op
- Gebruik de`Save()` methode om het document op te slaan met de velden geconverteerd naar tekst in de opgegeven documentmap.
+Met dit codefragment worden alle IF-velden in het document gevonden en geconverteerd naar platte tekst.
+
+## Stap 4: Sla het document op
+
+Ten slotte moet u het gewijzigde document op schijf opslaan. Hierdoor wordt een nieuw document gemaakt met de geconverteerde velden.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
-```
-
-## Voorbeeldbroncode voor ConvertFieldsInDocument met Aspose.Words voor .NET
-
-Hier is de volledige broncode voor de ConvertFieldsInDocument-functie:
-
-```csharp
-// Het pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-Document doc = new Document(MyDir + "Linked fields.docx");
-
-// Geef de juiste parameters door om alle IF-velden die in het document voorkomen (inclusief kop- en voetteksten) naar tekst te converteren.
-doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
-
 // Sla het document op met de velden getransformeerd naar schijf
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ```
 
 ## Conclusie
-De ConvertFieldsInDocument-functie van Aspose.Words voor .NET is een krachtig hulpmiddel voor het converteren van gekoppelde velden in een Word-document naar tekst. 
 
-### Veelgestelde vragen
+Gefeliciteerd! U hebt met succes velden in een Word-document geconverteerd met Aspose.Words voor .NET. Door deze handleiding te volgen beschikt u nu over de kennis om velden in uw documenten te manipuleren en te transformeren, waardoor uw documentverwerkingsmogelijkheden worden verbeterd.
 
-#### Vraag: Wat is een veldconversie in Aspose.Words?
+## Veelgestelde vragen
 
-A: Een veldconversie in Aspose.Words verwijst naar de mogelijkheid om gegevens uit een veld in een Word-document te transformeren met behulp van verschillende formaten of gegevenstypen. Hiermee kunt u de presentatie of structuur van gegevens in het uiteindelijke document wijzigen.
+### Kan ik andere typen velden converteren met Aspose.Words voor .NET?
+ Ja, met Aspose.Words voor .NET kunt u verschillende soorten velden manipuleren, niet alleen IF-velden. Je kunt de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
 
-#### Vraag: Hoe kan ik velden in een Word-document converteren met Aspose.Words?
+### Wat zijn IF-velden in Word-documenten?
+ALS-velden zijn voorwaardelijke velden die tekst weergeven op basis van bepaalde voorwaarden. Ze worden vaak gebruikt voor het creëren van dynamische inhoud in Word-documenten.
 
-A: Om velden in een Word-document te converteren met Aspose.Words, kunt u deze stappen volgen:
+### Is Aspose.Words voor .NET compatibel met alle versies van Word-documenten?
+Aspose.Words voor .NET ondersteunt een breed scala aan Word-documentformaten, waardoor compatibiliteit met verschillende versies van Microsoft Word wordt gegarandeerd.
 
-1. Importeer de Document-klasse uit de Aspose.Words-naamruimte.
-2. Maak een exemplaar van Document door uw bestaande document te laden.
-3. Gebruik de UpdateFields-methode om alle velden in het document bij te werken en de conversies uit te voeren.
+### Kan ik Aspose.Words voor .NET gebruiken om andere taken in Word-documenten te automatiseren?
+Absoluut! Aspose.Words voor .NET biedt een uitgebreide reeks functies voor het automatiseren en manipuleren van Word-documenten, inclusief opmaak, samenvoegen en meer.
 
-#### Vraag: Welke soorten conversies zijn mogelijk in Aspose.Words?
-
-A: Aspose.Words ondersteunt verschillende soorten conversies in velden, zoals het converteren van datumformaten, het converteren van getalformaten, het converteren van tekstformaten, het converteren van valutaformaten, het converteren van percentageformaten en nog veel meer. U kunt de Aspose.Words-documentatie raadplegen voor een volledige lijst met ondersteunde conversietypen.
-
-#### Vraag: Verandert het converteren van velden de originele gegevens in het Word-document?
-
-A: Nee, het converteren van velden in Aspose.Words heeft geen invloed op de originele gegevens in het Word-document. De conversie wordt toegepast bij het bijwerken van velden, maar de oorspronkelijke gegevens blijven intact. Dit zorgt ervoor dat u op elk moment kunt terugkeren naar de oorspronkelijke staat van het document.
-
-#### Vraag: Is het mogelijk om veldconversies in Aspose.Words aan te passen?
-
-A: Ja, het is mogelijk om veldconversies in Aspose.Words aan te passen door specifieke opmaakcodes te gebruiken of door de beschikbare conversieopties aan te passen. U kunt aangepaste notaties voor datums, getallen, teksten, enz. definiëren om aan uw specifieke behoeften te voldoen.
+### Waar kan ik meer tutorials en voorbeelden vinden voor Aspose.Words voor .NET?
+ Meer tutorials en voorbeelden vindt u in de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/).

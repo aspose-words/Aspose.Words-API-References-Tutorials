@@ -16,12 +16,12 @@ Używając Aspose.Words dla .NET i postępując zgodnie z tymi samouczkami, będ
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Dodaj kształt grupy](./add-group-shape/) | Dowiedz się, jak dodać kształt grupy składający się z wielu kształtów do dokumentu programu Word za pomocą Aspose.Words dla .NET. |
-| [Wstaw kształt](./insert-shape/) | Dowiedz się, jak wstawiać kształty do dokumentu programu Word za pomocą Aspose.Words dla .NET. |
-| [Proporcje obrazu zablokowane](./aspect-ratio-locked/) | Dowiedz się, jak zablokować lub odblokować proporcje kształtu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. |
-| [Układ W Komórce](./layout-in-cell/) | Dowiedz się, jak rozmieścić kształt w komórce tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. |
-| [Dodaj przycięte rogi](./add-corners-snipped/) | Dowiedz się, jak dodać kształt z przyciętymi rogami do dokumentu programu Word za pomocą Aspose.Words dla .NET. |
-| [Zdobądź rzeczywiste punkty granic kształtu](./get-actual-shape-bounds-points/) | Dowiedz się, jak pobrać rzeczywiste granice kształtu w punktach (jednostka miary) w dokumencie programu Word przy użyciu Aspose.Words dla .NET. |
-| [Kotwica pionowa](./vertical-anchor/) | Dowiedz się, jak ustawić kształt w pionie w dokumencie, korzystając z funkcji zakotwiczenia pionowego w Aspose.Words dla .NET.|
-| [Wykryj inteligentny kształt grafiki](./detect-smart-art-shape/) | Dowiedz się, jak wykrywać kształty Smart Art w dokumencie programu Word za pomocą Aspose.Words dla .NET, identyfikując reprezentacje graficzne. |
-| [Zaktualizuj inteligentny rysunek artystyczny](./update-smart-art-drawing/) | Dowiedz się, jak zaktualizować rysunek Smart Art w dokumencie programu Word przy użyciu Aspose.Words dla .NET. |
+| [Dodaj kształt grupy](./add-group-shape/) | Dowiedz się, jak dodawać kształty grup do dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z tego wszechstronnego samouczka krok po kroku. |
+| [Wstaw kształt](./insert-shape/) | Dowiedz się, jak wstawiać kształty w dokumentach programu Word i manipulować nimi za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. |
+| [Proporcje obrazu zablokowane](./aspect-ratio-locked/) | Dowiedz się, jak zablokować proporcje kształtów w dokumentach programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby zachować proporcje obrazów i kształtów. |
+| [Układ W Komórce](./layout-in-cell/) | Dowiedz się, jak ustawić układ w komórce za pomocą Aspose.Words dla .NET, korzystając z tego obszernego przewodnika. Idealny dla programistów chcących dostosować dokumenty programu Word. |
+| [Dodaj przycięte rogi](./add-corners-snipped/) | Dowiedz się, jak dodać kształt obciętych rogów do dokumentów programu Word za pomocą Aspose.Words dla .NET. Dzięki temu przewodnikowi krok po kroku możesz łatwo ulepszać swoje dokumenty. |
+| [Zdobądź rzeczywiste punkty granic kształtu](./get-actual-shape-bounds-points/) | Dowiedz się, jak uzyskać rzeczywiste punkty ograniczające kształt w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Dzięki temu szczegółowemu przewodnikowi nauczysz się precyzyjnej manipulacji kształtami. |
+| [Kotwica pionowa](./vertical-anchor/) | Dowiedz się, jak ustawić pionowe pozycje zakotwiczeń dla pól tekstowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W zestawie łatwy przewodnik krok po kroku.|
+| [Wykryj inteligentny kształt grafiki](./detect-smart-art-shape/) | Z tego obszernego przewodnika dowiesz się, jak wykrywać kształty SmartArt w dokumentach programu Word za pomocą Aspose.Words dla .NET. Idealny do automatyzacji obiegu dokumentów. |
+| [Zaktualizuj inteligentny rysunek artystyczny](./update-smart-art-drawing/) | Dowiedz się, jak aktualizować rysunki Smart Art w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Upewnij się, że Twoje wizualizacje są zawsze dokładne. |

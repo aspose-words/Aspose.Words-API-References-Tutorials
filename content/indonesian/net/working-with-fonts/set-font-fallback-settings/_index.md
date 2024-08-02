@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ## File XML: Aturan Penggantian Font
 
-Berikut adalah contoh tampilan file XML Anda yang menentukan aturan penggantian font:
+Berikut adalah contoh tampilan file XML Anda yang mendefinisikan aturan penggantian font:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

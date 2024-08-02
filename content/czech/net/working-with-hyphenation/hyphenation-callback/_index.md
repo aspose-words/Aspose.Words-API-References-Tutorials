@@ -129,7 +129,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## Závěr
 
-A tady to máte! Právě jste se naučili, jak implementovat zpětné volání dělení slov v Aspose.Words pro .NET. Pomocí těchto kroků můžete zajistit, že vaše dokumenty budou krásně naformátované bez ohledu na jazyk. Ať už máte co do činění s angličtinou, němčinou nebo jakýmkoli jiným jazykem, tato metoda vám umožní bez námahy zvládnout dělení slov.
+A tady to máte! Právě jste se naučili, jak implementovat zpětné volání dělení slov v Aspose.Words pro .NET. Pomocí těchto kroků můžete zajistit, že vaše dokumenty budou krásně naformátované bez ohledu na jazyk. Ať už máte co do činění s angličtinou, němčinou nebo jakýmkoli jiným jazykem, tato metoda vám umožní zvládnout dělení slov bez námahy.
 
 ## Nejčastější dotazy
 

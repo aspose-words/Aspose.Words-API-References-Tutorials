@@ -8,7 +8,7 @@ weight: 23
 url: /ja/python-net/document-structure-and-content-manipulation/document-revisions/
 ---
 
-ドキュメントの改訂と追跡は、共同作業環境の重要な側面です。Aspose.Words for Python は、ドキュメントの改訂の効率的な追跡とレビューを容易にする強力なツールを提供します。この包括的なガイドでは、Aspose.Words for Python を使用してこれを実現する方法を段階的に説明します。このチュートリアルを完了すると、改訂追跡機能を Python アプリケーションに統合する方法をしっかりと理解できるようになります。
+ドキュメントの改訂と追跡は、共同作業環境の重要な側面です。Aspose.Words for Python は、ドキュメントの改訂の効率的な追跡とレビューを容易にする強力なツールを提供します。この包括的なガイドでは、Aspose.Words for Python を使用してこれを実現する方法を段階的に説明します。このチュートリアルの最後には、改訂追跡機能を Python アプリケーションに統合する方法をしっかりと理解できるようになります。
 
 ## ドキュメントの改訂の概要
 

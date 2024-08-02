@@ -2,89 +2,40 @@
 title: Repetir filas en páginas siguientes
 linktitle: Repetir filas en páginas siguientes
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a repetir filas de una tabla en páginas posteriores de un documento de Word con Aspose.Words para .NET.
+description: Aprenda a crear documentos de Word con filas de encabezado de tabla repetidas usando Aspose.Words para .NET. Siga esta guía para garantizar documentos profesionales y pulidos.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
+## Introducción
 
-En este tutorial, aprenderemos cómo repetir las filas de una tabla en páginas posteriores de un documento de Word usando Aspose.Words para .NET. Seguiremos una guía paso a paso para comprender el código e implementar esta función. Al final de este tutorial, podrá especificar filas para repetir en las páginas siguientes de su tabla en sus documentos de Word.
+Crear un documento de Word mediante programación puede ser una tarea desalentadora, especialmente cuando necesita mantener el formato en varias páginas. ¿Alguna vez ha intentado crear una tabla en Word y se ha dado cuenta de que las filas del encabezado no se repiten en las páginas siguientes? ¡No temáis! Con Aspose.Words para .NET, puede asegurarse fácilmente de que los encabezados de sus tablas se repitan en cada página, brindando una apariencia profesional y pulida a sus documentos. En este tutorial, lo guiaremos a través de los pasos para lograr esto utilizando ejemplos de código simples y explicaciones detalladas. ¡Vamos a sumergirnos!
 
-## Paso 1: configuración del proyecto
-1. Inicie Visual Studio y cree un nuevo proyecto de C#.
-2. Agregue una referencia a la biblioteca Aspose.Words para .NET.
+## Requisitos previos
 
-## Paso 2: crear el documento e inicializar el generador de documentos
-Para iniciar el procesamiento de textos con el documento y el generador de documentos, siga estos pasos:
+Antes de comenzar, asegúrese de tener lo siguiente:
 
-```csharp
-// Ruta a su directorio de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words para .NET: puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
+2. .NET Framework instalado en su máquina.
+3. Visual Studio o cualquier otro IDE que admita el desarrollo .NET.
+4. Conocimientos básicos de programación en C#.
 
-// Creación de documentos
-Document doc = new Document();
+Asegúrese de haber instalado Aspose.Words para .NET y configurar su entorno de desarrollo antes de continuar.
 
-// Inicializar el generador de documentos
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## Importar espacios de nombres
 
-Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
-
-## Paso 3: construir la tabla con filas repetidas
-A continuación, crearemos una tabla con filas repetidas en las páginas siguientes. Utilice el siguiente código:
+Para comenzar, necesita importar los espacios de nombres necesarios en su proyecto. Agregue las siguientes directivas de uso en la parte superior de su archivo C#:
 
 ```csharp
-// comienzo de la mesa
-builder. StartTable();
-
-// Configuración de los parámetros de la primera línea (líneas de cabecera)
-builder.RowFormat.HeadingFormat = true;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.CellFormat.Width = 100;
-
-// Inserta la primera celda de la primera fila.
-builder. InsertCell();
-builder.Writeln("Header line 1");
-builder. EndRow();
-
-// Inserta la segunda celda de la primera fila.
-builder. InsertCell();
-builder.Writeln("Header line 2");
-builder. EndRow();
-
-// Configurar los parámetros de las siguientes líneas.
-builder.CellFormat.Width = 50;
-builder.ParagraphFormat.ClearFormatting();
-
-// Bucle para insertar las celdas en las siguientes filas.
-for (int i = 0; i < 50; i++)
-{
-builder. InsertCell();
-builder.RowFormat.HeadingFormat = false;
-builder.Write("Text column 1");
-builder. InsertCell();
-builder.Write("Text column 2");
-builder. EndRow();
-}
-
-// Fin de la mesa
-builder. EndTable();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Aquí utilizamos el generador de documentos para crear una tabla con dos filas de encabezado y varias filas de datos. El`RowFormat.HeadingFormat` Los parámetros se utilizan para marcar las filas del encabezado que deben repetirse en las páginas siguientes.
+Estos espacios de nombres incluyen las clases y métodos necesarios para manipular tablas y documentos de Word.
 
-## Paso 4: guardar el documento modificado
-Finalmente Estados Unidos
+## Paso 1: Inicializar el documento
 
-  Es necesario guardar el documento modificado con las filas de encabezado repetidas en las páginas siguientes de la tabla. Utilice el siguiente código:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
-```
-
-Asegúrese de especificar la ruta y el nombre de archivo correctos para el documento de salida.
-
-### Código fuente de muestra para repetir filas en páginas posteriores usando Aspose.Words para .NET 
+ Primero, creemos un nuevo documento de Word y un`DocumentBuilder` para construir nuestra mesa.
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -92,29 +43,79 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+ Este código inicializa un nuevo documento y un`DocumentBuilder` objeto, que ayuda a construir la estructura del documento.
+
+## Paso 2: iniciar la tabla y definir filas de encabezado
+
+A continuación, iniciaremos la tabla y definiremos las filas de encabezado que queremos repetir en las páginas siguientes.
+
+```csharp
 builder.StartTable();
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
+
 builder.InsertCell();
 builder.Writeln("Heading row 1");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Heading row 2");
 builder.EndRow();
+```
+
+ Aquí, comenzamos una nueva tabla, configuramos el`HeadingFormat`propiedad a`true` para indicar que las filas son encabezados y definir la alineación y el ancho de las celdas.
+
+## Paso 3: agregar filas de datos a la tabla
+
+Ahora, agregaremos varias filas de datos a nuestra tabla. Estas filas no se repetirán en las páginas siguientes.
+
+```csharp
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 for (int i = 0; i < 50; i++)
 {
-	builder.InsertCell();
-	builder.RowFormat.HeadingFormat = false;
-	builder.Write("Column 1 Text");
-	builder.InsertCell();
-	builder.Write("Column 2 Text");
-	builder.EndRow();
+    builder.InsertCell();
+    builder.RowFormat.HeadingFormat = false;
+    builder.Write("Column 1 Text");
+    
+    builder.InsertCell();
+    builder.Write("Column 2 Text");
+    builder.EndRow();
 }
+```
+
+ Este bucle inserta 50 filas de datos en la tabla, con dos columnas en cada fila. El`HeadingFormat` se establece en`false` para estas filas, ya que no son filas de encabezado.
+
+## Paso 4: guarde el documento
+
+Finalmente, guardamos el documento en el directorio especificado.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
+Esto guarda el documento con el nombre especificado en su directorio de documentos.
+
 ## Conclusión
-En este tutorial, aprendimos cómo repetir las filas de una tabla en páginas posteriores de un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede especificar qué líneas repetir según sus necesidades específicas en sus documentos de Word.
+
+¡Y ahí lo tienes! Con solo unas pocas líneas de código, puede crear un documento de Word con tablas que tengan filas de encabezado repetidas en páginas posteriores usando Aspose.Words para .NET. Esto no sólo mejora la legibilidad de sus documentos sino que también garantiza una apariencia uniforme y profesional. ¡Ahora adelante y prueba esto en tus proyectos!
+
+## Preguntas frecuentes
+
+### ¿Puedo personalizar aún más las filas del encabezado?
+ Sí, puede aplicar formato adicional a las filas del encabezado modificando las propiedades de`ParagraphFormat`, `RowFormat` , y`CellFormat`.
+
+### ¿Es posible agregar más columnas a la tabla?
+ ¡Absolutamente! Puede agregar tantas columnas como necesite insertando más celdas dentro del`InsertCell` método.
+
+### ¿Cómo puedo hacer que otras filas se repitan en páginas siguientes?
+ Para repetir cualquier fila, configure el`RowFormat.HeadingFormat`propiedad a`true` para esa fila específica.
+
+### ¿Puedo utilizar este método para tablas existentes en un documento?
+ Sí, puede modificar las tablas existentes accediendo a ellas a través del`Document` objeto y aplicando un formato similar.
+
+### ¿Qué otras opciones de formato de tabla están disponibles en Aspose.Words para .NET?
+ Aspose.Words para .NET ofrece una amplia gama de opciones de formato de tablas, incluida la combinación de celdas, la configuración de bordes y la alineación de tablas. Revisar la[documentación](https://reference.aspose.com/words/net/) para más detalles.

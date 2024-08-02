@@ -50,7 +50,7 @@ loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian
 
 ## Krok 2: Załaduj dokument
 
- Następnie musimy załadować dokument Word za pomocą`LoadOptions` skonfigurowane w poprzednim kroku. Wiąże się to z określeniem ścieżki do dokumentu i przekazaniem pliku`LoadOptions` przykład do`Document` konstruktor.
+ Następnie musimy załadować dokument Word za pomocą`LoadOptions` skonfigurowany w poprzednim kroku. Wiąże się to z określeniem ścieżki do dokumentu i przekazaniem pliku`LoadOptions` przykład do`Document` konstruktor.
 
 ### Określ ścieżkę dokumentu
 

@@ -12,7 +12,7 @@ url: /ko/python-net/document-options-and-settings/document-functionality-web-ext
 
 웹 확장은 현대 문서 관리 시스템의 필수적인 부분이 되었습니다. 이를 통해 개발자는 웹 기반 구성 요소를 원활하게 통합하여 문서 기능을 향상시킬 수 있습니다. Python용 강력한 문서 조작 API인 Aspose.Words는 웹 확장을 문서에 통합하기 위한 포괄적인 솔루션을 제공합니다.
 
-## 전제조건
+## 전제 조건
 
 기술적인 세부 사항을 살펴보기 전에 다음과 같은 전제 조건이 갖추어져 있는지 확인하세요.
 

@@ -2,55 +2,37 @@
 title: Az ASKField beszúrása Dokumentumkészítő nélkül
 linktitle: Az ASKField beszúrása Dokumentumkészítő nélkül
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan illeszthet be ASK mezőt Word-dokumentumaiba az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan szúrhat be ASK mezőt a Document Builder használata nélkül az Aspose.Words for .NET-ben. Kövesse ezt az útmutatót a Word-dokumentumok dinamikus javításához.
 type: docs
 weight: 10
 url: /hu/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## Bevezetés
 
-Itt található egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely az Aspose.Words for .NET "ASK mező beszúrása DocumentBuilder nélkül" funkcióját használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
+Szeretné elsajátítani a dokumentumautomatizálást az Aspose.Words for .NET segítségével? Jó helyre jöttél! Ma végigvezetjük, hogyan szúrhat be egy ASK mezőt Dokumentumkészítő használata nélkül. Ez egy remek funkció, amikor azt szeretné, hogy a dokumentuma konkrét bevitelre kérje a felhasználókat, így a Word-dokumentumok interaktívabbak és dinamikusabbak. Tehát merüljünk bele, és tegyük okosabbá dokumentumainkat!
 
-## 1. lépés: Dokumentumkönyvtár beállítása
+## Előfeltételek
 
-A megadott kódban meg kell adnia dokumentumai könyvtárát. Cserélje le a „DOKUMENTUMKÖNYVTÁR” értéket a dokumentumkönyvtár megfelelő elérési útjára.
+Mielőtt bepiszkítanánk a kezünket egy kóddal, győződjünk meg arról, hogy mindent beállítottunk:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy ez a könyvtár telepítve van. Ha nem, letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: megfelelő IDE, mint a Visual Studio.
+3. .NET-keretrendszer: Győződjön meg arról, hogy telepítve van a .NET-keretrendszer.
 
-## 2. lépés: A dokumentum és a bekezdés létrehozása
+Nagy! Most, hogy készen vagyunk, kezdjük a szükséges névterek importálásával.
 
-Kezdjük egy új dokumentum létrehozásával és az első bekezdés lekérésével.
+## Névterek importálása
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## 3. lépés: Az ASK mező beszúrása
-
- Használjuk a`AppendField()` módszer egy ASK mező beillesztéséhez a bekezdésbe.
+Először is importálnunk kell az Aspose.Words névteret az Aspose.Words for .NET összes funkciójának eléréséhez. Íme, hogyan kell csinálni:
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Ezután a kívánt értékek megadásával konfiguráljuk az ASK mező különböző tulajdonságait.
+## 1. lépés: Hozzon létre egy új dokumentumot
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
- Végül hívjuk a`Update()` módszer a mező frissítéséhez.
-
-```csharp
-field. Update();
-```
-
-### Példa a forráskódra egy ASK mező beszúrásához DocumentBuilder nélkül az Aspose.Words for .NET-hez
+Mielőtt beszúrhatnánk egy ASK mezőt, szükségünk van egy dokumentumra, amellyel dolgozni kell. A következőképpen hozhat létre új dokumentumot:
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Dokumentumkészítés.
 Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
+Ez a kódrészlet létrehoz egy új Word-dokumentumot, amelyhez hozzáadjuk az ASK mezőt.
+
+## 2. lépés: Lépjen be a bekezdéscsomóponthoz
+
+A Word-dokumentumban a tartalom csomópontokba rendeződik. El kell érnünk az első bekezdés csomópontját, ahová beillesztjük az ASK mezőt:
+
+```csharp
+Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
+
+Ez a kódsor lekéri a dokumentum első bekezdését, készen áll az ASK mező beszúrására.
+
+## 3. lépés: Illessze be az ASK mezőt
+
+Most pedig térjünk rá a fő eseményre – az ASK mező beillesztésére. Ez a mező a dokumentum megnyitásakor kéri a felhasználót a bevitelre.
+
+```csharp
 // Írja be az ASK mezőt.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+Itt egy ASK mezőt fűzünk a bekezdéshez. Egyszerű, igaz?
 
-field. Update();
+## 4. lépés: Állítsa be az ASK mezőt
 
+Be kell állítanunk néhány tulajdonságot az ASK mező viselkedésének meghatározásához. Konfiguráljuk a könyvjelző nevét, a prompt szöveget, az alapértelmezett választ és a körlevél viselkedését:
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName: Az ASK mező egyedi azonosítója.
+- PromptText: Az a szöveg, amely a felhasználót bevitelre kéri.
+- DefaultResponse: Az előre kitöltött válasz, amelyet a felhasználó módosíthat.
+- PromptOnceOnMailMerge: Meghatározza, hogy a prompt csak egyszer jelenjen-e meg a körlevélkészítés során.
+
+## 5. lépés: Frissítse a mezőt
+
+Az ASK mező konfigurálása után frissítenünk kell, hogy biztosítsuk az összes beállítás helyes alkalmazását:
+
+```csharp
+field.Update();
+```
+
+Ez a parancs biztosítja, hogy az ASK mező készen áll, és megfelelően be van állítva a dokumentumban.
+
+## 6. lépés: Mentse el a dokumentumot
+
+Végül mentsük a dokumentumot a megadott könyvtárunkba:
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-Ebben a példában létrehoztunk egy új dokumentumot, beszúrtunk egy ASK mezőt a DocumentBuilder használata nélkül, konfiguráltuk a mező különféle tulajdonságait, és elmentettük a dokumentumot egy megadott fájlnévvel.
+Ez a sor menti a dokumentumot a beszúrt ASK mezővel. És itt van – a dokumentuma mostantól dinamikus ASK mezővel van felszerelve!
 
-Ezzel véget is értünk az "Insert ASK Field Without DocumentBuilder" funkció használatáról szóló útmutatónknak az Aspose.Words for .NET-hez.
+## Következtetés
 
-### GYIK
+Gratulálunk! Éppen most adott hozzá egy ASK mezőt egy Word-dokumentumhoz az Aspose.Words for .NET használatával a Document Builder nélkül. Ez a funkció jelentősen javíthatja a felhasználói interakciót a dokumentumokkal, rugalmasabbá és felhasználóbarátabbá téve azokat. Kísérletezzen tovább a különböző mezőkkel és tulajdonságokkal, hogy kiaknázza az Aspose.Words teljes potenciálját. Boldog kódolást!
 
-#### K: Mi az ASK mező az Aspose.Words-ben?
+## GYIK
 
-V: Az Aspose.Words ASK mezője arra szolgál, hogy egy dokumentum megnyitásakor kérdést tegyen fel a felhasználónak. Gyakran használják konkrét információk vagy visszajelzések kérésére, amelyek felhasználónként változhatnak.
+### Mi az ASK mező az Aspose.Words-ben?
+Az Aspose.Words ASK mezője egy olyan mező, amely a dokumentum megnyitásakor konkrét bevitelt kér a felhasználótól, lehetővé téve a dinamikus adatbevitelt.
 
-#### K: Hogyan lehet beszúrni ASK mezőt Word dokumentumba anélkül, hogy a Document Buildert használnánk az Aspose.Wordsben?
+### Használhatok több ASK mezőt egyetlen dokumentumban?
+Igen, egy dokumentumba több ASK mezőt is beilleszthet, amelyek mindegyike egyedi kérdésekkel és válaszokkal rendelkezik.
 
-V: Ha egy ASK mezőt szeretne beszúrni egy Word dokumentumba anélkül, hogy az Aspose.Words dokumentumkészítőjét használná, kövesse az alábbi lépéseket:
+###  Mi a célja a`PromptOnceOnMailMerge` property?
+ A`PromptOnceOnMailMerge` tulajdonság határozza meg, hogy az ASK prompt csak egyszer jelenik-e meg a körlevél-művelet során, vagy minden alkalommal.
 
-1. Importálja a dokumentumot és a mezőosztályt az Aspose.Words.Fields névtérből.
-2. Hozzon létre egy példányt a dokumentumból a meglévő dokumentum betöltésével.
-3. Használja az InsertField metódust egy ASK mező beszúrásához a kérdés nevének megadásával.
-4. Mentse el a dokumentumot.
+### Frissítenem kell az ASK mezőt a tulajdonságainak beállítása után?
+Igen, az ASK mező frissítése biztosítja, hogy minden tulajdonság megfelelően kerül alkalmazásra, és a mező a várt módon működik.
 
-#### K: Hogyan kaphatom meg a felhasználói választ egy ASK mezőre egy Word dokumentumban?
-
-V: Ahhoz, hogy a felhasználó választ kapjon egy Word-dokumentum ASK mezőjére, használhatja a Dokumentum osztályban elérhető GetFieldNames metódust. Ez a metódus a dokumentumban található mezők nevének listáját adja vissza. Ezután ellenőrizheti, hogy az ASK mező neve szerepel-e a listában, és lekérheti a kapcsolódó választ.
-
-#### K: Az ASK mezővel további információkat kérhet a felhasználótól?
-
-V: Igen, az ASK mezővel több információ kérhető a felhasználótól. Több ASK mezőt is beszúrhat a dokumentumba, mindegyikhez más-más kérdés tartozik. A dokumentum megnyitásakor a felhasználó a megfelelő válaszokat kéri.
+### Testreszabhatom a prompt szöveget és az alapértelmezett választ?
+Teljesen! Beállíthat egyéni prompt szöveget és alapértelmezett válaszokat, hogy az ASK mezőt az Ön egyedi igényeihez igazítsa.

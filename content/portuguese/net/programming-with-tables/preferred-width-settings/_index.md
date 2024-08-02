@@ -112,7 +112,7 @@ Esta etapa finaliza a tabela e salva o documento com o nome de arquivo "WorkingW
 
 ## Conclusão
 
-Criar tabelas com configurações de largura preferidas no Aspose.Words for .NET é simples quando você entende as diferentes opções de dimensionamento disponíveis. Se você precisa de larguras de células fixas, relativas ou automáticas, Aspose.Words oferece flexibilidade para lidar com vários cenários de layout de tabela com eficiência. Seguindo as etapas descritas neste guia, você pode garantir que suas tabelas estejam bem estruturadas e visualmente atraentes em seus documentos do Word.
+Criar tabelas com configurações de largura preferidas no Aspose.Words for .NET é simples quando você entende as diferentes opções de dimensionamento disponíveis. Se você precisa de larguras de células fixas, relativas ou automáticas, o Aspose.Words oferece flexibilidade para lidar com vários cenários de layout de tabela com eficiência. Seguindo as etapas descritas neste guia, você pode garantir que suas tabelas estejam bem estruturadas e visualmente atraentes em seus documentos do Word.
 
 ## Perguntas frequentes
 

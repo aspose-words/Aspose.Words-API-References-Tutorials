@@ -9,7 +9,7 @@ url: /id/net/programming-with-sdt/
 ---
 Tutorial Aspose.Words untuk .NET memungkinkan Anda menjelajahi fitur perpustakaan secara mendalam dan mempelajari cara memprogram dengan konten terstruktur di Word menggunakan Kontrol Konten Terstruktur (SDT). Tutorial langkah demi langkah ini memandu Anda melalui langkah-langkah yang diperlukan untuk membuat, memanipulasi, dan mengekstrak data dari kontrol SDT di dokumen Word Anda.
 
-Dalam tutorial ini, Anda akan mempelajari cara menambahkan dan menghapus kontrol SDT, cara menyesuaikannya dengan properti tertentu, dan cara mengakses dan mengubah datanya. Anda juga akan mempelajari cara menggunakan peristiwa yang terkait dengan kontrol SDT untuk melakukan tindakan kustom saat mengubah atau memvalidasi data.
+Dalam tutorial ini, Anda akan mempelajari cara menambahkan dan menghapus kontrol SDT, cara menyesuaikannya dengan properti tertentu, dan cara mengakses dan mengubah datanya. Anda juga akan mempelajari cara menggunakan peristiwa yang terkait dengan kontrol SDT untuk melakukan tindakan kustom saat memodifikasi atau memvalidasi data.
 
 Contoh kode yang diberikan dalam tutorial akan membantu Anda memahami konsep dan mempraktikkan fungsi kontrol SDT dalam proyek Anda sendiri. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan membantu Anda menguasai penggunaan kontrol SDT di Aspose.Words untuk .NET dan meningkatkan keterampilan pengembangan dokumen Word Anda.
 
@@ -17,14 +17,14 @@ Contoh kode yang diberikan dalam tutorial akan membantu Anda memahami konsep dan
 | Judul | Keterangan |
 | --- | --- |
 | [Centang Kotak Jenis Kontrol Konten](./check-box-type-content-control/) | Pelajari cara menambahkan Kontrol Konten Tipe Kotak Centang di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang mendetail ini. |
-| [Status Kotak Centang Saat Ini](./current-state-of-check-box/) | Pelajari cara mengambil dan mengatur status kontrol konten kotak centang saat ini di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Ubah Kontrol Konten](./modify-content-controls/) | Pelajari cara mengubah teks, daftar dropdown, dan gambar dalam kontrol konten di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Kontrol Konten Kotak Kombo](./combo-box-content-control/) | Pelajari cara membuat Kontrol Konten Kotak Kombo di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Kontrol Konten Kotak Teks Kaya](./rich-text-box-content-control/) | Pelajari cara membuat kontrol konten kotak teks kaya di dokumen Word menggunakan Aspose.Words for .NET yang mengaktifkan pemformatan dan gaya teks. |
-| [Atur Warna Kontrol Konten](./set-content-control-color/) | Pelajari cara mengatur warna kontrol konten di dokumen Word menggunakan Aspose.Words untuk .NET, dan menyesuaikan tampilannya. |
+| [Status Kotak Centang Saat Ini](./current-state-of-check-box/) | Pelajari cara mengelola kotak centang di dokumen Word dengan Aspose.Words untuk .NET. Panduan ini mencakup pengaturan, pembaruan, dan penyimpanan kotak centang secara terprogram. |
+| [Ubah Kontrol Konten](./modify-content-controls/) | Pelajari cara mengubah tag dokumen terstruktur di Word menggunakan Aspose.Words untuk .NET. Perbarui teks, dropdown, dan gambar selangkah demi selangkah. |
+| [Kontrol Konten Kotak Kombo](./combo-box-content-control/) | Buat kontrol konten kotak kombo di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial terperinci kami. Sempurna untuk meningkatkan interaktivitas dokumen Anda. |
+| [Kontrol Konten Kotak Teks Kaya](./rich-text-box-content-control/) | Pelajari cara menambahkan dan mengkustomisasi Kontrol Konten Kotak Teks Kaya di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. |
+| [Atur Warna Kontrol Konten](./set-content-control-color/) | Atur warna Tag Dokumen Terstruktur dengan mudah di Word menggunakan Aspose.Words untuk .NET. Sesuaikan SDT Anda untuk menyempurnakan tampilan dokumen dengan panduan sederhana ini. |
 | [Hapus Kontrol Isi](./clear-contents-control/) | Pelajari cara menghapus kontrol konten dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. |
-| [Ikat SDT ke Bagian Xml Khusus](./bind-sdt-to-custom-xml-part/) | Pelajari cara mengikat SDT ke Bagian Xml Kustom menggunakan Aspose.Words untuk .NET. |
-| [Atur Gaya Kontrol Konten](./set-content-control-style/) | Pelajari cara mengatur gaya kontrol konten dalam dokumen Word menggunakan Aspose.Words untuk .NET, dengan menerapkan pemformatan yang konsisten. |
+| [Ikat SDT ke Bagian Xml Khusus](./bind-sdt-to-custom-xml-part/) | Pelajari cara mengikat Tag Dokumen Terstruktur (SDT) ke Bagian XML Kustom di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. |
+| [Atur Gaya Kontrol Konten](./set-content-control-style/) | Pelajari cara mengatur gaya kontrol konten di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk meningkatkan estetika dokumen. |
 | [Membuat Tabel Bagian Berulang yang Dipetakan ke Bagian Xml Kustom](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Pelajari cara membuat tabel dengan bagian berulang yang dipetakan ke CustomXmlPart di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Multi Bagian](./multi-section/) | Pelajari cara mengambil dan memproses tag dokumen terstruktur multi-bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Rentang Tag Dokumen Terstruktur Mulai Pemetaan Xml](./structured-document-tag-range-start-xml-mapping/) | Pelajari cara menyiapkan pemetaan XML untuk rentang tag dokumen terstruktur yang dimulai di dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Multi Bagian](./multi-section/) | Pelajari cara bekerja dengan tag dokumen terstruktur multi-bagian di Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. Ideal untuk manipulasi dokumen dinamis. |
+| [Rentang Tag Dokumen Terstruktur Mulai Pemetaan Xml](./structured-document-tag-range-start-xml-mapping/) | Pelajari cara mengikat data XML secara dinamis ke tag dokumen terstruktur di Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami. |

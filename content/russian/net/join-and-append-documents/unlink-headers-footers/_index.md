@@ -100,4 +100,4 @@ Aspose.Words for .NET — мощная библиотека для работы 
 Абсолютно! Aspose.Words for .NET можно использовать с любым языком .NET, включая VB.NET и F#.
 
 ### Где я могу найти дополнительную документацию и поддержку Aspose.Words для .NET?  
- Вы можете найти подробную документацию на[Страница документации Aspose.Words для .NET](https://reference.aspose.com/words/net/) и поддержка доступна на[Aspose форум](https://forum.aspose.com/c/words/8).
+ Вы можете найти подробную документацию на[Страница документации Aspose.Words для .NET](https://reference.aspose.com/words/net/) и поддержка доступна на[Форум Aspose](https://forum.aspose.com/c/words/8).

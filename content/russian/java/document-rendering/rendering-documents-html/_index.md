@@ -58,7 +58,7 @@ public class DocumentRenderer {
         HtmlSaveOptions saveOptions = new HtmlSaveOptions();
         saveOptions.setPrettyFormat(true);
         
-        // Сохраните документ как HTML
+        // Сохраните документ в формате HTML
         doc.save("path/to/output/document.html", saveOptions);
     }
 }
