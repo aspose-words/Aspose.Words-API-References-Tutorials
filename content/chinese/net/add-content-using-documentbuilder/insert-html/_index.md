@@ -20,7 +20,7 @@ url: /zh/net/add-content-using-documentbuilder/insert-html/
 3. .NET Framework：确保您的机器上安装了.NET 框架。
 4. 基本 C# 知识：对 C# 有一点熟悉将会大有帮助。
 
-一旦您检查完所有这些框，您就可以开始了！
+一旦检查完所有这些框，您就可以开始了！
 
 ## 导入命名空间
 

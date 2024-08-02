@@ -9,14 +9,14 @@ url: /id/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 ## Perkenalan
 
-Hai! Jika Anda perlu mengubah pengaturan halaman di beberapa bagian dalam dokumen Word, Anda berada di tempat yang tepat. Dalam tutorial ini, saya akan memandu Anda melalui proses menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memungkinkan Anda mengontrol hampir setiap aspek dokumen Word secara terprogram, menjadikannya alat bantu bagi pengembang. Jadi, ambillah secangkir kopi, dan mari kita mulai perjalanan langkah demi langkah untuk menguasai modifikasi pengaturan halaman!
+Hai! Jika Anda pernah perlu mengubah pengaturan halaman di beberapa bagian dalam dokumen Word, Anda berada di tempat yang tepat. Dalam tutorial ini, saya akan memandu Anda melalui proses menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memungkinkan Anda mengontrol hampir setiap aspek dokumen Word secara terprogram, menjadikannya alat bantu bagi pengembang. Jadi, ambillah secangkir kopi, dan mari kita mulai perjalanan langkah demi langkah untuk menguasai modifikasi pengaturan halaman!
 
 ## Prasyarat
 
 Sebelum mendalaminya, pastikan kita memiliki semua yang kita perlukan:
 
 1. Pengetahuan Dasar C#: Keakraban dengan sintaks dan konsep C# diperlukan.
-2.  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/) . Jika Anda baru mencobanya, a[uji coba gratis](https://releases.aspose.com/) tersedia.
+2.  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/) Jika Anda baru mencobanya, a[uji coba gratis](https://releases.aspose.com/) tersedia.
 3. Visual Studio: Versi terbaru apa pun akan berfungsi, tetapi versi terbaru direkomendasikan untuk pengalaman terbaik.
 4. .NET Framework: Pastikan Anda telah menginstalnya di sistem Anda.
 
@@ -89,7 +89,7 @@ Baris kode ini menyimpan dokumen di direktori yang ditentukan dengan nama file y
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil mengubah pengaturan halaman untuk semua bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini telah memandu Anda dalam membuat dokumen, menambahkan bagian, dan menyesuaikan pengaturan halamannya secara seragam. Aspose.Words menawarkan serangkaian fitur yang kaya, jadi silakan menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk kemampuan yang lebih maju.
+ Dan itu dia! Anda telah berhasil mengubah pengaturan halaman untuk semua bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini telah memandu Anda dalam membuat dokumen, menambahkan bagian, dan menyesuaikan pengaturan halamannya secara seragam. Aspose.Words menawarkan serangkaian fitur yang kaya, jadi silakan menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk kemampuan yang lebih maju.
 
 ## FAQ
 

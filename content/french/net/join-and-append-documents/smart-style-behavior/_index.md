@@ -61,7 +61,7 @@ Explication:
 
 ## Étape 3 : passer à la fin du document et insérer un saut de page
 
-Maintenant, naviguons jusqu'à la fin du document de destination et insérons un saut de page. Cela garantit que le contenu du document source démarre sur une nouvelle page.
+Maintenant, naviguons jusqu'à la fin du document de destination et insérons un saut de page. Cela garantit que le contenu du document source commence sur une nouvelle page.
 
 ```csharp
 // Aller à la fin du document

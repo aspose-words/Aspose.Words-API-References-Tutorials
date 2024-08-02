@@ -16,12 +16,12 @@ Az Aspose.Words for .NET használatával és ezeknek az oktatóanyagoknak a köv
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Csoportalak hozzáadása](./add-group-shape/) | Ismerje meg, hogyan adhat hozzá több alakzatot tartalmazó csoportalakzatot egy Word-dokumentumhoz az Aspose.Words for .NET használatával. |
-| [Alak beszúrása](./insert-shape/) | Ismerje meg, hogyan szúrhat be alakzatokat Word-dokumentumba az Aspose.Words for .NET használatával. |
-| [Képarány zárolva](./aspect-ratio-locked/) | Ismerje meg, hogyan zárolható vagy oldható fel egy alakzat képaránya Word-dokumentumban az Aspose.Words for .NET használatával. |
-| [Elrendezés cellában](./layout-in-cell/) | Ismerje meg, hogyan helyezhet el alakzatot egy táblázatcellán belül egy Word-dokumentumban az Aspose.Words for .NET használatával. |
-| [Adja hozzá a levágott sarkokat](./add-corners-snipped/) | Ismerje meg, hogyan adhat hozzá levágott sarkokkal rendelkező alakzatot egy Word-dokumentumhoz az Aspose.Words for .NET használatával. |
-| [Szerezzen tényleges alakhatárpontokat](./get-actual-shape-bounds-points/) | Ismerje meg, hogyan lehet lekérni egy alakzat tényleges határait pontokban (mértékegységben) egy Word-dokumentumban az Aspose.Words for .NET használatával. |
-| [Függőleges horgony](./vertical-anchor/) | Ismerje meg, hogyan helyezhet el egy alakzatot függőlegesen a dokumentumon belül az Aspose.Words for .NET függőleges rögzítési funkciójával.|
-| [Intelligens művészi alakzat észlelése](./detect-smart-art-shape/) | Ismerje meg, hogyan észlelheti a Smart Art alakzatokat Word-dokumentumban az Aspose.Words for .NET segítségével, amely grafikus ábrázolásokat azonosít. |
-| [Frissítse a Smart Art rajzot](./update-smart-art-drawing/) | Ismerje meg, hogyan frissítheti a Smart Art rajzot Word-dokumentumban az Aspose.Words for .NET használatával. |
+| [Csoportalak hozzáadása](./add-group-shape/) | Ezzel az átfogó, lépésenkénti oktatóanyaggal megtudhatja, hogyan adhat hozzá csoportalakzatokat Word-dokumentumokhoz az Aspose.Words for .NET segítségével. |
+| [Alak beszúrása](./insert-shape/) | A lépésenkénti útmutatónkból megtudhatja, hogyan szúrhat be és hogyan kezelhet alakzatokat Word-dokumentumokban az Aspose.Words for .NET használatával. |
+| [Képarány zárolva](./aspect-ratio-locked/) | Ismerje meg, hogyan zárolhatja az alakzatok képarányát a Word dokumentumokban az Aspose.Words for .NET segítségével. Kövesse ezt a lépésenkénti útmutatót, hogy képei és alakjai arányosak legyenek. |
+| [Elrendezés cellában](./layout-in-cell/) | Ebből az átfogó útmutatóból megtudhatja, hogyan állíthatja be az elrendezést a cellában az Aspose.Words for .NET használatával. Tökéletes azoknak a fejlesztőknek, akik a Word dokumentumokat szeretnék testre szabni. |
+| [Adja hozzá a levágott sarkokat](./add-corners-snipped/) | Ismerje meg, hogyan adhat hozzá sarkokkal levágott alakzatot Word-dokumentumaihoz az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató biztosítja a dokumentumok egyszerű javítását. |
+| [Szerezzen tényleges alakhatárpontokat](./get-actual-shape-bounds-points/) | Fedezze fel, hogyan szerezheti be a tényleges alakhatárpontokat a Word dokumentumokban az Aspose.Words for .NET segítségével. Tanuljon meg pontos alakmanipulációt ezzel a részletes útmutatóval. |
+| [Függőleges horgony](./vertical-anchor/) | Ismerje meg, hogyan állíthat be függőleges rögzítési pozíciókat a Word dokumentumok szövegdobozaihoz az Aspose.Words for .NET használatával. Könnyű, lépésről lépésre útmutatót tartalmaz.|
+| [Intelligens művészi alakzat észlelése](./detect-smart-art-shape/) | Ebből az átfogó útmutatóból megtudhatja, hogyan észlelheti a SmartArt-alakzatokat Word-dokumentumokban az Aspose.Words for .NET használatával. Tökéletes a dokumentumok munkafolyamatának automatizálásához. |
+| [Frissítse a Smart Art rajzot](./update-smart-art-drawing/) | Ebből a lépésenkénti útmutatóból megtudhatja, hogyan frissítheti a Smart Art rajzokat Word dokumentumokban az Aspose.Words for .NET használatával. Győződjön meg róla, hogy a kép mindig pontos. |

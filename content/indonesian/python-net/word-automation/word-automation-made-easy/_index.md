@@ -16,7 +16,7 @@ Di dunia yang serba cepat saat ini, otomatisasi tugas menjadi hal yang penting u
 
 Otomatisasi Word melibatkan penggunaan pemrograman untuk berinteraksi dengan dokumen Microsoft Word tanpa intervensi manual. Hal ini memungkinkan kami membuat dokumen secara dinamis, melakukan berbagai operasi teks dan pemformatan, serta mengekstrak data berharga dari dokumen yang ada.
 
-## Memulai Aspose.Words untuk Python
+## Memulai dengan Aspose.Words untuk Python
 
 Aspose.Words adalah perpustakaan populer yang menyederhanakan pekerjaan dengan dokumen Word dengan Python. Untuk memulai, Anda perlu menginstal perpustakaan di sistem Anda.
 
@@ -130,7 +130,7 @@ Ya, Aspose.Words tersedia untuk berbagai platform, termasuk Java dan .NET, memun
 ### Bisakah saya mengonversi dokumen Word ke PDF menggunakan Aspose.Words?
 Sangat! Aspose.Words mendukung berbagai format, termasuk konversi DOCX ke PDF.
 
-### Apakah Aspose.Words cocok untuk mengotomatiskan tugas pemrosesan dokumen berskala besar?
+### Apakah Aspose.Words cocok untuk mengotomatiskan tugas pemrosesan dokumen skala besar?
 Ya, Aspose.Words dirancang untuk menangani pemrosesan dokumen dalam jumlah besar secara efisien.
 
 ### Apakah Aspose.Words mendukung manipulasi dokumen berbasis cloud?

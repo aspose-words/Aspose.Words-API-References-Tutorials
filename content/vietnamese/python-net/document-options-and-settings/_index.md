@@ -18,7 +18,7 @@ Trong lĩnh vực tạo tài liệu, các tùy chọn và cài đặt đóng vai
 
 ## Bạn sẽ học được gì
 
-Trong suốt loạt hướng dẫn này, chúng tôi sẽ hướng dẫn bạn một loạt tùy chọn và cài đặt tài liệu có sẵn trong Aspose.Words cho cả nền tảng Python và .NET. Các hướng dẫn bao gồm nhiều chủ đề khác nhau, bao gồm:
+Trong suốt loạt bài hướng dẫn này, chúng tôi sẽ hướng dẫn bạn một loạt các tùy chọn và cài đặt tài liệu có sẵn trong Aspose.Words cho cả nền tảng Python và .NET. Các hướng dẫn bao gồm nhiều chủ đề khác nhau, bao gồm:
 
 - Thiết lập trang: Tìm hiểu cách tùy chỉnh kích thước trang, lề, hướng và loại giấy.
 - Định dạng phông chữ và văn bản: Khám phá các kiểu phông chữ, kích thước, màu sắc và các tùy chọn căn chỉnh văn bản.

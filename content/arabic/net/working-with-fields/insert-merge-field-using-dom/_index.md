@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ar/net/working-with-fields/insert-merge-field-using-dom/
 ---
+## مقدمة
 
 إذا كنت تعمل على معالجة المستندات في .NET، فمن المحتمل أنك صادفت Aspose.Words. توفر هذه المكتبة القوية مجموعة واسعة من الميزات لمعالجة مستندات Word برمجياً. في هذا البرنامج التعليمي، سنركز على ميزة واحدة محددة: إدراج حقل دمج باستخدام نموذج كائن المستند (DOM) في Aspose.Words لـ .NET. سيرشدك هذا الدليل خلال كل خطوة، بدءًا من إعداد بيئتك وحتى إدراج حقل دمج وتحديثه في مستند Word.
 
@@ -14,26 +15,26 @@ url: /ar/net/working-with-fields/insert-merge-field-using-dom/
 
 قبل الغوص في التعليمات البرمجية، دعنا نتأكد من أن لديك كل ما تحتاج إلى متابعته مع هذا البرنامج التعليمي.
 
-1. **Basic Knowledge of C#:** يجب أن تكون مرتاحًا مع برمجة C#.
-2. **Visual Studio Installed:** تأكد من تثبيت Visual Studio أو أي برنامج C# IDE آخر على جهازك.
-3. **Aspose.Words for .NET:** قم بتنزيل وتثبيت أحدث إصدار من Aspose.Words لـ .NET من[إطلاق](https://releases.aspose.com/words/net/).
-4. **Valid License:** إذا لم يكن لديك ترخيص، يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
+1. المعرفة الأساسية بـ C#: يجب أن تكون مرتاحًا لبرمجة C#.
+2. تثبيت Visual Studio: تأكد من تثبيت Visual Studio أو أي برنامج C# IDE آخر على جهازك.
+3.  Aspose.Words for .NET: قم بتنزيل أحدث إصدار من Aspose.Words for .NET وتثبيته من[إطلاق](https://releases.aspose.com/words/net/).
+4.  ترخيص صالح: إذا لم يكن لديك ترخيص، يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
 
 ## الخطوة 1: قم بإعداد مشروعك
 
 أول الأشياء أولاً، لنقم بإعداد مشروع جديد في Visual Studio.
 
-1. **Open Visual Studio.**
-2. **Create a New Project:** انتقل إلى ملف > جديد > المشروع. حدد تطبيق وحدة التحكم C#.
-3. **Name Your Project:** امنح مشروعك اسمًا ذا معنى، ثم انقر فوق "إنشاء".
+1. افتح فيجوال ستوديو.
+2. إنشاء مشروع جديد: انتقل إلى ملف > جديد > مشروع. حدد تطبيق وحدة التحكم C#.
+3. قم بتسمية مشروعك: قم بتسمية مشروعك باسم ذو معنى وانقر فوق إنشاء.
 
 ## الخطوة 2: تثبيت Aspose.Words
 
 لاستخدام Aspose.Words، تحتاج إلى إضافته إلى مشروعك. يمكن القيام بذلك عبر NuGet Package Manager.
 
-1. **Open NuGet Package Manager:** انقر بزر الماوس الأيمن على مشروعك في Solution Explorer، ثم حدد Manage NuGet Packages.
-2. **Search for Aspose.Words:** في مدير الحزم NuGet، ابحث عن "Aspose.Words".
-3. **Install the Package:** انقر فوق "تثبيت" لإضافة Aspose.Words إلى مشروعك.
+1. افتح NuGet Package Manager: انقر بزر الماوس الأيمن على مشروعك في Solution Explorer، ثم حدد Manage NuGet Packages.
+2. البحث عن Aspose.Words: في NuGet Package Manager، ابحث عن "Aspose.Words".
+3. تثبيت الحزمة: انقر فوق "تثبيت" لإضافة Aspose.Words إلى مشروعك.
 
 ## الخطوة 3: استيراد مساحات الأسماء
 
@@ -106,17 +107,17 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 
 ## الأسئلة الشائعة
 
-### 1. ما هو حقل الدمج؟
+###  ما هو حقل الدمج؟
 حقل الدمج هو عنصر نائب في مستند يمكن استبداله ديناميكيًا ببيانات من مصدر بيانات، مثل قاعدة بيانات أو ملف CSV.
 
-### 2. هل يمكنني استخدام Aspose.Words مجانًا؟
+###  هل يمكنني استخدام Aspose.Words مجانًا؟
  يقدم Aspose.Words نسخة تجريبية مجانية يمكنك تنزيلها[هنا](https://releases.aspose.com/). للاستخدام على المدى الطويل، سوف تحتاج إلى شراء ترخيص.
 
-### 3. كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words؟
+###  كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words؟
  يمكنك الحصول على ترخيص مؤقت من موقع Aspose[هنا](https://purchase.aspose.com/temporary-license/).
 
-### 4. ما هي إصدارات .NET التي يدعمها Aspose.Words؟
+### ما هي إصدارات .NET التي يدعمها Aspose.Words؟
 يدعم Aspose.Words إصدارات متعددة من .NET، بما في ذلك .NET Framework و.NET Core و.NET Standard.
 
-### 5. أين يمكنني العثور على وثائق واجهة برمجة التطبيقات الخاصة بـ Aspose.Words؟
+###  أين يمكنني العثور على وثائق واجهة برمجة التطبيقات الخاصة بـ Aspose.Words؟
  وثائق API متاحة[هنا](https://reference.aspose.com/words/net/).

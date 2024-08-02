@@ -2,42 +2,79 @@
 title: Μορφοποιημένος πίνακας
 linktitle: Μορφοποιημένος πίνακας
 second_title: Aspose.Words Document Processing API
-description: Μάθετε πώς να δημιουργείτε έναν μορφοποιημένο πίνακα σε ένα έγγραφο του Word με το Aspose.Words για .NET.
+description: Μάθετε πώς να δημιουργείτε και να μορφοποιείτε πίνακες σε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET με αυτόν τον αναλυτικό οδηγό βήμα προς βήμα.
 type: docs
 weight: 10
 url: /el/net/programming-with-tables/formatted-table/
 ---
+## Εισαγωγή
 
-Σε αυτό το σεμινάριο, θα μάθουμε πώς να δημιουργήσουμε έναν μορφοποιημένο πίνακα σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Θα ακολουθήσουμε έναν οδηγό βήμα προς βήμα για να κατανοήσουμε τον κώδικα και να εφαρμόσουμε αυτήν τη δυνατότητα. Στο τέλος αυτού του σεμιναρίου, θα μπορείτε να δημιουργήσετε πίνακες με προσαρμοσμένη μορφοποίηση στα έγγραφα του Word μέσω προγραμματισμού.
+Η δημιουργία και η μορφοποίηση πινάκων σε έγγραφα του Word μέσω προγραμματισμού μπορεί να φαίνεται σαν μια τρομακτική εργασία, αλλά με το Aspose.Words για .NET, γίνεται απλή και διαχειρίσιμη. Σε αυτό το σεμινάριο, θα σας καθοδηγήσουμε στον τρόπο δημιουργίας ενός μορφοποιημένου πίνακα σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Θα καλύψουμε τα πάντα, από τη ρύθμιση του περιβάλλοντος σας έως την αποθήκευση του εγγράφου σας με έναν όμορφα διαμορφωμένο πίνακα.
 
-## Βήμα 1: Ρύθμιση έργου
-1. Εκκινήστε το Visual Studio και δημιουργήστε ένα νέο έργο C#.
-2. Προσθέστε μια αναφορά στη βιβλιοθήκη Aspose.Words για .NET.
+## Προαπαιτούμενα
 
-## Βήμα 2: Δημιουργία του εγγράφου και προετοιμασία της δημιουργίας εγγράφων
-Για να ξεκινήσουμε τη δημιουργία του μορφοποιημένου πίνακα, πρέπει να δημιουργήσουμε ένα νέο έγγραφο και να αρχικοποιήσουμε τη δημιουργία εγγράφων. Ακολουθήστε αυτά τα βήματα:
+Πριν βουτήξουμε στον κώδικα, ας βεβαιωθούμε ότι έχετε όλα όσα χρειάζεστε:
+
+1. Aspose.Words for .NET Library: Κάντε λήψη του από[εδώ](https://releases.aspose.com/words/net/).
+2. Περιβάλλον ανάπτυξης: Ένα IDE σαν το Visual Studio.
+3. .NET Framework: Βεβαιωθείτε ότι έχετε εγκαταστήσει το .NET Framework στον υπολογιστή σας.
+
+## Εισαγωγή χώρων ονομάτων
+
+Πριν γράψετε τον πραγματικό κώδικα, πρέπει να εισαγάγετε τους απαραίτητους χώρους ονομάτων:
 
 ```csharp
-// Διαδρομή στον κατάλογο των εγγράφων σας
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//Δημιουργήστε το έγγραφο και αρχικοποιήστε τη δημιουργία εγγράφων
+## Βήμα 1: Ρυθμίστε τον Κατάλογο Εγγράφων σας
+
+Αρχικά, πρέπει να ορίσετε τη διαδρομή όπου θα αποθηκευτεί το έγγραφό σας.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` με την πραγματική διαδρομή όπου θέλετε να αποθηκεύσετε το έγγραφο.
+
+## Βήμα 2: Αρχικοποιήστε το Document και το DocumentBuilder
+
+Τώρα, αρχικοποιήστε ένα νέο έγγραφο και ένα αντικείμενο DocumentBuilder.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Φροντίστε να αντικαταστήσετε τον "ΚΑΤΑΛΟΓΟ ΕΓΓΡΑΦΩΝ ΣΑΣ" με την πραγματική διαδρομή προς τον κατάλογο των εγγράφων σας.
+ ο`DocumentBuilder` είναι μια βοηθητική κλάση που απλοποιεί τη διαδικασία δημιουργίας εγγράφων.
 
-## Βήμα 3: Δημιουργία του μορφοποιημένου πίνακα
-Στη συνέχεια, θα δημιουργήσουμε τον μορφοποιημένο πίνακα χρησιμοποιώντας τις μεθόδους που παρέχονται από το πρόγραμμα δημιουργίας εγγράφων. Χρησιμοποιήστε τον ακόλουθο κώδικα:
+## Βήμα 3: Ξεκινήστε τον πίνακα
+
+ Στη συνέχεια, ξεκινήστε τη δημιουργία του πίνακα χρησιμοποιώντας το`StartTable` μέθοδος.
 
 ```csharp
-// Ξεκινήστε την κατασκευή συστοιχιών
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// Κατασκευή της σειράς κεφαλίδας πίνακα
-builder. InsertCell();
-table. LeftIndent = 20.0;
+Η εισαγωγή ενός κελιού είναι απαραίτητη για την έναρξη του πίνακα.
+
+## Βήμα 4: Εφαρμογή μορφοποίησης σε όλο τον πίνακα
+
+Μπορείτε να εφαρμόσετε μορφοποίηση που επηρεάζει ολόκληρο τον πίνακα. Για παράδειγμα, ορίζοντας την αριστερή εσοχή:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## Βήμα 5: Μορφοποιήστε τη γραμμή κεφαλίδας
+
+Ορίστε το ύψος, τη στοίχιση και άλλες ιδιότητες για τη σειρά κεφαλίδας.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+Σε αυτό το βήμα, κάνουμε τη σειρά της κεφαλίδας να ξεχωρίζει ορίζοντας ένα χρώμα φόντου, μέγεθος γραμματοσειράς και στοίχιση.
+
+## Βήμα 6: Εισαγάγετε πρόσθετα κελιά κεφαλίδας
+
+Εισαγάγετε περισσότερα κελιά για τη σειρά κεφαλίδας:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## Βήμα 7: Μορφοποιήστε τις γραμμές σώματος
 
-// Κατασκευή του σώματος της συστοιχίας
+Αφού ρυθμίσετε την κεφαλίδα, μορφοποιήστε το σώμα του πίνακα:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// Τέλος κατασκευής συστοιχίας
-builder. EndTable();
 ```
 
- Εδώ χρησιμοποιούμε το εργαλείο δημιουργίας εγγράφων για να δημιουργήσουμε τον πίνακα βήμα προς βήμα. Ξεκινάμε καλώντας`StartTable()` για να αρχικοποιήσετε τον πίνακα. Στη συνέχεια χρησιμοποιούμε`InsertCell()` για να εισάγετε κελιά και`Write()` για να προσθέσετε περιεχόμενο σε κάθε κελί. Χρησιμοποιούμε επίσης διαφορετικές ιδιότητες μορφοποίησης για να ορίσουμε τη μορφοποίηση σειρών, κελιών και κειμένου πίνακα.
+## Βήμα 8: Εισαγάγετε γραμμές σώματος
 
-## Βήμα 4: Αποθηκεύστε το έγγραφο
-Τέλος, πρέπει να αποθηκεύσουμε το έγγραφο που περιέχει τον μορφοποιημένο πίνακα. Χρησιμοποιήστε τον ακόλουθο κώδικα:
+Εισαγάγετε τις γραμμές του σώματος με περιεχόμενο:
 
 ```csharp
-// Αποθηκεύστε το έγγραφο
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+Επαναλάβετε για επιπλέον σειρές:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Βήμα 9: Αποθηκεύστε το έγγραφο
+
+Τέλος, αποθηκεύστε το έγγραφο στον καθορισμένο κατάλογο:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Βεβαιωθείτε ότι έχετε καθορίσει τη σωστή διαδρομή και όνομα αρχείου για το έγγραφο εξόδου.
-
-### Δείγμα πηγαίου κώδικα για Μορφοποιημένο Πίνακα χρησιμοποιώντας Aspose.Words για .NET 
-
-```csharp
-	// Διαδρομή στον κατάλογο εγγράφων σας
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// Η μορφοποίηση σε επίπεδο πίνακα πρέπει να εφαρμόζεται αφού υπάρχει τουλάχιστον μία σειρά στον πίνακα.
-	table.LeftIndent = 20.0;
-	// Ορίστε ύψος και ορίστε τον κανόνα ύψους για τη σειρά κεφαλίδας.
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// Δεν χρειάζεται να καθορίσουμε το πλάτος αυτού του κελιού επειδή έχει κληρονομηθεί από το προηγούμενο κελί.
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// Επαναφέρετε το ύψος και ορίστε έναν διαφορετικό κανόνα ύψους για το σώμα του τραπεζιού.
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// Επαναφορά μορφοποίησης γραμματοσειράς.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+Αυτό θα δημιουργήσει και θα αποθηκεύσει ένα έγγραφο του Word με τον μορφοποιημένο πίνακα.
 
 ## συμπέρασμα
-Σε αυτό το σεμινάριο, μάθαμε πώς να δημιουργήσουμε έναν μορφοποιημένο πίνακα σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Ακολουθώντας αυτόν τον οδηγό βήμα προς βήμα και εφαρμόζοντας τον παρεχόμενο κώδικα C#, μπορείτε να δημιουργήσετε προσαρμοσμένους πίνακες με συγκεκριμένη μορφοποίηση στα έγγραφα του Word μέσω προγραμματισμού. Αυτή η δυνατότητα σάς επιτρέπει να παρουσιάζετε και να δομείτε τα δεδομένα σας με οπτικά ελκυστικό και οργανωμένο τρόπο.
+
+Και εκεί το έχετε! Ακολουθώντας αυτά τα βήματα, μπορείτε να δημιουργήσετε έναν καλά διαμορφωμένο πίνακα σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Αυτή η ισχυρή βιβλιοθήκη διευκολύνει τον προγραμματισμό των εγγράφων του Word, εξοικονομώντας χρόνο και προσπάθεια.
+
+## Συχνές ερωτήσεις
+
+### Τι είναι το Aspose.Words για .NET;
+Το Aspose.Words for .NET είναι μια ισχυρή βιβλιοθήκη για τη δημιουργία, την επεξεργασία και τη μετατροπή εγγράφων του Word μέσω προγραμματισμού.
+
+### Μπορώ να χρησιμοποιήσω διαφορετικά χρώματα για διαφορετικές σειρές;
+Ναι, μπορείτε να εφαρμόσετε διαφορετική μορφοποίηση, συμπεριλαμβανομένων των χρωμάτων, σε διαφορετικές σειρές ή κελιά.
+
+### Είναι δωρεάν το Aspose.Words για .NET;
+ Το Aspose.Words για .NET είναι μια πληρωμένη βιβλιοθήκη, αλλά μπορείτε να λάβετε ένα[δωρεάν δοκιμή](https://releases.aspose.com/).
+
+### Πώς μπορώ να λάβω υποστήριξη για το Aspose.Words για .NET;
+ Μπορείτε να λάβετε υποστήριξη από το[Υποστηρίξτε φόρουμ κοινότητας](https://forum.aspose.com/c/words/8).
+
+### Μπορώ να δημιουργήσω άλλους τύπους εγγράφων με το Aspose.Words για .NET;
+Ναι, το Aspose.Words για .NET υποστηρίζει διάφορες μορφές εγγράφων, συμπεριλαμβανομένων των PDF, HTML και TXT.

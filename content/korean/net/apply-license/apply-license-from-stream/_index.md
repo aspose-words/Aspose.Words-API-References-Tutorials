@@ -11,12 +11,12 @@ url: /ko/net/apply-license/apply-license-from-stream/
 
 안녕하세요, 코더 여러분! .NET용 Aspose.Words의 세계에 뛰어들고 있다면 가장 먼저 해야 할 일 중 하나는 라이브러리의 잠재력을 최대한 활용하기 위해 라이선스를 적용하는 것입니다. 이 가이드에서는 스트림에서 라이선스를 적용하는 방법을 안내합니다. 저를 믿으십시오. 생각보다 쉽습니다. 이 튜토리얼이 끝나면 애플리케이션이 원활하게 실행될 것입니다. 시작할 준비가 되셨나요? 바로 뛰어들자!
 
-## 전제조건
+## 전제 조건
 
 손을 더럽히기 전에 필요한 모든 것이 있는지 확인합시다.
 
 1.  .NET용 Aspose.Words: 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
-2.  라이센스 파일: 유효한 라이센스 파일이 필요합니다. 가지고 있지 않다면, 얻을 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 테스트 목적으로.
+2.  라이센스 파일: 유효한 라이센스 파일이 필요합니다. 가지고 있지 않다면, 얻을 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 테스트 목적으로.
 3. 기본 C# 지식: C# 프로그래밍에 대한 기본적인 이해가 있다고 가정합니다.
 
 ## 네임스페이스 가져오기
@@ -88,7 +88,7 @@ catch (Exception e)
 라이선스를 적용하면 Aspose.Words의 모든 기능이 잠금 해제되어 모든 제한 사항이나 워터마크가 제거됩니다.
 
 ### 평가판 라이선스를 사용할 수 있나요?
- 예, 다음을 얻을 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
+ 예, 다음을 얻을 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
 
 ### 라이센스 파일이 손상되면 어떻게 되나요?
  라이센스 파일이 손상되지 않았으며 수정되지 않았는지 확인하십시오. 문제가 지속되면 문의하세요.[지원하다](https://forum.aspose.com/c/words/8).

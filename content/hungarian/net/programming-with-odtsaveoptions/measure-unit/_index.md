@@ -62,7 +62,7 @@ OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUn
 
  Ebben a példában a mértékegységet hüvelykre állítjuk be. Választhat más egységeket is, mint pl`OdtSaveMeasureUnit.Centimeters` vagy`OdtSaveMeasureUnit.Points` az Ön igényeitől függően.
 
-## 4. lépés: Alakítsa át a dokumentumot ODT-vé
+## 4. lépés: Alakítsa át a dokumentumot ODT-re
 
  Végül konvertáljuk a Word dokumentumot ODT formátumba a konfigurált formátum használatával`OdtSaveOptions`.
 

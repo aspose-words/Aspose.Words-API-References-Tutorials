@@ -2,34 +2,70 @@
 title: Bình luận đã được giải quyết và trả lời
 linktitle: Bình luận đã được giải quyết và trả lời
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách giải quyết các nhận xét và câu trả lời của chúng trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tự động giải quyết và trả lời nhận xét trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn từng bước bao gồm.
 type: docs
 weight: 10
 url: /vi/net/working-with-comments/comment-resolved-and-replies/
 ---
+## Giới thiệu
 
-Trong hướng dẫn toàn diện này, bạn sẽ tìm hiểu cách giải quyết các nhận xét và câu trả lời của chúng trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ hướng dẫn bạn thực hiện quy trình và cung cấp cho bạn các đoạn mã C# cần thiết. Khi kết thúc hướng dẫn này, bạn sẽ có thể quản lý việc giải quyết nhận xét và cập nhật trạng thái của nhận xét cũng như câu trả lời của họ.
+Nếu bạn đang làm việc với tài liệu Word, chắc chắn bạn đã từng xử lý các nhận xét. Chúng rất lý tưởng cho việc cộng tác nhưng việc quản lý chúng có thể gặp rắc rối. Với Aspose.Words for .NET, bạn có thể tự động hóa quá trình giải quyết và trả lời nhận xét. Hướng dẫn này sẽ hướng dẫn bạn các bước để thực hiện điều đó.
 
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-- Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tải tài liệu và truy cập bình luận
-Để bắt đầu, hãy tải tài liệu chứa các nhận xét bằng lớp Tài liệu và truy cập bộ sưu tập nhận xét:
+Trước khi đi sâu vào, hãy đảm bảo bạn có những điều sau:
+
+1.  Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Thiết lập với .NET Framework.
+3. Kiến thức cơ bản về C#: Làm quen với cú pháp và khái niệm.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này đảm bảo rằng tất cả các lớp và phương thức chúng ta cần đều có sẵn.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ thực hiện. Mỗi bước sẽ giúp bạn hiểu mã và chức năng của nó.
+
+## Bước 1: Tải tài liệu
+
+ Để bắt đầu, hãy tải tài liệu Word có chứa các nhận xét. Sử dụng`Document` lớp học cho việc này.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+ Dòng mã này khởi tạo một`Document` đối tượng bằng đường dẫn đến tài liệu Word của bạn.
+
+## Bước 2: Truy xuất bình luận
+
+ Tiếp theo, chúng ta cần lấy tất cả các bình luận trong tài liệu. Chúng tôi sẽ sử dụng`GetChildNodes` phương pháp để lấy một bộ sưu tập`Comment` điểm giao.
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## Bước 2: Giải quyết nhận xét và câu trả lời của họ
-Tiếp theo, lặp lại các nhận xét và câu trả lời của chúng để đánh dấu chúng là đã giải quyết:
+Mã này truy xuất tất cả các nhận xét trong tài liệu và lưu trữ chúng trong một`NodeCollection`.
+
+## Bước 3: Truy cập bình luận của phụ huynh
+
+Trong ví dụ của chúng tôi, chúng tôi sẽ tập trung vào nhận xét đầu tiên trong bộ sưu tập. Đây sẽ là nhận xét của phụ huynh chúng tôi.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+ Ở đây, chúng tôi đang truyền nút đầu tiên trong bộ sưu tập tới một`Comment` sự vật.
+
+## Bước 4: Lặp lại các câu trả lời
+
+ Bây giờ, hãy lặp lại các câu trả lời cho nhận xét của phụ huynh. Chúng tôi sẽ sử dụng một`foreach` vòng lặp để lặp lại từng câu trả lời.
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-Trong đoạn mã trên, chúng ta truy cập vào nhận xét gốc và lặp lại các câu trả lời của nhận xét đó. Chúng tôi có thể truy xuất ID nhận xét gốc và trạng thái giải quyết của nó. Sau đó, chúng tôi cập nhật dấu "Xong" của mỗi câu trả lời nhận xét để cho biết cách giải quyết.
+Trong vòng lặp này, chúng tôi in ID của nhận xét gốc và trạng thái của nó (cho dù nó đã được thực hiện hay chưa). Sau đó, chúng tôi đánh dấu mỗi câu trả lời là xong.
 
-## Bước 3: Lưu tài liệu
-Sau khi giải quyết các nhận xét và cập nhật trạng thái của chúng, hãy lưu tài liệu đã sửa đổi vào một tệp bằng phương thức Lưu của lớp Tài liệu:
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu đã sửa đổi vào thư mục của bạn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### Mã nguồn ví dụ để giải quyết nhận xét và câu trả lời của họ bằng Aspose.Words cho .NET
-Đây là mã nguồn hoàn chỉnh để giải quyết các nhận xét và phản hồi của chúng bằng Aspose.Words cho .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-Hãy nhớ điều chỉnh mã theo yêu cầu cụ thể của bạn, bao gồm đường dẫn tệp tài liệu và tùy chỉnh bổ sung
+Mã này lưu các thay đổi vào tài liệu mới, đảm bảo tệp gốc của bạn không bị ảnh hưởng.
 
 ## Phần kết luận
-Chúc mừng! Bạn đã học thành công cách giải quyết các nhận xét và câu trả lời của chúng trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể quản lý độ phân giải nhận xét cũng như cập nhật trạng thái nhận xét cũng như câu trả lời của chúng theo yêu cầu của bạn.
 
-Độ phân giải nhận xét giúp theo dõi và quản lý phản hồi trong tài liệu. Thử nghiệm với các trạng thái nhận xét khác nhau và tùy chỉnh chúng để cải thiện quy trình cộng tác và đánh giá trong tài liệu của bạn.
+Xử lý nhận xét trong tài liệu Word không phải là công việc thủ công. Với Aspose.Words for .NET, bạn có thể tự động hóa quy trình, tiết kiệm thời gian và giảm thiểu lỗi. Hãy làm theo hướng dẫn này để giải quyết và trả lời nhận xét trong tài liệu của bạn một cách hiệu quả.
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Làm cách nào để giải quyết nhận xét trong Aspose.Words dành cho .NET?
+### Tôi có thể tự động hóa các tác vụ liên quan đến nhận xét khác bằng Aspose.Words cho .NET không?  
+Có, bạn có thể tự động hóa nhiều tác vụ khác nhau như thêm, xóa và sửa đổi nhận xét.
 
- Đáp: Để giải quyết một nhận xét trong Aspose.Words dành cho .NET, bạn có thể sử dụng`Comment.Resolve` phương pháp xác định`Comment` đối tượng bạn muốn giải quyết. Điều này sẽ đánh dấu nhận xét là đã được giải quyết và ẩn nó trong tài liệu cuối cùng.
+### Aspose.Words cho .NET có tương thích với .NET Core không?  
+Có, Aspose.Words for .NET hỗ trợ cả .NET Framework và .NET Core.
 
-#### Câu hỏi: Làm cách nào để thêm câu trả lời cho nhận xét đã được giải quyết trong Aspose.Words cho .NET?
+### Làm cách nào tôi có thể dùng thử miễn phí Aspose.Words cho .NET?  
+ Bạn có thể tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
 
- Đáp: Mặc dù các nhận xét đã giải quyết bị ẩn theo mặc định trong tài liệu cuối cùng, bạn vẫn có thể thêm câu trả lời cho nhận xét đã giải quyết bằng cách sử dụng`Comment.AddReply`phương pháp chỉ định văn bản trả lời và nơi bạn muốn thêm nó.
+### Tôi có thể sử dụng Aspose.Words for .NET để làm việc với các loại tài liệu khác không?  
+Có, Aspose.Words hỗ trợ nhiều định dạng khác nhau bao gồm DOCX, PDF, HTML, v.v.
 
-#### Câu hỏi: Làm cách nào để xem các nhận xét đã được giải quyết trong Aspose.Words dành cho .NET?
-
- Đáp: Theo mặc định, các nhận xét đã giải quyết sẽ bị ẩn trong tài liệu cuối cùng. Tuy nhiên, bạn có thể hiển thị chúng bằng cách sử dụng`CommentOptions.ShowResolvedComments` tài sản của`Document` đối tượng và đặt nó thành`true`.
-
-#### Câu hỏi: Làm cách nào tôi có thể ẩn tất cả nhận xét, bao gồm cả câu trả lời, trong Aspose.Words dành cho .NET?
-
- Trả lời: Để ẩn tất cả nhận xét, bao gồm cả câu trả lời, trong Aspose.Words dành cho .NET, bạn có thể sử dụng`CommentOptions.CommentDisplayMode` tài sản của`Document` đối tượng và đặt nó thành`CommentDisplayMode.None`.
-
-#### Câu hỏi: Tôi có thể chỉnh sửa nội dung của nhận xét đã được giải quyết trong Aspose.Words cho .NET không?
-
- Trả lời: Có, bạn có thể chỉnh sửa nội dung của nhận xét đã được giải quyết trong Aspose.Words for .NET bằng cách truy cập vào`Comment.Text` thuộc tính tương ứng`Comment` đối tượng và sửa đổi văn bản nếu cần.
+### Tôi có thể tìm tài liệu chi tiết về Aspose.Words cho .NET ở đâu?  
+ Bạn có thể truy cập tài liệu[đây](https://reference.aspose.com/words/net/).

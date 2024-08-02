@@ -2,7 +2,7 @@
 title: استخدام الإشارات المرجعية في Aspose.Words لـ Java
 linktitle: استخدام الإشارات المرجعية
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: قم بتحسين معالجة المستندات الخاصة بك باستخدام Aspose.Words for Java. تعلم كيفية استخدام الإشارات المرجعية للتنقل الفعال للمحتوى ومعالجته في هذا الدليل المفصّل خطوة بخطوة.
+description: قم بتحسين معالجة المستندات الخاصة بك باستخدام Aspose.Words for Java. تعلم كيفية استخدام الإشارات المرجعية للتنقل والتعامل بكفاءة مع المحتوى في هذا الدليل المفصّل خطوة بخطوة.
 type: docs
 weight: 17
 url: /ar/java/document-manipulation/using-bookmarks/

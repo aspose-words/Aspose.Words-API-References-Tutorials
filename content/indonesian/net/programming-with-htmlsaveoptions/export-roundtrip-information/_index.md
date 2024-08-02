@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ## Kesimpulan
 
-Dan itu dia! Hanya dengan beberapa baris kode, Anda telah berhasil mengekspor informasi bolak-balik dari dokumen Word ke HTML menggunakan Aspose.Words untuk .NET. Fitur canggih ini memastikan dokumen Anda mempertahankan integritas dan formatnya selama konversi, sehingga membuat hidup Anda lebih mudah.
+Dan itu dia! Hanya dengan beberapa baris kode, Anda telah berhasil mengekspor informasi bolak-balik dari dokumen Word ke HTML menggunakan Aspose.Words untuk .NET. Fitur canggih ini memastikan dokumen Anda tetap utuh dan terformat selama konversi, sehingga membuat hidup Anda lebih mudah.
 
 ## FAQ
 

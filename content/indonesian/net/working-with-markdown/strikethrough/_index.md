@@ -53,7 +53,7 @@ Selamat! Anda sekarang telah mempelajari cara menerapkan gaya teks coretan denga
 
 #### T: Bagaimana cara menambahkan teks yang dicoret di Aspose.Words?
 
- A: Untuk menambahkan teks yang dicoret di Aspose.Words, Anda dapat menggunakan`Font.StrikeThrough` properti dari`Run`obyek. Anda dapat mengatur properti ini menjadi`true` untuk menambahkan teks yang dicoret ke teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.StrikeThrough=true` untuk menambahkan teks yang dicoret ke dalam`Run` obyek.
+ A: Untuk menambahkan teks yang dicoret di Aspose.Words, Anda dapat menggunakan`Font.StrikeThrough` properti dari`Run` obyek. Anda dapat mengatur properti ini menjadi`true` untuk menambahkan teks yang dicoret ke teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.StrikeThrough=true` untuk menambahkan teks yang dicoret ke dalam`Run` obyek.
 
 #### Q: Apakah mungkin untuk menambahkan teks yang dicoret ke beberapa bagian teks dalam paragraf yang sama?
 

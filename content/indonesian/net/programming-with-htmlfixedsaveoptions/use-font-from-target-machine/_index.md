@@ -106,7 +106,7 @@ Jika mesin target tidak memiliki font yang diperlukan, dokumen mungkin tidak dit
 ### Bagaimana cara menyematkan font ke dalam dokumen?
  Menyematkan font dapat dilakukan menggunakan`FontSettings` kelas di Aspose.Words untuk .NET. Mengacu kepada[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
-### Apakah ada cara untuk melihat pratinjau dokumen sebelum menyimpannya?
+### Apakah ada cara untuk melihat pratinjau dokumen sebelum disimpan?
  Ya, Anda dapat menggunakan`DocumentRenderer` kelas untuk melihat pratinjau dokumen sebelum menyimpan. Lihat Aspose.Words untuk .NET[dokumentasi](https://reference.aspose.com/words/net/) untuk informasi lebih lanjut.
 
 ### Bisakah saya menyesuaikan keluaran HTML lebih lanjut?

@@ -2,53 +2,97 @@
 title: Távolítsa el a táblázatot körülvevő szöveget
 linktitle: Távolítsa el a táblázatot körülvevő szöveget
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a szöveg és a táblázat közötti távolság meghatározásához egy Word-dokumentumban az Aspose.Words for .NET használatával.
+description: Ismerje meg, hogyan kérheti le a táblázat és a környező szöveg közötti távolságot a Word dokumentumokban az Aspose.Words for .NET segítségével. Ezzel az útmutatóval javíthatja a dokumentum elrendezését.
 type: docs
 weight: 10
 url: /hu/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban lépésről lépésre végigvezetjük az Aspose.Words for .NET segítségével táblázatban lévő környező szövegek közötti távolság meghatározásához. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Az oktatóanyag végén tudni fogja, hogyan érheti el a táblázat és a környező szöveg közötti távolságokat a Word-dokumentumokban az Aspose.Words for .NET használatával.
+Képzelje el, hogy egy elegáns jelentést vagy egy fontos dokumentumot készít, és azt szeretné, hogy a táblázatok jól nézzenek ki. Biztosítania kell, hogy elegendő hely legyen a táblázatok és a körülöttük lévő szöveg között, hogy a dokumentum könnyen olvasható és tetszetős legyen. Az Aspose.Words for .NET használatával könnyedén lekérheti és programozottan beállíthatja ezeket a távolságokat. Ez az oktatóanyag végigvezeti Önt az eléréséhez szükséges lépéseken, így dokumentumai kitűnhetnek a professzionalizmus extra finomságával.
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
-Először is be kell állítania a dokumentumkönyvtár elérési útját. Itt található a Word-dokumentum. Cserélje ki a "DOKUMENTUMKÖNYVTÁR" elemet a megfelelő elérési útra.
+## Előfeltételek
+
+Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
+
+1.  Aspose.Words for .NET Library: telepítenie kell az Aspose.Words for .NET könyvtárat. Ha még nem tette meg, letöltheti a[Aspose Releases](https://releases.aspose.com/words/net/) oldalon.
+2. Fejlesztői környezet: Működő fejlesztői környezet telepített .NET-keretrendszerrel. A Visual Studio jó választás.
+3. Mintadokumentum: Word-dokumentum (.docx), amely legalább egy táblázatot tartalmaz a kód teszteléséhez.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket a projektbe. Ez lehetővé teszi a Word dokumentumok Aspose.Words for .NET használatával történő kezeléséhez szükséges osztályok és módszerek elérését.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## 2. lépés: Töltse be a meglévő dokumentumot
- Ezután be kell töltenie a meglévő Word-dokumentumot a`Document` osztály.
+Most bontsuk le a folyamatot könnyen követhető lépésekre. A dokumentum betöltésétől az asztal körüli távolságok lekéréséig mindenre kiterjedünk.
+
+## 1. lépés: Töltse be a dokumentumot
+
+ Az első lépés a Word-dokumentum betöltése az Aspose.Wordsba`Document` tárgy. Ez az objektum a teljes dokumentumot reprezentálja.
 
 ```csharp
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Töltse be a dokumentumot
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## 3. lépés: Mérje meg a táblázat és a környező szöveg közötti távolságot
- A táblázat és a környező szöveg közötti távolság meghatározásához a dokumentumban lévő táblázathoz kell hozzáférnünk a segítségével`GetChild()` módszer és a`NodeType.Table` ingatlan. Ezután a tömbtulajdonságok segítségével megjeleníthetjük a különböző távolságokat`DistanceTop`, `DistanceBottom`, `DistanceRight`és`DistanceLeft`.
+## 2. lépés: Nyissa meg a táblázatot
+
+ Ezután hozzá kell férnie a dokumentumban lévő táblázathoz. A`GetChild` metódus lehetővé teszi a dokumentumban található első táblázat lekérését.
 
 ```csharp
+// Szerezze meg a dokumentum első táblázatát
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-Console.WriteLine("Distance between table and top text: " + table.DistanceTop);
-Console.WriteLine("Distance between table and bottom text: " + table.DistanceBottom);
-Console.WriteLine("Distance between the table and the text on the right: " + table.DistanceRight);
-Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### Forráskód minta a Távolság lekéréséhez a táblázatot körülvevő szöveghez az Aspose.Words for .NET használatával 
+## 3. lépés: Távolságértékek lekérése
+
+Most, hogy megvan a táblázat, ideje lekérni a távolságértékeket. Ezek az értékek a táblázat és a környező szöveg közötti teret jelentik mindkét oldalról: fent, lent, balról és jobbról.
 
 ```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Mérje meg a távolságot a táblázat és a környező szöveg között
+Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
+```
 
-	Document doc = new Document(dataDir + "Tables.docx");
-	Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Console.WriteLine(table.DistanceTop);
-	Console.WriteLine(table.DistanceBottom);
-	Console.WriteLine(table.DistanceRight);
-	Console.WriteLine(table.DistanceLeft);
+## 4. lépés: Jelenítse meg a távolságokat
+
+Végül megjelenítheti a távolságokat. Ezzel ellenőrizheti a térközt, és elvégezheti a szükséges módosításokat annak érdekében, hogy a táblázat tökéletesen nézzen ki a dokumentumban.
+
+```csharp
+// A távolságok megjelenítése
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet meghatározni a táblázatban lévő környező szövegek közötti távolságot az Aspose.Words for .NET segítségével. Ennek a lépésről lépésre szóló útmutatónak a követésével könnyedén hozzáférhet a táblázat és a környező szöveg közötti távolságokhoz a Word-dokumentumokban. Az Aspose.Words hatékony és rugalmas API-t kínál a dokumentumok táblázatainak kezeléséhez és formázásához. Ezen ismeretek birtokában elemezheti táblázatainak elrendezését a szöveghez viszonyítva, és megfelelhet a konkrét igényeknek.
+
+És megvan! Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével könnyedén lekérheti a táblázat és a környező szöveg közötti távolságokat a Word-dokumentumokban. Ez az egyszerű, de hatékony technika lehetővé teszi a dokumentum elrendezésének finomhangolását, így olvashatóbbá és látványosabbá téve azt. Boldog kódolást!
+
+## GYIK
+
+### Beállíthatom programozottan a távolságokat?
+ Igen, az Aspose.Words segítségével programozottan beállíthatja a távolságokat a`DistanceTop`, `DistanceBottom`, `DistanceRight` , és`DistanceLeft` tulajdonságai a`Table` tárgy.
+
+### Mi a teendő, ha a dokumentumom több táblával rendelkezik?
+ A dokumentum utódcsomópontjait végigcsinálhatja, és ugyanazt a módszert alkalmazhatja minden táblára. Használat`GetChildNodes(NodeType.Table, true)` hogy megkapja az összes asztalt.
+
+### Használhatom az Aspose.Words-t .NET Core-al?
+Teljesen! Az Aspose.Words támogatja a .NET Core-t, és ugyanazt a kódot kisebb módosításokkal használhatja a .NET Core projektekhez.
+
+### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
+Az Aspose.Words for .NET a Visual Studio NuGet Package Manager segítségével telepíthető. Egyszerűen keresse meg az "Aspose.Words" kifejezést, és telepítse a csomagot.
+
+### Vannak korlátozások az Aspose.Words által támogatott dokumentumtípusokra vonatkozóan?
+ Az Aspose.Words a dokumentumformátumok széles skáláját támogatja, beleértve a DOCX-et, DOC-t, PDF-t, HTML-t és még sok mást. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) a támogatott formátumok teljes listájához.

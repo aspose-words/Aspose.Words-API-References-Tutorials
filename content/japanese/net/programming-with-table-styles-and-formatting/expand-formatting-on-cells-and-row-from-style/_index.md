@@ -2,82 +2,111 @@
 title: スタイルからセルと行の書式設定を展開
 linktitle: スタイルからセルと行の書式設定を展開
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、テーブル スタイルからセルと行に書式設定を拡張する手順ガイド。
+description: Aspose.Words for .NET を使用して、Word 文書のスタイルからセルと行の書式設定を拡張する方法を学びます。ステップ バイ ステップ ガイドが含まれています。
 type: docs
 weight: 10
 url: /ja/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、スタイルからセルと行に書式設定を拡張するプロセスを段階的に説明します。バンドルされている C# ソース コードについて説明し、この機能を理解して独自のプロジェクトに実装するのに役立つ包括的なガイドを提供します。このチュートリアルの最後には、Aspose.Words for .NET を使用して Word ドキュメント内の特定のセルと行にテーブル スタイルの書式設定を適用する方法がわかります。
+Word 文書内のテーブル全体に一貫したスタイルを適用する必要があることに気づいたことはありませんか? 各セルを手動で調整するのは面倒で、エラーが発生しやすくなります。そこで、Aspose.Words for .NET が役立ちます。このチュートリアルでは、テーブル スタイルからセルと行の書式設定を拡張するプロセスについて説明します。これにより、余分な手間をかけずに、ドキュメントが洗練されプロフェッショナルに見えるようになります。
 
+## 前提条件
 
-## ステップ1: ドキュメントディレクトリを定義する
-まず、ドキュメント ディレクトリへのパスを設定する必要があります。これは Word ドキュメントが保存されている場所です。「YOUR DOCUMENTS DIRECTORY」を適切なパスに置き換えます。
+細かい詳細に入る前に、次のものを用意しておいてください。
+
+-  Aspose.Words for .NET: ダウンロードできます[ここ](https://releases.aspose.com/words/net/).
+- Visual Studio: 最新バージョンであればどれでも動作します。
+- C# の基礎知識: C# プログラミングに精通していることが必須です。
+- サンプル ドキュメント: 表を含む Word ドキュメントを用意するか、コード例で提供されているドキュメントを使用することもできます。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートしましょう。これにより、必要なすべてのクラスとメソッドがコード内で使用できるようになります。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## ステップ2: 既存のドキュメントを読み込む
-次に、既存のWord文書を`Document`クラス。
+それでは、プロセスをシンプルでわかりやすいステップに分解してみましょう。
+
+## ステップ1: ドキュメントを読み込む
+
+この手順では、書式設定する表が含まれている Word 文書を読み込みます。 
 
 ```csharp
+//ドキュメントディレクトリへのパス
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## ステップ3: 最初の表の最初のセルに移動する
-まず、文書の最初の表の最初のセルに移動する必要があります。`GetChild()`そして`FirstRow.FirstCell`最初のセルへの参照を取得する方法。
+## ステップ2: テーブルにアクセスする
+
+次に、ドキュメントの最初の表にアクセスする必要があります。この表が書式設定操作の焦点になります。
 
 ```csharp
-Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
+//ドキュメント内の最初のテーブルを取得します。
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## ステップ3: 最初のセルを取得する
+
+ここで、テーブルの最初の行の最初のセルを取得してみましょう。これにより、スタイルが展開されたときにセルの書式設定がどのように変化するかを示すことができます。
+
+```csharp
+//表の最初の行の最初のセルを取得します。
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-## ステップ4: セルの初期書式を表示する
-テーブルのスタイルを展開する前に、セルの現在の背景色を表示します。現在の書式設定はテーブルのスタイルに保存されるため、このフィールドは空である必要があります。
+## ステップ4: セルの初期シェーディングを確認する
+
+書式設定を適用する前に、セルの初期の網掛け色を確認して印刷しましょう。これにより、スタイル拡張後に比較するための基準が得られます。
 
 ```csharp
+//セルの初期シェーディング色を印刷します。
 Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
-Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
+Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 ```
 
-## ステップ5: 表スタイルを展開して直接書式設定する
-ここで、表のスタイルをドキュメントの`ExpandTableStylesToDirectFormatting()`方法。
+## ステップ5: 表スタイルを展開する
+
+ここで魔法が起こります。`ExpandTableStylesToDirectFormatting`表のスタイルをセルに直接適用する方法。
 
 ```csharp
+//表スタイルを拡張して書式を直接設定します。
 doc.ExpandTableStylesToDirectFormatting();
 ```
 
-## ステップ6: スタイル展開後にセルの書式を表示する
-ここで、テーブル スタイルを展開した後、セルの背景色を表示します。テーブル スタイルから青色の背景色を適用する必要があります。
+## ステップ6: 最終的なセルの網掛けを確認する
+
+最後に、スタイルを展開した後、セルの網掛けの色を確認して印刷します。テーブル スタイルから適用された更新された書式設定が表示されるはずです。
 
 ```csharp
+//スタイル展開後のセルの網掛け色を印刷します。
 Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
-Console.WriteLine("
-
-Shading the cell after style expansion: " + cellShadingAfter);
-```
-
-### Aspose.Words for .NET を使用してスタイルからセルと行の書式設定を展開するためのサンプル ソース コード 
-
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	//ドキュメント内の最初の表の最初のセルを取得します。
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Cell firstCell = table.FirstRow.FirstCell;
-	//まずセルの網掛けの色を印刷します。
-	//現在のシェーディングはテーブル スタイルに保存されるため、これは空である必要があります。
-	Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
-	Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
-	doc.ExpandTableStylesToDirectFormatting();
-	//テーブル スタイルを展開した後、セルの網掛けを印刷します。
-	//テーブル スタイルから青色の背景パターン カラーが適用されているはずです。
-	Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
-	Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
+Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して、表スタイルからセルと行に書式設定を拡張する方法を学びました。このステップバイステップ ガイドに従うことで、Word 文書内の特定のセルと行に表スタイルの書式設定を簡単に適用できます。Aspose.Words は、文書内の表を操作および書式設定するための強力で柔軟な API を提供します。この知識があれば、Word 文書のレイアウトと表示をさらにカスタマイズできます。
+
+これで完了です。これらの手順に従うと、Aspose.Words for .NET を使用して、Word 文書のスタイルからセルと行の書式設定を簡単に拡張できます。これにより、時間が節約されるだけでなく、文書全体の一貫性も確保されます。コーディングを楽しんでください。
+
+## よくある質問
+
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、開発者がプログラムによって Word 文書を作成、編集、変換、操作できるようにする強力な API です。
+
+### スタイルから書式設定を拡張する必要があるのはなぜですか?
+スタイルから書式設定を拡張すると、スタイルがセルに直接適用されるため、ドキュメントの保守と更新が容易になります。
+
+### これらの手順をドキュメント内の複数の表に適用できますか?
+もちろんです! ドキュメント内のすべてのテーブルをループし、それぞれに同じ手順を適用できます。
+
+### 拡張されたスタイルを元に戻す方法はありますか?
+スタイルが展開されると、それらはセルに直接適用されます。元に戻すには、ドキュメントを再読み込みするか、スタイルを手動で再適用する必要があります。
+
+### この方法は Aspose.Words for .NET のすべてのバージョンで機能しますか?
+はい`ExpandTableStylesToDirectFormatting`この方法はAspose.Words for .NETの最新バージョンで利用可能です。[ドキュメンテーション](https://reference.aspose.com/words/net/)最新情報については。

@@ -11,7 +11,7 @@ url: /ko/net/programming-with-digital-signatures/creating-and-signing-new-signat
 
 안녕하세요! 따라서 Word 문서가 있고 서명란을 추가한 다음 디지털로 서명해야 합니다. 까다로운 것 같나요? 별말씀을요! .NET용 Aspose.Words 덕분에 단 몇 줄의 코드만으로 이 작업을 원활하게 수행할 수 있습니다. 이 튜토리얼에서는 환경 설정부터 반짝이는 새 서명으로 문서를 저장하는 것까지 전체 프로세스를 안내합니다. 준비가 된? 뛰어들어보자!
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 1.  .NET용 Aspose.Words - 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).

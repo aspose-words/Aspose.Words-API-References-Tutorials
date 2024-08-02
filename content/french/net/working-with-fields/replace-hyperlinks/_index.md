@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /fr/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## Introduction
 
 Dans le monde du développement .NET, la gestion et la manipulation de documents constituent une tâche cruciale, nécessitant souvent une gestion efficace des hyperliens au sein des documents. Aspose.Words for .NET offre des fonctionnalités puissantes pour remplacer de manière transparente les hyperliens, garantissant ainsi que vos documents sont liés dynamiquement aux bonnes ressources. Ce didacticiel explique en profondeur comment y parvenir à l'aide d'Aspose.Words for .NET, en vous guidant étape par étape tout au long du processus.
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 Le remplacement des hyperliens dans les documents à l'aide d'Aspose.Words for .NET est simple et améliore la nature dynamique de vos documents. Qu'il s'agisse de mettre à jour des URL ou de transformer le contenu d'un document par programmation, Aspose.Words simplifie ces tâches, garantissant une gestion efficace des documents.
 
-## Foire aux questions (FAQ)
+## FAQ
 
 ### Aspose.Words for .NET peut-il gérer des structures de documents complexes ?
 Oui, Aspose.Words prend en charge de manière transparente les structures complexes telles que les tableaux, les images et les hyperliens.

@@ -119,7 +119,7 @@ Můžete vytvářet různé typy grafů, včetně plošných, sloupcových, spoj
 ### Jak nainstaluji Aspose.Words for .NET?
  Aspose.Words for .NET si můžete stáhnout z[tady](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
 
-### Mohu si přizpůsobit vzhled svých grafů?
+### Mohu přizpůsobit vzhled svých grafů?
 Ano, Aspose.Words for .NET umožňuje rozsáhlé přizpůsobení grafů, včetně barev, písem a vlastností os.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?

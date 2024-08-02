@@ -16,7 +16,7 @@ Ei! Se você já precisou modificar as configurações de página em várias se�
 Antes de começarmos, vamos garantir que temos tudo o que precisamos:
 
 1. Conhecimento básico de C#: É necessária familiaridade com a sintaxe e os conceitos de C#.
-2.  Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) . Se você está apenas experimentando, um[teste grátis](https://releases.aspose.com/) está disponível.
+2.  Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) Se você está apenas experimentando, um[teste grátis](https://releases.aspose.com/) está disponível.
 3. Visual Studio: qualquer versão recente deve funcionar, mas a mais recente é recomendada para obter a melhor experiência.
 4. .NET Framework: certifique-se de tê-lo instalado em seu sistema.
 
@@ -89,7 +89,7 @@ Esta linha de código salva o documento no diretório especificado com um nome d
 
 ## Conclusão
 
- aí está! Você modificou com êxito a configuração da página para todas as seções de um documento do Word usando Aspose.Words for .NET. Este tutorial orientou você na criação de um documento, na adição de seções e no ajuste uniforme das configurações de página. Aspose.Words oferece um rico conjunto de recursos, então fique à vontade para explorar o[Documentação da API](https://reference.aspose.com/words/net/) para recursos mais avançados.
+ E aí está! Você modificou com êxito a configuração da página para todas as seções de um documento do Word usando Aspose.Words for .NET. Este tutorial orientou você na criação de um documento, na adição de seções e no ajuste uniforme das configurações de página. Aspose.Words oferece um rico conjunto de recursos, então fique à vontade para explorar o[Documentação da API](https://reference.aspose.com/words/net/) para recursos mais avançados.
 
 ## Perguntas frequentes
 

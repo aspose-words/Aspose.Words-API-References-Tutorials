@@ -45,7 +45,7 @@ Ezután hozzá kell adnia egy hivatkozást az Aspose.Words for .NET-hez. Ezt a N
 2. Válassza a "NuGet-csomagok kezelése" lehetőséget.
 3. Keresse meg az "Aspose.Words" kifejezést, és telepítse.
 
-## 2. lépés: Konfigurálja a betöltési beállításokat
+## 2. lépés: Konfigurálja a Betöltési beállításokat
 
 ### Határozza meg az adatkönyvtárat
 

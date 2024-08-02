@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## Giới thiệu
-Trong hướng dẫn này, bạn sẽ tìm hiểu cách thêm Mục lục (TOC) vào tài liệu Word một cách hiệu quả bằng cách sử dụng Aspose.Words cho .NET. Tính năng này rất cần thiết để tổ chức và điều hướng các tài liệu dài, nâng cao khả năng đọc và cung cấp tổng quan nhanh về các phần tài liệu.
+Trong hướng dẫn này, bạn sẽ tìm hiểu cách thêm Mục lục (TOC) vào tài liệu Word một cách hiệu quả bằng cách sử dụng Aspose.Words cho .NET. Tính năng này rất cần thiết để sắp xếp và điều hướng các tài liệu dài, nâng cao khả năng đọc và cung cấp tổng quan nhanh về các phần tài liệu.
 
 ## Điều kiện tiên quyết
 

@@ -162,7 +162,7 @@ public void setCompressionLevel() throws Exception
 
 ## Conclusie
 
-In deze uitgebreide handleiding hebben we onderzocht hoe u documenten in OOXML-indeling kunt opslaan met Aspose.Words voor Java. Of u nu uw documenten met wachtwoorden wilt coderen, naleving van specifieke OOXML-standaarden wilt garanderen, documenteigenschappen wilt bijwerken, verouderde stuurtekens wilt behouden of compressieniveaus wilt aanpassen, Aspose.Words biedt een veelzijdige set tools om aan uw vereisten te voldoen.
+In deze uitgebreide handleiding hebben we onderzocht hoe u documenten in OOXML-indeling kunt opslaan met Aspose.Words voor Java. Of u nu uw documenten met wachtwoorden moet versleutelen, naleving van specifieke OOXML-standaarden moet garanderen, documenteigenschappen moet bijwerken, oudere stuurtekens moet behouden of compressieniveaus moet aanpassen, Aspose.Words biedt een veelzijdige set tools om aan uw vereisten te voldoen.
 
 ## Veelgestelde vragen
 
@@ -176,4 +176,4 @@ Om de wachtwoordbeveiliging van een met een wachtwoord beveiligd document te ver
 
 ### Wat is het standaardcompressieniveau bij het opslaan van een document in OOXML-indeling?
 
- Het standaardcompressieniveau bij het opslaan van een document in OOXML-indeling met Aspose.Words voor Java is`NORMAL` . U kunt het compressieniveau wijzigen in`SUPER_FAST` of`MAXIMUM` indien nodig.
+ Het standaardcompressieniveau bij het opslaan van een document in OOXML-indeling met Aspose.Words voor Java is`NORMAL` . U kunt het compressieniveau wijzigen in`SUPER_FAST` of`MAXIMUM` zoals nodig.

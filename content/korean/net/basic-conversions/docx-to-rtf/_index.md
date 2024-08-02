@@ -11,7 +11,7 @@ url: /ko/net/basic-conversions/docx-to-rtf/
 
 .NET용 Aspose.Words를 사용하여 DOCX 파일을 RTF 형식으로 변환하는 방법에 대한 포괄적인 튜토리얼에 오신 것을 환영합니다! 문서 관리 시스템을 작업하는 개발자이든 문서 처리 작업을 간소화하려는 사람이든 관계없이 문서 형식을 변환하는 것은 작업 흐름에서 중요한 부분이 될 수 있습니다. 이 가이드에서는 .NET용 Aspose.Words를 사용하여 DOCX 파일을 RTF 형식으로 변환하는 과정을 단계별로 안내합니다. 마지막에는 시작하는 데 도움이 되는 실제 예제와 함께 이 변환을 효율적으로 수행하는 방법을 명확하게 이해하게 될 것입니다. 뛰어들어보자!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 이 튜토리얼을 따라가기 위해 준비해야 할 몇 가지 사항이 있습니다.
 
@@ -94,7 +94,7 @@ using (MemoryStream dstStream = new MemoryStream())
 예, Aspose.Words는 다양한 형식을 지원하므로 DOC, DOCX, HTML과 같은 형식의 문서를 RTF로 변환할 수 있습니다.
 
 ### Aspose.Words를 사용하려면 라이센스가 필요합니까?
- 평가판 모드에서 Aspose.Words를 사용할 수 있지만 확장된 사용이나 상업용 프로젝트의 경우 라이센스를 구입해야 합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 평가판 모드에서 Aspose.Words를 사용할 수 있지만 확장된 사용이나 상업용 프로젝트의 경우 라이센스를 구입해야 합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ### 변환 출력이 예상과 다르면 어떻게 해야 합니까?
  입력 문서에서 호환성 문제를 확인하거나[Aspose.Words 문서](https://reference.aspose.com/words/net/) 문제 해결 팁을 확인하세요.

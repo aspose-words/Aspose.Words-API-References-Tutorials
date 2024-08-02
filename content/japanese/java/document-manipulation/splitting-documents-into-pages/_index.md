@@ -446,7 +446,7 @@ public int visitTableEnd(Table table) throws Exception {
 	return VisitorAction.CONTINUE;
 }
 public int visitParagraphEnd(Paragraph paragraph) throws Exception {
-	//段落にセクション区切りのみが含まれる場合は、偽のセクション区切りを追加します。
+	//段落にセクション区切りのみが含まれる場合は、偽の run into を追加します。
 	if (paragraph.isEndOfSection() && paragraph.getChildNodes().getCount() == 1 &&
 		"\f".equals(paragraph.getChildNodes().get(0).getText()))
 	{

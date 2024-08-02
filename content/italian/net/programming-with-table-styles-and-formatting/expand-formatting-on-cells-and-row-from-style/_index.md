@@ -2,82 +2,111 @@
 title: Espandi la formattazione sulle celle e sulla riga dallo stile
 linktitle: Espandi la formattazione sulle celle e sulla riga dallo stile
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per espandere la formattazione a celle e righe da uno stile di tabella utilizzando Aspose.Words per .NET.
+description: Scopri come espandere la formattazione su celle e righe dagli stili nei documenti di Word utilizzando Aspose.Words per .NET. Guida passo passo inclusa.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
 ---
+## introduzione
 
-In questo tutorial ti guideremo attraverso il processo passo passo per espandere la formattazione a celle e righe da uno stile utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come applicare la formattazione dello stile tabella a celle e righe specifiche nei tuoi documenti Word utilizzando Aspose.Words per .NET.
+Ti sei mai trovato a dover applicare uno stile coerente tra le tabelle dei tuoi documenti Word? La regolazione manuale di ciascuna cella può essere noiosa e soggetta a errori. È qui che Aspose.Words per .NET torna utile. Questo tutorial ti guiderà attraverso il processo di espansione della formattazione su celle e righe da uno stile di tabella, assicurando che i tuoi documenti abbiano un aspetto raffinato e professionale senza problemi aggiuntivi.
 
+## Prerequisiti
 
-## Passaggio 1: definire la directory dei documenti
-Innanzitutto, devi impostare il percorso della directory dei documenti. Qui è dove si trova il tuo documento Word. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.
+Prima di entrare nei dettagli più essenziali, assicurati di avere a disposizione quanto segue:
+
+-  Aspose.Words per .NET: puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+- Visual Studio: qualsiasi versione recente funzionerà.
+- Conoscenza base di C#: La familiarità con la programmazione C# è essenziale.
+- Documento di esempio: tieni pronto un documento Word con una tabella oppure puoi utilizzare quello fornito nell'esempio di codice.
+
+## Importa spazi dei nomi
+
+Per prima cosa, importiamo gli spazi dei nomi necessari. Ciò garantirà che tutte le classi e i metodi richiesti siano disponibili per l'uso nel nostro codice.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Passaggio 2: carica il documento esistente
- Successivamente, è necessario caricare il documento Word esistente in un'istanza del file`Document` classe.
+Ora suddividiamo il processo in passaggi semplici e facili da seguire.
+
+## Passaggio 1: carica il documento
+
+In questo passaggio caricheremo il documento Word che contiene la tabella che desideri formattare. 
 
 ```csharp
+// Percorso della directory dei documenti
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Passaggio 3: vai alla prima cella della prima tabella
- Per iniziare, dobbiamo accedere alla prima cella della prima tabella del documento. Noi usiamo il`GetChild()`E`FirstRow.FirstCell` metodi per ottenere il riferimento alla prima cella.
+## Passaggio 2: accedi alla tabella
+
+Successivamente, dobbiamo accedere alla prima tabella del documento. Questa tabella sarà il fulcro delle nostre operazioni di formattazione.
 
 ```csharp
-Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
+// Ottieni la prima tabella nel documento.
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Passaggio 3: recupera la prima cella
+
+Ora recuperiamo la prima cella della prima riga della tabella. Questo ci aiuterà a dimostrare come cambia la formattazione della cella quando gli stili vengono espansi.
+
+```csharp
+// Ottieni la prima cella della prima riga della tabella.
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-## Passaggio 4: mostra la formattazione iniziale della cella
-Prima di espandere gli stili della tabella, visualizziamo il colore di sfondo corrente della cella. Dovrebbe essere vuoto perché la formattazione corrente è memorizzata nello stile della tabella.
+## Passaggio 4: controlla l'ombreggiatura iniziale delle celle
+
+Prima di applicare qualsiasi formattazione, controlliamo e stampiamo il colore di ombreggiatura iniziale della cella. Questo ci fornirà una base di riferimento con cui confrontarci dopo l'espansione dello stile.
 
 ```csharp
+// Stampa il colore iniziale dell'ombreggiatura della cella.
 Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
-Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
+Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 ```
 
-## Passaggio 5: espandere Stili tabella per formattare direttamente
- Ora espandiamo gli stili di tabella per dirigere la formattazione utilizzando quella del documento`ExpandTableStylesToDirectFormatting()` metodo.
+## Passaggio 5: espandere Stili tabella
+
+ Ecco dove avviene la magia. Chiameremo il`ExpandTableStylesToDirectFormatting` metodo per applicare gli stili di tabella direttamente alle celle.
 
 ```csharp
+// Espandi gli stili di tabella per dirigere la formattazione.
 doc.ExpandTableStylesToDirectFormatting();
 ```
 
-## Passaggio 6: mostra la formattazione della cella dopo l'espansione dello stile
-Ora visualizziamo il colore di sfondo della cella dopo aver espanso gli stili della tabella. È necessario applicare un colore di sfondo blu dallo stile della tabella.
+## Passaggio 6: controlla l'ombreggiatura finale delle celle
+
+Infine, controlleremo e stamperemo il colore dell'ombreggiatura della cella dopo aver espanso gli stili. Dovresti vedere la formattazione aggiornata applicata dallo stile tabella.
 
 ```csharp
+// Stampa il colore dell'ombreggiatura della cella dopo l'espansione dello stile.
 Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
-Console.WriteLine("
-
-Shading the cell after style expansion: " + cellShadingAfter);
-```
-
-### Codice sorgente di esempio per Espandi formattazione su celle e riga da stile utilizzando Aspose.Words per .NET 
-
-```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	// Ottieni la prima cella della prima tabella nel documento.
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Cell firstCell = table.FirstRow.FirstCell;
-	// Per prima cosa stampa il colore dell'ombreggiatura della cella.
-	// Dovrebbe essere vuoto poiché l'ombreggiatura corrente è memorizzata nello stile tabella.
-	Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
-	Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
-	doc.ExpandTableStylesToDirectFormatting();
-	// Ora stampa l'ombreggiatura delle celle dopo aver espanso gli stili di tabella.
-	// Dallo stile tabella avrebbe dovuto essere applicato un colore di motivo di sfondo blu.
-	Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
-	Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
+Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come espandere la formattazione a celle e righe da uno stile di tabella utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo, puoi applicare facilmente la formattazione dello stile tabella a celle e righe specifiche nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per manipolare e formattare le tabelle nei tuoi documenti. Con questa conoscenza, puoi personalizzare ulteriormente il layout e la presentazione dei tuoi documenti Word.
+
+E il gioco è fatto! Seguendo questi passaggi, puoi facilmente espandere la formattazione su celle e righe dagli stili nei tuoi documenti Word utilizzando Aspose.Words per .NET. Ciò non solo fa risparmiare tempo, ma garantisce anche la coerenza tra i tuoi documenti. Buona programmazione!
+
+## Domande frequenti
+
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente API che consente agli sviluppatori di creare, modificare, convertire e manipolare documenti Word a livello di codice.
+
+### Perché dovrei espandere la formattazione dagli stili?
+L'espansione della formattazione dagli stili garantisce che lo stile venga applicato direttamente alle celle, semplificando la manutenzione e l'aggiornamento del documento.
+
+### Posso applicare questi passaggi a più tabelle in un documento?
+Assolutamente! Puoi scorrere tutte le tabelle del tuo documento e applicare gli stessi passaggi a ciascuna di esse.
+
+### C'è un modo per ripristinare gli stili espansi?
+Una volta espansi, gli stili vengono applicati direttamente alle celle. Per ripristinare, dovresti ricaricare il documento o riapplicare gli stili manualmente.
+
+### Questo metodo funziona con tutte le versioni di Aspose.Words per .NET?
+ Sì, il`ExpandTableStylesToDirectFormatting` il metodo è disponibile nelle versioni recenti di Aspose.Words per .NET. Controlla sempre il[documentazione](https://reference.aspose.com/words/net/) per gli ultimi aggiornamenti.

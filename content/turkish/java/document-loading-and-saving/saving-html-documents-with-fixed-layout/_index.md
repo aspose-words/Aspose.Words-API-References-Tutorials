@@ -10,7 +10,7 @@ url: /tr/java/document-loading-and-saving/saving-html-documents-with-fixed-layou
 
 ## Aspose.Words for Java'da HTML Belgelerini Sabit Düzenle Kaydetmeye Giriş
 
-Bu kapsamlı kılavuzda, Aspose.Words for Java'yı kullanarak HTML belgelerini sabit bir düzende kaydetme sürecinde size yol göstereceğiz. Adım adım talimatlar ve kod örnekleriyle bunu sorunsuz bir şekilde nasıl başaracağınızı öğreneceksiniz. Öyleyse hemen dalalım!
+Bu kapsamlı kılavuzda, Aspose.Words for Java'yı kullanarak HTML belgelerini sabit bir düzende kaydetme sürecinde size yol göstereceğiz. Adım adım talimatlar ve kod örnekleriyle bunu sorunsuz bir şekilde nasıl başaracağınızı öğreneceksiniz. O halde hemen içeri dalalım!
 
 ## Önkoşullar
 

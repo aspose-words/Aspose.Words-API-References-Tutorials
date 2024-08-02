@@ -100,7 +100,7 @@ Per accelerare il processo di aggiunta delle celle, possiamo clonare le celle es
 
 ```csharp
 // Dovremmo quindi ripetere il processo per le altre celle e righe della tabella.
-// Possiamo anche velocizzare il processo clonando celle e righe esistenti.
+//Possiamo anche velocizzare il processo clonando celle e righe esistenti.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Congratulazioni! Hai inserito con successo una tabella direttamente in un docume
  Sì, puoi richiedere a[prova gratuita](https://releases.aspose.com/) valutare la libreria prima dell'acquisto.
 
 ### Come posso acquistare Aspose.Words per .NET?
- È possibile acquistare Aspose.Words per .NET da[pagina di acquisto](https://purchase.aspose.com/buy).
+È possibile acquistare Aspose.Words per .NET da[pagina di acquisto](https://purchase.aspose.com/buy).
 
 ### Dove posso trovare la documentazione per Aspose.Words per .NET?
  La documentazione è disponibile[Qui](https://reference.aspose.com/words/net/).

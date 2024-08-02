@@ -17,7 +17,7 @@ Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 
 - Visual Studio: necesita un entorno de desarrollo para escribir y probar su código. Visual Studio es una buena opción.
 -  Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words. Si no lo tienes, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
-- Comprensión básica de C#: es necesario tener cierta familiaridad con la programación de C# para seguir adelante.
+- Comprensión básica de C#: para seguir adelante es necesario tener cierta familiaridad con la programación en C#.
 
 ## Importar espacios de nombres
 

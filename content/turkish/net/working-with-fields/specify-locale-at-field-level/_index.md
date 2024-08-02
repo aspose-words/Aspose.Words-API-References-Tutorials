@@ -2,74 +2,101 @@
 title: Alan Düzeyinde Yerel Ayarı Belirtin
 linktitle: Alan Düzeyinde Yerel Ayarı Belirtin
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile Word belgelerinde alan düzeyinde yerelleştirmeyi nasıl belirleyeceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki alanların yerel ayarlarını nasıl belirleyeceğinizi öğrenin. Belge biçimlendirmenizi kolayca özelleştirmek için kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/specify-locale-at-field-level/
 ---
+## giriiş
 
-Burada, Aspose.Words for .NET özelliğini kullanarak alan düzeyinde yerelleştirmeyi belirlemeye olanak tanıyan aşağıdaki C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır. Bu kodu kullanmadan önce projenize Aspose.Words kütüphanesini eklediğinizden emin olun.
+Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün, yerel ayarın alan düzeyinde nasıl belirleneceğini keşfedeceğiz. Bu kullanışlı özellik, özellikle belgelerinizin belirli kültürel veya bölgesel formatlara uymasına ihtiyaç duyduğunuzda kullanışlıdır. Bunu, belgenize "ziyaret ettiği" yere göre nasıl davranması gerektiğini söyleyen bir pasaport vermek gibi düşünün. Bu eğitimin sonunda, Word belgelerinizdeki alanların yerel ayarlarını kolaylıkla özelleştirebileceksiniz. Başlayalım!
 
-## 1. Adım: Belge dizini yolunu ayarlayın
+## Önkoşullar
+
+Koda geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET: En son sürümün kurulu olduğundan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir .NET geliştirme ortamı.
+3. Temel C# Bilgisi: C# programlamaya aşinalık, örnekleri takip etmenize yardımcı olacaktır.
+4. Lisansı Atın: Lisansınız yoksa, bir lisans alabilirsiniz.[geçici lisans](https://purchase.aspose.com/temporary-license/) Tüm özellikleri denemek için.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bunlar Aspose.Words ile çalışmak için gereklidir.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Pekala, artık ön koşulları ortadan kaldırdığımıza göre süreci adım adım inceleyelim. Her adımın, takip etmeyi çok kolaylaştıracak bir başlığı ve açıklaması olacaktır.
+
+## 1. Adım: Belge Dizininizi Kurun
+
+Öncelikle belgemizi kaydedeceğimiz dizini ayarlamamız gerekiyor. Bunu oyunumuzun sahnesini hazırlamak olarak düşünün.
 
 ```csharp
 // Belgeler dizininin yolu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 ```
 
-Düzenlenen belgenin kaydedileceği belge dizininize giden doğru yolu belirttiğinizden emin olun.
+ Yer değiştirmek`"YOUR_DOCUMENT_DIRECTORY"` Dizininizin gerçek yolu ile.
 
-## 2. Adım: Belge oluşturucu oluşturun
+## Adım 2: DocumentBuilder'ı başlatın
+
+ Daha sonra yeni bir örneğini oluşturacağız`DocumentBuilder`. Bu, Word belgesini oluşturmak ve düzenlemek için kullandığımız kalem ve kağıt gibidir.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Burada bir örneğini oluşturuyoruz.`DocumentBuilder` belgeye alan eklememize izin verecek sınıf.
+## 3. Adım: Alan Ekleme
 
-## 3. Adım: Belirli bir konuma sahip bir tarih alanı ekleyin
+Şimdi belgeye bir alan ekleyelim. Alanlar tarihler, sayfa numaraları veya hesaplamalar gibi verileri görüntüleyebilen dinamik öğelerdir.
 
 ```csharp
-Field field = builder. InsertField(FieldType.FieldDate, true);
+Field field = builder.InsertField(FieldType.FieldDate, true);
+```
+
+## 4. Adım: Yerel Ayarı Belirleyin
+
+ İşte sihir geliyor! Sahanın yerel ayarını yapacağız. Yerel ayar kimliği`1049`Rusça'ya karşılık gelir. Bu, tarih alanımızın Rusça biçimlendirme kurallarına uygun olacağı anlamına gelir.
+
+```csharp
 field.LocaleId = 1049;
 ```
 
- Bir tür alanı eklemek için belge oluşturucuyu kullanıyoruz`FieldType.FieldDate` belgenin içine. Ayarlayarak`LocaleId`mülkiyet`1049`, bu alan için Rusça yerelleştirmesini belirtiyoruz.
+## Adım 5: Belgeyi Kaydedin
 
-## 4. Adım: Değiştirilen belgeyi kaydedin
-
-```csharp
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
-```
-
-Son olarak, değiştirilen belgeyi belirtilen konumla belirtilen bir dosyaya kaydediyoruz.
-
-### Aspose.Words for .NET ile alan düzeyinde yerelleştirmeyi belirlemek için örnek kaynak kodu
+Son olarak belgemizi kaydedelim. Bu adım, yaptığımız tüm değişiklikleri tamamlar.
 
 ```csharp
-// Belgeler dizininin yolu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-DocumentBuilder builder = new DocumentBuilder();
-
-Field field = builder. InsertField(FieldType.FieldDate, true);
-field.LocaleId = 1049;
-
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
+builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanılarak bir belgede alan düzeyinde yerelleştirmeyi belirten örnek bir kaynak koduydu. Word belgelerinize belirli konumlara sahip tarih alanları eklemek için bu kodu kullanabilirsiniz.
+## Çözüm
 
-### SSS'ler
+İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir alanın yerel ayarını başarıyla belirlediniz. Bu güçlü özellik, belgelerinizi belirli kültürel ve bölgesel gereksinimleri karşılayacak şekilde uyarlamanıza olanak tanıyarak uygulamalarınızı daha çok yönlü ve kullanıcı dostu hale getirir. Mutlu kodlama!
 
-#### S: Aspose.Words for .NET'te alan düzeyindeki yerel ayarı nasıl belirleyebilirim?
+## SSS'ler
 
- C: Aspose.Words for .NET'te yerel ayarı alan düzeyinde belirtmek için`FieldOptions` sınıf ve onun`FieldLocale` İstenilen yerel ayarı ayarlama özelliği. Örneğin şunları kullanabilirsiniz:`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` Fransızca (Fransa) yerel ayarını belirtmek için.
+### Aspose.Words'te yerel ayar kimliği nedir?
 
-#### S: Aspose.Words for .NET'te her alan için farklı bir yerel ayar belirlemek mümkün müdür?
+Aspose.Words'teki yerel ayar kimliği, belirli bir kültürü veya bölgeyi temsil eden, tarih ve sayı gibi verilerin nasıl biçimlendirileceğini etkileyen sayısal bir tanımlayıcıdır.
 
- C: Evet, Aspose.Words for .NET'te her alan için farklı bir yerel ayar belirlemek mümkündür. Şunu kullanabilirsiniz:`FieldOptions.FieldLocale` Belirli bir alanı oluşturmadan veya güncellemeden önce, ona farklı bir yerel ayar atamak için özelliği kullanın.
+### Aynı belgedeki farklı alanlar için farklı yerel ayarlar belirtebilir miyim?
 
-#### S: Aspose.Words for .NET'te bir alan için halihazırda kullanılan yerel ayarı nasıl edinebilirim?
+Evet, çeşitli biçimlendirme gereksinimlerini karşılamak amacıyla aynı belgedeki farklı alanlar için farklı yerel ayarlar belirleyebilirsiniz.
 
- C: Aspose.Words for .NET'te bir alanın halihazırda kullanılan yerel ayarını almak için alanın yerel ayarını kullanabilirsiniz.`Field.LocaleId`mülk. Bu, alanla ilişkili yerel ayar tanımlayıcısını almanıza olanak tanır.
+### Yerel ayar kimliklerinin listesini nerede bulabilirim?
+
+Yerel ayar kimliklerinin listesini Microsoft belgelerinde veya Aspose.Words API belgelerinde bulabilirsiniz.
+
+### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
+
+ Aspose.Words for .NET'i değerlendirme modunda lisans olmadan kullanabilirsiniz ancak bir lisans almanız önerilir.[lisans](https://purchase.aspose.com/buy) Tam işlevselliğin kilidini açmak için.
+
+### Aspose.Words kütüphanesini en son sürüme nasıl güncellerim?
+
+ Aspose.Words for .NET'in en son sürümünü şu adresten indirebilirsiniz:[indirme sayfası](https://releases.aspose.com/words/net/).

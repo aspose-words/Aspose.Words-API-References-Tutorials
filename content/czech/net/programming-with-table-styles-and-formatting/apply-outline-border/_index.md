@@ -2,51 +2,82 @@
 title: Použít ohraničení obrysu
 linktitle: Použít ohraničení obrysu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce aplikací ohraničení obrysu na tabulku pomocí Aspose.Words for .NET.
+description: Naučte se, jak použít ohraničení obrysu na tabulku ve Wordu pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro dokonalé formátování tabulky.
 type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
+## Úvod
 
-tomto tutoriálu vás provedeme krok za krokem procesem použití obrysového ohraničení na tabulku pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete mít jasno v tom, jak manipulovat s ohraničením tabulek v dokumentech aplikace Word pomocí Aspose.Words for .NET.
+dnešním tutoriálu se ponoříme do světa manipulace s dokumenty pomocí Aspose.Words for .NET. Konkrétně se naučíme, jak aplikovat ohraničení obrysu na tabulku v dokumentu aplikace Word. Toto je fantastická dovednost, kterou můžete mít ve své sadě nástrojů, pokud často pracujete s automatickým generováním a formátováním dokumentů. Začněme tedy na této cestě k tomu, aby vaše stoly byly nejen funkční, ale také vizuálně přitažlivé.
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Zde je uložen váš dokument aplikace Word. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+## Předpoklady
+
+Než se pustíme do kódu, budete potřebovat několik věcí:
+
+1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Vhodné vývojové prostředí, jako je Visual Studio.
+3. Základní znalost C#: Základní znalost C# vám pomůže pokračovat ve výukovém programu.
+
+## Importovat jmenné prostory
+
+Nejprve se ujistěte, že máte importované potřebné jmenné prostory. To je zásadní pro přístup k funkcím Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Krok 2: Nahrajte dokument
- Dále musíte načíst dokument aplikace Word do instance souboru`Document` třída.
+Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky.
+
+## Krok 1: Vložte dokument
+
+Nejprve musíme načíst dokument aplikace Word, který obsahuje tabulku, kterou chceme formátovat.
 
 ```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Krok 3: Přístup k tabulce
- Chcete-li použít ohraničení obrysu, potřebujeme získat přístup k tabulce v dokumentu. The`Table` class představuje tabulku v Aspose.Words.
+ V tomto kroku používáme`Document` třídy z Aspose.Words k načtení existujícího dokumentu. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kde je dokument uložen.
+
+## Krok 2: Přístup k tabulce
+
+Dále musíme přistupovat ke konkrétní tabulce, kterou chceme formátovat. 
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Krok 4: Zarovnejte tabulku na střed stránky
- Nyní můžeme tabulku zarovnat na střed stránky pomocí`Alignment` vlastnost stolu.
+ Tady,`GetChild` metoda načte první tabulku v dokumentu. Parametry`NodeType.Table, 0, true` ujistěte se, že máme správný typ uzlu.
+
+## Krok 3: Zarovnejte tabulku
+
+Nyní zarovnáme tabulku na stránce na střed.
 
 ```csharp
-table. Alignment = Table Alignment. Center;
+table.Alignment = TableAlignment.Center;
 ```
 
-## Krok 5: Vymažte existující okraje tabulky
-Chcete-li začít s novým ohraničením obrysu, musíme nejprve vymazat všechna existující ohraničení z tabulky. To lze provést pomocí`ClearBorders()` metoda.
+Tento krok zajistí, že stůl bude úhledně vycentrován, což mu dodává profesionální vzhled.
+
+## Krok 4: Vymažte existující hranice
+
+Než použijeme nové hranice, musíme vymazat všechny stávající.
 
 ```csharp
-table. ClearBorders();
+table.ClearBorders();
 ```
 
-## Krok 6: Definujte zelený okraj kolem stolu
- Nyní můžeme nastavit zelený okraj kolem stolu pomocí`SetBorder()` metoda pro každou stranu stolu. V tomto příkladu používáme ohraničení typu „Single“ s tloušťkou 1,5 bodu a zelenou barvou.
+Vymazáním okrajů zajistíte, že naše nové okraje budou použity čistě, aniž by rušily staré styly.
+
+## Krok 5: Nastavte hranice obrysu
+
+Nyní aplikujme zelené okraje obrysu na tabulku.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -55,45 +86,47 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
-## Krok 7: Vyplňte buňky barvou pozadí
-Pro zlepšení vizuální prezentace tabulky můžeme buňky vyplnit základní barvou pozadí
+ Každý typ ohraničení (levý, pravý, horní, dolní) se nastavuje samostatně. Používáme`LineStyle.Single` za plnou čáru,`1.5` pro šířku čáry a`Color.Green` pro barvu okraje.
 
-idea. V tomto příkladu používáme světle zelenou barvu.
+## Krok 6: Použijte stínování buněk
+
+Aby byl stůl vizuálně přitažlivější, vyplňte buňky světle zelenou barvou.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
-## Krok 8: Uložte upravený dokument
-Nakonec upravený dokument uložíme do souboru. Můžete zvolit vhodný název a umístění výstupního dokumentu.
+ Tady,`SetShading` slouží k nanesení jednolité světle zelené barvy na buňky, čímž stůl vynikne.
+
+## Krok 7: Uložte dokument
+
+Nakonec upravený dokument uložte.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-gratuluji! Nyní jste použili ohraničení obrysu na tabulku pomocí Aspose.Words for .NET.
-
-### Ukázkový zdrojový kód pro Apply Outline Border pomocí Aspose.Words for .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	// Zarovnejte tabulku na střed stránky.
-	table.Alignment = TableAlignment.Center;
-	//Odstraňte všechna existující ohraničení z tabulky.
-	table.ClearBorders();
-	// Nastavte zelený okraj kolem stolu, ale ne uvnitř.
-	table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Right, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
-	table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
-	// Vyplňte buňky světle zelenou plnou barvou.
-	table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
-```
+Tento krok uloží dokument s použitým formátováním. Můžete jej otevřít, abyste viděli krásně formátovanou tabulku.
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak aplikovat ohraničení obrysu na tabulku pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno integrovat tuto funkci do svých projektů C#. Manipulace s formátováním tabulek je základním aspektem zpracování dokumentů a Aspose.Words nabízí výkonné a flexibilní API, jak toho dosáhnout. S těmito znalostmi můžete zlepšit vizuální prezentaci vašich dokumentů Word a splnit specifické požadavky.
+
+A tady to máte! Pomocí těchto kroků jste úspěšně použili ohraničení obrysu na tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval načítáním dokumentu, přístupem k tabulce, jejím zarovnáním, vymazáním existujících ohraničení, použitím nových ohraničení, přidáním stínování buněk a nakonec uložením dokumentu. 
+
+Díky těmto dovednostem můžete vylepšit vizuální prezentaci vašich tabulek, aby byly vaše dokumenty profesionálnější a atraktivnější. Šťastné kódování!
+
+## FAQ
+
+### Mohu na každý okraj tabulky použít různé styly?  
+ Ano, na každý okraj můžete použít různé styly a barvy úpravou parametrů v`SetBorder` metoda.
+
+### Jak mohu změnit šířku okraje?  
+ Šířku můžete změnit úpravou třetího parametru v`SetBorder` metoda. Například,`1.5` nastaví šířku 1,5 bodu.
+
+### Je možné aplikovat stínování na jednotlivé buňky?  
+ Ano, můžete použít stínování na jednotlivé buňky přístupem ke každé buňce a pomocí`SetShading` metoda.
+
+### Mohu pro ohraničení a stínování použít jiné barvy?  
+ Absolutně! Můžete použít jakoukoli barvu dostupnou v`System.Drawing.Color` třída.
+
+### Jak zarovnám stůl vodorovně na střed?  
+ The`table.Alignment = TableAlignment.Center;` řádek v kódu vycentruje tabulku vodorovně na stránce.

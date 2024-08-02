@@ -21,7 +21,7 @@ Sebelum kita masuk ke bagian pengkodean, pastikan Anda memiliki semua yang Anda 
 
 ## Impor Namespace
 
-Sebelum memulai pengkodean, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Berikut cara melakukannya:
+Sebelum memulai coding, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Berikut cara melakukannya:
 
 ```csharp
 using Aspose.Words;

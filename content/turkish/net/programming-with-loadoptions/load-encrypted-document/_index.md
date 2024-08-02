@@ -62,7 +62,7 @@ Evet, Aspose.Words, DOC, DOCX, PDF, HTML ve daha fazlasını içeren çok çeşi
 ### Şifrelenmiş bir belgenin parolasını unutursam ne olur?
 Maalesef şifreyi unutursanız belgeyi yükleyemezsiniz. Parolaları güvenli bir şekilde sakladığınızdan emin olun.
 
-### Bir belgedeki şifrelemeyi kaldırmak mümkün mü?
+### Bir belgedeki şifrelemeyi kaldırmak mümkün müdür?
 Evet, belgeyi şifre belirtmeden kaydederek şifrelemeyi kaldırabilirsiniz.
 
 ### Farklı şifreleme ayarları uygulayabilir miyim?

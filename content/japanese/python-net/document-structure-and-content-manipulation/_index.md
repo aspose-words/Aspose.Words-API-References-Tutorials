@@ -37,7 +37,7 @@ Aspose.Words for Python を使用して Word 文書を効率的に管理する�
 ### [Word文書のコメント機能の活用](./document-comments/)
 Aspose.Words for Python を使用して Word 文書のコメント機能を活用する方法を学びます。ソース コード付きのステップ バイ ステップ ガイド。共同作業を強化し、文書のレビューを効率化します。
 ### [Word 文書のフィールドとデータの処理](./document-fields/)
-Aspose.Words for Python を使用して Word 文書内のフィールドとデータを処理する方法を学びます。動的コンテンツ、自動化などのコード例を含むステップバイステップ ガイドです。 
+Aspose.Words for Python を使用して Word 文書内のフィールドとデータを処理する方法を学びます。動的コンテンツ、自動化などのコード例を含むステップバイステップ ガイド。 
 ### [Word 文書のフォントとテキスト スタイルを理解する](./document-fonts/)
 Word 文書のフォントとテキスト スタイルの世界を探索します。Aspose.Words for Python を使用して読みやすさと視覚的な魅力を高める方法を学びます。ステップバイステップの例を含む包括的なガイドです。
 ### [Word 文書の脚注と文末脚注を調べる](./document-footnotes-endnotes/)

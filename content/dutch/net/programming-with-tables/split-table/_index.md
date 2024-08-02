@@ -2,96 +2,121 @@
 title: Tabel splitsen
 linktitle: Tabel splitsen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een tabel in een Word-document kunt splitsen met Aspose.Words voor .NET.
+description: Leer hoe u tabellen in Word-documenten kunt splitsen met Aspose.Words voor .NET. Onze stapsgewijze handleiding maakt tafelbeheer eenvoudig en efficiënt.
 type: docs
 weight: 10
 url: /nl/net/programming-with-tables/split-table/
 ---
+## Invoering
 
-In deze zelfstudie leren we hoe u een tabel in een Word-document kunt splitsen met Aspose.Words voor .NET. We zullen een stapsgewijze handleiding volgen om de code te begrijpen en deze functie te implementeren. Aan het einde van deze tutorial kunt u een tabel uit een bepaalde rij in uw Word-documenten splitsen.
+Heeft u ooit met een grote tabel in een Word-document gewerkt en wenste u dat u deze in twee kleinere, beter beheersbare tabellen kon splitsen? Vandaag gaan we dieper in op hoe je dit precies kunt bereiken met Aspose.Words voor .NET. Of u nu te maken heeft met uitgebreide gegevenstabellen of complexe documentstructuren, het splitsen van tabellen kan de leesbaarheid en organisatie helpen verbeteren. Laten we het stapsgewijze proces verkennen voor het splitsen van een tabel met Aspose.Words voor .NET.
 
-## Stap 1: Projectconfiguratie
-1. Start Visual Studio en maak een nieuw C#-project.
-2. Voeg een verwijzing toe naar de Aspose.Words voor .NET-bibliotheek.
+## Vereisten
 
-## Stap 2: Het document laden
-Volg deze stappen om de tekstverwerking met het document te starten:
+Voordat we met de tutorial beginnen, moet je ervoor zorgen dat je over het volgende beschikt:
 
-```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt gedownload en geïnstalleerd. U kunt deze verkrijgen bij de[Aspose-releasespagina](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Zet een ontwikkelomgeving op met .NET framework-ondersteuning, zoals Visual Studio.
+3. Voorbeelddocument: bereid een Word-document voor (`Tables.docx`) met ten minste één tabel om de splitsingsbewerking toe te passen.
 
-// Laad het document
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Naamruimten importeren
 
-Zorg ervoor dat u "UW DOCUMENTENMAP" vervangt door het daadwerkelijke pad naar uw documentenmap en geef de juiste bestandsnaam op.
-
-## Stap 3: De tafel verdelen
-Vervolgens splitsen we de tabel van een bepaalde rij. Gebruik de volgende code:
+Importeer eerst de benodigde naamruimten in uw project. Hierdoor hebt u toegang tot de klassen en methoden van Aspose.Words.
 
 ```csharp
-// Haal de eerste tabel op
-Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-// Bepaling van de lijn van waaruit de tafel moet worden verdeeld
-Row row = firstTable.Rows[2];
-
-// Maak een nieuwe container voor de gesplitste tabel
-Table table = (Table)firstTable.Clone(false);
-
-// Plaats de container na de originele tafel
-firstTable.ParentNode.InsertAfter(table, firstTable);
-
-// Voeg een bufferparagraaf toe om de afstand tussen de tabellen te behouden
-firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
-
-// Verplaats rijen van de oorspronkelijke tabel naar de gesplitste tabel
-Row currentRow;
-do
-{
-currentRow = firstTable.LastRow;
-table. PrependChild(currentRow);
-} while (currentRow != row);
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Hier gebruiken we het document om de eerste tabel uit het documentknooppunt op te halen. Vervolgens bepalen we de rij waarvan we de tabel willen splitsen, in dit voorbeeld is dat de derde rij (index 2). Vervolgens maken we een nieuwe container door de originele tabel te klonen en deze vervolgens na de originele tabel in te voegen. We voegen ook een bufferparagraaf toe om de afstand tussen de twee tabellen te behouden. Vervolgens verplaatsen we rijen van de oorspronkelijke tabel naar de gesplitste tabel met behulp van een do-while-lus totdat we de opgegeven rij bereiken.
+## Stap 1: Laad het document
 
-## Stap 4: Het gewijzigde document opslaan
-Ten slotte moeten we de
-
-  document gewijzigd met de gesplitste tabel. Gebruik de volgende code:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
-```
-
-Zorg ervoor dat u het juiste pad en de juiste bestandsnaam voor het uitvoerdocument opgeeft.
-
-### Voorbeeldbroncode voor Split Table met Aspose.Words voor .NET 
+Laten we beginnen met het laden van het document met de tabel die u wilt splitsen. Zorg ervoor dat u het juiste pad naar uw document opgeeft.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
-Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// We splitsen de tafel op de derde rij (inclusief).
+```
+
+## Stap 2: Identificeer de tabel die u wilt splitsen
+
+Identificeer en haal vervolgens de tabel op die u wilt splitsen. In dit voorbeeld targeten we de eerste tabel in het document.
+
+```csharp
+Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Stap 3: Selecteer de rij waarin u wilt splitsen
+
+Bepaal de rij waarin u de tabel wilt splitsen. Hier splitsen we de tabel op de derde rij (inclusief).
+
+```csharp
 Row row = firstTable.Rows[2];
-// Maak een nieuwe container voor de gesplitste tabel.
-Table table = (Table) firstTable.Clone(false);
-// Plaats de container na het origineel.
+```
+
+## Stap 4: Maak een nieuwe tabelcontainer
+
+Maak een nieuwe tabelcontainer voor de rijen die uit de oorspronkelijke tabel worden verplaatst.
+
+```csharp
+Table table = (Table)firstTable.Clone(false);
+```
+
+## Stap 5: Plaats de nieuwe tabelcontainer
+
+Plaats de nieuwe tabelcontainer direct na de originele tabel in het document.
+
+```csharp
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// Voeg een bufferparagraaf toe om ervoor te zorgen dat de tabellen uit elkaar blijven.
+```
+
+## Stap 6: Voeg een bufferparagraaf toe
+
+Voeg een bufferparagraaf toe tussen de twee tabellen om ervoor te zorgen dat ze gescheiden blijven.
+
+```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
+```
+
+## Stap 7: Verplaats rijen naar de nieuwe tabel
+
+Verplaats de rijen van de oorspronkelijke tabel naar de nieuwe tabelcontainer. Deze lus gaat door totdat de opgegeven rij (inclusief) wordt verplaatst.
+
+```csharp
 Row currentRow;
 do
 {
-	currentRow = firstTable.LastRow;
-	table.PrependChild(currentRow);
+    currentRow = firstTable.LastRow;
+    table.PrependChild(currentRow);
 } while (currentRow != row);
+```
+
+## Stap 8: Bewaar het document
+
+Sla ten slotte het gewijzigde document op met de tabellen gesplitst.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u een tabel in een Word-document kunt splitsen met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde C#-code te implementeren, kunt u eenvoudig tabellen van een bepaalde regel in uw Word-documenten splitsen.
+
+En daar heb je het! Door deze stappen te volgen, kunt u eenvoudig een tabel in een Word-document splitsen met Aspose.Words voor .NET. Met deze aanpak kunt u grote tabellen effectiever beheren, waardoor de leesbaarheid en organisatie van uw documenten wordt verbeterd. Probeer het eens en ontdek hoe het uw werk met tabellen in Word-documenten vereenvoudigt.
+
+## Veelgestelde vragen
+
+### Kan ik een tabel in meerdere rijen splitsen?
+Ja, u kunt een tabel in meerdere rijen splitsen door het proces voor elk splitspunt te herhalen.
+
+### Wat gebeurt er met de opmaak van de originele tabel?
+De nieuwe tabel neemt de opmaak van de oorspronkelijke tabel over. Eventuele specifieke opmaakwijzigingen kunnen indien nodig op de nieuwe tabel worden toegepast.
+
+### Is het mogelijk om tabellen weer samen te voegen?
+Ja, u kunt tabellen samenvoegen door rijen van de ene tabel naar de andere te verplaatsen met vergelijkbare methoden.
+
+### Werkt deze methode met geneste tabellen?
+Ja, Aspose.Words voor .NET ondersteunt ook bewerkingen op geneste tabellen.
+
+### Kan ik dit proces voor meerdere documenten automatiseren?
+Absoluut! U kunt een script of toepassing maken om het tabelsplitsingsproces voor meerdere documenten te automatiseren.

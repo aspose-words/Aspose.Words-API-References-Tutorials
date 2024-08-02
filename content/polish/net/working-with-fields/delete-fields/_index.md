@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fields/delete-fields/
 ---
-
 ## Wstęp
 
 W dziedzinie przetwarzania i automatyzacji dokumentów Aspose.Words dla .NET wyróżnia się jako potężny zestaw narzędzi dla programistów, którzy chcą programowo manipulować, tworzyć i zarządzać dokumentami programu Word. Ten samouczek ma na celu poprowadzić Cię przez proces wykorzystania Aspose.Words dla .NET do usuwania pól w dokumentach Word. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz przygodę z programowaniem .NET, w tym przewodniku omówiono kroki niezbędne do skutecznego usuwania pól z dokumentów, korzystając z jasnych, zwięzłych przykładów i objaśnień.
@@ -44,13 +43,13 @@ Upewnij się, że masz nowy lub istniejący projekt C# w Visual Studio, w który
 ## Krok 2: Dodaj odniesienie do Aspose.Words
 
 Jeśli jeszcze tego nie zrobiłeś, dodaj odwołanie do Aspose.Words w projekcie programu Visual Studio. Możesz to zrobić poprzez:
-   - Kliknięcie prawym przyciskiem myszy projektu w Eksploratorze rozwiązań.
-   - Wybieranie opcji „Zarządzaj pakietami NuGet…”
-   - Wyszukaj „Aspose.Words” i zainstaluj go w swoim projekcie.
+- Kliknięcie prawym przyciskiem myszy projektu w Eksploratorze rozwiązań.
+- Wybieranie opcji „Zarządzaj pakietami NuGet…”
+- Wyszukaj „Aspose.Words” i zainstaluj go w swoim projekcie.
 
 ## Krok 3: Przygotuj dokument
 
- Umieść dokument, który chcesz zmodyfikować (np.`your-document.docx`) w katalogu projektu lub podaj pełną ścieżkę do niego.
+ Umieść dokument, który chcesz zmodyfikować (np.`your-document.docx`w katalogu projektu lub podaj pełną ścieżkę do niego.
 
 ## Krok 4: Zainicjuj obiekt dokumentu Aspose.Words
 
@@ -89,16 +88,16 @@ Podsumowując, ten samouczek zawiera kompleksowy przewodnik na temat skutecznego
 ## Często zadawane pytania
 
 ### Czy mogę usunąć określone typy pól zamiast wszystkich pól?
-   - Tak, możesz zmodyfikować warunek pętli, aby sprawdzić określone typy pól przed ich usunięciem.
+Tak, możesz zmodyfikować warunek pętli, aby sprawdzić określone typy pól przed ich usunięciem.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
-   - Tak, Aspose.Words obsługuje .NET Core, co pozwala na używanie go w aplikacjach wieloplatformowych.
+Tak, Aspose.Words obsługuje .NET Core, co pozwala na używanie go w aplikacjach wieloplatformowych.
 
 ### Jak mogę poradzić sobie z błędami podczas przetwarzania dokumentów za pomocą Aspose.Words?
-   - Bloków try-catch można używać do obsługi wyjątków, które mogą wystąpić podczas operacji przetwarzania dokumentów.
+Bloków try-catch można używać do obsługi wyjątków, które mogą wystąpić podczas operacji przetwarzania dokumentów.
 
 ### Czy mogę usunąć pola bez zmiany innej zawartości dokumentu?
-   - Tak, pokazana tutaj metoda dotyczy wyłącznie pól i pozostawia inną treść bez zmian.
+Tak, pokazana tutaj metoda dotyczy wyłącznie pól i pozostawia inną treść bez zmian.
 
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words?
-   -  Odwiedzić[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) i[Forum Aspose.Words](https://forum.aspose.com/c/words/8) w celu uzyskania dalszej pomocy.
+ Odwiedzić[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) i[Forum Aspose.Words](https://forum.aspose.com/c/words/8) w celu uzyskania dalszej pomocy.

@@ -53,7 +53,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách áp dụng kiểu văn bản
 
 #### Câu hỏi: Làm cách nào tôi có thể thêm văn bản gạch ngang trong Aspose.Words?
 
- Đáp: Để thêm văn bản gạch ngang trong Aspose.Words, bạn có thể sử dụng`Font.StrikeThrough` tài sản của`Run`sự vật. Bạn có thể đặt thuộc tính này thành`true` để thêm văn bản gạch ngang vào văn bản cụ thể. Ví dụ, bạn có thể sử dụng`run.Font.StrikeThrough=true` để thêm văn bản gạch ngang vào`Run` sự vật.
+ Đáp: Để thêm văn bản gạch ngang trong Aspose.Words, bạn có thể sử dụng`Font.StrikeThrough` tài sản của`Run` sự vật. Bạn có thể đặt thuộc tính này thành`true` để thêm văn bản gạch ngang vào văn bản cụ thể. Ví dụ, bạn có thể sử dụng`run.Font.StrikeThrough=true` để thêm văn bản gạch ngang vào`Run` sự vật.
 
 #### Hỏi: Có thể thêm văn bản gạch ngang vào nhiều đoạn văn bản trong cùng một đoạn không?
 

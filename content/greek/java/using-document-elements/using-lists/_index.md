@@ -181,7 +181,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Αυτός είναι ένας τρόπος για να σταματήσετε τη μορφοποίηση της λίστας.
+        // Αυτός είναι ένας τρόπος για να σταματήσετε τη μορφοποίηση λίστας.
         builder.getListFormat().setList(null);
         builder.getDocument().save(outPath + "WorkingWithList.SpecifyListLevel.docx");
     }

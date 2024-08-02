@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/remove-content/remove-table-of-contents/
 ---
-## Xóa mục lục trong tài liệu Word bằng Aspose.Words cho .NET
+## Giới thiệu
 
 Bạn có mệt mỏi khi phải xử lý Mục lục (TOC) không mong muốn trong tài liệu Word của mình không? Tất cả chúng ta đều đã từng như vậy—đôi khi TOC không cần thiết. Thật may mắn cho bạn, Aspose.Words for .NET giúp bạn dễ dàng xóa TOC theo chương trình. Trong hướng dẫn này, tôi sẽ hướng dẫn bạn thực hiện quy trình này theo từng bước để bạn có thể thành thạo nó ngay lập tức. Hãy đi sâu vào ngay!
 
@@ -41,7 +41,7 @@ Trước khi có thể thao tác với tài liệu của bạn, chúng tôi cầ
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn đến thư mục tài liệu của bạn. Đây là nơi chứa tệp Word của bạn.
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến thư mục tài liệu của bạn. Đây là nơi chứa tệp Word của bạn.
 
 ## Bước 2: Tải tài liệu
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Đây là những gì đang xảy ra:
 - `doc.Range.Fields`: Điều này truy cập vào tất cả các trường trong tài liệu.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: Điều này lọc các trường để chỉ tìm những trường có TOC.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Điều này lọc các trường để chỉ tìm những trường có TOC.
 - `.ToList().ForEach(f => f.Remove())`: Thao tác này sẽ chuyển đổi các trường đã lọc thành một danh sách và xóa từng trường.
 
 ## Bước 4: Lưu tài liệu đã sửa đổi
@@ -83,22 +83,22 @@ Và bạn có nó rồi đấy! Việc xóa TOC khỏi tài liệu Word bằng A
 
 ## Câu hỏi thường gặp
 
-### 1. Aspose.Words cho .NET là gì?
+### Aspose.Words cho .NET là gì?
 
 Aspose.Words for .NET là một thư viện .NET mạnh mẽ để thao tác tài liệu, cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình.
 
-### 2. Tôi có thể sử dụng Aspose.Words miễn phí không?
+### Tôi có thể sử dụng Aspose.Words miễn phí không?
 
  Có, bạn có thể sử dụng Aspose.Words với[dùng thử miễn phí](https://releases.aspose.com/) hoặc nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 
-### 3. Có thể xóa các trường khác bằng Aspose.Words không?
+### Có thể xóa các trường khác bằng Aspose.Words không?
 
 Tuyệt đối! Bạn có thể xóa bất kỳ trường nào bằng cách chỉ định loại của nó trong điều kiện lọc.
 
-### 4. Tôi có cần Visual Studio để sử dụng Aspose.Words không?
+### Tôi có cần Visual Studio để sử dụng Aspose.Words không?
 
 Mặc dù Visual Studio được khuyến khích sử dụng để dễ phát triển nhưng bạn có thể sử dụng bất kỳ IDE nào hỗ trợ .NET.
 
-### 5. Tôi có thể tìm thêm thông tin về Aspose.Words ở đâu?
+### Tôi có thể tìm thêm thông tin về Aspose.Words ở đâu?
 
  Để biết thêm tài liệu chi tiết, hãy truy cập[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/).

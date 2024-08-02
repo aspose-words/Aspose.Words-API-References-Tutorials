@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /hu/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## Bevezetés
 
 A .NET fejlesztés világában a dokumentumok kezelése és manipulálása kulcsfontosságú feladat, amely gyakran megköveteli a dokumentumokon belüli hiperhivatkozások hatékony kezelését. Az Aspose.Words for .NET hatékony lehetőségeket kínál a hiperhivatkozások zökkenőmentes cseréjéhez, így biztosítva, hogy a dokumentumok dinamikusan kapcsolódnak a megfelelő erőforrásokhoz. Ez az oktatóanyag részletesen bemutatja, hogyan érheti el ezt az Aspose.Words for .NET használatával, és lépésről lépésre végigvezeti a folyamaton.
@@ -57,7 +56,7 @@ foreach (Field field in doc.Range.Fields)
         if (hyperlink.SubAddress != null)
             continue;
         
-        // Cserélje ki a hiperhivatkozás címét és eredményét.
+        // Cserélje ki a hiperhivatkozás címét és az eredményt.
         hyperlink.Address = "http://www.aspose.com";
         hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
     }
@@ -76,9 +75,9 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 ## Következtetés
 
-hiperhivatkozások cseréje a dokumentumokban az Aspose.Words for .NET használatával egyszerű, és fokozza a dokumentumok dinamikus jellegét. Akár az URL-ek frissítéséről, akár a dokumentumtartalom programozott átalakításáról van szó, az Aspose.Words leegyszerűsíti ezeket a feladatokat, és hatékony dokumentumkezelést biztosít.
+A hiperhivatkozások cseréje a dokumentumokban az Aspose.Words for .NET használatával egyszerű, és fokozza a dokumentumok dinamikus jellegét. Akár az URL-ek frissítéséről, akár a dokumentumtartalom programozott átalakításáról van szó, az Aspose.Words leegyszerűsíti ezeket a feladatokat, és hatékony dokumentumkezelést biztosít.
 
-## Gyakran Ismételt Kérdések (GYIK)
+## GYIK
 
 ### Az Aspose.Words for .NET képes kezelni az összetett dokumentumstruktúrákat?
 Igen, az Aspose.Words zökkenőmentesen támogatja az összetett struktúrákat, például a táblázatokat, képeket és hiperhivatkozásokat.

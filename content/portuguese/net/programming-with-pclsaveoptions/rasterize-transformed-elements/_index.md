@@ -96,4 +96,4 @@ Aspose.Words oferece suporte a uma ampla variedade de formatos, incluindo PDF, H
  Certifique-se de ter a versão mais recente do Aspose.Words e verifique a documentação para quaisquer problemas específicos de conversão. Além disso, o[Fórum de suporte](https://forum.aspose.com/c/words/8) é um ótimo lugar para pedir ajuda.
 
 ### Há alguma limitação para a versão de teste do Aspose.Words for .NET?  
- A versão de teste possui algumas limitações, como a marca d’água de avaliação. Para uma experiência totalmente funcional, considere adquirir um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ A versão de teste possui algumas limitações, como a marca d'água de avaliação. Para uma experiência totalmente funcional, considere adquirir um[licença temporária](https://purchase.aspose.com/temporary-license/).

@@ -13,7 +13,7 @@ Dalam tutorial ini, Anda akan mempelajari berbagai aspek Pemrosesan Kata dengan 
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Tambahkan Komentar](./add-comments/) | Pelajari cara menambahkan komentar ke dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Komentar Jangkar](./anchor-comment/) | Pelajari cara mengaitkan balasan komentar ke teks tertentu di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Tambah Hapus Komentar Balasan](./add-remove-comment-reply/) | Pelajari cara menambahkan dan menghapus balasan komentar di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Komentar Terselesaikan Dan Balasan](./comment-resolved-and-replies/) | Pelajari cara mengatasi komentar dan balasannya di dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Tambahkan Komentar](./add-comments/) | Pelajari cara menambahkan komentar ke dokumen Word Anda menggunakan Aspose.Words untuk .NET dengan panduan kami. Tingkatkan proses kolaborasi dokumen Anda dengan mudah. |
+| [Komentar Jangkar](./anchor-comment/) | Pelajari cara menambahkan komentar jangkar di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk kolaborasi dokumen yang efisien. |
+| [Tambah Hapus Komentar Balasan](./add-remove-comment-reply/) | Pelajari cara menambahkan dan menghapus balasan komentar di dokumen Word menggunakan Aspose.Words untuk .NET. Tingkatkan kolaborasi dokumen Anda dengan panduan langkah demi langkah ini. |
+| [Komentar Terselesaikan Dan Balasan](./comment-resolved-and-replies/) | Otomatiskan penyelesaian dan balasan komentar di dokumen Word dengan Aspose.Words untuk .NET. Panduan langkah demi langkah disertakan. |

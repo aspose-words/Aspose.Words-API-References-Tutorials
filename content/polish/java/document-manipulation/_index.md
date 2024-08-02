@@ -31,7 +31,7 @@ Po zainstalowaniu Aspose.Words czas rozpocząć tworzenie i modyfikowanie dokume
 
 Chcesz konwertować dokumenty pomiędzy różnymi formatami? Aspose.Words dla Java ma wszystko, czego potrzebujesz. W tym samouczku dowiesz się, jak przekonwertować DOCX na PDF, HTML na DOCX i wiele innych sztuczek konwersji.
 
-## Zwiększanie umiejętności manipulowania dokumentami
+## Zwiększanie umiejętności manipulacji dokumentami
 
 W tym momencie opanowałeś podstawy Aspose.Words dla Java. Ale jest o wiele więcej do odkrycia! 
 

@@ -2,43 +2,75 @@
 title: เพิ่มรูปร่างกลุ่ม
 linktitle: เพิ่มรูปร่างกลุ่ม
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีเพิ่มรูปร่างกลุ่มที่มีหลายรูปร่างลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีเพิ่มรูปร่างกลุ่มลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ด้วยบทช่วยสอนที่ครอบคลุมทีละขั้นตอนนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-shapes/add-group-shape/
 ---
+## การแนะนำ
 
-บทช่วยสอนนี้จะอธิบายวิธีเพิ่มรูปร่างกลุ่มที่มีรูปร่างหลายแบบลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET รูปร่างกลุ่มทำให้คุณสามารถรวมและจัดการรูปร่างหลายรูปให้เป็นเอนทิตีเดียวได้
+บางครั้งการสร้างเอกสารที่ซับซ้อนด้วยองค์ประกอบภาพที่หลากหลายอาจเป็นงานที่น่ากังวล โดยเฉพาะอย่างยิ่งเมื่อต้องจัดการกับรูปร่างเป็นกลุ่ม แต่อย่ากลัว! Aspose.Words สำหรับ .NET ช่วยให้กระบวนการนี้ง่ายขึ้น ทำให้ง่ายเหมือนพาย ในบทช่วยสอนนี้ เราจะแนะนำคุณตลอดขั้นตอนในการเพิ่มรูปร่างกลุ่มลงในเอกสาร Word ของคุณ พร้อมที่จะดำน้ำแล้วหรือยัง? มาเริ่มกันเลย!
 
 ## ข้อกำหนดเบื้องต้น
-หากต้องการติดตามบทช่วยสอนนี้ คุณจะต้องมีสิ่งต่อไปนี้:
 
-- ติดตั้ง Aspose.Words สำหรับไลบรารี .NET แล้ว
-- ความรู้พื้นฐานเกี่ยวกับ C# และการประมวลผลคำด้วยเอกสาร Word
+ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
+1.  Aspose.Words สำหรับ .NET: คุณสามารถดาวน์โหลดได้จากไฟล์[กำหนดหน้าการเผยแพร่](https://releases.aspose.com/words/net/).
+2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือ IDE อื่น ๆ ที่เข้ากันได้กับ .NET
+3. ความเข้าใจพื้นฐานของ C#: ความคุ้นเคยกับการเขียนโปรแกรม C# จะได้รับการพิจารณาเป็นพิเศษ
+
+## นำเข้าเนมสเปซ
+
+ในการเริ่มต้น เราต้องนำเข้าเนมสเปซที่จำเป็นในโครงการของเรา เนมสเปซเหล่านี้ให้การเข้าถึงคลาสและวิธีการที่จำเป็นสำหรับการจัดการเอกสาร Word ด้วย Aspose.Words
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## ขั้นตอนที่ 2: สร้างเอกสารใหม่และ GroupShape
- สร้างอินสแตนซ์ใหม่ของ`Document` ชั้นเรียนและ`GroupShape` คัดค้านการทำงานกับเอกสาร
+## ขั้นตอนที่ 1: เริ่มต้นเอกสาร
+
+ก่อนอื่น มาเริ่มต้นเอกสาร Word ใหม่กันก่อน คิดว่านี่เป็นการสร้างผืนผ้าใบเปล่าที่เราจะเพิ่มรูปร่างกลุ่มของเรา
 
 ```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 doc.EnsureMinimum();
+```
+
+ ที่นี่,`EnsureMinimum()` เพิ่มชุดโหนดขั้นต่ำที่จำเป็นสำหรับเอกสาร
+
+## ขั้นตอนที่ 2: สร้างวัตถุ GroupShape
+
+ ต่อไปเราต้องสร้าง`GroupShape`วัตถุ. วัตถุนี้จะทำหน้าที่เป็นภาชนะสำหรับรูปร่างอื่นๆ เพื่อให้เราสามารถจัดกลุ่มพวกมันเข้าด้วยกันได้
+
+```csharp
 GroupShape groupShape = new GroupShape(doc);
 ```
 
-## ขั้นตอนที่ 3: สร้างและเพิ่มรูปร่างให้กับ GroupShape
- สร้างรูปร่างเฉพาะบุคคลเช่น`accentBorderShape`และ`actionButtonShape` ใช้`Shape` ระดับ. ปรับแต่งคุณสมบัติตามต้องการ ผนวกรูปร่างเหล่านี้เข้ากับ`groupShape` วัตถุ.
+## ขั้นตอนที่ 3: เพิ่มรูปร่างให้กับ GroupShape
+
+ ตอนนี้เรามาเพิ่มรูปร่างแต่ละแบบให้กับเรา`GroupShape` คอนเทนเนอร์. เราจะเริ่มต้นด้วยรูปร่างเส้นขอบที่มีการเน้นเสียง จากนั้นเพิ่มรูปร่างปุ่มการทำงาน
+
+### การเพิ่มรูปร่างเส้นขอบแบบเน้นเสียง
 
 ```csharp
-Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
+Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1)
+{
+    Width = 100,
+    Height = 100
+};
 groupShape.AppendChild(accentBorderShape);
+```
 
+ ข้อมูลโค้ดนี้จะสร้างรูปร่างเส้นขอบที่มีความกว้างและความสูง 100 หน่วย และเพิ่มลงใน`GroupShape`.
+
+### การเพิ่มรูปร่างปุ่มการดำเนินการ
+
+```csharp
 Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 {
     Left = 100,
@@ -48,8 +80,11 @@ Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 groupShape.AppendChild(actionButtonShape);
 ```
 
-## ขั้นตอนที่ 4: กำหนดขนาดสำหรับ GroupShape
- กำหนดความกว้าง ความสูง และขนาดพิกัดสำหรับ`groupShape`.
+ ที่นี่ เราสร้างรูปร่างปุ่มการดำเนินการ วางตำแหน่ง และเพิ่มลงในรูปร่างของเรา`GroupShape`.
+
+## ขั้นตอนที่ 4: กำหนดมิติ GroupShape
+
+ เพื่อให้แน่ใจว่ารูปร่างของเราพอดีภายในกลุ่ม เราจำเป็นต้องกำหนดขนาดของ`GroupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -57,43 +92,46 @@ groupShape.Height = 200;
 groupShape.CoordSize = new Size(200, 200);
 ```
 
+ นี่เป็นการกำหนดความกว้างและความสูงของ`GroupShape` เป็น 200 หน่วย และกำหนดขนาดพิกัดให้เหมาะสม
+
 ## ขั้นตอนที่ 5: แทรก GroupShape ลงในเอกสาร
- สร้างก`DocumentBuilder` วัตถุและแทรก`groupShape` ลงในเอกสารโดยใช้`InsertNode` วิธี.
+
+ ทีนี้มาแทรกของเรา`GroupShape` ลงในเอกสารโดยใช้`DocumentBuilder`.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertNode(groupShape);
 ```
 
+`DocumentBuilder` มอบวิธีง่ายๆ ในการเพิ่มโหนด รวมถึงรูปร่าง ให้กับเอกสาร
+
 ## ขั้นตอนที่ 6: บันทึกเอกสาร
- บันทึกเอกสารไปยังไดเร็กทอรีที่ระบุโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithShapes.AddGroupShape.docx"
+
+สุดท้าย ให้บันทึกเอกสารลงในไดเร็กทอรีที่คุณระบุ
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับเพิ่มรูปร่างกลุ่มโดยใช้ Aspose.Words สำหรับ .NET 
+และคุณก็ได้แล้ว! เอกสารของคุณที่มีรูปร่างเป็นกลุ่มพร้อมแล้ว
 
-```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## บทสรุป
 
-	Document doc = new Document();
-	doc.EnsureMinimum();
-	GroupShape groupShape = new GroupShape(doc);
-	Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
-	groupShape.AppendChild(accentBorderShape);
-	Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
-	{
-		Left = 100, Width = 100, Height = 200
-	};
-	groupShape.AppendChild(actionButtonShape);
-	groupShape.Width = 200;
-	groupShape.Height = 200;
-	groupShape.CoordSize = new Size(200, 200);
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.InsertNode(groupShape);
-	doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
-```
+การเพิ่มรูปร่างกลุ่มลงในเอกสาร Word ไม่จำเป็นต้องเป็นกระบวนการที่ซับซ้อน ด้วย Aspose.Words สำหรับ .NET คุณสามารถสร้างและจัดการรูปร่างได้อย่างง่ายดาย ทำให้เอกสารของคุณดูน่าดึงดูดและใช้งานได้ดียิ่งขึ้น ทำตามขั้นตอนที่ระบุไว้ในบทช่วยสอนนี้ แล้วคุณจะเป็นมืออาชีพในเวลาอันรวดเร็ว!
 
-แค่นั้นแหละ! คุณได้เพิ่มรูปร่างกลุ่มที่มีรูปร่างหลายแบบลงในเอกสาร Word ของคุณสำเร็จแล้วโดยใช้ Aspose.W
+## คำถามที่พบบ่อย
+
+### ฉันสามารถเพิ่มรูปร่างมากกว่าสองรูปร่างให้กับ GroupShape ได้หรือไม่
+ ใช่ คุณสามารถเพิ่มรูปร่างได้มากเท่าที่คุณต้องการ`GroupShape` - เพียงแค่ใช้`AppendChild` วิธีการแต่ละรูปทรง
+
+### เป็นไปได้ไหมที่จะจัดสไตล์รูปร่างภายใน GroupShape
+ อย่างแน่นอน! แต่ละรูปร่างสามารถจัดสไตล์แยกกันได้โดยใช้คุณสมบัติที่มีอยู่ใน`Shape` ระดับ.
+
+### ฉันจะวางตำแหน่ง GroupShape ภายในเอกสารได้อย่างไร
+ คุณสามารถวางตำแหน่ง`GroupShape` โดยการตั้งค่า`Left`และ`Top` คุณสมบัติ.
+
+### ฉันสามารถเพิ่มข้อความลงในรูปร่างภายใน GroupShape ได้หรือไม่
+ ใช่ คุณสามารถเพิ่มข้อความลงในรูปร่างได้โดยใช้`AppendChild` วิธีการเพิ่มก`Paragraph` ซึ่งประกอบด้วย`Run` โหนดที่มีข้อความ
+
+### เป็นไปได้ไหมที่จะจัดกลุ่มรูปร่างแบบไดนามิกตามการป้อนข้อมูลของผู้ใช้
+ได้ คุณสามารถสร้างและจัดกลุ่มรูปร่างแบบไดนามิกตามการป้อนข้อมูลของผู้ใช้โดยการปรับคุณสมบัติและวิธีการให้เหมาะสม

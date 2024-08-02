@@ -16,8 +16,8 @@ Egal, ob Sie Anfänger oder erfahrener Entwickler sind, die Aspose.Words für .N
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Zugriffsstile](./access-styles/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET auf Dokumentstile zugreifen. Vollständiges Tutorial zum Bearbeiten der Stile Ihrer Dokumente. |
-| [Stile kopieren](./copy-styles/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Stile zwischen Dokumenten kopieren. |
-| [Designeigenschaften abrufen](./get-theme-properties/) | Erkunden Sie die Designeigenschaften eines Dokuments mit Aspose.Words für .NET. Passen Sie Stile und Farben für einen einzigartigen Look an. |
-| [Designeigenschaften festlegen](./set-theme-properties/) | Erfahren Sie, wie Sie das Aussehen Ihrer Dokumente anpassen, indem Sie die Designeigenschaften mit Aspose.Words für .NET ändern. Erzielen Sie professionelle und attraktive Ergebnisse. |
-| [Stiltrennzeichen einfügen](./insert-style-separator/) | Erfahren Sie, wie Sie Dokumente mit benutzerdefinierten Stilen erstellen und Stiltrennzeichen für eine präzise, professionelle Formatierung einfügen. |
+| [Dokumentformatvorlagen in Word abrufen](./access-styles/) | Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET Dokumentformate in Word erhalten. Greifen Sie in Ihren .NET-Anwendungen programmgesteuert auf Formatvorlagen zu und verwalten Sie sie. |
+| [Word-Dokumentformate kopieren](./copy-styles/) | Erfahren Sie, wie Sie Word-Dokumentstile mit Aspose.Words für .NET kopieren. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um mühelos eine konsistente Dokumentformatierung sicherzustellen. |
+| [Dokumentdesigneigenschaften in Word abrufen](./get-theme-properties/) | Entdecken Sie, wie Sie mit Aspose.Words für .NET auf Dokumentdesigneigenschaften in Word zugreifen und diese verwalten. Erfahren Sie mit unserem Leitfaden, wie Sie Schriftarten und Farben abrufen. |
+| [Festlegen der Designeigenschaften im Word-Dokument](./set-theme-properties/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Designeigenschaften in Word-Dokumenten festlegen. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um Schriftarten und Farben einfach anzupassen. |
+| [Dokumentformat-Trennzeichen in Word einfügen](./insert-style-separator/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET einen Dokumentstil-Trennzeichen in Word einfügen. Dieses Handbuch enthält Anweisungen und Tipps zum Verwalten von Dokumentstilen. |

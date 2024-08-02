@@ -9,7 +9,7 @@ url: /fr/net/programming-with-tables/auto-fit-to-page-width/
 ---
 ## Introduction
 
-Avez-vous déjà ressenti la frustration de voir des tableaux dans des documents Word ne pas s'adapter parfaitement à la page ? Vous modifiez les marges, redimensionnez les colonnes, et cela semble toujours gênant. Si vous utilisez Aspose.Words pour .NET, il existe une solution élégante à ce problème : l'ajustement automatique des tableaux à la fenêtre. Cette fonctionnalité astucieuse ajuste la largeur du tableau afin qu'elle s'aligne parfaitement avec la largeur de la page, donnant ainsi à votre document un aspect soigné et professionnel. Dans ce guide, nous vous guiderons à travers les étapes pour y parvenir avec Aspose.Words for .NET, garantissant que vos tables vous vont toujours comme un gant.
+Avez-vous déjà ressenti la frustration de voir des tableaux dans des documents Word ne pas s'adapter parfaitement à la page ? Vous modifiez les marges, redimensionnez les colonnes, et cela semble toujours gênant. Si vous utilisez Aspose.Words pour .NET, il existe une solution élégante à ce problème : l'ajustement automatique des tableaux à la fenêtre. Cette fonctionnalité astucieuse ajuste la largeur du tableau afin qu’elle s’aligne parfaitement avec la largeur de la page, donnant ainsi à votre document un aspect soigné et professionnel. Dans ce guide, nous vous guiderons à travers les étapes pour y parvenir avec Aspose.Words for .NET, garantissant que vos tables vous vont toujours comme un gant.
 
 ## Conditions préalables
 

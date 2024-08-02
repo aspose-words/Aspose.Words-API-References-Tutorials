@@ -10,11 +10,11 @@ url: /hu/python-net/content-extraction-and-manipulation/document-content-extract
 
 ## Bevezetés
 
-A Word-dokumentumok hatékony kinyerése általános követelmény az adatfeldolgozásban, tartalomelemzésben és egyebekben. Az Aspose.Words for Python egy hatékony könyvtár, amely átfogó eszközöket biztosít a Word dokumentumok programozott kezeléséhez.
+Word-dokumentumok hatékony kinyerése általános követelmény az adatfeldolgozásban, tartalomelemzésben és egyebekben. Az Aspose.Words for Python egy hatékony könyvtár, amely átfogó eszközöket biztosít a Word dokumentumok programozott kezeléséhez.
 
 ## Előfeltételek
 
-Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy telepítve van a Python és az Aspose.Words könyvtár. A könyvtár letölthető a honlapról[itt](https://releases.aspose.com/words/python/). Ezenkívül győződjön meg arról, hogy van egy Word-dokumentum, amely készen áll a tesztelésre.
+ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy telepítve van a Python és az Aspose.Words könyvtár. A könyvtár letölthető a honlapról[itt](https://releases.aspose.com/words/python/). Ezenkívül győződjön meg arról, hogy van egy Word-dokumentum, amely készen áll a tesztelésre.
 
 ## Az Aspose.Words for Python telepítése
 

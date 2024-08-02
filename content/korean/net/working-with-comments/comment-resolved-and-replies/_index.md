@@ -2,34 +2,70 @@
 title: 해결된 댓글 및 답변
 linktitle: 해결된 댓글 및 답변
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서의 댓글과 답변을 해결하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서의 주석을 자동으로 해결하고 응답할 수 있습니다. 단계별 가이드가 포함되어 있습니다.
 type: docs
 weight: 10
 url: /ko/net/working-with-comments/comment-resolved-and-replies/
 ---
+## 소개
 
-이 포괄적인 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 댓글과 답변을 해결하는 방법을 배웁니다. 우리는 프로세스를 안내하고 필요한 C# 코드 조각을 제공할 것입니다. 이 가이드가 끝나면 댓글 해결을 관리하고 댓글 상태와 답변을 업데이트할 수 있게 됩니다.
+Word 문서로 작업하는 경우 아마도 주석을 처리해 본 적이 있을 것입니다. 공동 작업에는 적합하지만 관리가 번거로울 수 있습니다. .NET용 Aspose.Words를 사용하면 댓글을 해결하고 답변하는 프로세스를 자동화할 수 있습니다. 이 가이드는 이를 수행하는 단계를 안내합니다.
 
-## 전제조건
-시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
-- 시스템에 설치된 .NET 라이브러리용 Aspose.Words.
+## 전제 조건
 
-## 1단계: 문서 로드 및 설명 액세스
-시작하려면 Document 클래스를 사용하여 주석이 포함된 문서를 로드하고 주석 컬렉션에 액세스합니다.
+다이빙을 시작하기 전에 다음 사항을 확인하세요.
+
+1.  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+2. 개발 환경: .NET Framework로 설정합니다.
+3. C#에 대한 기본 지식: 구문 및 개념에 대한 지식.
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져오겠습니다. 이렇게 하면 필요한 모든 클래스와 메서드를 쉽게 사용할 수 있습니다.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+프로세스를 간단하고 따르기 쉬운 단계로 나누어 보겠습니다. 각 단계는 코드와 해당 기능을 이해하는 데 도움이 됩니다.
+
+## 1단계: 문서 로드
+
+ 시작하려면 주석이 포함된 Word 문서를 로드하세요. 사용`Document` 이에 대한 수업입니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+ 이 코드 줄은 새로운 것을 초기화합니다.`Document` Word 문서에 대한 경로가 있는 개체입니다.
+
+## 2단계: 댓글 검색
+
+ 다음으로 문서의 모든 주석을 가져와야 합니다. 우리는`GetChildNodes` 컬렉션을 검색하는 방법`Comment` 노드.
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## 2단계: 댓글 및 답변 해결
-다음으로 댓글과 답변을 반복하여 해결됨으로 표시합니다.
+이 코드는 문서의 모든 주석을 검색하여`NodeCollection`.
+
+## 3단계: 학부모 댓글에 액세스
+
+이 예에서는 컬렉션의 첫 번째 댓글에 중점을 둘 것입니다. 이것이 우리의 부모 코멘트가 될 것입니다.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+ 여기서는 컬렉션의 첫 번째 노드를`Comment` 물체.
+
+## 4단계: 회신 반복
+
+ 이제 상위 댓글에 대한 응답을 반복해 보겠습니다. 우리는`foreach` 루프를 통해 각 응답을 반복합니다.
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-위 코드에서는 상위 댓글에 액세스하고 해당 답변을 반복합니다. 상위 댓글 ID와 해결 상태를 검색할 수 있습니다. 그런 다음 해결 방법을 나타내기 위해 각 댓글 답변의 "완료" 표시를 업데이트합니다.
+이 루프에서는 상위 주석의 ID와 해당 상태(완료 여부)를 인쇄합니다. 그런 다음 각 응답을 완료로 표시합니다.
 
-## 3단계: 문서 저장
-주석을 해결하고 상태를 업데이트한 후 Document 클래스의 Save 메서드를 사용하여 수정된 문서를 파일에 저장합니다.
+## 5단계: 문서 저장
+
+마지막으로 수정된 문서를 디렉터리에 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### .NET용 Aspose.Words를 사용하여 댓글 및 응답을 해결하기 위한 예제 소스 코드
-다음은 .NET용 Aspose.Words를 사용하여 댓글과 답변을 해결하기 위한 전체 소스 코드입니다.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-문서 파일 경로 및 추가 사용자 정의를 포함하여 특정 요구 사항에 따라 코드를 조정해야 합니다.
+이 코드는 변경 사항을 새 문서에 저장하여 원본 파일은 그대로 유지됩니다.
 
 ## 결론
-축하해요! Aspose.Words for .NET을 사용하여 Word 문서에서 댓글과 답변을 해결하는 방법을 성공적으로 배웠습니다. 단계별 가이드를 따르고 제공된 소스 코드를 활용하면 이제 요구 사항에 따라 댓글 해결을 관리하고 댓글 상태와 답변을 업데이트할 수 있습니다.
 
-댓글 해결은 문서 내의 피드백을 추적하고 관리하는 데 도움이 됩니다. 다양한 댓글 상태를 실험하고 맞춤설정하여 문서의 공동 작업 및 검토 프로세스를 개선하세요.
+Word 문서에서 주석을 처리하는 것이 수동적인 일이 될 필요는 없습니다. .NET용 Aspose.Words를 사용하면 프로세스를 자동화하여 시간을 절약하고 오류를 줄일 수 있습니다. 문서의 댓글을 효율적으로 해결하고 회신하려면 이 가이드를 따르세요.
 
-### FAQ
+## FAQ
 
-#### Q: .NET용 Aspose.Words에서 주석을 어떻게 해결합니까?
+### Aspose.Words for .NET을 사용하여 다른 댓글 관련 작업을 자동화할 수 있나요?  
+예, 댓글 추가, 삭제, 수정과 같은 다양한 작업을 자동화할 수 있습니다.
 
- A: Aspose.Words for .NET에서 주석을 해결하려면 다음을 사용할 수 있습니다.`Comment.Resolve` 지정하는 방법`Comment` 해결하려는 개체. 이렇게 하면 댓글이 해결된 것으로 표시되고 최종 문서에서 숨겨집니다.
+### .NET용 Aspose.Words는 .NET Core와 호환됩니까?  
+예, .NET용 Aspose.Words는 .NET Framework와 .NET Core를 모두 지원합니다.
 
-#### Q: Aspose.Words for .NET에서 해결된 댓글에 답글을 어떻게 추가하나요?
+### .NET용 Aspose.Words의 무료 평가판을 어떻게 받을 수 있나요?  
+ 다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 
- A: 해결된 댓글은 기본적으로 최종 문서에 숨겨져 있지만 다음을 사용하여 해결된 댓글에 답글을 추가할 수 있습니다.`Comment.AddReply`응답 텍스트와 이를 추가할 위치를 지정하는 방법입니다.
+### .NET용 Aspose.Words를 사용하여 다른 문서 유형으로 작업할 수 있나요?  
+예, Aspose.Words는 DOCX, PDF, HTML 등을 포함한 다양한 형식을 지원합니다.
 
-#### Q: .NET용 Aspose.Words에서 해결된 댓글을 어떻게 볼 수 있나요?
-
- A: 기본적으로 해결된 댓글은 최종 문서에 숨겨집니다. 그러나 다음을 사용하여 표시할 수 있습니다.`CommentOptions.ShowResolvedComments` 의 재산`Document` 개체를 설정하고`true`.
-
-#### Q: Aspose.Words for .NET에서 답글을 포함한 모든 댓글을 숨기려면 어떻게 해야 합니까?
-
- A: Aspose.Words for .NET에서 회신을 포함한 모든 댓글을 숨기려면 다음을 사용할 수 있습니다.`CommentOptions.CommentDisplayMode` 의 재산`Document` 개체를 설정하고`CommentDisplayMode.None`.
-
-#### Q: Aspose.Words for .NET에서 해결된 댓글의 텍스트를 편집할 수 있나요?
-
- A: 예, Aspose.Words for .NET에 액세스하여 해결된 댓글의 텍스트를 편집할 수 있습니다.`Comment.Text` 해당 속성`Comment` 개체를 수정하고 필요에 따라 텍스트를 수정합니다.
+### .NET용 Aspose.Words에 대한 자세한 문서는 어디서 찾을 수 있나요?  
+ 문서에 액세스할 수 있습니다.[여기](https://reference.aspose.com/words/net/).

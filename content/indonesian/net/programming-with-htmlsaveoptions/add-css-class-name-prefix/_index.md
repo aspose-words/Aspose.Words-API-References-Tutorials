@@ -9,7 +9,7 @@ url: /id/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
 ## Perkenalan
 
-Selamat datang! Jika Anda mendalami dunia Aspose.Words untuk .NET, Anda akan mendapat hadiahnya. Hari ini, kita akan mempelajari cara menambahkan awalan nama kelas CSS saat menyimpan dokumen Word sebagai HTML menggunakan Aspose.Words untuk .NET. Fitur ini sangat berguna ketika Anda ingin menghindari konflik nama kelas di file HTML Anda.
+Selamat datang! Jika Anda mendalami dunia Aspose.Words untuk .NET, Anda akan mendapat hadiahnya. Hari ini, kita akan mempelajari cara menambahkan awalan nama kelas CSS saat menyimpan dokumen Word sebagai HTML menggunakan Aspose.Words untuk .NET. Fitur ini sangat berguna ketika Anda ingin menghindari konflik nama kelas dalam file HTML Anda.
 
 ## Prasyarat
 

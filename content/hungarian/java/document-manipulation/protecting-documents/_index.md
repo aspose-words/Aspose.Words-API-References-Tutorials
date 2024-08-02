@@ -2,7 +2,7 @@
 title: Dokumentumok védelme az Aspose.Words for Java programban
 linktitle: Dokumentumok védelme
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje adatait jelszóval és még sok mással.
+description: Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje meg adatait jelszóval és még sok mással.
 type: docs
 weight: 22
 url: /hu/java/document-manipulation/protecting-documents/

@@ -23,7 +23,7 @@ Durch die Silbentrennung wird sichergestellt, dass Ihr Dokument professionell un
 
 ### Manuelle Silbentrennung
 
-In manchen Fällen möchten Sie die Worttrennung manuell steuern, um eine bestimmte Gestaltung oder Hervorhebung zu erreichen. Dies können Sie erreichen, indem Sie an der gewünschten Trennstelle einen Bindestrich einfügen.
+In manchen Fällen möchten Sie die Worttrennung manuell steuern, um ein bestimmtes Design oder eine bestimmte Betonung zu erzielen. Dies können Sie erreichen, indem Sie an der gewünschten Trennstelle einen Bindestrich einfügen.
 
 ### Automatische Silbentrennung
 

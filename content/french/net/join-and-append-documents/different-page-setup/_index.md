@@ -78,7 +78,7 @@ srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 ```
 
-## Étape 4 : faire correspondre les paramètres de configuration de la page
+## Étape 4 : Faire correspondre les paramètres de configuration de la page
 
 Pour éviter toute incohérence de mise en page, assurez-vous que les paramètres de mise en page de la première section du document source correspondent à ceux de la dernière section du document de destination.
 

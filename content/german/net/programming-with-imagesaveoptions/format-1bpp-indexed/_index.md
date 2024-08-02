@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-Sie müssen den Pfad zu Ihrem Dokumentverzeichnis angeben. Hier ist Ihr Word-Dokument gespeichert und dort wird auch das konvertierte Bild gespeichert.
+Sie müssen den Pfad zu Ihrem Dokumentverzeichnis angeben. Hier ist Ihr Word-Dokument gespeichert und hier wird auch das konvertierte Bild gespeichert.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis

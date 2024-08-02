@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### Q : Comment surligner du texte à l’aide de Markdown ?
 
- : Pour surligner du texte à l'aide de Markdown, entourez simplement le texte avec les symboles appropriés. Utiliser`*` ou`_` pour les italiques,`**` ou`__` pour gras, et`~~` pour le barré.
+ R : Pour surligner du texte à l'aide de Markdown, entourez simplement le texte avec les symboles appropriés. Utiliser`*` ou`_` pour les italiques,`**` ou`__` pour gras, et`~~` pour le barré.
 
 #### Q : Pouvons-nous combiner différents surlignages dans le même texte ?
 

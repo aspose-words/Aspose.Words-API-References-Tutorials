@@ -9,7 +9,7 @@ url: /pl/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 ## Wstęp
 
-Jeśli chodzi o programowe tworzenie dokumentów Word i zarządzanie nimi, Aspose.Words dla .NET jest potężnym narzędziem, które może zaoszczędzić dużo czasu i wysiłku. W tym artykule przyjrzymy się, jak przejść do nagłówków i stopek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Ta funkcja jest niezbędna, gdy chcesz dodać określoną treść do sekcji nagłówka lub stopki dokumentu. Niezależnie od tego, czy tworzysz raport, fakturę, czy inny dokument wymagający profesjonalnego podejścia, kluczowa jest umiejętność manipulowania nagłówkami i stopkami.
+Jeśli chodzi o programowe tworzenie dokumentów Word i zarządzanie nimi, Aspose.Words dla .NET jest potężnym narzędziem, które może zaoszczędzić dużo czasu i wysiłku. W tym artykule przyjrzymy się, jak przejść do nagłówków i stopek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Ta funkcja jest niezbędna, gdy chcesz dodać określoną treść do sekcji nagłówka lub stopki dokumentu. Niezależnie od tego, czy tworzysz raport, fakturę czy inny dokument wymagający profesjonalnego podejścia, kluczowa jest umiejętność manipulowania nagłówkami i stopkami.
 
 ## Warunki wstępne
 

@@ -2,20 +2,38 @@
 title: Změnit pole Aktualizovat zdroj kultury
 linktitle: Změnit pole Aktualizovat zdroj kultury
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Change Field Update Culture Source, Podrobný průvodce úpravou zdroje kultury v Aspose.Words for .NET.
+description: V této příručce se dozvíte, jak změnit zdroj kultury aktualizace pole v Aspose.Words for .NET. Snadno ovládejte formátování data na základě různých kultur.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/change-field-update-culture-source/
 ---
+## Úvod
 
-tomto tutoriálu vás provedeme procesem změny zdroje kultury aktualizace pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Úpravou zdroje jazykové verze můžete řídit formátování data během operací aktualizace polí a hromadné korespondence. Poskytneme vám potřebný zdrojový kód C# a pokyny krok za krokem, jak toho dosáhnout.
+V tomto tutoriálu se ponoříme do světa Aspose.Words pro .NET a prozkoumáme, jak změnit zdroj kultury aktualizace pole. Pokud máte co do činění s dokumenty Wordu, které obsahují pole data, a potřebujete ovládat, jak jsou tato data formátována na základě různých kultur, je tato příručka určena právě vám. Pojďme si projít procesem krok za krokem a ujistěte se, že pochopíte každý koncept a dokážete jej efektivně aplikovat ve svých projektech.
 
 ## Předpoklady
-Než začneme, ujistěte se, že máte následující předpoklady:
-- Knihovna Aspose.Words for .NET nainstalovaná ve vašem systému.
 
-## Krok 1: Vytvořte dokument a DocumentBuilder
-Chcete-li začít, vytvořte instanci třídy Document a objekt DocumentBuilder:
+Než skočíme do kódu, ujistěte se, že máte následující:
+
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Jakékoli .NET kompatibilní IDE (např. Visual Studio).
+- Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory pro náš projekt. To zajistí, že budeme mít přístup ke všem požadovaným třídám a metodám poskytovaným Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Nyní si tento příklad rozdělíme do několika kroků, které vám pomohou pochopit, jak změnit zdroj kultury aktualizace pole v Aspose.Words pro .NET.
+
+## Krok 1: Inicializujte dokument
+
+ Prvním krokem je vytvoření nové instance souboru`Document` třída a a`DocumentBuilder`. To vytváří základ pro vytváření a manipulaci s naším dokumentem Word.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,80 +41,58 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Vložte obsah se specifickým národním prostředím
-Dále nastavte národní prostředí na němčinu a vložte pole s formátováním data:
+## Krok 2: Vložte pole se specifickým národním prostředím
+
+Dále musíme do dokumentu vložit pole. V tomto příkladu vložíme dvě pole data. Nastavíme národní prostředí písma na němčinu (LocaleId = 1031), abychom ukázali, jak kultura ovlivňuje formát data.
 
 ```csharp
-builder.Font.LocaleId = 1031;
+builder.Font.LocaleId = 1031; // Němec
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-Ve výše uvedeném kódu nastavíme národní prostředí písma na němčinu (ID národního prostředí 1031) a vložíme dvě pole se specifickým formátováním data.
+## Krok 3: Nastavte zdroj kultury aktualizace pole
 
-## Krok 3: Změňte zdroj kultury aktualizace pole
-Chcete-li změnit zdroj kultury aktualizace pole, použijte třídu FieldOptions:
+ Pro kontrolu kultury používané při aktualizaci polí jsme nastavili`FieldUpdateCultureSource` majetek z`FieldOptions`třída. Tato vlastnost určuje, zda je kultura převzata z kódu pole nebo dokumentu.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
-
-V tomto příkladu jsme nastavili kulturu použitou během aktualizace pole tak, aby byla vybrána z kultury používané polem.
 
 ## Krok 4: Proveďte hromadnou korespondenci
-Proveďte operaci hromadné korespondence a zadejte hodnotu data pro pole "Datum2":
+
+Nyní musíme provést hromadnou korespondenci, abychom naplnili pole skutečnými daty. V tomto příkladu nastavíme druhé pole data (`Date2`) do 1. ledna 2011.
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
-
-V tomto fragmentu kódu provedeme operaci hromadné korespondence a do pole „Datum2“ zadáme hodnotu DateTime.
 
 ## Krok 5: Uložte dokument
-Uložte upravený dokument do souboru pomocí metody Save třídy Document:
+
+Nakonec dokument uložíme do zadaného adresáře. Tento krok dokončí proces změny zdroje kultury aktualizace pole.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
-```
-
-### Příklad zdrojového kódu pro změnu zdroje kultury aktualizace pole pomocí Aspose.Words for .NET
-Zde je úplný zdrojový kód pro změnu zdroje kultury aktualizace pole v dokumentech aplikace Word pomocí Aspose.Words pro .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Font.LocaleId = 1031;
-builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
-builder.Write(" - ");
-builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
-
-doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
-
-doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
-
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Závěr
-Gratulujeme! Úspěšně jste se naučili, jak změnit zdroj kultury aktualizace pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete nyní ovládat kulturu používanou pro formátování data během operací aktualizace polí a hromadné korespondence. Upravte zdroj kultury podle svých požadavků, abyste zajistili přesné a konzistentní datum.
 
-### FAQ
+A tady to máte! Úspěšně jste změnili zdroj kultury aktualizace pole v Aspose.Words pro .NET. Pomocí těchto kroků můžete zajistit, že vaše dokumenty Word zobrazí data a další hodnoty polí podle zadaného nastavení jazykové verze. To může být užitečné zejména při generování dokumentů pro mezinárodní publikum.
 
-#### Otázka: Jak mohu změnit zdroj kultury aktualizace pole v Aspose.Words pro .NET?
+## FAQ
 
- A: Chcete-li změnit zdroj kultury aktualizace pole v Aspose.Words pro .NET, můžete použít`Document.FieldOptions.CultureSource` vlastnost a nastavte její hodnotu na`FieldCultureSource.FieldCode` nebo`FieldCultureSource.CurrentThread` . Můžete například použít`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` použít kulturu definovanou v kódu pole.
+###  Jaký je účel nastavení`LocaleId`?
+ The`LocaleId` určuje nastavení kultury pro text, které ovlivňuje, jak jsou formátována data a další data citlivá na národní prostředí.
 
-#### Otázka: Jak mohu určit konkrétní kulturu pro aktualizaci polí v Aspose.Words pro .NET?
+### Mohu použít jiné národní prostředí než němčinu?
+ Ano, můžete nastavit`LocaleId`na jakýkoli platný identifikátor národního prostředí. Například 1033 pro angličtinu (Spojené státy americké).
 
- A: Chcete-li určit konkrétní kulturu pro aktualizaci polí v Aspose.Words pro .NET, můžete použít`Document.FieldOptions.FieldUpdateCultureInfo` vlastnost a nastavte`CultureInfo` objekt odpovídající požadované kultuře. Můžete například použít`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` specifikovat francouzskou (francouzskou) kulturu.
+###  Co se stane, když nenastavím`FieldUpdateCultureSource` property?
+Pokud tato vlastnost není nastavena, použije se při aktualizaci polí výchozí nastavení kultury dokumentu.
 
-#### Otázka: Je možné zakázat automatickou aktualizaci polí v Aspose.Words pro .NET?
+### Je možné aktualizovat pole na základě kultury dokumentu namísto kódu pole?
+ Ano, můžete nastavit`FieldUpdateCultureSource` na`FieldUpdateCultureSource.Document` použít nastavení kultury dokumentu.
 
- Odpověď: Ano, v Aspose.Words pro .NET je možné zakázat automatickou aktualizaci polí. Můžete použít`Document.FieldOptions.UpdateFields` vlastnost a nastavte ji na`false` abyste zabránili automatické aktualizaci polí. To vám umožňuje ručně ovládat aktualizaci polí podle potřeby.
-
-#### Otázka: Jak mohu ručně aktualizovat pole dokumentu v Aspose.Words pro .NET?
-
- A: Chcete-li ručně aktualizovat pole v dokumentu v Aspose.Words pro .NET, můžete použít`Field.Update` metoda pro každý obor zvlášť. Můžete například použít`field.Update()` pro aktualizaci konkrétního pole.
+### Jak mohu formátovat data v jiném vzoru?
+ Vzor formátu data můžete změnit v`InsertField` metodou úpravou`\\@` hodnotu spínače.

@@ -12,9 +12,9 @@ Split Document adalah sumber daya komprehensif yang menjelaskan cara membagi dok
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Dengan Judul Html](./by-headings-html/) | Panduan langkah demi langkah untuk menjelaskan kode sumber C# fitur By Heading HTML Aspose.Words untuk .NET |
-| [Berdasarkan Bagian Html](./by-sections-html/) | Pelajari cara membagi dokumen Word menjadi beberapa bagian Html menggunakan Aspose.Words untuk .NET dengan contoh kode lengkap. |
-| [Berdasarkan Bagian](./by-sections/) | Pelajari cara membagi dokumen Word menjadi beberapa bagian terpisah menggunakan Aspose.Words untuk .NET dengan contoh kode lengkap. |
-| [Halaman Demi Halaman](./page-by-page/) | Panduan langkah demi langkah untuk menjelaskan kode sumber C# fitur Aspose.Words Halaman demi Halaman untuk .NET |
+| [Pisahkan Dokumen Word Berdasarkan Judul Html](./by-headings-html/) | Pelajari cara membagi dokumen Word dengan judul menjadi HTML menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci. |
+| [Pisahkan Dokumen Word Berdasarkan Bagian HTML](./by-sections-html/) | Pelajari cara membagi dokumen Word per bagian menjadi HTML menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. |
+| [Pisahkan Dokumen Word Berdasarkan Bagian](./by-sections/) | Pelajari cara membagi dokumen Word menjadi beberapa bagian menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci langkah demi langkah ini untuk pengelolaan dokumen yang efisien. |
+| [Pisahkan Dokumen Word Berdasarkan Halaman](./page-by-page/) | Pelajari cara membagi dokumen Word berdasarkan halaman menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk mengelola dokumen besar secara efisien. |
 | [Gabungkan Dokumen](./merge-documents/) | Panduan langkah demi langkah untuk menjelaskan kode sumber C# fitur Gabung Dokumen Aspose.Words untuk .NET |
-| [Berdasarkan Rentang Halaman](./by-page-range/) | Ekstrak dengan mudah berdasarkan rentang halaman dari dokumen Word menggunakan Aspose.Words for .NET Panduan langkah demi langkah. |
+| [Pisahkan Dokumen Word Berdasarkan Rentang Halaman](./by-page-range/) | Pelajari cara membagi dokumen Word berdasarkan rentang halaman menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami. Sempurna untuk pengembang. |

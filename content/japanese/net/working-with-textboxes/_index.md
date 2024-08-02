@@ -12,6 +12,6 @@ Words Processing with Textboxes は、Aspose.Words library for .NET を使用し
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Wordでリンクを作成する](./create-a-link/) | Aspose.Words for .NET を使用して、Word 文書内のテキスト ボックス間にリンクを作成する方法を学習します。 |
-| [チェックシーケンス](./check-sequence/) | Aspose.Words for .NET を使用して Word 文書内のテキスト ボックスの順序を確認する方法を学習します。 |
-| [Word 文書の転送リンクを解除する](./break-a-link/) | Aspose.Words for .NET を使用して Word 文書内の転送リンクを解除する方法を学習します。 |
+| [Word でテキスト ボックスをリンクする](./create-a-link/) | Aspose.Words for .NET を使用して Word 文書にテキスト ボックスを作成し、リンクする方法を学びます。シームレスな文書のカスタマイズについては、当社の包括的なガイドに従ってください。 |
+| [Word でのテキスト ボックスのシーケンス チェック](./check-sequence/) | Aspose.Words for .NET を使用して Word 文書内のテキスト ボックスの順序を確認する方法を学びます。詳細なガイドに従って、文書のフローをマスターしてください。 |
+| [Word 文書の転送リンクを解除する](./break-a-link/) | Aspose.Words for .NET を使用して、Word 文書のテキスト ボックス内の転送リンクを解除する方法を学びます。ガイドに従って、よりスムーズなドキュメント管理エクスペリエンスを実現してください。 |

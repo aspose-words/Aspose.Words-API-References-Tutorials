@@ -2,67 +2,86 @@
 title: Radformat Inaktivera Break Across Pages
 linktitle: Radformat Inaktivera Break Across Pages
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du inaktiverar radbrytning för en tabell över flera sidor i ett Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du inaktiverar radbrytningar över sidor i Word-dokument med Aspose.Words för .NET för att bibehålla tabellläsbarhet och formatering.
 type: docs
 weight: 10
 url: /sv/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
+## Introduktion
 
-den här handledningen ska vi lära oss hur man inaktiverar radbrytning för en flersidig tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna inaktivera radbrytning för alla rader i din tabell i dina Word-dokument.
+När du arbetar med tabeller i Word-dokument vill du kanske se till att rader inte delas över sidor, vilket kan vara viktigt för att bibehålla läsbarheten och formateringen av dina dokument. Aspose.Words för .NET ger ett enkelt sätt att inaktivera radbrytningar över sidor.
 
-## Steg 1: Projektinställning
-1. Starta Visual Studio och skapa ett nytt C#-projekt.
-2. Lägg till en referens till Aspose.Words for .NET-biblioteket.
+I den här handledningen går vi igenom processen att inaktivera radbrytningar över sidor i ett Word-dokument med Aspose.Words för .NET.
 
-## Steg 2: Ladda dokumentet
-Följ dessa steg för att starta ordbehandling med dokumentet:
+## Förutsättningar
 
-```csharp
-// Sökväg till din dokumentkatalog
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Innan vi börjar, se till att du har följande förutsättningar:
+- Aspose.Words för .NET-biblioteket installerat.
+- Ett Word-dokument med en tabell som sträcker sig över flera sidor.
 
-// Ladda dokumentet
-Document doc = new Document(dataDir + "Table spanning two pages.docx");
-```
+## Importera namnområden
 
-Var noga med att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog och ange korrekt filnamn.
-
-## Steg 3: Inaktivera tabellradbrytning
-Därefter kommer vi att inaktivera radbrytning för alla rader i tabellen. Använd följande kod:
+Importera först de nödvändiga namnrymden i ditt projekt:
 
 ```csharp
-// Hämta bordet
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Inaktivera radbrytning för alla rader i tabellen
-foreach(Row row in table.Rows)
-row.RowFormat.AllowBreakAcrossPages = false;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Här använder vi dokumentet för att hämta den första tabellen och itererar sedan igenom alla rader i tabellen med hjälp av en foreach loop. Inne i slingan inaktiverar vi radbrytning för varje rad genom att ställa in`RowFormat.AllowBreakAcrossPages`egendom till`false`.
+## Steg 1: Ladda dokumentet
 
-## Steg 4: Spara det ändrade dokumentet
-Slutligen måste vi spara det ändrade dokumentet med tabellradbrytningen inaktiverad. Använd följande kod:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
-```
-
-Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
-
-### Exempel på källkod för radformat Inaktivera Break Across Pages med Aspose.Words för .NET 
+Ladda dokumentet som innehåller tabellen som sträcker sig över flera sidor.
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
+```
+
+## Steg 2: Gå till tabellen
+
+Öppna den första tabellen i dokumentet. Detta förutsätter att tabellen du vill ändra är den första tabellen i dokumentet.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Steg 3: Inaktivera Breaking Across Pages för alla rader
+
+ Gå igenom varje rad i tabellen och ställ in`AllowBreakAcrossPages`egendom till`false`. Detta säkerställer att rader inte bryts över sidorna.
+
+```csharp
 // Inaktivera delning över sidor för alla rader i tabellen.
 foreach (Row row in table.Rows)
-	row.RowFormat.AllowBreakAcrossPages = false;
+    row.RowFormat.AllowBreakAcrossPages = false;
+```
+
+## Steg 4: Spara dokumentet
+
+Spara det ändrade dokumentet i din angivna katalog.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
 ## Slutsats
-den här handledningen lärde vi oss hur man inaktiverar radbrytning för en flersidig tabell i ett Word-dokument med Aspose.Words för .NET. Genom att följa denna steg-för-steg-guide och implementera den medföljande C#-koden kan du tillämpa denna inaktivering på dina tabeller i dina Word-dokument.
+
+I den här självstudien visade vi hur man inaktiverar radbrytningar över sidor i ett Word-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs ovan kan du säkerställa att dina tabellrader förblir intakta och inte delas på sidor, vilket bibehåller dokumentets läsbarhet och formatering.
+
+## FAQ's
+
+### Kan jag inaktivera radbrytningar över sidor för en specifik rad istället för alla rader?  
+ Ja, du kan inaktivera radbrytningar för specifika rader genom att komma åt önskad rad och ställa in dess`AllowBreakAcrossPages`egendom till`false`.
+
+### Fungerar den här metoden för tabeller med sammanslagna celler?  
+ Ja, den här metoden fungerar för tabeller med sammanslagna celler. Egendomen`AllowBreakAcrossPages` gäller för hela raden, oavsett cellsammanslagning.
+
+### Kommer den här metoden att fungera om tabellen är kapslad i en annan tabell?  
+Ja, du kan komma åt och ändra kapslade tabeller på samma sätt. Se till att du refererar den kapslade tabellen på rätt sätt genom dess index eller andra egenskaper.
+
+### Hur kan jag kontrollera om en rad tillåter brytning över sidor?  
+ Du kan kontrollera om en rad tillåter brytning över sidor genom att gå till`AllowBreakAcrossPages` egendom av`RowFormat` och kontrollera dess värde.
+
+### Finns det något sätt att tillämpa den här inställningen på alla tabeller i ett dokument?  
+Ja, du kan gå igenom alla tabeller i dokumentet och tillämpa den här inställningen på var och en.

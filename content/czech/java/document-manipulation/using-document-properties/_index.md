@@ -150,7 +150,7 @@ Vlastnosti dokumentu hrají významnou roli při efektivní správě a organizac
 
 ### Mohu do dokumentu přidat vlastní vlastnosti dokumentu?
 
- Ano, můžete do dokumentu přidat vlastní vlastnosti dokumentu pomocí`CustomDocumentProperties` sbírka. Uživatelské vlastnosti můžete definovat pomocí různých typů dat, včetně řetězců, booleovských hodnot, dat a číselných hodnot.
+ Ano, můžete do dokumentu přidat vlastní vlastnosti dokumentu pomocí`CustomDocumentProperties` sbírka. Uživatelské vlastnosti můžete definovat s různými datovými typy, včetně řetězců, booleovských hodnot, dat a číselných hodnot.
 
 ### Jak mohu odebrat konkrétní vlastnost vlastního dokumentu?
 

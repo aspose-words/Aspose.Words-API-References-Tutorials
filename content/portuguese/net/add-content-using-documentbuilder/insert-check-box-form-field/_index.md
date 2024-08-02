@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx"
 
 ## Conclusão
 
-Parabéns! Você inseriu com sucesso um campo de formulário de caixa de seleção em um documento do Word usando Aspose.Words for .NET. Com essas etapas, agora você pode criar documentos interativos que melhoram o envolvimento do usuário e a coleta de dados. O poder do Aspose.Words for .NET abre possibilidades infinitas para automação e personalização de documentos.
+Parabéns! Você inseriu com êxito um campo de formulário de caixa de seleção em um documento do Word usando Aspose.Words for .NET. Com essas etapas, agora você pode criar documentos interativos que melhoram o envolvimento do usuário e a coleta de dados. O poder do Aspose.Words for .NET abre possibilidades infinitas para automação e personalização de documentos.
 
 ## Perguntas frequentes
 

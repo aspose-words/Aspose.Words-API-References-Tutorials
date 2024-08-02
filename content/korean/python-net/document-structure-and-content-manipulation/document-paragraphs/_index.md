@@ -153,7 +153,7 @@ builder.insert_break(aw.BreakType.PAGE_BREAK)
 
 ## 문서 보호 및 보안
 
-Aspose.Words는 문서를 보호하고 보안을 보장하는 기능을 제공합니다.
+Aspose.Words는 문서를 보호하고 보안을 보장하는 기능을 제공합니다:
 
 ```python
 # Protect and secure the document

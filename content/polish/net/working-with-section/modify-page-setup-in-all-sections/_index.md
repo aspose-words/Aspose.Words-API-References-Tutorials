@@ -16,7 +16,7 @@ No hej! Jeśli kiedykolwiek musiałeś modyfikować ustawienia strony w wielu se
 Zanim zanurkujemy, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
 1. Podstawowa znajomość języka C#: Konieczna jest znajomość składni i pojęć języka C#.
-2.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/) . Jeśli dopiero próbujesz, a[bezpłatna wersja próbna](https://releases.aspose.com/) jest dostępny.
+2.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/) Jeśli dopiero próbujesz, a[bezpłatna wersja próbna](https://releases.aspose.com/) jest dostępny.
 3. Visual Studio: każda najnowsza wersja powinna działać, ale w celu zapewnienia najlepszego działania zalecana jest najnowsza wersja.
 4. .NET Framework: Upewnij się, że masz go zainstalowany w swoim systemie.
 
@@ -89,7 +89,7 @@ Ta linia kodu zapisuje dokument we wskazanym katalogu z wyraźną nazwą pliku w
 
 ## Wniosek
 
- masz to! Pomyślnie zmodyfikowałeś ustawienia strony dla wszystkich sekcji dokumentu programu Word przy użyciu Aspose.Words dla .NET. Ten samouczek przeprowadził Cię przez proces tworzenia dokumentu, dodawania sekcji i jednolitego dostosowywania ustawień stron. Aspose.Words oferuje bogaty zestaw funkcji, więc możesz swobodnie je eksplorować[Dokumentacja API](https://reference.aspose.com/words/net/) dla bardziej zaawansowanych możliwości.
+ I masz to! Pomyślnie zmodyfikowałeś ustawienia strony dla wszystkich sekcji dokumentu programu Word przy użyciu Aspose.Words dla .NET. Ten samouczek przeprowadził Cię przez proces tworzenia dokumentu, dodawania sekcji i jednolitego dostosowywania ustawień stron. Aspose.Words oferuje bogaty zestaw funkcji, więc możesz swobodnie je eksplorować[Dokumentacja API](https://reference.aspose.com/words/net/) dla bardziej zaawansowanych możliwości.
 
 ## Często zadawane pytania
 

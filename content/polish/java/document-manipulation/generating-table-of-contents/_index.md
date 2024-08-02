@@ -97,6 +97,6 @@ W tym samouczku omówiliśmy, jak wygenerować spis treści (TOC) przy użyciu A
 
 Aby uwzględnić więcej poziomów w spisie treści, możesz zmodyfikować pole spisu treści i określić żądaną liczbę poziomów.
 
-### Czy mogę zmienić położenie tabulatora dla określonych wpisów spisu treści?
+### Czy mogę zmienić pozycje tabulatorów dla określonych wpisów spisu treści?
 
 Tak, jak pokazano w powyższym przykładzie kodu, możesz zmieniać pozycje tabulatorów dla określonych wpisów spisu treści, iterując po akapitach i odpowiednio modyfikując tabulatory.

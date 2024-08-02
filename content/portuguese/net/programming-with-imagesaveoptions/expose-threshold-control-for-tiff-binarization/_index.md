@@ -16,7 +16,7 @@ Já se perguntou como controlar o limite de binarização TIFF em seus documento
 Antes de começarmos, certifique-se de ter o seguinte:
 
 1.  Aspose.Words for .NET: Você pode baixá-lo no[Página de lançamentos do Aspose](https://releases.aspose.com/words/net/) . Se você ainda não tem uma licença, você pode obter uma[licença temporária](https://purchase.aspose.com/temporary-license/).
-2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 3. Conhecimento básico de C#: Um pouco de familiaridade com C# será útil, mas não se preocupe se você for novo – nós detalharemos tudo.
 
 ## Importar namespaces

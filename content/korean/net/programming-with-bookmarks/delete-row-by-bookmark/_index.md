@@ -11,7 +11,7 @@ url: /ko/net/programming-with-bookmarks/delete-row-by-bookmark/
 
 Word 문서에서 북마크로 행을 삭제하는 것은 복잡해 보일 수 있지만 .NET용 Aspose.Words를 사용하면 매우 쉽습니다. 이 가이드는 이 작업을 효율적으로 수행하기 위해 알아야 할 모든 것을 안내합니다. 다이빙할 준비가 되셨나요? 시작하자!
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 다음 사항이 있는지 확인하세요.
 

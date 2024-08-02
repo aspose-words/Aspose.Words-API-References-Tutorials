@@ -106,7 +106,7 @@ Trong hướng dẫn này, chúng tôi đã khám phá quy trình nâng cao nộ
 
 ### Làm cách nào để thêm đường viền vào hộp văn bản?
 
- Bạn có thể thêm đường viền vào hộp văn bản bằng cách sử dụng`textbox.border` thuộc tính và tùy chỉnh diện mạo của nó.
+ Bạn có thể thêm đường viền vào hộp văn bản bằng cách sử dụng`textbox.border`thuộc tính và tùy chỉnh diện mạo của nó.
 
 ### Tôi có thể nhúng siêu liên kết vào hộp văn bản không?
 

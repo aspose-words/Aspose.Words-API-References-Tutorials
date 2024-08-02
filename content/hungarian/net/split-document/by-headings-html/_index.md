@@ -2,84 +2,97 @@
 title: A Word-dokumentum felosztása címsorok szerint HTML
 linktitle: Címsorok Html szerint
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre az Aspose.Words for .NET HTML-szolgáltatásának fejlécével a felosztott Word-dokumentum C# forráskódjának magyarázatához
+description: Ismerje meg, hogyan oszthat fel Word-dokumentumot fejlécekkel HTML-be az Aspose.Words for .NET használatával. Kövesse részletes, lépésenkénti útmutatónkat.
 type: docs
 weight: 10
 url: /hu/net/split-document/by-headings-html/
 ---
-Ebben az oktatóanyagban végigvezetjük, hogyan oszthat fel egy Word-dokumentumot kisebb részekre az Aspose.Words for .NET HTML-címsor alapján funkciójával. Kövesse az alábbi lépéseket a forráskód megértéséhez, és külön HTML dokumentumok létrehozásához a címsor alapján.
+## Bevezetés
 
-## 1. lépés: A dokumentum betöltése
+A Word-dokumentumok fejlécek szerinti felosztása megváltoztathatja a nagy dokumentumok kezelését vagy a szegmentált HTML-kimenetek létrehozását. Az Aspose.Words for .NET egyszerű módszert kínál ennek elérésére. Ebben az oktatóanyagban végigvezetjük a teljes folyamaton, biztosítva, hogy minden részletet megértsen az út során.
 
-A kezdéshez adja meg a dokumentum könyvtárát, és töltse be a dokumentumot egy dokumentum objektumba. Itt van, hogyan:
+## Előfeltételek
+
+Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+
+1. Aspose.Words for .NET: Ha még nem tette meg, töltse le innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Egy IDE, mint a Visual Studio.
+3. Alapvető C# ismerete: Az alapok megértése segít a könnyebb követésben.
+4. Mintadokumentum: Készítsen egy Word-dokumentumot, amelyet címsorok szerint szeretne felosztani.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket. Ez döntő fontosságú az Aspose.Words osztályok és metódusok eléréséhez.
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 2. lépés: A dokumentum felosztása címsor szerint HTML formátumban
+## 1. lépés: Állítsa be projektjét
 
-Most beállítjuk a mentési beállításokat, hogy a dokumentumot kisebb részekre oszthassuk a Címsor alapján HTML formátumban. Itt van, hogyan:
+A kezdéshez állítsa be projektjét a fejlesztői környezetben. Nyissa meg a Visual Studio-t, és hozzon létre egy új konzolalkalmazást.
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-// Ossza fel a dokumentumot kisebb részekre, ebben az esetben válassza el cím szerint.
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. Új projekt létrehozása: Nyissa meg a Visual Studio alkalmazást, válassza az "Új projekt létrehozása" lehetőséget, válassza a "Console App (.NET Core)" lehetőséget, majd kattintson a "Tovább" gombra.
+2. A projekt konfigurálása: Nevezze el a projektet, válassza ki a mentési helyet, majd kattintson a "Létrehozás" gombra.
+3.  Az Aspose.Words for .NET telepítése: A NuGet Package Manager segítségével telepítse az Aspose.Words könyvtárat. A NuGet Package Managerben keressen rá`Aspose.Words` és telepítse.
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## 2. lépés: Töltse be a dokumentumot
 
-### Példa forráskódra a By Headings HTML-hez az Aspose.Words for .NET használatával
+Ezután be kell töltenie a felosztani kívánt Word-dokumentumot. Győződjön meg arról, hogy a dokumentumot egy könnyen elérhető könyvtárba helyezte.
 
-Íme az Aspose.Words for .NET HTML címsor alapján funkciójának teljes forráskódja:
+1. Adja meg a könyvtár elérési útját: Hozzon létre egy változót a dokumentum könyvtárának elérési útjához.
+2.  A dokumentum betöltése: Használja a`Document` osztályba a Word-dokumentum betöltéséhez.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## 3. lépés: Konfigurálja a HTML mentési beállításokat
+
+Most állítsuk be a HTML mentési beállításokat úgy, hogy megadjuk, hogy a dokumentumot fejlécek szerint kell felosztani.
+
+1.  HtmlSaveOptions létrehozása: Példányosítsa a`HtmlSaveOptions` osztály.
+2.  Dokumentumfelosztási feltételek beállítása: Használja a`DocumentSplitCriteria` tulajdonság megadásához, hogy a dokumentumot fejlécbekezdések szerint kell felosztani.
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	// A dokumentum felosztása kisebb részekre, ebben az esetben fejléc szerint.
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    // A dokumentum felosztása kisebb részekre, ebben az esetben fejléc szerint.
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## 4. lépés: Mentse el a felosztott dokumentumot
 
+Végül mentse a dokumentumot a megadott HTML mentési beállításokkal. Ezzel egy HTML-fájlt generál, amely címsorokra van osztva.
+
+1.  A dokumentum mentése: Használja a`Save` módszere a`Document` osztályba, hogy elmentse a dokumentumot a megadott opciókkal.
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-Ezzel a kóddal egy Word-dokumentumot kisebb részekre bonthat az Aspose.Words for .NET használatával, címsorok alapján. Ezután minden részhez külön HTML dokumentumokat hozhat létre.
-
 ## Következtetés
 
- Ebben az oktatóanyagban megtanultuk, hogyan lehet egy Word-dokumentumot kisebb részekre osztani az Aspose.Words for .NET HTML-címsor alapján funkciójával. Megadva a`DocumentSplitCriteria` mint`HeadingParagraph` ban,-ben`HtmlSaveOptions`, külön HTML dokumentumokat tudtunk generálni az eredeti dokumentumban található fejlécek alapján.
+És megvan! Sikeresen felosztott egy Word-dokumentumot címsorok szerint, és HTML-ként mentette az Aspose.Words for .NET segítségével. Ez a módszer rendkívül hatékony nagyméretű dokumentumok rendszerezésére és szegmentált HTML-kimenetek létrehozására, így a tartalom kezelhetőbbé és hozzáférhetőbbé válik.
 
-A dokumentumok fejlécek szerinti felosztása hasznos lehet a tartalom rendszerezéséhez és kezeléséhez, különösen a több szakaszt tartalmazó nagy dokumentumok esetében. Az Aspose.Words for .NET megbízható és hatékony megoldást kínál a dokumentumok felosztására és különféle formátumú kimenetek előállítására.
+## GYIK
 
-Nyugodtan fedezze fel az Aspose.Words for .NET által biztosított további szolgáltatásokat és lehetőségeket, hogy tovább javítsa dokumentumfeldolgozási képességeit és egyszerűsítse a munkafolyamatot.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár a Word dokumentumokkal való munkavégzéshez .NET alkalmazásokban.
 
-### GYIK
+### Feloszthatok egy dokumentumot más kritériumok alapján?
+Igen, az Aspose.Words lehetővé teszi a dokumentumok felosztását különböző kritériumok szerint, például szakaszok, oldalak stb.
 
-#### Hogyan oszthatok fel egy Word-dokumentumot kisebb részekre fejlécek alapján az Aspose.Words for .NET használatával?
+### Az Aspose.Words ingyenes?
+ Az Aspose.Words ingyenes próbaverziót kínál, de a teljes funkciók használatához licencet kell vásárolnia. Ellenőrizze az övéket[oldal vásárlása](https://purchase.aspose.com/buy) további részletekért.
 
- A Word-dokumentumok címsorok alapján történő felosztásához használhatja az Aspose.Words for .NET HTML-címsor alapján funkcióját. Kövesse a megadott forráskódot, és állítsa be a`DocumentSplitCriteria` nak nek`HeadingParagraph` ban,-ben`HtmlSaveOptions` tárgy. Ezzel a dokumentumot minden fejlécnél kisebb részekre osztja.
+### Hol találom a dokumentációt?
+ Átfogó dokumentáció áll rendelkezésre[itt](https://reference.aspose.com/words/net/).
 
-#### Milyen formátumokra oszthatom fel a Word dokumentumot?
-
- A mellékelt forráskód bemutatja a Word dokumentum kisebb részekre bontását HTML formátumban. Az Aspose.Words for .NET azonban különféle kimeneti formátumokat támogat, beleértve a DOCX, PDF, EPUB stb. Módosíthatja a kódot, és megadhatja a kívánt kimeneti formátumot a`HtmlSaveOptions` ennek megfelelően tiltakozik.
-
-#### Választhatok-e más kritériumot a dokumentum felosztásához?
-
-Igen, az igényeinek megfelelően választhat más kritériumot a dokumentum felosztásához. Az Aspose.Words for .NET számos kritériumlehetőséget biztosít, mint pl`HeadingParagraph`, `Page`, `Section` , és több. Módosítsa a`DocumentSplitCriteria` ingatlan a`HtmlSaveOptions` objektumot, hogy kiválassza a megfelelő kritériumokat a felosztáshoz.
-
-#### Hogyan szabhatom testre a kimeneti HTML-t a felosztott részekhez?
-
- Az Aspose.Words for .NET lehetővé teszi a kimeneti HTML testreszabását a felosztott részek számára a további beállítások megadásával`HtmlSaveOptions` tárgy. Különféle szempontokat szabályozhat, például CSS-stílusokat, képeket, betűtípusokat és egyebeket. A HTML-kimenet testreszabásával kapcsolatos további részletekért tekintse meg az Aspose.Words dokumentációt.
-
-#### Feloszthatom a dokumentumot több feltétel alapján?
-
- Igen, a dokumentumot több feltétel alapján is feloszthatja, ha a feltételeket ennek megfelelően kombinálja. Például feloszthatja a dokumentumot fejléc és oldal szerint is, ha beállítja a`DocumentSplitCriteria`tulajdonát`HeadingParagraph | Page`. Ez felosztja a dokumentumot az egyes fejléceknél és oldalakon, és mindkét kritérium alapján kisebb részeket hoz létre.
+### Hogyan kaphatok támogatást?
+ Támogatásért látogasson el az Aspose.Words oldalra[fórum](https://forum.aspose.com/c/words/8).

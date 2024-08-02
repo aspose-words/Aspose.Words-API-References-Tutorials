@@ -11,7 +11,7 @@ url: /ko/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 
 환영! .NET용 Aspose.Words의 세계에 뛰어들고 계시다면 정말 좋은 경험이 될 것입니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서를 HTML로 저장할 때 CSS 클래스 이름 접두사를 추가하는 방법을 살펴보겠습니다. 이 기능은 HTML 파일에서 클래스 이름 충돌을 피하고 싶을 때 매우 편리합니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 

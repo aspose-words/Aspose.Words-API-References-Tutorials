@@ -12,6 +12,6 @@ Metin Kutularıyla Kelime İşleme, .NET için Aspose.Words kütüphanesini kull
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Word'de Bağlantı Oluştur](./create-a-link/) | Aspose.Words for .NET ile bir Word belgesindeki TextBox'lar arasında word'de bağlantı oluşturmayı öğrenin. |
-| [Sırayı Kontrol Et](./check-sequence/) | Aspose.Words for .NET ile bir Word belgesindeki TextBox'ların sırasını nasıl kontrol edeceğinizi öğrenin. |
-| [Word Belgesinde İleri Bağlantıyı Kes](./break-a-link/) | Aspose.Words for .NET ile bir Word belgesindeki ileri bağlantıları nasıl keseceğinizi öğrenin. |
+| [Word'de Metin Kutularını Bağlama](./create-a-link/) | Aspose.Words for .NET kullanarak Word belgelerinde metin kutularını nasıl oluşturup bağlayacağınızı öğrenin. Kusursuz belge özelleştirmesi için kapsamlı kılavuzumuzu takip edin! |
+| [Word'de TextBox Sıra Kontrolü](./check-sequence/) | Aspose.Words for .NET kullanarak Word belgelerindeki metin kutularının sırasını nasıl kontrol edeceğinizi keşfedin. Belge akışında uzmanlaşmak için ayrıntılı kılavuzumuzu takip edin! |
+| [Word Belgesinde İleri Bağlantıyı Kes](./break-a-link/) | Aspose.Words for .NET kullanarak Word belgesi metin kutularındaki ileri bağlantıları nasıl keseceğinizi öğrenin. Daha sorunsuz bir belge yönetimi deneyimi için kılavuzumuzu takip edin. |

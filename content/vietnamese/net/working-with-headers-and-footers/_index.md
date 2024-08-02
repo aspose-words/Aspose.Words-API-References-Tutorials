@@ -14,5 +14,5 @@ Xử lý văn bản với đầu trang và chân trang là tài nguyên toàn di
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Tạo đầu trang chân trang](./create-header-footer/) | Tìm hiểu cách tạo đầu trang và chân trang trong tài liệu Word của bạn bằng Aspose.Words for .NET. Tùy chỉnh đầu trang và chân trang cho mỗi trang. |
-| [Sao chép đầu trang chân trang từ phần trước](./copy-headers-footers-from-previous-section/) | Tìm hiểu cách sao chép đầu trang và chân trang từ phần trước trong tài liệu Word bằng Aspose.Words for .NET. |
+| [Tạo đầu trang chân trang](./create-header-footer/) | Tìm hiểu cách tạo đầu trang và chân trang trong tài liệu Word của bạn bằng Aspose.Words cho .NET. Tùy chỉnh đầu trang và chân trang cho mỗi trang. |
+| [Sao chép đầu trang chân trang từ phần trước](./copy-headers-footers-from-previous-section/) | Tìm hiểu cách sao chép đầu trang và chân trang từ phần trước trong tài liệu Word bằng Aspose.Words cho .NET. |

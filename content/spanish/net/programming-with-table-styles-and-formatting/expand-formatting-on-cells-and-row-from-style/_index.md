@@ -2,82 +2,111 @@
 title: Expandir formato en celdas y filas desde estilo
 linktitle: Expandir formato en celdas y filas desde estilo
 second_title: API de procesamiento de documentos Aspose.Words
-description: Guía paso a paso para expandir el formato a celdas y filas desde un estilo de tabla usando Aspose.Words para .NET.
+description: Aprenda a ampliar el formato de celdas y filas a partir de estilos en documentos de Word utilizando Aspose.Words para .NET. Guía paso a paso incluida.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
 ---
+## Introducción
 
-En este tutorial, lo guiaremos paso a paso para expandir el formato a celdas y filas desde un estilo usando Aspose.Words para .NET. Explicaremos el código fuente de C# incluido y le proporcionaremos una guía completa para ayudarle a comprender e implementar esta característica en sus propios proyectos. Al final de este tutorial, sabrá cómo aplicar formato de estilo de tabla a celdas y filas específicas en sus documentos de Word usando Aspose.Words para .NET.
+¿Alguna vez ha necesitado aplicar estilos consistentes en las tablas de sus documentos de Word? Ajustar manualmente cada celda puede resultar tedioso y propenso a errores. Ahí es donde Aspose.Words para .NET resulta útil. Este tutorial lo guiará a través del proceso de expandir el formato en celdas y filas desde un estilo de tabla, asegurando que sus documentos luzcan pulidos y profesionales sin complicaciones adicionales.
 
+## Requisitos previos
 
-## Paso 1: definir el directorio de documentos
-Primero, debe establecer la ruta a su directorio de documentos. Aquí es donde se encuentra su documento de Word. Reemplace "SU DIRECTORIO DE DOCUMENTOS" con la ruta adecuada.
+Antes de entrar en los detalles esenciales, asegúrese de tener lo siguiente en su lugar:
+
+-  Aspose.Words para .NET: puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
+- Visual Studio: cualquier versión reciente funcionará.
+- Conocimientos básicos de C#: la familiaridad con la programación en C# es esencial.
+- Documento de muestra: tenga listo un documento de Word con una tabla, o puede usar el que se proporciona en el ejemplo de código.
+
+## Importar espacios de nombres
+
+Primero lo primero, importemos los espacios de nombres necesarios. Esto garantizará que todas las clases y métodos necesarios estén disponibles para su uso en nuestro código.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Paso 2: cargar el documento existente
- A continuación, debe cargar el documento de Word existente en una instancia del`Document` clase.
+Ahora, dividamos el proceso en pasos simples y fáciles de seguir.
+
+## Paso 1: cargue su documento
+
+En este paso, cargaremos el documento de Word que contiene la tabla que desea formatear. 
 
 ```csharp
+// Ruta a su directorio de documentos
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Paso 3: ve a la primera celda de la primera tabla
- Para comenzar, debemos navegar hasta la primera celda de la primera tabla del documento. Usamos el`GetChild()`y`FirstRow.FirstCell` métodos para obtener la referencia a la primera celda.
+## Paso 2: accede a la mesa
+
+continuación, debemos acceder a la primera tabla del documento. Esta tabla será el foco de nuestras operaciones de formateo.
 
 ```csharp
-Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
+// Obtenga la primera tabla del documento.
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Paso 3: recuperar la primera celda
+
+Ahora, recuperemos la primera celda de la primera fila de la tabla. Esto nos ayudará a demostrar cómo cambia el formato de la celda cuando se expanden los estilos.
+
+```csharp
+// Obtenga la primera celda de la primera fila de la tabla.
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-## Paso 4: mostrar el formato de celda inicial
-Antes de expandir los estilos de la tabla, mostramos el color de fondo actual de la celda. Debería estar vacío porque el formato actual se almacena en el estilo de la tabla.
+## Paso 4: Verifique el sombreado de celda inicial
+
+Antes de aplicar cualquier formato, verifiquemos e imprimamos el color de sombreado inicial de la celda. Esto nos dará una línea de base con la que comparar después de la expansión del estilo.
 
 ```csharp
+// Imprima el color de sombreado de celda inicial.
 Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
-Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
+Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 ```
 
-## Paso 5: ampliar los estilos de tabla al formato directo
- Ahora expandimos los estilos de tabla para formato directo usando el formato del documento.`ExpandTableStylesToDirectFormatting()` método.
+## Paso 5: expandir los estilos de tabla
+
+ Aquí es donde ocurre la magia. llamaremos al`ExpandTableStylesToDirectFormatting` Método para aplicar los estilos de tabla directamente a las celdas.
 
 ```csharp
+// Expanda los estilos de tabla para formato directo.
 doc.ExpandTableStylesToDirectFormatting();
 ```
 
-## Paso 6: mostrar el formato de celda después de la expansión del estilo
-Ahora mostramos el color de fondo de la celda después de expandir los estilos de la tabla. Se debe aplicar un color de fondo azul desde el estilo de la tabla.
+## Paso 6: Verifique el sombreado final de las celdas
+
+Finalmente, verificaremos e imprimiremos el color de sombreado de la celda después de expandir los estilos. Debería ver el formato actualizado aplicado desde el estilo de la tabla.
 
 ```csharp
+// Imprima el color de sombreado de la celda después de la expansión del estilo.
 Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
-Console.WriteLine("
-
-Shading the cell after style expansion: " + cellShadingAfter);
-```
-
-### Código fuente de muestra para expandir el formato en celdas y filas desde el estilo usando Aspose.Words para .NET 
-
-```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	// Obtenga la primera celda de la primera tabla del documento.
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Cell firstCell = table.FirstRow.FirstCell;
-	// Primero imprima el color del sombreado de la celda.
-	// Debe estar vacío ya que el sombreado actual se almacena en el estilo de la tabla.
-	Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
-	Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
-	doc.ExpandTableStylesToDirectFormatting();
-	// Ahora imprima el sombreado de celda después de expandir los estilos de tabla.
-	// Se debería haber aplicado un color de patrón de fondo azul desde el estilo de tabla.
-	Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
-	Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
+Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo expandir el formato a celdas y filas desde un estilo de tabla usando Aspose.Words para .NET. Si sigue esta guía paso a paso, puede aplicar fácilmente formato de estilo de tabla a celdas y filas específicas en sus documentos de Word. Aspose.Words ofrece una API potente y flexible para manipular y formatear tablas en sus documentos. Con este conocimiento, podrá personalizar aún más el diseño y la presentación de sus documentos de Word.
+
+¡Y ahí lo tienes! Si sigue estos pasos, puede ampliar fácilmente el formato de celdas y filas de estilos en sus documentos de Word utilizando Aspose.Words para .NET. Esto no sólo ahorra tiempo sino que también garantiza la coherencia en todos sus documentos. ¡Feliz codificación!
+
+## Preguntas frecuentes
+
+### ¿Qué es Aspose.Words para .NET?
+Aspose.Words para .NET es una potente API que permite a los desarrolladores crear, editar, convertir y manipular documentos de Word mediante programación.
+
+### ¿Por qué necesitaría ampliar el formato desde los estilos?
+Expandir el formato desde los estilos garantiza que el estilo se aplique directamente a las celdas, lo que facilita el mantenimiento y la actualización del documento.
+
+### ¿Puedo aplicar estos pasos a varias tablas en un documento?
+¡Absolutamente! Puede recorrer todas las tablas de su documento y aplicar los mismos pasos a cada una.
+
+### ¿Hay alguna manera de revertir los estilos ampliados?
+Una vez que se expanden los estilos, se aplican directamente a las celdas. Para revertir, deberá volver a cargar el documento o volver a aplicar los estilos manualmente.
+
+### ¿Este método funciona con todas las versiones de Aspose.Words para .NET?
+ Sí el`ExpandTableStylesToDirectFormatting` El método está disponible en versiones recientes de Aspose.Words para .NET. Siempre revisa el[documentación](https://reference.aspose.com/words/net/) para las últimas actualizaciones.

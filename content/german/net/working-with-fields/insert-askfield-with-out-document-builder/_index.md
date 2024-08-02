@@ -2,55 +2,37 @@
 title: ASKField ohne Document Builder einfügen
 linktitle: ASKField ohne Document Builder einfügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein ASK-Feld in Ihre Word-Dokumente einfügen.
+description: Erfahren Sie, wie Sie ein ASK-Feld einfügen, ohne Document Builder in Aspose.Words für .NET zu verwenden. Folgen Sie dieser Anleitung, um Ihre Word-Dokumente dynamisch zu verbessern.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## Einführung
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes unten, der die Funktion „Ein ASK-Feld ohne DocumentBuilder einfügen“ von Aspose.Words für .NET verwendet. Befolgen Sie jeden Schritt sorgfältig, um die gewünschten Ergebnisse zu erzielen.
+Möchten Sie die Dokumentenautomatisierung mit Aspose.Words für .NET meistern? Dann sind Sie hier genau richtig! Heute zeigen wir Ihnen, wie Sie ein ASK-Feld einfügen, ohne einen Dokument-Builder zu verwenden. Dies ist eine praktische Funktion, wenn Sie möchten, dass Ihr Dokument Benutzer zu bestimmten Eingaben auffordert, wodurch Ihre Word-Dokumente interaktiver und dynamischer werden. Lassen Sie uns also loslegen und Ihre Dokumente intelligenter machen!
 
-## Schritt 1: Einrichten des Dokumentverzeichnisses
+## Voraussetzungen
 
-Im angegebenen Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
+Bevor wir uns mit dem Code beschäftigen, stellen wir sicher, dass wir alles eingerichtet haben:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese Bibliothek installiert haben. Wenn nicht, können Sie sie hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Eine geeignete IDE wie Visual Studio.
+3. .NET Framework: Stellen Sie sicher, dass Sie .NET Framework installiert haben.
 
-## Schritt 2: Erstellen des Dokuments und des Absatzes
+Großartig! Jetzt, da alles bereit ist, beginnen wir mit dem Importieren der erforderlichen Namespaces.
 
-Wir beginnen mit der Erstellung eines neuen Dokuments und dem Abrufen des ersten Absatzes.
+## Namespaces importieren
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## Schritt 3: Einfügen des ASK-Feldes
-
- Wir benutzen das`AppendField()` Methode, um ein ASK-Feld in den Absatz einzufügen.
+Als Erstes müssen wir den Aspose.Words-Namespace importieren, um auf alle Funktionen von Aspose.Words für .NET zugreifen zu können. So geht's:
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Anschließend konfigurieren wir die verschiedenen Eigenschaften des ASK-Feldes, indem wir die gewünschten Werte angeben.
+## Schritt 1: Neues Dokument erstellen
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
- Schließlich nennen wir die`Update()` Methode zum Aktualisieren des Felds.
-
-```csharp
-field. Update();
-```
-
-### Beispiel des Quellcodes zum Einfügen eines ASK-Feldes ohne DocumentBuilder mit Aspose.Words für .NET
+Bevor wir ein ASK-Feld einfügen können, benötigen wir ein Dokument, mit dem wir arbeiten können. So erstellen Sie ein neues Dokument:
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Dokumenterstellung.
 Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
+Dieser Codeausschnitt richtet ein neues Word-Dokument ein, in das wir unser ASK-Feld einfügen.
+
+## Schritt 2: Zugriff auf den Absatzknoten
+
+In einem Word-Dokument ist der Inhalt in Knoten organisiert. Wir müssen auf den ersten Absatzknoten zugreifen, in den wir unser ASK-Feld einfügen:
+
+```csharp
+Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
+
+Diese Codezeile ruft den ersten Absatz im Dokument ab und ist bereit für die Einfügung unseres ASK-Felds.
+
+## Schritt 3: Einfügen des ASK-Feldes
+
+Kommen wir nun zum Hauptvorgang – dem Einfügen des ASK-Felds. Dieses Feld fordert den Benutzer beim Öffnen des Dokuments zur Eingabe auf.
+
+```csharp
 // Fügen Sie das ASK-Feld ein.
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+Hier fügen wir dem Absatz ein ASK-Feld hinzu. Einfach, oder?
 
-field. Update();
+## Schritt 4: Konfigurieren Sie das ASK-Feld
 
+Wir müssen einige Eigenschaften festlegen, um das Verhalten des ASK-Felds zu definieren. Lassen Sie uns den Lesezeichennamen, den Eingabeaufforderungstext, die Standardantwort und das Serienbriefverhalten konfigurieren:
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName: Eine eindeutige Kennung für das ASK-Feld.
+- PromptText: Der Text, der den Benutzer zur Eingabe auffordert.
+- DefaultResponse: Die vorausgefüllte Antwort, die der Benutzer ändern kann.
+- PromptOnceOnMailMerge: Legt fest, ob die Eingabeaufforderung während eines Serienbriefvorgangs nur einmal angezeigt wird.
+
+## Schritt 5: Aktualisieren Sie das Feld
+
+Nachdem wir das ASK-Feld konfiguriert haben, müssen wir es aktualisieren, um sicherzustellen, dass alle Einstellungen korrekt angewendet werden:
+
+```csharp
+field.Update();
+```
+
+Dieser Befehl stellt sicher, dass unser ASK-Feld bereit und im Dokument richtig eingerichtet ist.
+
+## Schritt 6: Speichern Sie das Dokument
+
+Speichern wir das Dokument abschließend in unserem angegebenen Verzeichnis:
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-In diesem Beispiel haben wir ein neues Dokument erstellt, ein ASK-Feld ohne Verwendung von DocumentBuilder eingefügt, die verschiedenen Eigenschaften des Felds konfiguriert und das Dokument unter einem angegebenen Dateinamen gespeichert.
+Diese Zeile speichert das Dokument mit dem eingefügten ASK-Feld. Und schon ist Ihr Dokument mit einem dynamischen ASK-Feld ausgestattet!
 
-Damit ist unsere Anleitung zur Verwendung der Funktion „ASK-Feld ohne DocumentBuilder einfügen“ mit Aspose.Words für .NET abgeschlossen.
+## Abschluss
 
-### Häufig gestellte Fragen
+Herzlichen Glückwunsch! Sie haben gerade mit Aspose.Words für .NET ohne den Document Builder ein ASK-Feld zu einem Word-Dokument hinzugefügt. Diese Funktion kann die Benutzerinteraktion mit Ihren Dokumenten erheblich verbessern und sie flexibler und benutzerfreundlicher machen. Experimentieren Sie weiter mit verschiedenen Feldern und Eigenschaften, um das volle Potenzial von Aspose.Words auszuschöpfen. Viel Spaß beim Programmieren!
 
-#### F: Was ist ein ASK-Feld in Aspose.Words?
+## Häufig gestellte Fragen
 
-A: Ein ASK-Feld in Aspose.Words wird verwendet, um dem Benutzer beim Öffnen eines Dokuments eine Frage zu stellen. Es wird häufig verwendet, um bestimmte Informationen oder Feedback anzufordern, die von Benutzer zu Benutzer unterschiedlich sein können.
+### Was ist ein ASK-Feld in Aspose.Words?
+Ein ASK-Feld in Aspose.Words ist ein Feld, das den Benutzer beim Öffnen des Dokuments zur Eingabe bestimmter Eingaben auffordert und so eine dynamische Dateneingabe ermöglicht.
 
-#### F: Wie füge ich ein ASK-Feld in ein Word-Dokument ein, ohne den Document Builder in Aspose.Words zu verwenden?
+### Kann ich mehrere ASK-Felder in einem einzigen Dokument verwenden?
+Ja, Sie können mehrere ASK-Felder in ein Dokument einfügen, jedes mit einzigartigen Eingabeaufforderungen und Antworten.
 
-A: Um ein ASK-Feld in ein Word-Dokument einzufügen, ohne den Document Builder in Aspose.Words zu verwenden, können Sie diese Schritte befolgen:
+###  Was ist der Zweck der`PromptOnceOnMailMerge` property?
+ Der`PromptOnceOnMailMerge` Die Eigenschaft legt fest, ob die ASK-Eingabeaufforderung während eines Seriendruckvorgangs nur einmal oder jedes Mal angezeigt wird.
 
-1. Importieren Sie die Dokument- und Feldklasse aus dem Aspose.Words.Fields-Namespace.
-2. Erstellen Sie eine Instanz von Document, indem Sie Ihr vorhandenes Dokument laden.
-3. Verwenden Sie die Methode InsertField, um ein ASK-Feld einzufügen, indem Sie den Fragennamen angeben.
-4. Speichern Sie das Dokument.
+### Muss ich das ASK-Feld aktualisieren, nachdem ich seine Eigenschaften festgelegt habe?
+Ja, durch die Aktualisierung des ASK-Felds wird sichergestellt, dass alle Eigenschaften korrekt angewendet werden und das Feld wie erwartet funktioniert.
 
-#### F: Wie erhalte ich die Benutzerantwort für ein ASK-Feld in einem Word-Dokument?
-
-A: Um die Benutzerantwort für ein ASK-Feld in einem Word-Dokument abzurufen, können Sie die in der Document-Klasse verfügbare Methode GetFieldNames verwenden. Diese Methode gibt eine Liste mit den Namen der im Dokument vorhandenen Felder zurück. Sie können dann prüfen, ob der ASK-Feldname in der Liste vorhanden ist, und die zugehörige Antwort abrufen.
-
-#### F: Kann das ASK-Feld verwendet werden, um weitere Informationen vom Benutzer anzufordern?
-
-A: Ja, das ASK-Feld kann verwendet werden, um mehrere Informationen vom Benutzer abzufragen. Sie können mehrere ASK-Felder in Ihr Dokument einfügen, jedes mit einer anderen Frage. Beim Öffnen des Dokuments wird der Benutzer zur Eingabe der entsprechenden Antworten aufgefordert.
+### Kann ich den Eingabeaufforderungstext und die Standardantwort anpassen?
+Auf jeden Fall! Sie können benutzerdefinierte Eingabeaufforderungstexte und Standardantworten festlegen, um das ASK-Feld an Ihre spezifischen Anforderungen anzupassen.

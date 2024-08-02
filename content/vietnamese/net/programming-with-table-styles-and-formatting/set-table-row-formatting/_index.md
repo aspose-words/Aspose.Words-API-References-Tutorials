@@ -2,97 +2,111 @@
 title: Đặt định dạng hàng bảng
 linktitle: Đặt định dạng hàng bảng
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để thiết lập định dạng hàng trong bảng bằng Aspose.Words for .NET.
+description: Tìm hiểu cách đặt định dạng hàng của bảng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn của chúng tôi. Hoàn hảo để tạo các tài liệu có định dạng tốt và chuyên nghiệp.
 type: docs
 weight: 10
 url: /vi/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để đặt định dạng hàng trong bảng bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Ở cuối hướng dẫn này, bạn sẽ biết cách điều chỉnh chiều cao và khoảng đệm của một hàng trong bảng trong tài liệu Word bằng Aspose.Words cho .NET.
+Nếu bạn đang muốn nắm vững nghệ thuật định dạng bảng trong tài liệu Word bằng Aspose.Words cho .NET thì bạn đã đến đúng nơi. Hướng dẫn này sẽ hướng dẫn bạn quy trình thiết lập định dạng hàng trong bảng, đảm bảo tài liệu của bạn không chỉ có chức năng mà còn có tính thẩm mỹ. Vì vậy, hãy cùng đi sâu vào và biến những bảng đơn giản đó thành những bảng có định dạng tốt!
 
-## Bước 1: Xác định thư mục tài liệu
-Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là vị trí bạn muốn lưu tài liệu Word đã chỉnh sửa của mình. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.
+## Điều kiện tiên quyết
+
+Trước khi chúng ta bắt đầu hướng dẫn, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
+
+1.  Aspose.Words for .NET - Nếu bạn chưa có, hãy tải xuống và cài đặt nó từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển - Bất kỳ IDE nào như Visual Studio hỗ trợ .NET.
+3. Kiến thức cơ bản về C# - Hiểu các khái niệm cơ bản về C# sẽ giúp bạn theo dõi trôi chảy.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết. Điều này rất quan trọng vì nó đảm bảo bạn có quyền truy cập vào tất cả các chức năng do Aspose.Words cung cấp cho .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Tạo tài liệu mới và trình tạo tài liệu
- Tiếp theo, bạn cần tạo một phiên bản mới của`Document` lớp và một hàm tạo tài liệu cho tài liệu đó.
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ hiểu. Mỗi bước sẽ bao gồm một phần cụ thể của quá trình định dạng bảng.
+
+## Bước 1: Tạo một tài liệu mới
+
+Bước đầu tiên là tạo một tài liệu Word mới. Điều này sẽ phục vụ như canvas cho bảng của bạn.
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 3: Bắt đầu một bảng mới và thêm một ô
-Để bắt đầu tạo bảng, chúng ta sử dụng`StartTable()` của hàm tạo tài liệu, sau đó chúng ta thêm một ô vào bảng bằng cách sử dụng`InsertCell()` phương pháp.
+## Bước 2: Bắt đầu một bảng
+
+ Tiếp theo, bạn sẽ bắt đầu tạo bảng. Các`DocumentBuilder` lớp cung cấp một cách đơn giản để chèn và định dạng bảng.
 
 ```csharp
-Table table = builder. StartTable();
-builder. InsertCell();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## Bước 4: Xác định định dạng dòng
- Bây giờ chúng ta có thể thiết lập định dạng hàng bằng cách truy cập vào`RowFormat` đối tượng của`DocumentBuilder` sự vật. Chúng ta có thể đặt chiều cao của dòng và lề (phần đệm) bằng các thuộc tính tương ứng.
+## Bước 3: Đặt định dạng hàng
+
+Bây giờ đến phần thú vị - thiết lập định dạng hàng. Bạn sẽ điều chỉnh độ cao của hàng và chỉ định quy tắc về chiều cao.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## Bước 5: Đặt lề bảng
- Tiếp theo, chúng ta có thể đặt phần đệm của bảng bằng cách truy cập các thuộc tính tương ứng của`Table` sự vật. Các lề này sẽ được áp dụng cho tất cả các hàng của bảng.
+## Bước 4: Áp dụng phần đệm vào bảng
+
+Phần đệm thêm khoảng trống xung quanh nội dung trong ô, giúp văn bản dễ đọc hơn. Bạn sẽ đặt khoảng đệm cho tất cả các cạnh của bàn.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## Bước 6: Thêm nội dung vào hàng
- Cuối cùng, chúng ta có thể thêm nội dung vào dòng bằng cách sử dụng trình tạo tài liệu`Writeln()` phương pháp.
+## Bước 5: Thêm nội dung vào hàng
+
+Với định dạng đã có, đã đến lúc thêm một số nội dung vào hàng. Đây có thể là bất kỳ văn bản hoặc dữ liệu nào bạn muốn đưa vào.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.Writeln("I'm a wonderfully formatted row.");
+builder.EndRow();
 ```
 
-## Bước 7: Hoàn thiện bảng và lưu tài liệu
-TRONG
+## Bước 6: Hoàn thiện bảng
 
- kết thúc, chúng ta hoàn thành việc tạo bảng bằng cách sử dụng`EndRow()`Và`EndTable()` phương thức, sau đó chúng tôi lưu tài liệu đã sửa đổi vào một tệp.
+Để kết thúc quá trình tạo bảng, bạn cần kết thúc bảng và lưu tài liệu.
 
 ```csharp
-builder. EndRow();
-builder. EndTable();
+builder.EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-### Mã nguồn mẫu cho Đặt định dạng hàng bảng bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Các thuộc tính định dạng này được đặt trên bảng và được áp dụng cho tất cả các hàng trong bảng.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
-```
-
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách thiết lập định dạng hàng trong bảng bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này, bạn có thể dễ dàng điều chỉnh chiều cao và lề của hàng trong bảng trong tài liệu Word của mình. Aspose.Words cung cấp API mạnh mẽ và linh hoạt để thao tác và định dạng bảng trong tài liệu của bạn. Với kiến thức này, bạn có thể tùy chỉnh bố cục trực quan của bảng theo nhu cầu cụ thể của mình.
+
+Và bạn có nó rồi đấy! Bạn đã tạo thành công bảng được định dạng trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này có thể được mở rộng và tùy chỉnh để phù hợp với các yêu cầu phức tạp hơn, nhưng các bước cơ bản này cung cấp nền tảng vững chắc. Thử nghiệm với các tùy chọn định dạng khác nhau và xem chúng cải thiện tài liệu của bạn như thế nào.
+
+## Câu hỏi thường gặp
+
+### Tôi có thể đặt định dạng khác nhau cho mỗi hàng trong bảng không?
+ Có, bạn có thể đặt định dạng riêng cho từng hàng bằng cách áp dụng các định dạng khác nhau`RowFormat` thuộc tính cho mỗi hàng bạn tạo.
+
+### Có thể thêm các phần tử khác, như hình ảnh, vào các ô của bảng không?
+ Tuyệt đối! Bạn có thể chèn hình ảnh, hình dạng và các phần tử khác vào ô bảng bằng cách sử dụng`DocumentBuilder` lớp học.
+
+### Làm cách nào để thay đổi căn chỉnh văn bản trong các ô của bảng?
+ Bạn có thể thay đổi căn chỉnh văn bản bằng cách đặt`ParagraphFormat.Alignment` tài sản của`DocumentBuilder` sự vật.
+
+### Tôi có thể hợp nhất các ô trong bảng bằng Aspose.Words cho .NET không?
+ Có, bạn có thể hợp nhất các ô bằng cách sử dụng`CellFormat.HorizontalMerge`Và`CellFormat.VerticalMerge` của cải.
+
+### Có cách nào để tạo kiểu cho bảng với các kiểu được xác định trước không?
+ Có, Aspose.Words for .NET cho phép bạn áp dụng các kiểu bảng được xác định trước bằng cách sử dụng`Table.Style` tài sản.

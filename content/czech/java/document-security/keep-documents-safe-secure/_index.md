@@ -22,7 +22,7 @@ Než se ponoříme do technických aspektů, pojďme pochopit základní koncept
 
 - #### Ochrana heslem:
  Omezte přístup ke svým dokumentům heslem, aby je mohli otevřít a prohlížet pouze oprávnění uživatelé.
-- #### Šifrování:
+- #### šifrování:
  Převeďte obsah dokumentu do kódovaného formátu pomocí šifrovacích algoritmů, díky čemuž je bez správného dešifrovacího klíče nerozluštitelný.
 - #### Digitální podpisy:
  Připojte digitální podpisy k ověření pravosti a integrity dokumentu.

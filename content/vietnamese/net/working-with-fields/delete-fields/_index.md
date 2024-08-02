@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fields/delete-fields/
 ---
-
 ## Giới thiệu
 
 Trong lĩnh vực xử lý tài liệu và tự động hóa, Aspose.Words for .NET nổi bật như một bộ công cụ mạnh mẽ dành cho các nhà phát triển muốn thao tác, tạo và quản lý tài liệu Word theo chương trình. Hướng dẫn này nhằm mục đích hướng dẫn bạn quy trình sử dụng Aspose.Words cho .NET để xóa các trường trong tài liệu Word. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu phát triển .NET, hướng dẫn này sẽ chia nhỏ các bước cần thiết để xóa các trường khỏi tài liệu của bạn một cách hiệu quả bằng cách sử dụng các ví dụ và giải thích rõ ràng, ngắn gọn.
@@ -44,13 +43,13 @@ Bây giờ, hãy tiến hành quy trình từng bước để xóa các trườn
 ## Bước 2: Thêm tài liệu tham khảo Aspose.Words
 
 Nếu bạn chưa có, hãy thêm tham chiếu đến Aspose.Words trong dự án Visual Studio của bạn. Bạn có thể làm điều này bằng cách:
-   - Nhấp chuột phải vào dự án của bạn trong Solution Explorer.
-   - Chọn "Quản lý gói NuGet ..."
-   - Tìm kiếm "Aspose.Words" và cài đặt nó vào dự án của bạn.
+- Nhấp chuột phải vào dự án của bạn trong Solution Explorer.
+- Chọn "Quản lý gói NuGet ..."
+- Tìm kiếm "Aspose.Words" và cài đặt nó vào dự án của bạn.
 
 ## Bước 3: Chuẩn bị tài liệu của bạn
 
- Đặt tài liệu bạn muốn sửa đổi (ví dụ:`your-document.docx`) trong thư mục dự án của bạn hoặc cung cấp đường dẫn đầy đủ đến nó.
+ Đặt tài liệu bạn muốn sửa đổi (ví dụ:`your-document.docx`trong thư mục dự án của bạn hoặc cung cấp đường dẫn đầy đủ đến nó.
 
 ## Bước 4: Khởi tạo đối tượng tài liệu Aspose.Words
 
@@ -89,16 +88,16 @@ Tóm lại, hướng dẫn này đã cung cấp hướng dẫn toàn diện về
 ## Câu hỏi thường gặp
 
 ### Tôi có thể xóa các loại trường cụ thể thay vì tất cả các trường không?
-   - Có, bạn có thể sửa đổi điều kiện vòng lặp để kiểm tra các loại trường cụ thể trước khi xóa chúng.
+Có, bạn có thể sửa đổi điều kiện vòng lặp để kiểm tra các loại trường cụ thể trước khi xóa chúng.
 
 ### Aspose.Words có tương thích với .NET Core không?
-   - Có, Aspose.Words hỗ trợ .NET Core, cho phép bạn sử dụng nó trong các ứng dụng đa nền tảng.
+Có, Aspose.Words hỗ trợ .NET Core, cho phép bạn sử dụng nó trong các ứng dụng đa nền tảng.
 
 ### Làm cách nào để xử lý lỗi khi xử lý tài liệu bằng Aspose.Words?
-   - Bạn có thể sử dụng khối try-catch để xử lý các trường hợp ngoại lệ có thể xảy ra trong quá trình xử lý tài liệu.
+Bạn có thể sử dụng khối try-catch để xử lý các trường hợp ngoại lệ có thể xảy ra trong quá trình xử lý tài liệu.
 
 ### Tôi có thể xóa các trường mà không thay đổi nội dung khác trong tài liệu không?
-   - Có, phương pháp hiển thị ở đây chỉ nhắm mục tiêu cụ thể vào các trường và không thay đổi nội dung khác.
+Có, phương pháp hiển thị ở đây chỉ nhắm mục tiêu cụ thể vào các trường và không thay đổi nội dung khác.
 
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Words ở đâu?
-   -  Tham quan[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/) và[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
+ Tham quan[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/) và[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.

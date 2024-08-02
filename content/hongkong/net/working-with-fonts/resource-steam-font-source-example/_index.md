@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## 結論
 
-現在您已經掌握了透過 Aspose.Words for .NET 使用資源流作為字體來源的過程。這項技術將幫助您更有效地管理字體，並確保您的文件始終保持最佳狀態。不斷嘗試不同的設置，以充分利用 Aspose.Words 的強大功能。
+現在您已經掌握了透過 Aspose.Words for .NET 使用資源流作為字體來源的過程。這項技術將幫助您更有效地管理字體，並確保您的文件始終保持最佳外觀。不斷嘗試不同的設置，以充分利用 Aspose.Words 的強大功能。
 
 ## 常見問題解答
 

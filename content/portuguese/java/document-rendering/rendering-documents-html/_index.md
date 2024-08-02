@@ -94,4 +94,4 @@ Embora o Aspose.Words for Java lide perfeitamente com a maioria dos tipos de doc
 
 ### Posso renderizar documentos para outros formatos além de HTML?
 
-Sim, Aspose.Words for Java suporta vários formatos de saída, incluindo PDF, DOCX e muito mais. Você pode escolher o formato que melhor atende às suas necessidades.
+Sim, Aspose.Words for Java oferece suporte a vários formatos de saída, incluindo PDF, DOCX e muito mais. Você pode escolher o formato que melhor atende às suas necessidades.

@@ -16,8 +16,8 @@ Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh ng
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Kiểu truy cập](./access-styles/) | Tìm hiểu cách truy cập các kiểu tài liệu bằng Aspose.Words cho .NET. Hướng dẫn hoàn chỉnh để thao tác các kiểu tài liệu của bạn. |
-| [Sao chép kiểu](./copy-styles/) | Tìm hiểu cách sao chép kiểu giữa các tài liệu bằng Aspose.Words cho .NET. |
-| [Nhận thuộc tính chủ đề](./get-theme-properties/) | Khám phá các thuộc tính chủ đề của tài liệu với Aspose.Words for .NET. Tùy chỉnh kiểu dáng và màu sắc để có cái nhìn độc đáo. |
-| [Đặt thuộc tính chủ đề](./set-theme-properties/) | Tìm hiểu cách tùy chỉnh giao diện tài liệu của bạn bằng cách thay đổi thuộc tính chủ đề bằng Aspose.Words cho .NET. Nhận kết quả chuyên nghiệp và hấp dẫn. |
-| [Chèn dấu phân cách kiểu](./insert-style-separator/) | Tìm hiểu cách tạo tài liệu với các kiểu tùy chỉnh và chèn dấu phân cách kiểu để định dạng chính xác, chuyên nghiệp. |
+| [Nhận kiểu tài liệu trong Word](./access-styles/) | Tìm hiểu cách lấy kiểu tài liệu trong Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. Truy cập và quản lý các kiểu theo chương trình trong các ứng dụng .NET của bạn. |
+| [Sao chép kiểu tài liệu Word](./copy-styles/) | Tìm hiểu cách sao chép kiểu tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để đảm bảo định dạng tài liệu nhất quán một cách dễ dàng. |
+| [Nhận thuộc tính chủ đề tài liệu trong Word](./get-theme-properties/) | Khám phá cách truy cập và quản lý các thuộc tính chủ đề tài liệu trong Word bằng Aspose.Words cho .NET. Tìm hiểu cách truy xuất phông chữ và màu sắc với hướng dẫn của chúng tôi. |
+| [Đặt thuộc tính chủ đề trong tài liệu Word](./set-theme-properties/) | Tìm hiểu cách đặt thuộc tính chủ đề trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tùy chỉnh phông chữ và màu sắc một cách dễ dàng. |
+| [Chèn dấu phân cách kiểu tài liệu trong Word](./insert-style-separator/) | Tìm hiểu cách chèn dấu phân cách kiểu tài liệu trong Word bằng Aspose.Words cho .NET. Hướng dẫn này cung cấp hướng dẫn và mẹo để quản lý kiểu tài liệu. |

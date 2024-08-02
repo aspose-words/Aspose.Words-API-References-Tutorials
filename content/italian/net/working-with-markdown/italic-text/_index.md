@@ -46,7 +46,7 @@ Congratulazioni! Ora hai imparato come utilizzare la funzionalità di testo cors
 
 #### D: Come posso scrivere in corsivo il testo in Aspose.Words?
 
- R: Per scrivere in corsivo il testo in Aspose.Words, puoi usare il file`Font.Italic` proprietà del`Run`oggetto. È possibile impostare questa proprietà su`true` per mettere in corsivo un testo specifico. Ad esempio, puoi usare`run.Font.Italic=true` mettere in corsivo il testo contenuto nel`Run` oggetto.
+ R: Per scrivere in corsivo il testo in Aspose.Words, puoi usare il file`Font.Italic` proprietà del`Run` oggetto. È possibile impostare questa proprietà su`true` per mettere in corsivo un testo specifico. Ad esempio, puoi usare`run.Font.Italic=true` mettere in corsivo il testo contenuto nel`Run` oggetto.
 
 #### D: È possibile scrivere in corsivo più parti di testo nello stesso paragrafo?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/remove-content/remove-table-of-contents/
 ---
-## Usuń spis treści z dokumentu programu Word za pomocą Aspose.Words dla .NET
+## Wstęp
 
 Czy masz dość radzenia sobie z niechcianym spisem treści (TOC) w dokumentach programu Word? Każdy z nas to przeżył — czasami spis treści po prostu nie jest konieczny. Na szczęście dla Ciebie, Aspose.Words dla .NET ułatwia programowe usunięcie spisu treści. W tym samouczku poprowadzę Cię przez ten proces krok po kroku, abyś mógł go opanować w mgnieniu oka. Zanurkujmy od razu!
 
@@ -41,7 +41,7 @@ Zanim będziemy mogli manipulować Twoim dokumentem, musimy określić, gdzie si
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"`ze ścieżką do folderu dokumentów. Tutaj znajduje się plik programu Word.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do folderu dokumentów. Tutaj znajduje się plik programu Word.
 
 ## Krok 2: Załaduj dokument
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Oto, co się dzieje:
 - `doc.Range.Fields`: umożliwia dostęp do wszystkich pól w dokumencie.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: filtruje pola w celu znalezienia tylko tych, które są spisami treści.
+- `.Where(f => f.Type == FieldType.FieldTOC)`filtruje pola w celu znalezienia tylko tych, które są spisami treści.
 - `.ToList().ForEach(f => f.Remove())`: powoduje konwersję przefiltrowanych pól na listę i usunięcie każdego z nich.
 
 ## Krok 4: Zapisz zmodyfikowany dokument
@@ -79,26 +79,26 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Wniosek
 
-masz to! Usunięcie spisu treści z dokumentu programu Word za pomocą Aspose.Words dla .NET jest proste, jeśli podzielisz go na te proste kroki. Ta potężna biblioteka nie tylko pomaga w usuwaniu spisów treści, ale może także obsługiwać niezliczoną ilość innych manipulacji dokumentami. Więc śmiało, spróbuj!
+I masz to! Usunięcie spisu treści z dokumentu programu Word za pomocą Aspose.Words dla .NET jest proste, jeśli podzielisz go na te proste kroki. Ta potężna biblioteka nie tylko pomaga w usuwaniu spisów treści, ale może także obsługiwać niezliczoną ilość innych manipulacji dokumentami. Więc śmiało, spróbuj!
 
 ## Często zadawane pytania
 
-### 1. Co to jest Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
 
 Aspose.Words dla .NET to solidna biblioteka .NET do manipulowania dokumentami, umożliwiająca programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów Word.
 
-### 2. Czy mogę korzystać z Aspose.Words za darmo?
+### Czy mogę używać Aspose.Words za darmo?
 
  Tak, możesz używać Aspose.Words z[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
-### 3. Czy można usunąć inne pola za pomocą Aspose.Words?
+### Czy można usunąć inne pola za pomocą Aspose.Words?
 
 Absolutnie! Możesz usunąć dowolne pole, określając jego typ w warunku filtra.
 
-### 4. Czy potrzebuję Visual Studio, aby używać Aspose.Words?
+### Czy potrzebuję programu Visual Studio, aby korzystać z Aspose.Words?
 
 Chociaż zdecydowanie zaleca się korzystanie z programu Visual Studio ze względu na łatwość programowania, można użyć dowolnego środowiska IDE obsługującego platformę .NET.
 
-### 5. Gdzie mogę znaleźć więcej informacji na temat Aspose.Words?
+### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words?
 
  Bardziej szczegółową dokumentację znajdziesz na stronie[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/).

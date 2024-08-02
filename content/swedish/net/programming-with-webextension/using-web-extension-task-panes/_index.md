@@ -2,40 +2,86 @@
 title: Använda aktivitetsrutor för webbtillägg
 linktitle: Använda aktivitetsrutor för webbtillägg
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för hur du använder webbtilläggsuppgiftsrutor med Aspose.Words för .NET.
+description: Lär dig hur du lägger till och konfigurerar webbtilläggsuppgiftsrutor i Word-dokument med Aspose.Words för .NET i denna detaljerade, steg-för-steg handledning.
 type: docs
 weight: 10
 url: /sv/net/programming-with-webextension/using-web-extension-task-panes/
 ---
+## Introduktion
 
-Den här artikeln ger en steg-för-steg-guide om hur du använder webbtilläggets aktivitetsfönster med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av denna handledning kommer du att kunna förstå hur du lägger till och konfigurerar aktivitetsrutor för webbtillägg.
+Välkommen till denna djupgående handledning om hur du använder webbtilläggsuppgiftsrutor i ett Word-dokument med Aspose.Words för .NET. Om du någonsin har velat förbättra dina Word-dokument med interaktiva uppgiftsrutor, är du på rätt plats. Den här guiden leder dig genom varje steg för att uppnå detta sömlöst.
 
-Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
+## Förutsättningar
 
-## Steg 1: Definiera dokumentkatalogen
+Innan vi dyker in, låt oss se till att du har allt du behöver:
 
- För att börja måste du definiera sökvägen till katalogen där du vill spara det genererade dokumentet. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+-  Aspose.Words för .NET: Du kan ladda ner det[här](https://releases.aspose.com/words/net/).
+- .NET-utvecklingsmiljö: Visual Studio eller någon annan IDE du föredrar.
+- Grundläggande kunskaper om C#: Detta hjälper dig att följa med i kodexemplen.
+-  Licens för Aspose.Words: Du kan köpa en[här](https://purchase.aspose.com/buy) eller få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+
+## Importera namnområden
+
+Innan vi börjar koda, se till att du har följande namnrymder importerade i ditt projekt:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.WebExtensions;
+```
+
+## Steg-för-steg-guide
+
+Låt oss nu dela upp processen i lätta att följa steg.
+
+### Steg 1: Konfigurera din dokumentkatalog
+
+Först och främst måste vi ställa in sökvägen till din dokumentkatalog. Det är här ditt Word-dokument kommer att sparas.
+
+```csharp
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Steg 2: Skapa och konfigurera ett aktivitetsfönster
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentmapp.
 
- Vi skapar en`TaskPane` objekt och lägg till det i dokumentet`s `WebExtensionTaskPanes' samling. Därefter konfigurerar vi egenskaperna för aktivitetsfönstret, såsom dess dockade tillstånd, synlighet och bredd.
+### Steg 2: Skapa ett nytt dokument
+
+Därefter kommer vi att skapa ett nytt Word-dokument med Aspose.Words.
 
 ```csharp
 Document doc = new Document();
+```
 
+ Denna rad initierar en ny instans av`Document` klass, som representerar ett Word-dokument.
+
+### Steg 3: Lägga till en uppgiftsruta
+
+Nu kommer vi att lägga till en uppgiftsruta i vårt dokument. Uppgiftsrutor är användbara för att tillhandahålla ytterligare funktioner och verktyg i ett Word-dokument.
+
+```csharp
 TaskPane taskPane = new TaskPane();
 doc.WebExtensionTaskPanes.Add(taskPane);
+```
 
+ Här skapar vi en ny`TaskPane` objekt och lägg till det i dokumentets`WebExtensionTaskPanes` samling.
+
+### Steg 4: Konfigurera aktivitetsfönstret
+
+För att göra vår uppgiftsruta synlig och ställa in dess egenskaper använder vi följande kod:
+
+```csharp
 taskPane.DockState = TaskPaneDockState.Right;
 taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-Vi ställer också in webbtilläggets autentiseringsuppgifter inklusive katalog-id, version och butikstyp.
+- `DockState` anger var aktivitetsfönstret ska visas. I det här fallet är det till höger.
+- `IsVisible` ser till att aktivitetsfönstret är synligt.
+- `Width` anger bredden på aktivitetsfönstret.
+
+### Steg 5: Konfigurera webbtilläggsreferens
+
+Därefter ställer vi in webbtilläggsreferensen som inkluderar ID, version, butikstyp och butik.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -44,77 +90,78 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-Slutligen lägger vi till egenskaper och bindningar till webbtillägget.
+- `Id`är en unik identifierare för webbtillägget.
+- `Version` anger versionen av tillägget.
+- `StoreType` anger typen av butik (i detta fall OMEX).
+- `Store` anger butikens språk-/kulturkod.
+
+### Steg 6: Lägga till egenskaper till webbtillägget
+
+Du kan lägga till egenskaper i ditt webbtillägg för att definiera dess beteende eller innehåll.
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
-taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
-	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## Steg 3: Spara och ladda dokumentet
+ Här lägger vi till en egendom som heter`mailchimpCampaign`.
 
-Vi sparar dokumentet med aktivitetsrutorna konfigurerade i den angivna katalogen.
+### Steg 7: Bindning av webbtillägget
+
+Slutligen lägger vi till bindningar till vårt webbtillägg. Bindningar låter dig länka tillägget till specifika delar av dokumentet.
+
+```csharp
+taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545", WebExtensionBindingType.Text, "194740422"));
+```
+
+- `UnnamedBinding_0_1506535429545` är namnet på bindningen.
+- `WebExtensionBindingType.Text` indikerar att bindningen är av texttyp.
+- `194740422` är ID för den del av dokumentet som tillägget är bundet till.
+
+### Steg 8: Spara dokumentet
+
+När du har ställt in allt, spara ditt dokument.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## Steg 4: Visa informationen i aktivitetsrutorna
+Denna rad sparar dokumentet i den angivna katalogen med det angivna filnamnet.
 
-Därefter laddar vi dokumentet och visar källinformationen i aktivitetsfönstret.
+### Steg 9: Ladda och visa information om uppgiftsfönstret
+
+För att verifiera och visa informationen i aktivitetsfönstret laddar vi dokumentet och itererar genom aktivitetsrutorna.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-Console.WriteLine("Task Panes Sources:\n");
 
-foreach(TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
+Console.WriteLine("Task panes sources:\n");
+
+foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
 {
-WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
-
-
-Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version}\", catalog id: \"{reference.Id}\";");
+    WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
+    Console.WriteLine($"Provider: \"{reference.Store}\", version: \"{reference.Version}\", catalog identifier: \"{reference.Id}\";");
 }
 ```
 
-Det är allt ! Du har framgångsrikt använt webbtilläggets uppgiftsrutor med Aspose.Words för .NET.
+Den här koden laddar dokumentet och skriver ut leverantören, versionen och katalogidentifieraren för varje aktivitetsfönster i konsolen.
 
-### Exempel på källkod för användning av aktivitetsrutor för webbtillägg med Aspose.Words för .NET
+## Slutsats
 
+Och det är allt! Du har framgångsrikt lagt till och konfigurerat en aktivitetsruta för webbtillägg i ett Word-dokument med Aspose.Words för .NET. Denna kraftfulla funktion kan avsevärt förbättra dina Word-dokument genom att tillhandahålla ytterligare funktioner direkt i dokumentet. 
 
-```csharp
+## FAQ's
 
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
+### Vad är en uppgiftsruta i Word?
+En uppgiftspanel är ett gränssnittselement som tillhandahåller ytterligare verktyg och funktioner i ett Word-dokument, vilket förbättrar användarinteraktion och produktivitet.
 
-	TaskPane taskPane = new TaskPane();
-	doc.WebExtensionTaskPanes.Add(taskPane);
+### Kan jag anpassa aktivitetsfönstrets utseende?
+ Ja, du kan anpassa aktivitetsfönstrets utseende genom att ställa in egenskaper som`DockState`, `IsVisible` , och`Width`.
 
-	taskPane.DockState = TaskPaneDockState.Right;
-	taskPane.IsVisible = true;
-	taskPane.Width = 300;
+### Vad är webbtilläggsegenskaper?
+Webbtilläggsegenskaper är anpassade egenskaper som du kan lägga till i ett webbtillägg för att definiera dess beteende eller innehåll.
 
-	taskPane.WebExtension.Reference.Id = "wa102923726";
-	taskPane.WebExtension.Reference.Version = "1.0.0.0";
-	taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
-	taskPane.WebExtension.Reference.Store = "th-TH";
-	taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
-	taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
-		WebExtensionBindingType.Text, "194740422"));
+### Hur binder jag ett webbtillägg till en del av dokumentet?
+ Du kan binda ett webbtillägg till en del av dokumentet med hjälp av`WebExtensionBinding` klass, med angivande av bindningstyp och mål-ID.
 
-	doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-	
-	
-	
-	doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-	
-	Console.WriteLine("Task panes sources:\n");
-
-	foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
-	{
-		WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
-		Console.WriteLine($"Provider: \"{reference.Store}\", version: \"{reference.Version}\", catalog identifier: \"{reference.Id}\";");
-	}
- 
-```
+### Var kan jag hitta mer information om Aspose.Words för .NET?
+ Du kan hitta detaljerad dokumentation[här](https://reference.aspose.com/words/net/).

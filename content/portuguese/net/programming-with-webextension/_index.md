@@ -11,9 +11,9 @@ Os tutoriais do Aspose.Words for .NET sobre Processamento de Palavras com WebExt
 
 Esses tutoriais fornecem instruções passo a passo para compreender e usar a funcionalidade de WebExtensions com Aspose.Words for .NET. Você aprenderá como acessar objetos de extensão da web, manipular eventos, avaliar código JavaScript, adicionar funcionalidades personalizadas e muito mais. Quer você seja um desenvolvedor iniciante ou experiente, estes tutoriais o ajudarão a dominar as técnicas de programação com WebExtensions.
 
-Seguindo estes tutoriais, você poderá explorar totalmente os recursos das extensões da web em seus documentos do Word, proporcionando-lhes recursos interativos e dinâmicos. Os tutoriais fornecem exemplos de código passo a passo e explicações claras para ajudá-lo a aproveitar ao máximo esses recursos e criar documentos do Word inovadores e interativos.
+Seguindo estes tutoriais, você poderá explorar totalmente os recursos das extensões da web em seus documentos do Word, proporcionando-lhes recursos interativos e dinâmicos. Os tutoriais fornecem exemplos de código passo a passo e explicações claras para ajudá-lo a aproveitar ao máximo esses recursos e criar documentos Word inovadores e interativos.
 
 ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Usando painéis de tarefas de extensão da Web](./using-web-extension-task-panes/) | Guia passo a passo para usar painéis de tarefas de extensão da Web com Aspose.Words para .NET. |
+| [Usando painéis de tarefas de extensão da Web](./using-web-extension-task-panes/) | Aprenda como adicionar e configurar painéis de tarefas de extensão da Web em documentos do Word usando Aspose.Words for .NET neste tutorial passo a passo detalhado. |

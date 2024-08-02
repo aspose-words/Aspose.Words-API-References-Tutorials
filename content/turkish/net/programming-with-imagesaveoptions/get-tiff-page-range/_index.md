@@ -95,7 +95,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
 
  Basitçe ayarlayın`Resolution` içindeki mülk`ImageSaveOptions` İstediğiniz değere itiraz edin.
 
-### TIFF dosyası için farklı sıkıştırma yöntemleri kullanmak mümkün müdür?
+### TIFF dosyası için farklı sıkıştırma yöntemleri kullanmak mümkün mü?
 
  Evet, Aspose.Words for .NET çeşitli TIFF sıkıştırma yöntemlerini destekler. Ayarlayabilirsiniz`TiffCompression` gibi diğer değerlere ait özellik`Lzw` veya`Rle` gereksinimlerinize göre.
 

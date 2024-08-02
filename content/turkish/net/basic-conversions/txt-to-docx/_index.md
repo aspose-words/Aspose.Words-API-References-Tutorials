@@ -48,7 +48,7 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir metin dosyasının Word belgesine nasıl dönüştürüleceğini ele aldık. Bu basit adımları izleyerek metin içeriğini daha yapılandırılmış ve düzenlenebilir bir biçime dönüştürme sürecini otomatikleştirerek belge işleme iş akışlarınızı geliştirebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir metin dosyasının Word belgesine nasıl dönüştürüleceğini ele aldık. Bu basit adımları izleyerek, metin içeriğini daha yapılandırılmış ve düzenlenebilir bir biçime dönüştürme sürecini otomatikleştirerek belge işleme iş akışlarınızı geliştirebilirsiniz.
 
 ## SSS'ler
 

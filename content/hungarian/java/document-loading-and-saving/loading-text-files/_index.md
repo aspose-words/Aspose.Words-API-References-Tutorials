@@ -90,7 +90,7 @@ public void documentTextDirection() throws Exception {
 }
 ```
 
-Ez a kód a dokumentum irányát automatikus felismerésre állítja (`DocumentDirection.AUTO`), és betölt egy szöveges dokumentumot héber szöveggel. Szükség szerint módosíthatja a dokumentum irányát.
+Ez a kód a dokumentum irányát automatikus felismerésre állítja (`DocumentDirection.AUTO`), és betölt egy szöveges dokumentumot héber szöveggel. Igény szerint módosíthatja a dokumentum irányát.
 
 ## Teljes forráskód szöveges fájlok betöltéséhez az Aspose.Words for Java segítségével
 

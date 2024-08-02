@@ -12,9 +12,9 @@ Split Document là một tài nguyên toàn diện giải thích cách chia tài
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Theo tiêu đề Html](./by-headings-html/) | Hướng dẫn từng bước để giải thích mã nguồn C# của tính năng By Heading HTML của Aspose.Words cho .NET |
-| [Theo phần Html](./by-sections-html/) | Tìm hiểu cách chia tài liệu Word thành các phần Html bằng Aspose.Words cho .NET với ví dụ về mã hoàn chỉnh. |
-| [Theo phần](./by-sections/) | Tìm hiểu cách chia tài liệu Word thành các phần riêng biệt bằng Aspose.Words cho .NET với ví dụ về mã hoàn chỉnh. |
-| [từng trang](./page-by-page/) | Hướng dẫn từng bước để giải thích mã nguồn C# của tính năng Aspose.Words Page by Page cho .NET |
+| [Tách tài liệu Word theo tiêu đề Html](./by-headings-html/) | Tìm hiểu cách chia tài liệu Word theo tiêu đề thành HTML bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước của chúng tôi. |
+| [Tách tài liệu Word theo phần HTML](./by-sections-html/) | Tìm hiểu cách chia tài liệu Word theo các phần thành HTML bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. |
+| [Tách tài liệu Word theo phần](./by-sections/) | Tìm hiểu cách chia tài liệu Word theo các phần bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước này để quản lý tài liệu hiệu quả. |
+| [Tách tài liệu Word theo trang](./page-by-page/) | Tìm hiểu cách chia tài liệu Word theo trang bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Hoàn hảo để quản lý tài liệu lớn một cách hiệu quả. |
 | [Hợp nhất tài liệu](./merge-documents/) | Hướng dẫn từng bước giải thích mã nguồn C# của tính năng Hợp nhất tài liệu của Aspose.Words for .NET |
-| [Theo phạm vi trang](./by-page-range/) | Dễ dàng trích xuất theo phạm vi trang từ tài liệu Word bằng cách sử dụng Hướng dẫn từng bước của Aspose.Words for .NET. |
+| [Tách tài liệu Word theo phạm vi trang](./by-page-range/) | Tìm hiểu cách chia tài liệu Word theo phạm vi trang bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển. |

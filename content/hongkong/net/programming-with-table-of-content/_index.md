@@ -16,5 +16,5 @@ url: /zh-hant/net/programming-with-table-of-content/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [變更 Word 文件中的目錄樣式](./change-style-of-toc-level/) | 了解如何使用 Aspose.Words for .NET 輕鬆變更 Word 文件中目錄層級的樣式。 |
-| [更改 Word 文件中的目錄製表位](./change-toc-tab-stops/) | 了解如何使用 Aspose.Words for .NET 變更 Word 文件中的目錄標籤。 |
+| [變更 Word 文件中的目錄樣式](./change-style-of-toc-level/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 變更 Word 文件中的目錄樣式。輕鬆自訂您的目錄。 |
+| [更改 Word 文件中的目錄製表位](./change-toc-tab-stops/) | 了解如何使用 Aspose.Words for .NET 變更 Word 文件中的 TOC 製表位。本逐步指南將協助您建立具有專業外觀的目錄。 |

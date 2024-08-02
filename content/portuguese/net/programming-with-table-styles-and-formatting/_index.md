@@ -16,19 +16,19 @@ Esses tutoriais ajudarão os desenvolvedores a dominar as técnicas essenciais d
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Obtenha distância entre o texto ao redor da tabela](./get-distance-between-table-surrounding-text/) | Guia passo a passo para obter a distância entre o texto e uma tabela em um documento do Word usando Aspose.Words for .NET. |
-| [Aplicar borda de contorno](./apply-outline-border/) | Guia passo a passo para aplicar uma borda de contorno a uma tabela usando Aspose.Words for .NET. |
-| [Construir mesa com bordas](./build-table-with-borders/) | Guia passo a passo para construir uma tabela com bordas usando Aspose.Words for .NET. |
-| [Modificar formatação de linha](./modify-row-formatting/) | Guia passo a passo para alterar a formatação das linhas da tabela usando Aspose.Words for .NET. |
-| [Aplicar formatação de linha](./apply-row-formatting/) | Guia passo a passo para aplicar formatação de linha a uma tabela usando Aspose.Words for .NET. |
-| [Definir preenchimento de célula](./set-cell-padding/) | Guia passo a passo para definir margens de células de tabela usando Aspose.Words for .NET. |
-| [Modificar formatação de célula](./modify-cell-formatting/) | Guia passo a passo para alterar a formatação de uma célula em uma tabela usando Aspose.Words for .NET. |
-| [Formatar tabela e célula com bordas diferentes](./format-table-and-cell-with-different-borders/) | Guia passo a passo para formatar tabela e célula com bordas diferentes usando Aspose.Words for .NET. |
-| [Definir título e descrição da tabela](./set-table-title-and-description/) | Guia passo a passo para definir o título e a descrição de uma tabela usando Aspose.Words for .NET. |
-| [Permitir espaçamento entre células](./allow-cell-spacing/) | Guia passo a passo para permitir o espaçamento entre células usando Aspose.Words for .NET. |
-| [Construa uma mesa com estilo](./build-table-with-style/) | Guia passo a passo para construir uma tabela com estilo personalizado usando Aspose.Words for .NET. |
-| [Expanda a formatação nas células e na linha do estilo](./expand-formatting-on-cells-and-row-from-style/) | Guia passo a passo para expandir a formatação para células e linhas de um estilo de tabela usando Aspose.Words for .NET. |
-| [Criar estilo de tabela](./create-table-style/) | Guia passo a passo para criar um estilo de tabela personalizado usando Aspose.Words for .NET. |
-| [Definir formatação condicional](./define-conditional-formatting/) | Guia passo a passo para definir a formatação condicional em uma tabela usando Aspose.Words for .NET. |
-| [Definir formatação de células de tabela](./set-table-cell-formatting/) | Guia passo a passo para definir a formatação de células de tabela usando Aspose.Words for .NET. |
-| [Definir formatação de linha da tabela](./set-table-row-formatting/) | Guia passo a passo para definir a formatação de linhas da tabela usando Aspose.Words for .NET. |
+| [Obtenha distância entre o texto ao redor da tabela](./get-distance-between-table-surrounding-text/) | Aprenda como recuperar a distância entre uma tabela e o texto ao redor em documentos do Word usando Aspose.Words for .NET. Melhore o layout do seu documento com este guia. |
+| [Aplicar borda de contorno](./apply-outline-border/) | Aprenda como aplicar uma borda de contorno a uma tabela no Word usando Aspose.Words for .NET. Siga nosso guia passo a passo para uma formatação de tabela perfeita. |
+| [Construir mesa com bordas](./build-table-with-borders/) | Aprenda como construir e personalizar bordas de tabelas em documentos do Word usando Aspose.Words for .NET. Siga nosso guia passo a passo para obter instruções detalhadas. |
+| [Modificar formatação de linha](./modify-row-formatting/) | Aprenda como modificar a formatação de linhas em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo detalhado. Perfeito para desenvolvedores de todos os níveis. |
+| [Aplicar formatação de linha](./apply-row-formatting/) | Aprenda como aplicar formatação de linha em um documento do Word usando Aspose.Words for .NET. Siga nosso guia passo a passo para obter instruções detalhadas. |
+| [Definir preenchimento de célula](./set-cell-padding/) | Aprenda como definir o preenchimento de células em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo. Melhore facilmente a formatação da tabela do seu documento. |
+| [Modificar formatação de célula](./modify-cell-formatting/) | Aprenda como modificar a formatação de células em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. |
+| [Formatar tabela e célula com bordas diferentes](./format-table-and-cell-with-different-borders/) | Aprenda como formatar tabelas e células com bordas diferentes usando Aspose.Words for .NET. Aprimore seus documentos do Word com estilos de tabela e sombreamento de células personalizados. |
+| [Definir título e descrição da tabela](./set-table-title-and-description/) | Aprenda como definir títulos e descrições de tabelas em documentos do Word usando Aspose.Words for .NET. Siga nosso guia detalhado para aprimorar o profissionalismo do seu documento. |
+| [Permitir espaçamento entre células](./allow-cell-spacing/) | Aprenda como permitir o espaçamento de células em uma tabela usando Aspose.Words for .NET com nosso guia detalhado. Perfeito para desenvolvedores que buscam aprimorar a formatação de documentos do Word. |
+| [Construa uma mesa com estilo](./build-table-with-style/) | Aprenda como criar e estilizar tabelas em documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente. |
+| [Expanda a formatação nas células e na linha do estilo](./expand-formatting-on-cells-and-row-from-style/) | Aprenda como expandir a formatação em células e linhas de estilos em documentos do Word usando Aspose.Words for .NET. Guia passo a passo incluído. |
+| [Criar estilo de tabela](./create-table-style/) | Crie e estilize tabelas em documentos do Word usando Aspose.Words for .NET. Aprenda passo a passo como aprimorar seus documentos com formatação de tabela profissional. |
+| [Definir formatação condicional](./define-conditional-formatting/) | Aprenda como definir a formatação condicional em documentos do Word usando Aspose.Words for .NET. Melhore o apelo visual e a legibilidade do seu documento com nosso guia. |
+| [Definir formatação de células de tabela](./set-table-cell-formatting/) | Aprimore seus documentos do Word com formatação profissional de células de tabela usando Aspose.Words for .NET. Este guia passo a passo simplifica o processo para você. |
+| [Definir formatação de linha da tabela](./set-table-row-formatting/) | Aprenda como definir a formatação de linhas da tabela em documentos do Word usando Aspose.Words for .NET com nosso guia. Perfeito para criar documentos bem formatados e profissionais. |

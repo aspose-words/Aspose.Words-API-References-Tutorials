@@ -61,13 +61,13 @@ using (Stream stream = File.OpenRead(dataDir + "Document.docx"))
     doc = new Document(stream);
 ```
 
- Burada DOCX dosyasını akış olarak açıyoruz ve bir`Document` ondan itiraz edin. Bu, format dönüştürme de dahil olmak üzere belge üzerinde işlemler gerçekleştirmenize olanak tanır.
+ Burada DOCX dosyasını akış olarak açıyoruz ve bir`Document` ondan itiraz et. Bu, format dönüştürme de dahil olmak üzere belge üzerinde işlemler gerçekleştirmenize olanak tanır.
 
 ## Adım 3: Belgeyi RTF Formatına Dönüştürün
 
 Amaç: Yüklenen DOCX belgesini RTF formatına dönüştürün.
 
-Açıklama: Belgeyi yükledikten sonra istediğiniz formata dönüştürmeniz gerekmektedir. Bu durumda onu RTF'ye dönüştürüp yeni bir dosyaya kaydedeceğiz.
+Açıklama: Belgeyi yükledikten sonra istediğiniz formata dönüştürmeniz gerekir. Bu durumda onu RTF'ye dönüştürüp yeni bir dosyaya kaydedeceğiz.
 
 ```csharp
 using (MemoryStream dstStream = new MemoryStream())

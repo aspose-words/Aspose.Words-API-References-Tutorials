@@ -2,103 +2,115 @@
 title: Přidat komentáře
 linktitle: Přidat komentáře
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se přidávat komentáře do dokumentů aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se v našem průvodci přidávat komentáře do dokumentů aplikace Word pomocí Aspose.Words for .NET. Vylepšete svůj proces spolupráce na dokumentech bez námahy.
 type: docs
 weight: 10
 url: /cs/net/working-with-comments/add-comments/
 ---
+## Úvod
 
-V tomto komplexním tutoriálu se naučíte přidávat komentáře k dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci vkládat komentáře a upravovat jejich obsah ve svých dokumentech.
+Vítejte v našem podrobném průvodci přidáváním komentářů do dokumentů aplikace Word pomocí Aspose.Words pro .NET! Pokud chcete zefektivnit proces kontroly dokumentů programovým začleněním komentářů, jste na správném místě. Tento tutoriál vás provede vším, co potřebujete vědět, od nastavení prostředí až po psaní a ukládání komentářů v dokumentech aplikace Word. Pojďme se ponořit a udělejte ze spolupráce na dokumentech hračku!
 
 ## Předpoklady
-Než začneme, ujistěte se, že máte následující předpoklady:
-- Knihovna Aspose.Words for .NET nainstalovaná ve vašem systému.
 
-## Krok 1: Vytvořte nový dokument a DocumentBuilder
-Chcete-li začít, vytvořte nový dokument pomocí třídy Document a inicializujte objekt DocumentBuilder:
+Než začneme, ujistěte se, že máte splněny následující předpoklady:
+
+1. Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
+3. Vývojové prostředí: IDE jako Visual Studio pro psaní a spouštění vašeho kódu.
+4. Základní znalost C#: Znalost programovacího jazyka C# vám pomůže postupovat podle příkladů.
+
+## Importovat jmenné prostory
+
+Nejprve musíte do projektu importovat potřebné jmenné prostory. To vám umožní přístup ke třídám a metodám potřebným pro práci s Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+```
+
+Nyní si tento proces rozdělíme do snadno pochopitelných kroků. Každý krok bude obsahovat podrobné vysvětlení, které vám pomůže pochopit logiku a funkce.
+
+## Krok 1: Nastavte adresář dokumentů
+
+ Nejprve musíme definovat adresář, kam bude váš dokument uložen. Použijeme zástupný symbol`YOUR DOCUMENT DIRECTORY` kterou byste měli nahradit svou skutečnou cestou k adresáři.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Krok 2: Inicializujte dokument
+
+Dále inicializujeme nový dokument a objekt DocumentBuilder. DocumentBuilder nám pomáhá sestavit a upravit dokument.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Přidejte obsah do dokumentu
-Dále přidejte požadovaný obsah do dokumentu pomocí objektu DocumentBuilder. V tomto příkladu přidáme nějaký text:
+## Krok 3: Přidejte text do dokumentu
+
+Do dokumentu přidáme nějaký text pomocí DocumentBuilderu. K tomuto textu připojíme náš komentář.
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## Krok 3: Vytvořte komentář a přidejte obsah
-Chcete-li přidat komentář, vytvořte instanci třídy Comment, předejte objekt Document, jméno autora, iniciály autora a aktuální datum:
+## Krok 4: Vytvořte a připojte komentář
+
+Nyní je čas vytvořit komentář. Inicializujeme nový objekt Comment s uvedením dokumentu, jména autora, iniciál a data.
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-Dále přidejte komentář k aktuálnímu odstavci:
+## Krok 5: Připojte komentář k odstavci
+
+Komentář musíme připojit k aktuálnímu odstavci, kam jsme text přidali. To se provádí připojením komentáře k odstavci.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-Přidejte do komentáře obsah, například odstavec a text:
+## Krok 6: Přidejte obsah do komentáře
+
+Nakonec do komentáře přidáme obsah. Vytvoříme nový Odstavec a Spustit, ve kterých bude text komentáře uložen, a poté je přidáme do komentáře.
 
 ```csharp
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
-## Krok 4: Uložte dokument
-Po přidání komentáře a jeho obsahu uložte dokument do souboru pomocí metody Save třídy Document:
+## Krok 7: Uložte dokument
+
+Posledním krokem je uložení dokumentu s komentáři. Zadáme adresář a název souboru.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
-```
-
-## Příklad zdrojového kódu pro přidávání komentářů pomocí Aspose.Words pro .NET
-Zde je kompletní zdrojový kód pro přidávání komentářů pomocí Aspose.Words pro .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Write("Some text is added.");
-
-Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-builder.CurrentParagraph.AppendChild(comment);
-
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
 ## Závěr
-Gratulujeme! Úspěšně jste se naučili přidávat komentáře do dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete nyní vkládat komentáře a přizpůsobovat jejich obsah do svých dokumentů.
 
-Komentáře jsou užitečné pro spolupráci, poskytování dalších informací nebo vytváření poznámek v dokumentu. Experimentujte s různými jmény autorů, iniciálami a obsahem komentářů, abyste splnili své specifické požadavky.
+Tady to máš! Úspěšně jste přidali komentáře do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná funkce může výrazně vylepšit váš proces recenzování dokumentů a usnadnit spolupráci a sdělování zpětné vazby. Nezapomeňte prozkoumat další možnosti Aspose.Words, abyste dále zjednodušili své úkoly správy dokumentů.
 
-### FAQ
+## FAQ
 
-#### Otázka: Jak mohu přidat komentář do dokumentu Aspose.Words for .NET?
+### Co je Aspose.Words for .NET?
 
-A: Chcete-li přidat komentář do dokumentu Aspose.Words for .NET, musíte postupovat podle kroků uvedených v tutoriálu.
+Aspose.Words for .NET je výkonné rozhraní API, které umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty aplikace Word programově pomocí jazyků .NET.
 
-#### Otázka: Mohu formátovat text komentáře v Aspose.Words pro .NET?
+### Mohu přidat více komentářů k jednomu dokumentu?
 
-Odpověď: Ano, můžete formátovat text komentáře v Aspose.Words pro .NET pomocí dostupných vlastností formátování.
+Ano, k jednomu dokumentu můžete přidat více komentářů opakováním procesu vytváření a přidávání komentářů k různým odstavcům nebo textovým úsekům.
 
-#### Otázka: Jak mohu načíst všechny komentáře přítomné v dokumentu?
+### Jak mohu upravit vzhled komentářů?
 
- Odpověď: Všechny komentáře přítomné v dokumentu můžete načíst pomocí`Document.Comments` vlastnictví.
+Zatímco Aspose.Words se zaměřuje na obsah a strukturu komentářů, vzhled lze přizpůsobit pomocí vestavěných funkcí formátování aplikace Word.
 
-#### Otázka: Mohu smazat konkrétní komentář v Aspose.Words pro .NET?
+### Je možné odstranit komentáře programově?
 
- Odpověď: Ano, můžete odstranit konkrétní komentář v Aspose.Words pro .NET pomocí`Comment.Remove` metoda.
+Ano, komentáře můžete odstraňovat programově tak, že projdete komentáře v dokumentu a odeberete je podle potřeby.
 
-#### Otázka: Jak mohu upravit text existujícího komentáře v Aspose.Words pro .NET?
+### Mohu přidávat odpovědi do komentářů?
 
- A: Chcete-li upravit text existujícího komentáře v Aspose.Words pro .NET, můžete přistupovat k`Comment.Text` vlastnost odpovídající`Comment` objekt a upravte text podle potřeby.
+Aspose.Words vám umožňuje pracovat s vláknovými komentáři a umožňuje vám přidávat odpovědi na existující komentáře pro podrobnější diskuse.

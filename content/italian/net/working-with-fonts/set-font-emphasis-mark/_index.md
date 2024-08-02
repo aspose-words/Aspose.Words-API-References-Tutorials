@@ -69,7 +69,7 @@ R: Per aggiungere accenti a un carattere specifico in un documento Word utilizza
 
 #### D: È possibile modificare lo stile degli accenti in un documento Word con Aspose.Words?
 
-R: Sì, con Aspose.Words puoi modificare lo stile degli accenti in un documento di Word. L'API consente di regolare le proprietà di stile come colore, dimensione, tipo di linea, ecc., per personalizzare l'aspetto degli accenti.
+R: Sì, con Aspose.Words puoi modificare lo stile degli accenti in un documento Word. L'API consente di regolare le proprietà di stile come colore, dimensione, tipo di linea, ecc., per personalizzare l'aspetto degli accenti.
 
 #### D: Come posso rimuovere tutti gli accenti da un documento Word utilizzando Aspose.Words?
 

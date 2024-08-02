@@ -72,7 +72,7 @@ Dags att få ihop allt! Vi lägger till källdokumentet till måldokumentet med 
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
- Här, vi lägger till`srcDoc` till`dstDoc` använder destinationsstilar. De`options` parametern säkerställer att våra formateringsregler tillämpas.
+ Här lägger vi till`srcDoc` till`dstDoc` använder destinationsstilar. De`options` parametern säkerställer att våra formateringsregler tillämpas.
 
 ## Steg 5: Spara det sammanslagna dokumentet
 

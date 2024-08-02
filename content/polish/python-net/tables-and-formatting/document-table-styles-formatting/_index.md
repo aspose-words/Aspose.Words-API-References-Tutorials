@@ -232,7 +232,7 @@ Gdy tabela będzie już gotowa, możesz ją wyeksportować do różnych formató
 
 ## Wniosek
 
-Aspose.Words dla Pythona oferuje kompleksowy zestaw narzędzi do tworzenia, stylizowania i formatowania tabel dokumentów. Wykonując czynności opisane w tym artykule, możesz skutecznie zarządzać tabelami w swoich dokumentach, dostosowywać ich wygląd i eksportować do różnych formatów. Wykorzystaj moc Aspose.Words, aby ulepszyć prezentacje swoich dokumentów i zapewnić czytelnikom jasne, atrakcyjne wizualnie informacje.
+Aspose.Words dla Pythona oferuje kompleksowy zestaw narzędzi do tworzenia, stylizacji i formatowania tabel dokumentów. Wykonując czynności opisane w tym artykule, możesz efektywnie zarządzać tabelami w dokumentach, dostosowywać ich wygląd i eksportować do różnych formatów. Wykorzystaj moc Aspose.Words, aby ulepszyć prezentacje swoich dokumentów i zapewnić czytelnikom jasne, atrakcyjne wizualnie informacje.
 
 ## Często zadawane pytania
 

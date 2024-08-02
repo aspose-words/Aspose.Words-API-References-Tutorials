@@ -20,7 +20,7 @@ Antes de começarmos a adicionar marcas d’água aos documentos, precisamos con
 2. Adicione a biblioteca Aspose.Words for Java ao seu projeto Java.
 3. Importe as classes necessárias em seu código Java.
 
-Agora que configuramos a biblioteca, vamos adicionar marcas d’água.
+Agora que configuramos a biblioteca, vamos adicionar marcas d'água.
 
 ## Adicionando marcas d'água de texto
 
@@ -92,7 +92,7 @@ for (Shape shape : doc.getShapes())
     }
 }
 
-// Salve o documento sem a marca d'água
+// Salve o documento sem a marca d’água
 doc.save("DocumentWithoutWatermark.docx");
 ```
 
@@ -103,7 +103,7 @@ Neste tutorial, aprendemos como adicionar marcas d'água a documentos usando Asp
 
 ## Perguntas frequentes
 
-### Como posso alterar a fonte de uma marca d’água de texto?
+### Como posso alterar a fonte de uma marca d'água de texto?
 
  Para alterar a fonte de uma marca d'água de texto, modifique o`setFontFamily` propriedade no`TextWatermarkOptions`. Por exemplo:
 
@@ -119,10 +119,10 @@ options.setFontFamily("Times New Roman");
 
  Sim, você pode girar uma marca d'água definindo o`setRotation` propriedade no`Shape` objeto. Os valores positivos giram a marca d'água no sentido horário e os valores negativos giram no sentido anti-horário.
 
-### Como posso tornar uma marca d'água semitransparente?
+### Como posso tornar uma marca d’água semitransparente?
 
  Para tornar uma marca d'água semitransparente, defina o`setSemitransparent`propriedade para`true` no`TextWatermarkOptions`.
 
-### Posso adicionar marcas d’água a seções específicas de um documento?
+### Posso adicionar marcas d'água a seções específicas de um documento?
 
 Sim, você pode adicionar marcas d'água a seções específicas de um documento iterando pelas seções e adicionando a marca d'água às seções desejadas.

@@ -16,6 +16,6 @@ Díky těmto výukovým programům budete schopni plně využít funkcionality A
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Přidejte Bidi značky do dokumentu Word](./add-bidi-marks/) | Naučte se přidávat Bidi značky do dokumentu aplikace Word pomocí Aspose.Words for .NET a vytvářejte profesionální vícejazyčné dokumenty. |
-| [Pro odsazení seznamu použijte znak tabulátoru na úroveň](./use-tab-character-per-level-for-list-indentation/) | Naučte se používat funkci seznamů odsazení se znaky tabulátoru v Aspose.Words pro .NET. Postupujte podle tohoto podrobného průvodce a vytvořte dobře strukturované a čitelné dokumenty. Ušetřete čas a vylepšete svůj pracovní postup s touto výkonnou funkcí. Získejte přístup k úplnému tutoriálu nyní. |
-| [Pro odsazení seznamu použijte mezeru na úroveň](./use-space-character-per-level-for-list-indentation/) | Podrobný průvodce používáním mezery na úrovni pro odsazení seznamu v Aspose.Words pro .NET. Snadno vytvářejte dobře strukturované dokumenty aplikace Word. |
+| [Přidejte Bidi značky do dokumentu Word](./add-bidi-marks/) | V této příručce se dozvíte, jak přidat obousměrné (Bidi) značky do dokumentů aplikace Word pomocí Aspose.Words for .NET. Zajistěte správný směr textu pro vícejazyčný obsah. |
+| [Pro odsazení seznamu použijte znak tabulátoru na úroveň](./use-tab-character-per-level-for-list-indentation/) | Naučte se vytvářet víceúrovňové seznamy s odsazením s kartami pomocí Aspose.Words for .NET. Postupujte podle tohoto průvodce pro přesné formátování seznamu ve vašich dokumentech. |
+| [Pro odsazení seznamu použijte mezeru na úroveň](./use-space-character-per-level-for-list-indentation/) | Zjistěte, jak v Aspose.Words for .NET vytvářet víceúrovňové seznamy s odsazením znaků mezery. Podrobný průvodce pro přesné formátování dokumentu. |

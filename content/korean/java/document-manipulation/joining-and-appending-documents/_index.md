@@ -12,7 +12,7 @@ url: /ko/java/document-manipulation/joining-and-appending-documents/
 
 이 튜토리얼에서는 Aspose.Words for Java 라이브러리를 사용하여 문서를 결합하고 추가하는 방법을 살펴보겠습니다. 서식과 구조를 유지하면서 여러 문서를 원활하게 병합하는 방법을 배우게 됩니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 Java 프로젝트에 Aspose.Words for Java API가 설정되어 있는지 확인하세요.
 

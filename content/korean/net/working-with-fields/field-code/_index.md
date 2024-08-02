@@ -2,83 +2,117 @@
 title: 필드 코드
 linktitle: 필드 코드
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에서 필드 코드와 필드 결과를 가져오는 단계별 가이드입니다.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에서 필드 코드로 작업하는 방법을 알아보세요. 이 가이드에서는 문서 로드, 필드 액세스 및 필드 코드 처리에 대해 설명합니다.
 type: docs
 weight: 10
 url: /ko/net/working-with-fields/field-code/
 ---
+## 소개
 
-다음은 Aspose.Words for .NET의 "필드 코드 가져오기" 기능을 사용하는 아래 C# 소스 코드를 설명하는 단계별 가이드입니다. 원하는 결과를 얻으려면 각 단계를 주의 깊게 따르십시오.
+이 가이드에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 필드 코드로 작업하는 방법을 살펴보겠습니다. 이 튜토리얼이 끝나면 필드를 탐색하고 해당 코드를 추출하고 필요에 따라 이 정보를 활용하는 데 익숙해질 것입니다. 필드 속성을 검사하거나 문서 수정을 자동화하려는 경우 이 단계별 가이드를 통해 필드 코드를 쉽게 처리하는 데 능숙해질 수 있습니다.
 
-## 1단계: 문서 디렉터리 설정
+## 전제 조건
 
-제공된 코드에서 문서의 디렉터리를 지정해야 합니다. "YOUR DOCUMENT DIRECTORY" 값을 문서 디렉토리에 대한 적절한 경로로 바꾸십시오.
+필드 코드의 핵심을 살펴보기 전에 다음 사항이 있는지 확인하세요.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  .NET용 Aspose.Words: Aspose.Words가 설치되어 있는지 확인하세요. 그렇지 않은 경우 다음에서 다운로드할 수 있습니다.[.NET 릴리스용 Aspose.Words](https://releases.aspose.com/words/net/).
+2. Visual Studio: .NET 코드를 작성하고 실행하려면 Visual Studio와 같은 IDE(통합 개발 환경)가 필요합니다.
+3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 예제와 코드 조각을 따라가는 데 도움이 됩니다.
+4. 샘플 문서: 필드 코드가 포함된 샘플 Word 문서를 준비하세요. 이 튜토리얼에서는 다음과 같은 문서가 있다고 가정합니다.`Hyperlinks.docx` 다양한 필드 코드로
 
-## 2단계: 문서 로드
+## 네임스페이스 가져오기
 
-첫 번째 단계는 필드 코드를 얻으려는 문서를 업로드하는 것입니다.
-
-```csharp
-Document doc = new Document(dataDir + "Hyperlinks.docx");
-```
-
-"Hyperlinks.docx"를 자신의 파일 이름으로 바꾸십시오.
-
-## 3단계: 문서 필드 찾아보기
-
- 우리는`foreach` loop는 문서에 있는 모든 필드를 반복합니다.
+시작하려면 C# 프로젝트에 필요한 네임스페이스를 포함해야 합니다. 이러한 네임스페이스는 Word 문서를 조작하는 데 필요한 클래스와 메서드를 제공합니다. 가져오는 방법은 다음과 같습니다.
 
 ```csharp
-foreach(Field field in doc.Range.Fields)
-{
-     string fieldCode = field.GetFieldCode();
-     string fieldResult = field.Result;
-}
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
- 루프가 반복될 때마다 다음을 사용하여 필드 코드를 얻습니다.`GetFieldCode()` 방법. 또한 필드의 결과를 변수에 저장합니다.
+이러한 네임스페이스는 Aspose.Words로 작업하고 필드 코드 기능에 액세스하는 데 중요합니다.
 
-### .NET용 Aspose.Words를 사용하여 필드 코드 가져오기에 대한 소스 코드 예
+Word 문서에서 필드 코드를 추출하고 작업하는 과정을 분석해 보겠습니다. 샘플 코드 조각을 사용하여 각 단계를 명확하게 설명하겠습니다.
+
+## 1단계: 문서 경로 정의
+
+먼저 문서의 경로를 지정해야 합니다. Aspose.Words가 파일을 찾는 곳입니다.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ 설명: 바꾸기`"YOUR DOCUMENTS DIRECTORY"` 문서가 저장된 실제 경로와 함께. 이 경로는 Aspose.Words에 작업하려는 파일을 찾을 위치를 알려줍니다.
+
+## 2단계: 문서 로드
+
+ 다음으로 문서를 Aspose.Words에 로드해야 합니다.`Document`물체. 이를 통해 프로그래밍 방식으로 문서와 상호 작용할 수 있습니다.
+
+```csharp
 // 문서를 로드합니다.
 Document doc = new Document(dataDir + "Hyperlinks.docx");
+```
 
+ 설명: 이 코드 줄은`Hyperlinks.docx` 지정된 디렉토리의 파일을`Document` 명명된 개체`doc`. 이제 이 개체에는 Word 문서의 내용이 포함됩니다.
+
+## 3단계: 문서 필드에 액세스
+
+필드 코드로 작업하려면 문서의 필드에 액세스해야 합니다. Aspose.Words는 문서 내의 모든 필드를 반복하는 방법을 제공합니다.
+
+```csharp
 // 문서 필드를 반복합니다.
 foreach(Field field in doc.Range.Fields)
 {
-     string fieldCode = field.GetFieldCode();
-     string fieldResult = field.Result;
+    string fieldCode = field.GetFieldCode();
+    string fieldResult = field.Result;
 
-     //필드의 코드와 결과를 사용하여 작업을 수행합니다.
+    // 필드의 코드와 결과를 사용하여 작업을 수행합니다.
 }
 ```
 
-이 예에서는 문서를 로드한 다음 문서에 있는 모든 필드를 순환했습니다. 각 반복에서 우리는 필드의 코드와 결과를 얻었습니다. 필요에 따라 코드 및 결과 필드를 처리하는 고유한 논리를 추가할 수 있습니다.
+ 설명: 이 코드 조각은 문서의 각 필드를 반복합니다. 각 필드에 대해 필드 코드와 필드 결과를 검색합니다. 그만큼`GetFieldCode()` 메소드는 원시 필드 코드를 반환하고,`Result` 속성은 해당 필드에서 생성된 값이나 결과를 제공합니다.
 
-이것으로 .NET용 Aspose.Words와 함께 "필드 코드 가져오기" 기능을 사용하는 방법에 대한 가이드를 마칩니다.
+## 4단계: 필드 코드 처리
 
-### FAQ
+이제 필드 코드와 해당 결과에 액세스할 수 있으므로 필요에 따라 처리할 수 있습니다. 이를 표시하거나 수정하거나 일부 계산에 사용할 수 있습니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 Word 문서에 필드를 삽입하려면 어떻게 해야 합니까?
+```csharp
+foreach(Field field in doc.Range.Fields)
+{
+    string fieldCode = field.GetFieldCode();
+    string fieldResult = field.Result;
 
- A: .NET용 Aspose.Words를 사용하여 Word 문서에 필드를 삽입하려면 다음을 사용할 수 있습니다.`DocumentBuilder.InsertField` 적절한 필드 코드를 지정하는 방법입니다. 예를 들어 다음을 사용할 수 있습니다.`builder.InsertField("MERGEFIELD CustomerName")` 문서에 병합 필드를 삽입합니다.
+    Console.WriteLine("Field Code: " + fieldCode);
+    Console.WriteLine("Field Result: " + fieldResult);
+}
+```
 
-#### Q: .NET용 Aspose.Words를 사용하여 문서의 필드를 어떻게 업데이트할 수 있나요?
+설명: 이 향상된 루프는 필드 코드와 해당 결과를 콘솔에 인쇄합니다. 이는 각 필드가 수행하는 작업을 디버깅하거나 간단히 이해하는 데 유용합니다.
 
- A: .NET용 Aspose.Words를 사용하여 문서 필드를 업데이트하려면 다음을 사용할 수 있습니다.`Document.UpdateFields` 방법. 그러면 병합 필드, 날짜 필드 등과 같이 문서에 있는 모든 필드가 업데이트됩니다.
+## 결론
 
-#### Q: .NET용 Aspose.Words의 특정 필드 값을 어떻게 검색할 수 있나요?
+Aspose.Words for .NET을 사용하여 Word 문서에서 필드 코드로 작업하는 것은 문서 처리를 자동화하고 사용자 정의하는 강력한 도구가 될 수 있습니다. 이 가이드를 따르면 이제 필드 코드에 효율적으로 액세스하고 처리하는 방법을 알게 됩니다. 필드를 검사하거나 수정해야 하는 경우 이러한 기능을 애플리케이션에 통합하기 위한 기반이 있습니다.
 
- A: .NET용 Aspose.Words의 특정 필드 값을 검색하려면 다음을 사용할 수 있습니다.`Field.GetResult` 메소드에서 필드의 인덱스를 지정하여`Document.Range.Fields` 수집. 예를 들어 다음을 사용할 수 있습니다.`string value = document.Range.Fields[0].GetResult()` 문서의 첫 번째 필드 값을 검색합니다.
+Aspose.Words에 대해 자세히 알아보고 다양한 필드 유형과 코드를 실험해 보세요. 더 많이 연습할수록 이러한 도구를 활용하여 동적이고 반응이 빠른 Word 문서를 만드는 데 더 능숙해질 것입니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 문서에서 필드를 제거하려면 어떻게 해야 합니까?
+## FAQ
 
- A: .NET용 Aspose.Words를 사용하여 문서에서 필드를 제거하려면 다음을 사용할 수 있습니다.`Field.Remove` 지정하는 방법`Field` 제거하려는 개체. 그러면 문서에서 해당 필드가 제거됩니다.
+### Word 문서의 필드 코드란 무엇입니까?
+
+필드 코드는 특정 기준에 따라 콘텐츠를 동적으로 생성하는 Word 문서의 자리 표시자입니다. 날짜, 페이지 번호 또는 기타 자동화된 콘텐츠 삽입과 같은 작업을 수행할 수 있습니다.
+
+### Aspose.Words를 사용하여 Word 문서의 필드 코드를 어떻게 업데이트할 수 있나요?
+
+ 필드 코드를 업데이트하려면`Update()` 에 대한 방법`Field` 물체. 이 메서드는 필드를 새로 고쳐 문서 내용을 기반으로 한 최신 결과를 표시합니다.
+
+### 프로그래밍 방식으로 Word 문서에 새 필드 코드를 추가할 수 있나요?
+
+ 예, 다음을 사용하여 새 필드 코드를 추가할 수 있습니다.`DocumentBuilder` 수업. 이를 통해 필요에 따라 문서에 다양한 유형의 필드를 삽입할 수 있습니다.
+
+### Aspose.Words에서 다양한 유형의 필드를 어떻게 처리합니까?
+
+ Aspose.Words는 북마크, 메일 병합 등과 같은 다양한 필드 유형을 지원합니다. 다음과 같은 속성을 사용하여 필드 유형을 식별할 수 있습니다.`Type` 그에 따라 처리하십시오.
+
+### Aspose.Words에 대한 자세한 정보는 어디서 얻을 수 있나요?
+
+자세한 문서, 자습서 및 지원을 보려면 다음을 방문하세요.[Aspose.Words 문서](https://reference.aspose.com/words/net/), [다운로드 페이지](https://releases.aspose.com/words/net/) , 또는[지원 포럼](https://forum.aspose.com/c/words/8).

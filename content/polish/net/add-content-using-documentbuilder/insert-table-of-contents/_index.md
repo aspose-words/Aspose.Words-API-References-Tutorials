@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## Wstęp
-tym samouczku dowiesz się, jak efektywnie dodawać spis treści (TOC) do dokumentów programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezbędna do organizowania i nawigacji w długich dokumentach, zwiększania czytelności i zapewniania szybkiego przeglądu sekcji dokumentu.
+tym samouczku dowiesz się, jak efektywnie dodawać spis treści (TOC) do dokumentów programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezbędna do organizowania i poruszania się po długich dokumentach, zwiększania czytelności i zapewniania szybkiego przeglądu sekcji dokumentu.
 
 ## Warunki wstępne
 

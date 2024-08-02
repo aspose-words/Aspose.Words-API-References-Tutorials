@@ -46,7 +46,7 @@ builder.ParagraphFormat.Style = indentedCode;
 builder.Writeln("This is an indented code");
 ```
 
-おめでとうございます！これで、Aspose.Words for .NET でインデントされたコード機能を使用する方法を学習しました。
+おめでとうございます。これで、Aspose.Words for .NET でインデントされたコード機能を使用する方法を学習しました。
 
 
 ### よくある質問

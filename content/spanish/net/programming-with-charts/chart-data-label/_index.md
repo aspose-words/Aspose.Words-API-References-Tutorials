@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Explicación
 
-- Documento doc: Crea una nueva instancia de la clase Documento.
+- Documento de documento: crea una nueva instancia de la clase Documento.
 - Constructor DocumentBuilder: DocumentBuilder ayuda a insertar contenido en el objeto Documento.
 
 ## Paso 2: insertar un gráfico

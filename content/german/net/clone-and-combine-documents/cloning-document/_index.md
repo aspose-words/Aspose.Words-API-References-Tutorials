@@ -22,7 +22,7 @@ Bevor wir mit dem Programmieren beginnen, stellen wir sicher, dass wir alles hab
 
 ## Namespaces importieren
 
-Bevor Sie die Aspose.Words für .NET-Bibliothek verwenden können, müssen Sie die erforderlichen Namespaces in Ihr Projekt einbinden. Das ist, als würden Sie Ihrem Code sagen: „Hey, ich muss ein paar Spezialwerkzeuge verwenden, also lass sie uns einbinden.“
+Bevor Sie die Aspose.Words-Bibliothek für .NET verwenden können, müssen Sie die erforderlichen Namespaces in Ihr Projekt einbinden. Das ist, als würden Sie Ihrem Code sagen: „Hey, ich muss ein paar Spezialwerkzeuge verwenden, also lass sie uns einbinden.“
 
 ```csharp
 using Aspose.Words;

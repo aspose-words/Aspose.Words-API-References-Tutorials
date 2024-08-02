@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/remove-content/remove-table-of-contents/
 ---
-## Odebrat obsah v dokumentu aplikace Word pomocí Aspose.Words for .NET
+## Úvod
 
 Už vás nebaví zabývat se nežádoucím obsahem (TOC) v dokumentech aplikace Word? Všichni jsme tam byli – někdy TOC prostě není nutné. Naštěstí pro vás Aspose.Words pro .NET usnadňuje programové odstranění obsahu. V tomto tutoriálu vás provedu procesem krok za krokem, abyste jej zvládli během chvilky. Pojďme se rovnou ponořit!
 
@@ -41,7 +41,7 @@ Než budeme moci s vaším dokumentem manipulovat, musíme definovat, kde se nac
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Nahradit`"YOUR DOCUMENT DIRECTORY"` cestou ke složce dokumentů. Zde se nachází váš soubor aplikace Word.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou ke složce dokumentů. Zde se nachází váš soubor aplikace Word.
 
 ## Krok 2: Vložte dokument
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Zde je to, co se děje:
 - `doc.Range.Fields`: Tím získáte přístup ke všem polím v dokumentu.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: Toto filtruje pole tak, aby se nacházela pouze ta, která jsou obsahem.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Toto filtruje pole tak, aby se nacházela pouze ta, která jsou obsahem.
 - `.ToList().ForEach(f => f.Remove())`: Toto převede filtrovaná pole na seznam a každé z nich odstraní.
 
 ## Krok 4: Uložte upravený dokument
@@ -79,26 +79,26 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Závěr
 
-tady to máte! Odebrání obsahu z dokumentu aplikace Word pomocí Aspose.Words for .NET je jednoduché, jakmile jej rozdělíte do těchto jednoduchých kroků. Tato výkonná knihovna nejen pomáhá s odstraňováním TOC, ale také zvládne nespočet dalších manipulací s dokumenty. Takže do toho a vyzkoušejte to!
+A tady to máte! Odebrání obsahu z dokumentu aplikace Word pomocí Aspose.Words for .NET je jednoduché, jakmile jej rozdělíte do těchto jednoduchých kroků. Tato výkonná knihovna nejen pomáhá s odstraňováním TOC, ale také zvládne nespočet dalších manipulací s dokumenty. Takže do toho a vyzkoušejte to!
 
-## Nejčastější dotazy
+## FAQ
 
-### 1. Co je Aspose.Words pro .NET?
+### Co je Aspose.Words for .NET?
 
 Aspose.Words for .NET je robustní knihovna .NET pro manipulaci s dokumenty, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově.
 
-### 2. Mohu používat Aspose.Words zdarma?
+### Mohu používat Aspose.Words zdarma?
 
  Ano, můžete použít Aspose.Words s a[zkušební verze zdarma](https://releases.aspose.com/) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
-### 3. Je možné odstranit další pole pomocí Aspose.Words?
+### Je možné odstranit další pole pomocí Aspose.Words?
 
 Absolutně! Jakékoli pole můžete odstranit zadáním jeho typu v podmínce filtru.
 
-### 4. Potřebuji Visual Studio, abych mohl používat Aspose.Words?
+### Potřebuji Visual Studio, abych mohl používat Aspose.Words?
 
 Přestože je Visual Studio vysoce doporučeno pro snadný vývoj, můžete použít jakékoli IDE, které podporuje .NET.
 
-### 5. Kde najdu další informace o Aspose.Words?
+### Kde najdu více informací o Aspose.Words?
 
  Pro podrobnější dokumentaci navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/).

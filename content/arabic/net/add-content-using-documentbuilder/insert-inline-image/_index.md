@@ -16,7 +16,7 @@ url: /ar/net/add-content-using-documentbuilder/insert-inline-image/
 قبل الخوض في عملية إدراج الصور المضمنة باستخدام Aspose.Words لـ .NET، تأكد من توفر المتطلبات الأساسية التالية:
 
 1. بيئة Visual Studio: تم تثبيت Visual Studio وجاهز لإنشاء وتجميع تطبيقات .NET.
-2.  Aspose.Words for .NET Library: قم بتنزيل وتثبيت Aspose.Words for .NET Library من[هنا](https://releases.aspose.com/words/net/).
+2.  Aspose.Words لمكتبة .NET: قم بتنزيل وتثبيت مكتبة Aspose.Words لـ .NET من[هنا](https://releases.aspose.com/words/net/).
 3. الفهم الأساسي لـ C#: الإلمام بأساسيات لغة البرمجة C# سيكون مفيدًا لتنفيذ مقتطفات التعليمات البرمجية.
 
 الآن، دعنا نستعرض خطوات استيراد مساحات الأسماء الضرورية وإدراج صورة مضمّنة باستخدام Aspose.Words for .NET.
@@ -65,7 +65,7 @@ doc.Save(dataDir + "InsertInlineImage.docx");
 
 ## خاتمة
 
-في الختام، يعد دمج الصور المضمنة في مستندات Word باستخدام Aspose.Words for .NET عملية مباشرة تعمل على تحسين تصور المستند ووظيفته. باتباع الخطوات الموضحة أعلاه، يمكنك معالجة الصور بكفاءة داخل مستنداتك برمجيًا، مع الاستفادة من قوة Aspose.Words.
+في الختام، يعد دمج الصور المضمنة في مستندات Word باستخدام Aspose.Words for .NET عملية مباشرة تعمل على تحسين تصور المستند ووظائفه. باتباع الخطوات الموضحة أعلاه، يمكنك معالجة الصور بكفاءة داخل مستنداتك برمجيًا، مع الاستفادة من قوة Aspose.Words.
 
 ## الأسئلة الشائعة
 

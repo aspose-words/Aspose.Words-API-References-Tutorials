@@ -16,7 +16,7 @@ Dấu gạch nối là quá trình chia các từ thành các âm tiết và th�
 
 ## 2. Thiết lập môi trường của bạn
 
-Trước khi chúng ta đi sâu vào cách sử dụng dấu gạch nối trong Aspose.Words cho Java, bạn cần thiết lập môi trường phát triển của mình. Hãy chắc chắn rằng bạn có những điều sau đây:
+Trước khi chúng ta đi sâu vào sử dụng dấu gạch nối trong Aspose.Words cho Java, bạn cần thiết lập môi trường phát triển của mình. Hãy chắc chắn rằng bạn có những điều sau đây:
 
 - Đã cài đặt Bộ công cụ phát triển Java (JDK)
 - Thư viện Aspose.Words cho Java
@@ -64,7 +64,7 @@ Gạch nối là quá trình thêm dấu gạch nối ở cuối dòng để c�
 
 ### 2. Tôi có thể sử dụng dấu gạch nối trong nhiều ngôn ngữ không?
 
-Có, bạn có thể. Aspose.Words for Java cho phép bạn đăng ký và tải từ điển gạch nối cho các ngôn ngữ khác nhau.
+Vâng, bạn có thể. Aspose.Words for Java cho phép bạn đăng ký và tải từ điển gạch nối cho các ngôn ngữ khác nhau.
 
 ### 3. Aspose.Words for Java có dễ tích hợp vào dự án Java của tôi không?
 

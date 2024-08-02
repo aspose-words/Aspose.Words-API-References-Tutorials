@@ -2,115 +2,126 @@
 title: Utiliser le caractère de tabulation par niveau pour l'indentation de la liste
 linktitle: Utiliser le caractère de tabulation par niveau pour l'indentation de la liste
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment utiliser la fonctionnalité de listes de retrait avec des caractères de tabulation dans Aspose.Words for .NET. Gagnez du temps et améliorez votre flux de travail grâce à cette fonctionnalité puissante.
+description: Découvrez comment créer des listes à plusieurs niveaux avec une indentation par onglets à l'aide d'Aspose.Words pour .NET. Suivez ce guide pour un formatage de liste précis dans vos documents.
 type: docs
 weight: 10
 url: /fr/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
+## Introduction
 
-Dans ce didacticiel, nous explorerons le code source C# fourni pour la fonctionnalité « Utiliser un caractère de tabulation par niveau pour l'indentation de liste » avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'appliquer des caractères de tabulation pour mettre en retrait les listes à chaque niveau, offrant ainsi une plus grande flexibilité et un plus grand contrôle sur l'apparence de vos documents.
+Les listes sont fondamentales pour organiser le contenu, que vous rédigiez un rapport, rédigiez un document de recherche ou prépariez une présentation. Cependant, lorsqu'il s'agit de présenter des listes avec plusieurs niveaux d'indentation, obtenir le format souhaité peut s'avérer un peu délicat. À l'aide d'Aspose.Words pour .NET, vous pouvez facilement gérer l'indentation des listes et personnaliser la façon dont chaque niveau est représenté. Dans ce didacticiel, nous nous concentrerons sur la création d'une liste avec plusieurs niveaux d'indentation, en utilisant des caractères de tabulation pour un formatage précis. À la fin de ce guide, vous comprendrez clairement comment configurer et enregistrer votre document avec le style d'indentation correct.
 
-## Étape 1 : Configuration de l'environnement
+## Conditions préalables
 
-Avant de commencer, assurez-vous d'avoir configuré votre environnement de développement avec Aspose.Words for .NET. Assurez-vous d'avoir ajouté les références nécessaires et importé les espaces de noms appropriés.
+Avant de passer aux étapes, assurez-vous d'avoir les éléments suivants prêts :
 
-## Étape 2 : Création du document et du générateur
+1.  Aspose.Words pour .NET installé : vous avez besoin de la bibliothèque Aspose.Words. Si vous ne l'avez pas encore installé, vous pouvez le télécharger depuis[Téléchargements Aspose](https://releases.aspose.com/words/net/).
+
+2. Compréhension de base de C# et .NET : une connaissance de la programmation C# et du framework .NET est essentielle pour suivre ce didacticiel.
+
+3. Environnement de développement : assurez-vous de disposer d'un IDE ou d'un éditeur de texte pour écrire et exécuter votre code C# (par exemple, Visual Studio).
+
+4. Exemple de répertoire de documents : créez un répertoire dans lequel vous enregistrerez et testerez votre document. 
+
+## Importer des espaces de noms
+
+Tout d’abord, vous devez importer les espaces de noms nécessaires pour utiliser Aspose.Words dans votre application .NET. Ajoutez les directives using suivantes au début de votre fichier C# :
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Dans cette section, nous allons créer une liste à plusieurs niveaux avec une indentation par onglets à l'aide d'Aspose.Words pour .NET. Suivez ces étapes:
+
+## Étape 1 : Configurez votre document
+
+Créer un nouveau document et DocumentBuilder
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Créer un nouveau document
 Document doc = new Document();
+
+// Initialiser DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Dans cette étape, nous créons un nouveau`Document` objet et un associé`DocumentBuilder` objet. Ces objets nous permettront de manipuler et de générer notre document.
+ Ici, nous avons mis en place un nouveau`Document` objet et un`DocumentBuilder` pour commencer à créer du contenu dans le document.
 
-## Étape 3 : Création d'une liste avec trois niveaux d'indentation
+## Étape 2 : appliquer le formatage de liste par défaut
+
+Créer et formater la liste
 
 ```csharp
+// Appliquer le style de numérotation par défaut à la liste
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+```
+
+Dans cette étape, nous appliquons le format de numérotation par défaut à notre liste. Cela aidera à créer une liste numérotée que nous pourrons ensuite personnaliser.
+
+## Étape 3 : Ajouter des éléments de liste avec différents niveaux
+
+Insérer des éléments de liste et un retrait
+
+```csharp
+//Ajouter le premier élément de la liste
+builder.Write("Element 1");
+
+// Indenter pour créer le deuxième niveau
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
+
+// Indentez davantage pour créer le troisième niveau
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Dans cette étape, nous appliquons le format par défaut des numéros de liste en utilisant le`ApplyNumberDefault()` méthode du formateur de liste. Ensuite, nous ajoutons trois éléments à notre liste à l'aide du générateur de documents.`Writeln()`et`Write()` méthodes. Nous utilisons le`ListIndent()` méthode pour incrémenter l’indentation à chaque niveau.
+ Ici, nous ajoutons trois éléments à notre liste, chacun avec des niveaux d'indentation croissants. Le`ListIndent` La méthode est utilisée pour augmenter le niveau d’indentation pour chaque élément suivant.
 
 ## Étape 4 : Configurer les options d'enregistrement
 
+Définir l'indentation pour utiliser les caractères de tabulation
+
 ```csharp
+// Configurer les options d'enregistrement pour utiliser les caractères de tabulation pour l'indentation
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- Dans cette étape, nous configurons les options d'enregistrement du document. Nous créons un nouveau`TxtSaveOptions` objet et définissez le`ListIndentation.Count` propriété sur 1 pour spécifier le nombre de caractères de tabulation par niveau d'indentation. Nous avons également fixé le`ListIndentation.Character` propriété à '\t' pour spécifier que nous voulons utiliser des caractères de tabulation.
+ Nous configurons le`TxtSaveOptions` pour utiliser des caractères de tabulation pour l'indentation dans le fichier texte enregistré. Le`ListIndentation.Character` la propriété est définie sur`'\t'`, qui représente un caractère de tabulation.
 
 ## Étape 5 : Enregistrez le document
 
+Enregistrez le document avec les options spécifiées
+
 ```csharp
+// Enregistrez le document avec les options spécifiées
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- Dans cette dernière étape, nous enregistrons le document avec les options de sauvegarde spécifiées. Nous utilisons le`Save()` méthode du document transmettant le chemin complet du fichier de sortie et les options d’enregistrement.
+ Enfin, nous sauvegardons le document en utilisant le`Save` méthode avec notre coutume`TxtSaveOptions`. Cela garantit que la liste est enregistrée avec des caractères de tabulation pour les niveaux d'indentation.
 
+## Conclusion
 
-Vous pouvez maintenant exécuter le code source pour générer un document avec une indentation de liste à l'aide de caractères de tabulation. Le fichier de sortie sera enregistré dans le répertoire spécifié sous le nom « WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt ».
+Dans ce didacticiel, nous avons expliqué la création d'une liste à plusieurs niveaux avec une indentation par onglets à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement gérer et formater les listes dans vos documents, en vous assurant qu'elles sont présentées de manière claire et professionnelle. Que vous travailliez sur des rapports, des présentations ou tout autre type de document, ces techniques vous aideront à contrôler précisément le formatage de votre liste.
 
-### Exemple de source de code pour la fonctionnalité Utiliser un caractère de tabulation par niveau pour l’indentation de liste avec Aspose.Words pour .NET :
+## FAQ
 
-```csharp
+### Comment puis-je changer le caractère d'indentation d'une tabulation en un espace ?
+ Vous pouvez modifier le`saveOptions.ListIndentation.Character` propriété pour utiliser un caractère espace au lieu d’une tabulation.
 
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+### Puis-je appliquer différents styles de liste à différents niveaux ?
+Oui, Aspose.Words permet la personnalisation des styles de liste à différents niveaux. Vous pouvez modifier les options de formatage de liste pour obtenir différents styles.
 
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+### Que se passe-t-il si je dois appliquer des puces au lieu de chiffres ?
+ Utilisez le`ListFormat.ApplyBulletDefault()` méthode au lieu de`ApplyNumberDefault()` pour créer une liste à puces.
 
-// Créer une liste avec trois niveaux d'indentation
-builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
-builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
-builder.ListFormat.ListIndent();
-builder.Write("Element 3");
+### Comment puis-je ajuster la taille du caractère de tabulation utilisé pour l’indentation ?
+ Malheureusement, la taille de l'onglet dans`TxtSaveOptions`c'est réglé. Pour ajuster la taille de l'indentation, vous devrez peut-être utiliser des espaces ou personnaliser directement le formatage de la liste.
 
-TxtSaveOptions saveOptions = new TxtSaveOptions();
-saveOptions.ListIndentation.Count = 1;
-saveOptions.ListIndentation.Character = '\t';
-
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
-
-```
-
-Maintenant que vous avez fini de générer votre document avec l'indentation de liste à l'aide de caractères de tabulation, vous pouvez utiliser Markdown pour formater le contenu de votre article. Assurez-vous d'utiliser des balises de formatage appropriées pour mettre en évidence les titres, les sous-titres et le code source inclus.
-
-### Questions fréquemment posées
-
-#### Q : Qu'est-ce que la fonctionnalité « Utiliser un caractère de tabulation par niveau pour l'indentation de liste » avec Aspose.Words pour .NET ?
-La fonctionnalité « Utiliser un caractère de tabulation par niveau pour l'indentation de liste » avec Aspose.Words for .NET permet d'appliquer des caractères de tabulation pour l'indentation de liste à chaque niveau. Cela offre une plus grande flexibilité et un meilleur contrôle sur l’apparence de vos documents.
-
-#### Q : Comment puis-je utiliser cette fonctionnalité avec Aspose.Words pour .NET ?
-Pour utiliser cette fonctionnalité avec Aspose.Words for .NET, vous pouvez suivre ces étapes :
-
-Configurez votre environnement de développement en ajoutant les références nécessaires et en important les espaces de noms appropriés.
-
- Créer un nouveau`Document` objet et un associé`DocumentBuilder` objet.
-
- Utilisez le`DocumentBuilder`pour créer une liste avec plusieurs niveaux d'indentation à l'aide des méthodes`ApplyNumberDefault()` pour appliquer le format de numéro de liste par défaut,`Writeln()`et`Write()` pour ajouter des éléments à la liste, et`ListIndent()` pour incrémenter l'indentation à chaque niveau.
-
- Configurez les options de sauvegarde en créant un`TxtSaveOptions` objet et définition des propriétés`ListIndentation.Count` au nombre de caractères de tabulation par niveau et`ListIndentation.Character` à`'\t'` pour utiliser les caractères de tabulation.
-
- Enregistrez le document à l'aide du`Save()` méthode du document spécifiant le chemin complet du fichier de sortie et les options de sauvegarde.
-
-#### Q : Est-il possible de personnaliser le nombre de caractères de tabulation par niveau pour l'indentation de la liste ?
- Oui, vous pouvez personnaliser le nombre de caractères de tabulation par niveau pour l'indentation de liste en modifiant la valeur de`ListIndentation.Count` propriété dans le`TxtSaveOptions` classe. Vous pouvez spécifier le nombre de caractères de tabulation souhaité pour chaque niveau d'indentation.
-
-#### Q : Quels autres caractères puis-je utiliser pour l’indentation de liste avec Aspose.Words for .NET ?
-Outre les caractères de tabulation, vous pouvez également utiliser d'autres caractères pour l'indentation de liste avec Aspose.Words for .NET. Vous pouvez définir le`ListIndentation.Character` propriété à n'importe quel caractère souhaité, tel que l'espace (`' '`), pour l'indentation des listes.
-
-#### Q : Aspose.Words for .NET offre-t-il d'autres fonctionnalités pour la gestion des listes ?
-Oui, Aspose.Words for .NET offre de nombreuses fonctionnalités pour gérer les listes dans les documents Word. Vous pouvez créer des listes numérotées ou à puces, définir des niveaux d'indentation, personnaliser le style des listes, ajouter des éléments de liste, etc.
+### Puis-je utiliser ces paramètres lors de l'exportation vers d'autres formats comme PDF ou DOCX ?
+Les paramètres de caractères de tabulation spécifiques s'appliquent aux fichiers texte. Pour les formats tels que PDF ou DOCX, vous devrez ajuster les options de formatage dans ces formats.

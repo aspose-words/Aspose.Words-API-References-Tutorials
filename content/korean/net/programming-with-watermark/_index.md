@@ -12,4 +12,4 @@ url: /ko/net/programming-with-watermark/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [특정 옵션으로 텍스트 워터마크 추가](./add-text-watermark-with-specific-options/) | .NET용 Aspose.Words를 사용하여 특정 옵션으로 텍스트 워터마크를 추가하는 방법을 알아보세요. 단계별 가이드. |
+| [특정 옵션으로 텍스트 워터마크 추가](./add-text-watermark-with-specific-options/) | Aspose.Words for .NET을 사용하여 Word 문서에 특정 옵션이 포함된 텍스트 워터마크를 추가하는 방법을 알아보세요. 글꼴, 크기, 색상, 레이아웃을 쉽게 사용자 정의하세요. |

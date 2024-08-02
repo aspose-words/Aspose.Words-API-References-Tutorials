@@ -1,6 +1,6 @@
 ---
-title: Cara Menjaga Dokumen Anda Tetap Aman dan Terjamin
-linktitle: Cara Menjaga Dokumen Anda Tetap Aman dan Terjamin
+title: Cara Menjaga Dokumen Anda Aman dan Terjamin
+linktitle: Cara Menjaga Dokumen Anda Aman dan Terjamin
 second_title: API Pemrosesan Dokumen Java Aspose.Words
 description: Amankan dokumen Anda dengan Aspose.Words untuk Java. Enkripsi, lindungi, dan tambahkan tanda tangan digital dengan mudah. Jaga keamanan data Anda.
 type: docs
@@ -8,7 +8,7 @@ weight: 10
 url: /id/java/document-security/keep-documents-safe-secure/
 ---
 
-Di era digital ini, di mana informasi adalah hal yang sangat penting, menjaga dokumen Anda tetap aman dan terlindungi adalah hal yang paling penting. Baik itu file pribadi, dokumen bisnis, atau data rahasia, menjaganya dari akses tidak sah dan potensi ancaman sangatlah penting. Dalam panduan komprehensif ini, kami akan memandu Anda melalui proses pengamanan dokumen Anda menggunakan Aspose.Words untuk Java, pustaka pemrosesan kata dan manipulasi dokumen yang canggih.
+Di era digital ini, di mana informasi adalah hal yang sangat penting, menjaga dokumen Anda tetap aman dan terlindungi adalah hal yang paling penting. Baik itu file pribadi, dokumen bisnis, atau data rahasia, menjaganya dari akses tidak sah dan potensi ancaman sangatlah penting. Dalam panduan komprehensif ini, kami akan memandu Anda melalui proses mengamankan dokumen Anda menggunakan Aspose.Words untuk Java, pustaka pemrosesan kata dan manipulasi dokumen yang canggih.
 
 ## 1. Perkenalan
 
@@ -199,7 +199,7 @@ Setelah menerapkan langkah-langkah keamanan, uji dokumen Anda secara menyeluruh 
 
 ## 14. Kesimpulan
 
-Dalam panduan langkah demi langkah ini, kami mengeksplorasi pentingnya keamanan dokumen dan bagaimana Aspose.Words untuk Java dapat membantu melindungi dokumen Anda dari akses tidak sah. Dengan memanfaatkan fitur perpustakaan, seperti perlindungan kata sandi, enkripsi, tanda tangan digital, watermarking, dan redaksi, Anda dapat memastikan bahwa dokumen Anda tetap aman dan terlindungi.
+Dalam panduan langkah demi langkah ini, kami mengeksplorasi pentingnya keamanan dokumen dan bagaimana Aspose.Words untuk Java dapat membantu melindungi dokumen Anda dari akses tidak sah. Dengan memanfaatkan fitur perpustakaan, seperti perlindungan kata sandi, enkripsi, tanda tangan digital, penandaan air, dan redaksi, Anda dapat memastikan bahwa dokumen Anda tetap aman dan terlindungi.
 
 ## FAQ
 

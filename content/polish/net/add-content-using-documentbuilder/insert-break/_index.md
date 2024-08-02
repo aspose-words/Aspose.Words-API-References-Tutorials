@@ -2,7 +2,7 @@
 title: Wstaw przerwę w dokumencie programu Word
 linktitle: Wstaw przerwę w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić przerwę w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika. Idealny dla programistów, którzy chcą opanować manipulację dokumentami.
+description: Dowiedz się, jak wstawić przerwę w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z tego szczegółowego przewodnika. Idealny dla programistów, którzy chcą opanować manipulację dokumentami.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-break/

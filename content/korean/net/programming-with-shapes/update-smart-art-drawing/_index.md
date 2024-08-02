@@ -2,54 +2,129 @@
 title: 스마트 아트 드로잉 업데이트
 linktitle: 스마트 아트 드로잉 업데이트
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에서 스마트 아트 그림을 업데이트하는 방법을 알아보세요.
+description: 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 스마트 아트 그림을 업데이트하는 방법을 알아보세요. 시각적 자료가 항상 정확한지 확인하세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-shapes/update-smart-art-drawing/
 ---
+## 소개
 
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서에서 스마트 아트 그림을 업데이트하는 방법을 설명합니다. 문서의 도형을 반복하고 스마트 아트가 있는지 확인하면 데이터 변경 사항을 반영하도록 스마트 아트 드로잉을 업데이트할 수 있습니다.
+스마트 아트 그래픽은 Word 문서의 정보를 시각적으로 표현하는 환상적인 방법입니다. 비즈니스 보고서, 교육 기사, 프레젠테이션 초안 작성 시 Smart Art를 사용하면 복잡한 데이터를 더욱 이해하기 쉽게 만들 수 있습니다. 그러나 문서가 발전함에 따라 문서 내의 스마트 아트 그래픽을 업데이트하여 최신 변경 사항을 반영해야 할 수도 있습니다. .NET용 Aspose.Words를 사용하는 경우 프로그래밍 방식으로 이 프로세스를 간소화할 수 있습니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서의 스마트 아트 그림을 업데이트하여 시각적 요소를 신선하고 정확하게 유지하는 방법을 안내합니다.
 
-## 전제조건
-이 튜토리얼을 따르려면 다음이 필요합니다.
+## 전제 조건
 
-- .NET 라이브러리용 Aspose.Words가 설치되었습니다.
-- C# 및 Word 문서를 사용한 단어 처리에 대한 기본 지식.
+단계를 시작하기 전에 다음 사항을 확인하세요.
 
-## 1단계: 문서 디렉터리 설정
- 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서가 있는 디렉토리의 실제 경로를 사용합니다.
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
+
+2. .NET 환경: Visual Studio와 같은 .NET 개발 환경이 설정되어 있어야 합니다.
+
+3. C#에 대한 기본 지식: 튜토리얼에는 코딩이 포함되어 있으므로 C#에 익숙하면 도움이 됩니다.
+
+4. 샘플 문서: 업데이트하려는 스마트 아트가 포함된 Word 문서입니다. 이 튜토리얼에서는 "SmartArt.docx"라는 문서를 사용합니다.
+
+## 네임스페이스 가져오기
+
+.NET용 Aspose.Words를 사용하려면 프로젝트에 적절한 네임스페이스를 포함해야 합니다. 가져오는 방법은 다음과 같습니다.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## 2단계: 문서 로드
- 다음을 사용하여 스마트 아트 드로잉이 포함된 Word 문서를 로드합니다.`Document` 클래스 생성자.
+이러한 네임스페이스는 Word 문서 및 Smart Art와 상호 작용하는 데 필요한 클래스와 메서드를 제공합니다.
+
+## 1. 문서 초기화
+
+제목: 문서 로드
+
+설명:
+ 먼저 스마트 아트 그래픽이 포함된 Word 문서를 로드해야 합니다. 이는 인스턴스를 생성하여 수행됩니다.`Document` 클래스를 지정하고 문서 경로를 제공합니다.
 
 ```csharp
+// 문서 디렉터리 경로
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// 문서를 로드하세요
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
-## 3단계: 스마트 아트 드로잉 업데이트
- 다음을 사용하여 문서의 모양을 반복합니다.`GetChildNodes` 방법`NodeType.Shape` 매개변수. 다음을 사용하여 각 도형에 스마트 아트가 있는지 확인하세요.`HasSmartArt`속성을 확인하고, true인 경우`UpdateSmartArtDrawing` 스마트 아트 도면을 업데이트하는 방법입니다.
+이 단계가 중요한 이유:
+문서를 로드하면 작업 환경이 설정되어 문서의 내용을 프로그래밍 방식으로 조작할 수 있습니다.
+
+## 2. 스마트 아트 형태 식별
+
+제목: 스마트 아트 그래픽 찾기
+
+설명:
+문서가 로드되면 어떤 모양이 Smart Art인지 식별해야 합니다. 이는 문서의 모든 모양을 반복하고 스마트 아트인지 확인함으로써 달성됩니다.
 
 ```csharp
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-		if (shape.HasSmartArt)
-			shape.UpdateSmartArtDrawing();
+// 문서의 모든 모양을 반복합니다.
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    // 도형이 Smart Art인지 확인하세요.
+    if (shape.HasSmartArt)
+    {
+        // 스마트 아트 그림 업데이트
+        shape.UpdateSmartArtDrawing();
+    }
+}
 ```
 
+이 단계가 중요한 이유:
+스마트 아트 모양을 식별하면 실제로 필요한 그래픽만 업데이트하여 불필요한 작업을 방지할 수 있습니다.
 
-### .NET용 Aspose.Words를 사용하여 스마트 아트 드로잉 업데이트에 대한 예제 소스 코드 
+## 3. 스마트 아트 드로잉 업데이트
+
+제목: 스마트 아트 그래픽 새로 고침
+
+설명:
+ 그만큼`UpdateSmartArtDrawing` 메서드는 스마트 아트 그래픽을 새로 고쳐 문서 데이터나 레이아웃의 변경 사항을 반영하도록 합니다. 이 메서드는 이전 단계에서 식별된 각 스마트 아트 셰이프에 대해 호출되어야 합니다.
 
 ```csharp
-	// 문서 디렉터리 경로
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "SmartArt.docx");
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-		if (shape.HasSmartArt)
-			shape.UpdateSmartArtDrawing();
+// 각 스마트 아트 모양에 대한 스마트 아트 그림 업데이트
+if (shape.HasSmartArt)
+{
+    shape.UpdateSmartArtDrawing();
+}
 ```
 
-그게 다야! .NET용 Aspose.Words를 사용하여 Word 문서의 스마트 아트 그림을 성공적으로 업데이트했습니다.
+이 단계가 중요한 이유:
+스마트 아트를 업데이트하면 시각적인 내용이 정확하고 최신 상태로 유지되어 문서의 품질과 전문성이 향상됩니다.
+
+## 4. 문서 저장
+
+표제: 업데이트된 문서 저장
+
+설명:
+스마트 아트를 업데이트한 후 변경 사항을 유지하려면 문서를 저장하세요. 이 단계를 수행하면 모든 수정 사항이 파일에 기록됩니다.
+
+```csharp
+// 업데이트된 문서 저장
+doc.Save(dataDir + "UpdatedSmartArt.docx");
+```
+
+이 단계가 중요한 이유:
+문서를 저장하면 변경 사항이 완료되어 업데이트된 스마트 아트 그래픽이 저장되어 사용할 수 있게 됩니다.
+
+## 결론
+
+.NET용 Aspose.Words를 사용하여 Word 문서에서 스마트 아트 그림을 업데이트하는 것은 문서의 품질을 크게 향상시킬 수 있는 간단한 프로세스입니다. 이 튜토리얼에 설명된 단계를 따르면 스마트 아트 그래픽이 항상 최신 상태이고 최신 데이터를 정확하게 반영하는지 확인할 수 있습니다. 이는 문서의 시각적 매력을 향상시킬 뿐만 아니라 정보가 명확하고 전문적으로 표시되도록 보장합니다.
+
+## FAQ
+
+### Word 문서의 스마트 아트란 무엇입니까?
+스마트 아트는 시각적으로 매력적인 다이어그램과 그래픽을 만들어 정보와 데이터를 표현할 수 있는 Microsoft Word의 기능입니다.
+
+### 스마트 아트 도면을 업데이트해야 하는 이유는 무엇입니까?
+Smart Art를 업데이트하면 그래픽에 문서의 최신 변경 사항이 반영되어 정확성과 프리젠테이션이 향상됩니다.
+
+### 일괄 문서에서 스마트 아트 그래픽을 업데이트할 수 있나요?
+예, 파일 컬렉션을 반복하고 동일한 단계를 적용하여 여러 문서에서 스마트 아트를 업데이트하는 프로세스를 자동화할 수 있습니다.
+
+### 이러한 기능을 사용하려면 Aspose.Words에 대한 특별 라이센스가 필요합니까?
+ 평가 기간 이후에 해당 기능을 사용하려면 유효한 Aspose.Words 라이선스가 필요합니다. 임시면허를 취득할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
+
+### Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
+ 문서에 액세스할 수 있습니다.[여기](https://reference.aspose.com/words/net/).

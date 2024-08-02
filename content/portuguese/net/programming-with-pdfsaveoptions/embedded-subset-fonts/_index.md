@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## Conclusão
 
-aí está! Seguindo essas etapas simples, você pode reduzir com eficiência o tamanho de seus arquivos PDF incorporando apenas os subconjuntos de fontes necessários usando Aspose.Words for .NET. Isto não só economiza espaço de armazenamento, mas também garante tempos de carregamento mais rápidos e melhor desempenho, especialmente para documentos com fontes extensas.
+aí está! Seguindo estas etapas simples, você pode reduzir com eficiência o tamanho de seus arquivos PDF incorporando apenas os subconjuntos de fontes necessários usando Aspose.Words for .NET. Isto não só economiza espaço de armazenamento, mas também garante tempos de carregamento mais rápidos e melhor desempenho, especialmente para documentos com fontes extensas.
 
 ## Perguntas frequentes
 

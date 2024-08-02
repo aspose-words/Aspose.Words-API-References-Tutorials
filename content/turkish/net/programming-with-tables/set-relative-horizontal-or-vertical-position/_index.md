@@ -2,68 +2,102 @@
 title: Göreli Yatay veya Dikey Konumu Ayarla
 linktitle: Göreli Yatay veya Dikey Konumu Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesinde bir tablonun göreceli yatay veya dikey konumunu nasıl ayarlayacağınızı öğrenin.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki tablolar için göreceli yatay ve dikey konumların nasıl ayarlanacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
+## giriiş
 
-Bu derste, Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun göreceli yatay veya dikey konumunun nasıl ayarlanacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablonuzun göreceli yatay veya dikey konumunu ayarlayabileceksiniz.
+Hiç Word belgelerinizde tabloları tam istediğiniz gibi nasıl konumlandıracağınız konusunda takılıp kaldığınızı hissettiniz mi? Yalnız değilsin. İster profesyonel bir rapor ister şık bir broşür oluşturuyor olun, masaları hizalamak büyük bir fark yaratabilir. İşte Aspose.Words for .NET'in kullanışlı olduğu yer burasıdır. Bu eğitim, Word belgelerinizdeki tablolar için göreceli yatay veya dikey konumların nasıl ayarlanacağı konusunda size adım adım rehberlik edecektir. Hadi dalalım!
 
-## Adım 1: Proje Kurulumu
-1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
-2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
+## Önkoşullar
 
-## Adım 2: Belgeyi yükleme
-Belgeyle Sözcük İşleme'yi başlatmak için şu adımları izleyin:
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words for .NET: Henüz yapmadıysanız indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
+3. Temel C# Bilgisi: Bu eğitimde C# programlamanın temellerine aşina olduğunuz varsayılmaktadır.
 
-// Belgeyi yükleyin
-Document doc = new Document(dataDir + "Table wrapped by text.docx");
-```
+## Ad Alanlarını İçe Aktar
 
-"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden ve doğru dosya adını girdiğinizden emin olun.
-
-## Adım 3: Tablonun göreceli konumunu ayarlama
-Daha sonra tablonun göreceli yatay veya dikey konumunu ayarlayacağız. Aşağıdaki kodu kullanın:
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words işlevlerine erişim için gereklidir.
 
 ```csharp
-// Masayı geri al
-Table table = doc.FirstSection.Body.Tables[0];
-
-//Tablonun göreceli yatay konumunun tanımı
-table.HorizontalAnchor = RelativeHorizontalPosition.Column;
-
-// Tablonun göreceli dikey konumunu tanımlayın
-table.VerticalAnchor = RelativeVerticalPosition.Page;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Burada belgeyi, ilk bölümün gövdesinden ilk tabloyu almak için kullanıyoruz. Daha sonra tablonun göreceli yatay konumunu şu şekilde ayarlıyoruz:`HorizontalAnchor` özelliğini kullanarak`RelativeHorizontalPosition.Column` değer. Benzer şekilde, tablonun göreceli dikey konumunu da şu şekilde belirleriz:`VerticalAnchor` özelliğini kullanarak`RelativeVerticalPosition.Page` değer.
+## 1. Adım: Belgenizi Yükleyin
 
-## Adım 4: Değiştirilen belgeyi kaydetme
-Son olarak, değiştirilen belgeyi, tanımlanan tablonun göreceli konumuyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
-```
-
-Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanarak Göreceli Yatay veya Dikey Konumu Ayarlama için örnek kaynak kodu 
+Başlamak için Word belgenizi programa yüklemeniz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
+```
+
+Bu kod parçacığı, belge dizininizin yolunu ayarlar ve üzerinde çalışmak istediğiniz belirli belgeyi yükler. Yükleme sorunlarını önlemek için belge yolunuzun doğru olduğundan emin olun.
+
+## Adım 2: Tabloya Erişin
+
+Daha sonra belge içindeki tabloya erişmemiz gerekiyor. Genellikle gövde bölümündeki ilk tabloyla çalışmak istersiniz.
+
+```csharp
 Table table = doc.FirstSection.Body.Tables[0];
+```
+
+Bu kod satırı belgenin gövdesinden ilk tabloyu getirir. Belgenizde birden fazla tablo varsa dizini buna göre ayarlayabilirsiniz.
+
+## Adım 3: Yatay Konumu Ayarlayın
+
+Şimdi tablonun yatay konumunu belirli bir öğeye göre ayarlayalım. Bu örnekte onu sütuna göre konumlandıracağız.
+
+```csharp
 table.HorizontalAnchor = RelativeHorizontalPosition.Column;
+```
+
+ Ayarlayarak`HorizontalAnchor` ile`RelativeHorizontalPosition.Column`, tabloya kendisini bulunduğu sütuna göre yatay olarak hizalamasını söylüyorsunuz.
+
+## Adım 4: Dikey Konumu Ayarlayın
+
+Yatay konumlandırmaya benzer şekilde dikey konumu da ayarlayabilirsiniz. Burada onu sayfaya göre konumlandırıyoruz.
+
+```csharp
 table.VerticalAnchor = RelativeVerticalPosition.Page;
+```
+
+ ayarlamak`VerticalAnchor` ile`RelativeVerticalPosition.Page` tablonun sayfaya göre dikey olarak hizalanmasını sağlar.
+
+## Adım 5: Belgenizi Kaydedin
+
+Son olarak değişikliklerinizi yeni bir belgeye kaydedin. Bu, değişikliklerinizin korunduğundan emin olmak için çok önemli bir adımdır.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
+Bu komut, değiştirilen belgeyi yeni bir adla kaydederek orijinal dosyanızın üzerine yazmamanızı sağlar.
+
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir tablonun göreceli yatay veya dikey konumunun nasıl ayarlanacağını öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, bu göreceli konumu Word belgelerinizdeki tablolarınıza uygulayabilirsiniz.
+
+İşte buyur! Aspose.Words for .NET'i kullanarak Word belgesindeki bir tablonun göreceli yatay ve dikey konumlarını başarıyla ayarladınız. Bu yeni keşfedilen beceriyle belgelerinizin düzenini ve okunabilirliğini geliştirebilir, daha profesyonel ve gösterişli görünmelerini sağlayabilirsiniz. Farklı pozisyonları denemeye devam edin ve ihtiyaçlarınıza en uygun olanı görün.
+
+## SSS'ler
+
+### Tabloları diğer öğelere göre konumlandırabilir miyim?  
+Evet, Aspose.Words tabloları kenar boşlukları, sayfalar, sütunlar ve daha fazlası gibi çeşitli öğelere göre konumlandırmanıza olanak tanır.
+
+### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?  
+ Evet, lisans satın alabilirsiniz[Burada](https://purchase.aspose.com/buy) veya geçici lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
+
+### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?  
+ Kesinlikle! Ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/).
+
+### Aspose.Words'ü diğer programlama dilleriyle kullanabilir miyim?  
+Aspose.Words öncelikli olarak .NET için tasarlanmıştır ancak Java, Python ve diğer platformlar için versiyonları mevcuttur.
+
+### Daha ayrıntılı belgeleri nerede bulabilirim?  
+Daha ayrıntılı bilgi için Aspose.Words belgelerine göz atın[Burada](https://reference.aspose.com/words/net/).

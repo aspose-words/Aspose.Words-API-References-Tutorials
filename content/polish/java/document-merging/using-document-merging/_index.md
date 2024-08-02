@@ -165,7 +165,7 @@ public class DocumentMerger {
 }
 ```
 
- Używając`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words zachowuje style, które różnią się pomiędzy dokumentami źródłowymi i docelowymi, skutecznie rozwiązując konflikty.
+ Używając`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words zachowuje style, które różnią się między dokumentami źródłowymi i docelowymi, skutecznie rozwiązując konflikty.
 
 ## 9. Najlepsze praktyki dotyczące łączenia dokumentów
 

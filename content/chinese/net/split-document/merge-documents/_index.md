@@ -9,7 +9,7 @@ url: /zh/net/split-document/merge-documents/
 ---
 ## 介绍
 
-嗨！您是否曾经需要将多个 Word 文档合并为一个统一的文件？无论您是在编写报告、组装项目还是只是试图整理，合并文档都可以为您节省大量时间和精力。使用 Aspose.Words for .NET，这个过程变得轻而易举。在本教程中，我们将介绍如何使用 Aspose.Words for .NET 合并 Word 文档，分解每个步骤，以便您轻松跟进。到最后，您将像专业人士一样合并文档！
+您是否曾经需要将多个 Word 文档合并为一个统一的文件？无论您是在编写报告、组装项目还是只是试图整理，合并文档都可以为您节省大量时间和精力。使用 Aspose.Words for .NET，这个过程变得轻而易举。在本教程中，我们将介绍如何使用 Aspose.Words for .NET 合并 Word 文档，分解每个步骤，以便您轻松跟进。到最后，您将像专业人士一样合并文档！
 
 ## 先决条件
 
@@ -93,22 +93,22 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## 常见问题解答
 
-### 1.什么是 Aspose.Words for .NET？
+### 什么是 Aspose.Words for .NET？
 
 Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程方式创建、操作和转换 Word 文档。它是自动化文档相关任务的理想选择。
 
-### 2. 我可以免费使用 Aspose.Words for .NET 吗？
+### 我可以免费使用 Aspose.Words for .NET 吗？
 
 您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需长期使用，您需要购买许可证。
 
-### 3. 合并时如何处理不同的格式？
+### 合并期间如何处理不同的格式？
 
  Aspose.Words 提供各种合并格式模式，例如`KeepSourceFormatting`和`MergeFormatting`。请参阅[API 文档](https://reference.aspose.com/words/net/)了解详细说明。
 
-### 4. 如何获得 Aspose.Words for .NET 的支持？
+### 如何获得 Aspose.Words for .NET 的支持？
 
 您可以通过访问获得支持[Aspose 支持论坛](https://forum.aspose.com/c/words/8).
 
-### 5. 我可以使用 Aspose.Words for .NET 合并其他文件格式吗？
+### 我可以将其他文件格式与 Aspose.Words for .NET 合并吗？
 
 是的，Aspose.Words 支持合并各种文件格式，包括 DOCX、PDF 和 HTML。

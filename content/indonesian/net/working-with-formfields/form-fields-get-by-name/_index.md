@@ -47,7 +47,7 @@ formField2.Font.Color = Color.Red;
 
 ## Langkah 4: Menyimpan Dokumen
 
-Terakhir, simpan dokumen yang dimodifikasi:
+Terakhir, simpan dokumen yang diubah:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");

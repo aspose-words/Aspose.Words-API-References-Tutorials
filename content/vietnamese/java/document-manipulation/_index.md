@@ -61,7 +61,7 @@ Tìm hiểu cách trích xuất nội dung hiệu quả từ tài liệu Word b�
 ### [Tìm và thay thế văn bản trong Aspose.Words cho Java](./finding-and-replacing-text/)
 Tìm hiểu cách tìm và thay thế văn bản trong tài liệu Word bằng Aspose.Words cho Java. Hướng dẫn từng bước với các ví dụ về mã. Nâng cao kỹ năng thao tác tài liệu Java của bạn.
 ### [Xóa nội dung khỏi tài liệu trong Aspose.Words cho Java](./removing-content-from-documents/)
-Tìm hiểu cách xóa nội dung khỏi tài liệu Word trong Java bằng Aspose.Words for Java. Xóa ngắt trang, ngắt phần, v.v. Tối ưu hóa việc xử lý tài liệu của bạn.
+Tìm hiểu cách xóa nội dung khỏi tài liệu Word trong Java bằng Aspose.Words cho Java. Xóa ngắt trang, ngắt phần, v.v. Tối ưu hóa việc xử lý tài liệu của bạn.
 ### [Sử dụng Dấu trang trong Aspose.Words cho Java](./using-bookmarks/)
 Tối ưu hóa việc xử lý tài liệu của bạn với Aspose.Words cho Java. Tìm hiểu cách sử dụng dấu trang để điều hướng và thao tác nội dung hiệu quả trong hướng dẫn từng bước này.
 ### [Sử dụng Phạm vi Tài liệu trong Aspose.Words cho Java](./using-document-ranges/)

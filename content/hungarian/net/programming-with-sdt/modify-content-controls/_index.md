@@ -2,123 +2,182 @@
 title: A tartalomvezérlők módosítása
 linktitle: A tartalomvezérlők módosítása
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan módosíthat szöveget, legördülő listákat és képeket egy Word-dokumentum tartalomvezérlőjén belül az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan módosíthatja a strukturált dokumentumcímkéket a Wordben az Aspose.Words for .NET használatával. Frissítse a szöveget, a legördülő listákat és a képeket lépésről lépésre.
 type: docs
 weight: 10
 url: /hu/net/programming-with-sdt/modify-content-controls/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan módosíthatja a különböző típusú tartalomvezérlőket egy Word-dokumentumban az Aspose.Words for .NET használatával. A tartalomvezérlőn belül frissítheti a szöveget, a legördülő lista kiválasztott értékét, vagy lecserélheti a képet.
+Ha valaha is dolgozott Word-dokumentumokkal, és módosítania kellett a strukturált tartalomvezérlőket – például az egyszerű szöveget, a legördülő listákat vagy a képeket – az Aspose.Words for .NET használatával, akkor jó helyen jár! A strukturált dokumentumcímkék (SDT) olyan hatékony eszközök, amelyek egyszerűbbé és rugalmasabbá teszik a dokumentumautomatizálást. Ebben az oktatóanyagban belemerülünk abba, hogyan módosíthatja ezeket az SDT-ket az igényeinek megfelelően. Függetlenül attól, hogy szöveget frissít, legördülő menüt módosít, vagy képeket cserél ki, ez az útmutató lépésről lépésre végigvezeti a folyamaton.
 
 ## Előfeltételek
-Az oktatóanyag követéséhez a következőkre van szükség:
 
-- Aspose.Words for .NET könyvtár telepítve.
-- C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
+Mielőtt belevágnánk a tartalomvezérlők módosításának aprólékos dolgaiba, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahol a dokumentum található.
+1.  Aspose.Words for .NET telepítve: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+
+2. Alapvető C# ismerete: Ez az oktatóanyag feltételezi, hogy ismeri az alapvető C# programozási fogalmakat.
+
+3. .NET fejlesztői környezet: A .NET-alkalmazások futtatásához be kell állítania egy IDE-t, mint a Visual Studio.
+
+4. Mintadokumentum: Word-mintadokumentumot fogunk használni különféle típusú SDT-kkel. Használhatja a példában szereplőt, vagy létrehozhatja sajátját.
+
+5.  Hozzáférés az Aspose dokumentációjához: Részletesebb információkért tekintse meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/).
+
+## Névterek importálása
+
+Az Aspose.Words használatához importálnia kell a megfelelő névtereket a C# projektbe. Íme, hogyan kell csinálni:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+Ezek a névterek hozzáférést biztosítanak a Word-dokumentumokban lévő strukturált dokumentumcímkék kezeléséhez szükséges osztályokhoz és metódusokhoz.
+
+## 1. lépés: Állítsa be a dokumentum elérési útját
+
+ Mielőtt bármilyen változtatást végrehajtana, meg kell adnia a dokumentum elérési útját. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumot tárolják.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
-## 2. lépés: Töltse be a dokumentumot, és ismételje meg a tartalomvezérlőket
- Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Iteráljon a dokumentumban lévő összes strukturált dokumentumcímkén a a segítségével`foreach` hurok.
+## 2. lépés: Hurok a strukturált dokumentumcímkéken keresztül
+
+ Az SDT-k módosításához először át kell tekintenie a dokumentumban található összes SDT-t. Ez a`GetChildNodes` módszer az összes típusú csomópont lekéréséhez`StructuredDocumentTag`.
 
 ```csharp
-Document doc = new Document(dataDir + "Structured document tags.docx");
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
 {
-    // A tartalomvezérlés típusa alapján hajtson végre műveleteket
+    // Módosítsa az SDT-ket típusuk alapján
 }
 ```
 
-## 3. lépés: Módosítsa az egyszerű szöveges tartalomvezérlőt
- A típusú tartalomvezérlőkhöz`SdtType.PlainText`, távolítsa el az összes meglévő gyermeket, hozzon létre egy új bekezdést, és fűzze hozzá a kívánt szöveget.
+## 3. lépés: Módosítsa az egyszerű szöveges SDT-ket
+
+Ha az SDT egyszerű szöveges típusú, akkor lecserélheti a tartalmát. Először törölje a meglévő tartalmat, majd adjon hozzá új szöveget.
 
 ```csharp
-case SdtType.PlainText:
+if (sdt.SdtType == SdtType.PlainText)
 {
     sdt.RemoveAllChildren();
     Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
     Run run = new Run(doc, "new text goes here");
     para.AppendChild(run);
-    break;
 }
 ```
 
-## 4. lépés: A legördülő lista tartalomvezérlőjének módosítása
- A típusú tartalomvezérlőkhöz`SdtType.DropDownList` , frissítse a kiválasztott értéket egy adott értékre állítva`SdtListItem`.
+ Magyarázat: Tessék,`RemoveAllChildren()`törli az SDT meglévő tartalmát. Ezután létrehozunk egy újat`Paragraph`és`Run` objektumot az új szöveg beszúrásához.
+
+## 4. lépés: A legördülő lista SDT-k módosítása
+
+ A legördülő listás SDT-k esetén módosíthatja a kiválasztott elemet a`ListItems` Gyűjtemény. Itt kiválasztjuk a lista harmadik elemét.
 
 ```csharp
-case SdtType.DropDownList:
+if (sdt.SdtType == SdtType.DropDownList)
 {
     SdtListItem secondItem = sdt.ListItems[2];
     sdt.ListItems.SelectedValue = secondItem;
-    break;
 }
 ```
 
-## 5. lépés: Módosítsa a Képtartalom-szabályozást
- A típusú tartalomvezérlőkhöz`SdtType.Picture`, kérje le az alakzatot a tartalomvezérlőn belül, és cserélje ki a képét egy újra.
+Magyarázat: Ez a kódrészlet a 2. indexben lévő elemet (harmadik elem) választja ki a legördülő listából. Állítsa be az indexet igényei szerint.
+
+## 5. lépés: Módosítsa a kép SDT-ket
+
+Egy kép SDT-n belüli frissítéséhez lecserélheti a meglévő képet egy újra.
 
 ```csharp
-case SdtType.Picture:
+if (sdt.SdtType == SdtType.Picture)
 {
-    Shape shape = (Shape)sdt.GetChild(NodeType.Shape, 0, true);
+    Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
     if (shape.HasImage)
     {
         shape.ImageData.SetImage(ImagesDir + "Watermark.png");
     }
-    break;
 }
 ```
 
+ Magyarázat: Ez a kód ellenőrzi, hogy az alakzat tartalmaz-e képet, majd lecseréli egy új, a címen található képre`ImagesDir`.
+
 ## 6. lépés: Mentse el a módosított dokumentumot
- Mentse el a módosított dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.ModifyContentControls.docx" néven mentjük.
+
+Az összes szükséges módosítás elvégzése után mentse el a módosított dokumentumot új néven, hogy az eredeti dokumentum sértetlen maradjon.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ```
 
+Magyarázat: Ez új fájlnévvel menti a dokumentumot, így könnyen meg tudja különböztetni az eredetitől.
+
+## Következtetés
+
+Word-dokumentumok tartalomvezérlőinek módosítása az Aspose.Words for .NET használatával egyszerű, ha megértette a szükséges lépéseket. Legyen szó szövegfrissítésről, legördülő kijelölések módosításáról vagy képek cseréjéről, az Aspose.Words robusztus API-t biztosít ezekhez a feladatokhoz. Az oktatóanyag követésével hatékonyan kezelheti és testreszabhatja dokumentumai strukturált tartalomvezérlőit, így dokumentumait dinamikusabbá és az Ön igényeihez szabottabbá teheti.
+
+## GYIK
+
+1. Mi az a strukturált dokumentumcímke (SDT)?
+
+Az SDT-k a Word-dokumentumok olyan elemei, amelyek segítenek kezelni és formázni a dokumentumtartalmat, például szövegdobozokat, legördülő listákat vagy képeket.
+
+2. Hogyan adhatok hozzá új legördülő elemet az SDT-hez?
+
+ Új elem hozzáadásához használja a`ListItems` tulajdonságot, és csatoljon egy újat`SdtListItem` a gyűjteményhez.
+
+3. Az Aspose.Words segítségével eltávolíthatom az SDT-ket egy dokumentumból?
+
+Igen, eltávolíthatja az SDT-ket, ha hozzáfér a dokumentum csomópontjaihoz, és törli a kívánt SDT-t.
+
+4. Hogyan kezelhetem a más elemekbe ágyazott SDT-ket?
+
+ Használja a`GetChildNodes` metódus megfelelő paraméterekkel a beágyazott SDT-k eléréséhez.
+
+5. Mi a teendő, ha a módosítandó SDT nem látható a dokumentumban?
+
+Győződjön meg arról, hogy az SDT nincs rejtve vagy védett. Ellenőrizze a dokumentumbeállításokat, és győződjön meg arról, hogy a kód megfelelően célozza az SDT típust.
+
+
 ### Példa forráskódra a tartalomvezérlők módosításához az Aspose.Words segítségével .NET-hez 
 
 ```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document(dataDir + "Structured document tags.docx");
-	foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
+Document doc = new Document(dataDir + "Structured document tags.docx");
+foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
+{
+	switch (sdt.SdtType)
 	{
-		switch (sdt.SdtType)
+		case SdtType.PlainText:
 		{
-			case SdtType.PlainText:
+			sdt.RemoveAllChildren();
+			Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
+			Run run = new Run(doc, "new text goes here");
+			para.AppendChild(run);
+			break;
+		}
+		case SdtType.DropDownList:
+		{
+			SdtListItem secondItem = sdt.ListItems[2];
+			sdt.ListItems.SelectedValue = secondItem;
+			break;
+		}
+		case SdtType.Picture:
+		{
+			Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
+			if (shape.HasImage)
 			{
-				sdt.RemoveAllChildren();
-				Paragraph para = sdt.AppendChild(new Paragraph(doc)) as Paragraph;
-				Run run = new Run(doc, "new text goes here");
-				para.AppendChild(run);
-				break;
+				shape.ImageData.SetImage(ImagesDir + "Watermark.png");
 			}
-			case SdtType.DropDownList:
-			{
-				SdtListItem secondItem = sdt.ListItems[2];
-				sdt.ListItems.SelectedValue = secondItem;
-				break;
-			}
-			case SdtType.Picture:
-			{
-				Shape shape = (Shape) sdt.GetChild(NodeType.Shape, 0, true);
-				if (shape.HasImage)
-				{
-					shape.ImageData.SetImage(ImagesDir + "Watermark.png");
-				}
-				break;
-			}
+			break;
 		}
 	}
-	doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
+}
+doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 

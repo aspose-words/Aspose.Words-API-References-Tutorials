@@ -98,4 +98,4 @@ Záhlaví a zápatí ze zdrojového dokumentu mohou pokračovat do cílového do
 Ano, Aspose.Words for .NET umožňuje odstranit záhlaví a zápatí při zachování zbytku formátování dokumentu.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words pro .NET?
- Navštivte[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) pro podrobné API reference a příklady.
+ Navštivte[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) pro podrobné odkazy a příklady API.

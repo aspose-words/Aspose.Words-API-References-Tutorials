@@ -85,7 +85,7 @@ Ora hai un sommario personalizzato nel tuo documento con tabulazioni regolate pe
 
 ## Conclusione
 
-In questo tutorial, abbiamo esplorato come generare un sommario (TOC) utilizzando Aspose.Words per Java, una potente libreria per lavorare con documenti Word. Un sommario ben strutturato è essenziale per organizzare e navigare documenti lunghi e Aspose.Words fornisce gli strumenti per creare e personalizzare i sommari senza sforzo.
+In questo tutorial, abbiamo esplorato come generare un sommario (TOC) utilizzando Aspose.Words per Java, una potente libreria per lavorare con documenti Word. Un sommario ben strutturato è essenziale per organizzare e navigare in documenti lunghi e Aspose.Words fornisce gli strumenti per creare e personalizzare i sommari senza sforzo.
 
 ## Domande frequenti
 

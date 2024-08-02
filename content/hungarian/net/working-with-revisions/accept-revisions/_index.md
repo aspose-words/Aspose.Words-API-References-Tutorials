@@ -55,7 +55,7 @@ Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 ```
 
-## 4. lépés: A változtatások elfogadása
+## 4. lépés: Fogadja el a változtatásokat
 
 A dokumentum minden módosítását elfogadjuk. Itt van, hogyan:
 

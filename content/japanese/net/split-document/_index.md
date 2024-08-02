@@ -12,9 +12,9 @@ Split Document は、Aspose.Words for .NET ライブラリを使用してドキ�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [見出し別 HTML](./by-headings-html/) | Aspose.Words for .NET の By Heading HTML 機能の C# ソース コードを説明するステップ バイ ステップ ガイド |
-| [セクション別 HTML](./by-sections-html/) | 完全なコード例を使用して、Aspose.Words for .NET を使用して Word 文書をセクション HTML に分割する方法を学習します。 |
-| [セクション別](./by-sections/) | 完全なコード例を使用して、Aspose.Words for .NET を使用して Word 文書を個別のセクションに分割する方法を学習します。 |
-| [ページごとに](./page-by-page/) | .NET の Aspose.Words Page by Page 機能の C# ソース コードを説明するステップ バイ ステップ ガイド |
+| [見出しで Word 文書を分割する HTML](./by-headings-html/) | Aspose.Words for .NET を使用して、Word 文書を見出しごとに HTML に分割する方法を学びます。詳細なステップバイステップのガイドに従ってください。 |
+| [Word 文書をセクション別に分割する HTML](./by-sections-html/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書をセクションごとに HTML に分割する方法を学習します。 |
+| [Word 文書をセクションごとに分割する](./by-sections/) | Aspose.Words for .NET を使用して Word 文書をセクションごとに分割する方法を学びます。この詳細なステップバイステップ ガイドに従って、効率的な文書管理を行ってください。 |
+| [Word 文書をページごとに分割する](./page-by-page/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書をページごとに分割する方法を説明します。大規模な文書を効率的に管理するのに最適です。 |
 | [ドキュメントの結合](./merge-documents/) | Aspose.Words for .NET の ドキュメントの結合 機能の C# ソース コードを説明するステップ バイ ステップ ガイド |
-| [ページ範囲別](./by-page-range/) | Aspose.Words for .NET を使用して Word 文書からページ範囲で簡単に抽出する手順ガイド。 |
+| [ページ範囲で Word 文書を分割する](./by-page-range/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書をページ範囲で分割する方法を学びます。開発者に最適です。 |

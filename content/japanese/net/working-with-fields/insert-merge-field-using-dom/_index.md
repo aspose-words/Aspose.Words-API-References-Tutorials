@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ja/net/working-with-fields/insert-merge-field-using-dom/
 ---
+## 導入
 
 .NET でドキュメント処理に取り組んでいる場合、Aspose.Words を目にしたことがあるでしょう。この強力なライブラリは、Word ドキュメントをプログラムで操作するためのさまざまな機能を提供します。このチュートリアルでは、Aspose.Words for .NET のドキュメント オブジェクト モデル (DOM) を使用して差し込みフィールドを挿入するという 1 つの特定の機能に焦点を当てます。このガイドでは、環境の設定から Word ドキュメントへの差し込みフィールドの挿入と更新まで、すべての手順を説明します。
 
@@ -14,26 +15,26 @@ url: /ja/net/working-with-fields/insert-merge-field-using-dom/
 
 コードに進む前に、このチュートリアルに従うために必要なものがすべて揃っていることを確認しましょう。
 
-1. **Basic Knowledge of C#:** C# プログラミングに慣れている必要があります。
-2. **Visual Studio Installed:**マシンに Visual Studio またはその他の C# IDE がインストールされていることを確認してください。
-3. **Aspose.Words for .NET:** Aspose.Words for .NETの最新バージョンを以下のサイトからダウンロードしてインストールしてください。[リリース](https://releases.aspose.com/words/net/).
-4. **Valid License:**免許証を持っていない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
+1. C# の基礎知識: C# プログラミングに慣れている必要があります。
+2. Visual Studio がインストールされている: マシンに Visual Studio またはその他の C# IDE がインストールされていることを確認します。
+3.  Aspose.Words for .NET: Aspose.Words for .NETの最新バージョンを以下のサイトからダウンロードしてインストールしてください。[リリース](https://releases.aspose.com/words/net/).
+4. 有効なライセンス: ライセンスをお持ちでない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
 
 ## ステップ1: プロジェクトの設定
 
 まず最初に、Visual Studio で新しいプロジェクトを設定しましょう。
 
-1. **Open Visual Studio.**
-2. **Create a New Project:** [ファイル] > [新規] > [プロジェクト] に移動します。C# コンソール アプリを選択します。
-3. **Name Your Project:**プロジェクトに意味のある名前を付けて、「作成」をクリックします。
+1. Visual Studio を開きます。
+2. 新しいプロジェクトを作成します。[ファイル] > [新規] > [プロジェクト] に移動します。C# コンソール アプリを選択します。
+3. プロジェクトに名前を付ける: プロジェクトに意味のある名前を付けて、[作成] をクリックします。
 
 ## ステップ2: Aspose.Wordsをインストールする
 
 Aspose.Words を使用するには、プロジェクトに追加する必要があります。これは、NuGet パッケージ マネージャーを使用して実行できます。
 
-1. **Open NuGet Package Manager:**ソリューション エクスプローラーでプロジェクトを右クリックし、[NuGet パッケージの管理] を選択します。
-2. **Search for Aspose.Words:** NuGet パッケージ マネージャーで、「Aspose.Words」を検索します。
-3. **Install the Package:** 「インストール」をクリックして、Aspose.Words をプロジェクトに追加します。
+1. NuGet パッケージ マネージャーを開きます。ソリューション エクスプローラーでプロジェクトを右クリックし、[NuGet パッケージの管理] を選択します。
+2. Aspose.Words を検索: NuGet パッケージ マネージャーで、「Aspose.Words」を検索します。
+3. パッケージのインストール: 「インストール」をクリックして、Aspose.Words をプロジェクトに追加します。
 
 ## ステップ3: 名前空間をインポートする
 
@@ -106,17 +107,17 @@ doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 
 ## よくある質問
 
-### 1. 差し込みフィールドとは何ですか?
+###  マージフィールドとは何ですか?
 マージ フィールドは、データベースや CSV ファイルなどのデータ ソースのデータで動的に置き換えることができるドキュメント内のプレースホルダーです。
 
-### 2. Aspose.Words は無料で使用できますか?
+###  Aspose.Words を無料で使用できますか?
  Aspose.Wordsは無料トライアルを提供しており、ダウンロードすることができます。[ここ](https://releases.aspose.com/)長期使用にはライセンスを購入する必要があります。
 
-### 3. Aspose.Words の一時ライセンスを取得するにはどうすればよいですか?
+###  Aspose.Words の一時ライセンスを取得するにはどうすればよいですか?
  AsposeのWebサイトから一時ライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
 
-### 4. Aspose.Words ではどのバージョンの .NET がサポートされていますか?
+### Aspose.Words ではどのバージョンの .NET がサポートされていますか?
 Aspose.Words は、.NET Framework、.NET Core、.NET Standard など、複数のバージョンの .NET をサポートしています。
 
-### 5. Aspose.Words の API ドキュメントはどこにありますか?
+###  Aspose.Words の API ドキュメントはどこにありますか?
  APIドキュメントは入手可能です[ここ](https://reference.aspose.com/words/net/).

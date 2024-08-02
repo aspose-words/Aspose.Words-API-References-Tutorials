@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-bookmarks/append-bookmarked-text/
 
 在開始之前，讓我們確保您擁有所需的一切：
 
--  Aspose.Words for .NET：確保您已安裝它。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：確保您已安裝它。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 - 開發環境：任何 .NET 開發環境，例如 Visual Studio。
 - C# 基礎知識：了解基本 C# 程式設計概念將會有所幫助。
 - 帶有書籤的 Word 文件：設定了書籤的 Word 文檔，我們將用它來附加文字。
@@ -63,7 +63,7 @@ if (startPara == null || endPara == null)
     throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## 第 3 步：驗證段落父項
+## 第 3 步：驗證段落父級
 
 我們需要確保開始和結束段落具有相同的父級。這是一個簡單的場景，讓事情變得簡單。
 

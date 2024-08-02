@@ -89,4 +89,4 @@ Trong hướng dẫn này, chúng tôi đã trình bày cách lưu tài liệu d
 
 ### Làm cách nào để xử lý các trường hợp ngoại lệ trong quá trình lưu?
 
-Bạn nên xem xét triển khai các cơ chế xử lý lỗi, chẳng hạn như khối thử bắt, để xử lý các ngoại lệ có thể xảy ra trong quá trình lưu tài liệu.
+Bạn nên xem xét triển khai các cơ chế xử lý lỗi, chẳng hạn như khối thử bắt, để xử lý các trường hợp ngoại lệ có thể xảy ra trong quá trình lưu tài liệu.

@@ -45,7 +45,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 // ใช้ตัวสร้างเอกสารเพื่อเพิ่มเนื้อหาลงในเอกสาร
 DocumentBuilder builder = new DocumentBuilder();
 
-//แทรกไฮเปอร์ลิงก์
+// แทรกไฮเปอร์ลิงก์
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", เท็จ);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### ถาม: เป็นไปได้ไหมที่จะปรับแต่งข้อความที่แสดงของลิงก์อัตโนมัติใน Aspose.Words
 
- ตอบ: ได้ คุณสามารถปรับแต่งข้อความที่แสดงของลิงก์อัตโนมัติใน Aspose.Words ได้ แทนที่จะใช้ที่อยู่ URL เป็นข้อความที่แสดง คุณสามารถใช้ข้อความอื่นได้โดยการแทนที่เนื้อหาระหว่าง`<a>` แท็ก ตัวอย่างเช่นคุณสามารถใช้`<a href="https://www.aspose.com">Click here</a>` เพื่อแสดงข้อความ "คลิกที่นี่" เป็นลิงค์อัตโนมัติ
+ ตอบ: ได้ คุณสามารถปรับแต่งข้อความที่แสดงของลิงก์อัตโนมัติใน Aspose.Words ได้ แทนที่จะใช้ที่อยู่ URL เป็นข้อความที่แสดง คุณสามารถใช้ข้อความอื่นได้โดยการแทนที่เนื้อหาระหว่าง`<a>` แท็ก ตัวอย่างเช่นคุณสามารถใช้`<a href="https://www.aspose.com">Click here</a>`เพื่อแสดงข้อความ "คลิกที่นี่" เป็นลิงค์อัตโนมัติ
 
 #### ถาม: ฉันจะเพิ่มคุณสมบัติเพิ่มเติมให้กับลิงก์อัตโนมัติใน Aspose.Words ได้อย่างไร
 
-ตอบ: หากต้องการเพิ่มแอตทริบิวต์เพิ่มเติมให้กับลิงก์อัตโนมัติใน Aspose.Words คุณสามารถใช้แอตทริบิวต์ HTML เพิ่มเติมภายใน`<a>` แท็ก ตัวอย่างเช่นคุณสามารถใช้`<a href="https://www.aspose.com" target="_blank">Link</a>` เพื่อเปิดลิงค์ในหน้าต่างหรือแท็บใหม่โดยใช้` attribute target="_blank"`.
+ ตอบ: หากต้องการเพิ่มแอตทริบิวต์เพิ่มเติมให้กับลิงก์อัตโนมัติใน Aspose.Words คุณสามารถใช้แอตทริบิวต์ HTML เพิ่มเติมภายใน`<a>` แท็ก ตัวอย่างเช่นคุณสามารถใช้`<a href="https://www.aspose.com" target="_blank">Link</a>` เพื่อเปิดลิงค์ในหน้าต่างหรือแท็บใหม่โดยใช้` attribute target="_blank"`.

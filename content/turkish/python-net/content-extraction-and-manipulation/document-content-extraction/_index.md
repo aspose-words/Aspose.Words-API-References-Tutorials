@@ -14,7 +14,7 @@ url: /tr/python-net/content-extraction-and-manipulation/document-content-extract
 
 ## Önkoşullar
 
-Koda dalmadan önce Python ve Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Kütüphaneyi web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/python/). Ayrıca teste hazır bir Word belgenizin olduğundan emin olun.
+ Koda dalmadan önce Python ve Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Kütüphaneyi web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/python/). Ayrıca teste hazır bir Word belgenizin olduğundan emin olun.
 
 ## Python için Aspose.Words'ün Kurulumu
 

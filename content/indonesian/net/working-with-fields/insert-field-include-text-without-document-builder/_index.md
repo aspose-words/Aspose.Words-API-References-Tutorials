@@ -2,99 +2,112 @@
 title: Sisipkan Bidang Sertakan Teks Tanpa Pembuat Dokumen
 linktitle: Sisipkan FieldIncludeText Tanpa Pembuat Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan bidang FieldIncludeText di dokumen Word Anda dengan Aspose.Words untuk .NET.
+description: Pelajari cara menyisipkan FieldIncludeText tanpa menggunakan DocumentBuilder di Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang mendetail.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini, yang menggunakan fungsionalitas "Sisipkan bidang FieldIncludeText" dari Aspose.Words untuk .NET. Pastikan untuk mengikuti setiap langkah dengan hati-hati untuk mendapatkan hasil yang diinginkan.
+Dalam dunia otomatisasi dan manipulasi dokumen, Aspose.Words for .NET merupakan alat yang ampuh. Hari ini, kita akan mempelajari panduan mendetail tentang cara menyisipkan FieldIncludeText tanpa menggunakan DocumentBuilder. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, memastikan Anda memahami setiap bagian kode dan tujuannya.
 
-## Langkah 1: Pengaturan Direktori Dokumen
+## Prasyarat
 
-Dalam kode yang diberikan, Anda harus menentukan direktori dokumen Anda. Ganti nilai "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai ke direktori dokumen Anda.
+Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan .NET: Semua IDE yang kompatibel dengan .NET seperti Visual Studio.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda mengikutinya.
 
-## Langkah 2: Membuat Dokumen dan Paragraf
+## Impor Namespace
 
-Kita mulai dengan membuat dokumen baru dan menginisialisasi paragraf.
-
-```csharp
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-```
-
-## Langkah 3: Memasukkan bidang FieldIncludeText
-
- Kami menggunakan`AppendField()` metode untuk menyisipkan bidang FieldIncludeText ke dalam paragraf.
+Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan. Namespace ini menyediakan akses ke kelas dan metode yang diperlukan untuk memanipulasi dokumen Word.
 
 ```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Kami kemudian mengkonfigurasi properti bidang FieldIncludeText dengan menentukan nama bookmark dan nama file sumber.
+Sekarang, mari kita bagi contoh ini menjadi beberapa langkah. Setiap langkah akan dijelaskan secara rinci untuk memastikan kejelasan.
 
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
+## Langkah 1: Tetapkan Jalur Direktori
 
-Selanjutnya, kita menambahkan paragraf ke badan dokumen.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
- Akhirnya, kami menelepon`Update()` metode untuk memperbarui bidang.
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### Contoh kode sumber untuk menyisipkan bidang FieldIncludeText dengan Aspose.Words untuk .NET
+Langkah pertama adalah menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda akan disimpan dan diakses.
 
 ```csharp
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Langkah 2: Buat Dokumen dan Paragraf
+
+Selanjutnya, kita membuat dokumen baru dan paragraf di dalam dokumen itu. Paragraf ini akan menampung bidang FieldIncludeText.
+
+```csharp
 // Buat dokumen dan paragraf.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
+```
 
+## Langkah 3: Sisipkan Bidang FieldIncludeText
+
+Sekarang, kita masukkan field FieldIncludeText ke dalam paragraf. Bidang ini memungkinkan Anda memasukkan teks dari dokumen lain.
+
+```csharp
 // Sisipkan bidang FieldIncludeText.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## Langkah 4: Atur Properti Bidang
+
+Kita perlu menentukan properti untuk bidang FieldIncludeText. Ini termasuk mengatur nama bookmark dan jalur lengkap dokumen sumber.
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## Langkah 5: Tambahkan Paragraf ke Dokumen
+
+Dengan pengaturan bidang, kami menambahkan paragraf ke badan bagian pertama dokumen.
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## Langkah 6: Perbarui Bidang
+
+Sebelum menyimpan dokumen, kita perlu memperbarui FieldIncludeText untuk memastikan konten yang benar diambil dari dokumen sumber.
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## Langkah 7: Simpan Dokumen
+
+Terakhir, kami menyimpan dokumen ke direktori yang ditentukan.
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-Dalam contoh ini, kita membuat dokumen baru, menginisialisasi paragraf, menyisipkan FieldIncludeTexten yang menentukan nama bookmark dan nama file sumber, dan menyimpan dokumen dengan nama file tertentu.
+## Kesimpulan
 
-Ini menyimpulkan panduan kami tentang penggunaan fitur "Sisipkan FieldIncludeText" dengan Aspose.Words untuk .NET.
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menyisipkan FieldIncludeText tanpa menggunakan DocumentBuilder di Aspose.Words untuk .NET. Pendekatan ini memberikan cara yang efisien untuk memasukkan konten dari satu dokumen ke dokumen lainnya, membuat tugas otomatisasi dokumen Anda menjadi lebih sederhana.
 
-### FAQ
+## FAQ
 
-#### T: Bagaimana cara menentukan file sumber untuk bidang penyertaan teks di Aspose.Words untuk .NET?
+### Apa itu Aspose.Words untuk .NET?  
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET. Ini memungkinkan untuk membuat, mengedit, dan mengonversi dokumen secara terprogram.
 
- J: Untuk menentukan file sumber untuk bidang penyertaan teks di Aspose.Words untuk .NET, Anda dapat menggunakan`FieldIncludeText.SourceFullName`properti untuk mengatur path lengkap file sumber. Pastikan file sumber dapat diakses dan berisi konten yang ingin Anda sertakan dalam bidang penyertaan teks.
+### Mengapa menggunakan FieldIncludeText?  
+FieldIncludeText berguna untuk memasukkan konten secara dinamis dari satu dokumen ke dokumen lainnya, memungkinkan dokumen yang lebih modular dan mudah dipelihara.
 
-#### T: Bisakah saya menyertakan teks dari makro di bidang penyertaan teks dengan Aspose.Words untuk .NET?
+### Bisakah saya menggunakan metode ini untuk memasukkan teks dari format file lain?  
+FieldIncludeText secara khusus berfungsi dengan dokumen Word. Untuk format lain, Anda mungkin memerlukan metode atau kelas berbeda yang disediakan oleh Aspose.Words.
 
- J: Ya, Anda dapat menyertakan teks dari makro di bidang penyertaan teks dengan Aspose.Words untuk .NET. Anda dapat menggunakan`FieldIncludeText.IncludeText` properti untuk menentukan nama makro yang kontennya harus disertakan dalam bidang.
+### Apakah Aspose.Words untuk .NET kompatibel dengan .NET Core?  
+Ya, Aspose.Words untuk .NET mendukung .NET Framework, .NET Core, dan .NET 5/6.
 
-#### T: Apakah menyisipkan bidang penyertaan teks tanpa pembuat dokumen memengaruhi struktur dokumen Word dengan Aspose.Words untuk .NET?
-
-J: Memasukkan bidang penyertaan teks tanpa pembuat dokumen tidak secara langsung mempengaruhi struktur dokumen Word. Namun, ini menambahkan elemen bidang baru ke konten dokumen. Anda dapat memanipulasi struktur dokumen dengan menambahkan, menghapus atau memodifikasi elemen yang ada sesuai kebutuhan Anda.
-
-#### T: Dapatkah saya mengkustomisasi tampilan bidang penyertaan teks dalam dokumen Word dengan Aspose.Words untuk .NET?
-
-J: Bidang penyertaan teks tidak secara langsung menyesuaikan tampilannya di dokumen Word. Namun, Anda dapat memformat teks yang disertakan menggunakan properti paragraf, properti font, dan objek pemformatan lain yang tersedia di Aspose.Words untuk .NET.
+### Bagaimana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?  
+ Anda bisa mendapatkan uji coba gratis dari[Di Sini](https://releases.aspose.com/).

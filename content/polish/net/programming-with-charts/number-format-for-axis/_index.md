@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Reporting;
 ```
 
-Podzielmy teraz proces na proste i łatwe do wykonania kroki.
+Podzielmy teraz proces na proste, łatwe do wykonania kroki.
 
 ## Krok 1: Konfiguracja dokumentu
 

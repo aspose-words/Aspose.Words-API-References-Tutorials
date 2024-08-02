@@ -2,84 +2,97 @@
 title: Dela Word-dokument efter rubriker Html
 linktitle: Efter rubriker Html
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för att förklara C#-källkoden för det delade Word-dokumentet By Heading HTML-funktionen i Aspose.Words för .NET
+description: Lär dig hur du delar upp ett Word-dokument efter rubriker till HTML med Aspose.Words för .NET. Följ vår detaljerade, steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/split-document/by-headings-html/
 ---
-I den här handledningen går vi igenom hur du delar upp ett Word-dokument i mindre delar med hjälp av funktionen By HTML Heading i Aspose.Words för .NET. Följ stegen nedan för att förstå källkoden och generera separata HTML-dokument baserat på Rubrik.
+## Introduktion
 
-## Steg 1: Ladda dokumentet
+Att dela upp ett Word-dokument efter rubriker kan vara en spelomvandlare för att hantera stora dokument eller skapa segmenterade HTML-utdata. Aspose.Words för .NET ger ett enkelt sätt att uppnå detta. I den här handledningen går vi igenom hela processen och ser till att du förstår varje detalj längs vägen.
 
-För att komma igång, ange katalogen för ditt dokument och ladda dokumentet i ett dokumentobjekt. Här är hur:
+## Förutsättningar
+
+Innan du dyker in i handledningen, se till att du har följande:
+
+1. Aspose.Words för .NET: Om du inte redan har gjort det, ladda ner det från[här](https://releases.aspose.com/words/net/).
+2. Utvecklingsmiljö: En IDE som Visual Studio.
+3. Grundläggande kunskaper om C#: Att förstå grunderna hjälper dig att enkelt följa med.
+4. Ett exempeldokument: Ha ett Word-dokument redo som du vill dela upp efter rubriker.
+
+## Importera namnområden
+
+Till att börja med, låt oss importera de nödvändiga namnrymden. Detta är avgörande för att komma åt Aspose.Words-klasserna och -metoderna.
 
 ```csharp
-// Sökväg till dokumentkatalogen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Steg 2: Dela upp dokumentet efter rubrik i HTML-format
+## Steg 1: Konfigurera ditt projekt
 
-Nu kommer vi att ställa in sparaalternativ för att dela upp dokumentet i mindre delar baserat på Rubrik i HTML-format. Här är hur:
+För att komma igång, ställ in ditt projekt i din utvecklingsmiljö. Öppna Visual Studio och skapa en ny konsolapplikation.
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-// Dela upp dokumentet i mindre delar, i det här fallet separera det efter titel.
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. Skapa ett nytt projekt: Öppna Visual Studio, välj "Skapa ett nytt projekt", välj "Console App (.NET Core)" och klicka på "Nästa".
+2. Konfigurera ditt projekt: Namnge ditt projekt, välj en plats för att spara det och klicka på "Skapa".
+3.  Installera Aspose.Words för .NET: Använd NuGet Package Manager för att installera Aspose.Words-biblioteket. I NuGet Package Manager, sök efter`Aspose.Words` och installera den.
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## Steg 2: Ladda ditt dokument
 
-### Exempel på källkod för By Headings HTML med Aspose.Words för .NET
+Därefter måste du ladda Word-dokumentet du vill dela. Se till att ditt dokument är placerat i en katalog som du enkelt kan komma åt.
 
-Här är den fullständiga källkoden för funktionen By HTML Heading i Aspose.Words för .NET:
+1. Definiera katalogsökvägen: Skapa en variabel för ditt dokuments katalogsökväg.
+2.  Ladda dokumentet: Använd`Document` klass för att ladda ditt Word-dokument.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Steg 3: Konfigurera HTML-sparalternativ
+
+Låt oss nu konfigurera HTML-sparalternativen för att ange att dokumentet ska delas efter rubriker.
+
+1.  Skapa HtmlSaveOptions: Instantiera`HtmlSaveOptions` klass.
+2.  Ställ in dokumentdelningskriterier: Använd`DocumentSplitCriteria` egenskap för att ange att dokumentet ska delas upp efter rubriker.
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	// Dela upp ett dokument i mindre delar, i det här fallet delat efter rubrik.
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    // Dela upp ett dokument i mindre delar, i det här fallet delat efter rubrik.
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## Steg 4: Spara det delade dokumentet
 
+Slutligen sparar du dokumentet med de angivna HTML-sparalternativen. Detta kommer att generera en HTML-fil delad efter rubriker.
+
+1.  Spara dokumentet: Använd`Save` metod för`Document` klass för att spara dokumentet med de angivna alternativen.
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-Med denna kod kommer du att kunna dela upp ett Word-dokument i mindre delar med Aspose.Words för .NET, baserat på rubriker. Du kan sedan generera separata HTML-dokument för varje del.
-
 ## Slutsats
 
- I den här handledningen lärde vi oss hur man delar upp ett Word-dokument i mindre delar med hjälp av funktionen By HTML Heading i Aspose.Words för .NET. Genom att specificera`DocumentSplitCriteria` som`HeadingParagraph` i`HtmlSaveOptions`, kunde vi generera separata HTML-dokument baserat på rubrikerna i originaldokumentet.
+Och där har du det! Du har framgångsrikt delat upp ett Word-dokument efter rubriker och sparat det som HTML med Aspose.Words för .NET. Denna metod är mycket effektiv för att organisera stora dokument och skapa segmenterade HTML-utdata, vilket gör ditt innehåll mer hanterbart och tillgängligt.
 
-Att dela upp ett dokument efter rubriker kan vara användbart för att organisera och hantera innehåll, särskilt i stora dokument med flera sektioner. Aspose.Words för .NET tillhandahåller en pålitlig och effektiv lösning för att hantera dokumentdelning och generera utdata i olika format.
+## FAQ's
 
-Utforska gärna ytterligare funktioner och alternativ som tillhandahålls av Aspose.Words för .NET för att ytterligare förbättra dina dokumentbehandlingsmöjligheter och effektivisera ditt arbetsflöde.
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dokument i .NET-applikationer.
 
-### Vanliga frågor
+### Kan jag dela upp ett dokument efter andra kriterier?
+Ja, Aspose.Words låter dig dela upp dokument efter olika kriterier som sektioner, sidor och mer.
 
-#### Hur kan jag dela upp ett Word-dokument i mindre delar baserat på rubriker med Aspose.Words för .NET?
+### Är Aspose.Words gratis?
+ Aspose.Words erbjuder en gratis provperiod, men för alla funktioner måste du köpa en licens. Kolla deras[köpsida](https://purchase.aspose.com/buy) för mer detaljer.
 
- För att dela upp ett Word-dokument baserat på rubriker kan du använda funktionen By HTML Heading i Aspose.Words för .NET. Följ den medföljande källkoden och ställ in`DocumentSplitCriteria` till`HeadingParagraph` i`HtmlSaveOptions` objekt. Detta kommer att dela upp dokumentet i mindre delar vid varje rubrik.
+### Var kan jag hitta dokumentationen?
+ Omfattande dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
 
-#### Vilka format kan jag dela upp Word-dokumentet i?
-
- Den medföljande källkoden visar att Word-dokumentet delas upp i mindre delar i HTML-format. Men Aspose.Words för .NET stöder olika utdataformat, inklusive DOCX, PDF, EPUB och mer. Du kan ändra koden och ange önskat utdataformat i`HtmlSaveOptions` invända i enlighet därmed.
-
-#### Kan jag välja ett annat kriterium för att dela upp dokumentet?
-
-Ja, du kan välja andra kriterier för att dela upp dokumentet baserat på dina krav. Aspose.Words för .NET tillhandahåller flera kriteriealternativ, som t.ex`HeadingParagraph`, `Page`, `Section` , och mer. Ändra`DocumentSplitCriteria` egendom i`HtmlSaveOptions` objekt för att välja lämpliga kriterier för delning.
-
-#### Hur kan jag anpassa HTML-utdata för de delade delarna?
-
- Aspose.Words för .NET låter dig anpassa HTML-utdata för de delade delarna genom att ange ytterligare alternativ i`HtmlSaveOptions` objekt. Du kan styra olika aspekter som CSS-stilar, bilder, typsnitt och mer. Se Aspose.Words-dokumentationen för mer information om anpassning av HTML-utdata.
-
-#### Kan jag dela upp dokumentet baserat på flera kriterier?
-
- Ja, du kan dela upp dokumentet baserat på flera kriterier genom att kombinera kriteriealternativen därefter. Du kan till exempel dela upp dokumentet efter både rubrik och sida genom att ställa in`DocumentSplitCriteria`egendom till`HeadingParagraph | Page`. Detta kommer att dela upp dokumentet vid varje rubrik och varje sida, vilket skapar mindre delar baserat på båda kriterierna.
+### Hur får jag stöd?
+ För support, besök Aspose.Words[forum](https://forum.aspose.com/c/words/8).

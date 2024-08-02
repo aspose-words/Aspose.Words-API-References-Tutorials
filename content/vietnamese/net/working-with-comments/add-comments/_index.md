@@ -2,103 +2,115 @@
 title: Thêm nhận xét
 linktitle: Thêm nhận xét
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thêm nhận xét vào tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách thêm nhận xét vào tài liệu Word của bạn bằng Aspose.Words dành cho .NET với hướng dẫn của chúng tôi. Nâng cao quá trình cộng tác tài liệu của bạn một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/working-with-comments/add-comments/
 ---
+## Giới thiệu
 
-Trong hướng dẫn toàn diện này, bạn sẽ tìm hiểu cách thêm nhận xét vào tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ hướng dẫn bạn thực hiện quy trình và cung cấp cho bạn các đoạn mã C# cần thiết. Đến cuối hướng dẫn này, bạn sẽ có thể chèn nhận xét và tùy chỉnh nội dung của chúng trong tài liệu của mình.
+Chào mừng bạn đến với hướng dẫn chi tiết của chúng tôi về cách thêm nhận xét vào tài liệu Word bằng Aspose.Words cho .NET! Nếu bạn đang tìm cách hợp lý hóa quy trình xem xét tài liệu của mình bằng cách kết hợp các nhận xét theo chương trình thì bạn đã đến đúng nơi. Hướng dẫn này sẽ hướng dẫn bạn mọi thứ bạn cần biết, từ thiết lập môi trường đến viết và lưu nhận xét trong tài liệu Word của bạn. Hãy cùng tìm hiểu và làm cho việc cộng tác tài liệu trở nên dễ dàng!
 
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-- Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tạo một tài liệu mới và DocumentBuilder
-Để bắt đầu, hãy tạo một tài liệu mới bằng lớp Document và khởi tạo đối tượng DocumentBuilder:
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+
+1. Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+2. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework trên máy của mình.
+3. Môi trường phát triển: Một IDE như Visual Studio để viết và thực thi mã của bạn.
+4. Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# sẽ giúp bạn theo dõi các ví dụ.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết vào dự án của mình. Điều này sẽ cho phép bạn truy cập các lớp và phương thức cần thiết để làm việc với Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+```
+
+Bây giờ, hãy chia quy trình thành các bước dễ thực hiện. Mỗi bước sẽ bao gồm phần giải thích chi tiết để giúp bạn hiểu logic và chức năng.
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+ Đầu tiên, chúng ta cần xác định thư mục nơi tài liệu của bạn sẽ được lưu. Chúng tôi sẽ sử dụng trình giữ chỗ`YOUR DOCUMENT DIRECTORY` mà bạn nên thay thế bằng đường dẫn thư mục thực tế của mình.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Bước 2: Khởi tạo tài liệu
+
+Tiếp theo, chúng ta sẽ khởi tạo một tài liệu mới và một đối tượng DocumentBuilder. DocumentBuilder giúp chúng ta xây dựng và sửa đổi tài liệu.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 2: Thêm nội dung vào tài liệu
-Tiếp theo, thêm nội dung mong muốn vào tài liệu bằng đối tượng DocumentBuilder. Trong ví dụ này, chúng tôi thêm một số văn bản:
+## Bước 3: Thêm văn bản vào tài liệu
+
+Chúng tôi sẽ thêm một số văn bản vào tài liệu bằng DocumentBuilder. Văn bản này sẽ là nơi chúng tôi đính kèm bình luận của mình.
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## Bước 3: Tạo bình luận và thêm nội dung
-Để thêm nhận xét, hãy tạo một thể hiện của lớp Comment, chuyển đối tượng Document, tên tác giả, tên viết tắt của tác giả và ngày hiện tại:
+## Bước 4: Tạo và thêm một bình luận
+
+Bây giờ là lúc để tạo một bình luận. Chúng ta sẽ khởi tạo một đối tượng Comment mới, chỉ định tài liệu, tên tác giả, tên viết tắt và ngày tháng.
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-Tiếp theo, thêm nhận xét vào đoạn hiện tại:
+## Bước 5: Đính kèm nhận xét vào đoạn văn
+
+Chúng ta cần đính kèm nhận xét vào đoạn hiện tại nơi chúng ta đã thêm văn bản. Điều này được thực hiện bằng cách thêm nhận xét vào đoạn văn.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-Thêm nội dung vào nhận xét, chẳng hạn như đoạn văn và văn bản:
+## Bước 6: Thêm nội dung vào bình luận
+
+Cuối cùng chúng ta sẽ thêm nội dung vào bình luận. Chúng tôi sẽ tạo Đoạn văn và Chạy mới để giữ văn bản nhận xét, sau đó thêm chúng vào nhận xét.
 
 ```csharp
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
-## Bước 4: Lưu tài liệu
-Sau khi thêm nhận xét và nội dung của nó, hãy lưu tài liệu vào một tệp bằng phương thức Lưu của lớp Tài liệu:
+## Bước 7: Lưu tài liệu
+
+Bước cuối cùng là lưu tài liệu cùng với các bình luận. Chúng tôi sẽ chỉ định thư mục và tên tệp.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
-```
-
-## Mã nguồn ví dụ để thêm nhận xét bằng Aspose.Words cho .NET
-Đây là mã nguồn hoàn chỉnh để thêm nhận xét bằng Aspose.Words cho .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Write("Some text is added.");
-
-Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-builder.CurrentParagraph.AppendChild(comment);
-
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
 ## Phần kết luận
-Chúc mừng! Bạn đã học thành công cách thêm nhận xét vào tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể chèn nhận xét và tùy chỉnh nội dung của chúng trong tài liệu của mình.
 
-Nhận xét rất hữu ích cho việc cộng tác, cung cấp thông tin bổ sung hoặc ghi chú trong tài liệu. Thử nghiệm với các tên tác giả, tên viết tắt và nội dung nhận xét khác nhau để đáp ứng yêu cầu cụ thể của bạn.
+Ở đó bạn có nó! Bạn đã thêm thành công nhận xét vào tài liệu Word bằng Aspose.Words for .NET. Tính năng mạnh mẽ này có thể nâng cao đáng kể quá trình xem xét tài liệu của bạn, giúp cộng tác và truyền đạt phản hồi dễ dàng hơn. Đừng quên khám phá các khả năng khác của Aspose.Words để hợp lý hóa hơn nữa các tác vụ quản lý tài liệu của bạn.
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Làm cách nào tôi có thể thêm nhận xét vào tài liệu Aspose.Words for .NET?
+### Aspose.Words cho .NET là gì?
 
-Đáp: Để thêm nhận xét vào tài liệu Aspose.Words for .NET, bạn cần làm theo các bước được đề cập trong hướng dẫn.
+Aspose.Words for .NET là một API mạnh mẽ cho phép các nhà phát triển tạo, thao tác và chuyển đổi tài liệu Word theo chương trình bằng ngôn ngữ .NET.
 
-#### Câu hỏi: Tôi có thể định dạng văn bản nhận xét trong Aspose.Words cho .NET không?
+### Tôi có thể thêm nhiều nhận xét vào một tài liệu không?
 
-Trả lời: Có, bạn có thể định dạng văn bản nhận xét trong Aspose.Words for .NET bằng cách sử dụng các thuộc tính định dạng có sẵn.
+Có, bạn có thể thêm nhiều nhận xét vào một tài liệu bằng cách lặp lại quá trình tạo và thêm nhận xét vào các đoạn văn hoặc dòng văn bản khác nhau.
 
-#### Câu hỏi: Làm cách nào tôi có thể truy xuất tất cả nhận xét có trong tài liệu?
+### Làm cách nào để tùy chỉnh giao diện của bình luận?
 
- Trả lời: Bạn có thể truy xuất tất cả các nhận xét có trong tài liệu bằng cách sử dụng`Document.Comments` tài sản.
+Trong khi Aspose.Words tập trung vào nội dung và cấu trúc của nhận xét, giao diện có thể được tùy chỉnh bằng các tính năng định dạng tích hợp của Word.
 
-#### Câu hỏi: Tôi có thể xóa nhận xét cụ thể trong Aspose.Words dành cho .NET không?
+### Có thể xóa nhận xét theo chương trình không?
 
- Đáp: Có, bạn có thể xóa một nhận xét cụ thể trong Aspose.Words for .NET bằng cách sử dụng`Comment.Remove` phương pháp.
+Có, bạn có thể xóa nhận xét theo chương trình bằng cách lặp lại các nhận xét trong tài liệu và xóa chúng nếu cần.
 
-#### Câu hỏi: Làm cách nào tôi có thể sửa đổi văn bản của nhận xét hiện có trong Aspose.Words cho .NET?
+### Tôi có thể thêm câu trả lời vào nhận xét không?
 
- Trả lời: Để sửa đổi văn bản của nhận xét hiện có trong Aspose.Words cho .NET, bạn có thể truy cập`Comment.Text` thuộc tính tương ứng`Comment` đối tượng và sửa đổi văn bản nếu cần.
+Aspose.Words cho phép bạn làm việc với các nhận xét theo chuỗi, cho phép bạn thêm câu trả lời cho các nhận xét hiện có để thảo luận chi tiết hơn.

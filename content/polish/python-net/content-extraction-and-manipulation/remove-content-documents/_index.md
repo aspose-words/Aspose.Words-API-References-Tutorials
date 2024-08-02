@@ -10,7 +10,7 @@ url: /pl/python-net/content-extraction-and-manipulation/remove-content-documents
 
 ## Wprowadzenie do usuwania i poprawiania zawartości w dokumentach programu Word
 
-Czy kiedykolwiek znalazłeś się w sytuacji, w której musiałeś usunąć lub udoskonalić określoną treść z dokumentu programu Word? Niezależnie od tego, czy jesteś twórcą treści, redaktorem, czy po prostu zajmujesz się dokumentami w codziennych zadaniach, wiedza, jak efektywnie manipulować treścią w dokumentach programu Word, może zaoszczędzić cenny czas i wysiłek. W tym artykule przyjrzymy się, jak usuwać i udoskonalać zawartość dokumentów programu Word przy użyciu potężnej biblioteki Aspose.Words dla języka Python. Omówimy różne scenariusze i zapewnimy wskazówki krok po kroku wraz z przykładami kodu źródłowego.
+Czy kiedykolwiek znalazłeś się w sytuacji, w której musiałeś usunąć lub udoskonalić określoną treść z dokumentu programu Word? Niezależnie od tego, czy jesteś twórcą treści, redaktorem, czy po prostu zajmujesz się dokumentami w swoich codziennych zadaniach, wiedza, jak efektywnie manipulować treścią w dokumentach programu Word, może zaoszczędzić cenny czas i wysiłek. W tym artykule przyjrzymy się, jak usuwać i udoskonalać zawartość dokumentów programu Word przy użyciu potężnej biblioteki Aspose.Words dla języka Python. Omówimy różne scenariusze i zapewnimy wskazówki krok po kroku wraz z przykładami kodu źródłowego.
 
 ## Warunki wstępne
 
@@ -86,7 +86,7 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## Usuwanie sekcji
 
-Usunięcie całych sekcji z dokumentu można wykonać w następujący sposób:
+Usuwanie całych sekcji z dokumentu można wykonać w następujący sposób:
 
 ```python
 for section in doc.sections:

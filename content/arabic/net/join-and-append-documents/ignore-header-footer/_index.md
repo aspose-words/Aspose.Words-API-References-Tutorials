@@ -123,6 +123,6 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
  نعم، يمكنك إلحاق مستندات متعددة في حلقة من خلال تكرار الأمر`AppendDocument` طريقة لكل وثيقة إضافية.
 
-### أين يمكنني العثور على المزيد من الأمثلة والوثائق الخاصة بـ Aspose.Words لـ .NET؟
+### أين يمكنني العثور على المزيد من الأمثلة والوثائق الخاصة بـ Aspose.Words for .NET؟
 
  يمكنك العثور على وثائق وأمثلة شاملة على الموقع[موقع أسبوز](https://reference.aspose.com/words/net/).

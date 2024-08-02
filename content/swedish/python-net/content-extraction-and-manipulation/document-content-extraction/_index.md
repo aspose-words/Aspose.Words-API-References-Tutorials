@@ -14,7 +14,7 @@ Att effektivt extrahera innehåll från Word-dokument är ett vanligt krav inom 
 
 ## Förutsättningar
 
-Innan vi dyker in i koden, se till att du har Python och Aspose.Words-biblioteket installerat. Du kan ladda ner biblioteket från webbplatsen[här](https://releases.aspose.com/words/python/). Se dessutom till att du har ett Word-dokument redo för testning.
+ Innan vi dyker in i koden, se till att du har Python och Aspose.Words-biblioteket installerat. Du kan ladda ner biblioteket från webbplatsen[här](https://releases.aspose.com/words/python/). Se dessutom till att du har ett Word-dokument redo för testning.
 
 ## Installerar Aspose.Words för Python
 

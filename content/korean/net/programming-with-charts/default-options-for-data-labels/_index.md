@@ -11,7 +11,7 @@ url: /ko/net/programming-with-charts/default-options-for-data-labels/
 
 안녕하세요! 문서 자동화의 세계에 빠져들게 되어 기쁩니까? 오늘은 Aspose.Words for .NET을 사용하여 프로그래밍 방식으로 멋진 문서를 만드는 방법을 살펴보겠습니다. Aspose.Words는 Word 문서를 쉽게 조작할 수 있는 강력한 라이브러리이며, 이 튜토리얼에서는 차트의 데이터 레이블에 대한 기본 옵션을 설정하는 데 중점을 둘 것입니다. 숙련된 개발자이든 초보자이든 이 가이드는 각 단계를 안내하여 즉시 시작하고 실행할 수 있도록 도와줍니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 이 튜토리얼을 따라야 할 모든 것이 갖추어져 있는지 확인하겠습니다. 간단한 체크리스트는 다음과 같습니다.
 
@@ -129,7 +129,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ## FAQ
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
-Aspose.Words를 무료로 사용할 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 또는[무료 시험판](https://releases.aspose.com/).
+Aspose.Words를 무료로 사용할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는[무료 시험판](https://releases.aspose.com/).
 
 ### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
  통해 지원을 받으실 수 있습니다.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8).

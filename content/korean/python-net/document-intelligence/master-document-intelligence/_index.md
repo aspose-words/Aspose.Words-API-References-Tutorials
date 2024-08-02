@@ -18,7 +18,7 @@ Python은 강력하고 다재다능한 프로그래밍 언어로 부상하여 �
 
 ## Python용 Aspose.Words 시작하기
 
-Aspose.Words는 광범위한 문서 처리 기능을 제공하는 선도적인 Python 라이브러리입니다. 시작하려면 라이브러리를 설치하고 Python 환경을 설정해야 합니다. Aspose.Words를 설치하기 위한 소스 코드는 다음과 같습니다.
+Aspose.Words는 광범위한 문서 처리 기능을 제공하는 선도적인 Python 라이브러리입니다. 시작하려면 라이브러리를 설치하고 Python 환경을 설정해야 합니다. 다음은 Aspose.Words 설치를 위한 소스 코드입니다:
 
 ```python
 # Install Aspose.Words for Python using pip

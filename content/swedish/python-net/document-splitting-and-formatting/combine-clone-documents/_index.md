@@ -38,7 +38,7 @@ dst_doc.save("combined_document.docx")
 
 ### Metod 2: Använd Document.append_document()
 
- Aspose.Words ger också en bekväm metod`append_document()` för att kombinera dokument:
+ Aspose.Words erbjuder också en bekväm metod`append_document()` för att kombinera dokument:
 
 ```python
 import aspose.words as aw
@@ -120,7 +120,7 @@ Aspose.Words för Python är ett mångsidigt bibliotek som ger dig möjlighet at
 ### Hur installerar jag Aspose.Words för Python?
  Du kan installera Aspose.Words för Python genom att ladda ner det från[här](https://releases.aspose.com/words/python/).
 
-### Kan jag bara klona strukturen i ett dokument?
+### Kan jag klona endast strukturen i ett dokument?
 Ja, du kan utföra en ytlig klon för att bara kopiera strukturen i ett dokument utan innehållet.
 
 ### Hur kan jag ersätta specifik text i ett dokument?

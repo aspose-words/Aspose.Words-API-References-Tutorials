@@ -25,7 +25,7 @@ Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang perlu An
 
 ## Impor Namespace
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini penting untuk mengakses fungsionalitas Aspose.Words.
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini penting untuk mengakses fungsi Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -40,7 +40,7 @@ Sebelum kita masuk ke kodenya, pastikan proyek Anda sudah diatur dengan benar.
 
 ### Langkah 1.1: Buat Proyek Baru
 
-Buka Visual Studio dan buat proyek Aplikasi Konsol C# baru. Beri nama seperti "AsposeWordsCompressionDemo".
+Buka Visual Studio dan buat proyek Aplikasi Konsol C# baru. Beri nama seperti "AsposeWordsCompressionDemo."
 
 ### Langkah 1.2: Instal Aspose.Words untuk .NET
 

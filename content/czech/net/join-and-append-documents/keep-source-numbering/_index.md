@@ -86,7 +86,7 @@ Aspose.Words for .NET zpracovává složité struktury, jako jsou tabulky a obr�
 ### Je Aspose.Words kompatibilní se všemi verzemi .NET?
 Aspose.Words podporuje verze .NET Framework a .NET Core pro bezproblémovou integraci.
 
-### Jak mohu řešit chyby při importu dokumentu?
+### Jak mohu ošetřit chyby při importu dokumentu?
 Použijte bloky try-catch ke zpracování výjimek, které mohou nastat během procesu importu.
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?

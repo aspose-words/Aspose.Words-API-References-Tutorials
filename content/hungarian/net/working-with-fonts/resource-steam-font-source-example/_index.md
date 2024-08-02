@@ -2,7 +2,7 @@
 title: Erőforrás Steam betűtípus-forrás példa
 linktitle: Erőforrás Steam betűtípus-forrás példa
 second_title: Aspose.Words Document Processing API
-description: Ebből a részletes útmutatóból megtudhatja, hogyan használhatja az Aspose.Words for .NET-hez forrásfolyam-betűforrást. Minden alkalommal győződjön meg arról, hogy a dokumentumok megfelelően jelennek meg.
+description: Ebből a részletes útmutatóból megtudhatja, hogyan használhatja az Aspose.Words for .NET-hez forrásadatfolyam-betűforrást. Minden alkalommal győződjön meg arról, hogy a dokumentumok megfelelően jelennek meg.
 type: docs
 weight: 10
 url: /hu/net/working-with-fonts/resource-steam-font-source-example/

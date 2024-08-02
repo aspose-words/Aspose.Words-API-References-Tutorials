@@ -18,7 +18,7 @@ Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi th�
 
 -  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất.[Tải về tại đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Bạn có thể sử dụng Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
-- Kiến thức cơ bản về C#: Mặc dù chúng ta sẽ trình bày nó đơn giản nhưng hiểu biết cơ bản về C# là cần thiết.
+- Kiến thức cơ bản về C#: Mặc dù chúng ta sẽ nói đơn giản nhưng hiểu biết cơ bản về C# là cần thiết.
 - Tài liệu mẫu: Chuẩn bị sẵn tài liệu Word trong thư mục tài liệu của bạn cho mục đích thử nghiệm.
 
 ## Nhập không gian tên

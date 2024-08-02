@@ -42,7 +42,7 @@ doc.built_in_document_properties["Keywords"].value = "Python, Aspose.Words, Docu
 
 ## Quản lý thiết lập trang:
 
-Việc kiểm soát kích thước, lề và hướng trang đảm bảo rằng tài liệu của bạn xuất hiện như dự kiến:
+Việc kiểm soát kích thước, lề và hướng trang đảm bảo rằng tài liệu của bạn xuất hiện như dự định:
 
 ```python
 page_setup = doc.sections[0].page_setup

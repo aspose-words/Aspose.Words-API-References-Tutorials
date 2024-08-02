@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## Úvod
 
 Ve světě vývoje .NET je správa a manipulace s dokumenty zásadním úkolem, který často vyžaduje efektivní manipulaci s hypertextovými odkazy v dokumentech. Aspose.Words for .NET poskytuje výkonné funkce pro bezproblémové nahrazení hypertextových odkazů a zajišťuje, že vaše dokumenty jsou dynamicky propojeny se správnými zdroji. Tento návod se ponoří hluboko do toho, jak toho můžete dosáhnout pomocí Aspose.Words pro .NET, a provede vás procesem krok za krokem.
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 Nahrazení hypertextových odkazů v dokumentech pomocí Aspose.Words for .NET je přímočaré a zvyšuje dynamickou povahu vašich dokumentů. Ať už se jedná o aktualizaci adres URL nebo programovou transformaci obsahu dokumentu, Aspose.Words tyto úkoly zjednodušuje a zajišťuje efektivní správu dokumentů.
 
-## Často kladené otázky (FAQ)
+## FAQ
 
 ### Dokáže Aspose.Words for .NET zvládnout složité struktury dokumentů?
 Ano, Aspose.Words bezproblémově podporuje složité struktury, jako jsou tabulky, obrázky a hypertextové odkazy.

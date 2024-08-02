@@ -12,4 +12,4 @@ Filigranla Kelime İşleme, Aspose.Words for .NET kütüphanesini kullanarak Wor
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Belirli Seçeneklerle Metin Filigranı Ekleme](./add-text-watermark-with-specific-options/) | Aspose.Words for .NET'i kullanarak belirli seçeneklerle nasıl metin filigranı ekleyeceğinizi öğrenin. Adım adım rehber. |
+| [Belirli Seçeneklerle Metin Filigranı Ekleme](./add-text-watermark-with-specific-options/) | Aspose.Words for .NET'i kullanarak Word belgelerinize belirli seçeneklerle bir metin filigranını nasıl ekleyeceğinizi öğrenin. Yazı tipini, boyutunu, rengini ve düzenini kolayca özelleştirin. |

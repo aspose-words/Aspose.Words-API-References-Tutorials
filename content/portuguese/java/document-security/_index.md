@@ -12,7 +12,7 @@ Garantir a segurança dos documentos é fundamental no processamento de texto e 
 
 ## Implementando Proteção de Documentos
 
-Estes tutoriais se aprofundam nas técnicas para implementar a proteção de documentos usando Aspose.Words para Java. Os desenvolvedores explorarão como definir a proteção por senha, restringindo a edição, formatação e extração de conteúdo de documentos. Aspose.Words oferece opções flexíveis para personalizar os níveis de proteção, garantindo que os documentos permaneçam seguros e permitindo que usuários autorizados acessem e modifiquem o conteúdo.
+Estes tutoriais se aprofundam nas técnicas para implementar a proteção de documentos usando Aspose.Words for Java. Os desenvolvedores explorarão como definir a proteção por senha, restringindo a edição, formatação e extração de conteúdo de documentos. Aspose.Words oferece opções flexíveis para personalizar os níveis de proteção, garantindo que os documentos permaneçam seguros e permitindo que usuários autorizados acessem e modifiquem o conteúdo.
 
 ## Criptografia e assinaturas digitais
 

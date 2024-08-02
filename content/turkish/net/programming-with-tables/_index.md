@@ -16,26 +16,26 @@ Bu eğitimleri takip ederek Aspose.Words for .NET'in tablo işleme özelliklerin
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Tabloyu İçeriğe Otomatik Sığdır](./auto-fit-table-to-contents/) | Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir tabloyu içeriğine nasıl otomatik olarak sığdıracağınızı öğrenin. |
-| [Komple Tabloyu Klonla](./clone-complete-table/) | Aspose.Words for .NET ile bir tablonun tamamını bir Word belgesine nasıl kopyalayacağınızı öğrenin. |
-| [Dizin Bulma](./finding-index/) | Aspose.Words for .NET ile bir Word belgesinde tablo, satır ve hücre indekslerini nasıl bulacağınızı öğrenin. |
+| [Tabloyu İçeriğe Otomatik Sığdır](./auto-fit-table-to-contents/) | Bu kılavuzla Aspose.Words for .NET kullanarak tabloları Word belgelerindeki içeriğe nasıl otomatik olarak sığdıracağınızı öğrenin. Dinamik ve düzgün belge biçimlendirmesi için mükemmeldir. |
+| [Komple Tabloyu Klonla](./clone-complete-table/) | Bu ayrıntılı, adım adım eğitimle Aspose.Words for .NET kullanarak Word belgelerindeki tabloların tamamını nasıl kopyalayacağınızı öğrenin. |
+| [Dizin Bulma](./finding-index/) | Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki tabloların, satırların ve hücrelerin dizinini nasıl bulacağınızı öğrenin. |
 | [Tabloyu Doğrudan Ekle](./insert-table-directly/) | Aspose.Words for .NET kullanarak tabloları doğrudan Word belgelerine nasıl ekleyeceğinizi öğrenin. Belge oluşturma işleminizi kolaylaştırmak için ayrıntılı, adım adım kılavuzumuzu izleyin. |
-| [Html'den Tablo Ekle](./insert-table-from-html/) | Aspose.Words for .NET ile HTML'den Word belgesine nasıl tablo ekleyeceğinizi öğrenin. |
-| [Basit Tablo Oluştur](./create-simple-table/) | Aspose.Words for .NET ile bir Word belgesinde nasıl basit bir tablo oluşturulacağını öğrenin. |
-| [Biçimlendirilmiş Tablo](./formatted-table/) | Aspose.Words for .NET ile bir Word belgesinde biçimlendirilmiş bir tablonun nasıl oluşturulacağını öğrenin. |
-| [İç İçe Tablo](./nested-table/) | Aspose.Words for .NET ile bir Word belgesinde nasıl iç içe tablo oluşturulacağını öğrenin. |
-| [Satırları Birleştir](./combine-rows/) | Aspose.Words for .NET ile bir Word belgesindeki tablo satırlarını nasıl birleştireceğinizi öğrenin. |
-| [Bölünmüş Tablo](./split-table/) | Aspose.Words for .NET kullanarak bir Word belgesindeki tabloyu nasıl böleceğinizi öğrenin. |
-| [Satır Formatı Sayfalar Arasında Kesmeyi Devre Dışı Bırak](./row-format-disable-break-across-pages/) | Aspose.Words for .NET ile bir Word belgesinde birden çok sayfadaki bir tablo için satır sonunu nasıl devre dışı bırakacağınızı öğrenin. |
-| [Masayı Bir Arada Tutun](./keep-table-together/) | Aspose.Words for .NET ile bir Word belgesinde bir tabloyu nasıl bir arada tutacağınızı öğrenin. |
-| [Dikey Birleştirme](./vertical-merge/) | Aspose.Words for .NET kullanarak bir Word belgesindeki tablodaki hücreleri dikey olarak nasıl birleştireceğinizi öğrenin. |
-| [Yatay Birleştirme](./horizontal-merge/) | Aspose.Words for .NET ile Word tablosundaki hücreleri yatay olarak nasıl birleştireceğinizi öğrenin. |
-| [Yatay Olarak Birleştirilmiş Hücrelere Dönüştür](./convert-to-horizontally-merged-cells/) | Aspose.Words for .NET ile bir Word belgesinde tablo hücrelerini yatay olarak birleştirilmiş hücrelere nasıl dönüştüreceğinizi öğrenin. |
-| [Sonraki Sayfalarda Satırları Tekrarla](./repeat-rows-on-subsequent-pages/) | Aspose.Words for .NET ile bir Word belgesinin sonraki sayfalarında tablo satırlarını nasıl tekrarlayacağınızı öğrenin. |
+| [Html'den Tablo Ekle](./insert-table-from-html/) | Aspose.Words for .NET kullanarak HTML'den Word belgesine nasıl tablo ekleyeceğinizi öğrenin. Sorunsuz belge entegrasyonu için ayrıntılı kılavuzumuzu izleyin. |
+| [Basit Tablo Oluştur](./create-simple-table/) | Kapsamlı adım adım kılavuzumuzla Aspose.Words for .NET'i kullanarak bir Word belgesinde nasıl basit bir tablo oluşturacağınızı öğrenin. |
+| [Biçimlendirilmiş Tablo](./formatted-table/) | Bu ayrıntılı adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerinde tabloları nasıl oluşturacağınızı ve formatlayacağınızı öğrenin. |
+| [İç İçe Tablo](./nested-table/) | Aspose.Words for .NET kullanarak Word belgelerinde iç içe tabloların nasıl oluşturulacağını kılavuzumuzla öğrenin. Programlı olarak karmaşık belge düzenleri oluşturmak için mükemmeldir. |
+| [Satırları Birleştir](./combine-rows/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak birden fazla tablodaki satırları nasıl birleştireceğinizi öğrenin. |
+| [Bölünmüş Tablo](./split-table/) | Aspose.Words for .NET kullanarak Word belgelerindeki tabloları nasıl böleceğinizi öğrenin. Adım adım kılavuzumuz masa yönetimini kolay ve verimli hale getirir. |
+| [Satır Formatı Sayfalar Arasında Kesmeyi Devre Dışı Bırak](./row-format-disable-break-across-pages/) | Tablo okunabilirliğini ve formatını korumak için Aspose.Words for .NET'i kullanarak Word belgelerindeki sayfalar arasında satır sonlarını nasıl devre dışı bırakacağınızı öğrenin. |
+| [Masayı Bir Arada Tutun](./keep-table-together/) | Aspose.Words for .NET kullanarak tabloların Word belgelerindeki sayfalar arasında bölünmesini nasıl önleyeceğinizi öğrenin. Profesyonel, okunabilir belgelere sahip olmak için kılavuzumuzu izleyin. |
+| [Dikey Birleştirme](./vertical-merge/) | Bu ayrıntılı kılavuzla Aspose.Words for .NET kullanarak Word tablolarında dikey birleştirmede ustalaşın. Profesyonel belge biçimlendirmeye yönelik adım adım talimatları öğrenin. |
+| [Yatay Birleştirme](./horizontal-merge/) | Bu ayrıntılı, adım adım eğitimle Aspose.Words for .NET kullanarak bir Word belgesindeki hücreleri yatay olarak nasıl birleştireceğinizi öğrenin. |
+| [Yatay Olarak Birleştirilmiş Hücrelere Dönüştür](./convert-to-horizontally-merged-cells/) | Aspose.Words for .NET'i kullanarak Word belgelerinde dikey olarak birleştirilmiş hücreleri yatay olarak birleştirilmiş hücrelere dönüştürün. Sorunsuz bir tablo düzeni için adım adım kılavuz. |
+| [Sonraki Sayfalarda Satırları Tekrarla](./repeat-rows-on-subsequent-pages/) | Aspose.Words for .NET kullanarak yinelenen tablo başlığı satırlarına sahip Word belgelerinin nasıl oluşturulacağını öğrenin. Profesyonel ve gösterişli belgeler elde etmek için bu kılavuzu izleyin. |
 | [Pencereye Otomatik Sığdır](./auto-fit-to-page-width/) | Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak tabloları Word belgelerindeki pencereye kolayca otomatik olarak sığdırın. Daha temiz, profesyonel belgeler için mükemmeldir. |
 | [Tercih Edilen Genişlik Ayarları](./preferred-width-settings/) | Bu adım adım kılavuzla Aspose.Words for .NET'te mutlak, göreceli ve otomatik genişlik ayarlarına sahip tablolar oluşturmayı öğrenin. |
-| [Tercih Edilen Genişlik Tipini Al](./retrieve-preferred-width-type/) | Aspose.Words for .NET ile Word tablosundaki bir hücrenin tipini ve tercih edilen genişlik değerini nasıl alacağınızı öğrenin. |
-| [Tablo Konumunu Al](./get-table-position/) | Aspose.Words for .NET ile bir Word belgesinde bir tablonun konumunu nasıl alacağınızı öğrenin. |
-| [Yüzen Masa Konumunu Alın](./get-floating-table-position/) | Aspose.Words for .NET ile bir Word belgesinde kayan tabloların konumunu nasıl alacağınızı öğrenin. |
-| [Yüzer Tabla Konumu](./floating-table-position/) | Aspose.Words for .NET ile bir Word belgesinde bir tabloyu kayan konumda nasıl konumlandıracağınızı öğrenin. |
-| [Göreli Yatay veya Dikey Konumu Ayarla](./set-relative-horizontal-or-vertical-position/) | Aspose.Words for .NET ile bir Word belgesinde bir tablonun göreceli yatay veya dikey konumunu nasıl ayarlayacağınızı öğrenin. |
+| [Tercih Edilen Genişlik Tipini Al](./retrieve-preferred-width-type/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerinde tercih edilen genişlik tipindeki tablo hücrelerini nasıl alacağınızı öğrenin. |
+| [Tablo Konumunu Al](./get-table-position/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerindeki bir tablonun konumunu nasıl belirleyeceğinizi keşfedin. |
+| [Yüzen Masa Konumunu Alın](./get-floating-table-position/) | Aspose.Words for .NET kullanarak Word belgelerinde kayan tablo konumlarını nasıl elde edeceğinizi öğrenin. Bu ayrıntılı, adım adım kılavuz, bilmeniz gereken her şeyde size yol gösterecektir. |
+| [Yüzer Tabla Konumu](./floating-table-position/) | Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerindeki tabloların kayan konumunu nasıl kontrol edeceğinizi öğrenin. |
+| [Göreli Yatay veya Dikey Konumu Ayarla](./set-relative-horizontal-or-vertical-position/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki tablolar için göreceli yatay ve dikey konumların nasıl ayarlanacağını öğrenin. |

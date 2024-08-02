@@ -2,20 +2,41 @@
 title: ロケールの変更
 linktitle: ロケールの変更
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書内の日付と数値の書式設定のロケールを変更する方法を学習します。
+description: このガイドでは、Aspose.Words for .NET を使用して Word 文書のロケールを変更する方法を説明します。国際的なクライアントやプロジェクトを処理するのに最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/change-locale/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のロケールを変更する手順を説明します。ロケールを変更することで、差し込み印刷操作中に日付と数字の書式を制御できます。これを実現するために必要な C# ソース コードと手順を説明します。
+Word 文書の操作には、さまざまなロケールや文化を扱う場合には特に、多少の工夫が必要になることがよくあります。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のロケールを変更する方法について説明します。世界中のユーザー向けに文書を作成する場合でも、日付の形式を変更するだけの場合でも、このガイドが役立ちます。
 
 ## 前提条件
-始める前に、次の前提条件を満たしていることを確認してください。
-- Aspose.Words for .NET ライブラリがシステムにインストールされています。
 
-## ステップ1: ドキュメントとDocumentBuilderを作成する
-まず、Document クラスのインスタンスと DocumentBuilder オブジェクトを作成します。
+細かい点に入る前に、必要なものがすべて揃っていることを確認しましょう。
+
+-  Aspose.Words for .NET: ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
+- Visual Studio: .NET フレームワークをサポートする任意のバージョン。
+- C# の基礎知識: C# と .NET の基礎を理解しておくと、理解しやすくなります。
+
+ Aspose.Words for .NETがインストールされていることを確認してください。まだインストールしていない場合は、無料トライアルをご利用ください。[ここ](https://releases.aspose.com/)または購入する[ここ](https://purchase.aspose.com/buy).
+
+## 名前空間のインポート
+
+コーディングを始める前に、必要な名前空間をインポートする必要があります。これらはレシピの材料のようなもので、すべてがスムーズに機能することを保証します。
+
+```csharp
+using System.Globalization;
+using System.Threading;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Word 文書のロケールを変更するのは簡単なプロセスです。手順を追って説明しましょう。
+
+## ステップ1: ドキュメントを設定する
+
+まず最初に、ドキュメントとドキュメント ビルダーを設定しましょう。これは、料理を始める前に作業スペースを設定するようなものです。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,91 +44,73 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ2: フィールドを挿入する
-次に、InsertField メソッドを使用して、ドキュメントにマージ フィールドを挿入します。
+## ステップ2: 差し込みフィールドを挿入する
+
+ここで、日付の差し込みフィールドを挿入します。ここでロケールが役立ちます。
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-上記のコードでは、「Date」という名前のマージ フィールドをドキュメントに挿入します。
+## ステップ3: 現在の文化を保存する
 
-## ステップ3: ロケールを変更する
-日付と数値の書式設定のロケールを変更するには、スレッドの現在のカルチャを変更します。 この例では、ロケールをドイツ語 ("de-DE") に設定します。
+ロケールを変更する前に、現在のカルチャを保存する必要があります。これは、別の章に進む前に場所をブックマークすることと考えてください。
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+```
+
+## ステップ4: ロケールを変更する
+
+次に、スレッドの現在のカルチャをドイツ語 (「de-DE」) に変更します。これは、携帯電話の言語設定を切り替えるのと似ています。
+
+```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-上記のコードでは、現在のカルチャを保存し、現在のスレッドのカルチャをドイツ語に設定します。
+## ステップ5: 差し込み印刷を実行する
 
-## ステップ4: 差し込み印刷を実行する
-差し込み印刷操作を実行し、「日付」フィールドに日付の値を入力します。
+ここで、現在の日付で差し込み印刷を実行します。これにより、日付形式に新しいロケールが適用されます。
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-このコード スニペットでは、差し込み印刷操作を実行し、現在の日付を「日付」フィールドの値として提供します。
+## ステップ6: 元の文化を復元する
 
-## ステップ5: 元のロケールを復元する
-差し込み印刷が完了したら、スレッドの元のカルチャを復元します。
+差し込み印刷を実行した後、元のカルチャを復元します。これは、優先する言語設定に戻すようなものです。
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-上記のコードでは、スレッドの元のカルチャを復元します。
+## ステップ7: ドキュメントを保存する
 
-## ステップ6: ドキュメントを保存する
-Document クラスの Save メソッドを使用して、変更したドキュメントをファイルに保存します。
+最後に、指定したディレクトリにドキュメントを保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### Aspose.Words for .NET を使用してロケールを変更するためのサンプル ソース コード
-以下は、Aspose.Words for .NET を使用して Word 文書のロケールを変更するための完全なソース コードです。
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField("MERGEFIELD Date");
-
-CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
-
-doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
-
-Thread.CurrentThread.CurrentCulture = currentCulture;
-
-doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
-```
+これで完了です。Aspose.Words for .NET を使用して、Word 文書のロケールを正常に変更できました。
 
 ## 結論
-おめでとうございます。Aspose.Words for .NET を使用して Word 文書のロケールを変更する方法を学習しました。ステップ バイ ステップ ガイドに従い、提供されているソース コードを利用することで、差し込み印刷操作中に日付と数値の書式を制御できるようになりました。要件に応じてロケールをカスタマイズし、文書の書式が正確で一貫性のあるものになるようにします。
 
-### よくある質問
+Word 文書のロケールを変更することは、特に海外の顧客やプロジェクトを扱う場合に非常に便利です。Aspose.Words for .NET を使用すると、この作業は簡単になります。次の手順に従えば、ロケールを簡単に切り替えることができます。
 
-#### Q: Aspose.Words はさまざまなバージョンの Microsoft Word と互換性がありますか?
+## よくある質問
 
-A: はい、Aspose.Words は、Word 2003、Word 2007、Word 2010、Word 2013、Word 2016、Word 2019 など、さまざまなバージョンの Microsoft Word と互換性があります。
+### ロケールを任意の言語に変更できますか?
+はい、Aspose.Words for .NET は、.NET でサポートされている任意の言語へのロケールの変更をサポートしています。
 
-#### Q: Aspose.Words は複雑なフィールド構造をサポートしていますか?
+### これはドキュメントの他の部分に影響しますか?
+ロケールを変更すると、主に日付と数値の形式に影響します。その他のテキストは変更されません。
 
-A: もちろんです! Aspose.Words は、ネストされたフィールド、計算、条件式などの複雑なフィールド構造を幅広くサポートしています。この強力な API を使用して、あらゆる種類のフィールド構造を操作できます。
+### Aspose.Words for .NET を使用するには特別なライセンスが必要ですか?
+無料トライアルから始めることができますが、継続して使用するにはライセンスを購入する必要があります[ここ](https://purchase.aspose.com/buy).
 
-#### Q: Aspose.Words はフィールド更新操作をサポートしていますか?
+### 何か問題が発生した場合、元のロケールに戻すことはできますか?
+はい、元のカルチャを保存して後で復元することで、元のロケールに戻すことができます。
 
-A: はい、Aspose.Words ではスケジュールに従ってフィールドを更新できます。API を使用すると、フィールド値の更新、計算の更新、その他のフィールド関連の操作を簡単に実行できます。
-
-#### Q: Aspose.Words を使用してフィールドをプレーン テキストに変換することは可能ですか?
-
-A: もちろんです! Aspose.Words には、フィールドをプレーン テキストに変換するメソッドが用意されています。これは、書式設定やフィールド関連の機能なしでコンテンツを抽出する必要がある場合に役立ちます。
-
-#### Q: Aspose.Words を使用して動的フィールドを含む Word 文書を生成することは可能ですか?
-
-A: もちろんです! Aspose.Words は、動的なフィールドを持つ Word ドキュメントを生成するための強力な機能を提供します。定義済みのフィールドを持つテンプレートを作成し、動的にデータを入力することで、ドキュメント生成のための柔軟で効率的なソリューションを提供できます。
+### 問題が発生した場合、どこでサポートを受けることができますか?
+ Asposeコミュニティからサポートを受けることができます[ここ](https://forum.aspose.com/c/words/8).

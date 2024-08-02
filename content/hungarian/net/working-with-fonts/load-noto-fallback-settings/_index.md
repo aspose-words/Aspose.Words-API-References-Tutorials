@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban láthattuk, hogyan tölthetők be a Noto betűtípus-helyettesítési beállítások egy Word-dokumentumba az Aspose.Words for .NET segítségével. A Noto betűtípus-helyettesítési beállításai lehetővé teszik a betűkészlet-helyettesítés kezelését a dokumentumok megjelenítésének és nyomtatásának javítása érdekében. Nyugodtan használja ezt a funkciót a betűtípus-helyettesítés igényeinek megfelelő testreszabásához.
+Ebben az oktatóanyagban azt láthattuk, hogyan tölthetők be a Noto betűtípus-helyettesítési beállítások egy Word-dokumentumba az Aspose.Words for .NET segítségével. A Noto betűtípus-helyettesítési beállításai lehetővé teszik a betűkészlet-helyettesítés kezelését a dokumentumok megjelenítésének és nyomtatásának javítása érdekében. Nyugodtan használja ezt a funkciót a betűtípus-helyettesítés igényeinek megfelelő testreszabásához.
 
 ### GYIK
 

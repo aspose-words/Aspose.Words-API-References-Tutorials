@@ -68,7 +68,7 @@ customProperty = customProperties["Bookmark"];
 
 ## Étape 5 : Vérifiez le lien vers le contenu
 
-Pour garantir que notre lien vers le contenu est correctement configuré, nous vérifierons si la propriété est effectivement liée au contenu et récupérerons sa source et sa valeur.
+Pour nous assurer que notre lien vers le contenu est correctement configuré, nous vérifierons si la propriété est effectivement liée au contenu et récupérerons sa source et sa valeur.
 
 ```csharp
 bool isLinkedToContent = customProperty.IsLinkToContent;

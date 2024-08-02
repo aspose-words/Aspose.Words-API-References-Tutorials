@@ -120,7 +120,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### Χρειάζομαι άδεια για το Aspose.Words;
 
- Ναι, μπορείτε να λάβετε μια δωρεάν δοκιμή[εδώ](https://releases.aspose.com/) ή αγοράστε μια άδεια[εδώ](https://purchase.aspose.com/buy).
+ Ναι, μπορείτε να λάβετε μια δωρεάν δοκιμή[εδώ](https://releases.aspose.com/) ή αγοράστε άδεια[εδώ](https://purchase.aspose.com/buy).
 
 ### Μπορώ να προσαρμόσω το εξαγόμενο HTML;
 

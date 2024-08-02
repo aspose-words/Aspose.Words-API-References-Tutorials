@@ -2,42 +2,63 @@
 title: Indeling in cel
 linktitle: Indeling in cel
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een vorm in een tabelcel in een Word-document kunt opmaken met Aspose.Words voor .NET.
+description: Leer hoe u de lay-out in cellen instelt met Aspose.Words voor .NET met deze uitgebreide handleiding. Perfect voor ontwikkelaars die Word-documenten willen aanpassen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-shapes/layout-in-cell/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u een vorm in een tabelcel in een Word-document kunt opmaken met behulp van Aspose.Words voor .NET. Door de vormeigenschappen aan te passen en de lay-outopties te gebruiken, kunt u de positionering en het uiterlijk van de vorm in de cel bepalen.
+Als u ooit de lay-out van uw tabelcellen in Word-documenten programmatisch wilt verfijnen, bent u hier op de juiste plek. Vandaag gaan we dieper in op het instellen van de lay-out in cellen met Aspose.Words voor .NET. We lopen door een praktisch voorbeeld en splitsen het stap voor stap op, zodat u het gemakkelijk kunt volgen.
 
 ## Vereisten
-Om deze tutorial te volgen, heb je het volgende nodig:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd.
-- Basiskennis van C# en woordenverwerking met Word-documenten.
+Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Als je dat nog niet hebt gedaan, kun je dat doen[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Je hebt een ontwikkelomgeving nodig die is opgezet met .NET. Visual Studio is een goede keuze als u op zoek bent naar aanbevelingen.
+3. Basiskennis van C#: Hoewel ik elke stap zal uitleggen, zal een basiskennis van C# je helpen gemakkelijker te volgen.
+4.  Documentmap: bereid een mappad voor waar u uw documenten opslaat. We zullen dit noemen als`YOUR DOCUMENT DIRECTORY`.
+
+## Naamruimten importeren
+
+Zorg er om te beginnen voor dat u de benodigde naamruimten in uw project importeert:
+
+```csharp
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+Laten we het proces opsplitsen in beheersbare stappen.
+
+## Stap 1: Maak een nieuw document
+
+ Eerst maken we een nieuw Word-document en initialiseren we een`DocumentBuilder` bezwaar maken om ons te helpen onze inhoud te construeren.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Stap 2: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder` bezwaar maken tegen het werken met het document.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Bouw de tafel
- Gebruik de`StartTable`, `EndTable`, `InsertCell` , En`Write` methoden van de`DocumentBuilder` object om een tafel te bouwen. Stel de gewenste rijhoogte en hoogteregel in met behulp van de`RowFormat` eigenschappen.
+## Stap 2: Start een tabel en stel de rijopmaak in
+
+We beginnen met het construeren van een tabel en specificeren de hoogte- en hoogteregel voor de rijen.
 
 ```csharp
 builder.StartTable();
 builder.RowFormat.Height = 100;
 builder.RowFormat.HeightRule = HeightRule.Exactly;
+```
+
+## Stap 3: cellen invoegen en inhoud vullen
+
+Vervolgens maken we een lus om cellen in de tabel in te voegen. Voor elke zeven cellen beëindigen we de rij om een nieuwe te maken.
+
+```csharp
 for (int i = 0; i < 31; i++)
 {
     if (i != 0 && i % 7 == 0) builder.EndRow();
@@ -47,15 +68,16 @@ for (int i = 0; i < 31; i++)
 builder.EndTable();
 ```
 
-## Stap 4: Maak en formatteer de vorm
- Maak een`Shape` object en configureer de eigenschappen ervan om het watermerk te definiëren. Stel de vorm in die binnen een cel moet worden opgemaakt met behulp van de`IsLayoutInCell` eigendom.
+## Stap 4: Voeg een watermerkvorm toe
+
+ Laten we nu een watermerk aan ons document toevoegen. We maken een`Shape` object en stel de eigenschappen ervan in.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 {
     RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
     RelativeVerticalPosition = RelativeVerticalPosition.Page,
-    IsLayoutInCell = true,
+    IsLayoutInCell = true, // Geef de vorm buiten de tabelcel weer als deze in een cel wordt geplaatst.
     Width = 300,
     Height = 70,
     HorizontalAlignment = HorizontalAlignment.Center,
@@ -64,8 +86,9 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 };
 ```
 
-## Stap 5: Pas de vorm aan
- Pas het uiterlijk en de tekst van de watermerkvorm aan door eigenschappen in te stellen, zoals`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, enz.
+## Stap 5: Pas de weergave van het watermerk aan
+
+We zullen het uiterlijk van het watermerk verder aanpassen door de kleur- en teksteigenschappen in te stellen.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -76,8 +99,9 @@ watermark.Name = $"WaterMark_{Guid.NewGuid()}";
 watermark.WrapType = WrapType.None;
 ```
 
-## Stap 6: Plaats de vorm in het document
- Voeg de watermerkvorm in het document in met behulp van de`InsertNode` werkwijze van de`DocumentBuilder` voorwerp. Positioneer de vorm met behulp van de`MoveTo` methode om deze na de laatste run in het document te plaatsen.
+## Stap 6: Voeg een watermerk in het document in
+
+We zoeken de laatste run in het document en voegen het watermerk op die positie in.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -85,56 +109,39 @@ builder.MoveTo(run);
 builder.InsertNode(watermark);
 ```
 
-## Stap 7: Bewaar het document
- Sla het document op in de opgegeven map met behulp van de`Save`methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithShapes.LayoutInCell.docx".
+## Stap 7: Document optimaliseren voor Word 2010
+
+Om compatibiliteit te garanderen, optimaliseren we het document voor Word 2010.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
-doc
-
-.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-### Voorbeeldbroncode voor Layout In Cell met Aspose.Words voor .NET 
+## Stap 8: Bewaar het document
+
+Ten slotte slaan we ons document op in de opgegeven map.
 
 ```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.StartTable();
-	builder.RowFormat.Height = 100;
-	builder.RowFormat.HeightRule = HeightRule.Exactly;
-	for (int i = 0; i < 31; i++)
-	{
-		if (i != 0 && i % 7 == 0) builder.EndRow();
-		builder.InsertCell();
-		builder.Write("Cell contents");
-	}
-	builder.EndTable();
-	Shape watermark = new Shape(doc, ShapeType.TextPlainText)
-	{
-		RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
-		RelativeVerticalPosition = RelativeVerticalPosition.Page,
-		IsLayoutInCell = true, // Geef de vorm buiten de tabelcel weer als deze in een cel wordt geplaatst.
-		Width = 300,
-		Height = 70,
-		HorizontalAlignment = HorizontalAlignment.Center,
-		VerticalAlignment = VerticalAlignment.Center,
-		Rotation = -40
-	};
-	watermark.FillColor = Color.Gray;
-	watermark.StrokeColor = Color.Gray;
-	watermark.TextPath.Text = "watermarkText";
-	watermark.TextPath.FontFamily = "Arial";
-	watermark.Name = $"WaterMark_{Guid.NewGuid()}";
-	watermark.WrapType = WrapType.None;
-	Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
-	builder.MoveTo(run);
-	builder.InsertNode(watermark);
-	doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
-	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
+doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-Dat is het! U hebt met succes een vorm in een tabelcel in een Word-document ingedeeld met Aspose.Words voor .NET.
+## Conclusie
+
+En daar heb je het! U hebt met succes een Word-document gemaakt met een aangepaste tabelindeling en een watermerk toegevoegd met Aspose.Words voor .NET. Deze tutorial was bedoeld om u een duidelijke, stapsgewijze handleiding te bieden waarmee u elk onderdeel van het proces kunt begrijpen. Met deze vaardigheden kunt u nu programmatisch geavanceerdere en aangepaste Word-documenten maken.
+
+## Veelgestelde vragen
+
+### Kan ik een ander lettertype gebruiken voor de watermerktekst?
+ Ja, u kunt het lettertype wijzigen door de`watermark.TextPath.FontFamily` eigenschap naar het gewenste lettertype.
+
+### Hoe pas ik de positie van het watermerk aan?
+ U kunt de`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , En`VerticalAlignment` eigenschappen om de positie van het watermerk aan te passen.
+
+### Is het mogelijk om een afbeelding in plaats van tekst voor het watermerk te gebruiken?
+ Absoluut! U kunt een`Shape` met de soort`ShapeType.Image` en stel de afbeelding in met behulp van de`ImageData.SetImage` methode.
+
+### Kan ik tabellen maken met verschillende rijhoogtes?
+Ja, u kunt voor elke rij verschillende hoogtes instellen door de`RowFormat.Height` eigenschap voordat u cellen in die rij invoegt.
+
+### Hoe verwijder ik een watermerk uit het document?
+ U kunt het watermerk verwijderen door het in de vormenverzameling van het document te zoeken en het bestand`Remove` methode.

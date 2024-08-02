@@ -2,42 +2,79 @@
 title: Форматированная таблица
 linktitle: Форматированная таблица
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как создать форматированную таблицу в документе Word с помощью Aspose.Words для .NET.
+description: Узнайте, как создавать и форматировать таблицы в документах Word с помощью Aspose.Words for .NET, с помощью этого подробного пошагового руководства.
 type: docs
 weight: 10
 url: /ru/net/programming-with-tables/formatted-table/
 ---
+## Введение
 
-В этом уроке мы узнаем, как создать форматированную таблицу в документе Word с помощью Aspose.Words для .NET. Мы будем следовать пошаговому руководству, чтобы понять код и реализовать эту функцию. В конце этого руководства вы сможете программно создавать таблицы с собственным форматированием в документах Word.
+Программное создание и форматирование таблиц в документах Word может показаться сложной задачей, но с Aspose.Words for .NET она становится простой и управляемой. В этом уроке мы покажем вам, как создать форматированную таблицу в документе Word с помощью Aspose.Words для .NET. Мы рассмотрим все: от настройки среды до сохранения документа в красиво отформатированной таблице.
 
-## Шаг 1: Настройка проекта
-1. Запустите Visual Studio и создайте новый проект C#.
-2. Добавьте ссылку на библиотеку Aspose.Words для .NET.
+## Предварительные условия
 
-## Шаг 2. Создание документа и инициализация генератора документов
-Чтобы начать построение форматированной таблицы, нам нужно создать новый документ и инициализировать генератор документов. Следуй этим шагам:
+Прежде чем углубиться в код, давайте убедимся, что у вас есть все необходимое:
+
+1. Библиотека Aspose.Words для .NET: загрузите ее с сайта[здесь](https://releases.aspose.com/words/net/).
+2. Среда разработки: IDE, например Visual Studio.
+3. .NET Framework: убедитесь, что на вашем компьютере установлена .NET Framework.
+
+## Импортировать пространства имен
+
+Прежде чем писать реальный код, вам необходимо импортировать необходимые пространства имен:
 
 ```csharp
-// Путь к каталогу ваших документов
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//Создайте документ и инициализируйте генератор документов.
+## Шаг 1. Настройте каталог документов
+
+Во-первых, вам необходимо определить путь, по которому будет сохранен ваш документ.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем, по которому вы хотите сохранить документ.
+
+## Шаг 2. Инициализируйте документ и DocumentBuilder
+
+Теперь инициализируйте новый документ и объект DocumentBuilder.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Обязательно замените «КАТАЛОГ ВАШИХ ДОКУМЕНТОВ» фактическим путем к каталогу ваших документов.
+`DocumentBuilder` — это вспомогательный класс, который упрощает процесс создания документов.
 
-## Шаг 3. Создание форматированной таблицы
-Далее мы построим отформатированную таблицу, используя методы, предоставляемые построителем документов. Используйте следующий код:
+## Шаг 3: Запустите таблицу
+
+ Затем начните создавать таблицу, используя`StartTable` метод.
 
 ```csharp
-// Начать построение массива
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// Построение строки заголовка таблицы
-builder. InsertCell();
-table. LeftIndent = 20.0;
+Вставка ячейки необходима для начала таблицы.
+
+## Шаг 4. Примените форматирование всей таблицы
+
+Вы можете применить форматирование, которое повлияет на всю таблицу. Например, установка отступа слева:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## Шаг 5. Отформатируйте строку заголовка
+
+Установите высоту, выравнивание и другие свойства для строки заголовка.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+На этом этапе мы выделяем строку заголовка, задав цвет фона, размер шрифта и выравнивание.
+
+## Шаг 6. Вставьте дополнительные ячейки заголовка
+
+Вставьте больше ячеек в строку заголовка:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## Шаг 7. Отформатируйте строки тела
 
-// Построение тела массива
+После настройки заголовка отформатируйте тело таблицы:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// Конец построения массива
-builder. EndTable();
 ```
 
- Здесь мы используем конструктор документов для пошагового построения таблицы. Начнем с звонка`StartTable()` для инициализации таблицы. Затем мы используем`InsertCell()` вставлять ячейки и`Write()` для добавления содержимого в каждую ячейку. Мы также используем различные свойства форматирования для определения форматирования строк, ячеек и текста таблицы.
+## Шаг 8. Вставка строк тела
 
-## Шаг 4. Сохраните документ.
-Наконец, нам нужно сохранить документ, содержащий отформатированную таблицу. Используйте следующий код:
+Вставьте строки тела с содержимым:
 
 ```csharp
-// Сохраните документ
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+Повторите для дополнительных рядов:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Шаг 9: Сохраните документ
+
+Наконец, сохраните документ в указанном каталоге:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Обязательно укажите правильный путь и имя файла для выходного документа.
-
-### Пример исходного кода для форматированной таблицы с использованием Aspose.Words для .NET 
-
-```csharp
-	// Путь к каталогу ваших документов
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// Общее форматирование таблицы должно применяться после того, как в таблице присутствует хотя бы одна строка.
-	table.LeftIndent = 20.0;
-	// Установите высоту и определите правило высоты для строки заголовка.
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// Нам не нужно указывать ширину этой ячейки, поскольку она унаследована от предыдущей ячейки.
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// Сбросьте высоту и определите другое правило высоты для тела таблицы.
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// Сбросить форматирование шрифта.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+Это создаст и сохранит документ Word с отформатированной таблицей.
 
 ## Заключение
-В этом уроке мы узнали, как создать форматированную таблицу в документе Word с помощью Aspose.Words для .NET. Следуя этому пошаговому руководству и реализовав предоставленный код C#, вы сможете программно создавать собственные таблицы с определенным форматированием в документах Word. Эта функция позволяет вам представлять и структурировать данные визуально привлекательным и организованным образом.
+
+И вот оно! Выполнив эти шаги, вы сможете создать хорошо отформатированную таблицу в документе Word, используя Aspose.Words для .NET. Эта мощная библиотека позволяет легко программно манипулировать документами Word, экономя ваше время и усилия.
+
+## Часто задаваемые вопросы
+
+### Что такое Aspose.Words для .NET?
+Aspose.Words for .NET — это мощная библиотека для программного создания, редактирования и преобразования документов Word.
+
+### Могу ли я использовать разные цвета для разных строк?
+Да, вы можете применять различное форматирование, включая цвета, к разным строкам или ячейкам.
+
+### Является ли Aspose.Words для .NET бесплатным?
+ Aspose.Words for .NET — платная библиотека, но вы можете получить[бесплатная пробная версия](https://releases.aspose.com/).
+
+### Как мне получить поддержку Aspose.Words для .NET?
+ Вы можете получить поддержку от[Форумы сообщества Aspose](https://forum.aspose.com/c/words/8).
+
+### Могу ли я создавать другие типы документов с помощью Aspose.Words для .NET?
+Да, Aspose.Words for .NET поддерживает различные форматы документов, включая PDF, HTML и TXT.

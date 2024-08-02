@@ -70,7 +70,7 @@ Utilisez le code suivant pour charger votre document Word :
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Étape 3 : Définir le niveau de compression
+## Étape 3 : définir le niveau de compression
 
 C'est ici que la magie opère. Nous définirons le niveau de compression du document.
 

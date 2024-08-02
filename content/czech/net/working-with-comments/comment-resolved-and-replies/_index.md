@@ -2,34 +2,70 @@
 title: Komentář vyřešen a odpovědi
 linktitle: Komentář vyřešen a odpovědi
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vyřešit komentáře a jejich odpovědi v dokumentech aplikace Word pomocí Aspose.Words for .NET.
+description: Automatizujte řešení a odpovídání na komentáře v dokumentech aplikace Word pomocí Aspose.Words for .NET. Včetně průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/working-with-comments/comment-resolved-and-replies/
 ---
+## Úvod
 
-V tomto komplexním tutoriálu se naučíte, jak vyřešit komentáře a jejich odpovědi v dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete moci spravovat řešení komentářů a aktualizovat stav komentářů a jejich odpovědí.
+Pokud pracujete s dokumenty Wordu, pravděpodobně jste se zabývali komentáři. Jsou skvělé pro spolupráci, ale jejich správa může být obtížná. S Aspose.Words pro .NET můžete automatizovat proces řešení a odpovídání na komentáře. Tento průvodce vás provede kroky, jak toho dosáhnout.
 
 ## Předpoklady
-Než začneme, ujistěte se, že máte následující předpoklady:
-- Knihovna Aspose.Words for .NET nainstalovaná ve vašem systému.
 
-## Krok 1: Načtěte dokument a otevřete komentáře
-Chcete-li začít, načtěte dokument, který obsahuje komentáře, pomocí třídy Document a otevřete kolekci komentářů:
+Před potápěním se ujistěte, že máte následující:
+
+1.  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Nastavení pomocí rozhraní .NET Framework.
+3. Základní znalost C#: Seznámení se syntaxí a pojmy.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. To zajišťuje, že všechny třídy a metody, které potřebujeme, jsou snadno dostupné.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+Pojďme si tento proces rozdělit do jednoduchých, snadno pochopitelných kroků. Každý krok vám pomůže pochopit kód a jeho funkce.
+
+## Krok 1: Vložte dokument
+
+ Chcete-li začít, načtěte dokument aplikace Word obsahující komentáře. Použijte`Document` třídy za to.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+ Tento řádek kódu inicializuje nový`Document` objekt s cestou k dokumentu aplikace Word.
+
+## Krok 2: Načtěte komentáře
+
+ Dále musíme získat všechny komentáře v dokumentu. Použijeme`GetChildNodes` způsob načtení sbírky`Comment` uzly.
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## Krok 2: Vyřešte komentáře a jejich odpovědi
-Dále projděte komentáře a jejich odpovědi a označte je jako vyřešené:
+Tento kód načte všechny komentáře v dokumentu a uloží je do a`NodeCollection`.
+
+## Krok 3: Přístup k rodičovskému komentáři
+
+V našem příkladu se zaměříme na první komentář ve sbírce. Toto bude náš rodičovský komentář.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+ Zde přetypujeme první uzel v kolekci na a`Comment` objekt.
+
+## Krok 4: Procházet odpovědi
+
+ Nyní si projdeme odpovědi na nadřazený komentář. Použijeme a`foreach` smyčka pro opakování každé odpovědi.
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-Ve výše uvedeném kódu přistupujeme k nadřazenému komentáři a iterujeme jeho odpovědi. Můžeme načíst ID nadřazeného komentáře a jeho stav řešení. Poté aktualizujeme značku „Hotovo“ u každé odpovědi na komentář, aby bylo uvedeno řešení.
+V této smyčce vytiskneme ID komentáře předka a jeho stav (zda je hotovo nebo ne). Poté každou odpověď označíme jako hotovou.
 
-## Krok 3: Uložte dokument
-Po vyřešení komentářů a aktualizaci jejich stavu uložte upravený dokument do souboru pomocí metody Save třídy Document:
+## Krok 5: Uložte dokument
+
+Nakonec upravený dokument uložte do svého adresáře.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### Příklad zdrojového kódu pro řešení komentářů a jejich odpovědí pomocí Aspose.Words for .NET
-Zde je kompletní zdrojový kód pro řešení komentářů a jejich odpovědí pomocí Aspose.Words for .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-Nezapomeňte upravit kód podle vašich konkrétních požadavků, včetně cesty k souboru dokumentu a dalších úprav
+Tento kód uloží změny do nového dokumentu a zajistí, že váš původní soubor zůstane nedotčen.
 
 ## Závěr
-Gratulujeme! Úspěšně jste se naučili, jak vyřešit komentáře a jejich odpovědi v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete nyní spravovat řešení komentářů a aktualizovat stav komentářů a jejich odpovědí podle vašich požadavků.
 
-Rozlišení komentářů pomáhá při sledování a správě zpětné vazby v dokumentu. Experimentujte s různými stavy komentářů a přizpůsobte je, abyste zlepšili spolupráci a procesy kontroly ve vašich dokumentech.
+Zpracování komentářů v dokumentech aplikace Word nemusí být ruční práce. S Aspose.Words for .NET můžete automatizovat proces, šetřit čas a omezovat chyby. Postupujte podle tohoto průvodce, abyste mohli efektivně řešit komentáře ve svých dokumentech a odpovídat na ně.
 
-### FAQ
+## FAQ
 
-#### Otázka: Jak vyřeším komentář v Aspose.Words pro .NET?
+### Mohu pomocí Aspose.Words for .NET automatizovat další úkoly související s komentáři?  
+Ano, můžete automatizovat různé úkoly, jako je přidávání, mazání a úprava komentářů.
 
- A: Chcete-li vyřešit komentář v Aspose.Words pro .NET, můžete použít`Comment.Resolve` způsob upřesňující`Comment` objekt, který chcete vyřešit. Tím označíte komentář jako vyřešený a skryjete jej v konečném dokumentu.
+### Je Aspose.Words for .NET kompatibilní s .NET Core?  
+Ano, Aspose.Words for .NET podporuje .NET Framework i .NET Core.
 
-#### Otázka: Jak přidám odpověď na vyřešený komentář v Aspose.Words pro .NET?
+### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?  
+ Bezplatnou zkušební verzi si můžete stáhnout z[tady](https://releases.aspose.com/).
 
- Odpověď: Přestože jsou vyřešené komentáře ve výchozím nastavení v konečném dokumentu skryté, stále můžete přidat odpověď na vyřešený komentář pomocí`Comment.AddReply`metoda určující text odpovědi a místo, kam jej chcete přidat.
+### Mohu použít Aspose.Words pro .NET pro práci s jinými typy dokumentů?  
+Ano, Aspose.Words podporuje různé formáty včetně DOCX, PDF, HTML a dalších.
 
-#### Otázka: Jak zobrazím vyřešené komentáře v Aspose.Words for .NET?
-
- Odpověď: Ve výchozím nastavení jsou vyřešené komentáře v konečném dokumentu skryté. Můžete je však zobrazit pomocí`CommentOptions.ShowResolvedComments` majetek z`Document` objekt a jeho nastavení`true`.
-
-#### Otázka: Jak mohu skrýt všechny komentáře, včetně odpovědí, v Aspose.Words for .NET?
-
- A: Chcete-li skrýt všechny komentáře, včetně odpovědí, v Aspose.Words pro .NET, můžete použít`CommentOptions.CommentDisplayMode` majetek z`Document` objekt a nastavte jej na`CommentDisplayMode.None`.
-
-#### Otázka: Mohu upravit text vyřešeného komentáře v Aspose.Words pro .NET?
-
- Odpověď: Ano, můžete upravit text vyřešeného komentáře v Aspose.Words pro .NET přístupem k`Comment.Text` vlastnost odpovídající`Comment` objekt a upravovat text podle potřeby.
+### Kde najdu podrobnou dokumentaci k Aspose.Words pro .NET?  
+ Máte přístup k dokumentaci[tady](https://reference.aspose.com/words/net/).

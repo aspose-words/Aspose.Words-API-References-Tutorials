@@ -7,11 +7,11 @@ type: docs
 weight: 10
 url: /ko/net/remove-content/remove-table-of-contents/
 ---
-## .NET용 Aspose.Words를 사용하여 Word 문서에서 목차 제거
+## 소개
 
 Word 문서에서 원치 않는 목차(TOC)를 처리하는 데 지치셨나요? 우리 모두는 그런 경험을 했습니다. 때로는 TOC가 필요하지 않은 경우도 있습니다. 운 좋게도 Aspose.Words for .NET을 사용하면 프로그래밍 방식으로 TOC를 쉽게 제거할 수 있습니다. 이 튜토리얼에서는 프로세스를 단계별로 안내해 드리므로 여러분은 즉시 마스터하실 수 있습니다. 바로 뛰어 들어 봅시다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서 폴더의 경로와 함께. 여기에는 Word 파일이 있는 곳입니다.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 폴더의 경로와 함께. 여기에는 Word 파일이 있는 곳입니다.
 
 ## 2단계: 문서 로드
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 현재 상황은 다음과 같습니다.
 - `doc.Range.Fields`: 문서의 모든 필드에 액세스합니다.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: 필드를 필터링하여 TOC인 항목만 찾습니다.
+- `.Where(f => f.Type == FieldType.FieldTOC)`필드를 필터링하여 TOC인 항목만 찾습니다.
 - `.ToList().ForEach(f => f.Remove())`: 필터링된 필드를 목록으로 변환하고 각 필드를 제거합니다.
 
 ## 4단계: 수정된 문서 저장
@@ -81,24 +81,24 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 그리고 거기에 있습니다! Aspose.Words for .NET을 사용하여 Word 문서에서 목차를 제거하는 것은 다음과 같은 간단한 단계로 분류하면 간단합니다. 이 강력한 라이브러리는 목차 제거에 도움이 될 뿐만 아니라 수많은 다른 문서 조작도 처리할 수 있습니다. 그러니 한번 시도해 보세요!
 
-## 자주 묻는 질문
+## FAQ
 
-### 1. .NET용 Aspose.Words란 무엇입니까?
+### .NET용 Aspose.Words란 무엇입니까?
 
 Aspose.Words for .NET은 문서 조작을 위한 강력한 .NET 라이브러리로, 개발자가 프로그래밍 방식으로 Word 문서를 생성, 수정 및 변환할 수 있습니다.
 
-### 2. Aspose.Words를 무료로 사용할 수 있나요?
+### Aspose.Words를 무료로 사용할 수 있나요?
 
- 예, Aspose.Words를 다음과 함께 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/).
+ 예, Aspose.Words를 다음과 함께 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
-### 3. Aspose.Words를 사용하여 다른 필드를 제거할 수 있습니까?
+### Aspose.Words를 사용하여 다른 필드를 제거할 수 있습니까?
 
 전적으로! 필터 조건에서 해당 유형을 지정하여 모든 필드를 제거할 수 있습니다.
 
-### 4. Aspose.Words를 사용하려면 Visual Studio가 필요합니까?
+### Aspose.Words를 사용하려면 Visual Studio가 필요합니까?
 
 개발의 용이성을 위해 Visual Studio를 적극 권장하지만 .NET을 지원하는 모든 IDE를 사용할 수 있습니다.
 
-### 5. Aspose.Words에 대한 자세한 정보는 어디서 찾을 수 있나요?
+### Aspose.Words에 대한 자세한 정보는 어디서 찾을 수 있나요?
 
  더 자세한 문서를 보려면 다음을 방문하세요.[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/).

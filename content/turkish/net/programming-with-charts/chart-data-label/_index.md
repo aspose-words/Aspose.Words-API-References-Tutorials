@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 
 ## Çözüm
 
- Tebrikler! Aspose.Words for .NET'i kullanarak grafik veri etiketlerini başarıyla özelleştirdiniz. Bu kitaplık, Word belgelerinin programlı olarak işlenmesi için sağlam bir çözüm sunarak geliştiricilerin karmaşık ve dinamik belge işleme uygulamaları oluşturmasını kolaylaştırır. Dalış[dokümantasyon](https://reference.aspose.com/words/net/) Daha fazla özellik ve yeteneği keşfetmek için.
+ Tebrikler! Aspose.Words for .NET'i kullanarak grafik veri etiketlerini başarıyla özelleştirdiniz. Bu kitaplık, Word belgelerinin programlı olarak işlenmesi için sağlam bir çözüm sunarak geliştiricilerin gelişmiş ve dinamik belge işleme uygulamaları oluşturmasını kolaylaştırır. Dalış[dokümantasyon](https://reference.aspose.com/words/net/) Daha fazla özellik ve yeteneği keşfetmek için.
 
 ## SSS'ler
 

@@ -45,7 +45,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 // दस्तावेज़ में सामग्री जोड़ने के लिए दस्तावेज़ बिल्डर का उपयोग करें.
 DocumentBuilder builder = new DocumentBuilder();
 
-//हाइपरलिंक डालें।
+// हाइपरलिंक डालें।
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", गलत);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### प्रश्न: क्या Aspose.Words में स्वचालित लिंक के प्रदर्शन पाठ को अनुकूलित करना संभव है?
 
- उत्तर: हाँ, आप Aspose.Words में स्वचालित लिंक के डिस्प्ले टेक्स्ट को कस्टमाइज़ कर सकते हैं। URL पते को डिस्प्ले टेक्स्ट के रूप में उपयोग करने के बजाय, आप बीच की सामग्री को बदलकर किसी अन्य टेक्स्ट का उपयोग कर सकते हैं।`<a>` टैग। उदाहरण के लिए, आप उपयोग कर सकते हैं`<a href="https://www.aspose.com">Click here</a>` "यहां क्लिक करें" पाठ को स्वचालित लिंक के रूप में प्रदर्शित करने के लिए।
+ उत्तर: हाँ, आप Aspose.Words में स्वचालित लिंक के डिस्प्ले टेक्स्ट को कस्टमाइज़ कर सकते हैं। URL पते को डिस्प्ले टेक्स्ट के रूप में उपयोग करने के बजाय, आप बीच की सामग्री को बदलकर किसी अन्य टेक्स्ट का उपयोग कर सकते हैं।`<a>` टैग। उदाहरण के लिए, आप उपयोग कर सकते हैं`<a href="https://www.aspose.com">Click here</a>`"यहां क्लिक करें" पाठ को स्वचालित लिंक के रूप में प्रदर्शित करने के लिए।
 
 #### प्रश्न: मैं Aspose.Words में ऑटोलिंक में अतिरिक्त विशेषताएं कैसे जोड़ सकता हूं?
 
-A: Aspose.Words में एक स्वचालित लिंक में अतिरिक्त विशेषताएँ जोड़ने के लिए, आप इसके अंदर अतिरिक्त HTML विशेषताओं का उपयोग कर सकते हैं`<a>` टैग. उदाहरण के लिए, आप उपयोग कर सकते हैं`<a href="https://www.aspose.com" target="_blank">Link</a>` लिंक को नई विंडो या टैब में खोलने के लिए` attribute target="_blank"`.
+ A: Aspose.Words में एक स्वचालित लिंक में अतिरिक्त विशेषताएँ जोड़ने के लिए, आप इसके अंदर अतिरिक्त HTML विशेषताओं का उपयोग कर सकते हैं`<a>` टैग. उदाहरण के लिए, आप उपयोग कर सकते हैं`<a href="https://www.aspose.com" target="_blank">Link</a>` लिंक को नई विंडो या टैब में खोलने के लिए` attribute target="_blank"`.

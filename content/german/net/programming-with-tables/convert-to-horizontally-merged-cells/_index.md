@@ -2,55 +2,82 @@
 title: In horizontal verbundene Zellen konvertieren
 linktitle: In horizontal verbundene Zellen konvertieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzellen in horizontal verbundene Zellen in einem Word-Dokument konvertieren.
+description: Konvertieren Sie vertikal verbundene Zellen in horizontal verbundene Zellen in Word-Dokumenten mit Aspose.Words für .NET. Schritt-für-Schritt-Anleitung für ein nahtloses Tabellenlayout.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
+## Einführung
 
-In diesem Tutorial lernen wir, wie man mit Aspose.Words für .NET Tabellenzellen in horizontal verbundene Zellen in einem Word-Dokument umwandelt. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie Tabellenzellen in Ihren Word-Dokumenten programmgesteuert bearbeiten.
+Wenn Sie mit Tabellen in Word-Dokumenten arbeiten, müssen Sie häufig die Zellzusammenführung verwalten, um ein übersichtlicheres und übersichtlicheres Layout zu erzielen. Aspose.Words für .NET bietet eine leistungsstarke Möglichkeit, vertikal zusammengeführte Zellen in horizontal zusammengeführte Zellen umzuwandeln und so sicherzustellen, dass Ihre Tabelle genau so aussieht, wie Sie es möchten. In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess.
 
-## Schritt 1: Projekt-Setup
-1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
+## Voraussetzungen
 
-## Schritt 2: Laden des Dokuments und Zugriff auf die Tabelle
-Um Words Processing mit der Tabelle zu starten, müssen wir das Dokument, das sie enthält, laden und darauf zugreifen. Folgen Sie diesen Schritten:
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Sie können sie von der[Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Eine Entwicklungsumgebung wie Visual Studio.
+3. Grundkenntnisse in C#: Vertrautheit mit der Programmiersprache C#.
+
+## Namespaces importieren
+
+Zuerst müssen wir die erforderlichen Namespaces für unser Projekt importieren. Dadurch können wir die Funktionen von Aspose.Words nutzen.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Lassen Sie uns den Vorgang in einfache Schritte unterteilen, damit er leicht nachvollziehbar ist.
+
+## Schritt 1: Laden Sie Ihr Dokument
+
+Zuerst müssen Sie das Dokument laden, das die Tabelle enthält, die Sie ändern möchten. Dieses Dokument sollte bereits in Ihrem Projektverzeichnis vorhanden sein.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Laden Sie das Dokument
 Document doc = new Document(dataDir + "Table with merged cells.docx");
+```
 
-// Zugriff auf das Array
+## Schritt 2: Zugriff auf die Tabelle
+
+Als nächstes müssen wir auf die spezifische Tabelle im Dokument zugreifen. Hier gehen wir davon aus, dass sich die Tabelle im ersten Abschnitt des Dokuments befindet.
+
+```csharp
+// Greifen Sie auf die erste Tabelle im Dokument zu
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-Ersetzen Sie unbedingt „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. Stellen Sie außerdem sicher, dass das Dokument eine Tabelle mit horizontal verbundenen Zellen enthält.
+## Schritt 3: In horizontal verbundene Zellen konvertieren
 
-## Schritt 3: In horizontal verbundene Zellen umwandeln
- Als nächstes konvertieren wir die Tabellenzellen in horizontal verbundene Zellen mit dem`ConvertToHorizontallyMergedCells()` Methode. Verwenden Sie den folgenden Code:
-
-```csharp
-// In horizontal verbundene Zellen konvertieren
-table. ConvertToHorizontallyMergedCells();
-```
-
- Hier nennen wir einfach die`ConvertToHorizontallyMergedCells()` Methode im Array, um die Konvertierung durchzuführen.
-
-### Beispielquellcode zum Konvertieren in horizontal verbundene Zellen mit Aspose.Words für .NET 
+ Nun werden wir die vertikal verbundenen Zellen in der Tabelle in horizontal verbundene Zellen umwandeln. Dies geschieht mit dem`ConvertToHorizontallyMergedCells` Methode.
 
 ```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table with merged cells.docx");
-	Table table = doc.FirstSection.Body.Tables[0];
-	// Zusammengeführte Zellen verfügen jetzt über entsprechende Zusammenführungskennzeichen.
-	table.ConvertToHorizontallyMergedCells();
+// Vertikal verbundene Zellen in horizontal verbundene Zellen umwandeln
+table.ConvertToHorizontallyMergedCells();
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man Tabellenzellen in einem Word-Dokument mit Aspose.Words für .NET in horizontal verbundene Zellen umwandelt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie Tabellenzellen in Ihren Word-Dokumenten programmgesteuert bearbeiten. Mit dieser Funktion können Sie Ihre Daten in einer Tabelle flexibel und personalisiert verwalten und organisieren.
+
+Und das war’s! Sie haben mithilfe von Aspose.Words für .NET erfolgreich vertikal verbundene Zellen in horizontal verbundene Zellen in einem Word-Dokument umgewandelt. Mit dieser Methode sind Ihre Tabellen gut organisiert und leichter zu lesen. Indem Sie diese Schritte befolgen, können Sie Ihre Word-Dokumente an Ihre spezifischen Anforderungen anpassen und bearbeiten.
+
+## Häufig gestellte Fragen
+
+### Kann ich Aspose.Words für .NET mit anderen Programmiersprachen verwenden?  
+Aspose.Words für .NET ist in erster Linie für .NET-Sprachen wie C# konzipiert. Sie können es jedoch auch mit anderen .NET-unterstützten Sprachen wie VB.NET verwenden.
+
+### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?  
+ Ja, Sie können ein[Kostenlose Testphase](https://releases.aspose.com/) von der Aspose-Website.
+
+### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?  
+ Besuchen Sie die[Aspose-Supportforum](https://forum.aspose.com/c/words/8) zur Hilfe.
+
+### Kann ich eine Lizenz aus einer Datei oder einem Stream anwenden?  
+Ja, Aspose.Words für .NET ermöglicht es Ihnen, eine Lizenz sowohl aus einer Datei als auch aus einem Stream anzuwenden. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/).
+
+### Welche weiteren Funktionen bietet Aspose.Words für .NET?  
+ Aspose.Words für .NET bietet eine breite Palette an Funktionen, darunter Dokumenterstellung, -bearbeitung, -konvertierung und -darstellung. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.

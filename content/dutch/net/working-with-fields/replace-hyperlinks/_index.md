@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /nl/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## Invoering
 
 In de wereld van .NET-ontwikkeling is het beheren en manipuleren van documenten een cruciale taak, waarbij vaak een efficiënte omgang met hyperlinks binnen documenten vereist is. Aspose.Words voor .NET biedt krachtige mogelijkheden om hyperlinks naadloos te vervangen, zodat uw documenten dynamisch aan de juiste bronnen worden gekoppeld. Deze tutorial gaat dieper in op hoe u dit kunt bereiken met Aspose.Words voor .NET en begeleidt u stap voor stap door het proces.
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 Het vervangen van hyperlinks in documenten met Aspose.Words voor .NET is eenvoudig en verbetert het dynamische karakter van uw documenten. Of het nu gaat om het bijwerken van URL's of het programmatisch transformeren van documentinhoud, Aspose.Words vereenvoudigt deze taken en zorgt voor efficiënt documentbeheer.
 
-## Veelgestelde vragen (FAQ's)
+## Veelgestelde vragen
 
 ### Kan Aspose.Words voor .NET omgaan met complexe documentstructuren?
 Ja, Aspose.Words ondersteunt naadloos complexe structuren zoals tabellen, afbeeldingen en hyperlinks.

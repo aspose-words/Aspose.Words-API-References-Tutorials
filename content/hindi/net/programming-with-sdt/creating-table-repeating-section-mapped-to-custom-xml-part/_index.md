@@ -7,42 +7,51 @@ type: docs
 weight: 10
 url: /hi/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
+## परिचय
 
-यह ट्यूटोरियल प्रदर्शित करता है कि Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में कस्टम Xml भाग में मैप किए गए दोहराए जाने वाले अनुभाग के साथ एक तालिका कैसे बनाई जाए। दोहराए जाने वाला अनुभाग आपको कस्टम Xml भाग में संग्रहीत XML डेटा के आधार पर पंक्तियों को गतिशील रूप से जोड़ने की अनुमति देता है।
+इस ट्यूटोरियल में, हम एक दोहराए जाने वाले अनुभाग के साथ एक तालिका बनाने की प्रक्रिया से गुजरेंगे जो .NET के लिए Aspose.Words का उपयोग करके एक कस्टम XML भाग में मैप किया गया है। यह संरचित डेटा के आधार पर गतिशील रूप से दस्तावेज़ बनाने के लिए विशेष रूप से उपयोगी है।
 
 ## आवश्यक शर्तें
-इस ट्यूटोरियल का अनुसरण करने के लिए आपके पास निम्नलिखित चीजें होनी चाहिए:
 
-- Aspose.Words for .NET लाइब्रेरी स्थापित की गई।
-- C# और वर्ड दस्तावेजों के साथ वर्ड प्रोसेसिंग का बुनियादी ज्ञान।
+शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+1.  Aspose.Words for .NET लाइब्रेरी स्थापित है। आप इसे यहाँ से डाउनलोड कर सकते हैं[Aspose वेबसाइट](https://releases.aspose.com/words/net/).
+2. C# और XML की बुनियादी समझ।
 
-## चरण 1: दस्तावेज़ निर्देशिका सेट करें
- अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"` उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
+## नामस्थान आयात करें
+
+अपने प्रोजेक्ट में आवश्यक नामस्थान शामिल करना सुनिश्चित करें:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Markup;
+using Aspose.Words.Tables;
+```
+
+## चरण 1: दस्तावेज़ और दस्तावेज़बिल्डर को आरंभ करें
+
+ सबसे पहले, एक नया दस्तावेज़ बनाएं और एक आरंभ करें`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
 
-## चरण 2: दस्तावेज़ और दस्तावेज़बिल्डर बनाएँ
- एक नया उदाहरण बनाएँ`Document` कक्षा और एक`DocumentBuilder` दस्तावेज़ की सामग्री बनाने के लिए.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## चरण 3: CustomXmlPart में कस्टम XML डेटा जोड़ें
- एक बनाने के`CustomXmlPart` और इसमें कस्टम XML डेटा जोड़ें। इस उदाहरण में, हम पुस्तकों के संग्रह को उनके शीर्षकों और लेखकों के साथ दर्शाने वाली XML स्ट्रिंग बनाते हैं।
+## चरण 2: कस्टम XML भाग जोड़ें
+
+दस्तावेज़ में एक कस्टम XML भाग जोड़ें। इस XML में वह डेटा है जिसे हम अपनी तालिका में मैप करना चाहते हैं:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-	"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-	"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
+    "<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
+    "<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
+    "<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## चरण 4: एक तालिका और तालिका संरचना बनाएँ
-का उपयोग करके तालिका बनाना प्रारंभ करें`StartTable` की विधि`DocumentBuilder` . का उपयोग करके तालिका कक्ष और सामग्री जोड़ें`InsertCell`और`Write` तरीके.
+## चरण 3: तालिका संरचना बनाएँ
+
+ इसके बाद, का उपयोग करें`DocumentBuilder` तालिका शीर्षलेख बनाने के लिए:
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,94 +63,60 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## चरण 5: कस्टम XML से मैप किया गया दोहराए जाने वाला अनुभाग बनाएँ
- एक बनाने के`StructuredDocumentTag` साथ`SdtType.RepeatingSection` दोहराए जाने वाले अनुभाग का प्रतिनिधित्व करने के लिए। दोहराए जाने वाले अनुभाग के लिए XML मैपिंग सेट करें`SetMapping` की विधि`XmlMapping` संपत्ति। इस उदाहरण में, हम दोहराए जाने वाले अनुभाग को मैप करते हैं`/books[1]/book`.
+## चरण 4: दोहराए जाने वाला अनुभाग बनाएँ
+
+ एक बनाने के`StructuredDocumentTag` (SDT) दोहराए जाने वाले अनुभाग के लिए और इसे XML डेटा पर मैप करें:
 
 ```csharp
-StructuredDocumentTag repeatingSectionSdt =
-	new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
 repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## चरण 6: दोहराए जाने वाले अनुभाग आइटम बनाएं और सेल जोड़ें
- एक बनाने के`StructuredDocumentTag` साथ`SdtType.RepeatingSectionItem` दोहराए जाने वाले अनुभाग आइटम को दर्शाने के लिए। इसे दोहराए जाने वाले अनुभाग में चाइल्ड के रूप में जोड़ें।
+## चरण 5: दोहराए जाने वाले अनुभाग आइटम बनाएँ
+
+दोहराए जाने वाले अनुभाग आइटम के लिए SDT बनाएं और उसे दोहराए जाने वाले अनुभाग में जोड़ें:
 
 ```csharp
-StructuredDocumentTag repeatingSectionItemSdt = 
-	new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-```
-
- एक बनाने के`Row` दोहराए जाने वाले अनुभाग में प्रत्येक आइटम का प्रतिनिधित्व करने और उसे दोहराए जाने वाले अनुभाग आइटम में जोड़ने के लिए।
-
-```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## चरण 7: दोहराए जाने वाले अनुभाग में सामग्री नियंत्रण जोड़ें
- बनाएं`StructuredDocumentTag` वस्तुओं के साथ`SdtType.PlainText`
+## चरण 6: XML डेटा को तालिका कक्षों में मैप करें
 
-  शीर्षक और लेखक सामग्री नियंत्रणों का प्रतिनिधित्व करने के लिए। प्रत्येक सामग्री नियंत्रण के लिए XML मैपिंग सेट करें`SetMapping` की विधि`XmlMapping` प्रॉपर्टी। इस उदाहरण में, हम शीर्षक नियंत्रण को मैप करते हैं`/books[1]/book[1]/title[1]` और लेखक का नियंत्रण`/books[1]/book[1]/author[1]`.
+शीर्षक और लेखक के लिए SDT बनाएं, उन्हें XML डेटा से मैप करें, और उन्हें पंक्ति में जोड़ें:
 
 ```csharp
-StructuredDocumentTag titleSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
 row.AppendChild(titleSdt);
 
-StructuredDocumentTag authorSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag authorSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## चरण 8: दस्तावेज़ सहेजें
- संशोधित दस्तावेज़ को निर्दिष्ट निर्देशिका में सहेजें`Save`विधि। उचित फ़ाइल एक्सटेंशन के साथ वांछित फ़ाइल नाम प्रदान करें। इस उदाहरण में, हम दस्तावेज़ को "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx" के रूप में सहेजते हैं।
+## चरण 7: दस्तावेज़ सहेजें
+
+अंत में, दस्तावेज़ को निर्दिष्ट निर्देशिका में सहेजें:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### .NET के लिए Aspose.Words का उपयोग करके कस्टम XML भाग में मैप किए गए तालिका दोहराए जाने वाले अनुभाग बनाने के लिए उदाहरण स्रोत कोड 
+## निष्कर्ष
 
-```csharp
-	// आपके दस्तावेज़ निर्देशिका का पथ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+इन चरणों का पालन करके, आपने .NET के लिए Aspose.Words का उपयोग करके कस्टम XML भाग में मैप किए गए दोहराए जाने वाले अनुभाग के साथ सफलतापूर्वक एक तालिका बनाई है। यह संरचित डेटा के आधार पर गतिशील सामग्री निर्माण की अनुमति देता है, जिससे दस्तावेज़ निर्माण अधिक लचीला और शक्तिशाली हो जाता है।
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-		"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-		"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-		"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Title");
-	builder.InsertCell();
-	builder.Write("Author");
-	builder.EndRow();
-	builder.EndTable();
-	StructuredDocumentTag repeatingSectionSdt =
-		new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
-	repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
-	table.AppendChild(repeatingSectionSdt);
-	StructuredDocumentTag repeatingSectionItemSdt = 
-		new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
-	repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-	Row row = new Row(doc);
-	repeatingSectionItemSdt.AppendChild(row);
-	StructuredDocumentTag titleSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
-	row.AppendChild(titleSdt);
-	StructuredDocumentTag authorSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
-	row.AppendChild(authorSdt);
-	doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
+## अक्सर पूछे जाने वाले प्रश्न
 
-```
+### संरचित दस्तावेज़ टैग (SDT) क्या है?
+एसडीटी, जिसे सामग्री नियंत्रण के रूप में भी जाना जाता है, दस्तावेज़ में एक परिबद्ध क्षेत्र है जिसका उपयोग संरचित डेटा को रखने के लिए किया जाता है।
 
-बस! आपने अपने Word दस्तावेज़ में Aspose.Words for .NET का उपयोग करके CustomXmlPart पर मैप किए गए दोहराए जाने वाले अनुभाग के साथ सफलतापूर्वक एक तालिका बना ली है।
+### क्या मैं कस्टम XML भाग में अन्य डेटा प्रकारों का उपयोग कर सकता हूँ?
+हां, आप अपने कस्टम XML भाग को किसी भी डेटा प्रकार के साथ संरचित कर सकते हैं और उन्हें तदनुसार मैप कर सकते हैं।
+
+### मैं दोहराए जाने वाले अनुभाग में और अधिक पंक्तियाँ कैसे जोड़ूँ?
+दोहराए जाने वाला अनुभाग स्वचालित रूप से मैप किए गए XML पथ में प्रत्येक आइटम के लिए पंक्ति संरचना की प्रतिकृति बनाता है।

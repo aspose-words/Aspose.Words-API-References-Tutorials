@@ -72,7 +72,7 @@ Document doc = new Document("path/to/the/document.docx");
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 for (int i = 0; i < paragraphs.Count; i++)
 {
-     // Xử lý từng đoạn văn ở đây
+     // Xử lý từng đoạn văn tại đây
 }
 ```
 

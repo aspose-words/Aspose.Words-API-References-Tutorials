@@ -2,64 +2,120 @@
 title: Bevorzugten Breitentyp abrufen
 linktitle: Bevorzugten Breitentyp abrufen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den Typ und den bevorzugten Breitenwert einer Zelle in einer Word-Tabelle abrufen.
+description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die bevorzugte Breite von Tabellenzellen in Word-Dokumenten abrufen.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/retrieve-preferred-width-type/
 ---
+## Einführung
 
-In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET den bevorzugten Breitentyp und seinen Wert aus einer Tabellenzelle in einem Word-Dokument abrufen. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie den bevorzugten Breitentyp (absolut, relativ oder automatisch) und seinen Wert für eine bestimmte Zelle in Ihren Word-Dokumenttabellen abrufen.
+Haben Sie sich schon einmal gefragt, wie Sie mit Aspose.Words für .NET die bevorzugte Breite von Tabellenzellen in Ihren Word-Dokumenten abrufen können? Dann sind Sie hier richtig! In diesem Tutorial erklären wir Ihnen den Vorgang Schritt für Schritt, sodass er kinderleicht ist. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, Sie werden diese Anleitung hilfreich und spannend finden. Lassen Sie uns also eintauchen und die Geheimnisse hinter der Verwaltung der Tabellenzellenbreiten in Word-Dokumenten lüften.
 
-## Schritt 1: Projekt-Setup
-1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
+## Voraussetzungen
 
-## Schritt 2: Dokument einlegen
-Um die Textverarbeitung mit dem Dokument zu starten, führen Sie diese Schritte aus:
+Bevor wir beginnen, benötigen Sie einige Dinge:
 
-```csharp
-// Pfad zu Ihrem Dokumentverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version installiert haben. Sie können sie herunterladen von[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Sie benötigen eine IDE wie Visual Studio.
+3. Grundkenntnisse in C#: Das Verständnis der Grundlagen von C# wird Ihnen helfen, den Schritten zu folgen.
+4.  Beispieldokument: Halten Sie ein Word-Dokument mit Tabellen bereit, an denen Sie arbeiten können. Sie können jedes beliebige Dokument verwenden, aber wir nennen es`Tables.docx` in diesem Lernprogramm.
 
-// Laden Sie das Dokument
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Namespaces importieren
 
-Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis und geben Sie den richtigen Dateinamen an.
-
-## Schritt 3: Abrufen des bevorzugten Breitentyps und -werts
-Als Nächstes ermitteln wir den bevorzugten Breitentyp und dessen Wert für eine bestimmte Tabellenzelle. Verwenden Sie den folgenden Code:
+Als Erstes importieren wir die erforderlichen Namespaces. Dieser Schritt ist entscheidend, da er unsere Umgebung für die Verwendung der Aspose.Words-Funktionen einrichtet.
 
 ```csharp
-// Abrufen der Tabelle
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Automatische Tischanpassung aktivieren
-table. AllowAutoFit = true;
-
-// Abrufen der ersten Zelle der ersten Zeile
-Cell firstCell = table.FirstRow.FirstCell;
-
-// Abrufen des bevorzugten Breitentyps und seines Wertes
-PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
-double value = firstCell.CellFormat.PreferredWidth.Value;
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Hier verwenden wir das Dokument, um die erste Tabelle abzurufen. Anschließend aktivieren wir die automatische Tabellenanpassung mit dem`AllowAutoFit` Eigenschaft. Dann holen wir uns die erste Zelle der ersten Zeile der Tabelle. Aus dieser Zelle können wir den bevorzugten Breitentyp mit dem`PreferredWidth.Type` Eigentum und dessen Wert mit der`PreferredWidth.Value` Eigentum.
+## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-### Beispielquellcode zum Abrufen des bevorzugten Breitentyps mit Aspose.Words für .NET 
+Bevor wir unser Dokument bearbeiten, müssen wir das Verzeichnis angeben, in dem es sich befindet. Dies ist ein einfacher, aber wesentlicher Schritt.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. Dies sagt unserem Programm, wo es die Datei finden kann, mit der wir arbeiten möchten.
+
+## Schritt 2: Laden Sie das Dokument
+
+Als Nächstes laden wir das Word-Dokument in unsere Anwendung. So können wir programmgesteuert mit dem Inhalt interagieren.
+
+```csharp
 Document doc = new Document(dataDir + "Tables.docx");
+```
+
+ Diese Codezeile öffnet die`Tables.docx` Dokument aus dem angegebenen Verzeichnis. Jetzt ist unser Dokument für weitere Operationen bereit.
+
+## Schritt 3: Zugriff auf die Tabelle
+
+Nachdem unser Dokument nun geladen ist, müssen wir auf die Tabelle zugreifen, mit der wir arbeiten möchten. Der Einfachheit halber zielen wir auf die erste Tabelle im Dokument.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+Diese Zeile ruft die erste Tabelle aus dem Dokument ab. Wenn Ihr Dokument mehrere Tabellen enthält, können Sie den Index anpassen, um eine andere auszuwählen.
+
+## Schritt 4: AutoFit für die Tabelle aktivieren
+
+Um sicherzustellen, dass die Tabelle ihre Spalten automatisch anpasst, müssen wir die Eigenschaft AutoFit aktivieren.
+
+```csharp
 table.AllowAutoFit = true;
+```
+
+ Einstellung`AllowAutoFit` Zu`true` stellt sicher, dass die Größe der Tabellenspalten basierend auf ihrem Inhalt angepasst wird, was unserer Tabelle ein dynamisches Aussehen verleiht.
+
+## Schritt 5: Abrufen des bevorzugten Breitentyps der ersten Zelle
+
+Jetzt kommt der Kern unseres Tutorials: das Abrufen des bevorzugten Breitentyps der ersten Zelle in der Tabelle.
+
+```csharp
 Cell firstCell = table.FirstRow.FirstCell;
 PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
+ Diese Codezeilen greifen auf die erste Zelle in der ersten Zeile der Tabelle zu und ermitteln deren bevorzugten Breitentyp und Wert.`PreferredWidthType` kann sein`Auto`, `Percent` , oder`Point`, die angibt, wie die Breite bestimmt wird.
+
+## Schritt 6: Ergebnisse anzeigen
+
+Lassen Sie uns abschließend die abgerufenen Informationen auf der Konsole anzeigen.
+
+```csharp
+Console.WriteLine("Preferred Width Type: " + type);
+Console.WriteLine("Preferred Width Value: " + value);
+```
+
+Diese Zeilen drucken den bevorzugten Breitentyp und Wert auf die Konsole, sodass Sie die Ergebnisse Ihrer Codeausführung sehen können.
+
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET den bevorzugten Breitentyp und seinen Wert aus einer Tabellenzelle in einem Word-Dokument abruft. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie diese Informationen für bestimmte Zellen in Ihren Word-Dokumenttabellen abrufen.
+
+Und da haben Sie es! Das Abrufen der bevorzugten Breite von Tabellenzellen in Word-Dokumenten mit Aspose.Words für .NET ist unkompliziert, wenn es in überschaubare Schritte unterteilt wird. Wenn Sie dieser Anleitung folgen, können Sie Tabelleneigenschaften in Ihren Word-Dokumenten problemlos bearbeiten und so Ihre Dokumentverwaltungsaufgaben wesentlich effizienter gestalten.
+
+## Häufig gestellte Fragen
+
+### Kann ich den bevorzugten Breitentyp für alle Zellen in einer Tabelle abrufen?
+
+Ja, Sie können jede Zelle in der Tabelle durchlaufen und die bevorzugten Breitentypen einzeln abrufen.
+
+###  Was sind die möglichen Werte für`PreferredWidthType`?
+
+`PreferredWidthType` kann sein`Auto`, `Percent` , oder`Point`.
+
+### Ist es möglich, den bevorzugten Breitentyp programmgesteuert festzulegen?
+
+ Absolut! Sie können den gewünschten Breitentyp und -wert mit dem`PreferredWidth` Eigentum der`CellFormat` Klasse.
+
+### Kann ich diese Methode für Tabellen in anderen Dokumenten als Word verwenden?
+
+Dieses Tutorial behandelt speziell Word-Dokumente. Für andere Dokumenttypen müssen Sie die entsprechende Aspose-Bibliothek verwenden.
+
+### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
+
+ Ja, Aspose.Words für .NET ist ein lizenziertes Produkt. Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/) oder eine vorläufige Lizenz[Hier](https://purchase.aspose.com/temporary-license/).

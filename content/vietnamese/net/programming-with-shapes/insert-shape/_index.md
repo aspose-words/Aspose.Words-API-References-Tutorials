@@ -2,77 +2,120 @@
 title: Chèn hình dạng
 linktitle: Chèn hình dạng
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn hình vào tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách chèn và thao tác các hình dạng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi.
 type: docs
 weight: 10
 url: /vi/net/programming-with-shapes/insert-shape/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách chèn hình vào tài liệu Word bằng Aspose.Words cho .NET. Hình dạng có thể được sử dụng để nâng cao hình thức trực quan và bố cục của tài liệu của bạn.
+Khi nói đến việc tạo các tài liệu Word có cấu trúc tốt và hấp dẫn về mặt hình ảnh, hình dạng có thể đóng một vai trò quan trọng. Cho dù bạn đang thêm mũi tên, hộp hay thậm chí là các hình dạng tùy chỉnh phức tạp, khả năng thao tác các thành phần này theo chương trình đều mang lại sự linh hoạt tuyệt vời. Trong hướng dẫn này, chúng ta sẽ khám phá cách chèn và thao tác các hình dạng trong tài liệu Word bằng Aspose.Words cho .NET.
 
 ## Điều kiện tiên quyết
-Để làm theo hướng dẫn này, bạn cần có những điều sau:
 
-- Đã cài đặt thư viện Aspose.Words cho .NET.
-- Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
+Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
 
-## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+1.  Aspose.Words for .NET: Tải xuống và cài đặt phiên bản mới nhất từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Môi trường phát triển .NET phù hợp như Visual Studio.
+3. Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# và các khái niệm cơ bản.
+
+## Nhập không gian tên
+
+Để bắt đầu, bạn cần nhập các vùng tên cần thiết trong dự án C# của mình:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## Bước 2: Tạo Tài liệu mới và DocumentBuilder
- Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` đối tượng làm việc với tài liệu.
+## Bước 1: Thiết lập dự án của bạn
+
+Trước khi có thể bắt đầu chèn hình, bạn cần thiết lập dự án của mình và thêm thư viện Aspose.Words cho .NET.
+
+1. Tạo một dự án mới: Mở Visual Studio và tạo dự án Ứng dụng bảng điều khiển C# mới.
+2. Thêm Aspose.Words cho .NET: Cài đặt thư viện Aspose.Words cho .NET thông qua Trình quản lý gói NuGet.
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Bước 2: Khởi tạo tài liệu
+
+Trước tiên, bạn sẽ cần khởi tạo một tài liệu mới và một trình tạo tài liệu, điều này sẽ giúp xây dựng tài liệu.
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Khởi tạo một tài liệu mới
 Document doc = new Document();
+
+// Khởi tạo DocumentBuilder để giúp xây dựng tài liệu
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 3: Chèn hình
- Sử dụng`InsertShape` phương pháp của`DocumentBuilder` đối tượng để chèn hình vào tài liệu. Chỉ định loại hình dạng, vị trí ngang và dọc tương đối, kích thước trang, kích thước và kiểu gói. Bạn cũng có thể thiết lập góc xoay của các hình nếu muốn.
+## Bước 3: Chèn hình dạng
+
+Bây giờ, hãy chèn một hình vào tài liệu. Chúng ta sẽ bắt đầu bằng cách thêm một hộp văn bản đơn giản.
 
 ```csharp
-Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
-	RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
-shape.Rotation = 30.0;
-builder.Writeln();
-shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
+// Chèn hình dạng hộp văn bản vào tài liệu
+Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100, RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
+
+// Xoay hình dạng
 shape.Rotation = 30.0;
 ```
 
-## Bước 4: Lưu tài liệu
- Lưu tài liệu vào thư mục được chỉ định bằng cách sử dụng`Save` phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithShapes.InsertShape.docx".
+Trong ví dụ này, chúng tôi chèn một hộp văn bản ở vị trí (100, 100) với chiều rộng và chiều cao là 50 đơn vị mỗi hộp. Chúng ta cũng xoay hình này 30 độ.
+
+## Bước 4: Thêm hình dạng khác
+
+Hãy thêm một hình dạng khác vào tài liệu, lần này không chỉ định vị trí.
 
 ```csharp
+// Thêm một hình dạng hộp văn bản khác
+Shape secondShape = builder.InsertShape(ShapeType.TextBox, 50, 50);
+
+// Xoay hình dạng
+secondShape.Rotation = 30.0;
+```
+
+Đoạn mã này chèn một hộp văn bản khác có cùng kích thước và góc xoay như hộp đầu tiên nhưng không chỉ định vị trí của nó.
+
+## Bước 5: Lưu tài liệu
+
+ Sau khi thêm hình dạng, bước cuối cùng là lưu tài liệu. Chúng tôi sẽ sử dụng`OoxmlSaveOptions` để chỉ định định dạng lưu.
+
+```csharp
+// Xác định các tùy chọn lưu tuân thủ
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 {
-	Compliance = OoxmlCompliance.Iso29500_2008_Transitional
+    Compliance = OoxmlCompliance.Iso29500_2008_Transitional
 };
+
+// Lưu tài liệu
 doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-### Mã nguồn ví dụ cho Insert Shape sử dụng Aspose.Words for .NET 
+## Phần kết luận
 
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Và bạn có nó rồi đấy! Bạn đã chèn và thao tác thành công các hình dạng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm những điều cơ bản, nhưng Aspose.Words cung cấp nhiều tính năng nâng cao hơn để làm việc với các hình dạng, chẳng hạn như kiểu tùy chỉnh, trình kết nối và hình dạng nhóm.
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
-		RelativeVerticalPosition.Page, 100, 50, 50, WrapType.None);
-	shape.Rotation = 30.0;
-	builder.Writeln();
-	shape = builder.InsertShape(ShapeType.TextBox, 50, 50);
-	shape.Rotation = 30.0;
-	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
-	{
-		Compliance = OoxmlCompliance.Iso29500_2008_Transitional
-	};
-	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
-```
+ Để biết thêm thông tin chi tiết, hãy truy cập[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/).
 
-Đó là nó! Bạn đã chèn thành công các hình vào tài liệu Word bằng Aspose.Words for .NET.
+## Câu hỏi thường gặp
+
+### Làm cách nào để chèn các loại hình dạng khác nhau?
+Bạn có thể thay đổi`ShapeType` bên trong`InsertShape` phương pháp chèn các loại hình dạng khác nhau như hình tròn, hình chữ nhật và mũi tên.
+
+### Tôi có thể thêm văn bản bên trong các hình dạng không?
+ Có, bạn có thể sử dụng`builder.Write` phương pháp thêm văn bản bên trong các hình sau khi chèn chúng.
+
+### Có thể tạo kiểu cho các hình dạng không?
+ Có, bạn có thể tạo kiểu cho các hình dạng bằng cách đặt các thuộc tính như`FillColor`, `StrokeColor` , Và`StrokeWeight`.
+
+### Làm cách nào để định vị hình dạng so với các phần tử khác?
+ Sử dụng`RelativeHorizontalPosition`Và`RelativeVerticalPosition` các thuộc tính để định vị hình dạng so với các phần tử khác trong tài liệu.
+
+### Tôi có thể nhóm nhiều hình dạng lại với nhau không?
+ Có, Aspose.Words for .NET cho phép bạn nhóm các hình dạng bằng cách sử dụng`GroupShape` lớp học.

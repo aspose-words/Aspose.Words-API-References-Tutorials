@@ -2,84 +2,97 @@
 title: Dividi documento Word per intestazioni Html
 linktitle: Per intestazioni Html
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per spiegare il codice sorgente C# del documento split word In base alla funzionalità HTML di Aspose.Words per .NET
+description: Scopri come dividere un documento Word in base ai titoli in HTML utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/split-document/by-headings-html/
 ---
-In questo tutorial ti spiegheremo come dividere un documento Word in parti più piccole utilizzando la funzione Per intestazione HTML di Aspose.Words per .NET. Segui i passaggi seguenti per comprendere il codice sorgente e generare documenti HTML separati in base all'intestazione.
+## introduzione
 
-## Passaggio 1: caricamento del documento
+Dividere un documento Word per intestazioni può rappresentare una svolta nella gestione di documenti di grandi dimensioni o nella creazione di output HTML segmentati. Aspose.Words per .NET fornisce un modo semplice per raggiungere questo obiettivo. In questo tutorial ti guideremo attraverso l'intero processo, assicurandoti di cogliere ogni dettaglio lungo il percorso.
 
-Per iniziare, specifica la directory per il tuo documento e carica il documento in un oggetto Document. Ecco come:
+## Prerequisiti
+
+Prima di immergerti nel tutorial, assicurati di avere quanto segue:
+
+1. Aspose.Words per .NET: se non l'hai già fatto, scaricalo da[Qui](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: un IDE come Visual Studio.
+3. Conoscenza di base di C#: comprendere le nozioni di base ti aiuterà a seguire facilmente.
+4. Un documento di esempio: tieni pronto un documento Word che desideri dividere per intestazioni.
+
+## Importa spazi dei nomi
+
+Per prima cosa, importiamo gli spazi dei nomi necessari. Questo è fondamentale per accedere alle classi e ai metodi Aspose.Words.
 
 ```csharp
-// Percorso della directory dei documenti.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Passaggio 2: dividere il documento per intestazione in formato HTML
+## Passaggio 1: imposta il tuo progetto
 
-Ora imposteremo le opzioni di salvataggio per dividere il documento in parti più piccole in base all'intestazione in formato HTML. Ecco come:
+Per iniziare, configura il tuo progetto nel tuo ambiente di sviluppo. Apri Visual Studio e crea una nuova applicazione console.
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-// Dividi il documento in parti più piccole, in questo caso separandolo per titolo.
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. Crea un nuovo progetto: apri Visual Studio, seleziona "Crea un nuovo progetto", scegli "App console (.NET Core)" e fai clic su "Avanti".
+2. Configura il tuo progetto: dai un nome al tuo progetto, scegli una posizione in cui salvarlo e fai clic su "Crea".
+3.  Installa Aspose.Words per .NET: utilizzare NuGet Package Manager per installare la libreria Aspose.Words. In Gestione pacchetti NuGet cercare`Aspose.Words` e installarlo.
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## Passaggio 2: carica il documento
 
-### Codice sorgente di esempio per By Headings HTML utilizzando Aspose.Words per .NET
+Successivamente, devi caricare il documento Word che desideri dividere. Assicurati che il tuo documento sia inserito in una directory a cui puoi accedere facilmente.
 
-Ecco il codice sorgente completo per la funzione Intestazione HTML di Aspose.Words per .NET:
+1. Definisci il percorso della directory: crea una variabile per il percorso della directory del tuo documento.
+2.  Caricare il documento: utilizzare il file`Document` class per caricare il tuo documento Word.
 
 ```csharp
 // Il percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Passaggio 3: configura le opzioni di salvataggio HTML
+
+Ora configuriamo le opzioni di salvataggio HTML per specificare che il documento deve essere diviso per intestazioni.
+
+1.  Crea HtmlSaveOptions: crea un'istanza del file`HtmlSaveOptions` classe.
+2.  Imposta i criteri di suddivisione del documento: utilizza il file`DocumentSplitCriteria` proprietà per specificare che il documento deve essere suddiviso per paragrafi di intestazione.
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	// Dividi un documento in parti più piccole, in questo caso divise per intestazione.
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    // Dividi un documento in parti più piccole, in questo caso divise per intestazione.
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## Passaggio 4: salva il documento diviso
 
+Infine, salva il documento con le opzioni di salvataggio HTML specificate. Questo genererà un file HTML diviso per intestazioni.
+
+1.  Salvare il documento: utilizzare il file`Save` metodo del`Document` class per salvare il documento con le opzioni specificate.
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-Con questo codice sarai in grado di dividere un documento Word in parti più piccole utilizzando Aspose.Words per .NET, in base ai titoli. È quindi possibile generare documenti HTML separati per ciascuna parte.
-
 ## Conclusione
 
- In questo tutorial, abbiamo imparato come dividere un documento Word in parti più piccole utilizzando la funzionalità Per intestazione HTML di Aspose.Words per .NET. Specificando il`DocumentSplitCriteria` COME`HeadingParagraph` nel`HtmlSaveOptions`, siamo stati in grado di generare documenti HTML separati in base alle intestazioni presenti nel documento originale.
+E il gioco è fatto! Hai diviso con successo un documento Word per intestazioni e lo hai salvato come HTML utilizzando Aspose.Words per .NET. Questo metodo è molto efficace per organizzare documenti di grandi dimensioni e creare output HTML segmentati, rendendo i tuoi contenuti più gestibili e accessibili.
 
-Dividere un documento per intestazioni può essere utile per organizzare e gestire il contenuto, soprattutto in documenti di grandi dimensioni con più sezioni. Aspose.Words per .NET fornisce una soluzione affidabile ed efficiente per gestire la suddivisione dei documenti e generare output in vari formati.
+## Domande frequenti
 
-Sentiti libero di esplorare funzionalità e opzioni aggiuntive fornite da Aspose.Words per .NET per migliorare ulteriormente le capacità di elaborazione dei documenti e semplificare il flusso di lavoro.
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria per lavorare con documenti Word nelle applicazioni .NET.
 
-### Domande frequenti
+### Posso dividere un documento in base ad altri criteri?
+Sì, Aspose.Words ti consente di dividere i documenti in base a vari criteri come sezioni, pagine e altro.
 
-#### Come posso dividere un documento Word in parti più piccole in base ai titoli utilizzando Aspose.Words per .NET?
+### Aspose.Words è gratuito?
+ Aspose.Words offre una prova gratuita, ma per usufruire delle funzionalità complete dovrai acquistare una licenza. Controlla il loro[pagina acquista](https://purchase.aspose.com/buy) per ulteriori dettagli.
 
- Per dividere un documento Word in base ai titoli, è possibile utilizzare la funzione Per intestazione HTML di Aspose.Words per .NET. Segui il codice sorgente fornito e imposta il file`DocumentSplitCriteria` A`HeadingParagraph` nel`HtmlSaveOptions` oggetto. Ciò dividerà il documento in parti più piccole in ciascuna intestazione.
+### Dove posso trovare la documentazione?
+ È disponibile una documentazione completa[Qui](https://reference.aspose.com/words/net/).
 
-#### In quali formati posso dividere il documento Word?
-
- Il codice sorgente fornito dimostra la suddivisione del documento Word in parti più piccole in formato HTML. Tuttavia, Aspose.Words per .NET supporta vari formati di output, inclusi DOCX, PDF, EPUB e altri. È possibile modificare il codice e specificare il formato di output desiderato nel file`HtmlSaveOptions` opporsi di conseguenza.
-
-#### Posso scegliere un criterio diverso per la suddivisione del documento?
-
-Sì, puoi scegliere criteri diversi per dividere il documento in base alle tue esigenze. Aspose.Words per .NET fornisce diverse opzioni di criteri, come ad esempio`HeadingParagraph`, `Page`, `Section` e altro ancora. Modifica il`DocumentSplitCriteria` proprietà nel`HtmlSaveOptions` oggetto per selezionare i criteri appropriati per la suddivisione.
-
-#### Come posso personalizzare l'HTML di output per le parti divise?
-
- Aspose.Words per .NET ti consente di personalizzare l'HTML di output per le parti divise specificando opzioni aggiuntive nel`HtmlSaveOptions` oggetto. Puoi controllare vari aspetti come stili CSS, immagini, caratteri e altro. Fare riferimento alla documentazione di Aspose.Words per maggiori dettagli sulla personalizzazione dell'output HTML.
-
-#### Posso dividere il documento in base a più criteri?
-
- Sì, puoi dividere il documento in base a più criteri combinando di conseguenza le opzioni dei criteri. Ad esempio, puoi dividere il documento sia per intestazione che per pagina impostando il file`DocumentSplitCriteria`proprietà a`HeadingParagraph | Page`. Ciò dividerà il documento in ogni intestazione e in ogni pagina, creando parti più piccole basate su entrambi i criteri.
+### Come posso ottenere supporto?
+ Per supporto, visitare Aspose.Words[Forum](https://forum.aspose.com/c/words/8).

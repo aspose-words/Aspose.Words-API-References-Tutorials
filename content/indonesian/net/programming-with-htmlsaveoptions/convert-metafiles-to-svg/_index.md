@@ -9,7 +9,7 @@ url: /id/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 ## Perkenalan
 
-Hai, para penggemar coding! Pernahkah Anda bertanya-tanya bagaimana cara mengonversi metafile ke SVG di dokumen Word Anda menggunakan Aspose.Words untuk .NET? Nah, Anda siap menerima hadiahnya! Hari ini, kita akan mendalami dunia Aspose.Words, perpustakaan canggih yang memudahkan manipulasi dokumen. Di akhir tutorial ini, Anda akan menjadi ahli dalam mengonversi metafile ke SVG, menjadikan dokumen Word Anda lebih fleksibel dan menarik secara visual. Jadi, mari kita mulai, ya?
+Hai, para penggemar coding! Pernahkah Anda bertanya-tanya bagaimana cara mengonversi metafile ke SVG di dokumen Word Anda menggunakan Aspose.Words untuk .NET? Nah, Anda siap menerima hadiahnya! Hari ini, kita akan mendalami dunia Aspose.Words, perpustakaan canggih yang memudahkan manipulasi dokumen. Di akhir tutorial ini, Anda akan menjadi ahli dalam mengonversi metafile ke SVG, menjadikan dokumen Word Anda lebih serbaguna dan menarik secara visual. Jadi, mari kita mulai, oke?
 
 ## Prasyarat
 

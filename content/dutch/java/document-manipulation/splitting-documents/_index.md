@@ -90,7 +90,7 @@ extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 
 ## Conclusie
 
-In deze handleiding hebben we verschillende technieken onderzocht voor het splitsen van documenten in Aspose.Words voor Java. Of u nu wilt opsplitsen in koppen, secties, pagina's of specifieke paginabereiken, Aspose.Words voor Java biedt de flexibiliteit en kracht om deze taken efficiënt uit te voeren. Door de meegeleverde Java-codefragmenten en voorbeelden te volgen, kunt u vandaag nog beginnen met het effectiever beheren van uw documenten.
+In deze handleiding hebben we verschillende technieken onderzocht voor het splitsen van documenten in Aspose.Words voor Java. Of u nu moet opsplitsen op koppen, secties, pagina's of specifieke paginabereiken, Aspose.Words voor Java biedt de flexibiliteit en kracht om deze taken efficiënt uit te voeren. Door de meegeleverde Java-codefragmenten en voorbeelden te volgen, kunt u vandaag nog beginnen met het effectiever beheren van uw documenten.
 
 ## Veelgestelde vragen
 

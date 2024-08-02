@@ -2,58 +2,60 @@
 title: Wijzig de Toc-stijl in een Word-document
 linktitle: Wijzig de Toc-stijl in een Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u eenvoudig de stijl van een inhoudsopgaveniveau in een Word-document kunt wijzigen met Aspose.Words voor .NET.
+description: Leer met deze stapsgewijze handleiding hoe u de TOC-stijl in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Pas uw inhoudsopgave moeiteloos aan.
 type: docs
 weight: 10
 url: /nl/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
-Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, bewerken en manipuleren van Word-documenten in een C#-toepassing. Een van de functies die Aspose.Words biedt, is de mogelijkheid om de stijl van een specifiek niveau van de inhoudsopgave van een document te wijzigen. In deze handleiding laten we u zien hoe u de C#-broncode van Aspose.Words voor .NET kunt gebruiken om de stijl van een niveau van de inhoudsopgave van een Word-document te wijzigen.
+## Invoering
 
-## Inzicht in de Aspose.Words-bibliotheek
+Als u ooit een professioneel Word-document heeft moeten maken, weet u hoe cruciaal een inhoudsopgave (TOC) kan zijn. Het organiseert niet alleen uw inhoud, maar voegt ook een vleugje professionaliteit toe. Het kan echter een beetje lastig zijn om de inhoudsopgave aan te passen aan jouw stijl. In deze zelfstudie laten we zien hoe u de inhoudsopgavestijl in een Word-document kunt wijzigen met Aspose.Words voor .NET. Klaar om erin te duiken? Laten we beginnen!
 
-Voordat u in de code duikt, is het belangrijk dat u de Aspose.Words-bibliotheek voor .NET begrijpt. Aspose.Words is een populaire bibliotheek die het verwerken van woorden met Word-documenten eenvoudig en efficiënt maakt. Het biedt een breed scala aan functies voor het maken, bewerken en manipuleren van Word-documenten, inclusief het wijzigen van de stijl van de inhoudsopgave.
+## Vereisten
 
-## Een nieuw document maken
+Voordat we ingaan op de code, zorg ervoor dat je het volgende hebt:
 
-De eerste stap is het maken van een nieuw Word-document waarin u de stijl van de inhoudsopgave wilt wijzigen. Gebruik de klasse Document om een nieuw document te maken. Hier is een voorbeeld :
+1.  Aspose.Words voor .NET: De Aspose.Words voor .NET-bibliotheek moet geïnstalleerd zijn. Als u het nog niet hebt geïnstalleerd, kunt u het downloaden via de[Aspose-releasespagina](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een ontwikkelomgeving zoals Visual Studio.
+3. Basiskennis van C#: begrip van de programmeertaal C#.
+
+## Naamruimten importeren
+
+Om met Aspose.Words voor .NET te werken, moet u de benodigde naamruimten importeren. Hier ziet u hoe u het kunt doen:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Laten we het proces opsplitsen in eenvoudig te volgen stappen:
+
+## Stap 1: Stel uw project in
+
+Stel eerst uw project in Visual Studio in. Maak een nieuw C#-project en voeg een verwijzing toe naar de Aspose.Words voor .NET-bibliotheek.
+
+```csharp
+// Maak een nieuw document
 Document doc = new Document();
 ```
 
-In dit voorbeeld maken we een nieuw leeg document.
+## Stap 2: Pas de TOC-stijl aan
 
-## De stijl van een inhoudsopgaveniveau wijzigen
-
-Zodra het document is gemaakt, hebt u toegang tot documentstijlen en kunt u de stijl wijzigen die voor een specifiek niveau van de inhoudsopgave wordt gebruikt. In dit voorbeeld zullen we de stijl wijzigen die wordt gebruikt voor het eerste niveau van de inhoudsopgave. Hier is hoe:
+Laten we vervolgens de stijl van het eerste niveau van de inhoudsopgave (TOC) aanpassen.
 
 ```csharp
+// Wijziging van de stijl van het eerste niveau van de inhoudsopgave
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-In dit voorbeeld gebruiken we de eigenschap Styles van de klasse Document om toegang te krijgen tot documentstijlen. Vervolgens gebruiken we de StyleIdentifier.Toc1 stijl-ID om toegang te krijgen tot de stijl die wordt gebruikt voor het eerste niveau van de inhoudsopgave. Ten slotte wijzigen we de eigenschap Font.Bold van de stijl om deze vet te maken.
+## Stap 3: Sla het gewijzigde document op
 
-## Bewaar het gewijzigde document
-
-Nadat u de nodige wijzigingen in de stijl van de inhoudsopgave heeft aangebracht, kunt u het gewijzigde document opslaan met de Save-methode van de Document-klasse. Hier is een voorbeeld :
-
-```csharp
-doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
-```
-
-In dit voorbeeld slaan we het gewijzigde document op als "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx".
-
-## Voorbeeldbroncode voor de functie "Wijzig de stijl van een inhoudsopgaveniveau" met Aspose.Words voor .NET
+Nadat u de nodige wijzigingen in de inhoudsopgavestijl hebt aangebracht, slaat u het gewijzigde document op.
 
 ```csharp
 // Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Maak een nieuw document
-Document doc = new Document();
-
-// Wijziging van de stijl van het eerste niveau van de inhoudsopgave
-doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 // Sla het gewijzigde document op
 doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
@@ -61,64 +63,21 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Conclusie
 
-In deze handleiding hebben we uitgelegd hoe u Aspose.Words voor .NET kunt gebruiken om de stijl van een niveau van de inhoudsopgave van een Word-document te wijzigen met behulp van de meegeleverde C#-broncode. Door de aangegeven stappen te volgen, kunt u eenvoudig de stijl van de inhoudsopgave van uw Word-documenten aanpassen in uw C#-applicatie. Aspose.Words biedt enorme flexibiliteit en kracht om te werken met de stijlen en opmaak van uw documenten, waardoor u aantrekkelijke en professionele Word-documenten kunt maken.
+En daar heb je het! U hebt met succes de inhoudsopgavestijl in een Word-document gewijzigd met Aspose.Words voor .NET. Deze kleine aanpassing kan een groot verschil maken in de algehele look en feel van uw document. Vergeet niet te experimenteren met andere stijlen en niveaus om uw inhoudsopgave volledig aan te passen.
 
-### Veelgestelde vragen over het wijzigen van de toc-stijl in een Word-document
+## Veelgestelde vragen
 
-#### Vraag: Wat is het doel van de functionaliteit "Toc-stijl wijzigen in Word-document" in Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een klassenbibliotheek voor het maken, wijzigen en converteren van Word-documenten binnen .NET-toepassingen.
 
-A: Met de functionaliteit "Toc-stijl wijzigen in Word-document" in Aspose.Words voor .NET kunt u de stijl van een specifiek niveau in de inhoudsopgave van een Word-document wijzigen. Hiermee kunt u het uiterlijk en de opmaak van de inhoudsopgave aanpassen, zoals het wijzigen van de letterstijl, grootte, kleur of andere visuele aspecten van een specifiek niveau.
+### Kan ik andere stijlen in de inhoudsopgave wijzigen?
+Ja, u kunt verschillende stijlen binnen de inhoudsopgave wijzigen door toegang te krijgen tot verschillende niveaus en stijleigenschappen.
 
-#### Vraag: Wat is Aspose.Words voor .NET?
+### Is Aspose.Words voor .NET gratis?
+ Aspose.Words voor .NET is een betaalde bibliotheek, maar je kunt ook een .NET-bibliotheek krijgen[gratis proefperiode](https://releases.aspose.com/) of een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
-A: Aspose.Words voor .NET is een krachtige bibliotheek ontworpen voor woordenverwerking met Word-documenten in .NET-toepassingen. Het biedt uitgebreide functies voor het programmatisch maken, bewerken, manipuleren en converteren van Word-documenten met behulp van C# of andere .NET-talen.
+### Moet ik Microsoft Word installeren om Aspose.Words voor .NET te gebruiken?
+Nee, voor Aspose.Words voor .NET hoeft Microsoft Word niet op uw computer te zijn geïnstalleerd.
 
-#### Vraag: Hoe maak ik een nieuw Word-document met Aspose.Words voor .NET?
-
- A: Om een nieuw Word-document te maken met Aspose.Words voor .NET, kunt u de`Document` klasse en zijn constructor. Door een nieuw exemplaar van het`Document` klasse, kunt u een leeg document maken. Hier is een voorbeeld:
-
-```csharp
-Document doc = new Document();
-```
-
-Met dit codefragment wordt een nieuw, leeg Word-document gemaakt.
-
-#### Vraag: Hoe kan ik de stijl van een specifiek niveau in de inhoudsopgave wijzigen met Aspose.Words voor .NET?
-
- A: Zodra u een document heeft geladen, kunt u de stijl van een specifiek niveau in de inhoudsopgave wijzigen door de stijlen van het document te openen en de nodige wijzigingen aan te brengen. In Aspose.Words voor .NET kunt u de`Styles` eigendom van de`Document` class om toegang te krijgen tot de documentstijlen en wijzig vervolgens de gewenste stijl met behulp van de eigenschappen ervan. Als u bijvoorbeeld de stijl van het eerste niveau van de inhoudsopgave vet wilt wijzigen, kunt u de volgende code gebruiken:
-
-```csharp
-doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
-```
-
- In deze code wordt`doc.Styles[StyleIdentifier.Toc1]` opent de stijl voor het eerste niveau van de inhoudsopgave, en`Font.Bold = true` stelt de vetgedrukte lettertypestijl voor die stijl in.
-
-#### Vraag: Kan ik de stijl van meerdere niveaus in de inhoudsopgave wijzigen met Aspose.Words voor .NET?
-
-A: Ja, u kunt de stijl van meerdere niveaus in de inhoudsopgave wijzigen met Aspose.Words voor .NET. Om de stijl van een specifiek niveau te wijzigen, kunt u toegang krijgen tot de overeenkomstige stijl met behulp van de`Styles` eigendom en breng de gewenste wijzigingen op elk niveau afzonderlijk aan.
-
-#### Vraag: Hoe sla ik het gewijzigde document op nadat ik de stijl van de inhoudsopgave heb gewijzigd met Aspose.Words voor .NET?
-
- A: Nadat u de nodige wijzigingen in de stijl van de inhoudsopgave heeft aangebracht, kunt u het gewijzigde document opslaan met behulp van de`Save` werkwijze van de`Document` klas. Geef het gewenste bestandspad en de gewenste naam voor het uitvoerdocument op als parameter voor het`Save` methode. Hier is een voorbeeld:
-
-```csharp
-doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
-```
-
-Met deze code wordt het gewijzigde document opgeslagen als "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx".
-
-#### Vraag: Kan ik andere opmaakwijzigingen toepassen op de inhoudsopgave met Aspose.Words voor .NET?
-
-A: Ja, naast het wijzigen van de stijl kunt u met Aspose.Words voor .NET ook verschillende opmaakwijzigingen toepassen op de inhoudsopgave. U kunt bijvoorbeeld de lettergrootte, kleur en uitlijning wijzigen of extra opmaakeigenschappen toevoegen om het uiterlijk van de inhoudsopgave te verbeteren.
-
-#### Vraag: Hoe kan ik een aangepaste stijl opgeven voor een specifiek niveau in de inhoudsopgave met Aspose.Words voor .NET?
-
- A: Om een aangepaste stijl voor een specifiek niveau in de inhoudsopgave op te geven met behulp van Aspose.Words voor .NET, kunt u een nieuwe`Style` object, configureer de eigenschappen ervan volgens de door u gewenste stijl en wijs het toe aan het overeenkomstige niveau van de inhoudsopgave met behulp van de`Styles` eigendom van de`Document` klas. Hierdoor kunt u een aangepaste stijl voor een specifiek niveau definiëren op basis van uw vereisten.
-
-#### Vraag: Kan ik de stijl van de inhoudsopgave in een bestaand Word-document wijzigen met Aspose.Words voor .NET?
-
-A: Ja, u kunt de stijl van de inhoudsopgave in een bestaand Word-document wijzigen met Aspose.Words voor .NET. Laad het document eenvoudig met behulp van de`Document` klasse, wijzig de stijleigenschappen met behulp van de`Styles` eigenschap en sla het document op om de wijzigingen toe te passen.
-
-#### Vraag: Ondersteunt Aspose.Words voor .NET het wijzigen van andere stijlen en opmaak in Word-documenten?
-
-A: Ja, Aspose.Words voor .NET biedt uitgebreide ondersteuning voor het wijzigen van verschillende stijlen en opmaak in Word-documenten. Hiermee kunt u stijlen wijzigen voor verschillende elementen, zoals alinea's, koppen, tabellen, lijsten en meer. U kunt lettertypen, kleuren, uitlijning, inspringing, spatiëring en andere opmaakaspecten naar wens wijzigen.
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+ U kunt meer gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).

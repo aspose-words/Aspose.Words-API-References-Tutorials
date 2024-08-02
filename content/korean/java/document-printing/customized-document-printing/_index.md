@@ -12,7 +12,7 @@ url: /ko/java/document-printing/customized-document-printing/
 
 고유한 브랜드 아이덴티티를 창출하려는 기업에게는 맞춤형 문서 인쇄가 필수적입니다. Aspose.Words for Java는 Word 문서 작업을 위한 광범위한 기능을 제공하는 Java 라이브러리입니다. 이를 통해 손쉽게 문서를 생성, 수정 및 인쇄할 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
@@ -93,6 +93,6 @@ Aspose.Words for Java를 사용한 맞춤형 문서 인쇄는 기업이 맞춤�
 
 문서 인쇄에 문제가 발생하는 경우 문제 해결 지침은 Java용 Aspose.Words 설명서를 참조하세요.
 
-### Aspose.Words for Java 평가판이 있습니까?
+### Aspose.Words for Java 평가판이 있나요?
 
 예, 해당 웹사이트에서 Aspose.Words for Java 평가판에 액세스할 수 있습니다.

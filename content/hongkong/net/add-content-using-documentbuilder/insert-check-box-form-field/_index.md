@@ -84,7 +84,7 @@ builder.InsertCheckBox("CheckBox", true, true, 0);
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx");
 ```
 
-此行將文件儲存到我們之前指定的目錄，文件名`AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx`.
+此行將文件儲存到我們先前指定的目錄中，文件名為`AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx`.
 
 ## 結論
 

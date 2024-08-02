@@ -71,7 +71,7 @@ Sobald das Lesezeichen erstellt ist, können wir beliebige Inhalte hinzufügen. 
 builder.Writeln("This is just a fine bookmark.");
 ```
 
- Der`Writeln` Methode fügt dem Dokument einen neuen Absatz mit dem angegebenen Text hinzu.
+ Der`Writeln` Die Methode fügt dem Dokument einen neuen Absatz mit dem angegebenen Text hinzu.
 
 ## Schritt 5: Lesezeichen beenden
 

@@ -17,7 +17,7 @@ Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u over het volgende b
 
 1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET in uw ontwikkelomgeving is geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
 
-2. .NET-ontwikkelomgeving: zorg dat u een .NET-ontwikkelomgeving hebt ingesteld, zoals Visual Studio.
+2. .NET-ontwikkelomgeving: zorg dat u een .NET-ontwikkelomgeving hebt opgezet, zoals Visual Studio.
 
 3. Basiskennis van C#: Bekendheid met programmeren in C# zal u helpen de codefragmenten en voorbeelden beter te begrijpen.
 

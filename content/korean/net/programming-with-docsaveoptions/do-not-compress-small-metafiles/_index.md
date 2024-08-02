@@ -11,14 +11,14 @@ url: /ko/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 
 문서 처리 영역에서 파일 저장 방법을 최적화하면 파일의 품질과 유용성을 크게 향상시킬 수 있습니다. Aspose.Words for .NET은 Word 문서를 정확하게 저장할 수 있도록 다양한 기능을 제공합니다. 이러한 기능 중 하나는 "작은 메타파일을 압축하지 않음" 옵션입니다. 이 튜토리얼에서는 이 기능을 활용하여 Word 문서에서 메타파일의 무결성을 유지하는 과정을 안내합니다. 뛰어들어보자!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
 -  .NET용 Aspose.Words: 다음에서 최신 버전을 다운로드하고 설치하세요.[여기](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio 또는 기타 호환 가능한 IDE.
 - C#에 대한 기본 이해: C# 프로그래밍 언어 및 .NET 프레임워크에 대한 지식.
--  Aspose 라이선스: Aspose.Words의 잠재력을 최대한 활용하려면[특허](https://purchase.aspose.com/buy) . 다음을 사용할 수도 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+-  Aspose 라이선스: Aspose.Words의 잠재력을 최대한 활용하려면[특허](https://purchase.aspose.com/buy) . 다음을 사용할 수도 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ## 네임스페이스 가져오기
 
@@ -65,7 +65,7 @@ DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.Compliance = PdfCompliance.PdfA1a;
 ```
 
- 이 단계에서는 다음의 인스턴스를 생성합니다.`DocSaveOptions` 그리고 설정`Compliance`재산`PdfCompliance.PdfA1a`. 이렇게 하면 문서가 PDF/A-1a 표준을 준수하게 됩니다.
+ 이 단계에서는`DocSaveOptions` 그리고 설정`Compliance`재산`PdfCompliance.PdfA1a`. 이렇게 하면 문서가 PDF/A-1a 표준을 준수하게 됩니다.
 
 ## 4단계: 문서 저장
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
 
- 평가용 라이선스 없이 .NET용 Aspose.Words를 사용할 수 있지만 전체 기능을 잠금 해제하려면 라이선스가 필요합니다. 라이센스를 취득하실 수 있습니다[여기](https://purchase.aspose.com/buy)또는[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 평가용 라이선스 없이 .NET용 Aspose.Words를 사용할 수 있지만 전체 기능을 잠금 해제하려면 라이선스가 필요합니다. 라이센스를 취득하실 수 있습니다[여기](https://purchase.aspose.com/buy)또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ### 내 문서가 PDF/A 표준을 준수하는지 어떻게 확인할 수 있나요?
 

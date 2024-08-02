@@ -2,53 +2,97 @@
 title: Ottieni la distanza tra il testo circostante la tabella
 linktitle: Ottieni la distanza tra il testo circostante la tabella
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per ottenere la distanza tra il testo e una tabella in un documento Word utilizzando Aspose.Words per .NET.
+description: Scopri come recuperare la distanza tra una tabella e il testo circostante nei documenti Word utilizzando Aspose.Words per .NET. Migliora il layout del tuo documento con questa guida.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
+## introduzione
 
-In questo tutorial ti guideremo attraverso il processo passo passo per ottenere la distanza tra il testo circostante in una tabella utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come accedere alle varie distanze tra una tabella e il testo circostante nei tuoi documenti Word utilizzando Aspose.Words per .NET.
+Immagina di preparare un report elegante o un documento importante e di volere che le tue tabelle abbiano l'aspetto giusto. È necessario assicurarsi che ci sia spazio sufficiente tra le tabelle e il testo attorno ad esse, rendendo il documento facile da leggere e visivamente accattivante. Utilizzando Aspose.Words per .NET, puoi facilmente recuperare e regolare queste distanze a livello di codice. Questo tutorial ti guiderà attraverso i passaggi per raggiungere questo obiettivo, facendo risaltare i tuoi documenti con quel tocco di professionalità in più.
 
-## Passaggio 1: definire la directory dei documenti
-Innanzitutto, devi impostare il percorso della directory dei documenti. Qui è dove si trova il tuo documento Word. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.
+## Prerequisiti
+
+Prima di addentrarci nel codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
+
+1.  Libreria Aspose.Words per .NET: è necessario che sia installata la libreria Aspose.Words per .NET. Se non lo hai già fatto, puoi scaricarlo dal[Rilasci Aspose](https://releases.aspose.com/words/net/) pagina.
+2. Ambiente di sviluppo: un ambiente di sviluppo funzionante con .NET Framework installato. Visual Studio è una buona opzione.
+3. Documento di esempio: un documento Word (.docx) contenente almeno una tabella per testare il codice.
+
+## Importa spazi dei nomi
+
+Per prima cosa, importiamo gli spazi dei nomi necessari nel tuo progetto. Ciò ti consentirà di accedere alle classi e ai metodi necessari per manipolare i documenti Word utilizzando Aspose.Words per .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Passaggio 2: carica il documento esistente
- Successivamente, è necessario caricare il documento Word esistente in un'istanza del file`Document` classe.
+Ora suddividiamo il processo in passaggi facili da seguire. Copriremo tutto, dal caricamento del tuo documento al recupero delle distanze attorno al tuo tavolo.
+
+## Passaggio 1: carica il documento
+
+ Il primo passo è caricare il tuo documento Word in Aspose.Words`Document` oggetto. Questo oggetto rappresenta l'intero documento.
 
 ```csharp
+// Percorso della directory dei documenti
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Caricare il documento
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Passaggio 3: ottieni la distanza tra la tabella e il testo circostante
- Per ottenere la distanza tra la tabella e il testo circostante, dobbiamo accedere alla tabella nel documento utilizzando il comando`GetChild()` metodo e il`NodeType.Table` proprietà. Possiamo quindi visualizzare le diverse distanze utilizzando le proprietà dell'array`DistanceTop`, `DistanceBottom`, `DistanceRight`E`DistanceLeft`.
+## Passaggio 2: accedi alla tabella
+
+ Successivamente, devi accedere alla tabella all'interno del tuo documento. IL`GetChild` Il metodo consente di recuperare la prima tabella trovata nel documento.
 
 ```csharp
+// Ottieni la prima tabella nel documento
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-Console.WriteLine("Distance between table and top text: " + table.DistanceTop);
-Console.WriteLine("Distance between table and bottom text: " + table.DistanceBottom);
-Console.WriteLine("Distance between the table and the text on the right: " + table.DistanceRight);
-Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### Codice sorgente di esempio per ottenere la distanza tra la tabella che circonda il testo utilizzando Aspose.Words per .NET 
+## Passaggio 3: recuperare i valori di distanza
+
+Ora che hai la tabella, è il momento di ottenere i valori della distanza. Questi valori rappresentano lo spazio tra la tabella e il testo circostante su ciascun lato: superiore, inferiore, sinistra e destra.
 
 ```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Ottieni la distanza tra la tabella e il testo circostante
+Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
+```
 
-	Document doc = new Document(dataDir + "Tables.docx");
-	Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Console.WriteLine(table.DistanceTop);
-	Console.WriteLine(table.DistanceBottom);
-	Console.WriteLine(table.DistanceRight);
-	Console.WriteLine(table.DistanceLeft);
+## Passaggio 4: visualizzare le distanze
+
+Infine è possibile visualizzare le distanze. Ciò può aiutarti a verificare la spaziatura e ad apportare le modifiche necessarie per garantire che la tabella appaia perfetta nel documento.
+
+```csharp
+// Visualizza le distanze
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come ottenere la distanza tra il testo circostante in una tabella utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo, puoi accedere facilmente alle varie distanze tra una tabella e il testo circostante nei tuoi documenti Word. Aspose.Words offre un'API potente e flessibile per manipolare e formattare le tabelle nei tuoi documenti. Con questa conoscenza potrai analizzare la disposizione delle tue tabelle in relazione al testo e soddisfare esigenze specifiche.
+
+E il gioco è fatto! Seguendo questi passaggi, puoi facilmente recuperare le distanze tra una tabella e il testo circostante nei tuoi documenti Word utilizzando Aspose.Words per .NET. Questa tecnica semplice ma potente ti consente di ottimizzare il layout del tuo documento, rendendolo più leggibile e visivamente accattivante. Buona programmazione!
+
+## Domande frequenti
+
+### Posso regolare le distanze a livello di codice?
+ Sì, puoi regolare le distanze a livello di codice utilizzando Aspose.Words impostando il file`DistanceTop`, `DistanceBottom`, `DistanceRight` , E`DistanceLeft` proprietà del`Table` oggetto.
+
+### Cosa succede se il mio documento ha più tabelle?
+ Puoi scorrere i nodi figlio del documento e applicare lo stesso metodo a ciascuna tabella. Utilizzo`GetChildNodes(NodeType.Table, true)` per ottenere tutti i tavoli.
+
+### Posso utilizzare Aspose.Words con .NET Core?
+Assolutamente! Aspose.Words supporta .NET Core ed è possibile utilizzare lo stesso codice con piccole modifiche per i progetti .NET Core.
+
+### Come installo Aspose.Words per .NET?
+È possibile installare Aspose.Words per .NET tramite NuGet Package Manager in Visual Studio. Basta cercare "Aspose.Words" e installare il pacchetto.
+
+### Ci sono limitazioni sui tipi di documenti supportati da Aspose.Words?
+ Aspose.Words supporta un'ampia gamma di formati di documenti, inclusi DOCX, DOC, PDF, HTML e altri. Controlla il[documentazione](https://reference.aspose.com/words/net/) per un elenco completo dei formati supportati.

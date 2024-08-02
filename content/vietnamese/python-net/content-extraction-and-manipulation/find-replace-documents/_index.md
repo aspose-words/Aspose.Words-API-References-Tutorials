@@ -18,7 +18,7 @@ Trước khi chúng ta đi sâu vào các kỹ thuật nâng cao, hãy đảm b�
 
 1.  Cài đặt Python: Đảm bảo rằng Python được cài đặt trên hệ thống của bạn. Bạn có thể tải nó xuống từ[đây](https://www.python.org/downloads/).
 
-2.  Aspose.Words for Python: Bạn cần cài đặt Aspose.Words for Python. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/python/).
+2. Aspose.Words for Python: Bạn cần cài đặt Aspose.Words for Python. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/python/).
 
 3. Chuẩn bị tài liệu: Chuẩn bị sẵn tài liệu Word mà bạn muốn thực hiện các thao tác tìm và thay thế.
 
@@ -96,7 +96,7 @@ doc.save("path/to/save/document.docx")
 
 ## Phần kết luận
 
-Việc quản lý và thao tác hiệu quả các tài liệu Word thường liên quan đến các thao tác tìm và thay thế. Với Aspose.Words for Python, bạn có thể tùy ý sử dụng một công cụ mạnh mẽ để thực hiện thay thế văn bản cơ bản và nâng cao trong khi vẫn giữ nguyên định dạng và ngữ cảnh. Bằng cách làm theo các bước được nêu trong bài viết này, bạn có thể hợp lý hóa các tác vụ xử lý tài liệu và nâng cao năng suất của mình.
+Việc quản lý và thao tác hiệu quả các tài liệu Word thường liên quan đến các thao tác tìm và thay thế. Với Aspose.Words for Python, bạn có sẵn một công cụ mạnh mẽ để thực hiện thay thế văn bản cơ bản và nâng cao trong khi vẫn giữ nguyên định dạng và ngữ cảnh. Bằng cách làm theo các bước được nêu trong bài viết này, bạn có thể hợp lý hóa các tác vụ xử lý tài liệu và nâng cao năng suất của mình.
 
 ## Câu hỏi thường gặp
 
@@ -106,7 +106,7 @@ Việc quản lý và thao tác hiệu quả các tài liệu Word thường li�
 
 ### Tôi có thể thay thế văn bản chỉ trong một phạm vi trang cụ thể không?
 
- Có, bạn có thể. Trước khi thực hiện thay thế, hãy chỉ định phạm vi trang bằng cách sử dụng`doc.get_child_nodes()` phương pháp để có được nội dung của các trang cụ thể.
+ Vâng, bạn có thể. Trước khi thực hiện thay thế, hãy chỉ định phạm vi trang bằng cách sử dụng`doc.get_child_nodes()` phương pháp để có được nội dung của các trang cụ thể.
 
 ### Có thể hoàn tác thao tác tìm và thay thế không?
 

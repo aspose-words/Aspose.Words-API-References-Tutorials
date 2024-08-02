@@ -2,82 +2,100 @@
 title: Tách tài liệu Word theo phần HTML
 linktitle: Theo phần Html
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chia tài liệu Word thành các phần Html bằng Aspose.Words cho .NET với ví dụ về mã hoàn chỉnh.
+description: Tìm hiểu cách chia tài liệu Word theo các phần thành HTML bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này.
 type: docs
 weight: 10
 url: /vi/net/split-document/by-sections-html/
 ---
+## Giới thiệu
 
-Trong ví dụ này, chúng tôi sẽ chỉ cho bạn cách chia tài liệu Word thành các phần riêng biệt ở định dạng HTML bằng cách sử dụng tính năng Theo phần HTML của Aspose.Words cho .NET. Thực hiện theo các bước bên dưới để hiểu mã nguồn và tạo tài liệu HTML riêng cho từng phần.
+Bạn đang đi sâu vào thế giới tự động hóa tài liệu và muốn tìm hiểu cách chia tài liệu Word theo phần thành HTML bằng Aspose.Words cho .NET? Bạn đang ở đúng nơi! Hướng dẫn này được soạn thảo dành riêng cho bạn, bao gồm các bước chi tiết, giải thích hấp dẫn và giọng điệu thân thiện. Hãy xắn tay áo lên và bắt đầu cuộc hành trình thú vị này!
 
-## Bước 1: Tải tài liệu
+## Điều kiện tiên quyết
 
-Để bắt đầu, hãy chỉ định thư mục cho tài liệu của bạn và tải tài liệu vào đối tượng Tài liệu. Đây là cách thực hiện:
+Trước khi chúng ta bắt tay vào hành động, có một số điều bạn cần chuẩn bị sẵn:
+
+1.  Aspose.Words for .NET Library: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Một môi trường phát triển như Visual Studio.
+3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C# sẽ rất hữu ích.
+4. Tài liệu Word: Tài liệu Word mà bạn muốn chia theo từng phần.
+
+Khi bạn đã chuẩn bị xong những thứ này, chúng ta có thể bắt đầu viết mã!
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này sẽ cho phép chúng ta sử dụng các lớp và phương thức được cung cấp bởi thư viện Aspose.Words cho .NET.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Bước 2: Chia tài liệu thành các phần ở định dạng HTML
+Với các không gian tên này, bạn đã sẵn sàng bắt đầu làm việc với Aspose.Words.
 
-Bây giờ chúng ta sẽ đặt các tùy chọn lưu để chia tài liệu thành các phần ở định dạng HTML. Đây là cách thực hiện:
+## Bước 1: Thiết lập thư mục tài liệu
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
-
-doc.Save(dataDir + "SplitDocument.ParSectionsHtml.html", options);
-```
-
-### Mã nguồn mẫu cho HTML theo phần sử dụng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh cho tính năng Theo phần HTML của Aspose.Words cho .NET:
+Trước khi có thể thao tác với bất kỳ tài liệu nào, chúng ta cần chỉ định nơi lưu trữ tài liệu của mình. Đây sẽ là thư mục làm việc của chúng tôi.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+```
 
+## Bước 2: Tải tài liệu Word
 
-HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };
+ Bây giờ chúng ta đã thiết lập xong thư mục, chúng ta cần tải tài liệu Word mà chúng ta muốn tách. Việc này được thực hiện bằng cách sử dụng`Document` lớp từ Aspose.Words.
 
+```csharp
+// Tải tài liệu Word.
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Bước 3: Định cấu hình tùy chọn lưu HTML
+
+ Để chia tài liệu theo từng phần, chúng ta cần thiết lập các tùy chọn lưu phù hợp. Các`HtmlSaveOptions`lớp cho phép chúng ta chỉ định cách chúng ta muốn lưu tài liệu vào HTML.
+
+```csharp
+// Định cấu hình tùy chọn lưu HTML.
+HtmlSaveOptions options = new HtmlSaveOptions
+{
+    DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak
+};
+```
+
+## Bước 4: Lưu tài liệu dưới dạng HTML
+
+Với các tùy chọn lưu của chúng tôi đã được định cấu hình, bước cuối cùng là lưu tài liệu dưới dạng tệp HTML. Điều này sẽ chia tài liệu theo các phần dựa trên tiêu chí chúng tôi đặt ra.
+
+```csharp
+// Lưu tài liệu dưới dạng HTML.
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-Với mã này, bạn sẽ có thể chia tài liệu Word thành các phần riêng biệt ở định dạng HTML bằng Aspose.Words for .NET.
-
-Bây giờ bạn có thể tạo các tài liệu HTML riêng biệt cho từng phần của tài liệu ban đầu.
+Và bạn có nó rồi đấy! Bạn đã chia thành công tài liệu Word theo phần thành HTML bằng cách sử dụng Aspose.Words for .NET.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã học cách chia tài liệu Word thành các phần riêng biệt ở định dạng HTML bằng cách sử dụng tính năng Theo phần HTML của Aspose.Words cho .NET. Bằng cách làm theo mã nguồn được cung cấp, bạn có thể tạo các tài liệu HTML riêng lẻ cho từng phần của tài liệu gốc.
+Việc chia tài liệu Word theo các phần thành HTML thật dễ dàng với Aspose.Words dành cho .NET. Chỉ với một vài dòng mã, bạn có thể tự động hóa việc xử lý tài liệu và nâng cao ứng dụng của mình. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm và khám phá các khả năng của Aspose.Words. Chúc mừng mã hóa!
 
-Việc chia tài liệu thành các phần có thể hữu ích cho nhiều mục đích khác nhau như tạo trang web, trích xuất nội dung cụ thể hoặc sắp xếp thông tin. Aspose.Words for .NET cung cấp một API mạnh mẽ cho phép bạn thao tác và tùy chỉnh tài liệu Word theo yêu cầu của mình.
+## Câu hỏi thường gặp
 
-Vui lòng khám phá các tính năng bổ sung do Aspose.Words cho .NET cung cấp để nâng cao hơn nữa khả năng xử lý tài liệu và cải thiện quy trình làm việc của bạn.
+### Aspose.Words cho .NET là gì?
 
-### Câu hỏi thường gặp
+Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word trong các ứng dụng .NET. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu theo chương trình.
 
-#### Làm cách nào tôi có thể tùy chỉnh định dạng đầu ra HTML?
+### Tôi có thể chia tài liệu Word theo tiêu chí khác không?
 
-Aspose.Words for .NET cung cấp nhiều tùy chọn khác nhau để tùy chỉnh định dạng đầu ra HTML. Bạn có thể sửa đổi kiểu dáng, cài đặt phông chữ, độ phân giải hình ảnh và nhiều khía cạnh khác của tài liệu HTML bằng cách điều chỉnh các tùy chọn lưu. Tham khảo tài liệu Aspose.Words for .NET để biết thông tin chi tiết về các tùy chọn có sẵn và cách sử dụng chúng.
+Có, Aspose.Words for .NET cho phép bạn chia tài liệu theo nhiều tiêu chí khác nhau, chẳng hạn như ngắt trang, tiêu đề và cấu trúc logic tùy chỉnh.
 
-#### Tôi có thể chia tài liệu dựa trên tiêu chí khác không?
+### Aspose.Words cho .NET có miễn phí không?
 
-Có, ngoài việc sử dụng dấu ngắt phần làm tiêu chí phân tách, Aspose.Words for .NET còn cung cấp các tùy chọn khác như ngắt đoạn, kiểu tiêu đề hoặc nội dung cụ thể làm tiêu chí để phân chia tài liệu. Bạn có thể chọn tiêu chí phù hợp nhất dựa trên yêu cầu của mình và điều chỉnh mã cho phù hợp.
+ Aspose.Words for .NET là một sản phẩm thương mại, nhưng bạn có thể tải xuống bản dùng thử miễn phí từ[Trang phát hành Aspose](https://releases.aspose.com/).
 
-#### Có thể chia tài liệu thành các định dạng khác ngoài HTML không?
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
 
-Có, Aspose.Words for .NET hỗ trợ chia tài liệu thành nhiều định dạng khác nhau bao gồm PDF, văn bản thuần túy, hình ảnh, v.v. Bạn có thể sửa đổi các tùy chọn lưu để tạo định dạng đầu ra mong muốn. Tham khảo tài liệu Aspose.Words for .NET để biết thêm chi tiết về các định dạng có sẵn và cách chỉ định chúng trong các tùy chọn lưu.
+ Bạn có thể tìm thấy tài liệu đầy đủ về[Trang tài liệu Aspose.Words cho .NET](https://reference.aspose.com/words/net/).
 
-#### Tôi có thể chia nhiều tài liệu cùng một lúc không?
+### Tôi có thể chuyển đổi tài liệu Word sang những định dạng nào khác?
 
-Có, bạn có thể áp dụng đồng thời quy trình phân tách cho nhiều tài liệu bằng cách lặp qua một tập hợp tài liệu và thực thi mã phân tách cho từng tài liệu riêng lẻ. Điều này cho phép bạn xử lý hiệu quả nhiều tài liệu và tạo các phần riêng biệt cho từng tài liệu.
-
-#### Làm cách nào tôi có thể hợp nhất các phần lại thành một tài liệu?
-
-Aspose.Words for .NET cũng cung cấp các phương thức để hợp nhất nhiều tài liệu hoặc phần lại thành một tài liệu. Bằng cách sử dụng các tính năng hợp nhất này, bạn có thể kết hợp các phần được tạo riêng biệt và tạo thành một tài liệu thống nhất. Tham khảo tài liệu Aspose.Words for .NET để biết thêm thông tin về cách hợp nhất các tài liệu hoặc phần.
-
-
+Aspose.Words for .NET hỗ trợ nhiều định dạng khác nhau, bao gồm PDF, DOCX, TXT, v.v.

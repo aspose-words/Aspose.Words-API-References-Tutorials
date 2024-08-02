@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveF
 
 ## Conclusión
 
-Convertir formas a Office Math en documentos de Word usando Aspose.Words para .NET es un proceso sencillo si se divide en estos sencillos pasos. Si sigue esta guía, puede mejorar sus capacidades de procesamiento de documentos y asegurarse de que sus documentos de Word tengan el formato correcto.
+Convertir formas a Office Math en documentos de Word usando Aspose.Words para .NET es un proceso sencillo cuando se divide en estos sencillos pasos. Si sigue esta guía, puede mejorar sus capacidades de procesamiento de documentos y asegurarse de que sus documentos de Word tengan el formato correcto.
 
 ## Preguntas frecuentes
 

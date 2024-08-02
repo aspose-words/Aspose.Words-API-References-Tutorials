@@ -2,7 +2,7 @@
 title: 在 Word 文件中簽署現有簽名行
 linktitle: 在 Word 文件中簽署現有簽名行
 second_title: Aspose.Words 文件處理 API
-description: 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中簽署現有簽名行。非常適合開發人員。
+description: 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 對 Word 文件中的現有簽名行進行簽署。非常適合開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-digital-signatures/signing-existing-signature-line/

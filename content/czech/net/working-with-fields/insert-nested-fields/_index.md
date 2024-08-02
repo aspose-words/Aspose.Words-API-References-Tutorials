@@ -2,68 +2,36 @@
 title: Vložit vnořená pole
 linktitle: Vložit vnořená pole
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se snadno vkládat vnořená pole do dokumentů aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se vkládat vnořená pole do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí našeho podrobného průvodce. Ideální pro vývojáře, kteří chtějí automatizovat vytváření dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-nested-fields/
 ---
+## Úvod
 
-Zde je podrobný návod k vysvětlení zdrojového kódu C# níže, který používá funkci "Vložit vnořená pole" Aspose.Words pro .NET. Ujistěte se, že pečlivě dodržujete každý krok, abyste dosáhli požadovaných výsledků.
+Už jste někdy zjistili, že potřebujete vložit vnořená pole do dokumentů aplikace Word programově? Možná chcete podmíněně zobrazovat různé texty na základě čísla stránky? Tak to máš štěstí! Tento tutoriál vás provede procesem vkládání vnořených polí pomocí Aspose.Words for .NET. Pojďme se ponořit!
 
-## Krok 1: Nastavení adresáře dokumentů
+## Předpoklady
 
-V poskytnutém kódu musíte zadat adresář vašich dokumentů. Nahraďte hodnotu „VÁŠ ADRESÁŘ DOKUMENTŮ“ příslušnou cestou k adresáři vašich dokumentů.
+Než začneme, budete potřebovat několik věcí:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: IDE jako Visual Studio.
+3. Základní znalost C#: Pochopení programovacího jazyka C#.
 
-## Krok 2: Vytvoření dokumentu a DocumentBuilderu
+## Importovat jmenné prostory
 
-Začneme vytvořením nového dokumentu a inicializací DocumentBuilderu.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Krok 3: Vložení zalomení stránek
-
-Pro vložení vícenásobných zalomení stránek do dokumentu používáme smyčku.
+Nejprve se ujistěte, že jste do projektu importovali potřebné jmenné prostory. Tyto jmenné prostory obsahují třídy, které budete potřebovat k interakci s Aspose.Words.
 
 ```csharp
-for (int i = 0; i < 5; i++)
-     builder. InsertBreak(BreakType.PageBreak);
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.HeaderFooter;
 ```
 
-## Krok 4: Přesuňte se do zápatí
+## Krok 1: Inicializujte dokument
 
- Používáme`MoveToHeaderFooter()` Metoda DocumentBuilder k přesunutí kurzoru do hlavního zápatí.
-
-```csharp
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-## Krok 5: Vložení vnořeného pole
-
- Používáme DocumentBuilder's`InsertField()` metoda pro vložení vnořeného pole do zápatí.
-
-```csharp
-Field field = builder. InsertField(@"IF ");
-builder.MoveTo(field.Separator);
-builder. InsertField("PAGE");
-builder. Write(" <> ");
-builder.InsertField("NUMPAGES");
-builder.Write(" \"See next page\" \"Last page\" ");
-```
-
- Nakonec zavoláme`Update()` způsob aktualizace pole.
-
-```csharp
-field. Update();
-```
-
-### Ukázkový zdrojový kód pro vkládání vnořených polí pomocí Aspose.Words pro .NET
+Prvním krokem je vytvoření nového dokumentu a objektu DocumentBuilder. Třída DocumentBuilder pomáhá při vytváření a úpravě dokumentů aplikace Word.
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -72,52 +40,79 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Vytvořte dokument a DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Krok 2: Vložte konce stránek
+
+Dále do dokumentu vložíme několik zalomení stránek. To nám umožní efektivně demonstrovat vnořená pole.
+
+```csharp
 // Vložit konce stránek.
 for (int i = 0; i < 5; i++)
-     builder. InsertBreak(BreakType.PageBreak);
+{
+    builder.InsertBreak(BreakType.PageBreak);
+}
+```
 
+## Krok 3: Přesuňte se do zápatí
+
+Po vložení zalomení stránek se musíme přesunout do zápatí dokumentu. Zde vložíme naše vnořené pole.
+
+```csharp
 // Přesunout do zápatí.
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+```
 
+## Krok 4: Vložte vnořené pole
+
+Nyní vložíme vnořené pole. Pole IF použijeme k podmíněnému zobrazení textu na základě aktuálního čísla stránky.
+
+```csharp
 // Vložit vnořené pole.
-Field field = builder. InsertField(@"IF ");
+Field field = builder.InsertField(@"IF ");
 builder.MoveTo(field.Separator);
-builder. InsertField("PAGE");
-builder. Write(" <> ");
+builder.InsertField("PAGE");
+builder.Write(" <> ");
 builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
+```
 
+V tomto kroku nejprve vložíme pole IF, přesuneme se na jeho oddělovač a poté vložíme pole PAGE a NUMPAGES. Pole IF kontroluje, zda se aktuální číslo stránky (PAGE) nerovná celkovému počtu stránek (NUMPAGES). Pokud je true, zobrazí se „Zobrazit další stránku“, jinak se zobrazí „Poslední stránka“.
+
+## Krok 5: Aktualizujte pole
+
+Nakonec aktualizujeme pole, abychom zajistili, že zobrazuje správný text.
+
+```csharp
 // Aktualizujte pole.
-field. Update();
+field.Update();
+```
 
+## Krok 6: Uložte dokument
+
+Posledním krokem je uložení dokumentu do vámi určeného adresáře.
+
+```csharp
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-V tomto příkladu jsme vytvořili nový dokument, vložili konce stránek, přesunuli kurzor do zápatí a pak do zápatí vložili vnořené pole.
+## Závěr
 
-### FAQ
+tady to máte! Úspěšně jste vložili vnořená pole do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna umožňuje neuvěřitelně snadno programově manipulovat s dokumenty Wordu. Ať už generujete sestavy, vytváříte šablony nebo automatizujete pracovní postupy dokumentů, Aspose.Words vám pomůže.
 
-#### Otázka: Jak mohu vložit vnořená pole do dokumentu aplikace Word pomocí Aspose.Words for .NET?
+## FAQ
 
-A: Chcete-li vložit vnořená pole do dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat takto:
+### Co je vnořené pole v dokumentech aplikace Word?
+Vnořené pole je pole, které obsahuje další pole. Umožňuje komplexnější a podmíněnější obsah v dokumentech.
 
-1. Získejte odstavec, kam chcete vložit vnořená pole.
-2.  Vytvořit`FieldStart` objekt pro nadřazené pole.
-3.  Přidejte podřízená pole pomocí`FieldStart.NextSibling` metoda předávání odpovídající`FieldStart` objekty jako parametry.
+### Mohu použít jiná pole v poli IF?
+Ano, do pole KDYŽ můžete vnořit různá pole, jako je DATUM, ČAS a AUTOR, abyste vytvořili dynamický obsah.
 
-#### Otázka: Jaké jsou výhody použití vnořených polí v dokumentu aplikace Word s Aspose.Words for .NET?
+### Je Aspose.Words for .NET zdarma?
+ Aspose.Words for .NET je komerční knihovna, ale můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) vyzkoušet to.
 
-Odpověď: Použití vnořených polí nabízí několik výhod v dokumentu aplikace Word s Aspose.Words pro .NET. To umožňuje větší flexibilitu při vytváření dynamických šablon dokumentů tím, že umožňuje vkládání hodnot proměnných a výpočtů do vnořených polí. Vnořená pole mohou také usnadnit automatické generování obsahu, jako je generování tabulek obsahu, čísel stránek atd.
+### Mohu používat Aspose.Words s jinými jazyky .NET?
+Ano, Aspose.Words podporuje všechny jazyky .NET, včetně VB.NET a F#.
 
-#### Otázka: Mohu mít víceúrovňová vnořená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
-Odpověď: Ano, je možné mít víceúrovňová vnořená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET. Můžete vytvořit složité hierarchie vnořených polí pomocí`FieldStart.NextSibling` metoda pro přidání podřízených polí k existujícím nadřazeným polím.
-
-#### Otázka: Jak mohu upravit vlastnosti vnořených polí v dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
- Odpověď: Chcete-li upravit vlastnosti vnořených polí v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete přistupovat k odpovídajícím`FieldStart` objektů a podle potřeby upravovat jejich vlastnosti. Můžete nastavit možnosti formátování, hodnoty, výpočty atd. vnořených polí, abyste dosáhli požadovaného výsledku.
-
-#### Otázka: Ovlivňuje vkládání vnořených polí výkon dokumentu Word s Aspose.Words pro .NET?
-
-Odpověď: Vkládání vnořených polí může ovlivnit výkon dokumentu Word s Aspose.Words for .NET, zejména pokud dokument obsahuje velký počet vnořených polí nebo složité hierarchie. Pro zlepšení výkonu se doporučuje optimalizovat kód a vyhnout se zbytečným nebo opakovaným operacím na vnořených polích.
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+ Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).

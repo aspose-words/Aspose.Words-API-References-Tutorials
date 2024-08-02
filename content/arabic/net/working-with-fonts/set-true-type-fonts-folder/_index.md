@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 
 #### س: هل يمكنني تحديد مجلدات خطوط TrueType متعددة في Aspose.Words؟
 
-ج: نعم، يمكنك تحديد مجلدات خطوط TrueType متعددة في Aspose.Words باستخدام`SetTrueTypeFontsFolder` طريقة`Fonts` فئة مع قائمة مواقع المجلدات.
+ج: نعم، يمكنك تحديد مجلدات خطوط TrueType متعددة في Aspose.Words باستخدام الملف`SetTrueTypeFontsFolder` طريقة`Fonts` فئة مع قائمة مواقع المجلدات.
 
 #### س: كيف يمكنني التحقق من مجلد خطوط TrueType الذي تم تكوينه في Aspose.Words؟
 

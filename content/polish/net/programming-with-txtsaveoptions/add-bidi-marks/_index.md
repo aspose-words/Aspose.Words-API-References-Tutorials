@@ -2,46 +2,37 @@
 title: Dodaj znaki BiDi w dokumencie programu Word
 linktitle: Dodaj znaki BiDi w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać znaki BiDi do dokumentu programu Word za pomocą Aspose.Words dla .NET i tworzyć profesjonalne dokumenty wielojęzyczne.
+description: Z tego przewodnika dowiesz się, jak dodawać znaki dwukierunkowe (Bidi) w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Zapewnij właściwy kierunek tekstu w przypadku treści wielojęzycznych.
 type: docs
 weight: 10
 url: /pl/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
+## Wstęp
 
-Aspose.Words dla .NET to potężna biblioteka do tworzenia, edytowania i manipulowania dokumentami Word w aplikacji C#. Wśród funkcji oferowanych przez Aspose.Words jest możliwość dodawania znaków BiDi (dwukierunkowych) do dokumentu. W tym przewodniku przeprowadzimy Cię przez proces używania kodu źródłowego C# Aspose.Words dla .NET w celu dodania znaków BiDi do dokumentu.
+W świecie przetwarzania dokumentów zarządzanie tekstem dwukierunkowym (Bidi) może być często trudne. Jest to szczególnie prawdziwe w przypadku języków, które mają różne kierunki tekstu, takich jak arabski lub hebrajski. Na szczęście Aspose.Words dla .NET ułatwia obsługę takich scenariuszy. W tym samouczku omówimy, jak dodać znaczniki BiDi do dokumentu programu Word za pomocą Aspose.Words dla .NET.
 
-## Zrozumienie biblioteki Aspose.Words
+## Warunki wstępne
 
-Przed zagłębieniem się w kod ważne jest zapoznanie się z biblioteką Aspose.Words dla platformy .NET. Aspose.Words to popularna biblioteka, która sprawia, że przetwarzanie tekstu w dokumentach Word jest łatwe i wydajne. Oferuje szeroką gamę funkcji do tworzenia, edytowania i manipulowania dokumentami Word, w tym dodawania znaków BiDi.
+Zanim zagłębimy się w kod, upewnij się, że masz następujące elementy:
 
-## Tworzenie dokumentu i dodawanie treści
+1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Można go pobrać z[Strona z plikami do pobrania Aspose](https://releases.aspose.com/words/net/).
+2. .NET Framework lub .NET Core: Upewnij się, że masz skonfigurowane kompatybilne środowisko .NET do uruchamiania przykładów.
+3. Podstawowa znajomość C#: Znajomość języka programowania C# i podstawowych operacji w .NET.
 
-Pierwszym krokiem jest utworzenie nowego dokumentu i dodanie do niego treści. Użyj klasy Document, aby utworzyć nową instancję dokumentu. Następnie użyj klasy DocumentBuilder, aby dodać tekst do dokumentu. Oto przykład :
+## Importuj przestrzenie nazw
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. Writen("Hello world!");
-builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
-```
-
-tym przykładzie tworzymy nowy dokument i używamy narzędzia DocumentBuilder do dodania tekstu. Dodaliśmy trzy wiersze tekstu: jeden w języku angielskim, jeden w języku hebrajskim i jeden w języku arabskim, aby zademonstrować dodawanie treści w różnych językach.
-
-## Dodano znaki BiDi
-
-Po dodaniu treści możemy teraz dodać do dokumentu znaki BiDi. Używamy w tym celu klasy TxtSaveOptions i ustawiamy właściwość AddBidiMarks na true. Oto jak:
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Oto jak możesz uwzględnić je w swoim projekcie:
 
 ```csharp
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-W tym przykładzie tworzymy instancję TxtSaveOptions i ustawiamy właściwość AddBidiMarks na true. Następnie za pomocą metody Save klasy Document zapisujemy dokument ze znakami BiDi.
+Podzielmy proces dodawania znaków BiDi w dokumencie programu Word na jasne kroki. Każdy krok poprowadzi Cię przez kod i jego cel.
 
-### Przykładowy kod źródłowy funkcji „Dodaj znaki Bidi” w Aspose.Words dla .NET
+## Krok 1: Skonfiguruj swój dokument
+
+ Zacznij od utworzenia nowej instancji pliku`Document` klasa i A`DocumentBuilder` aby dodać treść do dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -50,44 +41,52 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Utwórz dokument i dodaj treść
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-builder. Writen("Hello world!");
+ Na tym etapie inicjujesz nowy dokument programu Word i konfigurujesz plik`DocumentBuilder` aby ułatwić wstawianie treści.
+
+## Krok 2: Dodaj treść do swojego dokumentu
+
+Następnie dodaj tekst do swojego dokumentu. W tym miejscu dodamy tekst w różnych językach, aby zilustrować obsługę tekstu BiDi.
+
+```csharp
+builder.Writeln("Hello world!");
 builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
+builder.Writeln("שלום עולם!");
+builder.Writeln("مرحبا بالعالم!");
+```
 
+Tutaj najpierw dodajemy standardowe angielskie wyrażenie. Następnie włączamy formatowanie tekstu BiDi dla kolejnego tekstu, który jest napisany w języku hebrajskim i arabskim. To pokazuje, jak włączyć tekst dwukierunkowy.
+
+## Krok 3: Skonfiguruj opcje zapisywania znaków BiDi
+
+ Aby mieć pewność, że znaki BiDi zostaną poprawnie zapisane w dokumencie, należy skonfigurować`TxtSaveOptions` i włącz`AddBidiMarks` opcja.
+
+```csharp
 // Dodaj znaki BiDi
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true
-
-  };
+TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
+ Na tym etapie tworzymy instancję`TxtSaveOptions` i ustaw`AddBidiMarks`własność do`true`. Dzięki temu podczas zapisywania dokumentu jako pliku tekstowego zostaną uwzględnione znaczniki BiDi.
+
 ## Wniosek
 
-tym przewodniku wyjaśniliśmy, jak używać Aspose.Words dla .NET do dodawania znaczników BiDi do dokumentu programu Word przy użyciu dostarczonego kodu źródłowego C#. Wykonując podane kroki, możesz łatwo dodać znaczniki BiDi do dokumentów programu Word w aplikacji C#. Aspose.Words oferuje ogromną elastyczność i możliwości przetwarzania tekstu z formatowaniem tekstu i zarządzaniem językiem, umożliwiając profesjonalne tworzenie wielojęzycznych dokumentów.
+Dodawanie znaków BiDi do dokumentów programu Word może być kluczowym krokiem w przypadku treści wielojęzycznych, które obejmują języki o różnych kierunkach tekstu. Dzięki Aspose.Words dla .NET proces ten jest prosty i wydajny. Wykonując czynności opisane powyżej, możesz mieć pewność, że Twoje dokumenty poprawnie przedstawiają tekst BiDi, zwiększając czytelność i dokładność.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-#### P: Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do tworzenia, edytowania i manipulowania dokumentami Word w aplikacji C#. Oferuje wiele funkcji do przetwarzania słów w dokumentach Word, w tym dodawanie znaków BiDi (dwukierunkowych).
+### Czym są znaki Bidi i dlaczego są ważne?
+Znaki BiDi to znaki specjalne używane do kontrolowania kierunku tekstu w dokumentach. Są niezbędne do prawidłowego wyświetlania języków czytanych od prawej do lewej, takich jak arabski i hebrajski.
 
-#### P: Jakie funkcje oferuje Aspose.Words dla .NET?
-Aspose.Words dla .NET oferuje szeroką gamę funkcji do tworzenia, edytowania i manipulowania dokumentami Word. Niektóre z tych funkcji obejmują tworzenie dokumentów, dodawanie treści, formatowanie tekstu, zarządzanie tabelami, łączenie i dzielenie dokumentów, konwertowanie dokumentów i wiele innych.
+### Czy mogę używać Aspose.Words dla .NET do obsługi innych typów problemów z kierunkiem tekstu?
+Tak, Aspose.Words dla .NET zapewnia kompleksową obsługę różnych potrzeb w zakresie kierunku i formatowania tekstu, w tym języków pisanych od prawej do lewej i od lewej do prawej.
 
-#### P: Jak mogę dodać znaczniki BiDi do dokumentu programu Word przy użyciu Aspose.Words dla .NET?
-Możesz dodać znaki BiDi do dokumentu programu Word, wykonując następujące kroki:
+### Czy można zastosować formatowanie BiDi tylko do określonych części dokumentu?
+Tak, w razie potrzeby możesz zastosować formatowanie BiDi do określonych akapitów lub sekcji dokumentu.
 
- Utwórz nowy dokument za pomocą`Document` klasa.
+### W jakich formatach mogę zapisać dokument ze znakami BiDi?
+W podanym przykładzie dokument jest zapisywany jako plik tekstowy. Jednak Aspose.Words obsługuje również zapisywanie dokumentów w różnych formatach, zachowując jednocześnie znaki BiDi.
 
- Użyj`DocumentBuilder` class, aby dodać treść do dokumentu.
-
- Po dodaniu treści użyj`TxtSaveOptions` klasę i ustaw`AddBidiMarks`własność do`true`.
-
- Zapisz dokument ze znakami BiDi za pomocą`Save` metoda`Document` klasa.
-
-#### P: Czy Aspose.Words obsługuje wiele języków przy dodawaniu znaków BiDi?
-Tak, Aspose.Words obsługuje wiele języków do dodawania znaków BiDi. Możesz dodawać znaki BiDi do tekstu w różnych językach, takich jak angielski, hebrajski i arabski, używając Aspose.Words dla .NET.
-
-#### P: Czy są jakieś dodatkowe możliwości zapisania dokumentu ze znakami BiDi?
- Tak, możesz określić inne opcje podczas zapisywania dokumentu ze znakami BiDi za pomocą`TxtSaveOptions` klasa. Można na przykład ustawić format zapisywania dokumentu, opcje kodowania itp.
+### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?
+ Możesz dowiedzieć się więcej o Aspose.Words dla .NET poprzez[Dokumentacja Aspose](https://reference.aspose.com/words/net/) i uzyskaj dostęp do[Forum wsparcia](https://forum.aspose.com/c/words/8) o dodatkową pomoc.

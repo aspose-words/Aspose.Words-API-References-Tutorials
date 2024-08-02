@@ -11,12 +11,12 @@ url: /ko/net/clone-and-combine-documents/insert-document-at-replace/
 
 안녕하세요, 문서 전문가 여러분! 한 Word 문서를 다른 Word 문서에 원활하게 삽입하는 방법을 알아내려고 코드에 빠져들었던 적이 있습니까? 두려워하지 마십시오. 오늘 우리는 해당 작업을 쉽게 수행하기 위해 .NET용 Aspose.Words의 세계로 뛰어들기 때문입니다. 찾기 및 바꾸기 작업 중 특정 지점에 문서를 삽입하기 위해 이 강력한 라이브러리를 사용하는 방법에 대한 자세한 단계별 가이드를 살펴보겠습니다. Aspose.Words 마법사가 될 준비가 되셨나요? 시작하자!
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 준비해야 할 몇 가지 사항이 있습니다.
 
 -  Visual Studio: 컴퓨터에 Visual Studio가 설치되어 있는지 확인하세요. 아직 없으시다면, 다음에서 다운로드하실 수 있습니다.[여기](https://visualstudio.microsoft.com/).
--  .NET용 Aspose.Words: Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: Aspose.Words 라이브러리가 필요합니다. 에서 받으실 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 - 기본 C# 지식: C# 및 .NET에 대한 기본적인 이해는 이 자습서를 따라가는 데 도움이 됩니다.
 
 좋습니다. 이제 코드를 좀 더 작성해 보겠습니다.

@@ -9,7 +9,7 @@ url: /tr/net/add-content-using-documentbuilder/move-to-paragraph/
 ---
 ## giriiş
 
-Merhaba teknoloji tutkunu! Hiç program aracılığıyla bir Word belgesinde belirli bir paragrafa geçmeniz gerektiğini fark ettiniz mi? İster belge oluşturmayı otomatikleştiriyor olun ister yalnızca iş akışınızı kolaylaştırmaya çalışıyor olun, Aspose.Words for .NET arkanızdadır. Bu kılavuzda Aspose.Words for .NET kullanarak bir Word belgesinde belirli bir paragrafa geçme sürecinde size yol göstereceğiz. Bunu basit, takip edilmesi kolay adımlara ayıracağız. Öyleyse hemen dalalım!
+Merhaba teknoloji tutkunu! Hiç program aracılığıyla bir Word belgesinde belirli bir paragrafa geçmeniz gerektiğini fark ettiniz mi? İster belge oluşturmayı otomatikleştiriyor olun ister yalnızca iş akışınızı kolaylaştırmaya çalışıyor olun, Aspose.Words for .NET arkanızdadır. Bu kılavuzda Aspose.Words for .NET kullanarak bir Word belgesinde belirli bir paragrafa geçme sürecinde size yol göstereceğiz. Bunu basit, takip edilmesi kolay adımlara ayıracağız. O halde hemen içeri dalalım!
 
 ## Önkoşullar
 

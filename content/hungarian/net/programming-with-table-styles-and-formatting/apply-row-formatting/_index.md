@@ -2,111 +2,110 @@
 title: Sorformázás alkalmazása
 linktitle: Sorformázás alkalmazása
 second_title: Aspose.Words Document Processing API
-description: Lépésről lépésre útmutató sorformázás alkalmazásához egy táblázatban az Aspose.Words for .NET használatával.
+description: Ismerje meg, hogyan alkalmazhat sorformázást Word-dokumentumokban az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a részletes utasításokért.
 type: docs
 weight: 10
 url: /hu/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban lépésről lépésre végigvezetjük a sorformázás alkalmazásának folyamatán az Aspose.Words for .NET segítségével. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Az oktatóanyag végére világosan megérti, hogyan formázhatja a táblázat sorait a Word-dokumentumokban az Aspose.Words for .NET használatával.
+Ha valami díszes sorformázással szeretné feldobni Word-dokumentumait, akkor jó helyen jár! Ebben az oktatóanyagban bemutatjuk, hogyan alkalmazhat sorformázást az Aspose.Words for .NET használatával. Az egyes lépéseket lebontjuk, így könnyebben követheti és alkalmazhatja ezt a projektjeire.
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
-Először is be kell állítania a dokumentumkönyvtár elérési útját. Ez az a hely, ahová menteni szeretné a szerkesztett Word-dokumentumot. Cserélje ki a "DOKUMENTUMKÖNYVTÁR" elemet a megfelelő elérési útra.
+## Előfeltételek
+
+Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel rendelkezünk, ami az induláshoz szükséges:
+
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha még nem tette meg, letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: AC# fejlesztői környezet, például a Visual Studio.
+3. Alapvető C# ismerete: A C# programozás ismerete elengedhetetlen.
+4. Dokumentumkönyvtár: Egy könyvtár, ahová a dokumentumot mentheti.
+
+## Névterek importálása
+
+Először is importálnia kell a szükséges névtereket a C# projektbe:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## 2. lépés: Hozzon létre egy új dokumentumot és dokumentumkészítőt
- Ezután létre kell hoznia egy új példányt a`Document` osztályt és egy dokumentumkonstruktort az adott dokumentumhoz.
+Most pedig menjünk végig a folyamaton lépésről lépésre.
+
+## 1. lépés: Hozzon létre egy új dokumentumot
+
+Először is létre kell hoznunk egy új dokumentumot. Ez lesz a vásznunk, ahol hozzáadjuk a táblázatunkat, és alkalmazzuk a formázást.
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Indítson el egy új táblát
- A sorformázás alkalmazásához először egy új táblát kell indítanunk a`StartTable()` a dokumentumkonstruktor módszere.
+## 2. lépés: Indítson el egy új táblázatot
+
+ Ezután egy új táblát indítunk a`DocumentBuilder`tárgy. Itt történik a varázslat.
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## 4. lépés: Szúrjon be cellát, és lépjen a sorformátumra
-Most beszúrhatunk egy cellát a táblázatba, és elérhetjük az adott cella sorformátumát a dokumentumkészítő segítségével`InsertCell()`és`RowFormat` mód.
+## 3. lépés: Határozza meg a sor formázását
+
+Itt határozzuk meg a sor formázását. Ez magában foglalja a sormagasság és a párnázás beállítását.
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## 5. lépés: Állítsa be a sor magasságát
- A sormagasság beállításához használjuk a`Height`és`HeightRule` a sorformátum tulajdonságait. Ebben a példában 100 pontos sormagasságot állítunk be, és a`Exactly` szabály.
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## 6. lépés: Határozza meg a táblázat formázását
- Egyes formázási tulajdonságok magán a táblázaton állíthatók be, és az összes táblázatsorra vonatkoznak. Ebben a példában a táblázat margó tulajdonságait a segítségével állítjuk be`LeftPadding`, `RightPadding`, `TopPadding`és`BottomPadding` tulajdonságait.
+## 4. lépés: Szúrjon be tartalmat a cellába
+
+Szúrjunk be néhány tartalmat a szépen formázott sorunkba. Ez a tartalom bemutatja, hogyan néz ki a formázás.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## 7. lépés: Adjon hozzá tartalmat a sorhoz
-Most megtehetjük
+## 5. lépés: Zárja be a sort és a táblázatot
 
- A sorhoz tartalmat fogunk hozzáadni a dokumentumkonstruktor módszereivel. Ebben a példában a`Writeln()` módszer szöveg hozzáadásához a sorhoz.
+Végül be kell fejeznünk a sort és a táblázatot, hogy teljes legyen a szerkezetünk.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## 8. lépés: Fejezd be a sort és a táblázatot
- Miután hozzáadtuk a tartalmat a sorhoz, a sort a következővel zárhatjuk le`EndRow()` módszerrel, majd fejezze be a táblázatot a`EndTable()` módszer.
+## 6. lépés: Mentse el a dokumentumot
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## 9. lépés: Mentse el a módosított dokumentumot
-Végül a módosított dokumentumot fájlba mentjük. Kiválaszthat egy megfelelő nevet és helyet a kimeneti dokumentumnak.
+Most, hogy a táblázatunk elkészült, ideje elmenteni a dokumentumot. Adja meg a dokumentumkönyvtár elérési útját, és mentse el a fájlt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-Gratulálok ! Az Aspose.Words for .NET használatával sorformázást alkalmazott egy táblázatban.
-
-### Minta forráskód az Apply Row Formatting alkalmazáshoz az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Ezek a formázási tulajdonságok a táblázatban vannak beállítva, és a táblázat összes sorára vonatkoznak.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan lehet sorformázást alkalmazni egy táblázatban az Aspose.Words for .NET használatával. Ennek a lépésről lépésre szóló útmutatónak a követésével könnyedén integrálhatja ezt a funkciót C#-projektjeibe. A táblázatsorok formázásának manipulálása a dokumentumfeldolgozás alapvető eleme, az Aspose.Words pedig hatékony és rugalmas API-t kínál ennek eléréséhez. Ennek a tudásnak a birtokában javíthatja Word-dokumentumai vizuális megjelenítését, és megfelelhet bizonyos követelményeknek.
+
+És megvan! Sikeresen alkalmazta a sorformázást egy Word-dokumentum táblázatában az Aspose.Words for .NET használatával. Ez az egyszerű, de hatékony technika nagymértékben javíthatja a dokumentumok olvashatóságát és esztétikáját.
+
+## GYIK
+
+### Alkalmazhatok eltérő formázást az egyes sorokhoz?  
+ Igen, az egyes sorokat külön-külön testreszabhatja, ha különböző tulajdonságokat állít be`RowFormat`.
+
+### Hogyan állíthatom be az oszlopok szélességét?  
+ Az oszlopok szélességét a gombbal állíthatja be`CellFormat.Width` ingatlan.
+
+### Lehetséges a cellák egyesítése az Aspose.Words for .NET-ben?  
+ Igen, egyesítheti a cellákat a`CellMerge` tulajdona a`CellFormat`.
+
+### Hozzáadhatok szegélyeket a sorokhoz?  
+ Teljesen! A sorokhoz szegélyeket adhat hozzá a`Borders` tulajdona a`RowFormat`.
+
+### Hogyan alkalmazhatom a feltételes formázást a sorokra?  
+Feltételes logikát használhat a kódban, hogy meghatározott feltételek alapján eltérő formázást alkalmazzon.

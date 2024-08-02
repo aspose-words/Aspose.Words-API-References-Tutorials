@@ -2,104 +2,150 @@
 title: Wstaw pole zaawansowane bez narzędzia do tworzenia dokumentów
 linktitle: Wstaw pole zaawansowane bez narzędzia do tworzenia dokumentów
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić zaawansowane pole do dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawić pole zaawansowane bez użycia narzędzia DocumentBuilder w Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem, aby udoskonalić swoje umiejętności przetwarzania dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
+## Wstęp
 
-Oto przewodnik krok po kroku wyjaśniający poniższy kod źródłowy C#, który wykorzystuje funkcję „Zaawansowane wstawianie pól bez narzędzia DocumentBuilder” w Aspose.Words dla .NET. Pamiętaj, aby dokładnie wykonać każdy krok, aby uzyskać pożądane rezultaty.
+Czy chcesz ulepszyć manipulację dokumentami programu Word za pomocą Aspose.Words dla .NET? Cóż, jesteś we właściwym miejscu! W tym samouczku przeprowadzimy Cię przez proces wstawiania pola zaawansowanego do dokumentu programu Word bez użycia klasy DocumentBuilder. Pod koniec tego przewodnika będziesz mieć solidną wiedzę, jak to osiągnąć za pomocą Aspose.Words dla .NET. Zanurzmy się więc i sprawmy, aby przetwarzanie dokumentów było jeszcze wydajniejsze i wszechstronniejsze!
 
-## Krok 1: Konfiguracja katalogu dokumentów
+## Warunki wstępne
 
-W podanym kodzie musisz określić katalog swoich dokumentów. Zastąp wartość „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką do katalogu dokumentów.
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
+
+-  Biblioteka Aspose.Words dla .NET: Możesz ją pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Visual Studio: wystarczy dowolna najnowsza wersja.
+- Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
+-  Licencja Aspose.Words: Uzyskaj licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
+
+## Importuj przestrzenie nazw
+
+Zanim zagłębisz się w kod, upewnij się, że do projektu zaimportowano niezbędne przestrzenie nazw:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+## Krok 1: Skonfiguruj swój projekt
+
+Na początek skonfigurujmy nasz projekt Visual Studio.
+
+### Utwórz nowy projekt
+
+1. Otwórz Visual Studio.
+2. Wybierz opcję Utwórz nowy projekt.
+3. Wybierz opcję Aplikacja konsolowa (.NET Core) i kliknij Dalej.
+4. Nazwij swój projekt i kliknij Utwórz.
+
+### Zainstaluj Aspose.Words dla .NET
+
+1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań.
+2. Wybierz pozycję Zarządzaj pakietami NuGet.
+3. Wyszukaj Aspose.Words i zainstaluj najnowszą wersję.
+
+## Krok 2: Zainicjuj dokument i akapit
+
+Teraz, gdy nasz projekt jest już skonfigurowany, musimy zainicjować nowy dokument i akapit, w którym wstawimy pole zaliczki.
+
+### Zainicjuj dokument
+
+1.  W Twoim`Program.cs` plik, zacznij od utworzenia nowego dokumentu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
 ```
 
-## Krok 2: Tworzenie dokumentu i akapitu
+Spowoduje to utworzenie nowego, pustego dokumentu.
 
-Zaczynamy od utworzenia nowego dokumentu i pobrania pierwszego akapitu.
+### Dodaj akapit
+
+2. Pobierz pierwszy akapit w dokumencie:
 
 ```csharp
-Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Krok 3: Wstawienie pola zaawansowanego
+Dzięki temu mamy akapit do pracy.
 
- Używamy`AppendField()` metoda wstawiania zaawansowanego pola do akapitu.
+## Krok 3: Wstaw pole zaliczki
+
+Teraz wstawmy pole zaliczki do naszego akapitu.
+
+### Utwórz pole
+
+1. Dołącz pole zaliczki do akapitu:
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-Następnie konfigurujemy różne właściwości pola zaawansowanego, określając żądane wartości.
+Spowoduje to utworzenie nowego pola zaawansowanego w naszym akapicie.
+
+### Ustaw właściwości pola
+
+2. Skonfiguruj właściwości pola, aby określić przesunięcia i pozycje:
 
 ```csharp
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
+field.DownOffset = "10";
+field.LeftOffset = "10";
+field.RightOffset = "-3.3";
+field.UpOffset = "0";
 field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
+field.VerticalPosition = "100";
 ```
 
- Na koniec nazywamy`Update()` metoda aktualizacji pola.
+Te ustawienia dostosowują położenie tekstu względem jego normalnej pozycji.
+
+## Krok 4: Zaktualizuj i zapisz dokument
+
+Po wstawieniu i skonfigurowaniu pola przyszedł czas na aktualizację i zapisanie dokumentu.
+
+### Zaktualizuj pole
+
+1. Upewnij się, że pole jest zaktualizowane, aby odzwierciedlić nasze zmiany:
 
 ```csharp
-field. Update();
+field.Update();
 ```
 
-### Przykład kodu źródłowego do wstawienia zaawansowanego pola bez DocumentBuilder z Aspose.Words dla .NET
+Dzięki temu wszystkie właściwości pola zostaną zastosowane poprawnie.
+
+### Zapisz dokument
+
+2. Zapisz dokument we wskazanym katalogu:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Tworzenie dokumentów.
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-
-// Wstaw pole zaawansowane.
-FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
-
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
-field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
-
-field. Update();
-
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-W tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy zaawansowane pole bez użycia narzędzia DocumentBuilder, skonfigurowaliśmy różne właściwości pola i zapisaliśmy dokument z określoną nazwą pliku.
+Spowoduje to zapisanie dokumentu z dołączonym polem zaliczki.
 
-Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Wstaw zaawansowane pole bez narzędzia DocumentBuilder” w Aspose.Words dla .NET.
+## Wniosek
 
-### Często zadawane pytania
+I masz to! Pomyślnie wstawiłeś pole zaawansowane do dokumentu programu Word bez użycia klasy DocumentBuilder. Wykonując te kroki, wykorzystałeś moc Aspose.Words dla .NET do programowego manipulowania dokumentami programu Word. Niezależnie od tego, czy automatyzujesz generowanie raportów, czy tworzysz złożone szablony dokumentów, ta wiedza niewątpliwie się przyda. Eksperymentuj i odkrywaj możliwości Aspose.Words, aby przenieść przetwarzanie dokumentów na wyższy poziom!
 
-#### P: Co to jest zaawansowane pole w Aspose.Words?
+## Często zadawane pytania
 
-Odp.: Pole Advance w Aspose.Words to specjalny typ pola, który umożliwia wykonywanie obliczeń, uwzględnianie warunków i wykonywanie złożonych operacji w dokumencie programu Word. Oferuje dużą elastyczność w tworzeniu pól dynamicznych i niestandardowych.
+### Co to jest pole zaliczki w Aspose.Words?
 
-#### P: Jak wstawić zaawansowane pole do dokumentu Word bez korzystania z Konstruktora dokumentów w Aspose.Words?
+Pole zaawansowane w Aspose.Words pozwala kontrolować położenie tekstu względem jego normalnej pozycji, zapewniając precyzyjną kontrolę nad układem tekstu w dokumentach.
 
-Odp.: Aby wstawić zaawansowane pole do dokumentu Word bez korzystania z Konstruktora dokumentów w Aspose.Words, możesz wykonać następujące kroki:
+### Czy mogę używać narzędzia DocumentBuilder z polami zaawansowanymi?
 
-1. Zaimportuj klasę Dokument i Pole z przestrzeni nazw Aspose.Words.Fields.
-2. Utwórz instancję dokumentu, ładując istniejący dokument.
-3. Użyj metody InsertField, aby wstawić pole zaawansowane, określając kod pola zaawansowanego.
-4. Zapisz dokument.
+Tak, możesz użyć programu DocumentBuilder do wstawiania pól zaawansowanych, ale w tym samouczku pokazano, jak to zrobić bez korzystania z programu DocumentBuilder, co zapewnia większą elastyczność i kontrolę.
 
-#### P: Jak uzyskać wynik zaawansowanego pola w dokumencie programu Word?
+### Gdzie mogę znaleźć więcej przykładów użycia Aspose.Words?
 
-Odp.: Aby uzyskać wynik zaawansowanego pola w dokumencie Worda, możesz skorzystać z właściwości Result dostępnej w klasie Pole. Ta właściwość zwraca obliczony wynik pola.
+ Obszerną dokumentację i przykłady można znaleźć na stronie[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) strona.
 
-#### P: Czy mogę zmodyfikować formułę pola zaawansowanego po wstawieniu go do dokumentu Word?
+### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
 
-Odp.: Tak, możesz edytować formułę pola zaawansowanego po wstawieniu go do dokumentu Word. Można to zrobić, uzyskując dostęp do właściwości FieldCode klasy Field i aktualizując formułę, modyfikując tekst formuły.
+ Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/). Aby uzyskać pełną funkcjonalność, należy zakupić licencję.
+
+### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+
+ Aby uzyskać pomoc, możesz odwiedzić stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).

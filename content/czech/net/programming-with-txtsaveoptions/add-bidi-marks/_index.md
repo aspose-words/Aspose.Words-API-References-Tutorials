@@ -2,46 +2,37 @@
 title: Přidejte Bidi značky do dokumentu Word
 linktitle: Přidejte Bidi značky do dokumentu Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se přidávat Bidi značky do dokumentu aplikace Word pomocí Aspose.Words for .NET a vytvářejte profesionální vícejazyčné dokumenty.
+description: V této příručce se dozvíte, jak přidat obousměrné (Bidi) značky do dokumentů aplikace Word pomocí Aspose.Words for .NET. Zajistěte správný směr textu pro vícejazyčný obsah.
 type: docs
 weight: 10
 url: /cs/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
+## Úvod
 
-Aspose.Words for .NET je výkonná knihovna pro vytváření, úpravy a manipulaci s dokumenty Wordu v aplikaci C#. Mezi funkcemi, které Aspose.Words nabízí, je možnost přidat do dokumentu Bidi (obousměrné) značky. V této příručce vás provedeme tím, jak použít zdrojový kód C# Aspose.Words for .NET k přidání značek Bidi do dokumentu.
+Ve světě zpracování dokumentů může být správa obousměrného (Bidi) textu často trochu složitější. To platí zejména při práci s jazyky, které mají různé směry textu, jako je arabština nebo hebrejština. Naštěstí Aspose.Words for .NET usnadňuje zvládnutí takových scénářů. V tomto tutoriálu si projdeme, jak přidat značky Bidi do dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
-## Porozumění knihovně Aspose.Words
+## Předpoklady
 
-Než se ponoříte do kódu, je důležité porozumět knihovně Aspose.Words pro .NET. Aspose.Words je oblíbená knihovna, která usnadňuje a zefektivňuje zpracování textu s dokumenty aplikace Word. Nabízí širokou škálu funkcí pro vytváření, úpravu a manipulaci s dokumenty Word, včetně přidávání značek Bidi.
+Než se ponoříme do kódu, ujistěte se, že máte následující:
 
-## Vytvoření dokumentu a přidání obsahu
+1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[Stránka Aspose Downloads](https://releases.aspose.com/words/net/).
+2. .NET Framework nebo .NET Core: Ujistěte se, že máte pro spouštění příkladů nastaveno kompatibilní prostředí .NET.
+3. Základní znalost C#: Znalost programovacího jazyka C# a základních operací v .NET.
 
-Prvním krokem je vytvoření nového dokumentu a přidání obsahu do něj. Pomocí třídy Document vytvořte novou instanci dokumentu. Poté použijte třídu DocumentBuilder k přidání textu do dokumentu. Zde je příklad:
+## Importovat jmenné prostory
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. Writen("Hello world!");
-builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
-```
-
-tomto příkladu vytvoříme nový dokument a použijeme DocumentBuilder k přidání textu. Přidali jsme tři řádky textu: jeden v angličtině, jeden v hebrejštině a jeden v arabštině, abychom ukázali přidávání obsahu v různých jazycích.
-
-## Přidány značky Bidi
-
-Po přidání obsahu můžeme nyní do dokumentu přidat značky Bidi. K tomu použijeme třídu TxtSaveOptions a vlastnost AddBidiMarks nastavíme na true. Zde je postup:
+Chcete-li začít, musíte importovat potřebné jmenné prostory. Zde je návod, jak je můžete zahrnout do svého projektu:
 
 ```csharp
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-V tomto příkladu vytvoříme instanci TxtSaveOptions a nastavíme vlastnost AddBidiMarks na true. Dále použijeme metodu Save třídy Document k uložení dokumentu s Bidi značkami.
+Rozdělme si proces přidávání Bidi značek do dokumentu Wordu do jasných kroků. Každý krok vás provede kódem a jeho účelem.
 
-### Příklad zdrojového kódu pro funkci "Přidat Bidi Marks" s Aspose.Words pro .NET
+## Krok 1: Nastavte svůj dokument
+
+ Začněte vytvořením nové instance souboru`Document` třída a a`DocumentBuilder` pro přidání obsahu do dokumentu.
 
 ```csharp
 // Cesta k adresáři vašich dokumentů
@@ -50,44 +41,52 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Vytvořte dokument a přidejte obsah
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-builder. Writen("Hello world!");
+ V tomto kroku inicializujete nový dokument aplikace Word a nastavíte a`DocumentBuilder` pro usnadnění vkládání obsahu.
+
+## Krok 2: Přidejte obsah do svého dokumentu
+
+Dále do dokumentu přidejte nějaký text. Zde přidáme text v různých jazycích, abychom ilustrovali práci s textem Bidi.
+
+```csharp
+builder.Writeln("Hello world!");
 builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
+builder.Writeln("שלום עולם!");
+builder.Writeln("مرحبا بالعالم!");
+```
 
+Zde nejprve přidáme standardní anglickou frázi. Poté povolíme formátování textu Bidi pro následující text, který je napsán v hebrejštině a arabštině. To ukazuje, jak začlenit obousměrný text.
+
+## Krok 3: Nakonfigurujte možnosti uložení pro značky Bidi
+
+ Abyste zajistili správné uložení značek Bidi v dokumentu, musíte nakonfigurovat`TxtSaveOptions` a povolit`AddBidiMarks` volba.
+
+```csharp
 // Přidejte značky Bidi
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true
-
-  };
+TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
+ V tomto kroku vytvoříme instanci`TxtSaveOptions` a nastavte`AddBidiMarks`majetek do`true`. Tím je zajištěno, že při ukládání dokumentu jako textového souboru budou zahrnuty značky Bidi.
+
 ## Závěr
 
-této příručce jsme vysvětlili, jak použít Aspose.Words pro .NET k přidání značek Bidi do dokumentu aplikace Word pomocí poskytnutého zdrojového kódu C#. Podle uvedených kroků můžete snadno přidat značky Bidi do dokumentů aplikace Word v aplikaci C#. Aspose.Words nabízí obrovskou flexibilitu a výkon pro zpracování textu s formátováním textu a správou jazyků, což vám umožňuje profesionálně vytvářet vícejazyčné dokumenty.
+Přidání značek Bidi do dokumentů aplikace Word může být zásadním krokem při práci s vícejazyčným obsahem, který zahrnuje jazyky s různými směry textu. S Aspose.Words pro .NET je tento proces přímočarý a efektivní. Dodržením výše uvedených kroků můžete zajistit, aby vaše dokumenty správně reprezentovaly text Bidi, čímž se zlepší čitelnost a přesnost.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co je Aspose.Words for .NET?
-Aspose.Words for .NET je výkonná knihovna pro vytváření, úpravy a manipulaci s dokumenty Word v aplikaci C#. Nabízí mnoho funkcí pro zpracování textu s dokumenty Word, včetně přidávání Bidi (obousměrných) značek.
+### Co jsou značky Bidi a proč jsou důležité?
+Bidi značky jsou speciální znaky používané k ovládání směru textu v dokumentech. Jsou nezbytné pro správné zobrazení jazyků, které se čtou zprava doleva, jako je arabština a hebrejština.
 
-#### Otázka: Jaké funkce nabízí Aspose.Words for .NET?
-Aspose.Words for .NET nabízí širokou škálu funkcí pro vytváření, úpravy a manipulaci s dokumenty aplikace Word. Některé z těchto funkcí zahrnují vytváření dokumentů, přidávání obsahu, formátování textu, správu tabulek, slučování a rozdělování dokumentů, převod dokumentů a další.
+### Mohu použít Aspose.Words for .NET k řešení jiných typů problémů se směrováním textu?
+Ano, Aspose.Words for .NET poskytuje komplexní podporu pro různé potřeby směrování textu a formátování, včetně jazyků psaných zprava doleva a zleva doprava.
 
-#### Otázka: Jak mohu přidat značky Bidi do dokumentu aplikace Word pomocí Aspose.Words for .NET?
-Značky Bidi můžete do dokumentu aplikace Word přidat takto:
+### Je možné použít formátování Bidi pouze na určité části dokumentu?
+Ano, formátování Bidi můžete podle potřeby použít na konkrétní odstavce nebo části dokumentu.
 
- Vytvořte nový dokument pomocí`Document` třída.
+### V jakých formátech mohu uložit dokument se značkami Bidi?
+V uvedeném příkladu je dokument uložen jako textový soubor. Aspose.Words však také podporuje ukládání dokumentů v různých formátech při zachování značek Bidi.
 
- Použijte`DocumentBuilder` třídy přidat obsah do dokumentu.
-
- Jakmile přidáte obsah, použijte`TxtSaveOptions` třídu a nastavte`AddBidiMarks`majetek do`true`.
-
- Uložte dokument s Bidi značkami pomocí`Save` metoda`Document` třída.
-
-#### Otázka: Podporuje Aspose.Words více jazyků pro přidávání značek Bidi?
-Ano, Aspose.Words podporuje více jazyků pro přidávání značek Bidi. Bidi značky můžete přidat do textu v různých jazycích, jako je angličtina, hebrejština a arabština, pomocí Aspose.Words for .NET.
-
-#### Otázka: Existují nějaké další možnosti pro uložení dokumentu se značkami Bidi?
- Ano, můžete zadat další možnosti při ukládání dokumentu s Bidi značkami pomocí`TxtSaveOptions` třída. Můžete například nastavit formát uložení dokumentu, možnosti kódování atd.
+### Kde najdu další informace o Aspose.Words pro .NET?
+ Můžete prozkoumat více o Aspose.Words pro .NET prostřednictvím[Aspose Documentation](https://reference.aspose.com/words/net/) a přístup k[Fórum podpory](https://forum.aspose.com/c/words/8) pro další pomoc.

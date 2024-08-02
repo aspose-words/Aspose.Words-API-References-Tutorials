@@ -26,7 +26,7 @@ Chcete-li začít, musíte načíst dokument aplikace Word, který chcete uloži
 Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
- Nahradit`"YourDocument.docx"` s cestou k dokumentu aplikace Word.
+ Nahradit`"YourDocument.docx"` s cestou k vašemu dokumentu aplikace Word.
 
 ## Krok 2: Nakonfigurujte možnosti uložení PCL
 

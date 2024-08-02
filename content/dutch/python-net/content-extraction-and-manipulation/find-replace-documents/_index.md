@@ -18,7 +18,7 @@ Voordat we ingaan op de geavanceerde technieken, moet je ervoor zorgen dat je aa
 
 1.  Python-installatie: Zorg ervoor dat Python op uw systeem is geïnstalleerd. Je kunt het downloaden van[hier](https://www.python.org/downloads/).
 
-2.  Aspose.Words voor Python: Aspose.Words voor Python moet geïnstalleerd zijn. Je kunt het downloaden van[hier](https://releases.aspose.com/words/python/).
+2. Aspose.Words voor Python: Aspose.Words voor Python moet geïnstalleerd zijn. Je kunt het downloaden van[hier](https://releases.aspose.com/words/python/).
 
 3. Documentvoorbereiding: Zorg ervoor dat u een Word-document bij de hand heeft waarop u zoek- en vervangbewerkingen wilt uitvoeren.
 

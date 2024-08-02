@@ -2,7 +2,7 @@
 title: Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff
 linktitle: Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengekspos kontrol ambang batas untuk binarisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
+description: Pelajari cara mengekspos kontrol ambang batas untuk binerisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/

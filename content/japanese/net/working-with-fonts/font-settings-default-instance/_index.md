@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 無料トライアルは以下からダウンロードできます。[Aspose 無料トライアルページ](https://releases.aspose.com/).
 
-### Q3: フォントをドキュメントに直接埋め込むことは可能ですか?
+### Q3: ドキュメントにフォントを直接埋め込むことは可能ですか?
 
 Aspose.Words では、PDF などの一部の形式でフォントを埋め込むことができます。フォントの埋め込みの詳細については、ドキュメントを参照してください。
 

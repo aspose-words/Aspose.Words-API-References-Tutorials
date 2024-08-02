@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-rtf-format/
 
 이 가이드에서는 Aspose.Words for Java를 사용하여 문서를 RTF(Rich Text Format)로 저장하는 과정을 안내합니다. RTF는 다양한 워드 프로세싱 응용 프로그램에서 높은 수준의 호환성을 제공하는 문서에 일반적으로 사용되는 형식입니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

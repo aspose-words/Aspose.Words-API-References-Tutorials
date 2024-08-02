@@ -16,5 +16,5 @@ Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok segítenek els
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Toc stílus módosítása a Word dokumentumban](./change-style-of-toc-level/) | Ismerje meg, hogyan módosíthatja egyszerűen a tartalomjegyzék szintjének stílusát egy Word-dokumentumban az Aspose.Words for .NET segítségével. |
-| [Módosítsa a Toc tabulátorokat a Word dokumentumban](./change-toc-tab-stops/) | Ismerje meg, hogyan módosíthatja a tartalomjegyzék lapjait egy Word-dokumentumban az Aspose.Words for .NET használatával. |
+| [Toc stílus módosítása a Word dokumentumban](./change-style-of-toc-level/) | Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan módosíthatja a tartalomjegyzék stílusát Word-dokumentumokban az Aspose.Words for .NET használatával. Könnyedén testreszabhatja TOC-ját. |
+| [Módosítsa a Toc tabulátorokat a Word dokumentumban](./change-toc-tab-stops/) | Ismerje meg, hogyan módosíthatja a tartalomjegyzék tabulátorokat a Word dokumentumokban az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató segít egy professzionális megjelenésű tartalomjegyzék létrehozásában. |

@@ -67,7 +67,7 @@ Aspose.Words for Java로 문서 처리를 최적화하세요. 이 단계별 가�
 ### [Aspose.Words for Java에서 문서 범위 사용하기](./using-document-ranges/)
 Aspose.Words for Java의 마스터 문서 범위 조작. 이 종합 가이드를 통해 텍스트를 삭제, 추출 및 서식 지정하는 방법을 알아보세요.
 ### [Aspose.Words for Java에서 구조화된 문서 태그(SDT) 사용하기](./using-structured-document-tags/)
-이 포괄적인 가이드를 통해 Java용 Aspose.Words에서 구조화된 문서 태그(SDT)를 사용하는 방법을 알아보세요. SDT를 생성, 수정하고 사용자 정의 XML 데이터에 바인딩합니다.
+이 포괄적인 가이드를 통해 Java용 Aspose.Words에서 구조적 문서 태그(SDT)를 사용하는 방법을 알아보세요. SDT를 생성, 수정하고 사용자 정의 XML 데이터에 바인딩합니다.
 ### [Aspose.Words for Java에서 스타일과 테마 사용하기](./using-styles-and-themes/)
 Aspose.Words for Java를 사용하여 문서 형식을 향상하는 방법을 알아보세요. 소스 코드 예제가 포함된 이 종합 가이드에서 스타일, 테마 등을 살펴보세요.
 ### [Aspose.Words for Java에서 목차 생성하기](./generating-table-of-contents/)

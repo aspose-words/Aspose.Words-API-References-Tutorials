@@ -16,7 +16,7 @@ Ya sea que necesite manipular, crear, convertir o generar documentos de Word, lo
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Eliminar saltos de página en un documento de Word](./remove-page-breaks/) | Aprenda a eliminar saltos de página en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Siga nuestra guía paso a paso para un diseño perfecto. |
-| [Eliminar saltos de sección en un documento de Word](./remove-section-breaks/) | Aprenda cómo eliminar saltos de sección en un documento de Word usando la biblioteca Aspose.Words para .NET. Elimine eficazmente los saltos de sección que pueden alterar el formato de su documento.|
-| [Eliminar pies de página en un documento de Word](./remove-footers/) | Aprenda cómo eliminar fácilmente pies de página en documentos de Word con Aspose.Words para .NET. Siga nuestra guía paso a paso para un manejo eficiente de archivos DOCX. |
+| [Eliminar saltos de página en un documento de Word](./remove-page-breaks/) | Aprenda cómo eliminar saltos de página en un documento de Word usando Aspose.Words para .NET con nuestra guía paso a paso. Mejore sus habilidades de manipulación de documentos. |
+| [Eliminar saltos de sección en un documento de Word](./remove-section-breaks/) | Aprenda cómo eliminar saltos de sección en documentos de Word usando Aspose.Words para .NET. Esta guía detallada paso a paso garantiza una gestión y edición de documentos fluidas.|
+| [Eliminar pies de página en un documento de Word](./remove-footers/) | Aprenda cómo eliminar pies de página de documentos de Word usando Aspose.Words para .NET con esta guía completa paso a paso. |
 | [Eliminar tabla de contenidos en un documento de Word](./remove-table-of-contents/) | Aprenda cómo eliminar la tabla de contenido en un documento de Word usando Aspose.Words para .NET. |

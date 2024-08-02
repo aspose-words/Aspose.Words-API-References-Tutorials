@@ -41,7 +41,7 @@ using Aspose.Words;
 
 ### Установка Aspose.Words
 
-Теперь давайте добавим в наш проект библиотеку Aspose.Words.
+Теперь давайте добавим библиотеку Aspose.Words в наш проект.
 
 1. Откройте диспетчер пакетов NuGet в Visual Studio.
 2. Найдите «Aspose.Words» и установите его.

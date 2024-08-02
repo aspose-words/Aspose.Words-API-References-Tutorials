@@ -66,7 +66,7 @@ Végül a megadott mentési beállításokkal PDF formátumban mentjük a dokume
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);
 ```
 
- Használjuk a`Save` módszere a`Document` osztályba a Word dokumentum PDF formátumban történő mentéséhez. A korábban beállított mentési beállítások paraméterként kerülnek átadásra, hogy biztosítsák a 3D effektusok megfelelő megjelenítését.
+ Használjuk a`Save` módszere a`Document` osztályban a Word dokumentumot PDF formátumban mentheti. A korábban beállított mentési beállítások paraméterként kerülnek átadásra, hogy biztosítsák a 3D effektusok megfelelő megjelenítését.
 
 ## Következtetés
 

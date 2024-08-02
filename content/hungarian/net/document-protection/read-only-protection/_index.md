@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Magyarázat:
 
--  A`ReadOnlyRecommended` tulajdonság be van állítva`true`.
+-  A`ReadOnlyRecommended` tulajdonság értékre van állítva`true`.
 - Ez arra kéri a felhasználókat, hogy csak olvasható módban nyissa meg a dokumentumot, bár dönthetnek úgy, hogy figyelmen kívül hagyják az ajánlást.
 
 ## 4. lépés: Alkalmazza az írásvédettséget

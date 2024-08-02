@@ -2,82 +2,100 @@
 title: 從 Html 插入表格
 linktitle: 從 Html 插入表格
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 將 HTML 表格插入 Word 文件中。
+description: 了解如何使用 Aspose.Words for .NET 將 HTML 表格插入 Word 文件中。請遵循我們詳細的無縫文件整合指南。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-tables/insert-table-from-html/
 ---
+## 介紹
 
-在本教學中，我們將學習如何使用 Aspose.Words for .NET 將表格從 HTML 插入到 Word 文件中。我們將按照逐步指南來理解程式碼並實現此功能。在本教學結束時，您將能夠以程式設計方式將 HTML 中的表格插入到 Word 文件中。
+是否曾經需要將 HTML 表格插入到 Word 文件中？無論您正在處理需要將 Web 內容轉換為 Word 文件的項目，還是只是想簡化工作流程，Aspose.Words for .NET 都能滿足您的需求。在本教學中，我們將引導您完成使用 Aspose.Words for .NET 將 HTML 表格插入 Word 文件中的整個過程。我們將涵蓋您所需的一切，從先決條件到詳細的逐步指南。準備好潛入了嗎？讓我們開始吧！
 
-## 第 1 步：項目設置
-1. 啟動 Visual Studio 並建立一個新的 C# 專案。
-2. 新增對 Aspose.Words for .NET 函式庫的參考。
+## 先決條件
 
-## 步驟2：建立文件並初始化文檔產生器
-若要使用文件和文件產生器啟動字處理，請依照下列步驟操作：
+在我們深入了解從 HTML 插入表格的細節之前，請確保滿足以下先決條件：
+
+1. Aspose.Words for .NET：從下列位置下載並安裝 Aspose.Words for .NET 函式庫：[下載頁面](https://releases.aspose.com/words/net/).
+2. 開發環境：任何 .NET 相容的開發環境，例如 Visual Studio。
+3. C# 基礎：了解基本 C# 程式設計概念。
+4. HTML 表格程式碼：要插入的表格的 HTML 程式碼。
+
+## 導入命名空間
+
+若要使用 Aspose.Words for .NET，您需要匯入必要的命名空間。這允許您存取文件操作所需的類別和方法。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+讓我們逐步分解將 HTML 表格插入到 Word 文件中的過程。
+
+## 第 1 步：設定您的文件目錄
+
+首先，您需要定義儲存 Word 文件的目錄。這可確保您的文件在修改後保存在正確的位置。
 
 ```csharp
 //文檔目錄的路徑
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-//文件創建
+## 第 2 步：建立新文檔
+
+接下來，您將建立一個新的 Word 文件。該文件將成為您插入 HTML 表格的畫布。
+
+```csharp
 Document doc = new Document();
-
-//初始化文檔產生器
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-請務必將「您的文件目錄」替換為文件目錄的實際路徑。
+## 第 3 步：插入 HTML 表格
 
-## 步驟 3：從 HTML 插入表格
-接下來，我們將使用 HTML 程式碼將表格插入文件中。使用以下程式碼：
+有趣的來了！您將使用`DocumentBuilder`將 HTML 表格插入到 Word 文件中。請注意，自動調整設定不適用於從 HTML 插入的表格，因此您的表格看起來將與 HTML 程式碼中定義的完全一樣。
 
 ```csharp
+//插入 HTML 表格
 builder.InsertHtml("<table>" +
-"<tr>" +
-"<td>Line 1, Cell 1</td>" +
-"<td>Line 1, Cell 2</td>" +
-"</tr>" +
-"<tr>" +
-"<td>Line 2, Cell 1</td>" +
-"<td>Line 2, Cell 2</td>" +
-"</tr>" +
-"</table>");
+                   "<tr>" +
+                   "<td>Row 1, Cell 1</td>" +
+                   "<td>Row 1, Cell 2</td>" +
+                   "</tr>" +
+                   "<tr>" +
+                   "<td>Row 2, Cell 1</td>" +
+                   "<td>Row 2, Cell 2</td>" +
+                   "</tr>" +
+                   "</table>");
 ```
 
-這裡我們使用`InsertHtml`文件產生器的方法來插入包含表格的 HTML。指定的 HTML 建立一個包含兩行和每行兩個單元格的表格。您可以根據需要透過修改 HTML 程式碼來自訂表格的內容。
+## 步驟 4：儲存文檔
 
-## 第四步：儲存修改後的文檔
-最後，我們需要保存修改後的文件以及從 HTML 插入的表格。使用以下程式碼：
+最後，插入表格後，您需要儲存文件。此步驟可確保您的變更寫入檔案系統。
 
 ```csharp
+//儲存文件
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-請務必為輸出文件指定正確的路徑和檔案名稱。
-
-### 使用 Aspose.Words for .NET 從 Html 插入表格的範例原始程式碼 
-
-```csharp
-	//文檔目錄的路徑
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	//請注意，AutoFitSettings 不適用於從 HTML 插入的表格。
-	builder.InsertHtml("<table>" +
-					   "<tr>" +
-					   "<td>Row 1, Cell 1</td>" +
-					   "<td>Row 1, Cell 2</td>" +
-					   "</tr>" +
-					   "<tr>" +
-					   "<td>Row 2, Cell 2</td>" +
-					   "<td>Row 2, Cell 2</td>" +
-					   "</tr>" +
-					   "</table>");
-	doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
-```
+就是這樣！您已使用 Aspose.Words for .NET 成功將 HTML 表格插入 Word 文件中。
 
 ## 結論
-在本教學中，我們學習如何使用 Aspose.Words for .NET 將表格從 HTML 插入到 Word 文件中。透過遵循本逐步指南並實現提供的 C# 程式碼，您可以以程式設計方式將 HTML 中的表格插入到 Word 文件中。此功能可讓您將 HTML 來源中的表格資料轉換並匯入到 Word 文件中。
+
+將 HTML 表格插入到 Word 文件中可以顯著簡化您的工作流程，尤其是在處理來自 Web 來源的動態內容時。 Aspose.Words for .NET 讓這個過程變得異常簡單和有效率。透過遵循本教學中概述的步驟，您可以輕鬆地將 HTML 表格轉換為 Word 文檔，確保您的文檔始終是最新的且採用專業格式。
+
+## 常見問題解答
+
+### 我可以自訂 Word 文件中 HTML 表格的外觀嗎？
+是的，您可以在將 HTML 表格插入 Word 文件之前使用標準 HTML 和 CSS 自訂 HTML 表格的外觀。
+
+### 除了表格之外，Aspose.Words for .NET 是否支援其他 HTML 元素？
+絕對地！ Aspose.Words for .NET 支援多種 HTML 元素，讓您可以將各種類型的內容插入到 Word 文件中。
+
+### 是否可以將多個 HTML 表格插入到單一 Word 文件中？
+是的，您可以透過呼叫插入多個 HTML 表`InsertHtml`使用不同的 HTML 表格程式碼多次呼叫該方法。
+
+### 如何處理跨多個頁面的大型 HTML 表格？
+Aspose.Words for .NET 會自動處理大型表格，確保它們在 Word 文件中的多個頁面上正確分割。
+
+### 我可以在 Web 應用程式中使用 Aspose.Words for .NET 嗎？
+是的，Aspose.Words for .NET 可以在桌面和 Web 應用程式中使用，使其成為文件操作的多功能工具。

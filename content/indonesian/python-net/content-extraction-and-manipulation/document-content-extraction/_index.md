@@ -14,7 +14,7 @@ Mengekstraksi konten dari dokumen Word secara efisien adalah persyaratan umum da
 
 ## Prasyarat
 
-Sebelum kita mendalami kodenya, pastikan Anda telah menginstal Python dan pustaka Aspose.Words. Anda dapat mengunduh perpustakaan dari situs web[Di Sini](https://releases.aspose.com/words/python/). Selain itu, pastikan Anda memiliki dokumen Word yang siap untuk diuji.
+ Sebelum kita mendalami kodenya, pastikan Anda telah menginstal Python dan pustaka Aspose.Words. Anda dapat mengunduh perpustakaan dari situs web[Di Sini](https://releases.aspose.com/words/python/). Selain itu, pastikan Anda memiliki dokumen Word yang siap untuk diuji.
 
 ## Menginstal Aspose.Words untuk Python
 

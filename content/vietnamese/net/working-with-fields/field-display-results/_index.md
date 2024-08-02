@@ -2,54 +2,42 @@
 title: Kết quả hiển thị trường
 linktitle: Kết quả hiển thị trường
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để hiển thị kết quả trường trong tài liệu Word của bạn với Aspose.Words for .NET.
+description: Tìm hiểu cách cập nhật và hiển thị kết quả trường trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo để tự động hóa các tác vụ tài liệu.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/field-display-results/
 ---
+## Giới thiệu
 
-Đây là hướng dẫn từng bước để giải thích mã nguồn C# bên dưới, sử dụng tính năng "Hiển thị kết quả trường" của Aspose.Words cho .NET. Hãy chắc chắn làm theo từng bước một cách cẩn thận để có được kết quả mong muốn.
+Nếu bạn đã từng làm việc với các tài liệu Microsoft Word, bạn sẽ biết các trường có sức mạnh như thế nào. Chúng giống như những phần giữ chỗ động nhỏ có thể hiển thị những thứ như ngày tháng, thuộc tính tài liệu hoặc thậm chí là các phép tính. Nhưng điều gì sẽ xảy ra khi bạn cần cập nhật các trường này và hiển thị kết quả của chúng theo chương trình? Đó là lúc Aspose.Words cho .NET xuất hiện. Hướng dẫn này sẽ hướng dẫn bạn quy trình cập nhật và hiển thị kết quả trường trong tài liệu Word bằng Aspose.Words cho .NET. Cuối cùng, bạn sẽ biết cách tự động hóa các tác vụ này một cách dễ dàng, cho dù bạn đang xử lý một tài liệu phức tạp hay một báo cáo đơn giản.
 
-## Bước 1: Thiết lập thư mục tài liệu
+## Điều kiện tiên quyết
 
-Trong mã được cung cấp, bạn phải chỉ định thư mục tài liệu của mình. Thay thế giá trị "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp tới thư mục tài liệu của bạn.
+Trước khi đi sâu vào mã, hãy đảm bảo bạn đã thiết lập mọi thứ:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu bạn chưa cài đặt nó, bạn có thể lấy nó từ[trang web giả định](https://releases.aspose.com/words/net/).
 
-## Bước 2: Tải tài liệu
+2. Visual Studio: Bạn sẽ cần một IDE như Visual Studio để viết và chạy mã .NET.
 
-Bước đầu tiên là tải tài liệu mà bạn muốn hiển thị kết quả trường.
+3. Kiến thức cơ bản về C#: Hướng dẫn này giả sử bạn có hiểu biết cơ bản về lập trình C#.
 
-```csharp
-Document document = new Document(dataDir + "Miscellaneous fields.docx");
-```
+4. Tài liệu có Trường: Có tài liệu Word đã được chèn một số trường. Bạn có thể sử dụng tài liệu mẫu được cung cấp hoặc tạo một tài liệu với nhiều loại trường khác nhau.
 
-Hãy nhớ thay thế "Các trường khác.docx" bằng tên tệp của riêng bạn.
+## Nhập không gian tên
 
-## Bước 3: Cập nhật các trường
-
- Chúng tôi sử dụng`UpdateFields()` phương pháp cập nhật tất cả các trường trong tài liệu.
+Để bắt đầu làm việc với Aspose.Words cho .NET, bạn cần nhập các vùng tên cần thiết vào dự án C# của mình. Những không gian tên này cung cấp quyền truy cập vào tất cả các lớp và phương thức bạn cần.
 
 ```csharp
-document. UpdateFields();
+using Aspose.Words;
+using Aspose.Words.Fields;
+using System;
 ```
 
-Bước này rất quan trọng vì nó đảm bảo rằng kết quả trường được hiển thị chính xác.
+## Bước 1: Tải tài liệu
 
-## Bước 4: Hiển thị kết quả trường
+Trước tiên, bạn cần tải tài liệu Word chứa các trường bạn muốn cập nhật và hiển thị.
 
- Chúng tôi sử dụng một`foreach` loop để lặp qua tất cả các trường trong tài liệu và hiển thị kết quả của chúng.
-
-```csharp
-foreach(Field field in document.Range.Fields)
-     Console.WriteLine(field.DisplayResult);
-```
-
- Trên mỗi lần lặp của vòng lặp, chúng ta truy cập vào`DisplayResult` thuộc tính của trường để có được kết quả được hiển thị.
-
-### Ví dụ về mã nguồn cho kết quả trường hiển thị với Aspose.Words cho .NET
+### Đang tải tài liệu
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -57,33 +45,56 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Tải tài liệu.
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
-
-// Cập nhật các trường.
-document. UpdateFields();
-
-// Hiển thị kết quả hiện trường.
-foreach(Field field in document.Range.Fields)
-     Console.WriteLine(field.DisplayResult);
 ```
 
-Trong ví dụ này, chúng tôi đã tải lên một tài liệu, cập nhật tất cả các trường và sau đó duyệt qua các trường để hiển thị kết quả của chúng. Bạn có thể tùy chỉnh bước này bằng cách sử dụng logic của riêng mình để xử lý kết quả trường.
+ Ở bước này, thay thế`"YOUR DOCUMENTS DIRECTORY"` với đường dẫn nơi tài liệu của bạn được lưu trữ. Các`Document` lớp dùng để tải file Word vào bộ nhớ.
 
-Điều này kết thúc hướng dẫn của chúng tôi về cách sử dụng tính năng "Hiển thị kết quả trường" với Aspose.Words cho .NET.
+## Bước 2: Cập nhật trường
 
-### Câu hỏi thường gặp
+Các trường trong tài liệu Word có thể động, nghĩa là chúng không phải lúc nào cũng hiển thị dữ liệu mới nhất. Để đảm bảo tất cả các trường đều được cập nhật, bạn cần cập nhật chúng.
 
-#### Câu hỏi: Trường hiển thị kết quả trong Aspose.Words là gì?
+### Cập nhật trường
 
-Trả lời: Trường hiển thị kết quả trong Aspose.Words là một loại trường hiển thị kết quả của một thao tác hoặc phép tính trong tài liệu Word. Ví dụ: trường hiển thị kết quả có thể được sử dụng để hiển thị tổng của một số giá trị hoặc kết quả của một công thức toán học.
+```csharp
+//Cập nhật các trường.
+document.UpdateFields();
+```
 
-#### Câu hỏi: Làm cách nào để cập nhật trường hiển thị kết quả trong tài liệu Word bằng Aspose.Words?
+ Các`UpdateFields` phương thức lặp qua tất cả các trường trong tài liệu và cập nhật chúng với dữ liệu mới nhất. Bước này rất quan trọng nếu các trường của bạn phụ thuộc vào nội dung động như ngày tháng hoặc phép tính.
 
-Trả lời: Để cập nhật trường hiển thị kết quả trong tài liệu Word bằng Aspose.Words, bạn có thể sử dụng phương thức UpdateFields. Phương thức này lặp qua tài liệu và cập nhật tất cả các trường, bao gồm các trường hiển thị kết quả, tính toán lại các giá trị dựa trên dữ liệu hiện tại.
+## Bước 3: Hiển thị kết quả trường
 
-#### Câu hỏi: Tôi có thể định dạng kết quả được hiển thị theo trường hiển thị kết quả không?
+Bây giờ các trường của bạn đã được cập nhật, bạn có thể truy cập và hiển thị kết quả của chúng. Điều này hữu ích cho việc gỡ lỗi hoặc tạo báo cáo bao gồm các giá trị trường.
 
-Trả lời: Có, bạn có thể định dạng kết quả được hiển thị theo trường hiển thị kết quả bằng cách sử dụng cú pháp thích hợp để chỉ định định dạng. Ví dụ: bạn có thể định dạng số có số vị trí thập phân cụ thể hoặc sử dụng định dạng ngày tùy chỉnh.
+### Hiển thị kết quả trường
 
-#### Câu hỏi: Làm cách nào tôi có thể xóa trường hiển thị kết quả khỏi tài liệu Word bằng Aspose.Words?
+```csharp
+// Hiển thị kết quả trường.
+foreach (Field field in document.Range.Fields)
+{
+    Console.WriteLine(field.DisplayResult);
+}
+```
 
-Trả lời: Để xóa trường hiển thị kết quả khỏi tài liệu Word bằng Aspose.Words, bạn có thể sử dụng phương thức Xóa. Phương pháp này loại bỏ trường và thay thế nó bằng kết quả tĩnh của nó.
+ Các`DisplayResult` tài sản của`Field` lớp trả về giá trị được định dạng của trường. Các`foreach` vòng lặp đi qua tất cả các trường trong tài liệu và in ra kết quả của chúng.
+
+## Phần kết luận
+
+Cập nhật và hiển thị kết quả trường trong tài liệu Word bằng Aspose.Words cho .NET là một quá trình đơn giản có thể giúp bạn tiết kiệm rất nhiều thời gian. Cho dù bạn đang làm việc với nội dung động hay tạo báo cáo phức tạp, các bước này sẽ giúp bạn quản lý và trình bày dữ liệu của mình một cách hiệu quả. Bằng cách làm theo hướng dẫn này, bạn có thể tự động hóa công việc cập nhật trường tẻ nhạt và đảm bảo tài liệu của bạn luôn phản ánh thông tin mới nhất.
+
+## Câu hỏi thường gặp
+
+### Tôi có thể cập nhật những loại trường nào bằng Aspose.Words cho .NET?  
+Bạn có thể cập nhật nhiều loại trường khác nhau, bao gồm trường ngày, thuộc tính tài liệu và trường công thức.
+
+### Tôi có cần lưu tài liệu sau khi cập nhật các trường không?  
+ Không, đang gọi`UpdateFields` không tự động lưu tài liệu. Sử dụng`Save` phương pháp để lưu bất kỳ thay đổi.
+
+### Tôi có thể cập nhật các trường trong một phần cụ thể của tài liệu không?  
+ Có, bạn có thể sử dụng`Document.Sections` thuộc tính để truy cập các phần cụ thể và cập nhật các trường trong đó.
+
+### Làm cách nào để xử lý các trường yêu cầu người dùng nhập vào?  
+Các trường yêu cầu người dùng nhập vào (như trường biểu mẫu) sẽ cần phải được điền thủ công hoặc thông qua mã bổ sung.
+
+### Có thể hiển thị kết quả trường ở định dạng khác không?  
+ Các`DisplayResult` thuộc tính cung cấp đầu ra được định dạng. Nếu bạn cần một định dạng khác, hãy xem xét xử lý bổ sung dựa trên yêu cầu của bạn.

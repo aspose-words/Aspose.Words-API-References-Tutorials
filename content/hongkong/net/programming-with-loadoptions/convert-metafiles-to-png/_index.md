@@ -91,7 +91,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 圖元檔案將保留其原始格式，這可能不與所有應用程式或裝置相容。
 
 ### 我需要 Aspose.Words for .NET 的授權嗎？
-是的，完整功能需要許可證。您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)出於試用目的。
+是的，完整功能需要許可證。你可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)出於試用目的。
 
 ### 我可以將此方法用於其他圖形格式（例如 JPEG 或 GIF）嗎？
 此特定方法適用於圖元文件，但 Aspose.Words for .NET 支援各種影像格式。請參閱[文件](https://reference.aspose.com/words/net/)了解更多。

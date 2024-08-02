@@ -16,7 +16,7 @@ url: /zh/net/working-with-section/modify-page-setup-in-all-sections/
 在深入研究之前，让我们确保我们已经拥有所需的一切：
 
 1. C# 基础知识：必须熟悉 C# 语法和概念。
-2.  Aspose.Words for .NET：您可以[点击下载](https://releases.aspose.com/words/net/) 。如果你只是尝试一下，[免费试用](https://releases.aspose.com/)可用。
+2.  Aspose.Words for .NET：您可以[点击下载](https://releases.aspose.com/words/net/)。如果你只是尝试一下，[免费试用](https://releases.aspose.com/)可用。
 3. Visual Studio：任何最新版本都可以，但为了获得最佳体验，建议使用最新版本。
 4. .NET Framework：确保您的系统上已安装它。
 
@@ -99,7 +99,7 @@ Aspose.Words for .NET 是一个全面的库，用于以编程方式处理 Word �
 
 ### 2. 我可以免费使用 Aspose.Words for .NET 吗？
 
-您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需延长使用时间，则需要购买许可证。
+您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需扩展使用，则需要购买许可证。
 
 ### 3. 如何修改其他页面设置属性？
 

@@ -57,7 +57,7 @@ pageSetup.setRightMargin(72.0);
 
 ## In tài liệu
 
-In tài liệu là một quá trình đơn giản với Aspose.Words cho Java. Bạn có thể in bằng máy in vật lý hoặc tạo tệp PDF để phân phối kỹ thuật số.
+In tài liệu là một quá trình đơn giản với Aspose.Words for Java. Bạn có thể in bằng máy in vật lý hoặc tạo tệp PDF để phân phối kỹ thuật số.
 
 ```java
 // In tài liệu

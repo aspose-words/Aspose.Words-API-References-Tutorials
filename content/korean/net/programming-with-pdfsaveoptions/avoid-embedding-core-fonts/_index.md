@@ -2,7 +2,7 @@
 title: 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기 줄이기
 linktitle: 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기 줄이기
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기를 줄이는 방법을 알아보세요. PDF를 최적화하려면 단계별 가이드를 따르십시오.
+description: .NET용 Aspose.Words를 사용하여 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기를 줄이는 방법을 알아보세요. PDF를 최적화하려면 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
@@ -11,7 +11,7 @@ url: /ko/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 
 PDF 파일이 왜 그렇게 큰지 궁금해서 머리를 긁적인 적이 있습니까? 글쎄, 당신은 혼자가 아닙니다. 일반적인 원인 중 하나는 Arial 및 Times New Roman과 같은 핵심 글꼴을 포함하는 것입니다. 운 좋게도 Aspose.Words for .NET에는 이 문제를 해결할 수 있는 멋진 방법이 있습니다. 이 튜토리얼에서는 이러한 핵심 글꼴이 포함되지 않도록 하여 PDF 파일 크기를 줄이는 방법을 보여 드리겠습니다. 바로 뛰어 들어 봅시다!
 
-## 전제조건
+## 전제 조건
 
 이 흥미진진한 여행을 시작하기 전에 필요한 모든 것이 준비되어 있는지 확인하세요. 간단한 체크리스트는 다음과 같습니다.
 

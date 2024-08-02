@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ## Következtetés
 
-És megvan! Csak néhány sornyi kóddal a Word-dokumentumot 1 Bpp indexelt képpé alakította az Aspose.Words for .NET segítségével. Ez a módszer hihetetlenül hasznos nagy kontrasztú, helytakarékos képek készítéséhez a dokumentumokból. Most ezt könnyedén integrálhatja projektjeibe és munkafolyamataiba. Boldog kódolást!
+És megvan! Néhány sornyi kóddal a Word-dokumentumot 1 Bpp indexelt képpé alakította az Aspose.Words for .NET segítségével. Ez a módszer hihetetlenül hasznos nagy kontrasztú, helytakarékos képek készítéséhez a dokumentumokból. Most ezt könnyedén integrálhatja projektjeibe és munkafolyamataiba. Boldog kódolást!
 
 ## GYIK
 

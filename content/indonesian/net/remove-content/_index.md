@@ -11,12 +11,12 @@ Menghapus konten dari dokumen memandu Anda langkah demi langkah untuk memahami c
 
 Tutorial ini memberikan contoh kode yang jelas dan ringkas dengan penjelasan langkah demi langkah, sehingga memudahkan untuk mempelajari dan menerapkan konsep dalam praktik. Dengan mengikuti langkah-langkah yang diberikan, Anda akan dapat memahami dasar-dasar penggunaan Aspose.Words untuk .NET dan menerapkan pengetahuan ini pada proyek Anda sendiri. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan membantu Anda mempelajari keterampilan yang Anda perlukan untuk bekerja secara efektif dengan dokumen Word di aplikasi Anda.
 
-Baik Anda perlu memanipulasi, membuat, mengonversi, atau membuat dokumen Word, tutorial Aspose.Words untuk .NET memberi Anda pengetahuan dan keterampilan untuk memanfaatkan sepenuhnya fungsionalitas perpustakaan Aspose.Words. Dengan memahami konsep-konsep utama ini, Anda akan dapat mengembangkan aplikasi khusus yang kuat untuk memenuhi kebutuhan spesifik pemrosesan dokumen Word Anda.
+Baik Anda perlu memanipulasi, membuat, mengonversi, atau menghasilkan dokumen Word, tutorial Aspose.Words untuk .NET memberi Anda pengetahuan dan keterampilan untuk memanfaatkan sepenuhnya fungsionalitas perpustakaan Aspose.Words. Dengan memahami konsep-konsep utama ini, Anda akan dapat mengembangkan aplikasi khusus yang kuat untuk memenuhi kebutuhan spesifik pemrosesan dokumen Word Anda.
 
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Hapus Hentian Halaman Di Dokumen Word](./remove-page-breaks/) | Pelajari cara menghapus hentian halaman di dokumen Word menggunakan Aspose.Words Library untuk .NET. Ikuti panduan langkah demi langkah kami untuk tata letak yang mulus. |
-| [Hapus Hentian Bagian Dalam Dokumen Word](./remove-section-breaks/) | Pelajari cara menghapus hentian bagian dalam dokumen Word menggunakan pustaka Aspose.Words untuk .NET. Secara efektif menghilangkan hentian bagian yang dapat mengganggu pemformatan dokumen Anda.|
-| [Hapus Footer Di Dokumen Word](./remove-footers/) | Pelajari cara menghapus footer dengan mudah di dokumen Word dengan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk penanganan file DOCX secara efisien. |
+| [Hapus Hentian Halaman Di Dokumen Word](./remove-page-breaks/) | Pelajari cara menghapus hentian halaman di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Tingkatkan keterampilan manipulasi dokumen Anda. |
+| [Hapus Hentian Bagian Dalam Dokumen Word](./remove-section-breaks/) | Pelajari cara menghapus hentian bagian di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah yang terperinci ini memastikan kelancaran pengelolaan dan pengeditan dokumen.|
+| [Hapus Footer Di Dokumen Word](./remove-footers/) | Pelajari cara menghapus footer dari dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
 | [Hapus Daftar Isi Dalam Dokumen Word](./remove-table-of-contents/) | Pelajari cara menghapus daftar isi dalam dokumen Word menggunakan Aspose.Words untuk .NET. |

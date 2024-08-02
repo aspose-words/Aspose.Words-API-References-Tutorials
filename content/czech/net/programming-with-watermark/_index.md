@@ -12,4 +12,4 @@ Words Processing with Watermark je komplexní zdroj, který vás provede procese
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Přidat textový vodoznak se specifickými možnostmi](./add-text-watermark-with-specific-options/) | Naučte se, jak přidat textový vodoznak se specifickými možnostmi pomocí Aspose.Words for .NET. Průvodce krok za krokem. |
+| [Přidat textový vodoznak se specifickými možnostmi](./add-text-watermark-with-specific-options/) | Naučte se, jak přidat textový vodoznak se specifickými možnostmi do dokumentů aplikace Word pomocí Aspose.Words for .NET. Snadno si přizpůsobte písmo, velikost, barvu a rozvržení. |

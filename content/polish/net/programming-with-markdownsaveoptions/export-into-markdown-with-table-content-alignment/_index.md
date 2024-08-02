@@ -78,7 +78,7 @@ doc.Save(dataDir + "LeftTableContentAlignment.md", saveOptions);
 saveOptions.TableContentAlignment = TableContentAlignment.Right;
 doc.Save(dataDir + "RightTableContentAlignment.md", saveOptions);
 
-// Zmień wyrównanie na środek i zapisz.
+// Zmień wyrównanie na wyśrodkowane i zapisz.
 saveOptions.TableContentAlignment = TableContentAlignment.Center;
 doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 ```

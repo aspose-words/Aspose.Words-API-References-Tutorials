@@ -53,7 +53,7 @@ Gefeliciteerd! U hebt nu geleerd hoe u tekst vetgedrukt kunt maken met Aspose.Wo
 
 #### Vraag: Hoe kan ik tekst vetgedrukt maken in Aspose.Words?
 
- A: Om tekst vetgedrukt te maken in Aspose.Words, kunt u de`Font.Bold` eigendom van de`Run`voorwerp. U kunt deze eigenschap instellen op`true` om specifieke tekst vet te maken. U kunt bijvoorbeeld gebruiken`run.Font.Bold=true` om de tekst binnenin vet te maken`Run` voorwerp.
+ A: Om tekst vetgedrukt te maken in Aspose.Words, kunt u de`Font.Bold` eigendom van de`Run` voorwerp. U kunt deze eigenschap instellen op`true` om specifieke tekst vet te maken. U kunt bijvoorbeeld gebruiken`run.Font.Bold=true` om de tekst binnenin vet te maken`Run` voorwerp.
 
 #### Vraag: Is het mogelijk om meerdere stukken tekst in dezelfde alinea vet te maken?
 

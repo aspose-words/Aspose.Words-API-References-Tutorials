@@ -2,63 +2,42 @@
 title: Seriendruckfelder umbenennen
 linktitle: Seriendruckfelder umbenennen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Seriendruckfelder in einem Dokument umbenennen.
+description: Erfahren Sie, wie Sie Seriendruckfelder in Word-Dokumenten mit Aspose.Words für .NET umbenennen. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung, um Ihre Dokumente einfach zu bearbeiten.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/rename-merge-fields/
 ---
+## Einführung
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erläuterung des C#-Quellcodes unten, der die Funktion zum Umbenennen von Seriendruckfeldern von Aspose.Words für .NET verwendet. Befolgen Sie jeden Schritt sorgfältig, um die gewünschten Ergebnisse zu erzielen.
+Das Umbenennen von Seriendruckfeldern in Word-Dokumenten kann eine gewaltige Aufgabe sein, wenn Sie nicht mit den richtigen Tools und Techniken vertraut sind. Aber keine Sorge, ich kümmere mich darum! In diesem Handbuch tauchen wir in den Prozess des Umbenennens von Seriendruckfeldern mit Aspose.Words für .NET ein, einer leistungsstarken Bibliothek, die die Dokumentbearbeitung zum Kinderspiel macht. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, dieses Schritt-für-Schritt-Tutorial führt Sie durch alles, was Sie wissen müssen.
 
-## Schritt 1: Einrichten des Dokumentverzeichnisses
+## Voraussetzungen
 
-Im angegebenen Code müssen Sie das Verzeichnis Ihrer Dokumente angeben. Ersetzen Sie den Wert „IHR DOKUMENTVERZEICHNIS“ durch den entsprechenden Pfad zu Ihrem Dokumentenverzeichnis.
+Bevor wir uns in die Einzelheiten stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
+- Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind hilfreich.
 
-## Schritt 2: Erstellen des Dokuments und Einfügen der Seriendruckfelder
+## Namespaces importieren
 
-Wir beginnen mit der Erstellung eines neuen Dokuments und verwenden ein`DocumentBuilder` , um die Seriendruckfelder einzufügen.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
-builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
-```
-
-## Schritt 3: Seriendruckfelder umbenennen
-
-Wir durchlaufen jedes Feld im Dokumentbereich und wenn es sich um ein Seriendruckfeld handelt, benennen wir das Feld um, indem wir den "_Suffix „Umbenannt“.
+Als Erstes importieren wir die erforderlichen Namespaces. Dadurch wird sichergestellt, dass unser Code Zugriff auf alle benötigten Klassen und Methoden hat.
 
 ```csharp
-foreach(Field f in doc.Range.Fields)
-{
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
-}
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Schritt 4: Speichern des Dokuments
+Okay, jetzt, da wir die Grundlagen geklärt haben, kommen wir zum spaßigen Teil! Befolgen Sie diese Schritte, um Seriendruckfelder in Ihren Word-Dokumenten umzubenennen.
 
- Schließlich nennen wir die`Save()` Methode zum Speichern des geänderten Dokuments.
+## Schritt 1: Erstellen Sie das Dokument und fügen Sie Seriendruckfelder ein
 
-```csharp
-doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
-```
-
-### Quellcodebeispiel zum Umbenennen von Seriendruckfeldern mit Aspose.Words für .NET
+Zu Beginn müssen wir ein neues Dokument erstellen und einige Seriendruckfelder einfügen. Dies dient als Ausgangspunkt.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Erstellen Sie das Dokument und fügen Sie die Seriendruckfelder ein.
 Document doc = new Document();
@@ -66,42 +45,62 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
+```
 
+ Hier erstellen wir ein neues Dokument und verwenden die`DocumentBuilder` Klasse zum Einfügen von zwei Seriendruckfeldern:`MyMergeField1`Und`MyMergeField2`.
+
+## Schritt 2: Durch die Felder iterieren und sie umbenennen
+
+Schreiben wir nun den Code zum Suchen und Umbenennen der Seriendruckfelder. Wir durchlaufen alle Felder im Dokument, prüfen, ob es Seriendruckfelder sind, und benennen sie um.
+
+```csharp
 // Seriendruckfelder umbenennen.
-foreach(Field f in doc.Range.Fields)
+foreach (Field f in doc.Range.Fields)
 {
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
+    if (f.Type == FieldType.FieldMergeField)
+    {
+        FieldMergeField mergeField = (FieldMergeField)f;
+        mergeField.FieldName = mergeField.FieldName + "_Renamed";
+        mergeField.Update();
+    }
 }
+```
 
+ In diesem Snippet verwenden wir ein`foreach` Schleife, um alle Felder im Dokument zu durchlaufen. Für jedes Feld prüfen wir, ob es sich um ein Seriendruckfeld handelt, indem wir`f.Type == FieldType.FieldMergeField` . Wenn ja, dann transformieren wir es in`FieldMergeField` und anhängen`_Renamed` zu seinem Namen.
+
+## Schritt 3: Speichern Sie das Dokument
+
+Zum Abschluss speichern wir unser Dokument mit den umbenannten Seriendruckfeldern.
+
+```csharp
 // Speichern Sie das Dokument.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-Befolgen Sie diese Schritte, um Seriendruckfelder in Ihrem Dokument mit Aspose.Words für .NET umzubenennen.
+ Diese Codezeile speichert das Dokument im angegebenen Verzeichnis unter dem Namen`WorkingWithFields.RenameMergeFields.docx`.
 
-### Häufig gestellte Fragen
+## Abschluss
 
-#### F: Wie kann ich mit Aspose.Words für .NET zusammengeführte Felder in einem Word-Dokument umbenennen?
+Und da haben Sie es! Das Umbenennen von Seriendruckfeldern in Word-Dokumenten mit Aspose.Words für .NET ist unkompliziert, wenn Sie die Schritte kennen. Wenn Sie dieser Anleitung folgen, können Sie Ihre Word-Dokumente ganz einfach bearbeiten und an Ihre Bedürfnisse anpassen. Egal, ob Sie Berichte erstellen, personalisierte Briefe verfassen oder Daten verwalten, diese Technik wird Ihnen nützlich sein.
 
- A: Um zusammengeführte Felder in einem Word-Dokument mit Aspose.Words für .NET umzubenennen, können Sie die Felder im Dokument mit dem`FieldMergingArgs` Klasse und verwenden Sie die`FieldMergingArgs.FieldName` Methode zum Umbenennen des Felds.
+## Häufig gestellte Fragen
 
-#### F: Ist es mit Aspose.Words für .NET möglich, nur bestimmte zusammengeführte Felder in einem Word-Dokument umzubenennen?
+### Kann ich mehrere Seriendruckfelder gleichzeitig umbenennen?
 
-A: Ja, es ist möglich, nur bestimmte zusammengeführte Felder in einem Word-Dokument mit Aspose.Words für .NET umzubenennen. Sie können filtern, welche Felder umbenannt werden sollen, indem Sie bestimmte Kriterien verwenden, wie z. B. Feldname oder andere relevante Eigenschaften. Anschließend können Sie die entsprechenden Felder mit dem`FieldMergingArgs.FieldName` Methode.
+Auf jeden Fall! Der bereitgestellte Code zeigt bereits, wie alle Seriendruckfelder in einem Dokument durchlaufen und umbenannt werden.
 
-#### F: Wie kann ich überprüfen, ob ein Seriendruckfeld in einem Word-Dokument mit Aspose.Words für .NET erfolgreich umbenannt wurde?
+### Was passiert, wenn das Seriendruckfeld nicht vorhanden ist?
 
- A: Um zu überprüfen, ob ein Seriendruckfeld in einem Word-Dokument mit Aspose.Words für .NET erfolgreich umbenannt wurde, können Sie den`FieldMergedArgs` Klasse und Zugriff auf die`FieldMergedArgs.IsMerged` -Eigenschaft, um zu bestimmen, ob das Feld mit Treffer umbenannt wurde.
+Wenn ein Seriendruckfeld nicht vorhanden ist, wird es vom Code einfach übersprungen. Es werden keine Fehler ausgegeben.
 
-#### F: Welche Konsequenzen hat die Umbenennung eines Seriendruckfelds in einem Word-Dokument mit Aspose.Words für .NET?
+### Kann ich das Präfix ändern, anstatt es an den Namen anzuhängen?
 
-A: Wenn Sie ein Seriendruckfeld in einem Word-Dokument mit Aspose.Words für .NET umbenennen, ändert sich der Name des Felds im Dokument, was sich auf andere Funktionen oder Prozesse auswirken kann, die vom Feldnamen abhängen. Denken Sie unbedingt an diese möglichen Konsequenzen, bevor Sie Seriendruckfelder umbenennen.
+ Ja, Sie können die`mergeField.FieldName` Zuweisung, um ihn auf einen beliebigen Wert einzustellen.
 
-#### F: Ist es möglich, den ursprünglichen Namen eines zusammengeführten Felds wiederherzustellen, nachdem es mit Aspose.Words für .NET umbenannt wurde?
+### Ist Aspose.Words für .NET kostenlos?
 
-A: Ja, es ist möglich, den ursprünglichen Namen eines zusammengeführten Felds wiederherzustellen, nachdem es mit Aspose.Words für .NET umbenannt wurde. Sie können den ursprünglichen Namen des Felds in einer Variablen oder Liste speichern und diese Informationen dann verwenden, um den ursprünglichen Namen bei Bedarf wiederherzustellen.
+ Aspose.Words für .NET ist ein kommerzielles Produkt, aber Sie können ein[Kostenlose Testphase](https://releases.aspose.com/) um es auszuwerten.
+
+### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
+
+ Eine ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/).

@@ -16,7 +16,7 @@ url: /es/net/working-with-section/modify-page-setup-in-all-sections/
 Antes de sumergirnos, asegurémonos de tener todo lo que necesitamos:
 
 1. Conocimientos básicos de C#: es necesaria estar familiarizado con la sintaxis y los conceptos de C#.
-2.  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/) . Si recién lo estás probando, un[prueba gratis](https://releases.aspose.com/) está disponible.
+2.  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/) Si recién lo estás probando, un[prueba gratis](https://releases.aspose.com/) está disponible.
 3. Visual Studio: cualquier versión reciente debería funcionar, pero se recomienda la última para obtener la mejor experiencia.
 4. .NET Framework: asegúrese de tenerlo instalado en su sistema.
 
@@ -48,7 +48,7 @@ Aquí, definimos la ruta del directorio para guardar el documento e inicializamo
 
 ## Paso 2: agregar secciones
 
-A continuación, debemos agregar varias secciones a nuestro documento. Cada sección contendrá algún texto que nos ayudará a visualizar los cambios.
+continuación, debemos agregar varias secciones a nuestro documento. Cada sección contendrá algún texto que nos ayudará a visualizar los cambios.
 
 ```csharp
 builder.Writeln("Section 1");
@@ -89,7 +89,7 @@ Esta línea de código guarda el documento en el directorio especificado con un 
 
 ## Conclusión
 
-¡Y ahí lo tienes! Ha modificado con éxito la configuración de página para todas las secciones de un documento de Word utilizando Aspose.Words para .NET. Este tutorial lo ha guiado a través de la creación de un documento, la adición de secciones y el ajuste uniforme de la configuración de sus páginas. Aspose.Words ofrece un amplio conjunto de funciones, así que siéntete libre de explorar las[Documentación API](https://reference.aspose.com/words/net/) para capacidades más avanzadas.
+ ¡Y ahí lo tienes! Ha modificado con éxito la configuración de página para todas las secciones de un documento de Word utilizando Aspose.Words para .NET. Este tutorial lo ha guiado a través de la creación de un documento, la adición de secciones y el ajuste uniforme de la configuración de sus páginas. Aspose.Words ofrece un amplio conjunto de funciones, así que siéntete libre de explorar las[Documentación API](https://reference.aspose.com/words/net/) para capacidades más avanzadas.
 
 ## Preguntas frecuentes
 

@@ -29,12 +29,12 @@ body.AppendParagraph("Paragraph 3.");
 
 ## Шаг 2. Отслеживайте отзывы и добавляйте отзывы
 
-Включаем отслеживание ревизий и добавляем ревизию в документ. Вот как:
+Включаем отслеживание редакций и добавляем ревизию в документ. Вот как:
 
 ```csharp
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 
-// Этот абзац является редакцией, и ему будет установлен соответствующий флаг IsInsertRevision.
+// Этот абзац является версией, и для него будет установлен соответствующий флаг IsInsertRevision.
 para = body.AppendParagraph("Paragraph 4.");
 Assert.True(para.IsInsertRevision);
 ```

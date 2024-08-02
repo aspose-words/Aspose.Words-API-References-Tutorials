@@ -12,7 +12,7 @@ url: /ko/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 이 종합 가이드에서는 Aspose.Words for Java를 사용하여 맞춤형 바코드 라벨을 생성하는 과정을 자세히 살펴보겠습니다. Aspose.Words for Java는 개발자가 프로그래밍 방식으로 Word 문서를 조작할 수 있는 강력한 API입니다. 주목할만한 기능 중 하나는 바코드 라벨 작업 기능으로, 맞춤형 바코드 솔루션이 필요한 기업과 조직에 유용한 도구입니다.
 
-## 전제조건
+## 전제 조건
 
 사용자 정의 바코드 라벨 생성에 대해 자세히 알아보기 전에 전제 조건이 충족되었는지 확인하겠습니다.
 

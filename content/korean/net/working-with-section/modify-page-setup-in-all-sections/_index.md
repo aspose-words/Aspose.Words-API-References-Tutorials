@@ -11,12 +11,12 @@ url: /ko/net/working-with-section/modify-page-setup-in-all-sections/
 
 안녕하세요! Word 문서의 여러 섹션에 걸쳐 페이지 설정을 수정해야 했던 경우 올바른 위치에 오셨습니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하는 과정을 안내하겠습니다. 이 강력한 라이브러리를 사용하면 Word 문서의 거의 모든 측면을 프로그래밍 방식으로 제어할 수 있으므로 개발자가 꼭 사용하는 도구입니다. 이제 커피 한 잔을 마시고 페이지 설정 수정을 마스터하기 위한 단계별 여정을 시작해 보세요!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
 1. C#에 대한 기본 지식: C# 구문 및 개념에 대한 지식이 필요합니다.
-2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) . 그냥 시험해 보는 것이라면,[무료 시험판](https://releases.aspose.com/) 사용할 수 있습니다.
+2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) 그냥 시험해 보는 것이라면,[무료 시험판](https://releases.aspose.com/) 사용할 수 있습니다.
 3. Visual Studio: 모든 최신 버전이 작동하지만 최상의 환경을 위해서는 최신 버전을 사용하는 것이 좋습니다.
 4. .NET Framework: 시스템에 설치되어 있는지 확인하세요.
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithSection.ModifyPageSetupInAllSections.doc");
 
 ## 결론
 
-그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서의 모든 섹션에 대한 페이지 설정을 성공적으로 수정했습니다. 이 튜토리얼에서는 문서 만들기, 섹션 추가 및 페이지 설정을 균일하게 조정하는 과정을 안내했습니다. Aspose.Words는 다양한 기능 세트를 제공하므로 자유롭게 탐색해보세요.[API 문서](https://reference.aspose.com/words/net/) 더 발전된 기능을 위해.
+ 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서의 모든 섹션에 대한 페이지 설정을 성공적으로 수정했습니다. 이 튜토리얼에서는 문서 만들기, 섹션 추가 및 페이지 설정을 균일하게 조정하는 과정을 안내했습니다. Aspose.Words는 다양한 기능 세트를 제공하므로 자유롭게 탐색해보세요.[API 문서](https://reference.aspose.com/words/net/) 더 발전된 기능을 위해.
 
 ## 자주 묻는 질문
 

@@ -80,7 +80,7 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-Esto es útil cuando desea excluir el texto dentro de los campos, como los campos de combinación, para que no se reemplace.
+Esto es útil cuando desea excluir el texto dentro de campos, como campos de combinación, para que no se reemplace.
 
 ## Ignorar el texto dentro de las revisiones de eliminación
 
@@ -184,7 +184,7 @@ Section firstPageSection = doc.getFirstSection();
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceLog());
 
-//Reemplazar texto que afecta los pedidos de encabezado y pie de página
+//Reemplazar texto que afecta el orden del encabezado y pie de página
 doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
 
 // Guardar el documento modificado

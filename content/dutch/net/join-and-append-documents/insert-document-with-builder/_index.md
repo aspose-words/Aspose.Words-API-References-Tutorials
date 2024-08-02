@@ -2,7 +2,7 @@
 title: Document invoegen met Builder
 linktitle: Document invoegen met Builder
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u twee Word-documenten kunt samenvoegen met Aspose.Words voor .NET. Stapsgewijze handleiding om een document in te voegen met DocumentBuilder en de opmaak te behouden.
+description: Leer hoe u twee Word-documenten samenvoegt met Aspose.Words voor .NET. Stapsgewijze handleiding om een document in te voegen met DocumentBuilder en de opmaak te behouden.
 type: docs
 weight: 10
 url: /nl/net/join-and-append-documents/insert-document-with-builder/

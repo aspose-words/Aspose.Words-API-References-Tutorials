@@ -2,67 +2,97 @@
 title: En Boy Oranı Kilitli
 linktitle: En Boy Oranı Kilitli
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir şeklin en boy oranını nasıl kilitleyeceğinizi veya kilidini açacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki şekillerin en boy oranını nasıl kilitleyeceğinizi öğrenin. Resimlerinizi ve şekillerinizi orantılı tutmak için bu adım adım kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/aspect-ratio-locked/
 ---
+## giriiş
 
-Bu eğitimde Aspose.Words for .NET kullanılarak bir Word belgesindeki bir şeklin en boy oranının nasıl kilitleneceği veya kilidinin açılacağı açıklanmaktadır. En boy oranını kilitleyerek, şekli yeniden boyutlandırırken şeklin orijinal oranlarını koruyabilirsiniz.
+Word belgelerinizdeki görsellerin ve şekillerin mükemmel oranlarını nasıl koruyacağınızı hiç merak ettiniz mi? Bazen resimlerinizin ve şekillerinizin yeniden boyutlandırıldığında bozulmamasını sağlamanız gerekir. En boy oranını kilitlemenin kullanışlı olduğu yer burasıdır. Bu eğitimde Aspose.Words for .NET kullanarak Word belgelerindeki şekillerin en boy oranının nasıl ayarlanacağını inceleyeceğiz. Bu becerileri projelerinize güvenle uygulayabilmenizi sağlamak için bunu takip edilmesi kolay adımlara ayıracağız.
 
 ## Önkoşullar
-Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- Aspose.Words for .NET kütüphanesi kuruldu.
-- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
+Koda dalmadan önce, başlamak için neye ihtiyacınız olduğunu gözden geçirelim:
 
-## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+- Aspose.Words for .NET Library: Aspose.Words for .NET'in kurulu olması gerekir. Henüz yapmadıysanız, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Bir .NET geliştirme ortamı kurduğunuzdan emin olun. Visual Studio popüler bir seçimdir.
+- Temel C# Bilgisi: C# programlamaya biraz aşina olmak faydalı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bu ad alanları, Word belgeleri ve şekilleriyle çalışmak için ihtiyaç duyduğumuz sınıflara ve yöntemlere erişmemizi sağlayacaktır.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## 1. Adım: Belge Dizininizi Kurun
+
+ Şekilleri değiştirmeye başlamadan önce belgelerimizin saklanacağı bir dizin oluşturmamız gerekiyor. Basitlik adına bir yer tutucu kullanacağız`YOUR DOCUMENT DIRECTORY`. Bunu belge dizininizin gerçek yoluyla değiştirin.
+
+```csharp
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
+## Adım 2: Yeni Bir Belge Oluşturun
+
+Daha sonra Aspose.Words'ü kullanarak yeni bir Word belgesi oluşturacağız. Bu belge şekil ve görsel eklemek için tuvalimiz görevi görecek.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Bir Görüntü Şekli Ekleme
- Kullan`InsertImage` yöntemi`DocumentBuilder` Belgeye bir görüntü şekli eklemek için nesne. Görüntü dosyasının yolunu parametre olarak belirtin.
+ Burada bir örneğini oluşturuyoruz.`Document` sınıf ve kullanın`DocumentBuilder` belge içeriğini oluşturmamıza yardımcı olmak için.
+
+## 3. Adım: Resim Ekleme
+
+ Şimdi belgemize bir resim ekleyelim. biz kullanacağız`InsertImage` yöntemi`DocumentBuilder`sınıf. Belirttiğiniz dizinde bir görselin olduğundan emin olun.
 
 ```csharp
-Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
+Shape shape = builder.InsertImage(dataDir + "Transparent background logo.png");
 ```
 
-## 4. Adım: En Boy Oranını Kilitleyin veya Kilidini Açın
- Yı kur`AspectRatioLocked` şeklin özelliği`true` veya`false` En boy oranını sırasıyla kilitlemek veya kilidini açmak için.
+ Yer değiştirmek`dataDir + "Transparent background logo.png"` resim dosyanızın yolu ile birlikte.
+
+## 4. Adım: En Boy Oranını Kilitleyin
+
+Resim eklendikten sonra en boy oranını kilitleyebiliriz. En boy oranının kilitlenmesi, yeniden boyutlandırma sırasında görüntünün oranlarının sabit kalmasını sağlar.
 
 ```csharp
-shape.AspectRatioLocked = false; // En boy oranının kilidini açın
+shape.AspectRatioLocked = true;
 ```
+
+ Ayar`AspectRatioLocked` ile`true` görüntünün orijinal en boy oranını korumasını sağlar.
 
 ## Adım 5: Belgeyi Kaydedin
- Belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.AspectRatioLocked.docx" olarak kaydediyoruz.
+
+Son olarak belgeyi belirtilen dizine kaydedeceğiz. Bu adım, belge dosyasına yaptığımız tüm değişiklikleri yazar.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ```
 
-### Aspose.Words for .NET kullanılarak Kilitlenen En Boy Oranı için örnek kaynak kodu 
+## Çözüm
 
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Tebrikler! Aspose.Words for .NET'i kullanarak Word belgelerindeki şekillerin en boy oranını nasıl ayarlayacağınızı başarıyla öğrendiniz. Bu adımları izleyerek görsellerinizin ve şekillerinizin orantılarını koruyarak belgelerinizin profesyonel ve gösterişli görünmesini sağlayabilirsiniz. En boy oranı kilitleme özelliğinin çeşitli senaryolarda nasıl çalıştığını görmek için farklı görseller ve şekillerle denemeler yapmaktan çekinmeyin.
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
-	shape.AspectRatioLocked = false;
-	doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
-```
+## SSS'ler
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir şeklin en boy oranını başarıyla kilitlediniz veya kilidini açtınız.
+### Kilitledikten sonra en boy oranının kilidini açabilir miyim?
+Evet, ayarlayarak en boy oranının kilidini açabilirsiniz.`shape.AspectRatioLocked = false`.
+
+### Kilitli en boy oranına sahip bir görüntüyü yeniden boyutlandırırsam ne olur?
+Resim, orijinal genişlik-yükseklik oranını koruyarak orantılı olarak yeniden boyutlandırılacaktır.
+
+### Bunu görsellerin yanı sıra diğer şekillere de uygulayabilir miyim?
+Kesinlikle! En boy oranı kilitleme özelliği dikdörtgenler, daireler ve daha fazlası dahil olmak üzere herhangi bir şekle uygulanabilir.
+
+### Aspose.Words for .NET, .NET Core ile uyumlu mu?
+Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core'u destekler.
+
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+ Kapsamlı belgeler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

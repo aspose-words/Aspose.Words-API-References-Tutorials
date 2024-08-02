@@ -12,9 +12,9 @@ url: /ko/net/split-document/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [제목 HTML로](./by-headings-html/) | Aspose.Words for .NET의 By Heading HTML 기능에 대한 C# 소스 코드를 설명하는 단계별 가이드 |
-| [섹션별 HTML](./by-sections-html/) | 전체 코드 예제와 함께 .NET용 Aspose.Words를 사용하여 Word 문서를 HTML 섹션별로 분할하는 방법을 알아보세요. |
-| [섹션별](./by-sections/) | 전체 코드 예제와 함께 .NET용 Aspose.Words를 사용하여 Word 문서를 별도의 섹션으로 분할하는 방법을 알아보세요. |
-| [페이지 단위](./page-by-page/) | .NET용 Aspose.Words 페이지별 페이지 기능의 C# 소스 코드를 설명하는 단계별 가이드 |
+| [제목 HTML로 Word 문서 분할](./by-headings-html/) | .NET용 Aspose.Words를 사용하여 제목을 HTML로 나누어 Word 문서를 분할하는 방법을 알아보세요. 자세한 단계별 가이드를 따르세요. |
+| [섹션 HTML로 Word 문서 분할](./by-sections-html/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서를 섹션별로 HTML로 분할하는 방법을 알아보세요. |
+| [섹션별로 Word 문서 분할](./by-sections/) | .NET용 Aspose.Words를 사용하여 Word 문서를 섹션별로 분할하는 방법을 알아보세요. 효율적인 문서 관리를 위한 자세한 단계별 가이드를 따르세요. |
+| [Word 문서를 페이지별로 분할](./page-by-page/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서를 페이지별로 분할하는 방법을 알아보세요. 대용량 문서를 효율적으로 관리하는 데 적합합니다. |
 | [문서 병합](./merge-documents/) | .NET용 Aspose.Words의 문서 병합 기능에 대한 C# 소스 코드를 설명하는 단계별 가이드 |
-| [페이지 범위별](./by-page-range/) | Aspose.Words for .NET 단계별 가이드를 사용하여 Word 문서에서 페이지 범위별로 쉽게 추출할 수 있습니다. |
+| [페이지 범위별로 Word 문서 분할](./by-page-range/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 페이지 범위별로 Word 문서를 분할하는 방법을 알아보세요. 개발자에게 적합합니다. |

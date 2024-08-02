@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/determining-document-format/
 
 Java에서 문서 처리 작업을 수행할 때 처리 중인 파일의 형식을 결정하는 것이 중요합니다. Aspose.Words for Java는 문서 형식을 식별하는 강력한 기능을 제공하며 그 과정을 안내해 드립니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
@@ -22,7 +22,7 @@ Java에서 문서 처리 작업을 수행할 때 처리 중인 파일의 형식�
 
 ## 1단계: 디렉터리 설정
 
-먼저, 파일을 효과적으로 정리하는 데 필요한 디렉토리를 설정해야 합니다. 다양한 문서 유형에 대한 디렉토리를 생성하겠습니다.
+먼저, 파일을 효과적으로 정리하는 데 필요한 디렉터리를 설정해야 합니다. 다양한 문서 유형에 대한 디렉토리를 생성하겠습니다.
 
 ```java
 File supportedDir = new File("Your Directory Path" + "Supported");

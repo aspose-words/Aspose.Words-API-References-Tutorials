@@ -2,82 +2,111 @@
 title: Rozbalte Formátování na buňky a řádek ze stylu
 linktitle: Rozbalte Formátování na buňky a řádek ze stylu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce rozšířením formátování na buňky a řádky ze stylu tabulky pomocí Aspose.Words for .NET.
+description: Naučte se, jak rozšířit formátování buněk a řádků ze stylů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Včetně průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme krok za krokem procesem rozšíření formátování na buňky a řádky ze stylu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak použít formátování stylu tabulky na konkrétní buňky a řádky v dokumentech aplikace Word pomocí Aspose.Words for .NET.
+Přistihli jste se někdy, že potřebujete použít konzistentní styl napříč tabulkami v dokumentech aplikace Word? Ruční úprava každé buňky může být zdlouhavá a náchylná k chybám. To je místo, kde se Aspose.Words for .NET hodí. Tento výukový program vás provede procesem rozšíření formátování na buňky a řádky ze stylu tabulky a zajistí, že vaše dokumenty budou vypadat uhlazeně a profesionálně bez dalších potíží.
 
+## Předpoklady
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Zde se nachází váš dokument aplikace Word. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+Než se pustíme do podrobností, ujistěte se, že máte na svém místě následující:
+
+-  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+- Visual Studio: Bude fungovat jakákoli nejnovější verze.
+- Základní znalost C#: Znalost programování v C# je nezbytná.
+- Ukázkový dokument: Připravte si dokument aplikace Word s tabulkou, nebo můžete použít ten uvedený v příkladu kódu.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. To zajistí, že všechny požadované třídy a metody budou dostupné pro použití v našem kódu.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Krok 2: Načtěte existující dokument
- Dále musíte načíst existující dokument aplikace Word do instance souboru`Document` třída.
+Nyní si tento proces rozdělíme do jednoduchých, snadno pochopitelných kroků.
+
+## Krok 1: Vložte svůj dokument
+
+V tomto kroku načteme dokument aplikace Word, který obsahuje tabulku, kterou chcete formátovat. 
 
 ```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Krok 3: Přejděte do první buňky první tabulky
- Chcete-li začít, musíme přejít do první buňky první tabulky v dokumentu. Používáme`GetChild()`a`FirstRow.FirstCell` metody pro získání odkazu na první buňku.
+## Krok 2: Přístup k tabulce
+
+Dále potřebujeme přistupovat k první tabulce v dokumentu. Tato tabulka bude těžištěm našich operací formátování.
 
 ```csharp
-Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
+// Získejte první tabulku v dokumentu.
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Krok 3: Načtěte první buňku
+
+Nyní načteme první buňku prvního řádku v tabulce. To nám pomůže ukázat, jak se změní formátování buňky při rozbalení stylů.
+
+```csharp
+// Získejte první buňku prvního řádku v tabulce.
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-## Krok 4: Zobrazit počáteční formátování buňky
-Před Rozbalením stylů tabulky zobrazíme aktuální barvu pozadí buňky. Toto by mělo být prázdné, protože aktuální formátování je uloženo ve stylu tabulky.
+## Krok 4: Zkontrolujte počáteční stínování buněk
+
+Než použijeme jakékoli formátování, zkontrolujeme a vytiskneme počáteční barvu stínování buňky. To nám poskytne základní linii, se kterou budeme po rozšíření stylu porovnávat.
 
 ```csharp
+// Vytiskněte počáteční barvu stínování buňky.
 Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
-Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
+Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 ```
 
-## Krok 5: Rozbalte Styly tabulek na Přímé formátování
- Nyní rozšíříme styly tabulek na přímé formátování pomocí dokumentu`ExpandTableStylesToDirectFormatting()` metoda.
+## Krok 5: Rozbalte styly tabulek
+
+ Tady se děje kouzlo. Zavoláme na`ExpandTableStylesToDirectFormatting` metoda pro použití stylů tabulky přímo na buňky.
 
 ```csharp
+// Rozbalte styly tabulky na přímé formátování.
 doc.ExpandTableStylesToDirectFormatting();
 ```
 
-## Krok 6: Zobrazte formátování buněk po rozšíření stylu
-Nyní zobrazíme barvu pozadí buňky po rozbalení stylů tabulky. Ze stylu tabulky by měla být použita modrá barva pozadí.
+## Krok 6: Zkontrolujte stínování konečné buňky
+
+Nakonec zkontrolujeme a vytiskneme barvu stínování buňky po rozbalení stylů. Měli byste vidět aktualizované formátování použité ze stylu tabulky.
 
 ```csharp
+// Po rozšíření stylu vytiskněte barvu stínování buněk.
 Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
-Console.WriteLine("
-
-Shading the cell after style expansion: " + cellShadingAfter);
-```
-
-### Ukázkový zdrojový kód pro rozšíření formátování na buňky a řádky ze stylu pomocí Aspose.Words for .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	// Získejte první buňku první tabulky v dokumentu.
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Cell firstCell = table.FirstRow.FirstCell;
-	// Nejprve vytiskněte barvu stínování buňky.
-	// Toto by mělo být prázdné, protože aktuální stínování je uloženo ve stylu tabulky.
-	Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
-	Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
-	doc.ExpandTableStylesToDirectFormatting();
-	// Nyní vytiskněte stínování buněk po rozbalení stylů tabulky.
-	// Ze stylu tabulky by měla být použita modrá barva pozadí.
-	Color cellShadingAfter = firstCell.CellFormat.Shading.BackgroundPatternColor;
-	Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
+Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak rozšířit formátování na buňky a řádky ze stylu tabulky pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno použít formátování stylu tabulky na konkrétní buňky a řádky v dokumentech aplikace Word. Aspose.Words nabízí výkonné a flexibilní API pro manipulaci a formátování tabulek ve vašich dokumentech. S těmito znalostmi můžete dále upravovat rozvržení a prezentaci dokumentů aplikace Word.
+
+A tady to máte! Pomocí těchto kroků můžete snadno rozšířit formátování buněk a řádků ze stylů v dokumentech aplikace Word pomocí Aspose.Words for .NET. To nejen šetří čas, ale také zajišťuje konzistenci mezi vašimi dokumenty. Šťastné kódování!
+
+## FAQ
+
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonné API, které umožňuje vývojářům vytvářet, upravovat, převádět a manipulovat s dokumenty Wordu programově.
+
+### Proč bych potřeboval rozšířit formátování ze stylů?
+Rozšíření formátování ze stylů zajišťuje, že se styl použije přímo na buňky, což usnadňuje údržbu a aktualizaci dokumentu.
+
+### Mohu tyto kroky použít na více tabulek v dokumentu?
+Absolutně! Můžete procházet všemi tabulkami v dokumentu a aplikovat stejné kroky na každou z nich.
+
+### Existuje způsob, jak vrátit rozšířené styly?
+Jakmile jsou styly rozbaleny, aplikují se přímo na buňky. Chcete-li se vrátit, budete muset znovu načíst dokument nebo znovu použít styly ručně.
+
+### Funguje tato metoda se všemi verzemi Aspose.Words pro .NET?
+ Ano,`ExpandTableStylesToDirectFormatting` metoda je k dispozici v posledních verzích Aspose.Words pro .NET. Vždy zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro nejnovější aktualizace.

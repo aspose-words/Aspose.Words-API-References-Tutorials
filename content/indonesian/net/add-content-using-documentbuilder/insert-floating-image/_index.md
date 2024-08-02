@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Dengan prasyarat dan namespace ini, kami siap memulai tutorial kami.
+Dengan prasyarat dan namespace ini, kita siap memulai tutorial kita.
 
 Mari kita uraikan proses memasukkan gambar mengambang ke dalam dokumen Word menjadi langkah-langkah yang dapat dikelola. Setiap langkah akan dijelaskan secara rinci untuk memastikan Anda dapat mengikutinya tanpa hambatan.
 
@@ -38,7 +38,7 @@ Mari kita uraikan proses memasukkan gambar mengambang ke dalam dokumen Word menj
 Pertama, buat proyek C# baru di Visual Studio. Anda dapat memilih Aplikasi Konsol untuk kesederhanaan.
 
 1. Buka Visual Studio dan buat proyek baru.
-2. Pilih "Aplikasi Konsol (.NET Core)" dan klik "Berikutnya".
+2. Pilih "Aplikasi Konsol (.NET Core)" dan klik "Berikutnya."
 3. Beri nama proyek Anda dan pilih lokasi untuk menyimpannya. Klik "Buat."
 4. Instal Aspose.Words untuk .NET melalui NuGet Package Manager. Klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet," dan cari "Aspose.Words." Instal versi terbaru.
 

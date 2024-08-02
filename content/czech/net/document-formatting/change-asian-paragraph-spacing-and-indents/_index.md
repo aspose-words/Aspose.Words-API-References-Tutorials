@@ -61,7 +61,7 @@ Nyní nastavíme odsazení levého, pravého a prvního řádku pomocí znakový
 ```csharp
 format.CharacterUnitLeftIndent = 10;  // ParagrafFormat.LeftIndent bude aktualizován
 format.CharacterUnitRightIndent = 10; // OdstavecFormat.RightIndent bude aktualizován
-format.CharacterUnitFirstLineIndent = 20;  // ParagrafFormat.FirstLineIndent bude aktualizován
+format.CharacterUnitFirstLineIndent = 20;  // OdstavecFormat.FirstLineIndent bude aktualizován
 ```
 
 Tyto řádky kódu nastavují levé odsazení, pravé odsazení a odsazení prvního řádku na 10, 10 a 20 znaků. Díky tomu text vypadá úhledně a strukturovaně.

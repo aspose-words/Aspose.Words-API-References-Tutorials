@@ -16,7 +16,7 @@ Les révisions de documents impliquent le suivi des modifications apportées à 
 
 ## Configuration d'Aspose.Words pour Python
 
- Avant de commencer, assurez-vous que Aspose.Words for Python est installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/python/). Une fois installé, vous pouvez importer les modules nécessaires dans votre script Python pour commencer.
+ Avant de commencer, assurez-vous que Aspose.Words pour Python est installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/python/). Une fois installé, vous pouvez importer les modules nécessaires dans votre script Python pour commencer.
 
 ```python
 import asposewords

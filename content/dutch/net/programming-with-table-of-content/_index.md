@@ -16,5 +16,5 @@ Of u nu een beginner of een ervaren ontwikkelaar bent, deze tutorials helpen u d
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Wijzig de Toc-stijl in een Word-document](./change-style-of-toc-level/) | Leer hoe u eenvoudig de stijl van een inhoudsopgaveniveau in een Word-document kunt wijzigen met Aspose.Words voor .NET. |
-| [Wijzig de Toc-tabstops in een Word-document](./change-toc-tab-stops/) | Leer hoe u de tabbladen met de inhoudsopgave in een Word-document kunt wijzigen met Aspose.Words voor .NET. |
+| [Wijzig de Toc-stijl in een Word-document](./change-style-of-toc-level/) | Leer met deze stapsgewijze handleiding hoe u de TOC-stijl in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Pas uw inhoudsopgave moeiteloos aan. |
+| [Wijzig de Toc-tabstops in een Word-document](./change-toc-tab-stops/) | Leer hoe u de TOC-tabstops in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Met deze stapsgewijze handleiding kunt u een professioneel ogende inhoudsopgave maken. |

@@ -17,7 +17,7 @@ Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
 
 1.  Aspose.Words para .NET: si aún no lo ha hecho, descargue la biblioteca desde[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: puede utilizar Visual Studio o cualquier otro IDE compatible con .NET.
-3. Conocimientos básicos de C#: este tutorial asume que tienes conocimientos básicos de programación en C#.
+3. Conocimientos básicos de C#: este tutorial asume que tiene conocimientos básicos de programación en C#.
 4. Dos documentos de Word: asegúrese de tener dos documentos de Word listos para fusionar.
 
 ## Importar espacios de nombres

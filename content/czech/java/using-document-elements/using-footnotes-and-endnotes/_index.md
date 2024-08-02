@@ -2,7 +2,7 @@
 title: Použití poznámek pod čarou a vysvětlivky v Aspose.Words pro Java
 linktitle: Používání poznámek pod čarou a vysvětlivky
 second_title: Aspose.Words Java Document Processing API
-description: Naučte se efektivně používat poznámky pod čarou a vysvětlivky v Aspose.Words for Java. Vylepšete své dovednosti v oblasti formátování dokumentů ještě dnes!
+description: Naučte se efektivně používat poznámky pod čarou a vysvětlivky v Aspose.Words pro Java. Vylepšete své dovednosti v oblasti formátování dokumentů ještě dnes!
 type: docs
 weight: 13
 url: /cs/java/using-document-elements/using-footnotes-and-endnotes/
@@ -49,7 +49,7 @@ public void setFootnoteAndEndNotePosition() throws Exception {
 }
 ```
 
-## 5. Přidání vysvětlujících poznámek do vašeho dokumentu
+## 5. Přidání vysvětlivek do vašeho dokumentu
 
 Přidání vysvětlivky do dokumentu je jednoduché. Zde je příklad:
 ```java

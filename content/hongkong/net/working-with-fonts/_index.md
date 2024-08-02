@@ -18,7 +18,7 @@ url: /zh-hant/net/working-with-fonts/
 | 標題 | 描述 |
 | --- | --- |
 | [字體格式](./font-formatting/) | 在本教學中，了解如何使用 Aspose.Words for .NET 設定 Word 文件中的字體格式。 |
-| [取得字體行距](./get-font-line-spacing/) | 在本教學中，了解如何使用 Aspose.Words for .NET 取得 Word 文件中的字體行距。 |
+| [取得字體行距](./get-font-line-spacing/) | 在本教學中，了解如何使用 Aspose.Words for .NET 取得 Word 文件中的字體行間距。 |
 | [檢查DrawingML文字效果](./check-drawingml-text-effect/) | 在本教學中，了解如何使用 Aspose.Words for .NET 檢查 Word 文件中的 DrawingML 文字效果。 |
 | [設定字體格式](./set-font-formatting/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定字體格式並建立有吸引力的文件。 |
 | [設定字體強調標記](./set-font-emphasis-mark/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定字體強調樣式。 |

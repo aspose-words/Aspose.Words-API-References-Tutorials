@@ -11,7 +11,7 @@ url: /ko/net/add-content-using-documentbuilder/build-table/
 
 안녕하세요! 프로그래밍 방식으로 Word 문서에 표를 만들려고 하시나요? 글쎄, 당신은 바로 이곳에 오셨습니다! 오늘은 Aspose.Words for .NET의 마법 같은 세계에 대해 알아 보겠습니다. 이 강력한 라이브러리를 사용하면 전문가처럼 Word 문서를 조작할 수 있습니다. 당신이 마법사이고 Aspose.Words가 당신의 지팡이라고 상상해 보십시오. 손목을 가볍게 움직여(또는 코드 한 줄) 문서를 생성, 편집 및 서식 지정할 수 있습니다. 이 튜토리얼에서는 Word 문서에서 표를 작성하는 데 중점을 둘 것입니다. 이제 코딩 모자를 잡고 시작해 보세요!
 
-## 전제조건
+## 전제 조건
 
 테이블 만들기 모험을 시작하기 전에 모든 오리가 일렬로 있는지 확인합시다. 필요한 것은 다음과 같습니다.
 
@@ -19,7 +19,7 @@ url: /ko/net/add-content-using-documentbuilder/build-table/
 - .NET 프레임워크(4.0 이상)
 - .NET 라이브러리용 Aspose.Words
 
- 아직 Aspose.Words가 없다면 쉽게 할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) . 다음으로 시작할 수도 있습니다.[무료 시험판](https://releases.aspose.com/) 물을 테스트하고 싶다면. 뛰어들 준비가 된 사람들은 다음을 수행할 수 있습니다.[라이센스를 구입](https://purchase.aspose.com/buy) 또는 평가하는 데 시간이 더 필요한 경우[임시면허](https://purchase.aspose.com/temporary-license/).
+ 아직 Aspose.Words가 없다면 쉽게 할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) . 다음으로 시작할 수도 있습니다.[무료 시험판](https://releases.aspose.com/) 물을 테스트하고 싶다면. 뛰어들 준비가 된 사람들은 다음을 수행할 수 있습니다.[라이센스를 구입](https://purchase.aspose.com/buy) 또는 평가하는 데 시간이 더 필요한 경우[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 ## 네임스페이스 가져오기
 
@@ -128,7 +128,7 @@ Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 작업하�
  당신은 할 수 있습니다[여기에서 .NET용 Aspose.Words를 다운로드하세요.](https://releases.aspose.com/words/net/). 개발 환경에서 설정하려면 제공된 설치 지침을 따르세요.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- Aspose.Words는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 기능을 테스트할 수 있습니다. 장기간 사용하려면 라이센스를 구입하거나[임시면허](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 기능을 테스트할 수 있습니다. 장기간 사용하려면 라이센스를 구입하거나[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words의 다른 기능은 무엇입니까?
 Aspose.Words를 사용하면 테이블 생성 외에도 텍스트, 이미지, 스타일 및 기타 여러 문서 요소로 작업할 수 있습니다. DOCX, PDF, HTML 등 다양한 문서 형식을 지원합니다.

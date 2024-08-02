@@ -9,7 +9,7 @@ url: /cs/net/programming-with-document-properties/enumerate-properties/
 ---
 ## Úvod
 
-Chcete pracovat s dokumenty Wordu programově? Aspose.Words for .NET je výkonný nástroj, který vám může pomoci dosáhnout právě toho. Dnes vás provedu tím, jak vytvořit výčet vlastností dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už jste začátečník nebo máte nějaké zkušenosti, tento průvodce to krok za krokem rozebere konverzačním a snadno pochopitelným způsobem.
+Chcete pracovat s dokumenty Wordu programově? Aspose.Words for .NET je výkonný nástroj, který vám může pomoci dosáhnout právě toho. Dnes vás provedu tím, jak vytvořit výčet vlastností dokumentu aplikace Word pomocí Aspose.Words for .NET. Bez ohledu na to, zda jste začátečník nebo máte nějaké zkušenosti, tento průvodce to krok za krokem rozebere konverzačním a snadno pochopitelným způsobem.
 
 ## Předpoklady
 

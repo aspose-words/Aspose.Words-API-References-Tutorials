@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 ## 结论
 
-就这样！您已成功使用 Aspose.Words for .NET 将 Word 文档的特定页面转换为具有自定义设置的 JPEG 图像。此过程可以根据各种需求进行定制，无论您是为网站准备图像、创建文档预览还是其他。
+就这样！您已使用 Aspose.Words for .NET 成功将 Word 文档的特定页面转换为具有自定义设置的 JPEG 图像。此过程可以根据各种需求进行定制，无论您是为网站准备图像、创建文档预览还是其他。
 
 ## 常见问题解答
 

@@ -106,7 +106,7 @@ Dalam panduan ini, kami telah menjelajahi proses menyempurnakan konten visual de
 
 ### Bagaimana cara menambahkan batas ke kotak teks?
 
- Anda dapat menambahkan batas ke kotak teks menggunakan`textbox.border` properti dan menyesuaikan penampilannya.
+ Anda dapat menambahkan batas ke kotak teks menggunakan`textbox.border`properti dan menyesuaikan penampilannya.
 
 ### Bisakah saya menyematkan hyperlink di dalam kotak teks?
 

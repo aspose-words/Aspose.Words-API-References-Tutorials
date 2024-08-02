@@ -16,4 +16,4 @@ Dengan mengikuti tutorial ini, Anda akan dapat memanfaatkan sepenuhnya kemampuan
 ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Menggunakan Panel Tugas Ekstensi Web](./using-web-extension-task-panes/) | Panduan langkah demi langkah untuk menggunakan Panel Tugas Ekstensi Web dengan Aspose.Words untuk .NET. |
+| [Menggunakan Panel Tugas Ekstensi Web](./using-web-extension-task-panes/) | Pelajari cara menambahkan dan mengonfigurasi Panel Tugas Ekstensi Web di dokumen Word menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang mendetail ini. |

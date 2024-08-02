@@ -11,7 +11,7 @@ url: /ko/net/programming-with-htmlloadoptions/preferred-control-type/
 
 .NET용 Aspose.Words에서 HTML 로드 옵션을 사용하는 방법에 대한 흥미로운 튜토리얼을 살펴보겠습니다. 특히 Word 문서에 콤보 상자 양식 필드를 삽입할 때 선호하는 컨트롤 유형을 설정하는 데 중점을 두고 있습니다. 이 단계별 가이드는 Aspose.Words for .NET을 사용하여 Word 문서 내에서 HTML 콘텐츠를 효과적으로 조작하고 렌더링하는 방법을 이해하는 데 도움이 됩니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 준비해야 할 몇 가지 사항이 있습니다.
 
@@ -110,4 +110,4 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
  자세한 문서와 예제는 다음에서 찾을 수 있습니다.[.NET 문서 페이지용 Aspose.Words](https://reference.aspose.com/words/net/).
 
 ### .NET용 Aspose.Words에 대한 무료 평가판이 있습니까?
- 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).
+ 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/).

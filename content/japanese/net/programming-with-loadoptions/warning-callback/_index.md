@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## ステップ4: 警告コールバッククラスを実装する
 
-を実装するクラスを作成します`IWarningCallback`インターフェース。このクラスは、ドキュメント処理中に警告がどのように処理されるかを定義します。
+を実装するクラスを作成します。`IWarningCallback`インターフェース。このクラスは、ドキュメント処理中に警告がどのように処理されるかを定義します。
 
 ```csharp
 private class DocumentLoadingWarningCallback : IWarningCallback

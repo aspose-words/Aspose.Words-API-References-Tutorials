@@ -16,7 +16,7 @@ En innehållsförteckning ger en ögonblicksbild av ett dokuments struktur, så 
 
  Innan vi börjar, se till att du har Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/). Se dessutom till att du har ett exempel på Word-dokument som du vill förbättra med en innehållsförteckning.
 
-## Ladda ett dokument
+## Laddar ett dokument
 
 ```python
 import asposewords

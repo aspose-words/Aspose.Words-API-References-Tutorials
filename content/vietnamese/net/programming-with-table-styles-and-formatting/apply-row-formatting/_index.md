@@ -2,111 +2,110 @@
 title: Áp dụng định dạng hàng
 linktitle: Áp dụng định dạng hàng
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước áp dụng định dạng hàng cho bảng bằng Aspose.Words for .NET.
+description: Tìm hiểu cách áp dụng định dạng hàng trong tài liệu Word bằng Aspose.Words cho .NET. Thực hiện theo hướng dẫn từng bước của chúng tôi để được hướng dẫn chi tiết.
 type: docs
 weight: 10
 url: /vi/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để áp dụng định dạng hàng cho bảng bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Đến cuối hướng dẫn này, bạn sẽ hiểu rõ về cách định dạng các hàng trong bảng trong tài liệu Word bằng Aspose.Words cho .NET.
+Nếu bạn đang muốn cải thiện tài liệu Word của mình bằng một số định dạng hàng ưa thích thì bạn đã đến đúng nơi! Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách áp dụng định dạng hàng bằng Aspose.Words cho .NET. Chúng tôi sẽ chia nhỏ từng bước để bạn dễ dàng theo dõi và áp dụng vào dự án của mình.
 
-## Bước 1: Xác định thư mục tài liệu
-Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là vị trí bạn muốn lưu tài liệu Word đã chỉnh sửa của mình. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.
+## Điều kiện tiên quyết
+
+Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ cần thiết để bắt đầu:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu chưa, bạn có thể tải xuống từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Môi trường phát triển AC# như Visual Studio.
+3. Kiến thức cơ bản về C#: Cần phải làm quen với lập trình C#.
+4. Thư mục tài liệu: Thư mục nơi bạn sẽ lưu tài liệu của mình.
+
+## Nhập không gian tên
+
+Để bắt đầu, bạn cần nhập các vùng tên cần thiết trong dự án C# của mình:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Tạo tài liệu mới và trình tạo tài liệu
- Tiếp theo, bạn cần tạo một phiên bản mới của`Document` lớp và một hàm tạo tài liệu cho tài liệu đó.
+Bây giờ, chúng ta hãy thực hiện từng bước quy trình.
+
+## Bước 1: Tạo một tài liệu mới
+
+Đầu tiên chúng ta cần tạo một tài liệu mới. Đây sẽ là canvas nơi chúng ta sẽ thêm bảng và áp dụng định dạng.
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 3: Bắt đầu một bảng mới
- Để áp dụng định dạng hàng, trước tiên chúng ta phải bắt đầu một bảng mới bằng cách sử dụng`StartTable()` phương thức của hàm tạo tài liệu.
+## Bước 2: Bắt đầu một bảng mới
+
+ Tiếp theo, chúng ta sẽ bắt đầu một bảng mới bằng cách sử dụng`DocumentBuilder`sự vật. Đây là nơi phép thuật xảy ra.
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## Bước 4: Chèn ô và chuyển sang định dạng hàng
-Bây giờ chúng ta có thể chèn một ô vào bảng và truy cập định dạng hàng cho ô đó bằng cách sử dụng trình tạo tài liệu`InsertCell()`Và`RowFormat` phương pháp.
+## Bước 3: Xác định định dạng hàng
+
+Ở đây, chúng ta sẽ xác định định dạng hàng. Điều này bao gồm việc thiết lập chiều cao và phần đệm của hàng.
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## Bước 5: Đặt chiều cao hàng
- Để thiết lập chiều cao của hàng, chúng ta sử dụng`Height`Và`HeightRule` thuộc tính của định dạng hàng. Trong ví dụ này, chúng tôi đặt chiều cao hàng là 100 điểm và sử dụng`Exactly` luật lệ.
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## Bước 6: Xác định định dạng bảng
- Một số thuộc tính định dạng có thể được đặt trên chính bảng và được áp dụng cho tất cả các hàng của bảng. Trong ví dụ này, chúng tôi đặt thuộc tính lề bảng bằng cách sử dụng`LeftPadding`, `RightPadding`, `TopPadding`Và`BottomPadding` của cải.
+## Bước 4: Chèn nội dung vào ô
+
+Hãy chèn một số nội dung vào hàng được định dạng đẹp mắt của chúng tôi. Nội dung này sẽ giới thiệu cách định dạng trông như thế nào.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## Bước 7: Thêm nội dung vào hàng
-Bây giờ chúng ta có thể
+## Bước 5: Kết thúc hàng và bảng
 
- Chúng ta sẽ thêm nội dung vào dòng bằng cách sử dụng các phương thức của hàm tạo tài liệu. Trong ví dụ này, chúng tôi sử dụng`Writeln()` phương pháp thêm văn bản vào dòng.
+Cuối cùng, chúng ta cần kết thúc hàng và bảng để hoàn thành cấu trúc của mình.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## Bước 8: Hoàn thiện dòng và bảng
- Khi chúng ta đã thêm nội dung vào hàng, chúng ta có thể kết thúc hàng bằng cách sử dụng`EndRow()` phương pháp và sau đó kết thúc bảng bằng cách sử dụng`EndTable()` phương pháp.
+## Bước 6: Lưu tài liệu
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## Bước 9: Lưu tài liệu đã sửa đổi
-Cuối cùng, chúng tôi lưu tài liệu đã sửa đổi vào một tệp. Bạn có thể chọn tên và vị trí thích hợp cho tài liệu đầu ra.
+Bây giờ bảng của chúng ta đã sẵn sàng, đã đến lúc lưu tài liệu. Chỉ định đường dẫn đến thư mục tài liệu của bạn và lưu tệp.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-Xin chúc mừng! Bây giờ bạn đã áp dụng định dạng hàng cho bảng bằng Aspose.Words for .NET.
-
-### Mã nguồn mẫu cho Áp dụng định dạng hàng bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Các thuộc tính định dạng này được đặt trên bảng và được áp dụng cho tất cả các hàng trong bảng.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách áp dụng định dạng hàng cho bảng bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này, bạn có thể dễ dàng tích hợp chức năng này vào các dự án C# của mình. Thao tác định dạng hàng trong bảng là một khía cạnh thiết yếu của quá trình xử lý tài liệu và Aspose.Words cung cấp API mạnh mẽ và linh hoạt để đạt được điều này. Với kiến thức này, bạn có thể cải thiện cách trình bày trực quan các tài liệu Word của mình và đáp ứng các yêu cầu cụ thể.
+
+Và bạn có nó rồi đấy! Bạn đã áp dụng thành công định dạng hàng cho bảng trong tài liệu Word bằng Aspose.Words for .NET. Kỹ thuật đơn giản nhưng mạnh mẽ này có thể nâng cao đáng kể khả năng đọc và tính thẩm mỹ cho tài liệu của bạn.
+
+## Câu hỏi thường gặp
+
+### Tôi có thể áp dụng định dạng khác cho từng hàng riêng lẻ không?  
+ Có, bạn có thể tùy chỉnh từng hàng riêng lẻ bằng cách đặt các thuộc tính khác nhau cho`RowFormat`.
+
+### Làm cách nào để điều chỉnh độ rộng của cột?  
+ Bạn có thể thiết lập độ rộng của cột bằng cách sử dụng`CellFormat.Width` tài sản.
+
+### Có thể hợp nhất các ô trong Aspose.Words cho .NET không?  
+ Có, bạn có thể hợp nhất các ô bằng cách sử dụng`CellMerge` tài sản của`CellFormat`.
+
+### Tôi có thể thêm đường viền vào các hàng không?  
+ Tuyệt đối! Bạn có thể thêm đường viền vào hàng bằng cách đặt`Borders` tài sản của`RowFormat`.
+
+### Làm cách nào để áp dụng định dạng có điều kiện cho hàng?  
+Bạn có thể sử dụng logic có điều kiện trong mã của mình để áp dụng các định dạng khác nhau dựa trên các điều kiện cụ thể.

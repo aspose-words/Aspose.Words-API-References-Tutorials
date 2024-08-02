@@ -2,99 +2,112 @@
 title: Vložit pole Zahrnout text bez Tvůrce dokumentů
 linktitle: Vložit FieldIncludeText bez Tvůrce dokumentů
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit pole FieldIncludeText do dokumentů aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak vložit FieldIncludeText bez použití DocumentBuilderu v Aspose.Words pro .NET, pomocí našeho podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## Úvod
 
-Zde je podrobný návod k vysvětlení zdrojového kódu C# níže, který používá funkci "Vložit pole FieldIncludeText" Aspose.Words for .NET. Ujistěte se, že pečlivě dodržujete každý krok, abyste dosáhli požadovaných výsledků.
+Ve světě automatizace a manipulace s dokumenty představuje Aspose.Words for .NET výkonný nástroj. Dnes se ponoříme do podrobného průvodce, jak vložit FieldIncludeText bez použití DocumentBuilder. Tento tutoriál vás provede procesem krok za krokem a zajistí, že porozumíte každé části kódu a jejímu účelu.
 
-## Krok 1: Nastavení adresáře dokumentů
+## Předpoklady
 
-V poskytnutém kódu musíte zadat adresář vašich dokumentů. Nahraďte hodnotu „VÁŠ ADRESÁŘ DOKUMENTŮ“ příslušnou cestou k adresáři vašich dokumentů.
+Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí .NET: Jakékoli IDE kompatibilní s .NET, jako je Visual Studio.
+3. Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
 
-## Krok 2: Vytvoření dokumentu a odstavce
+## Importovat jmenné prostory
 
-Začneme vytvořením nového dokumentu a inicializací odstavce.
-
-```csharp
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-```
-
-## Krok 3: Vložení pole FieldIncludeText
-
- Používáme`AppendField()` metoda pro vložení pole FieldIncludeText do odstavce.
+Nejprve musíme importovat potřebné jmenné prostory. Tyto obory názvů poskytují přístup ke třídám a metodám potřebným pro manipulaci s dokumenty aplikace Word.
 
 ```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Poté nakonfigurujeme vlastnosti pole FieldIncludeText zadáním názvu záložky a názvu zdrojového souboru.
+Nyní si příklad rozdělíme do několika kroků. Každý krok bude podrobně vysvětlen, aby byla zajištěna srozumitelnost.
 
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
+## Krok 1: Nastavte cestu k adresáři
 
-Dále přidáme odstavec do těla dokumentu.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
- Nakonec zavoláme`Update()` způsob aktualizace pole.
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### Příklad zdrojového kódu pro vložení pole FieldIncludeText s Aspose.Words for .NET
+Prvním krokem je definovat cestu k adresáři dokumentů. Zde budou uloženy a zpřístupněny vaše dokumenty aplikace Word.
 
 ```csharp
 // Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Krok 2: Vytvořte dokument a odstavec
+
+Dále vytvoříme nový dokument a odstavec v tomto dokumentu. Tento odstavec bude obsahovat pole FieldIncludeText.
+
+```csharp
 // Vytvořte dokument a odstavec.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
+```
 
+## Krok 3: Vložte pole FieldIncludeText
+
+Nyní do odstavce vložíme pole FieldIncludeText. Toto pole umožňuje vložit text z jiného dokumentu.
+
+```csharp
 // Vložte pole FieldIncludeText.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## Krok 4: Nastavte vlastnosti pole
+
+Musíme zadat vlastnosti pole FieldIncludeText. To zahrnuje nastavení názvu záložky a úplné cesty ke zdrojovému dokumentu.
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## Krok 5: Připojte odstavec k dokumentu
+
+nastaveným polem přidáme odstavec do těla první sekce dokumentu.
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## Krok 6: Aktualizujte pole
+
+Před uložením dokumentu musíme aktualizovat FieldIncludeText, abychom zajistili, že natáhne správný obsah ze zdrojového dokumentu.
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## Krok 7: Uložte dokument
+
+Nakonec dokument uložíme do zadaného adresáře.
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-V tomto příkladu jsme vytvořili nový dokument, inicializovali odstavec, vložili FieldIncludeTexten určující název záložky a název zdrojového souboru a uložili dokument se zadaným názvem souboru.
+## Závěr
 
-Tímto končí náš průvodce používáním funkce "Vložit FieldIncludeText" s Aspose.Words pro .NET.
+A tady to máte! Podle těchto kroků můžete snadno vložit FieldIncludeText bez použití DocumentBuilder v Aspose.Words for .NET. Tento přístup poskytuje efektivní způsob, jak zahrnout obsah z jednoho dokumentu do druhého, čímž se vaše úlohy automatizace dokumentů mnohem zjednoduší.
 
-### FAQ
+## FAQ
 
-#### Otázka: Jak mohu určit zdrojový soubor pro pole pro zahrnutí textu v Aspose.Words for .NET?
+### Co je Aspose.Words for .NET?  
+Aspose.Words for .NET je výkonná knihovna pro práci s dokumenty Wordu v aplikacích .NET. Umožňuje vytvářet, upravovat a převádět dokumenty programově.
 
- Odpověď: Chcete-li zadat zdrojový soubor pro pole pro zahrnutí textu v Aspose.Words pro .NET, můžete použít`FieldIncludeText.SourceFullName`vlastnost pro nastavení úplné cesty ke zdrojovému souboru. Ujistěte se, že je zdrojový soubor přístupný a obsahuje obsah, který chcete zahrnout do pole pro zahrnutí textu.
+### Proč používat FieldIncludeText?  
+FieldIncludeText je užitečný pro dynamické začleňování obsahu z jednoho dokumentu do druhého, což umožňuje modulárnější a udržitelnější dokumenty.
 
-#### Otázka: Mohu zahrnout text z makra do pole pro zahrnutí textu pomocí Aspose.Words for .NET?
+### Mohu použít tuto metodu k zahrnutí textu z jiných formátů souborů?  
+FieldIncludeText konkrétně pracuje s dokumenty aplikace Word. Pro jiné formáty budete možná potřebovat jiné metody nebo třídy poskytované Aspose.Words.
 
- Odpověď: Ano, pomocí Aspose.Words for .NET můžete do pole pro zahrnutí textu zahrnout text z makra. Můžete použít`FieldIncludeText.IncludeText` vlastnost k určení názvu makra, jehož obsah má být zahrnut do pole.
+### Je Aspose.Words for .NET kompatibilní s .NET Core?  
+Ano, Aspose.Words for .NET podporuje .NET Framework, .NET Core a .NET 5/6.
 
-#### Otázka: Ovlivňuje vložení textového pole bez tvůrce dokumentů strukturu dokumentu Word s Aspose.Words for .NET?
-
-Odpověď: Vložení textového pole bez tvůrce dokumentu přímo neovlivní strukturu dokumentu aplikace Word. Do obsahu dokumentu však přidá nový prvek pole. Strukturu dokumentu můžete upravovat přidáním, odstraněním nebo úpravou stávajících prvků podle vašich potřeb.
-
-#### Otázka: Mohu upravit vzhled pole pro zahrnutí textu v dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
-Odpověď: Pole pro zahrnutí textu přímo nepřizpůsobuje svůj vzhled v dokumentu aplikace Word. Můžete však formátovat zahrnutý text pomocí vlastností odstavce, vlastností písma a dalších objektů formátování dostupných v Aspose.Words for .NET.
+### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?  
+ Můžete získat bezplatnou zkušební verzi od[tady](https://releases.aspose.com/).

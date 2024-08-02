@@ -12,7 +12,7 @@ url: /ko/java/document-merging/document-splitting-extraction/
 
 이 포괄적인 가이드에서는 문서 작업을 위한 다목적 API인 Aspose.Words for Java의 강력한 기능을 살펴보겠습니다. 특히 문서 분할 및 추출의 흥미로운 세계를 탐구하여 이 기능이 문서 처리 작업을 어떻게 단순화할 수 있는지 보여드리겠습니다. 
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

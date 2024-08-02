@@ -137,7 +137,7 @@ def add_table_to_document():
 
 ### 1. 什麼是 Aspose.Words for Python，它如何幫助建立 Word 文件？
 
-Aspose.Words for Python 是一個功能強大的函式庫，它提供 API 來以程式設計方式與 Microsoft Word 文件進行互動。它允許 Python 開發人員創建、操作和生成 Word 文檔，使其成為自動化文檔生成過程的出色工具。
+Aspose.Words for Python 是一個功能強大的函式庫，它提供 API 來以程式設計方式與 Microsoft Word 文件進行互動。它允許 Python 開發人員創建、操作和生成 Word 文檔，使其成為自動化文檔生成流程的優秀工具。
 
 ### 2. 如何在我的 Python 環境中安裝 Aspose.Words for Python？
 

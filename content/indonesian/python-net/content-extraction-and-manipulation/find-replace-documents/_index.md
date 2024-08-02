@@ -18,7 +18,7 @@ Sebelum kita mendalami teknik lanjutannya, pastikan Anda memiliki prasyarat beri
 
 1.  Instalasi Python: Pastikan Python diinstal pada sistem Anda. Anda dapat mengunduhnya dari[Di Sini](https://www.python.org/downloads/).
 
-2.  Aspose.Words untuk Python: Anda harus menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/).
+2. Aspose.Words untuk Python: Anda harus menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/).
 
 3. Persiapan Dokumen: Siapkan dokumen Word tempat Anda ingin melakukan operasi pencarian dan penggantian.
 

@@ -2,7 +2,7 @@
 title: Akıllı Sanat Şeklini Algıla
 linktitle: Akıllı Sanat Şeklini Algıla
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
+description: Bu kapsamlı kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/detect-smart-art-shape/
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Bu adımda SmartArt içeren şekilleri filtrelemek ve saymak için LINQ kullanıyoruz.`GetChildNodes` yöntem tüm şekilleri alır ve`HasSmartArt`özelliği, bir şeklin SmartArt içerip içermediğini kontrol eder.
+ Bu adımda SmartArt içeren şekilleri filtrelemek ve saymak için LINQ kullanıyoruz.`GetChildNodes` yöntem tüm şekilleri alır ve`HasSmartArt` özelliği, bir şeklin SmartArt içerip içermediğini kontrol eder.
 
 ## Adım 4: Kodu Çalıştırma
 
@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## Çözüm
 
- İşte buyur! Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, SmartArt şekillerini algılamayı ve kodu çalıştırmayı kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
+İşte buyur! Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, SmartArt şekillerini algılamayı ve kodu çalıştırmayı kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
 
 ## SSS
 

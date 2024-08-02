@@ -135,7 +135,7 @@ doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2010);
 doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-## Munkavégzés SmartArt alakzatokkal
+## SmartArt alakzatokkal való munka
 
 ### SmartArt alakzatok észlelése
 

@@ -12,7 +12,7 @@ url: /ko/java/document-manipulation/using-web-extensions/
 
 이 튜토리얼에서는 Aspose.Words for Java의 웹 확장을 사용하여 문서 기능을 향상시키는 방법을 살펴보겠습니다. 웹 확장을 사용하면 웹 기반 콘텐츠와 애플리케이션을 문서에 직접 통합할 수 있습니다. 웹 확장 작업창을 문서에 추가하고, 해당 속성을 설정하고, 문서에 대한 정보를 검색하는 단계를 다룹니다.
 
-## 전제조건
+## 전제 조건
 
  시작하기 전에 프로젝트에 Aspose.Words for Java가 설정되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/java/).
 
@@ -59,7 +59,7 @@ taskPane.getWebExtension().getBindings().add(new WebExtensionBinding("UnnamedBin
 doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## 작업창 정보 검색
+## 작업 창 정보 검색
 
 문서의 작업창에 대한 정보를 검색하려면 작업창을 반복하고 해당 참조에 액세스하면 됩니다.
 

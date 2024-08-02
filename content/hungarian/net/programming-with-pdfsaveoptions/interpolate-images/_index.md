@@ -65,7 +65,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- A`InterpolateImages` tulajdonság be van állítva`true` annak biztosítása érdekében, hogy a PDF-ben lévő képek interpolálva legyenek, javítva azok minőségét.
+ A`InterpolateImages` tulajdonság értékre van állítva`true` annak biztosítása érdekében, hogy a PDF-ben lévő képek interpolálva legyenek, javítva azok minőségét.
 
 ## 4. lépés: Mentse el a dokumentumot PDF formátumban
 
@@ -85,7 +85,7 @@ Ha további részletekre van szüksége, vagy más funkciókat szeretne felfedez
 
 ## GYIK
 
-### Mi a képinterpoláció a PDF-ekben?
+### Mi az a képinterpoláció a PDF-ekben?
 
 A képinterpoláció egy olyan technika, amellyel javítható a képek minősége a meglévő pixelértékek becslésével, így azok simábbnak és tisztábbnak tűnnek.
 
@@ -101,6 +101,6 @@ Az Aspose.Words elsősorban a képinterpolációt támogatja PDF-ekhez. Egyéb f
 
  tudsz[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) Az Aspose.Words a képinterpoláció és egyéb funkciók teszteléséhez.
 
-### Hol kaphatok segítséget, ha problémákat tapasztalok?
+### Hol kaphatok segítséget, ha problémákba ütközöm?
 
  Segítségért keresse fel a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8)ahol segítséget kaphat a közösségtől és az Aspose szakértőitől.

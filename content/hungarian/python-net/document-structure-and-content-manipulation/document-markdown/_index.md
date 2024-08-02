@@ -12,7 +12,7 @@ mai digitális világban kulcsfontosságú a különböző technológiák zökke
 
 ## Az Aspose.Words for Python bemutatása
 
-Az Aspose.Words for Python egy sokoldalú könyvtár, amely lehetővé teszi a fejlesztők számára a Word dokumentumok programozott kezelését. A szolgáltatások széles skáláját kínálja a dokumentumok létrehozásához, szerkesztéséhez és formázásához, beleértve a Markdown formázás hozzáadásának lehetőségét is.
+Az Aspose.Words for Python egy sokoldalú könyvtár, amely lehetővé teszi a fejlesztők számára a Word dokumentumok programozott kezelését. A szolgáltatások széles skáláját kínálja a dokumentumok létrehozásához, szerkesztéséhez és formázásához, beleértve a Markdown formázás hozzáadásának lehetőségét.
 
 ## Környezetének beállítása
 
@@ -110,7 +110,7 @@ Teljesen! A Markdown szintaxis használatával képeket szúrhat be a dokumentum
 
 Igen, az Aspose.Words módszereket biztosít az oldalelrendezés és a margók igényeinek megfelelő beállítására.
 
-### Menthetem a dokumentumomat különböző formátumokban?
+### Elmenthetem a dokumentumomat különböző formátumokban?
 
 Igen, az Aspose.Words támogatja a dokumentumok mentését különféle formátumokban, például DOCX, PDF, HTML stb.
 

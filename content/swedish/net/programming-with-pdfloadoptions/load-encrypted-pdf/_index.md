@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Här skapar vi en ny`PdfSaveOptions` objekt och ställ in dess`EncryptionDetails` . Lösenordet`"Aspose"` används för att kryptera PDF-filen.
+ Här skapar vi en ny`PdfSaveOptions` objekt och ställ in dess`EncryptionDetails` . Lösenordet`"Aspose"` används för att kryptera PDF:en.
 
 ## Steg 4: Spara den krypterade PDF-filen
 

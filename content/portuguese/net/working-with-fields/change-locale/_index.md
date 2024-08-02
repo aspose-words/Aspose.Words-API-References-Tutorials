@@ -2,20 +2,41 @@
 title: Alterar localidade
 linktitle: Alterar localidade
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como alterar a localidade para formatação de data e número em documentos do Word usando Aspose.Words for .NET.
+description: Aprenda como alterar a localidade em documentos do Word usando Aspose.Words for .NET com este guia. Perfeito para lidar com clientes e projetos internacionais.
 type: docs
 weight: 10
 url: /pt/net/working-with-fields/change-locale/
 ---
+## Introdução
 
-Neste tutorial, iremos guiá-lo através do processo de alteração da localidade em documentos do Word usando Aspose.Words for .NET. Modificando a localidade, você pode controlar a formatação de datas e números durante operações de mala direta. Forneceremos a você o código-fonte C# necessário e instruções passo a passo para fazer isso.
+Trabalhar com documentos do Word geralmente exige um pouco de sutileza, especialmente ao lidar com diferentes locais e culturas. Neste tutorial, exploraremos como alterar a localidade de um documento do Word usando Aspose.Words for .NET. Esteja você criando documentos para um público global ou apenas precise mudar os formatos de data, este guia tem tudo para você.
 
 ## Pré-requisitos
-Antes de começarmos, certifique-se de ter os seguintes pré-requisitos:
-- Biblioteca Aspose.Words for .NET instalada em seu sistema.
 
-## Etapa 1: crie um documento e o DocumentBuilder
-Para começar, crie uma instância da classe Document e um objeto DocumentBuilder:
+Antes de mergulharmos no âmago da questão, vamos ter certeza de que temos tudo o que precisamos:
+
+-  Aspose.Words for .NET: você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+- Visual Studio: qualquer versão que ofereça suporte ao .NET framework.
+- Conhecimento básico de C#: A compreensão dos fundamentos de C# e .NET ajudará você a acompanhar.
+
+ Certifique-se de ter instalado o Aspose.Words for .NET. Caso contrário, você pode obter um teste gratuito[aqui](https://releases.aspose.com/) ou compre[aqui](https://purchase.aspose.com/buy).
+
+## Importar namespaces
+
+Antes de começarmos a codificar, precisamos importar os namespaces necessários. São como os ingredientes de uma receita, garantindo que tudo funcione perfeitamente.
+
+```csharp
+using System.Globalization;
+using System.Threading;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Alterar a localidade em um documento do Word é um processo simples. Vamos detalhar passo a passo.
+
+## Etapa 1: configure seu documento
+
+Primeiramente, vamos configurar nosso documento e construtor de documentos. É como configurar seu espaço de trabalho antes de começar a cozinhar.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,91 +44,73 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Etapa 2: inserir um campo
-A seguir, insira um campo de mesclagem no documento usando o método InsertField:
+## Etapa 2: inserir um campo de mesclagem
+
+Agora, inseriremos um campo de mesclagem para a data. É aqui que o local entrará em jogo.
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-No código acima, inserimos um campo de mesclagem denominado “Data” no documento.
+## Etapa 3: salvar a cultura atual
 
-## Etapa 3: alterar o local
-Para alterar o código do idioma para formatação de data e número, você pode modificar a cultura atual do thread. Neste exemplo, definiremos a localidade como alemão ("de-DE"):
+Antes de mudarmos o local, precisamos salvar a cultura atual. Pense nisso como marcar seu lugar antes de passar para outro capítulo.
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+```
+
+## Etapa 4: alterar o local
+
+A seguir, mudaremos a cultura atual do thread para alemão ("de-DE"). É como mudar as configurações de idioma do seu telefone.
+
+```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-No código acima, armazenamos a cultura atual e depois definimos a cultura do thread atual como alemão.
+## Etapa 5: executar mala direta
 
-## Etapa 4: realizar a mala direta
-Execute uma operação de mala direta e forneça o valor de data para o campo "Data":
+Agora, executamos a mala direta com a data atual. Isso aplicará a nova localidade ao formato de data.
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-Neste trecho de código, executamos a operação de mala direta e fornecemos a data atual como valor para o campo “Data”.
+## Passo 6: Restaurar a Cultura Original
 
-## Etapa 5: restaurar a localidade original
-Após a conclusão da mala direta, restaure a cultura original do thread:
+Depois de executar a mala direta, restauraremos a cultura original. É como voltar às configurações de idioma de sua preferência.
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-No código acima, restauramos a cultura original do thread.
+## Etapa 7: salve o documento
 
-## Etapa 6: salve o documento
-Salve o documento modificado em um arquivo usando o método Save da classe Document:
+Finalmente, salve o documento no diretório especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### Exemplo de código-fonte para alteração de localidade usando Aspose.Words para .NET
-Aqui está o código-fonte completo para alterar a localidade em documentos do Word usando Aspose.Words for .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField("MERGEFIELD Date");
-
-CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
-
-doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
-
-Thread.CurrentThread.CurrentCulture = currentCulture;
-
-doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
-```
+aí está! Você alterou com sucesso a localidade em seu documento do Word usando Aspose.Words for .NET.
 
 ## Conclusão
-Parabéns! Você aprendeu com sucesso como alterar a localidade em documentos do Word usando Aspose.Words for .NET. Seguindo o guia passo a passo e utilizando o código-fonte fornecido, agora você pode controlar a formatação de datas e números durante operações de mala direta. Personalize a localidade de acordo com seus requisitos para garantir uma formatação precisa e consistente em seus documentos.
 
-### Perguntas frequentes
+Alterar a localidade em documentos do Word pode ser extremamente útil, especialmente ao lidar com clientes ou projetos internacionais. Com Aspose.Words for .NET, essa tarefa se torna muito fácil. Siga estas etapas e você poderá mudar de localidade sem esforço.
 
-#### P: O Aspose.Words é compatível com diferentes versões do Microsoft Word?
+## Perguntas frequentes
 
-R: Sim, Aspose.Words é compatível com diferentes versões do Microsoft Word, incluindo Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 e Word 2019.
+### Posso alterar a localidade para qualquer idioma?
+Sim, Aspose.Words for .NET suporta a alteração da localidade para qualquer idioma suportado pelo .NET.
 
-#### P: O Aspose.Words oferece suporte a estruturas de campo complexas?
+### Isso afetará outras partes do meu documento?
+A alteração da localidade afetará principalmente os formatos de data e número. O restante texto permanecerá inalterado.
 
-R: Absolutamente! Aspose.Words oferece amplo suporte para estruturas de campos complexas, incluindo campos aninhados, cálculos e expressões condicionais. Você pode usar esta API poderosa para trabalhar com qualquer tipo de estrutura de campo.
+### Preciso de uma licença especial para usar o Aspose.Words for .NET?
+ Você pode começar com uma avaliação gratuita, mas para uso contínuo, você precisará adquirir uma licença[aqui](https://purchase.aspose.com/buy).
 
-#### P: O Aspose.Words oferece suporte a operações de atualização de campo?
+### Posso reverter para a localidade original se algo der errado?
+Sim, ao salvar a cultura original e restaurá-la posteriormente, você pode reverter para o local original.
 
-R: Sim, Aspose.Words permite que você atualize campos de acordo com uma programação. Você pode atualizar facilmente valores de campos, atualizar cálculos e realizar outras operações relacionadas a campos usando a API.
-
-#### P: É possível converter campos em texto simples usando Aspose.Words?
-
-R: Certamente! Aspose.Words fornece métodos para converter campos em texto simples. Isso pode ser útil quando você precisa extrair o conteúdo sem qualquer formatação ou funcionalidade relacionada ao campo.
-
-#### P: É possível gerar documentos Word com campos dinâmicos usando Aspose.Words?
-
-R: Absolutamente! Aspose.Words oferece funcionalidade robusta para gerar documentos Word com campos dinâmicos. Você pode criar modelos com campos predefinidos e preenchê-los com dados dinamicamente, fornecendo uma solução flexível e eficiente para geração de documentos.
+### Onde posso obter suporte se encontrar problemas?
+ Você pode obter suporte da comunidade Aspose[aqui](https://forum.aspose.com/c/words/8).

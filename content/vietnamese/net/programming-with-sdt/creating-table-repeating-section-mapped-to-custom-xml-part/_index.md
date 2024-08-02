@@ -7,42 +7,51 @@ type: docs
 weight: 10
 url: /vi/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
+## Giới thiệu
 
-Hướng dẫn này trình bày cách tạo bảng có phần lặp lại được ánh xạ tới Phần Xml tùy chỉnh trong tài liệu Word bằng Aspose.Words cho .NET. Phần lặp lại cho phép bạn thêm động các hàng dựa trên dữ liệu XML được lưu trữ trong Phần Xml tùy chỉnh.
+Trong hướng dẫn này, chúng ta sẽ tìm hiểu quy trình tạo bảng có phần lặp lại được ánh xạ tới phần XML tùy chỉnh bằng cách sử dụng Aspose.Words cho .NET. Điều này đặc biệt hữu ích để tạo tài liệu động dựa trên dữ liệu có cấu trúc.
 
 ## Điều kiện tiên quyết
-Để làm theo hướng dẫn này, bạn cần có những điều sau:
 
-- Đã cài đặt thư viện Aspose.Words cho .NET.
-- Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
+1.  Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải nó xuống từ[trang web giả định](https://releases.aspose.com/words/net/).
+2. Hiểu biết cơ bản về C# và XML.
 
-## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+## Nhập không gian tên
+
+Đảm bảo bao gồm các không gian tên cần thiết trong dự án của bạn:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Markup;
+using Aspose.Words.Tables;
+```
+
+## Bước 1: Khởi tạo Document và DocumentBuilder
+
+ Đầu tiên, tạo một tài liệu mới và khởi tạo một`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
 
-## Bước 2: Tạo Tài liệu và DocumentBuilder
- Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` để xây dựng nội dung của tài liệu.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 3: Thêm dữ liệu XML tùy chỉnh vào CustomXmlPart
- Tạo một`CustomXmlPart` và thêm dữ liệu XML tùy chỉnh vào đó. Trong ví dụ này, chúng tôi tạo một chuỗi XML đại diện cho một bộ sưu tập sách có tên và tác giả.
+## Bước 2: Thêm phần XML tùy chỉnh
+
+Thêm phần XML tùy chỉnh vào tài liệu. XML này chứa dữ liệu chúng tôi muốn ánh xạ tới bảng của mình:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-	"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-	"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
+    "<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
+    "<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
+    "<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## Bước 4: Tạo bảng và cấu trúc bảng
-Bắt đầu tạo bảng bằng cách sử dụng`StartTable` phương pháp của`DocumentBuilder` . Thêm ô và nội dung bảng bằng cách sử dụng`InsertCell`Và`Write` phương pháp.
+## Bước 3: Tạo cấu trúc bảng
+
+ Tiếp theo, sử dụng`DocumentBuilder` để tạo tiêu đề bảng:
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,94 +63,60 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Bước 5: Tạo phần lặp lại được ánh xạ tới XML tùy chỉnh
- Tạo một`StructuredDocumentTag` với`SdtType.RepeatingSection` để đại diện cho phần lặp lại. Đặt ánh xạ XML cho phần lặp lại bằng cách sử dụng`SetMapping` phương pháp của`XmlMapping` tài sản. Trong ví dụ này, chúng tôi ánh xạ phần lặp lại tới`/books[1]/book`.
+## Bước 4: Tạo phần lặp lại
+
+ Tạo một`StructuredDocumentTag` (SDT) cho phần lặp lại và ánh xạ nó tới dữ liệu XML:
 
 ```csharp
-StructuredDocumentTag repeatingSectionSdt =
-	new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
 repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Bước 6: Tạo mục phần lặp lại và thêm ô
- Tạo một`StructuredDocumentTag` với`SdtType.RepeatingSectionItem` để đại diện cho mục phần lặp lại. Nối nó khi còn nhỏ vào phần lặp lại.
+## Bước 5: Tạo mục phần lặp lại
+
+Tạo SDT cho mục phần lặp lại và thêm nó vào phần lặp lại:
 
 ```csharp
-StructuredDocumentTag repeatingSectionItemSdt = 
-	new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-```
-
- Tạo một`Row` để thể hiện từng mục trong phần lặp lại và nối nó vào mục phần lặp lại.
-
-```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## Bước 7: Thêm điều khiển nội dung trong phần lặp lại
- Tạo nên`StructuredDocumentTag` đồ vật có`SdtType.PlainText`
+## Bước 6: Ánh xạ dữ liệu XML tới các ô trong bảng
 
-  để thể hiện các điều khiển tiêu đề và nội dung tác giả. Đặt ánh xạ XML cho từng điều khiển nội dung bằng cách sử dụng`SetMapping` phương pháp của`XmlMapping` tài sản. Trong ví dụ này, chúng tôi ánh xạ điều khiển tiêu đề tới`/books[1]/book[1]/title[1]` và tác giả kiểm soát`/books[1]/book[1]/author[1]`.
+Tạo SDT cho tiêu đề và tác giả, ánh xạ chúng tới dữ liệu XML và nối chúng vào hàng:
 
 ```csharp
-StructuredDocumentTag titleSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
 row.AppendChild(titleSdt);
 
-StructuredDocumentTag authorSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag authorSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## Bước 8: Lưu tài liệu
- Lưu tài liệu đã sửa đổi vào thư mục được chỉ định bằng cách sử dụng`Save`phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+## Bước 7: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu vào thư mục được chỉ định:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### Mã nguồn ví dụ để tạo phần lặp lại bảng được ánh xạ tới phần Xml tùy chỉnh bằng cách sử dụng Aspose.Words cho .NET 
+## Phần kết luận
 
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Bằng cách làm theo các bước này, bạn đã tạo thành công một bảng có phần lặp lại được ánh xạ tới phần XML tùy chỉnh bằng cách sử dụng Aspose.Words cho .NET. Điều này cho phép tạo nội dung động dựa trên dữ liệu có cấu trúc, giúp việc tạo tài liệu trở nên linh hoạt và mạnh mẽ hơn.
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-		"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-		"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-		"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Title");
-	builder.InsertCell();
-	builder.Write("Author");
-	builder.EndRow();
-	builder.EndTable();
-	StructuredDocumentTag repeatingSectionSdt =
-		new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
-	repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
-	table.AppendChild(repeatingSectionSdt);
-	StructuredDocumentTag repeatingSectionItemSdt = 
-		new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
-	repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-	Row row = new Row(doc);
-	repeatingSectionItemSdt.AppendChild(row);
-	StructuredDocumentTag titleSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
-	row.AppendChild(titleSdt);
-	StructuredDocumentTag authorSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
-	row.AppendChild(authorSdt);
-	doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
+## Câu hỏi thường gặp
 
-```
+### Thẻ tài liệu có cấu trúc (SDT) là gì?
+SDT, còn được gọi là kiểm soát nội dung, là vùng giới hạn trong tài liệu được sử dụng để chứa dữ liệu có cấu trúc.
 
-Đó là nó! Bạn đã tạo thành công một bảng có phần lặp lại được ánh xạ tới CustomXmlPart trong tài liệu Word của bạn bằng Aspose.Words cho .NET.
+### Tôi có thể sử dụng các kiểu dữ liệu khác trong phần XML tùy chỉnh không?
+Có, bạn có thể cấu trúc phần XML tùy chỉnh của mình với bất kỳ loại dữ liệu nào và ánh xạ chúng cho phù hợp.
+
+### Làm cách nào để thêm nhiều hàng hơn vào phần lặp lại?
+Phần lặp lại tự động sao chép cấu trúc hàng cho từng mục trong đường dẫn XML được ánh xạ.

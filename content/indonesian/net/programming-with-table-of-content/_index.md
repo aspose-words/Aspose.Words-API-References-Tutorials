@@ -16,5 +16,5 @@ Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan memban
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Ubah Gaya Toc Di Dokumen Word](./change-style-of-toc-level/) | Pelajari cara mudah mengubah gaya tingkat daftar isi di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Ubah Toc Tab Stop di Dokumen Word](./change-toc-tab-stops/) | Pelajari cara mengubah tab daftar isi di dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Ubah Gaya Toc Di Dokumen Word](./change-style-of-toc-level/) | Pelajari cara mengubah gaya TOC di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sesuaikan TOC Anda dengan mudah. |
+| [Ubah Toc Tab Stop di Dokumen Word](./change-toc-tab-stops/) | Pelajari cara mengubah perhentian tab TOC di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini akan membantu Anda membuat Daftar Isi yang terlihat profesional. |

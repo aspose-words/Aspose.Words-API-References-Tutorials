@@ -16,6 +16,6 @@ Bu eğitimler sayesinde Aspose.Words for .NET'in işlevselliklerinden tam anlam�
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Word Belgesine Bidi İşaretleri Ekleme](./add-bidi-marks/) | Aspose.Words for .NET'i kullanarak bir Word belgesine Bidi işaretleri eklemeyi öğrenin ve çok dilli profesyonel belgeler oluşturun. |
-| [Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan](./use-tab-character-per-level-for-list-indentation/) | Aspose.Words for .NET'te sekme karakterleri içeren girinti listeleri özelliğini nasıl kullanacağınızı öğrenin. İyi yapılandırılmış ve okunabilir belgeler oluşturmak için bu adım adım kılavuzu izleyin. Bu güçlü özellikle zamandan tasarruf edin ve iş akışınızı geliştirin. Eğitimin tamamına şimdi erişin. |
-| [Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullan](./use-space-character-per-level-for-list-indentation/) | Aspose.Words for .NET'te liste girintisi için seviye başına boşluk karakteri kullanma konusunda adım adım kılavuz. İyi yapılandırılmış Word belgelerini kolaylıkla oluşturun. |
+| [Word Belgesine Bidi İşaretleri Ekleme](./add-bidi-marks/) | Bu kılavuzla Aspose.Words for .NET kullanarak Word belgelerine çift yönlü (İki yönlü) işaretlerin nasıl ekleneceğini öğrenin. Çok dilli içerik için doğru metin yönünü sağlayın. |
+| [Liste Girintisi İçin Düzey Başına Sekme Karakteri Kullan](./use-tab-character-per-level-for-list-indentation/) | Aspose.Words for .NET'i kullanarak sekmeli girintili çok düzeyli listeler oluşturmayı öğrenin. Belgelerinizde kesin liste biçimlendirmesi için bu kılavuzu izleyin. |
+| [Liste Girintisi İçin Düzey Başına Boşluk Karakteri Kullan](./use-space-character-per-level-for-list-indentation/) | Aspose.Words for .NET'te boşluk karakteri girintili çok düzeyli listeler oluşturmayı öğrenin. Hassas belge biçimlendirmesi için adım adım kılavuz. |

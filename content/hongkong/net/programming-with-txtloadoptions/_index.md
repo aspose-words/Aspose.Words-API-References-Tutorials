@@ -7,7 +7,7 @@ type: docs
 weight: 1640
 url: /zh-hant/net/programming-with-txtloadoptions/
 ---
-Aspose.Words for .NET 教學課程將引導您了解使用 Aspose.Words（一個用於處理 Word 文件的強大函式庫）進行文字處理的不同功能和麵向。 「使用 TxtLoadOptions 進行文字處理」教學課程向您展示如何在 Aspose.Words 中載入和操作文字檔案。您將學習如何指定載入選項、從文字檔案中提取文字並將其插入到 Word 文件中以及其他文字處理操作。
+Aspose.Words for .NET 教學將引導您了解使用 Aspose.Words（一個用於處理 Word 文件的強大函式庫）進行文字處理的不同功能和麵向。 「使用 TxtLoadOptions 進行文字處理」教學課程向您展示如何在 Aspose.Words 中載入和操作文字檔案。您將學習如何指定載入選項、從文字檔案中提取文字並將其插入到 Word 文件中以及其他文字處理操作。
 
 這些教學提供逐步說明、範例程式碼和詳細說明，幫助您了解並在 .NET 專案中使用 Aspose.Words 功能。無論您需要建立、編輯、轉換還是操作 Word 文檔，這些教學課程都為您提供成功完成任務所需的知識。探索不同的功能並了解如何充分利用 Aspose.Words 來滿足 .NET 應用程式中的 Word 文件處理需求。
 
@@ -16,6 +16,6 @@ Aspose.Words for .NET 教學課程將引導您了解使用 Aspose.Words（一個
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [檢測帶有空格的編號](./detect-numbering-with-whitespaces/) | 了解如何在 Aspose.Words for .NET 中偵測帶有空格的清單編號。輕鬆改進文件的結構。 |
-| [處理空間選項](./handle-spaces-options/) | 了解如何使用 Aspose.Words for .NET 管理 TXT 文件中的空格。刪除不必要的空格並提高可讀性。 |
-| [文檔文字方向](./document-text-direction/) | 了解如何使用 Aspose.Words for .NET 在文件中指定文字方向。改進從右到左語言的顯示。立即造訪完整教程。 |
+| [檢測帶有空格的編號](./detect-numbering-with-whitespaces/) | 了解如何使用 Aspose.Words for .NET 偵測純文字文件中帶有空格的編號，並確保正確識別您的清單。 |
+| [處理空間選項](./handle-spaces-options/) | 了解如何使用 Aspose.Words for .NET 處理文字文件中的前導空格和尾隨空格。本教程提供了清理文字格式的指南。 |
+| [文檔文字方向](./document-text-direction/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 中設定文件文字方向。非常適合處理從右到左的語言。 |

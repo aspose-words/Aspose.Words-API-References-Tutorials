@@ -11,7 +11,7 @@ url: /id/python-net/document-structure-and-content-manipulation/document-ole-obj
 Di era digital saat ini, membuat dokumen yang kaya dan interaktif sangat penting untuk komunikasi yang efektif. Aspose.Words untuk Python menyediakan seperangkat alat canggih yang memungkinkan Anda menyematkan objek OLE (Penautan dan Penyematan Objek) dan kontrol ActiveX langsung ke dokumen Word Anda. Fitur ini membuka banyak kemungkinan, memungkinkan Anda membuat dokumen dengan spreadsheet, bagan, multimedia terintegrasi, dan banyak lagi. Dalam tutorial ini, kami akan memandu Anda melalui proses menyematkan objek OLE dan kontrol ActiveX menggunakan Aspose.Words untuk Python.
 
 
-## Memulai Aspose.Words untuk Python
+## Memulai dengan Aspose.Words untuk Python
 
 Sebelum kita mempelajari penyematan objek OLE dan kontrol ActiveX, pastikan Anda memiliki alat yang diperlukan:
 

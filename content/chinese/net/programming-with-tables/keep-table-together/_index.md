@@ -2,77 +2,94 @@
 title: 保持桌子整齐
 linktitle: 保持桌子整齐
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 将 Word 文档中的表格合并在一起。
+description: 了解如何使用 Aspose.Words for .NET 防止 Word 文档中的表格跨页断裂。按照我们的指南维护专业、可读的文档。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/keep-table-together/
 ---
+## 介绍
 
-在本教程中，我们将学习如何使用 Aspose.Words for .NET 将 Word 文档中的表格合并在一起。我们将按照分步指南来理解代码并实现此功能。在本教程结束时，您将能够保持表格完整，而不会将其拆分到 Word 文档中的多个页面中。
+您是否曾经因为 Word 文档中的表格横跨两页而感到沮丧？这就像您精心布局的信息突然决定在中途休息！将表格放在一页上对于可读性和演示至关重要。无论是报告、项目提案还是个人文档，表格拆分都会非常令人不快。幸运的是，Aspose.Words for .NET 有一个巧妙的方法来解决这个问题。在本教程中，我们将逐步介绍如何保持表格完整且看起来清晰。让我们开始吧！
 
-## 步骤 1：项目设置
-1. 启动 Visual Studio 并创建一个新的 C# 项目。
-2. 添加对 Aspose.Words for .NET 库的引用。
+## 先决条件
 
-## 第 2 步：加载文档并检索表格
-要使用表格启动文字处理，我们需要加载文档并获取要保存的表格。请按以下步骤操作：
+在开始之前，请确保您已准备好以下内容：
+
+1.  Aspose.Words for .NET - 如果你还没有安装，你可以从[这里](https://releases.aspose.com/words/net/).
+2. 带有表格的 Word 文档 - 我们将使用包含跨多页表格的示例文档。
+3. C# 基础知识 - 本教程假设您对 C# 编程有基本的了解。
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这将使我们能够从 Aspose.Words for .NET 访问所需的类和方法。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+让我们将这个过程分解成简单易懂的步骤。我们将从加载文档开始，到保存更新后的文档（表格保持不变）结束。
+
+## 步骤 1：加载文档
+
+要使用 Word 文档，我们首先需要加载它。我们将使用`Document`为此课程。
 
 ```csharp
 //文档目录的路径
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//加载文档
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
-
-//检索表
-Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-确保将“YOUR DOCUMENTS DIRECTORY”替换为您的文档目录的实际路径。
+## 第 2 步：访问表
 
-## 步骤 3：启用“KeepWithNext”选项
-为了使表格保持连贯，防止其分裂到多个页面，我们需要为表格中除最后一行最后几段之外的每个段落启用“KeepWithNext”选项。使用以下代码：
+接下来，我们需要获取想要保留的表格。我们假设它是文档中的第一个表格。
 
 ```csharp
-foreach(Cell cell in table.GetChildNodes(NodeType.Cell, true))
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## 步骤 3：为段落设置 KeepWithNext
+
+为了防止表格跨页，我们需要设置`KeepWithNext`表格中每个段落的属性，最后一行的最后段落除外。
+
+```csharp
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-cell.EnsureMinimum();
-foreach(Paragraph para in cell.Paragraphs)
-if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
-para.ParagraphFormat.KeepWithNext = true;
+    cell.EnsureMinimum();
+    foreach (Paragraph para in cell.Paragraphs)
+    {
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
+    }
 }
 ```
 
-这里我们循环遍历表格中的每个单元格，并为单元格中除表格最后一行的最后几段之外的每个段落启用“KeepWithNext”选项。
+## 步骤 4：保存文档
 
-## 步骤 4：保存修改后的文档
-最后，我们需要将修改后的文档与表格一起保存。使用以下代码：
+最后，我们保存更新后的文档。这将应用我们的更改并确保表格保持在一页上。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
 
-确保为输出文档指定正确的路径和文件名。
-
-### 使用 Aspose.Words for .NET 实现“保持表格连贯”的示例源代码 
-
-```csharp
-	//文档目录的路径
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table spanning two pages.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//我们需要为表格中的每个段落启用 KeepWithNext，以防止其跨页，
-	//除了表格最后一行的最后几段之外。
-	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
-	{
-		cell.EnsureMinimum();
-		foreach (Paragraph para in cell.Paragraphs)
-			if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
-				para.ParagraphFormat.KeepWithNext = true;
-	}
-	doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
-```
-
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 将 Word 文档中的表格合并在一起。通过遵循本分步指南并实现提供的 C# 代码，您可以保持表格完整并防止其在文档中跨多页拆分。此功能使您可以更好地控制文档中表格的外观和布局。
+
+就这样！只需几行代码，您就可以防止表格在 Word 文档中跨页拆分。这个简单而有效的解决方案可确保您的表格保持整洁和专业，从而提高文档的可读性。Aspose.Words for .NET 使处理此类格式问题变得轻而易举，让您专注于创建精彩的内容。
+
+## 常见问题解答
+
+### 我可以使用此方法将多个表格放在一起吗？  
+是的，您可以通过遍历文档中的每个表将相同的逻辑应用于多个表。
+
+### 如果我的表格太大，无法放在一页上怎么办？  
+如果表格太大，无法放在一页上，它仍会跨页显示。此方法可确保较小的表格保持完整，不会分裂。
+
+### 有没有办法自动对文档中的所有表格进行此操作？  
+是的，您可以循环遍历文档中的所有表格并应用`KeepWithNext`每个段落的属性。
+
+### 我需要为 Aspose.Words for .NET 购买付费许可证吗？  
+您可以从以下位置开始免费试用[这里](https://releases.aspose.com/)，但为了获得完整功能，建议购买付费许可证。
+
+### 我可以将其他格式应用于表格但保持其完整吗？  
+当然可以！您可以根据需要设置表格格式，同时确保它们位于同一页上。

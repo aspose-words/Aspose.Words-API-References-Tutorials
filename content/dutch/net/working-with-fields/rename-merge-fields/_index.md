@@ -2,63 +2,42 @@
 title: Hernoem samenvoegvelden
 linktitle: Hernoem samenvoegvelden
 second_title: Aspose.Words-API voor documentverwerking
-description: In deze zelfstudie leert u hoe u samenvoegvelden in een document kunt hernoemen met Aspose.Words voor .NET.
+description: Leer hoe u samenvoegvelden in Word-documenten hernoemt met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding om uw documenten eenvoudig te manipuleren.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/rename-merge-fields/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van de functie voor het hernoemen van samenvoegvelden van Aspose.Words voor .NET. Volg elke stap zorgvuldig om de gewenste resultaten te krijgen.
+Het hernoemen van samenvoegvelden in Word-documenten kan een hele klus zijn als u niet bekend bent met de juiste hulpmiddelen en technieken. Maar maak je geen zorgen, ik heb je gedekt! In deze handleiding duiken we in het proces van het hernoemen van samenvoegvelden met Aspose.Words voor .NET, een krachtige bibliotheek die documentmanipulatie een fluitje van een cent maakt. Of je nu een doorgewinterde ontwikkelaar bent of net begint, deze stapsgewijze zelfstudie leidt je door alles wat je moet weten.
 
-## Stap 1: Documentmap instellen
+## Vereisten
 
-In de verstrekte code moet u de directory van uw documenten opgeven. Vervang de waarde "UW DOCUMENTENMAP" door het juiste pad naar uw documentenmap.
+Voordat we ingaan op de details, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words voor .NET: Aspose.Words voor .NET moet geïnstalleerd zijn. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Visual Studio of een andere .NET-compatibele IDE.
+- Basiskennis van C#: Bekendheid met programmeren in C# kan nuttig zijn.
 
-## Stap 2: Het document aanmaken en de samenvoegvelden invoegen
+## Naamruimten importeren
 
-We beginnen met het maken van een nieuw document en het gebruiken van a`DocumentBuilder` om de samenvoegvelden in te voegen.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
-builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
-```
-
-## Stap 3: De naam van samenvoegvelden wijzigen
-
-We doorlopen elk veld in het documentbereik en als het een samenvoegveld is, hernoemen we het veld door de toevoeging "_Hernoemd" achtervoegsel.
+Laten we eerst de benodigde naamruimten importeren. Dit zorgt ervoor dat onze code toegang heeft tot alle klassen en methoden die we nodig hebben.
 
 ```csharp
-foreach(Field f in doc.Range.Fields)
-{
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
-}
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Stap 4: Het document opslaan
+Oké, nu we de basis achter de rug hebben, laten we beginnen met het leuke gedeelte! Volg deze stappen om de samenvoegvelden in uw Word-documenten te hernoemen.
 
- Tenslotte noemen wij de`Save()` methode om het gewijzigde document op te slaan.
+## Stap 1: Maak het document en voeg samenvoegvelden in
 
-```csharp
-doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
-```
-
-### Broncodevoorbeeld voor het hernoemen van samenvoegvelden met Aspose.Words voor .NET
+Om te beginnen moeten we een nieuw document maken en enkele samenvoegvelden invoegen. Dit zal als ons uitgangspunt dienen.
 
 ```csharp
 // Het pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Maak het document en voeg de samenvoegvelden in.
 Document doc = new Document();
@@ -66,42 +45,62 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
+```
 
+ Hier maken we een nieuw document en gebruiken we de`DocumentBuilder` class om twee samenvoegvelden in te voegen:`MyMergeField1`En`MyMergeField2`.
+
+## Stap 2: Doorloop de velden en hernoem ze
+
+Laten we nu de code schrijven om de samenvoegvelden te vinden en te hernoemen. We doorlopen alle velden in het document, controleren of het samenvoegvelden zijn en hernoemen ze.
+
+```csharp
 // Hernoem samenvoegvelden.
-foreach(Field f in doc.Range.Fields)
+foreach (Field f in doc.Range.Fields)
 {
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
+    if (f.Type == FieldType.FieldMergeField)
+    {
+        FieldMergeField mergeField = (FieldMergeField)f;
+        mergeField.FieldName = mergeField.FieldName + "_Renamed";
+        mergeField.Update();
+    }
 }
+```
 
+ In dit fragment gebruiken we a`foreach` lus om alle velden in het document te doorlopen. Voor elk veld controleren we of het een samenvoegveld is`f.Type == FieldType.FieldMergeField` . Als dat zo is, casten we het`FieldMergeField` en toevoegen`_Renamed` naar zijn naam.
+
+## Stap 3: Sla het document op
+
+Laten we ten slotte ons document opslaan met de hernoemde samenvoegvelden.
+
+```csharp
 // Bewaar het document.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-Volg deze stappen om de samenvoegvelden in uw document te hernoemen met Aspose.Words voor .NET.
+ Deze coderegel slaat het document op in de opgegeven map met de naam`WorkingWithFields.RenameMergeFields.docx`.
 
-### Veelgestelde vragen
+## Conclusie
 
-#### Vraag: Hoe kan ik de naam van samengevoegde velden in een Word-document wijzigen met Aspose.Words voor .NET?
+En daar heb je het! Het hernoemen van samenvoegvelden in Word-documenten met Aspose.Words voor .NET is eenvoudig zodra u de stappen kent. Door deze handleiding te volgen, kunt u uw Word-documenten eenvoudig manipuleren en aanpassen aan uw behoeften. Of u nu rapporten genereert, gepersonaliseerde brieven maakt of gegevens beheert, deze techniek komt van pas.
 
- A: Om de samengevoegde velden in een Word-document te hernoemen met Aspose.Words voor .NET, kunt u door de velden in het document lopen met behulp van de`FieldMergingArgs` klasse en gebruik de`FieldMergingArgs.FieldName` methode om veld te hernoemen.
+## Veelgestelde vragen
 
-#### Vraag: Is het mogelijk om alleen bepaalde samengevoegde velden in een Word-document te hernoemen met Aspose.Words voor .NET?
+### Kan ik meerdere samenvoegvelden tegelijk hernoemen?
 
-A: Ja, het is mogelijk om alleen bepaalde samengevoegde velden in een Word-document te hernoemen met Aspose.Words voor .NET. U kunt filteren welke velden u wilt hernoemen met behulp van specifieke criteria, zoals de veldnaam of andere relevante eigenschappen. Vervolgens kunt u de overeenkomstige velden hernoemen met behulp van de`FieldMergingArgs.FieldName` methode.
+Absoluut! De meegeleverde code demonstreert al hoe u alle samenvoegvelden in een document kunt doorlopen en hernoemen.
 
-#### Vraag: Hoe kan ik controleren of een samengevoegd veld met succes is hernoemd in een Word-document met Aspose.Words voor .NET?
+### Wat gebeurt er als het samenvoegveld niet bestaat?
 
- A: Om te controleren of een samengevoegd veld succesvol is hernoemd in een Word-document met Aspose.Words voor .NET, kunt u de`FieldMergedArgs` klasse en toegang tot de`FieldMergedArgs.IsMerged` eigenschap om te bepalen of de naam van het veld met hit is gewijzigd.
+Als er geen samenvoegveld bestaat, slaat de code er eenvoudigweg overheen. Er worden geen fouten gegenereerd.
 
-#### Vraag: Wat zijn de gevolgen van het hernoemen van een samengevoegd veld in een Word-document met Aspose.Words voor .NET?
+### Kan ik het voorvoegsel wijzigen in plaats van het aan de naam toe te voegen?
 
-A: Wanneer u de naam van een samengevoegd veld in een Word-document wijzigt met Aspose.Words voor .NET, verandert de naam van het veld in het document, wat van invloed kan zijn op andere functionaliteit of processen die afhankelijk zijn van de veldnaam. Houd rekening met deze mogelijke gevolgen voordat u de naam van samengevoegde velden wijzigt.
+ Ja, u kunt de`mergeField.FieldName` toewijzing om deze op elke gewenste waarde in te stellen.
 
-#### Vraag: Is het mogelijk om de oorspronkelijke naam van een samengevoegd veld te herstellen nadat het is hernoemd met Aspose.Words voor .NET?
+### Is Aspose.Words voor .NET gratis?
 
-A: Ja, het is mogelijk om de oorspronkelijke naam van een samengevoegd veld te herstellen nadat u de naam ervan hebt gewijzigd met Aspose.Words voor .NET. U kunt de oorspronkelijke naam van het veld opslaan in een variabele of lijst, en vervolgens die informatie gebruiken om de oorspronkelijke naam indien nodig te herstellen.
+ Aspose.Words voor .NET is een commercieel product, maar u kunt een[gratis proefperiode](https://releases.aspose.com/) om het te evalueren.
+
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+
+ U kunt uitgebreide documentatie vinden[hier](https://reference.aspose.com/words/net/).

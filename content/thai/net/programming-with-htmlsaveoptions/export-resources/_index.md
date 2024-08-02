@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-บรรทัดโค้ดนี้จะโหลดเอกสารจากไดเร็กทอรีที่ระบุ
+บรรทัดโค้ดนี้โหลดเอกสารจากไดเร็กทอรีที่ระบุ
 
 ## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการบันทึก HTML
 

@@ -18,7 +18,7 @@ Než se pustíme do toho hnusného, ujistíme se, že máme všechny kachny v ř
 1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nastavené prostředí .NET.
 3. Visual Studio: Bude stačit jakákoli verze, pokud vám vyhovuje její procházení.
-4.  Soubor PDF: Připravte si soubor PDF ke konverzi. Pro tento tutoriál použijeme soubor s názvem`Pdf Document.pdf`.
+4.  Soubor PDF: Připravte si soubor PDF ke konverzi. V tomto tutoriálu použijeme soubor s názvem`Pdf Document.pdf`.
 
 ## Importovat jmenné prostory
 

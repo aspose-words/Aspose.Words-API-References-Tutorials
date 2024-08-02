@@ -10,7 +10,7 @@ url: /it/python-net/data-visualization-and-formatting/office-math-documents/
 
 ## Introduzione alla matematica in ufficio
 
-Office Math è una funzionalità di Microsoft Office che consente agli utenti di creare e modificare equazioni matematiche in documenti, presentazioni e fogli di calcolo. Fornisce un'interfaccia intuitiva per inserire vari simboli matematici, operatori e funzioni. Tuttavia, lavorare con espressioni matematiche più complesse richiede strumenti specializzati. È qui che entra in gioco Aspose.Words for Python, che offre una potente API per manipolare i documenti a livello di codice.
+Office Math è una funzionalità di Microsoft Office che consente agli utenti di creare e modificare equazioni matematiche in documenti, presentazioni e fogli di calcolo. Fornisce un'interfaccia intuitiva per inserire vari simboli matematici, operatori e funzioni. Tuttavia, lavorare con espressioni matematiche più complesse richiede strumenti specializzati. È qui che entra in gioco Aspose.Words for Python, che offre una potente API per manipolare i documenti a livello di programmazione.
 
 ## Configurazione di Aspose.Words per Python
 

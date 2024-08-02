@@ -16,4 +16,4 @@ En suivant ces tutoriels, vous pourrez exploiter pleinement les capacités des e
 ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Utilisation des volets de tâches d'extension Web](./using-web-extension-task-panes/) | Guide étape par étape pour utiliser les volets de tâches d’extension Web avec Aspose.Words pour .NET. |
+| [Utilisation des volets de tâches d'extension Web](./using-web-extension-task-panes/) | Découvrez comment ajouter et configurer des volets de tâches d'extension Web dans des documents Word à l'aide d'Aspose.Words pour .NET dans ce didacticiel détaillé étape par étape. |

@@ -43,7 +43,7 @@ builder. Writen("Element 1");
 builder. Writen("Element 2");
 ```
 
-## Bước 5: Xóa thụt lề khỏi danh sách
+## Bước 5: Loại bỏ thụt lề khỏi danh sách
 
  Nếu muốn tạo một danh sách con, chúng ta có thể tăng mức thụt lề bằng cách sử dụng`ListFormat.ListIndent()` phương pháp. Trong ví dụ này, chúng tôi đang thêm danh sách phụ vào mục 2a và 2b.
 

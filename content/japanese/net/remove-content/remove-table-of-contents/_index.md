@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /ja/net/remove-content/remove-table-of-contents/
 ---
-## Aspose.Words for .NET を使用して Word 文書の目次を削除する
+## 導入
 
 Word 文書内の不要な目次 (TOC) の処理にうんざりしていませんか? 誰もが経験したことがあると思いますが、目次は必要ない場合もあります。幸いなことに、Aspose.Words for .NET を使用すると、プログラムで簡単に目次を削除できます。このチュートリアルでは、プロセスをステップごとに説明しますので、すぐにマスターできます。さっそく始めましょう!
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 何が起こっているか見てみましょう:
 - `doc.Range.Fields`: ドキュメント内のすべてのフィールドにアクセスします。
-- `.Where(f => f.Type == FieldType.FieldTOC)`: これにより、フィールドがフィルタリングされ、目次だけが検索されます。
+- `.Where(f => f.Type == FieldType.FieldTOC)`これにより、フィールドがフィルタリングされ、目次だけが検索されます。
 - `.ToList().ForEach(f => f.Remove())`: フィルタリングされたフィールドをリストに変換し、各フィールドを削除します。
 
 ## ステップ4: 変更したドキュメントを保存する
@@ -83,22 +83,22 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## よくある質問
 
-### 1. Aspose.Words for .NET とは何ですか?
+### Aspose.Words for .NET とは何ですか?
 
 Aspose.Words for .NET は、ドキュメント操作用の強力な .NET ライブラリであり、開発者はプログラムによって Word ドキュメントを作成、変更、変換できます。
 
-### 2. Aspose.Words は無料で使用できますか?
+### Aspose.Words を無料で使用できますか?
 
 はい、Aspose.Wordsは[無料トライアル](https://releases.aspose.com/)または[一時ライセンス](https://purchase.aspose.com/temporary-license/).
 
-### 3. Aspose.Words を使用して他のフィールドを削除することは可能ですか?
+### Aspose.Words を使用して他のフィールドを削除することは可能ですか?
 
 もちろんです! フィルター条件でフィールドのタイプを指定することで、任意のフィールドを削除できます。
 
-### 4. Aspose.Words を使用するには Visual Studio が必要ですか?
+### Aspose.Words を使用するには Visual Studio が必要ですか?
 
 開発の容易さを考えると Visual Studio が強く推奨されますが、.NET をサポートする任意の IDE を使用することもできます。
 
-### 5. Aspose.Words の詳細情報はどこで入手できますか?
+### Aspose.Words の詳細情報はどこで入手できますか?
 
 より詳しい資料については、[Aspose.Words for .NET API ドキュメント](https://reference.aspose.com/words/net/).

@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 3: Skriv inledande text
 
- Använda`DocumentBuilder`, kommer vi att skriva lite inledande text till dokumentet. Detta ställer in sammanhanget för var vår hyperlänk kommer att infogas.
+ Använda`DocumentBuilder`, skriver vi lite inledande text till dokumentet. Detta ställer in sammanhanget för var vår hyperlänk kommer att infogas.
 
 ```csharp
 builder.Write("Please make sure to visit ");

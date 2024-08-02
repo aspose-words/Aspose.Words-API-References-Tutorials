@@ -2,96 +2,121 @@
 title: Geteilte Tabelle
 linktitle: Geteilte Tabelle
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument aufteilen.
+description: Erfahren Sie, wie Sie Tabellen in Word-Dokumenten mit Aspose.Words für .NET aufteilen. Unsere Schritt-für-Schritt-Anleitung macht die Tabellenverwaltung einfach und effizient.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/split-table/
 ---
+## Einführung
 
-In diesem Tutorial lernen wir, wie man mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument aufteilt. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie eine Tabelle aus einer bestimmten Zeile in Ihren Word-Dokumenten aufteilen.
+Haben Sie schon einmal mit einer großen Tabelle in einem Word-Dokument gearbeitet und sich gewünscht, Sie könnten sie in zwei kleinere, handlichere Tabellen aufteilen? Heute gehen wir genau darauf ein, wie Sie dies mit Aspose.Words für .NET erreichen können. Egal, ob Sie mit umfangreichen Datentabellen oder komplexen Dokumentstrukturen arbeiten, das Aufteilen von Tabellen kann die Lesbarkeit und Organisation verbessern. Lassen Sie uns den schrittweisen Prozess zum Aufteilen einer Tabelle mit Aspose.Words für .NET erkunden.
 
-## Schritt 1: Projekt-Setup
-1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
+## Voraussetzungen
 
-## Schritt 2: Dokument einlegen
-Um die Textverarbeitung mit dem Dokument zu starten, führen Sie diese Schritte aus:
+Bevor wir mit dem Tutorial beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-```csharp
-// Pfad zu Ihrem Dokumentverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek heruntergeladen und installiert haben. Sie erhalten sie von[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Richten Sie eine Entwicklungsumgebung mit .NET Framework-Unterstützung ein, beispielsweise Visual Studio.
+3. Beispieldokument: Bereiten Sie ein Word-Dokument vor (`Tables.docx`) mit mindestens einer Tabelle, um den Teilungsvorgang anzuwenden.
 
-// Laden Sie das Dokument
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Namespaces importieren
 
-Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis und geben Sie den richtigen Dateinamen an.
-
-## Schritt 3: Den Tisch aufteilen
-Als nächstes teilen wir die Tabelle ab einer bestimmten Zeile. Verwenden Sie den folgenden Code:
+Importieren Sie zunächst die erforderlichen Namespaces in Ihr Projekt. Dadurch können Sie auf die von Aspose.Words bereitgestellten Klassen und Methoden zugreifen.
 
 ```csharp
-// Abrufen der ersten Tabelle
-Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-// Bestimmung der Linie, ab der die Tabelle geteilt werden soll
-Row row = firstTable.Rows[2];
-
-// Erstellen Sie einen neuen Container für die geteilte Tabelle
-Table table = (Table)firstTable.Clone(false);
-
-// Fügen Sie den Container nach der Originaltabelle ein
-firstTable.ParentNode.InsertAfter(table, firstTable);
-
-// Fügen Sie einen Pufferabsatz hinzu, um den Abstand zwischen den Tabellen beizubehalten
-firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
-
-// Verschieben von Zeilen aus der Originaltabelle in die geteilte Tabelle
-Row currentRow;
-do
-{
-currentRow = firstTable.LastRow;
-table. PrependChild(currentRow);
-} while (currentRow != row);
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Hier verwenden wir das Dokument, um die erste Tabelle aus dem Dokumentknoten abzurufen. Dann bestimmen wir die Zeile, ab der wir die Tabelle teilen möchten, in diesem Beispiel ist es die dritte Zeile (Index 2). Anschließend erstellen wir einen neuen Container, indem wir die ursprüngliche Tabelle klonen und ihn dann nach der ursprünglichen Tabelle einfügen. Wir fügen außerdem einen Pufferabsatz ein, um einen Abstand zwischen den beiden Tabellen einzuhalten. Anschließend verschieben wir Zeilen aus der ursprünglichen Tabelle mithilfe einer do-while-Schleife in die geteilte Tabelle, bis wir die angegebene Zeile erreichen.
+## Schritt 1: Dokument laden
 
-## Schritt 4: Speichern des geänderten Dokuments
-Schließlich müssen wir retten die
-
-  Dokument, das mit der geteilten Tabelle geändert wurde. Verwenden Sie den folgenden Code:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
-```
-
-Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument anzugeben.
-
-### Beispiel-Quellcode für Split Table mit Aspose.Words für .NET 
+Beginnen wir mit dem Laden des Dokuments, das die Tabelle enthält, die Sie teilen möchten. Achten Sie darauf, den richtigen Pfad zu Ihrem Dokument anzugeben.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
-Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// Wir werden die Tabelle in der dritten Zeile (einschließlich) teilen.
+```
+
+## Schritt 2: Identifizieren Sie die zu teilende Tabelle
+
+Identifizieren und rufen Sie als Nächstes die Tabelle ab, die Sie teilen möchten. In diesem Beispiel zielen wir auf die erste Tabelle im Dokument.
+
+```csharp
+Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Schritt 3: Wählen Sie die Zeile aus, bei der geteilt werden soll
+
+Bestimmen Sie die Zeile, in der Sie die Tabelle teilen möchten. Hier teilen wir die Tabelle in der dritten Zeile (einschließlich).
+
+```csharp
 Row row = firstTable.Rows[2];
-// Erstellen Sie einen neuen Container für die geteilte Tabelle.
-Table table = (Table) firstTable.Clone(false);
-// Setzen Sie den Behälter nach dem Original ein.
+```
+
+## Schritt 4: Einen neuen Tabellencontainer erstellen
+
+Erstellen Sie einen neuen Tabellencontainer, um die Zeilen aufzunehmen, die aus der Originaltabelle verschoben werden.
+
+```csharp
+Table table = (Table)firstTable.Clone(false);
+```
+
+## Schritt 5: Einfügen des neuen Tabellencontainers
+
+Fügen Sie den neuen Tabellencontainer direkt nach der Originaltabelle in das Dokument ein.
+
+```csharp
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// Fügen Sie einen Pufferabsatz hinzu, um sicherzustellen, dass die Tabellen getrennt bleiben.
+```
+
+## Schritt 6: Fügen Sie einen Pufferabsatz hinzu
+
+Fügen Sie zwischen den beiden Tabellen einen Pufferabsatz hinzu, um sicherzustellen, dass sie getrennt bleiben.
+
+```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
+```
+
+## Schritt 7: Zeilen in die neue Tabelle verschieben
+
+Verschiebt die Zeilen aus der ursprünglichen Tabelle in den neuen Tabellencontainer. Diese Schleife wird fortgesetzt, bis die angegebene Zeile (einschließlich) verschoben wurde.
+
+```csharp
 Row currentRow;
 do
 {
-	currentRow = firstTable.LastRow;
-	table.PrependChild(currentRow);
+    currentRow = firstTable.LastRow;
+    table.PrependChild(currentRow);
 } while (currentRow != row);
+```
+
+## Schritt 8: Speichern Sie das Dokument
+
+Speichern Sie abschließend das geänderte Dokument mit den aufgeteilten Tabellen.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument aufteilt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie Tabellen ab einer bestimmten Zeile in Ihren Word-Dokumenten problemlos aufteilen.
+
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET ganz einfach eine Tabelle in einem Word-Dokument aufteilen. Mit diesem Ansatz können Sie große Tabellen effektiver verwalten und die Lesbarkeit und Organisation Ihrer Dokumente verbessern. Probieren Sie es aus und sehen Sie, wie es Ihre Arbeit mit Tabellen in Word-Dokumenten vereinfacht.
+
+## Häufig gestellte Fragen
+
+### Kann ich eine Tabelle in mehrere Zeilen aufteilen?
+Ja, Sie können eine Tabelle in mehrere Zeilen teilen, indem Sie den Vorgang für jeden Teilungspunkt wiederholen.
+
+### Was passiert mit der Formatierung der Originaltabelle?
+Die neue Tabelle übernimmt die Formatierung der Originaltabelle. Eventuelle Formatierungsänderungen können bei Bedarf auf die neue Tabelle angewendet werden.
+
+### Ist es möglich, Tabellen wieder zusammenzuführen?
+Ja, Sie können Tabellen zusammenführen, indem Sie mit ähnlichen Methoden Zeilen von einer Tabelle in eine andere verschieben.
+
+### Funktioniert diese Methode mit verschachtelten Tabellen?
+Ja, Aspose.Words für .NET unterstützt auch Operationen an verschachtelten Tabellen.
+
+### Kann ich diesen Vorgang für mehrere Dokumente automatisieren?
+Auf jeden Fall! Sie können ein Skript oder eine Anwendung erstellen, um den Tabellenaufteilungsprozess für mehrere Dokumente zu automatisieren.

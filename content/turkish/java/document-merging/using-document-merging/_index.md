@@ -125,7 +125,7 @@ public class DocumentMerger {
             Document doc1 = new Document("document1.docx");
             Document doc2 = new Document("document2.docx");
 
-            // İkinci belgenin belirli bölümünü edinin
+            // İkinci belgenin özel bölümünü edinin
             Section sectionToMerge = doc2.getSections().get(0);
 
             // Bölümü ilk belgeye ekle

@@ -52,7 +52,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ## 步骤 4：合并文档
 
-附加源文档的内容（`srcDoc`）复制到目标文档（`dstDoc`），同时保留原始格式：
+附加源文档的内容（`srcDoc`）复制到目标文档（`dstDoc`) 同时保留原始格式：
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

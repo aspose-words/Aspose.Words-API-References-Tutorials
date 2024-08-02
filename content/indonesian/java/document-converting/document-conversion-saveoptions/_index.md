@@ -85,7 +85,7 @@ SaveOptions digunakan untuk menentukan format dan opsi untuk konversi dokumen. M
 
 ### Bisakah saya mengonversi dokumen Word ke PDF menggunakan Aspose.Words?
 
-Ya, Aspose.Words untuk Java memberikan dukungan kuat untuk mengonversi dokumen Word ke format PDF. Anda dapat menyesuaikan pengaturan konversi untuk memenuhi kebutuhan spesifik Anda.
+Ya, Aspose.Words untuk Java memberikan dukungan tangguh untuk mengonversi dokumen Word ke format PDF. Anda dapat menyesuaikan pengaturan konversi untuk memenuhi kebutuhan spesifik Anda.
 
 ### Bagaimana cara menangani kesalahan konversi dokumen?
 

@@ -11,7 +11,7 @@ url: /ko/net/programming-with-charts/bounds-of-axis/
 
 .NET에서 차트를 사용하여 전문적인 문서를 만들고 싶으십니까? 당신은 바로 이곳에 있습니다! 이 가이드는 .NET용 Aspose.Words를 사용하여 차트의 축 경계를 설정하는 과정을 안내합니다. 도서관을 처음 사용하는 경우에도 쉽게 따라할 수 있도록 각 단계를 자세히 설명하겠습니다. 그럼 본격적으로 시작해 보겠습니다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
@@ -115,7 +115,7 @@ Aspose.Words for .NET은 .NET 프레임워크를 사용하여 프로그래밍 �
  다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/) 제공된 설치 지침을 따르십시오.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- 예, 다음을 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/).
+ 예, 다음을 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words에 대한 문서는 어디서 찾을 수 있나요?
  자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).

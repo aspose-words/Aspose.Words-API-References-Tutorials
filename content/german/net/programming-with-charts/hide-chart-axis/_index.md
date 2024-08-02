@@ -117,5 +117,5 @@ Aspose.Words für .NET ist eine leistungsstarke API zum Erstellen, Bearbeiten, K
 ### Wo finde ich weitere Dokumentation?
  Eine ausführliche Dokumentation finden Sie auf der Aspose.Words for .NET[Hier](https://reference.aspose.com/words/net/).
 
-### Wie kann ich Support für Aspose.Words für .NET erhalten?
+### Wie erhalte ich Support für Aspose.Words für .NET?
  Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).

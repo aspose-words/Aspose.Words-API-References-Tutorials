@@ -204,7 +204,7 @@ pip install aspose-words
 
 ### Πού μπορώ να βρω περισσότερες πληροφορίες σχετικά με τις δυνατότητες Aspose.Words Python;
 
-Για αναλυτικές πληροφορίες σχετικά με τις δυνατότητες Aspose.Words Python, ανατρέξτε στο[τεκμηρίωση](https://reference.aspose.com/words/python-net/).
+ Για αναλυτικές πληροφορίες σχετικά με τις δυνατότητες Aspose.Words Python, ανατρέξτε στο[τεκμηρίωση](https://reference.aspose.com/words/python-net/).
 
 ### Πώς μπορώ να αποθηκεύσω το έγγραφό μου σε μορφή PDF χρησιμοποιώντας το Aspose.Words;
 

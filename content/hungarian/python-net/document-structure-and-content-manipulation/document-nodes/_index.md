@@ -1,6 +1,6 @@
 ---
-title: A dokumentum csomópontjainak megértése és navigálása
-linktitle: A dokumentum csomópontjainak megértése és navigálása
+title: A dokumentumcsomópontok megértése és navigálása
+linktitle: A dokumentumcsomópontok megértése és navigálása
 second_title: Aspose.Words Python Document Management API
 description: Ismerje meg a Word dokumentumok kezelését az Aspose.Words for Python használatával. Ez a részletes útmutató a betöltésről, formázásról, táblázatokról, képekről és egyebekről szól. Növelje dokumentumfeldolgozási készségeit még ma!
 type: docs
@@ -107,7 +107,7 @@ hyperlink.text = "Visit our website"
 
 ## Dokumentumrészek kezelése
 
-dokumentumok szakaszokra oszthatók, mindegyiknek megvannak a saját tulajdonságai.
+dokumentumok részekre oszthatók, mindegyiknek megvannak a saját tulajdonságai.
 
 ```python
 # Access document sections

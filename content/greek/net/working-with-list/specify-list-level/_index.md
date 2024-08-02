@@ -110,7 +110,7 @@ for (int i = 0; i < 9; i++)
 	builder.Writeln("Level " + i);
 }
 
-// Αυτός είναι ένας τρόπος για να σταματήσετε τη μορφοποίηση της λίστας.
+// Αυτός είναι ένας τρόπος για να σταματήσετε τη μορφοποίηση λίστας.
 builder.ListFormat.List = null;
 
 builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");

@@ -16,7 +16,7 @@ Word belgelerini düzenlemeniz, oluşturmanız, dönüştürmeniz veya üretmeni
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Word Belgesindeki Sayfa Sonlarını Kaldırma](./remove-page-breaks/) | Aspose.Words Library for .NET'i kullanarak word belgesindeki sayfa sonlarını nasıl kaldıracağınızı öğrenin. Sorunsuz bir düzen için adım adım kılavuzumuzu izleyin. |
-| [Word Belgesindeki Bölüm Sonlarını Kaldırma](./remove-section-breaks/) | Aspose.Words for .NET kütüphanesini kullanarak bir Word belgesindeki bölüm sonlarını nasıl kaldıracağınızı öğrenin. Belge biçimlendirmenizi bozabilecek bölüm sonlarını etkili bir şekilde ortadan kaldırın.|
-| [Word Belgesindeki Altbilgileri Kaldırma](./remove-footers/) | Aspose.Words for .NET ile Word belgelerindeki altbilgileri nasıl kolayca kaldıracağınızı öğrenin. DOCX dosyalarının verimli şekilde işlenmesi için adım adım kılavuzumuzu izleyin. |
+| [Word Belgesindeki Sayfa Sonlarını Kaldırma](./remove-page-breaks/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesindeki sayfa sonlarını nasıl kaldıracağınızı öğrenin. Belge işleme becerilerinizi geliştirin. |
+| [Word Belgesindeki Bölüm Sonlarını Kaldırma](./remove-section-breaks/) | Aspose.Words for .NET kullanarak Word belgelerindeki bölüm sonlarını nasıl kaldıracağınızı öğrenin. Bu ayrıntılı, adım adım kılavuz, sorunsuz belge yönetimi ve düzenleme sağlar.|
+| [Word Belgesindeki Altbilgileri Kaldırma](./remove-footers/) | Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinden altbilgileri nasıl kaldıracağınızı öğrenin. |
 | [Word Belgesindeki İçindekiler Tablosunu Kaldırma](./remove-table-of-contents/) | Aspose.Words for .NET kullanarak bir Word belgesindeki içindekiler tablosunu nasıl kaldıracağınızı öğrenin. |

@@ -138,7 +138,7 @@ Aggiungi filigrane, come "Confidenziale" o "Bozza", ai tuoi documenti per indica
 
 ### 8.2 Aggiunta di intestazioni e piè di pagina
 
-Includi intestazioni e piè di pagina con numeri di pagina, titoli di documenti o altre informazioni rilevanti.
+Includi intestazioni e piè di pagina con numeri di pagina, titoli di documenti o altre informazioni pertinenti.
 
 ### 8.3 Gestione delle interruzioni di pagina
 

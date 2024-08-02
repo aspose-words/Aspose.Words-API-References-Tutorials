@@ -9,7 +9,7 @@ url: /tr/net/programming-with-bookmarks/create-bookmark/
 ---
 ## giriiş
 
-Bir Word belgesinde yer imleri oluşturmak, özellikle büyük belgeler arasında zahmetsizce gezinmek istediğinizde oyunun kurallarını değiştirebilir. Bugün Aspose.Words for .NET'i kullanarak yer imleri oluşturma sürecini inceleyeceğiz. Bu eğitim sizi adım adım yönlendirerek sürecin her bölümünü anlamanızı sağlayacaktır. Öyleyse hemen dalalım!
+Bir Word belgesinde yer imleri oluşturmak, özellikle büyük belgeler arasında zahmetsizce gezinmek istediğinizde oyunun kurallarını değiştirebilir. Bugün Aspose.Words for .NET'i kullanarak yer imleri oluşturma sürecini inceleyeceğiz. Bu eğitim sizi adım adım yönlendirerek sürecin her bölümünü anlamanızı sağlayacaktır. O halde hemen içeri dalalım!
 
 ## Önkoşullar
 

@@ -11,7 +11,7 @@ url: /ko/net/programming-with-loadoptions/load-encrypted-document/
 
 이 튜토리얼에서는 암호화된 Word 문서를 로드하고 .NET용 Aspose.Words를 사용하여 새 비밀번호로 저장하는 방법을 배웁니다. 암호화된 문서를 처리하는 것은 특히 민감한 정보를 처리할 때 문서 보안을 유지하는 데 필수적입니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 

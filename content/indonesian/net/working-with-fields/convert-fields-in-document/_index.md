@@ -2,92 +2,91 @@
 title: Konversi Bidang Dalam Dokumen
 linktitle: Konversi Bidang Dalam Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengonversi bidang dokumen menjadi teks menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengonversi bidang di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan ini. Ikuti tutorial kami untuk mengelola dan mengubah bidang di dokumen Anda secara efisien.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/convert-fields-in-document/
 ---
+## Perkenalan
 
-Dalam tutorial ini, Kami akan memandu Anda panduan langkah demi langkah menggunakan fungsi ConvertFieldsInDocument dari perangkat lunak Aspose.Words untuk .NET. Kami akan menjelaskan secara rinci kode sumber C# yang diperlukan untuk fitur ini dan memberikan contoh format keluaran penurunan harga.
+Apakah Anda ingin mengonversi bidang di dokumen Word Anda dengan mudah? Anda berada di tempat yang tepat! Dalam panduan ini, kami akan memandu Anda melalui proses mengonversi bidang di dokumen Word menggunakan Aspose.Words untuk .NET. Baik Anda baru mengenal Aspose.Words atau ingin menyempurnakan keterampilan Anda, tutorial ini akan memberikan panduan langkah demi langkah yang komprehensif untuk membantu Anda mencapai tujuan Anda.
 
-## Langkah 1: Prasyarat
-Sebelum memulai, pastikan Anda memiliki hal berikut:
+## Prasyarat
 
-- Aspose.Words untuk .NET diinstal pada mesin pengembangan Anda.
-- Dokumen Word berisi bidang tertaut yang ingin Anda konversi menjadi teks.
-- Direktori dokumen tempat Anda dapat menyimpan dokumen yang diubah.
+Sebelum kita mendalami detailnya, ada beberapa prasyarat yang harus Anda miliki:
 
-## Langkah 2: Menyiapkan lingkungan
-Pastikan Anda telah mengonfigurasi lingkungan pengembangan dengan benar untuk menggunakan Aspose.Words untuk .NET. Impor namespace yang diperlukan dan atur jalur ke direktori dokumen Anda.
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan seperti Visual Studio.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan bermanfaat.
+
+## Impor Namespace
+
+Untuk memulai, Anda harus mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini memungkinkan Anda mengakses kelas dan metode yang diperlukan untuk memanipulasi dokumen Word dengan Aspose.Words untuk .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+using System.Linq;
+```
+
+Di bagian ini, kami akan membagi proses menjadi langkah-langkah yang dapat dikelola, memastikan Anda dapat mengikuti dan menerapkan solusi secara efektif.
+
+## Langkah 1: Siapkan Direktori Dokumen
+
+Pertama, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda disimpan dan dokumen yang dikonversi akan disimpan.
 
 ```csharp
 // Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Langkah 3: Muat dokumen
- Menggunakan`Document`kelas Aspose.Words untuk memuat dokumen Word yang berisi bidang tertaut yang ingin Anda konversi.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+
+## Langkah 2: Muat Dokumen
+
+Selanjutnya, Anda akan memuat dokumen Word yang berisi bidang yang ingin Anda konversi. Dalam contoh ini, kami bekerja dengan dokumen bernama "Linked field.docx".
 
 ```csharp
-Document doc = new Document(MyDir + "Linked fields.docx");
+Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
-## Langkah 4: Ubah bidang terikat menjadi teks
- Menggunakan`Unlink()` metode untuk mengonversi semua bidang tipe "JIKA" yang ditemukan dalam dokumen menjadi teks. Metode ini digunakan untuk mengubah bidang tertaut menjadi konten tekstualnya.
+## Langkah 3: Ubah Bidang IF menjadi Teks
+
+Sekarang, kita akan mengonversi semua kolom IF di dokumen menjadi teks. Bidang IF adalah bidang bersyarat yang digunakan dalam dokumen Word untuk menyisipkan teks berdasarkan kondisi tertentu.
 
 ```csharp
+//Berikan parameter yang sesuai untuk mengonversi semua bidang IF yang ditemukan dalam dokumen (termasuk header dan footer) menjadi teks.
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
 ```
 
-## Langkah 5: Simpan dokumen yang diubah
- Menggunakan`Save()` metode untuk menyimpan dokumen dengan kolom diubah menjadi teks di direktori dokumen yang ditentukan.
+Cuplikan kode ini menemukan semua bidang IF dalam dokumen dan mengubahnya menjadi teks biasa.
+
+## Langkah 4: Simpan Dokumen
+
+Terakhir, Anda perlu menyimpan dokumen yang dimodifikasi ke disk. Ini akan membuat dokumen baru dengan bidang yang dikonversi.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
-```
-
-## Contoh kode sumber untuk ConvertFieldsInDocument menggunakan Aspose.Words untuk .NET
-
-Berikut adalah kode sumber lengkap untuk fungsi ConvertFieldsInDocument:
-
-```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-Document doc = new Document(MyDir + "Linked fields.docx");
-
-// Berikan parameter yang sesuai untuk mengonversi semua bidang IF yang ditemukan dalam dokumen (termasuk header dan footer) menjadi teks.
-doc.Range.Fields.Where(f => f.Type == FieldType.FieldIf).ToList().ForEach(f => f.Unlink());
-
 // Simpan dokumen dengan bidang yang diubah ke disk
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ```
 
 ## Kesimpulan
-Fungsi ConvertFieldsInDocument Aspose.Words untuk .NET adalah alat yang ampuh untuk mengonversi bidang tertaut dalam dokumen Word menjadi teks. 
 
-### FAQ
+Selamat! Anda telah berhasil mengonversi bidang dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan ini, Anda kini memiliki pengetahuan untuk memanipulasi dan mengubah bidang dalam dokumen Anda, sehingga meningkatkan kemampuan pemrosesan dokumen Anda.
 
-#### T: Apa yang dimaksud dengan konversi bidang di Aspose.Words?
+## FAQ
 
-J: Konversi bidang di Aspose.Words mengacu pada kemampuan untuk mengubah data dari bidang di dokumen Word menggunakan format atau tipe data berbeda. Hal ini memungkinkan Anda untuk mengubah presentasi atau struktur data dalam dokumen akhir.
+### Bisakah saya mengonversi jenis bidang lain menggunakan Aspose.Words untuk .NET?
+ Ya, Aspose.Words untuk .NET memungkinkan Anda memanipulasi berbagai jenis bidang, bukan hanya bidang IF. Anda dapat menjelajahi[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
-#### T: Bagaimana cara mengonversi bidang dalam dokumen Word dengan Aspose.Words?
+### Apa bidang IF di dokumen Word?
+Bidang IF adalah bidang bersyarat yang menampilkan teks berdasarkan kondisi tertentu. Mereka sering digunakan untuk membuat konten dinamis dalam dokumen Word.
 
-A: Untuk mengonversi kolom di dokumen Word dengan Aspose.Words, Anda dapat mengikuti langkah-langkah berikut:
+### Apakah Aspose.Words for .NET kompatibel dengan semua versi dokumen Word?
+Aspose.Words for .NET mendukung berbagai format dokumen Word, memastikan kompatibilitas dengan berbagai versi Microsoft Word.
 
-1. Impor kelas Dokumen dari namespace Aspose.Words.
-2. Buat instance Dokumen dengan memuat dokumen Anda yang sudah ada.
-3. Gunakan metode UpdateFields untuk memperbarui semua bidang dalam dokumen dan melakukan konversi.
+### Bisakah saya menggunakan Aspose.Words untuk .NET untuk mengotomatiskan tugas lain di dokumen Word?
+Sangat! Aspose.Words untuk .NET menyediakan serangkaian fitur yang kaya untuk mengotomatisasi dan memanipulasi dokumen Word, termasuk pemformatan, penggabungan, dan banyak lagi.
 
-#### T: Jenis konversi apa yang mungkin dilakukan di Aspose.Words?
-
-A: Aspose.Words mendukung beberapa jenis konversi dalam bidang, seperti konversi format tanggal, konversi format angka, konversi format teks, konversi format mata uang, konversi format persentase, dan masih banyak lagi. Anda dapat memeriksa dokumentasi Aspose.Words untuk daftar lengkap jenis konversi yang didukung.
-
-#### T: Apakah konversi bidang mengubah data asli di dokumen Word?
-
-J: Tidak, mengonversi bidang di Aspose.Words tidak memengaruhi data asli di dokumen Word. Konversi diterapkan saat memperbarui bidang, namun data asli tetap utuh. Hal ini memastikan bahwa Anda dapat kembali ke keadaan asli dokumen kapan saja.
-
-#### T: Apakah mungkin untuk menyesuaikan konversi bidang di Aspose.Words?
-
-J: Ya, konversi bidang di Aspose.Words dapat disesuaikan dengan menggunakan kode pemformatan tertentu atau dengan menyesuaikan opsi konversi yang tersedia. Anda dapat menentukan format khusus untuk tanggal, angka, teks, dll., untuk memenuhi kebutuhan spesifik Anda.
+### Di mana saya dapat menemukan lebih banyak tutorial dan contoh untuk Aspose.Words untuk .NET?
+ Anda dapat menemukan lebih banyak tutorial dan contoh di[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/).

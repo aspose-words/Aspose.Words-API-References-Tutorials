@@ -28,7 +28,7 @@ För att börja måste du installera Aspose.Words for Python-biblioteket. Du kan
 pip install aspose-words
 ```
 
-## Ladda ett dokument
+## Laddar ett dokument
 
 Innan vi kan navigera och redigera ett dokument måste vi ladda det i vårt Python-skript:
 

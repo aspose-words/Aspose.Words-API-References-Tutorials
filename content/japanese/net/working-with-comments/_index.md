@@ -13,7 +13,7 @@ url: /ja/net/working-with-comments/
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [コメントを追加](./add-comments/) | Aspose.Words for .NET を使用して Word 文書にコメントを追加する方法を学習します。 |
-| [アンカーコメント](./anchor-comment/) | Aspose.Words for .NET を使用して、Word 文書内の特定のテキストにコメントの返信を固定する方法を学習します。 |
-| [追加 削除 コメント 返信](./add-remove-comment-reply/) | Aspose.Words for .NET を使用して Word 文書にコメントの返信を追加および削除する方法を学習します。 |
-| [コメントの解決と返信](./comment-resolved-and-replies/) | Aspose.Words for .NET を使用して Word 文書内のコメントとその返信を解決する方法を学習します。 |
+| [コメントを追加](./add-comments/) | ガイドを使用して、Aspose.Words for .NET を使用して Word 文書にコメントを追加する方法を学びます。文書の共同作業プロセスを簡単に強化できます。 |
+| [アンカーコメント](./anchor-comment/) | Aspose.Words for .NET を使用して Word 文書にアンカー コメントを追加する方法を学びます。効率的な文書共同作業を行うには、ステップ バイ ステップ ガイドに従ってください。 |
+| [追加 削除 コメント 返信](./add-remove-comment-reply/) | Aspose.Words for .NET を使用して Word 文書にコメントの返信を追加および削除する方法を学びます。このステップ バイ ステップ ガイドを使用して、文書の共同作業を強化します。 |
+| [コメントの解決と返信](./comment-resolved-and-replies/) | Aspose.Words for .NET を使用して、Word 文書内のコメントの解決と返信を自動化します。ステップ バイ ステップ ガイドが含まれています。 |

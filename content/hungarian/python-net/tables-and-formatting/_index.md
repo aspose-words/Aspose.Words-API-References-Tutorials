@@ -39,4 +39,4 @@ Ismerje meg, hogyan hozhat létre és formázhat vízjeleket dokumentumokban az 
 ### [Táblázatok optimalizálása a Word dokumentumokban történő adatmegjelenítéshez](./document-tables/)
 Ismerje meg, hogyan optimalizálhatja a táblázatokat adatmegjelenítéshez Word-dokumentumokban az Aspose.Words for Python használatával. Növelje az olvashatóságot és a vizuális vonzerőt lépésről lépésre szóló útmutatásokkal és forráskód-példákkal.
 ### [A dokumentumtáblázat stílusai és formázása](./document-table-styles-formatting/)
-Ismerje meg a dokumentumtáblázatok stílusát és formázását az Aspose.Words for Python használatával. Táblázatok létrehozása, testreszabása és exportálása lépésenkénti útmutatókkal és kódpéldákkal. Tökéletesítse dokumentumbemutatóit még ma! 
+Ismerje meg a dokumentumtáblázatok stílusát és formázását az Aspose.Words for Python használatával. Táblázatok létrehozása, testreszabása és exportálása lépésenkénti útmutatókkal és kódpéldákkal. Fokozza még ma a dokumentumbemutatóit! 

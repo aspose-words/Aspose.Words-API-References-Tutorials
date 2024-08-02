@@ -2,20 +2,38 @@
 title: Mezőfrissítési kultúraforrás módosítása
 linktitle: Mezőfrissítési kultúraforrás módosítása
 second_title: Aspose.Words Document Processing API
-description: Mező-frissítési kultúraforrás módosítása, Lépésről lépésre útmutató a kultúraforrás módosításához az Aspose.Words for .NET-ben.
+description: Ebből az útmutatóból megtudhatja, hogyan módosíthatja a helyszíni frissítési kultúraforrást az Aspose.Words for .NET-ben. Könnyen szabályozhatja a dátum formázását a különböző kultúrák alapján.
 type: docs
 weight: 10
 url: /hu/net/working-with-fields/change-field-update-culture-source/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok mezőfrissítési kultúraforrásának megváltoztatásán az Aspose.Words for .NET használatával. A kultúraforrás módosításával szabályozhatja a dátumformátumot a mezőfrissítési és körlevél-műveletek során. Ennek eléréséhez megadjuk a szükséges C# forráskódot és lépésről lépésre.
+Ebben az oktatóanyagban belemerülünk az Aspose.Words for .NET világába, és megvizsgáljuk, hogyan lehet megváltoztatni a helyszíni frissítési kultúraforrást. Ha olyan Word-dokumentumokkal foglalkozik, amelyek dátummezőket tartalmaznak, és szabályoznia kell, hogy ezek a dátumok hogyan legyenek formázva a különböző kultúrák alapján, akkor ez az útmutató az Ön számára készült. Lépésről lépésre járjuk végig a folyamatot, biztosítva, hogy minden koncepciót megértsen, és hatékonyan tudja alkalmazni projektjei során.
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
-- Az Aspose.Words for .NET könyvtár telepítve van a rendszerére.
 
-## 1. lépés: Hozzon létre egy dokumentumot és a DocumentBuildert
-Kezdésként hozzon létre egy példányt a Document osztályból és egy DocumentBuilder objektumból:
+Mielőtt belevágnánk a kódba, győződjön meg arról, hogy rendelkezik a következőkkel:
+
+-  Aspose.Words for .NET: Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Bármely .NET-kompatibilis IDE (pl. Visual Studio).
+- Alapvető C# ismerete: Ez az oktatóanyag feltételezi, hogy alapvető ismeretekkel rendelkezik a C# programozásról.
+
+## Névterek importálása
+
+Először is importáljuk a projektünkhöz szükséges névtereket. Ez biztosítja, hogy hozzáférhessünk az Aspose.Words által biztosított összes szükséges osztályhoz és metódushoz.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Most bontsuk le a példát több lépésre, hogy segítsen megérteni, hogyan módosítható a helyszíni frissítési kultúraforrás az Aspose.Words for .NET-ben.
+
+## 1. lépés: Inicializálja a dokumentumot
+
+ Az első lépés egy új példány létrehozása a`Document` osztály és a`DocumentBuilder`. Ez megalapozza a Word-dokumentum létrehozását és kezelését.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,80 +41,58 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Tartalom beszúrása adott területi beállítással
-Ezután állítsa be a nyelvet németre, és szúrjon be dátumformátumú mezőket:
+## 2. lépés: Adott nyelvi beállítású mezők beszúrása
+
+Ezután mezőket kell beszúrnunk a dokumentumba. Ebben a példában két dátummezőt szúrunk be. A betűtípus területi beállítását németre (LocaleId = 1031) állítjuk be, hogy bemutassuk, hogyan befolyásolja a kultúra a dátumformátumot.
 
 ```csharp
-builder.Font.LocaleId = 1031;
+builder.Font.LocaleId = 1031; // német
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-A fenti kódban a betűtípus nyelvi beállítását németre (1031-es helyi azonosító) állítjuk be, és két mezőt szúrunk be meghatározott dátumformátummal.
+## 3. lépés: Állítsa be a mezőfrissítési kultúraforrást
 
-## 3. lépés: Mezőfrissítési kultúraforrás módosítása
-A mezőfrissítési kultúraforrás módosításához használja a FieldOptions osztályt:
+ A mezők frissítése során használt kultúra szabályozásához beállítottuk a`FieldUpdateCultureSource` tulajdona a`FieldOptions`osztály. Ez a tulajdonság határozza meg, hogy a kultúra a mezőkódból vagy a dokumentumból származik-e.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
 
-Ebben a példában a mező frissítése során használt kultúrát úgy állítjuk be, hogy a mező által használt kultúra közül válasszuk ki.
+## 4. lépés: Hajtsa végre a körlevél funkciót
 
-## 4. lépés: Hajtsa végre a körlevélkészítést
-Hajtson végre egy körlevél műveletet, és adja meg a dátum értékét a "Date2" mezőben:
+Most egy körözést kell végrehajtanunk, hogy a mezőket tényleges adatokkal töltsük fel. Ebben a példában a második dátummezőt (`Date2`) 2011. január 1-jéig.
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
-
-Ebben a kódrészletben végrehajtjuk a körlevél-műveletet, és megadjuk a DateTime értéket a "Date2" mezőben.
 
 ## 5. lépés: Mentse el a dokumentumot
-Mentse el a módosított dokumentumot fájlba a Dokumentum osztály Mentés metódusával:
+
+Végül elmentjük a dokumentumot a megadott könyvtárba. Ez a lépés befejezi a helyszíni frissítési kultúraforrás módosításának folyamatát.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
-```
-
-### Példa forráskód a mezőfrissítési kultúraforrás megváltoztatásához az Aspose.Words for .NET használatával
-Íme a teljes forráskód a Word dokumentumok mezőfrissítési kultúraforrásának Aspose.Words for .NET használatával történő módosításához:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Font.LocaleId = 1031;
-builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
-builder.Write(" - ");
-builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
-
-doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
-
-doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
-
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Következtetés
-Gratulálunk! Sikeresen megtanulta, hogyan módosíthatja a mező frissítési kultúra forrását a Word dokumentumokban az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével és a mellékelt forráskód felhasználásával immár vezérelheti a dátumformázáshoz használt kultúrát a mezőfrissítési és körlevél-műveletek során. Szabja testre a kultúraforrást igényei szerint, hogy biztosítsa a pontos és következetes dátumot.
 
-### GYIK
+És megvan! Sikeresen módosította a mezőfrissítési kultúra forrását az Aspose.Words for .NET-ben. Az alábbi lépések követésével biztosíthatja, hogy a Word-dokumentumok dátumokat és egyéb mezőértékeket jelenítsenek meg a megadott kultúrabeállításoknak megfelelően. Ez különösen akkor lehet hasznos, ha nemzetközi közönség számára készít dokumentumokat.
 
-#### K: Hogyan módosíthatom a helyszíni frissítési kultúraforrást az Aspose.Words for .NET-ben?
+## GYIK
 
- V: A mezőfrissítési kultúraforrás módosításához az Aspose.Words for .NET-ben, használja a`Document.FieldOptions.CultureSource` tulajdonságot, és állítsa be értékét`FieldCultureSource.FieldCode` vagy`FieldCultureSource.CurrentThread` . Például használhatja`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` mezőkódban meghatározott kultúra használatához.
+###  Mi a célja a beállításnak a`LocaleId`?
+ A`LocaleId` megadja a szöveg kultúra beállításait, amelyek befolyásolják a dátumok és más terület-érzékeny adatok formázását.
 
-#### K: Hogyan adhatok meg egy adott kultúrát az Aspose.Words for .NET mezőinek frissítéséhez?
+### Használhatok a némettől eltérő területi beállítást?
+ Igen, beállíthatja a`LocaleId`bármely érvényes területi azonosítóra. Például 1033 angol (Egyesült Államok) esetén.
 
- V: Ha egy adott kultúrát szeretne megadni az Aspose.Words for .NET mezőinek frissítéséhez, használja a`Document.FieldOptions.FieldUpdateCultureInfo` tulajdonság és állítsa be a`CultureInfo` a kívánt kultúrának megfelelő tárgy. Például használhatja`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` a francia (francia) kultúra pontosítására.
+###  Mi történik, ha nem állítom be a`FieldUpdateCultureSource` property?
+Ha ez a tulajdonság nincs beállítva, akkor a mezők frissítésekor a dokumentum alapértelmezett kultúrabeállításait fogja használni.
 
-#### K: Letiltható az automatikus mezőfrissítés az Aspose.Words for .NET-ben?
+### Lehetséges a mezők frissítése a dokumentum kultúrája alapján a mezőkód helyett?
+ Igen, beállíthatod`FieldUpdateCultureSource` nak nek`FieldUpdateCultureSource.Document` a dokumentum kultúra beállításainak használatához.
 
- V: Igen, az Aspose.Words for .NET-ben letiltható az automatikus mezőfrissítés. Használhatja a`Document.FieldOptions.UpdateFields` tulajdonságot, és állítsa be`false` hogy megakadályozza a mezők automatikus frissítését. Ez lehetővé teszi a mezők szükség szerinti manuális frissítését.
-
-#### K: Hogyan frissíthetem manuálisan a dokumentummezőket az Aspose.Words for .NET-ben?
-
- V: Egy dokumentum mezőinek manuális frissítéséhez az Aspose.Words for .NET programban használja a`Field.Update` módszer minden mezőre külön-külön. Például használhatja`field.Update()` az adott mező frissítéséhez.
+### Hogyan formázhatom a dátumokat eltérő mintára?
+ Módosíthatja a dátumformátum mintáját a`InsertField` módszer módosításával a`\\@` kapcsoló értéke.

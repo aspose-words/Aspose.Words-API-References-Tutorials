@@ -66,7 +66,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
-Bu kod parçası belgeye bir SVG resmi ekler. SVG kodu, belirtilen noktalara, renklere ve stillere sahip basit bir çokgeni tanımlar. SVG kodunu gereksinimlerinize göre özelleştirmekten çekinmeyin.
+Bu kod parçası belgeye bir SVG resmi ekler. SVG kodu, belirtilen noktalara, renklere ve stillere sahip basit bir çokgeni tanımlar. SVG kodunu ihtiyaçlarınıza göre özelleştirmekten çekinmeyin.
 
 ## 4. Adım: HtmlSaveOptions'ı tanımlayın
 

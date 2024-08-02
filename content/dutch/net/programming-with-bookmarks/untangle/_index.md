@@ -97,7 +97,7 @@ row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 
 ## Conclusie
 
-Het ontwarren van bladwijzers in een Word-document met Aspose.Words voor .NET kan lastig lijken, maar door het op te delen in beheersbare stappen wordt het proces veel duidelijker. We hebben het laden van een document doorlopen, de bladwijzers doorlopen, relevante rijen geïdentificeerd, gecontroleerd op aangrenzende bestanden en uiteindelijk het eindknooppunt van de bladwijzer verplaatst. Met deze handleiding zou u effectiever met bladwijzers in uw Word-documenten moeten kunnen omgaan.
+Het ontwarren van bladwijzers in een Word-document met Aspose.Words voor .NET kan lastig lijken, maar door het op te delen in beheersbare stappen wordt het proces veel duidelijker. We hebben het laden van een document doorlopen, de bladwijzers doorlopen, relevante rijen geïdentificeerd, gecontroleerd op aangrenzende bestanden en ten slotte het eindknooppunt van de bladwijzer verplaatst. Met deze handleiding zou u effectiever met bladwijzers in uw Word-documenten moeten kunnen omgaan.
 
 ## Veelgestelde vragen
 

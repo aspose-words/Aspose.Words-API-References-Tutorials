@@ -121,7 +121,7 @@ Absolutamente! Aspose.Words for Java é versátil e pode lidar com documentos de
 
 Certamente! Você pode definir estilos personalizados para entradas do sumário para corresponder ao design e à formatação do seu documento.
 
-### O Aspose.Words for Java oferece suporte a referências cruzadas no sumário?
+### O Aspose.Words for Java oferece suporte a referências cruzadas no TOC?
 
 Sim, você pode criar referências cruzadas no sumário para vincular a seções ou páginas específicas do seu documento.
 

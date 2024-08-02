@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pt/net/working-with-fields/insert-merge-field-using-dom/
 ---
+## Introdução
 
 Se você trabalha com processamento de documentos em .NET, provavelmente já encontrou o Aspose.Words. Esta poderosa biblioteca oferece uma ampla gama de recursos para manipular documentos do Word de forma programática. Neste tutorial, vamos nos concentrar em um recurso específico: inserir um campo de mesclagem usando o Document Object Model (DOM) no Aspose.Words for .NET. Este guia orientará você em todas as etapas, desde a configuração do seu ambiente até a inserção e atualização de um campo de mesclagem em um documento do Word.
 
@@ -14,26 +15,26 @@ Se você trabalha com processamento de documentos em .NET, provavelmente já enc
 
 Antes de mergulhar no código, vamos garantir que você tenha tudo o que precisa para seguir este tutorial.
 
-1. **Basic Knowledge of C#:** Você deve estar confortável com a programação C#.
-2. **Visual Studio Installed:** Certifique-se de ter o Visual Studio ou qualquer outro IDE C# instalado em sua máquina.
-3. **Aspose.Words for .NET:** Baixe e instale a versão mais recente do Aspose.Words for .NET em[Lançamentos](https://releases.aspose.com/words/net/).
-4. **Valid License:** Se você não tiver uma licença, você pode obter uma[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
+1. Conhecimento básico de C#: você deve estar confortável com a programação em C#.
+2. Visual Studio instalado: certifique-se de ter o Visual Studio ou qualquer outro IDE C# instalado em sua máquina.
+3.  Aspose.Words for .NET: Baixe e instale a versão mais recente do Aspose.Words for .NET do[Lançamentos](https://releases.aspose.com/words/net/).
+4.  Licença válida: Se você não tiver uma licença, poderá obter uma[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
 
 ## Etapa 1: configure seu projeto
 
 Primeiramente, vamos configurar um novo projeto no Visual Studio.
 
-1. **Open Visual Studio.**
-2. **Create a New Project:** Vá para Arquivo > Novo > Projeto. Selecione um aplicativo de console C#.
-3. **Name Your Project:** Dê um nome significativo ao seu projeto e clique em Criar.
+1. Abra o Visual Studio.
+2. Crie um novo projeto: Vá em Arquivo > Novo > Projeto. Selecione um aplicativo de console C#.
+3. Nomeie seu projeto: Dê um nome significativo ao seu projeto e clique em Criar.
 
 ## Etapa 2: instale o Aspose.Words
 
 Para usar o Aspose.Words, você precisa adicioná-lo ao seu projeto. Isso pode ser feito por meio do Gerenciador de pacotes NuGet.
 
-1. **Open NuGet Package Manager:** Clique com o botão direito do mouse em seu projeto no Solution Explorer e selecione Gerenciar pacotes NuGet.
-2. **Search for Aspose.Words:** No Gerenciador de Pacotes NuGet, pesquise "Aspose.Words".
-3. **Install the Package:** Clique em Instalar para adicionar Aspose.Words ao seu projeto.
+1. Abra o Gerenciador de pacotes NuGet: clique com o botão direito do mouse em seu projeto no Solution Explorer e selecione Gerenciar pacotes NuGet.
+2. Pesquise Aspose.Words: No Gerenciador de Pacotes NuGet, pesquise "Aspose.Words".
+3. Instale o pacote: Clique em Instalar para adicionar Aspose.Words ao seu projeto.
 
 ## Etapa 3: importar namespaces
 
@@ -106,17 +107,17 @@ Seguindo essas etapas, você pode inserir e configurar facilmente campos de mesc
 
 ## Perguntas frequentes
 
-### 1. O que é um campo de mesclagem?
+###  O que é um campo de mesclagem?
 Um campo de mesclagem é um espaço reservado em um documento que pode ser substituído dinamicamente por dados de uma fonte de dados, como um banco de dados ou um arquivo CSV.
 
-### 2. Posso usar o Aspose.Words gratuitamente?
+###  Posso usar o Aspose.Words gratuitamente?
  Aspose.Words oferece um teste gratuito que você pode baixar[aqui](https://releases.aspose.com/). Para uso a longo prazo, você precisará adquirir uma licença.
 
-### 3. Como obtenho uma licença temporária do Aspose.Words?
+###  Como obtenho uma licença temporária do Aspose.Words?
  Você pode obter uma licença temporária no site Aspose[aqui](https://purchase.aspose.com/temporary-license/).
 
-### 4. Quais versões do .NET são suportadas pelo Aspose.Words?
+### Quais versões do .NET são suportadas pelo Aspose.Words?
 Aspose.Words oferece suporte a várias versões do .NET, incluindo .NET Framework, .NET Core e .NET Standard.
 
-### 5. Onde posso encontrar a documentação da API do Aspose.Words?
+###  Onde posso encontrar a documentação da API para Aspose.Words?
  A documentação da API está disponível[aqui](https://reference.aspose.com/words/net/).

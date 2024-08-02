@@ -16,26 +16,26 @@ Seguindo estes tutoriais, você poderá explorar totalmente os recursos de manip
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Ajustar automaticamente a tabela ao conteúdo](./auto-fit-table-to-contents/) | Aprenda como ajustar automaticamente uma tabela ao seu conteúdo em um documento do Word usando Aspose.Words for .NET. |
-| [Clonar tabela completa](./clone-complete-table/) | Aprenda como clonar uma tabela inteira em um documento do Word com Aspose.Words for .NET. |
-| [Encontrando Índice](./finding-index/) | Aprenda como encontrar índices de tabelas, linhas e células em um documento do Word com Aspose.Words for .NET. |
+| [Ajustar automaticamente a tabela ao conteúdo](./auto-fit-table-to-contents/) | Aprenda como ajustar automaticamente tabelas ao conteúdo em documentos do Word usando Aspose.Words for .NET com este guia. Perfeito para formatação de documentos dinâmica e organizada. |
+| [Clonar tabela completa](./clone-complete-table/) | Aprenda como clonar tabelas completas em documentos do Word usando Aspose.Words for .NET com este tutorial passo a passo detalhado. |
+| [Encontrando Índice](./finding-index/) | Aprenda como encontrar o índice de tabelas, linhas e células em documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente. |
 | [Inserir tabela diretamente](./insert-table-directly/) | Aprenda como inserir tabelas diretamente em documentos do Word usando Aspose.Words for .NET. Siga nosso guia passo a passo detalhado para agilizar a criação de documentos. |
-| [Inserir tabela de HTML](./insert-table-from-html/) | Aprenda como inserir uma tabela HTML em um documento Word com Aspose.Words for .NET. |
-| [Crie uma tabela simples](./create-simple-table/) | Aprenda como criar uma tabela simples em um documento do Word com Aspose.Words for .NET. |
-| [Tabela formatada](./formatted-table/) | Aprenda como criar uma tabela formatada em um documento do Word com Aspose.Words for .NET. |
-| [Tabela aninhada](./nested-table/) | Aprenda como criar uma tabela aninhada em um documento do Word com Aspose.Words for .NET. |
-| [Combinar linhas](./combine-rows/) | Aprenda como combinar linhas de tabela em um documento do Word com Aspose.Words for .NET. |
-| [Tabela dividida](./split-table/) | Aprenda como dividir uma tabela em um documento do Word usando Aspose.Words for .NET. |
-| [Formato de linha desabilita quebra entre páginas](./row-format-disable-break-across-pages/) | Aprenda como desabilitar a quebra de linha para uma tabela em várias páginas em um documento do Word com Aspose.Words for .NET. |
-| [Mantenha a mesa unida](./keep-table-together/) | Aprenda como manter uma tabela unida em um documento do Word com Aspose.Words for .NET. |
-| [Mesclagem vertical](./vertical-merge/) | Aprenda como mesclar células verticais em uma tabela em um documento do Word usando Aspose.Words for .NET. |
-| [Mesclagem horizontal](./horizontal-merge/) | Aprenda como mesclar células horizontalmente em uma tabela do Word com Aspose.Words for .NET. |
-| [Converter em células mescladas horizontalmente](./convert-to-horizontally-merged-cells/) | Aprenda como converter células de tabela em células mescladas horizontalmente em um documento do Word com Aspose.Words for .NET. |
-| [Repetir linhas nas páginas subsequentes](./repeat-rows-on-subsequent-pages/) | Aprenda como repetir linhas da tabela nas páginas subsequentes em um documento do Word com Aspose.Words for .NET. |
+| [Inserir tabela de HTML](./insert-table-from-html/) | Aprenda como inserir uma tabela HTML em um documento Word usando Aspose.Words for .NET. Siga nosso guia detalhado para integração perfeita de documentos. |
+| [Crie uma tabela simples](./create-simple-table/) | Aprenda como criar uma tabela simples em um documento do Word usando Aspose.Words for .NET com nosso guia passo a passo abrangente. |
+| [Tabela formatada](./formatted-table/) | Aprenda como criar e formatar tabelas em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. |
+| [Tabela aninhada](./nested-table/) | Aprenda como criar tabelas aninhadas em documentos do Word usando Aspose.Words for .NET com nosso guia. Perfeito para gerar layouts de documentos complexos de forma programática. |
+| [Combinar linhas](./combine-rows/) | Aprenda como combinar linhas de várias tabelas em uma usando Aspose.Words for .NET com nosso guia passo a passo. |
+| [Tabela dividida](./split-table/) | Aprenda como dividir tabelas em documentos do Word usando Aspose.Words for .NET. Nosso guia passo a passo torna o gerenciamento de tabelas fácil e eficiente. |
+| [Formato de linha desabilita quebra entre páginas](./row-format-disable-break-across-pages/) | Aprenda como desabilitar quebras de linha nas páginas em documentos do Word usando Aspose.Words for .NET para manter a legibilidade e a formatação da tabela. |
+| [Mantenha a mesa unida](./keep-table-together/) | Aprenda como evitar que tabelas se quebrem nas páginas de documentos do Word usando Aspose.Words for .NET. Siga nosso guia para manter documentos profissionais e legíveis. |
+| [Mesclagem vertical](./vertical-merge/) | Domine a fusão vertical em tabelas do Word usando Aspose.Words for .NET com este guia detalhado. Aprenda instruções passo a passo para formatação profissional de documentos. |
+| [Mesclagem horizontal](./horizontal-merge/) | Aprenda como mesclar células horizontalmente em um documento do Word usando Aspose.Words for .NET com este tutorial passo a passo detalhado. |
+| [Converter em células mescladas horizontalmente](./convert-to-horizontally-merged-cells/) | Converta células mescladas verticalmente em células mescladas horizontalmente em documentos do Word usando Aspose.Words for .NET. Guia passo a passo para um layout de mesa perfeito. |
+| [Repetir linhas nas páginas subsequentes](./repeat-rows-on-subsequent-pages/) | Aprenda como criar documentos do Word com linhas repetidas de cabeçalho de tabela usando Aspose.Words for .NET. Siga este guia para garantir documentos profissionais e sofisticados. |
 | [Ajuste automático à janela](./auto-fit-to-page-width/) | Ajuste automaticamente tabelas à janela em documentos do Word usando Aspose.Words for .NET com este guia passo a passo. Perfeito para documentos mais limpos e profissionais. |
 | [Configurações de largura preferidas](./preferred-width-settings/) | Aprenda como criar tabelas com configurações de largura absoluta, relativa e automática no Aspose.Words for .NET com este guia passo a passo. |
-| [Recuperar tipo de largura preferencial](./retrieve-preferred-width-type/) | Aprenda como recuperar o tipo e o valor de largura preferencial de uma célula em uma tabela do Word com Aspose.Words for .NET. |
-| [Obter posição na mesa](./get-table-position/) | Aprenda como obter a posição de uma tabela em um documento do Word com Aspose.Words for .NET. |
-| [Obtenha a posição da mesa flutuante](./get-floating-table-position/) | Aprenda como obter a posição de tabelas flutuantes em um documento do Word com Aspose.Words for .NET. |
-| [Posição da mesa flutuante](./floating-table-position/) | Aprenda como posicionar uma tabela em uma posição flutuante em um documento do Word com Aspose.Words for .NET. |
-| [Definir posição relativa horizontal ou vertical](./set-relative-horizontal-or-vertical-position/) | Aprenda como definir a posição relativa horizontal ou vertical de uma tabela em um documento do Word com Aspose.Words for .NET. |
+| [Recuperar tipo de largura preferencial](./retrieve-preferred-width-type/) | Aprenda como recuperar o tipo de largura preferido de células de tabela em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo. |
+| [Obter posição na mesa](./get-table-position/) | Descubra como determinar a posição de uma tabela em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo. |
+| [Obtenha a posição da mesa flutuante](./get-floating-table-position/) | Aprenda como obter posições de tabela flutuantes em documentos do Word usando Aspose.Words for .NET. Este guia passo a passo detalhado orientará você em tudo o que você precisa saber. |
+| [Posição da mesa flutuante](./floating-table-position/) | Aprenda como controlar a posição flutuante de tabelas em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo detalhado. |
+| [Definir posição relativa horizontal ou vertical](./set-relative-horizontal-or-vertical-position/) | Aprenda como definir posições horizontais e verticais relativas para tabelas em documentos do Word usando Aspose.Words for .NET com este guia passo a passo. |

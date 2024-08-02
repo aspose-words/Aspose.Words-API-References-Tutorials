@@ -12,4 +12,4 @@ Ordbehandling med vattenstämpel är en omfattande resurs som leder dig genom pr
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Lägg till textvattenstämpel med specifika alternativ](./add-text-watermark-with-specific-options/) | Lär dig hur du lägger till en textvattenstämpel med specifika alternativ med Aspose.Words för .NET. Steg-för-steg guide. |
+| [Lägg till textvattenstämpel med specifika alternativ](./add-text-watermark-with-specific-options/) | Lär dig hur du lägger till en textvattenstämpel med specifika alternativ till dina Word-dokument med Aspose.Words för .NET. Anpassa lätt teckensnitt, storlek, färg och layout. |

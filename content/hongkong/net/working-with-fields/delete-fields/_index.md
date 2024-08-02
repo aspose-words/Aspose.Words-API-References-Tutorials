@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /zh-hant/net/working-with-fields/delete-fields/
 ---
-
 ## 介紹
 
 在文件處理和自動化領域，Aspose.Words for .NET 作為一個強大的工具集脫穎而出，適合希望以程式設計方式操作、建立和管理 Word 文件的開發人員。本教學課程旨在引導您完成使用 Aspose.Words for .NET 刪除 Word 文件中的欄位的過程。無論您是經驗豐富的開發人員還是剛開始 .NET 開發，本指南都將使用清晰、簡潔的範例和說明詳細介紹從文件中有效刪除欄位所需的步驟。
@@ -16,9 +15,9 @@ url: /zh-hant/net/working-with-fields/delete-fields/
 
 在深入學習本教程之前，請確保您具備以下先決條件：
 
-### 軟體需求
+### 軟體要求
 
-1. Visual Studio：在您的系統上安裝並設定。
+1. Visual Studio：已在您的系統上安裝並設定。
 2.  Aspose.Words for .NET：下載並整合到您的 Visual Studio 專案中。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
 3. Word 文件：準備好範例 Word 文件 (.docx)，其中包含要刪除的欄位。
 
@@ -44,9 +43,9 @@ using Aspose.Words;
 ## 第2步：新增Aspose.Words參考
 
 如果您尚未在 Visual Studio 專案中新增對 Aspose.Words 的引用，請新增該引用。您可以透過以下方式執行此操作：
-   - 在解決方案資源管理器中以滑鼠右鍵按一下您的專案。
-   - 選擇“管理 NuGet 套件...”
-   - 搜尋“Aspose.Words”並將其安裝到您的專案中。
+- 在解決方案資源管理器中以滑鼠右鍵按一下您的專案。
+- 選擇“管理 NuGet 套件...”
+- 搜尋“Aspose.Words”並將其安裝到您的專案中。
 
 ## 第 3 步：準備文件
 
@@ -89,16 +88,16 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ## 常見問題解答
 
 ### 我可以刪除特定類型的欄位而不是所有欄位嗎？
-   - 是的，您可以修改循環條件以在刪除特定類型的欄位之前檢查它們。
+是的，您可以修改循環條件以在刪除特定類型的欄位之前檢查它們。
 
 ### Aspose.Words 與 .NET Core 相容嗎？
-   - 是的，Aspose.Words 支援 .NET Core，讓您在跨平台應用程式中使用它。
+是的，Aspose.Words 支援 .NET Core，讓您在跨平台應用程式中使用它。
 
 ### 使用 Aspose.Words 處理文件時如何處理錯誤？
-   - 您可以使用 try-catch 區塊來處理文件處理作業期間可能發生的異常。
+您可以使用 try-catch 區塊來處理文件處理作業期間可能發生的異常。
 
 ### 我可以刪除欄位而不更改文件中的其他內容嗎？
-   - 是的，這裡顯示的方法專門針對字段，其他內容保持不變。
+是的，這裡顯示的方法專門針對字段，其他內容保持不變。
 
 ### 在哪裡可以找到有關 Aspose.Words 的更多資源和支援？
-   - 參觀[Aspose.Words for .NET API 文檔](https://reference.aspose.com/words/net/)和[Aspose.Words 論壇](https://forum.aspose.com/c/words/8)為進一步協助。
+參觀[Aspose.Words for .NET API 文檔](https://reference.aspose.com/words/net/)和[Aspose.Words 論壇](https://forum.aspose.com/c/words/8)為進一步協助。

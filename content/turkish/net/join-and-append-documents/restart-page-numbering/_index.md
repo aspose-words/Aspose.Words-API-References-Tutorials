@@ -87,7 +87,7 @@ dstDoc.Save(dataDir + "final_document.docx");
 
 ## Çözüm
 
-Sonuç olarak, Aspose.Words for .NET'te sayfa sonları ve numaralandırma konusunda ustalaşmak, gösterişli ve iyi yapılandırılmış belgeler oluşturmanıza olanak sağlar. Bu kılavuzda özetlenen teknikleri uygulayarak içeriği yeniden başlatılan sayfa numaralandırmayla sorunsuz bir şekilde entegre edebilir, profesyonel ve okuyucu dostu bir sunum sağlayabilirsiniz. Aspose.Words'ün belge işleme için çok sayıda ek özellik sunduğunu unutmayın.
+Sonuç olarak, Aspose.Words for .NET'te sayfa sonları ve numaralandırma konusunda ustalaşmak, gösterişli ve iyi yapılandırılmış belgeler oluşturmanıza olanak sağlar. Bu kılavuzda özetlenen teknikleri uygulayarak, içeriği yeniden başlatılan sayfa numaralandırmayla sorunsuz bir şekilde bütünleştirerek profesyonel ve okuyucu dostu bir sunum sağlayabilirsiniz. Aspose.Words'ün belge işleme için çok sayıda ek özellik sunduğunu unutmayın.
 
 ## SSS'ler
 

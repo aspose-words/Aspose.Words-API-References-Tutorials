@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/remove-content/remove-table-of-contents/
 ---
-## Entfernen Sie das Inhaltsverzeichnis im Word-Dokument mit Aspose.Words für .NET
+## Einführung
 
 Sind Sie es leid, sich mit einem unerwünschten Inhaltsverzeichnis (TOC) in Ihren Word-Dokumenten herumzuschlagen? Das kennen wir alle – manchmal ist das Inhaltsverzeichnis einfach nicht notwendig. Zum Glück können Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis ganz einfach programmgesteuert entfernen. In diesem Tutorial führe ich Sie Schritt für Schritt durch den Vorgang, damit Sie ihn im Handumdrehen beherrschen. Lassen Sie uns direkt loslegen!
 
@@ -41,7 +41,7 @@ Bevor wir Ihr Dokument bearbeiten können, müssen wir seinen Speicherort defini
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem Pfad zu Ihrem Dokumentordner. Hier befindet sich Ihre Word-Datei.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem Pfad zu Ihrem Dokumentordner. Hier befindet sich Ihre Word-Datei.
 
 ## Schritt 2: Laden Sie das Dokument
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Folgendes ist passiert:
 - `doc.Range.Fields`: Dadurch wird auf alle Felder im Dokument zugegriffen.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: Dadurch werden die Felder gefiltert, um nur die Felder zu finden, bei denen es sich um Inhaltsverzeichnisse handelt.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Dadurch werden die Felder gefiltert, um nur die Felder zu finden, bei denen es sich um Inhaltsverzeichnisse handelt.
 - `.ToList().ForEach(f => f.Remove())`: Dadurch werden die gefilterten Felder in eine Liste umgewandelt und jedes einzelne entfernt.
 
 ## Schritt 4: Speichern Sie das geänderte Dokument
@@ -81,24 +81,24 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 Und da haben Sie es! Das Entfernen eines Inhaltsverzeichnisses aus einem Word-Dokument mit Aspose.Words für .NET ist unkompliziert, wenn Sie es in diese einfachen Schritte aufteilen. Diese leistungsstarke Bibliothek hilft nicht nur beim Entfernen von Inhaltsverzeichnissen, sondern kann auch eine Vielzahl anderer Dokumentmanipulationen verarbeiten. Also, probieren Sie es aus!
 
-## FAQs
+## Häufig gestellte Fragen
 
-### 1. Was ist Aspose.Words für .NET?
+### Was ist Aspose.Words für .NET?
 
 Aspose.Words für .NET ist eine robuste .NET-Bibliothek zur Dokumentbearbeitung, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert zu erstellen, zu ändern und zu konvertieren.
 
-### 2. Kann ich Aspose.Words kostenlos nutzen?
+### Kann ich Aspose.Words kostenlos nutzen?
 
  Ja, Sie können Aspose.Words mit einem[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
-### 3. Ist es möglich, mit Aspose.Words andere Felder zu entfernen?
+### Ist es möglich, mit Aspose.Words andere Felder zu entfernen?
 
 Auf jeden Fall! Sie können jedes Feld entfernen, indem Sie seinen Typ in der Filterbedingung angeben.
 
-### 4. Benötige ich Visual Studio, um Aspose.Words zu verwenden?
+### Benötige ich Visual Studio, um Aspose.Words zu verwenden?
 
 Obwohl Visual Studio zur einfacheren Entwicklung dringend empfohlen wird, können Sie jede IDE verwenden, die .NET unterstützt.
 
-### 5. Wo finde ich weitere Informationen zu Aspose.Words?
+### Wo finde ich weitere Informationen zu Aspose.Words?
 
  Ausführlichere Dokumentation finden Sie unter[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/).

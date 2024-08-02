@@ -224,7 +224,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Mozgassa a kurzort egy adott bekezdésre
 builder.moveToParagraph(2, 0);
 
-// Tartalom hozzáadása az új kurzorpozícióhoz
+// Adjon hozzá tartalmat az új kurzorpozícióhoz
 builder.writeln("This is the 3rd paragraph.");
 ```
 
@@ -319,7 +319,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Mozgassa a kurzort egy adott bekezdésre
 builder.moveToParagraph(2, 0);
 
-// Tartalom hozzáadása az új kurzorpozícióhoz
+// Adjon hozzá tartalmat az új kurzorpozícióhoz
 builder.writeln("This is the 3rd paragraph.");
 ```
 

@@ -55,7 +55,7 @@ doc.FirstSection.Remove();
 ## Câu hỏi thường gặp
 
 ### Tôi có thể xóa nhiều phần cùng một lúc không?
-Có, bạn có thể. Chỉ cần lặp qua các phần bạn muốn xóa và xóa từng phần một.
+Vâng, bạn có thể. Chỉ cần lặp qua các phần bạn muốn xóa và xóa từng phần một.
 
 ### Aspose.Words cho .NET có miễn phí không?
  Aspose.Words cung cấp bản dùng thử miễn phí mà bạn có thể nhận được[đây](https://releases.aspose.com/) Để có đầy đủ tính năng, bạn cần mua giấy phép[đây](https://purchase.aspose.com/buy).

@@ -9,7 +9,7 @@ url: /fr/net/programming-with-fileformat/verify-encrypted-document/
 ---
 ## Vérifier un document Word crypté à l'aide d'Aspose.Words pour .NET
 
- Êtes-vous déjà tombé sur un document Word crypté et vous êtes-vous demandé comment vérifier son état de cryptage par programme ? Eh bien, vous avez de la chance ! Aujourd'hui, nous plongeons dans un petit didacticiel astucieux expliquant comment procéder à l'aide d'Aspose.Words pour .NET. Ce guide étape par étape vous guidera à travers tout ce que vous devez savoir, de la configuration de votre environnement à l'exécution du code. Alors commençons, d'accord ?
+ Êtes-vous déjà tombé sur un document Word crypté et vous êtes-vous demandé comment vérifier son état de cryptage par programme ? Eh bien, vous avez de la chance ! Aujourd'hui, nous plongeons dans un petit didacticiel astucieux expliquant comment procéder à l'aide d'Aspose.Words pour .NET. Ce guide étape par étape vous guidera à travers tout ce que vous devez savoir, de la configuration de votre environnement à l'exécution du code. Alors commençons, d'accord ?
 
 ## Conditions préalables
 

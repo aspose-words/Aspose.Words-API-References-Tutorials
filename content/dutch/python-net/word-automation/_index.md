@@ -23,6 +23,6 @@ De tutorials zijn gericht op het vergroten van de efficiëntie van documentbehee
 
 Door woordautomatisering onder de knie te krijgen met Aspose.Words voor Python, kunnen ontwikkelaars de tekstverwerkingsworkflows effectief stroomlijnen. De tutorials bieden stapsgewijze instructies, praktische voorbeelden en codevoorbeelden, waardoor ontwikkelaars het volledige potentieel van Python-woordautomatisering kunnen benutten voor naadloze documentverwerking en -beheer. Omarm deze tutorials om uw documentbeheertaken te vereenvoudigen en uw tekstverwerkingsmogelijkheden te verbeteren.
 
-## Python Word-automatiseringslessen
+## Python Word-automatiseringshandleidingen
 ### [Woordautomatisering gemakkelijk gemaakt](./word-automation-made-easy/)
 Automatiseer eenvoudig de tekstverwerking met Aspose.Words voor Python. Creëer, formatteer en manipuleer documenten programmatisch. Verhoog nu de productiviteit!

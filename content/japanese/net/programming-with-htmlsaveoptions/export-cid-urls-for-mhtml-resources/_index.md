@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 
 ## 結論
 
-おめでとうございます! Aspose.Words for .NET を使用して、MHTML リソースの Cid URL を正常にエクスポートできました。このチュートリアルでは、プロジェクトの設定、Word 文書の読み込み、HTML 保存オプションの構成、および文書を MHTML として保存する手順について説明しました。これで、これらの手順を独自のプロジェクトに適用して、ドキュメント管理タスクを強化できます。
+おめでとうございます! Aspose.Words for .NET を使用して、MHTML リソースの Cid URL を正常にエクスポートしました。このチュートリアルでは、プロジェクトの設定、Word 文書の読み込み、HTML 保存オプションの構成、および文書を MHTML として保存する手順について説明しました。これで、これらの手順を独自のプロジェクトに適用して、ドキュメント管理タスクを強化できます。
 
 ## よくある質問
 

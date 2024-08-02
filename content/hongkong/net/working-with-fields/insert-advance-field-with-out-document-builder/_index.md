@@ -2,104 +2,150 @@
 title: 不使用文檔生成器插入高級字段
 linktitle: 不使用文檔生成器插入高級字段
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 將進階欄位插入 Word 文件中。
+description: 了解如何在 Aspose.Words for .NET 中不使用 DocumentBuilder 插入進階欄位。請遵循本指南來增強您的文件處理技能。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
+## 介紹
 
-以下是解釋 C# 原始程式碼的逐步指南，該程式碼使用 Aspose.Words for .NET 的「無需 DocumentBuilder 的高階欄位插入」功能。確保仔細執行每個步驟以獲得所需的結果。
+您是否希望使用 Aspose.Words for .NET 來增強您的 Word 文件操作？嗯，您來對地方了！在本教學中，我們將引導您完成在不使用 DocumentBuilder 類別的情況下將進階欄位插入到 Word 文件中的過程。閱讀本指南後，您將充分了解如何使用 Aspose.Words for .NET 來實現這一目標。那麼，讓我們深入研究，讓您的文件處理變得更加強大和多功能！
 
-## 第 1 步：文檔目錄設置
+## 先決條件
 
-在提供的程式碼中，您必須指定文件的目錄。將值“YOUR DOCUMENT DIRECTORY”替換為文檔目錄的相應路徑。
+在我們開始之前，請確保您具備以下條件：
+
+-  Aspose.Words for .NET Library：您可以下載它[這裡](https://releases.aspose.com/words/net/).
+- Visual Studio：任何最新版本都可以。
+- C# 基礎知識：本教學假設您對 C# 程式設計有基本的了解。
+-  Aspose.Words 許可證：取得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/)如果你沒有的話。
+
+## 導入命名空間
+
+在深入研究程式碼之前，請確保您已將必要的命名空間匯入專案：
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+## 第 1 步：設定您的項目
+
+首先，讓我們設定 Visual Studio 專案。
+
+### 建立一個新項目
+
+1. 打開視覺工作室。
+2. 選擇建立新項目。
+3. 選擇控制台應用程式（.NET Core）並按一下下一步。
+4. 為您的專案命名並點擊“建立”。
+
+### 安裝 Aspose.Words for .NET
+
+1. 在解決方案資源管理器中以滑鼠右鍵按一下您的專案。
+2. 選擇管理 NuGet 套件。
+3. 搜尋 Aspose.Words 並安裝最新版本。
+
+## 步驟2：初始化文件和段落
+
+現在我們的專案已經設定完畢，我們需要初始化一個新文件和一個段落，我們將在其中插入高級欄位。
+
+### 初始化文檔
+
+1. 在你的`Program.cs`文件，先建立一個新文檔：
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
 ```
 
-## 第 2 步：建立文件和段落
+這將設定一個新的空白文檔。
 
-我們首先建立一個新文件並獲取第一段。
+### 新增一個段落
+
+2. 取得文件中的第一段：
 
 ```csharp
-Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## 步驟 3：插入進階字段
+這確保了我們有一個可以使用的段落。
 
-我們使用`AppendField()`將高級欄位插入段落的方法。
+## 第 3 步：插入進階字段
+
+現在，讓我們將高級欄位插入到我們的段落中。
+
+### 建立字段
+
+1. 將高級字段附加到段落中：
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-然後，我們透過指定所需的值來配置高階欄位的各種屬性。
+這在我們的段落中創建了一個新的高級字段。
+
+### 設定字段屬性
+
+2. 配置欄位屬性以指定偏移量和位置：
 
 ```csharp
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
+field.DownOffset = "10";
+field.LeftOffset = "10";
+field.RightOffset = "-3.3";
+field.UpOffset = "0";
 field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
+field.VerticalPosition = "100";
 ```
 
-最後，我們調用`Update()`更新字段的方法。
+這些設定調整文字相對於其正常位置的位置。
+
+## 第 4 步：更新並儲存文檔
+
+插入並配置欄位後，就可以更新並儲存文件了。
+
+### 更新字段
+
+1. 確保該欄位已更新以反映我們的變更：
 
 ```csharp
-field. Update();
+field.Update();
 ```
 
-### 使用 Aspose.Words for .NET 插入進階欄位（無需 DocumentBuilder）的原始程式碼範例
+這可確保正確套用所有欄位屬性。
+
+### 儲存文件
+
+2. 將文件儲存到指定目錄：
 
 ```csharp
-//文檔目錄的路徑。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-//文檔建立。
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-
-//插入高級字段。
-FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
-
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
-field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
-
-field. Update();
-
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-在此範例中，我們建立了一個新文檔，在不使用 DocumentBuilder 的情況下插入了高級字段，配置了各種字段屬性，並使用指定的文件名稱保存了文檔。
+這將保存包含高級欄位的文件。
 
-關於如何使用 Aspose.Words for .NET 的「插入高級欄位而不使用 DocumentBuilder」功能的指南到此結束。
+## 結論
 
-### 常見問題解答
+現在你就擁有了！您已成功將進階欄位插入到 Word 文件中，而無需使用 DocumentBuilder 類別。透過執行這些步驟，您已經利用 Aspose.Words for .NET 的強大功能以程式方式操作 Word 文件。無論您是自動產生報告還是建立複雜的文件模板，這些知識無疑都會派上用場。不斷嘗試和探索 Aspose.Words 的功能，將您的文件處理提升到新的水平！
 
-#### Q：Aspose.Words 中的高階欄位是什麼？
+## 常見問題解答
 
-答：Aspose.Words 中的高階字段是一種特殊類型的字段，可讓您在 Word 文件中執行計算、包含條件並執行複雜的操作。它為創建動態和自訂欄位提供了極大的靈活性。
+### Aspose.Words 中的高階欄位是什麼？
 
-#### Q：如何在不使用 Aspose.Words 中的文件產生器的情況下在 Word 文件中插入進階欄位？
+Aspose.Words 中的進階欄位可讓您控製文字相對於其正常位置的位置，從而精確控製文件中的文字佈局。
 
-答：要在 Word 文件中插入進階欄位而不使用 Aspose.Words 中的文件產生器，您可以按照以下步驟操作：
+### 我可以將 DocumentBuilder 與高階欄位一起使用嗎？
 
-1. 從 Aspose.Words.Fields 命名空間匯入 Document 和 Field 類別。
-2. 透過載入現有文件來建立 Document 實例。
-3. 使用 InsertField 方法透過指定高級字段代碼來插入高級字段。
-4. 儲存文檔。
+是的，您可以使用 DocumentBuilder 插入高級字段，但本教學課程示範如何在不使用 DocumentBuilder 的情況下執行此操作，以獲得更大的靈活性和控制力。
 
-#### Q：如何取得Word文件中高階欄位的結果？
+### 在哪裡可以找到更多使用 Aspose.Words 的範例？
 
-答：要取得 Word 文件中進階欄位的結果，您可以使用 Field 類別中提供的 Result 屬性。該屬性傳回欄位的計算結果。
+您可以在以下位置找到全面的文件和範例[Aspose.Words for .NET 文檔](https://reference.aspose.com/words/net/)頁。
 
-#### Q：高級欄位插入Word文件後可以修改公式嗎？
+### Aspose.Words for .NET 可以免費使用嗎？
 
-答：是的，您可以將高級欄位插入Word文件後編輯其公式。您可以透過存取 Field 類別的 FieldCode 屬性並透過修改公式文字來更新公式來完成此操作。
+ Aspose.Words for .NET 提供免費試用版，您可以下載[這裡](https://releases.aspose.com/)。要獲得完整功能，您需要購買許可證。
+
+### 如何獲得 Aspose.Words for .NET 支援？
+
+如需支持，您可以訪問[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8).

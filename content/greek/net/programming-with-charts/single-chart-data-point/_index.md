@@ -32,7 +32,7 @@ using Aspose.Words.Drawing.Charts;
 
 ## Βήμα 1: Αρχικοποιήστε το Document και το DocumentBuilder
 
-Εντάξει, ας ξεκινήσουμε τα πράγματα αρχικοποιώντας ένα νέο έγγραφο και ένα DocumentBuilder. Αυτός θα είναι ο καμβάς για το γράφημά μας.
+Εντάξει, ας ξεκινήσουμε τα πράγματα αρχικοποιώντας ένα νέο έγγραφο και ένα DocumentBuilder. Αυτός θα είναι ο καμβάς για το διάγραμμά μας.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -12,4 +12,4 @@ url: /zh/net/programming-with-watermark/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [使用特定选项添加文本水印](./add-text-watermark-with-specific-options/) | 了解如何使用 Aspose.Words for .NET 添加具有特定选项的文本水印。分步指南。 |
+| [使用特定选项添加文本水印](./add-text-watermark-with-specific-options/) | 了解如何使用 Aspose.Words for .NET 向 Word 文档添加具有特定选项的文本水印。轻松自定义字体、大小、颜色和布局。 |

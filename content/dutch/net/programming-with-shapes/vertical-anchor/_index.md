@@ -2,77 +2,104 @@
 title: Verticaal anker
 linktitle: Verticaal anker
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een vorm verticaal in een document plaatst met behulp van de verticale ankerfunctie in Aspose.Words voor .NET.
+description: Leer hoe u verticale ankerposities instelt voor tekstvakken in Word-documenten met Aspose.Words voor .NET. Gemakkelijke stap-voor-stap handleiding inbegrepen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-shapes/vertical-anchor/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u de verticale ankerfunctie in Aspose.Words voor .NET gebruikt om een vorm verticaal in een document te positioneren. Door de verticale ankereigenschap van een vorm in te stellen, kunt u de verticale uitlijning ten opzichte van de tekst of de pagina bepalen.
+Heeft u ooit de behoefte gehad om precies te bepalen waar tekst in een tekstvak in een Word-document verschijnt? Misschien wilt u dat uw tekst aan de boven-, midden- of onderkant van het tekstvak wordt verankerd? Dan ben je hier aan het juiste adres! In deze zelfstudie onderzoeken we hoe u Aspose.Words voor .NET kunt gebruiken om het verticale anker van tekstvakken in Word-documenten in te stellen. Beschouw verticale verankering als de toverstaf die uw tekst precies op de gewenste plek in de container plaatst. Klaar om erin te duiken? Laten we beginnen!
 
 ## Vereisten
-Om deze tutorial te volgen, heb je het volgende nodig:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd.
-- Basiskennis van C# en woordenverwerking met Word-documenten.
+Voordat we ingaan op de moeren en bouten van verticale verankering, moet je een paar dingen op hun plaats hebben:
 
-## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Als je hem nog niet hebt, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+2. Visual Studio: In deze tutorial wordt ervan uitgegaan dat u Visual Studio of een andere .NET IDE gebruikt voor codering.
+3. Basiskennis van C#: Bekendheid met C# en .NET zal u helpen dit probleemloos te volgen.
+
+## Naamruimten importeren
+
+Om aan de slag te gaan, moet u de benodigde naamruimten in uw C#-code importeren. Hier vertelt u uw toepassing waar de klassen en methoden kunnen worden gevonden die u gaat gebruiken. Hier leest u hoe u het moet doen:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## Stap 2: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder` bezwaar maken tegen het werken met het document.
+Deze naamruimten bieden de klassen die u nodig hebt om met documenten en vormen te werken.
+
+## Stap 1: Initialiseer het document
+
+Allereerst moet u een nieuw Word-document maken. Zie dit als het opzetten van je canvas voordat je begint met schilderen.
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Een vorm invoegen en configureren
- Voeg een vorm in het document in met behulp van de`InsertShape` werkwijze van de`DocumentBuilder` voorwerp. Stel de gewenste afmetingen voor de vorm in.
+ Hier,`Document` is je lege canvas, en`DocumentBuilder` is uw penseel, waarmee u vormen en tekst kunt toevoegen.
+
+## Stap 2: Voeg een tekstvakvorm in
+
+Laten we nu een tekstvak aan ons document toevoegen. Dit is waar uw tekst zal leven. 
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
 ```
 
-## Stap 4: Stel het verticale anker in
-Stel de verticale ankereigenschap van de vorm in om de verticale uitlijning ervan te bepalen. In dit voorbeeld stellen we dit in op 'Onder' om de vorm onderaan de tekst of pagina te verankeren.
+ In dit voorbeeld`ShapeType.TextBox` specificeert de gewenste vorm, en`200, 200` zijn de breedte en hoogte van het tekstvak in punten.
+
+## Stap 3: Stel het verticale anker in
+
+Hier gebeurt de magie! U kunt de verticale uitlijning van de tekst in het tekstvak instellen. Dit bepaalt of de tekst aan de boven-, midden- of onderkant van het tekstvak is verankerd.
 
 ```csharp
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
-## Stap 5: Voeg inhoud toe aan de vorm
- Gebruik de`MoveTo` werkwijze van de`DocumentBuilder` object om de cursor naar de eerste alinea van de vorm te verplaatsen. Gebruik dan de`Write` methode om inhoud aan de vorm toe te voegen.
+ In dit geval,`TextBoxAnchor.Bottom`zorgt ervoor dat de tekst aan de onderkant van het tekstvak wordt verankerd. Als je het gecentreerd of uitgelijnd wilt hebben met de bovenkant, zou je het gebruiken`TextBoxAnchor.Center` of`TextBoxAnchor.Top`respectievelijk.
+
+## Stap 4: Voeg tekst toe aan het tekstvak
+
+Nu is het tijd om wat inhoud aan uw tekstvak toe te voegen. Zie het als het invullen van je canvas met de laatste hand.
 
 ```csharp
 builder.MoveTo(textBox.FirstParagraph);
 builder.Write("Textbox contents");
 ```
 
-## Stap 6: Sla het document op
- Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithShapes.VerticalAnchor.docx".
+ Hier,`MoveTo` zorgt ervoor dat de tekst in het tekstvak wordt ingevoegd, en`Write` voegt de daadwerkelijke tekst toe.
+
+## Stap 5: Sla het document op
+
+De laatste stap is het opslaan van uw document. Dit is alsof je je voltooide schilderij in een lijst plaatst.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 ```
 
-### Voorbeeldbroncode voor verticaal anker met Aspose.Words voor .NET 
+## Conclusie
 
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+En daar heb je het! U hebt zojuist geleerd hoe u de verticale uitlijning van tekst in een tekstvak in een Word-document kunt regelen met behulp van Aspose.Words voor .NET. Of u tekst nu bovenaan, in het midden of onderaan verankert, deze functie geeft u nauwkeurige controle over de lay-out van uw document. Dus de volgende keer dat u de tekstplaatsing van uw document moet aanpassen, weet u precies wat u moet doen!
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
-	textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
-	builder.MoveTo(textBox.FirstParagraph);
-	builder.Write("Textbox contents");
-	doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
-```
+## Veelgestelde vragen
 
-Dat is het! U hebt met succes de verticale ankerfunctie in Aspose.Words voor .NET gebruikt om een vorm verticaal in een document te positioneren.
+### Wat is verticale verankering in een Word-document?
+Verticale verankeringsregelaars waar de tekst in een tekstvak wordt geplaatst, zoals uitlijning boven, midden of onder.
+
+### Kan ik naast tekstvakken ook andere vormen gebruiken?
+Ja, u kunt verticale verankering gebruiken met andere vormen, hoewel tekstvakken het meest voorkomende gebruik zijn.
+
+### Hoe wijzig ik het ankerpunt nadat ik het tekstvak heb gemaakt?
+ U kunt het ankerpunt wijzigen door de`VerticalAnchor` eigenschap van het tekstvakvormobject.
+
+### Is het mogelijk om tekst in het midden van het tekstvak te verankeren?
+ Absoluut! Gebruik gewoon`TextBoxAnchor.Center` om de tekst verticaal in het tekstvak te centreren.
+
+### Waar kan ik meer informatie vinden over Aspose.Words voor .NET?
+ Bekijk de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) voor meer details en handleidingen.

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-markdown/emphases/
 ---
 
-tym przykładzie wyjaśnimy, jak używać akcentów w Aspose.Words dla .NET. akcenty służą do podkreślenia pewnych części tekstu, np. pogrubienia i kursywy.
+W tym przykładzie wyjaśnimy, jak używać akcentów w Aspose.Words dla .NET. akcenty służą do podkreślenia pewnych części tekstu, np. pogrubienia i kursywy.
 
 ## Krok 1: Inicjalizacja dokumentu
 
@@ -59,7 +59,7 @@ builder. Write(".");
 
 ```
 
-## Krok 4: Zapisanie dokumentu
+## Krok 4: Zapisywanie dokumentu
 
  Wreszcie możemy zapisać dokument w żądanym formacie. W tym przykładzie używamy`.md` rozszerzenie formatu Markdown.
 
@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### P: Jak wyróżnić tekst za pomocą Markdown?
 
-Odp.: Aby wyróżnić tekst za pomocą Markdown, po prostu otocz tekst odpowiednimi symbolami. Używać`*` Lub`_` dla kursywy,`**` Lub`__` za pogrubienie i`~~` do przekreślenia.
+ Odp.: Aby wyróżnić tekst za pomocą Markdown, po prostu otocz tekst odpowiednimi symbolami. Używać`*` Lub`_` dla kursywy,`**` Lub`__` za pogrubienie i`~~` do przekreślenia.
 
 #### P: Czy możemy połączyć różne wyróżnienia w tym samym tekście?
 

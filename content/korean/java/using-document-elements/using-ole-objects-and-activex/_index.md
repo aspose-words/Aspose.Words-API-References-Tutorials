@@ -9,7 +9,7 @@ url: /ko/java/using-document-elements/using-ole-objects-and-activex/
 ---
 이 튜토리얼에서는 Aspose.Words for Java에서 OLE(Object Linking and Embedding) 개체와 ActiveX 컨트롤을 사용하여 작업하는 방법을 살펴보겠습니다. OLE 개체 및 ActiveX 컨트롤은 스프레드시트, 멀티미디어 파일 또는 대화형 컨트롤과 같은 외부 콘텐츠를 포함하거나 연결하여 문서를 향상시킬 수 있는 강력한 도구입니다. 코드 예제를 자세히 살펴보고 이러한 기능을 효과적으로 사용하는 방법을 알아보세요.
 
-### 전제조건
+### 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

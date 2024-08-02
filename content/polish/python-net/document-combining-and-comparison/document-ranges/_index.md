@@ -75,7 +75,7 @@ doc.range.replace("old_text", "new_text", False, False)
 
 ## Modyfikowanie formatowania
 
-Precyzyjna edycja polega na dostosowaniu formatowania. Nawigacja po elementach formatowania pozwala zachować spójny wygląd:
+Precyzyjna edycja polega na dostosowaniu formatowania. Nawigowanie po elementach formatowania pozwala nam zachować spójny wygląd:
 
 ```python
 for run in doc.get_child_nodes(NodeType.RUN, True):

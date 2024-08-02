@@ -94,4 +94,4 @@ Sí, puede crear un certificado autofirmado con fines de prueba. Sin embargo, pa
  Aspose.Words para .NET es un producto comercial, pero puede descargar una prueba gratuita desde[Aspose sitio web](https://releases.aspose.com/).
 
 ### ¿Puedo usar Aspose.Words para .NET para firmar otros tipos de documentos?
-Sí, Aspose.Words para .NET se puede utilizar para firmar varios tipos de documentos, no sólo archivos PDF.
+Sí, Aspose.Words para .NET se puede utilizar para firmar varios tipos de documentos, no solo archivos PDF.

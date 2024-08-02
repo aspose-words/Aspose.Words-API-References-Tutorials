@@ -14,7 +14,7 @@ Java ile belge biçimlendirme becerilerinizi geliştirmek mi istiyorsunuz? Bu ka
 
 Belge biçimlendirme, profesyonel görünümlü belgeler oluşturmada çok önemli bir rol oynar. Üstbilgiler ve altbilgiler içeriğinize bağlam ve yapı sağlayan temel bileşenlerdir. Belge işleme için güçlü bir API olan Aspose.Words for Java ile üstbilgileri ve altbilgileri özel gereksinimlerinizi karşılayacak şekilde kolayca özelleştirebilirsiniz.
 
-Bu kılavuzda Aspose.Words for Java'yı kullanarak belge üstbilgilerini ve altbilgilerini şekillendirmenin çeşitli yönlerini inceleyeceğiz. Temel biçimlendirmeden gelişmiş tekniklere kadar her şeyi ele alacağız ve her adımı açıklamak için size pratik kod örnekleri sunacağız. Bu makalenin sonunda gösterişli ve görsel olarak çekici belgeler oluşturacak bilgi ve becerilere sahip olacaksınız.
+Bu kılavuzda Aspose.Words for Java'yı kullanarak belge üstbilgilerini ve altbilgilerini şekillendirmenin çeşitli yönlerini inceleyeceğiz. Temel biçimlendirmeden gelişmiş tekniklere kadar her şeyi ele alacağız ve her adımı açıklamak için size pratik kod örnekleri sunacağız. Bu makalenin sonunda gösterişli ve görsel olarak çekici belgeler oluşturma bilgi ve becerilerine sahip olacaksınız.
 
 ## Üstbilgileri ve Altbilgileri Şekillendirme
 

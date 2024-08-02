@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello _CustomerName_,");
 ```
 
-Para asegurarnos de que todo funciona correctamente hasta el momento, imprimimos el texto del documento original en la consola.
+Para asegurarnos de que todo esté funcionando correctamente hasta el momento, imprimimos el texto del documento original en la consola.
 
 ```csharp
 Console.WriteLine("Original document text: " + doc.Range.Text);

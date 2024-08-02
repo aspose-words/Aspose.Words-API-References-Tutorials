@@ -75,4 +75,4 @@ J: Kutipan penurunan harga tidak mendukung atribut tertentu. Mereka hanya disoro
 
 #### T: Bisakah Anda menyematkan kutipan di Markdown?
 
-A: Ya, dimungkinkan untuk menyarangkan tanda kutip di Markdown dengan menambahkan tanda kurung sudut tambahan (`>`).
+J: Ya, dimungkinkan untuk menyarangkan tanda kutip di Markdown dengan menambahkan tanda kurung sudut tambahan (`>`).

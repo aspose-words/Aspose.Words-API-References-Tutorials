@@ -41,7 +41,7 @@ Antes de entrar en el código, asegurémonos de que nuestro proyecto esté confi
 
 1. Abra Visual Studio: comience abriendo Visual Studio o su entorno de desarrollo C# preferido.
 2.  Crear un nuevo proyecto: navegue hasta`File > New > Project` . Seleccionar`Console App (.NET Core)` o cualquier otro tipo de proyecto relevante.
-3.  Nombra tu proyecto: dale a tu proyecto un nombre significativo, algo así como`AsposeWordsExportExample`.
+3.  Nombra tu proyecto: dale a tu proyecto un nombre significativo, algo como`AsposeWordsExportExample`.
 
 ## Añadiendo Aspose.Words
 

@@ -9,7 +9,7 @@ url: /nl/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 ## Invoering
 
-Heeft u ooit uw Word-document naar Markdown-indeling willen exporteren en er tegelijkertijd voor willen zorgen dat de tabellen en inhoud perfect op één lijn liggen? Aspose.Words voor .NET is uw beste oplossing voor deze taak. In dit artikel begeleiden we u door het proces van het instellen van Aspose.Words, het voorbereiden van uw document en het exporteren naar Markdown met de juiste afstemming van de tabelinhoud. We zullen elke stap opsplitsen, zodat deze gemakkelijk te volgen en te begrijpen is. Laten we er dus in duiken en uw Word-documenten omzetten in prachtig uitgelijnde Markdown-bestanden!
+Heeft u ooit uw Word-document naar Markdown-indeling willen exporteren en er tegelijkertijd voor willen zorgen dat de tabellen en inhoud perfect op één lijn liggen? Aspose.Words voor .NET is uw beste oplossing voor deze taak. In dit artikel begeleiden we u bij het instellen van Aspose.Words, het voorbereiden van uw document en het exporteren naar Markdown met de juiste afstemming van de tabelinhoud. We zullen elke stap opsplitsen, zodat deze gemakkelijk te volgen en te begrijpen is. Laten we er dus in duiken en uw Word-documenten omzetten in prachtig uitgelijnde Markdown-bestanden!
 
 ## Vereisten
 

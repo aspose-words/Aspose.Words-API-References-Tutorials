@@ -2,82 +2,100 @@
 title: Chèn bảng từ Html
 linktitle: Chèn bảng từ Html
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn bảng từ HTML vào tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách chèn bảng từ HTML vào tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để tích hợp tài liệu liền mạch.
 type: docs
 weight: 10
 url: /vi/net/programming-with-tables/insert-table-from-html/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách chèn bảng vào tài liệu Word từ HTML bằng Aspose.Words cho .NET. Chúng tôi sẽ làm theo hướng dẫn từng bước để hiểu mã và triển khai tính năng này. Đến cuối hướng dẫn này, bạn sẽ có thể chèn các bảng từ HTML vào tài liệu Word của mình theo chương trình.
+Bạn có bao giờ cần chèn bảng từ HTML vào tài liệu Word không? Cho dù bạn đang làm việc trong một dự án yêu cầu chuyển đổi nội dung web thành tài liệu Word hay bạn chỉ đang cố gắng hợp lý hóa quy trình làm việc của mình, Aspose.Words for .NET đều có thể giúp bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quá trình chèn bảng từ HTML vào tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ bạn cần, từ những điều kiện tiên quyết đến hướng dẫn chi tiết từng bước. Sẵn sàng để đi sâu vào? Bắt đầu nào!
 
-## Bước 1: Thiết lập dự án
-1. Khởi chạy Visual Studio và tạo một dự án C# mới.
-2. Thêm tham chiếu đến thư viện Aspose.Words for .NET.
+## Điều kiện tiên quyết
 
-## Bước 2: Tạo tài liệu và khởi tạo trình tạo tài liệu
-Để bắt đầu Xử lý Từ bằng trình tạo tài liệu và tài liệu, hãy làm theo các bước sau:
+Trước khi chúng ta bắt tay vào việc chèn bảng từ HTML, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+
+1. Aspose.Words for .NET: Tải xuống và cài đặt thư viện Aspose.Words for .NET từ[trang tải xuống](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Bất kỳ môi trường phát triển tương thích .NET nào như Visual Studio.
+3. Kiến thức cơ bản về C#: Hiểu các khái niệm lập trình C# cơ bản.
+4. Mã bảng HTML: Mã HTML cho bảng bạn muốn chèn.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words cho .NET, bạn cần nhập các vùng tên cần thiết. Điều này cho phép bạn truy cập các lớp và phương thức cần thiết để thao tác tài liệu.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+using System;
+```
+
+Hãy chia nhỏ quy trình chèn bảng từ HTML vào tài liệu Word theo từng bước.
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+Trước hết, bạn cần xác định thư mục nơi tài liệu Word của bạn sẽ được lưu. Điều này đảm bảo rằng tài liệu của bạn được lưu ở đúng vị trí sau khi sửa đổi.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-// Tạo tài liệu
+## Bước 2: Tạo một tài liệu mới
+
+Tiếp theo, bạn sẽ tạo một tài liệu Word mới. Tài liệu này sẽ là canvas nơi bạn chèn bảng HTML của mình.
+
+```csharp
 Document doc = new Document();
-
-// Khởi tạo trình tạo tài liệu
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Đảm bảo thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng đường dẫn thực tế đến thư mục tài liệu của bạn.
+## Bước 3: Chèn bảng HTML
 
-## Bước 3: Chèn bảng từ HTML
-Tiếp theo, chúng ta sẽ chèn bảng vào tài liệu bằng mã HTML. Sử dụng mã sau đây:
+ Bây giờ đến phần thú vị! Bạn sẽ sử dụng`DocumentBuilder` để chèn bảng HTML của bạn vào tài liệu Word. Lưu ý rằng cài đặt Tự động khớp không áp dụng cho các bảng được chèn từ HTML, do đó bảng của bạn sẽ trông chính xác như được xác định trong mã HTML.
 
 ```csharp
+//Chèn bảng HTML
 builder.InsertHtml("<table>" +
-"<tr>" +
-"<td>Line 1, Cell 1</td>" +
-"<td>Line 1, Cell 2</td>" +
-"</tr>" +
-"<tr>" +
-"<td>Line 2, Cell 1</td>" +
-"<td>Line 2, Cell 2</td>" +
-"</tr>" +
-"</table>");
+                   "<tr>" +
+                   "<td>Row 1, Cell 1</td>" +
+                   "<td>Row 1, Cell 2</td>" +
+                   "</tr>" +
+                   "<tr>" +
+                   "<td>Row 2, Cell 1</td>" +
+                   "<td>Row 2, Cell 2</td>" +
+                   "</tr>" +
+                   "</table>");
 ```
 
- Ở đây chúng tôi sử dụng`InsertHtml` phương pháp của trình tạo tài liệu để chèn HTML chứa bảng. HTML được chỉ định sẽ tạo một bảng có hai hàng và hai ô trong mỗi hàng. Bạn có thể tùy chỉnh nội dung của bảng bằng cách sửa đổi mã HTML theo nhu cầu của mình.
+## Bước 4: Lưu tài liệu
 
-## Bước 4: Lưu tài liệu đã sửa đổi
-Cuối cùng, chúng ta cần lưu tài liệu đã sửa đổi với bảng được chèn từ HTML. Sử dụng mã sau đây:
+Cuối cùng, sau khi chèn bảng, bạn cần lưu tài liệu của mình. Bước này đảm bảo rằng những thay đổi của bạn được ghi vào hệ thống tệp.
 
 ```csharp
+// Lưu tài liệu
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-Đảm bảo chỉ định đúng đường dẫn và tên tệp cho tài liệu đầu ra.
-
-### Mã nguồn mẫu cho Chèn bảng từ Html bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Lưu ý rằng AutoFitSettings không áp dụng cho các bảng được chèn từ HTML.
-	builder.InsertHtml("<table>" +
-					   "<tr>" +
-					   "<td>Row 1, Cell 1</td>" +
-					   "<td>Row 1, Cell 2</td>" +
-					   "</tr>" +
-					   "<tr>" +
-					   "<td>Row 2, Cell 2</td>" +
-					   "<td>Row 2, Cell 2</td>" +
-					   "</tr>" +
-					   "</table>");
-	doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
-```
+Và thế là xong! Bạn đã chèn thành công một bảng từ HTML vào tài liệu Word bằng Aspose.Words cho .NET.
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách chèn bảng vào tài liệu Word từ HTML bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này và triển khai mã C# được cung cấp, bạn có thể chèn bảng từ HTML vào tài liệu Word của mình theo chương trình. Tính năng này cho phép bạn chuyển đổi và nhập dữ liệu dạng bảng từ nguồn HTML vào tài liệu Word của mình.
+
+Việc chèn bảng từ HTML vào tài liệu Word có thể hợp lý hóa đáng kể quy trình làm việc của bạn, đặc biệt khi xử lý nội dung động từ các nguồn web. Aspose.Words for .NET làm cho quá trình này trở nên cực kỳ đơn giản và hiệu quả. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng chuyển đổi bảng HTML thành tài liệu Word, đảm bảo rằng tài liệu của bạn luôn cập nhật và được định dạng chuyên nghiệp.
+
+## Câu hỏi thường gặp
+
+### Tôi có thể tùy chỉnh giao diện của bảng HTML trong tài liệu Word không?
+Có, bạn có thể tùy chỉnh giao diện của bảng HTML bằng cách sử dụng HTML và CSS tiêu chuẩn trước khi chèn bảng đó vào tài liệu Word.
+
+### Aspose.Words for .NET có hỗ trợ các thành phần HTML khác ngoài bảng không?
+Tuyệt đối! Aspose.Words for .NET hỗ trợ nhiều thành phần HTML, cho phép bạn chèn nhiều loại nội dung khác nhau vào tài liệu Word của mình.
+
+### Có thể chèn nhiều bảng HTML vào một tài liệu Word không?
+ Có, bạn có thể chèn nhiều bảng HTML bằng cách gọi phương thức`InsertHtml` phương thức nhiều lần với mã bảng HTML khác nhau.
+
+### Làm cách nào tôi có thể xử lý các bảng HTML lớn trải rộng trên nhiều trang?
+Aspose.Words for .NET tự động xử lý các bảng lớn, đảm bảo chúng được phân chia chính xác trên nhiều trang trong tài liệu Word.
+
+### Tôi có thể sử dụng Aspose.Words cho .NET trong ứng dụng web không?
+Có, Aspose.Words for .NET có thể được sử dụng trong cả ứng dụng web và máy tính để bàn, khiến nó trở thành một công cụ linh hoạt để thao tác tài liệu.

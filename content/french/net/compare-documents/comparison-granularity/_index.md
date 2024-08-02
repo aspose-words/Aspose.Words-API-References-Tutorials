@@ -9,7 +9,7 @@ url: /fr/net/compare-documents/comparison-granularity/
 ---
 Voici un guide étape par étape pour expliquer le code source C# ci-dessous, qui utilise la fonctionnalité Comparer la granularité dans un document Word d'Aspose.Words pour .NET.
 
-## Étape 1 : Présentation
+## Étape 1 : Introduction
 
 La fonctionnalité Compare Granularity d'Aspose.Words for .NET vous permet de comparer des documents au niveau des caractères. Cela signifie que chaque personnage sera comparé et que les modifications seront signalées en conséquence.
 

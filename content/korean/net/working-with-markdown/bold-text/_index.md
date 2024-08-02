@@ -53,7 +53,7 @@ builder.Writeln("This text will be Bold");
 
 #### Q: Aspose.Words에서 텍스트를 굵게 표시하려면 어떻게 해야 합니까?
 
- A: Aspose.Words에서 텍스트를 굵게 표시하려면`Font.Bold` 의 재산`Run`물체. 이 속성을 다음과 같이 설정할 수 있습니다.`true` 특정 텍스트를 굵게 표시합니다. 예를 들어 다음을 사용할 수 있습니다.`run.Font.Bold=true` 안에 있는 텍스트를 굵게 표시하려면`Run` 물체.
+ A: Aspose.Words에서 텍스트를 굵게 표시하려면`Font.Bold` 의 재산`Run` 물체. 이 속성을 다음과 같이 설정할 수 있습니다.`true` 특정 텍스트를 굵게 표시합니다. 예를 들어 다음을 사용할 수 있습니다.`run.Font.Bold=true` 안에 있는 텍스트를 굵게 표시하려면`Run` 물체.
 
 #### Q: 같은 단락에서 여러 텍스트를 굵게 표시할 수 있나요?
 

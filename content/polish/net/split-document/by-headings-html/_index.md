@@ -2,84 +2,97 @@
 title: Podziel dokument programu Word według nagłówków HTML
 linktitle: Według nagłówków HTML
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku wyjaśniający kod źródłowy C# podzielonego dokumentu słownego. Nagłówek Funkcja HTML Aspose.Words dla .NET
+description: Dowiedz się, jak podzielić dokument programu Word za pomocą nagłówków na kod HTML przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/split-document/by-headings-html/
 ---
-W tym samouczku przeprowadzimy Cię przez proces dzielenia dokumentu programu Word na mniejsze części za pomocą funkcji Według nagłówka HTML w Aspose.Words dla .NET. Wykonaj poniższe kroki, aby zrozumieć kod źródłowy i wygenerować osobne dokumenty HTML w oparciu o nagłówek.
+## Wstęp
 
-## Krok 1: Ładowanie dokumentu
+Podział dokumentu programu Word według nagłówków może zmienić zasady gry w zarządzaniu dużymi dokumentami lub tworzeniu podzielonych na segmenty wyników HTML. Aspose.Words dla .NET zapewnia prosty sposób osiągnięcia tego celu. W tym samouczku przeprowadzimy Cię przez cały proces, upewniając się, że po drodze zrozumiesz każdy szczegół.
 
-Aby rozpocząć, określ katalog dla swojego dokumentu i załaduj dokument do obiektu Document. Oto jak:
+## Warunki wstępne
+
+Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące informacje:
+
+1. Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz go z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: IDE takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Zrozumienie podstaw pomoże Ci z łatwością kontynuować naukę.
+4. Przykładowy dokument: Przygotuj dokument programu Word, który chcesz podzielić według nagłówków.
+
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw. Ma to kluczowe znaczenie dla uzyskania dostępu do klas i metod Aspose.Words.
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Krok 2: Podzielenie dokumentu według nagłówka w formacie HTML
+## Krok 1: Skonfiguruj swój projekt
 
-Teraz ustawimy opcje zapisywania, aby podzielić dokument na mniejsze części w oparciu o nagłówek w formacie HTML. Oto jak:
+Aby rozpocząć, skonfiguruj swój projekt w środowisku programistycznym. Otwórz program Visual Studio i utwórz nową aplikację konsolową.
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-// Podziel dokument na mniejsze części, w tym przypadku oddzielając je według tytułu.
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. Utwórz nowy projekt: Otwórz Visual Studio, wybierz „Utwórz nowy projekt”, wybierz „Aplikacja konsolowa (.NET Core)” i kliknij „Dalej”.
+2. Skonfiguruj swój projekt: nazwij swój projekt, wybierz lokalizację, w której chcesz go zapisać, i kliknij „Utwórz”.
+3.  Zainstaluj Aspose.Words dla .NET: Użyj Menedżera pakietów NuGet, aby zainstalować bibliotekę Aspose.Words. W Menedżerze pakietów NuGet wyszukaj`Aspose.Words` i zainstaluj go.
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## Krok 2: Załaduj swój dokument
 
-### Przykładowy kod źródłowy By Headings HTML przy użyciu Aspose.Words dla .NET
+Następnie musisz załadować dokument Word, który chcesz podzielić. Upewnij się, że dokument znajduje się w katalogu, do którego masz łatwy dostęp.
 
-Oto kompletny kod źródłowy funkcji By HTML Heading w Aspose.Words dla .NET:
+1. Zdefiniuj ścieżkę katalogu: Utwórz zmienną dla ścieżki katalogu dokumentu.
+2.  Załaduj dokument: Użyj`Document` class, aby załadować dokument programu Word.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## Krok 3: Skonfiguruj opcje zapisywania HTML
+
+Teraz skonfigurujmy opcje zapisywania HTML, aby określić, że dokument powinien być podzielony według nagłówków.
+
+1.  Utwórz HtmlSaveOptions: Utwórz instancję`HtmlSaveOptions` klasa.
+2.  Ustaw kryteria podziału dokumentu: Użyj opcji`DocumentSplitCriteria` aby określić, że dokument powinien być podzielony według nagłówków akapitów.
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	// Podziel dokument na mniejsze części, w tym przypadku według nagłówków.
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    // Podziel dokument na mniejsze części, w tym przypadku według nagłówków.
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## Krok 4: Zapisz podzielony dokument
 
+Na koniec zapisz dokument z określonymi opcjami zapisywania HTML. Spowoduje to wygenerowanie pliku HTML podzielonego według nagłówków.
+
+1.  Zapisz dokument: Użyj`Save` metoda`Document` class, aby zapisać dokument z określonymi opcjami.
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-Dzięki temu kodowi będziesz mógł podzielić dokument Worda na mniejsze części przy użyciu Aspose.Words dla .NET, w oparciu o nagłówki. Następnie możesz wygenerować osobne dokumenty HTML dla każdej części.
-
 ## Wniosek
 
- W tym samouczku nauczyliśmy się dzielić dokument programu Word na mniejsze części za pomocą funkcji Według nagłówka HTML w Aspose.Words dla .NET. Określając`DocumentSplitCriteria` Jak`HeadingParagraph` w`HtmlSaveOptions`, byliśmy w stanie wygenerować osobne dokumenty HTML w oparciu o nagłówki obecne w oryginalnym dokumencie.
+I masz to! Pomyślnie podzieliłeś dokument programu Word według nagłówków i zapisałeś go jako HTML przy użyciu Aspose.Words dla .NET. Ta metoda jest bardzo skuteczna w organizowaniu dużych dokumentów i tworzeniu podzielonych na segmenty wyników HTML, dzięki czemu treść jest łatwiejsza w zarządzaniu i dostępna.
 
-Podział dokumentu według nagłówków może być przydatny do organizowania treści i zarządzania nią, szczególnie w przypadku dużych dokumentów zawierających wiele sekcji. Aspose.Words dla .NET zapewnia niezawodne i wydajne rozwiązanie do obsługi dzielenia dokumentów i generowania wyników w różnych formatach.
+## Często zadawane pytania
 
-Zachęcamy do zapoznania się z dodatkowymi funkcjami i opcjami Aspose.Words dla .NET, aby jeszcze bardziej ulepszyć możliwości przetwarzania dokumentów i usprawnić przepływ pracy.
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do pracy z dokumentami Word w aplikacjach .NET.
 
-### Często zadawane pytania
+### Czy mogę podzielić dokument według innych kryteriów?
+Tak, Aspose.Words umożliwia dzielenie dokumentów według różnych kryteriów, takich jak sekcje, strony i inne.
 
-#### Jak podzielić dokument programu Word na mniejsze części w oparciu o nagłówki przy użyciu Aspose.Words dla .NET?
+### Czy Aspose.Words jest darmowe?
+ Aspose.Words oferuje bezpłatną wersję próbną, ale aby uzyskać pełne funkcje, musisz kupić licencję. Sprawdź ich[kup stronę](https://purchase.aspose.com/buy) po więcej szczegółów.
 
- Aby podzielić dokument programu Word na podstawie nagłówków, możesz użyć funkcji Według nagłówka HTML w Aspose.Words dla .NET. Postępuj zgodnie z dostarczonym kodem źródłowym i ustaw`DocumentSplitCriteria` Do`HeadingParagraph` w`HtmlSaveOptions` obiekt. Spowoduje to podzielenie dokumentu na mniejsze części w każdym nagłówku.
+### Gdzie mogę znaleźć dokumentację?
+ Dostępna jest obszerna dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
 
-#### Na jakie formaty mogę podzielić dokument Word?
-
- Dostarczony kod źródłowy demonstruje podział dokumentu Word na mniejsze części w formacie HTML. Jednak Aspose.Words dla .NET obsługuje różne formaty wyjściowe, w tym DOCX, PDF, EPUB i inne. Możesz zmodyfikować kod i określić żądany format wyjściowy w pliku`HtmlSaveOptions` odpowiednio sprzeciwić się.
-
-#### Czy mogę wybrać inne kryteria podziału dokumentu?
-
-Tak, możesz wybrać inne kryteria podziału dokumentu w zależności od swoich wymagań. Aspose.Words dla .NET udostępnia kilka opcji kryteriów, takich jak`HeadingParagraph`, `Page`, `Section` , i więcej. Zmodyfikuj`DocumentSplitCriteria` nieruchomość w`HtmlSaveOptions` obiektu, aby wybrać odpowiednie kryteria podziału.
-
-#### Jak mogę dostosować wyjściowy kod HTML dla podzielonych części?
-
- Aspose.Words dla .NET umożliwia dostosowanie wyjściowego kodu HTML dla podzielonych części poprzez określenie dodatkowych opcji w`HtmlSaveOptions` obiekt. Możesz kontrolować różne aspekty, takie jak style CSS, obrazy, czcionki i inne. Więcej szczegółów na temat dostosowywania wyjścia HTML można znaleźć w dokumentacji Aspose.Words.
-
-#### Czy mogę podzielić dokument na podstawie wielu kryteriów?
-
- Tak, możesz podzielić dokument na podstawie wielu kryteriów, łącząc odpowiednio opcje kryteriów. Na przykład możesz podzielić dokument według nagłówka i strony, ustawiając opcję`DocumentSplitCriteria`własność do`HeadingParagraph | Page`. Spowoduje to podzielenie dokumentu według każdego nagłówka i każdej strony, tworząc mniejsze części w oparciu o oba kryteria.
+### Jak uzyskać wsparcie?
+ Aby uzyskać pomoc, odwiedź witrynę Aspose.Words[forum](https://forum.aspose.com/c/words/8).

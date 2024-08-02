@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Paragraphs.docx");
 
 ## Bước 3: Định cấu hình tùy chọn lưu PDF
 
- Để xuất cấu trúc tài liệu, chúng ta cần định cấu hình các tùy chọn lưu PDF. Điều này liên quan đến việc thiết lập`ExportDocumentStructure`tài sản để`true`Điều này đảm bảo rằng cấu trúc của tài liệu hiển thị trong khung điều hướng "Nội dung" của Adobe Acrobat Pro.
+ Để xuất cấu trúc tài liệu, chúng ta cần định cấu hình các tùy chọn lưu PDF. Điều này liên quan đến việc thiết lập`ExportDocumentStructure`tài sản để`true`Điều này đảm bảo rằng cấu trúc của tài liệu hiển thị trong ngăn điều hướng "Nội dung" của Adobe Acrobat Pro.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions

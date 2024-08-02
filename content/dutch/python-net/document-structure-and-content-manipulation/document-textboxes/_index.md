@@ -12,7 +12,7 @@ Tekstvakken zijn een krachtige functie in Word-documenten waarmee u visueel aant
 
 ## Invoering
 
-Tekstvakken bieden een veelzijdige manier om inhoud in een Word-document te presenteren. Hiermee kunt u tekst en afbeeldingen isoleren, de positionering ervan bepalen en opmaak specifiek toepassen op de inhoud in het tekstvak. Deze handleiding begeleidt u bij het gebruik van Aspose.Words voor Python om tekstvakken in uw documenten te maken en aan te passen.
+Tekstvakken bieden een veelzijdige manier om inhoud in een Word-document te presenteren. Hiermee kunt u tekst en afbeeldingen isoleren, de positionering ervan bepalen en opmaak specifiek toepassen op de inhoud in het tekstvak. Deze gids begeleidt u bij het gebruik van Aspose.Words voor Python om tekstvakken in uw documenten te maken en aan te passen.
 
 ## Vereisten
 
@@ -106,7 +106,7 @@ In deze handleiding hebben we het proces onderzocht van het verbeteren van visue
 
 ### Hoe voeg ik randen toe aan een tekstvak?
 
- U kunt randen aan een tekstvak toevoegen met behulp van de`textbox.border` eigendom en het aanpassen van het uiterlijk ervan.
+ U kunt randen aan een tekstvak toevoegen met behulp van de`textbox.border`eigendom en het aanpassen van het uiterlijk ervan.
 
 ### Kan ik hyperlinks in een tekstvak insluiten?
 

@@ -110,6 +110,6 @@ Puoi convertire vari documenti Word tra cui .doc, .docx, .rtf e altri.
 
 La versione di prova presenta alcune limitazioni come filigrane nei file di output. Puoi ottenere una prova gratuita[Qui](https://releases.aspose.com/).
 
-### Dove posso trovare ulteriori esempi e documentazione per Aspose.Words?
+### Dove posso trovare altri esempi e documentazione per Aspose.Words?
 
  È possibile trovare documentazione dettagliata ed esempi su[Sito web Aspose](https://reference.aspose.com/words/net/).

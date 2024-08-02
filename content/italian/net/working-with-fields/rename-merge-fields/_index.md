@@ -2,63 +2,42 @@
 title: Rinominare i campi unione
 linktitle: Rinominare i campi unione
 second_title: API di elaborazione dei documenti Aspose.Words
-description: In questo tutorial imparerai come rinominare i campi di unione in un documento utilizzando Aspose.Words per .NET.
+description: Scopri come rinominare i campi di unione nei documenti di Word utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata passo dopo passo per manipolare facilmente i tuoi documenti.
 type: docs
 weight: 10
 url: /it/net/working-with-fields/rename-merge-fields/
 ---
+## introduzione
 
-Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che utilizza la funzionalità di ridenominazione dei campi di unione di Aspose.Words per .NET. Segui attentamente ogni passaggio per ottenere i risultati desiderati.
+Rinominare i campi di unione nei documenti di Word può essere un compito arduo se non hai familiarità con gli strumenti e le tecniche giusti. Ma non preoccuparti, ci penso io! In questa guida, approfondiremo il processo di ridenominazione dei campi di unione utilizzando Aspose.Words per .NET, una potente libreria che semplifica la manipolazione dei documenti. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial passo passo ti guiderà attraverso tutto ciò che devi sapere.
 
-## Passaggio 1: impostazione della directory dei documenti
+## Prerequisiti
 
-Nel codice fornito, devi specificare la directory dei tuoi documenti. Sostituisci il valore "LA TUA DIRECTORY DOCUMENTI" con il percorso appropriato della directory dei tuoi documenti.
+Prima di entrare nei dettagli essenziali, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words per .NET: dovrai avere Aspose.Words per .NET installato. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: Visual Studio o qualsiasi altro IDE compatibile con .NET.
+- Conoscenza di base di C#: sarà utile la familiarità con la programmazione C#.
 
-## Passaggio 2: creazione del documento e inserimento dei campi di unione
+## Importa spazi dei nomi
 
-Iniziamo creando un nuovo documento e utilizzando a`DocumentBuilder` per inserire i campi di unione.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
-builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
-```
-
-## Passaggio 3: rinominare i campi unione
-
-Esaminiamo ogni campo nell'intervallo del documento e, se si tratta di un campo di unione, rinominiamo il campo aggiungendo il "_Suffisso "rinominato".
+Per prima cosa, importiamo gli spazi dei nomi necessari. Ciò garantirà che il nostro codice abbia accesso a tutte le classi e i metodi di cui abbiamo bisogno.
 
 ```csharp
-foreach(Field f in doc.Range.Fields)
-{
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
-}
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Passaggio 4: salvataggio del documento
+Bene, ora che abbiamo chiarito le nozioni di base, passiamo alla parte divertente! Segui questi passaggi per rinominare i campi di unione nei tuoi documenti Word.
 
- Infine, chiamiamo il`Save()` metodo per salvare il documento modificato.
+## Passaggio 1: crea il documento e inserisci i campi di unione
 
-```csharp
-doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
-```
-
-### Esempio di codice sorgente per rinominare i campi di unione con Aspose.Words per .NET
+Per iniziare, dobbiamo creare un nuovo documento e inserire alcuni campi di unione. Questo servirà come punto di partenza.
 
 ```csharp
 // Il percorso della directory dei documenti.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Crea il documento e inserisci i campi di unione.
 Document doc = new Document();
@@ -66,42 +45,62 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
+```
 
+ Qui, stiamo creando un nuovo documento e utilizzando il file`DocumentBuilder` class per inserire due campi di unione:`MyMergeField1`E`MyMergeField2`.
+
+## Passaggio 2: scorrere i campi e rinominarli
+
+Ora scriviamo il codice per trovare e rinominare i campi di unione. Esamineremo tutti i campi del documento, controlleremo se sono campi di unione e li rinomineremo.
+
+```csharp
 // Rinominare i campi di unione.
-foreach(Field f in doc.Range.Fields)
+foreach (Field f in doc.Range.Fields)
 {
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
+    if (f.Type == FieldType.FieldMergeField)
+    {
+        FieldMergeField mergeField = (FieldMergeField)f;
+        mergeField.FieldName = mergeField.FieldName + "_Renamed";
+        mergeField.Update();
+    }
 }
+```
 
+ In questo frammento, stiamo utilizzando a`foreach` loop per scorrere tutti i campi del documento. Per ogni campo, controlliamo se si tratta di un campo di unione utilizzando`f.Type == FieldType.FieldMergeField` . Se lo è, lo lanciamo a`FieldMergeField` e aggiungere`_Renamed` al suo nome.
+
+## Passaggio 3: salva il documento
+
+Infine, salviamo il nostro documento con i campi di unione rinominati.
+
+```csharp
 // Salva il documento.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-Segui questi passaggi per rinominare i campi di unione nel documento utilizzando Aspose.Words per .NET.
+ Questa riga di codice salva il documento nella directory specificata con il nome`WorkingWithFields.RenameMergeFields.docx`.
 
-### Domande frequenti
+## Conclusione
 
-#### D: Come posso rinominare i campi uniti in un documento Word utilizzando Aspose.Words per .NET?
+il gioco è fatto! Rinominare i campi di unione nei documenti di Word utilizzando Aspose.Words per .NET è semplice una volta conosciuti i passaggi. Seguendo questa guida, puoi facilmente manipolare e personalizzare i tuoi documenti Word in base alle tue esigenze. Che tu stia generando report, creando lettere personalizzate o gestendo dati, questa tecnica ti tornerà utile.
 
- R: Per rinominare i campi uniti in un documento Word utilizzando Aspose.Words per .NET, è possibile scorrere i campi nel documento utilizzando il comando`FieldMergingArgs` classe e utilizzare il file`FieldMergingArgs.FieldName` metodo per rinominare il campo.
+## Domande frequenti
 
-#### D: È possibile rinominare solo alcuni campi uniti in un documento Word con Aspose.Words per .NET?
+### Posso rinominare più campi unione contemporaneamente?
 
-R: Sì, è possibile rinominare solo alcuni campi uniti in un documento Word con Aspose.Words per .NET. Puoi filtrare quali campi rinominare utilizzando criteri specifici, come il nome del campo o altre proprietà pertinenti. Quindi puoi rinominare i campi corrispondenti utilizzando il file`FieldMergingArgs.FieldName` metodo.
+Assolutamente! Il codice fornito dimostra già come scorrere e rinominare tutti i campi di unione in un documento.
 
-#### D: Come posso verificare se un campo unito è stato rinominato correttamente in un documento Word con Aspose.Words per .NET?
+### Cosa succede se il campo di unione non esiste?
 
- R: Per verificare se un campo unito è stato rinominato con successo in un documento Word con Aspose.Words per .NET, puoi utilizzare il comando`FieldMergedArgs` classe e accedi al`FieldMergedArgs.IsMerged` proprietà per determinare se il campo è stato rinominato con hit.
+Se un campo di unione non esiste, il codice lo salta semplicemente. Non verrà generato alcun errore.
 
-#### D: Quali sono le conseguenze della ridenominazione di un campo unito in un documento di Word con Aspose.Words per .NET?
+### Posso modificare il prefisso invece di aggiungere al nome?
 
-R: Quando si rinomina un campo unito in un documento di Word con Aspose.Words per .NET, cambia il nome del campo nel documento, che potrebbe influire su altre funzionalità o processi che dipendono dal nome del campo. Assicurati di considerare queste potenziali conseguenze prima di rinominare i campi uniti.
+ Sì, puoi modificare il file`mergeField.FieldName` assegnazione per impostarla su qualsiasi valore desiderato.
 
-#### D: È possibile ripristinare il nome originale di un campo unito dopo averlo rinominato con Aspose.Words per .NET?
+### Aspose.Words per .NET è gratuito?
 
-R: Sì, è possibile ripristinare il nome originale di un campo unito dopo averlo rinominato con Aspose.Words per .NET. Puoi memorizzare il nome originale del campo in una variabile o in un elenco e quindi utilizzare tali informazioni per ripristinare il nome originale, se necessario.
+ Aspose.Words per .NET è un prodotto commerciale, ma puoi utilizzare a[prova gratuita](https://releases.aspose.com/) per valutarlo.
+
+### Dove posso trovare ulteriore documentazione su Aspose.Words per .NET?
+
+ È possibile trovare una documentazione completa[Qui](https://reference.aspose.com/words/net/).

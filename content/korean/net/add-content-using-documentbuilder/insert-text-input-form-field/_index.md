@@ -11,14 +11,14 @@ url: /ko/net/add-content-using-documentbuilder/insert-text-input-form-field/
 
 이 튜토리얼에서는 Word 문서에 텍스트 입력 양식 필드를 삽입하는 방법을 알아보기 위해 .NET용 Aspose.Words의 세계를 자세히 살펴봅니다. 버클을 채우세요. 우리는 문서 자동화 작업을 쉽게 만들어 줄 여행을 곧 시작할 것이기 때문입니다. 양식, 템플릿, 대화형 문서 등 무엇을 만들든 이 기술을 익히면 .NET 애플리케이션이 한 단계 더 발전할 수 있습니다.
 
-### 전제조건
+### 전제 조건
 
 시작하기 전에 필요한 몇 가지 사항이 있습니다.
 
 1.  .NET 라이브러리용 Aspose.Words: .NET 라이브러리용 Aspose.Words가 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 통합 개발 환경(IDE)입니다.
 3. C#에 대한 기본 이해: C# 프로그래밍 언어 및 .NET 프레임워크에 대한 지식.
-4.  임시 라이선스(선택 사항): Aspose.Words를 평가하는 경우[임시면허](https://purchase.aspose.com/temporary-license/) 제한을 피하기 위해.
+4.  임시 라이선스(선택 사항): Aspose.Words를 평가하는 경우[임시 면허증](https://purchase.aspose.com/temporary-license/) 제한을 피하기 위해.
 
 ## 네임스페이스 가져오기
 

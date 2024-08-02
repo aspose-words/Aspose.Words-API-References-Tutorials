@@ -15,7 +15,7 @@ url: /es/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 
 Antes de empezar a modificar el código, hay algunas cosas que debes tener en cuenta:
 
-1.  Aspose.Words para .NET: asegúrese de tener instalada esta potente biblioteca. Si aún no lo tienes, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener instalada esta poderosa biblioteca. Si aún no lo tienes, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo .NET funcional, como Visual Studio.
 3. Conocimientos básicos de C#: será útil tener cierta familiaridad con la programación en C#.
 4. Documento de muestra: un documento de Word con viñetas de imágenes para fines de prueba.

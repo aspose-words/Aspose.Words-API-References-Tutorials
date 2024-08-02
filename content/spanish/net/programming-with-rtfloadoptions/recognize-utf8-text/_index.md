@@ -73,7 +73,7 @@ Esta línea guarda el documento con un nuevo nombre, para que pueda identificar 
 
 ## Conclusión
 
-¡Y ahí lo tienes! Acaba de aprender cómo reconocer texto UTF-8 en documentos de Word usando Aspose.Words para .NET. Este pequeño truco puede ahorrarle muchos dolores de cabeza al tratar con documentos multilingües o caracteres especiales.
+¡Y ahí lo tienes! Acaba de aprender a reconocer texto UTF-8 en documentos de Word usando Aspose.Words para .NET. Este pequeño truco puede ahorrarle muchos dolores de cabeza al tratar con documentos multilingües o caracteres especiales.
 
 Recuerde, los pasos clave son configurar las opciones de carga, cargar su documento y guardarlo. ¡Es tan simple como eso! Entonces, adelante, pruébalo. Te sorprenderá lo fácil que es manejar texto complejo en tus documentos de Word.
 

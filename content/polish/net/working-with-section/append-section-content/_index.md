@@ -16,7 +16,7 @@ No hej! Czy zastanawiałeś się kiedyś, jak programowo manipulować dokumentam
 Zanim zaczniemy, potrzebujesz kilku rzeczy:
 
 1. Podstawowa znajomość języka C#: Nie musisz być ekspertem, ale podstawowa znajomość języka C# będzie pomocna.
-2.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/) Jeśli nie chcesz kupować od razu, możesz zdecydować się na opcję[bezpłatna wersja próbna](https://releases.aspose.com/).
+2.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/) . Jeśli nie chcesz kupować od razu, możesz zdecydować się na opcję[bezpłatna wersja próbna](https://releases.aspose.com/).
 3. Visual Studio: dowolna wersja powinna działać, ale zalecana jest najnowsza wersja.
 4. .NET Framework: Upewnij się, że masz go zainstalowany na swoim komputerze.
 
@@ -66,7 +66,7 @@ Teraz, gdy mamy już nasze sekcje, musimy uzyskać do nich dostęp, abyśmy mogl
 Section section = doc.Sections[2];
 ```
 
- Na tym etapie uzyskujemy dostęp do trzeciej części naszego dokumentu. Pamiętaj, że indeks jest liczony od zera, więc`Sections[2]` odnosi się do części trzeciej.
+Na tym etapie uzyskujemy dostęp do trzeciej części naszego dokumentu. Pamiętaj, że indeks jest liczony od zera, więc`Sections[2]` odnosi się do części trzeciej.
 
 ## Krok 4: Dołączanie zawartości do sekcji
 
@@ -102,7 +102,7 @@ Tutaj zapisujemy dokument jako „output.docx”. Możesz otworzyć ten plik w p
 
 ## Wniosek
 
- I masz to! Udało Ci się manipulować sekcjami w dokumencie programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono podstawy tworzenia dokumentu, dodawania sekcji i manipulowania ich zawartością. Dzięki Aspose.Words możesz wykonywać znacznie bardziej złożone operacje, więc nie wahaj się eksplorować[Dokumentacja API](https://reference.aspose.com/words/net/) dla bardziej zaawansowanych funkcji.
+ masz to! Udało Ci się manipulować sekcjami w dokumencie programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono podstawy tworzenia dokumentu, dodawania sekcji i manipulowania ich zawartością. Dzięki Aspose.Words możesz wykonywać znacznie bardziej złożone operacje, więc nie wahaj się eksplorować[Dokumentacja API](https://reference.aspose.com/words/net/) dla bardziej zaawansowanych funkcji.
 
 ## Często zadawane pytania
 
@@ -116,7 +116,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom pr
 
 ## 3. Jakie są główne cechy Aspose.Words dla .NET?
 
-Aspose.Words dla .NET oferuje szeroką gamę funkcji, w tym tworzenie dokumentów, formatowanie, konwersję i manipulację. Więcej o jego możliwościach można przeczytać w artykule[Dokumentacja API](https://reference.aspose.com/words/net/).
+ Aspose.Words dla .NET oferuje szeroką gamę funkcji, w tym tworzenie dokumentów, formatowanie, konwersję i manipulację. Więcej o jego możliwościach można przeczytać w artykule[Dokumentacja API](https://reference.aspose.com/words/net/).
 
 ## 4. Jak uzyskać wsparcie dla Aspose.Words dla .NET?
 

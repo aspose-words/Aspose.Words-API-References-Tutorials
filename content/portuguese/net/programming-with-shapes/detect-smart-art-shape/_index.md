@@ -2,7 +2,7 @@
 title: Detectar forma de arte inteligente
 linktitle: Detectar forma de arte inteligente
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como detectar formas SmartArt em documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente. Perfeito para automatizar o fluxo de trabalho de documentos.
+description: Aprenda como detectar formas SmartArt em documentos do Word usando Aspose.Words for .NET com este guia abrangente. Perfeito para automatizar o fluxo de trabalho de documentos.
 type: docs
 weight: 10
 url: /pt/net/programming-with-shapes/detect-smart-art-shape/
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Nesta etapa, usamos LINQ para filtrar e contar as formas que possuem SmartArt. O`GetChildNodes` método recupera todas as formas, e o`HasSmartArt`propriedade verifica se uma forma contém SmartArt.
+ Nesta etapa, usamos LINQ para filtrar e contar as formas que possuem SmartArt. O`GetChildNodes` método recupera todas as formas, e o`HasSmartArt` propriedade verifica se uma forma contém SmartArt.
 
 ## Etapa 4: executando o código
 
@@ -80,7 +80,7 @@ Substitua “X” pela contagem real de formas SmartArt no seu documento.
 
 ## Conclusão
 
- E aí está! Você aprendeu com sucesso como detectar formas SmartArt em documentos do Word usando Aspose.Words for .NET. Este tutorial abordou a configuração do seu ambiente, o carregamento de documentos, a detecção de formas SmartArt e a execução do código. Aspose.Words oferece uma ampla gama de recursos, então não deixe de explorar o[Documentação da API](https://reference.aspose.com/words/net/) para desbloquear todo o seu potencial.
+ aí está! Você aprendeu com sucesso como detectar formas SmartArt em documentos do Word usando Aspose.Words for .NET. Este tutorial abordou a configuração do seu ambiente, o carregamento de documentos, a detecção de formas SmartArt e a execução do código. Aspose.Words oferece uma ampla gama de recursos, então não deixe de explorar o[Documentação da API](https://reference.aspose.com/words/net/) para desbloquear todo o seu potencial.
 
 ## Perguntas frequentes
 

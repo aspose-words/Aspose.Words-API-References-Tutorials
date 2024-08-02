@@ -82,7 +82,7 @@ Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã chu
 Hình ảnh được lập chỉ mục 1Bpp (1 Bit trên mỗi pixel) là định dạng hình ảnh đen trắng trong đó mỗi pixel được biểu thị bằng một bit duy nhất, 0 hoặc 1. Định dạng này rất tiết kiệm không gian.
 
 ### Tôi có thể chuyển đổi nhiều trang của tài liệu Word cùng một lúc không?
- Có, bạn có thể. Sửa đổi`PageSet` tài sản ở`ImageSaveOptions` để bao gồm nhiều trang hoặc toàn bộ tài liệu.
+ Vâng, bạn có thể. Sửa đổi`PageSet` tài sản ở`ImageSaveOptions` để bao gồm nhiều trang hoặc toàn bộ tài liệu.
 
 ### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
  Có, Aspose.Words for .NET yêu cầu giấy phép để có đầy đủ chức năng. Bạn có thể nhận được một[giấy phép tạm thời ở đây](https://purchase.aspose.com/temporary-license/).

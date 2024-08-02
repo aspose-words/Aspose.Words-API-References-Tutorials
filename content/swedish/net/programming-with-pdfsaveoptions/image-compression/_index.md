@@ -88,11 +88,11 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
 {
-	// Ställ in compliance till PDF/A-2u
+	// Ställ in efterlevnad till PDF/A-2u
     Compliance = PdfCompliance.PdfA2u,
 	// Använd JPEG-komprimering
     ImageCompression = PdfImageCompression.Jpeg,
-	// Justera JPEG-kvaliteten för att kontrollera komprimeringsnivån
+	// Justera JPEG-kvalitet för att kontrollera komprimeringsnivån
     JpegQuality = 100 
 };
 ```

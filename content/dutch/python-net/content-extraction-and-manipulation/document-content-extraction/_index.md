@@ -14,7 +14,7 @@ Het efficiënt extraheren van inhoud uit Word-documenten is een veel voorkomende
 
 ## Vereisten
 
-Voordat we in de code duiken, moet je ervoor zorgen dat Python en de Aspose.Words-bibliotheek zijn geïnstalleerd. U kunt de bibliotheek downloaden van de website[hier](https://releases.aspose.com/words/python/). Zorg er bovendien voor dat u een Word-document gereed heeft om te testen.
+ Voordat we in de code duiken, moet je ervoor zorgen dat Python en de Aspose.Words-bibliotheek zijn geïnstalleerd. U kunt de bibliotheek downloaden van de website[hier](https://releases.aspose.com/words/python/). Zorg er bovendien voor dat u een Word-document gereed heeft om te testen.
 
 ## Aspose.Words voor Python installeren
 

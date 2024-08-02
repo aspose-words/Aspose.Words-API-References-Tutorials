@@ -2,55 +2,82 @@
 title: Převést na vodorovně sloučené buňky
 linktitle: Převést na vodorovně sloučené buňky
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak převést buňky tabulky na vodorovně sloučené buňky v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Převeďte vertikálně sloučené buňky na horizontálně sloučené buňky v dokumentech aplikace Word pomocí Aspose.Words for .NET. Průvodce krok za krokem pro bezproblémové rozložení stolu.
 type: docs
 weight: 10
 url: /cs/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
+## Úvod
 
-tomto tutoriálu se naučíme, jak používat Aspose.Words pro .NET k převodu buněk tabulky na horizontálně sloučené buňky v dokumentu aplikace Word. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci programově manipulovat s buňkami tabulky v dokumentech aplikace Word.
+Při práci s tabulkami v dokumentech aplikace Word často potřebujete spravovat slučování buněk, abyste dosáhli čistšího a organizovanějšího rozvržení. Aspose.Words for .NET poskytuje výkonný způsob, jak převést vertikálně sloučené buňky na horizontálně sloučené buňky, čímž zajistí, že vaše tabulka bude vypadat přesně tak, jak chcete. V tomto tutoriálu vás provedeme procesem krok za krokem.
 
-## Krok 1: Nastavení projektu
-1. Spusťte Visual Studio a vytvořte nový projekt C#.
-2. Přidejte odkaz na knihovnu Aspose.Words for .NET.
+## Předpoklady
 
-## Krok 2: Načtení dokumentu a přístup k tabulce
-Abychom mohli textový procesor spustit s tabulkou, musíme načíst dokument, který ji obsahuje, a získat k němu přístup. Následuj tyto kroky:
+Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[stránka vydání](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Vývojové prostředí jako Visual Studio.
+3. Základní znalost C#: Znalost programovacího jazyka C#.
+
+## Importovat jmenné prostory
+
+Nejprve musíme importovat potřebné jmenné prostory pro náš projekt. To nám umožní využívat funkce Aspose.Words.
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Pojďme si tento proces rozdělit do jednoduchých kroků, aby bylo snadné jej sledovat.
+
+## Krok 1: Vložte svůj dokument
+
+Nejprve musíte načíst dokument obsahující tabulku, kterou chcete upravit. Tento dokument by již měl existovat v adresáři vašeho projektu.
+
+```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Vložte dokument
 Document doc = new Document(dataDir + "Table with merged cells.docx");
+```
 
-// Přístup k poli
+## Krok 2: Přístup k tabulce
+
+Dále potřebujeme přistupovat ke konkrétní tabulce v dokumentu. Zde předpokládáme, že tabulka je v první části dokumentu.
+
+```csharp
+// Přístup k první tabulce v dokumentu
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-Nezapomeňte nahradit „VAŠE ADRESÁŘ DOKUMENTŮ“ skutečnou cestou k adresáři vašich dokumentů. Také se ujistěte, že dokument obsahuje tabulku s vodorovně sloučenými buňkami.
-
 ## Krok 3: Převeďte na vodorovně sloučené buňky
- Dále převedeme buňky tabulky na vodorovně sloučené buňky pomocí`ConvertToHorizontallyMergedCells()` metoda. Použijte následující kód:
+
+ Nyní převedeme vertikálně sloučené buňky v tabulce na horizontálně sloučené buňky. To se provádí pomocí`ConvertToHorizontallyMergedCells` metoda.
 
 ```csharp
-// Převést na vodorovně sloučené buňky
-table. ConvertToHorizontallyMergedCells();
-```
-
- Zde jen zavoláme`ConvertToHorizontallyMergedCells()` metoda na poli k provedení převodu.
-
-### Ukázkový zdrojový kód pro Převést na horizontálně sloučené buňky pomocí Aspose.Words pro .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table with merged cells.docx");
-	Table table = doc.FirstSection.Body.Tables[0];
-	// Nyní mají sloučené buňky příslušné příznaky sloučení.
-	table.ConvertToHorizontallyMergedCells();
+// Převést vertikálně sloučené buňky na horizontálně sloučené buňky
+table.ConvertToHorizontallyMergedCells();
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak převést buňky tabulky na horizontálně sloučené buňky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete programově manipulovat s buňkami tabulky v dokumentech aplikace Word. Tato funkce vám umožňuje spravovat a organizovat data flexibilním a personalizovaným způsobem v tabulce.
+
+A to je vše! Úspěšně jste převedli vertikálně sloučené buňky na horizontálně sloučené buňky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato metoda zajišťuje, že vaše tabulky jsou dobře uspořádané a lépe čitelné. Pomocí těchto kroků můžete upravovat a manipulovat s dokumenty aplikace Word tak, aby vyhovovaly vašim konkrétním potřebám.
+
+## FAQ
+
+### Mohu používat Aspose.Words pro .NET s jinými programovacími jazyky?  
+Aspose.Words for .NET je primárně navržen pro jazyky .NET, jako je C#. Můžete jej však použít s jinými jazyky podporovanými .NET, jako je VB.NET.
+
+### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?  
+ Ano, můžete si stáhnout a[zkušební verze zdarma](https://releases.aspose.com/) z webu Aspose.
+
+### Jak mohu získat podporu, pokud narazím na problémy?  
+ Můžete navštívit[Aspose fórum podpory](https://forum.aspose.com/c/words/8) pro pomoc.
+
+### Mohu použít licenci ze souboru nebo streamu?  
+Ano, Aspose.Words for .NET vám umožňuje použít licenci jak ze souboru, tak ze streamu. Více informací najdete v[dokumentace](https://reference.aspose.com/words/net/).
+
+### Jaké další funkce nabízí Aspose.Words for .NET?  
+ Aspose.Words for .NET nabízí širokou škálu funkcí včetně generování, manipulace, konverze a vykreslování dokumentů. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.

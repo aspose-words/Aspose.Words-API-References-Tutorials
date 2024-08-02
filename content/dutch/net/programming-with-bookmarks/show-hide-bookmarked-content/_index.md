@@ -119,7 +119,7 @@ En daar heb je het! U hebt zojuist geleerd hoe u inhoud met een bladwijzer in ee
 ## Veelgestelde vragen
 
 ### Kan ik meerdere bladwijzers tegelijk schakelen?
- Ja, u kunt bellen met de`ShowHideBookmarkedContent` methode voor elke bladwijzer die u wilt schakelen.
+ Ja, u kunt bellen met de`ShowHideBookmarkedContent` methode voor elke bladwijzer die u wilt wijzigen.
 
 ### Heeft het verbergen van inhoud invloed op de structuur van het document?
 Nee, het verbergen van inhoud heeft alleen invloed op de zichtbaarheid ervan. De inhoud blijft in het document.

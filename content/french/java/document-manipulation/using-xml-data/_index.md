@@ -2,7 +2,7 @@
 title: Utilisation de données XML dans Aspose.Words pour Java
 linktitle: Utiliser des données XML
 second_title: API de traitement de documents Java Aspose.Words
-description: Libérez la puissance d’Aspose.Words pour Java. Apprenez la gestion des données XML, le publipostage et la syntaxe Moustache avec des didacticiels pas à pas.
+description: Libérez la puissance d’Aspose.Words pour Java. Apprenez la gestion des données XML, le publipostage et la syntaxe Moustache avec des didacticiels étape par étape.
 type: docs
 weight: 12
 url: /fr/java/document-manipulation/using-xml-data/

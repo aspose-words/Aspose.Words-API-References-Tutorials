@@ -2,97 +2,111 @@
 title: Állítsa be a táblázat sor formázását
 linktitle: Állítsa be a táblázat sor formázását
 second_title: Aspose.Words Document Processing API
-description: Lépésről lépésre a táblázat sorformázásának beállításához az Aspose.Words for .NET használatával.
+description: Útmutatónkból megtudhatja, hogyan állíthatja be a táblázatsorok formázását Word dokumentumokban az Aspose.Words for .NET használatával. Kiválóan alkalmas jól formázott és professzionális dokumentumok készítésére.
 type: docs
 weight: 10
 url: /hu/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban lépésről lépésre végigvezetjük a táblázat sorformázásának beállításához az Aspose.Words for .NET használatával. Elmagyarázzuk a csomagban lévő C# forráskódot, és átfogó útmutatót adunk, amely segít megérteni és megvalósítani ezt a funkciót saját projektjeiben. Az oktatóanyag végén megtudhatja, hogyan állíthatja be a Word-dokumentumokban lévő táblázatsorok magasságát és kitöltését az Aspose.Words for .NET segítségével.
+Ha szeretné elsajátítani a táblázatok formázását Word dokumentumokban az Aspose.Words for .NET használatával, akkor jó helyen jár. Ez az oktatóanyag végigvezeti Önt a táblázatsorok formázásának beállításán, biztosítva ezzel, hogy dokumentumai ne csak funkcionálisak, hanem esztétikusak is legyenek. Szóval, merüljünk el, és alakítsuk át ezeket az egyszerű táblázatokat jól formázott táblázatokká!
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
-Először is be kell állítania a dokumentumkönyvtár elérési útját. Ez az a hely, ahová menteni szeretné a szerkesztett Word-dokumentumot. Cserélje ki a "DOKUMENTUMKÖNYVTÁR" elemet a megfelelő elérési útra.
+## Előfeltételek
+
+Mielőtt belevágnánk az oktatóanyagba, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+
+1.  Aspose.Words for .NET – Ha még nem tette meg, töltse le és telepítse a webhelyről[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet – Bármely IDE, például a Visual Studio, amely támogatja a .NET-et.
+3. Alapvető C# ismerete – Az alapvető C# fogalmak megértése segít a gördülékeny követésben.
+
+## Névterek importálása
+
+Először is importálnia kell a szükséges névtereket. Ez kulcsfontosságú, mivel biztosítja, hogy hozzáférjen az Aspose.Words for .NET által biztosított összes funkcióhoz.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## 2. lépés: Hozzon létre egy új dokumentumot és dokumentumkészítőt
- Ezután létre kell hoznia egy új példányt a`Document` osztályt és egy dokumentumkonstruktort az adott dokumentumhoz.
+Bontsuk le a folyamatot egyszerű, emészthető lépésekre. Minden lépés a táblázat formázási folyamatának egy meghatározott részét fedi le.
+
+## 1. lépés: Hozzon létre egy új dokumentumot
+
+Az első lépés egy új Word dokumentum létrehozása. Ez szolgál majd vászonként az asztalhoz.
 
 ```csharp
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Indítson el egy új táblát, és adjon hozzá egy cellát
- táblázat létrehozásának megkezdéséhez használjuk a`StartTable()` metódusával, akkor adunk hozzá egy cellát a táblázathoz a`InsertCell()` módszer.
+## 2. lépés: Indítson el egy táblázatot
+
+ Ezután elkezdheti létrehozni a táblázatot. A`DocumentBuilder` osztály egyszerű módot biztosít a táblázatok beszúrására és formázására.
 
 ```csharp
-Table table = builder. StartTable();
-builder. InsertCell();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## 4. lépés: Határozza meg a vonal formázását
- Most már beállíthatjuk a sor formázását a`RowFormat` tárgya a`DocumentBuilder` tárgy. A megfelelő tulajdonságok segítségével beállíthatjuk a sor magasságát és a margókat (paddings).
+## 3. lépés: Állítsa be a sor formázását
+
+Most jön a szórakoztató rész – a sorformázás beállítása. Beállíthatja a sor magasságát, és megadhatja a magasságszabályt.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## 5. lépés: Állítsa be a táblázat margóit
- Ezután beállíthatjuk a táblázat kitöltését a megfelelő tulajdonságok elérésével`Table` tárgy. Ezek a margók a táblázat összes sorára vonatkoznak.
+## 4. lépés: Alkalmazza a kitöltést az asztalra
+
+kitöltéssel helyet ad a cellán belüli tartalom körül, így a szöveg olvashatóbbá válik. Az asztal minden oldalára beállíthatja a párnázást.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## 6. lépés: Adjon hozzá tartalmat a sorhoz
- Végül tartalmat adhatunk a sorhoz a dokumentumkészítő segítségével`Writeln()` módszer.
+## 5. lépés: Adjon hozzá tartalmat a sorhoz
+
+Ha a formázás a helyén van, itt az ideje, hogy tartalommal egészítsük ki a sort. Ez lehet bármilyen szöveg vagy adat, amelyet fel szeretne venni.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.Writeln("I'm a wonderfully formatted row.");
+builder.EndRow();
 ```
 
-## 7. lépés: Fejezze be a táblázatot és mentse el a dokumentumot
-Ban ben
+## 6. lépés: Véglegesítse a táblázatot
 
- végén befejezzük a táblázat létrehozását a`EndRow()`és`EndTable()` módszerrel, majd a módosított dokumentumot fájlba mentjük.
+A táblázatkészítési folyamat lezárásához be kell fejeznie a táblázatot, és el kell mentenie a dokumentumot.
 
 ```csharp
-builder. EndRow();
-builder. EndTable();
+builder.EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
 ```
 
-### Minta forráskód a Set Table Row Formatting programhoz az Aspose.Words for .NET használatával 
-
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Ezek a formázási tulajdonságok a táblázatban vannak beállítva, és a táblázat összes sorára vonatkoznak.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableRowFormatting.docx");
-```
-
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan kell beállítani a táblázatsorok formázását az Aspose.Words for .NET használatával. A lépésenkénti útmutató követésével könnyedén beállíthatja a táblázat sorainak magasságát és margóit a Word-dokumentumokban. Az Aspose.Words hatékony és rugalmas API-t kínál a dokumentumok táblázatainak kezeléséhez és formázásához. Ezzel a tudással testreszabhatja asztalai vizuális elrendezését az Ön egyedi igényei szerint.
+
+És megvan! Sikeresen létrehozott egy formázott táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a folyamat kiterjeszthető és testreszabható, hogy megfeleljen a bonyolultabb követelményeknek, de ezek az alapvető lépések szilárd alapot biztosítanak. Kísérletezzen a különböző formázási beállításokkal, és nézze meg, hogyan javítják a dokumentumokat.
+
+## GYIK
+
+### Beállíthatok különböző formázást a táblázat minden sorához?
+ Igen, az egyes sorokhoz egyedi formázást állíthat be, ha eltérőt alkalmaz`RowFormat` tulajdonságait minden egyes létrehozott sorhoz.
+
+### Lehetséges-e más elemek, például képek hozzáadása a táblázat celláihoz?
+ Teljesen! A táblázatcellákba képeket, alakzatokat és egyéb elemeket szúrhat be a`DocumentBuilder` osztály.
+
+### Hogyan változtathatom meg a szöveg igazítását a táblázatcellákon belül?
+ A szöveg igazítását a beállításával módosíthatja`ParagraphFormat.Alignment` tulajdona a`DocumentBuilder` tárgy.
+
+### Egyesíthetek cellákat egy táblázatban az Aspose.Words for .NET használatával?
+ Igen, egyesítheti a cellákat a`CellFormat.HorizontalMerge`és`CellFormat.VerticalMerge` tulajdonságait.
+
+### Van mód a táblázat stílusozására előre meghatározott stílusokkal?
+ Igen, az Aspose.Words for .NET lehetővé teszi előre meghatározott táblázatstílusok alkalmazását a`Table.Style` ingatlan.

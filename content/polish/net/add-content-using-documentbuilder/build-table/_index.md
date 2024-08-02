@@ -9,7 +9,7 @@ url: /pl/net/add-content-using-documentbuilder/build-table/
 ---
 ## Wstęp
 
-No hej! Czy chcesz programowo tworzyć tabele w dokumentach programu Word? Cóż, trafiłeś we właściwe miejsce! Dzisiaj zanurzymy się w magiczny świat Aspose.Words dla .NET. Ta potężna biblioteka pozwala manipulować dokumentami programu Word jak profesjonalista. Wyobraź sobie, że jesteś czarodziejem, a Aspose.Words jest Twoją różdżką, umożliwiającą tworzenie, edytowanie i formatowanie dokumentów jednym ruchem nadgarstka (a raczej linijką kodu). W tym samouczku skupimy się na tworzeniu tabeli w dokumencie programu Word. Więc chwyć kapelusz programisty i zaczynajmy!
+No hej! Czy chcesz programowo tworzyć tabele w dokumentach programu Word? Cóż, trafiłeś we właściwe miejsce! Dzisiaj zanurzymy się w magiczny świat Aspose.Words dla .NET. Ta potężna biblioteka pozwala manipulować dokumentami programu Word jak profesjonalista. Wyobraź sobie, że jesteś czarodziejem, a Aspose.Words to Twoja różdżka, która umożliwia tworzenie, edytowanie i formatowanie dokumentów jednym ruchem nadgarstka (a raczej linijką kodu). W tym samouczku skupimy się na tworzeniu tabeli w dokumencie programu Word. Więc chwyć kapelusz programisty i zaczynajmy!
 
 ## Warunki wstępne
 

@@ -2,74 +2,101 @@
 title: Chỉ định ngôn ngữ ở cấp trường
 linktitle: Chỉ định ngôn ngữ ở cấp trường
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chỉ định bản địa hóa cấp trường trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách chỉ định ngôn ngữ cho các trường trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn của chúng tôi để tùy chỉnh định dạng tài liệu của bạn một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/specify-locale-at-field-level/
 ---
+## Giới thiệu
 
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# sau đây cho phép chỉ định bản địa hóa ở cấp trường bằng tính năng Aspose.Words for .NET. Đảm bảo bạn đã đưa thư viện Aspose.Words vào dự án của mình trước khi sử dụng mã này.
+Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ khám phá cách chỉ định ngôn ngữ ở cấp trường. Tính năng tiện dụng này đặc biệt hữu ích khi bạn cần tài liệu của mình tuân thủ các định dạng văn hóa hoặc khu vực cụ thể. Hãy coi việc này giống như việc đưa cho tài liệu của bạn một hộ chiếu cho biết cách ứng xử dựa trên nơi nó "đến thăm". Đến cuối hướng dẫn này, bạn sẽ có thể tùy chỉnh cài đặt ngôn ngữ cho các trường trong tài liệu Word của mình một cách dễ dàng. Bắt đầu nào!
 
-## Bước 1: Đặt đường dẫn thư mục tài liệu
+## Điều kiện tiên quyết
+
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt phiên bản mới nhất. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
+3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp bạn theo dõi các ví dụ.
+4. Aspose License: Nếu bạn không có giấy phép, bạn có thể nhận được[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để thử tất cả các tính năng.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Đây là những điều cần thiết để làm việc với Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Được rồi, bây giờ chúng ta đã có những điều kiện tiên quyết, hãy chia nhỏ quy trình từng bước một. Mỗi bước sẽ có tiêu đề và phần giải thích để bạn dễ dàng thực hiện.
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+Đầu tiên, chúng ta cần thiết lập thư mục nơi chúng ta sẽ lưu tài liệu của mình. Hãy coi điều này như việc chuẩn bị sân khấu cho vở kịch của chúng ta.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác tới thư mục tài liệu của bạn nơi tài liệu đã chỉnh sửa sẽ được lưu.
+ Thay thế`"YOUR_DOCUMENT_DIRECTORY"` với đường dẫn thực tế đến thư mục của bạn.
 
-## Bước 2: Tạo trình tạo tài liệu
+## Bước 2: Khởi tạo DocumentBuilder
+
+ Tiếp theo, chúng ta sẽ tạo một phiên bản mới của`DocumentBuilder`. Đây giống như cây bút và tờ giấy của chúng ta để tạo và chỉnh sửa tài liệu Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Ở đây chúng ta đang tạo một thể hiện của`DocumentBuilder` class sẽ cho phép chúng ta thêm các trường vào tài liệu.
+## Bước 3: Chèn một trường
 
-## Bước 3: Chèn trường ngày với vị trí cụ thể
+Bây giờ, hãy chèn một trường vào tài liệu. Trường là các thành phần động có thể hiển thị dữ liệu, chẳng hạn như ngày tháng, số trang hoặc phép tính.
 
 ```csharp
-Field field = builder. InsertField(FieldType.FieldDate, true);
+Field field = builder.InsertField(FieldType.FieldDate, true);
+```
+
+## Bước 4: Chỉ định ngôn ngữ
+
+ Đây là sự kỳ diệu! Chúng tôi sẽ đặt ngôn ngữ cho trường. ID địa phương`1049`tương ứng với tiếng Nga. Điều này có nghĩa là trường ngày của chúng tôi sẽ tuân theo các quy tắc định dạng của Nga.
+
+```csharp
 field.LocaleId = 1049;
 ```
 
- Chúng tôi sử dụng trình tạo tài liệu để chèn một trường loại`FieldType.FieldDate` vào tài liệu. Bằng cách thiết lập`LocaleId`tài sản để`1049`, chúng tôi chỉ định bản địa hóa tiếng Nga cho trường này.
+## Bước 5: Lưu tài liệu
 
-## Bước 4: Lưu tài liệu đã sửa đổi
-
-```csharp
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
-```
-
-Cuối cùng, chúng tôi lưu tài liệu đã sửa đổi với vị trí đã chỉ định vào một tệp được chỉ định.
-
-### Mã nguồn mẫu để chỉ định bản địa hóa cấp trường với Aspose.Words cho .NET
+Cuối cùng, hãy lưu tài liệu của chúng tôi. Bước này hoàn tất tất cả những thay đổi chúng tôi đã thực hiện.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-DocumentBuilder builder = new DocumentBuilder();
-
-Field field = builder. InsertField(FieldType.FieldDate, true);
-field.LocaleId = 1049;
-
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
+builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.docx");
 ```
 
-Đây là mã nguồn mẫu để chỉ định bản địa hóa ở cấp trường trong tài liệu bằng Aspose.Words cho .NET. Bạn có thể sử dụng mã này để chèn các trường ngày ở các vị trí cụ thể trong tài liệu Word của mình.
+## Phần kết luận
 
-### Câu hỏi thường gặp
+Và bạn có nó rồi đấy! Bạn đã chỉ định thành công ngôn ngữ cho một trường trong tài liệu Word của mình bằng Aspose.Words for .NET. Tính năng mạnh mẽ này cho phép bạn điều chỉnh tài liệu của mình để đáp ứng các yêu cầu cụ thể về văn hóa và khu vực, giúp ứng dụng của bạn trở nên linh hoạt và thân thiện hơn với người dùng. Chúc mừng mã hóa!
 
-#### Câu hỏi: Làm cách nào tôi có thể chỉ định ngôn ngữ cấp trường trong Aspose.Words cho .NET?
+## Câu hỏi thường gặp
 
- Trả lời: Để chỉ định ngôn ngữ ở cấp trường trong Aspose.Words cho .NET, bạn có thể sử dụng`FieldOptions` lớp học và nó`FieldLocale` thuộc tính để đặt ngôn ngữ mong muốn. Ví dụ, bạn có thể sử dụng`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` để chỉ định ngôn ngữ tiếng Pháp (Pháp).
+### ID ngôn ngữ trong Aspose.Words là gì?
 
-#### Câu hỏi: Có thể chỉ định một ngôn ngữ khác cho từng trường trong Aspose.Words cho .NET không?
+ID ngôn ngữ trong Aspose.Words là mã định danh bằng số đại diện cho một nền văn hóa hoặc khu vực cụ thể, ảnh hưởng đến cách định dạng dữ liệu như ngày và số.
 
- Trả lời: Có, có thể chỉ định một ngôn ngữ khác cho từng trường trong Aspose.Words for .NET. Bạn có thể dùng`FieldOptions.FieldLocale` thuộc tính trước khi tạo hoặc cập nhật một trường cụ thể để gán cho nó một ngôn ngữ khác.
+### Tôi có thể chỉ định các vị trí khác nhau cho các trường khác nhau trong cùng một tài liệu không?
 
-#### Câu hỏi: Làm cách nào tôi có thể lấy ngôn ngữ hiện đang được sử dụng cho một trường trong Aspose.Words cho .NET?
+Có, bạn có thể chỉ định các ngôn ngữ khác nhau cho các trường khác nhau trong cùng một tài liệu để đáp ứng các yêu cầu định dạng khác nhau.
 
- Đáp: Để lấy ngôn ngữ hiện đang được sử dụng cho một trường trong Aspose.Words cho .NET, bạn có thể sử dụng ngôn ngữ của trường đó`Field.LocaleId`tài sản. Điều này sẽ cho phép bạn lấy mã định danh miền địa phương được liên kết với trường.
+### Tôi có thể tìm danh sách ID ngôn ngữ ở đâu?
+
+Bạn có thể tìm thấy danh sách ID ngôn ngữ trong tài liệu của Microsoft hoặc trong tài liệu API Aspose.Words.
+
+### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
+
+ Mặc dù bạn có thể sử dụng Aspose.Words cho .NET mà không cần giấy phép ở chế độ đánh giá, bạn nên có giấy phép[giấy phép](https://purchase.aspose.com/buy) để mở khóa đầy đủ chức năng.
+
+### Làm cách nào để cập nhật thư viện Aspose.Words lên phiên bản mới nhất?
+
+ Bạn có thể tải xuống phiên bản mới nhất của Aspose.Words cho .NET từ[trang tải xuống](https://releases.aspose.com/words/net/).

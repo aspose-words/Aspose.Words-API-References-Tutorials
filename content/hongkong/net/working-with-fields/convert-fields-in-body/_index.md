@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /zh-hant/net/working-with-fields/convert-fields-in-body/
 ---
-
 ## 介紹
 
 在 .NET 開發領域，動態管理文件內容至關重要，通常需要操作文件中的各種欄位類型。 Aspose.Words for .NET 作為開發人員的強大工具集脫穎而出，提供強大的功能來高效處理文件欄位。本綜合指南重點介紹如何使用 Aspose.Words for .NET 轉換文件正文中的字段，提供逐步說明，幫助開發人員增強文件自動化和管理。
@@ -31,9 +30,7 @@ using System.Linq;
 
 這些命名空間對於存取 Aspose.Words 功能和 LINQ 查詢至關重要。
 
-## 使用 Aspose.Words for .NET 轉換正文欄位的逐步指南
-
-### 第 1 步：載入文檔
+## 第 1 步：載入文檔
 
 首先載入要轉換字段的文檔：
 
@@ -44,7 +41,7 @@ Document doc = new Document(dataDir + "Linked fields.docx");
 
 代替`"YOUR DOCUMENT DIRECTORY"`與您的實際文件的路徑。
 
-### 第 2 步：識別並轉換字段
+## 第 2 步：識別並轉換字段
 
 識別並轉換文檔正文中的特定欄位。例如，要將 PAGE 欄位轉換為文字：
 
@@ -57,7 +54,7 @@ doc.FirstSection.Body.Range.Fields
 
 此程式碼片段使用 LINQ 來尋找文件正文中的所有 PAGE 字段，然後取消它們的鏈接，從而有效地將它們轉換為靜態文字。
 
-### 第 3 步：儲存文檔
+## 第 3 步：儲存文檔
 
 轉換欄位後儲存修改後的文件：
 
@@ -71,7 +68,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 掌握使用 Aspose.Words for .NET 操作文件欄位的技巧，使開發人員能夠有效率地自動化文件工作流程。無論是將欄位轉換為純文字還是處理更複雜的欄位類型，Aspose.Words 都透過其直覺的 API 和強大的功能集簡化了這些任務，確保無縫整合到 .NET 應用程式中。
 
-## 常見問題 (FAQ)
+## 常見問題解答
 
 ### Aspose.Words for .NET 中的文件欄位是什麼？
 Aspose.Words 中的文件欄位是可以儲存和顯示動態資料的佔位符，例如日期、頁碼和計算。

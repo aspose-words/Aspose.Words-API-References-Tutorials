@@ -12,4 +12,4 @@ Przetwarzanie słów za pomocą znaku wodnego to kompleksowe źródło informacj
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Dodaj tekstowy znak wodny z określonymi opcjami](./add-text-watermark-with-specific-options/) | Dowiedz się, jak dodać tekstowy znak wodny z określonymi opcjami za pomocą Aspose.Words dla .NET. Przewodnik krok po kroku. |
+| [Dodaj tekstowy znak wodny z określonymi opcjami](./add-text-watermark-with-specific-options/) | Dowiedz się, jak dodać tekstowy znak wodny z określonymi opcjami do dokumentów programu Word przy użyciu Aspose.Words dla .NET. Z łatwością dostosuj czcionkę, rozmiar, kolor i układ. |

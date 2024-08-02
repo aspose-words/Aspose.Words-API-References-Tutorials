@@ -12,7 +12,7 @@ url: /es/java/document-splitting/splitting-documents-into-multiple-files/
 
 ## Comprender los conceptos básicos
 
-Antes de entrar en detalles técnicos, es esencial comprender qué es Aspose.Words para Java. Es una poderosa biblioteca de Java que le permite crear, manipular y procesar documentos de Word sin la necesidad de Microsoft Word. Esto lo convierte en una excelente opción para automatizar tareas relacionadas con documentos.
+Antes de entrar en detalles técnicos, es esencial entender qué es Aspose.Words para Java. Es una poderosa biblioteca de Java que le permite crear, manipular y procesar documentos de Word sin la necesidad de Microsoft Word. Esto lo convierte en una excelente opción para automatizar tareas relacionadas con documentos.
 
 ## Configurando su entorno
 

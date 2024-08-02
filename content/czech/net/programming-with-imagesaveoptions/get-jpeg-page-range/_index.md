@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Vložte svůj dokument
 
-Nejprve musíme načíst dokument aplikace Word, který chceme převést. Předpokládejme, že se náš dokument jmenuje`Rendering.docx` a je umístěn v adresáři určeném zástupným symbolem`YOUR DOCUMENT DIRECTORY`.
+Nejprve musíme načíst dokument aplikace Word, který chceme převést. Předpokládejme, že náš dokument je pojmenován`Rendering.docx` a je umístěn v adresáři určeném zástupným symbolem`YOUR DOCUMENT DIRECTORY`.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

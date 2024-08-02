@@ -12,6 +12,6 @@ Zpracování textu s textovými poli je komplexní zdroj, který vás krok za kr
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Vytvořit odkaz ve Wordu](./create-a-link/) | Naučte se, jak vytvořit propojení ve Wordu mezi textovými poli v dokumentu Word pomocí Aspose.Words for .NET. |
-| [Zkontrolujte sekvenci](./check-sequence/) | Naučte se, jak zkontrolovat posloupnost textových polí v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Přerušit odkaz vpřed v dokumentu aplikace Word](./break-a-link/) | Naučte se, jak přerušit odkazy vpřed v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Propojování textových polí ve Wordu](./create-a-link/) | Naučte se vytvářet a propojovat textová pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho komplexního průvodce pro bezproblémové přizpůsobení dokumentu! |
+| [Kontrola sekvence textového pole ve Wordu](./check-sequence/) | Zjistěte, jak zkontrolovat pořadí textových polí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce tokem hlavních dokumentů! |
+| [Přerušit odkaz vpřed v dokumentu aplikace Word](./break-a-link/) | Naučte se, jak přerušit odkazy vpřed v textových polích dokumentu Word pomocí Aspose.Words for .NET. Postupujte podle našeho průvodce pro hladší správu dokumentů. |

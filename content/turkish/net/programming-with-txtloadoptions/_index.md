@@ -16,6 +16,6 @@ Aspose.Words'ü kullanarak Word belge işleme görevlerini etkili bir şekilde o
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Boşluklarla Numaralandırmayı Algıla](./detect-numbering-with-whitespaces/) | Aspose.Words for .NET'te boşluklu liste numaralarını nasıl tespit edeceğinizi öğrenin. Belgelerinizin yapısını kolaylıkla geliştirin. |
-| [Tutamaç Alanları Seçenekleri](./handle-spaces-options/) | Aspose.Words for .NET ile TXT belgelerinizdeki alanları nasıl yöneteceğinizi öğrenin. Gereksiz boşlukları kaldırın ve okunabilirliği artırın. |
-| [Belge Metni Yönü](./document-text-direction/) | Aspose.Words for .NET ile belgelerinizdeki metin yönünü nasıl belirleyeceğinizi öğrenin. Sağdan sola yazılan diller için ekranı iyileştirin. Eğitimin tamamına şimdi erişin. |
+| [Boşluklarla Numaralandırmayı Algıla](./detect-numbering-with-whitespaces/) | Aspose.Words for .NET'i kullanarak düz metin belgelerdeki boşluklu numaralandırmayı nasıl tespit edebileceğinizi keşfedin ve listelerinizin doğru şekilde tanındığından emin olun. |
+| [Tutamaç Alanları Seçenekleri](./handle-spaces-options/) | Aspose.Words for .NET ile metin belgelerinin başındaki ve sonundaki boşlukların nasıl işleneceğini öğrenin. Bu eğitici metin biçimlendirmesini temizlemeye yönelik bir kılavuz sağlar. |
+| [Belge Metni Yönü](./document-text-direction/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word'de belge metni yönünü nasıl ayarlayacağınızı öğrenin. Sağdan sola dilleri işlemek için mükemmeldir. |

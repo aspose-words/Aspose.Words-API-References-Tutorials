@@ -14,7 +14,7 @@ L'extraction efficace du contenu des documents Word est une exigence courante da
 
 ## Conditions préalables
 
-Avant de plonger dans le code, assurez-vous que Python et la bibliothèque Aspose.Words sont installés. Vous pouvez télécharger la bibliothèque sur le site Web[ici](https://releases.aspose.com/words/python/). De plus, assurez-vous d'avoir un document Word prêt à être testé.
+ Avant de plonger dans le code, assurez-vous que Python et la bibliothèque Aspose.Words sont installés. Vous pouvez télécharger la bibliothèque sur le site Web[ici](https://releases.aspose.com/words/python/). De plus, assurez-vous d'avoir un document Word prêt à être testé.
 
 ## Installation d'Aspose.Words pour Python
 

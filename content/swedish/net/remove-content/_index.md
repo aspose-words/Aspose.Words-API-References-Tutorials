@@ -16,7 +16,7 @@ Oavsett om du behöver manipulera, skapa, konvertera eller generera Word-dokumen
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Ta bort sidbrytningar i Word-dokument](./remove-page-breaks/) | Lär dig hur du tar bort sidbrytningar i Word-dokument med hjälp av Aspose.Words Library för .NET. Följ vår steg-för-steg-guide för en sömlös layout. |
-| [Ta bort avsnittsbrytningar i Word-dokument](./remove-section-breaks/) | Lär dig hur du tar bort avsnittsbrytningar i ett Word-dokument med Aspose.Words-biblioteket för .NET. Eliminera effektivt avsnittsavbrott som kan störa din dokumentformatering.|
-| [Ta bort sidfötter i Word-dokument](./remove-footers/) | Lär dig hur du enkelt tar bort sidfötter i Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för effektiv hantering av DOCX-filer. |
+| [Ta bort sidbrytningar i Word-dokument](./remove-page-breaks/) | Lär dig hur du tar bort sidbrytningar i ett Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Förbättra dina färdigheter i dokumenthantering. |
+| [Ta bort avsnittsbrytningar i Word-dokument](./remove-section-breaks/) | Lär dig hur du tar bort avsnittsbrytningar i Word-dokument med Aspose.Words för .NET. Denna detaljerade steg-för-steg-guide säkerställer smidig dokumenthantering och redigering.|
+| [Ta bort sidfötter i Word-dokument](./remove-footers/) | Lär dig hur du tar bort sidfötter från Word-dokument med Aspose.Words för .NET med den här omfattande steg-för-steg-guiden. |
 | [Ta bort innehållsförteckning i Word-dokument](./remove-table-of-contents/) | Lär dig hur du tar bort innehållsförteckningen i ett Word-dokument med Aspose.Words för .NET. |

@@ -10,7 +10,7 @@ url: /id/python-net/tables-and-formatting/document-table-styles-formatting/
 
 Tabel dokumen memainkan peran penting dalam menyajikan informasi secara terorganisir dan menarik secara visual. Aspose.Words untuk Python menyediakan seperangkat alat canggih yang memungkinkan pengembang bekerja secara efisien dengan tabel dan menyesuaikan gaya dan pemformatannya. Pada artikel ini, kita akan mempelajari cara memanipulasi dan menyempurnakan tabel dokumen menggunakan Aspose.Words untuk Python API. Ayo selami!
 
-## Memulai Aspose.Words untuk Python
+## Memulai dengan Aspose.Words untuk Python
 
 Sebelum kita mendalami secara spesifik gaya dan pemformatan tabel dokumen, pastikan Anda telah menyiapkan alat yang diperlukan:
 
@@ -110,7 +110,7 @@ Aspose.Words untuk Python menyediakan berbagai opsi gaya untuk membuat tabel And
 
 ## Menggabungkan dan Memisahkan Sel untuk Tata Letak yang Kompleks
 
-Membuat tata letak tabel yang rumit sering kali memerlukan penggabungan dan pemisahan sel:
+Membuat tata letak tabel yang kompleks sering kali memerlukan penggabungan dan pemisahan sel:
 
 1. Gabungkan Sel: Gabungkan beberapa sel untuk membuat satu sel yang lebih besar.
 

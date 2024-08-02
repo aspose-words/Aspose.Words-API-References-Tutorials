@@ -129,6 +129,6 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### D: Posso aggiungere ulteriori livelli a un elenco numerato in Aspose.Words?
 
- R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel`La classe consente di impostare le proprietà di formattazione per ogni livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
+ R: Sì, è possibile aggiungere ulteriori livelli a un elenco numerato in Aspose.Words. IL`ListLevel`La classe consente di impostare le proprietà di formattazione per ciascun livello dell'elenco. Puoi impostare opzioni come prefisso, suffisso, allineamento, rientro, ecc. Ciò ti consente di creare elenchi con più livelli di gerarchia.
 
 

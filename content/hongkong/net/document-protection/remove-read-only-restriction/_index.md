@@ -75,7 +75,7 @@ doc.WriteProtection.ReadOnlyRecommended = false;
 doc.Protect(ProtectionType.NoProtection);
 ```
 
-此步驟至關重要，因為它可確保您的文件不會受到寫入保護。
+此步驟至關重要，因為它確保您的文件不會受到寫入保護。
 
 ## 第 6 步：儲存文檔
 

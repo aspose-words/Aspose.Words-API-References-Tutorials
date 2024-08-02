@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Inicializujte Document a DocumentBuilder
 
-Nejprve musíme vytvořit nový dokument aplikace Word a inicializovat a`DocumentBuilder` začněte budovat náš dokument.
+Nejprve musíme vytvořit nový dokument aplikace Word a inicializovat a`DocumentBuilder` objekt začít budovat náš dokument.
 
 ```csharp
 // Cesta k adresáři dokumentů.

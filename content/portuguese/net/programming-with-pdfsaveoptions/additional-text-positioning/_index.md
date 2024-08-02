@@ -54,7 +54,7 @@ Depois que seu projeto estiver configurado, a próxima etapa é carregar o docum
 
 ## Passo 3: Configurar opções para salvar PDF
 
- A magia acontece aqui! Vamos configurar o`PdfSaveOptions` para ativar o posicionamento de texto adicional.
+ A mágica acontece aqui! Vamos configurar o`PdfSaveOptions` para ativar o posicionamento de texto adicional.
 
 1.  Crie o objeto PdfSaveOptions: instancie o`PdfSaveOptions` aula.
     ```csharp

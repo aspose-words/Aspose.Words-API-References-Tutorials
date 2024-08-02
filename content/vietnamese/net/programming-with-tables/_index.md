@@ -16,26 +16,26 @@ Bằng cách làm theo các hướng dẫn này, bạn sẽ có thể khai thác
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Tự động điều chỉnh bảng phù hợp với nội dung](./auto-fit-table-to-contents/) | Tìm hiểu cách tự động điều chỉnh bảng cho phù hợp với nội dung của bảng trong tài liệu Word bằng Aspose.Words for .NET. |
-| [Sao chép bảng hoàn chỉnh](./clone-complete-table/) | Tìm hiểu cách sao chép toàn bộ bảng vào tài liệu Word bằng Aspose.Words cho .NET. |
-| [Tìm chỉ mục](./finding-index/) | Tìm hiểu cách tìm chỉ mục bảng, hàng và ô trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Tự động điều chỉnh bảng phù hợp với nội dung](./auto-fit-table-to-contents/) | Tìm hiểu cách tự động điều chỉnh bảng cho phù hợp với nội dung trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn này. Hoàn hảo cho việc định dạng tài liệu năng động và gọn gàng. |
+| [Sao chép bảng hoàn chỉnh](./clone-complete-table/) | Tìm hiểu cách sao chép các bảng hoàn chỉnh trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. |
+| [Tìm chỉ mục](./finding-index/) | Tìm hiểu cách tìm chỉ mục của bảng, hàng và ô trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
 | [Chèn bảng trực tiếp](./insert-table-directly/) | Tìm hiểu cách chèn bảng trực tiếp vào tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước của chúng tôi để hợp lý hóa việc tạo tài liệu của bạn. |
-| [Chèn bảng từ Html](./insert-table-from-html/) | Tìm hiểu cách chèn bảng từ HTML vào tài liệu Word bằng Aspose.Words cho .NET. |
-| [Tạo bảng đơn giản](./create-simple-table/) | Tìm hiểu cách tạo bảng đơn giản trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Bảng được định dạng](./formatted-table/) | Tìm hiểu cách tạo bảng được định dạng trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Bảng lồng nhau](./nested-table/) | Tìm hiểu cách tạo bảng lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Kết hợp các hàng](./combine-rows/) | Tìm hiểu cách kết hợp các hàng của bảng trong tài liệu Word với Aspose.Words cho .NET. |
-| [Chia bảng](./split-table/) | Tìm hiểu cách chia bảng trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Định dạng hàng Tắt ngắt trên các trang](./row-format-disable-break-across-pages/) | Tìm hiểu cách tắt tính năng ngắt dòng cho một bảng trên nhiều trang trong tài liệu Word bằng Aspose.Words for .NET. |
-| [Giữ bàn cùng nhau](./keep-table-together/) | Tìm hiểu cách giữ các bảng lại với nhau trong tài liệu Word bằng Aspose.Words dành cho .NET. |
-| [Hợp nhất theo chiều dọc](./vertical-merge/) | Tìm hiểu cách hợp nhất các ô theo chiều dọc trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Hợp nhất theo chiều ngang](./horizontal-merge/) | Tìm hiểu cách hợp nhất các ô theo chiều ngang trong bảng Word với Aspose.Words cho .NET. |
-| [Chuyển đổi sang các ô được hợp nhất theo chiều ngang](./convert-to-horizontally-merged-cells/) | Tìm hiểu cách chuyển đổi các ô của bảng thành các ô được hợp nhất theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Lặp lại hàng trên các trang tiếp theo](./repeat-rows-on-subsequent-pages/) | Tìm hiểu cách lặp lại các hàng trong bảng trên các trang tiếp theo trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Chèn bảng từ Html](./insert-table-from-html/) | Tìm hiểu cách chèn bảng từ HTML vào tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để tích hợp tài liệu liền mạch. |
+| [Tạo bảng đơn giản](./create-simple-table/) | Tìm hiểu cách tạo bảng đơn giản trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện của chúng tôi. |
+| [Bảng được định dạng](./formatted-table/) | Tìm hiểu cách tạo và định dạng bảng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. |
+| [Bảng lồng nhau](./nested-table/) | Tìm hiểu cách tạo các bảng lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn của chúng tôi. Hoàn hảo để tạo bố cục tài liệu phức tạp theo chương trình. |
+| [Kết hợp các hàng](./combine-rows/) | Tìm hiểu cách kết hợp các hàng từ nhiều bảng thành một bảng bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. |
+| [Chia bảng](./split-table/) | Tìm hiểu cách chia bảng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước của chúng tôi giúp việc quản lý bảng trở nên dễ dàng và hiệu quả. |
+| [Định dạng hàng Tắt ngắt trên các trang](./row-format-disable-break-across-pages/) | Tìm hiểu cách tắt ngắt hàng trên các trang trong tài liệu Word bằng Aspose.Words for .NET để duy trì khả năng đọc và định dạng bảng. |
+| [Giữ bàn cùng nhau](./keep-table-together/) | Tìm hiểu cách giữ cho bảng không bị vỡ giữa các trang trong tài liệu Word bằng Aspose.Words dành cho .NET. Hãy làm theo hướng dẫn của chúng tôi để duy trì các tài liệu chuyên nghiệp, dễ đọc. |
+| [Hợp nhất theo chiều dọc](./vertical-merge/) | Nắm vững cách hợp nhất dọc trong bảng Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết này. Tìm hiểu hướng dẫn từng bước để định dạng tài liệu chuyên nghiệp. |
+| [Hợp nhất theo chiều ngang](./horizontal-merge/) | Tìm hiểu cách hợp nhất các ô theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. |
+| [Chuyển đổi sang các ô được hợp nhất theo chiều ngang](./convert-to-horizontally-merged-cells/) | Chuyển đổi các ô được hợp nhất theo chiều dọc thành các ô được hợp nhất theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước để bố trí bảng liền mạch. |
+| [Lặp lại hàng trên các trang tiếp theo](./repeat-rows-on-subsequent-pages/) | Tìm hiểu cách tạo tài liệu Word có các hàng tiêu đề bảng lặp lại bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn này để đảm bảo tài liệu được chuyên nghiệp và bóng bẩy. |
 | [Tự động vừa với cửa sổ](./auto-fit-to-page-width/) | Dễ dàng tự động điều chỉnh bảng vừa vặn với cửa sổ trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các tài liệu sạch hơn, chuyên nghiệp hơn. |
 | [Cài đặt chiều rộng ưa thích](./preferred-width-settings/) | Tìm hiểu cách tạo bảng với cài đặt độ rộng tuyệt đối, tương đối và tự động trong Aspose.Words cho .NET với hướng dẫn từng bước này. |
-| [Truy xuất loại chiều rộng ưa thích](./retrieve-preferred-width-type/) | Tìm hiểu cách truy xuất loại và giá trị độ rộng ưa thích của một ô trong bảng Word bằng Aspose.Words cho .NET. |
-| [Nhận vị trí bảng](./get-table-position/) | Tìm hiểu cách lấy vị trí của bảng trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Nhận vị trí bàn nổi](./get-floating-table-position/) | Tìm hiểu cách lấy vị trí của bảng nổi trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Vị trí bàn nổi](./floating-table-position/) | Tìm hiểu cách định vị bảng ở vị trí nổi trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Đặt vị trí ngang hoặc dọc tương đối](./set-relative-horizontal-or-vertical-position/) | Tìm hiểu cách đặt vị trí ngang hoặc dọc tương đối của bảng trong tài liệu Word bằng Aspose.Words for .NET. |
+| [Truy xuất loại chiều rộng ưa thích](./retrieve-preferred-width-type/) | Tìm hiểu cách truy xuất loại ô bảng có chiều rộng ưa thích trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. |
+| [Nhận vị trí bảng](./get-table-position/) | Khám phá cách xác định vị trí của bảng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. |
+| [Nhận vị trí bàn nổi](./get-floating-table-position/) | Tìm hiểu cách lấy vị trí bảng nổi trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn chi tiết, từng bước này sẽ hướng dẫn bạn mọi thứ bạn cần biết. |
+| [Vị trí bàn nổi](./floating-table-position/) | Tìm hiểu cách kiểm soát vị trí nổi của bảng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. |
+| [Đặt vị trí ngang hoặc dọc tương đối](./set-relative-horizontal-or-vertical-position/) | Tìm hiểu cách đặt vị trí ngang và dọc tương đối cho các bảng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. |

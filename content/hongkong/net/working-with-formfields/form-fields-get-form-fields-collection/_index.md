@@ -39,7 +39,7 @@ FormFieldCollection formFields = doc.Range.FormFields;
 foreach (FormField formField in formFields)
 {
     //存取和操作每個表單字段
-    //…
+    //……
 }
 ```
 
@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 FormFieldCollection formFields = doc.Range.FormFields;
 
 //根據需要存取和操作表單字段
-//…
+//……
 
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```

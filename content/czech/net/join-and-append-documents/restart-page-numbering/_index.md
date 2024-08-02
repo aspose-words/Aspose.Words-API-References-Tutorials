@@ -35,7 +35,7 @@ Nyní se pojďme ponořit do praktických kroků spojených s restartováním č
 
 ## Krok 1: Načtěte zdrojové a cílové dokumenty:
 
- Definujte řetězcovou proměnnou`dataDir` pro uložení cesty k adresáři dokumentů. Nahraďte „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečným umístěním.
+ Definujte řetězcovou proměnnou`dataDir` pro uložení cesty k vašemu adresáři dokumentů. Nahraďte „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečným umístěním.
 
  Vytvořte dva`Document` objekty pomocí`Aspose.Words.Document`konstruktér. První (`srcDoc`) bude obsahovat zdrojový dokument obsahující obsah, který má být připojen. Druhý (`dstDoc`) představuje cílový dokument, do kterého integrujeme zdrojový obsah s restartovaným číslováním stránek.
 

@@ -16,8 +16,8 @@ En suivant ces didacticiels, vous apprendrez à utiliser efficacement Aspose.Wor
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Créer un projet Vba](./create-vba-project/) | Dans ce didacticiel, découvrez comment créer un projet VBA dans un document Word avec Aspose.Words pour .NET. |
-| [Lire les macros Vba](./read-vba-macros/) | Dans ce didacticiel, découvrez comment lire les macros VBA à partir d'un document Word avec Aspose.Words pour .NET. |
-| [Modifier les macros Vba](./modify-vba-macros/) | Dans ce didacticiel, découvrez comment modifier les macros VBA d'un document Word avec Aspose.Words pour .NET. |
-| [Cloner le projet Vba](./clone-vba-project/) | Dans ce didacticiel, découvrez comment cloner un projet VBA à partir d'un document Word avec Aspose.Words pour .NET.|
-| [Cloner le module Vba](./clone-vba-module/) | Dans ce didacticiel, découvrez comment cloner un module VBA à partir d'un document Word avec Aspose.Words pour .NET. |
+| [Créer un projet Vba](./create-vba-project/) | Apprenez à créer des projets VBA dans des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour une automatisation transparente des documents ! |
+| [Lire les macros Vba](./read-vba-macros/) | Apprenez à lire des macros VBA à partir de documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé pour une automatisation transparente des documents ! |
+| [Modifier les macros Vba](./modify-vba-macros/) | Découvrez comment modifier les macros VBA dans les documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé étape par étape pour une automatisation transparente des documents ! |
+| [Cloner le projet Vba](./clone-vba-project/) | Découvrez comment cloner des projets VBA dans des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour une manipulation fluide des documents !|
+| [Cloner le module Vba](./clone-vba-module/) | Clonez facilement des modules VBA dans des documents Word avec Aspose.Words pour .NET. Suivez notre guide étape par étape pour une manipulation fluide des documents ! |

@@ -77,7 +77,7 @@ dstDoc.Save(dataDir + "AppendedDocument.docx");
 
 ## Phần kết luận
 
- Và bạn có nó rồi đấy! Bạn đã học thành công cách nối một tài liệu Word vào một tài liệu Word khác bằng Aspose.Words for .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, tải tài liệu, nối thêm tài liệu này với tài liệu khác trong khi vẫn giữ định dạng nguồn và lưu tài liệu kết hợp. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
+ Và bạn có nó rồi đấy! Bạn đã học thành công cách nối một tài liệu Word vào một tài liệu Word khác bằng Aspose.Words for .NET. Hướng dẫn này bao gồm việc thiết lập môi trường của bạn, tải tài liệu, nối tài liệu này với tài liệu khác trong khi vẫn giữ định dạng nguồn và lưu tài liệu kết hợp. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
 
 ## Câu hỏi thường gặp
 

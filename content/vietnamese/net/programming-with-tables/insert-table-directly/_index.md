@@ -100,7 +100,7 @@ Trong đoạn mã này, chúng ta tạo một ô, đặt màu nền của nó th
 
 ```csharp
 // Sau đó, chúng tôi sẽ lặp lại quy trình cho các ô và hàng khác trong bảng.
-// Chúng ta cũng có thể tăng tốc mọi thứ bằng cách sao chép các ô và hàng hiện có.
+//Chúng ta cũng có thể tăng tốc mọi thứ bằng cách sao chép các ô và hàng hiện có.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Chúc mừng! Bạn đã chèn thành công bảng trực tiếp vào tài liệ
  Có, bạn có thể yêu cầu một[dùng thử miễn phí](https://releases.aspose.com/) để đánh giá thư viện trước khi mua.
 
 ### Làm cách nào để mua Aspose.Words cho .NET?
- Bạn có thể mua Aspose.Words cho .NET từ[trang mua hàng](https://purchase.aspose.com/buy).
+Bạn có thể mua Aspose.Words cho .NET từ[trang mua hàng](https://purchase.aspose.com/buy).
 
 ### Tôi có thể tìm tài liệu về Aspose.Words cho .NET ở đâu?
  Tài liệu có sẵn[đây](https://reference.aspose.com/words/net/).

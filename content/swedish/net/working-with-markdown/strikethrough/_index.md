@@ -53,7 +53,7 @@ Grattis! Du har nu lärt dig hur du använder den genomstrukna textstilen med As
 
 #### F: Hur kan jag lägga till den genomstrukna texten i Aspose.Words?
 
- S: För att lägga till den genomstrukna texten i Aspose.Words kan du använda`Font.StrikeThrough` egendom av`Run`objekt. Du kan ställa in den här egenskapen till`true` för att lägga till genomstruken text till specifik text. Du kan till exempel använda`run.Font.StrikeThrough=true` för att lägga till den genomstrukna texten i`Run` objekt.
+ S: För att lägga till den genomstrukna texten i Aspose.Words kan du använda`Font.StrikeThrough` egendom av`Run` objekt. Du kan ställa in den här egenskapen till`true` för att lägga till genomstruken text till specifik text. Du kan till exempel använda`run.Font.StrikeThrough=true` för att lägga till den genomstrukna texten i`Run` objekt.
 
 #### F: Är det möjligt att lägga till den genomstrukna texten i flera textstycken i samma stycke?
 

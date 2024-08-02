@@ -93,7 +93,7 @@ builder.insert_field('HYPERLINK "https://www.example.com" "저희 웹사이트�
 
 ## 필드 형식 사용자 정의
 
-필드는 스위치를 사용하여 형식을 지정할 수 있습니다.
+스위치를 사용하여 필드의 형식을 지정할 수 있습니다.
 
 ```python
 builder.insert_field('DATE \\@ "MMMM yyyy"')
@@ -135,4 +135,4 @@ Word 문서의 필드와 데이터를 효과적으로 처리하면 동적이고 
 
 ## 더 많은 리소스에 액세스
 
- 더 자세한 정보와 코드 예시를 보려면[Python API 참조용 Aspose.Words](https://reference.aspose.com/words/python-net/) . 최신 버전의 라이브러리를 다운로드하려면 다음을 방문하세요.[Aspose.Words for Python 다운로드 페이지](https://releases.aspose.com/words/python/).
+ 더 자세한 정보와 코드 예시를 보려면 다음 사이트를 방문하세요.[Python API 참조용 Aspose.Words](https://reference.aspose.com/words/python-net/) . 최신 버전의 라이브러리를 다운로드하려면 다음을 방문하세요.[Aspose.Words for Python 다운로드 페이지](https://releases.aspose.com/words/python/).

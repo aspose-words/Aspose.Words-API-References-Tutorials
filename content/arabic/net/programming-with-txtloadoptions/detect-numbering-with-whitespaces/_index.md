@@ -2,115 +2,110 @@
 title: كشف الترقيم مع المسافات البيضاء
 linktitle: كشف الترقيم مع المسافات البيضاء
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية اكتشاف أرقام القائمة ذات المسافات البيضاء في Aspose.Words لـ .NET. قم بتحسين بنية مستنداتك بسهولة.
+description: اكتشف كيفية استخدام Aspose.Words for .NET لاكتشاف الترقيم باستخدام المسافات البيضاء في المستندات ذات النص العادي والتأكد من التعرف على قوائمك بشكل صحيح.
 type: docs
 weight: 10
 url: /ar/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-في هذا البرنامج التعليمي، سوف نستكشف كود مصدر C# المقدم لميزة "اكتشاف الترقيم بالمسافات البيضاء" مع Aspose.Words for .NET. تتيح لك هذه الميزة اكتشاف وإنشاء قوائم من مستند نصي يحتوي على أرقام قوائم متبوعة بمسافات بيضاء.
+## مقدمة
 
-## الخطوة 1: تهيئة البيئة
+Aspose.Words لعشاق .NET! اليوم، نحن نتعمق في ميزة رائعة يمكن أن تجعل قوائم التعامل مع المستندات النصية العادية أمرًا سهلاً. هل سبق لك أن تعاملت مع ملفات نصية حيث من المفترض أن تكون بعض الأسطر عبارة عن قوائم، لكنها لا تبدو صحيحة تمامًا عند تحميلها في مستند Word؟ حسنًا، لدينا خدعة رائعة في جعبتنا: اكتشاف الترقيم باستخدام المسافات البيضاء. سيرشدك هذا البرنامج التعليمي إلى كيفية استخدام`DetectNumberingWithWhitespaces` في Aspose.Words for .NET لضمان التعرف على قوائمك بشكل صحيح، حتى في حالة وجود مسافة بيضاء بين الأرقام والنص.
 
-قبل أن تبدأ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من إضافة المراجع الضرورية واستيراد مساحات الأسماء المناسبة.
+## المتطلبات الأساسية
 
-## الخطوة 2: إنشاء المستند النصي
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
+
+-  Aspose.Words for .NET: يمكنك تنزيله من[إصدارات Aspose](https://releases.aspose.com/words/net/) صفحة.
+- بيئة التطوير: Visual Studio أو أي C# IDE آخر.
+- .NET Framework مثبتًا على جهازك.
+- المعرفة الأساسية بـ C#: سيساعدك فهم الأساسيات على متابعة الأمثلة.
+
+## استيراد مساحات الأسماء
+
+قبل الانتقال إلى التعليمات البرمجية، تأكد من استيراد مساحات الأسماء الضرورية إلى مشروعك. إليك مقتطف سريع للبدء:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+دعونا نقسم العملية إلى خطوات بسيطة يمكن التحكم فيها. سترشدك كل خطوة إلى التعليمات البرمجية الضرورية وتشرح لك ما يحدث.
+
+## الخطوة 1: تحديد دليل المستندات الخاص بك
+
+أول الأشياء أولاً، لنقم بإعداد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي سيتم فيه تخزين ملفات الإدخال والإخراج.
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-string textDoc = "Full stop delimiters:\n" +
-                  "1. First list item 1\n" +
-                  "2. First list item 2\n" +
-                  "3. First list item 3\n\n" +
-                  "Right bracket delimiters:\n" +
-                  "1) Second list item 1\n" +
-                  "2) Second list item 2\n" +
-                  "3) Second list item 3\n\n" +
-                  "Bullet delimiters:\n" +
-                  "• Third list item 1\n" +
-                  "• Third list item 2\n" +
-                  "• Third list item 3\n\n" +
-                  "Whitespace delimiters:\n" +
-                  "1 Fourth list item 1\n" +
-                  "2 Fourth list item 2\n" +
-                  "3 Fourth list item 3";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-في هذه الخطوة، نقوم بإنشاء سلسلة نصية تحاكي مستندًا نصيًا يحتوي على أرقام القائمة متبوعة بمسافات بيضاء. نحن نستخدم محددات قائمة مختلفة مثل النقطة، والقوس الأيمن، ورمز التعداد النقطي، والمسافات البيضاء.
+## الخطوة 2: إنشاء مستند نص عادي
+
+بعد ذلك، سنقوم بإنشاء مستند نص عادي كسلسلة. ستحتوي هذه الوثيقة على أجزاء يمكن تفسيرها على أنها قوائم.
+
+```csharp
+const string textDoc = "Full stop delimiters:\n" +
+                       "1. First list item 1\n" +
+                       "2. First list item 2\n" +
+                       "3. First list item 3\n\n" +
+                       "Right bracket delimiters:\n" +
+                       "1) Second list item 1\n" +
+                       "2) Second list item 2\n" +
+                       "3) Second list item 3\n\n" +
+                       "Bullet delimiters:\n" +
+                       "• Third list item 1\n" +
+                       "• Third list item 2\n" +
+                       "• Third list item 3\n\n" +
+                       "Whitespace delimiters:\n" +
+                       "1 Fourth list item 1\n" +
+                       "2 Fourth list item 2\n" +
+                       "3 Fourth list item 3";
+```
 
 ## الخطوة 3: تكوين خيارات التحميل
 
+ للكشف عن الترقيم بمسافات بيضاء، نحتاج إلى تعيين`DetectNumberingWithWhitespaces` خيار ل`true` في`TxtLoadOptions` هدف.
+
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
- في هذه الخطوة، نقوم بتكوين خيارات تحميل المستندات. نحن نخلق جديدا`TxtLoadOptions` الكائن وتعيين`DetectNumberingWithWhitespaces`الملكية ل`true`. سيسمح هذا لـ Aspose.Words باكتشاف أرقام القائمة حتى لو كانت متبوعة بمسافات بيضاء.
+## الخطوة 4: قم بتحميل المستند
 
-## الخطوة 4: تحميل المستند وحفظه
+ الآن، لنقم بتحميل المستند باستخدام ملف`TxtLoadOptions` كمعلمة. وهذا يضمن اكتشاف القائمة الرابعة (التي تحتوي على مسافات بيضاء) بشكل صحيح.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 ```
 
- في هذه الخطوة، نقوم بتحميل المستند باستخدام السلسلة النصية المحددة وخيارات التحميل. نحن نستخدم`MemoryStream` لتحويل السلسلة النصية إلى دفق الذاكرة. ثم نقوم بحفظ المستند الناتج بتنسيق .docx.
+## الخطوة 5: احفظ المستند
 
-### نموذج التعليمات البرمجية المصدر لميزة الكشف عن ترقيم المسافات البيضاء باستخدام Aspose.Words لـ .NET.
+وأخيرًا، احفظ المستند في الدليل المحدد. سيؤدي هذا إلى إخراج مستند Word يحتوي على قوائم تم اكتشافها بشكل صحيح.
 
 ```csharp
-
-            
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-// قم بإنشاء مستند نص عادي على شكل سلسلة تحتوي على أجزاء يمكن تفسيرها على أنها قوائم.
-// عند التحميل، سيتم دائمًا اكتشاف القوائم الثلاث الأولى بواسطة Aspose.Words،
-// وسيتم إنشاء كائنات القائمة لهم بعد التحميل.
-const string textDoc = "Full stop delimiters:\n" +
-					   "1. First list item 1\n" +
-					   "2. First list item 2\n" +
-					   "3. First list item 3\n\n" +
-					   "Right bracket delimiters:\n" +
-					   "1) Second list item 1\n" +
-					   "2) Second list item 2\n" +
-					   "3) Second list item 3\n\n" +
-					   "Bullet delimiters:\n" +
-					   "• Third list item 1\n" +
-					   "• Third list item 2\n" +
-					   "• Third list item 3\n\n" +
-					   "Whitespace delimiters:\n" +
-					   "1 Fourth list item 1\n" +
-					   "2 Fourth list item 2\n" +
-					   "3 Fourth list item 3";
-
-// القائمة الرابعة، مع وجود مسافة بيضاء بين رقم القائمة ومحتويات عنصر القائمة،
-// سيتم اكتشافه كقائمة فقط إذا تم تعيين "DetectNumberingWithWhitespaces" في كائن LoadOptions على القيمة true،
-// لتجنب اكتشاف الفقرات التي تبدأ بأرقام كقوائم عن طريق الخطأ.
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-
-// قم بتحميل المستند أثناء تطبيق LoadOptions كمعلمة وتحقق من النتيجة.
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-            
-        
 ```
-
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لتحميل المستند النصي الذي يحتوي على أرقام القوائم بمسافات بيضاء، ثم إنشاء مستند .docx بالقوائم المكتشفة. سيتم حفظ ملف الإخراج في الدليل المحدد بالاسم "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx".
 
 ## خاتمة
-في هذا البرنامج التعليمي، اكتشفنا ميزة الكشف عن ترقيم المسافات البيضاء في Aspose.Words لـ .NET. لقد تعلمنا كيفية إنشاء قوائم من مستند نصي يحتوي على أرقام القوائم متبوعة بمسافات بيضاء.
 
-تعتبر هذه الميزة مفيدة للغاية لمعالجة المستندات التي تحتوي على أرقام القوائم المنسقة بطرق مختلفة. باستخدام خيارات التحميل المناسبة، يستطيع Aspose.Words اكتشاف أرقام القائمة هذه، حتى لو كانت متبوعة بمسافات بيضاء، وتحويلها إلى قوائم منظمة في المستند النهائي.
+وهناك لديك! باستخدام بضعة أسطر فقط من التعليمات البرمجية، تكون قد أتقنت فن اكتشاف الترقيم باستخدام المسافات البيضاء في المستندات ذات النص العادي باستخدام Aspose.Words for .NET. يمكن أن تكون هذه الميزة مفيدة بشكل لا يصدق عند التعامل مع تنسيقات نصية مختلفة والتأكد من تمثيل قوائمك بدقة في مستندات Word الخاصة بك. لذلك، في المرة القادمة التي تواجه فيها تلك القوائم الصعبة، ستعرف بالضبط ما يجب عليك فعله.
 
-يمكن أن يؤدي استخدام هذه الميزة إلى توفير الوقت وتحسين كفاءة سير العمل لديك. يمكنك بسهولة استخراج المعلومات من المستندات النصية وتحويلها إلى مستندات جيدة التنظيم باستخدام قوائم مناسبة.
+## الأسئلة الشائعة
 
-تذكر أن تأخذ في الاعتبار خيارات التحميل، مثل تكوين اكتشاف الاتصال بالمسافة البيضاء، لتحقيق النتائج المرجوة.
+###  ما هو`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+`DetectNumberingWithWhitespaces` هو خيار في`TxtLoadOptions` يسمح لـ Aspose.Words بالتعرف على القوائم حتى في حالة وجود مسافة بيضاء بين الترقيم ونص عنصر القائمة.
 
-يوفر Aspose.Words for .NET العديد من الميزات المتقدمة لمعالجة المستندات وإنشائها. ومن خلال استكشاف المزيد من الوثائق والأمثلة المقدمة من Aspose.Words، ستتمكن من استغلال إمكانيات هذه المكتبة القوية بشكل كامل.
+### هل يمكنني استخدام هذه الميزة لمحددات أخرى مثل التعداد النقطي والأقواس؟
+ نعم، يقوم Aspose.Words تلقائيًا باكتشاف القوائم ذات المحددات الشائعة مثل التعداد النقطي والأقواس. ال`DetectNumberingWithWhitespaces` يساعد بشكل خاص في القوائم التي تحتوي على مسافات بيضاء.
 
-لذا، لا تتردد في دمج اكتشاف ترقيم المسافات البيضاء في مشروعات Aspose.Words الخاصة بـ .NET والاستفادة من فوائدها لإنشاء مستندات جيدة التنظيم وقابلة للقراءة.
+###  ماذا يحدث إذا لم أستخدم`DetectNumberingWithWhitespaces`?
+بدون هذا الخيار، قد لا يتم التعرف على القوائم التي تحتوي على مسافات بيضاء بين الترقيم والنص كقوائم، ويمكن أن تظهر العناصر كفقرات عادية.
 
+### هل هذه الميزة متوفرة في منتجات Aspose الأخرى؟
+تم تصميم هذه الميزة المحددة خصيصًا لـ Aspose.Words for .NET، والمصممة للتعامل مع معالجة مستندات Word.
+
+### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words لـ .NET؟
+ يمكنك الحصول على ترخيص مؤقت من[Aspose الترخيص المؤقت](https://purchase.aspose.com/temporary-license/) صفحة.
 

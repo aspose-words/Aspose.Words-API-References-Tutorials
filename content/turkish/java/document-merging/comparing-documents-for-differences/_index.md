@@ -10,7 +10,7 @@ url: /tr/java/document-merging/comparing-documents-for-differences/
 
 ## Farklılıklar Açısından Belgeleri Karşılaştırmaya Giriş
 
-Sürekli gelişen belge yönetimi dünyasında belgelerinizin doğruluğunu ve tutarlılığını sağlamak çok önemlidir. İster yasal sözleşmelerle, ister mali raporlarla ilgileniyor olun, ister yalnızca belgelerinizdeki revizyonları takip ediyor olun, belgeleri farklılıklar açısından karşılaştırma yeteneği çok önemli bir özelliktir. Bu adım adım kılavuz, Word belgeleriyle çalışmak için güçlü bir API olan Aspose.Words for Java'yı kullanarak belgeleri farklılıklar açısından karşılaştırma sürecinde size yol gösterecektir.
+Sürekli gelişen belge yönetimi dünyasında belgelerinizin doğruluğunu ve tutarlılığını sağlamak çok önemlidir. İster yasal sözleşmelerle, ister finansal raporlarla ilgileniyor olun, ister yalnızca belgelerinizdeki revizyonları takip ediyor olun, belgeleri farklılıklar açısından karşılaştırma yeteneği çok önemli bir özelliktir. Bu adım adım kılavuz, Word belgeleriyle çalışmak için güçlü bir API olan Aspose.Words for Java'yı kullanarak belgeleri farklılıklar açısından karşılaştırma sürecinde size yol gösterecektir.
 
 ## Önkoşullar
 
@@ -77,7 +77,7 @@ Aspose.Words öncelikle DOCX formatındaki Word belgeleriyle çalışır. Farkl�
 
 ### Aspose.Words'ü kullanırken belge boyutunda herhangi bir sınırlama var mı?
 
-Aspose.Words büyük belgeleri verimli bir şekilde işleyebilir, ancak aşırı büyük dosyalarla çalışırken sisteminizin belleğini ve performansını dikkate almak önemlidir.
+Aspose.Words büyük belgeleri verimli bir şekilde işleyebilir, ancak çok büyük dosyalarla çalışırken sisteminizin belleğini ve performansını dikkate almak önemlidir.
 
 ### Karşılaştırma sonucunda farklılıkların vurgulanma şeklini özelleştirebilir miyim?
 

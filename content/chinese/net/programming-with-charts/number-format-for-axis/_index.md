@@ -22,7 +22,7 @@ url: /zh/net/programming-with-charts/number-format-for-axis/
 
 ## 导入命名空间
 
-首先，您需要在项目中导入必要的命名空间。这就像在建造房屋之前打地基一样。在代码文件顶部添加以下使用指令：
+首先，您需要在项目中导入必要的命名空间。这就像在建造房屋之前打好地基一样。在代码文件顶部添加以下使用指令：
 
 ```csharp
 using System;

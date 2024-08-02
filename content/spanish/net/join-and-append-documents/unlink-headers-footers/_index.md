@@ -32,7 +32,7 @@ Dividamos el proceso en pasos manejables para ayudarlo a desvincular encabezados
 
 ## Paso 1: configura tu proyecto
 
-Primero, necesitará configurar el entorno de su proyecto. Abra su IDE y cree un nuevo proyecto .NET. Agregue una referencia a la biblioteca Aspose.Words que descargó anteriormente.
+Primero, deberá configurar el entorno de su proyecto. Abra su IDE y cree un nuevo proyecto .NET. Agregue una referencia a la biblioteca Aspose.Words que descargó anteriormente.
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -83,7 +83,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 
 ## Conclusión
 
-¡Y ahí lo tienes! Al seguir estos pasos, desvinculó exitosamente los encabezados y pies de página de su documento de origen y los agregó a su documento de destino usando Aspose.Words para .NET. Esta técnica puede resultar particularmente útil cuando trabaja con documentos complejos que requieren diferentes encabezados y pies de página para diferentes secciones. ¡Feliz codificación!
+¡Y ahí lo tienes! Si sigue estos pasos, desvinculará exitosamente los encabezados y pies de página de su documento de origen y los agregará a su documento de destino usando Aspose.Words para .NET. Esta técnica puede resultar particularmente útil cuando trabaja con documentos complejos que requieren diferentes encabezados y pies de página para diferentes secciones. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 

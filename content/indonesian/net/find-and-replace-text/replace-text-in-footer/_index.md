@@ -88,7 +88,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 
 ## Kesimpulan
 
-Selamat! Anda telah berhasil mengganti teks di footer dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini memandu Anda dalam memuat dokumen, mengakses footer, mengatur opsi temukan dan ganti, melakukan penggantian teks, dan menyimpan dokumen yang dimodifikasi. Dengan langkah-langkah ini, Anda dapat dengan mudah memanipulasi dan memperbarui konten dokumen Word Anda secara terprogram.
+Selamat! Anda telah berhasil mengganti teks di footer dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini memandu Anda dalam memuat dokumen, mengakses footer, menyiapkan opsi cari dan ganti, melakukan penggantian teks, dan menyimpan dokumen yang dimodifikasi. Dengan langkah-langkah ini, Anda dapat dengan mudah memanipulasi dan memperbarui konten dokumen Word Anda secara terprogram.
 
 ## FAQ
 

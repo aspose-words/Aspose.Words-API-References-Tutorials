@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### P: Czy można dostosować prefiks i sufiks wznowionej numeracji list w Aspose.Words?
 
- O: Tak, możesz dostosować przedrostek i przyrostek ponownie uruchomionej numeracji list w Aspose.Words. The`ListLevel` klasa oferuje właściwości takie jak`ListLevel.NumberPrefix`I`ListLevel.NumberSuffix`które pozwalają określić przedrostek i przyrostek dla każdego poziomu na liście. Możesz użyć tych właściwości, aby dostosować przedrostek i przyrostek zgodnie z potrzebami.
+ O: Tak, możesz dostosować przedrostek i przyrostek ponownie uruchomionej numeracji list w Aspose.Words. The`ListLevel`klasa oferuje właściwości takie jak`ListLevel.NumberPrefix`I`ListLevel.NumberSuffix` które pozwalają określić przedrostek i przyrostek dla każdego poziomu na liście. Możesz użyć tych właściwości, aby dostosować przedrostek i przyrostek zgodnie z potrzebami.
 
 #### P: Jak mogę określić konkretną wartość numeracji, od której lista powinna zostać wznowiona?
 

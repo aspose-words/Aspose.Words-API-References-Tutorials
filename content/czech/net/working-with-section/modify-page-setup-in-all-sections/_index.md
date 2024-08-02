@@ -16,7 +16,7 @@ Nazdárek! Pokud jste někdy potřebovali upravit nastavení stránky ve více �
 Než se ponoříme dovnitř, ujistěte se, že máme vše, co potřebujeme:
 
 1. Základní znalost C#: Je nutná znalost syntaxe a konceptů C#.
-2.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Pokud to jen zkoušíte, a[zkušební verze zdarma](https://releases.aspose.com/) je k dispozici.
+2.  Aspose.Words pro .NET: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) Pokud to právě zkoušíte, a[zkušební verze zdarma](https://releases.aspose.com/) je k dispozici.
 3. Visual Studio: Každá nejnovější verze by měla fungovat, ale pro nejlepší zážitek se doporučuje nejnovější.
 4. .NET Framework: Ujistěte se, že jej máte nainstalovaný v systému.
 
@@ -89,7 +89,7 @@ Tento řádek kódu uloží dokument do určeného adresáře s jasným názvem 
 
 ## Závěr
 
- tady to máte! Úspěšně jste upravili nastavení stránky pro všechny sekce v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výukový program vás provede vytvářením dokumentu, přidáváním oddílů a jednotným nastavením jejich stránek. Aspose.Words nabízí bohatou sadu funkcí, takže je neváhejte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) pro pokročilejší možnosti.
+ A tady to máte! Úspěšně jste upravili nastavení stránky pro všechny sekce v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výukový program vás provede vytvářením dokumentu, přidáváním oddílů a jednotným nastavením jejich stránek. Aspose.Words nabízí bohatou sadu funkcí, takže je neváhejte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) pro pokročilejší možnosti.
 
 ## Nejčastější dotazy
 

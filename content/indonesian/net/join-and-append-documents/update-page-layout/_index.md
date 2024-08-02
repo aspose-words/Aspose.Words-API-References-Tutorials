@@ -63,7 +63,7 @@ Sebelum melakukan perubahan apa pun, sebaiknya simpan dokumen ke PDF atau format
 doc.Save(dataDir + "Document.UpdatePageLayout.1.pdf");
 ```
 
-Menyimpannya dengan cara ini memastikan bahwa tata letak awal disimpan dalam cache dan dapat digunakan sebagai referensi untuk pembaruan berikutnya.
+Menyimpannya dengan cara ini memastikan bahwa tata letak awal disimpan dalam cache dan dapat digunakan sebagai referensi untuk pembaruan selanjutnya.
 
 ## Langkah 3: Ubah Dokumen
 

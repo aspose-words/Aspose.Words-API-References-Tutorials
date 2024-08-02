@@ -94,7 +94,7 @@ shape.image_data.set_image("image.png")
 doc.first_section.body.first_paragraph.append_child(shape)
 ```
 
-## การบันทึกและการส่งออกเอกสาร:
+## การบันทึกและส่งออกเอกสาร:
 
 บันทึกเอกสารที่คุณแก้ไขในรูปแบบต่างๆ:
 

@@ -9,11 +9,11 @@ url: /tr/net/programming-with-document-options-and-settings/add-japanese-as-edit
 ---
 ## giriiş
 
-Hiç bir belgeyi açmayı denediğinizde dil ayarlarının tamamen yanlış olması nedeniyle kendinizi okunamayan bir metin denizinde kaybolmuş halde buldunuz mu? Yabancı dilde bir haritayı okumaya çalışmak gibi! Farklı dillerdeki, özellikle de Japonca belgelerle çalışıyorsanız Aspose.Words for .NET sizin için en iyi araçtır. Bu makale, Aspose.Words for .NET kullanarak belgelerinize Japonca'yı düzenleme dili olarak nasıl ekleyeceğiniz konusunda size adım adım rehberlik edecektir. Haydi hemen dalalım ve bir daha çevirinin içinde kaybolmadığınızdan emin olalım!
+Hiç bir belgeyi açmayı denediğinizde dil ayarlarının tamamen yanlış olması nedeniyle kendinizi okunamayan bir metin denizinde kaybolmuş halde buldunuz mu? Yabancı dilde bir haritayı okumaya çalışmak gibi! Farklı dillerdeki, özellikle de Japonca belgelerle çalışıyorsanız Aspose.Words for .NET sizin için en iyi araçtır. Bu makale, Aspose.Words for .NET kullanarak belgelerinize Japonca'yı düzenleme dili olarak nasıl ekleyeceğiniz konusunda size adım adım rehberlik edecektir. Haydi hemen dalalım ve bir daha asla çeviride kaybolmadığınızdan emin olalım!
 
 ## Önkoşullar
 
-Başlamadan önce, hazır bulundurmanız gereken birkaç şey var:
+Başlamadan önce, yerine getirmeniz gereken birkaç şey var:
 
 1. Visual Studio: Visual Studio'nun kurulu olduğundan emin olun. Kullanacağımız entegre geliştirme ortamıdır (IDE).
 2.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Henüz sahip değilseniz indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).

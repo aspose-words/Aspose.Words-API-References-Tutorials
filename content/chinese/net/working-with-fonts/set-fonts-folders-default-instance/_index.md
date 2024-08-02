@@ -58,7 +58,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 
 答：要在 Aspose.Words 中设置默认字体文件夹，您必须使用`Fonts`类和`SetFontsFolders`方法指定自定义字体文件夹位置。
 
-#### 问：设置默认字体文件夹会影响所有使用 Aspose.Words 处理的 Word 文档吗？
+#### 问：设置默认字体文件夹会影响所有用 Aspose.Words 处理的 Word 文档吗？
 
 答：是的，设置默认字体文件夹会影响使用 Aspose.Words 处理的所有 Word 文档。设置默认字体文件夹后，Aspose.Words 将使用这些位置在所有文档中搜索字体。
 

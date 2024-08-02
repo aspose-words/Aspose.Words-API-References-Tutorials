@@ -84,4 +84,4 @@ Absolut! Du kan automatisera denna process med hjälp av skript och batchbearbet
  Du kan få en gratis provperiod från[Aspose hemsida](https://releases.aspose.com/).
 
 ### Vad ska jag göra om jag stöter på problem?
- Du kan söka hjälp hos[Aspose supportforum](https://forum.aspose.com/c/words/8).
+ Du kan söka hjälp från[Aspose supportforum](https://forum.aspose.com/c/words/8).

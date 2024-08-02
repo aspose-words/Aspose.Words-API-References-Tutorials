@@ -2,87 +2,131 @@
 title: Sửa đổi macro Vba của tài liệu Word
 linktitle: Sửa đổi macro Vba của tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Trong hướng dẫn này, hãy tìm hiểu cách chỉnh sửa macro VBA của tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách sửa đổi macro VBA trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước của chúng tôi để tự động hóa tài liệu liền mạch!
 type: docs
 weight: 10
 url: /vi/net/working-with-vba-macros/modify-vba-macros/
 ---
-Trong hướng dẫn này, chúng tôi sẽ giải thích cách sửa đổi macro VBA của tài liệu Word bằng thư viện Aspose.Words cho .NET. Chỉnh sửa macro VBA cho phép bạn cập nhật mã VBA hiện có trong tài liệu Word của mình. Chúng tôi sẽ hướng dẫn bạn từng bước để giúp bạn hiểu và triển khai mã trong dự án .NET của mình.
+## Giới thiệu
+
+Xin chào các bạn lập trình viên và những người đam mê tự động hóa tài liệu! Bạn đã sẵn sàng đưa trò chơi tài liệu Word của mình lên một tầm cao mới chưa? Hôm nay, chúng ta sẽ đi sâu vào thế giới macro VBA (Visual Basic for Application) hấp dẫn trong tài liệu Word. Cụ thể, chúng ta sẽ khám phá cách sửa đổi macro VBA hiện có bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa các tác vụ, tùy chỉnh tài liệu và thậm chí điều chỉnh các macro phiền phức đó. Cho dù bạn đang tìm cách cập nhật macro của mình hay chỉ tò mò về quy trình, hướng dẫn này sẽ giúp bạn. Vậy hãy bắt đầu!
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
-- Tài liệu Word chứa macro VBA mà bạn muốn sửa đổi
 
-## Bước 1: Xác định thư mục tài liệu
- Trước tiên, bạn cần đặt đường dẫn thư mục đến vị trí tài liệu Word của mình. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
+
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản Aspose.Words mới nhất cho .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Môi trường phát triển .NET như Visual Studio rất cần thiết để viết và kiểm tra mã của bạn.
+3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp bạn theo dõi các đoạn mã.
+4.  Tài liệu Word mẫu: Có một[Tài liệu văn bản](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) với các macro VBA hiện có đã sẵn sàng. Đây sẽ là đối tượng thử nghiệm của chúng tôi để sửa đổi macro.
+
+## Nhập không gian tên
+
+Để sử dụng các tính năng của Aspose.Words, bạn cần nhập các không gian tên cần thiết. Chúng bao gồm các lớp và phương pháp xử lý tài liệu Word và dự án VBA.
+
+Đây là mã để nhập chúng:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Vba;
 ```
 
-## Bước 2: Tải tài liệu chứa macro VBA
-Tiếp theo, chúng tôi sẽ tải tài liệu Word chứa macro VBA mà chúng tôi muốn sửa đổi.
+Các không gian tên này sẽ cung cấp tất cả các công cụ chúng ta cần để làm việc với tài liệu Word và macro VBA.
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+Đầu tiên, chúng ta cần xác định đường dẫn đến thư mục tài liệu của bạn. Thư mục này sẽ là vị trí lưu trữ tài liệu Word của bạn và là nơi chúng tôi sẽ lưu tài liệu đã sửa đổi của mình.
+
+### Xác định đường dẫn
+
+Thiết lập đường dẫn đến thư mục của bạn như thế này:
 
 ```csharp
-// Tải tài liệu chứa macro VBA
-Document doc = new Document(dataDir + "VBA project.docm");
-VbaProject project = doc.VbaProject;
-```
-
-## Bước 3: Sửa đổi mã nguồn macro
-Bây giờ chúng ta sẽ sửa đổi mã nguồn của macro đầu tiên của dự án VBA. Thay thế cái`newSourceCode` biến có mã nguồn mới mà bạn muốn sử dụng.
-
-```csharp
-const string newSourceCode = "Test change source code";
-project.Modules[0].SourceCode = newSourceCode;
-```
-
-## Bước 4: Lưu tài liệu đã sửa đổi
-Cuối cùng, chúng tôi sẽ lưu tài liệu đã sửa đổi có macro VBA đã cập nhật vào một tệp.
-
-```csharp
-doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
-```
-
-### Mã nguồn mẫu để Sửa đổi Macro Vba bằng Aspose.Words cho .NET
- 
-```csharp
-
-// Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-Document doc = new Document(dataDir + "VBA project.docm");
-VbaProject project = doc.VbaProject;
-const string newSourceCode = "Test change source code";
-project.Modules[0].SourceCode = newSourceCode;
-doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
-
 ```
+
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi chứa tài liệu Word của bạn. Thư mục này sẽ là không gian làm việc của chúng tôi cho phần hướng dẫn.
+
+## Bước 2: Tải tài liệu Word
+
+Sau khi thiết lập thư mục của chúng tôi, bước tiếp theo là tải tài liệu Word có chứa macro VBA mà bạn muốn sửa đổi. Tài liệu này sẽ đóng vai trò là nguồn cho các sửa đổi của chúng tôi.
+
+### Đang tải tài liệu
+
+Đây là cách tải tài liệu của bạn:
+
+```csharp
+Document doc = new Document(dataDir + "VBA project.docm");
+```
+
+ Dòng này tải tài liệu Word có tên "VBA project.docm" từ thư mục đã chỉ định của bạn vào thư mục`doc` sự vật.
+
+## Bước 3: Truy cập dự án VBA
+
+Bây giờ chúng ta đã tải xong tài liệu, bước tiếp theo là truy cập dự án VBA trong tài liệu. Dự án VBA chứa tất cả các macro và mô-đun mà chúng ta có thể sửa đổi.
+
+### Lấy dự án VBA
+
+Hãy truy cập dự án VBA như thế này:
+
+```csharp
+VbaProject project = doc.VbaProject;
+```
+
+ Dòng này truy xuất dự án VBA từ tài liệu đã tải và lưu trữ nó trong`project` Biến đổi.
+
+## Bước 4: Sửa đổi Macro VBA
+
+Với quyền truy cập vào dự án VBA, giờ đây chúng tôi có thể sửa đổi các macro VBA hiện có. Trong ví dụ này, chúng tôi sẽ thay đổi mã nguồn của mô-đun đầu tiên trong dự án.
+
+### Thay đổi mã macro
+
+Đây là cách sửa đổi macro:
+
+```csharp
+const string newSourceCode = "Sub TestChange()\nMsgBox \"Source code changed!\"\nEnd Sub";
+project.Modules[0].SourceCode = newSourceCode;
+```
+
+Trong những dòng này:
+- Chúng tôi xác định mã nguồn macro mới dưới dạng một chuỗi không đổi. Mã này hiển thị hộp thông báo có nội dung "Mã nguồn đã thay đổi!"
+-  Sau đó chúng tôi thiết lập`SourceCode` thuộc tính của mô-đun đầu tiên trong dự án sang mã mới.
+
+## Bước 5: Lưu tài liệu đã sửa đổi
+
+Sau khi sửa đổi macro VBA, bước cuối cùng là lưu tài liệu. Điều này đảm bảo tất cả các thay đổi của bạn được giữ nguyên và mã macro mới được lưu trữ trong tài liệu.
+
+### Lưu tài liệu
+
+Đây là mã để lưu tài liệu đã sửa đổi của bạn:
+
+```csharp
+doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
+```
+
+Dòng này lưu tài liệu với macro VBA đã sửa đổi dưới dạng "WorkingWithVba.ModifyVbaMacros.docm" trong thư mục đã chỉ định của bạn.
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã biết cách chỉnh sửa macro VBA trong tài liệu Word bằng Aspose.Words cho .NET. Chỉnh sửa macro VBA cho phép bạn cập nhật mã VBA hiện có trong tài liệu của mình để thực hiện các thay đổi hoặc cải tiến. Vui lòng sử dụng tính năng này để tùy chỉnh và tự động hóa thêm tài liệu Word của bạn.
 
-### Câu hỏi thường gặp
+Và bạn có nó rồi đấy! Bạn đã sửa đổi thành công macro VBA trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm mọi thứ từ tải tài liệu của bạn và truy cập dự án VBA đến thay đổi mã macro và lưu tài liệu đã sửa đổi. Với Aspose.Words, bạn có thể dễ dàng tự động hóa các tác vụ, tùy chỉnh tài liệu của mình và thậm chí thử nghiệm các macro VBA để phù hợp với nhu cầu của bạn.
 
-#### Hỏi: Macro VBA trong tài liệu Word là gì?
+ Nếu bạn háo hức khám phá thêm,[Tài liệu API](https://reference.aspose.com/words/net/) là một nguồn tài nguyên tuyệt vời. Và nếu bạn từng gặp khó khăn,[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) luôn ở đó để giúp đỡ bạn.
 
-Đáp: Macro VBA trong tài liệu Word là một đoạn mã có thể chạy để thực hiện các hành động cụ thể trong tài liệu. Macro VBA cho phép bạn tự động hóa các tác vụ, thêm chức năng tùy chỉnh và tương tác với nội dung tài liệu.
+Chúc bạn viết mã vui vẻ và hãy nhớ rằng không có giới hạn nào khi nói đến việc tự động hóa tài liệu Word của bạn!
 
-#### Hỏi: Điều kiện tiên quyết để chỉnh sửa macro VBA trong tài liệu Word là gì?
+## Câu hỏi thường gặp
 
-Đáp: Trước khi có thể chỉnh sửa macro VBA trong tài liệu Word, bạn phải có kiến thức làm việc về ngôn ngữ lập trình C#. Bạn cũng cần cài đặt thư viện Aspose.Words for .NET trong dự án của mình. Ngoài ra, bạn cần một tài liệu Word chứa macro VBA mà bạn muốn sửa đổi.
+### Aspose.Words cho .NET là gì?  
+Aspose.Words for .NET là một thư viện toàn diện cho phép các nhà phát triển tạo, chỉnh sửa và thao tác các tài liệu Word trong các ứng dụng .NET. Nó hoàn hảo để tự động hóa quy trình làm việc của tài liệu, bao gồm cả làm việc với macro VBA.
 
-#### Hỏi: Làm cách nào để đặt thư mục tài liệu trong mã?
+### Tôi có thể sửa đổi macro VBA trong tài liệu Word bằng Aspose.Words không?  
+Có, Aspose.Words cung cấp chức năng truy cập và sửa đổi macro VBA trong tài liệu Word. Bạn có thể thay đổi mã macro, thêm mô-đun mới, v.v.
 
- Đáp: Trong mã được cung cấp, bạn phải thay thế`"YOUR DOCUMENTS DIRECTORY"` bằng đường dẫn thích hợp tới thư mục chứa tài liệu Word chứa macro VBA.
+### Làm cách nào để kiểm tra macro VBA đã sửa đổi của tôi?  
+Để kiểm tra macro VBA đã sửa đổi của bạn, hãy mở tài liệu Word đã lưu trong Microsoft Word, chuyển đến tab Nhà phát triển và chạy macro. Bạn cũng có thể gỡ lỗi chúng trực tiếp trong trình soạn thảo VBA.
 
-#### Hỏi: Làm cách nào để chỉ định mã nguồn mới của macro cần sửa đổi?
+### Điều gì xảy ra nếu tôi lưu tài liệu mà không bật macro?  
+Nếu bạn lưu tài liệu Word có macro VBA mà không bật chúng thì macro sẽ không chạy. Đảm bảo lưu tài liệu ở định dạng hỗ trợ macro (.docm) và bật macro trong cài đặt Word.
 
- Đáp: Để chỉ định mã nguồn mới của macro mà bạn muốn sửa đổi, bạn có thể sử dụng`SourceCode` thuộc tính tương ứng`VbaModule` đối tượng bằng cách gán cho nó một chuỗi ký tự chứa mã VBA mới.
-
-#### Hỏi: Tôi có thể chỉnh sửa nhiều macro VBA trong tài liệu Word cùng một lúc không?
-
- Trả lời: Có, bạn có thể sửa đổi nhiều macro VBA trong tài liệu Word bằng cách sử dụng vòng lặp hoặc truy cập trực tiếp vào macro tương ứng.`VbaModule` các đồ vật trong`Modules` bộ sưu tập của`VbaProject` sự vật. Điều này cho phép bạn cập nhật đồng thời nhiều macro VBA trong một thao tác.
+### Tôi có thể mua Aspose.Words cho .NET ở đâu?  
+ Bạn có thể mua Aspose.Words cho .NET từ[trang mua hàng](https://purchase.aspose.com/buy).

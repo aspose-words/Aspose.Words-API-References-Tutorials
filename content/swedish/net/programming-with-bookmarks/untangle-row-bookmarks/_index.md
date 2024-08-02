@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
 ## Steg 2: Lossa radbokmärken
 
- Det är här magin händer! De`Untangle` funktion tar hand om att reda ut radbokmärkena. Låt oss dela upp dess funktionalitet:
+ Det är här magin händer! De`Untangle` funktion tar hand om att reda ut radbokmärkena. Låt oss bryta ner dess funktionalitet:
 
 ```csharp
 private void Untangle(Document doc)

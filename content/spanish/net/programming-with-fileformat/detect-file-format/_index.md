@@ -15,7 +15,7 @@ En el mundo digital actual, gestionar diferentes formatos de documentos de maner
 
 Antes de profundizar en el código, asegurémonos de que tiene todo lo que necesita:
 
--  Aspose.Words para .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/) . Asegúrese de tener una licencia válida. Si no, puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/) . Asegúrese de tener una licencia válida. Si no, puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
 - Visual Studio: cualquier versión reciente funcionará bien.
 - .NET Framework: asegúrese de tener instalada la versión correcta.
 

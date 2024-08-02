@@ -16,6 +16,6 @@ url: /ko/net/programming-with-txtsaveoptions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Word 문서에 Bidi 마크 추가](./add-bidi-marks/) | .NET용 Aspose.Words를 사용하여 Word 문서에 Bidi 표시를 추가하고 전문적인 다국어 문서를 만드는 방법을 알아보세요. |
-| [목록 들여쓰기에 수준별 탭 문자 사용](./use-tab-character-per-level-for-list-indentation/) | Aspose.Words for .NET에서 탭 문자 기능이 포함된 들여쓰기 목록을 사용하는 방법을 알아보세요. 체계적이고 읽기 쉬운 문서를 만들려면 이 단계별 가이드를 따르세요. 이 강력한 기능으로 시간을 절약하고 작업 흐름을 개선하세요. 지금 전체 튜토리얼에 액세스하세요. |
-| [목록 들여쓰기에 레벨당 공백 문자 사용](./use-space-character-per-level-for-list-indentation/) | Aspose.Words for .NET에서 목록 들여쓰기를 위해 레벨당 공백 문자를 사용하는 방법에 대한 단계별 가이드입니다. 체계적으로 구성된 Word 문서를 쉽게 만드세요. |
+| [Word 문서에 Bidi 마크 추가](./add-bidi-marks/) | 이 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 양방향(Bidi) 표시를 추가하는 방법을 알아보세요. 다국어 콘텐츠에 대한 올바른 텍스트 방향을 확인하세요. |
+| [목록 들여쓰기에 수준별 탭 문자 사용](./use-tab-character-per-level-for-list-indentation/) | .NET용 Aspose.Words를 사용하여 탭 들여쓰기가 포함된 다중 레벨 목록을 만드는 방법을 알아보세요. 문서의 정확한 목록 형식을 지정하려면 이 가이드를 따르세요. |
+| [목록 들여쓰기에 레벨당 공백 문자 사용](./use-space-character-per-level-for-list-indentation/) | Aspose.Words for .NET에서 공백 문자 들여쓰기가 포함된 다단계 목록을 만드는 방법을 알아보세요. 정확한 문서 형식을 위한 단계별 가이드입니다. |

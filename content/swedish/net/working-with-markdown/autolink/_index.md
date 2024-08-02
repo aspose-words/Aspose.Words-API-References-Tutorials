@@ -45,7 +45,7 @@ Slutligen kan vi spara dokumentet i önskat format.
 // Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Infoga hyperlänk.
+// Infoga hyperlänk.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ Grattis! Du har nu lärt dig hur du använder "Autolink"-funktionen med Aspose.W
 
 #### F: Är det möjligt att anpassa visningstexten för en automatisk länk i Aspose.Words?
 
- S: Ja, du kan anpassa visningstexten för en automatisk länk i Aspose.Words. Istället för att använda URL-adressen som visningstext kan du använda vilken annan text som helst genom att ersätta innehållet mellan`<a>` taggar. Du kan till exempel använda`<a href="https://www.aspose.com">Click here</a>` för att visa texten "Klicka här" som en automatisk länk.
+ S: Ja, du kan anpassa visningstexten för en automatisk länk i Aspose.Words. Istället för att använda URL-adressen som visningstext kan du använda vilken annan text som helst genom att ersätta innehållet mellan`<a>` taggar. Du kan till exempel använda`<a href="https://www.aspose.com">Click here</a>`för att visa texten "Klicka här" som en automatisk länk.
 
 #### F: Hur kan jag lägga till ytterligare attribut till en autolänk i Aspose.Words?
 
-S: För att lägga till ytterligare attribut till en automatisk länk i Aspose.Words kan du använda ytterligare HTML-attribut i`<a>` märka. Du kan till exempel använda`<a href="https://www.aspose.com" target="_blank">Link</a>` för att öppna länken i ett nytt fönster eller flik med hjälp av` attribute target="_blank"`.
+ S: För att lägga till ytterligare attribut till en automatisk länk i Aspose.Words kan du använda ytterligare HTML-attribut i`<a>` märka. Du kan till exempel använda`<a href="https://www.aspose.com" target="_blank">Link</a>` för att öppna länken i ett nytt fönster eller flik med hjälp av` attribute target="_blank"`.

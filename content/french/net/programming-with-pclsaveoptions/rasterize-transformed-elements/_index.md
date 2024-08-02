@@ -32,7 +32,7 @@ Maintenant, décomposons le processus en plusieurs étapes pour nous assurer que
 
 ## Étape 1 : Configurez votre projet
 
-Tout d’abord, vous devez créer un nouveau projet ou utiliser un projet existant. Ouvrez votre environnement de développement et configurez un projet.
+Tout d’abord, vous devez créer un nouveau projet ou en utiliser un existant. Ouvrez votre environnement de développement et configurez un projet.
 
 1. Créer un nouveau projet : ouvrez Visual Studio et créez une nouvelle application console C#.
 2.  Installez Aspose.Words : utilisez NuGet Package Manager pour installer Aspose.Words. Faites un clic droit sur votre projet, sélectionnez « Gérer les packages NuGet » et recherchez`Aspose.Words`. Installez la dernière version.

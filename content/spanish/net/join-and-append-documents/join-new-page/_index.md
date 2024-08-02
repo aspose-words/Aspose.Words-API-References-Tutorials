@@ -27,7 +27,7 @@ using Aspose.Words;
 using System;
 ```
 
-Siga estos pasos para unir y adjuntar documentos mientras se asegura de que el contenido agregado comience en una nueva página:
+Siga estos pasos para unir y adjuntar documentos mientras se asegura de que el contenido adjunto comience en una nueva página:
 
 ## Paso 1: configura tu proyecto
 
@@ -73,7 +73,7 @@ Guarde el documento de destino modificado en un archivo nuevo:
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-Esto guarda el documento combinado con el contenido adjunto comenzando en una página nueva.
+Esto guarda el documento combinado con el contenido adjunto comenzando en una nueva página.
 
 ## Conclusión
 
@@ -82,7 +82,7 @@ En este tutorial, hemos aprendido cómo unir y adjuntar documentos en un archivo
 ## Preguntas frecuentes
 
 ### ¿Puedo adjuntar más de dos documentos usando Aspose.Words para .NET?
-Sí, puede adjuntar varios documentos secuencialmente repitiendo la operación de agregar para cada documento.
+Sí, puede agregar varios documentos secuencialmente repitiendo la operación de agregar para cada documento.
 
 ### ¿Cómo puedo manejar los conflictos de formato de documentos al agregarlos?
 Aspose.Words proporciona varios modos de importación para manejar conflictos de formato, como mantener el formato de origen o usar el formato de destino.

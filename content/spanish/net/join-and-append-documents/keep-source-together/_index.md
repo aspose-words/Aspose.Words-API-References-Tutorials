@@ -84,7 +84,7 @@ En conclusión, Aspose.Words para .NET simplifica la tarea de fusionar documento
 ## Preguntas frecuentes
 
 ### ¿Puede Aspose.Words para .NET fusionar documentos de diferentes formatos?
-Sí, puede fusionar documentos independientemente de su formato, manteniendo el formato fuente.
+Sí, puede fusionar documentos independientemente de su formato, manteniendo el formato original.
 
 ### ¿Aspose.Words para .NET admite la combinación de documentos grandes de manera eficiente?
 Por supuesto, maneja documentos grandes con un rendimiento óptimo.

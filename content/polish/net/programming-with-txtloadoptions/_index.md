@@ -16,6 +16,6 @@ Używając Aspose.Words, możesz skutecznie zautomatyzować zadania związane z 
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Wykryj numerację ze spacjami](./detect-numbering-with-whitespaces/) | Dowiedz się, jak wykrywać numery list ze spacjami w Aspose.Words dla .NET. Z łatwością poprawiaj strukturę swoich dokumentów. |
-| [Obsługuj opcje spacji](./handle-spaces-options/) | Dowiedz się, jak zarządzać spacjami w dokumentach TXT za pomocą Aspose.Words dla .NET. Usuń niepotrzebne spacje i popraw czytelność. |
-| [Kierunek tekstu dokumentu](./document-text-direction/) | Dowiedz się, jak określić kierunek tekstu w dokumentach za pomocą Aspose.Words dla .NET. Poprawiono wyświetlanie języków pisanych od prawej do lewej. Uzyskaj dostęp do pełnego samouczka już teraz. |
+| [Wykryj numerację ze spacjami](./detect-numbering-with-whitespaces/) | Dowiedz się, jak używać Aspose.Words dla .NET do wykrywania numeracji ze spacjami w dokumentach w postaci zwykłego tekstu i zapewnienia prawidłowego rozpoznawania list. |
+| [Obsługuj opcje spacji](./handle-spaces-options/) | Dowiedz się, jak obsługiwać spacje początkowe i końcowe w dokumentach tekstowych za pomocą Aspose.Words dla .NET. Ten samouczek zawiera przewodnik dotyczący czyszczenia formatowania tekstu. |
+| [Kierunek tekstu dokumentu](./document-text-direction/) | Dowiedz się, jak ustawić kierunek tekstu dokumentu w programie Word przy użyciu Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny do obsługi języków pisanych od prawej do lewej. |

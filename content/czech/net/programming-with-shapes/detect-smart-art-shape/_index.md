@@ -2,7 +2,7 @@
 title: Detekce Smart Art Shape
 linktitle: Detekce Smart Art Shape
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak detekovat tvary SmartArt v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto komplexního průvodce krok za krokem. Ideální pro automatizaci pracovního toku dokumentů.
+description: Naučte se, jak detekovat tvary SmartArt v dokumentech Word pomocí Aspose.Words for .NET, pomocí tohoto komplexního průvodce. Ideální pro automatizaci pracovního toku dokumentů.
 type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/detect-smart-art-shape/
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- V tomto kroku používáme LINQ k filtrování a počítání obrazců, které mají SmartArt. The`GetChildNodes` metoda načte všechny tvary a`HasSmartArt`vlastnost zkontroluje, zda obrazec obsahuje SmartArt.
+ V tomto kroku používáme LINQ k filtrování a počítání obrazců, které mají SmartArt. The`GetChildNodes` metoda načte všechny tvary a`HasSmartArt` vlastnost zkontroluje, zda obrazec obsahuje SmartArt.
 
 ## Krok 4: Spuštění kódu
 
@@ -80,7 +80,7 @@ Nahraďte "X" skutečným počtem obrazců SmartArt v dokumentu.
 
 ## Závěr
 
- A tady to máte! Úspěšně jste se naučili, jak detekovat tvary SmartArt v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením prostředí, načítáním dokumentů, zjišťováním tvarů SmartArt a spouštěním kódu. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout svůj plný potenciál.
+ tady to máte! Úspěšně jste se naučili, jak detekovat tvary SmartArt v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením prostředí, načítáním dokumentů, zjišťováním tvarů SmartArt a spouštěním kódu. Aspose.Words nabízí širokou škálu funkcí, takže nezapomeňte prozkoumat[API dokumentace](https://reference.aspose.com/words/net/) odemknout svůj plný potenciál.
 
 ## Nejčastější dotazy
 

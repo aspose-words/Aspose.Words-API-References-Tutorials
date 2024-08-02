@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Krok 3: Získejte typ uzlu dokumentu
- získání typu uzlu dokumentu použijeme`NodeType` vlastnictví.
+ získání typu uzlu dokumentu používáme`NodeType` vlastnictví.
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -50,7 +50,7 @@ Odpověď: Typ uzlu v Node.js odkazuje na typ uzlu v dokumentu XML. Mohou to bý
 
 #### Otázka: Jak používat typ uzlu k manipulaci s uzly v dokumentu XML?
 
-Odpověď: Typ uzlu můžete použít k identifikaci a manipulaci s různými typy uzlů v dokumentu XML. Můžete například zkontrolovat, zda je uzel prvek, text, atribut atd., a podle toho pak provádět konkrétní operace.
+Odpověď: Typ uzlu můžete použít k identifikaci a manipulaci s různými typy uzlů v dokumentu XML. Můžete například zkontrolovat, zda je uzel prvkem, textem, atributem atd., a podle toho pak provádět konkrétní operace.
 
 #### Otázka: Jaké jsou běžné typy uzlů používané s typem uzlu?
 

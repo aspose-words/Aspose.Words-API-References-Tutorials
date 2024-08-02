@@ -2,103 +2,115 @@
 title: コメントを追加
 linktitle: コメントを追加
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書にコメントを追加する方法を学習します。
+description: ガイドを使用して、Aspose.Words for .NET を使用して Word 文書にコメントを追加する方法を学びます。文書の共同作業プロセスを簡単に強化できます。
 type: docs
 weight: 10
 url: /ja/net/working-with-comments/add-comments/
 ---
+## 導入
 
-この包括的なチュートリアルでは、Aspose.Words for .NET を使用して Word 文書にコメントを追加する方法を学習します。プロセスをガイドし、必要な C# コード スニペットを提供します。このガイドの最後まで学習すると、文書にコメントを挿入し、その内容をカスタマイズできるようになります。
+Aspose.Words for .NET を使用して Word 文書にコメントを追加する方法の詳細ガイドへようこそ。プログラムでコメントを組み込むことで文書レビュー プロセスを効率化したいとお考えなら、このガイドはうってつけです。このチュートリアルでは、環境の設定から Word 文書へのコメントの書き込みと保存まで、知っておくべきすべての手順を説明します。さあ、ドキュメントの共同作業を簡単に始めましょう。
 
 ## 前提条件
-始める前に、次の前提条件を満たしていることを確認してください。
-- Aspose.Words for .NET ライブラリがシステムにインストールされています。
 
-## ステップ1: 新しいドキュメントとDocumentBuilderを作成する
-まず、Document クラスを使用して新しいドキュメントを作成し、DocumentBuilder オブジェクトを初期化します。
+始める前に、次の前提条件が満たされていることを確認してください。
+
+1. Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. .NET Framework: マシンに .NET Framework がインストールされていることを確認してください。
+3. 開発環境: コードを記述および実行するための Visual Studio などの IDE。
+4. C# の基礎知識: C# プログラミング言語に精通していると、例を理解するのに役立ちます。
+
+## 名前空間のインポート
+
+まず、必要な名前空間をプロジェクトにインポートする必要があります。これにより、Aspose.Words の操作に必要なクラスとメソッドにアクセスできるようになります。
+
+```csharp
+using System;
+using Aspose.Words;
+```
+
+それでは、プロセスをわかりやすいステップに分解してみましょう。各ステップには、ロジックと機能の理解に役立つ詳細な説明が含まれます。
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+まず、ドキュメントを保存するディレクトリを定義する必要があります。プレースホルダーを使用します`YOUR DOCUMENT DIRECTORY`これを実際のディレクトリ パスに置き換える必要があります。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## ステップ2: ドキュメントを初期化する
+
+次に、新しいドキュメントと DocumentBuilder オブジェクトを初期化します。DocumentBuilder は、ドキュメントの構築と変更に役立ちます。
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ2: ドキュメントにコンテンツを追加する
-次に、DocumentBuilder オブジェクトを使用して、ドキュメントに必要なコンテンツを追加します。この例では、テキストを追加します。
+## ステップ3: ドキュメントにテキストを追加する
+
+DocumentBuilder を使用してドキュメントにテキストを追加します。このテキストはコメントを添付する場所になります。
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## ステップ3: コメントを作成し、コンテンツを追加する
-コメントを追加するには、Document オブジェクト、作成者名、作成者のイニシャル、および現在の日付を渡して、Comment クラスのインスタンスを作成します。
+## ステップ4: コメントを作成して追加する
+
+次に、コメントを作成します。ドキュメント、作成者名、イニシャル、日付を指定して、新しい Comment オブジェクトを初期化します。
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-次に、現在の段落にコメントを追加します。
+## ステップ5: 段落にコメントを添付する
+
+テキストを追加した現在の段落にコメントを添付する必要があります。これは、段落にコメントを追加することによって行われます。
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-段落やテキストなどのコンテンツをコメントに追加します。
+## ステップ6: コメントにコンテンツを追加する
+
+最後に、コメントにコンテンツを追加します。コメント テキストを保持するための新しい段落と実行を作成し、これらをコメントに追加します。
 
 ```csharp
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
-## ステップ4: ドキュメントを保存する
-コメントとその内容を追加したら、Document クラスの Save メソッドを使用してドキュメントをファイルに保存します。
+## ステップ7: ドキュメントを保存する
+
+最後のステップは、コメント付きのドキュメントを保存することです。ディレクトリとファイル名を指定します。
 
 ```csharp
-doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
-```
-
-## Aspose.Words for .NET を使用してコメントを追加するためのサンプル ソース コード
-Aspose.Words for .NET を使用してコメントを追加するための完全なソース コードは次のとおりです。
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Write("Some text is added.");
-
-Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-builder.CurrentParagraph.AppendChild(comment);
-
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 ```
 
 ## 結論
-おめでとうございます。Aspose.Words for .NET を使用して Word 文書にコメントを追加する方法を学習しました。ステップバイステップのガイドに従い、提供されているソース コードを利用することで、文書にコメントを挿入し、その内容をカスタマイズできるようになりました。
 
-コメントは、共同作業、追加情報の提供、またはドキュメント内でのメモの作成に役立ちます。特定の要件を満たすために、さまざまな作成者名、イニシャル、コメントの内容を試してみてください。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書にコメントを追加することができました。この強力な機能により、文書のレビュー プロセスが大幅に強化され、共同作業やフィードバックの伝達が容易になります。文書管理タスクをさらに効率化するために、Aspose.Words のその他の機能もぜひご確認ください。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET ドキュメントにコメントを追加するにはどうすればよいですか?
+### Aspose.Words for .NET とは何ですか?
 
-A: Aspose.Words for .NET ドキュメントにコメントを追加するには、チュートリアルに記載されている手順に従う必要があります。
+Aspose.Words for .NET は、開発者が .NET 言語を使用してプログラムで Word 文書を作成、操作、変換できるようにする強力な API です。
 
-#### Q: Aspose.Words for .NET でコメント テキストをフォーマットできますか?
+### 1 つのドキュメントに複数のコメントを追加できますか?
 
-A: はい、Aspose.Words for .NET では、利用可能な書式設定プロパティを使用してコメント テキストを書式設定できます。
+はい、異なる段落またはテキスト ランにコメントを作成して追加するプロセスを繰り返すことで、単一のドキュメントに複数のコメントを追加できます。
 
-#### Q: ドキュメント内にあるすべてのコメントを取得するにはどうすればよいですか?
+### コメントの外観をカスタマイズするにはどうすればよいですか?
 
- A: ドキュメント内にあるすべてのコメントを取得するには、`Document.Comments`財産。
+Aspose.Words はコメントの内容と構造に重点を置いていますが、外観は Word の組み込み書式設定機能を使用してカスタマイズできます。
 
-#### Q: Aspose.Words for .NET で特定のコメントを削除できますか?
+### プログラムでコメントを削除することは可能ですか?
 
- A: はい、Aspose.Words for .NETでは、`Comment.Remove`方法。
+はい、ドキュメント内のコメントを反復処理し、必要に応じて削除することで、プログラムでコメントを削除できます。
 
-#### Q: Aspose.Words for .NET で既存のコメントのテキストを変更するにはどうすればよいですか?
+### コメントに返信を追加できますか?
 
- A: Aspose.Words for .NETで既存のコメントのテキストを変更するには、`Comment.Text`対応する`Comment`オブジェクトを作成し、必要に応じてテキストを変更します。
+Aspose.Words を使用すると、スレッド化されたコメントを操作できるため、既存のコメントに返信を追加して、より詳細な議論を行うことができます。

@@ -45,7 +45,7 @@ Cuối cùng, chúng ta có thể lưu tài liệu ở định dạng mong muố
 // Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Chèn siêu liên kết.
+// Chèn siêu liên kết.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", sai);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng "T�
 
 #### Câu hỏi: Có thể tùy chỉnh văn bản hiển thị của liên kết tự động trong Aspose.Words không?
 
- Trả lời: Có, bạn có thể tùy chỉnh văn bản hiển thị của liên kết tự động trong Aspose.Words. Thay vì sử dụng địa chỉ URL làm văn bản hiển thị, bạn có thể sử dụng bất kỳ văn bản nào khác bằng cách thay thế nội dung giữa`<a>` thẻ. Ví dụ, bạn có thể sử dụng`<a href="https://www.aspose.com">Click here</a>` để hiển thị dòng chữ "Click vào đây" dưới dạng liên kết tự động.
+ Trả lời: Có, bạn có thể tùy chỉnh văn bản hiển thị của liên kết tự động trong Aspose.Words. Thay vì sử dụng địa chỉ URL làm văn bản hiển thị, bạn có thể sử dụng bất kỳ văn bản nào khác bằng cách thay thế nội dung giữa`<a>` thẻ. Ví dụ, bạn có thể sử dụng`<a href="https://www.aspose.com">Click here</a>`để hiển thị dòng chữ "Click vào đây" dưới dạng liên kết tự động.
 
 #### Câu hỏi: Làm cách nào tôi có thể thêm các thuộc tính bổ sung vào liên kết tự động trong Aspose.Words?
 
-Trả lời: Để thêm các thuộc tính bổ sung vào liên kết tự động trong Aspose.Words, bạn có thể sử dụng các thuộc tính HTML bổ sung bên trong`<a>` nhãn. Ví dụ, bạn có thể sử dụng`<a href="https://www.aspose.com" target="_blank">Link</a>` để mở liên kết trong một cửa sổ hoặc tab mới bằng cách sử dụng` attribute target="_blank"`.
+ Trả lời: Để thêm các thuộc tính bổ sung vào liên kết tự động trong Aspose.Words, bạn có thể sử dụng các thuộc tính HTML bổ sung bên trong`<a>` nhãn. Ví dụ, bạn có thể sử dụng`<a href="https://www.aspose.com" target="_blank">Link</a>` để mở liên kết trong một cửa sổ hoặc tab mới bằng cách sử dụng` attribute target="_blank"`.

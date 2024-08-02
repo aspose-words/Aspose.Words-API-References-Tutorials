@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Stap 2: Toegang tot een formulierveld
 
-Haal vervolgens een specifiek formulierveld op uit de formulierveldverzameling van het document. In dit voorbeeld hebben we toegang tot het formulierveld in index 3:
+Haal vervolgens een specifiek formulierveld op uit de formulierveldverzameling van het document. In dit voorbeeld hebben we toegang tot het formulierveld op index 3:
 
 ```csharp
 FormField formField = doc.Range.FormFields[3];

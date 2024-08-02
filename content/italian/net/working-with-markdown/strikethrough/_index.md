@@ -53,7 +53,7 @@ Congratulazioni! Ora hai imparato come applicare lo stile di testo barrato con A
 
 #### D: Come posso aggiungere il testo barrato in Aspose.Words?
 
- R: Per aggiungere il testo barrato in Aspose.Words, puoi utilizzare il file`Font.StrikeThrough` proprietà del`Run`oggetto. È possibile impostare questa proprietà su`true` per aggiungere testo barrato a testo specifico. Ad esempio, puoi usare`run.Font.StrikeThrough=true` per aggiungere il testo barrato nel file`Run` oggetto.
+ R: Per aggiungere il testo barrato in Aspose.Words, puoi utilizzare il file`Font.StrikeThrough` proprietà del`Run` oggetto. È possibile impostare questa proprietà su`true` per aggiungere testo barrato a testo specifico. Ad esempio, puoi usare`run.Font.StrikeThrough=true` per aggiungere il testo barrato nel file`Run` oggetto.
 
 #### D: È possibile aggiungere il testo barrato a più parti di testo nello stesso paragrafo?
 

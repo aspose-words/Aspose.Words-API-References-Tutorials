@@ -10,7 +10,7 @@ url: /ko/java/document-splitting/splitting-documents-into-html-pages/
 
 이 종합 가이드에서는 Aspose.Words for Java를 사용하여 문서를 HTML 페이지로 분할하는 방법을 살펴보겠습니다. Aspose.Words는 개발자가 프로그래밍 방식으로 Word 문서를 작업할 수 있게 해주는 강력한 Java API입니다. 우리는 프로세스를 단계별로 안내하고 그 과정에서 소스 코드 예제를 제공합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

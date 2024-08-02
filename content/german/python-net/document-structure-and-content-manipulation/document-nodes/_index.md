@@ -210,4 +210,4 @@ Auf jeden Fall können Sie mit der Aspose.Words-API Text aus bestimmten Abschnit
 
 ### Wo kann ich auf weitere Ressourcen und Dokumentation zugreifen?
 
- Umfassende Dokumentation und Beispiele finden Sie im[Aspose.Words für Python-API-Referenzen](https://reference.aspose.com/words/python-net/).
+ Ausführliche Dokumentation und Beispiele finden Sie im[Aspose.Words für Python-API-Referenzen](https://reference.aspose.com/words/python-net/).

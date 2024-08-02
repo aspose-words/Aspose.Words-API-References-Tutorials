@@ -12,13 +12,13 @@ url: /ko/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 오늘날의 디지털 세상에서 문서 작업은 기본적인 작업입니다. 특히 Word 문서는 보고서 작성부터 중요한 편지 초안 작성까지 다양한 목적으로 널리 사용됩니다. 문서 작업 시 일반적인 요구 사항 중 하나는 문서 전체에서 특정 텍스트나 서식을 찾아 바꿔야 한다는 것입니다. 이 문서에서는 Aspose.Words for Python API를 사용하여 Word 문서의 고급 찾기 및 바꾸기 기술을 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 고급 기술을 살펴보기 전에 다음과 같은 전제 조건이 갖추어져 있는지 확인하세요.
 
 1.  Python 설치: Python이 시스템에 설치되어 있는지 확인하십시오. 다음에서 다운로드할 수 있습니다.[여기](https://www.python.org/downloads/).
 
-2.  Python용 Aspose.Words: Python용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/).
+2. Python용 Aspose.Words: Python용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/python/).
 
 3. 문서 준비: 찾기 및 바꾸기 작업을 수행할 Word 문서를 준비합니다.
 

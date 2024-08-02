@@ -9,7 +9,7 @@ url: /ja/net/split-document/merge-documents/
 ---
 ## 導入
 
-こんにちは! 複数の Word 文書を 1 つのまとまったファイルに結合する必要があることに気づいたことはありませんか? レポートをコンパイルする場合でも、プロジェクトを組み立てる場合でも、単に整理する場合でも、文書を結合すると、時間と労力を大幅に節約できます。Aspose.Words for .NET を使用すると、このプロセスが簡単になります。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書を結合する方法を、各手順を分解して簡単に理解できるように説明します。最後には、プロのように文書を結合できるようになります。
+複数の Word 文書を 1 つのまとまったファイルに結合する必要があることに気づいたことはありませんか? レポートをコンパイルする場合でも、プロジェクトを組み立てる場合でも、単に整理する場合でも、文書を結合すると、時間と労力を大幅に節約できます。Aspose.Words for .NET を使用すると、このプロセスが簡単になります。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書を結合する方法を、各手順を分解して簡単に理解できるように説明します。最後には、プロのように文書を結合できるようになります。
 
 ## 前提条件
 
@@ -93,22 +93,22 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## よくある質問
 
-### 1. Aspose.Words for .NET とは何ですか?
+### Aspose.Words for .NET とは何ですか?
 
 Aspose.Words for .NET は、開発者が Word ドキュメントをプログラムで作成、操作、変換できるようにする強力なライブラリです。ドキュメント関連のタスクを自動化するのに最適です。
 
-### 2. Aspose.Words for .NET を無料で使用できますか?
+### Aspose.Words for .NET を無料で使用できますか?
 
  Aspose.Words for .NETを試すには、[無料トライアル](https://releases.aspose.com/)長期使用にはライセンスを購入する必要があります。
 
-### 3. マージ中に異なる書式をどのように処理しますか?
+### マージ中に異なる書式をどのように処理しますか?
 
  Aspose.Wordsは、次のようなさまざまなマージフォーマットモードを提供します。`KeepSourceFormatting`そして`MergeFormatting`を参照してください[APIドキュメント](https://reference.aspose.com/words/net/)詳細な手順については、こちらをご覧ください。
 
-### 4. Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
+### Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
 
 サポートを受けるには、[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).
 
-### 5. Aspose.Words for .NET で他のファイル形式をマージできますか?
+### Aspose.Words for .NET で他のファイル形式をマージできますか?
 
 はい、Aspose.Words は、DOCX、PDF、HTML など、さまざまなファイル形式のマージをサポートしています。

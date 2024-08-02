@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 第 3 步：新增文字和尾註
 
-使用`Write`的方法`DocumentBuilder`物件向文件添加文本，以及`InsertFootnote`插入尾註的方法：
+使用`Write`的方法`DocumentBuilder`新增文字文字的對象，以及`InsertFootnote`插入尾註的方法：
 
 ```csharp
 builder.Write("Some text");
@@ -97,4 +97,4 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 #### Q：是否可以在文件各部分之間繼續進行尾註編號？
 
-答：是的，可以在文件各部分之間繼續進行尾註編號。使用`RestartRule`的財產`EndnoteOptions`類別並將其設定為`RestartContinuous`允許在各部分之間繼續編號。
+答：是的，可以在文件各部分之間繼續進行尾註編號。使用`RestartRule`的財產`EndnoteOptions`類別並將其設定為`RestartContinuous`允許在各節之間繼續編號。

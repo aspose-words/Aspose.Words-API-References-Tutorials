@@ -9,7 +9,7 @@ url: /nl/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
 ## Invoering
 
-Het converteren van Word-documenten naar PDF is een veel voorkomende taak, vooral als u documenten wilt delen of archiveren met behoud van de opmaak. Soms bevatten deze documenten belangrijke bladwijzers in de kop- en voetteksten. In deze zelfstudie doorlopen we het proces van het exporteren van deze bladwijzers van een Word-document naar een PDF met behulp van Aspose.Words voor .NET.
+Het converteren van Word-documenten naar PDF is een veel voorkomende taak, vooral als u documenten wilt delen of archiveren met behoud van hun opmaak. Soms bevatten deze documenten belangrijke bladwijzers in de kop- en voetteksten. In deze zelfstudie doorlopen we het proces van het exporteren van deze bladwijzers van een Word-document naar een PDF met behulp van Aspose.Words voor .NET.
 
 ## Vereisten
 

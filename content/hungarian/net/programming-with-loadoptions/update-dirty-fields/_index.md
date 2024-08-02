@@ -39,7 +39,7 @@ Először is állítsa be .NET-projektjét, és telepítse az Aspose.Words for .
 Install-Package Aspose.Words
 ```
 
-## 2. lépés: Konfigurálja a betöltési beállításokat
+## 2. lépés: Konfigurálja a Betöltési beállításokat
 
 Most állítsuk be a betöltési beállításokat a piszkos mezők automatikus frissítéséhez. Ez olyan, mintha beállítaná a GPS-t egy utazás előtt – ez elengedhetetlen az úticél zökkenőmentes eléréséhez.
 

@@ -2,57 +2,41 @@
 title: Inhaltsverzeichnis-Tabstopps im Word-Dokument ändern
 linktitle: Inhaltsverzeichnis-Tabstopps im Word-Dokument ändern
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Registerkarten des Inhaltsverzeichnisses in einem Word-Dokument ändern.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Inhaltsverzeichnis-Tabstopps in Word-Dokumenten ändern. Diese Schritt-für-Schritt-Anleitung hilft Ihnen beim Erstellen eines professionell aussehenden Inhaltsverzeichnisses.
 type: docs
 weight: 10
 url: /de/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten in einer C#-Anwendung. Zu den von Aspose.Words angebotenen Funktionen gehört die Möglichkeit, die in einem Inhaltsverzeichnis eines Word-Dokuments verwendeten Registerkarten zu ändern. In dieser Anleitung zeigen wir Ihnen, wie Sie mit dem C#-Quellcode von Aspose.Words für .NET die Registerkarten im Inhaltsverzeichnis eines Dokuments ändern.
+## Einführung
 
-## Die Aspose.Words-Bibliothek verstehen
+Haben Sie sich schon einmal gefragt, wie Sie das Inhaltsverzeichnis (TOC) in Ihren Word-Dokumenten aufpeppen können? Vielleicht möchten Sie, dass die Tabstopps perfekt ausgerichtet sind, um dem Dokument einen professionellen Touch zu verleihen. Dann sind Sie hier richtig! Heute tauchen wir tief in die Frage ein, wie Sie die Tabstopps im Inhaltsverzeichnis mit Aspose.Words für .NET ändern können. Bleiben Sie dran, und ich verspreche Ihnen, dass Sie am Ende alles wissen, um Ihr Inhaltsverzeichnis schick und ordentlich aussehen zu lassen.
 
-Bevor Sie sich in den Code vertiefen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Textverarbeitung mit Word-Dokumenten einfach und effizient macht. Sie bietet eine breite Palette an Funktionen zum Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten, einschließlich der Änderung von Inhaltsverzeichnisregisterkarten.
+## Voraussetzungen
 
-## Laden des Dokuments mit dem Inhaltsverzeichnis
+Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-Der erste Schritt besteht darin, das Word-Dokument mit dem zu ändernden Inhaltsverzeichnis zu laden. Verwenden Sie die Document-Klasse, um das Dokument aus der Quelldatei zu laden. Hier ist ein Beispiel:
+1.  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Visual Studio oder jede C#-kompatible IDE.
+3. Ein Word-Dokument: Insbesondere eines, das ein Inhaltsverzeichnis enthält.
 
-```csharp
-Document doc = new Document(dataDir + "Table of contents.docx");
-```
+Alles klar? Super! Los geht‘s.
 
-In diesem Beispiel laden wir das Dokument „Inhaltsverzeichnis.docx“, das sich im Verzeichnis „Dokumente“ befindet.
+## Namespaces importieren
 
-## Registerkarten im Inhaltsverzeichnis ändern
-
-Sobald das Dokument geladen ist, gehen wir jeden Absatz des Dokuments durch und prüfen, ob er mit den Ergebnisstilen des Inhaltsverzeichnisses (TOC) formatiert ist. Wenn ja, ändern wir die Tabulatoren, die zum Ausrichten der Seitenzahlen verwendet werden. So geht's:
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Das ist so, als würden Sie Ihre Werkzeuge packen, bevor Sie ein Projekt starten.
 
 ```csharp
-foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
-{
-     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
-         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
-     {
-         TabStop tab = para.ParagraphFormat.TabStops[0];
-         para.ParagraphFormat.TabStops.RemoveByPosition(tab.Position);
-         para.ParagraphFormat.TabStops.Add(tab.Position - 50, tab.Alignment, tab.Leader);
-     }
-}
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-In diesem Beispiel verwenden wir eine Schleife, um jeden Absatz im Dokument zu durchlaufen. Anschließend prüfen wir, ob der Absatz mit den Formatvorlagen für Inhaltsverzeichnisergebnisse (TOC) formatiert ist. Wenn dies der Fall ist, greifen wir auf die erste in diesem Absatz verwendete Registerkarte zu und ändern sie, indem wir die alte Registerkarte entfernen und eine neue Registerkarte mit geänderter Position hinzufügen.
+Lassen Sie uns diesen Vorgang in einfache, leicht verständliche Schritte unterteilen. Wir gehen das Laden des Dokuments durch, ändern die Tabulatorstopps im Inhaltsverzeichnis und speichern das aktualisierte Dokument.
 
-## Geändertes Dokument speichern
+## Schritt 1: Dokument laden
 
-Nachdem Sie die erforderlichen Änderungen an den Registerkarten im Inhaltsverzeichnis vorgenommen haben, können Sie das geänderte Dokument mit der Save-Methode der Document-Klasse speichern. Hier ist ein Beispiel:
+Warum? Wir müssen auf das Word-Dokument zugreifen, das das Inhaltsverzeichnis enthält, das wir ändern möchten.
 
-```csharp
-doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
-```
-
-In diesem Beispiel speichern wir das geänderte Dokument als „WorkingWithTableOfContent.ChangeTocTabStops.docx“.
-
-### Beispiel-Quellcode für die Funktion „Inhaltsverzeichnis-Registerkarten bearbeiten“ mit Aspose.Words für .NET
+Wie? Hier ist ein einfacher Codeausschnitt, der Ihnen den Einstieg erleichtert:
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -60,50 +44,34 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Laden Sie das Dokument mit dem Inhaltsverzeichnis
 Document doc = new Document(dataDir + "Table of contents.docx");
-
-// Ändern Sie die Registerkarten des Inhaltsverzeichnisses
-foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
-{
-     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
-         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
-     {
-         TabStop tab = para.ParagraphFormat.TabStops[0];
-         para.ParagraphFormat.TabStops.RemoveByPosition(tab.Position);
-         para.ParagraphFormat.TabStops.Add(tab.Position - 50, tab.Alignment, tab.Leader);
-     }
-}
-
-// Speichern des geänderten Dokuments
-doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## Abschluss
+Stellen Sie sich vor, Ihr Dokument ist wie ein Kuchen und wir wollen ihn mit etwas Zuckerguss verzieren. Der erste Schritt besteht darin, den Kuchen aus der Schachtel zu holen.
 
-In diesem Handbuch haben wir erläutert, wie Sie mit Aspose.Words für .NET die Registerkarten im Inhaltsverzeichnis eines Word-Dokuments mithilfe des bereitgestellten C#-Quellcodes ändern können. Indem Sie die angegebenen Schritte befolgen, können Sie die Registerkarten des Inhaltsverzeichnisses in Ihren Word-Dokumenten in Ihrer C#-Anwendung problemlos anpassen. Aspose.Words bietet enorme Flexibilität und Leistung beim Arbeiten mit den Stilen und der Formatierung Ihrer Dokumente, sodass Sie attraktive und professionelle Word-Dokumente erstellen können.
+## Schritt 2: Identifizieren Sie die Inhaltsverzeichnisabsätze
 
-### FAQs zum Ändern von Inhaltsverzeichnis-Tabstopps in Word-Dokumenten
+Warum? Wir müssen die Absätze genau bestimmen, aus denen das Inhaltsverzeichnis besteht. 
 
-#### F: Was ist der Zweck der Funktion „Inhaltsverzeichnis-Tabstopps im Word-Dokument ändern“ in Aspose.Words für .NET?
-
-A: Mit der Funktion „Tabulatorstopps im Inhaltsverzeichnis in Word-Dokument ändern“ in Aspose.Words für .NET können Sie die im Inhaltsverzeichnis eines Word-Dokuments verwendeten Tabulatorstopps ändern. Sie können damit die Ausrichtung und Positionierung der Seitenzahlen und der entsprechenden Überschriften im Inhaltsverzeichnis anpassen.
-
-#### F: Was ist Aspose.Words für .NET?
-
-A: Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die Textverarbeitung mit Word-Dokumenten in .NET-Anwendungen. Sie bietet umfassende Funktionen zum programmgesteuerten Erstellen, Bearbeiten, Bearbeiten und Konvertieren von Word-Dokumenten mit C# oder anderen .NET-Sprachen.
-
-#### F: Wie lade ich mit Aspose.Words für .NET ein Word-Dokument mit einem Inhaltsverzeichnis?
-
- A: Um ein Word-Dokument mit einem Inhaltsverzeichnis mit Aspose.Words für .NET zu laden, können Sie den`Document` Klasse und deren Konstruktor. Indem Sie den Dateipfad des Dokuments angeben, können Sie es in eine`Document` Objekt. Hier ist ein Beispiel:
+Wie? Gehen Sie die Absätze durch und überprüfen Sie deren Stil:
 
 ```csharp
-Document doc = new Document(dataDir + "Table of contents.docx");
+foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
+{
+    if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
+        para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
+    {
+        // Inhaltsverzeichnisabsatz gefunden
+    }
+}
 ```
 
-Dieser Codeausschnitt lädt das Dokument „Inhaltsverzeichnis.docx“, das sich im angegebenen Verzeichnis befindet.
+Stellen Sie es sich so vor, als würden Sie eine Menschenmenge absuchen, um Ihre Freunde zu finden. Hier suchen wir nach Absätzen, die als Inhaltsverzeichniseinträge formatiert sind.
 
-#### F: Wie kann ich mit Aspose.Words für .NET die im Inhaltsverzeichnis verwendeten Registerkarten ändern?
+## Schritt 3: Ändern Sie die Tabulatoren
 
-A: Sobald das Dokument geladen ist, können Sie jeden Absatz des Dokuments durchlaufen und prüfen, ob er mit den Ergebnisstilen des Inhaltsverzeichnisses (TOC) formatiert ist. Wenn ein Absatz als TOC-Stil formatiert ist, können Sie die Tabulatoren ändern, die zum Ausrichten der Seitenzahlen verwendet werden. In Aspose.Words für .NET können Sie auf die`ParagraphFormat` Eigenschaft jedes Absatzes, um die Tabulatorstopps abzurufen und zu ändern. Hier ist ein Beispiel:
+Warum? Hier geschieht die Magie. Durch das Ändern von Tabulatoren sieht Ihr Inhaltsverzeichnis übersichtlicher aus.
+
+Wie? Den vorhandenen Tabstopp entfernen und an geänderter Position einen neuen hinzufügen:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -118,34 +86,38 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-In diesem Code durchläuft die Schleife jeden Absatz im Dokument. Wenn ein Absatz einen TOC-Stil hat, greift sie auf den ersten in diesem Absatz verwendeten Tabulator zu, entfernt ihn und fügt einen neuen Tabulator mit geänderter Position hinzu.
+Es ist, als würden Sie die Möbel in Ihrem Wohnzimmer so lange verschieben, bis sie sich richtig anfühlen. Wir optimieren diese Tabstopps, bis sie perfekt sind.
 
-#### F: Kann ich mit Aspose.Words für .NET die Registerkarten für mehrere Ebenen im Inhaltsverzeichnis ändern?
+## Schritt 4: Speichern Sie das geänderte Dokument
 
-A: Ja, Sie können die Tabulatoren für mehrere Ebenen im Inhaltsverzeichnis mit Aspose.Words für .NET ändern. Indem Sie jeden Absatz durchgehen und den Inhaltsverzeichnisstil überprüfen, können Sie die Tabulatoren für jede Ebene einzeln ändern. Sie können auf die gewünschte Ebene des Inhaltsverzeichnisses zugreifen und die Tabulatoren entsprechend anpassen.
+Warum? Um sicherzustellen, dass Ihre gesamte harte Arbeit gespeichert und angezeigt oder freigegeben werden kann.
 
-#### F: Wie speichere ich das geänderte Dokument, nachdem ich mit Aspose.Words für .NET die Registerkarten im Inhaltsverzeichnis geändert habe?
-
- A: Nachdem Sie die erforderlichen Änderungen an den Registerkarten im Inhaltsverzeichnis vorgenommen haben, können Sie das geänderte Dokument mit dem`Save` Methode der`Document` Klasse. Geben Sie den gewünschten Dateipfad und Namen für das Ausgabedokument als Parameter an die`Save` Methode. Hier ist ein Beispiel:
+Wie? Speichern Sie das Dokument unter einem neuen Namen, damit das Original erhalten bleibt:
 
 ```csharp
+// Speichern des geänderten Dokuments
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-Dieser Code speichert das geänderte Dokument als „WorkingWithTableOfContent.ChangeTocTabStops.docx“.
+Und voilà! Ihr Inhaltsverzeichnis hat jetzt die Tabstopps genau dort, wo Sie sie haben möchten.
 
-#### F: Kann ich mit Aspose.Words für .NET andere Aspekte des Inhaltsverzeichnisses anpassen?
+## Abschluss
 
-A: Ja, mit Aspose.Words für .NET können Sie verschiedene Aspekte des Inhaltsverzeichnisses anpassen. Neben dem Ändern der Registerkarten können Sie die Schriftart, -größe, -ausrichtung und andere Formatierungseigenschaften der Inhaltsverzeichniseinträge und Seitenzahlen ändern. Darüber hinaus können Sie die Einrückung, den Abstand und die Formatierung der entsprechenden Überschriften anpassen.
+Das Ändern von Inhaltsverzeichnis-Tabstopps in einem Word-Dokument mit Aspose.Words für .NET ist unkompliziert, wenn man es einmal aufschlüsselt. Indem Sie Ihr Dokument laden, die Inhaltsverzeichnis-Absätze identifizieren, die Tabstopps ändern und das Dokument speichern, können Sie ein elegantes und professionelles Erscheinungsbild erzielen. Denken Sie daran: Übung macht den Meister. Experimentieren Sie also weiter mit verschiedenen Tabstopppositionen, um genau das gewünschte Layout zu erhalten.
 
-#### F: Kann ich mit Aspose.Words für .NET die Tabulatorausrichtung und Füllzeichen für das Inhaltsverzeichnis ändern?
+## Häufig gestellte Fragen
 
-A: Ja, Sie können die Tabulatorausrichtung und die Füllzeichen für das Inhaltsverzeichnis mit Aspose.Words für .NET ändern. Indem Sie auf die Tabulatoren zugreifen und deren Ausrichtung und Füllzeicheneigenschaften anpassen, können Sie die Ausrichtung und das Erscheinungsbild der Seitenzahlen und der entsprechenden Überschriften im Inhaltsverzeichnis steuern.
+### Kann ich Tabstopps für verschiedene Inhaltsverzeichnisebenen separat ändern?
+Ja, das können Sie! Überprüfen Sie einfach die einzelnen TOC-Ebenen (TOC1, TOC2 usw.) und passen Sie sie entsprechend an.
 
-#### F: Unterstützt Aspose.Words für .NET das Ändern anderer Stile und Formatierungen in Word-Dokumenten?
+### Was ist, wenn mein Dokument mehrere Inhaltsverzeichnisse hat?
+Der Code sucht nach allen Absätzen im Inhaltsverzeichnisstil und ändert daher alle im Dokument vorhandenen Inhaltsverzeichnisse.
 
-A: Ja, Aspose.Words für .NET bietet umfassende Unterstützung zum Ändern verschiedener Stile und Formatierungen in Word-Dokumenten. Sie können Stile für verschiedene Elemente wie Absätze, Überschriften, Tabellen, Listen und mehr ändern. Sie können Schriftarten, Farben, Ausrichtung, Einrückung, Abstand und andere Formatierungsaspekte entsprechend Ihren Anforderungen ändern.
+### Ist es möglich, in einem Inhaltsverzeichniseintrag mehrere Tabstopps hinzuzufügen?
+ Auf jeden Fall! Sie können so viele Tabstopps hinzufügen wie nötig, indem Sie die`para.ParagraphFormat.TabStops` Sammlung.
 
-#### F: Kann ich mit Aspose.Words für .NET die Registerkarten im Inhaltsverzeichnis eines vorhandenen Word-Dokuments ändern?
+### Kann ich die Tabulatorausrichtung und den Füllstil ändern?
+Ja, Sie können beim Hinzufügen eines neuen Tabulatorstopps unterschiedliche Ausrichtungen und Füllzeichenstile angeben.
 
-A: Ja, Sie können die Tabulatoren im Inhaltsverzeichnis in einem vorhandenen Word-Dokument mit Aspose.Words für .NET ändern. Indem Sie das Dokument laden, die Absätze durchlaufen und die erforderlichen Änderungen an den Tabulatoren vornehmen, können Sie die Tabulatoren im Inhaltsverzeichnis aktualisieren. Speichern Sie abschließend das Dokument, um die Änderungen anzuwenden.
+### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
+ Ja, Sie benötigen eine gültige Lizenz, um Aspose.Words für .NET über den Testzeitraum hinaus zu verwenden. Sie erhalten eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder[Kauf eins](https://purchase.aspose.com/buy).

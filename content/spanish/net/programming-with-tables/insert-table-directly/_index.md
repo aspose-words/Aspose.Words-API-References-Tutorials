@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Paso 2: crear el objeto de tabla
 
-continuación, creamos el objeto de tabla. Aquí es donde definiremos la estructura de nuestra tabla.
+A continuación, creamos el objeto de tabla. Aquí es donde definiremos la estructura de nuestra tabla.
 
 ```csharp
 // Empezamos creando el objeto tabla. Tenga en cuenta que debemos pasar el objeto del documento.
@@ -100,7 +100,7 @@ Para acelerar el proceso de agregar celdas, podemos clonar celdas existentes.
 
 ```csharp
 // Luego repetiríamos el proceso para las otras celdas y filas de la tabla.
-// También podemos acelerar las cosas clonando celdas y filas existentes.
+//También podemos acelerar las cosas clonando celdas y filas existentes.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Este código guarda el documento con la tabla insertada.
  Sí, puedes solicitar un[prueba gratis](https://releases.aspose.com/) evaluar la biblioteca antes de comprarla.
 
 ### ¿Cómo compro Aspose.Words para .NET?
- Puede comprar Aspose.Words para .NET desde[pagina de compra](https://purchase.aspose.com/buy).
+Puede comprar Aspose.Words para .NET desde[pagina de compra](https://purchase.aspose.com/buy).
 
 ### ¿Dónde puedo encontrar la documentación de Aspose.Words para .NET?
  La documentación está disponible.[aquí](https://reference.aspose.com/words/net/).

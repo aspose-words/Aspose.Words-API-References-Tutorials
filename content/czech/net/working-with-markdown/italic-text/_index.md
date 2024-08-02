@@ -46,7 +46,7 @@ gratuluji! Nyní jste se naučili používat funkci textu kurzíva s Aspose.Word
 
 #### Otázka: Jak mohu v Aspose.Words napsat text kurzívou?
 
- Odpověď: Chcete-li text v Aspose.Words zobrazit kurzívou, můžete použít`Font.Italic` majetek z`Run`objekt. Tuto vlastnost můžete nastavit na`true` kurzívou konkrétní text. Můžete například použít`run.Font.Italic=true` pro kurzívu textu obsaženého v`Run` objekt.
+ Odpověď: Chcete-li text v Aspose.Words zobrazit kurzívou, můžete použít`Font.Italic` majetek z`Run` objekt. Tuto vlastnost můžete nastavit na`true` kurzívou konkrétní text. Můžete například použít`run.Font.Italic=true` zvýraznit kurzívou text obsažený v`Run` objekt.
 
 #### Otázka: Je možné napsat kurzívou několik částí textu ve stejném odstavci?
 

@@ -14,7 +14,7 @@ url: /th/python-net/content-extraction-and-manipulation/document-content-extract
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่เราจะเจาะลึกโค้ด ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Python และไลบรารี Aspose.Words แล้ว คุณสามารถดาวน์โหลดห้องสมุดได้จากเว็บไซต์[ที่นี่](https://releases.aspose.com/words/python/)- นอกจากนี้ ตรวจสอบให้แน่ใจว่าคุณมีเอกสาร Word ที่พร้อมสำหรับการทดสอบ
+ ก่อนที่เราจะเจาะลึกโค้ด ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Python และไลบรารี Aspose.Words แล้ว คุณสามารถดาวน์โหลดห้องสมุดได้จากเว็บไซต์[ที่นี่](https://releases.aspose.com/words/python/)- นอกจากนี้ ตรวจสอบให้แน่ใจว่าคุณมีเอกสาร Word ที่พร้อมสำหรับการทดสอบ
 
 ## การติดตั้ง Aspose.Words สำหรับ Python
 

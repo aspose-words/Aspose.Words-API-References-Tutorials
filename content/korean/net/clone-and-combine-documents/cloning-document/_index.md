@@ -11,12 +11,12 @@ url: /ko/net/clone-and-combine-documents/cloning-document/
 
 안녕하세요! .NET용 Aspose.Words를 사용하여 Word 문서를 복제해야 했던 적이 있습니까? 들리는 것만큼 어렵지 않습니다. 단계별로 안내해 드리겠습니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼은 간단하고 대화적인 방식으로 프로세스를 안내합니다. 마지막에는 복제된 Word 문서를 사용할 수 있게 됩니다. 그럼 바로 들어가 보겠습니다!
 
-## 전제조건
+## 전제 조건
 
 코딩을 시작하기 전에 필요한 모든 것이 있는지 확인합시다.
 
 1.  .NET 라이브러리용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[Aspose 릴리스](https://releases.aspose.com/words/net/) 페이지.
-2. Visual Studio: 최신 버전이면 모두 가능합니다.
+2. Visual Studio: 모든 최신 버전에서 이 작업을 수행할 수 있습니다.
 3. C#에 대한 기본 지식: 전문가가 될 필요는 없지만 약간만 익숙해지면 도움이 됩니다.
 4.  샘플 Word 문서: 이 튜토리얼에서는 이를 호출합니다.`Document.docx`.
 

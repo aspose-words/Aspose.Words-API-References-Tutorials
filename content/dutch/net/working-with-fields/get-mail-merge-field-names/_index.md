@@ -2,118 +2,111 @@
 title: Veldnamen voor samenvoegen ophalen
 linktitle: Veldnamen voor samenvoegen ophalen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u veldnamen voor samenvoegbewerkingen in uw Word-documenten kunt ophalen met Aspose.Words voor .NET.
+description: Leer hoe u samenvoegveldnamen uit een Word-document kunt extraheren met behulp van Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/get-mail-merge-field-names/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van de functie "Get Merge Field Names" van Aspose.Words voor .NET. Zorg ervoor dat u elke stap zorgvuldig volgt om de gewenste resultaten te krijgen.
+Welkom bij deze handleiding over het extraheren van veldnamen voor samenvoegbewerkingen uit een Word-document met Aspose.Words voor .NET. Of u nu gepersonaliseerde brieven genereert, aangepaste rapporten maakt of eenvoudigweg documentworkflows automatiseert, samenvoegvelden zijn essentieel. Ze fungeren als tijdelijke aanduidingen in uw document en worden tijdens het samenvoegproces vervangen door echte gegevens. Als je met Aspose.Words voor .NET werkt, heb je geluk: deze krachtige bibliotheek maakt het ongelooflijk eenvoudig om met deze velden te communiceren. In deze zelfstudie bespreken we een eenvoudige maar effectieve manier om de namen van samenvoegvelden in een document op te halen, zodat u uw samenvoegbewerkingen beter kunt begrijpen en beheren.
 
-## Stap 1: Documentmap instellen
+## Vereisten
 
-In de verstrekte code moet u de directory van uw documenten opgeven. Vervang de waarde "UW DOCUMENTENMAP" door het juiste pad naar uw documentenmap.
+Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u over het volgende beschikt:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat de Aspose.Words-bibliotheek is geïnstalleerd. Als dit niet het geval is, kunt u deze downloaden van de[Aspose-website](https://releases.aspose.com/words/net/).
 
-## Stap 2: Het document laden
+2. Ontwikkelomgeving: U moet een ontwikkelomgeving hebben ingesteld voor .NET, zoals Visual Studio.
 
-De eerste stap is het laden van het document waar u de samenvoegveldnamen wilt ophalen.
+3. Een Word-document met samenvoegvelden: zorg dat u een Word-document bij de hand hebt dat samenvoegvelden bevat. Dit is het document waarmee u gaat werken om veldnamen te extraheren.
 
-```csharp
-Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
-```
+4. Basiskennis van C#: Bekendheid met programmeren in C# en .NET is handig om samen met de voorbeelden te volgen.
 
-Zorg ervoor dat u "UW DOCUMENTBESTAND" vervangt door de naam van uw eigen bestand.
+## Naamruimten importeren
 
-## Stap 3: Haal de samenvoegveldnamen op
-
- Wij gebruiken de`GetFieldNames()` methode om een array te verkrijgen die de namen bevat van de samenvoegvelden die in het document aanwezig zijn.
+Om aan de slag te gaan, moet u de benodigde naamruimten in uw C#-code importeren. Hierdoor hebt u toegang tot de Aspose.Words-functionaliteit. Zo kunt u ze opnemen:
 
 ```csharp
-string[] fieldNames = doc.MailMerge.GetFieldNames();
+using Aspose.Words;
+using System;
 ```
 
- De`fieldNames` variabele bevat nu de namen van de samenvoegvelden.
+ De`Aspose.Words` naamruimte geeft u toegang tot alle klassen en methoden die nodig zijn om Word-documenten te manipuleren`System` wordt gebruikt voor basisfunctionaliteit zoals console-uitvoer.
 
-### Broncodevoorbeeld voor het ophalen van samenvoegveldnamen met Aspose.Words voor .NET
+Laten we het proces van het extraheren van veldnamen voor samenvoegbewerkingen opsplitsen in een duidelijke, stapsgewijze handleiding.
+
+## Stap 1: Definieer de documentmap
+
+Kop: geef het pad naar uw documenten op
+
+Eerst moet u het pad instellen naar de map waarin uw Word-document zich bevindt. Dit is van cruciaal belang omdat het uw toepassing vertelt waar het bestand kan worden gevonden. Zo doe je het:
 
 ```csharp
 // Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Vervangen`"YOUR DOCUMENTS DIRECTORY"`met het daadwerkelijke pad waar uw document zich bevindt. Dit zou zoiets kunnen zijn`"C:\\Documents\\MyDoc.docx"`.
+
+## Stap 2: Laad het document
+
+Kop: Laad het Word-document
+
+ Vervolgens laadt u het document in een exemplaar van het`Document` klasse aangeboden door Aspose.Words. Hierdoor kunt u programmatisch met het document communiceren.
+
+```csharp
 // Laad het document.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
+```
 
+ Vervangen`"YOUR DOCUMENT FILE"` met de naam van uw Word-documentbestand, zoals`"example.docx"`. Deze coderegel leest het document uit de door u opgegeven map en bereidt het voor op verdere manipulatie.
+
+## Stap 3: Haal de samenvoegveldnamen op
+
+Kop: Veldnamen voor samenvoegbewerking uitpakken
+
+ Nu bent u klaar om de namen van de samenvoegvelden in het document op te halen. Dit is waar Aspose.Words schittert: het is`MailMerge` class biedt een eenvoudige manier om veldnamen op te halen.
+
+```csharp
 // Samenvoegveldnamen ophalen.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
+```
 
+ De`GetFieldNames()` methode retourneert een array van tekenreeksen, die elk een samenvoegveldnaam vertegenwoordigen die in het document wordt gevonden. Dit zijn de tijdelijke aanduidingen die u in uw Word-document ziet.
+
+## Stap 4: Geef het aantal samenvoegvelden weer
+
+Kop: Voer het aantal velden uit
+
+Om te bevestigen dat u de veldnamen succesvol heeft opgehaald, kunt u het aantal velden weergeven via de console.
+
+```csharp
 // Geef het aantal samenvoegvelden weer.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- In dit voorbeeld hebben we een document geladen en de samenvoegveldnamen opgehaald met behulp van de`GetFieldNames()` methode en gaf het aantal samenvoegvelden weer dat in het document aanwezig was.
+Deze coderegel drukt het totale aantal samenvoegvelden in het document af, zodat u kunt verifiëren of uw extractieproces correct heeft gewerkt.
 
-Dit concludeert onze handleiding over het gebruik van de functie "Get Merge Field Names" met Aspose.Words voor .NET.
+## Conclusie
 
-### Veelgestelde vragen
+Gefeliciteerd! U hebt nu geleerd hoe u veldnamen voor samenvoegbewerkingen uit een Word-document kunt extraheren met behulp van Aspose.Words voor .NET. Deze techniek is een waardevol hulpmiddel voor het beheren en automatiseren van documentworkflows, waardoor het gemakkelijker wordt om met gepersonaliseerde inhoud om te gaan. Door deze stappen te volgen, kunt u op efficiënte wijze samenvoegvelden in uw documenten identificeren en ermee werken.
 
-#### Vraag 1: Wat is samenvoegen in Aspose.Words?
+ Als u vragen heeft of meer hulp nodig heeft, kunt u de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of sluit je aan bij de[Stel gemeenschap](https://forum.aspose.com/c/words/8) Voor ondersteuning. Veel codeerplezier!
 
-Afdruk samenvoegen in Aspose.Words is een proces om gegevens uit een externe bron (bijvoorbeeld Excel-spreadsheet of database) samen te voegen met een Word-sjabloondocument om gepersonaliseerde documenten te creëren. Dit vergemakkelijkt het geautomatiseerd genereren van brieven, rapporten en andere soortgelijke documenten.
+## Veelgestelde vragen
 
-#### Vraag 2: Hoe krijg ik de lijst met samenvoegvelden die beschikbaar zijn in een Word-document?
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en beheren in .NET-toepassingen.
 
-Om de lijst met samenvoegvelden te krijgen die beschikbaar zijn in een Word-document, kunt u deze stappen volgen:
+### Hoe krijg ik een gratis proefperiode van Aspose.Words?
+ U kunt een gratis proefperiode krijgen door naar de[Aspose-releasespagina](https://releases.aspose.com/).
 
-1. Importeer de klassen Document en MailMergeFieldNames uit de naamruimte Aspose.Words.
-2. Maak een documentinstantie door uw Word-document te laden.
-3. Gebruik de GetMailMergeFieldNames-methode van het Document-object om de lijst met beschikbare samenvoegvelden op te halen.
+### Kan ik Aspose.Words gebruiken zonder een licentie aan te schaffen?
+ Ja, u kunt het tijdens de proefperiode gebruiken, maar voor doorlopend gebruik moet u een licentie aanschaffen[De aankooppagina van Aspose](https://purchase.aspose.com/buy).
 
-Hier is een voorbeeldcode om het proces te illustreren:
+### Wat moet ik doen als ik problemen ondervind met Aspose.Words?
+ Voor ondersteuning kunt u terecht op de[Aspose-forum](https://forum.aspose.com/c/words/8) waar u vragen kunt stellen en hulp kunt krijgen van de gemeenschap.
 
-```csharp
-// Importeer de benodigde naamruimten
-using Aspose.Words;
-using Aspose.Words.MailMerging;
-
-// Laad het bestaande document
-Document document = new Document("FilePath");
-
-// Lijst met samenvoegvelden ophalen
-MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
-
-// Blader door de beschikbare samenvoegvelden
-foreach (string fieldName in fieldNames)
-{
-     // Doe iets met de veldnaam
-     Console.WriteLine(fieldName);
-}
-```
-### Veelgestelde vragen
-
-#### Vraag: Wat is samenvoegen in Aspose.Words?
-
-A: Afdruk samenvoegen in Aspose.Words is een proces om gegevens uit een externe bron (bijvoorbeeld een Excel-spreadsheet of database) samen te voegen met een Word-sjabloondocument om gepersonaliseerde documenten te creëren. Dit vergemakkelijkt het geautomatiseerd genereren van brieven, rapporten en andere soortgelijke documenten.
-
-#### Vraag: Hoe krijg ik de lijst met samenvoegvelden die beschikbaar zijn in een Word-document?
-
-A: Om de lijst met samenvoegvelden te krijgen die beschikbaar zijn in een Word-document, kunt u deze stappen volgen:
-
-1. Importeer de klassen Document en MailMergeFieldNames uit de naamruimte Aspose.Words.
-2. Maak een documentinstantie door uw Word-document te laden.
-3. Gebruik de GetMailMergeFieldNames-methode van het Document-object om de lijst met beschikbare samenvoegvelden op te halen.
-
-#### Vraag: Kan ik samenvoegvelden ophalen uit een externe gegevensbron, zoals een Excel-spreadsheet?
-
-A: Ja, u kunt de samenvoegvelden ophalen uit een externe gegevensbron, zoals een Excel-spreadsheet. Hiervoor kunt u de gegevensbindingsfuncties van Aspose.Words gebruiken om een verbinding tot stand te brengen met de gegevensbron en de namen van de beschikbare velden op te halen.
-
-#### Vraag: Is het mogelijk om samenvoegvelden te filteren op basis van bepaalde criteria?
-
-A: Ja, het is mogelijk om samenvoegvelden te filteren op basis van bepaalde criteria. U kunt reguliere expressies of specifieke voorwaarden gebruiken om samenvoegvelden te filteren, zodat u alleen de velden krijgt die aan uw specifieke criteria voldoen.
-
-#### Vraag: Hoe kan ik samenvoegvelden in Aspose.Words manipuleren?
-
-A: Om mail merge-velden in Aspose.Words te manipuleren, kunt u de methoden en eigenschappen gebruiken die door de Document- en MailMergeField-objecten worden geleverd. U kunt samenvoegvelden toevoegen, verwijderen of bijwerken, en waarden die aan velden zijn gekoppeld, ophalen en bewerken.
+### Hoe kan ik een tijdelijke licentie voor Aspose.Words verkrijgen?
+ Een tijdelijke vergunning kunt u aanvragen via[De tijdelijke licentiepagina van Aspose](https://purchase.aspose.com/temporary-license/).

@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
- I detta steg, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.`"YourDocument.docx"` är namnet på dokumentet du vill ändra.
+ I det här steget, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.`"YourDocument.docx"` är namnet på dokumentet du vill ändra.
 
 ## Steg 3: Ange ett lösenord (valfritt)
 
@@ -60,7 +60,7 @@ Du kan ställa in ett valfritt lösenord som är upp till 15 tecken långt.
 Låt oss nu ta bort den skrivskyddade rekommendationen från dokumentet.
 
 ```csharp
-// Ta bort det skrivskyddade alternativet.
+// Ta bort alternativet skrivskyddat.
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 

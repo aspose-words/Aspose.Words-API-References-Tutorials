@@ -16,12 +16,12 @@ url: /ko/net/programming-with-shapes/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [그룹 모양 추가](./add-group-shape/) | .NET용 Aspose.Words를 사용하여 Word 문서에 여러 도형이 포함된 그룹 도형을 추가하는 방법을 알아보세요. |
-| [모양 삽입](./insert-shape/) | .NET용 Aspose.Words를 사용하여 Word 문서에 도형을 삽입하는 방법을 알아보세요. |
-| [가로 세로 비율이 잠겼습니다.](./aspect-ratio-locked/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 도형의 가로 세로 비율을 잠그거나 잠금 해제하는 방법을 알아보세요. |
-| [셀의 레이아웃](./layout-in-cell/) | .NET용 Aspose.Words를 사용하여 Word 문서의 표 셀 내에서 모양을 레이아웃하는 방법을 알아보세요. |
-| [잘린 모서리 추가](./add-corners-snipped/) | .NET용 Aspose.Words를 사용하여 Word 문서에 모서리가 잘린 모양을 추가하는 방법을 알아보세요. |
-| [실제 모양 경계 포인트 가져오기](./get-actual-shape-bounds-points/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 포인트(측정 단위)로 모양의 실제 경계를 검색하는 방법을 알아보세요. |
-| [수직 앵커](./vertical-anchor/) | .NET용 Aspose.Words의 수직 앵커 기능을 사용하여 문서 내에서 모양을 수직으로 배치하는 방법을 알아보세요.|
-| [스마트 아트 모양 감지](./detect-smart-art-shape/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 스마트 아트 모양을 감지하고 그래픽 표현을 식별하는 방법을 알아보세요. |
-| [스마트 아트 드로잉 업데이트](./update-smart-art-drawing/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 스마트 아트 그림을 업데이트하는 방법을 알아보세요. |
+| [그룹 모양 추가](./add-group-shape/) | 이 포괄적인 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 그룹 모양을 추가하는 방법을 알아보세요. |
+| [모양 삽입](./insert-shape/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 도형을 삽입하고 조작하는 방법을 알아보세요. |
+| [가로 세로 비율이 잠겼습니다.](./aspect-ratio-locked/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 도형의 가로 세로 비율을 잠그는 방법을 알아보세요. 이미지와 모양의 균형을 유지하려면 이 단계별 가이드를 따르세요. |
+| [셀의 레이아웃](./layout-in-cell/) | 이 포괄적인 가이드를 통해 .NET용 Aspose.Words를 사용하여 셀에서 레이아웃을 설정하는 방법을 알아보세요. Word 문서를 사용자 정의하려는 개발자에게 적합합니다. |
+| [잘린 모서리 추가](./add-corners-snipped/) | .NET용 Aspose.Words를 사용하여 Word 문서에 모서리 잘린 모양을 추가하는 방법을 알아보세요. 이 단계별 가이드를 통해 문서를 쉽게 향상할 수 있습니다. |
+| [실제 모양 경계 포인트 가져오기](./get-actual-shape-bounds-points/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 실제 모양 경계 지점을 얻는 방법을 알아보세요. 이 상세한 가이드를 통해 정확한 모양 조작을 배우십시오. |
+| [수직 앵커](./vertical-anchor/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 텍스트 상자의 수직 앵커 위치를 설정하는 방법을 알아보세요. 쉬운 단계별 가이드가 포함되어 있습니다.|
+| [스마트 아트 모양 감지](./detect-smart-art-shape/) | 이 포괄적인 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 SmartArt 모양을 감지하는 방법을 알아보세요. 문서 작업 흐름을 자동화하는 데 적합합니다. |
+| [스마트 아트 드로잉 업데이트](./update-smart-art-drawing/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 스마트 아트 그림을 업데이트하는 방법을 알아보세요. 시각적 자료가 항상 정확한지 확인하세요. |

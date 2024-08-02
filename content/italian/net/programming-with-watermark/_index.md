@@ -12,4 +12,4 @@ Elaborazione parole con filigrana è una risorsa completa che ti guida attravers
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Aggiungi filigrana di testo con opzioni specifiche](./add-text-watermark-with-specific-options/) | Scopri come aggiungere una filigrana di testo con opzioni specifiche utilizzando Aspose.Words per .NET. Guida passo passo. |
+| [Aggiungi filigrana di testo con opzioni specifiche](./add-text-watermark-with-specific-options/) | Scopri come aggiungere una filigrana di testo con opzioni specifiche ai tuoi documenti Word utilizzando Aspose.Words per .NET. Personalizza facilmente carattere, dimensione, colore e layout. |

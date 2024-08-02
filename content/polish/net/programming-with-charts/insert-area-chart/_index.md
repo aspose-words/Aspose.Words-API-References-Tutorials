@@ -9,7 +9,7 @@ url: /pl/net/programming-with-charts/insert-area-chart/
 ---
 ## Wstęp
 
-Witamy w tym przewodniku krok po kroku dotyczącym wstawiania wykresu warstwowego do dokumentu programu Word za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten samouczek przeprowadzi Cię przez wszystko, co musisz wiedzieć, aby tworzyć wspaniałe i pouczające wykresy warstwowe w dokumentach programu Word. Omówimy wymagania wstępne, pokażemy, jak zaimportować niezbędne przestrzenie nazw i przeprowadzimy Cię przez każdy etap procesu, korzystając z jasnych i łatwych do wykonania instrukcji.
+Witamy w tym przewodniku krok po kroku dotyczącym wstawiania wykresu warstwowego do dokumentu programu Word za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten samouczek przeprowadzi Cię przez wszystko, co musisz wiedzieć, aby tworzyć wspaniałe i pouczające wykresy warstwowe w dokumentach programu Word. Omówimy wymagania wstępne, pokażemy, jak zaimportować niezbędne przestrzenie nazw i przeprowadzimy Cię przez każdy etap procesu za pomocą jasnych, łatwych do wykonania instrukcji.
 
 ## Warunki wstępne
 

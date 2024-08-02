@@ -99,7 +99,7 @@ Maalesef şifreyi unutursanız belgeye erişemezsiniz. Şifrelerinizi güvende t
 ### Mevcut bir belgenin şifresini değiştirebilir miyim?
 Evet, aynı adımları kullanarak mevcut bir belgeyi yükleyebilir ve yeni bir şifreyle kaydedebilirsiniz.
 
-### Parolayı bir belgeden kaldırmak mümkün mü?
+### Parolayı bir belgeden kaldırmak mümkün müdür?
 Evet, belgeyi şifre belirtmeden kaydederek mevcut şifre korumasını kaldırabilirsiniz.
 
 ### Aspose.Words for .NET tarafından sağlanan şifreleme ne kadar güvenli?

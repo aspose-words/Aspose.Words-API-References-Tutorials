@@ -92,7 +92,7 @@ doc.save("output.docx")
 
 ## Slutsats
 
-den här guiden har vi utforskat processen för att förbättra visuellt innehåll med textrutor i Word-dokument med Aspose.Words Python API. Textrutor ger ett flexibelt sätt att organisera, formatera och utforma innehåll i dina dokument, vilket gör dem mer engagerande och visuellt tilltalande.
+I den här guiden har vi utforskat processen för att förbättra visuellt innehåll med textrutor i Word-dokument med Aspose.Words Python API. Textrutor ger ett flexibelt sätt att organisera, formatera och utforma innehåll i dina dokument, vilket gör dem mer engagerande och visuellt tilltalande.
 
 ## Vanliga frågor
 
@@ -106,7 +106,7 @@ den här guiden har vi utforskat processen för att förbättra visuellt innehå
 
 ### Hur lägger jag till ramar i en textruta?
 
- Du kan lägga till ramar i en textruta med hjälp av`textbox.border` egendom och anpassa dess utseende.
+ Du kan lägga till ramar i en textruta med hjälp av`textbox.border`egendom och anpassa dess utseende.
 
 ### Kan jag bädda in hyperlänkar i en textruta?
 

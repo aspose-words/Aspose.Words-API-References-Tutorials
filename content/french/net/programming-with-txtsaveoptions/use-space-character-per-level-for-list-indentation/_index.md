@@ -2,118 +2,106 @@
 title: Utiliser le caractère espace par niveau pour l'indentation de la liste
 linktitle: Utiliser le caractère espace par niveau pour l'indentation de la liste
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape sur l'utilisation d'un caractère d'espace par niveau pour l'indentation de liste dans Aspose.Words pour .NET. Créez facilement des documents Word bien structurés.
+description: Découvrez comment créer des listes à plusieurs niveaux avec une indentation de caractères d’espace dans Aspose.Words pour .NET. Guide étape par étape pour un formatage précis des documents.
 type: docs
 weight: 10
 url: /fr/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET est une bibliothèque puissante permettant de créer, modifier et manipuler des documents Word dans une application C#. Parmi les fonctionnalités offertes par Aspose.Words, il y a la possibilité d'utiliser un caractère espace par niveau pour l'indentation des listes. Dans ce guide, nous allons vous montrer comment utiliser le code source C# d'Aspose.Words for .NET pour implémenter cette fonctionnalité.
+## Introduction
 
-## Comprendre la bibliothèque Aspose.Words
+Lorsqu'il s'agit de formater un document, en particulier lorsqu'on travaille avec des listes, la précision est essentielle. Dans les scénarios où vous devez créer des documents avec différents niveaux d'indentation, Aspose.Words for .NET propose des outils puissants pour gérer cette tâche. Une fonctionnalité particulière qui peut s'avérer utile consiste à configurer l'indentation de liste dans les fichiers texte. Ce guide vous expliquera comment utiliser les caractères d'espacement pour l'indentation de liste, garantissant ainsi que votre document conserve la structure et la lisibilité souhaitées.
 
-Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque populaire qui rend le traitement de mots avec des documents Word facile et efficace. Il offre un large éventail de fonctionnalités pour créer, modifier et manipuler des documents Word, notamment la gestion des listes et de l'indentation.
+## Conditions préalables
 
-## Création du document et ajout de contenu
+Avant de plonger dans le didacticiel, voici ce dont vous aurez besoin :
 
-La première étape consiste à créer un nouveau document et à y ajouter du contenu. Utilisez la classe Document pour créer une nouvelle instance de document. Utilisez ensuite la classe DocumentBuilder pour ajouter du texte et créer une liste avec plusieurs niveaux d'indentation. Voici un exemple :
+-  Aspose.Words pour .NET : assurez-vous que la bibliothèque Aspose.Words est installée. Si vous ne l'avez pas encore, vous pouvez le télécharger depuis le[Site Aspose](https://releases.aspose.com/words/net/).
+- Visual Studio : Un environnement de développement pour écrire et tester votre code.
+- Compréhension de base de C# : La familiarité avec C# et le framework .NET vous aidera à suivre en douceur.
+
+## Importer des espaces de noms
+
+Pour commencer à travailler avec Aspose.Words, vous devrez importer les espaces de noms nécessaires. Voici comment vous pouvez les inclure dans votre projet :
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Décomposons le processus de création d'un document avec une liste à plusieurs niveaux et spécifiant les caractères d'espace pour l'indentation. 
+
+## Étape 1 : Configurez votre document
+
+ Tout d'abord, vous devrez créer un nouveau document et initialiser le`DocumentBuilder` objet. Cet objet vous permettra d'ajouter facilement du contenu et de le formater selon vos besoins.
+
+```csharp
+// Chemin d'accès à votre répertoire de documents
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// Créer le document et ajouter du contenu
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ Dans cet extrait, remplacez`"YOUR DOCUMENTS DIRECTORY"` avec le chemin réel où vous souhaitez enregistrer votre document.
+
+## Étape 2 : Créer une liste avec plusieurs niveaux d'indentation
+
+ Avec le`DocumentBuilder` Par exemple, vous pouvez désormais créer une liste avec différents niveaux d'indentation. Utilisez le`ListFormat` propriété pour appliquer la numérotation et mettre en retrait les éléments de la liste selon les besoins.
+
+```csharp
 // Créer une liste avec trois niveaux d'indentation
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Dans cet exemple, nous créons un nouveau document et utilisons DocumentBuilder pour ajouter du texte et créer une liste avec trois niveaux d'indentation. Nous avons ajouté trois éléments à la liste, chaque élément étant en retrait d'un niveau supplémentaire.
+ Dans cette étape,`ApplyNumberDefault` définit le format de la liste, et`ListIndent` est utilisé pour augmenter le niveau d’indentation pour chaque élément de liste suivant.
 
-## Utilisation d'un caractère d'espace par niveau pour l'indentation de la liste
+## Étape 3 : Configurer le caractère d'espace pour l'indentation
 
-Une fois le contenu ajouté, on peut désormais configurer l'indentation des listes en utilisant un espace par niveau. Pour cela nous utilisons la classe TxtSaveOptions et nous définissons la propriété ListIndentation.Count sur le nombre de niveaux d'indentation et la propriété ListIndentation.Character sur le caractère espace à utiliser. Voici comment:
+Maintenant que votre liste est configurée, l'étape suivante consiste à configurer la façon dont l'indentation de la liste est gérée lors de l'enregistrement du document dans un fichier texte. Vous utiliserez`TxtSaveOptions` pour spécifier que les espaces doivent être utilisés pour l'indentation.
 
 ```csharp
+// Utilisez un caractère d'espace par niveau pour l'indentation de la liste
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+ Ici,`ListIndentation.Count` spécifie le nombre de caractères d'espace par niveau d'indentation, et`ListIndentation.Character` définit le caractère réel utilisé pour l'indentation.
+
+## Étape 4 : Enregistrez le document avec les options spécifiées
+
+Enfin, enregistrez votre document en utilisant les options configurées. Cela appliquera les paramètres d'indentation et enregistrera votre fichier au format souhaité.
+
+```csharp
+// Enregistrez le document avec les options spécifiées
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-Dans cet exemple, nous créons une instance de TxtSaveOptions et définissons la propriété ListIndentation.Count sur 3 pour indiquer qu'il existe trois niveaux d'indentation dans la liste. Nous définissons également la propriété ListIndentation.Character sur le caractère espace (' ') que nous souhaitons utiliser pour l'indentation.
-
-### Exemple de code source pour la fonctionnalité « Utiliser un caractère d'espace par niveau pour l'indentation de liste » avec Aspose.Words pour .NET
-
-Voici l'exemple complet de code source pour la fonctionnalité « Utiliser un caractère d'espace par niveau pour l'indentation de liste » avec Aspose.Words pour .NET :
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             // Chemin d'accès à votre répertoire de documents
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             // Créer le document et ajouter du contenu
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             // Créer une liste avec trois niveaux d'indentation
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             // Utilisez un caractère d'espace par niveau pour l'indentation de la liste
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             // Enregistrez le document avec les options spécifiées
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+ Cet extrait de code enregistre le document dans le chemin spécifié dans`dataDir` avec le nom du fichier`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. Le fichier enregistré aura la liste formatée en fonction de vos paramètres d'indentation.
 
 ## Conclusion
 
-Dans ce guide, nous avons expliqué comment utiliser Aspose.Words for .NET pour appliquer la fonctionnalité « Utiliser un caractère d'espace par niveau pour l'indentation de liste ». En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement configurer l'indentation des listes dans vos documents Word en utilisant un caractère d'espace par niveau. Aspose.Words offre une flexibilité et une puissance considérables pour le traitement de texte avec le formatage du texte et la gestion de listes, vous permettant de créer des documents bien structurés dans votre application C#.
+En suivant ces étapes, vous avez réussi à créer un document avec une indentation de liste à plusieurs niveaux en utilisant des caractères d'espace pour le formatage. Cette approche garantit que vos listes sont bien structurées et faciles à lire, même lorsqu'elles sont enregistrées sous forme de fichiers texte. Aspose.Words for .NET fournit des outils robustes pour la manipulation de documents, et la maîtrise de ces fonctionnalités peut améliorer considérablement vos flux de travail de traitement de documents.
 
-### Questions fréquemment posées
+## FAQ
 
-#### Q : Qu'est-ce qu'Aspose.Words pour .NET ?
-Aspose.Words for .NET est une puissante bibliothèque permettant de créer, modifier et manipuler des documents Word dans une application C#. Il offre de nombreuses fonctionnalités pour le traitement de texte avec des documents Word, notamment la possibilité d'utiliser un espace par niveau pour l'indentation des listes.
+### Puis-je utiliser des caractères différents pour l’indentation de liste en plus des espaces ?
+ Oui, vous pouvez spécifier différents caractères pour l'indentation de la liste en définissant l'option`Character` propriété dans`TxtSaveOptions`.
 
-#### Q : Comment puis-je utiliser un espace par niveau pour l'indentation de liste avec Aspose.Words pour .NET ?
-Vous pouvez utiliser un espace par niveau pour l'indentation de liste en suivant ces étapes :
+### Comment puis-je appliquer des puces au lieu de chiffres dans les listes ?
+ Utiliser`ListFormat.ApplyBulletDefault()` au lieu de`ApplyNumberDefault()` pour créer une liste à puces.
 
- Créez un nouveau document à l'aide du`Document` classe.
+### Puis-je ajuster dynamiquement le nombre d’espaces pour l’indentation ?
+ Oui, vous pouvez ajuster le`ListIndentation.Count` propriété pour définir le nombre d’espaces en fonction de vos besoins.
 
- Utilisez le`DocumentBuilder`classe pour ajouter du contenu au document et créer une liste avec plusieurs niveaux d’indentation.
+### Est-il possible de modifier l'indentation de la liste après la création du document ?
+Oui, vous pouvez modifier les paramètres de formatage et d'indentation de la liste à tout moment avant d'enregistrer le document.
 
- Une fois que vous avez ajouté le contenu et configuré l'indentation de la liste, utilisez le`TxtSaveOptions` classe et définir le`ListIndentation.Count` propriété au nombre de niveaux d'indentation et à la`ListIndentation.Character` propriété sur l'espace (`' '`) utiliser.
-
- Enregistrez le document avec les options spécifiées à l'aide du`Save` méthode du`Document` classe.
-
-#### Q : Aspose.Words prend-il en charge d'autres caractères pour l'indentation de liste ?
-Oui, Aspose.Words prend en charge d'autres caractères pour l'indentation des listes. Vous pouvez utiliser des caractères autres que des espaces, tels que des tabulations (`'\t'` ) ou d'autres caractères spéciaux, en définissant le`ListIndentation.Character` propriété au caractère recherché.
-
-#### Q : Est-il possible de personnaliser le nombre d'espaces par niveau pour l'indentation de la liste ?
- Oui, vous pouvez personnaliser le nombre d'espaces par niveau pour l'indentation de liste en modifiant la valeur de`ListIndentation.Count` propriété dans le`TxtSaveOptions` classe. Vous pouvez spécifier le nombre d'espaces souhaité pour chaque niveau d'indentation.
-
-#### Q : Quelles autres fonctionnalités Aspose.Words propose-t-il pour la gestion des listes ?
-Aspose.Words offre de nombreuses fonctionnalités pour gérer les listes dans les documents Word. Vous pouvez créer des listes numérotées ou à puces, définir des niveaux d'indentation, personnaliser le style des listes, ajouter des éléments de liste, etc.
+### Quels autres formats de documents prennent en charge les paramètres d'indentation de liste ?
+Outre les fichiers texte, les paramètres d'indentation de liste peuvent être appliqués à d'autres formats tels que DOCX, PDF et HTML lors de l'utilisation d'Aspose.Words.

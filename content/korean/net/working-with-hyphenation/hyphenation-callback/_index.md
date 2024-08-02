@@ -12,7 +12,7 @@ url: /ko/net/working-with-hyphenation/hyphenation-callback/
 
 안녕하세요! 특히 하이픈이 필요한 언어를 처리할 때 텍스트 형식의 복잡성 때문에 얽힌 적이 있습니까? 당신은 혼자가 아닙니다. 하이픈 넣기는 적절한 텍스트 레이아웃에 중요하지만 약간 골치 아픈 일이 될 수 있습니다. 하지만 그거 알아? .NET용 Aspose.Words가 여러분을 도와드립니다. 이 강력한 라이브러리를 사용하면 콜백 메커니즘을 통한 하이픈 처리를 포함하여 텍스트 서식을 원활하게 관리할 수 있습니다. 흥미가 있으신가요? .NET용 Aspose.Words를 사용하여 하이픈 넣기 콜백을 구현하는 방법의 핵심을 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 직접 다루기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
@@ -20,7 +20,7 @@ url: /ko/net/working-with-hyphenation/hyphenation-callback/
 2. IDE: Visual Studio와 같은 개발 환경입니다.
 3. C# 기본 지식: C# 및 .NET 프레임워크에 대한 이해.
 4. 하이픈 사전: 사용하려는 언어에 대한 하이픈 사전입니다.
-5.  Aspose 라이선스: 유효한 Aspose 라이선스입니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 당신이 하나도 없다면.
+5.  Aspose 라이선스: 유효한 Aspose 라이선스입니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 당신이 하나도 없다면.
 
 ## 네임스페이스 가져오기
 

@@ -108,7 +108,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，使開發人員能夠�
 是的，透過使用`Auto`對齊選項，您可以根據每個列中的第一段進行不同的對齊方式。
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
-是的，Aspose.Words for .NET 需要完整功能的授權。您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
+是的，Aspose.Words for .NET 需要完整功能的授權。你可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
 
 ### 是否可以使用 Aspose.Words 將其他文件元素匯出到 Markdown？
 是的，Aspose.Words 支援將標題、清單和圖片等各種元素匯出為 Markdown 格式。

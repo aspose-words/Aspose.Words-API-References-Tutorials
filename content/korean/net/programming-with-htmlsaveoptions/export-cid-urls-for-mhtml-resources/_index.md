@@ -11,7 +11,7 @@ url: /ko/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resource
 
 .NET용 Aspose.Words를 사용하여 MHTML 리소스에 대한 Cid URL을 내보내는 기술을 마스터할 준비가 되셨습니까? 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 포괄적인 가이드는 모든 단계를 안내합니다. 이 기사를 마치면 Word 문서에서 MHTML 리소스를 효율적으로 처리하는 방법을 명확하게 이해하게 될 것입니다. 뛰어들어보자!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 

@@ -1,6 +1,6 @@
 ---
 title: การกำหนดค่าตัวเลือกการโหลด RTF ใน Aspose.Words สำหรับ Java
-linktitle: การกำหนดค่าตัวเลือกโหลด RTF
+linktitle: การกำหนดค่าตัวเลือกการโหลด RTF
 second_title: Aspose.Words Java การประมวลผลเอกสาร API
 description: การกำหนดค่าตัวเลือกการโหลด RTF ใน Aspose.Words สำหรับ Java เรียนรู้วิธีจดจำข้อความ UTF-8 ในเอกสาร RTF คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
 type: docs

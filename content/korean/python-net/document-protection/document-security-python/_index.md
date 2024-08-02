@@ -63,7 +63,7 @@ if __name__ == "__main__":
     loaded_document = load_and_read_document()
 ```
 
-## 6. Aspose.Words를 통한 문서 보호
+## 6. Aspose.Words를 사용한 문서 보호
 
 Word 문서를 보호하려면 비밀번호를 설정하고 특정 작업을 제한해야 합니다. Aspose.Words는 선택할 수 있는 다양한 보호 옵션을 제공합니다:
 

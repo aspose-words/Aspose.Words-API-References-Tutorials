@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/remove-content/remove-table-of-contents/
 ---
-## Távolítsa el a tartalomjegyzéket a Word-dokumentumból az Aspose.Words for .NET használatával
+## Bevezetés
 
 Eleged van abból, hogy nem kívánt tartalomjegyzékkel (TOC) kell foglalkoznod a Word dokumentumaiban? Mindannyian ott voltunk – néha egyszerűen nincs szükség a TOC-ra. Szerencsédre az Aspose.Words for .NET megkönnyíti a TOC programozott eltávolítását. Ebben az oktatóanyagban lépésről lépésre végigvezetem a folyamaton, így pillanatok alatt elsajátíthatja. Egyből merüljünk bele!
 
@@ -41,7 +41,7 @@ Mielőtt manipulálhatnánk a dokumentumát, meg kell határoznunk, hol találha
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` dokumentummappa elérési útjával. Itt található a Word fájl.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentummappa elérési útjával. Itt található a Word fájl.
 
 ## 2. lépés: Töltse be a dokumentumot
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Íme, mi történik:
 - `doc.Range.Fields`: Ezzel eléri a dokumentum összes mezőjét.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: Ez kiszűri a mezőket, hogy csak azokat találja meg, amelyek tartalomjegyzékek.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Ez kiszűri a mezőket, hogy csak azokat találja meg, amelyek tartalomjegyzékek.
 - `.ToList().ForEach(f => f.Remove())`: Ez a szűrt mezőket listává alakítja, és mindegyiket eltávolítja.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
@@ -83,22 +83,22 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## GYIK
 
-### 1. Mi az Aspose.Words for .NET?
+### Mi az Aspose.Words for .NET?
 
 Az Aspose.Words for .NET egy robusztus .NET-könyvtár dokumentumkezeléshez, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását és konvertálását.
 
-### 2. Használhatom ingyenesen az Aspose.Words-t?
+### Használhatom ingyenesen az Aspose.Words-t?
 
  Igen, az Aspose.Words használható a[ingyenes próbaverzió](https://releases.aspose.com/) vagy kap a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
 
-### 3. Eltávolítható-e más mezők az Aspose.Words használatával?
+### Lehetséges-e eltávolítani más mezőket az Aspose.Words használatával?
 
 Teljesen! Bármely mezőt eltávolíthat, ha megadja a típusát a szűrőfeltételben.
 
-### 4. Szükségem van a Visual Studiora az Aspose.Words használatához?
+### Szükségem van a Visual Studiora az Aspose.Words használatához?
 
 Bár a Visual Studio a fejlesztés megkönnyítése érdekében erősen ajánlott, bármilyen IDE-t használhat, amely támogatja a .NET-et.
 
-### 5. Hol találhatok további információt az Aspose.Words-ről?
+### Hol találhatok további információt az Aspose.Words-ről?
 
  Részletesebb dokumentációért keresse fel a[Aspose.Words .NET API dokumentációhoz](https://reference.aspose.com/words/net/).

@@ -11,7 +11,7 @@ url: /ko/net/programming-with-charts/tick-multi-line-label-alignment/
 
 안녕하세요, 기술 매니아 여러분! .NET용 Aspose.Words를 사용하여 차트에서 여러 줄 레이블 정렬을 선택하는 방법이 궁금하여 머리를 긁적인 적이 있습니까? 지금 당장 고개를 끄덕이고 계시다면 잘 찾아오셨습니다! 이 포괄적인 가이드에서는 이 프로세스의 모든 구석구석을 안내해 드립니다. 필수 구성 요소 설정부터 코딩의 핵심에 대한 심층 분석까지 모든 내용을 다룹니다. 그럼, 커피 한 잔을 마시고 편안히 앉아 크래킹을 시작해 보세요!
 
-## 전제조건
+## 전제 조건
 
 여러 줄의 라벨 정렬 세계로 뛰어들기 전에 먼저 모든 내용이 일렬로 정렬되어 있는지 확인하세요. 필요한 것은 다음과 같습니다.
 
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### .NET용 Aspose.Words를 무료로 사용할 수 있나요?
 
- Aspose는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 제품을 평가하는 데 사용할 수 있는 정보입니다. 전체 액세스를 위해서는 라이센스를 구입해야 합니다.
+ Aspose는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 제품을 평가하는 데 사용할 수 있는 정보입니다. 전체 액세스를 위해서는 라이센스를 구매해야 합니다.
 
 ### .NET용 Aspose.Words에 대한 지원은 어디서 받을 수 있나요?
 

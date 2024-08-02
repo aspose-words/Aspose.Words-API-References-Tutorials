@@ -129,7 +129,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 
 ## 結論
 
-おめでとうございます! Aspose.Words for .NET を使用して、Word 文書に表を直接挿入できました。このプロセスを使用すると、複雑な表をプログラムで作成できるため、文書の自動化タスクがはるかに簡単になります。レポート、請求書、またはその他の種類の文書を生成する場合、表の操作方法を理解することは重要なスキルです。
+おめでとうございます。Aspose.Words for .NET を使用して、Word 文書に表を直接挿入できました。このプロセスを使用すると、複雑な表をプログラムで作成できるため、文書の自動化タスクがはるかに簡単になります。レポート、請求書、またはその他の種類の文書を生成する場合、表の操作方法を理解することは重要なスキルです。
 
 ## よくある質問
 
@@ -140,7 +140,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
 はい、リクエストできます[無料トライアル](https://releases.aspose.com/)購入前にライブラリを評価します。
 
 ### Aspose.Words for .NET を購入するにはどうすればよいですか?
- Aspose.Words for .NETは以下から購入できます。[購入ページ](https://purchase.aspose.com/buy).
+Aspose.Words for .NETは以下から購入できます。[購入ページ](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET のドキュメントはどこにありますか?
 ドキュメントは入手可能です[ここ](https://reference.aspose.com/words/net/).

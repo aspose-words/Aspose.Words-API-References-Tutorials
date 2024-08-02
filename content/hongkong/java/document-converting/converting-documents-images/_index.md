@@ -58,7 +58,7 @@ public class DocumentToImageConverter {
 
 ## 結論
 
-使用 Aspose.Words for Java，可以輕鬆地將 Java 中的文件轉換為映像。它提供了一種強大而有效的方法來處理文件轉換。您可以將此功能整合到您的 Java 應用程式中，以滿足各種文件處理需求。
+使用 Aspose.Words for Java，可以輕鬆將 Java 中的文件轉換為映像。它提供了一種強大而有效的方法來處理文件轉換。您可以將此功能整合到您的 Java 應用程式中，以滿足各種文件處理需求。
 
 ## 常見問題解答
 

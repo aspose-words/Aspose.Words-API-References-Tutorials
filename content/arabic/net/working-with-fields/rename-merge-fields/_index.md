@@ -2,63 +2,42 @@
 title: إعادة تسمية حقول الدمج
 linktitle: إعادة تسمية حقول الدمج
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: ستتعلم في هذا البرنامج التعليمي كيفية إعادة تسمية حقول الدمج في مستند باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إعادة تسمية حقول الدمج في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا التفصيلي خطوة بخطوة للتعامل مع مستنداتك بسهولة.
 type: docs
 weight: 10
 url: /ar/net/working-with-fields/rename-merge-fields/
 ---
+## مقدمة
 
-فيما يلي دليل خطوة بخطوة لشرح كود مصدر C# أدناه والذي يستخدم ميزة إعادة تسمية حقل الدمج في Aspose.Words for .NET. اتبع كل خطوة بعناية للحصول على النتائج المرجوة.
+يمكن أن تكون إعادة تسمية حقول الدمج في مستندات Word مهمة شاقة إذا لم تكن على دراية بالأدوات والتقنيات الصحيحة. لكن لا تقلق، لقد قمت بتغطيتك! في هذا الدليل، سنتعمق في عملية إعادة تسمية حقول الدمج باستخدام Aspose.Words for .NET، وهي مكتبة قوية تجعل معالجة المستندات أمرًا سهلاً. سواء كنت مطورًا متمرسًا أو بدأت للتو، سيرشدك هذا البرنامج التعليمي خطوة بخطوة إلى كل ما تحتاج إلى معرفته.
 
-## الخطوة 1: إعداد دليل المستندات
+## المتطلبات الأساسية
 
-في الكود المقدم، يجب عليك تحديد دليل المستندات الخاصة بك. استبدل القيمة "YOUR DOCUMENT DIRECTORY" بالمسار المناسب لدليل المستندات الخاص بك.
+قبل أن نتعمق في التفاصيل الجوهرية، دعونا نتأكد من أن لديك كل ما تحتاجه:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words لـ .NET: ستحتاج إلى تثبيت Aspose.Words لـ .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+- بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة مع .NET.
+- المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيكون مفيدًا.
 
-## الخطوة 2: إنشاء المستند وإدراج حقول الدمج
+## استيراد مساحات الأسماء
 
-نبدأ بإنشاء مستند جديد واستخدام ملف`DocumentBuilder` لإدراج حقول الدمج.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
-builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
-```
-
-## الخطوة 3: إعادة تسمية حقول الدمج
-
-نقوم بالتكرار خلال كل حقل في نطاق المستند، وإذا كان حقل دمج، فإننا نعيد تسمية الحقل عن طريق إضافة "_"إعادة تسمية" لاحقة.
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. سيضمن هذا أن الكود الخاص بنا يمكنه الوصول إلى جميع الفئات والطرق التي نحتاجها.
 
 ```csharp
-foreach(Field f in doc.Range.Fields)
-{
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
-}
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## الخطوة 4: حفظ الوثيقة
+حسنًا، الآن بعد أن انتهينا من الأساسيات، دعنا ننتقل إلى الجزء الممتع! اتبع هذه الخطوات لإعادة تسمية حقول الدمج في مستندات Word الخاصة بك.
 
- وأخيراً نسمي`Save()` طريقة حفظ الوثيقة المعدلة.
+## الخطوة 1: إنشاء المستند وإدراج حقول الدمج
 
-```csharp
-doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
-```
-
-### مثال على التعليمات البرمجية المصدر لإعادة تسمية حقول الدمج باستخدام Aspose.Words لـ .NET
+للبدء، نحتاج إلى إنشاء مستند جديد وإدراج بعض حقول الدمج. وهذا سيكون بمثابة نقطة البداية لدينا.
 
 ```csharp
 // المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // قم بإنشاء المستند وأدخل حقول الدمج.
 Document doc = new Document();
@@ -66,42 +45,62 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
+```
 
+ هنا، نقوم بإنشاء مستند جديد واستخدام`DocumentBuilder` فئة لإدراج حقلين دمج:`MyMergeField1`و`MyMergeField2`.
+
+## الخطوة 2: التكرار عبر الحقول وإعادة تسميتها
+
+الآن، لنكتب الكود للعثور على حقول الدمج وإعادة تسميتها. سنقوم بمراجعة كافة الحقول الموجودة في المستند، والتحقق مما إذا كانت حقول دمج، ثم إعادة تسميتها.
+
+```csharp
 // إعادة تسمية حقول الدمج.
-foreach(Field f in doc.Range.Fields)
+foreach (Field f in doc.Range.Fields)
 {
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
+    if (f.Type == FieldType.FieldMergeField)
+    {
+        FieldMergeField mergeField = (FieldMergeField)f;
+        mergeField.FieldName = mergeField.FieldName + "_Renamed";
+        mergeField.Update();
+    }
 }
+```
 
+ في هذا المقتطف، نحن نستخدم`foreach` حلقة للتكرار عبر كافة الحقول في المستند. لكل حقل، نتحقق مما إذا كان حقل دمج باستخدام`f.Type == FieldType.FieldMergeField` . فإذا كان كذلك فإننا نلقيه إليه`FieldMergeField` وإلحاق`_Renamed` إلى اسمها.
+
+## الخطوة 3: احفظ المستند
+
+أخيرًا، لنحفظ مستندنا بحقول الدمج المعاد تسميتها.
+
+```csharp
 // احفظ المستند.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-اتبع هذه الخطوات لإعادة تسمية حقول الدمج في مستندك باستخدام Aspose.Words for .NET.
+ يقوم سطر التعليمات البرمجية هذا بحفظ المستند في الدليل المحدد بالاسم`WorkingWithFields.RenameMergeFields.docx`.
 
-### الأسئلة الشائعة
+## خاتمة
 
-#### س: كيف يمكنني إعادة تسمية الحقول المدمجة في مستند Word باستخدام Aspose.Words لـ .NET؟
+وهناك لديك! تعد إعادة تسمية حقول الدمج في مستندات Word باستخدام Aspose.Words لـ .NET أمرًا سهلاً بمجرد معرفة الخطوات. باتباع هذا الدليل، يمكنك بسهولة التعامل مع مستندات Word وتخصيصها لتناسب احتياجاتك. سواء كنت تقوم بإنشاء تقارير، أو إنشاء رسائل مخصصة، أو إدارة البيانات، فإن هذه التقنية ستكون مفيدة لك.
 
- ج: لإعادة تسمية الحقول المدمجة في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك تكرار الحقول الموجودة في المستند باستخدام الأمر`FieldMergingArgs` الصف واستخدام`FieldMergingArgs.FieldName` طريقة إعادة تسمية الحقل
+## الأسئلة الشائعة
 
-#### س: هل من الممكن إعادة تسمية بعض الحقول المدمجة فقط في مستند Word باستخدام Aspose.Words لـ .NET؟
+### هل يمكنني إعادة تسمية حقول دمج متعددة مرة واحدة؟
 
-ج: نعم، من الممكن إعادة تسمية بعض الحقول المدمجة فقط في مستند Word باستخدام Aspose.Words لـ .NET. يمكنك تصفية الحقول التي تريد إعادة تسميتها باستخدام معايير محددة، مثل اسم الحقل أو الخصائص الأخرى ذات الصلة. ثم يمكنك إعادة تسمية الحقول المقابلة باستخدام`FieldMergingArgs.FieldName` طريقة.
+قطعاً! يوضح التعليمة البرمجية المقدمة بالفعل كيفية التكرار وإعادة تسمية كافة حقول الدمج في المستند.
 
-#### س: كيف يمكنني التحقق من إعادة تسمية الحقل المدمج بنجاح في مستند Word باستخدام Aspose.Words for .NET؟
+### ماذا يحدث إذا كان حقل الدمج غير موجود؟
 
- ج: للتحقق من إعادة تسمية الحقل المدمج بنجاح في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`FieldMergedArgs` الصف والوصول إلى`FieldMergedArgs.IsMerged` الخاصية لتحديد ما إذا كان قد تمت إعادة تسمية الحقل بالنقر فوق.
+إذا لم يكن هناك حقل دمج، فسيتم تخطي الكود ببساطة فوقه. لن يتم طرح أي أخطاء.
 
-#### س: ما هي النتائج المترتبة على إعادة تسمية حقل مدمج في مستند Word باستخدام Aspose.Words لـ .NET؟
+### هل يمكنني تغيير البادئة بدلاً من إلحاق الاسم؟
 
-ج: عند إعادة تسمية حقل مدمج في مستند Word باستخدام Aspose.Words لـ .NET، فإنه يغير اسم الحقل في المستند، مما قد يؤثر على وظائف أو عمليات أخرى تعتمد على اسم الحقل. تأكد من مراعاة هذه العواقب المحتملة قبل إعادة تسمية الحقول المدمجة.
+ نعم يمكنك تعديل`mergeField.FieldName` المهمة لتعيينها على أي قيمة تريدها.
 
-#### س: هل من الممكن استعادة الاسم الأصلي للحقل المدمج بعد إعادة تسميته باستخدام Aspose.Words for .NET؟
+### هل Aspose.Words لـ .NET مجاني؟
 
-ج: نعم، من الممكن استعادة الاسم الأصلي للحقل المدمج بعد إعادة تسميته باستخدام Aspose.Words for .NET. يمكنك تخزين الاسم الأصلي للحقل في متغير أو قائمة، ثم استخدام تلك المعلومات لاستعادة الاسم الأصلي إذا لزم الأمر.
+ يعد Aspose.Words for .NET منتجًا تجاريًا، ولكن يمكنك استخدام[تجربة مجانية](https://releases.aspose.com/) لتقييمها.
+
+### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words لـ .NET؟
+
+ يمكنك العثور على وثائق شاملة[هنا](https://reference.aspose.com/words/net/).

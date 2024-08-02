@@ -37,13 +37,13 @@ Most, hogy megvannak az előfeltételeink, bontsuk le a folyamatot falatnyi lép
 
 ## 1. lépés: A Dokumentumkönyvtár beállítása
 
-Először is meg kell adnunk a könyvtárat, ahol a dokumentumainkat tároljuk. Ez olyan, mintha a színpadot állítaná fel a nagy előadás előtt.
+Először is meg kell adnunk a könyvtárat, ahol a dokumentumainkat tároljuk. Ez olyan, mint a színpad beállítása a nagy előadás előtt.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a könyvtár elérési útjával. Itt élnek és lélegznek a dokumentumai.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a könyvtár elérési útjával. Itt élnek és lélegzik a dokumentumai.
 
 ## 2. lépés: Töltse be a fő dokumentumot
 

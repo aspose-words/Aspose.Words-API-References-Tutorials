@@ -24,7 +24,7 @@ Zanim zaczniemy, upewnij się, że masz zainstalowany zestaw Java Development Ki
 
 Aby użyć Aspose.Words for Java w swoim projekcie, musisz pobrać bibliotekę z Aspose.Releases (https://releases.aspose.com/words/java/). Po pobraniu pakietu dołącz plik JAR Aspose.Words do ścieżki klas projektu Java.
 
-## 4. Tworzenie nowego dokumentu Word
+## 4. Tworzenie nowego dokumentu programu Word
 
 Aby utworzyć nowy dokument programu Word, wykonaj następujące kroki:
 

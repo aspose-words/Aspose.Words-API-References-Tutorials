@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-这`InsertChart`方法将图表类型、宽度和高度作为参数。在本例中，我们插入一个宽度为 432、高度为 252 的折线图。
+这`InsertChart`方法将图表类型、宽度和高度作为参数。在本例中，我们插入了一个宽度为 432、高度为 252 的折线图。
 
 ## 步骤 3：访问图表系列
 

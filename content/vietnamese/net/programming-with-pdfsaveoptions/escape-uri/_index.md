@@ -9,7 +9,7 @@ url: /vi/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ tự hỏi cách xử lý URI khi lưu tài liệu Word dưới dạng PDF bằng Aspose.Words cho .NET chưa? Bạn đang ở đúng nơi! Hôm nay, chúng ta sẽ đi sâu vào tìm hiểu các URI thoát trong tài liệu PDF để đảm bảo chúng hoạt động chính xác khi tài liệu của bạn được chuyển đổi. Hãy cùng nhau bắt tay vào cuộc hành trình này, từng bước một, đảm bảo bạn nắm bắt được từng khái niệm trong suốt chặng đường.
+Này! Bạn đã bao giờ tự hỏi cách xử lý URI khi lưu tài liệu Word dưới dạng PDF bằng Aspose.Words cho .NET chưa? Bạn đang ở đúng nơi! Hôm nay, chúng ta sẽ đi sâu vào tìm hiểu các URI thoát trong tài liệu PDF để đảm bảo chúng hoạt động chính xác khi tài liệu của bạn được chuyển đổi. Hãy cùng nhau bắt tay vào cuộc hành trình này, từng bước một, đảm bảo bạn nắm bắt được từng khái niệm trên đường đi.
 
 ## Điều kiện tiên quyết
 

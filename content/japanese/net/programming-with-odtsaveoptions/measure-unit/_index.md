@@ -9,7 +9,7 @@ url: /ja/net/programming-with-odtsaveoptions/measure-unit/
 ---
 ## 導入
 
-Word 文書を別の形式に変換しなければならなかったのに、レイアウトに特定の測定単位が必要になったことはありませんか? インチ、センチメートル、ポイントのいずれを扱う場合でも、変換プロセス中に文書の整合性が維持されるようにすることが重要です。このチュートリアルでは、Aspose.Words for .NET で測定単位機能を構成する方法について説明します。この強力な機能により、ODT (Open Document Text) 形式に変換するときに、文書の書式設定が正確に保持されます。
+Word 文書を別の形式に変換しなければならなかったが、レイアウトに特定の測定単位が必要だったことはありませんか? インチ、センチメートル、ポイントのいずれを扱う場合でも、変換プロセス中に文書の整合性が維持されるようにすることが重要です。このチュートリアルでは、Aspose.Words for .NET で測定単位機能を構成する方法について説明します。この強力な機能により、ODT (Open Document Text) 形式に変換するときに、文書の書式設定が正確に保持されます。
 
 ## 前提条件
 
@@ -38,7 +38,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ディレクトリへの実際のパスを入力します。これにより、コードが Word 文書の場所を認識できるようになります。
+交換する`"YOUR DOCUMENTS DIRECTORY"`ディレクトリへの実際のパスを使用します。これにより、コードが Word 文書の場所を認識できるようになります。
 
 ## ステップ2: Word文書を読み込む
 
@@ -64,7 +64,7 @@ OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUn
 
 ## ステップ4: ドキュメントをODTに変換する
 
-最後に、Word文書をODT形式に変換します。`OdtSaveOptions`.
+最後に、設定された方法を使用してWord文書をODT形式に変換します。`OdtSaveOptions`.
 
 ```csharp
 //ドキュメントをODTに変換する

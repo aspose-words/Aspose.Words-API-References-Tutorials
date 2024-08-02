@@ -11,7 +11,7 @@ url: /ko/net/join-and-append-documents/keep-source-together/
 
 오늘날의 디지털 시대에는 Word 문서를 프로그래밍 방식으로 조작하는 것이 다양한 산업 분야에서 필수적입니다. Aspose.Words for .NET은 개발자가 문서 처리 작업을 효율적으로 자동화할 수 있도록 지원합니다. 이 포괄적인 가이드는 Aspose.Words for .NET을 사용하여 소스 형식을 유지하면서 문서를 병합하는 과정을 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 .NET용 Aspose.Words를 사용하여 문서 병합을 시작하기 전에 다음 사항이 있는지 확인하세요.
 

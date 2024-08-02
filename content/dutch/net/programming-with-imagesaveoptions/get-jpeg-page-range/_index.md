@@ -9,7 +9,7 @@ url: /nl/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
 ## Invoering
 
-Het converteren van Word-documenten naar afbeeldingen kan ongelooflijk handig zijn, of u nu miniaturen maakt, documenten online bekijkt of inhoud deelt in een toegankelijker formaat. Met Aspose.Words voor .NET kunt u eenvoudig specifieke pagina's van uw Word-documenten converteren naar JPEG-indeling, terwijl u verschillende instellingen aanpast, zoals helderheid, contrast en resolutie. Laten we eens kijken hoe u dit stap voor stap kunt bereiken!
+Het converteren van Word-documenten naar afbeeldingen kan ongelooflijk handig zijn, of u nu miniaturen maakt, online een voorbeeld van documenten bekijkt of inhoud deelt in een toegankelijker formaat. Met Aspose.Words voor .NET kunt u eenvoudig specifieke pagina's van uw Word-documenten naar JPEG-indeling converteren, terwijl u verschillende instellingen zoals helderheid, contrast en resolutie aanpast. Laten we eens kijken hoe u dit stap voor stap kunt bereiken!
 
 ## Vereisten
 

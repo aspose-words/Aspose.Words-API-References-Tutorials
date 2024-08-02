@@ -65,7 +65,7 @@ Aprenda a guardar documentos en formato ODT usando Aspose.Words para Java. Garan
 ### [Guardar documentos en formato OOXML en Aspose.Words para Java](./saving-documents-as-ooxml-format/)
 Aprenda a guardar documentos en formato OOXML con Aspose.Words para Java. Proteja, optimice y personalice sus archivos sin esfuerzo. 
 ### [Guardar documentos en formato PCL en Aspose.Words para Java](./saving-documents-as-pcl-format/)
-Aprenda a guardar documentos en formato PCL usando Aspose.Words para Java. Guía paso a paso y ejemplos de código para una conversión eficiente de documentos.
+Aprenda a guardar documentos en formato PCL usando Aspose.Words para Java. Guía paso a paso y ejemplos de código para una conversión de documentos eficiente.
 ### [Guardar documentos como PDF en Aspose.Words para Java](./saving-documents-as-pdf/)
 Aprenda cómo guardar documentos de Word como PDF usando Aspose.Words para Java. Personalice fuentes, propiedades y calidad de imagen. Una guía completa para la conversión de PDF.
 ### [Guardar documentos en formato RTF en Aspose.Words para Java](./saving-documents-as-rtf-format/)

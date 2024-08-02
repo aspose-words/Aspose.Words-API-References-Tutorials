@@ -18,7 +18,7 @@ Innan vi dyker in i de avancerade teknikerna, se till att du har följande föru
 
 1.  Python-installation: Se till att Python är installerat på ditt system. Du kan ladda ner den från[här](https://www.python.org/downloads/).
 
-2.  Aspose.Words för Python: Du måste ha Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/).
+2. Aspose.Words för Python: Du måste ha Aspose.Words för Python installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/).
 
 3. Dokumentförberedelse: Ha ett Word-dokument redo som du vill utföra sök- och ersättningsoperationer på.
 

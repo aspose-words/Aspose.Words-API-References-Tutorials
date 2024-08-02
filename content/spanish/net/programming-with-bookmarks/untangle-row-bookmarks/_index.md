@@ -19,7 +19,7 @@ Antes de sumergirte, necesitarás algunas cosas:
 
 1.  Aspose.Words para .NET: esta biblioteca comercial proporciona funcionalidades para trabajar con documentos de Word mediante programación. 2. Puedes descargar una prueba gratuita desde[enlace de descarga](https://releases.aspose.com/words/net/) o comprar una licencia de[comprar](https://purchase.aspose.com/buy).
 3. Entorno de desarrollo AC#: Visual Studio o cualquier otro IDE de C# funcionará perfectamente.
-4. Un documento de Word con marcadores de fila: usaremos un documento de muestra llamado "Marcadores de columna de tabla.docx" con fines de demostración.
+4. Un documento de Word con marcadores de fila: utilizaremos un documento de muestra llamado "Marcadores de columna de tabla.docx" con fines de demostración.
 
 ## Importar espacios de nombres
 

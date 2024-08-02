@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pt/net/remove-content/remove-table-of-contents/
 ---
-## Remova o índice do documento do Word usando Aspose.Words for .NET
+## Introdução
 
 Você está cansado de lidar com um Índice (TOC) indesejado em seus documentos do Word? Todos nós já passamos por isso – às vezes o TOC simplesmente não é necessário. Para sua sorte, o Aspose.Words for .NET facilita a remoção de um sumário programaticamente. Neste tutorial, vou guiá-lo passo a passo pelo processo, para que você possa dominá-lo rapidamente. Vamos mergulhar de cabeça!
 
@@ -41,7 +41,7 @@ Antes de podermos manipular o seu documento, precisamos definir onde ele está l
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho para sua pasta de documentos. É aqui que reside o seu arquivo do Word.
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho para sua pasta de documentos. É aqui que reside o seu arquivo do Word.
 
 ## Etapa 2: carregue o documento
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Aqui está o que está acontecendo:
 - `doc.Range.Fields`: acessa todos os campos do documento.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: isso filtra os campos para localizar apenas aqueles que são sumários.
+- `.Where(f => f.Type == FieldType.FieldTOC)`isso filtra os campos para localizar apenas aqueles que são TOCs.
 - `.ToList().ForEach(f => f.Remove())`: converte os campos filtrados em uma lista e remove cada um deles.
 
 ## Etapa 4: salve o documento modificado
@@ -79,26 +79,26 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusão
 
-aí está! Remover um sumário de um documento do Word usando Aspose.Words for .NET é simples, uma vez dividido nestas etapas simples. Esta poderosa biblioteca não apenas ajuda a remover índices, mas também pode lidar com uma infinidade de outras manipulações de documentos. Então, vá em frente e experimente!
+E aí está! Remover um sumário de um documento do Word usando Aspose.Words for .NET é simples, uma vez dividido nestas etapas simples. Esta poderosa biblioteca não apenas ajuda a remover índices, mas também pode lidar com uma infinidade de outras manipulações de documentos. Então, vá em frente e experimente!
 
 ## Perguntas frequentes
 
-### 1. O que é Aspose.Words para .NET?
+### O que é Aspose.Words para .NET?
 
 Aspose.Words for .NET é uma biblioteca .NET robusta para manipulação de documentos, permitindo aos desenvolvedores criar, modificar e converter documentos do Word programaticamente.
 
-### 2. Posso usar o Aspose.Words gratuitamente?
+### Posso usar o Aspose.Words gratuitamente?
 
  Sim, você pode usar Aspose.Words com um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
-### 3. É possível remover outros campos usando Aspose.Words?
+### É possível remover outros campos usando Aspose.Words?
 
 Absolutamente! Você pode remover qualquer campo especificando seu tipo na condição de filtro.
 
-### 4. Preciso do Visual Studio para usar o Aspose.Words?
+### Preciso do Visual Studio para usar o Aspose.Words?
 
-Embora o Visual Studio seja altamente recomendado para facilitar o desenvolvimento, você pode usar qualquer IDE que suporte .NET.
+Embora o Visual Studio seja altamente recomendado para facilitar o desenvolvimento, você pode usar qualquer IDE que ofereça suporte a .NET.
 
-### 5. Onde posso encontrar mais informações sobre Aspose.Words?
+### Onde posso encontrar mais informações sobre Aspose.Words?
 
  Para documentação mais detalhada, visite o[Documentação da API Aspose.Words para .NET](https://reference.aspose.com/words/net/).

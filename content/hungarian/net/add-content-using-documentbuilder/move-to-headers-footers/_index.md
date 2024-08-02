@@ -1,8 +1,8 @@
 ---
-title: Ugrás a fejlécek láblécére a Word dokumentumban
-linktitle: Ugrás a fejlécek láblécére a Word dokumentumban
+title: Mozgás a fejlécek láblécéhez a Word dokumentumban
+linktitle: Mozgás a fejlécek láblécéhez a Word dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Lépésről lépésre szóló útmutatónkból megtudhatja, hogyan léphet át fejlécekre és láblécekre egy Word-dokumentumban az Aspose.Words for .NET használatával. Fejlessze dokumentumkészítési készségeit.
+description: Lépésről lépésre szóló útmutatónkból megtudhatja, hogyan léphet át fejlécekre és láblécekre egy Word-dokumentumban az Aspose.Words for .NET használatával. Javítsa dokumentumkészítési készségeit.
 type: docs
 weight: 10
 url: /hu/net/add-content-using-documentbuilder/move-to-headers-footers/

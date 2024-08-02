@@ -2,107 +2,132 @@
 title: Utwórz prostą tabelę
 linktitle: Utwórz prostą tabelę
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak utworzyć prostą tabelę w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak utworzyć prostą tabelę w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego obszernego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/create-simple-table/
 ---
+## Wstęp
 
-W tym samouczku nauczymy się, jak utworzyć prostą tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo tworzyć niestandardowe tabele w dokumentach programu Word.
+Programowa praca z dokumentami może być nieco zniechęcająca, jeśli jesteś w niej nowy. Ale nie martw się, jestem tutaj, aby poprowadzić Cię przez proces tworzenia prostej tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten samouczek przeprowadzi Cię krok po kroku przez wszystko, co musisz wiedzieć.
 
-## Krok 1: Konfiguracja projektu
-1. Uruchom program Visual Studio i utwórz nowy projekt C#.
-2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
+## Warunki wstępne
 
-## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
-Aby rozpocząć budowanie tabeli, musimy utworzyć nowy dokument i zainicjować kreator dokumentów. Wykonaj następujące kroki:
+Zanim zagłębimy się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
+
+1.  Aspose.Words dla .NET: Musisz pobrać i zainstalować Aspose.Words dla .NET. Możesz to znaleźć[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: działająca instalacja programu Visual Studio lub dowolnego innego IDE obsługującego programowanie .NET.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie korzystna, ponieważ będziemy go używać w naszym przykładzie.
+
+## Importuj przestrzenie nazw
+
+Zanim zaczniemy pisać kod, musimy zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw obejmują klasy i metody, które pomogą nam manipulować dokumentami Worda.
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//Utwórz dokument i zainicjuj generator dokumentów
+Teraz, gdy już wszystko skonfigurowaliśmy, przeanalizujmy proces tworzenia prostej tabeli w dokumencie programu Word.
+
+## Krok 1: Skonfiguruj katalog dokumentów
+
+Najpierw musimy zdefiniować ścieżkę do katalogu, w którym zostanie zapisany nasz dokument. Ten krok jest kluczowy, ponieważ pomaga nam właściwie uporządkować nasze pliki.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Krok 2: Zainicjuj dokument i narzędzie DocumentBuilder
+
+ Następnie inicjujemy nową instancję pliku`Document` klasa. Ta instancja reprezentuje nasz dokument Word. Tworzymy również instancję`DocumentBuilder` class, która pomoże nam zbudować treść dokumentu.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Pamiętaj, aby zastąpić „TWOJ KATALOG DOKUMENTÓW” rzeczywistą ścieżką do katalogu dokumentów.
+## Krok 3: Rozpocznij budowanie stołu
 
-## Krok 3: Budowanie tablicy
-Następnie zbudujemy tabelę, korzystając z metod dostarczonych przez narzędzie do tworzenia dokumentów. Użyj następującego kodu:
+ Aby rozpocząć budowę naszego stołu, wywołujemy metodę`StartTable` metoda na`DocumentBuilder`instancja. Ta metoda inicjuje nową tabelę w dokumencie.
 
 ```csharp
-// Rozpocznij budowę tablicy
-builder. StartTable();
-
-// Budowa pierwszej komórki pierwszego rzędu
-builder. InsertCell();
-builder.Write("Contents of cell 1 of row 1.");
-
-// Budowa drugiej celi pierwszego rzędu
-builder. InsertCell();
-builder.Write("Contents of cell 2 of row 1.");
-
-// Wywołaj następującą metodę, aby zakończyć pierwszą linię i rozpocząć nową
-builder. EndRow();
-
-// Budowa pierwszej komórki drugiego rzędu
-builder. InsertCell();
-builder.Write("Contents of cell 1 of row 2.");
-
-// Budowa drugiej celi drugiego rzędu
-builder. InsertCell();
-builder.Write("Contents of cell 2 of row 2.");
-
-// Wywołaj następną metodę, aby zakończyć drugą linię
-builder. EndRow();
-
-// Wskazanie, że konstrukcja stołu została ukończona
-builder. EndTable();
+builder.StartTable();
 ```
 
- Tutaj używamy narzędzia do tworzenia dokumentów, aby krok po kroku zbudować tabelę. Zaczynamy od dzwonienia`StartTable()` aby zainicjować tabelę, a następnie użyj`InsertCell()` aby wstawić komórki i`Write()` aby dodać zawartość do każdej komórki. Używamy również`EndRow()` aby zakończyć wiersz i rozpocząć nowy. Wreszcie dzwonimy`EndTable()` aby wskazać, że konstrukcja stołu została ukończona.
+## Krok 4: Wstaw pierwszą komórkę i dodaj zawartość
 
-## Krok 4: Zapisz dokument
-Na koniec musimy oszczędzać
-
-  dokument z utworzoną tabelą. Użyj następującego kodu:
+ Teraz wstawiamy pierwszą komórkę do tabeli i dodajemy do niej trochę treści. Używamy`InsertCell` metoda wstawienia nowej komórki i`Write` metoda dodawania tekstu do komórki.
 
 ```csharp
-// Zapisz dokument
+builder.InsertCell();
+builder.Write("Row 1, Cell 1 Content.");
+```
+
+## Krok 5: Włóż drugą komórkę i dodaj zawartość
+
+Podobnie wstawiamy drugą komórkę w pierwszym wierszu i dodajemy do niej treść.
+
+```csharp
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content.");
+```
+
+## Krok 6: Zakończ pierwszy rząd
+
+ Aby wskazać, że zakończyliśmy budowanie pierwszego wiersza, wywołujemy funkcję`EndRow` metoda. Ta metoda rozpoczyna również nowy wiersz.
+
+```csharp
+builder.EndRow();
+```
+
+## Krok 7: Wstaw komórki drugiego rzędu
+
+Następnie budujemy komórki dla drugiego rzędu, tak jak to zrobiliśmy w pierwszym rzędzie.
+
+```csharp
+builder.InsertCell();
+builder.Write("Row 2, Cell 1 Content.");
+
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content.");
+
+builder.EndRow();
+```
+
+## Krok 8: Zakończ budowanie stołu
+
+ Po wstawieniu wszystkich wierszy i komórek wywołujemy funkcję`EndTable` metoda sygnalizująca, że zakończyliśmy budowę stołu.
+
+```csharp
+builder.EndTable();
+```
+
+## Krok 9: Zapisz dokument
+
+ Na koniec zapisujemy dokument w określonym katalogu za pomocą pliku`Save` metoda.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
-Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjściowego.
-
-### Przykładowy kod źródłowy narzędzia Utwórz prostą tabelę przy użyciu Aspose.Words dla platformy .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Zacznij budować stół.
-	builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 1 Content.");
-	// Zbuduj drugą komórkę.
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content.");
-	// Wywołaj następującą metodę, aby zakończyć wiersz i rozpocząć nowy wiersz.
-	builder.EndRow();
-	// Zbuduj pierwszą komórkę drugiego rzędu.
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 1 Content");
-	// Zbuduj drugą komórkę.
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content.");
-	builder.EndRow();
-	// Sygnał, że zakończyliśmy budowę stołu.
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
-```
-
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak utworzyć prostą tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz programowo tworzyć niestandardowe tabele w dokumentach programu Word. Ta funkcja umożliwia formatowanie i organizowanie danych w uporządkowany i przejrzysty sposób.
+
+masz to! Właśnie utworzyłeś prostą tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Dzieląc proces na łatwe do wykonania etapy, ułatwiliśmy jego zrozumienie i wdrożenie. Teraz możesz eksperymentować z różnymi strukturami i zawartością tabel, aby dopasować je do swoich potrzeb. Miłego kodowania!
+
+## Często zadawane pytania
+
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do manipulacji dokumentami, która umożliwia programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word.
+
+### Czy mogę używać Aspose.Words dla .NET z innymi językami programowania?
+Tak, Aspose.Words dla .NET obsługuje różne języki programowania działające w środowisku .NET, w tym VB.NET i C#.
+
+### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/).
+
+### Jak mogę uzyskać wsparcie dla Aspose.Words dla .NET?
+ Możesz uzyskać wsparcie, odwiedzając witrynę Aspose.Words[forum wsparcia](https://forum.aspose.com/c/words/8).
+
+### Gdzie mogę znaleźć bardziej szczegółową dokumentację Aspose.Words dla .NET?
+ Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).

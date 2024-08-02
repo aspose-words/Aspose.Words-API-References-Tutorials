@@ -65,7 +65,7 @@ Deze stap zorgt ervoor dat het document met de inline-afbeelding wordt opgeslage
 
 ## Conclusie
 
-Concluderend: het integreren van inline afbeeldingen in Word-documenten met Aspose.Words voor .NET is een eenvoudig proces dat de visualisatie en functionaliteit van documenten verbetert. Door de hierboven beschreven stappen te volgen, kunt u afbeeldingen in uw documenten efficiënt programmatisch manipuleren, waarbij u gebruik maakt van de kracht van Aspose.Words.
+Kortom: het integreren van inline afbeeldingen in Word-documenten met Aspose.Words voor .NET is een eenvoudig proces dat de visualisatie en functionaliteit van documenten verbetert. Door de hierboven beschreven stappen te volgen, kunt u afbeeldingen in uw documenten efficiënt programmatisch manipuleren, waarbij u gebruik maakt van de kracht van Aspose.Words.
 
 ## Veelgestelde vragen
 

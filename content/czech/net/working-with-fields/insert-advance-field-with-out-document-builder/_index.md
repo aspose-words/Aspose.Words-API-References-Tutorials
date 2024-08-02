@@ -2,104 +2,150 @@
 title: Vložit pokročilé pole bez Tvůrce dokumentů
 linktitle: Vložit pokročilé pole bez Tvůrce dokumentů
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit pokročilé pole do dokumentů aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak vložit pole zálohy bez použití DocumentBuilder v Aspose.Words for .NET. Postupujte podle této příručky a zdokonalte své dovednosti v oblasti zpracování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
+## Úvod
 
-Zde je podrobný návod k vysvětlení zdrojového kódu C# níže, který používá funkci "Pokročilé vkládání polí bez DocumentBuilder" Aspose.Words for .NET. Ujistěte se, že pečlivě dodržujete každý krok, abyste dosáhli požadovaných výsledků.
+Chcete vylepšit své manipulace s dokumenty Word pomocí Aspose.Words pro .NET? Tak to jste na správném místě! V tomto tutoriálu vás provedeme procesem vložení pole zálohy do dokumentu aplikace Word bez použití třídy DocumentBuilder. Na konci této příručky budete dobře rozumět tomu, jak toho dosáhnout pomocí Aspose.Words for .NET. Pojďme se tedy ponořit a učinit vaše zpracování dokumentů ještě výkonnějším a všestrannějším!
 
-## Krok 1: Nastavení adresáře dokumentů
+## Předpoklady
 
-V poskytnutém kódu musíte zadat adresář vašich dokumentů. Nahraďte hodnotu „VÁŠ ADRESÁŘ DOKUMENTŮ“ příslušnou cestou k adresáři vašich dokumentů.
+Než začneme, ujistěte se, že máte následující:
+
+-  Aspose.Words for .NET Library: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+- Visual Studio: Bude stačit jakákoli nejnovější verze.
+- Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
+-  Licence Aspose.Words: Získejte dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/) pokud žádný nemáte.
+
+## Importovat jmenné prostory
+
+Než se ponoříte do kódu, ujistěte se, že máte do projektu importovány potřebné jmenné prostory:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+## Krok 1: Nastavte svůj projekt
+
+Za prvé, pojďme nastavit náš projekt Visual Studio.
+
+### Vytvořit nový projekt
+
+1. Otevřete Visual Studio.
+2. Vyberte Vytvořit nový projekt.
+3. Vyberte Console App (.NET Core) a klikněte na Další.
+4. Pojmenujte svůj projekt a klikněte na Vytvořit.
+
+### Nainstalujte Aspose.Words for .NET
+
+1. Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
+2. Vyberte Spravovat balíčky NuGet.
+3. Vyhledejte Aspose.Words a nainstalujte nejnovější verzi.
+
+## Krok 2: Inicializujte dokument a odstavec
+
+Nyní, když je náš projekt nastaven, musíme inicializovat nový dokument a odstavec, kam vložíme pole zálohy.
+
+### Inicializujte dokument
+
+1.  Ve vašem`Program.cs` soubor, začněte vytvořením nového dokumentu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
 ```
 
-## Krok 2: Vytvoření dokumentu a odstavce
+Tím se nastaví nový prázdný dokument.
 
-Začneme vytvořením nového dokumentu a načtením prvního odstavce.
+### Přidejte odstavec
+
+2. Získejte první odstavec v dokumentu:
 
 ```csharp
-Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Krok 3: Vložení rozšířeného pole
+To zajišťuje, že máme odstavec, se kterým můžeme pracovat.
 
- Používáme`AppendField()` metoda pro vložení rozšířeného pole do odstavce.
+## Krok 3: Vložte pole Advance
+
+Nyní vložíme pole zálohy do našeho odstavce.
+
+### Vytvořte pole
+
+1. Připojte k odstavci pole zálohy:
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-Poté nakonfigurujeme různé vlastnosti rozšířeného pole zadáním požadovaných hodnot.
+Tím se v našem odstavci vytvoří nové pole zálohy.
+
+### Nastavte vlastnosti pole
+
+2. Nakonfigurujte vlastnosti pole pro určení odsazení a pozic:
 
 ```csharp
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
+field.DownOffset = "10";
+field.LeftOffset = "10";
+field.RightOffset = "-3.3";
+field.UpOffset = "0";
 field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
+field.VerticalPosition = "100";
 ```
 
- Nakonec zavoláme`Update()` způsob aktualizace pole.
+Tato nastavení upravují polohu textu vzhledem k jeho normální poloze.
+
+## Krok 4: Aktualizujte a uložte dokument
+
+S vloženým a nakonfigurovaným polem je čas dokument aktualizovat a uložit.
+
+### Aktualizujte pole
+
+1. Ujistěte se, že je pole aktualizováno, aby odráželo naše změny:
 
 ```csharp
-field. Update();
+field.Update();
 ```
 
-### Příklad zdrojového kódu pro vložení pokročilého pole bez DocumentBuilder s Aspose.Words for .NET
+Tím zajistíte, že všechny vlastnosti pole jsou použity správně.
+
+### Uložte dokument
+
+2. Uložte dokument do zadaného adresáře:
 
 ```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Vytvoření dokumentu.
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-
-// Vložte pokročilé pole.
-FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
-
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
-field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
-
-field. Update();
-
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-V tomto příkladu jsme vytvořili nový dokument, vložili pokročilé pole bez použití DocumentBuilder, nakonfigurovali různé vlastnosti pole a uložili dokument se zadaným názvem souboru.
+Tím se dokument uloží se zahrnutým polem zálohy.
 
-Tímto končí náš průvodce, jak používat funkci "Vložit pokročilé pole bez DocumentBuilder" s Aspose.Words pro .NET.
+## Závěr
 
-### FAQ
+A tady to máte! Úspěšně jste vložili pole zálohy do dokumentu aplikace Word bez použití třídy DocumentBuilder. Pomocí těchto kroků jste využili sílu Aspose.Words for .NET k programové manipulaci s dokumenty Wordu. Ať už automatizujete generování sestav nebo vytváříte složité šablony dokumentů, tyto znalosti se vám nepochybně budou hodit. Pokračujte v experimentování a zkoumání možností Aspose.Words, abyste posunuli zpracování dokumentů na další úroveň!
 
-#### Otázka: Co je to pokročilé pole v Aspose.Words?
+## FAQ
 
-A: Pole Advance v Aspose.Words je speciální typ pole, které vám umožňuje provádět výpočty, zahrnout podmínky a provádět složité operace v dokumentu aplikace Word. Nabízí velkou flexibilitu pro vytváření dynamických a vlastních polí.
+### Co je pole zálohy v Aspose.Words?
 
-#### Otázka: Jak vložit pokročilé pole do dokumentu aplikace Word bez použití Tvůrce dokumentů v Aspose.Words?
+Pole záloh v Aspose.Words vám umožňuje řídit umístění textu vzhledem k jeho normální poloze a poskytuje přesnou kontrolu nad rozložením textu ve vašich dokumentech.
 
-Odpověď: Chcete-li vložit rozšířené pole do dokumentu aplikace Word bez použití Tvůrce dokumentů v Aspose.Words, můžete postupovat takto:
+### Mohu použít DocumentBuilder s předběžnými poli?
 
-1. Importujte třídu Document a Field z oboru názvů Aspose.Words.Fields.
-2. Vytvořte instanci dokumentu načtením existujícího dokumentu.
-3. Pomocí metody InsertField vložte rozšířené pole zadáním kódu rozšířeného pole.
-4. Uložte dokument.
+Ano, můžete použít DocumentBuilder k vložení pokročilých polí, ale tento tutoriál ukazuje, jak to udělat bez použití DocumentBuilder pro větší flexibilitu a kontrolu.
 
-#### Otázka: Jak získat výsledek pokročilého pole v dokumentu aplikace Word?
+### Kde najdu další příklady použití Aspose.Words?
 
-Odpověď: Chcete-li získat výsledek pokročilého pole v dokumentu aplikace Word, můžete použít vlastnost Výsledek dostupnou ve třídě Pole. Tato vlastnost vrací vypočítaný výsledek pole.
+ Kompletní dokumentaci a příklady naleznete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) strana.
 
-#### Otázka: Mohu upravit vzorec rozšířeného pole po jeho vložení do dokumentu aplikace Word?
+### Je Aspose.Words for .NET zdarma k použití?
 
-Odpověď: Ano, vzorec pokročilého pole můžete upravit po jeho vložení do dokumentu aplikace Word. Můžete to udělat tak, že přistoupíte k vlastnosti FieldCode třídy Field a aktualizujete vzorec úpravou textu vzorce.
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/). Pro plnou funkčnost si budete muset zakoupit licenci.
+
+### Jak získám podporu pro Aspose.Words for .NET?
+
+ Pro podporu můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).

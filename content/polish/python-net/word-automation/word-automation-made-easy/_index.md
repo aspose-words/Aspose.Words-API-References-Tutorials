@@ -10,7 +10,7 @@ url: /pl/python-net/word-automation/word-automation-made-easy/
 
 ## Wstęp
 
-dzisiejszym dynamicznym świecie automatyzacja zadań stała się niezbędna do poprawy wydajności i produktywności. Jednym z takich zadań jest Word Automation, w którym możemy programowo tworzyć, manipulować i przetwarzać dokumenty Word. W tym samouczku krok po kroku odkryjemy, jak łatwo osiągnąć automatyzację programu Word przy użyciu Aspose.Words dla Pythona, potężnej biblioteki zapewniającej szeroki zakres funkcji do przetwarzania tekstu i manipulowania dokumentami.
+dzisiejszym dynamicznym świecie automatyzacja zadań stała się niezbędna do poprawy wydajności i produktywności. Jednym z takich zadań jest Word Automation, w którym możemy programowo tworzyć, manipulować i przetwarzać dokumenty Word. W tym samouczku krok po kroku odkryjemy, jak łatwo osiągnąć automatyzację programu Word przy użyciu Aspose.Words dla Pythona, potężnej biblioteki zapewniającej szeroki zakres funkcji do przetwarzania tekstu i manipulacji dokumentami.
 
 ## Zrozumienie automatyzacji słów
 

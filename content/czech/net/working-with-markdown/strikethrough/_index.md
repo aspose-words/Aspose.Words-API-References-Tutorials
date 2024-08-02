@@ -53,7 +53,7 @@ gratuluji! Nyní jste se naučili, jak použít styl přeškrtnutého textu s As
 
 #### Otázka: Jak mohu přidat přeškrtnutý text do Aspose.Words?
 
- A: Chcete-li přidat přeškrtnutý text do Aspose.Words, můžete použít`Font.StrikeThrough` majetek z`Run`objekt. Tuto vlastnost můžete nastavit na`true` přidat přeškrtnutý text ke konkrétnímu textu. Můžete například použít`run.Font.StrikeThrough=true` přidat přeškrtnutý text do`Run` objekt.
+ A: Chcete-li přidat přeškrtnutý text do Aspose.Words, můžete použít`Font.StrikeThrough` majetek z`Run` objekt. Tuto vlastnost můžete nastavit na`true` přidat přeškrtnutý text ke konkrétnímu textu. Můžete například použít`run.Font.StrikeThrough=true` přidat přeškrtnutý text do`Run` objekt.
 
 #### Otázka: Je možné přidat přeškrtnutý text k několika částem textu ve stejném odstavci?
 

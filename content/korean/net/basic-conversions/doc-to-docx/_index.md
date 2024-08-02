@@ -11,7 +11,7 @@ url: /ko/net/basic-conversions/doc-to-docx/
 
 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 DOC 파일을 DOCX 형식으로 변환하는 방법을 살펴보겠습니다. Aspose.Words는 개발자가 Word 문서를 프로그래밍 방식으로 조작하고 변환할 수 있는 강력한 문서 처리 라이브러리입니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음이 설정되어 있는지 확인하세요.
 - 시스템에 Visual Studio가 설치되어 있습니다.

@@ -68,7 +68,7 @@ if (startPara == null || endPara == null)
 Biztosítanunk kell, hogy a kezdő és a záró bekezdésnek ugyanaz a szülője legyen. Ez egy egyszerű forgatókönyv, hogy a dolgok egyértelműek legyenek.
 
 ```csharp
-// Korlátozzuk magunkat egy ésszerűen egyszerű forgatókönyvre.
+// Korlátozzuk magunkat egy meglehetősen egyszerű forgatókönyvre.
 if (startPara.ParentNode != endPara.ParentNode)
     throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```

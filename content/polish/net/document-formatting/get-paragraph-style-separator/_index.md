@@ -76,7 +76,7 @@ Po załadowaniu dokumentu czas przejrzeć akapity i zidentyfikować separatory s
 
 ## Krok 4: Uruchom swój kod
 
-Teraz uruchommy Twój kod i zobaczmy go w działaniu.
+Teraz uruchommy Twój kod i zobaczmy go w akcji.
 
 1. Kompiluj i uruchamiaj: Zbuduj swój projekt i uruchom go. Jeśli wszystko jest poprawnie skonfigurowane, powinieneś zobaczyć komunikat „Znaleziono separator!” wydrukowane w konsoli dla każdego separatora stylu w dokumencie.
 

@@ -9,7 +9,7 @@ url: /tr/net/programming-with-document-options-and-settings/show-grammatical-and
 ---
 ## giriiş
 
-Her küçük gramer ve yazım hatasını yakalamak için kendinizi hiç yorulmadan belgeleri tararken buldunuz mu? Hiç bitmeyen bir "Waldo Nerede" oyunu oynamak gibi, değil mi? Artık endişelenmeyin! Aspose.Words for .NET ile süreci otomatikleştirebilir, zamandan ve zahmetten tasarruf edebilirsiniz. Bu şık aracı kullanarak Word belgelerinizde dilbilgisi ve yazım hatalarının görüntülenmesini nasıl etkinleştirebileceğinize bakalım.
+Her küçük gramer ve yazım hatasını yakalamak için kendinizi hiç yorulmadan belgeleri tararken buldunuz mu? Hiç bitmeyen bir "Waldo Nerede" oyunu oynamak gibi, değil mi? Artık endişelenmeyin! Aspose.Words for .NET ile süreci otomatikleştirebilir, zamandan ve zahmetten tasarruf edebilirsiniz. Bu şık aracı kullanarak Word belgelerinizde gramer ve yazım hatalarının görüntülenmesini nasıl etkinleştirebileceğinizi ayrıntılı olarak inceleyelim.
 
 ## Önkoşullar
 

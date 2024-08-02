@@ -106,7 +106,7 @@ In diesem Handbuch haben wir den Prozess der Verbesserung visueller Inhalte mit 
 
 ### Wie füge ich einem Textfeld Rahmen hinzu?
 
- Sie können einem Textfeld Rahmen hinzufügen mit dem`textbox.border` -Eigenschaft und Anpassen ihres Erscheinungsbilds.
+ Sie können einem Textfeld Rahmen hinzufügen mit dem`textbox.border`-Eigenschaft und Anpassen ihres Erscheinungsbilds.
 
 ### Kann ich Hyperlinks in ein Textfeld einbetten?
 

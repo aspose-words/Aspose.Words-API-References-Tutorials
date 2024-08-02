@@ -37,7 +37,7 @@ using Aspose.Words.Tables;
 
 ## 步骤 1：设置文档目录
 
-首先，我们需要指定存储文档的目录。这就像大型演出前的准备工作。
+首先，我们需要指定存储文档的目录。这就像在大型演出前设置舞台一样。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

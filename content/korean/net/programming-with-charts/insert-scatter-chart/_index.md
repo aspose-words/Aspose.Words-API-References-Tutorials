@@ -11,7 +11,7 @@ url: /ko/net/programming-with-charts/insert-scatter-chart/
 
 이 튜토리얼에서는 .NET용 Aspose.Words를 활용하여 Word 문서에 분산형 차트를 삽입하는 방법을 배웁니다. 분산형 차트는 두 가지 변수를 기반으로 데이터 포인트를 효과적으로 표시하여 문서를 더욱 매력적이고 유익하게 만들 수 있는 강력한 시각적 도구입니다.
 
-## 전제조건
+## 전제 조건
 
 .NET용 Aspose.Words를 사용하여 분산형 차트를 만들기 전에 다음 전제 조건이 있는지 확인하세요.
 

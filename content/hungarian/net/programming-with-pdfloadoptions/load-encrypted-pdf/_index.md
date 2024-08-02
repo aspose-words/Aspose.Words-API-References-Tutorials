@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 És megvan! A titkosított PDF betöltése az Aspose.Words for .NET segítségével nem csak egyszerű, hanem kifejezetten szórakoztató is. Az alábbi lépések végrehajtásával felszabadította a PDF-titkosítás profi kezelésének lehetőségét. Ne feledje, hogy minden eszköz elsajátításának kulcsa a gyakorlat, ezért ne habozzon kísérletezni és felfedezni.
 
- Ha bármilyen kérdése van, vagy további segítségre van szüksége, a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatói fórum](https://forum.aspose.com/c/words/8) nagyszerű helyek a kezdéshez.
+ Ha bármilyen kérdése van, vagy további segítségre van szüksége, a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatói fórum](https://forum.aspose.com/c/words/8) remek helyek a kezdéshez.
 
 ## GYIK
 
@@ -102,7 +102,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 Igen, ha elmenti a PDF-fájlt a`EncryptionDetails`, létrehozhat titkosítatlan másolatot.
 
 ### Használhatom az Aspose.Words for .NET programot más .NET nyelvekkel?
-Teljesen! Az Aspose.Words for .NET bármely .NET nyelvvel kompatibilis, beleértve a VB.NET-et is.
+Teljesen! Az Aspose.Words for .NET bármely .NET-nyelvvel kompatibilis, beleértve a VB.NET-et is.
 
 ### Mi a teendő, ha elfelejtem a titkosított PDF jelszavát?
 Sajnos a megfelelő jelszó nélkül a PDF nem bontható vissza. Mindig őrizze meg biztonságosan a jelszavait.

@@ -2,20 +2,38 @@
 title: 필드 업데이트 문화 소스 변경
 linktitle: 필드 업데이트 문화 소스 변경
 second_title: Aspose.Words 문서 처리 API
-description: 필드 업데이트 문화 소스 변경, .NET용 Aspose.Words에서 문화 소스를 수정하는 단계별 가이드입니다.
+description: 이 가이드를 통해 Aspose.Words for .NET에서 필드 업데이트 문화 소스를 변경하는 방법을 알아보세요. 다양한 문화에 따른 날짜 형식을 쉽게 제어할 수 있습니다.
 type: docs
 weight: 10
 url: /ko/net/working-with-fields/change-field-update-culture-source/
 ---
+## 소개
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 필드 업데이트 문화 소스를 변경하는 과정을 안내합니다. 문화 소스를 수정하면 필드 업데이트 및 메일 병합 작업 중에 날짜 형식을 제어할 수 있습니다. 이를 달성하는 데 필요한 C# 소스 코드와 단계별 지침을 제공합니다.
+이 튜토리얼에서는 .NET용 Aspose.Words의 세계를 살펴보고 필드 업데이트 문화 소스를 변경하는 방법을 살펴보겠습니다. 날짜 필드가 포함된 Word 문서를 다루고 있으며 이러한 날짜가 다양한 문화권에 따라 형식화되는 방식을 제어해야 하는 경우 이 가이드가 적합합니다. 각 개념을 파악하고 프로젝트에 효과적으로 적용할 수 있도록 프로세스를 단계별로 살펴보겠습니다.
 
-## 전제조건
-시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
-- 시스템에 설치된 .NET 라이브러리용 Aspose.Words.
+## 전제 조건
 
-## 1단계: 문서 및 DocumentBuilder 만들기
-시작하려면 Document 클래스와 DocumentBuilder 객체의 인스턴스를 만듭니다.
+코드를 시작하기 전에 다음 사항이 있는지 확인하세요.
+
+-  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- 개발 환경: 모든 .NET 호환 IDE(예: Visual Studio).
+- C#에 대한 기본 지식: 이 자습서에서는 사용자가 C# 프로그래밍에 대한 기본 지식을 가지고 있다고 가정합니다.
+
+## 네임스페이스 가져오기
+
+먼저 프로젝트에 필요한 네임스페이스를 가져오겠습니다. 이렇게 하면 Aspose.Words에서 제공하는 모든 필수 클래스와 메서드에 액세스할 수 있습니다.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+이제 .NET용 Aspose.Words에서 필드 업데이트 문화권 소스를 변경하는 방법을 이해하는 데 도움이 되도록 예제를 여러 단계로 나누어 보겠습니다.
+
+## 1단계: 문서 초기화
+
+ 첫 번째 단계는 새 인스턴스를 만드는 것입니다.`Document` 수업과`DocumentBuilder`. 이는 Word 문서를 작성하고 조작하기 위한 기초를 설정합니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,80 +41,58 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2단계: 특정 로케일의 콘텐츠 삽입
-다음으로 로캘을 독일어로 설정하고 날짜 형식이 포함된 필드를 삽입합니다.
+## 2단계: 특정 로캘이 포함된 필드 삽입
+
+다음으로 문서에 필드를 삽입해야 합니다. 이 예에서는 두 개의 날짜 필드를 삽입합니다. 문화권이 날짜 형식에 어떤 영향을 미치는지 보여주기 위해 글꼴의 로케일을 독일어(LocaleId = 1031)로 설정하겠습니다.
 
 ```csharp
-builder.Font.LocaleId = 1031;
+builder.Font.LocaleId = 1031; // 독일 사람
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-위 코드에서는 글꼴 로케일을 독일어(로케일 ID 1031)로 설정하고 특정 날짜 형식이 있는 두 개의 필드를 삽입합니다.
+## 3단계: 필드 업데이트 문화 소스 설정
 
-## 3단계: 필드 업데이트 문화 소스 변경
-필드 업데이트 문화권 소스를 변경하려면 FieldOptions 클래스를 사용하세요.
+ 필드를 업데이트할 때 사용되는 문화권을 제어하기 위해`FieldUpdateCultureSource` 의 재산`FieldOptions`수업. 이 속성은 문화권을 필드 코드 또는 문서에서 가져오는지 여부를 결정합니다.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
 
-이 예에서는 필드 업데이트 중에 사용되는 문화권이 필드에서 사용되는 문화권에서 선택되도록 설정합니다.
+## 4단계: 메일 병합 실행
 
-## 4단계: 메일 병합 수행
-메일 병합 작업을 수행하고 "Date2" 필드에 날짜 값을 지정합니다.
+이제 메일 병합을 실행하여 필드를 실제 데이터로 채워야 합니다. 이 예에서는 두 번째 날짜 필드(`Date2`) 2011년 1월 1일까지.
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
-
-이 코드 조각에서는 메일 병합 작업을 실행하고 "Date2" 필드에 DateTime 값을 제공합니다.
 
 ## 5단계: 문서 저장
-Document 클래스의 Save 메서드를 사용하여 수정된 문서를 파일에 저장합니다.
+
+마지막으로 문서를 지정된 디렉터리에 저장합니다. 이 단계는 필드 업데이트 문화권 소스를 변경하는 프로세스를 완료합니다.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
-```
-
-### .NET용 Aspose.Words를 사용하여 필드 업데이트 문화 소스를 변경하기 위한 예제 소스 코드
-다음은 .NET용 Aspose.Words를 사용하여 Word 문서에서 필드 업데이트 문화 소스를 변경하기 위한 전체 소스 코드입니다.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Font.LocaleId = 1031;
-builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
-builder.Write(" - ");
-builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
-
-doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
-
-doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
-
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## 결론
-축하해요! .NET용 Aspose.Words를 사용하여 Word 문서에서 필드 업데이트 문화 소스를 변경하는 방법을 성공적으로 배웠습니다. 단계별 가이드를 따르고 제공된 소스 코드를 활용하면 이제 필드 업데이트 및 메일 병합 작업 중 날짜 형식 지정에 사용되는 문화권을 제어할 수 있습니다. 정확하고 일관된 날짜를 보장하기 위해 요구 사항에 따라 배양 소스를 사용자 정의하십시오.
 
-### FAQ
+그리고 거기에 있습니다! .NET용 Aspose.Words에서 필드 업데이트 문화 소스를 성공적으로 변경했습니다. 다음 단계를 수행하면 Word 문서에 지정된 문화권 설정에 따라 날짜 및 기타 필드 값이 표시되도록 할 수 있습니다. 이는 해외 청중을 위한 문서를 생성할 때 특히 유용할 수 있습니다.
 
-#### Q: Aspose.Words for .NET에서 필드 업데이트 문화 소스를 어떻게 변경할 수 있나요?
+## FAQ
 
- A: .NET용 Aspose.Words에서 필드 업데이트 문화 소스를 변경하려면 다음을 사용할 수 있습니다.`Document.FieldOptions.CultureSource` 속성을 지정하고 해당 값을 다음으로 설정합니다.`FieldCultureSource.FieldCode` 또는`FieldCultureSource.CurrentThread` . 예를 들어 다음을 사용할 수 있습니다.`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` 필드 코드에 정의된 문화권을 사용합니다.
+###  설정하는 목적은 무엇입니까?`LocaleId`?
+ 그만큼`LocaleId` 날짜 및 기타 로케일 구분 데이터의 형식에 영향을 주는 텍스트의 문화권 설정을 지정합니다.
 
-#### Q: Aspose.Words for .NET에서 필드를 업데이트하기 위해 특정 문화권을 어떻게 지정할 수 있습니까?
+### 독일어가 아닌 다른 로캘을 사용할 수 있나요?
+ 예, 설정할 수 있습니다`LocaleId`유효한 로케일 식별자로. 예를 들어 영어(미국)의 경우 1033입니다.
 
- A: .NET용 Aspose.Words에서 필드를 업데이트하기 위한 특정 문화권을 지정하려면 다음을 사용할 수 있습니다.`Document.FieldOptions.FieldUpdateCultureInfo` 속성을 설정하고`CultureInfo` 원하는 문화에 해당하는 개체입니다. 예를 들어 다음을 사용할 수 있습니다.`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` 프랑스어(프랑스) 문화권을 지정합니다.
+###  설정하지 않으면 어떻게 되나요?`FieldUpdateCultureSource` property?
+이 속성이 설정되지 않으면 필드를 업데이트할 때 문서의 기본 문화권 설정이 사용됩니다.
 
-#### Q: .NET용 Aspose.Words에서 자동 필드 업데이트를 비활성화할 수 있습니까?
+### 필드 코드 대신 문서의 문화권을 기반으로 필드를 업데이트할 수 있습니까?
+ 예, 설정할 수 있습니다`FieldUpdateCultureSource` 에게`FieldUpdateCultureSource.Document` 문서의 문화권 설정을 사용합니다.
 
- A: 예, .NET용 Aspose.Words에서 자동 필드 업데이트를 비활성화할 수 있습니다. 당신은 사용할 수 있습니다`Document.FieldOptions.UpdateFields` 속성을 설정하고`false` 필드가 자동 업데이트되는 것을 방지합니다. 이를 통해 필요에 따라 필드 업데이트를 수동으로 제어할 수 있습니다.
-
-#### Q: .NET용 Aspose.Words에서 문서 필드를 수동으로 업데이트하려면 어떻게 해야 합니까?
-
- A: Aspose.Words for .NET에서 문서의 필드를 수동으로 업데이트하려면 다음을 사용할 수 있습니다.`Field.Update` 각 분야에 대해 개별적으로 방법을 제공합니다. 예를 들어 다음을 사용할 수 있습니다.`field.Update()` 특정 필드를 업데이트합니다.
+### 날짜 형식을 다른 패턴으로 지정하려면 어떻게 해야 하나요?
+ 날짜 형식 패턴을 변경할 수 있습니다.`InsertField` 방법을 수정하여`\\@` 스위치 값.

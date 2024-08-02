@@ -18,7 +18,7 @@ Antes de sumergirnos en las técnicas avanzadas, asegúrese de cumplir con los s
 
 1.  Instalación de Python: asegúrese de que Python esté instalado en su sistema. Puedes descargarlo desde[aquí](https://www.python.org/downloads/).
 
-2.  Aspose.Words para Python: Debe tener instalado Aspose.Words para Python. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/python/).
+2. Aspose.Words para Python: Debe tener instalado Aspose.Words para Python. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/python/).
 
 3. Preparación del documento: tenga listo un documento de Word en el que desee realizar operaciones de búsqueda y reemplazo.
 

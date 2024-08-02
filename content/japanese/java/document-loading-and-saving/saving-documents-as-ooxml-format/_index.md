@@ -118,7 +118,7 @@ saveOptions.setCompressionLevel(CompressionLevel.SUPER_FAST);
 doc.save("FastCompressionDoc.docx", saveOptions);
 ```
 
-これらは、Aspose.Words for Java を使用して OOXML 形式でドキュメントを保存するときに使用できる主要なオプションと設定の一部です。必要に応じて、さらに多くのオプションを調べて、ドキュメントの保存プロセスをカスタマイズしてください。
+これらは、Aspose.Words for Java を使用して OOXML 形式でドキュメントを保存するときに使用できる主要なオプションと設定の一部です。必要に応じて、他のオプションも自由に調べて、ドキュメントの保存プロセスをカスタマイズしてください。
 
 ## Aspose.Words for Java でドキュメントを OOXML 形式で保存するための完全なソース コード
 

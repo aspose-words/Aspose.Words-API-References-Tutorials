@@ -55,7 +55,7 @@ Document doc = new Document();
 
 ### เริ่มต้น DocumentBuilder
 
- จากนั้นสร้างอินสแตนซ์ของ`DocumentBuilder` ระดับ. เครื่องมือสร้างนี้จะช่วยให้เราแทรกองค์ประกอบลงในเอกสารของเรา
+ ถัดไป สร้างอินสแตนซ์ของ`DocumentBuilder` ระดับ. เครื่องมือสร้างนี้จะช่วยให้เราแทรกองค์ประกอบลงในเอกสารของเรา
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

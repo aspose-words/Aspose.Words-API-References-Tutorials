@@ -74,7 +74,7 @@ FindReplaceOptions options = new FindReplaceOptions
 footer.Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
 ```
 
-在此步驟中，文字`(C) 2006 Aspose Pty Ltd.`被替換為`Copyright (C) 2020 by Aspose Pty Ltd.`頁腳內。
+在這一步中，文本`(C) 2006 Aspose Pty Ltd.`被替換為`Copyright (C) 2020 by Aspose Pty Ltd.`頁腳內。
 
 ## 第五步：儲存修改後的文檔
 

@@ -11,7 +11,7 @@ url: /ko/net/programming-with-charts/chart-data-label/
 
 동적이고 사용자 정의된 문서 처리 기능으로 .NET 애플리케이션을 개선하고 싶으십니까? .NET용 Aspose.Words가 바로 답이 될 수 있습니다! 이 가이드에서는 Word 문서 생성, 수정 및 변환을 위한 강력한 라이브러리인 Aspose.Words for .NET을 사용하여 차트 데이터 레이블을 사용자 정의하는 방법에 대해 자세히 알아봅니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 튜토리얼에서는 각 단계를 안내하여 이 도구를 효과적으로 활용하는 방법을 이해할 수 있도록 도와드립니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
@@ -19,7 +19,7 @@ url: /ko/net/programming-with-charts/chart-data-label/
 2. .NET Framework: .NET Framework 4.0 이상이 있는지 확인하세요.
 3.  .NET용 Aspose.Words: 다음에서 .NET용 Aspose.Words를 다운로드하고 설치하세요.[다운로드 링크](https://releases.aspose.com/words/net/).
 4. C#에 대한 기본 지식: C# 프로그래밍에 대한 지식이 필수적입니다.
-5.  유효한 라이센스: 취득[임시면허](https://purchase.aspose.com/temporary-license/) 또는 다음 중 하나를 구매하세요.[구매링크](https://purchase.aspose.com/buy).
+5.  유효한 라이센스: 취득[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는 다음 중 하나를 구매하세요.[구매 링크](https://purchase.aspose.com/buy).
 
 ## 네임스페이스 가져오기
 
@@ -126,7 +126,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
  에서 다운로드하여 설치할 수 있습니다.[다운로드 링크](https://releases.aspose.com/words/net/). 제공된 설치 지침을 따르십시오.
 
 ### .NET용 Aspose.Words를 무료로 사용해 볼 수 있나요?
- 예, 다음을 얻을 수 있습니다.[무료 시험판](https://releases.aspose.com/) 또는[임시면허](https://purchase.aspose.com/temporary-license/)제품을 평가합니다.
+ 예, 다음을 얻을 수 있습니다.[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/)제품을 평가합니다.
 
 ### .NET용 Aspose.Words는 .NET Core와 호환됩니까?
 예, .NET용 Aspose.Words는 .NET Core, .NET Standard 및 .NET Framework와 호환됩니다.

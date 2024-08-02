@@ -10,7 +10,7 @@ url: /vi/java/document-rendering/rendering-documents-html/
 
 ## Giới thiệu về kết xuất tài liệu sang HTML
 
-Trong thời đại kỹ thuật số, kết xuất tài liệu là một khía cạnh quan trọng của quản lý nội dung. Cho dù bạn đang tạo báo cáo, tạo nội dung web hay chỉ đơn giản là chuyển đổi tài liệu để xem trực tuyến, việc sử dụng một công cụ đáng tin cậy có thể tạo nên sự khác biệt. Aspose.Words for Java là một API mạnh mẽ cho phép bạn kết xuất tài liệu sang HTML một cách dễ dàng. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách đạt được điều này bằng cách sử dụng Aspose.Words cho Java.
+Trong thời đại kỹ thuật số, kết xuất tài liệu là một khía cạnh quan trọng của quản lý nội dung. Cho dù bạn đang tạo báo cáo, tạo nội dung web hay chỉ đơn giản là chuyển đổi tài liệu để xem trực tuyến, việc sử dụng một công cụ đáng tin cậy có thể tạo ra sự khác biệt. Aspose.Words for Java là một API mạnh mẽ cho phép bạn kết xuất tài liệu sang HTML một cách dễ dàng. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách đạt được điều này bằng cách sử dụng Aspose.Words cho Java.
 
 ## Điều kiện tiên quyết
 

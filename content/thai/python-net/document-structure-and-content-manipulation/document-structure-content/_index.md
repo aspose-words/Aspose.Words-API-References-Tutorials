@@ -204,7 +204,7 @@ pip install aspose-words
 
 ### ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับฟีเจอร์ Aspose.Words Python ได้จากที่ใด
 
-สำหรับข้อมูลที่ครอบคลุมเกี่ยวกับฟีเจอร์ Aspose.Words Python โปรดดูที่[เอกสารประกอบ](https://reference.aspose.com/words/python-net/).
+ สำหรับข้อมูลที่ครอบคลุมเกี่ยวกับฟีเจอร์ Aspose.Words Python โปรดดูที่[เอกสารประกอบ](https://reference.aspose.com/words/python-net/).
 
 ### ฉันจะบันทึกเอกสารในรูปแบบ PDF โดยใช้ Aspose.Words ได้อย่างไร
 

@@ -2,96 +2,121 @@
 title: Podziel tabelę
 linktitle: Podziel tabelę
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak podzielić tabelę w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak dzielić tabele w dokumentach programu Word za pomocą Aspose.Words dla .NET. Nasz przewodnik krok po kroku sprawia, że zarządzanie tabelami jest łatwe i wydajne.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/split-table/
 ---
+## Wstęp
 
-W tym samouczku nauczymy się, jak podzielić tabelę w dokumencie programu Word za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł oddzielić tabelę od określonego wiersza w dokumentach programu Word.
+Czy kiedykolwiek zdarzyło Ci się pracować z dużą tabelą w dokumencie programu Word i żałowałeś, że nie możesz podzielić jej na dwie mniejsze, łatwiejsze w zarządzaniu tabele? Cóż, dzisiaj zagłębimy się w dokładnie to, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy masz do czynienia z rozbudowanymi tabelami danych, czy złożonymi strukturami dokumentów, dzielenie tabel może pomóc w zwiększeniu czytelności i organizacji. Przyjrzyjmy się krok po kroku procesowi podziału tabeli przy użyciu Aspose.Words dla .NET.
 
-## Krok 1: Konfiguracja projektu
-1. Uruchom program Visual Studio i utwórz nowy projekt C#.
-2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
+## Warunki wstępne
 
-## Krok 2: Załaduj dokument
-Aby rozpocząć przetwarzanie tekstu w dokumencie, wykonaj następujące kroki:
+Zanim przejdziemy do samouczka, upewnij się, że posiadasz następujące elementy:
 
-```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że pobrałeś i zainstalowałeś bibliotekę Aspose.Words dla .NET. Można go zdobyć z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: skonfiguruj środowisko programistyczne z obsługą platformy .NET, takie jak Visual Studio.
+3. Przykładowy dokument: Przygotuj dokument programu Word (`Tables.docx`) z co najmniej jedną tabelą, aby zastosować operację podziału.
 
-// Załaduj dokument
-Document doc = new Document(dataDir + "Tables.docx");
-```
+## Importuj przestrzenie nazw
 
-Pamiętaj, aby zastąpić „TWOJ KATALOG DOKUMENTÓW” rzeczywistą ścieżką do katalogu dokumentów i podać poprawną nazwę pliku.
-
-## Krok 3: Podział stołu
-Następnie oddzielimy tabelę od określonego wiersza. Użyj następującego kodu:
+Najpierw zaimportuj niezbędne przestrzenie nazw do swojego projektu. Umożliwia to dostęp do klas i metod udostępnianych przez Aspose.Words.
 
 ```csharp
-// Odzyskaj pierwszy stół
-Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
-
-// Wyznaczenie linii, od której należy podzielić tabelę
-Row row = firstTable.Rows[2];
-
-// Utwórz nowy kontener dla podzielonej tabeli
-Table table = (Table)firstTable.Clone(false);
-
-// Wstaw pojemnik po oryginalnym stole
-firstTable.ParentNode.InsertAfter(table, firstTable);
-
-// Dodaj akapit buforowy, aby zachować odległość między tabelami
-firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
-
-// Przenieś wiersze z tabeli oryginalnej do tabeli podzielonej
-Row currentRow;
-do
-{
-currentRow = firstTable.LastRow;
-table. PrependChild(currentRow);
-} while (currentRow != row);
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Tutaj używamy dokumentu do pobrania pierwszej tabeli z węzła dokumentu. Następnie określamy wiersz, od którego chcemy podzielić tabelę, w tym przykładzie jest to wiersz trzeci (indeks 2). Następnie tworzymy nowy kontener, klonując oryginalną tabelę, a następnie wstawiamy go po oryginalnej tabeli. Dodajemy także akapit buforowy, aby zachować odległość między dwiema tabelami. Następnie przenosimy wiersze z tabeli oryginalnej do tabeli podzielonej za pomocą pętli „do-while”, aż dotrzemy do określonego wiersza.
+## Krok 1: Załaduj dokument
 
-## Krok 4: Zapisanie zmodyfikowanego dokumentu
-Na koniec musimy zapisać plik
-
-  dokument zmodyfikowany za pomocą podzielonej tabeli. Użyj następującego kodu:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
-```
-
-Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjściowego.
-
-### Przykładowy kod źródłowy dla podzielonej tabeli przy użyciu Aspose.Words dla .NET 
+Zacznijmy od załadowania dokumentu zawierającego tabelę, którą chcesz podzielić. Upewnij się, że podałeś poprawną ścieżkę do swojego dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Tables.docx");
-Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
-// Podzielimy tabelę w trzecim rzędzie (włącznie).
+```
+
+## Krok 2: Zidentyfikuj tabelę do podziału
+
+Następnie zidentyfikuj i pobierz tabelę, którą chcesz podzielić. W tym przykładzie będziemy kierować do pierwszej tabeli w dokumencie.
+
+```csharp
+Table firstTable = (Table)doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Krok 3: Wybierz wiersz, w którym chcesz podzielić
+
+Określ wiersz, w którym chcesz podzielić tabelę. Tutaj dzielimy tabelę w trzecim rzędzie (włącznie).
+
+```csharp
 Row row = firstTable.Rows[2];
-// Utwórz nowy kontener dla podzielonej tabeli.
-Table table = (Table) firstTable.Clone(false);
-// Włóż pojemnik po oryginale.
+```
+
+## Krok 4: Utwórz nowy kontener tabeli
+
+Utwórz nowy kontener tabeli, w którym będą przechowywane wiersze, które zostaną przeniesione z oryginalnej tabeli.
+
+```csharp
+Table table = (Table)firstTable.Clone(false);
+```
+
+## Krok 5: Włóż nowy kontener tabeli
+
+Wstaw nowy kontener tabeli zaraz po oryginalnej tabeli w dokumencie.
+
+```csharp
 firstTable.ParentNode.InsertAfter(table, firstTable);
-// Dodaj akapit buforowy, aby tabele pozostały od siebie oddzielone.
+```
+
+## Krok 6: Dodaj akapit buforujący
+
+Dodaj akapit buforowy pomiędzy dwiema tabelami, aby zapewnić ich oddzielenie.
+
+```csharp
 firstTable.ParentNode.InsertAfter(new Paragraph(doc), firstTable);
+```
+
+## Krok 7: Przenieś wiersze do nowej tabeli
+
+Przenieś wiersze z oryginalnej tabeli do nowego kontenera tabeli. Ta pętla trwa do momentu przeniesienia określonego wiersza (włącznie).
+
+```csharp
 Row currentRow;
 do
 {
-	currentRow = firstTable.LastRow;
-	table.PrependChild(currentRow);
+    currentRow = firstTable.LastRow;
+    table.PrependChild(currentRow);
 } while (currentRow != row);
+```
+
+## Krok 8: Zapisz dokument
+
+Na koniec zapisz zmodyfikowany dokument z podzielonymi tabelami.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 ```
 
 ## Wniosek
-tym samouczku nauczyliśmy się, jak podzielić tabelę w dokumencie programu Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz łatwo dzielić tabele od określonej linii w dokumentach Word.
+
+I masz to! Wykonując poniższe kroki, możesz łatwo podzielić tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Takie podejście pomaga efektywniej zarządzać dużymi tabelami, poprawiając czytelność i organizację dokumentów. Wypróbuj i przekonaj się, jak upraszcza to pracę z tabelami w dokumentach programu Word.
+
+## Często zadawane pytania
+
+### Czy mogę podzielić tabelę na wiele wierszy?
+Tak, możesz podzielić tabelę na wiele wierszy, powtarzając proces dla każdego punktu podziału.
+
+### Co się dzieje z formatowaniem oryginalnej tabeli?
+Nowa tabela dziedziczy formatowanie oryginalnej tabeli. W razie potrzeby w nowej tabeli można zastosować wszelkie określone zmiany formatowania.
+
+### Czy możliwe jest ponowne połączenie tabel?
+Tak, możesz łączyć tabele, przenosząc wiersze z jednej tabeli do drugiej, stosując podobne metody.
+
+### Czy ta metoda działa z tabelami zagnieżdżonymi?
+Tak, Aspose.Words dla .NET obsługuje również operacje na tabelach zagnieżdżonych.
+
+### Czy mogę zautomatyzować ten proces dla wielu dokumentów?
+Absolutnie! Możesz utworzyć skrypt lub aplikację, aby zautomatyzować proces dzielenia tabeli dla wielu dokumentów.

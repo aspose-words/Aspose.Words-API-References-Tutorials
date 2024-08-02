@@ -9,7 +9,7 @@ url: /id/net/join-and-append-documents/unlink-headers-footers/
 ---
 ## Perkenalan
 
-Dalam dunia pemrosesan dokumen, menjaga konsistensi header dan footer terkadang bisa menjadi sebuah tantangan. Baik Anda menggabungkan dokumen atau hanya ingin memiliki header dan footer berbeda untuk bagian berbeda, mengetahui cara memutuskan tautannya sangatlah penting. Hari ini, kita akan mendalami bagaimana Anda dapat mencapai hal ini menggunakan Aspose.Words untuk .NET. Kami akan menguraikannya langkah demi langkah sehingga Anda dapat mengikutinya dengan mudah. Siap menguasai manipulasi dokumen? Mari kita mulai!
+Dalam dunia pemrosesan dokumen, menjaga konsistensi header dan footer terkadang bisa menjadi tantangan. Baik Anda menggabungkan dokumen atau hanya ingin memiliki header dan footer berbeda untuk bagian berbeda, mengetahui cara memutuskan tautannya sangatlah penting. Hari ini, kita akan mendalami bagaimana Anda dapat mencapai hal ini menggunakan Aspose.Words untuk .NET. Kami akan menguraikannya langkah demi langkah sehingga Anda dapat mengikutinya dengan mudah. Siap menguasai manipulasi dokumen? Mari kita mulai!
 
 ## Prasyarat
 
@@ -88,7 +88,7 @@ Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda telah berhasil memutuska
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?  
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word dalam aplikasi .NET. Hal ini memungkinkan pengembang untuk membuat, memodifikasi, mengkonversi, dan mencetak dokumen secara terprogram.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET. Hal ini memungkinkan pengembang untuk membuat, memodifikasi, mengkonversi, dan mencetak dokumen secara terprogram.
 
 ### Bisakah saya membatalkan tautan header dan footer hanya untuk bagian tertentu?  
  Ya, Anda dapat memutuskan tautan header dan footer untuk bagian tertentu dengan mengakses`HeadersFooters` properti bagian yang diinginkan dan menggunakan`LinkToPrevious` metode.

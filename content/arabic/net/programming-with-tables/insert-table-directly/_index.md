@@ -100,7 +100,7 @@ row.AppendChild(cell);
 
 ```csharp
 // ثم نكرر العملية مع الخلايا والصفوف الأخرى في الجدول.
-// يمكننا أيضًا تسريع الأمور عن طريق استنساخ الخلايا والصفوف الموجودة.
+//يمكننا أيضًا تسريع الأمور عن طريق استنساخ الخلايا والصفوف الموجودة.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
  نعم يمكنك طلب أ[تجربة مجانية](https://releases.aspose.com/) لتقييم المكتبة قبل الشراء.
 
 ### كيف يمكنني شراء Aspose.Words لـ .NET؟
- يمكنك شراء Aspose.Words لـ .NET من[صفحة الشراء](https://purchase.aspose.com/buy).
+يمكنك شراء Aspose.Words لـ .NET من[صفحة الشراء](https://purchase.aspose.com/buy).
 
 ### أين يمكنني العثور على الوثائق الخاصة بـ Aspose.Words لـ .NET؟
  الوثائق متاحة[هنا](https://reference.aspose.com/words/net/).

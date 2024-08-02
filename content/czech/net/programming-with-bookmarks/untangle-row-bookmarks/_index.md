@@ -35,7 +35,7 @@ using System;
  Začneme načtením dokumentu aplikace Word obsahující záložky spletených řádků. The`Document` třída zpracovává manipulaci s dokumenty v Aspose.Words. Postup načtení dokumentu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY"; // Nahraďte umístěním vašeho dokumentu
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Nahraďte umístěním dokumentu
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 

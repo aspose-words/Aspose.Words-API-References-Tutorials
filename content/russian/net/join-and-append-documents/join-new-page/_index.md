@@ -73,7 +73,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-При этом объединенный документ с добавленным содержимым будет сохранен на новой странице.
+При этом объединенный документ с добавленным содержимым сохраняется на новой странице.
 
 ## Заключение
 

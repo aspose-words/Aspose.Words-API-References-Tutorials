@@ -2,54 +2,92 @@
 title: 获取实际形状边界点
 linktitle: 获取实际形状边界点
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 检索 Word 文档中形状的实际边界（以点为单位，测量单位）。
+description: 了解如何使用 Aspose.Words for .NET 获取 Word 文档中的实际形状边界点。通过此详细指南学习精确的形状操作。
 type: docs
 weight: 10
 url: /zh/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
+## 介绍
 
-本教程介绍如何使用 Aspose.Words for .NET 检索 Word 文档中形状的实际边界（以点为单位）（测量单位）。边界表示文档中形状的大小和位置。
+您是否曾尝试过在 Word 文档中操作形状，并想知道它们的精确尺寸？了解形状的确切边界对于各种文档编辑和格式化任务至关重要。无论您是创建详细的报告、精美的新闻稿还是复杂的传单，了解形状尺寸都可以确保您的设计看起来恰到好处。在本指南中，我们将深入探讨如何使用 Aspose.Words for .NET 获取形状的实际边界（以点为单位）。准备好让您的形状完美无缺了吗？让我们开始吧！
 
 ## 先决条件
-要遵循本教程，您需要满足以下条件：
 
-- 已安装 Aspose.Words for .NET 库。
-- 具备 C# 和 Word 文档文字处理的基本知识。
+在我们讨论细节之前，让我们先确保您已准备好所需的一切：
 
-## 步骤 1：创建新文档和 DocumentBuilder
-创建一个新的实例`Document`类和一个`DocumentBuilder`对象来处理该文档。
+1.  Aspose.Words for .NET：确保已安装 Aspose.Words for .NET 库。如果没有，您可以下载它[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：您应该设置一个开发环境，例如 Visual Studio。
+3. C# 基础知识：本指南假设您对 C# 编程有基本的了解。
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这很重要，因为它允许我们访问 Aspose.Words for .NET 提供的类和方法。
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## 步骤 1：创建新文档
+
+首先，我们需要创建一个新文档。此文档将成为我们插入和操作形状的画布。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
+在这里，我们创建一个实例`Document`类和一个`DocumentBuilder`帮助我们将内容插入文档。
+
 ## 步骤 2：插入图像形状
-使用`InsertImage`方法`DocumentBuilder`对象将图像形状插入文档。提供图像文件的路径作为参数。
+
+接下来，让我们将图像插入到文档中。该图像将作为我们的形状，稍后我们将检索其边界。
 
 ```csharp
-Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
+Shape shape = builder.InsertImage("YOUR DOCUMENT DIRECTORY/Transparent background logo.png");
+```
+
+代替`"YOUR DOCUMENT DIRECTORY/Transparent background logo.png"`以及图像文件的路径。此行将图像作为形状插入到文档中。
+
+## 步骤 3：解锁宽高比
+
+在本例中，我们将解锁形状的纵横比。此步骤是可选的，但如果您打算调整形状的大小，则很有用。
+
+```csharp
 shape.AspectRatioLocked = false;
 ```
 
-## 步骤 3：检索实际形状边界点
-访问形状的`ShapeRenderer`使用`GetShapeRenderer`方法。然后，使用`BoundsInPoints`财产。
+解锁纵横比使我们可以自由调整形状大小，而无需保持其原始比例。
+
+## 步骤 4：检索形状边界
+
+现在到了最激动人心的部分——以点为单位检索形状的实际边界。此信息对于精确定位和布局至关重要。
 
 ```csharp
 Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
+这`GetShapeRenderer`方法为形状提供渲染器，并且`BoundsInPoints`给我们精确的尺寸。
 
-### 使用 Aspose.Words for .NET 获取实际形状边界点的示例源代码 
+## 结论
 
-```csharp
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
-	shape.AspectRatioLocked = false;
-	Console.Write("\nGets the actual bounds of the shape in points: ");
-	Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
-```
+就这样！您已成功使用 Aspose.Words for .NET 检索形状的实际边界（以点为单位）。这些知识使您能够精确地操纵和定位形状，确保您的文档看起来与您设想的完全一致。无论您是设计复杂的布局还是只需要调整元素，了解形状边界都会改变游戏规则。
 
-就是这样！您已成功使用 Aspose.Words for .NET 检索了 Word 文档中形状的实际边界（以点为单位）。
+## 常见问题解答
+
+### 为什么了解形状的边界很重要？
+了解边界有助于精确定位和对齐文档中的形状，确保专业的外观。
+
+### 除了图像之外，我可以使用其他类型的形状吗？
+当然！您可以使用任何形状，例如矩形、圆形和自定义图形。
+
+### 如果我的图像没有出现在文档中该怎么办？
+确保文件路径正确且图像存在于该位置。仔细检查是否有拼写错误或错误的目录引用。
+
+### 我怎样才能保持形状的纵横比？
+放`shape.AspectRatioLocked = true;`调整大小时保持原始比例。
+
+### 是否有可能以点以外的单位获取界限？
+是的，您可以使用适当的转换因子将点转换为其他单位，例如英寸或厘米。

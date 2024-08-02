@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
- I detta steg, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat. De`Document` objekt`doc` har nu vårt laddade dokument.
+ I det här steget, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat. De`Document` objekt`doc` har nu vårt laddade dokument.
 
 ## Steg 2: Öppna sidfoten
 

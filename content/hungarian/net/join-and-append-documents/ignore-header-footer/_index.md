@@ -125,4 +125,4 @@ Igen, az Aspose.Words számos lehetőséget kínál az importálási folyamat te
 
 ### Hol találok további példákat és dokumentációt az Aspose.Words for .NET-hez?
 
- Átfogó dokumentációt és példákat találhat a[Aspose honlapja](https://reference.aspose.com/words/net/).
+ Részletes dokumentációt és példákat találhat az oldalon[Aspose honlapja](https://reference.aspose.com/words/net/).

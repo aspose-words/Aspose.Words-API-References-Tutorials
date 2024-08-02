@@ -200,7 +200,7 @@ class MultipagePrintDocument implements Printable
 
 ### Q4: 인쇄 설정을 추가로 사용자 정의할 수 있습니까?
 
-예, 특정 요구 사항에 맞게 인쇄 설정을 사용자 정의할 수 있습니다. 사용 가능한 인쇄 옵션에 대해 자세히 알아보려면 Aspose.Words for Java 문서를 살펴보세요.
+예, 특정 요구 사항에 맞게 인쇄 설정을 사용자 정의할 수 있습니다. 사용 가능한 인쇄 옵션에 대해 자세히 알아보려면 Aspose.Words for Java 설명서를 살펴보세요.
 
 ### Q5: Aspose.Words for Java에 대한 추가 도움말과 지원은 어디서 얻을 수 있나요?
 

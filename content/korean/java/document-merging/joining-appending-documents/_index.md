@@ -12,7 +12,7 @@ url: /ko/java/document-merging/joining-appending-documents/
 
 Aspose.Words for Java는 DOC, DOCX, RTF 등을 포함한 다양한 문서 형식으로 작업할 수 있는 기능이 풍부한 라이브러리입니다. 문서를 결합하고 추가하는 것은 문서 조작을 처리할 때 일반적인 작업이며, 이 가이드에서는 이를 원활하게 수행하기 위한 단계별 지침과 Java 코드 예제를 제공합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

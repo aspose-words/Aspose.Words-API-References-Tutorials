@@ -82,7 +82,7 @@ Gefeliciteerd! U hebt met succes een DOCX-bestand naar TXT geconverteerd met Asp
 
 Ja, u kunt door een map met DOCX-bestanden bladeren en ze allemaal met dezelfde stappen naar TXT converteren.
 
-### Hoe ga ik om met verschillende coderingen bij het opslaan naar TXT?
+### Hoe ga ik om met verschillende coderingen bij het opslaan in TXT?
 
 Met Aspose.Words voor .NET kunt u coderingsopties opgeven bij het opslaan van een document. Raadpleeg de documentatie voor meer details.
 

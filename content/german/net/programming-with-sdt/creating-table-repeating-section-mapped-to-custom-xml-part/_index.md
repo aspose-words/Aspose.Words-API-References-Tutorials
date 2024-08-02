@@ -7,42 +7,51 @@ type: docs
 weight: 10
 url: /de/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
+## Einführung
 
-Dieses Tutorial zeigt, wie Sie mit Aspose.Words für .NET eine Tabelle mit einem sich wiederholenden Abschnitt erstellen, der einem benutzerdefinierten XML-Teil in einem Word-Dokument zugeordnet ist. Der sich wiederholende Abschnitt ermöglicht Ihnen das dynamische Hinzufügen von Zeilen basierend auf den im benutzerdefinierten XML-Teil gespeicherten XML-Daten.
+In diesem Tutorial führen wir Sie durch den Prozess der Erstellung einer Tabelle mit einem sich wiederholenden Abschnitt, der mit Aspose.Words für .NET einem benutzerdefinierten XML-Teil zugeordnet ist. Dies ist besonders nützlich für die dynamische Generierung von Dokumenten basierend auf strukturierten Daten.
 
 ## Voraussetzungen
-Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
-- Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
+1.  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen von der[Aspose-Website](https://releases.aspose.com/words/net/).
+2. Grundlegende Kenntnisse in C# und XML.
 
-## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+## Namespaces importieren
+
+Stellen Sie sicher, dass Sie die erforderlichen Namespaces in Ihr Projekt einschließen:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Markup;
+using Aspose.Words.Tables;
+```
+
+## Schritt 1: Dokument und DocumentBuilder initialisieren
+
+ Erstellen Sie zunächst ein neues Dokument und initialisieren Sie ein`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
 
-## Schritt 2: Erstellen Sie ein Dokument und einen DocumentBuilder
- Erstellen Sie eine neue Instanz des`Document` Klasse und eine`DocumentBuilder` um den Inhalt des Dokuments zu erstellen.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 3: Hinzufügen benutzerdefinierter XML-Daten zu einem CustomXmlPart
- Ein ... kreieren`CustomXmlPart` und fügen Sie ihm benutzerdefinierte XML-Daten hinzu. In diesem Beispiel erstellen wir eine XML-Zeichenfolge, die eine Sammlung von Büchern mit ihren Titeln und Autoren darstellt.
+## Schritt 2: Benutzerdefinierten XML-Teil hinzufügen
+
+Fügen Sie dem Dokument einen benutzerdefinierten XML-Teil hinzu. Dieses XML enthält die Daten, die wir unserer Tabelle zuordnen möchten:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-	"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-	"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
+    "<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
+    "<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
+    "<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## Schritt 4: Erstellen einer Tabelle und einer Tabellenstruktur
-Beginnen Sie mit dem Erstellen einer Tabelle mit dem`StartTable` Methode der`DocumentBuilder` . Fügen Sie Tabellenzellen und Inhalt hinzu mit dem`InsertCell`Und`Write` Methoden.
+## Schritt 3: Erstellen der Tabellenstruktur
+
+ Verwenden Sie als nächstes die`DocumentBuilder` So erstellen Sie die Tabellenüberschrift:
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,94 +63,60 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Schritt 5: Erstellen Sie den sich wiederholenden Abschnitt, der benutzerdefiniertem XML zugeordnet ist.
- Ein ... kreieren`StructuredDocumentTag` mit`SdtType.RepeatingSection` um den sich wiederholenden Abschnitt darzustellen. Legen Sie die XML-Zuordnung für den sich wiederholenden Abschnitt mithilfe der`SetMapping` Methode der`XmlMapping` Eigenschaft. In diesem Beispiel ordnen wir den sich wiederholenden Abschnitt zu`/books[1]/book`.
+## Schritt 4: Wiederholenden Abschnitt erstellen
+
+ Ein ... kreieren`StructuredDocumentTag` (SDT) für den sich wiederholenden Abschnitt und ordnen Sie ihn den XML-Daten zu:
 
 ```csharp
-StructuredDocumentTag repeatingSectionSdt =
-	new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
 repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Schritt 6: Erstellen Sie das sich wiederholende Abschnittselement und fügen Sie Zellen hinzu
- Ein ... kreieren`StructuredDocumentTag` mit`SdtType.RepeatingSectionItem` um das sich wiederholende Abschnittselement darzustellen. Hängen Sie es als untergeordnetes Element an den sich wiederholenden Abschnitt an.
+## Schritt 5: Wiederholendes Abschnittselement erstellen
+
+Erstellen Sie ein SDT für das sich wiederholende Abschnittselement und fügen Sie es dem sich wiederholenden Abschnitt hinzu:
 
 ```csharp
-StructuredDocumentTag repeatingSectionItemSdt = 
-	new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-```
-
- Ein ... kreieren`Row` um jedes Element im sich wiederholenden Abschnitt darzustellen und es an das sich wiederholende Abschnittselement anzuhängen.
-
-```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## Schritt 7: Inhaltssteuerelemente im Wiederholungsbereich hinzufügen
- Erstellen`StructuredDocumentTag` Objekte mit`SdtType.PlainText`
+## Schritt 6: XML-Daten Tabellenzellen zuordnen
 
-  um die Inhaltssteuerelemente „Titel“ und „Autor“ darzustellen. Legen Sie die XML-Zuordnung für jedes Inhaltssteuerelement mithilfe der`SetMapping` Methode der`XmlMapping` Eigenschaft. In diesem Beispiel ordnen wir das Titelsteuerelement zu`/books[1]/book[1]/title[1]` und der Autor Kontrolle zu`/books[1]/book[1]/author[1]`.
+Erstellen Sie SDTs für Titel und Autor, ordnen Sie sie den XML-Daten zu und hängen Sie sie an die Zeile an:
 
 ```csharp
-StructuredDocumentTag titleSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
 row.AppendChild(titleSdt);
 
-StructuredDocumentTag authorSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag authorSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## Schritt 8: Speichern Sie das Dokument
- Speichern Sie das geänderte Dokument im angegebenen Verzeichnis mit dem`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx“.
+## Schritt 7: Speichern Sie das Dokument
+
+Speichern Sie das Dokument abschließend im angegebenen Verzeichnis:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### Beispielquellcode zum Erstellen eines sich wiederholenden Tabellenabschnitts, der einem benutzerdefinierten XML-Teil zugeordnet ist, mit Aspose.Words für .NET 
+## Abschluss
 
-```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Wenn Sie diese Schritte befolgen, haben Sie erfolgreich eine Tabelle mit einem sich wiederholenden Abschnitt erstellt, der mit Aspose.Words für .NET einem benutzerdefinierten XML-Teil zugeordnet ist. Dies ermöglicht die dynamische Inhaltsgenerierung auf der Grundlage strukturierter Daten und macht die Dokumenterstellung flexibler und leistungsfähiger.
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-		"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-		"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-		"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Title");
-	builder.InsertCell();
-	builder.Write("Author");
-	builder.EndRow();
-	builder.EndTable();
-	StructuredDocumentTag repeatingSectionSdt =
-		new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
-	repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
-	table.AppendChild(repeatingSectionSdt);
-	StructuredDocumentTag repeatingSectionItemSdt = 
-		new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
-	repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-	Row row = new Row(doc);
-	repeatingSectionItemSdt.AppendChild(row);
-	StructuredDocumentTag titleSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
-	row.AppendChild(titleSdt);
-	StructuredDocumentTag authorSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
-	row.AppendChild(authorSdt);
-	doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
+## Häufig gestellte Fragen
 
-```
+### Was ist ein StructuredDocumentTag (SDT)?
+Ein SDT (auch Inhaltssteuerelement genannt) ist ein begrenzter Bereich in einem Dokument, der zur Aufnahme strukturierter Daten verwendet wird.
 
-Das ist es! Sie haben erfolgreich eine Tabelle mit einem sich wiederholenden Abschnitt erstellt, der mit Aspose.Words für .NET einem CustomXmlPart in Ihrem Word-Dokument zugeordnet ist.
+### Kann ich im benutzerdefinierten XML-Teil andere Datentypen verwenden?
+Ja, Sie können Ihren benutzerdefinierten XML-Teil mit beliebigen Datentypen strukturieren und entsprechend zuordnen.
+
+### Wie füge ich dem sich wiederholenden Abschnitt weitere Zeilen hinzu?
+Der sich wiederholende Abschnitt repliziert automatisch die Zeilenstruktur für jedes Element im zugeordneten XML-Pfad.

@@ -35,7 +35,7 @@ Volg deze stappen om een documentenlijst te maken:
 Hier is een voorbeeldcodefragment om u op weg te helpen:
 
 ```java
-// Importeer de benodigde pakketten
+// Importeer de vereiste pakketten
 import com.aspose.words.*;
 
 public class DocumentListExample {

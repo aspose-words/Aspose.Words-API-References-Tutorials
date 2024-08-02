@@ -2,71 +2,121 @@
 title: 結構化文檔標記範圍起始 Xml 映射
 linktitle: 結構化文檔標記範圍起始 Xml 映射
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中為結構化文件標記範圍設定 XML 對應。
+description: 了解如何使用 Aspose.Words for .NET 將 XML 資料動態綁定到 Word 中的結構化文件標記。請遵循我們的逐步指南。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
+## 介紹
 
-本教學課程說明如何使用 Aspose.Words for .NET 在 Word 文件中設定結構化文件標記範圍的 XML 對應。 XML 對應可讓您在內容控制項中顯示 XML 資料來源的特定部分。
+您是否曾經想過將 XML 資料動態插入到 Word 文件中？嗯，你很幸運！ Aspose.Words for .NET 讓這項任務變得輕而易舉。在本教學中，我們將深入探討結構化文件標記範圍起始 XML 對應。此功能可讓您將自訂 XML 部分綁定到內容控件，確保您的文件內容與 XML 資料無縫更新。準備好將您的文件轉變為動態傑作。
 
 ## 先決條件
-要學習本教程，您需要具備以下條件：
 
-- 已安裝 Aspose.Words for .NET 程式庫。
-- C# 和 Word 文件文字處理的基礎知識。
+在我們進入編碼部分之前，讓我們確保您擁有所需的一切：
 
-## 第 1 步：設定文檔目錄
-首先設定文檔目錄的路徑。代替`"YOUR DOCUMENT DIRECTORY"`與文件所在目錄的實際路徑。
+1.  Aspose.Words for .NET Library：確保您擁有最新版本。你可以下載它[這裡](https://releases.aspose.com/words/net/).
+2. 開發環境：Visual Studio 或任何其他支援 C# 的 IDE。
+3. C# 基礎知識：必須熟悉 C# 程式設計。
+4. Word 文件：可供使用的範例 Word 文件。
+
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這將確保我們能夠存取 Aspose.Words for .NET 中所有必要的類別和方法。
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Markup;
+using System.Text;
+```
+
+## 第 1 步：設定您的文件目錄
+
+每個專案都需要一個基礎，對吧？在這裡，我們設定文檔目錄的路徑。
+
+```csharp
+//文檔目錄的路徑
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步驟 2： 載入文件並建立 XML 部件
-使用以下命令載入 Word 文檔`Document`建構函數，將文檔的路徑作為參數傳遞。建立一個 XML 元件，其中包含要在結構化文件標記中顯示的資料。
+## 步驟2：載入Word文檔
+
+接下來，我們載入Word文檔。這是我們將插入 XML 資料的文檔。
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
+```
+
+## 第 3 步：新增自訂 XML 部分
+
+我們需要建構一個包含要插入的資料的 XML 元件，並將其新增至文件的 CustomXmlPart 集合中。這個自訂 XML 部分將用作我們的結構化文件標籤的資料來源。
+
+### 建立 XML 部件
+
+首先，為 XML 部分產生唯一 ID 並定義其內容。
+
+```csharp
+//建構一個包含資料的 XML 元件並將其新增至文件的 CustomXmlPart 集合中。
 string xmlPartId = Guid.NewGuid().ToString("B");
 string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2</text></root>";
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
 ```
 
-## 步驟 3：為結構化文件標籤設定 XML 映射
-檢索從文件開始的結構化文件標籤範圍。然後，設定結構化文件標記的 XML 映射，以使用 XPath 表達式顯示自訂 XML 部分的特定部分。
+### 驗證 XML 部分內容
+
+為了確保正確添加 XML 部分，我們列印其內容。
+
+```csharp
+Console.WriteLine(Encoding.UTF8.GetString(xmlPart.Data));
+```
+
+## 步驟 4：建立結構化文件標籤
+
+結構化文件標籤 (SDT) 是可以綁定到 XML 部分的內容控制項。在這裡，我們建立一個 SDT，它將顯示自訂 XML 部分的內容。
+
+首先，找到文件中 SDT 範圍的起始位置。
 
 ```csharp
 StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
+```
+
+## 步驟 5：為 SDT 設定 XML 映射
+
+現在，是時候將 XML 部分綁定到 SDT 了。透過設定 XML 映射，我們指定 XML 資料的哪一部分應顯示在 SDT 中。
+
+ XPath 指向我們要顯示的 XML 部分中的特定元素。這裡，我們指向第二個`<text>`內的元素`<root>`元素。
+
+```csharp
+//為我們的 StructuredDocumentTag 設定映射
 sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
-## 步驟 4：儲存文檔
-使用指令將修改後的文件儲存到指定目錄`Save`方法。提供所需的檔案名稱和適當的檔案副檔名。在此範例中，我們將文件另存為「WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx」。
+## 第 6 步：儲存文檔
+
+最後，儲存文件以查看實際變更。 Word 文件中的 SDT 現在將顯示指定的 XML 內容。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
 ```
 
-### 使用 Aspose.Words for .NET 進行結構化文件標記範圍開始 Xml 映射的範例原始程式碼 
+## 結論
 
-```csharp
-	//文檔目錄的路徑
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將 XML 部分對應到 Word 文件中的結構化文件標記。這項強大的功能使您能夠輕鬆建立動態和資料驅動的文件。無論您是產生報表、發票或任何其他文件類型，XML 對應都可以顯著簡化您的工作流程。
 
-	Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
-	//建構一個包含資料的 XML 元件並將其新增至文件的 CustomXmlPart 集合中。
-	string xmlPartId = Guid.NewGuid().ToString("B");
-	string xmlPartContent = "<root><text>Text element #1</text><text>Text element #2</text></root>";
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
-	Console.WriteLine(Encoding.UTF8.GetString(xmlPart.Data));
-	//建立一個 StructuredDocumentTag，它將在文件中顯示 CustomXmlPart 的內容。
-	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
-	//如果我們為 StructuredDocumentTag 設定映射，
-	//它只會顯示 XPath 指向的 CustomXmlPart 的一部分。
-	//此 XPath 將指向 CustomXmlPart 的第一個「<root>」元素的內容第二個「<text>」元素。
-	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
-	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
-```
+## 常見問題解答
 
-就是這樣！您已使用 Aspose.Words for .NET 在 Word 文件中成功設定了結構化文件標記範圍起始的 XML 對應。
+### Word 中的結構化文件標籤是什麼？
+結構化文件標籤也稱為內容控件，是 Word 文件中特定類型內容的容器。它們可用於綁定資料、限制編輯或指導使用者建立文件。
+
+### 如何動態更新XML部分內容？
+您可以透過修改以下內容來更新 XML 部分內容`xmlPartContent`字串，然後將其添加到文件中。只需使用新資料更新字串並將其新增至`CustomXmlParts`收藏。
+
+### 我可以將多個 XML 部分綁定到同一文件中的不同 SDT 嗎？
+是的，您可以將多個 XML 部分綁定到同一文件中的不同 SDT。每個 SDT 都可以有自己獨特的 XML 部分和 XPath 映射。
+
+### 是否可以將複雜的 XML 結構對應到 SDT？
+絕對地！您可以使用詳細的 XPath 表達式將複雜的 XML 結構對應到 SDT，這些表達式精確地指向 XML 部分中所需的元素。
+
+### 如何從文件中刪除 XML 部分？
+您可以透過呼叫刪除 XML 部分`Remove`方法上的`CustomXmlParts`集合，透過`xmlPartId`您要刪除的 XML 部分的名稱。

@@ -13,7 +13,7 @@ Nestes tutoriais, você aprenderá vários aspectos do processamento de palavras
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Adicione comentários](./add-comments/) | Aprenda como adicionar comentários a documentos do Word usando Aspose.Words for .NET. |
-| [Comentário âncora](./anchor-comment/) | Aprenda como ancorar respostas de comentários a textos específicos em documentos do Word usando Aspose.Words for .NET. |
-| [Adicionar Remover Resposta de Comentário](./add-remove-comment-reply/) | Aprenda como adicionar e remover respostas de comentários em documentos do Word usando Aspose.Words for .NET. |
-| [Comentário resolvido e respostas](./comment-resolved-and-replies/) | Aprenda como resolver comentários e suas respostas em documentos do Word usando Aspose.Words for .NET. |
+| [Adicione comentários](./add-comments/) | Aprenda como adicionar comentários aos seus documentos do Word usando Aspose.Words for .NET com nosso guia. Aprimore seu processo de colaboração de documentos sem esforço. |
+| [Comentário âncora](./anchor-comment/) | Aprenda como adicionar comentários âncora em documentos do Word usando Aspose.Words for .NET. Siga nosso guia passo a passo para uma colaboração eficiente de documentos. |
+| [Adicionar Remover Resposta de Comentário](./add-remove-comment-reply/) | Aprenda como adicionar e remover respostas de comentários em documentos do Word usando Aspose.Words for .NET. Melhore a colaboração de seus documentos com este guia passo a passo. |
+| [Comentário resolvido e respostas](./comment-resolved-and-replies/) | Automatize a resolução e resposta a comentários em documentos do Word com Aspose.Words for .NET. Guia passo a passo incluído. |

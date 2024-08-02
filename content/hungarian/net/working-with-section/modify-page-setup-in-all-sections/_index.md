@@ -16,7 +16,7 @@ Halihó! Ha valaha is módosítania kellett az oldalbeállításokat egy Word-do
 Mielőtt belemerülnénk, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
 1. Alapvető C# ismerete: A C# szintaxis és fogalmak ismerete szükséges.
-2.  Aspose.Words for .NET: Megteheti[töltse le itt](https://releases.aspose.com/words/net/) . Ha csak kipróbálod, a[ingyenes próbaverzió](https://releases.aspose.com/) elérhető.
+2.  Aspose.Words for .NET: Megteheti[töltse le itt](https://releases.aspose.com/words/net/) Ha csak kipróbálod, a[ingyenes próbaverzió](https://releases.aspose.com/) elérhető.
 3. Visual Studio: Bármelyik legújabb verziónak működnie kell, de a legjobb élmény érdekében a legújabb verzió ajánlott.
 4. .NET-keretrendszer: Győződjön meg arról, hogy telepítve van a rendszerén.
 
@@ -89,7 +89,7 @@ Ez a kódsor a dokumentumot a megadott könyvtárba menti egyértelmű fájlnév
 
 ## Következtetés
 
-És megvan! Sikeresen módosította az oldalbeállítást egy Word-dokumentum összes szakaszára az Aspose.Words for .NET használatával. Ez az oktatóanyag végigvezeti a dokumentum létrehozásán, szakaszok hozzáadásával és az oldalbeállítások egységes módosításával. Az Aspose.Words funkciók gazdag készletét kínálja, ezért bátran fedezze fel a[API dokumentáció](https://reference.aspose.com/words/net/) fejlettebb képességekért.
+ És megvan! Sikeresen módosította az oldalbeállítást egy Word-dokumentum összes szakaszára az Aspose.Words for .NET használatával. Ez az oktatóanyag végigvezeti a dokumentum létrehozásán, szakaszok hozzáadásával és az oldalbeállítások egységes módosításával. Az Aspose.Words funkciók gazdag készletét kínálja, ezért bátran fedezze fel a[API dokumentáció](https://reference.aspose.com/words/net/) fejlettebb képességekért.
 
 ## GYIK
 

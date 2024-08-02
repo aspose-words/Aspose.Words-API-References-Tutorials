@@ -2,20 +2,41 @@
 title: Zmień ustawienia regionalne
 linktitle: Zmień ustawienia regionalne
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zmienić ustawienia regionalne dla formatowania daty i liczb w dokumentach programu Word przy użyciu Aspose.Words dla .NET.
+description: Z tego przewodnika dowiesz się, jak zmienić ustawienia regionalne w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Idealny do obsługi międzynarodowych klientów i projektów.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/change-locale/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię przez proces zmiany ustawień regionalnych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Modyfikując ustawienia regionalne, możesz kontrolować formatowanie dat i liczb podczas operacji korespondencji seryjnej. Dostarczymy Ci niezbędny kod źródłowy C# i instrukcje krok po kroku, jak to osiągnąć.
+Praca z dokumentami programu Word często wymaga odrobiny finezji, szczególnie w przypadku różnych lokalizacji i kultur. W tym samouczku przyjrzymy się, jak zmienić ustawienia regionalne dokumentu programu Word za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy tworzysz dokumenty dla odbiorców na całym świecie, czy po prostu chcesz zmienić format daty, ten przewodnik pomoże Ci.
 
 ## Warunki wstępne
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim systemie.
 
-## Krok 1: Utwórz dokument i narzędzie do tworzenia dokumentów
-Na początek utwórz instancję klasy Document i obiektu DocumentBuilder:
+Zanim zagłębimy się w szczegóły, upewnijmy się, że mamy wszystko, czego potrzebujemy:
+
+-  Aspose.Words dla .NET: Możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Visual Studio: dowolna wersja obsługująca platformę .NET.
+- Podstawowa znajomość C#: Zrozumienie podstaw C# i .NET pomoże Ci w dalszym ciągu.
+
+ Upewnij się, że zainstalowałeś Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/) lub kup to[Tutaj](https://purchase.aspose.com/buy).
+
+## Importuj przestrzenie nazw
+
+Zanim zaczniemy kodować, musimy zaimportować niezbędne przestrzenie nazw. Działają jak składniki przepisu i zapewniają, że wszystko działa sprawnie.
+
+```csharp
+using System.Globalization;
+using System.Threading;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Zmiana ustawień regionalnych w dokumencie programu Word jest prostym procesem. Rozłóżmy to krok po kroku.
+
+## Krok 1: Skonfiguruj swój dokument
+
+Na początek skonfigurujmy nasz dokument i narzędzie do tworzenia dokumentów. To tak, jakby przygotować miejsce do pracy przed rozpoczęciem gotowania.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,91 +44,73 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Wstaw pole
-Następnie wstaw do dokumentu pole scalania za pomocą metody InsertField:
+## Krok 2: Wstaw pole scalania
+
+Teraz wstawimy pole scalania dla daty. Tutaj w grę wchodzą ustawienia regionalne.
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-W powyższym kodzie wstawiamy do dokumentu pole scalania o nazwie „Data”.
+## Krok 3: Zapisz obecną kulturę
 
-## Krok 3: Zmień ustawienia regionalne
-Aby zmienić ustawienia regionalne formatowania daty i liczb, możesz zmodyfikować bieżącą kulturę wątku. W tym przykładzie ustawimy ustawienia regionalne na niemieckie („de-DE”):
+Zanim zmienimy lokalizację, musimy uratować obecną kulturę. Potraktuj to jak dodanie swojego miejsca do zakładek przed przejściem do kolejnego rozdziału.
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+```
+
+## Krok 4: Zmień ustawienia regionalne
+
+Następnie zmienimy obecną kulturę wątku na niemiecką („de-DE”). To jakby zmienić ustawienia językowe w telefonie.
+
+```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-W powyższym kodzie przechowujemy bieżącą kulturę, a następnie ustawiamy kulturę bieżącego wątku na niemiecką.
+## Krok 5: Wykonaj korespondencję seryjną
 
-## Krok 4: Wykonaj korespondencję seryjną
-Wykonaj operację korespondencji seryjnej i podaj wartość daty w polu „Data”:
+Teraz wykonujemy korespondencję seryjną z bieżącą datą. Spowoduje to zastosowanie nowych ustawień regionalnych do formatu daty.
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-W tym fragmencie kodu wykonujemy operację korespondencji seryjnej i jako wartość w polu „Data” podajemy bieżącą datę.
+## Krok 6: Przywróć pierwotną kulturę
 
-## Krok 5: Przywróć oryginalne ustawienia regionalne
-Po zakończeniu korespondencji seryjnej przywróć oryginalną kulturę wątku:
+Po wykonaniu korespondencji seryjnej przywrócimy oryginalną kulturę. Przypomina to powrót do preferowanych ustawień języka.
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-W powyższym kodzie przywracamy pierwotną kulturę wątku.
+## Krok 7: Zapisz dokument
 
-## Krok 6: Zapisz dokument
-Zapisz zmodyfikowany dokument do pliku korzystając z metody Save klasy Document:
+Na koniec zapisz dokument w określonym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### Przykładowy kod źródłowy do zmiany ustawień regionalnych przy użyciu Aspose.Words dla .NET
-Oto kompletny kod źródłowy do zmiany ustawień regionalnych w dokumentach Word przy użyciu Aspose.Words dla .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField("MERGEFIELD Date");
-
-CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
-
-doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
-
-Thread.CurrentThread.CurrentCulture = currentCulture;
-
-doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
-```
+masz to! Pomyślnie zmieniłeś ustawienia regionalne w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
 
 ## Wniosek
-Gratulacje! Pomyślnie nauczyłeś się zmieniać ustawienia regionalne w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz teraz kontrolować formatowanie dat i liczb podczas operacji korespondencji seryjnej. Dostosuj ustawienia regionalne zgodnie ze swoimi wymaganiami, aby zapewnić dokładne i spójne formatowanie w dokumentach.
 
-### Często zadawane pytania
+Zmiana ustawień regionalnych w dokumentach programu Word może być niezwykle przydatna, szczególnie w przypadku międzynarodowych klientów lub projektów. Dzięki Aspose.Words dla .NET zadanie to staje się proste. Wykonaj poniższe kroki, a będziesz mógł bez wysiłku zmieniać ustawienia regionalne.
 
-#### P: Czy Aspose.Words jest kompatybilny z różnymi wersjami Microsoft Word?
+## Często zadawane pytania
 
-Odp.: Tak, Aspose.Words jest kompatybilny z różnymi wersjami Microsoft Word, w tym Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 i Word 2019.
+### Czy mogę zmienić ustawienia regionalne na dowolny język?
+Tak, Aspose.Words dla .NET obsługuje zmianę ustawień regionalnych na dowolny język obsługiwany przez .NET.
 
-#### P: Czy Aspose.Words obsługuje złożone struktury pól?
+### Czy będzie to miało wpływ na inne części mojego dokumentu?
+Zmiana ustawień regionalnych będzie miała wpływ przede wszystkim na formaty daty i liczb. Pozostały tekst pozostanie niezmieniony.
 
-Odp.: Absolutnie! Aspose.Words oferuje szeroką obsługę złożonych struktur pól, w tym pól zagnieżdżonych, obliczeń i wyrażeń warunkowych. Możesz użyć tego potężnego interfejsu API do pracy z dowolnym typem struktury pól.
+### Czy potrzebuję specjalnej licencji, aby używać Aspose.Words dla .NET?
+ Możesz rozpocząć od bezpłatnego okresu próbnego, ale aby móc dalej korzystać, musisz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
 
-#### P: Czy Aspose.Words obsługuje operacje aktualizacji w terenie?
+### Czy mogę powrócić do oryginalnych ustawień regionalnych, jeśli coś pójdzie nie tak?
+Tak, zapisując oryginalną kulturę i przywracając ją później, możesz przywrócić oryginalne ustawienia regionalne.
 
-Odp.: Tak, Aspose.Words umożliwia aktualizację pól zgodnie z harmonogramem. Za pomocą interfejsu API możesz łatwo aktualizować wartości pól, odświeżać obliczenia i wykonywać inne operacje związane z polami.
-
-#### P: Czy można konwertować pola na zwykły tekst za pomocą Aspose.Words?
-
-Odp.: Oczywiście! Aspose.Words udostępnia metody konwersji pól na zwykły tekst. Może to być przydatne, gdy trzeba wyodrębnić treść bez żadnych funkcji związanych z formatowaniem lub polami.
-
-#### P: Czy możliwe jest generowanie dokumentów Word z polami dynamicznymi przy użyciu Aspose.Words?
-
-Odp.: Absolutnie! Aspose.Words oferuje solidną funkcjonalność do generowania dokumentów Word z polami dynamicznymi. Możesz tworzyć szablony z predefiniowanymi polami i dynamicznie wypełniać je danymi, zapewniając elastyczne i wydajne rozwiązanie do generowania dokumentów.
+### Gdzie mogę uzyskać pomoc, jeśli napotkam problemy?
+ Możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).

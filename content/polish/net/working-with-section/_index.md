@@ -18,13 +18,13 @@ Postępując zgodnie z tymi samouczkami, będziesz mógł z łatwością zarząd
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Dodaj sekcję](./add-section/) | W tym samouczku dowiesz się, jak dodać sekcję do dokumentu programu Word za pomocą Aspose.Words dla .NET. Przewodnik krok po kroku dotyczący struktury dokumentu. |
+| [Dodaj sekcję](./add-section/) | Dowiedz się, jak dodawać sekcje w dokumentach programu Word za pomocą Aspose.Words dla .NET. W tym przewodniku opisano wszystko, od tworzenia dokumentu po dodawanie sekcji i zarządzanie nimi. |
 | [Usuń sekcję](./delete-section/) | Manipulacja dokumentami głównymi za pomocą Aspose.Words dla .NET. Dowiedz się, jak usunąć sekcje z dokumentów programu Word w kilku prostych krokach. |
 | [Usuń wszystkie sekcje](./delete-all-sections/) | Dowiedz się, jak usunąć wszystkie sekcje w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z tego łatwego do zrozumienia przewodnika krok po kroku. |
 | [Dołącz treść słowa sekcji](./append-section-content/) | W tym samouczku dowiesz się, jak dodawać zawartość słowną do określonych sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET.  |
-| [Sekcja klonów](./clone-section/) | tym samouczku dowiesz się, jak sklonować sekcję w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przewodnik krok po kroku. |
-| [Kopiuj sekcję](./copy-section/) | W tym samouczku dowiesz się, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą Aspose.Words dla .NET. |
-| [Usuń zawartość stopki nagłówka](./delete-header-footer-content/) | W tym samouczku dowiesz się, jak usunąć zawartość nagłówka i stopki z dokumentu programu Word za pomocą Aspose.Words dla .NET.  |
-| [Usuń zawartość sekcji](./delete-section-content/) | W tym samouczku dowiesz się, jak usunąć zawartość z określonej sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET. |
+| [Sekcja klonów](./clone-section/) | Dowiedz się, jak klonować sekcje w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W tym przewodniku znajdują się instrukcje krok po kroku dotyczące skutecznego manipulowania dokumentami. |
+| [Kopiuj sekcję](./copy-section/) | Dowiedz się, jak kopiować sekcje między dokumentami programu Word przy użyciu Aspose.Words dla .NET. W tym przewodniku znajdują się instrukcje krok po kroku dotyczące wydajnego zarządzania dokumentami. |
+| [Usuń zawartość stopki nagłówka](./delete-header-footer-content/) | Dowiedz się, jak usuwać nagłówki i stopki w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku zapewnia efektywne zarządzanie dokumentami.  |
+| [Usuń zawartość sekcji](./delete-section-content/) | Dowiedz się, jak usunąć zawartość sekcji w dokumentach programu Word za pomocą Aspose.Words dla .NET. Ten przewodnik krok po kroku zapewnia efektywne zarządzanie dokumentami. |
 | [Zmodyfikuj ustawienia strony programu Word we wszystkich sekcjach](./modify-page-setup-in-all-sections/) | W tym samouczku dowiesz się, jak modyfikować ustawienia strony programu Word we wszystkich sekcjach dokumentu programu Word za pomocą Aspose.Words dla .NET. |
-| [Dostęp do sekcji według indeksu](./sections-access-by-index/) | W tym samouczku dowiesz się, jak uzyskać dostęp do sekcji dokumentu programu Word według indeksu i zmienić ich ustawienia za pomocą Aspose.Words dla .NET. |
+| [Dostęp do sekcji według indeksu](./sections-access-by-index/) | Dowiedz się, jak uzyskiwać dostęp i manipulować sekcjami w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku zapewnia efektywne zarządzanie dokumentami. |

@@ -108,7 +108,7 @@ Você pode converter vários documentos do Word, incluindo .doc, .docx, .rtf e m
 
 ### Há alguma limitação na versão de teste do Aspose.Words?
 
- versão de teste possui algumas limitações, como marcas d’água nos arquivos de saída. Você pode obter um teste gratuito[aqui](https://releases.aspose.com/).
+ versão de teste possui algumas limitações, como marcas d'água nos arquivos de saída. Você pode obter um teste gratuito[aqui](https://releases.aspose.com/).
 
 ### Onde posso encontrar mais exemplos e documentação para Aspose.Words?
 

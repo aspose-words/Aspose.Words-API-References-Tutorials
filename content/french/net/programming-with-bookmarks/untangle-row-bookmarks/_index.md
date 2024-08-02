@@ -9,7 +9,7 @@ url: /fr/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
 ## Introduction
 
-Avez-vous déjà rencontré une situation dans laquelle la suppression d'une ligne dans un document Word à l'aide d'un signet gâche les autres signets des lignes adjacentes ? Cela peut être incroyablement frustrant, surtout lorsqu'il s'agit de tables complexes. Heureusement, Aspose.Words for .NET propose une solution puissante : démêler les signets de ligne. 
+Avez-vous déjà rencontré une situation dans laquelle la suppression d'une ligne dans un document Word à l'aide d'un signet gâche les autres signets des lignes adjacentes ? Cela peut être incroyablement frustrant, surtout lorsqu'il s'agit de tables complexes. Heureusement, Aspose.Words for .NET propose une solution puissante : démêler les signets de lignes. 
 
 Ce guide vous guidera tout au long du processus de démêlage des signets de lignes dans vos documents Word à l'aide d'Aspose.Words pour .NET. Nous décomposerons le code en étapes faciles à comprendre et expliquerons le but de chaque fonction, vous permettant ainsi de résoudre ces problèmes embêtants de signets en toute confiance.
 

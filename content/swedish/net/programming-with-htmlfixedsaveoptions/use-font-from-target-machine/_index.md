@@ -107,7 +107,7 @@ Om måldatorn inte har de nödvändiga teckensnitten kanske dokumentet inte åte
  Inbädda teckensnitt kan göras med hjälp av`FontSettings` klass i Aspose.Words för .NET. Referera till[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
 
 ### Finns det något sätt att förhandsgranska dokumentet innan du sparar det?
- Ja, du kan använda`DocumentRenderer` klass för att förhandsgranska dokumentet innan du sparar. Kolla in Aspose.Words för .NET[dokumentation](https://reference.aspose.com/words/net/) för mer information.
+ Ja, du kan använda`DocumentRenderer` klass för att förhandsgranska dokumentet innan du sparar det. Kolla in Aspose.Words för .NET[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Kan jag anpassa HTML-utdata ytterligare?
  Absolut! De`HtmlFixedSaveOptions` class tillhandahåller olika egenskaper för att anpassa HTML-utdata. Utforska[dokumentation](https://reference.aspose.com/words/net/) för alla tillgängliga alternativ.

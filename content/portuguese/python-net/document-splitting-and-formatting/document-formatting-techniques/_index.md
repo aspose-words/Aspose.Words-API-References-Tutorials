@@ -11,7 +11,7 @@ A formatação de documentos desempenha um papel fundamental na apresentação d
 
 ## Introdução ao Aspose.Words para Python
 
-Aspose.Words for Python é uma biblioteca versátil que permite automatizar a criação, modificação e formatação de documentos. Esteja você lidando com arquivos do Microsoft Word ou outros formatos de documento, Aspose.Words oferece uma ampla gama de recursos para lidar com texto, tabelas, imagens e muito mais.
+Aspose.Words for Python é uma biblioteca versátil que permite automatizar a criação, modificação e formatação de documentos. Esteja você lidando com arquivos do Microsoft Word ou outros formatos de documentos, Aspose.Words oferece uma ampla gama de recursos para lidar com texto, tabelas, imagens e muito mais.
 
 ## Configurando o Ambiente de Desenvolvimento
 

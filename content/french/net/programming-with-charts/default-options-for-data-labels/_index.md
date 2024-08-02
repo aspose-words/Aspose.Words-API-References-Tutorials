@@ -70,7 +70,7 @@ Chart chart = shape.Chart;
 
 Ici, nous insérons un diagramme circulaire dans notre document. Le`InsertChart` La méthode nécessite le type, la largeur et la hauteur du graphique comme paramètres. Après avoir inséré le graphique, nous accédons à l’objet graphique pour le manipuler davantage.
 
-## Étape 3 : Personnaliser la série de graphiques
+## Étape 3 : Personnalisez la série de graphiques
 
 Maintenant, nous allons effacer toutes les séries existantes dans le graphique et ajouter notre série personnalisée. Cette série représentera nos points de données.
 

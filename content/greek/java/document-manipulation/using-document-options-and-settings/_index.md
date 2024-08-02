@@ -112,10 +112,10 @@ public void documentPageSetup() throws Exception
 public void addJapaneseAsEditingLanguages() throws Exception
 {
     LoadOptions loadOptions = new LoadOptions();
-    // Ορίστε τις προτιμήσεις γλώσσας για επεξεργασία
+    // Ορίστε προτιμήσεις γλώσσας για επεξεργασία
     loadOptions.getLanguagePreferences().addEditingLanguage(EditingLanguage.JAPANESE);
     Document doc = new Document("Your Directory Path" + "No default editing language.docx", loadOptions);
-    // Ελέγξτε τη γλώσσα επεξεργασίας που έχει παρακαμφθεί
+    // Ελέγξτε την παρακαμφθείσα γλώσσα επεξεργασίας
     int localeIdFarEast = doc.getStyles().getDefaultFont().getLocaleIdFarEast();
     System.out.println(localeIdFarEast == (int) EditingLanguage.JAPANESE
             ? "The document either has no any FarEast language set in defaults or it was set to Japanese originally."

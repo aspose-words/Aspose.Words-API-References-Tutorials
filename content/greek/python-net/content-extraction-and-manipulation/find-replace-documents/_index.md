@@ -18,7 +18,7 @@ url: /el/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  Εγκατάσταση Python: Βεβαιωθείτε ότι η Python είναι εγκατεστημένη στο σύστημά σας. Μπορείτε να το κατεβάσετε από[εδώ](https://www.python.org/downloads/).
 
-2.  Aspose.Words για Python: Πρέπει να έχετε εγκατεστημένο το Aspose.Words για Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/).
+2. Aspose.Words για Python: Πρέπει να έχετε εγκατεστημένο το Aspose.Words για Python. Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/python/).
 
 3. Προετοιμασία εγγράφου: Έχετε έτοιμο ένα έγγραφο του Word στο οποίο θέλετε να εκτελέσετε λειτουργίες εύρεσης και αντικατάστασης.
 

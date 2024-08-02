@@ -53,7 +53,7 @@ Gratulálok ! Most megtanulta, hogyan kell alkalmazni az áthúzott szövegstíl
 
 #### K: Hogyan adhatom hozzá az áthúzott szöveget az Aspose.Words-hez?
 
- V: Az áthúzott szöveg hozzáadásához az Aspose.Wordsben használhatja a`Font.StrikeThrough` tulajdona a`Run`tárgy. Beállíthatja ezt a tulajdonságot`true` áthúzott szöveg hozzáadásához az adott szöveghez. Például használhatja`run.Font.StrikeThrough=true` az áthúzott szöveg hozzáadásához`Run` tárgy.
+ V: Az áthúzott szöveg hozzáadásához az Aspose.Wordsben használhatja a`Font.StrikeThrough` tulajdona a`Run` tárgy. Beállíthatja ezt a tulajdonságot`true` áthúzott szöveg hozzáadásához az adott szöveghez. Például használhatja`run.Font.StrikeThrough=true` az áthúzott szöveg hozzáadásához`Run` tárgy.
 
 #### K: Hozzáadható az áthúzott szöveg több szövegrészhez ugyanabban a bekezdésben?
 

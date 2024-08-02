@@ -16,5 +16,5 @@ Que vous soyez débutant ou développeur expérimenté, ces didacticiels vous ai
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Changer le style de la table des matières dans un document Word](./change-style-of-toc-level/) | Découvrez comment modifier facilement le style d'un niveau de table des matières dans un document Word à l'aide d'Aspose.Words pour .NET. |
-| [Modifier les arrêts de tabulation de la table des matières dans un document Word](./change-toc-tab-stops/) | Découvrez comment modifier les onglets de la table des matières dans un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Changer le style de la table des matières dans un document Word](./change-style-of-toc-level/) | Découvrez comment modifier le style de la table des matières dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide étape par étape. Personnalisez votre table des matières sans effort. |
+| [Modifier les arrêts de tabulation de la table des matières dans un document Word](./change-toc-tab-stops/) | Découvrez comment modifier les tabulations de la table des matières dans les documents Word à l'aide d'Aspose.Words pour .NET. Ce guide étape par étape vous aidera à créer une table des matières d'aspect professionnel. |

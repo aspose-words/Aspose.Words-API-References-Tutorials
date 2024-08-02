@@ -100,7 +100,7 @@ Hücre ekleme sürecini hızlandırmak için mevcut hücreleri klonlayabiliriz.
 
 ```csharp
 // Daha sonra işlemi tablodaki diğer hücreler ve satırlar için tekrarlayacağız.
-// Mevcut hücreleri ve satırları klonlayarak da işleri hızlandırabiliriz.
+//Mevcut hücreleri ve satırları klonlayarak da işleri hızlandırabiliriz.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak bir tabloyu doğrudan bir Word bel
  Evet, talep edebilirsiniz[ücretsiz deneme](https://releases.aspose.com/) Kütüphaneyi satın almadan önce değerlendirmek.
 
 ### Aspose.Words for .NET'i nasıl satın alabilirim?
- Aspose.Words for .NET'i şu adresten satın alabilirsiniz:[satın alma sayfası](https://purchase.aspose.com/buy).
+Aspose.Words for .NET'i şu adresten satın alabilirsiniz:[satın alma sayfası](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET belgelerini nerede bulabilirim?
  Belgeler mevcut[Burada](https://reference.aspose.com/words/net/).

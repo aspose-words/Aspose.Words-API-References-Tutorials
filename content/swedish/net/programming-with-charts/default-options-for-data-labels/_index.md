@@ -96,7 +96,7 @@ Dataetiketter är avgörande för att göra ditt diagram informativt. Vi kommer 
 // Få tillgång till insamlingen av dataetiketter
 ChartDataLabelCollection labels = series.DataLabels;
 
-// Ställ in dataetikettalternativ
+// Ställ in alternativ för dataetikett
 labels.ShowPercentage = true;
 labels.ShowValue = true;
 labels.ShowLeaderLines = false;
@@ -138,7 +138,7 @@ Du kan använda Aspose.Words gratis med en[tillfällig licens](https://purchase.
  Ja, Aspose.Words stöder olika diagramtyper som stapel-, linje- och kolumndiagram. Kolla[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
 
 ### Är Aspose.Words kompatibelt med .NET Core?
- Ja, Aspose.Words är kompatibelt med .NET Core. Du hittar mer information i[dokumentation](https://reference.aspose.com/words/net/).
+ Ja, Aspose.Words är kompatibelt med .NET Core. Du kan hitta mer information i[dokumentation](https://reference.aspose.com/words/net/).
 
 ### Hur kan jag köpa en licens för Aspose.Words?
  Du kan köpa en licens från[Aspose butik](https://purchase.aspose.com/buy).

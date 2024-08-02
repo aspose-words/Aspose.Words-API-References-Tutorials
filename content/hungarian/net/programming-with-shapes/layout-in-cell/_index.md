@@ -2,42 +2,63 @@
 title: Elrendezés cellában
 linktitle: Elrendezés cellában
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan helyezhet el alakzatot egy táblázatcellán belül egy Word-dokumentumban az Aspose.Words for .NET használatával.
+description: Ebből az átfogó útmutatóból megtudhatja, hogyan állíthatja be az elrendezést a cellában az Aspose.Words for .NET használatával. Tökéletes azoknak a fejlesztőknek, akik a Word dokumentumokat szeretnék testre szabni.
 type: docs
 weight: 10
 url: /hu/net/programming-with-shapes/layout-in-cell/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan helyezhet el alakzatot egy Word-dokumentum táblázatcellájában az Aspose.Words for .NET használatával. Az alakzat tulajdonságainak módosításával és az elrendezési beállítások használatával szabályozhatja az alakzat elhelyezését és megjelenését a cellán belül.
+Ha valaha is szerette volna programozottan finomhangolni a Word-dokumentumok táblázatcelláinak elrendezését, akkor jó helyen jár. Ma elmerülünk a cellák elrendezésének beállításában az Aspose.Words for .NET használatával. Végigjárunk egy gyakorlati példát, lépésről lépésre lebontva, hogy könnyedén követhesse.
 
 ## Előfeltételek
-Az oktatóanyag követéséhez a következőkre van szükség:
 
-- Aspose.Words for .NET könyvtár telepítve.
-- C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
+Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Szüksége lesz egy .NET-tel beállított fejlesztői környezetre. A Visual Studio nagyszerű választás, ha ajánlásokat keres.
+3. Alapvető C# ismerete: Bár minden lépést elmagyarázok, a C# alapvető ismerete segít a könnyebb követésben.
+4.  Dokumentumkönyvtár: Készítsen egy könyvtár elérési utat, ahová a dokumentumokat mentheti. Ezt úgy fogjuk hivatkozni`YOUR DOCUMENT DIRECTORY`.
+
+## Névterek importálása
+
+kezdéshez győződjön meg róla, hogy importálja a szükséges névtereket a projektben:
+
+```csharp
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+Bontsuk fel a folyamatot kezelhető lépésekre.
+
+## 1. lépés: Hozzon létre egy új dokumentumot
+
+ Először létrehozunk egy új Word-dokumentumot, és inicializáljuk a`DocumentBuilder` tárgyat, hogy segítsen nekünk a tartalom megalkotásában.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
- Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` tiltakozik a dokumentummal való munkavégzésre.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Építsd meg az asztalt
- Használja a`StartTable`, `EndTable`, `InsertCell` , és`Write` módszerei a`DocumentBuilder` tárgyat építeni egy asztalt. Állítsa be a kívánt sormagasságot és magasságszabályt a gombbal`RowFormat` tulajdonságait.
+## 2. lépés: Indítson el egy táblázatot, és állítsa be a sorformátumot
+
+Elkezdjük összeállítani a táblázatot, és megadjuk a sorok magassági és magassági szabályait.
 
 ```csharp
 builder.StartTable();
 builder.RowFormat.Height = 100;
 builder.RowFormat.HeightRule = HeightRule.Exactly;
+```
+
+## 3. lépés: Cellák beszúrása és tartalom feltöltése
+
+Következő ciklusban cellákat szúrunk be a táblázatba. Minden 7 cellánál lezárjuk a sort, hogy újat hozzunk létre.
+
+```csharp
 for (int i = 0; i < 31; i++)
 {
     if (i != 0 && i % 7 == 0) builder.EndRow();
@@ -47,15 +68,16 @@ for (int i = 0; i < 31; i++)
 builder.EndTable();
 ```
 
-## 4. lépés: Az alakzat létrehozása és formázása
- Hozzon létre egy`Shape` objektumot, és konfigurálja tulajdonságait a vízjel meghatározásához. Állítsa be a cellán belül elhelyezendő alakzatot a gombbal`IsLayoutInCell` ingatlan.
+## 4. lépés: Adjon hozzá egy vízjel alakzatot
+
+ Most adjunk vízjelet a dokumentumunkhoz. Létrehozunk a`Shape` objektumot, és állítsa be a tulajdonságait.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 {
     RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
     RelativeVerticalPosition = RelativeVerticalPosition.Page,
-    IsLayoutInCell = true,
+    IsLayoutInCell = true, // Az alakzat megjelenítése a táblázatcellán kívül, ha cellába kerül.
     Width = 300,
     Height = 70,
     HorizontalAlignment = HorizontalAlignment.Center,
@@ -64,8 +86,9 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 };
 ```
 
-## 5. lépés: Az alak testreszabása
- Testreszabhatja a vízjel alakzatának megjelenését és szövegét olyan tulajdonságok beállításával, mint pl`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`stb.
+## 5. lépés: A vízjel megjelenésének testreszabása
+
+Tovább szabjuk a vízjel megjelenését a szín és a szöveg tulajdonságainak beállításával.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -76,8 +99,9 @@ watermark.Name = $"WaterMark_{Guid.NewGuid()}";
 watermark.WrapType = WrapType.None;
 ```
 
-## 6. lépés: Illessze be az alakzatot a dokumentumba
- Illessze be a vízjel alakzatot a dokumentumba a gombbal`InsertNode` módszere a`DocumentBuilder` tárgy. Helyezze el az alakzatot a`MoveTo` módszerrel, hogy az utolsó futtatás után helyezze el a dokumentumban.
+## 6. lépés: Helyezze be a vízjelet a dokumentumba
+
+Megtaláljuk az utolsó futtatást a dokumentumban, és beillesztjük a vízjelet arra a helyre.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -85,56 +109,39 @@ builder.MoveTo(run);
 builder.InsertNode(watermark);
 ```
 
-## 7. lépés: Mentse el a dokumentumot
- Mentse a dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.LayoutInCell.docx" néven mentjük.
+## 7. lépés: Optimalizálja a dokumentumot a Word 2010 számára
+
+kompatibilitás biztosítása érdekében a dokumentumot Word 2010-re optimalizáljuk.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
-doc
-
-.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-### Példa a Layout In Cell forráskódjához az Aspose.Words for .NET használatával 
+## 8. lépés: Mentse el a dokumentumot
+
+Végül elmentjük a dokumentumunkat a megadott könyvtárba.
 
 ```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.StartTable();
-	builder.RowFormat.Height = 100;
-	builder.RowFormat.HeightRule = HeightRule.Exactly;
-	for (int i = 0; i < 31; i++)
-	{
-		if (i != 0 && i % 7 == 0) builder.EndRow();
-		builder.InsertCell();
-		builder.Write("Cell contents");
-	}
-	builder.EndTable();
-	Shape watermark = new Shape(doc, ShapeType.TextPlainText)
-	{
-		RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
-		RelativeVerticalPosition = RelativeVerticalPosition.Page,
-		IsLayoutInCell = true, // Az alakzat megjelenítése a táblázatcellán kívül, ha cellába kerül.
-		Width = 300,
-		Height = 70,
-		HorizontalAlignment = HorizontalAlignment.Center,
-		VerticalAlignment = VerticalAlignment.Center,
-		Rotation = -40
-	};
-	watermark.FillColor = Color.Gray;
-	watermark.StrokeColor = Color.Gray;
-	watermark.TextPath.Text = "watermarkText";
-	watermark.TextPath.FontFamily = "Arial";
-	watermark.Name = $"WaterMark_{Guid.NewGuid()}";
-	watermark.WrapType = WrapType.None;
-	Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
-	builder.MoveTo(run);
-	builder.InsertNode(watermark);
-	doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
-	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
+doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-Ez az! Sikeresen elhelyezett egy alakzatot egy Word-dokumentum táblázatcellájában az Aspose.Words for .NET használatával.
+## Következtetés
+
+És megvan! Sikeresen létrehozott egy Word-dokumentumot testreszabott táblázatelrendezéssel, és vízjelet adott hozzá az Aspose.Words for .NET segítségével. Ennek az oktatóanyagnak az volt a célja, hogy világos, lépésenkénti útmutatót nyújtson a folyamat egyes részeinek megértéséhez. Ezekkel a készségekkel most már kifinomultabb és személyre szabott Word-dokumentumokat hozhat létre programozottan.
+
+## GYIK
+
+### Használhatok más betűtípust a vízjel szövegéhez?
+ Igen, módosíthatja a betűtípust a`watermark.TextPath.FontFamily` tulajdonságot a kívánt betűtípusra.
+
+### Hogyan állíthatom be a vízjel helyzetét?
+ Módosíthatja a`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , és`VerticalAlignment` tulajdonságait a vízjel helyzetének beállításához.
+
+### Lehetséges-e szöveg helyett képet használni a vízjelhez?
+ Teljesen! Létrehozhat a`Shape` a típussal`ShapeType.Image` és állítsa be a képét a segítségével`ImageData.SetImage` módszer.
+
+### Létrehozhatok változó sormagasságú táblázatokat?
+Igen, az egyes sorokhoz különböző magasságokat állíthat be a`RowFormat.Height` tulajdonságot, mielőtt cellákat illeszt be a sorba.
+
+### Hogyan távolíthatok el vízjelet a dokumentumból?
+ A vízjel eltávolításához keresse meg a dokumentum alakzatgyűjteményében, és hívja meg a`Remove` módszer.

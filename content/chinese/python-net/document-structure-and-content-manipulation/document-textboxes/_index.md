@@ -43,7 +43,7 @@ builder = aw.DocumentBuilder(doc)
 textbox = builder.insert_text_box("This is a sample textbox content.", 100, 100, 200, 50)
 ```
 
-在此代码中，我们创建一个新的`Document`和一个`DocumentBuilder`。 这`insert_text_box`方法用于向文档中添加文本框。您可以根据需要自定义文本框的内容、位置和大小。
+在此代码中，我们创建一个新的`Document`和一个`DocumentBuilder`。 这`insert_text_box`方法用于向文档中添加一个文本框。您可以根据需要自定义文本框的内容、位置和大小。
 
 ## 格式化文本框
 

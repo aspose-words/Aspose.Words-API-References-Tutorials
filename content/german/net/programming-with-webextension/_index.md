@@ -16,4 +16,4 @@ Wenn Sie diese Tutorials befolgen, können Sie die Möglichkeiten der Web-Erweit
 ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Verwenden von Web-Erweiterungsaufgabenbereichen](./using-web-extension-task-panes/) | Schritt-für-Schritt-Anleitung zur Verwendung von Web Extension Task Panes mit Aspose.Words für .NET. |
+| [Verwenden von Web-Erweiterungsaufgabenbereichen](./using-web-extension-task-panes/) | Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET Web Extension Task Panes in Word-Dokumenten hinzufügen und konfigurieren. |

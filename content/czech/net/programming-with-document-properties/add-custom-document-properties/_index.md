@@ -119,7 +119,7 @@ Pamatujte, že klíčem ke zvládnutí Aspose.Words pro .NET je praxe. Takže po
 
 ## FAQ
 
-### Jaké jsou vlastnosti vlastního dokumentu?
+### Jaké jsou vlastnosti vlastních dokumentů?
 Vlastní vlastnosti dokumentu jsou metadata, která můžete přidat do dokumentu aplikace Word a uložit tak další informace, které nepokrývají integrované vlastnosti.
 
 ### Mohu přidat jiné vlastnosti než řetězce a čísla?

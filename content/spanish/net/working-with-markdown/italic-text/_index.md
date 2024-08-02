@@ -46,7 +46,7 @@ builder.Writeln("This text will be Italic");
 
 #### P: ¿Cómo puedo poner texto en cursiva en Aspose.Words?
 
- R: Para poner texto en cursiva en Aspose.Words, puede utilizar el`Font.Italic` propiedad de la`Run`objeto. Puede establecer esta propiedad en`true` para poner en cursiva un texto específico. Por ejemplo, puedes usar`run.Font.Italic=true` poner en cursiva el texto contenido en el`Run` objeto.
+ R: Para poner texto en cursiva en Aspose.Words, puede utilizar el`Font.Italic` propiedad de la`Run` objeto. Puede establecer esta propiedad en`true` para poner en cursiva un texto específico. Por ejemplo, puedes usar`run.Font.Italic=true` poner en cursiva el texto contenido en el`Run` objeto.
 
 #### P: ¿Es posible poner en cursiva varios fragmentos de texto en el mismo párrafo?
 

@@ -1,6 +1,6 @@
 ---
-title: Uyarı Bildirimi Alın
-linktitle: Uyarı Bildirimi Alın
+title: Uyarı Bildirimi Al
+linktitle: Uyarı Bildirimi Al
 second_title: Aspose.Words Belge İşleme API'si
 description: Ayrıntılı kılavuzumuzla Aspose.Words for .NET'te yazı tipi değiştirme bildirimlerini nasıl alacağınızı öğrenin. Belgelerinizin her zaman doğru şekilde oluşturulduğundan emin olun.
 type: docs

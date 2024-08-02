@@ -86,7 +86,7 @@ Son olarak değiştirilen belgeyi kaydedin.
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesindeki içerik kontrolünü başarıyla temizlediniz. Bu güçlü kitaplık, Word belgelerinde değişiklik yapmayı çok kolaylaştırır. Bu adımları takip ederek projelerinizde yapılandırılmış belge etiketlerini kolaylıkla yönetebilirsiniz.
+Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesindeki içerik kontrolünü başarıyla temizlediniz. Bu güçlü kitaplık, Word belgelerinde değişiklik yapmayı çok kolaylaştırır. Bu adımları takip ederek projelerinizde yapılandırılmış belge etiketlerini kolayca yönetebilirsiniz.
 
 ## SSS'ler
 

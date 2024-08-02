@@ -2,89 +2,40 @@
 title: Herhaal rijen op volgende pagina's
 linktitle: Herhaal rijen op volgende pagina's
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u tabelrijen op volgende pagina's in een Word-document kunt herhalen met Aspose.Words voor .NET.
+description: Leer hoe u Word-documenten maakt met herhalende tabelkoprijen met behulp van Aspose.Words voor .NET. Volg deze gids om professionele en verzorgde documenten te garanderen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
+## Invoering
 
-In deze zelfstudie leren we hoe u de rijen van een tabel op volgende pagina's van een Word-document kunt herhalen met behulp van Aspose.Words voor .NET. We zullen een stapsgewijze handleiding volgen om de code te begrijpen en deze functie te implementeren. Aan het einde van deze zelfstudie kunt u rijen opgeven die u op volgende pagina's van uw tabel in uw Word-documenten wilt herhalen.
+Programmatisch een Word-document maken kan een hele klus zijn, vooral als u de opmaak over meerdere pagina's moet behouden. Heeft u ooit geprobeerd een tabel te maken in Word, maar besefte u dat uw koprijen zich niet herhalen op volgende pagina's? Wees niet bang! Met Aspose.Words voor .NET kunt u er eenvoudig voor zorgen dat de tabelkoppen op elke pagina worden herhaald, waardoor uw documenten een professionele en verzorgde uitstraling krijgen. In deze zelfstudie leiden we u door de stappen om dit te bereiken aan de hand van eenvoudige codevoorbeelden en gedetailleerde uitleg. Laten we erin duiken!
 
-## Stap 1: Projectconfiguratie
-1. Start Visual Studio en maak een nieuw C#-project.
-2. Voeg een verwijzing toe naar de Aspose.Words voor .NET-bibliotheek.
+## Vereisten
 
-## Stap 2: Het document aanmaken en de documentgenerator initialiseren
-Volg deze stappen om Woordenverwerking te starten met de document- en documentgenerator:
+Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
-```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words voor .NET: je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+2. .NET Framework op uw computer geïnstalleerd.
+3. Visual Studio of een andere IDE die .NET-ontwikkeling ondersteunt.
+4. Basiskennis van programmeren in C#.
 
-// Documentcreatie
-Document doc = new Document();
+Zorg ervoor dat u Aspose.Words voor .NET hebt geïnstalleerd en uw ontwikkelomgeving hebt ingesteld voordat u doorgaat.
 
-// Initialiseer de documentgenerator
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## Naamruimten importeren
 
-Zorg ervoor dat u "UW DOCUMENTENMAP" vervangt door het daadwerkelijke pad naar uw documentenmap.
-
-## Stap 3: De tabel opbouwen met herhaalde rijen
-Vervolgens bouwen we een tabel met herhaalde rijen op volgende pagina's. Gebruik de volgende code:
+Om te beginnen moet u de benodigde naamruimten in uw project importeren. Voeg het volgende toe met behulp van richtlijnen bovenaan uw C#-bestand:
 
 ```csharp
-// Begin van de tafel
-builder. StartTable();
-
-// Configuratie van de eerste regelparameters (kopregels)
-builder.RowFormat.HeadingFormat = true;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.CellFormat.Width = 100;
-
-// Voeg de eerste cel van de eerste rij in
-builder. InsertCell();
-builder.Writeln("Header line 1");
-builder. EndRow();
-
-// Voeg de tweede cel van de eerste rij in
-builder. InsertCell();
-builder.Writeln("Header line 2");
-builder. EndRow();
-
-// Configureer de parameters van de volgende regels
-builder.CellFormat.Width = 50;
-builder.ParagraphFormat.ClearFormatting();
-
-// Lus om de cellen in de volgende rijen in te voegen
-for (int i = 0; i < 50; i++)
-{
-builder. InsertCell();
-builder.RowFormat.HeadingFormat = false;
-builder.Write("Text column 1");
-builder. InsertCell();
-builder.Write("Text column 2");
-builder. EndRow();
-}
-
-// Einde van tafel
-builder. EndTable();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Hier gebruiken we de documentbouwer om een tabel te bouwen met twee koprijen en meerdere gegevensrijen. De`RowFormat.HeadingFormat` parameters worden gebruikt om koprijen te markeren die op volgende pagina's moeten worden herhaald.
+Deze naamruimten omvatten de klassen en methoden die nodig zijn om Word-documenten en -tabellen te manipuleren.
 
-## Stap 4: Het gewijzigde document opslaan
-Eindelijk VS
+## Stap 1: Initialiseer het document
 
-  moet het gewijzigde document opslaan met de koprijen herhaald op volgende pagina's van de tabel. Gebruik de volgende code:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
-```
-
-Zorg ervoor dat u het juiste pad en de juiste bestandsnaam voor het uitvoerdocument opgeeft.
-
-### Voorbeeldbroncode voor herhaalde rijen op volgende pagina's met Aspose.Words voor .NET 
+ Laten we eerst een nieuw Word-document maken en een`DocumentBuilder` om onze tafel samen te stellen.
 
 ```csharp
 // Pad naar uw documentmap
@@ -92,29 +43,79 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+ Deze code initialiseert een nieuw document en een`DocumentBuilder` object, dat helpt bij het opbouwen van de documentstructuur.
+
+## Stap 2: Start de tabel en definieer koprijen
+
+Vervolgens starten we de tabel en definiëren we de koprijen die we op volgende pagina's willen herhalen.
+
+```csharp
 builder.StartTable();
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
+
 builder.InsertCell();
 builder.Writeln("Heading row 1");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Heading row 2");
 builder.EndRow();
+```
+
+ Hier beginnen we een nieuwe tabel, stellen we de`HeadingFormat`eigendom aan`true` om aan te geven dat de rijen kopteksten zijn, en om de uitlijning en breedte van de cellen te definiëren.
+
+## Stap 3: Voeg gegevensrijen toe aan de tabel
+
+Nu voegen we meerdere gegevensrijen toe aan onze tabel. Deze rijen worden niet herhaald op volgende pagina's.
+
+```csharp
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 for (int i = 0; i < 50; i++)
 {
-	builder.InsertCell();
-	builder.RowFormat.HeadingFormat = false;
-	builder.Write("Column 1 Text");
-	builder.InsertCell();
-	builder.Write("Column 2 Text");
-	builder.EndRow();
+    builder.InsertCell();
+    builder.RowFormat.HeadingFormat = false;
+    builder.Write("Column 1 Text");
+    
+    builder.InsertCell();
+    builder.Write("Column 2 Text");
+    builder.EndRow();
 }
+```
+
+ Deze lus voegt 50 rijen met gegevens in de tabel in, met twee kolommen in elke rij. De`HeadingFormat` ingesteld op`false` voor deze rijen, omdat het geen koprijen zijn.
+
+## Stap 4: Sla het document op
+
+Ten slotte slaan we het document op in de opgegeven map.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
+Hierdoor wordt het document met de opgegeven naam opgeslagen in uw documentmap.
+
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe we de rijen van een tabel kunnen herhalen op volgende pagina's van een Word-document met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde C#-code te implementeren, kunt u opgeven welke regels u volgens uw specifieke behoeften in uw Word-documenten moet herhalen.
+
+En daar heb je het! Met slechts een paar regels code kunt u met Aspose.Words voor .NET een Word-document maken met tabellen met herhalende koprijen op volgende pagina's. Dit verbetert niet alleen de leesbaarheid van uw documenten, maar zorgt ook voor een consistente en professionele uitstraling. Ga uw gang en probeer dit uit in uw projecten!
+
+## Veelgestelde vragen
+
+### Kan ik de koprijen verder aanpassen?
+ Ja, u kunt extra opmaak toepassen op de koptekstrijen door de eigenschappen van te wijzigen`ParagraphFormat`, `RowFormat` , En`CellFormat`.
+
+### Is het mogelijk om meer kolommen aan de tabel toe te voegen?
+ Absoluut! U kunt zoveel kolommen toevoegen als nodig is door meer cellen in te voegen in de`InsertCell` methode.
+
+### Hoe kan ik ervoor zorgen dat andere rijen op volgende pagina's worden herhaald?
+ Om een rij te herhalen, stelt u de`RowFormat.HeadingFormat`eigendom aan`true` voor die specifieke rij.
+
+### Kan ik deze methode gebruiken voor bestaande tabellen in een document?
+ Ja, u kunt bestaande tabellen wijzigen door ze te openen via de`Document` object en soortgelijke opmaak toepassen.
+
+### Welke andere tabelopmaakopties zijn beschikbaar in Aspose.Words voor .NET?
+ Aspose.Words voor .NET biedt een breed scala aan tabelopmaakopties, waaronder het samenvoegen van cellen, randinstellingen en tabeluitlijning. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer details.

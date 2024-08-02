@@ -11,7 +11,7 @@ url: /ko/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 
 .NET용 Aspose.Words의 놀라운 세계에 오신 것을 환영합니다! 오늘 우리는 시간과 노력을 많이 절약할 수 있는 멋진 기능인 왕복 정보 내보내기에 대해 자세히 살펴보겠습니다. 중요한 데이터나 서식을 잃지 않고 Word 문서를 HTML로 변환하거나 그 반대로 변환한다고 상상해 보십시오. 꿈 같죠? 음, Aspose.Words를 사용하면 전적으로 가능합니다. 버클을 채우고 이 흥미진진한 여행을 시작해 보세요!
 
-## 전제조건
+## 전제 조건
 
 기본 사항을 살펴보기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 

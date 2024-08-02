@@ -11,7 +11,7 @@ url: /ko/net/join-and-append-documents/insert-document-with-builder/
 
 따라서 두 개의 Word 문서가 있고 이를 하나로 병합하려고 합니다. "이 작업을 프로그래밍 방식으로 쉽게 수행할 수 있는 방법이 없을까?"라고 생각할 수도 있습니다. 전적으로! 오늘은 Aspose.Words for .NET 라이브러리를 사용하여 한 문서를 다른 문서에 삽입하는 과정을 안내하겠습니다. 이 방법은 특히 대용량 문서를 처리하거나 프로세스를 자동화해야 할 때 매우 편리합니다. 바로 뛰어 들어 봅시다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
@@ -115,7 +115,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
  예, 다음을 사용하여`ImportFormatMode.KeepSourceFormatting`를 사용하면 원본 문서의 서식이 대상 문서에 삽입될 때 그대로 유지됩니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?  
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ### 이 프로세스를 자동화할 수 있나요?  
 전적으로! 설명된 방법은 문서 처리 작업을 자동화하기 위해 더 큰 응용 프로그램에 통합될 수 있습니다.

@@ -12,6 +12,6 @@ Przetwarzanie słów za pomocą pól tekstowych to obszerne źródło informacji
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Utwórz łącze w programie Word](./create-a-link/) | Dowiedz się, jak utworzyć łącze w słowie między polami tekstowymi w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Sprawdź sekwencję](./check-sequence/) | Dowiedz się, jak sprawdzić kolejność pól tekstowych w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Przerwij łącze do przodu w dokumencie programu Word](./break-a-link/) | Dowiedz się, jak łamać łącza do przodu w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
+| [Łączenie pól tekstowych w programie Word](./create-a-link/) | Dowiedz się, jak tworzyć i łączyć pola tekstowe w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym obszernym przewodnikiem po bezproblemowym dostosowywaniu dokumentów! |
+| [Sprawdzanie sekwencji TextBox w programie Word](./check-sequence/) | Dowiedz się, jak sprawdzić kolejność pól tekstowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem po opanowaniu przepływu dokumentów! |
+| [Przerwij łącze do przodu w dokumencie programu Word](./break-a-link/) | Dowiedz się, jak łamać łącza do przodu w polach tekstowych dokumentów programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem, aby uzyskać płynniejsze zarządzanie dokumentami. |

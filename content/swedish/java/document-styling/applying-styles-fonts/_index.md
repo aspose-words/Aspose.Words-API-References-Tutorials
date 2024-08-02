@@ -39,7 +39,7 @@ builder.writeln("Hello, Aspose.Words!");
 Låt oss nu tillämpa en stil på texten:
 
 ```java
-// Tillämpa en stil på texten
+// Använd en stil på texten
 builder.getParagraphFormat().setStyleName("Heading1");
 ```
 

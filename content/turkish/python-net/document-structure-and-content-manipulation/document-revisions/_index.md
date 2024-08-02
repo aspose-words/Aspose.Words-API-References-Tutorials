@@ -107,7 +107,7 @@ Daha fazla geri bildirim için nihai belgeyi ortak çalışanlarla paylaşın.
 
 ## Çözüm
 
-Aspose.Words for Python, belge revizyonunu ve takibini basitleştirerek işbirliğini geliştirir ve belge bütünlüğünü sağlar. Güçlü özellikleri sayesinde belgelerinizdeki değişiklikleri inceleme, kabul etme ve yönetme sürecini kolaylaştırabilirsiniz.
+Aspose.Words for Python, belge revizyonunu ve takibini basitleştirir, işbirliğini geliştirir ve belge bütünlüğünü sağlar. Güçlü özellikleriyle belgelerinizdeki değişiklikleri inceleme, kabul etme ve yönetme sürecini kolaylaştırabilirsiniz.
 
 ## SSS
 

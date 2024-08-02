@@ -2,89 +2,40 @@
 title: Sorok ismétlése a következő oldalakon
 linktitle: Sorok ismétlése a következő oldalakon
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan ismételheti meg a táblázat sorait a következő oldalakon egy Word-dokumentumban az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan hozhat létre ismétlődő táblázatfejlécsorokat tartalmazó Word-dokumentumokat az Aspose.Words for .NET használatával. Kövesse ezt az útmutatót a professzionális és kidolgozott dokumentumok biztosításához.
 type: docs
 weight: 10
 url: /hu/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban megtanuljuk, hogyan ismételheti meg a táblázat sorait egy Word-dokumentum következő oldalain az Aspose.Words for .NET használatával. A kód megértéséhez és ennek a funkciónak a megvalósításához lépésről lépésre követjük az útmutatót. Ennek az oktatóanyagnak a végére megadhatja azokat a sorokat, amelyeket meg kell ismételnie a táblázat következő oldalain a Word-dokumentumokban.
+Word-dokumentumok programozott létrehozása ijesztő feladat lehet, különösen akkor, ha a formázást több oldalon is meg kell őriznie. Próbáltál már táblázatot készíteni a Wordben, de rájöttél, hogy a fejlécsorok nem ismétlődnek a következő oldalakon? Ne félj! Az Aspose.Words for .NET segítségével könnyedén biztosíthatja, hogy a táblázat fejlécei minden oldalon ismétlődjenek, így professzionális és csiszolt megjelenést kölcsönöz dokumentumainak. Ebben az oktatóanyagban egyszerű kódpéldák és részletes magyarázatok segítségével végigvezetjük az ehhez szükséges lépéseken. Merüljünk el!
 
-## 1. lépés: A projekt beállítása
-1. Indítsa el a Visual Studio programot, és hozzon létre egy új C# projektet.
-2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
+## Előfeltételek
 
-## 2. lépés: A dokumentum létrehozása és a dokumentumgenerátor inicializálása
-A Szövegfeldolgozás elindításához a dokumentummal és a dokumentumgenerátorral, kövesse az alábbi lépéseket:
+Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words for .NET: Letöltheti[itt](https://releases.aspose.com/words/net/).
+2. .NET Framework telepítve van a gépére.
+3. Visual Studio vagy bármely más IDE, amely támogatja a .NET fejlesztést.
+4. A C# programozás alapjai.
 
-// Dokumentumkészítés
-Document doc = new Document();
+A folytatás előtt győződjön meg arról, hogy telepítette az Aspose.Words for .NET programot, és beállította a fejlesztői környezetet.
 
-// Inicializálja a dokumentumgenerátort
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## Névterek importálása
 
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
-
-## 3. lépés: A táblázat felépítése ismétlődő sorokkal
-Ezután elkészítünk egy táblázatot a következő oldalakon ismétlődő sorokkal. Használja a következő kódot:
+A kezdéshez importálnia kell a szükséges névtereket a projektbe. Adja hozzá a következőket a C# fájl tetején található direktívák használatával:
 
 ```csharp
-// A táblázat eleje
-builder. StartTable();
-
-// Az első sor paramétereinek konfigurálása (fejlécsorok)
-builder.RowFormat.HeadingFormat = true;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.CellFormat.Width = 100;
-
-// Szúrja be az első sor első celláját
-builder. InsertCell();
-builder.Writeln("Header line 1");
-builder. EndRow();
-
-// Illessze be az első sor második celláját
-builder. InsertCell();
-builder.Writeln("Header line 2");
-builder. EndRow();
-
-// Állítsa be a következő sorok paramétereit
-builder.CellFormat.Width = 50;
-builder.ParagraphFormat.ClearFormatting();
-
-// Hurok a cellák beszúrásához a következő sorokba
-for (int i = 0; i < 50; i++)
-{
-builder. InsertCell();
-builder.RowFormat.HeadingFormat = false;
-builder.Write("Text column 1");
-builder. InsertCell();
-builder.Write("Text column 2");
-builder. EndRow();
-}
-
-// A táblázat vége
-builder. EndTable();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Itt a dokumentumkészítőt használjuk két fejlécsorral és több adatsorral rendelkező táblázat összeállítására. A`RowFormat.HeadingFormat` paraméterek a fejlécsorok megjelölésére szolgálnak, amelyeket a következő oldalakon meg kell ismételni.
+Ezek a névterek tartalmazzák a Word-dokumentumok és -táblázatok kezeléséhez szükséges osztályokat és metódusokat.
 
-## 4. lépés: Mentse el a módosított dokumentumot
-Végül az USA
+## 1. lépés: Inicializálja a dokumentumot
 
-  el kell mentenie a módosított dokumentumot úgy, hogy a fejlécek a táblázat következő oldalain ismétlődnek. Használja a következő kódot:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
-```
-
-Ügyeljen arra, hogy a megfelelő elérési utat és fájlnevet adja meg a kimeneti dokumentumhoz.
-
-### Minta forráskód a Sorok ismétlése a következő oldalakon az Aspose.Words for .NET használatával 
+ Először hozzunk létre egy új Word dokumentumot, és a`DocumentBuilder` asztalunk elkészítéséhez.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -92,29 +43,79 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+ Ez a kód inicializál egy új dokumentumot, és a`DocumentBuilder` objektum, amely segít a dokumentumstruktúra felépítésében.
+
+## 2. lépés: Indítsa el a táblázatot, és határozza meg a fejlécsorokat
+
+Ezután elindítjuk a táblázatot, és meghatározzuk azokat a fejlécsorokat, amelyeket meg szeretnénk ismételni a következő oldalakon.
+
+```csharp
 builder.StartTable();
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
+
 builder.InsertCell();
 builder.Writeln("Heading row 1");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Heading row 2");
 builder.EndRow();
+```
+
+ Itt indítunk egy új táblázatot, állítjuk be a`HeadingFormat`tulajdonát`true` jelzi, hogy a sorok fejlécek, és meghatározza a cellák igazítását és szélességét.
+
+## 3. lépés: Adjon hozzá adatsorokat a táblázathoz
+
+Most több adatsort adunk hozzá a táblázatunkhoz. Ezek a sorok nem ismétlődnek a következő oldalakon.
+
+```csharp
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 for (int i = 0; i < 50; i++)
 {
-	builder.InsertCell();
-	builder.RowFormat.HeadingFormat = false;
-	builder.Write("Column 1 Text");
-	builder.InsertCell();
-	builder.Write("Column 2 Text");
-	builder.EndRow();
+    builder.InsertCell();
+    builder.RowFormat.HeadingFormat = false;
+    builder.Write("Column 1 Text");
+    
+    builder.InsertCell();
+    builder.Write("Column 2 Text");
+    builder.EndRow();
 }
+```
+
+ Ez a ciklus 50 adatsort szúr be a táblázatba, minden sorban két oszloppal. A`HeadingFormat` be van állítva`false` ezekhez a sorokhoz, mivel ezek nem fejlécesorok.
+
+## 4. lépés: Mentse el a dokumentumot
+
+Végül elmentjük a dokumentumot a megadott könyvtárba.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
+Ezzel elmenti a dokumentumot a megadott néven a dokumentumkönyvtárába.
+
 ## Következtetés
-Ebben az oktatóanyagban megtanultuk, hogyan ismételheti meg a táblázat sorait egy Word-dokumentum következő oldalain az Aspose.Words for .NET használatával. Ha követi ezt a lépésenkénti útmutatót, és implementálja a mellékelt C# kódot, megadhatja, hogy mely sorokat ismételje meg az Ön egyedi igényei szerint a Word-dokumentumokban.
+
+És megvan! Néhány sornyi kóddal az Aspose.Words for .NET segítségével létrehozhat egy Word-dokumentumot olyan táblázatokkal, amelyek következő oldalain ismétlődő fejlécsorok vannak. Ez nemcsak javítja a dokumentumok olvashatóságát, hanem egységes és professzionális megjelenést is biztosít. Most pedig próbálja ki ezt a projektjeiben!
+
+## GYIK
+
+### Tovább szabhatom a fejlécsorokat?
+ Igen, a fejlécek tulajdonságainak módosításával további formázást is alkalmazhat`ParagraphFormat`, `RowFormat` , és`CellFormat`.
+
+### Lehet-e további oszlopokat hozzáadni a táblázathoz?
+ Teljesen! Annyi oszlopot adhat hozzá, amennyi szükséges, ha több cellát szúr be a`InsertCell` módszer.
+
+### Hogyan állíthatom be, hogy más sorok ismétlődjenek a következő oldalakon?
+ Ha bármelyik sort meg szeretné ismételni, állítsa be a`RowFormat.HeadingFormat`tulajdonát`true` az adott sorhoz.
+
+### Használhatom ezt a módszert egy dokumentum meglévő tábláihoz?
+ Igen, módosíthatja a meglévő táblákat, ha eléri őket a`Document` objektum és hasonló formázás alkalmazása.
+
+### Milyen egyéb táblázatformázási lehetőségek érhetők el az Aspose.Words for .NET-ben?
+ Az Aspose.Words for .NET a táblázatformázási lehetőségek széles skáláját kínálja, beleértve a cellaegyesítést, a szegélybeállításokat és a táblázat igazítását. Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.

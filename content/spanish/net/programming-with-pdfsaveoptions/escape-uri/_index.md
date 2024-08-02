@@ -17,7 +17,7 @@ Antes de comenzar, asegurémonos de que tiene todo lo que necesita:
 
 1.  Aspose.Words para .NET: asegúrese de tener la última versión. Puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo .NET.
-3. Conocimientos básicos de C#: este tutorial asume que tienes conocimientos básicos de programación en C#.
+3. Conocimientos básicos de C#: este tutorial asume que tiene conocimientos básicos de programación en C#.
 
 ## Importar espacios de nombres
 

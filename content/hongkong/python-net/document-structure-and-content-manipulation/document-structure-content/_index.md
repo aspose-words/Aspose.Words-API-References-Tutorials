@@ -22,7 +22,7 @@ Aspose.Words 是一個全面的 API，使開發人員能夠以程式設計方式
 pip install aspose-words
 ```
 
-## 載入和建立Word文檔
+## 載入並建立Word文檔
 
 您可以載入現有的 Word 文件或從頭開始建立新文件。就是這樣：
 

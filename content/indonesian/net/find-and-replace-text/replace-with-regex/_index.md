@@ -90,7 +90,7 @@ Dan itu dia! Anda telah berhasil menggunakan regex untuk menemukan dan mengganti
 ## FAQ
 
 ### Bisakah saya menggunakan pola regex yang lebih kompleks dengan Aspose.Words untuk .NET?  
-Sangat! Aspose.Words mendukung berbagai pola regex. Anda dapat menyesuaikan pola Anda agar sesuai dengan kebutuhan Anda.
+Sangat! Aspose.Words mendukung berbagai pola regex. Anda dapat menyesuaikan pola agar sesuai dengan kebutuhan Anda.
 
 ### Apakah Aspose.Words untuk .NET mendukung operasi teks lainnya?  
 Ya, benar. Aspose.Words untuk .NET menawarkan serangkaian fitur yang kaya untuk memanipulasi dokumen Word, termasuk ekstraksi teks, pemformatan, dan banyak lagi.

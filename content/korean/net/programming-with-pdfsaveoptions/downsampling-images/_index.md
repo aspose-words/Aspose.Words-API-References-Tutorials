@@ -11,7 +11,7 @@ url: /ko/net/programming-with-pdfsaveoptions/downsampling-images/
 
 PDF는 문서 공유부터 eBook 제작에 이르기까지 모든 작업에 사용되는 디지털 세계의 필수 요소입니다. 그러나 특히 이미지가 많은 콘텐츠를 처리할 때 크기가 장애물이 될 수 있습니다. 여기서 다운샘플링 이미지가 작동합니다. PDF 내의 이미지 해상도를 줄이면 품질을 크게 저하시키지 않으면서 파일 크기를 크게 줄일 수 있습니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 이를 달성하는 단계를 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
@@ -87,4 +87,4 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 이상적인 해상도는 특정 요구 사항에 따라 다릅니다. 일반적으로 웹 이미지에는 72DPI가 사용되는 반면 인쇄 품질에는 더 높은 해상도가 사용됩니다.
 
 ### .NET용 Aspose.Words는 무료인가요?
- Aspose.Words for .NET은 상용 제품이지만 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/) 또는[임시면허](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for .NET은 상용 제품이지만 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/).

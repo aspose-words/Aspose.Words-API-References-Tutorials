@@ -2,118 +2,106 @@
 title: 每级使用空格字符进行列表缩进
 linktitle: 每级使用空格字符进行列表缩进
 second_title: Aspose.Words 文档处理 API
-description: 在 Aspose.Words for .NET 中，逐步指导如何使用每个级别的空格字符进行列表缩进。轻松创建结构良好的 Word 文档。
+description: 了解如何在 Aspose.Words for .NET 中创建带有空格字符缩进的多级列表。精确文档格式的分步指南。
 type: docs
 weight: 10
 url: /zh/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words for .NET 是一个功能强大的库，可用于在 C# 应用程序中创建、编辑和操作 Word 文档。Aspose.Words 提供的功能之一是可以在每个级别使用一个空格字符来缩进列表。在本指南中，我们将向您展示如何使用 Aspose.Words for .NET 的 C# 源代码来实现此功能。
+## 介绍
 
-## 了解 Aspose.Words 库
+在文档格式化方面，尤其是在处理列表时，精度是关键。在需要创建具有不同缩进级别的文档的情况下，Aspose.Words for .NET 提供了强大的工具来处理此任务。一个特别有用的功能是在文本文件中配置列表缩进。本指南将引导您了解如何使用空格字符进行列表缩进，确保您的文档保持所需的结构和可读性。
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。Aspose.Words 是一个流行的库，它使 Word 文档的文字处理变得简单而高效。它提供了创建、修改和操作 Word 文档的各种功能，包括管理列表和缩进。
+## 先决条件
 
-## 创建文档并添加内容
+在深入学习本教程之前，您需要满足以下条件：
 
-第一步是创建一个新文档并向其中添加内容。使用 Document 类创建一个新文档实例。然后使用 DocumentBuilder 类添加文本并创建一个具有多级缩进的列表。以下是示例：
+-  Aspose.Words for .NET：确保已安装 Aspose.Words 库。如果尚未安装，可以从[Aspose 网站](https://releases.aspose.com/words/net/).
+- Visual Studio：用于编写和测试代码的开发环境。
+- 对 C# 的基本了解：熟悉 C# 和 .NET 框架将帮助您顺利跟进。
+
+## 导入命名空间
+
+要开始使用 Aspose.Words，您需要导入必要的命名空间。以下是如何将它们包含在您的项目中：
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+让我们分解一下创建具有多级列表的文档并指定空格字符进行缩进的过程。 
+
+## 步骤 1：设置文档
+
+首先，您需要创建一个新文档并初始化`DocumentBuilder`对象。此对象可让您轻松添加内容并根据需要设置其格式。
+
+```csharp
+//文档目录的路径
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+//创建文档并添加内容
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+在此代码片段中，替换`"YOUR DOCUMENTS DIRECTORY"`与您想要保存文档的实际路径。
+
+## 步骤 2：创建具有多级缩进的列表
+
+随着`DocumentBuilder`例如，您现在可以创建具有不同缩进级别的列表。使用`ListFormat`属性来根据需要应用编号并缩进列表项。
+
+```csharp
 //创建具有三级缩进的列表
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-在此示例中，我们创建一个新文档并使用 DocumentBuilder 添加文本并创建一个具有三级缩进的列表。我们已向列表中添加了三个项目，每个项目都缩进一个额外的级别。
+在此步骤中，`ApplyNumberDefault`设置列表格式，并`ListIndent`用于增加每个后续列表项的缩进级别。
 
-## 每级使用一个空格字符进行列表缩进
+## 步骤 3：配置缩进的空格字符
 
-添加内容后，我们现在可以使用每个级别一个空格字符来配置列表的缩进。为此，我们使用 TxtSaveOptions 类，并将 ListIndentation.Count 属性设置为缩进级别数，将 ListIndentation.Character 属性设置为要使用的空格字符。方法如下：
+现在您已设置好列表，下一步是配置在将文档保存为文本文件时如何处理列表缩进。您将使用`TxtSaveOptions`指定应使用空格字符进行缩进。
 
 ```csharp
+//每级列表缩进使用一个空格字符
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+这里，`ListIndentation.Count`指定每个缩进级别的空格字符数，以及`ListIndentation.Character`设置用于缩进的实际字符。
+
+## 步骤 4：使用指定的选项保存文档
+
+最后，使用配置的选项保存您的文档。这将应用缩进设置并以所需的格式保存您的文件。
+
+```csharp
+//使用指定选项保存文档
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-在此示例中，我们创建 TxtSaveOptions 的一个实例，并将 ListIndentation.Count 属性设置为 3，以指示列表中有三个缩进级别。我们还将 ListIndentation.Character 属性设置为我们要用于缩进的空格字符 (' ')。
-
-### 使用 Aspose.Words for .NET 实现“列表缩进每级使用一个空格字符”功能的示例源代码
-
-以下是 Aspose.Words for .NET 中“列表缩进每级使用一个空格字符”功能的完整示例源代码：
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             //文档目录的路径
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             //创建文档并添加内容
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             //创建具有三级缩进的列表
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             //每级列表缩进使用一个空格字符
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             //使用指定选项保存文档
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+此代码片段将文档保存到`dataDir`使用文件名`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`。保存的文件将根据您的缩进设置格式化列表。
 
 ## 结论
 
-在本指南中，我们解释了如何使用 Aspose.Words for .NET 应用“使用一个空格字符每级缩进列表”功能。通过遵循提供的步骤并使用提供的 C# 源代码，您可以轻松地将 Word 文档中的列表缩进配置为使用一个空格字符每级。Aspose.Words 通过文本格式和列表管理为文字处理提供了极大的灵活性和功能，使您可以在 C# 应用程序中创建结构良好的文档。
+通过执行这些步骤，您已成功创建了一个使用空格字符进行格式化的多级列表缩进文档。这种方法可确保您的列表结构良好且易于阅读，即使保存为文本文件也是如此。Aspose.Words for .NET 提供了强大的文档操作工具，掌握这些功能可以显著增强您的文档处理工作流程。
 
-### 经常问的问题
+## 常见问题解答
 
-#### 问：Aspose.Words for .NET是什么？
-Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中创建、编辑和操作 Word 文档。它为 Word 文档的文字处理提供了许多功能，包括能够使用每个级别一个空格来缩进列表。
+### 除了空格之外，我可以使用不同的字符来缩进列表吗？
+是的，您可以通过设置指定列表缩进的不同字符`Character`财产`TxtSaveOptions`.
 
-#### 问：如何使用 Aspose.Words for .NET 在每个级别上使用一个空格来缩进列表？
-您可以按照以下步骤每级使用一个空格进行列表缩进：
+### 如何在列表中使用项目符号代替数字？
+使用`ListFormat.ApplyBulletDefault()`代替`ApplyNumberDefault()`创建项目符号列表。
 
-使用创建一个新文档`Document`班级。
+### 我可以动态调整缩进的空格数吗？
+是的，你可以调整`ListIndentation.Count`属性根据您的要求设置空格数。
 
-使用`DocumentBuilder`类来向文档添加内容并创建具有多级缩进的列表。
+### 文档创建后可以更改列表缩进吗？
+是的，您可以在保存文档之前随时修改列表格式和缩进设置。
 
-添加内容并配置列表缩进后，使用`TxtSaveOptions`类并设置`ListIndentation.Count`属性缩进级别数和`ListIndentation.Character`空间上的财产（`' '`）来使用。
-
-使用指定的选项保存文档`Save`方法`Document`班级。
-
-#### 问：Aspose.Words 是否支持其他字符用于列表缩进？
-是的，Aspose.Words 支持其他字符来缩进列表。您可以使用非空白字符，例如制表符 (`'\t'` ）或其他特殊字符，通过设置`ListIndentation.Character`属性更改为所需字符。
-
-#### 问：是否可以自定义列表缩进每级的空格数？
-是的，您可以通过更改`ListIndentation.Count`财产在`TxtSaveOptions`类。您可以指定每个缩进级别所需的空格数。
-
-#### 问：Aspose.Words 还提供哪些用于列表管理的其他功能？
-Aspose.Words 提供许多用于管理 Word 文档中的列表的功能。您可以创建编号或项目符号列表、设置缩进级别、自定义列表样式、添加列表项等。
+### 哪些其他文档格式支持列表缩进设置？
+除了文本文件之外，使用 Aspose.Words 时，列表缩进设置还可以应用于其他格式，例如 DOCX、PDF 和 HTML。

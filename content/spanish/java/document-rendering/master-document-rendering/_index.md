@@ -198,7 +198,7 @@ doc.save("output.png", saveOptions);
 
 ### Representar elementos de documentos individuales
 
-Para un control más granular, puede representar elementos de documentos individuales, como tablas o imágenes.
+Para un control más granular, puede representar elementos individuales del documento, como tablas o imágenes.
 
 ```java
 // Representar una tabla específica

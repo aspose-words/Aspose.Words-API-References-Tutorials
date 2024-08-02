@@ -73,4 +73,4 @@ Igen, az Aspose.Words for .NET kompatibilis a .NET-keretrendszerrel és a .NET C
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[itt](https://releases.aspose.com/).
 
 ### Hol találok további példákat és dokumentációt?
- Átfogó dokumentációt és példákat találhat a[Aspose.Words for .NET dokumentációs oldal](https://reference.aspose.com/words/net/).
+ Részletes dokumentációt és példákat találhat az oldalon[Aspose.Words for .NET dokumentációs oldal](https://reference.aspose.com/words/net/).

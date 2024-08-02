@@ -99,7 +99,7 @@ Selamat! Anda telah berhasil mempelajari cara mengenali dan mengganti teks dalam
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word dalam aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
  Anda dapat menginstal Aspose.Words untuk .NET dari[tautan unduhan](https://releases.aspose.com/words/net/). Ikuti petunjuk instalasi yang disediakan.

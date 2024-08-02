@@ -11,7 +11,7 @@ url: /ko/net/programming-with-document-options-and-settings/add-japanese-as-edit
 
 문서를 열려고 했는데 언어 설정이 모두 잘못되어 읽을 수 없는 텍스트의 바다에 빠져 헤매신 적이 있습니까? 마치 외국어로 지도를 읽으려는 것과 같습니다! 글쎄요, 다른 언어, 특히 일본어로 된 문서로 작업하는 경우 Aspose.Words for .NET이 가장 적합한 도구입니다. 이 문서에서는 Aspose.Words for .NET을 사용하여 문서에 편집 언어로 일본어를 추가하는 방법을 단계별로 안내합니다. 이제 번역에 빠져 다시는 길을 잃지 않도록 해보세요!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 준비해야 할 몇 가지 사항이 있습니다.
 
@@ -60,7 +60,7 @@ loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
 
 ## 4단계: 문서 로드
 

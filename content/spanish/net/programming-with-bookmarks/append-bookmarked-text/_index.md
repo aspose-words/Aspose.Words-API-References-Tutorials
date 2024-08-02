@@ -73,7 +73,7 @@ if (startPara.ParentNode != endPara.ParentNode)
     throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Paso 4: identificar el nodo a detener
+## Paso 4: Identificar el nodo a detener
 
 A continuación, debemos determinar el nodo donde dejaremos de copiar texto. Este será el nodo inmediatamente después del párrafo final.
 

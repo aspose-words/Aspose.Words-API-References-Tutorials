@@ -32,7 +32,7 @@ doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 
 ## Langkah 3: Menyimpan Dokumen
 
-Terakhir, simpan dokumen yang dimodifikasi:
+Terakhir, simpan dokumen yang diubah:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");

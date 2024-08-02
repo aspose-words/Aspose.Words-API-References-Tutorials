@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Einfügen eines Kreisdiagramms
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
 
-// Zugriff auf das Diagrammobjekt
+// Greifen Sie auf das Diagrammobjekt zu
 Chart chart = shape.Chart;
 ```
 

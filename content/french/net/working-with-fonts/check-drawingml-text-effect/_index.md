@@ -68,7 +68,7 @@ Dans ce didacticiel, nous avons vu comment vérifier les effets de texte Drawing
 
 #### Q : Comment puis-je accéder aux effets de texte DrawingML dans un document Word à l'aide d'Aspose.Words ?
 
-: Avec Aspose.Words, vous pouvez accéder aux effets de texte DrawingML dans un document Word à l'aide de l'API fournie. Vous pouvez parcourir les éléments de texte et vérifier les propriétés spécifiques des effets de texte, telles que la couleur, la taille, etc.
+R : Avec Aspose.Words, vous pouvez accéder aux effets de texte DrawingML dans un document Word à l'aide de l'API fournie. Vous pouvez parcourir les éléments de texte et vérifier les propriétés spécifiques des effets de texte, telles que la couleur, la taille, etc.
 
 #### Q : Quels types d’effets de texte DrawingML sont couramment utilisés dans les documents Word ?
 
@@ -76,11 +76,11 @@ R : Les types d'effets de texte DrawingML couramment utilisés dans les documen
 
 #### Q : Comment puis-je vérifier la couleur d'un effet de texte DrawingML dans un document Word ?
 
-R : Pour vérifier la couleur d'un effet de texte DrawingML dans un document Word, vous pouvez utiliser les méthodes fournies par Aspose.Words pour accéder aux propriétés de couleur de l'effet de texte. De cette façon, vous pouvez obtenir la couleur utilisée pour l'effet de texte spécifique.
+: Pour vérifier la couleur d'un effet de texte DrawingML dans un document Word, vous pouvez utiliser les méthodes fournies par Aspose.Words pour accéder aux propriétés de couleur de l'effet de texte. De cette façon, vous pouvez obtenir la couleur utilisée pour l'effet de texte spécifique.
 
 #### Q : Est-il possible de vérifier les effets de texte dans les documents Word contenant plusieurs sections ?
 
-: Oui, Aspose.Words permet de vérifier les effets de texte dans les documents Word contenant plusieurs sections. Vous pouvez naviguer dans chaque section du document et accéder aux effets de texte pour chaque section individuellement.
+R : Oui, Aspose.Words permet de vérifier les effets de texte dans les documents Word contenant plusieurs sections. Vous pouvez naviguer dans chaque section du document et accéder aux effets de texte pour chaque section individuellement.
 
 #### Q : Comment puis-je vérifier l'opacité d'un effet de texte DrawingML dans un document Word ?
 

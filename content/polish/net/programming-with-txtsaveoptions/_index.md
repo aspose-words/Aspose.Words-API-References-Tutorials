@@ -16,6 +16,6 @@ Dzięki tym tutorialom będziesz mógł w pełni wykorzystać funkcjonalności A
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Dodaj znaki BiDi w dokumencie programu Word](./add-bidi-marks/) | Dowiedz się, jak dodawać znaki BiDi do dokumentu programu Word za pomocą Aspose.Words dla .NET i tworzyć profesjonalne dokumenty wielojęzyczne. |
-| [Użyj znaku tabulacji na poziomie dla wcięć listy](./use-tab-character-per-level-for-list-indentation/) | Dowiedz się, jak korzystać z list wcięć z funkcją znaków tabulacji w Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby tworzyć dobrze zorganizowane i czytelne dokumenty. Oszczędź czas i usprawnij przepływ pracy dzięki tej zaawansowanej funkcji. Uzyskaj dostęp do pełnego samouczka już teraz. |
-| [Użyj znaku spacji na poziomie dla wcięcia listy](./use-space-character-per-level-for-list-indentation/) | Przewodnik krok po kroku dotyczący używania znaku spacji na każdym poziomie w celu wcięcia listy w Aspose.Words dla .NET. Z łatwością twórz dobrze zorganizowane dokumenty programu Word. |
+| [Dodaj znaki BiDi w dokumencie programu Word](./add-bidi-marks/) | Z tego przewodnika dowiesz się, jak dodawać znaki dwukierunkowe (Bidi) w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Zapewnij właściwy kierunek tekstu w przypadku treści wielojęzycznych. |
+| [Użyj znaku tabulacji na poziomie dla wcięć listy](./use-tab-character-per-level-for-list-indentation/) | Dowiedz się, jak tworzyć wielopoziomowe listy z wcięciami tabulacji przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem, aby uzyskać precyzyjne formatowanie list w dokumentach. |
+| [Użyj znaku spacji na poziomie dla wcięcia listy](./use-space-character-per-level-for-list-indentation/) | Dowiedz się, jak tworzyć listy wielopoziomowe z wcięciem spacji w Aspose.Words dla .NET. Przewodnik krok po kroku dotyczący precyzyjnego formatowania dokumentu. |

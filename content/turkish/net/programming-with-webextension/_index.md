@@ -7,7 +7,7 @@ type: docs
 weight: 1530
 url: /tr/net/programming-with-webextension/
 ---
-Aspose.Words for .NET WebExtensions ile Kelime İşleme eğitimleri, Word belgelerinizdeki Web Uzantıları ile Kelime İşleme'nin gelişmiş özellikleri konusunda size yol gösterir. Eğitimler, web uzantıları oluşturmak, düzenlemek ve silmek için Aspose.Words API'lerinin nasıl kullanılacağını ve ayrıca Word belgelerine gömülü JavaScript koduyla nasıl etkileşime geçileceğini ayrıntılarıyla anlatıyor.
+Aspose.Words for .NET WebExtensions ile Kelime İşleme eğitimleri, Word belgelerinizdeki Web Uzantıları ile Kelime İşlemenin gelişmiş özellikleri konusunda size yol gösterir. Eğitimler, web uzantıları oluşturmak, düzenlemek ve silmek için Aspose.Words API'lerinin nasıl kullanılacağını ve ayrıca Word belgelerine gömülü JavaScript koduyla nasıl etkileşimde bulunulacağını ayrıntılarıyla anlatıyor.
 
 Bu eğitimler, WebExtensions'ın Aspose.Words for .NET ile işlevselliğini anlamak ve kullanmak için adım adım talimatlar sağlar. Web uzantısı nesnelerine nasıl erişeceğinizi, olayları nasıl yöneteceğinizi, JavaScript kodunu nasıl değerlendireceğinizi, özel işlevler nasıl ekleyeceğinizi ve daha fazlasını öğreneceksiniz. İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler WebExtensions ile programlama tekniklerinde uzmanlaşmanıza yardımcı olacaktır.
 
@@ -16,4 +16,4 @@ Bu eğitimleri takip ederek, Word belgelerinizdeki web uzantılarının özellik
 ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Web Uzantısı Görev Bölmelerini Kullanma](./using-web-extension-task-panes/) | Aspose.Words for .NET ile Web Uzantısı Görev Bölmelerini kullanma konusunda adım adım kılavuz. |
+| [Web Uzantısı Görev Bölmelerini Kullanma](./using-web-extension-task-panes/) | Bu ayrıntılı, adım adım eğitimde Aspose.Words for .NET kullanarak Word belgelerinde Web Uzantısı Görev Bölmelerini nasıl ekleyeceğinizi ve yapılandıracağınızı öğrenin. |

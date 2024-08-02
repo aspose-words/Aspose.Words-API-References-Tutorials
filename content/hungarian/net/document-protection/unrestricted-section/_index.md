@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A`Document` osztály inicializál egy új dokumentumot, és a`DocumentBuilder` segít abban, hogy tartalmat egyszerűen hozzáadhassunk dokumentumunkhoz.
+ A`Document` osztály inicializál egy új dokumentumot, és a`DocumentBuilder` segít abban, hogy tartalmat adjunk könnyen dokumentumunkhoz.
 
 ## 2. lépés: Szekciók beszúrása
 

@@ -9,7 +9,7 @@ url: /pt/net/programming-with-charts/insert-simple-column-chart/
 ---
 ## Introdução
 
-Na era digital de hoje, a criação de documentos dinâmicos e informativos é essencial. Elementos visuais como gráficos podem melhorar significativamente a apresentação dos dados, facilitando a compreensão rápida de informações complexas. Neste tutorial, nos aprofundaremos em como inserir um gráfico de colunas simples em um documento do Word usando Aspose.Words for .NET. Quer você seja um desenvolvedor, um analista de dados ou alguém que deseja aprimorar seus relatórios, dominar essa habilidade pode levar a criação de documentos para o próximo nível.
+Na era digital de hoje, a criação de documentos dinâmicos e informativos é essencial. Elementos visuais como gráficos podem melhorar significativamente a apresentação dos dados, facilitando a compreensão rápida de informações complexas. Neste tutorial, nos aprofundaremos em como inserir um gráfico de colunas simples em um documento do Word usando Aspose.Words for .NET. Seja você um desenvolvedor, um analista de dados ou alguém que deseja aprimorar seus relatórios, dominar essa habilidade pode levar a criação de documentos para o próximo nível.
 
 ## Pré-requisitos
 

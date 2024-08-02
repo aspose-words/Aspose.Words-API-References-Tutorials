@@ -70,7 +70,7 @@ doc.save("output.txt", saveOptions);
 
  Substituir`"output.txt"` com o caminho do arquivo desejado onde deseja salvar o arquivo de texto.
 
-## Código-fonte completo para salvar documentos como arquivos de texto em Aspose.Words for Java
+## Código-fonte completo para salvar documentos como arquivos de texto em Aspose.Words para Java
 
 ```java
     public void addBidiMarks() throws Exception

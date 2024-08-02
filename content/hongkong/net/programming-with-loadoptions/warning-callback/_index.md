@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-loadoptions/warning-callback/
 ---
 ## 介紹
 
-您是否想知道如何在以程式設計方式處理 Word 文件時擷取和處理警告？使用 Aspose.Words for .NET，您可以實作警告回呼來管理文件處理過程中出現的潛在問題。本教學將逐步引導您完成整個過程，確保您全面了解如何在專案中設定和使用警告回呼功能。
+您是否想知道如何在以程式設計方式處理 Word 文件時擷取並處理警告？使用 Aspose.Words for .NET，您可以實作警告回呼來管理文件處理過程中出現的潛在問題。本教學將逐步引導您完成整個過程，確保您全面了解如何在專案中設定和使用警告回呼功能。
 
 ## 先決條件
 
@@ -97,7 +97,7 @@ private class DocumentLoadingWarningCallback : IWarningCallback
 您需要配置`LoadOptions`與`WarningCallback`屬性並實作一個透過實作來處理警告的類`IWarningCallback`介面.
 
 ### 如果沒有有效的License，我可以使用警告回呼功能嗎？
-您可以使用它的免費試用版，但為了獲得完整功能，建議您取得有效的授權。您可以獲得[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
+您可以使用它的免費試用版，但為了獲得完整功能，建議您取得有效的授權。你可以獲得一個[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
 
 ### 處理文件時我會收到哪些類型的警告？
 警告可能包括與不支援的功能、格式不一致或其他文件特定問題相關的問題。

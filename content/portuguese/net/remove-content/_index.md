@@ -16,7 +16,7 @@ Se você precisa manipular, criar, converter ou gerar documentos do Word, os tut
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Remover quebras de página em documento do Word](./remove-page-breaks/) | Aprenda como remover quebras de página em documentos do Word usando a Biblioteca Aspose.Words para .NET. Siga nosso guia passo a passo para um layout perfeito. |
-| [Remover quebras de seção em documento do Word](./remove-section-breaks/) | Aprenda como remover quebras de seção em um documento do Word usando a biblioteca Aspose.Words para .NET. Elimine efetivamente as quebras de seção que podem atrapalhar a formatação do documento.|
-| [Remover rodapés em documento do Word](./remove-footers/) | Aprenda como remover facilmente rodapés em documentos do Word com Aspose.Words for .NET. Siga nosso guia passo a passo para lidar eficientemente com arquivos DOCX. |
+| [Remover quebras de página em documento do Word](./remove-page-breaks/) | Aprenda como remover quebras de página em um documento do Word usando Aspose.Words for .NET com nosso guia passo a passo. Aprimore suas habilidades de manipulação de documentos. |
+| [Remover quebras de seção em documento do Word](./remove-section-breaks/) | Aprenda como remover quebras de seção em documentos do Word usando Aspose.Words for .NET. Este guia passo a passo detalhado garante gerenciamento e edição suaves de documentos.|
+| [Remover rodapés em documento do Word](./remove-footers/) | Aprenda como remover rodapés de documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente. |
 | [Remover índice do documento do Word](./remove-table-of-contents/) | Aprenda como remover o índice analítico de um documento do Word usando Aspose.Words for .NET. |

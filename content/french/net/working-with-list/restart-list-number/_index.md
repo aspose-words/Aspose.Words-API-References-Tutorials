@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### Q : Est-il possible de personnaliser le préfixe et le suffixe de la numérotation des listes redémarrées dans Aspose.Words ?
 
- R : Oui, vous pouvez personnaliser le préfixe et le suffixe de la numérotation des listes redémarrées dans Aspose.Words. Le`ListLevel` la classe offre des propriétés telles que`ListLevel.NumberPrefix`et`ListLevel.NumberSuffix`qui vous permettent de spécifier le préfixe et le suffixe pour chaque niveau de la liste. Vous pouvez utiliser ces propriétés pour personnaliser le préfixe et le suffixe selon vos besoins.
+ R : Oui, vous pouvez personnaliser le préfixe et le suffixe de la numérotation des listes redémarrées dans Aspose.Words. Le`ListLevel`la classe offre des propriétés telles que`ListLevel.NumberPrefix`et`ListLevel.NumberSuffix` qui vous permettent de spécifier le préfixe et le suffixe pour chaque niveau de la liste. Vous pouvez utiliser ces propriétés pour personnaliser le préfixe et le suffixe selon vos besoins.
 
 #### Q : Comment puis-je spécifier une valeur de numérotation spécifique à partir de laquelle la liste doit être redémarrée ?
 

@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-markdown/emphases/
 ---
 
-tomto příkladu vysvětlíme, jak používat důrazy s Aspose.Words pro .NET. zvýraznění se používá ke zdůraznění určitých částí textu, jako je tučné písmo a kurzíva.
+V tomto příkladu vysvětlíme, jak používat důrazy s Aspose.Words pro .NET. zvýraznění se používá ke zdůraznění určitých částí textu, jako je tučné písmo a kurzíva.
 
 ## Krok 1: Inicializace dokumentu
 
@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### Otázka: Jak zvýrazním text pomocí Markdown?
 
-A: Chcete-li zvýraznit text pomocí Markdown, jednoduše obklopte text příslušnými symboly. Použití`*` nebo`_` pro kurzívu,`**` nebo`__` pro tučné, a`~~` pro přeškrtnutí.
+ A: Chcete-li zvýraznit text pomocí Markdown, jednoduše obklopte text příslušnými symboly. Použití`*` nebo`_` pro kurzívu,`**` nebo`__` pro tučné, a`~~` pro přeškrtnutí.
 
 #### Otázka: Můžeme kombinovat různá zvýraznění ve stejném textu?
 

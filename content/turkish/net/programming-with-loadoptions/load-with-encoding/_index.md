@@ -86,5 +86,5 @@ UTF-7 (7 bit Unicode Dönüşüm Formatı), bir dizi ASCII karakter kullanarak U
 ### Belgeleri dosya yolu yerine bir akıştan yükleyebilir miyim?
  Kesinlikle! Aspose.Words, akışlardan belge yüklemeyi destekler. Akışı ve yükleme seçeneklerini aktarmanız yeterlidir.`Document` yapıcı.
 
-### Sorunla karşılaşırsam nereden destek alabilirim?
+### Sorunlarla karşılaşırsam nereden destek alabilirim?
  Ziyaret edebilirsiniz[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8) topluluktan ve Aspose destek ekibinden yardım için.

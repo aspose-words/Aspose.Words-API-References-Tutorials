@@ -8,7 +8,7 @@ weight: 1080
 url: /pl/net/working-with-oleobjects-and-activex/
 ---
 
-Samouczki Aspose.Words dla .NET dotyczące przetwarzania słów z obiektami OLE i ActiveX przeprowadzą Cię przez różne funkcje i techniki efektywnego manipulowania obiektami OLE i ActiveX w dokumentach Word. W tych samouczkach dowiesz się, jak wstawiać, wyewidencjonowywać, aktualizować i usuwać obiekty OLE i ActiveX, takie jak wykresy, arkusze kalkulacyjne i kontrolki ActiveX, do dokumentów programu Word. Dowiesz się także, jak dostosować wygląd i zachowanie tych obiektów, a także jak obsługiwać błędy i wyjątki związane z obiektami OLE i ActiveX.
+Samouczki Aspose.Words dla .NET dotyczące przetwarzania słów z obiektami OLE i ActiveX przeprowadzą Cię przez różne funkcje i techniki efektywnego manipulowania obiektami OLE i ActiveX w dokumentach Word. W tych samouczkach dowiesz się, jak wstawiać, wyewidencjonowywać, aktualizować i usuwać obiekty OLE i ActiveX, takie jak wykresy, arkusze kalkulacyjne i kontrolki ActiveX, w dokumentach programu Word. Dowiesz się także, jak dostosować wygląd i zachowanie tych obiektów, a także jak obsługiwać błędy i wyjątki związane z obiektami OLE i ActiveX.
 
 Te samouczki dają praktyczne, krok po kroku podejście do przetwarzania słów z obiektami OLE i ActiveX w Aspose.Words dla .NET. Dowiesz się, jak manipulować tymi obiektami, korzystając z różnych klas i metod udostępnianych przez bibliotekę Aspose.Words. Przejrzyste i skomentowane przykłady kodu pomogą Ci zrozumieć i przećwiczyć prezentowane koncepcje. Dzięki tej wiedzy będziesz mógł w pełni wykorzystać funkcjonalność obiektów OLE i ActiveX w swoich dokumentach Word, dodając do nich interaktywność i bogactwo wizualne.
 

@@ -2,46 +2,37 @@
 title: Agregar marcas Bidi en un documento de Word
 linktitle: Agregar marcas Bidi en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a agregar marcas Bidi a un documento de Word usando Aspose.Words para .NET y cree documentos multilingües profesionales.
+description: Aprenda a agregar marcas bidireccionales (Bidi) en documentos de Word usando Aspose.Words para .NET con esta guía. Garantice la dirección adecuada del texto para el contenido en varios idiomas.
 type: docs
 weight: 10
 url: /es/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
+## Introducción
 
-Aspose.Words para .NET es una poderosa biblioteca para crear, editar y manipular documentos de Word en una aplicación C#. Entre las características que ofrece Aspose.Words está la capacidad de agregar marcas Bidi (bidireccionales) a un documento. En esta guía, le explicaremos cómo utilizar el código fuente C# de Aspose.Words para .NET para agregar marcas Bidi a un documento.
+En el mundo del procesamiento de documentos, el texto bidireccional (Bidi) a menudo puede resultar un poco complicado de gestionar. Esto es especialmente cierto cuando se trata de idiomas que tienen diferentes direcciones de texto, como el árabe o el hebreo. Afortunadamente, Aspose.Words para .NET facilita el manejo de estos escenarios. En este tutorial, veremos cómo agregar marcas Bidi a un documento de Word usando Aspose.Words para .NET.
 
-## Comprender la biblioteca Aspose.Words
+## Requisitos previos
 
-Antes de profundizar en el código, es importante comprender la biblioteca Aspose.Words para .NET. Aspose.Words es una biblioteca popular que hace que el procesamiento de palabras con documentos de Word sea fácil y eficiente. Ofrece una amplia gama de funciones para crear, editar y manipular documentos de Word, incluida la adición de marcas Bidi.
+Antes de profundizar en el código, asegúrese de tener lo siguiente:
 
-## Crear el documento y agregar contenido.
+1.  Aspose.Words para .NET: Debe tener instalado Aspose.Words para .NET. Puedes descargarlo desde el[Página de descargas de Aspose](https://releases.aspose.com/words/net/).
+2. .NET Framework o .NET Core: asegúrese de tener configurado un entorno .NET compatible para ejecutar los ejemplos.
+3. Conocimientos básicos de C#: Familiaridad con el lenguaje de programación C# y operaciones básicas en .NET.
 
-El primer paso es crear un nuevo documento y agregarle contenido. Utilice la clase Documento para crear una nueva instancia de documento. Luego use la clase DocumentBuilder para agregar texto al documento. Aquí hay un ejemplo :
+## Importar espacios de nombres
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. Writen("Hello world!");
-builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
-```
-
-En este ejemplo, creamos un nuevo documento y usamos DocumentBuilder para agregar texto. Agregamos tres líneas de texto: una en inglés, una en hebreo y otra en árabe para demostrar cómo agregar contenido en diferentes idiomas.
-
-## Se agregaron marcas Bidi
-
-Una vez agregado el contenido, ahora podemos agregar marcas Bidi al documento. Para esto usamos la clase TxtSaveOptions y configuramos la propiedad AddBidiMarks en verdadero. Así es cómo:
+Para comenzar, necesita importar los espacios de nombres necesarios. Así es como puedes incluirlos en tu proyecto:
 
 ```csharp
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-En este ejemplo, creamos una instancia de TxtSaveOptions y configuramos la propiedad AddBidiMarks en verdadero. A continuación, utilizamos el método Guardar de la clase Documento para guardar el documento con marcas Bidi.
+Dividamos el proceso de agregar marcas Bidi en un documento de Word en pasos claros. Cada paso lo guiará a través del código y su propósito.
 
-### Código fuente de ejemplo para la funcionalidad "Agregar marcas Bidi" con Aspose.Words para .NET
+## Paso 1: configure su documento
+
+ Comience creando una nueva instancia de`Document` clase y un`DocumentBuilder` para agregar contenido al documento.
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -50,44 +41,52 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Crear el documento y agregar contenido.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-builder. Writen("Hello world!");
+ En este paso, inicializa un nuevo documento de Word y configura un`DocumentBuilder` para facilitar la inserción de contenidos.
+
+## Paso 2: agregue contenido a su documento
+
+A continuación, agregue algo de texto a su documento. Aquí agregaremos texto en diferentes idiomas para ilustrar el manejo de texto de Bidi.
+
+```csharp
+builder.Writeln("Hello world!");
 builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
+builder.Writeln("שלום עולם!");
+builder.Writeln("مرحبا بالعالم!");
+```
 
+Aquí, primero agregamos una frase estándar en inglés. Luego, habilitamos el formato de texto Bidi para el texto posterior, que está escrito en hebreo y árabe. Esto demuestra cómo incorporar texto bidireccional.
+
+## Paso 3: configurar las opciones de guardado para las marcas Bidi
+
+ Para garantizar que las marcas Bidi se guarden correctamente en el documento, es necesario configurar el`TxtSaveOptions` y habilitar el`AddBidiMarks` opción.
+
+```csharp
 // Agregar marcas Bidi
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true
-
-  };
+TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
+ En este paso, creamos una instancia de`TxtSaveOptions` y establecer el`AddBidiMarks`propiedad a`true`. Esto garantiza que las marcas Bidi se incluyan al guardar el documento como un archivo de texto.
+
 ## Conclusión
 
-En esta guía, explicamos cómo usar Aspose.Words para .NET para agregar marcas Bidi a un documento de Word utilizando el código fuente C# proporcionado. Siguiendo los pasos proporcionados, puede agregar fácilmente marcas Bidi a sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para el procesamiento de textos con formato de texto y gestión de idiomas, lo que le permite crear documentos multilingües de forma profesional.
+Agregar marcas Bidi a sus documentos de Word puede ser un paso crucial cuando se trata de contenido multilingüe que incluye idiomas con diferentes direcciones de texto. Con Aspose.Words para .NET, este proceso es sencillo y eficiente. Si sigue los pasos descritos anteriormente, puede asegurarse de que sus documentos representen correctamente el texto Bidi, mejorando la legibilidad y la precisión.
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P: ¿Qué es Aspose.Words para .NET?
-Aspose.Words para .NET es una poderosa biblioteca para crear, editar y manipular documentos de Word en una aplicación C#. Ofrece muchas funciones para el procesamiento de textos con documentos de Word, incluida la adición de marcas Bidi (bidireccionales).
+### ¿Qué son las marcas Bidi y por qué son importantes?
+Las marcas bidi son caracteres especiales que se utilizan para controlar la dirección del texto en los documentos. Son esenciales para mostrar correctamente los idiomas que se leen de derecha a izquierda, como el árabe y el hebreo.
 
-#### P: ¿Qué características ofrece Aspose.Words para .NET?
-Aspose.Words para .NET ofrece una amplia gama de funciones para crear, editar y manipular documentos de Word. Algunas de estas funciones incluyen la creación de documentos, agregar contenido, formatear texto, administrar tablas, fusionar y dividir documentos, convertir documentos y más.
+### ¿Puedo usar Aspose.Words para .NET para manejar otros tipos de problemas de dirección de texto?
+Sí, Aspose.Words para .NET brinda soporte integral para diversas necesidades de formato y dirección de texto, incluidos los idiomas de derecha a izquierda y de izquierda a derecha.
 
-#### P: ¿Cómo puedo agregar marcas Bidi a un documento de Word usando Aspose.Words para .NET?
-Puede agregar marcas Bidi a un documento de Word siguiendo estos pasos:
+### ¿Es posible aplicar el formato Bidi únicamente a partes específicas de un documento?
+Sí, puede aplicar el formato Bidi a párrafos o secciones específicas de su documento según sea necesario.
 
- Cree un nuevo documento utilizando el`Document` clase.
+### ¿En qué formatos puedo guardar el documento con marcas Bidi?
+En el ejemplo proporcionado, el documento se guarda como un archivo de texto. Sin embargo, Aspose.Words también permite guardar documentos en varios formatos conservando las marcas Bidi.
 
- Utilizar el`DocumentBuilder` clase para agregar contenido al documento.
-
- Una vez que haya agregado el contenido, use el`TxtSaveOptions` clase y establecer el`AddBidiMarks`propiedad a`true`.
-
- Guarde el documento con marcas Bidi usando el`Save` método de la`Document` clase.
-
-#### P: ¿Aspose.Words admite varios idiomas para agregar marcas Bidi?
-Sí, Aspose.Words admite varios idiomas para agregar marcas Bidi. Puede agregar marcas Bidi al texto en diferentes idiomas, como inglés, hebreo y árabe, utilizando Aspose.Words para .NET.
-
-#### P: ¿Existen opciones adicionales para guardar el documento con marcas Bidi?
- Sí, puede especificar otras opciones al guardar el documento con marcas Bidi usando el`TxtSaveOptions` clase. Por ejemplo, puede configurar el formato para guardar el documento, las opciones de codificación, etc.
+### ¿Dónde puedo encontrar más información sobre Aspose.Words para .NET?
+ Puede explorar más sobre Aspose.Words para .NET a través de[Asponer documentación](https://reference.aspose.com/words/net/) y acceder al[Foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda adicional.

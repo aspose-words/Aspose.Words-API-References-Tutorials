@@ -11,7 +11,7 @@ url: /ko/net/join-and-append-documents/list-keep-source-formatting/
 
 이 튜토리얼에서는 소스 형식을 유지하면서 문서를 병합하기 위해 .NET용 Aspose.Words를 활용하는 방법을 살펴보겠습니다. 이 기능은 문서의 원래 모양을 유지하는 것이 중요한 시나리오에 필수적입니다.
 
-## 전제조건
+## 전제 조건
 
 계속하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

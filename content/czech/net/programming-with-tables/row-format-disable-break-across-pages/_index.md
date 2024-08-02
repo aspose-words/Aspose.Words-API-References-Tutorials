@@ -2,67 +2,86 @@
 title: Formát řádku Zakázat zalomení mezi stránkami
 linktitle: Formát řádku Zakázat zalomení mezi stránkami
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zakázat zalomení řádku pro tabulku na více stránkách v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Zjistěte, jak zakázat zalomení řádků mezi stránkami v dokumentech aplikace Word pomocí Aspose.Words for .NET, abyste zachovali čitelnost a formátování tabulky.
 type: docs
 weight: 10
 url: /cs/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
+## Úvod
 
-tomto tutoriálu se naučíme, jak zakázat zalomení řádku u vícestránkové tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci zakázat zalamování řádků pro všechny řádky v tabulce v dokumentech aplikace Word.
+Při práci s tabulkami v dokumentech aplikace Word můžete chtít zajistit, aby se řádky na stránkách nelámaly, což může být nezbytné pro zachování čitelnosti a formátování dokumentů. Aspose.Words for .NET poskytuje snadný způsob, jak zakázat zalomení řádků na stránkách.
 
-## Krok 1: Nastavení projektu
-1. Spusťte Visual Studio a vytvořte nový projekt C#.
-2. Přidejte odkaz na knihovnu Aspose.Words for .NET.
+V tomto tutoriálu vás provedeme procesem deaktivace zalomení řádků na stránkách v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
-## Krok 2: Načtení dokumentu
-Chcete-li spustit textový editor s dokumentem, postupujte takto:
+## Předpoklady
 
-```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Než začneme, ujistěte se, že máte následující předpoklady:
+- Nainstalovaná knihovna Aspose.Words for .NET.
+- Dokument aplikace Word s tabulkou, která zahrnuje více stránek.
 
-// Vložte dokument
-Document doc = new Document(dataDir + "Table spanning two pages.docx");
-```
+## Importovat jmenné prostory
 
-Nezapomeňte nahradit „VAŠE ADRESÁŘ DOKUMENTŮ“ skutečnou cestou k adresáři vašich dokumentů a uveďte správný název souboru.
-
-## Krok 3: Zakažte konec řádku tabulky
-Dále zakážeme zalamování řádků pro všechny řádky v tabulce. Použijte následující kód:
+Nejprve do projektu importujte potřebné jmenné prostory:
 
 ```csharp
-// Získejte tabulku
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Zakázat konec řádku pro všechny řádky v tabulce
-foreach(Row row in table.Rows)
-row.RowFormat.AllowBreakAcrossPages = false;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Zde používáme dokument k načtení první tabulky a poté iterujeme všechny řádky v tabulce pomocí smyčky foreach. Uvnitř smyčky zakážeme zalamování řádků pro každý řádek nastavením`RowFormat.AllowBreakAcrossPages`majetek do`false`.
+## Krok 1: Vložte dokument
 
-## Krok 4: Uložení upraveného dokumentu
-Nakonec musíme upravený dokument uložit s vypnutým zalomením řádku tabulky. Použijte následující kód:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
-```
-
-Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
-
-### Ukázkový zdrojový kód pro formát řádků Zakázat přerušení mezi stránkami pomocí Aspose.Words for .NET 
+Vložte dokument obsahující tabulku, která zahrnuje více stránek.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
+```
+
+## Krok 2: Přístup k tabulce
+
+Přístup k první tabulce v dokumentu. To předpokládá, že tabulka, kterou chcete upravit, je první tabulkou v dokumentu.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Krok 3: Zakažte rozdělení stránek na všechny řádky
+
+ Procházejte každý řádek v tabulce a nastavte`AllowBreakAcrossPages`majetek do`false`. Tím je zajištěno, že se řádky na stránkách nebudou lámat.
+
+```csharp
 // Zakázat rozdělení na stránky pro všechny řádky v tabulce.
 foreach (Row row in table.Rows)
-	row.RowFormat.AllowBreakAcrossPages = false;
+    row.RowFormat.AllowBreakAcrossPages = false;
+```
+
+## Krok 4: Uložte dokument
+
+Uložte upravený dokument do určeného adresáře.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak zakázat zalomení řádku u vícestránkové tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete toto zakázání použít na tabulky v dokumentech aplikace Word.
+
+V tomto tutoriálu jsme ukázali, jak zakázat zalomení řádků mezi stránkami v dokumentu aplikace Word pomocí Aspose.Words for .NET. Dodržením výše uvedených kroků můžete zajistit, že řádky tabulky zůstanou nedotčené a nebudou se rozdělovat na stránky, čímž se zachová čitelnost a formátování dokumentu.
+
+## FAQ
+
+### Mohu zakázat zalomení řádků na stránkách pro konkrétní řádek namísto všech řádků?  
+ Ano, zalomení řádků pro konkrétní řádky můžete zakázat přístupem k požadovanému řádku a jeho nastavením`AllowBreakAcrossPages`majetek do`false`.
+
+### Funguje tato metoda pro tabulky se sloučenými buňkami?  
+ Ano, tato metoda funguje pro tabulky se sloučenými buňkami. Vlastnictví`AllowBreakAcrossPages` platí pro celý řádek bez ohledu na sloučení buněk.
+
+### Bude tato metoda fungovat, pokud je tabulka vnořena do jiné tabulky?  
+Ano, stejným způsobem můžete přistupovat a upravovat vnořené tabulky. Ujistěte se, že správně odkazujete na vnořenou tabulku pomocí jejího indexu nebo jiných vlastností.
+
+### Jak mohu zkontrolovat, zda řádek umožňuje přerušení mezi stránkami?  
+ Můžete zkontrolovat, zda řádek umožňuje přerušení mezi stránkami přístupem k`AllowBreakAcrossPages` majetek z`RowFormat` a kontrolu jeho hodnoty.
+
+### Existuje způsob, jak toto nastavení použít na všechny tabulky v dokumentu?  
+Ano, můžete procházet všechny tabulky v dokumentu a použít toto nastavení pro každou z nich.

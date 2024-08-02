@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- V tomto úryvku nahraďte`"YOUR DOCUMENT DIRECTORY"` s cestou k adresáři s dokumenty.
+ V tomto úryvku nahraďte`"YOUR DOCUMENT DIRECTORY"` s cestou k vašemu adresáři dokumentů.
 
 ## Krok 3: Nakonfigurujte možnosti uložení PDF
 

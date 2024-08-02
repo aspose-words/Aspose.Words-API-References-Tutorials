@@ -11,7 +11,7 @@ url: /ko/net/join-and-append-documents/link-headers-footers/
 
 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 문서 간에 머리글과 바닥글을 연결하는 방법을 살펴보겠습니다. 이 기능을 사용하면 머리글과 바닥글을 효과적으로 동기화하여 여러 문서 간의 일관성과 연속성을 유지할 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET을 사용하여 문서 간 머리글과 바닥글을 연�
 Aspose.Words는 다양한 버전의 .NET Framework 및 .NET Core를 지원하여 플랫폼 간 호환성을 보장합니다.
 
 ### 머리글과 바닥글을 연결한 후 연결을 해제할 수 있나요?
-예, Aspose.Words API 메소드를 사용하여 머리글과 바닥글의 연결을 해제하여 개별 문서 형식을 복원할 수 있습니다.
+예, Aspose.Words API 메소드를 사용하여 머리글과 바닥글의 연결을 해제하여 개별 문서 서식을 복원할 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 자세한 문서는 어디서 찾을 수 있나요?
  방문하다[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 포괄적인 가이드 및 API 참조를 확인하세요.

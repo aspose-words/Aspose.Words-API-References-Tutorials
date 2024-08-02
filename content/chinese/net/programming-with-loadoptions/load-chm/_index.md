@@ -9,7 +9,7 @@ url: /zh/net/programming-with-loadoptions/load-chm/
 ---
 ## 介绍
 
-当需要将 CHM 文件集成到 Word 文档时，Aspose.Words for .NET 提供了无缝解决方案。无论您是创建技术文档还是将各种资源整合到单个文档中，本教程都将以清晰且引人入胜的方式指导您完成每个步骤。
+当需要将 CHM 文件集成到 Word 文档中时，Aspose.Words for .NET 提供了无缝解决方案。无论您是创建技术文档还是将各种资源整合到单个文档中，本教程都将以清晰且引人入胜的方式指导您完成每个步骤。
 
 ## 先决条件
 

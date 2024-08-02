@@ -82,7 +82,7 @@ Aplicar licença do stream
         }
     }
 ```	
-Aplicar licença medida
+Aplicar licença limitada
 	
 ```java	
     public void applyMeteredLicense() {

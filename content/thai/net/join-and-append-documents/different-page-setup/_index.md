@@ -40,7 +40,7 @@ using Aspose.Words.Tables;
 
 ### ขั้นตอนที่ 1.2: เพิ่มการอ้างอิง Aspose.Words
 
-หากต้องการใช้ Aspose.Words คุณต้องเพิ่มลงในโปรเจ็กต์ของคุณ หากคุณยังไม่ได้ดาวน์โหลดแพ็คเกจ Aspose.Words สำหรับ .NET คุณสามารถติดตั้งผ่าน NuGet Package Manager ด้วยคำสั่งต่อไปนี้:
+หากต้องการใช้ Aspose.Words คุณต้องเพิ่มลงในโปรเจ็กต์ของคุณ หากคุณยังไม่ได้ดาวน์โหลดแพ็คเกจ Aspose.Words for .NET คุณสามารถติดตั้งผ่าน NuGet Package Manager ด้วยคำสั่งต่อไปนี้:
 
 ```bash
 Install-Package Aspose.Words

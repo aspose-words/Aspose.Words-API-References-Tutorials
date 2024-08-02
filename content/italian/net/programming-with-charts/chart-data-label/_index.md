@@ -123,7 +123,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Aspose.Words per .NET è una potente libreria di elaborazione documenti che consente agli sviluppatori di creare, modificare e convertire documenti Word a livello di codice.
 
 ### Come installo Aspose.Words per .NET?
- Puoi scaricarlo e installarlo da[Link per scaricare](https://releases.aspose.com/words/net/). Seguire le istruzioni di installazione fornite.
+ È possibile scaricarlo e installarlo da[Link per scaricare](https://releases.aspose.com/words/net/). Seguire le istruzioni di installazione fornite.
 
 ### Posso provare Aspose.Words per .NET gratuitamente?
  Sì, puoi ottenere un[prova gratuita](https://releases.aspose.com/) o a[licenza temporanea](https://purchase.aspose.com/temporary-license/)per valutare il prodotto.

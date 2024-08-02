@@ -36,7 +36,7 @@ Podzielmy teraz proces na proste, zrozumiałe etapy.
 Zanim zagłębimy się w kod, upewnij się, że Twój projekt jest poprawnie skonfigurowany. Oto krótka lista kontrolna:
 
 1. Utwórz nowy projekt: Otwórz program Visual Studio i utwórz nowy projekt aplikacji konsolowej.
-2.  Dodaj odniesienie Aspose.Words: Pobierz i dodaj bibliotekę Aspose.Words do swojego projektu. Możesz to zrobić za pomocą Menedżera pakietów NuGet, wyszukując`Aspose.Words`.
+2.  Dodaj odwołanie do Aspose.Words: Pobierz i dodaj bibliotekę Aspose.Words do swojego projektu. Możesz to zrobić za pomocą Menedżera pakietów NuGet, wyszukując`Aspose.Words`.
 
 ```csharp
 Install-Package Aspose.Words
@@ -108,7 +108,7 @@ masz to! Pomyślnie dołączyłeś jeden dokument programu Word do drugiego za p
 
  Możesz kontrolować sposób obsługi formatowania za pomocą`ImportFormatMode` parametr. Opcje obejmują`KeepSourceFormatting`, `UseDestinationStyles`, i więcej.
 
-### Czy korzystanie z Aspose.Words jest bezpłatne?
+### Czy korzystanie z Aspose.Words jest darmowe?
 
  Aspose.Words oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/) . Aby uzyskać pełną funkcjonalność, musisz kupić licencję od[Tutaj](https://purchase.aspose.com/buy).
 

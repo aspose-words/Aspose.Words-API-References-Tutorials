@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /id/net/remove-content/remove-table-of-contents/
 ---
-## Hapus Daftar Isi di Dokumen Word Menggunakan Aspose.Words untuk .NET
+## Perkenalan
 
 Apakah Anda lelah berurusan dengan Daftar Isi (TOC) yang tidak diinginkan di dokumen Word Anda? Kita semua pernah mengalaminya—terkadang TOC tidak diperlukan. Beruntung bagi Anda, Aspose.Words untuk .NET memudahkan penghapusan TOC secara terprogram. Dalam tutorial ini, saya akan memandu Anda melalui proses langkah demi langkah, sehingga Anda dapat menguasainya dalam waktu singkat. Mari selami!
 
@@ -41,7 +41,7 @@ Sebelum kami dapat memanipulasi dokumen Anda, kami perlu menentukan di mana loka
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur ke folder dokumen Anda. Di sinilah file Word Anda berada.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke folder dokumen Anda. Di sinilah file Word Anda berada.
 
 ## Langkah 2: Muat Dokumen
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Inilah yang terjadi:
 - `doc.Range.Fields`: Ini mengakses semua bidang dalam dokumen.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: Ini memfilter bidang untuk hanya menemukan bidang yang TOC.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Ini memfilter bidang untuk menemukan hanya bidang yang TOC.
 - `.ToList().ForEach(f => f.Remove())`: Ini mengubah bidang yang difilter menjadi daftar dan menghapus masing-masing bidang.
 
 ## Langkah 4: Simpan Dokumen yang Dimodifikasi
@@ -83,22 +83,22 @@ Dan itu dia! Menghapus TOC dari dokumen Word menggunakan Aspose.Words untuk .NET
 
 ## FAQ
 
-### 1. Apa itu Aspose.Words untuk .NET?
+### Apa itu Aspose.Words untuk .NET?
 
 Aspose.Words for .NET adalah pustaka .NET yang tangguh untuk manipulasi dokumen, memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
 
-### 2. Bisakah saya menggunakan Aspose.Words secara gratis?
+### Bisakah saya menggunakan Aspose.Words secara gratis?
 
  Ya, Anda dapat menggunakan Aspose.Words dengan a[uji coba gratis](https://releases.aspose.com/) atau dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/).
 
-### 3. Apakah mungkin untuk menghapus kolom lain menggunakan Aspose.Words?
+### Apakah mungkin untuk menghapus bidang lain menggunakan Aspose.Words?
 
 Sangat! Anda dapat menghapus bidang apa pun dengan menentukan jenisnya di kondisi filter.
 
-### 4. Apakah saya memerlukan Visual Studio untuk menggunakan Aspose.Words?
+### Apakah saya memerlukan Visual Studio untuk menggunakan Aspose.Words?
 
 Meskipun Visual Studio sangat disarankan untuk kemudahan pengembangan, Anda dapat menggunakan IDE apa pun yang mendukung .NET.
 
-### 5. Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words?
+### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words?
 
  Untuk dokumentasi lebih rinci, kunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/).

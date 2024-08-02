@@ -62,7 +62,7 @@ När du har anpassat ditt dokument kan du spara det med följande kod:
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
 
- Byta ut`"Your Output Directory"` med önskad utmatningsväg.
+ Byta ut`"Your Output Directory"` med önskad utgångsväg.
 
 ## Komplett källkod
 ```java

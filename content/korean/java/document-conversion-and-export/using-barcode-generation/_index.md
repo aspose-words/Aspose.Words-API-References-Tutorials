@@ -12,7 +12,7 @@ url: /ko/java/document-conversion-and-export/using-barcode-generation/
 
 문서 처리 및 자동화 영역에서 Aspose.Words for Java는 다재다능하고 강력한 라이브러리입니다. 이 문서에서는 Aspose.Words for Java를 사용하여 바코드를 생성하는 과정을 안내합니다. 바코드 생성을 Java 애플리케이션에 통합하는 방법을 단계별로 살펴보겠습니다. 그럼 바로 들어가 보겠습니다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

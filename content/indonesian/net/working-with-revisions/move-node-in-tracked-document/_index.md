@@ -38,7 +38,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 ## Langkah 3: Pindahkan sebuah simpul
 
-Kami akan memindahkan node (paragraf) dari satu posisi ke posisi lain sambil menghasilkan revisi.
+Kami akan memindahkan sebuah node (paragraf) dari satu posisi ke posisi lain sambil menghasilkan revisi.
 
 ```csharp
 Node node = body.Paragraphs[3];

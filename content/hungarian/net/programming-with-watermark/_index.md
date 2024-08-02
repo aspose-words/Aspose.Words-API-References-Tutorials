@@ -12,4 +12,4 @@ Words Processing with Watermark egy átfogó forrás, amely végigvezeti Önt a 
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Szöveg vízjel hozzáadása meghatározott beállításokkal](./add-text-watermark-with-specific-options/) | Ismerje meg, hogyan adhat hozzá szöveges vízjelet meghatározott beállításokkal az Aspose.Words for .NET használatával. Lépésről lépésre útmutató. |
+| [Szöveg vízjel hozzáadása meghatározott beállításokkal](./add-text-watermark-with-specific-options/) | Ismerje meg, hogyan adhat szöveges vízjelet meghatározott beállításokkal Word-dokumentumaihoz az Aspose.Words for .NET használatával. Egyszerűen testreszabhatja a betűtípust, a méretet, a színt és az elrendezést. |

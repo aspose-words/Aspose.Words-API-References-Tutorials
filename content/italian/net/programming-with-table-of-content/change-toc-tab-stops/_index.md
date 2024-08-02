@@ -2,57 +2,41 @@
 title: Cambia le tabulazioni Toc nel documento di Word
 linktitle: Cambia le tabulazioni Toc nel documento di Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come modificare le schede del sommario in un documento di Word utilizzando Aspose.Words per .NET.
+description: Scopri come modificare le tabulazioni del sommario nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida passo passo ti aiuterà a creare un sommario dall'aspetto professionale.
 type: docs
 weight: 10
 url: /it/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-Aspose.Words per .NET è una potente libreria per creare, modificare e manipolare documenti Word in un'applicazione C#. Tra le funzionalità offerte da Aspose.Words, c'è la possibilità di modificare le schede utilizzate nell'indice di un documento Word. In questa guida, ti mostreremo come utilizzare il codice sorgente C# di Aspose.Words per .NET per modificare le schede nel sommario di un documento.
+## introduzione
 
-## Comprensione della libreria Aspose.Words
+Ti sei mai chiesto come ravvivare il sommario (TOC) nei tuoi documenti Word? Forse vuoi che i punti di tabulazione si allineino perfettamente per quel tocco professionale. Sei nel posto giusto! Oggi approfondiremo come modificare le tabulazioni del sommario utilizzando Aspose.Words per .NET. Resta nei paraggi e ti prometto che te ne andrai con tutto il know-how per rendere il tuo sommario elegante e ordinato.
 
-Prima di immergersi nel codice, è importante comprendere la libreria Aspose.Words per .NET. Aspose.Words è una libreria popolare che rende l'elaborazione delle parole con documenti Word semplice ed efficiente. Offre un'ampia gamma di funzionalità per creare, modificare e manipolare documenti Word, inclusa la modifica delle schede del sommario.
+## Prerequisiti
 
-## Caricamento del documento contenente il sommario
+Prima di iniziare, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-Il primo passo è caricare il documento Word contenente il sommario che desideri modificare. Utilizzare la classe Document per caricare il documento dal file sorgente. Ecco un esempio:
+1.  Aspose.Words per .NET: puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: Visual Studio o qualsiasi IDE compatibile con C#.
+3. Un documento Word: in particolare, uno che contiene un sommario.
 
-```csharp
-Document doc = new Document(dataDir + "Table of contents.docx");
-```
+Capito tutto? Eccezionale! Diamoci dentro.
 
-In questo esempio, carichiamo il documento "Table of Contents.docx" che si trova nella directory dei documenti.
+## Importa spazi dei nomi
 
-## Modifica delle schede nel sommario
-
-Una volta caricato il documento, esaminiamo ogni paragrafo del documento e controlliamo se è formattato utilizzando gli stili di risultato del sommario (TOC). In tal caso, modifichiamo le schede utilizzate per allineare i numeri di pagina. Ecco come:
+Per prima cosa, dovrai importare gli spazi dei nomi necessari. È come mettere in valigia i tuoi strumenti prima di iniziare un progetto.
 
 ```csharp
-foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
-{
-     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
-         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
-     {
-         TabStop tab = para.ParagraphFormat.TabStops[0];
-         para.ParagraphFormat.TabStops.RemoveByPosition(tab.Position);
-         para.ParagraphFormat.TabStops.Add(tab.Position - 50, tab.Alignment, tab.Leader);
-     }
-}
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-In questo esempio, stiamo utilizzando un ciclo per scorrere ogni paragrafo del documento. Controlliamo quindi se il paragrafo è formattato utilizzando gli stili dei risultati del sommario (TOC). In tal caso, accediamo alla prima scheda utilizzata in questo paragrafo e la modifichiamo rimuovendo la vecchia scheda e aggiungendo una nuova scheda con una posizione modificata.
+Suddividiamo questo processo in passaggi semplici e digeribili. Esamineremo il caricamento del documento, la modifica delle tabulazioni del sommario e il salvataggio del documento aggiornato.
 
-## Salva il documento modificato
+## Passaggio 1: caricare il documento
 
-Una volta apportate le modifiche necessarie alle schede del sommario, è possibile salvare il documento modificato utilizzando il metodo Save della classe Document. Ecco un esempio:
+Perché? Dobbiamo accedere al documento Word che contiene il sommario che vogliamo modificare.
 
-```csharp
-doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
-```
-
-In questo esempio, salviamo il documento modificato come "WorkingWithTableOfContent.ChangeTocTabStops.docx".
-
-### Codice sorgente di esempio per la funzionalità "Modifica schede del sommario" con Aspose.Words per .NET
+Come? Ecco un semplice snippet di codice per iniziare:
 
 ```csharp
 // Percorso della directory dei documenti
@@ -60,50 +44,34 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Caricare il documento contenente il sommario
 Document doc = new Document(dataDir + "Table of contents.docx");
-
-// Modificare le schede del sommario
-foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
-{
-     if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
-         para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
-     {
-         TabStop tab = para.ParagraphFormat.TabStops[0];
-         para.ParagraphFormat.TabStops.RemoveByPosition(tab.Position);
-         para.ParagraphFormat.TabStops.Add(tab.Position - 50, tab.Alignment, tab.Leader);
-     }
-}
-
-// Salva il documento modificato
-doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-## Conclusione
+Immagina che il tuo documento sia come una torta e che stiamo per aggiungere della glassa. Il primo passo è tirare fuori la torta dalla scatola.
 
-In questa guida, abbiamo spiegato come utilizzare Aspose.Words per .NET per modificare le schede nel sommario di un documento Word utilizzando il codice sorgente C# fornito. Seguendo i passaggi forniti, puoi personalizzare facilmente le schede del sommario nei documenti Word nell'applicazione C#. Aspose.Words offre un'enorme flessibilità e potenza per lavorare con gli stili e la formattazione dei tuoi documenti, permettendoti di creare documenti Word attraenti e professionali.
+## Passaggio 2: identificare i paragrafi del sommario
 
-### Domande frequenti sulla modifica delle tabulazioni nel documento Word
+Perché? Dobbiamo individuare i paragrafi che compongono il sommario. 
 
-#### D: Qual è lo scopo della funzionalità "Cambia tabulazioni nel documento Word" in Aspose.Words per .NET?
-
-R: La funzionalità "Cambia tabulazioni nel documento Word" in Aspose.Words per .NET consente di modificare le tabulazioni utilizzate nel sommario di un documento Word. Consente di personalizzare l'allineamento e il posizionamento dei numeri di pagina e delle intestazioni corrispondenti all'interno del sommario.
-
-#### D: Cos'è Aspose.Words per .NET?
-
-R: Aspose.Words per .NET è una potente libreria progettata per l'elaborazione di parole con documenti Word nelle applicazioni .NET. Fornisce funzionalità complete per creare, modificare, manipolare e convertire documenti Word a livello di codice utilizzando C# o altri linguaggi .NET.
-
-#### D: Come carico un documento Word contenente un sommario utilizzando Aspose.Words per .NET?
-
- R: Per caricare un documento Word contenente un sommario utilizzando Aspose.Words per .NET, è possibile utilizzare`Document` classe e il suo costruttore. Fornendo il percorso del file del documento, è possibile caricarlo in un file`Document` oggetto. Ecco un esempio:
+Come? Scorri i paragrafi e controlla i loro stili:
 
 ```csharp
-Document doc = new Document(dataDir + "Table of contents.docx");
+foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
+{
+    if (para.ParagraphFormat.Style.StyleIdentifier >= StyleIdentifier.Toc1 &&
+        para.ParagraphFormat.Style.StyleIdentifier <= StyleIdentifier.Toc9)
+    {
+        // Paragrafo del sommario trovato
+    }
+}
 ```
 
-Questo frammento di codice carica il documento "Sommario.docx" situato nella directory specificata.
+Immagina di scansionare una folla per trovare i tuoi amici. Qui stiamo cercando paragrafi stilizzati come voci del sommario.
 
-#### D: Come posso modificare le schede utilizzate nel sommario utilizzando Aspose.Words per .NET?
+## Passaggio 3: modificare i punti di tabulazione
 
-R: Una volta caricato il documento, è possibile scorrere ogni paragrafo del documento e verificare se è formattato utilizzando gli stili di risultato del sommario (TOC). Se un paragrafo è formattato come stile sommario, puoi modificare le tabulazioni utilizzate per allineare i numeri di pagina. In Aspose.Words per .NET, puoi accedere a`ParagraphFormat` proprietà di ogni paragrafo per recuperare e modificare le tabulazioni. Ecco un esempio:
+Perché? Qui è dove avviene la magia. La modifica delle tabulazioni conferisce al sommario un aspetto più pulito.
+
+Come? Rimuovi la tabulazione esistente e aggiungine una nuova in una posizione modificata:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -118,34 +86,38 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-In questo codice, il ciclo scorre ogni paragrafo del documento. Se un paragrafo ha uno stile sommario, accede alla prima tabulazione utilizzata in quel paragrafo, la rimuove e aggiunge una nuova tabulazione con una posizione modificata.
+È come sistemare i mobili del tuo salotto finché non ti sembrano perfetti. Stiamo ottimizzando le tabulazioni per raggiungere la perfezione.
 
-#### D: Posso modificare le schede per più livelli nel sommario utilizzando Aspose.Words per .NET?
+## Passaggio 4: salva il documento modificato
 
-R: Sì, puoi modificare le schede per più livelli nel sommario utilizzando Aspose.Words per .NET. Scorrendo ogni paragrafo e controllando lo stile del sommario, è possibile modificare le schede per ciascun livello individualmente. È possibile accedere al livello desiderato del sommario e regolare di conseguenza le tabulazioni.
+Perché? Per garantire che tutto il tuo duro lavoro venga salvato e possa essere visualizzato o condiviso.
 
-#### D: Come posso salvare il documento modificato dopo aver modificato le schede nel sommario utilizzando Aspose.Words per .NET?
-
- R: Dopo aver apportato le modifiche necessarie alle schede del sommario, è possibile salvare il documento modificato utilizzando il file`Save` metodo del`Document` classe. Fornire il percorso file e il nome desiderati per il documento di output come parametro nel file`Save` metodo. Ecco un esempio:
+Come? Salvare il documento con un nuovo nome per mantenere intatto l'originale:
 
 ```csharp
+// Salva il documento modificato
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-Questo codice salva il documento modificato come "WorkingWithTableOfContent.ChangeTocTabStops.docx".
+E voilà! Il tuo sommario ora ha le tabulazioni esattamente dove desideri.
 
-#### D: Posso personalizzare altri aspetti del sommario utilizzando Aspose.Words per .NET?
+## Conclusione
 
-R: Sì, con Aspose.Words per .NET, puoi personalizzare vari aspetti del sommario. Oltre a modificare le schede, puoi modificare gli stili dei caratteri, la dimensione, l'allineamento e altre proprietà di formattazione delle voci del sommario e dei numeri di pagina. Inoltre, puoi regolare il rientro, la spaziatura e la formattazione delle intestazioni corrispondenti.
+La modifica delle tabulazioni del sommario in un documento Word utilizzando Aspose.Words per .NET è semplice una volta suddiviso. Caricando il documento, identificando i paragrafi del sommario, modificando le tabulazioni e salvando il documento, puoi ottenere un aspetto raffinato e professionale. Ricorda, la pratica rende perfetti, quindi continua a sperimentare diverse posizioni di tabulazione per ottenere esattamente il layout che desideri.
 
-#### Q:. Posso modificare l'allineamento delle tabulazioni e i caratteri iniziali per il sommario utilizzando Aspose.Words per .NET?
+## Domande frequenti
 
-R: Sì, puoi modificare l'allineamento delle tabulazioni e i caratteri iniziali per il sommario utilizzando Aspose.Words per .NET. Accedendo alle tabulazioni e regolandone l'allineamento e le proprietà della direttrice, puoi controllare l'allineamento e l'aspetto visivo dei numeri di pagina e delle intestazioni corrispondenti nel sommario.
+### Posso modificare separatamente le tabulazioni per diversi livelli di sommario?
+Si, puoi! Controlla semplicemente ogni livello TOC specifico (Toc1, Toc2, ecc.) e regolalo di conseguenza.
 
-#### D: Aspose.Words per .NET supporta la modifica di altri stili e formattazione nei documenti di Word?
+### Cosa succede se il mio documento ha più sommari?
+Il codice esegue la scansione di tutti i paragrafi in stile TOC, quindi modificherà tutti i TOC presenti nel documento.
 
-R: Sì, Aspose.Words per .NET fornisce un ampio supporto per la modifica di vari stili e formattazione nei documenti di Word. Ti consente di modificare gli stili per diversi elementi come paragrafi, intestazioni, tabelle, elenchi e altro. Puoi modificare caratteri, colori, allineamento, rientro, spaziatura e altri aspetti di formattazione in base alle tue esigenze.
+### È possibile aggiungere più tabulazioni in una voce di sommario?
+ Assolutamente! Puoi aggiungere tutti i punti di tabulazione necessari regolando il`para.ParagraphFormat.TabStops` collezione.
 
-#### D: Posso modificare le schede nel sommario in un documento Word esistente utilizzando Aspose.Words per .NET?
+### Posso modificare l'allineamento delle tabulazioni e lo stile della direttrice?
+Sì, puoi specificare diversi allineamenti e stili di direttrice quando aggiungi una nuova tabulazione.
 
-R: Sì, puoi modificare le schede nel sommario in un documento Word esistente utilizzando Aspose.Words per .NET. Caricando il documento, scorrendo i paragrafi e apportando le modifiche necessarie alle tabulazioni, è possibile aggiornare le tabulazioni nel sommario. Infine, salva il documento per applicare le modifiche.
+### Ho bisogno di una licenza per utilizzare Aspose.Words per .NET?
+ Sì, è necessaria una licenza valida per utilizzare Aspose.Words per .NET oltre il periodo di prova. Puoi ottenere un[licenza temporanea](https://purchase.aspose.com/temporary-license/) O[comprane uno](https://purchase.aspose.com/buy).

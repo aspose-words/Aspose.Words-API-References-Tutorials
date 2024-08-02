@@ -2,99 +2,112 @@
 title: Wstaw pole Dołącz tekst bez narzędzia do tworzenia dokumentów
 linktitle: Wstaw FieldIncludeText bez narzędzia do tworzenia dokumentów
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić pole FieldIncludeText do dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawić FieldIncludeText bez użycia DocumentBuilder w Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## Wstęp
 
-Oto przewodnik krok po kroku wyjaśniający poniższy kod źródłowy C#, który wykorzystuje funkcję „Wstaw pole FieldIncludeText” w Aspose.Words dla .NET. Pamiętaj, aby dokładnie wykonać każdy krok, aby uzyskać pożądane rezultaty.
+W świecie automatyzacji i manipulacji dokumentami Aspose.Words dla .NET jest potężnym narzędziem. Dzisiaj zagłębimy się w szczegółowy przewodnik dotyczący wstawiania tekstu FieldIncludeText bez korzystania z narzędzia DocumentBuilder. Ten samouczek przeprowadzi Cię przez proces krok po kroku, upewniając się, że rozumiesz każdą część kodu i jej cel.
 
-## Krok 1: Konfiguracja katalogu dokumentów
+## Warunki wstępne
 
-W podanym kodzie musisz określić katalog swoich dokumentów. Zastąp wartość „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką do katalogu dokumentów.
+Zanim zagłębimy się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną najnowszą wersję. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne .NET: dowolne IDE kompatybilne z .NET, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci podążać dalej.
 
-## Krok 2: Tworzenie dokumentu i akapitu
+## Importuj przestrzenie nazw
 
-Zaczynamy od utworzenia nowego dokumentu i zainicjowania akapitu.
-
-```csharp
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-```
-
-## Krok 3: Wstawianie pola FieldIncludeText
-
- Używamy`AppendField()` metoda wstawiania pola FieldIncludeText do akapitu.
+Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami programu Word.
 
 ```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-Następnie konfigurujemy właściwości pola FieldIncludeText podając nazwę zakładki i nazwę pliku źródłowego.
+Podzielmy teraz przykład na wiele kroków. Każdy krok zostanie szczegółowo wyjaśniony, aby zapewnić przejrzystość.
 
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
+## Krok 1: Ustaw ścieżkę katalogu
 
-Następnie dodajemy akapit do treści dokumentu.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
- Na koniec nazywamy`Update()` metoda aktualizacji pola.
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### Przykład kodu źródłowego do wstawienia pola FieldIncludeText za pomocą Aspose.Words dla .NET
+Pierwszym krokiem jest zdefiniowanie ścieżki do katalogu dokumentów. W tym miejscu będą przechowywane i udostępniane dokumenty programu Word.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Krok 2: Utwórz dokument i akapit
+
+Następnie tworzymy nowy dokument i akapit w tym dokumencie. W tym akapicie będzie znajdować się pole FieldIncludeText.
+
+```csharp
 // Utwórz dokument i akapit.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
+```
 
+## Krok 3: Wstaw pole FieldIncludeText
+
+Teraz wstawiamy pole FieldIncludeText do akapitu. To pole umożliwia włączenie tekstu z innego dokumentu.
+
+```csharp
 // Wstaw pole FieldIncludeText.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## Krok 4: Ustaw właściwości pola
+
+Musimy określić właściwości pola FieldIncludeText. Obejmuje to ustawienie nazwy zakładki i pełnej ścieżki dokumentu źródłowego.
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## Krok 5: Dołącz akapit do dokumentu
+
+Po skonfigurowaniu pola dołączamy akapit do treści pierwszej sekcji dokumentu.
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## Krok 6: Zaktualizuj pole
+
+Przed zapisaniem dokumentu musimy zaktualizować FieldIncludeText, aby mieć pewność, że pobiera poprawną treść z dokumentu źródłowego.
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## Krok 7: Zapisz dokument
+
+Na koniec zapisujemy dokument we wskazanym katalogu.
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-W tym przykładzie utworzyliśmy nowy dokument, zainicjowaliśmy akapit, wstawiliśmy FieldIncludeTexten określający nazwę zakładki i nazwę pliku źródłowego, a następnie zapisaliśmy dokument z określoną nazwą pliku.
+## Wniosek
 
-Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Wstaw poleIncludeText” w Aspose.Words dla .NET.
+I masz to! Wykonując poniższe kroki, możesz łatwo wstawić FieldIncludeText bez używania DocumentBuilder w Aspose.Words dla .NET. Takie podejście zapewnia usprawniony sposób dołączania treści z jednego dokumentu do drugiego, dzięki czemu zadania automatyzacji dokumentów są znacznie prostsze.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jak mogę określić plik źródłowy dla pola włączenia tekstu w Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?  
+Aspose.Words dla .NET to potężna biblioteka do pracy z dokumentami Word w aplikacjach .NET. Umożliwia programowe tworzenie, edytowanie i konwertowanie dokumentów.
 
- O: Aby określić plik źródłowy dla pola włączenia tekstu w Aspose.Words dla .NET, możesz użyć`FieldIncludeText.SourceFullName`właściwość, aby ustawić pełną ścieżkę pliku źródłowego. Upewnij się, że plik źródłowy jest dostępny i zawiera treść, którą chcesz umieścić w polu włączenia tekstu.
+### Dlaczego warto używać FieldIncludeText?  
+FieldIncludeText jest przydatny do dynamicznego włączania treści z jednego dokumentu do drugiego, umożliwiając tworzenie bardziej modułowych i łatwiejszych w utrzymaniu dokumentów.
 
-#### P: Czy mogę dołączyć tekst z makra do pola włączenia tekstu w Aspose.Words dla .NET?
+### Czy mogę użyć tej metody do dołączenia tekstu z plików w innych formatach?  
+FieldIncludeText działa specjalnie z dokumentami programu Word. W przypadku innych formatów możesz potrzebować różnych metod lub klas dostarczonych przez Aspose.Words.
 
- Odp.: Tak, możesz dołączyć tekst z makra w polu włączenia tekstu za pomocą Aspose.Words dla .NET. Możesz skorzystać z`FieldIncludeText.IncludeText` właściwość określająca nazwę makra, którego zawartość ma zostać uwzględniona w polu.
+### Czy Aspose.Words dla .NET jest kompatybilny z .NET Core?  
+Tak, Aspose.Words dla .NET obsługuje .NET Framework, .NET Core i .NET 5/6.
 
-#### P: Czy wstawienie pola zawierającego tekst bez narzędzia do tworzenia dokumentów wpływa na strukturę dokumentu programu Word w Aspose.Words dla .NET?
-
-Odp.: Wstawienie pola zawierającego tekst bez narzędzia do tworzenia dokumentów nie ma bezpośredniego wpływu na strukturę dokumentu programu Word. Dodaje jednak nowy element pola do treści dokumentu. Możesz manipulować strukturą dokumentu, dodając, usuwając lub modyfikując istniejące elementy zgodnie ze swoimi potrzebami.
-
-#### P: Czy mogę dostosować wygląd pola włączenia tekstu w dokumencie programu Word za pomocą Aspose.Words dla .NET?
-
-Odp.: Pole włączenia tekstu nie dostosowuje bezpośrednio jego wyglądu w dokumencie programu Word. Można jednak sformatować dołączony tekst, korzystając z właściwości akapitu, właściwości czcionki i innych obiektów formatujących dostępnych w Aspose.Words dla .NET.
+### Jak mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?  
+ Możesz uzyskać bezpłatną wersję próbną od[Tutaj](https://releases.aspose.com/).

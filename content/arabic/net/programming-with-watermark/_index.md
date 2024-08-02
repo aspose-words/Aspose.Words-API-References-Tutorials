@@ -12,4 +12,4 @@ url: /ar/net/programming-with-watermark/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [إضافة علامة مائية نصية مع خيارات محددة](./add-text-watermark-with-specific-options/) | تعرف على كيفية إضافة علامة مائية نصية بخيارات محددة باستخدام Aspose.Words for .NET. دليل خطوة بخطوة. |
+| [إضافة علامة مائية نصية مع خيارات محددة](./add-text-watermark-with-specific-options/) | تعرف على كيفية إضافة علامة مائية نصية مع خيارات محددة إلى مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. تخصيص الخط والحجم واللون والتصميم بسهولة. |

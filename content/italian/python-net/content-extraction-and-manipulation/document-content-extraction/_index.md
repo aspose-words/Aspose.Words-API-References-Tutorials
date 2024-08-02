@@ -14,7 +14,7 @@ L'estrazione efficiente del contenuto dai documenti Word è un requisito comune 
 
 ## Prerequisiti
 
-Prima di immergerci nel codice, assicurati di avere installato Python e la libreria Aspose.Words. È possibile scaricare la libreria dal sito web[Qui](https://releases.aspose.com/words/python/). Inoltre, assicurati di avere un documento Word pronto per il test.
+ Prima di immergerci nel codice, assicurati di avere installato Python e la libreria Aspose.Words. È possibile scaricare la libreria dal sito web[Qui](https://releases.aspose.com/words/python/). Inoltre, assicurati di avere un documento Word pronto per il test.
 
 ## Installazione di Aspose.Words per Python
 

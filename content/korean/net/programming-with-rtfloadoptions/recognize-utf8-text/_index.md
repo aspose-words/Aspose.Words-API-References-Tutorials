@@ -11,7 +11,7 @@ url: /ko/net/programming-with-rtfloadoptions/recognize-utf8-text/
 
 멋진 기술에 대해 알아볼 준비가 되셨나요? 오늘은 Aspose.Words for .NET을 사용하여 Word 문서에서 UTF-8 텍스트를 인식하는 방법을 다루겠습니다. 여러 언어나 특수 문자를 사용하여 작업하는 경우 이는 획기적인 변화입니다. 그러니 버클을 채우고 시작해 보세요!
 
-## 전제조건
+## 전제 조건
 
 재미있는 부분으로 넘어가기 전에 필요한 모든 것이 갖추어져 있는지 확인하세요.
 

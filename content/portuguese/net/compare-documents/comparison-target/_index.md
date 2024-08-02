@@ -9,7 +9,7 @@ url: /pt/net/compare-documents/comparison-target/
 ---
 ## Introdução
 
-Ei! Você já se viu comparando duas versões de um documento do Word e monitorando manualmente cada pequena alteração? É como procurar uma agulha num palheiro, certo? Bem, e se eu lhe dissesse que há uma maneira super fácil de fazer isso usando Aspose.Words for .NET? Isso mesmo! Esta poderosa biblioteca permite comparar documentos do Word em um piscar de olhos. Hoje, vou orientá-lo no processo passo a passo. Pronto para se tornar um assistente de comparação de documentos? Vamos mergulhar!
+Ei! Você já se viu comparando duas versões de um documento do Word e monitorando manualmente cada pequena alteração? É como procurar uma agulha num palheiro, certo? Bem, e se eu lhe dissesse que há uma maneira super fácil de fazer isso usando Aspose.Words for .NET? Isso mesmo! Esta poderosa biblioteca permite comparar documentos do Word em um piscar de olhos. Hoje, vou orientar você no processo passo a passo. Pronto para se tornar um assistente de comparação de documentos? Vamos mergulhar!
 
 ## Pré-requisitos
 
@@ -17,7 +17,7 @@ Antes de entrarmos no âmago da questão, vamos ter certeza de que você tem tud
 
 1.  Aspose.Words for .NET: Você precisa desta biblioteca. Se você ainda não tem, pegue-o em[aqui](https://releases.aspose.com/words/net/).
 2.  Uma licença: você precisará de uma licença válida para desbloquear todo o potencial do Aspose.Words. Você pode comprar um[aqui](https://purchase.aspose.com/buy) ou obtenha uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
-3. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+3. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 4. Conhecimento básico de C#: Não se preocupe, você não precisa ser um profissional, apenas alguns conhecimentos básicos bastarão.
 
 ## Importar namespaces

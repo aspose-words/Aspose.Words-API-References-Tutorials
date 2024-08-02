@@ -81,7 +81,7 @@ Có, cách tốt nhất là chỉ định đơn vị đo lường. Open Office s
 
 ### Tôi có thể chuyển đổi nhiều tài liệu sang định dạng ODT trong một quy trình hàng loạt không?
 
-Có, bạn có thể tự động chuyển đổi nhiều tài liệu sang định dạng ODT bằng Aspose.Words for Java bằng cách lặp qua các tệp tài liệu của bạn và áp dụng quy trình chuyển đổi.
+Có, bạn có thể tự động hóa việc chuyển đổi nhiều tài liệu sang định dạng ODT bằng Aspose.Words for Java bằng cách lặp qua các tệp tài liệu của bạn và áp dụng quy trình chuyển đổi.
 
 ### Aspose.Words cho Java có tương thích với các phiên bản Java mới nhất không?
 

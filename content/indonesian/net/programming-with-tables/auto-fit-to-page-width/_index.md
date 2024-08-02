@@ -23,7 +23,7 @@ Setelah prasyarat ini diselesaikan, mari kita ke bagian yang menarik—coding!
 
 ## Impor Namespace
 
-Untuk mulai bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan. Ini memberi tahu program Anda di mana menemukan kelas dan metode yang akan Anda gunakan.
+Untuk mulai bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan. Ini memberitahu program Anda di mana menemukan kelas dan metode yang akan Anda gunakan.
 
 Inilah cara Anda mengimpor namespace Aspose.Words:
 

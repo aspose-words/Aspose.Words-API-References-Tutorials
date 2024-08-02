@@ -12,9 +12,9 @@ Split Document är en omfattande resurs som förklarar hur man delar upp ett dok
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Efter rubriker Html](./by-headings-html/) | Steg-för-steg-guide för att förklara C#-källkoden för HTML-funktionen By Heading i Aspose.Words för .NET |
-| [Efter avsnitt Html](./by-sections-html/) | Lär dig hur du delar upp ett Word-dokument i sektioner HTML med Aspose.Words för .NET med komplett kodexempel. |
-| [Efter sektioner](./by-sections/) | Lär dig hur du delar upp ett Word-dokument i separata avsnitt med Aspose.Words för .NET med komplett kodexempel. |
-| [Sida för sida](./page-by-page/) | Steg-för-steg-guide för att förklara C#-källkoden för Aspose.Words Sida för sida-funktionen för .NET |
+| [Dela Word-dokument efter rubriker Html](./by-headings-html/) | Lär dig hur du delar upp ett Word-dokument efter rubriker till HTML med Aspose.Words för .NET. Följ vår detaljerade, steg-för-steg-guide. |
+| [Dela Word-dokument efter avsnitt HTML](./by-sections-html/) | Lär dig hur du delar upp ett Word-dokument i sektioner till HTML med Aspose.Words för .NET med denna detaljerade, steg-för-steg-guide. |
+| [Dela Word-dokument efter sektioner](./by-sections/) | Lär dig hur du delar upp ett Word-dokument efter sektioner med Aspose.Words för .NET. Följ denna detaljerade steg-för-steg-guide för effektiv dokumenthantering. |
+| [Dela Word-dokument efter sida](./page-by-page/) | Lär dig hur du delar upp ett Word-dokument efter sida med Aspose.Words för .NET med denna detaljerade, steg-för-steg-guide. Perfekt för att hantera stora dokument effektivt. |
 | [Slå samman dokument](./merge-documents/) | Steg för steg guide för att förklara C#-källkoden för Slå samman dokument-funktionen i Aspose.Words för .NET |
-| [Efter sidintervall](./by-page-range/) | Extrahera enkelt efter sidintervall från ett Word-dokument med hjälp av Aspose.Words för .NET Steg-för-steg-guide. |
+| [Dela Word-dokument efter sidintervall](./by-page-range/) | Lär dig hur du delar upp ett Word-dokument efter sidintervall med Aspose.Words för .NET med vår detaljerade steg-för-steg-guide. Perfekt för utvecklare. |

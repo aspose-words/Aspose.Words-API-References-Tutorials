@@ -73,4 +73,4 @@ O: Tak, podczas konwertowania dokumentów zawierających kolumny przypisów do i
 
 #### P: Czy mogę dostosować wygląd kolumn przypisów?
 
-O: Tak, możesz dostosować wygląd kolumn przypisów, korzystając z właściwości formatowania dostępnych w Aspose.Words. Możesz dostosować szerokość kolumn, ustawić odstępy między kolumnami i zastosować niestandardowe style czcionek, jeśli to konieczne.
+Odp.: Tak, możesz dostosować wygląd kolumn przypisów, korzystając z właściwości formatowania dostępnych w Aspose.Words. Możesz dostosować szerokość kolumn, ustawić odstępy między kolumnami i zastosować niestandardowe style czcionek, jeśli to konieczne.

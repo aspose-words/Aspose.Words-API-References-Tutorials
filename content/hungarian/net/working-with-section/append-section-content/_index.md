@@ -16,7 +16,7 @@ Halihó! Gondolkozott már azon, hogyan lehet programozottan kezelni a Word-doku
 Mielőtt elkezdenénk, van néhány dolog, amire szüksége lesz:
 
 1. Alapvető C# ismerete: Nem kell szakértőnek lenned, de a C# alapszintű ismerete hasznos lesz.
-2.  Aspose.Words for .NET: Megteheti[töltse le itt](https://releases.aspose.com/words/net/) Ha nem szeretné azonnal megvásárolni, választhat a[ingyenes próbaverzió](https://releases.aspose.com/).
+2.  Aspose.Words for .NET: Megteheti[töltse le itt](https://releases.aspose.com/words/net/) . Ha nem szeretné azonnal megvásárolni, választhat a[ingyenes próbaverzió](https://releases.aspose.com/).
 3. Visual Studio: Bármelyik verziónak működnie kell, de a legújabb verzió ajánlott.
 4. .NET-keretrendszer: Győződjön meg arról, hogy telepítve van a gépén.
 
@@ -66,7 +66,7 @@ Most, hogy megvannak a szakaszaink, el kell érnünk őket, hogy manipulálhassu
 Section section = doc.Sections[2];
 ```
 
- Ebben a lépésben elérjük dokumentumunk harmadik részét. Ne feledje, hogy az index nulla alapú, tehát`Sections[2]` a harmadik szakaszra utal.
+Ebben a lépésben elérjük dokumentumunk harmadik részét. Ne feledje, hogy az index nulla alapú, tehát`Sections[2]` a harmadik szakaszra utal.
 
 ## 4. lépés: Tartalom hozzáfűzése egy szakaszhoz
 
@@ -102,7 +102,7 @@ Itt elmentjük a dokumentumot "output.docx" néven. A módosítások megtekinté
 
 ## Következtetés
 
- És megvan! Sikeresen manipulált egy Word-dokumentum szakaszait az Aspose.Words for .NET segítségével. Ez az oktatóanyag a dokumentum létrehozásának, szakaszok hozzáadásának és tartalmuk kezelésének alapjait ismertette. Az Aspose.Words segítségével sokkal összetettebb műveleteket is végrehajthat, ezért ne habozzon felfedezni a[API dokumentáció](https://reference.aspose.com/words/net/) a fejlettebb funkciókért.
+És megvan! Sikeresen manipulált egy Word-dokumentum szakaszait az Aspose.Words for .NET segítségével. Ez az oktatóanyag a dokumentum létrehozásának, szakaszok hozzáadásának és tartalmuk kezelésének alapjait ismertette. Az Aspose.Words segítségével sokkal összetettebb műveleteket is végrehajthat, ezért ne habozzon felfedezni a[API dokumentáció](https://reference.aspose.com/words/net/) a fejlettebb funkciókért.
 
 ## GYIK
 
@@ -116,7 +116,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ## 3. Melyek az Aspose.Words for .NET főbb jellemzői?
 
-Az Aspose.Words for .NET szolgáltatások széles skáláját kínálja, beleértve a dokumentumok létrehozását, formázását, konvertálását és manipulálását. A képességeiről bővebben a[API dokumentáció](https://reference.aspose.com/words/net/).
+ Az Aspose.Words for .NET szolgáltatások széles skáláját kínálja, beleértve a dokumentumok létrehozását, formázását, konvertálását és manipulálását. A képességeiről bővebben a[API dokumentáció](https://reference.aspose.com/words/net/).
 
 ## 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 

@@ -11,7 +11,7 @@ url: /ko/net/programming-with-pdfsaveoptions/export-document-structure/
 
 문서 조작의 세계를 탐색하는 것은 때때로 지도 없이 울창한 숲을 헤매는 것처럼 느껴질 수 있습니다. 하지만 걱정하지 마세요. 길을 찾는 데 도움이 되는 최고의 가이드가 있습니다! 오늘 우리는 Aspose.Words for .NET을 사용하여 Word 문서 구조를 PDF로 내보내는 마법의 세계로 뛰어들고 있습니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 가이드는 모든 단계를 명확하고 정확하게 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 이 여정을 시작하기 전에 시작하는 데 필요한 모든 필수 사항을 모아 보겠습니다.
 
@@ -81,7 +81,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
 전적으로! 개발 환경에서 스크립트 및 일괄 처리를 사용하여 이 프로세스를 자동화할 수 있습니다.
 
 ### .NET용 Aspose.Words의 무료 평가판을 어떻게 받을 수 있나요?
- 다음에서 무료 평가판을 받을 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).
+ 다음에서 무료 평가판을 받을 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/).
 
 ### 문제가 발생하면 어떻게 해야 합니까?
  다음 기관에서 도움을 구할 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).

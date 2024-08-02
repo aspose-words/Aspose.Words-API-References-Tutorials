@@ -106,7 +106,7 @@ Dans ce guide, nous avons exploré le processus d'amélioration du contenu visue
 
 ### Comment ajouter des bordures à une zone de texte ?
 
- Vous pouvez ajouter des bordures à une zone de texte à l'aide de l'outil`textbox.border` propriété et personnaliser son apparence.
+ Vous pouvez ajouter des bordures à une zone de texte à l'aide de l'outil`textbox.border`propriété et personnaliser son apparence.
 
 ### Puis-je intégrer des hyperliens dans une zone de texte ?
 

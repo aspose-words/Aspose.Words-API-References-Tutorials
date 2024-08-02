@@ -71,7 +71,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ### 步骤 3.2：重新开始页码
 
-从源文档的开头重新开始页码编号。
+从源文档的开始处重新开始页码编号。
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

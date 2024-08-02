@@ -100,7 +100,7 @@ row.AppendChild(cell);
 
 ```csharp
 // Затем мы повторим процесс для других ячеек и строк таблицы.
-// Мы также можем ускорить процесс, клонируя существующие ячейки и строки.
+//Мы также можем ускорить процесс, клонируя существующие ячейки и строки.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
  Да, вы можете запросить[бесплатная пробная версия](https://releases.aspose.com/) оценить библиотеку перед покупкой.
 
 ### Как приобрести Aspose.Words для .NET?
- Вы можете купить Aspose.Words для .NET на сайте[страница покупки](https://purchase.aspose.com/buy).
+Вы можете купить Aspose.Words для .NET на сайте[страница покупки](https://purchase.aspose.com/buy).
 
 ### Где я могу найти документацию по Aspose.Words для .NET?
  Документация доступна[здесь](https://reference.aspose.com/words/net/).

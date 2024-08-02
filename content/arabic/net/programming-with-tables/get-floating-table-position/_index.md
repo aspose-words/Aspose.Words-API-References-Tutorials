@@ -2,77 +2,111 @@
 title: الحصول على موضع الجدول العائم
 linktitle: الحصول على موضع الجدول العائم
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تحديد موضع الجداول العائمة في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية الحصول على مواضع الجدول العائم في مستندات Word باستخدام Aspose.Words لـ .NET. سيرشدك هذا الدليل المفصل خطوة بخطوة إلى كل ما تحتاج إلى معرفته.
 type: docs
 weight: 10
 url: /ar/net/programming-with-tables/get-floating-table-position/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سوف نتعلم كيفية تحديد موضع الجدول العائم في مستند Word باستخدام Aspose.Words for .NET. سنتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي، ستتمكن من الحصول على خصائص تحديد موضع الجدول العائم في مستندات Word الخاصة بك برمجيًا.
+هل أنت مستعد للغوص في عالم Aspose.Words لـ .NET؟ سنأخذك اليوم في رحلة لكشف أسرار الجداول العائمة في مستندات Word. تخيل أن لديك طاولة لا تقف ساكنة فحسب، بل تطفو بأناقة حول النص. رائع، أليس كذلك؟ سيرشدك هذا البرنامج التعليمي إلى كيفية الحصول على خصائص تحديد موضع هذه الجداول العائمة. اذا هيا بنا نبدأ!
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وقم بإنشاء مشروع C# جديد.
-2. قم بإضافة مرجع إلى مكتبة Aspose.Words for .NET.
+## المتطلبات الأساسية
 
-## الخطوة 2: تحميل المستند والوصول إلى الجداول
-لبدء معالجة الكلمات بالجداول، نحتاج إلى تحميل المستند الذي يحتوي عليها والوصول إليها. اتبع الخطوات التالية:
+قبل أن ننتقل إلى الجزء الممتع، هناك بعض الأشياء التي تحتاج إلى توفرها:
+
+1.  Aspose.Words for .NET: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيل Aspose.Words for .NET وتثبيته من[صفحة الإصدارات Aspose](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: تأكد من إعداد بيئة تطوير .NET. يعد Visual Studio خيارًا رائعًا.
+3. نموذج مستند: ستحتاج إلى مستند Word يحتوي على جدول عائم. يمكنك إنشاء واحد أو استخدام مستند موجود. 
+
+## استيراد مساحات الأسماء
+
+للبدء، تحتاج إلى استيراد مساحات الأسماء الضرورية. وهذا يضمن أن لديك حق الوصول إلى فئات Aspose.Words والأساليب المطلوبة لمعالجة مستندات Word.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+حسنًا، دعنا نقسم العملية إلى خطوات سهلة المتابعة.
+
+## الخطوة 1: قم بتحميل المستند الخاص بك
+
+أول الأشياء أولاً، تحتاج إلى تحميل مستند Word الخاص بك. يجب أن يحتوي هذا المستند على الجدول العائم الذي تريد فحصه.
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// قم بتحميل المستند
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-تأكد من استبدال "دليل مستنداتك" بالمسار الفعلي لدليل مستنداتك. تأكد أيضًا من أن المستند يحتوي على جداول عائمة.
+ في هذه الخطوة، أنت تخبر Aspose.Words بشكل أساسي بمكان العثور على المستند الخاص بك. تأكد من استبدال`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى المستند الخاص بك.
 
-## الخطوة 3: الحصول على خصائص تحديد موضع الجدول العائم
-بعد ذلك، سنقوم بمراجعة كافة الجداول الموجودة في المستند والحصول على خصائص موضع الجدول العائم. استخدم الكود التالي:
+## الخطوة 2: الوصول إلى الجداول الموجودة في المستند
+
+بعد ذلك، تحتاج إلى الوصول إلى الجداول الموجودة في القسم الأول من المستند. فكر في المستند كحاوية كبيرة، وستقوم بالبحث فيه للعثور على جميع الجداول.
 
 ```csharp
-foreach(Table table in doc.FirstSection.Body.Tables)
+foreach (Table table in doc.FirstSection.Body.Tables)
 {
-// إذا كان المصفوفة من النوع العائم، فاطبع خصائص تحديد موضعها.
+    // الكود الخاص بك لمعالجة كل جدول موجود هنا
+}
+```
+
+هنا، تقوم بالمرور عبر كل جدول موجود في نص القسم الأول من المستند.
+
+## الخطوة 3: التحقق مما إذا كان الجدول عائمًا
+
+الآن، تحتاج إلى تحديد ما إذا كان الجدول من النوع العائم. تحتوي الجداول العائمة على إعدادات محددة لالتفاف النص.
+
+```csharp
 if (table.TextWrapping == TextWrapping.Around)
 {
-Console.WriteLine(table.HorizontalAnchor);
-Console.WriteLine(table.VerticalAnchor);
-Console.WriteLine(table.AbsoluteHorizontalDistance);
-Console.WriteLine(table.AbsoluteVerticalDistance);
-Console.WriteLine(table.AllowOverlap);
-Console.WriteLine(table.AbsoluteHorizontalDistance);
-Console.WriteLine(table.RelativeVerticalAlignment);
-Console.WriteLine("...............................");
-}
+    // الكود الخاص بك لطباعة خصائص تحديد موضع الجدول موجود هنا
 }
 ```
 
- نحن هنا نستخدم أ`foreach` حلقة للتكرار عبر كافة المصفوفات الموجودة في المستند. نتحقق مما إذا كانت المصفوفة من النوع العائم عن طريق التحقق من`TextWrapping` ملكية. إذا كان الأمر كذلك، فإننا نطبع خصائص تحديد موضع الجدول، مثل الارتساء الأفقي، والارتساء الرأسي، والمسافات الأفقية والرأسية المطلقة، وإذن التداخل، والمسافة الأفقية المطلقة، والمحاذاة الرأسية النسبية.
- 
-### نموذج التعليمات البرمجية المصدر للحصول على موضع الجدول العائم باستخدام Aspose.Words لـ .NET 
+يتحقق هذا الشرط من تعيين نمط التفاف النص في الجدول على "حول"، مما يشير إلى أنه جدول عائم.
+
+## الخطوة 4: طباعة خصائص تحديد المواقع
+
+أخيرًا، لنستخرج ونطبع خصائص تحديد موضع الجدول العائم. تخبرك هذه الخصائص بمكان وضع الجدول بالنسبة للنص والصفحة.
 
 ```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table wrapped by text.docx");
-	foreach (Table table in doc.FirstSection.Body.Tables)
-	{
-		// إذا كان الجدول عائمًا، فقم بطباعة خصائص تحديد موضعه.
-		if (table.TextWrapping == TextWrapping.Around)
-		{
-			Console.WriteLine(table.HorizontalAnchor);
-			Console.WriteLine(table.VerticalAnchor);
-			Console.WriteLine(table.AbsoluteHorizontalDistance);
-			Console.WriteLine(table.AbsoluteVerticalDistance);
-			Console.WriteLine(table.AllowOverlap);
-			Console.WriteLine(table.AbsoluteHorizontalDistance);
-			Console.WriteLine(table.RelativeVerticalAlignment);
-			Console.WriteLine("..............................");
-		}
-	}
+if (table.TextWrapping == TextWrapping.Around)
+{
+    Console.WriteLine("Horizontal Anchor: " + table.HorizontalAnchor);
+    Console.WriteLine("Vertical Anchor: " + table.VerticalAnchor);
+    Console.WriteLine("Absolute Horizontal Distance: " + table.AbsoluteHorizontalDistance);
+    Console.WriteLine("Absolute Vertical Distance: " + table.AbsoluteVerticalDistance);
+    Console.WriteLine("Allow Overlap: " + table.AllowOverlap);
+    Console.WriteLine("Relative Vertical Alignment: " + table.RelativeVerticalAlignment);
+    Console.WriteLine("..............................");
+}
 ```
 
+تمنحك هذه الخصائص نظرة تفصيلية على كيفية إرساء الجدول ووضعه داخل المستند.
+
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية الحصول على موضع الجدول العائم في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي وتنفيذ كود C# المقدم، يمكنك الحصول على خصائص تحديد موضع الجداول العائمة في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة تحليل الجداول العائمة ومعالجتها وفقًا لاحتياجاتك المحددة.
+
+وهناك لديك! باتباع هذه الخطوات، يمكنك بسهولة استرداد وطباعة خصائص تحديد موضع الجداول العائمة في مستندات Word باستخدام Aspose.Words for .NET. سواء كنت تقوم بأتمتة معالجة المستندات أو مجرد فضول بشأن تخطيطات الجدول، فإن هذه المعرفة ستكون مفيدة بالتأكيد.
+
+تذكر أن العمل مع Aspose.Words for .NET يفتح عالمًا من الإمكانيات لمعالجة المستندات وأتمتتها. ترميز سعيد!
+
+## الأسئلة الشائعة
+
+### ما هو الجدول العائم في مستندات Word؟
+الجدول العائم هو جدول غير ثابت على النص ولكن يمكنه التحرك، عادةً مع التفاف النص حوله.
+
+### كيف يمكنني معرفة ما إذا كان الجدول عائمًا باستخدام Aspose.Words لـ .NET؟
+ يمكنك التحقق مما إذا كان الجدول عائمًا عن طريق فحصه`TextWrapping` ملكية. إذا تم ضبطه على`TextWrapping.Around`، الجدول عائم.
+
+### هل يمكنني تغيير خصائص تحديد موضع الجدول العائم؟
+نعم، باستخدام Aspose.Words for .NET، يمكنك تعديل خصائص تحديد موضع الجدول العائم لتخصيص تخطيطه.
+
+### هل Aspose.Words for .NET مناسب لأتمتة المستندات على نطاق واسع؟
+قطعاً! تم تصميم Aspose.Words for .NET لأتمتة المستندات عالية الأداء ويمكنه التعامل مع العمليات واسعة النطاق بكفاءة.
+
+### أين يمكنني العثور على مزيد من المعلومات والموارد حول Aspose.Words for .NET؟
+يمكنك العثور على وثائق وموارد مفصلة على[Aspose.Words لصفحة وثائق .NET](https://reference.aspose.com/words/net/).

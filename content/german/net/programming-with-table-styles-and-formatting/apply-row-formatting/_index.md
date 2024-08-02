@@ -2,111 +2,110 @@
 title: Zeilenformatierung anwenden
 linktitle: Zeilenformatierung anwenden
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Anwenden der Zeilenformatierung auf eine Tabelle mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Zeilenformatierungen in einem Word-Dokument anwenden. Folgen Sie unserer Schritt-für-Schritt-Anleitung für detaillierte Anweisungen.
 type: docs
 weight: 10
 url: /de/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess, mit Aspose.Words für .NET Zeilenformatierung auf eine Tabelle anzuwenden. Wir erklären den mitgelieferten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials haben Sie ein klares Verständnis dafür, wie Sie Tabellenzeilen in Ihren Word-Dokumenten mit Aspose.Words für .NET formatieren.
+Wenn Sie Ihre Word-Dokumente mit einer ausgefallenen Zeilenformatierung aufpeppen möchten, sind Sie hier genau richtig! In diesem Tutorial erfahren Sie, wie Sie Zeilenformatierungen mit Aspose.Words für .NET anwenden. Wir werden jeden Schritt aufschlüsseln, damit Sie ihn leicht nachvollziehen und auf Ihre Projekte anwenden können.
 
-## Schritt 1: Dokumentverzeichnis festlegen
-Zunächst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dies ist der Ort, an dem Sie Ihr bearbeitetes Word-Dokument speichern möchten. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
+## Voraussetzungen
+
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie zum Einstieg benötigen:
+
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie sie von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: AC#-Entwicklungsumgebung wie Visual Studio.
+3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind unbedingt erforderlich.
+4. Dokumentverzeichnis: Ein Verzeichnis, in dem Sie Ihr Dokument speichern.
+
+## Namespaces importieren
+
+Zunächst müssen Sie die erforderlichen Namespaces in Ihr C#-Projekt importieren:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Schritt 2: Neues Dokument und Dokumentgenerator erstellen
- Als nächstes müssen Sie eine neue Instanz des`Document` Klasse und ein Dokumentkonstruktor für dieses Dokument.
+Lassen Sie uns den Vorgang nun Schritt für Schritt durchgehen.
+
+## Schritt 1: Neues Dokument erstellen
+
+Zuerst müssen wir ein neues Dokument erstellen. Dies wird unsere Arbeitsfläche, auf der wir unsere Tabelle hinzufügen und die Formatierung anwenden.
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 3: Ein neues Board starten
- Um die Zeilenformatierung anzuwenden, müssen wir zunächst eine neue Tabelle mit dem`StartTable()` Methode des Dokumentkonstruktors.
+## Schritt 2: Eine neue Tabelle starten
+
+ Als nächstes beginnen wir eine neue Tabelle mit dem`DocumentBuilder`Objekt. Hier geschieht die Magie.
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## Schritt 4: Zelle einfügen und zum Zeilenformat wechseln
-Jetzt können wir eine Zelle in die Tabelle einfügen und das Zeilenformat für diese Zelle mit dem Dokument-Generator aufrufen.`InsertCell()`Und`RowFormat` Methoden.
+## Schritt 3: Zeilenformatierung definieren
+
+Hier definieren wir die Zeilenformatierung. Dazu gehört das Festlegen der Zeilenhöhe und des Zeilenabstands.
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## Schritt 5: Zeilenhöhe festlegen
- Um die Zeilenhöhe einzustellen, verwenden wir die`Height`Und`HeightRule` Eigenschaften des Zeilenformats. In diesem Beispiel setzen wir eine Zeilenhöhe von 100 Punkten und verwenden die`Exactly` Regel.
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## Schritt 6: Tabellenformatierung festlegen
- Einige Formatierungseigenschaften können in der Tabelle selbst festgelegt werden und werden auf alle Tabellenzeilen angewendet. In diesem Beispiel legen wir die Tabellenrandeigenschaften mithilfe der`LeftPadding`, `RightPadding`, `TopPadding`Und`BottomPadding` Eigenschaften.
+## Schritt 4: Inhalt in die Zelle einfügen
+
+Fügen wir nun etwas Inhalt in unsere schön formatierte Zeile ein. Dieser Inhalt zeigt, wie die Formatierung aussieht.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## Schritt 7: Inhalt zur Zeile hinzufügen
-Jetzt können wir
+## Schritt 5: Zeile und Tabelle beenden
 
- Wir werden der Zeile Inhalt hinzufügen, indem wir die Methoden des Dokumentkonstruktors verwenden. In diesem Beispiel verwenden wir die`Writeln()` Methode zum Hinzufügen von Text zur Zeile.
+Schließlich müssen wir die Zeile und die Tabelle beenden, um unsere Struktur zu vervollständigen.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## Schritt 8: Linie und Tabelle fertigstellen
- Sobald wir den Inhalt zur Zeile hinzugefügt haben, können wir die Zeile beenden mit dem`EndRow()` -Methode und beenden Sie die Tabelle anschließend mit der`EndTable()` Methode.
+## Schritt 6: Speichern Sie das Dokument
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## Schritt 9: Speichern Sie das geänderte Dokument
-Abschließend speichern wir das geänderte Dokument in einer Datei. Sie können einen geeigneten Namen und Speicherort für das Ausgabedokument wählen.
+Nachdem unsere Tabelle nun fertig ist, ist es an der Zeit, das Dokument zu speichern. Geben Sie den Pfad zu Ihrem Dokumentverzeichnis an und speichern Sie die Datei.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET eine Zeilenformatierung auf eine Tabelle angewendet.
-
-### Beispielquellcode zum Anwenden der Zeilenformatierung mit Aspose.Words für .NET 
-
-```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Diese Formatierungseigenschaften werden für die Tabelle festgelegt und auf alle Zeilen in der Tabelle angewendet.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Zeilenformatierungen auf eine Tabelle anwendet. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie diese Funktionalität problemlos in Ihre C#-Projekte integrieren. Die Manipulation der Tabellenzeilenformatierung ist ein wesentlicher Aspekt der Dokumentverarbeitung, und Aspose.Words bietet hierfür eine leistungsstarke und flexible API. Mit diesem Wissen können Sie die visuelle Darstellung Ihrer Word-Dokumente verbessern und bestimmte Anforderungen erfüllen.
+
+Und da haben Sie es! Sie haben mit Aspose.Words für .NET erfolgreich Zeilenformatierung auf eine Tabelle in einem Word-Dokument angewendet. Diese einfache, aber leistungsstarke Technik kann die Lesbarkeit und Ästhetik Ihrer Dokumente erheblich verbessern.
+
+## Häufig gestellte Fragen
+
+### Kann ich einzelnen Zeilen unterschiedliche Formatierungen zuweisen?  
+ Ja, Sie können jede Zeile individuell anpassen, indem Sie unterschiedliche Eigenschaften festlegen für`RowFormat`.
+
+### Wie passe ich die Breite der Spalten an?  
+ Sie können die Breite der Spalten mit den`CellFormat.Width` Eigentum.
+
+### Ist es möglich, Zellen in Aspose.Words für .NET zusammenzuführen?  
+ Ja, Sie können Zellen verbinden mit dem`CellMerge` Eigentum der`CellFormat`.
+
+### Kann ich den Zeilen Ränder hinzufügen?  
+ Absolut! Sie können Zeilenränder hinzufügen, indem Sie`Borders` Eigentum der`RowFormat`.
+
+### Wie wende ich eine bedingte Formatierung auf Zeilen an?  
+Sie können in Ihrem Code bedingte Logik verwenden, um je nach bestimmten Bedingungen unterschiedliche Formatierungen anzuwenden.

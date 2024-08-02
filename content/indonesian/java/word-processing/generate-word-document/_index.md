@@ -198,4 +198,4 @@ Ya, selain dokumen Word, Aspose.Words for Java dapat mengonversi file ke PDF, HT
 
 ### 5. Seberapa sering Aspose.Words untuk Java diperbarui?
 
-Aspose secara berkala merilis pembaruan dan peningkatan pada perpustakaannya, memastikan kinerja optimal dan mengatasi masalah apa pun yang muncul.
+Aspose secara rutin merilis pembaruan dan peningkatan pada perpustakaannya, memastikan kinerja optimal dan mengatasi masalah apa pun yang muncul.

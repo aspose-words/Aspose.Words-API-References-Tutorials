@@ -62,7 +62,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 ```
 
 ## Závěr
-V tomto tutoriálu jsme viděli, jak zkontrolovat textové efekty DrawingML v dokumentu aplikace Word pomocí Aspose.Words for .NET. Zaškrtnutí textových efektů DrawingML vám umožňuje identifikovat části textu, které mají aplikované specifické efekty. Neváhejte použít tuto funkci k manipulaci a analýze textových efektů v dokumentech aplikace Word.
+tomto tutoriálu jsme viděli, jak zkontrolovat textové efekty DrawingML v dokumentu aplikace Word pomocí Aspose.Words for .NET. Zaškrtnutí textových efektů DrawingML vám umožňuje identifikovat části textu, které mají aplikované specifické efekty. Neváhejte použít tuto funkci k manipulaci a analýze textových efektů v dokumentech aplikace Word.
 
 ### FAQ
 

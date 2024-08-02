@@ -2,46 +2,37 @@
 title: Kétirányú jelek hozzáadása a Word dokumentumhoz
 linktitle: Kétirányú jelek hozzáadása a Word dokumentumhoz
 second_title: Aspose.Words Document Processing API
-description: Tanuljon meg kétirányú jelöléseket hozzáadni egy Word-dokumentumhoz az Aspose.Words for .NET segítségével, és készítsen professzionális többnyelvű dokumentumokat.
+description: Ebből az útmutatóból megtudhatja, hogyan adhat kétirányú (kétirányú) jelöléseket Word-dokumentumokhoz az Aspose.Words for .NET használatával. Gondoskodjon a többnyelvű tartalom megfelelő szövegirányáról.
 type: docs
 weight: 10
 url: /hu/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
+## Bevezetés
 
-Az Aspose.Words for .NET egy hatékony könyvtár Word dokumentumok létrehozásához, szerkesztéséhez és kezeléséhez C# alkalmazásokban. Az Aspose.Words által kínált szolgáltatások közé tartozik az a képesség, hogy kétirányú (kétirányú) jelöléseket adjon a dokumentumhoz. Ebben az útmutatóban végigvezetjük, hogyan használhatja az Aspose.Words for .NET C# forráskódját kétirányú jelölések hozzáadásához egy dokumentumhoz.
+A dokumentumfeldolgozás világában a kétirányú (Bidi) szöveg kezelése gyakran kissé körülményes lehet. Ez különösen igaz, ha olyan nyelvekkel foglalkozunk, amelyeknek különböző szövegirányai vannak, mint például az arab vagy a héber. Szerencsére az Aspose.Words for .NET megkönnyíti az ilyen helyzetek kezelését. Ebben az oktatóanyagban végigvezetjük, hogyan adhatunk kétirányú jeleket egy Word-dokumentumhoz az Aspose.Words for .NET használatával.
 
-## Az Aspose.Words könyvtár megértése
+## Előfeltételek
 
-Mielőtt belemerülne a kódba, fontos megérteni a .NET Aspose.Words könyvtárát. Az Aspose.Words egy népszerű könyvtár, amely egyszerűvé és hatékonysá teszi a Word-dokumentumokkal végzett szövegfeldolgozást. A funkciók széles skáláját kínálja a Word-dokumentumok létrehozásához, szerkesztéséhez és kezeléséhez, beleértve a kétirányú jelölések hozzáadását.
+Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-## A dokumentum létrehozása és tartalom hozzáadása
+1.  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Letöltheti a[Aspose Letöltések oldal](https://releases.aspose.com/words/net/).
+2. .NET Framework vagy .NET Core: Győződjön meg arról, hogy a példák futtatásához kompatibilis .NET-környezet van beállítva.
+3. Alapszintű C# ismerete: C# programozási nyelv és alapvető műveletek ismerete .NET-ben.
 
-Az első lépés egy új dokumentum létrehozása és tartalom hozzáadása. Új dokumentumpéldány létrehozásához használja a Dokumentum osztályt. Ezután a DocumentBuilder osztály segítségével szöveget adjon a dokumentumhoz. Íme egy példa:
+## Névterek importálása
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. Writen("Hello world!");
-builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
-```
-
-Ebben a példában új dokumentumot hozunk létre, és a DocumentBuilder segítségével szöveget adunk hozzá. Három sornyi szöveget adtunk hozzá: egyet angolul, egyet héberül és egyet arabul, hogy bemutassuk a tartalom hozzáadását különböző nyelveken.
-
-## Kétirányú jelek hozzáadva
-
-A tartalom hozzáadása után most már kétirányú jeleket is hozzáadhatunk a dokumentumhoz. Ehhez a TxtSaveOptions osztályt használjuk, és az AddBidiMarks tulajdonságot igazra állítjuk. Itt van, hogyan:
+A kezdéshez importálnia kell a szükséges névtereket. A következőképpen veheti fel őket a projektjébe:
 
 ```csharp
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
-doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Ebben a példában létrehozzuk a TxtSaveOptions egy példányát, és az AddBidiMarks tulajdonságot igazra állítjuk. Ezután a Dokumentum osztály Mentés metódusával mentjük a dokumentumot kétirányú jelölésekkel.
+Bontsuk le a kétirányú jelölések Word-dokumentumban történő hozzáadásának folyamatát egyértelmű lépésekre. Minden lépés végigvezeti Önt a kódon és annak célján.
 
-### Példa forráskód az "Add Bidi Marks" funkcióhoz az Aspose.Words for .NET-hez
+## 1. lépés: Állítsa be a dokumentumot
+
+ Kezdje azzal, hogy hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` tartalom hozzáadásához a dokumentumhoz.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -50,44 +41,52 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Hozzon létre egy dokumentumot, és adjon hozzá tartalmat
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
-builder. Writen("Hello world!");
+ Ebben a lépésben inicializál egy új Word-dokumentumot, és beállítja a`DocumentBuilder` a tartalom beillesztésének megkönnyítése érdekében.
+
+## 2. lépés: Adjon hozzá tartalmat a dokumentumhoz
+
+Ezután adjon hozzá szöveget a dokumentumhoz. Itt különböző nyelvű szövegeket adunk hozzá a kétirányú szövegkezelés illusztrálására.
+
+```csharp
+builder.Writeln("Hello world!");
 builder.ParagraphFormat.Bidi = true;
-builder. Writen("שלום עולם!");
-builder. Writen("مرحبا بالعالم!");
+builder.Writeln("שלום עולם!");
+builder.Writeln("مرحبا بالعالم!");
+```
 
+Itt először hozzáadunk egy szabványos angol kifejezést. Ezután engedélyezzük a kétirányú szövegformázást a következő, héber és arab nyelven írt szöveghez. Ez bemutatja, hogyan lehet kétirányú szöveget beépíteni.
+
+## 3. lépés: Konfigurálja a Bidi Marks mentési beállításait
+
+ Annak érdekében, hogy a kétirányú jelölések helyesen legyenek elmentve a dokumentumban, konfigurálnia kell a`TxtSaveOptions` és engedélyezze a`AddBidiMarks` választási lehetőség.
+
+```csharp
 // Adjon hozzá kétirányú jeleket
-TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true
-
-  };
+TxtSaveOptions saveOptions = new TxtSaveOptions { AddBidiMarks = true };
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.AddBidiMarks.txt", saveOptions);
 ```
 
+ Ebben a lépésben létrehozunk egy példányt`TxtSaveOptions` és állítsa be a`AddBidiMarks`tulajdonát`true`. Ez biztosítja, hogy a kétirányú jelek szerepeljenek a dokumentum szöveges fájlként történő mentésekor.
+
 ## Következtetés
 
-Ebben az útmutatóban elmagyaráztuk, hogyan használhatja az Aspose.Words for .NET-et kétirányú jelölések hozzáadásához egy Word-dokumentumhoz a mellékelt C# forráskód használatával. A megadott lépések követésével könnyedén hozzáadhat Bidi jeleket a Word dokumentumaihoz a C# alkalmazásban. Az Aspose.Words óriási rugalmasságot és teljesítményt kínál a szövegszerkesztéshez szövegformázással és nyelvkezeléssel, lehetővé téve a többnyelvű dokumentumok professzionális létrehozását.
+A kétirányú jelölések hozzáadása a Word-dokumentumokhoz döntő lépés lehet olyan többnyelvű tartalom kezelésekor, amely különböző szövegirányokkal rendelkező nyelveket tartalmaz. Az Aspose.Words for .NET segítségével ez a folyamat egyszerű és hatékony. A fent vázolt lépések követésével biztosíthatja, hogy dokumentumai helyesen jelenítsenek meg kétirányú szöveget, javítva az olvashatóságot és a pontosságot.
 
-### Gyakran Ismételt Kérdések
+## GYIK
 
-#### K: Mi az Aspose.Words for .NET?
-Az Aspose.Words for .NET egy hatékony könyvtár Word dokumentumok létrehozásához, szerkesztéséhez és kezeléséhez C# alkalmazásokban. Számos funkciót kínál a Word-dokumentumokkal végzett szövegfeldolgozáshoz, beleértve a kétirányú (kétirányú) jelölések hozzáadását.
+### Mik azok a bidi jelek és miért fontosak?
+A kétirányú jelek speciális karakterek, amelyek a szöveg irányának szabályozására szolgálnak a dokumentumokban. Elengedhetetlenek a jobbról balra olvasó nyelvek, például az arab és a héber megfelelő megjelenítéséhez.
 
-#### K: Milyen funkciókat kínál az Aspose.Words for .NET?
-Az Aspose.Words for .NET szolgáltatások széles skáláját kínálja Word-dokumentumok létrehozásához, szerkesztéséhez és kezeléséhez. Néhány ilyen funkció közé tartozik a dokumentumok létrehozása, tartalom hozzáadása, szöveg formázása, táblázatok kezelése, dokumentumok egyesítése és felosztása, dokumentumok konvertálása stb.
+### Használhatom az Aspose.Words for .NET-et más típusú szövegirányítási problémák kezelésére?
+Igen, az Aspose.Words for .NET átfogó támogatást nyújt a különféle szövegirány- és formázási igényekhez, beleértve a jobbról balra és balról jobbra író nyelveket is.
 
-#### K: Hogyan adhatok kétirányú jeleket egy Word-dokumentumhoz az Aspose.Words for .NET használatával?
-Az alábbi lépések végrehajtásával kétirányú jelöléseket adhat a Word-dokumentumokhoz:
+### Lehetséges-e a kétirányú formázást csak a dokumentum bizonyos részeire alkalmazni?
+Igen, szükség szerint alkalmazhatja a kétirányú formázást a dokumentum adott bekezdéseire vagy szakaszaira.
 
- Hozzon létre egy új dokumentumot a`Document` osztály.
+### Milyen formátumokba menthetem a dokumentumot kétirányú jelekkel?
+A megadott példában a dokumentum szöveges fájlként van elmentve. Az Aspose.Words azonban támogatja a dokumentumok különféle formátumokban történő mentését is, miközben megőrzi a kétirányú jeleket.
 
- Használja a`DocumentBuilder` osztályt, hogy tartalmat adjon a dokumentumhoz.
-
- Miután hozzáadta a tartalmat, használja a`TxtSaveOptions` osztályt, és állítsa be a`AddBidiMarks`tulajdonát`true`.
-
- Mentse el a dokumentumot kétirányú jelekkel a`Save` módszere a`Document` osztály.
-
-#### K: Az Aspose.Words több nyelvet is támogat kétirányú jelölések hozzáadásához?
-Igen, az Aspose.Words több nyelvet is támogat a kétirányú jelölések hozzáadásához. Az Aspose.Words for .NET segítségével kétirányú jelöléseket adhat hozzá a különböző nyelvű szövegekhez, például angolul, héberül és arabul.
-
-#### K: Vannak további lehetőségek a dokumentum kétirányú jelöléssel történő mentésére?
- Igen, megadhat más beállításokat is, ha a dokumentumot kétirányú jelöléssel menti a segítségével`TxtSaveOptions` osztály. Például beállíthatja a dokumentum mentési formátumát, a kódolási beállításokat stb.
+### Hol találhatok további információt az Aspose.Words for .NET-ről?
+ Az Aspose.Words for .NET-ről többet megtudhat a következőn keresztül[Aspose Dokumentáció](https://reference.aspose.com/words/net/) és elérje a[Támogatói fórum](https://forum.aspose.com/c/words/8) további segítségért.

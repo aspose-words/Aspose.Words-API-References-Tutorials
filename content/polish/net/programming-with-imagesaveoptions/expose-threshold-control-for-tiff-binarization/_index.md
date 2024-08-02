@@ -2,7 +2,7 @@
 title: Ujawnij kontrolę progową dla binaryzacji Tiff
 linktitle: Ujawnij kontrolę progową dla binaryzacji Tiff
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak udostępnić kontrolę progową dla binaryzacji TIFF w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku.
+description: Dowiedz się, jak udostępnić kontrolę progową dla binaryzacji TIFF w dokumentach Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/

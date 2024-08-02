@@ -7,7 +7,6 @@ type: docs
 weight: 10
 url: /zh-hant/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## 介紹
 
 在 .NET 開發領域，管理和操作文件是一項至關重要的任務，通常需要有效處理文件中的超連結。 Aspose.Words for .NET 提供了無縫替換超連結的強大功能，確保您的文件動態連結到正確的資源。本教學深入探討如何使用 Aspose.Words for .NET 實現這一目標，並逐步引導您完成整個過程。
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 使用 Aspose.Words for .NET 取代文件中的超連結非常簡單，並且增強了文件的動態特性。無論是更新 URL 還是以程式方式轉換文件內容，Aspose.Words 都簡化了這些任務，確保高效率的文件管理。
 
-## 常見問題 (FAQ)
+## 常見問題解答
 
 ### Aspose.Words for .NET 可以處理複雜的文件結構嗎？
 是的，Aspose.Words 無縫支援表格、圖像和超連結等複雜結構。

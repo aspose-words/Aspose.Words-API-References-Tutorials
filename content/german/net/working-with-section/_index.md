@@ -18,13 +18,13 @@ Wenn Sie diese Tutorials befolgen, können Sie Abschnitte in Ihren Word-Dokument
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Abschnitt hinzufügen](./add-section/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einem Word-Dokument einen Abschnitt hinzufügen. Schritt-für-Schritt-Anleitung zum Strukturieren Ihres Dokuments. |
+| [Abschnitt hinzufügen](./add-section/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Abschnitte in Word-Dokumente einfügen. Dieses Handbuch behandelt alles vom Erstellen eines Dokuments bis zum Hinzufügen und Verwalten von Abschnitten. |
 | [Abschnitt löschen](./delete-section/) | Meistern Sie die Dokumentbearbeitung mit Aspose.Words für .NET. Erfahren Sie, wie Sie in wenigen einfachen Schritten Abschnitte aus Word-Dokumenten löschen. |
 | [Alle Abschnitte löschen](./delete-all-sections/) | Erfahren Sie in dieser leicht verständlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET alle Abschnitte in einem Word-Dokument löschen. |
 | [Abschnitts-Word-Inhalt anhängen](./append-section-content/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Inhalte zu bestimmten Abschnitten eines Word-Dokuments hinzufügen.  |
-| [Abschnitt „Klonen“](./clone-section/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen Abschnitt in einem Word-Dokument klonen. Schritt-für-Schritt-Anleitung. |
-| [Abschnitt „Kopieren“](./copy-section/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET einen Abschnitt aus einem Word-Dokument in ein anderes Dokument kopieren. |
-| [Kopf-/Fußzeileninhalt löschen](./delete-header-footer-content/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeileninhalte aus einem Word-Dokument entfernen.  |
-| [Abschnittsinhalt löschen](./delete-section-content/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Inhalte aus einem bestimmten Abschnitt eines Word-Dokuments löschen. |
+| [Abschnitt „Klonen“](./clone-section/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Abschnitte in Word-Dokumenten klonen. Dieses Handbuch enthält schrittweise Anweisungen zur effizienten Dokumentbearbeitung. |
+| [Abschnitt „Kopieren“](./copy-section/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Abschnitte zwischen Word-Dokumenten kopieren. Dieses Handbuch enthält schrittweise Anweisungen für eine effiziente Dokumentenverwaltung. |
+| [Kopf-/Fußzeileninhalt löschen](./delete-header-footer-content/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeilen in Word-Dokumenten löschen. Diese Schritt-für-Schritt-Anleitung sorgt für eine effiziente Dokumentenverwaltung.  |
+| [Abschnittsinhalt löschen](./delete-section-content/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Abschnittsinhalte in Word-Dokumenten löschen. Diese Schritt-für-Schritt-Anleitung sorgt für eine effiziente Dokumentenverwaltung. |
 | [Word-Seiteneinrichtung in allen Abschnitten ändern](./modify-page-setup-in-all-sections/) | In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET das Word-Seiten-Setup in allen Abschnitten eines Word-Dokuments ändern. |
-| [Abschnitte Zugriff nach Index](./sections-access-by-index/) | Erfahren Sie in diesem Tutorial, wie Sie mit Aspose.Words für .NET per Index auf Abschnitte eines Word-Dokuments zugreifen und deren Einstellungen ändern. |
+| [Abschnitte Zugriff nach Index](./sections-access-by-index/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET auf Abschnitte in Word-Dokumenten zugreifen und diese bearbeiten. Diese Schritt-für-Schritt-Anleitung sorgt für eine effiziente Dokumentenverwaltung. |

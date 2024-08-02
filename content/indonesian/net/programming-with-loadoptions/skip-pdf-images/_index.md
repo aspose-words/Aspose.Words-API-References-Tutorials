@@ -83,9 +83,9 @@ Dan itu dia! Anda baru saja mempelajari cara melewati gambar dalam dokumen PDF m
 
 ### Bisakah saya melewatkan gambar tertentu dalam PDF secara selektif?
 
- Tidak, itu`SkipPdfImages` opsi melewatkan semua gambar dalam PDF. Jika Anda memerlukan kontrol selektif, pertimbangkan pra-pemrosesan PDF.
+ Tidak, itu`SkipPdfImages` opsi melewatkan semua gambar dalam PDF. Jika Anda memerlukan kontrol selektif, pertimbangkan untuk melakukan pra-pemrosesan PDF.
 
-### Apakah fitur ini memengaruhi teks dalam PDF?
+### Apakah fitur ini memengaruhi teks di PDF?
 
 Tidak, melewatkan gambar hanya memengaruhi gambar. Teksnya tetap utuh dan dapat diakses sepenuhnya.
 

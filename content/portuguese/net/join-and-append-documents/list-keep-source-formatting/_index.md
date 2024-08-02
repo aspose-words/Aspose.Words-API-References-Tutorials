@@ -76,7 +76,7 @@ Concluindo, mesclar documentos preservando sua formatação original é simples 
 Aspose.Words lida com diferentes estilos com elegância, preservando a formatação original o mais próximo possível.
 
 ### Posso mesclar documentos de diferentes formatos?
-Sim, Aspose.Words oferece suporte à mesclagem de documentos de vários formatos, incluindo DOCX, DOC, RTF e outros.
+Sim, Aspose.Words suporta a fusão de documentos de vários formatos, incluindo DOCX, DOC, RTF e outros.
 
 ### O Aspose.Words é compatível com o .NET Core?
 Sim, o Aspose.Words oferece suporte total ao .NET Core, permitindo o desenvolvimento entre plataformas.

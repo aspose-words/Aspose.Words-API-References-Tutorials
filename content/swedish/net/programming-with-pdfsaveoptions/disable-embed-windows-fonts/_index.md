@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Steg 2: Konfigurera PDF-sparalternativ
 
-Därefter ställer vi in PDF-sparalternativen. Det är här vi anger att vi inte vill bädda in de vanliga Windows-teckensnitten.
+Därefter kommer vi att ställa in PDF-sparalternativen. Det är här vi anger att vi inte vill bädda in de vanliga Windows-teckensnitten.
 
 ```csharp
 // Utdata-PDF-filen kommer att sparas utan att bädda in vanliga Windows-teckensnitt.

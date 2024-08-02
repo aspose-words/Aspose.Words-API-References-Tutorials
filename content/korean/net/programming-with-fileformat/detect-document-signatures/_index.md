@@ -11,7 +11,7 @@ url: /ko/net/programming-with-fileformat/detect-document-signatures/
 
 특히 오늘날의 디지털 시대에는 Word 문서의 무결성과 신뢰성을 보장하는 것이 중요합니다. 이를 달성하는 한 가지 방법은 디지털 서명을 사용하는 것입니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 디지털 서명을 감지하는 방법을 살펴보겠습니다. 우리는 기본부터 단계별 가이드까지 모든 것을 다루므로 끝까지 포괄적인 이해를 보장합니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 준비되어 있는지 확인하세요.
 
@@ -54,7 +54,7 @@ using Aspose.Words;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
 
 ## 3단계: 파일 형식 감지
 

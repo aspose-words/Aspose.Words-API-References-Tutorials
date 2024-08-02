@@ -11,13 +11,13 @@ url: /ko/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 
 .NET 애플리케이션에서 PDF를 처리할 때 Aspose.Words for .NET은 획기적인 게임 체인저입니다. PDF에서 특정 페이지를 변환, 조작 또는 추출해야 하는 경우 이 강력한 라이브러리를 사용하면 됩니다. 오늘 우리는 일반적이면서도 중요한 작업인 PDF 문서에서 특정 범위의 페이지를 로드하는 작업에 대해 살펴보겠습니다. 이 자세한 튜토리얼을 시작하면서 버클을 채우세요!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 몇 가지 사항이 있습니다.
 
 1. .NET용 Aspose.Words: Aspose.Words 라이브러리가 있는지 확인하세요. 아직 받지 못하셨다면, 다음과 같이 하세요.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 선호하는 IDE를 사용하여 개발 환경을 설정합니다.
-3.  라이센스: Aspose.Words는 무료 평가판을 제공하지만[임시면허](https://purchase.aspose.com/temporary-license/) 제한 없이 전체 기능을 사용할 수 있습니다.
+3.  라이센스: Aspose.Words는 무료 평가판을 제공하지만[임시 면허증](https://purchase.aspose.com/temporary-license/) 제한 없이 전체 기능을 사용할 수 있습니다.
 
 ## 네임스페이스 가져오기
 

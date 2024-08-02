@@ -2,42 +2,79 @@
 title: Formátovaná tabulka
 linktitle: Formátovaná tabulka
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vytvořit formátovanou tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se vytvářet a formátovat tabulky v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-tables/formatted-table/
 ---
+## Úvod
 
-V tomto tutoriálu se naučíme, jak vytvořit formátovanou tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci programově vytvářet tabulky s vlastním formátováním v dokumentech aplikace Word.
+Vytváření a formátování tabulek v dokumentech aplikace Word programově se může zdát jako skličující úkol, ale s Aspose.Words pro .NET se to stává přímočarým a ovladatelným. V tomto tutoriálu vás provedeme vytvořením formátované tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše od nastavení prostředí až po uložení dokumentu pomocí krásně formátované tabulky.
 
-## Krok 1: Nastavení projektu
-1. Spusťte Visual Studio a vytvořte nový projekt C#.
-2. Přidejte odkaz na knihovnu Aspose.Words for .NET.
+## Předpoklady
 
-## Krok 2: Vytvoření dokumentu a inicializace generátoru dokumentů
-Abychom mohli začít vytvářet formátovanou tabulku, musíme vytvořit nový dokument a inicializovat generátor dokumentů. Následuj tyto kroky:
+Než se ponoříte do kódu, ujistěte se, že máte vše, co potřebujete:
+
+1. Aspose.Words for .NET Library: Stáhněte si ji z[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: IDE jako Visual Studio.
+3. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
+
+## Importovat jmenné prostory
+
+Před napsáním skutečného kódu musíte importovat potřebné jmenné prostory:
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//Vytvořte dokument a inicializujte generátor dokumentů
+## Krok 1: Nastavte adresář dokumentů
+
+Nejprve musíte definovat cestu, kam bude váš dokument uložen.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kam chcete dokument uložit.
+
+## Krok 2: Inicializujte Document a DocumentBuilder
+
+Nyní inicializujte nový dokument a objekt DocumentBuilder.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Nezapomeňte nahradit „VAŠE ADRESÁŘ DOKUMENTŮ“ skutečnou cestou k adresáři vašich dokumentů.
+ The`DocumentBuilder` je pomocná třída, která zjednodušuje proces vytváření dokumentů.
 
-## Krok 3: Vytvoření formátované tabulky
-Dále vytvoříme formátovanou tabulku pomocí metod poskytnutých tvůrcem dokumentů. Použijte následující kód:
+## Krok 3: Spusťte tabulku
+
+ Dále začněte vytvářet tabulku pomocí`StartTable` metoda.
 
 ```csharp
-// Začněte se stavbou pole
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// Konstrukce řádku záhlaví tabulky
-builder. InsertCell();
-table. LeftIndent = 20.0;
+Pro spuštění tabulky je nutné vložit buňku.
+
+## Krok 4: Použijte formátování na šířku tabulky
+
+Můžete použít formátování, které ovlivní celou tabulku. Například nastavení levého odsazení:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## Krok 5: Naformátujte řádek záhlaví
+
+Nastavte výšku, zarovnání a další vlastnosti pro řádek záhlaví.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+V tomto kroku dáme vyniknout řádku záhlaví nastavením barvy pozadí, velikosti písma a zarovnání.
+
+## Krok 6: Vložte další buňky záhlaví
+
+Vložte další buňky pro řádek záhlaví:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## Krok 7: Naformátujte řádky těla
 
-// Konstrukce těla pole
+Po nastavení záhlaví naformátujte tělo tabulky:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// Konec konstrukce pole
-builder. EndTable();
 ```
 
- Zde používáme tvůrce dokumentů k sestavení tabulky krok za krokem. Začínáme telefonátem`StartTable()` k inicializaci tabulky. Poté použijeme`InsertCell()` vkládat buňky a`Write()` přidat obsah do každé buňky. K definování formátování řádků, buněk a textu tabulky používáme také různé vlastnosti formátování.
+## Krok 8: Vložte řádky těla
 
-## Krok 4: Uložte dokument
-Nakonec musíme uložit dokument obsahující formátovanou tabulku. Použijte následující kód:
+Vložte řádky těla s obsahem:
 
 ```csharp
-// Uložte dokument
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+Opakujte pro další řádky:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Krok 9: Uložte dokument
+
+Nakonec uložte dokument do určeného adresáře:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
-
-### Ukázka zdrojového kódu pro formátovanou tabulku pomocí Aspose.Words pro .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// Formátování na šířku tabulky musí být použito poté, co je v tabulce přítomen alespoň jeden řádek.
-	table.LeftIndent = 20.0;
-	// Nastavte výšku a definujte pravidlo výšky pro řádek záhlaví.
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// Šířku této buňky nemusíme zadávat, protože je zděděna z předchozí buňky.
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// Resetovat výšku a definovat jiné pravidlo výšky pro tělo stolu.
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// Obnovit formátování písma.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+Tím vytvoříte a uložíte dokument aplikace Word s formátovanou tabulkou.
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak vytvořit formátovanou tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete programově vytvářet vlastní tabulky se specifickým formátováním v dokumentech aplikace Word. Tato funkce vám umožňuje prezentovat a strukturovat data vizuálně přitažlivým a organizovaným způsobem.
+
+A tady to máte! Pomocí následujících kroků můžete vytvořit dobře formátovanou tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje programovou manipulaci s dokumenty Wordu a šetří vám čas a námahu.
+
+## FAQ
+
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro vytváření, úpravy a převod dokumentů aplikace Word programově.
+
+### Mohu použít různé barvy pro různé řádky?
+Ano, na různé řádky nebo buňky můžete použít různé formátování, včetně barev.
+
+### Je Aspose.Words for .NET zdarma?
+ Aspose.Words for .NET je placená knihovna, ale můžete získat a[zkušební verze zdarma](https://releases.aspose.com/).
+
+### Jak získám podporu pro Aspose.Words for .NET?
+ Můžete získat podporu od[Aspose komunitní fóra](https://forum.aspose.com/c/words/8).
+
+### Mohu pomocí Aspose.Words for .NET vytvářet jiné typy dokumentů?
+Ano, Aspose.Words for .NET podporuje různé formáty dokumentů, včetně PDF, HTML a TXT.

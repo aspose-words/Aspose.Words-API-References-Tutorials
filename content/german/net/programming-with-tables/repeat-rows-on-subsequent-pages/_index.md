@@ -2,89 +2,40 @@
 title: Zeilen auf nachfolgenden Seiten wiederholen
 linktitle: Zeilen auf nachfolgenden Seiten wiederholen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzeilen auf nachfolgenden Seiten in einem Word-Dokument wiederholen.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente mit sich wiederholenden Tabellenkopfzeilen erstellen. Folgen Sie dieser Anleitung, um professionelle und ansprechende Dokumente zu erhalten.
 type: docs
 weight: 10
 url: /de/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
+## Einführung
 
-In diesem Tutorial lernen wir, wie man die Zeilen einer Tabelle auf den nachfolgenden Seiten eines Word-Dokuments mit Aspose.Words für .NET wiederholt. Wir folgen einer Schritt-für-Schritt-Anleitung, um den Code zu verstehen und diese Funktion zu implementieren. Am Ende dieses Tutorials können Sie Zeilen angeben, die auf den nachfolgenden Seiten Ihrer Tabelle in Ihren Word-Dokumenten wiederholt werden sollen.
+Das programmgesteuerte Erstellen eines Word-Dokuments kann eine gewaltige Aufgabe sein, insbesondere wenn Sie die Formatierung über mehrere Seiten hinweg beibehalten müssen. Haben Sie schon einmal versucht, eine Tabelle in Word zu erstellen, nur um festzustellen, dass sich Ihre Kopfzeilen auf den folgenden Seiten nicht wiederholen? Keine Angst! Mit Aspose.Words für .NET können Sie ganz einfach sicherstellen, dass sich Ihre Tabellenüberschriften auf jeder Seite wiederholen, was Ihren Dokumenten ein professionelles und elegantes Aussehen verleiht. In diesem Tutorial führen wir Sie anhand einfacher Codebeispiele und ausführlicher Erklärungen durch die Schritte, um dies zu erreichen. Lassen Sie uns eintauchen!
 
-## Schritt 1: Projekt-Setup
-1. Starten Sie Visual Studio und erstellen Sie ein neues C#-Projekt.
-2. Fügen Sie einen Verweis auf die Aspose.Words-Bibliothek für .NET hinzu.
+## Voraussetzungen
 
-## Schritt 2: Erstellen des Dokuments und Initialisieren des Dokumentgenerators
-Um die Textverarbeitung mit dem Dokument- und Dokumentgenerator zu starten, führen Sie diese Schritte aus:
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-```csharp
-// Pfad zu Ihrem Dokumentverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words für .NET: Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/).
+2. .NET Framework muss auf Ihrem Computer installiert sein.
+3. Visual Studio oder jede andere IDE, die .NET-Entwicklung unterstützt.
+4. Grundlegende Kenntnisse der C#-Programmierung.
 
-// Dokumenterstellung
-Document doc = new Document();
+Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert und Ihre Entwicklungsumgebung eingerichtet haben, bevor Sie fortfahren.
 
-// Initialisieren des Dokumentgenerators
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## Namespaces importieren
 
-Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ unbedingt durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
-
-## Schritt 3: Erstellen der Tabelle mit wiederholten Zeilen
-Als Nächstes erstellen wir eine Tabelle mit wiederholten Zeilen auf den nachfolgenden Seiten. Verwenden Sie den folgenden Code:
+Zu Beginn müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Fügen Sie oben in Ihrer C#-Datei die folgenden using-Direktiven hinzu:
 
 ```csharp
-// Beginn der Tabelle
-builder. StartTable();
-
-// Konfiguration der Parameter der ersten Zeile (Kopfzeilen)
-builder.RowFormat.HeadingFormat = true;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.CellFormat.Width = 100;
-
-// Fügt die erste Zelle der ersten Zeile ein
-builder. InsertCell();
-builder.Writeln("Header line 1");
-builder. EndRow();
-
-// Einfügen der zweiten Zelle der ersten Zeile
-builder. InsertCell();
-builder.Writeln("Header line 2");
-builder. EndRow();
-
-// Konfigurieren Sie die Parameter der folgenden Zeilen
-builder.CellFormat.Width = 50;
-builder.ParagraphFormat.ClearFormatting();
-
-// Schleife zum Einfügen der Zellen in die folgenden Zeilen
-for (int i = 0; i < 50; i++)
-{
-builder. InsertCell();
-builder.RowFormat.HeadingFormat = false;
-builder.Write("Text column 1");
-builder. InsertCell();
-builder.Write("Text column 2");
-builder. EndRow();
-}
-
-// Ende der Tabelle
-builder. EndTable();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Hier verwenden wir den Dokumentgenerator, um eine Tabelle mit zwei Kopfzeilen und mehreren Datenzeilen zu erstellen. Die`RowFormat.HeadingFormat` Parameter werden verwendet, um Kopfzeilen zu markieren, die auf nachfolgenden Seiten wiederholt werden sollen.
+Diese Namespaces umfassen die Klassen und Methoden, die zum Bearbeiten von Word-Dokumenten und -Tabellen erforderlich sind.
 
-## Schritt 4: Speichern des geänderten Dokuments
-Endlich USA
+## Schritt 1: Initialisieren Sie das Dokument
 
-  Sie müssen das geänderte Dokument mit den auf den nachfolgenden Seiten der Tabelle wiederholten Kopfzeilen speichern. Verwenden Sie den folgenden Code:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
-```
-
-Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument anzugeben.
-
-### Beispiel-Quellcode für „Zeilen auf nachfolgenden Seiten wiederholen“ mit Aspose.Words für .NET 
+ Erstellen wir zunächst ein neues Word-Dokument und ein`DocumentBuilder` um unseren Tisch zu konstruieren.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -92,29 +43,79 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+ Dieser Code initialisiert ein neues Dokument und ein`DocumentBuilder` Objekt, das beim Aufbau der Dokumentstruktur hilft.
+
+## Schritt 2: Tabelle starten und Kopfzeilen definieren
+
+Als nächstes starten wir die Tabelle und definieren die Kopfzeilen, die wir auf den Folgeseiten wiederholen möchten.
+
+```csharp
 builder.StartTable();
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
+
 builder.InsertCell();
 builder.Writeln("Heading row 1");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Heading row 2");
 builder.EndRow();
+```
+
+ Hier beginnen wir eine neue Tabelle, setzen die`HeadingFormat`Eigentum an`true` um anzugeben, dass es sich bei den Zeilen um Überschriften handelt, und um die Ausrichtung und Breite der Zellen zu definieren.
+
+## Schritt 3: Datenzeilen zur Tabelle hinzufügen
+
+Jetzt fügen wir unserer Tabelle mehrere Datenzeilen hinzu. Diese Zeilen werden auf nachfolgenden Seiten nicht wiederholt.
+
+```csharp
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 for (int i = 0; i < 50; i++)
 {
-	builder.InsertCell();
-	builder.RowFormat.HeadingFormat = false;
-	builder.Write("Column 1 Text");
-	builder.InsertCell();
-	builder.Write("Column 2 Text");
-	builder.EndRow();
+    builder.InsertCell();
+    builder.RowFormat.HeadingFormat = false;
+    builder.Write("Column 1 Text");
+    
+    builder.InsertCell();
+    builder.Write("Column 2 Text");
+    builder.EndRow();
 }
+```
+
+ Diese Schleife fügt 50 Datenzeilen in die Tabelle ein, mit jeweils zwei Spalten in jeder Zeile.`HeadingFormat` ist eingestellt auf`false` für diese Zeilen, da es sich nicht um Kopfzeilen handelt.
+
+## Schritt 4: Speichern Sie das Dokument
+
+Abschließend speichern wir das Dokument im angegebenen Verzeichnis.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
+Dadurch wird das Dokument unter dem angegebenen Namen in Ihrem Dokumentverzeichnis gespeichert.
+
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man die Zeilen einer Tabelle mit Aspose.Words für .NET auf den folgenden Seiten eines Word-Dokuments wiederholt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen und den bereitgestellten C#-Code implementieren, können Sie angeben, welche Zeilen entsprechend Ihren spezifischen Anforderungen in Ihren Word-Dokumenten wiederholt werden sollen.
+
+Und da haben Sie es! Mit nur wenigen Codezeilen können Sie mit Aspose.Words für .NET ein Word-Dokument mit Tabellen erstellen, die auf den nachfolgenden Seiten wiederkehrende Kopfzeilen aufweisen. Dies verbessert nicht nur die Lesbarkeit Ihrer Dokumente, sondern sorgt auch für ein einheitliches und professionelles Erscheinungsbild. Probieren Sie es jetzt in Ihren Projekten aus!
+
+## Häufig gestellte Fragen
+
+### Kann ich die Kopfzeilen weiter anpassen?
+ Ja, Sie können zusätzliche Formatierungen auf die Kopfzeilen anwenden, indem Sie die Eigenschaften von`ParagraphFormat`, `RowFormat` , Und`CellFormat`.
+
+### Ist es möglich, der Tabelle weitere Spalten hinzuzufügen?
+ Absolut! Sie können so viele Spalten wie nötig hinzufügen, indem Sie weitere Zellen in den`InsertCell` Methode.
+
+### Wie kann ich dafür sorgen, dass sich andere Zeilen auf den Folgeseiten wiederholen?
+ Um eine Zeile zu wiederholen, setzen Sie die`RowFormat.HeadingFormat`Eigentum an`true` für diese bestimmte Zeile.
+
+### Kann ich diese Methode für vorhandene Tabellen in einem Dokument verwenden?
+ Ja, Sie können vorhandene Tabellen ändern, indem Sie auf sie zugreifen über`Document` Objekt und Anwenden einer ähnlichen Formatierung.
+
+### Welche anderen Tabellenformatierungsoptionen sind in Aspose.Words für .NET verfügbar?
+ Aspose.Words für .NET bietet eine breite Palette an Optionen zur Tabellenformatierung, einschließlich Zellzusammenführung, Rahmeneinstellungen und Tabellenausrichtung. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.

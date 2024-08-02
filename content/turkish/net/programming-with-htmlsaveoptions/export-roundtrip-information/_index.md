@@ -9,7 +9,7 @@ url: /tr/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
 ## giriiş
 
-Aspose.Words for .NET'in harika dünyasına hoş geldiniz! Bugün, çok fazla zaman ve emekten tasarruf etmenizi sağlayacak şık bir özelliği derinlemesine inceliyoruz: gidiş-dönüş bilgilerini dışa aktarma. Herhangi bir önemli veriyi veya biçimlendirmeyi kaybetmeden bir Word belgesini HTML'ye ve geri dönüştürdüğünüzü hayal edin. Kulağa rüya gibi geliyor değil mi? Aspose.Words ile bu tamamen mümkün. Kemerlerinizi bağlayın ve bu heyecan verici yolculuğa başlayalım!
+Aspose.Words for .NET'in muhteşem dünyasına hoş geldiniz! Bugün, çok fazla zaman ve emekten tasarruf etmenizi sağlayacak şık bir özelliği derinlemesine inceliyoruz: gidiş-dönüş bilgilerini dışa aktarma. Herhangi bir önemli veriyi veya biçimlendirmeyi kaybetmeden bir Word belgesini HTML'ye ve geri dönüştürdüğünüzü hayal edin. Kulağa rüya gibi geliyor değil mi? Aspose.Words ile bu tamamen mümkün. Kemerlerinizi bağlayın ve bu heyecan verici yolculuğa başlayalım!
 
 ## Önkoşullar
 

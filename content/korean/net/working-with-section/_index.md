@@ -18,13 +18,13 @@ url: /ko/net/working-with-section/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [섹션 추가](./add-section/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 섹션을 추가하는 방법을 알아봅니다. 문서 구성을 위한 단계별 가이드입니다. |
+| [섹션 추가](./add-section/) | .NET용 Aspose.Words를 사용하여 Word 문서에 섹션을 추가하는 방법을 알아보세요. 이 가이드에서는 문서 작성부터 섹션 추가 및 관리까지 모든 내용을 다룹니다. |
 | [섹션 삭제](./delete-section/) | .NET용 Aspose.Words를 사용한 마스터 문서 조작. 몇 가지 간단한 단계를 통해 Word 문서에서 섹션을 삭제하는 방법을 알아보세요. |
 | [모든 섹션 삭제](./delete-all-sections/) | 따라하기 쉬운 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 모든 섹션을 삭제하는 방법을 알아보세요. |
 | [섹션 단어 내용 추가](./append-section-content/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 특정 섹션에 단어 콘텐츠를 추가하는 방법을 알아봅니다.  |
-| [클론 섹션](./clone-section/) | 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서의 섹션을 복제하는 방법을 알아봅니다. 단계별 가이드. |
-| [섹션 복사](./copy-section/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 섹션을 다른 문서로 복사하는 방법을 알아봅니다. |
-| [머리글 바닥글 내용 삭제](./delete-header-footer-content/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 머리글 및 바닥글 콘텐츠를 제거하는 방법을 알아봅니다.  |
-| [섹션 콘텐츠 삭제](./delete-section-content/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 특정 섹션에서 콘텐츠를 삭제하는 방법을 알아봅니다. |
+| [클론 섹션](./clone-section/) | .NET용 Aspose.Words를 사용하여 Word 문서의 섹션을 복제하는 방법을 알아보세요. 이 가이드에서는 효율적인 문서 조작을 위한 단계별 지침을 다룹니다. |
+| [섹션 복사](./copy-section/) | .NET용 Aspose.Words를 사용하여 Word 문서 간에 섹션을 복사하는 방법을 알아보세요. 이 가이드에서는 효율적인 문서 관리를 위한 단계별 지침을 다룹니다. |
+| [머리글 바닥글 내용 삭제](./delete-header-footer-content/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 머리글과 바닥글을 삭제하는 방법을 알아보세요. 이 단계별 가이드는 효율적인 문서 관리를 보장합니다.  |
+| [섹션 콘텐츠 삭제](./delete-section-content/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 섹션 콘텐츠를 삭제하는 방법을 알아보세요. 이 단계별 가이드는 효율적인 문서 관리를 보장합니다. |
 | [모든 섹션에서 Word 페이지 설정 수정](./modify-page-setup-in-all-sections/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 모든 섹션에서 단어 페이지 설정을 수정하는 방법을 알아봅니다. |
-| [색인별 섹션 액세스](./sections-access-by-index/) | 이 튜토리얼에서는 색인을 통해 Word 문서의 섹션에 액세스하고 .NET용 Aspose.Words를 사용하여 설정을 변경하는 방법을 알아봅니다. |
+| [색인별 섹션 액세스](./sections-access-by-index/) | .NET용 Aspose.Words를 사용하여 Word 문서의 섹션에 액세스하고 조작하는 방법을 알아보세요. 이 단계별 가이드는 효율적인 문서 관리를 보장합니다. |

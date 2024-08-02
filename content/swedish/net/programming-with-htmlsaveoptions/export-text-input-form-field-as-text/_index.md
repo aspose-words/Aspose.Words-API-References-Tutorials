@@ -79,7 +79,7 @@ Directory.CreateDirectory(imagesDir);
 
 ## Steg 4: Konfigurera sparalternativ
 
-Här händer magin. Vi måste ställa in våra sparalternativ för att exportera textinmatningsformulärfältet som vanlig text.
+Det är här magin händer. Vi måste ställa in våra sparalternativ för att exportera textinmatningsformulärfältet som vanlig text.
 
 1.  Skapa sparalternativ: Initiera ett nytt`HtmlSaveOptions` objekt.
 2.  Ställ in exporttextalternativ: Konfigurera`ExportTextInputFormFieldAsText`egendom till`true`.

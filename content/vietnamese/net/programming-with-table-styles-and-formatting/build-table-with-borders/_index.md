@@ -2,66 +2,110 @@
 title: Xây dựng bảng có viền
 linktitle: Xây dựng bảng có viền
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước xây dựng bảng có đường viền bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách xây dựng và tùy chỉnh đường viền bảng trong tài liệu Word bằng Aspose.Words cho .NET. Thực hiện theo hướng dẫn từng bước của chúng tôi để được hướng dẫn chi tiết.
 type: docs
 weight: 10
 url: /vi/net/programming-with-table-styles-and-formatting/build-table-with-borders/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để xây dựng bảng có đường viền bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Ở cuối hướng dẫn này, bạn sẽ biết cách tạo bảng có viền tùy chỉnh trong tài liệu Word bằng Aspose.Words cho .NET.
+Tạo bảng có đường viền tùy chỉnh trong tài liệu Word có thể làm cho nội dung của bạn trở nên hấp dẫn về mặt trực quan và được tổ chức tốt. Với Aspose.Words for .NET, bạn có thể dễ dàng xây dựng và định dạng bảng với khả năng kiểm soát chính xác về đường viền, kiểu và màu sắc. Hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình theo từng bước, đảm bảo bạn hiểu chi tiết về từng phần của mã.
 
-## Bước 1: Xác định thư mục tài liệu
-Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là nơi tài liệu Word của bạn được lưu trữ. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.
+## Điều kiện tiên quyết
+
+Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+
+1.  Aspose.Words cho .NET Library: Tải xuống và cài đặt[Aspose.Words for .NET](https://releases.aspose.com/words/net/) thư viện.
+2. Môi trường phát triển: Đảm bảo bạn có môi trường phát triển như Visual Studio được thiết lập trên máy của bạn.
+3. Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# sẽ rất hữu ích.
+4. Thư mục tài liệu: Thư mục nơi các tài liệu đầu vào và đầu ra của bạn sẽ được lưu trữ.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words cho .NET trong dự án của bạn, bạn cần nhập các vùng tên cần thiết. Thêm các dòng sau vào đầu tệp C# của bạn:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Tải tài liệu hiện có
- Tiếp theo, bạn cần tải tài liệu Word hiện có vào một phiên bản của`Document` lớp học.
+## Bước 1: Tải tài liệu
+
+Bước đầu tiên là tải tài liệu Word chứa bảng bạn muốn định dạng. Đây là cách bạn có thể làm điều đó:
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Tải tài liệu từ thư mục được chỉ định
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Bước 3: Truy cập bảng và xóa đường viền hiện có
- Để bắt đầu xây dựng bảng có viền, chúng ta cần điều hướng đến bảng trong tài liệu và xóa các viền hiện có. Các`ClearBorders()` phương pháp loại bỏ tất cả các đường viền khỏi bảng.
+ Trong bước này, chúng ta chỉ định đường dẫn đến thư mục tài liệu và tải tài liệu bằng lệnh`Document` lớp học.
+
+## Bước 2: Truy cập bảng
+
+ Tiếp theo, bạn cần truy cập vào bảng trong tài liệu. Điều này có thể được thực hiện bằng cách sử dụng`GetChild` phương pháp tìm nạp nút bảng:
 
 ```csharp
+// Truy cập bảng đầu tiên trong tài liệu
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-table. ClearBorders();
 ```
 
-## Bước 4: Đặt viền bảng
- Bây giờ chúng ta có thể thiết lập đường viền bảng bằng cách sử dụng`SetBorders()` phương pháp. Trong ví dụ này, chúng tôi đang sử dụng đường viền màu xanh lục có độ dày 1,5 điểm.
+ Ở đây, chúng ta truy cập vào bảng đầu tiên trong tài liệu. Các`NodeType.Table` đảm bảo chúng tôi đang tìm nạp nút bảng và chỉ mục`0` cho biết chúng tôi muốn bảng đầu tiên.
+
+## Bước 3: Xóa đường viền hiện có
+
+Trước khi thiết lập đường viền mới, bạn nên xóa mọi đường viền hiện có. Điều này đảm bảo rằng định dạng mới của bạn được áp dụng rõ ràng:
 
 ```csharp
+// Xóa mọi đường viền hiện có khỏi bảng
+table.ClearBorders();
+```
+
+Phương pháp này loại bỏ tất cả các đường viền hiện có khỏi bảng, mang lại cho bạn một bảng rõ ràng để làm việc.
+
+## Bước 4: Đặt đường viền mới
+
+Bây giờ, bạn có thể đặt các đường viền mới xung quanh và bên trong bảng. Bạn có thể tùy chỉnh kiểu, chiều rộng và màu sắc của đường viền nếu cần:
+
+```csharp
+// Đặt đường viền màu xanh xung quanh và bên trong bảng
 table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 ```
 
-## Bước 5: Lưu tài liệu đã sửa đổi
-Cuối cùng, chúng tôi lưu tài liệu đã sửa đổi vào một tệp. Bạn có thể chọn tên và vị trí thích hợp cho tài liệu đầu ra.
+Trong bước này, chúng ta đặt đường viền thành kiểu đường đơn, có chiều rộng 1,5 điểm và có màu xanh lục.
+
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu đã sửa đổi vào thư mục được chỉ định. Điều này sẽ tạo một tài liệu mới với định dạng bảng được áp dụng:
 
 ```csharp
+// Lưu tài liệu đã sửa đổi vào thư mục được chỉ định
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```
 
-Xin chúc mừng! Bây giờ bạn đã xây dựng một bảng có đường viền tùy chỉnh bằng Aspose.Words cho .NET.
-
-### Mã nguồn mẫu cho Xây dựng bảng có viền bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Tables.docx");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	//Xóa mọi đường viền hiện có khỏi bảng.
-	table.ClearBorders();
-	// Đặt đường viền màu xanh lá cây xung quanh và bên trong bảng.
-	table.SetBorders(LineStyle.Single, 1.5, Color.Green);
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
-```
+Dòng này lưu tài liệu với tên mới, cho biết đường viền của bảng đã được sửa đổi.
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách tạo bảng có đường viền bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này, bạn có thể dễ dàng tùy chỉnh đường viền bảng trong tài liệu Word của mình. Aspose.Words cung cấp API mạnh mẽ và linh hoạt để thao tác và định dạng bảng trong tài liệu của bạn. Với kiến thức này, bạn có thể cải thiện cách trình bày trực quan các tài liệu Word của mình và đáp ứng các nhu cầu cụ thể.
+
+Bằng cách làm theo các bước này, bạn có thể dễ dàng tạo và tùy chỉnh viền bảng trong tài liệu Word bằng Aspose.Words for .NET. Thư viện mạnh mẽ này cung cấp các tính năng mở rộng để thao tác tài liệu, khiến nó trở thành lựa chọn tuyệt vời cho các nhà phát triển làm việc với tài liệu Word theo chương trình.
+
+## Câu hỏi thường gặp
+
+### Tôi có thể áp dụng các kiểu đường viền khác nhau cho các phần khác nhau của bảng không?
+Có, Aspose.Words for .NET cho phép bạn áp dụng các kiểu đường viền khác nhau cho các phần khác nhau của bảng, chẳng hạn như các ô, hàng hoặc cột riêng lẻ.
+
+### Có thể chỉ đặt đường viền cho các ô cụ thể không?
+ Tuyệt đối. Bạn có thể nhắm mục tiêu các ô cụ thể và đặt đường viền cho chúng riêng lẻ bằng cách sử dụng`CellFormat` tài sản.
+
+### Làm cách nào để xóa đường viền khỏi bảng?
+ Bạn có thể loại bỏ đường viền bằng cách sử dụng`ClearBorders` phương thức xóa tất cả các đường viền hiện có khỏi bảng.
+
+### Tôi có thể sử dụng màu tùy chỉnh cho đường viền không?
+ Có, bạn có thể sử dụng bất kỳ màu nào cho đường viền bằng cách chỉ định`Color` tài sản. Màu sắc tùy chỉnh có thể được thiết lập bằng cách sử dụng`Color.FromArgb` phương pháp nếu bạn cần sắc thái cụ thể.
+
+### Có cần thiết phải xóa các ranh giới hiện có trước khi thiết lập các ranh giới mới không?
+Mặc dù không bắt buộc, nhưng việc xóa các đường viền hiện có trước khi đặt các đường viền mới sẽ đảm bảo rằng cài đặt đường viền mới của bạn được áp dụng mà không có bất kỳ sự can thiệp nào từ các kiểu trước đó.

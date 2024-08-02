@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## Etapa 2: configurar opções de exibição de revisão
+## Etapa 2: configurar opções de exibição de avaliações
 
 Configuraremos as opções de exibição para tornar as revisões visíveis em balões.
 

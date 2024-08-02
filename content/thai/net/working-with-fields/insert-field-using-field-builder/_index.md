@@ -2,107 +2,118 @@
 title: แทรกฟิลด์โดยใช้ตัวสร้างฟิลด์
 linktitle: แทรกฟิลด์โดยใช้ตัวสร้างฟิลด์
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีแทรกฟิลด์ที่กำหนดเองลงในเอกสาร Word ของคุณด้วย Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีแทรกฟิลด์ไดนามิกลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้ เหมาะสำหรับนักพัฒนา
 type: docs
 weight: 10
 url: /th/net/working-with-fields/insert-field-using-field-builder/
 ---
+## การแนะนำ
 
-ต่อไปนี้เป็นคำแนะนำทีละขั้นตอนเพื่ออธิบายซอร์สโค้ด C# ด้านล่าง ซึ่งใช้ฟีเจอร์ "แทรกฟิลด์โดยใช้ FieldBuilder" ของ Aspose.Words สำหรับ .NET อย่าลืมปฏิบัติตามแต่ละขั้นตอนอย่างระมัดระวังเพื่อให้ได้ผลลัพธ์ที่ต้องการ
+สวัสดี! เคยพบว่าตัวเองเกาหัวและสงสัยว่าจะแทรกฟิลด์ไดนามิกลงในเอกสาร Word ของคุณโดยทางโปรแกรมได้อย่างไร? ไม่ต้องกังวลอีกต่อไป! ในบทช่วยสอนนี้ เราจะเจาะลึกความมหัศจรรย์ของ Aspose.Words สำหรับ .NET ซึ่งเป็นไลบรารีอันทรงพลังที่ช่วยให้คุณสามารถสร้าง จัดการ และแปลงเอกสาร Word ได้อย่างราบรื่น โดยเฉพาะ เราจะอธิบายวิธีการแทรกฟิลด์โดยใช้ Field Builder มาเริ่มกันเลย!
 
-## ขั้นตอนที่ 1: การตั้งค่าไดเรกทอรีเอกสาร
+## ข้อกำหนดเบื้องต้น
 
-ในโค้ดที่ให้มา คุณต้องระบุไดเร็กทอรีของเอกสารของคุณ แทนที่ค่า "YOUR DOCUMENT DIRECTORY" ด้วยเส้นทางที่เหมาะสมไปยังไดเร็กทอรีเอกสารของคุณ
+ก่อนที่เราจะเจาะลึกเนื้อหาสำคัญ เรามาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. Aspose.Words สำหรับ .NET: คุณจะต้องติดตั้ง Aspose.Words สำหรับ .NET หากคุณยังไม่ได้ทำคุณสามารถคว้ามันได้[ที่นี่](https://releases.aspose.com/words/net/).
+2. สภาพแวดล้อมการพัฒนา: สภาพแวดล้อมการพัฒนาที่เหมาะสม เช่น Visual Studio
+3. ความรู้พื้นฐานเกี่ยวกับ C#: จะมีประโยชน์หากคุณคุ้นเคยกับพื้นฐาน C# และ .NET
 
-## ขั้นตอนที่ 2: การสร้างเอกสาร
+## นำเข้าเนมสเปซ
 
-เราเริ่มต้นด้วยการสร้างเอกสารใหม่
-
-```csharp
-Document doc = new Document();
-```
-
-## ขั้นตอนที่ 3: สร้างฟิลด์ IF โดยใช้ FieldBuilder
-
-เราใช้คลาส FieldBuilder เพื่อสร้างฟิลด์ IF โดยมีฟิลด์ MERGEFIELD สองฟิลด์ที่ซ้อนกัน ในตัวอย่างนี้ ฟิลด์ IF จะแสดงชื่อและนามสกุลตามเงื่อนไข
+ก่อนอื่น มานำเข้าเนมสเปซที่จำเป็นกันก่อน ซึ่งจะรวมถึงเนมสเปซหลักของ Aspose.Words ที่เราจะใช้ตลอดบทช่วยสอนของเรา
 
 ```csharp
-FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
-     .AddArgument("left expression")
-     .AddArgument("=")
-     .AddArgument("right expression")
-     .AddArgument(
-         new FieldArgumentBuilder()
-             .AddText("Firstname: ")
-             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("firstname")))
-     .AddArgument(
-         new FieldArgumentBuilder()
-             .AddText("Lastname: ")
-             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## ขั้นตอนที่ 4: การแทรกฟิลด์ IF ลงในเอกสาร
+เอาล่ะ เรามาแจกแจงกระบวนการทีละขั้นตอนกันดีกว่า เมื่อสิ้นสุดขั้นตอนนี้ คุณจะเป็นมืออาชีพในการแทรกฟิลด์โดยใช้ Field Builder ใน Aspose.Words สำหรับ .NET
 
- เราใช้`BuildAndInsert()` วิธีการสร้างและแทรกฟิลด์ IF ในตำแหน่งเฉพาะในเอกสาร
+## ขั้นตอนที่ 1: ตั้งค่าโครงการของคุณ
 
-```csharp
-Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
-field. Update();
+ก่อนที่เราจะพูดถึงส่วนการเขียนโค้ด ตรวจสอบให้แน่ใจว่าโปรเจ็กต์ของคุณได้รับการตั้งค่าอย่างถูกต้อง สร้างโปรเจ็กต์ C# ใหม่ในสภาพแวดล้อมการพัฒนาของคุณ และติดตั้งแพ็คเกจ Aspose.Words ผ่าน NuGet Package Manager
+
+```bash
+Install-Package Aspose.Words
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับการแทรกฟิลด์โดยใช้ FieldBuilder กับ Aspose.Words สำหรับ .NET
+## ขั้นตอนที่ 2: สร้างเอกสารใหม่
+
+เริ่มต้นด้วยการสร้างเอกสาร Word ใหม่ เอกสารนี้จะทำหน้าที่เป็นผืนผ้าใบของเราสำหรับการแทรกฟิลด์
 
 ```csharp
 // เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// การสร้างเอกสาร
+// สร้างเอกสารใหม่
 Document doc = new Document();
+```
 
-// การสร้างฟิลด์ IF โดยใช้ FieldBuilder
+## ขั้นตอนที่ 3: เริ่มต้น FieldBuilder
+
+FieldBuilder คือผู้เล่นหลักที่นี่ ช่วยให้เราสามารถสร้างฟิลด์แบบไดนามิกได้
+
+```csharp
+//การสร้างฟิลด์ IF โดยใช้ FieldBuilder
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
-     .AddArgument("left expression")
-     .AddArgument("=")
-     .AddArgument("right expression")
-     .AddArgument(
-         new FieldArgumentBuilder()
-             .AddText("Firstname: ")
-             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("firstname")))
-     .AddArgument(
-         new FieldArgumentBuilder()
-             .AddText("Lastname: ")
-             .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
+    .AddArgument("left expression")
+    .AddArgument("=")
+    .AddArgument("right expression");
+```
 
+## ขั้นตอนที่ 4: เพิ่มอาร์กิวเมนต์ใน FieldBuilder
+
+ตอนนี้ เราจะเพิ่มอาร์กิวเมนต์ที่จำเป็นให้กับ FieldBuilder ของเรา ซึ่งจะรวมถึงสำนวนและข้อความที่เราต้องการแทรก
+
+```csharp
+fieldBuilder.AddArgument(
+    new FieldArgumentBuilder()
+        .AddText("Firstname: ")
+        .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("firstname")))
+    .AddArgument(
+        new FieldArgumentBuilder()
+            .AddText("Lastname: ")
+            .AddField(new FieldBuilder(FieldType.FieldMergeField).AddArgument("lastname")));
+```
+
+## ขั้นตอนที่ 5: แทรกฟิลด์ลงในเอกสาร
+
+เมื่อตั้งค่า FieldBuilder เรียบร้อยแล้ว ก็ถึงเวลาแทรกฟิลด์ลงในเอกสารของเรา เราจะดำเนินการนี้โดยกำหนดเป้าหมายไปที่ย่อหน้าแรกของส่วนแรก
+
+```csharp
 // แทรกฟิลด์ IF ลงในเอกสาร
 Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
-field. Update();
+field.Update();
+```
 
+## ขั้นตอนที่ 6: บันทึกเอกสาร
+
+สุดท้ายนี้ มาบันทึกเอกสารของเราและตรวจสอบผลลัพธ์กัน
+
+```csharp
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-ในตัวอย่างนี้ เราได้สร้างเอกสารใหม่ สร้างฟิลด์ IF โดยมีฟิลด์ MERGEFIELD ที่ซ้อนกัน จากนั้นแทรกฟิลด์นั้นลงในเอกสารในตำแหน่งที่ระบุ จากนั้นเอกสารจะถูกบันทึกด้วยชื่อไฟล์เฉพาะ
+และคุณก็ได้แล้ว! คุณได้แทรกฟิลด์ลงในเอกสาร Word เรียบร้อยแล้วโดยใช้ Aspose.Words for .NET
 
-### คำถามที่พบบ่อย
+## บทสรุป
 
-#### ถาม: ตัวสร้างฟิลด์ใน Aspose.Words คืออะไร
+ยินดีด้วย! คุณเพิ่งเรียนรู้วิธีแทรกฟิลด์แบบไดนามิกลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสมบัติอันทรงพลังนี้มีประโยชน์อย่างเหลือเชื่อสำหรับการสร้างเอกสารแบบไดนามิกที่ต้องมีการรวมข้อมูลแบบเรียลไทม์ ทำการทดลองกับประเภทฟิลด์ต่างๆ และสำรวจความสามารถที่ครอบคลุมของ Aspose.Words
 
-ตอบ: ตัวสร้างฟิลด์ใน Aspose.Words เป็นเครื่องมืออันทรงพลังสำหรับการสร้างและจัดการฟิลด์ในเอกสาร Word โดยนำเสนอคุณสมบัติขั้นสูงสำหรับการสร้างและปรับแต่งฟิลด์ รวมถึงการแทรกโค้ดฟิลด์และการจัดการตัวเลือกการจัดรูปแบบ
+## คำถามที่พบบ่อย
 
-#### ถาม: ฟิลด์ประเภทใดที่สามารถแทรกได้โดยใช้ตัวสร้างฟิลด์
+### Aspose.Words สำหรับ .NET คืออะไร
+Aspose.Words สำหรับ .NET เป็นไลบรารีอันทรงพลังที่ช่วยให้นักพัฒนาสามารถสร้าง จัดการ และแปลงเอกสาร Word โดยทางโปรแกรมโดยใช้ C#
 
-ตอบ: ตัวสร้างฟิลด์ใน Aspose.Words ช่วยให้คุณสามารถแทรกฟิลด์ประเภทต่างๆ ลงในเอกสาร Word ได้ ต่อไปนี้คือตัวอย่างบางส่วนของประเภทฟิลด์ที่ใช้กันทั่วไป:
+### ฉันสามารถใช้ Aspose.Words ได้ฟรีหรือไม่
+ Aspose.Words ให้ทดลองใช้ฟรีซึ่งคุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/) - สำหรับการใช้งานระยะยาว คุณจะต้องซื้อใบอนุญาต[ที่นี่](https://purchase.aspose.com/buy).
 
-- MERGEFIELD: ใช้เพื่อรวมข้อมูลจากแหล่งภายนอก
-- DATE: แสดงวันที่ปัจจุบัน
-- PAGE: แสดงหมายเลขหน้าปัจจุบัน
-- IF: อนุญาตให้กำหนดเงื่อนไขการแสดงเนื้อหาตามเงื่อนไข
-- TOC: สร้างสารบัญโดยอัตโนมัติตามสไตล์ชื่อเอกสาร
+### ฉันสามารถแทรกฟิลด์ประเภทใดได้บ้างโดยใช้ FieldBuilder
+ FieldBuilder รองรับฟิลด์ที่หลากหลาย รวมถึง IF, MERGEFIELD และอื่นๆ คุณสามารถค้นหาเอกสารรายละเอียดได้[ที่นี่](https://reference.aspose.com/words/net/).
 
-#### ถาม: จะปรับแต่งฟิลด์ที่แทรกด้วยตัวสร้างฟิลด์ได้อย่างไร
+### ฉันจะอัปเดตฟิลด์หลังจากแทรกได้อย่างไร
+ คุณสามารถอัปเดตฟิลด์โดยใช้ไฟล์`Update` วิธีการดังที่แสดงไว้ในบทช่วยสอน
 
-ตอบ: ตัวสร้างฟิลด์เสนอตัวเลือกการปรับแต่งสำหรับฟิลด์ที่แทรก คุณสามารถใช้วิธีและคุณสมบัติตัวสร้างฟิลด์เพื่อตั้งค่าตัวเลือก เช่น การจัดรูปแบบฟิลด์ อาร์กิวเมนต์ สวิตช์ และค่าเริ่มต้น ตัวอย่างเช่น คุณสามารถตั้งค่ารูปแบบวันที่ รูปแบบตัวเลข ตัวคั่นหลักพัน เป็นต้น
-  
+### ฉันจะรับการสนับสนุนสำหรับ Aspose.Words ได้ที่ไหน
+ หากมีคำถามหรือการสนับสนุน โปรดไปที่ฟอรัมสนับสนุน Aspose.Words[ที่นี่](https://forum.aspose.com/c/words/8).

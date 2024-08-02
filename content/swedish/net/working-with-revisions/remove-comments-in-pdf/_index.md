@@ -27,7 +27,7 @@ Vi kommer att konfigurera layoutalternativet för att dölja kommentarer när PD
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
 ```
 
-## Steg 3: Spara dokumentet som PDF
+## Steg 3: Spara dokumentet som en PDF
 
 Slutligen kommer vi att spara dokumentet i PDF-format genom att ta bort kommentarerna.
 

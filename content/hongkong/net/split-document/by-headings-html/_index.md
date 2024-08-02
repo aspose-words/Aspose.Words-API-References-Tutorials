@@ -2,84 +2,97 @@
 title: 按標題 Html 拆分 Word 文檔
 linktitle: 按標題 Html
 second_title: Aspose.Words 文件處理 API
-description: 逐步指南解釋 Aspose.Words for .NET 的分割 Word 文件 By Heading HTML 功能的 C# 原始碼
+description: 了解如何使用 Aspose.Words for .NET 將 Word 文件按標題拆分為 HTML。請遵循我們詳細的逐步指南。
 type: docs
 weight: 10
 url: /zh-hant/net/split-document/by-headings-html/
 ---
-在本教學中，我們將引導您了解如何使用 Aspose.Words for .NET 的「按 HTML 標題」功能將 Word 文件分割為更小的部分。請按照以下步驟了解原始程式碼並根據 Heading 產生單獨的 HTML 文件。
+## 介紹
 
-## 第 1 步：載入文檔
+依標題拆分 Word 文件可以徹底改變管理大型文件或建立分段 HTML 輸出的方式。 Aspose.Words for .NET 提供了一個簡單的方法來實現這一目標。在本教程中，我們將引導您完成整個過程，確保您掌握整個過程中的每個細節。
 
-首先，指定文檔的目錄並將文檔載入到 Document 物件中。就是這樣：
+## 先決條件
+
+在深入學習本教學之前，請確保您具備以下條件：
+
+1. Aspose.Words for .NET：如果您還沒有下載，請從[這裡](https://releases.aspose.com/words/net/).
+2. 開發環境：像Visual Studio這樣的IDE。
+3. C# 基礎知識：了解基礎知識將有助於您輕鬆跟進。
+4. 範例文件：準備好一個要按標題拆分的 Word 文件。
+
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這對於存取 Aspose.Words 類別和方法至關重要。
 
 ```csharp
-//文檔目錄的路徑。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 步驟 2：按 HTML 格式的標題劃分文檔
+## 第 1 步：設定您的項目
 
-現在我們將設定儲存選項，根據 HTML 格式的標題將文件分割成更小的部分。就是這樣：
+首先，在您的開發環境中設定您的專案。開啟 Visual Studio 並建立一個新的控制台應用程式。
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-//將文件分割為較小的部分，在本例中按標題分隔。
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. 建立新專案：開啟 Visual Studio，選擇“建立新專案”，選擇“控制台應用程式（.NET Core）”，然後按一下“下一步”。
+2. 配置您的項目：為您的項目命名，選擇儲存位置，然後按一下「建立」。
+3. 安裝 Aspose.Words for .NET：使用 NuGet Package Manager 安裝 Aspose.Words 函式庫。在 NuGet 套件管理器中，搜尋`Aspose.Words`並安裝它。
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## 第 2 步：載入您的文檔
 
-### 使用 Aspose.Words for .NET 的按標題 HTML 的範例原始程式碼
+接下來，您需要載入要拆分的Word文檔。確保您的文件放置在您可以輕鬆存取的目錄中。
 
-以下是 Aspose.Words for .NET 的「按 HTML 標題」功能的完整原始碼：
+1. 定義目錄路徑：為文件的目錄路徑建立變數。
+2. 載入文檔：使用`Document`類別來載入 Word 文件。
 
 ```csharp
 //文檔目錄的路徑。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## 步驟 3：設定 HTML 儲存選項
+
+現在，讓我們配置 HTML 儲存選項以指定文件應按標題分割。
+
+1. 建立 HtmlSaveOptions：實例化`HtmlSaveOptions`班級。
+2. 設定文檔拆分標準：使用`DocumentSplitCriteria`屬性指定文件應按標題段落分割。
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	//將文件拆分為較小的部分，在本例中按標題拆分。
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    //將文件拆分為較小的部分，在本例中按標題拆分。
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## 步驟 4：儲存分割文檔
 
+最後，使用指定的 HTML 儲存選項儲存文件。這將產生一個按標題分割的 HTML 檔案。
+
+1. 儲存文件：使用`Save`的方法`Document`類別以使用指定選項儲存文件。
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-透過此程式碼，您將能夠使用 Aspose.Words for .NET 根據標題將 Word 文件分割為更小的部分。然後您可以為每個部分產生單獨的 HTML 文件。
-
 ## 結論
 
-在本教學中，我們學習如何使用 Aspose.Words for .NET 的「按 HTML 標題」功能將 Word 文件分割為更小的部分。透過指定`DocumentSplitCriteria`作為`HeadingParagraph`在裡面`HtmlSaveOptions`，我們能夠根據原始文件中存在的標題產生單獨的 HTML 文件。
+現在你就擁有了！您已成功使用 Aspose.Words for .NET 按標題拆分 Word 文件並將其儲存為 HTML。此方法對於組織大型文件和建立分段 HTML 輸出非常有效，使您的內容更易於管理和存取。
 
-按標題拆分文件對於組織和管理內容非常有用，尤其是在具有多個部分的大型文件中。 Aspose.Words for .NET 提供了可靠且高效的解決方案來處理文件分割和產生各種格式的輸出。
+## 常見問題解答
 
-請隨意探索 Aspose.Words for .NET 提供的其他功能和選項，以進一步增強您的文件處理能力並簡化您的工作流程。
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，用於在 .NET 應用程式中處理 Word 文件。
 
-### 常見問題解答
+### 我可以按照其他標準拆分文檔嗎？
+是的，Aspose.Words 允許您按各種標準（例如部分、頁面等）拆分文件。
 
-#### 如何使用 Aspose.Words for .NET 根據標題將 Word 文件分割為更小的部分？
+### Aspose.Words 是免費的嗎？
+ Aspose.Words 提供免費試用版，但要獲得完整功能，您需要購買授權。檢查他們的[購買頁面](https://purchase.aspose.com/buy)更多細節。
 
-若要根據標題拆分 Word 文檔，您可以使用 Aspose.Words for .NET 的「按 HTML 標題」功能。按照提供的源代碼並設置`DocumentSplitCriteria`到`HeadingParagraph`在裡面`HtmlSaveOptions`目的。這將在每個標題處將文件分成更小的部分。
+### 我在哪裡可以找到文件？
+提供全面的文檔[這裡](https://reference.aspose.com/words/net/).
 
-#### 我可以將Word文檔拆分成哪些格式？
-
-提供的原始程式碼示範了將 Word 文件拆分為 HTML 格式的較小部分。但是，Aspose.Words for .NET 支援各種輸出格式，包括 DOCX、PDF、EPUB 等。您可以修改程式碼並在中指定所需的輸出格式`HtmlSaveOptions`相應地反對。
-
-#### 我可以選擇不同的標準來分割文件嗎？
-
-是的，您可以根據您的要求選擇不同的文件拆分標準。 Aspose.Words for .NET 提供了多個標準選項，例如`HeadingParagraph`, `Page`, `Section`， 和更多。修改`DocumentSplitCriteria`財產在`HtmlSaveOptions`對象選擇適當的拆分標準。
-
-#### 如何自訂分割部分的輸出 HTML？
-
- Aspose.Words for .NET 允許您通過在`HtmlSaveOptions`目的。您可以控制各個方面，例如 CSS 樣式、圖像、字體等。有關自訂 HTML 輸出的更多詳細信息，請參閱 Aspose.Words 文件。
-
-#### 我可以根據多個條件拆分文檔嗎？
-
-是的，您可以透過相應地組合條件選項來根據多個條件拆分文件。例如，您可以透過設定標題和頁面來拆分文檔`DocumentSplitCriteria`財產給`HeadingParagraph | Page`。這將在每個標題和每個頁面分割文檔，根據這兩個條件建立更小的部分。
+### 我如何獲得支持？
+如需支持，請造訪 Aspose.Words[論壇](https://forum.aspose.com/c/words/8).

@@ -2,67 +2,86 @@
 title: 行の書式設定 ページ間の区切りを無効にする
 linktitle: 行の書式設定 ページ間の区切りを無効にする
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書内の複数ページにまたがる表の改行を無効にする方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書内のページ間の行区切りを無効にし、表の読みやすさと書式を維持する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書内の複数ページの表の改行を無効にする方法を学習します。ステップ バイ ステップ ガイドに従ってコードを理解し、この機能を実装します。このチュートリアルの最後には、Word 文書内の表のすべての行の改行を無効にできるようになります。
+Word 文書で表を操作する場合、ページ間で行が分割されないようにする必要があります。これは、文書の読みやすさと書式を維持するために不可欠です。Aspose.Words for .NET では、ページ間での行の分割を簡単に無効にできます。
 
-## ステップ1: プロジェクトのセットアップ
-1. Visual Studio を起動し、新しい C# プロジェクトを作成します。
-2. Aspose.Words for .NET ライブラリへの参照を追加します。
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のページ間の行区切りを無効にする手順を説明します。
 
-## ステップ2: ドキュメントの読み込み
-ドキュメントで Words Processing を開始するには、次の手順に従います。
+## 前提条件
 
-```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+始める前に、次の前提条件を満たしていることを確認してください。
+- Aspose.Words for .NET ライブラリがインストールされています。
+- 複数ページにまたがる表を含む Word 文書。
 
-//ドキュメントを読み込む
-Document doc = new Document(dataDir + "Table spanning two pages.docx");
-```
+## 名前空間のインポート
 
-必ず「YOUR DOCUMENTS DIRECTORY」を実際のドキュメント ディレクトリへのパスに置き換え、正しいファイル名を指定してください。
-
-## ステップ3: 表の行区切りを無効にする
-次に、テーブル内のすべての行の行区切りを無効にします。次のコードを使用します。
+まず、プロジェクトに必要な名前空間をインポートします。
 
 ```csharp
-//テーブルを取得する
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-//テーブル内のすべての行の行区切りを無効にする
-foreach(Row row in table.Rows)
-row.RowFormat.AllowBreakAcrossPages = false;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-ここでは、ドキュメントを使用して最初のテーブルを取得し、foreachループを使用してテーブル内のすべての行を反復処理します。ループ内では、各行の行区切りを無効にするために、`RowFormat.AllowBreakAcrossPages`財産に`false`.
+## ステップ1: ドキュメントを読み込む
 
-## ステップ4: 変更したドキュメントを保存する
-最後に、表の改行を無効にして変更したドキュメントを保存する必要があります。次のコードを使用します。
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
-```
-
-出力ドキュメントの正しいパスとファイル名を必ず指定してください。
-
-### Aspose.Words for .NET を使用して行書式でページ間の改ページを無効にするサンプル ソース コード 
+複数ページにまたがる表を含むドキュメントを読み込みます。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
+```
+
+## ステップ2: テーブルにアクセスする
+
+ドキュメント内の最初のテーブルにアクセスします。これは、変更するテーブルがドキュメント内の最初のテーブルであることを前提としています。
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## ステップ3: すべての行でページ間の改ページを無効にする
+
+テーブルの各行をループし、`AllowBreakAcrossPages`財産に`false`これにより、行がページ間で分割されなくなります。
+
+```csharp
 //テーブル内のすべての行でページ間の分割を無効にします。
 foreach (Row row in table.Rows)
-	row.RowFormat.AllowBreakAcrossPages = false;
+    row.RowFormat.AllowBreakAcrossPages = false;
+```
+
+## ステップ4: ドキュメントを保存する
+
+変更したドキュメントを指定したディレクトリに保存します。
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書内の複数ページの表の改行を無効にする方法を学習しました。このステップバイステップ ガイドに従い、提供されている C# コードを実装することで、Word 文書内の表にこの無効化を適用できます。
+
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のページ間の行区切りを無効にする方法を説明しました。上記の手順に従うことで、表の行がそのまま残り、ページ間で分割されることがなくなり、文書の読みやすさと書式が維持されます。
+
+## よくある質問
+
+### すべての行ではなく、特定の行のページ間の行区切りを無効にすることはできますか?  
+はい、特定の行の行区切りを無効にするには、目的の行にアクセスして設定します。`AllowBreakAcrossPages`財産に`false`.
+
+### この方法は結合されたセルを含むテーブルでも機能しますか?  
+はい、この方法は結合されたセルを持つテーブルでも機能します。プロパティ`AllowBreakAcrossPages`セルの結合に関係なく、行全体に適用されます。
+
+### テーブルが別のテーブル内にネストされている場合、この方法は機能しますか?  
+はい、同じ方法でネストされたテーブルにアクセスし、変更できます。ネストされたテーブルをインデックスまたはその他のプロパティで正しく参照していることを確認してください。
+
+### 行がページ間で分割できるかどうかを確認するにはどうすればよいですか?  
+行がページをまたいで改ページできるかどうかを確認するには、`AllowBreakAcrossPages`の財産`RowFormat`そしてその値を確認します。
+
+### この設定をドキュメント内のすべての表に適用する方法はありますか?  
+はい、ドキュメント内のすべてのテーブルをループして、各テーブルにこの設定を適用できます。

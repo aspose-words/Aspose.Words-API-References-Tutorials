@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/remove-content/remove-table-of-contents/
 ---
-## Rimuovere il sommario nel documento di Word utilizzando Aspose.Words per .NET
+## introduzione
 
 Sei stanco di avere a che fare con un sommario indesiderato (TOC) nei tuoi documenti Word? Ci siamo passati tutti: a volte il sommario semplicemente non è necessario. Fortunatamente per te, Aspose.Words per .NET semplifica la rimozione di un sommario a livello di codice. In questo tutorial ti guiderò attraverso il processo passo dopo passo, così potrai padroneggiarlo in pochissimo tempo. Immergiamoci subito!
 
@@ -41,7 +41,7 @@ Prima di poter manipolare il tuo documento, dobbiamo definire dove si trova. Que
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso della cartella dei documenti. Qui è dove risiede il tuo file Word.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso della cartella dei documenti. Qui è dove risiede il tuo file Word.
 
 ## Passaggio 2: caricare il documento
 
@@ -64,7 +64,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 Ecco cosa sta succedendo:
 - `doc.Range.Fields`: consente di accedere a tutti i campi del documento.
-- `.Where(f => f.Type == FieldType.FieldTOC)`: filtra i campi per trovare solo quelli che sono sommari.
+- `.Where(f => f.Type == FieldType.FieldTOC)`filtra i campi per trovare solo quelli che sono sommari.
 - `.ToList().ForEach(f => f.Remove())`: converte i campi filtrati in un elenco e li rimuove ciascuno.
 
 ## Passaggio 4: salva il documento modificato
@@ -79,26 +79,26 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusione
 
-il gioco è fatto! Rimuovere un sommario da un documento Word utilizzando Aspose.Words per .NET è semplice una volta suddiviso in questi semplici passaggi. Questa potente libreria non solo aiuta a rimuovere i sommari, ma può anche gestire una miriade di altre manipolazioni di documenti. Quindi, vai avanti e provalo!
+E il gioco è fatto! Rimuovere un sommario da un documento Word utilizzando Aspose.Words per .NET è semplice una volta suddiviso in questi semplici passaggi. Questa potente libreria non solo aiuta a rimuovere i sommari, ma può anche gestire una miriade di altre manipolazioni di documenti. Quindi, vai avanti e provalo!
 
 ## Domande frequenti
 
-### 1. Cos'è Aspose.Words per .NET?
+### Cos'è Aspose.Words per .NET?
 
 Aspose.Words per .NET è una solida libreria .NET per la manipolazione dei documenti, che consente agli sviluppatori di creare, modificare e convertire documenti Word a livello di codice.
 
-### 2. Posso utilizzare Aspose.Words gratuitamente?
+### Posso usare Aspose.Words gratuitamente?
 
  Sì, puoi utilizzare Aspose.Words con a[prova gratuita](https://releases.aspose.com/) o prendi un[licenza temporanea](https://purchase.aspose.com/temporary-license/).
 
-### 3. È possibile rimuovere altri campi utilizzando Aspose.Words?
+### È possibile rimuovere altri campi utilizzando Aspose.Words?
 
 Assolutamente! Puoi rimuovere qualsiasi campo specificandone il tipo nella condizione del filtro.
 
-### 4. Ho bisogno di Visual Studio per utilizzare Aspose.Words?
+### Ho bisogno di Visual Studio per utilizzare Aspose.Words?
 
 Anche se Visual Studio è altamente consigliato per facilitare lo sviluppo, è possibile utilizzare qualsiasi IDE che supporti .NET.
 
-### 5. Dove posso trovare ulteriori informazioni su Aspose.Words?
+### Dove posso trovare ulteriori informazioni su Aspose.Words?
 
  Per una documentazione più dettagliata, visitare il[Aspose.Words per la documentazione dell'API .NET](https://reference.aspose.com/words/net/).

@@ -22,7 +22,7 @@ Aspose.Words for .NET 教程将引导您了解 Word 文档中使用书签进行�
 | [在 Word 文档中为表格列添加书签](./bookmark-table-columns/) | 通过本全面的分步教程学习如何使用 Aspose.Words for .NET 为 Word 文档中的表格列添加书签。 |
 | [在 Word 文档中复制书签文本](./copy-bookmarked-text/) | 使用 Aspose.Words for .NET 轻松在 Word 文档之间复制书签文本。通过本分步指南了解如何操作。 |
 | [在 Word 文档中附加书签文本](./append-bookmarked-text/) | 通过本分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中附加书签文本。非常适合开发人员。 |
-| [在 Word 文档中创建书签](./create-bookmark/) | 通过本详细分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中创建书签。非常适合文档导航和组织。 |
+| [在 Word 文档中创建书签](./create-bookmark/) | 通过本详细的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中创建书签。非常适合文档导航和组织。 |
 | [在 Word 文档中显示隐藏书签内容](./show-hide-bookmarked-content/) | 通过本详细的分步指南了解如何使用 Aspose.Words for .NET 显示和隐藏 Word 文档中的书签内容。 |
 | [解开 Word 文档中的行书签](./untangle-row-bookmarks/) | 使用 Aspose.Words for .NET 轻松理清 Word 文档中错综复杂的行书签。本指南将引导您完成更清洁、更安全的书签管理过程。 |
 | [在 Word 文档中解开](./untangle/) | 借助我们详细的分步指南，掌握如何使用 Aspose.Words for .NET 解开 Word 文档中的书签。非常适合 .NET 开发人员。 |

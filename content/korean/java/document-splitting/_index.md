@@ -32,6 +32,6 @@ Aspose.Words for Java를 사용하여 Word 문서를 HTML 페이지로 분할하
 ### [문서 페이지 분리](./document-page-separation/)
 Aspose.Words for Java를 사용하여 문서 페이지 분리를 수행하는 방법을 알아보세요. 이 포괄적인 가이드는 효율적인 문서 처리를 위한 단계별 지침과 소스 코드를 제공합니다.
 ### [페이지별로 문서 내용 추출](./extracting-document-content-pages/)
-Aspose.Words for Java를 사용하여 페이지별로 문서 콘텐츠를 추출하는 방법을 알아보세요. 소스 코드가 포함된 이 단계별 가이드를 통해 여러분은 곧 전문가가 될 것입니다.
+Aspose.Words for Java를 사용하여 페이지별로 문서 콘텐츠를 추출하는 방법을 알아보세요. 소스 코드가 포함된 이 단계별 가이드를 통해 귀하는 곧 전문가가 될 것입니다.
 ### [문서 분할 및 추출 기술](./document-splitting-extraction-techniques/)
 Aspose.Words for Java를 사용하여 문서 분할 및 추출을 알아보세요. 효율적인 조작을 위한 소스 코드가 포함된 단계별 가이드입니다. Aspose의 힘을 활용하세요

@@ -2,84 +2,97 @@
 title: 見出しで Word 文書を分割する HTML
 linktitle: 見出し別 HTML
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET の見出し HTML 機能による分割 Word 文書の C# ソース コードを説明するステップ バイ ステップ ガイド
+description: Aspose.Words for .NET を使用して、Word 文書を見出しごとに HTML に分割する方法を学びます。詳細なステップバイステップのガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/split-document/by-headings-html/
 ---
-このチュートリアルでは、Aspose.Words for .NET の HTML 見出し機能を使用して Word 文書を小さな部分に分割する方法について説明します。以下の手順に従ってソース コードを理解し、見出しに基づいて個別の HTML 文書を生成します。
+## 導入
 
-## ステップ1: ドキュメントの読み込み
+Word 文書を見出しで分割すると、大きな文書の管理やセグメント化された HTML 出力の作成が劇的に変わります。Aspose.Words for .NET は、これを実現する簡単な方法を提供します。このチュートリアルでは、プロセス全体を順を追って説明し、その過程ですべての詳細を把握できるようにします。
 
-まず、ドキュメントのディレクトリを指定して、ドキュメントを Document オブジェクトに読み込みます。手順は次のとおりです。
+## 前提条件
+
+チュートリアルに進む前に、次のものを用意してください。
+
+1. Aspose.Words for .NET: まだダウンロードしていない場合は、こちらからダウンロードしてください。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio のような IDE。
+3. C# の基礎知識: 基礎を理解しておくと、簡単に理解できるようになります。
+4. サンプル ドキュメント: 見出しごとに分割する Word ドキュメントを用意します。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートしましょう。これは、Aspose.Words のクラスとメソッドにアクセスするために重要です。
 
 ```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## ステップ2: HTML形式で文書を見出しで分割する
+## ステップ1: プロジェクトを設定する
 
-ここで、HTML 形式の見出しに基づいてドキュメントを小さな部分に分割するための保存オプションを設定します。方法は次のとおりです。
+まず、開発環境でプロジェクトをセットアップします。Visual Studio を開き、新しいコンソール アプリケーションを作成します。
 
-```csharp
-HtmlSaveOptions options = new HtmlSaveOptions
-{
-//ドキュメントを小さな部分に分割します。この場合は、タイトルごとに分割します。
-DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
-};
+1. 新しいプロジェクトを作成する: Visual Studio を開き、「新しいプロジェクトの作成」を選択し、「コンソール アプリ (.NET Core)」を選択して、「次へ」をクリックします。
+2. プロジェクトを構成する: プロジェクトに名前を付け、保存する場所を選択して、「作成」をクリックします。
+3.  Aspose.Words for .NETのインストール: NuGetパッケージマネージャーを使用してAspose.Wordsライブラリをインストールします。NuGetパッケージマネージャーで、`Aspose.Words`インストールしてください。
 
-doc.Save(dataDir + "SplitDocument.ParTitresHtml.html", options);
-```
+## ステップ2: ドキュメントを読み込む
 
-### Aspose.Words for .NET を使用した見出し別 HTML のサンプル ソース コード
+次に、分割する Word 文書を読み込む必要があります。文書が簡単にアクセスできるディレクトリに配置されていることを確認してください。
 
-以下は、Aspose.Words for .NET の HTML 見出し機能の完全なソース コードです。
+1. ディレクトリ パスを定義する: ドキュメントのディレクトリ パスの変数を作成します。
+2. ドキュメントをロードする:`Document` Word 文書を読み込むためのクラス。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Rendering.docx");
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
+## ステップ3: HTML保存オプションを設定する
+
+ここで、HTML 保存オプションを設定して、ドキュメントを見出しごとに分割するように指定します。
+
+1.  HtmlSaveOptionsを作成する:`HtmlSaveOptions`クラス。
+2. 文書分割条件を設定する:`DocumentSplitCriteria`ドキュメントを見出し段落ごとに分割することを指定するプロパティ。
+
+```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
 {
-	//ドキュメントを小さな部分に分割します。この例では、見出しごとに分割します。
-	DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
+    //ドキュメントを小さな部分に分割します。この例では、見出しごとに分割します。
+    DocumentSplitCriteria = DocumentSplitCriteria.HeadingParagraph
 };
+```
 
+## ステップ4: 分割したドキュメントを保存する
 
+最後に、指定された HTML 保存オプションを使用してドキュメントを保存します。これにより、見出しごとに分割された HTML ファイルが生成されます。
+
+1. ドキュメントを保存する:`Save`方法の`Document`指定されたオプションでドキュメントを保存するクラス。
+
+```csharp
 doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 ```
 
-このコードを使用すると、Aspose.Words for .NET を使用して、見出しに基づいて Word 文書を小さな部分に分割できます。その後、各部分ごとに個別の HTML 文書を生成できます。
-
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NETのHTML見出し機能を使用してWord文書を小さな部分に分割する方法を学びました。`DocumentSplitCriteria`として`HeadingParagraph`の中に`HtmlSaveOptions`元のドキュメントに存在する見出しに基づいて、個別の HTML ドキュメントを生成することができました。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書を見出しごとに分割し、HTML として保存できました。この方法は、大きな文書を整理し、セグメント化された HTML 出力を作成するのに非常に効果的で、コンテンツの管理とアクセスが容易になります。
 
-ドキュメントを見出しで分割すると、特に複数のセクションがある大きなドキュメントでコンテンツを整理および管理するのに役立ちます。Aspose.Words for .NET は、ドキュメントの分割を処理し、さまざまな形式で出力を生成するための信頼性が高く効率的なソリューションを提供します。
+## よくある質問
 
-ドキュメント処理機能をさらに強化し、ワークフローを効率化するために、Aspose.Words for .NET が提供する追加の機能とオプションを自由に調べてください。
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、.NET アプリケーションで Word 文書を操作するための強力なライブラリです。
 
-### よくある質問
+### 他の基準でドキュメントを分割できますか?
+はい、Aspose.Words では、セクション、ページなどのさまざまな基準でドキュメントを分割できます。
 
-#### Aspose.Words for .NET を使用して、見出しに基づいて Word 文書を小さな部分に分割するにはどうすればよいですか?
+### Aspose.Words は無料ですか?
+ Aspose.Wordsは無料トライアルを提供していますが、フル機能を使用するにはライセンスを購入する必要があります。[購入ページ](https://purchase.aspose.com/buy)詳細については。
 
- Word文書を見出しに基づいて分割するには、Aspose.Words for .NETのHTML見出し機能を使用します。提供されているソースコードに従って、`DocumentSplitCriteria`に`HeadingParagraph`の中に`HtmlSaveOptions`オブジェクト。これにより、ドキュメントは見出しごとに小さな部分に分割されます。
+### ドキュメントはどこにありますか?
+包括的なドキュメントが利用可能[ここ](https://reference.aspose.com/words/net/).
 
-#### Word 文書をどのような形式に分割できますか?
-
-提供されているソースコードは、Word文書をHTML形式で小さな部分に分割する方法を示しています。ただし、Aspose.Words for .NETは、DOCX、PDF、EPUBなど、さまざまな出力形式をサポートしています。コードを変更して、必要な出力形式を`HtmlSaveOptions`それに応じて異議を申し立てます。
-
-#### ドキュメントを分割するための別の基準を選択できますか?
-
-はい、要件に応じて、ドキュメントを分割するための異なる基準を選択できます。Aspose.Words for .NET には、次のようないくつかの基準オプションが用意されています。`HeadingParagraph`, `Page`, `Section`など。`DocumentSplitCriteria`の財産`HtmlSaveOptions`分割の適切な基準を選択するためのオブジェクト。
-
-#### 分割された部分の出力 HTML をカスタマイズするにはどうすればよいですか?
-
- Aspose.Words for .NETでは、追加オプションを指定して分割部分の出力HTMLをカスタマイズできます。`HtmlSaveOptions`オブジェクト。CSS スタイル、画像、フォントなど、さまざまな側面を制御できます。HTML 出力のカスタマイズの詳細については、Aspose.Words のドキュメントを参照してください。
-
-#### 複数の基準に基づいてドキュメントを分割できますか?
-
-はい、条件オプションを組み合わせることで、複数の条件に基づいて文書を分割できます。たとえば、次のように設定することで、見出しとページの両方で文書を分割できます。`DocumentSplitCriteria`財産に`HeadingParagraph | Page`これにより、ドキュメントが各見出しと各ページで分割され、両方の基準に基づいて小さな部分が作成されます。
+### どうすればサポートを受けられますか?
+サポートについては、Aspose.Wordsをご覧ください。[フォーラム](https://forum.aspose.com/c/words/8).

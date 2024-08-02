@@ -2,20 +2,38 @@
 title: Ubah Sumber Budaya Pembaruan Bidang
 linktitle: Ubah Sumber Budaya Pembaruan Bidang
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Ubah Sumber Budaya Pembaruan Bidang, Panduan langkah demi langkah untuk mengubah sumber budaya di Aspose.Words untuk .NET.
+description: Pelajari cara mengubah sumber budaya pembaruan bidang di Aspose.Words untuk .NET dengan panduan ini. Kontrol pemformatan tanggal berdasarkan budaya yang berbeda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/change-field-update-culture-source/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses mengubah sumber budaya pembaruan bidang di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan memodifikasi sumber budaya, Anda dapat mengontrol format tanggal selama pembaruan bidang dan operasi gabungan surat. Kami akan memberi Anda kode sumber C# yang diperlukan dan petunjuk langkah demi langkah untuk mencapai hal ini.
+Dalam tutorial ini, kita akan mendalami dunia Aspose.Words untuk .NET dan menjelajahi cara mengubah sumber budaya pembaruan lapangan. Jika Anda berurusan dengan dokumen Word yang menyertakan bidang tanggal dan Anda perlu mengontrol bagaimana tanggal tersebut diformat berdasarkan budaya yang berbeda, panduan ini cocok untuk Anda. Mari kita telusuri prosesnya langkah demi langkah, memastikan Anda memahami setiap konsep dan dapat menerapkannya secara efektif dalam proyek Anda.
 
 ## Prasyarat
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
-- Aspose.Words untuk perpustakaan .NET diinstal pada sistem Anda.
 
-## Langkah 1: Buat Dokumen dan DocumentBuilder
-Untuk memulai, buat sebuah instance dari kelas Dokumen dan objek DocumentBuilder:
+Sebelum kita beralih ke kode, pastikan Anda memiliki yang berikut:
+
+-  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Semua IDE yang kompatibel dengan .NET (misalnya, Visual Studio).
+- Pengetahuan Dasar C#: Tutorial ini mengasumsikan Anda memiliki pemahaman mendasar tentang pemrograman C#.
+
+## Impor Namespace
+
+Pertama, mari impor namespace yang diperlukan untuk proyek kita. Ini akan memastikan bahwa kita memiliki akses ke semua kelas dan metode wajib yang disediakan oleh Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Sekarang, mari kita bagi contoh ini menjadi beberapa langkah untuk membantu Anda memahami cara mengubah sumber budaya pembaruan bidang di Aspose.Words untuk .NET.
+
+## Langkah 1: Inisialisasi Dokumen
+
+ Langkah pertama adalah membuat instance baru dari`Document` kelas dan a`DocumentBuilder`. Ini menetapkan dasar untuk membangun dan memanipulasi dokumen Word kami.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,80 +41,58 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Masukkan Konten dengan Lokal Tertentu
-Selanjutnya, atur lokal ke Jerman dan masukkan kolom dengan format tanggal:
+## Langkah 2: Sisipkan Bidang dengan Lokal Tertentu
+
+Selanjutnya, kita perlu memasukkan field ke dalam dokumen. Untuk contoh ini, kami akan menyisipkan dua kolom tanggal. Kami akan mengatur lokal font ke Jerman (LocaleId = 1031) untuk menunjukkan bagaimana budaya mempengaruhi format tanggal.
 
 ```csharp
-builder.Font.LocaleId = 1031;
+builder.Font.LocaleId = 1031; // Jerman
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-Pada kode di atas, kita mengatur font lokal ke Jerman (ID lokal 1031) dan menyisipkan dua kolom dengan format tanggal tertentu.
+## Langkah 3: Tetapkan Sumber Budaya Pembaruan Bidang
 
-## Langkah 3: Ubah Sumber Budaya Pembaruan Bidang
-Untuk mengubah sumber budaya pembaruan bidang, gunakan kelas FieldOptions:
+ Untuk mengontrol budaya yang digunakan saat memperbarui bidang, kami mengatur`FieldUpdateCultureSource` properti dari`FieldOptions`kelas. Properti ini menentukan apakah budaya diambil dari kode lapangan atau dokumen.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
 ```
 
-Dalam contoh ini, kami mengatur budaya yang digunakan selama pembaruan lapangan untuk dipilih dari budaya yang digunakan di lapangan.
+## Langkah 4: Jalankan Penggabungan Surat
 
-## Langkah 4: Lakukan Penggabungan Surat
-Lakukan operasi gabungan surat dan tentukan nilai tanggal untuk bidang "Tanggal2":
+Kita sekarang perlu menjalankan gabungan surat untuk mengisi kolom dengan data aktual. Dalam contoh ini, kita akan menyetel kolom tanggal kedua (`Date2`) sampai dengan 1 Januari 2011.
 
 ```csharp
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
-
-Dalam cuplikan kode ini, kami menjalankan operasi gabungan surat dan memberikan nilai DateTime untuk bidang "Date2".
 
 ## Langkah 5: Simpan Dokumen
-Simpan dokumen yang dimodifikasi ke file menggunakan metode Simpan dari kelas Dokumen:
+
+Terakhir, kami menyimpan dokumen ke direktori yang ditentukan. Langkah ini menyelesaikan proses mengubah sumber budaya pembaruan lapangan.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
-```
-
-### Contoh Kode Sumber untuk Mengubah Sumber Budaya Pembaruan Bidang menggunakan Aspose.Words untuk .NET
-Berikut adalah kode sumber lengkap untuk mengubah sumber budaya pembaruan bidang di dokumen Word menggunakan Aspose.Words for .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Font.LocaleId = 1031;
-builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
-builder.Write(" - ");
-builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
-
-doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;
-
-doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
-
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ```
 
 ## Kesimpulan
-Selamat! Anda telah berhasil mempelajari cara mengubah sumber budaya pembaruan bidang di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda kini dapat mengontrol budaya yang digunakan untuk pemformatan tanggal selama pembaruan bidang dan operasi penggabungan surat. Sesuaikan sumber budaya sesuai dengan kebutuhan Anda untuk memastikan tanggal yang akurat dan konsisten.
 
-### FAQ
+Dan itu dia! Anda telah berhasil mengubah sumber budaya pembaruan bidang di Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda bisa memastikan bahwa dokumen Word Anda menampilkan tanggal dan nilai bidang lainnya sesuai dengan pengaturan budaya yang ditentukan. Hal ini khususnya berguna ketika menghasilkan dokumen untuk audiens internasional.
 
-#### T: Bagaimana cara mengubah sumber budaya pembaruan lapangan di Aspose.Words untuk .NET?
+## FAQ
 
- A: Untuk mengubah sumber budaya pembaruan bidang di Aspose.Words untuk .NET, Anda dapat menggunakan`Document.FieldOptions.CultureSource` properti dan tetapkan nilainya menjadi`FieldCultureSource.FieldCode` atau`FieldCultureSource.CurrentThread` . Misalnya, Anda bisa menggunakan`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` untuk menggunakan budaya yang ditentukan dalam kode lapangan.
+###  Apa tujuan dari pengaturan tersebut`LocaleId`?
+ Itu`LocaleId` menentukan pengaturan budaya untuk teks, yang memengaruhi cara format tanggal dan data sensitif lokal lainnya.
 
-#### T: Bagaimana cara menentukan budaya tertentu untuk memperbarui bidang di Aspose.Words untuk .NET?
+### Bisakah saya menggunakan bahasa lain selain bahasa Jerman?
+ Ya, Anda dapat mengaturnya`LocaleId`ke pengenal lokal apa pun yang valid. Misalnya 1033 untuk Bahasa Inggris (Amerika Serikat).
 
- J: Untuk menentukan budaya tertentu untuk memperbarui bidang di Aspose.Words untuk .NET, Anda dapat menggunakan`Document.FieldOptions.FieldUpdateCultureInfo` properti dan atur`CultureInfo` objek yang sesuai dengan budaya yang diinginkan. Misalnya, Anda bisa menggunakan`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` untuk menentukan budaya Perancis (Prancis).
+###  Apa yang terjadi jika saya tidak mengaturnya`FieldUpdateCultureSource` property?
+Jika properti ini tidak disetel, pengaturan budaya default dokumen akan digunakan saat memperbarui kolom.
 
-#### T: Apakah mungkin untuk menonaktifkan pembaruan bidang otomatis di Aspose.Words untuk .NET?
+### Apakah mungkin memperbarui bidang berdasarkan budaya dokumen, bukan kode bidang?
+ Ya, Anda dapat mengaturnya`FieldUpdateCultureSource` ke`FieldUpdateCultureSource.Document` untuk menggunakan pengaturan budaya dokumen.
 
- J: Ya, dimungkinkan untuk menonaktifkan pembaruan bidang otomatis di Aspose.Words untuk .NET. Anda dapat menggunakan`Document.FieldOptions.UpdateFields` properti dan setel ke`false` untuk mencegah kolom diperbarui secara otomatis. Ini memungkinkan Anda mengontrol pembaruan bidang secara manual sesuai kebutuhan.
-
-#### T: Bagaimana cara memperbarui kolom dokumen secara manual di Aspose.Words untuk .NET?
-
- J: Untuk memperbarui bidang secara manual dalam dokumen di Aspose.Words untuk .NET, Anda dapat menggunakan`Field.Update` metode untuk setiap bidang secara individual. Misalnya, Anda bisa menggunakan`field.Update()` untuk memperbarui bidang tertentu.
+### Bagaimana cara memformat tanggal dalam pola yang berbeda?
+ Anda dapat mengubah pola format tanggal di`InsertField` metode dengan memodifikasi`\\@` beralih nilai.

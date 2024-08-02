@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-pdf/
 
 이 단계별 가이드에서는 Aspose.Words for Java를 사용하여 문서를 PDF로 저장하는 방법을 살펴보겠습니다. PDF 변환의 다양한 측면을 다루고 프로세스를 더 쉽게 만들기 위한 코드 예제를 제공합니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 

@@ -99,4 +99,4 @@ Jeśli formant ActiveX nie działa, może to być spowodowane ustawieniami zabez
 
 ## Wniosek
 
-Włączenie obiektów OLE i kontrolek ActiveX za pomocą Aspose.Words dla Pythona otwiera świat możliwości tworzenia dynamicznych i interaktywnych dokumentów Word. Niezależnie od tego, czy chcesz osadzić arkusze kalkulacyjne, multimedia czy formularze interaktywne, ta funkcja umożliwia skuteczne komunikowanie swoich pomysłów.
+Włączenie obiektów OLE i kontrolek ActiveX za pomocą Aspose.Words dla Pythona otwiera świat możliwości tworzenia dynamicznych i interaktywnych dokumentów Word. Niezależnie od tego, czy chcesz osadzić arkusze kalkulacyjne, multimedia czy interaktywne formularze, ta funkcja umożliwia skuteczne komunikowanie swoich pomysłów.

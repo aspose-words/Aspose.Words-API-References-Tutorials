@@ -38,7 +38,7 @@ Hãy chia nhỏ quá trình xóa kiểm soát nội dung thành các bước chi
 Đầu tiên, hãy thiết lập môi trường dự án của bạn.
 
 1. Mở Visual Studio: Bật Visual Studio hoặc IDE ưa thích của bạn.
-2.  Tạo một dự án mới: Đi đến`File` >`New` >`Project`và chọn Ứng dụng bảng điều khiển C#.
+2.  Tạo một dự án mới: Đi tới`File` >`New` >`Project`và chọn Ứng dụng bảng điều khiển C#.
 3. Cài đặt Aspose.Words cho .NET: Sử dụng Trình quản lý gói NuGet để cài đặt Aspose.Words. Chạy lệnh sau trong Bảng điều khiển quản lý gói:
 ```sh
 Install-Package Aspose.Words

@@ -9,7 +9,7 @@ url: /hu/net/programming-with-rtfloadoptions/recognize-utf8-text/
 ---
 ## Bevezetés
 
-Készen állsz, hogy elmerülj néhány fantasztikus technikai dologban? Ma az UTF-8 szöveg felismerésével fogunk foglalkozni a Word dokumentumokban az Aspose.Words for .NET használatával. Ha több nyelven vagy speciális karakterekkel dolgozik, akkor ez egy játékmódot jelent. Szóval, kösd be, és kezdjük!
+Készen állsz, hogy elmerülj néhány fantasztikus technikai dologban? Ma az UTF-8 szöveg felismerésével fogunk foglalkozni a Word dokumentumokban az Aspose.Words for .NET használatával. Ha több nyelven vagy speciális karakterekkel dolgozik, akkor ez egy játékmódot jelent. Szóval, csatt, és kezdjük!
 
 ## Előfeltételek
 

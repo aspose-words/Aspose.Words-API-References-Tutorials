@@ -128,7 +128,7 @@ cell1.appendChild(nestedTable);
 
 ### Agregar estilos de mesa elegantes
 
-Aspose.Words para Java admite varios estilos de tablas que pueden darle a su documento un aspecto profesional:
+Aspose.Words para Java admite varios estilos de tabla que pueden darle a su documento un aspecto profesional:
 
 ```java
 // Aplicar un estilo de tabla predefinido

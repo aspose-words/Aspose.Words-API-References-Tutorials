@@ -2,63 +2,42 @@
 title: 병합 필드 이름 바꾸기
 linktitle: 병합 필드 이름 바꾸기
 second_title: Aspose.Words 문서 처리 API
-description: 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 문서에서 병합 필드의 이름을 바꾸는 방법을 배웁니다.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에서 병합 필드의 이름을 바꾸는 방법을 알아보세요. 문서를 쉽게 조작하려면 자세한 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-fields/rename-merge-fields/
 ---
+## 소개
 
-다음은 .NET용 Aspose.Words의 병합 필드 이름 변경 기능을 사용하는 C# 소스 코드를 설명하는 단계별 가이드입니다. 원하는 결과를 얻으려면 각 단계를 주의 깊게 따르십시오.
+올바른 도구와 기술에 익숙하지 않은 경우 Word 문서에서 병합 필드의 이름을 바꾸는 것은 어려운 작업이 될 수 있습니다. 하지만 걱정하지 마세요. 제가 도와드리겠습니다! 이 가이드에서는 문서 조작을 쉽게 만들어주는 강력한 라이브러리인 Aspose.Words for .NET을 사용하여 병합 필드의 이름을 바꾸는 과정을 자세히 살펴보겠습니다. 숙련된 개발자이든 이제 막 시작하는 개발자이든 이 단계별 튜토리얼은 여러분이 알아야 할 모든 것을 안내합니다.
 
-## 1단계: 문서 디렉터리 설정
+## 전제 조건
 
-제공된 코드에서 문서의 디렉터리를 지정해야 합니다. "YOUR DOCUMENT DIRECTORY" 값을 문서 디렉토리에 대한 적절한 경로로 바꾸십시오.
+핵심적인 세부 사항을 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE.
+- C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 도움이 됩니다.
 
-## 2단계: 문서 만들기 및 병합 필드 삽입
+## 네임스페이스 가져오기
 
-새 문서를 만들고`DocumentBuilder` 병합 필드를 삽입합니다.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
-builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
-```
-
-## 3단계: 병합 필드 이름 바꾸기
-
-문서 범위의 각 필드를 반복하고 병합 필드인 경우 "를 추가하여 필드 이름을 바꿉니다._이름이 변경되었습니다." 접미사.
+먼저 필요한 네임스페이스를 가져오겠습니다. 이렇게 하면 코드가 필요한 모든 클래스와 메서드에 액세스할 수 있게 됩니다.
 
 ```csharp
-foreach(Field f in doc.Range.Fields)
-{
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
-}
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## 4단계: 문서 저장
+좋습니다. 이제 기본 사항을 살펴보았으니 재미있는 부분으로 들어가겠습니다! Word 문서에서 병합 필드의 이름을 바꾸려면 다음 단계를 따르세요.
 
- 마지막으로 우리는`Save()` 수정된 문서를 저장하는 방법입니다.
+## 1단계: 문서 만들기 및 병합 필드 삽입
 
-```csharp
-doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
-```
-
-### .NET용 Aspose.Words를 사용하여 병합 필드 이름을 바꾸는 소스 코드 예
+시작하려면 새 문서를 만들고 일부 병합 필드를 삽입해야 합니다. 이것이 우리의 출발점이 될 것입니다.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // 문서를 만들고 병합 필드를 삽입합니다.
 Document doc = new Document();
@@ -66,42 +45,62 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
+```
 
+ 여기서는 새 문서를 만들고`DocumentBuilder` 두 개의 병합 필드를 삽입하는 클래스:`MyMergeField1`그리고`MyMergeField2`.
+
+## 2단계: 필드를 반복하고 이름 바꾸기
+
+이제 병합 필드를 찾아 이름을 바꾸는 코드를 작성해 보겠습니다. 문서의 모든 필드를 반복하여 병합 필드인지 확인한 다음 이름을 바꿉니다.
+
+```csharp
 // 병합 필드의 이름을 바꿉니다.
-foreach(Field f in doc.Range.Fields)
+foreach (Field f in doc.Range.Fields)
 {
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
+    if (f.Type == FieldType.FieldMergeField)
+    {
+        FieldMergeField mergeField = (FieldMergeField)f;
+        mergeField.FieldName = mergeField.FieldName + "_Renamed";
+        mergeField.Update();
+    }
 }
+```
 
+ 이 스니펫에서는`foreach` 문서의 모든 필드를 반복하는 루프입니다. 각 필드에 대해 다음을 사용하여 병합 필드인지 확인합니다.`f.Type == FieldType.FieldMergeField` . 그렇다면 우리는 그것을 캐스팅합니다.`FieldMergeField` 그리고 추가`_Renamed` 그 이름에.
+
+## 3단계: 문서 저장
+
+마지막으로 이름이 변경된 병합 필드를 사용하여 문서를 저장해 보겠습니다.
+
+```csharp
 // 문서를 저장합니다.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-.NET용 Aspose.Words를 사용하여 문서의 병합 필드 이름을 바꾸려면 다음 단계를 따르세요.
+ 이 코드 줄은 문서를 지정된 디렉터리에 다음 이름으로 저장합니다.`WorkingWithFields.RenameMergeFields.docx`.
 
-### FAQ
+## 결론
 
-#### Q: .NET용 Aspose.Words를 사용하여 Word 문서에서 병합된 필드의 이름을 어떻게 바꿀 수 있습니까?
+그리고 거기에 있습니다! 단계를 알고 나면 .NET용 Aspose.Words를 사용하여 Word 문서에서 병합 필드의 이름을 바꾸는 것은 간단합니다. 이 가이드를 따르면 필요에 맞게 Word 문서를 쉽게 조작하고 사용자 지정할 수 있습니다. 보고서를 생성하든, 개인화된 편지를 작성하든, 데이터를 관리하든 이 기술은 유용할 것입니다.
 
- A: .NET용 Aspose.Words를 사용하여 Word 문서에서 병합된 필드의 이름을 바꾸려면 다음을 사용하여 문서의 필드를 반복할 수 있습니다.`FieldMergingArgs` 클래스를 사용하고`FieldMergingArgs.FieldName` 필드 이름을 바꾸는 방법.
+## FAQ
 
-#### Q: .NET용 Aspose.Words를 사용하여 Word 문서에서 병합된 특정 필드만 이름을 바꿀 수 있습니까?
+### 여러 병합 필드의 이름을 한 번에 바꿀 수 있나요?
 
-A: 예, Aspose.Words for .NET을 사용하면 Word 문서에서 병합된 특정 필드만 이름을 바꿀 수 있습니다. 필드 이름이나 기타 관련 속성과 같은 특정 기준을 사용하여 이름을 바꿀 필드를 필터링할 수 있습니다. 그런 다음 다음을 사용하여 해당 필드의 이름을 바꿀 수 있습니다.`FieldMergingArgs.FieldName` 방법.
+전적으로! 제공된 코드는 이미 문서의 모든 병합 필드를 반복하고 이름을 바꾸는 방법을 보여줍니다.
 
-#### Q: Aspose.Words for .NET을 사용하여 Word 문서에서 병합된 필드의 이름이 성공적으로 바뀌었는지 어떻게 확인할 수 있나요?
+### 병합 필드가 존재하지 않으면 어떻게 되나요?
 
- A: .NET용 Aspose.Words를 사용하여 Word 문서에서 병합된 필드의 이름이 성공적으로 변경되었는지 확인하려면 다음을 사용할 수 있습니다.`FieldMergedArgs` 수업을 듣고 액세스`FieldMergedArgs.IsMerged` 적중으로 필드 이름이 바뀌었는지 확인하는 속성입니다.
+병합 필드가 없으면 코드는 이를 건너뜁니다. 오류가 발생하지 않습니다.
 
-#### Q: Aspose.Words for .NET을 사용하여 Word 문서에서 병합된 필드의 이름을 바꾸면 어떤 결과가 발생합니까?
+### 이름에 추가하는 대신 접두사를 변경할 수 있나요?
 
-A: .NET용 Aspose.Words를 사용하여 Word 문서에서 병합된 필드의 이름을 바꾸면 문서의 필드 이름이 변경되어 필드 이름에 의존하는 다른 기능이나 프로세스에 영향을 미칠 수 있습니다. 병합된 필드의 이름을 바꾸기 전에 이러한 잠재적인 결과를 고려해야 합니다.
+ 예, 수정할 수 있습니다.`mergeField.FieldName` 원하는 값으로 설정하도록 할당합니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 이름을 바꾼 후 병합된 필드의 원래 이름을 복원할 수 있습니까?
+### .NET용 Aspose.Words는 무료인가요?
 
-A: 예, .NET용 Aspose.Words를 사용하여 이름을 바꾼 후 병합된 필드의 원래 이름을 복원할 수 있습니다. 필드의 원래 이름을 변수나 목록에 저장한 다음 필요한 경우 해당 정보를 사용하여 원래 이름을 복원할 수 있습니다.
+ Aspose.Words for .NET은 상용 제품이지만 다음을 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 그것을 평가하기 위해.
+
+### .NET용 Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
+
+ 포괄적인 문서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/).

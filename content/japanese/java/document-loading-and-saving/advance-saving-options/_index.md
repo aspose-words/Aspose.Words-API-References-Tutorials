@@ -115,7 +115,7 @@ public void doNotSavePictureBullet() throws Exception {
 
 いいえ、Aspose.Words for Javaは商用ライブラリです。ライセンスの詳細は[ここ](https://purchase.aspose.com/buy).
 
-### 2. Aspose.Words for Java の無料試用版を入手するにはどうすればよいですか?
+### 2. Aspose.Words for Java の無料試用版を入手するにはどうすればいいですか?
 
 Aspose.Words for Javaの無料トライアルを入手できます[ここ](https://releases.aspose.com/).
 

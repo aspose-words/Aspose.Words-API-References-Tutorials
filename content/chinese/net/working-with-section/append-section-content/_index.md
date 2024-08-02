@@ -16,7 +16,7 @@ url: /zh/net/working-with-section/append-section-content/
 在开始之前，您需要准备一些东西：
 
 1. C# 基础知识：您不需要成为专家，但对 C# 的基本了解将会有所帮助。
-2.  Aspose.Words for .NET：您可以[点击下载](https://releases.aspose.com/words/net/)。如果您不想立即购买，您可以选择[免费试用](https://releases.aspose.com/).
+2.  Aspose.Words for .NET：您可以[点击下载](https://releases.aspose.com/words/net/) 。如果您不想立即购买，您可以选择[免费试用](https://releases.aspose.com/).
 3. Visual Studio：任何版本都可以，但建议使用最新版本。
 4. .NET Framework：确保您的机器上已安装它。
 
@@ -116,7 +116,7 @@ Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程�
 
 ## 3. Aspose.Words for .NET 的主要功能是什么？
 
-Aspose.Words for .NET 提供广泛的功能，包括文档创建、格式化、转换和操作。您可以在[API 文档](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET 提供广泛的功能，包括文档创建、格式化、转换和操作。您可以在[API 文档](https://reference.aspose.com/words/net/).
 
 ## 4. 如何获得 Aspose.Words for .NET 的支持？
 

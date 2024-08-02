@@ -10,7 +10,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-table-of-contents/
 ## 소개
 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 목차(TOC)를 효율적으로 추가하는 방법을 알아봅니다. 이 기능은 긴 문서를 구성 및 탐색하고, 가독성을 높이며, 문서 섹션에 대한 빠른 개요를 제공하는 데 필수적입니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 

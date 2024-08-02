@@ -2,40 +2,86 @@
 title: Χρήση παραθύρων εργασιών επέκτασης Web
 linktitle: Χρήση παραθύρων εργασιών επέκτασης Web
 second_title: Aspose.Words Document Processing API
-description: Οδηγός βήμα προς βήμα για τη χρήση των παραθύρων εργασιών επέκτασης Web με το Aspose.Words για .NET.
+description: Μάθετε πώς να προσθέτετε και να διαμορφώνετε Παράθυρα εργασιών επέκτασης Web σε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET σε αυτό το λεπτομερές, βήμα προς βήμα εκμάθηση.
 type: docs
 weight: 10
 url: /el/net/programming-with-webextension/using-web-extension-task-panes/
 ---
+## Εισαγωγή
 
-Αυτό το άρθρο παρέχει έναν οδηγό βήμα προς βήμα σχετικά με τον τρόπο χρήσης των παραθύρων εργασιών επέκτασης ιστού με το Aspose.Words για .NET. Θα εξηγήσουμε λεπτομερώς κάθε μέρος του κώδικα. Στο τέλος αυτού του σεμιναρίου, θα μπορείτε να κατανοήσετε πώς να προσθέτετε και να διαμορφώνετε τα παράθυρα εργασιών για επεκτάσεις ιστού.
+Καλώς ήρθατε σε αυτό το σε βάθος σεμινάριο σχετικά με τη χρήση των παραθύρων εργασιών επέκτασης Web σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Αν θελήσατε ποτέ να βελτιώσετε τα έγγραφά σας στο Word με διαδραστικά παράθυρα εργασιών, βρίσκεστε στο σωστό μέρος. Αυτός ο οδηγός θα σας καθοδηγήσει σε κάθε βήμα για να το πετύχετε απρόσκοπτα.
 
-Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε εγκαταστήσει και διαμορφώσει τη βιβλιοθήκη Aspose.Words για .NET στο έργο σας. Μπορείτε να βρείτε τη βιβλιοθήκη και τις οδηγίες εγκατάστασης στον ιστότοπο Aspose.
+## Προαπαιτούμενα
 
-## Βήμα 1: Ορίστε τον κατάλογο εγγράφων
+Πριν βουτήξουμε, ας βεβαιωθούμε ότι έχετε όλα όσα χρειάζεστε:
 
- Για να ξεκινήσετε, πρέπει να ορίσετε τη διαδρομή προς τον κατάλογο όπου θέλετε να αποθηκεύσετε το έγγραφο που δημιουργήθηκε. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` με την πραγματική διαδρομή προς τον κατάλογο των εγγράφων σας.
+-  Aspose.Words για .NET: Μπορείτε να το κατεβάσετε[εδώ](https://releases.aspose.com/words/net/).
+- .NET Development Environment: Visual Studio ή οποιοδήποτε άλλο IDE προτιμάτε.
+- Βασικές γνώσεις C#: Αυτό θα σας βοηθήσει να ακολουθήσετε μαζί με τα παραδείγματα κώδικα.
+-  Άδεια χρήσης για Aspose.Words: Μπορείτε να αγοράσετε ένα[εδώ](https://purchase.aspose.com/buy) ή πάρτε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
+
+## Εισαγωγή χώρων ονομάτων
+
+Πριν ξεκινήσουμε την κωδικοποίηση, βεβαιωθείτε ότι έχετε εισαγάγει τους ακόλουθους χώρους ονομάτων στο έργο σας:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.WebExtensions;
+```
+
+## Οδηγός βήμα προς βήμα
+
+Τώρα, ας αναλύσουμε τη διαδικασία σε βήματα που μπορείτε να ακολουθήσετε εύκολα.
+
+### Βήμα 1: Ρύθμιση του καταλόγου εγγράφων σας
+
+Πρώτα πράγματα πρώτα, πρέπει να ρυθμίσουμε τη διαδρομή προς τον κατάλογο των εγγράφων σας. Εδώ θα αποθηκευτεί το έγγραφο Word σας.
+
+```csharp
+// Η διαδρομή προς τον κατάλογο εγγράφων.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Βήμα 2: Δημιουργήστε και διαμορφώστε ένα παράθυρο εργασιών
+ Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` με την πραγματική διαδρομή προς το φάκελο των εγγράφων σας.
 
- Δημιουργούμε α`TaskPane` αντικείμενο και προσθέστε το στο έγγραφο`s `Συλλογή WebExtensionTaskPanes. Στη συνέχεια, διαμορφώνουμε τις ιδιότητες του παραθύρου εργασιών, όπως την κατάσταση σύνδεσης, την ορατότητα και το πλάτος του.
+### Βήμα 2: Δημιουργία νέου εγγράφου
+
+Στη συνέχεια, θα δημιουργήσουμε ένα νέο έγγραφο του Word χρησιμοποιώντας το Aspose.Words.
 
 ```csharp
 Document doc = new Document();
+```
 
+ Αυτή η γραμμή αρχικοποιεί μια νέα παρουσία του`Document` κλάση, η οποία αντιπροσωπεύει ένα έγγραφο του Word.
+
+### Βήμα 3: Προσθήκη παραθύρου εργασιών
+
+Τώρα, θα προσθέσουμε ένα παράθυρο εργασιών στο έγγραφό μας. Τα παράθυρα εργασιών είναι χρήσιμα για την παροχή πρόσθετων λειτουργιών και εργαλείων σε ένα έγγραφο του Word.
+
+```csharp
 TaskPane taskPane = new TaskPane();
 doc.WebExtensionTaskPanes.Add(taskPane);
+```
 
+ Εδώ, δημιουργούμε ένα νέο`TaskPane` αντικείμενο και προσθέστε το στο έγγραφο`WebExtensionTaskPanes` συλλογή.
+
+### Βήμα 4: Διαμόρφωση του παραθύρου εργασιών
+
+Για να κάνουμε ορατό το παράθυρο εργασιών μας και να ορίσουμε τις ιδιότητές του, χρησιμοποιούμε τον ακόλουθο κώδικα:
+
+```csharp
 taskPane.DockState = TaskPaneDockState.Right;
 taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-Επίσης, ορίσαμε τα διαπιστευτήρια της επέκτασης ιστού, συμπεριλαμβανομένου του αναγνωριστικού καταλόγου, της έκδοσης και του τύπου καταστήματος.
+- `DockState` ορίζει πού θα εμφανίζεται το παράθυρο εργασιών. Σε αυτή την περίπτωση, είναι στα δεξιά.
+- `IsVisible` διασφαλίζει ότι το παράθυρο εργασιών είναι ορατό.
+- `Width` ορίζει το πλάτος του παραθύρου εργασιών.
+
+### Βήμα 5: Ρύθμιση αναφοράς επέκτασης Ιστού
+
+Στη συνέχεια, ρυθμίζουμε την Αναφορά επέκτασης Ιστού που περιλαμβάνει το αναγνωριστικό, την έκδοση, τον τύπο καταστήματος και το χώρο αποθήκευσης.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -44,77 +90,78 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-Τέλος, προσθέτουμε ιδιότητες και δεσμεύσεις στην επέκταση ιστού.
+- `Id`είναι ένα μοναδικό αναγνωριστικό για την επέκταση ιστού.
+- `Version` καθορίζει την έκδοση της επέκτασης.
+- `StoreType` υποδεικνύει τον τύπο του καταστήματος (στην περίπτωση αυτή, OMEX).
+- `Store` καθορίζει τον κωδικό γλώσσας/πολιτισμού του καταστήματος.
+
+### Βήμα 6: Προσθήκη ιδιοτήτων στην επέκταση Ιστού
+
+Μπορείτε να προσθέσετε ιδιότητες στην επέκταση ιστού σας για να καθορίσετε τη συμπεριφορά ή το περιεχόμενό της.
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
-taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
-	WebExtensionBindingType.Text, "194740422"));
 ```
 
-## Βήμα 3: Αποθηκεύστε και φορτώστε το έγγραφο
+ Εδώ, προσθέτουμε μια ιδιότητα με το όνομα`mailchimpCampaign`.
 
-Αποθηκεύουμε το έγγραφο με τα παράθυρα εργασιών που έχουν ρυθμιστεί στον καθορισμένο κατάλογο.
+### Βήμα 7: Σύνδεση της επέκτασης Web
+
+Τέλος, προσθέτουμε συνδέσμους στην επέκταση ιστού μας. Οι δεσμεύσεις σάς επιτρέπουν να συνδέσετε την επέκταση με συγκεκριμένα μέρη του εγγράφου.
+
+```csharp
+taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545", WebExtensionBindingType.Text, "194740422"));
+```
+
+- `UnnamedBinding_0_1506535429545` είναι το όνομα του δέσιμου.
+- `WebExtensionBindingType.Text` υποδηλώνει ότι το δέσιμο είναι τύπου κειμένου.
+- `194740422` είναι το αναγνωριστικό του τμήματος του εγγράφου στο οποίο δεσμεύεται η επέκταση.
+
+### Βήμα 8: Αποθήκευση του εγγράφου
+
+Αφού ρυθμίσετε τα πάντα, αποθηκεύστε το έγγραφό σας.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## Βήμα 4: Εμφάνιση των πληροφοριών των παραθύρων εργασιών
+Αυτή η γραμμή αποθηκεύει το έγγραφο στον καθορισμένο κατάλογο με το συγκεκριμένο όνομα αρχείου.
 
-Στη συνέχεια, φορτώνουμε το έγγραφο και εμφανίζουμε τις πληροφορίες πηγής του παραθύρου εργασιών.
+### Βήμα 9: Φόρτωση και εμφάνιση πληροφοριών παραθύρου εργασιών
+
+Για να επαληθεύσουμε και να εμφανίσουμε τις πληροφορίες του παραθύρου εργασιών, φορτώνουμε το έγγραφο και επαναλαμβάνουμε τα παράθυρα εργασιών.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-Console.WriteLine("Task Panes Sources:\n");
 
-foreach(TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
+Console.WriteLine("Task panes sources:\n");
+
+foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
 {
-WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
-
-
-Console.WriteLine($"Vendor: \"{reference.Store}\", version: \"{reference.Version}\", catalog id: \"{reference.Id}\";");
+    WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
+    Console.WriteLine($"Provider: \"{reference.Store}\", version: \"{reference.Version}\", catalog identifier: \"{reference.Id}\";");
 }
 ```
 
-Αυτό είναι όλο ! Χρησιμοποιήσατε με επιτυχία τα παράθυρα εργασιών επέκτασης ιστού με το Aspose.Words για .NET.
+Αυτός ο κώδικας φορτώνει το έγγραφο και εκτυπώνει τον πάροχο, την έκδοση και το αναγνωριστικό καταλόγου για κάθε παράθυρο εργασιών στην κονσόλα.
 
-### Παράδειγμα πηγαίου κώδικα για τη χρήση πλαισίων εργασιών επέκτασης ιστού με το Aspose.Words για .NET
+## συμπέρασμα
 
+Και τέλος! Προσθέσατε και διαμορφώσατε με επιτυχία ένα παράθυρο εργασιών επέκτασης Web σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Αυτή η ισχυρή δυνατότητα μπορεί να βελτιώσει σημαντικά τα έγγραφά σας στο Word παρέχοντας πρόσθετες λειτουργίες απευθείας μέσα στο έγγραφο. 
 
-```csharp
+## Συχνές ερωτήσεις
 
-	// Η διαδρομή προς τον κατάλογο εγγράφων.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
+### Τι είναι ένα παράθυρο εργασιών στο Word;
+Το παράθυρο εργασιών είναι ένα στοιχείο διεπαφής που παρέχει πρόσθετα εργαλεία και λειτουργίες σε ένα έγγραφο του Word, βελτιώνοντας την αλληλεπίδραση και την παραγωγικότητα του χρήστη.
 
-	TaskPane taskPane = new TaskPane();
-	doc.WebExtensionTaskPanes.Add(taskPane);
+### Μπορώ να προσαρμόσω την εμφάνιση του παραθύρου εργασιών;
+ Ναι, μπορείτε να προσαρμόσετε την εμφάνιση του παραθύρου εργασιών ορίζοντας ιδιότητες όπως`DockState`, `IsVisible` , και`Width`.
 
-	taskPane.DockState = TaskPaneDockState.Right;
-	taskPane.IsVisible = true;
-	taskPane.Width = 300;
+### Τι είναι οι ιδιότητες επέκτασης ιστού;
+Οι ιδιότητες επέκτασης ιστού είναι προσαρμοσμένες ιδιότητες που μπορείτε να προσθέσετε σε μια επέκταση ιστού για να καθορίσετε τη συμπεριφορά ή το περιεχόμενό της.
 
-	taskPane.WebExtension.Reference.Id = "wa102923726";
-	taskPane.WebExtension.Reference.Version = "1.0.0.0";
-	taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
-	taskPane.WebExtension.Reference.Store = "th-TH";
-	taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
-	taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545",
-		WebExtensionBindingType.Text, "194740422"));
+### Πώς συνδέω μια επέκταση Ιστού σε ένα μέρος του εγγράφου;
+ Μπορείτε να συνδέσετε μια επέκταση Ιστού σε ένα μέρος του εγγράφου χρησιμοποιώντας το`WebExtensionBinding` κλάση, προσδιορίζοντας τον τύπο δέσμευσης και το αναγνωριστικό στόχου.
 
-	doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-	
-	
-	
-	doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
-	
-	Console.WriteLine("Task panes sources:\n");
-
-	foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
-	{
-		WebExtensionReference reference = taskPaneInfo.WebExtension.Reference;
-		Console.WriteLine($"Provider: \"{reference.Store}\", version: \"{reference.Version}\", catalog identifier: \"{reference.Id}\";");
-	}
- 
-```
+### Πού μπορώ να βρω περισσότερες πληροφορίες για το Aspose.Words για .NET;
+ Μπορείτε να βρείτε αναλυτική τεκμηρίωση[εδώ](https://reference.aspose.com/words/net/).

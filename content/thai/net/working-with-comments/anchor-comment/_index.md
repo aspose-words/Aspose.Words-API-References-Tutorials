@@ -2,25 +2,58 @@
 title: ความคิดเห็นของสมอ
 linktitle: ความคิดเห็นของสมอ
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธียึดคำตอบความคิดเห็นกับข้อความเฉพาะในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีเพิ่มความคิดเห็นของจุดยึดในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อการทำงานร่วมกันในเอกสารอย่างมีประสิทธิภาพ
 type: docs
 weight: 10
 url: /th/net/working-with-comments/anchor-comment/
 ---
+## การแนะนำ
 
-ในบทช่วยสอนที่ครอบคลุมนี้ คุณจะได้เรียนรู้วิธียึดคำตอบความคิดเห็นกับข้อความเฉพาะในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เราจะแนะนำคุณตลอดกระบวนการและจัดเตรียมข้อมูลโค้ด C# ที่จำเป็นให้กับคุณ เมื่อสิ้นสุดคู่มือนี้ คุณจะสามารถเชื่อมโยงความคิดเห็นกับข้อความเฉพาะในเอกสารของคุณได้
+คุณเคยพบว่าตัวเองอยู่ในสถานการณ์ที่คุณต้องเพิ่มความคิดเห็นในส่วนข้อความเฉพาะในเอกสาร Word โดยทางโปรแกรมหรือไม่? ลองนึกภาพว่าคุณกำลังทำงานร่วมกันในเอกสารกับทีมของคุณ และคุณต้องเน้นบางส่วนด้วยความคิดเห็นเพื่อให้ผู้อื่นตรวจสอบ ในบทช่วยสอนนี้ เราจะเจาะลึกเกี่ยวกับวิธีการแทรกความคิดเห็นของจุดยึดในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เราจะแบ่งกระบวนการออกเป็นขั้นตอนง่ายๆ เพื่อให้คุณปฏิบัติตามและนำไปใช้ในโครงการของคุณได้อย่างง่ายดาย
 
 ## ข้อกำหนดเบื้องต้น
-ก่อนที่เราจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
-- ติดตั้งไลบรารี Aspose.Words สำหรับ .NET บนระบบของคุณ
 
-## ขั้นตอนที่ 1: สร้างเอกสารใหม่และเพิ่มข้อความ
-ในการเริ่มต้น ให้สร้างเอกสารใหม่โดยใช้คลาส Document และเพิ่มข้อความที่ต้องการ:
+ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
+
+-  Aspose.Words สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งไลบรารี Aspose.Words แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/net/).
+- สภาพแวดล้อมการพัฒนา: สภาพแวดล้อมการพัฒนา .NET เช่น Visual Studio
+- ความเข้าใจพื้นฐานของ C#: ความคุ้นเคยกับการเขียนโปรแกรม C# จะช่วยให้คุณทำตามขั้นตอนต่างๆ ได้อย่างง่ายดาย
+
+ตอนนี้ เรามาเจาะลึกเกี่ยวกับเนมสเปซที่คุณต้องนำเข้าสำหรับงานนี้กัน
+
+## นำเข้าเนมสเปซ
+
+ขั้นแรก ตรวจสอบให้แน่ใจว่าคุณนำเข้าเนมสเปซที่จำเป็นในโปรเจ็กต์ของคุณ เนมสเปซที่จำเป็นมีดังนี้:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.CommentRangeStart;
+using Aspose.Words.CommentRangeEnd;
+```
 
+เมื่อไม่มีข้อกำหนดเบื้องต้นและเนมสเปซแล้ว เรามาต่อกันที่ส่วนที่สนุก: แจกแจงกระบวนการทีละขั้นตอน
+
+## ขั้นตอนที่ 1: สร้างเอกสารใหม่
+
+ขั้นแรก มาสร้างเอกสาร Word ใหม่กัน นี่จะทำหน้าที่เป็นผืนผ้าใบสำหรับความคิดเห็นของเรา
+
+```csharp
+// กำหนดไดเร็กทอรีที่จะบันทึกเอกสาร
+string dataDir = "YOUR DOCUMENT DIRECTORY";        
+
+// สร้างอินสแตนซ์ของคลาสเอกสาร
+Document doc = new Document();
+```
+
+ ในขั้นตอนนี้ เราจะเริ่มต้นใหม่`Document` วัตถุที่จะใช้เพื่อเพิ่มความคิดเห็นของเรา
+
+## ขั้นตอนที่ 2: เพิ่มข้อความลงในเอกสาร
+
+ต่อไป เราจะเพิ่มข้อความลงในเอกสาร ข้อความนี้จะเป็นเป้าหมายสำหรับความคิดเห็นของเรา
+
+```csharp
+// สร้างย่อหน้าแรกและดำเนินการ
 Paragraph para1 = new Paragraph(doc);
 Run run1 = new Run(doc, "Some ");
 Run run2 = new Run(doc, "text ");
@@ -28,6 +61,7 @@ para1.AppendChild(run1);
 para1.AppendChild(run2);
 doc.FirstSection.Body.AppendChild(para1);
 
+// สร้างย่อหน้าที่สองและดำเนินการ
 Paragraph para2 = new Paragraph(doc);
 Run run3 = new Run(doc, "is ");
 Run run4 = new Run(doc, "added ");
@@ -36,89 +70,68 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
-## ขั้นตอนที่ 2: สร้างความคิดเห็นและเพิ่มช่วงความคิดเห็น
-จากนั้น สร้างความคิดเห็นและเชื่อมโยงกับข้อความเฉพาะโดยใช้อ็อบเจ็กต์ CommentRangeStart และ CommentRangeEnd:
+ ที่นี่ เราสร้างสองย่อหน้าพร้อมข้อความบางส่วน ข้อความแต่ละชิ้นถูกห่อหุ้มด้วย`Run` วัตถุซึ่งจะถูกเพิ่มเข้าไปในย่อหน้า
+
+## ขั้นตอนที่ 3: สร้างความคิดเห็น
+
+ตอนนี้ เรามาสร้างความคิดเห็นที่เราจะแนบไปกับข้อความของเรากันดีกว่า
 
 ```csharp
+// สร้างความคิดเห็นใหม่
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+```
 
+ ในขั้นตอนนี้ เราจะสร้าง a`Comment` วัตถุและเพิ่มย่อหน้าและเรียกใช้ด้วยข้อความแสดงความคิดเห็น
+
+## ขั้นตอนที่ 4: กำหนดช่วงความคิดเห็น
+
+เพื่อยึดความคิดเห็นไว้ที่ข้อความใดข้อความหนึ่ง เราจำเป็นต้องกำหนดจุดเริ่มต้นและจุดสิ้นสุดของช่วงความคิดเห็น
+
+```csharp
+// กำหนด CommentRangeStart และ CommentRangeEnd
 CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
 CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
 
+// แทรก CommentRangeStart และ CommentRangeEnd ลงในเอกสาร
 run1.ParentNode.InsertAfter(commentRangeStart, run1);
 run3.ParentNode.InsertAfter(commentRangeEnd, run3);
+
+// เพิ่มความคิดเห็นลงในเอกสาร
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
-## ขั้นตอนที่ 3: บันทึกเอกสาร
-หลังจากยึดความคิดเห็นไว้ที่ข้อความเฉพาะแล้ว ให้บันทึกเอกสารลงในไฟล์โดยใช้วิธีบันทึกของคลาสเอกสาร:
+ ที่นี่เราสร้าง`CommentRangeStart`และ`CommentRangeEnd` วัตถุ เชื่อมโยงไปยังความคิดเห็นด้วย ID ของมัน จากนั้นเราจะแทรกช่วงเหล่านี้ลงในเอกสาร เพื่อยึดความคิดเห็นของเราไว้กับข้อความที่ระบุอย่างมีประสิทธิภาพ
+
+## ขั้นตอนที่ 5: บันทึกเอกสาร
+
+สุดท้ายนี้ ให้บันทึกเอกสารของเราลงในไดเร็กทอรีที่ระบุ
 
 ```csharp
+// บันทึกเอกสาร
 doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับการตอบกลับความคิดเห็น Anchor โดยใช้ Aspose.Words สำหรับ .NET
-นี่คือซอร์สโค้ดที่สมบูรณ์สำหรับการยึดคำตอบความคิดเห็นโดยใช้ Aspose.Words สำหรับ .NET:
+ขั้นตอนนี้จะบันทึกเอกสารที่มีความคิดเห็นแบบยึดไปยังไดเร็กทอรีที่คุณระบุ
 
-```csharp
-// สร้างอินสแตนซ์ของเอกสาร
-string dataDir = "YOUR DOCUMENT DIRECTORY";        
-Document doc = new Document();
+## บทสรุป
 
-// สร้างวัตถุ Run สามรายการ
-//สองรายการแรกเรียกใช้ข้อความ ในขณะที่รายการที่สามเรียกใช้ความคิดเห็น
+และคุณก็ได้แล้ว! คุณได้เรียนรู้วิธีเพิ่มความคิดเห็นของจุดยึดในส่วนข้อความเฉพาะในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เรียบร้อยแล้ว เทคนิคนี้มีประโยชน์อย่างเหลือเชื่อสำหรับการทำงานร่วมกันในเอกสาร ทำให้คุณสามารถเน้นและแสดงความคิดเห็นในส่วนใดส่วนหนึ่งของข้อความได้อย่างง่ายดาย ไม่ว่าคุณจะทำงานในโครงการร่วมกับทีมหรือตรวจทานเอกสาร วิธีการนี้จะเพิ่มประสิทธิภาพการทำงานและปรับปรุงขั้นตอนการทำงานของคุณ
 
-Paragraph para1 = new Paragraph(doc);
-Run run1 = new Run(doc, "Some ");
-Run run2 = new Run(doc, "text ");
-para1.AppendChild(run1);
-para1.AppendChild(run2);
-doc.FirstSection.Body.AppendChild(para1);
+## คำถามที่พบบ่อย
 
-Paragraph para2 = new Paragraph(doc);
-Run run3 = new Run(doc, "is ");
-Run run4 = new Run(doc, "added ");
-para2.AppendChild(run3);
-para2.AppendChild(run4);
-doc.FirstSection.Body.AppendChild(para2);
+### จุดประสงค์ของการใช้ความคิดเห็นของจุดยึดในเอกสาร Word คืออะไร?
+ความคิดเห็น Anchor ใช้เพื่อเน้นและแสดงความคิดเห็นในส่วนเฉพาะของข้อความ ทำให้ง่ายต่อการแสดงความคิดเห็นและทำงานร่วมกันในเอกสาร
 
-Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+### ฉันสามารถเพิ่มความคิดเห็นหลายรายการในส่วนข้อความเดียวกันได้หรือไม่
+ได้ คุณสามารถเพิ่มความคิดเห็นได้หลายรายการในส่วนข้อความเดียวกันโดยกำหนดช่วงความคิดเห็นหลายช่วง
 
-// แต่ละวัตถุ Run มีวัตถุ CommentRangeStart และ CommentRangeEnd ที่เกี่ยวข้องกัน
+### Aspose.Words สำหรับ .NET ใช้งานได้ฟรีหรือไม่
+Aspose.Words สำหรับ .NET ให้ทดลองใช้ฟรีซึ่งคุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/) - สำหรับคุณสมบัติทั้งหมด คุณสามารถซื้อใบอนุญาตได้[ที่นี่](https://purchase.aspose.com/buy).
 
-CommentRangeStart commentRangeStart = new CommentRangeStart(doc, comment.Id);
-CommentRangeEnd commentRangeEnd = new CommentRangeEnd(doc, comment.Id);
+### ฉันสามารถปรับแต่งลักษณะที่ปรากฏของความคิดเห็นได้หรือไม่
+แม้ว่า Aspose.Words จะเน้นไปที่ฟังก์ชันการทำงาน แต่โดยทั่วไปแล้ว การแสดงข้อคิดเห็นในเอกสาร Word จะถูกควบคุมโดย Word เอง
 
-run1.ParentNode.InsertAfter(commentRangeStart, run1);
-run3.ParentNode.InsertAfter(commentRangeEnd, run3);
-commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
-
-doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");	
-```
-
-### คำถามที่พบบ่อย
-
-#### ถาม: Anchor ความคิดเห็นใน Aspose.Words สำหรับ .NET คืออะไร
-
-ตอบ: ใน Aspose.Words สำหรับ .NET จุดยึดความคิดเห็นคือเครื่องหมายที่เชื่อมต่อความคิดเห็นไปยังตำแหน่งเฉพาะในเอกสาร
-
-#### ถาม: ฉันจะเพิ่มจุดยึดความคิดเห็นในเอกสาร Aspose.Words สำหรับ .NET ได้อย่างไร
-
-ตอบ: หากต้องการเพิ่มจุดยึดความคิดเห็นในเอกสาร Aspose.Words สำหรับ .NET ให้ทำตามขั้นตอนที่กล่าวถึงในบทช่วยสอน
-
-#### ถาม: ฉันจะเข้าถึงจุดยึดความคิดเห็นที่มีอยู่ใน Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: คุณสามารถเข้าถึงจุดยึดความคิดเห็นที่มีอยู่ใน Aspose.Words สำหรับ .NET ได้โดยใช้`Comment.Anchor` คุณสมบัติ.
-
-#### ถาม: ฉันสามารถสนับสนุนจุดยึดความคิดเห็นใน Aspose.Words สำหรับ .NET ได้หรือไม่
-
- ตอบ: ได้ คุณสามารถลบจุดยึดความคิดเห็นใน Aspose.Words สำหรับ .NET ได้โดยใช้`Comment.Remove` วิธี.
-
-#### ถาม: ฉันจะแก้ไขข้อความของความคิดเห็นที่เชื่อมโยงกับจุดยึดความคิดเห็นใน Aspose.Words สำหรับ .NET ได้อย่างไร
-
-ตอบ: หากต้องการแก้ไขข้อความของความคิดเห็นที่เชื่อมโยงกับจุดยึดความคิดเห็นใน Aspose.Words สำหรับ .NET คุณสามารถเข้าถึง`Comment.Text` ทรัพย์สินที่เกี่ยวข้อง`Comment` วัตถุและแก้ไขข้อความตามต้องการ
-
+### ฉันจะหาเอกสารเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+ คุณสามารถค้นหาเอกสารรายละเอียดได้[ที่นี่](https://reference.aspose.com/words/net/).

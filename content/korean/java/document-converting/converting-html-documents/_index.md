@@ -12,7 +12,7 @@ url: /ko/java/document-converting/converting-html-documents/
 
 Aspose.Words for Java는 개발자가 프로그래밍 방식으로 Word 문서를 작업할 수 있도록 하는 기능이 풍부한 라이브러리입니다. DOC, DOCX, RTF 및 HTML을 포함한 광범위한 문서 형식을 지원합니다. 이 가이드에서는 이 다목적 API를 사용하여 HTML 콘텐츠를 Word 문서로 변환하는 방법에 중점을 둘 것입니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
@@ -90,7 +90,7 @@ Aspose.Words for Java를 사용하여 HTML을 문서로 변환하는 과정은 �
 
 ### Aspose.Words를 사용하기 위한 라이선스 요구 사항이 있나요?
 
-예, Aspose.Words를 상업적으로 사용하려면 유효한 라이선스가 필요합니다. Aspose 웹사이트에서 라이선스를 얻을 수 있습니다.
+예, Aspose.Words를 상업적으로 사용하려면 유효한 라이센스가 필요합니다. Aspose 웹사이트에서 라이선스를 얻을 수 있습니다.
 
 ### 특정 요구 사항에 맞게 변환 프로세스를 사용자 정의할 수 있습니까?
 

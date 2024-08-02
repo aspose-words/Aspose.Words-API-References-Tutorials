@@ -204,7 +204,7 @@ Tuyệt đối! Aspose.Words cho phép bạn tự động hóa việc tạo tài
 
 ### Tôi có thể tìm thêm thông tin về các tính năng Python của Aspose.Words ở đâu?
 
-Để biết thông tin toàn diện về các tính năng của Aspose.Words Python, hãy tham khảo[tài liệu](https://reference.aspose.com/words/python-net/).
+ Để biết thông tin toàn diện về các tính năng của Aspose.Words Python, hãy tham khảo[tài liệu](https://reference.aspose.com/words/python-net/).
 
 ### Làm cách nào để lưu tài liệu của tôi ở định dạng PDF bằng Aspose.Words?
 

@@ -17,7 +17,7 @@ Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
 -  Aspose.Words untuk .NET Library: Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
-- Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan membantu Anda mengikuti contohnya.
+- Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan membantu Anda mengikuti contoh-contohnya.
 -  Lisensi Aspose: Sementara lisensi sementara dapat diperoleh[Di Sini](https://purchase.aspose.com/temporary-license/), menggunakan lisensi penuh akan memastikan akses ke semua fitur tanpa batasan.
 
 ## Impor Namespace

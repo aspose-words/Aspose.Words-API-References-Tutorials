@@ -81,7 +81,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET ile belge otomasyonu dünyasına ilk adımlarınızı attınız. Sıfırdan başladık, ortamımızı kurduk, yeni bir belge oluşturduk, biraz içerik ekledik ve kaydettik. Bu buzdağının sadece görünen kısmı. Aspose.Words ile belgeleri asla mümkün olmayacağını düşünmediğiniz şekillerde değiştirebilirsiniz; belgeleri birleştirmek, görseller eklemek, tablolar oluşturmak ve çok daha fazlası.
+Tebrikler! Aspose.Words for .NET ile belge otomasyonu dünyasına ilk adımlarınızı attınız. Sıfırdan başladık, ortamımızı kurduk, yeni bir belge oluşturduk, biraz içerik ekledik ve kaydettik. Bu buzdağının sadece görünen kısmı. Aspose.Words ile belgeleri asla mümkün olmayacağını düşünmediğiniz şekillerde değiştirebilirsiniz; belgeleri birleştirmek, görseller eklemek, tablolar oluşturmak ve çok daha fazlasını yapabilirsiniz.
 
 ## SSS'ler
 

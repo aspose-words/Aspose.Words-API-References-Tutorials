@@ -2,123 +2,125 @@
 title: Sisipkan Bidang TOA Tanpa Pembuat Dokumen
 linktitle: Sisipkan Bidang TOA Tanpa Pembuat Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk menyisipkan bidang TOA tanpa Pembuat Dokumen menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menyisipkan bidang TOA tanpa menggunakan pembuat dokumen di Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengelola kutipan resmi secara efisien.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/insert-toafield-without-document-builder/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini, yang menggunakan fitur "TOA Field Insertion" dari Aspose.Words untuk .NET. Ikuti setiap langkah dengan hati-hati untuk mendapatkan hasil yang diinginkan.
+Membuat bidang Tabel Otoritas (TOA) di dokumen Word bisa terasa seperti menyusun teka-teki yang rumit. Namun, dengan bantuan Aspose.Words untuk .NET, prosesnya menjadi lancar dan mudah. Dalam artikel ini, kami akan memandu Anda melalui langkah-langkah untuk menyisipkan bidang TOA tanpa menggunakan pembuat dokumen, sehingga memudahkan Anda mengelola kutipan dan referensi hukum dalam dokumen Word Anda.
 
-## Langkah 1: Pengaturan Direktori Dokumen
+## Prasyarat
 
-Dalam kode yang diberikan, Anda harus menentukan direktori dokumen Anda. Ganti nilai "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai ke direktori dokumen Anda.
+Sebelum masuk ke tutorial, mari kita bahas hal-hal penting yang Anda perlukan:
+
+-  Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: IDE yang kompatibel dengan .NET seperti Visual Studio.
+- Pengetahuan Dasar C#: Memahami sintaksis dan konsep dasar C# akan sangat membantu.
+- Contoh Dokumen Word: Buat atau siapkan contoh dokumen di mana Anda ingin menyisipkan bidang TOA.
+
+## Impor Namespace
+
+Untuk memulai, Anda harus mengimpor namespace yang diperlukan dari perpustakaan Aspose.Words. Pengaturan ini memastikan bahwa Anda memiliki akses ke semua kelas dan metode yang diperlukan untuk manipulasi dokumen.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Langkah 2: Membuat Dokumen dan Paragraf
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah diikuti. Kami akan memandu Anda melalui setiap tahap, menjelaskan fungsi setiap bagian kode dan bagaimana kontribusinya dalam pembuatan bidang TOA.
 
-Kita mulai dengan membuat dokumen baru dan menginisialisasi paragraf.
+## Langkah 1: Inisialisasi Dokumen
+
+ Pertama, Anda perlu membuat sebuah instance dari`Document` kelas. Objek ini mewakili dokumen Word yang sedang Anda kerjakan.
 
 ```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
-Paragraph para = new Paragraph(doc);
 ```
 
-## Langkah 3: Memasukkan bidang TA
+Kode ini menginisialisasi dokumen Word baru. Anda dapat menganggapnya seperti membuat kanvas kosong tempat Anda akan menambahkan konten.
 
-Kami menggunakan kelas FieldTA untuk menyisipkan bidang TA ke dalam paragraf.
+## Langkah 2: Buat dan Konfigurasikan Bidang TA
 
-```csharp
-FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
-fieldTA.EntryCategory = "1";
-fieldTA.LongCitation = "Value 0";
-```
-
-## Langkah 4: Menambahkan paragraf ke badan dokumen
-
-Kami menambahkan paragraf yang berisi bidang TA ke badan dokumen.
+Selanjutnya, kita akan menambahkan kolom TA (Table of Authorities). Bidang ini menandai entri yang akan muncul di TOA.
 
 ```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Langkah 5: Membuat paragraf untuk bidang TOA
-
-Kami membuat paragraf baru untuk bidang TOA.
-
-```csharp
-para = new Paragraph(doc);
-```
-
-## Langkah 6: Memasukkan kolom TOA
-
-Kami menggunakan kelas FieldToa untuk menyisipkan bidang TOA ke dalam paragraf.
-
-```csharp
-FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
-fieldToa.EntryCategory = "1";
-```
-
-## Langkah 7: Menambahkan paragraf ke badan dokumen
-
-Kami menambahkan paragraf yang berisi bidang TOA ke badan dokumen.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-## Langkah 8: Perbarui Bidang TOA
-
- Akhirnya, kami menelepon`Update()` metode untuk memperbarui bidang TOA.
-
-```csharp
-fieldToa.Update();
-```
-
-### Contoh kode sumber untuk penyisipan bidang TOA tanpa Pembuat Dokumen dengan Aspose.Words untuk .NET
-
-```csharp
-Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 
 // Kami ingin memasukkan bidang TA dan TOA seperti ini:
 // { TA \c 1 \l "Nilai 0" }
-// { TOA \c 1 }
-
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);
 fieldTA.EntryCategory = "1";
 fieldTA.LongCitation = "Value 0";
 
 doc.FirstSection.Body.AppendChild(para);
+```
 
+Berikut rinciannya:
+- Paragraph para = new Paragraph(doc);: Membuat paragraf baru di dalam dokumen.
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: Menambahkan bidang TA ke paragraf. Itu`FieldType.FieldTOAEntry` menentukan bahwa ini adalah bidang entri TOA.
+- fieldTA.EntryCategory = "1";: Mengatur kategori entri. Ini berguna untuk mengkategorikan berbagai jenis entri.
+- fieldTA.LongCitation = "Nilai 0";: Menentukan teks kutipan yang panjang. Ini adalah teks yang akan muncul di TOA.
+- doc.FirstSection.Body.AppendChild(para);: Menambahkan paragraf dengan bidang TA ke badan dokumen.
+
+## Langkah 3: Tambahkan Bidang TOA
+
+Sekarang, kita akan memasukkan bidang TOA sebenarnya yang mengkompilasi semua entri TA ke dalam tabel.
+
+```csharp
 para = new Paragraph(doc);
 
 FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);
 fieldToa.EntryCategory = "1";
 doc.FirstSection.Body.AppendChild(para);
-
-fieldToa.Update();
-
-doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-### FAQ
+Pada langkah ini:
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);: Menambahkan bidang TOA ke paragraf.
+- fieldToa.EntryCategory = "1";: Memfilter entri untuk hanya menyertakan entri yang ditandai dengan kategori "1".
 
-#### T: Bagaimana cara menyesuaikan tampilan bidang TOA yang disisipkan dalam dokumen Word dengan Aspose.Words untuk .NET?
+## Langkah 4: Perbarui Bidang TOA
 
- J: Anda dapat menyesuaikan tampilan bidang TOA yang disisipkan dengan menggunakan properti`FieldTOA` objek untuk menentukan opsi pemformatan.
+Setelah memasukkan kolom TOA, Anda perlu memperbaruinya untuk memastikan kolom tersebut mencerminkan entri terbaru.
 
-#### T: Dapatkah saya menambahkan beberapa bidang TOA dalam satu dokumen Word menggunakan Aspose.Words untuk .NET?
+```csharp
+fieldToa.Update();
+```
 
-J: Ya, Anda dapat menambahkan beberapa bidang TOA dalam satu dokumen Word menggunakan Aspose.Words untuk .NET. Ulangi saja langkah penyisipan untuk setiap bidang.
+Perintah ini menyegarkan bidang TOA, memastikan bahwa semua entri yang ditandai ditampilkan dengan benar di tabel.
 
-#### T: Bagaimana cara memeriksa apakah bidang TOA berhasil dimasukkan ke dalam dokumen Word dengan Aspose.Words untuk .NET?
+## Langkah 5: Simpan Dokumen
 
-J: Untuk memeriksa apakah kolom TOA berhasil dimasukkan, Anda dapat menelusuri konten dokumen dan mencari contoh kolom TOA.
+Terakhir, simpan dokumen Anda dengan kolom TOA yang baru ditambahkan.
 
-#### T: Apakah menyisipkan bidang TOA tanpa menggunakan DocumentBuilder memengaruhi pemformatan dokumen Word dengan Aspose.Words untuk .NET?
+```csharp
+doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
+```
 
-J: Memasukkan bidang TOA tanpa menggunakan DocumentBuilder tidak secara langsung mempengaruhi format dokumen Word. Namun, opsi pemformatan bidang TOA dapat memengaruhi pemformatan dokumen secara keseluruhan.
+ Baris kode ini menyimpan dokumen ke direktori yang ditentukan. Pastikan untuk mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan file Anda.
+
+## Kesimpulan
+
+Dan itu dia! Anda telah berhasil menambahkan bidang TOA ke dokumen Word tanpa menggunakan pembuat dokumen. Dengan mengikuti langkah-langkah ini, Anda dapat mengelola kutipan secara efisien dan membuat tabel otoritas yang komprehensif dalam dokumen hukum Anda. Aspose.Words untuk .NET menjadikan proses ini lancar dan efisien, memberi Anda alat untuk menangani tugas dokumen kompleks dengan mudah.
+
+## FAQ
+
+### Bisakah saya menambahkan beberapa kolom TA dengan kategori berbeda?
+ Ya, Anda dapat menambahkan beberapa kolom TA dengan kategori berbeda dengan mengaturnya`EntryCategory`properti yang sesuai.
+
+### Bagaimana cara menyesuaikan tampilan TOA?
+Anda dapat menyesuaikan tampilan TOA dengan memodifikasi properti bidang TOA, seperti format entri dan label kategori.
+
+### Apakah mungkin untuk memperbarui kolom TOA secara otomatis?
+ Meskipun Anda dapat memperbarui bidang TOA secara manual menggunakan`Update` metode, Aspose.Words saat ini tidak mendukung pembaruan otomatis pada perubahan dokumen.
+
+### Bisakah saya menambahkan bidang TA secara terprogram di bagian tertentu dokumen?
+Ya, Anda dapat menambahkan kolom TA di lokasi tertentu dengan memasukkannya ke dalam paragraf atau bagian yang diinginkan.
+
+### Bagaimana cara menangani beberapa bidang TOA dalam satu dokumen?
+ Anda dapat mengelola beberapa bidang TOA dengan menetapkan bidang yang berbeda`EntryCategory` nilai-nilai dan memastikan setiap bidang TOA memfilter entri berdasarkan kategorinya.

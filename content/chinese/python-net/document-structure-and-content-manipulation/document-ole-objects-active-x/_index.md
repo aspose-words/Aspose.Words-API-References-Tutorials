@@ -87,7 +87,7 @@ activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00
 - 兼容性：确保读者用来打开文档的软件支持 OLE 对象和 ActiveX 控件。
 - 测试：始终在各种平台上测试文档以确保一致的行为。
 
-## 解决常见问题
+## 常见问题故障排除
 
 ### 如何调整嵌入对象的大小？
 

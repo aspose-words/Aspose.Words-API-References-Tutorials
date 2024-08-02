@@ -9,7 +9,7 @@ url: /tr/net/clone-and-combine-documents/cloning-document/
 ---
 ## giriiş
 
-Selam! Hiç Aspose.Words for .NET kullanarak bir Word belgesini kopyalamaya ihtiyaç duyduğunuzu fark ettiniz mi? Göründüğü kadar korkutucu değil ve size adım adım rehberlik etmek için buradayım. İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu eğitim size süreç boyunca basit ve konuşmaya dayalı bir şekilde yol gösterecektir. Sonunda, klonlanmış bir Word belgeniz kullanıma hazır olacak. Öyleyse hemen dalalım!
+Selam! Hiç Aspose.Words for .NET kullanarak bir Word belgesini kopyalamaya ihtiyaç duyduğunuzu fark ettiniz mi? Göründüğü kadar korkutucu değil ve size adım adım rehberlik etmek için buradayım. İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu eğitim size süreç boyunca basit ve konuşmaya dayalı bir şekilde yol gösterecektir. Sonunda, klonlanmış bir Word belgeniz kullanıma hazır olacak. O halde hemen içeri dalalım!
 
 ## Önkoşullar
 

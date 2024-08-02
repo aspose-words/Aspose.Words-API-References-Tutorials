@@ -2,7 +2,7 @@
 title: توافق Ooxml مع ISO 29500_2008_Strict
 linktitle: توافق Ooxml مع ISO 29500_2008_Strict
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية التأكد من توافق OOXML مع ISO 29500_2008_Strict باستخدام Aspose.Words لـ .NET من خلال هذا الدليل التفصيلي خطوة بخطوة.
+description: تعرف على كيفية التأكد من توافق OOXML مع ISO 29500_2008_Strict باستخدام Aspose.Words لـ .NET مع هذا الدليل التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/

@@ -107,4 +107,4 @@ Ja, u kunt een gemeten licentie gebruiken voor elk .NET-project dat gebruikmaakt
 Als de sleutels onjuist zijn, wordt de licentie niet toegepast en genereert uw toepassing een uitzondering. Zorg ervoor dat u uitzonderingen afhandelt om een duidelijke foutmelding te krijgen.
 
 ### Hoe controleer ik of de meterlicentie correct wordt toegepast?
-U kunt de gemeten licentie verifiëren door een bewerking uit te voeren op een Word-document (zoals het afdrukken van het aantal pagina's) en ervoor te zorgen dat deze wordt uitgevoerd zonder licentiefouten.
+U kunt de gemeten licentie verifiëren door een bewerking op een Word-document uit te voeren (zoals het afdrukken van het aantal pagina's) en ervoor te zorgen dat deze wordt uitgevoerd zonder licentiefouten.

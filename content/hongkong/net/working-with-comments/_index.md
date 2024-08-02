@@ -13,7 +13,7 @@ url: /zh-hant/net/working-with-comments/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [新增評論](./add-comments/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中新增註解。 |
-| [錨評論](./anchor-comment/) | 了解如何使用 Aspose.Words for .NET 將評論回應錨定到 Word 文件中的特定文字。 |
-| [新增 刪除評論 回复](./add-remove-comment-reply/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中新增和刪除評論回應。 |
-| [評論已解決並回复](./comment-resolved-and-replies/) | 了解如何使用 Aspose.Words for .NET 解析 Word 文件中的註解及其回應。 |
+| [新增評論](./add-comments/) | 透過我們的指南了解如何使用 Aspose.Words for .NET 新增註解到您的 Word 文件。輕鬆增強您的文件協作流程。 |
+| [錨評論](./anchor-comment/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中新增錨註解。請按照我們的逐步指南進行高效率的文件協作。 |
+| [新增 刪除評論 回复](./add-remove-comment-reply/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中新增和刪除評論回應。透過此逐步指南增強您的文件協作。 |
+| [評論已解決並回复](./comment-resolved-and-replies/) | 使用 Aspose.Words for .NET 自動解決和回覆 Word 文件中的註解。包括逐步指南。 |

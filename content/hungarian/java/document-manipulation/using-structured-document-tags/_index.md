@@ -237,6 +237,6 @@ Igen, stílusokat alkalmazhat a tartalomvezérlőkre, hogy testreszabhassa megje
 
 Igen, az SDT-t egyéni XML-adatokhoz kötheti, lehetővé téve a dinamikus tartalomgenerálást és adatleképezést.
 
-### Mik azok az ismétlődő szakaszok az SDT-ben?
+### Mik azok az ismétlődő szakaszok az SDT-kben?
 
 Az SDT-k szakaszainak ismétlése lehetővé teszi, hogy dinamikus adatokat tartalmazó táblázatokat hozzon létre, ahol a sorok megismételhetők a leképezett XML-adatok alapján.

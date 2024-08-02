@@ -2,104 +2,150 @@
 title: Sisipkan Bidang Lanjutan Tanpa Pembuat Dokumen
 linktitle: Sisipkan Bidang Lanjutan Tanpa Pembuat Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan bidang lanjutan ke dalam dokumen Word Anda dengan Aspose.Words untuk .NET.
+description: Pelajari cara menyisipkan bidang lanjutan tanpa menggunakan DocumentBuilder di Aspose.Words untuk .NET. Ikuti panduan ini untuk meningkatkan keterampilan pemrosesan dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini, yang menggunakan fitur "Penyisipan Bidang Lanjutan tanpa DocumentBuilder" dari Aspose.Words untuk .NET. Pastikan untuk mengikuti setiap langkah dengan hati-hati untuk mendapatkan hasil yang diinginkan.
+Apakah Anda ingin meningkatkan manipulasi dokumen Word Anda menggunakan Aspose.Words untuk .NET? Nah, Anda berada di tempat yang tepat! Dalam tutorial ini, kami akan memandu Anda melalui proses memasukkan bidang lanjutan ke dalam dokumen Word tanpa menggunakan kelas DocumentBuilder. Di akhir panduan ini, Anda akan memiliki pemahaman yang kuat tentang cara mencapai hal ini menggunakan Aspose.Words untuk .NET. Jadi, mari selami dan jadikan pemrosesan dokumen Anda lebih canggih dan serbaguna!
 
-## Langkah 1: Pengaturan Direktori Dokumen
+## Prasyarat
 
-Dalam kode yang diberikan, Anda harus menentukan direktori dokumen Anda. Ganti nilai "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai ke direktori dokumen Anda.
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
+
+-  Aspose.Words untuk .NET Library: Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
+- Visual Studio: Versi terbaru apa pun bisa digunakan.
+- Pengetahuan Dasar C#: Tutorial ini mengasumsikan Anda memiliki pemahaman mendasar tentang pemrograman C#.
+-  Lisensi Aspose.Words: Dapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/) jika Anda tidak memilikinya.
+
+## Impor Namespace
+
+Sebelum mendalami kodenya, pastikan Anda telah mengimpor namespace yang diperlukan ke dalam proyek Anda:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+## Langkah 1: Siapkan Proyek Anda
+
+Hal pertama yang pertama, mari siapkan proyek Visual Studio kita.
+
+### Buat Proyek Baru
+
+1. Buka Visual Studio.
+2. Pilih Buat proyek baru.
+3. Pilih Aplikasi Konsol (.NET Core) dan klik Berikutnya.
+4. Beri nama proyek Anda dan klik Buat.
+
+### Instal Aspose.Words untuk .NET
+
+1. Klik kanan pada proyek Anda di Solution Explorer.
+2. Pilih Kelola Paket NuGet.
+3. Cari Aspose.Words dan instal versi terbaru.
+
+## Langkah 2: Inisialisasi Dokumen dan Paragraf
+
+Sekarang proyek kita sudah siap, kita perlu menginisialisasi dokumen baru dan paragraf di mana kita akan menyisipkan bidang muka.
+
+### Inisialisasi Dokumen
+
+1.  Di dalam kamu`Program.cs` file, mulailah dengan membuat dokumen baru:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Document doc = new Document();
 ```
 
-## Langkah 2: Membuat Dokumen dan Paragraf
+Ini menyiapkan dokumen baru yang kosong.
 
-Kita mulai dengan membuat dokumen baru dan mengambil paragraf pertama.
+### Tambahkan Paragraf
+
+2. Dapatkan paragraf pertama dalam dokumen:
 
 ```csharp
-Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Langkah 3: Memasukkan bidang lanjutan
+Ini memastikan kita memiliki paragraf untuk dikerjakan.
 
- Kami menggunakan`AppendField()` metode untuk menyisipkan bidang lanjutan ke dalam paragraf.
+## Langkah 3: Masukkan Bidang Lanjutan
+
+Sekarang, mari masukkan bidang muka ke dalam paragraf kita.
+
+### Buat Lapangan
+
+1. Tambahkan bidang muka ke paragraf:
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
 ```
 
-Kami kemudian mengkonfigurasi berbagai properti bidang lanjutan dengan menentukan nilai yang diinginkan.
+Ini menciptakan bidang muka baru di paragraf kita.
+
+### Tetapkan Properti Bidang
+
+2. Konfigurasikan properti bidang untuk menentukan offset dan posisi:
 
 ```csharp
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
+field.DownOffset = "10";
+field.LeftOffset = "10";
+field.RightOffset = "-3.3";
+field.UpOffset = "0";
 field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
+field.VerticalPosition = "100";
 ```
 
- Akhirnya, kami menelepon`Update()` metode untuk memperbarui bidang.
+Pengaturan ini menyesuaikan posisi teks relatif terhadap posisi normalnya.
+
+## Langkah 4: Perbarui dan Simpan Dokumen
+
+Dengan bidang yang dimasukkan dan dikonfigurasi, saatnya memperbarui dan menyimpan dokumen.
+
+### Perbarui Bidang
+
+1. Pastikan bidang diperbarui untuk mencerminkan perubahan kami:
 
 ```csharp
-field. Update();
+field.Update();
 ```
 
-### Contoh kode sumber untuk menyisipkan bidang lanjutan tanpa DocumentBuilder dengan Aspose.Words untuk .NET
+Hal ini memastikan semua properti bidang diterapkan dengan benar.
+
+### Simpan Dokumen
+
+2. Simpan dokumen Anda ke direktori yang ditentukan:
 
 ```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Pembuatan dokumen.
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-
-// Masukkan bidang lanjutan.
-FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);
-
-field. DownOffset = "10";
-field. LeftOffset = "10";
-field. RightOffset = "-3.3";
-field. UpOffset = "0";
-field.HorizontalPosition = "100";
-field. VerticalPosition = "100";
-
-field. Update();
-
 doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 ```
 
-Dalam contoh ini, kita membuat dokumen baru, menyisipkan kolom lanjutan tanpa menggunakan DocumentBuilder, mengonfigurasi berbagai properti kolom, dan menyimpan dokumen dengan nama file tertentu.
+Ini menyimpan dokumen dengan bidang muka disertakan.
 
-Ini menyimpulkan panduan kami tentang cara menggunakan fitur "Sisipkan Bidang Lanjutan Tanpa Pembuat Dokumen" dengan Aspose.Words untuk .NET.
+## Kesimpulan
 
-### FAQ
+Dan itu dia! Anda telah berhasil menyisipkan bidang lanjutan ke dalam dokumen Word tanpa menggunakan kelas DocumentBuilder. Dengan mengikuti langkah-langkah ini, Anda telah memanfaatkan kekuatan Aspose.Words untuk .NET untuk memanipulasi dokumen Word secara terprogram. Baik Anda mengotomatiskan pembuatan laporan atau membuat templat dokumen yang rumit, pengetahuan ini pasti akan berguna. Teruslah bereksperimen dan jelajahi kemampuan Aspose.Words untuk membawa pemrosesan dokumen Anda ke tingkat berikutnya!
 
-#### T: Apa yang dimaksud dengan bidang lanjutan di Aspose.Words?
+## FAQ
 
-J: Bidang Lanjutan di Aspose.Words adalah tipe bidang khusus yang memungkinkan Anda melakukan penghitungan, menyertakan kondisi, dan melakukan operasi kompleks dalam dokumen Word. Ini menawarkan fleksibilitas luar biasa untuk membuat bidang dinamis dan khusus.
+### Apa yang dimaksud dengan bidang lanjutan di Aspose.Words?
 
-#### T: Bagaimana cara menyisipkan bidang lanjutan di dokumen Word tanpa menggunakan Pembuat Dokumen di Aspose.Words?
+Bidang lanjutan di Aspose.Words memungkinkan Anda mengontrol posisi teks relatif terhadap posisi normalnya, memberikan kontrol tepat atas tata letak teks di dokumen Anda.
 
-J: Untuk menyisipkan bidang lanjutan di dokumen Word tanpa menggunakan Pembuat Dokumen di Aspose.Words, Anda dapat mengikuti langkah-langkah berikut:
+### Bisakah saya menggunakan DocumentBuilder dengan bidang lanjutan?
 
-1. Impor kelas Dokumen dan Bidang dari namespace Aspose.Words.Fields.
-2. Buat instance Dokumen dengan memuat dokumen Anda yang sudah ada.
-3. Gunakan metode InsertField untuk menyisipkan bidang lanjutan dengan menentukan kode bidang lanjutan.
-4. Simpan dokumennya.
+Ya, Anda dapat menggunakan DocumentBuilder untuk menyisipkan kolom lanjutan, namun tutorial ini menunjukkan cara melakukannya tanpa menggunakan DocumentBuilder untuk fleksibilitas dan kontrol yang lebih besar.
 
-#### Q: Bagaimana cara mendapatkan hasil field lanjutan di dokumen Word?
+### Di mana saya dapat menemukan lebih banyak contoh penggunaan Aspose.Words?
 
-A: Untuk mendapatkan hasil bidang lanjutan di dokumen Word, Anda bisa menggunakan properti Hasil yang tersedia di kelas Bidang. Properti ini mengembalikan hasil perhitungan bidang.
+ Anda dapat menemukan dokumentasi dan contoh yang komprehensif di[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/) halaman.
 
-#### T: Dapatkah saya mengubah rumus bidang lanjutan setelah menyisipkannya ke dalam dokumen Word?
+### Apakah Aspose.Words untuk .NET gratis untuk digunakan?
 
-A: Ya, Anda dapat mengedit rumus bidang lanjutan setelah memasukkannya ke dalam dokumen Word. Anda dapat melakukan ini dengan mengakses properti FieldCode kelas Field dan memperbarui rumus dengan memodifikasi teks rumus.
+ Aspose.Words untuk .NET menawarkan uji coba gratis, yang dapat Anda unduh[Di Sini](https://releases.aspose.com/). Untuk fungsionalitas penuh, Anda perlu membeli lisensi.
+
+### Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
+
+ Untuk dukungan, Anda dapat mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).

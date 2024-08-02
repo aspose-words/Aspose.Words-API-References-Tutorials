@@ -50,7 +50,7 @@ builder.PageSetup.Orientation = Orientation.Landscape;
 
 ## Paso 3: ajustar los márgenes de la página
 
-A continuación, ajustaremos el margen izquierdo de la página. Esto puede ser necesario para encuadernar o simplemente por motivos estéticos.
+A continuación, ajustaremos el margen izquierdo de la página. Esto puede ser necesario para encuadernar o simplemente por razones estéticas.
 
 ```csharp
 builder.PageSetup.LeftMargin = 50; // Establezca el margen izquierdo en 50 puntos.

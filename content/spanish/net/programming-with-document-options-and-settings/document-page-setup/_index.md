@@ -9,7 +9,7 @@ url: /es/net/programming-with-document-options-and-settings/document-page-setup/
 ---
 ## Introducción
 
-¿Alguna vez te has sentido desconcertado sobre cómo configurar el diseño de página de tu documento usando Aspose.Words para .NET? Ya sea que esté intentando estructurar un informe o dar formato a una pieza creativa, configurar correctamente la página del documento es esencial. En esta guía, lo guiaremos en cada paso para dominar la configuración de la página del documento. Créame, ¡es más fácil de lo que parece!
+¿Alguna vez te has sentido desconcertado sobre cómo configurar el diseño de página de tu documento usando Aspose.Words para .NET? Ya sea que esté intentando estructurar un informe o dar formato a una pieza creativa, configurar correctamente la página de su documento es esencial. En esta guía, lo guiaremos en cada paso para dominar la configuración de la página del documento. Créame, ¡es más fácil de lo que parece!
 
 ## Requisitos previos
 

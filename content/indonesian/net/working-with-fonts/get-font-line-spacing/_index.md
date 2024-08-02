@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/get-font-line-spacing/
 ---
-Dalam tutorial ini, kami akan memberi tahu Anda cara mendapatkan spasi baris font di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Spasi baris font menentukan spasi vertikal antar baris teks. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+Dalam tutorial ini, kami akan memberi tahu Anda cara mendapatkan spasi baris font di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Spasi baris font menentukan jarak vertikal antar baris teks. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
 
 ## Prasyarat
 Sebelum memulai, pastikan Anda memiliki item berikut:

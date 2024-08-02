@@ -2,7 +2,7 @@
 title: كشف الشكل الفني الذكي
 linktitle: كشف الشكل الفني الذكي
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية اكتشاف أشكال SmartArt في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة. مثالية لأتمتة سير عمل المستندات الخاصة بك.
+description: تعرف على كيفية اكتشاف أشكال SmartArt في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل الشامل. مثالية لأتمتة سير عمل المستندات الخاصة بك.
 type: docs
 weight: 10
 url: /ar/net/programming-with-shapes/detect-smart-art-shape/
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- في هذه الخطوة، نستخدم LINQ لتصفية وإحصاء الأشكال التي تحتوي على SmartArt. ال`GetChildNodes` الأسلوب يسترد جميع الأشكال، و`HasSmartArt`تتحقق الخاصية مما إذا كان الشكل يحتوي على SmartArt.
+ في هذه الخطوة، نستخدم LINQ لتصفية وإحصاء الأشكال التي تحتوي على SmartArt. ال`GetChildNodes` الأسلوب يسترد جميع الأشكال، و`HasSmartArt` تتحقق الخاصية مما إذا كان الشكل يحتوي على SmartArt.
 
 ## الخطوة 4: تشغيل الكود
 
@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## خاتمة
 
- وهناك لديك! لقد تعلمت بنجاح كيفية اكتشاف أشكال SmartArt في مستندات Word باستخدام Aspose.Words لـ .NET. يغطي هذا البرنامج التعليمي إعداد البيئة الخاصة بك، وتحميل المستندات، واكتشاف أشكال SmartArt، وتشغيل التعليمات البرمجية. يقدم Aspose.Words مجموعة واسعة من الميزات، لذا تأكد من استكشاف[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) لإطلاق العنان لإمكاناته الكاملة.
+وهناك لديك! لقد تعلمت بنجاح كيفية اكتشاف أشكال SmartArt في مستندات Word باستخدام Aspose.Words لـ .NET. يغطي هذا البرنامج التعليمي إعداد البيئة الخاصة بك، وتحميل المستندات، واكتشاف أشكال SmartArt، وتشغيل التعليمات البرمجية. يقدم Aspose.Words مجموعة واسعة من الميزات، لذا تأكد من استكشاف[وثائق واجهة برمجة التطبيقات](https://reference.aspose.com/words/net/) لإطلاق العنان لإمكاناته الكاملة.
 
 ## الأسئلة الشائعة
 

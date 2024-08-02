@@ -124,7 +124,7 @@ Aspose.Words for .NET 提供了`PdfSaveOptions`類，它允許您設定各種影
 是的，Aspose.Words 支援 PDF/A 合規性，讓您以符合存檔和長期儲存標準的格式儲存文件。
 
 ### JPEG 品質對 PDF 檔案大小有何影響？
-較高的 JPEG 品質設定會帶來更好的影像質量，但檔案大小也會增大，而較低的品質設定會減少檔案大小，但可能會影響影像清晰度。
+較高的 JPEG 品質設定會帶來更好的影像質量，但檔案大小會增大，而較低的品質設定會減少檔案大小，但可能會影響影像清晰度。
 
 ### 在哪裡可以找到有關 Aspose.Words for .NET 的更多資訊？
 您可以在其網站上探索有關 Aspose.Words for .NET 的更多信息[文件](https://reference.aspose.com/words/net/), [支援](https://forum.aspose.com/c/words/8)， 和[下載](https://releases.aspose.com/words/net/)頁。

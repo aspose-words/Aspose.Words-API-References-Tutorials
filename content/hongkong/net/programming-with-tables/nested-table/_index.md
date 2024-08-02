@@ -2,98 +2,140 @@
 title: 巢狀表
 linktitle: 巢狀表
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中建立巢狀表格。
+description: 透過我們的指南了解如何使用 Aspose.Words for .NET 在 Word 文件中建立巢狀表格。非常適合以程式設計方式產生複雜的文件佈局。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-tables/nested-table/
 ---
+## 介紹
 
-在本教學中，我們將學習如何使用 Aspose.Words for .NET 在 Word 文件中建立巢狀表格。我們將按照逐步指南來理解程式碼並實現此功能。在本教學結束時，您將能夠以程式設計方式在 Word 文件中建立巢狀表格。
+您是否曾經發現自己需要以程式設計方式在 Word 文件中建立嵌套表格？無論您是產生報告、發票或任何需要詳細表格結構的文檔，Aspose.Words for .NET 都可以成為您最好的朋友。在本教學中，我們將深入研究使用 Aspose.Words for .NET 在 Word 文件中建立巢狀表格的過程。我們將涵蓋從先決條件到最終程式碼實現的所有內容。那麼，就讓我們開始吧！
 
-## 第 1 步：項目設置
-1. 啟動 Visual Studio 並建立一個新的 C# 專案。
-2. 新增對 Aspose.Words for .NET 函式庫的參考。
+## 先決條件
 
-## 步驟2：建立文件並初始化文檔產生器
-若要使用文件和文件產生器啟動字處理，請依照下列步驟操作：
+在我們開始編寫程式碼之前，您需要做一些事情：
+
+-  Aspose.Words for .NET：您可以從以下位置下載它[這裡](https://releases.aspose.com/words/net/).
+- 開發環境：Visual Studio 或任何其他 C# IDE。
+- C# 基礎：了解 C# 文法和概念。
+
+在繼續之前請確保您已完成這些設定。
+
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這些命名空間將允許我們存取處理 Word 文件所需的類別和方法。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## 第 1 步：初始化 Document 和 DocumentBuilder
+
+首先，我們將建立一個新的 Word 文件並初始化`DocumentBuilder`對象，這將幫助我們建立表。
 
 ```csharp
 //文檔目錄的路徑
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-//文件創建
 Document doc = new Document();
-
-//初始化文檔產生器
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-請務必將「您的文件目錄」替換為文件目錄的實際路徑。
+## 第 2 步：創造外表
 
-## 第 3 步：建立巢狀表
-接下來，我們將透過將單元格插入外部表並在第一個單元格內建立新表來建立巢狀表。使用以下程式碼：
+現在，讓我們創造外表。我們將首先插入第一個單元格並向其中添加一些內容。
+
+### 步驟2.1：插入外部表的第一個儲存格
 
 ```csharp
-//插入外表的第一個單元格
-Cell cell = builder. InsertCell();
-builder.Writeln("Cell 1 of the outer table");
-
-//插入外表的第二個單元格
-builder. InsertCell();
-builder.Writeln("Cell 2 of the outer table");
-
-//外部表的終止
-builder. EndTable();
-
-//移至外表的第一個單元格
-builder.MoveTo(cell.FirstParagraph);
-
-//建構內表
-builder. InsertCell();
-builder.Writeln("Cell 1 of inner table");
-builder. InsertCell();
-builder.Writeln("Cell 2 of the inner table");
-
-//內表結束
-builder. EndTable();
+Cell cell = builder.InsertCell();
+builder.Writeln("Outer Table Cell 1");
 ```
 
-這裡我們使用文檔產生器將儲存格和內容插入到外表中。然後，我們將文件建構器遊標移至外部表格的第一個儲存格，並透過插入儲存格和內容在內部建立一個新表格。
+### 步驟2.2：插入外部表的第二個儲存格
 
-## 第四步：儲存修改後的文檔
-最後，我們需要使用巢狀表來儲存修改後的文件。使用以下程式碼：
+接下來，我們將插入第二個儲存格並添加一些內容。
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Outer Table Cell 2");
+```
+
+### 步驟2.3：結束外部表
+
+在此結束表格至關重要，因為它允許我們在第一個單元格內啟動嵌套表格。
+
+```csharp
+builder.EndTable();
+```
+
+## 第三步：建立內表
+
+要建立巢狀表，我們需要將遊標移到外部表的第一個儲存格，然後開始建立內部表。
+
+### 步驟 3.1：移至外部表的第一個儲存格
+
+```csharp
+builder.MoveTo(cell.FirstParagraph);
+```
+
+### 步驟3.2：插入內表的第一個儲存格
+
+現在，讓我們插入內表的第一個儲存格並添加一些內容。
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Inner Table Cell 1");
+```
+
+### 步驟3.3：插入內表的第二個儲存格
+
+最後，我們將插入第二個儲存格並添加一些內容。
+
+```csharp
+builder.InsertCell();
+builder.Writeln("Inner Table Cell 2");
+```
+
+### 步驟3.4：結束內表
+
+我們透過結束內表來結束。
+
+```csharp
+builder.EndTable();
+```
+
+## 步驟 4：儲存文檔
+
+最後一步是將文檔儲存到指定的目錄。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 ```
 
-請務必為輸出文件指定正確的路徑和檔案名稱。
-
-### 使用 Aspose.Words for .NET 的巢狀表格的範例原始程式碼 
-
-```csharp
-	//文檔目錄的路徑
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Cell cell = builder.InsertCell();
-	builder.Writeln("Outer Table Cell 1");
-	builder.InsertCell();
-	builder.Writeln("Outer Table Cell 2");
-	//此呼叫對於在第一個表中建立巢狀表非常重要。
-	//如果沒有此調用，下面插入的單元格將被附加到外表。
-	builder.EndTable();
-	//移至外表的第一個儲存格。
-	builder.MoveTo(cell.FirstParagraph);
-	//建構內表。
-	builder.InsertCell();
-	builder.Writeln("Inner Table Cell 1");
-	builder.InsertCell();
-	builder.Writeln("Inner Table Cell 2");
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
-```
-
 ## 結論
-在本教學中，我們學習如何使用 Aspose.Words for .NET 在 Word 文件中建立巢狀表格。透過遵循本逐步指南並實現提供的 C# 程式碼，您可以根據您的特定需求以程式設計方式在 Word 文件中建立巢狀表格。
+
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了巢狀表格。這個功能強大的庫使得以程式設計方式操作 Word 文件變得異常容易。無論您是產生複雜的報表還是簡單的表格，Aspose.Words for .NET 都能滿足您的需求。
+
+## 常見問題解答
+
+### 什麼是嵌套表？
+
+巢狀表是表中的表。它用於在文件中建立複雜的佈局，例如表單或詳細的資料演示。
+
+### 為什麼要使用 Aspose.Words for .NET？
+
+Aspose.Words for .NET 提供了一組強大的功能，以程式設計方式建立、修改和轉換 Word 文檔，使其成為開發人員的理想選擇。
+
+### 我可以添加更多層級的巢狀表嗎？
+
+是的，您可以透過重複結束目前表格並在儲存格內開始新表格的過程來建立多層巢狀表格。
+
+### Aspose.Words for .NET 是否與所有版本的 Word 相容？
+
+Aspose.Words for .NET 與多種 Word 文件格式相容，包括 DOC、DOCX、RTF 等。
+
+### 如何獲得 Aspose.Words for .NET 支援？
+
+您可以從以下方面獲得支持[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8).

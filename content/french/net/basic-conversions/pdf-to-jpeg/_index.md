@@ -9,7 +9,7 @@ url: /fr/net/basic-conversions/pdf-to-jpeg/
 ---
 ## Introduction
 
-Vous êtes-vous déjà retrouvé dans une situation où vous deviez convertir un fichier PDF en image JPEG ? Peut-être pour un partage plus facile, une intégration dans une présentation ou simplement pour un aperçu rapide ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous plongeons profondément dans le monde d'Aspose.Words for .NET pour vous montrer exactement comment enregistrer un PDF au format JPEG. Croyez-moi, c'est plus facile que vous ne le pensez. Alors, prenez une tasse de café, asseyez-vous et transformons ces PDF en superbes JPEG !
+Vous êtes-vous déjà retrouvé dans une situation où vous deviez convertir un fichier PDF en image JPEG ? Peut-être pour un partage plus facile, une intégration dans une présentation ou simplement pour un aperçu rapide ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous plongeons profondément dans le monde d'Aspose.Words for .NET pour vous montrer exactement comment enregistrer un PDF au format JPEG. Croyez-moi, c'est plus facile que vous ne le pensez. Alors, prenez une tasse de café, asseyez-vous et transformons ces PDF en superbes JPEG !
 
 ## Conditions préalables
 

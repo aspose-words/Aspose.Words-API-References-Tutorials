@@ -2,74 +2,101 @@
 title: フィールドレベルでロケールを指定する
 linktitle: フィールドレベルでロケールを指定する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書でフィールド レベルのローカリゼーションを指定する方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書内のフィールドのロケールを指定する方法を学びます。ガイドに従って、文書の書式設定を簡単にカスタマイズします。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/specify-locale-at-field-level/
 ---
+## 導入
 
-ここでは、Aspose.Words for .NET 機能を使用してフィールド レベルでローカリゼーションを指定できるようにする次の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。このコードを使用する前に、プロジェクトに Aspose.Words ライブラリが含まれていることを確認してください。
+Aspose.Words for .NET の世界に飛び込む準備はできていますか? 今日は、フィールド レベルでロケールを指定する方法を説明します。この便利な機能は、ドキュメントを特定の文化や地域の形式に準拠させる必要がある場合に特に役立ちます。ドキュメントにパスポートを与え、それが「訪問」している場所に基づいてどのように動作するかを伝えると考えてください。このチュートリアルの最後までに、Word ドキュメントのフィールドのロケール設定を簡単にカスタマイズできるようになります。さあ、始めましょう!
 
-## ステップ1: ドキュメントディレクトリのパスを設定する
+## 前提条件
+
+コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio またはその他の .NET 開発環境。
+3. C# の基礎知識: C# プログラミングの知識があれば、例を理解するのに役立ちます。
+4. Asposeライセンス: ライセンスをお持ちでない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/)すべての機能を試すことができます。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートしましょう。これらは Aspose.Words を操作するために不可欠です。
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+さて、前提条件が満たされたので、プロセスをステップごとに詳しく説明しましょう。各ステップには見出しと説明が付いており、簡単に理解できます。
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+まず、ドキュメントを保存するディレクトリを設定する必要があります。これは、演劇の舞台を設定するものと考えてください。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 ```
 
-編集したドキュメントが保存されるドキュメント ディレクトリへの正しいパスを必ず指定してください。
+交換する`"YOUR_DOCUMENT_DIRECTORY"`ディレクトリへの実際のパスを入力します。
 
-## ステップ2: ドキュメントジェネレータを作成する
+## ステップ2: DocumentBuilderを初期化する
+
+次に、新しいインスタンスを作成します`DocumentBuilder`これは、Word 文書を作成および編集するためのペンと紙のようなものです。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-ここでは、`DocumentBuilder`ドキュメントにフィールドを追加できるクラスです。
+## ステップ3: フィールドを挿入する
 
-## ステップ3: 特定の場所の日付フィールドを挿入する
+次に、ドキュメントにフィールドを挿入します。フィールドは、日付、ページ番号、計算などのデータを表示できる動的な要素です。
 
 ```csharp
-Field field = builder. InsertField(FieldType.FieldDate, true);
+Field field = builder.InsertField(FieldType.FieldDate, true);
+```
+
+## ステップ4: ロケールを指定する
+
+魔法の登場です！フィールドのロケールを設定します。ロケールID`1049`ロシア語に対応します。つまり、日付フィールドはロシア語の書式設定ルールに従います。
+
+```csharp
 field.LocaleId = 1049;
 ```
 
-ドキュメントジェネレータを使用して、次のタイプのフィールドを挿入します。`FieldType.FieldDate`文書に挿入します。`LocaleId`財産に`1049`、このフィールドにロシア語のローカライズを指定します。
+## ステップ5: ドキュメントを保存する
 
-## ステップ4: 変更したドキュメントを保存する
-
-```csharp
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
-```
-
-最後に、変更されたドキュメントを指定された場所に指定されたファイルに保存します。
-
-### Aspose.Words for .NET でフィールド レベルのローカリゼーションを指定するためのサンプル ソース コード
+最後に、ドキュメントを保存しましょう。このステップで、これまでに加えたすべての変更が確定します。
 
 ```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-
-DocumentBuilder builder = new DocumentBuilder();
-
-Field field = builder. InsertField(FieldType.FieldDate, true);
-field.LocaleId = 1049;
-
-builder.Document.Save(dataDir + "WorkingWithFields.SpecifylocaleAtFieldlevel.docx");
+builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.docx");
 ```
 
-これは、Aspose.Words for .NET を使用してドキュメント内のフィールド レベルでローカリゼーションを指定するためのサンプル ソース コードです。このコードを使用して、Word ドキュメントに特定の場所の日付フィールドを挿入できます。
+## 結論
 
-### よくある質問
+これで完了です。Aspose.Words for .NET を使用して、Word 文書内のフィールドのロケールを正常に指定できました。この強力な機能により、特定の文化や地域の要件に合わせて文書をカスタマイズできるため、アプリケーションの汎用性が向上し、ユーザー フレンドリになります。コーディングをお楽しみください。
 
-#### Q: Aspose.Words for .NET でフィールド レベルのロケールを指定するにはどうすればよいですか?
+## よくある質問
 
- A: Aspose.Words for .NETでフィールドレベルでロケールを指定するには、`FieldOptions`クラスとその`FieldLocale`プロパティを使用して、希望するロケールを設定します。たとえば、`FieldOptions.FieldLocale = new CultureInfo("fr-FR")`フランス語 (フランス) ロケールを指定します。
+### Aspose.Words のロケール ID とは何ですか?
 
-#### Q: Aspose.Words for .NET の各フィールドに異なるロケールを指定することは可能ですか?
+Aspose.Words のロケール ID は、特定の文化または地域を表す数値識別子であり、日付や数値などのデータの書式設定方法に影響します。
 
- A: はい、Aspose.Words for .NETの各フィールドに異なるロケールを指定することができます。`FieldOptions.FieldLocale`特定のフィールドを作成または更新する前に、プロパティを変更して別のロケールを割り当てます。
+### 同じドキュメント内の異なるフィールドに異なるロケールを指定できますか?
 
-#### Q: Aspose.Words for .NET のフィールドで現在使用されているロケールを取得するにはどうすればよいですか?
+はい、さまざまな書式設定要件を満たすために、同じドキュメント内の異なるフィールドに異なるロケールを指定できます。
 
- A: Aspose.Words for .NETのフィールドで現在使用されているロケールを取得するには、フィールドの`Field.LocaleId`プロパティ。これにより、フィールドに関連付けられたロケール識別子を取得できます。
+### ロケール ID のリストはどこにありますか?
+
+ロケール ID のリストは、Microsoft のドキュメントまたは Aspose.Words API ドキュメントで確認できます。
+
+### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
+
+ Aspose.Words for .NETはライセンスなしで評価モードで使用できますが、[ライセンス](https://purchase.aspose.com/buy)全機能をロック解除します。
+
+### Aspose.Words ライブラリを最新バージョンに更新するにはどうすればよいですか?
+
+ Aspose.Words for .NETの最新バージョンは、以下からダウンロードできます。[ダウンロードページ](https://releases.aspose.com/words/net/).

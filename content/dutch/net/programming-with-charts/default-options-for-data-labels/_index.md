@@ -75,7 +75,7 @@ Hier voegen we een cirkeldiagram in ons document in. De`InsertChart` methode ver
 Nu zullen we alle bestaande reeksen in het diagram wissen en onze aangepaste reeksen toevoegen. Deze reeks vertegenwoordigt onze gegevenspunten.
 
 ```csharp
-// Bestaande kaartreeksen wissen
+// Bestaande kaartseries wissen
 chart.Series.Clear();
 
 // Voeg nieuwe series toe aan het diagram

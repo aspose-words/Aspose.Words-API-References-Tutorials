@@ -2,7 +2,7 @@
 title: Intelligens művészi alakzat észlelése
 linktitle: Intelligens művészi alakzat észlelése
 second_title: Aspose.Words Document Processing API
-description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan észlelheti a SmartArt-alakzatokat Word-dokumentumokban az Aspose.Words for .NET használatával. Tökéletes a dokumentumok munkafolyamatának automatizálásához.
+description: Ebből az átfogó útmutatóból megtudhatja, hogyan észlelheti a SmartArt-alakzatokat Word-dokumentumokban az Aspose.Words for .NET használatával. Tökéletes a dokumentumok munkafolyamatának automatizálásához.
 type: docs
 weight: 10
 url: /hu/net/programming-with-shapes/detect-smart-art-shape/
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Ebben a lépésben a LINQ segítségével szűrjük és számoljuk a SmartArttal rendelkező alakzatokat. A`GetChildNodes` módszer minden alakzatot lekér, és a`HasSmartArt`tulajdonság ellenőrzi, hogy egy alakzat tartalmaz-e SmartArt-ot.
+ Ebben a lépésben a LINQ segítségével szűrjük és számoljuk a SmartArttal rendelkező alakzatokat. A`GetChildNodes` módszer minden alakzatot lekér, és a`HasSmartArt` tulajdonság ellenőrzi, hogy egy alakzat tartalmaz-e SmartArt-ot.
 
 ## 4. lépés: A kód futtatása
 
@@ -80,7 +80,7 @@ Cserélje le az „X”-et a SmartArt-alakzatok tényleges számával a dokument
 
 ## Következtetés
 
- És megvan! Sikeresen megtanulta, hogyan észlelheti a SmartArt-alakzatokat Word-dokumentumokban az Aspose.Words for .NET használatával. Ez az oktatóanyag a környezet beállítását, a dokumentumok betöltését, a SmartArt-alakzatok észlelését és a kód futtatását tárgyalta. Az Aspose.Words a funkciók széles skáláját kínálja, ezért feltétlenül fedezze fel a[API dokumentáció](https://reference.aspose.com/words/net/) hogy kibontakoztassa teljes potenciálját.
+És megvan! Sikeresen megtanulta, hogyan észlelheti a SmartArt-alakzatokat Word-dokumentumokban az Aspose.Words for .NET használatával. Ez az oktatóanyag a környezet beállítását, a dokumentumok betöltését, a SmartArt-alakzatok észlelését és a kód futtatását tárgyalta. Az Aspose.Words a funkciók széles skáláját kínálja, ezért feltétlenül fedezze fel a[API dokumentáció](https://reference.aspose.com/words/net/) hogy kibontakoztassa teljes potenciálját.
 
 ## GYIK
 

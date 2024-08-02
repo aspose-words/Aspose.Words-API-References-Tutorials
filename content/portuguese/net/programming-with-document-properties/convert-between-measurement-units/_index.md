@@ -16,7 +16,7 @@ Ei! Você é um desenvolvedor que trabalha com documentos do Word usando Aspose.
 Antes de começarmos, certifique-se de ter o seguinte:
 
 1.  Biblioteca Aspose.Words for .NET: se ainda não o fez, faça o download[aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 3. Conhecimento básico de C#: Compreender os conceitos básicos de C# o ajudará a acompanhar facilmente.
 4.  Licença Aspose: Opcional, mas recomendada para funcionalidade completa. Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 

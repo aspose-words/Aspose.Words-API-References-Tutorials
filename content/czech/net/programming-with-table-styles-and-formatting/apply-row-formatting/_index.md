@@ -2,111 +2,110 @@
 title: Použít formátování řádků
 linktitle: Použít formátování řádků
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Průvodce krok za krokem k použití formátování řádků na tabulku pomocí Aspose.Words for .NET.
+description: Naučte se, jak použít formátování řádků v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro podrobné pokyny.
 type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## Úvod
 
-tomto tutoriálu vás provedeme krok za krokem procesem použití formátování řádků na tabulku pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto kurzu budete mít jasnou představu o tom, jak formátovat řádky tabulky v dokumentech aplikace Word pomocí Aspose.Words for .NET.
+Pokud chcete své dokumenty Word okořenit nějakým efektním formátováním řádků, jste na správném místě! V tomto tutoriálu se ponoříme do toho, jak použít formátování řádků pomocí Aspose.Words for .NET. Každý krok rozebereme, abyste jej mohli snadno sledovat a aplikovat na své projekty.
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Toto je umístění, kam chcete uložit upravený dokument aplikace Word. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+## Předpoklady
+
+Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud nemáte, můžete si jej stáhnout z[Aspose stránku vydání](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Vývojové prostředí AC# jako Visual Studio.
+3. Základní znalost C#: Znalost programování v C# je nezbytná.
+4. Adresář dokumentů: Adresář, kam uložíte dokument.
+
+## Importovat jmenné prostory
+
+Pro začátek budete muset importovat potřebné jmenné prostory do vašeho projektu C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Krok 2: Vytvořte nový dokument a tvůrce dokumentů
- Dále musíte vytvořit novou instanci souboru`Document` třída a konstruktor dokumentu pro tento dokument.
+Nyní si projdeme proces krok za krokem.
+
+## Krok 1: Vytvořte nový dokument
+
+Nejprve musíme vytvořit nový dokument. Toto bude naše plátno, kam přidáme naši tabulku a použijeme formátování.
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Založte novou desku
- Chcete-li použít formátování řádků, musíme nejprve spustit novou tabulku pomocí`StartTable()` metoda konstruktoru dokumentu.
+## Krok 2: Vytvořte novou tabulku
+
+ Dále založíme novou tabulku pomocí`DocumentBuilder`objekt. Tady se děje kouzlo.
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## Krok 4: Vložte buňku a přejděte na formát řádku
-Nyní můžeme vložit buňku do tabulky a získat přístup k formátu řádku pro tuto buňku pomocí nástroje pro tvorbu dokumentů`InsertCell()`a`RowFormat` metody.
+## Krok 3: Definujte formátování řádků
+
+Zde definujeme formátování řádků. To zahrnuje nastavení výšky řádku a odsazení.
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## Krok 5: Nastavte výšku řádku
- Pro nastavení výšky řádku použijeme`Height`a`HeightRule` vlastnosti formátu řádků. V tomto příkladu nastavíme výšku řádku 100 bodů a použijeme`Exactly` pravidlo.
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## Krok 6: Definujte formátování tabulky
- Některé vlastnosti formátování lze nastavit na samotné tabulce a použijí se na všechny řádky tabulky. V tomto příkladu nastavíme vlastnosti okraje tabulky pomocí`LeftPadding`, `RightPadding`, `TopPadding`a`BottomPadding` vlastnosti.
+## Krok 4: Vložte obsah do buňky
+
+Pojďme vložit nějaký obsah do našeho krásně formátovaného řádku. Tento obsah ukáže, jak vypadá formátování.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## Krok 7: Přidejte obsah do řádku
-Teď můžeme
+## Krok 5: Ukončete řádek a tabulku
 
- Do řádku přidáme obsah pomocí metod konstruktoru dokumentu. V tomto příkladu používáme`Writeln()` metoda pro přidání textu na řádek.
+Nakonec musíme ukončit řádek a tabulku, abychom dokončili naši strukturu.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## Krok 8: Dokončete čáru a stůl
- Jakmile přidáme obsah do řádku, můžeme řádek ukončit pomocí`EndRow()` a poté tabulku ukončete pomocí`EndTable()` metoda.
+## Krok 6: Uložte dokument
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## Krok 9: Uložte upravený dokument
-Nakonec upravený dokument uložíme do souboru. Můžete zvolit vhodný název a umístění výstupního dokumentu.
+Nyní, když je náš stůl připraven, je čas dokument uložit. Zadejte cestu k adresáři dokumentů a uložte soubor.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-gratuluji! Nyní jste použili formátování řádků na tabulku pomocí Aspose.Words for .NET.
-
-### Ukázkový zdrojový kód pro použití formátování řádků pomocí Aspose.Words pro .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Tyto vlastnosti formátování jsou nastaveny v tabulce a jsou aplikovány na všechny řádky v tabulce.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak aplikovat formátování řádků na tabulku pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno integrovat tuto funkci do svých projektů C#. Manipulace s formátováním řádků tabulky je základním aspektem zpracování dokumentů a Aspose.Words nabízí výkonné a flexibilní API, jak toho dosáhnout. S těmito znalostmi můžete zlepšit vizuální prezentaci vašich dokumentů Word a splnit specifické požadavky.
+
+A tady to máte! Úspěšně jste použili formátování řádků na tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato jednoduchá, ale účinná technika může výrazně zlepšit čitelnost a estetiku vašich dokumentů.
+
+## FAQ
+
+### Mohu na jednotlivé řádky použít různé formátování?  
+ Ano, každý řádek můžete přizpůsobit individuálně nastavením různých vlastností`RowFormat`.
+
+### Jak upravím šířku sloupců?  
+ Šířku sloupců můžete nastavit pomocí`CellFormat.Width` vlastnictví.
+
+### Je možné sloučit buňky v Aspose.Words pro .NET?  
+ Ano, buňky můžete sloučit pomocí`CellMerge` majetek z`CellFormat`.
+
+### Mohu přidat ohraničení do řádků?  
+ Absolutně! Ohraničení řádků můžete přidat nastavením`Borders` majetek z`RowFormat`.
+
+### Jak použiji podmíněné formátování na řádky?  
+V kódu můžete použít podmíněnou logiku k použití jiného formátování na základě konkrétních podmínek.

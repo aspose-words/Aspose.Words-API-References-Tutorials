@@ -9,7 +9,7 @@ url: /es/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Introducción
 
-¡Hola, compañeros desarrolladores! ¿Alguna vez te has encontrado inmerso hasta las rodillas en un proyecto de documento de Word y has pensado: "Hombre, realmente necesito insertar una regla horizontal aquí para dividir las cosas"? ¿Bien adivina que? ¡Estás de suerte! En el tutorial de hoy, veremos cómo insertar una regla horizontal en un documento de Word usando Aspose.Words para .NET. Este no es un tutorial cualquiera: está repleto de pasos detallados, explicaciones interesantes y un toque de diversión. Así que abróchate el cinturón y prepárate para convertirte en un profesional en el manejo de Aspose.Words para .NET.
+¡Hola, compañeros desarrolladores! ¿Alguna vez te has encontrado inmerso hasta las rodillas en un proyecto de documento de Word y has pensado: "Hombre, realmente necesito insertar una regla horizontal aquí para dividir las cosas"? ¿Bien adivina que? ¡Estás de suerte! En el tutorial de hoy, profundizaremos en cómo insertar una regla horizontal en un documento de Word usando Aspose.Words para .NET. Este no es un tutorial cualquiera: está repleto de pasos detallados, explicaciones interesantes y un toque de diversión. Así que abróchate el cinturón y prepárate para convertirte en un profesional en el manejo de Aspose.Words para .NET.
 
 ## Requisitos previos
 
@@ -73,7 +73,7 @@ builder.Writeln("Insert a horizontal rule shape into the document.");
 
 ### Insertar la regla horizontal
 
-Ahora vayamos a la estrella del espectáculo: la regla horizontal. Esto se hace con una simple llamada a un método.
+Ahora, vayamos a la estrella del espectáculo: la regla horizontal. Esto se hace con una simple llamada a un método.
 
 ```csharp
 builder.InsertHorizontalRule();

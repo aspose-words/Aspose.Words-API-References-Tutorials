@@ -11,14 +11,14 @@ url: /ko/net/document-formatting/apply-borders-and-shading-to-paragraph/
 
 안녕하세요. 멋진 테두리와 음영을 사용하여 Word 문서를 돋보이게 만드는 방법이 궁금하신가요? 글쎄, 당신은 바로 이곳에 있어요! 오늘 우리는 문단을 멋지게 만들기 위해 .NET용 Aspose.Words의 세계로 뛰어들고 있습니다. 단 몇 줄의 코드만으로 문서가 전문 디자이너의 작업처럼 매끄럽게 보이는 것을 상상해 보십시오. 시작할 준비가 되셨나요? 갑시다!
 
-## 전제조건
+## 전제 조건
 
 소매를 걷어붙이고 코딩을 시작하기 전에 필요한 모든 것이 있는지 확인합시다. 빠른 체크리스트는 다음과 같습니다.
 
--  .NET용 Aspose.Words: 이 라이브러리를 설치해야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 이 라이브러리를 설치해야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio 또는 .NET을 지원하는 기타 IDE.
 - C#에 대한 기본 지식: 코드 조각을 이해하고 조정하는 데 충분합니다.
-- 유효한 라이센스:[임시면허](https://purchase.aspose.com/temporary-license/) 또는 에서 구입한 것[Aspose](https://purchase.aspose.com/buy).
+- 유효한 라이센스:[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는 에서 구입한 것[Aspose](https://purchase.aspose.com/buy).
 
 ## 네임스페이스 가져오기
 

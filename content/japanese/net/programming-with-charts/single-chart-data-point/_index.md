@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ2: グラフを挿入する
 
-次に、ドキュメントに折れ線グラフを挿入しましょう。これは、データ ポイントをカスタマイズするための遊び場になります。
+次に、ドキュメントに折れ線グラフを挿入します。これは、データ ポイントをカスタマイズするための遊び場になります。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -62,7 +62,7 @@ ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
 ```
 
-ここでは、グラフの最初の 2 つのシリーズにアクセスします。 
+ここでは、チャートの最初の 2 つのシリーズにアクセスします。 
 
 ## ステップ4: データポイントをカスタマイズする
 

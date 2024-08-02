@@ -53,7 +53,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mit Aspose.Words für 
 
 #### F: Wie kann ich Text in Aspose.Words fett machen?
 
- A: Um Text in Aspose.Words fett zu machen, können Sie den`Font.Bold` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf`true` um bestimmten Text fett zu machen. Sie können beispielsweise`run.Font.Bold=true` um den Text fett zu machen`Run` Objekt.
+ A: Um Text in Aspose.Words fett zu machen, können Sie den`Font.Bold` Eigentum der`Run` Objekt. Sie können diese Eigenschaft auf`true` um bestimmten Text fett zu machen. Sie können beispielsweise`run.Font.Bold=true` um den Text fett zu machen`Run` Objekt.
 
 #### F: Ist es möglich, mehrere Textteile im selben Absatz fett darzustellen?
 

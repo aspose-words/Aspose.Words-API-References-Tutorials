@@ -105,7 +105,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## Abschluss
 
-Und da haben Sie es! Mit nur wenigen Codezeilen haben wir einen einfachen Absatz in einen optisch ansprechenden Inhalt verwandelt. Aspose.Words für .NET macht es unglaublich einfach, Ihren Dokumenten eine professionell aussehende Formatierung hinzuzufügen. Egal, ob Sie einen Bericht, einen Brief oder ein beliebiges Dokument erstellen, diese Tricks helfen Ihnen, einen großartigen Eindruck zu machen. Probieren Sie es also aus und sehen Sie, wie Ihre Dokumente zum Leben erwachen!
+Und da haben Sie es! Mit nur wenigen Codezeilen haben wir einen einfachen Absatz in einen optisch ansprechenden Inhalt verwandelt. Aspose.Words für .NET macht es unglaublich einfach, Ihren Dokumenten eine professionell aussehende Formatierung hinzuzufügen. Egal, ob Sie einen Bericht, einen Brief oder ein beliebiges Dokument erstellen, diese Tricks helfen Ihnen, einen großartigen Eindruck zu machen. Probieren Sie es also aus und sehen Sie zu, wie Ihre Dokumente zum Leben erwachen!
 
 ## Häufig gestellte Fragen
 

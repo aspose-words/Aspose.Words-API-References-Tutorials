@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/loading-and-saving-html-documents/
 
 이 기사에서는 Aspose.Words for Java 라이브러리를 사용하여 HTML 문서를 로드하고 저장하는 방법을 살펴보겠습니다. Aspose.Words는 Word 문서 작업을 가능하게 하는 강력한 Java API이며 HTML을 포함한 다양한 문서 형식을 처리하기 위한 다양한 기능을 제공합니다. 소스 코드 예제를 통해 프로세스를 단계별로 안내해 드리겠습니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
@@ -87,12 +87,12 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### Aspose.Words는 어떤 다른 문서 형식을 지원합니까?
 
-Aspose.Words는 DOC, DOCX, RTF, HTML, PDF 등을 포함한 광범위한 문서 형식을 지원합니다. 이는 Java 애플리케이션에 대한 포괄적인 문서 처리 기능을 제공합니다.
+Aspose.Words는 DOC, DOCX, RTF, HTML, PDF 등을 포함한 광범위한 문서 형식을 지원합니다. 이는 Java 애플리케이션을 위한 포괄적인 문서 처리 기능을 제공합니다.
 
 ### Aspose.Words는 기업 수준의 문서 조작에 적합합니까?
 
 전적으로! Aspose.Words는 문서 자동화, 보고 및 문서 생성을 위해 전 세계 기업에서 사용하는 강력한 솔루션입니다. 대규모 응용 프로그램에서 문서를 관리하기 위한 광범위한 기능을 제공합니다.
 
-### Aspose.Words for Java에 대한 추가 문서와 예제는 어디에서 찾을 수 있나요?
+### Aspose.Words for Java에 대한 추가 문서와 예제는 어디서 찾을 수 있나요?
 
 Aspose.Words for Java 설명서 웹사이트에서 자세한 설명서, 코드 예제 및 튜토리얼을 찾을 수 있습니다.[Aspose.Words for Java 문서](https://reference.aspose.com/words/java/).

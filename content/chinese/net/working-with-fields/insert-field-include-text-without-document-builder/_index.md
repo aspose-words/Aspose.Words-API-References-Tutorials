@@ -2,99 +2,112 @@
 title: 插入字段包含文本（无需文档生成器）
 linktitle: 不使用文档生成器插入 FieldIncludeText
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入 FieldIncludeText 字段。
+description: 通过我们详细的分步指南了解如何在 Aspose.Words for .NET 中不使用 DocumentBuilder 插入 FieldIncludeText。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## 介绍
 
-以下是分步指南，用于解释下面的 C# 源代码，该代码使用了 Aspose.Words for .NET 的“插入 FieldIncludeText 字段”功能。请务必仔细遵循每个步骤以获得所需的结果。
+在文档自动化和操作领域，Aspose.Words for .NET 是一款功能强大的工具。今天，我们将深入介绍如何在不使用 DocumentBuilder 的情况下插入 FieldIncludeText 的详细指南。本教程将逐步指导您完成该过程，确保您了解代码的每个部分及其用途。
 
-## 步骤 1：文档目录设置
+## 先决条件
 
-在提供的代码中，您必须指定文档的目录。将值“YOUR DOCUMENT DIRECTORY”替换为您的文档目录的相应路径。
+在深入研究代码之前，让我们确保您拥有所需的一切：
+
+1.  Aspose.Words for .NET：请确保您安装了最新版本。您可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
+2. .NET 开发环境：任何与 .NET 兼容的 IDE，如 Visual Studio。
+3. C# 基础知识：熟悉 C# 编程将帮助您跟上。
+
+## 导入命名空间
+
+首先，我们需要导入必要的命名空间。这些命名空间提供对操作 Word 文档所需的类和方法的访问。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+现在，让我们将示例分解为多个步骤。每个步骤都将详细解释，以确保清晰度。
+
+## 步骤 1：设置目录路径
+
+第一步是定义文档目录的路径。这是存储和访问 Word 文档的地方。
+
+```csharp
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 步骤 2：创建文档和段落
 
-我们首先创建一个新文档并初始化一个段落。
+接下来，我们创建一个新文档，并在该文档中创建一个段落。此段落将包含 FieldIncludeText 字段。
 
 ```csharp
+//创建文档和段落。
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
 ## 步骤 3：插入 FieldIncludeText 字段
 
-我们使用`AppendField()`方法将 FieldIncludeText 字段插入到段落中。
+现在，我们将 FieldIncludeText 字段插入到段落中。此字段允许您包含来自另一个文档的文本。
 
 ```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
-```
-
-然后我们通过指定书签的名称和源文件的名称来配置 FieldIncludeText 字段的属性。
-
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
-
-接下来，我们将该段落添加到文档正文中。
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
-最后，我们称`Update()`方法来更新字段。
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### 使用 Aspose.Words for .NET 插入 FieldIncludeText 字段的源代码示例
-
-```csharp
-//文档目录的路径。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-//创建文档和段落。
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-
 //插入 FieldIncludeText 字段。
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## 步骤 4：设置字段属性
+
+我们需要指定 FieldIncludeText 字段的属性。这包括设置书签名称和源文档的完整路径。
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## 步骤 5：将段落附加到文档
+
+设置字段后，我们将段落附加到文档的第一部分正文。
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## 步骤 6：更新字段
+
+在保存文档之前，我们需要更新 FieldIncludeText 以确保它从源文档中提取正确的内容。
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## 步骤 7：保存文档
+
+最后我们将文档保存到指定的目录。
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-在这个例子中，我们创建了一个新文档，初始化了一个段落，插入了一个指定书签名称和源文件名的FieldIncludeTexten，并以指定的文件名保存了该文档。
+## 结论
 
-这就是我们关于使用 Aspose.Words for .NET 的“插入 FieldIncludeText”功能的指南。
+就这样！按照这些步骤，您可以轻松插入 FieldIncludeText，而无需使用 Aspose.Words for .NET 中的 DocumentBuilder。这种方法提供了一种将一个文档的内容包含到另一个文档中的简化方法，使您的文档自动化任务变得更加简单。
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：如何在 Aspose.Words for .NET 中指定文本包含字段的源文件？
+### 什么是 Aspose.Words for .NET？  
+Aspose.Words for .NET 是一个功能强大的库，用于在 .NET 应用程序中处理 Word 文档。它允许以编程方式创建、编辑和转换文档。
 
-答：要在 Aspose.Words for .NET 中指定文本包含字段的源文件，您可以使用`FieldIncludeText.SourceFullName`属性来设置源文件的完整路径。确保源文件可访问且包含您想要包含在文本包含字段中的内容。
+### 为什么要使用 FieldIncludeText？  
+FieldIncludeText 可用于动态地将一个文档的内容包含到另一个文档中，从而使文档更加模块化和易于维护。
 
-#### 问：我可以使用 Aspose.Words for .NET 在文本包含字段中包含来自宏的文本吗？
+### 我可以使用此方法来包含其他文件格式的文本吗？  
+FieldIncludeText 专门用于 Word 文档。对于其他格式，您可能需要 Aspose.Words 提供的不同方法或类。
 
-答：是的，您可以使用 Aspose.Words for .NET 在文本包含字段中包含来自宏的文本。您可以使用`FieldIncludeText.IncludeText`属性来指定应包含在字段中的宏的名称。
+### Aspose.Words for .NET 是否与 .NET Core 兼容？  
+是的，Aspose.Words for .NET 支持 .NET Framework、.NET Core 和 .NET 5/6。
 
-#### 问：在没有文档生成器的情况下插入文本包含字段是否会影响使用 Aspose.Words for .NET 的 Word 文档结构？
-
-答：不使用文档生成器插入文本包含字段不会直接影响 Word 文档的结构。但是，它会向文档内容添加新的字段元素。您可以根据需要通过添加、删除或修改现有元素来操纵文档结构。
-
-#### 问：我可以使用 Aspose.Words for .NET 自定义 Word 文档中文本包含字段的外观吗？
-
-答：文本包含字段不会直接自定义其在 Word 文档中的外观。但是，您可以使用 Aspose.Words for .NET 中提供的段落属性、字体属性和其他格式化对象来格式化包含的文本。
+### 如何免费试用 Aspose.Words for .NET？  
+您可以从[这里](https://releases.aspose.com/).

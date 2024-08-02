@@ -9,7 +9,7 @@ url: /it/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single
 ---
 ## introduzione
 
-Ti sei mai trovato intrappolato nella rete di regole CSS sparse ovunque durante la conversione di documenti Word in HTML? Non preoccuparti! Oggi ci immergeremo in una funzionalità interessante di Aspose.Words per .NET che ti consente di scrivere tutte le regole CSS in un unico file. Questo non solo riordina il tuo codice, ma ti rende anche la vita molto più semplice. Allacciate le cinture e iniziamo questo viaggio verso un output HTML più pulito ed efficiente!
+Ti sei mai trovato intrappolato nella rete di regole CSS sparse ovunque durante la conversione di documenti Word in HTML? Non preoccuparti! Oggi ci immergeremo in una funzionalità interessante di Aspose.Words per .NET che ti consente di scrivere tutte le regole CSS in un singolo file. Questo non solo riordina il tuo codice, ma ti rende anche la vita molto più semplice. Allacciate le cinture e iniziamo questo viaggio verso un output HTML più pulito ed efficiente!
 
 ## Prerequisiti
 

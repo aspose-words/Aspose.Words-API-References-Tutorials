@@ -65,7 +65,7 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
 
 Ας το αναλύσουμε αυτό:
 -  TiffCompression: Ορίζει τον τύπο συμπίεσης για την εικόνα TIFF. Εδώ, χρησιμοποιούμε`Ccitt3`.
--  ImageColorMode: Ρυθμίζει τη λειτουργία χρώματος. Το ρυθμίσαμε σε`Grayscale` για να δημιουργήσετε μια εικόνα σε κλίμακα του γκρι.
+-  ImageColorMode: Ρυθμίζει τη λειτουργία χρώματος. Το ρυθμίσαμε`Grayscale` για να δημιουργήσετε μια εικόνα σε κλίμακα του γκρι.
 -  TiffBinarizationMethod: Καθορίζει τη μέθοδο δυαδοποίησης. Χρησιμοποιούμε`FloydSteinbergDithering`.
 - ThresholdForFloydSteinbergDithering: Ορίζει το όριο για τη διχασμό Floyd-Steinberg. Μια υψηλότερη τιμή σημαίνει λιγότερα μαύρα pixel.
 

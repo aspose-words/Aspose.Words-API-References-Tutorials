@@ -20,7 +20,7 @@ url: /zh/java/document-printing/automating-document-printing/
 
 -  Aspose.Words for Java：您应该已经安装了 Aspose.Words for Java 库。您可以从以下网址下载[这里](https://releases.aspose.com/words/java/).
 
-- 示例文档：准备一份您想要自动执行打印过程的示例文档。
+- 示例文档：准备您想要自动执行打印过程的示例文档。
 
 ## 入门
 

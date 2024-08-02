@@ -9,7 +9,7 @@ url: /pt/net/join-and-append-documents/restart-page-numbering/
 ---
 ## Introdução
 
-Você já se esforçou para criar um documento sofisticado com seções distintas, cada uma começando com a página número 1? Imagine um relatório onde os capítulos começam do zero, ou uma proposta extensa com seções separadas para o resumo executivo e apêndices detalhados. Aspose.Words for .NET, uma poderosa biblioteca de processamento de documentos, permite que você consiga isso com sutileza. Este guia completo revelará os segredos para reiniciar a numeração de páginas, equipando você para criar documentos com aparência profissional sem esforço.
+Você já se esforçou para criar um documento sofisticado com seções distintas, cada uma começando com a página número 1? Imagine um relatório onde os capítulos começam do zero ou uma proposta extensa com seções separadas para o resumo executivo e apêndices detalhados. Aspose.Words for .NET, uma poderosa biblioteca de processamento de documentos, permite que você consiga isso com elegância. Este guia completo revelará os segredos para reiniciar a numeração de páginas, equipando você para criar documentos com aparência profissional sem esforço.
 
 ## Pré-requisitos
 

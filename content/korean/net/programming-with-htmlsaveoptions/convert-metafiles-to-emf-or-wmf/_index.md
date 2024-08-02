@@ -11,7 +11,7 @@ url: /ko/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 
 .NET용 Aspose.Words의 세계에 대한 또 다른 심층 분석에 오신 것을 환영합니다. 오늘 우리는 Word 문서에서 SVG 이미지를 EMF 또는 WMF 형식으로 변환하는 깔끔한 트릭을 다루고 있습니다. 다소 기술적으로 들릴 수도 있지만 걱정하지 마세요. 이 튜토리얼이 끝나면 당신은 전문가가 될 것입니다. 숙련된 개발자이든 .NET용 Aspose.Words를 이제 막 시작하든 이 가이드는 여러분이 알아야 할 모든 것을 단계별로 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 모든 것이 설정되었는지 확인하겠습니다. 필요한 것은 다음과 같습니다.
 

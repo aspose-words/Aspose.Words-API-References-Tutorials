@@ -10,7 +10,7 @@ url: /ko/net/working-with-fonts/check-drawingml-text-effect/
 
 이 튜토리얼에서는 .NET용 Aspose.Words Library를 사용하여 Word 문서에서 DrawingML 텍스트 효과를 확인하는 방법을 안내합니다. DrawingML 텍스트 효과를 확인하면 특정 효과가 텍스트 일부에 적용되는지 확인할 수 있습니다. .NET 프로젝트에서 코드를 이해하고 구현하는 데 도움이 되도록 단계별로 안내해 드리겠습니다.
 
-## 전제조건
+## 전제 조건
 시작하기 전에 다음 항목이 있는지 확인하세요.
 - C# 프로그래밍 언어에 대한 실무 지식
 - 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리

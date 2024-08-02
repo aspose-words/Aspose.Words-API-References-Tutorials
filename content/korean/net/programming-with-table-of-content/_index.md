@@ -16,5 +16,5 @@ url: /ko/net/programming-with-table-of-content/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Word 문서에서 Toc 스타일 변경](./change-style-of-toc-level/) | Aspose.Words for .NET을 사용하여 Word 문서의 목차 수준 스타일을 쉽게 변경하는 방법을 알아보세요. |
-| [Word 문서에서 Toc 탭 중지 변경](./change-toc-tab-stops/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 목차 탭을 변경하는 방법을 알아보세요. |
+| [Word 문서에서 Toc 스타일 변경](./change-style-of-toc-level/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 목차 스타일을 변경하는 방법을 알아보세요. TOC를 손쉽게 맞춤화하세요. |
+| [Word 문서에서 Toc 탭 중지 변경](./change-toc-tab-stops/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 목차 탭 정지를 변경하는 방법을 알아보세요. 이 단계별 가이드는 전문가 수준의 목차를 만드는 데 도움이 됩니다. |

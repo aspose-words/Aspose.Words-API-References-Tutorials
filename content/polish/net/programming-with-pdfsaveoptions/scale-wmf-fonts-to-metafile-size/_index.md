@@ -107,4 +107,4 @@ Tak, tę technikę można zastosować do dowolnego dokumentu programu Word zawie
 
 ### Gdzie mogę znaleźć więcej informacji o Aspose.Words?
 
- Możesz dowiedzieć się więcej o Aspose.Words w[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) . Aby zapoznać się z plikami do pobrania, wersjami próbnymi i wsparciem, odwiedź stronę[Strona pobierania Aspose.Words](https://releases.aspose.com/words/net/), [Kup Aspose.Words](https://purchase.aspose.com/buy), [Bezpłatny okres próbny](https://releases.aspose.com/), [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/) , I[Wsparcie](https://forum.aspose.com/c/words/8).
+ Możesz dowiedzieć się więcej o Aspose.Words w[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) . Aby zapoznać się z plikami do pobrania, wersjami próbnymi i pomocą techniczną, odwiedź stronę[Strona pobierania Aspose.Words](https://releases.aspose.com/words/net/), [Kup Aspose.Words](https://purchase.aspose.com/buy), [Bezpłatny okres próbny](https://releases.aspose.com/), [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/) , I[Wsparcie](https://forum.aspose.com/c/words/8).

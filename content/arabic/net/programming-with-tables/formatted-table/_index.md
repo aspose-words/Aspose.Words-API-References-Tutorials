@@ -2,42 +2,79 @@
 title: جدول منسق
 linktitle: جدول منسق
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إنشاء الجداول وتنسيقها في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل المفصل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-tables/formatted-table/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سوف نتعلم كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. سنتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. في نهاية هذا البرنامج التعليمي، ستتمكن من إنشاء جداول ذات تنسيق مخصص في مستندات Word الخاصة بك برمجيًا.
+قد يبدو إنشاء الجداول وتنسيقها في مستندات Word برمجيًا مهمة شاقة، ولكن مع Aspose.Words for .NET، تصبح هذه المهمة واضحة وسهلة الإدارة. في هذا البرنامج التعليمي، سنرشدك إلى كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words for .NET. سنغطي كل شيء بدءًا من إعداد بيئتك وحتى حفظ مستندك بجدول منسق بشكل جميل.
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وقم بإنشاء مشروع C# جديد.
-2. قم بإضافة مرجع إلى مكتبة Aspose.Words for .NET.
+## المتطلبات الأساسية
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستندات
-للبدء في إنشاء الجدول المنسق، نحتاج إلى إنشاء مستند جديد وتهيئة منشئ المستندات. اتبع الخطوات التالية:
+قبل الغوص في الكود، دعنا نتأكد من أن لديك كل ما تحتاجه:
+
+1. Aspose.Words لمكتبة .NET: قم بتنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: بيئة تطوير متكاملة (IDE) مثل Visual Studio.
+3. .NET Framework: تأكد من تثبيت .NET Framework على جهازك.
+
+## استيراد مساحات الأسماء
+
+قبل كتابة التعليمات البرمجية الفعلية، تحتاج إلى استيراد مساحات الأسماء الضرورية:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//قم بإنشاء المستند وتهيئة منشئ المستندات
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+أولاً، تحتاج إلى تحديد المسار الذي سيتم حفظ المستند فيه.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي الذي تريد حفظ المستند فيه.
+
+## الخطوة 2: تهيئة المستند و DocumentBuilder
+
+الآن، قم بتهيئة مستند جديد وكائن DocumentBuilder.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل مستنداتك" بالمسار الفعلي لدليل مستنداتك.
+ ال`DocumentBuilder` هي فئة مساعدة تعمل على تبسيط عملية إنشاء المستندات.
 
-## الخطوة 3: بناء الجدول المنسق
-بعد ذلك، سنقوم ببناء الجدول المنسق باستخدام الطرق التي يوفرها منشئ المستندات. استخدم الكود التالي:
+## الخطوة 3: ابدأ الجدول
+
+ بعد ذلك، ابدأ في إنشاء الجدول باستخدام`StartTable` طريقة.
 
 ```csharp
-// البدء في بناء المصفوفة
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// بناء صف رأس الجدول
-builder. InsertCell();
-table. LeftIndent = 20.0;
+يعد إدراج خلية ضروريًا لبدء الجدول.
+
+## الخطوة 4: تطبيق التنسيق على مستوى الجدول
+
+يمكنك تطبيق التنسيق الذي يؤثر على الجدول بأكمله. على سبيل المثال، تعيين المسافة البادئة اليسرى:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## الخطوة 5: تنسيق صف الرأس
+
+قم بتعيين الارتفاع والمحاذاة والخصائص الأخرى لصف الرأس.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+في هذه الخطوة، نجعل صف الرأس بارزًا عن طريق تعيين لون الخلفية وحجم الخط والمحاذاة.
+
+## الخطوة 6: أدخل خلايا رأس إضافية
+
+أدخل المزيد من الخلايا لصف الرأس:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## الخطوة 7: تنسيق صفوف الجسم
 
-// بناء جسم المصفوفة
+بعد إعداد الرأس، قم بتنسيق نص الجدول:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// نهاية بناء المصفوفة
-builder. EndTable();
 ```
 
- نستخدم هنا أداة إنشاء المستندات لبناء الجدول خطوة بخطوة. نبدأ بالدعوة`StartTable()` لتهيئة الجدول. ثم نستخدم`InsertCell()` لإدراج الخلايا و`Write()` لإضافة محتوى إلى كل خلية. نستخدم أيضًا خصائص تنسيق مختلفة لتحديد تنسيق صفوف الجدول وخلاياه ونصه.
+## الخطوة 8: إدراج صفوف الجسم
 
-## الخطوة 4: احفظ المستند
-وأخيرًا، نحتاج إلى حفظ المستند الذي يحتوي على الجدول المنسق. استخدم الكود التالي:
+أدخل صفوف النص مع المحتوى:
 
 ```csharp
-// احفظ المستند
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+كرر للصفوف الإضافية:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## الخطوة 9: احفظ المستند
+
+أخيرًا، احفظ المستند في الدليل المحدد:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
-
-### نموذج التعليمات البرمجية المصدر للجدول المنسق باستخدام Aspose.Words لـ .NET 
-
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// يجب تطبيق التنسيق على مستوى الجدول بعد وجود صف واحد على الأقل في الجدول.
-	table.LeftIndent = 20.0;
-	// قم بتعيين الارتفاع وحدد قاعدة الارتفاع لصف الرأس.
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// لا نحتاج إلى تحديد عرض هذه الخلية لأنها موروثة من الخلية السابقة.
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// إعادة تعيين الارتفاع وتحديد قاعدة ارتفاع مختلفة لنص الجدول.
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// إعادة ضبط تنسيق الخط.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+سيؤدي هذا إلى إنشاء مستند Word وحفظه بالجدول المنسق.
 
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية إنشاء جدول منسق في مستند Word باستخدام Aspose.Words لـ .NET. باتباع هذا الدليل التفصيلي وتنفيذ كود C# المقدم، يمكنك إنشاء جداول مخصصة بتنسيق محدد في مستندات Word الخاصة بك برمجيًا. تتيح لك هذه الميزة عرض بياناتك وتنظيمها بطريقة جذابة ومنظمة.
+
+وهناك لديك! باتباع هذه الخطوات، يمكنك إنشاء جدول منسق جيدًا في مستند Word باستخدام Aspose.Words for .NET. تعمل هذه المكتبة القوية على تسهيل التعامل مع مستندات Word برمجيًا، مما يوفر عليك الوقت والجهد.
+
+## الأسئلة الشائعة
+
+### ما هو Aspose.Words لـ .NET؟
+تعد Aspose.Words for .NET مكتبة قوية لإنشاء مستندات Word وتحريرها وتحويلها برمجيًا.
+
+### هل يمكنني استخدام ألوان مختلفة لصفوف مختلفة؟
+نعم، يمكنك تطبيق تنسيقات مختلفة، بما في ذلك الألوان، على صفوف أو خلايا مختلفة.
+
+### هل Aspose.Words لـ .NET مجاني؟
+ Aspose.Words for .NET هي مكتبة مدفوعة الأجر، ولكن يمكنك الحصول على[تجربة مجانية](https://releases.aspose.com/).
+
+### كيف يمكنني الحصول على الدعم لـ Aspose.Words لـ .NET؟
+ يمكنك الحصول على الدعم من[Aspose منتديات المجتمع](https://forum.aspose.com/c/words/8).
+
+### هل يمكنني إنشاء أنواع أخرى من المستندات باستخدام Aspose.Words لـ .NET؟
+نعم، يدعم Aspose.Words for .NET تنسيقات المستندات المختلفة، بما في ذلك PDF وHTML وTXT.

@@ -16,8 +16,8 @@ Bu eğitimleri takip ederek Aspose.Words for .NET'i Word belgelerinizdeki VBA ma
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Vba Projesi Oluştur](./create-vba-project/) | Bu eğitimde Aspose.Words for .NET ile bir Word belgesinde VBA projesinin nasıl oluşturulacağını öğrenin. |
-| [Vba Makrolarını Okuyun](./read-vba-macros/) | Bu eğitimde Aspose.Words for .NET ile bir Word belgesinden VBA makrolarını nasıl okuyacağınızı öğrenin. |
-| [Vba Makrolarını Değiştirin](./modify-vba-macros/) | Bu eğitimde, Aspose.Words for .NET ile bir Word belgesinin VBA makrolarını nasıl düzenleyeceğinizi öğrenin. |
-| [Vba Projesini Klonla](./clone-vba-project/) | Bu eğitimde Aspose.Words for .NET ile bir Word belgesinden bir VBA projesinin nasıl kopyalanacağını öğrenin.|
-| [Vba Modülünü Klonla](./clone-vba-module/) | Bu eğitimde Aspose.Words for .NET ile bir Word belgesinden VBA modülünün nasıl kopyalanacağını öğrenin. |
+| [Vba Projesi Oluştur](./create-vba-project/) | Aspose.Words for .NET'i kullanarak Word belgelerinde VBA projeleri oluşturmayı öğrenin. Kusursuz belge otomasyonu için adım adım kılavuzumuzu takip edin! |
+| [Vba Makrolarını Okuyun](./read-vba-macros/) | Aspose.Words for .NET kullanarak Word belgelerinden VBA makrolarını nasıl okuyacağınızı öğrenin. Sorunsuz belge otomasyonu için ayrıntılı kılavuzumuzu takip edin! |
+| [Vba Makrolarını Değiştirin](./modify-vba-macros/) | Aspose.Words for .NET kullanarak Word belgelerindeki VBA makrolarını nasıl değiştireceğinizi öğrenin. Sorunsuz belge otomasyonu için ayrıntılı, adım adım kılavuzumuzu izleyin! |
+| [Vba Projesini Klonla](./clone-vba-project/) | Aspose.Words for .NET kullanarak VBA projelerini Word belgelerinde nasıl kopyalayacağınızı öğrenin. Sorunsuz belge işleme için adım adım kılavuzumuzu izleyin!|
+| [Vba Modülünü Klonla](./clone-vba-module/) | Aspose.Words for .NET ile Word belgelerindeki VBA modüllerini zahmetsizce kopyalayın. Sorunsuz belge işleme için adım adım kılavuzumuzu izleyin! |

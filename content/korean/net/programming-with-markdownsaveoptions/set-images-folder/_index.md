@@ -11,7 +11,7 @@ url: /ko/net/programming-with-markdownsaveoptions/set-images-folder/
 
 테이블과 콘텐츠가 완벽하게 정렬되도록 하면서 Word 문서를 Markdown 형식으로 내보내고 싶었던 적이 있습니까? Aspose.Words for .NET은 이 작업에 적합한 솔루션입니다. 이 글에서는 Aspose.Words를 설정하고, 문서를 준비하고, 적절한 표 내용 정렬을 통해 Markdown으로 내보내는 과정을 안내합니다. 우리는 쉽게 따라하고 이해할 수 있도록 각 단계를 세분화하겠습니다. 이제 Word 문서를 아름답게 정렬된 Markdown 파일로 변환해 보겠습니다!
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
@@ -40,7 +40,7 @@ Visual Studio를 열고 새 콘솔 애플리케이션 프로젝트를 만듭니�
 
 ### 1.2 Aspose.Words 참조 추가
 
- Aspose.Words를 프로젝트에 추가하려면 다음 중 하나에서 DLL을 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/) 수동으로 추가하거나 NuGet 패키지 관리자를 사용하세요.
+ Aspose.Words를 프로젝트에 추가하려면 다음 중 하나에서 DLL을 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/) 수동으로 추가하거나 NuGet 패키지 관리자를 사용하세요.
 
 ```bash
 Install-Package Aspose.Words
@@ -112,4 +112,4 @@ using (MemoryStream stream = new MemoryStream())
 
 ### Aspose.Words에 대한 추가 예제와 문서는 어디에서 찾을 수 있나요?
 
- 자세한 문서와 예제는 다음에서 찾을 수 있습니다.[Aspose 웹 사이트](https://reference.aspose.com/words/net/).
+ 자세한 문서와 예제는 다음에서 찾을 수 있습니다.[Aspose 웹사이트](https://reference.aspose.com/words/net/).

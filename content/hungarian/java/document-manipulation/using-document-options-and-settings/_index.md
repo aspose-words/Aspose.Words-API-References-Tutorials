@@ -72,7 +72,7 @@ public void cleanupDuplicateStyle() throws Exception
 
 Az ismétlődő stílusok zavart és következetlenséget okozhatnak a dokumentumokban. Az Aspose.Words for Java segítségével könnyedén eltávolíthatja az ismétlődő stílusokat, megőrizve a dokumentumok tisztaságát és koherenciáját.
 
-## A dokumentummegtekintési beállítások testreszabása
+## Dokumentummegtekintési beállítások testreszabása
 
 ```java
 @Test

@@ -14,7 +14,7 @@ url: /zh-hant/java/document-manipulation/using-styles-and-themes/
 
 ## 檢索樣式
 
-若要從文件中擷取樣式，您可以使用以下 Java 程式碼片段：
+若要從文件中檢索樣式，您可以使用以下 Java 程式碼片段：
 
 ```java
 Document doc = new Document();

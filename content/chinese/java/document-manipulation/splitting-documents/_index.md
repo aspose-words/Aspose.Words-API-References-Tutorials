@@ -112,4 +112,4 @@ Aspose.Words for Java 提供广泛的功能，包括文档创建、编辑、转�
 
 ### 我可以在哪里访问 Aspose.Words for Java 并开始使用它？
 
-您可以从 Aspose 网站访问和下载 Aspose.Words for Java。立即访问[Aspose.Words for Java 下载](https://releases.aspose.com/words/java/).
+您可以从 Aspose 网站访问并下载 Aspose.Words for Java。立即访问[Aspose.Words for Java 下载](https://releases.aspose.com/words/java/).

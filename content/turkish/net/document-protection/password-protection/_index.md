@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 Artık projemiz kurulduğuna göre koruyabileceğimiz bir Word belgesi oluşturalım.
 
- senin`Program.cs` dosyasının yeni bir örneğini başlatın`Document` sınıf. Bu sınıf, üzerinde çalışacağınız Word belgesini temsil eder.
+ senin içinde`Program.cs` dosyasının yeni bir örneğini başlatın`Document` sınıf. Bu sınıf, üzerinde çalışacağınız Word belgesini temsil eder.
 
 ```csharp
 // Belgeler dizininin yolu.

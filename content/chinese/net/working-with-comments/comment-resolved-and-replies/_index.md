@@ -2,34 +2,70 @@
 title: 评论已解决并回复
 linktitle: 评论已解决并回复
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 解决 Word 文档中的评论及其回复。
+description: 使用 Aspose.Words for .NET 自动解析和回复 Word 文档中的注释。 包含分步指南。
 type: docs
 weight: 10
 url: /zh/net/working-with-comments/comment-resolved-and-replies/
 ---
+## 介绍
 
-在本综合教程中，您将学习如何使用 Aspose.Words for .NET 解决 Word 文档中的评论及其回复。我们将指导您完成整个过程并为您提供必要的 C# 代码片段。在本指南结束时，您将能够管理评论解析并更新评论及其回复的状态。
+如果您正在使用 Word 文档，那么您可能已经处理过评论。它们对于协作非常有用，但管理它们可能很麻烦。使用 Aspose.Words for .NET，您可以自动完成解决和回复评论的过程。本指南将引导您完成执行此操作的步骤。
 
 ## 先决条件
-在开始之前，请确保您满足以下先决条件：
-- 您的系统上安装了 Aspose.Words for .NET 库。
 
-## 步骤 1：加载文档并访问注释
-首先，使用 Document 类加载包含评论的文档并访问评论集合：
+在深入研究之前，请确保您已准备好以下事项：
+
+1.  Aspose.Words for .NET：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：使用.NET Framework 设置。
+3. C# 基础知识：熟悉语法和概念。
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这确保我们需要的所有类和方法都随时可用。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Comments;
+```
+
+让我们将这个过程分解成简单易懂的步骤。每个步骤都将帮助您理解代码及其功能。
+
+## 步骤 1：加载文档
+
+首先，加载包含注释的 Word 文档。使用`Document`为此课程。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
+```
 
+这行代码初始化了一个新的`Document`对象与您的 Word 文档的路径。
+
+## 第 2 步：检索评论
+
+接下来，我们需要获取文档中的所有评论。我们将使用`GetChildNodes`方法来检索`Comment`节点。
+
+```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 ```
 
-## 第 2 步：解决评论及其回复
-接下来，遍历评论及其回复以将其标记为已解决：
+此代码检索文档中的所有评论并将它们存储在`NodeCollection`.
+
+## 步骤 3：访问家长评论
+
+在我们的示例中，我们将重点关注集合中的第一个评论。这将是我们的父评论。
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
+```
 
+在这里，我们将集合中的第一个节点转换为`Comment`目的。
+
+## 步骤 4：循环回复
+
+现在，让我们循环遍历对父评论的回复。我们将使用`foreach`循环迭代每个答复。
+
+```csharp
 foreach (Comment childComment in parentComment.Replies)
 {
     Console.WriteLine(childComment.Ancestor.Id);
@@ -39,61 +75,35 @@ foreach (Comment childComment in parentComment.Replies)
 }
 ```
 
-在上面的代码中，我们访问父评论并遍历其回复。我们可以检索父评论 ID 及其解决状态。然后，我们更新每个评论回复的“完成”标记以指示已解决。
+在这个循环中，我们打印祖先评论的 ID 及其状态（是否已完成）。然后，我们将每个回复标记为已完成。
 
-## 步骤 3：保存文档
-解析注释并更新其状态后，使用 Document 类的 Save 方法将修改后的文档保存到文件中：
+## 步骤 5：保存文档
+
+最后，将修改后的文档保存到您的目录中。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 ```
 
-### 使用 Aspose.Words for .NET 解析评论及其回复的示例源代码
-以下是使用 Aspose.Words for .NET 解析评论及其回复的完整源代码：
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Comments.docx");
-
-NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
-
-Comment parentComment = (Comment)comments[0];
-
-foreach (Comment childComment in parentComment.Replies)
-{
-    Console.WriteLine(childComment.Ancestor.Id);
-    Console.WriteLine(childComment.Done);
-
-    childComment.Done = true;
-}
-
-doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
-```
-请记住根据您的具体要求调整代码，包括文档文件路径和其他自定义
+此代码将更改保存到新文档，确保原始文件保持不变。
 
 ## 结论
-恭喜！您已成功了解如何使用 Aspose.Words for .NET 解决 Word 文档中的评论及其回复。通过遵循分步指南并利用提供的源代码，您现在可以管理评论解析并根据您的要求更新评论及其回复的状态。
 
-评论解析有助于跟踪和管理文档中的反馈。尝试不同的评论状态并对其进行自定义，以改进文档中的协作和审阅流程。
+处理 Word 文档中的注释不必是手动操作。使用 Aspose.Words for .NET，您可以自动化该过程，从而节省时间并减少错误。按照本指南操作，可以高效地解决和回复文档中的注释。
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：如何解决 Aspose.Words for .NET 中的评论？
+### 我可以使用 Aspose.Words for .NET 自动执行其他与评论相关的任务吗？  
+是的，您可以自动执行各种任务，例如添加、删除和修改评论。
 
-答：要解决 Aspose.Words for .NET 中的注释，您可以使用`Comment.Resolve`方法指定`Comment`您要解决的对象。这会将评论标记为已解决，并将其隐藏在最终文档中。
+### Aspose.Words for .NET 是否与 .NET Core 兼容？  
+是的，Aspose.Words for .NET 同时支持 .NET Framework 和 .NET Core。
 
-#### 问：如何在 Aspose.Words for .NET 中对已解决的评论添加回复？
+### 如何免费试用 Aspose.Words for .NET？  
+您可以从下载免费试用版[这里](https://releases.aspose.com/).
 
-答：虽然已解决的评论默认隐藏在最终文档中，但您仍然可以使用`Comment.AddReply`方法指定回复文本以及要添加它的位置。
+### 我可以使用 Aspose.Words for .NET 处理其他文档类型吗？  
+是的，Aspose.Words 支持各种格式，包括 DOCX、PDF、HTML 等。
 
-#### 问：如何在 Aspose.Words for .NET 中查看已解决的评论？
-
-答：默认情况下，已解决的评论会隐藏在最终文档中。但是，您可以使用`CommentOptions.ShowResolvedComments`的财产`Document`对象并将其设置为`true`.
-
-#### 问：如何在 Aspose.Words for .NET 中隐藏所有评论（包括回复）？
-
-答：要在 Aspose.Words for .NET 中隐藏所有评论（包括回复），您可以使用`CommentOptions.CommentDisplayMode`的财产`Document`对象并将其设置为`CommentDisplayMode.None`.
-
-#### 问：我可以在 Aspose.Words for .NET 中编辑已解决的评论的文本吗？
-
-答：是的，您可以通过访问`Comment.Text`相应财产`Comment`对象并根据需要修改文本。
+### 在哪里可以找到 Aspose.Words for .NET 的详细文档？  
+您可以访问文档[这里](https://reference.aspose.com/words/net/).

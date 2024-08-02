@@ -48,7 +48,7 @@ Document doc = new Document(stream);
 Document doc = new Document("https://example.com/document.docx");
 ```
 
-### Få åtkomst till dokumentinnehåll
+### Åtkomst till dokumentinnehåll
 
 När dokumentet har laddats kan du komma åt dess innehåll, stycken, tabeller, bilder och andra element med hjälp av Aspose.Words rika API.
 
@@ -171,7 +171,7 @@ doc.save("output.png", imageOptions);
 
 Aspose.Words tillhandahåller avancerade tekniker för att återge specifika delar av ett dokument, vilket kan vara användbart för stora dokument eller specifika krav.
 
-### Rendera specifika dokumentsidor
+### Återge specifika dokumentsidor
 
 Du kan rendera specifika sidor i ett dokument, så att du kan visa specifika avsnitt eller generera förhandsvisningar effektivt.
 

@@ -2,118 +2,111 @@
 title: Obtenha nomes de campos de mala direta
 linktitle: Obtenha nomes de campos de mala direta
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como obter nomes de campos de mala direta em seus documentos do Word com Aspose.Words for .NET.
+description: Aprenda como extrair nomes de campos de mala direta de um documento do Word usando Aspose.Words for .NET com este guia passo a passo detalhado.
 type: docs
 weight: 10
 url: /pt/net/working-with-fields/get-mail-merge-field-names/
 ---
+## Introdução
 
-Aqui está um guia passo a passo para explicar o código-fonte C# abaixo, que usa o recurso "Obter nomes de campos de mesclagem" do Aspose.Words for .NET. Certifique-se de seguir cada etapa cuidadosamente para obter os resultados desejados.
+Bem-vindo a este guia sobre como extrair nomes de campos de mala direta de um documento do Word usando Aspose.Words for .NET. Esteja você gerando cartas personalizadas, criando relatórios personalizados ou simplesmente automatizando fluxos de trabalho de documentos, os campos de mala direta são essenciais. Eles agem como espaços reservados em seu documento que são substituídos por dados reais durante o processo de mesclagem. Se você está trabalhando com Aspose.Words for .NET, você está com sorte – esta biblioteca poderosa torna incrivelmente fácil a interação com esses campos. Neste tutorial, veremos uma maneira simples, mas eficaz, de recuperar os nomes dos campos de mala direta em um documento, permitindo que você entenda e gerencie melhor suas operações de mala direta.
 
-## Etapa 1: configuração do diretório de documentos
+## Pré-requisitos
 
-No código fornecido, você deve especificar o diretório dos seus documentos. Substitua o valor "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho apropriado para o diretório de documentos.
+Antes de mergulhar no tutorial, certifique-se de ter o seguinte:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Biblioteca Aspose.Words para .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Caso contrário, você pode baixá-lo no[Aspor site](https://releases.aspose.com/words/net/).
 
-## Passo 2: Carregando o documento
+2. Ambiente de desenvolvimento: você deve ter um ambiente de desenvolvimento configurado para .NET, como o Visual Studio.
 
-A primeira etapa é carregar o documento onde deseja obter os nomes dos campos de mesclagem.
+3. Um documento do Word com campos de mala direta: tenha um documento do Word pronto que contenha campos de mala direta. Este será o documento com o qual você trabalhará para extrair nomes de campos.
 
-```csharp
-Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
-```
+4. Conhecimento básico de C#: Familiaridade com programação C# e .NET será útil para acompanhar os exemplos.
 
-Certifique-se de substituir "SEU ARQUIVO DE DOCUMENTO" pelo nome do seu próprio arquivo.
+## Importar namespaces
 
-## Etapa 3: obter nomes de campos de mesclagem
-
- Nós usamos o`GetFieldNames()` método para obter um array contendo os nomes dos campos de mesclagem presentes no documento.
+Para começar, você precisa importar os namespaces necessários em seu código C#. Isso permite que você acesse a funcionalidade Aspose.Words. Veja como incluí-los:
 
 ```csharp
-string[] fieldNames = doc.MailMerge.GetFieldNames();
+using Aspose.Words;
+using System;
 ```
 
- O`fieldNames` variável agora contém os nomes dos campos de mesclagem.
+ O`Aspose.Words` namespace dá acesso a todas as classes e métodos necessários para manipular documentos do Word, enquanto`System` é usado para funcionalidades básicas, como saída do console.
 
-### Exemplo de código-fonte para obter nomes de campos de mesclagem com Aspose.Words para .NET
+Vamos dividir o processo de extração de nomes de campos de mala direta em um guia passo a passo claro.
+
+## Etapa 1: definir o diretório de documentos
+
+Título: Especifique o caminho para seus documentos
+
+Primeiro, você precisa configurar o caminho para o diretório onde seu documento do Word está localizado. Isso é crucial porque informa ao seu aplicativo onde encontrar o arquivo. Veja como você faz isso:
 
 ```csharp
 // O caminho para o diretório de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Substituir`"YOUR DOCUMENTS DIRECTORY"`com o caminho real onde seu documento reside. Isso poderia ser algo como`"C:\\Documents\\MyDoc.docx"`.
+
+## Etapa 2: carregue o documento
+
+Título: Carregar o documento do Word
+
+ A seguir, você carregará o documento em uma instância do`Document` classe fornecida por Aspose.Words. Isso permite que você interaja com o documento de forma programática.
+
+```csharp
 // Carregue o documento.
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
+```
 
+ Substituir`"YOUR DOCUMENT FILE"` pelo nome do seu arquivo de documento do Word, como`"example.docx"`. Esta linha de código lê o documento do diretório especificado e o prepara para manipulação posterior.
+
+## Etapa 3: recuperar os nomes dos campos de mala direta
+
+Título: Extrair nomes de campos de mala direta
+
+ Agora você está pronto para obter os nomes dos campos de mala direta presentes no documento. É aqui que Aspose.Words brilha - é`MailMerge` class fornece uma maneira fácil de recuperar nomes de campos.
+
+```csharp
 // Obtenha nomes de campos de mesclagem.
 string[] fieldNames = doc.MailMerge.GetFieldNames();
+```
 
+ O`GetFieldNames()` O método retorna uma matriz de strings, cada uma representando um nome de campo de mala direta encontrado no documento. Estes são os espaços reservados que você verá em seu documento do Word.
+
+## Etapa 4: exibir o número de campos mesclados
+
+Título: Produza o número de campos
+
+Para confirmar se você recuperou os nomes dos campos com êxito, você pode exibir a contagem de campos usando o console.
+
+```csharp
 // Exiba o número de campos de mesclagem.
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
- Neste exemplo, carregamos um documento, obtivemos os nomes dos campos de mesclagem usando o`GetFieldNames()` método e exibiu o número de campos de mesclagem presentes no documento.
+Esta linha de código imprime o número total de campos de mala direta no documento, ajudando a verificar se o processo de extração funcionou corretamente.
 
-Isso conclui nosso guia sobre como usar o recurso "Obter nomes de campos de mesclagem" com Aspose.Words for .NET.
+## Conclusão
 
-### Perguntas frequentes
+Parabéns! Agora você aprendeu como extrair nomes de campos de mala direta de um documento do Word usando Aspose.Words for .NET. Esta técnica é uma ferramenta valiosa para gerenciar e automatizar fluxos de trabalho de documentos, facilitando o manuseio de conteúdos personalizados. Seguindo essas etapas, você pode identificar e trabalhar com eficiência com campos de mala direta em seus documentos.
 
-#### Q1: O que é mala direta no Aspose.Words?
+ Se você tiver alguma dúvida ou precisar de mais assistência, sinta-se à vontade para explorar o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou junte-se ao[Aspor comunidade](https://forum.aspose.com/c/words/8) para suporte. Boa codificação!
 
-A mala direta no Aspose.Words é um processo para mesclar dados de uma fonte externa (por exemplo, planilha Excel ou banco de dados) com um modelo de documento do Word para criar documentos personalizados. Isso facilita a geração automatizada de cartas, relatórios e outros documentos similares.
+## Perguntas frequentes
 
-#### P2: Como obtenho a lista de campos de mala direta disponíveis em um documento do Word?
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores criar, modificar e gerenciar documentos do Word programaticamente em aplicativos .NET.
 
-Para obter a lista de campos de mala direta disponíveis em um documento do Word, você pode seguir estas etapas:
+### Como faço para obter uma avaliação gratuita do Aspose.Words?
+ Você pode obter um teste gratuito visitando o[Página de lançamentos do Aspose](https://releases.aspose.com/).
 
-1. Importe as classes Document e MailMergeFieldNames do namespace Aspose.Words.
-2. Crie uma instância de Document carregando seu documento do Word.
-3. Use o método GetMailMergeFieldNames do objeto Document para obter a lista de campos de mala direta disponíveis.
+### Posso usar o Aspose.Words sem comprar uma licença?
+ Sim, você pode usá-lo durante o período de avaliação, mas para uso contínuo, você precisará adquirir uma licença de[Página de compra da Aspose](https://purchase.aspose.com/buy).
 
-Aqui está um exemplo de código para ilustrar o processo:
+### O que devo fazer se encontrar problemas com o Aspose.Words?
+ Para suporte, você pode visitar o[Aspor fórum](https://forum.aspose.com/c/words/8) onde você pode fazer perguntas e obter ajuda da comunidade.
 
-```csharp
-// Importe os namespaces necessários
-using Aspose.Words;
-using Aspose.Words.MailMerging;
-
-// Carregue o documento existente
-Document document = new Document("FilePath");
-
-// Obtenha uma lista de campos de mala direta
-MailMergeFieldNames fieldNames = document.MailMerge.GetFieldNames();
-
-// Percorrer os campos de mala direta disponíveis
-foreach (string fieldName in fieldNames)
-{
-     // Faça algo com o nome do campo
-     Console.WriteLine(fieldName);
-}
-```
-### Perguntas frequentes
-
-#### P: O que é mala direta no Aspose.Words?
-
-R: A mala direta no Aspose.Words é um processo para mesclar dados de uma fonte externa (por exemplo, planilha Excel ou banco de dados) com um modelo de documento do Word para criar documentos personalizados. Isso facilita a geração automatizada de cartas, relatórios e outros documentos similares.
-
-#### P: Como obtenho a lista de campos de mala direta disponíveis em um documento do Word?
-
-R: Para obter a lista de campos de mala direta disponíveis em um documento do Word, você pode seguir estas etapas:
-
-1. Importe as classes Document e MailMergeFieldNames do namespace Aspose.Words.
-2. Crie uma instância de Document carregando seu documento do Word.
-3. Use o método GetMailMergeFieldNames do objeto Document para obter a lista de campos de mala direta disponíveis.
-
-#### P: Posso obter campos de mala direta de uma fonte de dados externa, como uma planilha do Excel?
-
-R: Sim, você pode obter os campos de mala direta de uma fonte de dados externa, como uma planilha do Excel. Para isso, você pode usar os recursos de vinculação de dados do Aspose.Words para estabelecer uma conexão com a fonte de dados e obter os nomes dos campos disponíveis.
-
-#### P: É possível filtrar campos de mala direta com base em determinados critérios?
-
-R: Sim, é possível filtrar campos de mala direta com base em determinados critérios. Você pode usar expressões regulares ou condições específicas para filtrar campos de mala direta e obter apenas aqueles que atendem aos seus critérios específicos.
-
-#### P: Como posso manipular campos de mala direta no Aspose.Words?
-
-R: Para manipular campos de mala direta em Aspose.Words, você pode usar os métodos e propriedades fornecidos pelos objetos Document e MailMergeField. Você pode adicionar, remover ou atualizar campos de mala direta, bem como recuperar e editar valores associados a campos.
+### Como posso obter uma licença temporária do Aspose.Words?
+ Você pode solicitar uma licença temporária através[Página de licença temporária do Aspose](https://purchase.aspose.com/temporary-license/).

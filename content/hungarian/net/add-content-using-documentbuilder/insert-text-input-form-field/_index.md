@@ -2,7 +2,7 @@
 title: Szövegbeviteli űrlapmező beszúrása a Word dokumentumba
 linktitle: Szövegbeviteli űrlapmező beszúrása a Word dokumentumba
 second_title: Aspose.Words Document Processing API
-description: Ebből a lépésenkénti oktatóanyagból megtudhatja, hogyan illeszthet be szövegbeviteli űrlapmezőt Word-dokumentumba az Aspose.Words for .NET használatával. Ideális interaktív űrlapok létrehozásához.
+description: Ebből a lépésenkénti oktatóanyagból megtudhatja, hogyan szúrhat be szövegbeviteli űrlapmezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Ideális interaktív űrlapok létrehozásához.
 type: docs
 weight: 10
 url: /hu/net/add-content-using-documentbuilder/insert-text-input-form-field/
@@ -18,7 +18,7 @@ Mielőtt elkezdenénk, van néhány dolog, amire szüksége lesz:
 1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Integrált fejlesztői környezet (IDE), például a Visual Studio.
 3. Alapvető C# ismerete: C# programozási nyelv és .NET keretrendszer ismerete.
-4.  Ideiglenes licenc (opcionális): Ha értékeli az Aspose.Words-t, érdemes lehet egy[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) hogy elkerüljük a korlátozásokat.
+4.  Ideiglenes licenc (opcionális): Ha értékeli az Aspose.Words-t, érdemes lehet egy[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) hogy elkerüljünk minden korlátozást.
 
 ## Névterek importálása
 

@@ -2,12 +2,11 @@
 title: Reemplazar hipervínculos
 linktitle: Reemplazar hipervínculos
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a reemplazar hipervínculos en documentos .NET utilizando Aspose.Words para una gestión eficiente de documentos y actualizaciones dinámicas de contenido.
+description: Aprenda a reemplazar hipervínculos en documentos .NET usando Aspose.Words para una gestión eficiente de documentos y actualizaciones dinámicas de contenido.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/replace-hyperlinks/
 ---
-
 ## Introducción
 
 En el mundo del desarrollo de .NET, administrar y manipular documentos es una tarea crucial, que a menudo requiere un manejo eficiente de los hipervínculos dentro de los documentos. Aspose.Words para .NET proporciona poderosas capacidades para reemplazar sin problemas los hipervínculos, asegurando que sus documentos estén vinculados dinámicamente a los recursos correctos. Este tutorial profundiza en cómo puede lograr esto usando Aspose.Words para .NET, guiándolo paso a paso a través del proceso.
@@ -78,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 
 Reemplazar hipervínculos en documentos usando Aspose.Words para .NET es sencillo y mejora la naturaleza dinámica de sus documentos. Ya sea actualizando URL o transformando el contenido del documento mediante programación, Aspose.Words simplifica estas tareas, garantizando una gestión de documentos eficiente.
 
-## Preguntas frecuentes (FAQ)
+## Preguntas frecuentes
 
 ### ¿Puede Aspose.Words para .NET manejar estructuras de documentos complejas?
 Sí, Aspose.Words admite estructuras complejas como tablas, imágenes e hipervínculos sin problemas.

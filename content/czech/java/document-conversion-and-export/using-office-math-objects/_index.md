@@ -16,7 +16,7 @@ V oblasti zpracování dokumentů v Javě je Aspose.Words spolehlivým a výkonn
 
 Než se pustíme do spletitosti práce s Office Math v Aspose.Words pro Java, ujistěte se, že máte vše nastaveno. Ujistěte se, že máte:
 
-- Nainstalován Aspose.Words pro Java.
+- Nainstalovaný Aspose.Words pro Java.
 - Dokument obsahující rovnice Office Math (pro tuto příručku použijeme „OfficeMath.docx“).
 
 ## Porozumění matematickým objektům Office

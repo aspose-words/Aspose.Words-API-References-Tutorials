@@ -100,7 +100,7 @@ row.AppendChild(cell);
 
 ```csharp
 // Στη συνέχεια θα επαναλάβαμε τη διαδικασία για τα άλλα κελιά και σειρές του πίνακα.
-// Μπορούμε επίσης να επιταχύνουμε τα πράγματα κλωνοποιώντας υπάρχοντα κελιά και σειρές.
+//Μπορούμε επίσης να επιταχύνουμε τα πράγματα κλωνοποιώντας υπάρχοντα κελιά και σειρές.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -108,7 +108,7 @@ row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
 
 Αυτός ο κώδικας κλωνοποιεί το υπάρχον κελί και το προσθέτει στη σειρά. Στη συνέχεια προσθέτουμε μια παράγραφο και μια εκτέλεση στο νέο κελί.
 
-## Βήμα 5: Εφαρμογή ρυθμίσεων αυτόματης προσαρμογής
+## Βήμα 5: Εφαρμογή ρυθμίσεων Auto Fit
 
 Τέλος, ας εφαρμόσουμε ρυθμίσεις αυτόματης προσαρμογής στον πίνακά μας για να διασφαλίσουμε ότι οι στήλες έχουν σταθερά πλάτη.
 
@@ -140,7 +140,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
  Ναι, μπορείτε να ζητήσετε ένα[δωρεάν δοκιμή](https://releases.aspose.com/) να αξιολογήσει τη βιβλιοθήκη πριν από την αγορά.
 
 ### Πώς μπορώ να αγοράσω το Aspose.Words για .NET;
- Μπορείτε να αγοράσετε το Aspose.Words για .NET από το[σελίδα αγοράς](https://purchase.aspose.com/buy).
+Μπορείτε να αγοράσετε το Aspose.Words για .NET από το[σελίδα αγοράς](https://purchase.aspose.com/buy).
 
 ### Πού μπορώ να βρω την τεκμηρίωση για το Aspose.Words για .NET;
  Η τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).

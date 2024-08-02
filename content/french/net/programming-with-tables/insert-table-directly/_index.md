@@ -100,7 +100,7 @@ Pour accélérer le processus d’ajout de cellules, nous pouvons cloner des cel
 
 ```csharp
 // Nous répéterions ensuite le processus pour les autres cellules et lignes du tableau.
-// Nous pouvons également accélérer les choses en clonant des cellules et des lignes existantes.
+//Nous pouvons également accélérer les choses en clonant des cellules et des lignes existantes.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -136,11 +136,11 @@ Toutes nos félicitations! Vous avez réussi à insérer un tableau directement 
 ### Comment puis-je télécharger Aspose.Words pour .NET ?
  Vous pouvez télécharger Aspose.Words pour .NET à partir du[page de téléchargement](https://releases.aspose.com/words/net/).
 
-### Puis-je essayer Aspose.Words pour .NET avant d’acheter ?
+### Puis-je essayer Aspose.Words pour .NET avant d'acheter ?
  Oui, vous pouvez demander un[essai gratuit](https://releases.aspose.com/) pour évaluer la bibliothèque avant de l'acheter.
 
 ### Comment acheter Aspose.Words pour .NET ?
- Vous pouvez acheter Aspose.Words pour .NET à partir du[page d'achat](https://purchase.aspose.com/buy).
+Vous pouvez acheter Aspose.Words pour .NET à partir du[page d'achat](https://purchase.aspose.com/buy).
 
 ### Où puis-je trouver la documentation d’Aspose.Words pour .NET ?
  La documentation est disponible[ici](https://reference.aspose.com/words/net/).

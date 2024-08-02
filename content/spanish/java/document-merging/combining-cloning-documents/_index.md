@@ -51,7 +51,7 @@ Document doc2 = new Document("document2.docx");
 
 ## Paso 3: combinar documentos
 
-Ahora que tiene cargados sus documentos de origen, es hora de combinarlos en un solo documento.
+Ahora que tiene cargados sus documentos fuente, es hora de combinarlos en un solo documento.
 
 ```java
 // Combinar documentos

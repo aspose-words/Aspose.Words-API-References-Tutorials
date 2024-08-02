@@ -33,7 +33,7 @@ Pelajari cara membuat kode batang khusus di Java menggunakan Aspose.Words untuk 
 ### [Menggunakan Bagan di Aspose.Words untuk Java](./using-charts/)
 Pelajari cara membuat dan mengkustomisasi bagan di Aspose.Words untuk Java. Jelajahi tipe bagan, pemformatan, dan properti sumbu untuk visualisasi data.
 ### [Menggunakan Objek Office Math di Aspose.Words untuk Java](./using-office-math-objects/)
-Temukan kekuatan persamaan matematika dalam dokumen dengan Aspose.Words untuk Java. Belajar memanipulasi dan menampilkan objek Office Math dengan mudah.
+Buka kekuatan persamaan matematika dalam dokumen dengan Aspose.Words untuk Java. Belajar memanipulasi dan menampilkan objek Office Math dengan mudah.
 ### [Menggunakan Bentuk Dokumen di Aspose.Words untuk Java](./using-document-shapes/)
 Buka Kekuatan Bentuk Dokumen di Aspose.Words untuk Java. Belajar Membuat Dokumen yang Menarik Secara Visual dengan Contoh Langkah demi Langkah.
 ### [Menggunakan Tanda Air pada Dokumen di Aspose.Words untuk Java](./using-watermarks-to-documents/)

@@ -80,7 +80,7 @@ Az egyéni tulajdonságok a dokumentumhoz hozzáadott metaadatok, amelyek olyan 
 Az Aspose.Words for .NET robusztus és könnyen használható API-t biztosít a Word-dokumentumok kezeléséhez és PDF-formátumú exportálásához, biztosítva az egyéni tulajdonságok megőrzését és elérhetőségét.
 
 ### Hozzáadhatok több egyéni tulajdonságot egy dokumentumhoz?
- Igen, több egyéni tulajdonságot is hozzáadhat egy dokumentumhoz a következő meghívásával`Add`módszert minden egyes felvenni kívánt ingatlanhoz.
+ Igen, több egyéni tulajdonságot is hozzáadhat egy dokumentumhoz a következő meghívásával`Add`módszer minden egyes felvenni kívánt ingatlanhoz.
 
 ### Milyen más formátumokba exportálhatok az Aspose.Words for .NET használatával?
 Az Aspose.Words for .NET támogatja az exportálást különféle formátumokba, beleértve a DOCX, HTML, EPUB és sok más formátumba.

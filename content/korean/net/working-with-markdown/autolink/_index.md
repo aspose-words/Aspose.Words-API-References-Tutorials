@@ -45,7 +45,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 // 문서 빌더를 사용하여 문서에 콘텐츠를 추가합니다.
 DocumentBuilder builder = new DocumentBuilder();
 
-//하이퍼링크를 삽입합니다.
+// 하이퍼링크를 삽입합니다.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", 거짓);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 
 #### Q: Aspose.Words에서 자동 링크의 표시 텍스트를 사용자 정의할 수 있습니까?
 
- A: 예, Aspose.Words에서 자동 링크의 표시 텍스트를 사용자 정의할 수 있습니다. URL 주소를 표시 텍스트로 사용하는 대신,`<a>` 태그. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com">Click here</a>` "여기를 클릭하세요"라는 텍스트를 자동 링크로 표시합니다.
+ A: 예, Aspose.Words에서 자동 링크의 표시 텍스트를 사용자 정의할 수 있습니다. URL 주소를 표시 텍스트로 사용하는 대신,`<a>` 태그. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com">Click here</a>`"여기를 클릭하세요"라는 텍스트를 자동 링크로 표시합니다.
 
 #### Q: Aspose.Words의 자동 링크에 추가 속성을 추가하려면 어떻게 해야 합니까?
 
-A: Aspose.Words의 자동 링크에 추가 속성을 추가하려면`<a>` 꼬리표. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com" target="_blank">Link</a>` 새 창이나 탭에서 링크를 열려면` attribute target="_blank"`.
+ A: Aspose.Words의 자동 링크에 추가 속성을 추가하려면`<a>` 꼬리표. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com" target="_blank">Link</a>` 새 창이나 탭에서 링크를 열려면` attribute target="_blank"`.

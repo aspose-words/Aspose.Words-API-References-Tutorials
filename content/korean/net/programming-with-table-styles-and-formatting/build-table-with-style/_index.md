@@ -2,96 +2,35 @@
 title: 스타일로 테이블 만들기
 linktitle: 스타일로 테이블 만들기
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 사용자 정의 스타일로 테이블을 구축하는 방법에 대한 단계별 가이드입니다.
+description: 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 테이블을 만들고 스타일을 지정하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-table-styles-and-formatting/build-table-with-style/
 ---
+## 소개
 
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 스타일이 지정된 테이블을 구축하는 단계별 프로세스를 안내합니다. 번들로 제공되는 C# 소스 코드를 설명하고 자신의 프로젝트에서 이 기능을 이해하고 구현하는 데 도움이 되는 포괄적인 가이드를 제공합니다. 이 튜토리얼이 끝나면 Aspose.Words for .NET을 사용하여 Word 문서에서 사용자 정의 스타일로 테이블을 만드는 방법을 알게 됩니다.
+세련되고 전문적인 문서를 작성하려면 일반 텍스트 이상의 것이 필요한 경우가 많습니다. 테이블은 데이터를 구성하는 환상적인 방법이지만, 보기 좋게 만드는 것은 완전히 다른 과제입니다. .NET용 Aspose.Words를 입력하세요! 이 튜토리얼에서는 스타일이 있는 표를 작성하여 Word 문서를 세련되고 전문적으로 보이게 만드는 방법을 살펴보겠습니다.
 
-## 1단계: 문서 디렉터리 정의
-먼저 문서 디렉터리의 경로를 설정해야 합니다. 편집한 Word 문서를 저장하려는 위치입니다. "YOUR DOCUMENTS DIRECTORY"를 적절한 경로로 바꾸십시오.
+## 전제 조건
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+단계별 가이드를 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하세요.
 
-## 2단계: 새 문서 및 문서 작성기 만들기
- 다음으로 새 인스턴스를 생성해야 합니다.`Document` 클래스와 해당 문서에 대한 문서 생성자.
+1.  .NET용 Aspose.Words: 아직 설치하지 않았다면 다운로드하여 설치하세요.[.NET용 Aspose.Words](https://releases.aspose.com/words/net/).
+2. 개발 환경: 개발 환경이 설정되어 있어야 합니다. Visual Studio는 이 자습서에 적합한 옵션입니다.
+3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 더 쉽게 따라갈 수 있습니다.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## 네임스페이스 가져오기
 
-## 3단계: 새 표 시작 및 셀 삽입
- 테이블 구축을 시작하려면 다음을 사용합니다.`StartTable()` Document Builder의 메소드를 사용하여 테이블에 셀을 삽입합니다.`InsertCell()` 방법.
+시작하려면 필요한 네임스페이스를 가져와야 합니다. 이렇게 하면 Word 문서를 조작하는 데 필요한 클래스와 메서드에 액세스할 수 있습니다.
 
 ```csharp
-Table table = builder. StartTable();
-builder.InsertCell();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## 4단계: 표 스타일 정의
- 이제 다음을 사용하여 테이블 스타일을 설정할 수 있습니다.`StyleIdentifier` 재산. 이 예에서는 "MediumShading1Accent1" 스타일을 사용하고 있습니다.
+## 1단계: 새 문서 및 DocumentBuilder 만들기
 
-```csharp
-table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-```
-
-## 5단계: 표에 스타일 옵션 적용
- 다음을 사용하여 스타일에 따라 어떤 특성을 형식화해야 하는지 지정할 수 있습니다.`StyleOptions`배열의 속성입니다. 이 예에서는 "FirstColumn", "RowBands" 및 "FirstRow" 옵션을 적용합니다.
-
-```csharp
-table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-```
-
-## 6단계: 테이블 크기 자동 조정
- 내용에 따라 배열의 크기를 자동으로 조정하기 위해 다음을 사용합니다.`AutoFit()` 방법`AutoFitBehavior.AutoFitToContents` 행동.
-
-```csharp
-table.AutoFit(AutoFitBehavior.AutoFitToContents);
-```
-
-## 7단계: 셀에 콘텐츠 추가
- 이제 다음을 사용하여 셀에 내용을 추가할 수 있습니다.`Writeln()`그리고`InsertCell()` 문서 작성기의 메소드. 이 예에서는 "Item" 및 "Quantity(
-
-kg)" 및 해당 데이터.
-
-```csharp
-builder.Writeln("Item");
-builder.CellFormat.RightPadding = 40;
-builder.InsertCell();
-builder.Writen("Quantity (kg)");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Apples");
-builder.InsertCell();
-builder.Writeln("20");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Bananas");
-builder.InsertCell();
-builder.Writen("40");
-builder.EndRow();
-builder.InsertCell();
-builder.Writeln("Carrots");
-builder.InsertCell();
-builder.Writeln("50");
-builder.EndRow();
-```
-
-## 8단계: 수정된 문서 저장
-마지막으로 수정된 문서를 파일에 저장합니다. 출력 문서에 대한 적절한 이름과 위치를 선택할 수 있습니다.
-
-```csharp
-doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
-```
-
-축하합니다! 이제 .NET용 Aspose.Words를 사용하여 사용자 정의 스타일 테이블을 만들었습니다.
-
-### .NET용 Aspose.Words를 사용하여 스타일로 테이블 만들기의 샘플 소스 코드 
+ 먼저, 새 문서를 만들어야 합니다.`DocumentBuilder` 물체. 이것`DocumentBuilder` 문서에서 표를 구성하는 데 도움이 될 것입니다.
 
 ```csharp
 // 문서 디렉터리 경로
@@ -99,37 +38,111 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## 2단계: 테이블 구축 시작
+
+이제 문서와 작성기가 준비되었으므로 테이블 생성을 시작해 보겠습니다.
+
+```csharp
 Table table = builder.StartTable();
-// 테이블 형식을 설정하기 전에 먼저 최소한 하나의 행을 삽입해야 합니다.
+```
+
+## 3단계: 첫 번째 행 삽입
+
+행이 없는 테이블은 빈 구조일 뿐입니다. 테이블 형식을 설정하려면 먼저 행을 하나 이상 삽입해야 합니다.
+
+```csharp
 builder.InsertCell();
-// 고유 스타일 식별자를 기반으로 사용되는 테이블 스타일을 설정합니다.
+```
+
+## 4단계: 표 스타일 설정
+
+ 첫 번째 셀을 삽입했으면 이제 테이블에 스타일을 추가할 차례입니다. 우리는`StyleIdentifier` 미리 정의된 스타일을 적용합니다.
+
+```csharp
+// 고유 스타일 식별자를 기반으로 사용되는 테이블 스타일 설정
 table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+```
+
+## 5단계: 스타일 옵션 정의
+
+테이블 스타일 옵션은 테이블의 어느 부분에 스타일을 적용할지 정의합니다. 예를 들어 첫 번째 열, 행 밴드 및 첫 번째 행의 스타일을 지정할 수 있습니다.
+
+```csharp
 // 스타일에 따라 형식을 지정해야 하는 기능을 적용합니다.
-table.StyleOptions =
-	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+```
+
+## 6단계: 내용에 맞게 표 조정
+
+ 테이블을 깔끔하고 깔끔하게 보이도록 하기 위해 다음을 사용할 수 있습니다.`AutoFit` 내용에 맞게 테이블을 조정하는 방법입니다.
+
+```csharp
 table.AutoFit(AutoFitBehavior.AutoFitToContents);
+```
+
+## 7단계: 테이블에 데이터 삽입
+
+이제 테이블을 일부 데이터로 채울 차례입니다. 헤더 행부터 시작한 다음 몇 가지 샘플 데이터를 추가하겠습니다.
+
+### 머리글 행 삽입
+
+```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
 builder.InsertCell();
 builder.Writeln("Quantity (kg)");
 builder.EndRow();
+```
+
+#### 데이터 행 삽입
+
+```csharp
 builder.InsertCell();
 builder.Writeln("Apples");
 builder.InsertCell();
 builder.Writeln("20");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Bananas");
 builder.InsertCell();
 builder.Writeln("40");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Carrots");
 builder.InsertCell();
 builder.Writeln("50");
 builder.EndRow();
+```
+
+## 8단계: 문서 저장
+
+모든 데이터를 삽입한 후 마지막 단계는 문서를 저장하는 것입니다.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## 결론
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 스타일이 지정된 테이블을 작성하는 방법을 배웠습니다. 이 단계별 가이드를 따르면 Word 문서의 표 스타일을 쉽게 사용자 지정할 수 있습니다. Aspose.Words는 문서의 표를 조작하고 서식을 지정하기 위한 강력하고 유연한 API를 제공합니다. 이러한 지식을 통해 Word 문서의 시각적 표현을 개선하고 특정 요구 사항을 충족할 수 있습니다.
+
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에 세련된 테이블을 성공적으로 만들었습니다. 이 강력한 라이브러리를 사용하면 정확한 요구 사항에 맞게 Word 문서를 쉽게 자동화하고 사용자 지정할 수 있습니다. 보고서, 송장 또는 기타 유형의 문서를 작성하든 Aspose.Words가 도와드립니다.
+
+## FAQ
+
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 개발자가 C#을 사용하여 프로그래밍 방식으로 Word 문서를 생성, 편집 및 조작할 수 있는 강력한 라이브러리입니다.
+
+### .NET용 Aspose.Words를 사용하여 기존 테이블의 스타일을 지정할 수 있습니까?
+예, Aspose.Words for .NET을 사용하여 Word 문서의 새 테이블과 기존 테이블의 스타일을 모두 지정할 수 있습니다.
+
+### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 아니면 정식으로 구매하세요[여기](https://purchase.aspose.com/buy).
+
+### .NET용 Aspose.Words를 사용하여 다른 문서 유형을 자동화할 수 있습니까?
+전적으로! Aspose.Words for .NET은 DOCX, PDF, HTML 등을 포함한 다양한 문서 유형을 지원합니다.
+
+### 더 많은 예제와 문서는 어디에서 찾을 수 있나요?
+ 다음에서 포괄적인 문서와 예제를 찾을 수 있습니다.[.NET 문서 페이지용 Aspose.Words](https://reference.aspose.com/words/net/).

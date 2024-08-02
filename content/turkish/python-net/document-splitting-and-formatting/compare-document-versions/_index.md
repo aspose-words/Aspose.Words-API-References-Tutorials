@@ -7,11 +7,11 @@ type: docs
 weight: 13
 url: /tr/python-net/document-splitting-and-formatting/compare-document-versions/
 ---
-Günümüzün işbirliğine dayalı belge oluşturmanın hızlı dünyasında, doğruluğu sağlamak ve hataları önlemek için uygun sürüm kontrolünü sürdürmek çok önemlidir. Bu sürece yardımcı olabilecek güçlü araçlardan biri, Word belgelerini programlı olarak yönetmek ve yönetmek için tasarlanmış bir API olan Aspose.Words for Python'dur. Bu makale Aspose.Words for Python kullanarak belge sürümlerini karşılaştırma sürecinde size rehberlik edecek ve projelerinizde etkili revizyon kontrolü uygulamanıza olanak tanıyacak.
+Günümüzün işbirliğine dayalı belge oluşturmanın hızlı dünyasında, doğruluğu sağlamak ve hataları önlemek için uygun sürüm kontrolünü sürdürmek çok önemlidir. Bu sürece yardımcı olabilecek güçlü araçlardan biri, Word belgelerini programlı olarak yönetmek ve yönetmek için tasarlanmış bir API olan Aspose.Words for Python'dur. Bu makale Aspose.Words for Python kullanarak belge sürümlerini karşılaştırma sürecinde size rehberlik edecek ve projelerinizde etkili revizyon kontrolü uygulamanıza olanak tanıyacaktır.
 
 ## giriiş
 
-Belgeler üzerinde işbirliği içinde çalışırken, farklı yazarlar tarafından yapılan değişiklikleri takip etmek çok önemlidir. Aspose.Words for Python, belge sürümlerinin karşılaştırmasını otomatikleştirmenin güvenilir bir yolunu sunarak, değişiklikleri tanımlamayı ve revizyonların net bir kaydını tutmayı kolaylaştırır.
+Belgeler üzerinde işbirliği içinde çalışırken, farklı yazarlar tarafından yapılan değişiklikleri takip etmek çok önemlidir. Aspose.Words for Python, belge sürümlerinin karşılaştırmasını otomatikleştirmenin güvenilir bir yolunu sunarak değişiklikleri tanımlamayı ve revizyonların net bir kaydını tutmayı kolaylaştırır.
 
 ## Python için Aspose.Words'ü Kurma
 
@@ -87,7 +87,7 @@ Bu adımları izleyerek Aspose.Words for Python'u kullanarak belge sürümlerini
 ### Değişiklikleri farklı renklerde vurgulayabilir miyim?
 Evet, değişiklikleri ayırt etmek için çeşitli vurgu renkleri arasından seçim yapabilirsiniz.
 
-### İkiden fazla belge versiyonunu karşılaştırmak mümkün mü?
+### İkiden fazla belge versiyonunu karşılaştırmak mümkün müdür?
 Aspose.Words for Python, birden fazla belge sürümünün aynı anda karşılaştırılmasına olanak tanır.
 
 ### Aspose.Words for Python diğer belge formatlarını destekliyor mu?

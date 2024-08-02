@@ -68,7 +68,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
         cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
     ```
 
-2. حشوة الخلية: قم بإضافة حشوة إلى الخلايا لتحسين التباعد.
+2. حشو الخلايا: أضف حشوة إلى الخلايا لتحسين التباعد.
 
     ```python
     for row in table.rows:

@@ -2,118 +2,106 @@
 title: Leerzeichen pro Ebene zur Listeneinrückung verwenden
 linktitle: Leerzeichen pro Ebene zur Listeneinrückung verwenden
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zur Verwendung eines Leerzeichens pro Ebene für Listeneinrückungen in Aspose.Words für .NET. Erstellen Sie mühelos gut strukturierte Word-Dokumente.
+description: Erfahren Sie, wie Sie mehrstufige Listen mit Leerzeicheneinrückungen in Aspose.Words für .NET erstellen. Schritt-für-Schritt-Anleitung zur präzisen Dokumentformatierung.
 type: docs
 weight: 10
 url: /de/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten in einer C#-Anwendung. Zu den von Aspose.Words angebotenen Funktionen gehört die Möglichkeit, ein Leerzeichen pro Ebene zum Einrücken von Listen zu verwenden. In dieser Anleitung zeigen wir Ihnen, wie Sie den C#-Quellcode von Aspose.Words für .NET verwenden, um diese Funktionalität zu implementieren.
+## Einführung
 
-## Die Aspose.Words-Bibliothek verstehen
+Beim Formatieren von Dokumenten, insbesondere bei der Arbeit mit Listen, ist Präzision der Schlüssel. In Szenarien, in denen Sie Dokumente mit verschiedenen Einrückungsebenen erstellen müssen, bietet Aspose.Words für .NET leistungsstarke Tools für diese Aufgabe. Eine besonders nützliche Funktion ist das Konfigurieren der Listeneinrückung in Textdateien. In dieser Anleitung erfahren Sie, wie Sie Leerzeichen für die Listeneinrückung verwenden und so sicherstellen, dass Ihr Dokument die gewünschte Struktur und Lesbarkeit beibehält.
 
-Bevor Sie sich in den Code vertiefen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Textverarbeitung mit Word-Dokumenten einfach und effizient macht. Sie bietet eine breite Palette an Funktionen zum Erstellen, Ändern und Bearbeiten von Word-Dokumenten, einschließlich der Verwaltung von Listen und Einrückungen.
+## Voraussetzungen
 
-## Erstellen des Dokuments und Hinzufügen von Inhalten
+Bevor Sie mit dem Tutorial beginnen, benötigen Sie Folgendes:
 
-Der erste Schritt besteht darin, ein neues Dokument zu erstellen und Inhalt hinzuzufügen. Verwenden Sie die Klasse Document, um eine neue Dokumentinstanz zu erstellen. Verwenden Sie dann die Klasse DocumentBuilder, um Text hinzuzufügen und eine Liste mit mehreren Einrückungsebenen zu erstellen. Hier ist ein Beispiel:
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn Sie sie noch nicht haben, können Sie sie von der[Aspose-Website](https://releases.aspose.com/words/net/).
+- Visual Studio: Eine Entwicklungsumgebung zum Schreiben und Testen Ihres Codes.
+- Grundlegende Kenntnisse in C#: Wenn Sie mit C# und dem .NET-Framework vertraut sind, können Sie problemlos mit den Schritten weitermachen.
+
+## Namespaces importieren
+
+Um mit Aspose.Words arbeiten zu können, müssen Sie die erforderlichen Namespaces importieren. So können Sie sie in Ihr Projekt einbinden:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Lassen Sie uns den Vorgang zum Erstellen eines Dokuments mit einer mehrstufigen Liste und zum Festlegen von Leerzeichen für die Einrückung aufschlüsseln. 
+
+## Schritt 1: Richten Sie Ihr Dokument ein
+
+ Zuerst müssen Sie ein neues Dokument erstellen und das`DocumentBuilder` Objekt. Mit diesem Objekt können Sie ganz einfach Inhalte hinzufügen und diese nach Bedarf formatieren.
+
+```csharp
+// Pfad zu Ihrem Dokumentverzeichnis
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+
+// Erstellen Sie das Dokument und fügen Sie Inhalt hinzu
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ Ersetzen Sie in diesem Snippet`"YOUR DOCUMENTS DIRECTORY"` durch den tatsächlichen Pfad, in dem Sie Ihr Dokument speichern möchten.
+
+## Schritt 2: Erstellen Sie eine Liste mit mehreren Einrückungsebenen
+
+ Mit dem`DocumentBuilder` Instanz können Sie jetzt eine Liste mit verschiedenen Einrückungsebenen erstellen. Verwenden Sie die`ListFormat` -Eigenschaft, um eine Nummerierung anzuwenden und die Listenelemente nach Bedarf einzurücken.
+
+```csharp
 // Erstellen Sie eine Liste mit drei Einrückungsebenen
 builder.ListFormat.ApplyNumberDefault();
-builder. Writen("Element 1");
+builder.Write("Element 1");
 builder.ListFormat.ListIndent();
-builder. Writen("Element 2");
+builder.Write("Element 2");
 builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-In diesem Beispiel erstellen wir ein neues Dokument und verwenden den DocumentBuilder, um Text hinzuzufügen und eine Liste mit drei Einrückungsebenen zu erstellen. Wir haben der Liste drei Elemente hinzugefügt, wobei jedes Element eine weitere Ebene eingerückt ist.
+ In diesem Schritt`ApplyNumberDefault` legt das Listenformat fest und`ListIndent` wird verwendet, um die Einrückungsebene für jedes nachfolgende Listenelement zu erhöhen.
 
-## Ein Leerzeichen pro Ebene zur Listeneinrückung verwenden
+## Schritt 3: Leerzeichen für Einrückung konfigurieren
 
-Nachdem der Inhalt hinzugefügt wurde, können wir nun die Einrückung der Listen mit einem Leerzeichen pro Ebene konfigurieren. Dazu verwenden wir die Klasse TxtSaveOptions und setzen die Eigenschaft ListIndentation.Count auf die Anzahl der Einrückungsebenen und die Eigenschaft ListIndentation.Character auf das zu verwendende Leerzeichen. So geht's:
+Nachdem Sie Ihre Liste eingerichtet haben, müssen Sie im nächsten Schritt konfigurieren, wie die Listeneinrückung beim Speichern des Dokuments in einer Textdatei behandelt wird. Sie verwenden`TxtSaveOptions` um anzugeben, dass Leerzeichen zur Einrückung verwendet werden sollen.
 
 ```csharp
+// Verwenden Sie ein Leerzeichen pro Ebene für die Listeneinrückung
 TxtSaveOptions saveOptions = new TxtSaveOptions();
 saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
+```
 
+ Hier,`ListIndentation.Count` gibt die Anzahl der Leerzeichen pro Einrückungsebene an und`ListIndentation.Character` legt das tatsächliche Zeichen fest, das für die Einrückung verwendet wird.
+
+## Schritt 4: Speichern Sie das Dokument mit den angegebenen Optionen
+
+Speichern Sie abschließend Ihr Dokument mit den konfigurierten Optionen. Dadurch werden die Einrückungseinstellungen übernommen und Ihre Datei im gewünschten Format gespeichert.
+
+```csharp
+// Speichern Sie das Dokument mit den angegebenen Optionen
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-In diesem Beispiel erstellen wir eine Instanz von TxtSaveOptions und setzen die Eigenschaft ListIndentation.Count auf 3, um anzugeben, dass die Liste drei Einrückungsebenen enthält. Außerdem setzen wir die Eigenschaft ListIndentation.Character auf das Leerzeichen (' '), das wir für die Einrückung verwenden möchten.
-
-### Beispielquellcode für die Funktion „Ein Leerzeichen pro Ebene für Listeneinrückung verwenden“ mit Aspose.Words für .NET
-
-Hier ist der vollständige Beispiel-Quellcode für die Funktion „Ein Leerzeichen pro Ebene für Listeneinrückung verwenden“ mit Aspose.Words für .NET:
-
-```csharp
-
-using Aspose.Words;
-using Aspose.Words.Saving;
-
-namespace Example
-{
-     class Program
-     {
-         static void Main(string[] args)
-         {
-             // Pfad zu Ihrem Dokumentverzeichnis
-             string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-             // Erstellen Sie das Dokument und fügen Sie Inhalt hinzu
-             Document doc = new Document();
-             DocumentBuilder builder = new DocumentBuilder(doc);
-
-             // Erstellen Sie eine Liste mit drei Einrückungsebenen
-             builder.ListFormat.ApplyNumberDefault();
-             builder. Writen("Element 1");
-             builder.ListFormat.ListIndent();
-             builder. Writen("Element 2");
-             builder.ListFormat.ListIndent();
-             builder.Write("Element 3");
-
-             // Verwenden Sie ein Leerzeichen pro Ebene für die Listeneinrückung
-             TxtSaveOptions saveOptions = new TxtSaveOptions();
-             saveOptions.ListIndentation.Count = 3;
-             saveOptions.ListIndentation.Character = ' ';
-
-             // Speichern Sie das Dokument mit den angegebenen Optionen
-             doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
-         }
-     }
-}
-
-```
+ Dieser Codeausschnitt speichert das Dokument in dem in`dataDir` mit dem Dateinamen`"WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt"`. In der gespeicherten Datei ist die Liste entsprechend Ihren Einrückungseinstellungen formatiert.
 
 ## Abschluss
 
-In diesem Handbuch haben wir erklärt, wie Sie mit Aspose.Words für .NET die Funktion „Ein Leerzeichen pro Ebene für Listeneinrückung verwenden“ anwenden. Indem Sie die angegebenen Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie die Einrückung von Listen in Ihren Word-Dokumenten ganz einfach mit einem Leerzeichen pro Ebene konfigurieren. Aspose.Words bietet enorme Flexibilität und Leistung für die Textverarbeitung mit Textformatierung und Listenverwaltung, sodass Sie in Ihrer C#-Anwendung gut strukturierte Dokumente erstellen können.
+Wenn Sie diese Schritte befolgen, haben Sie erfolgreich ein Dokument mit mehrstufiger Listeneinrückung erstellt, bei dem Leerzeichen zur Formatierung verwendet werden. Dieser Ansatz stellt sicher, dass Ihre Listen gut strukturiert und leicht zu lesen sind, auch wenn sie als Textdateien gespeichert werden. Aspose.Words für .NET bietet robuste Tools zur Dokumentbearbeitung, und die Beherrschung dieser Funktionen kann Ihre Dokumentverarbeitungs-Workflows erheblich verbessern.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten in einer C#-Anwendung. Sie bietet zahlreiche Funktionen für die Textverarbeitung mit Word-Dokumenten, einschließlich der Möglichkeit, ein Leerzeichen pro Ebene zum Einrücken von Listen zu verwenden.
+### Kann ich zum Einrücken von Listen andere Zeichen als Leerzeichen verwenden?
+ Ja, Sie können verschiedene Zeichen für die Listeneinrückung angeben, indem Sie`Character` Immobilien in`TxtSaveOptions`.
 
-#### F: Wie kann ich mit Aspose.Words für .NET ein Leerzeichen pro Ebene zum Einrücken von Listen verwenden?
-Sie können ein Leerzeichen pro Ebene zum Einrücken von Listen verwenden, indem Sie die folgenden Schritte ausführen:
+### Wie verwende ich in Listen Aufzählungszeichen anstelle von Nummern?
+ Verwenden`ListFormat.ApplyBulletDefault()` anstatt`ApplyNumberDefault()` um eine Aufzählungsliste zu erstellen.
 
- Erstellen Sie ein neues Dokument mit dem`Document` Klasse.
+### Kann ich die Anzahl der Leerzeichen für Einrückungen dynamisch anpassen?
+ Ja, Sie können die`ListIndentation.Count` -Eigenschaft, um die Anzahl der Leerzeichen entsprechend Ihren Anforderungen festzulegen.
 
- Verwenden Sie die`DocumentBuilder`Klasse, um dem Dokument Inhalt hinzuzufügen und eine Liste mit mehreren Einrückungsebenen zu erstellen.
+### Ist es möglich, die Listeneinrückung nach der Erstellung des Dokuments zu ändern?
+Ja, Sie können die Listenformatierung und Einrückungseinstellungen jederzeit ändern, bevor Sie das Dokument speichern.
 
- Nachdem Sie den Inhalt hinzugefügt und die Listeneinrückung konfiguriert haben, verwenden Sie die`TxtSaveOptions` Klasse und legen Sie die`ListIndentation.Count` Eigenschaft auf die Anzahl der Einrückungsebenen und die`ListIndentation.Character` Eigenschaft auf dem Raum (`' '`) benutzen.
-
- Speichern Sie das Dokument mit den angegebenen Optionen über den`Save` Methode der`Document` Klasse.
-
-#### F: Unterstützt Aspose.Words andere Zeichen für Listeneinrückungen?
-Ja, Aspose.Words unterstützt andere Zeichen zum Einrücken von Listen. Sie können andere Zeichen als Leerzeichen verwenden, wie z. B. Tabulatoren (`'\t'` ) oder andere Sonderzeichen, indem Sie den`ListIndentation.Character` -Eigenschaft auf das gewünschte Zeichen.
-
-#### F: Ist es möglich, die Anzahl der Leerzeichen pro Ebene für die Listeneinrückung anzupassen?
- Ja, Sie können die Anzahl der Leerzeichen pro Ebene für die Listeneinrückung anpassen, indem Sie den Wert des`ListIndentation.Count` Eigentum in der`TxtSaveOptions` Klasse. Sie können die Anzahl der gewünschten Leerzeichen für jede Einrückungsebene angeben.
-
-#### F: Welche anderen Funktionen bietet Aspose.Words für die Listenverwaltung?
-Aspose.Words bietet zahlreiche Funktionen zum Verwalten von Listen in Word-Dokumenten. Sie können nummerierte oder Aufzählungslisten erstellen, Einrückungsebenen festlegen, den Stil von Listen anpassen, Listenelemente hinzufügen und vieles mehr.
+### Welche anderen Dokumentformate unterstützen Einstellungen für Listeneinrückungen?
+Neben Textdateien können bei Verwendung von Aspose.Words Einstellungen für Listeneinrückungen auch auf andere Formate wie DOCX, PDF und HTML angewendet werden.

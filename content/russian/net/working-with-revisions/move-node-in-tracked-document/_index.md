@@ -138,7 +138,7 @@ document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
 
 #### Вопрос: Как я могу остановить отслеживание изменений в документе Aspose.Words for .NET?
 
- О: Чтобы прекратить отслеживание изменений в документе Aspose.Words for .NET, вы можете использовать`StopTrackRevisions` метод`Document` объект.
+ О: Чтобы прекратить отслеживание изменений в документе Aspose.Words for .NET, вы можете использовать команду`StopTrackRevisions` метод`Document` объект.
 
 ```csharp
 doc.StopTrackRevisions();

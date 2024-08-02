@@ -13,7 +13,7 @@ In diesen Tutorials lernen Sie verschiedene Aspekte der Textverarbeitung mit Kom
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Füge Kommentare hinzu](./add-comments/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentare zu Word-Dokumenten hinzufügen. |
-| [Ankerkommentar](./anchor-comment/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentarantworten an bestimmten Text in Word-Dokumenten verankern. |
-| [Hinzufügen Entfernen Kommentar Antworten](./add-remove-comment-reply/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentarantworten in Word-Dokumenten hinzufügen und entfernen. |
-| [Kommentar gelöst und Antworten](./comment-resolved-and-replies/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentare und deren Antworten in Word-Dokumenten auflösen. |
+| [Füge Kommentare hinzu](./add-comments/) | Erfahren Sie in unserem Handbuch, wie Sie mit Aspose.Words für .NET Kommentare zu Ihren Word-Dokumenten hinzufügen. Verbessern Sie mühelos Ihren Dokumenten-Zusammenarbeitsprozess. |
+| [Ankerkommentar](./anchor-comment/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Ankerkommentare in Word-Dokumente einfügen. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine effiziente Dokumentenzusammenarbeit. |
+| [Hinzufügen Entfernen Kommentar Antworten](./add-remove-comment-reply/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Kommentarantworten in Word-Dokumenten hinzufügen und entfernen. Verbessern Sie Ihre Dokumentzusammenarbeit mit dieser Schritt-für-Schritt-Anleitung. |
+| [Kommentar gelöst und Antworten](./comment-resolved-and-replies/) | Automatisieren Sie das Auflösen und Beantworten von Kommentaren in Word-Dokumenten mit Aspose.Words für .NET. Schritt-für-Schritt-Anleitung enthalten. |

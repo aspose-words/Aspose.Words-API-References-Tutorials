@@ -42,7 +42,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Uruchom tabelę i wstaw pierwszą komórkę
 
-Rozpocznij tworzenie tabeli i wstaw pierwszą komórkę, w której rozpoczniemy zakładkę.
+Rozpocznij tworzenie tabeli i wstaw pierwszą komórkę, w której zaczniemy zakładać zakładkę.
 
 ```csharp
 builder.StartTable();

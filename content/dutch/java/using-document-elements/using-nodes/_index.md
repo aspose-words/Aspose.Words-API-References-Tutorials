@@ -101,7 +101,7 @@ public void createAndAddParagraphNode() throws Exception
 ```
 
 ## 8. Conclusie
-In deze zelfstudie hebben we essentiële aspecten van het werken met knooppunten in Aspose.Words voor Java besproken. U hebt geleerd hoe u bovenliggende knooppunten kunt verkrijgen, eigenaarsdocumenten kunt begrijpen, onderliggende knooppunten kunt opsommen, alle knooppunten kunt herhalen en alineaknooppunten kunt maken en toevoegen. Deze vaardigheden zijn van onschatbare waarde voor documentverwerkingstaken.
+In deze tutorial hebben we essentiële aspecten van het werken met knooppunten in Aspose.Words voor Java besproken. U hebt geleerd hoe u bovenliggende knooppunten kunt verkrijgen, eigenaarsdocumenten kunt begrijpen, onderliggende knooppunten kunt opsommen, alle knooppunten kunt herhalen en alineaknooppunten kunt maken en toevoegen. Deze vaardigheden zijn van onschatbare waarde voor documentverwerkingstaken.
 
 ## 9. Veelgestelde vragen (FAQ's)
 

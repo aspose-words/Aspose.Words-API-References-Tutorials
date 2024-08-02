@@ -16,6 +16,6 @@ Aspose.Words for .NET 教學將引導您了解該程式庫在操作 Word 文件�
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [在Word文檔中新增雙向標記](./add-bidi-marks/) | 學習使用 Aspose.Words for .NET 將 Bidi 標籤新增至 Word 文件並建立專業的多語言文件。 |
-| [每級使用製表符進行列表縮排](./use-tab-character-per-level-for-list-indentation/) | 了解如何在 Aspose.Words for .NET 中使用帶有製表符功能的縮排清單。請按照此逐步指南建立結構良好且可讀的文件。利用這項強大的功能節省時間並改善您的工作流程。立即造訪完整教程。 |
-| [每級使用空格字元進行列表縮排](./use-space-character-per-level-for-list-indentation/) | 在 Aspose.Words for .NET 中使用每級空格字元進行清單縮排的逐步指南。輕鬆建立結構良好的 Word 文件。 |
+| [在Word文檔中新增雙向標記](./add-bidi-marks/) | 透過本指南了解如何使用 Aspose.Words for .NET 在 Word 文件中新增雙向 (Bidi) 標記。確保多語言內容的文字方向正確。 |
+| [每級使用製表符進行列表縮排](./use-tab-character-per-level-for-list-indentation/) | 了解如何使用 Aspose.Words for .NET 建立具有選項卡式縮排的多層清單。請依照本指南在文件中精確設定清單格式。 |
+| [每級使用空格字元進行列表縮排](./use-space-character-per-level-for-list-indentation/) | 了解如何在 Aspose.Words for .NET 中建立帶有空格字元縮排的多層清單。精確文檔格式設定的逐步指南。 |

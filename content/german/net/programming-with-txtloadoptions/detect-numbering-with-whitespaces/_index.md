@@ -2,115 +2,110 @@
 title: Nummerierung mit Leerzeichen erkennen
 linktitle: Nummerierung mit Leerzeichen erkennen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie Listennummern mit Leerzeichen in Aspose.Words für .NET erkennen. Verbessern Sie mühelos die Struktur Ihrer Dokumente.
+description: Entdecken Sie, wie Sie mit Aspose.Words für .NET Nummerierungen mit Leerzeichen in Klartextdokumenten erkennen und sicherstellen, dass Ihre Listen richtig erkannt werden.
 type: docs
 weight: 10
 url: /de/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-In diesem Tutorial untersuchen wir den C#-Quellcode, der für die Funktion „Erkennung von Nummerierungen mit Leerzeichen“ mit Aspose.Words für .NET bereitgestellt wird. Mit dieser Funktion können Sie Listen aus einem Textdokument erkennen und erstellen, das Listennummern gefolgt von Leerzeichen enthält.
+## Einführung
 
-## Schritt 1: Einrichten der Umgebung
+Aspose.Words für .NET-Enthusiasten! Heute tauchen wir in eine faszinierende Funktion ein, die die Handhabung von Listen in Klartextdokumenten zum Kinderspiel machen kann. Haben Sie schon einmal mit Textdateien gearbeitet, in denen einige Zeilen Listen sein sollten, aber beim Laden in ein Word-Dokument einfach nicht richtig aussehen? Nun, wir haben einen netten Trick auf Lager: das Erkennen von Nummerierungen mit Leerzeichen. Dieses Tutorial führt Sie durch die Verwendung der`DetectNumberingWithWhitespaces` Option in Aspose.Words für .NET, um sicherzustellen, dass Ihre Listen richtig erkannt werden, auch wenn zwischen den Zahlen und dem Text Leerzeichen stehen.
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie Ihre Entwicklungsumgebung mit Aspose.Words für .NET eingerichtet haben. Stellen Sie sicher, dass Sie die erforderlichen Referenzen hinzugefügt und die entsprechenden Namespaces importiert haben.
+## Voraussetzungen
 
-## Schritt 2: Erstellen des Textdokuments
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
+
+-  Aspose.Words für .NET: Sie können es herunterladen von der[Aspose-Veröffentlichungen](https://releases.aspose.com/words/net/) Seite.
+- Entwicklungsumgebung: Visual Studio oder eine andere C#-IDE.
+- .NET Framework muss auf Ihrem Computer installiert sein.
+- Grundkenntnisse in C#: Das Verständnis der Grundlagen hilft Ihnen, den Beispielen zu folgen.
+
+## Namespaces importieren
+
+Bevor Sie mit dem Code beginnen, stellen Sie sicher, dass Sie die erforderlichen Namespaces in Ihr Projekt importiert haben. Hier ist ein kurzer Codeausschnitt für den Anfang:
 
 ```csharp
-// Pfad zu Ihrem Dokumentverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-string textDoc = "Full stop delimiters:\n" +
-                  "1. First list item 1\n" +
-                  "2. First list item 2\n" +
-                  "3. First list item 3\n\n" +
-                  "Right bracket delimiters:\n" +
-                  "1) Second list item 1\n" +
-                  "2) Second list item 2\n" +
-                  "3) Second list item 3\n\n" +
-                  "Bullet delimiters:\n" +
-                  "• Third list item 1\n" +
-                  "• Third list item 2\n" +
-                  "• Third list item 3\n\n" +
-                  "Whitespace delimiters:\n" +
-                  "1 Fourth list item 1\n" +
-                  "2 Fourth list item 2\n" +
-                  "3 Fourth list item 3";
+using System;
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-In diesem Schritt erstellen wir eine Textzeichenfolge, die ein Textdokument simuliert, das Listennummern gefolgt von Leerzeichen enthält. Wir verwenden verschiedene Listentrennzeichen wie Punkt, rechte Klammer, Aufzählungszeichen und Leerzeichen.
+Lassen Sie uns den Prozess in einfache, überschaubare Schritte unterteilen. Jeder Schritt führt Sie durch den erforderlichen Code und erklärt, was passiert.
 
-## Schritt 3: Upload-Optionen konfigurieren
+## Schritt 1: Definieren Sie Ihr Dokumentverzeichnis
 
-```csharp
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-```
-
- In diesem Schritt konfigurieren wir die Dokumentladeoptionen. Wir erstellen ein neues`TxtLoadOptions` Objekt und setzen Sie den`DetectNumberingWithWhitespaces`Eigentum an`true`. Dadurch kann Aspose.Words Listennummern erkennen, auch wenn auf diese Leerzeichen folgen.
-
-## Schritt 4: Dokument laden und speichern
+Als Erstes richten wir den Pfad zu Ihrem Dokumentverzeichnis ein. Hier werden Ihre Eingabe- und Ausgabedateien gespeichert.
 
 ```csharp
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-```
-
- In diesem Schritt laden wir das Dokument mit der angegebenen Textzeichenfolge und den Ladeoptionen. Wir verwenden eine`MemoryStream` um die Textzeichenfolge in einen Speicherstrom umzuwandeln. Anschließend speichern wir das resultierende Dokument im DOCX-Format.
-
-### Beispiel-Quellcode für die Funktion zur Erkennung von Leerzeichen bei der Nummerierung mit Aspose.Words für .NET.
-
-```csharp
-
-            
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-			
-// Erstellen Sie ein Klartextdokument in Form einer Zeichenfolge mit Teilen, die als Listen interpretiert werden können.
-// Beim Laden werden die ersten drei Listen immer von Aspose.Words erkannt,
-// und nach dem Laden werden Listenobjekte für sie erstellt.
-const string textDoc = "Full stop delimiters:\n" +
-					   "1. First list item 1\n" +
-					   "2. First list item 2\n" +
-					   "3. First list item 3\n\n" +
-					   "Right bracket delimiters:\n" +
-					   "1) Second list item 1\n" +
-					   "2) Second list item 2\n" +
-					   "3) Second list item 3\n\n" +
-					   "Bullet delimiters:\n" +
-					   "• Third list item 1\n" +
-					   "• Third list item 2\n" +
-					   "• Third list item 3\n\n" +
-					   "Whitespace delimiters:\n" +
-					   "1 Fourth list item 1\n" +
-					   "2 Fourth list item 2\n" +
-					   "3 Fourth list item 3";
-
-// Die vierte Liste, mit Leerzeichen zwischen der Listennummer und dem Inhalt des Listenelements,
-// wird nur dann als Liste erkannt, wenn "DetectNumberingWithWhitespaces" in einem LoadOptions-Objekt auf true gesetzt ist,
-// um zu vermeiden, dass Absätze, die mit Zahlen beginnen, fälschlicherweise als Listen erkannt werden.
-TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
-
-// Laden Sie das Dokument, während Sie LoadOptions als Parameter anwenden, und überprüfen Sie das Ergebnis.
-Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
-
-doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
-            
-        
 ```
 
-Jetzt können Sie den Quellcode ausführen, um das Textdokument mit Listennummern und Leerzeichen zu laden und dann ein .docx-Dokument mit den erkannten Listen zu erstellen. Die Ausgabedatei wird im angegebenen Verzeichnis unter dem Namen „WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx“ gespeichert.
+## Schritt 2: Erstellen Sie ein Klartextdokument
+
+Als nächstes erstellen wir ein Klartextdokument als Zeichenfolge. Dieses Dokument enthält Teile, die als Listen interpretiert werden können.
+
+```csharp
+const string textDoc = "Full stop delimiters:\n" +
+                       "1. First list item 1\n" +
+                       "2. First list item 2\n" +
+                       "3. First list item 3\n\n" +
+                       "Right bracket delimiters:\n" +
+                       "1) Second list item 1\n" +
+                       "2) Second list item 2\n" +
+                       "3) Second list item 3\n\n" +
+                       "Bullet delimiters:\n" +
+                       "• Third list item 1\n" +
+                       "• Third list item 2\n" +
+                       "• Third list item 3\n\n" +
+                       "Whitespace delimiters:\n" +
+                       "1 Fourth list item 1\n" +
+                       "2 Fourth list item 2\n" +
+                       "3 Fourth list item 3";
+```
+
+## Schritt 3: LoadOptions konfigurieren
+
+ Um Nummerierungen mit Leerzeichen zu erkennen, müssen wir die`DetectNumberingWithWhitespaces` Möglichkeit,`true` in einem`TxtLoadOptions` Objekt.
+
+```csharp
+TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
+```
+
+## Schritt 4: Laden Sie das Dokument
+
+ Laden wir nun das Dokument mit dem`TxtLoadOptions` als Parameter. Dadurch wird sichergestellt, dass die vierte Liste (mit Leerzeichen) korrekt erkannt wird.
+
+```csharp
+Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
+```
+
+## Schritt 5: Speichern Sie das Dokument
+
+Speichern Sie das Dokument abschließend im angegebenen Verzeichnis. Dadurch wird ein Word-Dokument mit korrekt erkannten Listen ausgegeben.
+
+```csharp
+doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
+```
 
 ## Abschluss
-In diesem Tutorial haben wir die Funktion zur Erkennung von Leerzeichen in Aspose.Words für .NET untersucht. Wir haben gelernt, wie man aus einem Textdokument Listen erstellt, die Listennummern gefolgt von Leerzeichen enthalten.
 
-Diese Funktion ist äußerst nützlich für die Verarbeitung von Dokumenten, die auf unterschiedliche Weise formatierte Listennummern enthalten. Durch die Verwendung der entsprechenden Ladeoptionen kann Aspose.Words diese Listennummern erkennen, auch wenn ihnen Leerzeichen folgen, und sie im endgültigen Dokument in strukturierte Listen umwandeln.
+Und da haben Sie es! Mit nur wenigen Codezeilen beherrschen Sie die Kunst, Nummerierungen mit Leerzeichen in Klartextdokumenten mithilfe von Aspose.Words für .NET zu erkennen. Diese Funktion kann unglaublich praktisch sein, wenn Sie mit verschiedenen Textformaten arbeiten und sicherstellen möchten, dass Ihre Listen in Ihren Word-Dokumenten korrekt dargestellt werden. Wenn Sie also das nächste Mal auf diese kniffligen Listen stoßen, wissen Sie genau, was zu tun ist.
 
-Mit dieser Funktion können Sie Zeit sparen und die Effizienz Ihres Arbeitsablaufs verbessern. Sie können problemlos Informationen aus Textdokumenten extrahieren und diese mit entsprechenden Listen in gut strukturierte Dokumente umwandeln.
+## Häufig gestellte Fragen
 
-Denken Sie daran, Ladeoptionen zu berücksichtigen, z. B. die Konfiguration der Erkennung von Leerzeichen beim Wählen, um die gewünschten Ergebnisse zu erzielen.
+###  Was ist`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+`DetectNumberingWithWhitespaces` ist eine Option in`TxtLoadOptions` Dadurch kann Aspose.Words Listen auch dann erkennen, wenn zwischen der Nummerierung und dem Text des Listenelements Leerzeichen vorhanden sind.
 
-Aspose.Words für .NET bietet viele erweiterte Funktionen zur Dokumentbearbeitung und -erstellung. Durch die eingehendere Untersuchung der von Aspose.Words bereitgestellten Dokumentation und Beispiele können Sie die Funktionen dieser leistungsstarken Bibliothek voll ausschöpfen.
+### Kann ich diese Funktion für andere Trennzeichen wie Aufzählungszeichen und Klammern verwenden?
+ Ja, Aspose.Words erkennt automatisch Listen mit gängigen Trennzeichen wie Aufzählungszeichen und Klammern. Die`DetectNumberingWithWhitespaces` hilft insbesondere bei Listen, die Leerzeichen enthalten.
 
-Zögern Sie also nicht, die Erkennung von Leerzeichennummerierungen in Ihre Aspose.Words-Projekte für .NET zu integrieren und nutzen Sie die Vorteile, um gut strukturierte und lesbare Dokumente zu erstellen.
+###  Was passiert, wenn ich nicht benutze`DetectNumberingWithWhitespaces`?
+Ohne diese Option werden Listen mit Leerzeichen zwischen der Nummerierung und dem Text möglicherweise nicht als Listen erkannt und die Elemente werden möglicherweise als einfache Absätze angezeigt.
 
+### Ist diese Funktion in anderen Aspose-Produkten verfügbar?
+Diese spezielle Funktion ist auf Aspose.Words für .NET zugeschnitten und für die Verarbeitung von Word-Dokumenten konzipiert.
+
+### Wie kann ich eine temporäre Lizenz für Aspose.Words für .NET erhalten?
+ Eine vorläufige Lizenz erhalten Sie bei der[Aspose Temporäre Lizenz](https://purchase.aspose.com/temporary-license/) Seite.
 

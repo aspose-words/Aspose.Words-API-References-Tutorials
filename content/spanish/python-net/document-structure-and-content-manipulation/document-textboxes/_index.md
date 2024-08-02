@@ -106,7 +106,7 @@ En esta guía, hemos explorado el proceso de mejorar el contenido visual con cua
 
 ### ¿Cómo agrego bordes a un cuadro de texto?
 
- Puede agregar bordes a un cuadro de texto usando el`textbox.border` propiedad y personalizar su apariencia.
+ Puede agregar bordes a un cuadro de texto usando el`textbox.border`propiedad y personalizar su apariencia.
 
 ### ¿Puedo insertar hipervínculos dentro de un cuadro de texto?
 

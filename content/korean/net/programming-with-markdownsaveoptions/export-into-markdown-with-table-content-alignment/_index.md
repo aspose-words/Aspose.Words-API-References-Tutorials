@@ -11,13 +11,13 @@ url: /ko/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 
 안녕하세요! 완벽하게 정렬된 표를 사용하여 Word 문서를 Markdown 형식으로 내보내는 방법이 궁금하신가요? 문서 작업을 하는 개발자이든 Markdown을 좋아하는 사람이든 이 가이드는 여러분을 위한 것입니다. 이를 달성하기 위해 .NET용 Aspose.Words 사용의 핵심을 살펴보겠습니다. Word 테이블을 깔끔하게 정렬된 Markdown 테이블로 바꿀 준비가 되셨나요? 시작하자!
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 준비해야 할 몇 가지 사항이 있습니다.
 
 1.  .NET 라이브러리용 Aspose.Words: .NET 라이브러리용 Aspose.Words가 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
 2. 개발 환경: 개발 환경을 설정합니다. Visual Studio는 .NET 개발에 널리 사용되는 선택입니다.
-3. C#에 대한 기본 지식: 이 언어로 코드를 작성하므로 C#을 이해하는 것이 필수적입니다.
+3. C#에 대한 기본 지식: 이 언어로 코드를 작성할 것이므로 C#을 이해하는 것이 필수적입니다.
 4. 샘플 Word 문서: 테스트에 사용할 수 있는 Word 문서를 준비하세요.
 
 ## 네임스페이스 가져오기
@@ -108,9 +108,9 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
  예,`Auto` 정렬 옵션을 사용하면 각 열의 첫 번째 단락을 기준으로 서로 다른 정렬을 가질 수 있습니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
-### Aspose.Words를 사용하여 다른 문서 요소를 Markdown으로 내보낼 수 있나요?
+### Aspose.Words를 사용하여 다른 문서 요소를 Markdown으로 내보낼 수 있습니까?
 예, Aspose.Words는 제목, 목록, 이미지와 같은 다양한 요소를 Markdown 형식으로 내보내는 것을 지원합니다.
 
 ### 문제가 발생하면 어디서 지원을 받을 수 있나요?

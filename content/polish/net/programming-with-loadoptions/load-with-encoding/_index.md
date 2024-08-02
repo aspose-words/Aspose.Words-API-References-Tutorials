@@ -80,7 +80,7 @@ UTF-7 (7-bitowy format transformacji Unicode) to kodowanie zaprojektowane do rep
 ### Czy mogę używać innych kodowań z Aspose.Words?
  Tak, Aspose.Words obsługuje różne kodowania, takie jak UTF-8, UTF-16 i inne. Po prostu ustaw`Encoding` nieruchomość w`LoadOptions` odpowiednio.
 
-### Czy korzystanie z Aspose.Words jest bezpłatne?
+### Czy korzystanie z Aspose.Words jest darmowe?
  Załóż.Words oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/) Aby uzyskać pełne funkcje, musisz kupić licencję od[Aspose](https://purchase.aspose.com/buy).
 
 ### Czy mogę ładować dokumenty ze strumienia zamiast ze ścieżki pliku?

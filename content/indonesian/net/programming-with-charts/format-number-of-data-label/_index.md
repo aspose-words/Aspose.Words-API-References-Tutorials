@@ -127,7 +127,7 @@ Ya, Aspose.Words untuk .NET mendukung berbagai tipe bagan, termasuk batang, kolo
 ### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
  Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### Apakah mungkin untuk menghubungkan label data ke sel sumber di Excel?
+### Apakah mungkin menghubungkan label data ke sel sumber di Excel?
 Ya, Anda bisa menautkan label data ke sel sumber, memungkinkan format angka diwarisi dari sel sumber.
 
 ### Di mana saya dapat menemukan dokumentasi lebih rinci untuk Aspose.Words untuk .NET?

@@ -109,7 +109,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### F: Wie markiere ich Text mit Markdown?
 
-A: Um Text mit Markdown hervorzuheben, umgeben Sie den Text einfach mit den entsprechenden Symbolen. Verwenden Sie`*` oder`_` für Kursivschrift,`**` oder`__` für mutig, und`~~` zum Durchstreichen.
+ A: Um Text mit Markdown hervorzuheben, umgeben Sie den Text einfach mit den entsprechenden Symbolen. Verwenden Sie`*` oder`_` für Kursivschrift,`**` oder`__` für mutig, und`~~` zum Durchstreichen.
 
 #### F: Können wir verschiedene Hervorhebungen im selben Text kombinieren?
 

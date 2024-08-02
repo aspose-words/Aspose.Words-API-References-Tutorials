@@ -16,6 +16,6 @@ Durch die Verwendung von Aspose.Words können Sie Aufgaben zur Verarbeitung von 
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Nummerierung mit Leerzeichen erkennen](./detect-numbering-with-whitespaces/) | Erfahren Sie, wie Sie Listennummern mit Leerzeichen in Aspose.Words für .NET erkennen. Verbessern Sie mühelos die Struktur Ihrer Dokumente. |
-| [Optionen für Handle-Leerzeichen](./handle-spaces-options/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Leerzeichen in Ihren TXT-Dokumenten verwalten. Entfernen Sie unnötige Leerzeichen und verbessern Sie die Lesbarkeit. |
-| [Dokumenttextrichtung](./document-text-direction/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Textrichtung in Ihren Dokumenten festlegen. Verbessern Sie die Anzeige für Sprachen, die von rechts nach links verlaufen. Greifen Sie jetzt auf das vollständige Tutorial zu. |
+| [Nummerierung mit Leerzeichen erkennen](./detect-numbering-with-whitespaces/) | Entdecken Sie, wie Sie mit Aspose.Words für .NET Nummerierungen mit Leerzeichen in Klartextdokumenten erkennen und sicherstellen, dass Ihre Listen richtig erkannt werden. |
+| [Optionen für Handle-Leerzeichen](./handle-spaces-options/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET führende und nachfolgende Leerzeichen in Textdokumenten behandeln. Dieses Tutorial bietet eine Anleitung zum Bereinigen der Textformatierung. |
+| [Dokumenttextrichtung](./document-text-direction/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die Textrichtung eines Dokuments in Word festlegen. Perfekt für die Handhabung von Sprachen, die von rechts nach links verlaufen. |

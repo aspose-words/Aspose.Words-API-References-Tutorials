@@ -9,7 +9,7 @@ url: /pl/net/split-document/merge-documents/
 ---
 ## Wstęp
 
-No hej! Czy zdarzyło Ci się kiedyś połączyć wiele dokumentów programu Word w jeden spójny plik? Niezależnie od tego, czy kompilujesz raporty, montujesz projekt, czy po prostu próbujesz uporządkować, scalanie dokumentów może zaoszczędzić mnóstwo czasu i wysiłku. Dzięki Aspose.Words dla .NET proces ten staje się dziecinnie prosty. W tym samouczku omówimy, jak scalić dokumenty programu Word przy użyciu Aspose.Words dla .NET, dzieląc każdy krok, abyś mógł łatwo wykonać wszystkie kroki. Na koniec będziesz łączyć dokumenty jak profesjonalista!
+Czy zdarzyło Ci się kiedyś połączyć wiele dokumentów programu Word w jeden spójny plik? Niezależnie od tego, czy kompilujesz raporty, montujesz projekt, czy po prostu próbujesz uporządkować, scalanie dokumentów może zaoszczędzić mnóstwo czasu i wysiłku. Dzięki Aspose.Words dla .NET proces ten staje się dziecinnie prosty. W tym samouczku omówimy, jak scalić dokumenty programu Word za pomocą Aspose.Words dla .NET, dzieląc każdy krok, abyś mógł łatwo wykonać wszystkie kroki. Na koniec będziesz łączyć dokumenty jak profesjonalista!
 
 ## Warunki wstępne
 
@@ -78,7 +78,7 @@ Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx",
 
 ## Krok 5: Tworzenie instancji dokumentu z połączonych dokumentów
 
-Czasami przed zapisaniem możesz chcieć dalej pracować z scalonym dokumentem. Możesz stworzyć`Document` instancja z połączonych dokumentów:
+ Czasami przed zapisaniem możesz chcieć dalej pracować z scalonym dokumentem. Możesz stworzyć`Document` instancja z połączonych dokumentów:
 
 ```csharp
 Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
@@ -93,22 +93,22 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## Często zadawane pytania
 
-### 1. Co to jest Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
 
 Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom programowe tworzenie, manipulowanie i konwertowanie dokumentów programu Word. Jest idealny do automatyzacji zadań związanych z dokumentami.
 
-### 2. Czy mogę używać Aspose.Words dla .NET za darmo?
+### Czy mogę używać Aspose.Words dla .NET za darmo?
 
  Możesz wypróbować Aspose.Words dla .NET przy użyciu pliku[bezpłatna wersja próbna](https://releases.aspose.com/). Aby używać długoterminowo, musisz kupić licencję.
 
-### 3. Jak sobie poradzić z różnymi formatowaniami podczas łączenia?
+### Jak radzić sobie z różnymi formatowaniami podczas łączenia?
 
- Aspose.Words zapewnia różne tryby formatu scalania, takie jak`KeepSourceFormatting`I`MergeFormatting` . Patrz[Dokumentacja API](https://reference.aspose.com/words/net/) szczegółowe instrukcje.
+ Aspose.Words zapewnia różne tryby formatu scalania, takie jak`KeepSourceFormatting`I`MergeFormatting` Patrz[Dokumentacja API](https://reference.aspose.com/words/net/) szczegółowe instrukcje.
 
-### 4. Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
 
 Możesz uzyskać wsparcie, odwiedzając stronę[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
 
-### 5. Czy mogę łączyć inne formaty plików z Aspose.Words dla .NET?
+### Czy mogę łączyć inne formaty plików z Aspose.Words dla .NET?
 
 Tak, Aspose.Words obsługuje łączenie różnych formatów plików, w tym DOCX, PDF i HTML.

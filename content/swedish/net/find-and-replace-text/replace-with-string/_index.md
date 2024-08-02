@@ -40,7 +40,7 @@ Till att börja med behöver vi en katalog där våra dokument kommer att finnas
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din dokumentkatalog. Det här är hemmabasen för våra filer.
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din dokumentkatalog. Detta är hemmabasen för våra filer.
 
 ## Steg 2: Initiera Document and Builder
 

@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
  Bu adımda bir oluşturduk`DocumentBuilder` Hedef belgemiz için nesne. Bu, belgeye içerik eklememize yardımcı olacaktır.
 
-## Adım 4: Belgenin Sonuna Gitme
+## Adım 4: Belgenin Sonuna Gitmek
 
 Kaynak belgeyi eklemeden önce oluşturucu imlecini hedef belgenin sonuna taşımamız gerekir.
 

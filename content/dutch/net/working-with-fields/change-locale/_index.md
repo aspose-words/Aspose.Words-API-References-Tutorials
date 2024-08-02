@@ -2,20 +2,41 @@
 title: Wijzig de landinstelling
 linktitle: Wijzig de landinstelling
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de landinstelling voor datum- en getalopmaak in Word-documenten kunt wijzigen met Aspose.Words voor .NET.
+description: Leer in deze handleiding hoe u de landinstelling in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Perfect voor het afhandelen van internationale klanten en projecten.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/change-locale/
 ---
+## Invoering
 
-In deze zelfstudie begeleiden we u bij het wijzigen van de landinstelling in Word-documenten met Aspose.Words voor .NET. Door de landinstelling te wijzigen, kunt u de opmaak van datums en getallen tijdens samenvoegbewerkingen bepalen. Wij voorzien u van de benodigde C#-broncode en stap-voor-stap instructies om dit te realiseren.
+Het werken met Word-documenten vereist vaak een beetje finesse, vooral als het om verschillende landstreken en culturen gaat. In deze zelfstudie onderzoeken we hoe u de landinstelling van een Word-document kunt wijzigen met Aspose.Words voor .NET. Of u nu documenten maakt voor een wereldwijd publiek of alleen de datumnotaties wilt wijzigen, deze handleiding heeft de oplossing voor u.
 
 ## Vereisten
-Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd op uw systeem.
 
-## Stap 1: Maak een document en DocumentBuilder
-Maak om te beginnen een exemplaar van de klasse Document en een DocumentBuilder-object:
+Voordat we in de kern duiken, laten we ervoor zorgen dat we alles hebben wat we nodig hebben:
+
+-  Aspose.Words voor .NET: Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Visual Studio: elke versie die het .NET-framework ondersteunt.
+- Basiskennis van C#: Als u de basisprincipes van C# en .NET begrijpt, kunt u dit volgen.
+
+ Zorg ervoor dat u Aspose.Words voor .NET hebt geïnstalleerd. Als u dat nog niet heeft gedaan, kunt u een gratis proefperiode krijgen[hier](https://releases.aspose.com/) of koop het[hier](https://purchase.aspose.com/buy).
+
+## Naamruimten importeren
+
+Voordat we beginnen met coderen, moeten we de benodigde naamruimten importeren. Deze zijn als de ingrediënten in een recept en zorgen ervoor dat alles soepel verloopt.
+
+```csharp
+using System.Globalization;
+using System.Threading;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Het wijzigen van de landinstelling in een Word-document is een eenvoudig proces. Laten we het stap voor stap opsplitsen.
+
+## Stap 1: Stel uw document in
+
+Laten we eerst onze document- en documentbouwer instellen. Dit is hetzelfde als het inrichten van uw werkruimte voordat u begint met koken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,91 +44,73 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 2: Voeg een veld in
-Voeg vervolgens een samenvoegveld in het document in met behulp van de InsertField-methode:
+## Stap 2: Voeg een samenvoegveld in
+
+Nu voegen we een samenvoegveld voor de datum in. Dit is waar de locale een rol gaat spelen.
 
 ```csharp
 builder.InsertField("MERGEFIELD Date");
 ```
 
-In de bovenstaande code voegen we een samenvoegveld met de naam "Datum" in het document in.
+## Stap 3: Bewaar de huidige cultuur
 
-## Stap 3: Wijzig de landinstelling
-Als u de landinstelling voor de datum- en getalnotatie wilt wijzigen, kunt u de huidige cultuur van de thread wijzigen. In dit voorbeeld stellen we de landinstelling in op Duits ("de-DE"):
+Voordat we de landinstelling veranderen, moeten we de huidige cultuur redden. Beschouw dit als een bladwijzer voor uw plaats voordat u naar een ander hoofdstuk gaat.
 
 ```csharp
 CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
+```
+
+## Stap 4: Wijzig de landinstelling
+
+Vervolgens veranderen we de huidige cultuur van de thread in Duits ("de-DE"). Dit is hetzelfde als het wijzigen van de taalinstellingen op uw telefoon.
+
+```csharp
 Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 ```
 
-In de bovenstaande code slaan we de huidige cultuur op en stellen we vervolgens de cultuur van de huidige thread in op Duits.
+## Stap 5: Voer Afdruk samenvoegen uit
 
-## Stap 4: Voer Afdruk samenvoegen uit
-Voer een samenvoegbewerking uit en geef de datumwaarde op voor het veld 'Datum':
+Nu voeren we de samenvoegbewerking uit met de huidige datum. Hierdoor wordt de nieuwe landinstelling toegepast op de datumnotatie.
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
 ```
 
-In dit codefragment voeren we de samenvoegbewerking uit en geven we de huidige datum op als waarde voor het veld 'Datum'.
+## Stap 6: Herstel de oorspronkelijke cultuur
 
-## Stap 5: Herstel de oorspronkelijke landinstelling
-Nadat het samenvoegen is voltooid, herstelt u de oorspronkelijke cultuur voor de thread:
+Na het uitvoeren van de samenvoegbewerking herstellen we de oorspronkelijke cultuur. Dit is hetzelfde als terugschakelen naar de taalinstellingen van uw voorkeur.
 
 ```csharp
 Thread.CurrentThread.CurrentCulture = currentCulture;
 ```
 
-In de bovenstaande code herstellen we de oorspronkelijke cultuur van de thread.
+## Stap 7: Bewaar het document
 
-## Stap 6: Sla het document op
-Sla het gewijzigde document op in een bestand met behulp van de Save-methode van de Document-klasse:
+Sla het document ten slotte op in de door u opgegeven map.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-### Voorbeeldbroncode voor het wijzigen van de landinstelling met Aspose.Words voor .NET
-Hier is de volledige broncode voor het wijzigen van de landinstelling in Word-documenten met Aspose.Words voor .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField("MERGEFIELD Date");
-
-CultureInfo currentCulture = Thread.CurrentThread.CurrentCulture;
-Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
-
-doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
-
-Thread.CurrentThread.CurrentCulture = currentCulture;
-
-doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
-```
+En daar heb je het! U hebt de landinstelling in uw Word-document met succes gewijzigd met Aspose.Words voor .NET.
 
 ## Conclusie
-Gefeliciteerd! U hebt met succes geleerd hoe u de landinstelling in Word-documenten kunt wijzigen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u nu de opmaak van datums en getallen tijdens samenvoegbewerkingen beheren. Pas de landinstelling aan uw vereisten aan om een nauwkeurige en consistente opmaak in uw documenten te garanderen.
 
-### Veelgestelde vragen
+Het wijzigen van de landinstelling in Word-documenten kan ongelooflijk handig zijn, vooral als het om internationale klanten of projecten gaat. Met Aspose.Words voor .NET wordt deze taak een fluitje van een cent. Volg deze stappen en u kunt moeiteloos van landinstelling wisselen.
 
-#### Vraag: Is Aspose.Words compatibel met verschillende versies van Microsoft Word?
+## Veelgestelde vragen
 
-A: Ja, Aspose.Words is compatibel met verschillende versies van Microsoft Word, waaronder Word 2003, Word 2007, Word 2010, Word 2013, Word 2016 en Word 2019.
+### Kan ik de landinstelling in elke taal wijzigen?
+Ja, Aspose.Words voor .NET ondersteunt het wijzigen van de landinstelling naar elke taal die door .NET wordt ondersteund.
 
-#### Vraag: Ondersteunt Aspose.Words complexe veldstructuren?
+### Heeft dit gevolgen voor andere delen van mijn document?
+Het wijzigen van de landinstelling heeft vooral invloed op de datum- en getalnotaties. Overige teksten blijven ongewijzigd.
 
-EEN: Absoluut! Aspose.Words biedt uitgebreide ondersteuning voor complexe veldstructuren, inclusief geneste velden, berekeningen en voorwaardelijke expressies. U kunt deze krachtige API gebruiken om met elk type veldstructuur te werken.
+### Heb ik een speciale licentie nodig om Aspose.Words voor .NET te gebruiken?
+ U kunt beginnen met een gratis proefperiode, maar voor voortgezet gebruik moet u een licentie aanschaffen[hier](https://purchase.aspose.com/buy).
 
-#### Vraag: Ondersteunt Aspose.Words veldupdatebewerkingen?
+### Kan ik terugkeren naar de oorspronkelijke landinstelling als er iets misgaat?
+Ja, door de oorspronkelijke cultuur op te slaan en later te herstellen, kunt u terugkeren naar de oorspronkelijke locatie.
 
-A: Ja, met Aspose.Words kunt u velden volgens een schema bijwerken. Met behulp van de API kunt u eenvoudig veldwaarden bijwerken, berekeningen vernieuwen en andere veldgerelateerde bewerkingen uitvoeren.
-
-#### Vraag: Is het mogelijk om velden naar platte tekst te converteren met Aspose.Words?
-
-EEN: Zeker! Aspose.Words biedt methoden om velden naar platte tekst te converteren. Dit kan handig zijn als u de inhoud moet extraheren zonder enige opmaak of veldgerelateerde functionaliteit.
-
-#### Vraag: Is het mogelijk om Word-documenten met dynamische velden te genereren met behulp van Aspose.Words?
-
-EEN: Absoluut! Aspose.Words biedt robuuste functionaliteit voor het genereren van Word-documenten met dynamische velden. U kunt sjablonen maken met vooraf gedefinieerde velden en deze dynamisch vullen met gegevens, waardoor u een flexibele en efficiënte oplossing krijgt voor het genereren van documenten.
+### Waar kan ik ondersteuning krijgen als ik problemen tegenkom?
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap[hier](https://forum.aspose.com/c/words/8).

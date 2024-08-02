@@ -2,43 +2,75 @@
 title: إضافة شكل المجموعة
 linktitle: إضافة شكل المجموعة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إضافة شكل مجموعة بأشكال متعددة إلى مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إضافة أشكال جماعية إلى مستندات Word باستخدام Aspose.Words لـ .NET من خلال هذا البرنامج التعليمي الشامل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-shapes/add-group-shape/
 ---
+## مقدمة
 
-يشرح هذا البرنامج التعليمي كيفية إضافة شكل مجموعة يحتوي على أشكال متعددة إلى مستند Word باستخدام Aspose.Words لـ .NET. تسمح لك أشكال المجموعة بدمج أشكال متعددة ومعالجتها ككيان واحد.
+قد يكون إنشاء مستندات معقدة تحتوي على عناصر مرئية غنية في بعض الأحيان مهمة شاقة، خاصة عند التعامل مع أشكال المجموعات. لكن لا تخف! يعمل Aspose.Words for .NET على تبسيط هذه العملية، مما يجعلها سهلة مثل الفطيرة. في هذا البرنامج التعليمي، سنرشدك خلال خطوات إضافة أشكال جماعية إلى مستندات Word الخاصة بك. على استعداد للغوص في؟ هيا بنا نبدأ!
 
 ## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي، يجب أن يكون لديك ما يلي:
 
-- تم تثبيت Aspose.Words لمكتبة .NET.
-- المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
+1.  Aspose.Words for .NET: يمكنك تنزيله من[صفحة الإصدارات Aspose](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة مع .NET.
+3. الفهم الأساسي لـ C#: الإلمام ببرمجة C# يعد ميزة إضافية.
+
+## استيراد مساحات الأسماء
+
+للبدء، نحتاج إلى استيراد مساحات الأسماء الضرورية في مشروعنا. توفر مساحات الأسماء هذه إمكانية الوصول إلى الفئات والأساليب المطلوبة لمعالجة مستندات Word باستخدام Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## الخطوة 2: إنشاء مستند جديد وشكل المجموعة
- إنشاء مثيل جديد لـ`Document` الطبقة و`GroupShape` كائن للعمل مع الوثيقة.
+## الخطوة 1: تهيئة المستند
+
+أول الأشياء أولاً، دعونا نقوم بتهيئة مستند Word جديد. فكر في هذا على أنه إنشاء لوحة قماشية فارغة حيث سنضيف أشكال مجموعتنا.
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 doc.EnsureMinimum();
+```
+
+ هنا،`EnsureMinimum()` يضيف الحد الأدنى من العقد المطلوبة للمستند.
+
+## الخطوة 2: إنشاء كائن GroupShape
+
+ بعد ذلك، نحن بحاجة إلى إنشاء`GroupShape`هدف. سيكون هذا الكائن بمثابة حاوية للأشكال الأخرى، مما يسمح لنا بتجميعها معًا.
+
+```csharp
 GroupShape groupShape = new GroupShape(doc);
 ```
 
-## الخطوة 3: إنشاء الأشكال وإضافتها إلى GroupShape
- إنشاء أشكال فردية مثل`accentBorderShape`و`actionButtonShape` باستخدام`Shape` فصل. تخصيص خصائصها حسب الرغبة. إلحاق هذه الأشكال إلى`groupShape` هدف.
+## الخطوة 3: إضافة الأشكال إلى GroupShape
+
+ الآن، دعونا نضيف الأشكال الفردية لدينا`GroupShape` حاوية. سنبدأ بشكل حدود مميز ثم نضيف شكل زر الإجراء.
+
+### إضافة شكل حدود مميز
 
 ```csharp
-Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
+Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1)
+{
+    Width = 100,
+    Height = 100
+};
 groupShape.AppendChild(accentBorderShape);
+```
 
+ يقوم مقتطف الكود هذا بإنشاء شكل حد مميز بعرض وارتفاع 100 وحدة ويضيفه إلى`GroupShape`.
+
+### إضافة شكل زر العمل
+
+```csharp
 Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 {
     Left = 100,
@@ -48,8 +80,11 @@ Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 groupShape.AppendChild(actionButtonShape);
 ```
 
-## الخطوة 4: تعيين أبعاد GroupShape
- قم بتعيين العرض والارتفاع وحجم الإحداثيات للملف`groupShape`.
+ هنا، نقوم بإنشاء شكل زر إجراء، ووضعه، وإضافته إلى ملفنا`GroupShape`.
+
+## الخطوة 4: تحديد أبعاد GroupShape
+
+ للتأكد من أن أشكالنا تتلاءم بشكل جيد مع المجموعة، نحتاج إلى تعيين أبعاد المجموعة`GroupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -57,43 +92,46 @@ groupShape.Height = 200;
 groupShape.CoordSize = new Size(200, 200);
 ```
 
+ وهذا يحدد العرض والارتفاع`GroupShape` 200 وحدة ويحدد حجم الإحداثيات وفقًا لذلك.
+
 ## الخطوة 5: أدخل شكل المجموعة في المستند
- إنشاء`DocumentBuilder` كائن وأدخل`groupShape` في المستند باستخدام`InsertNode` طريقة.
+
+ الآن، دعونا ندخل لدينا`GroupShape` في المستند باستخدام`DocumentBuilder`.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertNode(groupShape);
 ```
 
+`DocumentBuilder` يوفر طريقة سهلة لإضافة العقد، بما في ذلك الأشكال، إلى المستند.
+
 ## الخطوة 6: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام ملف`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithShapes.AddGroupShape.docx".
+
+وأخيرًا، احفظ المستند في الدليل المحدد.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لإضافة شكل مجموعة باستخدام Aspose.Words لـ .NET 
+وهناك لديك! المستند الذي يحتوي على أشكال المجموعة جاهز.
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## خاتمة
 
-	Document doc = new Document();
-	doc.EnsureMinimum();
-	GroupShape groupShape = new GroupShape(doc);
-	Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
-	groupShape.AppendChild(accentBorderShape);
-	Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
-	{
-		Left = 100, Width = 100, Height = 200
-	};
-	groupShape.AppendChild(actionButtonShape);
-	groupShape.Width = 200;
-	groupShape.Height = 200;
-	groupShape.CoordSize = new Size(200, 200);
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.InsertNode(groupShape);
-	doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
-```
+لا يجب أن تكون إضافة أشكال جماعية إلى مستندات Word الخاصة بك عملية معقدة. باستخدام Aspose.Words for .NET، يمكنك إنشاء الأشكال ومعالجتها بسهولة، مما يجعل مستنداتك أكثر جاذبية من الناحية المرئية وعملية. اتبع الخطوات الموضحة في هذا البرنامج التعليمي، وسوف تصبح محترفًا في وقت قصير!
 
-هذا كل شيء! لقد نجحت في إضافة شكل مجموعة يحتوي على أشكال متعددة إلى مستند Word الخاص بك باستخدام Aspose.W
+## الأسئلة الشائعة
+
+### هل يمكنني إضافة أكثر من شكلين إلى GroupShape؟
+ نعم، يمكنك إضافة أي عدد تريده من الأشكال إلى ملف`GroupShape` . مجرد استخدام`AppendChild` طريقة لكل شكل
+
+### هل من الممكن تصميم الأشكال داخل GroupShape؟
+ قطعاً! يمكن تصميم كل شكل على حدة باستخدام الخصائص المتوفرة في`Shape` فصل.
+
+### كيف يمكنني وضع GroupShape داخل المستند؟
+ يمكنك وضع`GroupShape` من خلال تحديدها`Left`و`Top` ملكيات.
+
+### هل يمكنني إضافة نص إلى الأشكال داخل GroupShape؟
+ نعم، يمكنك إضافة نص إلى الأشكال باستخدام`AppendChild` طريقة اضافة أ`Paragraph` تحتوي`Run` العقد مع النص.
+
+### هل من الممكن تجميع الأشكال ديناميكيًا بناءً على إدخال المستخدم؟
+نعم، يمكنك إنشاء الأشكال وتجميعها ديناميكيًا بناءً على إدخال المستخدم عن طريق ضبط الخصائص والأساليب وفقًا لذلك.

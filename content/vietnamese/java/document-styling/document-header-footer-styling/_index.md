@@ -119,7 +119,7 @@ Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu, bao gồm D
 
 ## Phần kết luận
 
-Trong hướng dẫn mở rộng này, chúng tôi đã khám phá nghệ thuật tạo kiểu cho đầu trang và chân trang tài liệu bằng Aspose.Words cho Java. Từ những điều cơ bản về tạo đầu trang và chân trang cho đến các kỹ thuật nâng cao như thêm hình ảnh và số trang động, giờ đây bạn đã có nền tảng vững chắc để làm cho tài liệu của mình trở nên hấp dẫn và chuyên nghiệp về mặt trực quan.
+Trong hướng dẫn mở rộng này, chúng tôi đã khám phá nghệ thuật tạo kiểu cho đầu trang và chân trang tài liệu bằng Aspose.Words cho Java. Từ những điều cơ bản về tạo đầu trang và chân trang đến các kỹ thuật nâng cao như thêm hình ảnh và số trang động, giờ đây bạn đã có nền tảng vững chắc để làm cho tài liệu của mình trở nên hấp dẫn và chuyên nghiệp về mặt hình ảnh.
 
 Hãy nhớ thực hành những kỹ năng này và thử nghiệm các phong cách khác nhau để tìm ra phong cách phù hợp nhất cho tài liệu của bạn. Aspose.Words for Java trao quyền cho bạn toàn quyền kiểm soát định dạng tài liệu của mình, mở ra khả năng vô tận để tạo nội dung tuyệt đẹp.
 

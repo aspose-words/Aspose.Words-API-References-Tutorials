@@ -74,7 +74,7 @@ Gondolj erre úgy, mint az abrosz megterítésére és az első edények elhelye
 
 ## 4. lépés: Hozza létre a második sort egyéni formázással
 
-Legyünk kreatívak a második sorral. Beállítjuk a sor magasságát, másképp igazítjuk a szöveget, és a szöveg tájolásának megváltoztatásával némi finomságot adunk.
+Most pedig legyünk kreatívak a második sorral. Beállítjuk a sor magasságát, másképp igazítjuk a szöveget, és a szöveg tájolásának megváltoztatásával némi finomságot adunk.
 
 ```csharp
 builder.InsertCell();

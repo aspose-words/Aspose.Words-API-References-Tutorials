@@ -10,7 +10,7 @@ url: /ko/net/working-with-fonts/set-font-emphasis-mark/
 
 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 글꼴 강조 스타일을 설정하는 방법을 보여줍니다. 글꼴 강조는 텍스트의 특정 단어나 문구를 강조하는 데 사용됩니다.
 
-## 전제조건
+## 전제 조건
 시작하기 전에 다음 항목이 있는지 확인하세요.
 - C# 프로그래밍 언어에 대한 실무 지식
 - 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리

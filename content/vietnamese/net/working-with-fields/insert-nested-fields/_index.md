@@ -2,68 +2,36 @@
 title: Chèn các trường lồng nhau
 linktitle: Chèn các trường lồng nhau
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách dễ dàng chèn các trường lồng nhau vào tài liệu Word của bạn bằng Aspose.Words dành cho .NET.
+description: Tìm hiểu cách chèn các trường lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Hoàn hảo cho các nhà phát triển muốn tự động hóa việc tạo tài liệu.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/insert-nested-fields/
 ---
+## Giới thiệu
 
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# bên dưới, sử dụng tính năng "Chèn các trường lồng nhau" của Aspose.Words cho .NET. Hãy chắc chắn làm theo từng bước một cách cẩn thận để có được kết quả mong muốn.
+Bạn đã bao giờ thấy mình cần chèn các trường lồng nhau vào tài liệu Word theo chương trình chưa? Có lẽ bạn muốn hiển thị có điều kiện các văn bản khác nhau dựa trên số trang? Vâng, bạn thật may mắn! Hướng dẫn này sẽ hướng dẫn bạn quy trình chèn các trường lồng nhau bằng Aspose.Words cho .NET. Hãy đi sâu vào!
 
-## Bước 1: Thiết lập thư mục tài liệu
+## Điều kiện tiên quyết
 
-Trong mã được cung cấp, bạn phải chỉ định thư mục tài liệu của mình. Thay thế giá trị "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp tới thư mục tài liệu của bạn.
+Trước khi chúng ta bắt đầu, có một số điều bạn cần:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Một IDE như Visual Studio.
+3. Kiến thức cơ bản về C#: Hiểu biết về ngôn ngữ lập trình C#.
 
-## Bước 2: Tạo Tài liệu và DocumentBuilder
+## Nhập không gian tên
 
-Chúng tôi bắt đầu bằng cách tạo một tài liệu mới và khởi tạo DocumentBuilder.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Bước 3: Chèn ngắt trang
-
-Chúng tôi sử dụng vòng lặp để chèn nhiều ngắt trang vào tài liệu.
+Trước tiên, hãy đảm bảo nhập các không gian tên cần thiết trong dự án của bạn. Các không gian tên này chứa các lớp mà bạn sẽ cần để tương tác với Aspose.Words.
 
 ```csharp
-for (int i = 0; i < 5; i++)
-     builder. InsertBreak(BreakType.PageBreak);
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.HeaderFooter;
 ```
 
-## Bước 4: Di chuyển về Footer
+## Bước 1: Khởi tạo tài liệu
 
- Chúng tôi sử dụng`MoveToHeaderFooter()` phương thức của DocumentBuilder để di chuyển con trỏ đến chân trang chính.
-
-```csharp
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
-```
-
-## Bước 5: Chèn trường lồng nhau
-
- Chúng tôi sử dụng DocumentBuilder's`InsertField()` phương pháp chèn một trường lồng nhau vào chân trang.
-
-```csharp
-Field field = builder. InsertField(@"IF ");
-builder.MoveTo(field.Separator);
-builder. InsertField("PAGE");
-builder. Write(" <> ");
-builder.InsertField("NUMPAGES");
-builder.Write(" \"See next page\" \"Last page\" ");
-```
-
- Cuối cùng, chúng tôi gọi`Update()` phương pháp cập nhật trường.
-
-```csharp
-field. Update();
-```
-
-### Mã nguồn mẫu để chèn các trường lồng nhau bằng Aspose.Words cho .NET
+Bước đầu tiên là tạo một tài liệu mới và đối tượng DocumentBuilder. Lớp DocumentBuilder giúp xây dựng và sửa đổi tài liệu Word.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -72,52 +40,79 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Tạo tài liệu và DocumentBuilder.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+## Bước 2: Chèn ngắt trang
+
+Tiếp theo, chúng ta sẽ chèn một vài dấu ngắt trang vào tài liệu. Điều này sẽ cho phép chúng ta thể hiện các trường lồng nhau một cách hiệu quả.
+
+```csharp
 // Chèn ngắt trang.
 for (int i = 0; i < 5; i++)
-     builder. InsertBreak(BreakType.PageBreak);
+{
+    builder.InsertBreak(BreakType.PageBreak);
+}
+```
 
+## Bước 3: Di chuyển về Footer
+
+Sau khi chèn ngắt trang, chúng ta cần di chuyển về chân trang của tài liệu. Đây là nơi chúng ta sẽ chèn trường lồng nhau của mình.
+
+```csharp
 // Di chuyển đến chân trang.
-builder. MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
+```
 
+## Bước 4: Chèn trường lồng nhau
+
+Bây giờ, hãy chèn trường lồng nhau. Chúng tôi sẽ sử dụng trường IF để hiển thị văn bản có điều kiện dựa trên số trang hiện tại.
+
+```csharp
 // Chèn trường lồng nhau.
-Field field = builder. InsertField(@"IF ");
+Field field = builder.InsertField(@"IF ");
 builder.MoveTo(field.Separator);
-builder. InsertField("PAGE");
-builder. Write(" <> ");
+builder.InsertField("PAGE");
+builder.Write(" <> ");
 builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
+```
 
+Trong bước này, trước tiên chúng ta chèn trường IF, di chuyển đến dấu phân cách của nó, sau đó chèn trường TRANG và SỐ. Trường IF kiểm tra xem số trang hiện tại (PAGE) có bằng tổng số trang (NUMPAGES) hay không. Nếu đúng, nó sẽ hiển thị “Xem trang tiếp theo”, nếu không, nó sẽ hiển thị “Trang cuối cùng”.
+
+## Bước 5: Cập nhật trường
+
+Cuối cùng, chúng tôi cập nhật trường này để đảm bảo nó hiển thị đúng văn bản.
+
+```csharp
 // Cập nhật trường.
-field. Update();
+field.Update();
+```
 
+## Bước 6: Lưu tài liệu
+
+Bước cuối cùng là lưu tài liệu vào thư mục được chỉ định của bạn.
+
+```csharp
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-Trong ví dụ này, chúng tôi đã tạo một tài liệu mới, chèn dấu ngắt trang, di chuyển con trỏ đến chân trang, sau đó chèn một trường lồng nhau vào chân trang.
+## Phần kết luận
 
-### Câu hỏi thường gặp
+Và bạn có nó rồi đấy! Bạn đã chèn thành công các trường lồng nhau vào tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp việc thao tác các tài liệu Word theo chương trình trở nên vô cùng dễ dàng. Cho dù bạn đang tạo báo cáo, tạo mẫu hay tự động hóa quy trình làm việc của tài liệu, Aspose.Words đều có thể hỗ trợ bạn.
 
-#### Câu hỏi: Làm cách nào tôi có thể chèn các trường lồng nhau vào tài liệu Word bằng Aspose.Words cho .NET?
+## Câu hỏi thường gặp
 
-Trả lời: Để chèn các trường lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
+### Trường lồng nhau trong tài liệu Word là gì?
+Trường lồng nhau là trường chứa các trường khác bên trong nó. Nó cho phép nội dung phức tạp và có điều kiện hơn trong tài liệu.
 
-1. Lấy đoạn văn mà bạn muốn chèn các trường lồng nhau.
-2.  Tạo một`FieldStart` đối tượng cho trường cha.
-3.  Thêm các trường con bằng cách sử dụng`FieldStart.NextSibling` phương thức truyền tương ứng`FieldStart` đối tượng làm tham số.
+### Tôi có thể sử dụng các trường khác trong trường IF không?
+Có, bạn có thể lồng nhiều trường khác nhau như NGÀY, THỜI GIAN và TÁC GIẢ trong trường IF để tạo nội dung động.
 
-#### Câu hỏi: Lợi ích của việc sử dụng các trường lồng nhau trong tài liệu Word với Aspose.Words dành cho .NET là gì?
+### Aspose.Words cho .NET có miễn phí không?
+ Aspose.Words for .NET là một thư viện thương mại, nhưng bạn có thể tải xuống[dùng thử miễn phí](https://releases.aspose.com/) để thử nó.
 
-Đáp: Việc sử dụng các trường lồng nhau mang lại một số lợi ích trong tài liệu Word với Aspose.Words dành cho .NET. Điều này cho phép linh hoạt hơn trong việc tạo các mẫu tài liệu động, bằng cách cho phép chèn các giá trị biến và phép tính vào các trường lồng nhau. Các trường lồng nhau cũng có thể hỗ trợ việc tạo nội dung tự động, chẳng hạn như tạo bảng nội dung, số trang, v.v.
+### Tôi có thể sử dụng Aspose.Words với các ngôn ngữ .NET khác không?
+Có, Aspose.Words hỗ trợ tất cả các ngôn ngữ .NET, bao gồm VB.NET và F#.
 
-#### Câu hỏi: Tôi có thể có các trường lồng nhau nhiều cấp độ trong tài liệu Word bằng Aspose.Words cho .NET không?
-
-Trả lời: Có, có thể có các trường lồng nhau nhiều cấp độ trong tài liệu Word với Aspose.Words cho .NET. Bạn có thể tạo hệ thống phân cấp phức tạp của các trường lồng nhau bằng cách sử dụng`FieldStart.NextSibling` phương pháp thêm các trường con vào các trường cha hiện có.
-
-#### Câu hỏi: Làm cách nào tôi có thể tùy chỉnh các thuộc tính của các trường lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET?
-
- Trả lời: Để tùy chỉnh các thuộc tính của các trường lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể truy cập vào phần tương ứng`FieldStart` các đối tượng và sửa đổi các thuộc tính của chúng khi cần thiết. Bạn có thể đặt các tùy chọn định dạng, giá trị, phép tính, v.v. của các trường lồng nhau để đạt được kết quả mong muốn.
-
-#### Câu hỏi: Việc chèn các trường lồng nhau có ảnh hưởng đến hiệu suất tài liệu Word với Aspose.Words dành cho .NET không?
-
-Trả lời: Việc chèn các trường lồng nhau có thể ảnh hưởng đến hiệu suất tài liệu Word bằng Aspose.Words dành cho .NET, đặc biệt nếu tài liệu chứa nhiều trường lồng nhau hoặc hệ thống phân cấp phức tạp. Bạn nên tối ưu hóa mã để tránh các thao tác không cần thiết hoặc lặp lại trên các trường lồng nhau để cải thiện hiệu suất.
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+ Bạn có thể tìm tài liệu chi tiết[đây](https://reference.aspose.com/words/net/).

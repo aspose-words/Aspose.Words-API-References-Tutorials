@@ -11,7 +11,7 @@ url: /ko/net/find-and-replace-text/recognize-and-substitutions-within-replacemen
 
 .NET용 Aspose.Words를 사용하여 텍스트 조작의 세계로 흥미로운 여행을 떠나신 것을 환영합니다! 오늘은 문서 처리 작업을 자동화하고 향상시키는 데 중요한 기술인 대체 패턴 내에서 텍스트를 인식하고 대체하는 방법을 살펴보겠습니다. 뛰어들어보자!
 
-## 전제조건
+## 전제 조건
 
 코드를 직접 다루기 전에 필요한 모든 것이 있는지 확인하십시오.
 

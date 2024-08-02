@@ -203,7 +203,7 @@ Kode sumber Kelas HandleMergeField
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Masukkan MERGEFIELD yang bersarang di dalam bidang IF.
+        // Masukkan MERGEFIELD yang disarangkan ke dalam kolom IF.
         // Karena pernyataan kolom IF salah, hasil dari MERGEFIELD bagian dalam tidak akan ditampilkan,
         //dan MERGEFIELD tidak akan menerima data apa pun selama penggabungan surat.
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");

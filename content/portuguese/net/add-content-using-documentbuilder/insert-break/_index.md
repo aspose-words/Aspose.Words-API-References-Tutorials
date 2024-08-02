@@ -16,7 +16,7 @@ Ei! Você está pronto para mergulhar no mundo do Aspose.Words for .NET? Esta po
 Antes de entrarmos no código, vamos ter certeza de que temos tudo o que precisamos:
 
 1.  Biblioteca Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) . Se você é novo no Aspose, talvez queira começar com um[teste grátis](https://releases.aspose.com/).
-2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 3. .NET Framework: certifique-se de ter o .NET Framework instalado.
 4. Conhecimento básico de C#: este tutorial pressupõe que você esteja familiarizado com programação C#.
 

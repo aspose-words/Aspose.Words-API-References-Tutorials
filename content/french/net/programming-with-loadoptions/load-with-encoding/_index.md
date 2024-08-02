@@ -43,7 +43,7 @@ Ensuite, nous devons ajouter Aspose.Words à notre projet. Vous pouvez le faire 
 2. Sélectionnez « Gérer les packages NuGet… »
 3. Recherchez « Aspose.Words » et installez-le.
 
-## Étape 3 : Configurer les options de chargement avec encodage
+## Étape 3 : configurer les options de chargement avec encodage
 
 Maintenant que notre projet est mis en place, passons au code. Nous devons configurer les options de chargement pour spécifier l'encodage souhaité.
 

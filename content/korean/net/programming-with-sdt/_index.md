@@ -17,14 +17,14 @@ url: /ko/net/programming-with-sdt/
 | 제목 | 설명 |
 | --- | --- |
 | [확인란 유형 콘텐츠 제어](./check-box-type-content-control/) | 이 상세한 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 확인란 유형 콘텐츠 제어를 추가하는 방법을 알아보세요. |
-| [체크박스 현황](./current-state-of-check-box/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 확인란 콘텐츠 컨트롤의 현재 상태를 검색하고 설정하는 방법을 알아보세요. |
-| [콘텐츠 컨트롤 수정](./modify-content-controls/) | .NET용 Aspose.Words를 사용하여 Word 문서의 콘텐츠 컨트롤 내에서 텍스트, 드롭다운 목록 및 이미지를 수정하는 방법을 알아보세요. |
-| [콤보 상자 콘텐츠 제어](./combo-box-content-control/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 콤보 상자 콘텐츠 컨트롤을 만드는 방법을 알아보세요. |
-| [서식 있는 텍스트 상자 콘텐츠 제어](./rich-text-box-content-control/) | 텍스트 서식 지정 및 스타일 지정이 가능한 .NET용 Aspose.Words를 사용하여 Word 문서에서 서식 있는 텍스트 상자 콘텐츠 컨트롤을 만드는 방법을 알아보세요. |
-| [콘텐츠 제어 색상 설정](./set-content-control-color/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 콘텐츠 컨트롤의 색상을 설정하고 모양을 사용자 지정하는 방법을 알아보세요. |
+| [체크박스 현황](./current-state-of-check-box/) | .NET용 Aspose.Words를 사용하여 Word 문서의 확인란을 관리하는 방법을 알아보세요. 이 가이드에서는 프로그래밍 방식으로 확인란을 설정, 업데이트 및 저장하는 방법을 다룹니다. |
+| [콘텐츠 컨트롤 수정](./modify-content-controls/) | .NET용 Aspose.Words를 사용하여 Word에서 구조화된 문서 태그를 수정하는 방법을 알아보세요. 텍스트, 드롭다운, 이미지를 단계별로 업데이트하세요. |
+| [콤보 상자 콘텐츠 제어](./combo-box-content-control/) | 자세한 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 콤보 상자 콘텐츠 컨트롤을 만듭니다. 문서의 상호작용성을 향상시키는 데 적합합니다. |
+| [서식 있는 텍스트 상자 콘텐츠 제어](./rich-text-box-content-control/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 서식 있는 텍스트 상자 콘텐츠 컨트롤을 추가하고 사용자 정의하는 방법을 알아보세요. |
+| [콘텐츠 제어 색상 설정](./set-content-control-color/) | .NET용 Aspose.Words를 사용하여 Word에서 구조화된 문서 태그의 색상을 쉽게 설정할 수 있습니다. 이 간단한 가이드를 통해 SDT를 사용자 정의하여 문서 모양을 향상시키세요. |
 | [컨텐츠 제어 지우기](./clear-contents-control/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 콘텐츠 제어를 지우는 방법을 알아보세요. |
-| [SDT를 사용자 정의 Xml 부분에 바인딩](./bind-sdt-to-custom-xml-part/) | .NET용 Aspose.Words를 사용하여 SDT를 사용자 정의 Xml 부분에 바인딩하는 방법을 알아보세요. |
-| [콘텐츠 제어 스타일 설정](./set-content-control-style/) | 일관된 서식을 적용하여 .NET용 Aspose.Words를 사용하여 Word 문서에서 콘텐츠 컨트롤의 스타일을 설정하는 방법을 알아보세요. |
+| [SDT를 사용자 정의 Xml 부분에 바인딩](./bind-sdt-to-custom-xml-part/) | 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 사용자 정의 XML 부분에 구조적 문서 태그(SDT)를 바인딩하는 방법을 알아보세요. |
+| [콘텐츠 제어 스타일 설정](./set-content-control-style/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 콘텐츠 제어 스타일을 설정하는 방법을 알아보세요. 문서 미학을 향상시키는 데 적합합니다. |
 | [사용자 지정 XML 부분에 매핑된 표 반복 구역 만들기](./creating-table-repeating-section-mapped-to-custom-xml-part/) | .NET용 Aspose.Words를 사용하여 Word 문서의 CustomXmlPart에 매핑된 반복 구역이 있는 테이블을 만드는 방법을 알아보세요. |
-| [다중 섹션](./multi-section/) | Aspose.Words for .NET을 사용하여 Word 문서에서 다중 섹션 구조 문서 태그를 검색하고 처리하는 방법을 알아보세요. |
-| [구조화된 문서 태그 범위 시작 Xml 매핑](./structured-document-tag-range-start-xml-mapping/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 구조화된 문서 태그 범위 시작에 대한 XML 매핑을 설정하는 방법을 알아보세요. |
+| [다중 섹션](./multi-section/) | 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words에서 다중 섹션 구조화된 문서 태그로 작업하는 방법을 알아보세요. 동적 문서 조작에 이상적입니다. |
+| [구조화된 문서 태그 범위 시작 Xml 매핑](./structured-document-tag-range-start-xml-mapping/) | .NET용 Aspose.Words를 사용하여 XML 데이터를 Word의 구조화된 문서 태그에 동적으로 바인딩하는 방법을 알아보세요. 단계별 가이드를 따르세요. |

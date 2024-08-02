@@ -276,7 +276,7 @@ Evet, bu kılavuzda gösterildiği gibi Aspose.Words for Java'yı kullanarak bir
 
 ### Tablo başlığı ve açıklamasını ayarlamanın amacı nedir?
 
-Tablo başlığı ve açıklaması ayarlamak belgenizin erişilebilirliğini ve düzenini geliştirerek okuyucuların ve yardımcı teknolojilerin içeriği anlamasını kolaylaştırır.
+Tablo başlığı ve açıklamasının ayarlanması belgenizin erişilebilirliğini ve düzenini geliştirerek okuyucuların ve yardımcı teknolojilerin içeriği anlamasını kolaylaştırır.
 
 ### Bir tablodaki belirli satırlara koşullu biçimlendirmeyi nasıl uygulayabilirim?
 

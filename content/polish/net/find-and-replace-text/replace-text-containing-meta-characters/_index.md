@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ten fragment kodu inicjuje dokument i konfiguruje kreatora. The`dataDir` to baza główna Twojego dokumentu.
+ Ten fragment kodu inicjuje dokument i konfiguruje kreator. The`dataDir` to baza główna Twojego dokumentu.
 
 ## Krok 2: Dostosuj czcionkę i dodaj treść
 

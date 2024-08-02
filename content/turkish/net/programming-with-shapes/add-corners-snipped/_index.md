@@ -2,68 +2,99 @@
 title: Kırpılmış Köşeleri Ekle
 linktitle: Kırpılmış Köşeleri Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir Word belgesine köşeleri kesilmiş bir şekli nasıl ekleyeceğinizi öğrenin.
+description: Aspose.Words for .NET'i kullanarak Word belgelerinize köşelerden kesilmiş şekli nasıl ekleyeceğinizi öğrenin. Bu adım adım kılavuz, belgelerinizi kolayca geliştirebilmenizi sağlar.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/add-corners-snipped/
 ---
+## giriiş
 
- Bu eğitimde Aspose.Words for .NET kullanılarak bir Word belgesine köşeleri kesilmiş bir şeklin nasıl ekleneceği açıklanmaktadır. Köşelerin kesilmiş şekli özelleştirilebilir ve kullanılarak eklenebilir.`InsertShape` yöntem.
+Word belgelerinize özel şekiller eklemek, önemli bilgileri vurgulamanın veya içeriğinize biraz hava katmanın eğlenceli ve görsel olarak çekici bir yolu olabilir. Bu eğitimde, Aspose.Words for .NET'i kullanarak Word belgelerinize "Köşeler Kesilmiş" şekilleri nasıl ekleyebileceğinizi ele alacağız. Bu kılavuz, bu şekilleri zahmetsizce ekleyebilmenizi ve belgelerinizi bir profesyonel gibi özelleştirebilmenizi sağlayarak her adımda size yol gösterecektir.
 
 ## Önkoşullar
-Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- Aspose.Words for .NET kütüphanesi kuruldu.
-- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
+Koda geçmeden önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+1.  Aspose.Words for .NET: Henüz yapmadıysanız, en son sürümü şu adresten indirin:[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Geliştirme ortamınızı ayarlayın. Visual Studio popüler bir seçimdir ancak .NET'i destekleyen herhangi bir IDE'yi kullanabilirsiniz.
+3.  Lisans: Yalnızca deneme yapıyorsanız,[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) Tam işlevselliğin kilidini açmak için.
+4. Temel C# Anlayışı: C# programlamaya aşinalık, örnekleri takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words for .NET ile çalışmaya başlamadan önce gerekli ad alanlarını içe aktarmamız gerekiyor. Bunları C# dosyanızın en üstüne ekleyin:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
+Şimdi "Köşeleri Kesilmiş" şekli ekleme sürecini birden çok adıma ayıralım. Her şeyin sorunsuz çalıştığından emin olmak için bu adımları yakından izleyin.
+
+## Adım 1: Document'ı ve DocumentBuilder'ı başlatın
+
+ Yapmamız gereken ilk şey yeni bir belge oluşturmak ve bir başlangıç değeri oluşturmaktır.`DocumentBuilder` nesne. Bu oluşturucu belgemize içerik eklememize yardımcı olacaktır.
 
 ```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 3: Kesilmiş Köşeleri Ekleme
- Kullan`InsertShape` yöntemi`DocumentBuilder` Köşeleri kesilmiş bir şekil eklemek için nesne. Şekil türünü belirtin (bu durumda,`ShapeType.TopCornersSnipped`) ve şekil için istenen boyutu sağlayın.
+ Bu adımda belgemizi ve oluşturucumuzu kurduk. Düşün`DocumentBuilder` Dijital kaleminiz olarak Word belgenize yazmaya ve çizmeye hazır olun.
+
+## Adım 2: Kesilmiş Köşeleri Ekleme
+
+ Daha sonra kullanacağımız`DocumentBuilder` "Köşeler Kesildi" şekli eklemek için. Bu şekil türü Aspose.Words'te önceden tanımlanmıştır ve tek bir kod satırıyla kolayca eklenebilir.
 
 ```csharp
 builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
-## Adım 4: Belgeyi Kaydedin
- Belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.AddCornersSnipped.docx" olarak kaydediyoruz.
+Burada şeklin tipini ve boyutlarını (50x50) belirtiyoruz. Belgenizin üzerine küçük, mükemmel şekilde kesilmiş bir köşe çıkartması yerleştirdiğinizi hayal edin. 
+
+## 3. Adım: Uyumlulukla Kaydetme Seçeneklerini Tanımlayın
+
+Belgemizi kaydetmeden önce belgemizin belirli standartlara uygun olmasını sağlamak için kaydetme seçeneklerini tanımlamamız gerekir. biz kullanacağız`OoxmlSaveOptions` Bunun için sınıf.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 {
     Compliance = OoxmlCompliance.Iso29500_2008_Transitional
 };
+```
+
+Bu kaydetme seçenekleri, belgemizin uyumluluk ve belge ömrü açısından çok önemli olan ISO/IEC 29500:2008 standardına uygun olmasını sağlar.
+
+## Adım 4: Belgeyi Kaydedin
+
+Son olarak daha önce tanımladığımız kaydetme seçeneklerini kullanarak belgemizi belirtilen dizine kaydediyoruz.
+
+```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 ```
 
-### Aspose.Words for .NET kullanarak Alıntılanan Köşeleri Ekleme için örnek kaynak kodu 
+Ve böylece, belgeniz artık gerekli uyumluluk seçenekleriyle kaydedilmiş özel bir "Köşeler Kesilmiş" şekli içeriyor.
 
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Çözüm
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
-	OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
-	{
-		Compliance = OoxmlCompliance.Iso29500_2008_Transitional
-	};
-	doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
+İşte aldın! Aspose.Words for .NET'i kullanarak Word belgelerinize özel şekiller eklemek basittir ve belgelerinizin görsel çekiciliğini büyük ölçüde artırabilir. Bu adımları izleyerek kolayca "Köşeler Kesilmiş" şekli ekleyebilir ve belgenizin gerekli standartları karşıladığından emin olabilirsiniz. Mutlu kodlama!
 
-```
+## SSS'ler
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenize başarıyla köşelerden kesilmiş bir şekil eklediniz.
+### "Kesilmiş Köşeler" şeklinin boyutunu özelleştirebilir miyim?
+Evet, boyutları değiştirerek boyutu ayarlayabilirsiniz.`InsertShape` yöntem.
+
+### Başka türde şekiller eklemek mümkün mü?
+ Kesinlikle! Aspose.Words çeşitli şekilleri destekler. Sadece değiştir`ShapeType` istediğiniz şekle getirin.
+
+### Aspose.Words'ü kullanmak için lisansa ihtiyacım var mı?
+Ücretsiz deneme sürümünü veya geçici lisansı kullanabilirsiniz ancak sınırsız kullanım için tam lisans gereklidir.
+
+### Şekillere nasıl daha fazla stil uygulayabilirim?
+Şekillerin görünümünü ve davranışını özelleştirmek için Aspose.Words tarafından sağlanan ek özellik ve yöntemleri kullanabilirsiniz.
+
+### Aspose.Words diğer formatlarla uyumlu mu?
+Evet, Aspose.Words, DOCX, PDF, HTML ve daha fazlasını içeren birden fazla belge formatını destekler.

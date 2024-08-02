@@ -204,7 +204,7 @@ Auf jeden Fall! Aspose.Words ermöglicht Ihnen die Automatisierung der Dokumente
 
 ### Wo finde ich weitere Informationen zu den Python-Funktionen von Aspose.Words?
 
-Ausführliche Informationen zu den Python-Funktionen von Aspose.Words finden Sie im[Dokumentation](https://reference.aspose.com/words/python-net/).
+ Ausführliche Informationen zu den Python-Funktionen von Aspose.Words finden Sie im[Dokumentation](https://reference.aspose.com/words/python-net/).
 
 ### Wie speichere ich mein Dokument mit Aspose.Words im PDF-Format?
 

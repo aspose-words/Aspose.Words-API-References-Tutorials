@@ -102,7 +102,7 @@ masz to! Pomyślnie wyliczyłeś zarówno wbudowane, jak i niestandardowe właś
 ### Czy mogę dodać nowe właściwości do dokumentu?
  Tak, możesz dodać nowe właściwości niestandardowe za pomocą`CustomDocumentProperties` kolekcja.
 
-### Czy korzystanie z Aspose.Words jest bezpłatne?
+### Czy korzystanie z Aspose.Words jest darmowe?
  Aspose.Words oferuje[bezpłatna wersja próbna](https://releases.aspose.com/) i różne[opcje zakupu](https://purchase.aspose.com/buy).
 
 ### Jak uzyskać wsparcie dla Aspose.Words?

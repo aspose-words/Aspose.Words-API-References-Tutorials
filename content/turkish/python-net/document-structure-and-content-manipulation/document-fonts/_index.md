@@ -43,7 +43,7 @@ Metin hizalaması belgenin estetiğini etkiler. Gösterişli bir görünüm içi
 
 Başlıklar ve alt başlıklar içeriği düzenler ve okuyuculara belgenin yapısı boyunca rehberlik eder. Başlıkları normal metinlerden ayırmak için daha büyük yazı tipleri ve kalın stiller kullanın.
 
-## Python için Aspose.Words ile Stil Uygulama
+## Aspose.Words for Python ile Stil Uygulama
 
 Aspose.Words for Python, Word belgelerini programlı olarak oluşturmak ve değiştirmek için güçlü bir araçtır. Bu API'yi kullanarak yazı tipi ve metin stilinin nasıl uygulanacağını keşfedelim.
 

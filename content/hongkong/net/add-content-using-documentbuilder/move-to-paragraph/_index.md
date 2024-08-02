@@ -88,7 +88,7 @@ builder.Writeln("This is the 3rd paragraph.");
 絕對地！您可以使用以下命令插入文字、圖像、表格等`DocumentBuilder`班級。
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
-是的，Aspose.Words for .NET 需要完整功能的授權。您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
+是的，Aspose.Words for .NET 需要完整功能的授權。你可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
 
 ### 在哪裡可以找到更詳細的文件？
 你可以找到詳細的文檔[這裡](https://reference.aspose.com/words/net/).

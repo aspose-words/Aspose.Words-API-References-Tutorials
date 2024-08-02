@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Q: Aspose.Words for .NET を使用してバルーンにリビジョンを表示するにはどうすればよいですか?
 
- A:`ShowInBalloons`の財産`RevisionOptions`オブジェクトを使用して、バルーン内のリビジョンの表示を設定します。このプロパティは`ShowInBalloons.FormatAndDelete`削除および書式設定の変更をバルーンで表示します。
+ A:`ShowInBalloons`の財産`RevisionOptions`オブジェクトを使用して、バルーン内のリビジョンの表示を設定します。このプロパティは`ShowInBalloons.FormatAndDelete`削除や書式設定の変更をバルーンで表示します。
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

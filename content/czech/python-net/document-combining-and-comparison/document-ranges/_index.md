@@ -124,7 +124,7 @@ for section in doc.sections:
 
 ## Správa hypertextových odkazů
 
-Hypertextové odkazy hrají v moderních dokumentech zásadní roli. Procházení hypertextových odkazů zajišťuje, že fungují správně:
+Hypertextové odkazy hrají v moderních dokumentech zásadní roli. Procházení hypertextových odkazů zajišťuje jejich správnou funkci:
 
 ```python
 for hyperlink in doc.range.get_child_nodes(NodeType.FIELD_HYPERLINK, True):

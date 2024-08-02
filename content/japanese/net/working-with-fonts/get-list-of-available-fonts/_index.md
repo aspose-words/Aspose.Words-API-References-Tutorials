@@ -85,7 +85,7 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
  A: Aspose.Wordsで利用可能なフォントのリストを取得するには、`FontsProvider`クラスと`GetAvailableFonts`メソッド。このメソッドは、システムにインストールされているすべてのフォントのリストを返します。
 
-#### Q: Aspose.Words で、特定の基準で使用可能なフォントのリストをフィルターできますか?
+#### Q: Aspose.Words で、特定の条件で使用可能なフォントのリストをフィルターできますか?
 
 A: はい、特定の条件を使用して、Aspose.Words で使用可能なフォントのリストをフィルターできます。たとえば、フォントをファミリ、スタイル、言語でフィルターできます。
 

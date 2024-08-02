@@ -176,7 +176,7 @@ doc.save("output.png", imageOptions);
 Μπορείτε να αποδώσετε συγκεκριμένες σελίδες ενός εγγράφου, επιτρέποντάς σας να εμφανίσετε συγκεκριμένες ενότητες ή να δημιουργήσετε προεπισκοπήσεις αποτελεσματικά.
 
 ```java
-// Απόδοση συγκεκριμένου εύρους σελίδων
+// Απόδοση συγκεκριμένης περιοχής σελίδων
 int startPage = 3;
 int endPage = 5;
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);

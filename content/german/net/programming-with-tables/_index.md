@@ -16,26 +16,26 @@ Wenn Sie diese Tutorials befolgen, können Sie die Tabellenbearbeitungsfunktione
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Tabelle automatisch an Inhalt anpassen](./auto-fit-table-to-contents/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle automatisch an ihren Inhalt in einem Word-Dokument anpassen. |
-| [Vollständige Tabelle klonen](./clone-complete-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine ganze Tabelle in ein Word-Dokument klonen. |
-| [Suchindex](./finding-index/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellen-, Zeilen- und Zellenindizes in einem Word-Dokument finden. |
+| [Tabelle automatisch an Inhalt anpassen](./auto-fit-table-to-contents/) | Erfahren Sie in diesem Handbuch, wie Sie Tabellen mit Aspose.Words für .NET automatisch an den Inhalt von Word-Dokumenten anpassen. Perfekt für dynamische und saubere Dokumentformatierung. |
+| [Vollständige Tabelle klonen](./clone-complete-table/) | Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET vollständige Tabellen in Word-Dokumenten klonen. |
+| [Suchindex](./finding-index/) | Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET den Index von Tabellen, Zeilen und Zellen in Word-Dokumenten finden. |
 | [Tabelle direkt einfügen](./insert-table-directly/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellen direkt in Word-Dokumente einfügen. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung, um Ihre Dokumenterstellung zu optimieren. |
-| [Tabelle aus HTML einfügen](./insert-table-from-html/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle aus HTML in ein Word-Dokument einfügen. |
-| [Einfache Tabelle erstellen](./create-simple-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine einfache Tabelle in einem Word-Dokument erstellen. |
-| [Formatierte Tabelle](./formatted-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine formatierte Tabelle in einem Word-Dokument erstellen. |
-| [Verschachtelte Tabelle](./nested-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine verschachtelte Tabelle in einem Word-Dokument erstellen. |
-| [Zeilen kombinieren](./combine-rows/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzeilen in einem Word-Dokument kombinieren. |
-| [Geteilte Tabelle](./split-table/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument aufteilen. |
-| [Zeilenformat: Umbruch über mehrere Seiten deaktivieren](./row-format-disable-break-across-pages/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET den Zeilenumbruch für eine Tabelle über mehrere Seiten in einem Word-Dokument deaktivieren. |
-| [Tisch zusammenhalten](./keep-table-together/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument zusammenhalten. |
-| [Vertikale Zusammenführung](./vertical-merge/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in einer Tabelle in einem Word-Dokument vertikal zusammenführen. |
-| [Horizontale Zusammenführung](./horizontal-merge/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in einer Word-Tabelle horizontal zusammenführen. |
-| [In horizontal verbundene Zellen konvertieren](./convert-to-horizontally-merged-cells/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzellen in horizontal verbundene Zellen in einem Word-Dokument konvertieren. |
-| [Zeilen auf nachfolgenden Seiten wiederholen](./repeat-rows-on-subsequent-pages/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzeilen auf nachfolgenden Seiten in einem Word-Dokument wiederholen. |
+| [Tabelle aus HTML einfügen](./insert-table-from-html/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle aus HTML in ein Word-Dokument einfügen. Folgen Sie unserer ausführlichen Anleitung zur nahtlosen Dokumentintegration. |
+| [Einfache Tabelle erstellen](./create-simple-table/) | Erfahren Sie in unserer umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine einfache Tabelle in einem Word-Dokument erstellen. |
+| [Formatierte Tabelle](./formatted-table/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Tabellen in Word-Dokumenten erstellen und formatieren. |
+| [Verschachtelte Tabelle](./nested-table/) | Erfahren Sie in unserem Handbuch, wie Sie mit Aspose.Words für .NET verschachtelte Tabellen in Word-Dokumenten erstellen. Perfekt zum programmgesteuerten Generieren komplexer Dokumentlayouts. |
+| [Zeilen kombinieren](./combine-rows/) | Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Zeilen aus mehreren Tabellen zu einer zusammenfassen. |
+| [Geteilte Tabelle](./split-table/) | Erfahren Sie, wie Sie Tabellen in Word-Dokumenten mit Aspose.Words für .NET aufteilen. Unsere Schritt-für-Schritt-Anleitung macht die Tabellenverwaltung einfach und effizient. |
+| [Zeilenformat: Umbruch über mehrere Seiten deaktivieren](./row-format-disable-break-across-pages/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET seitenübergreifende Zeilenumbrüche in Word-Dokumenten deaktivieren, um die Lesbarkeit und Formatierung der Tabelle beizubehalten. |
+| [Tisch zusammenhalten](./keep-table-together/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET verhindern, dass Tabellen in Word-Dokumenten über mehrere Seiten verteilt werden. Folgen Sie unserer Anleitung, um professionelle, lesbare Dokumente zu erhalten. |
+| [Vertikale Zusammenführung](./vertical-merge/) | Meistern Sie das vertikale Zusammenführen in Word-Tabellen mit Aspose.Words für .NET mit dieser ausführlichen Anleitung. Erfahren Sie Schritt-für-Schritt-Anleitungen für die professionelle Dokumentformatierung. |
+| [Horizontale Zusammenführung](./horizontal-merge/) | Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET Zellen in einem Word-Dokument horizontal zusammenführen. |
+| [In horizontal verbundene Zellen konvertieren](./convert-to-horizontally-merged-cells/) | Konvertieren Sie vertikal verbundene Zellen in horizontal verbundene Zellen in Word-Dokumenten mit Aspose.Words für .NET. Schritt-für-Schritt-Anleitung für ein nahtloses Tabellenlayout. |
+| [Zeilen auf nachfolgenden Seiten wiederholen](./repeat-rows-on-subsequent-pages/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente mit sich wiederholenden Tabellenkopfzeilen erstellen. Folgen Sie dieser Anleitung, um professionelle und ansprechende Dokumente zu erhalten. |
 | [Automatisch an Fenster anpassen](./auto-fit-to-page-width/) | Mit dieser Schritt-für-Schritt-Anleitung können Sie Tabellen mithilfe von Aspose.Words für .NET ganz einfach automatisch an das Fenster in Word-Dokumenten anpassen. Perfekt für sauberere, professionelle Dokumente. |
 | [Bevorzugte Breiteneinstellungen](./preferred-width-settings/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie in Aspose.Words für .NET Tabellen mit absoluten, relativen und automatischen Breiteneinstellungen erstellen. |
-| [Bevorzugten Breitentyp abrufen](./retrieve-preferred-width-type/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET den Typ und den bevorzugten Breitenwert einer Zelle in einer Word-Tabelle abrufen. |
-| [Tabellenposition abrufen](./get-table-position/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Position einer Tabelle in einem Word-Dokument abrufen. |
-| [Schwebende Tabellenposition abrufen](./get-floating-table-position/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Position schwebender Tabellen in einem Word-Dokument abrufen. |
-| [Schwebende Tischposition](./floating-table-position/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einer schwebenden Position in einem Word-Dokument positionieren. |
-| [Relative horizontale oder vertikale Position festlegen](./set-relative-horizontal-or-vertical-position/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die relative horizontale oder vertikale Position einer Tabelle in einem Word-Dokument festlegen. |
+| [Bevorzugten Breitentyp abrufen](./retrieve-preferred-width-type/) | Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die bevorzugte Breite von Tabellenzellen in Word-Dokumenten abrufen. |
+| [Tabellenposition abrufen](./get-table-position/) | Entdecken Sie mit unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die Position einer Tabelle in Word-Dokumenten bestimmen. |
+| [Schwebende Tabellenposition abrufen](./get-floating-table-position/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET schwebende Tabellenpositionen in Word-Dokumenten erhalten. Diese detaillierte Schritt-für-Schritt-Anleitung führt Sie durch alles, was Sie wissen müssen. |
+| [Schwebende Tischposition](./floating-table-position/) | Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die schwebende Position von Tabellen in Word-Dokumenten steuern. |
+| [Relative horizontale oder vertikale Position festlegen](./set-relative-horizontal-or-vertical-position/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET relative horizontale und vertikale Positionen für Tabellen in Word-Dokumenten festlegen. |

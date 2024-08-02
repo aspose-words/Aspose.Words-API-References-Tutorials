@@ -9,7 +9,7 @@ url: /nl/net/programming-with-odtsaveoptions/measure-unit/
 ---
 ## Invoering
 
-Heeft u ooit uw Word-documenten naar verschillende formaten moeten converteren, maar had u een specifieke maateenheid nodig voor uw lay-out? Of u nu te maken heeft met inches, centimeters of punten, het is van cruciaal belang dat uw document tijdens het conversieproces zijn integriteit behoudt. In deze zelfstudie laten we zien hoe u de functie voor maateenheden in Aspose.Words voor .NET kunt configureren. Deze krachtige functie zorgt ervoor dat de opmaak van uw document precies zo blijft als u deze nodig heeft bij het converteren naar ODT-indeling (Open Document Text).
+Heeft u ooit uw Word-documenten naar verschillende formaten moeten converteren, maar had u een specifieke maateenheid nodig voor uw lay-out? Of u nu te maken heeft met inches, centimeters of punten, het is van cruciaal belang dat uw document tijdens het conversieproces zijn integriteit behoudt. In deze zelfstudie laten we zien hoe u de functie voor maateenheden in Aspose.Words voor .NET kunt configureren. Deze krachtige functie zorgt ervoor dat de opmaak van uw document precies behouden blijft zoals u deze nodig heeft bij het converteren naar ODT-indeling (Open Document Text).
 
 ## Vereisten
 

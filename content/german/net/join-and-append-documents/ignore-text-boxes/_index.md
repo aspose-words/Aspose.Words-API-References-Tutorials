@@ -119,5 +119,5 @@ Sie haben erfolgreich zwei Word-Dokumente mit Aspose.Words für .NET zusammengef
 ### Wo finde ich ausführlichere Dokumentation?
  Die ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/).
 
-### Wie kann ich Support für Aspose.Words für .NET erhalten?
+### Wie erhalte ich Support für Aspose.Words für .NET?
  Für Support besuchen Sie die Aspose-Foren[Hier](https://forum.aspose.com/c/words/8).

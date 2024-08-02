@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizi yalnızca birkaç satır kodla 1Bpp indeksli bir görüntüye dönüştürdünüz. Bu yöntem, belgelerinizden yüksek kontrastlı, yerden tasarruf sağlayan görüntüler oluşturmak için inanılmaz derecede kullanışlıdır. Artık bunu projelerinize ve iş akışlarınıza kolayca entegre edebilirsiniz. Mutlu kodlama!
+İşte buyur! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla Word belgenizi 1Bpp indeksli bir görüntüye dönüştürdünüz. Bu yöntem, belgelerinizden yüksek kontrastlı, yerden tasarruf sağlayan görüntüler oluşturmak için inanılmaz derecede kullanışlıdır. Artık bunu projelerinize ve iş akışlarınıza kolayca entegre edebilirsiniz. Mutlu kodlama!
 
 ## SSS'ler
 

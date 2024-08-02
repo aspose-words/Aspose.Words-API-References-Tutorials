@@ -2,63 +2,42 @@
 title: Přejmenujte slučovací pole
 linktitle: Přejmenujte slučovací pole
 second_title: Aspose.Words API pro zpracování dokumentů
-description: V tomto tutoriálu se naučíte, jak přejmenovat slučovací pole v dokumentu pomocí Aspose.Words for .NET.
+description: Naučte se přejmenovat slučovací pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem pro snadnou manipulaci s dokumenty.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/rename-merge-fields/
 ---
+## Úvod
 
-Zde je průvodce krok za krokem, který vysvětluje zdrojový kód C# níže, který používá funkci přejmenování slučovacích polí Aspose.Words pro .NET. Pečlivě dodržujte každý krok, abyste dosáhli požadovaných výsledků.
+Přejmenování slučovacích polí v dokumentech aplikace Word může být náročný úkol, pokud nejste obeznámeni se správnými nástroji a technikami. Ale nebojte se, mám vás zajištěné! V této příručce se ponoříme do procesu přejmenování slučovacích polí pomocí Aspose.Words for .NET, výkonné knihovny, se kterou je manipulace s dokumenty hračkou. Ať už jste zkušený vývojář nebo teprve začínáte, tento návod vás krok za krokem provede vším, co potřebujete vědět.
 
-## Krok 1: Nastavení adresáře dokumentů
+## Předpoklady
 
-V poskytnutém kódu musíte zadat adresář vašich dokumentů. Nahraďte hodnotu „VÁŠ ADRESÁŘ DOKUMENTŮ“ příslušnou cestou k adresáři vašich dokumentů.
+Než se ponoříme do hrubších detailů, ujistěte se, že máte vše, co potřebujete:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
+- Základní znalost C#: Užitečná bude znalost programování v C#.
 
-## Krok 2: Vytvoření dokumentu a vložení slučovacích polí
+## Importovat jmenné prostory
 
-Začneme vytvořením nového dokumentu a pomocí a`DocumentBuilder` pro vložení slučovacích polí.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
-builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
-```
-
-## Krok 3: Přejmenování slučovacích polí
-
-Procházíme každým polem v rozsahu dokumentů, a pokud se jedná o slučovací pole, přejmenujeme pole přidáním "_Přejmenovaná" přípona.
+Nejprve importujme potřebné jmenné prostory. To zajistí, že náš kód bude mít přístup ke všem třídám a metodám, které potřebujeme.
 
 ```csharp
-foreach(Field f in doc.Range.Fields)
-{
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
-}
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Krok 4: Uložení dokumentu
+Dobře, teď, když máme základy z cesty, pojďme se pustit do zábavné části! Chcete-li přejmenovat slučovací pole v dokumentech aplikace Word, postupujte takto.
 
- Nakonec zavoláme`Save()` způsob uložení upraveného dokumentu.
+## Krok 1: Vytvořte dokument a vložte slučovací pole
 
-```csharp
-doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
-```
-
-### Příklad zdrojového kódu pro přejmenování slučovacích polí pomocí Aspose.Words pro .NET
+Chcete-li začít, musíme vytvořit nový dokument a vložit některá slučovací pole. To nám poslouží jako výchozí bod.
 
 ```csharp
 // Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Vytvořte dokument a vložte slučovací pole.
 Document doc = new Document();
@@ -66,42 +45,62 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
+```
 
+ Zde vytváříme nový dokument a používáme`DocumentBuilder` třídy pro vložení dvou slučovacích polí:`MyMergeField1`a`MyMergeField2`.
+
+## Krok 2: Iterujte přes pole a přejmenujte je
+
+Nyní napíšeme kód pro vyhledání a přejmenování slučovacích polí. Projdeme všechna pole v dokumentu, zkontrolujeme, zda jde o slučovací pole, a přejmenujeme je.
+
+```csharp
 // Přejmenujte slučovací pole.
-foreach(Field f in doc.Range.Fields)
+foreach (Field f in doc.Range.Fields)
 {
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
+    if (f.Type == FieldType.FieldMergeField)
+    {
+        FieldMergeField mergeField = (FieldMergeField)f;
+        mergeField.FieldName = mergeField.FieldName + "_Renamed";
+        mergeField.Update();
+    }
 }
+```
 
+ V tomto úryvku používáme a`foreach` smyčka pro iteraci všech polí v dokumentu. U každého pole zkontrolujeme, zda se jedná o slučovací pole pomocí`f.Type == FieldType.FieldMergeField` . Pokud ano, pošleme to`FieldMergeField` a připojit`_Renamed` ke svému jménu.
+
+## Krok 3: Uložte dokument
+
+Nakonec uložme náš dokument s přejmenovanými slučovacími poli.
+
+```csharp
 // Uložte dokument.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-Chcete-li přejmenovat slučovací pole v dokumentu pomocí Aspose.Words for .NET, postupujte takto.
+ Tento řádek kódu uloží dokument do zadaného adresáře s názvem`WorkingWithFields.RenameMergeFields.docx`.
 
-### FAQ
+## Závěr
 
-#### Otázka: Jak mohu přejmenovat sloučená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+tady to máte! Přejmenování slučovacích polí v dokumentech aplikace Word pomocí Aspose.Words for .NET je jednoduché, jakmile budete znát kroky. Podle této příručky můžete snadno manipulovat a upravovat své dokumenty Word tak, aby vyhovovaly vašim potřebám. Ať už generujete zprávy, vytváříte personalizované dopisy nebo spravujete data, tato technika se vám bude hodit.
 
- A: Chcete-li přejmenovat sloučená pole v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete procházet pole v dokumentu pomocí`FieldMergingArgs` třídy a použijte`FieldMergingArgs.FieldName` způsob přejmenování pole.
+## FAQ
 
-#### Otázka: Je možné pomocí Aspose.Words for .NET přejmenovat pouze určitá sloučená pole v dokumentu aplikace Word?
+### Mohu přejmenovat více slučovacích polí najednou?
 
-Odpověď: Ano, pomocí Aspose.Words for .NET je možné přejmenovat pouze určitá sloučená pole v dokumentu aplikace Word. Pole, která chcete přejmenovat, můžete filtrovat pomocí specifických kritérií, jako je název pole nebo jiné relevantní vlastnosti. Poté můžete odpovídající pole přejmenovat pomocí`FieldMergingArgs.FieldName` metoda.
+Absolutně! Poskytnutý kód již ukazuje, jak procházet a přejmenovat všechna slučovací pole v dokumentu.
 
-#### Otázka: Jak mohu zkontrolovat, zda bylo sloučené pole úspěšně přejmenováno v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Co se stane, když slučovací pole neexistuje?
 
- Odpověď: Chcete-li zkontrolovat, zda bylo sloučené pole úspěšně přejmenováno v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete použít`FieldMergedArgs` třídy a přístup k`FieldMergedArgs.IsMerged` vlastnost k určení, zda bylo pole přejmenováno pomocí hitu.
+Pokud slučovací pole neexistuje, kód jej jednoduše přeskočí. Nebudou vyvolány žádné chyby.
 
-#### Otázka: Jaké jsou důsledky přejmenování sloučeného pole v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Mohu změnit předponu místo připojení ke jménu?
 
-Odpověď: Když přejmenujete sloučené pole v dokumentu aplikace Word pomocí Aspose.Words for .NET, změní se název pole v dokumentu, což může ovlivnit další funkce nebo procesy, které závisí na názvu pole. Před přejmenováním sloučených polí nezapomeňte zvážit tyto možné důsledky.
+ Ano, můžete upravit`mergeField.FieldName` přiřazení a nastavte jej na libovolnou hodnotu.
 
-#### Otázka: Je možné obnovit původní název sloučeného pole po jeho přejmenování pomocí Aspose.Words for .NET?
+### Je Aspose.Words for .NET zdarma?
 
-Odpověď: Ano, je možné obnovit původní název sloučeného pole po jeho přejmenování pomocí Aspose.Words for .NET. Původní název pole můžete uložit do proměnné nebo seznamu a poté v případě potřeby použít tyto informace k obnovení původního názvu.
+ Aspose.Words for .NET je komerční produkt, ale můžete použít a[zkušební verze zdarma](https://releases.aspose.com/) vyhodnotit to.
+
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+
+ Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).

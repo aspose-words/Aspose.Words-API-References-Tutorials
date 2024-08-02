@@ -12,7 +12,7 @@ url: /ko/java/document-manipulation/using-fields/
 
 이 단계별 가이드에서는 Aspose.Words for Java의 필드를 사용하는 방법을 살펴보겠습니다. 필드는 문서에 데이터를 동적으로 삽입할 수 있는 강력한 자리 표시자입니다. 기본 필드 병합, 조건부 필드, 이미지 작업, 교대 행 형식 지정 등 다양한 시나리오를 다룹니다. 각 시나리오에 대한 Java 코드 조각과 설명을 제공합니다.
 
-## 전제조건
+## 전제 조건
 
  시작하기 전에 Aspose.Words for Java가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/java/).
 

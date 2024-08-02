@@ -86,7 +86,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 
 ### 3.2. lépés: Állítsa be a CSS-osztálynév előtagját
 
- Most állítsuk be a`CssClassNamePrefix` tulajdonságot a kívánt előtaghoz. Ehhez a példához használjuk`"pfx_"`.
+ Most állítsuk be a`CssClassNamePrefix` tulajdonságot a kívánt előtaghoz. Ebben a példában használjuk`"pfx_"`.
 
 ```csharp
 saveOptions.CssClassNamePrefix = "pfx_";

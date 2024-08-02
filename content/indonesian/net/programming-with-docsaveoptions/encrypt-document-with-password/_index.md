@@ -9,7 +9,7 @@ url: /id/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
 ## Perkenalan
 
-Pernah merasa perlu mengamankan dokumen dengan kata sandi? Kamu tidak sendiri. Dengan meningkatnya dokumentasi digital, melindungi informasi sensitif menjadi lebih penting dari sebelumnya. Aspose.Words untuk .NET menawarkan cara yang mulus untuk mengenkripsi dokumen Anda dengan kata sandi. Bayangkan itu seperti mengunci buku harian Anda. Hanya mereka yang memiliki kunci (atau kata sandi, dalam hal ini) yang dapat mengintip ke dalam. Mari selami bagaimana Anda dapat mencapai hal ini, langkah demi langkah.
+Pernahkah Anda merasa perlu mengamankan dokumen dengan kata sandi? Kamu tidak sendiri. Dengan meningkatnya dokumentasi digital, melindungi informasi sensitif menjadi lebih penting dari sebelumnya. Aspose.Words untuk .NET menawarkan cara yang mulus untuk mengenkripsi dokumen Anda dengan kata sandi. Bayangkan itu seperti mengunci buku harian Anda. Hanya mereka yang memiliki kunci (atau kata sandi, dalam hal ini) yang dapat mengintip ke dalam. Mari selami bagaimana Anda dapat mencapai hal ini, langkah demi langkah.
 
 ## Prasyarat
 
@@ -23,7 +23,7 @@ Punya segalanya? Besar! Mari kita lanjutkan ke penyiapan proyek kita.
 
 ## Impor Namespace
 
-Sebelum kita mulai, Anda perlu mengimpor namespace yang diperlukan. Pikirkan ruang nama sebagai perangkat yang Anda perlukan untuk proyek DIY Anda.
+Sebelum kita mulai, Anda harus mengimpor namespace yang diperlukan. Bayangkan namespace sebagai perangkat yang Anda perlukan untuk proyek DIY Anda.
 
 ```csharp
 using Aspose.Words;

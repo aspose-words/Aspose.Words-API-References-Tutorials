@@ -73,7 +73,7 @@ Als de laadopties zijn geconfigureerd, kunt u nu uw document laden.
 Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ```
 
-2. Controleer of het document is geladen - Zorg ervoor dat het document correct is geladen door de eigenschappen ervan te controleren of door eenvoudigweg het project uit te voeren om te zien of er fouten optreden.
+2. Controleer de documentlading - Zorg ervoor dat het document correct wordt geladen door de eigenschappen ervan te controleren of door eenvoudigweg het project uit te voeren om te zien of er fouten optreden.
 
 ## Conclusie
 

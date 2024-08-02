@@ -191,4 +191,4 @@ La direzione del testo è essenziale per i documenti contenenti scritture o ling
 
 ### Aspose.Words per Java è adatto a progetti commerciali?
 
-Sì, Aspose.Words per Java è adatto sia a progetti personali che commerciali. Offre opzioni di licenza per soddisfare vari scenari di utilizzo. Assicurati di rivedere i termini di licenza e i prezzi sul sito Web Aspose per scegliere la licenza appropriata per il tuo progetto.
+Sì, Aspose.Words per Java è adatto sia a progetti personali che commerciali. Offre opzioni di licenza per soddisfare vari scenari di utilizzo. Assicurati di rivedere i termini di licenza e i prezzi sul sito Web di Aspose per scegliere la licenza appropriata per il tuo progetto.

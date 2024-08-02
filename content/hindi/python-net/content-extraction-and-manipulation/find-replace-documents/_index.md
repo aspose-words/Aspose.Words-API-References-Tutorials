@@ -18,7 +18,7 @@ url: /hi/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 1.  पायथन इंस्टॉलेशन: सुनिश्चित करें कि आपके सिस्टम पर पायथन इंस्टॉल है। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://www.python.org/downloads/).
 
-2.  Aspose.Words for Python: आपके पास Aspose.Words for Python इंस्टॉल होना चाहिए। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/).
+2. Aspose.Words for Python: आपके पास Aspose.Words for Python इंस्टॉल होना चाहिए। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/python/).
 
 3. दस्तावेज़ तैयार करना: एक Word दस्तावेज़ तैयार रखें जिस पर आप खोज और प्रतिस्थापन संचालन करना चाहते हैं।
 

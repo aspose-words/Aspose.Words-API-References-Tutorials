@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ### Aspose.Words for .NET kullanarak Düzeltmeleri Kabul Etme için örnek kaynak kodu
 
-Aspose.Words for .NET kullanarak bir belgedeki değişiklikleri kabul etmek için gereken kaynak kodun tamamı burada:
+Aspose.Words for .NET kullanarak bir belgedeki değişiklikleri kabul etmek için tam kaynak kodu:
 
 
 ```csharp

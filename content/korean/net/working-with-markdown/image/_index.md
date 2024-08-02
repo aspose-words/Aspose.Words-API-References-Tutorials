@@ -11,11 +11,11 @@ url: /ko/net/working-with-markdown/image/
 
 .NET용 Aspose.Words의 세계로 뛰어들 준비가 되셨습니까? 오늘은 문서에 이미지를 추가하는 방법을 살펴보겠습니다. 보고서, 브로셔 또는 간단한 문서를 작성하는 경우 이미지를 추가하면 큰 차이를 만들 수 있습니다. 자, 시작해 봅시다!
 
-## 전제조건
+## 전제 조건
 
 코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
-1.  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 모든 .NET 개발 환경.
 3. C#의 기본 지식: C#에 익숙하다면 이제 시작하세요!
 
@@ -75,4 +75,4 @@ Aspose.Words는 JPEG, PNG, BMP, GIF 등을 포함한 다양한 이미지 형식�
  예, URL을 제공하여 URL에서 이미지를 추가할 수 있습니다.`InsertImage` 방법.
 
 ### .NET용 Aspose.Words 무료 평가판을 받으려면 어떻게 해야 합니까?  
- 다음에서 무료 평가판을 받을 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).
+ 다음에서 무료 평가판을 받을 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/).

@@ -61,7 +61,7 @@ Denna kod hämtar den första tabellen (index 0) från dokumentet. Om ditt dokum
 table.Range.Replace("Carrots", "Eggs", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- Denna kodrad ersätter texten "Morötter" med "Ägg" i hela tabellen. De`FindReplaceOptions` parameter anger riktningen för sökningen.
+ Denna kodrad ersätter texten "Morötter" med "Ägg" i hela tabellen. De`FindReplaceOptions` parametern anger riktningen för sökningen.
 
 ## Steg 4: Ersätt text i en specifik cell
 

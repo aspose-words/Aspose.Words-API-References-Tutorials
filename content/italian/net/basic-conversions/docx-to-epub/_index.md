@@ -58,7 +58,7 @@ Sì, puoi convertire in batch file DOCX in EPUB o altri formati utilizzando Aspo
 ### Aspose.Words è compatibile con .NET Core?
 Sì, Aspose.Words supporta completamente .NET Core e .NET Framework.
 
-### Dove posso trovare ulteriori esempi e documentazione per Aspose.Words?
+### Dove posso trovare altri esempi e documentazione per Aspose.Words?
  Visitare il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per esempi dettagliati e riferimenti API.
 
 ### Come posso ottenere supporto per i problemi relativi ad Aspose.Words?

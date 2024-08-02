@@ -83,7 +83,7 @@ aí está! Seguindo essas etapas, você pode garantir que seus caracteres de con
 
 ### O que são caracteres de controle legados?
 
-Caracteres de controle legados são caracteres não imprimíveis usados em documentos mais antigos para controlar a formatação e o layout.
+Caracteres de controle herdados são caracteres não imprimíveis usados em documentos mais antigos para controlar a formatação e o layout.
 
 ### Posso remover esses caracteres de controle em vez de mantê-los?
 

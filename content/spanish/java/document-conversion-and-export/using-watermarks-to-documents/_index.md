@@ -2,7 +2,7 @@
 title: Uso de marcas de agua en documentos en Aspose.Words para Java
 linktitle: Usar marcas de agua en documentos
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a agregar marcas de agua a documentos en Aspose.Words para Java. Personalice marcas de agua de texto e imágenes para documentos de aspecto profesional.
+description: Aprenda cómo agregar marcas de agua a documentos en Aspose.Words para Java. Personalice marcas de agua de texto e imágenes para documentos de aspecto profesional.
 type: docs
 weight: 15
 url: /es/java/document-conversion-and-export/using-watermarks-to-documents/

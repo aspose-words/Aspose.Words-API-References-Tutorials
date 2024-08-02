@@ -45,7 +45,7 @@ Végül elmenthetjük a dokumentumot a kívánt formátumban.
 // Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.
 DocumentBuilder builder = new DocumentBuilder();
 
-//Hiperhivatkozás beszúrása.
+// Hiperhivatkozás beszúrása.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```
@@ -62,8 +62,8 @@ Gratulálok ! Megtanulta az "Autolink" funkció használatát az Aspose.Words fo
 
 #### K: Testreszabható egy automatikus hivatkozás megjelenített szövege az Aspose.Words-ben?
 
- V: Igen, személyre szabhatja az Aspose.Words automatikus hivatkozásának megjelenített szövegét. Ahelyett, hogy az URL-címet használná megjelenített szövegként, bármilyen más szöveget is használhat, ha lecseréli a tartalmat a között`<a>` címkéket. Például használhatja`<a href="https://www.aspose.com">Click here</a>` a "Kattintson ide" szöveg automatikus hivatkozásként való megjelenítéséhez.
+ V: Igen, személyre szabhatja az Aspose.Words automatikus hivatkozásának megjelenített szövegét. Ahelyett, hogy az URL-címet használná megjelenített szövegként, bármilyen más szöveget is használhat, ha lecseréli a tartalmat a között`<a>` címkéket. Például használhatja`<a href="https://www.aspose.com">Click here</a>` "Kattintson ide" szöveg automatikus hivatkozásként való megjelenítéséhez.
 
 #### K: Hogyan adhatok hozzá további attribútumokat az Aspose.Words automatikus linkjéhez?
 
-V: Ha további attribútumokat szeretne hozzáadni az Aspose.Words automatikus hivatkozásaihoz, további HTML-attribútumokat használhat a`<a>` címke. Például használhatja`<a href="https://www.aspose.com" target="_blank">Link</a>` a hivatkozás új ablakban vagy lapon való megnyitásához a` attribute target="_blank"`.
+ V: Ha további attribútumokat szeretne hozzáadni az Aspose.Words automatikus hivatkozásaihoz, további HTML-attribútumokat használhat a`<a>` címke. Például használhatja`<a href="https://www.aspose.com" target="_blank">Link</a>` a hivatkozás új ablakban vagy lapon való megnyitásához a` attribute target="_blank"`.

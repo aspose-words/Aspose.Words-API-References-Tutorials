@@ -2,111 +2,110 @@
 title: 행 서식 적용
 linktitle: 행 서식 적용
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 테이블에 행 서식을 적용하는 단계별 가이드입니다.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에 행 서식을 적용하는 방법을 알아보세요. 자세한 지침은 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## 소개
 
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 테이블에 행 서식을 적용하는 단계별 프로세스를 안내합니다. 번들로 제공되는 C# 소스 코드를 설명하고 자신의 프로젝트에서 이 기능을 이해하고 구현하는 데 도움이 되는 포괄적인 가이드를 제공합니다. 이 튜토리얼을 마치면 .NET용 Aspose.Words를 사용하여 Word 문서에서 표 행의 형식을 지정하는 방법을 명확하게 이해하게 될 것입니다.
+멋진 행 서식을 사용하여 Word 문서를 멋지게 꾸미고 싶다면 잘 찾아오셨습니다! 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 행 서식을 적용하는 방법을 살펴보겠습니다. 각 단계를 세분화하여 쉽게 따라하고 프로젝트에 적용할 수 있도록 하겠습니다.
 
-## 1단계: 문서 디렉터리 정의
-먼저 문서 디렉터리의 경로를 설정해야 합니다. 편집한 Word 문서를 저장하려는 위치입니다. "YOUR DOCUMENTS DIRECTORY"를 적절한 경로로 바꾸십시오.
+## 전제 조건
+
+코드를 살펴보기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
+
+1.  .NET용 Aspose.Words: Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 아직 다운로드하지 않으셨다면, 다음 사이트에서 다운로드하실 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio와 같은 AC# 개발 환경.
+3. C#에 대한 기본 지식: C# 프로그래밍에 대한 지식이 필수적입니다.
+4. 문서 디렉터리: 문서를 저장할 디렉터리입니다.
+
+## 네임스페이스 가져오기
+
+먼저 C# 프로젝트에서 필요한 네임스페이스를 가져와야 합니다.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## 2단계: 새 문서 및 문서 작성기 만들기
- 다음으로 새 인스턴스를 생성해야 합니다.`Document` 클래스와 해당 문서에 대한 문서 생성자.
+이제 프로세스를 단계별로 살펴보겠습니다.
+
+## 1단계: 새 문서 만들기
+
+먼저 새 문서를 만들어야 합니다. 이것이 테이블을 추가하고 서식을 적용할 캔버스가 됩니다.
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3단계: 새 보드 시작
- 행 서식을 적용하려면 먼저 다음을 사용하여 새 테이블을 시작해야 합니다.`StartTable()` 문서 생성자의 메소드.
+## 2단계: 새 테이블 시작
+
+ 다음으로, 다음을 사용하여 새 테이블을 시작하겠습니다.`DocumentBuilder`물체. 이것이 바로 마법이 일어나는 곳입니다.
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## 4단계: 셀을 삽입하고 행 형식으로 이동
-이제 테이블에 셀을 삽입하고 문서 작성기의`InsertCell()`그리고`RowFormat` 행동 양식.
+## 3단계: 행 서식 정의
+
+여기서는 행 형식을 정의합니다. 여기에는 행 높이 및 패딩 설정이 포함됩니다.
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## 5단계: 행 높이 설정
- 행 높이를 설정하려면 다음을 사용합니다.`Height`그리고`HeightRule` 행 형식의 속성입니다. 이 예에서는 행 높이를 100포인트로 설정하고`Exactly` 규칙.
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## 6단계: 테이블 형식 정의
- 일부 서식 속성은 테이블 자체에 설정할 수 있으며 모든 테이블 행에 적용됩니다. 이 예에서는 다음을 사용하여 테이블 여백 속성을 설정합니다.`LeftPadding`, `RightPadding`, `TopPadding`그리고`BottomPadding` 속성.
+## 4단계: 셀에 콘텐츠 삽입
+
+아름답게 구성된 행에 일부 콘텐츠를 삽입해 보겠습니다. 이 콘텐츠에서는 서식이 어떻게 보이는지 보여줍니다.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## 7단계: 행에 콘텐츠 추가
-이제 우리는 할 수 있습니다
+## 5단계: 행 및 테이블 종료
 
- 문서 생성자의 메서드를 사용하여 해당 줄에 내용을 추가하겠습니다. 이 예에서는`Writeln()` 줄에 텍스트를 추가하는 방법입니다.
+마지막으로 구조를 완성하려면 행과 테이블을 종료해야 합니다.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## 8단계: 선과 테이블 완성하기
- 행에 내용을 추가한 후에는 다음을 사용하여 행을 끝낼 수 있습니다.`EndRow()` 메서드를 사용하여 테이블을 종료합니다.`EndTable()` 방법.
+## 6단계: 문서 저장
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## 9단계: 수정된 문서 저장
-마지막으로 수정된 문서를 파일에 저장합니다. 출력 문서에 대한 적절한 이름과 위치를 선택할 수 있습니다.
+이제 테이블이 준비되었으므로 문서를 저장할 차례입니다. 문서 디렉터리의 경로를 지정하고 파일을 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-축하합니다! 이제 Aspose.Words for .NET을 사용하여 테이블에 행 서식을 적용했습니다.
-
-### .NET용 Aspose.Words를 사용하여 행 서식 적용을 위한 샘플 소스 코드 
-
-```csharp
-	// 문서 디렉터리 경로
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// 이러한 서식 속성은 테이블에 설정되며 테이블의 모든 행에 적용됩니다.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## 결론
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 테이블에 행 서식을 적용하는 방법을 배웠습니다. 이 단계별 가이드를 따르면 이 기능을 C# 프로젝트에 쉽게 통합할 수 있습니다. 테이블 행 서식을 조작하는 것은 문서 처리의 필수적인 측면이며 Aspose.Words는 이를 달성하기 위해 강력하고 유연한 API를 제공합니다. 이러한 지식을 통해 Word 문서의 시각적 표현을 개선하고 특정 요구 사항을 충족할 수 있습니다.
+
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서의 테이블에 행 서식을 성공적으로 적용했습니다. 이 간단하면서도 강력한 기술은 문서의 가독성과 미적 측면을 크게 향상시킬 수 있습니다.
+
+## FAQ
+
+### 개별 행에 다른 서식을 적용할 수 있나요?  
+ 예, 서로 다른 속성을 설정하여 각 행을 개별적으로 맞춤설정할 수 있습니다.`RowFormat`.
+
+### 열 너비를 어떻게 조정하나요?  
+ 다음을 사용하여 열 너비를 설정할 수 있습니다.`CellFormat.Width` 재산.
+
+### .NET용 Aspose.Words에서 셀을 병합할 수 있습니까?  
+ 예, 다음을 사용하여 셀을 병합할 수 있습니다.`CellMerge` 의 재산`CellFormat`.
+
+### 행에 테두리를 추가할 수 있나요?  
+ 전적으로! 다음을 설정하여 행에 테두리를 추가할 수 있습니다.`Borders` 의 재산`RowFormat`.
+
+### 행에 조건부 서식을 적용하려면 어떻게 해야 합니까?  
+코드에서 조건부 논리를 사용하여 특정 조건에 따라 다양한 서식을 적용할 수 있습니다.

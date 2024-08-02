@@ -102,7 +102,7 @@ Att exportera Cid-URL:er för MHTML-resurser säkerställer att inbäddade resur
  Ja, du behöver en licens för att använda Aspose.Words för .NET. Du kan få en gratis provperiod[här](https://releases.aspose.com/) eller köp en licens[här](https://purchase.aspose.com/buy).
 
 ### Kan jag automatisera den här processen för flera dokument?
-Absolut! Du kan skapa ett skript för att automatisera processen för flera dokument och utnyttja kraften i Aspose.Words för .NET för att hantera batchoperationer effektivt.
+Absolut! Du kan skapa ett skript för att automatisera processen för flera dokument, och utnyttja kraften i Aspose.Words för .NET för att hantera batchoperationer effektivt.
 
 ### Var kan jag få support om jag stöter på problem?
 Om du behöver support, besök Asposes supportforum[här](https://forum.aspose.com/c/words/8) för hjälp från samhället och Aspose-utvecklare.

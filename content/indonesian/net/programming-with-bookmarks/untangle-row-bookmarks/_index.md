@@ -127,7 +127,7 @@ Meskipun secara teknis memungkinkan, menguraikan bookmark secara manual di Word 
 
 ###  Apa yang terjadi jika`Untangle` function encounters an error?
 
-Kode tersebut menyertakan pengendali pengecualian yang melontarkan pengecualian jika proses penguraian secara tidak sengaja menghapus akhir bookmark lain. Anda dapat menyesuaikan penanganan kesalahan ini agar sesuai dengan kebutuhan spesifik Anda.
+Kode tersebut menyertakan pengendali pengecualian yang memunculkan pengecualian jika proses penguraian secara tidak sengaja menghapus akhir bookmark lain. Anda dapat menyesuaikan penanganan kesalahan ini agar sesuai dengan kebutuhan spesifik Anda.
 
 ### Bisakah saya menggunakan kode ini untuk menguraikan bookmark di baris yang tidak berdekatan?
 

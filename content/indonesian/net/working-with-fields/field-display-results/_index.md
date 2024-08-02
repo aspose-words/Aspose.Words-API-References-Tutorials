@@ -2,54 +2,42 @@
 title: Hasil Tampilan Lapangan
 linktitle: Hasil Tampilan Lapangan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk menampilkan hasil lapangan di dokumen Word Anda dengan Aspose.Words untuk .NET.
+description: Pelajari cara memperbarui dan menampilkan hasil lapangan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk mengotomatiskan tugas dokumen.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/field-display-results/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini, yang menggunakan fitur "Tampilkan Hasil Bidang" dari Aspose.Words untuk .NET. Pastikan untuk mengikuti setiap langkah dengan hati-hati untuk mendapatkan hasil yang diinginkan.
+Jika Anda pernah bekerja dengan dokumen Microsoft Word, Anda pasti tahu betapa hebatnya bidang. Mereka seperti placeholder dinamis kecil yang dapat menampilkan hal-hal seperti tanggal, properti dokumen, atau bahkan penghitungan. Namun apa yang terjadi jika Anda perlu memperbarui kolom ini dan menampilkan hasilnya secara terprogram? Di situlah Aspose.Words for .NET berperan. Panduan ini akan memandu Anda melalui proses memperbarui dan menampilkan hasil lapangan di dokumen Word menggunakan Aspose.Words for .NET. Pada akhirnya, Anda akan mengetahui cara mengotomatiskan tugas-tugas ini dengan mudah, baik Anda menangani dokumen yang rumit atau laporan sederhana.
 
-## Langkah 1: Pengaturan Direktori Dokumen
+## Prasyarat
 
-Dalam kode yang diberikan, Anda harus menentukan direktori dokumen Anda. Ganti nilai "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai ke direktori dokumen Anda.
+Sebelum mendalami kodenya, pastikan Anda sudah menyiapkan semuanya:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1. Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika Anda belum menginstalnya, Anda bisa mendapatkannya dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
 
-## Langkah 2: Memuat dokumen
+2. Visual Studio: Anda memerlukan IDE seperti Visual Studio untuk menulis dan menjalankan kode .NET Anda.
 
-Langkah pertama adalah memuat dokumen yang ingin Anda tampilkan hasil bidangnya.
+3. Pengetahuan Dasar C#: Panduan ini mengasumsikan Anda memiliki pemahaman dasar tentang pemrograman C#.
 
-```csharp
-Document document = new Document(dataDir + "Miscellaneous fields.docx");
-```
+4. Dokumen dengan Bidang: Miliki dokumen Word dengan beberapa bidang sudah disisipkan. Anda dapat menggunakan contoh dokumen yang disediakan atau membuatnya dengan berbagai tipe bidang.
 
-Pastikan untuk mengganti "Miscellaneous Fields.docx" dengan nama file Anda sendiri.
+## Impor Namespace
 
-## Langkah 3: Perbarui bidang
-
- Kami menggunakan`UpdateFields()` metode untuk memperbarui semua bidang dalam dokumen.
+Untuk mulai bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan ke proyek C# Anda. Namespace ini menyediakan akses ke semua kelas dan metode yang Anda perlukan.
 
 ```csharp
-document. UpdateFields();
+using Aspose.Words;
+using Aspose.Words.Fields;
+using System;
 ```
 
-Langkah ini penting karena memastikan hasil lapangan ditampilkan dengan benar.
+## Langkah 1: Muat Dokumen
 
-## Langkah 4: Menampilkan Hasil Lapangan
+Pertama, Anda perlu memuat dokumen Word yang berisi bidang yang ingin Anda perbarui dan tampilkan.
 
- Kami menggunakan a`foreach` loop untuk mengulang semua bidang dalam dokumen dan menampilkan hasilnya.
-
-```csharp
-foreach(Field field in document.Range.Fields)
-     Console.WriteLine(field.DisplayResult);
-```
-
- Pada setiap iterasi loop, kita mengakses`DisplayResult` properti bidang untuk mendapatkan hasil yang ditampilkan.
-
-### Contoh Kode Sumber untuk Menampilkan Hasil Bidang dengan Aspose.Words untuk .NET
+### Memuat Dokumen
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -57,33 +45,56 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Muat dokumen.
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
-
-// Perbarui bidang.
-document. UpdateFields();
-
-// Tampilan hasil lapangan.
-foreach(Field field in document.Range.Fields)
-     Console.WriteLine(field.DisplayResult);
 ```
 
-Dalam contoh ini, kami mengunggah dokumen, memperbarui semua bidang, lalu menelusuri bidang tersebut untuk menampilkan hasilnya. Anda dapat menyesuaikan langkah ini menggunakan logika Anda sendiri untuk memproses hasil lapangan.
+ Pada langkah ini, ganti`"YOUR DOCUMENTS DIRECTORY"` dengan jalur tempat dokumen Anda disimpan. Itu`Document` kelas digunakan untuk memuat file Word ke dalam memori.
 
-Ini menyimpulkan panduan kami untuk menggunakan fitur "Tampilkan Hasil Lapangan" dengan Aspose.Words untuk .NET.
+## Langkah 2: Perbarui Bidang
 
-### FAQ
+Bidang di dokumen Word bisa bersifat dinamis, artinya bidang tersebut mungkin tidak selalu menampilkan data terkini. Untuk memastikan semua bidang mutakhir, Anda perlu memperbaruinya.
 
-#### T: Apa yang dimaksud dengan bidang tampilan hasil di Aspose.Words?
+### Memperbarui Bidang
 
-A: Bidang tampilan hasil di Aspose.Words adalah jenis bidang yang menampilkan hasil operasi atau perhitungan dalam dokumen Word. Misalnya, bidang tampilan hasil dapat digunakan untuk menampilkan jumlah beberapa nilai atau hasil rumus matematika.
+```csharp
+//Perbarui bidang.
+document.UpdateFields();
+```
 
-#### T: Bagaimana cara memperbarui bidang tampilan hasil di dokumen Word dengan Aspose.Words?
+ Itu`UpdateFields` metode mengulangi semua bidang dalam dokumen dan memperbaruinya dengan data terbaru. Langkah ini penting jika bidang Anda bergantung pada konten dinamis seperti tanggal atau penghitungan.
 
-J: Untuk memperbarui bidang tampilan hasil di dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode UpdateFields. Metode ini mengulang dokumen dan memperbarui semua bidang, termasuk bidang tampilan hasil, menghitung ulang nilai berdasarkan data saat ini.
+## Langkah 3: Tampilkan Hasil Lapangan
 
-#### T: Dapatkah saya memformat hasil yang ditampilkan oleh bidang tampilan hasil?
+Sekarang setelah bidang Anda diperbarui, Anda dapat mengakses dan menampilkan hasilnya. Ini berguna untuk melakukan debug atau membuat laporan yang menyertakan nilai bidang.
 
-J: Ya, Anda dapat memformat hasil yang ditampilkan oleh bidang tampilan hasil menggunakan sintaks yang sesuai untuk menentukan formatnya. Misalnya, Anda dapat memformat angka dengan jumlah desimal tertentu atau menggunakan format tanggal khusus.
+### Menampilkan Hasil Lapangan
 
-#### T: Bagaimana cara menghapus bidang tampilan hasil dari dokumen Word dengan Aspose.Words?
+```csharp
+// Menampilkan hasil lapangan.
+foreach (Field field in document.Range.Fields)
+{
+    Console.WriteLine(field.DisplayResult);
+}
+```
 
-J: Untuk menghapus bidang tampilan hasil dari dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode Hapus. Metode ini menghapus bidang tersebut dan menggantinya dengan hasil statisnya.
+ Itu`DisplayResult` properti dari`Field` kelas mengembalikan nilai bidang yang diformat. Itu`foreach` loop menelusuri semua bidang dalam dokumen dan mencetak hasilnya.
+
+## Kesimpulan
+
+Memperbarui dan menampilkan hasil lapangan di dokumen Word dengan Aspose.Words untuk .NET adalah proses mudah yang dapat menghemat banyak waktu Anda. Baik Anda bekerja dengan konten dinamis atau membuat laporan kompleks, langkah-langkah ini akan membantu Anda mengelola dan menyajikan data secara efektif. Dengan mengikuti panduan ini, Anda dapat mengotomatiskan tugas membosankan dalam memperbarui bidang dan memastikan dokumen Anda selalu mencerminkan informasi terbaru.
+
+## FAQ
+
+### Jenis bidang apa yang dapat saya perbarui menggunakan Aspose.Words untuk .NET?  
+Anda dapat memperbarui berbagai tipe bidang, termasuk bidang tanggal, properti dokumen, dan bidang rumus.
+
+### Apakah saya perlu menyimpan dokumen setelah memperbarui kolom?  
+ Tidak, menelepon`UpdateFields` tidak secara otomatis menyimpan dokumen. Menggunakan`Save` metode untuk menyimpan perubahan apa pun.
+
+### Bisakah saya memperbarui kolom di bagian tertentu dokumen?  
+ Ya, Anda dapat menggunakan`Document.Sections` properti untuk mengakses bagian tertentu dan memperbarui bidang di dalamnya.
+
+### Bagaimana cara menangani bidang yang memerlukan input pengguna?  
+Bidang yang memerlukan masukan pengguna (seperti bidang formulir) perlu diisi secara manual atau melalui kode tambahan.
+
+### Apakah mungkin menampilkan hasil lapangan dalam format berbeda?  
+ Itu`DisplayResult` properti menyediakan output yang diformat. Jika Anda memerlukan format lain, pertimbangkan pemrosesan tambahan berdasarkan kebutuhan Anda.

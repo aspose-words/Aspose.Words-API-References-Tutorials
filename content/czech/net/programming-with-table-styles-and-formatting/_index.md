@@ -16,19 +16,19 @@ Tyto výukové programy pomohou vývojářům zvládnout základní techniky pro
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Získejte vzdálenost mezi textem obklopujícím tabulku](./get-distance-between-table-surrounding-text/) | Podrobný průvodce k získání vzdálenosti mezi textem a tabulkou v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Použít ohraničení obrysu](./apply-outline-border/) | Podrobný průvodce aplikací ohraničení obrysu na tabulku pomocí Aspose.Words for .NET. |
-| [Sestavit Stůl S Hranicemi](./build-table-with-borders/) | Krok za krokem průvodce vytvořením tabulky s ohraničením pomocí Aspose.Words pro .NET. |
-| [Upravit formátování řádků](./modify-row-formatting/) | Podrobný průvodce změnou formátování řádku tabulky pomocí Aspose.Words pro .NET. |
-| [Použít formátování řádků](./apply-row-formatting/) | Průvodce krok za krokem k použití formátování řádků na tabulku pomocí Aspose.Words for .NET. |
-| [Nastavte odsazení buněk](./set-cell-padding/) | Podrobný průvodce nastavením okrajů buněk tabulky pomocí Aspose.Words pro .NET. |
-| [Upravit formátování buněk](./modify-cell-formatting/) | Krok za krokem průvodce změnou formátování buňky v tabulce pomocí Aspose.Words for .NET. |
-| [Formát Tabulky A Buňky S Různými Hranicemi](./format-table-and-cell-with-different-borders/) | Krok za krokem průvodce formátováním tabulky a buňky s různými okraji pomocí Aspose.Words pro .NET. |
-| [Nastavte název a popis tabulky](./set-table-title-and-description/) | Krok za krokem průvodce nastavením názvu a popisu tabulky pomocí Aspose.Words pro .NET. |
-| [Povolit mezery mezi buňkami](./allow-cell-spacing/) | Krok za krokem průvodce povolit mezery mezi buňkami pomocí Aspose.Words pro .NET. |
-| [Sestavit Stůl Se Stylem](./build-table-with-style/) | Podrobný průvodce vytvořením tabulky s vlastním stylem pomocí Aspose.Words pro .NET. |
-| [Rozbalte Formátování na buňky a řádek ze stylu](./expand-formatting-on-cells-and-row-from-style/) | Podrobný průvodce rozšířením formátování na buňky a řádky ze stylu tabulky pomocí Aspose.Words for .NET. |
-| [Vytvořit styl tabulky](./create-table-style/) | Podrobný průvodce vytvořením vlastního stylu tabulky pomocí Aspose.Words pro .NET. |
-| [Definujte podmíněné formátování](./define-conditional-formatting/) | Průvodce krok za krokem k definování podmíněného formátování v tabulce pomocí Aspose.Words for .NET. |
-| [Nastavte formátování buněk tabulky](./set-table-cell-formatting/) | Podrobný průvodce nastavením formátování buněk tabulky pomocí Aspose.Words pro .NET. |
-| [Nastavte formátování řádku tabulky](./set-table-row-formatting/) | Podrobný průvodce nastavením formátování řádků tabulky pomocí Aspose.Words pro .NET. |
+| [Získejte vzdálenost mezi textem obklopujícím tabulku](./get-distance-between-table-surrounding-text/) | Naučte se, jak načíst vzdálenost mezi tabulkou a okolním textem v dokumentech aplikace Word pomocí Aspose.Words for .NET. Vylepšete rozvržení dokumentu pomocí této příručky. |
+| [Použít ohraničení obrysu](./apply-outline-border/) | Naučte se, jak použít ohraničení obrysu na tabulku ve Wordu pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro dokonalé formátování tabulky. |
+| [Sestavit Stůl S Hranicemi](./build-table-with-borders/) | Naučte se vytvářet a přizpůsobovat ohraničení tabulek v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro podrobné pokyny. |
+| [Upravit formátování řádků](./modify-row-formatting/) | Naučte se, jak upravit formátování řádků v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro vývojáře všech úrovní. |
+| [Použít formátování řádků](./apply-row-formatting/) | Naučte se, jak použít formátování řádků v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro podrobné pokyny. |
+| [Nastavte odsazení buněk](./set-cell-padding/) | Naučte se, jak nastavit odsazení buněk v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem. Zlepšete snadno formátování tabulky dokumentu. |
+| [Upravit formátování buněk](./modify-cell-formatting/) | Naučte se, jak upravit formátování buněk v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. |
+| [Formát Tabulky A Buňky S Různými Hranicemi](./format-table-and-cell-with-different-borders/) | Naučte se formátovat tabulky a buňky s různými okraji pomocí Aspose.Words for .NET. Vylepšete své dokumenty aplikace Word pomocí přizpůsobených stylů tabulek a stínování buněk. |
+| [Nastavte název a popis tabulky](./set-table-title-and-description/) | Naučte se, jak nastavit názvy a popisy tabulek v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce, abyste zvýšili profesionalitu svého dokumentu. |
+| [Povolit mezery mezi buňkami](./allow-cell-spacing/) | Naučte se, jak povolit mezery mezi buňkami v tabulce pomocí Aspose.Words for .NET s naším podrobným průvodcem. Ideální pro vývojáře, kteří chtějí vylepšit formátování dokumentů aplikace Word. |
+| [Sestavit Stůl Se Stylem](./build-table-with-style/) | Naučte se vytvářet a upravovat tabulky v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto komplexního průvodce krok za krokem. |
+| [Rozbalte Formátování na buňky a řádek ze stylu](./expand-formatting-on-cells-and-row-from-style/) | Naučte se, jak rozšířit formátování buněk a řádků ze stylů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Včetně průvodce krok za krokem. |
+| [Vytvořit styl tabulky](./create-table-style/) | Vytvářejte a upravujte tabulky v dokumentech aplikace Word pomocí Aspose.Words for .NET. Naučte se krok za krokem vylepšit své dokumenty profesionálním formátováním tabulek. |
+| [Definujte podmíněné formátování](./define-conditional-formatting/) | Naučte se definovat podmíněné formátování v dokumentech aplikace Word pomocí Aspose.Words for .NET. Vylepšete vizuální přitažlivost a čitelnost svého dokumentu pomocí našeho průvodce. |
+| [Nastavte formátování buněk tabulky](./set-table-cell-formatting/) | Vylepšete své dokumenty aplikace Word pomocí profesionálního formátování buněk tabulky pomocí Aspose.Words pro .NET. Tento podrobný průvodce vám celý proces zjednoduší. |
+| [Nastavte formátování řádku tabulky](./set-table-row-formatting/) | Naučte se, jak nastavit formátování řádků tabulky v dokumentech Word pomocí Aspose.Words for .NET, s naším průvodcem. Ideální pro vytváření dobře formátovaných a profesionálních dokumentů. |

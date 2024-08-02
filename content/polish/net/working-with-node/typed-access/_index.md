@@ -77,7 +77,7 @@ foreach (Table table in tables)
 }
 ```
 
-To jest kompletny przykładowy kod umożliwiający wpisany dostęp do tabel za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać opisane wcześniej kroki, aby zintegrować ten kod ze swoim projektem.
+To jest kompletny przykładowy kod umożliwiający wpisany dostęp do tabel za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać kroki opisane wcześniej, aby zintegrować ten kod ze swoim projektem.
 
 ### Często zadawane pytania
 

@@ -16,4 +16,4 @@ Ezeket az oktatóanyagokat követve teljes mértékben kiaknázhatja a Word-doku
 ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Webbővítmény munkaablak használata](./using-web-extension-task-panes/) | Útmutató lépésről lépésre a webbővítmény munkaablakok használatához az Aspose.Words for .NET használatával. |
+| [Webbővítmény munkaablak használata](./using-web-extension-task-panes/) | Ebből a részletes, lépésenkénti oktatóanyagból megtudhatja, hogyan adhat hozzá és konfigurálhat webbővítmény munkaablakokat Word dokumentumokhoz az Aspose.Words for .NET használatával. |

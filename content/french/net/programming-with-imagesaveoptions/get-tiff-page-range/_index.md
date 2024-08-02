@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
 
 ## Conclusion
 
-Et voila! En suivant ces étapes simples, vous avez réussi à convertir une plage de pages spécifique d'un document Word en fichier TIFF à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation et la conversion de vos documents, vous offrant des possibilités infinies pour vos projets. Alors n’hésitez plus, essayez-le et voyez comment il peut améliorer votre flux de travail !
+Et voila! En suivant ces étapes simples, vous avez réussi à convertir une plage de pages spécifique d'un document Word en fichier TIFF à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation et la conversion de vos documents, vous offrant des possibilités infinies pour vos projets. Alors n'hésitez plus, essayez-le et voyez comment il peut améliorer votre flux de travail !
 
 ## FAQ
 

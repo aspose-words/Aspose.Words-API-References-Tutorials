@@ -56,7 +56,7 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 
 ## 结论
 
-使用 Aspose.Words for .NET 以编程方式将 DOC 转换为 DOCX 既简单又高效。只需几行代码，您就可以自动执行文档转换，从而节省时间和精力。无论您是处理批量转换还是将文档处理集成到您的应用程序中，Aspose.Words 都能提供强大的功能来满足您的需求。
+使用 Aspose.Words for .NET 以编程方式将 DOC 转换为 DOCX 既简单又高效。只需几行代码，您就可以自动执行文档转换，从而节省时间和精力。无论您是处理批量转换还是将文档处理集成到应用程序中，Aspose.Words 都能提供强大的功能来满足您的需求。
 
 ## 常见问题解答
 

@@ -94,7 +94,7 @@ Ja, Aspose.Words voor .NET ondersteunt voornamelijk .NET-talen zoals C#, maar u 
 ### Is er een manier om de vergelijkingen rechts of in het midden te rechtvaardigen?
  Ja, u kunt de`Justification`eigendom aan`Right` of`Center` afhankelijk van uw behoefte.
 
-### Kan ik het Word-document met vergelijkingen naar andere formaten zoals PDF converteren?
+### Kan ik het Word-document met vergelijkingen converteren naar andere formaten zoals PDF?
 Absoluut! Aspose.Words voor .NET ondersteunt het converteren van Word-documenten naar verschillende formaten, waaronder PDF. U kunt gebruik maken van de`Save` methode met verschillende formaten.
 
 ### Waar kan ik meer gedetailleerde documentatie vinden voor Aspose.Words voor .NET?

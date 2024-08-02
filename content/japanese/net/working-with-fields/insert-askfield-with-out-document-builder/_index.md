@@ -2,55 +2,37 @@
 title: ドキュメントビルダーなしでASKFieldを挿入する
 linktitle: ドキュメントビルダーなしでASKFieldを挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書に ASK フィールドを挿入する方法を学習します。
+description: Aspose.Words for .NET で Document Builder を使用せずに ASK フィールドを挿入する方法を学びます。このガイドに従って、Word ドキュメントを動的に強化します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
+## 導入
 
-ここでは、Aspose.Words for .NET の「DocumentBuilder を使用せずに ASK フィールドを挿入する」機能を使用する、以下の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。目的の結果を得るには、各手順を慎重に実行してください。
+Aspose.Words for .NET でドキュメントの自動化をマスターしたいですか? まさにうってつけの場所です! 今日は、ドキュメント ビルダーを使用せずに ASK フィールドを挿入する方法について説明します。これは、ドキュメントでユーザーに特定の入力を促し、Word ドキュメントをよりインタラクティブかつダイナミックにしたい場合に便利な機能です。それでは、ドキュメントをもっとスマートにしてみましょう!
 
-## ステップ1: ドキュメントディレクトリの設定
+## 前提条件
 
-提供されたコードでは、ドキュメントのディレクトリを指定する必要があります。値「YOUR DOCUMENT DIRECTORY」をドキュメント ディレクトリへの適切なパスに置き換えます。
+コードに手をつける前に、すべてがセットアップされていることを確認しましょう。
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  Aspose.Words for .NET: このライブラリがインストールされていることを確認してください。インストールされていない場合は、ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio などの適切な IDE。
+3. .NET Framework: .NET Framework がインストールされていることを確認します。
 
-## ステップ2: 文書と段落を作成する
+素晴らしい! これで準備はすべて整いました。まずは必要な名前空間をインポートしましょう。
 
-まず、新しいドキュメントを作成し、最初の段落を取得します。
+## 名前空間のインポート
 
-```csharp
-Document doc = new Document();
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
-```
-
-## ステップ3: ASKフィールドの挿入
-
-私たちは`AppendField()`段落に ASK フィールドを挿入する方法。
+まず最初に、Aspose.Words for .NET のすべての機能にアクセスするには、Aspose.Words 名前空間をインポートする必要があります。手順は次のとおりです。
 
 ```csharp
-FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-次に、必要な値を指定して、ASK フィールドのさまざまなプロパティを構成します。
+## ステップ1: 新しいドキュメントを作成する
 
-```csharp
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
-```
-
-最後に、`Update()`フィールドを更新するメソッド。
-
-```csharp
-field. Update();
-```
-
-### Aspose.Words for .NET を使用して DocumentBuilder なしで ASK フィールドを挿入するソース コードの例
+ASK フィールドを挿入する前に、作業するドキュメントが必要です。新しいドキュメントを作成する方法は次のとおりです。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
@@ -58,44 +40,84 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 //ドキュメントの作成。
 Document doc = new Document();
+```
+
+このコード スニペットは、ASK フィールドを追加する新しい Word 文書を設定します。
+
+## ステップ2: 段落ノードにアクセスする
+
+Word 文書では、コンテンツはノードに編成されます。ASK フィールドを挿入する最初の段落ノードにアクセスする必要があります。
+
+```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+```
 
-//ASK フィールドを挿入します。
+このコード行は、ドキュメントの最初の段落を取得し、ASK フィールドの挿入の準備を整えます。
+
+## ステップ3: ASKフィールドを挿入する
+
+さて、メインイベントである ASK フィールドの挿入に移りましょう。このフィールドは、ドキュメントを開いたときにユーザーに入力を促します。
+
+```csharp
+// ASK フィールドを挿入します。
 FieldAsk field = (FieldAsk)para.AppendField(FieldType.FieldAsk, false);
+```
 
-field.BookmarkName = "Test 1";
-field. PromptText = "Test2";
-field. DefaultResponse = "Test3";
-field. PromptOnceOnMailMerge = true;
+ここでは、段落に ASK フィールドを追加します。簡単ですよね?
 
-field. Update();
+## ステップ4: ASKフィールドを構成する
 
+ASK フィールドの動作を定義するには、いくつかのプロパティを設定する必要があります。ブックマーク名、プロンプト テキスト、既定の応答、および差し込み印刷の動作を構成しましょう。
+
+```csharp
+field.BookmarkName = "Test1";
+field.PromptText = "Please enter your response:";
+field.DefaultResponse = "Default response";
+field.PromptOnceOnMailMerge = true;
+```
+
+- BookmarkName: ASK フィールドの一意の識別子。
+- PromptText: ユーザーに入力を促すテキスト。
+- DefaultResponse: ユーザーが変更できる事前に入力された応答。
+- PromptOnceOnMailMerge: メールの差し込み印刷中にプロンプトが 1 回だけ表示されるかどうかを決定します。
+
+## ステップ5: フィールドを更新する
+
+ASK フィールドを設定したら、すべての設定が正しく適用されていることを確認するために更新する必要があります。
+
+```csharp
+field.Update();
+```
+
+このコマンドは、ASK フィールドが準備され、ドキュメント内で適切に設定されていることを確認します。
+
+## ステップ6: ドキュメントを保存する
+
+最後に、指定したディレクトリにドキュメントを保存しましょう。
+
+```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-この例では、新しいドキュメントを作成し、DocumentBuilder を使用せずに ASK フィールドを挿入し、フィールドのさまざまなプロパティを構成し、指定されたファイル名でドキュメントを保存しました。
+この行は、挿入された ASK フィールドを含むドキュメントを保存します。これで、ドキュメントに動的な ASK フィールドが装備されました。
 
-これで、Aspose.Words for .NET で「DocumentBuilder を使用せずに ASK フィールドを挿入」機能を使用するガイドは終了です。
+## 結論
 
-### よくある質問
+おめでとうございます! ドキュメント ビルダーを使用せずに Aspose.Words for .NET を使用して、Word ドキュメントに ASK フィールドを追加しました。この機能により、ドキュメントに対するユーザー インタラクションが大幅に強化され、ドキュメントがより柔軟で使いやすくなります。さまざまなフィールドとプロパティを試して、Aspose.Words の可能性を最大限に引き出してください。コーディングをお楽しみください!
 
-#### Q: Aspose.Words の ASK フィールドとは何ですか?
+## よくある質問
 
-A: Aspose.Words の ASK フィールドは、ドキュメントを開くときにユーザーに質問するために使用されます。ユーザーごとに異なる特定の情報やフィードバックを要求するためによく使用されます。
+### Aspose.Words の ASK フィールドとは何ですか?
+Aspose.Words の ASK フィールドは、ドキュメントを開いたときにユーザーに特定の入力を求めるフィールドであり、動的なデータ入力を可能にします。
 
-#### Q: Aspose.Words の Document Builder を使用せずに Word 文書に ASK フィールドを挿入するにはどうすればよいですか?
+### 1 つのドキュメントで複数の ASK フィールドを使用できますか?
+はい、ドキュメントに複数の ASK フィールドを挿入し、それぞれに固有のプロンプトと応答を含めることができます。
 
-A: Aspose.Words の Document Builder を使用せずに Word 文書に ASK フィールドを挿入するには、次の手順に従います。
+### の目的は何ですか？`PromptOnceOnMailMerge` property?
+の`PromptOnceOnMailMerge`プロパティは、メールの差し込み印刷操作中に ASK プロンプトが 1 回だけ表示されるか、毎回表示されるかを決定します。
 
-1. Aspose.Words.Fields 名前空間から Document クラスと Field クラスをインポートします。
-2. 既存のドキュメントを読み込んで Document のインスタンスを作成します。
-3. 質問名を指定して ASK フィールドを挿入するには、InsertField メソッドを使用します。
-4. ドキュメントを保存します。
+### プロパティを設定した後、ASK フィールドを更新する必要がありますか?
+はい、ASK フィールドを更新すると、すべてのプロパティが正しく適用され、フィールドが期待どおりに機能することが保証されます。
 
-#### Q: Word 文書の ASK フィールドに対するユーザーの応答を取得するにはどうすればよいですか?
-
-A: Word 文書内の ASK フィールドに対するユーザーの応答を取得するには、Document クラスで使用可能な GetFieldNames メソッドを使用できます。このメソッドは、文書内に存在するフィールドの名前のリストを返します。次に、ASK フィールド名がリスト内に存在するかどうかを確認し、関連する応答を取得できます。
-
-#### Q: ASK フィールドを使用して、ユーザーにさらに情報を要求できますか?
-
-A: はい、ASK フィールドを使用して、ユーザーから複数の情報を要求できます。ドキュメントに複数の ASK フィールドを挿入し、それぞれに異なる質問を設定できます。ドキュメントを開くと、ユーザーは対応する回答を求められます。
+### プロンプトテキストとデフォルトの応答をカスタマイズできますか?
+もちろんです! カスタムプロンプトテキストとデフォルトの応答を設定して、ASK フィールドを特定のニーズに合わせてカスタマイズできます。

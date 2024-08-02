@@ -81,7 +81,7 @@ public class DocumentDecryptionExample {
 }
 ```
 
-Deze code laadt het gecodeerde document, levert het wachtwoord voor decodering en slaat het gedecodeerde document vervolgens op als "decrypted_document.docx".
+Deze code laadt het gecodeerde document, geeft het wachtwoord voor decodering en slaat het gedecodeerde document vervolgens op als "decrypted_document.docx".
 
 ## Veelgestelde vragen
 

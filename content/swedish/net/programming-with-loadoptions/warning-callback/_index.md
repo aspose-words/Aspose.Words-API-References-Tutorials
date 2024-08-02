@@ -60,7 +60,7 @@ LoadOptions loadOptions = new LoadOptions
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
-## Steg 4: Implementera varningsklassen för återuppringning
+## Steg 4: Implementera varningsåteruppringningsklassen
 
  Skapa en klass som implementerar`IWarningCallback` gränssnitt. Denna klass kommer att definiera hur varningar hanteras under dokumentbehandling.
 

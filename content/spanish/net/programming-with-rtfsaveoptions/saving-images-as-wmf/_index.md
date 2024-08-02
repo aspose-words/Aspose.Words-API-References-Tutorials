@@ -50,7 +50,7 @@ A continuación, debemos configurar las opciones de guardado para asegurarnos de
 RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 ```
 
- Explicación: Aquí creamos una instancia de`RtfSaveOptions` y establecer el`SaveImagesAsWmf`propiedad a`true`. Esto le indica a Aspose.Words que guarde las imágenes como WMF cuando se guarde el documento.
+ Explicación: Aquí creamos una instancia de`RtfSaveOptions` y establecer el`SaveImagesAsWmf`propiedad a`true`. Esto le dice a Aspose.Words que guarde las imágenes como WMF cuando se guarda el documento.
 
 ## Paso 3: guarde el documento
 

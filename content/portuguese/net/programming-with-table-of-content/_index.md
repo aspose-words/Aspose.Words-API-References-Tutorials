@@ -16,5 +16,5 @@ Quer você seja um desenvolvedor iniciante ou experiente, esses tutoriais o ajud
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Alterar o estilo do toque no documento do Word](./change-style-of-toc-level/) | Aprenda como alterar facilmente o estilo de um nível de índice em um documento do Word usando Aspose.Words for .NET. |
-| [Alterar paradas de tabulação no documento do Word](./change-toc-tab-stops/) | Aprenda como alterar as guias do índice em um documento do Word usando Aspose.Words for .NET. |
+| [Alterar o estilo do toque no documento do Word](./change-style-of-toc-level/) | Aprenda como alterar o estilo do sumário em documentos do Word usando Aspose.Words for .NET com este guia passo a passo. Personalize seu sumário sem esforço. |
+| [Alterar paradas de tabulação no documento do Word](./change-toc-tab-stops/) | Aprenda como alterar as paradas de tabulação do sumário em documentos do Word usando Aspose.Words for .NET. Este guia passo a passo o ajudará a criar um índice com aparência profissional. |

@@ -100,7 +100,7 @@ Aby przyspieszyć proces dodawania komórek, możemy sklonować istniejące kom�
 
 ```csharp
 // Następnie powtórzylibyśmy proces dla pozostałych komórek i wierszy tabeli.
-// Możemy także przyspieszyć działanie klonując istniejące komórki i wiersze.
+//Możemy także przyspieszyć działanie klonując istniejące komórki i wiersze.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Gratulacje! Pomyślnie wstawiłeś tabelę bezpośrednio do dokumentu programu W
  Tak, możesz poprosić o[bezpłatna wersja próbna](https://releases.aspose.com/) aby ocenić bibliotekę przed zakupem.
 
 ### Jak kupić Aspose.Words dla .NET?
- Możesz kupić Aspose.Words dla .NET w sklepie[strona zakupu](https://purchase.aspose.com/buy).
+Możesz kupić Aspose.Words dla .NET w sklepie[strona zakupu](https://purchase.aspose.com/buy).
 
 ### Gdzie mogę znaleźć dokumentację Aspose.Words dla .NET?
  Dokumentacja jest dostępna[Tutaj](https://reference.aspose.com/words/net/).

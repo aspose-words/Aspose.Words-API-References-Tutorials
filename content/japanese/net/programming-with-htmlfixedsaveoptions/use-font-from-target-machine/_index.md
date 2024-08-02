@@ -107,7 +107,7 @@ System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseF
 フォントの埋め込みは、`FontSettings` Aspose.Words for .NETのクラス。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
 
 ### 保存する前にドキュメントをプレビューする方法はありますか?
-はい、`DocumentRenderer`クラスを使用して、保存する前にドキュメントをプレビューします。Aspose.Words for .NETをご覧ください。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、`DocumentRenderer`クラスを使用して、保存前にドキュメントをプレビューできます。Aspose.Words for .NETをご覧ください。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
 
 ### HTML 出力をさらにカスタマイズできますか?
 絶対に！`HtmlFixedSaveOptions`クラスはHTML出力をカスタマイズするためのさまざまなプロパティを提供します。[ドキュメンテーション](https://reference.aspose.com/words/net/)利用可能なすべてのオプション。

@@ -12,6 +12,6 @@ Pemrosesan Kata dengan Kotak Teks adalah sumber daya komprehensif yang akan memb
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Buat Tautan Di Word](./create-a-link/) | Pelajari cara membuat tautan di Word antara TextBox di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Periksa Urutan](./check-sequence/) | Pelajari cara memeriksa urutan Kotak Teks dalam dokumen Word dengan Aspose.Words untuk .NET. |
-| [Putuskan Tautan Maju Dalam Dokumen Word](./break-a-link/) | Pelajari cara memutus tautan maju dalam dokumen Word dengan Aspose.Words untuk .NET. |
+| [Menghubungkan Kotak Teks di Word](./create-a-link/) | Pelajari cara membuat dan menautkan kotak teks di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan komprehensif kami untuk penyesuaian dokumen yang lancar! |
+| [Pemeriksaan Urutan Kotak Teks di Word](./check-sequence/) | Temukan cara memeriksa urutan kotak teks di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci kami untuk menguasai alur dokumen! |
+| [Putuskan Tautan Maju Dalam Dokumen Word](./break-a-link/) | Pelajari cara memutus tautan maju di kotak teks dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan kami untuk pengalaman pengelolaan dokumen yang lebih lancar. |

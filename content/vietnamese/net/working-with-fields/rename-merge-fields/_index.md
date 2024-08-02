@@ -2,63 +2,42 @@
 title: Đổi tên các trường hợp nhất
 linktitle: Đổi tên các trường hợp nhất
 second_title: API xử lý tài liệu Aspose.Words
-description: Trong hướng dẫn này, bạn sẽ tìm hiểu cách đổi tên các trường hợp nhất trong tài liệu bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách đổi tên các trường hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước của chúng tôi để dễ dàng thao tác với tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/working-with-fields/rename-merge-fields/
 ---
+## Giới thiệu
 
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# bên dưới sử dụng tính năng đổi tên trường hợp nhất của Aspose.Words cho .NET. Thực hiện cẩn thận từng bước để có được kết quả mong muốn.
+Đổi tên các trường phối trong tài liệu Word có thể là một nhiệm vụ khó khăn nếu bạn không quen với các công cụ và kỹ thuật phù hợp. Nhưng đừng lo lắng, tôi sẽ bảo vệ bạn! Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình đổi tên các trường hợp nhất bằng Aspose.Words cho .NET, một thư viện mạnh mẽ giúp thao tác tài liệu trở nên dễ dàng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ hướng dẫn bạn mọi thứ bạn cần biết.
 
-## Bước 1: Thiết lập thư mục tài liệu
+## Điều kiện tiên quyết
 
-Trong mã được cung cấp, bạn phải chỉ định thư mục tài liệu của mình. Thay thế giá trị "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp tới thư mục tài liệu của bạn.
+Trước khi chúng ta đi sâu vào chi tiết quan trọng, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
+- Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ rất hữu ích.
 
-## Bước 2: Tạo tài liệu và chèn các trường phối
+## Nhập không gian tên
 
-Chúng ta bắt đầu bằng cách tạo một tài liệu mới và sử dụng một`DocumentBuilder` để chèn các trường hợp nhất.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
-builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
-```
-
-## Bước 3: Đổi tên các trường hợp nhất
-
-Chúng tôi lặp qua từng trường trong phạm vi tài liệu và nếu đó là trường hợp nhất, chúng tôi đổi tên trường bằng cách thêm "_Đã đổi tên" hậu tố.
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này sẽ đảm bảo rằng mã của chúng tôi có quyền truy cập vào tất cả các lớp và phương thức mà chúng tôi cần.
 
 ```csharp
-foreach(Field f in doc.Range.Fields)
-{
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
-}
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
 ```
 
-## Bước 4: Lưu tài liệu
+Được rồi, bây giờ chúng ta đã nắm được những điều cơ bản, hãy chuyển sang phần thú vị! Hãy làm theo các bước sau để đổi tên các trường phối trong tài liệu Word của bạn.
 
- Cuối cùng, chúng tôi gọi`Save()` phương pháp lưu tài liệu đã sửa đổi.
+## Bước 1: Tạo tài liệu và chèn các trường hợp nhất
 
-```csharp
-doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
-```
-
-### Ví dụ về mã nguồn để đổi tên các trường hợp nhất bằng Aspose.Words cho .NET
+Để bắt đầu, chúng ta cần tạo một tài liệu mới và chèn một số trường hợp nhất. Điều này sẽ phục vụ như là điểm khởi đầu của chúng tôi.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Tạo tài liệu và chèn các trường hợp nhất.
 Document doc = new Document();
@@ -66,42 +45,62 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
+```
 
+ Ở đây, chúng ta đang tạo một tài liệu mới và sử dụng`DocumentBuilder` lớp để chèn hai trường hợp nhất:`MyMergeField1`Và`MyMergeField2`.
+
+## Bước 2: Lặp lại các trường và đổi tên chúng
+
+Bây giờ, hãy viết mã để tìm và đổi tên các trường hợp nhất. Chúng tôi sẽ lặp qua tất cả các trường trong tài liệu, kiểm tra xem chúng có phải là trường hợp nhất hay không và đổi tên chúng.
+
+```csharp
 // Đổi tên các trường hợp nhất.
-foreach(Field f in doc.Range.Fields)
+foreach (Field f in doc.Range.Fields)
 {
-     if (f.Type == FieldType.FieldMergeField)
-     {
-         FieldMergeField mergeField = (FieldMergeField)f;
-         mergeField.FieldName = mergeField.FieldName + "_Renamed";
-         mergeField.Update();
-     }
+    if (f.Type == FieldType.FieldMergeField)
+    {
+        FieldMergeField mergeField = (FieldMergeField)f;
+        mergeField.FieldName = mergeField.FieldName + "_Renamed";
+        mergeField.Update();
+    }
 }
+```
 
+ Trong đoạn mã này, chúng tôi đang sử dụng một`foreach` vòng lặp để lặp qua tất cả các trường trong tài liệu. Đối với mỗi trường, chúng tôi kiểm tra xem đó có phải là trường hợp nhất hay không bằng cách sử dụng`f.Type == FieldType.FieldMergeField` . Nếu đúng như vậy, chúng tôi chuyển nó thành`FieldMergeField` và nối thêm`_Renamed` theo tên của nó.
+
+## Bước 3: Lưu tài liệu
+
+Cuối cùng, hãy lưu tài liệu của chúng ta với các trường hợp nhất đã được đổi tên.
+
+```csharp
 // Lưu tài liệu.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
-Hãy làm theo các bước sau để đổi tên các trường hợp nhất trong tài liệu của bạn bằng Aspose.Words for .NET.
+ Dòng mã này lưu tài liệu vào thư mục được chỉ định với tên`WorkingWithFields.RenameMergeFields.docx`.
 
-### Câu hỏi thường gặp
+## Phần kết luận
 
-#### Câu hỏi: Làm cách nào tôi có thể đổi tên các trường đã hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET?
+Và bạn có nó rồi đấy! Đổi tên các trường hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản khi bạn biết các bước. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng thao tác và tùy chỉnh tài liệu Word để phù hợp với nhu cầu của mình. Cho dù bạn đang tạo báo cáo, tạo thư được cá nhân hóa hay quản lý dữ liệu, kỹ thuật này sẽ rất hữu ích.
 
- Đáp: Để đổi tên các trường đã hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể lặp qua các trường trong tài liệu bằng cách sử dụng lệnh`FieldMergingArgs` lớp và sử dụng`FieldMergingArgs.FieldName` phương pháp đổi tên trường.
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Có thể chỉ đổi tên một số trường đã hợp nhất nhất định trong tài liệu Word bằng Aspose.Words cho .NET không?
+### Tôi có thể đổi tên nhiều trường hợp nhất cùng một lúc không?
 
-Trả lời: Có, chỉ có thể đổi tên một số trường đã hợp nhất nhất định trong tài liệu Word bằng Aspose.Words cho .NET. Bạn có thể lọc những trường cần đổi tên bằng tiêu chí cụ thể, chẳng hạn như tên trường hoặc các thuộc tính liên quan khác. Sau đó, bạn có thể đổi tên các trường tương ứng bằng cách sử dụng`FieldMergingArgs.FieldName` phương pháp.
+Tuyệt đối! Mã được cung cấp đã minh họa cách lặp lại và đổi tên tất cả các trường hợp nhất trong tài liệu.
 
-#### Câu hỏi: Làm cách nào để kiểm tra xem trường đã hợp nhất có được đổi tên thành công trong tài liệu Word bằng Aspose.Words cho .NET hay không?
+### Điều gì xảy ra nếu trường hợp nhất không tồn tại?
 
- Đáp: Để kiểm tra xem trường đã hợp nhất có được đổi tên thành công trong tài liệu Word bằng Aspose.Words cho .NET hay không, bạn có thể sử dụng hàm`FieldMergedArgs` lớp và truy cập`FieldMergedArgs.IsMerged` thuộc tính để xác định xem trường có được đổi tên bằng hit hay không.
+Nếu trường hợp nhất không tồn tại, mã sẽ bỏ qua trường đó. Không có lỗi sẽ được ném.
 
-#### Câu hỏi: Hậu quả của việc đổi tên trường đã hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET là gì?
+### Tôi có thể thay đổi tiền tố thay vì thêm vào tên không?
 
-Trả lời: Khi bạn đổi tên trường đã hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET, nó sẽ thay đổi tên của trường trong tài liệu, điều này có thể ảnh hưởng đến chức năng hoặc quy trình khác phụ thuộc vào tên trường. Hãy nhớ cân nhắc những hậu quả tiềm ẩn này trước khi đổi tên các trường đã hợp nhất.
+ Có, bạn có thể sửa đổi`mergeField.FieldName` gán để đặt nó thành bất kỳ giá trị nào bạn muốn.
 
-#### Câu hỏi: Có thể khôi phục tên ban đầu của trường đã hợp nhất sau khi đổi tên nó bằng Aspose.Words cho .NET không?
+### Aspose.Words cho .NET có miễn phí không?
 
-Trả lời: Có, có thể khôi phục tên ban đầu của trường đã hợp nhất sau khi đổi tên nó bằng Aspose.Words cho .NET. Bạn có thể lưu trữ tên ban đầu của trường trong một biến hoặc danh sách, sau đó sử dụng thông tin đó để khôi phục tên ban đầu nếu cần.
+ Aspose.Words for .NET là một sản phẩm thương mại, nhưng bạn có thể sử dụng[dùng thử miễn phí](https://releases.aspose.com/) để đánh giá nó.
+
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+
+ Bạn có thể tìm thấy tài liệu toàn diện[đây](https://reference.aspose.com/words/net/).

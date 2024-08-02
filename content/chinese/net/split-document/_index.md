@@ -12,9 +12,9 @@ url: /zh/net/split-document/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [按标题 Html](./by-headings-html/) | 逐步解释 Aspose.Words for .NET 的按标题 HTML 功能的 C# 源代码 |
-| [按章节 Html](./by-sections-html/) | 了解如何使用 Aspose.Words for .NET 将 Word 文档拆分为 Html 部分，并附有完整的代码示例。 |
-| [按章节](./by-sections/) | 通过完整的代码示例了解如何使用 Aspose.Words for .NET 将 Word 文档拆分为单独的部分。 |
-| [逐页](./page-by-page/) | 逐步指导解释 .NET 的 Aspose.Words Page by Page 功能的 C# 源代码 |
+| [按标题 Html 拆分 Word 文档](./by-headings-html/) | 了解如何使用 Aspose.Words for .NET 将 Word 文档按标题拆分为 HTML。请遵循我们详细的分步指南。 |
+| [按部分 HTML 拆分 Word 文档](./by-sections-html/) | 通过本详细的分步指南了解如何使用 Aspose.Words for .NET 将 Word 文档按部分拆分为 HTML。 |
+| [按部分拆分 Word 文档](./by-sections/) | 了解如何使用 Aspose.Words for .NET 按部分拆分 Word 文档。按照此详细的分步指南进行高效的文档管理。 |
+| [按页拆分 Word 文档](./page-by-page/) | 通过本详细分步指南，了解如何使用 Aspose.Words for .NET 按页拆分 Word 文档。非常适合高效管理大型文档。 |
 | [合并文档](./merge-documents/) | 逐步解释 Aspose.Words for .NET 的合并文档功能的 C# 源代码 |
-| [按页面范围](./by-page-range/) | 使用 Aspose.Words for .NET 分步指南轻松地从 Word 文档中按页面范围提取。 |
+| [按页面范围拆分 Word 文档](./by-page-range/) | 通过我们详细的分步指南，了解如何使用 Aspose.Words for .NET 按页面范围拆分 Word 文档。非常适合开发人员。 |

@@ -42,7 +42,7 @@ Jangan ragu untuk menjelajahi properti lain dan melakukan operasi berbeda berdas
 
 ## Langkah 4: Menyimpan Dokumen
 
-Terakhir, simpan dokumen yang dimodifikasi:
+Terakhir, simpan dokumen yang diubah:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
@@ -79,7 +79,7 @@ Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasiny
 
  A: Untuk mengubah format kolom formulir tanggal di Aspose.Words, Anda dapat menggunakan`FormField.TextFormat` properti dan tetapkan format tanggal baru. Misalnya, Anda dapat menggunakan "dd/MM/yyyy" untuk menampilkan tanggal dalam format hari/bulan/tahun.
 
-#### T: Dapatkah saya mengambil daftar opsi dari bidang formulir tarik-turun di Aspose.Words?
+#### T: Bisakah saya mengambil daftar opsi dari bidang formulir dropdown di Aspose.Words?
 
  A: Ya, Anda dapat mengambil daftar opsi untuk bidang formulir dropdown di Aspose.Words menggunakan`FormField.DropDownItems` Properti. Anda dapat mengakses properti ini dan mendapatkan daftar opsi untuk melakukan operasi tambahan jika diperlukan.
 

@@ -9,7 +9,7 @@ url: /es/net/programming-with-document-properties/use-control-characters/
 ---
 ## Introducción
 
-¿Listo para sumergirse en el mundo de la automatización de documentos? Si alguna vez ha pasado demasiado tiempo creando o editando documentos de Word manualmente, Aspose.Words para .NET está aquí para salvar el día. Esta poderosa biblioteca le permite crear, modificar y convertir mediante programación documentos de Word con facilidad. Ya sea que sea un desarrollador experimentado o recién esté comenzando, esta guía lo guiará a través de todo lo que necesita para comenzar.
+¿Listo para sumergirse en el mundo de la automatización de documentos? Si alguna vez ha pasado demasiado tiempo creando o editando manualmente documentos de Word, Aspose.Words para .NET está aquí para salvar el día. Esta poderosa biblioteca le permite crear, modificar y convertir mediante programación documentos de Word con facilidad. Ya sea que sea un desarrollador experimentado o recién esté comenzando, esta guía lo guiará a través de todo lo que necesita para comenzar.
 
 ## Requisitos previos
 
@@ -17,7 +17,7 @@ Antes de pasar a las cosas divertidas, asegurémonos de que tienes todo lo que n
 
 1. Comprensión básica de C#: no es necesario ser un asistente de C#, pero conocer los conceptos básicos le resultará útil.
 2. .NET Framework instalado: asegúrese de tener .NET instalado en su máquina. Puedes descargarlo desde el[Sitio web de Microsoft.NET](https://dotnet.microsoft.com/download).
-3.  Aspose.Words para la biblioteca .NET: obtenga la última versión de[Página de descarga de Aspose](https://releases.aspose.com/words/net/).
+3.  Biblioteca Aspose.Words para .NET: obtenga la última versión de[Página de descarga de Aspose](https://releases.aspose.com/words/net/).
 
 ## Importar espacios de nombres
 

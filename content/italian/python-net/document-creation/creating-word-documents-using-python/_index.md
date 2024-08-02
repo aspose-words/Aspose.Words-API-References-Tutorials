@@ -143,7 +143,7 @@ Aspose.Words for Python è una potente libreria che fornisce API per interagire 
 
 Per installare Aspose.Words per Python, attenersi alla seguente procedura:
 
-1. Visita le Aspose.Releases (https://releases.aspose.com/words/python).
+1. Visita il Aspose.Releases (https://releases.aspose.com/words/python).
 2. Scarica i file della libreria compatibili con la tua versione di Python e il tuo sistema operativo.
 3. Seguire le istruzioni di installazione fornite sul sito web.
 

@@ -16,6 +16,6 @@ Az Aspose.Words használatával hatékonyan automatizálhatja a Word dokumentumf
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Számozás észlelése szóközökkel](./detect-numbering-with-whitespaces/) | Ismerje meg, hogyan észlelheti a listaszámokat szóközökkel az Aspose.Words for .NET programban. Egyszerűen javíthatja dokumentumai szerkezetét. |
-| [Kezelje a Spaces opciókat](./handle-spaces-options/) | Ismerje meg, hogyan kezelheti a TXT-dokumentumok szóközeit az Aspose.Words for .NET segítségével. Távolítsa el a felesleges szóközöket és javítsa az olvashatóságot. |
-| [Dokumentum szövegének iránya](./document-text-direction/) | Ismerje meg, hogyan adhat meg szövegirányt a dokumentumokban az Aspose.Words for .NET segítségével. A jobbról balra író nyelvek megjelenítésének javítása. Hozzáférés a teljes oktatóanyaghoz most. |
+| [Számozás észlelése szóközökkel](./detect-numbering-with-whitespaces/) | Fedezze fel, hogyan használhatja az Aspose.Words for .NET-et a szóközökkel ellátott számozás észlelésére egyszerű szöveges dokumentumokban, és biztosíthatja a listák helyes felismerését. |
+| [Kezelje a Spaces opciókat](./handle-spaces-options/) | Ismerje meg, hogyan kezelheti a szöveges dokumentumok kezdő és záró szóközeit az Aspose.Words for .NET segítségével. Ez az oktatóanyag útmutatót ad a szöveg formázásának tisztításához. |
+| [Dokumentum szövegének iránya](./document-text-direction/) | Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan állíthatja be a dokumentum szövegének irányát a Wordben az Aspose.Words for .NET használatával. Tökéletes a jobbról balra írt nyelvek kezelésére. |

@@ -2,7 +2,7 @@
 title: Tartalmak eltávolítása és finomítása a Word dokumentumokban
 linktitle: Tartalmak eltávolítása és finomítása a Word dokumentumokban
 second_title: Aspose.Words Python Document Management API
-description: Tanulja meg, hogyan távolíthat el és finomíthat hatékonyan tartalmat Word-dokumentumokból az Aspose.Words for Python segítségével. Lépésről lépésre útmutató forráskód-példákkal.
+description: Tanulja meg, hogyan távolíthat el és finomíthat hatékonyan tartalmat Word-dokumentumokból az Aspose.Words for Python segítségével. Lépésről lépésre, forráskód-példákkal.
 type: docs
 weight: 13
 url: /hu/python-net/content-extraction-and-manipulation/remove-content-documents/

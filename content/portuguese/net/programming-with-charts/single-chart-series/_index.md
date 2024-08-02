@@ -9,7 +9,7 @@ url: /pt/net/programming-with-charts/single-chart-series/
 ---
 ## Introdução
 
-Ei! Você já quis aprimorar seus documentos do Word com alguns gráficos elegantes? Bem, você está no lugar certo! Hoje, estamos mergulhando no mundo do Aspose.Words for .NET para personalizar séries de gráficos únicos em um gráfico. Quer você seja um profissional experiente ou esteja apenas começando, este guia irá guiá-lo passo a passo por todo o processo. Então, aperte o cinto e vamos traçar!
+Ei! Você já quis aprimorar seus documentos do Word com alguns gráficos elegantes? Bem, você está no lugar certo! Hoje, estamos mergulhando no mundo do Aspose.Words for .NET para personalizar séries de gráficos únicos em um gráfico. Quer você seja um profissional experiente ou esteja apenas começando, este guia o guiará por todo o processo, passo a passo. Então, aperte o cinto e vamos traçar!
 
 ## Pré-requisitos
 

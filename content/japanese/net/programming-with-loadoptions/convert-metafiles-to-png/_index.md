@@ -39,7 +39,7 @@ using Aspose.Words.Loading;
 まず最初に、プロジェクトが正しく設定されていることを確認してください。
 
 1. 新しいプロジェクトを作成する - Visual Studio を開き、新しいコンソール アプリケーション プロジェクトを作成します。
-2. Aspose.Words for .NET を追加します - パッケージ マネージャー コンソールで次のコマンドを実行して、NuGet パッケージ マネージャー経由で Aspose.Words をインストールします。
+2. Aspose.Words for .NET の追加 - パッケージ マネージャー コンソールで次のコマンドを実行して、NuGet パッケージ マネージャー経由で Aspose.Words をインストールします。
 
 ```shell
 Install-Package Aspose.Words

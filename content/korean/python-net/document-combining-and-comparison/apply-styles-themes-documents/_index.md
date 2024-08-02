@@ -45,7 +45,7 @@ font.style_identifier = StyleIdentifier.STRONG
 
 ## 스타일을 사용하여 단락 서식 지정
 
-스타일은 단락 서식에도 영향을 줍니다. 스타일을 사용하여 정렬, 간격 등을 조정합니다.
+스타일은 단락 서식에도 영향을 미칩니다. 스타일을 사용하여 정렬, 간격 등을 조정하세요.
 
 ```python
 from asposewords import ParagraphAlignment

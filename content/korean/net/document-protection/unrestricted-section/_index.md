@@ -11,14 +11,14 @@ url: /ko/net/document-protection/unrestricted-section/
 
 안녕하세요! .NET용 Aspose.Words의 세계로 뛰어들 준비가 되셨습니까? 오늘 우리는 매우 실용적인 문제, 즉 다른 부분을 보호하면서 Word 문서의 특정 섹션을 잠금 해제하는 방법을 다루고 있습니다. 문서의 일부 섹션을 보호하고 편집을 위해 다른 섹션을 열어 두어야 하는 경우 이 튜토리얼이 적합합니다. 시작하자!
 
-## 전제조건
+## 전제 조건
 
 핵심적인 내용으로 넘어가기 전에 필요한 모든 것이 갖추어져 있는지 확인하세요.
 
 -  .NET용 Aspose.Words: 아직 수행하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 - Visual Studio: 또는 기타 .NET 호환 IDE.
 - C#에 대한 기본 이해: C#에 조금 익숙해지면 이 튜토리얼을 쉽게 진행하는 데 도움이 됩니다.
--  Aspose 라이센스:[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/) 테스트를 위해 필요한 경우.
+-  Aspose 라이센스:[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 테스트를 위해 필요한 경우.
 
 ## 네임스페이스 가져오기
 

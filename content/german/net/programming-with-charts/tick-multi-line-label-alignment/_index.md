@@ -54,7 +54,7 @@ Document doc = new Document();
 
  Der`DocumentBuilder` Klasse in Aspose.Words ist ein leistungsstarkes Tool, das beim Erstellen von Dokumenten hilft. Wir werden es verwenden, um ein Diagramm in unser Dokument einzufügen.
 
- Initialisieren Sie eine Instanz des`DocumentBuilder` Klasse und übergibt unser Dokumentobjekt an seinen Konstruktor.
+ Initialisieren Sie eine Instanz des`DocumentBuilder` Klasse, und übergeben Sie unser Dokumentobjekt an seinen Konstruktor.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben die mehrzeilige Beschriftungsausrichtung in einem Diagramm mit Aspose.Words für .NET erfolgreich aktiviert. Indem Sie diese Schritte befolgen, können Sie Ihre Diagramme mühelos an Ihre spezifischen Anforderungen anpassen. Egal, ob Sie einen professionellen Bericht erstellen oder einfach nur experimentieren, Aspose.Words für .NET bietet die Flexibilität und Leistung, die Sie für die Erledigung Ihrer Aufgaben benötigen. Viel Spaß beim Programmieren!
+Und da haben Sie es! Sie haben die mehrzeilige Beschriftungsausrichtung in einem Diagramm mithilfe von Aspose.Words für .NET erfolgreich aktiviert. Indem Sie diese Schritte befolgen, können Sie Ihre Diagramme mühelos an Ihre spezifischen Anforderungen anpassen. Egal, ob Sie einen professionellen Bericht erstellen oder einfach nur experimentieren, Aspose.Words für .NET bietet die Flexibilität und Leistung, die Sie für die Erledigung Ihrer Aufgaben benötigen. Viel Spaß beim Programmieren!
 
 ## Häufig gestellte Fragen
 

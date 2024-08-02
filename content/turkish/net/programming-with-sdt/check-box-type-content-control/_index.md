@@ -98,5 +98,5 @@ Evet, Aspose.Words metin, tarih ve birleşik giriş kutusu kontrolleri de dahil 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Web sitesi](https://releases.aspose.com/).
 
-### Sorunla karşılaşırsam nereden destek alabilirim?
+### Sorunlarla karşılaşırsam nereden destek alabilirim?
  Ziyaret edebilirsiniz[Aspose Destek Forumu](https://forum.aspose.com/c/words/8) yardım için.

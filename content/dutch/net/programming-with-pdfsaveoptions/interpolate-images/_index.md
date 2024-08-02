@@ -87,7 +87,7 @@ Als je meer details nodig hebt of andere functies wilt verkennen, bekijk dan de[
 
 ### Wat is beeldinterpolatie in PDF's?
 
-Beeldinterpolatie is een techniek die wordt gebruikt om de kwaliteit van afbeeldingen te verbeteren door pixelwaarden tussen bestaande afbeeldingen te schatten, waardoor ze vloeiender en duidelijker lijken.
+Beeldinterpolatie is een techniek die wordt gebruikt om de kwaliteit van afbeeldingen te verbeteren door pixelwaarden tussen bestaande afbeeldingen te schatten, waardoor ze vloeiender en helderder lijken.
 
 ### Heb ik een speciale licentie nodig om beeldinterpolatie te gebruiken met Aspose.Words?
 

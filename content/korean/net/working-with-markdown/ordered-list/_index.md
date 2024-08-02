@@ -1,6 +1,6 @@
 ---
-title: 주문 목록
-linktitle: 주문 목록
+title: 정렬된 목록
+linktitle: 정렬된 목록
 second_title: Aspose.Words 문서 처리 API
 description: 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 정렬된 목록을 만드는 방법을 알아보세요. 문서 작성 자동화에 적합합니다.
 type: docs
@@ -11,7 +11,7 @@ url: /ko/net/working-with-markdown/ordered-list/
 
 따라서 프로그래밍 방식으로 놀라운 Word 문서를 만들기 위해 .NET용 Aspose.Words를 사용하기로 결정하셨습니다. 환상적인 선택! 오늘은 Word 문서에서 정렬된 목록을 만드는 방법을 자세히 살펴보겠습니다. 우리는 단계별로 진행할 것이므로 코딩 초보자이든 노련한 전문가이든 이 가이드가 큰 도움이 될 것입니다. 시작하자!
 
-## 전제조건
+## 전제 조건
 
 코드를 살펴보기 전에 필요한 몇 가지 사항이 있습니다.
 

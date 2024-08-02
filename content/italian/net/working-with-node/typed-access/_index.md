@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-node/typed-access/
 ---
 
-Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che illustra come utilizzare la funzionalità di accesso tipizzato con Aspose.Words per .NET.
+Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che illustra come utilizzare la funzionalità di accesso digitato con Aspose.Words per .NET.
 
 ## Passaggio 1: importa i riferimenti necessari
 Prima di iniziare, assicurati di aver importato i riferimenti necessari per utilizzare Aspose.Words per .NET nel tuo progetto. Ciò include l'importazione della libreria Aspose.Words e l'aggiunta degli spazi dei nomi richiesti al file di origine.
@@ -91,7 +91,7 @@ R: L'accesso tipizzato in Node.js si riferisce all'uso di tipi di nodo specifici
 
 #### D: Quali sono i vantaggi dell'accesso digitato rispetto all'accesso non digitato?
 
-R: L'accesso digitato presenta diversi vantaggi rispetto all'accesso non digitato. Innanzitutto, consente una migliore specificità nell'accesso ai nodi, semplificando la manipolazione e la gestione dei nodi in un documento XML. Inoltre, l'accesso digitato fornisce una migliore sicurezza evitando errori di tipo durante l'accesso alle proprietà e ai valori del nodo.
+R: L'accesso digitato presenta numerosi vantaggi rispetto all'accesso non digitato. Innanzitutto, consente una migliore specificità nell'accesso ai nodi, semplificando la manipolazione e la gestione dei nodi in un documento XML. Inoltre, l'accesso digitato fornisce una migliore sicurezza evitando errori di tipo durante l'accesso alle proprietà e ai valori del nodo.
 
 #### D: A quali tipi di nodi è possibile accedere con l'accesso digitato?
 

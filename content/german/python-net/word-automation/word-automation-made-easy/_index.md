@@ -88,7 +88,7 @@ shape.image_data.set_image("path/to/image.jpg")
 paragraph = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True).add(shape)
 ```
 
-## Verwalten von Dokumentabschnitten
+## Dokumentabschnitte verwalten
 
 Aspose.Words ermöglicht es uns, unsere Dokumente in Abschnitte mit jeweils eigenen Eigenschaften zu unterteilen.
 

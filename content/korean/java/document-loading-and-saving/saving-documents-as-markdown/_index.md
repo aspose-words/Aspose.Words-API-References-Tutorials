@@ -12,7 +12,7 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-markdown/
 
 이 단계별 가이드에서는 Aspose.Words for Java를 사용하여 문서를 Markdown으로 저장하는 방법을 보여줍니다. 마크다운은 텍스트 문서 서식을 지정하는 데 일반적으로 사용되는 경량 마크업 언어입니다. Aspose.Words for Java를 사용하면 Word 문서를 Markdown 형식으로 쉽게 변환할 수 있습니다. 테이블 내용 정렬 및 이미지 처리를 포함하여 Markdown 파일 저장의 다양한 측면을 다룹니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 필수 구성 요소가 있는지 확인하세요.
 
@@ -146,7 +146,7 @@ public void setImagesFolder() throws Exception
 
  Markdown 파일에 이미지를 포함하려면 다음을 사용하여 이미지 폴더 경로를 설정하세요.`setImagesFolder`방법`MarkdownSaveOptions`. 이미지 파일이 지정된 폴더에 저장되어 있는지 확인하세요. 그러면 Aspose.Words for Java가 그에 따라 이미지 참조를 처리합니다.
 
-### Aspose.Words for Java 평가판이 있습니까?
+### Aspose.Words for Java 평가판이 있나요?
 
 예, Aspose 웹사이트에서 Java용 Aspose.Words 평가판을 구할 수 있습니다. 평가판을 사용하면 라이센스를 구매하기 전에 라이브러리의 기능을 평가할 수 있습니다.
 

@@ -18,7 +18,7 @@ Antes de mergulharmos nas técnicas avançadas, certifique-se de ter os seguinte
 
 1.  Instalação do Python: certifique-se de que o Python esteja instalado em seu sistema. Você pode baixá-lo em[aqui](https://www.python.org/downloads/).
 
-2.  Aspose.Words para Python: você precisa ter o Aspose.Words para Python instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/).
+2. Aspose.Words para Python: você precisa ter o Aspose.Words para Python instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/).
 
 3. Preparação do documento: Tenha um documento do Word pronto no qual deseja realizar operações de localização e substituição.
 

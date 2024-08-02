@@ -11,7 +11,7 @@ url: /ko/net/join-and-append-documents/keep-source-numbering/
 
  .NET용 Aspose.Words로 작업할 때 형식을 유지하면서 한 소스에서 다른 소스로 문서를 가져오는 작업을 다음을 사용하여 효율적으로 처리할 수 있습니다.`NodeImporter` 수업. 이 튜토리얼에서는 프로세스를 단계별로 안내합니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 - 컴퓨터에 Visual Studio가 설치되어 있습니다.

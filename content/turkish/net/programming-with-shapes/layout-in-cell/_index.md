@@ -2,42 +2,63 @@
 title: Hücre İçi Düzen
 linktitle: Hücre İçi Düzen
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak bir Word belgesinde bir tablo hücresindeki bir şeklin yerleşimini nasıl yapacağınızı öğrenin.
+description: Bu kapsamlı kılavuzla Aspose.Words for .NET kullanarak hücre düzenini nasıl ayarlayacağınızı öğrenin. Word belgelerini özelleştirmek isteyen geliştiriciler için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/layout-in-cell/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanılarak bir Word belgesinde bir tablo hücresi içindeki bir şeklin nasıl düzenleneceği açıklanmaktadır. Şekil özelliklerini ayarlayarak ve düzen seçeneklerini kullanarak şeklin hücre içindeki konumunu ve görünümünü kontrol edebilirsiniz.
+Word belgelerindeki tablo hücrelerinizin düzenine programlı olarak ince ayar yapmak istediyseniz, doğru yerdesiniz. Bugün Aspose.Words for .NET'i kullanarak hücre düzenini nasıl ayarlayacağımızı ele alacağız. Kolayca takip edebilmeniz için pratik bir örneği adım adım inceleyeceğiz.
 
 ## Önkoşullar
-Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- Aspose.Words for .NET kütüphanesi kuruldu.
-- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
+Koda geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. Eğer yapmadıysanız, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: .NET ile kurulmuş bir geliştirme ortamına ihtiyacınız olacak. Öneriler arıyorsanız Visual Studio mükemmel bir seçimdir.
+3. Temel C# Bilgisi: Her adımı açıklayacağım, ancak temel C# anlayışı daha kolay ilerlemenize yardımcı olacaktır.
+4.  Belge Dizini: Belgelerinizi kaydedeceğiniz dizin yolunu hazırlayın. Buna şu şekilde değineceğiz:`YOUR DOCUMENT DIRECTORY`.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için projenize gerekli ad alanlarını içe aktardığınızdan emin olun:
+
+```csharp
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+Süreci yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+ İlk önce yeni bir Word belgesi oluşturacağız ve`DocumentBuilder` içeriğimizi oluşturmamıza yardımcı olacak nesne.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyle çalışmaya itiraz edin.
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 3: Tabloyu Oluşturun
- Kullan`StartTable`, `EndTable`, `InsertCell` , Ve`Write` yöntemleri`DocumentBuilder` bir tablo oluşturmak için nesne. İstenilen satır yüksekliğini ve yükseklik kuralını kullanarak ayarlayın.`RowFormat` özellikler.
+## Adım 2: Bir Tablo Başlatın ve Satır Formatını Ayarlayın
+
+Bir tablo oluşturmaya başlayacağız ve satırların yükseklik ve yükseklik kuralını belirleyeceğiz.
 
 ```csharp
 builder.StartTable();
 builder.RowFormat.Height = 100;
 builder.RowFormat.HeightRule = HeightRule.Exactly;
+```
+
+## 3. Adım: Hücreleri Ekleyin ve İçerikle Doldurun
+
+Daha sonra, hücreleri tabloya eklemek için döngü yapıyoruz. Her 7 hücre için yeni bir tane oluşturmak üzere satırı sonlandıracağız.
+
+```csharp
 for (int i = 0; i < 31; i++)
 {
     if (i != 0 && i % 7 == 0) builder.EndRow();
@@ -47,15 +68,16 @@ for (int i = 0; i < 31; i++)
 builder.EndTable();
 ```
 
-## Adım 4: Şekli Oluşturun ve Biçimlendirin
- Oluşturmak`Shape` Filigranı tanımlamak için nesneyi seçin ve özelliklerini yapılandırın. kullanarak bir hücrenin içine yerleştirilecek şekli ayarlayın.`IsLayoutInCell` mülk.
+## 4. Adım: Filigran Şekli Ekleme
+
+ Şimdi belgemize filigran ekleyelim. Bir oluşturacağız`Shape` nesneyi seçin ve özelliklerini ayarlayın.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 {
     RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
     RelativeVerticalPosition = RelativeVerticalPosition.Page,
-    IsLayoutInCell = true,
+    IsLayoutInCell = true, // Şekli bir hücreye yerleştirilecekse tablo hücresinin dışında görüntüleyin.
     Width = 300,
     Height = 70,
     HorizontalAlignment = HorizontalAlignment.Center,
@@ -64,8 +86,9 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 };
 ```
 
-## Adım 5: Şekli Özelleştirin
- Aşağıdaki gibi özellikleri ayarlayarak filigran şeklinin görünümünü ve metnini özelleştirin:`FillColor`, `StrokeColor`, `TextPath`, `Name`, `WrapType`, vesaire.
+## Adım 5: Filigran Görünümünü Özelleştirin
+
+Renk ve metin özelliklerini ayarlayarak filigranın görünümünü daha da özelleştireceğiz.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -76,8 +99,9 @@ watermark.Name = $"WaterMark_{Guid.NewGuid()}";
 watermark.WrapType = WrapType.None;
 ```
 
-## Adım 6: Şekli Belgeye Ekleme
- kullanarak filigran şeklini belgeye ekleyin.`InsertNode` yöntemi`DocumentBuilder` nesne. kullanarak şekli konumlandırın.`MoveTo` belgedeki son çalıştırmadan sonra yerleştirme yöntemini kullanın.
+## Adım 6: Belgeye Filigran Ekleme
+
+Belgedeki son çalıştırmayı bulacağız ve filigranı bu konuma ekleyeceğiz.
 
 ```csharp
 Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
@@ -85,56 +109,39 @@ builder.MoveTo(run);
 builder.InsertNode(watermark);
 ```
 
-## Adım 7: Belgeyi Kaydedin
- Belgeyi kullanarak belirtilen dizine kaydedin.`Save`yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithShapes.LayoutInCell.docx" olarak kaydediyoruz.
+## Adım 7: Belgeyi Word 2010 için Optimize Edin
+
+Uyumluluğu sağlamak için belgeyi Word 2010 için optimize edeceğiz.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
-doc
-
-.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-### Aspose.Words for .NET kullanan Layout In Cell için örnek kaynak kodu 
+## Adım 8: Belgeyi Kaydedin
+
+Son olarak belgemizi belirtilen dizine kaydedeceğiz.
 
 ```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	builder.StartTable();
-	builder.RowFormat.Height = 100;
-	builder.RowFormat.HeightRule = HeightRule.Exactly;
-	for (int i = 0; i < 31; i++)
-	{
-		if (i != 0 && i % 7 == 0) builder.EndRow();
-		builder.InsertCell();
-		builder.Write("Cell contents");
-	}
-	builder.EndTable();
-	Shape watermark = new Shape(doc, ShapeType.TextPlainText)
-	{
-		RelativeHorizontalPosition = RelativeHorizontalPosition.Page,
-		RelativeVerticalPosition = RelativeVerticalPosition.Page,
-		IsLayoutInCell = true, // Şekli bir hücreye yerleştirilecekse tablo hücresinin dışında görüntüleyin.
-		Width = 300,
-		Height = 70,
-		HorizontalAlignment = HorizontalAlignment.Center,
-		VerticalAlignment = VerticalAlignment.Center,
-		Rotation = -40
-	};
-	watermark.FillColor = Color.Gray;
-	watermark.StrokeColor = Color.Gray;
-	watermark.TextPath.Text = "watermarkText";
-	watermark.TextPath.FontFamily = "Arial";
-	watermark.Name = $"WaterMark_{Guid.NewGuid()}";
-	watermark.WrapType = WrapType.None;
-	Run run = doc.GetChildNodes(NodeType.Run, true)[doc.GetChildNodes(NodeType.Run, true).Count - 1] as Run;
-	builder.MoveTo(run);
-	builder.InsertNode(watermark);
-	doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
-	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
+doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Word belgesindeki bir tablo hücresindeki şekli başarıyla yerleştirdiniz.
+## Çözüm
+
+İşte buyur! Aspose.Words for .NET'i kullanarak özelleştirilmiş tablo düzenine sahip bir Word belgesini başarıyla oluşturdunuz ve filigran eklediniz. Bu eğitim, sürecin her bölümünü anlamanıza yardımcı olacak açık ve adım adım bir kılavuz sağlamayı amaçladı. Bu becerilerle artık programlı olarak daha karmaşık ve özelleştirilmiş Word belgeleri oluşturabilirsiniz.
+
+## SSS'ler
+
+### Filigran metni için farklı bir yazı tipi kullanabilir miyim?
+ Evet, yazı tipini ayarlayarak değiştirebilirsiniz.`watermark.TextPath.FontFamily` özelliği istediğiniz yazı tipine ekleyin.
+
+### Filigranın konumunu nasıl ayarlarım?
+ Değiştirebilirsiniz`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , Ve`VerticalAlignment` filigranın konumunu ayarlamaya yönelik özellikler.
+
+### Filigran için metin yerine resim kullanmak mümkün mü?
+ Kesinlikle! Bir oluşturabilirsiniz`Shape` türü ile`ShapeType.Image` ve görüntüsünü kullanarak ayarlayın.`ImageData.SetImage` yöntem.
+
+### Farklı satır yüksekliklerine sahip tablolar oluşturabilir miyim?
+Evet, yüksekliği değiştirerek her sıra için farklı yükseklikler ayarlayabilirsiniz.`RowFormat.Height` Bu satıra hücreleri eklemeden önce özelliği.
+
+### Belgeden filigranı nasıl kaldırabilirim?
+ Filigranı belgenin şekiller koleksiyonunda bulup, filigranı çağırarak kaldırabilirsiniz.`Remove` yöntem.

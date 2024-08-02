@@ -12,7 +12,7 @@ url: /ko/java/document-manipulation/generating-table-of-contents/
 
 이 튜토리얼에서는 Aspose.Words for Java를 사용하여 목차(TOC)를 생성하는 과정을 안내합니다. TOC는 정리된 문서를 작성하는 데 중요한 기능입니다. TOC의 모양과 레이아웃을 사용자 정의하는 방법을 다루겠습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 Java 프로젝트에 Aspose.Words for Java가 설치 및 설정되어 있는지 확인하세요.
 

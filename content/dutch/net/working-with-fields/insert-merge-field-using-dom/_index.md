@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-merge-field-using-dom/
 ---
+## Invoering
 
 Als u met documentverwerking in .NET werkt, bent u waarschijnlijk Aspose.Words tegengekomen. Deze krachtige bibliotheek biedt een breed scala aan functies voor het programmatisch manipuleren van Word-documenten. In deze zelfstudie concentreren we ons op één specifieke functie: het invoegen van een samenvoegveld met behulp van het Document Object Model (DOM) in Aspose.Words voor .NET. Deze handleiding begeleidt u bij elke stap, van het opzetten van uw omgeving tot het invoegen en bijwerken van een samenvoegveld in een Word-document.
 
@@ -14,26 +15,26 @@ Als u met documentverwerking in .NET werkt, bent u waarschijnlijk Aspose.Words t
 
 Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt om deze tutorial te volgen.
 
-1. **Basic Knowledge of C#:** Je moet vertrouwd zijn met programmeren in C#.
-2. **Visual Studio Installed:** Zorg ervoor dat Visual Studio of een andere C# IDE op uw computer is geïnstalleerd.
-3. **Aspose.Words for .NET:** Download en installeer de nieuwste versie van Aspose.Words voor .NET vanaf de[Releases](https://releases.aspose.com/words/net/).
-4. **Valid License:** Als u geen vergunning heeft, kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
+1. Basiskennis van C#: U moet vertrouwd zijn met programmeren in C#.
+2. Visual Studio geïnstalleerd: Zorg ervoor dat Visual Studio of een andere C# IDE op uw computer is geïnstalleerd.
+3.  Aspose.Words voor .NET: Download en installeer de nieuwste versie van Aspose.Words voor .NET vanaf de[Releases](https://releases.aspose.com/words/net/).
+4.  Geldige licentie: Als u geen licentie heeft, kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
 
 ## Stap 1: Stel uw project in
 
 Laten we eerst een nieuw project opzetten in Visual Studio.
 
-1. **Open Visual Studio.**
-2. **Create a New Project:** Ga naar Bestand > Nieuw > Project. Selecteer een C# Console-app.
-3. **Name Your Project:** Geef uw project een betekenisvolle naam en klik op Maken.
+1. Open Visuele Studio.
+2. Maak een nieuw project: Ga naar Bestand > Nieuw > Project. Selecteer een C# Console-app.
+3. Geef uw project een naam: geef uw project een betekenisvolle naam en klik op Maken.
 
 ## Stap 2: Installeer Aspose.Words
 
 Om Aspose.Words te gebruiken, moet u het aan uw project toevoegen. Dit kan gedaan worden via NuGet Package Manager.
 
-1. **Open NuGet Package Manager:** Klik met de rechtermuisknop op uw project in de Solution Explorer en selecteer vervolgens NuGet-pakketten beheren.
-2. **Search for Aspose.Words:** Zoek in NuGet Package Manager naar "Aspose.Words".
-3. **Install the Package:** Klik op Installeren om Aspose.Words aan uw project toe te voegen.
+1. Open NuGet Package Manager: Klik met de rechtermuisknop op uw project in de Solution Explorer en selecteer vervolgens NuGet-pakketten beheren.
+2. Zoeken naar Aspose.Words: Zoek in NuGet Package Manager naar "Aspose.Words".
+3. Installeer het pakket: Klik op Installeren om Aspose.Words aan uw project toe te voegen.
 
 ## Stap 3: Naamruimten importeren
 
@@ -106,17 +107,17 @@ Door deze stappen te volgen, kunt u eenvoudig samenvoegvelden in een Word-docume
 
 ## Veelgestelde vragen
 
-### 1. Wat is een samenvoegveld?
+###  Wat is een samenvoegveld?
 Een samenvoegveld is een tijdelijke aanduiding in een document die dynamisch kan worden vervangen door gegevens uit een gegevensbron, zoals een database of een CSV-bestand.
 
-### 2. Kan ik Aspose.Words gratis gebruiken?
+###  Kan ik Aspose.Words gratis gebruiken?
  Aspose.Words biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/). Voor langdurig gebruik moet u een licentie aanschaffen.
 
-### 3. Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
+###  Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
  U kunt een tijdelijke licentie verkrijgen via de Aspose-website[hier](https://purchase.aspose.com/temporary-license/).
 
-### 4. Welke versies van .NET worden ondersteund door Aspose.Words?
+### Welke versies van .NET worden ondersteund door Aspose.Words?
 Aspose.Words ondersteunt meerdere versies van .NET, waaronder .NET Framework, .NET Core en .NET Standard.
 
-### 5. Waar kan ik de API-documentatie voor Aspose.Words vinden?
+###  Waar kan ik de API-documentatie voor Aspose.Words vinden?
  De API-documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).

@@ -29,7 +29,7 @@ using Aspose.Words;
 
 Décomposons le processus en étapes claires :
 
-## Étape 1 : Charger les documents
+## Étape 1 : Charger des documents
 
  Tout d'abord, chargez les documents source et destination dans`Document` objets:
 

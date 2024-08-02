@@ -72,7 +72,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 Hãy chia nhỏ chức năng của từng tùy chọn:
 - `CssStyleSheetType = CssStyleSheetType.External`: Tùy chọn này chỉ định rằng các kiểu CSS sẽ được lưu trong biểu định kiểu bên ngoài.
 - `ExportFontResources = true`: Điều này cho phép xuất tài nguyên phông chữ.
-- `ResourceFolder = dataDir + "Resources"`: Chỉ định thư mục cục bộ nơi tài nguyên (như phông chữ và tệp CSS) sẽ được lưu.
+- `ResourceFolder = dataDir + "Resources"`: Chỉ định thư mục cục bộ nơi các tài nguyên (như phông chữ và tệp CSS) sẽ được lưu.
 - `ResourceFolderAlias = "http://example.com/resources"`: Đặt bí danh cho thư mục tài nguyên sẽ được sử dụng trong tệp HTML.
 
 ## Bước 4: Lưu tài liệu dưới dạng HTML

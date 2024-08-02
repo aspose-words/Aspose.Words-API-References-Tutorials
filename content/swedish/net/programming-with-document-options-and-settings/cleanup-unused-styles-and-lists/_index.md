@@ -74,7 +74,7 @@ Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 
 ## Steg 6: Spara det rengjorda dokumentet
 
-Till sist, låt oss spara vårt rensade dokument. Detta säkerställer att alla ändringar sparas och att ditt dokument är så snyggt som möjligt.
+Låt oss slutligen spara vårt rensade dokument. Detta säkerställer att alla ändringar sparas och att ditt dokument är så snyggt som möjligt.
 
 ```csharp
 doc.Save(dataDir + "CleanedDocument.docx");
@@ -93,7 +93,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter dig skapa, ändra
 Ja, du kan ställa in båda`UnusedLists`och`UnusedStyles` till`true` i`CleanupOptions` att ta bort båda.
 
 ### Är det möjligt att ångra rensningen?
-Nej, när rensningen är klar och dokumentet har sparats kan du inte ångra ändringarna. Håll alltid en säkerhetskopia av ditt originaldokument.
+Nej, när rensningen är klar och dokumentet har sparats kan du inte ångra ändringarna. Spara alltid en säkerhetskopia av ditt originaldokument.
 
 ### Behöver jag en licens för Aspose.Words för .NET?
  Ja, Aspose.Words för .NET kräver en licens för full funktionalitet. Du kan få en[tillfällig licens](https://purchase.aspose.com/temporary-license) eller[köp en](https://purchase.aspose.com/buy).

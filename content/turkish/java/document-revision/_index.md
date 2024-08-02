@@ -20,7 +20,7 @@ Eğitimler Aspose.Words for Java ile sürüm kontrolü ve belge geçmişini yön
 
 ## Revizyon Görevlerini Otomatikleştirme
 
-Geliştiriciler Aspose.Words for Java'yı kullanarak revizyon görevlerini otomatikleştirme konusunda fikir sahibi olacaklar. Eğitimler, revizyonları programlı bir şekilde yönetme, revizyon kabul veya reddini otomatikleştirme ve revizyon raporları oluşturma tekniklerini kapsar. Geliştiriciler, revizyon görevlerini otomatikleştirerek belge işleme iş akışlarını geliştirebilir ve etkili revizyon yönetimi sağlayabilir.
+Geliştiriciler, Aspose.Words for Java'yı kullanarak revizyon görevlerini otomatikleştirme konusunda fikir sahibi olacaklar. Eğitimler, revizyonları programlı bir şekilde yönetme, revizyon kabul veya reddini otomatikleştirme ve revizyon raporları oluşturma tekniklerini kapsar. Geliştiriciler, revizyon görevlerini otomatikleştirerek belge işleme iş akışlarını geliştirebilir ve etkili revizyon yönetimi sağlayabilir.
 
 Aspose.Words for Java ile belge revizyonunda uzmanlaşan geliştiriciler, kelime işlem ve belge işleme yeteneklerini optimize edebilirler. Eğitimler, pratik örnekler ve adım adım talimatlar sunarak geliştiricilerin Java uygulamalarında güçlü revizyon izleme ve sürüm kontrolü uygulamalarına olanak sağlar. Belge revizyon süreçlerini kolaylaştırmak ve belgelerin doğru, güncel olmasını sağlamak için bu eğitimlerden yararlanın.
 

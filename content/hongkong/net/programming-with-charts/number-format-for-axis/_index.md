@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-charts/number-format-for-axis/
 
 在開始之前，讓我們確保您已擁有所需的一切。這是一個快速清單：
 
--  Aspose.Words for .NET：確保您已安裝它。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：確保您已安裝它。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 - .NET Framework：確保您安裝了相容的 .NET 框架。
 - 開發環境：像 Visual Studio 這樣的 IDE 就可以完美運作。
 - C# 基礎知識：這將幫助您遵循編碼範例。

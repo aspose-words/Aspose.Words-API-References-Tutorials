@@ -11,7 +11,7 @@ url: /ko/net/programming-with-document-options-and-settings/cleanup-unused-style
 
 안녕하세요! Word 문서가 약간 복잡해지고 있다고 느낀 적이 있습니까? 사용하지 않는 스타일과 목록이 그대로 남아서 공간을 차지하고 문서를 필요 이상으로 더 복잡하게 보이게 만드는 것을 아시나요? 글쎄, 당신은 운이 좋다! 오늘 우리는 .NET용 Aspose.Words를 사용하여 사용하지 않는 스타일과 목록을 정리하는 깔끔하고 작은 트릭을 살펴보겠습니다. 이는 문서에 상쾌하고 상쾌한 목욕을 제공하는 것과 같습니다. 자, 커피를 마시고 편안히 앉아 시작해 보세요!
 
-## 전제조건
+## 전제 조건
 
 핵심적인 세부 사항을 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다. 간단한 체크리스트는 다음과 같습니다.
 
@@ -96,7 +96,7 @@ Aspose.Words for .NET은 C#을 사용하여 프로그래밍 방식으로 Word �
 아니요. 정리가 완료되고 문서가 저장되면 변경 사항을 취소할 수 없습니다. 항상 원본 문서의 백업을 보관하세요.
 
 ### .NET용 Aspose.Words에 대한 라이선스가 필요합니까?
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license) 또는[하나 구입](https://purchase.aspose.com/buy).
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license) 또는[하나 구입](https://purchase.aspose.com/buy).
 
 ### 자세한 정보와 지원은 어디서 찾을 수 있나요?
  자세한 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/words/net/) 그리고 그 곳으로부터 지원을 받아[포럼을 Aspose](https://forum.aspose.com/c/words/8).

@@ -18,7 +18,7 @@ Avant d'entrer dans le vif du sujet, assurons-nous que vous disposez de tout ce 
 1.  Aspose.Words pour .NET : vous avez besoin de cette bibliothèque. Si vous ne l'avez pas encore, récupérez-le sur[ici](https://releases.aspose.com/words/net/).
 2.  Une licence : vous aurez besoin d'une licence valide pour libérer tout le potentiel d'Aspose.Words. Vous pouvez en acheter un[ici](https://purchase.aspose.com/buy) ou obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
 3. Environnement de développement : Visual Studio ou tout autre IDE compatible .NET.
-4. Connaissance de base de C# : Ne vous inquiétez pas, vous n'avez pas besoin d'être un pro, juste quelques connaissances de base suffiront.
+4. Connaissance de base de C# : ne vous inquiétez pas, vous n'avez pas besoin d'être un pro, juste quelques connaissances de base suffiront.
 
 ## Importer des espaces de noms
 

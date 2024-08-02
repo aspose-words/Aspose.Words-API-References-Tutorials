@@ -2,89 +2,40 @@
 title: Repetir linhas nas páginas subsequentes
 linktitle: Repetir linhas nas páginas subsequentes
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como repetir linhas da tabela nas páginas subsequentes em um documento do Word com Aspose.Words for .NET.
+description: Aprenda como criar documentos do Word com linhas repetidas de cabeçalho de tabela usando Aspose.Words for .NET. Siga este guia para garantir documentos profissionais e sofisticados.
 type: docs
 weight: 10
 url: /pt/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
+## Introdução
 
-Neste tutorial, aprenderemos como repetir as linhas de uma tabela nas páginas subsequentes de um documento Word usando Aspose.Words for .NET. Seguiremos um guia passo a passo para entender o código e implementar esse recurso. Ao final deste tutorial, você poderá especificar linhas para repetir nas páginas subsequentes de sua tabela em seus documentos do Word.
+Criar um documento do Word programaticamente pode ser uma tarefa difícil, especialmente quando você precisa manter a formatação em várias páginas. Você já tentou criar uma tabela no Word e percebeu que as linhas do cabeçalho não se repetiam nas páginas subsequentes? Não tenha medo! Com Aspose.Words for .NET, você pode facilmente garantir que os cabeçalhos das tabelas se repitam em cada página, proporcionando uma aparência profissional e sofisticada aos seus documentos. Neste tutorial, orientaremos você nas etapas para conseguir isso usando exemplos de código simples e explicações detalhadas. Vamos mergulhar!
 
-## Etapa 1: configuração do projeto
-1. Inicie o Visual Studio e crie um novo projeto C#.
-2. Adicione uma referência à biblioteca Aspose.Words for .NET.
+## Pré-requisitos
 
-## Passo 2: Criando o documento e inicializando o gerador de documentos
-Para iniciar o processamento de palavras com o documento e o gerador de documentos, siga estas etapas:
+Antes de começarmos, certifique-se de ter o seguinte:
 
-```csharp
-// Caminho para o seu diretório de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words para .NET: você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+2. .NET Framework instalado em sua máquina.
+3. Visual Studio ou qualquer outro IDE que ofereça suporte ao desenvolvimento .NET.
+4. Compreensão básica de programação C#.
 
-// Criação de documento
-Document doc = new Document();
+Certifique-se de ter instalado o Aspose.Words for .NET e configurado seu ambiente de desenvolvimento antes de continuar.
 
-// Inicialize o gerador de documentos
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+## Importar namespaces
 
-Certifique-se de substituir "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho real para o diretório de documentos.
-
-## Passo 3: Construindo a tabela com linhas repetidas
-A seguir, construiremos uma tabela com linhas repetidas nas páginas subsequentes. Use o seguinte código:
+Para começar, você precisa importar os namespaces necessários para o seu projeto. Adicione o seguinte usando diretivas na parte superior do seu arquivo C#:
 
 ```csharp
-// Começo da mesa
-builder. StartTable();
-
-// Configuração dos parâmetros da primeira linha (linhas de cabeçalho)
-builder.RowFormat.HeadingFormat = true;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.CellFormat.Width = 100;
-
-// Insira a primeira célula da primeira linha
-builder. InsertCell();
-builder.Writeln("Header line 1");
-builder. EndRow();
-
-// Insira a segunda célula da primeira linha
-builder. InsertCell();
-builder.Writeln("Header line 2");
-builder. EndRow();
-
-// Configure os parâmetros das seguintes linhas
-builder.CellFormat.Width = 50;
-builder.ParagraphFormat.ClearFormatting();
-
-// Loop para inserir as células nas linhas seguintes
-for (int i = 0; i < 50; i++)
-{
-builder. InsertCell();
-builder.RowFormat.HeadingFormat = false;
-builder.Write("Text column 1");
-builder. InsertCell();
-builder.Write("Text column 2");
-builder. EndRow();
-}
-
-// Fim da mesa
-builder. EndTable();
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
- Aqui usamos o construtor de documentos para construir uma tabela com duas linhas de cabeçalho e várias linhas de dados. O`RowFormat.HeadingFormat` parâmetros são usados para marcar linhas de cabeçalho que devem ser repetidas nas páginas subsequentes.
+Esses namespaces incluem as classes e métodos necessários para manipular documentos e tabelas do Word.
 
-## Passo 4: Salvando o documento modificado
-Finalmente EUA
+## Etapa 1: inicializar o documento
 
-  precisa salvar o documento modificado com as linhas de cabeçalho repetidas nas páginas subsequentes da tabela. Use o seguinte código:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
-```
-
-Certifique-se de especificar o caminho e o nome de arquivo corretos para o documento de saída.
-
-### Exemplo de código-fonte para repetir linhas em páginas subsequentes usando Aspose.Words for .NET 
+ Primeiro, vamos criar um novo documento Word e um`DocumentBuilder` para construir nossa mesa.
 
 ```csharp
 // Caminho para o diretório do seu documento
@@ -92,29 +43,79 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+ Este código inicializa um novo documento e um`DocumentBuilder` objeto, que auxilia na construção da estrutura do documento.
+
+## Etapa 2: inicie a tabela e defina as linhas de cabeçalho
+
+A seguir, iniciaremos a tabela e definiremos as linhas de cabeçalho que queremos repetir nas páginas subsequentes.
+
+```csharp
 builder.StartTable();
 builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
+
 builder.InsertCell();
 builder.Writeln("Heading row 1");
 builder.EndRow();
+
 builder.InsertCell();
 builder.Writeln("Heading row 2");
 builder.EndRow();
+```
+
+ Aqui, iniciamos uma nova tabela, definimos o`HeadingFormat`propriedade para`true` para indicar que as linhas são cabeçalhos e definir o alinhamento e a largura das células.
+
+## Etapa 3: adicionar linhas de dados à tabela
+
+Agora, adicionaremos várias linhas de dados à nossa tabela. Essas linhas não serão repetidas nas páginas subsequentes.
+
+```csharp
 builder.CellFormat.Width = 50;
 builder.ParagraphFormat.ClearFormatting();
 for (int i = 0; i < 50; i++)
 {
-	builder.InsertCell();
-	builder.RowFormat.HeadingFormat = false;
-	builder.Write("Column 1 Text");
-	builder.InsertCell();
-	builder.Write("Column 2 Text");
-	builder.EndRow();
+    builder.InsertCell();
+    builder.RowFormat.HeadingFormat = false;
+    builder.Write("Column 1 Text");
+    
+    builder.InsertCell();
+    builder.Write("Column 2 Text");
+    builder.EndRow();
 }
+```
+
+ Este loop insere 50 linhas de dados na tabela, com duas colunas em cada linha. O`HeadingFormat` está configurado para`false` para essas linhas, pois não são linhas de cabeçalho.
+
+## Etapa 4: salve o documento
+
+Finalmente, salvamos o documento no diretório especificado.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
+Isso salva o documento com o nome especificado no diretório de documentos.
+
 ## Conclusão
-Neste tutorial, aprendemos como repetir as linhas de uma tabela nas páginas subsequentes de um documento Word usando Aspose.Words for .NET. Seguindo este guia passo a passo e implementando o código C# fornecido, você pode especificar quais linhas repetir de acordo com suas necessidades específicas em seus documentos do Word.
+
+aí está! Com apenas algumas linhas de código, você pode criar um documento do Word com tabelas que possuem linhas de cabeçalho repetidas nas páginas subsequentes usando Aspose.Words for .NET. Isto não só melhora a legibilidade dos seus documentos, mas também garante uma aparência consistente e profissional. Agora vá em frente e experimente isso em seus projetos!
+
+## Perguntas frequentes
+
+### Posso personalizar ainda mais as linhas do cabeçalho?
+ Sim, você pode aplicar formatação adicional às linhas de cabeçalho modificando as propriedades de`ParagraphFormat`, `RowFormat` , e`CellFormat`.
+
+### É possível adicionar mais colunas à tabela?
+ Absolutamente! Você pode adicionar quantas colunas forem necessárias inserindo mais células dentro do`InsertCell` método.
+
+### Como posso repetir outras linhas nas páginas subsequentes?
+ Para repetir qualquer linha, defina o`RowFormat.HeadingFormat`propriedade para`true` para essa linha específica.
+
+### Posso usar este método para tabelas existentes em um documento?
+ Sim, você pode modificar tabelas existentes acessando-as através do`Document` objeto e aplicando formatação semelhante.
+
+### Que outras opções de formatação de tabela estão disponíveis no Aspose.Words for .NET?
+ Aspose.Words for .NET oferece uma ampla gama de opções de formatação de tabela, incluindo mesclagem de células, configurações de borda e alinhamento de tabela. Confira a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.

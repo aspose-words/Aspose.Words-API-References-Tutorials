@@ -7,42 +7,51 @@ type: docs
 weight: 10
 url: /zh-hant/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
+## 介紹
 
-本教學課程示範如何使用 Aspose.Words for .NET 建立一個資料表，其中的重複部分對應到 Word 文件中的自訂 Xml 元件。重複部分可讓您根據自訂 Xml 元件中儲存的 XML 資料動態新增行。
+在本教學中，我們將逐步介紹使用 Aspose.Words for .NET 建立具有重複部分的資料表的過程，該表會對應到自訂 XML 部分。這對於基於結構化資料動態生成文件特別有用。
 
 ## 先決條件
-要學習本教程，您需要具備以下條件：
 
-- 已安裝 Aspose.Words for .NET 程式庫。
-- C# 和 Word 文件文字處理的基礎知識。
+在我們開始之前，請確保您具備以下條件：
+1. 已安裝 Aspose.Words for .NET 程式庫。您可以從[阿斯普斯網站](https://releases.aspose.com/words/net/).
+2. 對 C# 和 XML 有基本了解。
 
-## 第 1 步：設定文檔目錄
-首先設定文檔目錄的路徑。代替`"YOUR DOCUMENT DIRECTORY"`與要儲存文件的目錄的實際路徑。
+## 導入命名空間
+
+確保在您的專案中包含必要的命名空間：
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Markup;
+using Aspose.Words.Tables;
+```
+
+## 步驟1：初始化Document和DocumentBuilder
+
+首先，建立一個新文件並初始化`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
 
-## 第 2 步：建立文件和 DocumentBuilder
-建立一個新實例`Document`類別和一個`DocumentBuilder`建構文檔的內容。
-
-```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 步驟 3：將自訂 XML 資料新增至 CustomXmlPart
-創建一個`CustomXmlPart`並在其中新增自訂 XML 資料。在此範例中，我們建立一個 XML 字串，表示包含標題和作者的書籍集合。
+## 第 2 步：新增自訂 XML 部分
+
+將自訂 XML 部分新增至文件。此 XML 包含我們想要對應到表格的資料：
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-	"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-	"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-	"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
+    "<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
+    "<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
+    "<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
 ```
 
-## 第四步：建立表格和表格結構
-開始使用建立表`StartTable`的方法`DocumentBuilder`。使用以下命令新增表格儲存格和內容`InsertCell`和`Write`方法。
+## 第三步：建立表結構
+
+接下來，使用`DocumentBuilder`建立表頭：
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,94 +63,60 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## 步驟 5：建立對應到自訂 XML 的重複部分
-創建一個`StructuredDocumentTag`和`SdtType.RepeatingSection`來表示重複部分。使用以下命令設定重複部分的 XML 映射`SetMapping`的方法`XmlMapping`財產。在此範例中，我們將重複部分映射到`/books[1]/book`.
+## 第 4 步：建立重複部分
+
+創建一個`StructuredDocumentTag`(SDT) 重複部分並將其對應到 XML 資料：
 
 ```csharp
-StructuredDocumentTag repeatingSectionSdt =
-	new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
 repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## 第 6 步：建立重複部分項目並新增儲存格
-創建一個`StructuredDocumentTag`和`SdtType.RepeatingSectionItem`代表重複節項。將其作為子項附加到重複部分。
+## 第 5 步：建立重複部分項目
+
+為重複部分項目建立 SDT 並將其新增至重複部分：
 
 ```csharp
-StructuredDocumentTag repeatingSectionItemSdt = 
-	new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
+StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-```
-
-創建一個`Row`表示重複部分中的每個項目並將其附加到重複部分項目。
-
-```csharp
 Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## 步驟 7：在重複部分新增內容控件
-創造`StructuredDocumentTag`對象與`SdtType.PlainText`
+## 步驟 6：將 XML 資料對應到表格單元格
 
- 代表標題和作者內容控制項。使用以下命令為每個內容控制項設定 XML 映射`SetMapping`的方法`XmlMapping`財產。在此範例中，我們將標題控制項對應到`/books[1]/book[1]/title[1]`和作者控制`/books[1]/book[1]/author[1]`.
+為標題和作者建立 SDT，將它們對應到 XML 數據，並將它們附加到行中：
 
 ```csharp
-StructuredDocumentTag titleSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
 row.AppendChild(titleSdt);
 
-StructuredDocumentTag authorSdt =
-	new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
+StructuredDocumentTag authorSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
 authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
 row.AppendChild(authorSdt);
 ```
 
-## 第 8 步：儲存文檔
-使用指令將修改後的文件儲存到指定目錄`Save`方法。提供所需的檔案名稱和適當的檔案副檔名。在此範例中，我們將文件另存為「WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx」。
+## 步驟7：儲存文檔
+
+最後將文檔儲存到指定目錄：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### 使用 Aspose.Words for .NET 建立對應到自訂 Xml 元件的資料表重複部分的範例原始碼 
+## 結論
 
-```csharp
-	//文檔目錄的路徑
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+透過執行這些步驟，您已使用 Aspose.Words for .NET 成功建立了一個資料表，其中的重複部分會對應到自訂 XML 部分。這允許基於結構化資料生成動態內容，使文件創建更加靈活和強大。
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
-		"<books><book><title>Everyday Italian</title><author>Giada De Laurentiis</author></book>" +
-		"<book><title>Harry Potter</title><author>J K. Rowling</author></book>" +
-		"<book><title>Learning XML</title><author>Erik T. Ray</author></book></books>");
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	builder.Write("Title");
-	builder.InsertCell();
-	builder.Write("Author");
-	builder.EndRow();
-	builder.EndTable();
-	StructuredDocumentTag repeatingSectionSdt =
-		new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
-	repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
-	table.AppendChild(repeatingSectionSdt);
-	StructuredDocumentTag repeatingSectionItemSdt = 
-		new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
-	repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
-	Row row = new Row(doc);
-	repeatingSectionItemSdt.AppendChild(row);
-	StructuredDocumentTag titleSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	titleSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/title[1]", "");
-	row.AppendChild(titleSdt);
-	StructuredDocumentTag authorSdt =
-		new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
-	authorSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book[1]/author[1]", "");
-	row.AppendChild(authorSdt);
-	doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
+## 常見問題解答
 
-```
+### 什麼是結構化文件標籤 (SDT)？
+SDT，也稱為內容控件，是文件中用於包含結構化資料的有界區域。
 
-就是這樣！您已使用 Aspose.Words for .NET 成功建立了一個資料表，其中的重複部分會對應到 Word 文件中的 CustomXmlPart。
+### 我可以在自訂 XML 部分中使用其他資料類型嗎？
+是的，您可以使用任何資料類型建立自訂 XML 部分並相應地對應它們。
+
+### 如何為重複部分添加更多行？
+重複部分自動複製映射 XML 路徑中每個項目的行結構。

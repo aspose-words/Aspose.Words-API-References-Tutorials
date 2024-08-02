@@ -103,7 +103,7 @@ section.page_setup.orientation = aw.Orientation.LANDSCAPE
 
 ## A dokumentum mentése és exportálása
 
-Miután befejeztük a munkát a dokumentummal, különböző formátumokba menthetjük.
+Miután befejeztük a munkát a dokumentummal, elmenthetjük különböző formátumokban.
 
 ```python
 # Save the document to a file
@@ -112,7 +112,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 ## Speciális Word automatizálási szolgáltatások
 
-Az Aspose.Words olyan fejlett funkciókat kínál, mint a körlevél, a dokumentumtitkosítás, valamint a könyvjelzők, hiperhivatkozások és megjegyzések kezelése.
+Az Aspose.Words olyan fejlett funkciókat kínál, mint a körlevél, a dokumentumtitkosítás, valamint a könyvjelzők, hivatkozások és megjegyzések kezelése.
 
 ## Dokumentumfeldolgozás automatizálása
 

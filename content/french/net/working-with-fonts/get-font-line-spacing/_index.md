@@ -33,7 +33,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Font.Name = "Calibri";
 ```
 
-## Étape 3 : ajouter du texte au document
+## Étape 3 : Ajouter du texte au document
 Nous allons maintenant utiliser le générateur de documents pour ajouter du texte formaté au document.
 
 ```csharp

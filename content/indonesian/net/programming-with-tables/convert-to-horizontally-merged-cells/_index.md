@@ -2,55 +2,82 @@
 title: Konversikan Menjadi Sel yang Digabung Secara Horizontal
 linktitle: Konversikan Menjadi Sel yang Digabung Secara Horizontal
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengonversi sel tabel menjadi sel yang digabungkan secara horizontal di dokumen Word dengan Aspose.Words untuk .NET.
+description: Konversikan sel yang digabungkan secara vertikal menjadi sel yang digabungkan secara horizontal di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah untuk tata letak tabel yang mulus.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kita akan mempelajari cara menggunakan Aspose.Words untuk .NET untuk mengonversi sel tabel menjadi sel yang digabungkan secara horizontal dalam dokumen Word. Kami akan mengikuti panduan langkah demi langkah untuk memahami kode dan menerapkan fitur ini. Di akhir tutorial ini, Anda akan mampu memanipulasi sel tabel di dokumen Word Anda secara terprogram.
+Saat bekerja dengan tabel di dokumen Word, Anda sering kali perlu mengelola penggabungan sel untuk mendapatkan tata letak yang lebih bersih dan terorganisir. Aspose.Words for .NET menyediakan cara ampuh untuk mengonversi sel yang digabungkan secara vertikal menjadi sel yang digabungkan secara horizontal, memastikan tabel Anda terlihat sesuai keinginan Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah.
 
-## Langkah 1: Pengaturan Proyek
-1. Luncurkan Visual Studio dan buat proyek C# baru.
-2. Tambahkan referensi ke perpustakaan Aspose.Words untuk .NET.
+## Prasyarat
 
-## Langkah 2: Memuat dokumen dan mengakses tabel
-Untuk memulai Pemrosesan Kata dengan tabel, kita perlu memuat dokumen yang memuatnya dan mengaksesnya. Ikuti langkah ini:
+Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
+
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[halaman rilis](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan seperti Visual Studio.
+3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C#.
+
+## Impor Namespace
+
+Pertama, kita perlu mengimpor namespace yang diperlukan untuk proyek kita. Ini akan memungkinkan kita untuk memanfaatkan fungsionalitas Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana agar mudah diikuti.
+
+## Langkah 1: Muat Dokumen Anda
+
+Pertama, Anda perlu memuat dokumen yang berisi tabel yang ingin Anda modifikasi. Dokumen ini seharusnya sudah ada di direktori proyek Anda.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Muat dokumen
 Document doc = new Document(dataDir + "Table with merged cells.docx");
+```
 
-// Akses ke array
+## Langkah 2: Akses Tabel
+
+Selanjutnya, kita perlu mengakses tabel spesifik di dalam dokumen. Di sini, kami berasumsi tabel tersebut ada di bagian pertama dokumen.
+
+```csharp
+// Akses tabel pertama dalam dokumen
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-Pastikan untuk mengganti "DIREKTORI DOKUMEN ANDA" dengan jalur sebenarnya ke direktori dokumen Anda. Selain itu, pastikan dokumen tersebut berisi tabel dengan sel yang digabungkan secara horizontal.
+## Langkah 3: Konversikan ke Sel yang Digabung Secara Horizontal
 
-## Langkah 3: Konversikan ke sel yang digabungkan secara horizontal
- Selanjutnya, kita akan mengonversi sel tabel menjadi sel yang digabungkan secara horizontal menggunakan`ConvertToHorizontallyMergedCells()` metode. Gunakan kode berikut:
-
-```csharp
-// Konversikan ke sel yang digabungkan secara horizontal
-table. ConvertToHorizontallyMergedCells();
-```
-
- Di sini kita hanya memanggil`ConvertToHorizontallyMergedCells()` metode pada array untuk melakukan konversi.
-
-### Contoh kode sumber untuk Konversi Ke Sel yang Digabung Secara Horizontal menggunakan Aspose.Words untuk .NET 
+ Sekarang, kita akan mengonversi sel yang digabungkan secara vertikal dalam tabel menjadi sel yang digabungkan secara horizontal. Ini dilakukan dengan menggunakan`ConvertToHorizontallyMergedCells` metode.
 
 ```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document(dataDir + "Table with merged cells.docx");
-	Table table = doc.FirstSection.Body.Tables[0];
-	// Sekarang sel yang digabungkan memiliki tanda gabungan yang sesuai.
-	table.ConvertToHorizontallyMergedCells();
+// Ubah sel yang digabungkan secara vertikal menjadi sel yang digabungkan secara horizontal
+table.ConvertToHorizontallyMergedCells();
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mengonversi sel tabel menjadi sel yang digabungkan secara horizontal dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini dan menerapkan kode C# yang disediakan, Anda dapat memanipulasi sel tabel di dokumen Word Anda secara terprogram. Fitur ini memungkinkan Anda mengelola dan mengatur data Anda secara fleksibel dan personal dalam sebuah tabel.
+
+Dan itu saja! Anda telah berhasil mengonversi sel yang digabungkan secara vertikal menjadi sel yang digabungkan secara horizontal di dokumen Word menggunakan Aspose.Words untuk .NET. Metode ini memastikan tabel Anda terorganisir dengan baik dan lebih mudah dibaca. Dengan mengikuti langkah-langkah ini, Anda dapat mengkustomisasi dan memanipulasi dokumen Word Anda untuk memenuhi kebutuhan spesifik Anda.
+
+## FAQ
+
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?  
+Aspose.Words untuk .NET terutama dirancang untuk bahasa .NET seperti C#. Namun, Anda dapat menggunakannya dengan bahasa lain yang didukung .NET seperti VB.NET.
+
+### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?  
+ Ya, Anda dapat mengunduh a[uji coba gratis](https://releases.aspose.com/) dari situs web Aspose.
+
+### Bagaimana saya bisa mendapatkan dukungan jika saya mengalami masalah?  
+ Anda dapat mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8) untuk bantuan.
+
+### Bisakah saya menerapkan lisensi dari file atau aliran?  
+Ya, Aspose.Words untuk .NET memungkinkan Anda menerapkan lisensi dari file dan aliran. Anda dapat menemukan informasi lebih lanjut di[dokumentasi](https://reference.aspose.com/words/net/).
+
+### Fitur lain apa yang ditawarkan Aspose.Words untuk .NET?  
+ Aspose.Words untuk .NET menawarkan berbagai fitur termasuk pembuatan dokumen, manipulasi, konversi, dan rendering. Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.

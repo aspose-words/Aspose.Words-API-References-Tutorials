@@ -89,7 +89,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## Preguntas frecuentes
 
-### ¿Puedo usar patrones de expresiones regulares más complejos con Aspose.Words para .NET?  
+### ¿Puedo utilizar patrones de expresiones regulares más complejos con Aspose.Words para .NET?  
 ¡Absolutamente! Aspose.Words admite una amplia gama de patrones de expresiones regulares. Puede adaptar sus patrones para que coincidan exactamente con lo que necesita.
 
 ### ¿Aspose.Words para .NET admite otras operaciones de texto?  

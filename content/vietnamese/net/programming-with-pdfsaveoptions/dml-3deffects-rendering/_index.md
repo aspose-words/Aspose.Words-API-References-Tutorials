@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
 ## Phần kết luận
 
-Chúc mừng! Bạn đã hiển thị thành công các hiệu ứng DML 3D trong tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể chuyển đổi tài liệu Word có hiệu ứng 3D nâng cao thành các tệp PDF tuyệt đẹp, làm cho tài liệu của bạn hấp dẫn và hấp dẫn hơn về mặt hình ảnh. Tính năng mạnh mẽ này của Aspose.Words có thể nâng cao đáng kể chất lượng trình bày tài liệu của bạn.
+Chúc mừng! Bạn đã hiển thị thành công các hiệu ứng DML 3D trong tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể chuyển đổi tài liệu Word với các hiệu ứng 3D nâng cao thành các tệp PDF tuyệt đẹp, làm cho tài liệu của bạn hấp dẫn và hấp dẫn hơn về mặt hình ảnh. Tính năng mạnh mẽ này của Aspose.Words có thể nâng cao đáng kể chất lượng trình bày tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 

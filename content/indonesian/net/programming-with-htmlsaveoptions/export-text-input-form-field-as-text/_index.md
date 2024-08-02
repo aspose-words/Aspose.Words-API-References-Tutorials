@@ -9,7 +9,7 @@ url: /id/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-te
 ---
 ## Perkenalan
 
-Jadi, Anda terjun ke dunia Aspose.Words untuk .NET? Pilihan yang luar biasa! Jika Anda ingin mempelajari cara mengekspor bidang formulir masukan teks sebagai teks, Anda berada di tempat yang tepat. Baik Anda baru memulai atau mengasah keterampilan Anda, panduan ini akan memandu Anda melalui semua yang perlu Anda ketahui. Mari kita mulai, oke?
+Jadi, Anda terjun ke dunia Aspose.Words untuk .NET? Pilihan yang luar biasa! Jika Anda ingin mempelajari cara mengekspor bidang formulir masukan teks sebagai teks, Anda berada di tempat yang tepat. Baik Anda baru memulai atau mengasah keterampilan Anda, panduan ini akan memandu Anda melalui semua yang perlu Anda ketahui. Mari kita mulai, ya?
 
 ## Prasyarat
 
@@ -18,7 +18,7 @@ Sebelum kita mendalami seluk beluknya, pastikan Anda memiliki semua yang perlu A
 -  Aspose.Words untuk .NET: Unduh dan instal versi terbaru dari[Di Sini](https://releases.aspose.com/words/net/).
 - IDE: Visual Studio atau lingkungan pengembangan C# apa pun.
 - Pengetahuan Dasar C#: Pemahaman tentang sintaks dasar C# dan konsep pemrograman berorientasi objek.
-- Dokumen: Contoh dokumen Word (`Rendering.docx`) dengan kolom formulir masukan teks.
+- Dokumen: Contoh dokumen Word (`Rendering.docx`) dengan kolom formulir input teks.
 
 ## Impor Namespace
 

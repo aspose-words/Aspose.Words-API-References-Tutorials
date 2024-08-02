@@ -2,53 +2,97 @@
 title: Získejte vzdálenost mezi textem obklopujícím tabulku
 linktitle: Získejte vzdálenost mezi textem obklopujícím tabulku
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce k získání vzdálenosti mezi textem a tabulkou v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak načíst vzdálenost mezi tabulkou a okolním textem v dokumentech aplikace Word pomocí Aspose.Words for .NET. Vylepšete rozvržení dokumentu pomocí této příručky.
 type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
+## Úvod
 
-tomto tutoriálu vás provedeme krok za krokem procesem získání vzdálenosti mezi okolním textem v tabulce pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak získat přístup k různým vzdálenostem mezi tabulkou a okolním textem v dokumentech aplikace Word pomocí Aspose.Words for .NET.
+Představte si, že připravujete elegantní zprávu nebo důležitý dokument a chcete, aby vaše tabulky vypadaly správně. Musíte zajistit, aby byl mezi tabulkami a textem kolem nich dostatek místa, aby byl dokument snadno čitelný a vizuálně přitažlivý. Pomocí Aspose.Words for .NET můžete tyto vzdálenosti snadno programově načíst a upravit. Tento tutoriál vás provede kroky, jak toho dosáhnout, aby vaše dokumenty vynikly extra nádechem profesionality.
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Zde se nachází váš dokument aplikace Word. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+## Předpoklady
+
+Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
+
+1.  Knihovna Aspose.Words for .NET: Musíte mít nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[Aspose Releases](https://releases.aspose.com/words/net/) strana.
+2. Vývojové prostředí: Pracovní vývojové prostředí s nainstalovaným rozhraním .NET Framework. Visual Studio je dobrá volba.
+3. Ukázkový dokument: Dokument aplikace Word (.docx) obsahující alespoň jednu tabulku pro testování kódu.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory do vašeho projektu. To vám umožní přístup ke třídám a metodám potřebným pro manipulaci s dokumenty aplikace Word pomocí Aspose.Words for .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Krok 2: Načtěte existující dokument
- Dále musíte načíst existující dokument aplikace Word do instance souboru`Document` třída.
+Nyní si tento proces rozdělíme do snadno pochopitelných kroků. Pokryjeme vše od načítání dokumentu až po vyhledání vzdáleností kolem vašeho stolu.
+
+## Krok 1: Vložte svůj dokument
+
+ Prvním krokem je načtení dokumentu aplikace Word do souboru Aspose.Words`Document` objekt. Tento objekt představuje celý dokument.
 
 ```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Vložte dokument
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Krok 3: Získejte vzdálenost mezi tabulkou a okolním textem
- Abychom získali vzdálenost mezi tabulkou a okolním textem, musíme k tabulce v dokumentu přistupovat pomocí`GetChild()` metoda a`NodeType.Table` vlastnictví. Potom můžeme zobrazit různé vzdálenosti pomocí vlastností pole`DistanceTop`, `DistanceBottom`, `DistanceRight`a`DistanceLeft`.
+## Krok 2: Přístup k tabulce
+
+ Dále musíte získat přístup k tabulce v dokumentu. The`GetChild` metoda umožňuje načíst první tabulku nalezenou v dokumentu.
 
 ```csharp
+// Získejte první tabulku v dokumentu
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
-Console.WriteLine("Distance between table and top text: " + table.DistanceTop);
-Console.WriteLine("Distance between table and bottom text: " + table.DistanceBottom);
-Console.WriteLine("Distance between the table and the text on the right: " + table.DistanceRight);
-Console.WriteLine("Distance between the table and the text on the left: " + table.DistanceLeft);
 ```
 
-### Ukázkový zdrojový kód pro Get Distance Between Table Surrounding Text pomocí Aspose.Words for .NET 
+## Krok 3: Načtení hodnot vzdálenosti
+
+Nyní, když máte tabulku, je čas získat hodnoty vzdálenosti. Tyto hodnoty představují prostor mezi tabulkou a okolním textem z každé strany: nahoře, dole, vlevo a vpravo.
 
 ```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Získejte vzdálenost mezi tabulkou a okolním textem
+Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
+```
 
-	Document doc = new Document(dataDir + "Tables.docx");
-	Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
-	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-	Console.WriteLine(table.DistanceTop);
-	Console.WriteLine(table.DistanceBottom);
-	Console.WriteLine(table.DistanceRight);
-	Console.WriteLine(table.DistanceLeft);
+## Krok 4: Zobrazte vzdálenosti
+
+Nakonec můžete zobrazit vzdálenosti. To vám může pomoci ověřit mezery a provést všechny nezbytné úpravy, abyste zajistili, že váš stůl bude v dokumentu vypadat dokonale.
+
+```csharp
+// Zobrazte vzdálenosti
+Console.WriteLine("Distance from Top: " + table.DistanceTop);
+Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
+Console.WriteLine("Distance from Right: " + table.DistanceRight);
+Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak získat vzdálenost mezi okolním textem v tabulce pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno získat přístup k různým vzdálenostem mezi tabulkou a okolním textem v dokumentech aplikace Word. Aspose.Words nabízí výkonné a flexibilní API pro manipulaci a formátování tabulek ve vašich dokumentech. S těmito znalostmi můžete analyzovat rozložení vašich tabulek ve vztahu k textu a vyhovět specifickým potřebám.
+
+A tady to máte! Pomocí těchto kroků můžete snadno získat vzdálenosti mezi tabulkou a okolním textem v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tato jednoduchá, ale výkonná technika vám umožňuje doladit rozvržení dokumentu, aby byl čitelnější a vizuálně přitažlivější. Šťastné kódování!
+
+## FAQ
+
+### Mohu upravit vzdálenosti programově?
+ Ano, vzdálenosti můžete upravit programově pomocí Aspose.Words nastavením`DistanceTop`, `DistanceBottom`, `DistanceRight` , a`DistanceLeft` vlastnosti`Table` objekt.
+
+### Co když můj dokument obsahuje více tabulek?
+ Můžete procházet podřízené uzly dokumentu a aplikovat stejnou metodu na každou tabulku. Použití`GetChildNodes(NodeType.Table, true)` získat všechny stoly.
+
+### Mohu používat Aspose.Words s .NET Core?
+Absolutně! Aspose.Words podporuje .NET Core a stejný kód s drobnými úpravami můžete použít pro projekty .NET Core.
+
+### Jak nainstaluji Aspose.Words for .NET?
+Aspose.Words for .NET můžete nainstalovat prostřednictvím NuGet Package Manager v sadě Visual Studio. Jednoduše vyhledejte "Aspose.Words" a nainstalujte balíček.
+
+### Existují nějaká omezení pro typy dokumentů podporované Aspose.Words?
+ Aspose.Words podporuje širokou škálu formátů dokumentů, včetně DOCX, DOC, PDF, HTML a dalších. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) pro úplný seznam podporovaných formátů.

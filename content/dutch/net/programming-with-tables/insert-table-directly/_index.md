@@ -100,7 +100,7 @@ Om het proces van het toevoegen van cellen te versnellen, kunnen we bestaande ce
 
 ```csharp
 // Vervolgens herhaalden we het proces voor de andere cellen en rijen in de tabel.
-// We kunnen de zaken ook versnellen door bestaande cellen en rijen te klonen.
+//We kunnen de zaken ook versnellen door bestaande cellen en rijen te klonen.
 row.AppendChild(cell.Clone(false));
 row.LastCell.AppendChild(new Paragraph(doc));
 row.LastCell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 2 Text"));
@@ -140,7 +140,7 @@ Gefeliciteerd! U hebt met succes een tabel rechtstreeks in een Word-document ing
  Ja, u kunt een aanvraag indienen[gratis proefperiode](https://releases.aspose.com/) om de bibliotheek te evalueren voordat u deze aanschaft.
 
 ### Hoe koop ik Aspose.Words voor .NET?
- U kunt Aspose.Words voor .NET kopen bij de[aankooppagina](https://purchase.aspose.com/buy).
+ kunt Aspose.Words voor .NET kopen bij de[aankooppagina](https://purchase.aspose.com/buy).
 
 ### Waar kan ik de documentatie voor Aspose.Words voor .NET vinden?
  De documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).

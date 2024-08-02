@@ -9,7 +9,7 @@ url: /nl/net/programming-with-charts/
 ---
 De Aspose.Words voor .NET Graphics Programming Tutorials bieden een uitgebreide bron voor het leren maken en manipuleren van afbeeldingen in uw Word-documenten. Tutorials begeleiden u bij de stappen om diagrammen toe te voegen, het uiterlijk ervan aan te passen, gegevens te bewerken en meer. Of u nu een beginner of een ervaren ontwikkelaar bent, deze tutorials helpen u de grafische functies in Aspose.Words onder de knie te krijgen.
 
-In deze zelfstudies leert u hoe u verschillende soorten diagrammen kunt maken, zoals staafdiagrammen, cirkeldiagrammen, vlakdiagrammen, lijndiagrammen, enz. U leert ook hoe u diagramelementen kunt aanpassen, zoals titels, legenda's, gegevenslabels en bijlen. In de tutorials leert u hoe u diagramgegevens kunt manipuleren door gegevensreeksen toe te voegen, te wijzigen of te verwijderen.
+In deze zelfstudies leert u hoe u verschillende soorten diagrammen kunt maken, zoals staafdiagrammen, cirkeldiagrammen, vlakdiagrammen, lijndiagrammen, enzovoort. U leert ook hoe u diagramelementen kunt aanpassen, zoals titels, legenda's, gegevenslabels en bijlen. In de tutorials leert u hoe u diagramgegevens kunt manipuleren door gegevensreeksen toe te voegen, te wijzigen of te verwijderen.
 
 Met deze tutorials kunt u uw Word-documenten verbeteren door visueel aantrekkelijke en informatieve afbeeldingen toe te voegen. U leert hoe u kunt profiteren van de geavanceerde grafische functies in Aspose.Words voor .NET en deze effectief in uw toepassingen kunt integreren. Verken deze tutorials om uw grafische vaardigheden in Aspose.Words uit te breiden.
 
@@ -25,7 +25,7 @@ Met deze tutorials kunt u uw Word-documenten verbeteren door visueel aantrekkeli
 | [Voeg een spreidingsdiagram in een Word-document in](./insert-scatter-chart/) | Leer hoe u een spreidingsdiagram invoegt in Word met Aspose.Words voor .NET. Eenvoudige stappen voor het integreren van visuele gegevensrepresentaties in uw documenten. |
 | [Definieer XY-aseigenschappen in een diagram](./define-xyaxis-properties/) | Leer met deze stapsgewijze handleiding hoe u XY-aseigenschappen in een diagram definieert met Aspose.Words voor .NET. Perfect voor .NET-ontwikkelaars. |
 | [Voeg datum-tijdwaarden toe aan de as van een diagram](./date-time-values-to-axis/) | Leer hoe u datum- en tijdwaarden aan de as van een diagram toevoegt met Aspose.Words voor .NET in deze uitgebreide stapsgewijze handleiding. |
-| [Getalnotatie voor as in een diagram](./number-format-for-axis/) | Leer hoe u diagramasnummers kunt opmaken met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter moeiteloos de leesbaarheid en professionaliteit van uw document. |
+| [Getalnotatie voor as in een diagram](./number-format-for-axis/) | Leer hoe u diagramasnummers opmaakt met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter moeiteloos de leesbaarheid en professionaliteit van uw document. |
 | [Grenzen van de as](./bounds-of-axis/) | Leer hoe u de grenzen van een as in een diagram instelt met behulp van Aspose.Words voor .NET, waarmee u het bereik van waarden bepaalt die op de as worden weergegeven. |
 | [Intervaleenheid tussen labels op de as van een diagram](./interval-unit-between-labels-on-axis/) | Leer hoe u de intervaleenheid tussen labels op de as van een diagram instelt met Aspose.Words voor .NET. |
 | [Verberg de grafiekas in een Word-document](./hide-chart-axis/) | Leer hoe u de diagramas in een Word-document kunt verbergen met Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze zelfstudie. |

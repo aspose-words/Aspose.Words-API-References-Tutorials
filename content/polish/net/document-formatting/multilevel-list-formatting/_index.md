@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Lists;
 ```
 
-## Krok 1: Zainicjuj dokument i kreator
+## Krok 1: Zainicjuj dokument i kreatora
 
 Na początek utwórzmy nowy dokument Worda i zainicjujmy DocumentBuilder. Klasa DocumentBuilder udostępnia metody wstawiania treści do dokumentu.
 

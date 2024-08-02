@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Layout;
 ```
 
-Essas linhas de código são essenciais porque trazem as funcionalidades do Aspose.Words que utilizaremos.
+Essas linhas de código são essenciais porque trazem as funcionalidades do Aspose.Words que usaremos.
 
 ## Etapa 1: configurando seu documento
 

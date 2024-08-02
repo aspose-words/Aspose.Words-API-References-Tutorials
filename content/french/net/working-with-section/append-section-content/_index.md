@@ -16,7 +16,7 @@ Salut! Vous êtes-vous déjà demandé comment manipuler des documents Word par 
 Avant de commencer, vous aurez besoin de quelques éléments :
 
 1. Connaissance de base de C# : vous n'avez pas besoin d'être un expert, mais une compréhension de base de C# sera utile.
-2.  Aspose.Words pour .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/) Si vous ne souhaitez pas l'acheter tout de suite, vous pouvez opter pour un[essai gratuit](https://releases.aspose.com/).
+2.  Aspose.Words pour .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/) . Si vous ne souhaitez pas l'acheter tout de suite, vous pouvez opter pour un[essai gratuit](https://releases.aspose.com/).
 3. Visual Studio : n'importe quelle version devrait fonctionner, mais la dernière version est recommandée.
 4. .NET Framework : assurez-vous qu'il est installé sur votre ordinateur.
 
@@ -66,7 +66,7 @@ Maintenant que nous avons nos sections, nous devons y accéder afin de pouvoir m
 Section section = doc.Sections[2];
 ```
 
- Dans cette étape, nous accédons à la troisième section de notre document. N'oubliez pas que l'index est de base zéro, donc`Sections[2]` fait référence à la troisième section.
+Dans cette étape, nous accédons à la troisième section de notre document. N'oubliez pas que l'index est de base zéro, donc`Sections[2]` fait référence à la troisième section.
 
 ## Étape 4 : Ajouter du contenu à une section
 
@@ -102,7 +102,7 @@ Ici, nous enregistrons le document sous "output.docx". Vous pouvez ouvrir ce fic
 
 ## Conclusion
 
- Et voila! Vous avez manipulé avec succès des sections dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert les bases de la création d'un document, de l'ajout de sections et de la manipulation de leur contenu. Avec Aspose.Words, vous pouvez effectuer des opérations beaucoup plus complexes, alors n'hésitez pas à explorer les[Documentation API](https://reference.aspose.com/words/net/) pour des fonctionnalités plus avancées.
+Et voila! Vous avez manipulé avec succès des sections dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert les bases de la création d'un document, de l'ajout de sections et de la manipulation de leur contenu. Avec Aspose.Words, vous pouvez effectuer des opérations beaucoup plus complexes, alors n'hésitez pas à explorer les[Documentation API](https://reference.aspose.com/words/net/) pour des fonctionnalités plus avancées.
 
 ## FAQ
 
@@ -116,7 +116,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 
 ## 3. Quelles sont les principales fonctionnalités d’Aspose.Words pour .NET ?
 
-Aspose.Words for .NET offre un large éventail de fonctionnalités, notamment la création, le formatage, la conversion et la manipulation de documents. Vous pouvez en savoir plus sur ses capacités dans le[Documentation API](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET offre un large éventail de fonctionnalités, notamment la création, le formatage, la conversion et la manipulation de documents. Vous pouvez en savoir plus sur ses capacités dans le[Documentation API](https://reference.aspose.com/words/net/).
 
 ## 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
 

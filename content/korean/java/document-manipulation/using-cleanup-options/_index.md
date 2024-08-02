@@ -12,7 +12,7 @@ url: /ko/java/document-manipulation/using-cleanup-options/
 
 이 튜토리얼에서는 편지 병합 프로세스 중에 문서를 조작하고 정리하기 위해 Aspose.Words for Java의 정리 옵션을 사용하는 방법을 살펴보겠습니다. 정리 옵션을 사용하면 빈 단락, 사용하지 않는 영역 제거 등 문서 정리의 다양한 측면을 제어할 수 있습니다.
 
-## 전제조건
+## 전제 조건
 
  시작하기 전에 Aspose.Words for Java 라이브러리가 프로젝트에 통합되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/java/).
 

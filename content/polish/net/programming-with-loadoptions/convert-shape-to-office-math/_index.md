@@ -69,14 +69,14 @@ doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveF
 
 ## Wniosek
 
-Konwertowanie kształtów do pakietu Office Math w dokumentach programu Word za pomocą Aspose.Words dla .NET jest prostym procesem, jeśli zostanie podzielone na te proste kroki. Postępując zgodnie z tym przewodnikiem, możesz zwiększyć możliwości przetwarzania dokumentów i zapewnić prawidłowe sformatowanie dokumentów programu Word.
+Konwertowanie kształtów do formatu Office Math w dokumentach programu Word przy użyciu Aspose.Words dla .NET jest prostym procesem, jeśli zostanie podzielone na te proste kroki. Postępując zgodnie z tym przewodnikiem, możesz zwiększyć możliwości przetwarzania dokumentów i zapewnić prawidłowe sformatowanie dokumentów programu Word.
 
 ## Często zadawane pytania
 
 ### Co to jest matematyka biurowa?  
 Office Math to funkcja programu Microsoft Word umożliwiająca tworzenie i edytowanie złożonych równań i symboli matematycznych.
 
-### Czy mogę konwertować tylko określone kształty do pakietu Office Math?  
+### Czy mogę konwertować tylko określone kształty do programu Office Math?  
 Obecnie konwersja dotyczy wszystkich kształtów w dokumencie. Konwersja selektywna wymagałaby dodatkowej logiki przetwarzania.
 
 ### Czy do tej funkcjonalności potrzebuję konkretnej wersji Aspose.Words?  

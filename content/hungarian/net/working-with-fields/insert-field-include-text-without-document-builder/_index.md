@@ -2,99 +2,112 @@
 title: Mező beszúrása Szöveg beszúrása dokumentumkészítő nélkül
 linktitle: FieldIncludeText beszúrása dokumentumkészítő nélkül
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan illeszthet be FieldIncludeText mezőt Word-dokumentumaiba az Aspose.Words for .NET segítségével.
+description: Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan illeszthet be FieldIncludeText szöveget a DocumentBuilder használata nélkül az Aspose.Words for .NET-ben.
 type: docs
 weight: 10
 url: /hu/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
+## Bevezetés
 
-Az alábbiakban egy lépésről lépésre bemutatjuk a C# forráskódot, amely az Aspose.Words for .NET "FieldIncludeText mező beszúrása" funkcióját használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
+A dokumentumautomatizálás és -manipuláció világában az Aspose.Words for .NET hatékony eszköz. Ma egy részletes útmutatóval foglalkozunk, hogyan lehet FieldIncludeText beszúrni a DocumentBuilder használata nélkül. Ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton, biztosítva, hogy megértse a kód minden részét és célját.
 
-## 1. lépés: Dokumentumkönyvtár beállítása
+## Előfeltételek
 
-A megadott kódban meg kell adnia dokumentumai könyvtárát. Cserélje le a „DOKUMENTUMKÖNYVTÁR” értéket a dokumentumkönyvtár megfelelő elérési útjára.
+Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindennel rendelkezik, amire szüksége van:
+
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzió van telepítve. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2. .NET fejlesztői környezet: Bármely .NET-kompatibilis IDE, például a Visual Studio.
+3. Alapvető C# ismerete: A C# programozás ismerete segít a követésben.
+
+## Névterek importálása
+
+Először is importálnunk kell a szükséges névtereket. Ezek a névterek hozzáférést biztosítanak a Word dokumentumok kezeléséhez szükséges osztályokhoz és metódusokhoz.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Most bontsuk fel a példát több lépésre. Az áttekinthetőség érdekében minden lépést részletesen elmagyarázunk.
+
+## 1. lépés: Állítsa be a könyvtár elérési útját
+
+Az első lépés a dokumentumkönyvtár elérési útjának meghatározása. Ez az a hely, ahol a Word-dokumentumokat tárolja és éri el.
+
+```csharp
+// A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: A dokumentum és a bekezdés létrehozása
 
-Kezdjük egy új dokumentum létrehozásával és egy bekezdés inicializálásával.
+Ezután létrehozunk egy új dokumentumot és egy bekezdést a dokumentumon belül. Ez a bekezdés tartalmazza a FieldIncludeText mezőt.
 
 ```csharp
+// Hozd létre a dokumentumot és a bekezdést.
 Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
 ## 3. lépés: A FieldIncludeText mező beszúrása
 
- Használjuk a`AppendField()` metódussal beszúrhat egy FieldIncludeText mezőt a bekezdésbe.
+Most beillesztjük a FieldIncludeText mezőt a bekezdésbe. Ez a mező lehetővé teszi egy másik dokumentum szövegének felvételét.
 
 ```csharp
-FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
-```
-
-Ezután konfiguráljuk a FieldIncludeText mező tulajdonságait a könyvjelző nevének és a forrásfájl nevének megadásával.
-
-```csharp
-fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
-```
-
-Ezután hozzáadjuk a bekezdést a dokumentum törzséhez.
-
-```csharp
-doc.FirstSection.Body.AppendChild(para);
-```
-
- Végül hívjuk a`Update()` módszer a mező frissítéséhez.
-
-```csharp
-fieldIncludeText.Update();
-```
-
-### Példa a forráskódra egy FieldIncludeText mező beszúrásához az Aspose.Words .NET-hez
-
-```csharp
-// A dokumentumok könyvtárának elérési útja.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-// Hozd létre a dokumentumot és a bekezdést.
-Document doc = new Document();
-Paragraph para = new Paragraph(doc);
-
 // FieldIncludeText mező beszúrása.
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
+```
 
+## 4. lépés: Állítsa be a mező tulajdonságait
+
+Meg kell adnunk a FieldIncludeText mező tulajdonságait. Ez magában foglalja a könyvjelző nevének és a forrásdokumentum teljes elérési útjának beállítását.
+
+```csharp
 fieldIncludeText.BookmarkName = "bookmark";
-fieldIncludeText.SourceFullName = MyDir + "IncludeText.docx";
+fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
+```
 
+## 5. lépés: Bekezdés hozzáfűzése a dokumentumhoz
+
+mező beállításával a bekezdést hozzáfűzzük a dokumentum első szakaszának törzséhez.
+
+```csharp
 doc.FirstSection.Body.AppendChild(para);
+```
 
+## 6. lépés: Frissítse a mezőt
+
+A dokumentum mentése előtt frissítenünk kell a FieldIncludeText-et, hogy megbizonyosodjunk arról, hogy a megfelelő tartalmat vonja be a forrásdokumentumból.
+
+```csharp
 fieldIncludeText.Update();
+```
 
+## 7. lépés: Mentse el a dokumentumot
+
+Végül elmentjük a dokumentumot a megadott könyvtárba.
+
+```csharp
 doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 ```
 
-Ebben a példában létrehoztunk egy új dokumentumot, inicializáltunk egy bekezdést, beszúrtunk egy FieldIncludeTexten szöveget, amely megadja a könyvjelző nevét és a forrásfájl nevét, és elmentettük a dokumentumot egy megadott fájlnévvel.
+## Következtetés
 
-Ezzel véget is értünk az "Insert a FieldIncludeText" funkció használatáról szóló útmutatónknak az Aspose.Words for.NET-hez.
+És megvan! Az alábbi lépések követésével egyszerűen beszúrhat egy FieldIncludeText szöveget anélkül, hogy a DocumentBuilder alkalmazást használná az Aspose.Words for .NET-ben. Ez a megközelítés leegyszerűsíti a tartalom beillesztését egyik dokumentumból a másikba, ami sokkal egyszerűbbé teszi a dokumentumautomatizálási feladatokat.
 
-### GYIK
+## GYIK
 
-#### K: Hogyan adhatom meg a forrásfájlt a szövegbeviteli mezőhöz az Aspose.Words for .NET-ben?
+### Mi az Aspose.Words for .NET?  
+Az Aspose.Words for .NET egy hatékony könyvtár a Word dokumentumokkal való munkavégzéshez .NET alkalmazásokban. Lehetővé teszi a dokumentumok programozott létrehozását, szerkesztését és konvertálását.
 
- V: Az Aspose.Words for .NET szövegbeillesztési mezőjének forrásfájljának megadásához használja a`FieldIncludeText.SourceFullName`tulajdonság a forrásfájl teljes elérési útjának beállításához. Győződjön meg arról, hogy a forrásfájl elérhető, és tartalmazza a szövegbeillesztési mezőbe felvenni kívánt tartalmat.
+### Miért használja a FieldIncludeText?  
+A FieldIncludeText hasznos a tartalom dinamikus beillesztésére egyik dokumentumból a másikba, így modulárisabb és karbantarthatóbb dokumentumokat tesz lehetővé.
 
-#### K: Az Aspose.Words for .NET segítségével beilleszthetek egy makróból származó szöveget a szövegfelvevő mezőbe?
+### Használhatom ezt a módszert más fájlformátumokból származó szövegek beillesztésére?  
+FieldIncludeText kifejezetten Word dokumentumokkal működik. Más formátumok esetén az Aspose.Words által biztosított különböző módszerekre vagy osztályokra lehet szükség.
 
- V: Igen, az Aspose.Words for .NET segítségével beilleszthet egy makróból származó szöveget a szövegfelvevő mezőbe. Használhatja a`FieldIncludeText.IncludeText` tulajdonság megadása annak a makrónak a nevének megadásához, amelynek a tartalmát szerepeltetni kell a mezőben.
+### Az Aspose.Words for .NET kompatibilis a .NET Core-al?  
+Igen, az Aspose.Words for .NET támogatja a .NET Framework-et, a .NET Core-t és a .NET 5/6-ot.
 
-#### K: Beszúrja a szöveget tartalmazó mezőt a dokumentumkészítő nélkül, befolyásolja a Word dokumentumszerkezetét az Aspose.Words for .NET használatával?
-
-V: A szöveges mező beszúrása a dokumentumkészítő nélkül nem befolyásolja közvetlenül a Word dokumentum szerkezetét. Azonban egy új mezőelemet ad a dokumentum tartalmához. A dokumentum szerkezetét módosíthatja a meglévő elemek hozzáadásával, törlésével vagy módosításával az Ön igényei szerint.
-
-#### K: Testreszabhatom a szövegbefoglaló mező megjelenését Word-dokumentumban az Aspose.Words for .NET segítségével?
-
-V: A szövegbeillesztési mező nem szabja közvetlenül testre megjelenését a Word-dokumentumban. A mellékelt szöveget azonban formázhatja az Aspose.Words for .NET-ben elérhető bekezdéstulajdonságokkal, betűtípustulajdonságokkal és egyéb formázási objektumokkal.
+### Hogyan szerezhetem be az Aspose.Words for .NET ingyenes próbaverzióját?  
+ Ingyenes próbaverziót kaphat a[itt](https://releases.aspose.com/).

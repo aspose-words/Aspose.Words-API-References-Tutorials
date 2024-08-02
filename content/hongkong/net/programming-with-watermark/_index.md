@@ -7,9 +7,9 @@ type: docs
 weight: 1570
 url: /zh-hant/net/programming-with-watermark/
 ---
-帶有浮水印的文字處理是一個綜合資源，可引導您使用 Aspose.Words for .NET 庫完成 Word 文件中帶有浮水印的文字處理過程。這些教學課程提供了在 Word 文件中新增、自訂和管理浮水印的逐步說明、詳細的原始程式碼和實用範例。您將學習如何添加文字、圖像、形狀或圖形作為浮水印、調整其位置和外觀以及進階選項，例如使用欄位新增自訂浮水印。對於希望使用 Aspose.Words for .NET 在 Word 文件中實現浮水印管理自動化的開發人員來說，此資源至關重要。
+帶有浮水印的文字處理是一個綜合資源，可引導您使用 Aspose.Words for .NET 庫完成 Word 文件中帶有浮水印的文字處理過程。這些教程提供了在 Word 文件中新增、自訂和管理浮水印的逐步說明、詳細的原始程式碼和實際範例。您將學習如何添加文字、圖像、形狀或圖形作為浮水印、調整其位置和外觀以及進階選項，例如使用欄位新增自訂浮水印。對於希望使用 Aspose.Words for .NET 在 Word 文件中實現浮水印管理自動化的開發人員來說，此資源至關重要。
 
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [新增具有特定選項的文字浮水印](./add-text-watermark-with-specific-options/) | 了解如何使用 Aspose.Words for .NET 新增具有特定選項的文字浮水印。逐步指南。 |
+| [新增具有特定選項的文字浮水印](./add-text-watermark-with-specific-options/) | 了解如何使用 Aspose.Words for .NET 將具有特定選項的文字浮水印新增至 Word 文件。輕鬆自訂字體、大小、顏色和佈局。 |

@@ -12,6 +12,6 @@ url: /zh/net/working-with-textboxes/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [在 Word 中创建链接](./create-a-link/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中的文本框之间创建链接。 |
-| [检查顺序](./check-sequence/) | 了解如何使用 Aspose.Words for .NET 检查 Word 文档中文本框的序列。 |
-| [断开 Word 文档中的前向链接](./break-a-link/) | 了解如何使用 Aspose.Words for .NET 断开 Word 文档中的前向链接。 |
+| [在 Word 中链接文本框](./create-a-link/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建和链接文本框。遵循我们的综合指南，实现无缝文档定制！ |
+| [Word 中的文本框序列检查](./check-sequence/) | 了解如何使用 Aspose.Words for .NET 检查 Word 文档中文本框的顺序。按照我们的详细指南掌握文档流程！ |
+| [断开 Word 文档中的前向链接](./break-a-link/) | 了解如何使用 Aspose.Words for .NET 断开 Word 文档文本框中的前向链接。按照我们的指南，获得更顺畅的文档管理体验。 |

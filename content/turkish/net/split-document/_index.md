@@ -12,9 +12,9 @@ Belgeyi Böl, Aspose.Words for .NET kütüphanesini kullanarak bir belgenin ayr�
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Başlıklara Göre Html](./by-headings-html/) | Aspose.Words for .NET'in Başlığa Göre HTML özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
-| [Bölümlere Göre Html](./by-sections-html/) | Tam kod örneğiyle Aspose.Words for .NET kullanarak bir Word belgesini Html bölümlerine nasıl böleceğinizi öğrenin. |
-| [Bölümlere Göre](./by-sections/) | Tam kod örneğiyle Aspose.Words for .NET kullanarak bir Word belgesini ayrı bölümlere nasıl böleceğinizi öğrenin. |
-| [Sayfa Sayfa](./page-by-page/) | .NET için Aspose.Words Sayfa Sayfa özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
+| [Word Belgesini Başlıklara Göre Böl Html](./by-headings-html/) | Aspose.Words for .NET kullanarak bir Word belgesini başlıklarına göre HTML'ye nasıl böleceğinizi öğrenin. Ayrıntılı, adım adım kılavuzumuzu takip edin. |
+| [Word Belgesini Bölümlere Göre Böl HTML](./by-sections-html/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesini bölümlere göre HTML'ye nasıl böleceğinizi öğrenin. |
+| [Word Belgesini Bölümlere Göre Böl](./by-sections/) | Aspose.Words for .NET kullanarak bir Word belgesini bölümlere nasıl böleceğinizi öğrenin. Etkin belge yönetimi için bu ayrıntılı, adım adım kılavuzu izleyin. |
+| [Word Belgesini Sayfaya Göre Böl](./page-by-page/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesini sayfalara nasıl böleceğinizi öğrenin. Büyük belgeleri verimli bir şekilde yönetmek için mükemmeldir. |
 | [Belgeleri Birleştir](./merge-documents/) | Aspose.Words for .NET'in Belgeleri Birleştir özelliğinin C# kaynak kodunu açıklayan adım adım kılavuz |
-| [Sayfa Aralığına Göre](./by-page-range/) | Aspose.Words for .NET'i kullanarak bir Word belgesinden sayfa aralığına göre kolayca ayıklayın. Adım adım kılavuz. |
+| [Word Belgesini Sayfa Aralığına Göre Böl](./by-page-range/) | Ayrıntılı adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesini sayfa aralığına göre nasıl böleceğinizi öğrenin. Geliştiriciler için mükemmel. |

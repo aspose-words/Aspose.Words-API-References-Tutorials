@@ -40,11 +40,11 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-代替`"YOUR DOCUMENTS DIRECTORY"`使用系统中文档所在的实际路径。
+代替`"YOUR DOCUMENTS DIRECTORY"`与您的系统中文档所在的实际路径。
 
 ## 步骤 2：使用图像项目符号加载文档
 
-接下来，您将加载包含图片项目符号的 Word 文档。保存时，此文档将被修改以删除图片项目符号。
+接下来，您将加载包含图片项目符号的 Word 文档。保存时，将修改此文档以删除图片项目符号。
 
 ```csharp
 //用图片项目符号加载文档

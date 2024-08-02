@@ -204,7 +204,7 @@ Sí, puede insertar imágenes fácilmente en sus documentos de Word utilizando l
 
 ### ¿Dónde puedo encontrar más información sobre las características de Aspose.Words Python?
 
-Para obtener información completa sobre las características de Aspose.Words Python, consulte la[documentación](https://reference.aspose.com/words/python-net/).
+ Para obtener información completa sobre las características de Aspose.Words Python, consulte la[documentación](https://reference.aspose.com/words/python-net/).
 
 ### ¿Cómo guardo mi documento en formato PDF usando Aspose.Words?
 

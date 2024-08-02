@@ -2,111 +2,110 @@
 title: Satır Biçimlendirmesini Uygula
 linktitle: Satır Biçimlendirmesini Uygula
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir tabloya satır formatlaması uygulamak için adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak bir Word belgesinde satır formatlamayı nasıl uygulayacağınızı öğrenin. Ayrıntılı talimatlar için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir tabloya satır formatlaması uygulamak için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sunacağız. Bu eğitimin sonunda Aspose.Words for .NET kullanarak Word belgelerinizdeki tablo satırlarını nasıl formatlayacağınızı net bir şekilde anlayacaksınız.
+Word belgelerinizi şık satır biçimlendirmeleriyle renklendirmek istiyorsanız doğru yere geldiniz! Bu eğitimde Aspose.Words for .NET kullanarak satır formatlamanın nasıl uygulanacağını ayrıntılı olarak ele alacağız. Takip etmenizi ve bunu projelerinize uygulamanızı kolaylaştırmak için her adımı parçalara ayıracağız.
 
-## 1. Adım: Belge dizinini tanımlayın
-Öncelikle belgeler dizininizin yolunu ayarlamanız gerekir. Bu, düzenlenmiş Word belgenizi kaydetmek istediğiniz konumdur. "BELGELERİNİZ DİZİNİ"ni uygun yolla değiştirin.
+## Önkoşullar
+
+Koda dalmadan önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Eğer indirmediyseniz adresinden indirebilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi AC# geliştirme ortamı.
+3. Temel C# Bilgisi: C# programlamaya aşinalık esastır.
+4. Doküman Dizini: Dokümanınızı kaydedeceğiniz dizin.
+
+## Ad Alanlarını İçe Aktar
+
+Başlangıç olarak C# projenize gerekli ad alanlarını içe aktarmanız gerekir:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## 2. Adım: Yeni bir belge ve belge oluşturucu oluşturun
- Daha sonra, yeni bir örneğini oluşturmanız gerekir.`Document` sınıf ve bu belge için bir belge oluşturucu.
+Şimdi süreci adım adım inceleyelim.
+
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+Öncelikle yeni bir belge oluşturmamız gerekiyor. Bu, tablomuzu ekleyeceğimiz ve formatlamayı uygulayacağımız tuvalimiz olacak.
 
 ```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Yeni bir pano başlatın
- Satır biçimlendirmesini uygulamak için önce aşağıdakileri kullanarak yeni bir tablo başlatmalıyız:`StartTable()` belge oluşturucunun yöntemi.
+## Adım 2: Yeni Bir Tablo Başlatın
+
+ Daha sonra aşağıdaki komutu kullanarak yeni bir tablo başlatacağız:`DocumentBuilder`nesne. Sihir yapılan yer burasıdır.
 
 ```csharp
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
 ```
 
-## 4. Adım: Hücreyi ekleyin ve satır formatına gidin
-Artık tabloya bir hücre ekleyebilir ve belge oluşturucuyu kullanarak bu hücrenin satır biçimine erişebiliriz.`InsertCell()`Ve`RowFormat` yöntemler.
+## 3. Adım: Satır Biçimlendirmesini Tanımlayın
+
+Burada satır formatını tanımlayacağız. Bu, satır yüksekliğini ve dolguyu ayarlamayı içerir.
 
 ```csharp
-builder. InsertCell();
 RowFormat rowFormat = builder.RowFormat;
-```
-
-## Adım 5: Satır Yüksekliğini Ayarlayın
- Satır yüksekliğini ayarlamak için şunu kullanırız:`Height`Ve`HeightRule` satır biçiminin özellikleri. Bu örnekte, 100 puntoluk bir satır yüksekliği belirledik ve`Exactly` kural.
-
-```csharp
-rowFormat. Height = 100;
+rowFormat.Height = 100;
 rowFormat.HeightRule = HeightRule.Exactly;
+table.LeftPadding = 30;
+table.RightPadding = 30;
+table.TopPadding = 30;
+table.BottomPadding = 30;
 ```
 
-## 6. Adım: Tablo biçimlendirmesini tanımlayın
- Bazı biçimlendirme özellikleri tablonun kendisinde ayarlanabilir ve tüm tablo satırlarına uygulanabilir. Bu örnekte, tablo kenar boşluğu özelliklerini kullanarak ayarladık.`LeftPadding`, `RightPadding`, `TopPadding`Ve`BottomPadding` özellikler.
+## Adım 4: İçeriği Hücreye Ekleme
+
+Güzelce biçimlendirilmiş satırımıza biraz içerik ekleyelim. Bu içerik, biçimlendirmenin nasıl göründüğünü gösterecek.
 
 ```csharp
-table. LeftPadding = 30;
-table. RightPadding = 30;
-table. TopPadding = 30;
-table. BottomPadding = 30;
+builder.Writeln("I'm a wonderfully formatted row.");
 ```
 
-## 7. Adım: Satıra içerik ekleyin
-Şimdi yapabiliriz
+## Adım 5: Satırı ve Tabloyu Sonlandırın
 
- Belge yapıcının yöntemlerini kullanarak satıra içerik ekleyeceğiz. Bu örnekte, şunu kullanıyoruz:`Writeln()` satıra metin ekleme yöntemi.
+Son olarak yapımızı tamamlamak için satırı ve tabloyu sonlandırmamız gerekiyor.
 
 ```csharp
-builder.Writeln("I'm a beautifully formatted line.");
+builder.EndRow();
+builder.EndTable();
 ```
 
-## Adım 8: Satırı ve tabloyu bitirin
- İçeriği satıra ekledikten sonra, satırı kullanarak sonlandırabiliriz.`EndRow()` yöntemini kullanın ve ardından tabloyu kullanarak sonlandırın.`EndTable()` yöntem.
+## Adım 6: Belgeyi Kaydedin
 
-```csharp
-builder. EndRow();
-builder. EndTable();
-```
-
-## 9. Adım: Değiştirilen belgeyi kaydedin
-Son olarak değiştirilen belgeyi bir dosyaya kaydediyoruz. Çıktı belgesi için uygun bir ad ve konum seçebilirsiniz.
+Artık tablomuz hazır olduğuna göre belgeyi kaydetme zamanı geldi. Belge dizininizin yolunu belirtin ve dosyayı kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-Tebrikler! Artık Aspose.Words for .NET'i kullanarak bir tabloya satır formatlaması uyguladınız.
-
-### Aspose.Words for .NET kullanarak Satır Formatlaması Uygulamak için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	RowFormat rowFormat = builder.RowFormat;
-	rowFormat.Height = 100;
-	rowFormat.HeightRule = HeightRule.Exactly;
-	// Bu biçimlendirme özellikleri tabloda ayarlanır ve tablodaki tüm satırlara uygulanır.
-	table.LeftPadding = 30;
-	table.RightPadding = 30;
-	table.TopPadding = 30;
-	table.BottomPadding = 30;
-	builder.Writeln("I'm a wonderful formatted row.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
-```
-
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak satır formatlamanın bir tabloya nasıl uygulanacağını öğrendik. Bu adım adım kılavuzu izleyerek bu işlevselliği C# projelerinize kolayca entegre edebilirsiniz. Tablo satır formatını değiştirmek belge işlemenin önemli bir yönüdür ve Aspose.Words bunu başarmak için güçlü ve esnek bir API sunar. Bu bilgiyle Word belgelerinizin görsel sunumunu geliştirebilir ve belirli gereksinimleri karşılayabilirsiniz.
+
+İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir tabloya satır formatlamayı başarıyla uyguladınız. Bu basit ama güçlü teknik, belgelerinizin okunabilirliğini ve estetiğini büyük ölçüde artırabilir.
+
+## SSS'ler
+
+### Tek tek satırlara farklı biçimlendirme uygulayabilir miyim?  
+ Evet, farklı özellikler ayarlayarak her satırı ayrı ayrı özelleştirebilirsiniz.`RowFormat`.
+
+### Sütunların genişliğini nasıl ayarlayabilirim?  
+ Sütunların genişliğini kullanarak ayarlayabilirsiniz.`CellFormat.Width` mülk.
+
+### Aspose.Words for .NET'te hücreleri birleştirmek mümkün mü?  
+ Evet, hücreleri birleştirebilirsiniz.`CellMerge` mülkiyeti`CellFormat`.
+
+### Satırlara kenarlık ekleyebilir miyim?  
+ Kesinlikle! Ayarlayarak satırlara kenarlıklar ekleyebilirsiniz.`Borders` mülkiyeti`RowFormat`.
+
+### Satırlara koşullu biçimlendirmeyi nasıl uygularım?  
+Belirli koşullara göre farklı biçimlendirme uygulamak için kodunuzda koşullu mantığı kullanabilirsiniz.

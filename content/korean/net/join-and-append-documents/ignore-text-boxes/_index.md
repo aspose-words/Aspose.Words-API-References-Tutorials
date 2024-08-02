@@ -11,7 +11,7 @@ url: /ko/net/join-and-append-documents/ignore-text-boxes/
 
 텍스트 상자를 무시하면서 Word 문서를 병합하기 위해 .NET용 Aspose.Words를 사용하는 방법에 대한 자세한 튜토리얼에 오신 것을 환영합니다. 문서 처리를 간소화하고 텍스트 상자의 서식을 유지하려는 경우 올바른 위치에 오셨습니다. 이 단계별 가이드를 살펴보겠습니다.
 
-## 전제조건
+## 전제 조건
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
@@ -46,7 +46,7 @@ using Aspose.Words.Importing;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
 
 ## 3단계: 문서 로드
 

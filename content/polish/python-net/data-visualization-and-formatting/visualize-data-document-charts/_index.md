@@ -10,7 +10,7 @@ url: /pl/python-net/data-visualization-and-formatting/visualize-data-document-ch
 
 ## Wstęp
 
-Wizualizacja danych to potężna technika, dzięki której informacje stają się bardziej dostępne i zrozumiałe. Wykresy, diagramy i diagramy stanowią wizualną reprezentację złożonych zestawów danych, umożliwiając czytelnikom szybką identyfikację trendów, wzorców i wniosków.
+Wizualizacja danych to potężna technika, dzięki której informacje stają się bardziej dostępne i zrozumiałe. Wykresy, wykresy i diagramy stanowią wizualną reprezentację złożonych zestawów danych, umożliwiając czytelnikom szybką identyfikację trendów, wzorców i wniosków.
 
 ## Zrozumienie wizualizacji danych
 

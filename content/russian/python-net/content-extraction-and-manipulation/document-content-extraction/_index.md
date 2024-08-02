@@ -14,7 +14,7 @@ url: /ru/python-net/content-extraction-and-manipulation/document-content-extract
 
 ## Предварительные условия
 
-Прежде чем мы углубимся в код, убедитесь, что у вас установлены Python и библиотека Aspose.Words. Скачать библиотеку можно с сайта[здесь](https://releases.aspose.com/words/python/). Кроме того, убедитесь, что у вас есть документ Word, готовый к тестированию.
+ Прежде чем мы углубимся в код, убедитесь, что у вас установлены Python и библиотека Aspose.Words. Скачать библиотеку можно с сайта[здесь](https://releases.aspose.com/words/python/). Кроме того, убедитесь, что у вас есть документ Word, готовый к тестированию.
 
 ## Установка Aspose.Words для Python
 

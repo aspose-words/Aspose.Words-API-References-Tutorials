@@ -36,7 +36,7 @@ Först till kvarn, ställ in ditt .NET-projekt i din IDE. Skapa en ny konsolappl
 
 ### 1.1 Skapa ett nytt projekt
 
-Öppna Visual Studio och skapa ett nytt konsolapplikationsprojekt. Döp det till "MarkdownExporter" eller något liknande.
+Öppna Visual Studio och skapa ett nytt konsolapplikationsprojekt. Döp den till "MarkdownExporter" eller något liknande.
 
 ### 1.2 Lägg till Aspose.Words Reference
 

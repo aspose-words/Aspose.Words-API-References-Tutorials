@@ -16,7 +16,7 @@ Hallå där! Om du någonsin har behövt ändra sidinställningar i flera sektio
 Innan vi dyker in, låt oss se till att vi har allt vi behöver:
 
 1. Grundläggande kunskaper i C#: Bekantskap med C#-syntax och begrepp är nödvändig.
-2.  Aspose.Words för .NET: Du kan[ladda ner den här](https://releases.aspose.com/words/net/) . Om du bara provar det, a[gratis provperiod](https://releases.aspose.com/) är tillgänglig.
+2.  Aspose.Words för .NET: Du kan[ladda ner den här](https://releases.aspose.com/words/net/) Om du bara provar det, a[gratis provperiod](https://releases.aspose.com/) är tillgänglig.
 3. Visual Studio: Alla nyare versioner bör fungera, men den senaste rekommenderas för bästa upplevelse.
 4. .NET Framework: Se till att du har det installerat på ditt system.
 
@@ -89,7 +89,7 @@ Denna kodrad sparar dokumentet i den angivna katalogen med ett tydligt filnamn s
 
 ## Slutsats
 
-Och där har du det! Du har framgångsrikt ändrat sidinställningarna för alla avsnitt i ett Word-dokument med Aspose.Words för .NET. Den här handledningen har lett dig genom att skapa ett dokument, lägga till avsnitt och enhetligt justera deras sidinställningar. Aspose.Words erbjuder en rik uppsättning funktioner, så utforska gärna[API dokumentation](https://reference.aspose.com/words/net/) för mer avancerade funktioner.
+ Och där har du det! Du har framgångsrikt ändrat sidinställningarna för alla avsnitt i ett Word-dokument med Aspose.Words för .NET. Den här handledningen har lett dig genom att skapa ett dokument, lägga till avsnitt och enhetligt justera deras sidinställningar. Aspose.Words erbjuder en rik uppsättning funktioner, så utforska gärna[API dokumentation](https://reference.aspose.com/words/net/) för mer avancerade funktioner.
 
 ## Vanliga frågor
 

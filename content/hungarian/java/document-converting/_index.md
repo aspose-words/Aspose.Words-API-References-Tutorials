@@ -31,4 +31,4 @@ Ismerje meg, hogyan konvertálhat HTML-t Word dokumentumokká Java nyelven az As
 ### [Dokumentumkonverzió a SaveOptions segítségével](./document-conversion-saveoptions/)
 Tanuljon meg dokumentumkonvertálást az Aspose.Words segítségével Java nyelven. Lépésről lépésre, kódpéldák és GYIK a zökkenőmentes Word-ből PDF konvertáláshoz.
 ### [Dokumentumok konvertálása képekké](./converting-documents-images/)
-Ismerje meg, hogyan konvertálhat dokumentumokat képekké az Aspose.Words for Java használatával. Lépésről lépésre szóló útmutató Java fejlesztőknek.
+Ismerje meg, hogyan konvertálhat dokumentumokat képekké az Aspose.Words for Java használatával. Lépésről lépésre útmutató Java fejlesztőknek.

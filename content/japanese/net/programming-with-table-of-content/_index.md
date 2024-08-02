@@ -16,5 +16,5 @@ url: /ja/net/programming-with-table-of-content/
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Word 文書の目次スタイルを変更する](./change-style-of-toc-level/) | Aspose.Words for .NET を使用して、Word 文書内の目次レベルのスタイルを簡単に変更する方法を学習します。 |
-| [Word 文書の目次タブ位置を変更する](./change-toc-tab-stops/) | Aspose.Words for .NET を使用して Word 文書の目次タブを変更する方法を学習します。 |
+| [Word 文書の目次スタイルを変更する](./change-style-of-toc-level/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書の目次スタイルを変更する方法を説明します。目次を簡単にカスタマイズできます。 |
+| [Word 文書の目次タブ位置を変更する](./change-toc-tab-stops/) | Aspose.Words for .NET を使用して Word 文書の目次タブ ストップを変更する方法を学びます。このステップ バイ ステップ ガイドは、プロフェッショナルな外観の目次を作成するのに役立ちます。 |
