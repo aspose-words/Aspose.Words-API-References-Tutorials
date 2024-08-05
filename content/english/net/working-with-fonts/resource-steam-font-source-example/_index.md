@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Introduction
 
 If you’re working with documents in .NET and using Aspose.Words, managing font sources can be a crucial aspect of ensuring your documents look as expected. Aspose.Words offers a powerful way to handle fonts, including using resource streams. In this guide, we'll walk through using a resource stream as a font source with Aspose.Words for .NET. Let's dive in!
 

@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Introduction
 
-Welcome to this comprehensive guide on managing font substitution using Aspose.Words for .NET. If you've ever struggled with fonts not appearing correctly in your documents, you've come to the right place. This tutorial will take you through a step-by-step process to handle font substitution without suffixes efficiently. Let’s get started!
+Welcome to this comprehensive guide on managing font substitution using Aspose.Words for .NET. If you've ever struggled with fonts not appearing correctly in your documents, you've come to the right place. This tutorial will take you through a step-by-step process to handle font substitution without suffixes efficiently.
 
 ## Prerequisites
 
@@ -26,7 +27,6 @@ First, we need to import the necessary namespaces to access the classes and meth
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -100,24 +100,24 @@ In this class:
 
 You've now mastered the process of handling font substitution without suffixes using Aspose.Words for .NET. This knowledge will ensure that your documents maintain their intended appearance, regardless of the fonts available on the system. Keep experimenting with different settings and sources to fully harness the power of Aspose.Words.
 
-## FAQs
+## FAQ's
 
-### Q1: How can I use fonts from multiple custom directories?
+### How can I use fonts from multiple custom directories?
 
 You can add multiple `FolderFontSource` instances to the `fontSources` list and update the font sources accordingly.
 
-### Q2: Where can I download a free trial of Aspose.Words for .NET?
+### Where can I download a free trial of Aspose.Words for .NET?
 
 You can download a free trial from the [Aspose free trial page](https://releases.aspose.com/).
 
-### Q3: Can I handle multiple types of warnings using `IWarningCallback`?
+### Can I handle multiple types of warnings using `IWarningCallback`?
 
 Yes, the `IWarningCallback` interface allows you to handle various types of warnings, not just font substitution.
 
-### Q4: Where can I get support for Aspose.Words?
+### Where can I get support for Aspose.Words?
 
 For support, visit the [Aspose.Words support forum](https://forum.aspose.com/c/words/8).
 
-### Q5: Is it possible to purchase a temporary license?
+### Is it possible to purchase a temporary license?
 
 Yes, you can get a temporary license from the [temporary license page](https://purchase.aspose.com/temporary-license/).

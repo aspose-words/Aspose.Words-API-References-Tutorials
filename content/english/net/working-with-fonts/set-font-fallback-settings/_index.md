@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /net/working-with-fonts/set-font-fallback-settings/
 ---
+## Introduction
 
 When working with documents that contain diverse text elements, such as different languages or special characters, it’s crucial to ensure that these elements are displayed correctly. Aspose.Words for .NET offers a powerful feature called Font Fallback Settings, which helps in defining rules for substituting fonts when the original font doesn’t support certain characters. In this guide, we'll explore how to set up Font Fallback Settings using Aspose.Words for .NET in a step-by-step tutorial.
 
@@ -94,7 +95,7 @@ Here is an example of how your XML file defining the font fallback rules should 
 
 By following these steps, you can effectively set up and use Font Fallback Settings in Aspose.Words for .NET. This ensures that your documents display all characters correctly, even if the original font does not support certain characters. Implementing these settings will greatly enhance the quality and readability of your documents.
 
-## FAQs
+## FAQ's
 
 ### Q1: What is Font Fallback?
 
