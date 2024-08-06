@@ -2,63 +2,78 @@
 title: Strikethrough
 linktitle: Strikethrough
 second_title: Aspose.Words Document Processing API
-description: Learn how to apply the strikethrough text style with Aspose.Words for .NET Step-by-step guide.
+description: Learn how to apply strikethrough formatting to text using Aspose.Words for .NET with our step-by-step guide. Enhance your document processing skills.
 type: docs
 weight: 10
 url: /net/working-with-markdown/strikethrough/
 ---
+## Introduction
 
+Welcome to this detailed guide on how to apply strikethrough formatting to text using Aspose.Words for .NET. If you're looking to enhance your document processing skills and add a unique touch to your text, you're in the right place. Let's dive in!
 
-In this example, we will walk you through how to apply the strikethrough text style using Aspose.Words for .NET. Strikethrough text is used to indicate that the text is deleted or no longer valid.
+## Prerequisites
 
-## Step 1: Using a document generator
+Before we get started, ensure you have the following:
 
-First, we'll use a document generator to add content to our document.
+- Aspose.Words for .NET: Download it [here](https://releases.aspose.com/words/net/).
+- .NET Framework: Make sure you have .NET Framework installed on your system.
+- Development Environment: An IDE like Visual Studio.
+- Basic Knowledge of C#: Familiarity with C# programming is necessary.
+
+## Import Namespaces
+
+To begin, you'll need to import the necessary namespaces. These are essential for accessing the Aspose.Words library and its features.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Step 1: Initialize the DocumentBuilder
+
+The `DocumentBuilder` class is a powerful tool in Aspose.Words that allows you to add content to your document with ease.
+
+```csharp
+// Initialize a DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Step 2: Apply strikethrough text style
+## Step 2: Set Strikethrough Property
 
-We will enable the strikethrough text style by setting the `StrikeThrough` property of the `Font` object to `true`.
-
-```csharp
-builder.Font.StrikeThrough = true;
-```
-
-## Step 3: Add strikethrough text
-
-We can now add strikethrough text using the document generator's `Writeln` method.
+Now, let’s apply the strikethrough property to our text. This involves setting the `StrikeThrough` property of the `Font` object to `true`.
 
 ```csharp
-builder.Writeln("This text will be StrikeThrough");
-```
-
-
-### Example source code for strikethrough text with Aspose.Words for .NET
-
-```csharp
-// Use a document builder to add content to the document.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Make the text Strikethrough.
 builder.Font.StrikeThrough = true;
+```
+
+## Step 3: Write Text with Strikethrough
+
+With the strikethrough property set, we can now add our text. The `Writeln` method will add the text to the document.
+
+```csharp
+// Write text with Strikethrough.
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-Congratulation ! You have now learned how to apply the strikethrough text style with Aspose.Words for .NET.
+## Conclusion
 
-### FAQ's
+And there you have it! You’ve successfully added strikethrough formatting to your text using Aspose.Words for .NET. This powerful library opens up a world of possibilities for document processing and customization. Whether you're creating reports, letters, or any other type of document, mastering these features will undoubtedly enhance your productivity and the quality of your outputs.
 
-#### Q: How can I add the strikethrough text in Aspose.Words?
+## FAQ's
 
-A: To add the strikethrough text in Aspose.Words, you can use the `Font.StrikeThrough` property of the `Run` object. You can set this property to `true` to add strikethrough text to specific text. For example, you can use `run.Font.StrikeThrough=true` to add the strikethrough text into the `Run` object.
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful document processing library that allows developers to create, manipulate, and convert Word documents programmatically.
 
-#### Q: Is it possible to add the strikethrough text to several pieces of text in the same paragraph?
+### Can I use Aspose.Words for .NET in a commercial project?
+Yes, you can use Aspose.Words for .NET in commercial projects. For purchasing options, visit the [buy page](https://purchase.aspose.com/buy).
 
-A: Yes, you can add strikethrough text to multiple parts of text in a single paragraph by using multiple `Run` objects. You can create multiple `Run` objects and set the `Font.StrikeThrough` property to `true` for each object to add the strikethrough text to the desired text parts. Then you can add them to the paragraph using the `Paragraph.AppendChild(run)` method.
+### Is there a free trial available for Aspose.Words for .NET?
+Yes, you can download a free trial [here](https://releases.aspose.com/).
 
-#### Q: Can I add strikethrough text to text that is in a table or cell in Aspose.Words?
+### How do I get support for Aspose.Words for .NET?
+You can get support from the Aspose community and experts on the [support forum](https://forum.aspose.com/c/words/8).
 
-A: Yes, you can add strikethrough text to text that is in a table or cell in Aspose.Words. You can jump to the cell or paragraph you want using the appropriate methods and then apply the strikethrough text formatting using the `Font.StrikeThrough` property of the `Run` or `Paragraph` object.
+### Can I apply other text formatting options using Aspose.Words for .NET?
+Absolutely! Aspose.Words for .NET supports a wide range of text formatting options including bold, italics, underline, and more.
