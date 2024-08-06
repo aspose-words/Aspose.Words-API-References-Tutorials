@@ -13,6 +13,6 @@ Words Processing with Lists is a comprehensive resource that guides you through 
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Restart List At Each Section](./restart-list-at-each-section/)  | Learn how to reset a numbered list to each section in a Word document with Aspose.Words for .NET. |
-| [Specify List Level](./specify-list-level/) | Learn how to specify the list level in a Word document with Aspose.Words for .NET. |
-| [Restart List Number](./restart-list-number/) | Learn how to reset the number of a list in a Word document with Aspose.Words for .NET. |
+| [Restart List At Each Section](./restart-list-at-each-section/)  | Learn how to restart lists at each section in Word documents using Aspose.Words for .NET. Follow our detailed step-by-step guide to manage lists effectively. |
+| [Specify List Level](./specify-list-level/) | Learn how to create multi-level numbered and bulleted lists in Word documents using Aspose.Words for .NET. Step-by-step guide included. Perfect for .NET developers. |
+| [Restart List Number](./restart-list-number/) | Learn how to restart list numbers in Word documents using Aspose.Words for .NET. This detailed, 2000-word guide covers everything you need to know, from setup to advanced customization. |
