@@ -12,6 +12,6 @@ Words Processing with Hyphenation is a comprehensive resource that walks you thr
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Hyphenate Words Of Languages](./hyphenate-words-of-languages/) | Learn how to hyphenate words in different languages in Word documents using Aspose.Words for .NET. |
-| [Load Hyphenation Dictionary For Language](./load-hyphenation-dictionary-for-language/) |Learn how to load a hyphenation dictionary for a specific language in Aspose.Words for .NET. |
-| [Hyphenation Callback](./hyphenation-callback/) | Learn how to use hyphenation callback in Aspose.Words for .NET to handle word hyphenation. |
+| [Hyphenate Words Of Languages](./hyphenate-words-of-languages/) | Learn how to hyphenate words in different languages using Aspose.Words for .NET. Follow this detailed, step-by-step guide to enhance your document readability. |
+| [Load Hyphenation Dictionary For Language](./load-hyphenation-dictionary-for-language/) | Learn how to load a hyphenation dictionary for any language using Aspose.Words for .NET in this comprehensive, step-by-step tutorial. |
+| [Hyphenation Callback](./hyphenation-callback/) | Learn to implement hyphenation callback in Aspose.Words for .NET to enhance document formatting with this comprehensive step-by-step guide. |

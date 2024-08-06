@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /net/working-with-headers-and-footers/create-header-footer/
 ---
+## Introduction
 
 Adding headers and footers to your documents can enhance their professionalism and readability. With Aspose.Words for .NET, you can easily create and customize headers and footers for your Word documents. In this tutorial, we'll walk you through the process step by step, ensuring you can implement these features seamlessly.
 
@@ -166,25 +167,25 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 By following these steps, you can effectively add and customize headers and footers in your Word documents using Aspose.Words for .NET. This enhances your document's appearance and professionalism, making it more readable and engaging.
 
-## FAQs
+## FAQ's
 
-### Q1: What is Aspose.Words for .NET?
+### What is Aspose.Words for .NET?
 
 Aspose.Words for .NET is a library that enables developers to create, edit, and convert Word documents programmatically within .NET applications.
 
-### Q2: Can I add images to the header or footer?
+### Can I add images to the header or footer?
 
 Yes, you can easily add images to the header or footer using the `DocumentBuilder.InsertImage` method.
 
-### Q3: How do I set different headers and footers for the first page?
+### How do I set different headers and footers for the first page?
 
 You can set different headers and footers for the first page by using the `DifferentFirstPageHeaderFooter` property of the `PageSetup` class.
 
-### Q4: Where can I find more documentation on Aspose.Words?
+### Where can I find more documentation on Aspose.Words?
 
 You can find comprehensive documentation on the [Aspose.Words API documentation page](https://reference.aspose.com/words/net/).
 
-### Q5: Is there support available for Aspose.Words?
+### Is there support available for Aspose.Words?
 
 Yes, Aspose offers support through their [support forum](https://forum.aspose.com/c/words/8).
 
