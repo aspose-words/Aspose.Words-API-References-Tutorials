@@ -12,7 +12,7 @@ Words Processing with Form Fields is a comprehensive resource for learning how t
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Insert Form Fields](./insert-form-fields/) | Learn how to insert dropdown form fields into Word documents using Aspose.Words for .NET. |
-| [Form Fields Work With Properties](./form-fields-work-with-properties/) | Learn how to work with form field properties in Word documents using Aspose.Words for .NET. |
-| [Form Fields Get Form Fields Collection](./form-fields-get-form-fields-collection/) | Learn how to retrieve and manipulate form fields collection in Word documents using Aspose.Words for .NET. |
-| [Form Fields Get By Name](./form-fields-get-by-name/) | Learn how to retrieve and modify form fields by name in Word documents using Aspose.Words for .NET. |
+| [Insert Form Fields](./insert-form-fields/) | Learn how to insert a combo box form field in a Word document using Aspose.Words for .NET with our detailed, step-by-step guide. |
+| [Form Fields Work With Properties](./form-fields-work-with-properties/) | Learn how to manipulate form fields in Word documents using Aspose.Words for .NET with our detailed step-by-step guide. |
+| [Form Fields Get Form Fields Collection](./form-fields-get-form-fields-collection/) | Learn how to get and manipulate form fields in Word documents using Aspose.Words for .NET with our comprehensive step-by-step guide. |
+| [Form Fields Get By Name](./form-fields-get-by-name/) | Learn how to get and modify form fields by name in Word documents using Aspose.Words for .NET with this detailed, step-by-step guide. |
