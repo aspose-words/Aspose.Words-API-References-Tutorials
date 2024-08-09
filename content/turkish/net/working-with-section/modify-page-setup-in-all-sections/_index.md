@@ -16,7 +16,7 @@ Selam! Bir Word belgesindeki birden çok bölümdeki sayfa düzenlerini değişt
 Dalışa geçmeden önce ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım:
 
 1. Temel C# Bilgisi: C# sözdizimi ve kavramlarına aşinalık gereklidir.
-2.  Aspose.Words for .NET: Yapabilirsin[buradan indir](https://releases.aspose.com/words/net/) Eğer sadece denemek istiyorsanız,[ücretsiz deneme](https://releases.aspose.com/) gecerli.
+2.  Aspose.Words for .NET: Yapabilirsin[buradan indir](https://releases.aspose.com/words/net/) Eğer sadece denemek istiyorsanız,[ücretsiz deneme](https://releases.aspose.com/) mevcuttur.
 3. Visual Studio: Güncel sürümlerden herhangi biri çalışmalıdır ancak en iyi deneyim için en son sürüm önerilir.
 4. .NET Framework: Sisteminizde kurulu olduğundan emin olun.
 
@@ -89,7 +89,7 @@ Bu kod satırı, belgeyi, yapılan değişiklikleri gösteren net bir dosya adı
 
 ## Çözüm
 
- İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tüm bölümlerin sayfa düzenini başarıyla değiştirdiniz. Bu eğitici belge oluşturma, bölümler ekleme ve sayfa düzenlerini eşit şekilde ayarlama konusunda size yol gösterdi. Aspose.Words zengin bir dizi özellik sunar; bu nedenle, keşfetmekten çekinmeyin[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş yetenekler için.
+ Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tüm bölümlerin sayfa düzenini başarıyla değiştirdiniz. Bu eğitici belge oluşturma, bölümler ekleme ve sayfa düzenlerini eşit şekilde ayarlama konusunda size yol gösterdi. Aspose.Words zengin bir dizi özellik sunar; bu nedenle, keşfetmekten çekinmeyin[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş yetenekler için.
 
 ## SSS
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için kap
 
 ### 3. Diğer sayfa düzeni özelliklerini nasıl değiştirebilirim?
 
- Aspose.Words yönlendirme, kenar boşlukları ve kağıt boyutu gibi çeşitli sayfa düzeni özelliklerini değiştirmenize olanak sağlar. Bakın[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
+ Aspose.Words yönlendirme, kenar boşlukları ve kağıt boyutu gibi çeşitli sayfa düzeni özelliklerini değiştirmenize olanak sağlar. Şuraya bakın:[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

@@ -98,4 +98,4 @@ Les en-têtes et pieds de page du document source peuvent continuer dans le docu
 Oui, Aspose.Words for .NET vous permet de supprimer les en-têtes et pieds de page tout en préservant le reste de la mise en forme du document.
 
 ### Où puis-je trouver plus de ressources et d’assistance pour Aspose.Words for .NET ?
- Visiter le[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour des références API détaillées et des exemples.
+ Visitez le[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour des références API détaillées et des exemples.

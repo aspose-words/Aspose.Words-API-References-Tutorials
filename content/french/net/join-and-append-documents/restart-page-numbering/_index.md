@@ -15,7 +15,7 @@ Avez-vous déjà eu du mal à créer un document soigné avec des sections disti
 
 Avant de vous lancer dans ce voyage, assurez-vous d'avoir les éléments suivants :
 
-1.  Aspose.Words for .NET : téléchargez la bibliothèque depuis le site officiel[Lien de téléchargement](https://releases.aspose.com/words/net/) . Vous pouvez explorer un essai gratuit[Lien d'essai gratuit](https://releases.aspose.com/) ou acheter une licence[acheter un lien](https://purchase.aspose.com/buy) en fonction de vos besoins.
+1.  Aspose.Words for .NET : téléchargez la bibliothèque depuis le site officiel[Lien de téléchargement](https://releases.aspose.com/words/net/) . Vous pouvez explorer un essai gratuit[Lien d'essai gratuit](https://releases.aspose.com/) ou acheter une licence[Lien d'achat](https://purchase.aspose.com/buy) en fonction de vos besoins.
 2. Environnement de développement AC# : Visual Studio ou tout environnement prenant en charge le développement .NET fonctionnera parfaitement.
 3. Un exemple de document : recherchez un document Word avec lequel vous aimeriez expérimenter.
 
@@ -37,7 +37,7 @@ Passons maintenant aux étapes pratiques nécessaires à la relance de la numér
 
  Définir une variable chaîne`dataDir` pour stocker le chemin d'accès à votre répertoire de documents. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par l'emplacement réel.
 
- Créez-en deux`Document` objets utilisant le`Aspose.Words.Document`constructeur. Le premier (`srcDoc`) contiendra le document source contenant le contenu à ajouter. La deuxième (`dstDoc`) représente le document de destination dans lequel nous intégrerons le contenu source avec une numérotation de page redémarrée.
+ Créez-en deux`Document` objets utilisant le`Aspose.Words.Document`constructeur. Le premier (`srcDoc`) contiendra le document source contenant le contenu à ajouter. La seconde (`dstDoc`) représente le document de destination dans lequel nous intégrerons le contenu source avec une numérotation de page redémarrée.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Remplacez par votre répertoire actuel
@@ -47,11 +47,11 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
 ## Étape 2 : Configuration du saut de section :
 
- Accéder au`FirstSection` propriété du document source (`srcDoc`) pour manipuler la section initiale. Cette section verra sa numérotation des pages redémarrée.
+ Accédez au`FirstSection` propriété du document source (`srcDoc`) pour manipuler la section initiale. Cette section verra sa numérotation des pages redémarrée.
 
  Utiliser le`PageSetup` propriété de la section pour configurer son comportement de mise en page.
 
- Met le`SectionStart` propriété de`PageSetup` à`SectionStart.NewPage`. Cela garantit qu'une nouvelle page est créée avant que le contenu source ne soit ajouté au document de destination.
+ Réglez le`SectionStart` propriété de`PageSetup` à`SectionStart.NewPage`. Cela garantit qu'une nouvelle page est créée avant que le contenu source ne soit ajouté au document de destination.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -71,7 +71,7 @@ Maintenant que le document source est préparé avec la configuration de saut de
 
  Employer le`AppendDocument` méthode du document de destination (`dstDoc`) pour ajouter de manière transparente le contenu source.
 
-Transmettez le document source (`srcDoc` ) Et un`ImportFormatMode.KeepSourceFormatting` argument en faveur de cette méthode. Cet argument préserve la mise en forme d'origine du document source lorsqu'il est ajouté.
+Transmettez le document source (`srcDoc` ) et un`ImportFormatMode.KeepSourceFormatting` argument en faveur de cette méthode. Cet argument préserve la mise en forme d'origine du document source lorsqu'il est ajouté.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -105,7 +105,7 @@ Les numéros de page existants dans le document source ne sont pas affectés. Se
 
 ### Puis-je appliquer différents formats de numérotation (par exemple, des chiffres romains) ?
 
- Absolument! Aspose.Words offre un contrôle étendu sur les formats de numérotation des pages. Explore le`NumberStyle` propriété du`HeaderFooter` objet pour choisir parmi différents styles de numérotation comme des chiffres romains, des lettres ou des formats personnalisés.
+ Absolument! Aspose.Words offre un contrôle étendu sur les formats de numérotation des pages. Explorez le`NumberStyle` propriété du`HeaderFooter` objet pour choisir parmi différents styles de numérotation comme des chiffres romains, des lettres ou des formats personnalisés.
 
 ### Où puis-je trouver d’autres ressources ou assistance ?
 

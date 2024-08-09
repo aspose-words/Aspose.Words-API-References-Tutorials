@@ -16,7 +16,7 @@ url: /zh/net/programming-with-charts/tick-multi-line-label-alignment/
 在我们深入研究多行标签对齐之前，让我们先确保您已做好一切准备。以下是您需要做的：
 
 1.  Aspose.Words for .NET：确保您拥有最新版本的 Aspose.Words for .NET。如果没有，您可以[点击下载](https://releases.aspose.com/words/net/).
-2. .NET 环境：确保您的开发环境已使用 .NET 设置。
+2. .NET 环境：确保您的开发环境已设置 .NET。
 3. C# 基础知识：对 C# 的基本了解将使这一旅程更加顺利。
 
 ## 导入命名空间

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/create-simple-table/
 ---
-## Úvod
+## Zavedení
 
 Práce s dokumenty programově může být trochu skličující, pokud jste v ní nováčkem. Ale nebojte se, jsem tu, abych vás provedl procesem vytvoření jednoduché tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás krok za krokem provede vším, co potřebujete vědět.
 
@@ -15,7 +15,7 @@ Práce s dokumenty programově může být trochu skličující, pokud jste v n�
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
-1.  Aspose.Words for .NET: Budete si muset stáhnout a nainstalovat Aspose.Words for .NET. Můžete to najít[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Budete si muset stáhnout a nainstalovat Aspose.Words for .NET. Můžete to najít[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Funkční instalace sady Visual Studio nebo jakéhokoli jiného IDE, které podporuje vývoj .NET.
 3. Základní porozumění C#: Znalost programování v C# bude přínosem, protože jej budeme používat v našem příkladu.
 
@@ -75,7 +75,7 @@ builder.Write("Row 1, Cell 2 Content.");
 
 ## Krok 6: Ukončete první řadu
 
- Abychom označili, že jsme dokončili stavbu první řady, zavoláme`EndRow` metoda. Tato metoda také zahájí nový řádek.
+ Abychom označili, že jsme dokončili stavbu první řady, zavoláme`EndRow` metoda. Tato metoda také spustí nový řádek.
 
 ```csharp
 builder.EndRow();
@@ -124,10 +124,10 @@ Aspose.Words for .NET je výkonná knihovna pro manipulaci s dokumenty, která u
 Ano, Aspose.Words for .NET podporuje různé programovací jazyky, které běží na frameworku .NET, včetně VB.NET a C#.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).
 
 ### Jak mohu získat podporu pro Aspose.Words pro .NET?
- Podporu můžete získat návštěvou Aspose.Words[Fórum podpory](https://forum.aspose.com/c/words/8).
+ Podporu můžete získat návštěvou Aspose.Words[fórum podpory](https://forum.aspose.com/c/words/8).
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
- Podrobnou dokumentaci lze nalézt[tady](https://reference.aspose.com/words/net/).
+ Podrobnou dokumentaci lze nalézt[zde](https://reference.aspose.com/words/net/).

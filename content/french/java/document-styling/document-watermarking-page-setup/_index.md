@@ -15,7 +15,7 @@ Dans le domaine de la manipulation de documents, Aspose.Words for Java se prése
 
 ### Ajout de filigranes
 
-L'ajout de filigranes aux documents peut être crucial pour l'image de marque ou la sécurisation de votre contenu. Aspose.Words for Java rend cette tâche simple. Voici comment:
+L'ajout de filigranes aux documents peut être crucial pour l'image de marque ou la sécurisation de votre contenu. Aspose.Words for Java rend cette tâche simple. Voici comment procéder :
 
 ```java
 // Charger le document

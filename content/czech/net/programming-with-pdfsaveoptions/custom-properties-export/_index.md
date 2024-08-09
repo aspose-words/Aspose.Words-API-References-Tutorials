@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
-## Úvod
+## Zavedení
 
 Export uživatelských vlastností v dokumentu PDF může být neuvěřitelně užitečný pro různé obchodní potřeby. Ať už spravujete metadata pro lepší vyhledávání nebo vkládáte důležité informace přímo do svých dokumentů, Aspose.Words for .NET zajistí bezproblémový proces. Tento kurz vás provede vytvořením dokumentu aplikace Word, přidáním uživatelských vlastností a jejich exportem do PDF s těmito vlastnostmi nedotčenými.
 
@@ -15,7 +15,7 @@ Export uživatelských vlastností v dokumentu PDF může být neuvěřitelně u
 
 Než se ponoříte do kódu, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET nainstalován. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET nainstalován. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí jako Visual Studio.
 - Základní znalost programování v C#.
 
@@ -86,4 +86,4 @@ Aspose.Words for .NET poskytuje robustní a snadno použitelné rozhraní API pr
 Aspose.Words for .NET podporuje export do různých formátů, včetně DOCX, HTML, EPUB a mnoha dalších.
 
 ### Kde mohu získat podporu, pokud narazím na problémy?
- Pro podporu můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.
+ Pro podporu můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.

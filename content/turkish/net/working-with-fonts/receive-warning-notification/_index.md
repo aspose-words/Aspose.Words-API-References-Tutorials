@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/working-with-fonts/receive-warning-notification/
 ---
+## giriiş
 
 Belgelerinizde beklenmedik yazı tipi sorunlarıyla uğraşmaktan yoruldunuz mu? Aspose.Words for .NET ile belge işleme sırasında olası sorunlardan haberdar olabilir, böylece belge kalitesini korumayı kolaylaştırabilirsiniz. Bu kapsamlı kılavuz, Aspose.Words'te uyarı bildirimlerini ayarlama konusunda size yol gösterecek ve bir daha asla önemli bir uyarıyı kaçırmamanızı sağlayacaktır.
 
@@ -15,9 +16,9 @@ Belgelerinizde beklenmedik yazı tipi sorunlarıyla uğraşmaktan yoruldunuz mu?
 Dalışa geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 - Temel C# Bilgisi: C#'a aşinalık, adımları anlamanıza ve uygulamanıza yardımcı olacaktır.
--  Aspose.Words for .NET Kütüphanesi: Buradan indirip yükleyin.[İndirme: {link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Kütüphanesi: Buradan indirip yükleyin.[indirme bağlantısı](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi bir kurulum.
--  Örnek Belge: Örnek bir belgeye sahip olun (örn.`Rendering.docx`) birlikte çalışmak.
+-  Örnek Belge: Örnek bir belgeye sahip olun (örn.`Rendering.docx`) ile çalışmak.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -69,7 +70,7 @@ doc.WarningCallback = callback;
 ```
 ## 5. Adım: Sayfa Düzenini Güncelleyin
 
- Ara`UpdatePageLayout` yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
+ Şunu ara:`UpdatePageLayout` Yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -101,7 +102,7 @@ Hayır, değiştirme için yalnızca bir varsayılan yazı tipi belirleyebilirsi
 
 ###  S3: Diğer uyarı türlerini şununla işleyebilir miyim?`IWarningCallback`?
 
- Evet`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
+ Evet,`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
 
 ### S4: Aspose.Words desteğini nerede bulabilirim?
 

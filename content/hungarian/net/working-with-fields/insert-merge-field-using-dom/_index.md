@@ -26,7 +26,7 @@ Először is állítsunk be egy új projektet a Visual Studióban.
 
 1. Nyissa meg a Visual Studio-t.
 2. Új projekt létrehozása: Válassza a Fájl > Új > Projekt menüpontot. Válasszon egy C# konzolalkalmazást.
-3. Nevezze el projektjét: Adjon értelmes nevet a projektnek, majd kattintson a Létrehozás gombra.
+3. Nevezze el projektjét: Adjon értelmes nevet a projektjének, majd kattintson a Létrehozás gombra.
 
 ## 2. lépés: Telepítse az Aspose.Words programot
 

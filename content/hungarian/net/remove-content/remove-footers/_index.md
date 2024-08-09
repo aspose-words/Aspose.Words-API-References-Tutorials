@@ -40,7 +40,7 @@ Document doc = new Document(dataDir + "Header and footer types.docx");
 ```
 
 - dataDir: Ez a változó tárolja a dokumentumkönyvtár elérési útját.
--  Dokumentum doc: Ez a sor betölti a dokumentumot a`doc` tárgy.
+-  Dokumentum doc: Ez a sor betölti a dokumentumot a`doc` objektum.
 
 ## 2. lépés: Ismétlés szakaszokon keresztül
 

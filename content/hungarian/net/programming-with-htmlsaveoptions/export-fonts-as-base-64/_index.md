@@ -9,7 +9,7 @@ url: /hu/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## Bevezetés
 
-Ha a Word-dokumentumok programozott kezeléséről van szó, az Aspose.Words for .NET egy erőmű. Egyik remek funkciója a betűtípusok Base64-ként való exportálása HTML-fájlokon belül, így biztosítva a betűtípusok beágyazását és helyes megjelenítését a különböző böngészőkben és rendszerekben. Ebben az oktatóanyagban belemerülünk abba, hogyan érheti el ezt. Készen áll arra, hogy Word-dokumentum-betűtípusait webbaráttá tegye? Kezdjük el!
+Ha a Word-dokumentumok programozott kezeléséről van szó, az Aspose.Words for .NET egy erőmű. Egyik remek funkciója a betűtípusok Base64-ként való exportálása HTML-fájlokon belül, így biztosítva a betűtípusok beágyazását és helyes megjelenítését a különböző böngészőkben és rendszerekben. Ebben az oktatóanyagban belemerülünk abba, hogyan érheti el ezt. Készen áll arra, hogy Word-dokumentum-betűtípusait webbaráttá tegye? Kezdjük is!
 
 ## Előfeltételek
 
@@ -100,7 +100,7 @@ Ez a sor HTML-fájlként menti a dokumentumot Base64-ként exportált betűtípu
 
 ## Következtetés
 
-Gratulálunk! Sikeresen exportálta a betűtípusokat Base64-ként egy Word-dokumentumból az Aspose.Words for .NET használatával. Ez biztosítja a betűtípusok megőrzését és helyes megjelenítését a különböző platformokon. Akár dokumentumokat készít webes megjelenítésre, akár egyszerűen csak a kompatibilitást biztosítja, ez a funkció hihetetlenül hasznos.
+Gratulálok! Sikeresen exportálta a betűtípusokat Base64-ként egy Word-dokumentumból az Aspose.Words for .NET használatával. Ez biztosítja a betűtípusok megőrzését és helyes megjelenítését a különböző platformokon. Akár dokumentumokat készít webes megjelenítésre, akár egyszerűen csak a kompatibilitást biztosítja, ez a funkció hihetetlenül hasznos.
 
 ## GYIK
 
@@ -114,7 +114,7 @@ A Base64 használata biztosítja, hogy a betűtípusok közvetlenül a HTML-be l
 Teljesen! Az Aspose.Words for .NET lehetővé teszi, hogy különféle forrásokat, köztük képeket Base64-ként ágyazzon be HTML-fájlokba.
 
 ### Mi van, ha a dokumentumom több betűtípussal rendelkezik?
-Nincs mit! Az Aspose.Words for .NET a dokumentumban használt összes betűtípust Base64-ként beágyazza az eredményül kapott HTML-fájlba.
+Nem probléma! Az Aspose.Words for .NET a dokumentumban használt összes betűtípust Base64-ként beágyazza az eredményül kapott HTML-fájlba.
 
 ### Ingyenesen használható az Aspose.Words for .NET?
  Az Aspose.Words for .NET egy kereskedelmi könyvtár. Ingyenes próbaverziót azonban letölthet a webhelyről[Aspose Releases](https://releases.aspose.com/) oldalon.

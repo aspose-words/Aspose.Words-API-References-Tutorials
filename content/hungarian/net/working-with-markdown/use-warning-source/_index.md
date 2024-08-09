@@ -9,7 +9,7 @@ url: /hu/net/working-with-markdown/use-warning-source/
 ---
 ## Bevezetés
 
- Kellett már valaha programozottan kezelnie és formáznia a dokumentumokat? Ha igen, akkor valószínűleg szembesült a különböző dokumentumtípusok kezelésének bonyolultságával és annak biztosításával, hogy minden a megfelelőnek tűnjön. Írja be az Aspose.Words for .NET-et – egy hatékony könyvtár, amely leegyszerűsíti a dokumentumfeldolgozást. Ma egy speciális funkcióval foglalkozunk: a`WarningSource`osztályban, hogy elkapja és kezelje a figyelmeztetéseket, amikor a Markdownnal dolgozik. Induljunk el ezen az úton, hogy elsajátítsuk az Aspose.Words for .NET-et!
+Kellett már valaha programozottan kezelnie és formáznia a dokumentumokat? Ha igen, akkor valószínűleg szembesült a különböző dokumentumtípusok kezelésének bonyolultságával és annak biztosításával, hogy minden a megfelelőnek tűnjön. Írja be az Aspose.Words for .NET-et – egy hatékony könyvtár, amely leegyszerűsíti a dokumentumfeldolgozást. Ma egy speciális funkcióval foglalkozunk: a`WarningSource` osztályban, hogy elkapja és kezelje a figyelmeztetéseket, amikor a Markdownnal dolgozik. Induljunk el ezen az úton, hogy elsajátítsuk az Aspose.Words for .NET-et!
 
 ## Előfeltételek
 
@@ -39,7 +39,7 @@ Minden projektnek szilárd alapra van szüksége, igaz? Kezdjük a dokumentumkö
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahol a DOCX fájl található.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"`azzal a tényleges elérési úttal, ahol a DOCX fájl található.
 
 ## 2. lépés: A dokumentum betöltése
 
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
 ## 3. lépés: Figyelmeztetésgyűjtemény beállítása
 
- Képzeljen el egy olyan könyvet, amelyen cetlik fontos pontokat emelnek ki. A`WarningInfoCollection`csak ezt teszi a dokumentumfeldolgozásunknál.
+ Képzeljen el egy olyan könyvet, amelyen cetlik fontos pontokat emelnek ki. A`WarningInfoCollection` csak ezt teszi a dokumentumfeldolgozásunknál.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
@@ -88,7 +88,7 @@ Ez a sor a dokumentumot Markdown fájlként menti a megadott könyvtárba.
 
 ## Következtetés
 
- És megvan! Most tanultad meg a használatát`WarningSource`osztályt az Aspose.Words for .NET-ben a Markdown figyelmeztetések kezelésére. Ez az oktatóanyag a projekt beállítását, egy dokumentum betöltését, a figyelmeztetések összegyűjtését és feldolgozását, valamint a végleges dokumentum mentését tárgyalta. Ezzel a tudással jobban fel van szerelve az alkalmazások dokumentumfeldolgozásának kezelésére. Folytassa a kísérletezést és az Aspose.Words for .NET hatalmas képességeinek felfedezését!
+És megvan! Most tanultad meg a használatát`WarningSource` osztályt az Aspose.Words for .NET-ben a Markdown figyelmeztetések kezelésére. Ez az oktatóanyag a projekt beállítását, egy dokumentum betöltését, a figyelmeztetések összegyűjtését és feldolgozását, valamint a végleges dokumentum mentését tárgyalta. Ezzel a tudással jobban fel van szerelve az alkalmazások dokumentumfeldolgozásának kezelésére. Folytassa a kísérletezést és az Aspose.Words for .NET hatalmas képességeinek felfedezését!
 
 ## GYIK
 
@@ -99,10 +99,10 @@ Az Aspose.Words for .NET egy programkönyvtár a Word-dokumentumok programozott 
  Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/) és adja hozzá a Visual Studio projekthez.
 
 ### Mik azok a figyelmeztető források az Aspose.Words-ben?
- A figyelmeztető források jelzik a dokumentumfeldolgozás során keletkezett figyelmeztetések eredetét. Például,`WarningSource.Markdown` a Markdown feldolgozásával kapcsolatos figyelmeztetést jelez.
+ A figyelmeztető források jelzik a dokumentumfeldolgozás során keletkezett figyelmeztetések eredetét. Például,`WarningSource.Markdown` a Markdown feldolgozásával kapcsolatos figyelmeztetést jelzi.
 
 ### Testreszabhatom az Aspose.Words figyelmeztetések kezelését?
- Igen, testreszabhatja a figyelmeztetések kezelését a`IWarningCallback` felületet, és állítsa be a dokumentumhoz`WarningCallback` ingatlan.
+ Igen, testreszabhatja a figyelmeztetések kezelését a`IWarningCallback`felületet, és állítsa be a dokumentumhoz`WarningCallback` ingatlan.
 
 ### Hogyan menthetek el egy dokumentumot különböző formátumokban az Aspose.Words használatával?
  A dokumentumot különféle formátumokban (például DOCX, PDF, Markdown) mentheti a`Save` módszere a`Document` osztályban, paraméterként megadva a kívánt formátumot.

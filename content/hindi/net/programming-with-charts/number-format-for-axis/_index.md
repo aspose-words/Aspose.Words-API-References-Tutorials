@@ -98,7 +98,7 @@ chart.AxisY.NumberFormat.FormatCode = "#,##0";
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
- यहां ही`Save` विधि दस्तावेज़ को फ़ाइल नाम के साथ निर्दिष्ट पथ पर सहेजती है`WorkingWithCharts.NumberFormatForAxis.docx`.
+ यहाँ,`Save` विधि दस्तावेज़ को फ़ाइल नाम के साथ निर्दिष्ट पथ पर सहेजती है`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## निष्कर्ष
 

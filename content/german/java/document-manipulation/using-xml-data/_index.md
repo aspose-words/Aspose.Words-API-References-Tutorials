@@ -15,7 +15,7 @@ In diesem Handbuch erfahren Sie, wie Sie mit XML-Daten unter Verwendung von Aspo
 ## Voraussetzungen
 
 Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
-- [Aspose.Words für Java](https://products.aspose.com/words/java/) Eingerichtet.
+- [Aspose.Words für Java](https://products.aspose.com/words/java/) installiert.
 - Beispiel-XML-Datendateien für Kunden, Bestellungen und Lieferanten.
 - Beispiel-Word-Dokumente für Serienbriefziele.
 

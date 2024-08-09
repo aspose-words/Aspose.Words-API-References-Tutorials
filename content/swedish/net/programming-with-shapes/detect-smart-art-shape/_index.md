@@ -10,7 +10,7 @@ url: /sv/net/programming-with-shapes/detect-smart-art-shape/
 
 ## Introduktion
 
-Hallå där! Har du någonsin behövt arbeta med SmartArt i Word-dokument programmatiskt? Oavsett om du automatiserar rapporter, skapar dynamiska dokument eller bara dyker in i dokumentbehandling, har Aspose.Words för .NET dig täckt. I den här självstudien kommer vi att utforska hur du upptäcker SmartArt-former i Word-dokument med Aspose.Words för .NET. Vi kommer att dela upp varje steg i en detaljerad, lätt att följa guide. I slutet av den här artikeln kommer du att kunna identifiera SmartArt-former i alla Word-dokument utan ansträngning!
+Hej där! Har du någonsin behövt arbeta med SmartArt i Word-dokument programmatiskt? Oavsett om du automatiserar rapporter, skapar dynamiska dokument eller bara dyker in i dokumentbehandling, har Aspose.Words för .NET dig täckt. I den här självstudien kommer vi att utforska hur du upptäcker SmartArt-former i Word-dokument med Aspose.Words för .NET. Vi kommer att dela upp varje steg i en detaljerad, lätt att följa guide. I slutet av den här artikeln kommer du att kunna identifiera SmartArt-former i alla Word-dokument utan ansträngning!
 
 ## Förutsättningar
 
@@ -21,7 +21,7 @@ Innan vi dyker in i detaljerna, låt oss se till att du har allt konfigurerat:
 3. Visual Studio: Alla senaste versioner bör fungera, men den senaste versionen rekommenderas.
 4. .NET Framework: Se till att det är installerat på ditt system.
 
-Redo att komma igång? Grymt bra! Låt oss hoppa direkt in.
+Redo att börja? Fantastisk! Låt oss hoppa direkt in.
 
 ## Importera namnområden
 
@@ -44,7 +44,7 @@ Först måste vi ange katalogen där våra dokument lagras. Detta hjälper Aspos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument.
 
 ## Steg 2: Ladda dokumentet
 
@@ -94,7 +94,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### 3. Hur upptäcker jag andra typer av former i ett dokument?
 
- Du kan ändra LINQ-frågan för att söka efter andra egenskaper eller typer av former. Referera till[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Du kan ändra LINQ-frågan för att söka efter andra egenskaper eller typer av former. Se till[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### 4. Hur får jag support för Aspose.Words för .NET?
 
@@ -102,4 +102,4 @@ Du kan få stöd genom att besöka[Aspose supportforum](https://forum.aspose.com
 
 ### 5. Kan jag manipulera SmartArt-former programmatiskt?
 
- Ja, Aspose.Words låter dig manipulera SmartArt-former programmatiskt. Kolla[dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
+ Ja, Aspose.Words låter dig manipulera SmartArt-former programmatiskt. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.

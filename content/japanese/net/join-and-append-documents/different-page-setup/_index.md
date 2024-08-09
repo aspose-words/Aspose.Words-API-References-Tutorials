@@ -133,7 +133,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 はい、Aspose.Words for .NET は .NET Core と完全に互換性があります。
 
 ### 両方のドキュメントのスタイルを保持できますか?
-はい`ImportFormatMode.KeepSourceFormatting`このオプションにより、ソース ドキュメントのスタイルが保持されます。
+はい、`ImportFormatMode.KeepSourceFormatting`このオプションにより、ソース ドキュメントのスタイルが保持されます。
 
 ### Aspose.Words に関する詳細なサポートはどこで受けられますか?
 チェックしてください[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)または訪問する[サポートフォーラム](https://forum.aspose.com/c/words/8)さらにサポートが必要な場合はお問い合わせください。

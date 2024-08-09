@@ -10,7 +10,7 @@ url: /hu/java/document-security/keep-documents-safe-secure/
 
 Ebben a digitális korban, ahol az információ kulcsfontosságú, rendkívül fontos dokumentumai biztonságának megőrzése. Legyen szó személyes fájlokról, üzleti dokumentumokról vagy bizalmas adatokról, kulcsfontosságú, hogy megvédjük őket az illetéktelen hozzáféréstől és a lehetséges fenyegetésektől. Ebben az átfogó útmutatóban végigvezetjük a dokumentumok biztonságossá tételén az Aspose.Words for Java segítségével, amely egy hatékony szövegszerkesztő és dokumentumkezelési könyvtár.
 
-## 1. Bemutatkozás
+## 1. Bevezetés
 
 Ebben a rohanó digitális világban az elektronikus dokumentumok biztonsága a magánszemélyek és a vállalkozások számára egyaránt kiemelt prioritássá vált. Az adatszivárgás és a számítógépes támadások aggályokat vetnek fel az érzékeny információk bizalmas kezelésével és integritásával kapcsolatban. Az Aspose.Words for Java segítséget jelent azáltal, hogy átfogó funkciókat biztosít, amelyek biztosítják, hogy dokumentumai biztonságban maradjanak az illetéktelen hozzáféréstől.
 
@@ -20,7 +20,7 @@ Mielőtt belemerülnénk a technikai szempontokba, ismerjük meg a dokumentumbiz
 
 ### Az okmányvédelem típusai
 
-- #### Jelszó védelem:
+- #### Jelszavas védelem:
  Korlátozza a hozzáférést a dokumentumokhoz jelszóval, biztosítva, hogy csak arra jogosult felhasználók tudják megnyitni és megtekinteni azokat.
 - #### Titkosítás:
  dokumentum tartalmát titkosítási algoritmusok segítségével kódolt formátummá alakíthatja, így a megfelelő visszafejtési kulcs nélkül megfejthetetlenné válik.
@@ -40,7 +40,7 @@ A dokumentumtitkosítás egy további biztonsági réteget biztosít, amely olva
 Mielőtt folytatnánk a dokumentumbiztonságot, először ismerkedjünk meg az Aspose.Words for Java programmal. Ez egy funkciókban gazdag könyvtár, amely lehetővé teszi a Java fejlesztők számára Word dokumentumok programozott létrehozását, módosítását és konvertálását. A kezdéshez:
 
 1. ### Az Aspose.Words for Java letöltése:
-  Meglátogatni a[Aspose.Releases](https://releases.aspose.com/words/java/) és töltse le az Aspose.Words for Java legújabb verzióját.
+  Látogassa meg a[Aspose.Releases](https://releases.aspose.com/words/java/) és töltse le az Aspose.Words for Java legújabb verzióját.
 
 2. ### Telepítse a könyvtárat:
  A letöltés befejezése után kövesse a telepítési utasításokat az Aspose.Words beállításához a Java projektben.

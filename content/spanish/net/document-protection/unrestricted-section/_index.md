@@ -15,10 +15,10 @@ url: /es/net/document-protection/unrestricted-section/
 
 Antes de entrar en el meollo de la cuestión, asegúrese de tener todo lo que necesita:
 
--  Aspose.Words para .NET: si aún no lo ha hecho, puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: si aún no lo ha hecho, puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Visual Studio: O cualquier otro IDE compatible con .NET.
 - Comprensión básica de C#: un poco de familiaridad con C# le ayudará a completar este tutorial.
--  Licencia Aspose: obtenga una[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) si lo necesita para realizar pruebas.
+-  Licencia Aspose: obtenga una[prueba gratuita](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) si lo necesita para realizar pruebas.
 
 ## Importar espacios de nombres
 

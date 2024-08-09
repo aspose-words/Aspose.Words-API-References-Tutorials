@@ -9,7 +9,7 @@ url: /pl/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## Wstęp
 
-No hej! Jeśli zagłębiasz się w świat automatyzacji dokumentów, jesteś we właściwym miejscu. Dzisiaj przyjrzymy się, jak wstawić pole TC (spis treści) do dokumentu programu Word za pomocą Aspose.Words dla .NET. Zaufaj mi, pod koniec tego samouczka poczujesz się jak czarodziej rzucający zaklęcia w dokumentach programu Word. Gotowy żeby zacząć? Zróbmy to!
+Hej tam! Jeśli zagłębiasz się w świat automatyzacji dokumentów, jesteś we właściwym miejscu. Dzisiaj przyjrzymy się, jak wstawić pole TC (spis treści) do dokumentu programu Word za pomocą Aspose.Words dla .NET. Zaufaj mi, pod koniec tego samouczka poczujesz się jak czarodziej rzucający zaklęcia w dokumentach programu Word. Gotowy, aby zacząć? Zróbmy to!
 
 ## Warunki wstępne
 
@@ -75,7 +75,7 @@ Na koniec zapiszmy nasz dokument. Tutaj skupia się cała nasza ciężka praca.
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-Bum! Właśnie utworzyłeś dokument Word z polem TC. Jakie to niesamowite?
+Wysięgnik! Właśnie utworzyłeś dokument Word z polem TC. Jakie to niesamowite?
 
 ## Wniosek
 

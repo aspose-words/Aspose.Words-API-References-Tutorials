@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 // Berdasarkan indeks:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// Dengan nama:
+// Berdasarkan nama:
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 

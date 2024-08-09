@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## 2. lépés: Töltse be a dokumentumot
 
- Ezután be kell töltenie a dokumentumot egy Aspose.Words-be`Document`tárgy. Ez lehetővé teszi, hogy programozottan kommunikáljon a dokumentummal.
+ Ezután be kell töltenie a dokumentumot egy Aspose.Words-be`Document`objektum. Ez lehetővé teszi, hogy programozottan kommunikáljon a dokumentummal.
 
 ```csharp
 // Töltse be a dokumentumot.
@@ -103,7 +103,7 @@ mezőkódok helyőrzők egy Word-dokumentumban, amelyek bizonyos feltételek ala
 
 ### Hogyan frissíthetek mezőkódot egy Word-dokumentumban az Aspose.Words használatával?
 
- A mezőkód frissítéséhez használhatja a`Update()` módszer a`Field` tárgy. Ez a módszer frissíti a mezőt, hogy a dokumentum tartalma alapján a legfrissebb eredmény jelenjen meg.
+ A mezőkód frissítéséhez használhatja a`Update()` módszer a`Field` objektum. Ez a módszer frissíti a mezőt, hogy a dokumentum tartalma alapján a legfrissebb eredmény jelenjen meg.
 
 ### Hozzáadhatok programozottan új mezőkódokat egy Word-dokumentumhoz?
 
@@ -115,4 +115,4 @@ mezőkódok helyőrzők egy Word-dokumentumban, amelyek bizonyos feltételek ala
 
 ### Hol kaphatok több információt az Aspose.Words-ről?
 
-Részletes dokumentációért, oktatóanyagokért és támogatásért keresse fel a[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/), [Letöltési oldal](https://releases.aspose.com/words/net/) , vagy[Támogatói fórum](https://forum.aspose.com/c/words/8).
+Részletes dokumentációért, oktatóanyagokért és támogatásért keresse fel a[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/), [Letöltési oldal](https://releases.aspose.com/words/net/) , vagy[Támogatási fórum](https://forum.aspose.com/c/words/8).

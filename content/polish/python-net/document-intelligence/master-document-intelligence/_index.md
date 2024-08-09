@@ -2,7 +2,7 @@
 title: Opanuj inteligencję dokumentów
 linktitle: Opanuj inteligencję dokumentów
 second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Opanuj inteligencję dokumentów za pomocą Aspose.Words dla Pythona. Automatyzuj przepływy pracy, analizuj dane i wydajnie przetwarzaj dokumenty. Zacznij teraz!
+description: Opanuj inteligencję dokumentów za pomocą Aspose.Words dla Pythona. Automatyzuj przepływy pracy, analizuj dane i wydajnie przetwarzaj dokumenty. Zacznij już teraz!
 type: docs
 weight: 10
 url: /pl/python-net/document-intelligence/master-document-intelligence/

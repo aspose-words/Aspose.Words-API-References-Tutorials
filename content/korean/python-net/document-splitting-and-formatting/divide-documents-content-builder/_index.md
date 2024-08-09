@@ -101,4 +101,4 @@ Aspose.Words for Python은 새 페이지, 연속, 페이지 나누기와 같은 
 전적으로! Aspose.Words for Python은 정확한 형식으로 다양한 유형의 보고서 및 문서를 생성하는 데 널리 사용됩니다.
 
 ### 설명서와 다운로드는 어디에서 액세스할 수 있나요?
- 방문하다[Python 문서용 Aspose.Words](https://reference.aspose.com/words/python-net/) 그리고 다음에서 라이브러리를 다운로드하세요.[Aspose.Words Python 릴리스](https://releases.aspose.com/words/python/).
+ 방문[Python 문서용 Aspose.Words](https://reference.aspose.com/words/python-net/) 그리고 다음에서 라이브러리를 다운로드하세요.[Aspose.Words Python 릴리스](https://releases.aspose.com/words/python/).

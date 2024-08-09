@@ -74,10 +74,10 @@ Aspose.Words voor .NET is voornamelijk ontworpen voor .NET-talen zoals C#. U kun
  Ja, u kunt een downloaden[gratis proefperiode](https://releases.aspose.com/) van de Aspose-website.
 
 ### Hoe kan ik ondersteuning krijgen als ik problemen tegenkom?  
- U kunt een bezoek brengen aan de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+ U kunt een bezoek brengen aan de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.
 
 ### Kan ik een licentie aanvragen voor een bestand of stream?  
 Ja, met Aspose.Words voor .NET kunt u een licentie toepassen op zowel een bestand als een stream. Meer informatie vindt u in de[documentatie](https://reference.aspose.com/words/net/).
 
 ### Welke andere functies biedt Aspose.Words voor .NET?  
- Aspose.Words voor .NET biedt een breed scala aan functies, waaronder het genereren, manipuleren, converteren en weergeven van documenten. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Aspose.Words voor .NET biedt een breed scala aan functies, waaronder het genereren, manipuleren, converteren en weergeven van documenten. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.

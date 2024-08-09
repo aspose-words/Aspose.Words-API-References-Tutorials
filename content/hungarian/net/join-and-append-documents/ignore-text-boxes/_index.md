@@ -108,7 +108,7 @@ Sikeresen egyesített két Word-dokumentumot az Aspose.Words for .NET használat
 ## GYIK
 
 ### Mi az Aspose.Words for .NET?
- Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok létrehozásához, kezeléséhez és konvertálásához .NET-alkalmazásokon belül.[Tudj meg többet](https://reference.aspose.com/words/net/).
+ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok létrehozásához, kezeléséhez és konvertálásához .NET-alkalmazásokon belül.[További információ](https://reference.aspose.com/words/net/).
 
 ### Kipróbálhatom az Aspose.Words for .NET-et a vásárlás előtt?
  Igen, letölthet egy ingyenes próbaverziót[itt](https://releases.aspose.com/).

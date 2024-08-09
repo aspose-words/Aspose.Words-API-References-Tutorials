@@ -15,7 +15,7 @@ Als het gaat om het programmatisch manipuleren van Word-documenten, is Aspose.Wo
 
 Voordat we ingaan op de codering, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
--  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) bladzijde.
+-  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) pagina.
 - .NET-ontwikkelomgeving: elke IDE zoals Visual Studio zal perfect werken.
 - Basiskennis van C#: u hoeft geen professional te zijn, maar een basiskennis kan helpen.
 
@@ -117,4 +117,4 @@ Absoluut! Met Aspose.Words voor .NET kunt u verschillende bronnen, inclusief afb
 Geen probleem! Aspose.Words voor .NET zal alle lettertypen die in uw document worden gebruikt als Base64 insluiten in het resulterende HTML-bestand.
 
 ### Is Aspose.Words voor .NET gratis te gebruiken?
- Aspose.Words voor .NET is een commerciële bibliotheek. U kunt echter een gratis proefversie downloaden van de[Aspose-releases](https://releases.aspose.com/) bladzijde.
+ Aspose.Words voor .NET is een commerciële bibliotheek. U kunt echter een gratis proefversie downloaden van de[Aspose-releases](https://releases.aspose.com/) pagina.

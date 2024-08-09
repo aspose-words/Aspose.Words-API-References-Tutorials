@@ -109,7 +109,7 @@ class MultipagePrintDocument implements Printable
         // इस कागज़ के शीट पर मुद्रित होने वाले अंतिम पृष्ठ की संख्या का चयन करें।
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //संग्रहीत वर्तमान पृष्ठ से परिकलित पृष्ठ तक चयनित पृष्ठों के माध्यम से लूप करें
-        // अंतिम पृष्ठ।
+        // अंतिम पृष्ठ.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // स्तंभ और पंक्ति सूचकांक की गणना करें.
             int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());

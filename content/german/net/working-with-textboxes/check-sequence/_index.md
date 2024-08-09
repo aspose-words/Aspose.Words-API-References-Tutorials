@@ -15,7 +15,7 @@ Hallo liebe Entwickler und Dokument-Enthusiasten! 🌟 Waren Sie schon einmal in
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie zum Starten brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben.[Hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben.[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-kompatible Entwicklungsumgebung wie Visual Studio.
 3. Grundlegende C#-Kenntnisse: Wenn Sie mit der Syntax und den Konzepten von C# vertraut sind, können Sie den Schritten leichter folgen.
 4. Beispiel-Word-Dokument: Es ist praktisch, ein Word-Dokument zum Testen Ihres Codes zu haben, aber für dieses Beispiel erstellen wir alles von Grund auf neu.
@@ -151,4 +151,4 @@ Ja, Textfelder können in beliebiger Reihenfolge verknüpft werden, auch in nich
 Ja, Sie können den Text in jedem Textfeld unabhängig gestalten, was Ihnen Flexibilität bei der Gestaltung und Formatierung gibt.
 
 ### Wo finde ich weitere Ressourcen zum Arbeiten mit Textfeldern in Aspose.Words?
- Weitere Informationen finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Hilfeforum](https://forum.aspose.com/c/words/8).
+ Weitere Informationen finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Support-Forum](https://forum.aspose.com/c/words/8).

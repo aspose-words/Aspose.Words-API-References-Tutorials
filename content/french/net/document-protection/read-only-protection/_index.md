@@ -50,7 +50,7 @@ Explication:
 
 ## Étape 2 : définissez le mot de passe de protection en écriture
 
-Ensuite, nous devons définir un mot de passe pour la protection en écriture. Ce mot de passe peut contenir jusqu'à 15 caractères.
+Ensuite, nous devons définir un mot de passe pour la protection en écriture. Ce mot de passe peut comporter jusqu'à 15 caractères.
 
 ```csharp
 //Saisissez un mot de passe comportant jusqu'à 15 caractères.
@@ -62,7 +62,7 @@ Explication:
 -  Le`SetPassword` la méthode est appelée sur le`WriteProtection` propriété du document.
 - Nous fournissons un mot de passe (« MyPassword » dans ce cas) qui sera nécessaire pour supprimer la protection.
 
-## Étape 3 : Activer la recommandation en lecture seule
+## Étape 3 : Activer la recommandation en lecture seule
 
 Dans cette étape, nous recommandons la lecture seule du document. Cela signifie que lorsque le document est ouvert, il invitera l'utilisateur à l'ouvrir en mode lecture seule.
 
@@ -106,7 +106,7 @@ Explication:
 
 ## Conclusion
 
-Et voila! Vous avez créé avec succès un document Word protégé en lecture seule à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité garantit que le contenu de votre document reste intact et inchangé, offrant ainsi une couche de sécurité supplémentaire. Que vous partagiez des informations sensibles ou des documents juridiques, la protection en lecture seule est un outil indispensable dans votre arsenal de gestion de documents.
+Et voilà ! Vous avez créé avec succès un document Word protégé en lecture seule à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité garantit que le contenu de votre document reste intact et inchangé, offrant ainsi une couche de sécurité supplémentaire. Que vous partagiez des informations sensibles ou des documents juridiques, la protection en lecture seule est un outil indispensable dans votre arsenal de gestion de documents.
 
 ## FAQ
 

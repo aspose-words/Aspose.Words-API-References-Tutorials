@@ -9,7 +9,7 @@ url: /nl/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
 ## Invoering
 
-Hallo daar! Ben jij klaar om een duik te nemen in de wereld van documentautomatisering? Of je nu een doorgewinterde ontwikkelaar bent of net begint, bij ons ben je aan het juiste adres. Vandaag onderzoeken we hoe u een formulierveld met keuzelijst met invoervak in een Word-document kunt invoegen met Aspose.Words voor .NET. Geloof me, aan het einde van deze tutorial zul je een professional zijn in het gemakkelijk maken van interactieve documenten. Dus pak een kop koffie, leun achterover en laten we aan de slag gaan!
+Hé daar! Ben jij klaar om een duik te nemen in de wereld van documentautomatisering? Of je nu een doorgewinterde ontwikkelaar bent of net begint, bij ons ben je aan het juiste adres. Vandaag onderzoeken we hoe u een formulierveld met keuzelijst met invoervak in een Word-document kunt invoegen met Aspose.Words voor .NET. Geloof me, aan het einde van deze tutorial zul je een professional zijn in het gemakkelijk maken van interactieve documenten. Dus pak een kop koffie, leun achterover en laten we aan de slag gaan!
 
 ## Vereisten
 

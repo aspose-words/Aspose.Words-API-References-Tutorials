@@ -102,7 +102,7 @@ Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die Arbeit mit Word-Dokumenten in .NET-Anwendungen. Sie können damit Dokumente programmgesteuert erstellen, ändern und konvertieren.
 
 ### Wie kann ich Aspose.Words für .NET installieren?
- Sie können Aspose.Words für .NET installieren von der[Download-Link](https://releases.aspose.com/words/net/). Befolgen Sie die bereitgestellten Installationsanweisungen.
+ Sie können Aspose.Words für .NET installieren von der[Downloadlink](https://releases.aspose.com/words/net/). Befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Kann ich mit Aspose.Words für .NET reguläre Ausdrücke verwenden?
 Ja, Aspose.Words unterstützt reguläre Ausdrücke für Such- und Ersetzungsvorgänge und ermöglicht so komplexe Textmanipulationen.

@@ -59,7 +59,7 @@ Para criar e inserir tabelas em documentos usando Aspose.Words for Python, siga 
 
 ## Aplicando formatação básica de tabela
 
- A formatação básica da tabela pode ser obtida usando métodos fornecidos pelo`Table`e`Cell` Aulas. Veja como você pode melhorar a aparência da sua mesa:
+ A formatação básica da tabela pode ser obtida usando métodos fornecidos pelo`Table`e`Cell` aulas. Veja como você pode melhorar a aparência da sua mesa:
 
 1. Definir larguras de coluna: ajuste a largura das colunas para garantir o alinhamento adequado e apelo visual.
 

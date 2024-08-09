@@ -20,7 +20,7 @@ Antes de entrar en el meollo de la cuestión, asegurémonos de tener todo lo que
 3. .NET Framework: asegúrese de tener .NET Framework instalado.
 4. Un documento de Word: necesitará un documento de Word de muestra para trabajar.
 
-¿Tengo todo? ¡Excelente! Vamonos.
+¿Tienes todo? ¡Excelente! Sigamos adelante.
 
 ## Importar espacios de nombres
 
@@ -70,7 +70,7 @@ Ahora que estamos en el párrafo deseado, agreguemos algo de texto. ¡Aquí es d
 builder.Writeln("This is the 3rd paragraph.");
 ```
 
-¡Y voilá! Acaba de pasar a un párrafo específico y agregarle texto.
+¡Y listo! Acaba de pasar a un párrafo específico y agregarle texto.
 
 ## Conclusión
 
@@ -88,7 +88,7 @@ Si el índice está fuera de rango, el método generará una excepción. Asegúr
  ¡Absolutamente! Puede insertar texto, imágenes, tablas y más usando el`DocumentBuilder` clase.
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?
- Sí, Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+ Sí, Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
 
 ### ¿Dónde puedo encontrar documentación más detallada?
  Puedes encontrar documentación detallada.[aquí](https://reference.aspose.com/words/net/).

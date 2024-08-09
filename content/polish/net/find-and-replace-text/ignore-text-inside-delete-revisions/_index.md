@@ -17,7 +17,7 @@ Zanim zagłębisz się w ten samouczek, upewnij się, że spełnione są następ
 - Podstawowa znajomość języka programowania C#.
 - Program Visual Studio zainstalowany w systemie.
 -  Biblioteka Aspose.Words dla .NET zintegrowana z Twoim projektem. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Dostęp do Aspose.Words dla .NET[dokumentacja](https://reference.aspose.com/words/net/) na przykład.
+- Dostęp do Aspose.Words dla .NET[dokumentacja](https://reference.aspose.com/words/net/) w celach informacyjnych.
 
 ## Importuj przestrzenie nazw
 

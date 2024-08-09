@@ -9,7 +9,7 @@ url: /vi/net/working-with-section/delete-all-sections/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thử xóa tất cả các phần trong tài liệu Word và thấy mình bị mắc kẹt trong một mê cung các bước khó hiểu chưa? Bạn không cô đơn. Nhiều người trong chúng ta cần thao tác với tài liệu Word vì nhiều lý do khác nhau và đôi khi việc xóa tất cả các phần có thể giống như đang điều hướng một mê cung. Nhưng đừng lo lắng! Với Aspose.Words for .NET, nhiệm vụ này trở nên dễ dàng như ăn bánh. Bài viết này sẽ hướng dẫn bạn thực hiện quy trình, chia nó thành các bước đơn giản, dễ quản lý. Đến cuối hướng dẫn này, bạn sẽ trở thành chuyên gia trong việc xử lý các phần trong tài liệu Word bằng Aspose.Words cho .NET.
+Bạn đã bao giờ thử xóa tất cả các phần trong tài liệu Word và thấy mình bị mắc kẹt trong một mê cung các bước khó hiểu chưa? Bạn không đơn độc. Nhiều người trong chúng ta cần thao tác với tài liệu Word vì nhiều lý do khác nhau và đôi khi việc xóa tất cả các phần có thể giống như đang điều hướng một mê cung. Nhưng đừng lo lắng! Với Aspose.Words for .NET, nhiệm vụ này trở nên dễ dàng như ăn bánh. Bài viết này sẽ hướng dẫn bạn thực hiện quy trình, chia nó thành các bước đơn giản, dễ quản lý. Đến cuối hướng dẫn này, bạn sẽ trở thành chuyên gia trong việc xử lý các phần trong tài liệu Word bằng Aspose.Words cho .NET.
 
 ## Điều kiện tiên quyết
 
@@ -48,14 +48,14 @@ Bây giờ chúng ta đã tải tài liệu của mình xong, bước tiếp the
 doc.Sections.Clear();
 ```
 
-Dòng mã đơn giản này sẽ xóa tất cả các phần trong tài liệu được tải. Nhưng làm thế nào nó hoạt động? Hãy chia nhỏ nó ra:
+Dòng mã đơn giản này sẽ xóa tất cả các phần trong tài liệu được tải. Nhưng nó hoạt động như thế nào? Hãy chia nhỏ nó ra:
 
 - `doc.Sections` truy cập các phần của tài liệu.
 - `.Clear()` loại bỏ tất cả các phần khỏi tài liệu.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Việc xóa tất cả các phần trong tài liệu Word bằng Aspose.Words for .NET thật đơn giản khi bạn biết các bước. Thư viện mạnh mẽ này đơn giản hóa nhiều tác vụ có thể khá tẻ nhạt. Cho dù bạn đang xử lý các tài liệu đơn giản hay phức tạp, Aspose.Words đều có thể giúp bạn. 
+Và bạn có nó! Việc xóa tất cả các phần trong tài liệu Word bằng Aspose.Words for .NET thật đơn giản khi bạn biết các bước. Thư viện mạnh mẽ này đơn giản hóa nhiều tác vụ có thể khá tẻ nhạt. Cho dù bạn đang xử lý các tài liệu đơn giản hay phức tạp, Aspose.Words đều có thể giúp bạn. 
 
 ## Câu hỏi thường gặp
 
@@ -69,7 +69,7 @@ Và bạn có nó rồi đấy! Việc xóa tất cả các phần trong tài li
  Bạn có thể mua nó từ[đây](https://purchase.aspose.com/buy).
 
 ### Có hỗ trợ nào dành cho Aspose.Words cho .NET không?
- Có, bạn có thể nhận được hỗ trợ từ cộng đồng Aspose[đây](https://forum.aspose.com/c/words/8).
+Có, bạn có thể nhận được hỗ trợ từ cộng đồng Aspose[đây](https://forum.aspose.com/c/words/8).
 
 ### Nếu tôi cần giấy phép tạm thời thì sao?
  Bạn có thể nhận được giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).

@@ -9,7 +9,7 @@ url: /tr/net/working-with-section/delete-section/
 ---
 ## giriiş
 
-Aspose.Words for .NET'i kullanarak belge işleme dünyasına dalmaya karar verdiniz. Harika seçim! Aspose.Words, Word belgeleriyle ilgili her şeyi yönetmeye yönelik güçlü bir kütüphanedir. İster oluşturma, ister değiştirme, ister dönüştürmeyle ilgileniyor olun, Aspose.Words yanınızdadır. Bu kılavuzda, bir Word belgesinden bir bölümün nasıl silineceğini açıklayacağız. Aspose profesyoneli olmaya hazır mısınız? Başlayalım!
+Aspose.Words for .NET'i kullanarak belge işleme dünyasına dalmaya karar verdiniz. Harika seçim! Aspose.Words, Word belgeleriyle ilgili her şeyi yönetmeye yönelik güçlü bir kütüphanedir. İster oluşturma, ister değiştirme, ister dönüştürmeyle ilgileniyor olun, Aspose.Words yanınızdadır. Bu kılavuzda, bir Word belgesinden bir bölümün nasıl silineceğini açıklayacağız. Aspose profesyoneli olmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 

@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Wstęp
 
-Witamy w tym kompleksowym przewodniku na temat zarządzania zastępowaniem czcionek przy użyciu Aspose.Words dla .NET. Jeśli kiedykolwiek miałeś problem z nieprawidłowym wyświetlaniem czcionek w dokumentach, trafiłeś we właściwe miejsce. Ten samouczek przeprowadzi Cię krok po kroku przez proces skutecznego zastępowania czcionek bez przyrostków. Zacznijmy!
+Witamy w tym kompleksowym przewodniku na temat zarządzania zastępowaniem czcionek przy użyciu Aspose.Words dla .NET. Jeśli kiedykolwiek miałeś problem z nieprawidłowym wyświetlaniem czcionek w dokumentach, trafiłeś we właściwe miejsce. Ten samouczek przeprowadzi Cię krok po kroku przez proces skutecznego zastępowania czcionek bez przyrostków.
 
 ## Warunki wstępne
 
@@ -17,7 +18,7 @@ Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące el
 - Podstawowa znajomość języka C#: Zrozumienie programowania w języku C# ułatwi wykonanie i wdrożenie poszczególnych kroków.
 -  Aspose.Words dla biblioteki .NET: Pobierz i zainstaluj bibliotekę z[link do pobrania](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Skonfiguruj środowisko programistyczne, takie jak Visual Studio, aby pisać i uruchamiać kod.
-- Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), z którymi będziesz pracować w tym samouczku.
+-  Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), z którymi będziesz pracować w tym samouczku.
 
 ## Importuj przestrzenie nazw
 
@@ -26,7 +27,6 @@ Najpierw musimy zaimportować niezbędne przestrzenie nazw, aby uzyskać dostęp
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Krok 5: Utwórz klasę obsługi ostrzeżeń
 
-Aby skutecznie obsługiwać ostrzeżenia, utwórz klasę niestandardową, która implementuje metodę`IWarningCallback` interfejs. Ta klasa będzie przechwytywać i rejestrować wszelkie ostrzeżenia dotyczące podstawiania czcionek.
+ Aby skutecznie obsługiwać ostrzeżenia, utwórz klasę niestandardową, która implementuje metodę`IWarningCallback` interfejs. Ta klasa będzie przechwytywać i rejestrować wszelkie ostrzeżenia dotyczące podstawiania czcionek.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,7 +93,7 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 W tej klasie:
--  The`Warning` metoda przechwytuje ostrzeżenia związane z zastępowaniem czcionek.
+-  The`Warning`metoda przechwytuje ostrzeżenia związane z zastępowaniem czcionek.
 -  The`FontWarnings` kolekcja przechowuje te ostrzeżenia do dalszej kontroli lub rejestrowania.
 
 ## Wniosek
@@ -102,22 +102,22 @@ Opanowałeś teraz proces obsługi zastępowania czcionek bez przyrostków przy 
 
 ## Często zadawane pytania
 
-### P1: Jak mogę używać czcionek z wielu niestandardowych katalogów?
+### Jak mogę używać czcionek z wielu niestandardowych katalogów?
 
  Możesz dodać wiele`FolderFontSource` przypadki do`fontSources` wylistuj i odpowiednio zaktualizuj źródła czcionek.
 
-### P2: Gdzie mogę pobrać bezpłatną wersję próbną Aspose.Words dla .NET?
+### Gdzie mogę pobrać bezpłatną wersję próbną Aspose.Words dla .NET?
 
  Możesz pobrać bezpłatną wersję próbną ze strony[Aspose bezpłatna strona próbna](https://releases.aspose.com/).
 
-###  P3: Czy mogę obsługiwać wiele typów ostrzeżeń za pomocą`IWarningCallback`?
+###  Czy mogę obsługiwać wiele typów ostrzeżeń za pomocą`IWarningCallback`?
 
- Tak`IWarningCallback` interfejs pozwala na obsługę różnego rodzaju ostrzeżeń, a nie tylko podmiany czcionek.
+ Tak,`IWarningCallback` interfejs pozwala na obsługę różnego rodzaju ostrzeżeń, a nie tylko podmiany czcionek.
 
-### P4: Gdzie mogę uzyskać wsparcie dla Aspose.Words?
+### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words?
 
  Aby uzyskać pomoc, odwiedź stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### P5: Czy można kupić licencję tymczasową?
+### Czy jest możliwość zakupu licencji tymczasowej?
 
  Tak, możesz uzyskać tymczasową licencję od[strona licencji tymczasowej](https://purchase.aspose.com/temporary-license/).

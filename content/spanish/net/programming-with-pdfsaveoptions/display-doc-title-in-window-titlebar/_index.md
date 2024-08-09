@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## Paso 1: cargue su documento
 
-El viaje comienza cargando su documento de Word existente. Este documento se convertirá a PDF y el título se mostrará en la barra de título de la ventana.
+El viaje comienza cargando su documento de Word existente. Este documento se convertirá a un PDF con el título mostrado en la barra de título de la ventana.
 
 ```csharp
 // La ruta al directorio de documentos.
@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Configurando`DisplayDocTitle` a`true`, le indicamos a Aspose.Words que use el título del documento en la barra de título de la ventana del PDF.
+ Al configurar`DisplayDocTitle` a`true`, le indicamos a Aspose.Words que use el título del documento en la barra de título de la ventana del PDF.
 
 ## Paso 3: guarde el documento como PDF
 

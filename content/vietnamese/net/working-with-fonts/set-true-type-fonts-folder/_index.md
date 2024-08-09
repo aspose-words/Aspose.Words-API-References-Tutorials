@@ -2,82 +2,96 @@
 title: Đặt thư mục phông chữ đúng loại
 linktitle: Đặt thư mục phông chữ đúng loại
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để đặt thư mục phông chữ đúng loại khi hiển thị tài liệu bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách đặt thư mục Phông chữ True Type trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước của chúng tôi để đảm bảo quản lý phông chữ nhất quán.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để đặt thư mục phông chữ đúng loại khi hiển thị tài liệu bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Ở cuối hướng dẫn này, bạn sẽ biết cách chỉ định thư mục tùy chỉnh chứa phông chữ True Type để sử dụng khi hiển thị tài liệu của mình bằng Aspose.Words cho .NET.
+chúng ta đang đi sâu vào thế giới quản lý phông chữ hấp dẫn trong tài liệu Word bằng Aspose.Words cho .NET. Nếu bạn từng gặp khó khăn trong việc nhúng đúng phông chữ hoặc đảm bảo rằng tài liệu của mình trông hoàn hảo trên mọi thiết bị thì bạn đã đến đúng nơi. Chúng tôi sẽ hướng dẫn quy trình thiết lập thư mục Phông chữ True Type để hợp lý hóa việc quản lý phông chữ trong tài liệu của bạn, đảm bảo tính nhất quán và rõ ràng trong tài liệu của bạn.
 
-## Bước 1: Xác định thư mục tài liệu
-Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là vị trí bạn muốn lưu tài liệu được hiển thị đã chỉnh sửa của mình. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.
+## Điều kiện tiên quyết
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Trước khi đi vào nội dung chi tiết, hãy đề cập đến một số điều kiện tiên quyết để đảm bảo bạn đã sẵn sàng để thành công:
 
-## Bước 2: Load tài liệu cần render
- Tiếp theo, bạn cần tải tài liệu để kết xuất bằng cách sử dụng`Document` lớp học. Đảm bảo chỉ định đường dẫn tài liệu chính xác.
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt phiên bản mới nhất. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Môi trường phát triển .NET đang hoạt động, chẳng hạn như Visual Studio.
+3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ rất hữu ích.
+4. Tài liệu mẫu: Chuẩn bị sẵn tài liệu Word mà bạn muốn làm việc.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Nhập không gian tên
 
-## Bước 3: Đặt thư mục phông chữ True Type
-Bây giờ bạn có thể chỉ định thư mục chứa các phông chữ đúng loại để sử dụng khi kết xuất bằng cách tạo một phiên bản của`FontSettings` lớp và sử dụng`SetFontsFolder()` phương pháp để thiết lập thư mục phông chữ. Bạn có thể chỉ định một thư mục tùy chỉnh chứa phông chữ True Type của mình. Tham số thứ hai để`SetFontsFolder()` cho biết bạn có muốn tìm kiếm các thư mục con của thư mục đã chỉ định hay không.
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết. Họ giống như đội ngũ hậu trường đảm bảo mọi thứ diễn ra suôn sẻ.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Bước 4: Lưu tài liệu được kết xuất
- Cuối cùng, bạn có thể lưu tài liệu được kết xuất vào một tệp bằng cách sử dụng`Save()` phương pháp của`Document` lớp học. Đảm bảo chỉ định đúng đường dẫn và tên tệp.
+## Bước 1: Tải tài liệu của bạn
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### Mã nguồn mẫu cho Đặt thư mục phông chữ loại đúng bằng Aspose.Words cho .NET 
+ Hãy bắt đầu bằng cách tải tài liệu của bạn. Chúng tôi sẽ sử dụng`Document` lớp từ Aspose.Words để tải tài liệu Word hiện có.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Bước 2: Khởi tạo FontSettings
+
+ Tiếp theo, chúng ta sẽ tạo một thể hiện của`FontSettings`lớp học. Lớp này cho phép chúng ta tùy chỉnh cách xử lý phông chữ trong tài liệu của mình.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Lưu ý rằng cài đặt này sẽ ghi đè mọi nguồn phông chữ mặc định đang được tìm kiếm theo mặc định. Bây giờ chỉ những thư mục này sẽ được tìm kiếm
-// Phông chữ khi hiển thị hoặc nhúng phông chữ. Để thêm nguồn phông chữ bổ sung trong khi vẫn giữ nguồn phông chữ hệ thống, hãy sử dụng cả FontSettings.GetFontSources và
-// Thay vào đó, FontSettings.SetFontSources
+```
+
+## Bước 3: Đặt thư mục phông chữ
+
+Bây giờ đến phần thú vị. Chúng tôi sẽ chỉ định thư mục chứa Phông chữ True Type của chúng tôi. Bước này đảm bảo rằng Aspose.Words sử dụng phông chữ từ thư mục này khi hiển thị hoặc nhúng phông chữ.
+
+```csharp
+// Lưu ý rằng cài đặt này sẽ ghi đè mọi nguồn phông chữ mặc định đang được tìm kiếm theo mặc định.
+// Bây giờ chỉ những thư mục này sẽ được tìm kiếm phông chữ khi hiển thị hoặc nhúng phông chữ.
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## Bước 4: Áp dụng cài đặt phông chữ cho tài liệu
+
+Với cài đặt phông chữ được định cấu hình, giờ đây chúng tôi sẽ áp dụng các cài đặt này cho tài liệu của mình. Bước này rất quan trọng để đảm bảo rằng tài liệu của chúng tôi sử dụng các phông chữ được chỉ định.
+
+```csharp
 // Đặt cài đặt phông chữ
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, chúng ta sẽ lưu tài liệu. Bạn có thể lưu nó ở nhiều định dạng khác nhau, nhưng đối với hướng dẫn này, chúng tôi sẽ lưu nó dưới dạng PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã tìm hiểu cách đặt thư mục phông chữ đúng loại khi hiển thị tài liệu bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này, bạn có thể dễ dàng chỉ định thư mục tùy chỉnh chứa phông chữ True Type để sử dụng khi hiển thị tài liệu của mình. Aspose.Words cung cấp API mạnh mẽ và linh hoạt để Xử lý văn bản với phông chữ trong tài liệu của bạn. Với kiến thức này, bạn có thể kiểm soát và tùy chỉnh các phông chữ được sử dụng khi hiển thị tài liệu theo nhu cầu cụ thể của mình.
 
-### Câu hỏi thường gặp
+Và bạn có nó! Bạn đã thiết lập thành công thư mục Phông chữ True Type cho tài liệu Word của mình bằng Aspose.Words cho .NET. Điều này đảm bảo rằng tài liệu của bạn trông nhất quán và chuyên nghiệp trên tất cả các nền tảng. Quản lý phông chữ là một khía cạnh quan trọng trong việc tạo tài liệu và với Aspose.Words, việc này cực kỳ đơn giản.
 
-#### Câu hỏi: Làm cách nào tôi có thể định cấu hình thư mục phông chữ TrueType trong Aspose.Words?
+## Câu hỏi thường gặp
 
- Trả lời: Để định cấu hình thư mục phông chữ TrueType trong Aspose.Words, bạn có thể sử dụng`SetTrueTypeFontsFolder` phương pháp của`Fonts` lớp chỉ định vị trí của thư mục chứa phông chữ TrueType.
+### Tôi có thể sử dụng nhiều thư mục phông chữ không?
+ Có, bạn có thể sử dụng nhiều thư mục phông chữ bằng cách kết hợp`FontSettings.GetFontSources`Và`FontSettings.SetFontSources`.
 
-#### Hỏi: Những loại phông chữ nào được coi là phông chữ TrueType?
+### Điều gì sẽ xảy ra nếu thư mục phông chữ được chỉ định không tồn tại?
+Nếu thư mục phông chữ được chỉ định không tồn tại, Aspose.Words sẽ không thể định vị phông chữ và thay vào đó, phông chữ hệ thống mặc định sẽ được sử dụng.
 
-Đáp: Phông chữ TrueType là định dạng phông chữ phổ biến. Chúng thường được sử dụng trong các tài liệu Word và có phần mở rộng tệp .ttf hoặc .ttc.
+### Tôi có thể quay lại cài đặt phông chữ mặc định không?
+ Có, bạn có thể hoàn nguyên về cài đặt phông chữ mặc định bằng cách đặt lại`FontSettings` ví dụ.
 
-#### Câu hỏi: Tôi có thể chỉ định nhiều thư mục phông chữ TrueType trong Aspose.Words không?
+### Có thể nhúng phông chữ vào tài liệu?
+Có, Aspose.Words cho phép bạn nhúng phông chữ vào tài liệu để đảm bảo tính nhất quán trên các thiết bị khác nhau.
 
-Trả lời: Có, bạn có thể chỉ định nhiều thư mục phông chữ TrueType trong Aspose.Words bằng cách sử dụng`SetTrueTypeFontsFolder` phương pháp của`Fonts` class với danh sách các vị trí thư mục.
-
-#### Câu hỏi: Làm cách nào tôi có thể kiểm tra thư mục phông chữ TrueType được định cấu hình trong Aspose.Words?
-
- Trả lời: Để kiểm tra thư mục Phông chữ TrueType đã định cấu hình trong Aspose.Words, bạn có thể sử dụng`GetTrueTypeFontsFolder` phương pháp của`Fonts` class để lấy vị trí của thư mục Phông chữ TrueType được định cấu hình.
-
-#### Hỏi: Tại sao việc định cấu hình thư mục phông chữ TrueType trong Aspose.Words lại quan trọng?
-
-Trả lời: Việc thiết lập thư mục phông chữ TrueType trong Aspose.Words rất quan trọng vì nó giúp Aspose.Words xác định vị trí các phông chữ cần thiết khi xử lý tài liệu Word. Điều này đảm bảo tính nhất quán trong định dạng và hình thức tài liệu, thậm chí trên các hệ thống khác nhau.
+### Tôi có thể lưu tài liệu của mình ở định dạng nào?
+Aspose.Words hỗ trợ nhiều định dạng khác nhau bao gồm PDF, DOCX, HTML, v.v.

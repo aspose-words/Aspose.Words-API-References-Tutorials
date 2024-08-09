@@ -9,7 +9,7 @@ url: /sv/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 ## Introduktion
 
-Är du redo att dyka in i dokumenthanteringens värld med Aspose.Words för .NET? Oavsett om du är en utvecklare som vill automatisera dokumentuppgifter eller bara någon som är nyfiken på att hantera Word-filer programmatiskt, är du på rätt plats. Idag ska vi utforska hur man visar och döljer bokmärkt innehåll i ett Word-dokument med Aspose.Words för .NET. Den här steg-för-steg-guiden gör dig till ett proffs på att kontrollera innehållssynlighet baserat på bokmärken. Låt oss börja!
+Är du redo att dyka in i dokumenthanteringens värld med Aspose.Words för .NET? Oavsett om du är en utvecklare som vill automatisera dokumentuppgifter eller bara någon som är nyfiken på att hantera Word-filer programmatiskt, är du på rätt plats. Idag ska vi utforska hur man visar och döljer bokmärkt innehåll i ett Word-dokument med Aspose.Words för .NET. Den här steg-för-steg-guiden gör dig till ett proffs på att kontrollera innehållssynlighet baserat på bokmärken. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -48,7 +48,7 @@ Du måste lägga till Aspose.Words för .NET till ditt projekt. Du kan göra det
 2. Sök efter "Aspose.Words".
 3. Installera paketet.
 
-Bra! Nu när vårt projekt är satt upp, låt oss gå vidare till att ladda vårt dokument.
+Stor! Nu när vårt projekt är satt upp, låt oss gå vidare till att ladda vårt dokument.
 
 ## Steg 2: Ladda dokumentet
 
@@ -90,7 +90,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool is
 
 -  Bokmärkshämtning:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` hämtar bokmärket.
 - Nodgenomgång: Vi korsar noderna inom bokmärket.
--  Visibility Toggle: Om noden är en`Run` (en sammanhängande serie text), ställer vi in dess`Hidden` fast egendom.
+-  Visibility Toggle: Om noden är en`Run` (en sammanhängande serie text), ställer vi in dess`Hidden` egendom.
 
 ## Steg 4: Tillämpa metoden
 

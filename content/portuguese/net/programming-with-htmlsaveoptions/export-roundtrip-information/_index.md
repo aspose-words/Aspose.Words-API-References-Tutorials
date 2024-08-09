@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Etapa 2: carregue o documento do Word
 
-Em seguida, carregue o documento do Word que deseja converter. Para este tutorial, usaremos um documento chamado "Rendering.docx".
+Em seguida, carregue o documento Word que deseja converter. Para este tutorial, usaremos um documento chamado "Rendering.docx".
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

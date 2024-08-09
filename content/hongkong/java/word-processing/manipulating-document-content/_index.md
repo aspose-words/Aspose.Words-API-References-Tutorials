@@ -14,7 +14,7 @@ url: /zh-hant/java/word-processing/manipulating-document-content/
 
 ## Aspose.Words for Java 入門
 
-在我們深入探討操作文件內容的細節之前，讓我們確保您擁有入門所需的工具和知識。按著這些次序：
+在我們深入探討操作文件內容的細節之前，讓我們確保您擁有入門所需的工具和知識。請依照下列步驟操作：
 
 1. 安裝和設定
    

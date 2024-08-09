@@ -106,7 +106,7 @@ public void cloneSection() throws Exception {
 
  نعم، يمكنك الوصول إلى النسخة التجريبية المجانية من Aspose.Words for Java[هنا](https://releases.aspose.com/).
 
-### س3: كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words لـ Java؟
+### س3: كيف يمكنني الحصول على ترخيص مؤقت لبرنامج Aspose.Words لـ Java؟
 
  يمكنك الحصول على ترخيص مؤقت لـ Aspose.Words for Java[هنا](https://purchase.aspose.com/temporary-license/).
 

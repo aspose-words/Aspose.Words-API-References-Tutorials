@@ -52,7 +52,7 @@ using Aspose.Words.Fields;
 
 ### Инициализировать документ
 
-1.  В вашей`Program.cs` файл, начните с создания нового документа:
+1.  В твоем`Program.cs` файл, начните с создания нового документа:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

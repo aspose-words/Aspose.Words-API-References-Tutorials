@@ -85,7 +85,7 @@ Bạn sẽ cần lặp qua tất cả SDT trong tài liệu và áp dụng thay 
 
 ### Có thể đặt các thuộc tính khác của SDT ngoài màu sắc không?
 
- Vâng`StructuredDocumentTag` lớp có nhiều thuộc tính khác nhau mà bạn có thể đặt, bao gồm kích thước phông chữ, kiểu phông chữ, v.v. Tham khảo tài liệu Aspose.Words để biết thêm chi tiết.
+ Vâng, cái`StructuredDocumentTag` lớp có nhiều thuộc tính khác nhau mà bạn có thể đặt, bao gồm kích thước phông chữ, kiểu phông chữ, v.v. Tham khảo tài liệu Aspose.Words để biết thêm chi tiết.
 
 ### Tôi có thể thêm sự kiện vào SDT, chẳng hạn như sự kiện nhấp chuột không?
 

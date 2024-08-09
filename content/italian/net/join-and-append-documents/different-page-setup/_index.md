@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/different-page-setup/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Pronto a tuffarti nell'affascinante mondo della manipolazione dei documenti con Aspose.Words per .NET? Oggi affronteremo qualcosa di piuttosto interessante: impostare diverse impostazioni di pagina quando si combinano documenti Word. Che tu stia unendo report, creando un romanzo o semplicemente armeggiando con documenti per divertimento, questa guida ti guiderà passo dopo passo. Iniziamo!
 
@@ -119,7 +119,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 
 ## Conclusione
 
-il gioco è fatto! Hai appena combinato due documenti Word con diverse impostazioni di pagina utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti a livello di codice. Che tu stia creando report complessi, assemblando libri o gestendo documenti multi-sezione, Aspose.Words ti copre le spalle.
+Ed ecco qua! Hai appena combinato due documenti Word con diverse impostazioni di pagina utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti a livello di codice. Che tu stia creando report complessi, assemblando libri o gestendo documenti multi-sezione, Aspose.Words ti copre le spalle.
 
 ## Domande frequenti
 
@@ -136,4 +136,4 @@ Sì, Aspose.Words per .NET è completamente compatibile con .NET Core.
  Sì, il`ImportFormatMode.KeepSourceFormatting` L'opzione garantisce che gli stili del documento di origine vengano preservati.
 
 ### Dove posso ottenere ulteriore aiuto con Aspose.Words?
- Dai un'occhiata a[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o visitare il loro[Forum di assistenza](https://forum.aspose.com/c/words/8) per ulteriore assistenza.
+ Dai un'occhiata a[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o visitare il loro[forum di supporto](https://forum.aspose.com/c/words/8) per ulteriore assistenza.

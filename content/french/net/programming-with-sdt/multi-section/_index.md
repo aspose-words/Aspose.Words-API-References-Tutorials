@@ -80,7 +80,7 @@ Cette boucle imprime le titre de chaque balise de document structuré sur la con
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez maintenant appris à utiliser des balises de documents structurés à plusieurs sections à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez manipuler efficacement les balises de documents structurés dans vos documents Word. Que vous automatisiez des flux de travail documentaires ou gériez des documents complexes, ces compétences amélioreront votre capacité à gérer du contenu structuré de manière dynamique.
+Félicitations! Vous avez maintenant appris à utiliser des balises de documents structurés à plusieurs sections à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez manipuler efficacement les balises de documents structurés dans vos documents Word. Que vous automatisiez des flux de travail documentaires ou gériez des documents complexes, ces compétences amélioreront votre capacité à gérer du contenu structuré de manière dynamique.
 
  N'hésitez pas à expérimenter le code et à l'adapter à vos besoins spécifiques. Pour des fonctionnalités plus avancées et une documentation détaillée, consultez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/).
 

@@ -71,7 +71,7 @@ Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardChars
 doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.DOCX);
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το άρθρο, μάθαμε πώς να φορτώνουμε και να αποθηκεύουμε έγγραφα HTML χρησιμοποιώντας το Aspose.Words για Java. Αυτή η βιβλιοθήκη παρέχει έναν βολικό τρόπο εργασίας με διάφορες μορφές εγγράφων, καθιστώντας την ένα πολύτιμο εργαλείο για τη διαχείριση εγγράφων σε εφαρμογές Java.
 

@@ -15,7 +15,7 @@ Pernahkah Anda kesulitan membuat dokumen yang disempurnakan dengan bagian-bagian
 
 Sebelum memulai perjalanan ini, pastikan Anda memiliki hal-hal berikut:
 
-1.  Aspose.Words untuk .NET: Unduh perpustakaan dari situs web resmi[Tautan unduhan](https://releases.aspose.com/words/net/) . Anda dapat menjelajahi uji coba gratis[Tautan uji coba gratis](https://releases.aspose.com/) atau membeli lisensi[membeli tautan](https://purchase.aspose.com/buy) berdasarkan kebutuhan Anda.
+1.  Aspose.Words untuk .NET: Unduh perpustakaan dari situs web resmi[Tautan unduhan](https://releases.aspose.com/words/net/) . Anda dapat menjelajahi uji coba gratis[Tautan uji coba gratis](https://releases.aspose.com/) atau membeli lisensi[Beli tautan](https://purchase.aspose.com/buy) berdasarkan kebutuhan Anda.
 2. Lingkungan pengembangan AC#: Visual Studio atau lingkungan apa pun yang mendukung pengembangan .NET akan bekerja dengan sempurna.
 3. Contoh dokumen: Temukan dokumen Word yang ingin Anda coba.
 
@@ -37,7 +37,7 @@ Sekarang, mari selami langkah-langkah praktis dalam memulai ulang penomoran hala
 
  Tentukan variabel string`dataDir` untuk menyimpan jalur ke direktori dokumen Anda. Ganti "DIREKTORI DOKUMEN ANDA" dengan lokasi sebenarnya.
 
- Buat dua`Document` objek menggunakan`Aspose.Words.Document`konstruktor. Yang pertama (`srcDoc`) akan menyimpan dokumen sumber yang berisi konten yang akan ditambahkan. Kedua (`dstDoc`) mewakili dokumen tujuan tempat kami akan mengintegrasikan konten sumber dengan penomoran halaman yang dimulai ulang.
+ Buat dua`Document` objek menggunakan`Aspose.Words.Document`konstruktor. Yang pertama (`srcDoc`) akan menyimpan dokumen sumber yang berisi konten yang akan ditambahkan. Yang kedua (`dstDoc`) mewakili dokumen tujuan tempat kami akan mengintegrasikan konten sumber dengan penomoran halaman yang dimulai ulang.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Ganti dengan direktori Anda yang sebenarnya
@@ -51,7 +51,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
  Memanfaatkan`PageSetup` properti bagian untuk mengonfigurasi perilaku tata letaknya.
 
- Mengatur`SectionStart` milik`PageSetup` ke`SectionStart.NewPage`. Hal ini memastikan halaman baru dibuat sebelum konten sumber ditambahkan ke dokumen tujuan.
+ Atur`SectionStart` milik`PageSetup` ke`SectionStart.NewPage`. Hal ini memastikan halaman baru dibuat sebelum konten sumber ditambahkan ke dokumen tujuan.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -91,7 +91,7 @@ Kesimpulannya, menguasai hentian halaman dan penomoran di Aspose.Words untuk .NE
 
 ## FAQ
 
-### Bisakah saya memulai ulang penomoran halaman di tengah bagian?
+### Bisakah saya memulai ulang penomoran halaman di tengah suatu bagian?
 
  Sayangnya, Aspose.Words untuk .NET tidak secara langsung mendukung memulai ulang penomoran halaman dalam satu bagian. Namun, Anda dapat mencapai efek serupa dengan membuat bagian baru pada titik dan pengaturan yang diinginkan`RestartPageNumbering` ke`true` untuk bagian itu.
 

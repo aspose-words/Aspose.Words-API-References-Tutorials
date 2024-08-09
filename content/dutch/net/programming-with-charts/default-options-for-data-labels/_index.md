@@ -9,7 +9,7 @@ url: /nl/net/programming-with-charts/default-options-for-data-labels/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zin om in de wereld van documentautomatisering te duiken? Vandaag gaan we onderzoeken hoe we Aspose.Words voor .NET kunnen gebruiken om programmatisch verbluffende documenten te maken. Aspose.Words is een krachtige bibliotheek waarmee u gemakkelijk Word-documenten kunt manipuleren, en in deze zelfstudie concentreren we ons op het instellen van standaardopties voor gegevenslabels in een diagram. Of u nu een doorgewinterde ontwikkelaar of een nieuweling bent, deze handleiding begeleidt u bij elke stap, zodat u in een mum van tijd aan de slag kunt.
+Hé daar! Heeft u zin om in de wereld van documentautomatisering te duiken? Vandaag gaan we onderzoeken hoe we Aspose.Words voor .NET kunnen gebruiken om programmatisch verbluffende documenten te maken. Aspose.Words is een krachtige bibliotheek waarmee u gemakkelijk Word-documenten kunt manipuleren, en in deze zelfstudie concentreren we ons op het instellen van standaardopties voor gegevenslabels in een diagram. Of u nu een doorgewinterde ontwikkelaar of een nieuweling bent, deze handleiding begeleidt u bij elke stap, zodat u in een mum van tijd aan de slag kunt.
 
 ## Vereisten
 
@@ -107,7 +107,7 @@ labels.Separator = " - ";
 
  Hier hebben we toegang tot de`DataLabels`eigendom van onze serie om het uiterlijk en de informatie die op elk gegevenslabel wordt weergegeven, aan te passen. We hebben ervoor gekozen om zowel het percentage als de waarde weer te geven, aanhaallijnen te verbergen en een aangepast scheidingsteken in te stellen.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte slaan we ons document op in de opgegeven map. Deze stap zorgt ervoor dat al onze wijzigingen naar een bestand worden geschreven.
 
@@ -135,7 +135,7 @@ Je kunt Aspose.Words gratis gebruiken met een[tijdelijke licentie](https://purch
  U kunt ondersteuning krijgen via de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
 ### Kan ik andere typen diagrammen toevoegen?
- Ja, Aspose.Words ondersteunt verschillende diagramtypen, zoals staaf-, lijn- en kolomdiagrammen. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Ja, Aspose.Words ondersteunt verschillende diagramtypen, zoals staaf-, lijn- en kolomdiagrammen. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Is Aspose.Words compatibel met .NET Core?
  Ja, Aspose.Words is compatibel met .NET Core. Meer informatie vindt u in de[documentatie](https://reference.aspose.com/words/net/).

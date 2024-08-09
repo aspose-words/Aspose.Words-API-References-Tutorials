@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Einen Tisch starten
 
- Mit dem`DocumentBuilder` Instanz können Sie mit der Erstellung einer Tabelle beginnen. Dies geschieht durch den Aufruf des`StartTable` Methode.
+ Mit dem`DocumentBuilder` Instanz können Sie mit der Erstellung einer Tabelle beginnen. Dies geschieht durch den Aufruf des`StartTable` Verfahren.
 
 ```csharp
 // Beginnen Sie mit der Tabelle

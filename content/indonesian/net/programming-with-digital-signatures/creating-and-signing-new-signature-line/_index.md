@@ -14,7 +14,7 @@ Hai! Jadi, Anda memiliki dokumen Word dan Anda perlu menambahkan baris tanda tan
 ## Prasyarat
 
 Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
-1.  Aspose.Words untuk .NET - Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET - Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan .NET - Visual Studio sangat disarankan.
 3. Dokumen untuk Ditandatangani - Buat dokumen Word sederhana atau gunakan yang sudah ada.
 4.  File Sertifikat - Ini diperlukan untuk tanda tangan digital. Anda dapat menggunakan a`.pfx` mengajukan.
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Memasukkan Garis Tanda Tangan
 
- Ini adalah dimana keajaiban terjadi. Kami memasukkan baris tanda tangan ke dalam dokumen kami menggunakan`DocumentBuilder` kelas.
+ Di sinilah keajaiban terjadi. Kami memasukkan baris tanda tangan ke dalam dokumen kami menggunakan`DocumentBuilder` kelas.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
@@ -105,7 +105,7 @@ Dan itu dia! Dengan langkah-langkah ini, Anda telah berhasil membuat dokumen Wor
 Ya, Anda dapat menggunakan berbagai format gambar seperti PNG, JPG, BMP, dll.
 
 ###  Apakah perlu menggunakan a`.pfx` file for the certificate?
- Iya`.pfx` file adalah format umum untuk menyimpan informasi kriptografi termasuk sertifikat dan kunci pribadi.
+ Ya, sebuah`.pfx` file adalah format umum untuk menyimpan informasi kriptografi termasuk sertifikat dan kunci pribadi.
 
 ### Bisakah saya menambahkan beberapa baris tanda tangan dalam satu dokumen?
 Sangat! Anda dapat menyisipkan beberapa baris tanda tangan dengan mengulangi langkah penyisipan untuk setiap tanda tangan.

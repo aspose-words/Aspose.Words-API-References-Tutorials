@@ -65,7 +65,7 @@ builder.write("Aspose.Words Header/Footer Creation Primer - Title Page.");
 
 ### 6.2. Başlıklara Resim Ekleme
 
- Başlıklara resim eklemek için şunu kullanabilirsiniz:`insertImage` yöntem. İşte bir örnek:
+ Başlıklara resim eklemek için şunu kullanabilirsiniz:`insertImage` Yöntem. İşte bir örnek:
 
 ```java
 // Başlığa resim ekleme
@@ -119,7 +119,7 @@ Gerekirse belirli bölümlerin yönünü yatay moda değiştirebilirsiniz.
 
 ## 13. Belgenizi Kaydetmek
 
-Belgenizi oluşturup özelleştirdikten sonra, onu kullanarak kaydetmeyi unutmayın.`doc.save()` yöntem.
+Belgenizi oluşturup özelleştirdikten sonra, onu kullanarak kaydetmeyi unutmayın.`doc.save()` Yöntem.
 
 ## Kaynak Kodunu Tamamlayın
 ```java

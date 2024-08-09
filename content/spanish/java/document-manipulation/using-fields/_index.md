@@ -95,7 +95,7 @@ Aspose.Words para Java proporciona potentes funciones para trabajar con campos e
 
 ### ¿Puedo realizar una combinación de correo con Aspose.Words para Java?
 
-Sí, puede realizar la combinación de correspondencia en Aspose.Words para Java. Puede crear plantillas de documentos con campos de combinación de correspondencia y luego completarlas con datos de diversas fuentes. Consulte los ejemplos de código proporcionados para obtener detalles sobre cómo realizar la combinación de correspondencia.
+Sí, puede realizar la combinación de correo en Aspose.Words para Java. Puede crear plantillas de documentos con campos de combinación de correspondencia y luego completarlas con datos de diversas fuentes. Consulte los ejemplos de código proporcionados para obtener detalles sobre cómo realizar la combinación de correspondencia.
 
 ### ¿Cómo puedo insertar imágenes en un documento usando Aspose.Words para Java?
 

@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/document-protection/allow-only-form-fields-protect/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Potřebovali jste někdy chránit konkrétní části dokumentu aplikace Word a ponechat jiné části upravitelné? Aspose.Words pro .NET to velmi usnadňuje. V tomto tutoriálu se ponoříme do toho, jak povolit ochranu pouze polí formuláře v dokumentu aplikace Word. Na konci této příručky budete mít skálopevné znalosti o ochraně dokumentů pomocí Aspose.Words pro .NET. Připraveni? Pojďme do toho!
+Ahoj! Potřebovali jste někdy chránit konkrétní části dokumentu aplikace Word a ponechat jiné části upravitelné? Aspose.Words pro .NET to velmi usnadňuje. V tomto tutoriálu se ponoříme do toho, jak povolit ochranu pouze polí formuláře v dokumentu aplikace Word. Na konci této příručky budete mít skálopevné znalosti o ochraně dokumentů pomocí Aspose.Words pro .NET. Připraveni? Pojďme do toho!
 
 ## Předpoklady
 
 Než se ponoříme do kódovací části, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Jakákoli nejnovější verze bude fungovat dobře.
 3. Základní znalost C#: Pochopení základů vám pomůže postupovat společně s výukovým programem.
 
@@ -86,10 +86,10 @@ tady to máte! Právě jste se naučili, jak chránit dokument aplikace Word tak
 ## FAQ
 
 ###	 Jak mohu odstranit ochranu z dokumentu?  
- K odstranění ochrany použijte`doc.Unprotect("password")` metoda, kde "heslo" je heslo používané k ochraně dokumentu.
+ Pro odstranění ochrany použijte`doc.Unprotect("password")` metoda, kde "heslo" je heslo používané k ochraně dokumentu.
 
 ###	 Mohu použít různé typy ochrany pomocí Aspose.Words pro .NET?  
- Ano, Aspose.Words podporuje různé typy ochrany jako např`ReadOnly`, `NoProtection` , a`AllowOnlyRevisions`.
+ Ano, Aspose.Words podporuje různé typy ochrany jako např`ReadOnly`, `NoProtection` a`AllowOnlyRevisions`.
 
 ###	 Je možné použít jiné heslo pro různé sekce?  
 Ne, ochrana na úrovni dokumentu v Aspose.Words se vztahuje na celý dokument. Různým sekcím nelze přiřadit různá hesla.

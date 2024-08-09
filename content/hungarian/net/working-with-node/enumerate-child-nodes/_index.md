@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/working-with-node/enumerate-child-nodes/
 ---
+## Bevezetés
 
 A dokumentumok programozott kezelése gyerekjáték lehet a megfelelő eszközökkel. Az Aspose.Words for .NET egy olyan hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén kezeljék a Word dokumentumokat. Ma egy Word-dokumentumban lévő gyermekcsomópontok felsorolásának folyamatán fogunk végigmenni az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató az előfeltételektől a gyakorlati példákig mindent lefed, biztosítva, hogy alaposan megértse a folyamatot.
 
@@ -88,17 +89,17 @@ Az utódcsomópontok felsorolása egy Word-dokumentumban az Aspose.Words for .NE
 
 ## GYIK
 
-### 1. Milyen típusú csomópontokat tartalmazhat egy bekezdés?
+### Milyen típusú csomópontokat tartalmazhat egy bekezdés?
 Egy bekezdés tartalmazhat csomópontokat, például futásokat, alakzatokat, megjegyzéseket és egyéb soron belüli elemeket.
 
-### 2. Hogyan tölthetek be egy meglévő Word dokumentumot?
+### Hogyan tölthetek be egy meglévő Word dokumentumot?
  Meglévő dokumentumot tölthet be a segítségével`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. A Futtatáson kívül más csomóponttípusokat is kezelhetek?
+### A Futtatáson kívül más csomóponttípusokat is kezelhetek?
  Igen, különféle csomóponttípusokat, például alakzatokat, megjegyzéseket és egyebeket módosíthat azok ellenőrzésével`NodeType`.
 
-### 4. Szükségem van licencre az Aspose.Words for .NET használatához?
-Kezdheti egy ingyenes próbaverzióval, vagy szerezhet ideiglenes licencet[itt](https://purchase.aspose.com/temporary-license/).
+### Szükségem van licencre az Aspose.Words for .NET használatához?
+ Kezdheti egy ingyenes próbaverzióval, vagy szerezhet ideiglenes licencet[itt](https://purchase.aspose.com/temporary-license/).
 
-### 5. Hol találok további példákat és dokumentációt?
- Meglátogatni a[Aspose.Words .NET API dokumentációhoz](https://reference.aspose.com/words/net/) további példákért és részletes dokumentációért.
+### Hol találok további példákat és dokumentációt?
+ Látogassa meg a[Aspose.Words .NET API dokumentációhoz](https://reference.aspose.com/words/net/)további példákért és részletes dokumentációért.

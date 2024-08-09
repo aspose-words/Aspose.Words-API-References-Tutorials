@@ -9,13 +9,13 @@ url: /hu/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## Bevezetés
 
-Halihó! Szóval, Ön Word-dokumentumokkal dolgozik, és szüksége van egy módra, amellyel gyorsan a dokumentum elejére vagy végére ugorhat programozottan, mi? Nos, jó helyen jársz! Ebben az útmutatóban azt mutatjuk be, hogyan vihetjük a kurzort egy Word-dokumentum elejére vagy végére az Aspose.Words for .NET használatával. Bízzon bennem, ennek végére profiként fog navigálni a dokumentumok között. Kezdjük el!
+Szia! Szóval, Ön Word-dokumentumokkal dolgozik, és szüksége van egy módra, amellyel gyorsan a dokumentum elejére vagy végére ugorhat programozottan, mi? Nos, jó helyen jársz! Ebben az útmutatóban azt mutatjuk be, hogyan vihetjük a kurzort egy Word-dokumentum elejére vagy végére az Aspose.Words for .NET használatával. Bízzon bennem, ennek végére profiként fog navigálni a dokumentumok között. Kezdjük is!
 
 ## Előfeltételek
 
 Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel megvan, amire szüksége van:
 
-1.  Aspose.Words for .NET: Ez az a varázseszköz, amelyet használni fogunk. tudsz[töltse le itt](https://releases.aspose.com/words/net/) vagy megragad a[ingyenes próbaverzió](https://releases.aspose.com/).
+1.  Aspose.Words for .NET: Ez az a varázseszköz, amelyet használni fogunk. Tudod[töltse le itt](https://releases.aspose.com/words/net/) vagy megragad a[ingyenes próbaverzió](https://releases.aspose.com/).
 2. .NET fejlesztői környezet: A Visual Studio jó választás.
 3. Alapvető C# ismerete: Ne aggódj, nem kell varázslónak lenned, de egy kis ismerkedés sokat segít.
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Itt egy példányt hozunk létre`Document`és`DocumentBuilder` . Gondol`Document` mint az üres Word-dokumentum és`DocumentBuilder` mint a tollad.
+ Itt egy példányt hozunk létre`Document`és`DocumentBuilder` . Gondolj bele`Document` mint az üres Word-dokumentum és`DocumentBuilder` mint a tollad.
 
 ## 2. lépés: Lépjen a Dokumentum indítása elemre
 
@@ -52,7 +52,7 @@ builder.MoveToDocumentStart();
 Console.WriteLine("\nThis is the beginning of the document.");
 ```
 
- Val vel`MoveToDocumentStart()`, akkor azt mondja a digitális tollnak, hogy helyezkedjen el a dokumentum legtetején. Egyszerű, igaz?
+ Vel`MoveToDocumentStart()`, akkor azt mondja a digitális tollnak, hogy helyezkedjen el a dokumentum legtetején. Egyszerű, igaz?
 
 ## 3. lépés: Lépjen a dokumentum végére
 
@@ -84,4 +84,4 @@ Teljesen! Míg ez az útmutató C#-t használ, az Aspose.Words for .NET bármely
 Igen, az Aspose.Words for .NET támogatja a .NET-keretrendszert és a .NET Core-t is.
 
 ### Hol találok további oktatóanyagokat az Aspose.Words for .NET-hez?  
-Megnézheti a[dokumentáció](https://reference.aspose.com/words/net/) vagy látogassa meg őket[támogatói fórum](https://forum.aspose.com/c/words/8) további segítségért.
+Megnézheti a[dokumentáció](https://reference.aspose.com/words/net/) vagy látogassa meg őket[támogatási fórum](https://forum.aspose.com/c/words/8) további segítségért.

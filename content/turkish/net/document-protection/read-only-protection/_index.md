@@ -88,7 +88,7 @@ doc.Protect(ProtectionType.ReadOnly);
 Açıklama:
 
 - `Protect` belgede yöntem çağrılır`ProtectionType.ReadOnly` argüman olarak.
-- Bu yöntem, salt okunur korumayı uygulayarak belgede parola olmadan değişiklik yapılmasını engeller.
+- Bu yöntem, salt okunur korumayı uygulayarak belgede parola olmadan değişiklik yapılmasını önler.
 
 ## Adım 5: Belgeyi Kaydedin
 
@@ -106,7 +106,7 @@ Açıklama:
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak başarıyla salt okunur korumalı bir Word belgesi oluşturdunuz. Bu özellik, belgenizin içeriğinin bozulmadan ve değiştirilmeden kalmasını sağlayarak ekstra bir güvenlik katmanı sağlar. İster hassas bilgileri ister yasal belgeleri paylaşıyor olun, salt okunur koruma, belge yönetimi cephanenizde bulunması gereken bir araçtır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak başarıyla salt okunur korumalı bir Word belgesi oluşturdunuz. Bu özellik, belgenizin içeriğinin bozulmadan ve değiştirilmeden kalmasını sağlayarak ekstra bir güvenlik katmanı sağlar. İster hassas bilgileri ister yasal belgeleri paylaşıyor olun, salt okunur koruma, belge yönetimi cephanenizde bulunması gereken bir araçtır.
 
 ## SSS'ler
 

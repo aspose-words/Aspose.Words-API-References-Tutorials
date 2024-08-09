@@ -98,4 +98,4 @@ Kopf- und Fußzeilen des Quelldokuments werden möglicherweise im Zieldokument �
 Ja, mit Aspose.Words für .NET können Sie Kopf- und Fußzeilen entfernen und gleichzeitig die restliche Formatierung des Dokuments beibehalten.
 
 ### Wo finde ich weitere Ressourcen und Support für Aspose.Words für .NET?
- Besuche den[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte API-Referenzen und Beispiele.
+ Besuchen Sie die[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte API-Referenzen und Beispiele.

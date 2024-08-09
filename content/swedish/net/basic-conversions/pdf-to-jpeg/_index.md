@@ -33,7 +33,7 @@ Okej, låt oss komma till det roliga! Vi kommer att dela upp processen i steg so
 
 ## Steg 1: Konfigurera ditt projekt
 
-Innan du dyker in i koden måste du ställa in ditt projekt. Här är hur:
+Innan du dyker in i koden måste du ställa in ditt projekt. Så här gör du:
 
 1. Öppna Visual Studio: Börja med att starta Visual Studio och skapa ett nytt C#-projekt.
 2.  Installera Aspose.Words: Använd NuGet Package Manager för att installera Aspose.Words för .NET. Du kan hitta den[här](https://releases.aspose.com/words/net/).
@@ -82,7 +82,7 @@ Och där har du det! Att konvertera en PDF till en JPEG med Aspose.Words för .N
 Absolut! Du kan gå igenom en katalog med PDF-filer och konvertera var och en till en JPEG.
 
 ### Stöder Aspose.Words andra bildformat?
-Ja det gör det! Du kan spara dina PDF-filer som PNG, BMP och mer.
+Ja, det gör det! Du kan spara dina PDF-filer som PNG, BMP och mer.
 
 ### Är Aspose.Words kompatibelt med .NET Core?
 Det är det verkligen. Aspose.Words stöder både .NET Framework och .NET Core.

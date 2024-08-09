@@ -9,7 +9,7 @@ url: /pl/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 ## Wstęp
 
-Czy zastanawiałeś się kiedyś nad dziwnymi, niewidocznymi znakami kontrolnymi w dokumentach programu Word? Są jak małe, ukryte gremliny, które mogą zepsuć formatowanie i funkcjonalność. Na szczęście Aspose.Words dla .NET zapewnia przydatną funkcję, która pozwala zachować nienaruszone starsze znaki kontrolne podczas zapisywania dokumentów. W tym samouczku szczegółowo omówimy, jak zarządzać tymi znakami kontrolnymi za pomocą Aspose.Words dla .NET. Omówimy to krok po kroku, upewniając się, że po drodze zrozumiesz każdy szczegół. Gotowy żeby zacząć? Zanurzmy się!
+Czy zastanawiałeś się kiedyś nad dziwnymi, niewidocznymi znakami kontrolnymi w dokumentach programu Word? Są jak małe, ukryte gremliny, które mogą zepsuć formatowanie i funkcjonalność. Na szczęście Aspose.Words dla .NET zapewnia przydatną funkcję, która pozwala zachować nienaruszone starsze znaki kontrolne podczas zapisywania dokumentów. W tym samouczku szczegółowo omówimy, jak zarządzać tymi znakami kontrolnymi za pomocą Aspose.Words dla .NET. Omówimy to krok po kroku, upewniając się, że po drodze zrozumiesz każdy szczegół. Gotowy, aby zacząć? Zanurzmy się!
 
 ## Warunki wstępne
 

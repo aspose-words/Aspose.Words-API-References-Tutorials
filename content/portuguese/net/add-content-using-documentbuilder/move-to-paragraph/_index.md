@@ -20,7 +20,7 @@ Antes de entrarmos no âmago da questão, vamos ter certeza de que você tem tud
 3. .NET Framework: certifique-se de ter o .NET Framework instalado.
 4. Um documento do Word: você precisará de um documento do Word de amostra para trabalhar.
 
-Tem tudo? Ótimo! Vamos continuar.
+Tem tudo? Ótimo! Vamos em frente.
 
 ## Importar namespaces
 

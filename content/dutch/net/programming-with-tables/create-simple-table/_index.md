@@ -15,7 +15,7 @@ Programmatisch werken met documenten kan een beetje lastig zijn als je er nieuw 
 
 Voordat we in de code duiken, zorgen we ervoor dat u alles heeft wat u nodig heeft om aan de slag te gaan:
 
-1.  Aspose.Words voor .NET: U moet Aspose.Words voor .NET downloaden en installeren. Je kan het vinden[hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: U moet Aspose.Words voor .NET downloaden en installeren. Je kunt het vinden[hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: een werkende installatie van Visual Studio of een andere IDE die .NET-ontwikkeling ondersteunt.
 3. Basiskennis van C#: Bekendheid met programmeren in C# zal nuttig zijn, aangezien we het voor ons voorbeeld zullen gebruiken.
 
@@ -49,7 +49,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 3: Begin met het bouwen van de tafel
 
- Om te beginnen met het bouwen van onze tafel, bellen we de`StartTable` methode op de`DocumentBuilder`voorbeeld. Deze methode initialiseert een nieuwe tabel in het document.
+ Om te beginnen met het bouwen van onze tafel, bellen we de`StartTable` methode op de`DocumentBuilder`aanleg. Deze methode initialiseert een nieuwe tabel in het document.
 
 ```csharp
 builder.StartTable();
@@ -127,7 +127,7 @@ Ja, Aspose.Words voor .NET ondersteunt verschillende programmeertalen die op het
  Ja, u kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).
 
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
- U kunt ondersteuning krijgen door naar Aspose.Words te gaan[Helpforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen door naar Aspose.Words te gaan[ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
 ### Waar kan ik meer gedetailleerde documentatie vinden voor Aspose.Words voor .NET?
  Gedetailleerde documentatie is te vinden[hier](https://reference.aspose.com/words/net/).

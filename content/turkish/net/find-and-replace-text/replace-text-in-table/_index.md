@@ -85,7 +85,7 @@ Bu, güncellenen belgeyi yeni metin değişimleriyle birlikte kaydeder.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tablodaki metni nasıl değiştireceğinizi öğrendiniz. Bu, özellikle büyük belgelerle veya birden fazla dosyayla uğraşırken tonlarca zaman ve emekten tasarruf etmenizi sağlayacak güçlü bir araçtır. Bir deneyin ve belge işleme görevlerinizi nasıl kolaylaştırabileceğini görün. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tablodaki metni nasıl değiştireceğinizi öğrendiniz. Bu, özellikle büyük belgelerle veya birden fazla dosyayla uğraşırken tonlarca zaman ve emekten tasarruf etmenizi sağlayacak güçlü bir araçtır. Bir deneyin ve belge işleme görevlerinizi nasıl kolaylaştırabileceğini görün. Mutlu kodlama!
 
 ## SSS'ler
 

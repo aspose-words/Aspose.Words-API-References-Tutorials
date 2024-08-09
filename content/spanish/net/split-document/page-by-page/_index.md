@@ -76,5 +76,5 @@ El método que se muestra es específico de los documentos de Word. Para archivo
 ### ¿Cómo manejo documentos con diferentes orientaciones de página?
 Aspose.Words conserva el formato y la orientación originales de cada página durante la extracción.
 
-### ¿Puedo automatizar este proceso para múltiples documentos?
+### ¿Puedo automatizar este proceso para varios documentos?
 Sí, puede crear una secuencia de comandos para automatizar el proceso de división de varios documentos en un directorio.

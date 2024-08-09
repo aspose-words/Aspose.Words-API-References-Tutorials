@@ -15,7 +15,7 @@ url: /es/net/clone-and-combine-documents/insert-document-at-mail-merge/
 
 Antes de comenzar, asegúrese de tener lo siguiente:
 
-1.  Aspose.Words para .NET: puedes[descarga la última versión aquí](https://releases.aspose.com/words/net/) . Si necesita comprar una licencia, puede hacerlo[aquí](https://purchase.aspose.com/buy) . Alternativamente, puede obtener un[licencia temporal](https://purchase.aspose.com/temporary-license/) o pruébalo con un[prueba gratis](https://releases.aspose.com/).
+1.  Aspose.Words para .NET: puedes[descarga la última versión aquí](https://releases.aspose.com/words/net/) . Si necesita comprar una licencia, puede hacerlo[aquí](https://purchase.aspose.com/buy) . Alternativamente, puede obtener un[licencia temporal](https://purchase.aspose.com/temporary-license/) o pruébalo con un[prueba gratuita](https://releases.aspose.com/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE de C#.
 3. Conocimientos básicos de C#: la familiaridad con la programación en C# hará que este tutorial sea muy sencillo.
 
@@ -139,7 +139,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 ## Preguntas frecuentes
 
 ### ¿Puedo insertar varios documentos en diferentes campos de combinación?
-Sí tu puedes. Simplemente especifique los campos de combinación apropiados y las rutas de documento correspondientes en el`MailMerge.Execute` método.
+Sí, puedes. Simplemente especifique los campos de combinación apropiados y las rutas de documento correspondientes en el`MailMerge.Execute` método.
 
 ### ¿Es posible formatear el documento insertado de manera diferente al documento principal?
  ¡Absolutamente! Puedes usar el`ImportFormatMode` parámetro en el`NodeImporter` para controlar el formato.

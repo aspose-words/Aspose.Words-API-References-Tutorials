@@ -66,7 +66,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ## 結論
 
-現在你就擁有了！只需幾個簡單的步驟，我們就使用 Aspose.Words for .NET 從文件中刪除了個人資訊。這只是這個強大的庫可以做的事情的冰山一角。無論您是要自動化報告、管理大量文檔，還是只是讓您的工作流程更加順暢，Aspose.Words 都能滿足您的需求。
+現在你就得到它了！只需幾個簡單的步驟，我們就使用 Aspose.Words for .NET 從文件中刪除了個人資訊。這只是這個強大的庫可以做的事情的冰山一角。無論您是要自動化報告、管理大量文檔，還是只是讓您的工作流程更加順暢，Aspose.Words 都能滿足您的需求。
 
 ## 常見問題解答
 
@@ -76,7 +76,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ### Aspose.Words for .NET 是免費的嗎？
 
- Aspose.Words 提供了[免費試用](https://releases.aspose.com/)因此您可以對其進行測試，但您需要購買完整功能的許可證。查看[價錢](https://purchase.aspose.com/buy)更多細節。
+ Aspose.Words 提供了[免費試用](https://releases.aspose.com/)因此您可以對其進行測試，但您需要購買完整功能的許可證。查看[定價](https://purchase.aspose.com/buy)了解更多詳情。
 
 ### 我可以將 Aspose.Words 用於其他文件格式嗎？
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ### 如果遇到問題，我該如何獲得支援？
 
-您可以造訪Aspose.Words[支援論壇](https://forum.aspose.com/c/words/8)尋求有關您可能遇到的任何問題或疑問的協助。
+您可以造訪Aspose.Words[支援論壇](https://forum.aspose.com/c/words/8)尋求協助解決您可能遇到的任何問題或疑問。
 
 ### Aspose.Words 還提供哪些功能？
 

@@ -87,7 +87,7 @@ public static void main(String[] args) throws Exception {
 
 ### 我是否需要任何特殊權限才能以程式方式列印文件？
 
-使用 Aspose.Words for Java 以程式方式列印文件不需要超出從系統列印通常所需的特殊權限。確保您的應用程式具有必要的印表機存取權限。
+使用 Aspose.Words for Java 以程式方式列印文件不需要超出從系統列印通常所需的特殊權限。確保您的應用程式具有必要的印表機存取權。
 
 ### 在哪裡可以找到 Aspose.Words for Java 的其他資源和文件？
 

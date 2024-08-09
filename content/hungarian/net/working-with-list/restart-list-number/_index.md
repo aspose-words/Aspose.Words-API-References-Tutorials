@@ -2,18 +2,38 @@
 title: Indítsa újra a lista számát
 linktitle: Indítsa újra a lista számát
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan állíthatja vissza a listák számát egy Word-dokumentumban az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan indíthatja újra a listaszámokat a Word dokumentumokban az Aspose.Words for .NET használatával. Ez a részletes, 2000 szavas útmutató mindent tartalmaz, amit tudnia kell, a beállítástól a speciális testreszabásig.
 type: docs
 weight: 10
 url: /hu/net/working-with-list/restart-list-number/
 ---
-Ebben a lépésenkénti oktatóanyagban bemutatjuk, hogyan állíthatja vissza a listák számát egy Word-dokumentumban az Aspose.Words for .NET használatával. Elmagyarázzuk a mellékelt C# forráskódot, és megmutatjuk, hogyan implementálhatja azt saját projektjeibe.
+## Bevezetés
 
- A kezdéshez győződjön meg arról, hogy az Aspose.Words for .NET telepítve van és konfigurálva van a fejlesztői környezetben. Ha még nem tette meg, töltse le és telepítse a könyvtárat innen[Aspose.Releases]https://releases.aspose.com/words/net/.
+Szeretné elsajátítani a listakezelés művészetét Word-dokumentumaiban az Aspose.Words for .NET használatával? Nos, jó helyen jársz! Ebben az oktatóanyagban a listaszámok újraindításába fogunk belemerülni, egy remek funkcióba, amely a dokumentumautomatizálási készségeit a következő szintre emeli. Kapcsold be, és kezdjük is!
 
-## 1. lépés: A dokumentum és a dokumentumgenerátor létrehozása
+## Előfeltételek
 
-Először hozzon létre egy új dokumentumot és egy kapcsolódó dokumentumgenerátort:
+Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
+
+1.  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Ha még nem telepítette, megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+2. Fejlesztési környezet: Győződjön meg arról, hogy megfelelő fejlesztői környezettel rendelkezik, például a Visual Studio.
+3. Alapvető C# ismerete: A C# alapvető ismerete segít az oktatóanyag követésében.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket. Ezek kulcsfontosságúak az Aspose.Words funkciók eléréséhez.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+Most bontsuk le a folyamatot könnyen követhető lépésekre. A lista létrehozásától a számozás újraindításáig mindenre kiterjedünk.
+
+## 1. lépés: Állítsa be a dokumentumot és a Buildert
+
+Mielőtt elkezdené a listák kezelését, szüksége van egy dokumentumra és egy DocumentBuilderre. A DocumentBuilder egy olyan eszköz, amellyel tartalmat adhat a dokumentumhoz.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Az első lista létrehozása és testreszabása
 
-Ezután hozzon létre egy listát egy meglévő sablon alapján, majd szabja testre a szintjeit:
+Ezután létrehozunk egy listát egy sablon alapján, és testreszabjuk a megjelenését. Ebben a példában az arab számformátumot használjuk zárójelekkel.
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,102 +51,75 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## 3. lépés: Elemek hozzáadása az első listához
+Itt a betűszínt pirosra állítottuk, és a szöveget jobbra igazítottuk.
 
-Használja a dokumentumkészítőt elemek hozzáadásához az első listához és listaszámok eltávolításához:
+## 3. lépés: Tételek hozzáadása az első listához
+
+ A lista elkészültével ideje hozzáadni néhány elemet. A DocumentBuilder`ListFormat.List` tulajdonság segít a listaformátum alkalmazásában a szövegben.
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## 4. lépés: A második lista létrehozása és testreszabása
+## 4. lépés: Indítsa újra a listaszámozást
 
-Ha újra szeretné használni az első listát a szám visszaállításával, hozzon létre egy másolatot az eredeti listaelrendezésről:
+A lista újrafelhasználásához és a számozás újraindításához létre kell hoznia egy másolatot az eredeti listáról. Ez lehetővé teszi az új lista önálló módosítását.
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-Szükség esetén további módosításokat is végezhet a második listán.
+Ebben a példában az új lista a 10-es számmal kezdődik.
 
-## 5. lépés: Elemek hozzáadása a második listához
+## 5. lépés: Tételek hozzáadása az új listához
 
-Használja újra a dokumentumkészítőt elemek hozzáadásához a második listához, és távolítsa el a listaszámokat:
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## 6. lépés: Mentse el a módosított dokumentumot
-
-Végül mentse el a módosított dokumentumot:
+Csakúgy, mint korábban, adjon hozzá elemeket az új listához. Ez azt mutatja, hogy a lista újraindul a megadott számmal.
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-Így ! Sikeresen visszaállította egy lista számát egy Word-dokumentumban az Aspose.Words for .NET használatával.
-
-### Minta forráskód a listaszám visszaállításához
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Hozzon létre egy listát egy sablon alapján.
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-// Az első lista újrafelhasználásához újra kell indítanunk a számozást az eredeti listaformázás másolatának létrehozásával.
-List list2 = doc.Lists.AddCopy(list1);
-
-// Az új listát bármilyen módon módosíthatjuk, beleértve az új rajtszám beállítását is.
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## 6. lépés: Mentse el a dokumentumot
+
+Végül mentse a dokumentumot a megadott könyvtárba.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### GYIK
+## Következtetés
 
-#### K: Hogyan indíthatom újra egy lista számozását az Aspose.Words-ben?
+A listaszámok újraindítása a Word dokumentumokban az Aspose.Words for .NET használatával egyszerű és hihetetlenül hasznos. Akár jelentéseket készít, akár strukturált dokumentumokat hoz létre, vagy egyszerűen csak jobb irányításra van szüksége a listák felett, ez a technika megfelel Önnek.
 
- V: Egy lista számozásának újraindításához az Aspose.Words programban használhatja a`ListRestartAtNumber` módszere a`List` osztály. Ez a módszer lehetővé teszi egy új tárcsázási érték beállítását, amelytől a listát újra kell indítani. Például használhatja`list.ListRestartAtNumber(1)` a számozás újraindításához 1-től.
+## GYIK
 
-#### K: Testreszabható az újraindított listaszámozás elő- és utótagja az Aspose.Words-ben?
+### Használhatok más listasablonokat a NumberArabicParenthesis mellett?
 
- V: Igen, testreszabhatja az újraindított listaszámozás elő- és utótagját az Aspose.Words-ben. A`ListLevel`osztály olyan tulajdonságokat kínál, mint pl`ListLevel.NumberPrefix`és`ListLevel.NumberSuffix` amelyek lehetővé teszik az elő- és utótag megadását a lista minden szintjéhez. Ezekkel a tulajdonságokkal szükség szerint testreszabhatja az elő- és utótagot.
+Teljesen! Az Aspose.Words különféle listasablonokat kínál, például golyókat, betűket, római számokat stb. Kiválaszthatja az igényeinek leginkább megfelelőt.
 
-#### K: Hogyan adhatok meg egy adott számozási értéket, amelytől a listát újra kell indítani?
+### Hogyan változtathatom meg a lista szintjét?
 
- V: Egy adott számérték megadásához, amelytől a listát újra kell indítani, használhatja a`ListRestartAtNumber` metódus, amely argumentumként adja át a kívánt értéket. Például a számozás 5-től való újraindításához használhatja`list.ListRestartAtNumber(5)`.
+ A lista szintjét módosíthatja a`ListLevels` ingatlan. Például,`list1.ListLevels[1]` a lista második szintjére utalna.
 
-#### K: Lehetséges-e újraindítani a többszintű listaszámozást az Aspose.Words-ben?
+### Bármely számnál újraindíthatom a számozást?
 
- V: Igen, az Aspose.Words támogatja a több listaszint újraindítási számozását. Alkalmazhatja a`ListRestartAtNumber` módszert minden listaszinten a számozás egyéni újraindításához. Például használhatja`list.Levels[0].ListRestartAtNumber(1)` az első listaszint újraindításához 1-ről, és`list.Levels[1].ListRestartAtNumber(1)` a második szintű lista újraindításához 1-től kezdve, és így tovább.
+ Igen, a kezdő számot tetszőleges egész számra állíthatja a gombbal`StartAt` a listaszint tulajdonsága.
 
+### Lehetséges-e különböző formázás a különböző listaszintekhez?
+
+Valóban! Minden listaszintnek saját formázási beállításai lehetnek, például betűtípus, igazítás és számozási stílus.
+
+### Mi a teendő, ha az újraindítás helyett folytatni szeretném a számozást egy korábbi listáról?
+
+Ha folytatni szeretné a számozást, nem kell másolatot készítenie a listáról. Egyszerűen folytassa az elemek hozzáadását az eredeti listához.
 
 

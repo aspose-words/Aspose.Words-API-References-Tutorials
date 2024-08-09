@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/basic-conversions/docx-to-txt/
 ---
-## Úvod
+## Zavedení
 
 Převod souborů DOCX do formátu TXT může být nezbytný pro různé aplikace, jako je zjednodušení extrakce obsahu nebo transformace dokumentů pro analýzu prostého textu. S Aspose.Words pro .NET je tento proces zjednodušený a efektivní. V tomto obsáhlém průvodci vás provedeme každým krokem a zajistíme vám, abyste procesu jasně porozuměli. Pojďme se tedy ponořit a snadno převést tyto soubory DOCX na soubory TXT!
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "BaseConversions.DocxToTxt.txt");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste převedli soubor DOCX na TXT pomocí Aspose.Words for .NET. Tento proces, i když je přímočarý, otevírá četné možnosti pro manipulaci a zpracování textových dokumentů. Ať už extrahujete obsah pro analýzu nebo jednoduše převádíte formáty, Aspose.Words for .NET to učiní hračkou.
+Gratuluji! Úspěšně jste převedli soubor DOCX na TXT pomocí Aspose.Words for .NET. Tento proces, i když je přímočarý, otevírá četné možnosti pro manipulaci a zpracování textových dokumentů. Ať už extrahujete obsah pro analýzu nebo jednoduše převádíte formáty, Aspose.Words for .NET to učiní hračkou.
 
 ## FAQ
 

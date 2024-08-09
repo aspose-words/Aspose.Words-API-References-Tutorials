@@ -9,13 +9,13 @@ url: /pl/net/add-content-using-documentbuilder/insert-break/
 ---
 ## Wstęp
 
-No hej! Czy jesteś gotowy, aby zanurzyć się w świecie Aspose.Words dla .NET? Ta potężna biblioteka jest jak szwajcarski scyzoryk do manipulacji dokumentami w programie Word. Niezależnie od tego, czy masz do czynienia ze złożonymi zadaniami automatyzacji dokumentów, czy po prostu chcesz dodać prosty podział strony, Aspose.Words Ci pomoże. W tym samouczku omówimy krok po kroku, jak wstawiać przerwy w dokumencie programu Word. Więc weź filiżankę kawy i zaczynajmy!
+Hej tam! Czy jesteś gotowy, aby zanurzyć się w świecie Aspose.Words dla .NET? Ta potężna biblioteka jest jak szwajcarski scyzoryk do manipulacji dokumentami w programie Word. Niezależnie od tego, czy masz do czynienia ze złożonymi zadaniami automatyzacji dokumentów, czy po prostu chcesz dodać prosty podział strony, Aspose.Words Ci pomoże. W tym samouczku omówimy krok po kroku, jak wstawiać przerwy w dokumencie programu Word. Więc weź filiżankę kawy i zaczynajmy!
 
 ## Warunki wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla biblioteki .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/) . Jeśli jesteś nowy w Aspose, możesz zacząć od[bezpłatna wersja próbna](https://releases.aspose.com/).
+1.  Aspose.Words dla biblioteki .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/) . Jeśli jesteś nowy w Aspose, możesz zacząć od[bezpłatna wersja próbna](https://releases.aspose.com/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
 3. .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET Framework.
 4. Podstawowa znajomość języka C#: W tym samouczku założono, że znasz programowanie w języku C#.
@@ -68,7 +68,7 @@ builder.Writeln("This is page 1.");
 
 ## Krok 5: Wstawianie podziału strony
 
- Teraz zaczyna się zabawa. Musimy wstawić podział strony, aby przejść do następnej strony. To tak proste, jak wywołanie`InsertBreak` metoda.
+ Teraz nadchodzi zabawna część. Musimy wstawić podział strony, aby przejść do następnej strony. To tak proste, jak wywołanie`InsertBreak` metoda.
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -110,7 +110,7 @@ I masz to! Pomyślnie utworzyłeś dokument Word i wstawiłeś podziały stron p
 
 ## Wniosek
 
-Czy to nie było zabawne? Dzięki Aspose.Words dla .NET manipulowanie dokumentami programu Word jest proste. Niezależnie od tego, czy dodajesz proste podziały stron, czy przeprowadzasz złożoną automatyzację dokumentów, ta biblioteka znacznie ułatwi Ci życie. Zatem śmiało i odkryj więcej możliwości Aspose.Words. Możliwości są nieskończone!
+Czy to nie było zabawne? Dzięki Aspose.Words dla .NET manipulowanie dokumentami programu Word jest proste. Niezależnie od tego, czy dodajesz proste podziały stron, czy przeprowadzasz złożoną automatyzację dokumentów, ta biblioteka znacznie ułatwi Ci życie. Zatem śmiało i odkryj więcej możliwości Aspose.Words. Możliwości są nieograniczone!
 
 ## Często zadawane pytania
 

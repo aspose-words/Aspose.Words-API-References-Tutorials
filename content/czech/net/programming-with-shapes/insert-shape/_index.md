@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/insert-shape/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o vytváření vizuálně přitažlivých a dobře strukturovaných dokumentů aplikace Word, tvary mohou hrát zásadní roli. Ať už přidáváte šipky, rámečky nebo dokonce složité vlastní tvary, možnost programově manipulovat s těmito prvky nabízí nesrovnatelnou flexibilitu. V tomto tutoriálu prozkoumáme, jak vkládat a manipulovat s tvary v dokumentech aplikace Word pomocí Aspose.Words for .NET.
 
@@ -112,7 +112,7 @@ Můžete změnit`ShapeType` v`InsertShape` metoda pro vkládání různých typ�
  Ano, můžete použít`builder.Write` metoda pro přidání textu do tvarů po jejich vložení.
 
 ### Je možné tvary stylizovat?
- Ano, tvary můžete stylovat nastavením vlastností jako`FillColor`, `StrokeColor` , a`StrokeWeight`.
+ Ano, tvary můžete stylovat nastavením vlastností jako`FillColor`, `StrokeColor` a`StrokeWeight`.
 
 ### Jak umístím tvary vzhledem k ostatním prvkům?
  Použijte`RelativeHorizontalPosition`a`RelativeVerticalPosition` vlastnosti pro umístění tvarů vzhledem k ostatním prvkům v dokumentu.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/document-formatting/snap-to-grid/
 ---
-## Úvod
+## Zavedení
 
 Při práci s dokumenty aplikace Word je důležité udržovat konzistentní a strukturované rozvržení, zejména pokud se jedná o složité formátování nebo vícejazyčný obsah. Jednou z užitečných funkcí, která toho může dosáhnout, je funkce „Snap to Grid“. V tomto tutoriálu se ponoříme hluboko do toho, jak můžete povolit a používat Snap to Grid v dokumentech aplikace Word pomocí Aspose.Words for .NET.
 
@@ -15,10 +15,10 @@ Při práci s dokumenty aplikace Word je důležité udržovat konzistentní a s
 
 Než začneme, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET Library: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 - Základní znalost C#: Pochopení základů programování v C# vám pomůže postupovat podle příkladů.
--  Aspose License: I když lze získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/), použití plné licence zajistí přístup ke všem funkcím bez omezení.
+-  Aspose License: I když lze získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/), použití plné licence zajistí přístup ke všem funkcím bez omezení.
 
 ## Importovat jmenné prostory
 

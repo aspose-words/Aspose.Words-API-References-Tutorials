@@ -124,7 +124,7 @@ aí está! Você personalizou com sucesso pontos de dados individuais em um grá
 
 ### Posso personalizar pontos de dados em outros tipos de gráficos?
 
-Absolutamente! Você pode personalizar pontos de dados em vários tipos de gráficos, incluindo gráficos de barras, gráficos de pizza e muito mais. O processo é semelhante em diferentes tipos de gráficos.
+Absolutamente! Você pode personalizar pontos de dados em vários tipos de gráficos, incluindo gráficos de barras, gráficos de pizza e muito mais. O processo é semelhante em diferentes tipos de gráfico.
 
 ### É possível adicionar rótulos personalizados aos pontos de dados?
 

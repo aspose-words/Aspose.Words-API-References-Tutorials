@@ -77,11 +77,11 @@ Son olarak başyapıtımızı kurtarmamız gerekiyor. Bu adım, bitmiş tablomuz
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak yeni bir Word belgesi oluşturdunuz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yeni bir Word belgesi oluşturdunuz.
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET ile belge otomasyonu dünyasına ilk adımlarınızı attınız. Sıfırdan başladık, ortamımızı kurduk, yeni bir belge oluşturduk, biraz içerik ekledik ve kaydettik. Bu buzdağının sadece görünen kısmı. Aspose.Words ile belgeleri asla mümkün olmayacağını düşünmediğiniz şekillerde değiştirebilirsiniz; belgeleri birleştirmek, görseller eklemek, tablolar oluşturmak ve çok daha fazlasını yapabilirsiniz.
+Tebrikler! Aspose.Words for .NET ile belge otomasyonu dünyasına ilk adımlarınızı attınız. Sıfırdan başladık, ortamımızı kurduk, yeni bir belge oluşturduk, biraz içerik ekledik ve kaydettik. Bu buzdağının sadece görünen kısmı. Aspose.Words ile belgeleri asla mümkün olmayacağını düşünmediğiniz şekillerde değiştirebilirsiniz; belgeleri birleştirmek, görseller eklemek, tablolar oluşturmak ve çok daha fazlası.
 
 ## SSS'ler
 
@@ -103,4 +103,4 @@ DOC, DOCX, PDF, HTML ve diğer birçok formatı oluşturabilir ve değiştirebil
 
 ### Daha fazla belge ve örneği nerede bulabilirim?
 
- Kontrol et[Aspose.Words for .NET Belgeleri](https://reference.aspose.com/words/net/) Daha fazla örnek ve ayrıntılı kılavuz için.
+ Şuna göz atın:[Aspose.Words for .NET Belgeleri](https://reference.aspose.com/words/net/) Daha fazla örnek ve ayrıntılı kılavuz için.

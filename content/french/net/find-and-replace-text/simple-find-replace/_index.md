@@ -97,7 +97,7 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 
 ## Conclusion
 
-Et voila! Vous venez d'automatiser le processus de recherche et de remplacement de texte dans un document Word à l'aide d'Aspose.Words pour .NET. Plus de mises à jour manuelles et plus d'erreurs. Que vous prépariez des rapports, génériez des lettres personnalisées ou gériez simplement le contenu d'un document, cette technique simple mais puissante peut vous faire gagner beaucoup de temps.
+Et voilà ! Vous venez d'automatiser le processus de recherche et de remplacement de texte dans un document Word à l'aide d'Aspose.Words pour .NET. Plus de mises à jour manuelles et plus d'erreurs. Que vous prépariez des rapports, génériez des lettres personnalisées ou gériez simplement le contenu d'un document, cette technique simple mais puissante peut vous faire gagner beaucoup de temps.
 
 ## FAQ
 

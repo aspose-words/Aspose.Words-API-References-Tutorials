@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-rtfloadoptions/recognize-utf8-text/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni se ponořit do úžasných technických věcí? Dnes se budeme zabývat rozpoznáváním textu UTF-8 v dokumentech aplikace Word pomocí Aspose.Words pro .NET. Pokud pracujete s více jazyky nebo speciálními znaky, je to změna hry. Tak se připoutejte a můžeme začít!
 
@@ -15,7 +15,7 @@ Jste připraveni se ponořit do úžasných technických věcí? Dnes se budeme 
 
 Než se pustíme do té zábavné části, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Pokud jste si to ještě nekoupili, vezměte si[zkušební verze zdarma](https://releases.aspose.com/) nebo[koupit zde](https://purchase.aspose.com/buy).
+1.  Aspose.Words for .NET Library: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Pokud jste si ho ještě nekoupili, vezměte si[zkušební verze zdarma](https://releases.aspose.com/) nebo[koupit zde](https://purchase.aspose.com/buy).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje .NET.
 3. Základní znalost C#: Abyste mohli pokračovat, musíte znát C#.
 
@@ -89,7 +89,7 @@ Absolutně! Aspose.Words for .NET podporuje různé formáty, včetně DOC, DOCX
 
 ### Jak získám dočasnou licenci pro Aspose.Words for .NET?
 
- Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/). To vám umožní vyzkoušet všechny funkce bez jakýchkoli omezení.
+ Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/). To vám umožní vyzkoušet všechny funkce bez jakýchkoli omezení.
 
 ### Je Aspose.Words for .NET kompatibilní s .NET Core?
 

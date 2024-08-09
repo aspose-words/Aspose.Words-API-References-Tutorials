@@ -135,7 +135,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 您可以通过以下方式获得支持[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8).
 
 ### 我可以添加其他类型的图表吗？
-是的，Aspose.Words 支持各种图表类型，例如条形图、折线图和柱形图。检查[文档](https://reference.aspose.com/words/net/)更多细节。
+是的，Aspose.Words 支持各种图表类型，例如条形图、折线图和柱形图。检查[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### Aspose.Words 与 .NET Core 兼容吗？
 是的，Aspose.Words 与 .NET Core 兼容。您可以在[文档](https://reference.aspose.com/words/net/).

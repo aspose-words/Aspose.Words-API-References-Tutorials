@@ -82,7 +82,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 刪除未使用的樣式和列表，成功清理了 Word 文件。這就像整理您的數位辦公桌，使您的文件更加易於管理和高效。為自己出色的工作拍拍自己的背！
+現在你就得到它了！您已使用 Aspose.Words for .NET 刪除未使用的樣式和列表，成功清理了 Word 文件。這就像整理您的數位辦公桌，使您的文件更加易於管理和高效。為自己出色的工作拍拍自己的背！
 
 ## 常見問題解答
 
@@ -90,7 +90,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 Aspose.Words for .NET 是一個功能強大的程式庫，可讓您使用 C# 以程式設計方式建立、修改和轉換 Word 文件。
 
 ### 我可以同時刪除未使用的樣式和清單嗎？
-是的，您可以同時設置`UnusedLists`和`UnusedStyles`到`true`在裡面`CleanupOptions`刪除兩者。
+是的，您可以同時設置`UnusedLists`和`UnusedStyles`到`true`在`CleanupOptions`刪除兩者。
 
 ### 是否可以撤銷清理操作？
 不可以，一旦清理完成並儲存文檔，您就無法撤銷變更。始終保留原始文件的備份。

@@ -2,45 +2,61 @@
 title: Ustaw opcje przypisu końcowego
 linktitle: Ustaw opcje przypisu końcowego
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić opcje przypisów końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Samouczek krok po kroku z przykładowym kodem źródłowym.
+description: Dowiedz się, jak ustawić opcje przypisów końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## Wstęp
 
-tym samouczku krok po kroku poprowadzimy Cię, jak używać Aspose.Words dla .NET do ustawiania opcji przypisów końcowych w dokumencie programu Word. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+Czy chcesz ulepszyć swoje dokumenty Word, efektywnie zarządzając przypisami końcowymi? Nie szukaj dalej! W tym samouczku przeprowadzimy Cię przez proces ustawiania opcji przypisów końcowych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Pod koniec tego przewodnika będziesz profesjonalistą w dostosowywaniu przypisów końcowych do potrzeb dokumentu.
 
- Aby rozpocząć, upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Warunki wstępne
 
-## Krok 1: Inicjowanie obiektu dokumentu
+Zanim przejdziesz do samouczka, upewnij się, że spełniasz następujące wymagania wstępne:
 
- Najpierw zainicjuj`Document` obiekt, podając ścieżkę do dokumentu źródłowego:
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Skonfiguruj środowisko programistyczne, takie jak Visual Studio.
+- Podstawowa znajomość języka C#: Podstawowa znajomość programowania w języku C# będzie korzystna.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami programu Word.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## Krok 1: Załaduj dokument
+
+ Najpierw załadujmy dokument, w którym chcemy ustawić opcje przypisu końcowego. Skorzystamy z`Document` class z biblioteki Aspose.Words, aby to osiągnąć.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Krok 2: Inicjowanie obiektu DocumentBuilder
+## Krok 2: Zainicjuj DocumentBuider
 
- Następnie zainicjuj`DocumentBuilder` obiekt umożliwiający wykonanie operacji na dokumencie:
+ Następnie zainicjujemy plik`DocumentBuilder`klasa. Ta klasa zapewnia prosty sposób dodawania treści do dokumentu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Dodawanie tekstu i przypisu końcowego
+## Krok 3: Dodaj tekst i wstaw przypis końcowy
 
- Użyj`Write` metoda`DocumentBuilder` obiekt, aby dodać tekst do dokumentu, oraz`InsertFootnote` metoda wstawiania przypisu końcowego:
+ Teraz dodajmy trochę tekstu do dokumentu i wstawmy przypis końcowy. The`InsertFootnote` metoda`DocumentBuilder` class pozwala nam dodawać przypisy końcowe do dokumentu.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## Krok 4: Ustawianie opcji przypisu końcowego
+## Krok 4: Uzyskaj dostęp i ustaw opcje przypisu końcowego
 
- Uzyskać dostęp do`EndnoteOptions`właściwość dokumentu, aby zmodyfikować opcje przypisu końcowego. W tym przykładzie ustawiamy regułę ponownego uruchamiania na każdej stronie i pozycję na końcu sekcji:
+ Aby dostosować opcje przypisu końcowego, musimy uzyskać dostęp do pliku`EndnoteOptions` własność`Document` klasa. Następnie możemy ustawić różne opcje, takie jak reguła ponownego uruchomienia i pozycja.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,53 +64,31 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## Krok 5: Zapisywanie dokumentu
+## Krok 5: Zapisz dokument
 
-Na koniec zapisz zmodyfikowany dokument:
+ Na koniec zapiszmy dokument ze zaktualizowanymi opcjami przypisu końcowego. The`Save` metoda`Document` class pozwala nam zapisać dokument we wskazanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Otóż to! Pomyślnie ustawiłeś opcje przypisu końcowego w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+## Wniosek
 
-### Przykładowy kod źródłowy dla Ustaw opcje przypisu końcowego przy użyciu Aspose.Words dla .NET
+Ustawienie opcji przypisów końcowych w dokumentach programu Word za pomocą Aspose.Words dla .NET jest proste dzięki wykonaniu tych prostych kroków. Dostosowując regułę ponownego uruchamiania i położenie przypisów końcowych, możesz dostosować swoje dokumenty do określonych wymagań. Dzięki Aspose.Words możliwości manipulowania dokumentami programu Word są na wyciągnięcie ręki.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Często zadawane pytania
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do programowego manipulowania dokumentami programu Word. Umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów programu Word w różnych formatach.
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Czy mogę używać Aspose.Words za darmo?
+ Możesz używać Aspose.Words w ramach bezpłatnej wersji próbnej. W przypadku dłuższego użytkowania możesz kupić licencję na stronie[Tutaj](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### Co to są przypisy końcowe?
+Przypisy końcowe to odniesienia lub notatki umieszczane na końcu sekcji lub dokumentu. Podają dodatkowe informacje lub cytaty.
 
-Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go zgodnie ze swoimi specyficznymi wymaganiami.
+### Jak dostosować wygląd przypisów końcowych?
+ Za pomocą przycisku możesz dostosować opcje przypisów końcowych, takie jak numeracja, pozycja i reguły ponownego uruchamiania`EndnoteOptions` klasa w Aspose.Words dla .NET.
 
-### Często zadawane pytania
-
-#### P: Jak mogę nadać styl przypisom końcowym w Aspose.Words?
-
- O: Aby nadać styl przypisom końcowym w Aspose.Words, możesz użyć metody`EndnoteOptions` klasa i`SeparatorNoteTextStyle` nieruchomość. Za pomocą tej właściwości możesz określić styl czcionki, rozmiar, kolor itp. dla przypisów końcowych.
-
-#### P: Czy można dostosować numerację przypisów końcowych w dokumencie?
-
- O: Tak, istnieje możliwość dostosowania numeracji przypisów końcowych w dokumencie. Możesz skorzystać z`RestartRule`I`NumberStyle` właściwości`EndnoteOptions` class, aby zdefiniować określone reguły ponownego uruchamiania i style numerowania.
-
-#### P: Jak mogę umieścić przypisy końcowe w dokumencie?
-
-Odp.: Aby rozmieścić przypisy końcowe w dokumencie, możesz użyć opcji`Position` własność`EndnoteOptions` klasa. Możesz określić, czy przypisy końcowe mają być umieszczane na dole każdej strony, na końcu każdej sekcji, czy na końcu dokumentu.
-
-#### P: Czy mogę dostosować format numeracji przypisów końcowych?
-
- O: Tak, możesz dostosować format numeracji przypisów końcowych w Aspose.Words. Użyj`NumberFormat` własność`EndnoteOptions` class, aby ustawić żądany format, taki jak cyfry arabskie, cyfry rzymskie, litery itp.
-
-#### P: Czy można kontynuować numerowanie przypisów końcowych pomiędzy sekcjami dokumentu?
-
- Odpowiedź: Tak, możliwe jest kontynuowanie numeracji przypisów końcowych pomiędzy sekcjami dokumentu. Użyj`RestartRule` własność`EndnoteOptions` class i ustaw ją na`RestartContinuous` aby umożliwić kontynuację numeracji pomiędzy sekcjami.
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+ Szczegółowa dokumentacja dostępna jest na stronie[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) strona.

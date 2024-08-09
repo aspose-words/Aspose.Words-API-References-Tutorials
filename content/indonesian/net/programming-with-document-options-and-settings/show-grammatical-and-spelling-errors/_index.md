@@ -56,7 +56,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Langkah 4: Aktifkan Tampilan Kesalahan Tata Bahasa dan Ejaan
 
-Sekarang tiba bagian menyenangkan! Anda dapat mengaktifkan tampilan kesalahan tata bahasa dan ejaan hanya dengan beberapa baris kode.
+Sekarang sampai pada bagian yang menyenangkan! Anda dapat mengaktifkan tampilan kesalahan tata bahasa dan ejaan hanya dengan beberapa baris kode.
 
 ```csharp
 doc.ShowGrammaticalErrors = true;

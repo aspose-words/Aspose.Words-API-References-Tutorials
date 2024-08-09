@@ -9,7 +9,7 @@ url: /es/net/programming-with-document-options-and-settings/add-japanese-as-edit
 ---
 ## Introducción
 
-¿Alguna vez has intentado abrir un documento y te has perdido en un mar de texto ilegible porque la configuración de idioma no era correcta? ¡Es como intentar leer un mapa en un idioma extranjero! Bueno, si trabajas con documentos en diferentes idiomas, especialmente japonés, entonces Aspose.Words para .NET es tu herramienta de referencia. Este artículo lo guiará paso a paso sobre cómo agregar japonés como idioma de edición en sus documentos usando Aspose.Words para .NET. ¡Vamos a sumergirnos y asegurarnos de que nunca más te pierdas en la traducción!
+¿Alguna vez has intentado abrir un documento y te has perdido en un mar de texto ilegible porque la configuración de idioma no era correcta? ¡Es como intentar leer un mapa en un idioma extranjero! Bueno, si trabajas con documentos en diferentes idiomas, especialmente japonés, entonces Aspose.Words para .NET es tu herramienta preferida. Este artículo lo guiará paso a paso sobre cómo agregar japonés como idioma de edición en sus documentos usando Aspose.Words para .NET. ¡Vamos a sumergirnos y asegurarnos de que nunca más te pierdas en la traducción!
 
 ## Requisitos previos
 
@@ -40,7 +40,7 @@ Con estos espacios de nombres importados, ¡está listo para comenzar a codifica
 LoadOptions loadOptions = new LoadOptions();
 ```
 
- El`LoadOptions` La clase le permite personalizar cómo se cargan los documentos. Aquí apenas estamos comenzando.
+ El`LoadOptions` La clase le permite personalizar cómo se cargan los documentos. Aquí, apenas estamos comenzando.
 
 ## Paso 2: agregue japonés como idioma de edición
 
@@ -99,7 +99,7 @@ Este código verifica si el idioma predeterminado de FarEast está configurado e
  Sí, necesita una licencia para uso comercial. puedes comprar uno[aquí](https://purchase.aspose.com/buy) u obtener una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
 
 ### ¿Qué otras características ofrece Aspose.Words para .NET?
- Aspose.Words para .NET ofrece una amplia gama de funciones que incluyen generación, conversión, manipulación de documentos y más. Revisar la[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Aspose.Words para .NET ofrece una amplia gama de funciones que incluyen generación, conversión, manipulación de documentos y más. Mira el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### ¿Puedo probar Aspose.Words para .NET antes de comprarlo?
  ¡Absolutamente! Puedes descargar una prueba gratuita[aquí](https://releases.aspose.com/).

@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Çözüm
 
-Ve bu kadar! Aspose.Words for .NET'i kullanarak yer imlerine eklenmiş metni bir Word belgesinden diğerine başarıyla kopyaladınız. Bu yöntem, belge işleme görevlerini otomatikleştirmek için güçlüdür ve iş akışınızı daha verimli ve akıcı hale getirir.
+İşte bu kadar! Aspose.Words for .NET'i kullanarak yer imlerine eklenmiş metni bir Word belgesinden diğerine başarıyla kopyaladınız. Bu yöntem, belge işleme görevlerini otomatikleştirmek için güçlüdür ve iş akışınızı daha verimli ve akıcı hale getirir.
 
 ## SSS'ler
 

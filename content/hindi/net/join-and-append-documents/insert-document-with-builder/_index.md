@@ -115,10 +115,10 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilde
  हां, इसका उपयोग करके`ImportFormatMode.KeepSourceFormatting`, जब स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ में डाला जाता है तो उसका स्वरूपण संरक्षित रहता है।
 
 ### क्या मुझे .NET के लिए Aspose.Words का उपयोग करने के लिए लाइसेंस की आवश्यकता है?  
- हां, .NET के लिए Aspose.Words को पूर्ण कार्यक्षमता के लिए लाइसेंस की आवश्यकता होती है। आप एक प्राप्त कर सकते हैं[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन के लिए।
+ हां, .NET के लिए Aspose.Words को पूर्ण कार्यक्षमता के लिए लाइसेंस की आवश्यकता होती है। आप एक प्राप्त कर सकते हैं[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
 
 ### क्या मैं इस प्रक्रिया को स्वचालित कर सकता हूँ?  
 बिल्कुल! वर्णित विधि को दस्तावेज़ प्रसंस्करण कार्यों को स्वचालित करने के लिए बड़े अनुप्रयोगों में शामिल किया जा सकता है।
 
 ### मुझे और अधिक संसाधन और सहायता कहां मिल सकती है?  
-अधिक जानकारी के लिए आप जांच कर सकते हैं[प्रलेखन](https://reference.aspose.com/words/net/) , या पर जाएँ[सहयता मंच](https://forum.aspose.com/c/words/8) सहायता के लिए।
+अधिक जानकारी के लिए आप जांच कर सकते हैं[प्रलेखन](https://reference.aspose.com/words/net/) , या पर जाएँ[सहयता मंच](https://forum.aspose.com/c/words/8) सहायता के लिए.

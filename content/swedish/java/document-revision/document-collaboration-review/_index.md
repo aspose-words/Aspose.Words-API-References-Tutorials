@@ -45,7 +45,7 @@ doc.startTrackRevisions("Author Name");
 
 Teammedlemmar kan granska ändringarna som gjorts i dokumentet och ge kommentarer eller förslag. Aspose.Words för Java låter dig programmera komma åt och bearbeta dessa kommentarer.
 
-## Granskning av dokument
+## Dokumentgranskning
 
 Att granska ett dokument innebär att gå igenom de ändringar som gjorts och fatta beslut om huruvida de ska accepteras eller förkastas.
 

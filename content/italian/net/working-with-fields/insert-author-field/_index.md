@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-author-field/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial, ci immergeremo nel nocciolo della questione su come inserire un campo autore in un documento Word utilizzando Aspose.Words per .NET. Che tu stia automatizzando la creazione di documenti per la tua azienda o desideri semplicemente personalizzare i tuoi file, questa guida passo passo fa al caso tuo. Esamineremo tutto, dalla configurazione del tuo ambiente al salvataggio del documento finito. Iniziamo!
 
@@ -116,7 +116,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-E il gioco è fatto! Hai inserito con successo un campo autore in un documento Word utilizzando Aspose.Words per .NET.
+Ed ecco qua! Hai inserito con successo un campo autore in un documento Word utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 
@@ -138,7 +138,7 @@ Aspose.Words offre una prova gratuita, ma per funzionalità complete e uso comme
 
 ### Posso aggiungere altri tipi di campi utilizzando Aspose.Words?
 
- Sì, Aspose.Words supporta vari tipi di campi, tra cui data, ora, numero di pagina e altro. Controlla il[documentazione](https://reference.aspose.com/words/net/) per dettagli.
+ Sì, Aspose.Words supporta vari tipi di campi, tra cui data, ora, numero di pagina e altro. Controlla il[documentazione](https://reference.aspose.com/words/net/) per i dettagli.
 
 ### Dove posso trovare supporto se riscontro problemi?
 

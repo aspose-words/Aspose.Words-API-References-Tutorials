@@ -15,7 +15,7 @@ Het verkleinen van de grootte van PDF-bestanden kan cruciaal zijn voor efficiën
 
 Voordat je in de code duikt, zorg ervoor dat je het volgende hebt:
 
--  Aspose.Words voor .NET: als u dat nog niet heeft gedaan, downloadt en installeert u het vanaf de[Download link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET: als u dat nog niet heeft gedaan, downloadt en installeert u het vanaf de[Downloadlink](https://releases.aspose.com/words/net/).
 - Een .NET-ontwikkelomgeving: Visual Studio is een populaire keuze.
 - Een voorbeeld van een Word-document: Zorg ervoor dat u een DOCX-bestand bij de hand heeft dat u naar een PDF wilt converteren.
 
@@ -85,4 +85,4 @@ Ja, met Aspose.Words voor .NET kunt u aanpassen welke lettertypen zijn ingeslote
 Ja, Aspose.Words voor .NET biedt de functionaliteit die nodig is om opties voor het insluiten van lettertypen in PDF's te configureren.
 
 ### Hoe krijg ik ondersteuning als ik problemen tegenkom?
- U kunt een bezoek brengen aan de[Helpforum](https://forum.aspose.com/c/words/8) voor hulp bij eventuele problemen die u tegenkomt.
+ U kunt een bezoek brengen aan de[Ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp bij eventuele problemen die u tegenkomt.

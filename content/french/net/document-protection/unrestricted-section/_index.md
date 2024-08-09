@@ -9,13 +9,13 @@ url: /fr/net/document-protection/unrestricted-section/
 ---
 ## Introduction
 
-Salut! Prêt à plonger dans le monde d’Aspose.Words pour .NET ? Aujourd'hui, nous abordons quelque chose de très pratique : comment déverrouiller des sections spécifiques dans un document Word tout en protégeant les autres parties. Si vous avez déjà eu besoin de sauvegarder certaines sections de votre document tout en laissant d'autres ouvertes pour modification, ce didacticiel est fait pour vous. Commençons!
+Salut! Prêt à plonger dans le monde d’Aspose.Words pour .NET ? Aujourd'hui, nous abordons quelque chose de très pratique : comment déverrouiller des sections spécifiques dans un document Word tout en protégeant les autres parties. Si vous avez déjà eu besoin de sauvegarder certaines sections de votre document tout en laissant d'autres ouvertes pour modification, ce didacticiel est fait pour vous. Commençons !
 
 ## Conditions préalables
 
 Avant de passer aux choses sérieuses, assurez-vous d’avoir tout ce dont vous avez besoin :
 
--  Aspose.Words for .NET : si ce n'est pas déjà fait, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET : si ce n'est pas déjà fait, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Visual Studio : ou tout autre IDE compatible .NET.
 - Compréhension de base de C# : Une petite familiarité avec C# vous aidera à parcourir ce didacticiel.
 -  Licence Aspose : prenez un[essai gratuit](https://releases.aspose.com/) ou obtenez un[permis temporaire](https://purchase.aspose.com/temporary-license/) si vous en avez besoin pour les tests.
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Le`Document` la classe initialise un nouveau document, et la`DocumentBuilder` nous aide à ajouter facilement du contenu à notre document.
+ Le`Document` la classe initialise un nouveau document et la classe`DocumentBuilder` nous aide à ajouter facilement du contenu à notre document.
 
 ## Étape 2 : Insérer des sections
 
@@ -124,7 +124,7 @@ Cette étape garantit que le document est correctement enregistré et peut être
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous avez réussi à créer un document Word avec un mélange de sections protégées et non protégées à l'aide d'Aspose.Words pour .NET. Cette méthode est incroyablement utile lorsque vous devez verrouiller certaines parties d'un document tout en laissant d'autres parties modifiables.
+Et voilà ! En suivant ces étapes, vous avez réussi à créer un document Word avec un mélange de sections protégées et non protégées à l'aide d'Aspose.Words pour .NET. Cette méthode est incroyablement utile lorsque vous devez verrouiller certaines parties d'un document tout en laissant d'autres parties modifiables.
 
 ## FAQ
 

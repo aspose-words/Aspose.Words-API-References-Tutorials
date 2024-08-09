@@ -18,7 +18,7 @@ Word belgelerinizi parolayla korumanın en ince ayrıntılarına dalmadan önce 
 1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesine sahip olduğunuzdan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir C# geliştirme ortamı.
 3. Temel C# Bilgisi: C# programlamanın temel anlayışı.
-4.  Lisansı Aspose: Şu adresten lisans alın:[Burada](https://purchase.aspose.com/buy)veya bir kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+4.  Lisansı Aspose: Şu adresten lisans alın:[Burada](https://purchase.aspose.com/buy)veya bir kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -32,7 +32,7 @@ using System;
 
 ## Adım 1: Projeyi Kurma
 
-Belgenize parola koruması ekleyebilmeniz için önce projenizi ayarlamanız gerekir. Başlayalım.
+Belgenize parola koruması ekleyebilmeniz için önce projenizi ayarlamanız gerekir. Hadi başlayalım.
 
 ### Yeni Bir Proje Oluştur
 
@@ -60,7 +60,7 @@ Document doc = new Document();
 
 ## 3. Adım: Şifre Korumasını Uygulayın
 
-Sihir yapılan yer burasıdır. Yetkisiz erişimi önlemek için belgemize şifre koruması uygulayacağız.
+Sihrin gerçekleştiği yer burasıdır. Yetkisiz erişimi önlemek için belgemize şifre koruması uygulayacağız.
 
 ### Koruma Türünü Seçin
 
@@ -68,7 +68,7 @@ Sihir yapılan yer burasıdır. Yetkisiz erişimi önlemek için belgemize şifr
 
 ### Koruma Uygula
 
- Kullan`Protect` yöntemi`Document` Şifre koruması uygulayacak sınıf. 
+ Kullanın`Protect` yöntemi`Document` Şifre koruması uygulayacak sınıf. 
 
 ```csharp
 // Belge korumasını uygulayın.
@@ -80,7 +80,7 @@ doc.Protect(ProtectionType.NoProtection, "password");
 Son olarak korumalı belgemizi belirtilen dizine kaydedelim.
 
 
- Kullan`Save` Belgenizi kaydetme yöntemi. Belgeyi kaydetmek istediğiniz yolu dosya adıyla birlikte belirtin.
+ Kullanın`Save` Belgenizi kaydetme yöntemi. Belgeyi kaydetmek istediğiniz yolu dosya adıyla birlikte belirtin.
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
@@ -88,7 +88,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenize başarıyla parola koruması eklediniz. Bu, en önemli belgelerinizin meraklı gözlerden korunmasını sağlayan dijital bir kilide sahip olmak gibidir. İster hassas bilgileri koruyor olun ister ekstra bir güvenlik katmanı eklemek istiyor olun, Aspose.Words bunu basit ve verimli hale getirir. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenize başarıyla parola koruması eklediniz. Bu, en önemli belgelerinizin meraklı gözlerden korunmasını sağlayan dijital bir kilide sahip olmak gibidir. İster hassas bilgileri koruyor olun ister ekstra bir güvenlik katmanı eklemek istiyor olun, Aspose.Words bunu basit ve verimli hale getirir. Mutlu kodlama!
 
 ## SSS'ler
 

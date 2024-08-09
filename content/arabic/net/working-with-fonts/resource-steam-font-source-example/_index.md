@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ar/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## مقدمة
 
 إذا كنت تعمل مع مستندات في .NET وتستخدم Aspose.Words، فقد تكون إدارة مصادر الخطوط جانبًا مهمًا لضمان ظهور مستنداتك كما هو متوقع. يقدم Aspose.Words طريقة قوية للتعامل مع الخطوط، بما في ذلك استخدام تدفقات الموارد. في هذا الدليل، سنتناول استخدام تدفق الموارد كمصدر للخط مع Aspose.Words for .NET. دعونا الغوص في!
 
@@ -103,7 +104,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### س4: أين يمكنني العثور على الدعم لـ Aspose.Words؟
 
- قم بزيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للمساعدة.
+ قم بزيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للحصول على المساعدة.
 
 ### س5: هل من الممكن الحصول على ترخيص مؤقت لـ Aspose.Words؟
 

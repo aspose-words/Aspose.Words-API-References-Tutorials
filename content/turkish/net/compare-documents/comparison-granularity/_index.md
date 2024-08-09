@@ -95,7 +95,7 @@ C: Aspose.Words for .NET'te Karşılaştırma Ayrıntı Düzeyini kullanmak içi
 2. Aspose.Words'e başvurarak gerekli derlemeleri projenize ekleyin.
 3.  Karşılaştırmak istediğiniz belgeleri kullanarak oluşturun.`DocumentBuilder` sınıf.
 4.  Karşılaştırma seçeneklerini bir`CompareOptions` nesneyi ayarlama ve`Granularity` özelliği istenilen seviyeye getirin (örn.`Granularity.CharLevel` karakter düzeyinde karşılaştırma için).
-5.  Kullan`Compare`yöntemi bir belge üzerinde, diğer belgeyi aktararak ve`CompareOptions` parametre olarak nesne. Bu yöntem, belgeleri belirtilen ayrıntı düzeyine göre karşılaştıracak ve değişiklikleri ilk belgeye kaydedecektir.
+5.  Kullanın`Compare`yöntemi bir belge üzerinde, diğer belgeyi aktararak ve`CompareOptions` parametre olarak nesne. Bu yöntem, belgeleri belirtilen ayrıntı düzeyine göre karşılaştıracak ve değişiklikleri ilk belgeye kaydedecektir.
 
 #### S: Aspose.Words for .NET'te Karşılaştırma Ayrıntı Düzeyinin mevcut seviyeleri nelerdir?
 

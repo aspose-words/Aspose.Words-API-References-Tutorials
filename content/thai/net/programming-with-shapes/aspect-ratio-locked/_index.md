@@ -56,7 +56,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.InsertImage(dataDir + "Transparent background logo.png");
 ```
 
- แทนที่`dataDir + "Transparent background logo.png"` พร้อมเส้นทางไปยังไฟล์ภาพของคุณ
+ แทนที่`dataDir + "Transparent background logo.png"` พร้อมเส้นทางไปยังไฟล์รูปภาพของคุณ
 
 ## ขั้นตอนที่ 4: ล็อคอัตราส่วนภาพ
 

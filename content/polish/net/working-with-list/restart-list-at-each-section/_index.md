@@ -2,101 +2,111 @@
 title: Uruchom ponownie listę w każdej sekcji
 linktitle: Uruchom ponownie listę w każdej sekcji
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zresetować listę numerowaną dla każdej sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak ponownie uruchomić listy w każdej sekcji dokumentów programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku, aby skutecznie zarządzać listami.
 type: docs
 weight: 10
 url: /pl/net/working-with-list/restart-list-at-each-section/
 ---
+## Wstęp
 
-tym samouczku krok po kroku pokażemy, jak zresetować listę numerowaną dla każdej sekcji dokumentu programu Word przy użyciu Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+Tworzenie uporządkowanych i dobrze zorganizowanych dokumentów może czasami przypominać układanie złożonej układanki. Jednym z elementów tej układanki jest efektywne zarządzanie listami, zwłaszcza jeśli chcesz, aby rozpoczynały się od nowa w każdej sekcji. Dzięki Aspose.Words dla .NET możesz to osiągnąć bezproblemowo. Przyjrzyjmy się, jak ponownie uruchomić listy w każdej sekcji dokumentów programu Word przy użyciu Aspose.Words dla .NET.
 
- Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Warunki wstępne
 
-## Krok 1: Tworzenie dokumentu i listy
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-Najpierw utwórz nowy dokument i dodaj domyślną listę numerowaną:
+1.  Aspose.Words dla .NET: Pobierz i zainstaluj najnowszą wersję z[Wydania Aspose](https://releases.aspose.com/words/net/) strona.
+2. Środowisko .NET: Skonfiguruj środowisko programistyczne z zainstalowaną platformą .NET.
+3. Podstawowa znajomość języka C#: Zalecana jest znajomość języka programowania C#.
+4.  Licencja Aspose: Możesz wybrać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
+
+## Importuj przestrzenie nazw
+
+Przed napisaniem kodu upewnij się, że zaimportowałeś niezbędne przestrzenie nazw:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Podzielmy teraz proces na wiele kroków, aby ułatwić jego prześledzenie.
+
+## Krok 1: Zainicjuj dokument
+
+Najpierw musisz utworzyć nową instancję dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## Krok 2: Dodawanie pozycji do listy
+## Krok 2: Dodaj listę numerowaną
 
- Następnie użyj A`DocumentBuilder` aby dodać elementy do listy. Możesz użyć pętli, aby dodać wiele elementów do listy:
+Następnie dodaj listę numerowaną do dokumentu. Ta lista będzie miała domyślny format numeracji.
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## Krok 3: Uzyskaj dostęp do listy i ustaw właściwość ponownego uruchomienia
+
+Pobierz właśnie utworzoną listę i ustaw ją`IsRestartAtEachSection`własność do`true`. Dzięki temu lista zacznie numerować od nowa w każdej nowej sekcji.
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## Krok 4: Utwórz narzędzie do tworzenia dokumentów i powiąż listę
+
+ Utwórz`DocumentBuilder` aby wstawić treść do dokumentu i powiązać ją z listą.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## Krok 5: Dodaj elementy listy i wstaw podział sekcji
+
+Teraz dodaj elementy do listy. Aby zilustrować funkcjonalność ponownego uruchomienia, wstawimy podział sekcji po określonej liczbie elementów.
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-W tym przykładzie wstawiamy podział sekcji po 15. elemencie listy, aby zilustrować zmianę numeracji.
+## Krok 6: Zapisz dokument
 
-## Krok 3: Zapisz zmodyfikowany dokument
-
-Na koniec zapisz zmodyfikowany dokument:
+Na koniec zapisz dokument z odpowiednimi opcjami, aby zapewnić zgodność.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-Więc ! Pomyślnie zresetowałeś listę numerowaną dla każdej sekcji dokumentu programu Word przy użyciu Aspose.Words dla .NET.
+## Wniosek
 
-### Przykładowy kod źródłowy do resetowania listy w każdej sekcji
+I masz to! Wykonując te kroki, możesz bez wysiłku ponownie uruchomić listy w każdej sekcji dokumentów programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezwykle przydatna do tworzenia dokumentów o dobrze zorganizowanej strukturze, które wymagają oddzielnych sekcji z własną numeracją list. Dzięki Aspose.Words obsługa takich zadań staje się dziecinnie prosta, pozwalając Ci skupić się na tworzeniu wysokiej jakości treści.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## Często zadawane pytania
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### Czy mogę ponownie uruchamiać listy w każdej sekcji dla różnych typów list?
+Tak, Aspose.Words dla .NET umożliwia ponowne uruchomienie różnych typów list, w tym list wypunktowanych i numerowanych.
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### Co się stanie, jeśli chcę dostosować format numeracji?
+ Można dostosować format numeracji, modyfikując plik`ListTemplate` właściwość podczas tworzenia listy.
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### Czy istnieje ograniczenie liczby elementów na liście?
+Nie, nie ma określonego limitu liczby elementów, które możesz mieć na liście za pomocą Aspose.Words dla .NET.
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### Czy mogę używać tej funkcji w innych formatach dokumentów, takich jak PDF?
+Tak, możesz użyć Aspose.Words do konwersji dokumentów Worda na inne formaty, takie jak PDF, zachowując jednocześnie strukturę listy.
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go tak, aby odpowiadał Twoim konkretnym potrzebom.
-
-### Często zadawane pytania
-
-#### P: Jak mogę ponownie uruchomić listę w każdej sekcji Aspose.Words?
-
- O: Aby zrestartować listę w każdej sekcji Aspose.Words, musisz utworzyć instancję`List`class i przypisz do niej listę numerowaną. Następnie możesz użyć`List.IsRestartAtEachSection` aby określić, że numeracja powinna być rozpoczynana od nowa w każdej sekcji. Możesz powiązać tę listę z jedną lub kilkoma sekcjami dokumentu, aby numeracja została poprawnie wznowiona w każdej sekcji.
-
-#### P: Czy mogę dostosować format numeracji list w Aspose.Words?
-
- O: Tak, możesz dostosować format numeracji list w Aspose.Words. The`List` class oferuje do tego kilka właściwości, takich jak`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`itp. Możesz użyć tych właściwości, aby ustawić typ listy (numerowana, punktowana itp.), format numeracji (cyfry arabskie, cyfry rzymskie, litery itp.) i inne opcje formatowania numeracji.
-
-#### P: Czy można dodać dodatkowe poziomy do listy numerowanej w Aspose.Words?
-
- O: Tak, możliwe jest dodanie dodatkowych poziomów do listy numerowanej w Aspose.Words. The`ListLevel`class umożliwia ustawienie właściwości formatowania dla każdego poziomu listy. Możesz ustawić opcje takie jak przedrostek, przyrostek, wyrównanie, wcięcie itp. Umożliwia to tworzenie list o wielu poziomach hierarchii.
+### Jak mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
+ Możesz uzyskać bezpłatną wersję próbną od[Wydania Aspose](https://releases.aspose.com/) strona.

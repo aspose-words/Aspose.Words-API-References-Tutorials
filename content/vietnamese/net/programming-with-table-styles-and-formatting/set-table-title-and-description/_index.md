@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa thêm tiêu đề và mô tả vào bảng trong tài liệu Word bằng Aspose.Words for .NET. Nó giống như việc thêm một quả anh đào lên trên ly kem tài liệu của bạn. Sự liên lạc nhỏ này có thể làm cho tài liệu của bạn có nhiều thông tin và chuyên nghiệp hơn. Vì vậy, hãy tiếp tục, thử nghiệm các tiêu đề và mô tả khác nhau và làm cho tài liệu của bạn tỏa sáng!
+Và bạn có nó! Bạn vừa thêm tiêu đề và mô tả vào bảng trong tài liệu Word bằng Aspose.Words for .NET. Nó giống như việc thêm một quả anh đào lên trên ly kem tài liệu của bạn. Sự liên lạc nhỏ này có thể làm cho tài liệu của bạn có nhiều thông tin và chuyên nghiệp hơn. Vì vậy, hãy tiếp tục, thử nghiệm các tiêu đề và mô tả khác nhau và làm cho tài liệu của bạn tỏa sáng!
 
 ## Câu hỏi thường gặp
 

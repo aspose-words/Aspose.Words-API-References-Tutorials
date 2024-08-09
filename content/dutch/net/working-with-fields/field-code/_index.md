@@ -9,7 +9,7 @@ url: /nl/net/working-with-fields/field-code/
 ---
 ## Invoering
 
-In deze handleiding onderzoeken we hoe u met veldcodes in uw Word-documenten kunt werken met Aspose.Words voor .NET. Aan het einde van deze zelfstudie kunt u gemakkelijk door velden navigeren, de codes ervan extraheren en deze informatie voor uw behoeften gebruiken. Of u nu veldeigenschappen wilt inspecteren of documentwijzigingen wilt automatiseren, deze stapsgewijze handleiding zorgt ervoor dat u gemakkelijk met veldcodes kunt omgaan.
+In deze handleiding onderzoeken we hoe u met veldcodes in uw Word-documenten kunt werken met Aspose.Words voor .NET. Aan het einde van deze zelfstudie kunt u gemakkelijk door velden navigeren, hun codes extraheren en deze informatie voor uw behoeften gebruiken. Of u nu veldeigenschappen wilt inspecteren of documentwijzigingen wilt automatiseren, deze stapsgewijze handleiding zorgt ervoor dat u gemakkelijk met veldcodes kunt omgaan.
 
 ## Vereisten
 
@@ -115,4 +115,4 @@ Veldcodes zijn tijdelijke aanduidingen in een Word-document die op dynamische wi
 
 ### Waar kan ik meer informatie krijgen over Aspose.Words?
 
-Voor gedetailleerde documentatie, tutorials en ondersteuning gaat u naar de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/), [Pagina downloaden](https://releases.aspose.com/words/net/) , of[Helpforum](https://forum.aspose.com/c/words/8).
+Voor gedetailleerde documentatie, tutorials en ondersteuning gaat u naar de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/), [Pagina downloaden](https://releases.aspose.com/words/net/) , of[Ondersteuningsforum](https://forum.aspose.com/c/words/8).

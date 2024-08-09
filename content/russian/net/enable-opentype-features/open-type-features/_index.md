@@ -106,7 +106,7 @@ HarfBuzz — это механизм формирования текста с о
 Да, Aspose.Words поддерживает различные механизмы формирования текста. Тем не менее, HarfBuzz настоятельно рекомендуется из-за его всесторонней поддержки функций OpenType.
 
 ### Совместим ли Aspose.Words со всеми версиями .NET?
- Aspose.Words поддерживает различные версии .NET, включая .NET Framework, .NET Core и .NET Standard. Проверить[документация](https://reference.aspose.com/words/net/) для получения подробной информации о совместимости.
+ Aspose.Words поддерживает различные версии .NET, включая .NET Framework, .NET Core и .NET Standard. Проверьте[документация](https://reference.aspose.com/words/net/) для получения подробной информации о совместимости.
 
 ### Как я могу попробовать Aspose.Words перед покупкой?
  Вы можете скачать бесплатную пробную версию на сайте[Веб-сайт Aspose](https://releases.aspose.com/) и запросить временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).

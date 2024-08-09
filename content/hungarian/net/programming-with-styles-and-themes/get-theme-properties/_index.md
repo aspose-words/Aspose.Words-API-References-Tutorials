@@ -108,7 +108,7 @@ Igen, az Aspose.Words for .NET segítségével lekérheti a téma tulajdonságai
 
 ### Hogyan alkalmazhatok új témát egy Word dokumentumra?
 
- Új téma alkalmazásához be kell állítania a téma tulajdonságait`Document` tárgy. Ellenőrizd a[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/) a témák alkalmazásának részleteiért.
+ Új téma alkalmazásához be kell állítania a téma tulajdonságait`Document` objektum. Ellenőrizze a[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/) a témák alkalmazásának részleteiért.
 
 ### Hol kaphatok támogatást az Aspose.Words for .NET-hez?
 

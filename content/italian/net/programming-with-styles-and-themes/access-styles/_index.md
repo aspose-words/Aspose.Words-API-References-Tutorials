@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-styles-and-themes/access-styles/
 ---
-## introduzione
+## Introduzione
 
 Sei pronto per tuffarti nel mondo dello stile dei documenti in Word? Che tu stia creando un report complesso o semplicemente modificando il tuo curriculum, capire come accedere e manipolare gli stili può cambiare le regole del gioco. In questo tutorial esploreremo come ottenere stili di documento utilizzando Aspose.Words per .NET, una potente libreria che ti consente di interagire a livello di codice con i documenti di Word.
 

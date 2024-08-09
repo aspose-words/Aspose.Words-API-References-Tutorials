@@ -151,4 +151,4 @@ Igen, a szövegdobozok bármilyen sorrendben összekapcsolhatók, beleértve a n
 Igen, az egyes szövegmezőkön belüli szöveg stílusát külön-külön alakíthatja, így rugalmasságot biztosít a tervezésben és a formázásban.
 
 ### Hol találhatok további forrásokat az Aspose.Words szövegdobozaival való munkáról?
- További információkért tekintse meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatói fórum](https://forum.aspose.com/c/words/8).
+ További információkért tekintse meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatási fórum](https://forum.aspose.com/c/words/8).

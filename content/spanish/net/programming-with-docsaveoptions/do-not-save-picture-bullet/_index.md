@@ -2,7 +2,7 @@
 title: No guardar viñeta de imagen
 linktitle: No guardar viñeta de imagen
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a manejar viñetas de imágenes en Aspose.Words para .NET con nuestra guía paso a paso. Simplifique la gestión de documentos y cree documentos profesionales de Word sin esfuerzo.
+description: Aprenda a manejar viñetas de imágenes en Aspose.Words para .NET con nuestra guía paso a paso. Simplifique la gestión de documentos y cree documentos de Word profesionales sin esfuerzo.
 type: docs
 weight: 10
 url: /es/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
@@ -62,7 +62,7 @@ Ahora, configuremos las opciones de guardar para especificar que las viñetas de
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- Configurando`SavePictureBullet` a`false`, le indica a Aspose.Words que no guarde viñetas de imágenes en el documento de salida.
+ Al configurar`SavePictureBullet` a`false`, le indica a Aspose.Words que no guarde viñetas de imágenes en el documento de salida.
 
 ## Paso 4: guarde el documento
 

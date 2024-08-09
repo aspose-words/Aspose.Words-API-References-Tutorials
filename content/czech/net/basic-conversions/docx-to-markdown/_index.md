@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/basic-conversions/docx-to-markdown/
 ---
-## Úvod
+## Zavedení
 
 V oblasti vývoje .NET může programová manipulace s dokumenty Word výrazně zvýšit produktivitu a funkčnost. Aspose.Words for .NET vyniká jako výkonné API, které umožňuje vývojářům bezproblémově integrovat možnosti zpracování dokumentů do jejich aplikací. Ať už chcete převádět, vytvářet, upravovat nebo dokonce generovat dokumenty od začátku, Aspose.Words poskytuje robustní nástroje pro efektivní zefektivnění těchto úkolů.
 
@@ -16,9 +16,9 @@ V oblasti vývoje .NET může programová manipulace s dokumenty Word výrazně 
 Než se pustíte do používání Aspose.Words for .NET k převodu souborů DOCX na Markdown, ujistěte se, že máte splněny následující předpoklady:
 
 - Vývojové prostředí: Pracovní znalost C# a .NET frameworku.
-- Aspose.Words for .NET: Stáhněte si a nainstalujte Aspose.Words for .NET z[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Stáhněte si a nainstalujte Aspose.Words for .NET z[zde](https://releases.aspose.com/words/net/).
 - Integrované vývojové prostředí (IDE): Visual Studio nebo jakékoli jiné preferované IDE.
-- Základní porozumění: Seznámení s koncepty zpracování dokumentů.
+- Základní porozumění: Znalost konceptů zpracování dokumentů.
 
 ## Importovat jmenné prostory
 
@@ -75,10 +75,10 @@ Aspose.Words podporuje širokou škálu formátů dokumentů včetně DOCX, DOC,
 Ano, Aspose.Words poskytuje robustní API pro manipulaci s tabulkami, obrázky, formátováním textu a dalšími v dokumentech.
 
 ### Kde najdu podrobnou dokumentaci k Aspose.Words pro .NET?
- K dispozici je podrobná dokumentace[tady](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat dočasnou licenci pro Aspose.Words pro .NET?
- Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Kde mohu získat podporu komunity pro Aspose.Words pro .NET?
- Můžete najít podporu komunity a komunikovat s ostatními uživateli[tady](https://forum.aspose.com/c/words/8).
+ Můžete najít podporu komunity a komunikovat s ostatními uživateli[zde](https://forum.aspose.com/c/words/8).

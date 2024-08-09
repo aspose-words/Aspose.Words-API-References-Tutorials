@@ -15,7 +15,7 @@ Dans le domaine du traitement et de l'automatisation des documents, Aspose.Words
 
 Avant de vous lancer dans ce didacticiel, assurez-vous que les conditions préalables suivantes sont remplies :
 
-### Logiciels requis
+### Configuration logicielle requise
 
 1. Visual Studio : installé et configuré sur votre système.
 2.  Aspose.Words for .NET : téléchargé et intégré à votre projet Visual Studio. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
@@ -83,7 +83,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusion
 
-En conclusion, ce didacticiel a fourni un guide complet sur la façon de supprimer efficacement des champs des documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez automatiser le processus de suppression de champs au sein de vos applications, améliorant ainsi la productivité et l'efficacité des tâches de gestion de documents.
+En conclusion, ce didacticiel a fourni un guide complet sur la façon de supprimer efficacement des champs des documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez automatiser le processus de suppression de champs au sein de vos applications, améliorant ainsi la productivité et l'efficacité des tâches de gestion documentaire.
 
 ## FAQ
 
@@ -100,4 +100,4 @@ Vous pouvez utiliser des blocs try-catch pour gérer les exceptions pouvant surv
 Oui, la méthode présentée ici cible spécifiquement uniquement les champs et laisse les autres contenus inchangés.
 
 ### Où puis-je trouver plus de ressources et d’assistance pour Aspose.Words ?
- Visiter le[Aspose.Words pour la documentation de l'API .NET](https://reference.aspose.com/words/net/) et le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) Pour plus d'aide.
+ Visitez le[Aspose.Words pour la documentation de l'API .NET](https://reference.aspose.com/words/net/) et le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) pour obtenir de l'aide supplémentaire.

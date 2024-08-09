@@ -14,7 +14,7 @@ Neste guia, exploraremos como configurar opções de carregamento RTF usando Asp
 
 ## Pré-requisitos
 
- Antes de começar, certifique-se de ter a biblioteca Aspose.Words for Java integrada ao seu projeto. Você pode baixá-lo no[local na rede Internet](https://releases.aspose.com/words/java/).
+ Antes de começar, certifique-se de ter a biblioteca Aspose.Words for Java integrada ao seu projeto. Você pode baixá-lo no[site](https://releases.aspose.com/words/java/).
 
 ## Etapa 1: configurar opções de carregamento RTF
 

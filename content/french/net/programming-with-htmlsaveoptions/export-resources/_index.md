@@ -87,12 +87,12 @@ Cette ligne de code enregistre le document au format HTML, ainsi que les ressour
 
 ## Conclusion
 
-Et voila! Vous avez exporté avec succès des ressources tout en enregistrant un document Word au format HTML à l'aide d'Aspose.Words pour .NET. Avec cette puissante bibliothèque, la gestion des documents Word par programmation devient un jeu d’enfant. Que vous travailliez sur une application Web ou que vous ayez simplement besoin de convertir des documents pour une utilisation hors ligne, Aspose.Words est là pour vous.
+Et voilà ! Vous avez exporté avec succès des ressources tout en enregistrant un document Word au format HTML à l'aide d'Aspose.Words pour .NET. Avec cette puissante bibliothèque, la gestion des documents Word par programmation devient un jeu d’enfant. Que vous travailliez sur une application Web ou que vous ayez simplement besoin de convertir des documents pour une utilisation hors ligne, Aspose.Words est là pour vous.
 
 ## FAQ
 
 ### Puis-je exporter des images avec des polices et du CSS ?
- Oui, vous pouvez! Aspose.Words for .NET prend également en charge l'exportation d'images. Assurez-vous simplement de configurer le`HtmlSaveOptions` par conséquent.
+ Oui, vous pouvez ! Aspose.Words for .NET prend également en charge l'exportation d'images. Assurez-vous simplement de configurer le`HtmlSaveOptions` par conséquent.
 
 ### Existe-t-il un moyen d'intégrer du CSS au lieu d'utiliser une feuille de style externe ?
  Absolument. Vous pouvez définir`CssStyleSheetType` à`CssStyleSheetType.Embedded` si vous préférez les styles intégrés.
@@ -101,7 +101,7 @@ Et voila! Vous avez exporté avec succès des ressources tout en enregistrant un
  Vous pouvez spécifier n'importe quel nom de fichier dans le champ`doc.Save` méthode. Par exemple,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
 ### Aspose.Words prend-il en charge d'autres formats que HTML ?
- Oui, il prend en charge divers formats, notamment PDF, DOCX, TXT, etc. Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour une liste complète.
+ Oui, il prend en charge divers formats, notamment PDF, DOCX, TXT, etc. Découvrez le[documentation](https://reference.aspose.com/words/net/) pour une liste complète.
 
 ### Où puis-je obtenir plus de soutien et de ressources ?
 Pour plus d'aide, visitez le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) . Vous pouvez également trouver une documentation détaillée et des exemples sur le[Site Aspose](https://reference.aspose.com/words/net/).

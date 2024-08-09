@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Helyezzen be egy diagramot
 
- Ezután beszúrunk egy diagramot a dokumentumba a`DocumentBuilder` tárgy.
+ Ezután beszúrunk egy diagramot a dokumentumba a`DocumentBuilder` objektum.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -101,7 +101,7 @@ Ez a parancs elmenti a Word dokumentumot a diagrammal a megadott elérési útra
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan rejthet el diagramtengelyt egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony könyvtár megkönnyíti a Word-dokumentumok programozott kezelését. Ezeket a lépéseket követve minimális erőfeszítéssel személyre szabott és professzionális megjelenésű dokumentumokat hozhat létre.
+Gratulálok! Sikeresen megtanulta, hogyan rejthet el diagramtengelyt egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony könyvtár megkönnyíti a Word-dokumentumok programozott kezelését. Ezeket a lépéseket követve minimális erőfeszítéssel személyre szabott és professzionális megjelenésű dokumentumokat hozhat létre.
 
 ## GYIK
 
@@ -109,7 +109,7 @@ Gratulálunk! Sikeresen megtanulta, hogyan rejthet el diagramtengelyt egy Word-d
 Az Aspose.Words for .NET egy hatékony API Word dokumentumok létrehozására, szerkesztésére, konvertálására és manipulálására .NET alkalmazásokon belül.
 
 ### Elrejthetem az X és az Y tengelyt is egy diagramban?
- Igen, mindkét tengelyt elrejtheti a`Hidden` mindkettő tulajdona`AxisX`és`AxisY` nak nek`true`.
+ Igen, mindkét tengelyt elrejtheti a`Hidden` mindkettő tulajdona`AxisX`és`AxisY` hogy`true`.
 
 ### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
  Igen, ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).

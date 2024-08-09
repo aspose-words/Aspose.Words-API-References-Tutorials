@@ -16,12 +16,12 @@ url: /zh/net/working-with-revisions/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [接受修订](./accept-revisions/) | 了解如何使用 Aspose.Words for .NET 接受对 Word 文档的修订。 |
-| [获取单词的修订类型](./get-revision-types/) | 使用 Aspose.Words for .NET 获取 Word 文档中单词的修订类型。 |
-| [获取修订组](./get-revision-groups/) | 使用 Aspose.Words for .NET 在 Word 文档中获取修订组详细信息。 |
-| [删除 PDF 文件中的注释](./remove-comments-in-pdf/) | 使用 Aspose.Words for .NET 删除 PDF 文件中的注释。 |
-| [在气球中显示修订](./show-revisions-in-balloons/) | 使用 Aspose.Words for .NET 在气球中显示修订内容。 |
-| [获取修订组详细信息](./get-revision-group-details/) | 使用 Aspose.Words for .NET 在 Word 文档中获取修订组详细信息。 |
-| [访问修订版本](./access-revised-version/) | 使用 Aspose.Words for .NET 访问 Word 文档的修订版本。 |
-| [在跟踪文档中移动节点](./move-node-in-tracked-document/) | 使用 Aspose.Words for .NET 移动跟踪文档中的节点。 |
-| [形状修改](./shape-revision/) | 使用 Aspose.Words for .NET 修改 Word 文档中的形状。 |
+| [接受修订](./accept-revisions/) | 使用 Aspose.Words for .NET 掌握文档修订。学习如何轻松跟踪、接受和拒绝更改。提升您的文档管理技能。 |
+| [获取单词的修订类型](./get-revision-types/) |了解如何使用 Aspose.Words for .NET 获取 Word 文档中单词的修订类型。本分步指南可帮助您高效处理文档修订。 |
+| [获取修订组](./get-revision-groups/) | 通过这份全面的分步指南，了解如何使用 Aspose.Words for .NET 从 Word 文档中检索修订组。非常适合文档管理。 |
+| [删除 PDF 文件中的注释](./remove-comments-in-pdf/) | 通过我们的分步指南了解如何使用 Aspose.Words for .NET 从 PDF 文件中删除注释。 |
+| [在气球中显示修订](./show-revisions-in-balloons/) | 了解如何使用 Aspose.Words for .NET 在气泡框中显示修订。本详细指南将引导您完成每个步骤，确保您的文档更改清晰且井然有序。 |
+| [获取修订组详细信息](./get-revision-group-details/) | 按照本分步指南使用 Aspose.Words for .NET 轻松获取 Word 文档中的修订组详细信息。非常适合 .NET 开发人员。 |
+| [访问修订版本](./access-revised-version/) | 了解如何使用 Aspose.Words for .NET 访问和显示文档的修订版本。按照我们的分步指南进行无缝文档管理。 |
+| [在跟踪文档中移动节点](./move-node-in-tracked-document/) | 通过我们详细的分步指南，了解如何使用 Aspose.Words for .NET 移动跟踪的 Word 文档中的节点。非常适合开发人员。 |
+| [形状修改](./shape-revision/) | 通过本综合指南了解如何使用 Aspose.Words for .NET 处理 Word 文档中的形状修订。掌握跟踪更改、插入形状等。 |

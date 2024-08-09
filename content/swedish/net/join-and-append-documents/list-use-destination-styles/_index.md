@@ -9,7 +9,7 @@ url: /sv/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## Introduktion
 
-Har du någonsin provat att slå samman Word-dokument och trasslat in dig i formateringen? Det är som att försöka blanda olja och vatten ibland, eller hur? Tja, idag dyker vi in i ett snyggt trick med Aspose.Words för .NET som kommer att rädda dig från denna huvudvärk. Vi kommer att lära oss hur man importerar listor från ett dokument till ett annat utan att förstöra numrering och stilar. Är du redo att göra ditt liv lite enklare? Låt oss börja!
+Har du någonsin provat att slå samman Word-dokument och trasslat in dig i formateringen? Det är som att försöka blanda olja och vatten ibland, eller hur? Tja, idag dyker vi in i ett snyggt trick med Aspose.Words för .NET som kommer att rädda dig från denna huvudvärk. Vi kommer att lära oss hur man importerar listor från ett dokument till ett annat utan att förstöra numrering och stilar. Är du redo att göra ditt liv lite enklare? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Har du de? Grymt bra. Låt oss nu dela upp det här steg-för-steg.
+Har du de? Fantastisk. Låt oss nu dela upp det här steg-för-steg.
 
 ## Steg 1: Ställ in dina dokumentsökvägar
 
@@ -41,7 +41,7 @@ Varje projekt börjar med att organisera dina filer. Låt oss peka vår kod till
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument lagras. Lätt, eller hur?
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument lagras. Lätt, eller hur?
 
 ## Steg 2: Ladda dina käll- och måldokument
 
@@ -82,7 +82,7 @@ Där har du det! Att slå samman dokument utan att tappa förståndet över form
 Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dokument programmatiskt. Det låter dig skapa, ändra och konvertera dokument i olika format.
 
 ### Hur installerar jag Aspose.Words för .NET?
- Du kan ladda ner den från[hemsida](https://releases.aspose.com/words/net/) och följ installationsinstruktionerna i[dokumentation](https://reference.aspose.com/words/net/).
+ Du kan ladda ner den från[webbplats](https://releases.aspose.com/words/net/) och följ installationsanvisningarna i[dokumentation](https://reference.aspose.com/words/net/).
 
 ### Kan jag använda Aspose.Words gratis?
  Aspose.Words erbjuder en[gratis provperiod](https://releases.aspose.com/) med begränsade funktioner. För full åtkomst måste du köpa en licens[här](https://purchase.aspose.com/buy).

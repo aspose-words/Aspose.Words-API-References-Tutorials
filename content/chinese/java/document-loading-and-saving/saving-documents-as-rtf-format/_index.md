@@ -61,7 +61,7 @@ doc.save("path/to/output.rtf", saveOptions);
 
 代替`"path/to/output.rtf"`使用 RTF 输出文件的所需路径和文件名。
 
-## 使用 Aspose.Words for Java 将文档保存为 RTF 格式的完整源代码
+## 在 Aspose.Words for Java 中将文档保存为 RTF 格式的完整源代码
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");

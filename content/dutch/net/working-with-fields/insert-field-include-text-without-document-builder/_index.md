@@ -69,7 +69,7 @@ fieldIncludeText.SourceFullName = dataDir + "IncludeText.docx";
 
 ## Stap 5: Voeg een alinea toe aan het document
 
-Nadat het veld is ingesteld, voegen we de alinea toe aan de eerste sectie van het document.
+Nadat het veld is ingesteld, voegen we de alinea toe aan de eerste sectietekst van het document.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(para);

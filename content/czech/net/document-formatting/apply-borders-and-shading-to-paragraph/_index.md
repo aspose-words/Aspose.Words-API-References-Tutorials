@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-## Úvod
+## Zavedení
 
-Ahoj, přemýšleli jste někdy nad tím, jak docílit toho, aby vaše dokumenty ve Wordu vynikly efektními okraji a stínováním? Tak to jste na správném místě! Dnes se ponoříme do světa Aspose.Words for .NET, abychom oživili naše odstavce. Představte si, že váš dokument vypadá stejně elegantně jako práce profesionálního návrháře s pouhými několika řádky kódu. Jste připraveni začít? Pojďme!
+Ahoj, přemýšleli jste někdy nad tím, jak docílit toho, aby vaše dokumenty ve Wordu vynikly efektními okraji a stínováním? Tak to jste na správném místě! Dnes se ponoříme do světa Aspose.Words for .NET, abychom oživili naše odstavce. Představte si, že váš dokument vypadá stejně elegantně jako práce profesionálního návrháře s pouhými několika řádky kódu. Jste připraveni začít? Jdeme na to!
 
 ## Předpoklady
 
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Nyní si tento proces rozdělíme na malé kroky. Každý krok bude mít nadpis a podrobné vysvětlení. Připraveni? Pojďme!
+Nyní si tento proces rozdělíme na malé kroky. Každý krok bude mít nadpis a podrobné vysvětlení. Připraveni? Jdeme na to!
 
 ## Krok 1: Nastavte adresář dokumentů
 
@@ -109,11 +109,11 @@ A tady to máte! Pomocí několika řádků kódu jsme přeměnili prostý odsta
 
 ## FAQ
 
-### Mohu použít různé styly čar pro každé ohraničení?  
+### Mohu pro každé ohraničení použít různé styly čar?  
  Absolutně! Aspose.Words for .NET vám umožňuje přizpůsobit každý okraj individuálně. Stačí nastavit`LineStyle` pro každý typ ohraničení, jak je uvedeno v průvodci.
 
 ### Jaké další stínovací textury jsou k dispozici?  
- Můžete použít několik textur, například plný, vodorovný pruh, svislý pruh a další. Zkontrolovat[Založte dokumentaci](https://reference.aspose.com/words/net/) pro úplný seznam.
+ Můžete použít několik textur, například plný, vodorovný pruh, svislý pruh a další. Zkontrolujte[Založte dokumentaci](https://reference.aspose.com/words/net/) pro úplný seznam.
 
 ### Jak mohu změnit barvu okraje?  
  Barvu ohraničení můžete nastavit pomocí`Color` vlastnost pro každou hranici. Například,`borders[BorderType.Left].Color = Color.Red;`.

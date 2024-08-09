@@ -15,7 +15,7 @@ Bem-vindo ao mundo da automação de documentos com Aspose.Words for .NET! Você
 
 Antes de começarmos, certifique-se de ter o seguinte:
 
-1.  Aspose.Words para .NET: você pode[Baixe a última versão aqui](https://releases.aspose.com/words/net/) . Se precisar comprar uma licença, você pode fazê-lo[aqui](https://purchase.aspose.com/buy) . Alternativamente, você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) ou experimente com um[teste grátis](https://releases.aspose.com/).
+1.  Aspose.Words para .NET: você pode[baixe a versão mais recente aqui](https://releases.aspose.com/words/net/) . Se precisar comprar uma licença, você pode fazê-lo[aqui](https://purchase.aspose.com/buy) . Alternativamente, você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) ou experimente com um[teste gratuito](https://releases.aspose.com/).
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE C#.
 3. Conhecimento básico de C#: A familiaridade com a programação C# tornará este tutorial muito fácil.
 
@@ -50,7 +50,7 @@ Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 
 ## Etapa 3: definir o retorno de chamada de mesclagem de campos
 
-Para lidar com o processo de mesclagem, você precisará definir uma função de retorno de chamada. Esta função será responsável por inserir documentos nos campos de mesclagem especificados.
+Para lidar com o processo de fusão, você precisará definir uma função de retorno de chamada. Esta função será responsável por inserir documentos nos campos de mesclagem especificados.
 
 ```csharp
 mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
@@ -139,7 +139,7 @@ E aí está! Você inseriu documentos com êxito em campos específicos durante 
 ## Perguntas frequentes
 
 ### Posso inserir vários documentos em diferentes campos de mesclagem?
-Sim você pode. Basta especificar os campos de mesclagem apropriados e os caminhos de documento correspondentes no campo`MailMerge.Execute` método.
+Sim, você pode. Basta especificar os campos de mesclagem apropriados e os caminhos de documento correspondentes no campo`MailMerge.Execute` método.
 
 ### É possível formatar o documento inserido de forma diferente do documento principal?
  Absolutamente! Você pode usar o`ImportFormatMode` parâmetro no`NodeImporter` para controlar a formatação.

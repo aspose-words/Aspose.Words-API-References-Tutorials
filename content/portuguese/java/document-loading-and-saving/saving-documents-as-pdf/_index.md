@@ -101,7 +101,7 @@ saveOptions.setDml3DEffectsRenderingMode(Dml3DEffectsRenderingMode.ADVANCED);
 doc.save("output.pdf", saveOptions);
 ```
 
-## Interpolando imagens
+## Interpolando Imagens
 
 Você pode ativar a interpolação de imagem para melhorar a qualidade da imagem:
 

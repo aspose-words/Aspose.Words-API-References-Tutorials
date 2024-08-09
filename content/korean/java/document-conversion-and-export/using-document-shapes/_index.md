@@ -20,7 +20,7 @@ url: /ko/java/document-conversion-and-export/using-document-shapes/
 
 ### 그룹 모양 삽입
 
- ㅏ`GroupShape` 여러 모양을 함께 그룹화할 수 있습니다. 다음은`GroupShape`:
+ 에이`GroupShape` 여러 모양을 함께 그룹화할 수 있습니다. 다음은`GroupShape`:
 
 ```java
 Document doc = new Document();

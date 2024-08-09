@@ -164,4 +164,4 @@ Tak, możesz zmodyfikować procedurę obsługi wywołania zwrotnego, aby obsług
 Możesz uzyskać wsparcie, odwiedzając stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Czy mogę zachować formatowanie wstawionego dokumentu?
- Tak`NodeImporter` class pozwala określić sposób obsługi formatowania podczas importowania węzłów z jednego dokumentu do drugiego.
+ Tak,`NodeImporter` class pozwala określić sposób obsługi formatowania podczas importowania węzłów z jednego dokumentu do drugiego.

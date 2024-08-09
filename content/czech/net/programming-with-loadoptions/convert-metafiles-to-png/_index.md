@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/convert-metafiles-to-png/
 ---
-## Úvod
+## Zavedení
 
 Převod metasouborů do formátu PNG v dokumentech aplikace Word může být se správnými nástroji a pokyny hračkou. Tento tutoriál vás provede procesem pomocí Aspose.Words pro .NET. Na konci budete schopni zacházet s metasoubory jako profesionál!
 
@@ -15,7 +15,7 @@ Převod metasouborů do formátu PNG v dokumentech aplikace Word může být se 
 
 Před potápěním se ujistěte, že máte následující:
 
-1.  Aspose.Words for .NET – Stáhněte si nejnovější verzi z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET – Stáhněte si nejnovější verzi z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí - Visual Studio nebo jakékoli jiné .NET kompatibilní IDE.
 3. Základní znalost C# - Porozumění základům programování v C# bude užitečné.
 4. Dokument aplikace Word – Ujistěte se, že máte dokument aplikace Word s metasoubory, které chcete převést.
@@ -77,12 +77,12 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste převedli metasoubory na PNG v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná funkce může zjednodušit manipulaci s grafikou ve vašich dokumentech a učinit je dostupnějšími a snadněji spravovatelnými. Šťastné kódování!
+Gratuluji! Úspěšně jste převedli metasoubory na PNG v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná funkce může zjednodušit manipulaci s grafikou ve vašich dokumentech a učinit je dostupnějšími a snadněji spravovatelnými. Šťastné kódování!
 
 ## Nejčastější dotazy
 
 ### Mohu převést jiné typy souborů kromě metasouborů do PNG?
- Aspose.Words for .NET poskytuje rozsáhlou podporu pro různé formáty souborů. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Aspose.Words for .NET poskytuje rozsáhlou podporu pro různé formáty souborů. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Existuje způsob, jak dávkově zpracovat více dokumentů?
 Ano, můžete procházet adresář dokumentů a aplikovat stejné možnosti načítání na každý soubor.
@@ -94,4 +94,4 @@ Metasoubory zůstanou ve svém původním formátu, který nemusí být kompatib
  Ano, pro plnou funkčnost je nutná licence. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro zkušební účely.
 
 ### Mohu tuto metodu použít pro jiné grafické formáty jako JPEG nebo GIF?
- Tato specifická metoda je určena pro metasoubory, ale Aspose.Words pro .NET podporuje různé formáty obrázků. Odkazovat na[dokumentace](https://reference.aspose.com/words/net/) Pro více informací.
+ Tato specifická metoda je určena pro metasoubory, ale Aspose.Words pro .NET podporuje různé formáty obrázků. Viz[dokumentace](https://reference.aspose.com/words/net/) pro více informací.

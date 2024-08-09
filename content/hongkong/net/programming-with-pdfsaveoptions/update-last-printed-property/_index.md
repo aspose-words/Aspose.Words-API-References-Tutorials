@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
 ## 結論
 
-現在你就擁有了！透過執行下列步驟，您可以使用 Aspose.Words for .NET 輕鬆更新 PDF 文件中最後列印的屬性。此方法可確保您的文件管理流程保持高效且最新。嘗試一下，看看它如何簡化您的工作流程。
+現在你就得到它了！透過執行下列步驟，您可以使用 Aspose.Words for .NET 輕鬆更新 PDF 文件中最後列印的屬性。此方法可確保您的文件管理流程保持高效且最新。嘗試一下，看看它如何簡化您的工作流程。
 
 ## 常見問題解答
 

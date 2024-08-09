@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 ### PDF가 포함된 글꼴 없이도 올바르게 표시됩니까?
 예, 글꼴이 표준이고 PDF를 보는 시스템에서 사용할 수 있다면 올바르게 표시됩니다.
 
-### PDF에 특정 글꼴만 선택적으로 포함할 수 있습니까?
+### PDF에 특정 글꼴만 선택적으로 포함할 수 있나요?
 예, .NET용 Aspose.Words를 사용하면 포함된 글꼴을 사용자 정의할 수 있으므로 파일 크기를 줄이는 방법에 유연성을 제공합니다.
 
 ### PDF에 포함된 글꼴을 비활성화하려면 .NET용 Aspose.Words가 필요합니까?

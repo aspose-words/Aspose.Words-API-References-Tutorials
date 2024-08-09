@@ -83,7 +83,7 @@ comment.Paragraphs.Add(new Paragraph(doc));
 comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
- Nesta etapa, criamos um`Comment` objeto e adicione um parágrafo e uma sequência com o texto do comentário.
+ Nesta etapa, criamos um`Comment` objeto e adicione um parágrafo e uma execução com o texto do comentário.
 
 ## Etapa 4: definir o intervalo de comentários
 

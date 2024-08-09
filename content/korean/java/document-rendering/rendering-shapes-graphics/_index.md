@@ -106,7 +106,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 Z 순서를 사용하여 모양이 표시되는 순서를 제어할 수 있습니다.
 
 ```java
-shape1.setZOrder(1); // 앞으로 가져 오기
+shape1.setZOrder(1); // 맨 앞으로 가져오기
 shape2.setZOrder(0); // 뒤로 보내기
 ```
 

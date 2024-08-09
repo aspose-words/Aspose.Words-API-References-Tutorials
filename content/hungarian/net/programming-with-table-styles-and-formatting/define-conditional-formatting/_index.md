@@ -15,7 +15,7 @@ A feltételes formázás lehetővé teszi, hogy bizonyos feltételek alapján me
 
 Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-1. Aspose.Words for .NET: Szüksége van az Aspose.Words for .NET könyvtárra. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Szüksége van az Aspose.Words for .NET könyvtárra. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztési környezet: Megfelelő fejlesztői környezet, mint a Visual Studio.
 3. Alapvető C# ismerete: Hasznos lesz a C# programozás ismerete.
 4. Word-dokumentum: Olyan Word-dokumentum, amelyben feltételes formázást kíván alkalmazni.

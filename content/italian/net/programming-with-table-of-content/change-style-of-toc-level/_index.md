@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
-## introduzione
+## Introduzione
 
 Se hai mai avuto bisogno di creare un documento Word professionale, sai quanto può essere cruciale un sommario (TOC). Non solo organizza i tuoi contenuti ma aggiunge anche un tocco di professionalità. Tuttavia, personalizzare il sommario in base al tuo stile può essere un po' complicato. In questo tutorial, esamineremo come modificare lo stile del sommario in un documento di Word utilizzando Aspose.Words per .NET. Pronti a tuffarvi? Iniziamo!
 
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai modificato con successo lo stile del sommario in un documento di Word utilizzando Aspose.Words per .NET. Questa piccola personalizzazione può fare una grande differenza nell'aspetto generale del tuo documento. Non dimenticare di sperimentare altri stili e livelli per personalizzare completamente il tuo sommario.
+Ed ecco qua! Hai modificato con successo lo stile del sommario in un documento di Word utilizzando Aspose.Words per .NET. Questa piccola personalizzazione può fare una grande differenza nell'aspetto generale del tuo documento. Non dimenticare di sperimentare altri stili e livelli per personalizzare completamente il tuo sommario.
 
 ## Domande frequenti
 

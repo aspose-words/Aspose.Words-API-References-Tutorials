@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## Conclusion
 
-Et voila! En utilisant un dossier temporaire lors du chargement de vos documents Word, vous pouvez améliorer considérablement les performances et l'efficacité de vos applications, notamment lorsqu'il s'agit de fichiers volumineux. Cette fonctionnalité simple mais puissante d'Aspose.Words for .NET aide à mieux gérer les ressources et garantit un traitement plus fluide des documents.
+Et voilà ! En utilisant un dossier temporaire lors du chargement de vos documents Word, vous pouvez améliorer considérablement les performances et l'efficacité de vos applications, notamment lorsqu'il s'agit de fichiers volumineux. Cette fonctionnalité simple mais puissante d'Aspose.Words for .NET aide à mieux gérer les ressources et garantit un traitement plus fluide des documents.
 
 ## FAQ
 
@@ -77,4 +77,4 @@ Oui, vous pouvez utiliser n'importe quel répertoire auquel votre application a 
 Oui, cela peut améliorer considérablement les performances en déchargeant une partie de l’utilisation de la mémoire sur le disque.
 
 ### Où puis-je trouver plus d’informations sur Aspose.Words pour .NET ?
- Vous pouvez vous référer au[Documentation](https://reference.aspose.com/words/net/) pour plus de détails et d'exemples.
+ Vous pouvez vous référer au[documentation](https://reference.aspose.com/words/net/) pour plus de détails et d'exemples.

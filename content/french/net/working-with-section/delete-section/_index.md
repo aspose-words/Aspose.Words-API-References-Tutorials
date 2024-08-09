@@ -9,7 +9,7 @@ url: /fr/net/working-with-section/delete-section/
 ---
 ## Introduction
 
-Vous avez donc décidé de plonger dans le monde de la manipulation de documents à l'aide d'Aspose.Words pour .NET. Choix fantastique ! Aspose.Words est une bibliothèque puissante pour gérer tout ce qui concerne les documents Word. Qu'il s'agisse de création, de modification ou de conversion, Aspose.Words est là pour vous. Dans ce guide, nous expliquerons comment supprimer une section d'un document Word. Prêt à devenir un pro Aspose ? Commençons!
+Vous avez donc décidé de plonger dans le monde de la manipulation de documents à l'aide d'Aspose.Words pour .NET. Choix fantastique ! Aspose.Words est une bibliothèque puissante pour gérer tout ce qui concerne les documents Word. Qu'il s'agisse de création, de modification ou de conversion, Aspose.Words est là pour vous. Dans ce guide, nous expliquerons comment supprimer une section d'un document Word. Prêt à devenir un pro Aspose ? Commençons !
 
 ## Conditions préalables
 
@@ -50,7 +50,7 @@ doc.FirstSection.Remove();
 
 ## Conclusion
 
- La manipulation de documents Word par programmation peut vous faire économiser beaucoup de temps et d'efforts. Avec Aspose.Words pour .NET, les tâches telles que la suppression de sections deviennent un jeu d'enfant. N'oubliez pas d'explorer les vastes[Documentation](https://reference.aspose.com/words/net/) pour débloquer des fonctionnalités encore plus puissantes. Bon codage !
+ La manipulation de documents Word par programmation peut vous faire économiser beaucoup de temps et d'efforts. Avec Aspose.Words pour .NET, les tâches telles que la suppression de sections deviennent un jeu d'enfant. N'oubliez pas d'explorer les vastes[documentation](https://reference.aspose.com/words/net/) pour débloquer des fonctionnalités encore plus puissantes. Bon codage !
 
 ## FAQ
 

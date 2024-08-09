@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Indem man es einstellt`FontEmbeddingMode` Zu`EmbedNone`weisen wir Aspose.Words an, diese Schriftarten nicht in das PDF aufzunehmen, um die Dateigröße zu reduzieren.
+ Durch die Einstellung`FontEmbeddingMode` Zu`EmbedNone`weisen wir Aspose.Words an, diese Schriftarten nicht in das PDF aufzunehmen, um die Dateigröße zu reduzieren.
 
 ## Schritt 3: Speichern Sie das Dokument als PDF
 
@@ -85,4 +85,4 @@ Ja, mit Aspose.Words für .NET können Sie anpassen, welche Schriftarten eingebe
 Ja, Aspose.Words für .NET bietet die erforderliche Funktionalität zum Konfigurieren von Schriftarteinbettungsoptionen in PDFs.
 
 ### Wie erhalte ich Unterstützung, wenn ich auf Probleme stoße?
- Besuchen Sie die[Hilfeforum](https://forum.aspose.com/c/words/8) für Hilfe bei allen auftretenden Problemen.
+ Besuchen Sie die[Support-Forum](https://forum.aspose.com/c/words/8) für Hilfe bei allen auftretenden Problemen.

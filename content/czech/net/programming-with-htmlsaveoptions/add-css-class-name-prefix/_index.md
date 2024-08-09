@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
-## Úvod
+## Zavedení
 
 Vítejte! Pokud se ponoříte do světa Aspose.Words pro .NET, budete se těšit. Dnes se podíváme na to, jak přidat předponu názvu třídy CSS při ukládání dokumentu aplikace Word jako HTML pomocí Aspose.Words for .NET. Tato funkce je velmi užitečná, když se chcete vyhnout konfliktům názvů tříd v souborech HTML.
 
@@ -47,7 +47,7 @@ Pokud jste tak ještě neučinili, přidejte Aspose.Words for .NET do svého pro
 Install-Package Aspose.Words
 ```
 
-Skvělý! Nyní jsme připraveni začít kódovat.
+Velký! Nyní jsme připraveni začít kódovat.
 
 ## Krok 2: Vložte svůj dokument
 
@@ -120,7 +120,7 @@ A tady to máte! Pomocí těchto kroků jste úspěšně přidali předponu náz
  The`CssClassNamePrefix`vlastnost pracuje s externím CSS. Pro inline CSS budete potřebovat jiný přístup.
 
 ### Jak mohu zahrnout další možnosti uložení HTML?
- Můžete nakonfigurovat různé vlastnosti`HtmlSaveOptions` k přizpůsobení výstupu HTML. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Můžete nakonfigurovat různé vlastnosti`HtmlSaveOptions` k přizpůsobení výstupu HTML. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Je možné uložit HTML do streamu?
  Absolutně! Dokument můžete uložit do streamu předáním objektu stream do`Save` metoda.

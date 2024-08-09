@@ -16,7 +16,7 @@ Mussten Sie schon einmal mit bestimmten Versionen von MS Word-Dokumenten arbeite
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben.[Hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben.[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Sie können Visual Studio oder jede andere .NET-kompatible IDE verwenden.
 - Grundkenntnisse in C#: Auch wenn wir es einfach halten, sind grundlegende Kenntnisse in C# erforderlich.
 - Beispieldokument: Halten Sie zu Testzwecken ein Word-Dokument in Ihrem Dokumentverzeichnis bereit.
@@ -86,4 +86,4 @@ Absolut! Aspose.Words unterstützt .NET Framework, .NET Core und .NET 5+.
 Ja, Aspose.Words ist eine umfassende Bibliothek, mit der Sie fast alle Aspekte von Word-Dokumenten bearbeiten können.
 
 ### Wo finde ich weitere Beispiele und Dokumentation?
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Informationen.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Informationen.

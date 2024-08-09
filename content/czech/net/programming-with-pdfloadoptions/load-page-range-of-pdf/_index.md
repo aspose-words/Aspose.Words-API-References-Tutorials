@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o práci s PDF v aplikacích .NET, Aspose.Words pro .NET je absolutním převratem. Ať už potřebujete konvertovat, manipulovat nebo extrahovat konkrétní stránky z PDF, tato výkonná knihovna vám pomůže. Dnes se ponoříme do běžného, ale zásadního úkolu: načtení určitého rozsahu stránek z dokumentu PDF. Připoutejte se, když se pustíme do tohoto podrobného návodu!
 
@@ -62,7 +62,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
 ```
 
- Tady,`PageIndex`určuje počáteční stránku (index založený na nule) a`PageCount` určuje počet stránek, které se mají načíst.
+ Zde,`PageIndex`určuje počáteční stránku (index založený na nule) a`PageCount` určuje počet stránek, které se mají načíst.
 
 ## Krok 4: Načtěte dokument PDF
 
@@ -103,6 +103,6 @@ Ano, Aspose.Words for .NET je plně kompatibilní s .NET Core, takže je univerz
 Absolutně! Po načtení můžete se stránkami manipulovat jako s jakýmkoli jiným dokumentem Aspose.Words, včetně úprav, formátování a převodu do jiných formátů.
 
 ### Kde najdu podrobnější dokumentaci?
- Komplexní dokumentaci naleznete na Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).
+ Komplexní dokumentaci naleznete na Aspose.Words pro .NET[zde](https://reference.aspose.com/words/net/).
 
 

@@ -2,88 +2,40 @@
 title: 修正を承認
 linktitle: 修正を承認
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書の修正を受け入れる方法を学びます
+description: Aspose.Words for .NET でドキュメントの改訂をマスターしましょう。変更を簡単に追跡、承認、拒否する方法を学びます。ドキュメント管理スキルを高めましょう。
 type: docs
 weight: 10
 url: /ja/net/working-with-revisions/accept-revisions/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET の Accept Revisions 機能を使用して Word 文書の改訂を承認する手順を説明します。ソース コードを理解し、文書の変更を承認するには、以下の手順に従ってください。
+ドキュメントの改訂が複雑で、複数の作成者によるすべての変更を追跡するのに苦労したことはありませんか? Aspose.Words for .NET を使用すると、Word ドキュメントの改訂管理が簡単になります。この強力なライブラリを使用すると、開発者は変更を簡単に追跡、承認、拒否できるため、ドキュメントが整理され、最新の状態に保たれます。このチュートリアルでは、ドキュメントの初期化からすべての変更の承認まで、Aspose.Words for .NET を使用してドキュメントの改訂を処理する手順を詳しく説明します。
 
-## ステップ1: ドキュメントコンテンツの追加と編集
+## 前提条件
 
-この例では、ドキュメントを作成し、コンテンツを追加します。変更と改訂を示すために、いくつかの段落を使用します。方法は次のとおりです。
+始める前に、次の前提条件が満たされていることを確認してください。
 
-```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- マシンに Visual Studio がインストールされています。
+- .NET フレームワーク (最新バージョンが望ましい)。
+-  Aspose.Words for .NETライブラリ。ダウンロードできます[ここ](https://releases.aspose.com/words/net/).
+- C# プログラミングの基本的な理解。
 
-//最初の段落にテキストを追加し、さらに 2 つの段落を追加します。
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+それでは、具体的な内容に進み、Aspose.Words for .NET を使用してドキュメントの改訂を管理する方法を見てみましょう。
 
-## ステップ2: レビューを追跡してレビューを追加する
+## 名前空間のインポート
 
-リビジョン追跡を有効にして、ドキュメントにリビジョンを追加します。手順は次のとおりです。
+まず最初に、Aspose.Words を操作するために必要な名前空間をインポートする必要があります。コード ファイルの先頭に次の using ディレクティブを追加します。
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-//この段落はリビジョンであり、対応する「IsInsertRevision」フラグが設定されます。
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## ステップ3: 段落を削除して変更を管理する
+プロセスを管理しやすいステップに分解してみましょう。各ステップは詳細に説明され、コードのすべての部分を理解できるようになります。
 
-段落を削除し、保存されたリビジョンを確認します。方法は次のとおりです。
+## ステップ1: ドキュメントを初期化する
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-//リビジョンを追跡しているため、段落はまだ文書内に存在し、「IsDeleteRevision」フラグが設定されます。
-//すべてのレビューが承認または拒否されるまで、Microsoft Word にレビューとして表示されます。
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## ステップ4: 変更を承認する
-
-ドキュメントへのすべての変更を受け入れます。方法は次のとおりです。
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## ステップ5: レビューの追跡を停止する
-
-ドキュメントへの変更がリビジョンとして表示されないように、リビジョンの追跡を停止します。手順は次のとおりです。
-
-```csharp
-doc.StopTrackRevisions();
-```
-## ステップ6: ドキュメントを保存する
-
-テキスト入力フォームフィールドを挿入した後、`Save`メソッド。適切なファイル パスを指定してください。
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### Aspose.Words for .NET を使用した Accept Revisions のサンプル ソース コード
-
-以下は、Aspose.Words for .NET を使用してドキュメントの変更を受け入れるための完全なソース コードです。
-
+まず、新しいドキュメントを作成し、いくつかの段落を追加する必要があります。これにより、変更を追跡するための準備が整います。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//3つの段落がありますが、いずれも修正として登録されていません
-//改訂を追跡しながら文書内のコンテンツを追加/削除すると、
-//これらはドキュメント内にそのように表示され、承認/拒否することができます。
+このステップでは、新しいドキュメントを作成し、それに 3 つの段落を追加しました。これらの段落は、リビジョン追跡のベースラインとして機能します。
+
+## ステップ2: リビジョンの追跡を開始する
+
+次に、リビジョン追跡を有効にする必要があります。これにより、ドキュメントに加えられた変更をすべて記録できます。
+
+```csharp
+//リビジョンの追跡を開始します。
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+電話をかける`StartTrackRevisions`、ドキュメントがその後のすべての変更を追跡できるようにします。作成者の名前と現在の日付がパラメータとして渡されます。
+
+## ステップ3: リビジョンを追加する
+
+リビジョン追跡が有効になったので、新しい段落を追加してみましょう。この追加はリビジョンとしてマークされます。
+
+```csharp
 //この段落はリビジョンであり、それに応じて「IsInsertRevision」フラグが設定されます。
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+ここで、新しい段落 (「段落 4」) が追加されます。リビジョン追跡が有効になっているため、この段落はリビジョンとしてマークされます。
+
+## ステップ4: 段落を削除する
+
+次に、既存の段落を削除し、その変更がどのように追跡されるかを確認します。
+
+```csharp
 //ドキュメントの段落コレクションを取得し、段落を削除します。
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-//リビジョンを追跡しているので、段落はまだ文書内に存在し、「IsDeleteRevision」が設定されます。
-//すべての修正が承認または拒否されるまで、Microsoft Word に修正として表示されます。
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+このステップでは、3 番目の段落が削除されます。リビジョン追跡により、この削除は記録され、段落はドキュメントからすぐに削除されるのではなく、削除対象としてマークされます。
 
-//変更を承認すると、削除リビジョンの段落は削除されます。
+## ステップ5: すべての変更を承認する
+
+最後に、追跡されたすべての変更を承認して、ドキュメントの変更を確定しましょう。
+
+```csharp
+//すべての修正を承認します。
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-//リビジョンの追跡を停止すると、このテキストは通常のテキストとして表示されます。
-//ドキュメントが変更された場合、リビジョンはカウントされません。
+電話をかける`AcceptAllRevisions`、すべての変更 (追加と削除) が承認され、ドキュメントに適用されることを確認します。変更はマークされなくなり、ドキュメントに統合されます。
+
+## ステップ6: リビジョンの追跡を停止する
+
+### リビジョントラッキングを無効にする
+
+最後に、リビジョン追跡を無効にして、それ以上の変更の記録を停止することができます。
+
+```csharp
+//リビジョンの追跡を停止します。
 doc.StopTrackRevisions();
+```
 
+この手順により、ドキュメントは新しい変更の追跡を停止し、それ以降のすべての編集を通常のコンテンツとして扱います。
+
+## ステップ7: ドキュメントを保存する
+
+最後に、変更したドキュメントを指定されたディレクトリに保存します。
+
+```csharp
 //ドキュメントを保存します。
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+ドキュメントを保存することで、すべての変更と承認された改訂が確実に保存されます。
+
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET の Accept Revisions 機能を使用して Word 文書の改訂を承認する方法を学習しました。ドキュメント コンテンツの追加と編集、改訂の追跡、改訂された段落の削除、すべての変更の承認、改訂の追跡の停止の手順を実行しました。これで、この知識を適用して、Aspose.Words for .NET を使用して独自の Word 文書の改訂を効果的に管理できます。
+ドキュメントの改訂を管理するのは大変な作業ですが、Aspose.Words for .NET を使用すると、簡単かつ効率的に管理できます。このガイドで説明されている手順に従うことで、Word ドキュメントの変更を簡単に追跡、承認、拒否でき、ドキュメントが常に最新かつ正確であることを保証できます。今すぐ Aspose.Words の世界に飛び込んで、ドキュメント管理を効率化しましょう。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET でリビジョン追跡を有効にするにはどうすればいいですか?
+### Aspose.Words for .NET でリビジョンの追跡を開始するにはどうすればよいですか?
 
-#### 解決策1:
+リビジョンの追跡を開始するには、`StartTrackRevisions`メソッドをドキュメント オブジェクトに適用し、作成者の名前と現在の日付を渡します。
 
- A: Aspose.Words for .NETでリビジョントラッキングを有効にするには、`StartTrackRevisions`方法の`Document`オブジェクトを作成し、リビジョン追跡の作成者名と開始日を指定します。
+### いつでもリビジョンの追跡を停止できますか?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+はい、リビジョンの追跡を停止するには、`StopTrackRevisions`ドキュメント オブジェクトのメソッド。
 
-#### 解決策2:
+### ドキュメント内のすべての変更を承認するにはどうすればよいですか?
 
- A: リビジョントラッキングを有効にするには、`Document`コンストラクタは受け入れる`trackRevisions`そして`author`パラメーター。
+すべての修正を承認するには、`AcceptAllRevisions`ドキュメント オブジェクトのメソッド。
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### 特定の修正を拒否することはできますか?
 
-#### Q: Aspose.Words for .NET を使用してドキュメント内のすべての変更を受け入れるにはどうすればよいですか?
+はい、特定のリビジョンを拒否するには、そのリビジョンに移動して`Reject`方法。
 
- A:`AcceptAllRevisions`方法の`Document`ドキュメントに加えられたすべての変更を受け入れるオブジェクト。
+### Aspose.Words for .NET はどこからダウンロードできますか?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### Q: 承認された修正を加えた変更済みドキュメントを保存するにはどうすればよいですか?
-
-使用`Save`方法の`Document`オブジェクトを使用して、変更されたドキュメントを承認されたリビジョンとともに保存します。正しいファイル パスを必ず指定してください。
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### Q: Aspose.Words for .NET でリビジョンの追跡を停止するにはどうすればよいですか?
-
- A:`StopTrackRevisions`方法の`Document`追跡リビジョンを停止するにはオブジェクトを使用します。
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### Q: Aspose.Words for .NET を使用してドキュメント内の修正された段落を削除するにはどうすればよいですか?
-
- A: 文書内の修正された段落を削除するには、`Remove`段落収集の方法。
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ Aspose.Words for .NETは以下からダウンロードできます。[ダウンロードリンク](https://releases.aspose.com/words/net/).

@@ -2,95 +2,91 @@
 title: Voeg Ole-object in Word-document in als pictogram
 linktitle: Voeg Ole-object in Word-document in als pictogram
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een OLE-object in een Word-document invoegt als pictogram met Aspose.Words voor .NET.
+description: Leer hoe u een OLE-object als pictogram invoegt in Word-documenten met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om uw documenten te verbeteren.
 type: docs
 weight: 10
 url: /nl/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die illustreert hoe u een OLE-object in een Word-document als pictogram kunt invoegen met behulp van Aspose.Words voor .NET.
+Heeft u ooit een OLE-object, zoals een PowerPoint-presentatie of een Excel-spreadsheet, in een Word-document moeten insluiten, maar wilde u dat het als een leuk klein pictogram werd weergegeven in plaats van als een volledig object? Nou, je bent op de juiste plek! In deze zelfstudie laten we u zien hoe u een OLE-object als pictogram in een Word-document kunt invoegen met behulp van Aspose.Words voor .NET. Aan het einde van deze handleiding kunt u OLE-objecten naadloos in uw documenten integreren, waardoor ze interactiever en visueel aantrekkelijker worden.
 
-## Stap 1: Importeer de benodigde referenties
-Zorg ervoor dat u, voordat u begint, de benodigde referenties hebt geïmporteerd om Aspose.Words voor .NET in uw project te gebruiken. Dit omvat het importeren van de Aspose.Words-bibliotheek en het toevoegen van de vereiste naamruimten aan uw bronbestand.
+## Vereisten
+
+Voordat we ingaan op de details, laten we eerst bespreken wat je nodig hebt:
+
+1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Als u het nog niet hebt geïnstalleerd, kunt u het downloaden via de[Aspose-releasespagina](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: u hebt een geïntegreerde ontwikkelomgeving (IDE) zoals Visual Studio nodig.
+3. Basiskennis van C#: Een basiskennis van programmeren in C# zal nuttig zijn.
+
+## Naamruimten importeren
+
+Eerst moet u de benodigde naamruimten importeren. Dit is essentieel voor toegang tot de bibliotheekfuncties van Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## Stap 2: Maak een nieuw document en een documentgenerator
- In deze stap maken we een nieuw document met behulp van de`Document` klasse en een documentbouwer met behulp van de`DocumentBuilder` klas.
+## Stap 1: Maak een nieuw document
+
+Om te beginnen moet u een nieuw Word-documentexemplaar maken.
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Voeg een OLE-object in als pictogram
- Gebruik die van de Document Builder`InsertOleObjectAsIcon` methode om een OLE-object als pictogram in het document in te voegen. Geef het OLE-bestandspad, de weergavevlag, het pictogrampad en de naam van het ingesloten object op.
+Dit codefragment initialiseert een nieuw Word-document en een DocumentBuilder-object dat wordt gebruikt om de documentinhoud op te bouwen.
+
+## Stap 2: OLE-object invoegen als pictogram
+
+ Laten we nu het OLE-object als een pictogram invoegen. De`InsertOleObjectAsIcon` Hiervoor wordt de methode van de klasse DocumentBuilder gebruikt.
 
 ```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
+builder.InsertOleObjectAsIcon("path_to_your_presentation.pptx", false, "path_to_your_icon.ico", "My embedded file");
 ```
 
-## Stap 4: Sla het document op
- Gebruik die van het document`Save` methode om het document in een bestand op te slaan.
+Laten we deze methode opsplitsen:
+- `"path_to_your_presentation.pptx"`: Dit is het pad naar het OLE-object dat u wilt insluiten.
+- `false` : Deze Booleaanse parameter specificeert of het OLE-object als een pictogram moet worden weergegeven. Omdat we een pictogram willen, hebben we dit ingesteld op`false`.
+- `"path_to_your_icon.ico"`: Dit is het pad naar het pictogrambestand dat u voor het OLE-object wilt gebruiken.
+- `"My embedded file"`: dit is het label dat onder het pictogram verschijnt.
+
+## Stap 3: Sla het document op
+
+Ten slotte moet u het document opslaan. Kies de map waarin u uw bestand wilt opslaan.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 ```
 
-### Voorbeeldbroncode voor het invoegen van een OLE-object als pictogram met Aspose.Words voor .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
-
-Dit is een compleet codevoorbeeld voor het invoegen van een OLE-object als pictogram met Aspose.Words voor .NET. Zorg ervoor dat u de nodige referenties importeert en volg de eerder beschreven stappen om deze code in uw project te integreren.
+Deze coderegel slaat het document op in het opgegeven pad.
 
 ## Conclusie
 
-Concluderend hebben we een stapsgewijze handleiding onderzocht om een OLE-object als pictogram in een Word-document in te voegen met behulp van Aspose.Words voor .NET.
+Gefeliciteerd! U hebt met succes geleerd hoe u een OLE-object als pictogram in een Word-document kunt invoegen met behulp van Aspose.Words voor .NET. Deze techniek helpt niet alleen bij het inbedden van complexe objecten, maar houdt uw document ook netjes en professioneel.
 
-Door deze stappen te volgen, kunt u met Aspose.Words voor .NET met succes een OLE-object als pictogram in uw Word-documenten invoegen. Zorg ervoor dat u de nodige referenties importeert en volg de instructies zorgvuldig om de gewenste resultaten te krijgen.
+## Veelgestelde vragen
 
-### Veelgestelde vragen over het invoegen van een ole-object in een Word-document als pictogram
+### Kan ik met deze methode verschillende soorten OLE-objecten gebruiken?
 
-#### V. Welke referenties zijn nodig om een OLE-object als pictogram in een Word-document in te voegen met behulp van Aspose.Words voor .NET?
+Ja, u kunt verschillende soorten OLE-objecten insluiten, zoals Excel-spreadsheets, PowerPoint-presentaties en zelfs PDF's.
 
-A: U moet de volgende referenties in uw project importeren om Aspose.Words voor .NET te gebruiken:
+### Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-```
+ U kunt een gratis proefversie krijgen van de[Aspose-releasespagina](https://releases.aspose.com/).
 
-#### V. Hoe maak ik een nieuw document en een documentgenerator in Aspose.Words voor .NET?
+### Wat is een OLE-object?
 
- A: U kunt een nieuw document maken met behulp van de`Document` klasse en een documentbouwer met behulp van de`DocumentBuilder`klas. Hier is een voorbeeld :
+OLE (Object Linking and Embedding) is een door Microsoft ontwikkelde technologie waarmee u documenten en andere objecten kunt insluiten en koppelen.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
 
-#### V. Hoe kan ik een OLE-object als pictogram in het document invoegen?
+ Ja, voor Aspose.Words voor .NET is een licentie vereist. Je kunt het kopen bij de[Aspose aankooppagina](https://purchase.aspose.com/buy) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
 
- A: Gebruik die van Document Builder`InsertOleObjectAsIcon` methode om een OLE-object als pictogram in te voegen. Geef het OLE-bestandspad, de weergavevlag, het pictogrampad en de naam van het ingesloten object op. Hier is een voorbeeld :
+### Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?
 
-```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-```
-
-#### V. Hoe kan ik het document opslaan terwijl het OLE-object als pictogram is ingevoegd?
-
- A: Gebruik het document`Save`methode om het document in een bestand op te slaan. Hier is een voorbeeld :
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
+ Meer tutorials en documentatie vindt u op de[Aspose-documentatiepagina](https://reference.aspose.com/words/net/).

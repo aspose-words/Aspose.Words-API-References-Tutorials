@@ -66,7 +66,7 @@ const string textDoc = "Full stop delimiters:\n" +
 
 ## 3. Adım: LoadOptions'ı Yapılandırın
 
- Boşluklarla numaralandırmayı tespit etmek için,`DetectNumberingWithWhitespaces` seçeneği`true` içinde`TxtLoadOptions` nesne.
+ Boşluklarla numaralandırmayı tespit etmek için,`DetectNumberingWithWhitespaces` seçeneği`true` bir`TxtLoadOptions` nesne.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla düz metin belgelerdeki boşluklarla numaralandırmayı tespit etme sanatında ustalaştınız. Bu özellik, çeşitli metin biçimleriyle uğraşırken ve listelerinizin Word belgelerinizde doğru şekilde temsil edilmesini sağlarken inanılmaz derecede kullanışlı olabilir. Yani bir dahaki sefere bu zorlu listelerle karşılaştığınızda ne yapmanız gerektiğini tam olarak bileceksiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla düz metin belgelerdeki boşluklarla numaralandırmayı tespit etme sanatında ustalaştınız. Bu özellik, çeşitli metin biçimleriyle uğraşırken ve listelerinizin Word belgelerinizde doğru şekilde temsil edilmesini sağlarken inanılmaz derecede kullanışlı olabilir. Yani bir dahaki sefere bu zorlu listelerle karşılaştığınızda ne yapmanız gerektiğini tam olarak bileceksiniz.
 
 ## SSS'ler
 

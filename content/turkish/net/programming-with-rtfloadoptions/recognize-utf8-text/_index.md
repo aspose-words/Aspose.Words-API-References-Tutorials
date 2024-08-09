@@ -53,7 +53,7 @@ RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 
 ## 3. Adım: Belgeyi Yükleyin
 
-Şimdi, yapılandırdığımız yükleme seçeneklerini kullanarak belgeyi yükleme zamanı. Sihir yapılan yer burasıdır!
+Şimdi, yapılandırdığımız yükleme seçeneklerini kullanarak belgeyi yükleme zamanı. Sihrin gerçekleştiği yer burası!
 
 ```csharp
 Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
@@ -73,7 +73,7 @@ Bu satır belgeyi yeni bir adla kaydeder, böylece işlenen dosyayı kolayca tan
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak Word belgelerindeki UTF-8 metnini nasıl tanıyacağınızı öğrendiniz. Bu küçük numara, çok dilli belgelerle veya özel karakterlerle uğraşırken sizi tonlarca baş ağrısından kurtarabilir.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgelerindeki UTF-8 metnini nasıl tanıyacağınızı öğrendiniz. Bu küçük numara, çok dilli belgelerle veya özel karakterlerle uğraşırken sizi tonlarca baş ağrısından kurtarabilir.
 
 Önemli adımların yükleme seçeneklerini ayarlamak, belgenizi yüklemek ve kaydetmek olduğunu unutmayın. Bu kadar basit! Öyleyse devam edin ve deneyin. Word belgelerinizdeki karmaşık metinleri işlemenin ne kadar kolay olduğuna şaşıracaksınız.
 

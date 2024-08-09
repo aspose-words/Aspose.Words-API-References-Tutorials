@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /zh/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## 介绍
 
-欢迎阅读本指南，了解如何使用 Aspose.Words for .NET 管理字体替换。如果您曾为文档中字体无法正确显示而苦恼，那么您来对地方了。本教程将逐步指导您如何高效处理无后缀的字体替换。让我们开始吧！
+欢迎阅读本指南，了解如何使用 Aspose.Words for .NET 管理字体替换。如果您曾为文档中字体无法正确显示而苦恼，那么您来对地方了。本教程将逐步指导您如何高效处理无后缀的字体替换。
 
 ## 先决条件
 
@@ -26,7 +27,6 @@ url: /zh/net/working-with-fonts/get-substitution-without-suffixes/
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -102,22 +102,22 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 
 ## 常见问题解答
 
-### 问题 1：如何使用来自多个自定义目录的字体？
+### 如何使用来自多个自定义目录的字体？
 
 您可以添加多个`FolderFontSource`实例`fontSources`列出并相应地更新字体源。
 
-### 问题2：我可以在哪里下载 Aspose.Words for .NET 的免费试用版？
+### 在哪里可以下载 Aspose.Words for .NET 的免费试用版？
 
 您可以从[Aspose 免费试用页面](https://releases.aspose.com/).
 
-### 问题 3：我可以使用`IWarningCallback`?
+### 我可以使用以下方法处理多种类型的警告吗`IWarningCallback`?
 
-是的`IWarningCallback`界面允许您处理各种类型的警告，而不仅仅是字体替换。
+是的，`IWarningCallback`界面允许您处理各种类型的警告，而不仅仅是字体替换。
 
-### Q4：我可以在哪里获得 Aspose.Words 的支持？
+### 我可以在哪里获得 Aspose.Words 的支持？
 
 如需支持，请访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8).
 
-### Q5：可以购买临时执照吗？
+### 可以购买临时许可证吗？
 
 是的，你可以从[临时执照页面](https://purchase.aspose.com/temporary-license/).

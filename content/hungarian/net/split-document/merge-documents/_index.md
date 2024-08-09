@@ -103,7 +103,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### Hogyan kezelhetem a különböző formázásokat egyesítés során?
 
- Az Aspose.Words különféle összevonási formátumokat kínál, mint pl`KeepSourceFormatting`és`MergeFormatting` Utal[API dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
+ Az Aspose.Words különféle összevonási formátumokat kínál, mint pl`KeepSourceFormatting`és`MergeFormatting` Lásd a[API dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
 
 ### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 

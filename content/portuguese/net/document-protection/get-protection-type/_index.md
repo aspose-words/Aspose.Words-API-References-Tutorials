@@ -75,13 +75,13 @@ E aí está! Você recuperou com êxito o tipo de proteção de um documento do 
 Aspose.Words for .NET é uma biblioteca poderosa que permite criar, editar, converter e manipular documentos do Word programaticamente.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Você pode começar com um[teste grátis](https://releases.aspose.com/) , mas para obter funcionalidade completa, você precisará adquirir uma licença. Confira a[opções de compra](https://purchase.aspose.com/buy).
+ Você pode começar com um[teste gratuito](https://releases.aspose.com/) , mas para obter funcionalidade completa, você precisará adquirir uma licença. Confira o[opções de compra](https://purchase.aspose.com/buy).
 
 ### Quais tipos de proteção o Aspose.Words pode detectar?
 Aspose.Words pode detectar vários tipos de proteção, como NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments e AllowOnlyFormFields.
 
 ### Como posso obter suporte se encontrar problemas?
- Para qualquer problema, você pode visitar o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8)para ajuda.
+ Para qualquer problema, você pode visitar o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8)para obter ajuda.
 
 ### O Aspose.Words é compatível com o .NET Core?
 Sim, Aspose.Words é compatível com .NET Framework e .NET Core.

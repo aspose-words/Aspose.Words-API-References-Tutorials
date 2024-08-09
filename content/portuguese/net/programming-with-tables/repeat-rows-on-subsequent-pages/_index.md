@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Este loop insere 50 linhas de dados na tabela, com duas colunas em cada linha. O`HeadingFormat` está configurado para`false` para essas linhas, pois não são linhas de cabeçalho.
+ Este loop insere 50 linhas de dados na tabela, com duas colunas em cada linha. O`HeadingFormat` está definido para`false` para essas linhas, pois não são linhas de cabeçalho.
 
 ## Etapa 4: salve o documento
 
@@ -118,4 +118,4 @@ aí está! Com apenas algumas linhas de código, você pode criar um documento d
  Sim, você pode modificar tabelas existentes acessando-as através do`Document` objeto e aplicando formatação semelhante.
 
 ### Que outras opções de formatação de tabela estão disponíveis no Aspose.Words for .NET?
- Aspose.Words for .NET oferece uma ampla gama de opções de formatação de tabela, incluindo mesclagem de células, configurações de borda e alinhamento de tabela. Confira a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Aspose.Words for .NET oferece uma ampla gama de opções de formatação de tabela, incluindo mesclagem de células, configurações de borda e alinhamento de tabela. Confira o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.

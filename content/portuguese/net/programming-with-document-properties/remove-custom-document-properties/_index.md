@@ -104,7 +104,7 @@ Aspose.Words for .NET foi projetado especificamente para aplicativos .NET. No en
  Você pode[baixe um teste gratuito](https://releases.aspose.com/) do site Aspose.
 
 ### 4. Onde posso encontrar mais tutoriais sobre Aspose.Words for .NET?
- Confira a[documentação](https://reference.aspose.com/words/net/) para mais tutoriais e exemplos.
+ Confira o[documentação](https://reference.aspose.com/words/net/) para mais tutoriais e exemplos.
 
 ### 5. Como posso adquirir uma licença do Aspose.Words for .NET?
  Você pode[comprar uma licença](https://purchase.aspose.com/buy) diretamente do site Aspose.

@@ -41,7 +41,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
  Nesta etapa, você define o diretório onde seu documento está localizado e carrega-o em uma instância do`Document` aula.
 
-## Etapa 2: configurar opções de marca d'água
+## Etapa 2: configurar opções de marca d’água
 
 A seguir, configure as opções para sua marca d’água de texto. Você pode personalizar vários aspectos, como família de fontes, tamanho da fonte, cor e layout. Vamos configurar essas opções.
 
@@ -59,8 +59,8 @@ TextWatermarkOptions options = new TextWatermarkOptions()
 Aqui está o que cada opção faz:
 - `FontFamily`: especifica a fonte do texto da marca d'água.
 - `FontSize`: define o tamanho do texto da marca d'água.
-- `Color`: Define a cor do texto da marca d'água.
-- `Layout`Determina a orientação da marca d'água (horizontal ou diagonal).
+- `Color`: Define a cor do texto da marca d’água.
+- `Layout`Determina a orientação da marca d’água (horizontal ou diagonal).
 - `IsSemitrasparent`: define se a marca d'água é semitransparente.
 
 ## Etapa 3: adicione o texto da marca d'água
@@ -101,12 +101,12 @@ Adicionar uma marca d’água de texto aos seus documentos do Word usando Aspose
 
 ### É possível adicionar várias marcas d'água a um documento?
 
-Aspose.Words suporta a adição de uma marca d’água por vez. Para adicionar várias marcas d'água, você precisará criá-las e aplicá-las sequencialmente.
+Aspose.Words suporta a adição de uma marca d'água por vez. Para adicionar várias marcas d'água, você precisará criá-las e aplicá-las sequencialmente.
 
-### Posso ajustar a posição da marca d’água?
+### Posso ajustar a posição da marca d'água?
 
  O`WatermarkLayout` propriedade determina a orientação, mas ajustes de posicionamento precisos não são suportados diretamente. Pode ser necessário usar outras técnicas para posicionamento exato.
 
 ### E se eu precisar de uma marca d'água semitransparente?
 
- Colocou o`IsSemitrasparent`propriedade para`true` para tornar sua marca d’água semitransparente.
+ Defina o`IsSemitrasparent`propriedade para`true` para tornar sua marca d'água semitransparente.

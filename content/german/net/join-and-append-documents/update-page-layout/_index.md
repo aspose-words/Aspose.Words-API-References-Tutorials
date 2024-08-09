@@ -15,7 +15,7 @@ Hallo! Wenn Sie schon einmal programmgesteuert mit Word-Dokumenten gearbeitet ha
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes eingerichtet haben:
 
-1.  Aspose.Words für .NET: Diese Bibliothek ist für die programmgesteuerte Bearbeitung von Word-Dokumenten unerlässlich. Wenn Sie dies noch nicht getan haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Diese Bibliothek ist für die programmgesteuerte Bearbeitung von Word-Dokumenten unerlässlich. Wenn Sie dies noch nicht getan haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
    
 2. Visual Studio: Sie benötigen eine IDE zum Schreiben und Ausführen Ihres .NET-Codes. Visual Studio ist eine beliebte Wahl.
 

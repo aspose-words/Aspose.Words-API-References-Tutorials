@@ -2,71 +2,97 @@
 title: Wcięty kod
 linktitle: Wcięty kod
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać kodu z wcięciami w Aspose.Words for .NET Przewodnik krok po kroku.
+description: Dowiedz się, jak dodawać i stylizować bloki kodu z wcięciami w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego szczegółowego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/indented-code/
 ---
+## Wstęp
 
-W tym przykładzie wyjaśnimy, jak używać funkcji kodu z wcięciem w Aspose.Words dla .NET. Kod wcięty służy do wizualnego przedstawiania bloków kodu o określonym formatowaniu.
+Czy zastanawiałeś się kiedyś, jak dodać odrobinę personalizacji do dokumentów programu Word za pomocą Aspose.Words dla .NET? Wyobraź sobie, że możesz stylizować tekst przy użyciu określonego formatowania lub precyzyjnie zarządzać treścią, a wszystko to przy użyciu solidnej biblioteki zaprojektowanej z myślą o płynnej manipulacji dokumentami. W tym samouczku przyjrzymy się sposobom stylizowania tekstu w celu tworzenia bloków kodu z wcięciami w dokumentach programu Word. Niezależnie od tego, czy chcesz dodać profesjonalny styl fragmentom kodu, czy po prostu potrzebujesz przejrzystego sposobu prezentacji informacji, Aspose.Words oferuje potężne rozwiązanie.
 
-## Krok 1: Korzystanie z generatora dokumentów
+## Warunki wstępne
 
-Najpierw użyjemy generatora dokumentów, aby dodać treść do naszego dokumentu.
+Zanim przejdziemy do sedna, jest kilka rzeczy, które musisz mieć na miejscu:
+
+1.  Aspose.Words dla biblioteki .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Można go pobrać z[strona](https://releases.aspose.com/words/net/).
+   
+2. Visual Studio lub dowolne IDE .NET: Będziesz potrzebować IDE do pisania i wykonywania kodu. Visual Studio jest popularnym wyborem, ale dowolne IDE kompatybilne z .NET będzie działać.
+   
+3. Podstawowa znajomość języka C#: Zrozumienie podstaw języka C# ułatwi ci śledzenie przykładów.
+
+4. .NET Framework: Upewnij się, że Twój projekt jest skonfigurowany do korzystania z .NET Framework kompatybilnego z Aspose.Words.
+
+5.  Dokumentacja Aspose.Words: Zapoznaj się z[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) dodatkowe szczegóły i odniesienia.
+
+Masz wszystko gotowe? Świetnie! Przejdźmy do przyjemniejszej części.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć pracę z Aspose.Words w projekcie .NET, musisz zaimportować niezbędne przestrzenie nazw. Ten krok gwarantuje, że Twój projekt będzie miał dostęp do wszystkich klas i metod udostępnianych przez bibliotekę Aspose.Words. Oto jak możesz to zrobić:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Te przestrzenie nazw umożliwiają pracę z obiektami dokumentów i manipulowanie zawartością plików programu Word.
+
+Teraz przeanalizujmy proces dodawania i stylizowania bloku kodu z wcięciem w dokumencie programu Word za pomocą programu Aspose.Words. Podzielimy to na kilka wyraźnych kroków:
+
+## Krok 1: Skonfiguruj swój dokument
+
+ Najpierw musisz utworzyć nowy dokument lub załadować istniejący. Ten krok obejmuje inicjalizację pliku`Document` obiekt, który będzie podstawą Twojej pracy.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Dodaj styl dla wciętego kodu
+ Tutaj tworzymy nowy dokument i używamy`DocumentBuilder` aby rozpocząć dodawanie treści.
 
- Dodamy niestandardowy styl dla wciętego kodu za pomocą`Styles.Add` metoda`Document` obiekt. W tym przykładzie tworzymy styl o nazwie „IndentedCode” dla kodu z wcięciem.
+## Krok 2: Zdefiniuj styl niestandardowy
+
+Następnie zdefiniujemy niestandardowy styl dla wciętego kodu. Ten styl zapewni, że Twoje bloki kodu będą miały wyraźny wygląd. 
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
-builder.ParagraphFormat.Style = indentedCode;
+indentedCode.ParagraphFormat.LeftIndent = 20; // Ustaw lewe wcięcie dla stylu
+indentedCode.Font.Name = "Courier New"; // Użyj czcionki o stałej szerokości w kodzie
+indentedCode.Font.Size = 10; // Ustaw mniejszy rozmiar czcionki dla kodu
 ```
 
-## Krok 3: Dodaj wcięty kod
+W tym kroku tworzymy nowy styl akapitu o nazwie „IndentedCode”, ustawiamy wcięcie z lewej strony na 20 punktów i stosujemy czcionkę o stałej szerokości (często używaną w kodzie).
 
-Teraz możemy dodać blok kodu z wcięciem, używając niestandardowego stylu „IndentedCode”.
+## Krok 3: Zastosuj styl i dodaj treść
+
+Mając zdefiniowany styl, możemy go teraz zastosować i dodać wcięty kod do naszego dokumentu.
 
 ```csharp
-builder.Writeln("This is an indented code block");
-```
-
-### Przykładowy kod źródłowy kodu z wcięciem w Aspose.Words dla .NET
-
-```csharp
-// Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
-builder.Writeln("This is an indented code");
+builder.Writeln("This is an indented code block.");
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji kodu z wcięciami w Aspose.Words dla .NET.
+Tutaj ustawiamy format akapitu zgodnie z naszym niestandardowym stylem i piszemy wiersz tekstu, który będzie wyglądał jako blok kodu z wcięciem.
 
+## Wniosek
 
-### Często zadawane pytania
+I gotowe — prosty, ale skuteczny sposób dodawania i stylizowania bloków kodu z wcięciami w dokumentach programu Word za pomocą Aspose.Words dla .NET. Wykonując poniższe kroki, możesz zwiększyć czytelność fragmentów kodu i nadać swoim dokumentom profesjonalny charakter. Niezależnie od tego, czy przygotowujesz raporty techniczne, dokumentację kodu, czy jakikolwiek inny rodzaj treści wymagający sformatowanego kodu, Aspose.Words zapewnia narzędzia potrzebne do wydajnej pracy.
 
-#### P: Co to jest kod z wcięciem w Markdown?
+Możesz eksperymentować z różnymi stylami i ustawieniami, aby dostosować wygląd i styl bloków kodu do swoich potrzeb. Miłego kodowania!
 
-Odp.: Kod z wcięciem w Markdown to metoda formatowania używana do wyświetlania kodu w dokumencie Markdown. Polega na wcięciu każdej linii kodu spacjami lub tabulatorami.
+## Często zadawane pytania
 
-#### P: Jak używać kodu z wcięciem w Markdown?
+### Czy mogę dostosować wcięcie bloku kodu?  
+ Tak, możesz modyfikować`LeftIndent` właściwość stylu umożliwiająca zwiększenie lub zmniejszenie wcięcia.
 
-Odp.: Aby użyć w Markdown kodu z wcięciami, wpisz w każdym wierszu kodu spacje lub tabulatory.
+### Jak mogę zmienić czcionkę używaną w bloku kodu?  
+ Możesz ustawić`Font.Name`na dowolną wybraną czcionkę o stałej szerokości, np. „Courier New” lub „Consolas”.
 
-#### P: Jakie są zalety kodu z wcięciem w Markdown?
+### Czy można dodać wiele bloków kodu o różnych stylach?  
+Absolutnie! Możesz zdefiniować wiele stylów o różnych nazwach i zastosować je do różnych bloków kodu, jeśli zajdzie taka potrzeba.
 
-Odp.: Wcięty kod w Markdown poprawia czytelność kodu i ułatwia jego zrozumienie czytelnikom.
+### Czy mogę zastosować inne opcje formatowania do bloku kodu?  
+Tak, możesz dostosować styl za pomocą różnych opcji formatowania, w tym koloru czcionki, koloru tła i wyrównania.
 
-#### P: Jaka jest różnica między kodem z wcięciem a blokami kodu w Markdown?
-
-Odp.: Kod z wcięciem jest używany w przypadku małych fragmentów kodu wstawianych do tekstu, natomiast bloki kodu służą do wyświetlania większych fragmentów kodu w oddzielnym formatowaniu.
-
-#### P: Czy wszystkie edytory Markdown obsługują wcięty kod w Markdown?
-
-Odp.: Obsługa kodu z wcięciami w Markdown może się różnić w zależności od redaktorów Markdown. Aby mieć pewność, sprawdź dokumentację wydawcy.
+### Jak otworzyć zapisany dokument po jego utworzeniu?  
+Możesz otworzyć dokument za pomocą dowolnego edytora tekstu, takiego jak Microsoft Word lub kompatybilnego oprogramowania, aby wyświetlić wystylizowaną treść.

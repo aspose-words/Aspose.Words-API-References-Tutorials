@@ -99,14 +99,14 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功插入和操作形狀。本教學涵蓋了基礎知識，但 Aspose.Words 提供了許多用於處理形狀的更高級功能，例如自訂樣式、連接器和群組形狀。
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功插入和操作形狀。本教學涵蓋了基礎知識，但 Aspose.Words 提供了許多用於處理形狀的高級功能，例如自訂樣式、連接器和群組形狀。
 
 欲了解更多詳細信息，請訪問[Aspose.Words for .NET 文檔](https://reference.aspose.com/words/net/).
 
 ## 常見問題解答
 
 ### 如何插入不同類型的形狀？
-您可以更改`ShapeType`在裡面`InsertShape`方法插入不同類型的形狀，例如圓形、矩形和箭頭。
+您可以更改`ShapeType`在`InsertShape`方法插入不同類型的形狀，例如圓形、矩形和箭頭。
 
 ### 我可以在形狀內添加文字嗎？
 是的，您可以使用`builder.Write`插入形狀後在形狀內新增文字的方法。

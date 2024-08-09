@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Takže máte tento úžasný dokument aplikace Word, který potřebuje digitální podpis, že? Ale ne ledajaký podpis – musíte nastavit konkrétní ID poskytovatele podpisu. Ať už vyřizujete právní dokumenty, smlouvy nebo jakékoli papírování, přidání bezpečného digitálního podpisu je zásadní. V tomto tutoriálu vás provedu celým procesem nastavení ID poskytovatele podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Připraveni? Pojďme se ponořit!
+Ahoj! Takže máte tento úžasný dokument aplikace Word, který potřebuje digitální podpis, že? Ale ne ledajaký podpis – musíte nastavit konkrétní ID poskytovatele podpisu. Ať už vyřizujete právní dokumenty, smlouvy nebo jakékoli papírování, přidání bezpečného digitálního podpisu je zásadní. V tomto tutoriálu vás provedu celým procesem nastavení ID poskytovatele podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Připraveni? Pojďme se ponořit!
 
 ## Předpoklady
 

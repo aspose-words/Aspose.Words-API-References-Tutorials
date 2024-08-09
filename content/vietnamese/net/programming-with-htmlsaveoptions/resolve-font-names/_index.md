@@ -9,7 +9,7 @@ url: /vi/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 ## Giới thiệu
 
-Này, anh bạn lập trình viên! Nếu bạn từng gặp phải vấn đề về phông chữ khi lưu tài liệu Word dưới dạng HTML thì bạn không đơn độc. Phông chữ có thể phức tạp nhưng đừng lo lắng; Tôi hỗ trợ bạn. Hôm nay, chúng ta sẽ đi sâu vào cách giải quyết tên phông chữ trong tài liệu Word của bạn bằng Aspose.Words cho .NET. Hướng dẫn này sẽ hướng dẫn bạn từng bước thực hiện quy trình, đảm bảo phông chữ của bạn trông vừa phải ở định dạng HTML.
+Này, anh bạn lập trình viên! Nếu bạn từng gặp phải vấn đề về phông chữ khi lưu tài liệu Word dưới dạng HTML thì bạn không đơn độc. Phông chữ có thể phức tạp nhưng đừng lo lắng; Tôi đã hỗ trợ bạn. Hôm nay, chúng ta sẽ đi sâu vào cách giải quyết tên phông chữ trong tài liệu Word của bạn bằng Aspose.Words cho .NET. Hướng dẫn này sẽ hướng dẫn bạn từng bước thực hiện quy trình, đảm bảo phông chữ của bạn trông vừa phải ở định dạng HTML.
 
 ## Điều kiện tiên quyết
 
@@ -40,7 +40,7 @@ Trước tiên, hãy thiết lập đường dẫn đến thư mục tài liệu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-Giải trình:
+Giải thích:
  Đây,`dataDir` giữ đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế trên hệ thống của bạn.
 
 ## Bước 2: Tải tài liệu Word
@@ -51,7 +51,7 @@ Tiếp theo, chúng ta cần tải tài liệu Word mà chúng ta muốn xử l�
 Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
-Giải trình:
+Giải thích:
  Chúng tôi tạo ra một`Document` đối tượng và tải tài liệu Word có tên "Thiếu font.docx" từ`dataDir`.
 
 ## Bước 3: Định cấu hình tùy chọn lưu HTML
@@ -66,8 +66,8 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 };
 ```
 
-Giải trình:
- Chúng tôi tạo một thể hiện của`HtmlSaveOptions` với`SaveFormat.Html` . Các`PrettyFormat` tùy chọn làm cho đầu ra HTML dễ đọc hơn và`ResolveFontNames` đảm bảo rằng tên phông chữ được giải quyết.
+Giải thích:
+ Chúng tôi tạo một thể hiện của`HtmlSaveOptions` với`SaveFormat.Html` . các`PrettyFormat` tùy chọn làm cho đầu ra HTML dễ đọc hơn và`ResolveFontNames` đảm bảo rằng tên phông chữ được giải quyết.
 
 ## Bước 4: Lưu tài liệu dưới dạng HTML
 
@@ -77,12 +77,12 @@ Cuối cùng, chúng tôi lưu tài liệu dưới dạng tệp HTML bằng các
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-Giải trình:
+Giải thích:
  Chúng tôi gọi`Save` phương pháp trên`Document` đối tượng, chỉ định đường dẫn đầu ra và các tùy chọn lưu mà chúng tôi đã cấu hình. Điều này sẽ tạo ra một tệp HTML với tên phông chữ được phân giải.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã giải quyết thành công tên phông chữ khi chuyển đổi tài liệu Word sang HTML bằng Aspose.Words cho .NET. Điều này không chỉ đảm bảo rằng phông chữ của bạn được hiển thị chính xác mà còn làm cho đầu ra HTML của bạn trông bóng bẩy và chuyên nghiệp. Chúc mừng mã hóa!
+Và bạn có nó! Bằng cách làm theo các bước này, bạn đã giải quyết thành công tên phông chữ khi chuyển đổi tài liệu Word sang HTML bằng Aspose.Words cho .NET. Điều này không chỉ đảm bảo rằng phông chữ của bạn được hiển thị chính xác mà còn làm cho đầu ra HTML của bạn trông bóng bẩy và chuyên nghiệp. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

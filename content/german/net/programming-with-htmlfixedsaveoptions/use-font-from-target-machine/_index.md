@@ -104,10 +104,10 @@ Ja, Aspose.Words für .NET unterstützt verschiedene Dokumentformate und Sie kö
 Wenn der Zielcomputer nicht über die erforderlichen Schriftarten verfügt, wird das Dokument möglicherweise nicht wie beabsichtigt wiedergegeben. Es ist immer eine gute Idee, Schriftarten bei Bedarf einzubetten.
 
 ### Wie bettet man Schriftarten in ein Dokument ein?
- Das Einbetten von Schriftarten erfolgt über`FontSettings` Klasse in Aspose.Words für .NET. Siehe die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Das Einbetten von Schriftarten erfolgt über`FontSettings` Klasse in Aspose.Words für .NET. Siehe die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Gibt es eine Möglichkeit, das Dokument vor dem Speichern in der Vorschau anzuzeigen?
- Ja, Sie können die`DocumentRenderer` Klasse, um das Dokument vor dem Speichern in der Vorschau anzuzeigen. Schauen Sie sich Aspose.Words für .NET an[Dokumentation](https://reference.aspose.com/words/net/) für mehr Informationen.
+ Ja, Sie können die`DocumentRenderer` Klasse, um das Dokument vor dem Speichern in der Vorschau anzuzeigen. Schauen Sie sich Aspose.Words für .NET an[Dokumentation](https://reference.aspose.com/words/net/) für weitere Informationen.
 
 ### Kann ich die HTML-Ausgabe weiter anpassen?
  Absolut! Die`HtmlFixedSaveOptions` Die Klasse bietet verschiedene Eigenschaften zum Anpassen der HTML-Ausgabe. Entdecken Sie die[Dokumentation](https://reference.aspose.com/words/net/) für alle verfügbaren Optionen.

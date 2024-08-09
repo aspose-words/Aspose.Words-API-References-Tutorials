@@ -19,7 +19,7 @@ Antes de embarcarnos en nuestra aventura de construir mesas, asegurémonos de te
 - .NET Framework (4.0 o superior)
 - Aspose.Words para la biblioteca .NET
 
- Si aún no tienes Aspose.Words, puedes fácilmente[descarguelo aqui](https://releases.aspose.com/words/net/) . También puedes empezar con un[prueba gratis](https://releases.aspose.com/) si quieres probar las aguas. Para aquellos que estén listos para dar el paso, pueden[comprar una licencia](https://purchase.aspose.com/buy) , o si necesita más tiempo para evaluar, obtenga un[licencia temporal](https://purchase.aspose.com/temporary-license/).
+ Si aún no tienes Aspose.Words, puedes fácilmente[descárgalo aquí](https://releases.aspose.com/words/net/) . También puedes empezar con un[prueba gratuita](https://releases.aspose.com/) si quieres probar las aguas. Para aquellos que estén listos para dar el paso, pueden[comprar una licencia](https://purchase.aspose.com/buy) , o si necesita más tiempo para evaluar, obtenga un[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
 ## Importar espacios de nombres
 
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: iniciar la mesa
 
- Ahora, comencemos nuestra mesa. llamamos al`StartTable` método de la`DocumentBuilder` empezar.
+ Ahora, comencemos nuestra mesa. llamamos al`StartTable` método de la`DocumentBuilder` para empezar.
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Mediante el uso`StartTable` le estamos diciendo a Aspose.Words que estamos a punto de crear una tabla. El`InsertCell` El método agrega la primera celda y`AutoFit` garantiza que nuestras columnas tengan anchos fijos.
+ Al usar`StartTable` le estamos diciendo a Aspose.Words que estamos a punto de crear una tabla. El`InsertCell` El método agrega la primera celda y`AutoFit` garantiza que nuestras columnas tengan anchos fijos.
 
 ## Paso 3: formatee la primera fila
 
@@ -128,7 +128,7 @@ Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos d
  Puede[descargue Aspose.Words para .NET aquí](https://releases.aspose.com/words/net/). Siga las instrucciones de instalación proporcionadas para configurarlo en su entorno de desarrollo.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Aspose.Words ofrece una[prueba gratis](https://releases.aspose.com/) para que puedas probar sus características. Para un uso prolongado, puede adquirir una licencia u obtener una[licencia temporal](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words ofrece una[prueba gratuita](https://releases.aspose.com/) para que puedas probar sus características. Para un uso prolongado, puede adquirir una licencia u obtener una[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
 ### ¿Cuáles son algunas otras características de Aspose.Words para .NET?
 Además de crear tablas, Aspose.Words te permite trabajar con texto, imágenes, estilos y muchos otros elementos del documento. Admite una amplia gama de formatos de documentos, incluidos DOCX, PDF y HTML.

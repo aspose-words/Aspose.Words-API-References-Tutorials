@@ -82,7 +82,7 @@ Cela enregistre votre document avec les marges et les distances spécifiées en 
 
 ## Conclusion
 
-Et voila! Vous avez réussi à convertir et à définir des marges et des distances dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement gérer diverses conversions d'unités, rendant ainsi le processus de personnalisation de vos documents un jeu d'enfant. Continuez à expérimenter différents paramètres et explorez les vastes fonctionnalités offertes par Aspose.Words. Bon codage !
+Et voilà ! Vous avez réussi à convertir et à définir des marges et des distances dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement gérer diverses conversions d'unités, rendant ainsi le processus de personnalisation de vos documents un jeu d'enfant. Continuez à expérimenter différents paramètres et explorez les vastes fonctionnalités offertes par Aspose.Words. Bon codage !
 
 ## FAQ
 
@@ -99,4 +99,4 @@ Bien que vous puissiez utiliser Aspose.Words sans licence, certaines fonctionnal
  Oui, vous pouvez personnaliser les marges et autres paramètres pour différentes sections à l'aide de l'outil`Section` classe.
 
 ### Quelles autres fonctionnalités Aspose.Words offre-t-il ?
- Aspose.Words prend en charge un large éventail de fonctionnalités, notamment la conversion de documents, le publipostage et des options de formatage étendues. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Aspose.Words prend en charge un large éventail de fonctionnalités, notamment la conversion de documents, le publipostage et des options de formatage étendues. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.

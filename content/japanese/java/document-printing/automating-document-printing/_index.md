@@ -59,7 +59,7 @@ public static void main(String[] args) throws Exception {
     // PrintDocumentオブジェクトを作成する
     PrintDocument printDoc = new PrintDocument(doc);
 
-    //プリンター名を設定する（オプション）
+    //プリンタ名を設定する（オプション）
     printDoc.getPrinterSettings().setPrinterName("Your_Printer_Name");
 
     //文書を印刷する

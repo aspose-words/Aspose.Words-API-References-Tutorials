@@ -72,11 +72,11 @@ Ebben a lépésben elmenti a dokumentumot a megadott elérési útra az Ön ált
 
 ### Exportálhatok minden könyvjelzőt a Word-dokumentumból PDF-be?
 
- Igen tudsz. Ban,-ben`PdfSaveOptions`, szükség esetén módosíthatja a beállításokat úgy, hogy az összes könyvjelzőt tartalmazza.
+ Igen, megteheti. A`PdfSaveOptions`, szükség esetén módosíthatja a beállításokat úgy, hogy az összes könyvjelzőt tartalmazza.
 
 ### Mi a teendő, ha a dokumentumtörzsből is szeretnék könyvjelzőket exportálni?
 
- Beállíthatja a`OutlineOptions` ban ben`PdfSaveOptions` hogy könyvjelzőket vegyen fel a dokumentum törzséből.
+ Beállíthatja a`OutlineOptions` be`PdfSaveOptions` hogy könyvjelzőket vegyen fel a dokumentum törzséből.
 
 ### Testreszabható a könyvjelző szintje a PDF-ben?
 

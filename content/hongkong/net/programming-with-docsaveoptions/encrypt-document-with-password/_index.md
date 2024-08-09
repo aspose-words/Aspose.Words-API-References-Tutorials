@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-docsaveoptions/encrypt-document-with-password
 ---
 ## 介紹
 
-您是否曾經發現自己需要使用密碼來保護文件？你不是一個人。隨著數位文件的興起，保護敏感資訊比以往任何時候都更加重要。 Aspose.Words for .NET 提供了一種使用密碼加密文件的無縫方式。想像一下，這就像是給你的日記一把鎖。只有擁有密鑰（在本例中為密碼）的人才能窺視內部。讓我們逐步深入探討如何實現這一目標。
+您是否曾經發現自己需要使用密碼來保護文件？你並不孤單。隨著數位文件的興起，保護敏感資訊比以往任何時候都更加重要。 Aspose.Words for .NET 提供了一種使用密碼加密文件的無縫方式。想像一下，這就像是給你的日記一把鎖。只有擁有密鑰（在本例中為密碼）的人才能窺視內部。讓我們逐步深入探討如何實現這一目標。
 
 ## 先決條件
 
@@ -86,12 +86,12 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 使用密碼加密文件。這就像成為數位鎖匠，確保您的文件安全無虞。無論您是要保護敏感的業務報告還是個人筆記，此方法都提供了簡單而有效的解決方案。
+現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 使用密碼加密文件。這就像成為數位鎖匠，確保您的文件安全無虞。無論您是要保護敏感的業務報告還是個人筆記，此方法都提供了簡單而有效的解決方案。
 
 ## 常見問題解答
 
 ### 我可以使用不同類型的加密嗎？
-是的，Aspose.Words for .NET 支援各種加密方法。檢查[文件](https://reference.aspose.com/words/net/)更多細節。
+是的，Aspose.Words for .NET 支援各種加密方法。檢查[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 如果我忘記了文檔密碼怎麼辦？
 不幸的是，如果您忘記密碼，您將無法存取該文件。請確保您的密碼安全！

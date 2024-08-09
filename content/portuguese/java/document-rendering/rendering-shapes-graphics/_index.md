@@ -127,7 +127,7 @@ Aspose.Words for Java é versátil e pode ser usado em vários cenários:
 - Elaboração de certificados e prêmios.
 - Adicionando anotações e textos explicativos aos documentos.
 
-## Dicas de soluções de problemas
+## Dicas para solução de problemas
 
 Se você encontrar problemas ao trabalhar com formas e gráficos, consulte a documentação do Aspose.Words for Java ou os fóruns da comunidade para obter soluções. Problemas comuns incluem compatibilidade de formato de imagem e problemas relacionados a fontes.
 
@@ -165,4 +165,4 @@ shape.setFillColor(Color.GREEN);
 
 ### Como posso organizar as formas em uma ordem específica?
 
- Você pode controlar a ordem das formas usando a propriedade Ordem Z. Colocou o`ZOrder` propriedade de uma forma para determinar sua posição na pilha de formas. Valores mais baixos são enviados para trás, enquanto valores mais altos são trazidos para frente.
+ Você pode controlar a ordem das formas usando a propriedade Ordem Z. Defina o`ZOrder` propriedade de uma forma para determinar sua posição na pilha de formas. Valores mais baixos são enviados para trás, enquanto valores mais altos são trazidos para frente.

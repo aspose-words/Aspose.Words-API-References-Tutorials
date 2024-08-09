@@ -13,6 +13,6 @@ Woordenverwerking met lijsten is een uitgebreide hulpbron die u door de woordenv
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Herstart de lijst bij elke sectie](./restart-list-at-each-section/)  | Leer hoe u een genummerde lijst opnieuw instelt voor elke sectie in een Word-document met Aspose.Words voor .NET. |
-| [Geef lijstniveau op](./specify-list-level/) | Leer hoe u het lijstniveau in een Word-document kunt opgeven met Aspose.Words voor .NET. |
-| [Lijstnummer opnieuw starten](./restart-list-number/) | Leer hoe u het nummer van een lijst in een Word-document opnieuw kunt instellen met Aspose.Words voor .NET. |
+| [Herstart de lijst bij elke sectie](./restart-list-at-each-section/)  | Leer hoe u lijsten in elke sectie in Word-documenten opnieuw kunt starten met Aspose.Words voor .NET. Volg onze gedetailleerde stapsgewijze handleiding om lijsten effectief te beheren. |
+| [Geef lijstniveau op](./specify-list-level/) | Leer hoe u genummerde lijsten en lijsten met opsommingstekens op meerdere niveaus kunt maken in Word-documenten met behulp van Aspose.Words voor .NET. Stap-voor-stap handleiding inbegrepen. Perfect voor .NET-ontwikkelaars. |
+| [Lijstnummer opnieuw starten](./restart-list-number/) | Leer hoe u lijstnummers in Word-documenten opnieuw kunt starten met Aspose.Words voor .NET. Deze gedetailleerde gids van 2000 woorden behandelt alles wat u moet weten, van installatie tot geavanceerde aanpassingen. |

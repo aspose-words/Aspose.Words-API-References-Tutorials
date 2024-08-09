@@ -216,7 +216,7 @@ Door deze stappen te volgen, kunt u documenten maken met aangepaste lijstniveaus
 
 Gefeliciteerd! Je hebt geleerd hoe je effectief met lijsten kunt werken in Aspose.Words voor Java. Lijsten zijn cruciaal voor het organiseren en presenteren van inhoud in uw documenten. Of u nu lijsten bij elke sectie opnieuw moet starten of lijstniveaus moet opgeven, Aspose.Words voor Java biedt de tools die u nodig hebt om professioneel ogende documenten te maken.
 
-Nu kunt u deze functies vol vertrouwen gebruiken om uw documentgeneratie- en opmaaktaken te verbeteren. Als u vragen heeft of verdere hulp nodig heeft, aarzel dan niet om contact op te nemen met de[Aspose-communityforum](https://forum.aspose.com/) Voor ondersteuning.
+Nu kunt u deze functies vol vertrouwen gebruiken om uw documentgeneratie- en opmaaktaken te verbeteren. Als u vragen heeft of verdere hulp nodig heeft, aarzel dan niet om contact op te nemen met de[Aspose-communityforum](https://forum.aspose.com/) voor ondersteuning.
 
 ## Veelgestelde vragen
 

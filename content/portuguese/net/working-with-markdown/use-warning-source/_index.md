@@ -9,7 +9,7 @@ url: /pt/net/working-with-markdown/use-warning-source/
 ---
 ## Introdução
 
- Você já teve que gerenciar e formatar documentos de forma programática? Nesse caso, você provavelmente já enfrentou as complexidades de lidar com diferentes tipos de documentos e garantir que tudo esteja perfeito. Digite Aspose.Words for .NET – uma biblioteca poderosa que simplifica o processamento de documentos. Hoje, vamos nos aprofundar em um recurso específico: usar o`WarningSource`classe para capturar e tratar avisos ao trabalhar com Markdown. Vamos embarcar nesta jornada para dominar o Aspose.Words for .NET!
+Você já teve que gerenciar e formatar documentos de maneira programática? Nesse caso, você provavelmente já enfrentou as complexidades de lidar com diferentes tipos de documentos e garantir que tudo esteja perfeito. Digite Aspose.Words for .NET – uma biblioteca poderosa que simplifica o processamento de documentos. Hoje, vamos nos aprofundar em um recurso específico: usar o`WarningSource` classe para capturar e tratar avisos ao trabalhar com Markdown. Vamos embarcar nesta jornada para dominar o Aspose.Words for .NET!
 
 ## Pré-requisitos
 
@@ -39,7 +39,7 @@ Todo projeto precisa de uma base sólida, certo? Vamos começar configurando o c
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde seu arquivo DOCX está localizado.
+ Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real onde seu arquivo DOCX está localizado.
 
 ## Passo 2: Carregando o Documento
 
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
 ## Etapa 3: configurar a coleta de avisos
 
- Imagine ler um livro com post-its destacando pontos importantes. O`WarningInfoCollection`faz exatamente isso para o nosso processamento de documentos.
+ Imagine ler um livro com post-its destacando pontos importantes. O`WarningInfoCollection` faz exatamente isso para o nosso processamento de documentos.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
@@ -88,7 +88,7 @@ Esta linha salva o documento como um arquivo Markdown no diretório especificado
 
 ## Conclusão
 
- E aí está! Você acabou de aprender como usar o`WarningSource`classe em Aspose.Words for .NET para lidar com avisos de Markdown. Este tutorial abordou a configuração do seu projeto, o carregamento de um documento, a coleta e o processamento de avisos e o salvamento do documento final. Com esse conhecimento, você estará mais bem equipado para gerenciar o processamento de documentos em seus aplicativos. Continue experimentando e explorando os vastos recursos do Aspose.Words for .NET!
+ aí está! Você acabou de aprender como usar o`WarningSource` classe em Aspose.Words for .NET para lidar com avisos de Markdown. Este tutorial abordou a configuração do seu projeto, o carregamento de um documento, a coleta e o processamento de avisos e o salvamento do documento final. Com esse conhecimento, você estará mais bem equipado para gerenciar o processamento de documentos em seus aplicativos. Continue experimentando e explorando os vastos recursos do Aspose.Words for .NET!
 
 ## Perguntas frequentes
 
@@ -102,7 +102,7 @@ Aspose.Words for .NET é uma biblioteca para trabalhar programaticamente com doc
  As fontes de alerta indicam a origem dos avisos gerados durante o processamento do documento. Por exemplo,`WarningSource.Markdown` indica um aviso relacionado ao processamento de Markdown.
 
 ### Posso personalizar o tratamento de avisos no Aspose.Words?
- Sim, você pode personalizar o tratamento de avisos implementando o`IWarningCallback` interface e configurá-lo para o documento`WarningCallback` propriedade.
+ Sim, você pode personalizar o tratamento de avisos implementando o`IWarningCallback`interface e configurá-lo para o documento`WarningCallback` propriedade.
 
 ### Como faço para salvar um documento em diferentes formatos usando Aspose.Words?
  Você pode salvar um documento em vários formatos (como DOCX, PDF, Markdown) usando o`Save` método do`Document` class, especificando o formato desejado como parâmetro.

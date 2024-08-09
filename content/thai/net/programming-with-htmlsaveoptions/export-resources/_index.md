@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
 ## คำถามที่พบบ่อย
 
 ### ฉันสามารถส่งออกรูปภาพพร้อมกับแบบอักษรและ CSS ได้หรือไม่
- ใช่คุณสามารถ! Aspose.Words สำหรับ .NET รองรับการส่งออกรูปภาพเช่นกัน เพียงตรวจสอบให้แน่ใจว่าได้กำหนดค่า`HtmlSaveOptions` ตามนั้น
+ ใช่คุณทำได้! Aspose.Words สำหรับ .NET รองรับการส่งออกรูปภาพเช่นกัน เพียงตรวจสอบให้แน่ใจว่าได้กำหนดค่า`HtmlSaveOptions` ตามนั้น
 
 ### มีวิธีฝัง CSS แทนการใช้สไตล์ชีตภายนอกหรือไม่?
  อย่างแน่นอน. คุณสามารถตั้งค่าได้`CssStyleSheetType` ถึง`CssStyleSheetType.Embedded` หากคุณต้องการสไตล์แบบฝัง

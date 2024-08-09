@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/set-content-control-style/
 ---
-## Úvod
+## Zavedení
 
 Chtěli jste někdy oživit své dokumenty aplikace Word pomocí vlastních stylů, ale ocitli jste se zamotaní v technickém plevelu? Tak to máš štěstí! Dnes se ponoříme do světa nastavování stylů ovládání obsahu pomocí Aspose.Words for .NET. Je to jednodušší, než si myslíte, a na konci tohoto tutoriálu budete upravovat své dokumenty jako profesionál. Provedeme vás vším krok za krokem a ujistíme se, že rozumíte každé části procesu. Jste připraveni transformovat své dokumenty Word? Začněme!
 
@@ -15,7 +15,7 @@ Chtěli jste někdy oživit své dokumenty aplikace Word pomocí vlastních styl
 
 Než se pustíme do kódu, je třeba mít připraveno několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Pokud jste ji ještě nechytili, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Pokud jste ji ještě nechytili, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Můžete použít Visual Studio nebo jakékoli jiné C# IDE, které vám vyhovuje.
 3. Základní znalost C#: Nebojte se, nemusíte být expert, ale trocha znalosti pomůže.
 4. Ukázkový dokument aplikace Word: Použijeme ukázkový dokument aplikace Word s názvem`Structured document tags.docx`.
@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
- The`Styles` majetek z`Document` class nám poskytuje přístup ke všem stylům dostupným v dokumentu. Používáme`StyleIdentifier.Quote`vyberte styl nabídky.
+ The`Styles` vlastnictvím`Document` class nám poskytuje přístup ke všem stylům dostupným v dokumentu. Používáme`StyleIdentifier.Quote`vyberte styl nabídky.
 
 ## Krok 4: Použijte styl na štítek strukturovaného dokumentu
 
@@ -103,4 +103,4 @@ Ano, před provedením změn můžete uložit původní styl a v případě pot�
 Absolutně! Tato metoda funguje pro různé prvky dokumentu. Stačí upravit kód tak, aby cílil na požadovaný prvek.
 
 ### Podporuje Aspose.Words jiné platformy kromě .NET?  
-Ano, Aspose.Words je k dispozici pro Java, C++ a další platformy. Zkontrolujte jejich[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+Ano, Aspose.Words je k dispozici pro Java, C++ a další platformy. Zkontrolujte jejich[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.

@@ -10,7 +10,7 @@ url: /zh-hant/net/find-and-replace-text/replace-with-string/
 
 ## 介紹
 
-嘿！您是否曾經發現自己陷入了 Word 文件的困境，需要替換某些單字或短語？你不是一個人。無論是更新術語、糾正錯誤，還是只是整理內容，了解如何有效地找到和替換文件中的文字至關重要。今天，我們將深入探討 Aspose.Words for .NET 的奇妙世界，向您展示如何像專業人士一樣替換 Word 文件中的字串。
+嘿！您是否曾經發現自己陷入了 Word 文件的困境，需要替換某些單字或短語？你並不孤單。無論是更新術語、糾正錯誤，還是只是整理內容，了解如何有效地找到和替換文件中的文字至關重要。今天，我們將深入探討 Aspose.Words for .NET 的奇妙世界，向您展示如何像專業人士一樣替換 Word 文件中的字串。
 
 ## 先決條件
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 
 ## 結論
 
-你有它！使用 Aspose.Words for .NET，取代 Word 文件中的字串變得輕而易舉。該工具非常強大，允許您輕鬆地以程式設計方式操作文件。無論您是更新單字還是徹底修改整個部分，Aspose.Words 都會為您提供支援。
+給你了！使用 Aspose.Words for .NET，取代 Word 文件中的字串變得輕而易舉。該工具非常強大，允許您輕鬆地以程式設計方式操作文件。無論您是更新單字還是徹底修改整個部分，Aspose.Words 都會為您提供支援。
 
 ## 常見問題解答
 

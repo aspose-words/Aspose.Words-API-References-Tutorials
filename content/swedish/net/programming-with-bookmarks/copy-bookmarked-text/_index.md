@@ -48,7 +48,7 @@ Identifiera sedan bokmärket du vill kopiera från källdokumentet.
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
- Byta ut`"MyBookmark1"` med det faktiska namnet på ditt bokmärke.
+ Ersätta`"MyBookmark1"` med det faktiska namnet på ditt bokmärke.
 
 ## Steg 3: Skapa destinationsdokumentet
 
@@ -70,7 +70,7 @@ AppendBookmarkedText(importer, srcBookmark, dstNode);
 
 ## Steg 5: Definiera metoden AppendBookmarkedText
 
-Det är här magin händer. Definiera en metod för att hantera kopieringen av den bokmärkta texten:
+Här händer magin. Definiera en metod för att hantera kopieringen av den bokmärkta texten:
 
 ```csharp
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Slutsats
 
-Och det är allt! Du har framgångsrikt kopierat bokmärkt text från ett Word-dokument till ett annat med Aspose.Words för .NET. Den här metoden är kraftfull för att automatisera dokumenthanteringsuppgifter, vilket gör ditt arbetsflöde mer effektivt och strömlinjeformat.
+Och det är det! Du har framgångsrikt kopierat bokmärkt text från ett Word-dokument till ett annat med Aspose.Words för .NET. Den här metoden är kraftfull för att automatisera dokumenthanteringsuppgifter, vilket gör ditt arbetsflöde mer effektivt och strömlinjeformat.
 
 ## FAQ's
 
@@ -115,7 +115,7 @@ Ja, du kan iterera genom flera bokmärken och använda samma metod för att kopi
  De`Range.Bookmarks` egendom kommer tillbaka`null`, så se till att du hanterar det här fallet för att undvika undantag.
 
 ### Kan jag behålla formateringen av det ursprungliga bokmärket?
- Absolut! Använder sig av`ImportFormatMode.KeepSourceFormatting` säkerställer att den ursprungliga formateringen bevaras.
+ Absolut! Använder`ImportFormatMode.KeepSourceFormatting` säkerställer att den ursprungliga formateringen bevaras.
 
 ### Finns det en gräns för storleken på den bokmärkta texten?
 Det finns ingen specifik gräns, men prestandan kan variera med extremt stora dokument.

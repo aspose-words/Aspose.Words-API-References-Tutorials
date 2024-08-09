@@ -59,7 +59,7 @@ Artık projeniz oluşturulduğuna göre, üzerinde çalışacağımız Word belg
 
 Belgeniz yüklendiğinde paragraflar arasında ilerlemenin ve stil ayırıcıları belirlemenin zamanı geldi.
 
-1.  Tüm Paragrafları Al: Belgedeki tüm paragrafları`GetChildNodes` yöntem.
+1.  Tüm Paragrafları Al: Belgedeki tüm paragrafları`GetChildNodes` Yöntem.
 
     ```csharp
     foreach (Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -82,7 +82,7 @@ Belgeniz yüklendiğinde paragraflar arasında ilerlemenin ve stil ayırıcılar
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde paragraf stili ayırıcılarını bulma sanatında ustalaştınız. Bu roket bilimi değil ama kesinlikle sihir gibi geliyor, değil mi? Görevi basit adımlara bölerek, Word belgelerini programlı olarak yönetmek için güçlü bir aracın kilidini açtınız.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde paragraf stili ayırıcılarını bulma sanatında ustalaştınız. Bu roket bilimi değil ama kesinlikle sihir gibi geliyor, değil mi? Görevi basit adımlara bölerek, Word belgelerini programlı olarak yönetmek için güçlü bir aracın kilidini açtınız.
 
 ## SSS'ler
 
@@ -93,10 +93,10 @@ Paragraf stili ayırıcı, Word belgelerinde aynı paragraf içindeki farklı st
 Stil ayırıcılarını tanımlayabilseniz de bunların doğrudan değiştirilmesi desteklenmez. Ancak çevredeki içeriği değiştirebilirsiniz.
 
 ### Aspose.Words for .NET, .NET Core ile uyumlu mu?
-Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core ile uyumludur.
+Evet, Aspose.Words for .NET, hem .NET Framework hem de .NET Core ile uyumludur.
 
 ### Aspose.Words için nereden destek alabilirim?
  adresinden destek alabilirsiniz.[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
- Aspose.Words şunları sunar:[ücretsiz deneme](https://releases.aspose.com/) ve ayrıca sağlar[geçici lisanslar](https://purchase.aspose.com/temporary-license/) Evrim için.
+ Aspose.Words şunları sunar:[ücretsiz deneme](https://releases.aspose.com/) ve ayrıca sağlar[geçici lisanslar](https://purchase.aspose.com/temporary-license/) değerlendirme için.

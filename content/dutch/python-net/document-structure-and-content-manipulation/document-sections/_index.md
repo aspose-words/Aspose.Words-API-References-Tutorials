@@ -2,12 +2,12 @@
 title: Documentsecties en lay-out beheren
 linktitle: Documentsecties en lay-out beheren
 second_title: Aspose.Words Python Documentbeheer-API
-description: Leer hoe u documentsecties en lay-outs beheert met Aspose.Words voor Python. Creëer, wijzig secties, pas lay-outs aan en meer. Begin nu!
+description: Leer hoe u documentsecties en lay-outs beheert met Aspose.Words voor Python. Creëer, wijzig secties, pas lay-outs aan en meer. Ga nu aan de slag!
 type: docs
 weight: 24
 url: /nl/python-net/document-structure-and-content-manipulation/document-sections/
 ---
-Op het gebied van documentmanipulatie is Aspose.Words voor Python een krachtig hulpmiddel om moeiteloos documentsecties en lay-out te beheren. Deze tutorial leidt u door de essentiële stappen van het gebruik van de Aspose.Words Python API om documentsecties te manipuleren, lay-outs te wijzigen en uw documentverwerkingsworkflow te verbeteren.
+Op het gebied van documentmanipulatie is Aspose.Words voor Python een krachtig hulpmiddel om moeiteloos documentsecties en lay-out te beheren. Deze tutorial leidt u door de essentiële stappen voor het gebruik van de Aspose.Words Python API om documentsecties te manipuleren, lay-outs te wijzigen en uw documentverwerkingsworkflow te verbeteren.
 
 ## Inleiding tot Aspose.Words Python-bibliotheek
 

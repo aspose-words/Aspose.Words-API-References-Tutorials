@@ -117,7 +117,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ### ฉันต้องมีใบอนุญาตเพื่อใช้ Aspose.Words สำหรับ .NET หรือไม่
 
- ใช่ Aspose.Words สำหรับ .NET เป็นผลิตภัณฑ์เชิงพาณิชย์ คุณจะได้รับ[ทดลองฟรี](https://releases.aspose.com/) หรือซื้อใบอนุญาต[ที่นี่](https://purchase.aspose.com/buy).
+ ใช่ Aspose.Words สำหรับ .NET เป็นผลิตภัณฑ์เชิงพาณิชย์ คุณจะได้รับ[ทดลองใช้ฟรี](https://releases.aspose.com/) หรือซื้อใบอนุญาต[ที่นี่](https://purchase.aspose.com/buy).
 
 ### ฉันสามารถรวมเอกสารมากกว่าสองฉบับโดยใช้วิธีนี้ได้หรือไม่
 

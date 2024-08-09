@@ -104,4 +104,4 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 Aspose.Words は、.NET Core を含むさまざまなバージョンの .NET フレームワークをサポートしています。
 
 ### より詳細なドキュメントとサポートはどこで見つかりますか?
-詳細な情報にアクセスできます[ドキュメンテーション](https://reference.aspose.com/words/net/)そしてサポートを受ける[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).
+詳細な情報にアクセスできます[ドキュメント](https://reference.aspose.com/words/net/)そしてサポートを受ける[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).

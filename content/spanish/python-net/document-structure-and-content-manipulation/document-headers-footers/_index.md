@@ -12,7 +12,7 @@ Los encabezados y pies de página en los documentos de Word desempeñan un papel
 
 ## Comenzando con Aspose.Words para Python
 
-Antes de sumergirse en la manipulación de encabezados y pies de página, debe configurar Aspose.Words para Python. Sigue estos pasos:
+Antes de sumergirse en la manipulación de encabezados y pies de página, debe configurar Aspose.Words para Python. Siga estos pasos:
 
 1. Instalación: Instale Aspose.Words para Python usando pip.
 
@@ -89,7 +89,7 @@ footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE
 
 ## Diferentes encabezados y pies de página para páginas pares e impares
 
-Crear diferentes encabezados y pies de página para páginas pares e impares puede agregar un toque profesional a sus documentos. Así es cómo:
+Crear diferentes encabezados y pies de página para páginas pares e impares puede agregar un toque profesional a sus documentos. He aquí cómo:
 
 1. Configuración del diseño de página par e impar: defina el diseño para permitir diferentes encabezados y pies de página para páginas pares e impares.
 

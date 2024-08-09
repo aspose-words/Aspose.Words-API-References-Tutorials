@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. Adım: Temel Görüntü Sıkıştırmayı Yapılandırma
 
- Oluşturmak`PdfSaveOptions`Görüntü sıkıştırma da dahil olmak üzere PDF kaydetme seçeneklerini yapılandırmak için nesneyi seçin. Yı kur`ImageCompression`mülkiyet`PdfImageCompression.Jpeg` görüntüler için JPEG sıkıştırmasını kullanmak için.
+ Bir oluştur`PdfSaveOptions`Görüntü sıkıştırma da dahil olmak üzere PDF kaydetme seçeneklerini yapılandırmak için nesneyi seçin. Ayarla`ImageCompression`mülkiyet`PdfImageCompression.Jpeg` görüntüler için JPEG sıkıştırmasını kullanmak için.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## Adım 5: Gelişmiş Sıkıştırmayı PDF/A Uyumluluğuyla Yapılandırma
 
- Özellikle PDF/A standartlarına uymanız gerekiyorsa, daha da iyi sıkıştırma için ek seçenekleri yapılandırabilirsiniz. Yı kur`Compliance`mülkiyet`PdfCompliance.PdfA2u` ve ayarlayın`JpegQuality` mülk.
+ Özellikle PDF/A standartlarına uymanız gerekiyorsa, daha da iyi sıkıştırma için ek seçenekleri yapılandırabilirsiniz. Ayarla`Compliance`mülkiyet`PdfCompliance.PdfA2u` ve ayarlayın`JpegQuality` mülk.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions

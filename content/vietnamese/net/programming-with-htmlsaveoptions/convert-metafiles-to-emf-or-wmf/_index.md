@@ -20,7 +20,7 @@ Trước khi đi sâu vào mã, hãy đảm bảo rằng chúng ta đã thiết 
 3. Môi trường phát triển: Một IDE như Visual Studio sẽ giúp cuộc sống của bạn dễ dàng hơn.
 4. Kiến thức cơ bản về C#: Bạn không cần phải là chuyên gia nhưng hiểu biết cơ bản sẽ giúp ích.
 
-Có mọi thứ? Tuyệt vời! Bắt đầu nào.
+Có mọi thứ? Tuyệt vời! Hãy bắt đầu.
 
 ## Nhập không gian tên
 
@@ -89,7 +89,7 @@ Thao tác này sẽ lưu tài liệu vào thư mục đã chỉ định với đ
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã chuyển đổi thành công hình ảnh SVG sang định dạng EMF hoặc WMF trong tài liệu Word của mình bằng Aspose.Words for .NET. Phương pháp này rất hữu ích để đảm bảo tính tương thích và duy trì tính toàn vẹn trực quan của tài liệu của bạn trên các nền tảng khác nhau. Chúc mừng mã hóa!
+Và bạn có nó! Bằng cách làm theo các bước này, bạn đã chuyển đổi thành công hình ảnh SVG sang định dạng EMF hoặc WMF trong tài liệu Word của mình bằng Aspose.Words for .NET. Phương pháp này rất hữu ích để đảm bảo tính tương thích và duy trì tính toàn vẹn trực quan của tài liệu của bạn trên các nền tảng khác nhau. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

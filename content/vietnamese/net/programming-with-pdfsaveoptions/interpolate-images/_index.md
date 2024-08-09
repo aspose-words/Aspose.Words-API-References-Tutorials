@@ -65,7 +65,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Các`InterpolateImages` tài sản được đặt thành`true` để đảm bảo rằng hình ảnh trong tệp PDF của bạn được nội suy, cải thiện chất lượng của chúng.
+ các`InterpolateImages` tài sản được đặt thành`true` để đảm bảo rằng hình ảnh trong tệp PDF của bạn được nội suy, cải thiện chất lượng của chúng.
 
 ## Bước 4: Lưu tài liệu dưới dạng PDF
 
@@ -99,7 +99,7 @@ Aspose.Words chủ yếu hỗ trợ nội suy hình ảnh cho tệp PDF. Đối 
 
 ### Làm cách nào tôi có thể kiểm tra nội suy hình ảnh trước khi mua giấy phép?
 
- Bạn có thể[tải về dùng thử miễn phí](https://releases.aspose.com/) của Aspose.Words để kiểm tra nội suy hình ảnh và các tính năng khác.
+ bạn có thể[tải về dùng thử miễn phí](https://releases.aspose.com/) của Aspose.Words để kiểm tra nội suy hình ảnh và các tính năng khác.
 
 ### Tôi có thể nhận trợ giúp ở đâu nếu gặp vấn đề?
 

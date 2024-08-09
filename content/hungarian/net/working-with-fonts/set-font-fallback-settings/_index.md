@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Bevezetés
 
 Különböző szövegelemeket, például különböző nyelveket vagy speciális karaktereket tartalmazó dokumentumok használatakor elengedhetetlen, hogy ezek az elemek helyesen jelenjenek meg. Az Aspose.Words for .NET a Font Fallback Settings nevű hatékony funkciót kínálja, amely segít a betűtípusok helyettesítésére vonatkozó szabályok meghatározásában, ha az eredeti betűtípus nem támogat bizonyos karaktereket. Ebben az útmutatóban lépésről lépésre bemutatjuk, hogyan állíthatja be a tartalék betűkészlet-beállításokat az Aspose.Words for .NET használatával.
 
@@ -41,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a dokumentumot
 
- Töltse be a dokumentumot egy Aspose.Words-be`Document` tárgy. Ez a lépés lehetővé teszi, hogy programozottan dolgozzon a dokumentummal.
+ Töltse be a dokumentumot egy Aspose.Words-be`Document` objektum. Ez a lépés lehetővé teszi, hogy programozottan dolgozzon a dokumentummal.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -49,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. lépés: Konfigurálja a betűtípus-beállításokat
 
- Újat csinálni`FontSettings` objektumot, és töltse be a tartalék font-beállításokat egy XML-fájlból. Ez az XML-fájl tartalmazza a tartalék betűkészlet szabályait.
+ Hozzon létre egy újat`FontSettings` objektumot, és töltse be a tartalék font-beállításokat egy XML-fájlból. Ez az XML-fájl tartalmazza a tartalék betűkészlet szabályait.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## 4. lépés: Alkalmazza a Betűtípus-beállításokat a dokumentumra
 
- Rendelje hozzá a konfigurált`FontSettings` a dokumentumhoz. Ez biztosítja, hogy a betűkészlet-visszaállítási szabályok alkalmazásra kerüljenek a dokumentum renderelésekor.
+ Rendelje hozzá a konfigurált`FontSettings` dokumentumhoz. Ez biztosítja, hogy a betűkészlet-visszaállítási szabályok alkalmazásra kerüljenek a dokumentum renderelésekor.
 
 ```csharp
 doc.FontSettings = fontSettings;

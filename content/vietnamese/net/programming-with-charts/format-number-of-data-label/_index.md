@@ -15,7 +15,7 @@ Việc tạo tài liệu hấp dẫn và giàu thông tin thường liên quan �
 
 Trước khi đi sâu vào mã, bạn cần phải có một số điều kiện tiên quyết:
 
--  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu bạn chưa cài đặt nó, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu bạn chưa cài đặt nó, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Bạn nên thiết lập môi trường phát triển .NET. Visual Studio rất được khuyến khích.
 - Kiến thức cơ bản về C#: Làm quen với lập trình C# là điều cần thiết vì hướng dẫn này liên quan đến việc viết và hiểu mã C#.
 -  Giấy phép tạm thời: Để sử dụng Aspose.Words mà không có bất kỳ giới hạn nào, bạn có thể nhận được[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
@@ -44,7 +44,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Khởi tạo Document và DocumentBuilder
 
- Bước tiếp theo là khởi tạo một`Document` và một`DocumentBuilder` . Các`DocumentBuilder` là một lớp trợ giúp cho phép chúng ta xây dựng nội dung tài liệu.
+ Bước tiếp theo là khởi tạo một`Document` và một`DocumentBuilder` . các`DocumentBuilder` là một lớp trợ giúp cho phép chúng ta xây dựng nội dung tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -92,7 +92,7 @@ Cốt lõi của hướng dẫn này là định dạng nhãn dữ liệu. Chún
 
 ```csharp
 series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Định dạng tiền tệ
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Định dạng ngày tháng
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Định dạng ngày
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Định dạng phần trăm
 ```
 

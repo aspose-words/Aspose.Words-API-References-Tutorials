@@ -15,8 +15,8 @@ OLE および ActiveX オブジェクトを使用した Words Processing に関�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Word 文書に Ole オブジェクトを挿入する](./insert-ole-object/) | Aspose.Words for .NET を使用して Word 文書に OLE オブジェクトを挿入する方法を学習します。 |
-| [Ole パッケージを使用して Word に Ole オブジェクトを挿入する](./insert-ole-object-with-ole-package/) | Aspose.Words for .NET を使用して、OLE パッケージを含む Word の OLE オブジェクトをドキュメントに挿入する方法を学習します。 |
-| [Word 文書に Ole オブジェクトをアイコンとして挿入する](./insert-ole-object-as-icon/) | Aspose.Words for .NET を使用して、Word 文書に OLE オブジェクトをアイコンとして挿入する方法を学習します。 |
-| [ストリームを使用して OLE オブジェクトをアイコンとして挿入する](./insert-ole-object-as-icon-using-stream/) | Aspose.Words for .NET でストリームを使用して OLE オブジェクトをアイコンとして挿入する方法を学習します。 |
-| [Word ファイルから Active XControl プロパティを読み取る](./read-active-xcontrol-properties/) | Aspose.Words for .NET を使用して、Word ファイル内の ActiveX コントロールのプロパティを読み取ります。 |
+| [Word 文書に Ole オブジェクトを挿入する](./insert-ole-object/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書に OLE オブジェクトを挿入する方法を学習します。埋め込みコンテンツを使用して文書を強化します。 |
+| [Ole パッケージを使用して Word に Ole オブジェクトを挿入する](./insert-ole-object-with-ole-package/) | Aspose.Words for .NET を使用して Word 文書に OLE オブジェクトを挿入する方法を学びます。詳細なステップバイステップ ガイドに従って、ファイルをシームレスに埋め込みます。 |
+| [Word 文書に Ole オブジェクトをアイコンとして挿入する](./insert-ole-object-as-icon/) | Aspose.Words for .NET を使用して、Word 文書に OLE オブジェクトをアイコンとして挿入する方法を学びます。ステップ バイ ステップ ガイドに従って、文書を強化してください。 |
+| [ストリームを使用して OLE オブジェクトをアイコンとして挿入する](./insert-ole-object-as-icon-using-stream/) | この詳細なステップバイステップのチュートリアルでは、Aspose.Words for .NET でストリームを使用して OLE オブジェクトをアイコンとして挿入する方法を学習します。 |
+| [Word ファイルから Active XControl プロパティを読み取る](./read-active-xcontrol-properties/) | Aspose.Words for .NET を使用して Word ファイルから ActiveX コントロールのプロパティを読み取る方法をステップ バイ ステップ ガイドで学習します。ドキュメント自動化スキルを強化します。 |

@@ -9,12 +9,12 @@ url: /ko/net/programming-with-tables/get-table-position/
 ---
 ## 소개
 
-Word 문서 내 표의 정확한 위치를 알아내느라 난처한 상황에 빠진 적이 있나요? 콘텐츠를 완벽하게 정렬하려는 경우든, 단순히 호기심으로든 테이블의 위치를 아는 것은 매우 유용할 수 있습니다. 오늘은 Aspose.Words for .NET을 사용하여 테이블 위치를 얻는 방법에 대해 자세히 알아보겠습니다. 초보자라도 문제 없이 따라할 수 있도록 단계별로 나누어 설명하겠습니다. Word 문서 마법사가 될 준비가 되셨나요? 시작하자!
+Word 문서 내 표의 정확한 위치를 알아내느라 난처한 상황에 빠진 적이 있나요? 콘텐츠를 완벽하게 정렬하려는 경우든, 단순히 호기심으로든 테이블의 위치를 아는 것은 매우 유용할 수 있습니다. 오늘은 Aspose.Words for .NET을 사용하여 테이블 위치를 얻는 방법에 대해 자세히 알아보겠습니다. 초보자라도 문제 없이 따라할 수 있도록 단계별로 나누어 설명하겠습니다. Word 문서 마법사가 될 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 
 핵심적인 내용으로 넘어가기 전에 필요한 모든 것이 갖추어져 있는지 확인해 보겠습니다.
--  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - Visual Studio: 모든 버전이 가능하지만 항상 최신 버전을 권장합니다.
 - .NET Framework: .NET Framework 4.0 이상이 있는지 확인하세요.
 - Word 문서: 이 튜토리얼에서는 다음과 같은 문서를 사용합니다.`Tables.docx`.
@@ -101,4 +101,4 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
 
 ### 평가판을 사용할 수 있나요?
 
- 예, 다음을 얻을 수 있습니다.[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) .NET용 Aspose.Words를 사용해 보세요.
+ 예, 다음을 얻을 수 있습니다.[무료 평가판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) .NET용 Aspose.Words를 사용해 보세요.

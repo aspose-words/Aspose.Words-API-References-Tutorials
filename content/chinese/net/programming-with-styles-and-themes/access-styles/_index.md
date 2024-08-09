@@ -73,7 +73,7 @@ foreach (Style style in styles)
 以下是此代码的功能分解：
 
 - 初始化`styleName`：我们从一个空字符串开始构建我们的样式名称列表。
-- 循环浏览样式：`foreach`循环迭代每一个`Style`在里面`styles`收藏。
+- 循环浏览样式：`foreach`循环迭代每一个`Style`在`styles`收藏。
 - 更新与显示`styleName`：对于每种风格，我们将其名称附加到`styleName`并将其打印出来。
 
 ## 步骤 4：自定义输出

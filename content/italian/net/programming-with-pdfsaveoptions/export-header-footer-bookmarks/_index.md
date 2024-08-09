@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
-## introduzione
+## Introduzione
 
 Convertire documenti Word in PDF è un'attività comune, soprattutto quando desideri condividere o archiviare documenti preservandone la formattazione. A volte, questi documenti contengono segnalibri importanti nelle intestazioni e nei piè di pagina. In questo tutorial, esamineremo il processo di esportazione di questi segnalibri da un documento Word a un PDF utilizzando Aspose.Words per .NET.
 
@@ -66,13 +66,13 @@ In questo passaggio, stai salvando il documento nel percorso specificato con le 
 
 ## Conclusione
 
-il gioco è fatto! Seguendo questi passaggi, puoi esportare facilmente i segnalibri dalle intestazioni e dai piè di pagina di un documento Word in un PDF utilizzando Aspose.Words per .NET. Questo metodo garantisce che importanti aiuti alla navigazione all'interno del documento vengano conservati nel formato PDF, semplificando la navigazione all'interno del documento per i lettori.
+Ed ecco qua! Seguendo questi passaggi, puoi esportare facilmente i segnalibri dalle intestazioni e dai piè di pagina di un documento Word in un PDF utilizzando Aspose.Words per .NET. Questo metodo garantisce che importanti aiuti alla navigazione all'interno del documento vengano conservati nel formato PDF, semplificando la navigazione all'interno del documento per i lettori.
 
 ## Domande frequenti
 
 ### Posso esportare tutti i segnalibri dal documento Word in PDF?
 
- Si, puoi. Nel`PdfSaveOptions`, puoi regolare le impostazioni per includere tutti i segnalibri, se necessario.
+ Sì, puoi. Nel`PdfSaveOptions`, puoi regolare le impostazioni per includere tutti i segnalibri, se necessario.
 
 ### Cosa succede se voglio esportare i segnalibri anche dal corpo del documento?
 

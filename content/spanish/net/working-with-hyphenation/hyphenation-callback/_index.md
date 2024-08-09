@@ -10,13 +10,13 @@ url: /es/net/working-with-hyphenation/hyphenation-callback/
 
 ## Introducción
 
-¡Hola! ¿Alguna vez se ha visto enredado en las complejidades del formato de texto, especialmente cuando se trata de idiomas que requieren separación de palabras? No estás solo. La separación de sílabas, si bien es crucial para el diseño adecuado del texto, puede ser un dolor de cabeza. ¿Pero adivina que? Aspose.Words para .NET te respalda. Esta poderosa biblioteca le permite administrar el formato de texto sin problemas, incluido el manejo de la separación de palabras a través de un mecanismo de devolución de llamada. ¿Intrigado? Profundicemos en el meollo de la cuestión de cómo implementar una devolución de llamada con separación de palabras utilizando Aspose.Words para .NET.
+¡Hola! ¿Alguna vez se ha visto enredado en las complejidades del formato de texto, especialmente cuando se trata de idiomas que requieren separación de palabras? No estás solo. La separación de sílabas, si bien es crucial para el diseño adecuado del texto, puede ser un dolor de cabeza. ¿Pero adivina qué? Aspose.Words para .NET te respalda. Esta poderosa biblioteca le permite administrar el formato de texto sin problemas, incluido el manejo de la separación de palabras a través de un mecanismo de devolución de llamada. ¿Intrigado? Profundicemos en el meollo de la cuestión de cómo implementar una devolución de llamada con separación de palabras utilizando Aspose.Words para .NET.
 
 ## Requisitos previos
 
 Antes de ensuciarnos las manos con el código, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Aspose.Words para .NET: asegúrese de tener la biblioteca. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1. Aspose.Words para .NET: asegúrese de tener la biblioteca. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. IDE: un entorno de desarrollo como Visual Studio.
 3. Conocimientos básicos de C#: comprensión de C# y .NET framework.
 4. Diccionarios de separación de sílabas: diccionarios de separación de sílabas para los idiomas que planea utilizar.
@@ -68,7 +68,7 @@ Ahora, carguemos el documento que requiere separación de palabras.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Aquí, estamos cargando un documento de texto en alemán. puedes reemplazar`"German text.docx"` con el nombre de archivo de su documento.
+Aquí, estamos cargando un documento de texto en alemán. puedes reemplazar`"German text.docx"` con el nombre de archivo de su documento.
 
 ## Paso 4: guarde el documento
 
@@ -140,10 +140,10 @@ Aspose.Words para .NET es una potente biblioteca de manipulación de documentos 
 La separación de palabras mejora el diseño del texto al dividir las palabras en los lugares apropiados, lo que garantiza un documento más legible y visualmente atractivo.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Aspose.Words ofrece una prueba gratuita. Puedes conseguirlo[aquí](https://releases.aspose.com/).
+ Aspose.Words ofrece una prueba gratuita. puedes conseguirlo[aquí](https://releases.aspose.com/).
 
 ### ¿Cómo obtengo un diccionario de separación de palabras?
 Puede descargar diccionarios de separación de palabras de varios recursos en línea o crear los suyos propios si es necesario.
 
 ### ¿Qué sucede si falta un diccionario de separación de palabras?
- Si falta un diccionario, el`RequestDictionary` El método genera una excepción, que puede manejar para informar al usuario o proporcionar una alternativa.
+ Si falta un diccionario, el`RequestDictionary`El método genera una excepción, que puede manejar para informar al usuario o proporcionar una alternativa.

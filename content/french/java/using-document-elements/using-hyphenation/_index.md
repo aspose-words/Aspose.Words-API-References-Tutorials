@@ -50,7 +50,7 @@ Hyphenation.registerDictionary("de-CH", stream);
 doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.pdf");
 ```
 
-## 6. Conclusion
+## 6.Conclusion
 
 La césure joue un rôle crucial dans le maintien de la qualité et de l’esthétique de vos documents, notamment lorsqu’il s’agit de contenu multilingue. Aspose.Words for Java simplifie le processus d'application des règles de césure pour garantir que vos documents soient à leur meilleur.
 

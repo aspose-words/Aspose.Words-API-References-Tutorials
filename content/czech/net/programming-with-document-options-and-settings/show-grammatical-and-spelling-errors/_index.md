@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/show-grammatical-and-spelling-errors/
 ---
-## Úvod
+## Zavedení
 
 Stává se vám někdy, že se neúnavně prohrabáváte dokumenty, abyste zachytili každou drobnou gramatickou a pravopisnou chybu? Je to jako hrát nekonečnou hru „Kde je Waldo“, že? No, už se nebojte! S Aspose.Words for .NET můžete automatizovat proces a ušetřit si spoustu času a potíží. Pojďme se ponořit do toho, jak můžete povolit zobrazování gramatických a pravopisných chyb v dokumentech aplikace Word pomocí tohoto šikovného nástroje.
 
@@ -15,7 +15,7 @@ Stává se vám někdy, že se neúnavně prohrabáváte dokumenty, abyste zachy
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Stáhněte a nainstalujte knihovnu z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Stáhněte a nainstalujte knihovnu z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje .NET.
 3. Základní znalost C#: Měli byste být obeznámeni se základními koncepty programování v C#.
 
@@ -31,7 +31,7 @@ Pojďme si krok za krokem rozebrat proces zobrazování gramatických a pravopis
 
 ## Krok 1: Nastavte svůj projekt
 
- Než se ponoříme do kódu, ujistěte se, že je váš projekt správně nastaven. Otevřete své IDE a vytvořte nový projekt .NET. Přidejte odkaz na knihovnu Aspose.Words. Pokud jste si ji ještě nestáhli, můžete ji získat z[tady](https://releases.aspose.com/words/net/).
+ Než se ponoříme do kódu, ujistěte se, že je váš projekt správně nastaven. Otevřete své IDE a vytvořte nový projekt .NET. Přidejte odkaz na knihovnu Aspose.Words. Pokud jste si ji ještě nestáhli, můžete ji získat z[zde](https://releases.aspose.com/words/net/).
 
 ## Krok 2: Definujte adresář dokumentů
 
@@ -52,7 +52,7 @@ Dále musíte načíst dokument, který chcete zpracovat. Aspose.Words to neuvě
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Tady,`Document.docx` je název souboru, u kterého chcete zkontrolovat gramatické a pravopisné chyby. Ujistěte se, že tento soubor existuje ve vašem zadaném adresáři.
+ Zde,`Document.docx` je název souboru, u kterého chcete zkontrolovat gramatické a pravopisné chyby. Ujistěte se, že tento soubor existuje ve vašem zadaném adresáři.
 
 ## Krok 4: Povolte zobrazení gramatických a pravopisných chyb
 
@@ -79,7 +79,7 @@ Tím se upravený dokument uloží pod novým názvem, čímž se zajistí, že 
 
 A tady to máte! V několika jednoduchých krocích jste se naučili, jak automatizovat proces zobrazování gramatických a pravopisných chyb v dokumentu aplikace Word pomocí Aspose.Words for .NET. To vám nejen ušetří čas, ale také zajistí, že vaše dokumenty budou bezchybné a profesionální.
 
- Mimochodem, pokud jste ještě nevyzkoušeli Aspose.Words pro .NET, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/) . Pokud potřebujete zakoupit licenci, můžete tak učinit[tady](https://purchase.aspose.com/buy) A pokud budete někdy potřebovat podporu, neváhejte je navštívit[Fórum](https://forum.aspose.com/c/words/8).
+ Mimochodem, pokud jste ještě nevyzkoušeli Aspose.Words pro .NET, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/) . Pokud potřebujete zakoupit licenci, můžete tak učinit[zde](https://purchase.aspose.com/buy) A pokud budete někdy potřebovat podporu, neváhejte je navštívit[forum](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 
@@ -90,10 +90,10 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 Absolutně! Aspose.Words se hladce integruje s vašimi projekty .NET.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Knihovnu si můžete stáhnout z[webová stránka](https://releases.aspose.com/words/net/) a přidejte jej do svého projektu jako referenci.
+ Knihovnu si můžete stáhnout z[webové stránky](https://releases.aspose.com/words/net/) a přidejte jej do svého projektu jako referenci.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete získat bezplatnou zkušební verzi od[tady](https://releases.aspose.com/).
+ Ano, můžete získat bezplatnou zkušební verzi od[zde](https://releases.aspose.com/).
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
- Dokumentace je k dispozici[tady](https://reference.aspose.com/words/net/).
+ Dokumentace je k dispozici[zde](https://reference.aspose.com/words/net/).

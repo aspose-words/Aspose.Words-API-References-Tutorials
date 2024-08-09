@@ -16,7 +16,7 @@ url: /th/python-net/document-structure-and-content-manipulation/document-comment
 
 ## การตั้งค่า Aspose.Words สำหรับ Python
 
- ในการเริ่มต้น คุณต้องติดตั้ง Aspose.Words สำหรับ Python คุณสามารถดาวน์โหลดห้องสมุดได้จาก[Aspose.Words สำหรับหลาม](https://releases.aspose.com/words/python/) ลิ้งค์ดาวน์โหลด. เมื่อดาวน์โหลดแล้ว คุณสามารถติดตั้งโดยใช้ pip:
+ ในการเริ่มต้น คุณต้องติดตั้ง Aspose.Words สำหรับ Python คุณสามารถดาวน์โหลดห้องสมุดได้จาก[Aspose.Words สำหรับหลาม](https://releases.aspose.com/words/python/) ลิงค์ดาวน์โหลด เมื่อดาวน์โหลดแล้ว คุณสามารถติดตั้งโดยใช้ pip:
 
 ```python
 pip install aspose-words

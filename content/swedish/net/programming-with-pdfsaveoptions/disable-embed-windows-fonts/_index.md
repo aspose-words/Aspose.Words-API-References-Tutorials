@@ -15,7 +15,7 @@ Att minska storleken på PDF-filer kan vara avgörande för effektiv lagring och
 
 Innan du dyker in i koden, se till att du har följande:
 
--  Aspose.Words för .NET: Om du inte redan har gjort det, ladda ner och installera det från[Nedladdningslänk](https://releases.aspose.com/words/net/).
+-  Aspose.Words för .NET: Om du inte redan har gjort det, ladda ner och installera det från[Ladda ner länk](https://releases.aspose.com/words/net/).
 - En .NET-utvecklingsmiljö: Visual Studio är ett populärt val.
 - Ett exempel på Word-dokument: Ha en DOCX-fil redo som du vill konvertera till en PDF.
 
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Här,`dataDir` är en platshållare för katalogen där ditt dokument finns. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska vägen.
+ Här,`dataDir` är en platshållare för katalogen där ditt dokument finns. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska vägen.
 
 ## Steg 2: Konfigurera PDF-sparalternativ
 
@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Genom att sätta`FontEmbeddingMode` till`EmbedNone`, instruerar vi Aspose.Words att inte inkludera dessa typsnitt i PDF-filen, vilket minskar filstorleken.
+ Genom att ställa in`FontEmbeddingMode` till`EmbedNone`, instruerar vi Aspose.Words att inte inkludera dessa typsnitt i PDF-filen, vilket minskar filstorleken.
 
 ## Steg 3: Spara dokumentet som PDF
 
@@ -64,7 +64,7 @@ Slutligen sparar vi dokumentet som en PDF med hjälp av de konfigurerade sparalt
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med din faktiska katalogsökväg igen. Utdata-PDF-filen kommer nu att sparas i den angivna katalogen utan inbäddade standardteckensnitt.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med din faktiska katalogsökväg igen. Utdata-PDF-filen kommer nu att sparas i den angivna katalogen utan inbäddade standardteckensnitt.
 
 ## Slutsats
 

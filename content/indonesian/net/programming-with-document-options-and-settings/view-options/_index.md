@@ -15,7 +15,7 @@ Hai, rekan pembuat kode! Pernah bertanya-tanya bagaimana cara mengubah cara Anda
 
 Sebelum kita mendalami kodenya terlebih dahulu, pastikan kita memiliki semua yang diperlukan untuk mengikuti tutorial ini. Berikut daftar periksa singkatnya:
 
-1.  Perpustakaan Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Perpustakaan Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Anda harus memiliki IDE seperti Visual Studio yang terinstal di mesin Anda.
 3. Pengetahuan Dasar tentang C#: Meskipun kami akan menyederhanakannya, pemahaman dasar tentang C# akan bermanfaat.
 4. Contoh Dokumen Word: Siapkan contoh dokumen Word. Untuk tutorial ini, kami akan menyebutnya sebagai "Document.docx".
@@ -46,7 +46,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Langkah 2: Atur Jenis Tampilan
 
-Selanjutnya, kita akan mengubah tipe tampilan dokumen. Tipe tampilan menentukan cara dokumen ditampilkan, misalnya Tata Letak Cetak, Tata Letak Web, atau Tampilan Kerangka.
+Selanjutnya, kita akan mengubah tipe tampilan dokumen. Tipe tampilan menentukan cara dokumen ditampilkan, seperti Tata Letak Cetak, Tata Letak Web, atau Tampilan Kerangka.
 
 ```csharp
 doc.ViewOptions.ViewType = ViewType.PageLayout;
@@ -72,11 +72,11 @@ Terakhir, setelah melakukan perubahan yang diperlukan, Anda dapat menyimpan doku
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 ```
 
-Baris kode ini menyimpan dokumen yang dimodifikasi dengan nama baru, sehingga Anda tidak menimpa file asli Anda. Anda sekarang dapat membuka file ini untuk melihat opsi tampilan yang diperbarui.
+Baris kode ini menyimpan dokumen yang diubah dengan nama baru, sehingga Anda tidak menimpa file asli Anda. Anda sekarang dapat membuka file ini untuk melihat opsi tampilan yang diperbarui.
 
 ## Kesimpulan
 
-Dan itu dia! Mengubah opsi tampilan dokumen Word Anda menggunakan Aspose.Words untuk .NET sangatlah mudah setelah Anda mengetahui langkah-langkahnya. Dengan mengikuti tutorial ini, Anda telah mempelajari cara memuat dokumen, mengubah jenis tampilan, menyesuaikan tingkat zoom, dan menyimpan dokumen dengan pengaturan baru. Ingat, kunci untuk menguasai Aspose.Words untuk .NET adalah latihan. Jadi, lanjutkan dan bereksperimenlah dengan berbagai pengaturan untuk melihat mana yang terbaik bagi Anda. Selamat membuat kode!
+Dan itu dia! Mengubah opsi tampilan dokumen Word Anda menggunakan Aspose.Words untuk .NET sangatlah mudah setelah Anda mengetahui langkah-langkahnya. Dengan mengikuti tutorial ini, Anda telah mempelajari cara memuat dokumen, mengubah jenis tampilan, menyesuaikan tingkat zoom, dan menyimpan dokumen dengan pengaturan baru. Ingat, kunci untuk menguasai Aspose.Words untuk .NET adalah latihan. Jadi, silakan bereksperimen dengan pengaturan berbeda untuk melihat mana yang terbaik bagi Anda. Selamat membuat kode!
 
 ## FAQ
 

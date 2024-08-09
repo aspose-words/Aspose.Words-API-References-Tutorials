@@ -72,7 +72,7 @@ Az alábbi lépések követésével sikeresen generálhat táblázatot egy DataT
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan hozhat létre táblát DataTable-ből az Aspose.Words for Java használatával. Ez a lépésenkénti útmutató bemutatta a DataTable elkészítésének, a Word-dokumentumban lévő táblázat létrehozásának és formázásának, valamint a végső kimenet elmentésének folyamatát. Az Aspose.Words for Java hatékony és rugalmas API-t kínál a táblázatfeldolgozáshoz, amely megkönnyíti a táblázatos adatok kezelését és beépítését a szövegszerkesztő projektekbe.
+Gratulálok! Sikeresen megtanulta, hogyan hozhat létre táblát DataTable-ből az Aspose.Words for Java használatával. Ez a lépésenkénti útmutató bemutatta a DataTable elkészítésének, a Word-dokumentumban lévő táblázat létrehozásának és formázásának, valamint a végső kimenet elmentésének folyamatát. Az Aspose.Words for Java hatékony és rugalmas API-t kínál a táblázatfeldolgozáshoz, amely megkönnyíti a táblázatos adatok kezelését és beépítését a szövegszerkesztő projektekbe.
 
 Az Aspose.Words képességeinek kihasználásával összetett táblázatstruktúrákat kezelhet, egyéni formázást alkalmazhat, és zökkenőmentesen integrálhatja a táblázatokat a dokumentumokba. Akár jelentéseket, számlákat vagy bármilyen más, táblázatos ábrázolást igénylő dokumentumot készít, az Aspose.Words segítségével könnyedén érhet el professzionális eredményeket.
 

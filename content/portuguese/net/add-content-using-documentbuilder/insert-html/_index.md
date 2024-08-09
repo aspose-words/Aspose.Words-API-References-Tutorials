@@ -15,7 +15,7 @@ Olá, colega entusiasta de codificação! Você já se perguntou como inserir HT
 
 Antes de mergulharmos no guia passo a passo, vamos ter certeza de que temos tudo o que precisamos. Aqui está uma lista de verificação rápida:
 
-1. Biblioteca Aspose.Words for .NET: Se ainda não o fez, você precisará baixar a biblioteca Aspose.Words for .NET. Você pode conseguir isso[aqui](https://releases.aspose.com/words/net/).
+1. Biblioteca Aspose.Words for .NET: Se ainda não o fez, você precisará baixar a biblioteca Aspose.Words for .NET. Você pode conseguir[aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: certifique-se de ter um ambiente de desenvolvimento configurado, como o Visual Studio.
 3. .NET Framework: Certifique-se de ter o .NET framework instalado em sua máquina.
 4. Conhecimento básico de C#: Um pouco de familiaridade com C# será de grande ajuda.
@@ -82,7 +82,7 @@ Por último, mas não menos importante, salvaremos nosso documento no diretório
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-E aí está! Você acabou de inserir HTML em um documento do Word usando Aspose.Words for .NET. Toca aqui!
+E aí está! Você acabou de inserir HTML em um documento do Word usando Aspose.Words for .NET. Mais cinco!
 
 ## Conclusão
 
@@ -104,7 +104,7 @@ Sim, o Aspose.Words for .NET foi projetado para ser compatível com várias vers
 Sim, uma vez inserido o HTML, você pode manipular ainda mais o documento usando os vários métodos fornecidos pelo Aspose.Words for .NET.
 
 ### Preciso de uma licença para usar o Aspose.Words for .NET?  
- Você pode começar com um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para recursos completos.
+ Você pode começar com um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para recursos completos.
 
 ### Onde posso encontrar mais tutoriais e exemplos?  
  O[documentação](https://reference.aspose.com/words/net/)e[fóruns de suporte](https://forum.aspose.com/c/words/8)são ótimos lugares para começar, para obter guias mais detalhados e suporte da comunidade.

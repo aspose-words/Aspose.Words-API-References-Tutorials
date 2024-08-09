@@ -2,7 +2,7 @@
 title: 順序付きリスト
 linktitle: 順序付きリスト
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書に順序付きリストを作成する方法を、ステップバイステップ ガイドで学習します。ドキュメント作成の自動化に最適です。
+description: Aspose.Words for .NET を使用して Word 文書に順序付きリストを作成する方法を、ステップバイステップ ガイドで学習します。文書作成の自動化に最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/ordered-list/
@@ -15,7 +15,7 @@ url: /ja/net/working-with-markdown/ordered-list/
 
 コードに進む前に、いくつか必要なものがあります。
 
-1.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされていることを確認してください。インストールされていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NETがインストールされていることを確認してください。インストールされていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio またはその他の .NET 互換 IDE。
 3. C# の基礎知識: 簡単に理解するには、C# の基礎を理解している必要があります。
 

@@ -96,7 +96,7 @@ builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DO
 ```
 
 ### Specificare i livelli di elenco: 
-Scorri diversi livelli di elenco e aggiungi contenuti.
+Scorri diversi livelli di elenco e aggiungi contenuto.
 
 ```java
 for (int i = 0; i < 9; i++) {
@@ -216,7 +216,7 @@ Seguendo questi passaggi, puoi creare documenti con livelli di elenco personaliz
 
 Congratulazioni! Hai imparato come lavorare in modo efficace con gli elenchi in Aspose.Words per Java. Gli elenchi sono fondamentali per organizzare e presentare i contenuti nei tuoi documenti. Se è necessario riavviare gli elenchi in ciascuna sezione o specificare i livelli di elenco, Aspose.Words per Java fornisce gli strumenti necessari per creare documenti dall'aspetto professionale.
 
-Ora puoi utilizzare con sicurezza queste funzionalità per migliorare le attività di generazione e formattazione dei documenti. Se hai domande o hai bisogno di ulteriore assistenza, non esitare a contattare il[Aspose forum della comunità](https://forum.aspose.com/) per supporto.
+Ora puoi utilizzare con sicurezza queste funzionalità per migliorare le attività di generazione e formattazione dei documenti. Se hai domande o hai bisogno di ulteriore assistenza, non esitare a contattare il[Aspose forum della comunità](https://forum.aspose.com/) per il supporto.
 
 ## Domande frequenti
 

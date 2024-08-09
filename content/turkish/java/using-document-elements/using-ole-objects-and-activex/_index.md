@@ -2,7 +2,7 @@
 title: Aspose.Words for Java'da OLE Nesnelerini ve ActiveX Kontrollerini Kullanma
 linktitle: OLE Nesnelerini ve ActiveX Denetimlerini Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'da OLE nesnelerini ve ActiveX kontrollerini kullanmayı öğrenin. Kolayca etkileşimli belgeler oluşturun. Şimdi başla!
+description: Aspose.Words for Java'da OLE nesnelerini ve ActiveX kontrollerini kullanmayı öğrenin. Kolayca etkileşimli belgeler oluşturun. Şimdi başlayın!
 type: docs
 weight: 21
 url: /tr/java/using-document-elements/using-ole-objects-and-activex/

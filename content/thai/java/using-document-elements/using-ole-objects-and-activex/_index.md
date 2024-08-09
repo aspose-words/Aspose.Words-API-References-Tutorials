@@ -2,7 +2,7 @@
 title: การใช้วัตถุ OLE และตัวควบคุม ActiveX ใน Aspose.Words สำหรับ Java
 linktitle: การใช้วัตถุ OLE และตัวควบคุม ActiveX
 second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: เรียนรู้การใช้วัตถุ OLE และตัวควบคุม ActiveX ใน Aspose.Words สำหรับ Java สร้างเอกสารเชิงโต้ตอบได้อย่างง่ายดาย เริ่มตอนนี้เลย!
+description: เรียนรู้การใช้วัตถุ OLE และตัวควบคุม ActiveX ใน Aspose.Words สำหรับ Java สร้างเอกสารเชิงโต้ตอบได้อย่างง่ายดาย เริ่มต้นทันที!
 type: docs
 weight: 21
 url: /th/java/using-document-elements/using-ole-objects-and-activex/

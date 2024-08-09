@@ -242,7 +242,7 @@ Om inhoud uit specifieke documentsecties te extraheren, kunt u de begin- en eind
 
 ### Kan ik inhoud extraheren uit met een wachtwoord beveiligde documenten?
 
-Ja, Aspose.Words voor Java biedt functionaliteit om inhoud uit met een wachtwoord beveiligde documenten te extraheren. U kunt het wachtwoord opgeven wanneer u het document opent met behulp van de`Document` klasse constructeur.
+Ja, Aspose.Words voor Java biedt functionaliteit om inhoud uit met een wachtwoord beveiligde documenten te extraheren. U kunt het wachtwoord opgeven wanneer u het document opent met behulp van de`Document` klasse constructor.
 
 ### Hoe kan ik inhoud extraheren en opslaan in verschillende formaten, zoals platte tekst of HTML?
 

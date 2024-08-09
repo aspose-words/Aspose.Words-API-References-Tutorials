@@ -9,7 +9,7 @@ url: /fr/net/programming-with-loadoptions/load-with-encoding/
 ---
 ## Introduction
 
-Salut! Vous travaillez donc avec des documents Word et devez en charger un avec un encodage spécifique ? Peut-être avez-vous rencontré des documents avec du texte codé dans quelque chose comme UTF-7 et vous vous demandez comment les gérer. Eh bien, vous êtes au bon endroit ! Dans ce didacticiel, nous expliquons en profondeur comment charger un document Word avec un encodage spécifique à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque vous permet de manipuler des documents Word d'une manière que vous n'auriez probablement jamais cru possible. Commençons!
+Salut! Vous travaillez donc avec des documents Word et devez en charger un avec un encodage spécifique ? Peut-être avez-vous rencontré des documents avec du texte codé dans quelque chose comme UTF-7 et vous vous demandez comment les gérer. Eh bien, vous êtes au bon endroit ! Dans ce didacticiel, nous expliquons en profondeur comment charger un document Word avec un encodage spécifique à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque vous permet de manipuler des documents Word d'une manière que vous n'auriez probablement jamais cru possible. Commençons !
 
 ## Conditions préalables
 
@@ -70,7 +70,7 @@ Cette ligne de code charge le document à partir du chemin spécifié en utilisa
 
 ## Conclusion
 
-Et voila! Vous avez chargé avec succès un document Word avec un encodage spécifique à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la gestion de différents encodages de texte et garantit que vos documents sont traités correctement. Que vous traitiez de documents existants ou que vous travailliez avec du texte international, Aspose.Words est là pour vous.
+Et voilà ! Vous avez chargé avec succès un document Word avec un encodage spécifique à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la gestion de différents encodages de texte et garantit que vos documents sont traités correctement. Que vous traitiez de documents existants ou que vous travailliez avec du texte international, Aspose.Words est là pour vous.
 
 ## FAQ
 

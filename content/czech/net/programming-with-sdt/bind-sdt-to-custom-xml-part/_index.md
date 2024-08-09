@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
-## Úvod
+## Zavedení
 
 Vytváření dynamických dokumentů aplikace Word, které komunikují s vlastními daty XML, může výrazně zvýšit flexibilitu a funkčnost vašich aplikací. Aspose.Words for .NET poskytuje robustní funkce pro vazbu strukturovaných značek dokumentu (SDT) s vlastními částmi XML, což vám umožňuje vytvářet dokumenty, které dynamicky zobrazují data. V tomto tutoriálu vás krok za krokem provedeme procesem vazby SDT na vlastní součást XML. Pojďme se ponořit!
 
@@ -93,7 +93,7 @@ Tento příkaz uloží dokument s vázaným SDT do vámi určeného adresáře.
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste svázali SDT s vlastní částí XML pomocí Aspose.Words for .NET. Tato výkonná funkce umožňuje vytvářet dynamické dokumenty, které lze snadno aktualizovat o nová data pouhou úpravou obsahu XML. Ať už generujete sestavy, vytváříte šablony nebo automatizujete pracovní toky dokumentů, Aspose.Words for .NET nabízí nástroje, které potřebujete k usnadnění a zefektivnění vašich úkolů.
+Gratuluji! Úspěšně jste svázali SDT s vlastní částí XML pomocí Aspose.Words for .NET. Tato výkonná funkce umožňuje vytvářet dynamické dokumenty, které lze snadno aktualizovat o nová data pouhou úpravou obsahu XML. Ať už generujete sestavy, vytváříte šablony nebo automatizujete pracovní toky dokumentů, Aspose.Words for .NET nabízí nástroje, které potřebujete k usnadnění a zefektivnění vašich úkolů.
 
 ## FAQ
 
@@ -104,7 +104,7 @@ Značka strukturovaného dokumentu (SDT) je prvek pro řízení obsahu v dokumen
 Ano, můžete svázat více SDT s různými částmi XML ve stejném dokumentu, což umožňuje složité šablony řízené daty.
 
 ### Jak aktualizuji data XML ve vlastní části XML?
- Data XML můžete aktualizovat přístupem k`CustomXmlPart` objekt a přímou úpravu jeho obsahu XML.
+ Data XML můžete aktualizovat přístupem k`CustomXmlPart` objekt a přímo upravovat jeho obsah XML.
 
 ### Je možné svázat SDT s atributy XML namísto prvků?
 Ano, SDT můžete svázat s atributy XML zadáním příslušného výrazu XPath, který cílí na požadovaný atribut.

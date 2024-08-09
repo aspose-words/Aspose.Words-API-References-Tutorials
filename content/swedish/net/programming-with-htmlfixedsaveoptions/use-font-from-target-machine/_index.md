@@ -9,7 +9,7 @@ url: /sv/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 ## Introduktion
 
-Är du redo att dyka in i den fascinerande världen av Aspose.Words för .NET? Spänn fast dig, för vi ska ta dig med på en resa genom typsnittens magiska värld. Idag fokuserar vi på hur man använder teckensnitt från målmaskinen när man arbetar med Word-dokument. Den här snygga funktionen ser till att ditt dokument ser ut precis som du tänkt dig, oavsett var det visas. Låt oss börja!
+Är du redo att dyka in i den fascinerande världen av Aspose.Words för .NET? Spänn fast dig, för vi ska ta dig med på en resa genom typsnittens magiska värld. Idag fokuserar vi på hur man använder teckensnitt från målmaskinen när man arbetar med Word-dokument. Den här snygga funktionen ser till att ditt dokument ser ut precis som du tänkt dig, oavsett var det visas. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -104,7 +104,7 @@ Ja, Aspose.Words för .NET stöder olika dokumentformat, och du kan konfigurera 
 Om måldatorn inte har de nödvändiga teckensnitten kanske dokumentet inte återges som avsett. Det är alltid en bra idé att bädda in typsnitt vid behov.
 
 ### Hur bäddar jag in typsnitt i ett dokument?
- Inbädda teckensnitt kan göras med hjälp av`FontSettings` klass i Aspose.Words för .NET. Referera till[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Inbädda teckensnitt kan göras med hjälp av`FontSettings` klass i Aspose.Words för .NET. Se till[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Finns det något sätt att förhandsgranska dokumentet innan du sparar det?
  Ja, du kan använda`DocumentRenderer` klass för att förhandsgranska dokumentet innan du sparar det. Kolla in Aspose.Words för .NET[dokumentation](https://reference.aspose.com/words/net/) för mer information.

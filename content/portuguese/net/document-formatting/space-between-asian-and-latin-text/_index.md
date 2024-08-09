@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Definindo`AddSpaceBetweenFarEastAndAlpha`e`AddSpaceBetweenFarEastAndDigit` para`true`, dizemos ao Aspose.Words para ajustar automaticamente o espaçamento entre caracteres asiáticos e letras ou dígitos latinos.
+ Ao definir`AddSpaceBetweenFarEastAndAlpha`e`AddSpaceBetweenFarEastAndDigit` para`true`, dizemos ao Aspose.Words para ajustar automaticamente o espaçamento entre caracteres asiáticos e letras ou dígitos latinos.
 
 ## Etapa 3: adicionar texto ao documento
 

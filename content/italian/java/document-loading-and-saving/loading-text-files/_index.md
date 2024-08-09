@@ -175,7 +175,7 @@ Per iniziare con Aspose.Words per Java, attenersi alla seguente procedura:
 
 ### Posso convertire un documento di testo caricato in altri formati?
 
- Sì, Aspose.Words per Java ti consente di convertire un documento di testo caricato in vari formati, inclusi DOCX, PDF e altri. Puoi usare il`Document` classe per eseguire le conversioni. Controlla la documentazione per esempi di conversione specifici.
+ Sì, Aspose.Words per Java ti consente di convertire un documento di testo caricato in vari formati, inclusi DOCX, PDF e altro. Puoi usare il`Document` classe per eseguire le conversioni. Controlla la documentazione per esempi di conversione specifici.
 
 ### Come gestisco gli spazi nei documenti di testo caricati?
 
@@ -191,4 +191,4 @@ La direzione del testo è essenziale per i documenti contenenti scritture o ling
 
 ### Aspose.Words per Java è adatto a progetti commerciali?
 
-Sì, Aspose.Words per Java è adatto sia a progetti personali che commerciali. Offre opzioni di licenza per soddisfare vari scenari di utilizzo. Assicurati di rivedere i termini di licenza e i prezzi sul sito Web di Aspose per scegliere la licenza appropriata per il tuo progetto.
+Sì, Aspose.Words per Java è adatto sia a progetti personali che commerciali. Offre opzioni di licenza per soddisfare vari scenari di utilizzo. Assicurati di rivedere i termini di licenza e i prezzi sul sito Web Aspose per scegliere la licenza appropriata per il tuo progetto.

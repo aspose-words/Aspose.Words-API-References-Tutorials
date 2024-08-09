@@ -16,7 +16,7 @@ url: /ko/net/working-with-vba-macros/clone-vba-project/
 
 시작하기 전에 모든 항목이 준비되었는지 확인하세요.
 
-1.  .NET 라이브러리용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 필요합니다. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET 라이브러리용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 필요합니다. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 .NET 개발 환경은 코드를 작성하고 테스트하는 데 필수적입니다.
 3. 기본 C# 지식: C#에 대한 기본적인 이해는 코드 조각을 따라가는 데 도움이 됩니다.
 4.  샘플 Word 문서:[워드 문서](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) 작업할 준비가 된 VBA 프로젝트가 포함되어 있습니다. 직접 만들거나 기존 것을 사용할 수 있습니다.
@@ -104,7 +104,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaProject.docm");
 Aspose.Words for .NET은 .NET 애플리케이션에서 Word 문서를 생성, 편집, 변환하기 위한 다목적 라이브러리입니다. 문서 작업 자동화에 이상적입니다.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?  
- 예, Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
+ 예, Aspose.Words를 사용해 볼 수 있습니다.[무료 평가판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
 
 ### Aspose.Words에서 VBA 프로젝트를 어떻게 복제합니까?  
 VBA 프로젝트를 복제하려면 원본 문서를 로드하고 VBA 프로젝트를 복제한 다음 복제된 프로젝트와 함께 새 문서를 저장합니다.

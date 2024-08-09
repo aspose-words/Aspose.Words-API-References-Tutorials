@@ -9,7 +9,7 @@ url: /fr/net/working-with-fields/specify-locale-at-field-level/
 ---
 ## Introduction
 
-Êtes-vous prêt à plonger dans le monde d’Aspose.Words pour .NET ? Aujourd'hui, nous allons explorer comment spécifier les paramètres régionaux au niveau du champ. Cette fonctionnalité pratique est particulièrement utile lorsque vous avez besoin que vos documents respectent des formats culturels ou régionaux spécifiques. Pensez-y comme si vous donniez à votre document un passeport qui lui indique comment se comporter en fonction de l'endroit où il « visite ». À la fin de ce didacticiel, vous serez en mesure de personnaliser facilement les paramètres régionaux des champs de vos documents Word. Commençons!
+Êtes-vous prêt à plonger dans le monde d’Aspose.Words pour .NET ? Aujourd'hui, nous allons explorer comment spécifier les paramètres régionaux au niveau du champ. Cette fonctionnalité pratique est particulièrement utile lorsque vous avez besoin que vos documents respectent des formats culturels ou régionaux spécifiques. Pensez-y comme si vous donniez à votre document un passeport qui lui indique comment se comporter en fonction de l'endroit où il « visite ». À la fin de ce didacticiel, vous serez en mesure de personnaliser facilement les paramètres régionaux des champs de vos documents Word. Commençons !
 
 ## Conditions préalables
 
@@ -77,7 +77,7 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.doc
 
 ## Conclusion
 
-Et voila! Vous avez correctement spécifié les paramètres régionaux d'un champ de votre document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante vous permet d'adapter vos documents pour répondre à des exigences culturelles et régionales spécifiques, rendant vos applications plus polyvalentes et conviviales. Bon codage !
+Et voilà ! Vous avez correctement spécifié les paramètres régionaux d'un champ de votre document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante vous permet d'adapter vos documents pour répondre à des exigences culturelles et régionales spécifiques, rendant vos applications plus polyvalentes et conviviales. Bon codage !
 
 ## FAQ
 
@@ -95,7 +95,7 @@ Vous pouvez trouver la liste des ID de paramètres régionaux dans la documentat
 
 ### Ai-je besoin d’une licence pour utiliser Aspose.Words pour .NET ?
 
- Bien que vous puissiez utiliser Aspose.Words for .NET sans licence en mode évaluation, il est recommandé d'obtenir un[Licence](https://purchase.aspose.com/buy) pour débloquer toutes les fonctionnalités.
+ Bien que vous puissiez utiliser Aspose.Words for .NET sans licence en mode évaluation, il est recommandé d'obtenir un[licence](https://purchase.aspose.com/buy) pour débloquer toutes les fonctionnalités.
 
 ### Comment mettre à jour la bibliothèque Aspose.Words vers la dernière version ?
 

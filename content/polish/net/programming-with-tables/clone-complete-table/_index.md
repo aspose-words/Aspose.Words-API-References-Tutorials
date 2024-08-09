@@ -77,7 +77,7 @@ Table tableClone = (Table) table.Clone(true);
 
 ## Krok 5: Wstaw sklonowaną tabelę do dokumentu
 
- Wstaw sklonowaną tabelę do dokumentu bezpośrednio po oryginalnej tabeli. Użyj`InsertAfter` na to metoda.
+ Wstaw sklonowaną tabelę do dokumentu bezpośrednio po oryginalnej tabeli. Skorzystaj z`InsertAfter` na to metoda.
 
 ```csharp
 table.ParentNode.InsertAfter(tableClone, table);

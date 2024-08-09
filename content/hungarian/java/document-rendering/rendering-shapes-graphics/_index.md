@@ -106,8 +106,8 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 A Z-sorrend segítségével szabályozhatja az alakzatok megjelenítési sorrendjét:
 
 ```java
-shape1.setZOrder(1); // Előre hoz
-shape2.setZOrder(0); // Küld vissza
+shape1.setZOrder(1); // Vigye előtérbe
+shape2.setZOrder(0); // Küldje vissza
 ```
 
 ## A dokumentum mentése

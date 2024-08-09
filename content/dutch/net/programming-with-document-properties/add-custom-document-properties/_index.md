@@ -9,7 +9,7 @@ url: /nl/net/programming-with-document-properties/add-custom-document-properties
 ---
 ## Invoering
 
-Hallo daar! Duikt u in de wereld van Aspose.Words voor .NET en vraagt u zich af hoe u aangepaste documenteigenschappen aan uw Word-bestanden kunt toevoegen? Dan ben je hier aan het juiste adres! Aangepaste eigenschappen kunnen ongelooflijk handig zijn voor het opslaan van extra metagegevens die niet onder de ingebouwde eigenschappen vallen. Of het nu gaat om het autoriseren van een document, het toevoegen van een revisienummer of zelfs het invoegen van specifieke datums, met aangepaste eigenschappen zit u goed. In deze zelfstudie leiden we u door de stappen om deze eigenschappen naadloos toe te voegen met Aspose.Words voor .NET. klaar om te beginnen? Laten we erin duiken!
+Hé daar! Duikt u in de wereld van Aspose.Words voor .NET en vraagt u zich af hoe u aangepaste documenteigenschappen aan uw Word-bestanden kunt toevoegen? Dan ben je hier aan het juiste adres! Aangepaste eigenschappen kunnen ongelooflijk handig zijn voor het opslaan van extra metagegevens die niet onder de ingebouwde eigenschappen vallen. Of het nu gaat om het autoriseren van een document, het toevoegen van een revisienummer of zelfs het invoegen van specifieke datums, met aangepaste eigenschappen zit u goed. In deze zelfstudie leiden we u door de stappen om deze eigenschappen naadloos toe te voegen met Aspose.Words voor .NET. Klaar om aan de slag te gaan? Laten we erin duiken!
 
 ## Vereisten
 

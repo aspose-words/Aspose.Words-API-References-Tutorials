@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl",
 예, Aspose.Words for .NET은 웹 애플리케이션을 포함한 다양한 유형의 애플리케이션에서 사용할 수 있습니다. 적절한 라이센스 및 구성을 확인하십시오.
 
 ### .NET용 Aspose.Words는 어떤 다른 형식으로 변환할 수 있나요?  
-Aspose.Words는 PDF, HTML, EPUB 등을 포함한 광범위한 형식을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 전체 목록을 보려면.
+Aspose.Words는 PDF, HTML, EPUB 등을 포함한 광범위한 형식을 지원합니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 전체 목록을 보려면.
 
 ### 문서의 특정 요소만 래스터화할 수 있나요?  
  현재,`RasterizeTransformedElements` 옵션은 문서의 모든 변환된 요소에 적용됩니다. 보다 세부적인 제어를 위해서는 변환 전에 요소를 별도로 처리하는 것을 고려하세요.

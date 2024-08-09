@@ -15,7 +15,7 @@ Beim Arbeiten mit Word-Dokumenten kann es eine entscheidende Aufgabe sein, siche
 
 Bevor wir uns in die Schritt-für-Schritt-Anleitung stürzen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
-1.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Wenn Sie es noch nicht haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Wenn Sie es noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung eingerichtet haben. Visual Studio wird dringend empfohlen.
 3. Beispieldokumente: Halten Sie zwei Word-Dokumente bereit, die Sie vergleichen möchten.
 

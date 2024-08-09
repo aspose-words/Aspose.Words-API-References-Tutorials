@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
-## introduzione
+## Introduzione
 
-Creare un documento Word a livello di codice può essere un compito arduo, soprattutto quando è necessario mantenere la formattazione su più pagine. Hai mai provato a creare una tabella in Word, solo per renderti conto che le righe di intestazione non si ripetono nelle pagine successive? Non aver paura! Con Aspose.Words per .NET, puoi facilmente assicurarti che le intestazioni delle tabelle si ripetano su ogni pagina, fornendo un aspetto professionale e raffinato ai tuoi documenti. In questo tutorial ti guideremo attraverso i passaggi per raggiungere questo obiettivo utilizzando semplici esempi di codice e spiegazioni dettagliate. Immergiamoci!
+Creare un documento Word a livello di codice può essere un compito arduo, soprattutto quando è necessario mantenere la formattazione su più pagine. Hai mai provato a creare una tabella in Word, solo per renderti conto che le righe di intestazione non si ripetono nelle pagine successive? Non temere! Con Aspose.Words per .NET, puoi facilmente assicurarti che le intestazioni delle tabelle si ripetano su ogni pagina, fornendo un aspetto professionale e raffinato ai tuoi documenti. In questo tutorial ti guideremo attraverso i passaggi per raggiungere questo obiettivo utilizzando semplici esempi di codice e spiegazioni dettagliate. Immergiamoci!
 
 ## Prerequisiti
 
@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Questo ciclo inserisce 50 righe di dati nella tabella, con due colonne in ciascuna riga. IL`HeadingFormat` è impostato per`false` per queste righe, poiché non sono righe di intestazione.
+ Questo ciclo inserisce 50 righe di dati nella tabella, con due colonne in ciascuna riga. IL`HeadingFormat` è impostato su`false` per queste righe, poiché non sono righe di intestazione.
 
 ## Passaggio 4: salva il documento
 
@@ -101,7 +101,7 @@ Ciò salva il documento con il nome specificato nella directory dei documenti.
 
 ## Conclusione
 
-il gioco è fatto! Con solo poche righe di codice, puoi creare un documento Word con tabelle che hanno righe di intestazione ripetute nelle pagine successive utilizzando Aspose.Words per .NET. Ciò non solo migliora la leggibilità dei tuoi documenti, ma garantisce anche un aspetto coerente e professionale. Ora vai avanti e provalo nei tuoi progetti!
+Ed ecco qua! Con solo poche righe di codice, puoi creare un documento Word con tabelle che hanno righe di intestazione ripetute nelle pagine successive utilizzando Aspose.Words per .NET. Ciò non solo migliora la leggibilità dei tuoi documenti, ma garantisce anche un aspetto coerente e professionale. Ora vai avanti e provalo nei tuoi progetti!
 
 ## Domande frequenti
 
@@ -118,4 +118,4 @@ il gioco è fatto! Con solo poche righe di codice, puoi creare un documento Word
  Sì, puoi modificare le tabelle esistenti accedendovi tramite il file`Document` oggetto e applicando una formattazione simile.
 
 ### Quali altre opzioni di formattazione della tabella sono disponibili in Aspose.Words per .NET?
- Aspose.Words per .NET offre un'ampia gamma di opzioni di formattazione delle tabelle, tra cui l'unione delle celle, le impostazioni dei bordi e l'allineamento delle tabelle. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ Aspose.Words per .NET offre un'ampia gamma di opzioni di formattazione delle tabelle, tra cui l'unione delle celle, le impostazioni dei bordi e l'allineamento delle tabelle. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli

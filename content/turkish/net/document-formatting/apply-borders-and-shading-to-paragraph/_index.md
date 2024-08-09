@@ -9,7 +9,7 @@ url: /tr/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## giriiş
 
-Merhaba, Word belgelerinizi şık kenarlıklar ve gölgelendirmelerle nasıl dikkat çekici hale getirebileceğinizi hiç merak ettiniz mi? Peki, doğru yerdesiniz! Bugün paragraflarımıza renk katmak için Aspose.Words for .NET dünyasına dalıyoruz. Belgenizin yalnızca birkaç satır kodla profesyonel bir tasarımcının çalışması kadar şık göründüğünü hayal edin. başlamaya hazır mısın? Hadi gidelim!
+Merhaba, Word belgelerinizi şık kenarlıklar ve gölgelendirmelerle nasıl dikkat çekici hale getirebileceğinizi hiç merak ettiniz mi? Peki, doğru yerdesiniz! Bugün paragraflarımıza renk katmak için Aspose.Words for .NET dünyasına dalıyoruz. Belgenizin yalnızca birkaç satır kodla profesyonel bir tasarımcının çalışması kadar şık göründüğünü hayal edin. Başlamaya hazır mısınız? Hadi gidelim!
 
 ## Önkoşullar
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## Çözüm
 
-İşte buyur! Yalnızca birkaç satır kodla sade bir paragrafı görsel açıdan çekici bir içeriğe dönüştürdük. Aspose.Words for .NET, belgelerinize profesyonel görünümlü biçimlendirme eklemeyi inanılmaz derecede kolaylaştırır. İster bir rapor, ister bir mektup, ister herhangi bir belge hazırlıyor olun, bu püf noktaları harika bir izlenim bırakmanıza yardımcı olacaktır. Öyleyse devam edin, deneyin ve belgelerinizin canlanmasını izleyin!
+Ve işte karşınızda! Yalnızca birkaç satır kodla sade bir paragrafı görsel açıdan çekici bir içeriğe dönüştürdük. Aspose.Words for .NET, belgelerinize profesyonel görünümlü biçimlendirme eklemeyi inanılmaz derecede kolaylaştırır. İster bir rapor, ister bir mektup ya da herhangi bir belge hazırlıyor olun, bu püf noktaları harika bir izlenim bırakmanıza yardımcı olacaktır. Öyleyse devam edin, deneyin ve belgelerinizin canlanmasını izleyin!
 
 ## SSS'ler
 

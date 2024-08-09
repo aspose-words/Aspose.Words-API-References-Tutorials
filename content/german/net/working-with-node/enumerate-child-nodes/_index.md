@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /de/net/working-with-node/enumerate-child-nodes/
 ---
+## Einführung
 
 Mit den richtigen Tools kann das programmgesteuerte Arbeiten mit Dokumenten ein Kinderspiel sein. Aspose.Words für .NET ist eine solche leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente problemlos bearbeiten können. Heute gehen wir den Prozess der Aufzählung untergeordneter Knoten in einem Word-Dokument mit Aspose.Words für .NET durch. Diese Schritt-für-Schritt-Anleitung deckt alles von Voraussetzungen bis hin zu praktischen Beispielen ab und stellt sicher, dass Sie den Prozess gründlich verstehen.
 
@@ -63,7 +64,7 @@ Diese Codezeile sammelt alle untergeordneten Knoten beliebigen Typs innerhalb de
 
 ## Schritt 4: Durch untergeordnete Knoten iterieren
 
-Mit den untergeordneten Knoten in der Hand können wir sie durchlaufen, um basierend auf ihren Typen bestimmte Aktionen auszuführen. In diesem Fall drucken wir den Text aller gefundenen Run-Knoten.
+Mit den untergeordneten Knoten in der Hand können wir sie durchlaufen, um basierend auf ihren Typen bestimmte Aktionen auszuführen. In diesem Fall drucken wir den Text aller gefundenen Run-Knoten aus.
 
 ```csharp
 foreach (Node child in children)
@@ -86,19 +87,19 @@ Das Aufzählen von untergeordneten Knoten in einem Word-Dokument mit Aspose.Word
 
  Ausführlichere Dokumentation und erweiterte Verwendungsmöglichkeiten finden Sie im[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/) Wenn Sie zusätzliche Unterstützung benötigen, lesen Sie die[Support-Foren](https://forum.aspose.com/c/words/8).
 
-## FAQs
+## Häufig gestellte Fragen
 
-### 1. Welche Knotentypen kann ein Absatz enthalten?
+### Welche Knotentypen kann ein Absatz enthalten?
 Ein Absatz kann Knoten wie Läufe, Formen, Kommentare und andere Inline-Elemente enthalten.
 
-### 2. Wie kann ich ein bestehendes Word-Dokument laden?
+### Wie kann ich ein bestehendes Word-Dokument laden?
  Sie können ein vorhandenes Dokument laden mit`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Kann ich außer Run auch andere Knotentypen manipulieren?
+### Kann ich außer „Run“ auch andere Knotentypen manipulieren?
  Ja, Sie können verschiedene Knotentypen wie Formen, Kommentare und mehr bearbeiten, indem Sie deren`NodeType`.
 
-### 4. Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
-Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erwerben von[Hier](https://purchase.aspose.com/temporary-license/).
+### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
+ Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erwerben von[Hier](https://purchase.aspose.com/temporary-license/).
 
-### 5. Wo finde ich weitere Beispiele und Dokumentation?
- Besuche den[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Dokumentation.
+### Wo finde ich weitere Beispiele und Dokumentation?
+ Besuchen Sie die[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/)für weitere Beispiele und ausführliche Dokumentation.

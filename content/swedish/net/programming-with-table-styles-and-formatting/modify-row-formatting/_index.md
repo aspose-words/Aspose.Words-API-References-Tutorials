@@ -9,7 +9,7 @@ url: /sv/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
 ## Introduktion
 
-Har du någonsin behövt justera formateringen av rader i dina Word-dokument? Du kanske försöker få den första raden i en tabell att sticka ut eller se till att dina tabeller ser precis ut över olika sidor. Nåväl, du har tur! I den här handledningen fördjupar vi oss i hur man ändrar radformatering i Word-dokument med Aspose.Words för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att leda dig genom varje steg med tydliga, detaljerade instruktioner. Är du redo att ge dina dokument en snygg, professionell touch? Låt oss börja!
+Har du någonsin behövt justera formateringen av rader i dina Word-dokument? Du kanske försöker få den första raden i en tabell att sticka ut eller se till att dina tabeller ser precis ut över olika sidor. Nåväl, du har tur! I den här handledningen fördjupar vi oss i hur man ändrar radformatering i Word-dokument med Aspose.Words för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att leda dig genom varje steg med tydliga, detaljerade instruktioner. Är du redo att ge dina dokument en snygg, professionell touch? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- I det här steget, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument. Detta kodavsnitt laddar filen "Tables.docx" i en`Document` objekt, vilket gör det redo för vidare manipulation.
+ I detta steg, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument. Detta kodavsnitt laddar filen "Tables.docx" i en`Document` objekt, vilket gör det redo för vidare manipulation.
 
 ## Steg 2: Gå till tabellen
 

@@ -9,7 +9,7 @@ url: /vi/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## Giới thiệu
 
-Nếu bạn đã từng cần tạo một tài liệu Word chuyên nghiệp, bạn sẽ biết Mục lục (TOC) có thể quan trọng như thế nào. Nó không chỉ tổ chức nội dung của bạn mà còn tăng thêm tính chuyên nghiệp. Tuy nhiên, việc tùy chỉnh TOC để phù hợp với phong cách của bạn có thể hơi phức tạp. Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách thay đổi kiểu TOC trong tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Nếu bạn đã từng cần tạo một tài liệu Word chuyên nghiệp, bạn sẽ biết Mục lục (TOC) có thể quan trọng như thế nào. Nó không chỉ tổ chức nội dung của bạn mà còn tăng thêm tính chuyên nghiệp. Tuy nhiên, việc tùy chỉnh TOC để phù hợp với phong cách của bạn có thể hơi phức tạp. Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách thay đổi kiểu TOC trong tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thay đổi thành công kiểu TOC trong tài liệu Word bằng Aspose.Words cho .NET. Tùy chỉnh nhỏ này có thể tạo ra sự khác biệt lớn trong giao diện tổng thể của tài liệu của bạn. Đừng quên thử nghiệm các phong cách và cấp độ khác để tùy chỉnh hoàn toàn TOC của bạn.
+Và bạn có nó! Bạn đã thay đổi thành công kiểu TOC trong tài liệu Word bằng Aspose.Words cho .NET. Tùy chỉnh nhỏ này có thể tạo ra sự khác biệt lớn trong giao diện tổng thể của tài liệu của bạn. Đừng quên thử nghiệm các phong cách và cấp độ khác để tùy chỉnh hoàn toàn TOC của bạn.
 
 ## Câu hỏi thường gặp
 

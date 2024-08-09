@@ -16,7 +16,7 @@ V tomto článku prozkoumáme, jak načíst a uložit dokumenty HTML pomocí kni
 
 Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
-1.  Knihovna Aspose.Words for Java: Měli byste mít nainstalovanou knihovnu Aspose.Words for Java. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+1.  Knihovna Aspose.Words for Java: Měli byste mít nainstalovanou knihovnu Aspose.Words for Java. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 2. Vývojové prostředí Java: Ujistěte se, že máte v systému nainstalovanou Javu.
 
@@ -79,7 +79,7 @@ V tomto článku jsme se naučili, jak načíst a uložit HTML dokumenty pomocí
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Aspose.Words for Java lze stáhnout z[tady](https://releases.aspose.com/words/java/)Postupujte podle pokynů k instalaci uvedených na webu a nastavte jej ve svém projektu Java.
+ Aspose.Words for Java lze stáhnout z[zde](https://releases.aspose.com/words/java/)Postupujte podle pokynů k instalaci uvedených na webu a nastavte jej ve svém projektu Java.
 
 ### Mohu načíst složité HTML dokumenty pomocí Aspose.Words?
 

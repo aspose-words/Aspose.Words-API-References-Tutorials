@@ -17,7 +17,7 @@ url: /zh-hant/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 - C# 程式語言的基礎知識。
 - Visual Studio 安裝在您的系統上。
 -  Aspose.Words for .NET 函式庫整合到您的專案中。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
-- 請造訪 Aspose.Words for .NET[文件](https://reference.aspose.com/words/net/)以供參考。
+- 請造訪 Aspose.Words for .NET[文件](https://reference.aspose.com/words/net/)供參考。
 
 ## 導入命名空間
 

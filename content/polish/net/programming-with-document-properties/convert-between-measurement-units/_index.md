@@ -9,7 +9,7 @@ url: /pl/net/programming-with-document-properties/convert-between-measurement-un
 ---
 ## Wstęp
 
-No hej! Czy jesteś programistą pracującym z dokumentami programu Word przy użyciu Aspose.Words dla .NET? Jeśli tak, często może się okazać, że będziesz musiał ustawić marginesy, nagłówki i stopki w różnych jednostkach miary. Konwersja między jednostkami, takimi jak cale i punkty, może być trudna, jeśli nie znasz funkcjonalności biblioteki. W tym kompleksowym samouczku przeprowadzimy Cię przez proces konwersji jednostek miary za pomocą Aspose.Words dla .NET. Zagłębmy się w szczegóły i uprośćmy te konwersje!
+Hej tam! Czy jesteś programistą pracującym z dokumentami programu Word przy użyciu Aspose.Words dla .NET? Jeśli tak, często może się okazać, że będziesz musiał ustawić marginesy, nagłówki i stopki w różnych jednostkach miary. Konwersja między jednostkami, takimi jak cale i punkty, może być trudna, jeśli nie znasz funkcjonalności biblioteki. W tym kompleksowym samouczku przeprowadzimy Cię przez proces konwersji jednostek miary za pomocą Aspose.Words dla .NET. Zagłębmy się w szczegóły i uprośćmy te konwersje!
 
 ## Warunki wstępne
 
@@ -99,4 +99,4 @@ Chociaż możesz używać Aspose.Words bez licencji, niektóre zaawansowane funk
  Tak, możesz dostosować marginesy i inne ustawienia dla różnych sekcji za pomocą`Section` klasa.
 
 ### Jakie inne funkcje oferuje Aspose.Words?
- Aspose.Words obsługuje szeroką gamę funkcji, w tym konwersję dokumentów, korespondencję seryjną i rozbudowane opcje formatowania. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words obsługuje szeroką gamę funkcji, w tym konwersję dokumentów, korespondencję seryjną i rozbudowane opcje formatowania. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.

@@ -100,4 +100,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 是的，这里展示的方法专门针对字段，而其他内容保持不变。
 
 ### 在哪里可以找到有关 Aspose.Words 的更多资源和支持？
-访问[Aspose.Words for .NET API 文档](https://reference.aspose.com/words/net/)和[Aspose.Words 论坛](https://forum.aspose.com/c/words/8)为进一步协助。
+访问[Aspose.Words for .NET API 文档](https://reference.aspose.com/words/net/)和[Aspose.Words 论坛](https://forum.aspose.com/c/words/8)以获得进一步的帮助。

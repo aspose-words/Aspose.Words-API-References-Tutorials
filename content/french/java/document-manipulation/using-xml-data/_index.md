@@ -15,7 +15,7 @@ Dans ce guide, nous explorerons comment utiliser des données XML à l'aide d'As
 ## Conditions préalables
 
 Avant de commencer, assurez-vous que les conditions préalables suivantes sont remplies :
-- [Aspose.Words pour Java](https://products.aspose.com/words/java/) installée.
+- [Aspose.Words pour Java](https://products.aspose.com/words/java/) installé.
 - Exemples de fichiers de données XML pour les clients, les commandes et les fournisseurs.
 - Exemples de documents Word pour les destinations de publipostage.
 

@@ -32,7 +32,7 @@ Aspose.Words to solidna biblioteka do przetwarzania dokumentów, która ułatwia
 
 Aspose.Words oferuje bogaty zestaw funkcji, w tym:
 
-#### Konwersja między Wordem i innymi formatami: 
+#### Konwersja między Wordem a innymi formatami: 
 Aspose.Words umożliwia konwersję dokumentów programu Word do różnych formatów, takich jak PDF, HTML, TXT, EPUB i inne, zapewniając kompatybilność i dostępność.
 
 #### Manipulacja dokumentami: 

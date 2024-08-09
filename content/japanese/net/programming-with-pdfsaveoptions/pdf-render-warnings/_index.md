@@ -126,7 +126,7 @@ foreach (WarningInfo warningInfo in callback.mWarnings)
 
 ### Q1: この方法で他の種類の警告も処理できますか?
 
-はい`IWarningCallback`インターフェースは、PDF レンダリングに関連するものだけでなく、さまざまな種類の警告を処理できます。
+はい、`IWarningCallback`インターフェースは、PDF レンダリングに関連するものだけでなく、さまざまな種類の警告を処理できます。
 
 ### Q2: Aspose.Words for .NET の無料試用版はどこからダウンロードできますか?
 
@@ -138,7 +138,7 @@ MetafileRenderingOptions は、ドキュメントを PDF に変換するとき�
 
 ### Q4: Aspose.Words のサポートはどこで受けられますか?
 
-訪問[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
+訪問する[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
 
 ### Q5: Aspose.Words の一時ライセンスを取得することは可能ですか?
 

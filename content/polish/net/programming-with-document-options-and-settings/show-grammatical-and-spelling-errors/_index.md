@@ -56,7 +56,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Krok 4: Włącz wyświetlanie błędów gramatycznych i ortograficznych
 
-Teraz zaczyna się zabawa! Możesz włączyć wyświetlanie błędów gramatycznych i ortograficznych za pomocą zaledwie kilku linii kodu.
+Teraz nadchodzi przyjemna część! Możesz włączyć wyświetlanie błędów gramatycznych i ortograficznych za pomocą zaledwie kilku linii kodu.
 
 ```csharp
 doc.ShowGrammaticalErrors = true;

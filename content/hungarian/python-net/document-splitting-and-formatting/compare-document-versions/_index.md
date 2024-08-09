@@ -29,7 +29,7 @@ Amikor közösen dolgozunk a dokumentumokon, nagyon fontos nyomon követni a kü
 
 ## Dokumentumverziók betöltése
 
-A dokumentumok verzióinak összehasonlításához be kell töltenie a fájlokat a memóriába. Itt van, hogyan:
+A dokumentumok verzióinak összehasonlításához be kell töltenie a fájlokat a memóriába. Íme, hogyan:
 
 ```python
 doc1_path = "path/to/first/document.docx"

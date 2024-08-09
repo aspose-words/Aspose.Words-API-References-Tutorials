@@ -2,85 +2,100 @@
 title: Obtener espacio entre líneas de fuente
 linktitle: Obtener espacio entre líneas de fuente
 second_title: API de procesamiento de documentos Aspose.Words
-description: En este tutorial, aprenderá cómo obtener el interlineado de fuente en un documento de Word con Aspose.Words para .NET.
+description: Aprenda cómo obtener el interlineado de fuentes usando Aspose.Words para .NET con este tutorial paso a paso. Perfecto para desarrolladores.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/get-font-line-spacing/
 ---
-En este tutorial, le diremos cómo obtener el interlineado de fuente en un documento de Word usando la biblioteca Aspose.Words para .NET. El interlineado de fuente define el espacio vertical entre líneas de texto. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
+## Introducción
+
+Aspose.Words para .NET es una poderosa biblioteca que le permite crear, manipular y convertir documentos de Word mediante programación. Una tarea común que quizás deba realizar es recuperar el interlineado de una fuente específica en un documento. En este tutorial, lo guiaremos a través del proceso paso a paso, asegurándonos de que pueda obtener fácilmente el interlineado de fuentes usando Aspose.Words para .NET. 
 
 ## Requisitos previos
-Antes de comenzar, asegúrese de tener los siguientes elementos:
-- Un conocimiento práctico del lenguaje de programación C#.
-- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## Paso 1: crear un nuevo documento y un generador de documentos
- Primero, crearemos un nuevo documento creando una instancia del`Document` clase y un creador de documentos creando una instancia del`DocumentBuilder` clase.
+Antes de profundizar en el código, asegúrese de cumplir con los siguientes requisitos previos:
+
+1.  Aspose.Words para la biblioteca .NET: descargue e instale la última versión desde[aquí](https://releases.aspose.com/words/net/).
+2. Entorno de desarrollo: asegúrese de tener configurado un IDE como Visual Studio.
+3. Conocimientos básicos de C#: este tutorial asume que tienes conocimientos básicos de programación en C#.
+
+## Importar espacios de nombres
+
+Primero, necesita importar los espacios de nombres necesarios en su proyecto C#. Estos espacios de nombres le permitirán acceder a las funcionalidades de Aspose.Words.
 
 ```csharp
-// Crear un nuevo documento
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//Crear un generador de documentos
+Dividamos el proceso de obtención del interlineado de fuentes en pasos simples y manejables.
+
+## Paso 1: crear un nuevo documento
+
+El primer paso es crear una nueva instancia de documento de Word usando Aspose.Words para .NET.
+
+```csharp
+Document doc = new Document();
+```
+
+## Paso 2: Inicializar DocumentBuilder
+
+ continuación, necesitamos inicializar el`DocumentBuilder` objeto. Este objeto nos ayudará a construir y manipular el contenido del documento.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 2: configurar la fuente
- A continuación, configuraremos la fuente configurando el`Name` propiedad del generador de documentos.
+## Paso 3: configurar las propiedades de la fuente
+
+Ahora configuramos las propiedades de fuente para el texto que queremos insertar. Para este ejemplo, usaremos la fuente "Calibri".
 
 ```csharp
-// Configurar la fuente
 builder.Font.Name = "Calibri";
 ```
 
-## Paso 3: agregue texto al documento
-Ahora usaremos el generador de documentos para agregar texto formateado al documento.
+## Paso 4: escriba texto en el documento
+
+ Usando el`DocumentBuilder` objeto, escriba algo de texto en el documento. Este texto utilizará las propiedades de fuente que configuramos en el paso anterior.
 
 ```csharp
-// Agregar texto al documento
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## Paso 4: obtenga el espaciado entre líneas de fuente
- Ahora accederemos al`Font` objeto del primer párrafo del documento y recuperar el valor del`LineSpacing` propiedad.
+## Paso 5: recuperar el objeto de fuente
+
+Para obtener el interlineado, debemos acceder al objeto de fuente del texto que acabamos de agregar. Esto se puede hacer navegando a través de la estructura del documento hasta el primer párrafo.
 
 ```csharp
-// Obtener el interlineado de la fuente
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### Código fuente de muestra para obtener espacio entre líneas de fuente usando Aspose.Words para .NET 
+## Paso 6: obtenga el interlineado
+
+Finalmente, recuperamos el interlineado del objeto de fuente y lo imprimimos en la consola.
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Conclusión
-En este tutorial, vimos cómo obtener el interlineado de fuente en un documento de Word con Aspose.Words para .NET. El espacio entre líneas de fuente es importante para controlar el espacio vertical entre líneas de texto. No dude en utilizar esta función para personalizar la apariencia del texto en sus documentos.
 
-### Preguntas frecuentes
+¡Y ahí lo tienes! Recuperar el interlineado de la fuente usando Aspose.Words para .NET es sencillo si lo divides en estos sencillos pasos. Ya sea que esté creando un documento nuevo o trabajando con uno existente, Aspose.Words proporciona todas las herramientas que necesita para administrar las propiedades de las fuentes de manera eficiente.
 
-#### P: ¿Cómo puedo cambiar el interlineado de un texto específico en un documento de Word?
+## Preguntas frecuentes
 
-R: Con Aspose.Words, puede cambiar fácilmente el interlineado de un texto específico en un documento de Word. Utilice la API para seleccionar el texto deseado y ajuste el espacio entre líneas especificando el valor apropiado.
+### ¿Qué es Aspose.Words para .NET?
+Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrolladores crear, manipular y convertir documentos de Word mediante programación usando C#.
 
-#### P: ¿Es posible aplicar un espacio exacto entre líneas en un documento de Word?
+### ¿Puedo usar Aspose.Words para .NET en otros lenguajes .NET?
+Sí, puede utilizar Aspose.Words para .NET con cualquier lenguaje .NET, incluidos VB.NET y F#.
 
-R: Sí, Aspose.Words le permite aplicar un espacio exacto entre líneas en un documento de Word. Puede especificar un valor preciso para el interlineado utilizando la API.
+### ¿Cómo puedo descargar Aspose.Words para .NET?
+ Puede descargar la última versión de Aspose.Words para .NET desde[aquí](https://releases.aspose.com/words/net/).
 
-#### P: ¿Cómo puedo ajustar el interlineado de todo el documento de Word?
+### ¿Hay una prueba gratuita disponible para Aspose.Words para .NET?
+ Sí, puedes obtener una prueba gratuita desde[aquí](https://releases.aspose.com/).
 
-R: Con Aspose.Words, puede ajustar fácilmente el interlineado para todo el documento de Word. Utilice los métodos proporcionados por la API para especificar el espacio entre líneas deseado para todo el documento.
-
-#### P: ¿Aspose.Words admite interlineado múltiple?
-
-R: Sí, Aspose.Words admite interlineado múltiple en documentos de Word. Puede establecer espacios múltiples, como 1,5 veces o 2 veces el espacio normal, para las líneas de su texto.
-
-#### P: ¿Cómo puedo evitar problemas de superposición de líneas al ajustar el interlineado?
-
-R: Para evitar problemas de superposición de líneas al ajustar el espacio entre líneas, asegúrese de elegir valores de espaciado adecuados. Pruebe también la representación final de su documento para asegurarse de que el texto siga siendo legible y esté bien formateado.
+### ¿Dónde puedo encontrar la documentación de Aspose.Words para .NET?
+ La documentación de Aspose.Words para .NET está disponible[aquí](https://reference.aspose.com/words/net/).

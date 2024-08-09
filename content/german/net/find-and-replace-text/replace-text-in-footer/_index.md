@@ -102,7 +102,7 @@ Sie können jeden beliebigen Text in der Fußzeile ersetzen. Wenn Sie mehrere Ze
  Auf jeden Fall!`MatchCase` Zu`true` im`FindReplaceOptions` um beim Ersetzen die Groß-/Kleinschreibung zu beachten.
 
 ### Kann ich reguläre Ausdrücke zum Textersetzen verwenden?
-Ja, Aspose.Words unterstützt die Verwendung regulärer Ausdrücke für Such- und Ersetzungsvorgänge. Sie können ein Regex-Muster in der`Range.Replace` Methode.
+Ja, Aspose.Words unterstützt die Verwendung regulärer Ausdrücke für Such- und Ersetzungsvorgänge. Sie können ein Regex-Muster in der`Range.Replace` Verfahren.
 
 ### Wie gehe ich mit mehreren Fußzeilen in einem Dokument um?
 Wenn Ihr Dokument mehrere Abschnitte mit unterschiedlichen Fußzeilen enthält, durchlaufen Sie jeden Abschnitt und wenden Sie die Textersetzung für jede Fußzeile einzeln an.

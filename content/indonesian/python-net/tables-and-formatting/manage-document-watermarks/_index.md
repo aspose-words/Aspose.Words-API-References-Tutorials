@@ -2,13 +2,13 @@
 title: Membuat dan Memformat Tanda Air untuk Estetika Dokumen
 linktitle: Membuat dan Memformat Tanda Air untuk Estetika Dokumen
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara membuat dan memformat tanda air dalam dokumen menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk menambahkan tanda air teks dan gambar. Tingkatkan estetika dokumen Anda dengan tutorial ini.
+description: Pelajari cara membuat dan memformat tanda air di dokumen menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk menambahkan tanda air teks dan gambar. Tingkatkan estetika dokumen Anda dengan tutorial ini.
 type: docs
 weight: 10
 url: /id/python-net/tables-and-formatting/manage-document-watermarks/
 ---
 
-Tanda air berfungsi sebagai elemen halus namun berdampak dalam dokumen, menambahkan lapisan profesionalisme dan estetika. Dengan Aspose.Words untuk Python, Anda dapat dengan mudah membuat dan memformat tanda air untuk meningkatkan daya tarik visual dokumen Anda. Tutorial ini akan memandu Anda melalui proses langkah demi langkah menambahkan tanda air ke dokumen Anda menggunakan Aspose.Words untuk Python API.
+Tanda air berfungsi sebagai elemen halus namun berdampak dalam dokumen, menambah lapisan profesionalisme dan estetika. Dengan Aspose.Words untuk Python, Anda dapat dengan mudah membuat dan memformat tanda air untuk meningkatkan daya tarik visual dokumen Anda. Tutorial ini akan memandu Anda melalui proses langkah demi langkah menambahkan tanda air ke dokumen Anda menggunakan Aspose.Words untuk Python API.
 
 ## Pengantar Tanda Air dalam Dokumen
 

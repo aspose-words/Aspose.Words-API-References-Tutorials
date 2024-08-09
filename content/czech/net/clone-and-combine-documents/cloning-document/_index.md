@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/clone-and-combine-documents/cloning-document/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přistihli jste se někdy, že potřebujete naklonovat dokument aplikace Word pomocí Aspose.Words pro .NET? Není to tak skličující, jak to zní, a jsem tu, abych vás tím provedl krok za krokem. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás provede procesem jednoduchým konverzačním způsobem. Na konci budete mít klonovaný dokument Word připravený k použití. Takže, pojďme se rovnou ponořit!
+Ahoj! Přistihli jste se někdy, že potřebujete naklonovat dokument aplikace Word pomocí Aspose.Words pro .NET? Není to tak skličující, jak to zní, a jsem tu, abych vás tím provedl krok za krokem. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás provede procesem jednoduchým konverzačním způsobem. Na konci budete mít klonovaný dokument Word připravený k použití. Takže, pojďme se rovnou ponořit!
 
 ## Předpoklady
 
@@ -35,7 +35,7 @@ Jednoduché, že? Nyní přejděme k vzrušující části: klonování dokument
 Nejprve musíte projekt nastavit ve Visual Studiu. Pokud již máte projekt připravený, můžete tento krok přeskočit. Pokud ne, postupujte takto:
 
 1. Otevřete Visual Studio: Spusťte Visual Studio a vytvořte nový projekt C# Console App.
-2.  Pojmenujte svůj projekt: Dejte svému projektu smysluplný název. Něco jako`CloneWordDocumentDemo` udělám.
+2.  Pojmenujte svůj projekt: Dejte svému projektu smysluplný název. Něco jako`CloneWordDocumentDemo` udělá.
 3.  Přidat odkaz Aspose.Words: Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení a vyberte`Manage NuGet Packages` a hledat`Aspose.Words`. Nainstalujte jej.
 
 ## Krok 2: Připravte své prostředí

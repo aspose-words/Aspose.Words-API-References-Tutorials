@@ -16,7 +16,7 @@ Hallo Technikbegeisterte! Sind Sie bereit, die faszinierende Welt von VBA (Visua
 
 Bevor wir mit dem Programmieren beginnen, stellen wir sicher, dass Sie alles haben, was Sie zum Mitmachen brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Sie benötigen die neueste Version von Aspose.Words für .NET. Wenn Sie dies noch nicht getan haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Sie benötigen die neueste Version von Aspose.Words für .NET. Wenn Sie dies noch nicht getan haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-Entwicklungsumgebung wie Visual Studio ist zum Schreiben und Testen Ihres Codes unerlässlich.
 3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse von C# sind beim Navigieren durch den Code hilfreich.
 4. Beispiel-Dokumentverzeichnis: Halten Sie ein Verzeichnis bereit, in dem Sie Ihre Word-Dokumente speichern. Hier geschieht die Magie!
@@ -118,7 +118,7 @@ Diese Zeile speichert das Dokument als „WorkingWithVba.CreateVbaProject.docm�
 
 Herzlichen Glückwunsch! Sie haben erfolgreich ein VBA-Projekt in einem Word-Dokument mit Aspose.Words für .NET erstellt. Dieses Tutorial behandelte alles, vom Einrichten Ihrer Umgebung bis zum Schreiben und Speichern von VBA-Code. Mit Aspose.Words können Sie Aufgaben automatisieren, Makros erstellen und Ihre Word-Dokumente auf eine Weise anpassen, die Sie nie für möglich gehalten hätten.
 
- Wenn Sie mehr entdecken möchten,[API-Dokumentation](https://reference.aspose.com/words/net/) ist eine Fundgrube an Informationen. Und wenn Sie jemals Hilfe brauchen, die[Hilfeforum](https://forum.aspose.com/c/words/8) ist nur einen Klick entfernt.
+ Wenn Sie mehr entdecken möchten,[API-Dokumentation](https://reference.aspose.com/words/net/) ist eine Fundgrube an Informationen. Und wenn Sie jemals Hilfe brauchen, die[Support-Forum](https://forum.aspose.com/c/words/8) ist nur einen Klick entfernt.
 
 Viel Spaß beim Programmieren und denken Sie daran: Die einzige Grenze ist Ihre Vorstellungskraft!
 
@@ -128,7 +128,7 @@ Viel Spaß beim Programmieren und denken Sie daran: Die einzige Grenze ist Ihre 
 Aspose.Words für .NET ist eine umfassende Bibliothek, mit der Entwickler Word-Dokumente in .NET-Anwendungen erstellen, bearbeiten und konvertieren können. Sie eignet sich perfekt für die Automatisierung von Dokument-Workflows und die Erweiterung der Funktionalität mit VBA.
 
 ### Kann ich Aspose.Words kostenlos ausprobieren?  
- Ja, Sie können Aspose.Words mit einem[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
+ Ja, Sie können Aspose.Words mit einem[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
 
 ### Wie füge ich einem Word-Dokument VBA-Code hinzu?  
  Sie können VBA-Code hinzufügen, indem Sie`VbaModule` und die Einstellung`SourceCode` Eigenschaft mit Ihrem Makrocode. Fügen Sie dann das Modul zu Ihrem`VbaProject`.

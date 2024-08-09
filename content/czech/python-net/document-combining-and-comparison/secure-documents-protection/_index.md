@@ -8,7 +8,7 @@ weight: 16
 url: /cs/python-net/document-combining-and-comparison/secure-documents-protection/
 ---
 
-## Úvod
+## Zavedení
 
 V této digitální éře jsou úniky dat a neoprávněný přístup k citlivým informacím běžným problémem. Aspose.Words pro Python nabízí robustní řešení pro zabezpečení dokumentů proti takovým rizikům. Tato příručka ukáže, jak používat Aspose.Words k implementaci pokročilých technik ochrany vašich dokumentů.
 

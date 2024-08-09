@@ -15,7 +15,7 @@ Xin chào các nhà phát triển và những người đam mê tài liệu! �
 
 Trước khi bắt đầu viết mã, hãy đảm bảo bạn có mọi thứ cần thiết để bắt đầu:
 
-1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất.[Tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất.[Tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển tương thích với .NET như Visual Studio.
 3. Kiến thức C# cơ bản: Làm quen với cú pháp và khái niệm C# sẽ giúp bạn theo dõi.
 4. Tài liệu Word mẫu: Sẽ rất hữu ích khi có một tài liệu Word để kiểm tra mã của bạn, nhưng với ví dụ này, chúng tôi sẽ tạo mọi thứ từ đầu.

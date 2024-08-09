@@ -9,7 +9,7 @@ url: /nl/net/programming-with-tables/nested-table/
 ---
 ## Invoering
 
-Heeft u ooit behoefte gehad aan het programmatisch maken van een geneste tabel in een Word-document? Of u nu rapporten, facturen of welk document dan ook genereert waarvoor een gedetailleerde tabelstructuur nodig is, Aspose.Words voor .NET kan uw beste vriend zijn. In deze zelfstudie duiken we in het proces van het maken van geneste tabellen in Word-documenten met Aspose.Words voor .NET. We behandelen alles, van de vereisten tot de uiteindelijke code-implementatie. Dus laten we beginnen!
+Heeft u ooit behoefte gehad aan het programmatisch maken van een geneste tabel in een Word-document? Of u nu rapporten, facturen of welk document dan ook genereert waarvoor een gedetailleerde tabelstructuur nodig is, Aspose.Words voor .NET kan uw beste vriend zijn. In deze zelfstudie duiken we in het proces van het maken van geneste tabellen in Word-documenten met Aspose.Words voor .NET. We behandelen alles, van de vereisten tot de uiteindelijke code-implementatie. Dus laten we aan de slag gaan!
 
 ## Vereisten
 

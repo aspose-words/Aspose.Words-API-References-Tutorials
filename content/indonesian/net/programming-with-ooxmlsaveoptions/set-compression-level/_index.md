@@ -40,7 +40,7 @@ Sebelum kita masuk ke kodenya, pastikan proyek Anda sudah diatur dengan benar.
 
 ### Langkah 1.1: Buat Proyek Baru
 
-Buka Visual Studio dan buat proyek Aplikasi Konsol C# baru. Beri nama seperti "AsposeWordsCompressionDemo."
+Buka Visual Studio dan buat proyek Aplikasi Konsol C# baru. Beri nama seperti "AsposeWordsCompressionDemo".
 
 ### Langkah 1.2: Instal Aspose.Words untuk .NET
 
@@ -87,7 +87,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
 
 Terakhir, simpan dokumen dengan pengaturan kompresi baru.
 
- Menggunakan`Save` metode untuk menyimpan dokumen Anda dengan tingkat kompresi yang ditentukan.
+ Gunakan`Save` metode untuk menyimpan dokumen Anda dengan tingkat kompresi yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveOptions);

@@ -61,7 +61,7 @@ Tak, możesz. Po podzieleniu dokumentu za pomocą Aspose.Words dla Java możesz 
 ### Czy korzystanie z Aspose.Words dla Java jest bezpłatne?
 Aspose.Words for Java jest biblioteką komercyjną, ale oferuje bezpłatną wersję próbną. Możesz sprawdzić ich ceny i licencje na ich stronie internetowej.
 
-### Co się stanie, jeśli mój dokument ma złożone formatowanie?
+### Co się stanie, jeśli mój dokument ma skomplikowane formatowanie?
 Aspose.Words for Java może obsługiwać dokumenty o złożonym formatowaniu, w tym tabele, obrazy i inne. Zachowuje oryginalne formatowanie podczas podziału.
 
 ### Czy mogę zautomatyzować ten proces?

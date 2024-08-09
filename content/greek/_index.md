@@ -42,7 +42,7 @@ is_root: true
 {{% /alert %}}
 
 Αυτοί είναι σύνδεσμοι προς μερικούς χρήσιμους πόρους:
-- [Επεξεργασίας κειμένου](./java/word-processing/)  
+- [Επεξεργασία κειμένου](./java/word-processing/)  
 - [Επεξεργασία πίνακα](./java/table-processing/)
 - [Document Styling](./java/document-styling/)
 - [Συγχώνευση εγγράφων](./java/document-merging/)

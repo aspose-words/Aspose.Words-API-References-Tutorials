@@ -2,104 +2,108 @@
 title: リビジョングループの詳細を取得
 linktitle: リビジョングループの詳細を取得
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書内のリビジョン グループの詳細を取得します。
+description: このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内のリビジョン グループの詳細を簡単に取得できます。.NET 開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-revisions/get-revision-group-details/
 ---
+## 導入
 
-このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の一連の変更の詳細を取得する方法を説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を説明します。
+Word 文書の改訂の細部まで調べる必要に迫られたことはありませんか? プロジェクトで共同作業していて、変更を細かく追跡する必要がある場合などです。さあ、シートベルトを締めてください。Aspose.Words for .NET を使用して改訂グループの詳細を取得する方法についてのすばらしいチュートリアルをこれから紹介します。このガイドを読み終える頃には、改訂の詳細を抽出して表示するプロになり、文書管理が楽になります。
 
-## ステップ1: ドキュメントの読み込み
+## 前提条件
 
-最初のステップは、修正を含むドキュメントをアップロードすることです。
+このコーディングの旅に乗り出す前に、必要なものがすべて揃っていることを確認しましょう。
+-  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。そうでない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- .NET 環境: 動作する .NET 開発環境が設定されていることを確認します。Visual Studio は最適なオプションです。
+- 修正されたWord文書: このチュートリアルでは、修正されたサンプルのWord文書を使用します(`Revisions.docx`）。
+
+## 名前空間のインポート
+
+まず最初に、プロジェクトに必要な名前空間をインポートしましょう。これは、Aspose.Words 機能にアクセスするために重要です。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using System;
 ```
 
-## ステップ2: リビジョンを参照する
+では、これをステップごとに説明しましょう。各ステップでは、Aspose.Words for .NET を使用してリビジョン グループの詳細を取得するプロセスを説明します。
 
-次に、ドキュメント内に存在するリビジョンをループし、タイプ、作成者、日付、および改訂されたテキストなどの詳細を表示します。
+## ステップ1: Word文書を読み込む
+
+最初のステップは、Word 文書を読み込むことです。ここに変更内容が保存されます。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+このスニペットでは、`"YOUR DOCUMENT DIRECTORY"`ドキュメントへの実際のパスを入力します。このコードは`Revisions.docx`ファイルに`doc`物体。
+
+## ステップ2: リビジョンコレクションにアクセスする
+
+さて、文書のリビジョンにアクセスしてみましょう。Aspose.Wordsは`Revisions`反復処理できるコレクション。
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     string groupText = revision.Group != null
-         ? "Revision group text: " + revision.Group.Text
-         : "The revision does not belong to any group";
-
-     Console.WriteLine("Type: " + revision.RevisionType);
-     Console.WriteLine("Author: " + revision.Author);
-     Console.WriteLine("Date: " + revision.DateTime);
-     Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-     Console.WriteLine(groupText);
+    //各改訂版を処理する
 }
 ```
 
+このループはドキュメント内の各リビジョンを調べ、詳細を抽出できるようにします。
 
-### Aspose.Words for .NET を使用してリビジョン グループの詳細を取得するためのサンプル ソース コード
+## ステップ3: リビジョンの詳細を抽出する
 
-以下は、Aspose.Words for .NET を使用してドキュメント内の一連の変更の詳細を取得するための完全なソース コードです。
+ループ内では、タイプ、作成者、日付、テキストなど、各リビジョンに関するさまざまな詳細を抽出できます。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
 foreach (Revision revision in doc.Revisions)
 {
-	 string groupText = revision.Group != null
-		 ? "Revision group text: " + revision.Group.Text
-		 : "The revision does not belong to any group";
-
-	 Console.WriteLine("Type: " + revision.RevisionType);
-	 Console.WriteLine("Author: " + revision.Author);
-	 Console.WriteLine("Date: " + revision.DateTime);
-	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-	 Console.WriteLine(groupText);
+    Console.WriteLine("Type: " + revision.RevisionType);
+    Console.WriteLine("Author: " + revision.Author);
+    Console.WriteLine("Date: " + revision.DateTime);
+    Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
 }
 ```
+
+このコードは、リビジョンの種類、作成者、日付、テキストをコンソールに出力します。
+
+## ステップ4: リビジョングループの確認
+
+リビジョンがグループ化されることがあります。リビジョンがグループに属しているかどうかを確認し、属している場合はグループのテキストを表示する必要があります。
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+    string groupText = revision.Group != null
+        ? "Revision group text: " + revision.Group.Text
+        : "The revision does not belong to any group";
+
+    Console.WriteLine(groupText);
+}
+```
+
+このスニペットは、リビジョンがグループの一部である場合はグループ テキストを出力し、リビジョンがどのグループにも属していない場合はそのことを示します。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のリビジョン グループの詳細を取得する方法を学習しました。ループと適切なプロパティを使用することで、リビジョンの種類、作成者、日付、および変更されたテキストなどの詳細を表示できました。Aspose.Words for .NET には、リビジョン管理など、Word 文書を操作するための強力な機能が多数用意されています。この知識を活用して、Aspose.Words for .NET を使用して独自の Word 文書にリビジョン グループの詳細を取得できるようになりました。
+これで完了です。これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書の変更に関する詳細情報を簡単に取得できます。この強力なツールを使用すると、変更の管理と追跡が簡単になり、共同プロジェクトがスムーズに実行されるようになります。
 
-### よくある質問
+## よくある質問
 
-#### Q: 修正を加えたドキュメントを Aspose.Words for .NET に読み込むにはどうすればよいですか?
+### Aspose.Words for .NET とは何ですか?
+これは、Word 文書をプログラムで作成、編集、変換、印刷するための強力な .NET ライブラリです。
 
- A:`Document` Aspose.Words for .NET のクラスを使用して、リビジョンを含むファイルからドキュメントを読み込みます。ドキュメントの完全なパスを指定できます。
+### Aspose.Words for .NET を他の .NET 言語で使用できますか?
+もちろんです! C#、VB.NET、ASP.NET など、あらゆる .NET 言語で使用できます。
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Aspose.Words for .NET の無料試用版を入手するにはどうすればいいですか?
+無料トライアルをご利用ください[ここ](https://releases.aspose.com/).
 
-#### Q: Aspose.Words for .NET でリビジョン グループの詳細を取得するにはどうすればよいですか?
+### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
+はい、Aspose.Words for .NETの全機能を使用するにはライセンスが必要です。[ここ](https://purchase.aspose.com/buy)または一時免許を取得する[ここ](https://purchase.aspose.com/temporary-license/).
 
-A: ループを使用してドキュメントのリビジョンを調べ、各リビジョンのプロパティにアクセスして必要な詳細を取得します。`RevisionType`, `Author`, `DateTime`そして`ParentNode`プロパティを使用して、それぞれリビジョンの種類、作成者、日付、および改訂されたテキストを取得します。
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-      Console.WriteLine("Type: " + revision.RevisionType
-
-);
-      Console.WriteLine("Author: " + revision.Author);
-      Console.WriteLine("Date: " + revision.DateTime);
-      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-}
-```
-
-#### Q: Aspose.Words for .NET でリビジョンがグループに属しているかどうかを確認する方法を教えてください。
-
- A:`Group`の財産`Revision`オブジェクトを使用して、リビジョンがグループに属しているかどうかを確認します。`Group`財産は`null`これは、リビジョンがどのグループにも属していないことを意味します。
-
-```csharp
-if (revision.Group != null)
-{
-      //このリビジョンはグループに属しています
-}
-else
-{
-      //このリビジョンはどのグループにも属していません
-}
-```
+### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
+詳細なドキュメントが利用可能[ここ](https://reference.aspose.com/words/net/).

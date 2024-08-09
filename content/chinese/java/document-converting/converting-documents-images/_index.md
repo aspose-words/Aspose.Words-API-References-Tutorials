@@ -63,7 +63,7 @@ public class DocumentToImageConverter {
 ## 常见问题解答
 
 ### 如何在转换过程中设置图像分辨率？
-要设置图像分辨率，请使用`setResolution`的方法`ImageSaveOptions`并以每英寸点数（DPI）为单位指定所需的分辨率。
+要设置图像分辨率，请使用`setResolution`方法`ImageSaveOptions`并以每英寸点数（DPI）为单位指定所需的分辨率。
 
 ### 我可以将文档的特定页面转换为图像吗？
 是的，您可以使用`setPageCount`和`setPageIndex`方法`ImageSaveOptions`将特定页面转换为图像。

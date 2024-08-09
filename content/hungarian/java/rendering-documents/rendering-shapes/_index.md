@@ -75,7 +75,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ## 8. Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan kell alakzatokat renderelni az Aspose.Words for Java programban. Ez a lehetőség a lehetőségek világát nyitja meg a Word-dokumentumok programozása során.
+Gratulálok! Sikeresen megtanulta, hogyan kell alakzatokat renderelni az Aspose.Words for Java programban. Ez a lehetőség a lehetőségek világát nyitja meg a Word-dokumentumok programozása során.
 
 ## 9. GYIK
 

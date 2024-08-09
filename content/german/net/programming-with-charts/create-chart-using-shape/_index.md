@@ -86,7 +86,7 @@ In diesem Tutorial haben wir erläutert, wie Sie mit Aspose.Words für .NET ein 
 
 ### Kann ich Aspose.Words für .NET verwenden, um andere Diagrammtypen zu erstellen?
 
- Ja, Aspose.Words für .NET unterstützt verschiedene Diagrammtypen, darunter Balkendiagramme, Kreisdiagramme und mehr. Sie können die Dokumentation erkunden[Hier](https://reference.aspose.com/words/net/) für mehr Details.
+ Ja, Aspose.Words für .NET unterstützt verschiedene Diagrammtypen, darunter Balkendiagramme, Kreisdiagramme und mehr. Sie können die Dokumentation erkunden[Hier](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Wie kann ich Aspose.Words für .NET vor dem Kauf ausprobieren?
 

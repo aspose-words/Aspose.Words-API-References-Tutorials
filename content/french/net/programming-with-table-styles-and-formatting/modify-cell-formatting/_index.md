@@ -9,7 +9,7 @@ url: /fr/net/programming-with-table-styles-and-formatting/modify-cell-formatting
 ---
 ## Introduction
 
-Si vous vous êtes déjà retrouvé aux prises avec des documents Word et à essayer de formater correctement les cellules, vous allez vous régaler. Dans ce didacticiel, nous passerons en revue les étapes permettant de modifier le formatage des cellules dans les documents Word à l'aide d'Aspose.Words pour .NET. De l'ajustement de la largeur des cellules à la modification de l'orientation et de l'ombrage du texte, nous avons tout couvert. Alors, plongeons-nous et faisons de l'édition de vos documents un jeu d'enfant !
+Si vous vous êtes déjà retrouvé aux prises avec des documents Word et à essayer de formater correctement les cellules, vous allez vous régaler. Dans ce didacticiel, nous passerons en revue les étapes permettant de modifier le formatage des cellules dans les documents Word à l'aide d'Aspose.Words for .NET. De l'ajustement de la largeur des cellules à la modification de l'orientation et de l'ombrage du texte, nous avons tout couvert. Alors, plongeons-nous et faisons de l'édition de vos documents un jeu d'enfant !
 
 ## Conditions préalables
 
@@ -97,7 +97,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 
 ## Conclusion
 
-Et voila! Nous avons modifié avec succès le formatage des cellules dans un document Word à l'aide d'Aspose.Words pour .NET. Du chargement du document à l'application de l'ombrage, chaque étape est cruciale pour donner à votre document l'apparence que vous souhaitez. N'oubliez pas que ce ne sont là que quelques exemples de ce que vous pouvez faire avec le formatage des cellules. Aspose.Words for .NET offre une multitude d'autres fonctionnalités à explorer.
+Et voilà ! Nous avons modifié avec succès le formatage des cellules dans un document Word à l'aide d'Aspose.Words pour .NET. Du chargement du document à l'application de l'ombrage, chaque étape est cruciale pour donner à votre document l'apparence que vous souhaitez. N'oubliez pas que ce ne sont là que quelques exemples de ce que vous pouvez faire avec le formatage des cellules. Aspose.Words for .NET offre une multitude d'autres fonctionnalités à explorer.
 
 ## FAQ
 

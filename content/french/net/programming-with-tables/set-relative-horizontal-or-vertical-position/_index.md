@@ -83,7 +83,7 @@ Cette commande enregistre le document modifié sous un nouveau nom, garantissant
 
 ## Conclusion
 
-Et voila! Vous avez réussi à définir les positions relatives horizontales et verticales d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Grâce à cette nouvelle compétence, vous pouvez améliorer la mise en page et la lisibilité de vos documents, leur donnant ainsi un aspect plus professionnel et soigné. Continuez à expérimenter différentes positions et voyez ce qui convient le mieux à vos besoins.
+Et voilà ! Vous avez réussi à définir les positions relatives horizontales et verticales d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Grâce à cette nouvelle compétence, vous pouvez améliorer la mise en page et la lisibilité de vos documents, leur donnant ainsi un aspect plus professionnel et soigné. Continuez à expérimenter différentes positions et voyez ce qui convient le mieux à vos besoins.
 
 ## FAQ
 

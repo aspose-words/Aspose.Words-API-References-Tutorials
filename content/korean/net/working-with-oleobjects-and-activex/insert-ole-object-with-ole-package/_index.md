@@ -2,140 +2,103 @@
 title: Ole 패키지를 사용하여 Word에 Ole 개체 삽입
 linktitle: Ole 패키지를 사용하여 Word에 Ole 개체 삽입
 second_title: Aspose.Words 문서 처리 API
-description: Aspose.Words for .NET을 사용하여 OLE 패키지가 포함된 OLE 개체를 문서에 삽입하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에 OLE 개체를 삽입하는 방법을 알아보세요. 파일을 원활하게 삽입하려면 자세한 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
+## 소개
 
-다음은 .NET용 Aspose.Words를 사용하여 OLE 패키지와 함께 Word에 OLE 개체를 삽입하는 방법을 보여주는 C# 소스 코드를 설명하는 단계별 가이드입니다.
+Word 문서에 파일을 포함시키고 싶다면 올바른 위치에 오셨습니다. ZIP 파일, Excel 시트 또는 기타 파일 형식이든 Word 문서에 직접 포함시키는 것은 매우 유용할 수 있습니다. 문서에 온갖 종류의 보물을 보관할 수 있는 비밀 칸이 있는 것과 같다고 생각하세요. 오늘은 Aspose.Words for .NET을 사용하여 이를 수행하는 방법을 살펴보겠습니다. Word 마법사가 될 준비가 되셨나요? 뛰어들어보자!
 
-## 1단계: 필요한 참조 가져오기
-시작하기 전에 Aspose.Words for .NET을 사용하는 데 필요한 참조를 프로젝트에 가져왔는지 확인하세요. 여기에는 Aspose.Words 라이브러리를 가져오고 소스 파일에 필요한 네임스페이스를 추가하는 작업이 포함됩니다.
+## 전제 조건
+
+시작하기 전에 다음 사항이 있는지 확인하세요.
+
+1. .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 다운로드하세요.[여기](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio 또는 기타 .NET 개발 환경.
+3. C#에 대한 기본 이해: 전문가가 될 필요는 없지만 C#에 대한 지식이 있으면 도움이 됩니다.
+4. 문서 디렉토리: 문서를 저장하고 검색할 수 있는 폴더입니다.
+
+## 네임스페이스 가져오기
+
+먼저 네임스페이스를 순서대로 정리하겠습니다. 프로젝트에 다음 네임스페이스를 포함해야 합니다.
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## 2단계: 새 문서 및 문서 생성기 만들기
- 이 단계에서는 다음을 사용하여 새 문서를 만듭니다.`Document` 클래스와 문서 작성기를 사용하는`DocumentBuilder` 수업.
+따라하기 쉽도록 이것을 한 입 크기의 단계로 나누어 보겠습니다.
+
+## 1단계: 문서 설정
+
+당신이 빈 캔버스를 가진 예술가라고 상상해 보세요. 먼저 Word 문서인 빈 캔버스가 필요합니다. 설정 방법은 다음과 같습니다.
 
 ```csharp
+// 문서 디렉터리 경로
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3단계: OLE 패키지를 사용하여 OLE 개체 삽입
- 문서 생성기 사용`InsertOleObject`OLE 패키지가 포함된 OLE 개체를 문서에 삽입하는 방법입니다. 데이터 스트림, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다.
+이 코드는 새 Word 문서를 초기화하고 문서에 내용을 삽입하는 데 사용할 DocumentBuilder를 설정합니다.
+
+## 2단계: Ole 개체 읽기
+
+다음으로 삽입하려는 파일을 읽어보겠습니다. 이것을 비밀 칸에 숨기고 싶은 보물을 찾는 것과 같다고 생각하세요.
 
 ```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
+byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
+```
+
+이 줄은 ZIP 파일에서 모든 바이트를 읽고 이를 바이트 배열에 저장합니다.
+
+## 3단계: Ole 개체 삽입
+
+이제 마법의 부분이 나옵니다. 파일을 Word 문서에 포함하겠습니다.
+
+```csharp
 using (Stream stream = new MemoryStream(bs))
 {
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
+    Shape shape = builder.InsertOleObject(stream, "Package", true, null);
+    OlePackage olePackage = shape.OleFormat.OlePackage;
+    olePackage.FileName = "filename.zip";
+    olePackage.DisplayName = "displayname.zip";
 }
 ```
+
+ 여기서는 바이트 배열에서 메모리 스트림을 생성하고`InsertOleObject` 문서에 삽입하는 방법입니다. 또한 포함된 개체의 파일 이름과 표시 이름도 설정합니다.
 
 ## 4단계: 문서 저장
- 문서의 내용을 사용하세요`Save` 문서를 파일로 저장하는 방법입니다.
+
+마지막으로 우리의 걸작을 저장해 보겠습니다.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### .NET용 Aspose.Words를 사용하여 OLE 패키지와 함께 OLE 개체를 삽입하기 위한 샘플 소스 코드
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-이것은 .NET용 Aspose.Words가 포함된 OLE 패키지와 함께 OLE 개체를 삽입하기 위한 완전한 코드 샘플입니다. 필요한 참조를 가져오고 이전에 설명한 단계에 따라 이 코드를 프로젝트에 통합하십시오.
+그러면 지정된 디렉터리에 포함된 파일과 함께 문서가 저장됩니다.
 
 ## 결론
 
-결론적으로 우리는 Aspose.Words for .NET을 사용하여 OLE 패키지를 사용하여 Word 문서에 OLE 개체를 삽입하는 단계별 가이드를 살펴보았습니다.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에 OLE 개체를 성공적으로 포함했습니다. 이는 문서 안에 언제든지 공개할 수 있는 숨겨진 보석을 추가하는 것과 같습니다. 이 기술은 기술 문서부터 동적 보고서에 이르기까지 다양한 애플리케이션에 매우 유용할 수 있습니다. 
 
-다음 단계를 수행하면 Aspose.Words for .NET을 사용하여 OLE 패키지가 포함된 OLE 개체를 Word 문서에 성공적으로 삽입할 수 있습니다. 필요한 참조를 가져오고 지침을 주의 깊게 따라 원하는 결과를 얻으십시오.
+## FAQ
 
-### ole 패키지를 사용하여 단어로 ole 개체 삽입에 대한 FAQ
+### 이 방법을 사용하여 다른 파일 형식을 포함할 수 있나요?
+예, Excel 시트, PDF, 이미지 등 다양한 파일 형식을 포함할 수 있습니다.
 
-#### Q: Aspose.Words for .NET을 사용하려면 어떤 자격 증명을 가져와야 합니까?
+### Aspose.Words에 대한 라이선스가 필요합니까?
+ 예, 유효한 라이센스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
-A: .NET용 Aspose.Words를 사용하려면 다음 참조를 가져와야 합니다.
+### OLE 개체의 표시 이름을 어떻게 사용자 정의할 수 있나요?
+ 당신은 설정할 수 있습니다`DisplayName` 의 재산`OlePackage` 그것을 사용자 정의합니다.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
+### Aspose.Words는 .NET Core와 호환됩니까?
+예, Aspose.Words는 .NET Framework와 .NET Core를 모두 지원합니다.
 
-#### Q: 새 문서와 문서 생성기를 만드는 방법은 무엇입니까?
-
- A: 다음을 사용하여 새 문서를 만들 수 있습니다.`Document` 클래스와 문서 작성기를 사용하는`DocumentBuilder` 클래스는 아래와 같습니다.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### Q: OLE 패키지가 포함된 OLE 개체를 문서에 삽입하는 방법은 무엇입니까?
-
- 답변:`InsertOleObject` 문서 작성기의 메소드(`DocumentBuilder`) OLE 패키지가 포함된 OLE 개체를 문서에 삽입합니다. 데이터 스트림, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다. 예는 다음과 같습니다.
-
-```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-```
-
-#### Q: 문서를 어떻게 저장하나요?
-
- A: 문서를 사용하세요`Save`문서를 파일로 저장하는 방법입니다. 예는 다음과 같습니다.
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-#### Q: Aspose.Words for .NET을 사용하여 OLE 패키지와 함께 OLE 개체를 삽입하는 완전한 예를 제공할 수 있습니까?
-
-A: 다음은 .NET용 Aspose.Words를 사용하여 OLE 패키지와 함께 OLE 개체를 삽입하는 전체 샘플 코드입니다. 필요한 참조를 가져오고 이전에 설명한 단계에 따라 이 코드를 프로젝트에 통합해야 합니다.
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-이것으로 .NET용 Aspose.Words를 사용하여 OLE 패키지가 포함된 OLE 개체를 Word 문서에 삽입하는 방법에 대한 튜토리얼을 마칩니다. 필요한 참조를 자유롭게 가져오고 설명된 단계에 따라 이 코드를 프로젝트에 통합하세요. 추가 질문이 있으시면 언제든지 문의해 주세요.
+### Word 문서 내에 포함된 OLE 개체를 편집할 수 있나요?
+아니요, Word 내에서 직접 OLE 개체를 편집할 수 없습니다. 기본 응용 프로그램에서 열어야 합니다.

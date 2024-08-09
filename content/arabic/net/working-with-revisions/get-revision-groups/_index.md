@@ -2,86 +2,103 @@
 title: الحصول على مجموعات المراجعة
 linktitle: الحصول على مجموعات المراجعة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: احصل على مجموعات المراجعة في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية استرداد مجموعات المراجعة من مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل الشامل خطوة بخطوة. مثالي لإدارة المستندات.
 type: docs
 weight: 10
 url: /ar/net/working-with-revisions/get-revision-groups/
 ---
+## مقدمة
 
-في هذا الدليل خطوة بخطوة، سنخبرك بكيفية الحصول على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق مخرجات تخفيض السعر.
+في العالم الديناميكي لمعالجة المستندات، يعد تتبع التغييرات والمراجعات في مستندات Word أمرًا بالغ الأهمية. يقدم Aspose.Words for .NET مجموعة قوية من الميزات للتعامل مع هذه المتطلبات بسلاسة. في هذا البرنامج التعليمي، سنرشدك خلال عملية استرداد مجموعات المراجعة من مستند Word باستخدام Aspose.Words for .NET. لذلك، دعونا نتعمق في مهام إدارة المستندات الخاصة بك ونبسطها!
 
-## الخطوة 1: تحميل الوثيقة
+## المتطلبات الأساسية
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
+
+1.  Aspose.Words for .NET Library: تأكد من أنك قمت بتنزيل وتثبيت أحدث إصدار من Aspose.Words for .NET. يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: قم بإعداد بيئة تطوير .NET (على سبيل المثال، Visual Studio).
+3. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيكون مفيدًا.
+
+## استيراد مساحات الأسماء
+
+أولاً، تحتاج إلى استيراد مساحات الأسماء الضرورية في مشروع C# الخاص بك. تضمن هذه الخطوة أنه يمكنك الوصول إلى الفئات والأساليب التي يوفرها Aspose.Words لـ .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## الخطوة 2: تصفح مجموعات المراجعة
+الآن، دعنا نقسم عملية الحصول على مجموعات المراجعة من مستند Word إلى خطوات سهلة المتابعة.
 
-بعد ذلك، سنمر عبر مجموعات المراجعة الموجودة في المستند ونعرض تفاصيلها، مثل المؤلف ونوع المراجعة والنص الذي تمت مراجعته.
+## الخطوة 1: تهيئة المستند
+
+ الخطوة الأولى هي تهيئة`Document` كائن مع المسار إلى مستند Word الخاص بك. سيسمح لك هذا الكائن بالوصول إلى محتويات المستند ومعالجتها.
 
 ```csharp
-foreach(RevisionGroup group in doc.Revisions.Groups)
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## الخطوة 2: الوصول إلى مجموعات المراجعة
+
+بعد ذلك، ستصل إلى مجموعات المراجعة في المستند. تساعد مجموعات المراجعة في تنظيم التغييرات التي أجراها مؤلفون مختلفون.
+
+```csharp
+foreach (RevisionGroup group in doc.Revisions.Groups)
 {
-     Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-     Console.WriteLine(group.Text);
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
 }
 ```
 
+## الخطوة 3: التكرار من خلال مجموعات المراجعة
 
-### مثال على التعليمات البرمجية المصدر للحصول على مجموعات المراجعة باستخدام Aspose.Words لـ .NET
-
-فيما يلي الكود المصدري الكامل للحصول على مجموعات المراجعة في مستند باستخدام Aspose.Words for .NET:
+في هذه الخطوة، سوف تقوم بالتكرار خلال كل مجموعة مراجعة لاسترداد التفاصيل مثل مؤلف المراجعات، ونوع المراجعة، والنص المرتبط بكل مراجعة.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-foreach(RevisionGroup group in doc.Revisions.Groups)
+foreach (RevisionGroup group in doc.Revisions.Groups)
 {
-	 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-	 Console.WriteLine(group.Text);
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
+}
+```
+
+## الخطوة 4: عرض معلومات المراجعة
+
+وأخيرا، قم بعرض معلومات المراجعة التي تم جمعها. سيساعدك هذا على فهم من قام بإجراء التغييرات وطبيعة تلك التغييرات.
+
+```csharp
+foreach (RevisionGroup group in doc.Revisions.Groups)
+{
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
 }
 ```
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، تعلمنا كيفية الحصول على مجموعات المراجعة في مستند Word باستخدام Aspose.Words for .NET. لقد اتبعنا خطوات تحميل المستند وتصفح مجموعات المراجعة وعرض التفاصيل مثل المؤلف ونوع المراجعة. يمكنك الآن تطبيق هذه المعرفة لتحليل مراجعات مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+يعد استرداد مجموعات المراجعة من مستند Word باستخدام Aspose.Words لـ .NET عملية مباشرة. باتباع الخطوات الموضحة في هذا البرنامج التعليمي، يمكنك بسهولة إدارة وتتبع التغييرات في مستنداتك. سواء كنت تتعاون في مشروع ما أو ببساطة تراقب التعديلات، فإن هذه الميزة ستثبت بلا شك أنها لا تقدر بثمن.
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: كيفية تحميل مستند في Aspose.Words لـ .NET؟
+### هل يمكنني تصفية المراجعات بواسطة مؤلف محدد؟
 
- ج: استخدم`Document` فئة Aspose.Words لـ .NET لتحميل مستند من ملف. يمكنك تحديد مسار المستند بالكامل.
+ نعم، يمكنك تصفية المراجعات التي قام بها مؤلف محدد عن طريق التحقق من`Author` ممتلكات كل منهما`RevisionGroup` أثناء التكرار.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### كيف يمكنني الحصول على نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
 
-#### س: كيفية استعراض مجموعات المراجعة في مستند في Aspose.Words لـ .NET؟
+ يمكنك الحصول على نسخة تجريبية مجانية من Aspose.Words لـ .NET[هنا](https://releases.aspose.com/).
 
- ج: استخدم`Groups` خاصية الوثيقة`Revisions`كائن للحصول على مجموعة من مجموعات المراجعة. يمكنك بعد ذلك استخدام حلقة للتنقل خلال كل مجموعة مراجعة.
+### ما هي الميزات الأخرى التي يقدمها Aspose.Words for .NET لإدارة المراجعات؟
 
-```csharp
-foreach(RevisionGroup group in doc.Revisions.Groups)
-{
-     // قم بمعالجة كل مجموعة مراجعة هنا
-}
-```
+ يوفر Aspose.Words for .NET ميزات مثل قبول المراجعات أو رفضها، ومقارنة المستندات، والمزيد. تحقق من[الوثائق](https://reference.aspose.com/words/net/) للحصول على معلومات مفصلة.
 
-#### س: كيف يمكن الحصول على مؤلف مجموعة المراجعة في Aspose.Words لـ .NET؟
+### هل من الممكن الحصول على دعم لـ Aspose.Words لـ .NET؟
 
- ج: استخدم`Author` ملكية`RevisionGroup` كائن للحصول على مؤلف مجموعة المراجعة.
+نعم، يمكنك الحصول على الدعم من مجتمع Aspose[هنا](https://forum.aspose.com/c/words/8).
 
-```csharp
-string author = group.Author;
-```
+### كيف يمكنني شراء Aspose.Words لـ .NET؟
 
-#### س: كيف يمكن الحصول على نوع المراجعة لمجموعة المراجعة في Aspose.Words لـ .NET؟
-
- ج: استخدم`RevisionType` ملكية`RevisionGroup` كائن للحصول على نوع المراجعة للمجموعة.
-
-```csharp
-string revisionType = group.RevisionType;
-```
+ يمكنك شراء Aspose.Words لـ .NET[هنا](https://purchase.aspose.com/buy).

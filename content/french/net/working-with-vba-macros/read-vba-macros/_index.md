@@ -15,7 +15,7 @@ Bonjour, assistants de documents Word ! Vous êtes-vous déjà demandé ce qui 
 
 Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Bibliothèque Aspose.Words pour .NET : pour travailler avec des documents Word, vous aurez besoin de la dernière version d'Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Bibliothèque Aspose.Words pour .NET : pour travailler avec des documents Word, vous aurez besoin de la dernière version d'Aspose.Words pour .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un environnement de développement .NET, tel que Visual Studio, est essentiel pour écrire et tester votre code.
 3. Connaissances de base de C# : Une compréhension de base de C# vous aidera à naviguer à travers les extraits de code et les concepts.
 4.  Exemple de document Word : ayez un[Document Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) avec les macros VBA prêtes. Ce sera notre source pour lire les macros.
@@ -115,9 +115,9 @@ Il s'agit d'un exemple simple de macro VBA qui affiche une boîte de message ave
 
 ## Conclusion
 
-Et voila! Vous avez lu avec succès les macros VBA à partir d'un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a tout couvert, depuis la configuration de votre environnement et le chargement de votre document jusqu'à l'accès au projet VBA et à la lecture des macros. Avec Aspose.Words, vous disposez d'un outil puissant pour automatiser les tâches, personnaliser les documents et approfondir le monde de VBA.
+Et voilà ! Vous avez lu avec succès les macros VBA à partir d'un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a tout couvert, depuis la configuration de votre environnement et le chargement de votre document jusqu'à l'accès au projet VBA et à la lecture des macros. Avec Aspose.Words, vous disposez d'un outil puissant pour automatiser les tâches, personnaliser les documents et approfondir le monde de VBA.
 
- Si vous avez envie d'en savoir plus, le[Documentation API](https://reference.aspose.com/words/net/) est un excellent point de départ. Et si jamais vous rencontrez des questions ou avez besoin d'aide, le[forum d'entraide](https://forum.aspose.com/c/words/8) est là pour vous.
+ Si vous avez envie d'en savoir plus, le[Documentation API](https://reference.aspose.com/words/net/) est un excellent point de départ. Et si jamais vous rencontrez des questions ou avez besoin d'aide, le[forum d'assistance](https://forum.aspose.com/c/words/8) est là pour vous.
 
 Bon codage et que vos macros fonctionnent toujours correctement !
 

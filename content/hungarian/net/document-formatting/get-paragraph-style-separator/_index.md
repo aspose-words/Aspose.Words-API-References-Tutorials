@@ -10,7 +10,7 @@ url: /hu/net/document-formatting/get-paragraph-style-separator/
 
 ## Bevezetés
 
-Próbált már egy Word-dokumentum labirintusában navigálni, de megbotlott az alattomos bekezdésstílus-elválasztókban? Ha ott voltál, tudod, hogy a küzdelem valódi. De képzeld csak? Az Aspose.Words for .NET segítségével ezeknek az elválasztóknak az azonosítása és kezelése gyerekjáték. Merüljünk el ebbe az oktatóanyagba, és válasszon egy profi bekezdésstílus-elválasztóvá!
+Próbált már egy Word-dokumentum labirintusában navigálni, de megbotlott az alattomos bekezdésstílus-elválasztókban? Ha ott voltál, tudod, hogy a küzdelem valódi. De mit gondol? Az Aspose.Words for .NET segítségével ezeknek az elválasztóknak az azonosítása és kezelése gyerekjáték. Merüljünk el ebbe az oktatóanyagba, és válasszon egy profi bekezdésstílus-elválasztóvá!
 
 ## Előfeltételek
 

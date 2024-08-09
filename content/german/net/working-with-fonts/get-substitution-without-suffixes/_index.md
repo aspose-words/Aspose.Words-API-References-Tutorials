@@ -7,17 +7,18 @@ type: docs
 weight: 10
 url: /de/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Einführung
 
-Willkommen zu diesem umfassenden Leitfaden zur Verwaltung der Schriftartenersetzung mit Aspose.Words für .NET. Wenn Sie jemals Probleme damit hatten, dass Schriftarten in Ihren Dokumenten nicht richtig angezeigt wurden, sind Sie hier richtig. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess, um die Schriftartenersetzung ohne Suffixe effizient durchzuführen. Lassen Sie uns anfangen!
+Willkommen zu diesem umfassenden Leitfaden zur Verwaltung der Schriftartenersetzung mit Aspose.Words für .NET. Wenn Sie jemals Probleme damit hatten, dass Schriftarten in Ihren Dokumenten nicht richtig angezeigt wurden, sind Sie hier richtig. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess der effizienten Handhabung der Schriftartenersetzung ohne Suffixe.
 
 ## Voraussetzungen
 
 Bevor Sie mit dem Lernprogramm beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 - Grundkenntnisse in C#: Wenn Sie die C#-Programmierung verstehen, können Sie die Schritte leichter nachvollziehen und implementieren.
--  Aspose.Words für .NET-Bibliothek: Laden Sie die Bibliothek herunter und installieren Sie sie von der[Download-Link](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET-Bibliothek: Laden Sie die Bibliothek herunter und installieren Sie sie von der[Downloadlink](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Richten Sie eine Entwicklungsumgebung wie Visual Studio ein, um Ihren Code zu schreiben und auszuführen.
-- Beispieldokument: Ein Beispieldokument (z. B.`Rendering.docx`), mit dem Sie während dieses Tutorials arbeiten können.
+-  Beispieldokument: Ein Beispieldokument (z. B.`Rendering.docx`), mit dem Sie während dieses Tutorials arbeiten können.
 
 ## Namespaces importieren
 
@@ -26,7 +27,6 @@ Zuerst müssen wir die erforderlichen Namespaces importieren, um auf die von Asp
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Schritt 5: Erstellen Sie die Warnungshandlerklasse
 
-Um Warnungen effektiv zu behandeln, erstellen Sie eine benutzerdefinierte Klasse, die Folgendes implementiert:`IWarningCallback` Schnittstelle. Diese Klasse erfasst und protokolliert alle Warnungen zur Schriftartersetzung.
+ Um Warnungen effektiv zu behandeln, erstellen Sie eine benutzerdefinierte Klasse, die Folgendes implementiert:`IWarningCallback` Schnittstelle. Diese Klasse erfasst und protokolliert alle Warnungen zur Schriftartersetzung.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,31 +93,31 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 In dieser Klasse:
--  Der`Warning` Methode erfasst Warnungen im Zusammenhang mit der Schriftartersetzung.
+-  Der`Warning`Methode erfasst Warnungen im Zusammenhang mit der Schriftartersetzung.
 -  Der`FontWarnings` Die Sammlung speichert diese Warnungen zur weiteren Überprüfung oder Protokollierung.
 
 ## Abschluss
 
 Sie beherrschen jetzt den Umgang mit der Schriftartenersetzung ohne Suffixe mit Aspose.Words für .NET. Mit diesem Wissen stellen Sie sicher, dass Ihre Dokumente unabhängig von den auf dem System verfügbaren Schriftarten ihr beabsichtigtes Erscheinungsbild beibehalten. Experimentieren Sie weiter mit verschiedenen Einstellungen und Quellen, um die Leistungsfähigkeit von Aspose.Words voll auszuschöpfen.
 
-## FAQs
+## Häufig gestellte Fragen
 
-### F1: Wie kann ich Schriftarten aus mehreren benutzerdefinierten Verzeichnissen verwenden?
+### Wie kann ich Schriftarten aus mehreren benutzerdefinierten Verzeichnissen verwenden?
 
  Sie können mehrere hinzufügen`FolderFontSource` Instanzen zum`fontSources` Liste und aktualisieren Sie die Schriftartquellen entsprechend.
 
-### F2: Wo kann ich eine kostenlose Testversion von Aspose.Words für .NET herunterladen?
+### Wo kann ich eine kostenlose Testversion von Aspose.Words für .NET herunterladen?
 
  Sie können eine kostenlose Testversion herunterladen von der[Kostenlose Testseite von Aspose](https://releases.aspose.com/).
 
-###  F3: Kann ich mehrere Arten von Warnungen verarbeiten mit`IWarningCallback`?
+###  Kann ich mehrere Arten von Warnungen verarbeiten mit`IWarningCallback`?
 
- Ja das`IWarningCallback` Die Schnittstelle ermöglicht Ihnen die Handhabung verschiedener Arten von Warnungen, nicht nur die Schriftartersetzung.
+ Ja, die`IWarningCallback` Die Schnittstelle ermöglicht Ihnen die Handhabung verschiedener Arten von Warnungen, nicht nur die Schriftartersetzung.
 
-### F4: Wo erhalte ich Support für Aspose.Words?
+### Wo erhalte ich Support für Aspose.Words?
 
  Für Unterstützung besuchen Sie die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8).
 
-### F5: Ist es möglich, eine temporäre Lizenz zu erwerben?
+### Ist es möglich, eine temporäre Lizenz zu erwerben?
 
  Ja, Sie können eine vorläufige Lizenz erhalten von der[Seite mit der temporären Lizenz](https://purchase.aspose.com/temporary-license/).

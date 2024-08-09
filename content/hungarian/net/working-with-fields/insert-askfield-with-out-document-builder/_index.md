@@ -103,7 +103,7 @@ Ez a sor menti a dokumentumot a beszúrt ASK mezővel. És itt van – a dokumen
 
 ## Következtetés
 
-Gratulálunk! Éppen most adott hozzá egy ASK mezőt egy Word-dokumentumhoz az Aspose.Words for .NET használatával a Document Builder nélkül. Ez a funkció jelentősen javíthatja a felhasználói interakciót a dokumentumokkal, rugalmasabbá és felhasználóbarátabbá téve azokat. Kísérletezzen tovább a különböző mezőkkel és tulajdonságokkal, hogy kiaknázza az Aspose.Words teljes potenciálját. Boldog kódolást!
+Gratulálok! Éppen most adott hozzá egy ASK mezőt egy Word-dokumentumhoz az Aspose.Words for .NET használatával a Document Builder nélkül. Ez a funkció jelentősen javíthatja a felhasználói interakciót a dokumentumokkal, rugalmasabbá és felhasználóbarátabbá téve azokat. Kísérletezzen tovább a különböző mezőkkel és tulajdonságokkal, hogy kiaknázza az Aspose.Words teljes potenciálját. Boldog kódolást!
 
 ## GYIK
 

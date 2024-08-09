@@ -18,7 +18,7 @@ url: /hi/net/working-with-fields/insert-merge-field-using-dom/
 1. C# का बुनियादी ज्ञान: आपको C# प्रोग्रामिंग में सहज होना चाहिए।
 2. विजुअल स्टूडियो स्थापित: सुनिश्चित करें कि आपके मशीन पर विजुअल स्टूडियो या कोई अन्य C# IDE स्थापित है।
 3.  Aspose.Words for .NET: Aspose.Words for .NET का नवीनतम संस्करण डाउनलोड करें और इंस्टॉल करें।[विज्ञप्ति](https://releases.aspose.com/words/net/).
-4.  वैध लाइसेंस: यदि आपके पास लाइसेंस नहीं है, तो आप[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन के लिए।
+4.  वैध लाइसेंस: यदि आपके पास लाइसेंस नहीं है, तो आप[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
 
 ## चरण 1: अपना प्रोजेक्ट सेटअप करें
 

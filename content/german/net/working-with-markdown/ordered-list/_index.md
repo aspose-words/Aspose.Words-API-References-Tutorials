@@ -1,6 +1,6 @@
 ---
-title: Bestellliste
-linktitle: Bestellliste
+title: Sortierte Liste
+linktitle: Sortierte Liste
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET geordnete Listen in Word-Dokumenten erstellen. Perfekt für die Automatisierung der Dokumenterstellung.
 type: docs
@@ -15,7 +15,7 @@ Sie haben sich also entschieden, in Aspose.Words für .NET einzutauchen, um prog
 
 Bevor wir uns in den Code vertiefen, benötigen Sie einige Dinge:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie es herunterladen[Hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie es herunterladen[Hier](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
 3. Grundkenntnisse in C#: Sie sollten mit den Grundlagen von C# vertraut sein, um problemlos folgen zu können.
 
@@ -82,10 +82,10 @@ Das programmgesteuerte Erstellen einer geordneten Liste in einem Word-Dokument k
 ## Häufig gestellte Fragen
 
 ### Kann ich den Nummerierungsstil der Liste anpassen?  
- Ja, Sie können den Nummerierungsstil anpassen mit dem`ListFormat` Eigenschaften. Sie können verschiedene Nummerierungsstile wie römische Ziffern, Buchstaben usw. festlegen.
+ Ja, Sie können den Nummerierungsstil anpassen mit dem`ListFormat`Eigenschaften. Sie können verschiedene Nummerierungsstile wie römische Ziffern, Buchstaben usw. festlegen.
 
 ### Wie füge ich weitere Einrückungsebenen hinzu?  
- Du kannst den ... benutzen`ListIndent` Methode mehrmals, um tiefere Ebenen von Unterlisten zu erstellen. Jeder Aufruf von`ListIndent` fügt eine Einrückungsebene hinzu.
+ Sie können die`ListIndent` Methode mehrmals, um tiefere Ebenen von Unterlisten zu erstellen. Jeder Aufruf von`ListIndent` fügt eine Einrückungsebene hinzu.
 
 ### Kann ich Aufzählungszeichen und nummerierte Listen mischen?  
  Auf jeden Fall! Sie können verschiedene Listenformate innerhalb desselben Dokuments anwenden, indem Sie`ListFormat` Eigentum.

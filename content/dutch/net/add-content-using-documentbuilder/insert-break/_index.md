@@ -9,7 +9,7 @@ url: /nl/net/add-content-using-documentbuilder/insert-break/
 ---
 ## Invoering
 
-Hallo daar! Ben je klaar om in de wereld van Aspose.Words voor .NET te duiken? Deze krachtige bibliotheek is als een Zwitsers zakmes voor het manipuleren van Word-documenten. Of u nu te maken heeft met complexe documentautomatiseringstaken of gewoon een eenvoudig pagina-einde wilt toevoegen, Aspose.Words heeft de oplossing voor u. In deze zelfstudie laten we stap voor stap zien hoe u onderbrekingen in een Word-document kunt invoegen. Dus pak een kop koffie en laten we aan de slag gaan!
+Hé daar! Ben je klaar om in de wereld van Aspose.Words voor .NET te duiken? Deze krachtige bibliotheek is als een Zwitsers zakmes voor het manipuleren van Word-documenten. Of u nu te maken heeft met complexe documentautomatiseringstaken of gewoon een eenvoudig pagina-einde wilt toevoegen, Aspose.Words heeft de oplossing voor u. In deze zelfstudie laten we stap voor stap zien hoe u onderbrekingen in een Word-document kunt invoegen. Dus pak een kop koffie en laten we aan de slag gaan!
 
 ## Vereisten
 
@@ -118,7 +118,7 @@ Was dat niet leuk? Met Aspose.Words voor .NET is het manipuleren van Word-docume
 Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Het ondersteunt een breed scala aan functies, van het maken en bewerken van documenten tot het converteren tussen verschillende formaten.
 
 ### Kan ik Aspose.Words gratis gebruiken?
- Ja, je kunt beginnen met a[gratis proefperiode](https://releases.aspose.com/) om de kenmerken ervan te verkennen. Voor langdurig gebruik kan dat[een licentie kopen](https://purchase.aspose.com/buy).
+ Ja, je kunt beginnen met a[gratis proefperiode](https://releases.aspose.com/) om de kenmerken ervan te verkennen. Voor langdurig gebruik kan dat[een licentie aanschaffen](https://purchase.aspose.com/buy).
 
 ### Hoe krijg ik ondersteuning voor Aspose.Words?
  U kunt ondersteuning krijgen van de[Aspose-communityforum](https://forum.aspose.com/c/words/8). Het is een geweldige plek om vragen te stellen en uw ervaringen te delen.

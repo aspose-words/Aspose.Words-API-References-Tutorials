@@ -51,7 +51,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
 活用する`PageSetup`セクションのプロパティを使用して、レイアウト動作を構成します。
 
-をセットする`SectionStart`の所有物`PageSetup`に`SectionStart.NewPage`これにより、ソース コンテンツが宛先ドキュメントに追加される前に、新しいページが作成されます。
+設定する`SectionStart`の所有物`PageSetup`に`SectionStart.NewPage`これにより、ソース コンテンツが宛先ドキュメントに追加される前に、新しいページが作成されます。
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -71,7 +71,7 @@ srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 
 採用する`AppendDocument`宛先ドキュメントのメソッド（`dstDoc`) を使用して、ソース コンテンツをシームレスに追加します。
 
-ソースドキュメントを渡す（`srcDoc` ） と`ImportFormatMode.KeepSourceFormatting`このメソッドへの引数。この引数は、追加時にソース ドキュメントの元の書式を保持します。
+ソースドキュメントを渡す（`srcDoc` ）と`ImportFormatMode.KeepSourceFormatting`このメソッドへの引数。この引数は、追加時にソース ドキュメントの元の書式を保持します。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

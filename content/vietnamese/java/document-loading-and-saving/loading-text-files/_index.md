@@ -175,7 +175,7 @@ Aspose.Words for Java là một thư viện xử lý tài liệu mạnh mẽ cho
 
 ### Tôi có thể chuyển đổi tài liệu văn bản đã tải sang các định dạng khác không?
 
- Có, Aspose.Words cho Java cho phép bạn chuyển đổi tài liệu văn bản đã tải sang nhiều định dạng khác nhau, bao gồm DOCX, PDF, v.v. Bạn có thể dùng`Document` lớp để thực hiện chuyển đổi. Kiểm tra tài liệu để biết các ví dụ chuyển đổi cụ thể.
+ Có, Aspose.Words cho Java cho phép bạn chuyển đổi tài liệu văn bản đã tải sang nhiều định dạng khác nhau, bao gồm DOCX, PDF, v.v. Bạn có thể sử dụng`Document` lớp để thực hiện chuyển đổi. Kiểm tra tài liệu để biết các ví dụ chuyển đổi cụ thể.
 
 ### Làm cách nào để xử lý khoảng trắng trong tài liệu văn bản được tải?
 

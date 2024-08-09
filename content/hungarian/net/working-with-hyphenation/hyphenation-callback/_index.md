@@ -10,13 +10,13 @@ url: /hu/net/working-with-hyphenation/hyphenation-callback/
 
 ## Bevezetés
 
-Halihó! Volt már olyan, hogy belegabalyodott a szövegformázás bonyolultságába, különösen, ha olyan nyelvekkel foglalkozik, amelyek elválasztást igényelnek? Nem vagy egyedül. Az elválasztás, bár kulcsfontosságú a megfelelő szövegelrendezéshez, egy kis fejfájást okozhat. De képzeld csak? Az Aspose.Words for .NET hátat kapott. Ez a hatékony könyvtár lehetővé teszi a szöveg formázásának zökkenőmentes kezelését, beleértve az elválasztás kezelését visszahívási mechanizmuson keresztül. Érdekelt? Nézzük meg, hogyan valósíthat meg elválasztási visszahívást az Aspose.Words for .NET használatával.
+Szia! Volt már olyan, hogy belegabalyodott a szövegformázás bonyolultságába, különösen, ha olyan nyelvekkel foglalkozik, amelyek elválasztást igényelnek? Nem vagy egyedül. Az elválasztás, bár kulcsfontosságú a megfelelő szövegelrendezéshez, egy kis fejfájást okozhat. De mit gondol? Az Aspose.Words for .NET hátat kapott. Ez a hatékony könyvtár lehetővé teszi a szöveg formázásának zökkenőmentes kezelését, beleértve az elválasztás kezelését visszahívási mechanizmuson keresztül. Érdekelt? Nézzük meg, hogyan valósíthat meg elválasztási visszahívást az Aspose.Words for .NET használatával.
 
 ## Előfeltételek
 
 Mielőtt bepiszkítanánk a kódot, győződjünk meg arról, hogy mindennel megvan, amire szüksége van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik a könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik a könyvtárral. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. IDE: Olyan fejlesztői környezet, mint a Visual Studio.
 3. C# alapismeretek: C# és .NET keretrendszer ismerete.
 4. Elválasztási szótárak: Elválasztási szótárak a használni kívánt nyelvekhez.
@@ -68,7 +68,7 @@ Most töltsük be az elválasztást igénylő dokumentumot.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Itt egy német szöveges dokumentumot töltünk be. Cserélheted`"German text.docx"` a dokumentum fájlnevével.
+Itt egy német szöveges dokumentumot töltünk be. Cserélheted`"German text.docx"` a dokumentum fájlnevével.
 
 ## 4. lépés: Mentse el a dokumentumot
 
@@ -146,4 +146,4 @@ Az elválasztás javítja a szöveg elrendezését azáltal, hogy a megfelelő h
 Elválasztási szótárakat letölthet különféle online forrásokból, vagy szükség esetén létrehozhat saját szótárakat.
 
 ### Mi történik, ha hiányzik egy elválasztási szótár?
- Ha hiányzik egy szótár, a`RequestDictionary` metódus kivételt dob, amelyet kezelve tájékoztathatja a felhasználót, vagy tartalékot adhat.
+ Ha hiányzik egy szótár, a`RequestDictionary`metódus kivételt dob, amelyet kezelve tájékoztathatja a felhasználót, vagy tartalékot adhat.

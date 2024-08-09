@@ -11,7 +11,7 @@ url: /id/java/table-processing/creating-tables-rows/
 ## Perkenalan
 Membuat tabel dan baris dalam dokumen adalah aspek mendasar dalam pemrosesan dokumen, dan Aspose.Words untuk Java menjadikan tugas ini lebih mudah dari sebelumnya. Dalam panduan langkah demi langkah ini, kita akan mempelajari cara memanfaatkan Aspose.Words untuk Java untuk membuat tabel dan baris di dokumen Anda. Baik Anda membuat laporan, membuat faktur, atau membuat dokumen apa pun yang memerlukan presentasi data terstruktur, panduan ini siap membantu Anda.
 
-## Menata panggung
+## Mengatur Panggung
  Sebelum kita mendalami detailnya, pastikan Anda memiliki pengaturan yang diperlukan untuk bekerja dengan Aspose.Words untuk Java. Pastikan Anda telah mengunduh dan menginstal perpustakaan. Jika belum, Anda dapat menemukan link downloadnya[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Meja Bangunan
@@ -115,7 +115,7 @@ Ya, Anda bisa mengimpor data dari database dan mengisi tabel di dokumen Anda. An
  Anda dapat memformat teks dalam sel tabel dengan mengakses`Run` objek dan menerapkan pemformatan sesuai kebutuhan. Misalnya, mengubah ukuran atau gaya font.
 
 ### Bisakah saya mengekspor dokumen ke format lain?
- Aspose.Words untuk Java memungkinkan Anda menyimpan dokumen dalam berbagai format, termasuk DOCX, PDF, HTML, dan lainnya. Menggunakan`Document.save` metode untuk menentukan format yang diinginkan.
+ Aspose.Words untuk Java memungkinkan Anda menyimpan dokumen dalam berbagai format, termasuk DOCX, PDF, HTML, dan banyak lagi. Gunakan`Document.save` metode untuk menentukan format yang diinginkan.
 
 ## Kesimpulan
-Membuat tabel dan baris dalam dokumen menggunakan Aspose.Words untuk Java adalah kemampuan yang ampuh untuk otomatisasi dokumen. Dengan kode sumber dan panduan yang disediakan dalam panduan komprehensif ini, Anda diperlengkapi dengan baik untuk memanfaatkan potensi Aspose.Words untuk Java dalam aplikasi Java Anda. Baik Anda membuat laporan, dokumen, atau presentasi, presentasi data terstruktur hanya berjarak satu cuplikan kode.
+Membuat tabel dan baris dalam dokumen menggunakan Aspose.Words untuk Java adalah kemampuan canggih untuk otomatisasi dokumen. Dengan kode sumber dan panduan yang disediakan dalam panduan komprehensif ini, Anda diperlengkapi dengan baik untuk memanfaatkan potensi Aspose.Words untuk Java dalam aplikasi Java Anda. Baik Anda membuat laporan, dokumen, atau presentasi, presentasi data terstruktur hanya berjarak satu cuplikan kode.

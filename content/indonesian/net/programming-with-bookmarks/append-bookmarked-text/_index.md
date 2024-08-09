@@ -15,7 +15,7 @@ Hai! Pernah mencoba menambahkan teks dari bagian yang diberi bookmark di dokumen
 
 Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
 
--  Aspose.Words untuk .NET: Pastikan Anda telah menginstalnya. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstalnya. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun seperti Visual Studio.
 - Pengetahuan Dasar C#: Memahami konsep dasar pemrograman C# akan membantu.
 - Dokumen Word dengan Bookmark: Dokumen Word dengan bookmark yang diatur, yang akan kita gunakan untuk menambahkan teks.

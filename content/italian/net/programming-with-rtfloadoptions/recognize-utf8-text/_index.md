@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-rtfloadoptions/recognize-utf8-text/
 ---
-## introduzione
+## Introduzione
 
 Pronto a immergerti in alcune fantastiche cose tecnologiche? Oggi affronteremo il riconoscimento del testo UTF-8 nei documenti Word utilizzando Aspose.Words per .NET. È un punto di svolta se lavori con più lingue o caratteri speciali. Quindi, allacciate le cinture e iniziamo!
 
@@ -49,11 +49,11 @@ Successivamente, dobbiamo configurare le opzioni di caricamento per riconoscere 
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- IMPOSTANDO`RecognizeUtf8Text` A`true`, stiamo dicendo ad Aspose.Words di cercare il testo UTF-8. Questo è molto utile quando si ha a che fare con documenti contenenti una varietà di caratteri.
+ Impostando`RecognizeUtf8Text` A`true`, stiamo dicendo ad Aspose.Words di cercare il testo UTF-8. Questo è molto utile quando si ha a che fare con documenti contenenti una varietà di caratteri.
 
 ## Passaggio 3: caricare il documento
 
-Ora è il momento di caricare il documento utilizzando le opzioni di caricamento che abbiamo configurato. Qui è dove avviene la magia!
+Ora è il momento di caricare il documento utilizzando le opzioni di caricamento che abbiamo configurato. È qui che avviene la magia!
 
 ```csharp
 Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
@@ -73,9 +73,9 @@ Questa riga salva il documento con un nuovo nome, in modo da poter identificare 
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato a riconoscere il testo UTF-8 nei documenti Word utilizzando Aspose.Words per .NET. Questo piccolo trucco può farti risparmiare un sacco di grattacapi quando hai a che fare con documenti multilingue o caratteri speciali.
+Ed ecco qua! Hai appena imparato a riconoscere il testo UTF-8 nei documenti Word utilizzando Aspose.Words per .NET. Questo piccolo trucco può farti risparmiare un sacco di grattacapi quando hai a che fare con documenti multilingue o caratteri speciali.
 
-Ricorda, i passaggi chiave sono l'impostazione delle opzioni di caricamento, il caricamento del documento e il salvataggio. E 'così semplice! Quindi, vai avanti e provalo. Rimarrai stupito di quanto sia facile gestire testo complesso nei tuoi documenti Word.
+Ricorda, i passaggi chiave sono l'impostazione delle opzioni di caricamento, il caricamento del documento e il salvataggio. E' così semplice! Quindi, vai avanti e provalo. Rimarrai stupito di quanto sia facile gestire testo complesso nei tuoi documenti Word.
 
 ## Domande frequenti
 

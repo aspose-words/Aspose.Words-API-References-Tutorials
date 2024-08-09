@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-markdown/ordered-list/
 ---
-## Úvod
+## Zavedení
 
 Rozhodli jste se tedy ponořit do Aspose.Words for .NET a vytvořit úžasné dokumenty Wordu programově. Fantastická volba! Dnes si rozebereme, jak vytvořit uspořádaný seznam v dokumentu aplikace Word. Vezmeme to krok za krokem, takže ať už jste začátečník v kódování nebo ostřílený profík, tento průvodce vám bude velmi užitečný. Začněme!
 
@@ -15,7 +15,7 @@ Rozhodli jste se tedy ponořit do Aspose.Words for .NET a vytvořit úžasné do
 
 Než se ponoříme do kódu, budete potřebovat několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 3. Základní znalost C#: Měli byste znát základy C#, abyste je mohli snadno sledovat.
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Lists;
 ```
 
-Pojďme si kód rozdělit na malé kroky a vysvětlit každou část. Připraveni? Tady jsme!
+Pojďme si kód rozdělit na malé kroky a vysvětlit každou část. Připraveni? Tady to je!
 
 ## Krok 1: Inicializujte dokument
 
@@ -64,7 +64,7 @@ Pomocí těchto řádků přidáváte první dvě položky do seznamu.
 
 ## Krok 4: Odsazení seznamu
 
-Co když chcete pod položku přidat podpoložky? Pojďme to udělat!
+Co když chcete pod položku přidat podpoložky? Pojďme na to!
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -82,7 +82,7 @@ Vytváření uspořádaného seznamu v dokumentu aplikace Word programově se m�
 ## FAQ
 
 ### Mohu přizpůsobit styl číslování seznamu?  
- Ano, styl číslování můžete upravit pomocí`ListFormat` vlastnosti. Můžete nastavit různé styly číslování, jako jsou římské číslice, písmena atd.
+ Ano, styl číslování můžete upravit pomocí`ListFormat`vlastnosti. Můžete nastavit různé styly číslování, jako jsou římské číslice, písmena atd.
 
 ### Jak přidám další úrovně odsazení?  
  Můžete použít`ListIndent` vícekrát, abyste vytvořili hlubší úrovně dílčích seznamů. Každé volání`ListIndent` přidá jednu úroveň odsazení.

@@ -64,7 +64,7 @@ public class DocumentRenderer {
 }
 ```
 
-Bu kod belgenizi HTML formatında kaydedecektir. ayarlayarak HTML çıktısını daha da özelleştirebilirsiniz.`HtmlSaveOptions` ihyaç olduğu gibi.
+Bu kod belgenizi HTML formatında kaydedecektir. ayarlayarak HTML çıktısını daha da özelleştirebilirsiniz.`HtmlSaveOptions` gerektiği gibi.
 
 ## Adım 4: Kodu Çalıştırma
 

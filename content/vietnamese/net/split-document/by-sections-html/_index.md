@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Bước 3: Định cấu hình tùy chọn lưu HTML
 
- Để chia tài liệu theo từng phần, chúng ta cần thiết lập các tùy chọn lưu phù hợp. Các`HtmlSaveOptions`lớp cho phép chúng ta chỉ định cách chúng ta muốn lưu tài liệu vào HTML.
+ Để chia tài liệu theo từng phần, chúng ta cần thiết lập các tùy chọn lưu phù hợp. các`HtmlSaveOptions`lớp cho phép chúng ta chỉ định cách chúng ta muốn lưu tài liệu vào HTML.
 
 ```csharp
 // Định cấu hình tùy chọn lưu HTML.
@@ -72,7 +72,7 @@ Với các tùy chọn lưu của chúng tôi đã được định cấu hình,
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-Và bạn có nó rồi đấy! Bạn đã chia thành công tài liệu Word theo phần thành HTML bằng cách sử dụng Aspose.Words for .NET.
+Và bạn có nó! Bạn đã chia thành công tài liệu Word theo phần thành HTML bằng cách sử dụng Aspose.Words for .NET.
 
 ## Phần kết luận
 

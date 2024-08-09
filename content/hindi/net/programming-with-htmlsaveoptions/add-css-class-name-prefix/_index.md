@@ -120,7 +120,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 `CssClassNamePrefix`प्रॉपर्टी बाहरी CSS के साथ काम करती है। इनलाइन CSS के लिए, आपको एक अलग दृष्टिकोण की आवश्यकता होगी।
 
 ### मैं अन्य HTML सेव विकल्प कैसे शामिल कर सकता हूं?
- आप इसके विभिन्न गुणों को कॉन्फ़िगर कर सकते हैं`HtmlSaveOptions` अपने HTML आउटपुट को कस्टमाइज़ करने के लिए।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए।
+ आप इसके विभिन्न गुणों को कॉन्फ़िगर कर सकते हैं`HtmlSaveOptions` अपने HTML आउटपुट को कस्टमाइज़ करने के लिए।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए.
 
 ### क्या HTML को स्ट्रीम में सहेजना संभव है?
  बिलकुल! आप स्ट्रीम ऑब्जेक्ट को पास करके दस्तावेज़ को स्ट्रीम में सहेज सकते हैं`Save` तरीका।

@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
  예, 속성을 수정하여 머리글 행에 추가 서식을 적용할 수 있습니다.`ParagraphFormat`, `RowFormat` , 그리고`CellFormat`.
 
 ### 테이블에 더 많은 열을 추가할 수 있나요?
- 전적으로! 더 많은 셀을 삽입하여 필요에 따라 많은 열을 추가 할 수 있습니다.`InsertCell` 방법.
+ 전적으로! 더 많은 셀을 삽입하여 필요한만큼의 열을 추가 할 수 있습니다.`InsertCell` 방법.
 
 ### 다음 페이지에서 다른 행이 반복되도록 하려면 어떻게 해야 합니까?
  행을 반복하려면`RowFormat.HeadingFormat`재산`true` 해당 특정 행에 대해.
@@ -118,4 +118,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
  예, 다음을 통해 기존 테이블에 액세스하여 수정할 수 있습니다.`Document` 개체와 유사한 서식을 적용합니다.
 
 ### .NET용 Aspose.Words에서 사용할 수 있는 다른 테이블 서식 옵션은 무엇입니까?
- Aspose.Words for .NET은 셀 병합, 테두리 설정 및 테이블 정렬을 포함한 광범위한 테이블 서식 옵션을 제공합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ Aspose.Words for .NET은 셀 병합, 테두리 설정 및 테이블 정렬을 포함한 광범위한 테이블 서식 옵션을 제공합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은

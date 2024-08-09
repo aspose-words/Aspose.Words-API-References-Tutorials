@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 
 ### Aspose.Words for .NET を使用して他の種類のグラフを作成できますか?
 
-はい、Aspose.Words for .NETは棒グラフ、円グラフなど、さまざまなグラフタイプをサポートしています。ドキュメントをご覧ください。[ここ](https://reference.aspose.com/words/net/)詳細については。
+はい、Aspose.Words for .NETは棒グラフ、円グラフなど、さまざまなグラフタイプをサポートしています。ドキュメントをご覧ください。[ここ](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### 購入前に Aspose.Words for .NET を試すにはどうすればいいですか?
 

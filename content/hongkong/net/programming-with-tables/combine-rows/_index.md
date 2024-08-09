@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## 第 2 步：識別表格
 
-接下來，您需要確定要合併的表格。 Aspose.Words 可讓您使用以下方式從文件中取得表格`GetChild`方法。就是這樣：
+接下來，您需要確定要合併的表格。 Aspose.Words 可讓您使用以下方式從文件中取得表格`GetChild`方法。方法如下：
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 
 將多個表中的行合併到一個表中可以顯著簡化文件處理任務。透過 Aspose.Words for .NET，這項任務變得簡單又有效率。透過遵循此逐步指南，您可以輕鬆合併表格並簡化您的工作流程。
 
-如果您需要更多資訊或有任何疑問，[Aspose.Words 文檔](https://reference.aspose.com/words/net/)是一個極好的資源。您還可以探索購買選項[這裡](https://purchase.aspose.com/buy)或得到一個[臨時執照](https://purchase.aspose.com/temporary-license/)供測試用。
+如果您需要更多資訊或有任何疑問，[Aspose.Words 文檔](https://reference.aspose.com/words/net/)是一個極好的資源。您還可以探索購買選項[這裡](https://purchase.aspose.com/buy)或得到一個[臨時執照](https://purchase.aspose.com/temporary-license/)用於測試。
 
 ## 常見問題解答
 

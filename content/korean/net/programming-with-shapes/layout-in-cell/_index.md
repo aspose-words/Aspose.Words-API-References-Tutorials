@@ -15,7 +15,7 @@ Word 문서에서 표 셀의 레이아웃을 프로그래밍 방식으로 미세
 
 코드를 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
-1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 아직 안 해보셨다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 아직 안 해보셨다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: .NET으로 설정된 개발 환경이 필요합니다. 권장 사항을 찾고 있다면 Visual Studio가 탁월한 선택입니다.
 3. C#에 대한 기본 지식: 각 단계를 설명하지만 C#에 대한 기본 지식을 이해하면 더 쉽게 따라갈 수 있습니다.
 4.  문서 디렉터리: 문서를 저장할 디렉터리 경로를 준비합니다. 우리는 이것을 다음과 같이 지칭할 것이다.`YOUR DOCUMENT DIRECTORY`.

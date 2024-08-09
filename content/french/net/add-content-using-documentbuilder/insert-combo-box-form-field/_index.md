@@ -68,7 +68,7 @@ Cette ligne de code initialise un nouveau document Word vide.
 
 ## Étape 4 : initialiser DocumentBuilder
 
- Pour ajouter du contenu à notre document, nous utiliserons le`DocumentBuilder` classe. Cette classe offre un moyen pratique d’insérer divers éléments dans un document Word.
+ Pour ajouter du contenu à notre document, nous utiliserons le`DocumentBuilder` classe. Cette classe offre un moyen pratique d'insérer divers éléments dans un document Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -101,7 +101,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx"
 
 ## Conclusion
 
-Et voila! Vous avez inséré avec succès un champ de formulaire de zone de liste déroulante dans un document Word à l'aide d'Aspose.Words pour .NET. Tu vois, ce n'était pas si difficile, n'est-ce pas ? Avec ces étapes simples, vous pouvez créer des documents interactifs et dynamiques qui impressionneront à coup sûr. Alors, allez-y et essayez-le. Qui sait, vous découvrirez peut-être même de nouvelles astuces en cours de route. Bon codage !
+Et voilà ! Vous avez inséré avec succès un champ de formulaire de zone de liste déroulante dans un document Word à l'aide d'Aspose.Words pour .NET. Tu vois, ce n'était pas si difficile, n'est-ce pas ? Avec ces étapes simples, vous pouvez créer des documents interactifs et dynamiques qui impressionneront à coup sûr. Alors, allez-y et essayez-le. Qui sait, vous découvrirez peut-être même de nouvelles astuces en cours de route. Bon codage !
 
 ## FAQ
 

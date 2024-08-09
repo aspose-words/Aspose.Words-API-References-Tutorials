@@ -2,88 +2,115 @@
 title: 启用禁用字体替换
 linktitle: 启用禁用字体替换
 second_title: Aspose.Words 文档处理 API
-description: 在本教程中，学习如何使用 Aspose.Words for .NET 在 Word 文档中启用或禁用字体替换。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中启用或禁用字体替换。确保您的文档在所有平台上看起来一致。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/enable-disable-font-substitution/
 ---
-在本教程中，我们将引导您了解如何在使用适用于 .NET 的 Aspose.Words 库呈现 Word 文档时启用或禁用字体替换。启用或禁用字体替换允许您控制是否自动用默认字体替换缺失的字体。我们将逐步指导您理解和实现 .NET 项目中的代码。
+## 介绍
+
+您是否遇到过这样的情况：在另一台计算机上查看时，Word 文档中精心选择的字体被替换了？很烦人，对吧？这是由于字体替换而发生的，字体替换是系统用可用字体替换丢失的字体的过程。但不用担心！使用 Aspose.Words for .NET，您可以轻松管理和控制字体替换。在本教程中，我们将引导您完成在 Word 文档中启用或禁用字体替换的步骤，确保您的文档始终符合您的要求。
 
 ## 先决条件
-开始之前，请确保您拥有以下物品：
-- 具备 C# 编程语言的工作知识
-- 项目中安装的 .NET Aspose.Words 库
-- 想要使用或不使用字体替换来呈现的 Word 文档
 
-## 步骤1：定义文档目录
-首先，您需要将目录路径设置为 Word 文档的位置。替换`"YOUR DOCUMENT DIRECTORY"`在代码中使用适当的路径。
+在开始这些步骤之前，请确保您已准备好所需的一切：
+
+-  Aspose.Words for .NET：下载最新版本[这里](https://releases.aspose.com/words/net/).
+- Visual Studio：任何支持 .NET 的版本。
+- C# 的基本知识：这将帮助您理解编码示例。
+
+## 导入命名空间
+
+首先，请确保已在项目中导入必要的命名空间。将这些添加到 C# 文件的顶部：
 
 ```csharp
-//文档目录的路径
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 第 2 步：上传文档并配置字体设置
-接下来，我们将加载要渲染的 Word 文档，并创建`FontSettings`类来处理字体设置。我们将通过在`DefaultFontName`并禁用字体信息覆盖`Enabled`设置`false`.
+现在，让我们将这个过程分解为简单、易于管理的步骤。
+
+## 步骤 1：设置你的项目
+
+首先，在 Visual Studio 中设置一个新项目并添加对 Aspose.Words for .NET 库的引用。如果您还没有，请从[Aspose 网站](https://releases.aspose.com/words/net/).
+
+## 步骤 2：加载文档
+
+接下来，加载要处理的文档。操作方法如下：
 
 ```csharp
-//加载文档
-Document doc = new Document(dataDir + "Rendering.docx");
-
-//配置字体设置
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-//将字体设置应用到文档
-doc.FontSettings = fontSettings;
-```
-
-## 步骤 3：保存渲染的文档
-最后，我们将保存渲染的文档，它将遵循定义的字体覆盖设置。
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### 使用 Aspose.Words for .NET 启用禁用字体替换的示例源代码 
-
-```csharp
-
 //文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+代替`"YOUR DOCUMENT DIRECTORY"`替换为文档目录的实际路径。此代码将文档加载到内存中，以便您可以对其进行操作。
+
+## 步骤 3：配置字体设置
+
+现在，让我们创建一个`FontSettings`对象来管理字体替换设置：
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## 步骤 4：设置默认字体替换
+
+将默认字体替换设置为您选择的字体。如果原始字体不可用，则将使用此字体：
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+在这个例子中，我们使用 Arial 作为默认字体。
+
+## 步骤 5：禁用字体信息替换
+
+要禁用字体信息替换（阻止系统用可用字体替换丢失的字体），请使用以下代码：
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## 步骤 6：将字体设置应用于文档
+
+现在，将这些设置应用到您的文档：
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## 步骤 7：保存文档
+
+最后，保存修改后的文档。您可以将其保存为任何您喜欢的格式。在本教程中，我们将其保存为 PDF：
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## 结论
-在本教程中，我们了解了如何在使用 Aspose.Words for .NET 渲染 Word 文档时启用或禁用字体替换。通过控制字体替换，您可以影响渲染文档中缺失字体的处理方式。请随时使用此功能自定义 Word 文档中的字体管理。
 
-### 常见问题解答
+就这样！按照这些步骤，您可以使用 Aspose.Words for .NET 轻松控制 Word 文档中的字体替换。这样可以确保您的文档无论在何处查看，都能保持其预期的外观和感觉。
 
-#### 问：如何使用 Aspose.Words 在 Word 文档中启用字体替换？
+## 常见问题解答
 
-答：要使用 Aspose.Words 在 Word 文档中启用字体替换，您可以使用 API 指定在所需字体不可用时使用的替换字体。这将确保一致的文本可视化，即使没有原始字体。
+### 我可以使用 Arial 以外的字体进行替代吗？
 
-#### 问：是否可以使用 Aspose.Words 禁用 Word 文档中的字体替换？
+当然可以！您可以通过更改字体名称来指定系统上可用的任何字体`DefaultFontName`财产。
 
-答：是的，使用 Aspose.Words 您可以在 Word 文档中禁用字体替换。通过使用 API，您可以阻止 Word 用其他字体替换所需字体，从而保持文本的原始外观。
+### 如果指定的默认字体不可用会发生什么情况？
 
-#### 问：如果在 Word 文档中替换时缺少所需字体，会发生什么情况？
+如果默认字体不可用，Aspose.Words 将使用系统回退机制来寻找合适的替代字体。
 
-答：当 Word 文档在替换过程中缺少所需字体时，Aspose.Words 可以检测到此问题并为您提供修复选项。您可以选择用替代字体替换缺失的字体，或者在文档中包含缺失的字体，以确保正确查看。
+### 禁用字体替换后我可以再次启用它吗？
 
-#### 问：使用 Aspose.Words 替换 Word 文档时如何处理缺失的字体？
+是的，你可以切换`Enabled`的財產`FontInfoSubstitution`返回`true`如果您想再次启用字体替换。
 
-答：要处理使用 Aspose.Words 替换 Word 文档时丢失的字体，您可以使用 API 检测丢失的字体并提供解决方案。您可以根据需要选择用其他字体替换丢失的字体或在文档中包含丢失的字体。
+### 有没有办法检查哪些字体被替换了？
 
-#### 问：控制 Word 文档中的字体替换重要吗？
+是的，Aspose.Words 提供了记录和跟踪字体替换的方法，让您可以看到哪些字体被替换了。
 
-答：是的，控制 Word 文档中的字体替换对于保持文本的视觉完整性非常重要。通过使用 Aspose.Words 启用或禁用字体替换，您可以确保使用所需的字体并避免出现字体缺失或替换的问题。
+### 除了 DOCX 之外，我可以将此方法用于其他文档格式吗？
+
+当然！Aspose.Words 支持多种格式，您可以将这些字体设置应用于任何支持的格式。

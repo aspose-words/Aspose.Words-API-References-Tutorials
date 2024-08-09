@@ -94,4 +94,4 @@ Aspose.Words for .NET을 사용하면 프로그래밍 방식으로 Word 문서�
  에서 지원을 받으실 수 있습니다.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).
 
 ### 상용 프로젝트에서 Aspose.Words for .NET을 사용할 수 있나요?
- 예, 하지만 다음에서 라이센스를 구매해야 합니다.[구매 링크](https://purchase.aspose.com/buy).
+ 예, 하지만 다음에서 라이센스를 구매해야 합니다.[구매링크](https://purchase.aspose.com/buy).

@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Steg 1: Ladda källdokumentet
 
-Först måste du ladda källdokumentet från vilket du vill ta bort sidhuvuden och sidfötter. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog där källdokumentet finns.
+Först måste du ladda källdokumentet från vilket du vill ta bort sidhuvuden och sidfötter. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog där källdokumentet finns.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -8,7 +8,7 @@ weight: 10
 url: /it/python-net/document-options-and-settings/join-append-documents/
 ---
 
-## introduzione
+## Introduzione
 
 Aspose.Words for Python è una libreria ricca di funzionalità che consente agli sviluppatori di creare, modificare e manipolare documenti Word a livello di codice. Offre un'ampia gamma di funzionalità, inclusa la possibilità di unire e aggiungere documenti senza sforzo.
 

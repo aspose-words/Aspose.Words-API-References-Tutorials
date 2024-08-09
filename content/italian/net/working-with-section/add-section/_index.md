@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-section/add-section/
 ---
 
-## introduzione
+## Introduzione
 
 Ciao, colleghi sviluppatori! 👋 Ti è mai capitato di dover creare un documento Word che deve essere organizzato in sezioni distinte? Che tu stia lavorando su un rapporto complesso, un lungo romanzo o un manuale strutturato, l'aggiunta di sezioni può rendere il tuo documento molto più gestibile e professionale. In questo tutorial, approfondiremo come aggiungere sezioni a un documento Word utilizzando Aspose.Words per .NET. Questa libreria è un potente strumento per la manipolazione dei documenti e offre un modo semplice per lavorare con i file Word a livello di codice. Quindi, allacciate le cinture e iniziamo questo viaggio per padroneggiare le sezioni dei documenti!
 
@@ -83,7 +83,7 @@ Una volta aggiunta una nuova sezione, possiamo riempirla di contenuti proprio co
 
 ### Utilizzo di DocumentBuilder per la nuova sezione
 
-Per aggiungere contenuto alla nuova sezione, dovrai impostare il file`DocumentBuilder` cursore nella nuova sezione:
+ Per aggiungere contenuto alla nuova sezione, dovrai impostare il file`DocumentBuilder` cursore nella nuova sezione:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ No, le sezioni non possono essere nidificate l'una nell'altra. Tuttavia, puoi av
 
 ### Dove posso trovare più risorse su Aspose.Words?
 
- Per ulteriori informazioni, è possibile visitare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o il[Forum di assistenza](https://forum.aspose.com/c/words/8) per aiuto e discussioni.
+ Per ulteriori informazioni, è possibile visitare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o il[forum di supporto](https://forum.aspose.com/c/words/8) per aiuto e discussioni.

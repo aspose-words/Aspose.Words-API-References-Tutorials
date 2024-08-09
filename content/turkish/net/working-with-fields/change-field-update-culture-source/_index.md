@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'te alan güncelleme kültürü kaynağını başarıyla değiştirdiniz. Bu adımları takip ederek Word belgelerinizin tarih ve diğer alan değerlerinin belirtilen kültür ayarlarına göre görüntülenmesini sağlayabilirsiniz. Bu, özellikle uluslararası bir izleyici kitlesine yönelik belgeler oluştururken yararlı olabilir.
+Ve işte karşınızda! Aspose.Words for .NET'te alan güncelleme kültürü kaynağını başarıyla değiştirdiniz. Bu adımları takip ederek Word belgelerinizin tarih ve diğer alan değerlerinin belirtilen kültür ayarlarına göre görüntülenmesini sağlayabilirsiniz. Bu, özellikle uluslararası bir izleyici kitlesine yönelik belgeler oluştururken yararlı olabilir.
 
 ## SSS'ler
 
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 ###  Ayarlamazsam ne olur?`FieldUpdateCultureSource` property?
 Bu özellik ayarlanmazsa alanlar güncellenirken belgenin varsayılan kültür ayarları kullanılacaktır.
 
-### Alanları alan kodu yerine belgenin kültürüne göre güncellemek mümkün mü?
+### Alanları alan kodu yerine belgenin kültürüne göre güncellemek mümkün müdür?
  Evet, ayarlayabilirsiniz`FieldUpdateCultureSource` ile`FieldUpdateCultureSource.Document` Belgenin kültür ayarlarını kullanmak için.
 
 ### Tarihleri farklı bir düzende nasıl biçimlendiririm?

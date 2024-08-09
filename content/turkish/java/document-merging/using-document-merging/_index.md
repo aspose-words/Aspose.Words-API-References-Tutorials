@@ -2,7 +2,7 @@
 title: Belge Birleştirmeyi Kullanma
 linktitle: Belge Birleştirmeyi Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak Word belgelerini sorunsuz bir şekilde birleştirmeyi öğrenin. Yalnızca birkaç adımda çakışmaları verimli bir şekilde birleştirin, biçimlendirin ve yönetin. Şimdi başla!
+description: Aspose.Words for Java'yı kullanarak Word belgelerini sorunsuz bir şekilde birleştirmeyi öğrenin. Yalnızca birkaç adımda çakışmaları verimli bir şekilde birleştirin, biçimlendirin ve yönetin. Şimdi başlayın!
 type: docs
 weight: 10
 url: /tr/java/document-merging/using-document-merging/

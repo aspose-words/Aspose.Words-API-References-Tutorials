@@ -101,7 +101,7 @@ builder.Write(" Text immediately after the field.");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書の差し込みフィールドに移動するのは、簡単な手順に分解すれば、とても簡単です。このガイドに従うことで、Word 文書を簡単にナビゲートして操作でき、文書の自動化タスクが簡単になります。次に差し込みフィールドの迷路に迷い込んだときには、このマップが役立ちます。
+これで完了です。Aspose.Words for .NET を使用して Word 文書の差し込みフィールドに移動するのは、簡単な手順に分解すれば非常に簡単です。このガイドに従うことで、Word 文書を簡単にナビゲートして操作でき、文書の自動化タスクが簡単になります。次に差し込みフィールドの迷路に迷い込んだときには、このマップが役立ちます。
 
 ## よくある質問
 
@@ -112,7 +112,7 @@ Aspose.Words for .NET は、開発者が .NET フレームワークを使用し�
  Aspose.Words for .NETは以下からダウンロードしてインストールできます。[ここ](https://releases.aspose.com/words/net/)ウェブサイトに記載されているインストール手順に従ってください。
 
 ### Aspose.Words for .NET を .NET Core で使用できますか?
-はい、Aspose.Words for .NETは.NET Coreと互換性があります。詳細については、[ドキュメンテーション](https://reference.aspose.com/words/net/).
+はい、Aspose.Words for .NETは.NET Coreと互換性があります。詳細については、[ドキュメント](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words の一時ライセンスを取得するにはどうすればよいですか?
 一時ライセンスは以下から取得できます。[このリンク](https://purchase.aspose.com/temporary-license/).

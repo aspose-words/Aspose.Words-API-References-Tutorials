@@ -15,7 +15,7 @@ url: /ko/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 
 시작하기 전에 필요한 몇 가지 사항이 있습니다.
 
-1. .NET용 Aspose.Words: Aspose.Words 라이브러리가 있는지 확인하세요. 아직 받지 못하셨다면, 다음과 같이 하세요.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1. .NET용 Aspose.Words: Aspose.Words 라이브러리가 있는지 확인하세요. 아직 받지 못하셨다면, 다음과 같이 하세요.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 선호하는 IDE를 사용하여 개발 환경을 설정합니다.
 3.  라이센스: Aspose.Words는 무료 평가판을 제공하지만[임시 면허증](https://purchase.aspose.com/temporary-license/) 제한 없이 전체 기능을 사용할 수 있습니다.
 

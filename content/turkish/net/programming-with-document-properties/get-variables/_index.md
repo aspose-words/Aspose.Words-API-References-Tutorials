@@ -55,7 +55,7 @@ Visual Studio'da yeni bir proje oluşturarak işe başlayalım.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  Oluşturmak`Document` nesneyi seçin ve belgeyi yükleyin:
+2.  Bir oluştur`Document` nesneyi seçin ve belgeyi yükleyin:
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
     ```
@@ -98,7 +98,7 @@ Bu adımı kitabı karıştırmak ve tüm önemli notları not etmek olarak dü�
 
 ## Çözüm
 
-İşte buyur! Bir Word belgesini yüklemek ve değişkenlerini çıkarmak için Aspose.Words for .NET'i başarıyla kullandınız. Bu adımları takip ederek .NET uygulamalarınızda Word belgelerini kolaylıkla yönetebilirsiniz. Başka neler başarabileceğinizi görmek için kitaplığın özelliklerini denemeye ve keşfetmeye devam edin.
+Ve işte karşınızda! Bir Word belgesini yüklemek ve değişkenlerini çıkarmak için Aspose.Words for .NET'i başarıyla kullandınız. Bu adımları takip ederek .NET uygulamalarınızda Word belgelerini kolaylıkla yönetebilirsiniz. Başka neler başarabileceğinizi görmek için kitaplığın özelliklerini denemeye ve keşfetmeye devam edin.
 
 ## SSS'ler
 
@@ -115,4 +115,4 @@ Kesinlikle! Aspose.Words, DOC, DOCX, ODT, RTF ve daha fazlası gibi çeşitli fo
 Evet, Aspose.Words'ü web uygulamalarına, masaüstü uygulamalarına ve daha fazlasına entegre edebilirsiniz.
 
 ### Daha fazla örnek ve belgeyi nerede bulabilirim?
- Kontrol et[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) Daha fazla örnek ve ayrıntılı kılavuz için.
+ Şuna göz atın:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) Daha fazla örnek ve ayrıntılı kılavuz için.

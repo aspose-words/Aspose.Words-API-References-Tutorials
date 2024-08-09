@@ -9,7 +9,7 @@ url: /sv/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 ## Introduktion
 
-Har du någonsin undrat hur man hämtar den föredragna breddtypen av tabellceller i dina Word-dokument med Aspose.Words för .NET? Tja, du är på rätt plats! I den här handledningen kommer vi att bryta ner processen steg-för-steg, vilket gör det så enkelt som en plätt. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här guiden är användbar och engagerande. Så låt oss dyka in och avslöja hemligheterna bakom att hantera tabellcellbredder i Word-dokument.
+Har du någonsin undrat hur man hämtar den föredragna breddtypen av tabellceller i dina Word-dokument med Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här handledningen kommer vi att bryta ner processen steg-för-steg, vilket gör det så enkelt som en plätt. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här guiden är användbar och engagerande. Så låt oss dyka in och avslöja hemligheterna bakom att hantera tabellcellbredder i Word-dokument.
 
 ## Förutsättningar
 
@@ -39,7 +39,7 @@ Innan vi manipulerar vårt dokument måste vi ange katalogen där det finns. Det
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog. Detta talar om för vårt program var vi kan hitta filen vi vill arbeta med.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog. Detta talar om för vårt program var vi kan hitta filen vi vill arbeta med.
 
 ## Steg 2: Ladda dokumentet
 

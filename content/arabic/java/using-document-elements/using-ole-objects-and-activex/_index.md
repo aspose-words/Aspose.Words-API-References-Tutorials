@@ -2,7 +2,7 @@
 title: استخدام كائنات OLE وعناصر تحكم ActiveX في Aspose.Words لـ Java
 linktitle: استخدام كائنات OLE وعناصر تحكم ActiveX
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعلم كيفية استخدام كائنات OLE وعناصر تحكم ActiveX في Aspose.Words لـ Java. أنشئ مستندات تفاعلية بسهولة. نبدأ الآن!
+description: تعلم كيفية استخدام كائنات OLE وعناصر تحكم ActiveX في Aspose.Words لـ Java. أنشئ مستندات تفاعلية بسهولة. ابدأ الآن!
 type: docs
 weight: 21
 url: /ar/java/using-document-elements/using-ole-objects-and-activex/

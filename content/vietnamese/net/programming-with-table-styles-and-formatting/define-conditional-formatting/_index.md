@@ -15,7 +15,7 @@ url: /vi/net/programming-with-table-styles-and-formatting/define-conditional-for
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
-1. Aspose.Words for .NET: Bạn cần thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Bạn cần thư viện Aspose.Words for .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển phù hợp như Visual Studio.
 3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ rất hữu ích.
 4. Tài liệu Word: Tài liệu Word mà bạn muốn áp dụng định dạng có điều kiện.
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã xác định thành công định dạng có điều kiện trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng đánh dấu dữ liệu quan trọng trong bảng của mình, làm cho tài liệu của bạn có nhiều thông tin hơn và hấp dẫn trực quan hơn. Định dạng có điều kiện là một công cụ mạnh mẽ và việc thành thạo nó có thể nâng cao đáng kể khả năng xử lý tài liệu của bạn.
+Và bạn có nó! Bạn đã xác định thành công định dạng có điều kiện trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng đánh dấu dữ liệu quan trọng trong bảng của mình, làm cho tài liệu của bạn có nhiều thông tin hơn và hấp dẫn trực quan hơn. Định dạng có điều kiện là một công cụ mạnh mẽ và việc thành thạo nó có thể nâng cao đáng kể khả năng xử lý tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 

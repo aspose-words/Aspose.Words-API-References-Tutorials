@@ -9,7 +9,7 @@ url: /id/net/programming-with-tables/auto-fit-to-page-width/
 ---
 ## Perkenalan
 
-Pernah merasa frustrasi karena tabel di dokumen Word tidak pas di halaman? Anda mengubah margin, mengubah ukuran kolom, dan itu masih terlihat aneh. Jika Anda menggunakan Aspose.Words untuk .NET, ada solusi mudah untuk masalah ini—memasang tabel secara otomatis ke jendela. Fitur bagus ini menyesuaikan lebar tabel sehingga sejajar sempurna dengan lebar halaman, membuat dokumen Anda terlihat rapi dan profesional. Dalam panduan ini, kami akan memandu Anda melalui langkah-langkah untuk mencapai hal ini dengan Aspose.Words untuk .NET, memastikan meja Anda selalu pas.
+Pernah merasa frustrasi karena tabel di dokumen Word tidak pas di halaman? Anda mengubah margin, mengubah ukuran kolom, dan itu masih terlihat aneh. Jika Anda menggunakan Aspose.Words untuk .NET, ada solusi cerdas untuk masalah ini—memasang tabel secara otomatis ke jendela. Fitur bagus ini menyesuaikan lebar tabel sehingga sejajar sempurna dengan lebar halaman, membuat dokumen Anda terlihat rapi dan profesional. Dalam panduan ini, kami akan memandu Anda melalui langkah-langkah untuk mencapai hal ini dengan Aspose.Words untuk .NET, memastikan meja Anda selalu pas.
 
 ## Prasyarat
 
@@ -23,7 +23,7 @@ Setelah prasyarat ini diselesaikan, mari kita ke bagian yang menarik—coding!
 
 ## Impor Namespace
 
-Untuk mulai bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan. Ini memberitahu program Anda di mana menemukan kelas dan metode yang akan Anda gunakan.
+Untuk mulai bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan. Ini memberi tahu program Anda di mana menemukan kelas dan metode yang akan Anda gunakan.
 
 Inilah cara Anda mengimpor namespace Aspose.Words:
 
@@ -79,7 +79,7 @@ Dengan tabel yang dipasang secara otomatis, langkah terakhir adalah menyimpan pe
 doc.Save(dataDir + "WorkingWithTables.AutoFitTableToWindow.docx");
 ```
 
-Ini akan menyimpan dokumen Anda yang dimodifikasi dengan tabel yang dipasang otomatis ke file baru. Anda sekarang dapat membuka dokumen ini di Word, dan tabel akan pas dengan lebar halaman.
+Ini akan menyimpan dokumen Anda yang telah dimodifikasi dengan tabel yang dipasang otomatis ke file baru. Anda sekarang dapat membuka dokumen ini di Word, dan tabel akan pas dengan lebar halaman.
 
 ## Kesimpulan
 

@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- यहाँ, हम एक नया निर्माण करते हैं`PdfSaveOptions` ऑब्जेक्ट और इसे सेट करें`EncryptionDetails` । पासवर्ड`"Aspose"` पीडीएफ को एन्क्रिप्ट करने के लिए उपयोग किया जाता है।
+ यहाँ, हम एक नया निर्माण करते हैं`PdfSaveOptions` ऑब्जेक्ट और इसे सेट करें`EncryptionDetails` . पासवर्ड`"Aspose"` पीडीएफ को एन्क्रिप्ट करने के लिए उपयोग किया जाता है।
 
 ## चरण 4: एन्क्रिप्टेड पीडीएफ को सहेजना
 

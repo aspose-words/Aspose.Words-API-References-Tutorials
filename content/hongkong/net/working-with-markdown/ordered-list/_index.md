@@ -15,7 +15,7 @@ url: /zh-hant/net/working-with-markdown/ordered-list/
 
 在我們深入研究程式碼之前，您需要一些東西：
 
-1.  Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET。如果沒有的話可以下載[這裡](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET。如果沒有的話可以下載[這裡](https://releases.aspose.com/words/net/).
 2. 開發環境：Visual Studio 或任何其他 .NET 相容 IDE。
 3. C# 基礎知識：您應該熟悉 C# 基礎知識，以便輕鬆掌握。
 

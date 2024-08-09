@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Βήμα 4: Δημιουργία Επαναλαμβανόμενης Ενότητας
 
- Δημιουργώ ένα`StructuredDocumentTag` (SDT) για το επαναλαμβανόμενο τμήμα και αντιστοιχίστε το στα δεδομένα XML:
+ Δημιουργία α`StructuredDocumentTag` (SDT) για το επαναλαμβανόμενο τμήμα και αντιστοιχίστε το στα δεδομένα XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
@@ -106,7 +106,7 @@ row.AppendChild(authorSdt);
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Ακολουθώντας αυτά τα βήματα, δημιουργήσατε με επιτυχία έναν πίνακα με μια επαναλαμβανόμενη ενότητα αντιστοιχισμένη σε ένα προσαρμοσμένο τμήμα XML χρησιμοποιώντας το Aspose.Words για .NET. Αυτό επιτρέπει τη δυναμική παραγωγή περιεχομένου που βασίζεται σε δομημένα δεδομένα, καθιστώντας τη δημιουργία εγγράφων πιο ευέλικτη και ισχυρή.
 

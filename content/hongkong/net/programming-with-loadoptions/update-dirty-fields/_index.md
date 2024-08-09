@@ -16,7 +16,7 @@ url: /zh-hant/net/programming-with-loadoptions/update-dirty-fields/
 
 在我們深入討論細節之前，讓我們確保您擁有所需的一切：
 
-1.  Aspose.Words for .NET：確保您擁有最新版本。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：確保您擁有最新版本。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. .NET Framework：與 Aspose.Words 相容的任何版本。
 3. C# 基礎：熟悉 C# 程式設計將會很有幫助。
 4. 範例 Word 文件：包含需要更新的髒欄位的文件。
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## 結論
 
-現在你就擁有了！您剛剛使用 Aspose.Words for .NET 自動化了更新 Word 文件中髒欄位的過程。不再需要手動更新，不再令人頭痛。透過這些簡單的步驟，您可以節省時間並確保文件的準確性。準備好嘗試了嗎？
+現在你就得到它了！您剛剛使用 Aspose.Words for .NET 自動化了更新 Word 文件中髒欄位的過程。不再需要手動更新，不再令人頭痛。透過這些簡單的步驟，您可以節省時間並確保文件的準確性。準備好嘗試了嗎？
 
 ## 常見問題解答
 

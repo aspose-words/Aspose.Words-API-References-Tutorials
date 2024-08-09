@@ -15,7 +15,7 @@ Accueillir! Si vous plongez dans le monde d'Aspose.Words pour .NET, vous allez v
 
 Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
--  Aspose.Words for .NET : si vous ne l'avez pas encore installé,[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET : si vous ne l'avez pas encore installé,[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : Visual Studio ou tout autre IDE C#.
 -  Un document Word : nous utiliserons un document nommé`Rendering.docx`. Placez-le dans le répertoire de votre projet.
 
@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous avez ajouté avec succès un préfixe de nom de classe CSS à votre sortie HTML à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité simple mais puissante peut vous aider à conserver des styles propres et sans conflit dans vos documents HTML.
+Et voilà ! En suivant ces étapes, vous avez ajouté avec succès un préfixe de nom de classe CSS à votre sortie HTML à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité simple mais puissante peut vous aider à conserver des styles propres et sans conflit dans vos documents HTML.
 
 ## FAQ
 
@@ -120,7 +120,7 @@ Et voila! En suivant ces étapes, vous avez ajouté avec succès un préfixe de 
  Le`CssClassNamePrefix`la propriété fonctionne avec du CSS externe. Pour le CSS en ligne, vous aurez besoin d'une approche différente.
 
 ### Comment puis-je inclure d’autres options de sauvegarde HTML ?
- Vous pouvez configurer diverses propriétés de`HtmlSaveOptions` pour personnaliser votre sortie HTML. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Vous pouvez configurer diverses propriétés de`HtmlSaveOptions` pour personnaliser votre sortie HTML. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Est-il possible de sauvegarder le HTML dans un flux ?
  Absolument! Vous pouvez enregistrer le document dans un flux en transmettant l'objet flux au`Save` méthode.

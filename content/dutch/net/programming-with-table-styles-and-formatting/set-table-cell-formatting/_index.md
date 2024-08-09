@@ -15,7 +15,7 @@ Heeft u zich ooit afgevraagd hoe u uw Word-documenten professioneler en visueel 
 
 Voordat we beginnen, zorg ervoor dat je het volgende hebt:
 
-1.  Aspose.Words voor .NET: Je kunt het downloaden van de[Download link](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Je kunt het downloaden van de[Downloadlink](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere IDE die .NET-ontwikkeling ondersteunt.
 3. Basiskennis van C#: Inzicht in de basisprogrammeerconcepten en syntaxis in C#.
 4.  Uw documentenmap: Zorg ervoor dat u een aangewezen map heeft om uw documenten op te slaan. We zullen dit noemen als`YOUR DOCUMENT DIRECTORY`.

@@ -81,7 +81,7 @@ CompareOptions options = new CompareOptions
 
 ## Langkah 6: Bandingkan Dokumen
 
-Dan sekarang, saat yang telah kita tunggu-tunggu – membandingkan dokumen-dokumennya! Ini adalah dimana keajaiban terjadi. Aspose.Words akan membandingkan dokumen dan menyoroti perbedaannya.
+Dan sekarang, saat yang telah kita tunggu-tunggu – membandingkan dokumen-dokumennya! Di sinilah keajaiban terjadi. Aspose.Words akan membandingkan dokumen dan menyoroti perbedaannya.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);

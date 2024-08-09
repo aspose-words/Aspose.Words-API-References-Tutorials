@@ -9,7 +9,7 @@ url: /id/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## Perkenalan
 
-Hai, rekan pembuat kode! Pernahkah Anda menemukan diri Anda terjerat dalam jaringan manipulasi dokumen Word, mencoba mencari cara untuk berpindah ke ujung bookmark dengan tepat dan menambahkan konten tepat setelahnya? Baiklah, hari ini adalah hari keberuntungan kamu! Kami mendalami Aspose.Words untuk .NET, pustaka canggih yang memungkinkan Anda menangani dokumen Word seperti seorang profesional. Tutorial ini akan memandu Anda melalui langkah-langkah untuk berpindah ke akhir bookmark dan menyisipkan beberapa teks di sana. Ayo tayangkan pertunjukan ini!
+Hai, rekan pembuat kode! Pernahkah Anda menemukan diri Anda terjerat dalam jaringan manipulasi dokumen Word, mencoba mencari cara untuk berpindah ke ujung bookmark dengan tepat dan menambahkan konten tepat setelahnya? Nah, hari ini adalah hari keberuntunganmu! Kami mendalami Aspose.Words untuk .NET, pustaka hebat yang memungkinkan Anda menangani dokumen Word seperti seorang profesional. Tutorial ini akan memandu Anda melalui langkah-langkah untuk berpindah ke akhir bookmark dan menyisipkan beberapa teks di sana. Ayo tayangkan pertunjukan ini!
 
 ## Prasyarat
 
@@ -120,7 +120,7 @@ Terakhir, jangan lupa untuk menyimpan perubahan Anda:
 doc.Save(dataDir + "UpdatedBookmarks.docx");
 ```
 
- Anda sekarang dapat membuka dokumen yang diperbarui dan melihat teks "Ini adalah bookmark." tepat setelah`MyBookmark1`.
+ Anda sekarang dapat membuka dokumen yang diperbarui dan melihat teks "Ini adalah bookmark." tepat setelahnya`MyBookmark1`.
 
 ## Kesimpulan
 
@@ -130,7 +130,7 @@ Itu dia! Anda baru saja mempelajari cara berpindah ke akhir bookmark di dokumen 
 
 ### 1. Bisakah saya berpindah ke awal bookmark dan bukan ke akhir?
 
- Sangat! Atur saja`isBookmarkStart` parameter ke`true`Dan`isBookmarkEnd` ke`false` dalam`MoveToBookmark` metode.
+ Sangat! Atur saja`isBookmarkStart` parameter ke`true`Dan`isBookmarkEnd` ke`false` di`MoveToBookmark` metode.
 
 ### 2. Bagaimana jika nama bookmark saya salah?
 
@@ -138,7 +138,7 @@ Itu dia! Anda baru saja mempelajari cara berpindah ke akhir bookmark di dokumen 
 
 ### 3. Bisakah saya menyisipkan jenis konten lain di bagian akhir bookmark?
 
- Ya, DocumentBuilder memungkinkan Anda menyisipkan berbagai tipe konten seperti tabel, gambar, dan lainnya. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+ Ya, DocumentBuilder memungkinkan Anda menyisipkan berbagai tipe konten seperti tabel, gambar, dan lainnya. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
 ### 4. Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words?
 

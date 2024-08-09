@@ -18,7 +18,7 @@ Než se ponoříme do podrobností o generování vlastních štítků s čárov
 
 1. Vývojové prostředí Java: Ujistěte se, že máte v systému nainstalovanou Javu a integrované vývojové prostředí (IDE).
 
-2.  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z[tady](https://releases.aspose.com/words/java/).
+2.  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z[zde](https://releases.aspose.com/words/java/).
 
 3. Základní znalost jazyka Java: Znalost programování v jazyce Java bude užitečná, protože budeme psát kód Java pro vytváření vlastních štítků s čárovými kódy.
 

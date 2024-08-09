@@ -15,7 +15,7 @@ Czy zastanawiałeś się kiedyś, jak zachować idealne proporcje obrazów i ksz
 
 Zanim zagłębimy się w kod, przyjrzyjmy się, czego potrzebujesz, aby zacząć:
 
-- Biblioteka Aspose.Words dla .NET: Musisz mieć zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+- Biblioteka Aspose.Words dla .NET: Musisz mieć zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne .NET. Visual Studio to popularny wybór.
 - Podstawowa znajomość języka C#: Pomocna będzie pewna znajomość programowania w języku C#.
 

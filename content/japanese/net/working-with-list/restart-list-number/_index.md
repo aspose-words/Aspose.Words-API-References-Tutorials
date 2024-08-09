@@ -2,18 +2,38 @@
 title: 再開リスト番号
 linktitle: 再開リスト番号
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内のリストの番号をリセットする方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書のリスト番号を再開する方法を学びます。この 2,000 語の詳細なガイドには、セットアップから高度なカスタマイズまで、知っておく必要のあるすべての内容が記載されています。
 type: docs
 weight: 10
 url: /ja/net/working-with-list/restart-list-number/
 ---
-このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のリストの番号をリセットする方法を説明します。提供されている C# ソース コードについて説明し、独自のプロジェクトに実装する方法を示します。
+## 導入
 
-始めるには、開発環境にAspose.Words for .NETがインストールされ、構成されていることを確認してください。まだインストールしていない場合は、次の場所からライブラリをダウンロードしてインストールしてください。[Aspose.Releases]https://releases.aspose.com/words/net/.
+Aspose.Words for .NET を使用して Word 文書のリスト操作の技術を習得したいとお考えですか? まさに、ここが最適な場所です! このチュートリアルでは、リスト番号の再開について詳しく説明していきます。これは、文書の自動化スキルを次のレベルに引き上げる便利な機能です。シートベルトを締めて、始めましょう!
 
-## ステップ1: ドキュメントとドキュメントジェネレーターの作成
+## 前提条件
 
-まず、新しいドキュメントと関連するドキュメント ジェネレーターを作成します。
+コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされている必要があります。まだインストールしていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio などの適切な開発環境があることを確認します。
+3. C# の基礎知識: C# の基礎を理解していると、チュートリアルを理解するのに役立ちます。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートしましょう。これらは Aspose.Words 機能にアクセスするために重要です。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+それでは、プロセスをわかりやすい手順に分解してみましょう。リストの作成から番号の付け直しまで、すべてをカバーします。
+
+## ステップ1: ドキュメントとビルダーを設定する
+
+リストの操作を開始する前に、ドキュメントと DocumentBuilder が必要です。DocumentBuilder は、ドキュメントにコンテンツを追加するためのツールです。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,112 +41,85 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ2: 最初のリストの作成とカスタマイズ
+## ステップ2: 最初のリストを作成してカスタマイズする
 
-次に、既存のテンプレートに基づいてリストを作成し、そのレベルをカスタマイズします。
+次に、テンプレートに基づいてリストを作成し、その外観をカスタマイズします。この例では、括弧付きのアラビア数字形式を使用しています。
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
 list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
+
+ここでは、フォントの色を赤に設定し、テキストを右揃えにしています。
 
 ## ステップ3: 最初のリストにアイテムを追加する
 
-ドキュメント ビルダーを使用して、最初のリストに項目を追加し、リスト番号を削除します。
+リストが準備できたら、アイテムを追加します。DocumentBuilderの`ListFormat.List`プロパティは、テキストにリスト形式を適用するのに役立ちます。
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## ステップ4: 2番目のリストの作成とカスタマイズ
+## ステップ4: リストの番号付けを再開する
 
-番号をリセットして最初のリストを再利用するには、元のリスト レイアウトのコピーを作成します。
+リストを再利用して番号付けを再開するには、元のリストのコピーを作成する必要があります。これにより、新しいリストを個別に変更できるようになります。
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-必要に応じて、2 番目のリストに追加の変更を加えることもできます。
+この例では、新しいリストは 10 番から始まります。
 
-## ステップ5: 2番目のリストにアイテムを追加する
+## ステップ5: 新しいリストにアイテムを追加する
 
-ドキュメント ビルダーを再度使用して、2 番目のリストに項目を追加し、リスト番号を削除します。
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## ステップ6: 変更したドキュメントを保存する
-
-最後に、変更したドキュメントを保存します。
+前と同じように、新しいリストに項目を追加します。これにより、リストが指定された番号で再開されます。
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-これで、Aspose.Words for .NET を使用して Word 文書内のリストの番号を正常にリセットできました。
-
-### リスト番号リセットのサンプルソースコード
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-//テンプレートに基づいてリストを作成します。
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-//最初のリストを再利用するには、元のリストの書式のコピーを作成して番号付けを再開する必要があります。
-List list2 = doc.Lists.AddCopy(list1);
-
-//新しい開始番号の設定を含め、新しいリストを任意の方法で変更できます。
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## ステップ6: ドキュメントを保存する
+
+最後に、指定したディレクトリにドキュメントを保存します。
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### よくある質問
+## 結論
 
-#### Q: Aspose.Words でリストの番号付けを再開するにはどうすればよいですか?
+Aspose.Words for .NET を使用して Word 文書のリスト番号を再開するのは簡単で非常に便利です。レポートを生成する場合、構造化された文書を作成する場合、または単にリストをより適切に制御する必要がある場合でも、このテクニックが役立ちます。
 
- A: Aspose.Wordsでリストの番号付けを再開するには、`ListRestartAtNumber`方法の`List`クラス。このメソッドを使用すると、リストを再開する新しいダイヤル値を設定できます。たとえば、次のように使用できます。`list.ListRestartAtNumber(1)`番号を 1 からやり直します。
+## よくある質問
 
-#### Q: Aspose.Words で再開されたリスト番号のプレフィックスとサフィックスをカスタマイズすることは可能ですか?
+### NumberArabicParenthesis 以外のリスト テンプレートを使用できますか?
 
- A: はい、Aspose.Wordsでは、リスト番号の先頭と末尾をカスタマイズできます。`ListLevel`クラスは次のような特性を提供する`ListLevel.NumberPrefix`そして`ListLevel.NumberSuffix`リスト内の各レベルのプレフィックスとサフィックスを指定できます。これらのプロパティを使用して、必要に応じてプレフィックスとサフィックスをカスタマイズできます。
+もちろんです! Aspose.Words には、箇条書き、文字、ローマ数字など、さまざまなリスト テンプレートが用意されています。ニーズに最適なものを選択できます。
 
-#### Q: リストを再開する特定の番号値を指定するにはどうすればよいですか?
+### リストレベルを変更するにはどうすればよいですか?
 
- A: リストを再開する特定の数値を指定するには、`ListRestartAtNumber`メソッドは、希望する値を引数として渡します。例えば、5から番号を振り直すには、次のようにします。`list.ListRestartAtNumber(5)`.
+リストレベルを変更するには、`ListLevels`プロパティ。たとえば、`list1.ListLevels[1]`リストの 2 番目のレベルを参照します。
 
-#### Q: Aspose.Words で複数レベルのリストの番号付けを再開することは可能ですか?
+### 任意の番号から番号付けを再開できますか?
 
- A: はい、Aspose.Wordsは複数のリストレベルの番号付けの再開をサポートしています。`ListRestartAtNumber`メソッドを使用して、リストの各レベルで個別に番号付けを再開できます。たとえば、`list.Levels[0].ListRestartAtNumber(1)`最初のリストレベルを1から再開し、`list.Levels[1].ListRestartAtNumber(1)` 2 番目のレベルのリストを 1 から再開します。
+はい、開始番号を任意の整数値に設定できます。`StartAt`リスト レベルのプロパティ。
 
+### リストのレベルごとに異なる書式を設定することは可能ですか?
+
+確かにそうです。各リスト レベルには、フォント、配置、番号付けスタイルなどの独自の書式設定を設定できます。
+
+### 再開するのではなく、前のリストから番号付けを継続したい場合はどうすればよいですか?
+
+番号付けを続行する場合は、リストのコピーを作成する必要はありません。元のリストに項目を追加し続けるだけです。
 
 

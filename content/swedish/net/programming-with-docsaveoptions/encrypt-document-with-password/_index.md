@@ -19,7 +19,7 @@ Innan vi smutsar ner händerna med lite kod finns det några saker du behöver:
 3. .NET Framework: Se till att du har det installerat.
 4.  Licens: Du kan börja med en[gratis provperiod](https://releases.aspose.com/) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för alla funktioner.
 
-Har du allt? Bra! Låt oss gå vidare till att sätta upp vårt projekt.
+Har du allt? Stor! Låt oss gå vidare till att sätta upp vårt projekt.
 
 ## Importera namnområden
 
@@ -91,7 +91,7 @@ Och där har du det! Du har precis lärt dig hur man krypterar ett dokument med 
 ## FAQ's
 
 ### Kan jag använda en annan typ av kryptering?
- Ja, Aspose.Words för .NET stöder olika krypteringsmetoder. Kolla[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Ja, Aspose.Words för .NET stöder olika krypteringsmetoder. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Vad händer om jag glömmer mitt dokumentlösenord?
 Tyvärr, om du glömmer lösenordet kommer du inte att kunna komma åt dokumentet. Se till att hålla dina lösenord säkra!

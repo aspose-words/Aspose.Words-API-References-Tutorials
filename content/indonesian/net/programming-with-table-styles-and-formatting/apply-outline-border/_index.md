@@ -86,7 +86,7 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
- Setiap jenis batas (kiri, kanan, atas, bawah) diatur satu per satu. Kita gunakan`LineStyle.Single` untuk garis padat,`1.5` untuk lebar garis, dan`Color.Green` untuk warna perbatasan.
+ Setiap jenis batas (kiri, kanan, atas, bawah) diatur satu per satu. Kami menggunakan`LineStyle.Single` untuk garis padat,`1.5` untuk lebar garis, dan`Color.Green` untuk warna perbatasan.
 
 ## Langkah 6: Terapkan Shading Sel
 

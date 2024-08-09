@@ -98,4 +98,4 @@ A forrásdokumentum fejlécei és láblécei folytatódhatnak a céldokumentumba
 Igen, az Aspose.Words for .NET lehetővé teszi a fejlécek és láblécek eltávolítását, miközben megőrzi a dokumentum többi formázását.
 
 ### Hol találok további forrásokat és támogatást az Aspose.Words for .NET-hez?
- Meglátogatni a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes API-referenciákért és példákért.
+ Látogassa meg a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes API-referenciákért és példákért.

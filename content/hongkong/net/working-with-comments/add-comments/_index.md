@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 ## 結論
 
-你有它！您已使用 Aspose.Words for .NET 成功為 Word 文件新增註解。這項強大的功能可以大大增強您的文件審閱過程，使協作和回饋回饋變得更容易。不要忘記探索 Aspose.Words 的其他功能，以進一步簡化您的文件管理任務。
+給你了！您已使用 Aspose.Words for .NET 成功為 Word 文件新增註解。這項強大的功能可以大大增強您的文件審閱過程，使協作和回饋回饋變得更容易。不要忘記探索 Aspose.Words 的其他功能，以進一步簡化您的文件管理任務。
 
 ## 常見問題解答
 

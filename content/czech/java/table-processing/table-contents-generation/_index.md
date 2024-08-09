@@ -10,7 +10,7 @@ url: /cs/java/table-processing/table-contents-generation/
 
 Jste připraveni vydat se na cestu ke zvládnutí generování obsahu (TOC) pomocí Aspose.Words for Java? V tomto komplexním průvodci prozkoumáme umění vytvářet dynamické a vizuálně přitažlivé TOC bez námahy. Budete vybaveni znalostmi a dovednostmi potřebnými k bezproblémové implementaci této funkce do vašich aplikací Java. Takže, pojďme se rovnou ponořit!
 
-## Úvod
+## Zavedení
 
 Obsah (TOC) je nezbytnou součástí každého dobře strukturovaného dokumentu. Poskytuje čtenářům cestovní mapu, která jim umožňuje snadno procházet dlouhými dokumenty. Aspose.Words for Java je výkonné API, které zjednodušuje generování TOC v aplikacích Java. V tomto podrobném průvodci pokryjeme vše, co potřebujete vědět, abyste mohli dynamicky vytvářet obsahy pomocí Aspose.Words for Java.
 
@@ -20,7 +20,7 @@ Než se ponoříme do specifik generování TOC, nastavíme naše prostředí a 
 
 ### Nastavení vašeho prostředí
 
-Chcete-li začít, ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for Java. Můžete si jej stáhnout z webu[tady](https://releases.aspose.com/words/java/).
+Chcete-li začít, ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for Java. Můžete si jej stáhnout z webu[zde](https://releases.aspose.com/words/java/).
 
 ### Vytvoření nového projektu Java
 
@@ -119,7 +119,7 @@ Absolutně! Aspose.Words for Java je všestranný a dokáže zpracovat dokumenty
 
 ### Mohu upravit vzhled svých položek TOC?
 
-Rozhodně! Můžete definovat vlastní styly pro položky obsahu, aby odpovídaly návrhu a formátování vašeho dokumentu.
+Jistě! Můžete definovat vlastní styly pro položky obsahu, aby odpovídaly návrhu a formátování vašeho dokumentu.
 
 ### Podporuje Aspose.Words for Java křížové odkazy v rámci obsahu?
 

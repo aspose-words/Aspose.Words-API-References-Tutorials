@@ -60,7 +60,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-## Шаг 4. Настройте параметры сохранения PDF-файла
+## Шаг 4. Настройте параметры сохранения PDF
 
 Настройте параметры сохранения PDF, включая параметры рендеринга метафайлов. Это гарантирует, что указанное поведение рендеринга будет применено при сохранении документа в формате PDF.
 
@@ -138,7 +138,7 @@ MetafileRenderingOptions — это параметры, определяющие
 
 ### Вопрос 4: Где я могу найти поддержку Aspose.Words?
 
- Посетить[Форум поддержки Aspose.Words](https://forum.aspose.com/c/words/8) для оказания помощи.
+ Посетите[Форум поддержки Aspose.Words](https://forum.aspose.com/c/words/8) за помощь.
 
 ### В5: Можно ли получить временную лицензию на Aspose.Words?
 

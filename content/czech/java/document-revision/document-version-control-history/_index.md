@@ -8,7 +8,7 @@ weight: 13
 url: /cs/java/document-revision/document-version-control-history/
 ---
 
-## Úvod
+## Zavedení
 
 Efektivní kontrola verzí dokumentů zajišťuje, že všechny zúčastněné strany pracují s nejnovějšími a nejpřesnějšími informacemi. Aspose.Words for Java je všestranná knihovna, která umožňuje vývojářům snadno vytvářet, upravovat a spravovat dokumenty. Pojďme se ponořit do procesu implementace správy verzí a historie dokumentů krok za krokem.
 
@@ -94,4 +94,4 @@ Aspose.Words for Java lze samozřejmě snadno integrovat s jinými knihovnami a 
 
 ### Kde najdu další zdroje a dokumentaci?
 
- Máte přístup ke komplexní dokumentaci a dalším zdrojům pro Aspose.Words for Java na[tady](https://reference.aspose.com/words/java/).
+ Máte přístup ke komplexní dokumentaci a dalším zdrojům pro Aspose.Words for Java na[zde](https://reference.aspose.com/words/java/).

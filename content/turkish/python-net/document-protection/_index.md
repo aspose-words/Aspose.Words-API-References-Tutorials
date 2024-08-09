@@ -2,7 +2,7 @@
 title: Belge Koruması
 linktitle: Belge Koruması
 second_title: Aspose.Words Python Doküman Yönetimi API'si
-description: Aspose.Words for Python ile belgelerinizi güvence altına alın! Güçlü belge koruması için parola şifrelemeyi, kullanıcı izinlerini ve dijital imzaları uygulayın.
+description: Belgelerinizi Aspose.Words for Python ile koruyun! Güçlü belge koruması için parola şifrelemeyi, kullanıcı izinlerini ve dijital imzaları uygulayın.
 type: docs
 weight: 14
 url: /tr/python-net/document-protection/

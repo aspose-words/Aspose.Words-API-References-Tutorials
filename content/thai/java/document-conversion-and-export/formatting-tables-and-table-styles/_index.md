@@ -14,7 +14,7 @@ url: /th/java/document-conversion-and-export/formatting-tables-and-table-styles/
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่เราจะเจาะลึกรายละเอียด ตรวจสอบให้แน่ใจว่าคุณได้รวมไลบรารี Aspose.Words สำหรับ Java เข้ากับโปรเจ็กต์ของคุณแล้ว คุณสามารถดาวน์โหลดได้จากเว็บไซต์ Aspose:[ดาวน์โหลด Aspose.Words สำหรับ Java](https://releases.aspose.com/words/java/).
+ก่อนที่เราจะเจาะลึกรายละเอียด ตรวจสอบให้แน่ใจว่าคุณได้รวมไลบรารี Aspose.Words สำหรับ Java ไว้ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดาวน์โหลดได้จากเว็บไซต์ Aspose:[ดาวน์โหลด Aspose.Words สำหรับ Java](https://releases.aspose.com/words/java/).
 
 ## รับระยะห่างระหว่างตารางและข้อความโดยรอบ
 

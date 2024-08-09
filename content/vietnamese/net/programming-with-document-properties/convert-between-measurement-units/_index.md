@@ -82,7 +82,7 @@ Thao tác này sẽ lưu tài liệu của bạn với lề và khoảng cách �
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chuyển đổi và đặt thành công lề cũng như khoảng cách trong tài liệu Word bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng xử lý các chuyển đổi đơn vị khác nhau, giúp quá trình tùy chỉnh tài liệu của bạn trở nên dễ dàng. Hãy tiếp tục thử nghiệm các cài đặt khác nhau và khám phá các chức năng phong phú mà Aspose.Words cung cấp. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã chuyển đổi và đặt thành công lề cũng như khoảng cách trong tài liệu Word bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng xử lý các chuyển đổi đơn vị khác nhau, giúp quá trình tùy chỉnh tài liệu của bạn trở nên dễ dàng. Hãy tiếp tục thử nghiệm các cài đặt khác nhau và khám phá các chức năng phong phú mà Aspose.Words cung cấp. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -93,7 +93,7 @@ Và bạn có nó rồi đấy! Bạn đã chuyển đổi và đặt thành cô
 Mặc dù bạn có thể sử dụng Aspose.Words mà không cần giấy phép nhưng một số tính năng nâng cao có thể bị hạn chế. Có được giấy phép đảm bảo đầy đủ chức năng.
 
 ### Làm cách nào để cài đặt Aspose.Words cho .NET?
- Bạn có thể tải nó xuống từ[trang mạng](https://releases.aspose.com/words/net/) và làm theo hướng dẫn cài đặt.
+ Bạn có thể tải nó xuống từ[trang web](https://releases.aspose.com/words/net/) và làm theo hướng dẫn cài đặt.
 
 ### Tôi có thể đặt các đơn vị khác nhau cho các phần khác nhau của tài liệu không?
  Có, bạn có thể tùy chỉnh lề và các cài đặt khác cho các phần khác nhau bằng cách sử dụng`Section` lớp học.

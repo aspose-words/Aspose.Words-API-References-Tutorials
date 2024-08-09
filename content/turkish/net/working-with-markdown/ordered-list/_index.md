@@ -9,13 +9,13 @@ url: /tr/net/working-with-markdown/ordered-list/
 ---
 ## giriiş
 
-Program aracılığıyla harika Word belgeleri oluşturmak için Aspose.Words for .NET'e dalmaya karar verdiniz. Harika seçim! Bugün, bir Word belgesinde sıralı bir listenin nasıl oluşturulacağını açıklayacağız. Bunu adım adım ilerleyeceğiz, bu nedenle ister kodlamaya yeni başlayan ister deneyimli bir profesyonel olun, bu kılavuzu son derece yararlı bulacaksınız. Başlayalım!
+Program aracılığıyla harika Word belgeleri oluşturmak için Aspose.Words for .NET'e dalmaya karar verdiniz. Harika seçim! Bugün, bir Word belgesinde sıralı bir listenin nasıl oluşturulacağını açıklayacağız. Bunu adım adım ilerleyeceğiz, bu nedenle ister kodlamaya yeni başlayan ister deneyimli bir profesyonel olun, bu kılavuzu son derece yararlı bulacaksınız. Hadi başlayalım!
 
 ## Önkoşullar
 
 Koda dalmadan önce ihtiyacınız olacak birkaç şey var:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Eğer yoksa indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Eğer yoksa indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
 3. Temel C# Bilgisi: Kolayca takip edebileceğiniz C# temelleri konusunda rahat olmalısınız.
 
@@ -49,7 +49,7 @@ Burada yeni bir belgeyi ve DocumentBuilder nesnesini başlatıyoruz. DocumentBui
 builder.ListFormat.ApplyNumberDefault();
 ```
 
-Bu kod satırı listenizin numaralandırmasını ayarlar. Kolay değil mi?
+Bu kod satırı listenizin numaralandırmasını ayarlar. Kolay, değil mi?
 
 ## 3. Adım: Liste Öğelerini Ekleme
 
@@ -64,7 +64,7 @@ Bu satırlarla ilk iki maddeyi listenize eklemiş oluyorsunuz.
 
 ## Adım 4: Listeyi Girintilendirin
 
-Bir öğenin altına alt öğeler eklemek isterseniz ne olur? Hadi bunu yapalım!
+Bir öğenin altına alt öğeler eklemek isterseniz ne olur? Hadi yapalım!
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -82,7 +82,7 @@ Bir Word belgesinde programlı olarak sıralı bir liste oluşturmak ilk başta 
 ## SSS'ler
 
 ### Listenin numaralandırma stilini özelleştirebilir miyim?  
- Evet, numaralandırma stilini kullanarak özelleştirebilirsiniz.`ListFormat` özellikler. Romen rakamları, harfler vb. gibi farklı numaralandırma stillerini ayarlayabilirsiniz.
+ Evet, numaralandırma stilini kullanarak özelleştirebilirsiniz.`ListFormat`özellikler. Romen rakamları, harfler vb. gibi farklı numaralandırma stillerini ayarlayabilirsiniz.
 
 ### Daha fazla girinti düzeyini nasıl eklerim?  
  Şunu kullanabilirsiniz:`ListIndent` Daha derin düzeyde alt listeler oluşturmak için yöntemi birden çok kez kullanın. Her çağrı`ListIndent` bir düzeyde girinti ekler.

@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Paso 2: cargue el documento
 
- Utilizar el`Document` clase para cargar su documento de Word. Esta clase le permite abrir y manipular el documento mediante programación.
+ Utilice el`Document` clase para cargar su documento de Word. Esta clase le permite abrir y manipular el documento mediante programación.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

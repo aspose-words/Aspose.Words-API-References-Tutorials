@@ -66,7 +66,7 @@ A kép beillesztése után rögzíthetjük a képarányát. A képarány rögzí
 shape.AspectRatioLocked = true;
 ```
 
- Beállítás`AspectRatioLocked` nak nek`true` biztosítja, hogy a kép megőrizze eredeti képarányát.
+ Beállítás`AspectRatioLocked` hogy`true` biztosítja, hogy a kép megőrizze eredeti képarányát.
 
 ## 5. lépés: Mentse el a dokumentumot
 
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan állíthatja be a Word-dokumentumok alakzatainak képarányát az Aspose.Words for .NET segítségével. Ha követi ezeket a lépéseket, biztosíthatja, hogy képei és formái megőrizzék arányaikat, így a dokumentumok professzionális megjelenésűek és csiszoltak. Nyugodtan kísérletezzen különböző képekkel és alakzatokkal, hogy megtudja, hogyan működik a képarány-rögzítés a különböző forgatókönyvekben.
+Gratulálok! Sikeresen megtanulta, hogyan állíthatja be a Word-dokumentumok alakzatainak képarányát az Aspose.Words for .NET segítségével. Ha követi ezeket a lépéseket, biztosíthatja, hogy képei és formái megőrizzék arányaikat, így a dokumentumok professzionális megjelenésűek és csiszoltak. Nyugodtan kísérletezzen különböző képekkel és alakzatokkal, hogy megtudja, hogyan működik a képarány-rögzítés a különböző forgatókönyvekben.
 
 ## GYIK
 

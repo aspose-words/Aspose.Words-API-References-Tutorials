@@ -60,7 +60,7 @@ Document doc2 = new Document("document2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
- ο`ImportFormatMode.KEEP_SOURCE_FORMATTING` Η επιλογή διασφαλίζει ότι διατηρείται η μορφοποίηση των εγγράφων προέλευσης.
+ Ο`ImportFormatMode.KEEP_SOURCE_FORMATTING` Η επιλογή διασφαλίζει ότι διατηρείται η μορφοποίηση των εγγράφων προέλευσης.
 
 ## Βήμα 5: Αποθήκευση του αποτελέσματος
 
@@ -71,7 +71,7 @@ doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 doc1.save("joined_document.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συγχαρητήρια! Έχετε μάθει με επιτυχία πώς να ενώνετε και να προσαρτάτε έγγραφα χρησιμοποιώντας το Aspose.Words για Java. Αυτή η ευέλικτη βιβλιοθήκη σάς δίνει τη δυνατότητα να χειρίζεστε έγγραφα χωρίς κόπο, καθιστώντας την ένα ανεκτίμητο εργαλείο για προγραμματιστές Java.
 

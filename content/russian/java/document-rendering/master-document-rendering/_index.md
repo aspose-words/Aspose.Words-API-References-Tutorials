@@ -105,7 +105,7 @@ pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "H
 pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
-### Заголовки и колонтитулы
+### Верхние и нижние колонтитулы
 
 Верхние и нижние колонтитулы предоставляют согласованную информацию на страницах документа. Вы можете добавлять различный контент в основные, первые страницы и даже нечетные/четные верхние и нижние колонтитулы.
 

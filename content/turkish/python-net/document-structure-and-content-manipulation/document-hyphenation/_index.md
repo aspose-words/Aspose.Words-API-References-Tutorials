@@ -110,7 +110,7 @@ Tirelemeyi ve metin akışını verimli bir şekilde yönetmek, gösterişli ve 
 
 ### Belgemde otomatik tirelemeyi nasıl etkinleştiririm?
 
- Otomatik tirelemeyi etkinleştirmek için`auto_hyphenation` seçeneği`True` Aspose.Words for Python'u kullanıyorum.
+ Otomatik tirelemeyi etkinleştirmek için`auto_hyphenation` seçeneği`True` Python için Aspose.Words'ü kullanıyorum.
 
 ### Bir kelimenin nerede kesileceğini manuel olarak kontrol edebilir miyim?
 

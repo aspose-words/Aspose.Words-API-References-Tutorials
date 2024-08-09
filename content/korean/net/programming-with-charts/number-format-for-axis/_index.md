@@ -15,7 +15,7 @@ url: /ko/net/programming-with-charts/number-format-for-axis/
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오. 간단한 체크리스트는 다음과 같습니다.
 
--  .NET용 Aspose.Words: 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - .NET Framework: 호환되는 .NET Framework가 설치되어 있는지 확인하세요.
 - 개발 환경: Visual Studio와 같은 IDE는 완벽하게 작동합니다.
 - C#에 대한 기본 지식: 코딩 예제를 따라가는 데 도움이 됩니다.

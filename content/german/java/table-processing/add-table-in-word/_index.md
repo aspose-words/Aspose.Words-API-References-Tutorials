@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Schritt 6: Erstellen Sie eine Tabelle und fügen Sie Zeilen hinzu
 
- Erstelle eine neue`Table`Objekt und geben Sie die Anzahl der Zeilen und Spalten an.
+ Erstellen Sie ein neues`Table`Objekt und geben Sie die Anzahl der Zeilen und Spalten an.
 
 ```java
 Table table = new Table(doc);
@@ -70,7 +70,7 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Schritt 8: Speichern Sie das Dokument
 
- Speichern Sie das Word-Dokument am gewünschten Ort mit dem`save()` Methode.
+ Speichern Sie das Word-Dokument am gewünschten Ort mit dem`save()` Verfahren.
 
 ```java
 doc.save(""output.docx"");

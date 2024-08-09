@@ -85,7 +85,7 @@ Cela enregistre le document mis à jour avec les nouveaux remplacements de texte
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à remplacer le texte d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Il s'agit d'un outil puissant qui peut vous faire gagner beaucoup de temps et d'efforts, en particulier lorsque vous traitez des documents volumineux ou plusieurs fichiers. Essayez-le et voyez comment il peut rationaliser vos tâches de traitement de documents. Bon codage !
+Et voilà ! Vous venez d'apprendre à remplacer le texte d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Il s'agit d'un outil puissant qui peut vous faire gagner beaucoup de temps et d'efforts, en particulier lorsque vous traitez des documents volumineux ou plusieurs fichiers. Essayez-le et voyez comment il peut rationaliser vos tâches de traitement de documents. Bon codage !
 
 ## FAQ
 

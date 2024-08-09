@@ -20,7 +20,7 @@ Voordat we in de code duiken, zorgen we ervoor dat we alles hebben ingesteld. Di
 3. Ontwikkelomgeving: Een IDE zoals Visual Studio zal uw leven gemakkelijker maken.
 4. Basiskennis van C#: u hoeft geen expert te zijn, maar een basiskennis kan helpen.
 
-Heb alles? Geweldig! Laten we beginnen.
+Heb je alles? Geweldig! Laten we beginnen.
 
 ## Naamruimten importeren
 
@@ -77,7 +77,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), load
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Png };
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte slaan we het document op met behulp van de opgegeven opslagopties.
 

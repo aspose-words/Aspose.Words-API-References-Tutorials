@@ -15,7 +15,7 @@ Czy masz dość zajmowania się gigantycznymi dokumentami programu Word, po któ
 
 Zanim zagłębimy się w szczegóły, upewnijmy się, że mamy wszystko, czego potrzebujemy do pracy z Aspose.Words dla .NET:
 
-1.  Biblioteka Aspose.Words dla .NET: Musisz mieć tę bibliotekę. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Biblioteka Aspose.Words dla .NET: Musisz mieć tę bibliotekę. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
 3. Podstawowa znajomość języka C#: Jeśli tu jesteś, zgaduję, że znasz już język C#.
 
@@ -57,7 +57,7 @@ Ta pętla wykona iterację po wszystkich sekcjach dokumentu. Magia dzieje się w
 
 ## Krok 3: Sklonuj i utwórz nowy dokument
 
-Wewnątrz pętli musimy sklonować każdą sekcję i utworzyć nowy dokument dla każdej sklonowanej sekcji. Klonowanie pomaga nam zachować oryginalny dokument w nienaruszonym stanie.
+Wewnątrz pętli musimy sklonować każdą sekcję i utworzyć nowy dokument dla każdej sklonowanej sekcji. Klonowanie pomaga nam zachować oryginalny dokument w stanie nienaruszonym.
 
 ```csharp
 Section section = doc.Sections[i].Clone();

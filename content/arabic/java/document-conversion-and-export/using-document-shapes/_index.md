@@ -2,7 +2,7 @@
 title: استخدام أشكال المستندات في Aspose.Words لـ Java
 linktitle: استخدام أشكال المستندات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: أطلق العنان لقوة أشكال المستندات في Aspose.Words لـ Java. تعرّف على كيفية إنشاء مستندات جذابة بصريًا باستخدام أمثلة خطوة بخطوة.
+description: أطلق العنان لقوة أشكال المستندات في Aspose.Words لـ Java. تعلم كيفية إنشاء مستندات جذابة بصريًا باستخدام أمثلة خطوة بخطوة.
 type: docs
 weight: 14
 url: /ar/java/document-conversion-and-export/using-document-shapes/

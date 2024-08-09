@@ -2,80 +2,104 @@
 title: Définir les dossiers de polices
 linktitle: Définir les dossiers de polices
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour définir les dossiers de polices lors du rendu d'un document à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment définir des dossiers de polices personnalisés dans Aspose.Words for .NET avec ce guide complet étape par étape. Parfait pour les développeurs cherchant à améliorer les polices de documents.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-fonts-folders/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous guiderons pas à pas à travers le processus de définition des dossiers de polices lors du rendu d'un document à l'aide d'Aspose.Words for .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment spécifier les dossiers de polices à utiliser lors du rendu de vos documents à l'aide d'Aspose.Words for .NET.
+Salut! Prêt à plonger dans le monde des polices personnalisées dans Aspose.Words for .NET ? Commençons. Ce didacticiel vous guidera tout au long du processus de définition de dossiers de polices personnalisés, garantissant que vos documents auront exactement l'apparence que vous souhaitez. Que vous soyez un développeur chevronné ou débutant, ce guide vous guidera à travers chaque étape. Alors, donnons à ces polices un look fabuleux !
 
-## Étape 1 : Définir le répertoire des documents
-Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Il s'agit de l'emplacement où vous souhaitez enregistrer votre document rendu modifié. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin approprié.
+## Conditions préalables
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Avant de nous lancer, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-## Étape 2 : définir les sources de polices
- Ensuite, vous pouvez définir les sources de polices à l'aide du`FontSettings.DefaultInstance` la classe et le`SetFontsSources()` méthode. Dans cet exemple, nous utilisons à la fois une source de police système et une source de police de dossier personnalisé. Assurez-vous d'ajuster le chemin d'accès au dossier des polices personnalisées en fonction de vos besoins.
+-  Aspose.Words pour .NET : vous pouvez[télécharger](https://releases.aspose.com/words/net/) si vous ne l'avez pas déjà fait.
+- Visual Studio : n'importe quelle version fonctionnera, mais la dernière est toujours la meilleure.
+- Un document : nous utiliserons un document Word pour ce didacticiel. Vous pouvez créer le vôtre ou en utiliser un existant.
+- Polices personnalisées : préparez des polices personnalisées. Nous les utiliserons pour montrer comment définir les dossiers de polices.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(),
-new FolderFontSource("C:\\MyFonts\\", true)
-});
-```
+## Importer des espaces de noms
 
-## Étape 3 : Chargez le document à rendre
- Vous pouvez maintenant charger le document à restituer à l'aide du`Document` classe. Assurez-vous de spécifier le chemin d'accès correct au document.
+Tout d’abord, importons les espaces de noms nécessaires. Ceci est essentiel pour accéder aux classes et méthodes dont nous avons besoin depuis Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Étape 4 : Enregistrez le document rendu
- Enfin, vous pouvez enregistrer le document rendu dans un fichier à l'aide de l'option`Save()` méthode du`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
+Une fois ces espaces de noms importés, nous sommes prêts à commencer à configurer nos dossiers de polices personnalisés.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
-```
+## Étape 1 : définissez votre répertoire de documents
 
-### Exemple de code source pour définir les dossiers de polices à l'aide d'Aspose.Words pour .NET 
+ Commençons par définir le chemin d'accès à votre répertoire de documents. C'est ici que votre document Word est stocké. Nous utiliserons une variable appelée`dataDir` pour stocker ce chemin.
+
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire. Ceci est crucial car Aspose.Words devra savoir où trouver votre document.
+
+## Étape 2 : définir les sources de polices
+
+ Ensuite, nous devons configurer les sources des polices. C'est ici que nous indiquons à Aspose.Words où trouver nos polices personnalisées. Nous allons utiliser le`FontSettings.DefaultInstance.SetFontsSources` méthode pour y parvenir.
+
+```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
 	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
 });
+```
+
+Voici ce que nous faisons :
+
+- SystemFontSource : cela indique à Aspose.Words d'utiliser les polices par défaut du système.
+-  FolderFontSource : C'est ici que nous spécifions le dossier contenant nos polices personnalisées. Remplacer`"C:\\MyFonts\\"` avec le chemin d'accès à votre répertoire de polices personnalisées. Le`true` Le paramètre indique que les sous-répertoires doivent également être inclus.
+
+## Étape 3 : Chargez votre document
+
+Maintenant que nous avons configuré nos sources de polices, il est temps de charger le document avec lequel nous voulons travailler. Nous utiliserons le`Document` classe d'Aspose.Words pour cela.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Assurez-vous que`"Rendering.docx"` est le nom de votre document Word. Si votre document porte un nom différent, assurez-vous de le mettre à jour en conséquence.
+
+## Étape 4 : Enregistrez votre document au format PDF
+
+ Enfin, enregistrons notre document au format PDF pour voir les polices personnalisées en action. Nous utiliserons le`Save` méthode du`Document` classe.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
+Cela enregistrera votre document au format PDF dans le répertoire spécifié, en utilisant les polices personnalisées que nous avons configurées précédemment.
+
 ## Conclusion
-Dans ce didacticiel, nous avons appris à définir des dossiers de polices lors du rendu d'un document à l'aide d'Aspose.Words pour .NET. En suivant ce guide étape par étape, vous pouvez facilement spécifier les sources de polices à utiliser lors du rendu de vos documents. Aspose.Words propose une API puissante et flexible pour le traitement de mots avec des polices dans vos documents. Grâce à ces connaissances, vous pouvez contrôler et personnaliser les sources de polices utilisées lors du rendu de vos documents selon vos besoins spécifiques.
 
-### FAQ
+Et voilà ! Vous avez configuré avec succès des dossiers de polices personnalisées dans Aspose.Words pour .NET et enregistré votre document au format PDF avec ces polices personnalisées. Plutôt cool, non ? La personnalisation des polices peut faire une énorme différence dans l’apparence de vos documents, et vous savez désormais exactement comment procéder. Bon codage !
 
-#### Q : Comment puis-je configurer les dossiers de polices dans un document Word à l'aide d'Aspose.Words ?
+## FAQ
 
-R : Pour configurer les dossiers de polices dans un document Word à l'aide d'Aspose.Words, vous pouvez utiliser l'API pour spécifier des dossiers de polices personnalisés à utiliser lors de la génération ou de la modification du document. Cela permettra à Word de trouver les polices requises pour un rendu correct.
+### Comment installer Aspose.Words pour .NET ?
 
-#### Q : Est-il possible d'ajouter des polices personnalisées à un document Word avec Aspose.Words ?
+ Tu peux[télécharger](https://releases.aspose.com/words/net/) la dernière version d’Aspose.Words pour .NET sur le site Web.
 
-: Oui, avec Aspose.Words, vous pouvez ajouter des polices personnalisées à un document Word. L'API vous permet d'intégrer des polices spécifiques dans votre document, garantissant ainsi qu'elles s'affichent correctement, même si les polices ne sont pas installées sur le système de l'utilisateur final.
+### Puis-je utiliser plusieurs dossiers de polices personnalisées ?
 
-#### Q : Que se passe-t-il si les polices requises sont manquantes dans un document Word ?
+ Oui, vous pouvez en ajouter plusieurs`FolderFontSource` instances à la`SetFontsSources`méthode pour utiliser des polices de différents répertoires.
 
-R : Si les polices requises sont manquantes dans un document Word, Aspose.Words peut détecter ce problème et vous proposer des options pour le résoudre. Vous pouvez choisir de remplacer les polices manquantes par des polices alternatives ou d'inclure les polices manquantes dans le document, ce qui garantit une visualisation correcte.
+### Est-il nécessaire d’inclure les polices système ?
 
-#### Q : Comment puis-je supprimer les polices personnalisées d'un document Word avec Aspose.Words ?
+L'inclusion des polices système est facultative mais recommandée pour garantir que toutes les polices standard sont disponibles.
 
-R : Pour supprimer les polices personnalisées d'un document Word à l'aide d'Aspose.Words, vous pouvez utiliser l'API pour nettoyer le document et supprimer les polices personnalisées qui ne sont plus nécessaires. Cela réduira la taille du fichier et facilitera la gestion des polices.
+### Quels types de fichiers sont pris en charge par Aspose.Words ?
 
-#### Q : Est-il important de configurer les dossiers de polices dans un document Word ?
+Aspose.Words prend en charge un large éventail de formats de fichiers, notamment DOCX, DOC, PDF, TXT, HTML et bien d'autres.
 
-: Oui, il est important de configurer les dossiers de polices dans un document Word pour garantir que les polices utilisées s'affichent correctement. En spécifiant des dossiers de polices personnalisés à utiliser avec Aspose.Words, vous vous assurez que les polices requises sont disponibles pour restituer correctement les documents Word.
+### Comment puis-je obtenir une licence temporaire pour Aspose.Words ?
+
+ Vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) sur le site Web Aspose pour essayer toutes les fonctionnalités d’Aspose.Words.

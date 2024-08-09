@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
-在此示例中，`MatchCase`被设定为`false`忽略大小写差异，以及`FindWholeWordsOnly`被设定为`false`允许单词内的部分匹配。
+在此示例中，`MatchCase`设置为`false`忽略大小写差异，以及`FindWholeWordsOnly`设置为`false`允许单词内的部分匹配。
 
 ## 步骤 4：替换页脚中的文本
 
@@ -99,7 +99,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 您可以替换页脚中的任何特定文本。如果您需要替换多行，请确保您的搜索字符串与要替换的文本完全匹配。
 
 ### 是否可以使替换区分大小写？
-当然！设置`MatchCase`到`true`在里面`FindReplaceOptions`使替换区分大小写。
+当然！设置`MatchCase`到`true`在`FindReplaceOptions`使替换区分大小写。
 
 ### 我可以使用正则表达式进行文本替换吗？
 是的，Aspose.Words 支持使用正则表达式进行查找和替换操作。您可以在`Range.Replace`方法。

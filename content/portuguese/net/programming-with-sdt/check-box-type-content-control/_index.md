@@ -99,4 +99,4 @@ Sim, Aspose.Words oferece suporte a vários tipos de controles de conteúdo, inc
  Sim, você pode baixar uma versão de avaliação gratuita no site[Aspor site](https://releases.aspose.com/).
 
 ### Onde posso obter suporte se encontrar problemas?
- Você pode visitar o[Fórum de suporte Aspose](https://forum.aspose.com/c/words/8) para assistência.
+ Você pode visitar o[Fórum de suporte Aspose](https://forum.aspose.com/c/words/8) para obter assistência.

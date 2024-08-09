@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Wstaw obraz osadzony
 
- Użyj`InsertImage` metoda`DocumentBuilder` class, aby wstawić obraz do dokumentu w bieżącym miejscu.
+ Skorzystaj z`InsertImage` metoda`DocumentBuilder` class, aby wstawić obraz do dokumentu w bieżącym miejscu.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";

@@ -9,7 +9,7 @@ url: /hu/net/apply-license/apply-license-from-file/
 ---
 ## Bevezetés
 
-Halihó! Ha belemerül az Aspose.Words for .NET világába, egy csemege vár rád. Ez a hatékony könyvtár lehetővé teszi Word-dokumentumok programozott létrehozását, szerkesztését és konvertálását. Mielőtt azonban hozzákezdene, fontos tudnia, hogyan kell licencet alkalmazni egy fájlból, hogy kiaknázhassa a benne rejlő lehetőségeket. Ebben az útmutatóban lépésről lépésre végigvezetjük a folyamaton, így biztosítva, hogy a licencet gyorsan és hatékonyan beállíthassa.
+Szia! Ha belemerül az Aspose.Words for .NET világába, egy csemege vár rád. Ez a hatékony könyvtár lehetővé teszi Word-dokumentumok programozott létrehozását, szerkesztését és konvertálását. Mielőtt azonban hozzákezdene, fontos tudnia, hogyan kell licencet alkalmazni egy fájlból, hogy kiaknázhassa a benne rejlő lehetőségeket. Ebben az útmutatóban lépésről lépésre végigvezetjük a folyamaton, így biztosítva, hogy a licencet gyorsan és hatékonyan beállíthassa.
 
 ## Előfeltételek
 
@@ -33,7 +33,7 @@ Rendben, most bontsuk fel a folyamatot kezelhető lépésekre.
 
 ## 1. lépés: Állítsa be projektjét
 
-Először is be kell állítania a projektet. Nyissa meg az IDE-jét, és hozzon létre egy új C#-projektet. Győződjön meg arról, hogy az Aspose.Words könyvtárra hivatkozik a projektben. Ha még nem adta hozzá, megteheti a NuGet Package Manager segítségével.
+Először is be kell állítania a projektet. Nyissa meg az IDE-jét, és hozzon létre egy új C#-projektet. Győződjön meg arról, hogy az Aspose.Words könyvtárra hivatkozik a projektben. Ha még nem adta hozzá, a NuGet Package Manager segítségével megteheti.
 
 ```shell
 Install-Package Aspose.Words

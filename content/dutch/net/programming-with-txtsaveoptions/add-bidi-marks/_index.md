@@ -60,7 +60,7 @@ Hier voegen we eerst een standaard Engelse zin toe. Vervolgens schakelen we Bidi
 
 ## Stap 3: Configureer de opslagopties voor Bidi-markeringen
 
- Om ervoor te zorgen dat de Bidi-markeringen correct in het document worden opgeslagen, moet u het`TxtSaveOptions` en schakel de`AddBidiMarks` keuze.
+ Om ervoor te zorgen dat de Bidi-markeringen correct in het document worden opgeslagen, moet u het`TxtSaveOptions` en schakel de`AddBidiMarks` optie.
 
 ```csharp
 // Voeg Bidi-markeringen toe
@@ -89,4 +89,4 @@ Ja, u kunt indien nodig Bidi-opmaak toepassen op specifieke alinea's of secties 
 In het gegeven voorbeeld wordt het document opgeslagen als een tekstbestand. Aspose.Words ondersteunt echter ook het opslaan van documenten in verschillende formaten met behoud van Bidi-markeringen.
 
 ### Waar kan ik meer informatie vinden over Aspose.Words voor .NET?
- U kunt meer te weten komen over Aspose.Words voor .NET via de[Aspose-documentatie](https://reference.aspose.com/words/net/) en toegang krijgen tot de[Helpforum](https://forum.aspose.com/c/words/8) voor extra hulp.
+ U kunt meer te weten komen over Aspose.Words voor .NET via de[Aspose-documentatie](https://reference.aspose.com/words/net/) en toegang krijgen tot de[Ondersteuningsforum](https://forum.aspose.com/c/words/8) voor extra hulp.

@@ -45,7 +45,7 @@ DocumentSplitCriteria splitCriteria = new PageSplitCriteria();
 
 ### Krok 3: Wykonaj podział
 
-Teraz podzielmy dokument według zdefiniowanych kryteriów:
+Podzielmy teraz dokument według zdefiniowanych kryteriów:
 
 ```java
 // Podziel dokument

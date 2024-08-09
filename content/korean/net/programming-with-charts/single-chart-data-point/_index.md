@@ -15,7 +15,7 @@ url: /ko/net/programming-with-charts/single-chart-data-point/
 
 시작하기 전에 모든 필수 사항이 준비되어 있는지 확인하세요.
 
--  .NET 라이브러리용 Aspose.Words: 최신 버전인지 확인하세요.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET 라이브러리용 Aspose.Words: 최신 버전인지 확인하세요.[여기서 다운로드하세요](https://releases.aspose.com/words/net/).
 - .NET Framework: 컴퓨터에 .NET Framework가 설치되어 있는지 확인하세요.
 - C#의 기본 이해: C# 프로그래밍에 대한 기본적인 이해가 도움이 됩니다.
 - 통합 개발 환경(IDE): Visual Studio가 권장됩니다.

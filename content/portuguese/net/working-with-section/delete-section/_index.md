@@ -55,7 +55,7 @@ doc.FirstSection.Remove();
 ## Perguntas frequentes
 
 ### Posso excluir várias seções de uma vez?
-Sim você pode. Basta percorrer as seções que deseja excluir e removê-las uma por uma.
+Sim, você pode. Basta percorrer as seções que deseja excluir e removê-las uma por uma.
 
 ### O Aspose.Words para .NET é gratuito?
  Aspose.Words oferece um teste gratuito que você pode obter[aqui](https://releases.aspose.com/) Para obter todos os recursos, você precisa adquirir uma licença[aqui](https://purchase.aspose.com/buy).

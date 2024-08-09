@@ -24,7 +24,7 @@ Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğ
 
 ## Ortamın Ayarlanması
 
-Aspose.Words for Java'yı kullanmaya başlamak için geliştirme ortamınızı ayarlamanız gerekir. Bu adımları takip et:
+Aspose.Words for Java'yı kullanmaya başlamak için geliştirme ortamınızı ayarlamanız gerekir. Şu adımları izleyin:
 
 1. Favori Entegre Geliştirme Ortamınızda (IDE) yeni bir Java projesi oluşturun.
 

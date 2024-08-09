@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/list-keep-source-formatting/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial esploreremo come utilizzare Aspose.Words per .NET per unire documenti preservando la formattazione originale. Questa funzionalità è essenziale per gli scenari in cui è fondamentale mantenere l'aspetto originale dei documenti.
 

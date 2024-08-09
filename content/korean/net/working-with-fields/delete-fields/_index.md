@@ -61,7 +61,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ## 5단계: 필드 제거
 
@@ -100,4 +100,4 @@ try-catch 블록을 사용하여 문서 처리 작업 중에 발생할 수 있�
 예, 여기에 표시된 방법은 구체적으로 필드만 대상으로 하며 다른 콘텐츠는 변경되지 않은 상태로 둡니다.
 
 ### Aspose.Words에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
- 방문하다[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 그리고[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 추가 지원을 위해.
+ 방문[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 그리고[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 추가 지원을 위해.

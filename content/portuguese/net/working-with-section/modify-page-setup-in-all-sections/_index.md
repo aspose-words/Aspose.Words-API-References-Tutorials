@@ -16,7 +16,7 @@ Ei! Se você já precisou modificar as configurações de página em várias se�
 Antes de começarmos, vamos garantir que temos tudo o que precisamos:
 
 1. Conhecimento básico de C#: É necessária familiaridade com a sintaxe e os conceitos de C#.
-2.  Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) Se você está apenas experimentando, um[teste grátis](https://releases.aspose.com/) está disponível.
+2.  Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) Se você está apenas experimentando, um[teste gratuito](https://releases.aspose.com/) está disponível.
 3. Visual Studio: qualquer versão recente deve funcionar, mas a mais recente é recomendada para obter a melhor experiência.
 4. .NET Framework: certifique-se de tê-lo instalado em seu sistema.
 
@@ -99,7 +99,7 @@ Aspose.Words for .NET é uma biblioteca abrangente para trabalhar programaticame
 
 ### 2. Posso usar o Aspose.Words for .NET gratuitamente?
 
- Você pode experimentar o Aspose.Words for .NET com um[teste grátis](https://releases.aspose.com/). Para uso prolongado, é necessária a aquisição de uma licença.
+ Você pode experimentar o Aspose.Words for .NET com um[teste gratuito](https://releases.aspose.com/). Para uso prolongado, é necessária a aquisição de uma licença.
 
 ### 3. Como modifico outras propriedades de configuração da página?
 

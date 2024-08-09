@@ -128,7 +128,7 @@ Bu eğitimde Aspose.Words for Java'da belgeleri metin dosyaları olarak nasıl k
 
 ### Metin çıktısına bidi işaretlerini nasıl eklerim?
 
- Metin çıktısına bidi işaretleri eklemek için`AddBidiMarks` mülkiyet`TxtSaveOptions` ile`true`. Örneğin:
+ Metin çıktısına bidi işaretleri eklemek için`AddBidiMarks` mülkiyeti`TxtSaveOptions` ile`true`. Örneğin:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -137,7 +137,7 @@ saveOptions.setAddBidiMarks(true);
 
 ### Liste girinti karakterini özelleştirebilir miyim?
 
- Evet, liste girinti karakterini yapılandırarak özelleştirebilirsiniz.`ListIndentation` mülkiyet`TxtSaveOptions`. Örneğin, liste girintisi amacıyla bir sekme karakteri kullanmak için aşağıdakileri yapabilirsiniz:
+ Evet, liste girinti karakterini yapılandırarak özelleştirebilirsiniz.`ListIndentation` mülkiyeti`TxtSaveOptions`. Örneğin, liste girintisi amacıyla bir sekme karakteri kullanmak için aşağıdakileri yapabilirsiniz:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();

@@ -73,7 +73,7 @@ Végül mentse a dokumentumot PDF formátumban a digitális aláírással.
 doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-És ez az! A dokumentum aláírása és PDF formátumban való mentése megtörtént.
+És ennyi! A dokumentum aláírása megtörtént, és PDF-ként mentve.
 
 ## Következtetés
 

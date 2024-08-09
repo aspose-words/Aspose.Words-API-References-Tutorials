@@ -8,7 +8,7 @@ weight: 10
 url: /cs/python-net/data-visualization-and-formatting/visualize-data-document-charts/
 ---
 
-## Úvod
+## Zavedení
 
 Vizualizace dat je výkonná technika, jak učinit informace dostupnějšími a srozumitelnějšími. Grafy, grafy a diagramy poskytují vizuální reprezentaci komplexních datových sad a umožňují čtenářům na první pohled identifikovat trendy, vzorce a poznatky.
 
@@ -118,4 +118,4 @@ Absolutně! Interaktivitu můžete přidat přidáním štítků dat nebo jinýc
 Svůj dokument můžete uložit v různých formátech, mimo jiné včetně DOCX a PDF.
 
 ### Kde mohu získat přístup ke zdrojům Aspose.Words?
- Získejte přístup ke zdrojům a dokumentaci Aspose.Words na:[tady](https://reference.aspose.com/words/python-net/)
+ Získejte přístup ke zdrojům a dokumentaci Aspose.Words na:[zde](https://reference.aspose.com/words/python-net/)

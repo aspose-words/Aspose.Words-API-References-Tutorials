@@ -108,7 +108,7 @@ Visual Studio에서 새 프로젝트를 만들어 시작해 보겠습니다.
 ### Aspose.Words에 대한 임시 라이선스는 어떻게 얻나요?
  임시면허를 받을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
-### Aspose.Words를 사용하여 다른 문서 형식을 조작할 수 있는 방법이 있습니까?
+### Aspose.Words를 사용하여 다른 문서 형식을 조작할 수 있는 방법이 있나요?
 전적으로! Aspose.Words는 DOC, DOCX, ODT, RTF 등과 같은 다양한 형식을 지원합니다.
 
 ### 웹 애플리케이션에 Aspose.Words를 사용할 수 있나요?

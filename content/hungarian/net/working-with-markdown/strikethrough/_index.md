@@ -2,63 +2,78 @@
 title: Áthúzott
 linktitle: Áthúzott
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan alkalmazhatja az áthúzott szövegstílust az Aspose.Words for .NET segítségével Lépésről lépésre.
+description: lépésenkénti útmutatónkból megtudhatja, hogyan alkalmazhat áthúzott formázást a szövegben az Aspose.Words for .NET használatával. Növelje dokumentumfeldolgozási készségeit.
 type: docs
 weight: 10
 url: /hu/net/working-with-markdown/strikethrough/
 ---
+## Bevezetés
 
+Üdvözöljük ebben a részletes útmutatóban arról, hogyan alkalmazhat áthúzott formázást a szövegben az Aspose.Words for .NET használatával. Ha fejleszteni szeretné dokumentumfeldolgozási készségeit, és egyedi hatást szeretne adni szövegének, akkor jó helyen jár. Merüljünk el!
 
-Ebben a példában végigvezetjük, hogyan alkalmazhatja az áthúzott szövegstílust az Aspose.Words for .NET használatával. Az áthúzott szöveg azt jelzi, hogy a szöveg törölve van vagy már nem érvényes.
+## Előfeltételek
 
-## 1. lépés: Dokumentumgenerátor használata
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-Először egy dokumentumgenerátort fogunk használni, hogy tartalmat adjunk a dokumentumunkhoz.
+-  Aspose.Words for .NET: Töltse le[itt](https://releases.aspose.com/words/net/).
+- .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a rendszeren.
+- Fejlesztői környezet: Egy IDE, mint a Visual Studio.
+- Alapszintű C# ismerete: C# programozás ismerete szükséges.
+
+## Névterek importálása
+
+A kezdéshez importálnia kell a szükséges névtereket. Ezek elengedhetetlenek az Aspose.Words könyvtár és szolgáltatásainak eléréséhez.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. lépés: Inicializálja a DocumentBuildert
+
+ A`DocumentBuilder` osztály az Aspose.Words hatékony eszköze, amely lehetővé teszi, hogy könnyedén hozzáadjon tartalmat a dokumentumhoz.
+
+```csharp
+// Inicializáljon egy DocumentBuilder programot.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. lépés: Alkalmazza az áthúzott szövegstílust
+## 2. lépés: Állítsa be az áthúzott tulajdonságot
 
- Az áthúzott szövegstílust a beállításával engedélyezzük`StrikeThrough` tulajdona a`Font` tiltakozni`true`.
-
-```csharp
-builder.Font.StrikeThrough = true;
-```
-
-## 3. lépés: Adjon hozzá áthúzott szöveget
-
- Mostantól áthúzható szöveget adhatunk hozzá a dokumentumgenerátor segítségével`Writeln` módszer.
+Most alkalmazzuk az áthúzott tulajdonságot a szövegünkre. Ez magában foglalja a`StrikeThrough` tulajdona a`Font` tiltakozik`true`.
 
 ```csharp
-builder.Writeln("This text will be StrikeThrough");
-```
-
-
-### Példa forráskódra áthúzott szöveghez az Aspose.Words for .NET segítségével
-
-```csharp
-// Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Tegye áthúzva a szöveget.
 builder.Font.StrikeThrough = true;
+```
+
+## 3. lépés: Írjon szöveget áthúzással
+
+ Az áthúzott tulajdonságkészlettel most hozzáadhatjuk a szövegünket. A`Writeln` metódus hozzáadja a szöveget a dokumentumhoz.
+
+```csharp
+// Írjon szöveget áthúzással.
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-Gratulálok ! Most megtanulta, hogyan kell alkalmazni az áthúzott szövegstílust az Aspose.Words for .NET segítségével.
+## Következtetés
 
-### GYIK
+És megvan! Sikeresen hozzáadta az áthúzott formázást a szövegéhez az Aspose.Words for .NET segítségével. Ez a nagy teljesítményű könyvtár a lehetőségek világát nyitja meg a dokumentumfeldolgozás és a testreszabás terén. Függetlenül attól, hogy jelentéseket, leveleket vagy bármilyen más típusú dokumentumot készít, ezeknek a funkcióknak az elsajátítása kétségtelenül javítja a termelékenységet és a kimenetek minőségét.
 
-#### K: Hogyan adhatom hozzá az áthúzott szöveget az Aspose.Words-hez?
+## GYIK
 
- V: Az áthúzott szöveg hozzáadásához az Aspose.Wordsben használhatja a`Font.StrikeThrough` tulajdona a`Run` tárgy. Beállíthatja ezt a tulajdonságot`true` áthúzott szöveg hozzáadásához az adott szöveghez. Például használhatja`run.Font.StrikeThrough=true` az áthúzott szöveg hozzáadásához`Run` tárgy.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és konvertálását.
 
-#### K: Hozzáadható az áthúzott szöveg több szövegrészhez ugyanabban a bekezdésben?
+### Használhatom az Aspose.Words for .NET-et kereskedelmi projektekben?
+ Igen, az Aspose.Words for .NET használható kereskedelmi projektekben. A vásárlási lehetőségekért keresse fel a[oldal vásárlása](https://purchase.aspose.com/buy).
 
- V: Igen, egy bekezdésben több szövegrészhez is hozzáadhat áthúzott szöveget, ha több elemet használ`Run` tárgyakat. Többet is létrehozhat`Run` objektumok és állítsa be a`Font.StrikeThrough`tulajdonát`true` minden objektumhoz hozzá kell adni az áthúzott szöveget a kívánt szövegrészekhez. Ezután hozzáadhatja őket a bekezdéshez a`Paragraph.AppendChild(run)` módszer.
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, letölthet egy ingyenes próbaverziót[itt](https://releases.aspose.com/).
 
-#### K: Hozzáadhatok áthúzott szöveget az Aspose.Words táblázatában vagy cellájában lévő szöveghez?
+### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
+Támogatást kaphat az Aspose közösségtől és a szakértőktől[támogatási fórum](https://forum.aspose.com/c/words/8).
 
- V: Igen, hozzáadhat áthúzott szöveget az Aspose.Words táblázatában vagy cellájában lévő szöveghez. A megfelelő módszerekkel ugorhat a kívánt cellára vagy bekezdésre, majd alkalmazhatja az áthúzott szövegformázást a segítségével`Font.StrikeThrough` tulajdona a`Run` vagy`Paragraph` tárgy.
+### Alkalmazhatok más szövegformázási beállításokat az Aspose.Words for .NET használatával?
+Teljesen! Az Aspose.Words for .NET a szövegformázási lehetőségek széles skáláját támogatja, beleértve a félkövér, dőlt, aláhúzott és egyebeket.

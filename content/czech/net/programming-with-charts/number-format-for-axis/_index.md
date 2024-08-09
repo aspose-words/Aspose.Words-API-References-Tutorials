@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/number-format-for-axis/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Pracovali jste někdy s grafy ve svých dokumentech a přáli si, abyste mohli formátovat čísla na své ose, aby vypadaly profesionálněji? Tak to máš štěstí! V tomto tutoriálu se ponoříme hluboko do toho, jak toho můžete dosáhnout pomocí Aspose.Words pro .NET. Tato výkonná knihovna vám umožní pracovat s dokumenty aplikace Word způsobem, který je snadný jako facka. A dnes se zaměřujeme na to, abychom tyto osy grafu změnili pomocí vlastních číselných formátů.
+Ahoj! Pracovali jste někdy s grafy ve svých dokumentech a přáli si, abyste mohli formátovat čísla na své ose, aby vypadaly profesionálněji? Tak to máš štěstí! V tomto tutoriálu se ponoříme hluboko do toho, jak toho můžete dosáhnout pomocí Aspose.Words pro .NET. Tato výkonná knihovna vám umožní pracovat s dokumenty aplikace Word způsobem, který je snadný jako facka. A dnes se zaměřujeme na to, abychom tyto osy grafu změnili pomocí vlastních číselných formátů.
 
 ## Předpoklady
 
@@ -46,7 +46,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tady,`dataDir` je cesta k adresáři vašeho dokumentu, kam uložíte konečný soubor.`Document`a`DocumentBuilder` jsou třídy z Aspose.Words, které vám pomohou vytvářet a manipulovat s dokumenty Wordu.
+ Zde,`dataDir` je cesta k adresáři vašeho dokumentu, kam uložíte konečný soubor.`Document`a`DocumentBuilder` jsou třídy z Aspose.Words, které vám pomohou vytvářet a manipulovat s dokumenty Wordu.
 
 ## Krok 2: Vložení grafu
 

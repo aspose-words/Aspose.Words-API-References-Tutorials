@@ -10,13 +10,13 @@ url: /fr/net/working-with-hyphenation/hyphenation-callback/
 
 ## Introduction
 
-Salut! Vous êtes-vous déjà retrouvé mêlé aux complexités du formatage du texte, en particulier lorsqu'il s'agit de langues nécessitant une césure ? Tu n'es pas seul. La césure, bien que cruciale pour une mise en page correcte du texte, peut être un peu un casse-tête. Mais devinez quoi ? Aspose.Words for .NET vous soutient. Cette puissante bibliothèque vous permet de gérer le formatage du texte de manière transparente, y compris la gestion de la césure via un mécanisme de rappel. Intrigué ? Voyons dans le détail comment implémenter un rappel de césure à l'aide d'Aspose.Words pour .NET.
+Salut! Vous êtes-vous déjà retrouvé mêlé aux complexités du formatage du texte, en particulier lorsqu'il s'agit de langues nécessitant une césure ? Vous n'êtes pas seul. La césure, bien que cruciale pour une mise en page correcte du texte, peut être un peu un casse-tête. Mais devinez quoi ? Aspose.Words for .NET vous soutient. Cette puissante bibliothèque vous permet de gérer le formatage du texte de manière transparente, y compris la gestion de la césure via un mécanisme de rappel. Intrigué ? Voyons dans le détail comment implémenter un rappel de césure à l'aide d'Aspose.Words pour .NET.
 
 ## Conditions préalables
 
 Avant de nous salir les mains avec le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words for .NET : assurez-vous de disposer de la bibliothèque. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET : assurez-vous de disposer de la bibliothèque. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. IDE : Un environnement de développement comme Visual Studio.
 3. Connaissance de base de C# : Compréhension de C# et du framework .NET.
 4. Dictionnaires de césure : dictionnaires de césure pour les langues que vous prévoyez d'utiliser.
@@ -50,7 +50,7 @@ catch (Exception e)
 
  Ici, nous créons une instance de notre rappel personnalisé et l'attribuons à`Hyphenation.Callback`.
 
-## Étape 2 : Définir le chemin du document
+## Étape 2 : définir le chemin du document
 
 Ensuite, nous devons définir le répertoire dans lequel nos documents sont stockés. Ceci est crucial car nous allons charger et enregistrer des documents à partir de ce chemin.
 
@@ -68,7 +68,7 @@ Maintenant, chargeons le document qui nécessite une césure.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Ici, nous chargeons un document texte allemand. Vous pouvez remplacer`"German text.docx"` avec le nom de fichier de votre document.
+Ici, nous chargeons un document texte allemand. Vous pouvez remplacer`"German text.docx"` avec le nom de fichier de votre document.
 
 ## Étape 4 : Enregistrez le document
 
@@ -129,7 +129,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre comment implémenter un rappel de césure dans Aspose.Words pour .NET. En suivant ces étapes, vous pouvez vous assurer que vos documents sont magnifiquement formatés, quelle que soit la langue. Que vous ayez affaire à l'anglais, à l'allemand ou à toute autre langue, cette méthode vous permet de gérer la césure sans effort.
+Et voilà ! Vous venez d'apprendre comment implémenter un rappel de césure dans Aspose.Words pour .NET. En suivant ces étapes, vous pouvez vous assurer que vos documents sont magnifiquement formatés, quelle que soit la langue. Que vous ayez affaire à l'anglais, à l'allemand ou à toute autre langue, cette méthode vous permet de gérer la césure sans effort.
 
 ## FAQ
 
@@ -140,10 +140,10 @@ Aspose.Words for .NET est une puissante bibliothèque de manipulation de documen
 La césure améliore la mise en page du texte en coupant les mots aux endroits appropriés, garantissant ainsi un document plus lisible et visuellement attrayant.
 
 ### Puis-je utiliser Aspose.Words gratuitement ?
- Aspose.Words propose un essai gratuit. Tu peux l'avoir[ici](https://releases.aspose.com/).
+ Aspose.Words propose un essai gratuit. Vous pouvez l'obtenir[ici](https://releases.aspose.com/).
 
 ### Comment obtenir un dictionnaire de césure ?
 Vous pouvez télécharger des dictionnaires de césure à partir de diverses ressources en ligne ou créer le vôtre si nécessaire.
 
 ### Que se passe-t-il s’il manque un dictionnaire de césure ?
- S'il manque un dictionnaire, le`RequestDictionary` La méthode lève une exception, que vous pouvez gérer pour informer l'utilisateur ou fournir une solution de secours.
+ S'il manque un dictionnaire, le`RequestDictionary`La méthode lève une exception, que vous pouvez gérer pour informer l'utilisateur ou fournir une solution de secours.

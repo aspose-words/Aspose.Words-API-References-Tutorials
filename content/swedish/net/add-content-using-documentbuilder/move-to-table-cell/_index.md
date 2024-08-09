@@ -15,7 +15,7 @@ Att flytta till en specifik tabellcell i ett Word-dokument kan låta som en skr�
 
 Innan vi börjar finns det några förutsättningar du måste få ordning på. Här är vad du behöver:
 
-1.  Aspose.Words för .NET Library: Ladda ner och installera från[webbplats](https://releases.aspose.com/words/net/).
+1.  Aspose.Words för .NET Library: Ladda ner och installera från[plats](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Visual Studio eller någon annan C# IDE.
 3. Grundläggande förståelse för C#: Bekantskap med C#-programmering hjälper dig att följa med.
 
@@ -51,7 +51,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 3: Flytta till specifik tabellcell
 
-Det är här magin händer. Vi flyttar byggaren till en specifik cell i tabellen. I det här exemplet flyttar vi till rad 3, cell 4 i den första tabellen i dokumentet.
+Här händer magin. Vi flyttar byggaren till en specifik cell i tabellen. I det här exemplet flyttar vi till rad 3, cell 4 i den första tabellen i dokumentet.
 
 ```csharp
 // Flytta byggaren till rad 3, cell 4 i den första tabellen.
@@ -88,7 +88,7 @@ Grattis! Du har precis lärt dig hur du flyttar till en specifik tabellcell i et
  Du kan använda`RowSpan`och`ColSpan` egenskaper hos`Cell` klass för att hantera sammanslagna celler.
 
 ### Är det möjligt att formatera texten inuti cellen?
- Absolut! Använda sig av`DocumentBuilder` metoder som`Font.Size`, `Font.Bold`, och andra för att formatera din text.
+ Absolut! Använda`DocumentBuilder` metoder som`Font.Size`, `Font.Bold`, och andra för att formatera din text.
 
 ### Kan jag infoga andra element som bilder eller tabeller i en cell?
  Ja,`DocumentBuilder` låter dig infoga bilder, tabeller och andra element på den aktuella positionen i cellen.

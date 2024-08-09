@@ -20,7 +20,7 @@ Innan vi dyker in i koden, låt oss se till att vi har allt inställt. Här är 
 3. Utvecklingsmiljö: En IDE som Visual Studio kommer att göra ditt liv enklare.
 4. Grundläggande kunskaper i C#: Du behöver inte vara expert, men en grundläggande förståelse hjälper.
 
-Har du allt? Bra! Låt oss börja.
+Har du allt? Stor! Låt oss börja.
 
 ## Importera namnområden
 
@@ -41,7 +41,7 @@ Låt oss börja med att definiera sökvägen till din dokumentkatalog. Det är h
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
 
 ## Steg 2: Skapa HTML-strängen med SVG
 

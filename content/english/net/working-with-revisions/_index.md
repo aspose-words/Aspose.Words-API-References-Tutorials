@@ -16,12 +16,12 @@ Whether you are a beginner or an experienced developer, these tutorials will hel
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Accept Revisions](./accept-revisions/) | Learn how to accept revisions to a Word document using Aspose.Words for .NET. |
-| [Get Revision Types Of Words](./get-revision-types/) | Get revision types of words in a Word document with Aspose.Words for .NET. |
-| [Get Revision Groups](./get-revision-groups/) | Get revision group details in a Word document with Aspose.Words for .NET. |
-| [Remove Comments In Pdf File](./remove-comments-in-pdf/) | Remove comments in a PDF file with Aspose.Words for .NET. |
-| [Show Revisions In Balloons](./show-revisions-in-balloons/) | Display revisions in balloons with Aspose.Words for .NET. |
-| [Get Revision Group Details](./get-revision-group-details/) | Get revision group details in a Word document with Aspose.Words for .NET. |
-| [Access Revised Version](./access-revised-version/) | Access a revised version of a Word document with Aspose.Words for .NET. |
-| [Move Node In Tracked Document](./move-node-in-tracked-document/) | Move nodes in a tracked document with Aspose.Words for .NET. |
-| [Shape Revision](./shape-revision/) | Revise shapes in a Word document with Aspose.Words for .NET. |
+| [Accept Revisions](./accept-revisions/) | Master document revisions with Aspose.Words for .NET. Learn to track, accept, and reject changes effortlessly. Boost your document management skills. |
+| [Get Revision Types Of Words](./get-revision-types/) |Learn how to get revision types of words in a Word document using Aspose.Words for .NET. This step-by-step guide helps you handle document revisions efficiently. |
+| [Get Revision Groups](./get-revision-groups/) | Learn how to retrieve revision groups from Word documents using Aspose.Words for .NET with this comprehensive step-by-step guide. Perfect for document management. |
+| [Remove Comments In Pdf File](./remove-comments-in-pdf/) | Learn how to remove comments from a PDF file using Aspose.Words for .NET with our step-by-step guide. |
+| [Show Revisions In Balloons](./show-revisions-in-balloons/) | Learn how to show revisions in balloons using Aspose.Words for .NET. This detailed guide walks you through each step, ensuring your document changes are clear and organized. |
+| [Get Revision Group Details](./get-revision-group-details/) | Easily get revision group details in Word documents using Aspose.Words for .NET with this step-by-step guide. Perfect for .NET developers. |
+| [Access Revised Version](./access-revised-version/) | Learn how to access and display the revised version of a document using Aspose.Words for .NET. Follow our step-by-step guide for seamless document management. |
+| [Move Node In Tracked Document](./move-node-in-tracked-document/) | Learn how to move nodes in a tracked Word document using Aspose.Words for .NET with our detailed, step-by-step guide. Perfect for developers. |
+| [Shape Revision](./shape-revision/) | Learn how to handle shape revisions in Word documents using Aspose.Words for .NET with this comprehensive guide. Master tracking changes, inserting shapes, and more. |

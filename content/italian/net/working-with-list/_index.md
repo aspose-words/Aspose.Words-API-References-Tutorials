@@ -13,6 +13,6 @@ Elaborazione di parole con elenchi è una risorsa completa che ti guida attraver
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Riavvia l'elenco in ogni sezione](./restart-list-at-each-section/)  | Scopri come reimpostare un elenco numerato in ciascuna sezione in un documento Word con Aspose.Words per .NET. |
-| [Specificare il livello dell'elenco](./specify-list-level/) | Scopri come specificare il livello dell'elenco in un documento Word con Aspose.Words per .NET. |
-| [Numero elenco riavvio](./restart-list-number/) | Scopri come reimpostare il numero di un elenco in un documento di Word con Aspose.Words per .NET. |
+| [Riavvia l'elenco in ogni sezione](./restart-list-at-each-section/)  | Scopri come riavviare gli elenchi in ogni sezione dei documenti Word utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata passo dopo passo per gestire le liste in modo efficace. |
+| [Specificare il livello dell'elenco](./specify-list-level/) | Scopri come creare elenchi numerati e puntati multilivello nei documenti di Word utilizzando Aspose.Words per .NET. Guida passo passo inclusa. Perfetto per gli sviluppatori .NET. |
+| [Numero elenco riavvio](./restart-list-number/) | Scopri come riavviare i numeri dell'elenco nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida dettagliata di 2000 parole copre tutto ciò che devi sapere, dalla configurazione alla personalizzazione avanzata. |

@@ -89,7 +89,7 @@ Aspose.Words for .NET은 .NET 애플리케이션에서 Word 문서 작업을 위
 예, Aspose.Words를 사용하면 섹션, 페이지 등과 같은 다양한 기준으로 문서를 분할할 수 있습니다.
 
 ### Aspose.Words는 무료인가요?
- Aspose.Words는 무료 평가판을 제공하지만 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해보세요[구매 페이지](https://purchase.aspose.com/buy) 상세 사항은.
+ Aspose.Words는 무료 평가판을 제공하지만 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해보세요[구매 페이지](https://purchase.aspose.com/buy) 자세한 내용은
 
 ### 문서는 어디서 찾을 수 있나요?
  포괄적인 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).

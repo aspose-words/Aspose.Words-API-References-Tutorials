@@ -45,7 +45,7 @@ OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true)
 
 ### Ustaw typ wyświetlania
 
- Możesz kontrolować sposób wyświetlania równania w dokumencie. Użyj`setDisplayType` metoda określająca, czy powinien być wyświetlany w tekście, czy w jego wierszu:
+ Możesz kontrolować sposób wyświetlania równania w dokumencie. Skorzystaj z`setDisplayType` metoda określająca, czy powinien być wyświetlany w tekście, czy w jego wierszu:
 
 ```java
 officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
@@ -90,7 +90,7 @@ Obiekty Office Math w Aspose.Words for Java umożliwiają reprezentowanie równa
 
 ### Czy mogę inaczej wyrównać równania pakietu Office Math w dokumencie?
 
- Tak, możesz kontrolować wyrównanie równań pakietu Office Math. Użyj`setJustification` metoda określania opcji wyrównania, takich jak do lewej, do prawej lub do środka.
+ Tak, możesz kontrolować wyrównanie równań pakietu Office Math. Skorzystaj z`setJustification` metoda określania opcji wyrównania, takich jak do lewej, do prawej lub do środka.
 
 ### Czy Aspose.Words for Java nadaje się do obsługi złożonych dokumentów matematycznych?
 

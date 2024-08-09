@@ -10,7 +10,7 @@ url: /pl/java/using-document-elements/using-fields/
 
 tym samouczku krok po kroku poprowadzimy Cię, jak używać pól w Aspose.Words dla Java do łatwego manipulowania dokumentami. Aspose.Words for Java to potężny interfejs API, który umożliwia programową pracę z dokumentami programu Word, zapewniając pełną kontrolę nad ich zawartością i formatowaniem.
 
-## 1. Wstęp
+## 1. Wprowadzenie
 
 Aspose.Words for Java jest niezbędnym narzędziem dla każdego, kto ma do czynienia z dokumentami Worda w aplikacjach Java. Pola to elementy zastępcze, w których można przechowywać dane dynamiczne w dokumencie. W tym samouczku dowiesz się, jak efektywnie pracować z polami.
 
@@ -239,7 +239,7 @@ Kod źródłowy klasy HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Nic nie robić.
+            // Nie rób nic.
         }
         /// <podsumowanie>
         /// Nazywa się to, gdy silnik korespondencji seryjnej napotyka w dokumencie pole scalania Image:XXX.
@@ -320,7 +320,7 @@ Kod źródłowy klasy HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Nic nie robić.
+            // Nie rób nic.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

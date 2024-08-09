@@ -91,7 +91,7 @@ DigitalSignatureUtil.Sign(
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功簽署了加密的 Word 文件。有了這個強大的庫，即使對於加密文件，數位簽名也變得輕而易舉。快樂編碼！
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功簽署了加密的 Word 文件。有了這個強大的庫，即使對於加密文件，數位簽名也變得輕而易舉。快樂編碼！
 
 ## 常見問題解答
 

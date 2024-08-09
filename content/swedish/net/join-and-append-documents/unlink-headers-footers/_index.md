@@ -9,7 +9,7 @@ url: /sv/net/join-and-append-documents/unlink-headers-footers/
 ---
 ## Introduktion
 
-dokumentbehandlingens värld kan det ibland vara en utmaning att hålla sidhuvuden och sidfötter konsekventa. Oavsett om du slår samman dokument eller bara vill ha olika sidhuvuden och sidfötter för olika avsnitt är det viktigt att veta hur man kopplar bort dem. Idag ska vi dyka in i hur du kan uppnå detta med Aspose.Words för .NET. Vi delar upp det steg-för-steg så att du enkelt kan följa med. Är du redo att bemästra dokumenthantering? Låt oss börja!
+dokumentbehandlingens värld kan det ibland vara en utmaning att hålla sidhuvuden och sidfötter konsekventa. Oavsett om du slår samman dokument eller bara vill ha olika sidhuvuden och sidfötter för olika avsnitt är det viktigt att veta hur man kopplar bort dem. Idag ska vi dyka in i hur du kan uppnå detta med Aspose.Words för .NET. Vi delar upp det steg-för-steg så att du enkelt kan följa med. Är du redo att bemästra dokumenthantering? Låt oss komma igång!
 
 ## Förutsättningar
 

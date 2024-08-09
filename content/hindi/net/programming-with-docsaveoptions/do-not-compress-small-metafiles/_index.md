@@ -18,7 +18,7 @@ url: /hi/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 -  Aspose.Words for .NET: यहां से नवीनतम संस्करण डाउनलोड करें और इंस्टॉल करें[यहाँ](https://releases.aspose.com/words/net/).
 - विकास वातावरण: विजुअल स्टूडियो या कोई अन्य संगत IDE.
 - C# की बुनियादी समझ: C# प्रोग्रामिंग भाषा और .NET फ्रेमवर्क से परिचित होना।
--  Aspose लाइसेंस: Aspose.Words की पूरी क्षमता को अनलॉक करने के लिए, प्राप्त करने पर विचार करें[लाइसेंस](https://purchase.aspose.com/buy) . आप इसका उपयोग भी कर सकते हैं[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन के लिए।
+-  Aspose लाइसेंस: Aspose.Words की पूरी क्षमता को अनलॉक करने के लिए, प्राप्त करने पर विचार करें[लाइसेंस](https://purchase.aspose.com/buy) . आप इसका उपयोग भी कर सकते हैं[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
 
 ## नामस्थान आयात करें
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 ### क्या मुझे .NET के लिए Aspose.Words का उपयोग करने के लिए लाइसेंस की आवश्यकता है?
 
- जबकि आप मूल्यांकन के लिए लाइसेंस के बिना .NET के लिए Aspose.Words का उपयोग कर सकते हैं, पूर्ण कार्यक्षमता को अनलॉक करने के लिए लाइसेंस की आवश्यकता होती है। आप लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/buy)या का उपयोग करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन के लिए।
+ जबकि आप मूल्यांकन के लिए लाइसेंस के बिना .NET के लिए Aspose.Words का उपयोग कर सकते हैं, पूर्ण कार्यक्षमता को अनलॉक करने के लिए लाइसेंस की आवश्यकता होती है। आप लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/buy)या का उपयोग करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
 
 ### मैं कैसे सुनिश्चित कर सकता हूं कि मेरे दस्तावेज़ PDF/A मानकों के अनुरूप हैं?
 

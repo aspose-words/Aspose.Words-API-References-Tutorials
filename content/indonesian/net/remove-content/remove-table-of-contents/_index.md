@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 ## Langkah 3: Identifikasi dan Hapus Bidang TOC
 
-Ini adalah dimana keajaiban terjadi. Kami akan mencari bidang TOC dan menghapusnya.
+Di sinilah keajaiban terjadi. Kami akan mencari bidang TOC dan menghapusnya.
 
 ```csharp
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Invoering
 
 Als u met documenten in .NET werkt en Aspose.Words gebruikt, kan het beheren van lettertypebronnen een cruciaal aspect zijn om ervoor te zorgen dat uw documenten er uitzien zoals verwacht. Aspose.Words biedt een krachtige manier om met lettertypen om te gaan, inclusief het gebruik van bronstromen. In deze handleiding bespreken we het gebruik van een bronstroom als lettertypebron met Aspose.Words voor .NET. Laten we erin duiken!
 
@@ -15,7 +16,7 @@ Als u met documenten in .NET werkt en Aspose.Words gebruikt, kan het beheren van
 Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
 - Basiskennis van C#: Bekendheid met programmeren in C# helpt u mee te volgen.
--  Aspose.Words voor .NET Library: Download en installeer het vanaf de .NET-bibliotheek[download link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET Library: Download en installeer het vanaf de .NET-bibliotheek[downloadlink](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Een opstelling zoals Visual Studio om uw code te schrijven en uit te voeren.
 -  Voorbeelddocument: zorg dat u een voorbeelddocument hebt (bijv.`Rendering.docx`) klaar om de lettertype-instellingen te testen.
 
@@ -73,7 +74,7 @@ internal class ResourceSteamFontSource : StreamFontSource
 }
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het document op nadat u de lettertype-instellingen hebt toegepast. Bewaar het in een formaat naar keuze; hier slaan we het op als PDF.
 
@@ -99,11 +100,11 @@ U hebt nu het proces van het gebruik van een bronstroom als lettertypebron onder
 
 ###  Vraag 3: Kan ik andere soorten waarschuwingen verwerken?`IWarningCallback`?
 
- Ja de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
+ Ja, de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
 
 ### V4: Waar kan ik ondersteuning vinden voor Aspose.Words?
 
- Bezoek de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+ Bezoek de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.
 
 ### V5: Is het mogelijk om een tijdelijke licentie voor Aspose.Words te krijgen?
 

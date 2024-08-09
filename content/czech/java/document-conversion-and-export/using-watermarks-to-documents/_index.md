@@ -16,7 +16,7 @@ V tomto tutoriálu prozkoumáme, jak přidat vodoznaky do dokumentů pomocí Asp
 
 Než začneme přidávat vodoznaky do dokumentů, musíme nastavit Aspose.Words pro Javu. Chcete-li začít, postupujte takto:
 
-1.  Stáhněte si Aspose.Words pro Java z[tady](https://releases.aspose.com/words/java/).
+1.  Stáhněte si Aspose.Words pro Java z[zde](https://releases.aspose.com/words/java/).
 2. Přidejte knihovnu Aspose.Words for Java do svého projektu Java.
 3. Importujte potřebné třídy do kódu Java.
 

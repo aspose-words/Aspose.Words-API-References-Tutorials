@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
-## Úvod
+## Zavedení
 
 oblasti zpracování dokumentů může optimalizace způsobu ukládání souborů výrazně zvýšit jejich kvalitu a použitelnost. Aspose.Words for .NET nabízí nepřeberné množství funkcí, které zajistí, že vaše dokumenty aplikace Word budou uloženy s přesností. Jednou z takových funkcí je možnost „Nekomprimovat malé metasoubory“. Tento kurz vás provede procesem využití této funkce k zachování integrity vašich metasouborů v dokumentech aplikace Word. Pojďme se ponořit!
 
@@ -15,7 +15,7 @@ oblasti zpracování dokumentů může optimalizace způsobu ukládání soubor�
 
 Než začneme, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET: Stáhněte si a nainstalujte nejnovější verzi z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Stáhněte si a nainstalujte nejnovější verzi z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné kompatibilní IDE.
 - Základní porozumění C#: Seznámení s programovacím jazykem C# a .NET frameworkem.
 -  Licence Aspose: Chcete-li odemknout plný potenciál Aspose.Words, zvažte získání a[licence](https://purchase.aspose.com/buy) . Můžete také použít a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
@@ -94,7 +94,7 @@ Ano, Aspose.Words for .NET vám umožňuje konfigurovat možnosti ukládání pr
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- I když můžete Aspose.Words for .NET používat bez licence pro hodnocení, k odemknutí plné funkčnosti je vyžadována licence. Můžete získat licenci[tady](https://purchase.aspose.com/buy)nebo použijte a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
+ I když můžete Aspose.Words for .NET používat bez licence pro hodnocení, k odemknutí plné funkčnosti je vyžadována licence. Můžete získat licenci[zde](https://purchase.aspose.com/buy)nebo použijte a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
 
 ### Jak mohu zajistit, aby mé dokumenty odpovídaly standardům PDF/A?
 
@@ -102,4 +102,4 @@ Ano, Aspose.Words for .NET vám umožňuje konfigurovat možnosti ukládání pr
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
 
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/) a můžete si stáhnout nejnovější verzi[tady](https://releases.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/) a můžete si stáhnout nejnovější verzi[zde](https://releases.aspose.com/words/net/).

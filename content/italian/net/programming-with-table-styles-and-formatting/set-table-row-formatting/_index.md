@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
-## introduzione
+## Introduzione
 
 Se stai cercando di padroneggiare l'arte della formattazione delle tabelle nei documenti Word utilizzando Aspose.Words per .NET, sei nel posto giusto. Questo tutorial ti guiderà attraverso il processo di impostazione della formattazione delle righe della tabella, assicurando che i tuoi documenti non siano solo funzionali ma anche esteticamente gradevoli. Quindi, tuffiamoci e trasformiamo quelle tabelle semplici in tabelle ben formattate!
 
@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 
 ## Conclusione
 
-E il gioco è fatto! Hai creato con successo una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Questo processo può essere esteso e personalizzato per soddisfare requisiti più complessi, ma questi passaggi di base forniscono una solida base. Sperimenta diverse opzioni di formattazione e scopri come migliorano i tuoi documenti.
+Ed ecco qua! Hai creato con successo una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Questo processo può essere esteso e personalizzato per soddisfare requisiti più complessi, ma questi passaggi di base forniscono una solida base. Sperimenta diverse opzioni di formattazione e scopri come migliorano i tuoi documenti.
 
 ## Domande frequenti
 

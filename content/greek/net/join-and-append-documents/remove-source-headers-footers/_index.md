@@ -79,7 +79,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Η κατάργηση κεφαλίδων και υποσέλιδων από ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET είναι μια απλή διαδικασία που μπορεί να βελτιώσει σημαντικά τις εργασίες διαχείρισης εγγράφων. Ακολουθώντας τα βήματα που περιγράφονται παραπάνω, μπορείτε να καθαρίσετε αποτελεσματικά τα έγγραφα για μια κομψή, επαγγελματική εμφάνιση.
 
@@ -98,4 +98,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 Ναι, το Aspose.Words για .NET σάς επιτρέπει να αφαιρείτε κεφαλίδες και υποσέλιδα διατηρώντας παράλληλα την υπόλοιπη μορφοποίηση του εγγράφου.
 
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη για το Aspose.Words για .NET;
- Επισκέψου το[Aspose.Words για τεκμηρίωση .NET](https://reference.aspose.com/words/net/) για λεπτομερείς αναφορές και παραδείγματα API.
+ Επισκεφθείτε το[Aspose.Words για τεκμηρίωση .NET](https://reference.aspose.com/words/net/) για λεπτομερείς αναφορές και παραδείγματα API.

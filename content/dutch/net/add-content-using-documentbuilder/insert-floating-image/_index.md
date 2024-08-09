@@ -100,7 +100,7 @@ Dit is wat elke parameter betekent:
 - `100`: De hoogte van de afbeelding (in punten).
 - `WrapType.Square`: De tekstterugloopstijl rond de afbeelding.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document ten slotte op de gewenste locatie op.
 

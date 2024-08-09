@@ -40,7 +40,7 @@ using System.Linq;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ## 2단계: 문서 로드
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ## FAQ
 
 ### .NET용 Aspose.Words를 사용하여 다른 유형의 필드를 변환할 수 있나요?
- 예, Aspose.Words for .NET을 사용하면 IF 필드뿐만 아니라 다양한 유형의 필드를 조작할 수 있습니다. 당신은 탐색 할 수 있습니다[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 예, Aspose.Words for .NET을 사용하면 IF 필드뿐만 아니라 다양한 유형의 필드를 조작할 수 있습니다. 당신은 탐색 할 수 있습니다[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### Word 문서의 IF 필드란 무엇입니까?
 IF 필드는 특정 조건에 따라 텍스트를 표시하는 조건부 필드입니다. Word 문서에서 동적 콘텐츠를 만드는 데 자주 사용됩니다.

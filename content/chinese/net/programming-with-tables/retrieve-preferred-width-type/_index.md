@@ -81,7 +81,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-这些代码行访问表格第一行的第一个单元格并检索其首选的宽度类型和值。`PreferredWidthType`可`Auto`, `Percent`， 或者`Point`，说明如何确定宽度。
+这些代码行访问表格第一行的第一个单元格并检索其首选的宽度类型和值。`PreferredWidthType`可以`Auto`, `Percent`， 或者`Point`，说明如何确定宽度。
 
 ## 步骤 6：显示结果
 
@@ -106,7 +106,7 @@ Console.WriteLine("Preferred Width Value: " + value);
 
 ### 可能的值有哪些`PreferredWidthType`?
 
-`PreferredWidthType`可`Auto`, `Percent`， 或者`Point`.
+`PreferredWidthType`可以`Auto`, `Percent`， 或者`Point`.
 
 ### 是否可以通过编程设置首选宽度类型？
 

@@ -15,7 +15,7 @@ Salut! Avez-vous déjà travaillé avec des graphiques dans vos documents et sou
 
 Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin. Voici une liste de contrôle rapide :
 
--  Aspose.Words pour .NET : assurez-vous de l'avoir installé. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : assurez-vous de l'avoir installé. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - .NET Framework : assurez-vous qu'un framework .NET compatible est installé.
 - Environnement de développement : un IDE comme Visual Studio fonctionnera parfaitement.
 - Connaissance de base de C# : cela vous aidera à suivre les exemples de codage.
@@ -86,7 +86,7 @@ Enfin, formatons les nombres sur l'axe Y pour les rendre plus lisibles. C’est 
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
- Le`FormatCode` La propriété vous permet de définir un format personnalisé pour les nombres sur l’axe. Dans cet exemple,`#,##0`garantit que les grands nombres sont affichés avec des virgules pour les milliers.
+ Le`FormatCode` La propriété vous permet de définir un format personnalisé pour les nombres sur l'axe. Dans cet exemple,`#,##0`garantit que les grands nombres sont affichés avec des virgules pour les milliers.
 
 ## Étape 5 : Sauvegarde du document
 
@@ -98,11 +98,11 @@ Maintenant que tout est configuré, il est temps de sauvegarder votre document. 
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
- Ici le`Save` La méthode enregistre le document dans le chemin spécifié avec le nom de fichier`WorkingWithCharts.NumberFormatForAxis.docx`.
+ Ici, le`Save` La méthode enregistre le document dans le chemin spécifié avec le nom de fichier`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Conclusion
 
-Et voila! Vous avez formaté avec succès les nombres sur l'axe Y de votre graphique à l'aide d'Aspose.Words pour .NET. Cela donne non seulement à vos graphiques un aspect plus professionnel, mais améliore également la lisibilité. Aspose.Words offre une multitude de fonctionnalités qui peuvent vous aider à créer de superbes documents Word par programmation. Alors, pourquoi ne pas explorer davantage et voir ce que vous pouvez faire d’autre ?
+Et voilà ! Vous avez formaté avec succès les nombres sur l'axe Y de votre graphique à l'aide d'Aspose.Words pour .NET. Cela donne non seulement à vos graphiques un aspect plus professionnel, mais améliore également la lisibilité. Aspose.Words offre une multitude de fonctionnalités qui peuvent vous aider à créer de superbes documents Word par programmation. Alors, pourquoi ne pas explorer davantage et voir ce que vous pouvez faire d’autre ?
 
 ## FAQ
 

@@ -98,7 +98,7 @@ Aspose.Words for .NET — это мощная библиотека, котора
 
 ### Как я могу получить Aspose.Words для .NET?
 
- Вы можете загрузить Aspose.Words для .NET с сайта[Веб-сайт](https://releases.aspose.com/words/net/) . Также есть вариант для[бесплатная пробная версия](https://releases.aspose.com/) если вы хотите изучить его возможности.
+ Вы можете загрузить Aspose.Words для .NET с сайта[веб-сайт](https://releases.aspose.com/words/net/) . Также есть вариант для[бесплатная пробная версия](https://releases.aspose.com/) если вы хотите изучить его возможности.
 
 ### Могу ли я использовать Aspose.Words для .NET с любым приложением .NET?
 

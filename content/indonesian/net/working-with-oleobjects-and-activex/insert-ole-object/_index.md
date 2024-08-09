@@ -2,108 +2,76 @@
 title: Masukkan Objek Ole ke dalam Dokumen Word
 linktitle: Masukkan Objek Ole ke dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan objek OLE dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menyisipkan objek OLE di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurnakan dokumen Anda dengan konten yang disematkan.
 type: docs
 weight: 10
 url: /id/net/working-with-oleobjects-and-activex/insert-ole-object/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini yang menggambarkan cara menyisipkan objek OLE di dokumen Word menggunakan Aspose.Words untuk .NET.
+Saat bekerja dengan dokumen Word di .NET, mengintegrasikan berbagai tipe data sangatlah penting. Salah satu fitur canggihnya adalah kemampuan untuk menyisipkan objek OLE (Object Linking and Embedding) ke dalam dokumen Word. Objek OLE bisa berupa konten apa pun, seperti spreadsheet Excel, presentasi PowerPoint, atau konten HTML. Dalam panduan ini, kita akan mempelajari cara menyisipkan objek OLE ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ayo selami!
 
-## Langkah 1: Impor referensi yang diperlukan
-Sebelum memulai, pastikan Anda telah mengimpor referensi yang diperlukan untuk menggunakan Aspose.Words untuk .NET ke dalam proyek Anda. Ini termasuk mengimpor perpustakaan Aspose.Words dan menambahkan namespace yang diperlukan ke file sumber Anda.
+## Prasyarat
+
+Sebelum kita mulai, pastikan Anda memiliki yang berikut:
+
+1. Aspose.Words untuk .NET Library: Unduh dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan .NET lainnya.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# diasumsikan.
+
+## Impor Namespace
+
+Untuk memulai, pastikan Anda mengimpor namespace yang diperlukan dalam proyek C# Anda:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## Langkah 2: Buat dokumen baru dan pembuat dokumen
- Pada langkah ini, kita akan membuat dokumen baru menggunakan`Document` kelas dan pembuat dokumen menggunakan`DocumentBuilder` kelas.
+Mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola.
+
+## Langkah 1: Buat Dokumen Baru
+
+Pertama, Anda harus membuat dokumen Word baru. Ini akan berfungsi sebagai wadah untuk objek OLE kita.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 3: Masukkan objek OLE
- Gunakan Pembuat Dokumen`InsertOleObject`metode untuk memasukkan objek OLE ke dalam dokumen. Tentukan URL objek OLE, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan.
+## Langkah 2: Masukkan Objek OLE
+
+ Selanjutnya, Anda akan menggunakan`DocumentBuilder`kelas untuk menyisipkan objek OLE. Di sini, kami menggunakan file HTML yang terletak di "http://www.aspose.com" sebagai contoh.
 
 ```csharp
-builder. InsertOleObject("http://www.aspose.com", "htmlfile", benar, benar, nol);
+builder.InsertOleObject("http://www.aspose.com", "htmlfile", benar, benar, nol);
 ```
 
-## Langkah 4: Simpan dokumen
- Gunakan dokumen itu`Save` metode untuk menyimpan dokumen ke file.
+## Langkah 3: Simpan Dokumen
+
+Terakhir, simpan dokumen Anda ke jalur yang ditentukan. Pastikan jalurnya benar dan dapat diakses.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 ```
-
-### Contoh kode sumber untuk menyisipkan objek OLE dengan Aspose.Words untuk .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. InsertOleObject("http://www.aspose.com", "htmlfile", benar, benar, nol);
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
-
-Ini adalah contoh kode lengkap untuk menyisipkan objek OLE dengan Aspose.Words untuk .NET. Pastikan untuk mengimpor referensi yang diperlukan dan ikuti langkah-langkah yang dijelaskan sebelumnya untuk mengintegrasikan kode ini ke dalam proyek Anda.
 
 ## Kesimpulan
 
-Kesimpulannya, memasukkan objek OLE ke dalam dokumen Word adalah fitur canggih yang ditawarkan oleh Aspose.Words untuk .NET. Dengan menggunakan perpustakaan ini, Anda dapat dengan mudah menyematkan objek OLE seperti file HTML, spreadsheet Excel, presentasi PowerPoint, dll., ke dalam dokumen Word Anda.
+Memasukkan objek OLE ke dalam dokumen Word menggunakan Aspose.Words untuk .NET adalah fitur canggih yang memungkinkan penyertaan beragam tipe konten. Baik itu file HTML, spreadsheet Excel, atau konten lain yang kompatibel dengan OLE, kemampuan ini dapat meningkatkan fungsionalitas dan interaktivitas dokumen Word Anda secara signifikan. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat mengintegrasikan objek OLE ke dalam dokumen Anda dengan lancar, menjadikannya lebih dinamis dan menarik.
 
-Pada artikel ini, kita telah melalui panduan langkah demi langkah untuk menjelaskan kode sumber dalam C# yang menggambarkan cara menyisipkan objek OLE ke dalam dokumen Word. Kami membahas referensi yang diperlukan, membuat dokumen baru dan pembuat dokumen, serta langkah-langkah untuk menyisipkan objek OLE dan menyimpan dokumen.
+## FAQ
 
-### FAQ untuk menyisipkan objek OLE ke dalam dokumen Word
+### Jenis objek OLE apa yang dapat saya sisipkan menggunakan Aspose.Words untuk .NET?
+Anda dapat menyisipkan berbagai tipe objek OLE, termasuk file HTML, spreadsheet Excel, presentasi PowerPoint, dan konten lain yang kompatibel dengan OLE.
 
-#### T: Kredensial apa yang perlu saya impor untuk menggunakan Aspose.Words untuk .NET?
+### Bisakah saya menampilkan objek OLE sebagai ikon dan bukan konten sebenarnya?
+ Ya, Anda dapat memilih untuk menampilkan objek OLE sebagai ikon dengan mengatur`asIcon` parameter ke`true`.
 
-J: Untuk menggunakan Aspose.Words untuk .NET, Anda perlu mengimpor referensi berikut:
+### Apakah mungkin untuk menghubungkan objek OLE ke file sumbernya?
+ Ya, dengan mengatur`isLinked` parameter ke`true`, Anda dapat menautkan objek OLE ke file sumbernya.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-```
+### Bagaimana cara menyesuaikan ikon yang digunakan untuk objek OLE?
+ Anda dapat memberikan ikon khusus dengan menyediakan`Image` objek sebagai`image` parameter di`InsertOleObject` metode.
 
-#### T: Bagaimana cara membuat dokumen baru dan pembuat dokumen?
-
- J: Anda dapat membuat dokumen baru menggunakan`Document` kelas dan pembuat dokumen menggunakan`DocumentBuilder` kelas, seperti gambar dibawah ini:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### T: Bagaimana cara menyisipkan objek OLE ke dalam dokumen?
-
- J: Gunakan`InsertOleObject` metode pembuat dokumen (`DocumentBuilder`) untuk menyisipkan objek OLE ke dalam dokumen. Tentukan URL objek OLE, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan. Berikut ini contohnya:
-
-```csharp
-builder. InsertOleObject("http://www.aspose.com", "htmlfile", benar, benar, nol);
-```
-
-#### Q: Bagaimana cara menyimpan dokumen?
-
- J: Gunakan dokumen tersebut`Save`metode untuk menyimpan dokumen ke file. Berikut ini contohnya:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
-
-#### T: Dapatkah Anda memberikan contoh lengkap menyisipkan objek OLE dengan Aspose.Words untuk .NET?
-
-A: Berikut adalah contoh kode lengkap untuk menyisipkan objek OLE dengan Aspose.Words untuk .NET. Pastikan untuk mengimpor referensi yang diperlukan dan ikuti langkah-langkah yang dijelaskan sebelumnya untuk mengintegrasikan kode ini ke dalam proyek Anda:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. InsertOleObject("http://www.aspose.com", "htmlfile", benar, benar, nol);
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+ Anda dapat menemukan dokumentasi terperinci di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/).

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
-## introduzione
+## Introduzione
 
 Ti capita mai di grattarti la testa chiedendoti perché i tuoi file PDF sono così grandi? Beh, non sei solo. Un colpevole comune è l’incorporamento di caratteri principali come Arial e Times New Roman. Fortunatamente, Aspose.Words per .NET ha un modo ingegnoso per affrontare questo problema. In questo tutorial, ti mostrerò come ridurre le dimensioni del tuo file PDF evitando l'incorporamento di questi caratteri principali. Immergiamoci subito!
 
@@ -74,7 +74,7 @@ Infine, salviamo il documento Word come PDF utilizzando le opzioni di salvataggi
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-E il gioco è fatto! Il tuo file PDF è ora salvato nella directory specificata senza quei caratteri principali ingombranti.
+Ed ecco qua! Il tuo file PDF è ora salvato nella directory specificata senza quei caratteri principali ingombranti.
 
 ## Conclusione
 

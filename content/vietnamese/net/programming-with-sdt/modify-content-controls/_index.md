@@ -15,7 +15,7 @@ Nếu bạn đã từng làm việc với tài liệu Word và cần sửa đổ
 
 Trước khi chúng ta đi sâu vào việc sửa đổi các điều khiển nội dung, hãy đảm bảo bạn có những điều sau:
 
-1.  Đã cài đặt Aspose.Words cho .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Đã cài đặt Aspose.Words cho .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu không, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 
 2. Kiến thức cơ bản về C#: Hướng dẫn này giả định rằng bạn đã quen thuộc với các khái niệm lập trình C# cơ bản.
 
@@ -181,4 +181,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-Đó là nó! Bạn đã sửa đổi thành công các loại điều khiển nội dung khác nhau trong tài liệu Word của mình bằng Aspose.Words for .NET.
+Thế thôi! Bạn đã sửa đổi thành công các loại điều khiển nội dung khác nhau trong tài liệu Word của mình bằng Aspose.Words for .NET.

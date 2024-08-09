@@ -15,7 +15,7 @@ Bienvenue dans le monde merveilleux d'Aspose.Words pour .NET ! Aujourd'hui, nou
 
 Avant de passer aux détails, assurons-nous que nous avons tout ce dont nous avons besoin :
 
-1.  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version.[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version.[Téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout autre IDE compatible C#.
 3. Connaissance de base de C# : il est utile d'avoir un peu de familiarité avec le framework C# et .NET.
 4. Licence : vous pouvez utiliser une licence temporaire si vous n'en possédez pas une complète. L'obtenir[ici](https://purchase.aspose.com/temporary-license/).
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous avez réussi à exporter des informations aller-retour d'un document Word vers HTML à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante garantit que vos documents conservent leur intégrité et leur formatage lors des conversions, ce qui vous simplifie grandement la vie.
+Et voilà ! Avec seulement quelques lignes de code, vous avez réussi à exporter des informations aller-retour d'un document Word vers HTML à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante garantit que vos documents conservent leur intégrité et leur formatage lors des conversions, ce qui vous simplifie grandement la vie.
 
 ## FAQ
 

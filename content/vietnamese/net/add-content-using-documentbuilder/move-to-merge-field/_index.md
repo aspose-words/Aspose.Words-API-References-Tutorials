@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Trong bước này, chúng ta khởi tạo một tài liệu mới và một`DocumentBuilder` sự vật. Các`DocumentBuilder` là công cụ của bạn để xây dựng tài liệu.
+ Trong bước này, chúng ta khởi tạo một tài liệu mới và một`DocumentBuilder` sự vật. các`DocumentBuilder` là công cụ của bạn để xây dựng tài liệu.
 
 ## Bước 2: Chèn trường hợp nhất
 
@@ -101,7 +101,7 @@ builder.Write(" Text immediately after the field.");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Di chuyển đến trường hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET thật dễ dàng khi bạn chia nó thành các bước đơn giản. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng điều hướng và thao tác với tài liệu Word của mình, giúp các tác vụ tự động hóa tài liệu của bạn trở nên dễ dàng. Vì vậy, lần tới khi bạn ở trong mê cung các trường hợp nhất, bạn sẽ có bản đồ để hướng dẫn bạn!
+Và bạn có nó! Di chuyển đến trường hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET thật dễ dàng khi bạn chia nó thành các bước đơn giản. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng điều hướng và thao tác với tài liệu Word của mình, giúp các tác vụ tự động hóa tài liệu của bạn trở nên dễ dàng. Vì vậy, lần tới khi bạn ở trong mê cung các trường hợp nhất, bạn sẽ có bản đồ để hướng dẫn bạn!
 
 ## Câu hỏi thường gặp
 

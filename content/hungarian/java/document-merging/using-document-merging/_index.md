@@ -2,7 +2,7 @@
 title: A dokumentum-egyesítés használata
 linktitle: A dokumentum-egyesítés használata
 second_title: Aspose.Words Java Document Processing API
-description: Tanulja meg a Word dokumentumok zökkenőmentes egyesítését az Aspose.Words for Java segítségével. Hatékonyan kombinálhatja, formázhatja és kezelheti a konfliktusokat néhány lépésben. Kezd el most!
+description: Tanulja meg a Word dokumentumok zökkenőmentes egyesítését az Aspose.Words for Java segítségével. Hatékonyan kombinálhatja, formázhatja és kezelheti a konfliktusokat néhány lépésben. Kezdje el most!
 type: docs
 weight: 10
 url: /hu/java/document-merging/using-document-merging/
@@ -165,7 +165,7 @@ public class DocumentMerger {
 }
 ```
 
- Használva`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Az Aspose.Words megőrzi a különböző stílusokat a forrás- és a céldokumentum között, így kecsesen oldja meg a konfliktusokat.
+ Használatával`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Az Aspose.Words megőrzi a különböző stílusokat a forrás- és a céldokumentum között, így kecsesen oldja meg a konfliktusokat.
 
 ## 9. A dokumentumok egyesítésére vonatkozó legjobb gyakorlatok
 

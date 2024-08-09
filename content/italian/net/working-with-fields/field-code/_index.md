@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/field-code/
 ---
-## introduzione
+## Introduzione
 
 In questa guida esploreremo come lavorare con i codici di campo nei documenti Word utilizzando Aspose.Words per .NET. Al termine di questo tutorial ti sentirai a tuo agio nella navigazione tra i campi, nell'estrazione dei relativi codici e nell'utilizzo di queste informazioni per le tue esigenze. Sia che tu voglia ispezionare le proprietà dei campi o automatizzare le modifiche ai documenti, questa guida passo passo ti renderà esperto nella gestione dei codici di campo con facilità.
 
@@ -87,7 +87,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
-Spiegazione: Questo ciclo migliorato stampa i codici di campo e i relativi risultati sulla console. Questo è utile per il debug o semplicemente per capire cosa sta facendo ogni campo.
+Spiegazione: Questo ciclo migliorato stampa i codici di campo e i relativi risultati sulla console. Questo è utile per il debug o semplicemente per capire cosa sta facendo ciascun campo.
 
 ## Conclusione
 
@@ -115,4 +115,4 @@ codici di campo sono segnaposto in un documento di Word che generano dinamicamen
 
 ### Dove posso ottenere maggiori informazioni su Aspose.Words?
 
-Per documentazione dettagliata, tutorial e supporto, visitare il sito[Documentazione Aspose.Words](https://reference.aspose.com/words/net/), [Pagina di download](https://releases.aspose.com/words/net/) , O[Forum di assistenza](https://forum.aspose.com/c/words/8).
+Per documentazione dettagliata, tutorial e supporto, visitare il sito[Documentazione Aspose.Words](https://reference.aspose.com/words/net/), [Pagina di download](https://releases.aspose.com/words/net/) , O[Forum di supporto](https://forum.aspose.com/c/words/8).

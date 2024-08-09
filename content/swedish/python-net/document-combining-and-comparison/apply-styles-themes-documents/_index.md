@@ -151,7 +151,7 @@ Genom att använda stilar och teman med Aspose.Words för Python kan du skapa vi
 
 ### Hur kan jag ladda ner Aspose.Words för Python?
 
- Du kan ladda ner Aspose.Words for Python från webbplatsen:[Nedladdningslänk](https://releases.aspose.com/words/python/).
+ Du kan ladda ner Aspose.Words for Python från webbplatsen:[Ladda ner länk](https://releases.aspose.com/words/python/).
 
 ### Kan jag skapa mina egna anpassade stilar?
 

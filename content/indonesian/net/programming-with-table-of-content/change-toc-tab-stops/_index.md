@@ -15,7 +15,7 @@ Pernah bertanya-tanya bagaimana cara meramaikan Daftar Isi (TOC) di dokumen Word
 
 Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE apa pun yang kompatibel dengan C#.
 3. Dokumen Word: Khususnya, dokumen yang berisi TOC.
 
@@ -69,7 +69,7 @@ Anggap saja seperti memindai kerumunan untuk menemukan teman Anda. Di sini, kami
 
 ## Langkah 3: Ubah Tab Stop
 
-Mengapa? Ini adalah dimana keajaiban terjadi. Mengubah perhentian tab membuat TOC Anda terlihat lebih bersih.
+Mengapa? Di sinilah keajaiban terjadi. Mengubah perhentian tab membuat TOC Anda terlihat lebih bersih.
 
 Bagaimana? Hapus tab stop yang ada dan tambahkan yang baru pada posisi yang diubah:
 

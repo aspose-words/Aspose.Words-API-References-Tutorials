@@ -87,7 +87,7 @@ secondShape.Rotation = 30.0;
 添加形状后，最后一步是保存文档。我们将使用`OoxmlSaveOptions`指定保存格式。
 
 ```csharp
-//定义符合法规要求的保存选项
+//定义符合规定的保存选项
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 {
     Compliance = OoxmlCompliance.Iso29500_2008_Transitional
@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ## 常见问题解答
 
 ### 如何插入不同类型的形状？
-您可以更改`ShapeType`在里面`InsertShape`方法插入不同类型的形状，如圆形、矩形和箭头。
+您可以更改`ShapeType`在`InsertShape`方法插入不同类型的形状，如圆形、矩形和箭头。
 
 ### 我可以在形状内添加文字吗？
 是的，您可以使用`builder.Write`插入形状后在形状内部添加文本的方法。

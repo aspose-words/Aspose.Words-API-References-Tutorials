@@ -73,7 +73,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Η σύνδεση κεφαλίδων και υποσέλιδων μεταξύ εγγράφων χρησιμοποιώντας το Aspose.Words για .NET είναι απλή και διασφαλίζει τη συνέπεια στα έγγραφά σας, διευκολύνοντας τη διαχείριση και τη διατήρηση μεγάλων συνόλων εγγράφων.
 

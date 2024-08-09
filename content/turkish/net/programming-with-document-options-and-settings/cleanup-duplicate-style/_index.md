@@ -100,7 +100,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizdeki yinelenen stilleri başarıyla temizlediniz. Bu adımları izleyerek belgelerinizi temiz ve düzenli tutabilir, yönetilmesini kolaylaştırabilir ve stil sorunlarına daha az eğilimli olabilirsiniz. Herhangi bir araçta ustalaşmanın anahtarının pratik olduğunu unutmayın; bu nedenle Aspose.Words'ü denemeye devam edin ve sunduğu tüm güçlü özellikleri keşfedin.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizdeki yinelenen stilleri başarıyla temizlediniz. Bu adımları izleyerek belgelerinizi temiz ve düzenli tutabilir, yönetilmesini kolaylaştırabilir ve stil sorunlarına daha az eğilimli olabilirsiniz. Herhangi bir araçta ustalaşmanın anahtarının pratik olduğunu unutmayın; bu nedenle Aspose.Words'ü denemeye devam edin ve sunduğu tüm güçlü özellikleri keşfedin.
 
 ## SSS'ler
 

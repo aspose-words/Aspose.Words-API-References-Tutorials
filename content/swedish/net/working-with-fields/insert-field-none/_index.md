@@ -9,7 +9,7 @@ url: /sv/net/working-with-fields/insert-field-none/
 ---
 ## Introduktion
 
-Har du någonsin känt dig överväldigad av de repetitiva uppgifter som är involverade i att skapa och hantera dokument? Föreställ dig att ha en trollstav som kan automatisera dessa vardagliga uppgifter och frigöra din tid för mer kreativa ansträngningar. Nåväl, du har tur! Aspose.Words för .NET är den där trollstaven. Det är ett kraftfullt bibliotek som gör att du kan manipulera Word-dokument utan ansträngning. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att leda dig genom ins och outs med att använda Aspose.Words för .NET, med fokus på att infoga fält i dina dokument. Redo att dyka i? Låt oss börja!
+Har du någonsin känt dig överväldigad av de repetitiva uppgifter som är involverade i att skapa och hantera dokument? Föreställ dig att ha en trollstav som kan automatisera dessa vardagliga uppgifter och frigöra din tid för mer kreativa ansträngningar. Nåväl, du har tur! Aspose.Words för .NET är den där trollstaven. Det är ett kraftfullt bibliotek som gör att du kan manipulera Word-dokument utan ansträngning. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att leda dig genom ins och outs med att använda Aspose.Words för .NET, med fokus på att infoga fält i dina dokument. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -41,7 +41,7 @@ Innan vi kan skapa och spara dokument måste vi ange katalogen där våra dokume
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din dokumentmapp. Det är här ditt nya dokument kommer att sparas.
+ Ersätta`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din dokumentmapp. Det är här ditt nya dokument kommer att sparas.
 
 ## Steg 2: Skapa Document and DocumentBuilder
 
@@ -70,7 +70,7 @@ Slutligen, låt oss spara vårt dokument. Det är här allt ditt hårda arbete s
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-Och det är allt! Du har precis skapat ett Word-dokument och infogat ett fält med Aspose.Words för .NET. Ganska snyggt, eller hur?
+Och det är det! Du har precis skapat ett Word-dokument och infogat ett fält med Aspose.Words för .NET. Ganska snyggt, eller hur?
 
 ## Slutsats
 

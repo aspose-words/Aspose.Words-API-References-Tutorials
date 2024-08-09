@@ -2,79 +2,110 @@
 title: 펜스된 코드
 linktitle: 펜스된 코드
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words 단계별 가이드로 분리 코드 기능을 사용하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에 분리 코드 및 정보 문자열을 추가하는 방법을 알아보세요. 단계별 가이드가 포함되어 있습니다. 문서 서식 기술을 향상시키세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-markdown/fenced-code/
 ---
+## 소개
 
-이 예에서는 Aspose.Words for .NET에서 분리 코드 기능을 사용하는 방법을 안내합니다. 울타리 코드는 특정 형식의 코드 블록을 나타내는 데 사용됩니다.
+안녕하세요, 동료 코더입니다! 오늘 우리는 Word 문서에 분리 코드와 정보 문자열이 포함된 분리 코드를 추가하는 기술을 익히기 위해 .NET용 Aspose.Words의 세계로 뛰어들었습니다. Word 문서를 캔버스로 상상해 보세요. 예술가인 당신은 노련한 개발자의 정밀함으로 그림을 그리려고 합니다. Aspose.Words를 사용하면 구조화되고 형식화된 코드 블록을 사용하여 프로그래밍 방식으로 문서를 향상시켜 기술 문서를 전문성과 명확성으로 빛나게 만들 수 있습니다.
 
-## 1단계: 문서 생성기 사용
+## 전제 조건
 
-먼저 문서 생성기를 사용하여 문서에 콘텐츠를 추가하겠습니다.
+튜토리얼을 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
+
+- C#에 대한 기본 지식: C#에 대한 일반적인 이해는 개념을 빠르게 이해하는 데 도움이 됩니다.
+-  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 아직 못받으셨다면 꼭 챙겨가세요[여기](https://releases.aspose.com/words/net/).
+- 개발 환경: Visual Studio 또는 익숙한 기타 C# IDE.
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져와야 합니다. 이는 프로젝트를 시작하기 전에 모든 도구를 모으는 것과 같습니다.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+이제 프로세스를 단계별로 분석해 보겠습니다.
+
+## 1단계: 프로젝트 설정
+
+Word 문서에서 아름답고 서식이 지정된 코드 블록을 만들려면 먼저 Visual Studio에서 새 프로젝트를 설정해야 합니다.
+
+1. 새 프로젝트 만들기: Visual Studio를 열고 새 C# 콘솔 애플리케이션을 만듭니다.
+2. Aspose.Words 참조 추가: NuGet 패키지 관리자를 통해 Aspose.Words를 설치합니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 "NuGet 패키지 관리"를 선택한 다음 Aspose.Words를 검색하면 됩니다.
+
+## 2단계: DocumentBuilder 초기화
+
+이제 프로젝트가 설정되었으므로 Word 문서에 콘텐츠를 추가하기 위한 기본 도구가 될 DocumentBuilder를 초기화해 보겠습니다.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2단계: 분리된 코드에 대한 스타일 추가
+## 3단계: 분리된 코드에 대한 스타일 생성
 
- 다음을 사용하여 울타리 코드에 대한 사용자 정의 스타일을 추가하겠습니다.`Styles.Add` 의 방법`Document` 물체. 이 예에서는 분리된 코드에 대해 "FencedCode"라는 스타일을 생성합니다.
+분리된 코드를 추가하려면 먼저 스타일을 생성해야 합니다. 이것을 코드 블록의 테마를 설정하는 것으로 생각하십시오.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## 3단계: 정보 없이 분리된 코드 추가
+## 4단계: 문서에 분리 코드 추가
 
-이제 "FencedCode" 사용자 정의 스타일을 사용하여 정보 문자열이 없는 울타리 코드 블록을 추가할 수 있습니다.
+스타일이 준비되었으므로 이제 문서에 분리된 코드 블록을 추가할 수 있습니다.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## 4단계: 정보 문자열이 포함된 분리 코드 추가
+## 5단계: 정보 문자열을 사용하여 분리 코드에 대한 스타일 생성
 
-다른 사용자 정의 스타일을 사용하여 정보 문자열이 포함된 분리된 코드 블록을 추가할 수도 있습니다. 이 예에서는 C# 코드 블록을 나타내기 위해 "FencedCode.C#"이라는 스타일을 만듭니다.
+때로는 프로그래밍 언어를 지정하거나 코드 블록에 추가 정보를 추가해야 할 수도 있습니다. 이에 대한 스타일을 만들어 보겠습니다.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### .NET용 Aspose.Words를 사용하는 Fenced Code의 예제 소스 코드
+## 6단계: 정보 문자열이 포함된 분리 코드를 문서에 추가
+
+이제 C# 코드임을 나타내기 위해 정보 문자열이 포함된 분리된 코드 블록을 추가해 보겠습니다.
 
 ```csharp
-// 문서 빌더를 사용하여 문서에 콘텐츠를 추가합니다.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### FAQ
+## 결론
 
-#### Q: Markdown의 구분 코드란 무엇입니까?
+축하해요! 방금 Aspose.Words for .NET을 사용하여 Word 문서에 정보 문자열이 포함된 울타리 코드 블록과 울타리 코드를 추가했습니다. 이것은 빙산의 일각에 불과합니다. Aspose.Words를 사용하면 문서 처리를 새로운 차원으로 자동화하고 향상할 수 있습니다. 계속 탐색하고 즐거운 코딩을 즐겨보세요!
 
-A: Markdown의 구분 코드는 Markdown 문서에 코드를 표시하는 데 사용되는 서식 지정 방법입니다. 이는 특정 구분 기호를 사용하여 코드를 프레이밍하는 것으로 구성됩니다.
+## FAQ
 
-#### Q: Markdown에서 구분 코드를 사용하면 어떤 이점이 있나요?
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 라이브러리입니다.
 
-A: Markdown의 구분 코드는 코드 가독성을 높이고 독자가 더 쉽게 이해할 수 있도록 해줍니다. 또한 일부 Markdown 편집기에서 구문 강조를 유지할 수 있습니다.
+### Aspose.Words를 다른 프로그래밍 언어와 함께 사용할 수 있나요?
+Aspose.Words는 주로 .NET 언어를 지원하지만 Java, Python 및 기타 언어에 사용할 수 있는 버전도 있습니다.
 
-#### Q: Markdown에서 구분된 코드와 들여쓰기된 코드의 차이점은 무엇입니까?
+### Aspose.Words는 무료로 사용할 수 있나요?
+ Aspose.Words는 상용 제품이지만 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/)그 특징을 탐구합니다.
 
-A: 구분 코드는 특정 구분 기호를 사용하여 코드를 묶는 반면, 들여쓰기 코드는 각 코드 줄을 공백이나 탭으로 들여쓰기합니다.
+### Aspose.Words에 대한 지원은 어떻게 받을 수 있나요?
+ Aspose 커뮤니티와 개발자로부터 지원을 받을 수 있습니다[여기](https://forum.aspose.com/c/words/8).
 
-#### Q: 모든 Markdown 편집기에서 Markdown의 구분 코드를 지원합니까?
-
-A: Markdown의 구분 코드 지원은 Markdown 편집기마다 다를 수 있습니다. 확실하게 알아보려면 게시자의 특정 설명서를 확인하세요.
-
+### Aspose.Words는 어떤 다른 기능을 제공합니까?
+Aspose.Words는 문서 변환, 템플릿 기반 문서 생성, 보고 등을 포함한 광범위한 기능을 제공합니다.

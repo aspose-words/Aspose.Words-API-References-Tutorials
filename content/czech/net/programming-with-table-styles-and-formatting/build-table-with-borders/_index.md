@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/build-table-with-borders/
 ---
-## Úvod
+## Zavedení
 
 Vytváření tabulek s přizpůsobenými okraji v dokumentu aplikace Word může učinit váš obsah vizuálně přitažlivým a dobře organizovaným. S Aspose.Words for .NET můžete snadno vytvářet a formátovat tabulky s přesnou kontrolou nad okraji, styly a barvami. Tento tutoriál vás provede procesem krok za krokem a zajistí, že budete podrobně rozumět každé části kódu.
 

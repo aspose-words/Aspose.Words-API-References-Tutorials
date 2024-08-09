@@ -116,4 +116,4 @@ Absoluut, u kunt de samengevoegde logica in functies of klassen inkapselen om he
 
 ### Waar kan ik meer informatie vinden over Aspose.Words voor Python?
 
- Voor meer gedetailleerde informatie, documentatie en voorbeelden kunt u terecht op de website[Aspose.Words voor Python API-referenties](https://reference.aspose.com/words/python-net/) bladzijde.
+ Voor meer gedetailleerde informatie, documentatie en voorbeelden kunt u terecht op de website[Aspose.Words voor Python API-referenties](https://reference.aspose.com/words/python-net/) pagina.

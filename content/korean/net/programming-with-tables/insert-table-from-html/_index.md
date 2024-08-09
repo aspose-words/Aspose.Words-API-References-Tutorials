@@ -9,7 +9,7 @@ url: /ko/net/programming-with-tables/insert-table-from-html/
 ---
 ## 소개
 
-HTML의 표를 Word 문서에 삽입해야 했던 적이 있습니까? 웹 콘텐츠를 Word 문서로 변환해야 하는 프로젝트를 진행 중이거나 단순히 작업 흐름을 간소화하려는 경우 Aspose.Words for .NET이 도와드립니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 HTML의 테이블을 Word 문서에 삽입하는 전체 과정을 안내합니다. 전제 조건부터 자세한 단계별 가이드까지 필요한 모든 것을 다룹니다. 다이빙할 준비가 되셨나요? 시작하자!
+HTML의 표를 Word 문서에 삽입해야 했던 적이 있습니까? 웹 콘텐츠를 Word 문서로 변환해야 하는 프로젝트를 진행 중이거나 단순히 작업 흐름을 간소화하려는 경우 Aspose.Words for .NET이 도와드립니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 HTML의 테이블을 Word 문서에 삽입하는 전체 과정을 안내합니다. 전제 조건부터 자세한 단계별 가이드까지 필요한 모든 것을 다룹니다. 다이빙할 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 

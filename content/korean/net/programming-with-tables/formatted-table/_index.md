@@ -168,7 +168,7 @@ Aspose.Words for .NET은 프로그래밍 방식으로 Word 문서를 생성, 편
 예, 색상을 비롯한 다양한 서식을 행이나 셀마다 적용할 수 있습니다.
 
 ### .NET용 Aspose.Words는 무료인가요?
- Aspose.Words for .NET은 유료 라이브러리이지만[무료 시험판](https://releases.aspose.com/).
+ Aspose.Words for .NET은 유료 라이브러리이지만[무료 평가판](https://releases.aspose.com/).
 
 ### .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
  에서 지원을 받으실 수 있습니다.[Aspose 커뮤니티 포럼](https://forum.aspose.com/c/words/8).

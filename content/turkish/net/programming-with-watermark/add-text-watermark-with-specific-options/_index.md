@@ -109,4 +109,4 @@ Aspose.Words aynı anda bir filigran eklemeyi destekler. Birden fazla filigran e
 
 ### Yarı şeffaf bir filigrana ihtiyacım olursa ne olur?
 
- Yı kur`IsSemitrasparent`mülkiyet`true` filigranınızı yarı şeffaf hale getirmek için.
+ Ayarla`IsSemitrasparent`mülkiyet`true` filigranınızı yarı şeffaf hale getirmek için.

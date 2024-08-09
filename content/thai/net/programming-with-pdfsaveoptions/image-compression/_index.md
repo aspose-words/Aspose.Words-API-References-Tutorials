@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## ขั้นตอนที่ 3: กำหนดค่าการบีบอัดภาพพื้นฐาน
 
- สร้างก`PdfSaveOptions`วัตถุเพื่อกำหนดค่าตัวเลือกการบันทึก PDF รวมถึงการบีบอัดรูปภาพ ตั้ง`ImageCompression`ทรัพย์สินเพื่อ`PdfImageCompression.Jpeg` เพื่อใช้การบีบอัด JPEG สำหรับรูปภาพ
+ สร้างก`PdfSaveOptions`วัตถุเพื่อกำหนดค่าตัวเลือกการบันทึก PDF รวมถึงการบีบอัดรูปภาพ ตั้งค่า`ImageCompression`ทรัพย์สินเพื่อ`PdfImageCompression.Jpeg` เพื่อใช้การบีบอัด JPEG สำหรับรูปภาพ
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## ขั้นตอนที่ 5: กำหนดค่าการบีบอัดขั้นสูงด้วยการปฏิบัติตามข้อกำหนด PDF/A
 
- เพื่อการบีบอัดที่ดียิ่งขึ้น โดยเฉพาะอย่างยิ่งหากคุณต้องการปฏิบัติตามมาตรฐาน PDF/A คุณสามารถกำหนดค่าตัวเลือกเพิ่มเติมได้ ตั้ง`Compliance`ทรัพย์สินเพื่อ`PdfCompliance.PdfA2u` และปรับ`JpegQuality` คุณสมบัติ.
+ เพื่อการบีบอัดที่ดียิ่งขึ้น โดยเฉพาะอย่างยิ่งหากคุณต้องการปฏิบัติตามมาตรฐาน PDF/A คุณสามารถกำหนดค่าตัวเลือกเพิ่มเติมได้ ตั้งค่า`Compliance`ทรัพย์สินเพื่อ`PdfCompliance.PdfA2u` และปรับ`JpegQuality` คุณสมบัติ.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions

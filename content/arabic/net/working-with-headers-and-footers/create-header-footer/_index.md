@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ar/net/working-with-headers-and-footers/create-header-footer/
 ---
+## مقدمة
 
 يمكن أن تؤدي إضافة الرؤوس والتذييلات إلى مستنداتك إلى تحسين احترافيتها وسهولة قراءتها. باستخدام Aspose.Words for .NET، يمكنك بسهولة إنشاء وتخصيص الرؤوس والتذييلات لمستندات Word الخاصة بك. في هذا البرنامج التعليمي، سنرشدك خلال العملية خطوة بخطوة، مما يضمن أنه يمكنك تنفيذ هذه الميزات بسلاسة.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## الخطوة 2: إنشاء مستند جديد
 
- إنشاء مستند جديد و`DocumentBuilder` لتسهيل إضافة المحتوى.
+ إنشاء مستند جديد و`DocumentBuilder`لتسهيل إضافة المحتوى.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## الأسئلة الشائعة
 
-### س1: ما هو Aspose.Words لـ .NET؟
+### ما هو Aspose.Words لـ .NET؟
 
 Aspose.Words for .NET هي مكتبة تمكن المطورين من إنشاء مستندات Word وتحريرها وتحويلها برمجيًا ضمن تطبيقات .NET.
 
-### س2: هل يمكنني إضافة صور إلى الرأس أو التذييل؟
+### هل يمكنني إضافة صور إلى الرأس أو التذييل؟
 
  نعم، يمكنك بسهولة إضافة صور إلى الرأس أو التذييل باستخدام`DocumentBuilder.InsertImage` طريقة.
 
-### Q3: كيف يمكنني تعيين رؤوس وتذييلات مختلفة للصفحة الأولى؟
+### كيف أقوم بتعيين رؤوس وتذييلات مختلفة للصفحة الأولى؟
 
  يمكنك تعيين رؤوس وتذييلات مختلفة للصفحة الأولى باستخدام`DifferentFirstPageHeaderFooter` ملكية`PageSetup` فصل.
 
-### س4: أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words؟
+### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words؟
 
  يمكنك العثور على وثائق شاملة عن[صفحة وثائق Aspose.Words API](https://reference.aspose.com/words/net/).
 
-### س5: هل يتوفر دعم لـ Aspose.Words؟
+### هل هناك دعم متاح لـ Aspose.Words؟
 
  نعم، Aspose يقدم الدعم من خلال[منتدى الدعم](https://forum.aspose.com/c/words/8).

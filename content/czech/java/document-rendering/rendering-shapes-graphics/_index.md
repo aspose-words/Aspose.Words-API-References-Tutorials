@@ -8,7 +8,7 @@ weight: 12
 url: /cs/java/document-rendering/rendering-shapes-graphics/
 ---
 
-## Úvod
+## Zavedení
 
 této digitální éře musí být dokumenty často více než jen prostý text. Přidáním tvarů a grafiky můžete efektivněji předávat informace a učinit vaše dokumenty vizuálně přitažlivými. Aspose.Words for Java je výkonné Java API, které vám umožňuje manipulovat s dokumenty aplikace Word, včetně přidávání a přizpůsobení tvarů a grafiky.
 
@@ -107,7 +107,7 @@ Pořadí, ve kterém se tvary zobrazují, můžete ovládat pomocí pořadí Z:
 
 ```java
 shape1.setZOrder(1); // Přiveďte dopředu
-shape2.setZOrder(0); // Odeslat nazpátek
+shape2.setZOrder(0); // Poslat dozadu
 ```
 
 ## Uložení dokumentu
@@ -165,4 +165,4 @@ shape.setFillColor(Color.GREEN);
 
 ### Jak mohu uspořádat tvary v určitém pořadí?
 
- Pořadí tvarů můžete ovládat pomocí vlastnosti Z-order. Nastav`ZOrder` vlastnost tvaru k určení jeho pozice v zásobníku tvarů. Nižší hodnoty jsou odeslány dozadu, zatímco vyšší hodnoty jsou přeneseny dopředu.
+ Pořadí tvarů můžete ovládat pomocí vlastnosti Z-order. Nastavte`ZOrder` vlastnost tvaru k určení jeho pozice v zásobníku tvarů. Nižší hodnoty jsou odeslány dozadu, zatímco vyšší hodnoty jsou přeneseny dopředu.

@@ -63,7 +63,7 @@ table.ConvertToHorizontallyMergedCells();
 
 ## Slutsats
 
-Och det är allt! Du har framgångsrikt konverterat vertikalt sammanslagna celler till horisontellt sammanslagna celler i ett Word-dokument med Aspose.Words för .NET. Denna metod säkerställer att dina tabeller är välorganiserade och lättare att läsa. Genom att följa dessa steg kan du anpassa och manipulera dina Word-dokument för att möta dina specifika behov.
+Och det är det! Du har framgångsrikt konverterat vertikalt sammanslagna celler till horisontellt sammanslagna celler i ett Word-dokument med Aspose.Words för .NET. Denna metod säkerställer att dina tabeller är välorganiserade och lättare att läsa. Genom att följa dessa steg kan du anpassa och manipulera dina Word-dokument för att möta dina specifika behov.
 
 ## FAQ's
 
@@ -74,10 +74,10 @@ Aspose.Words för .NET är främst designat för .NET-språk som C#. Du kan dock
  Ja, du kan ladda ner en[gratis provperiod](https://releases.aspose.com/) från Asposes webbplats.
 
 ### Hur kan jag få support om jag stöter på problem?  
- Du kan besöka[Aspose supportforum](https://forum.aspose.com/c/words/8) för assistens.
+ Du kan besöka[Aspose supportforum](https://forum.aspose.com/c/words/8) för hjälp.
 
 ### Kan jag ansöka om en licens från en fil eller stream?  
 Ja, Aspose.Words för .NET låter dig ansöka om en licens från både en fil och en stream. Du kan hitta mer information i[dokumentation](https://reference.aspose.com/words/net/).
 
 ### Vilka andra funktioner erbjuder Aspose.Words för .NET?  
- Aspose.Words för .NET erbjuder ett brett utbud av funktioner inklusive generering av dokument, manipulering, konvertering och rendering. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Aspose.Words för .NET erbjuder ett brett utbud av funktioner inklusive generering av dokument, manipulering, konvertering och rendering. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer information.

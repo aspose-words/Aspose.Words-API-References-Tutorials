@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 // Theo chỉ số:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// Bằng tên:
+// Theo tên:
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 

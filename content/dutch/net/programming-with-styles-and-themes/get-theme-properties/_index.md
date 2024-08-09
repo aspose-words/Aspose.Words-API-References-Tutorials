@@ -15,7 +15,7 @@ Als het gaat om het werken met Word-documenten, kan de mogelijkheid om thema-eig
 
 Voordat we aan de slag gaan, heb je een paar dingen nodig om ervoor te zorgen dat alles soepel verloopt:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words-bibliotheek is geïnstalleerd. U kunt deze verkrijgen bij de[Download link](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words-bibliotheek is geïnstalleerd. U kunt deze verkrijgen bij de[Downloadlink](https://releases.aspose.com/words/net/).
 
 2. Ontwikkelomgeving: Een .NET-ontwikkelomgeving, zoals Visual Studio, om uw code te schrijven en uit te voeren.
 
@@ -100,7 +100,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het beheren en manipule
 
 ### Hoe installeer ik Aspose.Words voor .NET?
 
- U kunt Aspose.Words voor .NET installeren vanaf de[Download link](https://releases.aspose.com/words/net/). U kunt ook NuGet Package Manager gebruiken voor een eenvoudigere installatie.
+ U kunt Aspose.Words voor .NET installeren vanaf de[Downloadlink](https://releases.aspose.com/words/net/). U kunt ook NuGet Package Manager gebruiken voor een eenvoudigere installatie.
 
 ### Kan ik thema-eigenschappen uit een bestaand Word-document halen?
 

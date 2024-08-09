@@ -140,4 +140,4 @@ Ensemble`importFormatOptions.setIgnoreTextBoxes(false)` pour inclure des zones d
 
 ### Que faire si je souhaite lier/dissocier les en-têtes et pieds de page entre des documents ?
 
- Vous pouvez lier les en-têtes et les pieds de page avec`linkToPrevious(true)` ou dissociez-les avec`linkToPrevious(false)` comme requis.
+ Vous pouvez lier les en-têtes et les pieds de page avec`linkToPrevious(true)` ou dissociez-les avec`linkToPrevious(false)` au besoin.

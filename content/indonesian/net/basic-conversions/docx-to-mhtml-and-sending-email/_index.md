@@ -36,7 +36,7 @@ Mari kita bagi prosesnya menjadi beberapa langkah untuk memastikan Anda memahami
 
 ## Langkah 1: Muat Dokumen DOCX
 
- Pertama, Anda perlu memuat dokumen DOCX yang ingin Anda konversi. Menggunakan`Document` kelas dari Aspose.Words untuk memuat file DOCX Anda.
+ Pertama, Anda perlu memuat dokumen DOCX yang ingin Anda konversi. Gunakan`Document` kelas dari Aspose.Words untuk memuat file DOCX Anda.
 
 ```csharp
 // Jalur ke direktori dokumen.

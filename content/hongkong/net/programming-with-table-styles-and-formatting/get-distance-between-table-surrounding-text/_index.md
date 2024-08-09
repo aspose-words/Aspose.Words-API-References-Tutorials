@@ -78,7 +78,7 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 
 ## 結論
 
-現在你就擁有了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆擷取 Word 文件中表格與周圍文字之間的距離。這種簡單而強大的技術可讓您微調文件佈局，使其更具可讀性和視覺吸引力。快樂編碼！
+現在你就得到它了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆擷取 Word 文件中表格與周圍文字之間的距離。這種簡單而強大的技術可讓您微調文件佈局，使其更具可讀性和視覺吸引力。快樂編碼！
 
 ## 常見問題解答
 

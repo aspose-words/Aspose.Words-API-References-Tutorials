@@ -9,7 +9,7 @@ url: /id/net/programming-with-sdt/set-content-control-color/
 ---
 ## Perkenalan
 
-Jika Anda bekerja dengan dokumen Word dan perlu menyesuaikan tampilan Tag Dokumen Terstruktur (SDT), Anda mungkin ingin mengubah warnanya. Hal ini sangat berguna ketika Anda berurusan dengan formulir atau templat yang memerlukan diferensiasi visual elemen. Dalam panduan ini, kita akan memandu proses pengaturan warna SDT menggunakan Aspose.Words untuk .NET.
+Jika Anda bekerja dengan dokumen Word dan perlu mengkustomisasi tampilan Tag Dokumen Terstruktur (SDT), Anda mungkin ingin mengubah warnanya. Hal ini sangat berguna ketika Anda berurusan dengan formulir atau templat yang memerlukan diferensiasi visual elemen. Dalam panduan ini, kita akan memandu proses pengaturan warna SDT menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen
 
- Membuat`Document` objek dengan memuat file Word Anda:
+ Buat sebuah`Document` objek dengan memuat file Word Anda:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

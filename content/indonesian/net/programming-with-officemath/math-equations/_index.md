@@ -15,7 +15,7 @@ Siap terjun ke dunia persamaan matematika di dokumen Word? Hari ini, kita akan m
 
 Sebelum kita masuk ke detail seluk beluknya, pastikan Anda memiliki semua yang perlu Anda ikuti bersama tutorial ini:
 
-1.  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum memilikinya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum memilikinya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Visual Studio: Versi Visual Studio apa pun bisa digunakan, tetapi pastikan sudah terinstal dan siap digunakan.
 3. Pengetahuan Dasar C#: Anda harus terbiasa dengan pemrograman C# dasar. Jangan khawatir; kami akan membuat semuanya tetap sederhana!
 4. Dokumen Word: Miliki dokumen Word dengan beberapa persamaan matematika. Kami akan mengerjakannya dalam contoh kami.

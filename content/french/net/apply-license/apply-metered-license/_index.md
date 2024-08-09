@@ -90,7 +90,7 @@ Cela garantit qu'en cas de problème, vous recevrez un message d'erreur signific
 
 ## Conclusion
 
-Et voila! L'application d'une licence limitée dans Aspose.Words pour .NET est simple une fois que vous la décomposez en étapes gérables. Ce modèle de licence offre flexibilité et économies de coûts, ce qui en fait un excellent choix pour de nombreux développeurs. N'oubliez pas que l'essentiel est de configurer correctement vos clés mesurées et de gérer toutes les exceptions qui pourraient survenir. Bon codage !
+Et voilà ! L'application d'une licence limitée dans Aspose.Words pour .NET est simple une fois que vous la décomposez en étapes gérables. Ce modèle de licence offre flexibilité et économies de coûts, ce qui en fait un excellent choix pour de nombreux développeurs. N'oubliez pas que l'essentiel est de configurer correctement vos clés mesurées et de gérer toutes les exceptions qui pourraient survenir. Bon codage !
 
 ## FAQ
 
@@ -107,4 +107,4 @@ Oui, vous pouvez utiliser une licence limitée avec n'importe quel projet .NET q
 Si les clés sont incorrectes, la licence ne sera pas appliquée et votre application lèvera une exception. Assurez-vous de gérer les exceptions pour obtenir un message d'erreur clair.
 
 ### Comment puis-je vérifier que la licence limitée est appliquée correctement ?
-Vous pouvez vérifier la licence limitée en effectuant n'importe quelle opération sur un document Word (comme imprimer le nombre de pages) et en vous assurant qu'il s'exécute sans erreurs de licence.
+Vous pouvez vérifier la licence limitée en effectuant n'importe quelle opération sur un document Word (comme l'impression du nombre de pages) et en vous assurant qu'il s'exécute sans erreurs de licence.

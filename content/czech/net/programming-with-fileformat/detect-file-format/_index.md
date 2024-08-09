@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-fileformat/detect-file-format/
 ---
-## Úvod
+## Zavedení
 
 V dnešním digitálním světě je efektivní správa různých formátů dokumentů zásadní. Ať už pracujete s formáty Word, PDF, HTML nebo jinými formáty, schopnost správně detekovat a zpracovat tyto soubory vám může ušetřit spoustu času a úsilí. V tomto tutoriálu prozkoumáme, jak zjistit formáty souborů dokumentů pomocí Aspose.Words for .NET. Tento průvodce vás provede vším, co potřebujete vědět, od předpokladů až po podrobného průvodce krok za krokem.
 
@@ -15,7 +15,7 @@ V dnešním digitálním světě je efektivní správa různých formátů dokum
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/) . Ujistěte se, že máte platnou licenci. Pokud ne, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/) . Ujistěte se, že máte platnou licenci. Pokud ne, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 - Visual Studio: Jakákoli nejnovější verze bude fungovat dobře.
 - .NET Framework: Ujistěte se, že máte nainstalovanou správnou verzi.
 
@@ -171,4 +171,4 @@ Aspose.Words dokáže detekovat širokou škálu formátů včetně DOC, DOCX, R
  Dočasnou licenci můžete získat od[Aspose Nákup](https://purchase.aspose.com/temporary-license/) strana.
 
 ### Kde najdu dokumentaci k Aspose.Words?
- Dokumentaci pro Aspose.Words lze nalézt[tady](https://reference.aspose.com/words/net/).
+ Dokumentaci k Aspose.Words lze nalézt[zde](https://reference.aspose.com/words/net/).

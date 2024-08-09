@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## giriiş
 
 .NET'te belgelerle çalışıyorsanız ve Aspose.Words kullanıyorsanız yazı tipi kaynaklarını yönetmek, belgelerinizin beklendiği gibi görünmesini sağlamanın önemli bir unsuru olabilir. Aspose.Words, kaynak akışlarını kullanmak da dahil olmak üzere yazı tiplerini kullanmanın güçlü bir yolunu sunar. Bu kılavuzda Aspose.Words for .NET ile kaynak akışını yazı tipi kaynağı olarak kullanmayı anlatacağız. Hadi dalalım!
 
@@ -15,7 +16,7 @@ url: /tr/net/working-with-fonts/resource-steam-font-source-example/
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 - Temel C# Bilgisi: C# programlamaya aşinalık, takip etmenize yardımcı olacaktır.
--  Aspose.Words for .NET Kütüphanesi: Buradan indirip yükleyin.[İndirme: {link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Kütüphanesi: Buradan indirip yükleyin.[indirme bağlantısı](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Kodunuzu yazmak ve yürütmek için Visual Studio gibi bir kurulum.
 -  Örnek Belge: Örnek bir belgeye sahip olun (örn.`Rendering.docx`) yazı tipi ayarlarını test etmeye hazır.
 
@@ -81,7 +82,7 @@ Son olarak yazı tipi ayarlarını uyguladıktan sonra belgeyi kaydedin. İstedi
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-Bu adımları izleyerek uygulamanızı, yazı tipi kaynağı olarak bir kaynak akışını kullanacak şekilde yapılandırmış ve gerekli yazı tiplerinin belgeleriniz için katıştırılmış ve kullanılabilir olmasını sağlamış olursunuz.
+Bu adımları izleyerek, uygulamanızı yazı tipi kaynağı olarak bir kaynak akışını kullanacak şekilde yapılandırmış ve gerekli yazı tiplerinin belgeleriniz için katıştırılmış ve kullanılabilir olmasını sağlamış olursunuz.
 
 ## Çözüm
 
@@ -99,7 +100,7 @@ Artık Aspose.Words for .NET ile kaynak akışını yazı tipi kaynağı olarak 
 
 ###  S3: Diğer uyarı türlerini şununla işleyebilir miyim?`IWarningCallback`?
 
- Evet`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
+ Evet,`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
 
 ### S4: Aspose.Words desteğini nerede bulabilirim?
 

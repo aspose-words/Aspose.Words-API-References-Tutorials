@@ -133,7 +133,7 @@ page_setup.right_margin = aw.ConvertUtil.inch_to_point(1)
 
 ### Aspose.Words'ü kullanarak belgemi PDF'ye aktarabilir miyim?
 
- Kesinlikle, belgenizi kullanarak PDF dahil çeşitli formatlara aktarabilirsiniz.`save` yöntem. Örneğin:
+ Kesinlikle, belgenizi kullanarak PDF dahil çeşitli formatlara aktarabilirsiniz.`save` Yöntem. Örneğin:
 
 ```python
 doc.save("output.pdf", aw.SaveFormat.PDF)

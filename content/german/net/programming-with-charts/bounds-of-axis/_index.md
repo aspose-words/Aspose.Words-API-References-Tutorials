@@ -15,7 +15,7 @@ Möchten Sie professionelle Dokumente mit Diagrammen in .NET erstellen? Dann sin
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
--  Aspose.Words für .NET: Sie können[herunterladen](https://releases.aspose.com/words/net/) die neuste Version oder verwenden Sie eine[Kostenlose Testphase](https://releases.aspose.com/).
+-  Aspose.Words für .NET: Sie können[herunterladen](https://releases.aspose.com/words/net/) die neuste Version oder verwenden Sie eine[Kostenlose Testversion](https://releases.aspose.com/).
 - .NET Framework: Stellen Sie sicher, dass .NET auf Ihrem System installiert ist.
 - IDE: Eine Entwicklungsumgebung wie Visual Studio.
 
@@ -115,10 +115,10 @@ Aspose.Words für .NET ist eine Bibliothek, mit der Sie Word-Dokumente programmg
  Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/) und befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Ja, Sie können ein[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+ Ja, Sie können ein[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
 ### Wo finde ich Dokumentation für Aspose.Words für .NET?
  Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).
 
 ### Wie kann ich Support für Aspose.Words erhalten?
- Besuchen Sie die[Hilfeforum](https://forum.aspose.com/c/words/8) zur Hilfe.
+ Besuchen Sie die[Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.

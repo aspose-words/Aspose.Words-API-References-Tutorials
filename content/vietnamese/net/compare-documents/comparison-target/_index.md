@@ -9,7 +9,7 @@ url: /vi/net/compare-documents/comparison-target/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thấy mình so sánh hai phiên bản của tài liệu Word và theo dõi thủ công từng thay đổi nhỏ chưa? Giống như mò kim đáy bể phải không? Chà, điều gì sẽ xảy ra nếu tôi nói với bạn rằng có một cách cực kỳ dễ dàng để thực hiện việc đó bằng Aspose.Words cho .NET? Đúng rồi! Thư viện mạnh mẽ này cho phép bạn so sánh các tài liệu Word trong tích tắc. Hôm nay, tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình. Sẵn sàng để trở thành một thuật sĩ so sánh tài liệu? Hãy đi sâu vào!
+Này! Bạn đã bao giờ thấy mình so sánh hai phiên bản của tài liệu Word và theo dõi thủ công từng thay đổi nhỏ chưa? Giống như mò kim đáy bể phải không? Chà, điều gì sẽ xảy ra nếu tôi nói với bạn rằng có một cách cực kỳ dễ dàng để thực hiện việc đó bằng Aspose.Words cho .NET? Đúng vậy! Thư viện mạnh mẽ này cho phép bạn so sánh các tài liệu Word trong tích tắc. Hôm nay, tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình. Sẵn sàng để trở thành một thuật sĩ so sánh tài liệu? Hãy đi sâu vào!
 
 ## Điều kiện tiên quyết
 
@@ -42,7 +42,7 @@ Hãy chuẩn bị sẵn sàng dự án của chúng ta. Hãy khởi động môi
 
 ## Bước 2: Cài đặt Aspose.Words cho .NET
 
-Tiếp theo, bạn cần thêm Aspose.Words vào dự án của mình. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet. Chỉ cần tìm kiếm Aspose.Words và cài đặt nó. Dễ như ăn bánh!
+Tiếp theo, bạn cần thêm Aspose.Words vào dự án của mình. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet. Chỉ cần tìm kiếm Aspose.Words và cài đặt nó. Dễ thôi!
 
 ```bash
 Install-Package Aspose.Words

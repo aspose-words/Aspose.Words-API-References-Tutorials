@@ -150,7 +150,7 @@ Belge özellikleri, Aspose.Words for Java'da belgelerinizi etkili bir şekilde y
 
 ### Bir belgeye özel belge özellikleri ekleyebilir miyim?
 
- Evet, kullanarak bir belgeye özel belge özellikleri ekleyebilirsiniz.`CustomDocumentProperties` Toplamak. Dizeler, boolean'lar, tarihler ve sayısal değerler dahil olmak üzere çeşitli veri türleriyle özel özellikler tanımlayabilirsiniz.
+ Evet, kullanarak bir belgeye özel belge özellikleri ekleyebilirsiniz.`CustomDocumentProperties` koleksiyon. Dizeler, boolean'lar, tarihler ve sayısal değerler dahil olmak üzere çeşitli veri türleriyle özel özellikler tanımlayabilirsiniz.
 
 ### Belirli bir özel belge özelliğini nasıl kaldırabilirim?
 

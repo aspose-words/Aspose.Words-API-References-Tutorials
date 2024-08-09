@@ -138,7 +138,7 @@ MetafileRenderingOptions adalah pengaturan yang menentukan bagaimana metafile (s
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 
- Mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
+ Kunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
 
 ### Q5: Apakah mungkin untuk mendapatkan lisensi sementara untuk Aspose.Words?
 

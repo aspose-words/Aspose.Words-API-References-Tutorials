@@ -166,7 +166,7 @@ Kesinlikle! Aspose.Words, Word belgelerinizde izlenen değişiklikleri etkinleş
 
 ### Değiştirilen belgeyi nasıl kaydedebilirim?
 
- Kullan`save` Değiştirilen belgeyi kaydetmek için belge nesnesindeki çıktı dosyası yolunu belirten yöntemi.
+ Kullanın`save` Değiştirilen belgeyi kaydetmek için belge nesnesindeki çıktı dosyası yolunu belirten yöntemi.
 
 ### Aspose.Words for Python belgelerine nereden erişebilirim?
 

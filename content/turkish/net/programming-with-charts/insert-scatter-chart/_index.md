@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 2: Dağılım Tablosunu Ekleyin
 
- Kullan`InsertChart` yöntemi`DocumentBuilder` Belgeye bir dağılım grafiği eklemek için sınıf.
+ Kullanın`InsertChart` yöntemi`DocumentBuilder` Belgeye bir dağılım grafiği eklemek için sınıf.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);

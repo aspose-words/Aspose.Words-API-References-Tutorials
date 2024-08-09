@@ -99,7 +99,7 @@ Sim, você pode usar ancoragem vertical com outras formas, embora as caixas de t
  Você pode alterar o ponto de ancoragem definindo o`VerticalAnchor` propriedade no objeto de forma de caixa de texto.
 
 ### É possível ancorar o texto no meio da caixa de texto?
- Absolutamente! Apenas use`TextBoxAnchor.Center` para centralizar o texto verticalmente na caixa de texto.
+ Absolutamente! Basta usar`TextBoxAnchor.Center` para centralizar o texto verticalmente na caixa de texto.
 
 ### Onde posso encontrar mais informações sobre o Aspose.Words for .NET?
- Confira a[Documentação Aspose.Words](https://reference.aspose.com/words/net/) para mais detalhes e guias.
+ Confira o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) para mais detalhes e guias.

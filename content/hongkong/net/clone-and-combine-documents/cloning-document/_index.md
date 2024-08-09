@@ -35,7 +35,7 @@ using Aspose.Words;
 首先，您需要在 Visual Studio 中設定專案。如果您已經準備好項目，則可以跳過此步驟。如果沒有，請按照以下步驟操作：
 
 1. 開啟 Visual Studio：啟動 Visual Studio 並建立一個新的 C# 控制台應用程式專案。
-2. 為您的專案命名：為您的專案指定一個有意義的名稱。就像是`CloneWordDocumentDemo`會做。
+2. 為您的專案命名：為您的專案指定一個有意義的名稱。像這樣的東西`CloneWordDocumentDemo`會做。
 3. 新增 Aspose.Words 參考：在解決方案資源管理器中以滑鼠右鍵按一下您的項目，選擇`Manage NuGet Packages`，並蒐索`Aspose.Words`。安裝它。
 
 ## 第 2 步：準備環境
@@ -43,7 +43,7 @@ using Aspose.Words;
 現在您的專案已經設定完畢，讓我們準備好環境：
 
 1. 為您的文件建立目錄：您需要一個用於儲存文件的資料夾。我們就這樣稱呼它吧`Documents`.
-2. 新增您的範例文件：將您的`Document.docx`在 - 的裡面`Documents`資料夾。這是我們要克隆的檔案。
+2. 新增您的範例文件：將您的`Document.docx`裡面的`Documents`資料夾。這是我們要克隆的檔案。
 
 ## 步驟 3：載入原始文檔
 
@@ -93,7 +93,7 @@ using Aspose.Words;
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功複製了 Word 文件。這並不難，對吧？這個強大的程式庫使處理 Word 文件變得輕而易舉，為您節省大量的時間和精力。不斷嘗試 Aspose.Words 提供的其他功能，您很快就會成為專業人士。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功複製了 Word 文件。這並不難，對吧？這個強大的程式庫使處理 Word 文件變得輕而易舉，為您節省大量的時間和精力。不斷嘗試 Aspose.Words 提供的其他功能，您很快就會成為專業人士。
 
 ## 常見問題解答
 

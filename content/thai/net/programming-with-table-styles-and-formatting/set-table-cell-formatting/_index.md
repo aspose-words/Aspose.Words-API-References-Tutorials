@@ -2,7 +2,7 @@
 title: ตั้งค่าการจัดรูปแบบเซลล์ตาราง
 linktitle: ตั้งค่าการจัดรูปแบบเซลล์ตาราง
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: ปรับปรุงเอกสาร Word ของคุณด้วยการจัดรูปแบบเซลล์ตารางอย่างมืออาชีพโดยใช้ Aspose.Words สำหรับ .NET คำแนะนำทีละขั้นตอนนี้จะทำให้กระบวนการของคุณง่ายขึ้น
+description: ปรับปรุงเอกสาร Word ของคุณด้วยการจัดรูปแบบเซลล์ตารางอย่างมืออาชีพโดยใช้ Aspose.Words สำหรับ .NET คำแนะนำทีละขั้นตอนนี้ทำให้กระบวนการของคุณง่ายขึ้น
 type: docs
 weight: 10
 url: /th/net/programming-with-table-styles-and-formatting/set-table-cell-formatting/
@@ -15,7 +15,7 @@ url: /th/net/programming-with-table-styles-and-formatting/set-table-cell-formatt
 
 ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-1.  Aspose.Words สำหรับ .NET: คุณสามารถดาวน์โหลดได้จากไฟล์[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
+1.  Aspose.Words สำหรับ .NET: คุณสามารถดาวน์โหลดได้จากไฟล์[ลิงค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
 2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือ IDE อื่น ๆ ที่รองรับการพัฒนา .NET
 3. ความรู้พื้นฐานของ C#: ความเข้าใจแนวคิดการเขียนโปรแกรมพื้นฐานและไวยากรณ์ใน C#
 4.  ไดเร็กทอรีเอกสารของคุณ: ตรวจสอบให้แน่ใจว่าคุณมีไดเร็กทอรีที่กำหนดเพื่อบันทึกเอกสารของคุณ เราจะเรียกสิ่งนี้ว่า`YOUR DOCUMENT DIRECTORY`.
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ขั้นตอนที่ 2: เริ่มตาราง
 
- กับ`DocumentBuilder` อินสแตนซ์ คุณสามารถเริ่มสร้างตารางได้ ทำได้โดยการเรียก`StartTable` วิธี.
+ ด้วยการ`DocumentBuilder` อินสแตนซ์ คุณสามารถเริ่มสร้างตารางได้ ทำได้โดยการเรียก`StartTable` วิธี.
 
 ```csharp
 // เริ่มโต๊ะ

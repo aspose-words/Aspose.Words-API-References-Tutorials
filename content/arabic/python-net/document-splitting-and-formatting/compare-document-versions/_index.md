@@ -29,7 +29,7 @@ url: /ar/python-net/document-splitting-and-formatting/compare-document-versions/
 
 ## تحميل إصدارات الوثيقة
 
-لمقارنة إصدارات المستندات، تحتاج إلى تحميل الملفات إلى الذاكرة. إليك الطريقة:
+لمقارنة إصدارات المستندات، تحتاج إلى تحميل الملفات إلى الذاكرة. وإليك الطريقة:
 
 ```python
 doc1_path = "path/to/first/document.docx"

@@ -9,7 +9,7 @@ url: /nl/net/working-with-markdown/image/
 ---
 ## Invoering
 
-Ben je klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag gaan we onderzoeken hoe u afbeeldingen aan uw documenten kunt toevoegen. Of u nu aan een rapport, een brochure werkt of gewoon een eenvoudig document opfleurt, het toevoegen van afbeeldingen kan een groot verschil maken. Dus laten we beginnen!
+Ben je klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag gaan we onderzoeken hoe u afbeeldingen aan uw documenten kunt toevoegen. Of u nu aan een rapport, een brochure werkt of gewoon een eenvoudig document opfleurt, het toevoegen van afbeeldingen kan een groot verschil maken. Dus laten we aan de slag gaan!
 
 ## Vereisten
 
@@ -46,11 +46,11 @@ Vervolgens voegt u een afbeelding in uw document in. Zo doe je het:
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Vervangen`"path_to_your_image.jpg"` met het daadwerkelijke pad van uw afbeeldingsbestand. De`InsertImage` methode voegt de afbeelding toe aan uw document.
+ Vervangen`"path_to_your_image.jpg"` met het daadwerkelijke pad van uw afbeeldingsbestand. De`InsertImage`methode voegt de afbeelding toe aan uw document.
 
 ## Stap 3: Stel afbeeldingseigenschappen in
 
-kunt verschillende eigenschappen voor de afbeelding instellen. Laten we bijvoorbeeld de titel van de afbeelding instellen:
+U kunt verschillende eigenschappen voor de afbeelding instellen. Laten we bijvoorbeeld de titel van de afbeelding instellen:
 
 ```csharp
 shape.ImageData.Title = "Your Image Title";
@@ -72,7 +72,7 @@ Aspose.Words ondersteunt verschillende afbeeldingsformaten, waaronder JPEG, PNG,
  Absoluut! U kunt de hoogte- en breedte-eigenschappen van het`Shape` object om het formaat van de afbeeldingen te wijzigen.
 
 ### Is het mogelijk om afbeeldingen toe te voegen vanaf een URL?  
- Ja, u kunt afbeeldingen toevoegen vanaf een URL door de URL op te geven in het`InsertImage` methode.
+Ja, u kunt afbeeldingen toevoegen vanaf een URL door de URL op te geven in het`InsertImage` methode.
 
 ### Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?  
  U kunt een gratis proefversie krijgen van de[Aspose-website](https://releases.aspose.com/).

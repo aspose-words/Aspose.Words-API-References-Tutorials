@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 仅嵌入必要的字体子集可以显著减少 PDF 文件大小，而不会影响文档的外观和可读性。
 
 ### 如果需要，我可以恢复嵌入完整字体吗？
-是的，你可以。只需设置`EmbedFullFonts`财产`true`在里面`PdfSaveOptions`.
+是的，你可以。只需设置`EmbedFullFonts`财产`true`在`PdfSaveOptions`.
 
 ### Aspose.Words for .NET 是否支持其他 PDF 优化功能？
 当然！Aspose.Words for .NET 提供了一系列用于优化 PDF 的选项，包括图像压缩和删除未使用的对象。

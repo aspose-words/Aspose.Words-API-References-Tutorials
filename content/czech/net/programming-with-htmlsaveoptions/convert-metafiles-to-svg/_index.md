@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, nadšenci do kódování! Přemýšleli jste někdy o tom, jak převést metasoubory na SVG v dokumentech aplikace Word pomocí Aspose.Words for .NET? No, máte se na co těšit! Dnes se ponoříme hluboko do světa Aspose.Words, výkonné knihovny, se kterou je manipulace s dokumenty hračkou. Na konci tohoto tutoriálu budete profesionálem v převodu metasouborů do SVG, díky čemuž budou vaše dokumenty Word všestrannější a vizuálně přitažlivější. Takže, začneme, ano?
 

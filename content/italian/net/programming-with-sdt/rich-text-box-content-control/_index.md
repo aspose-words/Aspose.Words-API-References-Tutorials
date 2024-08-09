@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/rich-text-box-content-control/
 ---
-## introduzione
+## Introduzione
 
 Nel mondo dell'elaborazione dei documenti, la possibilità di aggiungere elementi interattivi ai documenti Word può migliorarne notevolmente la funzionalità. Uno di questi elementi interattivi è il controllo del contenuto della casella di testo RTF. Utilizzando Aspose.Words per .NET, puoi facilmente inserire e personalizzare una casella di testo RTF nei tuoi documenti. Questa guida ti guiderà attraverso il processo passo dopo passo, assicurandoti di comprendere come implementare questa funzionalità in modo efficace.
 
@@ -68,7 +68,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
 ## Passaggio 4: aggiungi contenuto alla casella di testo RTF
 
- Creare un`Paragraph` e un`Run` oggetto per contenere il contenuto che desideri visualizzare nella casella di testo RTF. Personalizza il testo e la formattazione secondo necessità.
+ Crea un`Paragraph` e un`Run` oggetto per contenere il contenuto che desideri visualizzare nella casella di testo RTF. Personalizza il testo e la formattazione secondo necessità.
 
 ```csharp
 Paragraph para = new Paragraph(doc);

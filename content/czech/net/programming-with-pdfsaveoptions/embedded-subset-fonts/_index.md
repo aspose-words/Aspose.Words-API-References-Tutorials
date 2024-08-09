@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
-## Úvod
+## Zavedení
 
 Všimli jste si někdy, že některé soubory PDF jsou mnohem větší než jiné, i když obsahují podobný obsah? Viník často leží v písmech. Vložení písem do PDF zajistí, že bude vypadat stejně na jakémkoli zařízení, ale také může zvětšit velikost souboru. Naštěstí Aspose.Words for .NET nabízí šikovnou funkci pro vložení pouze nezbytných podmnožin písem, takže vaše PDF budou štíhlé a efektivní. Tento tutoriál vás provede procesem krok za krokem.
 
@@ -15,7 +15,7 @@ Všimli jste si někdy, že některé soubory PDF jsou mnohem větší než jin�
 
 Než začneme, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Prostředí .NET: Ujistěte se, že máte funkční vývojové prostředí .NET.
 - Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
 
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Tento fragment kódu načte dokument umístěný na`dataDir` . Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
+ Tento fragment kódu načte dokument umístěný na adrese`dataDir` . Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
 
 ## Krok 2: Nakonfigurujte možnosti uložení PDF
 
@@ -73,7 +73,7 @@ tady to máte! Pomocí těchto jednoduchých kroků můžete efektivně zmenšit
 Vložení pouze nezbytných podmnožin písem může výrazně snížit velikost souboru PDF, aniž by došlo ke snížení vzhledu a čitelnosti dokumentu.
 
 ### Mohu se v případě potřeby vrátit k vkládání plných písem?
- Ano můžeš. Jednoduše nastavte`EmbedFullFonts`majetek do`true` v`PdfSaveOptions`.
+ Ano, můžete. Jednoduše nastavte`EmbedFullFonts`majetek do`true` v`PdfSaveOptions`.
 
 ### Podporuje Aspose.Words for .NET další funkce pro optimalizaci PDF?
 Absolutně! Aspose.Words for .NET nabízí řadu možností pro optimalizaci souborů PDF, včetně komprese obrázků a odstranění nepoužívaných objektů.

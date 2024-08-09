@@ -20,11 +20,11 @@ Antes de entrar en detalles, asegurémonos de tener todo configurado:
 3. Conocimientos básicos de C#: la familiaridad con la programación en C# y .NET le ayudará a seguir adelante sin problemas.
 4. Documento de muestra: tenga listo un documento de Word que contenga imágenes para realizar pruebas.
 
-¿Tengo todo? ¡Excelente! Vamos a sumergirnos.
+¿Tienes todo? ¡Excelente! Vamos a sumergirnos.
 
 ## Importar espacios de nombres
 
-Para comenzar, necesita importar los espacios de nombres necesarios a su proyecto C#. Así es cómo:
+Para comenzar, necesita importar los espacios de nombres necesarios a su proyecto C#. He aquí cómo:
 
 ```csharp
 using Aspose.Words;
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Paso 4: guarde el documento como PDF
 
- Con las opciones configuradas, es hora de guardar su documento como PDF. Utilizar el`Save` método de la`Document` clase, especificando la ruta y las opciones de guardado.
+ Con las opciones configuradas, es hora de guardar su documento como PDF. Utilice el`Save` método de la`Document` clase, especificando la ruta y las opciones de guardado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);

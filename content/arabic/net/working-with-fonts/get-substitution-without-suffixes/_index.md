@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /ar/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## مقدمة
 
-مرحبًا بك في هذا الدليل الشامل حول إدارة استبدال الخطوط باستخدام Aspose.Words لـ .NET. إذا كنت تعاني من عدم ظهور الخطوط بشكل صحيح في مستنداتك، فقد وصلت إلى المكان الصحيح. سيأخذك هذا البرنامج التعليمي عبر عملية خطوة بخطوة للتعامل مع استبدال الخطوط دون اللواحق بكفاءة. هيا بنا نبدأ!
+مرحبًا بك في هذا الدليل الشامل حول إدارة استبدال الخطوط باستخدام Aspose.Words لـ .NET. إذا كنت تعاني من عدم ظهور الخطوط بشكل صحيح في مستنداتك، فقد وصلت إلى المكان الصحيح. سيأخذك هذا البرنامج التعليمي عبر عملية خطوة بخطوة للتعامل مع استبدال الخطوط دون اللواحق بكفاءة.
 
 ## المتطلبات الأساسية
 
@@ -17,7 +18,7 @@ url: /ar/net/working-with-fonts/get-substitution-without-suffixes/
 - المعرفة الأساسية بـ C#: إن فهم برمجة C# سيجعل من السهل متابعة الخطوات وتنفيذها.
 -  Aspose.Words for .NET Library: قم بتنزيل المكتبة وتثبيتها من ملف[رابط التحميل](https://releases.aspose.com/words/net/).
 - بيئة التطوير: قم بإعداد بيئة تطوير مثل Visual Studio لكتابة التعليمات البرمجية وتشغيلها.
-- مستند نموذجي: مستند نموذجي (على سبيل المثال،`Rendering.docx`) للعمل خلال هذا البرنامج التعليمي.
+-  مستند نموذجي: مستند نموذجي (على سبيل المثال،`Rendering.docx`) للعمل خلال هذا البرنامج التعليمي.
 
 ## استيراد مساحات الأسماء
 
@@ -26,7 +27,6 @@ url: /ar/net/working-with-fonts/get-substitution-without-suffixes/
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## الخطوة 5: إنشاء فئة معالج التحذير
 
-للتعامل مع التحذيرات بشكل فعال، قم بإنشاء فئة مخصصة تنفذ`IWarningCallback` واجهه المستخدم. ستقوم هذه الفئة بالتقاط وتسجيل أي تحذيرات لاستبدال الخط.
+ للتعامل مع التحذيرات بشكل فعال، قم بإنشاء فئة مخصصة تنفذ`IWarningCallback` واجهة. ستقوم هذه الفئة بالتقاط وتسجيل أي تحذيرات لاستبدال الخط.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -92,8 +92,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 }
 ```
 
-في هذا الصف:
--  ال`Warning` تلتقط الطريقة التحذيرات المتعلقة باستبدال الخط.
+في هذه الفئة:
+-  ال`Warning`تلتقط الطريقة التحذيرات المتعلقة باستبدال الخط.
 -  ال`FontWarnings` تقوم المجموعة بتخزين هذه التحذيرات لمزيد من الفحص أو التسجيل.
 
 ## خاتمة
@@ -102,22 +102,22 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 
 ## الأسئلة الشائعة
 
-### س1: كيف يمكنني استخدام الخطوط من عدة دلائل مخصصة؟
+### كيف يمكنني استخدام الخطوط من أدلة مخصصة متعددة؟
 
  يمكنك إضافة متعددة`FolderFontSource` الحالات إلى`fontSources` قائمة وتحديث مصادر الخطوط وفقا لذلك.
 
-### س2: أين يمكنني تنزيل نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
+### أين يمكنني تنزيل نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
 
  يمكنك تنزيل نسخة تجريبية مجانية من[Aspose صفحة تجريبية مجانية](https://releases.aspose.com/).
 
-###  س3: هل يمكنني التعامل مع أنواع متعددة من التحذيرات باستخدام`IWarningCallback`?
+###  هل يمكنني التعامل مع أنواع متعددة من التحذيرات باستخدام`IWarningCallback`?
 
  نعم`IWarningCallback` تتيح لك الواجهة التعامل مع أنواع مختلفة من التحذيرات، وليس فقط استبدال الخطوط.
 
-### س4: أين يمكنني الحصول على الدعم لـ Aspose.Words؟
+### أين يمكنني الحصول على الدعم لـ Aspose.Words؟
 
  للحصول على الدعم، قم بزيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### س5: هل يمكن شراء ترخيص مؤقت؟
+### هل من الممكن شراء ترخيص مؤقت؟
 
  نعم يمكنك الحصول على ترخيص مؤقت من[صفحة الترخيص المؤقتة](https://purchase.aspose.com/temporary-license/).

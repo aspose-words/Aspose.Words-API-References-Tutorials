@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/vertical-merge/
 ---
-## Úvod
+## Zavedení
 
 Už jste se někdy zamotali do složitosti manipulace s tabulkami v dokumentech Wordu? S Aspose.Words for .NET si můžete zjednodušit práci a vaše dokumenty budou uspořádanější a vizuálně přitažlivější. V tomto tutoriálu se ponoříme do procesu vertikálního slučování v tabulkách, což je šikovná funkce, která umožňuje slučovat buňky vertikálně a vytvářet tak bezproblémový tok dat. Ať už vytváříte faktury, sestavy nebo jakýkoli dokument, který obsahuje tabulková data, zvládnutí vertikálního slučování může posunout formátování dokumentu na další úroveň.
 
@@ -15,7 +15,7 @@ Už jste se někdy zamotali do složitosti manipulace s tabulkami v dokumentech 
 
 Než se vrhneme na to pravé vertikální slučování, ujistěte se, že máte vše nastaveno pro hladký průběh. Zde je to, co budete potřebovat:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Pracovní vývojové prostředí jako Visual Studio.
 - Základní znalost C#: Výhodou bude znalost programovacího jazyka C#.
 

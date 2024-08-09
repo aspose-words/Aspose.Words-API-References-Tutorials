@@ -9,7 +9,7 @@ url: /pt/net/programming-with-pdfsaveoptions/conversion-to-pdf-17/
 ---
 ## Introdução
 
-A conversão de documentos Word em PDF é um requisito comum em diversas áreas, da academia às empresas. Os arquivos PDF são universalmente aceitos e mantêm a formatação em diferentes plataformas e dispositivos, tornando-os ideais para compartilhamento e arquivamento. Com Aspose.Words for .NET, você pode automatizar essa conversão, economizando tempo e reduzindo erros. Neste tutorial, mostraremos como converter um documento Word em um arquivo PDF 1.7, uma versão amplamente utilizada do formato PDF que garante compatibilidade e segurança.
+A conversão de documentos Word em PDF é um requisito comum em diversas áreas, da academia às empresas. Os arquivos PDF são universalmente aceitos e mantêm a formatação em diferentes plataformas e dispositivos, tornando-os ideais para compartilhamento e arquivamento. Com Aspose.Words for .NET, você pode automatizar essa conversão, economizando tempo e reduzindo erros. Neste tutorial mostraremos como converter um documento Word em um arquivo PDF 1.7, uma versão amplamente utilizada do formato PDF que garante compatibilidade e segurança.
 
 ## Pré-requisitos
 

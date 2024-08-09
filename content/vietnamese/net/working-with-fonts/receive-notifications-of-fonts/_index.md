@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Giới thiệu
 
 Nếu bạn đã từng gặp phải vấn đề về phông chữ không hiển thị chính xác trong tài liệu của mình thì bạn không đơn độc. Quản lý cài đặt phông chữ và nhận thông báo về việc thay thế phông chữ có thể giúp bạn đỡ đau đầu hơn rất nhiều. Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá cách xử lý thông báo phông chữ bằng Aspose.Words cho .NET, đảm bảo tài liệu của bạn luôn trông đẹp nhất.
 
@@ -113,11 +113,11 @@ Không, bạn chỉ có thể chỉ định một phông chữ mặc định đ�
 
 ###  Câu hỏi 3: Tôi có thể xử lý các loại cảnh báo khác bằng`IWarningCallback`?
 
- Vâng`IWarningCallback`Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
+ Vâng, cái`IWarningCallback`Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
 
 ### Câu hỏi 4: Tôi có thể tìm hỗ trợ cho Aspose.Words ở đâu?
 
- Tham quan[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
+ Ghé thăm[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
 
 ### Câu hỏi 5: Có thể xin giấy phép tạm thời cho Aspose.Words không?
 

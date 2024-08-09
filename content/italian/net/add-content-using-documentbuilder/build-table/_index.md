@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/build-table/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Stai cercando di creare tabelle nei tuoi documenti Word a livello di codice? Bene, sei arrivato nel posto giusto! Oggi ci immergeremo nel magico mondo di Aspose.Words per .NET. Questa potente libreria ti consente di manipolare documenti Word come un professionista. Immagina di essere un mago e Aspose.Words è la tua bacchetta magica, che ti consente di creare, modificare e formattare documenti con un semplice movimento del polso (o meglio, una riga di codice). In questo tutorial, ci concentreremo sulla creazione di una tabella in un documento Word. Quindi, prendi il tuo cappello da programmatore e iniziamo!
 
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 2: avvia la tabella
 
- Ora diamo il via al nostro tavolo. Chiamiamo il`StartTable` metodo del`DocumentBuilder` iniziare.
+ Ora diamo il via al nostro tavolo. Chiamiamo il`StartTable` metodo del`DocumentBuilder` per iniziare.
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Usando`StartTable` stiamo dicendo ad Aspose.Words che stiamo per creare una tabella. IL`InsertCell` Il metodo aggiunge la prima cella e`AutoFit` garantisce che le nostre colonne abbiano larghezze fisse.
+ Utilizzando`StartTable` stiamo dicendo ad Aspose.Words che stiamo per creare una tabella. IL`InsertCell` Il metodo aggiunge la prima cella e`AutoFit` garantisce che le nostre colonne abbiano larghezze fisse.
 
 ## Passaggio 3: formatta la prima riga
 
@@ -115,7 +115,7 @@ Pensa a questo come a incorniciare il nostro capolavoro e metterlo in mostra. La
 
 ## Conclusione
 
-E il gioco è fatto! Hai creato con successo una tabella in un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ti ha guidato attraverso ogni passaggio, dall'inizializzazione del documento al salvataggio del prodotto finale. Con Aspose.Words, le possibilità sono infinite. Che tu stia creando report, fatture o qualsiasi altro documento, ora hai il potere di formattare e personalizzare le tabelle a tuo piacimento.
+Ed ecco qua! Hai creato con successo una tabella in un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ti ha guidato attraverso ogni passaggio, dall'inizializzazione del documento al salvataggio del prodotto finale. Con Aspose.Words, le possibilità sono infinite. Che tu stia creando report, fatture o qualsiasi altro documento, ora hai il potere di formattare e personalizzare le tabelle a tuo piacimento.
 
 Ricorda, la pratica rende perfetti. Quindi, non esitare a sperimentare diversi formati e stili di tabella. Buona programmazione!
 

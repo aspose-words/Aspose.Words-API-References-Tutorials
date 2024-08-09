@@ -324,7 +324,7 @@ watermark.setWidth(100);
 watermark.setHeight(40);
 builder.insertNode(watermark);
 
-// Posicione a marca d’água
+// Posicione a marca d'água
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
 watermark.setWrapType(WrapType.NONE);

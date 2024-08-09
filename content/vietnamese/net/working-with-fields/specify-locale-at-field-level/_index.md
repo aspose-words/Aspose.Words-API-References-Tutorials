@@ -9,7 +9,7 @@ url: /vi/net/working-with-fields/specify-locale-at-field-level/
 ---
 ## Giới thiệu
 
-Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ khám phá cách chỉ định ngôn ngữ ở cấp trường. Tính năng tiện dụng này đặc biệt hữu ích khi bạn cần tài liệu của mình tuân thủ các định dạng văn hóa hoặc khu vực cụ thể. Hãy coi việc này giống như việc đưa cho tài liệu của bạn một hộ chiếu cho biết cách ứng xử dựa trên nơi nó "đến thăm". Đến cuối hướng dẫn này, bạn sẽ có thể tùy chỉnh cài đặt ngôn ngữ cho các trường trong tài liệu Word của mình một cách dễ dàng. Bắt đầu nào!
+Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ khám phá cách chỉ định ngôn ngữ ở cấp trường. Tính năng tiện dụng này đặc biệt hữu ích khi bạn cần tài liệu của mình tuân thủ các định dạng văn hóa hoặc khu vực cụ thể. Hãy coi việc này giống như việc đưa cho tài liệu của bạn một hộ chiếu cho biết cách ứng xử dựa trên nơi nó "đến thăm". Đến cuối hướng dẫn này, bạn sẽ có thể tùy chỉnh cài đặt ngôn ngữ cho các trường trong tài liệu Word của mình một cách dễ dàng. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -77,7 +77,7 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.doc
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chỉ định thành công ngôn ngữ cho một trường trong tài liệu Word của mình bằng Aspose.Words for .NET. Tính năng mạnh mẽ này cho phép bạn điều chỉnh tài liệu của mình để đáp ứng các yêu cầu cụ thể về văn hóa và khu vực, giúp ứng dụng của bạn trở nên linh hoạt và thân thiện hơn với người dùng. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã chỉ định thành công ngôn ngữ cho một trường trong tài liệu Word của mình bằng Aspose.Words for .NET. Tính năng mạnh mẽ này cho phép bạn điều chỉnh tài liệu của mình để đáp ứng các yêu cầu cụ thể về văn hóa và khu vực, giúp ứng dụng của bạn trở nên linh hoạt và thân thiện hơn với người dùng. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

@@ -15,7 +15,7 @@ Saat bekerja dengan file PDF, terutama yang dihasilkan dari dokumen Word yang be
 
 Sebelum mendalami langkah-langkahnya, pastikan Anda memiliki hal berikut:
 
-1. Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Tutorial ini mengasumsikan Anda telah menyiapkan lingkungan pengembangan .NET (seperti Visual Studio) tempat Anda dapat menulis dan mengeksekusi kode C#.
 3. Pemahaman Dasar Pemrograman .NET: Keakraban dengan konsep dasar pemrograman .NET dan sintaksis C# akan sangat membantu.
 4. Dokumen Word dengan Grafik WMF: Anda memerlukan dokumen Word yang berisi grafik WMF. Anda dapat menggunakan dokumen Anda sendiri atau membuatnya untuk pengujian.
@@ -59,7 +59,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 
 ## Langkah 3: Tetapkan Opsi Penyimpanan PDF
 
-Sekarang, konfigurasikan opsi penyimpanan PDF untuk menggunakan opsi rendering metafile yang baru saja Anda atur. Ini memberi tahu Aspose.Words cara menangani metafile saat menyimpan dokumen sebagai PDF.
+Sekarang, konfigurasikan opsi penyimpanan PDF untuk menggunakan opsi rendering metafile yang baru saja Anda atur. Ini memberitahu Aspose.Words cara menangani metafile saat menyimpan dokumen sebagai PDF.
 
 ```csharp
 // Buat instance baru dari PdfSaveOptions

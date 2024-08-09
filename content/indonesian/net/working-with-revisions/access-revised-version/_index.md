@@ -2,119 +2,137 @@
 title: Akses Versi Revisi
 linktitle: Akses Versi Revisi
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Akses versi revisi dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengakses dan menampilkan versi revisi dokumen menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk pengelolaan dokumen yang lancar.
 type: docs
 weight: 10
 url: /id/net/working-with-revisions/access-revised-version/
 ---
+## Perkenalan
 
-Dalam panduan langkah demi langkah ini, kami akan menunjukkan kepada Anda cara mengakses versi revisi dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memberi Anda kode sumber lengkap dan menunjukkan cara memformat keluaran penurunan harga.
+Pernahkah Anda perlu mengakses versi revisi dokumen secara terprogram? Baik Anda sedang mengerjakan proyek kolaboratif atau hanya perlu mengelola revisi dokumen, Aspose.Words untuk .NET adalah alat bantu Anda. Tutorial ini akan memandu Anda melalui seluruh proses, mulai dari menyiapkan lingkungan hingga mengakses dan menampilkan revisi dalam dokumen Word. Jadi, mari selami!
 
-## Langkah 1: Memuat dokumen
+## Prasyarat
 
-Langkah pertama adalah mengunggah dokumen yang berisi revisi.
+Sebelum kita mulai, Anda memerlukan beberapa hal:
+
+1.  Aspose.Words untuk .NET Library: Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang mendukung .NET.
+3. Pengetahuan Dasar tentang C#: Ini akan membantu Anda mengikuti bagian pengkodean.
+
+Pastikan Anda telah menyelesaikan prasyarat ini sebelum melanjutkan ke langkah berikutnya.
+
+## Impor Namespace
+
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan. Ini adalah langkah penting untuk memastikan bahwa kode Anda mengenali perpustakaan Aspose.Words untuk .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah diikuti.
+
+## Langkah 1: Menyiapkan Jalur Dokumen
+
+Sebelum Anda dapat bekerja dengan dokumen tersebut, Anda perlu menentukan jalur di mana dokumen Anda berada. Ini penting agar kode dapat menemukan dan memanipulasi file.
+
+```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Langkah 2: Memuat Dokumen
+
+ Selanjutnya, Anda akan memuat dokumen ke dalam aplikasi Anda. Langkah ini melibatkan pembuatan yang baru`Document` objek dan menginisialisasinya dengan jalur ke dokumen Anda.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## Langkah 3: Memperbarui Label Daftar
+
+Jika dokumen Anda berisi daftar, penting untuk memperbarui label daftar. Hal ini memastikan bahwa semua item daftar diberi nomor dan format yang benar.
+
+```csharp
 doc.UpdateListLabels();
 ```
 
-## Langkah 2: Akses versi revisi
+## Langkah 4: Beralih ke Versi Revisi
 
-Kami sekarang akan beralih ke versi dokumen yang telah direvisi.
-
-```csharp
-doc.RevisionsView = RevisionsView.Final;
-```
-
-## Langkah 3: Telusuri revisi
-
-Selanjutnya, kita akan menelusuri revisi yang ada dalam dokumen dan menampilkan informasi spesifik untuk paragraf yang merupakan item daftar.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-     if (revision.ParentNode.NodeType == NodeType.Paragraph)
-     {
-         Paragraph paragraph = (Paragraph)revision.ParentNode;
-         if (paragraph.IsListItem)
-         {
-             Console.WriteLine(paragraph.ListLabel.LabelString);
-             Console.WriteLine(paragraph.ListFormat.ListLevel);
-         }
-     }
-}
-```
-
-### Contoh kode sumber untuk Access Versi Revisi menggunakan Aspose.Words untuk .NET
-
-Berikut adalah kode sumber lengkap untuk mengakses versi revisi dokumen menggunakan Aspose.Words for .NET:
-
-```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-doc.UpdateListLabels();
-
-// Beralih ke versi dokumen yang direvisi.
-doc.RevisionsView = RevisionsView.Final;
-
-foreach (Revision revision in doc.Revisions)
-{
-	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
-	 {
-		 Paragraph paragraph = (Paragraph)revision.ParentNode;
-		 if (paragraph.IsListItem)
-		 {
-			 Console.WriteLine(paragraph.ListLabel.LabelString);
-			 Console.WriteLine(paragraph.ListFormat.ListLevel);
-		 }
-	 }
-}
-```
-
-## Kesimpulan
-
-Dalam tutorial ini, kita mempelajari cara mengakses versi revisi dokumen Word menggunakan Aspose.Words untuk .NET. Dengan memuat dokumen, menavigasi ke versi revisi, dan menelusuri revisi, kami dapat memperoleh informasi spesifik untuk paragraf yang merupakan item daftar. Aspose.Words untuk .NET menawarkan fitur canggih untuk memanipulasi dokumen Word, termasuk akses ke ulasan. Anda sekarang dapat menggunakan pengetahuan ini untuk mengakses versi revisi dokumen Word Anda menggunakan Aspose.Words untuk .NET.
-
-### FAQ
-
-#### T: Bagaimana cara memuat dokumen dengan revisi ke Aspose.Words untuk .NET?
-
- J: Gunakan`Document` kelas Aspose.Words untuk .NET untuk memuat dokumen dari file yang berisi revisi. Anda dapat menentukan jalur dokumen lengkap.
-
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
-
-#### T: Bagaimana cara mengakses versi revisi dokumen di Aspose.Words untuk .NET?
-
- J: Gunakan`RevisionsView` properti dari`Document` keberatan untuk mengakses versi revisi dokumen. Anda dapat mengatur nilai`RevisionsView`properti ke`RevisionsView.Final` untuk menampilkan versi final tanpa revisi.
+Sekarang, mari beralih ke versi dokumen yang telah direvisi. Langkah ini penting jika Anda ingin mengakses dan menampilkan revisi.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### T: Bagaimana cara menelusuri revisi dokumen di Aspose.Words untuk .NET?
+## Langkah 5: Iterasi Melalui Revisi
 
-J: Gunakan a`foreach` loop untuk mengulangi revisi yang ada dalam dokumen. Anda dapat menggunakan`Revisions` properti dari`Document` keberatan untuk mendapatkan kumpulan semua revisi dokumen.
+ Untuk mengakses revisi, Anda harus melakukan iterasi melalui`Revisions` pengumpulan dokumen. Langkah ini melibatkan penggunaan a`foreach` loop untuk melewati setiap revisi.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     // Proses setiap revisi di sini
+    // Kode tambahan akan dimasukkan ke sini
 }
 ```
 
-#### T: Bagaimana cara memeriksa apakah paragraf merupakan item daftar di Aspose.Words untuk .NET?
+## Langkah 6: Memeriksa Jenis Node Induk
 
- J: Gunakan`IsListItem` properti dari`Paragraph` keberatan untuk memeriksa apakah suatu paragraf merupakan item daftar. Itu`IsListItem` pengembalian properti`true` jika paragraf tersebut adalah item daftar, jika tidak maka paragraf akan dikembalikan`false`.
+ Untuk setiap revisi, periksa apakah node induk bertipe`Paragraph`. Ini penting karena kita ingin mengakses paragraf yang berisi revisi.
+
+```csharp
+if (revision.ParentNode.NodeType == NodeType.Paragraph)
+{
+    // Kode tambahan akan dimasukkan ke sini
+}
+```
+
+## Langkah 7: Mengakses Paragraf
+
+ Setelah Anda memastikan bahwa simpul induk adalah sebuah paragraf, transmisikan ke a`Paragraph` obyek. Langkah ini memungkinkan Anda bekerja dengan paragraf dan propertinya.
+
+```csharp
+Paragraph paragraph = (Paragraph)revision.ParentNode;
+```
+
+## Langkah 8: Memeriksa Apakah Paragraf Merupakan Item Daftar
+
+Selanjutnya, periksa apakah paragraf tersebut merupakan item daftar. Hal ini penting karena item daftar memiliki properti spesifik yang perlu kita akses.
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     // Paragraf adalah item daftar
-}
-else
-{
-     // Paragraf tersebut bukan merupakan item daftar
+    // Kode tambahan akan dimasukkan ke sini
 }
 ```
+
+## Langkah 9: Menampilkan Label Daftar dan Level
+
+Terakhir, tampilkan label daftar dan tingkat daftar paragraf. Langkah ini memberikan informasi berguna tentang item daftar, seperti penomoran dan tingkat indentasinya.
+
+```csharp
+Console.WriteLine(paragraph.ListLabel.LabelString);
+Console.WriteLine(paragraph.ListFormat.ListLevel);
+```
+
+## Kesimpulan
+
+Dan itu dia! Anda telah berhasil mengakses versi revisi dokumen menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah berikut, Anda dapat mengelola dan menampilkan revisi dokumen dengan mudah. Baik Anda sedang menangani proyek kolaboratif atau sekadar ingin memantau perubahan, Aspose.Words untuk .NET siap membantu Anda.
+
+## FAQ
+
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah perpustakaan canggih yang memungkinkan Anda membuat, mengedit, dan memanipulasi dokumen Word secara terprogram.
+
+### Bisakah saya mengakses revisi di dokumen Word mana pun?
+Ya, selama dokumen berisi revisi, Anda dapat mengaksesnya menggunakan Aspose.Words untuk .NET.
+
+### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
+ Ya, Anda bisa mendapatkan lisensi dari[Di Sini](https://purchase.aspose.com/buy) . Mereka juga menawarkan a[uji coba gratis](https://releases.aspose.com/) dan sebuah[izin sementara](https://purchase.aspose.com/temporary-license/).
+
+### Apakah Aspose.Words for .NET kompatibel dengan semua versi .NET?
+Aspose.Words untuk .NET kompatibel dengan berbagai versi .NET. Anda dapat menemukan rincian lebih lanjut di[dokumentasi](https://reference.aspose.com/words/net/).
+
+### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
+ Anda bisa mendapatkan dukungan dari komunitas Aspose di situs mereka[forum](https://forum.aspose.com/c/words/8).

@@ -9,7 +9,7 @@ url: /hu/net/working-with-section/delete-section-content/
 ---
 ## Bevezetés
 
-Sziasztok, Word-rajongók! Előfordult már, hogy térdig belemerült egy terjedelmes dokumentumba, és azt kívánta, bárcsak varázsütésre ki tudná törölni egy adott szakasz tartalmát anélkül, hogy manuálisan törölné az összes szövegrészletet? Nos, szerencséd van! Ebben az útmutatóban megvizsgáljuk, hogyan lehet törölni egy szakasz tartalmát egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a remek trükk rengeteg időt takarít meg, és sokkal gördülékenyebbé teszi a dokumentumszerkesztési folyamatot. Készen állsz a merülésre? Kezdjük el!
+Sziasztok, Word-rajongók! Előfordult már, hogy térdig belemerült egy terjedelmes dokumentumba, és azt kívánta, bárcsak varázsütésre ki tudná törölni egy adott szakasz tartalmát anélkül, hogy manuálisan törölné az összes szövegrészletet? Nos, szerencséd van! Ebben az útmutatóban megvizsgáljuk, hogyan lehet törölni egy szakasz tartalmát egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a remek trükk rengeteg időt takarít meg, és sokkal gördülékenyebbé teszi a dokumentumszerkesztési folyamatot. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Document.docx");
 ```
 
 - `string dataDir = "YOUR DOCUMENT DIRECTORY";` megadja a könyvtár elérési útját, ahol a dokumentum tárolva van.
-- `Document doc = new Document(dataDir + "Document.docx");` betölti a Word dokumentumot a`doc` tárgy.
+- `Document doc = new Document(dataDir + "Document.docx");` betölti a Word dokumentumot a`doc` objektum.
 
 ## 3. lépés: Nyissa meg a szakaszt
 

@@ -77,7 +77,7 @@ Herzlichen Glückwunsch! Sie haben erfolgreich Felder in einem Word-Dokument mit
 ## Häufig gestellte Fragen
 
 ### Kann ich mit Aspose.Words für .NET andere Feldtypen konvertieren?
- Ja, Aspose.Words für .NET ermöglicht Ihnen die Bearbeitung verschiedener Feldtypen, nicht nur von IF-Feldern. Sie können die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Ja, Aspose.Words für .NET ermöglicht Ihnen die Bearbeitung verschiedener Feldtypen, nicht nur von IF-Feldern. Sie können die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Was sind WENN-Felder in Word-Dokumenten?
 WENN-Felder sind bedingte Felder, die Text unter bestimmten Bedingungen anzeigen. Sie werden häufig zum Erstellen dynamischer Inhalte in Word-Dokumenten verwendet.

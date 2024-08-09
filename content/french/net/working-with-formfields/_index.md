@@ -12,7 +12,7 @@ Le traitement de mots avec les champs de formulaire est une ressource complète 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Insérer des champs de formulaire](./insert-form-fields/) | Découvrez comment insérer des champs de formulaire déroulant dans des documents Word à l'aide d'Aspose.Words pour .NET. |
-| [Les champs de formulaire fonctionnent avec les propriétés](./form-fields-work-with-properties/) | Découvrez comment utiliser les propriétés des champs de formulaire dans les documents Word à l'aide d'Aspose.Words pour .NET. |
-| [Champs de formulaire Obtenir la collection de champs de formulaire](./form-fields-get-form-fields-collection/) | Découvrez comment récupérer et manipuler la collection de champs de formulaire dans des documents Word à l'aide d'Aspose.Words pour .NET. |
-| [Champs de formulaire obtenus par nom](./form-fields-get-by-name/) | Découvrez comment récupérer et modifier les champs de formulaire par nom dans des documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Insérer des champs de formulaire](./insert-form-fields/) | Découvrez comment insérer un champ de formulaire de zone de liste déroulante dans un document Word à l'aide d'Aspose.Words pour .NET grâce à notre guide détaillé étape par étape. |
+| [Les champs de formulaire fonctionnent avec les propriétés](./form-fields-work-with-properties/) | Apprenez à manipuler les champs de formulaire dans les documents Word à l'aide d'Aspose.Words for .NET grâce à notre guide détaillé étape par étape. |
+| [Champs de formulaire Obtenir la collection de champs de formulaire](./form-fields-get-form-fields-collection/) | Découvrez comment obtenir et manipuler des champs de formulaire dans des documents Word à l'aide d'Aspose.Words pour .NET grâce à notre guide complet étape par étape. |
+| [Champs de formulaire obtenus par nom](./form-fields-get-by-name/) | Découvrez comment obtenir et modifier les champs de formulaire par nom dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape. |

@@ -17,7 +17,7 @@ Antes de profundizar en el código, hay algunas cosas que debes tener en cuenta:
 
 1.  Aspose.Words para .NET: asegúrese de tener instalada la última versión de Aspose.Words para .NET. Puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
 2. Entorno .NET: asegúrese de tener configurado un entorno de desarrollo .NET (por ejemplo, Visual Studio).
-3. Certificado digital: obtenga un certificado digital (por ejemplo, un archivo .pfx) para firmar documentos.
+3. Certificado Digital: Obtenga un certificado digital (por ejemplo, un archivo .pfx) para firmar documentos.
 4. Documento para firmar: tenga listo un documento de Word que desee firmar.
 
 ## Importar espacios de nombres
@@ -94,7 +94,7 @@ doc.Save(dataDir + "Document.Signed.docx");
 
 ## Preguntas frecuentes
 
-### ¿Que es una asignatura digital?
+### ¿Qué es una firma digital?
 Una firma digital es una forma electrónica de firma que se puede utilizar para autenticar la identidad del firmante y garantizar que el documento no haya sido alterado.
 
 ### ¿Por qué necesito un certificado digital?
@@ -104,7 +104,7 @@ Se necesita un certificado digital para crear una firma digital. Contiene una cl
 Sí, siempre y cuando el archivo .pfx contenga un certificado digital válido y tengas la contraseña para acceder.
 
 ### ¿Aspose.Words para .NET es de uso gratuito?
- Aspose.Words para .NET es una biblioteca comercial. Puedes descargar una prueba gratuita[aquí](https://releases.aspose.com/) , pero necesitarás adquirir una licencia para disfrutar de su funcionalidad completa. Puedes comprarlo[aquí](https://purchase.aspose.com/buy).
+ Aspose.Words para .NET es una biblioteca comercial. Puedes descargar una prueba gratuita[aquí](https://releases.aspose.com/) , pero necesitarás adquirir una licencia para disfrutar de su funcionalidad completa. puedes comprarlo[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Dónde puedo encontrar más información sobre Aspose.Words para .NET?
  Puedes encontrar documentación completa.[aquí](https://reference.aspose.com/words/net/) y apoyo[aquí](https://forum.aspose.com/c/words/8).

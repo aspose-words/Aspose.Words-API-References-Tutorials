@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Na tym etapie określasz katalog, w którym chcesz zapisać dokument. The`Document` class inicjuje nowy dokument programu Word, a`DocumentBuilder` class pomaga wstawiać i formatować zawartość.
+ Na tym etapie określasz katalog, w którym chcesz zapisać dokument. The`Document` class inicjuje nowy dokument programu Word, a`DocumentBuilder` class pomaga wstawiać i formatować treść.
 
 ## Krok 2: Wstaw pole czasu
 

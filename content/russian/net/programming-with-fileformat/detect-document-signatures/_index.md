@@ -35,7 +35,7 @@ using Aspose.Words;
 
 ### 1.1 Создайте новый проект
 
- Откройте Visual Studio и создайте новый проект консольного приложения (.NET Core). Назови это`DigitalSignatureDetector`.
+ Откройте Visual Studio и создайте новый проект консольного приложения (.NET Core). Назовите это`DigitalSignatureDetector`.
 
 ### 1.2 Установите Aspose.Words для .NET
 

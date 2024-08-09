@@ -64,7 +64,7 @@ builder.Writeln("Section 4");
 
 ## 步骤 3：了解页面设置
 
-在修改页面设置之前，我们必须了解 Word 文档中的每个部分都可以有其独特的页面设置。这种灵活性允许在单个文档中设置不同的格式。
+在我们修改页面设置之前，必须了解 Word 文档中的每个部分都可以有其独特的页面设置。这种灵活性允许在单个文档中进行多种格式设置。
 
 ## 步骤 4：修改所有部分的页面设置
 
@@ -99,7 +99,7 @@ Aspose.Words for .NET 是一个全面的库，用于以编程方式处理 Word �
 
 ### 2. 我可以免费使用 Aspose.Words for .NET 吗？
 
-您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需扩展使用，则需要购买许可证。
+您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需延长使用时间，则需要购买许可证。
 
 ### 3. 如何修改其他页面设置属性？
 

@@ -52,7 +52,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 Console.WriteLine(info.IsEncrypted);
 ```
 
-Itu saja ! Anda telah berhasil memeriksa apakah dokumen dienkripsi menggunakan Aspose.Words untuk .NET.
+Itu saja! Anda telah berhasil memeriksa apakah dokumen dienkripsi menggunakan Aspose.Words untuk .NET.
 
 ## Kesimpulan
 

@@ -14,7 +14,7 @@ Drukowanie dokumentów z precyzyjnym ustawieniem strony ma kluczowe znaczenie pr
 
 ## Konfigurowanie środowiska programistycznego
 
-Zanim zaczniemy, upewnijmy się, że masz odpowiednie środowisko programistyczne. Będziesz potrzebował:
+Zanim zaczniemy, upewnijmy się, że masz odpowiednie środowisko programistyczne. Będziesz potrzebować:
 
 - Zestaw programistyczny Java (JDK)
 - Zintegrowane środowisko programistyczne (IDE), takie jak Eclipse lub IntelliJ IDEA

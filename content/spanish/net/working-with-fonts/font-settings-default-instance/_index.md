@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /es/net/working-with-fonts/font-settings-default-instance/
 ---
+## Introducción
 
-Bienvenido a este tutorial detallado sobre cómo administrar la configuración de fuentes usando Aspose.Words para .NET. Si alguna vez ha enfrentado desafíos con el manejo de fuentes en sus documentos, esta guía lo guiará a través de todo lo que necesita saber para personalizar y administrar fuentes de manera efectiva. ¡Vamos a sumergirnos!
+Bienvenido a este tutorial detallado sobre cómo administrar la configuración de fuentes usando Aspose.Words para .NET. Si alguna vez ha enfrentado desafíos con el manejo de fuentes en sus documentos, esta guía lo guiará a través de todo lo que necesita saber para personalizar y administrar fuentes de manera efectiva.
 
 ## Requisitos previos
 
@@ -17,7 +18,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 - Conocimientos básicos de C#: la familiaridad con la programación en C# le ayudará a comprender e implementar los pasos sin problemas.
 -  Biblioteca Aspose.Words para .NET: descargue e instale Aspose.Words para .NET desde[enlace de descarga](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: un entorno adecuado como Visual Studio para escribir y ejecutar su código.
-- Documento de muestra: Un documento de muestra (p. ej.,`Rendering.docx`) para aplicar la configuración de fuente.
+-  Documento de muestra: Un documento de muestra (p. ej.,`Rendering.docx`) para aplicar la configuración de fuente.
 
 ## Importar espacios de nombres
 
@@ -39,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Paso 2: configurar fuentes de fuentes
 
-A continuación, configurará las fuentes de fuentes. Este paso es crucial ya que le indica a Aspose.Words dónde encontrar las fuentes que necesita para representar el documento.
+continuación, configurará las fuentes de fuentes. Este paso es crucial ya que le indica a Aspose.Words dónde encontrar las fuentes que necesita para representar el documento.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -77,22 +78,22 @@ Si sigue estos pasos, habrá configurado correctamente los ajustes de fuente per
 
 ## Preguntas frecuentes
 
-### P1: ¿Puedo utilizar fuentes de varias carpetas personalizadas?
+### ¿Puedo utilizar fuentes de varias carpetas personalizadas?
 
  Sí, puedes especificar varios.`FolderFontSource` instancias dentro del`SetFontsSources` método para incluir fuentes de diferentes carpetas.
 
-### P2: ¿Cómo obtengo una prueba gratuita de Aspose.Words para .NET?
+### ¿Cómo obtengo una prueba gratuita de Aspose.Words para .NET?
 
  Puede descargar una prueba gratuita desde[Aspose página de prueba gratuita](https://releases.aspose.com/).
 
-### P3: ¿Es posible incrustar fuentes directamente en el documento?
+### ¿Es posible incrustar fuentes directamente en el documento?
 
 Aspose.Words permite incrustar fuentes en algunos formatos, como PDF. Consulte la documentación para obtener más detalles sobre cómo incrustar fuentes.
 
-### P4: ¿Dónde puedo obtener soporte para Aspose.Words?
+### ¿Dónde puedo obtener soporte para Aspose.Words?
 
  Para obtener ayuda, visite el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### P5: ¿Puedo comprar una licencia temporal?
+### ¿Puedo comprar una licencia temporal?
 
  Sí, puede obtener una licencia temporal del[página de licencia temporal](https://purchase.aspose.com/temporary-license/).

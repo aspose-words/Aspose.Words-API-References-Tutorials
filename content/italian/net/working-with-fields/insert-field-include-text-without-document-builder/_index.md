@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
-## introduzione
+## Introduzione
 
 Nel mondo dell'automazione e della manipolazione dei documenti, Aspose.Words per .NET si pone come uno strumento potente. Oggi ci immergeremo in una guida dettagliata su come inserire un FieldIncludeText senza utilizzare DocumentBuilder. Questo tutorial ti guiderà attraverso il processo passo dopo passo, assicurandoti di comprendere ogni parte del codice e il suo scopo.
 
@@ -93,7 +93,7 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, puoi facilmente inserire un FieldIncludeText senza utilizzare DocumentBuilder in Aspose.Words per .NET. Questo approccio fornisce un modo semplificato per includere contenuto da un documento a un altro, rendendo le attività di automazione dei documenti molto più semplici.
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente inserire un FieldIncludeText senza utilizzare DocumentBuilder in Aspose.Words per .NET. Questo approccio fornisce un modo semplificato per includere contenuto da un documento a un altro, rendendo le attività di automazione dei documenti molto più semplici.
 
 ## Domande frequenti
 

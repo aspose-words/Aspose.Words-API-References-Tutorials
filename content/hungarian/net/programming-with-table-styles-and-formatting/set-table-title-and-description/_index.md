@@ -64,7 +64,7 @@ Ezt követően leírást adunk a táblázatunkhoz. Ez segít a dokumentumot olva
 table.Description = "Test description";
 ```
 
-## 5. lépés: Mentés meghatározott beállításokkal
+## 5. lépés: Mentés speciális beállításokkal
 
 Végül a kompatibilitás biztosítása érdekében el kell mentenünk a dokumentumunkat néhány speciális opcióval. Tekints erre úgy, mint a kincsesláda lezárására és a következő kalandra való felkészítésére.
 

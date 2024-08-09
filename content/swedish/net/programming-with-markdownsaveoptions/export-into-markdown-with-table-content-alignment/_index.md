@@ -9,7 +9,7 @@ url: /sv/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin undrat hur du exporterar ditt Word-dokument till Markdown-format med perfekt justerade tabeller? Oavsett om du är en utvecklare som arbetar med dokumentation eller bara någon som älskar Markdown, är den här guiden för dig. Vi kommer att fördjupa oss i det smarta med att använda Aspose.Words för .NET för att uppnå detta. Är du redo att förvandla dina Word-tabeller till snyggt justerade Markdown-tabeller? Låt oss börja!
+Hej där! Har du någonsin undrat hur du exporterar ditt Word-dokument till Markdown-format med perfekt justerade tabeller? Oavsett om du är en utvecklare som arbetar med dokumentation eller bara någon som älskar Markdown, är den här guiden för dig. Vi kommer att fördjupa oss i det smarta med att använda Aspose.Words för .NET för att uppnå detta. Är du redo att förvandla dina Word-tabeller till snyggt justerade Markdown-tabeller? Låt oss komma igång!
 
 ## Förutsättningar
 

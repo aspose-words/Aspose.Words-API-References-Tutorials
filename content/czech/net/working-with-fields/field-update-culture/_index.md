@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/field-update-culture/
 ---
-## Úvod
+## Zavedení
 
 Představte si, že pracujete na dokumentu aplikace Word s různými poli, jako jsou data, časy nebo vlastní informace, které je třeba dynamicky aktualizovat. Pokud jste dříve používali pole ve Wordu, víte, jak důležité je správné aktualizace. Ale co když potřebujete zvládnout nastavení kultury pro tato pole? V globálním světě, kde jsou dokumenty sdíleny v různých regionech, může mít pochopení toho, jak nakonfigurovat kulturu aktualizací v terénu, velký rozdíl. Tato příručka vás provede tím, jak spravovat kulturu aktualizací pole v dokumentech aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše od nastavení vašeho prostředí až po implementaci a uložení vašich změn.
 
@@ -15,13 +15,13 @@ Představte si, že pracujete na dokumentu aplikace Word s různými poli, jako 
 
 Než se ponoříme do toho nejhrubšího z kultury terénních aktualizací, je několik věcí, které budete potřebovat, abyste mohli začít:
 
-1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: Tento kurz předpokládá, že používáte Visual Studio nebo podobné IDE, které podporuje vývoj .NET.
 
 3. Základní znalost C#: Měli byste být spokojeni s programováním v C# a základními manipulacemi s dokumenty Word.
 
-4.  Aspose License: Pro plnou funkčnost budete možná potřebovat licenci. Můžete si jeden zakoupit[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+4.  Aspose License: Pro plnou funkčnost budete možná potřebovat licenci. Můžete si jeden zakoupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 5.  Přístup k dokumentaci a podpoře: Další pomoc získáte na[Aspose Documentation](https://reference.aspose.com/words/net/)a[Fórum podpory](https://forum.aspose.com/c/words/8) jsou skvělé zdroje.
 
@@ -60,7 +60,7 @@ Dále do dokumentu vložíte časové pole. Toto je dynamické pole, které se a
 builder.InsertField(FieldType.FieldTime, true);
 ```
 
- Tady,`FieldType.FieldTime` určuje, že chcete vložit časové pole. Druhý parametr,`true`, označuje, že pole by se mělo aktualizovat automaticky.
+ Zde,`FieldType.FieldTime` určuje, že chcete vložit časové pole. Druhý parametr,`true`, označuje, že pole by se mělo aktualizovat automaticky.
 
 ## Krok 3: Nakonfigurujte kulturu aktualizace pole
 
@@ -102,7 +102,7 @@ Ano, Aspose.Words podporuje různé typy polí, včetně dat a vlastních polí,
 
 ### Potřebuji konkrétní licenci k používání funkcí kultury aktualizace polí v Aspose.Words?
 
- Pro plnou funkčnost budete možná potřebovat platnou licenci Aspose. Jeden můžete získat prostřednictvím[Nákupní stránka Aspose](https://purchase.aspose.com/buy) nebo použijte dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Pro plnou funkčnost budete možná potřebovat platnou licenci Aspose. Jeden můžete získat prostřednictvím[Nákupní stránka Aspose](https://purchase.aspose.com/buy) nebo použijte dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jak mohu dále přizpůsobit kulturu aktualizace pole?
 

@@ -7,17 +7,18 @@ type: docs
 weight: 10
 url: /pt/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Introdução
 
-Bem-vindo a este guia completo sobre como gerenciar a substituição de fontes usando Aspose.Words for .NET. Se você já teve problemas com fontes que não apareciam corretamente em seus documentos, você veio ao lugar certo. Este tutorial o guiará por um processo passo a passo para lidar com a substituição de fontes sem sufixos de maneira eficiente. Vamos começar!
+Bem-vindo a este guia completo sobre como gerenciar a substituição de fontes usando Aspose.Words for .NET. Se você já teve problemas com fontes que não apareciam corretamente em seus documentos, você veio ao lugar certo. Este tutorial o guiará por um processo passo a passo para lidar com a substituição de fontes sem sufixos de maneira eficiente.
 
 ## Pré-requisitos
 
 Antes de mergulhar no tutorial, certifique-se de ter o seguinte:
 
 - Conhecimento básico de C#: Compreender a programação C# tornará mais fácil seguir e implementar as etapas.
--  Biblioteca Aspose.Words for .NET: Baixe e instale a biblioteca do[Link para Download](https://releases.aspose.com/words/net/).
+-  Biblioteca Aspose.Words for .NET: Baixe e instale a biblioteca do[link para baixar](https://releases.aspose.com/words/net/).
 - Ambiente de desenvolvimento: configure um ambiente de desenvolvimento como o Visual Studio para escrever e executar seu código.
-- Documento de amostra: Um documento de amostra (por exemplo,`Rendering.docx`) para trabalhar durante este tutorial.
+-  Documento de amostra: Um documento de amostra (por exemplo,`Rendering.docx`) para trabalhar durante este tutorial.
 
 ## Importar namespaces
 
@@ -26,7 +27,6 @@ Primeiro, precisamos importar os namespaces necessários para acessar as classes
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Etapa 5: Crie a classe do manipulador de avisos
 
-Para lidar com avisos de forma eficaz, crie uma classe personalizada que implemente o`IWarningCallback` interface. Esta classe irá capturar e registrar quaisquer avisos de substituição de fonte.
+ Para lidar com avisos de forma eficaz, crie uma classe personalizada que implemente o`IWarningCallback` interface. Esta classe irá capturar e registrar quaisquer avisos de substituição de fonte.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,7 +93,7 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Nesta aula:
--  O`Warning` O método captura avisos relacionados à substituição de fontes.
+-  O`Warning` método captura avisos relacionados à substituição de fontes.
 -  O`FontWarnings` A coleção armazena esses avisos para inspeção ou registro adicional.
 
 ## Conclusão
@@ -102,22 +102,22 @@ Agora você dominou o processo de manipulação de substituição de fontes sem 
 
 ## Perguntas frequentes
 
-### P1: Como posso usar fontes de vários diretórios personalizados?
+### Como posso usar fontes de vários diretórios personalizados?
 
  Você pode adicionar vários`FolderFontSource` instâncias para o`fontSources` liste e atualize as fontes de fonte de acordo.
 
-### Q2: Onde posso baixar uma avaliação gratuita do Aspose.Words for .NET?
+### Onde posso baixar uma avaliação gratuita do Aspose.Words for .NET?
 
  Você pode baixar uma versão de teste gratuita no site[Aspose página de teste gratuito](https://releases.aspose.com/).
 
-###  Q3: Posso lidar com vários tipos de avisos usando`IWarningCallback`?
+###  Posso lidar com vários tipos de avisos usando`IWarningCallback`?
 
- Sim o`IWarningCallback` interface permite lidar com vários tipos de avisos, não apenas com a substituição de fontes.
+ Sim, o`IWarningCallback` interface permite lidar com vários tipos de avisos, não apenas com a substituição de fontes.
 
-### Q4: Onde posso obter suporte para Aspose.Words?
+### Onde posso obter suporte para Aspose.Words?
 
  Para suporte, visite o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### P5: É possível adquirir uma licença temporária?
+### É possível adquirir uma licença temporária?
 
  Sim, você pode obter uma licença temporária do[página de licença temporária](https://purchase.aspose.com/temporary-license/).

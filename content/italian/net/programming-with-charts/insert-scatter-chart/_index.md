@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/insert-scatter-chart/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial imparerai come sfruttare Aspose.Words per .NET per inserire un grafico a dispersione nel tuo documento Word. I grafici a dispersione sono potenti strumenti visivi in grado di visualizzare in modo efficace i punti dati in base a due variabili, rendendo i tuoi documenti più coinvolgenti e informativi.
 

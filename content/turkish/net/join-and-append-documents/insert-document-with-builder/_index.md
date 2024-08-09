@@ -90,7 +90,7 @@ Sayfa sonu, kaynak belge içeriğinin yeni bir sayfada başlamasını sağlayara
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Kullanmak`InsertDocument` yöntemiyle kaynak belgenin tamamını hedef belgeye ekleyebiliriz.`ImportFormatMode.KeepSourceFormatting` kaynak belgenin formatının korunmasını sağlar.
+ kullanarak`InsertDocument` yöntemiyle kaynak belgenin tamamını hedef belgeye ekleyebiliriz.`ImportFormatMode.KeepSourceFormatting` kaynak belgenin formatının korunmasını sağlar.
 
 ## Adım 7: Birleştirilmiş Belgeyi Kaydetme
 
@@ -104,7 +104,7 @@ Belgeyi kaydederek iki belgeyi birleştirme işlemini tamamlamış oluyoruz. Yen
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir belgeyi diğerine başarıyla eklediniz. Bu yöntem yalnızca verimli olmakla kalmaz, aynı zamanda her iki belgenin biçimlendirmesini de koruyarak kusursuz bir birleştirme sağlar. İster tek seferlik bir proje üzerinde çalışıyor olun ister belge işlemeyi otomatikleştirmeye ihtiyacınız olsun, Aspose.Words for .NET ihtiyacınızı karşılar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir belgeyi diğerine başarıyla eklediniz. Bu yöntem yalnızca verimli olmakla kalmaz, aynı zamanda her iki belgenin biçimlendirmesini de koruyarak kusursuz bir birleştirme sağlar. İster tek seferlik bir proje üzerinde çalışıyor olun ister belge işlemeyi otomatikleştirmeye ihtiyacınız olsun, Aspose.Words for .NET ihtiyacınızı karşılar.
 
 ## SSS'ler
 
@@ -115,10 +115,10 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
  Evet kullanarak`ImportFormatMode.KeepSourceFormatting`, kaynak belgenin biçimlendirmesi hedef belgeye eklendiğinde korunur.
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?  
- Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+ Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ### Bu işlemi otomatikleştirebilir miyim?  
 Kesinlikle! Açıklanan yöntem, belge işleme görevlerini otomatikleştirmek için daha büyük uygulamalara dahil edilebilir.
 
 ### Daha fazla kaynak ve desteği nerede bulabilirim?  
-Daha fazla bilgi için şurayı kontrol edebilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/) veya ziyaret edin[destek Forumu](https://forum.aspose.com/c/words/8) yardım için.
+Daha fazla bilgi için şurayı kontrol edebilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/) veya ziyaret edin[destek forumu](https://forum.aspose.com/c/words/8) yardım için.

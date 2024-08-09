@@ -9,13 +9,13 @@ url: /pl/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single
 ---
 ## Wstęp
 
-Czy kiedykolwiek podczas konwersji dokumentów Worda na HTML zaplątałeś się w sieć reguł CSS rozsianych po całym świecie? Nie denerwować! Dzisiaj zagłębimy się w ciekawą funkcję Aspose.Words dla .NET, która pozwala zapisać wszystkie reguły CSS w jednym pliku. To nie tylko uporządkuje Twój kod, ale także znacznie ułatwi Ci życie. Zapnij pasy i rozpocznijmy podróż ku czystszym i wydajniejszym wynikom HTML!
+Czy kiedykolwiek podczas konwersji dokumentów Worda na HTML zaplątałeś się w sieć reguł CSS rozsianych po całym świecie? Nie martw się! Dzisiaj zagłębimy się w ciekawą funkcję Aspose.Words dla .NET, która pozwala zapisać wszystkie reguły CSS w jednym pliku. To nie tylko uporządkuje Twój kod, ale także znacznie ułatwi Ci życie. Zapnij pasy i rozpocznijmy podróż ku czystszym i wydajniejszym wynikom HTML!
 
 ## Warunki wstępne
 
 Zanim zagłębimy się w sedno sprawy, ustawmy nasze kaczki w rzędzie. Oto, czego potrzebujesz, aby zacząć:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne .NET: Będziesz potrzebować środowiska programistycznego .NET skonfigurowanego na swoim komputerze. Visual Studio to popularny wybór.
 3. Podstawowa znajomość języka C#: Pomocna będzie podstawowa znajomość programowania w języku C#.
 4. Dokument programu Word: Przygotuj dokument programu Word (.docx), który chcesz przekonwertować.
@@ -82,8 +82,8 @@ Korzystanie z pojedynczego pliku CSS upraszcza zarządzanie stylami i ich konser
 ### Czy w razie potrzeby mogę oddzielić reguły CSS dotyczące czcionek?
  Tak, poprzez ustawienie`SaveFontFaceCssSeparately` Do`true`, możesz oddzielić reguły CSS dotyczące kroju czcionki do innego pliku.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
- Aspose.Words oferuje bezpłatną wersję próbną, którą możesz[Pobierz tutaj](https://releases.aspose.com/) . Aby móc dalej korzystać, rozważ zakup licencji[Tutaj](https://purchase.aspose.com/buy).
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
+ Aspose.Words oferuje bezpłatną wersję próbną, którą możesz[pobierz tutaj](https://releases.aspose.com/) . Aby móc dalej korzystać, rozważ zakup licencji[Tutaj](https://purchase.aspose.com/buy).
 
 ### Na jakie inne formaty można konwertować Aspose.Words dla .NET?
 Aspose.Words dla .NET obsługuje różne formaty, w tym PDF, TXT i formaty obrazów, takie jak JPEG i PNG.

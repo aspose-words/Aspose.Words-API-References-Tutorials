@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Paragraphs.docx");
 ```
 
-## Stap 3: Configureer PDF-opslagopties
+## Stap 3: Configureer de PDF-opslagopties
 
  Om de documentstructuur te exporteren, moeten we de PDF-opslagopties configureren. Dit omvat het instellen van de`ExportDocumentStructure`eigendom aan`true`Dit zorgt ervoor dat de structuur van het document zichtbaar is in het navigatievenster "Inhoud" van Adobe Acrobat Pro.
 

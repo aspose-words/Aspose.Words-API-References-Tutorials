@@ -26,7 +26,7 @@ Aby dodać okienko zadań rozszerzenia internetowego do dokumentu, wykonaj nast�
 Document doc = new Document();
 ```
 
-##  Stwórz`TaskPane` instance and add it to the document's web extension task panes:
+##  Utwórz`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();

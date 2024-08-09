@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 हां, .NET के लिए Aspose.Words मुख्य रूप से C# जैसी .NET भाषाओं का समर्थन करता है, लेकिन आप इसे अन्य .NET समर्थित भाषाओं जैसे VB.NET के साथ भी उपयोग कर सकते हैं।
 
 ### मैं .NET के लिए Aspose.Words हेतु अस्थायी लाइसेंस कैसे प्राप्त करूं?
- आप यहां जाकर अस्थायी लाइसेंस प्राप्त कर सकते हैं।[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) पृष्ठ।
+ आप यहां जाकर अस्थायी लाइसेंस प्राप्त कर सकते हैं।[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) पृष्ठ.
 
 ### क्या समीकरणों को दाईं ओर या केंद्र में रखने का कोई तरीका है?
  हाँ, आप सेट कर सकते हैं`Justification`संपत्ति को`Right` या`Center` आपकी आवश्यकता के आधार पर.
@@ -98,4 +98,4 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 बिलकुल! .NET के लिए Aspose.Words Word दस्तावेज़ों को PDF सहित विभिन्न स्वरूपों में परिवर्तित करने का समर्थन करता है। आप इसका उपयोग कर सकते हैं`Save` विभिन्न प्रारूपों के साथ विधि.
 
 ### मैं .NET के लिए Aspose.Words के अधिक विस्तृत दस्तावेज़ कहां पा सकता हूं?
- आप यहाँ पर विस्तृत दस्तावेज पा सकते हैं[Aspose.Words दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) पृष्ठ।
+ आप यहाँ पर विस्तृत दस्तावेज पा सकते हैं[Aspose.Words दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) पृष्ठ.

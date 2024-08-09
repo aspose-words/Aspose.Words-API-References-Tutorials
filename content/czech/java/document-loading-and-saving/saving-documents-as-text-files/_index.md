@@ -17,7 +17,7 @@ V tomto tutoriálu prozkoumáme, jak ukládat dokumenty jako textové soubory po
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Knihovna Aspose.Words for Java integrovaná do vašeho projektu. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Knihovna Aspose.Words for Java integrovaná do vašeho projektu. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 - Základní znalost programování v Javě.
 
 ## Krok 1: Vytvořte dokument
@@ -128,7 +128,7 @@ V tomto tutoriálu jsme se naučili ukládat dokumenty jako textové soubory v A
 
 ### Jak přidám značky bidi do textového výstupu?
 
- Chcete-li do textového výstupu přidat značky bidi, nastavte`AddBidiMarks` majetek`TxtSaveOptions` na`true`. Například:
+ Chcete-li do textového výstupu přidat značky bidi, nastavte`AddBidiMarks` vlastnictví`TxtSaveOptions` na`true`. Například:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -137,7 +137,7 @@ saveOptions.setAddBidiMarks(true);
 
 ### Mohu přizpůsobit znak odsazení seznamu?
 
- Ano, znak odsazení seznamu můžete přizpůsobit konfigurací`ListIndentation` majetek`TxtSaveOptions`. Chcete-li například použít znak tabulátoru pro odsazení seznamu, můžete provést následující:
+ Ano, znak odsazení seznamu můžete přizpůsobit konfigurací`ListIndentation` vlastnictví`TxtSaveOptions`. Chcete-li například použít znak tabulátoru pro odsazení seznamu, můžete provést následující:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();

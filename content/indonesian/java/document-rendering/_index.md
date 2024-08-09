@@ -2,7 +2,7 @@
 title: Rendering Dokumen
 linktitle: Rendering Dokumen
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Render dokumen Word secara efisien ke berbagai format di Java dengan Aspose.Words! Rendering dokumen induk untuk hasil profesional.
+description: Render dokumen Word secara efisien ke berbagai format di Java dengan Aspose.Words! Rendering dokumen utama untuk hasil profesional.
 type: docs
 weight: 16
 url: /id/java/document-rendering/

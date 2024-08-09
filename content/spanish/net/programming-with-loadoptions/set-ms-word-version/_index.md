@@ -2,7 +2,7 @@
 title: Establecer la versión de MS Word
 linktitle: Establecer la versión de MS Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a configurar versiones de MS Word usando Aspose.Words para .NET con nuestra guía detallada. Perfecto para desarrolladores que buscan optimizar la manipulación de documentos.
+description: Aprenda a configurar versiones de MS Word usando Aspose.Words para .NET con nuestra guía detallada. Perfecto para desarrolladores que buscan agilizar la manipulación de documentos.
 
 type: docs
 weight: 10
@@ -10,13 +10,13 @@ url: /es/net/programming-with-loadoptions/set-ms-word-version/
 ---
 ## Introducción
 
-¿Alguna vez ha necesitado trabajar con versiones específicas de documentos de MS Word pero no sabe cómo configurarlo mediante programación? ¡No estás solo! En este tutorial, recorreremos el proceso de configuración de la versión de MS Word usando Aspose.Words para .NET. Esta es una herramienta fantástica que facilita la manipulación de documentos de Word. Nos sumergiremos en el meollo de la cuestión, desglosando cada paso para asegurarnos de que esté funcionando sin problemas. ¿Listo para comenzar? ¡Vamos a sumergirnos!
+¿Alguna vez ha necesitado trabajar con versiones específicas de documentos de MS Word pero no sabe cómo configurarlo mediante programación? ¡No estás solo! En este tutorial, recorreremos el proceso de configuración de la versión de MS Word usando Aspose.Words para .NET. Esta es una herramienta fantástica que facilita la manipulación de documentos de Word. Nos sumergiremos en el meollo de la cuestión, desglosando cada paso para asegurarnos de que esté funcionando sin problemas. ¿Listo para empezar? ¡Vamos a sumergirnos!
 
 ## Requisitos previos
 
 Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
 
--  Aspose.Words para .NET: asegúrese de tener la última versión.[Descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: asegúrese de tener la última versión.[Descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: puede utilizar Visual Studio o cualquier otro IDE compatible con .NET.
 - Conocimientos básicos de C#: si bien lo mantendremos simple, es necesario un conocimiento básico de C#.
 - Documento de muestra: tenga listo un documento de Word en su directorio de documentos para realizar pruebas.
@@ -86,4 +86,4 @@ Configurar la versión de MS Word en Aspose.Words para .NET es sencillo una vez 
 Sí, Aspose.Words es una biblioteca completa que le permite manipular casi todos los aspectos de los documentos de Word.
 
 ### ¿Dónde puedo encontrar más ejemplos y documentación?
- Revisar la[documentación](https://reference.aspose.com/words/net/) para más ejemplos e información detallada.
+ Mira el[documentación](https://reference.aspose.com/words/net/) para más ejemplos e información detallada.

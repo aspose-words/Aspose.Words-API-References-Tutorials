@@ -72,7 +72,7 @@ HtmlSaveOptions options = new HtmlSaveOptions
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-وهناك لديك! لقد نجحت في تقسيم مستند Word حسب الأقسام إلى HTML باستخدام Aspose.Words لـ .NET.
+وهنا لديك! لقد نجحت في تقسيم مستند Word حسب الأقسام إلى HTML باستخدام Aspose.Words لـ .NET.
 
 ## خاتمة
 

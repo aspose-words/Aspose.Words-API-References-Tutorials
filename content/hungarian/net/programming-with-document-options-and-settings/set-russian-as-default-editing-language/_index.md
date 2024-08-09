@@ -103,7 +103,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való pro
 
  Az Aspose.Words for .NET letölthető innen[Aspose Releases](https://releases.aspose.com/words/net/) oldalon.
 
-###  Mi a`LoadOptions` used for?
+###  Mi az`LoadOptions` used for?
 
 `LoadOptions` a dokumentum betöltésének különféle opcióinak megadására szolgál, mint például az alapértelmezett szerkesztési nyelv beállítása.
 

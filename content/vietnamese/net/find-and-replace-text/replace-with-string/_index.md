@@ -10,7 +10,7 @@ url: /vi/net/find-and-replace-text/replace-with-string/
 
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thấy mình đang loay hoay trong một tài liệu Word và cần thay thế một số từ hoặc cụm từ nhất định chưa? Bạn không cô đơn. Cho dù đó là cập nhật các điều khoản, sửa lỗi hay chỉ đơn giản là cải tiến nội dung của bạn thì việc biết cách tìm và thay thế văn bản trong tài liệu một cách hiệu quả là rất quan trọng. Hôm nay, chúng ta sẽ đi sâu vào thế giới tuyệt vời của Aspose.Words dành cho .NET để chỉ cho bạn cách thay thế chuỗi trong tài liệu Word của bạn như một người chuyên nghiệp.
+Này! Bạn đã bao giờ thấy mình đang loay hoay trong một tài liệu Word và cần thay thế một số từ hoặc cụm từ nhất định chưa? Bạn không đơn độc. Cho dù đó là cập nhật các điều khoản, sửa lỗi hay chỉ đơn giản là cải tiến nội dung của bạn thì việc biết cách tìm và thay thế văn bản trong tài liệu một cách hiệu quả là rất quan trọng. Hôm nay, chúng ta sẽ đi sâu vào thế giới tuyệt vời của Aspose.Words dành cho .NET để chỉ cho bạn cách thay thế chuỗi trong tài liệu Word của bạn như một người chuyên nghiệp.
 
 ## Điều kiện tiên quyết
 
@@ -71,7 +71,7 @@ Chúng tôi đã thêm một dòng văn bản đơn giản mà chúng tôi sẽ 
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- Các`Replace`phương pháp này rất đơn giản. Chúng tôi chỉ định từ cần tìm, từ thay thế và các tùy chọn cho thao tác tìm và thay thế.
+ các`Replace`phương pháp này rất đơn giản. Chúng tôi chỉ định từ cần tìm, từ thay thế và các tùy chọn cho thao tác tìm và thay thế.
 
 ## Bước 5: Lưu tài liệu
 
@@ -81,7 +81,7 @@ Cuối cùng, chúng tôi lưu tài liệu đã sửa đổi. Đây là thời �
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 ```
 
- Tài liệu được lưu trong thư mục được chỉ định với tên`FindAndReplace.ReplaceWithString.docx`. Và Voila! Chúng tôi đã thực hiện thành công thao tác tìm và thay thế.
+ Tài liệu được lưu trong thư mục được chỉ định với tên`FindAndReplace.ReplaceWithString.docx`. Và thì đấy! Chúng tôi đã thực hiện thành công thao tác tìm và thay thế.
 
 ## Phần kết luận
 
@@ -93,7 +93,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 Có, bạn có thể xâu chuỗi nhiều thao tác thay thế hoặc sử dụng biểu thức thông thường để khớp và thay thế nhiều mẫu.
 
 ### Aspose.Words cho .NET có miễn phí không?
- Aspose.Words for .NET là một thư viện trả phí, nhưng bạn có thể có được[dùng thử miễn phí](https://releases.aspose.com/) để kiểm tra tính năng của nó.
+ Aspose.Words for .NET là một thư viện trả phí, nhưng bạn có thể có được[dùng thử miễn phí](https://releases.aspose.com/) để kiểm tra các tính năng của nó.
 
 ### Tôi có thể thay thế văn bản bằng nội dung được định dạng không?
 Tuyệt đối! Aspose.Words cho phép bạn thay thế văn bản bằng nội dung được định dạng, bao gồm các phông chữ, màu sắc và kiểu dáng khác nhau.
@@ -102,4 +102,4 @@ Tuyệt đối! Aspose.Words cho phép bạn thay thế văn bản bằng nội 
 Nếu không tìm thấy từ đó, thao tác thay thế sẽ không thay đổi bất cứ điều gì. Không có lỗi, chỉ là không có thay đổi.
 
 ### Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
- Bạn có thể nhận được sự hỗ trợ từ[Cộng đồng đề xuất](https://forum.aspose.com/c/words/8) hoặc mua hỗ trợ cao cấp nếu cần.
+ Bạn có thể nhận được sự hỗ trợ từ[cộng đồng Aspose](https://forum.aspose.com/c/words/8) hoặc mua hỗ trợ cao cấp nếu cần.

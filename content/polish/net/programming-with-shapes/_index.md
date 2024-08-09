@@ -17,7 +17,7 @@ Używając Aspose.Words dla .NET i postępując zgodnie z tymi samouczkami, będ
 | Tytuł | Opis |
 | --- | --- |
 | [Dodaj kształt grupy](./add-group-shape/) | Dowiedz się, jak dodawać kształty grup do dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z tego wszechstronnego samouczka krok po kroku. |
-| [Wstaw kształt](./insert-shape/) | Dowiedz się, jak wstawiać kształty w dokumentach programu Word i manipulować nimi za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. |
+| [Wstaw kształt](./insert-shape/) | Dowiedz się, jak wstawiać i manipulować kształtami w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. |
 | [Proporcje obrazu zablokowane](./aspect-ratio-locked/) | Dowiedz się, jak zablokować proporcje kształtów w dokumentach programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby zachować proporcje obrazów i kształtów. |
 | [Układ W Komórce](./layout-in-cell/) | Dowiedz się, jak ustawić układ w komórce za pomocą Aspose.Words dla .NET, korzystając z tego obszernego przewodnika. Idealny dla programistów chcących dostosować dokumenty programu Word. |
 | [Dodaj przycięte rogi](./add-corners-snipped/) | Dowiedz się, jak dodać kształt obciętych rogów do dokumentów programu Word za pomocą Aspose.Words dla .NET. Dzięki temu przewodnikowi krok po kroku możesz łatwo ulepszać swoje dokumenty. |

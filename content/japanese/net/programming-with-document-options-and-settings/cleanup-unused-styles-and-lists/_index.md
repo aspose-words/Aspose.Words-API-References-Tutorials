@@ -90,7 +90,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 Aspose.Words for .NET は、C# を使用してプログラム的に Word 文書を作成、変更、変換できる強力なライブラリです。
 
 ### 未使用のスタイルとリストを同時に削除できますか?
-はい、両方設定できます`UnusedLists`そして`UnusedStyles`に`true`の中に`CleanupOptions`両方を削除します。
+はい、両方設定できます`UnusedLists`そして`UnusedStyles`に`true`の`CleanupOptions`両方を削除します。
 
 ### クリーンアップを元に戻すことは可能ですか?
 いいえ、クリーンアップが完了してドキュメントが保存されると、変更を元に戻すことはできません。 常に元のドキュメントのバックアップを保存してください。

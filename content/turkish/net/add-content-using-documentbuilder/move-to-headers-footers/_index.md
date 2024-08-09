@@ -107,7 +107,7 @@ Bu kod satırı, belgeyi belirtilen dizine "AddContentUsingDocumentBuilder.MoveT
 Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan bir kitaplıktır.
 
 ### Üstbilgilere ve altbilgilere resim ekleyebilir miyim?
- Evet, üstbilgilere ve altbilgilere aşağıdakileri kullanarak resim ekleyebilirsiniz:`DocumentBuilder.InsertImage` yöntem.
+ Evet, üstbilgilere ve altbilgilere aşağıdakileri kullanarak resim ekleyebilirsiniz:`DocumentBuilder.InsertImage` Yöntem.
 
 ### Her bölüm için farklı üstbilgi ve altbilgilere sahip olmak mümkün müdür?
  Kesinlikle! Farklı ayarlar yaparak her bölüm için benzersiz üstbilgi ve altbilgilere sahip olabilirsiniz.`HeaderFooterType` her bölüm için.
@@ -116,4 +116,4 @@ Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programl
 Karmaşık düzenler oluşturmak için Aspose.Words tarafından sağlanan tabloları, görüntüleri ve çeşitli biçimlendirme seçeneklerini kullanabilirsiniz.
 
 ### Daha fazla örneği ve öğreticiyi nerede bulabilirim?
- Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) ve[destek Forumu](https://forum.aspose.com/c/words/8) Daha fazla örnek ve topluluk desteği için.
+ Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) ve[destek forumu](https://forum.aspose.com/c/words/8) Daha fazla örnek ve topluluk desteği için.

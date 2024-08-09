@@ -81,7 +81,7 @@ Das programmgesteuerte Verwalten von Kommentarantworten in Word-Dokumenten kann 
 
 ### Kann ich die Autorendetails für jede Antwort anpassen?
 
- Ja, Sie können den Namen des Autors, die Initialen sowie Datum und Uhrzeit für jede Antwort angeben, wenn Sie das`AddReply` Methode.
+ Ja, Sie können den Namen des Autors, die Initialen sowie Datum und Uhrzeit für jede Antwort angeben, wenn Sie das`AddReply` Verfahren.
 
 ### Ist es möglich, alle Antworten zu einem Kommentar auf einmal zu entfernen?
 
@@ -89,7 +89,7 @@ Um alle Antworten zu entfernen, müssen Sie die`Replies` Sammlung der Kommentare
 
 ### Kann ich auf Kommentare in einem bestimmten Abschnitt des Dokuments zugreifen?
 
- Ja, Sie können durch die Abschnitte des Dokuments navigieren und auf Kommentare innerhalb jedes Abschnitts zugreifen, indem Sie`GetChild` Methode.
+ Ja, Sie können durch die Abschnitte des Dokuments navigieren und auf Kommentare innerhalb jedes Abschnitts zugreifen, indem Sie`GetChild` Verfahren.
 
 ### Unterstützt Aspose.Words für .NET andere kommentarbezogene Funktionen?
 

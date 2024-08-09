@@ -284,4 +284,4 @@ Você pode aplicar formatação condicional a linhas específicas de uma tabela 
 
 ### Onde posso encontrar mais documentação e recursos para Aspose.Words for Java?
 
- Para obter documentação abrangente e recursos adicionais, visite a documentação do Aspose.Words para Java:[Documentação Aspose.Words para Java](https://reference.aspose.com/words/java/).
+ Para documentação abrangente e recursos adicionais, visite a documentação do Aspose.Words para Java:[Documentação Aspose.Words para Java](https://reference.aspose.com/words/java/).

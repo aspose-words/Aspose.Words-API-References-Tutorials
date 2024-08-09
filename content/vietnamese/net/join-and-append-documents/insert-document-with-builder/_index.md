@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Bước 3: Tạo đối tượng DocumentBuilder
 
- Các`DocumentBuilder` lớp là một công cụ mạnh mẽ trong thư viện Aspose.Words. Nó cho phép chúng ta điều hướng và thao tác với tài liệu.
+ các`DocumentBuilder` lớp là một công cụ mạnh mẽ trong thư viện Aspose.Words. Nó cho phép chúng ta điều hướng và thao tác với tài liệu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
@@ -90,7 +90,7 @@ Bây giờ đến phần thú vị—thực sự là chèn tài liệu nguồn v
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Sử dụng`InsertDocument` phương pháp này, chúng ta có thể chèn toàn bộ tài liệu nguồn vào tài liệu đích. Các`ImportFormatMode.KeepSourceFormatting` đảm bảo rằng định dạng của tài liệu nguồn được giữ nguyên.
+ Sử dụng`InsertDocument` phương pháp này, chúng ta có thể chèn toàn bộ tài liệu nguồn vào tài liệu đích. các`ImportFormatMode.KeepSourceFormatting` đảm bảo rằng định dạng của tài liệu nguồn được giữ nguyên.
 
 ## Bước 7: Lưu tài liệu đã hợp nhất
 
@@ -104,7 +104,7 @@ Bằng cách lưu tài liệu, chúng tôi hoàn thành quá trình hợp nhất
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công tài liệu này vào tài liệu khác bằng Aspose.Words for .NET. Phương pháp này không chỉ hiệu quả mà còn giữ nguyên định dạng của cả hai tài liệu, đảm bảo việc hợp nhất liền mạch. Cho dù bạn đang làm việc trên một dự án một lần hay cần tự động xử lý tài liệu, Aspose.Words for .NET đều có thể giúp bạn.
+Và bạn có nó! Bạn đã chèn thành công tài liệu này vào tài liệu khác bằng Aspose.Words for .NET. Phương pháp này không chỉ hiệu quả mà còn giữ nguyên định dạng của cả hai tài liệu, đảm bảo việc hợp nhất liền mạch. Cho dù bạn đang làm việc trên một dự án một lần hay cần tự động xử lý tài liệu, Aspose.Words for .NET đều có thể giúp bạn.
 
 ## Câu hỏi thường gặp
 

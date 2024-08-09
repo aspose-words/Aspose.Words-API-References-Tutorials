@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak přidat trochu místa navíc kolem textu v buňce tabulky v dokumentu aplikace Word? Tak to jste na správném místě! Tento tutoriál vás provede procesem nastavení odsazení buněk pomocí Aspose.Words pro .NET. Ať už chcete, aby váš dokument vypadal uhlazeněji, nebo jen chcete, aby data v tabulce vynikla, úprava odsazení buněk je jednoduchý, ale výkonný nástroj. Každý krok rozebereme, abyste se ujistili, že je můžete snadno sledovat, i když jste v Aspose.Words pro .NET nováčkem.
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky. Připraveni? Pojďme!
+Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky. Připraveni? Jdeme na to!
 
 ## Krok 1: Vytvořte nový dokument
 
@@ -45,7 +45,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Začněte stavět svůj stůl
 
- Nyní, když máme dokument, začněme sestavovat tabulku. Použijeme`DocumentBuilder` pro vkládání buněk a řádků.
+ Nyní, když máme dokument, začněme sestavovat tabulku. Použijeme`DocumentBuilder` pro vložení buněk a řádků.
 
 ```csharp
 // Začněte stavět stůl

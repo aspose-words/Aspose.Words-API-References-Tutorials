@@ -64,7 +64,7 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 Sla het samengevoegde document op de gewenste locatie op.
 
 ```csharp
@@ -78,7 +78,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ## Veelgestelde vragen
 
 ### Kan ik documenten met verschillende opmaakstijlen importeren?
- Ja de`NodeImporter` class ondersteunt het importeren van documenten met verschillende opmaakstijlen.
+ Ja, de`NodeImporter` class ondersteunt het importeren van documenten met verschillende opmaakstijlen.
 
 ### Wat moet ik doen als mijn documenten complexe tabellen en afbeeldingen bevatten?
 Aspose.Words voor .NET verwerkt complexe structuren zoals tabellen en afbeeldingen tijdens importbewerkingen.

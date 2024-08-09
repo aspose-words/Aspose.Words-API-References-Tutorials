@@ -9,7 +9,7 @@ url: /id/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-lis
 ---
 ## Perkenalan
 
-Daftar merupakan hal mendasar dalam mengatur konten, baik Anda sedang menyusun laporan, menulis makalah penelitian, atau menyiapkan presentasi. Namun, ketika menyajikan daftar dengan beberapa tingkat indentasi, mencapai format yang diinginkan bisa jadi agak rumit. Menggunakan Aspose.Words untuk .NET, Anda dapat dengan mudah mengelola indentasi daftar dan menyesuaikan cara setiap level direpresentasikan. Dalam tutorial ini, kita akan fokus membuat daftar dengan beberapa tingkat indentasi, menggunakan karakter tab untuk pemformatan yang tepat. Di akhir panduan ini, Anda akan memiliki pemahaman yang jelas tentang cara menyiapkan dan menyimpan dokumen Anda dengan gaya indentasi yang benar.
+Daftar merupakan hal mendasar dalam mengatur konten, baik Anda sedang menyusun laporan, menulis makalah penelitian, atau menyiapkan presentasi. Namun, ketika menyajikan daftar dengan beberapa tingkat indentasi, mencapai format yang diinginkan bisa jadi sedikit rumit. Menggunakan Aspose.Words untuk .NET, Anda dapat dengan mudah mengelola indentasi daftar dan menyesuaikan cara setiap level direpresentasikan. Dalam tutorial ini, kita akan fokus membuat daftar dengan beberapa tingkat indentasi, menggunakan karakter tab untuk pemformatan yang tepat. Di akhir panduan ini, Anda akan memiliki pemahaman yang jelas tentang cara menyiapkan dan menyimpan dokumen Anda dengan gaya indentasi yang benar.
 
 ## Prasyarat
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Di bagian ini, kita akan membuat daftar bertingkat dengan lekukan tab menggunakan Aspose.Words untuk .NET. Ikuti langkah ini:
+Di bagian ini, kita akan membuat daftar bertingkat dengan lekukan tab menggunakan Aspose.Words untuk .NET. Ikuti langkah-langkah berikut:
 
 ## Langkah 1: Siapkan Dokumen Anda
 
@@ -118,10 +118,10 @@ Dalam tutorial ini, kita telah mempelajari pembuatan daftar multi-level dengan l
 Ya, Aspose.Words memungkinkan penyesuaian gaya daftar di berbagai tingkatan. Anda dapat mengubah opsi pemformatan daftar untuk mendapatkan gaya yang berbeda.
 
 ### Bagaimana jika saya perlu menerapkan poin-poin, bukan angka?
- Menggunakan`ListFormat.ApplyBulletDefault()` metode sebagai gantinya`ApplyNumberDefault()` untuk membuat daftar berpoin.
+ Gunakan`ListFormat.ApplyBulletDefault()` metode sebagai gantinya`ApplyNumberDefault()` untuk membuat daftar berpoin.
 
 ### Bagaimana cara menyesuaikan ukuran karakter tab yang digunakan untuk indentasi?
- Sayangnya, ukuran tab masuk`TxtSaveOptions`telah diperbaiki. Untuk menyesuaikan ukuran lekukan, Anda mungkin perlu menggunakan spasi atau menyesuaikan format daftar secara langsung.
+ Sayangnya, ukuran tab masuk`TxtSaveOptions`sudah diperbaiki. Untuk menyesuaikan ukuran lekukan, Anda mungkin perlu menggunakan spasi atau menyesuaikan format daftar secara langsung.
 
 ### Bisakah saya menggunakan pengaturan ini saat mengekspor ke format lain seperti PDF atau DOCX?
 Pengaturan karakter tab tertentu berlaku untuk file teks. Untuk format seperti PDF atau DOCX, Anda perlu menyesuaikan opsi pemformatan dalam format tersebut.

@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 
 ## Çözüm
 
-İşte aldın! Aspose.Words for .NET ile Word belgesindeki dizeleri değiştirmek çocuk oyuncağıdır. Bu araç inanılmaz derecede güçlüdür ve belgeleri programlı olarak kolaylıkla değiştirmenize olanak tanır. İster tek bir kelimeyi güncelliyor olun, ister tüm bölümleri elden geçiriyor olun, Aspose.Words arkanızdadır.
+İşte burada! Aspose.Words for .NET ile Word belgesindeki dizeleri değiştirmek çocuk oyuncağıdır. Bu araç inanılmaz derecede güçlüdür ve belgeleri programlı olarak kolaylıkla değiştirmenize olanak tanır. İster tek bir kelimeyi güncelliyor olun, ister tüm bölümleri elden geçiriyor olun, Aspose.Words arkanızdadır.
 
 ## SSS'ler
 

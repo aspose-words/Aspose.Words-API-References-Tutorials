@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Memanipulasi Konten Dokumen
 
- Menggunakan`DocumentBuilder` objek untuk memanipulasi konten sesuai kebutuhan. Misalnya, menambahkan teks atau memformat.
+ Gunakan`DocumentBuilder` objek untuk memanipulasi konten sesuai kebutuhan. Misalnya, menambahkan teks atau memformat.
 
 ```csharp
 builder.Writeln("Insert your text or content manipulation code here!");

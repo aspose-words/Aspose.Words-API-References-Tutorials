@@ -92,7 +92,7 @@ Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng mở rộng định dạng trên các ô và hàng từ các kiểu trong tài liệu Word bằng Aspose.Words for .NET. Điều này không chỉ tiết kiệm thời gian mà còn đảm bảo tính nhất quán trên các tài liệu của bạn. Chúc mừng mã hóa!
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng mở rộng định dạng trên các ô và hàng từ các kiểu trong tài liệu Word bằng Aspose.Words for .NET. Điều này không chỉ tiết kiệm thời gian mà còn đảm bảo tính nhất quán trên các tài liệu của bạn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -109,4 +109,4 @@ Tuyệt đối! Bạn có thể lặp qua tất cả các bảng trong tài li�
 Khi các kiểu được mở rộng, chúng sẽ được áp dụng trực tiếp vào các ô. Để hoàn nguyên, bạn cần tải lại tài liệu hoặc áp dụng lại kiểu theo cách thủ công.
 
 ### Phương pháp này có hoạt động với tất cả các phiên bản Aspose.Words cho .NET không?
- Vâng`ExpandTableStylesToDirectFormatting` phương pháp này có sẵn trong các phiên bản gần đây của Aspose.Words cho .NET. Luôn kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết những cập nhật mới nhất.
+ Vâng, cái`ExpandTableStylesToDirectFormatting` phương pháp này có sẵn trong các phiên bản gần đây của Aspose.Words cho .NET. Luôn kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết những cập nhật mới nhất.

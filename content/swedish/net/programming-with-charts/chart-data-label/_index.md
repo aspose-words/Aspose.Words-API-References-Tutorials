@@ -19,7 +19,7 @@ Innan vi börjar, se till att du har följande:
 2. .NET Framework: Se till att du har .NET Framework 4.0 eller senare.
 3.  Aspose.Words for .NET: Ladda ner och installera Aspose.Words for .NET från[nedladdningslänk](https://releases.aspose.com/words/net/).
 4. Grundläggande kunskaper i C#: Förtrogenhet med C#-programmering är viktigt.
-5.  En giltig licens: Skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) eller köp en från[köplänk](https://purchase.aspose.com/buy).
+5.  En giltig licens: Skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) eller köp en från[köp länk](https://purchase.aspose.com/buy).
 
 ## Importera namnområden
 

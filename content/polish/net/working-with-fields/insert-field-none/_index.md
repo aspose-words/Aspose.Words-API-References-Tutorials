@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
  Zastępować`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką do folderu dokumentów. Tutaj zostanie zapisany Twój nowy dokument.
 
-## Krok 2: Utwórz dokument i narzędzie DocumentBuider
+## Krok 2: Utwórz dokument i narzędzie DocumentBuilder
 
 Teraz, gdy mamy już skonfigurowany katalog, utwórzmy nowy dokument i narzędzie DocumentBuilder. DocumentBuilder jest jak nasze magiczne pióro, które pozwala nam dodawać treść do dokumentu.
 
@@ -70,7 +70,7 @@ Na koniec zapiszmy nasz dokument. Tutaj cała Twoja ciężka praca zostaje zebra
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-I to wszystko! Właśnie utworzyłeś dokument Word i wstawiłeś pole za pomocą Aspose.Words dla .NET. Całkiem schludnie, prawda?
+I tyle! Właśnie utworzyłeś dokument Word i wstawiłeś pole za pomocą Aspose.Words dla .NET. Całkiem schludnie, prawda?
 
 ## Wniosek
 
@@ -87,7 +87,7 @@ Tak, Aspose.Words dla .NET obsługuje .NET Core, .NET 5.0 i nowsze wersje, dzię
 ### Jak wstawić różne typy pól w dokumencie programu Word?
  Możesz wstawiać różne typy pól za pomocą`DocumentBuilder.InsertField`metoda. Każdy typ pola ma swoją własną metodę i parametry.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
  Aspose.Words dla .NET oferuje bezpłatną wersję próbną, ale aby uzyskać pełną funkcjonalność, może być konieczne zakupienie licencji. Możesz zapoznać się z cenami i opcjami licencjonowania[Tutaj](https://purchase.aspose.com/buy).
 
 ### Gdzie mogę znaleźć więcej dokumentacji i wsparcia dla Aspose.Words dla .NET?

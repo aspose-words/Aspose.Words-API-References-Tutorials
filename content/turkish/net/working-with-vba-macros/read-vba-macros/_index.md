@@ -45,7 +45,7 @@ Dizininizin yolunu şu şekilde ayarlayın:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Word belgelerinizin bulunduğu gerçek yolla. Eğlence burada başlıyor!
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Word belgelerinizin bulunduğu gerçek yolla. Eğlencenin başladığı yer burası!
 
 ## Adım 2: Word Belgesini Yükleme
 
@@ -115,9 +115,9 @@ Bu, "Merhaba Dünya!" metnini içeren bir mesaj kutusu görüntüleyen basit bir
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesinden VBA makrolarını başarıyla okudunuz. Bu eğitim, ortamınızı ayarlamaktan belgenizi yüklemeye, VBA projesine erişmeye ve makroları okumaya kadar her şeyi kapsıyordu. Aspose.Words ile görevleri otomatikleştirmek, belgeleri özelleştirmek ve VBA dünyasının derinliklerine inmek için güçlü bir araca sahipsiniz.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinden VBA makrolarını başarıyla okudunuz. Bu eğitim, ortamınızı ayarlamaktan belgenizi yüklemeye, VBA projesine erişmeye ve makroları okumaya kadar her şeyi kapsıyordu. Aspose.Words ile görevleri otomatikleştirmek, belgeleri özelleştirmek ve VBA dünyasının derinliklerine inmek için güçlü bir araca sahipsiniz.
 
- Daha fazlasını öğrenmeye istekliyseniz,[API belgeleri](https://reference.aspose.com/words/net/) başlamak için harika bir yerdir. Sorularla karşılaşırsanız veya yardıma ihtiyacınız olursa,[destek Forumu](https://forum.aspose.com/c/words/8) senin için orada mı?
+ Daha fazlasını öğrenmeye istekliyseniz,[API belgeleri](https://reference.aspose.com/words/net/) başlamak için harika bir yerdir. Sorularla karşılaşırsanız veya yardıma ihtiyacınız olursa,[destek forumu](https://forum.aspose.com/c/words/8) senin için orada mı?
 
 Mutlu kodlamalar ve makrolarınızın her zaman sorunsuz çalışmasını dilerim!
 

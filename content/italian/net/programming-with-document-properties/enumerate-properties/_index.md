@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/enumerate-properties/
 ---
-## introduzione
+## Introduzione
 
 Desideri lavorare con i documenti di Word a livello di codice? Aspose.Words per .NET è un potente strumento che può aiutarti a raggiungere proprio questo. Oggi ti spiegherò come enumerare le proprietà di un documento Word utilizzando Aspose.Words per .NET. Che tu sia un principiante o che tu abbia una certa esperienza, questa guida ti analizzerà passo dopo passo in modo colloquiale e facile da seguire.
 
@@ -95,7 +95,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 
 ## Conclusione
 
-il gioco è fatto! Hai enumerato con successo sia le proprietà integrate che quelle personalizzate di un documento Word utilizzando Aspose.Words per .NET. Questa è solo la punta dell'iceberg quando si tratta di cosa puoi fare con Aspose.Words. Che tu stia automatizzando la generazione di documenti o manipolando documenti complessi, Aspose.Words offre un ricco set di funzionalità per semplificarti la vita.
+Ed ecco qua! Hai enumerato con successo sia le proprietà integrate che quelle personalizzate di un documento Word utilizzando Aspose.Words per .NET. Questa è solo la punta dell'iceberg quando si tratta di cosa puoi fare con Aspose.Words. Che tu stia automatizzando la generazione di documenti o manipolando documenti complessi, Aspose.Words offre un ricco set di funzionalità per semplificarti la vita.
 
 ## Domande frequenti
 

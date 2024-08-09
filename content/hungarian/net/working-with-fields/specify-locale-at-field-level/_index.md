@@ -9,7 +9,7 @@ url: /hu/net/working-with-fields/specify-locale-at-field-level/
 ---
 ## Bevezetés
 
-Készen állsz, hogy belemerülj az Aspose.Words for .NET világába? Ma azt vizsgáljuk meg, hogyan adhatjuk meg a területi tartományt mező szinten. Ez a praktikus funkció különösen akkor hasznos, ha a dokumentumokat meghatározott kulturális vagy regionális formátumokhoz kell igazítani. Tekintse ezt úgy, mintha útlevelet adna az okmányának, amely megmondja, hogyan kell viselkednie attól függően, hogy hova látogat. Ennek az oktatóanyagnak a végére könnyedén testreszabhatja a Word-dokumentumok mezőinek területi beállításait. Kezdjük el!
+Készen állsz, hogy belemerülj az Aspose.Words for .NET világába? Ma azt vizsgáljuk meg, hogyan adhatjuk meg a területi tartományt mező szinten. Ez a praktikus funkció különösen akkor hasznos, ha a dokumentumokat meghatározott kulturális vagy regionális formátumokhoz kell igazítani. Tekintse ezt úgy, mintha útlevelet adna az okmányának, amely megmondja, hogyan kell viselkednie attól függően, hogy hova látogat. Ennek az oktatóanyagnak a végére könnyedén testreszabhatja a Word-dokumentumok mezőinek területi beállításait. Kezdjük is!
 
 ## Előfeltételek
 

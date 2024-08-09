@@ -114,7 +114,7 @@ I masz to! Prosty, ale potężny sposób manipulowania pozycją kursora w dokume
 
 ## Wniosek
 
-to jest okład! Zbadaliśmy, jak zarządzać pozycjami kursora w dokumentach programu Word za pomocą Aspose.Words dla .NET. Od skonfigurowania projektu po manipulowanie kursorem i dodawanie tekstu — masz teraz solidny fundament, na którym możesz budować. Eksperymentuj dalej i zobacz, jakie inne fajne funkcje możesz odkryć w tej solidnej bibliotece. Miłego kodowania!
+to jest opakowanie! Zbadaliśmy, jak zarządzać pozycjami kursora w dokumentach programu Word za pomocą Aspose.Words dla .NET. Od skonfigurowania projektu po manipulowanie kursorem i dodawanie tekstu — masz teraz solidny fundament, na którym możesz budować. Eksperymentuj dalej i zobacz, jakie inne fajne funkcje możesz odkryć w tej solidnej bibliotece. Miłego kodowania!
 
 ## Często zadawane pytania
 

@@ -9,7 +9,7 @@ url: /tr/net/working-with-fields/convert-fields-in-paragraph/
 ---
 ## giriiş
 
-Hiç kendinizi Word belgelerinizdeki bir alan ağının içinde buldunuz mu, özellikle de bu gizli IF alanlarını düz metne dönüştürmeye çalışırken? Yalnız değilsin. Bugün Aspose.Words for .NET ile bu konuda nasıl ustalaşabileceğinizi ele alacağız. Elinde sihirli bir değnek olan, tek bir kod hareketiyle alanları dönüştüren bir sihirbaz olduğunuzu hayal edin. İlgi çekici geliyor mu? Haydi bu büyülü yolculuğa başlayalım!
+Hiç kendinizi Word belgelerinizdeki bir alanlar ağına karışmış halde buldunuz mu, özellikle de bu gizli IF alanlarını düz metne dönüştürmeye çalışırken? Yalnız değilsin. Bugün Aspose.Words for .NET ile bu konuda nasıl ustalaşabileceğinizi ele alacağız. Elinde sihirli bir değnek olan, tek bir kod hareketiyle alanları dönüştüren bir sihirbaz olduğunuzu hayal edin. İlgi çekici geliyor mu? Haydi bu büyülü yolculuğa başlayalım!
 
 ## Önkoşullar
 
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak IF alanlarını başarıyla düz metne dönüştürdünüz. Bu, karmaşık büyüleri basit büyülere dönüştürmek gibi, belge yönetiminizi çok daha kolay hale getiriyor. Yani bir dahaki sefere karmaşık tarlalarla karşılaştığınızda ne yapacağınızı tam olarak bilirsiniz. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak IF alanlarını başarıyla düz metne dönüştürdünüz. Bu, karmaşık büyüleri basit büyülere dönüştürmek gibi, belge yönetiminizi çok daha kolay hale getiriyor. Yani bir dahaki sefere karmaşık tarlalarla karşılaştığınızda ne yapacağınızı tam olarak bilirsiniz. Mutlu kodlama!
 
 ## SSS'ler
 

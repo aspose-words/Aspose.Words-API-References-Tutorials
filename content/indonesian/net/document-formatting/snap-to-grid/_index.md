@@ -17,7 +17,7 @@ Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
 -  Aspose.Words untuk .NET Library: Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
-- Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan membantu Anda mengikuti contoh-contohnya.
+- Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan membantu Anda mengikuti contohnya.
 -  Lisensi Aspose: Sementara lisensi sementara dapat diperoleh[Di Sini](https://purchase.aspose.com/temporary-license/), menggunakan lisensi penuh akan memastikan akses ke semua fitur tanpa batasan.
 
 ## Impor Namespace
@@ -137,4 +137,4 @@ Ya, meskipun Anda dapat menggunakan lisensi sementara untuk evaluasi, disarankan
 Tidak, mengaktifkan Snap to Grid tidak berdampak signifikan terhadap kinerja dokumen.
 
 ### Di mana saya dapat menemukan informasi selengkapnya tentang Aspose.Words untuk .NET?
- Mengunjungi[dokumentasi](https://reference.aspose.com/words/net/)untuk informasi rinci dan contoh.
+ Kunjungi[dokumentasi](https://reference.aspose.com/words/net/)untuk informasi rinci dan contoh.

@@ -111,7 +111,7 @@ public void convertMetafilesToPng() throws Exception {
 }
 ```
 
- Belge yükleme sırasında meta dosyalarını (örn. WMF) PNG görüntülerine dönüştürmek için`setConvertMetafilesToPng(true)` yöntem.
+ Belge yükleme sırasında meta dosyalarını (örn. WMF) PNG görüntülerine dönüştürmek için`setConvertMetafilesToPng(true)` Yöntem.
 
 ## Aspose.Words for Java'da Yükleme Seçenekleri ile Çalışmak İçin Tam Kaynak Kodu
 

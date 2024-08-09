@@ -13,7 +13,7 @@ url: /es/net/programming-with-tables/horizontal-merge/
 
 ## Requisitos previos
 
-Antes de entrar en el meollo de la cuestión, hay algunas cosas que necesitará tener implementadas:
+Antes de pasar al meollo de la cuestión, hay algunas cosas que necesitará tener implementadas:
 
 1. Biblioteca Aspose.Words para .NET: si aún no lo ha hecho, descargue la biblioteca Aspose.Words para .NET. puedes agarrarlo[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo adecuado, como Visual Studio.
@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Este fragmento de código configura un nuevo documento y prepara el`DocumentBuilder` Para acción.
+ Este fragmento de código configura un nuevo documento y prepara el`DocumentBuilder` para la acción.
 
 ## Paso 2: insertar la primera celda
 

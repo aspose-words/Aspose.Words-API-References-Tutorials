@@ -66,7 +66,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak sadece birkaç basit adımda kişisel bilgileri bir belgeden kaldırdık. Bu güçlü kütüphaneyle yapabileceklerinize gelince, bu sadece buzdağının görünen kısmı. İster raporları otomatikleştiriyor olun, ister büyük hacimli belgeleri yönetiyor olun, ister iş akışınızı biraz daha sorunsuz hale getiriyor olun, Aspose.Words size yardımcı olur.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak sadece birkaç basit adımda kişisel bilgileri bir belgeden kaldırdık. Bu güçlü kütüphaneyle yapabileceklerinize gelince, bu sadece buzdağının görünen kısmı. İster raporları otomatikleştiriyor olun, ister büyük hacimli belgeleri yönetiyor olun, ister iş akışınızı biraz daha sorunsuz hale getiriyor olun, Aspose.Words size yardımcı olur.
 
 ## SSS'ler
 
@@ -76,7 +76,7 @@ Kişisel bilgiler yazar adlarını, belge özelliklerini ve belgeyi oluşturanı
 
 ### Aspose.Words for .NET ücretsiz mi?
 
- Aspose.Words şunları sunar:[ücretsiz deneme](https://releases.aspose.com/) böylece test edebilirsiniz ancak tam işlevsellik için bir lisans satın almanız gerekir. Kontrol et[fiyatlandırma](https://purchase.aspose.com/buy) daha fazla ayrıntı için.
+ Aspose.Words şunları sunar:[ücretsiz deneme](https://releases.aspose.com/) böylece test edebilirsiniz ancak tam işlevsellik için bir lisans satın almanız gerekir. Şuna göz atın:[fiyatlandırma](https://purchase.aspose.com/buy) daha fazla ayrıntı için.
 
 ### Aspose.Words'ü diğer belge formatları için kullanabilir miyim?
 
@@ -84,7 +84,7 @@ Kesinlikle! Aspose.Words, DOCX, PDF, HTML ve daha fazlasını içeren çeşitli 
 
 ### Sorunla karşılaşırsam nasıl destek alabilirim?
 
- Aspose.Words'ü ziyaret edebilirsiniz.[destek Forumu](https://forum.aspose.com/c/words/8) Olası sorun veya sorularınızla ilgili yardım için.
+ Aspose.Words'ü ziyaret edebilirsiniz.[destek forumu](https://forum.aspose.com/c/words/8) Olası sorun veya sorularınızla ilgili yardım için.
 
 ### Aspose.Words başka hangi özellikleri sunuyor?
 

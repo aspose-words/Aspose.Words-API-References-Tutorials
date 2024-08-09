@@ -9,12 +9,12 @@ url: /vi/net/programming-with-table-styles-and-formatting/create-table-style/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình bị mắc kẹt khi cố gắng tạo kiểu cho các bảng trong tài liệu Word bằng .NET chưa? Đừng lo lắng! Hôm nay chúng ta sẽ đi sâu vào thế giới tuyệt vời của Aspose.Words dành cho .NET. Chúng tôi sẽ hướng dẫn cách tạo bảng, áp dụng các kiểu tùy chỉnh và lưu tài liệu của bạn—tất cả đều bằng giọng điệu đàm thoại đơn giản. Cho dù bạn là người mới bắt đầu hay một chuyên gia dày dạn kinh nghiệm, hướng dẫn này sẽ có thứ gì đó dành cho bạn. Bạn đã sẵn sàng biến những chiếc bàn nhàm chán của mình thành những chiếc bàn đầy phong cách và chuyên nghiệp chưa? Bắt đầu nào!
+Bạn đã bao giờ thấy mình bị mắc kẹt khi cố gắng tạo kiểu cho các bảng trong tài liệu Word bằng .NET chưa? Đừng lo lắng! Hôm nay chúng ta sẽ đi sâu vào thế giới tuyệt vời của Aspose.Words dành cho .NET. Chúng tôi sẽ hướng dẫn cách tạo bảng, áp dụng các kiểu tùy chỉnh và lưu tài liệu của bạn—tất cả đều bằng giọng điệu đàm thoại đơn giản. Cho dù bạn là người mới bắt đầu hay một chuyên gia dày dạn kinh nghiệm, hướng dẫn này sẽ có thứ gì đó dành cho bạn. Bạn đã sẵn sàng biến những chiếc bàn nhàm chán của mình thành những chiếc bàn đầy phong cách và chuyên nghiệp chưa? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
-- Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện mạnh mẽ này. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện mạnh mẽ này. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
 - Kiến thức cơ bản về C#: Một số kiến thức quen thuộc về lập trình C# sẽ rất hữu ích.
 
@@ -30,7 +30,7 @@ using Aspose.Words.Tables;
 
 ## Bước 1: Khởi tạo Document và DocumentBuilder
 
- Trong bước này, chúng ta sẽ khởi tạo một tài liệu mới và một`DocumentBuilder` . Các`DocumentBuilder` lớp cung cấp một cách dễ dàng để tạo và định dạng nội dung trong tài liệu Word.
+ Trong bước này, chúng ta sẽ khởi tạo một tài liệu mới và một`DocumentBuilder` . các`DocumentBuilder` lớp cung cấp một cách dễ dàng để tạo và định dạng nội dung trong tài liệu Word.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn

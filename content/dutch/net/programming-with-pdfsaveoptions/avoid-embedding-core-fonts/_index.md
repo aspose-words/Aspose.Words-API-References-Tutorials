@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 Deze coderegel laadt het document in het geheugen, klaar voor verdere verwerking.
 
-## Stap 3: Configureer PDF-opslagopties
+## Stap 3: Configureer de PDF-opslagopties
 
 Nu komt het magische gedeelte! We configureren de PDF-opslagopties om te voorkomen dat kernlettertypen worden ingesloten. Dit is de belangrijkste stap die helpt bij het verkleinen van de PDF-bestandsgrootte.
 

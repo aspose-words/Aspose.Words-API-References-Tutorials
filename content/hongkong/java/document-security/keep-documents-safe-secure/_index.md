@@ -37,7 +37,7 @@ url: /zh-hant/java/document-security/keep-documents-safe-secure/
 
 ## 3. Aspose.Words for Java 入門
 
-在我們繼續文件安全之前，讓我們先熟悉一下 Aspose.Words for Java。它是一個功能豐富的庫，使 Java 開發人員能夠以程式設計方式建立、修改和轉換 Word 文件。開始：
+在我們繼續文件安全之前，讓我們先熟悉一下 Aspose.Words for Java。它是一個功能豐富的庫，使 Java 開發人員能夠以程式設計方式建立、修改和轉換 Word 文件。開始使用：
 
 1. ### 下載 Java 版 Aspose.Words：
  參觀[Aspose. 發布](https://releases.aspose.com/words/java/)並下載最新版本的 Aspose.Words for Java。

@@ -35,7 +35,7 @@ Mielőtt elkezdhetnénk észlelni a digitális aláírásokat, be kell állítan
 
 ### 1.1 Hozzon létre egy új projektet
 
- Nyissa meg a Visual Studio-t, és hozzon létre egy új Console App (.NET Core) projektet. Nevezd meg`DigitalSignatureDetector`.
+ Nyissa meg a Visual Studio-t, és hozzon létre egy új Console App (.NET Core) projektet. Nevezd el`DigitalSignatureDetector`.
 
 ### 1.2 Az Aspose.Words for .NET telepítése
 

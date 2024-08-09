@@ -2,88 +2,40 @@
 title: Terima Revisi
 linktitle: Terima Revisi
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menerima revisi dokumen Word menggunakan Aspose.Words untuk .NET
+description: Revisi dokumen master dengan Aspose.Words untuk .NET. Belajar melacak, menerima, dan menolak perubahan dengan mudah. Tingkatkan keterampilan manajemen dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/working-with-revisions/accept-revisions/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda dalam menerima revisi pada dokumen Word menggunakan fitur Terima Revisi Aspose.Words untuk .NET. Ikuti langkah-langkah di bawah ini untuk memahami kode sumber dan menerima perubahan pada dokumen.
+Pernahkah Anda terjebak dalam labirin revisi dokumen, kesulitan melacak setiap perubahan yang dibuat oleh banyak kontributor? Dengan Aspose.Words untuk .NET, mengelola revisi dalam dokumen Word menjadi mudah. Pustaka canggih ini memungkinkan pengembang melacak, menerima, dan menolak perubahan dengan mudah, memastikan dokumen Anda tetap teratur dan terkini. Dalam tutorial ini, kita akan mendalami proses langkah demi langkah penanganan revisi dokumen menggunakan Aspose.Words untuk .NET, mulai dari menginisialisasi dokumen hingga menerima semua perubahan.
 
-## Langkah 1: Menambah dan Mengedit Konten Dokumen
+## Prasyarat
 
-Dalam contoh ini, kita membuat dokumen dan menambahkan konten. Kami menggunakan beberapa paragraf untuk menggambarkan perubahan dan revisi. Begini caranya:
+Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
 
-```csharp
-// Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- Visual Studio diinstal pada mesin Anda.
+- Kerangka .NET (sebaiknya versi terbaru).
+-  Aspose.Words untuk perpustakaan .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+- Pemahaman dasar pemrograman C#.
 
-// Tambahkan teks ke paragraf pertama, lalu tambahkan dua paragraf lagi.
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+Sekarang, mari kita bahas secara spesifik dan lihat bagaimana kita bisa menguasai revisi dokumen dengan Aspose.Words untuk .NET.
 
-## Langkah 2: Lacak ulasan dan tambahkan ulasan
+## Impor Namespace
 
-Kami mengaktifkan pelacakan revisi dan menambahkan revisi ke dokumen. Begini caranya:
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan untuk bekerja dengan Aspose.Words. Tambahkan arahan penggunaan berikut di bagian atas file kode Anda:
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-// Paragraf ini adalah revisi dan akan memiliki tanda "IsInsertRevision" yang sesuai.
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## Langkah 3: Hapus paragraf dan kelola revisinya
+Mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola. Setiap langkah akan dijelaskan secara detail untuk memastikan Anda memahami setiap bagian kode.
 
-Kami menghapus satu paragraf dan memeriksa revisi yang disimpan. Begini caranya:
+## Langkah 1: Inisialisasi Dokumen
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-// Saat kami melacak revisi, paragraf tersebut masih ada di dokumen, dan tanda "IsDeleteRevision" akan disetel
-// dan akan ditampilkan sebagai ulasan di Microsoft Word, hingga kami menerima atau menolak semua ulasan.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## Langkah 4: Terima Perubahan
-
-Kami menerima semua perubahan pada dokumen. Begini caranya:
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## Langkah 5: Berhenti melacak ulasan
-
-Kami akan berhenti melacak revisi sehingga perubahan pada dokumen tidak lagi muncul sebagai revisi. Begini caranya:
-
-```csharp
-doc.StopTrackRevisions();
-```
-## Langkah 6: Menyimpan dokumen
-
- Setelah memasukkan kolom formulir input teks, simpan dokumen ke lokasi yang diinginkan menggunakan`Save`metode. Pastikan untuk memberikan jalur file yang sesuai:
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### Contoh kode sumber untuk Terima Revisi menggunakan Aspose.Words untuk .NET
-
-Berikut kode sumber lengkap untuk menerima perubahan dokumen menggunakan Aspose.Words for .NET:
-
+Untuk memulai, kita perlu membuat dokumen baru dan menambahkan beberapa paragraf. Hal ini akan mengatur tahapan untuk melacak revisi.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//Kami memiliki tiga paragraf, tidak ada satupun yang terdaftar sebagai revisi apa pun
-// Jika kami menambah/menghapus konten apa pun dalam dokumen saat melacak revisi,
-// mereka akan ditampilkan seperti itu di dokumen dan dapat diterima/ditolak.
+Pada langkah ini, kami membuat dokumen baru dan menambahkan tiga paragraf ke dalamnya. Paragraf ini akan menjadi dasar pelacakan revisi kami.
+
+## Langkah 2: Mulai Lacak Revisi
+
+Selanjutnya, kita perlu mengaktifkan pelacakan revisi. Hal ini memungkinkan kita untuk menangkap setiap perubahan yang dilakukan pada dokumen.
+
+```csharp
+// Mulai lacak revisi.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+ Dengan menyebut`StartTrackRevisions`, kami mengaktifkan dokumen untuk melacak semua perubahan selanjutnya. Nama penulis dan tanggal sekarang dilewatkan sebagai parameter.
+
+## Langkah 3: Tambahkan Revisi
+
+Sekarang pelacakan revisi diaktifkan, mari tambahkan paragraf baru. Penambahan ini akan ditandai sebagai revisi.
+
+```csharp
 // Paragraf ini adalah revisi dan akan memiliki tanda "IsInsertRevision" yang sesuai.
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+Di sini, paragraf baru ("Paragraf 4") ditambahkan. Karena pelacakan revisi diaktifkan, paragraf ini ditandai sebagai revisi.
+
+## Langkah 4: Hapus Paragraf
+
+Selanjutnya, kami akan menghapus paragraf yang ada dan mengamati bagaimana revisi tersebut dilacak.
+
+```csharp
 // Dapatkan kumpulan paragraf dokumen dan hapus satu paragraf.
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-// Karena kami melacak revisi, paragraf yang masih ada di dokumen, akan memiliki set "IsDeleteRevision".
-// dan akan ditampilkan sebagai revisi di Microsoft Word, hingga kami menerima atau menolak semua revisi.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+Pada langkah ini, paragraf ketiga dihilangkan. Karena pelacakan revisi, penghapusan ini dicatat, dan paragraf ditandai untuk dihapus daripada langsung dihapus dari dokumen.
 
-// Paragraf revisi penghapusan dihapus setelah kami menerima perubahan.
+## Langkah 5: Terima Semua Revisi
+
+Terakhir, mari kita terima semua revisi yang terlacak, memperkuat perubahan dalam dokumen.
+
+```csharp
+// Terima semua revisi.
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-// Menghentikan pelacakan revisi membuat teks ini tampak seperti teks biasa.
-// Revisi tidak dihitung pada saat perubahan dokumen.
+ Dengan menyebut`AcceptAllRevisions`, kami memastikan bahwa semua perubahan (penambahan dan penghapusan) diterima dan diterapkan pada dokumen. Revisi tersebut tidak lagi ditandai dan diintegrasikan ke dalam dokumen.
+
+## Langkah 6: Hentikan Pelacakan Revisi
+
+### Nonaktifkan Pelacakan Revisi
+
+Sebagai penutup, kami dapat menonaktifkan pelacakan revisi untuk berhenti mencatat perubahan lebih lanjut.
+
+```csharp
+// Berhenti melacak revisi.
 doc.StopTrackRevisions();
+```
 
+Langkah ini menghentikan dokumen melacak perubahan baru apa pun, dan memperlakukan semua pengeditan berikutnya sebagai konten biasa.
+
+## Langkah 7: Simpan Dokumen
+
+Terakhir, simpan dokumen yang dimodifikasi ke direktori yang ditentukan.
+
+```csharp
 // Simpan dokumennya.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+Dengan menyimpan dokumen, kami memastikan semua perubahan dan revisi yang kami terima disimpan.
+
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara menerima revisi dalam dokumen Word menggunakan fitur Terima Revisi Aspose.Words untuk .NET. Kami telah mengikuti langkah-langkah untuk menambah dan mengedit konten dokumen, melacak revisi, menghapus paragraf yang direvisi, menerima semua perubahan, dan berhenti melacak revisi. Sekarang Anda dapat menerapkan pengetahuan ini untuk mengelola revisi dokumen Word Anda secara efektif menggunakan Aspose.Words untuk .NET.
+Mengelola revisi dokumen bisa menjadi tugas yang menakutkan, namun dengan Aspose.Words untuk .NET, hal ini menjadi mudah dan efisien. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan mudah melacak, menerima, dan menolak perubahan pada dokumen Word Anda, memastikan dokumen Anda selalu terkini dan akurat. Jadi, mengapa menunggu? Selami dunia Aspose.Words dan sederhanakan manajemen dokumen Anda hari ini!
 
-### FAQ
+## FAQ
 
-#### T: Bagaimana cara mengaktifkan pelacakan revisi di Aspose.Words untuk .NET?
+### Bagaimana cara mulai melacak revisi di Aspose.Words untuk .NET?
 
-#### Solusi 1:
+ Anda dapat mulai melacak revisi dengan menelepon`StartTrackRevisions` metode pada objek dokumen Anda dan meneruskan nama penulis dan tanggal sekarang.
 
- J: Untuk mengaktifkan pelacakan revisi di Aspose.Words untuk .NET, gunakan`StartTrackRevisions` metode`Document` objek dan tentukan nama penulis dan tanggal mulai untuk pelacakan revisi.
+### Bisakah saya berhenti melacak revisi kapan saja?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+Ya, Anda dapat berhenti melacak revisi dengan menelepon`StopTrackRevisions` metode pada objek dokumen Anda.
 
-#### Solusi 2:
+### Bagaimana cara saya menerima semua revisi dalam dokumen?
 
- J: Anda juga dapat mengaktifkan pelacakan revisi menggunakan`Document` konstruktor yang menerima`trackRevisions`Dan`author` parameter.
+ Untuk menerima semua revisi, gunakan`AcceptAllRevisions` metode pada objek dokumen Anda.
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### Bisakah saya menolak revisi tertentu?
 
-#### T: Bagaimana cara menerima semua perubahan dalam dokumen dengan Aspose.Words untuk .NET?
+ Ya, Anda dapat menolak revisi tertentu dengan menavigasi ke revisi tersebut dan menggunakan`Reject` metode.
 
- J: Gunakan`AcceptAllRevisions` metode`Document` keberatan untuk menerima semua perubahan yang dilakukan pada dokumen.
+### Di mana saya dapat mengunduh Aspose.Words untuk .NET?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### T: Bagaimana cara menyimpan dokumen yang diubah dengan revisi yang diterima?
-
- Menggunakan`Save` metode`Document` keberatan untuk menyimpan dokumen yang dimodifikasi dengan revisi yang diterima. Pastikan untuk memberikan jalur file yang benar.
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### T: Bagaimana cara berhenti melacak revisi di Aspose.Words untuk .NET?
-
- J: Gunakan`StopTrackRevisions` metode`Document` keberatan untuk menghentikan revisi pelacakan.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### T: Bagaimana cara menghapus paragraf yang direvisi dalam dokumen dengan Aspose.Words untuk .NET?
-
- J: Untuk menghapus paragraf yang direvisi dalam dokumen, Anda dapat menggunakan`Remove` metode pengumpulan paragraf.
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ Anda dapat mengunduh Aspose.Words untuk .NET dari[tautan unduhan](https://releases.aspose.com/words/net/).

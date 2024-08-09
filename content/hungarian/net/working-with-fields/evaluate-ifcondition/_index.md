@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. lépés: Illessze be az IF mezőt
 
- A ... val`DocumentBuilder`példány készen áll, a következő lépés egy IF mező beszúrása a dokumentumba. A HA mező lehetővé teszi egy feltétel megadását és különböző kimenetek meghatározását attól függően, hogy a feltétel igaz vagy hamis.
+ A`DocumentBuilder`példány készen áll, a következő lépés egy IF mező beszúrása a dokumentumba. A HA mező lehetővé teszi egy feltétel megadását és különböző kimenetek meghatározását attól függően, hogy a feltétel igaz vagy hamis.
 
 ```csharp
 // Illessze be az IF mezőt a dokumentumba.
@@ -92,7 +92,7 @@ Az IF mező egy Word mező, amely lehetővé teszi feltételes logika beilleszt�
 ### Hogyan illeszthetek be IF mezőt egy dokumentumba?
  IF mezőt beszúrhat a`InsertField` módszere a`DocumentBuilder` osztályban, megadva az értékelni kívánt feltételt.
 
-###  Mit csinál`EvaluateCondition` method do?
+###  Mit tesz`EvaluateCondition` method do?
  A`EvaluateCondition` A metódus kiértékeli az IF mezőben megadott feltételt, és visszaadja az eredményt, jelezve, hogy a feltétel igaz vagy hamis.
 
 ### Használhatok összetett feltételeket az IF mezővel?

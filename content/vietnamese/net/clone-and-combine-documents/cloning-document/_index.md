@@ -35,7 +35,7 @@ using Aspose.Words;
 Trước tiên, bạn cần thiết lập dự án của mình trong Visual Studio. Nếu bạn đã có sẵn một dự án, bạn có thể bỏ qua bước này. Nếu không, hãy làm theo:
 
 1. Mở Visual Studio: Bật Visual Studio và tạo dự án Ứng dụng C# Console mới.
-2.  Đặt tên cho dự án của bạn: Đặt cho dự án của bạn một cái tên có ý nghĩa. Cái gì đó như`CloneWordDocumentDemo` sẽ làm.
+2.  Đặt tên cho dự án của bạn: Đặt cho dự án của bạn một cái tên có ý nghĩa. Một cái gì đó giống như`CloneWordDocumentDemo` sẽ làm được.
 3.  Thêm tài liệu tham khảo Aspose.Words: Nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn`Manage NuGet Packages` , và tìm kiếm`Aspose.Words`. Cài đặt nó.
 
 ## Bước 2: Chuẩn bị môi trường của bạn
@@ -93,7 +93,7 @@ Cuối cùng, hãy kiểm tra xem tài liệu nhân bản của chúng tôi có 
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã sao chép thành công tài liệu Word bằng Aspose.Words cho .NET. Nó không khó lắm phải không? Thư viện mạnh mẽ này giúp việc xử lý tài liệu Word trở nên dễ dàng, giúp bạn tiết kiệm rất nhiều thời gian và công sức. Hãy tiếp tục thử nghiệm các tính năng khác mà Aspose.Words cung cấp và bạn sẽ sớm trở thành chuyên gia.
+Và bạn có nó! Bạn đã sao chép thành công tài liệu Word bằng Aspose.Words cho .NET. Nó không khó lắm phải không? Thư viện mạnh mẽ này giúp việc xử lý tài liệu Word trở nên dễ dàng, giúp bạn tiết kiệm rất nhiều thời gian và công sức. Hãy tiếp tục thử nghiệm các tính năng khác mà Aspose.Words cung cấp và bạn sẽ sớm trở thành chuyên gia.
 
 ## Câu hỏi thường gặp
 

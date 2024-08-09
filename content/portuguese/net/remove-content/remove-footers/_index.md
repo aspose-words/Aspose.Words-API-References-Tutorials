@@ -95,7 +95,7 @@ aí está! Você removeu com sucesso os rodapés do seu documento do Word usando
  Sim, você pode usar uma abordagem semelhante para remover cabeçalhos acessando`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` , e`HeaderFooterType.HeaderEven`.
 
 ### O uso do Aspose.Words for .NET é gratuito?
- Aspose.Words for .NET é um produto comercial, mas você pode obter um[teste grátis](https://releases.aspose.com/) para testar seus recursos.
+ Aspose.Words for .NET é um produto comercial, mas você pode obter um[teste gratuito](https://releases.aspose.com/) para testar seus recursos.
 
 ### Posso manipular outros elementos de um documento do Word usando Aspose.Words?
 Absolutamente! Aspose.Words oferece amplas funcionalidades para manipular texto, imagens, tabelas e muito mais em documentos do Word.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/specify-locale-at-field-level/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes se podíváme na to, jak určit národní prostředí na úrovni pole. Tato užitečná funkce je zvláště užitečná, když potřebujete, aby vaše dokumenty odpovídaly konkrétním kulturním nebo regionálním formátům. Berte to tak, že svému dokumentu dáte pas, který mu říká, jak se má chovat podle toho, kde je „na návštěvě“. Na konci tohoto kurzu budete moci snadno přizpůsobit nastavení národního prostředí pro pole v dokumentech aplikace Word. Začněme!
 
@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes se podíváme
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
 3. Základní znalost C#: Znalost programování v C# vám pomůže postupovat podle příkladů.
 4. Aspose License: Pokud nemáte licenci, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) vyzkoušet všechny funkce.
@@ -69,7 +69,7 @@ field.LocaleId = 1049;
 
 ## Krok 5: Uložte dokument
 
-Nakonec náš dokument uložíme. Tento krok dokončuje všechny změny, které jsme provedli.
+Nakonec náš dokument uložíme. Tímto krokem jsou dokončeny všechny změny, které jsme provedli.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.docx");
@@ -91,7 +91,7 @@ Ano, můžete zadat různá národní prostředí pro různá pole ve stejném d
 
 ### Kde najdu seznam ID národního prostředí?
 
-Seznam ID národního prostředí můžete najít v dokumentaci společnosti Microsoft nebo v dokumentaci Aspose.Words API.
+Seznam ID národního prostředí můžete najít v dokumentaci Microsoftu nebo v dokumentaci Aspose.Words API.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 

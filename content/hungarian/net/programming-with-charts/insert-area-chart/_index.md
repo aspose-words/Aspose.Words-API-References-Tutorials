@@ -98,7 +98,7 @@ Ez a kódsor elmenti a dokumentumot a megadott könyvtárba a megadott fájlnév
 
 ## Következtetés
 
-Gratulálunk! Sikeresen beszúrt egy területdiagramot egy Word-dokumentumba az Aspose.Words for .NET segítségével. Ez az útmutató végigvezeti Önt minden lépésen, a környezet beállításától a végleges dokumentum mentéséig. Az Aspose.Words for .NET segítségével diagramok és egyéb összetett elemek széles választékát hozhatja létre Word-dokumentumaiban, dinamikusabbá és informatívabbá téve jelentéseit és prezentációit.
+Gratulálok! Sikeresen beszúrt egy területdiagramot egy Word-dokumentumba az Aspose.Words for .NET segítségével. Ez az útmutató végigvezeti Önt minden lépésen, a környezet beállításától a végleges dokumentum mentéséig. Az Aspose.Words for .NET segítségével diagramok és egyéb összetett elemek széles választékát hozhatja létre Word-dokumentumaiban, dinamikusabbá és informatívabbá téve jelentéseit és prezentációit.
 
 ## GYIK
 

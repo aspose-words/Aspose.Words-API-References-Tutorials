@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Introduzione
 
 Quando si lavora con documenti che contengono diversi elementi di testo, come lingue diverse o caratteri speciali, è fondamentale garantire che questi elementi vengano visualizzati correttamente. Aspose.Words per .NET offre una potente funzionalità chiamata Impostazioni di fallback dei caratteri, che aiuta a definire le regole per la sostituzione dei caratteri quando il carattere originale non supporta determinati caratteri. In questa guida, esploreremo come configurare le impostazioni di fallback dei caratteri utilizzando Aspose.Words per .NET in un tutorial passo passo.
 
@@ -15,7 +16,7 @@ Quando si lavora con documenti che contengono diversi elementi di testo, come li
 Prima di immergerti nel tutorial, assicurati di avere i seguenti prerequisiti:
 
 - Conoscenza di base di C#: familiarità con il linguaggio di programmazione C# e il framework .NET.
--  Aspose.Words per .NET: scarica e installa da[Link per scaricare](https://releases.aspose.com/words/net/).
+-  Aspose.Words per .NET: scarica e installa da[collegamento per il download](https://releases.aspose.com/words/net/).
 - Ambiente di sviluppo: una configurazione come Visual Studio per scrivere ed eseguire il codice.
 -  Documento di esempio: disporre di un documento di esempio (ad es.`Rendering.docx`) pronto per il test.
 - XML delle regole di fallback dei caratteri: preparare un file XML che definisce le regole di fallback dei caratteri.
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Passaggio 4: applica le impostazioni dei caratteri al documento
 
- Assegnare il configurato`FontSettings` al documento. Ciò garantisce che le regole di fallback dei caratteri vengano applicate durante il rendering del documento.
+ Assegnare il configurato`FontSettings`al documento. Ciò garantisce che le regole di fallback dei caratteri vengano applicate durante il rendering del documento.
 
 ```csharp
 doc.FontSettings = fontSettings;

@@ -20,7 +20,7 @@ Sebelum mendalami proses penggabungan dokumen, pastikan Anda memiliki prasyarat 
 - Aspose.Words untuk Perpustakaan Java
 - Pengetahuan dasar tentang pemrograman Java
 
-## Mulai
+## Memulai
 
  Mari kita mulai dengan membuat proyek Java baru dan menambahkan perpustakaan Aspose.Words ke dalamnya. Anda dapat mengunduh perpustakaan dari[Di Sini](https://releases.aspose.com/words/java/).
 

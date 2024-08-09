@@ -9,7 +9,7 @@ url: /fr/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 ## Introduction
 
-Avez-vous déjà été intrigué par ces étranges caractères de contrôle invisibles dans vos documents Word ? Ils sont comme de minuscules gremlins cachés qui peuvent gâcher le formatage et les fonctionnalités. Heureusement, Aspose.Words for .NET fournit une fonctionnalité pratique pour conserver ces caractères de contrôle hérités intacts lors de l'enregistrement de documents. Dans ce didacticiel, nous verrons en profondeur comment gérer ces caractères de contrôle à l'aide d'Aspose.Words pour .NET. Nous le détaillerons étape par étape, en veillant à ce que vous compreniez chaque détail tout au long du processus. Prêt à commencer? Allons-y !
+Avez-vous déjà été intrigué par ces étranges caractères de contrôle invisibles dans vos documents Word ? Ils sont comme de minuscules gremlins cachés qui peuvent gâcher le formatage et les fonctionnalités. Heureusement, Aspose.Words for .NET fournit une fonctionnalité pratique pour conserver ces caractères de contrôle hérités intacts lors de l'enregistrement de documents. Dans ce didacticiel, nous verrons en profondeur comment gérer ces caractères de contrôle à l'aide d'Aspose.Words pour .NET. Nous le détaillerons étape par étape, en veillant à ce que vous compreniez chaque détail tout au long du processus. Prêt à commencer ? Allons-y !
 
 ## Conditions préalables
 
@@ -77,7 +77,7 @@ Enfin, enregistrez le document avec les options d'enregistrement configurées.
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez vous assurer que vos caractères de contrôle hérités sont préservés lorsque vous travaillez avec des documents Word dans Aspose.Words pour .NET. Cette fonctionnalité peut vous sauver la vie, en particulier lorsqu'il s'agit de documents complexes dans lesquels les caractères de contrôle jouent un rôle crucial. 
+Et voilà ! En suivant ces étapes, vous pouvez vous assurer que vos caractères de contrôle hérités sont préservés lorsque vous travaillez avec des documents Word dans Aspose.Words pour .NET. Cette fonctionnalité peut vous sauver la vie, en particulier lorsqu'il s'agit de documents complexes dans lesquels les caractères de contrôle jouent un rôle crucial. 
 
 ## FAQ
 

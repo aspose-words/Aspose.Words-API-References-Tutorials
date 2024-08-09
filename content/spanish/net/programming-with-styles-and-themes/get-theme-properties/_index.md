@@ -108,7 +108,7 @@ Sí, puede recuperar propiedades de temas de documentos de Word nuevos y existen
 
 ### ¿Cómo aplico un nuevo tema a un documento de Word?
 
- Para aplicar un nuevo tema, deberá configurar las propiedades del tema en su`Document` objeto. Comprobar el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para obtener detalles sobre la aplicación de temas.
+ Para aplicar un nuevo tema, deberá configurar las propiedades del tema en su`Document` objeto. Compruebe el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para obtener detalles sobre la aplicación de temas.
 
 ### ¿Dónde puedo obtener soporte para Aspose.Words para .NET?
 

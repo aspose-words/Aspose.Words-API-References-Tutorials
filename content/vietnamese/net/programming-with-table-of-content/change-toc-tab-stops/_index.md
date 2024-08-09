@@ -15,7 +15,7 @@ Bạn đã bao giờ tự hỏi làm cách nào để cải thiện Mục lục 
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-1.  Aspose.Words cho .NET: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words cho .NET: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích C# nào.
 3. Tài liệu Word: Cụ thể là tài liệu có chứa TOC.
 
@@ -99,7 +99,7 @@ Làm sao? Lưu tài liệu với tên mới để giữ nguyên bản gốc:
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-Và Voila! TOC của bạn bây giờ có các điểm dừng tab chính xác ở nơi bạn muốn.
+Và thì đấy! TOC của bạn bây giờ có các điểm dừng tab chính xác ở nơi bạn muốn.
 
 ## Phần kết luận
 

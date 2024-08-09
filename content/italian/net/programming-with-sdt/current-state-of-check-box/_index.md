@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/current-state-of-check-box/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial, esamineremo il processo di utilizzo delle caselle di controllo nei documenti di Word. Tratteremo come accedere a una casella di controllo, determinarne lo stato e aggiornarla di conseguenza. Che tu stia sviluppando un modulo che necessita di opzioni verificabili o automatizzando le modifiche ai documenti, questa guida ti fornirà una solida base.
 

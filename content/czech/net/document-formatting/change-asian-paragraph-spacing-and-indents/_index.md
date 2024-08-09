@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přemýšleli jste někdy nad tím, jak upravit mezery a odsazení v dokumentu aplikace Word, zvláště když se zabýváte asijskou typografií? Pokud pracujete s dokumenty, které obsahují jazyky, jako je čínština, japonština nebo korejština, možná jste si všimli, že výchozí nastavení to vždy nevyřeší. Neboj se! V tomto tutoriálu se ponoříme do toho, jak můžete změnit asijské mezery mezi odstavci a odsazení pomocí Aspose.Words pro .NET. Je to jednodušší, než si myslíte, a vaše dokumenty mohou vypadat mnohem profesionálněji. Jste připraveni oživit formátování dokumentu? Začněme!
+Ahoj! Přemýšleli jste někdy nad tím, jak upravit mezery a odsazení v dokumentu aplikace Word, zvláště když se zabýváte asijskou typografií? Pokud pracujete s dokumenty, které obsahují jazyky, jako je čínština, japonština nebo korejština, možná jste si všimli, že výchozí nastavení to vždy nevyřeší. Neboj se! V tomto tutoriálu se ponoříme do toho, jak můžete změnit asijské mezery mezi odstavci a odsazení pomocí Aspose.Words pro .NET. Je to jednodušší, než si myslíte, a vaše dokumenty mohou vypadat mnohem profesionálněji. Jste připraveni oživit formátování dokumentu? Začněme!
 
 ## Předpoklady
 
@@ -61,7 +61,7 @@ Nyní nastavíme odsazení levého, pravého a prvního řádku pomocí znakový
 ```csharp
 format.CharacterUnitLeftIndent = 10;  // ParagrafFormat.LeftIndent bude aktualizován
 format.CharacterUnitRightIndent = 10; // OdstavecFormat.RightIndent bude aktualizován
-format.CharacterUnitFirstLineIndent = 20;  // OdstavecFormat.FirstLineIndent bude aktualizován
+format.CharacterUnitFirstLineIndent = 20;  // ParagrafFormat.FirstLineIndent bude aktualizován
 ```
 
 Tyto řádky kódu nastavují levé odsazení, pravé odsazení a odsazení prvního řádku na 10, 10 a 20 znaků. Díky tomu text vypadá úhledně a strukturovaně.

@@ -81,7 +81,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Essas linhas de código acessam a primeira célula na primeira linha da tabela e recuperam seu tipo e valor de largura preferido. O`PreferredWidthType` pode ser`Auto`, `Percent` , ou`Point`, indicando como a largura é determinada.
+ Essas linhas de código acessam a primeira célula da primeira linha da tabela e recuperam seu tipo e valor de largura preferido. O`PreferredWidthType` pode ser`Auto`, `Percent` , ou`Point`, indicando como a largura é determinada.
 
 ## Etapa 6: exibir os resultados
 

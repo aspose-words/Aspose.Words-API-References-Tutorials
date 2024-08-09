@@ -2,7 +2,7 @@
 title: Digitale handtekeningen in documenten
 linktitle: Digitale handtekeningen in documenten
 second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer hoe u veilige digitale handtekeningen in documenten implementeert met Aspose.Words voor Java. Waarborg de documentintegriteit met stapsgewijze begeleiding en broncode
+description: Leer hoe u veilige digitale handtekeningen in documenten implementeert met Aspose.Words voor Java. Zorg voor documentintegriteit met stapsgewijze begeleiding en broncode
 type: docs
 weight: 13
 url: /nl/java/document-security/digital-signatures-in-documents/

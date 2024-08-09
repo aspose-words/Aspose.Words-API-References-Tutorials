@@ -9,7 +9,7 @@ url: /hu/net/working-with-fields/insert-field-none/
 ---
 ## Bevezetés
 
-Előfordult már, hogy túlterhelték a dokumentumok létrehozásával és kezelésével kapcsolatos ismétlődő feladatok? Képzelje el, hogy van egy varázspálcája, amely automatizálhatja ezeket a hétköznapi feladatokat, és felszabadítja az idejét kreatívabb próbálkozásokra. Nos, szerencséd van! Az Aspose.Words for .NET az a varázspálca. Ez egy hatékony könyvtár, amely lehetővé teszi a Word dokumentumok egyszerű kezelését. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az útmutató végigvezeti az Aspose.Words for .NET használatának csínján-bínján, különös tekintettel a mezők beszúrására a dokumentumokba. Készen állsz a merülésre? Kezdjük el!
+Előfordult már, hogy túlterhelték a dokumentumok létrehozásával és kezelésével kapcsolatos ismétlődő feladatok? Képzelje el, hogy van egy varázspálcája, amely automatizálhatja ezeket a hétköznapi feladatokat, és felszabadítja az idejét kreatívabb próbálkozásokra. Nos, szerencséd van! Az Aspose.Words for .NET az a varázspálca. Ez egy hatékony könyvtár, amely lehetővé teszi a Word dokumentumok egyszerű kezelését. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az útmutató végigvezeti az Aspose.Words for .NET használatának csínján-bínján, különös tekintettel a mezők beszúrására a dokumentumokba. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 
@@ -70,7 +70,7 @@ Végül mentsük el a dokumentumunkat. Itt minden kemény munkája egy kézzelfo
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-És ez az! Létrehozott egy Word-dokumentumot, és beszúrt egy mezőt az Aspose.Words for .NET használatával. Elég ügyes, igaz?
+És ennyi! Létrehozott egy Word-dokumentumot, és beszúrt egy mezőt az Aspose.Words for .NET használatával. Elég ügyes, igaz?
 
 ## Következtetés
 

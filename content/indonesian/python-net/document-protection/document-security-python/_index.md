@@ -183,7 +183,7 @@ Sangat! Aspose.Words dirancang untuk menangani tugas pemrosesan dokumen berskala
 
 Ya, Aspose.Words mendukung berbagai format file, termasuk DOC, RTF, HTML, PDF, dan banyak lagi.
 
-### Apa itu Aspose.Words untuk Python, dan apa hubungannya dengan keamanan dokumen?
+### Apa itu Aspose.Words untuk Python, dan apa kaitannya dengan keamanan dokumen?
 
 Aspose.Words untuk Python adalah perpustakaan canggih yang memungkinkan pengembang bekerja dengan dokumen Microsoft Word secara terprogram. Ini menyediakan berbagai fitur keamanan dokumen, seperti enkripsi, perlindungan kata sandi, dan pembatasan akses, membantu mengamankan dokumen sensitif dari akses tidak sah.
 

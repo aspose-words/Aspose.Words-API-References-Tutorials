@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/ignore-header-footer/
 ---
-## Úvod
+## Zavedení
 
 Slučování dokumentů aplikace Word může být někdy trochu složité, zvláště když chcete zachovat některé části nedotčené a ignorovat jiné, jako jsou záhlaví a zápatí. Naštěstí Aspose.Words pro .NET poskytuje elegantní způsob, jak to zvládnout. V tomto tutoriálu vás provedu procesem krok za krokem a zajistím, že porozumíte každé části. Zachováme to lehké, konverzační a poutavé, stejně jako chatování s přítelem. Připraveni? Pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Slučování dokumentů aplikace Word může být někdy trochu složité, zvlá
 
 Než začneme, ujistěte se, že máme vše, co potřebujeme:
 
--  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Každá nejnovější verze by měla fungovat.
 - Základní porozumění C#: Nebojte se, provedu vás kódem.
 - Dva dokumenty Word: Jeden bude připojen k druhému.
@@ -117,7 +117,7 @@ Ano, Aspose.Words poskytuje různé možnosti přizpůsobení procesu importu, v
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- Ano, Aspose.Words for .NET je komerční produkt. Můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) nebo zakoupit licenci[tady](https://purchase.aspose.com/buy).
+ Ano, Aspose.Words for .NET je komerční produkt. Můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) nebo zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Mohu pomocí této metody sloučit více než dva dokumenty?
 
@@ -125,4 +125,4 @@ Ano, Aspose.Words poskytuje různé možnosti přizpůsobení procesu importu, v
 
 ### Kde najdu další příklady a dokumentaci pro Aspose.Words pro .NET?
 
- Kompletní dokumentaci a příklady naleznete na[Aspose webové stránky](https://reference.aspose.com/words/net/).
+ Komplexní dokumentaci a příklady naleznete na[Aspose webové stránky](https://reference.aspose.com/words/net/).

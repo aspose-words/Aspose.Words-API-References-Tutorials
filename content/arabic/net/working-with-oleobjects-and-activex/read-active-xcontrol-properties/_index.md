@@ -2,106 +2,122 @@
 title: قراءة خصائص XControl النشطة من ملف Word
 linktitle: قراءة خصائص XControl النشطة من ملف Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: قراءة خصائص عناصر تحكم ActiveX في ملف Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية قراءة خصائص عنصر تحكم ActiveX من ملفات Word باستخدام Aspose.Words لـ .NET في دليل خطوة بخطوة. تعزيز مهارات أتمتة المستندات الخاصة بك.
 type: docs
 weight: 10
 url: /ar/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## مقدمة
 
-في هذا الدليل خطوة بخطوة، سنوضح لك كيفية قراءة خصائص عناصر تحكم ActiveX في ملف Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق مخرجات تخفيض السعر.
+في العصر الرقمي الحالي، تعد الأتمتة أمرًا أساسيًا لتعزيز الإنتاجية. إذا كنت تعمل مع مستندات Word التي تحتوي على عناصر تحكم ActiveX، فقد تحتاج إلى قراءة خصائصها لأغراض مختلفة. يمكن أن تحتوي عناصر تحكم ActiveX، مثل خانات الاختيار والأزرار، على بيانات مهمة. باستخدام Aspose.Words for .NET، يمكنك استخراج هذه البيانات ومعالجتها برمجيًا بكفاءة.
 
-## الخطوة 1: تهيئة المستند
+## المتطلبات الأساسية
 
- الخطوة الأولى هي تهيئة`Document` الكائن عن طريق تحميل مستند Word الذي يحتوي على عناصر تحكم ActiveX. تأكد من استبدال`MyDir` بالمسار الفعلي إلى الدليل الذي يحتوي على المستند.
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
+
+1.  Aspose.Words لمكتبة .NET: يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. Visual Studio أو أي C# IDE: لكتابة وتنفيذ التعليمات البرمجية الخاصة بك.
+3. مستند Word يحتوي على عناصر تحكم ActiveX: على سبيل المثال، "ActiveX controls.docx".
+4. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# ضروري للمتابعة.
+
+## استيراد مساحات الأسماء
+
+أولاً، لنستورد مساحات الأسماء الضرورية للعمل مع Aspose.Words لـ .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## الخطوة 2: استرداد عناصر تحكم ActiveX
+## الخطوة 1: قم بتحميل مستند Word
 
- في هذه الخطوة، سوف نقوم بالتكرار من خلال كل منها`Shape` من المستند لاسترداد عناصر تحكم ActiveX وقراءة خصائصها.
+للبدء، ستحتاج إلى تحميل مستند Word الذي يحتوي على عناصر تحكم ActiveX.
+
+```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## الخطوة 2: تهيئة سلسلة للاحتفاظ بالخصائص
+
+بعد ذلك، قم بتهيئة سلسلة فارغة لتخزين خصائص عناصر تحكم ActiveX.
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-{
-     if (shape.OleFormat is null) break;
-
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
-
-         properties += "\n";
-     }
-}
-
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-Console.WriteLine("\n" + properties);
 ```
 
-### مثال على التعليمات البرمجية المصدر لقراءة خصائص XControl النشطة باستخدام Aspose.Words لـ .NET
+## الخطوة 3: التكرار عبر الأشكال في المستند
 
-فيما يلي التعليمات البرمجية المصدر الكاملة لقراءة خصائص عناصر تحكم ActiveX باستخدام Aspose.Words لـ .NET:
+نحن بحاجة إلى التكرار عبر كافة الأشكال الموجودة في المستند للعثور على عناصر تحكم ActiveX.
 
 ```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        // معالجة عنصر تحكم ActiveX
+    }
+}
+```
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+## الخطوة 4: استخراج الخصائص من عناصر تحكم ActiveX
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+ضمن الحلقة، تحقق مما إذا كان عنصر التحكم هو Forms2OleControl. فإن كان كذلك فألقه واستخرج خصائصه.
 
-			properties += "\n";
-		}
-	}
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
+}
+
+properties += "\n";
+```
+
+## الخطوة 5: حساب إجمالي عناصر تحكم ActiveX
+
+بعد التكرار عبر كافة الأشكال، قم بحساب العدد الإجمالي لعناصر تحكم ActiveX التي تم العثور عليها.
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## الخطوة 6: عرض الخصائص
+
+وأخيرًا، قم بطباعة الخصائص المستخرجة إلى وحدة التحكم.
+
+```csharp
+Console.WriteLine("\n" + properties);
 ```
 
 ## خاتمة
 
-يوضح لك هذا الدليل كيفية قراءة خصائص عناصر تحكم ActiveX في ملف Word باستخدام Aspose.Words لـ .NET. باتباع الخطوات الموضحة، يمكنك تهيئة المستند واسترداد عناصر تحكم ActiveX وقراءة خصائصها. استخدم نموذج التعليمات البرمجية المقدم كنقطة بداية وقم بتخصيصه ليناسب احتياجاتك المحددة.
+وهنا لديك! لقد تعلمت بنجاح كيفية قراءة خصائص عنصر تحكم ActiveX من مستند Word باستخدام Aspose.Words لـ .NET. تناول هذا البرنامج التعليمي تحميل مستند، والتكرار عبر الأشكال، واستخراج الخصائص من عناصر تحكم ActiveX. باتباع هذه الخطوات، يمكنك أتمتة استخراج البيانات المهمة من مستندات Word الخاصة بك، مما يعزز كفاءة سير العمل لديك.
 
-تتيح لك قراءة خصائص عناصر تحكم ActiveX استخراج المعلومات المهمة من ملفات Word التي تحتوي على عناصر التحكم هذه. يوفر Aspose.Words for .NET ميزات قوية لمعالجة الكلمات باستخدام عناصر تحكم ActiveX وأتمتة معالجة المستندات.
+## الأسئلة الشائعة
 
-### الأسئلة الشائعة
+### ما هي عناصر تحكم ActiveX في مستندات Word؟
+عناصر تحكم ActiveX هي كائنات تفاعلية مضمنة في مستندات Word، مثل خانات الاختيار والأزرار والحقول النصية، المستخدمة لإنشاء النماذج وأتمتة المهام.
 
-#### س: ما هي الخطوة الأولى لقراءة خصائص عناصر تحكم ActiveX في ملف Word؟
+### هل يمكنني تعديل خصائص عناصر تحكم ActiveX باستخدام Aspose.Words لـ .NET؟
+نعم، يسمح لك Aspose.Words for .NET بتعديل خصائص عناصر تحكم ActiveX برمجيًا.
 
- ج: الخطوة الأولى هي تهيئة`Document` الكائن عن طريق تحميل مستند Word الذي يحتوي على عناصر تحكم ActiveX. تأكد من استبدال`MyDir` بالمسار الفعلي إلى الدليل الذي يحتوي على المستند.
+### هل Aspose.Words لـ .NET مجاني للاستخدام؟
+ يقدم Aspose.Words for .NET نسخة تجريبية مجانية، ولكنك ستحتاج إلى شراء ترخيص لمواصلة الاستخدام. يمكنك الحصول على نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
 
-#### س: كيف يمكنني إدخال عناصر تحكم ActiveX في المستند؟
+### هل يمكنني استخدام Aspose.Words لـ .NET مع لغات .NET الأخرى إلى جانب C#؟
+نعم، يمكن استخدام Aspose.Words for .NET مع أي لغة .NET، بما في ذلك VB.NET وF#.
 
- ج: لاسترداد عناصر تحكم ActiveX، تحتاج إلى التكرار خلال كل منها`Shape` للمستند وتحقق مما إذا كان عنصر تحكم ActiveX. استخدم ال`OleFormat` ممتلكات`Shape` للوصول إلى`OleControl` الكائن واسترداد الخصائص الضرورية.
-
-#### س: ما هي خصائص عناصر تحكم ActiveX التي يمكنني قراءتها؟
-
-ج: يمكنك قراءة خصائص متنوعة لعناصر تحكم ActiveX، مثل التسمية التوضيحية، والقيمة، والحالة الممكنة أو المعطلة، والنوع، والعقد التابعة المرتبطة بعنصر التحكم.
-
-#### س: كيف يمكنني الحصول على العدد الإجمالي لعناصر تحكم ActiveX في المستند؟
-
- ج: للحصول على العدد الإجمالي لعناصر تحكم ActiveX في المستند، يمكنك استخدام الملف`GetChildNodes` طريقة`Document` كائن يحدد`NodeType.Shape` اكتب بما في ذلك العقد الفرعية.
+### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words لـ .NET؟
+ يمكنك العثور على وثائق مفصلة[هنا](https://reference.aspose.com/words/net/).

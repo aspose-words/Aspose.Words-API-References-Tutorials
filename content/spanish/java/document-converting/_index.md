@@ -21,7 +21,7 @@ Convertir documentos nunca ha sido tan fácil con Aspose.Words para Java. Estos 
 ## Tutoriales de conversión de documentos
 
 ### [Uso de la función de conversión de documentos](./using-document-converting/)
-Aprenda a convertir documentos de manera eficiente con Aspose.Words para Java. Convierta, combine y procese archivos sin problemas. Simplifique su flujo de trabajo en una biblioteca poderosa.
+Aprenda a convertir documentos de manera eficiente con Aspose.Words para Java. Convierta, combine y procese archivos sin problemas. Simplifique su flujo de trabajo en una potente biblioteca.
 ### [Exportar documentos a PDF](./exporting-documents-to-pdf/)
 Aprenda a exportar documentos a PDF usando Aspose.Words para Java. Esta guía paso a paso simplifica el proceso para una conversión de documentos perfecta.
 ### [Convertir documentos a diferentes formatos](./converting-documents-different-formats/)

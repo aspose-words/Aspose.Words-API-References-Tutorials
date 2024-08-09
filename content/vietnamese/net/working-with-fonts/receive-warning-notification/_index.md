@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fonts/receive-warning-notification/
 ---
+## Giới thiệu
 
 Bạn có mệt mỏi khi phải xử lý các vấn đề về phông chữ không mong muốn trong tài liệu của mình không? Với Aspose.Words for .NET, bạn có thể nhận được thông báo về bất kỳ sự cố tiềm ẩn nào trong quá trình xử lý tài liệu, giúp duy trì chất lượng tài liệu dễ dàng hơn. Hướng dẫn toàn diện này sẽ hướng dẫn bạn cách thiết lập thông báo cảnh báo trong Aspose.Words, đảm bảo rằng bạn không bao giờ bỏ lỡ cảnh báo quan trọng nữa.
 
@@ -15,7 +16,7 @@ Bạn có mệt mỏi khi phải xử lý các vấn đề về phông chữ kh�
 Trước khi chúng ta đi sâu vào, hãy đảm bảo bạn có những điều sau:
 
 - Kiến thức cơ bản về C#: Làm quen với C# sẽ giúp bạn hiểu và thực hiện được các bước.
--  Aspose.Words for .NET Library: Tải xuống và cài đặt nó từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Tải xuống và cài đặt nó từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Thiết lập như Visual Studio để viết và chạy mã của bạn.
 -  Tài liệu mẫu: Có tài liệu mẫu (ví dụ:`Rendering.docx`) để làm việc.
 
@@ -101,11 +102,11 @@ Không, bạn chỉ có thể chỉ định một phông chữ mặc định đ�
 
 ###  Câu hỏi 3: Tôi có thể xử lý các loại cảnh báo khác bằng`IWarningCallback`?
 
- Vâng`IWarningCallback`Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
+ Vâng, cái`IWarningCallback`Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
 
 ### Câu hỏi 4: Tôi có thể tìm hỗ trợ cho Aspose.Words ở đâu?
 
- Tham quan[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
+ Ghé thăm[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
 
 ### Câu hỏi 5: Có thể xin giấy phép tạm thời cho Aspose.Words không?
 

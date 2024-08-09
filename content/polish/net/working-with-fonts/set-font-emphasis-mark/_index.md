@@ -2,83 +2,105 @@
 title: Ustaw znacznik wyróżnienia czcionki
 linktitle: Ustaw znacznik wyróżnienia czcionki
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić styl wyróżnienia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak ustawić znaki wyróżnienia czcionki w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. Idealny dla programistów .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Wstęp
 
-W tym samouczku pokażemy, jak ustawić styl wyróżnienia czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET. Podkreślenie czcionki służy do wyróżniania określonych słów lub fraz w tekście.
+dzisiejszym samouczku zagłębimy się w sposób ustawiania znaków wyróżnienia czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy chcesz podkreślić konkretny tekst unikalnym znacznikiem, czy po prostu wyróżnić określone słowa, ten przewodnik Ci pomoże. Zatem zapnij pasy i zaczynajmy!
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
 
-## Krok 1: Zdefiniuj katalog dokumentów
-Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+Zanim zagłębimy się w najdrobniejsze szczegóły, upewnij się, że zostały zaznaczone następujące wymagania wstępne:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: działające środowisko programistyczne, takie jak Visual Studio.
+- .NET Framework: Upewnij się, że masz zainstalowany .NET Framework.
 
-## Krok 2: Utwórz i dostosuj dokument
- Utwórz instancję`Document` klasa i powiązana`DocumentBuilder` do tworzenia treści dokumentu. Użyj`Font.EmphasisMark` właściwość, na którą chcesz ustawić styl wyróżnienia czcionki`EmphasisMark.UnderSolidCircle` . Następnie użyj`Write`I`Writeln` metody`DocumentBuilder` , aby dodać tekst z określonym wyróżnieniem czcionki.
+## Importuj przestrzenie nazw
+
+Aby pracować z Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw. Dodaj je na górze pliku kodu:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 3: Zapisz dokument
- Zapisz dokument za pomocą`Save` metoda`Document` z odpowiednią ścieżką i nazwą pliku.
+Teraz podzielmy proces na proste kroki. Wykonaj dokładnie każdy krok, aby ustawić znaki wyróżnienia czcionki w dokumencie programu Word.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
 
-### Przykładowy kod źródłowy dla Ustaw znacznik wyróżnienia czcionki przy użyciu Aspose.Words dla .NET 
+Po pierwsze, musisz zainicjować nowy dokument i narzędzie DocumentBuilder. Klasa DocumentBuilder udostępnia metody umożliwiające wstawianie tekstu i innych elementów do dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Zainicjuj nowy dokument
 Document document = new Document();
+
+// Zainicjuj DocumentBuilder za pomocą dokumentu
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Krok 2: Ustaw znacznik wyróżnienia czcionki
+
+Po przygotowaniu narzędzia DocumentBuilder możesz teraz ustawić znacznik wyróżnienia czcionki. W tym przykładzie użyjemy znaku podkreślenia „UnderSolidCircle”.
+
+```csharp
+// Ustaw znacznik wyróżnienia czcionki
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Wpisz tekst ze znakiem wyróżnienia
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Krok 3: Wyczyść formatowanie i dodaj zwykły tekst
+
+Po ustawieniu znaku wyróżnienia możesz dodać zwykły tekst bez żadnego wyróżnienia. W tym celu należy wyczyścić formatowanie.
+
+```csharp
+// Wyczyść formatowanie czcionki
 builder.Font.ClearFormatting();
+
+// Napisz zwykły tekst
 builder.Write("Simple text");
+```
+
+## Krok 4: Zapisz dokument
+
+Po dodaniu całego potrzebnego tekstu i formatowania ostatnim krokiem jest zapisanie dokumentu. Określ ścieżkę i nazwę pliku, w którym chcesz zapisać dokument.
+
+```csharp
+// Zapisz dokument
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Wniosek
-W tym samouczku nauczyłeś się, jak ustawić styl wyróżnienia czcionki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Eksperymentuj z różnymi stylami wyróżniania i korzystaj z tej funkcji, aby wyróżniać słowa lub frazy w dokumentach.
 
-### Często zadawane pytania
+masz to! Ustawianie znaków wyróżnienia czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET jest takie proste. Za pomocą zaledwie kilku linijek kodu możesz wyróżnić swój tekst i nadać dokumentom profesjonalny charakter. Nie wahaj się eksperymentować z różnymi znakami wyróżnienia i stylami, aby dopasować je do swoich potrzeb.
 
-#### P: Jak mogę dodać znaki akcentujące do określonej czcionki w dokumencie programu Word za pomocą Aspose.Words?
+## Często zadawane pytania
 
-Odp.: Aby dodać znaki akcentujące do określonej czcionki w dokumencie programu Word za pomocą Aspose.Words, możesz użyć interfejsu API, aby przejść do żądanej czcionki i zastosować odpowiednie znaki akcentujące. Spowoduje to dodanie znaków akcentujących do tekstu wybraną czcionką.
+### Co to są znaki wyróżnienia czcionki?
 
-#### P: Czy można zmienić styl znaków akcentujących w dokumencie programu Word za pomocą Aspose.Words?
+Znaki wyróżnienia czcionki to specjalne symbole dodawane do tekstu w celu jego wyróżnienia. Mogą zawierać kropki, kółka i inne znaki dekoracyjne.
 
-Odp.: Tak, za pomocą Aspose.Words możesz zmienić styl znaków akcentujących w dokumencie Word. Interfejs API pozwala dostosować właściwości stylu, takie jak kolor, rozmiar, rodzaj linii itp., aby dostosować wygląd znaków akcentujących.
+### Czy mogę używać innych znaków wyróżnienia w Aspose.Words dla .NET?
 
-#### P: Jak mogę usunąć wszystkie akcenty z dokumentu Word za pomocą Aspose.Words?
+ Tak, Aspose.Words dla .NET obsługuje różne znaki wyróżnienia. Możesz sprawdzić różne opcje, odwołując się do[dokumentacja](https://reference.aspose.com/words/net/).
 
-Odp.: Aby usunąć wszystkie akcenty z dokumentu programu Word za pomocą Aspose.Words, możesz użyć interfejsu API do przeglądania dokumentu, wykryć istniejące znaki akcentu i usunąć je za pomocą odpowiednich metod. Spowoduje to usunięcie wszystkich znaków podkreślenia z dokumentu.
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
 
-#### P: Czy mogę dodać znaki akcentujące do określonej części tekstu w dokumencie programu Word?
+ Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/) lub kup licencję[Tutaj](https://purchase.aspose.com/buy).
 
-Odp.: Tak, możesz dodać znaki akcentujące do określonej części tekstu w dokumencie programu Word za pomocą Aspose.Words. Za pomocą API możesz wybrać żądany zakres tekstu i dodać odpowiednie znaki wyróżnienia do tej części tekstu.
+### Jak mogę uzyskać wsparcie dla Aspose.Words dla .NET?
 
-#### P: Czy znaki akcentujące można dostosować do moich potrzeb?
+ Możesz uzyskać wsparcie od społeczności Aspose i zespołu wsparcia, odwiedzając ich[forum wsparcia](https://forum.aspose.com/c/words/8).
 
-Odp.: Tak, znaki akcentujące można dostosować do swoich potrzeb za pomocą Aspose.Words. Możesz dostosować właściwości stylu znaków akcentujących, takie jak kolor, rozmiar, rodzaj linii i inne, aby dopasować je do preferencji formatowania.
+### Czy mogę używać Aspose.Words dla .NET z innymi frameworkami .NET?
+
+Tak, Aspose.Words dla .NET jest kompatybilny z różnymi frameworkami .NET, w tym .NET Core i .NET 5/6.

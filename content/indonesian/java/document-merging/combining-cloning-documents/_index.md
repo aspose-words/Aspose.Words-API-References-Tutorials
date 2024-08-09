@@ -144,7 +144,7 @@ Ya, Aspose.Words dioptimalkan untuk bekerja dengan dokumen besar. Namun, untuk m
 
 ### Bisakah saya menerapkan gaya khusus pada dokumen kloning?
 
-Sangat! Aspose.Words memungkinkan Anda menerapkan gaya dan pemformatan khusus ke dokumen yang dikloning. Anda memiliki kendali penuh atas tampilan dokumen.
+Sangat! Aspose.Words memungkinkan Anda menerapkan gaya dan pemformatan khusus pada dokumen yang dikloning. Anda memiliki kendali penuh atas tampilan dokumen.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dokumentasi untuk Aspose.Words untuk Java?
 

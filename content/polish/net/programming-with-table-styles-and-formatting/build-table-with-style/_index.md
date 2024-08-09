@@ -139,7 +139,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom tw
 Tak, Aspose.Words dla .NET może być używany do stylizowania zarówno nowych, jak i istniejących tabel w dokumentach Word.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
- Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) lub kup pełny[Tutaj](https://purchase.aspose.com/buy).
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) lub kup pełny[Tutaj](https://purchase.aspose.com/buy).
 
 ### Czy mogę zautomatyzować inne typy dokumentów za pomocą Aspose.Words dla .NET?
 Absolutnie! Aspose.Words dla .NET obsługuje różne typy dokumentów, w tym DOCX, PDF, HTML i inne.

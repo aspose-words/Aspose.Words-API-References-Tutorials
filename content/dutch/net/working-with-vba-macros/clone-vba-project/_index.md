@@ -19,7 +19,7 @@ Voordat we beginnen, zorgen we ervoor dat u alles op een rij heeft:
 1.  Aspose.Words voor .NET-bibliotheek: u hebt de nieuwste versie van Aspose.Words voor .NET nodig. Als je dat nog niet hebt gedaan, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Een .NET-ontwikkelomgeving zoals Visual Studio is essentieel voor het schrijven en testen van uw code.
 3. Basiskennis van C#: Een basiskennis van C# helpt u de codefragmenten te volgen.
-4.  Voorbeeld van een Word-document: Heb een[Word document](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) met een VBA-project dat klaar is om mee te werken. U kunt uw eigen maken of een bestaande gebruiken.
+4.  Voorbeeld van een Word-document: Heb een[Word-document](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) met een VBA-project dat klaar is om mee te werken. U kunt uw eigen maken of een bestaande gebruiken.
 
 ## Naamruimten importeren
 
@@ -40,7 +40,7 @@ Allereerst moeten we het pad naar uw documentmap definiëren. Dit is waar uw bro
 
 ### Het pad definiëren
 
-Begin met het instellen van het pad naar uw map:
+Begin met het instellen van het pad naar uw directory:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -94,7 +94,7 @@ Deze regel slaat het nieuwe document met het gekloonde VBA-project op als "Worki
 
 En daar heb je het! U beheerst zojuist de kunst van het klonen van een VBA-project in Word-documenten met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het een fluitje van een cent om met complexe Word-documenten te werken, van eenvoudige tekstmanipulaties tot ingewikkelde VBA-projecten. Door deze handleiding te volgen, heeft u niet alleen geleerd hoe u VBA-projecten kunt klonen, maar hebt u ook de basis gelegd voor het verder verkennen van de enorme mogelijkheden van Aspose.Words.
 
- Als je nieuwsgierig bent om dieper te duiken, vergeet dan niet om de[API-documentatie](https://reference.aspose.com/words/net/) . Voor vragen of ondersteuning kunt u terecht bij de[Helpforum](https://forum.aspose.com/c/words/8) is altijd een geweldige plek om in contact te komen met andere ontwikkelaars.
+ Als je nieuwsgierig bent om dieper te duiken, vergeet dan niet om de[API-documentatie](https://reference.aspose.com/words/net/) . Voor vragen of ondersteuning kunt u terecht bij de[ondersteuningsforum](https://forum.aspose.com/c/words/8) is altijd een geweldige plek om in contact te komen met andere ontwikkelaars.
 
 Veel codeerplezier, en onthoud: elk documentmanipulatie-avontuur begint met één regel code!
 

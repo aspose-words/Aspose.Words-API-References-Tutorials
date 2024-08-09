@@ -40,7 +40,7 @@ Document docModified = new Document("modified_document.docx");
 
 ## Langkah 2: Bandingkan Dokumen
 
-Sekarang Anda telah memuat dokumen, sekarang saatnya membandingkannya. Aspose.Words menyediakan metode mudah untuk membandingkan dokumen. Inilah cara Anda melakukannya:
+Sekarang setelah Anda memuat dokumen, sekarang saatnya membandingkannya. Aspose.Words menyediakan metode mudah untuk membandingkan dokumen. Inilah cara Anda melakukannya:
 
 ```java
 // Bandingkan kedua dokumen tersebut

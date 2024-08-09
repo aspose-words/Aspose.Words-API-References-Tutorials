@@ -9,12 +9,12 @@ url: /id/net/programming-with-tables/get-table-position/
 ---
 ## Perkenalan
 
-Pernahkah Anda kebingungan saat mencoba mencari tahu posisi sebenarnya dari sebuah tabel dalam dokumen Word Anda? Baik untuk menyelaraskan konten Anda dengan sempurna atau hanya karena penasaran, mengetahui posisi tabel bisa sangat berguna. Hari ini, kita mendalami cara mendapatkan posisi tabel menggunakan Aspose.Words untuk .NET. Kami akan membaginya menjadi langkah-langkah kecil sehingga meskipun Anda seorang pemula, Anda akan dapat mengikutinya tanpa hambatan. Siap menjadi ahli dokumen Word? Mari kita mulai!
+Pernahkah Anda kebingungan saat mencoba mencari tahu posisi sebenarnya dari sebuah tabel dalam dokumen Word Anda? Baik untuk menyelaraskan konten Anda dengan sempurna atau hanya karena penasaran, mengetahui posisi tabel bisa sangat berguna. Hari ini, kita mendalami cara mendapatkan posisi tabel menggunakan Aspose.Words untuk .NET. Kami akan membaginya menjadi beberapa langkah kecil sehingga meskipun Anda seorang pemula, Anda dapat mengikutinya tanpa hambatan. Siap menjadi ahli dokumen Word? Mari kita mulai!
 
 ## Prasyarat
 
 Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
--  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Visual Studio: Versi apa pun bisa digunakan, tetapi versi terbaru selalu disarankan.
 - .NET Framework: Pastikan Anda memiliki .NET Framework 4.0 atau lebih baru.
 - Dokumen Word: Untuk tutorial ini, kita akan menggunakan dokumen bernama`Tables.docx`.
@@ -93,7 +93,7 @@ Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkin
 
 ### Bisakah saya mendapatkan posisi beberapa tabel?
 
-Ya, Anda dapat mengulang semua tabel dalam dokumen dan mendapatkan posisinya menggunakan pendekatan serupa.
+Ya, Anda dapat menelusuri semua tabel dalam dokumen dan mendapatkan posisinya menggunakan pendekatan serupa.
 
 ### Bagaimana jika tabel saya berada di dalam struktur bersarang?
 

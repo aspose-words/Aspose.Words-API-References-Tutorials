@@ -29,7 +29,7 @@ Lorsque vous travaillez sur des documents en collaboration, il est crucial de su
 
 ## Chargement des versions de documents
 
-Pour comparer les versions de documents, vous devez charger les fichiers en mémoire. Voici comment:
+Pour comparer les versions de documents, vous devez charger les fichiers en mémoire. Voici comment procéder :
 
 ```python
 doc1_path = "path/to/first/document.docx"
@@ -47,7 +47,7 @@ doc2 = aw.Document(doc2_path)
 comparison = doc1.compare(doc2, "Author Name", datetime.now())
 ```
 
-## Mise en évidence des changements
+## Mise en évidence des modifications
 
 Pour rendre les modifications plus visibles, vous pouvez les mettre en surbrillance :
 

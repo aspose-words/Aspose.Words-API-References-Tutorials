@@ -116,7 +116,7 @@ Sorunsuz ve verimli bir belge dönüştürme işlemi sağlamak için aşağıdak
 ## İstisnaları İşleme: 
 Çok sayıda belgeyle uğraşırken dönüştürme işlemi sırasında hatalar meydana gelebilir. Bu sorunları incelikli bir şekilde tanımlamak ve çözmek için uygun istisna işlemeyi uygulayın.
 
-## Kalite güvencesi: 
+## Kalite Güvencesi: 
 Belge dönüştürme özelliğini bir üretim ortamında dağıtmadan önce, çıktının doğruluğunu ve aslına uygunluğunu doğrulamak için dönüştürme sürecini çeşitli belge türleri ve boyutlarıyla kapsamlı bir şekilde test edin.
 
 ## Çözüm
@@ -133,7 +133,7 @@ Evet, Aspose.Words for Java, toplu belge dönüştürme işlemlerini kolaylıkla
 
 ### S2: Aspose.Words bulut tabanlı belge dönüştürmeye uygun mu?
 
-Kesinlikle! Aspose.Words for Java, bulut tabanlı ortamlarla uyumludur ve bulut uygulamalarında belge dönüştürme yeteneklerini uygulamanıza olanak tanır.
+Kesinlikle! Aspose.Words for Java, bulut tabanlı ortamlarla uyumludur ve bulut uygulamalarında belge dönüştürme özelliklerini uygulamanıza olanak tanır.
 
 ### S3: Aspose.Words, Word dosya formatı hakkında derinlemesine bilgi gerektiriyor mu?
 

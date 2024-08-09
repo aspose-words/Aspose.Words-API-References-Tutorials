@@ -79,7 +79,7 @@ End Sub
 
 ## Több dokumentum kötegelt feldolgozása
 
-Az Aspose.Words Python VBA-makróval kombinálva lehetővé teszi több dokumentum kötegelt módban történő feldolgozását. Ez különösen értékes olyan helyzetekben, ahol nagyszabású dokumentumautomatizálásra van szükség.
+Az Aspose.Words Python VBA makróval kombinálva lehetővé teszi több dokumentum kötegelt módban történő feldolgozását. Ez különösen értékes olyan helyzetekben, ahol nagyszabású dokumentumautomatizálásra van szükség.
 
 ```vba
 Sub BatchProcessDocuments()

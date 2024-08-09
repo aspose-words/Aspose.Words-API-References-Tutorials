@@ -9,13 +9,13 @@ url: /id/net/join-and-append-documents/update-page-layout/
 ---
 ## Perkenalan
 
-Hai! Jika Anda pernah bekerja dengan dokumen Word secara terprogram, Anda pasti tahu betapa pentingnya mengelola tata letak halaman secara efektif. Baik Anda membuat laporan, membuat templat, atau sekadar mengubah desain dokumen, menjaga tata letak halaman Anda tetap segar dan akurat adalah kuncinya. Hari ini, kita mempelajari cara memperbarui tata letak halaman di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memandu prosesnya selangkah demi selangkah, sehingga Anda akan dapat menangani tata letak dokumen Anda dengan percaya diri dan memastikan semuanya terlihat baik-baik saja.
+Hai! Jika Anda pernah bekerja dengan dokumen Word secara terprogram, Anda pasti tahu betapa pentingnya mengelola tata letak halaman secara efektif. Baik Anda membuat laporan, membuat templat, atau sekadar mengubah desain dokumen, menjaga tata letak halaman Anda tetap segar dan akurat adalah kuncinya. Hari ini, kita mendalami cara memperbarui tata letak halaman di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memandu prosesnya selangkah demi selangkah, sehingga Anda akan dapat menangani tata letak dokumen Anda dengan percaya diri dan memastikan semuanya terlihat baik-baik saja.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda sudah menyiapkan yang berikut ini:
 
-1.  Aspose.Words untuk .NET: Pustaka ini penting untuk memanipulasi dokumen Word secara terprogram. Jika Anda belum melakukannya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pustaka ini penting untuk memanipulasi dokumen Word secara terprogram. Jika Anda belum melakukannya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
    
 2. Visual Studio: Anda memerlukan IDE untuk menulis dan menjalankan kode .NET Anda. Visual Studio adalah pilihan yang populer.
 
@@ -63,7 +63,7 @@ Sebelum melakukan perubahan apa pun, sebaiknya simpan dokumen ke PDF atau format
 doc.Save(dataDir + "Document.UpdatePageLayout.1.pdf");
 ```
 
-Menyimpannya dengan cara ini memastikan bahwa tata letak awal disimpan dalam cache dan dapat digunakan sebagai referensi untuk pembaruan selanjutnya.
+Menyimpannya dengan cara ini memastikan bahwa tata letak awal disimpan dalam cache dan dapat digunakan sebagai referensi untuk pembaruan berikutnya.
 
 ## Langkah 3: Ubah Dokumen
 

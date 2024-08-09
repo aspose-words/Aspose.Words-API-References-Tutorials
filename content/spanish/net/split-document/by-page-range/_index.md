@@ -73,7 +73,7 @@ Dividir un documento de Word por rango de páginas usando Aspose.Words para .NET
 
 ### ¿Puedo dividir varios rangos de páginas a la vez?
 
-Sí tu puedes. Deberá repetir el proceso de extracción para cada rango que necesite y guardarlos como documentos separados.
+Sí, puedes. Deberá repetir el proceso de extracción para cada rango que necesite y guardarlos como documentos separados.
 
 ### ¿Qué pasa si necesito dividir por secciones específicas en lugar de rangos de páginas?
 

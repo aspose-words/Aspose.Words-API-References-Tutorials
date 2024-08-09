@@ -2,99 +2,112 @@
 title: Ställ in teckensnittsmappsystem och anpassad mapp
 linktitle: Ställ in teckensnittsmappsystem och anpassad mapp
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för att ställa in system- och anpassade teckensnittsmappar när du renderar ett dokument med Aspose.Words för .NET.
+description: Lär dig hur du ställer in system- och anpassade teckensnittsmappar i Word-dokument med Aspose.Words för .NET, vilket säkerställer att dina dokument visas korrekt i olika miljöer.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
+## Introduktion
 
-den här handledningen går vi igenom steg-för-steg-processen för att ställa in systemfontmappar och en anpassad mapp när du renderar ett dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och förse dig med en omfattande guide som hjälper dig att förstå och implementera den här funktionen i dina egna projekt. I slutet av den här handledningen kommer du att veta hur du anger flera teckensnittsmappar, inklusive systemmappen och en anpassad mapp, som ska användas när du renderar dina dokument med Aspose.Words för .NET.
+Föreställ dig att du skapar ett dokument med en unik typsnittsstil, bara för att upptäcka att typsnitten inte visas korrekt på en annan maskin. Frustrerande, eller hur? Det är här konfigurering av typsnittsmappar kommer in i bilden. Med Aspose.Words för .NET kan du definiera system- och anpassade teckensnittsmappar för att säkerställa att dina dokument alltid ser ut som de är tänkta. Låt oss dyka in i hur du kan uppnå detta.
 
-## Steg 1: Definiera dokumentkatalogen
-Först måste du ställa in sökvägen till din dokumentkatalog. Det här är platsen där du vill spara ditt redigerade renderade dokument. Ersätt "DIN DOKUMENTKATOLOG" med lämplig sökväg.
+## Förutsättningar
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Innan vi börjar, se till att du har följande:
 
-## Steg 2: Ladda dokumentet för att rendera
- Sedan kan du ladda dokumentet för att rendera med hjälp av`Document` klass. Var noga med att ange rätt dokumentsökväg.
+-  Aspose.Words för .NET Library: Ladda ner det om du inte redan har gjort det[här](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: En IDE som Visual Studio.
+- Grundläggande kunskaper om C#: Bekantskap med C# hjälper dig att följa med i kodexemplen.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importera namnområden
 
-## Steg 3: Ställ in system- och anpassade teckensnittsmappar
- Nu kan du ställa in systemfontmappar och en anpassad mapp med hjälp av`FontSettings` klass och`SetFontsSources()` metod. Först måste du hämta listan över miljöberoende teckensnittskällor som använder`GetFontsSources()` och lagra den i en lista. Sedan kan du skapa en ny instans av`FolderFontSource` ange sökvägen till den anpassade mappen som innehåller dina teckensnitt. Lägg till den här instansen i listan över befintliga teckensnittskällor. Slutligen, använd`SetFontsSources()` för att uppdatera teckensnittskällorna med den nya listan.
+Importera först de nödvändiga namnrymden i ditt projekt:
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-fontSettings.SetFontsSources(updatedFontSources);
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Steg 4: Använd teckensnittsinställningar
- Därefter måste du tillämpa teckensnittsinställningarna på ditt dokument med hjälp av`FontSettings` egendom av`Document` klass.
+Låt oss nu dela upp processen i enkla steg.
 
-```csharp
-doc.FontSettings = fontSettings;
-```
+## Steg 1: Ladda dokumentet
 
-## Steg 5: Spara det renderade dokumentet
-Slutligen kan du spara det renderade dokumentet till en fil genom att
-
-   använda`Save()` metod för`Document` klass. Var noga med att ange rätt sökväg och filnamn.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
-```
-
-### Exempel på källkod för Set Fonts Folders System och Custom Folder med Aspose.Words för .NET 
+ Börja med att ladda ditt Word-dokument i en Aspose.Words`Document` objekt. Detta dokument kommer att vara det där du vill ställa in teckensnittsmapparna.
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Steg 2: Initiera teckensnittsinställningar
+
+ Skapa en ny instans av`FontSettings`. Detta objekt låter dig hantera teckensnittskällor.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Hämta mängden miljöberoende teckensnittskällor som söks efter som standard.
-// Till exempel kommer detta att innehålla en "Windows\Fonts\"-källa på en Windows-dator.
-// Vi lägger till den här arrayen i en ny lista för att göra det mycket lättare att lägga till eller ta bort teckensnittsposter.
+```
+
+## Steg 3: Hämta systemteckensnittskällor
+
+Hämta standardkällorna för systemteckensnitt. På en Windows-dator inkluderar detta vanligtvis "Windows\Fonts\" katalog.
+
+```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Lägg till en ny mappkälla som instruerar Aspose.Words att söka efter typsnitt i följande mapp.
+```
+
+## Steg 4: Lägg till en anpassad typsnittsmapp
+
+Lägg till en anpassad mapp som innehåller dina ytterligare teckensnitt. Detta är användbart om du har specifika teckensnitt som inte är installerade i systemfontkatalogen.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Lägg till den anpassade mappen som innehåller våra typsnitt till listan över befintliga teckensnittskällor.
 fontSources.Add(folderFontSource);
+```
+
+## Steg 5: Uppdatera teckensnittskällor
+
+ Konvertera listan över teckensnittskällor tillbaka till en array och ställ in den till`FontSettings` objekt.
+
+```csharp
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
+```
+
+## Steg 6: Tillämpa teckensnittsinställningar på dokument
+
+ Till sist, tillämpa den konfigurerade`FontSettings` till ditt dokument och spara det i önskat format, till exempel PDF.
+
+```csharp
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Slutsats
-I den här handledningen lärde vi oss hur man ställer in systemfontmappar och en anpassad mapp när man renderar ett dokument med Aspose.Words för .NET. Genom att följa den här steg-för-steg-guiden kan du enkelt ange flera teckensnittsmappar, inklusive systemmappen och en anpassad mapp, som ska användas när du renderar dina dokument. Aspose.Words erbjuder ett kraftfullt och flexibelt API för ordbehandling med typsnitt i dina dokument. Med denna kunskap kan du styra och anpassa teckensnittskällorna som används när du renderar dina dokument efter dina specifika behov.
 
-### FAQ's
+Och där har du det! Genom att följa dessa steg kan du säkerställa att dina Word-dokument använder rätt teckensnitt, oavsett om de är systemteckensnitt eller anpassade som lagras i en specifik katalog. Denna inställning hjälper till att bibehålla integriteten hos ditt dokuments utseende i olika miljöer.
 
-#### F: Hur kan jag ställa in systemfontmappar i Aspose.Words?
+## FAQ's
 
-S: För att ställa in systemfontmappar i Aspose.Words behöver du inte göra någonting. Aspose.Words använder automatiskt systemteckensnitt som är installerade på ditt operativsystem.
+### Vad händer om ett teckensnitt saknas i både system- och anpassade mappar?
 
-#### F: Hur kan jag ställa in anpassade teckensnittsmappar i Aspose.Words?
+Aspose.Words kommer att använda ett standardteckensnitt för att ersätta det saknade teckensnittet, vilket säkerställer att dokumentet förblir läsbart.
 
- S: För att ställa in de anpassade teckensnittsmapparna i Aspose.Words kan du använda`SetFontsFolders` metod för`Fonts` klass som anger platserna för de anpassade teckensnittsmapparna.
+### Kan jag lägga till flera anpassade teckensnittsmappar?
 
-#### F: Kan jag ange flera anpassade teckensnittsmappar i Aspose.Words?
+ Ja, du kan lägga till flera anpassade teckensnittsmappar genom att upprepa processen att skapa`FolderFontSource` objekt och lägga till dem i listan över teckensnittskällor.
 
- S: Ja, du kan ange flera anpassade teckensnittsmappar i Aspose.Words med hjälp av`SetFontsFolders` metod för`Fonts` klass med en lista över mappplatser.
+### Är det möjligt att använda nätverkssökvägar för anpassade teckensnittsmappar?
 
-#### F: Hur kan jag kontrollera teckensnittsmapparna som definieras i Aspose.Words?
+ Ja, du kan ange en nätverkssökväg i`FolderFontSource` konstruktör.
 
- För att kontrollera teckensnittsmapparna som definieras i Aspose.Words kan du använda`GetFolders` metod för`Fonts` klass för att få listan över konfigurerade teckensnittsmappar.
+### Vilka filformat stöder Aspose.Words för att spara dokument?
 
-#### F: Har anpassade mappteckensnitt prioritet framför systemteckensnitt i Aspose.Words?
+Aspose.Words stöder olika format, inklusive DOCX, PDF, HTML och mer.
 
-S: Ja, anpassade mappteckensnitt har prioritet framför systemteckensnitt i Aspose.Words. Om ett teckensnitt finns i både anpassade mappar och systemteckensnitt, kommer Aspose.Words att använda versionen från den anpassade mappen.
+### Hur hanterar jag meddelanden om teckensnittsersättning?
+
+ Du kan hantera meddelanden om teckensnittsersättning genom att använda`FontSettings` klass`FontSubstitutionWarning`händelse.

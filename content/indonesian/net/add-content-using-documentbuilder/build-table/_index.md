@@ -19,7 +19,7 @@ Sebelum kita memulai petualangan membuat meja, pastikan kita menyiapkan semua be
 - .NET Framework (4.0 atau lebih tinggi)
 - Aspose.Words untuk perpustakaan .NET
 
- Jika Anda belum memiliki Aspose.Words, Anda dapat dengan mudah[Unduh di sini](https://releases.aspose.com/words/net/) . Anda juga bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/) jika Anda ingin menguji airnya. Bagi mereka yang siap mengambil risiko, Anda bisa[membeli lisensi](https://purchase.aspose.com/buy) , atau jika Anda memerlukan lebih banyak waktu untuk mengevaluasi, ambil a[izin sementara](https://purchase.aspose.com/temporary-license/).
+ Jika Anda belum memiliki Aspose.Words, Anda dapat dengan mudah[unduh di sini](https://releases.aspose.com/words/net/) . Anda juga bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/) jika Anda ingin menguji airnya. Bagi mereka yang siap mengambil risiko, Anda bisa[membeli lisensi](https://purchase.aspose.com/buy) , atau jika Anda memerlukan lebih banyak waktu untuk mengevaluasi, ambil a[izin sementara](https://purchase.aspose.com/temporary-license/).
 
 ## Impor Namespace
 
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Mulai Tabel
 
- Sekarang, mari kita mulai dari meja kita. Kami memanggil`StartTable` metode`DocumentBuilder` memulai.
+ Sekarang, mari kita mulai dari meja kita. Kami memanggil`StartTable` metode`DocumentBuilder` untuk memulai.
 
 ```csharp
 Table table = builder.StartTable();
@@ -125,7 +125,7 @@ Ingat, latihan membuat sempurna. Jadi, jangan ragu untuk bereksperimen dengan fo
 Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Ini memungkinkan Anda membuat, mengedit, dan memanipulasi dokumen tanpa memerlukan Microsoft Word.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
- Kamu bisa[unduh Aspose.Words untuk .NET di sini](https://releases.aspose.com/words/net/). Ikuti petunjuk penginstalan yang diberikan untuk menyiapkannya di lingkungan pengembangan Anda.
+ Anda bisa[unduh Aspose.Words untuk .NET di sini](https://releases.aspose.com/words/net/). Ikuti petunjuk penginstalan yang diberikan untuk menyiapkannya di lingkungan pengembangan Anda.
 
 ### Bisakah saya menggunakan Aspose.Words secara gratis?
  Aspose.Words menawarkan a[uji coba gratis](https://releases.aspose.com/) sehingga Anda dapat menguji fitur-fiturnya. Untuk penggunaan jangka panjang, Anda dapat membeli lisensi atau mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/).

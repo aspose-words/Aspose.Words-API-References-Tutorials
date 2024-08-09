@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a Word-dokumentumot
 
- Ezután töltse be a Word-dokumentumot az Aspose.Wordsba`Document` tárgy. Ez az a dokumentum, amellyel dolgozni fog.
+ Ezután töltse be a Word-dokumentumot az Aspose.Wordsba`Document` objektum. Ez az a dokumentum, amellyel dolgozni fog.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

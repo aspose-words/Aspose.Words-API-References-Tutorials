@@ -71,7 +71,7 @@ srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 
 采用`AppendDocument`目标文档的方法（`dstDoc`) 无缝添加源内容。
 
-传递源文档（`srcDoc` ） 和`ImportFormatMode.KeepSourceFormatting`此方法的参数。此参数在附加时保留源文档的原始格式。
+传递源文档（`srcDoc` ）以及`ImportFormatMode.KeepSourceFormatting`此方法的参数。此参数在附加时保留源文档的原始格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 Agora que nosso projeto está configurado, vamos criar um documento Word que possamos proteger.
 
- Na tua`Program.cs` arquivo, inicialize uma nova instância do`Document` aula. Esta classe representa o documento do Word com o qual você trabalhará.
+ Em seu`Program.cs` arquivo, inicialize uma nova instância do`Document` aula. Esta classe representa o documento do Word com o qual você trabalhará.
 
 ```csharp
 // O caminho para o diretório de documentos.

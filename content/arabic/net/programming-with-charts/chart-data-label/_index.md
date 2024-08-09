@@ -19,7 +19,7 @@ url: /ar/net/programming-with-charts/chart-data-label/
 2. .NET Framework: تأكد من أن لديك .NET Framework 4.0 أو إصدار أحدث.
 3.  Aspose.Words لـ .NET: قم بتنزيل Aspose.Words لـ .NET وتثبيته من[رابط التحميل](https://releases.aspose.com/words/net/).
 4. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# أمر ضروري.
-5.  ترخيص صالح: احصل على أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) أو شراء واحدة من[رابط شراء](https://purchase.aspose.com/buy).
+5.  ترخيص صالح: احصل على أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) أو شراء واحدة من[رابط الشراء](https://purchase.aspose.com/buy).
 
 ## استيراد مساحات الأسماء
 
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 
 ## خاتمة
 
- تهانينا! لقد نجحت في تخصيص تسميات بيانات المخطط باستخدام Aspose.Words لـ .NET. توفر هذه المكتبة حلاً قويًا للتعامل مع مستندات Word برمجيًا، مما يسهل على المطورين إنشاء تطبيقات معالجة مستندات متطورة وديناميكية. الغوص في[توثيق](https://reference.aspose.com/words/net/) لاستكشاف المزيد من الميزات والقدرات.
+ تهانينا! لقد نجحت في تخصيص تسميات بيانات المخطط باستخدام Aspose.Words لـ .NET. توفر هذه المكتبة حلاً قويًا للتعامل مع مستندات Word برمجيًا، مما يسهل على المطورين إنشاء تطبيقات معالجة مستندات متطورة وديناميكية. الغوص في[الوثائق](https://reference.aspose.com/words/net/) لاستكشاف المزيد من الميزات والقدرات.
 
 ## الأسئلة الشائعة
 

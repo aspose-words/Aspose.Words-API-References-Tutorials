@@ -87,4 +87,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 はい、Aspose.Words for .NET を使用して、プログラムによってドキュメントを暗号化し、保護することができます。
 
 ### Aspose.Words for .NET の詳細なヘルプとサポートはどこで見つかりますか?
-訪問[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)コミュニティのサポートとディスカッションのため。
+訪問する[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)コミュニティのサポートとディスカッションのため。

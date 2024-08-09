@@ -9,7 +9,7 @@ url: /vi/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## Giới thiệu
 
-Xin chào các nhà phát triển đồng nghiệp! Bạn đã bao giờ làm việc với các tài liệu Word và thấy mình gặp rắc rối trong việc lưu dấu đầu dòng hình ảnh chưa? Đó là một trong những chi tiết nhỏ có thể tạo ra sự khác biệt lớn trong giao diện cuối cùng của tài liệu của bạn. Chà, hôm nay, tôi ở đây để hướng dẫn bạn quy trình xử lý dấu đầu dòng hình ảnh trong Aspose.Words dành cho .NET, đặc biệt tập trung vào tính năng "Không lưu dấu đầu dòng hình ảnh". Sẵn sàng để đi sâu vào? Đi nào!
+Xin chào các nhà phát triển đồng nghiệp! Bạn đã bao giờ làm việc với các tài liệu Word và thấy mình gặp rắc rối trong việc lưu dấu đầu dòng hình ảnh chưa? Đó là một trong những chi tiết nhỏ có thể tạo ra sự khác biệt lớn trong giao diện cuối cùng của tài liệu của bạn. Chà, hôm nay, tôi ở đây để hướng dẫn bạn quy trình xử lý dấu đầu dòng hình ảnh trong Aspose.Words dành cho .NET, đặc biệt tập trung vào tính năng "Không lưu dấu đầu dòng hình ảnh". Sẵn sàng để đi sâu vào? Đi thôi!
 
 ## Điều kiện tiên quyết
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã cấu hình thành công Aspose.Words cho .NET để bỏ qua dấu đầu dòng hình ảnh khi lưu tài liệu. Điều này có thể cực kỳ hữu ích khi bạn cần một cái nhìn rõ ràng, nhất quán mà không bị các dòng hình ảnh làm xao lãng.
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã cấu hình thành công Aspose.Words cho .NET để bỏ qua dấu đầu dòng hình ảnh khi lưu tài liệu. Điều này có thể cực kỳ hữu ích khi bạn cần một cái nhìn rõ ràng, nhất quán mà không bị các dòng hình ảnh làm xao lãng.
 
 ## Câu hỏi thường gặp
 

@@ -87,7 +87,7 @@ Bu, paragrafımızda yeni bir ilerleme alanı yaratır.
 
 ### Alan Özelliklerini Ayarla
 
-2. Uzaklıkları ve konumları belirlemek için alan özelliklerini yapılandırın:
+2. Uzaklıkları ve konumları belirtmek için alan özelliklerini yapılandırın:
 
 ```csharp
 field.DownOffset = "10";
@@ -126,7 +126,7 @@ Bu, belgeyi gelişmiş alanla birlikte kaydeder.
 
 ## Çözüm
 
-İşte buyur! DocumentBuilder sınıfını kullanmadan bir Word belgesine başarıyla bir ilerleme alanı eklediniz. Bu adımları izleyerek Aspose.Words for .NET'in Word belgelerini programlı olarak işleme gücünden yararlandınız. İster rapor oluşturmayı otomatikleştiriyor olun ister karmaşık belge şablonları oluşturuyor olun, bu bilgi hiç şüphesiz işinize yarayacaktır. Belge işlemenizi bir sonraki seviyeye taşımak için Aspose.Words'ün yeteneklerini denemeye ve keşfetmeye devam edin!
+Ve işte karşınızda! DocumentBuilder sınıfını kullanmadan bir Word belgesine başarıyla bir ilerleme alanı eklediniz. Bu adımları izleyerek Aspose.Words for .NET'in Word belgelerini programlı olarak işleme gücünden yararlandınız. İster rapor oluşturmayı otomatikleştiriyor olun ister karmaşık belge şablonları oluşturuyor olun, bu bilgi hiç şüphesiz işinize yarayacaktır. Belge işlemenizi bir sonraki seviyeye taşımak için Aspose.Words'ün yeteneklerini denemeye ve keşfetmeye devam edin!
 
 ## SSS'ler
 

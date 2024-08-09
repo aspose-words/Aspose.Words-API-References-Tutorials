@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pd
 
 ## 結論
 
-現在你就擁有了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 成功配置 PDF 以在視窗標題列中顯示文件標題。這個小小的增強功能可以讓您的 PDF 看起來更加精美和專業。
+現在你就得到它了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 成功配置 PDF 以在視窗標題列中顯示文件標題。這個小小的增強功能可以讓您的 PDF 看起來更加精美和專業。
 
 ## 常見問題解答
 

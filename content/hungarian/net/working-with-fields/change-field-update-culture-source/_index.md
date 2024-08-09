@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 Ha ez a tulajdonság nincs beállítva, akkor a mezők frissítésekor a dokumentum alapértelmezett kultúrabeállításait fogja használni.
 
 ### Lehetséges a mezők frissítése a dokumentum kultúrája alapján a mezőkód helyett?
- Igen, beállíthatod`FieldUpdateCultureSource` nak nek`FieldUpdateCultureSource.Document` a dokumentum kultúra beállításainak használatához.
+ Igen, beállíthatod`FieldUpdateCultureSource` hogy`FieldUpdateCultureSource.Document` a dokumentum kultúra beállításainak használatához.
 
 ### Hogyan formázhatom a dátumokat eltérő mintára?
  Módosíthatja a dátumformátum mintáját a`InsertField` módszer módosításával a`\\@` kapcsoló értéke.

@@ -56,7 +56,7 @@ for (int i = 0; i < splitDocuments.length; i++) {
 문서를 키워드로 분할하려면 문서의 내용을 반복하여 키워드를 찾으면 됩니다. 찾으면 새 문서를 만들고 해당 지점까지 내용을 추가하세요.
 
 ### 문서를 PDF 파일로 분할할 수 있나요?
-그래 넌 할수있어. Aspose.Words for Java를 사용하여 문서를 분할한 후 Aspose.PDF for Java를 사용하여 각 부분을 PDF 파일로 저장할 수 있습니다.
+예, 가능합니다. Aspose.Words for Java를 사용하여 문서를 분할한 후 Aspose.PDF for Java를 사용하여 각 부분을 PDF 파일로 저장할 수 있습니다.
 
 ### Aspose.Words for Java는 무료로 사용할 수 있나요?
 Aspose.Words for Java는 상용 라이브러리이지만 무료 평가판을 제공합니다. 해당 웹사이트에서 가격과 라이선스를 확인할 수 있습니다.

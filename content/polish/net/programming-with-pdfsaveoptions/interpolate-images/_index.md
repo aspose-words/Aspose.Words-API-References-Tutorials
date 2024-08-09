@@ -20,7 +20,7 @@ Zanim przejdziemy do szczegółów, upewnijmy się, że wszystko mamy skonfiguro
 3. Podstawowa znajomość języka C#: Znajomość programowania w językach C# i .NET pomoże Ci płynnie wykonywać zadania.
 4. Przykładowy dokument: Przygotuj dokument programu Word zawierający obrazy do przetestowania.
 
-Mam wszystko? Świetnie! Zanurzmy się.
+Masz wszystko? Świetnie! Zanurzmy się.
 
 ## Importuj przestrzenie nazw
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Krok 4: Zapisz dokument jako plik PDF
 
- Po skonfigurowaniu opcji nadszedł czas, aby zapisać dokument w formacie PDF. Użyj`Save` metoda`Document` class, określając ścieżkę i opcje zapisu.
+ Po skonfigurowaniu opcji nadszedł czas, aby zapisać dokument w formacie PDF. Skorzystaj z`Save` metoda`Document` class, określając ścieżkę i opcje zapisu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);

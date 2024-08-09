@@ -82,16 +82,16 @@ Son fakat en az değil, yeni birleştirilmiş belgemizi kaydedelim. Dondurmanın
 dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
 
-Boom! Biçimlendirmenizi değiştirmeden iki Word belgesini başarıyla birleştirdiniz. 
+Bum! Biçimlendirmenizi değiştirmeden iki Word belgesini başarıyla birleştirdiniz. 
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak, biçimlendirmenizi kaybetmeden, zahmetsizce belge ekleyebilirsiniz. İster belge yönetimini kolaylaştırmak isteyen bir geliştirici olun, ister yalnızca düzenli belgeleri seven biri olun, bu kılavuz size yardımcı olacaktır. Mutlu kodlama!
+Ve işte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak, biçimlendirmenizi kaybetmeden, zahmetsizce belge ekleyebilirsiniz. İster belge yönetimini kolaylaştırmak isteyen bir geliştirici olun, ister yalnızca düzenli belgeleri seven biri olun, bu kılavuz size yardımcı olacaktır. Mutlu kodlama!
 
 ## SSS'ler
 
 ### Kaynağın numarası yerine hedef belgenin numaralandırmasını koruyabilir miyim?
- Evet, değiştirebilirsiniz`ImportFormatOptions` Bunu başarmak için.
+ Evet, değiştirebilirsiniz`ImportFormatOptions` bunu başarmak için.
 
 ### Aspose.Words for .NET'e sahip değilsem ne olur?
  Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
@@ -103,4 +103,4 @@ Aspose.Words özellikle Word belgeleri içindir. PDF'ler için Aspose.PDF'e ihti
 Görüntüler genellikle sorunsuz bir şekilde işlenir ancak kaynak ve hedef belgelerinizin doğru şekilde biçimlendirildiğinden emin olun.
 
 ###kaydetmeden önce bahsetmek ister misiniz?
-Belgeyi bir akışa dönüştürebilir veya önizlemesini yapmak için uygulamanızdaki bir görüntüleyiciyi kullanabilirsiniz.
+Belgeyi bir akışa dönüştürebilir veya önizlemek için uygulamanızda bir görüntüleyici kullanabilirsiniz.

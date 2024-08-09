@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/bookmark-table-columns/
 ---
-## Úvod
+## Zavedení
 
 Pokud si chcete vylepšit své dovednosti v oblasti automatizace dokumentů, pak jste na tom. Tento tutoriál vás provede procesem vytváření záložek sloupců tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Jste připraveni se ponořit? Začněme!
 
@@ -15,7 +15,7 @@ Pokud si chcete vylepšit své dovednosti v oblasti automatizace dokumentů, pak
 
 Než se pustíme do kódu, je třeba mít připraveno několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Nastavte vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Užitečná bude znalost programování v C#.
 
@@ -115,13 +115,13 @@ A tady to máte! Úspěšně jste vytvořili záložku sloupců tabulky v dokume
 Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu. Umožňuje vám vytvářet, upravovat a převádět dokumenty, aniž byste potřebovali nainstalovaný Microsoft Word.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Aspose.Words for .NET si můžete stáhnout z webu[webová stránka](https://releases.aspose.com/words/net/). Postupujte podle dodaných pokynů k instalaci.
+ Aspose.Words for .NET si můžete stáhnout z webu[webové stránky](https://releases.aspose.com/words/net/). Postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu používat Aspose.Words pro .NET s jinými programovacími jazyky?
 Ano, Aspose.Words for .NET lze použít s jakýmkoli jazykem podporovaným .NET, včetně C#, VB.NET a F#.
 
 ### Jak mohu získat podporu pro Aspose.Words pro .NET?
- Můžete získat podporu od komunity Aspose a odborníků, když navštívíte stránku[Fórum podpory](https://forum.aspose.com/c/words/8).
+ Můžete získat podporu od komunity Aspose a odborníků, když navštívíte stránku[fórum podpory](https://forum.aspose.com/c/words/8).
 
 ### Je k dispozici zkušební verze Aspose.Words pro .NET?
- Ano, můžete získat bezplatnou zkušební verzi od[tady](https://releases.aspose.com/).
+ Ano, můžete získat bezplatnou zkušební verzi od[zde](https://releases.aspose.com/).

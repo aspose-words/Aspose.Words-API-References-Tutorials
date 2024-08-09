@@ -59,7 +59,7 @@ Aspose.Words поддерживает широкий спектр формато
 Да, Aspose.Words полностью поддерживает .NET Core и .NET Framework.
 
 ### Где я могу найти больше примеров и документации для Aspose.Words?
- Посетить[Документация Aspose.Words для .NET](https://reference.aspose.com/words/net/) для получения подробных примеров и справки по API.
+ Посетите[Документация Aspose.Words для .NET](https://reference.aspose.com/words/net/) для получения подробных примеров и справки по API.
 
 ### Как я могу получить поддержку по вопросам, связанным с Aspose.Words?
  Для получения поддержки посетите[Форум Aspose.Words](https://forum.aspose.com/c/words/8) где вы можете задавать вопросы и взаимодействовать с сообществом.

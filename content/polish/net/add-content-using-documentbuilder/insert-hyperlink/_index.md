@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Napisz tekst początkowy
 
- Używając`DocumentBuilder`, napiszemy początkowy tekst do dokumentu. To ustala kontekst, w którym zostanie wstawione nasze hiperłącze.
+ Korzystanie z`DocumentBuilder`, napiszemy początkowy tekst do dokumentu. To ustala kontekst, w którym zostanie wstawione nasze hiperłącze.
 
 ```csharp
 builder.Write("Please make sure to visit ");

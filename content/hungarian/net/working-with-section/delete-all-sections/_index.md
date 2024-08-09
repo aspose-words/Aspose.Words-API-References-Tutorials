@@ -60,7 +60,7 @@ Ez az egyszerű kódsor törli a betöltött dokumentum összes szakaszát. De h
 ## GYIK
 
 ### Mi az Aspose.Words for .NET?
- Az Aspose.Words for .NET egy hatékony könyvtár a Word dokumentumok programozott kezeléséhez. További információkat találhat[itt](https://reference.aspose.com/words/net/).
+ Az Aspose.Words for .NET egy hatékony könyvtár a Word dokumentumok programozott kezeléséhez. További információt találhat[itt](https://reference.aspose.com/words/net/).
 
 ### Kipróbálhatom ingyenesen az Aspose.Words for .NET-et?
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[itt](https://releases.aspose.com/).
@@ -69,7 +69,7 @@ Ez az egyszerű kódsor törli a betöltött dokumentum összes szakaszát. De h
  Megvásárolhatja innen[itt](https://purchase.aspose.com/buy).
 
 ### Elérhető-e támogatás az Aspose.Words for .NET-hez?
- Igen, támogatást kaphat az Aspose közösségtől[itt](https://forum.aspose.com/c/words/8).
+Igen, támogatást kaphat az Aspose közösségtől[itt](https://forum.aspose.com/c/words/8).
 
 ### Mi van, ha ideiglenes engedélyre van szükségem?
  Ideiglenes jogosítványt kaphat[itt](https://purchase.aspose.com/temporary-license/).

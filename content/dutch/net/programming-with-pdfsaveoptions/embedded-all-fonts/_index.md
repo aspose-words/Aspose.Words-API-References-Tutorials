@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
  In deze regel creëren we een nieuwe`Document` object en laad het`Rendering.docx` bestand uit onze documentmap.
 
-## Stap 3: Configureer PDF-opslagopties
+## Stap 3: Configureer de PDF-opslagopties
 
  Nu is het tijd om de PDF-opslagopties te configureren. Concreet stellen we de`EmbedFullFonts`eigendom aan`true` om ervoor te zorgen dat alle lettertypen die in het document worden gebruikt, in de PDF zijn ingesloten.
 

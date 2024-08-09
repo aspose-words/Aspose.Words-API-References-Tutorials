@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/document-protection/unrestricted-editable-regions/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste někdy chtěli chránit dokument aplikace Word, ale přesto povolit určité části upravovat, jste na správném místě! Tato příručka vás provede procesem nastavení neomezených upravitelných oblastí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše od předpokladů až po podrobné kroky, abychom vám zajistili hladký průběh. Připraveni? Pojďme se ponořit!
 
@@ -15,8 +15,8 @@ Pokud jste někdy chtěli chránit dokument aplikace Word, ale přesto povolit u
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
-2.  Platná licence Aspose: Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[zde](https://releases.aspose.com/words/net/).
+2.  Platná licence Aspose: Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 3. Visual Studio: Jakákoli nejnovější verze by měla fungovat dobře.
 4. Základní znalost C# a .NET: To vám pomůže sledovat kód.
 
@@ -96,7 +96,7 @@ Upravitelný rozsah není úplný bez konce. Dále to přidáme.
    ```csharp
    EditableRangeEnd edRangeEnd = builder.EndEditableRange();
    ```
-2. Přidat text jen pro čtení mimo rozsah: Chcete-li předvést ochranu, vložte text mimo upravitelný rozsah.
+2. Přidat text jen pro čtení mimo rozsah: Vložení textu mimo upravitelný rozsah pro demonstraci ochrany.
    ```csharp
    builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
    ```
@@ -114,7 +114,7 @@ Nakonec uložíme dokument s aplikovanou ochranou a upravitelnými oblastmi.
 
 tady to máte! Úspěšně jste vytvořili neomezené upravitelné oblasti v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato funkce je neuvěřitelně užitečná pro kolaborativní prostředí, kde určité části dokumentu musí zůstat nezměněny, zatímco jiné lze upravovat. 
 
- Experimentujte se složitějšími scénáři a různými úrovněmi ochrany, abyste z Aspose.Words vytěžili maximum. Pokud máte nějaké dotazy nebo narazíte na problémy, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo oslovit[Podpěra, podpora](https://forum.aspose.com/c/words/8).
+ Experimentujte se složitějšími scénáři a různými úrovněmi ochrany, abyste z Aspose.Words vytěžili maximum. Pokud máte nějaké dotazy nebo narazíte na problémy, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo oslovit[podpora](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 

@@ -164,7 +164,7 @@ Las opciones de limpieza en Aspose.Words para Java son configuraciones que le pe
 
  Para eliminar campos de combinación no utilizados de un documento, puede configurar el`MailMergeCleanupOptions.REMOVE_UNUSED_FIELDS` opción a verdadero. Esto eliminará automáticamente los campos de combinación que no se completan durante la combinación de correspondencia, lo que dará como resultado un documento más limpio.
 
-###  Cuál es la diferencia entre`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
+###  ¿Cuál es la diferencia entre`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
  El`REMOVE_EMPTY_FIELDS` La opción elimina los campos de combinación que no tienen datos o están vacíos durante el proceso de combinación de correspondencia. Por otra parte, el`REMOVE_UNUSED_FIELDS`La opción elimina los campos de combinación que no se completan con datos durante la combinación. La elección entre ellos depende de si desea eliminar campos sin contenido o aquellos que no se utilizan en la operación de combinación específica.
 

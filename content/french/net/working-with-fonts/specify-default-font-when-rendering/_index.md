@@ -2,80 +2,94 @@
 title: Spécifier la police par défaut lors du rendu
 linktitle: Spécifier la police par défaut lors du rendu
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour spécifier la police par défaut lors du rendu d'un document à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment spécifier une police par défaut lors du rendu de documents Word à l'aide d'Aspose.Words for .NET. Garantissez une apparence cohérente des documents sur toutes les plateformes.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/specify-default-font-when-rendering/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous guiderons étape par étape pour spécifier la police par défaut lors du rendu d'un document à l'aide d'Aspose.Words for .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment spécifier une police par défaut à utiliser lors du rendu de vos documents à l'aide d'Aspose.Words for .NET.
+S'assurer que vos documents Word s'affichent correctement sur différentes plates-formes peut être un défi, en particulier en ce qui concerne la compatibilité des polices. Une façon de conserver une apparence cohérente consiste à spécifier une police par défaut lors du rendu de vos documents au format PDF ou dans d'autres formats. Dans ce didacticiel, nous verrons comment définir une police par défaut à l'aide d'Aspose.Words pour .NET, afin que vos documents aient fière allure, quel que soit l'endroit où ils sont affichés.
 
-## Étape 1 : Définir le répertoire des documents
-Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Il s'agit de l'emplacement où vous souhaitez enregistrer votre document rendu modifié. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin approprié.
+## Conditions préalables
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Avant de plonger dans le code, expliquons ce que vous devrez suivre avec ce didacticiel :
 
-## Étape 2 : Chargez le document à rendre
- Ensuite, vous devez charger le document à restituer à l'aide du`Document` classe. Assurez-vous de spécifier le chemin d'accès correct au document.
+- Aspose.Words pour .NET : assurez-vous que la dernière version est installée. Vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : Visual Studio ou tout autre environnement de développement .NET.
+- Connaissance de base de C# : ce didacticiel suppose que vous êtes à l'aise avec la programmation C#.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importer des espaces de noms
 
-## Étape 3 : Définir la police par défaut
- Vous pouvez désormais spécifier la police par défaut à utiliser lors du rendu en créant une instance du`FontSettings` classe et définir le`DefaultFontName` propriété du`DefaultFontSubstitution` s'opposer à la`DefaultFontSubstitution` objet`SubstitutionSettings` de`FontSettings`.
+Pour commencer, vous devez importer les espaces de noms nécessaires. Ceux-ci vous permettront d'accéder aux classes et méthodes nécessaires pour travailler avec Aspose.Words.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Étape 4 : Enregistrez le document rendu
- Enfin, vous pouvez enregistrer le document rendu dans un fichier à l'aide de l'option`Save()` méthode du`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
+Maintenant, décomposons le processus de spécification d'une police par défaut en étapes faciles à suivre.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
-```
+## Étape 1 : Configurez votre répertoire de documents
 
-### Exemple de code source pour Spécifier la police par défaut lors du rendu à l'aide d'Aspose.Words pour .NET 
+Tout d’abord, définissez le chemin d’accès à votre répertoire de documents. C'est ici que vos fichiers d'entrée et de sortie seront stockés.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Étape 2 : Chargez votre document
+
+Ensuite, chargez le document que vous souhaitez restituer. Dans cet exemple, nous utiliserons un fichier nommé « Rendering.docx ».
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Étape 3 : configurer les paramètres de police
+
+ Créer une instance de`FontSettings` et spécifiez la police par défaut. Si la police définie est introuvable lors du rendu, Aspose.Words utilisera la police disponible la plus proche sur la machine.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Si la police par défaut définie ici est introuvable lors du rendu, alors
-// la police la plus proche de la machine est utilisée à la place.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+```
+
+## Étape 4 : appliquer les paramètres de police au document
+
+Attribuez les paramètres de police configurés à votre document.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Étape 5 : Enregistrez le document
+
+Enfin, enregistrez le document au format souhaité. Dans ce cas, nous l'enregistrerons au format PDF.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons appris à spécifier la police par défaut lors du rendu d'un document à l'aide d'Aspose.Words for .NET. En suivant ce guide étape par étape, vous pouvez facilement définir une police par défaut à utiliser lors du rendu de vos documents. Aspose.Words propose une API puissante et flexible pour le traitement de mots avec des polices dans vos documents. Grâce à ces connaissances, vous pouvez contrôler et personnaliser le rendu de vos documents selon vos besoins spécifiques.
 
-### FAQ
+En suivant ces étapes, vous pouvez vous assurer que vos documents Word s'affichent avec une police par défaut spécifiée, en maintenant la cohérence sur les différentes plates-formes. Cela peut être particulièrement utile pour les documents largement partagés ou visualisés sur des systèmes avec différentes polices disponibles.
 
-#### Q : Comment puis-je spécifier une police par défaut lors de la conversion en PDF dans Aspose.Words ?
 
- R : Pour spécifier une police par défaut lors de la conversion en PDF dans Aspose.Words, vous pouvez utiliser l'option`PdfOptions` classe et définir le`DefaultFontName` propriété au nom de la police souhaitée.
+## FAQ
 
-#### Q : Que se passe-t-il si la police par défaut n'est pas disponible lors de la conversion en PDF ?
+### Pourquoi spécifier une police par défaut dans Aspose.Words ?
+La spécification d'une police par défaut garantit que votre document apparaît cohérent sur différentes plates-formes, même si les polices d'origine ne sont pas disponibles.
 
-R : Si la police par défaut spécifiée n'est pas disponible lors de la conversion en PDF, Aspose.Words utilisera une police de remplacement pour afficher le texte dans le document converti. Cela peut entraîner une légère différence d’apparence par rapport à la police d’origine.
+### Que se passe-t-il si la police par défaut n'est pas trouvée lors du rendu ?
+Aspose.Words utilisera la police disponible la plus proche sur la machine pour conserver l'apparence du document aussi fidèlement que possible.
 
-#### Q : Puis-je spécifier une police par défaut pour d'autres formats de sortie, tels que DOCX ou HTML ?
+### Puis-je spécifier plusieurs polices par défaut ?
+ Non, vous ne pouvez spécifier qu'une seule police par défaut. Cependant, vous pouvez gérer la substitution de polices dans des cas spécifiques à l'aide de l'option`FontSettings` classe.
 
-: Oui, vous pouvez spécifier une police par défaut pour d'autres formats de sortie tels que DOCX ou HTML en utilisant les options de conversion appropriées et en définissant la propriété correspondante pour chaque format.
+### Aspose.Words for .NET est-il compatible avec toutes les versions de documents Word ?
+Oui, Aspose.Words for .NET prend en charge un large éventail de formats de documents Word, notamment DOC, DOCX, RTF, etc.
 
-#### Q : Comment puis-je vérifier la police par défaut spécifiée dans Aspose.Words ?
-
- R : Pour vérifier la police par défaut spécifiée dans Aspose.Words, vous pouvez utiliser le`DefaultFontName` propriété du`PdfOptions` class et récupérez le nom de la police configurée.
-
-#### Q : Est-il possible de spécifier une police par défaut différente pour chaque section du document ?
-
-R : Oui, il est possible de spécifier une police par défaut différente pour chaque section du document en utilisant les options de formatage spécifiques à chaque section. Cependant, cela nécessiterait une manipulation plus avancée du document à l'aide des fonctionnalités d'Aspose.Words.
+### Où puis-je obtenir de l'aide si je rencontre des problèmes ?
+ Vous pouvez obtenir l'assistance de la communauté Aspose et des développeurs sur le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).

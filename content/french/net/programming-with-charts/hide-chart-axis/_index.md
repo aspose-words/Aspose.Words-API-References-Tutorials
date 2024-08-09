@@ -101,7 +101,7 @@ Cette commande enregistre le document Word avec le graphique dans le chemin spé
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment masquer un axe de graphique dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation des documents Word par programmation. En suivant ces étapes, vous pouvez créer des documents personnalisés et d'aspect professionnel avec un minimum d'effort.
+Félicitations! Vous avez appris avec succès comment masquer un axe de graphique dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation des documents Word par programmation. En suivant ces étapes, vous pouvez créer des documents personnalisés et d'aspect professionnel avec un minimum d'effort.
 
 ## FAQ
 

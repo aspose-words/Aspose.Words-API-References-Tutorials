@@ -9,7 +9,7 @@ url: /fr/net/programming-with-tables/nested-table/
 ---
 ## Introduction
 
-Avez-vous déjà eu besoin de créer par programme un tableau imbriqué dans un document Word ? Que vous génériez des rapports, des factures ou tout autre type de document nécessitant une structure tabulaire détaillée, Aspose.Words for .NET peut être votre meilleur ami. Dans ce didacticiel, nous aborderons le processus de création de tableaux imbriqués dans des documents Word à l'aide d'Aspose.Words pour .NET. Nous couvrirons tout, depuis les prérequis jusqu'à l'implémentation finale du code. Alors, commençons!
+Avez-vous déjà eu besoin de créer par programme un tableau imbriqué dans un document Word ? Que vous génériez des rapports, des factures ou tout autre type de document nécessitant une structure tabulaire détaillée, Aspose.Words for .NET peut être votre meilleur ami. Dans ce didacticiel, nous aborderons le processus de création de tableaux imbriqués dans des documents Word à l'aide d'Aspose.Words pour .NET. Nous couvrirons tout, depuis les prérequis jusqu'à l'implémentation finale du code. Alors commençons !
 
 ## Conditions préalables
 
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 
 ## Conclusion
 
-Et voila! Vous avez créé avec succès un tableau imbriqué dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite incroyablement la manipulation de documents Word par programmation. Que vous génériez des rapports complexes ou des tableaux simples, Aspose.Words for .NET est là pour vous.
+Et voilà ! Vous avez créé avec succès un tableau imbriqué dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite incroyablement la manipulation de documents Word par programmation. Que vous génériez des rapports complexes ou des tableaux simples, Aspose.Words for .NET est là pour vous.
 
 ## FAQ
 
@@ -126,7 +126,7 @@ Une table imbriquée est une table dans une table. Il est utilisé pour créer d
 
 ### Pourquoi utiliser Aspose.Words pour .NET ?
 
-Aspose.Words for .NET fournit un ensemble robuste de fonctionnalités pour créer, modifier et convertir des documents Word par programme, ce qui en fait un choix idéal pour les développeurs.
+Aspose.Words for .NET fournit un ensemble robuste de fonctionnalités pour créer, modifier et convertir des documents Word par programmation, ce qui en fait un choix idéal pour les développeurs.
 
 ### Puis-je ajouter plus de niveaux de tables imbriquées ?
 

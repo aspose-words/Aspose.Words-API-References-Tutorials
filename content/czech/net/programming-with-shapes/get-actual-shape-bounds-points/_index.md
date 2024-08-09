@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
-## Úvod
+## Zavedení
 
 Zkoušeli jste někdy manipulovat s tvary v dokumentech aplikace Word a zajímali jste se o jejich přesné rozměry? Znalost přesných hranic tvarů může být zásadní pro různé úlohy úprav a formátování dokumentů. Ať už vytváříte podrobnou zprávu, efektní zpravodaj nebo sofistikovaný leták, pochopení rozměrů tvaru zajistí, že váš návrh bude vypadat správně. V této příručce se ponoříme do toho, jak získat skutečné hranice tvarů v bodech pomocí Aspose.Words pro .NET. Jste připraveni udělat ze svých tvarů dokonalý obraz? Začněme!
 
@@ -15,7 +15,7 @@ Zkoušeli jste někdy manipulovat s tvary v dokumentech aplikace Word a zajímal
 
 Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Měli byste mít nastavené vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Tato příručka předpokládá, že máte základní znalosti o programování v C#.
 

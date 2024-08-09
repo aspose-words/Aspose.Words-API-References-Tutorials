@@ -64,7 +64,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
- Hier,`RasterizeTransformedElements` ingesteld op`false` , wat betekent dat de getransformeerde elementen niet worden gerasterd. Je kunt het instellen op`true` als u wilt dat ze worden gerasterd.
+ Hier,`RasterizeTransformedElements` is ingesteld op`false` , wat betekent dat de getransformeerde elementen niet worden gerasterd. Je kunt het instellen op`true` als u wilt dat ze worden gerasterd.
 
 ## Stap 4: Converteer het document
 
@@ -93,7 +93,7 @@ Aspose.Words ondersteunt een breed scala aan formaten, waaronder PDF, HTML, EPUB
  Momenteel is de`RasterizeTransformedElements` optie is van toepassing op alle getransformeerde elementen in het document. Voor meer gedetailleerde controle kunt u overwegen om elementen afzonderlijk te verwerken vóór de conversie.
 
 ### Hoe kan ik problemen met documentconversie oplossen?  
- Zorg ervoor dat u de nieuwste versie van Aspose.Words heeft en controleer de documentatie op eventuele specifieke conversieproblemen. Bovendien is de[Helpforum](https://forum.aspose.com/c/words/8) is een geweldige plek om hulp te vragen.
+ Zorg ervoor dat u de nieuwste versie van Aspose.Words heeft en controleer de documentatie op eventuele specifieke conversieproblemen. Bovendien is de[ondersteuningsforum](https://forum.aspose.com/c/words/8) is een geweldige plek om hulp te vragen.
 
 ### Zijn er beperkingen voor de proefversie van Aspose.Words voor .NET?  
  De proefversie heeft enkele beperkingen, zoals het evaluatiewatermerk. Voor een volledig functionele ervaring kunt u overwegen een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).

@@ -2,7 +2,7 @@
 title: Lista Behåll källformatering
 linktitle: Lista Behåll källformatering
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du slår samman Word-dokument samtidigt som du bevarar formateringen med Aspose.Words för .NET. Den här handledningen ger steg-för-steg-vägledning för sömlös sammanslagning av dokument.
+description: Lär dig hur du slår samman Word-dokument samtidigt som du bevarar formateringen med Aspose.Words för .NET. Denna handledning ger steg-för-steg-vägledning för sömlös sammanslagning av dokument.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/list-keep-source-formatting/

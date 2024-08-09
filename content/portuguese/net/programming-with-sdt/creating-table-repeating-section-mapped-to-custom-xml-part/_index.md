@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Etapa 4: criar seção repetitiva
 
- Criar uma`StructuredDocumentTag` (SDT) para a seção de repetição e mapeie-a para os dados XML:
+ Crie um`StructuredDocumentTag` (SDT) para a seção de repetição e mapeie-a para os dados XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
@@ -73,7 +73,7 @@ repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Etapa 5: criar item de seção repetitiva
+## Etapa 5: criar um item de seção repetitivo
 
 Crie um SDT para o item da seção de repetição e adicione-o à seção de repetição:
 

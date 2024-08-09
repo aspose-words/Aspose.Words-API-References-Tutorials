@@ -15,7 +15,7 @@ Cuando se trata de manejar archivos PDF en aplicaciones .NET, Aspose.Words para 
 
 Antes de comenzar, hay algunas cosas que necesitará:
 
-1. Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words. Si aún no lo tienes, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1. Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words. Si aún no lo tienes, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: configure su entorno de desarrollo con Visual Studio o cualquier otro IDE preferido.
 3.  Licencia: si bien Aspose.Words ofrece una prueba gratuita, considere obtener una[licencia temporal](https://purchase.aspose.com/temporary-license/) para una funcionalidad completa sin limitaciones.
 
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 
 ## Conclusión
 
-¡Ahí tienes! Ha cargado con éxito un rango específico de páginas de un documento PDF usando Aspose.Words para .NET. Esta poderosa biblioteca facilita el manejo de archivos PDF, permitiéndole concentrarse en lo que realmente importa: crear aplicaciones sólidas y eficientes. Ya sea que esté trabajando en un proyecto pequeño o en una solución empresarial a gran escala, Aspose.Words es una herramienta indispensable en su arsenal .NET.
+¡Ahí lo tienes! Ha cargado con éxito un rango específico de páginas de un documento PDF usando Aspose.Words para .NET. Esta poderosa biblioteca facilita el manejo de archivos PDF, permitiéndole concentrarse en lo que realmente importa: crear aplicaciones sólidas y eficientes. Ya sea que esté trabajando en un proyecto pequeño o en una solución empresarial a gran escala, Aspose.Words es una herramienta indispensable en su arsenal .NET.
 
 ## Preguntas frecuentes
 

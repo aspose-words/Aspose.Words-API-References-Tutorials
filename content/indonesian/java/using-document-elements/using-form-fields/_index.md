@@ -2,7 +2,7 @@
 title: Menggunakan Bidang Formulir di Aspose.Words untuk Java
 linktitle: Menggunakan Bidang Formulir
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara menggunakan Aspose.Words untuk Java untuk membuat dokumen Word interaktif dengan bidang formulir. Mulai sekarang!
+description: Pelajari cara menggunakan Aspose.Words untuk Java untuk membuat dokumen Word interaktif dengan bidang formulir. Mulailah sekarang!
 type: docs
 weight: 14
 url: /id/java/using-document-elements/using-form-fields/

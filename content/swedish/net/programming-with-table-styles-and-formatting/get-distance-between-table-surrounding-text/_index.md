@@ -86,7 +86,7 @@ Och där har du det! Genom att följa dessa steg kan du enkelt hämta avstånden
  Ja, du kan justera avstånden programmatiskt med Aspose.Words genom att ställa in`DistanceTop`, `DistanceBottom`, `DistanceRight` , och`DistanceLeft` egenskaper hos`Table` objekt.
 
 ### Vad händer om mitt dokument har flera tabeller?
- Du kan gå igenom dokumentets undernoder och använda samma metod för varje tabell. Använda sig av`GetChildNodes(NodeType.Table, true)` för att få alla bord.
+ Du kan gå igenom dokumentets undernoder och använda samma metod för varje tabell. Använda`GetChildNodes(NodeType.Table, true)` för att få alla bord.
 
 ### Kan jag använda Aspose.Words med .NET Core?
 Absolut! Aspose.Words stöder .NET Core, och du kan använda samma kod med mindre justeringar för .NET Core-projekt.
@@ -95,4 +95,4 @@ Absolut! Aspose.Words stöder .NET Core, och du kan använda samma kod med mindr
 Du kan installera Aspose.Words för .NET via NuGet Package Manager i Visual Studio. Sök helt enkelt efter "Aspose.Words" och installera paketet.
 
 ### Finns det några begränsningar för de dokumenttyper som stöds av Aspose.Words?
- Aspose.Words stöder ett brett utbud av dokumentformat, inklusive DOCX, DOC, PDF, HTML och mer. Kolla[dokumentation](https://reference.aspose.com/words/net/) för en fullständig lista över format som stöds.
+ Aspose.Words stöder ett brett utbud av dokumentformat, inklusive DOCX, DOC, PDF, HTML och mer. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för en fullständig lista över format som stöds.

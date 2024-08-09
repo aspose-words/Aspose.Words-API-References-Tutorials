@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-styles-and-themes/access-styles/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa stylů dokumentů ve Wordu? Ať už vytváříte komplexní zprávu nebo jednoduše upravujete svůj životopis, pochopení toho, jak získat přístup ke stylům a jak s nimi manipulovat, může změnit hru. V tomto tutoriálu prozkoumáme, jak získat styly dokumentů pomocí Aspose.Words for .NET, výkonné knihovny, která vám umožní programově pracovat s dokumenty Wordu.
 
@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa stylů dokumentů ve Wordu? Ať už vytv�
 
 Než do toho skočíme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Tuto knihovnu musíte mít nainstalovanou ve svém prostředí .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Tuto knihovnu musíte mít nainstalovanou ve svém prostředí .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Základní znalost .NET: Znalost jazyka C# nebo jiného jazyka .NET vám pomůže porozumět poskytnutým úryvkům kódu.
 3. Vývojové prostředí: Ujistěte se, že máte IDE jako Visual Studio nastavené pro psaní a spouštění kódu .NET.
 
@@ -36,7 +36,7 @@ Nejprve budete muset vytvořit instanci souboru`Document` třída. Tato třída 
 Document doc = new Document();
 ```
 
- Tady,`Document` je třída poskytovaná Aspose.Words, která umožňuje programově pracovat s dokumenty Wordu.
+ Zde,`Document` je třída poskytovaná Aspose.Words, která umožňuje programově pracovat s dokumenty Wordu.
 
 ## Krok 2: Přístup ke kolekci stylů
 
@@ -115,4 +115,4 @@ Ano, můžete přistupovat a manipulovat se styly ve stávajících i nově vytv
  Styly můžete filtrovat kontrolou vlastností, jako je např`IsBuiltin` nebo pomocí vlastní logiky založené na atributech stylu.
 
 ### Kde najdu další zdroje na Aspose.Words pro .NET?
- Můžete prozkoumat více[tady](https://reference.aspose.com/words/net/).
+ Můžete prozkoumat více[zde](https://reference.aspose.com/words/net/).

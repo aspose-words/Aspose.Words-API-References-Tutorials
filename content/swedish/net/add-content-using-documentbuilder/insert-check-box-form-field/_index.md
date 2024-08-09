@@ -18,7 +18,7 @@ Innan vi dyker in i det smaskiga, låt oss se till att du har allt du behöver:
 - Utvecklingsmiljö: En IDE som Visual Studio kommer att vara din lekplats.
 - Grundläggande förståelse för C#: Även om vi kommer att täcka allt i detalj, kommer en grundläggande förståelse av C# att vara fördelaktig.
 
-Redo att rulla? Låt oss börja!
+Redo att rulla? Låt oss komma igång!
 
 ## Importera nödvändiga namnområden
 
@@ -40,7 +40,7 @@ Innan vi kan manipulera dokument måste vi ange var vårt dokument ska sparas. S
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till mappen där du vill spara ditt dokument. Detta talar om för Aspose.Words var du kan hitta och spara dina filer.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen till mappen där du vill spara ditt dokument. Detta talar om för Aspose.Words var du kan hitta och spara dina filer.
 
 ## Steg 2: Skapa ett nytt dokument
 
@@ -98,7 +98,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### Hur får jag Aspose.Words för .NET?
 
- Du kan ladda ner Aspose.Words för .NET från[hemsida](https://releases.aspose.com/words/net/) . Det finns också ett alternativ för en[gratis provperiod](https://releases.aspose.com/) om du vill utforska dess funktioner.
+ Du kan ladda ner Aspose.Words för .NET från[webbplats](https://releases.aspose.com/words/net/) . Det finns också ett alternativ för en[gratis provperiod](https://releases.aspose.com/) om du vill utforska dess funktioner.
 
 ### Kan jag använda Aspose.Words för .NET med någon .NET-applikation?
 

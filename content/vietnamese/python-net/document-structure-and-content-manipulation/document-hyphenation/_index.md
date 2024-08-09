@@ -7,7 +7,7 @@ type: docs
 weight: 17
 url: /vi/python-net/document-structure-and-content-manipulation/document-hyphenation/
 ---
-Dấu gạch nối và dòng văn bản là những khía cạnh quan trọng khi tạo tài liệu Word có cấu trúc tốt và trông chuyên nghiệp. Cho dù bạn đang chuẩn bị một báo cáo, bản trình bày hay bất kỳ loại tài liệu nào khác, việc đảm bảo rằng văn bản trôi chảy và xử lý gạch nối thích hợp có thể nâng cao đáng kể khả năng đọc và tính thẩm mỹ cho nội dung của bạn. Trong bài viết này, chúng ta sẽ khám phá cách quản lý hiệu quả gạch nối và luồng văn bản bằng cách sử dụng API Aspose.Words cho Python. Chúng tôi sẽ đề cập đến mọi thứ từ việc hiểu dấu gạch nối đến việc triển khai nó theo chương trình trong tài liệu của bạn.
+Dấu gạch nối và dòng văn bản là những khía cạnh quan trọng khi tạo tài liệu Word có cấu trúc tốt và trông chuyên nghiệp. Cho dù bạn đang chuẩn bị một báo cáo, bản trình bày hay bất kỳ loại tài liệu nào khác, việc đảm bảo rằng văn bản trôi chảy liền mạch và dấu gạch nối được xử lý thích hợp có thể nâng cao đáng kể khả năng đọc và tính thẩm mỹ cho nội dung của bạn. Trong bài viết này, chúng ta sẽ khám phá cách quản lý hiệu quả gạch nối và luồng văn bản bằng cách sử dụng API Aspose.Words cho Python. Chúng tôi sẽ đề cập đến mọi thứ từ việc hiểu dấu gạch nối đến việc triển khai nó theo chương trình trong tài liệu của bạn.
 
 ## Hiểu dấu gạch nối
 
@@ -90,7 +90,7 @@ hyphenation_options.consecutive_hyphen_limit = 2
 
 ### Điều chỉnh khoảng cách dòng
 
-Khoảng cách dòng thích hợp sẽ nâng cao khả năng đọc. Bạn có thể đặt giãn cách dòng trong tài liệu của mình để cải thiện hình thức trực quan tổng thể.
+Khoảng cách dòng thích hợp sẽ nâng cao khả năng đọc. Bạn có thể đặt khoảng cách dòng trong tài liệu của mình để cải thiện hình thức trực quan tổng thể.
 
 ### Sự biện minh và sự liên kết
 
@@ -102,7 +102,7 @@ Dòng góa phụ (dòng đơn ở đầu trang) và dòng mồ côi (dòng đơn
 
 ## Phần kết luận
 
-Quản lý hiệu quả dấu gạch nối và luồng văn bản là điều cần thiết để tạo tài liệu Word bóng bẩy và thân thiện với người đọc. Với Aspose.Words for Python, bạn có các công cụ để triển khai chiến lược gạch nối, kiểm soát luồng văn bản và nâng cao tính thẩm mỹ tổng thể của tài liệu.
+Quản lý hiệu quả dấu gạch nối và luồng văn bản là điều cần thiết để tạo tài liệu Word bóng bẩy và thân thiện với người đọc. Với Aspose.Words cho Python, bạn có các công cụ để triển khai chiến lược gạch nối, kiểm soát luồng văn bản và nâng cao tính thẩm mỹ tổng thể của tài liệu.
 
  Để biết thêm thông tin chi tiết và ví dụ, hãy tham khảo[Tài liệu API](https://reference.aspose.com/words/python-net/).
 

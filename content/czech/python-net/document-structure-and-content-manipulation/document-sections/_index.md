@@ -80,7 +80,7 @@ doc_builder.write("Content after page break.")
 
 ## Závěr
 
-Závěrem lze říci, že Aspose.Words pro Python umožňuje vývojářům bezproblémově spravovat sekce dokumentu, rozvržení a formátování. Tento výukový program poskytl přehled o vytváření, úpravách sekcí, přizpůsobení rozvržení stránky, práci se záhlavími a zápatími a správě zalomení stránek.
+Na závěr, Aspose.Words pro Python umožňuje vývojářům bezproblémově spravovat sekce dokumentu, rozvržení a formátování. Tento výukový program poskytl informace o vytváření, úpravách sekcí, přizpůsobení rozvržení stránky, práci se záhlavími a zápatím a správě zalomení stránek.
 
 Další informace a podrobné reference API naleznete na adrese[Aspose.Words pro dokumentaci Pythonu](https://reference.aspose.com/words/python-net/).
 

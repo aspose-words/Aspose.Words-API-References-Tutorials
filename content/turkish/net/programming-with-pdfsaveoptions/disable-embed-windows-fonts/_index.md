@@ -15,7 +15,7 @@ Verimli depolama ve hızlı paylaşım için PDF dosyalarının boyutunun küç�
 
 Koda dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--  Aspose.Words for .NET: Henüz yapmadıysanız, şu adresten indirip yükleyin:[İndirme: {link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Henüz yapmadıysanız, şu adresten indirip yükleyin:[İndirme bağlantısı](https://releases.aspose.com/words/net/).
 - .NET Geliştirme Ortamı: Visual Studio popüler bir seçimdir.
 - Örnek Bir Word Belgesi: PDF'ye dönüştürmek istediğiniz bir DOCX dosyanızı hazır bulundurun.
 
@@ -85,4 +85,4 @@ Evet, Aspose.Words for .NET, hangi yazı tiplerinin gömülü olacağını özel
 Evet, Aspose.Words for .NET, PDF'lerdeki yazı tipi gömme seçeneklerini yapılandırmak için gereken işlevselliği sağlar.
 
 ### Sorunla karşılaşırsam nasıl destek alabilirim?
- Ziyaret edebilirsiniz[Destek Forumu](https://forum.aspose.com/c/words/8) Karşılaştığınız herhangi bir sorunla ilgili yardım için.
+ Ziyaret edebilirsiniz[Destek forumu](https://forum.aspose.com/c/words/8) Karşılaştığınız herhangi bir sorunla ilgili yardım için.

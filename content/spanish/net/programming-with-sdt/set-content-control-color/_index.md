@@ -85,7 +85,7 @@ Debería recorrer todos los SDT del documento y aplicar el cambio de color a cad
 
 ### ¿Es posible diferenciar otras propiedades de los SDT además del color?
 
- Sí el`StructuredDocumentTag` La clase tiene varias propiedades que puede configurar, incluido el tamaño de fuente, el estilo de fuente y más. Consulte la documentación de Aspose.Words para obtener más detalles.
+ Sí, el`StructuredDocumentTag` La clase tiene varias propiedades que puede configurar, incluido el tamaño de fuente, el estilo de fuente y más. Consulte la documentación de Aspose.Words para obtener más detalles.
 
 ### ¿Puedo agregar eventos a las SDT, como eventos de clic?
 

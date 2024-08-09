@@ -13,6 +13,6 @@ url: /zh/net/working-with-list/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [在每个部分重新启动列表](./restart-list-at-each-section/)  | 了解如何使用 Aspose.Words for .NET 将编号列表重置为 Word 文档中的各个部分。 |
-| [指定列表级别](./specify-list-level/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中指定列表级别。 |
-| [重启列表号码](./restart-list-number/) | 了解如何使用 Aspose.Words for .NET 重置 Word 文档中列表的编号。 |
+| [在每个部分重新启动列表](./restart-list-at-each-section/)  | 了解如何使用 Aspose.Words for .NET 在 Word 文档的每个部分重新启动列表。按照我们详细的分步指南有效地管理列表。 |
+| [指定列表级别](./specify-list-level/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建多级编号和项目符号列表。包含分步指南。非常适合 .NET 开发人员。 |
+| [重启列表号码](./restart-list-number/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中重新开始列表编号。这份详细的 2000 字指南涵盖了您需要了解的所有内容，从设置到高级自定义。 |

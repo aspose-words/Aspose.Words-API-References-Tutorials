@@ -8,7 +8,7 @@ weight: 11
 url: /cs/python-net/document-combining-and-comparison/document-bookmarks/
 ---
 
-## Úvod
+## Zavedení
 
 dnešní digitální době se práce s velkými dokumenty stala běžným úkolem. Procházení nekonečnými stránkami při hledání konkrétních informací může být časově náročné a frustrující. Záložky dokumentů vám pomohou vytvořit virtuální rozcestníky v dokumentu. Tyto rozcestníky, známé také jako záložky, fungují jako zkratky ke konkrétním sekcím a umožňují vám okamžitě přejít na obsah, který potřebujete.
 
@@ -151,4 +151,4 @@ Absolutně! Ze záložek můžete extrahovat text a další obsah, což je užit
 
 ### Kde mohu získat přístup k dokumentaci Aspose.Words pro Python API?
 
- Dokumentaci k Aspose.Words pro Python API můžete najít na adrese[tady](https://reference.aspose.com/words/python-net/).
+ Dokumentaci k Aspose.Words pro Python API můžete najít na adrese[zde](https://reference.aspose.com/words/python-net/).

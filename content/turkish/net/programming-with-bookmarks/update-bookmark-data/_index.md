@@ -15,7 +15,7 @@ Bir Word belgesindeki belirli bölümleri dinamik olarak güncellemeniz gereken 
 
 Kodun ayrıntılarına girmeden önce gerekli araçların elinizin altında olduğundan emin olalım:
 
--  Aspose.Words for .NET: Bu, Word belgeleriyle programlı olarak çalışmanıza olanak tanıyan güçlü bir kütüphanedir. Aspose web sitesindeki indirme bölümüne gidin[İndirme: {bağlantı](https://releases.aspose.com/words/net/) kopyanızı almak için. - Ücretsiz denemeyi tercih edebilir veya çeşitli lisanslama seçeneklerini keşfedebilirsiniz[link](https://purchase.aspose.com/buy).
+-  Aspose.Words for .NET: Bu, Word belgeleriyle programlı olarak çalışmanıza olanak tanıyan güçlü bir kütüphanedir. Aspose web sitesindeki indirme bölümüne gidin[İndirme bağlantısı](https://releases.aspose.com/words/net/) kopyanızı almak için. - Ücretsiz denemeyi tercih edebilir veya çeşitli lisanslama seçeneklerini keşfedebilirsiniz[bağlantı](https://purchase.aspose.com/buy).
 - .NET Geliştirme Ortamı: Visual Studio, Visual Studio Code veya seçtiğiniz herhangi bir .NET IDE, geliştirme oyun alanınız olarak hizmet verecektir.
 - Örnek Bir Word Belgesi: Biraz metin içeren basit bir Word belgesi ("Bookmarks.docx" gibi) oluşturun ve üzerinde pratik yapmak için bir yer imi ekleyin (bunu nasıl yapacağımızı daha sonra ele alacağız).
 
@@ -79,7 +79,7 @@ bookmark.Name = "RenamedBookmark";
 
 ## 5. Adım: Yer İşareti Metnini Güncelleyin
 
- Şimdi heyecan verici kısım geliyor: yer imiyle ilişkili gerçek içeriğin değiştirilmesi. Aspose.Words doğrudan güncellemenize olanak tanır`Text` mülkiyeti`Bookmark` nesne:
+ Şimdi heyecan verici kısım geliyor: yer imiyle ilişkili gerçek içeriğin değiştirilmesi. Aspose.Words doğrudan güncellemenizi sağlar`Text` mülkiyeti`Bookmark` nesne:
 
 ```csharp
 bookmark.Text = "This is a new bookmarked text.";

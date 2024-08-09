@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/create-chart-using-shape/
 ---
-## introduzione
+## Introduzione
 
 Creare e personalizzare grafici nei tuoi documenti è un'abilità cruciale nel mondo odierno basato sui dati. I grafici possono aiutare a visualizzare i dati, rendendo le informazioni complesse più digeribili. Aspose.Words per .NET è una potente libreria che ti consente di creare e manipolare documenti Word a livello di codice. In questo tutorial ti guideremo attraverso il processo di creazione e personalizzazione di un grafico a linee utilizzando Aspose.Words per .NET. Al termine di questa guida sarai in grado di creare facilmente grafici dall'aspetto professionale.
 
@@ -86,7 +86,7 @@ In questo tutorial, abbiamo spiegato come creare e personalizzare un grafico a l
 
 ### Posso utilizzare Aspose.Words per .NET per creare altri tipi di grafici?
 
- Sì, Aspose.Words per .NET supporta vari tipi di grafici, inclusi grafici a barre, grafici a torta e altro. Puoi esplorare la documentazione[Qui](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ Sì, Aspose.Words per .NET supporta vari tipi di grafici, inclusi grafici a barre, grafici a torta e altro. Puoi esplorare la documentazione[Qui](https://reference.aspose.com/words/net/) per maggiori dettagli
 
 ### Come posso provare Aspose.Words per .NET prima dell'acquisto?
 

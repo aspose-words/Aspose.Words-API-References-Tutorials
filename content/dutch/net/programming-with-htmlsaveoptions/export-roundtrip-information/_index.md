@@ -18,7 +18,7 @@ Voordat we in de moeren en bouten duiken, moeten we ervoor zorgen dat we alles h
 1.  Aspose.Words voor .NET: Zorg ervoor dat je de nieuwste versie hebt.[Download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere C#-compatibele IDE.
 3. Basiskennis van C#: Het helpt om een beetje bekend te zijn met C# en het .NET-framework.
-4. Licentie: U kunt een tijdelijke licentie gebruiken als u niet over een volledige licentie beschikt. Snap je[hier](https://purchase.aspose.com/temporary-license/).
+4. Licentie: U kunt een tijdelijke licentie gebruiken als u niet over een volledige licentie beschikt. Krijg het[hier](https://purchase.aspose.com/temporary-license/).
 
 ## Naamruimten importeren
 

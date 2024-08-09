@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/insert-area-chart/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v tomto podrobném návodu, jak vložit plošný graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás provede vším, co potřebujete vědět, abyste vytvořili úžasné a informativní plošné grafy ve svých dokumentech Word. Pokryjeme předpoklady, ukážeme vám, jak importovat potřebné jmenné prostory, a provedeme vás každým krokem procesu pomocí jasných a snadno pochopitelných pokynů.
 
@@ -15,7 +15,7 @@ Vítejte v tomto podrobném návodu, jak vložit plošný graf do dokumentu apli
 
 Než se do toho pustíme, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 3. IDE: Integrované vývojové prostředí (IDE), jako je Visual Studio, k psaní a spouštění vašeho kódu.
 4. Základní znalost C#: Základní znalost programování v C# bude užitečná.
@@ -98,7 +98,7 @@ Tento řádek kódu uloží dokument do zadaného adresáře s daným názvem so
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste vložili plošný graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato příručka vás provede každým krokem, od nastavení prostředí až po uložení konečného dokumentu. S Aspose.Words for .NET můžete ve svých dokumentech aplikace Word vytvářet širokou škálu grafů a dalších složitých prvků, díky čemuž budou vaše zprávy a prezentace dynamičtější a informativnější.
+Gratuluji! Úspěšně jste vložili plošný graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato příručka vás provede každým krokem, od nastavení prostředí až po uložení konečného dokumentu. S Aspose.Words for .NET můžete ve svých dokumentech aplikace Word vytvářet širokou škálu grafů a dalších složitých prvků, díky čemuž budou vaše zprávy a prezentace dynamičtější a informativnější.
 
 ## FAQ
 
@@ -115,4 +115,4 @@ Ano, do jednoho dokumentu aplikace Word můžete vložit tolik grafů, kolik pot
 Ano, Aspose.Words for .NET podporuje různé typy grafů včetně sloupcových, čárových, koláčových a dalších.
 
 ### Kde mohu získat dočasnou licenci pro Aspose.Words pro .NET?
- Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
+ Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/).

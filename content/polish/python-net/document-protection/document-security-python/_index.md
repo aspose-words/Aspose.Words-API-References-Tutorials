@@ -22,7 +22,7 @@ W dzisiejszym połączonym świecie ryzyko naruszeń danych i cyberataków jest 
 
 ## 3. Wprowadzenie do Aspose.Words dla Pythona
 
-Aspose.Words dla Pythona to potężna biblioteka, która umożliwia programistom programowe tworzenie, edytowanie, konwertowanie i przetwarzanie dokumentów Microsoft Word. Zapewnia szeroką gamę funkcji do pracy z dokumentami Word, w tym funkcje bezpieczeństwa dokumentów, takie jak szyfrowanie, ochrona hasłem i ograniczanie dostępu.
+Aspose.Words dla Pythona to potężna biblioteka, która umożliwia programistom programowe tworzenie, edytowanie, konwertowanie i przetwarzanie dokumentów Microsoft Word. Zapewnia szeroką gamę funkcji do pracy z dokumentami Word, w tym funkcje bezpieczeństwa dokumentów, takie jak szyfrowanie, ochrona hasłem i ograniczenia dostępu.
 
 ## 4. Instalowanie Aspose.Words dla Pythona
 

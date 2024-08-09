@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-section/delete-header-footer-content/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, borci s dokumenty Word! 📝 Stalo se vám někdy, že jste potřebovali vyčistit záhlaví a zápatí v dokumentu aplikace Word, ale uvízli jste v únavném ručním úsilí? No, už se nebojte! S Aspose.Words pro .NET můžete tento úkol automatizovat v několika krocích. Tato příručka vás provede procesem odstranění obsahu záhlaví a zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET. Jste připraveni vyčistit tyto dokumenty? Začněme!
 
@@ -15,7 +15,7 @@ Ahoj, borci s dokumenty Word! 📝 Stalo se vám někdy, že jste potřebovali v
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Stáhněte si nejnovější verzi[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Stáhněte si nejnovější verzi[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE kompatibilní s .NET jako Visual Studio.
 3. Základní znalost C#: Znalost C# vám pomůže pokračovat.
 4. Ukázkový dokument aplikace Word: Připravte si dokument aplikace Word k testování.
@@ -34,7 +34,7 @@ Tento jmenný prostor je nezbytný pro práci s dokumenty aplikace Word pomocí 
 
 Před skokem do kódu se ujistěte, že máte nainstalovanou knihovnu Aspose.Words a připravený vzorový dokument aplikace Word.
 
-1.  Stáhněte a nainstalujte Aspose.Words: Get it[tady](https://releases.aspose.com/words/net/).
+1.  Stáhněte a nainstalujte Aspose.Words: Get it[zde](https://releases.aspose.com/words/net/).
 2. Nastavení projektu: Otevřete Visual Studio a vytvořte nový projekt .NET.
 3. Přidat referenci Aspose.Words: Zahrňte do projektu knihovnu Aspose.Words.
 
@@ -113,4 +113,4 @@ Ano, Aspose.Words podporuje různé formáty Wordu, včetně DOC, DOCX, RTF a da
 
 ### Mohu vyzkoušet Aspose.Words pro .NET zdarma?
 
- Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

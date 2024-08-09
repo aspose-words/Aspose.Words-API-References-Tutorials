@@ -2,119 +2,137 @@
 title: Revize Edilmiş Sürüme Erişim
 linktitle: Revize Edilmiş Sürüme Erişim
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesinin gözden geçirilmiş versiyonuna erişin.
+description: Aspose.Words for .NET kullanarak bir belgenin revize edilmiş sürümüne nasıl erişeceğinizi ve onu nasıl görüntüleyeceğinizi öğrenin. Sorunsuz belge yönetimi için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/access-revised-version/
 ---
+## giriiş
 
-Bu adım adım kılavuzda, Aspose.Words for .NET kullanarak bir Word belgesinin revize edilmiş sürümüne nasıl erişeceğinizi göstereceğiz. Size kaynak kodunun tamamını sağlayacağız ve işaretleme çıktısını nasıl biçimlendireceğinizi göstereceğiz.
+Hiç bir belgenin revize edilmiş sürümüne programlı olarak erişmeniz gerekti mi? İster ortak projeler üzerinde çalışıyor olun, ister yalnızca belge revizyonlarını yönetmeye ihtiyaç duyuyor olun, Aspose.Words for .NET sizin için başvurulacak araçtır. Bu eğitim, ortamınızı ayarlamaktan bir Word belgesindeki revizyonlara erişmeye ve bunları görüntülemeye kadar tüm süreç boyunca size yol gösterecektir. O halde hemen içeri dalalım!
 
-## 1. Adım: Belgeyi yükleme
+## Önkoşullar
 
-İlk adım, revizyonları içeren belgeyi yüklemektir.
+Başlamadan önce birkaç şeye ihtiyacınız olacak:
+
+1.  Aspose.Words for .NET Kütüphanesi: İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya .NET'i destekleyen başka bir IDE.
+3. Temel C# Bilgisi: Bu, kodlama kısmını takip etmenize yardımcı olacaktır.
+
+Sonraki adımlara geçmeden önce bu önkoşulların çözüldüğünden emin olun.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bu, kodunuzun Aspose.Words for .NET kitaplığını tanıdığından emin olmak için çok önemli bir adımdır.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Süreci basit, takip edilmesi kolay adımlara ayıralım.
+
+## 1. Adım: Belge Yolunu Ayarlama
+
+Belgeyle çalışabilmeniz için önce belgenizin bulunduğu yolu belirtmeniz gerekir. Bu, kodun dosyayı bulması ve işlemesi için gereklidir.
+
+```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Adım 2: Belgeyi Yükleme
+
+ Daha sonra belgeyi uygulamanıza yükleyeceksiniz. Bu adım yeni bir tane oluşturmayı içerir`Document` nesneyi oluşturun ve onu belgenizin yolu ile başlatın.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## 3. Adım: Liste Etiketlerini Güncelleme
+
+Belgeniz listeler içeriyorsa liste etiketlerini güncellemeniz önemlidir. Bu, tüm liste öğelerinin doğru şekilde numaralandırılmasını ve biçimlendirilmesini sağlar.
+
+```csharp
 doc.UpdateListLabels();
 ```
 
-## 2. Adım: Gözden geçirilmiş sürüme erişin
+## Adım 4: Revize Edilmiş Sürüme Geçiş
 
-Şimdi belgenin revize edilmiş versiyonuna geçeceğiz.
-
-```csharp
-doc.RevisionsView = RevisionsView.Final;
-```
-
-## 3. Adım: Düzeltmelere göz atın
-
-Daha sonra, belgede bulunan düzeltmeler arasında geçiş yapacağız ve liste öğesi olan paragraflara ilişkin belirli bilgileri görüntüleyeceğiz.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-     if (revision.ParentNode.NodeType == NodeType.Paragraph)
-     {
-         Paragraph paragraph = (Paragraph)revision.ParentNode;
-         if (paragraph.IsListItem)
-         {
-             Console.WriteLine(paragraph.ListLabel.LabelString);
-             Console.WriteLine(paragraph.ListFormat.ListLevel);
-         }
-     }
-}
-```
-
-### Aspose.Words for .NET kullanılarak Revize Edilmiş Sürüme Erişim için örnek kaynak kodu
-
-Aspose.Words for .NET kullanarak bir belgenin revize edilmiş versiyonuna erişmek için tam kaynak kodu:
-
-```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-doc.UpdateListLabels();
-
-// Belgenin revize edilmiş sürümüne geçin.
-doc.RevisionsView = RevisionsView.Final;
-
-foreach (Revision revision in doc.Revisions)
-{
-	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
-	 {
-		 Paragraph paragraph = (Paragraph)revision.ParentNode;
-		 if (paragraph.IsListItem)
-		 {
-			 Console.WriteLine(paragraph.ListLabel.LabelString);
-			 Console.WriteLine(paragraph.ListFormat.ListLevel);
-		 }
-	 }
-}
-```
-
-## Çözüm
-
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin revize edilmiş versiyonuna nasıl erişeceğimizi öğrendik. Belgeyi yükleyerek, revize edilmiş versiyona giderek ve revizyonlara göz atarak, liste öğesi olan paragraflar için özel bilgiler elde edebildik. Aspose.Words for .NET, incelemelere erişim de dahil olmak üzere Word belgelerini yönetmek için güçlü özellikler sunar. Artık bu bilgiyi Aspose.Words for .NET kullanarak kendi Word belgelerinizin revize edilmiş versiyonuna erişmek için kullanabilirsiniz.
-
-### SSS'ler
-
-#### S: Revizyonları olan bir belgeyi Aspose.Words for .NET'e nasıl yüklerim?
-
- C: Kullan`Document` Revizyonları içeren bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirtebilirsiniz.
-
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
-
-#### S: Aspose.Words for .NET'te bir belgenin revize edilmiş versiyonuna nasıl erişebilirim?
-
- C: Kullan`RevisionsView` mülkiyeti`Document` belgenin revize edilmiş sürümüne erişme nesnesi. Değerini ayarlayabilirsiniz`RevisionsView`mülkiyet`RevisionsView.Final` revizyonlar olmadan son sürümü göstermek için.
+Şimdi belgenin revize edilmiş versiyonuna geçelim. Revizyonlara erişmek ve görüntülemek istiyorsanız bu adım çok önemlidir.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### S: Aspose.Words for .NET'te belge revizyonlarına nasıl göz atabilirim?
+## Adım 5: Revizyonlar Yoluyla Yineleme
 
-C: Bir`foreach` Belgede mevcut revizyonlar arasında yineleme yapmak için döngü. Şunu kullanabilirsiniz:`Revisions` mülkiyeti`Document` Belgenin tüm revizyonlarının bir koleksiyonunu almak için itiraz edin.
+ Revizyonlara erişmek için,`Revisions` belgenin toplanması. Bu adım bir kullanmayı içerir`foreach` Her revizyondan geçmek için döngü.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     // Her revizyonu burada işleyin
+    // Ek kod buraya gelecek
 }
 ```
 
-#### S: Aspose.Words for .NET'te bir paragrafın liste öğesi olup olmadığı nasıl kontrol edilir?
+## Adım 6: Ana Düğüm Türünün Kontrol Edilmesi
 
- C: Kullan`IsListItem` mülkiyeti`Paragraph` Bir paragrafın bir liste öğesi olup olmadığını kontrol etmek için nesne.`IsListItem` mülk iadeleri`true` paragraf bir liste öğesi ise, aksi halde şunu döndürür:`false`.
+ Her revizyon için üst düğümün türünde olup olmadığını kontrol edin`Paragraph`. Bu önemlidir çünkü revizyonu içeren paragrafa erişmek istiyoruz.
+
+```csharp
+if (revision.ParentNode.NodeType == NodeType.Paragraph)
+{
+    // Ek kod buraya gelecek
+}
+```
+
+## Adım 7: Paragrafa Erişim
+
+ Ana düğümün bir paragraf olduğunu doğruladıktan sonra onu bir`Paragraph` nesne. Bu adım paragraf ve özellikleriyle çalışmanıza olanak tanır.
+
+```csharp
+Paragraph paragraph = (Paragraph)revision.ParentNode;
+```
+
+## Adım 8: Paragrafın Liste Öğesi Olup Olmadığının Kontrol Edilmesi
+
+Daha sonra paragrafın bir liste öğesi olup olmadığını kontrol edin. Bu önemlidir çünkü liste öğelerinin erişmemiz gereken belirli özellikleri vardır.
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     // Paragraf bir liste öğesidir
-}
-else
-{
-     // Paragraf bir liste öğesi değil
+    // Ek kod buraya gelecek
 }
 ```
+
+## Adım 9: Liste Etiketini ve Düzeyini Görüntüleme
+
+Son olarak paragrafın liste etiketini ve liste düzeyini görüntüleyin. Bu adım, liste öğesi hakkında numaralandırma ve girinti düzeyi gibi yararlı bilgiler sağlar.
+
+```csharp
+Console.WriteLine(paragraph.ListLabel.LabelString);
+Console.WriteLine(paragraph.ListFormat.ListLevel);
+```
+
+## Çözüm
+
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir belgenin revize edilmiş sürümüne başarıyla eriştiniz. Bu adımları izleyerek belge revizyonlarını kolaylıkla yönetebilir ve görüntüleyebilirsiniz. İster ortak projelerle uğraşıyor olun, ister sadece değişiklikleri takip etmek istiyor olun, Aspose.Words for .NET yanınızdadır.
+
+## SSS'ler
+
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza, düzenlemenize ve değiştirmenize olanak tanıyan güçlü bir kitaplıktır.
+
+### Herhangi bir Word belgesindeki revizyonlara erişebilir miyim?
+Evet, belgede revizyonlar olduğu sürece Aspose.Words for .NET'i kullanarak bunlara erişebilirsiniz.
+
+### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
+ Evet, lisans alabilirsiniz[Burada](https://purchase.aspose.com/buy) . Ayrıca bir teklif sunuyorlar[ücretsiz deneme](https://releases.aspose.com/) ve bir[geçici lisans](https://purchase.aspose.com/temporary-license/).
+
+### Aspose.Words for .NET tüm .NET sürümleriyle uyumlu mu?
+Aspose.Words for .NET, çok çeşitli .NET sürümleriyle uyumludur. Daha fazla ayrıntıyı şurada bulabilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/).
+
+### Aspose.Words for .NET için nereden destek alabilirim?
+ Aspose topluluğundan destek alabilirsiniz.[forum](https://forum.aspose.com/c/words/8).

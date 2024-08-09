@@ -117,7 +117,7 @@ Nachdem Sie nun den Einsatz von Fußnoten und Endnoten kennengelernt haben, kön
 Fußnoten erscheinen unten auf der Seite, während Endnoten am Ende eines Abschnitts oder des Dokuments gesammelt werden.
 
 ### 2. Wie kann ich die Position von Fußnoten oder Endnoten ändern?
- Du kannst den ... benutzen`setPosition` Methode zum Ändern der Position von Fußnoten oder Endnoten.
+ Sie können die`setPosition` Methode zum Ändern der Position von Fußnoten oder Endnoten.
 
 ### 3. Kann ich die Formatierung von Fußnoten und Endnoten anpassen?
 Ja, Sie können die Formatierung von Fußnoten und Endnoten mit Aspose.Words für Java anpassen.

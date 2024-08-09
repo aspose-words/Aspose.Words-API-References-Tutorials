@@ -2,57 +2,72 @@
 title: Quy tắc ngang
 linktitle: Quy tắc ngang
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn quy tắc ngang với Hướng dẫn từng bước của Aspose.Words for .NET.
+description: Tìm hiểu cách thêm quy tắc ngang trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước này để nâng cao bố cục tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/working-with-markdown/horizontal-rule/
 ---
+## Giới thiệu
 
-Trong ví dụ này, chúng tôi sẽ hướng dẫn bạn cách sử dụng tính năng quy tắc ngang với Aspose.Words cho .NET. Quy tắc ngang được sử dụng để phân tách trực quan các phần của tài liệu.
+Bạn đã bao giờ muốn thêm nét chuyên nghiệp vào tài liệu Word của mình chưa? Quy tắc ngang, còn được gọi là đường ngang, là một cách tuyệt vời để chia nhỏ các phần và làm cho nội dung của bạn trông gọn gàng và có tổ chức. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể dễ dàng chèn các quy tắc ngang vào tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng để làm cho tài liệu của bạn nổi bật? Hãy bắt đầu!
 
-## Bước 1: Sử dụng trình tạo tài liệu
+## Điều kiện tiên quyết
 
-Đầu tiên, chúng tôi sẽ sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu của mình.
+Trước khi chúng ta chuyển sang hướng dẫn từng bước, hãy đảm bảo bạn có mọi thứ mình cần.
+
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Nếu chưa có, bạn có thể tải xuống từ[trang web giả định](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Bạn sẽ cần thiết lập môi trường phát triển .NET trên máy của mình. Visual Studio là một lựa chọn tuyệt vời.
+- Kiến thức cơ bản về C#: Hướng dẫn này giả sử bạn có hiểu biết cơ bản về C# và .NET.
+
+## Nhập không gian tên
+
+Để bắt đầu, hãy đảm bảo bạn đã nhập các không gian tên cần thiết vào dự án C# của mình:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Bây giờ, hãy chia nhỏ quy trình thêm quy tắc ngang thành các bước đơn giản, dễ thực hiện.
+
+## Bước 1: Khởi tạo tài liệu
+
+Trước tiên, bạn cần khởi tạo một tài liệu mới và trình tạo tài liệu. Trình tạo tài liệu là nhân tố chính ở đây vì nó cho phép bạn thêm nội dung vào tài liệu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
+
+Thao tác này sẽ thiết lập một tài liệu mới nơi chúng ta sẽ thêm quy tắc theo chiều ngang.
 
 ## Bước 2: Chèn thước ngang
 
- Chúng ta có thể chèn một thước ngang bằng cách sử dụng`InsertHorizontalRule` phương pháp của trình tạo tài liệu.
+Bây giờ đến phần thú vị – chèn thước ngang. Với trình tạo tài liệu, việc này dễ dàng như ăn bánh.
 
 ```csharp
-builder. InsertHorizontalRule();
-```
-
-## Mã nguồn mẫu cho quy tắc ngang với Aspose.Words for .NET
-
-```csharp
-// Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.
-DocumentBuilder builder = new DocumentBuilder();
-
-// Chèn quy tắc ngang.
+// Chèn quy tắc ngang
 builder.InsertHorizontalRule();
 ```
 
-Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng quy tắc ngang với Aspose.Words cho .NET.
+Và thế là xong! Bạn vừa thêm quy tắc ngang vào tài liệu của mình.
 
+## Phần kết luận
 
-### Câu hỏi thường gặp
+Việc thêm quy tắc ngang vào tài liệu Word của bạn bằng Aspose.Words cho .NET cực kỳ đơn giản. Chỉ với một vài dòng mã, bạn có thể cải thiện hình thức tài liệu của mình, khiến chúng trở nên chuyên nghiệp và dễ đọc hơn. Vì vậy, lần tới khi bạn muốn thêm một chút tinh tế vào tài liệu của mình, hãy nhớ thủ thuật đơn giản nhưng mạnh mẽ này.
 
-#### Câu hỏi: Làm cách nào để tạo thước ngang trong Markdown?
+## Câu hỏi thường gặp
 
-Trả lời: Để tạo thước ngang trong Markdown, bạn có thể sử dụng một trong các ký hiệu sau trên một dòng trống: ba dấu hoa thị (\***), ba dấu gạch ngang (\---), hoặc ba dấu gạch dưới (\___).
+### Quy tắc ngang là gì?
+Quy tắc ngang là một đường kéo dài theo chiều rộng của một trang hoặc phần, được sử dụng để phân tách nội dung để dễ đọc và sắp xếp tốt hơn.
 
-#### Câu hỏi: Tôi có thể tùy chỉnh giao diện của thước ngang trong Markdown không?
+### Tôi có thể tùy chỉnh hình thức của thước ngang không?
+Có, Aspose.Words cho phép bạn tùy chỉnh kiểu, chiều rộng, chiều cao và căn chỉnh của quy tắc ngang.
 
-Trả lời: Trong Markdown tiêu chuẩn, không có cách nào để tùy chỉnh giao diện của thước ngang. Tuy nhiên, một số trình chỉnh sửa và tiện ích mở rộng Markdown nâng cao cung cấp các tính năng tùy chỉnh bổ sung.
+### Tôi có cần bất kỳ công cụ đặc biệt nào để sử dụng Aspose.Words cho .NET không?
+Bạn cần một môi trường phát triển .NET như Visual Studio và một bản sao Aspose.Words cho .NET.
 
-#### Câu hỏi: Tất cả các trình soạn thảo Markdown có hỗ trợ thước ngang không?
+### Aspose.Words cho .NET có miễn phí không?
+ Aspose.Words for .NET là một sản phẩm trả phí, nhưng bạn có thể nhận được[dùng thử miễn phí](https://releases.aspose.com/) hoặc một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 
-Trả lời: Có, hầu hết các trình soạn thảo Markdown phổ biến đều hỗ trợ thước ngang. Tuy nhiên, tốt nhất bạn nên kiểm tra tài liệu của nhà cung cấp cụ thể để đảm bảo tài liệu đó được hỗ trợ.
-
-#### Câu hỏi: Tôi có thể tạo những yếu tố nào khác trong Markdown?
-
-Trả lời: Ngoài thước ngang, bạn có thể tạo tiêu đề, đoạn văn, danh sách, liên kết, hình ảnh, bảng, v.v. trong Markdown.
+### Tôi có thể nhận hỗ trợ cho Aspose.Words cho .NET ở đâu?
+ Bạn có thể nhận được sự hỗ trợ từ[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).

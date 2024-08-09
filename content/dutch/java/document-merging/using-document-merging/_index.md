@@ -2,7 +2,7 @@
 title: Documenten samenvoegen gebruiken
 linktitle: Documenten samenvoegen gebruiken
 second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer hoe u Word-documenten naadloos kunt samenvoegen met Aspose.Words voor Java. Combineer, formatteer en handel conflicten efficiënt af in slechts een paar stappen. Begin nu!
+description: Leer hoe u Word-documenten naadloos kunt samenvoegen met Aspose.Words voor Java. Combineer, formatteer en handel conflicten efficiënt af in slechts een paar stappen. Ga nu aan de slag!
 type: docs
 weight: 10
 url: /nl/java/document-merging/using-document-merging/
@@ -165,7 +165,7 @@ public class DocumentMerger {
 }
 ```
 
- Door het gebruiken van`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words behoudt stijlen die verschillen tussen de bron- en doeldocumenten, waardoor conflicten op een elegante manier worden opgelost.
+ Door te gebruiken`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words behoudt stijlen die verschillen tussen de bron- en doeldocumenten, waardoor conflicten op een elegante manier worden opgelost.
 
 ## 9. Beste praktijken voor het samenvoegen van documenten
 

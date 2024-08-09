@@ -9,7 +9,7 @@ url: /fr/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## Introduction
 
-Avez-vous déjà essayé de fusionner des documents Word et vous êtes-vous embrouillé avec le formatage ? C'est comme essayer de mélanger de l'huile et de l'eau parfois, n'est-ce pas ? Eh bien, aujourd'hui, nous plongeons dans une astuce intéressante utilisant Aspose.Words pour .NET qui vous évitera ce mal de tête. Nous apprendrons comment importer des listes d'un document à un autre sans gâcher la numérotation et les styles. Prêt à vous simplifier la vie ? Commençons!
+Avez-vous déjà essayé de fusionner des documents Word et vous êtes-vous embrouillé avec le formatage ? C'est comme essayer de mélanger de l'huile et de l'eau parfois, n'est-ce pas ? Eh bien, aujourd'hui, nous plongeons dans une astuce intéressante utilisant Aspose.Words pour .NET qui vous évitera ce mal de tête. Nous apprendrons comment importer des listes d'un document à un autre sans gâcher la numérotation et les styles. Prêt à vous simplifier la vie ? Commençons !
 
 ## Conditions préalables
 
@@ -19,7 +19,7 @@ Avant de nous lancer dans la magie, assurons-nous que vous disposez de tout ce d
 2. Visual Studio : n'importe quelle version récente fera l'affaire.
 3. Une compréhension de base de C# : vous n'avez pas besoin d'être un assistant, mais une certaine familiarité vous aidera.
 
- Assurez-vous que Aspose.Words est installé et configuré dans votre projet. Si vous ne savez pas comment procéder, le[Documentation](https://reference.aspose.com/words/net/) est un excellent point de départ.
+ Assurez-vous que Aspose.Words est installé et configuré dans votre projet. Si vous ne savez pas comment procéder, le[documentation](https://reference.aspose.com/words/net/) est un excellent point de départ.
 
 ## Importer des espaces de noms
 
@@ -74,7 +74,7 @@ Vous avez fusionné avec succès deux documents, en gardant les listes intactes.
 
 ## Conclusion
 
-Voilà! Fusionner des documents sans perdre la tête face aux problèmes de formatage est un jeu d'enfant avec Aspose.Words pour .NET. Que vous travailliez sur un gros projet ou que vous ayez simplement besoin de ranger certains fichiers, cette méthode gardera vos listes nettes. Alors la prochaine fois que vous serez confronté à un dilemme lié à la fusion de documents, n'oubliez pas ce guide et abordez-le comme un pro !
+Et voilà ! Fusionner des documents sans perdre la tête face aux problèmes de formatage est un jeu d'enfant avec Aspose.Words pour .NET. Que vous travailliez sur un gros projet ou que vous ayez simplement besoin de ranger certains fichiers, cette méthode gardera vos listes nettes. Alors la prochaine fois que vous serez confronté à un dilemme lié à la fusion de documents, n'oubliez pas ce guide et abordez-le comme un pro !
 
 ## FAQ
 
@@ -82,7 +82,7 @@ Voilà! Fusionner des documents sans perdre la tête face aux problèmes de form
 Aspose.Words for .NET est une bibliothèque puissante permettant de travailler avec des documents Word par programmation. Il vous permet de créer, modifier et convertir des documents dans différents formats.
 
 ### Comment installer Aspose.Words pour .NET ?
- Vous pouvez le télécharger depuis le[site web](https://releases.aspose.com/words/net/) et suivez les instructions d'installation dans le[Documentation](https://reference.aspose.com/words/net/).
+ Vous pouvez le télécharger depuis le[site web](https://releases.aspose.com/words/net/) et suivez les instructions d'installation dans le[documentation](https://reference.aspose.com/words/net/).
 
 ### Puis-je utiliser Aspose.Words gratuitement ?
  Aspose.Words propose un[essai gratuit](https://releases.aspose.com/) avec des fonctionnalités limitées. Pour un accès complet, vous devrez acheter une licence[ici](https://purchase.aspose.com/buy).

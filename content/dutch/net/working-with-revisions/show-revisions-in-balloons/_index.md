@@ -2,94 +2,90 @@
 title: Toon revisies in ballonnen
 linktitle: Toon revisies in ballonnen
 second_title: Aspose.Words-API voor documentverwerking
-description: Toon revisies in ballonnen met Aspose.Words voor .NET.
+description: Leer hoe u revisies in ballonnen kunt weergeven met Aspose.Words voor .NET. Deze gedetailleerde handleiding begeleidt u bij elke stap en zorgt ervoor dat uw documentwijzigingen duidelijk en overzichtelijk zijn.
 type: docs
 weight: 10
 url: /nl/net/working-with-revisions/show-revisions-in-balloons/
 ---
+## Invoering
 
-In deze stapsgewijze handleiding laten we u zien hoe u revisies in ballonnen in een Word-document kunt weergeven met Aspose.Words voor .NET. We voorzien u van de volledige broncode en laten u zien hoe u de markdown-uitvoer kunt formatteren.
+Het bijhouden van wijzigingen in een Word-document is cruciaal voor samenwerking en bewerking. Aspose.Words voor .NET biedt robuuste tools om deze revisies te beheren, waardoor duidelijkheid en beoordelingsgemak wordt gegarandeerd. Deze handleiding helpt u revisies in ballonnen weer te geven, zodat u gemakkelijker kunt zien welke wijzigingen zijn aangebracht en door wie.
 
-## Stap 1: Het document laden
+## Vereisten
 
-De eerste stap is het uploaden van het document met de revisies.
+Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+-  Aspose.Words voor .NET-bibliotheek. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+-  Een geldige Aspose-licentie. Als u er geen heeft, kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
+- Visual Studio of een andere IDE die .NET-ontwikkeling ondersteunt.
+- Basiskennis van C# en .NET-framework.
 
-## Stap 2: Configureer opties voor beoordelingsweergave
+## Naamruimten importeren
 
-We zullen de weergaveopties configureren om revisies zichtbaar te maken in ballonnen.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-```
-
-## Stap 3: Sla het document op in PDF-formaat
-
-Ten slotte slaan we het document op als PDF, waarbij de revisies in ballonnen worden weergegeven.
+Laten we eerst de benodigde naamruimten in uw C#-project importeren. Deze naamruimten zijn essentieel voor toegang tot de Aspose.Words-functionaliteiten.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
+using Aspose.Words.RevisionOptions;
 ```
 
-## Markdown-uitvoerformaten
+Laten we het proces opsplitsen in eenvoudige, gemakkelijk te volgen stappen.
 
-De uitvoer kan in markdown worden opgemaakt om de leesbaarheid te verbeteren. Bijvoorbeeld :
+## Stap 1: Laad uw document
 
-```markdown
-- Revisions are Showed in bubbles with revision bars on the right side.
-```
-
-### Voorbeeldbroncode voor Show Revisions In Balloons met Aspose.Words voor .NET
-
-Hier is de volledige broncode om revisies in ballonnen in een document weer te geven met Aspose.Words voor .NET:
+Eerst moeten we het document laden dat de revisies bevat. Zorg ervoor dat uw documentpad correct is.
 
 ```csharp
 // Het pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(MyDir + "Revisions.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+## Stap 2: Revisieopties configureren
+
+Vervolgens configureren we de revisieopties om inline revisies in te voegen en revisies te verwijderen en op te maken in ballonnen. Dit maakt het gemakkelijker om onderscheid te maken tussen verschillende soorten revisies.
+
+```csharp
 // Rendert revisies inline in, verwijdert en formatteert revisies in ballonnen.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+```
+
+## Stap 3: Stel de positie van de revisiebalken in
+
+Om het document nog leesbaarder te maken, kunnen we de positie van de revisiebalken instellen. In dit voorbeeld plaatsen we ze aan de rechterkant van de pagina.
+
+```csharp
 // Rendert revisiebalken aan de rechterkant van een pagina.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+```
 
+## Stap 4: Sla het document op
+
+Ten slotte slaan we het document op als PDF. Hierdoor kunnen we de herzieningen in het gewenste formaat bekijken.
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u revisies in ballonnen in een Word-document kunt weergeven met behulp van Aspose.Words voor .NET. Door de juiste weergaveopties te gebruiken, konden we de revisies zichtbaar maken in bellen met revisiebalken aan de rechterkant. Aspose.Words voor .NET biedt veel krachtige functies voor het manipuleren van Word-documenten, inclusief revisiebeheer. Nu kunt u deze kennis gebruiken om revisies in ballonnen in uw eigen Word-documenten weer te geven met behulp van Aspose.Words voor .NET.
+En daar heb je het! Door deze eenvoudige stappen te volgen, kunt u eenvoudig revisies in ballonnen weergeven met Aspose.Words voor .NET. Dit maakt het beoordelen van en samenwerken aan documenten een fluitje van een cent, en zorgt ervoor dat alle wijzigingen duidelijk zichtbaar en georganiseerd zijn. Veel codeerplezier!
 
+## Veelgestelde vragen
 
-### Veelgestelde vragen
+### Kan ik de kleur van de revisiebalken aanpassen?
+Ja, met Aspose.Words kunt u de kleur van de revisiebalken aanpassen aan uw voorkeuren.
 
-#### Vraag: Hoe upload ik een document in Aspose.Words voor .NET?
+### Is het mogelijk om alleen specifieke typen revisies in ballonnen weer te geven?
+Absoluut. U kunt Aspose.Words configureren om alleen bepaalde soorten revisies, zoals verwijderingen of opmaakwijzigingen, in ballonnen weer te geven.
 
- EEN: Gebruik de`Document` klasse van Aspose.Words voor .NET om een document uit een bestand te laden. U kunt het volledige documentpad opgeven.
+### Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
+ U kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Kan ik Aspose.Words voor .NET gebruiken met andere programmeertalen?
+Aspose.Words is voornamelijk ontworpen voor .NET, maar u kunt het gebruiken met elke door .NET ondersteunde taal, inclusief VB.NET en C++/CLI.
 
-#### Vraag: Hoe kan ik revisies in ballonnen weergeven met Aspose.Words voor .NET?
-
- EEN: Gebruik de`ShowInBalloons` eigendom van de`RevisionOptions` object om de weergave van revisies in ballonnen te configureren. U kunt deze eigenschap inschakelen`ShowInBalloons.FormatAndDelete` om revisies in ballonnen weer te geven met verwijderings- en opmaakrevisies.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-```
-
-#### Vraag: Hoe kan ik een document in PDF-formaat opslaan met Aspose.Words voor .NET?
-
- EEN: Gebruik de`Save` werkwijze van de`Document` object om het document in PDF-formaat op te slaan. U moet het volledige bestemmingspad opgeven met de extensie ".pdf".
-
-```csharp
-doc.Save("path/to/destination/document.pdf");
-```
+### Ondersteunt Aspose.Words naast Word ook andere documentformaten?
+Ja, Aspose.Words ondersteunt verschillende documentformaten, waaronder PDF, HTML, EPUB en meer.

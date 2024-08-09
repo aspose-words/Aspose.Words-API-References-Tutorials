@@ -36,7 +36,7 @@ public void getFootnoteOptions(){
 
 ## 4. Voetnootopties wijzigen
 
-U kunt voetnootopties wijzigen om het uiterlijk en gedrag ervan aan te passen. Hier is hoe:
+U kunt voetnootopties wijzigen om het uiterlijk en gedrag ervan aan te passen. Hier ziet u hoe:
 ```java
 @Test
 public void setFootnoteAndEndNotePosition() throws Exception {
@@ -111,7 +111,7 @@ In deze zelfstudie hebben we onderzocht hoe u met voetnoten en eindnoten kunt we
 
 Nu u hebt geleerd hoe u voetnoten en eindnoten moet gebruiken, kunt u de documentopmaak verbeteren en uw inhoud professioneler maken.
 
-### Veel Gestelde Vragen
+### Veelgestelde vragen
 
 ### 1. Wat is het verschil tussen voetnoten en eindnoten?
 Voetnoten verschijnen onderaan de pagina, terwijl eindnoten aan het einde van een sectie of het document worden verzameld.

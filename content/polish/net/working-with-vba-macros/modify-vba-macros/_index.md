@@ -9,13 +9,13 @@ url: /pl/net/working-with-vba-macros/modify-vba-macros/
 ---
 ## Wstęp
 
-Witajcie drodzy programiści i entuzjaści automatyzacji dokumentów! Czy jesteś gotowy, aby przenieść grę z dokumentami Word na wyższy poziom? Dzisiaj zagłębiamy się w fascynujący świat makr VBA (Visual Basic for Applications) w dokumentach Word. W szczególności przyjrzymy się, jak modyfikować istniejące makra VBA za pomocą Aspose.Words dla .NET. Ta potężna biblioteka ułatwia automatyzację zadań, dostosowywanie dokumentów, a nawet dostosowywanie tych irytujących makr. Niezależnie od tego, czy chcesz zaktualizować swoje makra, czy po prostu ciekawi Cię ten proces, w tym samouczku znajdziesz wszystko. Więc zacznijmy!
+Witajcie drodzy programiści i entuzjaści automatyzacji dokumentów! Czy jesteś gotowy, aby przenieść grę z dokumentami Word na wyższy poziom? Dzisiaj zagłębiamy się w fascynujący świat makr VBA (Visual Basic for Applications) w dokumentach Word. W szczególności przyjrzymy się, jak modyfikować istniejące makra VBA za pomocą Aspose.Words dla .NET. Ta potężna biblioteka ułatwia automatyzację zadań, dostosowywanie dokumentów, a nawet dostosowywanie tych irytujących makr. Niezależnie od tego, czy chcesz zaktualizować swoje makra, czy po prostu ciekawi Cię ten proces, w tym samouczku znajdziesz wszystko. Więc zaczynajmy!
 
 ## Warunki wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Środowisko programistyczne .NET, takie jak Visual Studio, jest niezbędne do pisania i testowania kodu.
 3. Podstawowa znajomość języka C#: Podstawowa znajomość języka C# pomoże Ci śledzić fragmenty kodu.
 4.  Przykładowy dokument Word: Masz plik a[Dokument Worda](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) z gotowymi istniejącymi makrami VBA. To będzie nasz obiekt testowy do modyfikowania makr.

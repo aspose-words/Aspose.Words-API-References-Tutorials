@@ -10,7 +10,7 @@ url: /ar/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## مقدمة لإضافة محتوى باستخدام DocumentBuilder في Aspose.Words لـ Java
 
-في هذا الدليل التفصيلي، سنستكشف كيفية استخدام Aspose.Words for DocumentBuilder الخاص بـ Java لإضافة أنواع مختلفة من المحتوى إلى مستند Word. سنغطي إدراج النص والجداول والقواعد الأفقية وحقول النموذج وHTML والارتباطات التشعبية وجدول المحتويات والصور المضمنة والعائمة والفقرات والمزيد. هيا بنا نبدأ!
+في هذا الدليل التفصيلي، سنستكشف كيفية استخدام Aspose.Words for DocumentBuilder الخاص بـ Java لإضافة أنواع مختلفة من المحتوى إلى مستند Word. سنغطي إدراج النص والجداول والقواعد الأفقية وحقول النموذج وHTML والارتباطات التشعبية وجدول المحتويات والصور المضمنة والعائمة والفقرات والمزيد. دعونا نبدأ!
 
 ## المتطلبات الأساسية
 
@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## الخطوة 10: تحريك المؤشر
 
- يمكنك التحكم في موضع المؤشر داخل المستند باستخدام طرق مختلفة مثل`moveToParagraph`, `moveToCell`، و اكثر. هنا مثال:
+ يمكنك التحكم في موضع المؤشر داخل المستند باستخدام طرق مختلفة مثل`moveToParagraph`, `moveToCell`وأكثر من ذلك. هنا مثال:
 
 ```java
 Document doc = new Document();
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### س: كيف يمكنني تحريك المؤشر إلى موقع محدد داخل المستند؟
 
- ج: يمكنك التحكم في موضع المؤشر باستخدام طرق مثل`moveToParagraph`, `moveToCell`، و اكثر. هنا مثال:
+ ج: يمكنك التحكم في موضع المؤشر باستخدام طرق مثل`moveToParagraph`, `moveToCell`وأكثر من ذلك. هنا مثال:
 
 ```java
 Document doc = new Document();

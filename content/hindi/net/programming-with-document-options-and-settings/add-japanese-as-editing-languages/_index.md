@@ -99,7 +99,7 @@ Console.WriteLine(
  हां, आपको व्यावसायिक उपयोग के लिए लाइसेंस की आवश्यकता है। आप इसे खरीद सकते हैं[यहाँ](https://purchase.aspose.com/buy) या अस्थायी लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET में अन्य क्या विशेषताएं हैं?
- Aspose.Words for .NET दस्तावेज़ निर्माण, रूपांतरण, हेरफेर, और अधिक सहित सुविधाओं की एक विस्तृत श्रृंखला प्रदान करता है।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए।
+ Aspose.Words for .NET दस्तावेज़ निर्माण, रूपांतरण, हेरफेर, और अधिक सहित सुविधाओं की एक विस्तृत श्रृंखला प्रदान करता है।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए.
 
 ### क्या मैं इसे खरीदने से पहले .NET के लिए Aspose.Words आज़मा सकता हूँ?
  बिलकुल! आप एक निःशुल्क परीक्षण डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/).

@@ -95,7 +95,7 @@ Bu satır, belgeyi daha önce tanımladığımız dizine belirtilen adla kaydede
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesine başarılı bir şekilde yer işareti eklediniz. Bu küçük bir adım gibi görünebilir ancak belge otomasyonu alanında güçlü bir araçtır. Yer işaretleriyle gezinmesi kolay, dinamik ve etkileşimli belgeler oluşturabilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesine başarılı bir şekilde yer işareti eklediniz. Bu küçük bir adım gibi görünebilir ancak belge otomasyonu alanında güçlü bir araçtır. Yer işaretleriyle gezinmesi kolay, dinamik ve etkileşimli belgeler oluşturabilirsiniz.
 
 ## SSS'ler
 

@@ -101,4 +101,4 @@ Você precisará navegar pela árvore de nós do documento para acessar tabelas 
 
 ### Existe uma versão de teste disponível?
 
- Sim, você pode obter um[teste grátis](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/) para experimentar o Aspose.Words para .NET.
+ Sim, você pode obter um[teste gratuito](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/) para experimentar o Aspose.Words para .NET.

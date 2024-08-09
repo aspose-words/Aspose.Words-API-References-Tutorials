@@ -9,7 +9,7 @@ url: /sv/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 ## Introduktion
 
-Har du någonsin försökt att manipulera former i dina Word-dokument och undrat över deras exakta dimensioner? Att känna till de exakta gränserna för former kan vara avgörande för olika dokumentredigerings- och formateringsuppgifter. Oavsett om du skapar en detaljerad rapport, ett snyggt nyhetsbrev eller ett sofistikerat flygblad, säkerställer att du förstår formdimensionerna att din design ser helt rätt ut. I den här guiden kommer vi att dyka in i hur man får de faktiska gränserna för former i punkter med Aspose.Words för .NET. Är du redo att göra dina former bildperfekta? Låt oss börja!
+Har du någonsin försökt att manipulera former i dina Word-dokument och undrat över deras exakta dimensioner? Att känna till de exakta gränserna för former kan vara avgörande för olika dokumentredigerings- och formateringsuppgifter. Oavsett om du skapar en detaljerad rapport, ett snyggt nyhetsbrev eller ett sofistikerat flygblad, säkerställer att du förstår formdimensionerna att din design ser helt rätt ut. I den här guiden kommer vi att dyka in i hur man får de faktiska gränserna för former i punkter med Aspose.Words för .NET. Är du redo att göra dina former bildperfekta? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -48,7 +48,7 @@ Låt oss sedan infoga en bild i dokumentet. Den här bilden kommer att fungera s
 Shape shape = builder.InsertImage("YOUR DOCUMENT DIRECTORY/Transparent background logo.png");
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY/Transparent background logo.png"` med sökvägen till din bildfil. Denna linje infogar bilden i dokumentet som en form.
+ Ersätta`"YOUR DOCUMENT DIRECTORY/Transparent background logo.png"` med sökvägen till din bildfil. Denna linje infogar bilden i dokumentet som en form.
 
 ## Steg 3: Lås upp bildförhållande
 

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /th/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## การแนะนำ
 
 หากคุณกำลังทำงานกับเอกสารใน .NET และใช้ Aspose.Words การจัดการแหล่งแบบอักษรอาจเป็นสิ่งสำคัญในการทำให้เอกสารของคุณมีลักษณะตามที่คาดหวัง Aspose.Words นำเสนอวิธีที่มีประสิทธิภาพในการจัดการแบบอักษร รวมถึงการใช้สตรีมทรัพยากร ในคู่มือนี้ เราจะอธิบายการใช้สตรีมทรัพยากรเป็นแหล่งแบบอักษรด้วย Aspose.Words สำหรับ .NET มาดำน้ำกันเถอะ!
 
@@ -15,7 +16,7 @@ url: /th/net/working-with-fonts/resource-steam-font-source-example/
 ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
 - ความรู้พื้นฐานของ C#: ความคุ้นเคยกับการเขียนโปรแกรม C# จะช่วยให้คุณปฏิบัติตามได้
--  Aspose.Words สำหรับ .NET Library: ดาวน์โหลดและติดตั้งจาก[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
+-  Aspose.Words สำหรับ .NET Library: ดาวน์โหลดและติดตั้งจาก[ลิงค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
 - สภาพแวดล้อมการพัฒนา: การตั้งค่าเช่น Visual Studio เพื่อเขียนและรันโค้ดของคุณ
 -  เอกสารตัวอย่าง: มีเอกสารตัวอย่าง (เช่น`Rendering.docx`) พร้อมทดสอบการตั้งค่าแบบอักษร
 
@@ -103,7 +104,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### คำถามที่ 4: ฉันจะรับการสนับสนุนสำหรับ Aspose.Words ได้ที่ไหน
 
- เยี่ยมชม[ฟอรัมสนับสนุน Aspose.Words](https://forum.aspose.com/c/words/8) สำหรับความช่วยเหลือ.
+ เยี่ยมชม[ฟอรัมสนับสนุน Aspose.Words](https://forum.aspose.com/c/words/8) เพื่อขอความช่วยเหลือ
 
 ### คำถามที่ 5: เป็นไปได้ไหมที่จะได้รับใบอนุญาตชั่วคราวสำหรับ Aspose.Words
 

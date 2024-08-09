@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 3: Konfigurieren Sie die grundlegende Bildkomprimierung
 
- Ein ... kreieren`PdfSaveOptions`Objekt, um die PDF-Speicheroptionen einschließlich der Bildkomprimierung zu konfigurieren. Legen Sie das`ImageCompression`Eigentum an`PdfImageCompression.Jpeg` um die JPEG-Komprimierung für Bilder zu verwenden.
+ Erstellen Sie ein`PdfSaveOptions`Objekt, um die PDF-Speicheroptionen einschließlich der Bildkomprimierung zu konfigurieren. Legen Sie das`ImageCompression`Eigentum an`PdfImageCompression.Jpeg` um die JPEG-Komprimierung für Bilder zu verwenden.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -120,7 +120,7 @@ Durch die Bildkomprimierung wird die Dateigröße von PDF-Dokumenten durch Verri
 ### Wie handhabt Aspose.Words für .NET die Bildkomprimierung?
 Aspose.Words für .NET bietet die`PdfSaveOptions` Klasse, mit der Sie verschiedene Bildkomprimierungsoptionen festlegen können, einschließlich JPEG-Komprimierung.
 
-### Kann ich Aspose.Words für .NET verwenden, um PDF/A-Standards einzuhalten?
+### Kann ich Aspose.Words für .NET verwenden, um die PDF/A-Standards einzuhalten?
 Ja, Aspose.Words unterstützt die PDF/A-Konformität, sodass Sie Dokumente in Formaten speichern können, die den Archivierungs- und Langzeitaufbewahrungsstandards entsprechen.
 
 ### Welchen Einfluss hat die JPEG-Qualität auf die PDF-Dateigröße?

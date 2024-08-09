@@ -15,7 +15,7 @@ Merhaba geliştirici arkadaşlar ve belge meraklıları! 🌟 Hiç kendinizi bir
 
 Koda geçmeden önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET Library: En son sürüme sahip olduğunuzdan emin olun.[Buradan indir](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: En son sürüme sahip olduğunuzdan emin olun.[Buradan indirin](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi .NET uyumlu bir geliştirme ortamı.
 3. Temel C# Bilgisi: C# sözdizimine ve kavramlarına aşina olmak, takip etmenize yardımcı olacaktır.
 4. Örnek Word Belgesi: Kodunuzu test etmek için bir Word belgesinin olması kullanışlıdır, ancak bu örnekte her şeyi sıfırdan oluşturacağız.
@@ -151,4 +151,4 @@ Evet, metin kutuları doğrusal olmayan düzenlemeler de dahil olmak üzere herh
 Evet, her metin kutusundaki metnin stilini bağımsız olarak belirleyebilirsiniz, bu da size tasarım ve biçimlendirmede esneklik sağlar.
 
 ### Aspose.Words'te metin kutularıyla çalışma konusunda daha fazla kaynağı nerede bulabilirim?
- Daha fazla bilgi için şuraya göz atın:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/)Ve[destek Forumu](https://forum.aspose.com/c/words/8).
+ Daha fazla bilgi için şuraya göz atın:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/)Ve[destek forumu](https://forum.aspose.com/c/words/8).

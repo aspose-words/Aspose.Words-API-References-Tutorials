@@ -1,6 +1,6 @@
 ---
-title: Đơn vị đo lường
-linktitle: Đơn vị đo lường
+title: Đơn vị đo
+linktitle: Đơn vị đo
 second_title: API xử lý tài liệu Aspose.Words
 description: Tìm hiểu cách định cấu hình tính năng đơn vị đo lường trong Aspose.Words for .NET để duy trì định dạng tài liệu trong quá trình chuyển đổi ODT.
 type: docs
@@ -75,7 +75,7 @@ Dòng mã này lưu tài liệu đã chuyển đổi vào thư mục được ch
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng định cấu hình tính năng đơn vị đo lường trong Aspose.Words cho .NET để đảm bảo bố cục tài liệu của bạn được giữ nguyên trong quá trình chuyển đổi. Cho dù bạn đang làm việc với inch, cm hay điểm, hướng dẫn này đã chỉ cho bạn cách kiểm soát định dạng tài liệu của mình một cách dễ dàng.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng định cấu hình tính năng đơn vị đo lường trong Aspose.Words cho .NET để đảm bảo bố cục tài liệu của bạn được giữ nguyên trong quá trình chuyển đổi. Cho dù bạn đang làm việc với inch, cm hay điểm, hướng dẫn này đã chỉ cho bạn cách kiểm soát định dạng tài liệu của mình một cách dễ dàng.
 
 ## Câu hỏi thường gặp
 

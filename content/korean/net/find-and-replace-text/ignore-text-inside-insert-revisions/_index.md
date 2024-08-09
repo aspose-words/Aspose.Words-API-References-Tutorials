@@ -89,7 +89,7 @@ Aspose.Words for .NET을 사용하여 삽입 개정 내 텍스트를 무시하�
 예, 적절한 FindReplaceOptions 설정을 사용하여 무시된 삽입 텍스트를 되돌릴 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
- 방문하다[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 자세한 가이드 및 API 참조를 확인하세요.
+ 방문[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 자세한 가이드 및 API 참조를 확인하세요.
 
 ### .NET 관련 쿼리에 대한 Aspose.Words를 논의하기 위한 커뮤니티 포럼이 있습니까?
  네, 방문하실 수 있습니다[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 커뮤니티 지원 및 토론을 위해.

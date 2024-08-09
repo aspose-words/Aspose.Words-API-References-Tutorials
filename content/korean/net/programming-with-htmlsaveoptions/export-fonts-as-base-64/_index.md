@@ -9,7 +9,7 @@ url: /ko/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## 소개
 
-Word 문서를 프로그래밍 방식으로 조작할 때 Aspose.Words for .NET은 강력한 도구입니다. 멋진 기능 중 하나는 글꼴을 HTML 파일 내에서 Base64로 내보내 다양한 브라우저와 시스템에 글꼴이 올바르게 포함되고 표시되도록 하는 것입니다. 이 튜토리얼에서는 이를 달성하는 방법을 자세히 살펴보겠습니다. Word 문서 글꼴을 웹 친화적으로 만들 준비가 되셨나요? 시작하자!
+Word 문서를 프로그래밍 방식으로 조작할 때 Aspose.Words for .NET은 강력한 도구입니다. 멋진 기능 중 하나는 글꼴을 HTML 파일 내에서 Base64로 내보내 다양한 브라우저와 시스템에 글꼴이 올바르게 포함되고 표시되도록 하는 것입니다. 이 튜토리얼에서는 이를 달성하는 방법을 자세히 살펴보겠습니다. Word 문서 글꼴을 웹 친화적으로 만들 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 
@@ -62,7 +62,7 @@ Install-Package Aspose.Words
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ### 2.2 문서 올려 놓기
 

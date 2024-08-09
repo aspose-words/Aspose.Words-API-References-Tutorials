@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
-## introduzione
+## Introduzione
 
 Creare e gestire documenti Word a livello di codice a volte può sembrare come navigare in un labirinto. Ma con Aspose.Words per .NET, è facilissimo! Questa guida ti guiderà attraverso il processo di inserimento di un segnalibro in un documento Word utilizzando la libreria Aspose.Words per .NET. Quindi, allacciatevi le cinture e tuffiamoci nel mondo dell'automazione dei documenti.
 
@@ -95,7 +95,7 @@ Questa riga salva il documento con il nome specificato nella directory che abbia
 
 ## Conclusione
 
-il gioco è fatto! Hai inserito con successo un segnalibro in un documento Word utilizzando Aspose.Words per .NET. Potrebbe sembrare un piccolo passo, ma è un potente strumento nel campo dell'automazione dei documenti. Con i segnalibri puoi creare documenti dinamici e interattivi facili da navigare.
+Ed ecco qua! Hai inserito con successo un segnalibro in un documento Word utilizzando Aspose.Words per .NET. Potrebbe sembrare un piccolo passo, ma è un potente strumento nel campo dell'automazione dei documenti. Con i segnalibri puoi creare documenti dinamici e interattivi facili da navigare.
 
 ## Domande frequenti
 

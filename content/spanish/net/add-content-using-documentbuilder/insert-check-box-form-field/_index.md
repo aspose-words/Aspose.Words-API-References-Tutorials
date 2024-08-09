@@ -14,9 +14,9 @@ En el mundo de la automatización de documentos, Aspose.Words para .NET se desta
 
 Antes de profundizar en el meollo de la cuestión, asegurémonos de tener todo lo que necesita:
 
--  Aspose.Words para la biblioteca .NET: si aún no lo ha hecho, descárguelo desde[aquí](https://releases.aspose.com/words/net/) . También puedes optar por un[prueba gratis](https://releases.aspose.com/) si estás explorando la biblioteca.
+-  Aspose.Words para la biblioteca .NET: si aún no lo ha hecho, descárguelo desde[aquí](https://releases.aspose.com/words/net/) . También puedes optar por un[prueba gratuita](https://releases.aspose.com/) si estás explorando la biblioteca.
 - Entorno de desarrollo: un IDE como Visual Studio será su patio de recreo.
-- Comprensión básica de C#: si bien cubriremos todo en detalle, será beneficioso tener un conocimiento básico de C#.
+- Comprensión básica de C#: si bien cubriremos todo en detalle, una comprensión básica de C# será beneficiosa.
 
 ¿Listo para rodar? ¡Empecemos!
 
@@ -98,7 +98,7 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
 
 ### ¿Cómo puedo obtener Aspose.Words para .NET?
 
- Puede descargar Aspose.Words para .NET desde el[sitio web](https://releases.aspose.com/words/net/) . También existe la opción de un[prueba gratis](https://releases.aspose.com/) si quieres explorar sus características.
+ Puede descargar Aspose.Words para .NET desde el[sitio web](https://releases.aspose.com/words/net/) . También existe la opción de un[prueba gratuita](https://releases.aspose.com/) si quieres explorar sus características.
 
 ### ¿Puedo usar Aspose.Words para .NET con cualquier aplicación .NET?
 

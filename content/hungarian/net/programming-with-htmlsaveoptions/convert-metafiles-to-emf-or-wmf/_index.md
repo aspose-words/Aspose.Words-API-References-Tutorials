@@ -20,7 +20,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindent beáll�
 3. Fejlesztési környezet: Az olyan IDE, mint a Visual Studio, megkönnyíti az életét.
 4. Alapvető C# ismeretek: Nem kell szakértőnek lenned, de az alapvető ismeretek sokat segítenek.
 
-Megvan minden? Nagy! Kezdjük el.
+Megvan minden? Nagy! Kezdjük.
 
 ## Névterek importálása
 
@@ -60,7 +60,7 @@ Ez a HTML-részlet tartalmaz egy alapvető SVG-t, amely azt mondja: „Hello wor
 
 ## 3. lépés: Töltse be a HTML-t a ConvertSvgToEmf opcióval
 
- Most használjuk a`HtmlLoadOptions` annak megadásához, hogyan szeretnénk kezelni az SVG-képeket a HTML-ben. Beállítás`ConvertSvgToEmf` nak nek`true` biztosítja, hogy az SVG képeket EMF formátumba konvertálja.
+ Most használjuk a`HtmlLoadOptions` annak megadásához, hogyan szeretnénk kezelni az SVG-képeket a HTML-ben. Beállítás`ConvertSvgToEmf` hogy`true` biztosítja, hogy az SVG képeket EMF formátumba konvertálja.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { ConvertSvgToEmf = true };
@@ -71,7 +71,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), load
 
 ## 4. lépés: Állítsa be a HtmlSaveOptions beállítást a metafile formátumhoz
 
- A dokumentum megfelelő metafájl formátumban történő mentéséhez használjuk`HtmlSaveOptions` . Tessék, beállítjuk`MetafileFormat` nak nek`HtmlMetafileFormat.Png` , de ezt módosíthatja`Emf` vagy`Wmf` igényeitől függően.
+ A dokumentum megfelelő metafájl formátumban történő mentéséhez használjuk`HtmlSaveOptions` . Tessék, beállítjuk`MetafileFormat` hogy`HtmlMetafileFormat.Png` , de ezt módosíthatja`Emf` vagy`Wmf` az Ön igényeitől függően.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Png };

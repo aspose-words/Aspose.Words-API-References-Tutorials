@@ -9,7 +9,7 @@ url: /nl/net/programming-with-charts/single-chart-series/
 ---
 ## Invoering
 
-Hallo daar! Heb je ooit je Word-documenten willen opfleuren met een paar hippe grafieken? Nou, je bent op de juiste plek! Vandaag duiken we in de wereld van Aspose.Words voor .NET om afzonderlijke diagramreeksen in een diagram aan te passen. Of u nu een doorgewinterde professional bent of net begint, deze gids begeleidt u stap voor stap door het hele proces. Dus, doe je gordel om en laten we in kaart brengen!
+Hé daar! Heb je ooit je Word-documenten willen opfleuren met een paar hippe grafieken? Nou, je bent op de juiste plek! Vandaag duiken we in de wereld van Aspose.Words voor .NET om afzonderlijke diagramreeksen in een diagram aan te passen. Of u nu een doorgewinterde professional bent of net begint, deze gids begeleidt u stap voor stap door het hele proces. Dus, doe je gordel om en laten we in kaart brengen!
 
 ## Vereisten
 

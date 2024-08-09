@@ -70,7 +70,7 @@ cell1.getCellFormat().setPreferredWidth(100.0);
 Cell cell2 = row.getCells().add();
 cell2.getCellFormat().setPreferredWidth(200.0);
 
-// Din kod för att fylla i tabellen finns här
+// Din kod för att fylla i tabellen kommer här
 ```
 
 ## Formatera tabeller
@@ -139,7 +139,7 @@ table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
 
 ### Hur kan jag ändra bakgrundsfärgen för en tabellcell?
 
- Du kan ändra bakgrundsfärgen för en tabellcell med hjälp av`Shading` fast egendom. Här är ett exempel:
+ Du kan ändra bakgrundsfärgen för en tabellcell med hjälp av`Shading` egendom. Här är ett exempel:
 
 ```java
 cell1.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);

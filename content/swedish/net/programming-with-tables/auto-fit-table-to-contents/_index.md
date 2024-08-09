@@ -9,7 +9,7 @@ url: /sv/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 ## Introduktion
 
-Har du någonsin kämpat med tabeller som ser ut som om de har klämts in i ditt Word-dokument, vilket gör att texten är trång och kolumnerna är ojusterade? I så fall är du inte ensam! Hantera tabellformatering kan vara ett riktigt krångel, särskilt när det handlar om dynamiskt innehåll. Men oroa dig inte; Aspose.Words för .NET har fått din rygg. I den här guiden kommer vi att dyka in i den smarta funktionen med att automatiskt anpassa tabeller till innehållet. Denna funktionalitet säkerställer att dina tabeller anpassar sig perfekt till deras innehåll, vilket gör att dina dokument ser polerade och professionella ut med minimal ansträngning. Redo att komma igång? Låt oss få dina bord att arbeta hårdare för dig!
+Har du någonsin kämpat med tabeller som ser ut som om de har klämts in i ditt Word-dokument, vilket gör att texten är trång och kolumnerna är ojusterade? I så fall är du inte ensam! Hantera tabellformatering kan vara ett riktigt krångel, särskilt när det handlar om dynamiskt innehåll. Men oroa dig inte; Aspose.Words för .NET har fått din rygg. I den här guiden kommer vi att dyka in i den smarta funktionen med att automatiskt anpassa tabeller till innehållet. Denna funktionalitet säkerställer att dina tabeller anpassar sig perfekt till deras innehåll, vilket gör att dina dokument ser polerade och professionella ut med minimal ansträngning. Redo att börja? Låt oss få dina bord att arbeta hårdare för dig!
 
 ## Förutsättningar
 
@@ -39,7 +39,7 @@ Ange först sökvägen där ditt dokument lagras. Detta kommer att vara din utg�
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument finns. Det här är som att ställa in din arbetsyta innan du påbörjar ett projekt.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument finns. Det här är som att ställa in din arbetsyta innan du påbörjar ett projekt.
 
 ## Steg 2: Ladda ditt dokument
 

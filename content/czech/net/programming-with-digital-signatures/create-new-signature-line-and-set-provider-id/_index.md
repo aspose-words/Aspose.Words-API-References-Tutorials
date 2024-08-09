@@ -1,13 +1,13 @@
 ---
-title: Vytvořte nový řádek podpisu a nastavte ID poskytovatele
-linktitle: Vytvořte nový řádek podpisu a nastavte ID poskytovatele
+title: Vytvořte nový podpisový řádek a nastavte ID poskytovatele
+linktitle: Vytvořte nový podpisový řádek a nastavte ID poskytovatele
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak vytvořit nový řádek podpisu a nastavit ID poskytovatele v dokumentech aplikace Word pomocí Aspose.Words for .NET. Průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, tech nadšenci! Přemýšleli jste někdy, jak programově přidat řádek podpisu do dokumentů aplikace Word? No, dnes se ponoříme právě do toho pomocí Aspose.Words pro .NET. Tato příručka vás provede každým krokem, takže vytvoření nového řádku podpisu a nastavení ID poskytovatele ve vašich dokumentech aplikace Word bude snadné. Ať už automatizujete zpracování dokumentů nebo jen chcete zefektivnit svůj pracovní postup, tento tutoriál vám pomůže.
 
@@ -15,7 +15,7 @@ Ahoj, tech nadšenci! Přemýšleli jste někdy, jak programově přidat řádek
 
 Než si ušpiníme ruce, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí C#.
 3. .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 4. Certifikát PFX: K podepisování dokumentů budete potřebovat certifikát PFX. Můžete jej získat od důvěryhodné certifikační autority.

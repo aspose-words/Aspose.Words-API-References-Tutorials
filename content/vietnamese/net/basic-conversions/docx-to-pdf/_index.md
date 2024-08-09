@@ -9,7 +9,7 @@ url: /vi/net/basic-conversions/docx-to-pdf/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thấy mình cần chuyển đổi tài liệu Word thành PDF chưa? Đây là một tác vụ khá phổ biến, đặc biệt là trong các cài đặt chuyên nghiệp, nơi các tệp PDF được ưa thích vì các tính năng bảo mật và định dạng cố định. Nếu bạn đang làm việc với .NET thì bạn thật may mắn vì Aspose.Words for .NET giúp quá trình này trở nên dễ dàng. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách chuyển đổi tệp Word sang PDF bằng Aspose.Words cho .NET. Hãy sẵn sàng đón nhận hướng dẫn từng bước dễ làm theo, ngay cả khi bạn là người mới. Bắt đầu nào!
+Này! Bạn đã bao giờ thấy mình cần chuyển đổi tài liệu Word thành PDF chưa? Đây là một tác vụ khá phổ biến, đặc biệt là trong các cài đặt chuyên nghiệp, nơi các tệp PDF được ưa thích vì các tính năng bảo mật và định dạng cố định. Nếu bạn đang làm việc với .NET thì bạn thật may mắn vì Aspose.Words for .NET giúp quá trình này trở nên dễ dàng. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách chuyển đổi tệp Word sang PDF bằng Aspose.Words cho .NET. Hãy sẵn sàng đón nhận hướng dẫn từng bước dễ làm theo, ngay cả khi bạn là người mới. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "ConvertedDocument.pdf");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chuyển đổi tài liệu Word sang PDF bằng Aspose.Words cho .NET chỉ đơn giản như vậy. Chỉ với một vài dòng mã, bạn có thể chuyển đổi các tệp Word của mình thành các tệp PDF có thể truy cập được trên toàn cầu. Cho dù bạn đang tự động hóa quy trình làm việc của tài liệu hay chỉ cần chuyển đổi nhanh chóng, Aspose.Words for .NET đều có thể giúp bạn. 
+Và bạn có nó! Chuyển đổi tài liệu Word sang PDF bằng Aspose.Words cho .NET chỉ đơn giản như vậy. Chỉ với một vài dòng mã, bạn có thể chuyển đổi các tệp Word của mình thành các tệp PDF có thể truy cập được trên toàn cầu. Cho dù bạn đang tự động hóa quy trình làm việc của tài liệu hay chỉ cần chuyển đổi nhanh chóng, Aspose.Words for .NET đều có thể giúp bạn. 
 
 Vui lòng khám phá thêm các tính năng của Aspose.Words để nâng cao khả năng xử lý tài liệu của bạn. Chúc mừng mã hóa!
 

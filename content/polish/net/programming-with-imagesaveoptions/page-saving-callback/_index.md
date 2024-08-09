@@ -9,7 +9,7 @@ url: /pl/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek czułeś potrzebę zapisania każdej strony dokumentu programu Word jako osobnych obrazów? Być może chcesz podzielić duży raport na łatwo przyswajalne wizualizacje, a może chcesz utworzyć miniatury do podglądu. Bez względu na powód, użycie Aspose.Words dla .NET sprawia, że to zadanie jest proste. W tym przewodniku przeprowadzimy Cię przez proces konfigurowania wywołania zwrotnego zapisywania strony, aby zapisać każdą stronę dokumentu jako indywidualny obraz PNG. Zanurkujmy od razu!
+Hej tam! Czy kiedykolwiek czułeś potrzebę zapisania każdej strony dokumentu programu Word jako osobnych obrazów? Być może chcesz podzielić duży raport na łatwo przyswajalne wizualizacje, a może chcesz utworzyć miniatury do podglądu. Bez względu na powód, użycie Aspose.Words dla .NET sprawia, że to zadanie jest proste. W tym przewodniku przeprowadzimy Cię przez proces konfigurowania wywołania zwrotnego zapisywania strony, aby zapisać każdą stronę dokumentu jako indywidualny obraz PNG. Zanurkujmy od razu!
 
 ## Warunki wstępne
 

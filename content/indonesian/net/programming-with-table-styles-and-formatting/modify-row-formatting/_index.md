@@ -55,7 +55,7 @@ Di sini, kami mengambil tabel pertama dalam dokumen. Itu`GetChild` metode yang d
 
 ## Langkah 3: Ambil Baris Pertama
 
-Dengan tabel yang sekarang dapat diakses, langkah selanjutnya adalah mengambil baris pertama. Baris ini akan menjadi fokus perubahan format kami.
+Dengan tabel yang sekarang dapat diakses, langkah selanjutnya adalah mengambil baris pertama. Baris ini akan menjadi fokus perubahan format kita.
 
 ```csharp
 Row firstRow = table.FirstRow;

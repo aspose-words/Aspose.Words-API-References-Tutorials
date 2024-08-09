@@ -2,94 +2,90 @@
 title: Pokaż poprawki w dymkach
 linktitle: Pokaż poprawki w dymkach
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Pokaż wersje w dymkach za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wyświetlać wersje w dymkach za pomocą Aspose.Words dla .NET. Ten szczegółowy przewodnik przeprowadzi Cię przez każdy krok, zapewniając przejrzystość i uporządkowanie zmian w dokumencie.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/show-revisions-in-balloons/
 ---
+## Wstęp
 
-W tym przewodniku krok po kroku pokażemy, jak wyświetlić wersje w dymkach w dokumencie programu Word za pomocą Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
+Śledzenie zmian w dokumencie programu Word ma kluczowe znaczenie dla współpracy i edycji. Aspose.Words dla .NET oferuje solidne narzędzia do zarządzania tymi wersjami, zapewniając przejrzystość i łatwość przeglądania. Ten przewodnik pomoże Ci wyświetlać wersje w dymkach, dzięki czemu łatwiej będzie zobaczyć, jakie zmiany zostały wprowadzone i przez kogo.
 
-## Krok 1: Ładowanie dokumentu
+## Warunki wstępne
 
-Pierwszym krokiem jest przesłanie dokumentu zawierającego poprawki.
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+-  Aspose.Words dla biblioteki .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+-  Ważna licencja Aspose. Jeśli go nie masz, możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
+- Visual Studio lub dowolne inne IDE obsługujące programowanie .NET.
+- Podstawowa znajomość C# i frameworku .NET.
 
-## Krok 2: Skonfiguruj opcje wyświetlania recenzji
+## Importuj przestrzenie nazw
 
-Skonfigurujemy opcje wyświetlania, aby poprawki były widoczne w dymkach.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-```
-
-## Krok 3: Zapisz dokument w formacie PDF
-
-Na koniec zapiszemy dokument w formacie PDF z wersjami pokazanymi w dymkach.
+Na początek zaimportujmy niezbędne przestrzenie nazw do Twojego projektu C#. Te przestrzenie nazw są niezbędne do uzyskania dostępu do funkcjonalności Aspose.Words.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
+using Aspose.Words.RevisionOptions;
 ```
 
-## Formaty wyjściowe Markdown
+Podzielmy proces na proste, łatwe do wykonania kroki.
 
-Dane wyjściowe można sformatować w formacie przeceny, aby poprawić czytelność. Na przykład :
+## Krok 1: Załaduj swój dokument
 
-```markdown
-- Revisions are Showed in bubbles with revision bars on the right side.
-```
-
-### Przykładowy kod źródłowy dla opcji Pokaż poprawki w dymkach przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy pokazujący wersje w dymkach w dokumencie przy użyciu Aspose.Words dla .NET:
+Najpierw musimy załadować dokument zawierający poprawki. Upewnij się, że ścieżka dokumentu jest poprawna.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(MyDir + "Revisions.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+## Krok 2: Skonfiguruj opcje wersji
+
+Następnie skonfigurujemy opcje wersji, aby wyświetlać wersje wstawione w wierszu oraz usuwać i formatować wersje w dymkach. Ułatwia to rozróżnienie pomiędzy różnymi typami wersji.
+
+```csharp
 // Renderuje wstawianie wersji inline, usuwanie i formatowanie wersji w dymkach.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+```
+
+## Krok 3: Ustaw położenie pasków rewizyjnych
+
+Aby dokument był jeszcze bardziej czytelny, możemy ustawić położenie pasków rewizji. W tym przykładzie umieścimy je po prawej stronie strony.
+
+```csharp
 // Renderuje paski wersji po prawej stronie strony.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+```
 
+## Krok 4: Zapisz dokument
+
+Na koniec zapiszemy dokument w formacie PDF. Umożliwi nam to zobaczenie poprawek w pożądanym formacie.
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 ## Wniosek
 
-tym samouczku nauczyliśmy się wyświetlać wersje w dymkach w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Dzięki zastosowaniu odpowiednich opcji wyświetlania udało nam się uwidocznić rewizje w dymkach z paskami rewizji po prawej stronie. Aspose.Words dla .NET oferuje wiele zaawansowanych funkcji do manipulowania dokumentami Word, w tym zarządzanie wersjami. Teraz możesz wykorzystać tę wiedzę do wyświetlania wersji w dymkach we własnych dokumentach programu Word przy użyciu Aspose.Words dla .NET.
+I masz to! Wykonując te proste kroki, możesz łatwo wyświetlać wersje w dymkach za pomocą Aspose.Words dla .NET. Dzięki temu przeglądanie dokumentów i współpraca nad nimi jest dziecinnie proste, a wszystkie zmiany są wyraźnie widoczne i uporządkowane. Miłego kodowania!
 
+## Często zadawane pytania
 
-### Często zadawane pytania
+### Czy mogę dostosować kolor pasków rewizji?
+Tak, Aspose.Words umożliwia dostosowanie koloru pasków wersji do własnych preferencji.
 
-#### P: Jak przesłać dokument do Aspose.Words dla .NET?
+### Czy możliwe jest pokazanie w dymkach tylko określonych typów wersji?
+Absolutnie. Możesz skonfigurować Aspose.Words tak, aby wyświetlał w dymkach tylko niektóre typy wersji, takie jak usunięcia lub zmiany formatowania.
 
- O: Skorzystaj z`Document` klasa Aspose.Words dla .NET, aby załadować dokument z pliku. Można określić pełną ścieżkę dokumentu.
+### Jak uzyskać tymczasową licencję na Aspose.Words?
+ Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Czy mogę używać Aspose.Words dla .NET z innymi językami programowania?
+Aspose.Words jest przeznaczony przede wszystkim dla .NET, ale można go używać z dowolnym językiem obsługiwanym przez .NET, w tym VB.NET i C++/CLI.
 
-#### P: Jak wyświetlić wersje w dymkach za pomocą Aspose.Words dla .NET?
-
- O: Skorzystaj z`ShowInBalloons` własność`RevisionOptions` obiekt, aby skonfigurować wyświetlanie wersji w dymkach. Możesz ustawić tę właściwość`ShowInBalloons.FormatAndDelete` aby wyświetlić wersje w dymkach z wersjami usuwania i formatowania.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-```
-
-#### P: Jak zapisać dokument w formacie PDF za pomocą Aspose.Words dla .NET?
-
- O: Skorzystaj z`Save` metoda`Document` obiekt, aby zapisać dokument w formacie PDF. Należy podać pełną ścieżkę docelową z rozszerzeniem „.pdf”.
-
-```csharp
-doc.Save("path/to/destination/document.pdf");
-```
+### Czy Aspose.Words obsługuje inne formaty dokumentów oprócz Worda?
+Tak, Aspose.Words obsługuje różne formaty dokumentów, w tym PDF, HTML, EPUB i inne.

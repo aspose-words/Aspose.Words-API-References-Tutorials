@@ -59,7 +59,7 @@ Tak, możesz wsadowo konwertować pliki DOCX na EPUB lub inne formaty za pomocą
 Tak, Aspose.Words w pełni obsługuje .NET Core i .NET Framework.
 
 ### Gdzie mogę znaleźć więcej przykładów i dokumentacji dla Aspose.Words?
- Odwiedzić[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe przykłady i odniesienia do API.
+ Odwiedź[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe przykłady i odniesienia do API.
 
 ### Jak mogę uzyskać pomoc dotyczącą problemów związanych z Aspose.Words?
  Aby uzyskać pomoc, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8) gdzie możesz zadawać pytania i kontaktować się ze społecznością.

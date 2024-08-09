@@ -137,4 +137,4 @@ Ja. Sie können zwar eine temporäre Lizenz zur Evaluierung verwenden, für den 
 Nein, die Aktivierung der Funktion „Am Raster ausrichten“ hat keine nennenswerten Auswirkungen auf die Dokumentleistung.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
- Besuche den[Dokumentation](https://reference.aspose.com/words/net/)für detaillierte Informationen und Beispiele.
+ Besuchen Sie die[Dokumentation](https://reference.aspose.com/words/net/)für detaillierte Informationen und Beispiele.

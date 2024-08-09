@@ -20,7 +20,7 @@ Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn có các đi�
 -  Aspose.Words cho thư viện Java. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/java/).
 - Hiểu biết cơ bản về lập trình Java.
 
-## Hướng dẫn từng bước một
+## Hướng dẫn từng bước
 
 ## Bước 1: Thiết lập dự án của bạn
 
@@ -42,7 +42,7 @@ public class HTMLToWordConversion {
 
 ## Bước 3: Tải nội dung HTML
 
- Tiếp theo, tải nội dung HTML mà bạn muốn chuyển đổi vào`Document` sự vật. Bạn có thể dùng`DocumentBuilder` lớp cho mục đích này.
+ Tiếp theo, tải nội dung HTML mà bạn muốn chuyển đổi vào`Document` sự vật. Bạn có thể sử dụng`DocumentBuilder` lớp cho mục đích này.
 
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);

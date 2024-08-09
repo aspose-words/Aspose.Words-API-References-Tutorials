@@ -14,9 +14,9 @@ Az Aspose.Words for .NET csomópontjaival való munkához a fejlesztők használ
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Csomópont típus használata](./use-node-type/) | Ismerje meg, hogyan használhatja a csomóponttípust a dokumentumspecifikus információk eléréséhez az Aspose.Words for .NET segítségével. |
-| [Szerezze be a szülőcsomópontot](./get-parent-node/) | Ismerje meg, hogyan szerezheti be egy adott elem szülőcsomópontját az Aspose.Words for .NET segítségével. |
-| [Tulajdonosi dokumentum](./owner-document/) | Ismerje meg a tulajdonosi dokumentum használatát az Aspose.Words for .NET-ben. |
-| [Sorolja fel a gyermek csomópontokat](./enumerate-child-nodes/) | Ismerje meg, hogyan sorolhatja fel a gyermek csomópontokat egy bekezdésben az Aspose.Words for .NET segítségével. |
-| [Beírt hozzáférés](./typed-access/) | Ismerje meg, hogyan használhatja a gépelt hozzáférést az Aspose.Words for .NET tábláinak kezelésére. |
-| [Bekezdéscsomópont létrehozása és hozzáadása](./create-and-add-paragraph-node/) | Hozzon létre és adjon hozzá bekezdéscsomópontot Word-dokumentumaihoz az Aspose.Words for .NET segítségével. |
+| [Csomópont típus használata](./use-node-type/) | Fedezze fel, hogyan sajátíthatja el a NodeType tulajdonságot az Aspose.Words for .NET-ben részletes útmutatónkkal. Tökéletes azoknak a fejlesztőknek, akik szeretnék fejleszteni dokumentumfeldolgozási készségeiket. |
+| [Szerezze be a szülőcsomópontot](./get-parent-node/) | Ebből a részletes, lépésenkénti oktatóanyagból megtudhatja, hogyan szerezheti be egy dokumentumszakasz szülőcsomópontját az Aspose.Words for .NET használatával. |
+| [Tulajdonosi dokumentum](./owner-document/) | Ismerje meg, hogyan kell dolgozni a tulajdonosi dokumentummal az Aspose.Words for .NET-ben. Ez a lépésenkénti útmutató a dokumentumon belüli csomópontok létrehozását és kezelését ismerteti. |
+| [Sorolja fel a gyermek csomópontokat](./enumerate-child-nodes/) | Ebből a lépésről lépésre mutató oktatóanyagból megtudhatja, hogyan sorolhat fel gyermekcsomópontokat egy Word-dokumentumban az Aspose.Words for .NET használatával. |
+| [Beírt hozzáférés](./typed-access/) | Ismerje meg, hogyan használhatja a Beírt hozzáférés funkciót az Aspose.Words for .NET-ben a dokumentumelemek, például táblázatok és sorok egyszerű manipulálásához. Ez a lépésenkénti útmutató leegyszerűsíti a munkafolyamatot. |
+| [Bekezdéscsomópont létrehozása és hozzáadása](./create-and-add-paragraph-node/) | Ebből a részletes, lépésenkénti oktatóanyagból megtudhatja, hogyan hozhat létre és adhat hozzá bekezdéscsomópontot egy dokumentumhoz az Aspose.Words for .NET használatával. |

@@ -118,4 +118,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 はい、既存のテーブルにアクセスして変更することができます。`Document`オブジェクトを作成し、同様の書式を適用します。
 
 ### Aspose.Words for .NET では他にどのようなテーブル書式設定オプションが利用できますか?
- Aspose.Words for .NET は、セルの結合、境界線の設定、表の配置など、幅広い表の書式設定オプションを提供します。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+ Aspose.Words for .NET は、セルの結合、境界線の設定、表の配置など、幅広い表の書式設定オプションを提供します。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。

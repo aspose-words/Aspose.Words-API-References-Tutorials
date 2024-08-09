@@ -77,7 +77,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak bir DOCX dosyasını başarıyla �
 
 Evet, Aspose.Words for .NET çeşitli şifreleme algoritmalarını destekler. Şifreleme ayarlarını kullanarak özelleştirebilirsiniz.`OoxmlSaveOptions` sınıf.
 
-### Şifrelemeyi bir DOCX dosyasından kaldırmak mümkün müdür?
+### Şifrelemeyi bir DOCX dosyasından kaldırmak mümkün mü?
 
 Evet, şifrelemeyi kaldırmak için şifrelenmiş belgeyi yüklemeniz, kaydetme seçeneklerinde parolayı temizlemeniz ve belgeyi yeniden kaydetmeniz yeterlidir.
 

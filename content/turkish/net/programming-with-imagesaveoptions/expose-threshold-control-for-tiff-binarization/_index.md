@@ -81,7 +81,7 @@ Bu kod satırı, belgeyi yapılandırılmış görüntü kaydetme seçenekleriyl
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesinde TIFF ikilileştirmesi için eşik kontrolünü nasıl açığa çıkaracağınızı öğrendiniz. Bu güçlü kitaplık, Word belgelerini, özel ayarlarla farklı biçimlere dönüştürmek de dahil olmak üzere çeşitli şekillerde işlemeyi kolaylaştırır. Bir deneyin ve belge işleme görevlerinizi nasıl basitleştirebileceğini görün!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinde TIFF ikilileştirmesi için eşik kontrolünü nasıl açığa çıkaracağınızı öğrendiniz. Bu güçlü kitaplık, Word belgelerini, özel ayarlarla farklı biçimlere dönüştürmek de dahil olmak üzere çeşitli şekillerde işlemeyi kolaylaştırır. Bir deneyin ve belge işleme görevlerinizi nasıl basitleştirebileceğini görün!
 
 ## SSS'ler
 

@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous avez réussi à améliorer le positionnement du texte dans votre PDF à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante garantit que vos PDF semblent nets et professionnels, avec le texte positionné exactement là où il devrait être.
+Et voilà ! En suivant ces étapes, vous avez réussi à améliorer le positionnement du texte dans votre PDF à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante garantit que vos PDF semblent nets et professionnels, avec le texte positionné exactement là où il doit être.
 
 ## FAQ
 

@@ -91,7 +91,7 @@ Tak, podstawowe czcionki, takie jak Arial i Times New Roman, są ogólnie dostę
 ### Co się stanie, jeśli będę musiał osadzić niestandardowe czcionki?
  Możesz dostosować`PdfSaveOptions`aby w razie potrzeby osadzić określone czcionki.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
  Aspose.Words dla .NET wymaga licencji. Możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?

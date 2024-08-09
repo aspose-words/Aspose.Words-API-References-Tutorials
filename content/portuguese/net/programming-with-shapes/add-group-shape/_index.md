@@ -16,7 +16,7 @@ Criar documentos complexos com elementos visuais ricos às vezes pode ser uma ta
 Antes de começarmos, certifique-se de ter o seguinte:
 
 1.  Aspose.Words for .NET: Você pode baixá-lo no[Página de lançamentos do Aspose](https://releases.aspose.com/words/net/).
-2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 3. Compreensão básica de C#: Familiaridade com programação C# é uma vantagem.
 
 ## Importar namespaces

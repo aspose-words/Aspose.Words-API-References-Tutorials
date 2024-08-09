@@ -15,7 +15,7 @@ Chcesz programowo pracować z dokumentami programu Word? Aspose.Words dla .NET t
 
 Zanim przejdziemy do samouczka, jest kilka rzeczy, które musisz zacząć:
 
--  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Zalecany jest program Visual Studio, ale można użyć dowolnego środowiska IDE języka C#.
 - Podstawowa znajomość języka C#: Podstawowa znajomość języka C# pomoże Ci podążać dalej.
 

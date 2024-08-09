@@ -51,7 +51,7 @@ doc.save("customized.docx");
 
 ### Modification des couleurs du thème
 
-Vous pouvez facilement modifier les couleurs du thème à l'aide d'Aspose.Words pour Java. Voici comment:
+Vous pouvez facilement modifier les couleurs du thème à l'aide d'Aspose.Words pour Java. Voici comment procéder :
 
 ```java
 // Charger le document

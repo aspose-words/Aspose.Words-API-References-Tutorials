@@ -98,7 +98,7 @@ Cette ligne de code enregistre le document dans le répertoire spécifié avec l
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à insérer un graphique en aires dans un document Word à l'aide d'Aspose.Words pour .NET. Ce guide vous a accompagné à chaque étape, depuis la configuration de votre environnement jusqu'à l'enregistrement du document final. Avec Aspose.Words pour .NET, vous pouvez créer une grande variété de graphiques et d'autres éléments complexes dans vos documents Word, rendant ainsi vos rapports et présentations plus dynamiques et informatifs.
+Félicitations! Vous avez réussi à insérer un graphique en aires dans un document Word à l'aide d'Aspose.Words pour .NET. Ce guide vous a accompagné à chaque étape, depuis la configuration de votre environnement jusqu'à l'enregistrement du document final. Avec Aspose.Words pour .NET, vous pouvez créer une grande variété de graphiques et d'autres éléments complexes dans vos documents Word, rendant ainsi vos rapports et présentations plus dynamiques et informatifs.
 
 ## FAQ
 

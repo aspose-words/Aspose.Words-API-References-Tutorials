@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti in questa guida completa su come consentire la spaziatura delle celle in una tabella utilizzando Aspose.Words per .NET! Se hai mai lavorato con tabelle nei documenti di Word, sai che la spaziatura può fare una grande differenza in termini di leggibilità ed estetica. In questo tutorial ti guideremo attraverso il processo di attivazione della spaziatura delle celle nelle tabelle, passo dopo passo. Copriremo tutto, dalla configurazione del tuo ambiente alla scrittura del codice e all'esecuzione della tua applicazione. Quindi, allacciate le cinture e tuffiamoci nel mondo di Aspose.Words per .NET!
 
@@ -81,7 +81,7 @@ Ora abilitiamo la spaziatura delle celle per la tabella.
 
 ### Passaggio 4.1: Consenti spaziatura celle
 
- Impostare il`AllowCellSpacing` proprietà della tabella a`true`.
+ Imposta il`AllowCellSpacing` proprietà della tabella a`true`.
 
 ```csharp
 table.AllowCellSpacing = true;

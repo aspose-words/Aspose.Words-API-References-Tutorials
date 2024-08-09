@@ -15,7 +15,7 @@ Hallo Technikbegeisterte und Dokument-Zauberer! 🌟 Haben Sie sich schon einmal
 
 Bevor wir uns in die Magie der Verknüpfung von Textfeldern stürzen, stellen wir sicher, dass Sie alle wichtigen Dinge bereit haben:
 
-1. Aspose.Words für .NET-Bibliothek: Sie benötigen die neueste Version von Aspose.Words für .NET. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET-Bibliothek: Sie benötigen die neueste Version von Aspose.Words für .NET. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Zum Schreiben und Testen Ihres Codes ist eine .NET-Entwicklungsumgebung wie Visual Studio erforderlich.
 3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse in C# helfen Ihnen, den Codebeispielen zu folgen.
 4. Beispiel-Word-Dokument: Obwohl es für dieses Tutorial nicht unbedingt erforderlich ist, kann ein Beispiel-Word-Dokument zum Testen Ihrer verknüpften Textfelder hilfreich sein.
@@ -116,7 +116,7 @@ Dadurch wird das Dokument unter dem Dateinamen „LinkedTextBoxes.docx“ gespei
 
 Und da haben Sie es! 🎉 Sie haben erfolgreich Textfelder in einem Word-Dokument mit Aspose.Words für .NET erstellt und verknüpft. Dieses Tutorial hat Sie durch das Einrichten Ihrer Umgebung, das Erstellen und Verknüpfen von Textfeldern und das Speichern Ihres Dokuments geführt. Mit diesen Fähigkeiten können Sie Ihre Word-Dokumente mit dynamischen Inhaltsflüssen verbessern und Ihre Dokumente interaktiver und benutzerfreundlicher gestalten.
 
- Ausführlichere Informationen und erweiterte Funktionen finden Sie in der[Aspose.Words API-Dokumentation](https://reference.aspose.com/words/net/) Wenn Sie Fragen haben oder auf Probleme stoßen,[Hilfeforum](https://forum.aspose.com/c/words/8) ist eine großartige Ressource.
+ Ausführlichere Informationen und erweiterte Funktionen finden Sie in der[Aspose.Words API-Dokumentation](https://reference.aspose.com/words/net/) Wenn Sie Fragen haben oder auf Probleme stoßen,[Support-Forum](https://forum.aspose.com/c/words/8) ist eine großartige Ressource.
 
 Viel Spaß beim Programmieren und mögen Ihre Textfelder immer perfekt verknüpft sein! 🚀
 

@@ -35,7 +35,7 @@ url: /ar/java/document-conversion-and-export/
 ### [استخدام كائنات Office Math في Aspose.Words لـ Java](./using-office-math-objects/)
 أطلق العنان لقوة المعادلات الرياضية في المستندات باستخدام Aspose.Words for Java. تعلم كيفية التعامل مع كائنات Office Math وعرضها بسهولة.
 ### [استخدام أشكال المستندات في Aspose.Words لـ Java](./using-document-shapes/)
-أطلق العنان لقوة أشكال المستندات في Aspose.Words لـ Java. تعرّف على كيفية إنشاء مستندات جذابة بصريًا باستخدام أمثلة خطوة بخطوة.
+أطلق العنان لقوة أشكال المستندات في Aspose.Words لـ Java. تعلم كيفية إنشاء مستندات جذابة بصريًا باستخدام أمثلة خطوة بخطوة.
 ### [استخدام العلامات المائية للمستندات في Aspose.Words لـ Java](./using-watermarks-to-documents/)
 تعرف على كيفية إضافة علامات مائية إلى المستندات في Aspose.Words for Java. قم بتخصيص العلامات المائية النصية والصورية للحصول على مستندات ذات مظهر احترافي.
 ### [تنسيق الجداول وأنماط الجدول في Aspose.Words لـ Java](./formatting-tables-and-table-styles/)

@@ -34,7 +34,7 @@ using Aspose.Words.Drawing;
 أول الأشياء أولاً، نحتاج إلى تحديد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي سيتم فيه حفظ مستند Word الخاص بك.
 
 
- دعونا نحدد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي الذي تريد حفظ المستند فيه.
+ دعنا نحدد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي الذي تريد حفظ المستند فيه.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -94,7 +94,7 @@ axis.TickLabelAlignment = ParagraphAlignment.Right;
 
 أخيرًا وليس آخرًا، فلنحفظ مستندنا بالتغييرات المطلوبة.
 
- استخدم ال`Save` طريقة`Document` فئة لحفظ المستند في الدليل المحدد.
+ استخدم`Save` طريقة`Document` فئة لحفظ المستند في الدليل المحدد.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## خاتمة
 
-وهناك لديك! لقد نجحت في تحديد محاذاة التسمية متعددة الأسطر في مخطط باستخدام Aspose.Words لـ .NET. باتباع هذه الخطوات، يمكنك تخصيص مخططاتك بسهولة لتلبية احتياجاتك الخاصة. سواء كنت تقوم بإعداد تقرير احترافي أو مجرد تجربة، فإن Aspose.Words for .NET يوفر المرونة والقوة لإنجاز المهمة. ترميز سعيد!
+وهنا لديك! لقد نجحت في تحديد محاذاة التسمية متعددة الأسطر في مخطط باستخدام Aspose.Words لـ .NET. باتباع هذه الخطوات، يمكنك تخصيص مخططاتك بسهولة لتلبية احتياجاتك الخاصة. سواء كنت تقوم بإعداد تقرير احترافي أو مجرد تجربة، فإن Aspose.Words for .NET يوفر المرونة والقوة لإنجاز المهمة. ترميز سعيد!
 
 ## الأسئلة الشائعة
 
@@ -124,4 +124,4 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### ما هي متطلبات النظام لـ Aspose.Words لـ .NET؟
 
- يتطلب Aspose.Words لـ .NET بيئة .NET. يمكن العثور على متطلبات النظام المحددة في[توثيق](https://reference.aspose.com/words/net/).
+ يتطلب Aspose.Words لـ .NET بيئة .NET. يمكن العثور على متطلبات النظام المحددة في[الوثائق](https://reference.aspose.com/words/net/).

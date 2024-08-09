@@ -15,10 +15,10 @@ url: /es/net/working-with-vba-macros/read-vba-macros/
 
 Antes de profundizar en el código, asegurémonos de que tiene todo lo que necesita:
 
-1.  Biblioteca Aspose.Words para .NET: para trabajar con documentos de Word, necesitará la última versión de Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: para trabajar con documentos de Word, necesitará la última versión de Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo .NET, como Visual Studio, es esencial para escribir y probar su código.
-3. Conocimientos básicos de C#: una comprensión básica de C# le ayudará a navegar por los fragmentos de código y los conceptos.
-4.  Documento de Word de muestra: tenga un[Documento de Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) con macros VBA listas. Esta será nuestra fuente para leer las macros.
+3. Conocimientos básicos de C#: una comprensión básica de C# le ayudará a navegar a través de los fragmentos de código y los conceptos.
+4.  Documento de Word de muestra: tenga un[documento de palabra](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) con macros VBA listas. Esta será nuestra fuente para leer las macros.
 
 ## Importar espacios de nombres
 
@@ -117,7 +117,7 @@ Este es un ejemplo sencillo de una macro de VBA que muestra un cuadro de mensaje
 
 ¡Y ahí lo tienes! Ha leído correctamente macros de VBA desde un documento de Word utilizando Aspose.Words para .NET. Este tutorial cubrió todo, desde configurar su entorno y cargar su documento hasta acceder al proyecto VBA y leer las macros. Con Aspose.Words tienes a tu disposición una poderosa herramienta para automatizar tareas, personalizar documentos y profundizar en el mundo de VBA.
 
- Si está ansioso por aprender más, el[Documentación API](https://reference.aspose.com/words/net/) es un gran lugar para comenzar. Y si alguna vez tiene preguntas o necesita ayuda, el[Foro de soporte](https://forum.aspose.com/c/words/8) está ahí para ti.
+ Si está ansioso por aprender más, el[Documentación API](https://reference.aspose.com/words/net/) es un gran lugar para comenzar. Y si alguna vez tiene preguntas o necesita ayuda, el[foro de soporte](https://forum.aspose.com/c/words/8) está ahí para ti.
 
 ¡Feliz codificación y que tus macros siempre funcionen sin problemas!
 

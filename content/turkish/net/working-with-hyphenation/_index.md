@@ -12,6 +12,6 @@ Tireleme ile Kelime İşleme, Aspose.Words for .NET kitaplığını kullanarak W
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Dillerin Tireli Kelimeleri](./hyphenate-words-of-languages/) | Aspose.Words for .NET'i kullanarak Word belgelerinde farklı dillerdeki kelimeleri nasıl tireleyeceğinizi öğrenin. |
-| [Dil İçin Tireleme Sözlüğünü Yükle](./load-hyphenation-dictionary-for-language/) |Aspose.Words for .NET'te belirli bir dil için tireleme sözlüğünü nasıl yükleyeceğinizi öğrenin. |
-| [Tireleme Geri Çağırma](./hyphenation-callback/) | Kelime tireleme işlemini gerçekleştirmek için Aspose.Words for .NET'te tireleme geri çağırmanın nasıl kullanılacağını öğrenin. |
+| [Dillerin Tireli Kelimeleri](./hyphenate-words-of-languages/) | Aspose.Words for .NET'i kullanarak farklı dillerdeki kelimeleri nasıl tireleyeceğinizi öğrenin. Belgenizin okunabilirliğini artırmak için bu ayrıntılı, adım adım kılavuzu izleyin. |
+| [Dil İçin Tireleme Sözlüğünü Yükle](./load-hyphenation-dictionary-for-language/) | Bu kapsamlı, adım adım eğitimde Aspose.Words for .NET kullanarak herhangi bir dil için tireleme sözlüğünü nasıl yükleyeceğinizi öğrenin. |
+| [Tireleme Geri Çağırma](./hyphenation-callback/) | Bu kapsamlı adım adım kılavuzla belge formatını geliştirmek için Aspose.Words for .NET'te tireleme geri çağırmayı uygulamayı öğrenin. |

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/document-formatting/asian-typography-line-break-group/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy nad tím, jak doladit typografii vašich dokumentů Word k dokonalosti? Zejména při práci s asijskými jazyky mohou být nuance zalomení řádků a formátování docela složité. Ale nebojte se, my jsme vám pomohli! V tomto komplexním průvodci se ponoříme do toho, jak můžete ovládat zalomení řádků asijské typografie v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento návod vás krok za krokem provede vším, co potřebujete vědět. Jste připraveni, aby vaše dokumenty vypadaly bezvadně? Začněme!
 
@@ -15,12 +15,12 @@ Přemýšleli jste někdy nad tím, jak doladit typografii vašich dokumentů Wo
 
 Než se pustíme do podrobností, je třeba mít na svém místě několik věcí. Zde je to, co budete potřebovat:
 
-- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud jste tak ještě neučinili, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud jste tak ještě neučinili, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Budete potřebovat vývojové prostředí, jako je Visual Studio.
 - Základní znalost C#: I když si vše vysvětlíme, základní znalost C# bude přínosem.
 - Dokument Word s asijskou typografií: Mějte dokument Word, který obsahuje asijskou typografii. Toto bude náš pracovní soubor.
 
-Máš všechno? Skvělý! Pojďme k nastavení vašeho projektu.
+Máš všechno? Velký! Pojďme k nastavení vašeho projektu.
 
 ## Importovat jmenné prostory
 
@@ -49,7 +49,7 @@ Dále potřebujeme získat přístup k formátu odstavce prvního odstavce ve va
 ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
 ```
 
-## Krok 3: Deaktivujte kontrolu přerušení čáry Dálného východu
+## Krok 3: Zakažte kontrolu přerušení čáry Dálného východu
 
 Nyní deaktivujeme kontrolu přerušení řádků Dálného východu. Toto nastavení určuje, jak se text zalamuje v asijských jazycích, a jeho vypnutím získáte větší kontrolu nad formátováním.
 
@@ -100,4 +100,4 @@ Ano, můžete procházet všechny odstavce v dokumentu a použít tato nastaven�
 Přestože je doporučeno Visual Studio, můžete použít jakékoli vývojové prostředí, které podporuje C# a .NET.
 
 ### Kde najdu další zdroje na Aspose.Words pro .NET?
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/) a pro jakékoli dotazy je velmi užitečné fórum podpory[tady](https://forum.aspose.com/c/words/8).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/) a pro jakékoli dotazy je velmi užitečné fórum podpory[zde](https://forum.aspose.com/c/words/8).

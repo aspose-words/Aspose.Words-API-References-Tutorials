@@ -12,6 +12,6 @@ Zpracování textu s poznámkami pod čarou a vysvětlivkami je komplexní zdroj
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Nastavit sloupce poznámek pod nohama](./set-foot-note-columns/) | Naučte se, jak nastavit počet sloupců pro poznámky pod čarou v dokumentech aplikace Word pomocí Aspose.Words for .NET. |
-| [Nastavit pozici poznámky pod čarou a konec poznámky](./set-footnote-and-end-note-position/) | Naučte se, jak nastavit polohu poznámek pod čarou a vysvětlivky v dokumentech aplikace Word pomocí Aspose.Words for .NET. |
-| [Nastavte možnosti Endnote](./set-endnote-options/) | Naučte se, jak nastavit možnosti koncových poznámek v dokumentech aplikace Word pomocí Aspose.Words for .NET. |
+| [Nastavit sloupce poznámek pod nohama](./set-foot-note-columns/) | Naučte se, jak nastavit sloupce poznámek pod čarou v dokumentech aplikace Word pomocí Aspose.Words for .NET. Snadno si přizpůsobte rozvržení poznámky pod čarou pomocí našeho podrobného průvodce. |
+| [Nastavit pozici poznámky pod čarou a konec poznámky](./set-footnote-and-end-note-position/) | Naučte se, jak nastavit pozice poznámek pod čarou a vysvětlivky v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. |
+| [Nastavte možnosti Endnote](./set-endnote-options/) | Naučte se, jak nastavit možnosti koncových poznámek v dokumentech aplikace Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem. |

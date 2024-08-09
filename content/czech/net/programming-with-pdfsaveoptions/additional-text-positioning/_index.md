@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa Aspose.Words pro .NET a odemknout kouzlo přesného umístění textu ve vašich PDF? Připoutejte se, protože tento průvodce vás vezme na vzrušující cestu kroky ke zlepšení umístění textu PDF pomocí funkce Další umístění textu. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vám poskytne vše, co potřebujete vědět.
 
@@ -86,7 +86,7 @@ Dodatečné umísťování textu zvyšuje přesnost umístění textu v PDF a za
 Ne, funkce Další umístění textu je specifická pro převody PDF.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
- Ano, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo zakoupit plnou licenci[tady](https://purchase.aspose.com/buy).
+ Ano, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo zakoupit plnou licenci[zde](https://purchase.aspose.com/buy).
 
 ### Je k dispozici bezplatná zkušební verze?
  Ano, můžete si stáhnout a[zkušební verze zdarma](https://releases.aspose.com/) Aspose.Words pro .NET.

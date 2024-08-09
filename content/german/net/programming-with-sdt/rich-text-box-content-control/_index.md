@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Neues Dokument erstellen
 
- Erstelle eine neue`Document` Objekt, das als Grundlage für Ihr Word-Dokument dient.
+ Erstellen Sie ein neues`Document` Objekt, das als Grundlage für Ihr Word-Dokument dient.
 
 ```csharp
 Document doc = new Document();
@@ -68,7 +68,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
 ## Schritt 4: Inhalt zum Rich-Text-Feld hinzufügen
 
- Ein ... kreieren`Paragraph` und ein`Run` Objekt, das den Inhalt enthält, den Sie im Rich-Text-Feld anzeigen möchten. Passen Sie den Text und die Formatierung nach Bedarf an.
+ Erstellen Sie ein`Paragraph` und ein`Run` Objekt, das den Inhalt enthält, den Sie im Rich-Text-Feld anzeigen möchten. Passen Sie den Text und die Formatierung nach Bedarf an.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -83,7 +83,7 @@ In diesem Beispiel fügen wir der Rich-Text-Box einen Absatz mit dem Text „Hal
 
 ## Schritt 5: Rich-Text-Feld an das Dokument anhängen
 
- Ergänzen Sie die`StructuredDocumentTag` zum Hauptteil des Dokuments.
+ Fügen Sie den`StructuredDocumentTag` zum Hauptteil des Dokuments.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);

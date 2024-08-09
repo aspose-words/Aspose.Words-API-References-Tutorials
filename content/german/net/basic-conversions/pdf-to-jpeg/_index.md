@@ -91,4 +91,4 @@ Das ist es tatsächlich. Aspose.Words unterstützt sowohl .NET Framework als auc
  Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/) oder eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
 
 ### Wo finde ich weitere Tutorials zu Aspose.Words?
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) für eine Vielzahl von Tutorials und Anleitungen.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für eine Vielzahl von Tutorials und Anleitungen.

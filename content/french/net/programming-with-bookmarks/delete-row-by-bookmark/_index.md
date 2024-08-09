@@ -9,7 +9,7 @@ url: /fr/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 ## Introduction
 
-Supprimer une ligne par signet dans un document Word peut sembler compliqué, mais avec Aspose.Words pour .NET, c'est un jeu d'enfant. Ce guide vous expliquera tout ce que vous devez savoir pour accomplir cette tâche efficacement. Prêt à plonger ? Commençons!
+Supprimer une ligne par signet dans un document Word peut sembler compliqué, mais avec Aspose.Words pour .NET, c'est un jeu d'enfant. Ce guide vous expliquera tout ce que vous devez savoir pour accomplir cette tâche efficacement. Prêt à plonger ? Commençons !
 
 ## Conditions préalables
 
@@ -72,7 +72,7 @@ doc.Save("output-document.docx");
 
 ## Conclusion
 
-Et voila! La suppression d'une ligne par signet dans un document Word à l'aide d'Aspose.Words for .NET est simple lorsque vous la décomposez en étapes simples. Cette méthode garantit que vous pouvez cibler et supprimer avec précision des lignes en fonction des signets, rendant ainsi vos tâches de gestion de documents plus efficaces.
+Et voilà ! La suppression d'une ligne par signet dans un document Word à l'aide d'Aspose.Words for .NET est simple lorsque vous la décomposez en étapes simples. Cette méthode garantit que vous pouvez cibler et supprimer avec précision des lignes en fonction des signets, rendant ainsi vos tâches de gestion de documents plus efficaces.
 
 ## FAQ
 

@@ -9,7 +9,7 @@ url: /tr/net/programming-with-styles-and-themes/copy-styles/
 ---
 ## giriiş
 
-Bir belgenin başka bir belgeyle tutarlı görünmesini sağlamanız gerekiyorsa, muhtemelen stilleri kopyalama zorluğuyla karşı karşıya kalmışsınızdır. Her yeni raporun mevcut şablonun stiliyle eşleşmesini sağlamakla görevli bir tasarımcı olduğunuzu hayal edin. Aspose.Words for .NET'i kullanarak bu görevi basitleştirebilir ve belgelerinizin net ve düzgün görünmesini sağlayabilirsiniz. Bu eğitimde, stilleri bir Word belgesinden diğerine zahmetsizce nasıl kopyalayabileceğinizi ele alacağız. Başlayalım!
+Bir belgenin başka bir belgeyle tutarlı görünmesini sağlamanız gerekiyorsa, muhtemelen stilleri kopyalama zorluğuyla karşı karşıya kalmışsınızdır. Her yeni raporun mevcut şablonun stiliyle eşleşmesini sağlamakla görevli bir tasarımcı olduğunuzu hayal edin. Aspose.Words for .NET'i kullanarak bu görevi basitleştirebilir ve belgelerinizin net ve düzgün görünmesini sağlayabilirsiniz. Bu eğitimde, stilleri bir Word belgesinden diğerine zahmetsizce nasıl kopyalayabileceğinizi ele alacağız. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -68,14 +68,14 @@ Bu kod, değiştirilen belgeyi yeni bir adla kaydeder ve orijinal dosyalarınız
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak stilleri Word belgeleri arasında kopyalamak, alıştığınızda basit bir işlemdir. Bu adımları izleyerek belgelerinizin tutarlı bir görünüm ve izlenime sahip olmasını sağlayarak çalışmanızı daha verimli ve profesyonel hale getirirsiniz. İster bir raporu güncelliyor olun ister yeni bir şablon oluşturuyor olun, bu yöntem zamandan ve emekten tasarruf etmenizi sağlayarak biçimlendirme yerine içeriğe odaklanmanıza olanak tanır.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak stilleri Word belgeleri arasında kopyalamak, alıştığınızda basit bir işlemdir. Bu adımları izleyerek belgelerinizin tutarlı bir görünüm ve izlenime sahip olmasını sağlayarak çalışmanızı daha verimli ve profesyonel hale getirirsiniz. İster bir raporu güncelliyor olun ister yeni bir şablon oluşturuyor olun, bu yöntem zamandan ve emekten tasarruf etmenizi sağlayarak biçimlendirme yerine içeriğe odaklanmanıza olanak tanır.
 
 ## SSS'ler
 
 ###  Amacı nedir?`CopyStylesFromTemplate` method?  
 `CopyStylesFromTemplate` yöntem, stilleri bir belgeden diğerine kopyalayarak hedef belgenin kaynak belgenin biçimlendirmesini devralmasını sağlar.
 
-###  Kullanabilirmiyim`CopyStylesFromTemplate` with documents in different formats?  
+###  Kullanabilir miyim`CopyStylesFromTemplate` with documents in different formats?  
  Hayır,`CopyStylesFromTemplate` yöntem yalnızca aynı formattaki (genellikle DOCX) belgelerle çalışır.
 
 ### Stillerin başarıyla kopyalanıp kopyalanmadığını nasıl kontrol edebilirim?  

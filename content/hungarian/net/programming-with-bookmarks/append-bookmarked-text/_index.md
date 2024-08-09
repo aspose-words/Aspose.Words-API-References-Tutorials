@@ -9,13 +9,13 @@ url: /hu/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Bevezetés
 
-Halihó! Próbált már szöveget hozzáfűzni egy Word-dokumentum könyvjelzővel ellátott szakaszából, és trükkösnek találta? szerencséd van! Ez az oktatóanyag végigvezeti a folyamaton az Aspose.Words for .NET használatával. Egyszerű lépésekre bontjuk, hogy könnyen követhesse. Merüljünk el, és fűzzük hozzá a könyvjelzővel ellátott szöveget, mint egy profi!
+Szia! Próbált már szöveget hozzáfűzni egy Word-dokumentum könyvjelzővel ellátott szakaszából, és trükkösnek találta? szerencséd van! Ez az oktatóanyag végigvezeti a folyamaton az Aspose.Words for .NET használatával. Egyszerű lépésekre bontjuk, hogy könnyen követhesse. Merüljünk el, és fűzzük hozzá a könyvjelzővel ellátott szöveget, mint egy profi!
 
 ## Előfeltételek
 
 Mielőtt elkezdenénk, győződjünk meg arról, hogy rendelkezik-e mindennel, amire szüksége van:
 
--  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: Bármely .NET fejlesztői környezet, például a Visual Studio.
 - Alapvető C# ismerete: Az alapvető C# programozási fogalmak megértése segít.
 - Word-dokumentum könyvjelzőkkel: Word-dokumentum könyvjelzőkkel, amelyekből szöveget fűzünk hozzá.
@@ -68,7 +68,7 @@ if (startPara == null || endPara == null)
 Biztosítanunk kell, hogy a kezdő és a záró bekezdésnek ugyanaz a szülője legyen. Ez egy egyszerű forgatókönyv, hogy a dolgok egyértelműek legyenek.
 
 ```csharp
-// Korlátozzuk magunkat egy meglehetősen egyszerű forgatókönyvre.
+// Korlátozzuk magunkat egy ésszerűen egyszerű forgatókönyvre.
 if (startPara.ParentNode != endPara.ParentNode)
     throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```

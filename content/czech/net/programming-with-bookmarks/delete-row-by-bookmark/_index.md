@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
-## Úvod
+## Zavedení
 
 Odstranění řádku pomocí záložky v dokumentu aplikace Word může znít složitě, ale s Aspose.Words pro .NET je to hračka. Tento průvodce vás provede vším, co potřebujete vědět, abyste tento úkol zvládli efektivně. Jste připraveni se ponořit? Začněme!
 

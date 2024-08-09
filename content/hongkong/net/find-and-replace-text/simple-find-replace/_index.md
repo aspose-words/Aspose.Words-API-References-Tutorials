@@ -97,15 +97,15 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 
 ## 結論
 
-現在你就擁有了！您剛剛使用 Aspose.Words for .NET 自動化了在 Word 文件中尋找和取代文字的過程。不再需要手動更新，也不再出現錯誤。無論您是準備報告、產生個人化信件，還是只是管理文件內容，這種簡單而強大的技術都可以為您節省大量時間。
+現在你就得到它了！您剛剛使用 Aspose.Words for .NET 自動化了在 Word 文件中尋找和取代文字的過程。不再需要手動更新，也不再出現錯誤。無論您是準備報告、產生個人化信件，還是只是管理文件內容，這種簡單而強大的技術都可以為您節省大量時間。
 
 ## 常見問題解答
 
 ### 我可以一次替換多個不同的文字嗎？
-是的你可以。只需致電`Replace`您要替換的每個文字的方法。
+是的，你可以。只需致電`Replace`您要替換的每個文字的方法。
 
 ### Aspose.Words for .NET 是免費的嗎？
-Aspose.Words for .NET 提供免費試用版，但要獲得完整功能，您需要購買授權。看看他們的[價錢](https://purchase.aspose.com/buy)更多細節。
+Aspose.Words for .NET 提供免費試用版，但要獲得完整功能，您需要購買授權。看看他們的[定價](https://purchase.aspose.com/buy)了解更多詳情。
 
 ### 我可以用格式替換文字嗎？
 絕對地！您可以使用以下命令替換文字並套用格式`FindReplaceOptions`班級。

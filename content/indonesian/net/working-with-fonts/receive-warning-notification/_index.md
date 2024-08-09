@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/receive-warning-notification/
 ---
+## Perkenalan
 
 Apakah Anda lelah menghadapi masalah font yang tidak terduga di dokumen Anda? Dengan Aspose.Words untuk .NET, Anda bisa mendapatkan pemberitahuan tentang potensi masalah apa pun selama pemrosesan dokumen, sehingga lebih mudah menjaga kualitas dokumen. Panduan komprehensif ini akan memandu Anda dalam menyiapkan pemberitahuan peringatan di Aspose.Words, memastikan Anda tidak pernah melewatkan peringatan penting lagi.
 
@@ -17,7 +18,7 @@ Sebelum kita mendalaminya, pastikan Anda memiliki hal berikut:
 - Pengetahuan Dasar C#: Keakraban dengan C# akan membantu Anda memahami dan menerapkan langkah-langkahnya.
 -  Aspose.Words untuk .NET Library: Unduh dan instal dari[tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Pengaturan seperti Visual Studio untuk menulis dan menjalankan kode Anda.
--  Contoh Dokumen: Miliki contoh dokumen (misalnya,`Rendering.docx`) bekerja dengan.
+-  Contoh Dokumen: Miliki contoh dokumen (misalnya,`Rendering.docx`) untuk diajak bekerja sama.
 
 ## Impor Namespace
 
@@ -87,7 +88,7 @@ Dengan mengikuti langkah-langkah ini, Anda telah mengonfigurasi aplikasi Anda un
 
 ## Kesimpulan
 
-Anda sekarang telah menguasai proses penerimaan notifikasi untuk penggantian font menggunakan Aspose.Words untuk .NET. Keterampilan ini akan membantu Anda memastikan bahwa dokumen Anda selalu terlihat terbaik, bahkan ketika font yang diperlukan tidak tersedia. Teruslah bereksperimen dengan pengaturan berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
+Anda sekarang telah menguasai proses menerima pemberitahuan untuk penggantian font menggunakan Aspose.Words untuk .NET. Keterampilan ini akan membantu Anda memastikan bahwa dokumen Anda selalu terlihat terbaik, bahkan ketika font yang diperlukan tidak tersedia. Teruslah bereksperimen dengan pengaturan berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
 
 ## FAQ
 
@@ -101,11 +102,11 @@ Tidak, Anda hanya dapat menentukan satu font default untuk substitusi. Namun, An
 
 ###  Q3: Dapatkah saya menangani jenis peringatan lainnya`IWarningCallback`?
 
- Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
+ Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, tidak hanya penggantian font.
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 
- Mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
+ Kunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
 
 ### Q5: Apakah mungkin untuk mendapatkan lisensi sementara untuk Aspose.Words?
 

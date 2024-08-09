@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 ## Phần kết luận
 
-Chúc mừng! Bạn vừa học cách xóa văn bản khỏi một phạm vi trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này bao gồm việc thiết lập thư mục dự án của bạn, tải tài liệu, xóa văn bản khỏi một phần cụ thể và lưu tài liệu đã sửa đổi. Aspose.Words for .NET cung cấp một bộ công cụ mạnh mẽ để thao tác tài liệu Word và đây chỉ là phần nổi của tảng băng chìm.
+Chúc mừng! Bạn vừa học cách xóa văn bản khỏi một phạm vi trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này bao gồm việc thiết lập thư mục dự án của bạn, tải tài liệu, xóa văn bản khỏi một phần cụ thể và lưu tài liệu đã sửa đổi. Aspose.Words for .NET cung cấp một bộ công cụ mạnh mẽ để thao tác tài liệu Word và đây chỉ là phần nổi của tảng băng trôi.
 
 ## Câu hỏi thường gặp
 

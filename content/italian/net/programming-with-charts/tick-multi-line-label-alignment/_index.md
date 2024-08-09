@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
-## introduzione
+## Introduzione
 
 Ehi, appassionati di tecnologia! Ti sei mai trovato a grattarti la testa, chiedendoti come spuntare l'allineamento delle etichette su più righe in un grafico utilizzando Aspose.Words per .NET? Se stai annuendo con la testa in questo momento, sei nel posto giusto! In questa guida completa, ti guideremo attraverso ogni angolo di questo processo. Dall'impostazione dei prerequisiti all'immersione nel nocciolo della codifica, ti copriamo noi. Quindi, prendi una tazza di caffè, siediti e diamoci da fare!
 
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Inseriamo un grafico nel nostro documento. Utilizzeremo un grafico a dispersione per questo esempio.
 
- Usando il`InsertChart` metodo del`DocumentBuilder` class, possiamo inserire un grafico a dispersione nel nostro documento.
+ Utilizzando il`InsertChart` metodo del`DocumentBuilder` class, possiamo inserire un grafico a dispersione nel nostro documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -82,9 +82,9 @@ ChartAxis axis = shape.Chart.AxisX;
 
 ## Passaggio 6: impostare l'allineamento dell'etichetta di spunta
 
-Adesso arriva la magia! Imposteremo l'allineamento dell'etichetta di spunta per le etichette su più righe.
+Ora arriva la magia! Imposteremo l'allineamento dell'etichetta di spunta per le etichette su più righe.
 
- Impostare il`TickLabelAlignment` proprietà dell'asse a`ParagraphAlignment.Right`.
+ Imposta il`TickLabelAlignment` proprietà dell'asse a`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai selezionato con successo l'allineamento delle etichette su più righe in un grafico utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi personalizzare facilmente i tuoi grafici per soddisfare le tue esigenze specifiche. Che tu stia preparando un rapporto professionale o semplicemente sperimentando, Aspose.Words per .NET offre la flessibilità e la potenza per portare a termine il lavoro. Buona programmazione!
+Ed ecco qua! Hai selezionato con successo l'allineamento delle etichette su più righe in un grafico utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi personalizzare facilmente i tuoi grafici per soddisfare le tue esigenze specifiche. Che tu stia preparando un rapporto professionale o semplicemente sperimentando, Aspose.Words per .NET offre la flessibilità e la potenza per portare a termine il lavoro. Buona programmazione!
 
 ## Domande frequenti
 

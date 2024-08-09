@@ -129,7 +129,7 @@ Ce code enregistre le document avec le tableau inséré.
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à insérer un tableau directement dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus peut être utilisé pour créer des tableaux complexes par programme, ce qui facilite grandement vos tâches d'automatisation de documents. Que vous génériez des rapports, des factures ou tout autre type de document, comprendre comment manipuler les tableaux est une compétence cruciale.
+Félicitations! Vous avez réussi à insérer un tableau directement dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus peut être utilisé pour créer des tableaux complexes par programme, ce qui facilite grandement vos tâches d'automatisation de documents. Que vous génériez des rapports, des factures ou tout autre type de document, comprendre comment manipuler les tableaux est une compétence cruciale.
 
 ## FAQ
 

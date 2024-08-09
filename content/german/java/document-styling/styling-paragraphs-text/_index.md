@@ -185,7 +185,7 @@ Das Erstellen von Listen mit Aufzählungszeichen oder Nummerierungen ist eine g�
 // Neues Dokument erstellen
 Document doc = new Document();
 
-// Erstelle eine Liste
+// Erstellen einer Liste
 List list = new List(doc);
 
 // Listenelemente mit Aufzählungszeichen hinzufügen
@@ -282,7 +282,7 @@ doc.save("PageLayoutDocument.docx");
 
 In diesem Beispiel legen wir auf allen Seiten der Seite gleiche Ränder von 1 Zoll fest.
 
-## Kopf-und Fußzeile
+## Kopf- und Fußzeile
 
 Kopf- und Fußzeilen sind wichtig, um jeder Seite Ihres Dokuments konsistente Informationen hinzuzufügen. So arbeiten Sie mit Kopf- und Fußzeilen:
 

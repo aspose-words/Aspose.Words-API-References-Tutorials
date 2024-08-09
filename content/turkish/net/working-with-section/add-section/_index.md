@@ -83,7 +83,7 @@ Yeni bir bölüm ekledikten sonra onu da tıpkı ilk bölüm gibi içerikle dold
 
 ### Yeni Bölüm için DocumentBuilder'ı Kullanma
 
-Yeni bölüme içerik eklemek için`DocumentBuilder` imleci yeni bölüme getirin:
+ Yeni bölüme içerik eklemek için`DocumentBuilder` imleci yeni bölüme getirin:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ Hayır, bölümler birbirinin içine yerleştirilemez. Ancak, her biri kendine �
 
 ### Aspose.Words'te daha fazla kaynağı nerede bulabilirim?
 
- Daha fazla bilgi için şu adresi ziyaret edebilirsiniz:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) ya da[destek Forumu](https://forum.aspose.com/c/words/8) Yardım ve tartışmalar için.
+ Daha fazla bilgi için şu adresi ziyaret edebilirsiniz:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya[destek forumu](https://forum.aspose.com/c/words/8) Yardım ve tartışmalar için.

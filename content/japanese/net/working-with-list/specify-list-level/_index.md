@@ -2,19 +2,41 @@
 title: リストレベルを指定する
 linktitle: リストレベルを指定する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書のリスト レベルを指定する方法を学習します。
+description: Aspose.Words for .NET を使用して、Word 文書に複数レベルの番号付きリストと箇条書きリストを作成する方法を学びます。ステップ バイ ステップ ガイドが含まれています。.NET 開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-list/specify-list-level/
 ---
+## 導入
 
-このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のリスト レベルを指定する方法を説明します。提供されている C# ソース コードについて説明し、独自のプロジェクトに実装する方法を示します。
+こんにちは、コーダーの皆さん! .NET を使用して Word 文書で動的で洗練されたリストを作成することに苦労したことがあるなら、きっと楽しいことが待っています。今日は、Aspose.Words for .NET の世界に飛び込みます。具体的には、リスト レベルの指定に焦点を当てます。これは、ドキュメント ゲームのレベル アップであり、プロフェッショナルで洗練されたリストを簡単に作成できると考えてください。このガイドの最後まで読めば、複数のレベルで番号付きリストと箇条書きリストの両方を作成するための明確な道筋がわかります。準備はできましたか? さっそく始めましょう!
 
-始めるには、開発環境にAspose.Words for .NETがインストールされ、構成されていることを確認してください。まだインストールしていない場合は、次の場所からライブラリをダウンロードしてインストールしてください。[Aspose.Releases]https://releases.aspose.com/words/net/.
+## 前提条件
 
-## ステップ1: ドキュメントとドキュメントジェネレーターの作成
+細かい点に入る前に、必要なものがすべて揃っていることを確認しましょう。簡単なチェックリストを以下に示します。
 
-まず、新しいドキュメントと関連するドキュメント ジェネレーターを作成します。
+1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio のような IDE を使用すると、作業が楽になります。
+3. .NET Framework: マシンに .NET Framework がインストールされていることを確認します。
+4. C# の基本的な理解: このチュートリアルでは、基本的な C# プログラミングに精通していることを前提としています。
+
+すべて揃いましたか? 素晴らしい! さあ、始めましょう。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートする必要があります。C# プロジェクトを開き、次の using ディレクティブを追加します。
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+これにより、プロジェクトで Aspose.Words を使用する準備が整います。
+
+## ステップ 1: ドキュメントと DocumentBuilder の設定
+
+まずは新しい文書を作成し、`DocumentBuilder`オブジェクトを操作する。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,113 +44,83 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ2: 番号付きリストの作成と適用
+## ステップ2: 番号付きリストを作成する
 
-次に、Microsoft Word のリスト テンプレートの 1 つに基づいて番号付きリストを作成し、それをドキュメント ビルダーの現在の段落に適用します。
+さて、Microsoft Wordのリストテンプレートの1つに基づいて番号付きリストを作成し、それを適用します。`DocumentBuilder`'現在の段落。
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## ステップ3: リストレベルの仕様
+## ステップ3: 複数のリストレベルを適用する
 
-ドキュメントビルダーの`ListLevelNumber`リスト レベルを指定し、段落にテキストを追加するプロパティ:
+Aspose.Words では、リストに最大 9 つのレベルを指定できます。これらすべてを適用して、どのように機能するかを確認してみましょう。
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-これらの手順を繰り返してリスト レベルを指定し、各レベルでテキストを追加します。
+このループでは、各段落のリスト レベルを設定し、そのレベルを示すテキスト行を記述します。
 
-## ステップ4: 箇条書きリストの作成と適用
+## ステップ4: 箇条書きリストを作成する
 
-Microsoft Word のリスト テンプレートのいずれかを使用して、箇条書きリストを作成して適用することもできます。
+次に、方向を変えて箇条書きリストを作成しましょう。今回は、別のリスト テンプレートを使用します。
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## ステップ5: 箇条書きリストレベルにテキストを追加する
+## ステップ 5: 箇条書きリストに複数のレベルを適用する
 
-使用`ListLevelNumber`プロパティを再度使用して、箇条書きリストのレベルを指定し、テキストを追加します。
+番号付きリストと同様に、箇条書きリストにも複数のレベルを適用します。
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-## ステップ6: リストの書式設定を停止する
+## ステップ6: リストのフォーマットを停止する
 
-リストの書式設定を停止するには、`null`に`List`ドキュメントジェネレータのプロパティ:
-
-```csharp
-builder. ListFormat. List = null;
-```
-
-## ステップ7: 変更したドキュメントを保存する
-
-変更したドキュメントを保存します。
+最後に、リストの書式設定を停止して通常のテキストに戻す方法を見てみましょう。
 
 ```csharp
-builder.Document.Save(dataDir + "SpecifyListLevel.docx");
-```
-
-これで、Aspose.Words for .NET を使用して Word 文書のリスト レベルを正常に指定できました。
-
-### リストレベルを指定するためのサンプルソースコード
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Microsoft Wordのリストテンプレートの1つに基づいて番号付きリストを作成します
-//それをドキュメント ビルダーの現在の段落に適用します。
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
-
-//このリストには 9 つのレベルがあります。すべて試してみましょう。
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Microsoft Wordのリストテンプレートの1つに基づいて箇条書きリストを作成します
-//それをドキュメント ビルダーの現在の段落に適用します。
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
-
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-//これはリストのフォーマットを停止する方法です。
 builder.ListFormat.List = null;
-
-builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
-            
 ```
 
-### よくある質問
+## ステップ7: ドキュメントを保存する
 
-#### Q: Aspose.Words でリスト レベルを指定するにはどうすればよいですか?
+大変な作業が終わったら、ドキュメントを保存します。意味のある名前を付けて保存しましょう。
 
- A: Aspose.Wordsでリストレベルを指定するには、`List`クラスを作成し、番号付きリストを作成します。その後、`Paragraph.ListFormat.ListLevelNumber`各リスト項目のレベルを指定するプロパティ。このリストをドキュメントのセクションに関連付けることで、リスト項目が目的のレベルになるようにすることができます。
+```csharp
+builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
+```
 
-#### Q: Aspose.Words のリスト項目の番号付け形式を変更することは可能ですか?
+これで完了です。Aspose.Words for .NET を使用して、複雑なリスト構造を持つドキュメントを作成しました。
 
- A: はい、Aspose.Wordsのリスト項目の番号付け形式を変更することができます。`ListLevel`クラスは、これに関するいくつかのプロパティを提供します。`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`これらのプロパティを使用して、アラビア数字、ローマ数字、文字など、リスト項目の番号付け形式を設定できます。
+## 結論
 
-#### Q: Aspose.Words の番号付きリストに追加のレベルを追加できますか?
+Word 文書に構造化された複数レベルのリストを作成すると、読みやすさと専門性が大幅に向上します。Aspose.Words for .NET を使用すると、このプロセスを自動化して時間を節約し、一貫性を確保できます。このガイドが、リスト レベルを効果的に指定する方法を理解するのに役立つことを願っています。実験を続け、このツールがドキュメント処理のニーズにどれほど役立つかを確認してください。
 
- A: はい、Aspose.Wordsでは番号付きリストにレベルを追加することができます。`ListLevel`クラスを使用すると、リストの各レベルの書式設定プロパティを設定できます。プレフィックス、サフィックス、配置、インデントなどのオプションを設定できます。これにより、複数の階層レベルを持つリストを作成できます。
+## よくある質問
 
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、C# でプログラム的に Word 文書を作成、編集、変換、印刷できる強力なライブラリです。
 
+### Aspose.Words を無料で使用できますか?
+Aspose.Wordsは無料でダウンロードできる試用版を提供しています。[ここ](https://releases.aspose.com/)フルバージョンについては、購入オプションを確認してください。[ここ](https://purchase.aspose.com/buy).
+
+### Aspose.Words を使用してリストに指定できるレベル数はいくつですか?
+Aspose.Words を使用すると、リストに最大 9 つのレベルを指定できます。
+
+### 1 つのドキュメント内で番号付きリストと箇条書きリストを混在させることは可能ですか?
+はい、必要に応じてリスト テンプレートを切り替えることで、1 つのドキュメント内に異なるタイプのリストを混在させることができます。
+
+### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
+詳細なドキュメントは以下をご覧ください[ここ](https://reference.aspose.com/words/net/).

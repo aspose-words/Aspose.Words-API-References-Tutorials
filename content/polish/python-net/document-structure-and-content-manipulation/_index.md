@@ -61,7 +61,7 @@ Dowiedz się, jak formatować akapity i tekst w dokumentach programu Word przy u
 ### [Śledzenie i przeglądanie wersji dokumentów](./document-revisions/)
 Dowiedz się, jak śledzić i przeglądać wersje dokumentów za pomocą Aspose.Words dla Pythona. Przewodnik krok po kroku z kodem źródłowym umożliwiający efektywną współpracę. Usprawnij zarządzanie dokumentami już dziś!
 ### [Zarządzanie sekcjami i układem dokumentu](./document-sections/)
-Dowiedz się, jak zarządzać sekcjami i układami dokumentów za pomocą Aspose.Words dla Pythona. Twórz, modyfikuj sekcje, dostosowuj układy i nie tylko. Zacznij teraz! 
+Dowiedz się, jak zarządzać sekcjami i układami dokumentów za pomocą Aspose.Words dla Pythona. Twórz, modyfikuj sekcje, dostosowuj układy i nie tylko. Zacznij już teraz! 
 ### [Wzbogacanie zawartości wizualnej za pomocą pól tekstowych w dokumentach programu Word](./document-textboxes/)
 Ulepsz wizualizację dokumentów za pomocą Aspose.Words Python! Dowiedz się krok po kroku, jak tworzyć i dostosowywać pola tekstowe w dokumentach programu Word. Ulepsz układ, formatowanie i styl treści, aby uzyskać atrakcyjne dokumenty.
 ### [Odblokowanie zaawansowanej automatyzacji za pomocą makr VBA w dokumentach Word](./document-vba-macros/)

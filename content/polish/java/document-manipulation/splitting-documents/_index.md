@@ -96,7 +96,7 @@ W tym przewodniku omówiliśmy różne techniki dzielenia dokumentów w Aspose.W
 
 ### Jak mogę rozpocząć pracę z Aspose.Words dla Java?
 
- Rozpoczęcie pracy z Aspose.Words dla Java jest łatwe. Możesz pobrać bibliotekę ze strony Aspose i postępować zgodnie z dokumentacją, aby uzyskać instrukcje dotyczące instalacji i użytkowania. Odwiedzać[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) po więcej szczegółów.
+ Rozpoczęcie pracy z Aspose.Words dla Java jest łatwe. Możesz pobrać bibliotekę ze strony Aspose i postępować zgodnie z dokumentacją, aby uzyskać instrukcje dotyczące instalacji i użytkowania. Odwiedzać[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/) aby uzyskać więcej szczegółów.
 
 ### Jakie są kluczowe funkcje Aspose.Words dla Java?
 
@@ -108,7 +108,7 @@ Tak, Aspose.Words for Java doskonale nadaje się do pracy z dużymi dokumentami.
 
 ### Czy mogę ponownie scalić podzielone dokumenty za pomocą Aspose.Words dla Java?
 
-Absolutnie. Aspose.Words for Java umożliwia płynne łączenie podzielonych dokumentów, zapewniając możliwość pracy zarówno z pojedynczymi częściami, jak i całym dokumentem, w razie potrzeby.
+Absolutnie. Aspose.Words dla Java umożliwia płynne łączenie podzielonych dokumentów, zapewniając możliwość pracy zarówno z pojedynczymi częściami, jak i całym dokumentem, w razie potrzeby.
 
 ### Gdzie mogę uzyskać dostęp do Aspose.Words dla Java i zacząć z niego korzystać?
 

@@ -82,7 +82,7 @@ Att skapa och anpassa tabeller i Aspose.Words för .NET är enkelt när du väl 
  Ja, du kan lägga till så många celler du behöver i rad genom att upprepa`InsertCell()`och`Writeln()` metoder.
 
 ### Hur slår jag ihop celler i en tabell?
- Du kan slå samman celler med hjälp av`CellFormat.HorizontalMerge`och`CellFormat.VerticalMerge` egenskaper.
+ Du kan slå samman celler med hjälp av`CellFormat.HorizontalMerge`och`CellFormat.VerticalMerge` fastigheter.
 
 ### Är det möjligt att lägga till bilder i tabellceller?
  Absolut! Du kan infoga bilder i celler med hjälp av`DocumentBuilder.InsertImage` metod.

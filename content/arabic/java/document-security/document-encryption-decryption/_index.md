@@ -17,7 +17,7 @@ url: /ar/java/document-security/document-encryption-decryption/
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-- [مجموعة تطوير جافا (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) المثبتة.
+- [مجموعة تطوير جافا (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) مثبتة.
 - [Aspose.Words لجافا](https://products.aspose.com/words/java) مكتبة. يمكنك تنزيله من[هنا](https://downloads.aspose.com/words/java).
 
 ## الخطوة 1: إنشاء مشروع جافا

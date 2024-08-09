@@ -45,7 +45,7 @@ Ställ in sökvägen till din katalog så här:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina Word-dokument finns. Den här katalogen kommer att vara vårt arbetsutrymme för handledningen.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina Word-dokument finns. Den här katalogen kommer att vara vårt arbetsutrymme för handledningen.
 
 ## Steg 2: Ladda Word-dokumentet
 

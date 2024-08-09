@@ -15,7 +15,7 @@ url: /es/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 
 Antes de entrar en detalles, asegurémonos de tener todo lo que necesitamos:
 
-1.  Aspose.Words para .NET: asegúrese de tener la última versión.[Descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener la última versión.[Descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE compatible con C#.
 3. Conocimientos básicos de C#: es útil tener un poco de familiaridad con C# y .NET Framework.
 4. Licencia: Puede utilizar una licencia temporal si no tiene una completa. Consíguelo[aquí](https://purchase.aspose.com/temporary-license/).

@@ -92,7 +92,7 @@ Enfin, enregistrez le document dans le répertoire spécifié.
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-Et voila! Vous avez réussi à modifier les paramètres régionaux de votre document Word à l'aide d'Aspose.Words pour .NET.
+Et voilà ! Vous avez réussi à modifier les paramètres régionaux de votre document Word à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 

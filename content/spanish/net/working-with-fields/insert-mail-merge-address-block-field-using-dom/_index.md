@@ -60,7 +60,7 @@ builder.MoveTo(para);
 
 ## Paso 4: inserte el campo del bloque de dirección
 
-Aquí es donde ocurre la magia. Insertaremos un campo Bloque de direcciones de combinación de correspondencia usando el generador. El`InsertField` El método se utiliza para crear el campo.
+Aquí es donde ocurre la magia. Insertaremos un campo Bloque de direcciones de combinación de correspondencia usando el constructor. El`InsertField` El método se utiliza para crear el campo.
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
@@ -122,4 +122,4 @@ Un bloque de direcciones de combinación de correspondencia es un campo en Word 
  Puede obtener soporte de la comunidad de Aspose y del equipo técnico.[aquí](https://forum.aspose.com/c/words/8).
 
 ### ¿Puedo automatizar otros aspectos de los documentos de Word con Aspose.Words?
-¡Absolutamente! Aspose.Words para .NET proporciona una amplia gama de funciones para automatizar la generación, edición, conversión y más de documentos. Revisar la[documentación](https://reference.aspose.com/words/net/) para más detalles.
+¡Absolutamente! Aspose.Words para .NET proporciona una amplia gama de funciones para automatizar la generación, edición, conversión y más de documentos. Mira el[documentación](https://reference.aspose.com/words/net/) para más detalles.

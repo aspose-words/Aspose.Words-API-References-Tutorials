@@ -60,7 +60,7 @@ Console.WriteLine("\nTable index is " + tableIndex);
 
 ## Langkah 4: Temukan Indeks Baris Terakhir
 
- Untuk menemukan baris terakhir tabel, kami menggunakan`LastRow` Properti. Ini berguna ketika Anda perlu memanipulasi atau mengambil data dari baris terakhir.
+ Untuk menemukan baris terakhir tabel, kami menggunakan`LastRow` milik. Ini berguna ketika Anda perlu memanipulasi atau mengambil data dari baris terakhir.
 
 ```csharp
 int rowIndex = table.IndexOf(table.LastRow);

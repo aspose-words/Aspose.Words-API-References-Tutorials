@@ -17,7 +17,7 @@ Sebelum mendalami tutorial ini, pastikan Anda memiliki prasyarat berikut:
 - Pengetahuan dasar bahasa pemrograman C#.
 - Visual Studio diinstal pada sistem Anda.
 -  Aspose.Words untuk perpustakaan .NET terintegrasi ke dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
-- Akses ke Aspose.Words untuk .NET[dokumentasi](https://reference.aspose.com/words/net/) sebagai referensi.
+- Akses ke Aspose.Words untuk .NET[dokumentasi](https://reference.aspose.com/words/net/) untuk referensi.
 
 ## Impor Namespace
 

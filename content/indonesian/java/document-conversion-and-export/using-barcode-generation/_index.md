@@ -76,7 +76,7 @@ Ya, Anda dapat menghasilkan barcode dari data teks dengan memberikan teks yang d
 
 ### Apakah Aspose.Words untuk Java cocok untuk pemrosesan dokumen skala besar?
 
-Sangat! Aspose.Words untuk Java dirancang untuk menangani pemrosesan dokumen berskala besar secara efisien. Ini banyak digunakan dalam aplikasi tingkat perusahaan.
+Sangat! Aspose.Words untuk Java dirancang untuk menangani pemrosesan dokumen skala besar secara efisien. Ini banyak digunakan dalam aplikasi tingkat perusahaan.
 
 ### Apakah ada persyaratan lisensi untuk menggunakan Aspose.Words untuk Java?
 

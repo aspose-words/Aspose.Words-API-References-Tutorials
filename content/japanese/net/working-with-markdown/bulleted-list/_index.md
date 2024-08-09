@@ -2,95 +2,98 @@
 title: 箇条書きリスト
 linktitle: 箇条書きリスト
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して箇条書きリストを作成する方法をステップバイステップ ガイドで学習します。
+description: このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書で箇条書きリストを作成およびカスタマイズする方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/bulleted-list/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して箇条書きリストを作成する方法を説明します。箇条書きリストは、番号を使用せずに項目をリストするために使用されます。
+Aspose.Words for .NET の世界に飛び込む準備はできましたか? 今日は、Word 文書に箇条書きリストを作成する手順を説明します。アイデアを整理したり、項目をリストしたり、文書に少し構造を追加したりする場合でも、箇条書きリストは非常に便利です。それでは、始めましょう!
 
-## ステップ1: ドキュメントジェネレーターの使用
+## 前提条件
 
-まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
+コーディングの楽しみに飛び込む前に、必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET: Aspose.Wordsライブラリがインストールされていることを確認してください。まだインストールされていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio のような C# 開発環境。
+3. 基本的な C# の知識: C# プログラミングの基本的な理解があれば、理解しやすくなります。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートしましょう。これは、コードがスムーズに実行するための準備のようなものです。
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+それでは、プロセスを簡単で管理しやすいステップに分解してみましょう。
+
+## ステップ1: 新しいドキュメントを作成する
+
+では、まずは新しいドキュメントを作成しましょう。ここですべての魔法が起こります。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## ステップ2: デフォルトの箇条書きリストを適用する
+## ステップ2: 箇条書き形式を適用する
 
-ドキュメントビルダーの`ApplyBulletDefault`方法。
+次に、箇条書きリストの形式を適用します。これにより、箇条書きリストを開始することがドキュメントに通知されます。
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## ステップ3: 箇条書きの書式をカスタマイズする
+## ステップ3: 箇条書きリストをカスタマイズする
 
-箇条書きの書式は、以下のプロパティにアクセスしてカスタマイズできます。`ListFormat.List.ListLevels[0]`この例では、ダッシュ「-」を箇条書きとして使用します。
+ここでは、箇条書きリストを好みに合わせてカスタマイズします。この例では、箇条書きとしてダッシュ (-) を使用します。
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## ステップ4: リストにアイテムを追加する
+## ステップ4: リスト項目を追加する
 
-ドキュメントビルダーの`Writeln`方法。
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## ステップ5: リストからインデントを削除する
-
-サブリストを作成したい場合は、`ListFormat.ListIndent()`方法。この例では、項目 2a と 2b にサブリストを追加します。
+それでは、箇条書きリストにいくつかの項目を追加してみましょう。ここでは、創造性を発揮して、必要なコンテンツを追加できます。
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Aspose.Words for .NET を使用した箇条書きリストのサンプル ソース コード
-
-
-```csharp
-//ドキュメント ビルダーを使用してドキュメントにコンテンツを追加します。
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-おめでとうございます！これで、Aspose.Words for .NET を使用して箇条書きリストを作成する方法を学習しました。
+## ステップ5: サブアイテムを追加する
 
-### よくある質問
+もっと面白くするために、「項目 2」の下にいくつかのサブ項目を追加しましょう。これはサブポイントを整理するのに役立ちます。
 
-#### Q: Markdown で箇条書きリストを作成するにはどうすればよいですか?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); //メインリストレベルに戻る
+```
 
-A: Markdownで箇条書きリストを作成するには、各リスト項目を箇条書き記号（`-`, `*`、 または`+`）の後にスペースを入れます。
+## 結論
 
-#### Q: Markdown で箇条書きリストをネストできますか?
+これで完了です。Aspose.Words for .NET を使用して、Word 文書に箇条書きリストを作成しました。これは簡単なプロセスですが、文書を整理するのに非常に強力です。単純なリストを作成する場合でも、複雑にネストされたリストを作成する場合でも、Aspose.Words が対応します。
 
-A: はい、ネストされた各リスト項目の前に 4 つのオフセットスペースを追加することで、Markdown で箇条書きリストをネストすることができます。
+ニーズに合わせて、さまざまなリスト スタイルと形式を自由に試してみてください。コーディングを楽しんでください。
 
-#### Q: 箇条書き記号をカスタマイズするにはどうすればいいですか?
+## よくある質問
 
-A: 標準の Markdown では、箇条書き記号は事前に定義されています。ただし、一部の Markdown エディターでは、特定の拡張機能を使用して箇条書き記号をカスタマイズできます。
+### リスト内で異なる箇条書き記号を使用できますか?
+   はい、箇条書き記号は、`NumberFormat`財産。
 
-#### Q: Markdown の箇条書きリストはインデントをサポートしていますか?
+### インデントのレベルをさらに追加するにはどうすればよいですか?
+   使用`ListIndent`レベルを追加する方法と`ListOutdent`より高いレベルに戻る。
 
-A: はい、Markdown の箇条書きリストはインデントをサポートしています。スペースまたはタブを使用して左シフトを追加できます。
+### 箇条書きリストと番号リストを混在させることは可能ですか?
+   もちろんです！箇条書きと番号の書式を切り替えるには、`ApplyNumberDefault`そして`ApplyBulletDefault`方法。
 
-#### Q: リスト項目にリンクやインラインテキストを追加できますか?
+### リスト項目内のテキストにスタイルを設定できますか?
+   はい、リスト項目内のテキストにさまざまなスタイル、フォント、書式を適用できます。`Font`の財産`DocumentBuilder`.
 
-A: はい、適切な Markdown 構文を使用して、リスト項目にリンクまたはインライン テキストを追加できます。
+### 複数列の箇条書きリストを作成するにはどうすればよいですか?
+   表の書式設定を使用すると、各セルに個別の箇条書きリストが含まれる複数列のリストを作成できます。

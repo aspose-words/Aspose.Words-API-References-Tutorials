@@ -9,7 +9,7 @@ url: /es/net/programming-with-tables/vertical-merge/
 ---
 ## Introducción
 
-¿Alguna vez se ha visto enredado en las complejidades del manejo de tablas en documentos de Word? Con Aspose.Words para .NET, puede simplificar su trabajo y hacer que sus documentos estén más organizados y visualmente atractivos. En este tutorial, profundizaremos en el proceso de fusión vertical de tablas, que es una característica útil que le permite fusionar celdas verticalmente, creando un flujo de datos fluido. Ya sea que esté creando facturas, informes o cualquier documento que incluya datos tabulares, dominar la combinación vertical puede llevar el formato de sus documentos al siguiente nivel.
+¿Alguna vez se ha visto enredado en las complejidades del manejo de tablas en documentos de Word? Con Aspose.Words para .NET, puede simplificar su trabajo y hacer que sus documentos estén más organizados y visualmente atractivos. En este tutorial, profundizaremos en el proceso de combinación vertical de tablas, que es una característica útil que le permite combinar celdas verticalmente, creando un flujo de datos fluido. Ya sea que esté creando facturas, informes o cualquier documento que incluya datos tabulares, dominar la combinación vertical puede llevar el formato de sus documentos al siguiente nivel.
 
 ## Requisitos previos
 

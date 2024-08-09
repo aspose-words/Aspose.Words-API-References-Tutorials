@@ -10,9 +10,9 @@ url: /id/java/using-document-elements/using-fields/
 
 Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan kolom di Aspose.Words untuk Java untuk memanipulasi dokumen dengan mudah. Aspose.Words untuk Java adalah API canggih yang memungkinkan Anda bekerja dengan dokumen Word secara terprogram, memberi Anda kendali penuh atas konten dan pemformatannya.
 
-## 1. Perkenalan
+## 1. Pendahuluan
 
-Aspose.Words for Java adalah alat penting bagi siapa pun yang berurusan dengan dokumen Word dalam aplikasi Java. Bidang adalah tempat penampung yang dapat menyimpan data dinamis dalam dokumen Anda. Tutorial ini akan menunjukkan cara bekerja dengan bidang secara efektif.
+Aspose.Words for Java adalah alat penting bagi siapa pun yang berurusan dengan dokumen Word di aplikasi Java. Bidang adalah tempat penampung yang dapat menyimpan data dinamis dalam dokumen Anda. Tutorial ini akan menunjukkan cara bekerja dengan bidang secara efektif.
 
 ## 2. Menyiapkan Lingkungan Anda
 
@@ -32,7 +32,7 @@ Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 
 ## 4. Menyesuaikan Penggabungan Surat
 
-Aspose.Words untuk Java memberikan dukungan yang sangat baik untuk operasi penggabungan surat. Anda dapat menyesuaikan proses gabungan surat dengan menyiapkan pengendali peristiwa gabungan surat. Berikut cara melakukannya:
+Aspose.Words untuk Java memberikan dukungan luar biasa untuk operasi penggabungan surat. Anda dapat menyesuaikan proses gabungan surat dengan menyiapkan pengendali peristiwa gabungan surat. Berikut cara melakukannya:
 
 ```java
 // Siapkan pengendali peristiwa gabungan surat untuk melakukan pekerjaan khusus.
@@ -203,7 +203,7 @@ Kode sumber Kelas HandleMergeField
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Masukkan MERGEFIELD yang disarangkan ke dalam kolom IF.
+        // Masukkan MERGEFIELD yang bersarang di dalam bidang IF.
         // Karena pernyataan kolom IF salah, hasil dari MERGEFIELD bagian dalam tidak akan ditampilkan,
         //dan MERGEFIELD tidak akan menerima data apa pun selama penggabungan surat.
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
@@ -239,7 +239,7 @@ Kode sumber Kelas HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Tidak melakukan apapun.
+            // Jangan lakukan apa pun.
         }
         /// <ringkasan>
         /// Ini dipanggil ketika mesin gabungan surat menemukan bidang gabungan Gambar:XXX dalam dokumen.
@@ -320,7 +320,7 @@ Kode sumber Kelas HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Tidak melakukan apapun.
+            // Jangan lakukan apa pun.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

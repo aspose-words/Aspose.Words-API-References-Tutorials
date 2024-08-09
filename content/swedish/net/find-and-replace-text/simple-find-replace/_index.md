@@ -102,10 +102,10 @@ Och där har du det! Du har precis automatiserat processen att hitta och ersätt
 ## FAQ's
 
 ### Kan jag ersätta flera olika texter samtidigt?
- Jo det kan du. Ring bara till`Replace` metod för varje text du vill ersätta.
+ Ja, det kan du. Ring bara till`Replace` metod för varje text du vill ersätta.
 
 ### Är Aspose.Words för .NET gratis?
-Aspose.Words för .NET erbjuder en gratis provperiod, men för full funktionalitet måste du köpa en licens. Kolla in deras[prissättning](https://purchase.aspose.com/buy) för mer detaljer.
+Aspose.Words för .NET erbjuder en gratis provperiod, men för full funktionalitet måste du köpa en licens. Kolla in deras[prissättning](https://purchase.aspose.com/buy) för mer information.
 
 ### Kan jag ersätta text med formatering?
  Absolut! Du kan ersätta text och tillämpa formatering med hjälp av`FindReplaceOptions` klass.

@@ -77,7 +77,7 @@ Gefeliciteerd! U hebt met succes velden in een Word-document geconverteerd met A
 ## Veelgestelde vragen
 
 ### Kan ik andere typen velden converteren met Aspose.Words voor .NET?
- Ja, met Aspose.Words voor .NET kunt u verschillende soorten velden manipuleren, niet alleen IF-velden. Je kunt de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Ja, met Aspose.Words voor .NET kunt u verschillende soorten velden manipuleren, niet alleen IF-velden. Je kunt de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Wat zijn IF-velden in Word-documenten?
 ALS-velden zijn voorwaardelijke velden die tekst weergeven op basis van bepaalde voorwaarden. Ze worden vaak gebruikt voor het creëren van dynamische inhoud in Word-documenten.

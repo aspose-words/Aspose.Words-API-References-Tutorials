@@ -154,4 +154,4 @@ Có, Aspose.Words for Java hỗ trợ chia nhỏ tài liệu được bảo vệ
 
 ### Q5. Aspose.Words cho Java có phù hợp để xử lý tài liệu cấp doanh nghiệp không?
 
-Tuyệt đối! Aspose.Words for Java được sử dụng rộng rãi trong các ứng dụng cấp doanh nghiệp cho các tác vụ xử lý tài liệu khác nhau do tính mạnh mẽ và bộ tính năng mở rộng của nó.
+Tuyệt đối! Aspose.Words cho Java được sử dụng rộng rãi trong các ứng dụng cấp doanh nghiệp cho các tác vụ xử lý tài liệu khác nhau do tính mạnh mẽ và bộ tính năng mở rộng của nó.

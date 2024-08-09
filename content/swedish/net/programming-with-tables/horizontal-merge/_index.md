@@ -9,7 +9,7 @@ url: /sv/net/programming-with-tables/horizontal-merge/
 ---
 ## Introduktion
 
-Hallå där! Är du redo att dyka in i Aspose.Words-världen för .NET? Idag ska vi ta itu med en superanvändbar funktion: horisontell sammanslagning i tabeller. Det här kanske låter lite tekniskt, men oroa dig inte, jag har din rygg. I slutet av den här handledningen kommer du att vara ett proffs på att slå samman celler i dina Word-dokument programmatiskt. Så, låt oss kavla upp ärmarna och sätta igång!
+Hej där! Är du redo att dyka in i Aspose.Words-världen för .NET? Idag ska vi ta itu med en superanvändbar funktion: horisontell sammanslagning i tabeller. Det här kanske låter lite tekniskt, men oroa dig inte, jag har din rygg. I slutet av den här handledningen kommer du att vara ett proffs på att slå samman celler i dina Word-dokument programmatiskt. Så, låt oss kavla upp ärmarna och sätta igång!
 
 ## Förutsättningar
 
@@ -106,7 +106,7 @@ Och där har du det! Du har precis bemästrat konsten att horisontellt slå samm
 Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa, redigera och manipulera Word-dokument programmatiskt i .NET-applikationer.
 
 ### Kan jag slå samman celler vertikalt med Aspose.Words för .NET?
- Ja, du kan också slå samman celler vertikalt genom att använda`CellFormat.VerticalMerge` fast egendom.
+ Ja, du kan också slå samman celler vertikalt genom att använda`CellFormat.VerticalMerge` egendom.
 
 ### Är Aspose.Words för .NET gratis att använda?
  Aspose.Words för .NET erbjuder en gratis provperiod, men för full funktionalitet måste du köpa en licens. Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).

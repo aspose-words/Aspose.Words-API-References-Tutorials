@@ -10,13 +10,13 @@ url: /vi/net/working-with-hyphenation/hyphenation-callback/
 
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thấy mình vướng vào sự phức tạp của việc định dạng văn bản, đặc biệt là khi xử lý các ngôn ngữ yêu cầu dấu gạch nối chưa? Bạn không cô đơn. Dấu gạch nối, mặc dù rất quan trọng để có bố cục văn bản phù hợp, nhưng có thể hơi đau đầu. Nhưng đoán xem? Aspose.Words for .NET đã hỗ trợ bạn. Thư viện mạnh mẽ này cho phép bạn quản lý định dạng văn bản một cách liền mạch, bao gồm cả việc xử lý dấu gạch nối thông qua cơ chế gọi lại. Có mưu đồ? Hãy cùng tìm hiểu chi tiết về cách bạn có thể triển khai lệnh gọi lại dấu gạch nối bằng cách sử dụng Aspose.Words cho .NET.
+Này! Bạn đã bao giờ thấy mình vướng vào sự phức tạp của việc định dạng văn bản, đặc biệt là khi xử lý các ngôn ngữ yêu cầu dấu gạch nối chưa? Bạn không đơn độc. Dấu gạch nối, mặc dù rất quan trọng để có bố cục văn bản phù hợp, nhưng có thể hơi đau đầu. Nhưng đoán xem? Aspose.Words for .NET đã hỗ trợ bạn. Thư viện mạnh mẽ này cho phép bạn quản lý định dạng văn bản một cách liền mạch, bao gồm cả việc xử lý dấu gạch nối thông qua cơ chế gọi lại. Tò mò? Hãy cùng tìm hiểu chi tiết về cách bạn có thể triển khai lệnh gọi lại dấu gạch nối bằng cách sử dụng Aspose.Words cho .NET.
 
 ## Điều kiện tiên quyết
 
 Trước khi bắt tay vào viết mã, hãy đảm bảo rằng bạn có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Đảm bảo bạn có thư viện. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. IDE: Môi trường phát triển như Visual Studio.
 3. Kiến thức cơ bản về C#: Hiểu biết về C# và .NET framework.
 4. Từ điển gạch nối: Từ điển gạch nối cho các ngôn ngữ bạn dự định sử dụng.
@@ -68,7 +68,7 @@ Bây giờ, hãy tải tài liệu yêu cầu gạch nối.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Ở đây, chúng tôi đang tải một tài liệu văn bản tiếng Đức. Bạn có thể thay thế`"German text.docx"` với tên tệp tài liệu của bạn.
+Ở đây, chúng tôi đang tải một tài liệu văn bản tiếng Đức. Bạn có thể thay thế`"German text.docx"` với tên tệp tài liệu của bạn.
 
 ## Bước 4: Lưu tài liệu
 
@@ -129,7 +129,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách triển khai lệnh gọi lại dấu gạch nối trong Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể đảm bảo tài liệu của mình được định dạng đẹp mắt, bất kể ngôn ngữ. Cho dù bạn đang làm việc với tiếng Anh, tiếng Đức hay bất kỳ ngôn ngữ nào khác, phương pháp này cho phép bạn xử lý dấu gạch nối một cách dễ dàng.
+Và bạn có nó! Bạn vừa học cách triển khai lệnh gọi lại dấu gạch nối trong Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể đảm bảo tài liệu của mình được định dạng đẹp mắt, bất kể ngôn ngữ. Cho dù bạn đang làm việc với tiếng Anh, tiếng Đức hay bất kỳ ngôn ngữ nào khác, phương pháp này cho phép bạn xử lý dấu gạch nối một cách dễ dàng.
 
 ## Câu hỏi thường gặp
 
@@ -146,4 +146,4 @@ Dấu gạch nối cải thiện bố cục văn bản bằng cách ngắt các 
 Bạn có thể tải xuống từ điển gạch nối từ nhiều nguồn trực tuyến khác nhau hoặc tự tạo từ điển nếu cần.
 
 ### Điều gì xảy ra nếu thiếu từ điển gạch nối?
- Nếu thiếu từ điển,`RequestDictionary` phương thức này sẽ đưa ra một ngoại lệ mà bạn có thể xử lý để thông báo cho người dùng hoặc cung cấp phương án dự phòng.
+ Nếu thiếu từ điển,`RequestDictionary`phương thức này sẽ đưa ra một ngoại lệ mà bạn có thể xử lý để thông báo cho người dùng hoặc cung cấp phương án dự phòng.

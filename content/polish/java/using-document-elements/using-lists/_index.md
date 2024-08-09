@@ -216,7 +216,7 @@ Wykonując poniższe kroki, możesz tworzyć dokumenty z niestandardowymi poziom
 
 Gratulacje! Nauczyłeś się, jak efektywnie pracować z listami w Aspose.Words for Java. Listy odgrywają kluczową rolę w organizowaniu i prezentowaniu treści w dokumentach. Niezależnie od tego, czy chcesz ponownie uruchomić listy w każdej sekcji, czy określić poziomy list, Aspose.Words dla Java zapewnia narzędzia potrzebne do tworzenia profesjonalnie wyglądających dokumentów.
 
-Teraz możesz śmiało korzystać z tych funkcji, aby usprawnić zadania związane z generowaniem i formatowaniem dokumentów. Jeśli masz jakiekolwiek pytania lub potrzebujesz dalszej pomocy, nie wahaj się skontaktować z nami[Forum społeczności Aspose](https://forum.aspose.com/) dla wsparcia.
+Teraz możesz śmiało korzystać z tych funkcji, aby usprawnić zadania związane z generowaniem i formatowaniem dokumentów. Jeśli masz jakiekolwiek pytania lub potrzebujesz dalszej pomocy, nie wahaj się skontaktować z nami[Forum społeczności Aspose](https://forum.aspose.com/) za wsparcie.
 
 ## Często zadawane pytania
 

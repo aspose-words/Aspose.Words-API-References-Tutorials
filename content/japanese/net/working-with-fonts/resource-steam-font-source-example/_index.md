@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ja/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## 導入
 
 .NET でドキュメントを操作し、Aspose.Words を使用している場合、フォント ソースの管理は、ドキュメントが期待どおりに表示されるようにするための重要な要素となります。Aspose.Words は、リソース ストリームの使用など、フォントを処理するための強力な方法を提供します。このガイドでは、Aspose.Words for .NET でリソース ストリームをフォント ソースとして使用する手順を説明します。さっそく始めましょう。
 
@@ -99,11 +100,11 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ###  Q3: 他の種類の警告も処理できますか？`IWarningCallback`?
 
-はい`IWarningCallback`インターフェースは、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
+はい、`IWarningCallback`インターフェースは、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
 
 ### Q4: Aspose.Words のサポートはどこで受けられますか?
 
-訪問[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
+訪問する[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
 
 ### Q5: Aspose.Words の一時ライセンスを取得することは可能ですか?
 

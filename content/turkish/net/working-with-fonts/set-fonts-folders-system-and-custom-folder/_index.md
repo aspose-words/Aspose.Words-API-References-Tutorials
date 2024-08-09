@@ -2,99 +2,112 @@
 title: Yazı Tipleri Klasör Sistemini ve Özel Klasörü Ayarlama
 linktitle: Yazı Tipleri Klasör Sistemini ve Özel Klasörü Ayarlama
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir belgeyi oluştururken sistem ve özel yazı tipi klasörlerini ayarlamaya yönelik adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak Word belgelerinde sistem ve özel yazı tipi klasörlerini nasıl ayarlayacağınızı öğrenin ve belgelerinizin farklı ortamlarda doğru şekilde görüntülenmesini sağlayın.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belge oluştururken sistem yazı tipi klasörlerini ve özel bir klasörü ayarlamak için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sunacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak belgelerinizi işlerken kullanmak üzere sistem klasörü ve özel bir klasör de dahil olmak üzere birden fazla yazı tipi klasörünü nasıl belirleyeceğinizi öğreneceksiniz.
+Benzersiz bir yazı tipi stiline sahip bir belge hazırladığınızı, ancak yazı tiplerinin başka bir makinede düzgün görüntülenmediğini fark ettiğinizi hayal edin. Sinir bozucu, değil mi? Yazı tipi klasörlerini yapılandırmanın devreye girdiği yer burasıdır. Aspose.Words for .NET ile belgelerinizin her zaman istediğiniz gibi görünmesini sağlamak için sistem ve özel yazı tipi klasörleri tanımlayabilirsiniz. Bunu nasıl başarabileceğinize bakalım.
 
-## 1. Adım: Belge dizinini tanımlayın
-Öncelikle belgeler dizininizin yolunu ayarlamanız gerekir. Bu, düzenlenmiş işlenmiş belgenizi kaydetmek istediğiniz konumdur. "BELGELERİNİZ DİZİNİ"ni uygun yolla değiştirin.
+## Önkoşullar
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-## 2. Adım: Oluşturulacak belgeyi yükleyin
- Daha sonra, oluşturulacak belgeyi kullanarak yükleyebilirsiniz.`Document` sınıf. Doğru belge yolunu belirttiğinizden emin olun.
+-  Aspose.Words for .NET Library: Henüz yapmadıysanız indirin[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio benzeri bir IDE.
+- Temel C# Bilgisi: C#'a aşinalık, kod örneklerini takip etmenize yardımcı olacaktır.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Ad Alanlarını İçe Aktar
 
-## 3. Adım: Sistem ve özel yazı tipi klasörlerini ayarlayın
- Artık sistem yazı tipi klasörlerini ve özel bir klasörü kullanarak ayarlayabilirsiniz.`FontSettings` sınıf ve`SetFontsSources()` yöntem. Öncelikle ortama bağlı yazı tipi kaynaklarının listesini kullanarak almanız gerekir.`GetFontsSources()` ve bir listede saklayın. Daha sonra yeni bir örneğini oluşturabilirsiniz.`FolderFontSource` yazı tiplerinizi içeren özel klasörün yolunu belirterek. Bu örneği mevcut yazı tipi kaynakları listesine ekleyin. Son olarak kullanın`SetFontsSources()` yazı tipi kaynaklarını yeni listeyle güncellemek için.
+Öncelikle projenize gerekli ad alanlarını içe aktarın:
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-fontSettings.SetFontsSources(updatedFontSources);
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 4. Adım: Yazı Tipi Ayarlarını Uygulayın
- Daha sonra yazı tipi ayarlarını belgenize uygulamanız gerekir.`FontSettings` mülkiyeti`Document` sınıf.
+Şimdi süreci basit adımlara ayıralım.
 
-```csharp
-doc.FontSettings = fontSettings;
-```
+## 1. Adım: Belgeyi Yükleyin
 
-## 5. Adım: İşlenen belgeyi kaydedin
-Son olarak, oluşturulan belgeyi şu şekilde bir dosyaya kaydedebilirsiniz:
-
-   kullanmak`Save()` yöntemi`Document` sınıf. Doğru yolu ve dosya adını belirttiğinizden emin olun.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
-```
-
-### Aspose.Words for .NET kullanarak Yazı Tipi Klasörlerini Ayarlama Sistemi ve Özel Klasör için örnek kaynak kodu 
+ Başlamak için Word belgenizi Aspose.Words'e yükleyin`Document` nesne. Bu belge, yazı tipi klasörlerini ayarlamak istediğiniz belge olacaktır.
 
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Adım 2: Yazı Tipi Ayarlarını Başlatın
+
+ Yeni bir örneğini oluştur`FontSettings`. Bu nesne yazı tipi kaynaklarını yönetmenize olanak tanır.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Varsayılan olarak aranan ortama bağlı yazı tipi kaynakları dizisini alın.
-// Örneğin bu, Windows makinelerinde bir "Windows\Fonts\" kaynağı içerecektir.
-// Yazı tipi girdilerini eklemeyi veya kaldırmayı çok daha kolay hale getirmek için bu diziyi yeni bir Listeye ekliyoruz.
+```
+
+## 3. Adım: Sistem Yazı Tipi Kaynaklarını Alın
+
+Varsayılan sistem yazı tipi kaynaklarını alın. Bir Windows makinesinde bu genellikle "Windows\Fonts"u içerir.\"dizini.
+
+```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Aspose.Words'e yazı tiplerini aşağıdaki klasörde araması talimatını verecek yeni bir klasör kaynağı ekleyin.
+```
+
+## 4. Adım: Özel Yazı Tipi Klasörü Ekleyin
+
+Ek yazı tiplerinizi içeren özel bir klasör ekleyin. Sistem yazı tipleri dizininde yüklü olmayan belirli yazı tipleriniz varsa bu kullanışlıdır.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
 fontSources.Add(folderFontSource);
+```
+
+## 5. Adım: Yazı Tipi Kaynaklarını Güncelleyin
+
+ Yazı tipi kaynakları listesini tekrar bir diziye dönüştürün ve`FontSettings` nesne.
+
+```csharp
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
+```
+
+## Adım 6: Yazı Tipi Ayarlarını Belgeye Uygulayın
+
+ Son olarak yapılandırılmış olanı uygulayın`FontSettings` belgenize ekleyin ve PDF gibi istediğiniz formatta kaydedin.
+
+```csharp
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir belgeyi oluştururken sistem yazı tipi klasörlerini ve özel bir klasörü nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi oluştururken kullanılacak sistem klasörü ve özel bir klasör de dahil olmak üzere birden çok yazı tipi klasörünü kolayca belirleyebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle Kelime İşleme için güçlü ve esnek bir API sunar. Bu bilgiyle belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tipi kaynaklarını kontrol edebilir ve özelleştirebilirsiniz.
 
-### SSS'ler
+Ve işte karşınızda! Bu adımları izleyerek, ister sistem yazı tipleri, ister belirli bir dizinde saklanan özel yazı tipleri olsun, Word belgelerinizin doğru yazı tiplerini kullandığından emin olabilirsiniz. Bu kurulum, farklı ortamlarda belgenizin görünümünün bütünlüğünü korumaya yardımcı olur.
 
-#### S: Aspose.Words'te sistem yazı tipi klasörlerini nasıl ayarlayabilirim?
+## SSS'ler
 
-C: Aspose.Words'te sistem yazı tipi klasörlerini ayarlamak için hiçbir şey yapmanıza gerek yoktur. Aspose.Words, işletim sisteminizde yüklü olan sistem yazı tiplerini otomatik olarak kullanır.
+### Hem sistem hem de özel klasörlerde bir yazı tipi eksikse ne olur?
 
-#### S: Aspose.Words'te özel yazı tipi klasörlerini nasıl ayarlayabilirim?
+Aspose.Words, eksik yazı tipinin yerine varsayılan bir yazı tipi kullanacak ve belgenin okunabilir kalmasını sağlayacaktır.
 
- C: Aspose.Words'te özel yazı tipi klasörlerini ayarlamak için`SetFontsFolders` yöntemi`Fonts` özel yazı tipi klasörlerinin konumlarını belirten sınıf.
+### Birden fazla özel yazı tipi klasörü ekleyebilir miyim?
 
-#### S: Aspose.Words'te birden fazla özel yazı tipi klasörü belirtebilir miyim?
+ Evet, oluşturma işlemini tekrarlayarak birden fazla özel yazı tipi klasörü ekleyebilirsiniz.`FolderFontSource` nesneleri ve bunları yazı tipi kaynakları listesine ekleme.
 
- C: Evet, Aspose.Words'te birden fazla özel yazı tipi klasörü belirleyebilirsiniz.`SetFontsFolders` yöntemi`Fonts` klasör konumlarının listesini içeren sınıf.
+### Özel yazı tipi klasörleri için ağ yollarını kullanmak mümkün mü?
 
-#### S: Aspose.Words'te tanımlanan yazı tipi klasörlerini nasıl kontrol edebilirim?
+ Evet, bir ağ yolu belirleyebilirsiniz.`FolderFontSource` yapıcı.
 
- Aspose.Words'te tanımlanan yazı tipi klasörlerini kontrol etmek için`GetFolders` yöntemi`Fonts` Yapılandırılmış yazı tipi klasörlerinin listesini almak için sınıf.
+### Aspose.Words belgeleri kaydetmek için hangi dosya formatlarını destekliyor?
 
-#### S: Aspose.Words'te özel klasör yazı tipleri sistem yazı tiplerine göre öncelikli midir?
+Aspose.Words, DOCX, PDF, HTML ve daha fazlası dahil olmak üzere çeşitli formatları destekler.
 
-C: Evet, Aspose.Words'te özel klasör yazı tipleri sistem yazı tiplerine göre önceliklidir. Hem özel klasörlerde hem de sistem yazı tiplerinde bir yazı tipi mevcutsa Aspose.Words, özel klasördeki sürümü kullanacaktır.
+### Yazı tipi değiştirme bildirimlerini nasıl halledebilirim?
+
+ Yazı tipi değiştirme bildirimlerini kullanarak yönetebilirsiniz.`FontSettings` sınıfın`FontSubstitutionWarning`etkinlik.

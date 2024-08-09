@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/basic-conversions/txt-to-docx/
 ---
-## Úvod
+## Zavedení
 
 Převod textových souborů na dokumenty aplikace Word je běžným požadavkem aplikací pro zpracování dokumentů. Aspose.Words for .NET poskytuje robustní API, které tento úkol zjednodušuje a nabízí vývojářům výkonné nástroje pro efektivní manipulaci a konverzi formátů dokumentů.
 
@@ -15,7 +15,7 @@ Převod textových souborů na dokumenty aplikace Word je běžným požadavkem 
 
 Než začnete, ujistěte se, že máte následující:
 - Microsoft Visual Studio nainstalované na vašem počítači.
--  Aspose.Words pro knihovnu .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words pro knihovnu .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Základní znalost programovacího jazyka C#.
 
 ## Importovat jmenné prostory
@@ -65,4 +65,4 @@ Ano, Aspose.Words podporuje různé .NET frameworky a zajišťuje kompatibilitu 
 Ano, můžete dávkově zpracovat více textových souborů pomocí rozhraní API Aspose.Words, abyste zefektivnili své úkoly převodu dokumentů.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words?
- Navštivte[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[Fórum podpory](https://forum.aspose.com/c/words/8) pro další informace a pomoc.
+ Navštivte[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[fórum podpory](https://forum.aspose.com/c/words/8) pro více informací a pomoc.

@@ -9,13 +9,13 @@ url: /es/java/document-styling/document-watermarking-page-setup/
 ---
 ## Introducción
 
-En el ámbito de la manipulación de documentos, Aspose.Words para Java se presenta como una herramienta poderosa que permite a los desarrolladores ejercer control sobre todos los aspectos del procesamiento de documentos. En esta guía completa, profundizaremos en las complejidades de la creación de marcas de agua en documentos y la configuración de páginas utilizando Aspose.Words para Java. Ya sea que sea un desarrollador experimentado o simplemente esté ingresando al mundo del procesamiento de documentos Java, esta guía paso a paso lo equipará con el conocimiento y el código fuente que necesita.
+En el ámbito de la manipulación de documentos, Aspose.Words para Java se presenta como una herramienta poderosa que permite a los desarrolladores ejercer control sobre todos los aspectos del procesamiento de documentos. En esta guía completa, profundizaremos en las complejidades de la creación de marcas de agua en documentos y la configuración de páginas utilizando Aspose.Words para Java. Si es un desarrollador experimentado o simplemente está ingresando al mundo del procesamiento de documentos Java, esta guía paso a paso lo equipará con el conocimiento y el código fuente que necesita.
 
 ## Marca de agua del documento
 
 ### Agregar marcas de agua
 
-Agregar marcas de agua a los documentos puede ser crucial para la marca o la seguridad de su contenido. Aspose.Words para Java simplifica esta tarea. Así es cómo:
+Agregar marcas de agua a los documentos puede ser crucial para la marca o la seguridad de su contenido. Aspose.Words para Java simplifica esta tarea. He aquí cómo:
 
 ```java
 // Cargar el documento

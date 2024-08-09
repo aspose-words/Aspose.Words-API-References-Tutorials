@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Bu döngü, her satırda iki sütun olacak şekilde tabloya 50 satırlık veri ekler.`HeadingFormat` ayarlandı`false` bu satırlar için, çünkü bunlar başlık satırları değildir.
+ Bu döngü, her satırda iki sütun olacak şekilde tabloya 50 satırlık veri ekler.`HeadingFormat` şu şekilde ayarlandı:`false` bu satırlar için, çünkü bunlar başlık satırları değildir.
 
 ## Adım 4: Belgeyi Kaydedin
 
@@ -101,7 +101,7 @@ Bu, belgeyi belirtilen adla belge dizininize kaydeder.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla sonraki sayfalarda yinelenen başlık satırlarına sahip tablolar içeren bir Word belgesi oluşturabilirsiniz. Bu yalnızca belgelerinizin okunabilirliğini artırmakla kalmaz, aynı zamanda tutarlı ve profesyonel bir görünüm sağlar. Şimdi devam edin ve bunu projelerinizde deneyin!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla sonraki sayfalarda yinelenen başlık satırlarına sahip tablolar içeren bir Word belgesi oluşturabilirsiniz. Bu yalnızca belgelerinizin okunabilirliğini artırmakla kalmaz, aynı zamanda tutarlı ve profesyonel bir görünüm sağlar. Şimdi devam edin ve bunu projelerinizde deneyin!
 
 ## SSS'ler
 
@@ -109,7 +109,7 @@ Bu, belgeyi belirtilen adla belge dizininize kaydeder.
  Evet, özelliklerini değiştirerek başlık satırlarına ek biçimlendirme uygulayabilirsiniz.`ParagraphFormat`, `RowFormat` , Ve`CellFormat`.
 
 ### Tabloya daha fazla sütun eklemek mümkün mü?
- Kesinlikle! Daha fazla hücre ekleyerek gerektiği kadar sütun ekleyebilirsiniz.`InsertCell` yöntem.
+ Kesinlikle! Daha fazla hücre ekleyerek gerektiği kadar sütun ekleyebilirsiniz.`InsertCell` Yöntem.
 
 ### Diğer satırların sonraki sayfalarda tekrarlanmasını nasıl sağlayabilirim?
  Herhangi bir satırın tekrarlanmasını sağlamak için`RowFormat.HeadingFormat`mülkiyet`true` söz konusu satır için.
@@ -118,4 +118,4 @@ Bu, belgeyi belirtilen adla belge dizininize kaydeder.
  Evet, mevcut tablolara şu adresten erişerek değiştirebilirsiniz:`Document` nesne ve benzer biçimlendirmenin uygulanması.
 
 ### Aspose.Words for .NET'te başka hangi tablo formatlama seçenekleri mevcut?
- Aspose.Words for .NET, hücre birleştirme, kenarlık ayarları ve tablo hizalama gibi çok çeşitli tablo formatlama seçenekleri sunar. Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Aspose.Words for .NET, hücre birleştirme, kenarlık ayarları ve tablo hizalama gibi çok çeşitli tablo formatlama seçenekleri sunar. Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.

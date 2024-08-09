@@ -109,4 +109,4 @@ Aspose.Words for .NET 是一个强大的 API，使开发人员能够以编程方
 样式一旦展开，就会直接应用于单元格。若要恢复，您需要重新加载文档或手动重新应用样式。
 
 ### 此方法适用于所有版本的 Aspose.Words for .NET 吗？
-是的`ExpandTableStylesToDirectFormatting`方法在 Aspose.Words for .NET 的最新版本中可用。请务必检查[文档](https://reference.aspose.com/words/net/)了解最新更新。
+是的，`ExpandTableStylesToDirectFormatting`方法在 Aspose.Words for .NET 的最新版本中可用。请务必检查[文档](https://reference.aspose.com/words/net/)了解最新更新。

@@ -14,7 +14,7 @@ Obsah poskytuje snímek struktury dokumentu a umožňuje čtenářům snadno př
 
 ## Nastavení prostředí
 
- Než začneme, ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/python/). Kromě toho se ujistěte, že máte vzorový dokument aplikace Word, který chcete vylepšit o obsah.
+ Než začneme, ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/python/). Kromě toho se ujistěte, že máte vzorový dokument aplikace Word, který chcete vylepšit o obsah.
 
 ## Načítání dokumentu
 

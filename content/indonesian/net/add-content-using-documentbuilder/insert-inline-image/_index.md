@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Sisipkan Gambar Sebaris
 
- Menggunakan`InsertImage` metode`DocumentBuilder` kelas untuk menyisipkan gambar ke dalam dokumen pada posisi saat ini.
+ Gunakan`InsertImage` metode`DocumentBuilder` kelas untuk menyisipkan gambar ke dalam dokumen pada posisi saat ini.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";

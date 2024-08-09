@@ -26,7 +26,7 @@ url: /el/java/document-manipulation/using-web-extensions/
 Document doc = new Document();
 ```
 
-##  Δημιουργώ ένα`TaskPane` instance and add it to the document's web extension task panes:
+##  Δημιουργία α`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();
@@ -75,7 +75,7 @@ for (TaskPane taskPaneInfo : doc.getWebExtensionTaskPanes())
 
 Αυτό το απόσπασμα κώδικα ανακτά και εκτυπώνει πληροφορίες για κάθε παράθυρο εργασιών επέκτασης ιστού στο έγγραφο.
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το σεμινάριο, μάθατε πώς να χρησιμοποιείτε επεκτάσεις ιστού στο Aspose.Words για Java για να βελτιώσετε τα έγγραφά σας με περιεχόμενο και εφαρμογές που βασίζονται στον ιστό. Τώρα μπορείτε να προσθέσετε παράθυρα εργασιών επέκτασης ιστού, να ορίσετε τις ιδιότητές τους και να ανακτήσετε πληροφορίες σχετικά με αυτά. Εξερευνήστε περαιτέρω και ενσωματώστε επεκτάσεις ιστού για να δημιουργήσετε δυναμικά και διαδραστικά έγγραφα προσαρμοσμένα στις ανάγκες σας.
 

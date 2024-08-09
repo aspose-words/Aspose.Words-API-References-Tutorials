@@ -76,7 +76,7 @@ Exportar propriedades personalizadas em um documento PDF usando Aspose.Words for
 ### O que são propriedades personalizadas em um documento PDF?
 Propriedades personalizadas são metadados adicionados a um documento que podem incluir informações como autor, nome da empresa ou quaisquer outros dados relevantes que precisem ser incorporados ao documento.
 
-### Por que devo usar Aspose.Words for .NET para exportar propriedades personalizadas?
+### Por que devo usar o Aspose.Words for .NET para exportar propriedades personalizadas?
 Aspose.Words for .NET fornece uma API robusta e fácil de usar para manipular documentos do Word e exportá-los como PDFs, garantindo que as propriedades personalizadas sejam preservadas e acessíveis.
 
 ### Posso adicionar diversas propriedades personalizadas a um documento?
@@ -86,4 +86,4 @@ Aspose.Words for .NET fornece uma API robusta e fácil de usar para manipular do
 Aspose.Words for .NET suporta exportação para vários formatos, incluindo DOCX, HTML, EPUB e muitos mais.
 
 ### Onde posso obter suporte se encontrar problemas?
- Para suporte, você pode visitar o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) para assistência.
+ Para suporte, você pode visitar o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) para obter assistência.

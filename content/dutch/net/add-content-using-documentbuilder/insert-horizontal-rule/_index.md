@@ -15,7 +15,7 @@ Hallo daar, mede-ontwikkelaars! Heb je ooit met je knieën in een Word-documentp
 
 Voordat we in de kern duiken, moeten we ervoor zorgen dat u alles heeft wat u nodig heeft om aan de slag te gaan. Hier is een korte checklist:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat je de nieuwste versie hebt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Zorg ervoor dat je de nieuwste versie hebt. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: elke IDE die .NET ondersteunt, zoals Visual Studio.
 3. Basiskennis van C#: Bekendheid met programmeren in C# zal deze tutorial soepeler maken.
 4. Een documentenmap: u hebt een map nodig waarin u uw Word-documenten kunt opslaan.

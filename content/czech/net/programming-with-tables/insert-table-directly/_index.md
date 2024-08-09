@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/insert-table-directly/
 ---
-## Úvod
+## Zavedení
 Vytváření tabulek programově může být docela problém, zvláště když se zabýváte složitými strukturami dokumentů. Ale nebojte se, jsme tu, abychom to pro vás rozebrali! V této příručce si projdeme kroky vložení tabulky přímo do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vám pomůže tento proces snadno zvládnout.
 
 ## Předpoklady
@@ -129,7 +129,7 @@ Tento kód uloží dokument s vloženou tabulkou.
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste vložili tabulku přímo do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento proces lze použít k programovému vytváření složitých tabulek, což výrazně zjednoduší vaše úlohy automatizace dokumentů. Ať už generujete sestavy, faktury nebo jakýkoli jiný typ dokumentu, pochopení toho, jak manipulovat s tabulkami, je zásadní dovedností.
+Gratuluji! Úspěšně jste vložili tabulku přímo do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento proces lze použít k programovému vytváření složitých tabulek, což výrazně zjednoduší vaše úlohy automatizace dokumentů. Ať už generujete sestavy, faktury nebo jakýkoli jiný typ dokumentu, pochopení toho, jak manipulovat s tabulkami, je zásadní dovedností.
 
 ## FAQ
 
@@ -143,7 +143,7 @@ Gratulujeme! Úspěšně jste vložili tabulku přímo do dokumentu aplikace Wor
 Můžete si koupit Aspose.Words pro .NET od[nákupní stránku](https://purchase.aspose.com/buy).
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
- Dokumentace je k dispozici[tady](https://reference.aspose.com/words/net/).
+ Dokumentace je k dispozici[zde](https://reference.aspose.com/words/net/).
 
 ### Co když potřebuji podporu při používání Aspose.Words pro .NET?
  Pro podporu můžete navštívit[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).

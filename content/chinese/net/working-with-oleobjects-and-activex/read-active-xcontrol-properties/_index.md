@@ -2,106 +2,122 @@
 title: 从 Word 文件读取 Active XControl 属性
 linktitle: 从 Word 文件读取 Active XControl 属性
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 读取 Word 文件中 ActiveX 控件的属性。
+description: 通过分步指南了解如何使用 Aspose.Words for .NET 从 Word 文件中读取 ActiveX 控件属性。增强您的文档自动化技能。
 type: docs
 weight: 10
 url: /zh/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## 介绍
 
-在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 读取 Word 文件中 ActiveX 控件的属性。我们将为您提供完整的源代码并向您展示如何格式化 markdown 输出。
+在当今的数字时代，自动化是提高生产力的关键。如果您正在使用包含 ActiveX 控件的 Word 文档，则可能需要读取它们的属性以用于各种目的。ActiveX 控件（例如复选框和按钮）可以保存重要数据。使用 Aspose.Words for .NET，您可以高效地以编程方式提取和操作这些数据。
 
-## 步骤 1：文档初始化
+## 先决条件
 
-第一步是初始化`Document`通过加载包含 ActiveX 控件的 Word 文档来替换对象。务必替换`MyDir`包含文档的目录的实际路径。
+在开始之前，请确保您已准备好以下物品：
+
+1.  Aspose.Words for .NET 库：您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+2. Visual Studio 或任何 C# IDE：编写和执行您的代码。
+3. 带有 ActiveX 控件的 Word 文档：例如“ActiveX controls.docx”。
+4. C# 基础知识：需要熟悉 C# 编程才能继续学习。
+
+## 导入命名空间
+
+首先，让我们导入使用 Aspose.Words for .NET 所需的命名空间。
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## 步骤 2：恢复 ActiveX 控件
+## 步骤 1：加载 Word 文档
 
-在此步骤中，我们将迭代每个`Shape`文档来检索 ActiveX 控件并读取其属性。
+首先，您需要加载包含 ActiveX 控件的 Word 文档。
+
+```csharp
+//文档目录的路径
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## 步骤 2：初始化字符串以保存属性
+
+接下来，初始化一个空字符串来存储 ActiveX 控件的属性。
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-{
-     if (shape.OleFormat is null) break;
-
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
-
-         properties += "\n";
-     }
-}
-
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-Console.WriteLine("\n" + properties);
 ```
 
-### 使用 Aspose.Words for .NET 读取 Active XControl 属性的示例源代码
+## 步骤 3：遍历文档中的形状
 
-以下是使用 Aspose.Words for .NET 读取 ActiveX 控件属性的完整源代码：
+我们需要遍历文档中的所有形状来找到 ActiveX 控件。
 
 ```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        //处理 ActiveX 控件
+    }
+}
+```
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+## 步骤 4：从 ActiveX 控件中提取属性
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+在循环中，检查控件是否为 Forms2OleControl。如果是，则对其进行强制转换并提取属性。
 
-			properties += "\n";
-		}
-	}
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
+}
+
+properties += "\n";
+```
+
+## 步骤 5：统计 ActiveX 控件总数
+
+遍历所有形状后，计算找到的 ActiveX 控件的总数。
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## 步骤 6：显示属性
+
+最后，将提取的属性打印到控制台。
+
+```csharp
+Console.WriteLine("\n" + properties);
 ```
 
 ## 结论
 
-本指南向您展示了如何使用 Aspose.Words for .NET 读取 Word 文件中 ActiveX 控件的属性。按照所述步骤，您可以初始化文档、检索 ActiveX 控件并读取其属性。使用提供的示例代码作为起点，并根据您的特定需求进行自定义。
+就这样！您已成功学会了如何使用 Aspose.Words for .NET 从 Word 文档中读取 ActiveX 控件属性。本教程涵盖了加载文档、遍历形状以及从 ActiveX 控件中提取属性。通过遵循这些步骤，您可以自动从 Word 文档中提取重要数据，从而提高工作流程效率。
 
-读取 ActiveX 控件的属性可让您从包含这些控件的 Word 文件中提取重要信息。Aspose.Words for .NET 提供了使用 ActiveX 控件进行文字处理和自动化文档处理的强大功能。
+## 常见问题解答
 
-### 常见问题解答
+### Word 文档中的 ActiveX 控件是什么？
+ActiveX 控件是嵌入在 Word 文档中的交互式对象，例如复选框、按钮和文本字段，用于创建表单和自动执行任务。
 
-#### 问：读取 Word 文件中 ActiveX 控件的属性的第一步是什么？
+### 我可以使用 Aspose.Words for .NET 修改 ActiveX 控件的属性吗？
+是的，Aspose.Words for .NET 允许您以编程方式修改 ActiveX 控件的属性。
 
-答：第一步是初始化`Document`通过加载包含 ActiveX 控件的 Word 文档来替换对象。务必替换`MyDir`包含文档的目录的实际路径。
+### Aspose.Words for .NET 可以免费使用吗？
+ Aspose.Words for .NET 提供免费试用，但您需要购买许可证才能继续使用。您可以免费试用[这里](https://releases.aspose.com/).
 
-#### 问：如何将 ActiveX 控件放入文档中？
+### 除了 C# 之外，我可以将 Aspose.Words for .NET 与其他 .NET 语言一起使用吗？
+是的，Aspose.Words for .NET 可以与任何 .NET 语言一起使用，包括 VB.NET 和 F#。
 
-答：要检索 ActiveX 控件，您需要遍历每个`Shape`并检查它是否是 ActiveX 控件。使用`OleFormat`的財產`Shape`访问`OleControl`对象并检索必要的属性。
-
-#### 问：我可以读取 ActiveX 控件的哪些属性？
-
-答：您可以读取 ActiveX 控件的各种属性，例如标题、值、启用或禁用状态、类型以及与控件关联的子节点。
-
-#### 问：如何获取文档中 ActiveX 控件的总数？
-
-答：要获取文档中 ActiveX 控件的总数，可以使用`GetChildNodes`方法`Document`指定对象`NodeType.Shape`类型并包括子节点。
+### 在哪里可以找到有关 Aspose.Words for .NET 的更多文档？
+您可以找到详细的文档[这里](https://reference.aspose.com/words/net/).

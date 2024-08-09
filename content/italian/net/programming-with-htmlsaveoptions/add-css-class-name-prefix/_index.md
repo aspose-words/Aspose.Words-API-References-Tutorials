@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
-## introduzione
+## Introduzione
 
 Benvenuto! Se ti stai immergendo nel mondo di Aspose.Words per .NET, ti aspetta una sorpresa. Oggi esploreremo come aggiungere un prefisso del nome di una classe CSS quando si salva un documento Word come HTML utilizzando Aspose.Words per .NET. Questa funzione è molto utile quando vuoi evitare conflitti tra i nomi delle classi nei tuoi file HTML.
 
@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, hai aggiunto con successo un prefisso del nome di classe CSS all'output HTML utilizzando Aspose.Words per .NET. Questa funzionalità semplice ma potente può aiutarti a mantenere stili puliti e privi di conflitti nei tuoi documenti HTML.
+Ed ecco qua! Seguendo questi passaggi, hai aggiunto con successo un prefisso del nome di classe CSS all'output HTML utilizzando Aspose.Words per .NET. Questa funzionalità semplice ma potente può aiutarti a mantenere stili puliti e privi di conflitti nei tuoi documenti HTML.
 
 ## Domande frequenti
 
@@ -120,7 +120,7 @@ E il gioco è fatto! Seguendo questi passaggi, hai aggiunto con successo un pref
  IL`CssClassNamePrefix`la proprietà funziona con CSS esterni. Per i CSS in linea, avrai bisogno di un approccio diverso.
 
 ### Come posso includere altre opzioni di salvataggio HTML?
- È possibile configurare varie proprietà di`HtmlSaveOptions` per personalizzare l'output HTML. Controlla il[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ È possibile configurare varie proprietà di`HtmlSaveOptions` per personalizzare l'output HTML. Controlla il[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli
 
 ### È possibile salvare l'HTML in uno stream?
  Assolutamente! È possibile salvare il documento in uno stream passando l'oggetto stream al file`Save` metodo.

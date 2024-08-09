@@ -26,7 +26,7 @@ url: /zh-hant/java/document-printing/printing-documents-page-setup/
 
 ## 將 Aspose.Words for Java 新增到您的項目
 
-要使用 Aspose.Words for Java，您需要將該程式庫新增至您的專案。按著這些次序：
+要使用 Aspose.Words for Java，您需要將該程式庫新增至您的專案。請依照下列步驟操作：
 
 1. 從下列位置下載 Aspose.Words for Java 函式庫[這裡](https://releases.aspose.com/words/java/).
 

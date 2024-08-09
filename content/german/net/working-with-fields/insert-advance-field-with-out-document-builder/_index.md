@@ -52,7 +52,7 @@ Nachdem unser Projekt nun eingerichtet ist, müssen wir ein neues Dokument und e
 
 ### Dokument initialisieren
 
-1.  In deinem`Program.cs` Datei, beginnen Sie mit der Erstellung eines neuen Dokuments:
+1.  In Ihrem`Program.cs` Datei, beginnen Sie mit der Erstellung eines neuen Dokuments:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";

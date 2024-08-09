@@ -22,7 +22,7 @@ Innan du börjar, se till att du har följande:
 - En grundläggande förståelse för Python-programmering.
 - Aspose.Words för Python API-referenser.
 
-## Installerar Aspose.Words för Python
+## Installera Aspose.Words för Python
 
 För att komma igång måste du installera paketet Aspose.Words for Python. Du kan göra detta med pip, Python-paketets installationsprogram, med följande kommando:
 
@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Positionering av textrutor
 
- Att kontrollera placeringen av textrutor är avgörande för att uppnå önskad layout. Du kan ställa in positionen med hjälp av`left`och`top` egenskaper. Till exempel:
+ Att kontrollera placeringen av textrutor är avgörande för att uppnå önskad layout. Du kan ställa in positionen med hjälp av`left`och`top` fastigheter. Till exempel:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)

@@ -92,7 +92,7 @@ Ennek az oktatóanyagnak a lényege az adatcímkék formázása. Minden adatcím
 
 ```csharp
 series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Pénznem formátuma
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Dátum formátum
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Dátumformátum
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Százalékos formátum
 ```
 

@@ -20,7 +20,7 @@ url: /ko/java/document-splitting/splitting-documents-into-html-pages/
 
 ## 소개
 
-오늘날의 디지털 세계에서는 Word 문서를 HTML 페이지로 변환하는 것이 일반적인 요구 사항입니다. Aspose.Words는 Word 문서를 HTML 페이지로 쉽게 분할할 수 있는 Java API를 제공하여 이 작업을 단순화합니다. 시작하자.
+오늘날의 디지털 세계에서는 Word 문서를 HTML 페이지로 변환하는 것이 일반적인 요구 사항입니다. Aspose.Words는 Word 문서를 HTML 페이지로 쉽게 분할할 수 있는 Java API를 제공하여 이 작업을 단순화합니다. 시작해 봅시다.
 
 ## 프로젝트 설정
 

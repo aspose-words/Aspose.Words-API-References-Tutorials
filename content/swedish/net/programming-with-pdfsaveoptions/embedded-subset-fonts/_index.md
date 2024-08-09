@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Steg 2: Konfigurera PDF-sparalternativ
 
- Därefter konfigurerar vi`PdfSaveOptions` för att säkerställa att endast de nödvändiga teckensnittsunderuppsättningarna är inbäddade. Genom att sätta`EmbedFullFonts` till`false`, säger vi till Aspose.Words att endast bädda in de glyfer som används i dokumentet.
+ Därefter konfigurerar vi`PdfSaveOptions` för att säkerställa att endast de nödvändiga teckensnittsunderuppsättningarna är inbäddade. Genom att ställa in`EmbedFullFonts` till`false`, säger vi till Aspose.Words att endast bädda in de glyfer som används i dokumentet.
 
 ```csharp
 // Utdata-PDF-filen kommer att innehålla underuppsättningar av teckensnitten i dokumentet.
@@ -73,7 +73,7 @@ Och där har du det! Genom att följa dessa enkla steg kan du effektivt minska s
 Om du bara bäddar in de nödvändiga teckensnittsuppsättningarna kan storleken på PDF-filen minska avsevärt utan att kompromissa med dokumentets utseende och läsbarhet.
 
 ### Kan jag återgå till att bädda in fullständiga teckensnitt om det behövs?
- Jo det kan du. Ställ bara in`EmbedFullFonts`egendom till`true` i`PdfSaveOptions`.
+ Ja, det kan du. Ställ bara in`EmbedFullFonts`egendom till`true` i`PdfSaveOptions`.
 
 ### Stöder Aspose.Words för .NET andra PDF-optimeringsfunktioner?
 Absolut! Aspose.Words för .NET erbjuder en rad alternativ för att optimera PDF-filer, inklusive bildkomprimering och att ta bort oanvända objekt.

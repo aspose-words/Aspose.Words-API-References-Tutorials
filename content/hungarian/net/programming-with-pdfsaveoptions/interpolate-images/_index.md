@@ -24,7 +24,7 @@ Megvan minden? Nagy! Merüljünk el.
 
 ## Névterek importálása
 
-A kezdéshez importálnia kell a szükséges névtereket a C# projektbe. Itt van, hogyan:
+A kezdéshez importálnia kell a szükséges névtereket a C# projektbe. Íme, hogyan:
 
 ```csharp
 using Aspose.Words;
@@ -85,13 +85,13 @@ Ha további részletekre van szüksége, vagy más funkciókat szeretne felfedez
 
 ## GYIK
 
-### Mi az a képinterpoláció a PDF-ekben?
+### Mi a képinterpoláció a PDF-ekben?
 
 A képinterpoláció egy olyan technika, amellyel javítható a képek minősége a meglévő pixelértékek becslésével, így azok simábbnak és tisztábbnak tűnnek.
 
 ### Szükségem van speciális licencre a képinterpoláció használatához az Aspose.Words programmal?
 
- Az összes funkció korlátozás nélküli használatához érvényes Aspose.Words licenc szükséges. Jelölje be[Aspose.Words Buy](https://purchase.aspose.com/buy) az engedélyezési lehetőségekért.
+ Az összes funkció korlátozás nélküli használatához érvényes Aspose.Words licenc szükséges. Ellenőrzés[Aspose.Words Buy](https://purchase.aspose.com/buy) az engedélyezési lehetőségekért.
 
 ### Használhatok képinterpolációt más fájlformátumokhoz?
 
@@ -99,8 +99,8 @@ Az Aspose.Words elsősorban a képinterpolációt támogatja PDF-ekhez. Egyéb f
 
 ### Hogyan tesztelhetem a képinterpolációt a licenc megvásárlása előtt?
 
- tudsz[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) Az Aspose.Words a képinterpoláció és egyéb funkciók teszteléséhez.
+ Tudod[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) Az Aspose.Words a képinterpoláció és egyéb funkciók teszteléséhez.
 
-### Hol kaphatok segítséget, ha problémákba ütközöm?
+### Hol kaphatok segítséget, ha problémákat tapasztalok?
 
  Segítségért keresse fel a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8)ahol segítséget kaphat a közösségtől és az Aspose szakértőitől.

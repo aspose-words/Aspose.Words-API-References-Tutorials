@@ -20,7 +20,7 @@ url: /ko/net/working-with-fields/insert-field/
 3. IDE: Visual Studio와 같은 통합 개발 환경입니다.
 4.  임시 라이센스: 하나를 얻을 수 있습니다[여기](https://purchase.aspose.com/temporary-license/).
 
-.NET용 Aspose.Words를 설치하고 개발 환경을 설정했는지 확인하세요. 준비가 된? 시작하자!
+.NET용 Aspose.Words를 설치하고 개발 환경을 설정했는지 확인하세요. 준비가 된? 시작해 봅시다!
 
 ## 네임스페이스 가져오기
 

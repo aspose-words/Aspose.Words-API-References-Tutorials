@@ -9,7 +9,7 @@ url: /vi/net/join-and-append-documents/ignore-header-footer/
 ---
 ## Giới thiệu
 
-Việc hợp nhất các tài liệu Word đôi khi có thể hơi phức tạp, đặc biệt khi bạn muốn giữ nguyên một số phần trong khi bỏ qua những phần khác, như đầu trang và chân trang. May mắn thay, Aspose.Words for .NET cung cấp một cách hay để giải quyết vấn đề này. Trong hướng dẫn này, tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình, đảm bảo bạn hiểu rõ từng phần. Chúng tôi sẽ giữ nó nhẹ nhàng, mang tính trò chuyện và hấp dẫn, giống như trò chuyện với một người bạn. Sẵn sàng? Hãy đi sâu vào!
+Việc hợp nhất các tài liệu Word đôi khi có thể hơi phức tạp, đặc biệt khi bạn muốn giữ nguyên một số phần trong khi bỏ qua những phần khác, như đầu trang và chân trang. May mắn thay, Aspose.Words for .NET cung cấp một cách hay để giải quyết vấn đề này. Trong hướng dẫn này, tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình, đảm bảo bạn hiểu rõ từng phần. Chúng tôi sẽ giữ cho nó nhẹ nhàng, mang tính trò chuyện và hấp dẫn, giống như trò chuyện với một người bạn. Sẵn sàng? Hãy đi sâu vào!
 
 ## Điều kiện tiên quyết
 
@@ -101,7 +101,7 @@ Thao tác này sẽ lưu tài liệu đã hợp nhất trong thư mục được
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã hợp nhất thành công hai tài liệu Word trong khi bỏ qua đầu trang và chân trang của chúng bằng Aspose.Words for .NET. Phương pháp này rất hữu ích cho các nhiệm vụ quản lý tài liệu khác nhau trong đó việc duy trì các phần tài liệu cụ thể là rất quan trọng.
+Và bạn có nó! Bạn đã hợp nhất thành công hai tài liệu Word trong khi bỏ qua đầu trang và chân trang của chúng bằng Aspose.Words for .NET. Phương pháp này rất hữu ích cho các nhiệm vụ quản lý tài liệu khác nhau trong đó việc duy trì các phần tài liệu cụ thể là rất quan trọng.
 
 Làm việc với Aspose.Words cho .NET có thể hợp lý hóa đáng kể quy trình xử lý tài liệu của bạn. Hãy nhớ rằng, nếu bạn gặp khó khăn hoặc cần thêm thông tin, bạn luôn có thể kiểm tra[tài liệu](https://reference.aspose.com/words/net/).
 
@@ -113,7 +113,7 @@ Có, Aspose.Words cung cấp nhiều tùy chọn khác nhau để tùy chỉnh q
 
 ### Có thể giữ lại đầu trang và chân trang thay vì bỏ qua chúng không?
 
- Tuyệt đối. Đơn giản chỉ cần thiết lập`IgnoreHeaderFooter` ĐẾN`false` bên trong`ImportFormatOptions`.
+ Tuyệt đối. Đơn giản chỉ cần thiết lập`IgnoreHeaderFooter` ĐẾN`false` trong`ImportFormatOptions`.
 
 ### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/apply-license/apply-metered-license/
 ---
-## Úvod
+## Zavedení
 
 Aspose.Words for .NET je výkonná knihovna, která vám umožňuje pracovat s dokumenty Wordu ve vašich aplikacích .NET. Jednou z jeho výjimečných funkcí je možnost použít měřenou licenci. Tento licenční model je ideální pro firmy a vývojáře, kteří preferují průběžný přístup. S měřenou licencí platíte pouze za to, co používáte, což z ní činí flexibilní a nákladově efektivní řešení. V této příručce vás provedeme procesem použití měřené licence pro váš projekt Aspose.Words for .NET.
 
@@ -66,7 +66,7 @@ Console.WriteLine(doc.PageCount);
 
 Tento krok zajistí, že váš dokument bude načten a zpracován pomocí měřené licence.
 
-## Krok 5: Řešení výjimek
+## Krok 5: Ošetřete výjimky
 
 Vždy je dobrým zvykem zvládnout jakékoli potenciální výjimky. Pojďme do našeho kódu přidat blok try-catch, abychom mohli elegantně zvládat chyby.
 

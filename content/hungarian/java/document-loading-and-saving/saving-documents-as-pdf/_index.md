@@ -131,7 +131,7 @@ doc.save("output.pdf", saveOptions);
 
 ### Beágyazhatok betűtípusokat az Aspose.Words for Java által generált PDF-be?
 
- Igen, beágyazhat betűtípusokat a PDF-be a`setEmbedFullFonts` opciót`true` ban ben`PdfSaveOptions`. Íme egy példa:
+ Igen, beágyazhat betűtípusokat a PDF-be a`setEmbedFullFonts` opciót`true` be`PdfSaveOptions`. Íme egy példa:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -151,12 +151,12 @@ doc.save("output.pdf", saveOptions);
 
 ### Mi a célja a képtömörítésnek az Aspose.Words for Java programban?
 
- A képtömörítés lehetővé teszi a létrehozott PDF-ben lévő képek minőségének és méretének szabályozását. A képtömörítési módot a segítségével állíthatja be`setImageCompression` ban ben`PdfSaveOptions`.
+ A képtömörítés lehetővé teszi a létrehozott PDF-ben lévő képek minőségének és méretének szabályozását. A képtömörítési módot a segítségével állíthatja be`setImageCompression` be`PdfSaveOptions`.
 
 ### Hogyan frissíthetem az "Utoljára nyomtatott" tulajdonságot a PDF-ben?
 
- Beállítással frissítheti az "Utoljára nyomtatott" tulajdonságot a PDF-ben`setUpdateLastPrintedProperty` nak nek`true` ban ben`PdfSaveOptions`. Ez tükrözi az utolsó nyomtatás dátumát a PDF metaadatokban.
+ Beállítással frissítheti az "Utoljára nyomtatott" tulajdonságot a PDF-ben`setUpdateLastPrintedProperty` hogy`true` be`PdfSaveOptions`. Ez tükrözi az utolsó nyomtatás dátumát a PDF metaadatokban.
 
 ### Hogyan javíthatom a képminőséget PDF-be konvertálva?
 
- A képminőség javítása érdekében beállítással engedélyezze a képinterpolációt`setInterpolateImages` nak nek`true` ban ben`PdfSaveOptions`. Ez simább és jobb minőségű képeket eredményez a PDF-ben.
+ A képminőség javítása érdekében beállítással engedélyezze a képinterpolációt`setInterpolateImages` hogy`true` be`PdfSaveOptions`. Ez simább és jobb minőségű képeket eredményez a PDF-ben.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/keep-source-numbering/
 ---
-## introduzione
+## Introduzione
 
  Quando si lavora con Aspose.Words per .NET, l'importazione di documenti da una fonte a un'altra preservando la formattazione può essere gestita in modo efficiente utilizzando`NodeImporter` classe. Questo tutorial ti guiderà attraverso il processo passo dopo passo.
 
@@ -90,4 +90,4 @@ Aspose.Words supporta le versioni .NET Framework e .NET Core per una perfetta in
 Utilizza i blocchi try-catch per gestire le eccezioni che possono verificarsi durante il processo di importazione.
 
 ### Dove posso trovare una documentazione più dettagliata su Aspose.Words per .NET?
- Visitare il[documentazione](https://reference.aspose.com/words/net/) per guide complete e riferimenti API.
+ Visita il[documentazione](https://reference.aspose.com/words/net/) per guide complete e riferimenti API.

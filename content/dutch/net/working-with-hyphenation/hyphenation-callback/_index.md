@@ -10,13 +10,13 @@ url: /nl/net/working-with-hyphenation/hyphenation-callback/
 
 ## Invoering
 
-Hallo daar! Bent u ooit verstrikt geraakt in de complexiteit van tekstopmaak, vooral als u te maken heeft met talen waarin woordafbreking vereist is? Je bent niet alleen. Afbreking is weliswaar cruciaal voor de juiste tekstopmaak, maar kan een beetje hoofdpijn veroorzaken. Maar Raad eens? Aspose.Words voor .NET staat voor u klaar. Met deze krachtige bibliotheek kunt u de tekstopmaak naadloos beheren, inclusief het afbreken van tekst via een terugbelmechanisme. Gefascineerd? Laten we eens kijken hoe u een callback voor woordafbreking kunt implementeren met behulp van Aspose.Words voor .NET.
+Hé daar! Bent u ooit verstrikt geraakt in de complexiteit van tekstopmaak, vooral als u te maken heeft met talen waarin woordafbreking vereist is? Je bent niet de enige. Afbreking is weliswaar cruciaal voor de juiste tekstopmaak, maar kan een beetje hoofdpijn veroorzaken. Maar raad eens? Aspose.Words voor .NET staat voor u klaar. Met deze krachtige bibliotheek kunt u de tekstopmaak naadloos beheren, inclusief het afbreken van tekst via een terugbelmechanisme. Gefascineerd? Laten we eens kijken hoe u een callback voor woordafbreking kunt implementeren met behulp van Aspose.Words voor .NET.
 
 ## Vereisten
 
 Voordat we onze handen vuil maken aan code, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat u over de bibliotheek beschikt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: Zorg ervoor dat u over de bibliotheek beschikt. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. IDE: Een ontwikkelomgeving zoals Visual Studio.
 3. Basiskennis van C#: begrip van C# en .NET-framework.
 4. Afbreekwoordenboeken: afbreekwoordenboeken voor de talen die u wilt gebruiken.
@@ -68,7 +68,7 @@ Laten we nu het document laden dat woordafbreking vereist.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Hier laden we een Duits tekstdocument. Je kunt vervangen`"German text.docx"` met de bestandsnaam van uw document.
+Hier laden we een Duits tekstdocument. Je kunt vervangen`"German text.docx"` met de bestandsnaam van uw document.
 
 ## Stap 4: Sla het document op
 
@@ -140,10 +140,10 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor documentmanipulatie waa
 Woordafbreking verbetert de tekstopmaak door woorden op de juiste plaatsen af te breken, waardoor een leesbaarder en visueel aantrekkelijker document ontstaat.
 
 ### Kan ik Aspose.Words gratis gebruiken?
- Aspose.Words biedt een gratis proefperiode. Je kan het krijgen[hier](https://releases.aspose.com/).
+ Aspose.Words biedt een gratis proefperiode. Je kunt het krijgen[hier](https://releases.aspose.com/).
 
 ### Hoe verkrijg ik een woordafbrekingswoordenboek?
 U kunt woordafbrekingswoordenboeken downloaden van verschillende online bronnen, of indien nodig uw eigen woordenboeken maken.
 
 ### Wat gebeurt er als er een woordafbrekingswoordenboek ontbreekt?
- Als er een woordenboek ontbreekt, wordt de`RequestDictionary` methode genereert een uitzondering, die u kunt afhandelen om de gebruiker te informeren of een terugval te bieden.
+ Als er een woordenboek ontbreekt, wordt de`RequestDictionary`methode genereert een uitzondering, die u kunt afhandelen om de gebruiker te informeren of een terugval te bieden.

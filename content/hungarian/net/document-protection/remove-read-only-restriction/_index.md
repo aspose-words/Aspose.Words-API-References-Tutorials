@@ -89,7 +89,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ## Következtetés
 
-És ez az! Sikeresen eltávolította a csak olvasható korlátozást egy Word-dokumentumból az Aspose.Words for .NET használatával. Ez a folyamat egyszerű, és biztosítja, hogy a dokumentumok szabadon, minden szükségtelen korlátozás nélkül szerkeszthetők legyenek. 
+És ennyi! Sikeresen eltávolította a csak olvasható korlátozást egy Word-dokumentumból az Aspose.Words for .NET használatával. Ez a folyamat egyszerű, és biztosítja, hogy a dokumentumok szabadon, minden szükségtelen korlátozás nélkül szerkeszthetők legyenek. 
 
 Akár egy kis projekten dolgozik, akár több dokumentumot kezel, a dokumentumvédelem kezelésének ismerete sok időt és fáradságot takaríthat meg. Tehát menjen előre, és próbálja ki projektjei során. Boldog kódolást!
 

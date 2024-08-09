@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki metni bulmak ve değiştirmek için regex'i başarıyla kullandınız. Bu güçlü özellik, özellikle karmaşık metin kalıplarıyla uğraşırken size çok fazla zaman ve emek kazandırabilir. İster belgeleri temizliyor, ister metni biçimlendiriyor, ister toplu değişiklikler yapıyor olun, Aspose.Words for .NET ile regex cephaneliğinizde isteyeceğiniz bir araçtır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki metni bulmak ve değiştirmek için regex'i başarıyla kullandınız. Bu güçlü özellik, özellikle karmaşık metin kalıplarıyla uğraşırken size çok fazla zaman ve emek kazandırabilir. İster belgeleri temizliyor, ister metni biçimlendiriyor, ister toplu değişiklikler yapıyor olun, Aspose.Words for .NET ile regex cephaneliğinizde isteyeceğiniz bir araçtır.
 
 ## SSS'ler
 

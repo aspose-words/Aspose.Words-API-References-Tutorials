@@ -2,80 +2,94 @@
 title: レンダリング時にデフォルトのフォントを指定する
 linktitle: レンダリング時にデフォルトのフォントを指定する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメントをレンダリングするときに既定のフォントを指定する手順ガイド。
+description: Aspose.Words for .NET を使用して Word 文書をレンダリングするときに既定のフォントを指定する方法を学習します。プラットフォーム間で一貫した文書の外観を確保します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/specify-default-font-when-rendering/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントをレンダリングするときに既定のフォントを指定する手順を順を追って説明します。バンドルされている C# ソース コードについて説明し、この機能を理解して独自のプロジェクトに実装するのに役立つ包括的なガイドを提供します。このチュートリアルの最後には、Aspose.Words for .NET を使用してドキュメントをレンダリングするときに使用する既定のフォントを指定する方法がわかります。
+Word 文書をさまざまなプラットフォームで正しくレンダリングすることは、特にフォントの互換性を扱う場合には難しい場合があります。一貫した外観を維持する 1 つの方法は、文書を PDF またはその他の形式にレンダリングするときに既定のフォントを指定することです。このチュートリアルでは、Aspose.Words for .NET を使用して既定のフォントを設定し、どこで表示しても文書が適切に表示されるようにする方法について説明します。
 
-## ステップ1: ドキュメントディレクトリを定義する
-まず、ドキュメント ディレクトリへのパスを設定する必要があります。これは、編集したレンダリングされたドキュメントを保存する場所です。「YOUR DOCUMENTS DIRECTORY」を適切なパスに置き換えます。
+## 前提条件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+コードに進む前に、このチュートリアルに沿って実行するために必要な内容について説明します。
 
-## ステップ2: レンダリングするドキュメントを読み込む
-次に、レンダリングするドキュメントをロードする必要があります。`Document`クラス。正しいドキュメント パスを指定してください。
+- Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio またはその他の .NET 開発環境。
+- C# の基本知識: このチュートリアルでは、C# プログラミングに精通していることを前提としています。
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## 名前空間のインポート
 
-## ステップ3: デフォルトのフォントを設定する
-レンダリング時に使用するデフォルトのフォントを指定するには、`FontSettings`クラスと設定`DefaultFontName`の財産`DefaultFontSubstitution`に反対する`DefaultFontSubstitution`物体`SubstitutionSettings`の`FontSettings`.
+開始するには、必要な名前空間をインポートする必要があります。これにより、Aspose.Words の操作に必要なクラスとメソッドにアクセスできるようになります。
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## ステップ4: レンダリングされたドキュメントを保存する
-最後に、レンダリングされたドキュメントをファイルに保存するには、`Save()`方法の`Document`クラス。正しいパスとファイル名を必ず指定してください。
+ここで、デフォルトのフォントを指定するプロセスを、わかりやすい手順に分解してみましょう。
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
-```
+## ステップ1: ドキュメントディレクトリを設定する
 
-### Aspose.Words for .NET を使用してレンダリング時に既定のフォントを指定するサンプル ソース コード 
+まず、ドキュメント ディレクトリへのパスを定義します。ここに入力ファイルと出力ファイルが保存されます。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## ステップ2: ドキュメントを読み込む
+
+次に、レンダリングするドキュメントを読み込みます。この例では、「Rendering.docx」という名前のファイルを使用します。
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## ステップ3: フォント設定を構成する
+
+インスタンスを作成する`FontSettings`デフォルトのフォントを指定します。レンダリング中に定義されたフォントが見つからない場合、Aspose.Words はマシン上で使用可能な最も近いフォントを使用します。
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-//ここで定義されたデフォルトのフォントがレンダリング中に見つからない場合は、
-//代わりに、マシン上で最も近いフォントが使用されます。
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+```
+
+## ステップ4: ドキュメントにフォント設定を適用する
+
+構成されたフォント設定をドキュメントに割り当てます。
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## ステップ5: ドキュメントを保存する
+
+最後に、ドキュメントを希望の形式で保存します。この場合は、PDF として保存します。
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントをレンダリングするときに既定のフォントを指定する方法を学習しました。このステップ バイ ステップ ガイドに従うことで、ドキュメントをレンダリングするときに使用する既定のフォントを簡単に設定できます。Aspose.Words は、ドキュメント内のフォントを使用した Words Processing 用の強力で柔軟な API を提供します。この知識があれば、ドキュメントのレンダリングを特定のニーズに合わせて制御およびカスタマイズできます。
 
-### よくある質問
+これらの手順に従うことで、Word 文書が指定された既定のフォントでレンダリングされ、異なるプラットフォーム間で一貫性が維持されます。これは、文書が広く共有されている場合や、フォントの可用性が異なるシステムで表示される場合に特に便利です。
 
-#### Q: Aspose.Words で PDF に変換するときにデフォルトのフォントを指定するにはどうすればよいですか?
 
- A: Aspose.WordsでPDFに変換するときにデフォルトのフォントを指定するには、`PdfOptions`クラスを設定し、`DefaultFontName`プロパティを目的のフォントの名前に変更します。
+## よくある質問
 
-#### Q: PDF に変換するときにデフォルトのフォントが使用できない場合はどうなりますか?
+### Aspose.Words でデフォルトのフォントを指定するのはなぜですか?
+デフォルトのフォントを指定すると、元のフォントが使用できない場合でも、さまざまなプラットフォーム間でドキュメントの一貫した表示が保証されます。
 
-A: PDF に変換するときに指定された既定のフォントが使用できない場合、Aspose.Words は変換されたドキュメント内のテキストを表示するために代替フォントを使用します。これにより、元のフォントとは外観が若干異なる場合があります。
+### レンダリング中にデフォルトのフォントが見つからない場合はどうなりますか?
+Aspose.Words は、ドキュメントの外観を可能な限り維持するために、マシン上で使用可能な最も近いフォントを使用します。
 
-#### Q: DOCX や HTML などの他の出力形式のデフォルトのフォントを指定できますか?
+### 複数のデフォルトフォントを指定できますか?
+いいえ、デフォルトフォントは1つしか指定できません。ただし、特定のケースでは、`FontSettings`クラス。
 
-A: はい、適切な変換オプションを使用し、各形式に対応するプロパティを設定することで、DOCX や HTML などの他の出力形式のデフォルト フォントを指定できます。
+### Aspose.Words for .NET はすべてのバージョンの Word 文書と互換性がありますか?
+はい、Aspose.Words for .NET は、DOC、DOCX、RTF など、さまざまな Word ドキュメント形式をサポートしています。
 
-#### Q: Aspose.Words で指定されているデフォルトのフォントを確認するにはどうすればよいですか?
-
- A: Aspose.Wordsで指定されているデフォルトのフォントを確認するには、`DefaultFontName`の財産`PdfOptions`クラスを作成し、設定されたフォントの名前を取得します。
-
-#### Q: ドキュメントの各セクションに異なるデフォルトフォントを指定することは可能ですか?
-
-A: はい、各セクションに固有の書式設定オプションを使用して、ドキュメントの各セクションに異なる既定のフォントを指定することができます。ただし、これには Aspose.Words 機能を使用したドキュメントのより高度な操作が必要になります。
+### 問題が発生した場合、どこでサポートを受けることができますか?
+ Asposeコミュニティと開発者からのサポートは、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).

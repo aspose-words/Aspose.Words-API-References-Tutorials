@@ -9,7 +9,7 @@ url: /es/net/programming-with-table-styles-and-formatting/expand-formatting-on-c
 ---
 ## Introducción
 
-¿Alguna vez ha necesitado aplicar estilos consistentes en las tablas de sus documentos de Word? Ajustar manualmente cada celda puede resultar tedioso y propenso a errores. Ahí es donde Aspose.Words para .NET resulta útil. Este tutorial lo guiará a través del proceso de expandir el formato en celdas y filas desde un estilo de tabla, asegurando que sus documentos luzcan pulidos y profesionales sin complicaciones adicionales.
+¿Alguna vez tuvo que aplicar estilos consistentes en las tablas de sus documentos de Word? Ajustar manualmente cada celda puede resultar tedioso y propenso a errores. Ahí es donde Aspose.Words para .NET resulta útil. Este tutorial lo guiará a través del proceso de expandir el formato en celdas y filas desde un estilo de tabla, asegurando que sus documentos luzcan pulidos y profesionales sin complicaciones adicionales.
 
 ## Requisitos previos
 
@@ -109,4 +109,4 @@ Expandir el formato desde los estilos garantiza que el estilo se aplique directa
 Una vez que se expanden los estilos, se aplican directamente a las celdas. Para revertir, deberá volver a cargar el documento o volver a aplicar los estilos manualmente.
 
 ### ¿Este método funciona con todas las versiones de Aspose.Words para .NET?
- Sí el`ExpandTableStylesToDirectFormatting` El método está disponible en versiones recientes de Aspose.Words para .NET. Siempre revisa el[documentación](https://reference.aspose.com/words/net/) para las últimas actualizaciones.
+ Sí, el`ExpandTableStylesToDirectFormatting` El método está disponible en versiones recientes de Aspose.Words para .NET. Siempre revisa el[documentación](https://reference.aspose.com/words/net/) para las últimas actualizaciones.

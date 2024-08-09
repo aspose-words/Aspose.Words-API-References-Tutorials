@@ -142,9 +142,9 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
 ## GYIK
 
-### Mi az a szakasz a Word-dokumentumban?
+### Mi az a szakasz egy Word dokumentumban?
 
-A Word-dokumentum egy szakasza olyan szegmens, amelynek saját elrendezése és formázása lehet, például fejlécek, láblécek és oszlopok. Segít a tartalom különálló részekre való rendszerezésében.
+Word-dokumentum egy szakasza olyan szegmens, amelynek saját elrendezése és formázása lehet, például fejlécek, láblécek és oszlopok. Segít a tartalom különálló részekre való rendszerezésében.
 
 ### Klónozhatok több szakaszt egyszerre?
 
@@ -160,4 +160,4 @@ Igen, az Aspose.Words különféle Word-formátumokat támogat, beleértve a DOC
 
 ### Hol találok további forrásokat az Aspose.Words oldalon?
 
- További információért látogassa meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy a[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért és megbeszélésekért.
+ További információért látogassa meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért és megbeszélésekért.

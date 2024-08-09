@@ -44,7 +44,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokumentfiler.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokumentfiler.
 
 ## Steg 3: Ställ in avsnittsstart på ny sida
 

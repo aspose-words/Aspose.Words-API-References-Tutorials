@@ -15,7 +15,7 @@ Belge işleme ve otomasyon alanında Aspose.Words for .NET, Word belgelerini pro
 
 Bu eğitime dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-### yazılım gereksinimleri
+### Yazılım Gereksinimleri
 
 1. Visual Studio: Sisteminize kurulu ve yapılandırılmış.
 2.  Aspose.Words for .NET: İndirildi ve Visual Studio projenize entegre edildi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).

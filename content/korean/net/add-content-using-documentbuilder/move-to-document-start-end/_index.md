@@ -9,13 +9,13 @@ url: /ko/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## 소개
 
-안녕하세요! Word 문서로 작업해 왔으며 프로그래밍 방식으로 문서의 시작이나 끝으로 빠르게 이동할 수 있는 방법이 필요합니다. 글쎄, 당신은 바로 이곳에 있어요! 이 가이드에서는 Aspose.Words for .NET을 사용하여 Word 문서의 시작이나 끝으로 커서를 이동하는 방법을 살펴보겠습니다. 저를 믿으세요. 이 과정이 끝나면 전문가처럼 문서를 탐색하게 될 것입니다. 시작하자!
+안녕하세요! Word 문서로 작업해 왔으며 프로그래밍 방식으로 문서의 시작이나 끝으로 빠르게 이동할 수 있는 방법이 필요합니다. 글쎄, 당신은 바로 이곳에 있어요! 이 가이드에서는 Aspose.Words for .NET을 사용하여 Word 문서의 시작이나 끝으로 커서를 이동하는 방법을 살펴보겠습니다. 저를 믿으세요. 이 과정이 끝나면 전문가처럼 문서를 탐색하게 될 것입니다. 시작해 봅시다!
 
 ## 전제 조건
 
 먼저 코드를 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
-1.  Aspose.Words for .NET: 이것은 우리가 사용할 마법 도구입니다. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) 아니면 잡아[무료 시험판](https://releases.aspose.com/).
+1.  Aspose.Words for .NET: 이것은 우리가 사용할 마법 도구입니다. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/) 아니면 잡아[무료 평가판](https://releases.aspose.com/).
 2. .NET 개발 환경: Visual Studio는 확실한 선택입니다.
 3. C#에 대한 기본 지식: 걱정하지 마세요. 마법사가 될 필요는 없지만 조금만 익숙해지면 큰 도움이 됩니다.
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- 여기서는 다음 인스턴스를 생성합니다.`Document`그리고`DocumentBuilder` . 에 대해 생각하다`Document` 빈 Word 문서로`DocumentBuilder` 당신의 펜으로.
+ 여기서는 다음 인스턴스를 생성합니다.`Document`그리고`DocumentBuilder` . 생각하다`Document` 빈 Word 문서로`DocumentBuilder` 당신의 펜으로.
 
 ## 2단계: 문서 시작으로 이동
 
@@ -78,7 +78,7 @@ Aspose.Words for .NET은 C#에서 프로그래밍 방식으로 Word 문서를 �
 전적으로! 이 가이드에서는 C#을 사용하지만 VB.NET과 같은 모든 .NET 언어와 함께 .NET용 Aspose.Words를 사용할 수 있습니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?  
- 예, 하지만 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
+ 예, 하지만 다음과 같이 시작할 수 있습니다.[무료 평가판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words는 .NET Core와 호환됩니까?  
 예, .NET용 Aspose.Words는 .NET Framework와 .NET Core를 모두 지원합니다.

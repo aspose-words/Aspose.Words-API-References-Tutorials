@@ -99,4 +99,4 @@ doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.
  हां, आप यहां से निःशुल्क परीक्षण संस्करण डाउनलोड कर सकते हैं।[Aspose वेबसाइट](https://releases.aspose.com/).
 
 ### यदि मुझे कोई समस्या आती है तो मुझे सहायता कहां से मिल सकती है?
- आप यहां जा सकते हैं[Aspose समर्थन मंच](https://forum.aspose.com/c/words/8) सहायता के लिए।
+ आप यहां जा सकते हैं[Aspose समर्थन मंच](https://forum.aspose.com/c/words/8) सहायता के लिए.

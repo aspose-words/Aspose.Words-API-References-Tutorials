@@ -101,7 +101,7 @@ Après avoir incorporé les extensions Web et apporté les modifications nécess
 document.save("output.docx", aspose.words.SaveFormat.DOCX)
 ```
 
-## Conseils pour l’optimisation des performances
+## Conseils pour l'optimisation des performances
 
 Pour garantir des performances optimales lors de l'utilisation d'extensions Web, tenez compte des conseils suivants :
 

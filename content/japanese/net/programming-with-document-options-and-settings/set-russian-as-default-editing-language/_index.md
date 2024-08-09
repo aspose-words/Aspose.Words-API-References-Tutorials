@@ -103,7 +103,7 @@ Aspose.Words for .NET は、.NET アプリケーション内で Word 文書を�
 
  Aspose.Words for .NETは以下からダウンロードできます。[Aspose リリース](https://releases.aspose.com/words/net/)ページ。
 
-### とは`LoadOptions` used for?
+### 何ですか`LoadOptions` used for?
 
 `LoadOptions`デフォルトの編集言語の設定など、ドキュメントを読み込むためのさまざまなオプションを指定するために使用されます。
 

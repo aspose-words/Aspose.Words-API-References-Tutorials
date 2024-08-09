@@ -61,7 +61,7 @@ Aprenda a dar formato a párrafos y texto en documentos de Word usando Aspose.Wo
 ### [Seguimiento y revisión de revisiones de documentos](./document-revisions/)
 Aprenda a realizar un seguimiento y revisar revisiones de documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente para una colaboración eficiente. ¡Mejore su gestión de documentos hoy!
 ### [Gestión de secciones y diseño de documentos](./document-sections/)
-Aprenda a administrar secciones y diseños de documentos con Aspose.Words para Python. Cree, modifique secciones, personalice diseños y más. ¡Empieza ahora! 
+Aprenda a administrar secciones y diseños de documentos con Aspose.Words para Python. Cree, modifique secciones, personalice diseños y más. ¡Empiece ahora! 
 ### [Mejora del contenido visual con cuadros de texto en documentos de Word](./document-textboxes/)
 ¡Mejore las imágenes de los documentos usando Aspose.Words Python! Aprende paso a paso cómo crear y personalizar cuadros de texto en documentos de Word. Mejore el diseño, el formato y el estilo del contenido para obtener documentos atractivos.
 ### [Desbloqueo de la automatización avanzada con macros VBA en documentos de Word](./document-vba-macros/)

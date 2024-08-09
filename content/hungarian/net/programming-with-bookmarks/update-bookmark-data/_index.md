@@ -69,7 +69,7 @@ Ez a kódrészlet lekéri az aktuális nevet (`name`) és szöveg (`text`). Ez a
 
 ## 4. lépés: Frissítse a könyvjelző nevét (opcionális)
 
- Képzelje el, hogy átnevez egy fejezetet egy könyvben. Hasonlóképpen átnevezheti a könyvjelzőket, hogy jobban tükrözze tartalmukat vagy céljukat. Az Aspose.Words lehetővé teszi a`Name` tulajdona a`Bookmark` tárgy:
+ Képzelje el, hogy átnevez egy fejezetet egy könyvben. Hasonlóképpen átnevezheti a könyvjelzőket, hogy jobban tükrözze tartalmukat vagy céljukat. Az Aspose.Words lehetővé teszi a`Name` tulajdona a`Bookmark` objektum:
 
 ```csharp
 bookmark.Name = "RenamedBookmark";
@@ -79,7 +79,7 @@ bookmark.Name = "RenamedBookmark";
 
 ## 5. lépés: Frissítse a könyvjelző szövegét
 
- Most jön az izgalmas rész: a könyvjelzőhöz társított tényleges tartalom módosítása. Az Aspose.Words segítségével közvetlenül frissítheti a`Text` tulajdona a`Bookmark` tárgy:
+ Most jön az izgalmas rész: a könyvjelzőhöz társított tényleges tartalom módosítása. Az Aspose.Words segítségével közvetlenül frissítheti a`Text` tulajdona a`Bookmark` objektum:
 
 ```csharp
 bookmark.Text = "This is a new bookmarked text.";
@@ -91,7 +91,7 @@ Ez a sor lecseréli a könyvjelzőn belüli szöveget az új karakterláncra`"Th
 
 ## 6. lépés: Mentse el a frissített dokumentumot
 
- Végül, hogy a változtatásokat véglegessé tegyük, el kell mentenünk a módosított dokumentumot. Az Aspose.Words biztosítja a`Save` módszer a`Document` tárgy:
+ Végül, hogy a változtatásokat véglegessé tegyük, el kell mentenünk a módosított dokumentumot. Az Aspose.Words biztosítja a`Save` módszer a`Document` objektum:
 
 ```csharp
 doc.Save(dataDir + "UpdatedBookmarks.docx");
@@ -117,7 +117,7 @@ Teljesen! Az Aspose.Words módszereket biztosít könyvjelzők beszúrására a 
 
  Mint korábban említettük, egy nem létező könyvjelző elérése kivételt jelent. Megvalósíthat kivételkezelési mechanizmusokat (például a`try-catch` blokk), hogy kecsesen kezelje az ilyen forgatókönyveket.
 
-### Törölhetem a könyvjelzőket a frissítés után?
+### Törölhetem a könyvjelzőket frissítésük után?
 
  Igen, az Aspose.Words biztosítja a`Remove` módszer a`Bookmarks` gyűjtemény a könyvjelzők törléséhez.
 

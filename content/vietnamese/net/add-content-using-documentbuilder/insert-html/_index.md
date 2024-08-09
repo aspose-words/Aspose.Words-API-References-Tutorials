@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Được rồi, hãy chia nhỏ điều này từng bước một. Sẵn sàng? Bắt đầu nào!
+Được rồi, hãy chia nhỏ điều này từng bước một. Sẵn sàng? Hãy bắt đầu!
 
 ## Bước 1: Thiết lập thư mục tài liệu của bạn
 
@@ -82,7 +82,7 @@ Cuối cùng nhưng không kém phần quan trọng, chúng ta sẽ lưu tài li
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-Và bạn có nó rồi đấy! Bạn vừa chèn HTML vào tài liệu Word bằng Aspose.Words cho .NET. Đập tay!
+Và bạn có nó! Bạn vừa chèn HTML vào tài liệu Word bằng Aspose.Words for .NET. Cao năm!
 
 ## Phần kết luận
 
@@ -107,4 +107,4 @@ Có, sau khi HTML được chèn vào, bạn có thể thao tác thêm với tà
  Bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) hoặc có được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để có đầy đủ tính năng.
 
 ### Tôi có thể tìm thêm hướng dẫn và ví dụ ở đâu?  
- Các[tài liệu](https://reference.aspose.com/words/net/)Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8)là nơi tuyệt vời để bắt đầu tìm hiểu thêm hướng dẫn chi tiết và hỗ trợ cộng đồng.
+ các[tài liệu](https://reference.aspose.com/words/net/)Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8)là nơi tuyệt vời để bắt đầu tìm hiểu thêm hướng dẫn chi tiết và hỗ trợ cộng đồng.

@@ -75,7 +75,7 @@ FieldPage field = new FieldPage(doc);
 header.appendChild(field);
 ```
 
-## Praktik terbaik
+## Praktik Terbaik
 
 Untuk memastikan pengalaman yang lancar saat menata header dan footer dokumen, pertimbangkan praktik terbaik berikut:
 
@@ -99,7 +99,7 @@ Ya, Anda dapat memiliki header dan footer yang berbeda untuk halaman ganjil dan 
 
 ### Apakah mungkin untuk menambahkan hyperlink di dalam header atau footer?
 
- Tentu! Anda dapat menambahkan hyperlink di dalam header atau footer menggunakan Aspose.Words untuk Java. Menggunakan`Hyperlink` kelas untuk membuat hyperlink dan memasukkannya ke dalam konten header atau footer Anda.
+ Tentu! Anda dapat menambahkan hyperlink di dalam header atau footer menggunakan Aspose.Words untuk Java. Gunakan`Hyperlink` kelas untuk membuat hyperlink dan memasukkannya ke dalam konten header atau footer Anda.
 
 ### Bagaimana cara menyelaraskan konten header atau footer ke kiri atau kanan?
 
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Bisakah saya menambahkan bidang khusus, seperti judul dokumen, ke header atau footer?
 
-Ya, Anda dapat menambahkan bidang khusus ke header atau footer. Membuat`Run` elemen dan masukkan ke dalam konten header atau footer, berikan teks yang diinginkan. Sesuaikan pemformatan sesuai kebutuhan.
+Ya, Anda dapat menambahkan bidang khusus ke header atau footer. Buat sebuah`Run` elemen dan masukkan ke dalam konten header atau footer, berikan teks yang diinginkan. Sesuaikan pemformatan sesuai kebutuhan.
 
 ### Apakah Aspose.Words untuk Java kompatibel dengan format dokumen yang berbeda?
 

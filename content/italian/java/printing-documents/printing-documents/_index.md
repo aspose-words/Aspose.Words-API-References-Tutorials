@@ -10,7 +10,7 @@ url: /it/java/printing-documents/printing-documents/
 
 Se stai cercando di stampare documenti utilizzando Aspose.Words per Java, sei nel posto giusto. In questa guida passo passo ti guideremo attraverso il processo di stampa di documenti con Aspose.Words per Java utilizzando il codice sorgente fornito.
 
-## introduzione
+## Introduzione
 
 La stampa di documenti è un'attività comune in molte applicazioni. Aspose.Words per Java fornisce una potente API per lavorare con documenti Word, inclusa la possibilità di stamparli. In questo tutorial ti guideremo passo dopo passo attraverso il processo di stampa di un documento Word.
 

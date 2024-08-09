@@ -56,7 +56,7 @@ Diese Zeile fügt Ihrem Dokument den Text „Hier ist ein SVG-Bild:“ hinzu. Es
 
 ## Schritt 3: SVG-Bild einfügen
 
- Nun zum lustigen Teil! Wir fügen ein SVG-Bild in unser Dokument ein, indem wir`InsertHtml` Methode.
+ Nun zum lustigen Teil! Wir fügen ein SVG-Bild in unser Dokument ein, indem wir`InsertHtml` Verfahren.
 
 ```csharp
 builder.InsertHtml(

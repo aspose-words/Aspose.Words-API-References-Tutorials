@@ -16,10 +16,10 @@ Hej där, andra teknikentusiast! Om du någonsin har märkt att du behöver konv
 Innan vi dyker in i koden, låt oss se till att du har allt du behöver för att komma igång. Här är en snabb checklista:
 
 1.  Visual Studio: Se till att du har Visual Studio installerat på din dator. Du kan ladda ner den från[Visual Studio hemsida](https://visualstudio.microsoft.com/).
-2.  Aspose.Words for .NET: Du behöver Aspose.Words for .NET-biblioteket. Om du inte har det ännu, prova gratis från[Aspose släpper](https://releases.aspose.com/words/net/) eller köp den från[Aspose Store](https://purchase.aspose.com/buy).
+2.  Aspose.Words for .NET: Du behöver Aspose.Words for .NET-biblioteket. Om du inte har fått det ännu, prova gratis från[Aspose släpper](https://releases.aspose.com/words/net/) eller köp den från[Aspose Store](https://purchase.aspose.com/buy).
 3. Grundläggande kunskaper om C#: En grundläggande förståelse av C# hjälper dig att följa med i kodexemplen.
 
-Har du allt det där? Bra! Låt oss gå vidare till att importera de nödvändiga namnrymden.
+Har du allt det där? Stor! Låt oss gå vidare till att importera de nödvändiga namnrymden.
 
 ## Importera namnområden
 
@@ -43,7 +43,7 @@ Först och främst måste du ange sökvägen till din dokumentkatalog. Det är h
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
 
 ## Steg 2: Ladda Word-dokumentet
 
@@ -92,7 +92,7 @@ Och där har du det! Du har framgångsrikt exporterat resurser medan du sparat e
 ## FAQ's
 
 ### Kan jag exportera bilder tillsammans med typsnitt och CSS?
- Jo det kan du! Aspose.Words för .NET stöder även export av bilder. Se bara till att konfigurera`HtmlSaveOptions` följaktligen.
+ Ja, det kan du! Aspose.Words för .NET stöder även export av bilder. Se bara till att konfigurera`HtmlSaveOptions` följaktligen.
 
 ### Finns det något sätt att bädda in CSS istället för att använda en extern stilmall?
  Absolut. Du kan ställa in`CssStyleSheetType` till`CssStyleSheetType.Embedded` om du föredrar inbäddade stilar.

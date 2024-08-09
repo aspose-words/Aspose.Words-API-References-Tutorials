@@ -96,7 +96,7 @@ extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 
 ### Как мне начать работу с Aspose.Words для Java?
 
- Начать работу с Aspose.Words для Java легко. Вы можете загрузить библиотеку с веб-сайта Aspose и следовать инструкциям по установке и использованию в документации. Посещать[Документация Aspose.Words для Java](https://reference.aspose.com/words/java/) Больше подробностей.
+ Начать работу с Aspose.Words для Java легко. Вы можете загрузить библиотеку с веб-сайта Aspose и следовать инструкциям по установке и использованию в документации. Посещать[Документация Aspose.Words для Java](https://reference.aspose.com/words/java/) для более подробной информации.
 
 ### Каковы ключевые особенности Aspose.Words для Java?
 

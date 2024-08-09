@@ -81,7 +81,7 @@ Word belgelerindeki yorum yanıtlarını programlı olarak yönetmek, özellikle
 
 ### Her yanıt için yazar ayrıntılarını özelleştirebilir miyim?
 
- Evet, her yanıt için yazarın adını, adının baş harflerini ve tarih ve saati belirtebilirsiniz.`AddReply` yöntem.
+ Evet, her yanıt için yazarın adını, adının baş harflerini ve tarih ve saati belirtebilirsiniz.`AddReply` Yöntem.
 
 ### Bir yorumdaki tüm yanıtları aynı anda kaldırmak mümkün müdür?
 
@@ -89,7 +89,7 @@ Tüm yanıtları kaldırmak için, döngüler arasında geçiş yapmanız gereki
 
 ### Belgenin belirli bir bölümündeki yorumlara erişebilir miyim?
 
- Evet, belgenin bölümleri arasında gezinebilir ve her bölümün içindeki yorumlara erişebilirsiniz.`GetChild` yöntem.
+ Evet, belgenin bölümleri arasında gezinebilir ve her bölümün içindeki yorumlara erişebilirsiniz.`GetChild` Yöntem.
 
 ### Aspose.Words for .NET yorumla ilgili diğer özellikleri destekliyor mu?
 

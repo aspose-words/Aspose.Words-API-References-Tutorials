@@ -176,4 +176,4 @@ Um den Kennwortschutz eines kennwortgeschützten Dokuments aufzuheben, können S
 
 ### Was ist die Standardkomprimierungsstufe beim Speichern eines Dokuments im OOXML-Format?
 
- Die Standardkomprimierungsstufe beim Speichern eines Dokuments im OOXML-Format mit Aspose.Words für Java ist`NORMAL` Sie können die Komprimierungsstufe ändern auf`SUPER_FAST` oder`MAXIMUM` wie benötigt.
+ Die Standardkomprimierungsstufe beim Speichern eines Dokuments im OOXML-Format mit Aspose.Words für Java ist`NORMAL` Sie können die Komprimierungsstufe ändern auf`SUPER_FAST` oder`MAXIMUM` nach Bedarf.

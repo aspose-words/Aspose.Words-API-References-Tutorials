@@ -9,7 +9,7 @@ url: /nl/net/add-content-using-documentbuilder/build-table/
 ---
 ## Invoering
 
-Hallo daar! Wilt u programmatisch tabellen in uw Word-documenten maken? Dan ben je hier aan het juiste adres! Vandaag duiken we in de magische wereld van Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten als een professional manipuleren. Stel je voor dat je een tovenaar bent, en Aspose.Words is je toverstok, waarmee je met een snelle beweging van je pols (of beter gezegd, een regel code) documenten kunt maken, bewerken en opmaken. In deze zelfstudie concentreren we ons op het maken van een tabel in een Word-document. Dus pak je codeerhoed en laten we aan de slag gaan!
+Hé daar! Wilt u programmatisch tabellen in uw Word-documenten maken? Dan ben je hier aan het juiste adres! Vandaag duiken we in de magische wereld van Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten als een professional manipuleren. Stel je voor dat je een tovenaar bent, en Aspose.Words is je toverstok, waarmee je met een snelle beweging van je pols (of beter gezegd, een regel code) documenten kunt maken, bewerken en opmaken. In deze zelfstudie concentreren we ons op het maken van een tabel in een Word-document. Dus pak je codeerhoed en laten we aan de slag gaan!
 
 ## Vereisten
 
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 2: Start de tabel
 
- Laten we nu onze tafel aftrappen. Wij noemen de`StartTable` werkwijze van de`DocumentBuilder` beginnen.
+ Laten we nu onze tafel aftrappen. Wij noemen de`StartTable` werkwijze van de`DocumentBuilder` om te beginnen.
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Door het gebruiken van`StartTable` vertellen we Aspose.Words dat we op het punt staan een tabel te maken. De`InsertCell` methode voegt de eerste cel toe, en`AutoFit` zorgt ervoor dat onze kolommen een vaste breedte hebben.
+ Door te gebruiken`StartTable` vertellen we Aspose.Words dat we op het punt staan een tabel te maken. De`InsertCell` methode voegt de eerste cel toe, en`AutoFit` zorgt ervoor dat onze kolommen een vaste breedte hebben.
 
 ## Stap 3: Formatteer de eerste rij
 
@@ -125,7 +125,7 @@ Vergeet niet: oefening baart kunst. Aarzel dus niet om te experimenteren met ver
 Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunt u documenten maken, bewerken en manipuleren zonder dat u Microsoft Word nodig hebt.
 
 ### Hoe installeer ik Aspose.Words voor .NET?
- Jij kan[download Aspose.Words voor .NET hier](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies om het in uw ontwikkelomgeving in te stellen.
+ Dat kan[download Aspose.Words voor .NET hier](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies om het in uw ontwikkelomgeving in te stellen.
 
 ### Kan ik Aspose.Words gratis gebruiken?
  Aspose.Words biedt een[gratis proefperiode](https://releases.aspose.com/) zodat u de functies ervan kunt testen. Voor langdurig gebruik kunt u een licentie aanschaffen of een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).

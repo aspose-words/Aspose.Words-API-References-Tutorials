@@ -18,7 +18,7 @@ Las fuentes juegan un papel crucial en el diseño y la legibilidad de los docume
 
 Antes de profundizar en el código, asegúrese de cumplir los siguientes requisitos previos:
 
-1.  Biblioteca Aspose.Words para Java: asegúrese de haber descargado e instalado la biblioteca Aspose.Words para Java. Puede[descarguelo aqui](https://releases.aspose.com/words/java/).
+1.  Biblioteca Aspose.Words para Java: asegúrese de haber descargado e instalado la biblioteca Aspose.Words para Java. Puede[descárgalo aquí](https://releases.aspose.com/words/java/).
 
 2. Entorno de desarrollo Java: asegúrese de tener configurado un entorno de desarrollo Java.
 
@@ -37,7 +37,7 @@ import java.awt.Color;
 
 ## Trabajar con fuentes
 
-Ahora que ya tienes tu proyecto configurado, profundicemos en el uso de fuentes con Aspose.Words para Java. Crearemos un documento de muestra y formatearemos el texto con varias propiedades de fuente.
+Ahora que tiene su proyecto configurado, profundicemos en el uso de fuentes con Aspose.Words para Java. Crearemos un documento de muestra y formatearemos el texto con varias propiedades de fuente.
 
 ```java
 public class FontFormattingDemo {

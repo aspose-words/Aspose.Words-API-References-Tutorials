@@ -15,7 +15,7 @@ Belgelerle programlı olarak çalışmak, eğer bu konuda yeniyseniz, biraz göz
 
 Koda dalmadan önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET'i indirip yüklemeniz gerekecek. Bulabilirsin[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NET'i indirip yüklemeniz gerekecek. Onu bulabilirsin[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio'nun veya .NET geliştirmeyi destekleyen başka bir IDE'nin çalışan kurulumu.
 3. Temel C# Anlayışı: Örneğimizde kullanacağımız için C# programlamaya aşina olmak faydalı olacaktır.
 
@@ -75,7 +75,7 @@ builder.Write("Row 1, Cell 2 Content.");
 
 ## Adım 6: İlk Sırayı Sonlandırın
 
- İlk satırı oluşturmayı bitirdiğimizi belirtmek için`EndRow` yöntem. Bu yöntem aynı zamanda yeni bir satır başlatır.
+ İlk satırı oluşturmayı bitirdiğimizi belirtmek için,`EndRow` Yöntem. Bu yöntem aynı zamanda yeni bir satır başlatır.
 
 ```csharp
 builder.EndRow();
@@ -105,7 +105,7 @@ builder.EndTable();
 
 ## Adım 9: Belgeyi Kaydedin
 
- Son olarak, belgeyi kullanarak belirtilen dizine kaydediyoruz.`Save` yöntem.
+ Son olarak, belgeyi kullanarak belirtilen dizine kaydediyoruz.`Save` Yöntem.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde basit bir tablo oluşturdunuz. Süreci yönetilebilir adımlara bölerek anlaşılmasını ve uygulanmasını kolaylaştırdık. Artık ihtiyaçlarınıza uygun farklı tablo yapılarını ve içeriklerini deneyebilirsiniz. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde basit bir tablo oluşturdunuz. Süreci yönetilebilir adımlara bölerek anlaşılmasını ve uygulanmasını kolaylaştırdık. Artık ihtiyaçlarınıza uygun farklı tablo yapılarını ve içeriklerini deneyebilirsiniz. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -127,7 +127,7 @@ Evet, Aspose.Words for .NET, VB.NET ve C# da dahil olmak üzere .NET çerçevesi
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET için nasıl destek alabilirim?
- Aspose.Words'ü ziyaret ederek destek alabilirsiniz.[destek Forumu](https://forum.aspose.com/c/words/8).
+ Aspose.Words'ü ziyaret ederek destek alabilirsiniz.[destek forumu](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words for .NET için daha ayrıntılı belgeleri nerede bulabilirim?
  Ayrıntılı belgeler bulunabilir[Burada](https://reference.aspose.com/words/net/).

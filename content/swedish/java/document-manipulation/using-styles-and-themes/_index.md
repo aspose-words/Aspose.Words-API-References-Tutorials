@@ -10,7 +10,7 @@ url: /sv/java/document-manipulation/using-styles-and-themes/
 
 ## Introduktion till att använda stilar och teman i Aspose.Words för Java
 
-I den här guiden kommer vi att utforska hur man arbetar med stilar och teman i Aspose.Words för Java för att förbättra formateringen och utseendet på dina dokument. Vi kommer att täcka ämnen som att hämta stilar, kopiera stilar, hantera teman och infoga stilavgränsare. Låt oss börja!
+I den här guiden kommer vi att utforska hur man arbetar med stilar och teman i Aspose.Words för Java för att förbättra formateringen och utseendet på dina dokument. Vi kommer att täcka ämnen som att hämta stilar, kopiera stilar, hantera teman och infoga stilavgränsare. Låt oss komma igång!
 
 ## Hämtar stilar
 

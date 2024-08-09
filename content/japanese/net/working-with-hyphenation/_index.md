@@ -12,6 +12,6 @@ Words Processing with Hyphenation は、Aspose.Words for .NET ライブラリを
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [言語の単語をハイフンでつなぐ](./hyphenate-words-of-languages/) | Aspose.Words for .NET を使用して、Word 文書内のさまざまな言語の単語をハイフンで区切る方法を学習します。 |
-| [言語のハイフネーション辞書を読み込む](./load-hyphenation-dictionary-for-language/) |Aspose.Words for .NET で特定の言語のハイフネーション辞書を読み込む方法を学習します。 |
-| [ハイフネーションコールバック](./hyphenation-callback/) | Aspose.Words for .NET のハイフネーション コールバックを使用して単語のハイフネーションを処理する方法を学習します。 |
+| [言語の単語をハイフンでつなぐ](./hyphenate-words-of-languages/) | Aspose.Words for .NET を使用して、さまざまな言語の単語をハイフンで区切る方法を学びます。この詳細なステップバイステップのガイドに従って、ドキュメントの読みやすさを向上させます。 |
+| [言語のハイフネーション辞書を読み込む](./load-hyphenation-dictionary-for-language/) | この包括的なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して任意の言語のハイフネーション辞書を読み込む方法を学習します。 |
+| [ハイフネーションコールバック](./hyphenation-callback/) | この包括的なステップバイステップ ガイドを使用して、Aspose.Words for .NET でハイフネーション コールバックを実装し、ドキュメントの書式設定を強化する方法を学習します。 |

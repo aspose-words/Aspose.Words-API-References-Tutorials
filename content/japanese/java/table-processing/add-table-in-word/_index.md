@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## ステップ6: テーブルを作成し、行を追加する
 
-新しいを作成します`Table`オブジェクトを作成し、行数と列数を指定します。
+新規作成`Table`オブジェクトを作成し、行数と列数を指定します。
 
 ```java
 Table table = new Table(doc);

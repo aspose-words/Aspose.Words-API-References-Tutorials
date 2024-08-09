@@ -9,7 +9,7 @@ url: /pl/net/programming-with-styles-and-themes/insert-style-separator/
 ---
 ## Wstęp
 
-Podczas programowej pracy z dokumentami programu Word przy użyciu Aspose.Words dla .NET może zaistnieć potrzeba dokładnego zarządzania stylami i formatowaniem dokumentów. Jednym z takich zadań jest wstawienie separatora stylów w celu rozróżnienia stylów w dokumencie. Ten przewodnik przeprowadzi Cię przez proces dodawania separatora stylu dokumentu, przedstawiając podejście krok po kroku.
+Podczas programowej pracy z dokumentami programu Word przy użyciu Aspose.Words dla .NET, może zaistnieć potrzeba dokładnego zarządzania stylami i formatowaniem dokumentów. Jednym z takich zadań jest wstawienie separatora stylów w celu rozróżnienia stylów w dokumencie. Ten przewodnik przeprowadzi Cię przez proces dodawania separatora stylu dokumentu, przedstawiając podejście krok po kroku.
 
 ## Warunki wstępne
 
@@ -38,7 +38,7 @@ Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulow
 
 Nagłówek: Utwórz nowy dokument i Builder
 
- Wyjaśnienie: Rozpocznij od utworzenia nowego`Document` obiekt i a`DocumentBuilder` instancja. The`DocumentBuilder` class umożliwia wstawianie i formatowanie tekstu i elementów do dokumentu.
+ Wyjaśnienie: Rozpocznij od utworzenia nowego`Document` obiekt i a`DocumentBuilder` przykład. The`DocumentBuilder` class umożliwia wstawianie i formatowanie tekstu i elementów do dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów

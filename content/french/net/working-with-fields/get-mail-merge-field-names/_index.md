@@ -79,7 +79,7 @@ string[] fieldNames = doc.MailMerge.GetFieldNames();
 
 Titre : Afficher le nombre de champs
 
-Pour confirmer que vous avez récupéré avec succès les noms de champs, vous pouvez afficher le nombre de champs à l'aide de la console.
+Pour confirmer que vous avez réussi à récupérer les noms de champs, vous pouvez afficher le nombre de champs à l'aide de la console.
 
 ```csharp
 // Affichez le nombre de champs de fusion.
@@ -90,7 +90,7 @@ Cette ligne de code imprime le nombre total de champs de publipostage dans le do
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez maintenant appris à extraire les noms de champs de publipostage d'un document Word à l'aide d'Aspose.Words pour .NET. Cette technique est un outil précieux pour gérer et automatiser les flux de documents, facilitant la gestion du contenu personnalisé. En suivant ces étapes, vous pouvez identifier et utiliser efficacement les champs de publipostage dans vos documents.
+Félicitations! Vous avez maintenant appris à extraire les noms de champs de publipostage d'un document Word à l'aide d'Aspose.Words pour .NET. Cette technique est un outil précieux pour gérer et automatiser les flux de documents, facilitant la gestion du contenu personnalisé. En suivant ces étapes, vous pouvez identifier et utiliser efficacement les champs de publipostage dans vos documents.
 
  Si vous avez des questions ou avez besoin d'aide supplémentaire, n'hésitez pas à explorer le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou rejoignez le[Aspose la communauté](https://forum.aspose.com/c/words/8) pour le soutien. Bon codage !
 

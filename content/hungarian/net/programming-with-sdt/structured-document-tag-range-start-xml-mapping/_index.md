@@ -110,7 +110,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 A strukturált dokumentumcímkék, más néven tartalomvezérlők, a Word-dokumentumok meghatározott típusú tartalomtárolói. Használhatók adatok kötésére, szerkesztés korlátozására vagy a felhasználók útmutatására a dokumentumok létrehozásában.
 
 ### Hogyan frissíthetem dinamikusan az XML-rész tartalmát?
- Az XML-rész tartalmát a módosításával frissítheti`xmlPartContent` karakterláncot, mielőtt hozzáadná a dokumentumhoz. Egyszerűen frissítse a karakterláncot az új adatokkal, és adja hozzá a`CustomXmlParts` Gyűjtemény.
+ Az XML-rész tartalmát a módosításával frissítheti`xmlPartContent` karakterláncot, mielőtt hozzáadná a dokumentumhoz. Egyszerűen frissítse a karakterláncot az új adatokkal, és adja hozzá a`CustomXmlParts` gyűjtemény.
 
 ### Köthetek több XML-részt különböző SDT-khez ugyanabban a dokumentumban?
 Igen, ugyanabban a dokumentumban több XML-részt is köthet különböző SDT-khez. Minden SDT-nek lehet saját egyedi XML része és XPath leképezése.

@@ -15,7 +15,7 @@ Membuat dokumen yang menarik dan informatif sering kali melibatkan penyertaan ba
 
 Sebelum mendalami kodenya, ada beberapa prasyarat yang perlu Anda miliki:
 
--  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika Anda belum menginstalnya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika Anda belum menginstalnya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Anda harus menyiapkan lingkungan pengembangan .NET. Visual Studio sangat direkomendasikan.
 - Pengetahuan Dasar C#: Keakraban dengan pemrograman C# sangat penting karena tutorial ini melibatkan penulisan dan pemahaman kode C#.
 -  Lisensi Sementara: Untuk menggunakan Aspose.Words tanpa batasan apa pun, Anda bisa mendapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/).
@@ -127,7 +127,7 @@ Ya, Aspose.Words untuk .NET mendukung berbagai tipe bagan, termasuk batang, kolo
 ### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
  Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### Apakah mungkin menghubungkan label data ke sel sumber di Excel?
+### Apakah mungkin untuk menghubungkan label data ke sel sumber di Excel?
 Ya, Anda bisa menautkan label data ke sel sumber, memungkinkan format angka diwarisi dari sel sumber.
 
 ### Di mana saya dapat menemukan dokumentasi lebih rinci untuk Aspose.Words untuk .NET?

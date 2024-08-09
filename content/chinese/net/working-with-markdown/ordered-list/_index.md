@@ -15,7 +15,7 @@ url: /zh/net/working-with-markdown/ordered-list/
 
 在深入研究代码之前，您需要准备一些东西：
 
-1.  Aspose.Words for .NET：确保已安装 Aspose.Words for .NET。如果没有，您可以下载[这里](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：确保已安装 Aspose.Words for .NET。如果没有，您可以下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他.NET 兼容 IDE。
 3. C# 基础知识：您应该熟悉 C# 基础知识，以便轻松跟进。
 

@@ -107,7 +107,7 @@ Se a máquina de destino não tiver as fontes necessárias, o documento poderá 
  A incorporação de fontes pode ser feita usando o`FontSettings` classe em Aspose.Words para .NET. Consulte o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
 
 ### Existe uma maneira de visualizar o documento antes de salvá-lo?
- Sim, você pode usar o`DocumentRenderer` class para visualizar o documento antes de salvá-lo. Confira o Aspose.Words para .NET[documentação](https://reference.aspose.com/words/net/) Para maiores informações.
+ Sim, você pode usar o`DocumentRenderer` class para visualizar o documento antes de salvá-lo. Confira o Aspose.Words para .NET[documentação](https://reference.aspose.com/words/net/) para mais informações.
 
 ### Posso personalizar ainda mais a saída HTML?
- Absolutamente! O`HtmlFixedSaveOptions` classe fornece várias propriedades para personalizar a saída HTML. Explore o[documentação](https://reference.aspose.com/words/net/) para todas as opções disponíveis.
+ Absolutamente! O`HtmlFixedSaveOptions` classe fornece várias propriedades para personalizar a saída HTML. Explorar o[documentação](https://reference.aspose.com/words/net/) para todas as opções disponíveis.

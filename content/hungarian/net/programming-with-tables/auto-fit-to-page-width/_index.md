@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Ebben a lépésben határozza meg a dokumentum tárolási útvonalát, és töltse be a`Document` tárgy. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található.
+ Ebben a lépésben határozza meg a dokumentum tárolási útvonalát, és töltse be a`Document` objektum. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` tényleges elérési úttal, ahol a dokumentum található.
 
 ## 2. lépés: Nyissa meg a táblázatot
 
@@ -90,7 +90,7 @@ Ezzel a módosított dokumentumot az automatikusan illesztett táblázattal egy 
 ### Automatikusan illeszthetek több táblázatot egy dokumentumba?  
 Igen, végigpörgetheti a dokumentum összes táblázatát, és mindegyikre alkalmazhatja az automatikus illesztés módszerét.
 
-### Az automatikus illesztés befolyásolja a táblázat tartalmát?  
+### Befolyásolja-e az automatikus illesztés a táblázat tartalmát?  
 Nem, az automatikus illesztés beállítja a táblázat szélességét, de nem módosítja a cellák tartalmát.
 
 ### Mi a teendő, ha a táblázatomnak meghatározott oszlopszélességei vannak, amelyeket meg akarok tartani?  

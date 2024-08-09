@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/optimize-for-ms-word/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přemýšleli jste někdy o tom, jak zajistit, aby vaše dokumenty Word byly super kompatibilní s různými verzemi MS Word? Představte si, že jste strávili hodiny vytvářením dokonalého dokumentu, ale když ho někdo otevře v jiné verzi Wordu, vypadá celý zmateně. Špatné, že? No, to je místo, kde Aspose.Words pro .NET přichází! Tento šikovný nástroj vám umožňuje optimalizovat vaše dokumenty pro různé verze MS Word pomocí pouhých několika řádků kódu. Pojďme se ponořit do toho, jak to můžete udělat bez námahy.
+Ahoj! Přemýšleli jste někdy o tom, jak zajistit, aby vaše dokumenty Word byly super kompatibilní s různými verzemi MS Word? Představte si, že jste strávili hodiny vytvářením dokonalého dokumentu, ale když ho někdo otevře v jiné verzi Wordu, vypadá celý zmateně. Špatné, že? No, to je místo, kde Aspose.Words pro .NET přichází! Tento šikovný nástroj vám umožňuje optimalizovat vaše dokumenty pro různé verze MS Word pomocí pouhých několika řádků kódu. Pojďme se ponořit do toho, jak to můžete udělat bez námahy.
 
 ## Předpoklady
 
@@ -79,7 +79,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
  Můžete si to vyzkoušet zdarma pomocí a[dočasná licence](https://purchase.aspose.com/temporary-license/), ale pro dlouhodobé používání si budete muset zakoupit licenci.
 
 ### Kde najdu další dokumentaci?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Co když budu potřebovat pomoc?
  Pokud narazíte na nějaké problémy, můžete vždy vyhledat pomoc na[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).

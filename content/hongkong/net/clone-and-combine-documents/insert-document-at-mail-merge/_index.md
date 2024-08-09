@@ -15,7 +15,7 @@ url: /zh-hant/net/clone-and-combine-documents/insert-document-at-mail-merge/
 
 在我們開始之前，請確保您具備以下條件：
 
-1.  Aspose.Words for .NET：您可以[點這裡下載最新版本](https://releases.aspose.com/words/net/)。如果您需要購買許可證，您可以這樣做[這裡](https://purchase.aspose.com/buy)。或者，您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)或者嘗試一下[免費試用](https://releases.aspose.com/).
+1.  Aspose.Words for .NET：您可以[在這裡下載最新版本](https://releases.aspose.com/words/net/)。如果您需要購買許可證，您可以這樣做[這裡](https://purchase.aspose.com/buy)。或者，您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)或者嘗試一下[免費試用](https://releases.aspose.com/).
 2. 開發環境：Visual Studio 或任何其他 C# IDE。
 3. C# 基礎知識：熟悉 C# 程式設計將使本教學變得輕而易舉。
 
@@ -134,12 +134,12 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在郵件合併作業期間成功將文件插入到特定欄位。這項強大的功能可以為您節省大量的時間和精力，特別是在處理大量文件時。您可以將其視為擁有私人助理，為您處理所有繁重的工作。所以，繼續嘗試吧。快樂編碼！
+現在你就得到它了！您已使用 Aspose.Words for .NET 在郵件合併作業期間成功將文件插入到特定欄位。這項強大的功能可以為您節省大量的時間和精力，特別是在處理大量文件時。您可以將其視為擁有私人助理，為您處理所有繁重的工作。所以，繼續嘗試吧。快樂編碼！
 
 ## 常見問題解答
 
 ### 我可以在不同的合併欄位插入多個文件嗎？
-是的你可以。只需在中指定適當的合併欄位和相應的文件路徑即可`MailMerge.Execute`方法。
+是的，你可以。只需在中指定適當的合併欄位和相應的文件路徑即可`MailMerge.Execute`方法。
 
 ### 插入文件的格式是否可以與主文件不同？
 絕對地！您可以使用`ImportFormatMode`中的參數`NodeImporter`來控制格式。

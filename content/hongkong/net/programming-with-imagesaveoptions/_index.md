@@ -2,7 +2,7 @@
 title: 使用影像儲存選項進行文字處理
 linktitle: 使用影像儲存選項進行文字處理
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 中的圖片儲存選項進行程式設計。包含範例程式碼的逐步教學課程，用於在 Word 文件中儲存和操作圖像。
+description: 了解如何使用 Aspose.Words for .NET 中的圖片儲存選項進行程式設計。包含用於在 Word 文件中儲存和操作圖像的範例程式碼的逐步教學。
 type: docs
 weight: 1630
 url: /zh-hant/net/programming-with-imagesaveoptions/

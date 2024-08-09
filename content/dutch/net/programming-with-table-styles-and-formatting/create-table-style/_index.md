@@ -14,7 +14,7 @@ Heeft u ooit vastgelopen bij het opmaken van tabellen in uw Word-documenten met 
 ## Vereisten
 
 Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig hebt:
-- Aspose.Words voor .NET: Zorg ervoor dat deze krachtige bibliotheek is geïnstalleerd. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+- Aspose.Words voor .NET: Zorg ervoor dat deze krachtige bibliotheek is geïnstalleerd. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Visual Studio of een andere .NET-ontwikkelomgeving.
 - Basiskennis van C#: Enige bekendheid met programmeren in C# zal nuttig zijn.
 

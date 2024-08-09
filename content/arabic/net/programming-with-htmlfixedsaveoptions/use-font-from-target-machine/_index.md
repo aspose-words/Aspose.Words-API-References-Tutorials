@@ -9,7 +9,7 @@ url: /ar/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 ## مقدمة
 
-هل أنت مستعد للغوص في عالم Aspose.Words الرائع لـ .NET؟ اربطوا أحزمة الأمان، لأننا على وشك أن نأخذكم في رحلة عبر عالم الخطوط السحري. اليوم، نركز على كيفية استخدام الخطوط من الجهاز المستهدف عند العمل مع مستندات Word. تضمن هذه الميزة الأنيقة أن يظهر مستندك بالطريقة التي تريدها تمامًا، بغض النظر عن مكان عرضه. هيا بنا نبدأ!
+هل أنت مستعد للغوص في عالم Aspose.Words الرائع لـ .NET؟ اربطوا أحزمة الأمان، لأننا على وشك أن نأخذكم في رحلة عبر عالم الخطوط السحري. اليوم، نركز على كيفية استخدام الخطوط من الجهاز المستهدف عند العمل مع مستندات Word. تضمن هذه الميزة الأنيقة أن يظهر مستندك بالطريقة التي تريدها تمامًا، بغض النظر عن مكان عرضه. دعونا نبدأ!
 
 ## المتطلبات الأساسية
 
@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## الخطوة 1: قم بتحميل مستند Word
 
- الخطوة الأولى في برنامجنا التعليمي هي تحميل مستند Word. هذا هو المكان الذي يبدأ كل شيء. سوف نستخدم`Document` فئة من مكتبة Aspose.Words لتحقيق ذلك.
+ الخطوة الأولى في برنامجنا التعليمي هي تحميل مستند Word. هذا هو المكان الذي يبدأ فيه كل شيء. سوف نستخدم`Document` فئة من مكتبة Aspose.Words لتحقيق ذلك.
 
 ### الخطوة 1.1: تحديد مسار المستند
 
@@ -69,7 +69,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 
 ## الخطوة 3: احفظ المستند
 
-وأخيرًا، نقوم بحفظ المستند كملف HTML ثابت. هذا هو المكان الذي يحدث السحر!
+وأخيرًا، نقوم بحفظ المستند كملف HTML ثابت. هذا هو المكان الذي يحدث فيه السحر!
 
  سوف نستخدم`Save` طريقة لحفظ المستند باستخدام خيارات الحفظ التي تم تكوينها.
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
 ```
 
-وهناك لديك! لقد نجحت في استخدام الخطوط من الجهاز الهدف في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+وهنا لديك! لقد نجحت في استخدام الخطوط من الجهاز الهدف في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
 
 ## خاتمة
 
@@ -104,10 +104,10 @@ System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseF
 إذا لم يكن الجهاز المستهدف يحتوي على الخطوط المطلوبة، فقد لا يتم عرض المستند على النحو المنشود. من الجيد دائمًا تضمين الخطوط عند الضرورة.
 
 ### كيف أقوم بتضمين الخطوط في المستند؟
- يمكن إجراء تضمين الخطوط باستخدام`FontSettings` فئة في Aspose.Words لـ .NET. الرجوع إلى[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
+ يمكن إجراء تضمين الخطوط باستخدام`FontSettings` فئة في Aspose.Words لـ .NET. الرجوع إلى[الوثائق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
 
 ### هل هناك طريقة لمعاينة المستند قبل الحفظ؟
- نعم يمكنك استخدام`DocumentRenderer` فئة لمعاينة المستند قبل الحفظ. تحقق من Aspose.Words لـ .NET[توثيق](https://reference.aspose.com/words/net/) للمزيد من المعلومات.
+ نعم يمكنك استخدام`DocumentRenderer` فئة لمعاينة المستند قبل الحفظ. تحقق من Aspose.Words لـ .NET[الوثائق](https://reference.aspose.com/words/net/) لمزيد من المعلومات.
 
 ### هل يمكنني تخصيص مخرجات HTML بشكل أكبر؟
- قطعاً! ال`HtmlFixedSaveOptions` توفر الفئة خصائص متنوعة لتخصيص مخرجات HTML. اكتشف ال[توثيق](https://reference.aspose.com/words/net/) لجميع الخيارات المتاحة.
+ قطعاً! ال`HtmlFixedSaveOptions` توفر الفئة خصائص متنوعة لتخصيص مخرجات HTML. استكشف[الوثائق](https://reference.aspose.com/words/net/) لجميع الخيارات المتاحة.

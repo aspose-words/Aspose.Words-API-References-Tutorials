@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 
 ## 結論
 
-現在你就擁有了！一旦您了解了步驟，使用 Aspose.Words for .NET 更改 Word 文件的視圖選項就非常簡單。透過學習本教學課程，您已經了解如何載入文件、變更視圖類型、調整縮放等級以及使用新設定儲存文件。請記住，掌握 Aspose.Words for .NET 的關鍵是練習。因此，請繼續嘗試不同的設置，看看哪種設置最適合您。快樂編碼！
+現在你就得到它了！一旦您了解了步驟，使用 Aspose.Words for .NET 更改 Word 文件的視圖選項就非常簡單。透過學習本教學課程，您已經了解如何載入文件、變更視圖類型、調整縮放等級以及使用新設定儲存文件。請記住，掌握 Aspose.Words for .NET 的關鍵是練習。因此，請繼續嘗試不同的設置，看看哪種設置最適合您。快樂編碼！
 
 ## 常見問題解答
 

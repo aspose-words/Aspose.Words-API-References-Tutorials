@@ -26,7 +26,7 @@ url: /ru/java/document-manipulation/using-web-extensions/
 Document doc = new Document();
 ```
 
-##  Создать`TaskPane` instance and add it to the document's web extension task panes:
+##  Создайте`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();

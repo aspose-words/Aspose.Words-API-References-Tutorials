@@ -9,7 +9,7 @@ url: /tr/net/programming-with-loadoptions/warning-callback/
 ---
 ## giriiş
 
-Word belgeleriyle programlı olarak çalışırken uyarıları nasıl yakalayıp ele alacağınızı hiç merak ettiniz mi? Aspose.Words for .NET'i kullanarak, belge işleme sırasında ortaya çıkan olası sorunları yönetmek için bir uyarı geri çağrısı uygulayabilirsiniz. Bu eğitim, projelerinizde uyarı geri arama özelliğini nasıl yapılandıracağınız ve kullanacağınız konusunda kapsamlı bir anlayışa sahip olmanızı sağlayarak süreç boyunca size adım adım rehberlik edecektir.
+Word belgeleriyle programlı olarak çalışırken uyarıları nasıl yakalayıp ele alacağınızı hiç merak ettiniz mi? Aspose.Words for .NET'i kullanarak, belge işleme sırasında ortaya çıkan olası sorunları yönetmek için bir uyarı geri çağrısı uygulayabilirsiniz. Bu eğitim, projelerinizde uyarı geri çağırma özelliğini nasıl yapılandıracağınız ve kullanacağınız konusunda kapsamlı bir anlayışa sahip olmanızı sağlayarak süreç boyunca size adım adım rehberlik edecektir.
 
 ## Önkoşullar
 

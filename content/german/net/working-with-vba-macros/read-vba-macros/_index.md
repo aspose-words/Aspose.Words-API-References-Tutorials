@@ -15,10 +15,10 @@ Hallo, Word-Dokument-Zauberer! Haben Sie sich jemals gefragt, was hinter den Kul
 
 Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Um mit Word-Dokumenten arbeiten zu können, benötigen Sie die neueste Version von Aspose.Words für .NET. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Um mit Word-Dokumenten arbeiten zu können, benötigen Sie die neueste Version von Aspose.Words für .NET. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-Entwicklungsumgebung wie Visual Studio ist zum Schreiben und Testen Ihres Codes unerlässlich.
 3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse von C# helfen Ihnen dabei, sich in den Codeausschnitten und Konzepten zurechtzufinden.
-4.  Beispiel eines Word-Dokuments:[Word-Datei](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) mit bereiten VBA-Makros. Dies wird unsere Quelle zum Lesen der Makros sein.
+4.  Beispiel eines Word-Dokuments:[Word-Dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) mit bereiten VBA-Makros. Dies wird unsere Quelle zum Lesen der Makros sein.
 
 ## Namespaces importieren
 
@@ -117,7 +117,7 @@ Dies ist ein einfaches Beispiel für ein VBA-Makro, das beim Ausführen ein Meld
 
 Und da haben Sie es! Sie haben erfolgreich VBA-Makros aus einem Word-Dokument mit Aspose.Words für .NET gelesen. Dieses Tutorial behandelte alles, vom Einrichten Ihrer Umgebung und Laden Ihres Dokuments bis hin zum Zugriff auf das VBA-Projekt und Lesen der Makros. Mit Aspose.Words steht Ihnen ein leistungsstarkes Tool zur Verfügung, mit dem Sie Aufgaben automatisieren, Dokumente anpassen und tief in die Welt von VBA eintauchen können.
 
- Wenn Sie mehr erfahren möchten,[API-Dokumentation](https://reference.aspose.com/words/net/) ist ein guter Ausgangspunkt. Und wenn Sie jemals Fragen haben oder Hilfe benötigen,[Hilfeforum](https://forum.aspose.com/c/words/8) ist für Sie da.
+ Wenn Sie mehr erfahren möchten,[API-Dokumentation](https://reference.aspose.com/words/net/) ist ein guter Ausgangspunkt. Und wenn Sie jemals Fragen haben oder Hilfe benötigen,[Support-Forum](https://forum.aspose.com/c/words/8) ist für Sie da.
 
 Viel Spaß beim Programmieren und mögen Ihre Makros immer reibungslos laufen!
 

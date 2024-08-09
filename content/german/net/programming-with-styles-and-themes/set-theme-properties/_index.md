@@ -89,4 +89,4 @@ Auf jeden Fall! Aspose.Words für .NET bietet umfangreiche Optionen zum Anpassen
  Weitere Informationen finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) für ausführlichere Informationen.
 
 ### Welche Supportoptionen stehen mir zur Verfügung, wenn ich auf Probleme stoße?  
- Aspose bietet eine[Hilfeforum](https://forum.aspose.com/c/words/8) wo Sie Hilfe von der Community und dem Aspose-Team erhalten können.
+ Aspose bietet eine[Support-Forum](https://forum.aspose.com/c/words/8) wo Sie Hilfe von der Community und dem Aspose-Team erhalten können.

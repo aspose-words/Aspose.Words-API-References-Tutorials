@@ -104,7 +104,7 @@ Ja, Aspose.Words für .NET ist so konzipiert, dass es mit verschiedenen Versione
 Ja, sobald das HTML eingefügt ist, können Sie das Dokument mit den verschiedenen von Aspose.Words für .NET bereitgestellten Methoden weiter bearbeiten.
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?  
- Sie können beginnen mit einem[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) für den vollen Funktionsumfang.
+ Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) für den vollen Funktionsumfang.
 
 ### Wo finde ich weitere Tutorials und Beispiele?  
  Der[Dokumentation](https://reference.aspose.com/words/net/)Und[Support-Foren](https://forum.aspose.com/c/words/8)sind ein guter Ausgangspunkt für ausführlichere Anleitungen und Community-Support.

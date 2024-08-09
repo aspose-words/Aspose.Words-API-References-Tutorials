@@ -9,7 +9,7 @@ url: /hu/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## Bevezetés
 
-Sziasztok, fejlesztő kollégák! Dolgozott már Word-dokumentumokkal, és azon kapta magát, hogy belegabalyodott a képjelek mentésének bonyolultságába? Ez egyike azon apró részleteknek, amelyek nagy változást hozhatnak a dokumentum végső megjelenésében. Nos, ma azért vagyok itt, hogy végigvezessem Önt az Aspose.Words for .NET-ben található képjelek kezelési folyamatán, különös tekintettel a "Ne mentse a képjelet" funkcióra. Készen állsz a merülésre? Gyerünk!
+Sziasztok, fejlesztő kollégák! Dolgozott már Word-dokumentumokkal, és azon kapta magát, hogy belegabalyodott a képjelek mentésének bonyolultságába? Ez egyike azon apró részleteknek, amelyek nagy változást hozhatnak a dokumentum végső megjelenésében. Nos, ma azért vagyok itt, hogy végigvezessem Önt az Aspose.Words for .NET-ben található képjelek kezelési folyamatán, különös tekintettel a "Ne mentse a képjelet" funkcióra. Készen állsz a merülésre? Menjünk!
 
 ## Előfeltételek
 
@@ -62,7 +62,7 @@ Most állítsuk be a mentési beállításokat úgy, hogy megadjuk, hogy a képj
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- A beállítással`SavePictureBullet` nak nek`false`, akkor utasítja az Aspose.Words-t, hogy ne mentse a képsorokat a kimeneti dokumentumban.
+ Beállítás által`SavePictureBullet` hogy`false`, akkor utasítja az Aspose.Words-t, hogy ne mentse a képsorokat a kimeneti dokumentumban.
 
 ## 4. lépés: Mentse el a dokumentumot
 

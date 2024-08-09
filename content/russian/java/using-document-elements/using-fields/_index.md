@@ -239,7 +239,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Ничего не делать.
+            // Ничего не делайте.
         }
         /// <сводка>
         /// Это вызывается, когда механизм слияния почты обнаруживает в документе поле слияния Image:XXX.
@@ -320,7 +320,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Ничего не делать.
+            // Ничего не делайте.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

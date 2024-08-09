@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Wniosek
 
-I to wszystko! Pomyślnie skopiowałeś tekst z zakładek z jednego dokumentu programu Word do innego za pomocą Aspose.Words dla .NET. Ta metoda doskonale nadaje się do automatyzacji zadań związanych z manipulacją dokumentami, dzięki czemu przepływ pracy jest bardziej wydajny i usprawniony.
+I tyle! Pomyślnie skopiowałeś tekst z zakładek z jednego dokumentu programu Word do innego za pomocą Aspose.Words dla .NET. Ta metoda doskonale nadaje się do automatyzacji zadań związanych z manipulacją dokumentami, dzięki czemu przepływ pracy jest bardziej wydajny i usprawniony.
 
 ## Często zadawane pytania
 
@@ -115,7 +115,7 @@ Tak, możesz przeglądać wiele zakładek i używać tej samej metody do kopiowa
  The`Range.Bookmarks` nieruchomość powróci`null`, więc upewnij się, że zajmiesz się tą sprawą, aby uniknąć wyjątków.
 
 ### Czy mogę zachować formatowanie oryginalnej zakładki?
- Absolutnie! Za pomocą`ImportFormatMode.KeepSourceFormatting` gwarantuje zachowanie oryginalnego formatowania.
+ Absolutnie! Używanie`ImportFormatMode.KeepSourceFormatting` gwarantuje zachowanie oryginalnego formatowania.
 
 ### Czy istnieje ograniczenie rozmiaru tekstu dodanego do zakładek?
 Nie ma określonego limitu, ale wydajność może się różnić w przypadku bardzo dużych dokumentów.

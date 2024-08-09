@@ -151,7 +151,7 @@ Stosowanie stylów i motywów za pomocą Aspose.Words dla Pythona umożliwia two
 
 ### Jak mogę pobrać Aspose.Words dla Pythona?
 
- Możesz pobrać Aspose.Words dla Pythona ze strony internetowej:[Link do pobrania](https://releases.aspose.com/words/python/).
+ Możesz pobrać Aspose.Words dla Pythona ze strony internetowej:[Pobierz łącze](https://releases.aspose.com/words/python/).
 
 ### Czy mogę tworzyć własne niestandardowe style?
 

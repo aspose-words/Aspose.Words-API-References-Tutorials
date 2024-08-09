@@ -9,7 +9,7 @@ url: /hu/net/programming-with-digital-signatures/signing-existing-signature-line
 ---
 ## Bevezetés
 
-Halihó! Előfordult már, hogy alá kellett írnia egy digitális dokumentumot, de egy kis gondot okozott? Szerencséje van, mert ma belemerülünk abba, hogyan írhat alá könnyedén egy meglévő aláírási sort egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton, így biztosítva, hogy gyorsan elsajátítsa ezt a feladatot.
+Szia! Előfordult már, hogy alá kellett írnia egy digitális dokumentumot, de egy kis gondot okozott? Szerencséje van, mert ma belemerülünk abba, hogyan írhat alá könnyedén egy meglévő aláírási sort egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton, így biztosítva, hogy gyorsan elsajátítsa ezt a feladatot.
 
 ## Előfeltételek
 

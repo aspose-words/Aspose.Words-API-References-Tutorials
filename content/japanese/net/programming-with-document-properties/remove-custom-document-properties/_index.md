@@ -104,7 +104,7 @@ Aspose.Words for .NET は、.NET アプリケーション向けに特別に設�
 あなたはできる[無料トライアルをダウンロード](https://releases.aspose.com/) Aspose の Web サイトから。
 
 ### 4. Aspose.Words for .NET に関するその他のチュートリアルはどこで見つかりますか?
-チェックしてください[ドキュメンテーション](https://reference.aspose.com/words/net/)その他のチュートリアルと例については、こちらをご覧ください。
+チェックしてください[ドキュメント](https://reference.aspose.com/words/net/)その他のチュートリアルと例については、こちらをご覧ください。
 
 ### 5. Aspose.Words for .NET のライセンスを購入するにはどうすればよいですか?
 あなたはできる[ライセンスを購入する](https://purchase.aspose.com/buy) Aspose Web サイトから直接入手できます。

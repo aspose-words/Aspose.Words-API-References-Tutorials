@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Sei pronto a tuffarti nel mondo dell'automazione dei documenti? Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, sei nel posto giusto. Oggi esploreremo come inserire un campo modulo casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Credimi, alla fine di questo tutorial sarai un professionista nel creare facilmente documenti interattivi. Quindi, prendi una tazza di caffè, siediti e iniziamo!
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx"
 
 ## Conclusione
 
-E il gioco è fatto! Hai inserito con successo un campo modulo casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Vedi, non è stato così difficile, vero? Con questi semplici passaggi, puoi creare documenti interattivi e dinamici che sicuramente impressioneranno. Quindi, vai avanti e provalo. Chissà, potresti anche scoprire qualche nuovo trucco lungo il percorso. Buona programmazione!
+Ed ecco qua! Hai inserito con successo un campo modulo casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Vedi, non è stato così difficile, vero? Con questi semplici passaggi, puoi creare documenti interattivi e dinamici che sicuramente impressioneranno. Quindi, vai avanti e provalo. Chissà, potresti anche scoprire qualche nuovo trucco lungo il percorso. Buona programmazione!
 
 ## Domande frequenti
 

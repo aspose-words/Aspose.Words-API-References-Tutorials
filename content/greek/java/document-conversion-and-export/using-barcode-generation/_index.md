@@ -60,7 +60,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
         doc.save("Your Directory Path" + "WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συγχαρητήρια! Έχετε μάθει με επιτυχία πώς να δημιουργείτε προσαρμοσμένες εικόνες γραμμικού κώδικα χρησιμοποιώντας το Aspose.Words για Java. Αυτή η ευέλικτη βιβλιοθήκη ανοίγει έναν κόσμο δυνατοτήτων για αυτοματισμό και χειρισμό εγγράφων.
 

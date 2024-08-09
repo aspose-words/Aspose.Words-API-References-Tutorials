@@ -16,7 +16,7 @@ Volt már olyan helyzetben, amikor egy Word-dokumentum tele van frissítésre sz
 
 Mielőtt belevetnénk magunkat a finomságokba, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
 2. .NET-keretrendszer: Az Aspose.Words-szel kompatibilis bármely verzió.
 3. C# alapismeretek: A C# programozás ismerete előnyt jelent.
 4. Word-dokumentum minta: Koszos mezőket tartalmazó dokumentum, amely frissítésre szorul.
@@ -39,7 +39,7 @@ Először is állítsa be .NET-projektjét, és telepítse az Aspose.Words for .
 Install-Package Aspose.Words
 ```
 
-## 2. lépés: Konfigurálja a Betöltési beállításokat
+## 2. lépés: Konfigurálja a betöltési beállításokat
 
 Most állítsuk be a betöltési beállításokat a piszkos mezők automatikus frissítéséhez. Ez olyan, mintha beállítaná a GPS-t egy utazás előtt – ez elengedhetetlen az úticél zökkenőmentes eléréséhez.
 

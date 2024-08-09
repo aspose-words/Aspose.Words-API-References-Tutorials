@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ## 結論
 
-現在你就擁有了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 將 Word 文件轉換為 1Bpp 索引圖片。此方法對於從文件創建高對比度、節省空間的圖像非常有用。現在，您可以輕鬆地將其整合到您的專案和工作流程中。快樂編碼！
+現在你就得到它了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 將 Word 文件轉換為 1Bpp 索引圖片。此方法對於從文件創建高對比度、節省空間的圖像非常有用。現在，您可以輕鬆地將其整合到您的專案和工作流程中。快樂編碼！
 
 ## 常見問題解答
 
@@ -82,13 +82,13 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 1Bpp（每像素 1 位元）索引影像是一種黑白影像格式，其中每個像素由一位（0 或 1）表示。
 
 ### 我可以一次轉換 Word 文件的多個頁面嗎？
-是的你可以。修改`PageSet`財產在`ImageSaveOptions`包括多個頁面或整個文件。
+是的，你可以。修改`PageSet`財產在`ImageSaveOptions`包括多個頁面或整個文件。
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
 是的，Aspose.Words for .NET 需要完整功能的授權。你可以獲得一個[臨時許可證在這裡](https://purchase.aspose.com/temporary-license/).
 
 ### 我可以將 Word 文件轉換為哪些其他圖像格式？
- Aspose.Words 支援各種影像格式，包括 JPEG、BMP 和 TIFF。只需更改`SaveFormat`在裡面`ImageSaveOptions`.
+ Aspose.Words 支援各種影像格式，包括 JPEG、BMP 和 TIFF。只需更改`SaveFormat`在`ImageSaveOptions`.
 
 ### 在哪裡可以找到有關 Aspose.Words for .NET 的更多文件？
 您可以在以下位置找到詳細文檔[Aspose.Words for .NET 文件頁面](https://reference.aspose.com/words/net/).

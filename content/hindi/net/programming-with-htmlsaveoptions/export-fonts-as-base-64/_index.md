@@ -15,7 +15,7 @@ url: /hi/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 
 इससे पहले कि हम कोडिंग शुरू करें, आइए सुनिश्चित करें कि आपके पास वह सब कुछ है जो आपको चाहिए:
 
--  .NET लाइब्रेरी के लिए Aspose.Words: आप इसे यहाँ से डाउनलोड कर सकते हैं[एस्पोज रिलीज](https://releases.aspose.com/words/net/) पृष्ठ।
+-  .NET लाइब्रेरी के लिए Aspose.Words: आप इसे यहाँ से डाउनलोड कर सकते हैं[एस्पोज रिलीज](https://releases.aspose.com/words/net/) पृष्ठ.
 - .NET विकास वातावरण: विजुअल स्टूडियो जैसा कोई भी IDE पूरी तरह से काम करेगा।
 - C# का बुनियादी ज्ञान: आपको इसमें विशेषज्ञ होने की आवश्यकता नहीं है, लेकिन बुनियादी समझ से मदद मिलेगी।
 
@@ -117,4 +117,4 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOp
 कोई समस्या नहीं! Aspose.Words for .NET आपके दस्तावेज़ में उपयोग किए गए सभी फ़ॉन्ट्स को परिणामी HTML फ़ाइल में Base64 के रूप में एम्बेड कर देगा।
 
 ### क्या .NET के लिए Aspose.Words का उपयोग निःशुल्क है?
- Aspose.Words for .NET एक व्यावसायिक लाइब्रेरी है। हालाँकि, आप यहाँ से एक निःशुल्क परीक्षण डाउनलोड कर सकते हैं।[एस्पोज रिलीज](https://releases.aspose.com/) पृष्ठ।
+ Aspose.Words for .NET एक व्यावसायिक लाइब्रेरी है। हालाँकि, आप यहाँ से एक निःशुल्क परीक्षण डाउनलोड कर सकते हैं।[एस्पोज रिलीज](https://releases.aspose.com/) पृष्ठ.

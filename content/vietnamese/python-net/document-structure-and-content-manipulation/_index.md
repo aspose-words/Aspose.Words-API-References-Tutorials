@@ -18,7 +18,7 @@ Trong lĩnh vực xử lý tài liệu, việc hiểu cấu trúc và thao tác 
 
 ## Bạn sẽ học được gì
 
-Trong suốt loạt bài hướng dẫn này, bạn sẽ đi sâu vào sự phức tạp của cấu trúc tài liệu và thao tác nội dung bằng cách sử dụng Aspose.Words cho cả Python và .NET. Các hướng dẫn bao gồm nhiều chủ đề khác nhau, bao gồm:
+Trong suốt loạt bài hướng dẫn này, bạn sẽ đi sâu vào sự phức tạp của cấu trúc tài liệu và thao tác nội dung bằng Aspose.Words cho cả Python và .NET. Các hướng dẫn bao gồm nhiều chủ đề khác nhau, bao gồm:
 
 - Điều hướng các thành phần tài liệu: Tìm hiểu cách duyệt qua các tài liệu, phần, đoạn văn, bảng, v.v.
 - Trích xuất văn bản: Khám phá các phương pháp trích xuất nội dung văn bản từ tài liệu để phân tích hoặc xử lý thêm.

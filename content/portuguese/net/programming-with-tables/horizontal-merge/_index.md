@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Este trecho de código configura um novo documento e prepara o`DocumentBuilder` para a ação.
+ Este trecho de código configura um novo documento e prepara o`DocumentBuilder` para ação.
 
 ## Passo 2: Inserindo a Primeira Célula
 

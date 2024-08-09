@@ -9,7 +9,7 @@ url: /fr/net/programming-with-imagesaveoptions/get-tiff-page-range/
 ---
 ## Introduction
 
-Salut, amis développeurs ! Êtes-vous fatigué des tracas liés à la conversion de pages spécifiques de vos documents Word en images TIFF ? Cherchez pas plus loin! Avec Aspose.Words pour .NET, vous pouvez facilement convertir des plages de pages spécifiées de vos documents Word en fichiers TIFF. Cette puissante bibliothèque simplifie la tâche et offre une myriade d'options de personnalisation pour répondre exactement à vos besoins. Dans ce didacticiel, nous détaillerons le processus étape par étape, afin que vous puissiez maîtriser cette fonctionnalité et l'intégrer de manière transparente dans vos projets.
+Salut, amis développeurs ! Êtes-vous fatigué des tracas liés à la conversion de pages spécifiques de vos documents Word en images TIFF ? Ne cherchez plus ! Avec Aspose.Words pour .NET, vous pouvez facilement convertir des plages de pages spécifiées de vos documents Word en fichiers TIFF. Cette puissante bibliothèque simplifie la tâche et offre une myriade d'options de personnalisation pour répondre exactement à vos besoins. Dans ce didacticiel, nous détaillerons le processus étape par étape, afin que vous puissiez maîtriser cette fonctionnalité et l'intégrer de manière transparente dans vos projets.
 
 ## Conditions préalables
 
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
 
 ## Conclusion
 
-Et voila! En suivant ces étapes simples, vous avez réussi à convertir une plage de pages spécifique d'un document Word en fichier TIFF à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation et la conversion de vos documents, vous offrant des possibilités infinies pour vos projets. Alors n'hésitez plus, essayez-le et voyez comment il peut améliorer votre flux de travail !
+Et voilà ! En suivant ces étapes simples, vous avez réussi à convertir une plage de pages spécifique d'un document Word en fichier TIFF à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation et la conversion de vos documents, vous offrant des possibilités infinies pour vos projets. Alors n’hésitez plus, essayez-le et voyez comment il peut améliorer votre flux de travail !
 
 ## FAQ
 

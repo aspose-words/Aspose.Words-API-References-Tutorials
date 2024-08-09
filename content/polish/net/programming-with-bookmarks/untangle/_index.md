@@ -15,7 +15,7 @@ Programowe poruszanie się po dokumencie programu Word może przypominać troch�
 
 Zanim zagłębimy się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Będziesz potrzebować biblioteki Aspose.Words dla .NET. Jeśli go nie masz, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Będziesz potrzebować biblioteki Aspose.Words dla .NET. Jeśli go nie masz, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: środowisko programistyczne .NET, takie jak Visual Studio.
 3. Podstawowa znajomość języka C#: Zrozumienie podstaw języka C# pomoże Ci śledzić fragmenty kodu i wyjaśnienia.
 
@@ -97,7 +97,7 @@ row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 
 ## Wniosek
 
-Rozplątywanie zakładek w dokumencie programu Word za pomocą Aspose.Words dla .NET może wydawać się trudne, ale podzielenie go na łatwe do wykonania kroki, proces staje się znacznie jaśniejszy. Przeszliśmy przez ładowanie dokumentu, przeglądanie zakładek, identyfikowanie odpowiednich wierszy, sprawdzanie przylegania i na koniec przesuwanie węzła końcowego zakładki. Dzięki temu przewodnikowi powinieneś być w stanie efektywniej obsługiwać zakładki w dokumentach programu Word.
+Rozplątanie zakładek w dokumencie programu Word przy użyciu Aspose.Words dla .NET może wydawać się trudne, ale podzielenie go na łatwe do wykonania kroki, proces staje się znacznie jaśniejszy. Przeszliśmy przez ładowanie dokumentu, przeglądanie zakładek, identyfikowanie odpowiednich wierszy, sprawdzanie przylegania i na koniec przesuwanie węzła końcowego zakładki. Dzięki temu przewodnikowi powinieneś być w stanie efektywniej obsługiwać zakładki w dokumentach programu Word.
 
 ## Często zadawane pytania
 

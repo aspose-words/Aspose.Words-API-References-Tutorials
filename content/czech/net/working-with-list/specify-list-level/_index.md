@@ -2,19 +2,41 @@
 title: Zadejte úroveň seznamu
 linktitle: Zadejte úroveň seznamu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak určit úroveň seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se vytvářet víceúrovňové číslované seznamy a seznamy s odrážkami v dokumentech aplikace Word pomocí Aspose.Words for .NET. Včetně průvodce krok za krokem. Ideální pro .NET vývojáře.
 type: docs
 weight: 10
 url: /cs/net/working-with-list/specify-list-level/
 ---
+## Zavedení
 
-tomto podrobném tutoriálu vám ukážeme, jak určit úroveň seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+Ahoj, kolego kodéru! Pokud jste se někdy potýkali s vytvářením dynamických a sofistikovaných seznamů v dokumentech aplikace Word pomocí .NET, máte se na co těšit. Dnes se ponoříme do světa Aspose.Words pro .NET. Konkrétně se zaměříme na specifikaci úrovní seznamu. Berte to jako vylepšení vaší hry s dokumenty, která vám umožní bez námahy vytvářet profesionální, leštěné seznamy. Na konci této příručky budete mít jasnou cestu k vytváření číslovaných seznamů i seznamů s odrážkami s více úrovněmi. Připraveni? Pojďme rovnou do toho!
 
- Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nakonfigurovaný ve svém vývojovém prostředí. Pokud jste tak ještě neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Předpoklady
 
-## Krok 1: Vytvoření dokumentu a generátoru dokumentů
+Než se ponoříme do toho nejnutnějšího, ujistíme se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
-Nejprve vytvořte nový dokument a přidružený generátor dokumentů:
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: IDE jako Visual Studio vám usnadní život.
+3. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
+4. Základní porozumění C#: Tento tutoriál předpokládá, že jste spokojeni se základním programováním v C#.
+
+Máš všechno? Velký! Ušpiníme si ruce.
+
+## Importovat jmenné prostory
+
+Nejprve musíme importovat potřebné jmenné prostory. Otevřete svůj projekt C# a pomocí direktiv přidejte následující:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Tím se připraví půda pro práci s Aspose.Words ve vašem projektu.
+
+## Krok 1: Nastavení dokumentu a DocumentBuilderu
+
+ Začněme vytvořením nového dokumentu a`DocumentBuilder` objekt s ním pracovat.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,113 +44,83 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Vytvoření a použití číslovaného seznamu
+## Krok 2: Vytvoření číslovaného seznamu
 
-Dále vytvořte číslovaný seznam založený na jedné ze šablon seznamu Microsoft Word a použijte jej na aktuální odstavec v nástroji pro tvorbu dokumentů:
+ Nyní vytvoříme číslovaný seznam založený na jedné ze šablon seznamu Microsoft Word a použijeme jej na`DocumentBuilder`'s aktuální odstavec.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## Krok 3: Specifikace úrovně seznamu
+## Krok 3: Použití více úrovní seznamu
 
- Použijte nástroj pro tvorbu dokumentů`ListLevelNumber` vlastnost k určení úrovně seznamu a přidání textu do odstavce:
+Aspose.Words umožňuje zadat až devět úrovní seznamu. Pojďme je všechny použít, abychom viděli, jak to funguje.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-Opakujte tyto kroky pro určení úrovní seznamu a přidání textu na každé úrovni.
+V této smyčce nastavujeme úroveň seznamu pro každý odstavec a píšeme řádek textu, který označuje úroveň.
 
-## Krok 4: Vytvoření a použití seznamu s odrážkami
+## Krok 4: Vytvoření seznamu s odrážkami
 
-Můžete také vytvořit a použít seznam s odrážkami pomocí jedné ze šablon seznamu v aplikaci Microsoft Word:
+Dále přepněte rychlost a vytvořte seznam s odrážkami. Tentokrát použijeme jinou šablonu seznamu.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## Krok 5: Přidání textu do úrovní seznamu s odrážkami
+## Krok 5: Použití více úrovní na seznam s odrážkami
 
- Použijte`ListLevelNumber` vlastnost znovu určit úroveň seznamu s odrážkami a přidat text:
+Stejně jako u číslovaného seznamu použijeme na náš seznam s odrážkami několik úrovní.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-## Krok 6: Zastavte formátování seznamu
+## Krok 6: Zastavení formátování seznamu
 
- Chcete-li zastavit formátování seznamu, nastavte`null` k`List`vlastnost generátoru dokumentů:
-
-```csharp
-builder. ListFormat. List = null;
-```
-
-## Krok 7: Uložení upraveného dokumentu
-
-Uložte upravený dokument:
+Nakonec se podívejme, jak můžeme zastavit formátování seznamu a vrátit se k normálnímu textu.
 
 ```csharp
-builder.Document.Save(dataDir + "SpecifyListLevel.docx");
-```
-
-Tak ! Úspěšně jste zadali úroveň seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
-
-### Ukázkový zdrojový kód pro specifikaci úrovně seznamu
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Vytvořte číslovaný seznam založený na jedné ze šablon seznamu Microsoft Word
-// použijte jej na aktuální odstavec tvůrce dokumentů.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
-
-// V tomto seznamu je devět úrovní, pojďme si je všechny vyzkoušet.
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Vytvořte seznam s odrážkami založený na jedné ze šablon seznamu Microsoft Word
-// použijte jej na aktuální odstavec tvůrce dokumentů.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
-
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Toto je způsob, jak zastavit formátování seznamu.
 builder.ListFormat.List = null;
-
-builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
-            
 ```
 
-### FAQ
+## Krok 7: Uložení dokumentu
 
-#### Otázka: Jak mohu určit úroveň seznamu v Aspose.Words?
+Po vší té tvrdé práci je čas uložit náš dokument. Uložme to smysluplným názvem.
 
- A: Chcete-li určit úroveň seznamu v Aspose.Words, musíte vytvořit instanci souboru`List` třídy a dejte jí číslovaný seznam. Poté můžete použít`Paragraph.ListFormat.ListLevelNumber` vlastnost k určení úrovně každé položky seznamu. Tento seznam můžete přiřadit k části dokumentu, aby položky seznamu měly požadovanou úroveň.
+```csharp
+builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
+```
 
-#### Otázka: Je možné změnit formát číslování položek seznamu v Aspose.Words?
+A je to! Právě jste vytvořili dokument se složitými strukturami seznamu pomocí Aspose.Words for .NET.
 
- Odpověď: Ano, můžete změnit formát číslování položek seznamu v Aspose.Words. The`ListLevel` třída k tomu nabízí několik vlastností, jako např`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, atd. Pomocí těchto vlastností můžete nastavit formát číslování položek seznamu, jako jsou arabské číslice, římské číslice, písmena atd.
+## Závěr
 
-#### Otázka: Mohu přidat další úrovně do číslovaného seznamu v Aspose.Words?
+Vytváření strukturovaných a víceúrovňových seznamů v dokumentech aplikace Word může výrazně zlepšit čitelnost a profesionalitu. S Aspose.Words for .NET můžete tento proces automatizovat, což vám ušetří čas a zajistí konzistenci. Doufáme, že vám tato příručka pomohla pochopit, jak efektivně specifikovat úrovně seznamu. Pokračujte v experimentování a uvidíte, jak mocný může být tento nástroj pro vaše potřeby zpracování dokumentů.
 
- Odpověď: Ano, je možné přidat další úrovně do číslovaného seznamu v Aspose.Words. The`ListLevel`class umožňuje nastavit vlastnosti formátování pro každou úroveň seznamu. Můžete nastavit možnosti, jako je předpona, přípona, zarovnání, odsazení atd. To vám umožní vytvářet seznamy s více úrovněmi hierarchie.
+## FAQ
 
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vytvářet, upravovat, převádět a tisknout dokumenty Wordu programově v C#.
 
+### Mohu používat Aspose.Words zdarma?
+Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) . Pro plnou verzi se můžete podívat na možnosti nákupu[zde](https://purchase.aspose.com/buy).
+
+### Kolik úrovní mohu určit v seznamu pomocí Aspose.Words?
+Pomocí Aspose.Words můžete zadat až devět úrovní v seznamu.
+
+### Je možné kombinovat číslované seznamy a seznamy s odrážkami v jednom dokumentu?
+Ano, v jednom dokumentu můžete kombinovat různé typy seznamů přepínáním šablony seznamu podle potřeby.
+
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).

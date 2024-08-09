@@ -95,7 +95,7 @@ Und da haben Sie es! Sie haben die Fußzeilen erfolgreich aus Ihrem Word-Dokumen
  Ja, Sie können einen ähnlichen Ansatz verwenden, um Header zu entfernen, indem Sie auf`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` , Und`HeaderFooterType.HeaderEven`.
 
 ### Ist die Nutzung von Aspose.Words für .NET kostenlos?
- Aspose.Words für .NET ist ein kommerzielles Produkt, aber Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) um seine Funktionen zu testen.
+ Aspose.Words für .NET ist ein kommerzielles Produkt, aber Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) um seine Funktionen zu testen.
 
 ### Kann ich mit Aspose.Words andere Elemente eines Word-Dokuments bearbeiten?
 Auf jeden Fall! Aspose.Words bietet umfangreiche Funktionen zur Bearbeitung von Text, Bildern, Tabellen und mehr in Word-Dokumenten.

@@ -26,7 +26,7 @@ Az Aspose.Words for Java segítségével a dokumentum-revízió elsajátításá
 
 ## Dokumentum átdolgozási oktatóanyagok
 ### [A végső útmutató a dokumentumok átdolgozásához](./guide-document-revision/)
-Fődokumentum revízió az Aspose.Words for Java segítségével! Hatékonyan kezelheti a változtatásokat, elfogadhatja/elutasíthatja a revíziókat, és zökkenőmentesen működhet együtt. Kezd el most!
+Fődokumentum revízió az Aspose.Words for Java segítségével! Hatékonyan kezelheti a változtatásokat, elfogadhatja/elutasíthatja a revíziókat, és zökkenőmentesen működhet együtt. Kezdje el most!
 ### [Dokumentumrevíziók nyomon követése és kezelése](./tracking-managing-document-revisions/)
 Ebből az átfogó útmutatóból megtudhatja, hogyan nyomon követheti és kezelheti a dokumentumok átdolgozását az Aspose.Words for Java segítségével. Olvassa el a lépésenkénti utasításokat és a forráskód példákat.
 ### [Dokumentumverziók összehasonlítása](./comparing-document-versions/)

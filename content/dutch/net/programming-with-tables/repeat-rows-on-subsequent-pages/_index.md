@@ -9,7 +9,7 @@ url: /nl/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 ## Invoering
 
-Programmatisch een Word-document maken kan een hele klus zijn, vooral als u de opmaak over meerdere pagina's moet behouden. Heeft u ooit geprobeerd een tabel te maken in Word, maar besefte u dat uw koprijen zich niet herhalen op volgende pagina's? Wees niet bang! Met Aspose.Words voor .NET kunt u er eenvoudig voor zorgen dat de tabelkoppen op elke pagina worden herhaald, waardoor uw documenten een professionele en verzorgde uitstraling krijgen. In deze zelfstudie leiden we u door de stappen om dit te bereiken aan de hand van eenvoudige codevoorbeelden en gedetailleerde uitleg. Laten we erin duiken!
+Programmatisch een Word-document maken kan een hele klus zijn, vooral als u de opmaak over meerdere pagina's moet behouden. Heeft u ooit geprobeerd een tabel te maken in Word, maar besefte u dat uw koprijen zich niet herhalen op volgende pagina's? Vrees niet! Met Aspose.Words voor .NET kunt u er eenvoudig voor zorgen dat de tabelkoppen op elke pagina worden herhaald, waardoor uw documenten een professionele en verzorgde uitstraling krijgen. In deze zelfstudie leiden we u door de stappen om dit te bereiken aan de hand van eenvoudige codevoorbeelden en gedetailleerde uitleg. Laten we erin duiken!
 
 ## Vereisten
 
@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Deze lus voegt 50 rijen met gegevens in de tabel in, met twee kolommen in elke rij. De`HeadingFormat` ingesteld op`false` voor deze rijen, omdat het geen koprijen zijn.
+ Deze lus voegt 50 rijen met gegevens in de tabel in, met twee kolommen in elke rij. De`HeadingFormat` is ingesteld op`false` voor deze rijen, omdat het geen koprijen zijn.
 
 ## Stap 4: Sla het document op
 
@@ -118,4 +118,4 @@ En daar heb je het! Met slechts een paar regels code kunt u met Aspose.Words voo
  Ja, u kunt bestaande tabellen wijzigen door ze te openen via de`Document` object en soortgelijke opmaak toepassen.
 
 ### Welke andere tabelopmaakopties zijn beschikbaar in Aspose.Words voor .NET?
- Aspose.Words voor .NET biedt een breed scala aan tabelopmaakopties, waaronder het samenvoegen van cellen, randinstellingen en tabeluitlijning. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Aspose.Words voor .NET biedt een breed scala aan tabelopmaakopties, waaronder het samenvoegen van cellen, randinstellingen en tabeluitlijning. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.

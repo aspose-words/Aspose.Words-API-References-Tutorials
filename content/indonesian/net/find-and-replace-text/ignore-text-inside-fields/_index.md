@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Sisipkan Bidang dengan Teks
 
- Menggunakan`InsertField` metode dari`DocumentBuilder` untuk menambahkan bidang yang berisi teks:
+ Gunakan`InsertField` metode`DocumentBuilder` untuk menambahkan bidang yang berisi teks:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```

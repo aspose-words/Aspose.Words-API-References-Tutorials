@@ -107,7 +107,7 @@ try {
 ## 자주 묻는 질문
 
 ### Aspose.Words for Java에 대한 임시 라이선스를 어떻게 얻나요?
- 방문하다[임시 라이센스 페이지 제공](https://purchase.aspose.com/temporary-license/) 임시 라이센스를 요청합니다.
+ 방문[임시 라이센스 페이지 제공](https://purchase.aspose.com/temporary-license/) 임시 라이센스를 요청합니다.
 
 ### 라이센스 없이 Java용 Aspose.Words를 사용할 수 있나요?
 예, 하지만 제한적으로 평가판 모드로 작동됩니다. 전체 기능을 이용하려면 유효한 라이센스를 취득하는 것이 좋습니다.

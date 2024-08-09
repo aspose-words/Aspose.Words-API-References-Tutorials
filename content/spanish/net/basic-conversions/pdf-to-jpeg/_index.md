@@ -33,10 +33,10 @@ Muy bien, ¡vamos a la parte divertida! Vamos a dividir el proceso en pasos fác
 
 ## Paso 1: configura tu proyecto
 
-Antes de profundizar en el código, debe configurar su proyecto. Así es cómo:
+Antes de profundizar en el código, debe configurar su proyecto. He aquí cómo:
 
 1. Abra Visual Studio: comience iniciando Visual Studio y creando un nuevo proyecto de C#.
-2.  Instale Aspose.Words: utilice el Administrador de paquetes NuGet para instalar Aspose.Words para .NET. Puedes encontrarlo[aquí](https://releases.aspose.com/words/net/).
+2.  Instale Aspose.Words: utilice el Administrador de paquetes NuGet para instalar Aspose.Words para .NET. puedes encontrarlo[aquí](https://releases.aspose.com/words/net/).
 
 ```shell
 Install-Package Aspose.Words
@@ -64,7 +64,7 @@ Ahora que nuestro proyecto está listo, carguemos el documento PDF. ¡Aquí es d
 
 Con nuestro PDF cargado, llega el momento de realizar la conversión. Este paso es sorprendentemente sencillo.
 
-1.  Guardar como JPEG: utilice el`Save` Método para convertir el PDF en una imagen JPEG.
+1.  Guardar como JPEG: utilice el`Save` método para convertir el PDF en una imagen JPEG.
 
     ```csharp
     doc.Save(dataDir + "BaseConversions.PdfToJpeg.jpeg");
@@ -85,10 +85,10 @@ Con nuestro PDF cargado, llega el momento de realizar la conversión. Este paso 
 ¡Sí, lo hace! Puede guardar sus archivos PDF como PNG, BMP y más.
 
 ### ¿Aspose.Words es compatible con .NET Core?
-De hecho, es. Aspose.Words es compatible con .NET Framework y .NET Core.
+De hecho, lo es. Aspose.Words es compatible con .NET Framework y .NET Core.
 
 ### ¿Necesito una licencia para usar Aspose.Words?
  Puedes obtener una prueba gratuita[aquí](https://releases.aspose.com/) o comprar una licencia[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Dónde puedo encontrar más tutoriales sobre Aspose.Words?
- Revisar la[documentación](https://reference.aspose.com/words/net/) para una gran cantidad de tutoriales y guías.
+ Mira el[documentación](https://reference.aspose.com/words/net/) para una gran cantidad de tutoriales y guías.

@@ -20,7 +20,7 @@ Innan vi går in i att använda Aspose.Words för Python API för att arbeta med
 - Python installerat på din maskin
 - Tillgång till Aspose.Words for Python API
 
-## Installerar Aspose.Words för Python
+## Installera Aspose.Words för Python
 
 För att komma igång måste du installera Aspose.Words for Python-biblioteket. Du kan göra detta med pip, Python-pakethanteraren, med följande kommando:
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/get-table-position/
 ---
-## Úvod
+## Zavedení
 
 Ocitli jste se někdy v nálevu a snažili jste se zjistit přesnou polohu tabulky v dokumentu aplikace Word? Ať už je to pro dokonalé zarovnání obsahu nebo jen ze zvědavosti, znalost pozice stolu může být velmi užitečná. Dnes se ponoříme hluboko do toho, jak získat pozici v tabulce pomocí Aspose.Words pro .NET. Rozdělíme to do malých kroků, takže i když jste nováčci, budete moci postupovat bez problémů. Jste připraveni stát se průvodcem dokumentů Word? Začněme!
 

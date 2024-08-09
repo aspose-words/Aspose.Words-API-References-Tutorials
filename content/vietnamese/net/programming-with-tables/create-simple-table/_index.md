@@ -15,7 +15,7 @@ Làm việc với các tài liệu theo chương trình có thể hơi khó khă
 
 Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ cần thiết để bắt đầu:
 
-1.  Aspose.Words for .NET: Bạn cần tải xuống và cài đặt Aspose.Words for .NET. Bạn có thể tìm nó[đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Bạn cần tải xuống và cài đặt Aspose.Words for .NET. Bạn có thể tìm thấy nó[đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bản cài đặt hoạt động của Visual Studio hoặc bất kỳ IDE nào khác hỗ trợ phát triển .NET.
 3. Hiểu biết cơ bản về C#: Làm quen với lập trình C# sẽ có ích vì chúng ta sẽ sử dụng nó làm ví dụ.
 
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa tạo một bảng đơn giản trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách chia nhỏ quy trình thành các bước có thể quản lý được, chúng tôi đã làm cho quy trình này trở nên dễ hiểu và dễ thực hiện. Bây giờ bạn có thể thử nghiệm các cấu trúc và nội dung bảng khác nhau để phù hợp với nhu cầu của mình. Chúc mừng mã hóa!
+Và bạn có nó! Bạn vừa tạo một bảng đơn giản trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách chia nhỏ quy trình thành các bước có thể quản lý được, chúng tôi đã làm cho quy trình này trở nên dễ hiểu và dễ thực hiện. Bây giờ bạn có thể thử nghiệm các cấu trúc và nội dung bảng khác nhau để phù hợp với nhu cầu của mình. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
-## Úvod
+## Zavedení
 
 Při práci s tabulkami v dokumentech aplikace Word často potřebujete spravovat slučování buněk, abyste dosáhli čistšího a organizovanějšího rozvržení. Aspose.Words for .NET poskytuje výkonný způsob, jak převést vertikálně sloučené buňky na horizontálně sloučené buňky, čímž zajistí, že vaše tabulka bude vypadat přesně tak, jak chcete. V tomto tutoriálu vás provedeme procesem krok za krokem.
 
@@ -63,7 +63,7 @@ table.ConvertToHorizontallyMergedCells();
 
 ## Závěr
 
-A to je vše! Úspěšně jste převedli vertikálně sloučené buňky na horizontálně sloučené buňky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato metoda zajišťuje, že vaše tabulky jsou dobře uspořádané a lépe čitelné. Pomocí těchto kroků můžete upravovat a manipulovat s dokumenty aplikace Word tak, aby vyhovovaly vašim konkrétním potřebám.
+A je to! Úspěšně jste převedli vertikálně sloučené buňky na horizontálně sloučené buňky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato metoda zajišťuje, že vaše tabulky jsou dobře uspořádané a lépe čitelné. Pomocí těchto kroků můžete upravovat a manipulovat s dokumenty aplikace Word tak, aby vyhovovaly vašim konkrétním potřebám.
 
 ## FAQ
 
@@ -74,10 +74,10 @@ Aspose.Words for .NET je primárně navržen pro jazyky .NET, jako je C#. Může
  Ano, můžete si stáhnout a[zkušební verze zdarma](https://releases.aspose.com/) z webu Aspose.
 
 ### Jak mohu získat podporu, pokud narazím na problémy?  
- Můžete navštívit[Aspose fórum podpory](https://forum.aspose.com/c/words/8) pro pomoc.
+ Můžete navštívit[Aspose fórum podpory](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### Mohu použít licenci ze souboru nebo streamu?  
 Ano, Aspose.Words for .NET vám umožňuje použít licenci jak ze souboru, tak ze streamu. Více informací najdete v[dokumentace](https://reference.aspose.com/words/net/).
 
 ### Jaké další funkce nabízí Aspose.Words for .NET?  
- Aspose.Words for .NET nabízí širokou škálu funkcí včetně generování, manipulace, konverze a vykreslování dokumentů. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Aspose.Words for .NET nabízí širokou škálu funkcí včetně generování, manipulace, konverze a vykreslování dokumentů. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.

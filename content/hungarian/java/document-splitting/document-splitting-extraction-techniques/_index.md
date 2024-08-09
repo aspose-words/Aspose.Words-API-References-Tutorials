@@ -24,7 +24,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 
 ## A környezet beállítása
 
-Az Aspose.Words for Java használatának megkezdéséhez be kell állítania a fejlesztői környezetet. Kovesd ezeket a lepeseket:
+Az Aspose.Words for Java használatának megkezdéséhez be kell állítania a fejlesztői környezetet. Kövesse az alábbi lépéseket:
 
 1. Hozzon létre egy új Java-projektet kedvenc integrált fejlesztési környezetében (IDE).
 

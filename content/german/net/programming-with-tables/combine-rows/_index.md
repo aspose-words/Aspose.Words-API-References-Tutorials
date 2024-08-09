@@ -19,7 +19,7 @@ Bevor wir mit dem Codieren beginnen, stellen wir sicher, dass Sie alles haben, w
 2. Eine Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
 3. Grundkenntnisse in C#: Kenntnisse in C# sind von Vorteil.
 
- Wenn Sie Aspose.Words für .NET noch nicht haben, können Sie ein[Kostenlose Testphase](https://releases.aspose.com/) oder kaufen[Hier](https://purchase.aspose.com/buy) Bei Fragen steht Ihnen die[Hilfeforum](https://forum.aspose.com/c/words/8) ist ein guter Ausgangspunkt.
+ Wenn Sie Aspose.Words für .NET noch nicht haben, können Sie ein[Kostenlose Testversion](https://releases.aspose.com/) oder kaufen[Hier](https://purchase.aspose.com/buy) Bei Fragen steht Ihnen die[Support-Forum](https://forum.aspose.com/c/words/8) ist ein guter Ausgangspunkt.
 
 ## Namespaces importieren
 
@@ -70,7 +70,7 @@ Diese Schleife wird fortgesetzt, bis alle Zeilen der zweiten Tabelle zur ersten 
 
 ## Schritt 4: Entfernen Sie die zweite Tabelle
 
- Nach dem Anhängen der Zeilen wird die zweite Tabelle nicht mehr benötigt. Sie können sie mit dem`Remove` Methode:
+ Nach dem Anhängen der Zeilen wird die zweite Tabelle nicht mehr benötigt. Sie können sie mit dem`Remove` Verfahren:
 
 ```csharp
 secondTable.Remove();
@@ -90,7 +90,7 @@ Und das war’s! Sie haben mit Aspose.Words für .NET erfolgreich Zeilen aus zwe
 
 Das Zusammenführen von Zeilen aus mehreren Tabellen zu einer einzigen kann Ihre Dokumentverarbeitungsaufgaben erheblich vereinfachen. Mit Aspose.Words für .NET wird diese Aufgabe unkompliziert und effizient. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie Tabellen problemlos zusammenführen und Ihren Arbeitsablauf optimieren.
 
-Wenn Sie weitere Informationen benötigen oder Fragen haben,[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) ist eine hervorragende Ressource. Sie können auch Kaufoptionen erkunden[Hier](https://purchase.aspose.com/buy) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zum Prüfen.
+Wenn Sie weitere Informationen benötigen oder Fragen haben,[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) ist eine hervorragende Ressource. Sie können auch Kaufoptionen erkunden[Hier](https://purchase.aspose.com/buy) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zum Testen.
 
 ## Häufig gestellte Fragen
 

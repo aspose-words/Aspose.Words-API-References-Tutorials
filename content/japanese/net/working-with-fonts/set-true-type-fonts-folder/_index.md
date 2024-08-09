@@ -2,82 +2,96 @@
 title: TrueTypeフォントフォルダを設定する
 linktitle: TrueTypeフォントフォルダを設定する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメントをレンダリングするときに True Type フォント フォルダーを設定する手順ガイド。
+description: Aspose.Words for .NET を使用して Word 文書に True Type Fonts フォルダーを設定する方法を学びます。一貫したフォント管理を確実に行うには、詳細なステップバイステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントをレンダリングするときに True Type フォント フォルダーを設定する手順を順を追って説明します。バンドルされている C# ソース コードについて説明し、この機能を理解して独自のプロジェクトに実装するのに役立つ包括的なガイドを提供します。このチュートリアルの最後には、Aspose.Words for .NET を使用してドキュメントをレンダリングするときに使用する True Type フォントを含むカスタム フォルダーを指定する方法がわかります。
+Aspose.Words for .NET を使用して、Word 文書のフォント管理の魅力的な世界に飛び込みます。正しいフォントを埋め込むことや、すべてのデバイスで文書が完璧に表示されるようにすることに苦労したことがあるなら、ここは最適な場所です。True Type フォント フォルダーを設定するプロセスを順を追って説明し、文書のフォント管理を効率化して、文書の一貫性と明瞭性を確保します。
 
-## ステップ1: ドキュメントディレクトリを定義する
-まず、ドキュメント ディレクトリへのパスを設定する必要があります。これは、編集したレンダリングされたドキュメントを保存する場所です。「YOUR DOCUMENTS DIRECTORY」を適切なパスに置き換えます。
+## 前提条件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+細かい点に入る前に、成功するための準備としていくつかの前提条件を確認しましょう。
 
-## ステップ2: レンダリングするドキュメントを読み込む
-次に、レンダリングするドキュメントをロードする必要があります。`Document`クラス。正しいドキュメント パスを指定してください。
+1.  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。ダウンロードはこちらからできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio などの動作する .NET 開発環境。
+3. C# の基礎知識: C# プログラミングの知識があると役立ちます。
+4. サンプル ドキュメント: 作業に使用する Word ドキュメントを用意します。
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## 名前空間のインポート
 
-## ステップ3: True Typeフォントフォルダを設定する
-レンダリング時に使用するTrueTypeフォントのフォルダを指定するには、`FontSettings`クラスと使用`SetFontsFolder()`メソッドを使用してフォントフォルダを設定します。TrueTypeフォントを含むカスタムフォルダを指定できます。`SetFontsFolder()`指定したフォルダーのサブフォルダーも検索するかどうかを示します。
+まず最初に、必要な名前空間をインポートする必要があります。これらは、すべてがスムーズに実行されるようにする舞台裏のスタッフのようなものです。
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## ステップ4: レンダリングされたドキュメントを保存する
-最後に、レンダリングされたドキュメントをファイルに保存するには、`Save()`方法の`Document`クラス。正しいパスとファイル名を必ず指定してください。
+## ステップ1: ドキュメントを読み込む
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### Aspose.Words for .NET を使用して True Type フォント フォルダーを設定するためのサンプル ソース コード 
+まずはドキュメントを読み込みましょう。`Document`既存の Word 文書を読み込むための Aspose.Words のクラス。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## ステップ2: FontSettingsを初期化する
+
+次に、`FontSettings`クラス。このクラスを使用すると、ドキュメント内でフォントを処理する方法をカスタマイズできます。
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-//この設定は、デフォルトで検索されるデフォルトのフォントソースを上書きすることに注意してください。これで、これらのフォルダのみが検索されます。
-//フォントをレンダリングまたは埋め込むときのフォント。システムフォントソースを維持しながら追加のフォントソースを追加するには、FontSettings.GetFontSourcesと
-//代わりにFontSettings.SetFontSourcesを使用してください
+```
+
+## ステップ3: フォントフォルダを設定する
+
+次は面白い部分です。True Type フォントが配置されているフォルダーを指定します。この手順により、Aspose.Words はフォントをレンダリングまたは埋め込むときにこのフォルダーのフォントを使用するようになります。
+
+```csharp
+//この設定により、デフォルトで検索されるデフォルトのフォント ソースが上書きされることに注意してください。
+//これで、フォントをレンダリングまたは埋め込むときに、これらのフォルダーのみがフォントの検索対象になります。
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## ステップ4: ドキュメントにフォント設定を適用する
+
+フォント設定が完了したら、これらの設定をドキュメントに適用します。この手順は、ドキュメントで指定されたフォントが確実に使用されるようにするために重要です。
+
+```csharp
 //フォント設定を行う
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## ステップ5: ドキュメントを保存する
+
+最後に、ドキュメントを保存します。さまざまな形式で保存できますが、このチュートリアルでは PDF として保存します。
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントをレンダリングするときに True Type フォント フォルダーを設定する方法を学習しました。このステップ バイ ステップ ガイドに従うことで、ドキュメントをレンダリングするときに使用する True Type フォントを含むカスタム フォルダーを簡単に指定できます。Aspose.Words は、ドキュメント内のフォントを使用して Words を処理するための強力で柔軟な API を提供します。この知識があれば、ドキュメントをレンダリングするときに使用するフォントを制御およびカスタマイズして、特定のニーズに対応できます。
 
-### よくある質問
+これで完了です。Aspose.Words for .NET を使用して、Word ドキュメント用の True Type Fonts フォルダーを正常に設定できました。これにより、すべてのプラットフォームでドキュメントの外観が一貫してプロフェッショナルなものになります。フォント管理はドキュメント作成の重要な側面ですが、Aspose.Words を使用すると、非常に簡単に行えます。
 
-#### Q: Aspose.Words で TrueType フォント フォルダーを構成するにはどうすればよいですか?
+## よくある質問
 
- A: Aspose.WordsでTrueTypeフォントフォルダーを構成するには、`SetTrueTypeFontsFolder`方法の`Fonts` TrueType フォントを含むフォルダーの場所を指定するクラス。
+### 複数のフォントフォルダを使用できますか?
+はい、複数のフォントフォルダを組み合わせて使用できます。`FontSettings.GetFontSources`そして`FontSettings.SetFontSources`.
 
-#### Q: TrueType フォントと見なされるフォントの種類は何ですか?
+### 指定されたフォントフォルダが存在しない場合はどうなりますか?
+指定されたフォント フォルダーが存在しない場合、Aspose.Words はフォントを見つけることができず、代わりに既定のシステム フォントが使用されます。
 
-A: TrueType フォントは一般的なフォント形式です。Word 文書でよく使用され、ファイル拡張子は .ttf または .ttc です。
+### デフォルトのフォント設定に戻すことはできますか?
+はい、リセットすることでデフォルトのフォント設定に戻すことができます。`FontSettings`実例。
 
-#### Q: Aspose.Words で複数の TrueType フォント フォルダーを指定できますか?
+### ドキュメントにフォントを埋め込むことは可能ですか?
+はい、Aspose.Words を使用すると、ドキュメントにフォントを埋め込んで、さまざまなデバイス間で一貫性を保つことができます。
 
-A: はい、Aspose.Wordsでは複数のTrueTypeフォントフォルダを指定することができます。`SetTrueTypeFontsFolder`方法の`Fonts`フォルダーの場所のリストを持つクラス。
-
-#### Q: Aspose.Words で設定されている TrueType フォント フォルダーを確認するにはどうすればよいですか?
-
- A: Aspose.Wordsで構成されたTrueTypeフォントフォルダーを確認するには、`GetTrueTypeFontsFolder`方法の`Fonts`構成された TrueType フォント フォルダーの場所を取得するクラス。
-
-#### Q: Aspose.Words で TrueType フォント フォルダーを構成することが重要なのはなぜですか?
-
-A: Aspose.Words で TrueType フォント フォルダーを設定することは重要です。これは、Aspose.Words が Word 文書を処理するときに必要なフォントを見つけるのに役立つためです。これにより、異なるシステム間でも文書の書式設定と外観の一貫性が確保されます。
+### ドキュメントはどのような形式で保存できますか?
+Aspose.Words は、PDF、DOCX、HTML など、さまざまな形式をサポートしています。

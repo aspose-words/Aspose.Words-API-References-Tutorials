@@ -15,7 +15,7 @@ Word belgeleriyle çalışma söz konusu olduğunda, tema özelliklerini değiş
 
 Başlamadan önce her şeyin sorunsuz ilerlemesini sağlamak için birkaç şeye ihtiyacınız olacak:
 
-1.  Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Şu adresten alabilirsiniz:[İndirme: {link](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Şu adresten alabilirsiniz:[İndirme bağlantısı](https://releases.aspose.com/words/net/).
 
 2. Geliştirme Ortamı: Kodunuzu yazmak ve yürütmek için Visual Studio gibi bir .NET geliştirme ortamı.
 
@@ -90,7 +90,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 Aspose.Words for .NET ile belge teması özelliklerinin nasıl elde edileceğini anlamak, Word belgelerini özelleştirmek ve yönetmek için bir dizi olasılığın kapısını açar. Yukarıda özetlenen adımları izleyerek yazı tipleri ve renkler gibi çeşitli tema ayarlarına kolayca erişebilir ve bunları kullanabilir, belgelerinizin şık ve profesyonel görünmesini sağlayabilirsiniz.
 
-İster tek bir belgenin görünümünü ayarlıyor olun ister tutarlı stil için şablonlar oluşturuyor olun, temalarla nasıl çalışılacağını bilmek verimliliğinizi ve çıktı kalitenizi büyük ölçüde artırabilir. Mutlu kodlama!
+İster tek bir belgenin görünümünü ayarlıyor ister tutarlı stil için şablonlar oluşturuyor olun, temalarla nasıl çalışılacağını bilmek verimliliğinizi ve çıktı kalitenizi büyük ölçüde artırabilir. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -100,7 +100,7 @@ Aspose.Words for .NET, .NET uygulamaları içindeki Word belgelerini yönetmek v
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
 
- Aspose.Words for .NET'i şuradan yükleyebilirsiniz:[İndirme: {link](https://releases.aspose.com/words/net/). Daha kolay kurulum için NuGet Paket Yöneticisini de kullanabilirsiniz.
+ Aspose.Words for .NET'i şuradan yükleyebilirsiniz:[İndirme bağlantısı](https://releases.aspose.com/words/net/). Daha kolay kurulum için NuGet Paket Yöneticisini de kullanabilirsiniz.
 
 ### Mevcut bir Word belgesinden tema özelliklerini alabilir miyim?
 

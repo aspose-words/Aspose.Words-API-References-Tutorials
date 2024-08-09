@@ -15,7 +15,7 @@ url: /fr/net/programming-with-tables/floating-table-position/
 
 Avant de nous lancer dans ce voyage passionnant, assurons-nous que nous disposons de tout ce dont nous avons besoin :
 
-1. Bibliothèque Aspose.Words pour .NET : assurez-vous que vous disposez de la dernière version. Si vous ne le faites pas,[Télécharger les ici](https://releases.aspose.com/words/net/).
+1. Bibliothèque Aspose.Words pour .NET : assurez-vous que vous disposez de la dernière version. Si vous ne le faites pas,[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. .NET Framework : assurez-vous que votre environnement de développement est configuré avec .NET.
 3. Environnement de développement : Visual Studio ou tout autre IDE préféré.
 4. Un document Word : préparez un document Word contenant un tableau.
@@ -89,7 +89,7 @@ C'est comme si vous appuyiez sur « Enregistrer » sur votre document modifié
 
 ## Conclusion
 
-Et voila! Vous venez de maîtriser la position flottante des tableaux dans un document Word à l'aide d'Aspose.Words pour .NET. Grâce à ces compétences, vous pouvez vous assurer que vos tables sont parfaitement positionnées pour améliorer la lisibilité et l’esthétique de vos documents. Continuez à expérimenter et à explorer les vastes capacités d’Aspose.Words pour .NET.
+Et voilà ! Vous venez de maîtriser la position flottante des tableaux dans un document Word à l'aide d'Aspose.Words pour .NET. Grâce à ces compétences, vous pouvez vous assurer que vos tables sont parfaitement positionnées pour améliorer la lisibilité et l’esthétique de vos documents. Continuez à expérimenter et à explorer les vastes capacités d’Aspose.Words pour .NET.
 
 ## FAQ
 

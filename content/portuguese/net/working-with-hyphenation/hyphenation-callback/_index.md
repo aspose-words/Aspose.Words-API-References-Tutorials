@@ -16,7 +16,7 @@ Ei! Você já se viu envolvido nas complexidades da formatação de texto, espec
 
 Antes de sujarmos as mãos com o código, vamos ter certeza de que você tem tudo o que precisa:
 
-1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Certifique-se de ter a biblioteca. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. IDE: Um ambiente de desenvolvimento como o Visual Studio.
 3. Conhecimento básico de C#: Compreensão de C# e .NET framework.
 4. Dicionários de hifenização: dicionários de hifenização para os idiomas que você planeja usar.
@@ -68,7 +68,7 @@ Agora, vamos carregar o documento que requer hifenização.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Aqui, estamos carregando um documento de texto em alemão. Você pode substituir`"German text.docx"` com o nome do arquivo do seu documento.
+Aqui, estamos carregando um documento de texto em alemão. Você pode substituir`"German text.docx"` com o nome do arquivo do seu documento.
 
 ## Etapa 4: salve o documento
 
@@ -129,7 +129,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## Conclusão
 
-E aí está! Você acabou de aprender como implementar um retorno de chamada de hifenização no Aspose.Words for .NET. Seguindo essas etapas, você pode garantir que seus documentos sejam formatados de maneira bonita, independentemente do idioma. Esteja você lidando com inglês, alemão ou qualquer outro idioma, esse método permite lidar com a hifenização sem esforço.
+aí está! Você acabou de aprender como implementar um retorno de chamada de hifenização no Aspose.Words for .NET. Seguindo essas etapas, você pode garantir que seus documentos sejam formatados de maneira bonita, independentemente do idioma. Esteja você lidando com inglês, alemão ou qualquer outro idioma, esse método permite lidar com a hifenização sem esforço.
 
 ## Perguntas frequentes
 
@@ -140,10 +140,10 @@ Aspose.Words for .NET é uma poderosa biblioteca de manipulação de documentos 
 A hifenização melhora o layout do texto, quebrando as palavras nos locais apropriados, garantindo um documento mais legível e visualmente atraente.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Aspose.Words oferece um teste gratuito. Você pode conseguir isso[aqui](https://releases.aspose.com/).
+ Aspose.Words oferece um teste gratuito. Você pode conseguir[aqui](https://releases.aspose.com/).
 
 ### Como obtenho um dicionário de hifenização?
 Você pode baixar dicionários de hifenização de vários recursos online ou criar os seus próprios, se necessário.
 
 ### O que acontece se faltar um dicionário de hifenização?
- Se faltar um dicionário, o`RequestDictionary` O método lança uma exceção, que você pode manipular para informar o usuário ou fornecer um substituto.
+ Se faltar um dicionário, o`RequestDictionary` método lança uma exceção, que você pode manipular para informar o usuário ou fornecer um substituto.

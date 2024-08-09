@@ -1,6 +1,6 @@
 ---
-title: Commentaar toevoegen
-linktitle: Commentaar toevoegen
+title: Opmerkingen toevoegen
+linktitle: Opmerkingen toevoegen
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer met onze gids hoe u opmerkingen aan uw Word-documenten kunt toevoegen met Aspose.Words voor .NET. Verbeter moeiteloos uw samenwerkingsproces aan documenten.
 type: docs

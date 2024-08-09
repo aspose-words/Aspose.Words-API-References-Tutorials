@@ -39,4 +39,4 @@ url: /zh-hant/python-net/tables-and-formatting/
 ### [優化 Word 文件中資料呈現的表格](./document-tables/)
 了解如何使用 Aspose.Words for Python 優化 Word 文件中的資料呈現表格。透過逐步指導和原始程式碼範例增強可讀性和視覺吸引力。
 ### [文件表格樣式和格式](./document-table-styles-formatting/)
-了解如何使用 Aspose.Words for Python 設定文件表格的樣式和格式。透過逐步指南和程式碼範例建立、自訂和匯出表。立即增強您的文件示範！ 
+了解如何使用 Aspose.Words for Python 設定文件表格的樣式和格式。透過逐步指南和程式碼範例建立、自訂和匯出表格。立即增強您的文件示範！ 

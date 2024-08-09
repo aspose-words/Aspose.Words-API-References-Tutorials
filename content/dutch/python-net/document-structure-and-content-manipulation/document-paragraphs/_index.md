@@ -131,7 +131,7 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Kop-en voetteksten
+## Kop- en voetteksten
 
 Kop- en voetteksten bieden consistente informatie op alle documentpagina's:
 
@@ -144,7 +144,7 @@ builder.write("Header Text")
 
 ## Werken met secties en pagina-einden
 
-Door uw document in secties te verdelen, kunt u verschillende opmaak binnen hetzelfde document gebruiken:
+Door uw document in secties te verdelen, kunt u binnen hetzelfde document verschillende opmaak gebruiken:
 
 ```python
 # Add sections and page breaks

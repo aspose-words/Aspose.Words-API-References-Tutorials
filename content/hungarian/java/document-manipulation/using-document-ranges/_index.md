@@ -12,7 +12,7 @@ url: /hu/java/document-manipulation/using-document-ranges/
 
 Ebben az átfogó útmutatóban megvizsgáljuk, hogyan lehet kihasználni az Aspose.Words for Java dokumentumtartományainak erejét. Megtanulja, hogyan lehet szöveget manipulálni és kivonni a dokumentum bizonyos részeiből, így lehetőségek világát nyitja meg Java dokumentumfeldolgozási igényeinek kielégítésére.
 
-## Elkezdeni
+## Kezdő lépések
 
  Mielőtt belemerülne a kódba, győződjön meg arról, hogy a projektben be van állítva az Aspose.Words for Java könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/java/).
 

@@ -9,7 +9,7 @@ url: /nl/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 ## Invoering
 
-Heeft u ooit moeite gehad met tabellen die eruit zien alsof ze in uw Word-document zijn geperst, waardoor de tekst krap is en de kolommen niet goed zijn uitgelijnd? Als dat zo is, ben je niet de enige! Het beheren van tabelopmaak kan een heel gedoe zijn, vooral als het om dynamische inhoud gaat. Maar maak je geen zorgen; Aspose.Words voor .NET staat voor u klaar. In deze handleiding duiken we in de handige functie van het automatisch aanpassen van tabellen aan de inhoud. Deze functionaliteit zorgt ervoor dat uw tabellen zich perfect aanpassen aan de inhoud, waardoor uw documenten er met minimale inspanning verzorgd en professioneel uitzien. klaar om te beginnen? Laten we uw tafels harder voor u laten werken!
+Heeft u ooit moeite gehad met tabellen die eruit zien alsof ze in uw Word-document zijn geperst, waardoor de tekst krap is en de kolommen niet goed zijn uitgelijnd? Als dat zo is, ben je niet de enige! Het beheren van tabelopmaak kan een heel gedoe zijn, vooral als het om dynamische inhoud gaat. Maar maak je geen zorgen; Aspose.Words voor .NET staat voor u klaar. In deze handleiding duiken we in de handige functie van het automatisch aanpassen van tabellen aan de inhoud. Deze functionaliteit zorgt ervoor dat uw tabellen zich perfect aanpassen aan de inhoud, waardoor uw documenten er met minimale inspanning verzorgd en professioneel uitzien. Klaar om aan de slag te gaan? Laten we uw tafels harder voor u laten werken!
 
 ## Vereisten
 
@@ -71,7 +71,7 @@ table.AutoFit(AutoFitBehavior.AutoFitToContents);
 
 Deze coderegel vertelt Aspose.Words om de kolommen en rijen van de tabel aan te passen, zodat ze perfect bij de inhoud passen. Het is alsof je een automatisch formaathulpmiddel gebruikt dat ervoor zorgt dat alles precies goed past, waardoor handmatige aanpassingen niet meer nodig zijn.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte de wijzigingen op in een nieuw document:
 
@@ -83,7 +83,7 @@ Met deze stap wordt uw bijgewerkte document opgeslagen onder een nieuwe naam, zo
 
 ## Conclusie
 
-Het automatisch aanpassen van tabellen aan de inhoud met Aspose.Words voor .NET is een eenvoudig proces dat het uiterlijk van uw Word-documenten aanzienlijk kan verbeteren. Door de hierboven beschreven stappen te volgen, kunt u ervoor zorgen dat uw tabellen automatisch worden aangepast aan hun inhoud, waardoor u tijd en moeite bespaart bij het opmaken. Of u nu te maken heeft met grote datasets of gewoon wilt dat uw tabellen er netjes uitzien, deze functie is een echte game-changer. Veel codeerplezier!
+Het automatisch aanpassen van tabellen aan de inhoud met Aspose.Words voor .NET is een eenvoudig proces dat het uiterlijk van uw Word-documenten aanzienlijk kan verbeteren. Door de hierboven beschreven stappen te volgen, kunt u ervoor zorgen dat uw tabellen zich automatisch aanpassen aan hun inhoud, waardoor u tijd en moeite bespaart bij het opmaken. Of u nu te maken heeft met grote datasets of gewoon wilt dat uw tabellen er netjes uitzien, deze functie is een echte game-changer. Veel codeerplezier!
 
 ## Veelgestelde vragen
 

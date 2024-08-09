@@ -15,7 +15,7 @@ Haben Sie sich schon einmal gefragt, wie Sie die Eigenschaft „Zuletzt gespeich
 
 Bevor wir mit der Schritt-für-Schritt-Anleitung beginnen, benötigen Sie einige Dinge:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine Entwicklungsumgebung wie Visual Studio.
 3. Grundkenntnisse in C#: Kenntnisse der Grundlagen der C#-Programmierung sind hilfreich.
 

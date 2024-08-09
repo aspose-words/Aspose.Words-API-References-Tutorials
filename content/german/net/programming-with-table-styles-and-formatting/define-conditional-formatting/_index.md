@@ -15,7 +15,7 @@ Mit der bedingten Formatierung können Sie Zellen in einer Tabelle anhand bestim
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-1. Aspose.Words für .NET: Sie benötigen die Bibliothek Aspose.Words für .NET. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Sie benötigen die Bibliothek Aspose.Words für .NET. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine geeignete Entwicklungsumgebung wie Visual Studio.
 3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind hilfreich.
 4. Word-Dokument: Ein Word-Dokument, auf das Sie eine bedingte Formatierung anwenden möchten.

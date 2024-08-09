@@ -15,7 +15,7 @@ Bonjour, passionnés de technologie et experts en documents ! 🌟 Avez-vous d�
 
 Avant de plonger dans la magie de la liaison des zones de texte, assurons-nous que vous disposez de tous les éléments essentiels :
 
-1. Bibliothèque Aspose.Words pour .NET : vous aurez besoin de la dernière version d'Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1. Bibliothèque Aspose.Words pour .NET : vous aurez besoin de la dernière version d'Aspose.Words pour .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un environnement de développement .NET, comme Visual Studio, est nécessaire pour écrire et tester votre code.
 3. Connaissances de base de C# : Une compréhension de base de C# vous aidera à suivre les exemples de code.
 4. Exemple de document Word : bien que cela ne soit pas strictement nécessaire pour ce didacticiel, disposer d'un exemple de document Word pour tester vos zones de texte liées peut être utile.
@@ -83,7 +83,7 @@ TextBox textBox2 = shape2.TextBox;
 
  L'instant magique ! Maintenant nous lions`textBox1` à`textBox2` . Cela signifie que lorsque le texte déborde de`textBox1` , cela continuera dans`textBox2`.
 
-### Vérification de la validité du lien
+### Vérifier la validité du lien
 
 Tout d’abord, nous devons vérifier si les deux zones de texte peuvent être liées :
 
@@ -114,9 +114,9 @@ Cela enregistre le document sous le nom de fichier « LinkedTextBoxes.docx ». V
 
 ## Conclusion
 
-Et voila! 🎉 Vous avez créé et lié avec succès des zones de texte dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé dans la configuration de votre environnement, la création et la liaison de zones de texte et l'enregistrement de votre document. Grâce à ces compétences, vous pouvez améliorer vos documents Word avec des flux de contenu dynamiques et rendre vos documents plus interactifs et conviviaux.
+Et voilà ! 🎉 Vous avez créé et lié avec succès des zones de texte dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé dans la configuration de votre environnement, la création et la liaison de zones de texte et l'enregistrement de votre document. Grâce à ces compétences, vous pouvez améliorer vos documents Word avec des flux de contenu dynamiques et rendre vos documents plus interactifs et conviviaux.
 
- Pour des informations plus détaillées et des fonctionnalités avancées, assurez-vous de consulter le[Documentation de l'API Aspose.Words](https://reference.aspose.com/words/net/) Si vous avez des questions ou rencontrez des problèmes, le[forum d'entraide](https://forum.aspose.com/c/words/8) est une excellente ressource.
+ Pour des informations plus détaillées et des fonctionnalités avancées, assurez-vous de consulter le[Documentation de l'API Aspose.Words](https://reference.aspose.com/words/net/) Si vous avez des questions ou rencontrez des problèmes, le[forum d'assistance](https://forum.aspose.com/c/words/8) est une excellente ressource.
 
 Bon codage, et que vos zones de texte soient toujours parfaitement liées ! 🚀
 

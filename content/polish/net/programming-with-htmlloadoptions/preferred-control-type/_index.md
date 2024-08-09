@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- Przez ustawienie`PreferredControlType` Do`HtmlControlType.StructuredDocumentTag`, zapewniamy, że pole kombi będzie renderowane jako znacznik dokumentu strukturalnego (SDT) w dokumencie programu Word.
+ Ustawiając`PreferredControlType` Do`HtmlControlType.StructuredDocumentTag`, zapewniamy, że pole kombi będzie renderowane jako znacznik dokumentu strukturalnego (SDT) w dokumencie programu Word.
 
 ## Krok 4: Załaduj treść HTML do dokumentu
 

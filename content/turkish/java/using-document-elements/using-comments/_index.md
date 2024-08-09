@@ -64,7 +64,7 @@ doc.save(outPath + "WorkingWithComments.AddComments.docx");
 ```
 
 
-## 7. Karar
+## 7. Sonuç
 Bu eğitimde Aspose.Words for Java'da yorumların nasıl kullanılacağını öğrendik. Artık açıklamalar ve ek açıklamalar içeren, işbirliğini ve belge netliğini artıran dinamik belgeler oluşturabilirsiniz.
 
 ## SSS

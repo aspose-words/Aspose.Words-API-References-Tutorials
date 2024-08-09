@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /ko/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## 소개
 
 문서에서 글꼴이 올바르게 렌더링되지 않는 문제에 직면한 적이 있다면 혼자가 아닙니다. 글꼴 설정을 관리하고 글꼴 대체에 대한 알림을 받으면 많은 어려움을 겪을 수 있습니다. 이 포괄적인 가이드에서는 .NET용 Aspose.Words를 사용하여 글꼴 알림을 처리하여 문서가 항상 최상의 상태로 보이도록 하는 방법을 살펴보겠습니다.
 
@@ -61,7 +61,7 @@ fontSettings.SetFontsFolder(string.Empty, false);
 
 ## 4단계: 경고 콜백 설정
 
- 글꼴 대체 경고를 캡처하고 처리하려면`IWarningCallback` 상호 작용. 이 클래스는 문서 처리 중에 발생하는 모든 경고를 기록합니다.
+ 글꼴 대체 경고를 캡처하고 처리하려면`IWarningCallback` 인터페이스. 이 클래스는 문서 처리 중에 발생하는 모든 경고를 기록합니다.
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 이제 Aspose.Words for .NET을 사용하여 글꼴 대체에 대한 알림을 받는 프로세스를 마스터했습니다. 이 기술은 필요한 글꼴을 사용할 수 없는 경우에도 문서가 항상 최상의 상태로 보이도록 하는 데 도움이 됩니다. Aspose.Words의 기능을 최대한 활용하려면 다양한 설정으로 계속 실험해 보세요.
 
-## 자주 묻는 질문
+## FAQ
 
 ### Q1: 여러 기본 글꼴을 지정할 수 있나요?
 
@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ### Q4: Aspose.Words에 대한 지원은 어디서 찾을 수 있나요?
 
- 방문하다[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
+ 방문[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
 
 ### Q5: Aspose.Words에 대한 임시 라이선스를 얻을 수 있나요?
 

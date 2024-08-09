@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/compare-documents/compare-options/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové tech nadšenci! Potřebovali jste někdy porovnat dva dokumenty aplikace Word, abyste zjistili rozdíly? Možná pracujete na společném projektu a potřebujete zajistit konzistenci napříč více verzemi. No, dnes se ponoříme do světa Aspose.Words pro .NET, abychom vám ukázali, jak přesně porovnávat možnosti v dokumentu aplikace Word. Tento tutoriál není jen o psaní kódu, ale o porozumění procesu zábavným, poutavým a podrobným způsobem. Takže si vezměte svůj oblíbený nápoj a můžeme začít!
 
@@ -15,7 +15,7 @@ Ahoj, kolegové tech nadšenci! Potřebovali jste někdy porovnat dva dokumenty 
 
 Než si ušpiníme ruce kódem, ujistěte se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
-1.  Knihovna Aspose.Words for .NET: Musíte mít nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Knihovna Aspose.Words for .NET: Musíte mít nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Postačí jakékoli vývojové prostředí C#, jako je Visual Studio.
 3. Základní znalost C#: Základní znalost programování v C# bude užitečná.
 4. Ukázkové dokumenty aplikace Word: Dva dokumenty aplikace Word, které chcete porovnat.

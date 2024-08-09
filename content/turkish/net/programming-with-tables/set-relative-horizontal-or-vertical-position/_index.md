@@ -69,7 +69,7 @@ Yatay konumlandırmaya benzer şekilde dikey konumu da ayarlayabilirsiniz. Burad
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
- ayarlamak`VerticalAnchor` ile`RelativeVerticalPosition.Page` tablonun sayfaya göre dikey olarak hizalanmasını sağlar.
+ Ayarlama`VerticalAnchor` ile`RelativeVerticalPosition.Page` tablonun sayfaya göre dikey olarak hizalanmasını sağlar.
 
 ## Adım 5: Belgenizi Kaydedin
 
@@ -83,7 +83,7 @@ Bu komut, değiştirilen belgeyi yeni bir adla kaydederek orijinal dosyanızın 
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgesindeki bir tablonun göreceli yatay ve dikey konumlarını başarıyla ayarladınız. Bu yeni keşfedilen beceriyle belgelerinizin düzenini ve okunabilirliğini geliştirebilir, daha profesyonel ve gösterişli görünmelerini sağlayabilirsiniz. Farklı pozisyonları denemeye devam edin ve ihtiyaçlarınıza en uygun olanı görün.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgesindeki bir tablonun göreceli yatay ve dikey konumlarını başarıyla ayarladınız. Bu yeni keşfedilen beceriyle belgelerinizin düzenini ve okunabilirliğini geliştirebilir, daha profesyonel ve gösterişli görünmelerini sağlayabilirsiniz. Farklı pozisyonları denemeye devam edin ve ihtiyaçlarınıza en uygun olanı görün.
 
 ## SSS'ler
 

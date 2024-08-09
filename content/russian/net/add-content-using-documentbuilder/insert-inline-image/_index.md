@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Шаг 2. Вставьте встроенное изображение
 
- Использовать`InsertImage` метод`DocumentBuilder` класс для вставки изображения в документ в текущей позиции.
+ Используйте`InsertImage` метод`DocumentBuilder` класс для вставки изображения в документ в текущей позиции.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";

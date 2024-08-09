@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## 結論
 
-現在你就擁有了！您已成功設定頁面儲存回調，使用 Aspose.Words for .NET 將 Word 文件的每一頁儲存為單獨的 PNG 圖片。該技術對於各種應用程式非常有用，從創建頁面預覽到為報告生成單獨的頁面圖像。 
+現在你就得到它了！您已成功設定頁面儲存回調，使用 Aspose.Words for .NET 將 Word 文件的每一頁儲存為單獨的 PNG 圖片。該技術對於各種應用程式非常有用，從創建頁面預覽到為報告生成單獨的頁面圖像。 
 
 快樂編碼！
 

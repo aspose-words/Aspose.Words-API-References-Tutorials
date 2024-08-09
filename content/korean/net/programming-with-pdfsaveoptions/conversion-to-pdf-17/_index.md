@@ -15,7 +15,7 @@ Word 문서를 PDF로 변환하는 것은 학계에서 비즈니스에 이르기
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
-1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 .NET 개발을 지원하는 기타 IDE.
 3. C#에 대한 기본 지식: 기본 사항을 이해하면 코드 조각을 따라가는 데 도움이 됩니다.
 

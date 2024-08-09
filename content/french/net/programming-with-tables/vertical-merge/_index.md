@@ -98,7 +98,7 @@ Cette ligne enregistre le document avec le nom de fichier spécifié dans votre 
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous avez réussi à implémenter la fusion verticale dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité peut améliorer considérablement la lisibilité et l’organisation de vos documents, les rendant plus professionnels et plus faciles à parcourir. Qu'il s'agisse de tableaux simples ou de structures de données complexes, la maîtrise de la fusion verticale vous donnera l'avantage en matière de formatage de documents.
+Et voilà ! En suivant ces étapes, vous avez réussi à implémenter la fusion verticale dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité peut améliorer considérablement la lisibilité et l’organisation de vos documents, les rendant plus professionnels et plus faciles à parcourir. Qu'il s'agisse de tableaux simples ou de structures de données complexes, la maîtrise de la fusion verticale vous donnera l'avantage en matière de formatage de documents.
 
 ## FAQ
 

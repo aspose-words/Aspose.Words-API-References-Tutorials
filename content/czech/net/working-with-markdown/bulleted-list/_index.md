@@ -2,95 +2,98 @@
 title: Seznam s odrážkami
 linktitle: Seznam s odrážkami
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vytvořit seznam s odrážkami pomocí Aspose.Words for .NET Podrobný průvodce.
+description: Naučte se vytvářet a přizpůsobovat seznamy s odrážkami v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/working-with-markdown/bulleted-list/
 ---
+## Zavedení
 
-V tomto tutoriálu vám řekneme, jak vytvořit seznam s odrážkami pomocí Aspose.Words pro .NET. Seznam s odrážkami se používá k výpisu položek bez použití číslování.
+Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes si projdeme vytvořením seznamu s odrážkami ve vašich dokumentech aplikace Word. Ať už organizujete nápady, vypisujete položky nebo jen přidáváte do dokumentu trochu struktury, seznamy s odrážkami jsou super praktické. Takže, pojďme začít!
 
-## Krok 1: Použití generátoru dokumentů
+## Předpoklady
 
-Nejprve použijeme generátor dokumentů k přidání obsahu do našeho dokumentu.
+Než se vrhneme na zábavu s kódováním, ujistěte se, že máte vše, co potřebujete:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Vývojové prostředí AC# jako Visual Studio.
+3. Základní znalosti C#: Základní znalost programování v C# vám pomůže pokračovat.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Je to jako připravit půdu pro hladký chod našeho kódu.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Nyní si tento proces rozdělíme na jednoduché, zvládnutelné kroky.
+
+## Krok 1: Vytvořte nový dokument
+
+Dobře, začněme vytvořením nového dokumentu. Tady se bude dít všechna kouzla.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Použití výchozího seznamu s odrážkami
+## Krok 2: Použijte formát seznamu odrážek
 
- Můžeme použít výchozí seznam s odrážkami pomocí nástroje pro tvorbu dokumentů`ApplyBulletDefault` metoda.
+Dále použijeme formát seznamu odrážek. To říká dokumentu, že se chystáme spustit seznam s odrážkami.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Krok 3: Přizpůsobení formátu odrážky
+## Krok 3: Přizpůsobte seznam odrážek
 
- Můžeme přizpůsobit formát odrážky přístupem k vlastnostem`ListFormat.List.ListLevels[0]`. V tomto příkladu používáme jako odrážku pomlčku „-“.
+Zde si přizpůsobíme seznam odrážek podle našich představ. V tomto příkladu použijeme jako odrážku pomlčku (-).
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Krok 4: Přidání položek do seznamu
+## Krok 4: Přidejte položky seznamu
 
- Nyní můžeme přidat položky do seznamu s odrážkami pomocí nástroje pro tvorbu dokumentů`Writeln` metoda.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Krok 5: Odebrání odsazení ze seznamu
-
- Pokud chceme vytvořit podseznam, můžeme zvětšit odsazení pomocí`ListFormat.ListIndent()` metoda. V tomto příkladu přidáváme podseznam k položkám 2a a 2b.
+Nyní přidáme některé položky do našeho seznamu s odrážkami. Zde můžete být kreativní a přidat jakýkoli obsah, který potřebujete.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Příklad zdrojového kódu pro Bulleted List pomocí Aspose.Words pro .NET
-
-
-```csharp
-// K přidání obsahu do dokumentu použijte tvůrce dokumentů.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-gratuluji! Nyní jste se naučili, jak vytvořit seznam s odrážkami pomocí Aspose.Words pro .NET.
+## Krok 5: Přidejte podpoložky
 
-### FAQ
+Aby to bylo zajímavější, přidejte některé podpoložky pod „Položka 2“. To pomáhá při organizování dílčích bodů.
 
-#### Otázka: Jak vytvořit seznam s odrážkami v Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Návrat na úroveň hlavního seznamu
+```
 
-Odpověď: Chcete-li vytvořit seznam s odrážkami v Markdown, začněte každou položku seznamu symbolem odrážky (`-`, `*` nebo`+`), za kterým následuje mezera.
+## Závěr
 
-#### Otázka: Můžete v Markdown vnořit seznamy s odrážkami?
+A tady to máte! Právě jste vytvořili seznam s odrážkami v dokumentu aplikace Word pomocí Aspose.Words for .NET. Je to přímočarý proces, ale neuvěřitelně výkonný pro organizaci vašich dokumentů. Ať už vytváříte jednoduché seznamy nebo složité vnořené seznamy, Aspose.Words vás pokryje.
 
-Odpověď: Ano, v Markdown je možné vnořit seznamy s odrážkami přidáním čtyř odsazených mezer před každou položku vnořeného seznamu.
+Nebojte se experimentovat s různými styly a formáty seznamů, aby vyhovovaly vašim potřebám. Šťastné kódování!
 
-#### Otázka: Jak přizpůsobit symboly odrážek?
+## FAQ
 
-A: Ve standardním Markdown jsou symboly odrážek předdefinovány. Některé editory Markdown vám však umožňují přizpůsobit je pomocí konkrétních rozšíření.
+### Mohu v seznamu použít různé symboly odrážek?
+    Ano, můžete upravit symboly odrážek změnou`NumberFormat` vlastnictví.
 
-#### Otázka: Podporují seznamy s odrážkami v Markdown odsazení?
+### Jak přidám další úrovně odsazení?
+    Použijte`ListIndent` způsob přidání dalších úrovní a`ListOutdent` vrátit se na vyšší úroveň.
 
-Odpověď: Ano, seznamy s odrážkami v Markdown podporují odsazení. Posun doleva můžete přidat pomocí mezer nebo tabulátorů.
+### Je možné kombinovat seznamy odrážek a čísel?
+   Absolutně! Mezi formáty odrážek a čísel můžete přepínat pomocí`ApplyNumberDefault`a`ApplyBulletDefault` metody.
 
-#### Otázka: Lze k položkám seznamu přidat odkazy nebo vložený text?
+### Mohu upravit styl textu v položkách seznamu?
+    Ano, na text v položkách seznamu můžete použít různé styly, fonty a formátování pomocí`Font` vlastnictvím`DocumentBuilder`.
 
-Odpověď: Ano, do seznamu položek můžete přidat odkazy nebo vložený text pomocí příslušné syntaxe Markdown.
+### Jak mohu vytvořit vícesloupcový seznam s odrážkami?
+   Formátování tabulky můžete použít k vytvoření vícesloupcových seznamů, kde každá buňka obsahuje samostatný seznam s odrážkami.

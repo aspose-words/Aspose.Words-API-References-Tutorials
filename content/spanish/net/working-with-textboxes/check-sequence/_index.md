@@ -15,7 +15,7 @@ url: /es/net/working-with-textboxes/check-sequence/
 
 Antes de pasar al código, asegurémonos de que tiene todo lo que necesita para comenzar:
 
-1.  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión.[Descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión.[Descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo compatible con .NET como Visual Studio.
 3. Conocimientos básicos de C#: la familiaridad con la sintaxis y los conceptos de C# le ayudarán a seguir adelante.
 4. Documento de Word de muestra: es útil tener un documento de Word para probar su código, pero para este ejemplo, crearemos todo desde cero.
@@ -130,7 +130,7 @@ Este comando guarda el documento como "TextBoxSequenceCheck.docx", conservando l
 
 ## Conclusión
 
-¡Y eso es una envoltura! 🎉 Ha aprendido a crear cuadros de texto, vincularlos y verificar su secuencia en un documento de Word usando Aspose.Words para .NET. Esta habilidad es increíblemente útil para gestionar documentos complejos con múltiples elementos de texto vinculados, como boletines, formularios o guías instructivas.
+¡Y eso es todo! 🎉 Ha aprendido a crear cuadros de texto, vincularlos y verificar su secuencia en un documento de Word usando Aspose.Words para .NET. Esta habilidad es increíblemente útil para gestionar documentos complejos con múltiples elementos de texto vinculados, como boletines, formularios o guías instructivas.
 
  Recuerde, comprender la secuencia de los cuadros de texto puede ayudar a garantizar que su contenido fluya de manera lógica y sea fácil de seguir para sus lectores. Si desea profundizar en las capacidades de Aspose.Words, el[Documentación API](https://reference.aspose.com/words/net/) es un excelente recurso.
 
@@ -151,4 +151,4 @@ Sí, los cuadros de texto se pueden vincular en cualquier secuencia, incluidas l
 Sí, puedes aplicar estilo al texto dentro de cada cuadro de texto de forma independiente, lo que te brinda flexibilidad en el diseño y el formato.
 
 ### ¿Dónde puedo encontrar más recursos sobre cómo trabajar con cuadros de texto en Aspose.Words?
- Para obtener más información, consulte el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/)y[Foro de soporte](https://forum.aspose.com/c/words/8).
+ Para obtener más información, consulte el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/)y[foro de soporte](https://forum.aspose.com/c/words/8).

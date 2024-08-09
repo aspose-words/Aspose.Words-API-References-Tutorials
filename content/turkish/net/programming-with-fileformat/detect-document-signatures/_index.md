@@ -35,7 +35,7 @@ Dijital imzaları tespit etmeye başlamadan önce projemizi kurmamız gerekiyor.
 
 ### 1.1 Yeni Bir Proje Oluşturun
 
- Visual Studio'yu açın ve yeni bir Konsol Uygulaması (.NET Core) projesi oluşturun. Adını sen koy`DigitalSignatureDetector`.
+ Visual Studio'yu açın ve yeni bir Konsol Uygulaması (.NET Core) projesi oluşturun. Adını ver`DigitalSignatureDetector`.
 
 ### 1.2 Aspose.Words for .NET'i yükleyin
 
@@ -91,7 +91,7 @@ Hayır, Aspose.Words for .NET, belgeleri açarken veya kaydederken dijital imzal
 
 ### Bir belgede birden fazla dijital imzayı tespit etmenin bir yolu var mı?
 
- Evet`HasDigitalSignature` özelliği, belgede bir veya daha fazla dijital imzanın varlığını gösterebilir.
+ Evet,`HasDigitalSignature` özelliği, belgede bir veya daha fazla dijital imzanın varlığını gösterebilir.
 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?
 

@@ -9,7 +9,7 @@ url: /es/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 ## Introducción
 
-¡Hola, compañero codificador! Si alguna vez se ha encontrado luchando con problemas de fuentes al guardar documentos de Word como HTML, no está solo. Las fuentes pueden ser complicadas, pero no te preocupes; Tengo su espalda. Hoy, profundizaremos en cómo resolver nombres de fuentes en sus documentos de Word usando Aspose.Words para .NET. Esta guía lo guiará a través del proceso paso a paso, asegurando que sus fuentes se vean perfectas en formato HTML.
+¡Hola, compañero codificador! Si alguna vez se ha encontrado luchando con problemas de fuentes al guardar documentos de Word como HTML, no está solo. Las fuentes pueden ser complicadas, pero no te preocupes; Te cubro la espalda. Hoy, profundizaremos en cómo resolver nombres de fuentes en sus documentos de Word usando Aspose.Words para .NET. Esta guía lo guiará a través del proceso paso a paso, asegurando que sus fuentes se vean perfectas en formato HTML.
 
 ## Requisitos previos
 

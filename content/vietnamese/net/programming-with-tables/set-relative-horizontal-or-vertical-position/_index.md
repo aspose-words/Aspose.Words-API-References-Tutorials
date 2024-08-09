@@ -83,7 +83,7 @@ Lệnh này lưu tài liệu đã sửa đổi bằng tên mới, đảm bảo b
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã đặt thành công vị trí ngang và dọc tương đối cho bảng trong tài liệu Word bằng Aspose.Words for .NET. Với kỹ năng mới này, bạn có thể nâng cao bố cục và khả năng đọc tài liệu của mình, khiến chúng trông chuyên nghiệp và bóng bẩy hơn. Hãy tiếp tục thử nghiệm các vị trí khác nhau và xem vị trí nào phù hợp nhất với nhu cầu của bạn.
+Và bạn có nó! Bạn đã đặt thành công vị trí ngang và dọc tương đối cho bảng trong tài liệu Word bằng Aspose.Words for .NET. Với kỹ năng mới này, bạn có thể nâng cao bố cục và khả năng đọc tài liệu của mình, khiến chúng trông chuyên nghiệp và bóng bẩy hơn. Hãy tiếp tục thử nghiệm các vị trí khác nhau và xem vị trí nào phù hợp nhất với nhu cầu của bạn.
 
 ## Câu hỏi thường gặp
 

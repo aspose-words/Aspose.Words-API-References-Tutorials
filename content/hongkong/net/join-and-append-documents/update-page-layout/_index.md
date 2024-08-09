@@ -52,7 +52,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "input.docx");
 ```
 
-在這裡，替換`"YOUR DOCUMENT DIRECTORY"`與您的實際路徑`input.docx`文件已儲存。
+在這裡，替換`"YOUR DOCUMENT DIRECTORY"`與你的實際路徑`input.docx`文件已儲存。
 
 ## 步驟 2：儲存具有初始佈局的文檔
 

@@ -15,7 +15,7 @@ url: /th/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 
 ก่อนที่จะเจาะลึกโค้ด ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
--  Aspose.Words สำหรับ .NET: หากคุณยังไม่ได้ดาวน์โหลด ให้ดาวน์โหลดและติดตั้งจาก[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
+-  Aspose.Words สำหรับ .NET: หากคุณยังไม่ได้ดาวน์โหลด ให้ดาวน์โหลดและติดตั้งจาก[ลิงค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
 - สภาพแวดล้อมการพัฒนา .NET: Visual Studio เป็นตัวเลือกยอดนิยม
 - ตัวอย่างเอกสาร Word: เตรียมไฟล์ DOCX ที่คุณต้องการแปลงเป็น PDF ให้พร้อม
 

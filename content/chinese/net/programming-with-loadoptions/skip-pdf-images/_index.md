@@ -73,7 +73,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-确保这件事`"Pdf Document.pdf"`是指定目录中的 PDF 文件的名称。
+确保`"Pdf Document.pdf"`是指定目录中的 PDF 文件的名称。
 
 ## 结论
 

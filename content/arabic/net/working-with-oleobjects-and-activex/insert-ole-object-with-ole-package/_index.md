@@ -2,140 +2,103 @@
 title: إدراج كائن Ole في Word باستخدام حزمة Ole
 linktitle: إدراج كائن Ole في Word باستخدام حزمة Ole
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج كائن OLE مع حزمة OLE في مستند باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إدراج كائنات OLE في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا المفصل خطوة بخطوة لتضمين الملفات بسلاسة.
 type: docs
 weight: 10
 url: /ar/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
+## مقدمة
 
-فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه والتي توضح كيفية إدراج كائن OLE في Word باستخدام حزمة OLE باستخدام Aspose.Words for .NET.
+إذا كنت تريد تضمين ملف في مستند Word، فأنت في المكان الصحيح. سواء كان ملف ZIP أو ورقة Excel أو أي نوع آخر من الملفات، فإن تضمينه مباشرة في مستند Word الخاص بك يمكن أن يكون مفيدًا بشكل لا يصدق. فكر في الأمر كما لو كان لديك حجرة سرية في وثيقتك حيث يمكنك تخزين جميع أنواع الكنوز. واليوم، سنتعرف على كيفية القيام بذلك باستخدام Aspose.Words for .NET. هل أنت مستعد لتصبح معالج Word؟ دعونا الغوص في!
 
-## الخطوة 1: استيراد المراجع اللازمة
-قبل أن تبدأ، تأكد من استيراد المراجع اللازمة لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملفك المصدر.
+## المتطلبات الأساسية
+
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
+
+1. Aspose.Words for .NET: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير .NET أخرى.
+3. الفهم الأساسي لـ C#: لست بحاجة إلى أن تكون خبيرًا، ولكن معرفة طريقك نحو C# سيساعدك.
+4. دليل المستندات: مجلد يمكنك من خلاله تخزين المستندات واسترجاعها.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، دعونا نرتب مساحات الأسماء لدينا. تحتاج إلى تضمين مساحات الأسماء التالية في مشروعك:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد المستندات
- في هذه الخطوة، سنقوم بإنشاء مستند جديد باستخدام الملف`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` فصل.
+دعونا نقسم ذلك إلى خطوات صغيرة، بحيث يكون من السهل متابعتها.
+
+## الخطوة 1: قم بإعداد المستند الخاص بك
+
+تخيل أنك فنان بلوحة قماشية فارغة. أولاً، نحتاج إلى قماشنا الفارغ، وهو مستند Word الخاص بنا. إليك كيفية إعداده:
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: قم بإدراج كائن OLE مع حزمة OLE
- استخدم منشئ المستندات`InsertOleObject`طريقة لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
+يقوم هذا الرمز بتهيئة مستند Word جديد وإعداد DocumentBuilder، والذي سنستخدمه لإدراج المحتوى في مستندنا.
+
+## الخطوة 2: اقرأ كائن Ole الخاص بك
+
+بعد ذلك، دعنا نقرأ الملف الذي تريد تضمينه. فكر في هذا على أنه التقاط الكنز الذي تريد إخفاءه في مقصورتك السرية:
 
 ```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
+byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
+```
+
+يقرأ هذا السطر كافة وحدات البايت من ملف ZIP الخاص بك ويخزنها في مصفوفة بايت.
+
+## الخطوة 3: أدخل كائن Ole
+
+الآن يأتي الجزء السحري. سنقوم بتضمين الملف في مستند Word الخاص بنا:
+
+```csharp
 using (Stream stream = new MemoryStream(bs))
 {
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
+    Shape shape = builder.InsertOleObject(stream, "Package", true, null);
+    OlePackage olePackage = shape.OleFormat.OlePackage;
+    olePackage.FileName = "filename.zip";
+    olePackage.DisplayName = "displayname.zip";
 }
 ```
 
-## الخطوة 4: احفظ المستند
- استخدم الوثيقة`Save` طريقة حفظ المستند في ملف .
+ هنا، نقوم بإنشاء دفق ذاكرة من مصفوفة البايت ونستخدم`InsertOleObject` طريقة تضمينه في المستند. نقوم أيضًا بتعيين اسم الملف واسم العرض للكائن المضمن.
+
+## الخطوة 4: احفظ المستند الخاص بك
+
+وأخيرا، دعونا نحفظ تحفتنا:
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### نموذج التعليمات البرمجية المصدر لإدراج كائن OLE مع حزمة OLE مع Aspose.Words لـ .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-هذا نموذج تعليمات برمجية كامل لإدراج كائن OLE مع حزمة OLE مع Aspose.Words لـ .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+يؤدي هذا إلى حفظ المستند مع ملفك المضمن في الدليل المحدد.
 
 ## خاتمة
 
-في الختام، لقد مررنا بدليل خطوة بخطوة لإدراج كائن OLE في مستند Word باستخدام حزمة OLE باستخدام Aspose.Words for .NET.
+وهنا لديك! لقد قمت بنجاح بتضمين كائن OLE في مستند Word باستخدام Aspose.Words لـ .NET. إنه مثل إضافة جوهرة مخفية داخل مستندك والتي يمكن كشفها في أي وقت. يمكن أن تكون هذه التقنية مفيدة بشكل لا يصدق لمجموعة متنوعة من التطبيقات، بدءًا من الوثائق الفنية وحتى التقارير الديناميكية. 
 
-باتباع هذه الخطوات، ستتمكن من إدراج كائنات OLE مع حزم OLE بنجاح في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع اللازمة واتبع التعليمات بعناية للحصول على النتائج المرجوة.
+## الأسئلة الشائعة
 
-### الأسئلة الشائعة حول إدراج كائن ole في Word باستخدام حزمة ole
+### هل يمكنني تضمين أنواع ملفات أخرى باستخدام هذه الطريقة؟
+نعم، يمكنك تضمين أنواع مختلفة من الملفات مثل أوراق Excel وملفات PDF والصور.
 
-#### س: ما هي بيانات الاعتماد التي أحتاج إلى استيرادها لاستخدام Aspose.Words لـ .NET؟
+### هل أحتاج إلى ترخيص لـ Aspose.Words؟
+ نعم، أنت بحاجة إلى ترخيص ساري المفعول. يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
 
-ج: لاستخدام Aspose.Words لـ .NET، تحتاج إلى استيراد المراجع التالية:
+### كيف يمكنني تخصيص اسم العرض لكائن OLE؟
+ يمكنك ضبط`DisplayName` ملكية`OlePackage` لتخصيصه.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
+### هل Aspose.Words متوافق مع .NET Core؟
+نعم، يدعم Aspose.Words كلاً من .NET Framework و.NET Core.
 
-#### س: كيفية إنشاء مستند جديد ومولد المستندات؟
-
- ج: يمكنك إنشاء مستند جديد باستخدام`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` الصف، كما هو موضح أدناه:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### س: كيفية إدراج كائن OLE مع حزمة OLE في المستند؟
-
- ج: استخدم`InsertOleObject` طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
-
-```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-```
-
-#### س: كيفية حفظ الوثيقة؟
-
- ج: استخدم الوثيقة`Save`طريقة حفظ المستند في ملف . هنا مثال :
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-#### س: هل يمكنك تقديم مثال كامل لإدراج كائن OLE مع حزمة OLE مع Aspose.Words for .NET؟
-
-ج: إليك نموذج التعليمات البرمجية الكامل لإدراج كائن OLE مع حزمة OLE باستخدام Aspose.Words لـ .NET. تأكد من استيراد المراجع اللازمة واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-بهذا نختتم برنامجنا التعليمي حول إدراج كائن OLE مع حزمة OLE في مستند Word باستخدام Aspose.Words for .NET. لا تتردد في استيراد المراجع اللازمة واتبع الخطوات الموضحة لدمج هذا الرمز في مشروعك. إذا كان لديك أي أسئلة أخرى، فلا تتردد في الاتصال بنا.
+### هل يمكنني تحرير كائن OLE المضمن في مستند Word؟
+لا، لا يمكنك تحرير كائن OLE مباشرة داخل Word. تحتاج إلى فتحه في تطبيقه الأصلي.

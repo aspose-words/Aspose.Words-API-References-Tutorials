@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("passwor
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Ακολουθώντας τα βήματα που περιγράφονται σε αυτό το σεμινάριο, μπορείτε εύκολα να φορτώσετε και να αποθηκεύσετε κρυπτογραφημένα έγγραφα του Word με το Aspose.Words για .NET. Αυτό διασφαλίζει ότι τα έγγραφά σας παραμένουν ασφαλή και προσβάσιμα μόνο σε εξουσιοδοτημένα άτομα.
 

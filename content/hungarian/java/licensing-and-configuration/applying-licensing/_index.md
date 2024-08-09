@@ -107,7 +107,7 @@ Ebben az oktatóanyagban bemutattuk az Aspose.Words for Java licencének alkalma
 ## GYIK
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words for Java számára?
- Meglátogatni a[Aspose ideiglenes licenc oldala](https://purchase.aspose.com/temporary-license/) ideiglenes engedélyt kérni.
+ Látogassa meg a[Aspose ideiglenes licenc oldala](https://purchase.aspose.com/temporary-license/) ideiglenes engedélyt kérni.
 
 ### Használhatom az Aspose.Words for Java programot licenc nélkül?
 Igen, de próba üzemmódban fog működni korlátozásokkal. A teljes funkcionalitás érdekében ajánlatos érvényes licencet szerezni.

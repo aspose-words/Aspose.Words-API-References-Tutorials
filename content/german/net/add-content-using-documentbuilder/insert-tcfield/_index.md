@@ -79,7 +79,7 @@ Boom! Sie haben gerade ein Word-Dokument mit einem TC-Feld erstellt. Wie toll is
 
 ## Abschluss
 
- Und da haben Sie es! Wir haben gezeigt, wie Sie mit Aspose.Words für .NET ein TC-Feld in ein Word-Dokument einfügen. Es ist ziemlich unkompliziert, oder? Mit diesen Fähigkeiten können Sie jetzt Ihre Word-Dokumente wie ein Profi automatisieren und anpassen. Wenn Sie Fragen haben oder auf Probleme stoßen, zögern Sie nicht, sich die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder wenden Sie sich an ihre[Hilfeforum](https://forum.aspose.com/c/words/8). Viel Spaß beim Programmieren!
+ Und da haben Sie es! Wir haben gezeigt, wie Sie mit Aspose.Words für .NET ein TC-Feld in ein Word-Dokument einfügen. Es ist ziemlich unkompliziert, oder? Mit diesen Fähigkeiten können Sie jetzt Ihre Word-Dokumente wie ein Profi automatisieren und anpassen. Wenn Sie Fragen haben oder auf Probleme stoßen, zögern Sie nicht, sich die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder wenden Sie sich an ihre[Support-Forum](https://forum.aspose.com/c/words/8). Viel Spaß beim Programmieren!
 
 ## Häufig gestellte Fragen
 

@@ -71,7 +71,7 @@ horizontalRuleFormat.NoShade = true;
 
 ## 4. lépés: Mentse el a dokumentumot
 
- Végül mentse el a módosított dokumentumot a`Save` módszere a`Document` tárgy.
+ Végül mentse el a módosított dokumentumot a`Save` módszere a`Document` objektum.
 
 ```csharp
 builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");

@@ -98,4 +98,4 @@ Os cabeçalhos e rodapés do documento de origem podem continuar no documento de
 Sim, Aspose.Words for .NET permite remover cabeçalhos e rodapés enquanto preserva o restante da formatação do documento.
 
 ### Onde posso encontrar mais recursos e suporte para Aspose.Words for .NET?
- Visite a[Documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/) para referências e exemplos detalhados de API.
+ Visite o[Documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/) para referências e exemplos detalhados de API.

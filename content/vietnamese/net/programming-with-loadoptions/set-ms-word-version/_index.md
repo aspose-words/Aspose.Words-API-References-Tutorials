@@ -10,15 +10,15 @@ url: /vi/net/programming-with-loadoptions/set-ms-word-version/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình cần làm việc với các phiên bản cụ thể của tài liệu MS Word nhưng không biết cách thiết lập nó theo chương trình chưa? Bạn không cô đơn! Trong hướng dẫn này, chúng ta sẽ tìm hiểu quy trình thiết lập phiên bản MS Word bằng Aspose.Words cho .NET. Đây là một công cụ tuyệt vời giúp thao tác với tài liệu Word trở nên dễ dàng. Chúng tôi sẽ đi sâu vào chi tiết, chia nhỏ từng bước để đảm bảo bạn đang thiết lập và hoạt động trơn tru. Sẵn sàng để bắt đầu? Hãy đi sâu vào!
+Bạn đã bao giờ thấy mình cần làm việc với các phiên bản cụ thể của tài liệu MS Word nhưng không biết cách thiết lập nó theo chương trình chưa? Bạn không đơn độc! Trong hướng dẫn này, chúng ta sẽ tìm hiểu quy trình thiết lập phiên bản MS Word bằng Aspose.Words cho .NET. Đây là một công cụ tuyệt vời giúp thao tác với tài liệu Word trở nên dễ dàng. Chúng tôi sẽ đi sâu vào chi tiết, chia nhỏ từng bước để đảm bảo bạn đang thiết lập và hoạt động trơn tru. Sẵn sàng để bắt đầu? Hãy đi sâu vào!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
--  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất.[Tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất.[Tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Bạn có thể sử dụng Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
-- Kiến thức cơ bản về C#: Mặc dù chúng ta sẽ nói đơn giản nhưng hiểu biết cơ bản về C# là cần thiết.
+- Kiến thức cơ bản về C#: Mặc dù chúng ta sẽ trình bày nó đơn giản nhưng hiểu biết cơ bản về C# là cần thiết.
 - Tài liệu mẫu: Chuẩn bị sẵn tài liệu Word trong thư mục tài liệu của bạn cho mục đích thử nghiệm.
 
 ## Nhập không gian tên

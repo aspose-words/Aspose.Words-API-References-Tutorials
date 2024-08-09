@@ -2,81 +2,76 @@
 title: Dillerin Tireli Kelimeleri
 linktitle: Dillerin Tireli Kelimeleri
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word belgelerinde farklı dillerdeki kelimeleri nasıl tireleyeceğinizi öğrenin.
+description: Aspose.Words for .NET'i kullanarak farklı dillerdeki kelimeleri nasıl tireleyeceğinizi öğrenin. Belgenizin okunabilirliğini artırmak için bu ayrıntılı, adım adım kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
+## giriiş
 
-Bu adım adım eğitimde, Aspose.Words for .NET kullanarak Word belgelerinde farklı dillerdeki kelimeleri nasıl tireleyeceğiniz konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
+Selam! Hiç uzun, kesintisiz kelimeler içeren bir belgeyi okumayı denediniz mi ve beyninize kramp girdiğini hissettiniz mi? Hepimiz oradaydık. Ama tahmin et ne oldu? Tireleme sizin kurtarıcınızdır! Aspose.Words for .NET ile kelimeleri dil kurallarına göre doğru şekilde tireleyerek belgelerinizin profesyonel görünmesini sağlayabilirsiniz. Bunu sorunsuz bir şekilde nasıl başarabileceğinize bakalım.
 
-Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kütüphaneyi resmi siteden indirip yükleyin.
+## Önkoşullar
 
-## Adım 1: Belge Nesnesini Başlatma
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
- İlk olarak, başlat`Document` farklı dillerde metin içeren kaynak belgenizin yolunu belirterek nesneyi:
+-  Aspose.Words for .NET kuruldu. Almadıysanız hemen alın[Burada](https://releases.aspose.com/words/net/).
+-  Aspose.Words için geçerli bir lisans. Bir tane satın alabilirsin[Burada](https://purchase.aspose.com/buy) veya geçici lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
+- Temel C# ve .NET framework bilgisi.
+- Bir metin düzenleyici veya Visual Studio gibi bir IDE.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bu, tireleme için gereken sınıflara ve yöntemlere erişmeye yardımcı olur.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Hyphenation;
+```
+
+## 1. Adım: Belgenizi Yükleyin
+
+ Belgenizin bulunduğu dizini belirtmeniz gerekecektir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## Adım 2: Tireleme Sözlüklerini Kaydetme
+## 3. Adım: Tireleme Sözlüklerini Kaydedin
 
-Daha sonra, işlemek istediğiniz farklı dillere ait tireleme sözlüklerini kaydedin. Bu örnekte Amerikan İngilizcesi ve İsviçre Almancası için sözlükleri kaydediyoruz:
+ Aspose.Words farklı diller için tireleme sözlükleri gerektirir. Sahip olduğunuzdan emin olun`.dic`tirelemek istediğiniz dillere ait dosyalar. Bu sözlükleri kullanarak kaydedin.`Hyphenation.RegisterDictionary` Yöntem.
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-Veri dizininizde uygun sözlük dosyalarının bulunduğundan emin olun.
+## Adım 4: Belgeyi Kaydedin
 
-## 3. Adım: Kelimeleri tireleme yoluyla işleme
-
-Artık farklı dillerdeki kelimeleri işlemek için tireleme özelliklerini kullanabilirsiniz. Farklı yöntemler kullanabilirsiniz`Document` veya`DocumentBuilder` özel ihtiyaçlarınıza bağlı olarak.
-
-```csharp
-// Örnek: DocumentBuilder'ın Tireleme yöntemini kullanma
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Write("Example of text to hyphenate");
-builder.InsertHyphenation();
-```
-
-## 4. Adım: Belgeyi kaydedin
-
-Son olarak değiştirilen belgeyi kaydedin:
+Son olarak tireli belgeyi istediğiniz formatta kaydedin. Burada bunu PDF olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Bu yüzden ! Aspose.Words for .NET'i kullanarak bir Word belgesinde farklı dillerdeki kelimeleri tireleyerek başarılı bir şekilde işlediniz.
+## Çözüm
 
-### Aspose.Words for .NET kullanarak sözcük tireleme için örnek kaynak kodu
+Ve işte karşınızda! Yalnızca birkaç satır kodla, sözcükleri dile özgü kurallara göre tireleyerek belgelerinizin okunabilirliğini önemli ölçüde artırabilirsiniz. Aspose.Words for .NET bu süreci basit ve verimli hale getirir. Öyleyse devam edin ve okuyucularınıza daha sorunsuz bir okuma deneyimi yaşatın!
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "German text.docx");
+## SSS'ler
 
-Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+### Belgelerde tireleme nedir?
+Tireleme, metin hizalamasını ve okunabilirliğini geliştirmek için satır sonlarında sözcükleri ayırma işlemidir.
 
-doc.Save(dataDir + "TreatmentByCesure.pdf");
-```
+### Farklı diller için tireleme sözlüklerini nereden edinebilirim?
+Genellikle dil enstitüleri veya açık kaynaklı projeler tarafından sağlanan tireleme sözlüklerini çevrimiçi olarak bulabilirsiniz.
 
-Bu kodu kendi projelerinizde kullanmaktan ve özel ihtiyaçlarınıza uyacak şekilde değiştirmekten çekinmeyin.
+### Aspose.Words for .NET'i lisans olmadan kullanabilir miyim?
+ Evet, ancak lisanssız sürümün sınırlamaları olacaktır. Bir almanız tavsiye edilir[geçici lisans](https://purchase.aspose.com/temporary-license) tüm özellikler için.
 
-### SSS'ler
+### Aspose.Words for .NET, .NET Core ile uyumlu mu?
+Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core'u destekler.
 
-#### S: Aspose.Words ile belirli bir dildeki bir kelimeyi nasıl heceleyebilirim?
-
- C: Aspose.Words ile belirli bir dildeki bir kelimeyi hecelemek için`Hyphenation` sınıf ve`Hyphenate()` yöntem. Bir örneğini oluşturun`Hyphenation` İstenilen dili belirten sınıfı seçin, ardından`Hyphenate()` Kelimeyi argüman olarak hecelemek için geçirme yöntemi. Bu size belirtilen dildeki kelimenin hecelerini verecektir.
-
-#### S: Aspose.Words'te heceleme dilini belirlemek için hangi dil kodlarını kullanmalıyım?
-
-C: Aspose.Words'te heceleme dilini belirlemek için uygun dil kodlarını kullanmalısınız. Örneğin, İngilizce için "en", Fransızca için "fr", İspanyolca için "es", Almanca için "de" vb. kullanabilirsiniz. Desteklenen dil kodlarının tam listesi için Aspose.Words belgelerine bakın.
-
-#### S: Aspose.Words'te heceleme tüm dillerde çalışıyor mu?
-
-C: Aspose.Words'te heceleme, dile özgü heceleme kurallarına bağlıdır. Aspose.Words çok çeşitli dilleri desteklese de, bazı diller desteklenmeyebilir veya bunlar için heceleme mevcut olmayabilir. Heceleme için hangi dillerin desteklendiğini öğrenmek için Aspose.Words belgelerine bakın.
+### Tek bir belgede birden fazla dili nasıl işleyebilirim?
+Örnekte gösterildiği gibi birden fazla tireleme sözlüğü kaydedebilirsiniz; Aspose.Words bunları buna göre yönetecektir.

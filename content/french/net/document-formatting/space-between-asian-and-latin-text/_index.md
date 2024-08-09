@@ -80,7 +80,7 @@ Avec cette ligne de code, nous sauvegardons notre document dans le répertoire s
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre comment ajuster automatiquement l'espace entre le texte asiatique et latin dans un document Word à l'aide d'Aspose.Words pour .NET. C'est comme avoir une baguette magique pour un formatage parfait. Maintenant, allez-y et impressionnez vos amis et collègues avec vos nouvelles compétences. N'oubliez pas que les bons outils font toute la différence et Aspose.Words for .NET est certainement un outil qui vaut la peine d'avoir dans votre arsenal.
+Et voilà ! Vous venez d'apprendre comment ajuster automatiquement l'espace entre le texte asiatique et latin dans un document Word à l'aide d'Aspose.Words pour .NET. C'est comme avoir une baguette magique pour un formatage parfait. Maintenant, allez-y et impressionnez vos amis et collègues avec vos nouvelles compétences. N'oubliez pas que les bons outils font toute la différence et Aspose.Words for .NET est certainement un outil qui vaut la peine d'avoir dans votre arsenal.
 
 ## FAQ
 

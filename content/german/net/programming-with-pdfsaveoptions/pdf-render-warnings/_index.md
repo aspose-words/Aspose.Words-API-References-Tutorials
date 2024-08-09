@@ -16,7 +16,7 @@ Wenn Sie mit Aspose.Words für .NET arbeiten, ist die Verwaltung von PDF-Renderw
 Bevor Sie mit dem Lernprogramm beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 - Grundkenntnisse in C#: Vertrautheit mit der Programmiersprache C#.
--  Aspose.Words für .NET: Download und Installation von der[Download-Link](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Download und Installation von der[Downloadlink](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Ein Setup wie Visual Studio zum Schreiben und Ausführen Ihres Codes.
 -  Beispieldokument: Halten Sie ein Beispieldokument bereit (z. B.`WMF with image.docx`) bereit zum Testen.
 
@@ -96,7 +96,7 @@ public class HandleDocumentWarnings : IWarningCallback
 
 ## Schritt 6: Warn-Callback zuweisen und Dokument speichern
 
-Weisen Sie dem Dokument den Warn-Callback zu und speichern Sie es als PDF. Eventuelle Warnungen, die während des Speichervorgangs auftreten, werden vom Callback erfasst und verarbeitet.
+Weisen Sie dem Dokument den Warn-Callback zu und speichern Sie es als PDF. Alle Warnungen, die während des Speichervorgangs auftreten, werden vom Callback gesammelt und verarbeitet.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
@@ -126,7 +126,7 @@ Indem Sie diese Schritte befolgen, können Sie PDF-Rendering-Warnungen in Aspose
 
 ### F1: Kann ich mit dieser Methode andere Arten von Warnungen behandeln?
 
- Ja das`IWarningCallback` Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur solche, die mit der PDF-Wiedergabe zusammenhängen.
+ Ja, die`IWarningCallback` Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur solche, die mit der PDF-Wiedergabe zusammenhängen.
 
 ### F2: Wo kann ich eine kostenlose Testversion von Aspose.Words für .NET herunterladen?
 
@@ -138,7 +138,7 @@ MetafileRenderingOptions sind Einstellungen, die bestimmen, wie Metadateien (wie
 
 ### F4: Wo finde ich Unterstützung für Aspose.Words?
 
- Besuche den[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) zur Hilfe.
+ Besuchen Sie die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.
 
 ### F5: Ist es möglich, eine temporäre Lizenz für Aspose.Words zu erhalten?
 

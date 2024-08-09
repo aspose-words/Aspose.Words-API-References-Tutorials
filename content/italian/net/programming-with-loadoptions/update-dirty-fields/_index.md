@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/programming-with-loadoptions/update-dirty-fields/
 ---
 
-## introduzione
+## Introduzione
 
 Ti sei mai trovato in una situazione in cui hai un documento Word pieno di campi che necessitano di aggiornamento, ma farlo manualmente ti sembra di correre una maratona a piedi nudi? Bene, sei fortunato! Con Aspose.Words per .NET, puoi aggiornare automaticamente questi campi, risparmiando un sacco di tempo e fatica. Questa guida ti guiderà attraverso il processo passo dopo passo, assicurandoti di capirlo in pochissimo tempo.
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Conclusione
 
-il gioco è fatto! Hai appena automatizzato il processo di aggiornamento dei campi sporchi in un documento di Word utilizzando Aspose.Words per .NET. Niente più aggiornamenti manuali, niente più mal di testa. Con questi semplici passaggi puoi risparmiare tempo e garantire l'accuratezza dei tuoi documenti. Pronto a provarlo?
+Ed ecco qua! Hai appena automatizzato il processo di aggiornamento dei campi sporchi in un documento di Word utilizzando Aspose.Words per .NET. Niente più aggiornamenti manuali, niente più mal di testa. Con questi semplici passaggi puoi risparmiare tempo e garantire l'accuratezza dei tuoi documenti. Pronto a provarlo?
 
 ## Domande frequenti
 

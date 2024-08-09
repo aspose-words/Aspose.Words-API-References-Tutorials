@@ -64,7 +64,7 @@ string newText = "example";
 
 ### Byt ut texten
 
-Låt oss nu ersätta den gamla texten med den nya. Det är här magin händer.
+Låt oss nu ersätta den gamla texten med den nya. Här händer magin.
 
 ```csharp
 doc.Range.Replace(oldText, newText, new FindReplaceOptions());
@@ -95,7 +95,7 @@ Slutligen, låt oss spara vårt modifierade dokument. Du kan spara den som .docx
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-Och voila! Du har precis automatiserat en del av ditt dokumentarbetsflöde. Hur coolt är inte det?
+Och voila! Du har precis automatiserat en del av ditt dokumentarbetsflöde. Hur coolt är det?
 
 ## Slutsats
 

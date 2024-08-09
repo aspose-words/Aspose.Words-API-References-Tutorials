@@ -131,7 +131,7 @@ def add_table_to_document():
 
 Dans ce guide complet, nous avons exploré comment créer des documents MS Word à l'aide de Python à l'aide de la bibliothèque Aspose.Words. Nous avons abordé divers aspects, notamment la configuration de l'environnement, la création d'un document vierge, l'ajout de contenu, l'application du formatage et l'incorporation de tableaux. En suivant les exemples et en tirant parti des capacités de la bibliothèque Aspose.Words, vous pouvez désormais générer efficacement des documents Word dynamiques et personnalisés dans vos applications Python.
 
-Fort de ces connaissances, vous disposez désormais des outils nécessaires pour automatiser la génération de documents Word à l’aide de Python, économisant ainsi un temps et des efforts précieux. Bon codage et création de documents !
+Fort de ces connaissances, vous disposez désormais des outils nécessaires pour automatiser la génération de documents Word à l'aide de Python, économisant ainsi un temps et des efforts précieux dans le processus. Bon codage et création de documents !
 
 ## Foire aux questions (FAQ) 
 

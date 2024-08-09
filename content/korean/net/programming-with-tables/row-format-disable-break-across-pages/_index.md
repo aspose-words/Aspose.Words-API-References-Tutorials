@@ -71,7 +71,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 
 ## FAQ
 
-### 모든 행 대신 특정 행에 대해 페이지 전체에서 행 나누기를 비활성화할 수 있습니까?  
+### 모든 행 대신 특정 행에 대해 페이지 전체에서 행 나누기를 비활성화할 수 있나요?  
  예, 원하는 행에 액세스하고 해당 행을 설정하여 특정 행에 대한 행 나누기를 비활성화할 수 있습니다.`AllowBreakAcrossPages`재산`false`.
 
 ### 이 방법은 병합된 셀이 있는 테이블에 작동합니까?  

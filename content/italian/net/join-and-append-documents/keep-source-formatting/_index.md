@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/keep-source-formatting/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial esploreremo come unire e aggiungere documenti Word utilizzando Aspose.Words per .NET. Questa potente libreria offre agli sviluppatori funzionalità estese per la manipolazione dei documenti Word a livello di codice. Ci concentreremo sul metodo per mantenere intatta la formattazione originale durante l'unione dei documenti, garantendo che gli stili e i layout originali vengano preservati senza problemi.
 
@@ -94,4 +94,4 @@ Sì, Aspose.Words supporta .NET Core, consentendoti di utilizzarlo su diverse pi
 Aspose.Words fornisce API efficienti per lavorare con documenti di grandi dimensioni, comprese funzionalità per l'impaginazione e la gestione della memoria.
 
 ### Dove posso trovare ulteriori risorse e supporto per Aspose.Words?
- Visitare il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per riferimenti API dettagliati, esempi e guide.
+ Visita il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per riferimenti API dettagliati, esempi e guide.

@@ -110,7 +110,7 @@ Son olarak değişiklikleri görmek için belgemizi kaydedelim.
 doc.Save("ManipulatedDocument.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde imleç konumunu değiştirmenin basit ama güçlü bir yolu.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde imleç konumunu değiştirmenin basit ama güçlü bir yolu.
 
 ## Çözüm
 

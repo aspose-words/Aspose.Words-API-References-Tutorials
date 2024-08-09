@@ -15,7 +15,7 @@ Bạn đã bao giờ gặp khó khăn trong việc tạo một tài liệu tinh 
 
 Trước khi bắt đầu cuộc hành trình này, hãy đảm bảo bạn có những điều sau:
 
-1.  Aspose.Words for .NET: Tải xuống thư viện từ trang web chính thức[Liên kết tải xuống](https://releases.aspose.com/words/net/) . Bạn có thể khám phá bản dùng thử miễn phí[Link dùng thử miễn phí](https://releases.aspose.com/) hoặc mua giấy phép[đường link mua hàng](https://purchase.aspose.com/buy) dựa trên nhu cầu của bạn.
+1.  Aspose.Words for .NET: Tải xuống thư viện từ trang web chính thức[Liên kết tải xuống](https://releases.aspose.com/words/net/) . Bạn có thể khám phá bản dùng thử miễn phí[Link dùng thử miễn phí](https://releases.aspose.com/) hoặc mua giấy phép[Mua liên kết](https://purchase.aspose.com/buy) dựa trên nhu cầu của bạn.
 2. Môi trường phát triển AC#: Visual Studio hoặc bất kỳ môi trường nào hỗ trợ phát triển .NET sẽ hoạt động hoàn hảo.
 3. Tài liệu mẫu: Xác định vị trí tài liệu Word mà bạn muốn thử nghiệm.
 
@@ -37,7 +37,7 @@ Bây giờ, hãy đi sâu vào các bước thực tế liên quan đến việc
 
  Xác định một biến chuỗi`dataDir` để lưu trữ đường dẫn đến thư mục tài liệu của bạn. Thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng vị trí thực tế.
 
- Tạo hai`Document` các đối tượng sử dụng`Aspose.Words.Document`người xây dựng. Cái đầu tiên (`srcDoc`) sẽ giữ tài liệu nguồn chứa nội dung được thêm vào. Thư hai (`dstDoc`) đại diện cho tài liệu đích nơi chúng tôi sẽ tích hợp nội dung nguồn với việc đánh số trang được khởi động lại.
+ Tạo hai`Document` các đối tượng sử dụng`Aspose.Words.Document`người xây dựng. Cái đầu tiên (`srcDoc`) sẽ giữ tài liệu nguồn chứa nội dung được thêm vào. Thứ hai (`dstDoc`) đại diện cho tài liệu đích nơi chúng tôi sẽ tích hợp nội dung nguồn với việc đánh số trang được khởi động lại.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Thay thế bằng thư mục thực tế của bạn
@@ -105,7 +105,7 @@ Số trang hiện có trong tài liệu nguồn vẫn không bị ảnh hưởng
 
 ### Tôi có thể áp dụng các định dạng đánh số khác nhau (ví dụ: chữ số La Mã) không?
 
- Tuyệt đối! Aspose.Words cung cấp khả năng kiểm soát rộng rãi đối với các định dạng đánh số trang. Khám phá cái`NumberStyle` tài sản của`HeaderFooter` đối tượng để chọn từ nhiều kiểu đánh số khác nhau như chữ số La Mã, chữ cái hoặc định dạng tùy chỉnh.
+ Tuyệt đối! Aspose.Words cung cấp khả năng kiểm soát rộng rãi đối với các định dạng đánh số trang. Khám phá`NumberStyle` tài sản của`HeaderFooter` đối tượng để chọn từ nhiều kiểu đánh số khác nhau như chữ số La Mã, chữ cái hoặc định dạng tùy chỉnh.
 
 ### Tôi có thể tìm thêm nguồn lực hoặc hỗ trợ ở đâu?
 

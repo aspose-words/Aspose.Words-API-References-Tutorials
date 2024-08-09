@@ -14,7 +14,7 @@ L'impression de documents avec une mise en page précise est cruciale lorsqu'il 
 
 ## Configuration de l'environnement de développement
 
-Avant de commencer, assurons-nous que vous disposez d’un environnement de développement approprié. Tu auras besoin:
+Avant de commencer, assurons-nous que vous disposez d’un environnement de développement approprié. Vous aurez besoin de :
 
 - Kit de développement Java (JDK)
 - Environnement de développement intégré (IDE) comme Eclipse ou IntelliJ IDEA
@@ -26,7 +26,7 @@ Commencez par créer un nouveau projet Java dans l'EDI de votre choix. Donnez-lu
 
 ## Ajout d'Aspose.Words pour Java à votre projet
 
-Pour utiliser Aspose.Words pour Java, vous devez ajouter la bibliothèque à votre projet. Suivez ces étapes:
+Pour utiliser Aspose.Words pour Java, vous devez ajouter la bibliothèque à votre projet. Suivez ces étapes :
 
 1.  Téléchargez la bibliothèque Aspose.Words pour Java à partir de[ici](https://releases.aspose.com/words/java/).
 

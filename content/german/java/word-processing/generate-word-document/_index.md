@@ -57,7 +57,7 @@ builder.writeln("Hello, world!");
 
 ### 5.2 Bilder einfügen
 
- Um Bilder zum Word-Dokument hinzuzufügen, verwenden Sie die`DocumentBuilder` Klasse`insertImage()` Methode.
+ Um Bilder zum Word-Dokument hinzuzufügen, verwenden Sie die`DocumentBuilder` Klasse`insertImage()` Verfahren.
 
 ```java
 // Einfügen eines Bildes in das Dokument

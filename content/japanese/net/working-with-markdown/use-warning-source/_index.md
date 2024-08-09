@@ -9,7 +9,7 @@ url: /ja/net/working-with-markdown/use-warning-source/
 ---
 ## 導入
 
-プログラムでドキュメントを管理したりフォーマットしたりする必要があったことはありますか? もしそうなら、おそらくさまざまなドキュメントタイプを扱い、すべてが適切に表示されるようにする複雑さに直面したことがあるでしょう。Aspose.Words for .NET は、ドキュメント処理を簡素化する強力なライブラリです。今日は、特定の機能について詳しく説明します。`WarningSource`Markdown を操作するときに警告をキャッチして処理するクラスです。Aspose.Words for .NET をマスターするための旅に出ましょう。
+プログラムでドキュメントを管理したりフォーマットしたりする必要があったことはありますか? もしそうなら、おそらくさまざまなドキュメントタイプを扱い、すべてが適切に表示されるようにする複雑さに直面したことがあるでしょう。Aspose.Words for .NET は、ドキュメント処理を簡素化する強力なライブラリです。今日は、特定の機能について詳しく説明します。`WarningSource` Markdown を操作するときに警告をキャッチして処理するクラスです。Aspose.Words for .NET をマスターするための旅に出ましょう。
 
 ## 前提条件
 
@@ -39,7 +39,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-交換する`"YOUR DOCUMENT DIRECTORY"` DOCX ファイルが配置されている実際のパスを入力します。
+交換する`"YOUR DOCUMENT DIRECTORY"`DOCX ファイルが配置されている実際のパスを入力します。
 
 ## ステップ2: ドキュメントの読み込み
 
@@ -60,7 +60,7 @@ WarningInfoCollection warnings = new WarningInfoCollection();
 doc.WarningCallback = warnings;
 ```
 
-私たちは`WarningInfoCollection`オブジェクトを作成し、それをドキュメントの`WarningCallback`これにより、処理中に表示される警告が収集されます。
+私たちは`WarningInfoCollection`オブジェクトを作成し、それをドキュメントの`WarningCallback`処理中に表示される警告をすべて収集します。
 
 ## ステップ4: 警告の処理
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
 
 ## 結論
 
-これで完了です。`WarningSource`Aspose.Words for .NET のクラスを使用して、Markdown 警告を処理します。このチュートリアルでは、プロジェクトの設定、ドキュメントの読み込み、警告の収集と処理、最終ドキュメントの保存について説明しました。この知識があれば、アプリケーションでドキュメント処理をより適切に管理できるようになります。Aspose.Words for .NET の幅広い機能を実験して探索し続けてください。
+これで完了です。`WarningSource` Aspose.Words for .NET のクラスを使用して、Markdown 警告を処理します。このチュートリアルでは、プロジェクトの設定、ドキュメントの読み込み、警告の収集と処理、最終ドキュメントの保存について説明しました。この知識があれば、アプリケーションでドキュメント処理をより適切に管理できるようになります。Aspose.Words for .NET の幅広い機能を実験して探索し続けてください。
 
 ## よくある質問
 

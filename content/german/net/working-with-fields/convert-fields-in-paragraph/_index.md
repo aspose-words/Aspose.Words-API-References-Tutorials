@@ -9,7 +9,7 @@ url: /de/net/working-with-fields/convert-fields-in-paragraph/
 ---
 ## Einführung
 
-Haben Sie sich schon einmal in einem Netz von Feldern in Ihren Word-Dokumenten verheddert, insbesondere wenn Sie nur versucht haben, diese hinterhältigen IF-Felder in einfachen Text umzuwandeln? Nun, Sie sind nicht allein. Heute werden wir uns damit befassen, wie Sie dies mit Aspose.Words für .NET meistern können. Stellen Sie sich vor, Sie wären ein Zauberer mit einem Zauberstab, der Felder mit einer Bewegung Ihres Codes transformiert. Klingt faszinierend? Lassen Sie uns diese magische Reise beginnen!
+Haben Sie sich schon einmal in einem Netz aus Feldern in Ihren Word-Dokumenten verheddert, insbesondere wenn Sie nur versucht haben, diese hinterhältigen IF-Felder in einfachen Text umzuwandeln? Nun, Sie sind nicht allein. Heute werden wir uns damit befassen, wie Sie dies mit Aspose.Words für .NET meistern können. Stellen Sie sich vor, Sie wären ein Zauberer mit einem Zauberstab, der Felder mit einer Bewegung Ihres Codes transformiert. Klingt faszinierend? Lassen Sie uns diese magische Reise beginnen!
 
 ## Voraussetzungen
 

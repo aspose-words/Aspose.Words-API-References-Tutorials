@@ -61,7 +61,7 @@ doc.save("output.pdf", SaveFormat.PDF);
 
 ## 4단계: 다른 형식으로 변환
 
-PDF 외에도 Aspose.Words for Java를 사용하면 문서를 다양한 다른 형식으로 변환할 수 있습니다. 여기 몇 가지 예가 있어요.
+PDF 외에도 Aspose.Words for Java를 사용하면 문서를 다양한 다른 형식으로 변환할 수 있습니다. 다음은 몇 가지 예입니다.
 
 ### RTF로 변환 중
 

@@ -2,79 +2,91 @@
 title: Définir les dossiers de polices avec priorité
 linktitle: Définir les dossiers de polices avec priorité
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour définir la priorité des dossiers de polices lors du rendu d'un document à l'aide d'Aspose.Words pour .NET.
+description: Découvrez comment définir la priorité des dossiers de polices dans les documents Word à l'aide d'Aspose.Words pour .NET. Notre guide garantit que vos documents s'affichent parfaitement à chaque fois.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous guiderons pas à pas à travers le processus permettant de définir les dossiers de polices en priorité lors du rendu d'un document à l'aide d'Aspose.Words for .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment spécifier plusieurs dossiers de polices avec une priorité de recherche personnalisée lors du rendu de vos documents à l'aide d'Aspose.Words for .NET.
+Dans le monde de la manipulation de documents, la définition de dossiers de polices personnalisés peut faire toute la différence en garantissant un rendu parfait de vos documents, quel que soit l'endroit où ils sont visualisés. Aujourd'hui, nous allons découvrir comment définir les dossiers de polices en priorité dans vos documents Word à l'aide d'Aspose.Words pour .NET. Ce guide complet vous guidera à travers chaque étape, rendant le processus aussi fluide que possible.
 
-## Étape 1 : Définir le répertoire des documents
-Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. Il s'agit de l'emplacement où vous souhaitez enregistrer votre document rendu modifié. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin approprié.
+## Conditions préalables
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Avant de commencer, assurons-nous que nous avons tout ce dont nous avons besoin. Voici une liste de contrôle rapide :
 
-## Étape 2 : Définir les dossiers de polices en priorité
- Ensuite, vous pouvez définir les dossiers de polices en priorité à l'aide du`FontSettings` la classe et le`SetFontsSources()`méthode. Vous pouvez spécifier plusieurs sources de polices à l'aide d'instances de`SystemFontSource`et`FolderFontSource`. Dans cet exemple, nous avons défini deux sources de polices : la source de polices système par défaut et un dossier de polices personnalisé avec une priorité de 1.
+-  Aspose.Words pour .NET : vous devez installer cette bibliothèque. Si vous ne l'avez pas encore, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : assurez-vous de disposer d'un environnement de développement .NET fonctionnel, comme Visual Studio.
+-  Répertoire de documents : assurez-vous de disposer d'un répertoire pour vos documents. Pour nos exemples, nous utiliserons`"YOUR DOCUMENT DIRECTORY"` comme espace réservé pour ce chemin.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## Importer des espaces de noms
 
-## Étape 3 : Chargez le document à rendre
- Vous pouvez maintenant charger le document à restituer à l'aide du`Document` classe. Assurez-vous de spécifier le chemin d'accès correct au document.
+Tout d’abord, nous devons importer les espaces de noms nécessaires. Ces espaces de noms sont essentiels pour accéder aux classes et méthodes fournies par Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Étape 4 : Enregistrez le document rendu
- Enfin, vous pouvez enregistrer le document rendu dans un fichier à l'aide de l'option`Save()` méthode du`Document` classe. Assurez-vous de spécifier le chemin d'accès et le nom de fichier corrects.
+Maintenant, décomposons chaque étape pour définir les dossiers de polices en priorité.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## Étape 1 : Configurez vos sources de polices
 
-### Exemple de code source pour définir les dossiers de polices avec priorité à l'aide d'Aspose.Words pour .NET 
+Pour commencer, vous souhaiterez définir les sources de polices. C'est ici que vous indiquez à Aspose.Words où rechercher les polices. Vous pouvez spécifier plusieurs dossiers de polices et même définir leur priorité.
+
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+Dans cet exemple, nous définissons deux sources de polices :
+- SystemFontSource : il s'agit de la source de polices par défaut qui inclut toutes les polices installées sur votre système.
+-  FolderFontSource : il s'agit d'un dossier de polices personnalisées situé dans`C:\\MyFonts\\` . Le`true` Le paramètre spécifie que ce dossier doit être analysé de manière récursive, et`1` fixe sa priorité.
+
+## Étape 2 : Chargez votre document
+
+Ensuite, chargez le document avec lequel vous souhaitez travailler. Assurez-vous que le document se trouve dans le répertoire spécifié.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Cette ligne de code charge un document nommé`Rendering.docx` à partir de votre répertoire de documents.
+
+## Étape 3 : Enregistrez votre document avec les nouveaux paramètres de police
+
+Enfin, enregistrez votre document. Lorsque vous enregistrez le document, Aspose.Words utilisera les paramètres de police que vous avez spécifiés.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+ Cela enregistre le document au format PDF dans votre répertoire de documents sous le nom`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## Conclusion
-Dans ce didacticiel, nous avons appris à définir la priorité des dossiers de polices lors du rendu d'un document à l'aide d'Aspose.Words pour .NET. En suivant ce guide étape par étape, vous pouvez facilement spécifier plusieurs dossiers de polices avec une priorité de recherche personnalisée lors du rendu de vos documents. Aspose.Words propose une API puissante et flexible pour le traitement de mots avec des polices dans vos documents. Grâce à ces connaissances, vous pouvez contrôler et personnaliser les sources de polices utilisées lors du rendu de vos documents selon vos besoins spécifiques.
 
-### FAQ
+Et voilà ! Vous avez configuré avec succès les dossiers de polices avec priorité à l'aide d'Aspose.Words pour .NET. En spécifiant des dossiers et des priorités de polices personnalisés, vous pouvez garantir que vos documents s'affichent de manière cohérente, quel que soit l'endroit où ils sont affichés. Ceci est particulièrement utile dans les environnements dans lesquels des polices spécifiques ne sont pas installées par défaut.
 
-#### Q : Comment puis-je définir la priorité des dossiers de polices dans Aspose.Words ?
+## FAQ
 
- R : Pour définir les dossiers de polices avec priorité dans Aspose.Words, vous pouvez utiliser le`SetFontsFoldersWithPriority` méthode du`Fonts` classe en spécifiant les emplacements des dossiers de polices et leur ordre de priorité.
+### Pourquoi devrais-je définir des dossiers de polices personnalisés ?
+La définition de dossiers de polices personnalisés garantit que vos documents s'affichent correctement, même s'ils utilisent des polices non installées sur le système sur lequel ils sont affichés.
 
-#### : Que se passe-t-il si une police est présente dans plusieurs dossiers avec des priorités différentes ?
+### Puis-je définir plusieurs dossiers de polices personnalisées ?
+Oui, vous pouvez spécifier plusieurs dossiers de polices. Aspose.Words vous permet de définir la priorité de chaque dossier, en garantissant que les polices les plus importantes soient trouvées en premier.
 
-R : Si une police est présente dans plusieurs dossiers avec une priorité différente, Aspose.Words utilisera la version du dossier ayant la priorité la plus élevée lors du traitement des documents.
+### Que se passe-t-il si une police est absente de toutes les sources spécifiées ?
+Si une police est manquante dans toutes les sources spécifiées, Aspose.Words utilisera une police de secours pour garantir que le document est toujours lisible.
 
-#### Q : Puis-je spécifier plusieurs dossiers de polices avec la même priorité dans Aspose.Words ?
+### Puis-je modifier la priorité des polices système ?
+Les polices système sont toujours incluses par défaut, mais vous pouvez définir leur priorité par rapport à vos dossiers de polices personnalisées.
 
-R : Oui, vous pouvez spécifier plusieurs dossiers de polices avec la même priorité dans Aspose.Words. Aspose.Words les considérera tous avec la même priorité lors de la recherche de polices dans vos documents.
-
-#### Q : Comment puis-je vérifier les dossiers de polices définis en priorité dans Aspose.Words ?
-
- R : Pour vérifier les dossiers de polices définis en priorité dans Aspose.Words, vous pouvez utiliser le`GetFolders` méthode du`Fonts` class pour obtenir la liste des dossiers de polices configurés, y compris leur ordre de priorité.
-
-#### Q : À quoi sert de définir des dossiers de polices avec priorité dans Aspose.Words ?
-
-: Définir les dossiers de polices avec priorité dans Aspose.Words vous permet de contrôler l'ordre de recherche des polices dans vos documents Word. Cela vous permet de garantir que les polices souhaitées sont utilisées et d'éviter les problèmes de substitution de polices indésirables.
+### Est-il possible d'utiliser des chemins réseau pour les dossiers de polices personnalisées ?
+Oui, vous pouvez spécifier des chemins réseau en tant que dossiers de polices personnalisés, ce qui vous permet de centraliser les ressources de polices sur un emplacement réseau.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/join-new-page/
 ---
-## introduzione
+## Introduzione
 
 Quando si lavora con documenti di grandi dimensioni o si uniscono più documenti in uno solo, è fondamentale mantenere la formattazione e garantire la chiarezza. Aspose.Words per .NET fornisce potenti strumenti per manipolare i documenti Word a livello di codice, consentendo agli sviluppatori di eseguire attività complesse in modo efficiente.
 

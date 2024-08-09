@@ -82,7 +82,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 
 ## Conclusion
 
-Et voila! Vous avez réussi à nettoyer votre document Word en supprimant les styles et les listes inutilisés à l'aide d'Aspose.Words pour .NET. C'est comme désencombrer votre bureau numérique, rendant vos documents plus faciles à gérer et plus efficaces. Donnez-vous une tape dans le dos pour un travail bien fait !
+Et voilà ! Vous avez réussi à nettoyer votre document Word en supprimant les styles et les listes inutilisés à l'aide d'Aspose.Words pour .NET. C'est comme désencombrer votre bureau numérique, rendant vos documents plus faciles à gérer et plus efficaces. Donnez-vous une tape dans le dos pour un travail bien fait !
 
 ## FAQ
 

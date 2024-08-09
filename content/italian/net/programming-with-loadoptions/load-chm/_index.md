@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/load-chm/
 ---
-## introduzione
+## Introduzione
 
 Quando si tratta di integrare file CHM in un documento Word, Aspose.Words per .NET offre una soluzione perfetta. Che tu stia creando documentazione tecnica o consolidando varie risorse in un unico documento, questo tutorial ti guiderà attraverso ogni passaggio in modo chiaro e coinvolgente.
 

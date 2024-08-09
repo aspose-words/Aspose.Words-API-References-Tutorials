@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- व्यवस्थित करके`AddSpaceBetweenFarEastAndAlpha`और`AddSpaceBetweenFarEastAndDigit` को`true`, हम Aspose.Words को एशियाई अक्षरों और लैटिन अक्षरों या अंकों के बीच अंतर को स्वचालित रूप से समायोजित करने के लिए कहते हैं।
+ सेटिंग करके`AddSpaceBetweenFarEastAndAlpha`और`AddSpaceBetweenFarEastAndDigit` को`true`, हम Aspose.Words को एशियाई अक्षरों और लैटिन अक्षरों या अंकों के बीच अंतर को स्वचालित रूप से समायोजित करने के लिए कहते हैं।
 
 ## चरण 3: दस्तावेज़ में पाठ जोड़ना
 

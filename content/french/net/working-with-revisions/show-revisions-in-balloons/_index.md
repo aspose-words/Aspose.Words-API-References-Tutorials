@@ -2,94 +2,90 @@
 title: Afficher les révisions dans les bulles
 linktitle: Afficher les révisions dans les bulles
 second_title: API de traitement de documents Aspose.Words
-description: Affichez les révisions dans des bulles avec Aspose.Words pour .NET.
+description: Découvrez comment afficher les révisions dans des bulles à l’aide d’Aspose.Words for .NET. Ce guide détaillé vous guide à travers chaque étape, garantissant que les modifications apportées à votre document sont claires et organisées.
 type: docs
 weight: 10
 url: /fr/net/working-with-revisions/show-revisions-in-balloons/
 ---
+## Introduction
 
-Dans ce guide étape par étape, nous allons vous montrer comment afficher les révisions dans des bulles dans un document Word à l'aide d'Aspose.Words pour .NET. Nous vous fournirons le code source complet et vous montrerons comment formater la sortie markdown.
+Le suivi des modifications dans un document Word est crucial pour la collaboration et l'édition. Aspose.Words for .NET propose des outils robustes pour gérer ces révisions, garantissant clarté et facilité de révision. Ce guide vous aidera à afficher les révisions dans des bulles, ce qui permettra de voir plus facilement quelles modifications ont été apportées et par qui.
 
-## Étape 1 : Chargement du document
+## Conditions préalables
 
-La première étape consiste à télécharger le document contenant les révisions.
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+-  Bibliothèque Aspose.Words pour .NET. Vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+-  Une licence Aspose valide. Si vous n'en avez pas, vous pouvez en obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/).
+- Visual Studio ou tout autre IDE prenant en charge le développement .NET.
+- Compréhension de base du framework C# et .NET.
 
-## Étape 2 : Configurer les options d'affichage des avis
+## Importer des espaces de noms
 
-Nous allons configurer les options d'affichage pour rendre les révisions visibles dans les bulles.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-```
-
-## Étape 3 : Enregistrez le document au format PDF
-
-Enfin, nous enregistrerons le document au format PDF avec les révisions affichées dans les bulles.
+Tout d’abord, importons les espaces de noms nécessaires dans votre projet C#. Ces espaces de noms sont essentiels pour accéder aux fonctionnalités Aspose.Words.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
+using Aspose.Words.RevisionOptions;
 ```
 
-## Formats de sortie Markdown
+Décomposons le processus en étapes simples et faciles à suivre.
 
-La sortie peut être formatée en markdown pour améliorer la lisibilité. Par exemple :
+## Étape 1 : Chargez votre document
 
-```markdown
-- Revisions are Showed in bubbles with revision bars on the right side.
-```
-
-### Exemple de code source pour Afficher les révisions dans les bulles à l'aide d'Aspose.Words pour .NET
-
-Voici le code source complet pour afficher les révisions dans des bulles dans un document à l'aide d'Aspose.Words pour .NET :
+Tout d’abord, nous devons charger le document contenant les révisions. Assurez-vous que le chemin de votre document est correct.
 
 ```csharp
 // Le chemin d'accès au répertoire des documents.
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(MyDir + "Revisions.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+## Étape 2 : configurer les options de révision
+
+Ensuite, nous allons configurer les options de révision pour afficher les révisions d'insertion en ligne et supprimer et formater les révisions dans des bulles. Cela facilite la différenciation entre les différents types de révisions.
+
+```csharp
 // Les rendus insèrent les révisions en ligne, suppriment et formatent les révisions dans des bulles.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+```
+
+## Étape 3 : Définir la position des barres de révision
+
+Pour rendre le document encore plus lisible, nous pouvons définir la position des barres de révision. Dans cet exemple, nous les placerons sur le côté droit de la page.
+
+```csharp
 // Affiche les barres de révision sur le côté droit d'une page.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+```
 
+## Étape 4 : Enregistrez le document
+
+Enfin, nous enregistrerons le document au format PDF. Cela nous permettra de voir les révisions dans le format souhaité.
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à afficher les révisions dans des bulles dans un document Word à l'aide d'Aspose.Words pour .NET. En utilisant les options d'affichage appropriées, nous avons pu rendre les révisions visibles dans des bulles avec des barres de révision sur le côté droit. Aspose.Words for .NET offre de nombreuses fonctionnalités puissantes pour manipuler les documents Word, notamment la gestion des révisions. Vous pouvez désormais utiliser ces connaissances pour afficher les révisions dans des bulles dans vos propres documents Word à l'aide d'Aspose.Words pour .NET.
+Et voilà ! En suivant ces étapes simples, vous pouvez facilement afficher les révisions dans des bulles à l'aide d'Aspose.Words for .NET. Cela facilite la révision et la collaboration sur les documents, garantissant que toutes les modifications sont clairement visibles et organisées. Bon codage !
 
+## FAQ
 
-### FAQ
+### Puis-je personnaliser la couleur des barres de révision ?
+Oui, Aspose.Words vous permet de personnaliser la couleur des barres de révision en fonction de vos préférences.
 
-#### Q : Comment télécharger un document dans Aspose.Words pour .NET ?
+### Est-il possible d'afficher uniquement des types spécifiques de révisions dans des bulles ?
+Absolument. Vous pouvez configurer Aspose.Words pour afficher uniquement certains types de révisions, tels que les suppressions ou les modifications de formatage, dans des bulles.
 
- R : Utilisez le`Document` classe d'Aspose.Words pour .NET pour charger un document à partir d'un fichier. Vous pouvez spécifier le chemin complet du document.
+### Comment puis-je obtenir une licence temporaire pour Aspose.Words ?
+ Vous pouvez obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Puis-je utiliser Aspose.Words pour .NET avec d’autres langages de programmation ?
+Aspose.Words est principalement conçu pour .NET, mais vous pouvez l'utiliser avec n'importe quel langage pris en charge par .NET, notamment VB.NET et C.++/CLI.
 
-#### Q : Comment afficher les révisions dans des bulles avec Aspose.Words pour .NET ?
-
- R : Utilisez le`ShowInBalloons` propriété du`RevisionOptions` objet pour configurer l’affichage des révisions dans les bulles. Vous pouvez définir cette propriété sur`ShowInBalloons.FormatAndDelete` pour afficher les révisions dans des bulles avec les révisions de suppression et de formatage.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-```
-
-#### Q : Comment enregistrer un document au format PDF avec Aspose.Words pour .NET ?
-
- R : Utilisez le`Save` méthode du`Document` objet pour enregistrer le document au format PDF. Vous devez spécifier le chemin de destination complet avec l'extension ".pdf".
-
-```csharp
-doc.Save("path/to/destination/document.pdf");
-```
+### Aspose.Words prend-il en charge d’autres formats de documents que Word ?
+Oui, Aspose.Words prend en charge divers formats de documents, notamment PDF, HTML, EPUB, etc.

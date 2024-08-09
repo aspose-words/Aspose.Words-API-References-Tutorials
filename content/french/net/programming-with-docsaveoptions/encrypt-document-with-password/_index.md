@@ -9,12 +9,12 @@ url: /fr/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
 ## Introduction
 
-Avez-vous déjà eu besoin de sécuriser un document avec un mot de passe ? Tu n'es pas seul. Avec l’essor de la documentation numérique, la protection des informations sensibles est plus importante que jamais. Aspose.Words for .NET offre un moyen transparent de crypter vos documents avec des mots de passe. Imaginez que cela met un cadenas sur votre journal. Seuls ceux qui possèdent la clé (ou le mot de passe, dans ce cas) peuvent jeter un coup d’œil à l’intérieur. Voyons comment y parvenir, étape par étape.
+Avez-vous déjà eu besoin de sécuriser un document avec un mot de passe ? Vous n'êtes pas seul. Avec l’essor de la documentation numérique, la protection des informations sensibles est plus importante que jamais. Aspose.Words for .NET offre un moyen transparent de crypter vos documents avec des mots de passe. Imaginez que cela met un cadenas sur votre journal. Seuls ceux qui possèdent la clé (ou le mot de passe, dans ce cas) peuvent jeter un coup d’œil à l’intérieur. Voyons comment y parvenir, étape par étape.
 
 ## Conditions préalables
 
 Avant de nous salir les mains avec du code, vous aurez besoin de quelques éléments :
-1.  Aspose.Words pour .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout autre IDE C# de votre choix.
 3. .NET Framework : assurez-vous qu'il est installé.
 4.  Licence : Vous pouvez commencer avec un[essai gratuit](https://releases.aspose.com/) ou obtenez un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour toutes les fonctionnalités.
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 - Document doc = new Document() : Cette ligne initialise un nouveau document.
 - DocumentBuilder builder = new DocumentBuilder(doc) : Le DocumentBuilder est un outil pratique pour ajouter du contenu à votre document.
 
-## Étape 2 : ajouter du contenu
+## Étape 2 : Ajouter du contenu
 
 Maintenant que nous avons notre feuille vierge, écrivons quelque chose dessus. Que diriez-vous d'un simple « Bonjour tout le monde ! » ? Classique.
 
@@ -86,12 +86,12 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à chiffrer un document avec un mot de passe à l'aide d'Aspose.Words pour .NET. C'est comme devenir un serrurier numérique, garantissant que vos documents sont sains et saufs. Que vous protégiez des rapports professionnels sensibles ou des notes personnelles, cette méthode offre une solution simple mais efficace.
+Et voilà ! Vous venez d'apprendre à chiffrer un document avec un mot de passe à l'aide d'Aspose.Words pour .NET. C'est comme devenir un serrurier numérique, garantissant que vos documents sont sains et saufs. Que vous protégiez des rapports professionnels sensibles ou des notes personnelles, cette méthode offre une solution simple mais efficace.
 
 ## FAQ
 
 ### Puis-je utiliser un autre type de cryptage ?
- Oui, Aspose.Words for .NET prend en charge diverses méthodes de cryptage. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Oui, Aspose.Words for .NET prend en charge diverses méthodes de cryptage. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Que faire si j'oublie le mot de passe de mon document ?
 Malheureusement, si vous oubliez le mot de passe, vous ne pourrez pas accéder au document. Assurez-vous de conserver vos mots de passe en sécurité !

@@ -61,7 +61,7 @@ using (Stream stream = File.OpenRead(dataDir + "Document.docx"))
     doc = new Document(stream);
 ```
 
- Tutaj otwieramy plik DOCX jako strumień i tworzymy plik`Document` z niego przedmiot. Umożliwia to wykonanie operacji na dokumencie, w tym konwersję formatu.
+ Tutaj otwieramy plik DOCX jako strumień i tworzymy plik`Document` z niego obiekt. Umożliwia to wykonanie operacji na dokumencie, w tym konwersję formatu.
 
 ## Krok 3: Konwertuj dokument do formatu RTF
 
@@ -94,7 +94,7 @@ Gratulacje! Pomyślnie nauczyłeś się konwertować plik DOCX do formatu RTF pr
 Tak, Aspose.Words obsługuje różne formaty, dzięki czemu możesz konwertować dokumenty z formatów takich jak DOC, DOCX i HTML na RTF.
 
 ### Czy potrzebuję licencji, aby korzystać z Aspose.Words?
- Chociaż możesz używać Aspose.Words w trybie próbnym, w przypadku długotrwałego użytkowania lub projektów komercyjnych powinieneś kupić licencję. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+ Chociaż możesz używać Aspose.Words w trybie próbnym, w przypadku długotrwałego użytkowania lub projektów komercyjnych powinieneś kupić licencję. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ### Co powinienem zrobić, jeśli wynik konwersji nie jest zgodny z oczekiwaniami?
  Sprawdź dokument wejściowy pod kątem problemów ze zgodnością lub zapoznaj się z[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) w celu uzyskania wskazówek dotyczących rozwiązywania problemów.
@@ -103,4 +103,4 @@ Tak, Aspose.Words obsługuje różne formaty, dzięki czemu możesz konwertować
 Absolutnie! Zintegruj ten kod ze swoimi aplikacjami lub skryptami, aby zautomatyzować proces konwersji w ramach przepływów pracy związanych z zarządzaniem dokumentami.
 
 ### Gdzie mogę znaleźć dalszą pomoc, jeśli napotkam problemy?
- Odwiedzić[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8) za pomoc i wsparcie społeczności związane z Aspose.Words.
+ Odwiedź[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8) za pomoc i wsparcie społeczności związane z Aspose.Words.

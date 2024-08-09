@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/nested-table/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám, že jste potřebovali programově vytvořit vnořenou tabulku v dokumentu aplikace Word? Ať už generujete zprávy, faktury nebo jakýkoli druh dokumentu, který vyžaduje podrobnou tabulkovou strukturu, Aspose.Words for .NET může být vaším nejlepším přítelem. V tomto tutoriálu se ponoříme do procesu vytváření vnořených tabulek v dokumentech aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše od předpokladů až po konečnou implementaci kódu. Takže, pojďme začít!
 
@@ -15,7 +15,7 @@ Stalo se vám, že jste potřebovali programově vytvořit vnořenou tabulku v d
 
 Než se pustíme do kódu, budete potřebovat několik věcí:
 
--  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné C# IDE.
 - Základní znalost C#: Pochopení syntaxe a konceptů C#.
 

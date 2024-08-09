@@ -95,7 +95,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 
 ## خاتمة
 
-وهناك لديك! لقد نجحت في تعداد الخصائص المضمنة والمخصصة لمستند Word باستخدام Aspose.Words لـ .NET. هذا مجرد غيض من فيض عندما يتعلق الأمر بما يمكنك فعله باستخدام Aspose.Words. سواء كنت تقوم بأتمتة إنشاء المستندات أو التعامل مع المستندات المعقدة، يوفر Aspose.Words مجموعة غنية من الميزات لتسهيل حياتك.
+وهنا لديك! لقد نجحت في تعداد الخصائص المضمنة والمخصصة لمستند Word باستخدام Aspose.Words لـ .NET. هذا مجرد غيض من فيض عندما يتعلق الأمر بما يمكنك فعله باستخدام Aspose.Words. سواء كنت تقوم بأتمتة إنشاء المستندات أو التعامل مع المستندات المعقدة، يوفر Aspose.Words مجموعة غنية من الميزات لتسهيل حياتك.
 
 ## الأسئلة الشائعة
 
@@ -103,7 +103,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
  نعم، يمكنك إضافة خصائص مخصصة جديدة باستخدام`CustomDocumentProperties` مجموعة.
 
 ### هل Aspose.Words مجاني للاستخدام؟
- يقدم Aspose.Words أ[تجربة مجانية](https://releases.aspose.com/) ومختلف[خيارات الشراء](https://purchase.aspose.com/buy).
+ يقدم Aspose.Words أ[تجربة مجانية](https://releases.aspose.com/) ومختلفة[خيارات الشراء](https://purchase.aspose.com/buy).
 
 ### كيف يمكنني الحصول على الدعم لـ Aspose.Words؟
  يمكنك الحصول على الدعم من مجتمع Aspose[هنا](https://forum.aspose.com/c/words/8).
@@ -112,4 +112,4 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 نعم، يدعم Aspose.Words العديد من لغات .NET بما في ذلك VB.NET.
 
 ### أين يمكنني العثور على المزيد من الأمثلة؟
- تفحص ال[Aspose.Words لوثائق .NET](https://reference.aspose.com/words/net/) لمزيد من الأمثلة والمعلومات التفصيلية.
+ تحقق من[Aspose.Words لوثائق .NET](https://reference.aspose.com/words/net/) لمزيد من الأمثلة والمعلومات التفصيلية.

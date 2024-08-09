@@ -9,7 +9,7 @@ url: /fr/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
 ## Introduction
 
-Avez-vous déjà eu besoin de modifier la mise en forme des lignes dans vos documents Word ? Peut-être essayez-vous de faire ressortir la première ligne d'un tableau ou de vous assurer que vos tableaux s'affichent parfaitement sur différentes pages. Eh bien, vous avez de la chance ! Dans ce didacticiel, nous expliquons en profondeur comment modifier le formatage des lignes dans les documents Word à l'aide d'Aspose.Words pour .NET. Que vous soyez un développeur chevronné ou un débutant, ce guide vous guidera à travers chaque étape avec des instructions claires et détaillées. Prêt à donner à vos documents une touche soignée et professionnelle ? Commençons!
+Avez-vous déjà eu besoin de modifier la mise en forme des lignes dans vos documents Word ? Peut-être essayez-vous de faire ressortir la première ligne d'un tableau ou de vous assurer que vos tableaux s'affichent parfaitement sur différentes pages. Eh bien, vous avez de la chance ! Dans ce didacticiel, nous expliquons en profondeur comment modifier le formatage des lignes dans les documents Word à l'aide d'Aspose.Words pour .NET. Que vous soyez un développeur chevronné ou un débutant, ce guide vous guidera à travers chaque étape avec des instructions claires et détaillées. Prêt à donner à vos documents une touche soignée et professionnelle ? Commençons !
 
 ## Conditions préalables
 
@@ -95,7 +95,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, nous avons modifié le formatage des lignes dans un document Word à l'aide d'Aspose.Words pour .NET. Que vous ajustiez les bordures, modifiiez la hauteur des lignes ou garantissiez que les lignes soient réparties sur plusieurs pages, ces étapes constituent une base solide pour personnaliser vos tableaux. Continuez à expérimenter différents paramètres et voyez comment ils peuvent améliorer l’apparence et les fonctionnalités de vos documents.
+Et voilà ! Avec seulement quelques lignes de code, nous avons modifié le formatage des lignes dans un document Word à l'aide d'Aspose.Words pour .NET. Que vous ajustiez les bordures, modifiiez la hauteur des lignes ou garantissiez que les lignes soient réparties sur plusieurs pages, ces étapes constituent une base solide pour personnaliser vos tableaux. Continuez à expérimenter différents paramètres et voyez comment ils peuvent améliorer l’apparence et les fonctionnalités de vos documents.
 
 ## FAQ
 

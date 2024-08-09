@@ -16,7 +16,7 @@ Aspose.Words for Python é uma biblioteca versátil que permite aos desenvolvedo
 
 ## Configurando seu ambiente
 
-Antes de mergulharmos no código, vamos garantir que nosso ambiente esteja configurado corretamente. Siga esses passos:
+Antes de mergulharmos no código, vamos garantir que nosso ambiente esteja configurado corretamente. Siga estas etapas:
 
 1. Instale Python em seu sistema.
 2. Instale a biblioteca Aspose.Words para Python usando pip:

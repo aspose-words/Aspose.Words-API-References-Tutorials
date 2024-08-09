@@ -43,7 +43,7 @@ public class DocumentListExample {
         // Inicializar un nuevo documento
         Document doc = new Document();
 
-        // Crear una lista
+        // crear una lista
         List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
 
         // Agregar elementos de la lista
@@ -116,7 +116,7 @@ public class ExtractListItemsExample {
 ## Preguntas frecuentes (FAQ)
 
 ### ¿Cómo agrego viñetas a una lista de documentos?
- Para agregar viñetas a una lista de documentos, utilice el ListTemplate adecuado al crear la lista. Por ejemplo, utilice`ListTemplate.BULLET_DEFAULT` en lugar de`ListTemplate.NUMBER_DEFAULT`.
+ Para agregar viñetas a una lista de documentos, utilice el ListTemplate apropiado al crear la lista. Por ejemplo, utilice`ListTemplate.BULLET_DEFAULT` en lugar de`ListTemplate.NUMBER_DEFAULT`.
 
 ### ¿Puedo cambiar el formato de los elementos de la lista?
 Sí, puede personalizar el formato de los elementos de la lista, incluida la fuente, el tamaño, el color y más, utilizando las funciones de formato de Aspose.Words para Java.
@@ -125,7 +125,7 @@ Sí, puede personalizar el formato de los elementos de la lista, incluida la fue
 ¡Absolutamente! Aspose.Words para Java admite una amplia gama de formatos de documentos, incluidos DOCX, PDF, HTML y más.
 
 ### ¿Cómo puedo convertir una lista de documentos a PDF?
-Para convertir una lista de documentos a PDF, simplemente cargue el documento usando Aspose.Words para Java y guárdelo en formato PDF. ¡Es fácil!
+Para convertir una lista de documentos a PDF, simplemente cargue el documento usando Aspose.Words para Java y guárdelo en formato PDF. ¡Es así de fácil!
 
 ### ¿Aspose.Words para Java admite trabajar con tablas en documentos?
 Sí, Aspose.Words para Java proporciona un amplio soporte para trabajar con tablas, lo que le permite crear, modificar y extraer datos tabulares sin esfuerzo.

@@ -12,7 +12,7 @@ url: /ko/net/working-with-formfields/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [양식 필드 삽입](./insert-form-fields/) | .NET용 Aspose.Words를 사용하여 Word 문서에 드롭다운 양식 필드를 삽입하는 방법을 알아보세요. |
-| [양식 필드는 속성과 함께 작동합니다.](./form-fields-work-with-properties/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 양식 필드 속성으로 작업하는 방법을 알아보세요. |
-| [양식 필드 양식 필드 컬렉션 가져오기](./form-fields-get-form-fields-collection/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 양식 필드 컬렉션을 검색하고 조작하는 방법을 알아보세요. |
-| [양식 필드 이름으로 가져오기](./form-fields-get-by-name/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 이름으로 양식 필드를 검색하고 수정하는 방법을 알아보세요. |
+| [양식 필드 삽입](./insert-form-fields/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 콤보 상자 양식 필드를 삽입하는 방법을 알아보세요. |
+| [양식 필드는 속성과 함께 작동합니다.](./form-fields-work-with-properties/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 양식 필드를 조작하는 방법을 알아보세요. |
+| [양식 필드 양식 필드 컬렉션 가져오기](./form-fields-get-form-fields-collection/) | 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 양식 필드를 가져오고 조작하는 방법을 알아보세요. |
+| [양식 필드 이름으로 가져오기](./form-fields-get-by-name/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 이름으로 양식 필드를 가져오고 수정하는 방법을 알아보세요. |

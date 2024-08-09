@@ -35,7 +35,7 @@ using Aspose.Words;
 
 ### 1.1 새 프로젝트 만들기
 
- Visual Studio를 열고 새 콘솔 앱(.NET Core) 프로젝트를 만듭니다. 이름을 붙이다`DigitalSignatureDetector`.
+ Visual Studio를 열고 새 콘솔 앱(.NET Core) 프로젝트를 만듭니다. 이름을 지어주세요`DigitalSignatureDetector`.
 
 ### 1.2 .NET용 Aspose.Words 설치
 
@@ -54,7 +54,7 @@ using Aspose.Words;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ## 3단계: 파일 형식 감지
 

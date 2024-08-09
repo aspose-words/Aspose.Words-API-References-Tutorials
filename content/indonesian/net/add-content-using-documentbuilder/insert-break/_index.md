@@ -9,13 +9,13 @@ url: /id/net/add-content-using-documentbuilder/insert-break/
 ---
 ## Perkenalan
 
-Hai! Apakah Anda siap terjun ke dunia Aspose.Words untuk .NET? Perpustakaan canggih ini seperti pisau Swiss Army untuk manipulasi dokumen Word. Baik Anda sedang menangani tugas otomatisasi dokumen yang rumit atau hanya perlu menambahkan hentian halaman sederhana, Aspose.Words siap membantu Anda. Dalam tutorial ini, kita akan mempelajari cara menyisipkan jeda di dokumen Word langkah demi langkah. Jadi, ambillah secangkir kopi, dan mari kita mulai!
+Hai! Apakah Anda siap terjun ke dunia Aspose.Words untuk .NET? Perpustakaan canggih ini seperti pisau Swiss Army untuk manipulasi dokumen Word. Baik Anda sedang menangani tugas otomatisasi dokumen yang rumit atau hanya perlu menambahkan hentian halaman sederhana, Aspose.Words siap membantu Anda. Dalam tutorial ini, kita akan mempelajari cara menyisipkan jeda di dokumen Word selangkah demi selangkah. Jadi, ambillah secangkir kopi, dan mari kita mulai!
 
 ## Prasyarat
 
 Sebelum kita beralih ke kode, pastikan kita memiliki semua yang kita perlukan:
 
-1.  Aspose.Words untuk .NET Library: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/) . Jika Anda baru mengenal Aspose, Anda mungkin ingin memulai dengan a[uji coba gratis](https://releases.aspose.com/).
+1.  Aspose.Words untuk .NET Library: Anda bisa[unduh di sini](https://releases.aspose.com/words/net/) . Jika Anda baru mengenal Aspose, Anda mungkin ingin memulai dengan a[uji coba gratis](https://releases.aspose.com/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
 3. .NET Framework: Pastikan Anda telah menginstal .NET Framework.
 4. Pengetahuan Dasar C#: Tutorial ini mengasumsikan Anda sudah familiar dengan pemrograman C#.
@@ -68,7 +68,7 @@ builder.Writeln("This is page 1.");
 
 ## Langkah 5: Memasukkan Page Break
 
- Sekarang tiba bagian menyenangkan. Kita perlu menyisipkan hentian halaman untuk berpindah ke halaman berikutnya. Ini semudah menelepon`InsertBreak` metode.
+ Sekarang sampai pada bagian yang menyenangkan. Kita perlu menyisipkan hentian halaman untuk berpindah ke halaman berikutnya. Ini semudah menelepon`InsertBreak` metode.
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);

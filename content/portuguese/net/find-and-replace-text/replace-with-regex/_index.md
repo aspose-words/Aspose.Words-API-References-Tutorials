@@ -93,10 +93,10 @@ aí está! Você usou regex com sucesso para localizar e substituir texto em um 
 Absolutamente! Aspose.Words oferece suporte a uma ampla variedade de padrões regex. Você pode adaptar seus padrões para corresponder exatamente ao que você precisa.
 
 ### O Aspose.Words for .NET oferece suporte a outras operações de texto?  
-Sim. Aspose.Words for .NET oferece um rico conjunto de recursos para manipulação de documentos do Word, incluindo extração de texto, formatação e muito mais.
+Sim, é verdade. Aspose.Words for .NET oferece um rico conjunto de recursos para manipulação de documentos do Word, incluindo extração de texto, formatação e muito mais.
 
 ### Posso substituir texto em seções específicas de um documento?  
-Sim você pode. Você pode usar métodos diferentes para direcionar seções, parágrafos ou até mesmo cabeçalhos e rodapés específicos em seu documento.
+Sim, você pode. Você pode usar métodos diferentes para direcionar seções, parágrafos ou até mesmo cabeçalhos e rodapés específicos em seu documento.
 
 ### Existe uma maneira de visualizar as alterações antes de salvar o documento?  
 Embora Aspose.Words não forneça um recurso de visualização direta, você sempre pode salvar uma cópia do documento antes de fazer alterações e comparar as versões.

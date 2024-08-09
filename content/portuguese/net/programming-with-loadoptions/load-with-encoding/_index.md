@@ -15,7 +15,7 @@ Ei! Então, você está trabalhando com documentos do Word e precisa carregar um
 
 Antes de entrarmos no âmago da questão, vamos ter certeza de que você tem tudo o que precisa:
 
-1.  Aspose.Words para .NET: você pode[download](https://releases.aspose.com/words/net/) a última versão.
+1.  Aspose.Words para .NET: você pode[download](https://releases.aspose.com/words/net/) a versão mais recente.
 2. Ambiente de desenvolvimento .NET: Visual Studio funciona perfeitamente.
 3. Um documento do Word: certifique-se de que esteja codificado no formato com o qual você está lidando, como UTF-7.
 

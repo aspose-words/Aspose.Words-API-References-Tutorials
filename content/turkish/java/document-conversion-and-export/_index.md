@@ -23,7 +23,7 @@ Bu eğitimlerin sonunda, Aspose.Words for Java'yı kullanarak belge dönüştür
 
 Yukarıda listelenen eğitimlere dalın ve belgeyle ilgili projelerinizde Aspose.Words for Java'nın tüm potansiyelini ortaya çıkarın. Mutlu kodlama!
 
- Daha fazla bilgi için şuraya göz atın:[Aspose.Words for Java API Belgeleri](https://reference.aspose.com/words/java/) ve başlamak için şu adresten indirin:[Burada](https://releases.aspose.com/words/java/) . Herhangi bir sorunuz varsa veya yardıma ihtiyacınız varsa, bizimle iletişime geçmekten çekinmeyin.[destek Forumu](https://forum.aspose.com/).
+ Daha fazla bilgi için şuraya göz atın:[Aspose.Words for Java API Belgeleri](https://reference.aspose.com/words/java/) ve başlamak için şu adresten indirin:[Burada](https://releases.aspose.com/words/java/) . Herhangi bir sorunuz varsa veya yardıma ihtiyacınız varsa, bizimle iletişime geçmekten çekinmeyin.[destek forumu](https://forum.aspose.com/).
 
 ## Belge Dönüştürme ve Dışa Aktarma Eğitimleri
 ### [Aspose.Words for Java'da Özel Barkod Etiketleri Oluşturma](./generating-custom-barcode-labels/)

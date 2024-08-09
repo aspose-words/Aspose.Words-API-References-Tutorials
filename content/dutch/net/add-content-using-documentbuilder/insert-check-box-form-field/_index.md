@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 4: Een formulierveld voor een selectievakje invoegen
 
-Hier komt het leuke gedeelte! We gaan nu een formulierveld voor een selectievakje in ons document invoegen.
+Hier komt het leuke gedeelte! We gaan nu een selectievakje-formulierveld in ons document invoegen.
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);

@@ -33,7 +33,7 @@ Oké, laten we beginnen met het leuke gedeelte: coderen! We zullen het proces op
 
 ## Stap 1: Stel uw project in
 
-Zet eerst een nieuw project op in uw IDE. Hier is hoe:
+Zet eerst een nieuw project op in uw IDE. Hier ziet u hoe:
 
 - Open Visuele Studio.
 - Maak een nieuw C# Console-toepassingsproject.

@@ -38,7 +38,7 @@ from aspose_words import Document
 doc = Document("document.docx")
 ```
 
-## Navegar por párrafos
+## Navegando por párrafos
 
 Los párrafos son los pilares de cualquier documento. Navegar por los párrafos es esencial para realizar cambios en secciones específicas del contenido:
 
@@ -146,7 +146,7 @@ pip install aspose-words
 
 ### ¿Puedo extraer contenido específico de un documento?
 
-Sí tu puedes. Defina un rango de contenido utilizando técnicas de navegación de documentos y luego extraiga el contenido deseado utilizando el rango definido.
+Sí, puedes. Defina un rango de contenido utilizando técnicas de navegación de documentos y luego extraiga el contenido deseado utilizando el rango definido.
 
 ### ¿Es posible fusionar varios documentos utilizando Aspose.Words para Python?
 

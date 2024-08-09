@@ -15,7 +15,7 @@ Jeśli chodzi o pracę z dokumentami programu Word, możliwość manipulowania i
 
 Zanim zaczniemy, będziesz potrzebować kilku rzeczy, aby wszystko działało sprawnie:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Można go zdobyć z[Link do pobrania](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Można go zdobyć z[Pobierz link](https://releases.aspose.com/words/net/).
 
 2. Środowisko programistyczne: środowisko programistyczne .NET, takie jak Visual Studio, umożliwiające pisanie i wykonywanie kodu.
 
@@ -100,7 +100,7 @@ Aspose.Words dla .NET to potężna biblioteka do zarządzania dokumentami Word i
 
 ### Jak zainstalować Aspose.Words dla .NET?
 
- Możesz zainstalować Aspose.Words dla .NET z[Link do pobrania](https://releases.aspose.com/words/net/). Aby ułatwić instalację, możesz także użyć Menedżera pakietów NuGet.
+ Możesz zainstalować Aspose.Words dla .NET z[Pobierz link](https://releases.aspose.com/words/net/). Aby ułatwić instalację, możesz także użyć Menedżera pakietów NuGet.
 
 ### Czy mogę uzyskać właściwości motywu z istniejącego dokumentu programu Word?
 

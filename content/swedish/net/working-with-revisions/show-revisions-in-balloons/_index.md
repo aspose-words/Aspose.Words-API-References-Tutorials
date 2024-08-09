@@ -2,94 +2,90 @@
 title: Visa revisioner i ballonger
 linktitle: Visa revisioner i ballonger
 second_title: Aspose.Words Document Processing API
-description: Visa revisioner i ballonger med Aspose.Words för .NET.
+description: Lär dig hur du visar ändringar i ballonger med Aspose.Words för .NET. Den här detaljerade guiden leder dig genom varje steg och säkerställer att dina dokumentändringar är tydliga och organiserade.
 type: docs
 weight: 10
 url: /sv/net/working-with-revisions/show-revisions-in-balloons/
 ---
+## Introduktion
 
-I den här steg-för-steg-guiden kommer vi att visa dig hur du visar ändringar i ballonger i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
+Att spåra ändringar i ett Word-dokument är avgörande för samarbete och redigering. Aspose.Words för .NET erbjuder robusta verktyg för att hantera dessa revisioner, vilket säkerställer tydlighet och enkel granskning. Den här guiden hjälper dig att visa ändringar i ballonger, vilket gör det lättare att se vilka ändringar som har gjorts och av vem.
 
-## Steg 1: Ladda dokumentet
+## Förutsättningar
 
-Det första steget är att ladda upp dokumentet som innehåller ändringarna.
+Innan vi börjar, se till att du har följande:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+-  Aspose.Words för .NET-bibliotek. Du kan ladda ner den[här](https://releases.aspose.com/words/net/).
+-  En giltig Aspose-licens. Om du inte har en, kan du få en[tillfällig licens](https://purchase.aspose.com/temporary-license/).
+- Visual Studio eller någon annan IDE som stöder .NET-utveckling.
+- Grundläggande förståelse för C# och .NET framework.
 
-## Steg 2: Konfigurera alternativ för granskningsvisning
+## Importera namnområden
 
-Vi kommer att konfigurera visningsalternativen för att göra ändringar synliga i ballonger.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-```
-
-## Steg 3: Spara dokumentet i PDF-format
-
-Slutligen kommer vi att spara dokumentet som en PDF med revisionerna som visas i ballonger.
+Först och främst, låt oss importera de nödvändiga namnrymden i ditt C#-projekt. Dessa namnutrymmen är viktiga för att komma åt Aspose.Words-funktionerna.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
+using Aspose.Words.RevisionOptions;
 ```
 
-## Markdown utdataformat
+Låt oss dela upp processen i enkla steg som är lätta att följa.
 
-Utdata kan formateras i markdown för att förbättra läsbarheten. Till exempel :
+## Steg 1: Ladda ditt dokument
 
-```markdown
-- Revisions are Showed in bubbles with revision bars on the right side.
-```
-
-### Exempel på källkod för Show Revisions In Balloons med Aspose.Words för .NET
-
-Här är den fullständiga källkoden för att visa revisioner i ballonger i ett dokument med Aspose.Words för .NET:
+Först måste vi ladda dokumentet som innehåller revisionerna. Se till att din dokumentsökväg är korrekt.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(MyDir + "Revisions.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+## Steg 2: Konfigurera revisionsalternativ
+
+Därefter kommer vi att konfigurera revisionsalternativen för att visa infoga revisioner inline och ta bort och formatera revisioner i ballonger. Detta gör det lättare att skilja mellan olika typer av revisioner.
+
+```csharp
 // Render infoga revisioner inline, ta bort och formatera revisioner i ballonger.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+```
+
+## Steg 3: Ställ in revisionsstaplarnas position
+
+För att göra dokumentet ännu mer läsbart kan vi ställa in revisionsstaplarnas position. I det här exemplet placerar vi dem till höger på sidan.
+
+```csharp
 // Återger revisionsfält till höger på en sida.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+```
 
+## Steg 4: Spara dokumentet
+
+Slutligen sparar vi dokumentet som en PDF. Detta gör att vi kan se ändringarna i önskat format.
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 ## Slutsats
 
-den här handledningen lärde vi oss hur man visar revisioner i ballonger i ett Word-dokument med Aspose.Words för .NET. Genom att använda lämpliga visningsalternativ kunde vi göra ändringarna synliga i bubblor med revisionsstaplar på höger sida. Aspose.Words för .NET erbjuder många kraftfulla funktioner för att manipulera Word-dokument, inklusive revisionshantering. Nu kan du använda denna kunskap för att visa revideringar i ballonger i dina egna Word-dokument med Aspose.Words för .NET.
+Och där har du det! Genom att följa dessa enkla steg kan du enkelt visa ändringar i ballonger med Aspose.Words för .NET. Detta gör det enkelt att granska och samarbeta om dokument, vilket säkerställer att alla ändringar är tydligt synliga och organiserade. Glad kodning!
 
+## FAQ's
 
-### FAQ's
+### Kan jag anpassa färgen på revisionsfälten?
+Ja, Aspose.Words låter dig anpassa färgen på revisionsfälten för att passa dina preferenser.
 
-#### F: Hur laddar man upp ett dokument i Aspose.Words för .NET?
+### Är det möjligt att endast visa specifika typer av revisioner i ballonger?
+Absolut. Du kan konfigurera Aspose.Words att endast visa vissa typer av revisioner, såsom raderingar eller formateringsändringar, i ballonger.
 
- A: Använd`Document` klass av Aspose.Words för .NET för att ladda ett dokument från en fil. Du kan ange hela dokumentsökvägen.
+### Hur får jag en tillfällig licens för Aspose.Words?
+ Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Kan jag använda Aspose.Words för .NET med andra programmeringsspråk?
+Aspose.Words är främst designat för .NET, men du kan använda det med alla .NET-stödda språk, inklusive VB.NET och C++/CLI.
 
-#### F: Hur visar man revisioner i ballonger med Aspose.Words för .NET?
-
- A: Använd`ShowInBalloons` egendom av`RevisionOptions` objekt för att konfigurera visningen av revisioner i ballonger. Du kan ställa in den här egenskapen`ShowInBalloons.FormatAndDelete` för att visa revisioner i ballonger med raderings- och formateringsrevisioner.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-```
-
-#### F: Hur sparar man ett dokument i PDF-format med Aspose.Words för .NET?
-
- A: Använd`Save` metod för`Document` objekt för att spara dokumentet i PDF-format. Du måste ange den fullständiga destinationssökvägen med tillägget ".pdf".
-
-```csharp
-doc.Save("path/to/destination/document.pdf");
-```
+### Stöder Aspose.Words andra dokumentformat än Word?
+Ja, Aspose.Words stöder olika dokumentformat, inklusive PDF, HTML, EPUB och mer.

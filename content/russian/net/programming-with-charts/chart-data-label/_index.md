@@ -19,7 +19,7 @@ url: /ru/net/programming-with-charts/chart-data-label/
 2. .NET Framework: убедитесь, что у вас установлена .NET Framework 4.0 или более поздняя версия.
 3.  Aspose.Words для .NET: Загрузите и установите Aspose.Words для .NET с сайта[ссылка для скачивания](https://releases.aspose.com/words/net/).
 4. Базовые знания C#: Знание программирования на C# необходимо.
-5.  Действующая лицензия: получите[временная лицензия](https://purchase.aspose.com/temporary-license/) или приобрести его в[Купить ссылку](https://purchase.aspose.com/buy).
+5.  Действующая лицензия: получите[временная лицензия](https://purchase.aspose.com/temporary-license/) или приобрести его в[купить ссылку](https://purchase.aspose.com/buy).
 
 ## Импортировать пространства имен
 

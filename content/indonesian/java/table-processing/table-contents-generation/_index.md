@@ -28,7 +28,7 @@ Mulailah dengan membuat proyek Java baru di Lingkungan Pengembangan Terpadu (IDE
 
 ### Menambahkan Aspose.Words untuk Java ke Proyek Anda
 
-Tambahkan pustaka Aspose.Words untuk Java ke proyek Anda dengan memasukkannya ke dalam dependensi Anda.
+Tambahkan perpustakaan Aspose.Words untuk Java ke proyek Anda dengan memasukkannya ke dalam dependensi Anda.
 
 ### Inisialisasi Aspose.Words
 

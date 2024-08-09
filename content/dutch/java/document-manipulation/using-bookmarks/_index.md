@@ -30,7 +30,7 @@ builder.endBookmark("My Bookmark");
 
 ## Stap 2: Toegang tot bladwijzers
 
-U kunt bladwijzers in een document openen met behulp van hun index of naam. Hier is hoe:
+U kunt bladwijzers in een document openen met behulp van hun index of naam. Hier ziet u hoe:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 // Per index:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// Bij naam:
+// Op naam:
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 
@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## Stap 4: Werken met tekst met bladwijzers
 
-U kunt tekst met een bladwijzer kopiëren en aan een ander document toevoegen. Hier is hoe:
+U kunt tekst met een bladwijzer kopiëren en aan een ander document toevoegen. Hier ziet u hoe:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");

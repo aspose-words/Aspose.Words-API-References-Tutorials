@@ -23,7 +23,7 @@ Antes de adentrarnos en las complejidades de trabajar con Office Math en Aspose.
 
 Los objetos de Office Math se utilizan para representar ecuaciones matemáticas dentro de un documento. Aspose.Words para Java proporciona un sólido soporte para Office Math, lo que le permite controlar su visualización y formato. 
 
-## Guía paso por paso
+## Guía paso a paso
 
 Comencemos con el proceso paso a paso para trabajar con Office Math en Aspose.Words para Java:
 
@@ -45,7 +45,7 @@ OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true)
 
 ### Establecer tipo de visualización
 
- Puede controlar cómo se muestra la ecuación dentro del documento. Utilizar el`setDisplayType` método para especificar si debe mostrarse en línea con el texto o en su línea:
+ Puede controlar cómo se muestra la ecuación dentro del documento. Utilice el`setDisplayType` método para especificar si debe mostrarse en línea con el texto o en su línea:
 
 ```java
 officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
@@ -90,7 +90,7 @@ Los objetos de Office Math en Aspose.Words para Java le permiten representar y m
 
 ### ¿Puedo alinear las ecuaciones de Office Math de manera diferente dentro de mi documento?
 
- Sí, puedes controlar la alineación de las ecuaciones de Office Math. Utilizar el`setJustification` método para especificar opciones de alineación como izquierda, derecha o centro.
+ Sí, puedes controlar la alineación de las ecuaciones de Office Math. Utilice el`setJustification` método para especificar opciones de alineación como izquierda, derecha o centro.
 
 ### ¿Aspose.Words para Java es adecuado para manejar documentos matemáticos complejos?
 

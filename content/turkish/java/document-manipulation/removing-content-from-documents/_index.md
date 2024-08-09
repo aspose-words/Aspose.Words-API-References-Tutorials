@@ -45,7 +45,7 @@ for (int i = doc.getSections().getCount() - 2; i >= 0; i--) {
 }
 ```
 
-Bu kod, bölümler arasında ters sırayla yinelenir, geçerli bölümün içeriğini sonuncuyla birleştirir ve ardından kopyalanan bölümü kaldırır.
+Bu kod, mevcut bölümün içeriğini sonuncuyla birleştirerek ve ardından kopyalanan bölümü kaldırarak bölümler arasında ters sırada yinelenir.
 
 ## Altbilgileri Kaldırma
 

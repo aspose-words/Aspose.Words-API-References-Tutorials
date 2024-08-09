@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 
 ## Következtetés
 
-Gratulálunk! Megtanulta, hogyan integrálhat és kezelhet diagramokat az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár lehetővé teszi a fejlesztők számára, hogy könnyedén hozzanak létre dinamikus és tetszetős dokumentumokat.
+Gratulálok! Megtanulta, hogyan integrálhat és kezelhet diagramokat az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár lehetővé teszi a fejlesztők számára, hogy könnyedén hozzanak létre dinamikus és tetszetős dokumentumokat.
 
 
 ## GYIK

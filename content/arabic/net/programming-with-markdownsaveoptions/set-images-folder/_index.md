@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 احفظ المستند باسم Markdown
 
- إستخدم`MemoryStream` لحفظ المستند بتنسيق Markdown.
+ استخدم أ`MemoryStream` لحفظ المستند بتنسيق Markdown.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

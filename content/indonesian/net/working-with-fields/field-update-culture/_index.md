@@ -56,7 +56,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Selanjutnya, Anda akan memasukkan kolom waktu ke dalam dokumen. Ini adalah bidang dinamis yang diperbarui sesuai waktu saat ini.
 
 ```csharp
-// Masukkan kolom waktu.
+// Masukkan bidang waktu.
 builder.InsertField(FieldType.FieldTime, true);
 ```
 
@@ -64,7 +64,7 @@ builder.InsertField(FieldType.FieldTime, true);
 
 ## Langkah 3: Konfigurasikan Budaya Pembaruan Bidang
 
-Ini adalah dimana keajaiban terjadi. Anda akan mengonfigurasi budaya pembaruan bidang untuk memastikan bahwa bidang diperbarui sesuai dengan pengaturan budaya yang ditentukan.
+Di sinilah keajaiban terjadi. Anda akan mengonfigurasi budaya pembaruan bidang untuk memastikan bahwa bidang diperbarui sesuai dengan pengaturan budaya yang ditentukan.
 
 ```csharp
 // Konfigurasikan budaya pembaruan lapangan.
@@ -88,7 +88,7 @@ doc.Save(dataDir + "UpdateCultureChamps.pdf");
 
 ## Kesimpulan
 
-Mengonfigurasi budaya pembaruan lapangan di dokumen Word mungkin tampak rumit, namun dengan Aspose.Words untuk .NET, hal ini menjadi mudah dikelola dan mudah. Dengan mengikuti langkah-langkah ini, Anda memastikan bahwa kolom dokumen Anda diperbarui dengan benar sesuai dengan pengaturan budaya yang ditentukan, menjadikan dokumen Anda lebih mudah beradaptasi dan ramah pengguna. Baik Anda berurusan dengan bidang waktu, tanggal, atau bidang khusus, memahami dan menerapkan pengaturan ini akan meningkatkan fungsionalitas dan profesionalisme dokumen Anda.
+Mengonfigurasi budaya pembaruan lapangan di dokumen Word mungkin tampak rumit, namun dengan Aspose.Words untuk .NET, hal ini menjadi mudah dikelola dan mudah. Dengan mengikuti langkah-langkah ini, Anda memastikan bahwa bidang dokumen Anda diperbarui dengan benar sesuai dengan pengaturan budaya yang ditentukan, menjadikan dokumen Anda lebih mudah beradaptasi dan ramah pengguna. Baik Anda berurusan dengan bidang waktu, tanggal, atau bidang khusus, memahami dan menerapkan pengaturan ini akan meningkatkan fungsionalitas dan profesionalisme dokumen Anda.
 
 ## FAQ
 

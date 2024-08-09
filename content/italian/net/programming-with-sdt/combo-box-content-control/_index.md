@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/combo-box-content-control/
 ---
-## introduzione
+## Introduzione
 
 Stai cercando di aggiungere elementi interattivi ai tuoi documenti Word? Bene, sei arrivato nel posto giusto! In questa guida ti spiegheremo come creare un controllo del contenuto di una casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Alla fine di questo tutorial, avrai una conoscenza approfondita di come inserire e manipolare i controlli del contenuto della casella combinata, rendendo i tuoi documenti più dinamici e intuitivi.
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai creato con successo un controllo del contenuto della casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi aggiungere elementi interattivi ai tuoi documenti, migliorandone la funzionalità e l'esperienza utente.
+Ed ecco qua! Hai creato con successo un controllo del contenuto della casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi aggiungere elementi interattivi ai tuoi documenti, migliorandone la funzionalità e l'esperienza utente.
 
 Sentiti libero di sperimentare diversi tipi di controlli dei contenuti e personalizzarli in base alle tue esigenze. Se hai domande o riscontri problemi, non esitare a contattare il supporto.
 

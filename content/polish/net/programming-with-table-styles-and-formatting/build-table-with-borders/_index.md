@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
- Tutaj uzyskujemy dostęp do pierwszej tabeli w dokumencie. The`NodeType.Table` gwarantuje, że pobieramy węzeł tabeli i indeks`0` wskazuje, że chcemy pierwszy stół.
+ Tutaj uzyskujemy dostęp do pierwszej tabeli w dokumencie. The`NodeType.Table` zapewnia, że pobieramy węzeł tabeli i indeks`0` wskazuje, że chcemy pierwszy stół.
 
 ## Krok 3: Usuń istniejące granice
 

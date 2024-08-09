@@ -20,7 +20,7 @@ Koda dalmadan önce her şeyin ayarlandığından emin olalım. İşte ihtiyacı
 3. Geliştirme Ortamı: Visual Studio gibi bir IDE hayatınızı kolaylaştıracaktır.
 4. Temel C# Bilgisi: Uzman olmanıza gerek yok, ancak temel bir anlayış yardımcı olacaktır.
 
-Herşeye sahip? Harika! Başlayalım.
+Herşeyi aldın mı? Harika! Hadi başlayalım.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -89,7 +89,7 @@ Bu, belgeyi, tanımlandığı gibi dönüştürülmüş meta dosyası biçimiyle
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak SVG görüntülerini Word belgelerinizdeki EMF veya WMF formatlarına başarıyla dönüştürdünüz. Bu yöntem, belgelerinizin farklı platformlarda uyumluluğunu sağlamak ve görsel bütünlüğünü korumak için kullanışlıdır. Mutlu kodlama!
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak SVG görüntülerini Word belgelerinizdeki EMF veya WMF formatlarına başarıyla dönüştürdünüz. Bu yöntem, belgelerinizin farklı platformlarda uyumluluğunu sağlamak ve görsel bütünlüğünü korumak için kullanışlıdır. Mutlu kodlama!
 
 ## SSS'ler
 

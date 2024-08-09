@@ -45,7 +45,7 @@ doc.save("document_with_watermark.docx");
 
 Anda selanjutnya dapat menyesuaikan tanda air dengan menyesuaikan font, ukuran, warna, dan rotasi. Fleksibilitas ini memastikan tanda air Anda cocok dengan gaya dokumen Anda.
 
-## Pengaturan halaman
+## Pengaturan Halaman
 
 ### Ukuran dan Orientasi Halaman
 

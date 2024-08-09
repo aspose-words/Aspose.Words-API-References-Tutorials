@@ -77,4 +77,4 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 はい、メモリ使用量の一部をディスクにオフロードすることで、パフォーマンスを大幅に向上できます。
 
 ### Aspose.Words for .NET の詳細情報はどこで入手できますか?
-参照するには[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細と例についてはこちらをご覧ください。
+参照するには[ドキュメント](https://reference.aspose.com/words/net/)詳細と例についてはこちらをご覧ください。

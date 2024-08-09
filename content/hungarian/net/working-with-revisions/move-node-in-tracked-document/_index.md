@@ -2,144 +2,130 @@
 title: Csomópont mozgatása nyomon követett dokumentumban
 linktitle: Csomópont mozgatása nyomon követett dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Csomópontok mozgatása nyomon követett dokumentumban az Aspose.Words for .NET segítségével.
+description: Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan helyezhet át csomópontokat egy nyomon követett Word-dokumentumban az Aspose.Words for .NET használatával. Tökéletes fejlesztőknek.
 type: docs
 weight: 10
 url: /hu/net/working-with-revisions/move-node-in-tracked-document/
 ---
+## Bevezetés
 
-Ebben a részletes útmutatóban végigvezetjük, hogyan helyezhet át egy csomópontot egy nyomon követett Word-dokumentumban az Aspose.Words for .NET használatával. Megadjuk Önnek a teljes forráskódot, és megmutatjuk, hogyan kell formázni a markdown kimenetet.
+Szia, Aspose. Words rajongók! Ha valaha is át kellett helyeznie egy csomópontot egy Word-dokumentumban a revíziók követése közben, akkor jó helyen jár. Ma az Aspose.Words for .NET használatával valósítható meg. Nemcsak a lépésről lépésre tanulja meg a folyamatot, hanem néhány tippet és trükköt is megtudhat, hogy a dokumentumkezelést gördülékenyebbé és hatékonysá tegye.
 
-## 1. lépés: A dokumentum létrehozása
+## Előfeltételek
 
-Az első lépés egy új dokumentum létrehozása és bekezdések hozzáadása.
+Mielőtt bepiszkítanánk a kezünket egy kóddal, győződjünk meg arról, hogy mindent megvan, amire szüksége van:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Paragraph 1");
-builder.Writeln("Paragraph 2");
-builder.Writeln("Paragraph 3");
-builder.Writeln("Paragraph 4");
-builder.Writeln("Paragraph 5");
-builder.Writeln("Paragraph 6");
-Body body = doc.FirstSection.Body;
-Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
-```
+-  Aspose.Words for .NET: Töltse le[itt](https://releases.aspose.com/words/net/).
+- .NET-környezet: Győződjön meg arról, hogy kompatibilis .NET-fejlesztői környezetet állított be.
+- Alapvető C# ismeretek: Ez az oktatóanyag feltételezi, hogy rendelkezik a C# alapvető ismereteivel.
 
-## 2. lépés: Kövesse nyomon a változatokat
+Megvan minden? Nagy! Térjünk át az importálandó névterekre.
 
-Engedélyezni fogjuk a revíziókövetést a dokumentumban.
+## Névterek importálása
+
+Először is importálnunk kell a szükséges névtereket. Ezek elengedhetetlenek az Aspose.Words-szel való munkához és a dokumentumcsomópontok kezeléséhez.
 
 ```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+using Aspose.Words;
+using System;
 ```
 
-## 3. lépés: Helyezzen át egy csomópontot
+Rendben, bontsuk fel a folyamatot kezelhető lépésekre. Minden lépést részletesen elmagyarázunk annak érdekében, hogy megértse, mi történik minden ponton.
 
-A revíziók generálása közben áthelyezünk egy csomópontot (bekezdést) egyik pozícióból a másikba.
+## 1. lépés: Inicializálja a dokumentumot
 
-```csharp
-Node node = body.Paragraphs[3];
-Node endNode = body.Paragraphs[5].NextSibling;
-Node referenceNode = body.Paragraphs[0];
-while (node != endNode)
-{
-     Node nextNode = node. NextSibling;
-     body. InsertBefore(node, referenceNode);
-     node = nextNode;
-}
-```
-
-## 4. lépés: Állítsa le a vélemények követését
-
-Leállítjuk a revíziók követését a dokumentumban.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-## 5. lépés: A dokumentum mentése
-
- A szövegbeviteli űrlapmező beszúrása után mentse a dokumentumot a kívánt helyre a gombbal`Save`módszer. Ügyeljen arra, hogy megadja a megfelelő fájl elérési utat:
-
-```csharp
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-```
-
-
-### Példa a Move Node In Tracked Document forráskódjához az Aspose.Words for .NET használatával
-
-Itt található a teljes forráskód egy nyomon követett dokumentumban lévő csomópont mozgatásához az Aspose.Words for .NET használatával:
-
+ Kezdésként inicializálnunk kell egy új dokumentumot, és az a`DocumentBuilder` néhány bekezdés hozzáadásához.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Néhány bekezdés hozzáadása
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
 builder.Writeln("Paragraph 4");
 builder.Writeln("Paragraph 5");
 builder.Writeln("Paragraph 6");
+
+// Ellenőrizze a kezdeti bekezdések számát
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+```
 
-// Kezdje el a változatok követését.
+## 2. lépés: Kezdje el a módosítások követését
+
+Ezután el kell kezdenünk a revíziók nyomon követését. Ez döntő fontosságú, mivel lehetővé teszi számunkra, hogy láthassuk a dokumentumon végrehajtott változtatásokat.
+
+```csharp
+// Kezdje el a revíziók követését
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
 
-// Verziókat generál, amikor egy csomópontot egyik helyről a másikra helyez át.
+## 3. lépés: Csomópontok mozgatása
+
+Most jön a feladatunk alapvető része: egy csomópont áthelyezése egyik helyről a másikra. A harmadik bekezdést áthelyezzük, és az első bekezdés elé helyezzük.
+
+```csharp
+// Határozza meg az áthelyezni kívánt csomópontot és annak végtartományát
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
+
+// Mozgassa a csomópontokat a meghatározott tartományon belül
 while (node != endNode)
 {
-	Node nextNode = node.NextSibling;
-	body.InsertBefore(node, referenceNode);
-	node = nextNode;
+    Node nextNode = node.NextSibling;
+    body.InsertBefore(node, referenceNode);
+    node = nextNode;
 }
+```
 
-// Állítsa le a revíziók követésének folyamatát.
+## 4. lépés: Állítsa le a módosítások követését
+
+Miután áthelyeztük a csomópontokat, le kell állítani a revíziók követését.
+
+```csharp
+// Állítsa le a változatok követését
 doc.StopTrackRevisions();
+```
 
-// 3 további bekezdés található az áthelyezési tartományban.
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+## 5. lépés: Mentse el a dokumentumot
+
+Végül mentsük el a módosított dokumentumunkat a megadott könyvtárba.
+
+```csharp
+// Mentse el a módosított dokumentumot
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
+
+// Adja meg az utolsó bekezdések számát
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtanultuk, hogyan helyezhet át egy csomópontot egy nyomon követett Word-dokumentumban az Aspose.Words for .NET használatával. A dokumentum létrehozásának, a revíziókövetés engedélyezésének, a csomópont áthelyezésének és a revíziókövetés leállításának lépéseit követve sikeresen végrehajtottuk ezt a manipulációt. Az Aspose.Words for .NET egy hatékony eszköz Word-dokumentumokkal történő szövegfeldolgozáshoz, és fejlett szolgáltatásokat kínál a revíziók kezeléséhez. Mostantól ezt a tudást használhatja csomópontok áthelyezésére saját Word-dokumentumaiban, miközben az Aspose.Words for .NET használatával nyomon követheti a revíziókat.
+És megvan! Sikeresen áthelyezett egy csomópontot egy nyomon követett dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony könyvtár megkönnyíti a Word-dokumentumok programozott kezelését. Akár létrehoz, akár szerkeszt, akár nyomon követi a változtatásokat, az Aspose.Words mindenre kiterjed. Szóval, menj és próbáld ki. Boldog kódolást!
 
-### GYIK
+## GYIK
 
-#### K: Hogyan engedélyezhetem a revíziókövetést egy Aspose.Words for .NET dokumentumban?
+### Mi az Aspose.Words for .NET?
 
- V: Ha engedélyezni szeretné a revíziókövetést egy Aspose.Words for .NET dokumentumban, használja a`StartTrackRevisions` módszere a`Document` tárgy. Ez a módszer a revíziók szerzőjének nevét és a revíziók nyomon követésének kezdő dátumát veszi paraméterként.
+Az Aspose.Words for .NET egy osztálykönyvtár Word-dokumentumokkal való programozott munkavégzéshez. Lehetővé teszi a fejlesztők számára Word dokumentumok létrehozását, szerkesztését, konvertálását és nyomtatását .NET alkalmazásokon belül.
 
-```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
-```
+### Hogyan követhetem nyomon a revíziókat egy Word-dokumentumban az Aspose.Words használatával?
 
-#### K: Hogyan helyezhetek át egy csomópontot egy nyomon követett dokumentumban revíziók generálása nélkül?
+ A revíziók nyomon követéséhez használja a`StartTrackRevisions` módszer a`Document` objektum. Ez lehetővé teszi a revíziókövetést, és megjeleníti a dokumentumon végrehajtott módosításokat.
 
- V: Ha egy nyomon követett dokumentumban szeretne áthelyezni egy csomópontot revíziók generálása nélkül, használhatja a`Remove`és`InsertAfter` vagy`InsertBefore` módszerei a`Node` tárgy. Például egy bekezdés másik bekezdés utáni áthelyezéséhez a következő kódot használhatja:
+### Mozgathatok több csomópontot az Aspose.Wordsben?
 
-```csharp
-Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
-Node referenceNode = document.FirstSection.Body.Paragraphs[1];
-nodeToMove.Remove();
-document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
-```
+Igen, több csomópontot is áthelyezhet, ha átiterál rajtuk, és olyan módszereket használ, mint pl`InsertBefore` vagy`InsertAfter` hogy a kívánt helyre helyezze őket.
 
-#### K: Hogyan állíthatom le a revíziókövetést egy Aspose.Words for .NET dokumentumban?
+### Hogyan állíthatom le a revíziók követését az Aspose.Wordsben?
 
- V: Az Aspose.Words for .NET dokumentumban a revíziók követésének leállításához használja a`StopTrackRevisions` módszere a`Document` tárgy.
+ Használja a`StopTrackRevisions` módszer a`Document` ellenzi a revíziók követésének leállítását.
 
-```csharp
-doc.StopTrackRevisions();
-```
+### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
+
+ Részletes dokumentációt találhat[itt](https://reference.aspose.com/words/net/).

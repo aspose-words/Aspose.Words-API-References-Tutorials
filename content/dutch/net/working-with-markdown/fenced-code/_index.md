@@ -2,79 +2,110 @@
 title: Omheinde code
 linktitle: Omheinde code
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de afgeschermde codefunctie gebruikt met Aspose.Words voor .NET Stapsgewijze handleiding.
+description: Leer hoe u afgeschermde code en informatiereeksen aan Word-documenten kunt toevoegen met Aspose.Words voor .NET. Stap-voor-stap handleiding inbegrepen. Verbeter uw vaardigheden op het gebied van documentopmaak.
 type: docs
 weight: 10
 url: /nl/net/working-with-markdown/fenced-code/
 ---
+## Invoering
 
-In dit voorbeeld laten we u zien hoe u de afgeschermde codefunctie gebruikt met Aspose.Words voor .NET. omheinde code wordt gebruikt om codeblokken met een specifieke opmaak weer te geven.
+Hallo daar, mede-codeur! Vandaag duiken we in de wereld van Aspose.Words voor .NET om de kunst onder de knie te krijgen van het toevoegen van afgeschermde code en afgeschermde code met inforeeksen aan uw Word-documenten. Stel je je Word-document voor als een canvas en jij, de kunstenaar, staat op het punt te schilderen met de precisie van een doorgewinterde ontwikkelaar. Met Aspose.Words krijgt u de mogelijkheid om uw documenten programmatisch te verbeteren met gestructureerde, opgemaakte codeblokken, waardoor uw technische documenten professionaliteit en duidelijkheid uitstralen.
 
-## Stap 1: Een documentgenerator gebruiken
+## Vereisten
 
-Eerst gebruiken we een documentgenerator om inhoud aan ons document toe te voegen.
+Voordat we verder gaan met de tutorial, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+
+- Basiskennis van C#: Een algemeen begrip van C# zal u helpen de concepten snel te begrijpen.
+-  Aspose.Words voor .NET: Aspose.Words voor .NET moet geïnstalleerd zijn. Als je het nog niet hebt, pak het dan[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Visual Studio of een andere C# IDE waarmee u vertrouwd bent.
+
+## Naamruimten importeren
+
+Allereerst moet u de benodigde naamruimten importeren. Dit is hetzelfde als het verzamelen van al uw gereedschap voordat u aan een project begint.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+Laten we het proces nu stap voor stap opsplitsen.
+
+## Stap 1: Uw project opzetten
+
+Voordat we mooie, opgemaakte codeblokken in ons Word-document kunnen maken, moeten we een nieuw project opzetten in Visual Studio.
+
+1. Maak een nieuw project: Open Visual Studio en maak een nieuwe C#-consoletoepassing.
+2. Aspose.Words toevoegen Referentie: Installeer Aspose.Words via NuGet Package Manager. U kunt dit doen door met de rechtermuisknop op uw project te klikken in Solution Explorer, 'NuGet-pakketten beheren' te selecteren en te zoeken naar Aspose.Words.
+
+## Stap 2: Initialiseer DocumentBuilder
+
+Nu uw project is ingesteld, gaan we de DocumentBuilder initialiseren, wat ons belangrijkste hulpmiddel zal zijn voor het toevoegen van inhoud aan het Word-document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Stap 2: Een stijl toevoegen voor omheinde code
+## Stap 3: Creëer een stijl voor omheinde code
 
- We zullen een aangepaste stijl toevoegen voor de omheinde code met behulp van de`Styles.Add` werkwijze van de`Document` voorwerp. In dit voorbeeld maken we een stijl met de naam 'FencedCode' voor de afgeschermde code.
+Om omheinde code toe te voegen, moeten we eerst een stijl maken. Zie dit als het instellen van het thema voor ons codeblok.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## Stap 3: Omheinde code toevoegen zonder info
+## Stap 4: Voeg omheinde code toe aan het document
 
-Nu kunnen we een omheind codeblok zonder informatiereeks toevoegen met behulp van de aangepaste stijl "FencedCode".
+Nu onze stijl gereed is, kunnen we nu een omheind codeblok aan het document toevoegen.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## Stap 4: Voeg een omheinde code toe met een inforeeks
+## Stap 5: Maak een stijl voor omheinde code met Info String
 
-We kunnen ook een omheind codeblok toevoegen met een reeks informatie met behulp van een andere aangepaste stijl. In dit voorbeeld maken we een stijl met de naam "FencedCode.C#" om een blok C#-code weer te geven.
+Soms wilt u misschien de programmeertaal specificeren of extra informatie aan uw codeblok toevoegen. Laten we daar een stijl voor creëren.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Voorbeeldbroncode voor omheinde code met Aspose.Words voor .NET
+## Stap 6: Voeg omheinde code met inforeeks toe aan het document
+
+Laten we nu een omheind codeblok toevoegen met een infotekenreeks om aan te geven dat het C#-code is.
 
 ```csharp
-// Gebruik een documentbuilder om inhoud aan het document toe te voegen.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### Veelgestelde vragen
+## Conclusie
 
-#### Vraag: Wat is gescheiden code in Markdown?
+Gefeliciteerd! U hebt zojuist afgeschermde codeblokken en afgeschermde code met informatiereeksen aan uw Word-documenten toegevoegd met behulp van Aspose.Words voor .NET. Dit is slechts het topje van de ijsberg. Met Aspose.Words kunt u uw documentverwerking naar nieuwe hoogten automatiseren en verbeteren. Blijf ontdekken en veel codeerplezier!
 
-A: Gescheiden code in Markdown is een opmaakmethode die wordt gebruikt om code in een Markdown-document weer te geven. Het bestaat uit het inlijsten van de code met specifieke scheidingstekens.
+## Veelgestelde vragen
 
-#### Vraag: Wat zijn de voordelen van gescheiden code in Markdown?
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en converteren.
 
-A: Gescheiden code in Markdown verbetert de leesbaarheid van de code en maakt het voor lezers gemakkelijker om deze te begrijpen. Het maakt het ook mogelijk om syntaxisaccentuering in sommige Markdown-editors te behouden.
+### Kan ik Aspose.Words met andere programmeertalen gebruiken?
+Aspose.Words ondersteunt voornamelijk .NET-talen, maar er zijn versies beschikbaar voor Java, Python en andere talen.
 
-#### Vraag: Wat is het verschil tussen code met scheidingstekens en ingesprongen code in Markdown?
+### Is Aspose.Words gratis te gebruiken?
+ Aspose.Words is een commercieel product, maar u kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/)om de kenmerken ervan te verkennen.
 
-A: Gescheiden code gebruikt specifieke scheidingstekens om de code te omsluiten, terwijl ingesprongen code inhoudt dat elke regel code wordt ingesprongen met spaties of tabs.
+### Hoe kan ik ondersteuning krijgen voor Aspose.Words?
+ U kunt ondersteuning krijgen van de Aspose-community en ontwikkelaars[hier](https://forum.aspose.com/c/words/8).
 
-#### Vraag: Wordt de code met scheidingstekens in Markdown ondersteund door alle Markdown-editors?
-
-A: Ondersteuning voor gescheiden code in Markdown kan variëren per Markdown-editor. Controleer voor de zekerheid de specifieke documentatie van uw uitgever.
-
+### Welke andere functies biedt Aspose.Words?
+Aspose.Words biedt een breed scala aan functies, waaronder documentconversie, op sjablonen gebaseerde documentgeneratie, rapportage en nog veel meer.

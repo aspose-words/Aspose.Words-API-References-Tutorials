@@ -178,7 +178,7 @@ for data in dataset:
 
 - 다양한 문서 조작 작업에 대한 함수를 사용하여 코드를 체계적으로 유지하세요.
 - 예외 처리를 활용하여 문서 처리 중 오류를 적절하게 처리합니다.
--  을 체크 해봐[Aspose.Words 문서](https://reference.aspose.com/words/python-net/) 자세한 API 참조 및 예시를 확인하세요.
+-  확인해보세요[Aspose.Words 문서](https://reference.aspose.com/words/python-net/) 자세한 API 참조 및 예시를 확인하세요.
 
 ## 결론
 

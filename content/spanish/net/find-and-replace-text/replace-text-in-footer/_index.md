@@ -31,7 +31,7 @@ using Aspose.Words.Replacing;
 
 ## Paso 1: cargue su documento
 
- Para comenzar, debemos cargar el documento de Word que contiene el texto del pie de página que queremos reemplazar. Especificaremos la ruta al documento y usaremos el`Document` clase para cargarlo.
+ Para comenzar, necesitamos cargar el documento de Word que contiene el texto del pie de página que queremos reemplazar. Especificaremos la ruta al documento y usaremos el`Document` clase para cargarlo.
 
 ```csharp
 // La ruta al directorio de documentos.
@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- En este ejemplo,`MatchCase` se establece en`false` ignorar las diferencias de casos, y`FindWholeWordsOnly` se establece en`false` para permitir coincidencias parciales dentro de las palabras.
+ En este ejemplo,`MatchCase` está configurado para`false` ignorar las diferencias de casos, y`FindWholeWordsOnly` está configurado para`false` para permitir coincidencias parciales dentro de las palabras.
 
 ## Paso 4: reemplace el texto en el pie de página
 

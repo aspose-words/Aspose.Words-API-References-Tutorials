@@ -56,7 +56,7 @@ Salah satu fitur utama Aspose.Words for Java adalah kemampuannya melacak revisi 
 
 ### Mengaktifkan Pelacakan Revisi
 
- Untuk mengaktifkan pelacakan revisi di dokumen Word menggunakan Aspose.Words untuk Java, Anda dapat menggunakan`TrackRevisions` Properti. Berikut ini contoh cara mengaktifkan pelacakan revisi:
+ Untuk mengaktifkan pelacakan revisi di dokumen Word menggunakan Aspose.Words untuk Java, Anda dapat menggunakan`TrackRevisions` milik. Berikut ini contoh cara mengaktifkan pelacakan revisi:
 
 ```java
 Document doc = new Document("MyDocument.docx");

@@ -15,7 +15,7 @@ Naviguer dans le monde de la manipulation de documents peut parfois donner l’i
 
 Avant de nous lancer dans ce voyage, rassemblons tous les éléments essentiels dont vous aurez besoin pour commencer.
 
-- Aspose.Words pour .NET : assurez-vous que la bibliothèque Aspose.Words est installée. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+- Aspose.Words pour .NET : assurez-vous que la bibliothèque Aspose.Words est installée. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : un environnement de développement compatible .NET comme Visual Studio.
 -  Exemple de document : un document Word (par exemple,`Paragraphs.docx`) que vous convertirez en PDF.
 
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez exporté avec succès la structure d'un document Word au format PDF à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est incroyablement utile pour préserver la mise en page des documents et faciliter la navigation dans des PDF complexes. Avec ce guide, vous pouvez désormais convertir des documents en toute confiance et exploiter les puissantes capacités d'Aspose.Words.
+Félicitations! Vous avez exporté avec succès la structure d'un document Word au format PDF à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est incroyablement utile pour préserver la mise en page des documents et faciliter la navigation dans des PDF complexes. Avec ce guide, vous pouvez désormais convertir des documents en toute confiance et exploiter les puissantes capacités d'Aspose.Words.
 
 ## FAQ
 

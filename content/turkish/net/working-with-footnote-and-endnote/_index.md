@@ -12,6 +12,6 @@ Dipnotlar ve Sonnotlarla Kelime İşleme, .NET için Aspose.Words kütüphanesin
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Dip Not Sütunlarını Ayarla](./set-foot-note-columns/) | Aspose.Words for .NET kullanarak Word belgelerindeki dipnotların sütun sayısını nasıl ayarlayacağınızı öğrenin. |
-| [Dipnot ve Son Not Konumunu Ayarlama](./set-footnote-and-end-note-position/) | Aspose.Words for .NET kullanarak Word belgelerinde dipnotların ve sonnotların konumunu nasıl ayarlayacağınızı öğrenin. |
-| [Son Not Seçeneklerini Ayarlayın](./set-endnote-options/) | Aspose.Words for .NET kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin. |
+| [Dip Not Sütunlarını Ayarla](./set-foot-note-columns/) | Aspose.Words for .NET kullanarak Word belgelerinde dipnot sütunlarını nasıl ayarlayacağınızı öğrenin. Adım adım kılavuzumuzla dipnot düzeninizi kolayca özelleştirin. |
+| [Dipnot ve Son Not Konumunu Ayarlama](./set-footnote-and-end-note-position/) | Bu ayrıntılı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde dipnot ve sonnot konumlarını nasıl ayarlayacağınızı öğrenin. |
+| [Son Not Seçeneklerini Ayarlayın](./set-endnote-options/) | Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin. |

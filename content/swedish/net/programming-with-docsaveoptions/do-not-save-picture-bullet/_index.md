@@ -9,7 +9,7 @@ url: /sv/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## Introduktion
 
-Hej där, andra utvecklare! Har du någonsin arbetat med Word-dokument och funnit dig själv trasslad i krångligheterna med att spara bildkulor? Det är en av de där små detaljerna som kan göra stor skillnad i det slutliga utseendet på ditt dokument. Tja, idag är jag här för att guida dig genom processen att hantera bildkulor i Aspose.Words för .NET, särskilt med fokus på funktionen "Spara inte bildkula". Redo att dyka i? Nu går vi!
+Hej där, andra utvecklare! Har du någonsin arbetat med Word-dokument och funnit dig själv trasslad i krångligheterna med att spara bildkulor? Det är en av de där små detaljerna som kan göra stor skillnad i det slutliga utseendet på ditt dokument. Tja, idag är jag här för att guida dig genom processen att hantera bildkulor i Aspose.Words för .NET, särskilt med fokus på funktionen "Spara inte bildkula". Redo att dyka i? Låt oss gå!
 
 ## Förutsättningar
 
@@ -40,7 +40,7 @@ Först och främst måste du ange sökvägen till din dokumentkatalog. Det är h
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen på ditt system där dina dokument finns.
+ Ersätta`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen på ditt system där dina dokument finns.
 
 ## Steg 2: Ladda dokumentet med bildpunkter
 
@@ -62,7 +62,7 @@ Låt oss nu konfigurera sparalternativen för att ange att bildpunkter inte ska 
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- Genom att sätta`SavePictureBullet` till`false`, instruerar du Aspose.Words att inte spara bildpunkter i utdatadokumentet.
+ Genom att ställa in`SavePictureBullet` till`false`, instruerar du Aspose.Words att inte spara bildpunkter i utdatadokumentet.
 
 ## Steg 4: Spara dokumentet
 

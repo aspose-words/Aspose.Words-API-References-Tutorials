@@ -9,7 +9,7 @@ url: /tr/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## giriiş
 
-Selam! Belge otomasyonu dünyasına dalıyorsanız doğru yerdesiniz. Bugün Aspose.Words for .NET kullanarak bir Word belgesine TC (İçindekiler Tablosu) alanının nasıl ekleneceğini inceleyeceğiz. İnanın bana, bu eğitimin sonunda kendinizi Word belgelerinize büyü yapan bir sihirbaz gibi hissedeceksiniz. başlamaya hazır mısın? Bunu yapalım!
+Selam! Belge otomasyonu dünyasına dalıyorsanız doğru yerdesiniz. Bugün Aspose.Words for .NET kullanarak bir Word belgesine TC (İçindekiler Tablosu) alanının nasıl ekleneceğini inceleyeceğiz. İnanın bana, bu eğitimin sonunda kendinizi Word belgelerinize büyü yapan bir sihirbaz gibi hissedeceksiniz. Başlamaya hazır mısınız? Haydi bunu yapalım!
 
 ## Önkoşullar
 
@@ -75,11 +75,11 @@ Son olarak belgemizi kaydedelim. Bütün emeklerimizin birleştiği nokta buras�
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-Boom! Az önce TC alanı içeren bir Word belgesi oluşturdunuz. Bu ne kadar muhteşem?
+Bum! Az önce TC alanı içeren bir Word belgesi oluşturdunuz. Bu ne kadar muhteşem?
 
 ## Çözüm
 
- İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesine TC alanının nasıl ekleneceğini anlattık. Oldukça basit, değil mi? Bu becerilerle artık Word belgelerinizi bir profesyonel gibi otomatikleştirebilir ve özelleştirebilirsiniz. Herhangi bir sorunuz varsa veya herhangi bir sorunla karşılaşırsanız, kontrol etmekten çekinmeyin.[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya onlara ulaşın[destek Forumu](https://forum.aspose.com/c/words/8). Mutlu kodlama!
+ Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesine TC alanının nasıl ekleneceğini anlattık. Oldukça basit, değil mi? Bu becerilerle artık Word belgelerinizi bir profesyonel gibi otomatikleştirebilir ve özelleştirebilirsiniz. Herhangi bir sorunuz varsa veya herhangi bir sorunla karşılaşırsanız, kontrol etmekten çekinmeyin.[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya onlara ulaşın[destek forumu](https://forum.aspose.com/c/words/8). Mutlu kodlama!
 
 ## SSS'ler
 
@@ -93,7 +93,7 @@ Word'deki TC (İçindekiler Tablosu) alanı, İçindekiler Tablonuza eklemek ist
 
 ### 3. Aspose.Words'ü diğer programlama dilleriyle kullanabilir miyim?
 
-Aspose.Words öncelikli olarak C# gibi .NET dillerini destekler ancak Java ve diğer platformlar için versiyonları da mevcuttur.
+Aspose.Words öncelikle C# gibi .NET dillerini destekler ancak Java ve diğer platformlar için versiyonları da mevcuttur.
 
 ### 4. Aspose.Words for .NET kullanımına ilişkin daha fazla örneği nerede bulabilirim?
 

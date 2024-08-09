@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/convert-shape-to-office-math/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu se ponoříme do toho, jak můžete převést tvary do Office Math v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ať už chcete zefektivnit zpracování dokumentů nebo zlepšit možnosti formátování dokumentů, tento průvodce vás krok za krokem provede celým procesem. Na konci tohoto kurzu budete mít jasno v tom, jak využít Aspose.Words for .NET k efektivnímu provedení tohoto úkolu.
 
@@ -15,7 +15,7 @@ V tomto tutoriálu se ponoříme do toho, jak můžete převést tvary do Office
 
 Než se ponoříme do podrobností, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
-- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli IDE, které podporuje .NET, jako je Visual Studio.
 - Základní znalost C#: Znalost programování v C# je nezbytná.
 - Dokument aplikace Word: Dokument aplikace Word obsahující tvary, které chcete převést na Office Math.
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 ```
 
- V tomto kroku určíme adresář, kde se náš dokument nachází, a nakonfigurujeme možnosti načítání. The`ConvertShapeToOfficeMath` vlastnost je nastavena na`true` pro umožnění konverze.
+ V tomto kroku určíme adresář, kde se náš dokument nachází, a nakonfigurujeme možnosti načítání. The`ConvertShapeToOfficeMath` vlastnost je nastavena na`true` abyste umožnili konverzi.
 
 ## Krok 2: Vložte dokument
 
@@ -86,4 +86,4 @@ Ano, ujistěte se, že máte nejnovější verzi Aspose.Words for .NET, abyste m
 Aspose.Words for .NET je navržen pro použití s jazyky .NET, především C#. Podobné funkce jsou však dostupné v jiných rozhraních API Aspose.Words pro různé jazyky.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words?  
- Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

@@ -2,106 +2,122 @@
 title: Läs Active XControl-egenskaper från Word-fil
 linktitle: Läs Active XControl-egenskaper från Word-fil
 second_title: Aspose.Words Document Processing API
-description: Läs egenskaperna för ActiveX-kontroller i en Word-fil med Aspose.Words för .NET.
+description: Lär dig hur du läser ActiveX-kontrollegenskaper från Word-filer med Aspose.Words för .NET i en steg-för-steg-guide. Förbättra dina färdigheter i dokumentautomatisering.
 type: docs
 weight: 10
 url: /sv/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## Introduktion
 
-I den här steg-för-steg-guiden kommer vi att visa dig hur du läser egenskaperna för ActiveX-kontroller i en Word-fil med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
+I dagens digitala tidsålder är automatisering nyckeln till att öka produktiviteten. Om du arbetar med Word-dokument som innehåller ActiveX-kontroller kan du behöva läsa deras egenskaper för olika ändamål. ActiveX-kontroller, som kryssrutor och knappar, kan innehålla viktig data. Med Aspose.Words för .NET kan du effektivt extrahera och manipulera denna data programmatiskt.
 
-## Steg 1: Dokumentinitiering
+## Förutsättningar
 
- Det första steget är att initiera`Document` objekt genom att ladda Word-dokumentet som innehåller ActiveX-kontrollerna. Se till att byta ut`MyDir` med den faktiska sökvägen till katalogen som innehåller dokumentet.
+Innan vi börjar, se till att du har följande:
+
+1.  Aspose.Words för .NET Library: Du kan ladda ner det från[här](https://releases.aspose.com/words/net/).
+2. Visual Studio eller någon C# IDE: För att skriva och köra din kod.
+3. Ett Word-dokument med ActiveX-kontroller: Till exempel "ActiveX-kontroller.docx".
+4. Grundläggande kunskaper i C#: Förtrogenhet med C#-programmering är nödvändig för att följa med.
+
+## Importera namnområden
+
+Låt oss först importera de nödvändiga namnområdena för att arbeta med Aspose.Words för .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## Steg 2: Återställ ActiveX-kontroller
+## Steg 1: Ladda Word-dokumentet
 
- I det här steget går vi igenom var och en`Shape` av dokumentet för att hämta ActiveX-kontrollerna och läsa deras egenskaper.
+För att börja måste du ladda Word-dokumentet som innehåller ActiveX-kontrollerna.
+
+```csharp
+// Sökväg till din dokumentkatalog
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## Steg 2: Initiera en sträng för att hålla egenskaper
+
+Initiera sedan en tom sträng för att lagra egenskaperna för ActiveX-kontrollerna.
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-{
-     if (shape.OleFormat is null) break;
-
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
-
-         properties += "\n";
-     }
-}
-
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-Console.WriteLine("\n" + properties);
 ```
 
-### Exempel på källkod för Läs Active XControl Properties med Aspose.Words för .NET
+## Steg 3: Iterera genom former i dokumentet
 
-Här är den fullständiga källkoden för att läsa egenskaperna för ActiveX-kontroller med Aspose.Words för .NET:
+Vi måste iterera igenom alla former i dokumentet för att hitta ActiveX-kontrollerna.
 
 ```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        // Bearbeta ActiveX-kontrollen
+    }
+}
+```
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+## Steg 4: Extrahera egenskaper från ActiveX-kontroller
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+Inom slingan, kontrollera om kontrollen är en Forms2OleControl. Om det är det, gjuta det och extrahera egenskaperna.
 
-			properties += "\n";
-		}
-	}
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
+}
+
+properties += "\n";
+```
+
+## Steg 5: Räkna totalt ActiveX-kontroller
+
+Efter att ha itererat genom alla former, räkna det totala antalet ActiveX-kontroller som hittades.
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## Steg 6: Visa egenskaperna
+
+Skriv slutligen ut de extraherade egenskaperna till konsolen.
+
+```csharp
+Console.WriteLine("\n" + properties);
 ```
 
 ## Slutsats
 
-Den här guiden visade hur du läser egenskaperna för ActiveX-kontroller i en Word-fil med Aspose.Words för .NET. Genom att följa de beskrivna stegen kan du initiera dokumentet, hämta ActiveX-kontroller och läsa deras egenskaper. Använd exempelkoden som tillhandahålls som utgångspunkt och anpassa den efter dina specifika behov.
+Och där har du det! Du har framgångsrikt lärt dig hur du läser ActiveX-kontrollegenskaper från ett Word-dokument med Aspose.Words för .NET. Denna handledning omfattade att ladda ett dokument, iterera genom former och extrahera egenskaper från ActiveX-kontroller. Genom att följa dessa steg kan du automatisera extraheringen av viktig data från dina Word-dokument, vilket förbättrar ditt arbetsflödeseffektivitet.
 
-Genom att läsa egenskaperna för ActiveX-kontroller kan du extrahera viktig information från dina Word-filer som innehåller dessa kontroller. Aspose.Words för .NET erbjuder kraftfulla funktioner för ordbehandling med ActiveX-kontroller och automatisering av din dokumentbehandling.
+## FAQ's
 
-### Vanliga frågor
+### Vad är ActiveX-kontroller i Word-dokument?
+ActiveX-kontroller är interaktiva objekt inbäddade i Word-dokument, såsom kryssrutor, knappar och textfält, som används för att skapa formulär och automatisera uppgifter.
 
-#### F: Vad är det första steget för att läsa egenskaperna för ActiveX-kontroller i en Word-fil?
+### Kan jag ändra egenskaperna för ActiveX-kontroller med Aspose.Words för .NET?
+Ja, Aspose.Words för .NET låter dig ändra egenskaperna för ActiveX-kontroller programmatiskt.
 
- S: Det första steget är att initiera`Document` objekt genom att ladda Word-dokumentet som innehåller ActiveX-kontrollerna. Se till att byta ut`MyDir` med den faktiska sökvägen till katalogen som innehåller dokumentet.
+### Är Aspose.Words för .NET gratis att använda?
+ Aspose.Words för .NET erbjuder en gratis provperiod, men du måste köpa en licens för fortsatt användning. Du kan få en gratis provperiod[här](https://releases.aspose.com/).
 
-#### F: Hur får jag in ActiveX-kontroller i dokumentet?
+### Kan jag använda Aspose.Words för .NET med andra .NET-språk än C#?
+Ja, Aspose.Words för .NET kan användas med alla .NET-språk, inklusive VB.NET och F#.
 
- S: För att hämta ActiveX-kontroller måste du iterera igenom var och en`Shape` av dokumentet och kontrollera om det är en ActiveX-kontroll. Använd`OleFormat` egendom av`Shape` för att komma åt`OleControl` objekt och hämta de nödvändiga egenskaperna.
-
-#### F: Vilka egenskaper för ActiveX-kontroller kan jag läsa?
-
-S: Du kan läsa olika egenskaper för ActiveX-kontroller, såsom bildtext, värde, aktiverat eller inaktiverat tillstånd, typ och barnnoder som är associerade med kontrollen.
-
-#### F: Hur kan jag få det totala antalet ActiveX-kontroller i dokumentet?
-
- S: För att få det totala antalet ActiveX-kontroller i dokumentet kan du använda`GetChildNodes` metod för`Document` objekt som anger`NodeType.Shape` typ och inklusive underordnade noder.
+### Var kan jag hitta mer dokumentation om Aspose.Words för .NET?
+ Du kan hitta detaljerad dokumentation[här](https://reference.aspose.com/words/net/).

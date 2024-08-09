@@ -46,7 +46,7 @@ Ställ in sökvägen till din katalog så här:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till var du vill lagra dina Word-dokument. Detta kommer att vara din lekplats för handledningen!
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till var du vill lagra dina Word-dokument. Detta kommer att vara din lekplats för handledningen!
 
 ## Steg 2: Skapa ett nytt Word-dokument
 

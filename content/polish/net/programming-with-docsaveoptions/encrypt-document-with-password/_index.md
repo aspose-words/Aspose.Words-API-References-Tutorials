@@ -14,12 +14,12 @@ Czy zdarzyło Ci się kiedyś zabezpieczyć dokument hasłem? Nie jesteś sam. W
 ## Warunki wstępne
 
 Zanim zabrudzimy sobie ręce kodem, potrzebujemy kilku rzeczy:
-1.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne wybrane środowisko C# IDE.
 3. .NET Framework: Upewnij się, że masz go zainstalowany.
 4.  Licencja: Możesz zacząć od[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla pełnych funkcji.
 
-Mam wszystko? Świetnie! Przejdźmy do konfiguracji naszego projektu.
+Masz wszystko? Świetnie! Przejdźmy do konfiguracji naszego projektu.
 
 ## Importuj przestrzenie nazw
 
@@ -91,7 +91,7 @@ masz to! Właśnie nauczyłeś się, jak szyfrować dokument hasłem przy użyci
 ## Często zadawane pytania
 
 ### Czy mogę zastosować inny rodzaj szyfrowania?
- Tak, Aspose.Words dla .NET obsługuje różne metody szyfrowania. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, Aspose.Words dla .NET obsługuje różne metody szyfrowania. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### Co się stanie, jeśli zapomnę hasła do dokumentu?
 Niestety, jeśli zapomnisz hasła, nie będziesz mieć dostępu do dokumentu. Upewnij się, że Twoje hasła są bezpieczne!

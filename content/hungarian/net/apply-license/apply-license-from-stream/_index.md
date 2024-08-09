@@ -15,7 +15,7 @@ Sziasztok kódolótársak! Ha az Aspose.Words for .NET világába merül, az egy
 
 Mielőtt bemocskolnánk a kezünket, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
 2.  Licencfájl: érvényes licencfájlra van szüksége. Ha nincs, akkor kaphat a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) tesztelési célokra.
 3. Alapvető C# ismeretek: Feltételezzük a C# programozás alapvető ismereteit.
 
@@ -52,7 +52,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.li
 
 ## 3. lépés: Alkalmazza a licencet
 
- Belül`using` blokk, akkor hívja a`SetLicense` módszer az Önön`license` objektum, áthaladva a memóriafolyamban. Ez a metódus beállítja az Aspose.Words licencét.
+ Azon belül`using` blokk, akkor hívja a`SetLicense` módszer az Önön`license` objektum, áthaladva a memóriafolyamban. Ez a metódus beállítja az Aspose.Words licencét.
 
 ```csharp
 license.SetLicense(stream);
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Következtetés
 
-És megvan! Az Aspose.Words for .NET-ben található adatfolyamból származó licenc alkalmazása egyszerű folyamat, ha ismeri a lépéseket. Az útmutató követésével biztosítja, hogy alkalmazása korlátlanul ki tudja használni az Aspose.Words teljes képességét. Ha bármilyen problémába ütközik, ne habozzon nézni a[dokumentáció](https://reference.aspose.com/words/net/) vagy kérjen segítséget a[támogatói fórum](https://forum.aspose.com/c/words/8). Boldog kódolást!
+És megvan! Az Aspose.Words for .NET-ben található adatfolyamból származó licenc alkalmazása egyszerű folyamat, ha ismeri a lépéseket. Az útmutató követésével biztosítja, hogy alkalmazása korlátlanul ki tudja használni az Aspose.Words teljes képességét. Ha bármilyen problémába ütközik, ne habozzon nézni a[dokumentáció](https://reference.aspose.com/words/net/) vagy kérjen segítséget a[támogatási fórum](https://forum.aspose.com/c/words/8). Boldog kódolást!
 
 ## GYIK
 

@@ -18,7 +18,7 @@ url: /ko/java/using-document-elements/using-fonts/
 
 코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
-1.  Aspose.Words for Java 라이브러리: Aspose.Words for Java 라이브러리를 다운로드하여 설치했는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java 라이브러리: Aspose.Words for Java 라이브러리를 다운로드하여 설치했는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/java/).
 
 2. Java 개발 환경: Java 개발 환경이 설정되어 있는지 확인하세요.
 

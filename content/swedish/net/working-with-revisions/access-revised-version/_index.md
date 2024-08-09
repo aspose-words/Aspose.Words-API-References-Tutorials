@@ -2,119 +2,137 @@
 title: Få tillgång till reviderad version
 linktitle: Få tillgång till reviderad version
 second_title: Aspose.Words Document Processing API
-description: Få tillgång till en reviderad version av ett Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du kommer åt och visar den reviderade versionen av ett dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för sömlös dokumenthantering.
 type: docs
 weight: 10
 url: /sv/net/working-with-revisions/access-revised-version/
 ---
+## Introduktion
 
-I den här steg-för-steg-guiden kommer vi att visa dig hur du kommer åt den reviderade versionen av ett Word-dokument med Aspose.Words för .NET. Vi kommer att förse dig med den fullständiga källkoden och visa dig hur du formaterar markdown-utdata.
+Har du någonsin behövt få åtkomst till den reviderade versionen av ett dokument programmatiskt? Oavsett om du arbetar med samarbetsprojekt eller helt enkelt behöver hantera dokumentrevisioner, är Aspose.Words för .NET ditt bästa verktyg. Den här handledningen går igenom hela processen, från att ställa in din miljö till att komma åt och visa versioner i ett Word-dokument. Så, låt oss dyka direkt in!
 
-## Steg 1: Ladda dokumentet
+## Förutsättningar
 
-Det första steget är att ladda upp dokumentet som innehåller ändringarna.
+Innan vi börjar behöver du några saker:
+
+1.  Aspose.Words för .NET Library: Du kan ladda ner det[här](https://releases.aspose.com/words/net/).
+2. Utvecklingsmiljö: Visual Studio eller någon annan IDE som stöder .NET.
+3. Grundläggande kunskaper om C#: Detta hjälper dig att följa med i kodningsdelen.
+
+Se till att du har löst dessa förutsättningar innan du fortsätter till nästa steg.
+
+## Importera namnområden
+
+Först och främst måste du importera de nödvändiga namnrymden. Detta är ett avgörande steg för att säkerställa att din kod känner igen Aspose.Words for .NET-biblioteket.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Låt oss dela upp processen i enkla steg som är lätta att följa.
+
+## Steg 1: Konfigurera dokumentsökvägen
+
+Innan du kan arbeta med dokumentet måste du ange sökvägen där ditt dokument finns. Detta är viktigt för att koden ska hitta och manipulera filen.
+
+```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Steg 2: Ladda dokumentet
+
+ Därefter ska du ladda dokumentet i din ansökan. Detta steg innebär att skapa en ny`Document` objekt och initialisera det med sökvägen till ditt dokument.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## Steg 3: Uppdatera listetiketter
+
+Om ditt dokument innehåller listor är det viktigt att uppdatera listetiketterna. Detta säkerställer att alla listobjekt är korrekt numrerade och formaterade.
+
+```csharp
 doc.UpdateListLabels();
 ```
 
-## Steg 2: Få tillgång till den reviderade versionen
+## Steg 4: Byt till den reviderade versionen
 
-Vi går nu vidare till den reviderade versionen av dokumentet.
-
-```csharp
-doc.RevisionsView = RevisionsView.Final;
-```
-
-## Steg 3: Bläddra i versioner
-
-Därefter går vi igenom de versioner som finns i dokumentet och visar specifik information för stycken som är listobjekt.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-     if (revision.ParentNode.NodeType == NodeType.Paragraph)
-     {
-         Paragraph paragraph = (Paragraph)revision.ParentNode;
-         if (paragraph.IsListItem)
-         {
-             Console.WriteLine(paragraph.ListLabel.LabelString);
-             Console.WriteLine(paragraph.ListFormat.ListLevel);
-         }
-     }
-}
-```
-
-### Exempel på källkod för Access Revised Version med Aspose.Words för .NET
-
-Här är den fullständiga källkoden för att komma åt den reviderade versionen av ett dokument med Aspose.Words för .NET:
-
-```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-doc.UpdateListLabels();
-
-// Byt till den reviderade versionen av dokumentet.
-doc.RevisionsView = RevisionsView.Final;
-
-foreach (Revision revision in doc.Revisions)
-{
-	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
-	 {
-		 Paragraph paragraph = (Paragraph)revision.ParentNode;
-		 if (paragraph.IsListItem)
-		 {
-			 Console.WriteLine(paragraph.ListLabel.LabelString);
-			 Console.WriteLine(paragraph.ListFormat.ListLevel);
-		 }
-	 }
-}
-```
-
-## Slutsats
-
-den här handledningen lärde vi oss hur man kommer åt den reviderade versionen av ett Word-dokument med Aspose.Words för .NET. Genom att ladda dokumentet, navigera till den reviderade versionen och bläddra igenom revisionerna kunde vi få specifik information för stycken som är listobjekt. Aspose.Words för .NET erbjuder kraftfulla funktioner för att manipulera Word-dokument, inklusive tillgång till recensioner. Du kan nu använda denna kunskap för att komma åt den reviderade versionen av dina egna Word-dokument med Aspose.Words för .NET.
-
-### FAQ's
-
-#### F: Hur laddar jag ett dokument med ändringar i Aspose.Words för .NET?
-
- A: Använd`Document` klass av Aspose.Words för .NET för att ladda ett dokument från en fil som innehåller revisioner. Du kan ange hela dokumentsökvägen.
-
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
-
-#### F: Hur kommer jag åt den reviderade versionen av ett dokument i Aspose.Words för .NET?
-
- A: Använd`RevisionsView` egendom av`Document` objekt för att komma åt den reviderade versionen av dokumentet. Du kan ställa in värdet på`RevisionsView`egendom till`RevisionsView.Final` för att visa den slutliga versionen utan ändringarna.
+Låt oss nu byta till den reviderade versionen av dokumentet. Detta steg är avgörande om du vill komma åt och visa versionerna.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### F: Hur bläddrar jag i dokumentrevisioner i Aspose.Words för .NET?
+## Steg 5: Iteration genom revisioner
 
-A: Använd a`foreach` loop för att iterera genom de versioner som finns i dokumentet. Du kan använda`Revisions` egendom av`Document` objekt för att få en samling av alla versioner av dokumentet.
+ För att komma åt revisionerna måste du iterera dig igenom`Revisions` insamling av dokumentet. Detta steg innebär att du använder en`foreach` loop för att gå igenom varje revision.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     // Bearbeta varje revision här
+    // Ytterligare kod kommer hit
 }
 ```
 
-#### F: Hur kontrollerar man om ett stycke är ett listobjekt i Aspose.Words för .NET?
+## Steg 6: Kontrollera överordnad nodtyp
 
- A: Använd`IsListItem` egendom av`Paragraph` objekt för att kontrollera om ett stycke är ett listobjekt. De`IsListItem` egendom returnerar`true` om stycket är ett listobjekt, annars returneras det`false`.
+ För varje revision, kontrollera om den överordnade noden är av typen`Paragraph`. Detta är viktigt eftersom vi vill komma åt stycket som innehåller revideringen.
+
+```csharp
+if (revision.ParentNode.NodeType == NodeType.Paragraph)
+{
+    // Ytterligare kod kommer hit
+}
+```
+
+## Steg 7: Få åtkomst till stycket
+
+ När du har bekräftat att den överordnade noden är ett stycke, casta den till en`Paragraph` objekt. Detta steg låter dig arbeta med stycket och dess egenskaper.
+
+```csharp
+Paragraph paragraph = (Paragraph)revision.ParentNode;
+```
+
+## Steg 8: Kontrollera om stycket är ett listobjekt
+
+Kontrollera sedan om stycket är ett listobjekt. Detta är viktigt eftersom listobjekt har specifika egenskaper som vi behöver komma åt.
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     // Stycket är ett listobjekt
-}
-else
-{
-     // Stycket är inte ett listobjekt
+    // Ytterligare kod kommer hit
 }
 ```
+
+## Steg 9: Visa listans etikett och nivå
+
+Visa slutligen listetiketten och listnivån för stycket. Det här steget ger användbar information om listobjektet, till exempel dess numrering och indragsnivå.
+
+```csharp
+Console.WriteLine(paragraph.ListLabel.LabelString);
+Console.WriteLine(paragraph.ListFormat.ListLevel);
+```
+
+## Slutsats
+
+Och där har du det! Du har lyckats komma åt den reviderade versionen av ett dokument med Aspose.Words för .NET. Genom att följa dessa steg kan du hantera och visa dokumentrevisioner med lätthet. Oavsett om du har att göra med samarbetsprojekt eller helt enkelt behöver hålla reda på förändringar, har Aspose.Words för .NET dig täckt.
+
+## FAQ's
+
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek som låter dig skapa, redigera och manipulera Word-dokument programmatiskt.
+
+### Kan jag komma åt versioner i alla Word-dokument?
+Ja, så länge dokumentet innehåller revisioner kan du komma åt dem med Aspose.Words för .NET.
+
+### Behöver jag en licens för att använda Aspose.Words för .NET?
+ Ja, du kan få en licens från[här](https://purchase.aspose.com/buy) . De erbjuder också en[gratis provperiod](https://releases.aspose.com/) och a[tillfällig licens](https://purchase.aspose.com/temporary-license/).
+
+### Är Aspose.Words for .NET kompatibelt med alla .NET-versioner?
+Aspose.Words för .NET är kompatibel med ett brett utbud av .NET-versioner. Du kan hitta mer information i[dokumentation](https://reference.aspose.com/words/net/).
+
+### Var kan jag få support för Aspose.Words för .NET?
+ Du kan få stöd från Aspose-communityt på deras[forum](https://forum.aspose.com/c/words/8).

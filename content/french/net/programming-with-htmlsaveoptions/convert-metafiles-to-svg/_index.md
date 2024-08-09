@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", save
 
 ## Conclusion
 
-Et voila! Vous avez converti avec succès les métafichiers en SVG dans votre document Word à l'aide d'Aspose.Words pour .NET. Plutôt cool, non ? Avec seulement quelques lignes de code, vous pouvez améliorer vos documents Word en ajoutant des graphiques vectoriels évolutifs, les rendant ainsi plus dynamiques et visuellement attrayants. Alors n’hésitez plus et essayez-le dans vos projets. Bon codage !
+Et voilà ! Vous avez converti avec succès les métafichiers en SVG dans votre document Word à l'aide d'Aspose.Words pour .NET. Plutôt cool, non ? Avec seulement quelques lignes de code, vous pouvez améliorer vos documents Word en ajoutant des graphiques vectoriels évolutifs, les rendant ainsi plus dynamiques et visuellement attrayants. Alors n’hésitez plus et essayez-le dans vos projets. Bon codage !
 
 ## FAQ
 

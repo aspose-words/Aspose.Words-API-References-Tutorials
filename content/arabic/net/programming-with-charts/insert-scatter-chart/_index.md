@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 2: أدخل المخطط المبعثر
 
- استخدم ال`InsertChart` طريقة`DocumentBuilder` فئة لإدراج مخطط مبعثر في المستند.
+ استخدم`InsertChart` طريقة`DocumentBuilder` فئة لإدراج مخطط مبعثر في المستند.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);

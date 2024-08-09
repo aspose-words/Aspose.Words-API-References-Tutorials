@@ -1,13 +1,13 @@
 ---
-title: Stůl
-linktitle: Stůl
+title: Tabulka
+linktitle: Tabulka
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se vytvářet a přizpůsobovat tabulky v Aspose.Words pro .NET pomocí tohoto podrobného průvodce. Ideální pro generování strukturovaných a vizuálně přitažlivých dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-markdown/table/
 ---
-## Úvod
+## Zavedení
 
 Práce s tabulkami v dokumentech je běžným požadavkem. Ať už generujete sestavy, faktury nebo jakákoli strukturovaná data, tabulky jsou nepostradatelné. V tomto tutoriálu vás provedu vytvářením a přizpůsobením tabulek pomocí Aspose.Words for .NET. Pojďme se ponořit!
 
@@ -16,7 +16,7 @@ Práce s tabulkami v dokumentech je běžným požadavkem. Ať už generujete se
 Než začneme, ujistěte se, že máte následující předpoklady:
 
 - Visual Studio: K psaní a testování kódu potřebujete vývojové prostředí. Visual Studio je dobrá volba.
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ji nemáte, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ji nemáte, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Základní porozumění C#: Je nutné dodržet určitou znalost programování C#.
 
 ## Importovat jmenné prostory
@@ -87,7 +87,7 @@ Vytváření a přizpůsobení tabulek v Aspose.Words pro .NET je jednoduché, j
 ### Je možné přidávat obrázky do buněk tabulky?
  Absolutně! Obrázky můžete vkládat do buněk pomocí`DocumentBuilder.InsertImage` metoda.
 
-### Mohu jednotlivé buňky stylovat jinak?
+### Mohu jednotlivé buňky různě stylovat?
  Ano, na jednotlivé buňky můžete použít různé styly tím, že k nim přistoupíte prostřednictvím`Cells` kolekce řady.
 
 ### Jak odstraním ohraničení z tabulky?

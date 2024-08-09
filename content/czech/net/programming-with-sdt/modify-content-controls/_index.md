@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/modify-content-controls/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste někdy pracovali s dokumenty aplikace Word a potřebovali jste upravit ovládací prvky strukturovaného obsahu – jako prostý text, rozevírací seznamy nebo obrázky – pomocí Aspose.Words pro .NET, jste na správném místě! Structured Document Tags (SDT) jsou výkonné nástroje, díky nimž je automatizace dokumentů snadnější a flexibilnější. V tomto tutoriálu se ponoříme do toho, jak můžete upravit tyto SDT tak, aby vyhovovaly vašim potřebám. Ať už aktualizujete text, měníte výběr v rozevíracím seznamu nebo vyměňujete obrázky, tento průvodce vás provede procesem krok za krokem.
 
@@ -181,4 +181,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-A je to! Úspěšně jste upravili různé typy ovládacích prvků obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+To je vše! Úspěšně jste upravili různé typy ovládacích prvků obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET.

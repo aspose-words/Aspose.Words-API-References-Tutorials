@@ -9,7 +9,7 @@ url: /es/net/add-content-using-documentbuilder/insert-floating-image/
 ---
 ## Introducción
 
-Imagínese crear un informe o propuesta impresionante donde las imágenes estén perfectamente ubicadas para complementar su texto. Con Aspose.Words para .NET, puede lograrlo sin esfuerzo. Esta biblioteca proporciona potentes funciones para la manipulación de documentos, lo que la convierte en una solución de referencia para los desarrolladores. En este tutorial, nos centraremos en insertar una imagen flotante usando la clase DocumentBuilder. Ya sea que sea un desarrollador experimentado o esté comenzando, esta guía lo guiará en cada paso.
+Imagínese crear un informe o propuesta impresionante donde las imágenes estén perfectamente ubicadas para complementar su texto. Con Aspose.Words para .NET, puede lograrlo sin esfuerzo. Esta biblioteca proporciona potentes funciones para la manipulación de documentos, lo que la convierte en una solución de referencia para los desarrolladores. En este tutorial, nos centraremos en insertar una imagen flotante usando la clase DocumentBuilder. Si es un desarrollador experimentado o recién está comenzando, esta guía lo guiará en cada paso.
 
 ## Requisitos previos
 
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 
 Con estos requisitos previos y espacios de nombres implementados, estamos listos para comenzar nuestro tutorial.
 
-Dividamos el proceso de insertar una imagen flotante en un documento de Word en pasos manejables. Cada paso se explicará en detalle para garantizar que pueda seguirlo sin problemas.
+Dividamos el proceso de insertar una imagen flotante en un documento de Word en pasos manejables. Cada paso se explicará en detalle para garantizar que pueda seguirlo sin contratiempos.
 
 ## Paso 1: configura tu proyecto
 
@@ -77,7 +77,7 @@ string imagePath = dataDir + "Transparent background logo.png";
 
 Con todo configurado, insertemos la imagen flotante en el documento.
 
- Utilizar el`InsertImage` método de la`DocumentBuilder` clase para insertar la imagen:
+ Utilice el`InsertImage` método de la`DocumentBuilder` clase para insertar la imagen:
 
 ```csharp
 builder.InsertImage(imagePath,
@@ -134,7 +134,7 @@ Insertar una imagen flotante en un documento de Word usando Aspose.Words para .N
 
 ### ¿Qué otros tipos de envoltura están disponibles para imágenes?
 
- Aspose.Words admite varios tipos de envoltura, como`Inline`, `TopBottom`, `Tight`, `Through`, y más. Puede elegir el que mejor se adapte al diseño de su documento.
+ Aspose.Words admite varios tipos de envoltura, como`Inline`, `TopBottom`, `Tight`, `Through`y más. Puede elegir el que mejor se adapte al diseño de su documento.
 
 ### ¿Puedo utilizar diferentes formatos de imagen?
 

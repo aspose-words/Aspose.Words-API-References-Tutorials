@@ -55,7 +55,7 @@ doc.FirstSection.Remove();
 ## FAQ
 
 ### Bisakah saya menghapus beberapa bagian sekaligus?
-Ya kamu bisa. Cukup ulangi bagian yang ingin Anda hapus dan hapus satu per satu.
+Ya, kamu bisa. Cukup ulangi bagian yang ingin Anda hapus dan hapus satu per satu.
 
 ### Apakah Aspose.Words untuk .NET gratis?
  Aspose.Words menawarkan uji coba gratis yang bisa Anda dapatkan[Di Sini](https://releases.aspose.com/) Untuk fitur lengkap, Anda perlu membeli lisensi[Di Sini](https://purchase.aspose.com/buy).

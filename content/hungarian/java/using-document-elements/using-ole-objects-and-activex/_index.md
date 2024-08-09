@@ -2,7 +2,7 @@
 title: OLE-objektumok és ActiveX-vezérlők használata az Aspose.Words for Java-ban
 linktitle: OLE-objektumok és ActiveX-vezérlők használata
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg az OLE objektumok és ActiveX-vezérlők használatát az Aspose.Words for Java programban. Könnyedén hozhat létre interaktív dokumentumokat. Kezd el most!
+description: Ismerje meg az OLE objektumok és ActiveX-vezérlők használatát az Aspose.Words for Java programban. Könnyedén hozhat létre interaktív dokumentumokat. Kezdje el most!
 type: docs
 weight: 21
 url: /hu/java/using-document-elements/using-ole-objects-and-activex/
@@ -112,7 +112,7 @@ Ebben a kódban egy Word-dokumentumban lévő alakzatokat iteráljuk, azonosítj
 
 ### Következtetés
 
-Gratulálunk! Megtanulta, hogyan kell OLE-objektumokkal és ActiveX-vezérlőkkel dolgozni az Aspose.Words for Java programban. Ezek a funkciók a lehetőségek világát nyitják meg dinamikus és interaktív dokumentumok létrehozásához.
+Gratulálok! Megtanulta, hogyan kell OLE-objektumokkal és ActiveX-vezérlőkkel dolgozni az Aspose.Words for Java programban. Ezek a funkciók a lehetőségek világát nyitják meg dinamikus és interaktív dokumentumok létrehozásához.
 
 ### GYIK
 

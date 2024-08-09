@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
-## introduzione
+## Introduzione
 
 Ehi, collega programmatore! Ti sei mai trovato intrappolato nella rete delle manipolazioni dei documenti Word, cercando di capire come spostarti con precisione alla fine del segnalibro e aggiungere contenuto subito dopo? Bene, oggi è il tuo giorno fortunato! Stiamo approfondendo Aspose.Words per .NET, una potente libreria che ti consente di gestire i documenti Word come un professionista. Questo tutorial ti guiderà attraverso i passaggi per spostarti alla fine di un segnalibro e inserire del testo lì. Portiamo questo spettacolo in viaggio!
 
@@ -16,7 +16,7 @@ Ehi, collega programmatore! Ti sei mai trovato intrappolato nella rete delle man
 Prima di iniziare, assicuriamoci di avere tutto ciò di cui abbiamo bisogno:
 
 -  Visual Studio: puoi scaricarlo da[Qui](https://visualstudio.microsoft.com/).
--  Aspose.Words per .NET: prendilo da[Link per scaricare](https://releases.aspose.com/words/net/).
+-  Aspose.Words per .NET: prendilo da[collegamento per il download](https://releases.aspose.com/words/net/).
 -  Una licenza Aspose.Words valida: puoi ottenere una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/) se non ne hai uno.
 
 E, naturalmente, una conoscenza di base di C# e .NET sarà molto utile.
@@ -138,7 +138,7 @@ Ecco qua! Hai appena imparato come spostarti alla fine di un segnalibro in un do
 
 ### 3. Posso inserire altri tipi di contenuto alla fine del segnalibro?
 
- Sì, DocumentBuilder ti consente di inserire vari tipi di contenuto come tabelle, immagini e altro. Controlla il[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ Sì, DocumentBuilder ti consente di inserire vari tipi di contenuto come tabelle, immagini e altro. Controlla il[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli
 
 ### 4. Come posso ottenere una licenza temporanea per Aspose.Words?
 

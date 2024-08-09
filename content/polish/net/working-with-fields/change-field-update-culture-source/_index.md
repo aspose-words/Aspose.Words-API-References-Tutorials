@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Następnie musimy wstawić pola do dokumentu. W tym przykładzie wstawimy dwa pola daty. Ustawimy ustawienia regionalne czcionki na niemieckie (LocaleId = 1031), aby zademonstrować, jak kultura wpływa na format daty.
 
 ```csharp
-builder.Font.LocaleId = 1031; // Niemiecki
+builder.Font.LocaleId = 1031; // niemiecki
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");

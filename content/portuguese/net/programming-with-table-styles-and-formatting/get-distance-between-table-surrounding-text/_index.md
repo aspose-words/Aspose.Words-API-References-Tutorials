@@ -95,4 +95,4 @@ Absolutamente! Aspose.Words suporta .NET Core e você pode usar o mesmo código 
 Você pode instalar o Aspose.Words for .NET por meio do NuGet Package Manager no Visual Studio. Basta pesquisar “Aspose.Words” e instalar o pacote.
 
 ### Há alguma limitação nos tipos de documentos suportados pelo Aspose.Words?
- Aspose.Words oferece suporte a uma ampla variedade de formatos de documentos, incluindo DOCX, DOC, PDF, HTML e muito mais. Verifica a[documentação](https://reference.aspose.com/words/net/) para obter uma lista completa de formatos suportados.
+ Aspose.Words oferece suporte a uma ampla variedade de formatos de documentos, incluindo DOCX, DOC, PDF, HTML e muito mais. Verifique o[documentação](https://reference.aspose.com/words/net/) para obter uma lista completa de formatos suportados.

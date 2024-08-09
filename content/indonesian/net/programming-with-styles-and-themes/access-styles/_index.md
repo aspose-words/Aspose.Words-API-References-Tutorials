@@ -15,7 +15,7 @@ Apakah Anda siap terjun ke dunia penataan dokumen di Word? Baik Anda sedang meny
 
 Sebelum kita masuk, pastikan Anda memiliki yang berikut ini:
 
-1.  Aspose.Words untuk .NET: Anda harus menginstal perpustakaan ini di lingkungan .NET Anda. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda harus menginstal perpustakaan ini di lingkungan .NET Anda. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Pengetahuan Dasar tentang .NET: Keakraban dengan C# atau bahasa .NET lainnya akan membantu Anda memahami cuplikan kode yang disediakan.
 3. Lingkungan Pengembangan: Pastikan Anda memiliki IDE seperti Visual Studio yang disiapkan untuk menulis dan mengeksekusi kode .NET.
 
@@ -73,7 +73,7 @@ foreach (Style style in styles)
 Berikut rincian fungsi kode ini:
 
 -  Inisialisasi`styleName`: Kita memulai dengan string kosong untuk membuat daftar nama gaya.
--  Ulangi gaya: The`foreach` loop mengulangi masing-masing`Style` dalam`styles` koleksi.
+-  Ulangi gaya: The`foreach` loop mengulangi masing-masing`Style` di`styles` koleksi.
 - Perbarui dan Tampilkan`styleName` : Untuk setiap gaya, kami menambahkan namanya`styleName` dan mencetaknya.
 
 ## Langkah 4: Menyesuaikan Output
@@ -94,7 +94,7 @@ foreach (Style style in styles)
 }
 ```
 
- Dalam contoh ini, kami membedakan antara gaya bawaan dan gaya khusus dengan mencentang`IsBuiltin` Properti.
+ Dalam contoh ini, kami membedakan antara gaya bawaan dan gaya khusus dengan mencentang`IsBuiltin` milik.
 
 ## Kesimpulan
 

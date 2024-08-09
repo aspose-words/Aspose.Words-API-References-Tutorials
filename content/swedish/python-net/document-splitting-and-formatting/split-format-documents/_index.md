@@ -68,7 +68,7 @@ for i, section in enumerate(sections):
 ```
 
 ### Kan jag använda olika formatering på olika stycken inom ett avsnitt?
-Ja, du kan använda olika formatering på stycken i ett avsnitt. Iterera genom styckena i avsnittet och använd önskad formatering med hjälp av`paragraph.runs` fast egendom.
+Ja, du kan använda olika formatering på stycken i ett avsnitt. Iterera genom styckena i avsnittet och använd önskad formatering med hjälp av`paragraph.runs` egendom.
 
 ```python
 for paragraph in section.paragraphs:
@@ -78,7 +78,7 @@ for paragraph in section.paragraphs:
 ```
 
 ### Hur ändrar jag typsnittet för ett specifikt avsnitt?
- Du kan ändra teckensnittsstilen för ett specifikt avsnitt genom att iterera genom styckena i det avsnittet och ställa in`paragraph.runs.font` fast egendom.
+ Du kan ändra teckensnittsstilen för ett specifikt avsnitt genom att iterera genom styckena i det avsnittet och ställa in`paragraph.runs.font` egendom.
 
 ```python
 for paragraph in section.paragraphs:

@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
-## introduzione
+## Introduzione
 
-Sei mai stato perplesso da quegli strani caratteri di controllo invisibili nei tuoi documenti Word? Sono come piccoli gremlin nascosti che possono rovinare la formattazione e la funzionalità. Fortunatamente, Aspose.Words per .NET fornisce una funzionalità utile per mantenere intatti questi caratteri di controllo legacy durante il salvataggio dei documenti. In questo tutorial, approfondiremo come gestire questi caratteri di controllo utilizzando Aspose.Words per .NET. Lo analizzeremo passo dopo passo, assicurandoti di cogliere ogni dettaglio lungo il percorso. Pronto per iniziare? Immergiamoci!
+Sei mai stato perplesso da quegli strani caratteri di controllo invisibili nei tuoi documenti Word? Sono come piccoli gremlin nascosti che possono rovinare la formattazione e la funzionalità. Fortunatamente, Aspose.Words per .NET fornisce una funzionalità utile per mantenere intatti questi caratteri di controllo legacy durante il salvataggio dei documenti. In questo tutorial, approfondiremo come gestire questi caratteri di controllo utilizzando Aspose.Words per .NET. Lo analizzeremo passo dopo passo, assicurandoti di cogliere ogni dettaglio lungo il percorso. Pronti per iniziare? Immergiamoci!
 
 ## Prerequisiti
 
@@ -77,7 +77,7 @@ Infine, salva il documento con le opzioni di salvataggio configurate.
 
 ## Conclusione
 
-il gioco è fatto! Seguendo questi passaggi, puoi assicurarti che i caratteri di controllo legacy vengano preservati quando lavori con documenti Word in Aspose.Words per .NET. Questa funzionalità può essere un vero toccasana, soprattutto quando si ha a che fare con documenti complessi in cui i caratteri di controllo svolgono un ruolo cruciale. 
+Ed ecco qua! Seguendo questi passaggi, puoi assicurarti che i caratteri di controllo legacy vengano preservati quando lavori con documenti Word in Aspose.Words per .NET. Questa funzionalità può essere un vero toccasana, soprattutto quando si ha a che fare con documenti complessi in cui i caratteri di controllo svolgono un ruolo cruciale. 
 
 ## Domande frequenti
 

@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/font-settings-default-instance/
 ---
+## Perkenalan
 
-Selamat datang di tutorial mendalam tentang mengelola pengaturan font menggunakan Aspose.Words untuk .NET. Jika Anda pernah menghadapi tantangan dalam penanganan font di dokumen Anda, panduan ini akan memandu Anda melalui semua yang perlu Anda ketahui untuk menyesuaikan dan mengelola font secara efektif. Ayo selami!
+Selamat datang di tutorial mendalam tentang mengelola pengaturan font menggunakan Aspose.Words untuk .NET. Jika Anda pernah menghadapi tantangan dalam penanganan font di dokumen Anda, panduan ini akan memandu Anda melalui semua yang perlu Anda ketahui untuk menyesuaikan dan mengelola font secara efektif.
 
 ## Prasyarat
 
@@ -17,7 +18,7 @@ Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 - Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda memahami dan menerapkan langkah-langkahnya dengan lancar.
 -  Aspose.Words for .NET Library: Unduh dan instal Aspose.Words for .NET dari[tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Lingkungan yang cocok seperti Visual Studio untuk menulis dan mengeksekusi kode Anda.
-- Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk menerapkan pengaturan font.
+-  Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk menerapkan pengaturan font.
 
 ## Impor Namespace
 
@@ -77,22 +78,22 @@ Selamat! Anda telah menguasai dasar-dasar mengelola pengaturan font menggunakan 
 
 ## FAQ
 
-### Q1: Dapatkah saya menggunakan font dari beberapa folder khusus?
+### Bisakah saya menggunakan font dari beberapa folder khusus?
 
  Ya, Anda dapat menentukan beberapa`FolderFontSource` contoh di dalam`SetFontsSources` metode untuk memasukkan font dari folder yang berbeda.
 
-### Q2: Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?
+### Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?
 
  Anda dapat mengunduh uji coba gratis dari[Asumsikan halaman uji coba gratis](https://releases.aspose.com/).
 
-### Q3: Apakah mungkin untuk menyematkan font langsung ke dalam dokumen?
+### Apakah mungkin untuk menyematkan font langsung ke dalam dokumen?
 
 Aspose.Words memungkinkan penyematan font dalam beberapa format, seperti PDF. Periksa dokumentasi untuk detail lebih lanjut tentang penyematan font.
 
-### Q4: Di mana saya bisa mendapatkan dukungan untuk Aspose.Words?
+### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words?
 
  Untuk dukungan, kunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### Q5: Bisakah saya membeli lisensi sementara?
+### Bisakah saya membeli lisensi sementara?
 
  Ya, Anda bisa mendapatkan lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).

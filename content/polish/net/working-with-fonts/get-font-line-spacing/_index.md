@@ -2,85 +2,100 @@
 title: Uzyskaj odstępy między wierszami czcionki
 linktitle: Uzyskaj odstępy między wierszami czcionki
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: tym samouczku dowiesz się, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak uzyskać odstępy między wierszami czcionki za pomocą Aspose.Words dla .NET, korzystając z tego samouczka krok po kroku. Idealny dla programistów.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/get-font-line-spacing/
 ---
-W tym samouczku pokażemy, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Odstęp między wierszami czcionki określa pionowy odstęp między wierszami tekstu. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+## Wstęp
+
+Aspose.Words dla .NET to potężna biblioteka, która umożliwia programowe tworzenie, manipulowanie i konwertowanie dokumentów programu Word. Jednym z typowych zadań, które możesz wykonać, jest pobranie odstępów między wierszami określonej czcionki w dokumencie. W tym samouczku przeprowadzimy Cię przez proces krok po kroku, upewniając się, że możesz łatwo uzyskać odstępy między wierszami czcionki za pomocą Aspose.Words dla .NET. 
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
 
-## Krok 1: Utwórz nowy dokument i generator dokumentów
- Najpierw utworzymy nowy dokument, tworząc instancję pliku`Document` klasę i narzędzie do tworzenia dokumentów, tworząc instancję`DocumentBuilder` klasa.
+Zanim zagłębimy się w kod, upewnij się, że spełnione są następujące wymagania wstępne:
+
+1.  Aspose.Words dla biblioteki .NET: Pobierz i zainstaluj najnowszą wersję z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko IDE takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
+
+## Importuj przestrzenie nazw
+
+Najpierw musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#. Te przestrzenie nazw umożliwią Ci dostęp do funkcjonalności Aspose.Words.
 
 ```csharp
-// Utwórz nowy dokument
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//Utwórz generator dokumentów
+Podzielmy proces ustalania odstępów między wierszami czcionki na proste, łatwe do wykonania kroki.
+
+## Krok 1: Utwórz nowy dokument
+
+Pierwszym krokiem jest utworzenie nowej instancji dokumentu Word przy użyciu Aspose.Words dla .NET.
+
+```csharp
+Document doc = new Document();
+```
+
+## Krok 2: Zainicjuj DocumentBuider
+
+Następnie musimy zainicjować plik`DocumentBuilder` obiekt. Obiekt ten pomoże nam konstruować i manipulować zawartością dokumentu.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Skonfiguruj czcionkę
- Następnie skonfigurujemy czcionkę, ustawiając`Name` właściwość generatora dokumentów.
+## Krok 3: Ustaw właściwości czcionki
+
+Teraz ustawiamy właściwości czcionki dla tekstu, który chcemy wstawić. W tym przykładzie użyjemy czcionki „Calibri”.
 
 ```csharp
-// Skonfiguruj czcionkę
 builder.Font.Name = "Calibri";
 ```
 
-## Krok 3: Dodaj tekst do dokumentu
-Użyjemy teraz generatora dokumentów, aby dodać sformatowany tekst do dokumentu.
+## Krok 4: Napisz tekst do dokumentu
+
+ Korzystanie z`DocumentBuilder` obiektu, wpisz tekst w dokumencie. W tym tekście zostaną użyte właściwości czcionki, które ustawiliśmy w poprzednim kroku.
 
 ```csharp
-// Dodaj tekst do dokumentu
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## Krok 4: Uzyskaj odstępy między wierszami czcionki
- Teraz uzyskamy dostęp do`Font` obiekt pierwszego akapitu dokumentu i pobierz wartość`LineSpacing` nieruchomość.
+## Krok 5: Pobierz obiekt czcionki
+
+Aby uzyskać odstępy między wierszami, musimy uzyskać dostęp do obiektu czcionki właśnie dodanego tekstu. Można to zrobić, przechodząc po strukturze dokumentu do pierwszego akapitu.
 
 ```csharp
-// Uzyskaj odstępy między wierszami czcionki
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### Przykładowy kod źródłowy funkcji Uzyskaj odstępy między wierszami czcionki przy użyciu Aspose.Words dla .NET 
+## Krok 6: Uzyskaj odstępy między wierszami
+
+Na koniec pobieramy odstępy między wierszami z obiektu czcionki i drukujemy je na konsoli.
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Wniosek
-W tym samouczku widzieliśmy, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET. Odstępy między wierszami czcionki są ważne przy kontrolowaniu odstępów w pionie między wierszami tekstu. Możesz skorzystać z tej funkcji, aby dostosować wygląd tekstu w dokumentach.
 
-### Często zadawane pytania
+masz to! Pobieranie odstępów między wierszami czcionki przy użyciu Aspose.Words dla .NET jest proste, jeśli podzielisz je na te proste kroki. Niezależnie od tego, czy tworzysz nowy dokument, czy pracujesz z już istniejącym, Aspose.Words zapewnia wszystkie narzędzia potrzebne do wydajnego zarządzania właściwościami czcionek.
 
-#### P: Jak mogę zmienić odstępy między wierszami określonego tekstu w dokumencie programu Word?
+## Często zadawane pytania
 
-Odp.: Dzięki Aspose.Words możesz łatwo zmienić odstępy między wierszami określonego tekstu w dokumencie programu Word. Użyj API, aby zaznaczyć żądany tekst i dostosować odstępy między wierszami, podając odpowiednią wartość.
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która pozwala programistom programowo tworzyć, manipulować i konwertować dokumenty programu Word przy użyciu języka C#.
 
-#### P: Czy można zastosować dokładne odstępy między wierszami w dokumencie programu Word?
+### Czy mogę używać Aspose.Words dla .NET w innych językach .NET?
+Tak, możesz używać Aspose.Words dla .NET z dowolnym językiem .NET, w tym VB.NET i F#.
 
-Odp.: Tak, Aspose.Words umożliwia zastosowanie dokładnych odstępów między wierszami w dokumencie programu Word. Za pomocą interfejsu API możesz określić dokładną wartość odstępu między wierszami.
+### Jak mogę pobrać Aspose.Words dla .NET?
+ Możesz pobrać najnowszą wersję Aspose.Words dla .NET z[Tutaj](https://releases.aspose.com/words/net/).
 
-#### P: Jak mogę dostosować odstępy między wierszami w całym dokumencie programu Word?
+### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz uzyskać bezpłatną wersję próbną od[Tutaj](https://releases.aspose.com/).
 
-Odp.: Dzięki Aspose.Words możesz łatwo dostosować odstępy między wierszami w całym dokumencie programu Word. Użyj metod udostępnianych przez API, aby określić żądany odstęp między wierszami dla całego dokumentu.
-
-#### P: Czy Aspose.Words obsługuje wiele odstępów między wierszami?
-
-Odp.: Tak, Aspose.Words obsługuje wiele odstępów między wierszami w dokumentach programu Word. Dla linii tekstu możesz ustawić wielokrotne odstępy, na przykład 1,5-krotne lub 2-krotne odstępy normalne.
-
-#### P: Jak mogę uniknąć problemów z nakładaniem się linii podczas dostosowywania odstępów między wierszami?
-
-Odp.: Aby uniknąć problemów z nakładaniem się linii podczas dostosowywania odstępów między liniami, pamiętaj o wybraniu odpowiednich wartości odstępów. Przetestuj także ostateczne renderowanie dokumentu, aby upewnić się, że tekst pozostaje czytelny i dobrze sformatowany.
+### Gdzie mogę znaleźć dokumentację Aspose.Words dla .NET?
+ Dostępna jest dokumentacja Aspose.Words dla .NET[Tutaj](https://reference.aspose.com/words/net/).

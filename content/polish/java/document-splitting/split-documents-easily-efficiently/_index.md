@@ -10,7 +10,7 @@ url: /pl/java/document-splitting/split-documents-easily-efficiently/
 
 tym przewodniku krok po kroku odkryjemy, jak łatwo i efektywnie dzielić dokumenty za pomocą Aspose.Words dla Java. Aspose.Words dla Java to potężna biblioteka do przetwarzania tekstu i przetwarzania dokumentów, która umożliwia programistom programową pracę z dokumentami programu Word, zapewniając szeroką gamę funkcji do płynnego manipulowania dokumentami i zarządzania nimi.
 
-## 1. Wstęp
+## 1. Wprowadzenie
 
 Aspose.Words for Java to interfejs API języka Java, który umożliwia programistom łatwe tworzenie, modyfikowanie, konwertowanie i dzielenie dokumentów programu Word. W tym artykule skupimy się na funkcji dzielenia dokumentów w Aspose.Words, która jest niezwykle przydatna w przypadku dużych dokumentów, które należy podzielić na mniejsze, łatwiejsze do zarządzania części.
 

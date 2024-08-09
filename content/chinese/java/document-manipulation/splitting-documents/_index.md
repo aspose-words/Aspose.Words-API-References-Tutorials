@@ -96,7 +96,7 @@ extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 
 ### 如何开始使用 Aspose.Words for Java？
 
- Aspose.Words for Java 入门非常简单。您可以从 Aspose 网站下载该库，并按照文档中的说明进行安装和使用。请访问[Aspose.Words for Java 文档](https://reference.aspose.com/words/java/)更多细节。
+ Aspose.Words for Java 入门非常简单。您可以从 Aspose 网站下载该库，并按照文档中的说明进行安装和使用。请访问[Aspose.Words for Java 文档](https://reference.aspose.com/words/java/)了解更多详情。
 
 ### Aspose.Words for Java 的主要功能是什么？
 
@@ -112,4 +112,4 @@ Aspose.Words for Java 提供广泛的功能，包括文档创建、编辑、转�
 
 ### 我可以在哪里访问 Aspose.Words for Java 并开始使用它？
 
-您可以从 Aspose 网站访问并下载 Aspose.Words for Java。立即访问[Aspose.Words for Java 下载](https://releases.aspose.com/words/java/).
+您可以从 Aspose 网站访问和下载 Aspose.Words for Java。立即访问[Aspose.Words for Java 下载](https://releases.aspose.com/words/java/).

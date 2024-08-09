@@ -54,7 +54,7 @@ Table table = doc.FirstSection.Body.Tables[0];
 
 ## Schritt 3: In horizontal verbundene Zellen konvertieren
 
- Nun werden wir die vertikal verbundenen Zellen in der Tabelle in horizontal verbundene Zellen umwandeln. Dies geschieht mit dem`ConvertToHorizontallyMergedCells` Methode.
+ Nun werden wir die vertikal verbundenen Zellen in der Tabelle in horizontal verbundene Zellen umwandeln. Dies geschieht mit dem`ConvertToHorizontallyMergedCells` Verfahren.
 
 ```csharp
 // Vertikal verbundene Zellen in horizontal verbundene Zellen umwandeln
@@ -71,13 +71,13 @@ Und das war’s! Sie haben mithilfe von Aspose.Words für .NET erfolgreich verti
 Aspose.Words für .NET ist in erster Linie für .NET-Sprachen wie C# konzipiert. Sie können es jedoch auch mit anderen .NET-unterstützten Sprachen wie VB.NET verwenden.
 
 ### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?  
- Ja, Sie können ein[Kostenlose Testphase](https://releases.aspose.com/) von der Aspose-Website.
+ Ja, Sie können ein[Kostenlose Testversion](https://releases.aspose.com/) von der Aspose-Website.
 
 ### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?  
- Besuchen Sie die[Aspose-Supportforum](https://forum.aspose.com/c/words/8) zur Hilfe.
+ Besuchen Sie die[Aspose-Supportforum](https://forum.aspose.com/c/words/8) um Hilfe.
 
 ### Kann ich eine Lizenz aus einer Datei oder einem Stream anwenden?  
 Ja, Aspose.Words für .NET ermöglicht es Ihnen, eine Lizenz sowohl aus einer Datei als auch aus einem Stream anzuwenden. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/).
 
 ### Welche weiteren Funktionen bietet Aspose.Words für .NET?  
- Aspose.Words für .NET bietet eine breite Palette an Funktionen, darunter Dokumenterstellung, -bearbeitung, -konvertierung und -darstellung. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Aspose.Words für .NET bietet eine breite Palette an Funktionen, darunter Dokumenterstellung, -bearbeitung, -konvertierung und -darstellung. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.

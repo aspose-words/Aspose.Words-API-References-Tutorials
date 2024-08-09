@@ -91,7 +91,7 @@ Enregistrez votre fichier et exécutez le projet. Si tout est correctement confi
 
 ## Conclusion
 
-Et voila! Vous avez signé avec succès un document Word chiffré à l'aide d'Aspose.Words pour .NET. Avec cette puissante bibliothèque, la signature numérique devient un jeu d'enfant, même pour les fichiers cryptés. Bon codage !
+Et voilà ! Vous avez signé avec succès un document Word chiffré à l'aide d'Aspose.Words pour .NET. Avec cette puissante bibliothèque, la signature numérique devient un jeu d'enfant, même pour les fichiers cryptés. Bon codage !
 
 ## FAQ
 

@@ -55,7 +55,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtB
 
 ## Stap 4: Documenten invoegen tijdens het samenvoegen
 
-U kunt documenten invoegen tijdens een samenvoegbewerking in Aspose.Words voor Java. Hier is hoe:
+U kunt documenten invoegen tijdens een samenvoegbewerking in Aspose.Words voor Java. Hier ziet u hoe:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -96,7 +96,7 @@ mainDoc.save("Your Directory Path" + "CombinedDocument.docx");
 
 ### Hoe voeg ik documenten in tijdens het samenvoegen in Aspose.Words voor Java?
 
-U kunt documenten invoegen tijdens het samenvoegen van documenten in Aspose.Words voor Java door een callback voor het samenvoegen van velden in te stellen en het document op te geven dat moet worden ingevoegd. Hier is een voorbeeld:
+U kunt documenten invoegen tijdens het samenvoegen in Aspose.Words voor Java door een callback voor het samenvoegen van velden in te stellen en het document op te geven dat moet worden ingevoegd. Hier is een voorbeeld:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "MainDocument.docx");

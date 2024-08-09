@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã cải thiện thành công việc định vị văn bản trong tệp PDF của mình bằng Aspose.Words for .NET. Tính năng mạnh mẽ này đảm bảo rằng các tệp PDF của bạn trông sắc nét và chuyên nghiệp, với văn bản được định vị chính xác ở vị trí cần thiết.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn đã cải thiện thành công việc định vị văn bản trong tệp PDF của mình bằng Aspose.Words for .NET. Tính năng mạnh mẽ này đảm bảo rằng các tệp PDF của bạn trông sắc nét và chuyên nghiệp, với văn bản được định vị chính xác ở vị trí cần thiết.
 
 ## Câu hỏi thường gặp
 

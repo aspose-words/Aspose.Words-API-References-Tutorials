@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste někdy potřebovali vytvořit profesionální dokument aplikace Word, víte, jak důležitý může být obsah (TOC). Nejenže uspořádá váš obsah, ale také dodá nádech profesionality. Přizpůsobit TOC tak, aby odpovídal vašemu stylu, však může být trochu složité. V tomto tutoriálu si projdeme, jak změnit styl obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Jste připraveni se ponořit? Začněme!
 
@@ -80,4 +80,4 @@ Ano, můžete upravit různé styly v rámci obsahu přístupem k různým úrov
 Ne, Aspose.Words for .NET nevyžaduje instalaci aplikace Microsoft Word na váš počítač.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
- Můžete najít podrobnější dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnější dokumentaci[zde](https://reference.aspose.com/words/net/).

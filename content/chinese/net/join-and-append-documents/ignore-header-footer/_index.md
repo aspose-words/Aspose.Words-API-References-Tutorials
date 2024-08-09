@@ -113,7 +113,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ### 是否可以保留页眉和页脚而不是忽略它们？
 
-当然可以。只需设置`IgnoreHeaderFooter`到`false`在里面`ImportFormatOptions`.
+当然可以。只需设置`IgnoreHeaderFooter`到`false`在`ImportFormatOptions`.
 
 ### 我需要许可证才能使用 Aspose.Words for .NET 吗？
 

@@ -29,7 +29,7 @@ using System.Drawing;
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuilder-t
 
- Kezdje a dokumentum beállításával és inicializálásával`DocumentBuilder` tárgy.
+ Kezdje a dokumentum beállításával és inicializálásával`DocumentBuilder` objektum.
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -56,7 +56,7 @@ paragraphFormat.KeepTogether = true;
 
 ## 3. lépés: Szúrja be a bekezdést
 
- Most adja hozzá a kívánt tartalmat a`WriteLn` a metódusa`DocumentBuilder`.
+ Most adja hozzá a kívánt tartalmat a`WriteLn` módszere`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
@@ -70,7 +70,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen beszúrt egy formázott bekezdést egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a folyamat lehetővé teszi, hogy dinamikusan, az alkalmazás igényeihez szabott, gazdag tartalmat állítson elő.
+Gratulálok! Sikeresen beszúrt egy formázott bekezdést egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a folyamat lehetővé teszi, hogy dinamikusan, az alkalmazás igényeihez szabott, gazdag tartalmat állítson elő.
 
 ## GYIK
 
@@ -87,4 +87,4 @@ Igen, az Aspose.Words for .NET biztosítja a kompatibilitást a Microsoft Word k
 Igen, az Aspose.Words for .NET használatával programozottan titkosíthatja és biztonságossá teheti dokumentumait.
 
 ### Hol találok további segítséget és támogatást az Aspose.Words for .NET-hez?
- Meglátogatni a[Aspose.Words fórum](https://forum.aspose.com/c/words/8) közösségi támogatásra és beszélgetésekre.
+ Látogassa meg a[Aspose.Words fórum](https://forum.aspose.com/c/words/8) közösségi támogatásra és beszélgetésekre.

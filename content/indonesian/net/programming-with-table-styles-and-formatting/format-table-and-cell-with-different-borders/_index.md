@@ -132,13 +132,13 @@ Dan itu dia! Anda baru saja mempelajari cara memformat tabel dan sel dengan bata
 ## FAQ
 
 ### Bisakah saya menggunakan gaya batas yang berbeda untuk setiap sel?
- Ya, Anda dapat mengatur gaya batas yang berbeda untuk setiap sel dengan menggunakan`CellFormat.Borders` Properti.
+ Ya, Anda dapat mengatur gaya batas yang berbeda untuk setiap sel dengan menggunakan`CellFormat.Borders` milik.
 
 ### Bagaimana cara menghapus semua batas dari tabel?
  Anda dapat menghapus semua batas dengan mengatur gaya batas menjadi`LineStyle.None`.
 
 ### Apakah mungkin untuk menetapkan warna batas yang berbeda untuk setiap sel?
- Sangat! Anda dapat menyesuaikan warna batas untuk setiap sel menggunakan`CellFormat.Borders.Color` Properti.
+ Sangat! Anda dapat menyesuaikan warna batas untuk setiap sel menggunakan`CellFormat.Borders.Color` milik.
 
 ### Bisakah saya menggunakan gambar sebagai latar belakang sel?
 Meskipun Aspose.Words tidak secara langsung mendukung gambar sebagai latar belakang sel, Anda dapat menyisipkan gambar ke dalam sel dan menyesuaikan ukurannya untuk menutupi area sel.

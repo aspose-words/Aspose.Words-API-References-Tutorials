@@ -95,7 +95,7 @@ Genom att följa dessa steg har du framgångsrikt skapat ett dokument med indrag
  Ja, du kan ange olika tecken för listindrag genom att ställa in`Character` fastighet i`TxtSaveOptions`.
 
 ### Hur använder jag punktpunkter istället för siffror i listor?
- Använda sig av`ListFormat.ApplyBulletDefault()` istället för`ApplyNumberDefault()` för att skapa en punktlista.
+ Använda`ListFormat.ApplyBulletDefault()` i stället för`ApplyNumberDefault()` för att skapa en punktlista.
 
 ### Kan jag justera antalet blanksteg för indrag dynamiskt?
  Ja, du kan justera`ListIndentation.Count` egenskap för att ställa in antalet utrymmen baserat på dina krav.

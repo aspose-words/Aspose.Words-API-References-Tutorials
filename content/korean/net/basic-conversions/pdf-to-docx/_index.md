@@ -9,7 +9,7 @@ url: /ko/net/basic-conversions/pdf-to-docx/
 ---
 ## 소개
 
-안녕하세요, 기술 매니아 여러분! 특히 PDF 및 Word 문서를 처리할 때 파일 형식을 변환하는 웹에서 얽힌 적이 있습니까? 그렇다면, 당신은 혼자가 아닙니다. 우리는 모두 머리를 긁적이며 PDF를 Word 문서(Docx)로 변환하는 가장 좋은 방법을 찾으려고 노력했습니다. 운 좋게도 Aspose.Words for .NET은 슈퍼히어로처럼 급습하여 이 작업을 아주 쉽게 만들어줍니다. 오늘은 Aspose.Words for .NET을 사용하여 PDF를 Word 형식으로 저장하는 방법에 대한 자세한 단계별 가이드를 살펴보겠습니다. 인생을 단순화할 준비가 되셨나요? 시작하자!
+안녕하세요, 기술 매니아 여러분! 특히 PDF 및 Word 문서를 처리할 때 파일 형식을 변환하는 웹에서 얽힌 적이 있습니까? 그렇다면, 당신은 혼자가 아닙니다. 우리는 모두 머리를 긁적이며 PDF를 Word 문서(Docx)로 변환하는 가장 좋은 방법을 찾으려고 노력했습니다. 운 좋게도 Aspose.Words for .NET은 슈퍼히어로처럼 급습하여 이 작업을 아주 쉽게 만들어줍니다. 오늘은 Aspose.Words for .NET을 사용하여 PDF를 Word 형식으로 저장하는 방법에 대한 자세한 단계별 가이드를 살펴보겠습니다. 인생을 단순화할 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");
 예, Aspose.Words는 원본 형식을 훌륭하게 보존합니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
- 평가용으로 임시 라이선스를 사용할 수 있지만 상업적인 용도로 사용하려면 정식 라이선스를 구입해야 합니다. 확인해 보세요[구매 페이지](https://purchase.aspose.com/buy) 상세 사항은.
+ 평가용으로 임시 라이선스를 사용할 수 있지만 상업적인 용도로 사용하려면 정식 라이선스를 구입해야 합니다. 확인해 보세요[구매 페이지](https://purchase.aspose.com/buy) 자세한 내용은
 
 ### 다른 운영 체제에서 .NET용 Aspose.Words를 사용할 수 있습니까?
 예, Aspose.Words for .NET은 크로스 플랫폼이며 Windows, Linux 및 macOS에서 사용할 수 있습니다.

@@ -8,7 +8,7 @@ weight: 14
 url: /vi/python-net/document-structure-and-content-manipulation/document-footnotes-endnotes/
 ---
 
-Chú thích cuối trang và chú thích cuối trang là những thành phần thiết yếu trong tài liệu Word cho phép bạn cung cấp thông tin hoặc tài liệu tham khảo bổ sung mà không làm gián đoạn luồng nội dung chính của bạn. Những công cụ này thường được sử dụng trong văn bản mang tính học thuật, chuyên nghiệp và thậm chí là sáng tạo để nâng cao tính rõ ràng và độ tin cậy trong tác phẩm của bạn. Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng hiệu quả chú thích cuối trang và chú thích cuối trong tài liệu Word của bạn bằng API Aspose.Words cho Python.
+Chú thích cuối trang và chú thích cuối là những thành phần thiết yếu trong tài liệu Word cho phép bạn cung cấp thông tin hoặc tài liệu tham khảo bổ sung mà không làm gián đoạn luồng nội dung chính của bạn. Những công cụ này thường được sử dụng trong văn bản mang tính học thuật, chuyên nghiệp và thậm chí là sáng tạo để nâng cao tính rõ ràng và độ tin cậy trong tác phẩm của bạn. Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng hiệu quả chú thích cuối trang và chú thích cuối trong tài liệu Word của bạn bằng API Aspose.Words cho Python.
 
 ## Giới thiệu về chú thích cuối trang và chú thích cuối trang
 

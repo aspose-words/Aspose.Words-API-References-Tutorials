@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## 6. lépés: Hozzon létre egy táblázatot és adjon hozzá sorokat
 
- Újat csinálni`Table`objektumot, és adja meg a sorok és oszlopok számát.
+ Hozzon létre egy újat`Table`objektumot, és adja meg a sorok és oszlopok számát.
 
 ```java
 Table table = new Table(doc);
@@ -62,7 +62,7 @@ for (int row = 0; row < rowCount; row++) {
 
 ## 7. lépés: Adja hozzá a táblázatot a dokumentumhoz
 
- Illessze be a táblázatot a dokumentumba a gombbal`appendChild()` módszere a`Document` tárgy.
+ Illessze be a táblázatot a dokumentumba a gombbal`appendChild()` módszere a`Document` objektum.
 
 ```java
 doc.getFirstSection().getBody().appendChild(table);
@@ -115,7 +115,7 @@ public class AddTableInWord {
 
 ## Következtetés
 
-Gratulálunk! Sikeresen hozzáadott egy táblázatot egy Word-dokumentumhoz az Aspose.Words for Java használatával. Az Aspose.Words robusztus és hatékony API-t biztosít a Word-dokumentumokkal való munkavégzéshez, megkönnyítve a dokumentumokon belüli táblázatok és egyéb elemek létrehozását, kezelését és testreszabását.
+Gratulálok! Sikeresen hozzáadott egy táblázatot egy Word-dokumentumhoz az Aspose.Words for Java használatával. Az Aspose.Words robusztus és hatékony API-t biztosít a Word-dokumentumokkal való munkavégzéshez, megkönnyítve a dokumentumokon belüli táblázatok és egyéb elemek létrehozását, kezelését és testreszabását.
 
 lépésenkénti útmutató követésével megtanulta, hogyan kell beállítani a fejlesztői környezetet, létrehozni egy új Word-dokumentumot, hozzáadni egy táblázatot sorokkal és oszlopokkal, és elmenteni a dokumentumot. Nyugodtan fedezze fel az Aspose.Words további funkcióit, hogy tovább javítsa dokumentumfeldolgozási feladatait.
 

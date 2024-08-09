@@ -9,13 +9,13 @@ url: /pt/net/join-and-append-documents/restart-page-numbering/
 ---
 ## Introdução
 
-Você já se esforçou para criar um documento sofisticado com seções distintas, cada uma começando com a página número 1? Imagine um relatório onde os capítulos começam do zero ou uma proposta extensa com seções separadas para o resumo executivo e apêndices detalhados. Aspose.Words for .NET, uma poderosa biblioteca de processamento de documentos, permite que você consiga isso com elegância. Este guia completo revelará os segredos para reiniciar a numeração de páginas, equipando você para criar documentos com aparência profissional sem esforço.
+Você já se esforçou para criar um documento sofisticado com seções distintas, cada uma começando com a página número 1? Imagine um relatório onde os capítulos começam do zero, ou uma proposta extensa com seções separadas para o resumo executivo e apêndices detalhados. Aspose.Words for .NET, uma poderosa biblioteca de processamento de documentos, permite que você consiga isso com sutileza. Este guia completo revelará os segredos para reiniciar a numeração de páginas, equipando você para criar documentos com aparência profissional sem esforço.
 
 ## Pré-requisitos
 
 Antes de embarcar nesta jornada, certifique-se de ter o seguinte:
 
-1.  Aspose.Words for .NET: Baixe a biblioteca do site oficial[Link para Download](https://releases.aspose.com/words/net/) . Você pode explorar uma avaliação gratuita[Link de teste gratuito](https://releases.aspose.com/) ou compre uma licença[Link de compra](https://purchase.aspose.com/buy) com base em suas necessidades.
+1.  Aspose.Words for .NET: Baixe a biblioteca do site oficial[Baixar link](https://releases.aspose.com/words/net/) . Você pode explorar uma avaliação gratuita[Link de teste gratuito](https://releases.aspose.com/) ou compre uma licença[Link de compra](https://purchase.aspose.com/buy) com base em suas necessidades.
 2. Ambiente de desenvolvimento AC#: Visual Studio ou qualquer ambiente que suporte desenvolvimento .NET funcionará perfeitamente.
 3. Um documento de amostra: localize um documento do Word que você gostaria de experimentar.
 
@@ -51,7 +51,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
  Utilize o`PageSetup` propriedade da seção para configurar seu comportamento de layout.
 
- Colocou o`SectionStart` propriedade de`PageSetup` para`SectionStart.NewPage`. Isso garante que uma nova página seja criada antes que o conteúdo de origem seja anexado ao documento de destino.
+ Defina o`SectionStart` propriedade de`PageSetup` para`SectionStart.NewPage`. Isso garante que uma nova página seja criada antes que o conteúdo de origem seja anexado ao documento de destino.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -105,7 +105,7 @@ Os números de página existentes no documento de origem permanecem inalterados.
 
 ### Posso aplicar diferentes formatos de numeração (por exemplo, algarismos romanos)?
 
- Absolutamente! Aspose.Words oferece amplo controle sobre formatos de numeração de páginas. Explore o`NumberStyle` propriedade do`HeaderFooter` objeto para escolher entre vários estilos de numeração, como algarismos romanos, letras ou formatos personalizados.
+ Absolutamente! Aspose.Words oferece amplo controle sobre formatos de numeração de páginas. Explorar o`NumberStyle` propriedade do`HeaderFooter` objeto para escolher entre vários estilos de numeração, como algarismos romanos, letras ou formatos personalizados.
 
 ### Onde posso encontrar mais recursos ou assistência?
 

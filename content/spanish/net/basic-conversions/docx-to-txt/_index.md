@@ -34,7 +34,7 @@ Dividamos el proceso de conversión en pasos manejables, para que puedas seguirl
 Antes de profundizar en el código, asegúrese de que su proyecto esté configurado correctamente.
 
 1. Cree un nuevo proyecto: abra Visual Studio y cree un nuevo proyecto de C#.
-2. Instale Aspose.Words para .NET: utilice el Administrador de paquetes NuGet para instalar la biblioteca Aspose.Words para .NET. Puede hacerlo haciendo clic derecho en su proyecto, seleccionando "Administrar paquetes NuGet" y buscando "Aspose.Words".
+2. Instale Aspose.Words para .NET: utilice el Administrador de paquetes NuGet para instalar la biblioteca Aspose.Words para .NET. Puede hacer esto haciendo clic derecho en su proyecto, seleccionando "Administrar paquetes NuGet" y buscando "Aspose.Words".
 
 ## Paso 2: agregar la ruta del directorio de documentos
 

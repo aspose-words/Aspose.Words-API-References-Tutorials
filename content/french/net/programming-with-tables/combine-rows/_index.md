@@ -19,7 +19,7 @@ Avant de passer à la partie codage, assurons-nous que vous disposez de tout ce 
 2. Un environnement de développement : Visual Studio ou tout autre IDE compatible .NET.
 3. Connaissance de base de C# : La compréhension de C# sera bénéfique.
 
- Si vous n'avez pas encore Aspose.Words pour .NET, vous pouvez obtenir un[essai gratuit](https://releases.aspose.com/) ou l'acheter[ici](https://purchase.aspose.com/buy) . Pour toute question, le[forum d'entraide](https://forum.aspose.com/c/words/8) est un excellent point de départ.
+ Si vous n'avez pas encore Aspose.Words pour .NET, vous pouvez obtenir un[essai gratuit](https://releases.aspose.com/) ou l'acheter[ici](https://purchase.aspose.com/buy) . Pour toute question, le[forum d'assistance](https://forum.aspose.com/c/words/8) est un excellent point de départ.
 
 ## Importer des espaces de noms
 
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Étape 2 : Identifiez les tables
 
- Ensuite, vous devez identifier les tables que vous souhaitez combiner. Aspose.Words vous permet d'obtenir des tableaux à partir d'un document en utilisant le`GetChild` méthode. Voici comment:
+ Ensuite, vous devez identifier les tables que vous souhaitez combiner. Aspose.Words vous permet d'obtenir des tableaux à partir d'un document en utilisant le`GetChild` méthode. Voici comment procéder :
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -84,13 +84,13 @@ Enfin, enregistrez le document modifié. Cette étape garantit que vos modificat
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-Et c'est tout! Vous avez combiné avec succès les lignes de deux tables en une seule à l'aide d'Aspose.Words pour .NET.
+Et c'est tout ! Vous avez combiné avec succès les lignes de deux tables en une seule à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 
 La combinaison de lignes de plusieurs tableaux en un seul peut simplifier considérablement vos tâches de traitement de documents. Avec Aspose.Words pour .NET, cette tâche devient simple et efficace. En suivant ce guide étape par étape, vous pouvez facilement fusionner des tableaux et rationaliser votre flux de travail.
 
-Si vous avez besoin de plus d'informations ou si vous avez des questions, le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) est une excellente ressource. Vous pouvez également explorer les options d'achat[ici](https://purchase.aspose.com/buy) ou obtenez un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour tester.
+Si vous avez besoin de plus d'informations ou si vous avez des questions, le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) est une excellente ressource. Vous pouvez également explorer les options d'achat[ici](https://purchase.aspose.com/buy) ou obtenez un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour les tests.
 
 ## FAQ
 

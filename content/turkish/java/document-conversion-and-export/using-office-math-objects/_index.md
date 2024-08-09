@@ -23,7 +23,7 @@ Aspose.Words for Java'da Office Math ile çalışmanın inceliklerine geçmeden 
 
 Office Math nesneleri bir belgedeki matematiksel denklemleri temsil etmek için kullanılır. Aspose.Words for Java, Office Math için güçlü bir destek sunarak görüntülenmelerini ve biçimlendirmelerini kontrol etmenize olanak tanır. 
 
-## Adım adım rehber
+## Adım Adım Kılavuz
 
 Aspose.Words for Java'da Office Math ile adım adım çalışma sürecine başlayalım:
 
@@ -45,7 +45,7 @@ OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true)
 
 ### Görüntü Türünü Ayarla
 
- Denklemin belgede nasıl görüntüleneceğini kontrol edebilirsiniz. Kullan`setDisplayType` metinle aynı satırda mı yoksa satırında mı görüntüleneceğini belirleme yöntemi:
+ Denklemin belgede nasıl görüntüleneceğini kontrol edebilirsiniz. Kullanın`setDisplayType` metinle aynı satırda mı yoksa satırında mı görüntüleneceğini belirleme yöntemi:
 
 ```java
 officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
@@ -90,7 +90,7 @@ Aspose.Words for Java'daki Office Math nesneleri, belgelerinizdeki matematiksel 
 
 ### Office Math denklemlerini belgemde farklı şekilde hizalayabilir miyim?
 
- Evet, Office Math denklemlerinin hizalamasını kontrol edebilirsiniz. Kullan`setJustification` Sol, sağ veya orta gibi hizalama seçeneklerini belirtme yöntemini kullanın.
+ Evet, Office Math denklemlerinin hizalamasını kontrol edebilirsiniz. Kullanın`setJustification` Sol, sağ veya orta gibi hizalama seçeneklerini belirtme yöntemini kullanın.
 
 ### Aspose.Words for Java karmaşık matematiksel belgelerin işlenmesi için uygun mudur?
 

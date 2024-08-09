@@ -87,7 +87,7 @@ builder.Writeln("Page2");
 
 Hier voegen we tekst toe aan het document en voegen we een pagina-einde in om een tweede pagina te maken.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document ten slotte op in de opgegeven map.
 
@@ -116,4 +116,4 @@ Aspose.Words voor .NET is een bibliotheek waarmee ontwikkelaars Word-documenten 
 kunt tabellen, afbeeldingen en verschillende opmaakopties van Aspose.Words gebruiken om complexe lay-outs te maken.
 
 ### Waar kan ik meer voorbeelden en tutorials vinden?
- Bekijk de[documentatie](https://reference.aspose.com/words/net/) en de[Helpforum](https://forum.aspose.com/c/words/8) voor meer voorbeelden en gemeenschapsondersteuning.
+ Bekijk de[documentatie](https://reference.aspose.com/words/net/) en de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor meer voorbeelden en gemeenschapsondersteuning.

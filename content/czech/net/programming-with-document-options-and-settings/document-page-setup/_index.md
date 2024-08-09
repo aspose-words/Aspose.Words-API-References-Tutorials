@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/document-page-setup/
 ---
-## Úvod
+## Zavedení
 
 Byli jste někdy zmateni tím, jak nastavit rozvržení stránky vašeho dokumentu pomocí Aspose.Words pro .NET? Ať už se snažíte strukturovat sestavu nebo formátovat kreativní dílo, správné nastavení stránky dokumentu je zásadní. V této příručce vás provedeme každým krokem ke zvládnutí nastavení stránky dokumentu. Věřte mi, je to jednodušší, než to zní!
 
@@ -15,8 +15,8 @@ Byli jste někdy zmateni tím, jak nastavit rozvržení stránky vašeho dokumen
 
 Než se ponoříte do toho nejzákladnějšího, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
--  Platná licence: Můžete si ji zakoupit[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
+-  Platná licence: Můžete si ji zakoupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 - Základní pochopení programování v C#: Nebojte se, budu to dělat jednoduše a přímočaře.
 - Integrované vývojové prostředí (IDE): Visual Studio je dobrá volba.
 
@@ -85,13 +85,13 @@ A tady to máte! Pomocí těchto jednoduchých kroků jste pomocí Aspose.Words 
 Je to výkonná knihovna pro vytváření, úpravu a konverzi dokumentů v různých formátech pomocí aplikací .NET.
 
 ### Mohu používat Aspose.Words zdarma?
-Ano, můžete jej používat s dočasnou licencí, kterou můžete získat[tady](https://purchase.aspose.com/temporary-license/).
+Ano, můžete jej používat s dočasnou licencí, kterou můžete získat[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci.
+ Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci.
 
 ### Jaké jazyky Aspose.Words podporuje?
 Podporuje širokou škálu jazyků včetně asijských jazyků, jako je čínština a japonština.
 
 ### Kde najdu podrobnější dokumentaci?
- K dispozici je podrobná dokumentace[tady](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).

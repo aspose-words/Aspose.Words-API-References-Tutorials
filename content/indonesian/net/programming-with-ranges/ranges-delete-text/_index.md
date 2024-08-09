@@ -9,7 +9,7 @@ url: /id/net/programming-with-ranges/ranges-delete-text/
 ---
 ## Perkenalan
 
-Jika Anda pernah merasa perlu menghapus bagian teks tertentu dalam dokumen Word, Anda berada di tempat yang tepat! Aspose.Words for .NET adalah perpustakaan canggih yang memungkinkan Anda memanipulasi dokumen Word dengan mudah. Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menghapus teks dari suatu rentang dalam dokumen Word. Kami akan memecah prosesnya menjadi langkah-langkah sederhana dan mudah dicerna untuk menjadikannya sangat mudah. Jadi, mari selami!
+Jika Anda pernah merasa perlu menghapus bagian teks tertentu dalam dokumen Word, Anda berada di tempat yang tepat! Aspose.Words for .NET adalah perpustakaan canggih yang memungkinkan Anda memanipulasi dokumen Word dengan mudah. Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menghapus teks dari suatu rentang dalam dokumen Word. Kami akan membagi prosesnya menjadi langkah-langkah sederhana dan mudah dicerna untuk menjadikannya sangat mudah. Jadi, mari selami!
 
 ## Prasyarat
 
@@ -21,7 +21,7 @@ Sebelum kita masuk ke bagian pengkodean, pastikan Anda memiliki semua yang Anda 
 
 ## Impor Namespace
 
-Sebelum memulai coding, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Berikut cara melakukannya:
+Sebelum memulai pengkodean, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Berikut cara melakukannya:
 
 ```csharp
 using Aspose.Words;

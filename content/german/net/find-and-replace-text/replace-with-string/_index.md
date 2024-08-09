@@ -93,7 +93,7 @@ Da haben Sie es! Mit Aspose.Words für .NET ist das Ersetzen von Zeichenfolgen i
 Ja, Sie können mehrere Ersetzungsvorgänge verketten oder reguläre Ausdrücke verwenden, um mehrere Muster abzugleichen und zu ersetzen.
 
 ### Ist Aspose.Words für .NET kostenlos?
- Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, aber Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) um seine Funktionen zu testen.
+ Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, aber Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) um seine Funktionen zu testen.
 
 ### Kann ich Text durch formatierten Inhalt ersetzen?
 Auf jeden Fall! Aspose.Words ermöglicht es Ihnen, Text durch formatierten Inhalt zu ersetzen, einschließlich verschiedener Schriftarten, Farben und Stile.

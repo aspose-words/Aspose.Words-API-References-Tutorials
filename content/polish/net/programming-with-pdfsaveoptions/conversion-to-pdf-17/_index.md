@@ -15,7 +15,7 @@ Konwersja dokumentów programu Word do formatu PDF jest powszechnym wymogiem w r
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE obsługujące programowanie .NET.
 3. Podstawowa znajomość języka C#: Zrozumienie podstaw pomoże Ci śledzić fragmenty kodu.
 
@@ -81,7 +81,7 @@ PDF 1.7 zawiera takie funkcje, jak ulepszone zabezpieczenia i ulepszona nawigacj
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
 
- Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz dostać[licencja tymczasowa tutaj](https://purchase.aspose.com/temporary-license/).
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Czy mogę bardziej dostosować opcje zapisywania plików PDF?
 

@@ -88,7 +88,7 @@ else
 Si no configura una licencia, Aspose.Words funcionará en modo de evaluación, que tiene limitaciones como documentos con marcas de agua y funcionalidad restringida.
 
 ### ¿Puedo usar una licencia de una transmisión?  
- Sí, puede cargar una licencia desde una secuencia si el archivo de licencia está integrado como recurso. Utilizar el`SetLicense` método que acepta una secuencia.
+ Sí, puede cargar una licencia desde una secuencia si el archivo de licencia está integrado como recurso. Utilice el`SetLicense` método que acepta una secuencia.
 
 ### ¿Dónde debo colocar mi archivo de licencia?  
 Puede colocar su archivo de licencia en el mismo directorio que su ejecutable o en cualquier ruta accesible a su aplicación.

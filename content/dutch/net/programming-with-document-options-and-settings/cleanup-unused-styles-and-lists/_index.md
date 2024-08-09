@@ -9,7 +9,7 @@ url: /nl/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit het gevoel gehad dat uw Word-documenten een beetje rommelig worden? Weet je, die ongebruikte stijlen en lijsten die daar maar blijven staan, ruimte in beslag nemen en je document er complexer uit laten zien dan nodig is? Nou, je hebt geluk! Vandaag duiken we in een leuk trucje met Aspose.Words voor .NET om die ongebruikte stijlen en lijsten op te ruimen. Het is alsof u uw document een lekker verfrissend bad geeft. Dus pak je koffie, leun achterover en laten we aan de slag gaan!
+Hé daar! Heeft u ooit het gevoel gehad dat uw Word-documenten een beetje rommelig worden? Weet je, die ongebruikte stijlen en lijsten die daar maar blijven staan, ruimte in beslag nemen en je document er complexer uit laten zien dan nodig is? Nou, je hebt geluk! Vandaag duiken we in een leuk trucje met Aspose.Words voor .NET om die ongebruikte stijlen en lijsten op te ruimen. Het is alsof u uw document een lekker verfrissend bad geeft. Dus pak je koffie, leun achterover en laten we aan de slag gaan!
 
 ## Vereisten
 

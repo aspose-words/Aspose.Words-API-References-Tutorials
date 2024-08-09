@@ -2,106 +2,122 @@
 title: อ่านคุณสมบัติ XControl ที่ใช้งานอยู่จากไฟล์ Word
 linktitle: อ่านคุณสมบัติ XControl ที่ใช้งานอยู่จากไฟล์ Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: อ่านคุณสมบัติของตัวควบคุม ActiveX ในไฟล์ Word ด้วย Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีอ่านคุณสมบัติการควบคุม ActiveX จากไฟล์ Word โดยใช้ Aspose.Words สำหรับ .NET ในคำแนะนำทีละขั้นตอน พัฒนาทักษะการทำงานอัตโนมัติของเอกสารของคุณ
 type: docs
 weight: 10
 url: /th/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## การแนะนำ
 
-ในคำแนะนำทีละขั้นตอนนี้ เราจะแสดงวิธีอ่านคุณสมบัติของตัวควบคุม ActiveX ในไฟล์ Word โดยใช้ Aspose.Words สำหรับ .NET เราจะจัดเตรียมซอร์สโค้ดที่สมบูรณ์ให้กับคุณ และแสดงวิธีจัดรูปแบบเอาต์พุตมาร์กดาวน์
+ในยุคดิจิทัลปัจจุบัน ระบบอัตโนมัติเป็นกุญแจสำคัญในการเพิ่มประสิทธิภาพการทำงาน หากคุณกำลังทำงานกับเอกสาร Word ที่มีตัวควบคุม ActiveX คุณอาจต้องอ่านคุณสมบัติของเอกสารเหล่านั้นเพื่อวัตถุประสงค์ต่างๆ ตัวควบคุม ActiveX เช่น ช่องทำเครื่องหมายและปุ่ม สามารถเก็บข้อมูลสำคัญได้ การใช้ Aspose.Words สำหรับ .NET ทำให้คุณสามารถแยกและจัดการข้อมูลนี้โดยทางโปรแกรมได้อย่างมีประสิทธิภาพ
 
-## ขั้นตอนที่ 1: การเริ่มต้นเอกสาร
+## ข้อกำหนดเบื้องต้น
 
- ขั้นตอนแรกคือการเริ่มต้น`Document` วัตถุโดยการโหลดเอกสาร Word ที่มีตัวควบคุม ActiveX อย่าลืมเปลี่ยน`MyDir` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่มีเอกสาร
+ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+
+1.  Aspose.Words สำหรับ .NET Library: คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/net/).
+2. Visual Studio หรือ C# IDE ใดๆ: เพื่อเขียนและรันโค้ดของคุณ
+3. เอกสาร Word ที่มีตัวควบคุม ActiveX: ตัวอย่างเช่น "ActiveX Controls.docx"
+4. ความรู้พื้นฐานของ C#: จำเป็นต้องปฏิบัติตามความคุ้นเคยกับการเขียนโปรแกรม C#
+
+## นำเข้าเนมสเปซ
+
+ขั้นแรก เรามานำเข้าเนมสเปซที่จำเป็นเพื่อทำงานกับ Aspose.Words สำหรับ .NET กัน
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## ขั้นตอนที่ 2: กู้คืนตัวควบคุม ActiveX
+## ขั้นตอนที่ 1: โหลดเอกสาร Word
 
- ในขั้นตอนนี้ เราจะทำซ้ำทีละขั้นตอน`Shape` ของเอกสารเพื่อดึงข้อมูลตัวควบคุม ActiveX และอ่านคุณสมบัติ
+ในการเริ่มต้น คุณจะต้องโหลดเอกสาร Word ที่มีตัวควบคุม ActiveX
+
+```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## ขั้นตอนที่ 2: เริ่มต้นสตริงเพื่อเก็บคุณสมบัติ
+
+ถัดไป เตรียมใช้งานสตริงว่างเพื่อจัดเก็บคุณสมบัติของตัวควบคุม ActiveX
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-{
-     if (shape.OleFormat is null) break;
-
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
-
-         properties += "\n";
-     }
-}
-
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-Console.WriteLine("\n" + properties);
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับอ่านคุณสมบัติ XControl ที่ใช้งานอยู่โดยใช้ Aspose.Words สำหรับ .NET
+## ขั้นตอนที่ 3: วนซ้ำรูปร่างในเอกสาร
 
-นี่คือซอร์สโค้ดที่สมบูรณ์สำหรับการอ่านคุณสมบัติของตัวควบคุม ActiveX โดยใช้ Aspose.Words สำหรับ .NET:
+เราจำเป็นต้องวนซ้ำรูปร่างทั้งหมดในเอกสารเพื่อค้นหาตัวควบคุม ActiveX
 
 ```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        // ประมวลผลตัวควบคุม ActiveX
+    }
+}
+```
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+## ขั้นตอนที่ 4: แยกคุณสมบัติออกจากตัวควบคุม ActiveX
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+ภายในลูป ตรวจสอบว่าตัวควบคุมเป็น Forms2OleControl หรือไม่ หากเป็นเช่นนั้นให้ทำการหล่อและแยกคุณสมบัติออก
 
-			properties += "\n";
-		}
-	}
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
+}
+
+properties += "\n";
+```
+
+## ขั้นตอนที่ 5: นับการควบคุม ActiveX ทั้งหมด
+
+หลังจากวนซ้ำรูปร่างทั้งหมดแล้ว ให้นับจำนวนตัวควบคุม ActiveX ทั้งหมดที่พบ
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## ขั้นตอนที่ 6: แสดงคุณสมบัติ
+
+สุดท้าย ให้พิมพ์คุณสมบัติที่แยกออกมาไปยังคอนโซล
+
+```csharp
+Console.WriteLine("\n" + properties);
 ```
 
 ## บทสรุป
 
-คู่มือนี้จะแสดงวิธีอ่านคุณสมบัติของตัวควบคุม ActiveX ในไฟล์ Word โดยใช้ Aspose.Words สำหรับ .NET โดยทำตามขั้นตอนที่อธิบายไว้ คุณสามารถเตรียมใช้งานเอกสาร ดึงข้อมูลตัวควบคุม ActiveX และอ่านคุณสมบัติได้ ใช้โค้ดตัวอย่างที่ให้ไว้เป็นจุดเริ่มต้นและปรับแต่งตามความต้องการเฉพาะของคุณ
+และคุณก็ได้แล้ว! คุณได้เรียนรู้วิธีการอ่านคุณสมบัติการควบคุม ActiveX จากเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เรียบร้อยแล้ว บทช่วยสอนนี้ครอบคลุมถึงการโหลดเอกสาร การวนซ้ำรูปร่าง และการแตกคุณสมบัติออกจากตัวควบคุม ActiveX ด้วยการทำตามขั้นตอนเหล่านี้ คุณสามารถทำการแยกข้อมูลสำคัญจากเอกสาร Word ของคุณได้โดยอัตโนมัติ ซึ่งจะช่วยเพิ่มประสิทธิภาพเวิร์กโฟลว์ของคุณ
 
-การอ่านคุณสมบัติของตัวควบคุม ActiveX ช่วยให้คุณสามารถดึงข้อมูลสำคัญจากไฟล์ Word ของคุณที่มีตัวควบคุมเหล่านี้ได้ Aspose.Words สำหรับ .NET นำเสนอคุณสมบัติอันทรงพลังสำหรับการประมวลผลคำด้วยตัวควบคุม ActiveX และทำให้การประมวลผลเอกสารของคุณเป็นแบบอัตโนมัติ
+## คำถามที่พบบ่อย
 
-### คำถามที่พบบ่อย
+### ตัวควบคุม ActiveX ในเอกสาร Word คืออะไร
+ตัวควบคุม ActiveX เป็นวัตถุแบบโต้ตอบที่ฝังอยู่ในเอกสาร Word เช่น กล่องกาเครื่องหมาย ปุ่ม และช่องข้อความ ใช้ในการสร้างแบบฟอร์มและทำงานอัตโนมัติ
 
-#### ถาม: ขั้นตอนแรกในการอ่านคุณสมบัติของตัวควบคุม ActiveX ในไฟล์ Word คืออะไร
+### ฉันสามารถแก้ไขคุณสมบัติของตัวควบคุม ActiveX โดยใช้ Aspose.Words สำหรับ .NET ได้หรือไม่
+ใช่ Aspose.Words สำหรับ .NET อนุญาตให้คุณแก้ไขคุณสมบัติของตัวควบคุม ActiveX โดยทางโปรแกรม
 
- ตอบ: ขั้นตอนแรกคือการเริ่มต้นใช้งาน`Document` วัตถุโดยการโหลดเอกสาร Word ที่มีตัวควบคุม ActiveX อย่าลืมเปลี่ยน`MyDir` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่มีเอกสาร
+### Aspose.Words สำหรับ .NET ใช้งานได้ฟรีหรือไม่
+ Aspose.Words สำหรับ .NET ให้ทดลองใช้ฟรี แต่คุณจะต้องซื้อใบอนุญาตเพื่อใช้งานต่อไป คุณสามารถทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/).
 
-#### ถาม: ฉันจะนำตัวควบคุม ActiveX เข้าสู่เอกสารได้อย่างไร
+### ฉันสามารถใช้ Aspose.Words สำหรับ .NET กับภาษา .NET อื่นนอกเหนือจาก C# ได้หรือไม่
+ได้ Aspose.Words สำหรับ .NET สามารถใช้กับภาษา .NET ใดก็ได้ รวมถึง VB.NET และ F#
 
- ตอบ: หากต้องการดึงข้อมูลตัวควบคุม ActiveX คุณต้องวนซ้ำแต่ละส่วน`Shape` ของเอกสารและตรวจสอบว่าเป็นตัวควบคุม ActiveX หรือไม่ ใช้`OleFormat` ทรัพย์สินของ`Shape` เพื่อเข้าถึง`OleControl` วัตถุและเรียกค้นคุณสมบัติที่จำเป็น
-
-#### ถาม: ฉันสามารถอ่านคุณสมบัติใดของตัวควบคุม ActiveX ได้บ้าง
-
-ตอบ: คุณสามารถอ่านคุณสมบัติต่างๆ ของตัวควบคุม ActiveX ได้ เช่น คำอธิบายภาพ ค่า สถานะเปิดใช้งานหรือปิดใช้งาน ประเภท และโหนดย่อยที่เกี่ยวข้องกับตัวควบคุม
-
-#### ถาม: ฉันจะได้รับจำนวนตัวควบคุม ActiveX ทั้งหมดในเอกสารได้อย่างไร
-
- ตอบ: หากต้องการรับจำนวนตัวควบคุม ActiveX ทั้งหมดในเอกสาร คุณสามารถใช้ไฟล์`GetChildNodes` วิธีการของ`Document` วัตถุที่ระบุ`NodeType.Shape` พิมพ์และรวมถึงโหนดย่อยด้วย
+### ฉันจะหาเอกสารเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+ คุณสามารถค้นหาเอกสารรายละเอียดได้[ที่นี่](https://reference.aspose.com/words/net/).

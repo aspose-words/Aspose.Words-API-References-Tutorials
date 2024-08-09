@@ -90,7 +90,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 Absolutamente! Aspose.Words integra-se perfeitamente com seus projetos .NET.
 
 ### Como instalo o Aspose.Words para .NET?
- Você pode baixar a biblioteca do[local na rede Internet](https://releases.aspose.com/words/net/) e adicione-o ao seu projeto como referência.
+ Você pode baixar a biblioteca do[site](https://releases.aspose.com/words/net/) e adicione-o ao seu projeto como referência.
 
 ### Existe um teste gratuito disponível para Aspose.Words for .NET?
  Sim, você pode obter um teste gratuito em[aqui](https://releases.aspose.com/).

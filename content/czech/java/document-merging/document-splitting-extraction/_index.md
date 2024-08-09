@@ -8,7 +8,7 @@ weight: 14
 url: /cs/java/document-merging/document-splitting-extraction/
 ---
 
-## Úvod
+## Zavedení
 
 V tomto komplexním průvodci prozkoumáme výkonné možnosti Aspose.Words for Java, všestranného API pro práci s dokumenty. Konkrétně se ponoříme do zajímavého světa dělení a extrakce dokumentů a předvedeme, jak tato funkce může zjednodušit vaše úlohy zpracování dokumentů. 
 
@@ -17,7 +17,7 @@ V tomto komplexním průvodci prozkoumáme výkonné možnosti Aspose.Words for 
 Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/java/).
 
 ## Nastavení vašeho projektu
 
@@ -94,7 +94,7 @@ Aspose.Words for Java vám umožňuje snadno rozdělit a extrahovat obsah z doku
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, stáhněte si knihovnu z[tady](https://releases.aspose.com/words/java/) a přidejte jej do třídy třídy svého projektu Java.
+ Chcete-li nainstalovat Aspose.Words for Java, stáhněte si knihovnu z[zde](https://releases.aspose.com/words/java/) a přidejte jej do třídy třídy svého projektu Java.
 
 ### Mohu rozdělit dokument podle vlastních kritérií?
 
@@ -110,4 +110,4 @@ Ano, Aspose.Words for Java dokáže extrahovat text z naskenovaných dokumentů 
 
 ### Kde mohu získat přístup k dokumentaci Aspose.Words for Java?
 
- Můžete najít dokumentaci pro Aspose.Words pro Java[tady](https://reference.aspose.com/words/java/).
+ Můžete najít dokumentaci pro Aspose.Words pro Java[zde](https://reference.aspose.com/words/java/).

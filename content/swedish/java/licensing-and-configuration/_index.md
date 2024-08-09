@@ -17,7 +17,7 @@ När du ger dig ut på din resa för att använda Aspose.Words för Java, är de
 
 2. Skaffa licensfilen: Efter köpet får du en licensfil. Den här filen är avgörande för att konfigurera Aspose.Words i ditt Java-projekt.
 
-3.  Integrera licensen: För att aktivera Aspose.Words, integrera licensen i din Java-applikation. Detta innebär vanligtvis att du laddar licensfilen och applicerar den på Aspose.Words. Referera till[API dokumentation](https://reference.aspose.com/words/java/) för detaljerade kodexempel.
+3.  Integrera licensen: För att aktivera Aspose.Words, integrera licensen i din Java-applikation. Detta innebär vanligtvis att du laddar licensfilen och applicerar den på Aspose.Words. Se till[API dokumentation](https://reference.aspose.com/words/java/) för detaljerade kodexempel.
 
 ## Konfigurationsinställningar
 
@@ -37,6 +37,6 @@ Licensiering och konfiguration av Aspose.Words för Java är en grundläggande a
 
  Kom ihåg att för detaljerade kodexempel och ytterligare vägledning, se[Aspose.Words för Java-dokumentation](https://reference.aspose.com/words/java/). Börja din resa idag och lås upp världen av möjligheter som Aspose.Words erbjuder Java-utvecklare.
 
-## Licensie- och konfigurationshandledningar
+## Licenserings- och konfigurationshandledningar
 ### [Tillämpa licens på Aspose.Words för Java](./applying-licensing/)
 Lär dig hur du ansöker om licenser för Aspose.Words för Java steg för steg. Få åtkomst nu och lås upp dess fulla potential.

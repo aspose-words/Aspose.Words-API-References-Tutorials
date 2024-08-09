@@ -60,7 +60,7 @@ builder.MoveTo(para);
 
 ## Bước 4: Chèn trường khối địa chỉ
 
-Đây là nơi phép thuật xảy ra. Chúng tôi sẽ chèn trường Khối địa chỉ phối thư bằng trình tạo. Các`InsertField` phương thức được sử dụng để tạo trường.
+Đây là nơi phép thuật xảy ra. Chúng tôi sẽ chèn trường Khối địa chỉ phối thư bằng trình tạo. các`InsertField` phương thức được sử dụng để tạo trường.
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsingDOM.d
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công trường Khối địa chỉ phối thư vào tài liệu Word bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác với tài liệu Word theo chương trình, giúp bạn tiết kiệm thời gian và công sức. Hãy tiếp tục thử nghiệm các tính năng khác của Aspose.Words để khai thác nhiều tiềm năng hơn nữa trong các tác vụ xử lý tài liệu của bạn.
+Và bạn có nó! Bạn đã chèn thành công trường Khối địa chỉ phối thư vào tài liệu Word bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác với tài liệu Word theo chương trình, giúp bạn tiết kiệm thời gian và công sức. Hãy tiếp tục thử nghiệm các tính năng khác của Aspose.Words để khai thác nhiều tiềm năng hơn nữa trong các tác vụ xử lý tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 

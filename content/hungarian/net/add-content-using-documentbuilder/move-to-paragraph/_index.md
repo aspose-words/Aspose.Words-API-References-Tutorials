@@ -46,7 +46,7 @@ Document doc = new Document("C:\\path\\to\\your\\Paragraphs.docx");
 
 ## 2. lépés: Inicializálja a DocumentBuilder programot
 
- Ezután inicializáljuk a`DocumentBuilder` tárgy. Tekintse ezt a digitális tollnak, amely segít a dokumentumban való navigálásban és módosításában.
+ Ezután inicializáljuk a`DocumentBuilder` objektum. Tekintse ezt a digitális tollnak, amely segít a dokumentumban való navigálásban és módosításában.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

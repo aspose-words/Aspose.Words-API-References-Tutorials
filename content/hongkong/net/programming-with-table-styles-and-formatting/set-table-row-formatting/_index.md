@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了格式化表格。可以擴展和自訂此流程以適應更複雜的要求，但這些基本步驟提供了堅實的基礎。嘗試不同的格式選項，看看它們如何增強您的文件。
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了格式化表格。可以擴展和自訂此流程以適應更複雜的要求，但這些基本步驟提供了堅實的基礎。嘗試不同的格式選項，看看它們如何增強您的文件。
 
 ## 常見問題解答
 

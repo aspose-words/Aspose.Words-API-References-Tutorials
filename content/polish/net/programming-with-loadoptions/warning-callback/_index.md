@@ -97,7 +97,7 @@ Wywołanie zwrotne ostrzeżenia umożliwia wychwytywanie i obsługę ostrzeżeń
  Musisz skonfigurować`LoadOptions` z`WarningCallback` i zaimplementuj klasę, która obsługuje ostrzeżenia, implementując metodę`IWarningCallback` interfejs.
 
 ### Czy mogę korzystać z funkcji wywołania zwrotnego z ostrzeżeniem bez ważnej licencji?
- Można go używać z bezpłatną wersją próbną, jednak dla pełnej funkcjonalności zaleca się uzyskanie ważnej licencji. Możesz dostać[licencja tymczasowa tutaj](https://purchase.aspose.com/temporary-license/).
+ Można go używać z bezpłatną wersją próbną, jednak dla pełnej funkcjonalności zaleca się uzyskanie ważnej licencji. Możesz zdobyć[licencja tymczasowa tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Jakich ostrzeżeń mogę się spodziewać podczas przetwarzania dokumentów?
 Ostrzeżenia mogą obejmować problemy związane z nieobsługiwanymi funkcjami, niespójnościami formatowania lub innymi problemami specyficznymi dla dokumentu.

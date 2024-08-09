@@ -19,7 +19,7 @@ Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig he
 1.  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat u de nieuwste versie van de .NET-bibliotheek hebt[Aspose.Words voor .NET-bibliotheek](https://releases.aspose.com/words/net/). Je kunt het downloaden van de officiële site.
 2. Ontwikkelomgeving: u hebt een .NET-ontwikkelomgeving zoals Visual Studio nodig.
 3. Basiskennis van C#: Een basiskennis van C# zal nuttig zijn als we door de code navigeren.
-4.  Voorbeelddocument: Zorg voor een[Word document](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) met een VBA-project klaar om mee te werken. U kunt uw eigen maken of een bestaande gebruiken.
+4.  Voorbeelddocument: Zorg voor een[Word-document](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) met een VBA-project klaar om mee te werken. U kunt uw eigen maken of een bestaande gebruiken.
 
 ## Naamruimten importeren
 
@@ -107,7 +107,7 @@ Deze regel slaat het nieuwe document op met de naam "WorkingWithVba.CloneVbaModu
 
 En daar heb je het! U hebt met succes een VBA-module van het ene Word-document naar het andere gekloond met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het ongelooflijk eenvoudig om Word-documenten te manipuleren, en de stappen die we hebben besproken zijn slechts het topje van de ijsberg. Of u nu het maken van documenten automatiseert, inhoud wijzigt of VBA-projecten beheert, Aspose.Words staat voor u klaar.
 
- Als je meer functies wilt ontdekken, bekijk dan de[API-documentatie](https://reference.aspose.com/words/net/) . Hulp nodig? Bezoek de[Helpforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+ Als je meer functies wilt ontdekken, bekijk dan de[API-documentatie](https://reference.aspose.com/words/net/) . Hulp nodig? Bezoek de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.
 
 Veel codeerplezier, en onthoud: oefening baart kunst!
 

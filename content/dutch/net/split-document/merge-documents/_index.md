@@ -103,7 +103,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 
 ### Hoe ga ik om met verschillende opmaak tijdens het samenvoegen?
 
- Aspose.Words biedt verschillende samenvoegformaten, zoals`KeepSourceFormatting`En`MergeFormatting` Verwijs naar de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
+ Aspose.Words biedt verschillende samenvoegformaten, zoals`KeepSourceFormatting`En`MergeFormatting` Raadpleeg de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
 
 ### Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 

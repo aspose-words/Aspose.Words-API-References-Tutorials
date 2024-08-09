@@ -61,7 +61,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ## Steg 5: Ta bort fält
 
@@ -100,4 +100,4 @@ Du kan använda try-catch-block för att hantera undantag som kan inträffa unde
 Ja, metoden som visas här riktar sig specifikt endast till fält och lämnar annat innehåll oförändrat.
 
 ### Var kan jag hitta fler resurser och support för Aspose.Words?
- Besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/) och den[Aspose.Words forum](https://forum.aspose.com/c/words/8) för vidare hjälp.
+ Besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/) och den[Aspose.Words forum](https://forum.aspose.com/c/words/8) för ytterligare hjälp.

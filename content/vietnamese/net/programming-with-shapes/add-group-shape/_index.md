@@ -9,7 +9,7 @@ url: /vi/net/programming-with-shapes/add-group-shape/
 ---
 ## Giới thiệu
 
-Tạo các tài liệu phức tạp với các yếu tố hình ảnh phong phú đôi khi có thể là một nhiệm vụ khó khăn, đặc biệt là khi xử lý các hình dạng nhóm. Nhưng đừng sợ! Aspose.Words for .NET đơn giản hóa quá trình này, khiến nó trở nên dễ dàng như ăn bánh. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để thêm các hình dạng nhóm vào tài liệu Word của bạn. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Tạo các tài liệu phức tạp với các yếu tố hình ảnh phong phú đôi khi có thể là một nhiệm vụ khó khăn, đặc biệt là khi xử lý các hình dạng nhóm. Nhưng đừng sợ! Aspose.Words for .NET đơn giản hóa quá trình này, khiến nó trở nên dễ dàng như ăn bánh. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để thêm các hình dạng nhóm vào tài liệu Word của bạn. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -53,7 +53,7 @@ GroupShape groupShape = new GroupShape(doc);
 
 ## Bước 3: Thêm hình vào GroupShape
 
- Bây giờ, hãy thêm các hình dạng riêng lẻ vào`GroupShape` thùng đựng hàng. Chúng ta sẽ bắt đầu với hình dạng đường viền có điểm nhấn và sau đó thêm hình dạng nút hành động.
+ Bây giờ, hãy thêm các hình dạng riêng lẻ vào`GroupShape` thùng chứa. Chúng ta sẽ bắt đầu với hình dạng đường viền có điểm nhấn và sau đó thêm hình dạng nút hành động.
 
 ### Thêm hình dạng đường viền có dấu
 
@@ -113,7 +113,7 @@ Cuối cùng, lưu tài liệu vào thư mục được chỉ định của bạ
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-Và bạn có nó rồi đấy! Tài liệu của bạn với các hình nhóm đã sẵn sàng.
+Và bạn có nó! Tài liệu của bạn với các hình nhóm đã sẵn sàng.
 
 ## Phần kết luận
 

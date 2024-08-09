@@ -9,7 +9,7 @@ url: /nl/net/working-with-section/delete-all-sections/
 ---
 ## Invoering
 
-Heeft u ooit geprobeerd alle secties in een Word-document te verwijderen en kwam u vast te zitten in een doolhof van verwarrende stappen? Je bent niet alleen. Velen van ons moeten om verschillende redenen Word-documenten manipuleren, en soms kan het wissen van alle secties aanvoelen als het navigeren door een labyrint. Maar maak je geen zorgen! Met Aspose.Words voor .NET wordt deze taak heel eenvoudig. Dit artikel leidt u door het proces en verdeelt het in eenvoudige, beheersbare stappen. Aan het einde van deze zelfstudie bent u een professional in het omgaan met secties in Word-documenten met Aspose.Words voor .NET.
+Heeft u ooit geprobeerd alle secties in een Word-document te verwijderen en kwam u vast te zitten in een doolhof van verwarrende stappen? Je bent niet de enige. Velen van ons moeten om verschillende redenen Word-documenten manipuleren, en soms kan het wissen van alle secties aanvoelen als het navigeren door een labyrint. Maar maak je geen zorgen! Met Aspose.Words voor .NET wordt deze taak heel eenvoudig. Dit artikel leidt u door het proces en verdeelt het in eenvoudige, beheersbare stappen. Aan het einde van deze zelfstudie bent u een professional in het omgaan met secties in Word-documenten met Aspose.Words voor .NET.
 
 ## Vereisten
 
@@ -69,7 +69,7 @@ En daar heb je het! Het verwijderen van alle secties in een Word-document met As
  Je kunt het kopen bij[hier](https://purchase.aspose.com/buy).
 
 ### Is er ondersteuning beschikbaar voor Aspose.Words voor .NET?
- Ja, u kunt ondersteuning krijgen van de Aspose-gemeenschap[hier](https://forum.aspose.com/c/words/8).
+Ja, u kunt ondersteuning krijgen van de Aspose-gemeenschap[hier](https://forum.aspose.com/c/words/8).
 
 ### Wat moet ik doen als ik een tijdelijke licentie nodig heb?
  U kunt een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/).

@@ -7,7 +7,7 @@ type: docs
 weight: 13
 url: /it/java/document-styling/document-watermarking-page-setup/
 ---
-## introduzione
+## Introduzione
 
 Nel regno della manipolazione dei documenti, Aspose.Words per Java si pone come un potente strumento, consentendo agli sviluppatori di esercitare il controllo su ogni aspetto dell'elaborazione dei documenti. In questa guida completa, approfondiremo le complessità della filigrana dei documenti e dell'impostazione della pagina utilizzando Aspose.Words per Java. Che tu sia uno sviluppatore esperto o che tu stia semplicemente entrando nel mondo dell'elaborazione dei documenti Java, questa guida passo passo ti fornirà le conoscenze e il codice sorgente di cui hai bisogno.
 
@@ -45,7 +45,7 @@ doc.save("document_with_watermark.docx");
 
 Puoi personalizzare ulteriormente le filigrane regolando carattere, dimensione, colore e rotazione. Questa flessibilità garantisce che la filigrana corrisponda perfettamente allo stile del documento.
 
-## Impostazione della pagina
+## Impostazione pagina
 
 ### Dimensioni e orientamento della pagina
 

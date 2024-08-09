@@ -107,7 +107,7 @@ Glückwunsch! Sie haben gerade Ihre ersten Schritte in die Welt der Dokumentenau
 Aspose.Words für .NET ist eine Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert erstellen, ändern und konvertieren können.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Sie können es kostenlos ausprobieren, indem Sie eine[Kostenlose Testphase](https://releases.aspose.com/). Für den vollen Funktionsumfang müssen Sie eine Lizenz erwerben.
+ Sie können es kostenlos ausprobieren, indem Sie eine[Kostenlose Testversion](https://releases.aspose.com/). Für den vollen Funktionsumfang müssen Sie eine Lizenz erwerben.
 
 ### Welche Formate kann Aspose.Words verarbeiten?
 Es unterstützt eine Vielzahl von Formaten, darunter .doc, .docx, .pdf, .html und mehr.
@@ -116,4 +116,4 @@ Es unterstützt eine Vielzahl von Formaten, darunter .doc, .docx, .pdf, .html un
 Grundkenntnisse in C# sind hilfreich, aber die Bibliothek ist so konzipiert, dass sie für Entwickler aller Ebenen benutzerfreundlich ist.
 
 ### Wo finde ich weitere Informationen oder erhalte Unterstützung?
- Besuche die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder besuchen Sie die[Hilfeforum](https://forum.aspose.com/c/words/8).
+ Schauen Sie sich die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder besuchen Sie die[Support-Forum](https://forum.aspose.com/c/words/8).

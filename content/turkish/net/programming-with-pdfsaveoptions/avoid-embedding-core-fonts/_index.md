@@ -74,7 +74,7 @@ Son olarak yapılandırılmış kaydetme seçeneklerini kullanarak Word belgesin
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-İşte buyur! PDF dosyanız artık bu büyük çekirdek yazı tipleri olmadan belirtilen dizine kaydedildi.
+Ve işte karşınızda! PDF dosyanız artık bu büyük çekirdek yazı tipleri olmadan belirtilen dizine kaydedildi.
 
 ## Çözüm
 

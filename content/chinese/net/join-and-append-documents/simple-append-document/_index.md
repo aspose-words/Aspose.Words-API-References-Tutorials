@@ -106,7 +106,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 
 ### 如果我的文档格式不同怎么办？
 
-您可以使用以下方式控制格式化的处理方式：`ImportFormatMode`参数。选项包括`KeepSourceFormatting`, `UseDestinationStyles`， 和更多。
+您可以使用以下方式控制格式化的处理方式：`ImportFormatMode`参数。选项包括`KeepSourceFormatting`, `UseDestinationStyles`等等。
 
 ### Aspose.Words 可以免费使用吗？
 

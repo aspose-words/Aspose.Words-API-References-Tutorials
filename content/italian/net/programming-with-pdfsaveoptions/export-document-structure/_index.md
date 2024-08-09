@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
-## introduzione
+## Introduzione
 
 Navigare nel mondo della manipolazione dei documenti a volte può sembrare come vagare in una fitta foresta senza una mappa. Ma non preoccuparti, abbiamo la guida definitiva per aiutarti a trovare la tua strada! Oggi ci immergiamo nel magico mondo dell'esportazione di strutture di documenti Word in PDF utilizzando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida ti guiderà attraverso ogni passaggio con chiarezza e precisione.
 
@@ -59,7 +59,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Passaggio 4: salva il documento come PDF
 
-Con le opzioni di salvataggio configurate, il passaggio finale è salvare il documento come PDF. Qui è dove avviene la magia!
+Con le opzioni di salvataggio configurate, il passaggio finale è salvare il documento come PDF. È qui che avviene la magia!
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);

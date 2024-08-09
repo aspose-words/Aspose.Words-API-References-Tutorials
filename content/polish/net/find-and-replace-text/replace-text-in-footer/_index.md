@@ -9,7 +9,7 @@ url: /pl/net/find-and-replace-text/replace-text-in-footer/
 ---
 ## Wstęp
 
-No hej! Czy jesteś gotowy, aby zanurzyć się w świat manipulacji dokumentami za pomocą Aspose.Words dla .NET? Dzisiaj zajmiemy się ciekawym zadaniem: zamianą tekstu w stopce dokumentu Word. Ten samouczek przeprowadzi Cię krok po kroku przez cały proces. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik będzie pomocny i łatwy w obsłudze. Zacznijmy więc naszą podróż do opanowania zamiany tekstu w stopkach za pomocą Aspose.Words dla .NET!
+Hej tam! Czy jesteś gotowy, aby zanurzyć się w świat manipulacji dokumentami za pomocą Aspose.Words dla .NET? Dzisiaj zajmiemy się ciekawym zadaniem: zamianą tekstu w stopce dokumentu Word. Ten samouczek przeprowadzi Cię krok po kroku przez cały proces. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik będzie pomocny i łatwy w obsłudze. Zacznijmy więc naszą podróż do opanowania zamiany tekstu w stopkach za pomocą Aspose.Words dla .NET!
 
 ## Warunki wstępne
 
@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- W tym przykładzie`MatchCase` jest ustawione na`false` ignorować różnice w wielkości liter oraz`FindWholeWordsOnly` jest ustawione na`false` aby zezwolić na częściowe dopasowania w słowach.
+ W tym przykładzie`MatchCase` jest ustawiony na`false` ignorować różnice w wielkości liter oraz`FindWholeWordsOnly` jest ustawiony na`false` aby zezwolić na częściowe dopasowania w słowach.
 
 ## Krok 4: Zamień tekst w stopce
 

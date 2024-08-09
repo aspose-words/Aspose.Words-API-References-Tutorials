@@ -9,7 +9,7 @@ url: /ko/net/join-and-append-documents/restart-page-numbering/
 ---
 ## 소개
 
-각각 페이지 번호 1로 시작하는 별도의 섹션이 있는 세련된 문서를 만드는 데 어려움을 겪은 적이 있습니까? 장이 새로 시작되는 보고서나 요약 및 자세한 부록을 위한 별도의 섹션이 있는 긴 제안을 상상해 보세요. 강력한 문서 처리 라이브러리인 Aspose.Words for .NET을 사용하면 이를 정교하게 달성할 수 있습니다. 이 포괄적인 가이드는 페이지 번호 매기기를 다시 시작하는 비결을 공개하여 전문가 수준의 문서를 쉽게 만들 수 있도록 도와줍니다.
+각각 페이지 번호 1로 시작하는 별도의 섹션이 있는 세련된 문서를 만드는 데 어려움을 겪은 적이 있습니까? 장이 새로 시작되는 보고서나 요약 및 세부 부록을 위한 별도의 섹션이 있는 긴 제안을 상상해 보십시오. 강력한 문서 처리 라이브러리인 Aspose.Words for .NET을 사용하면 이를 정교하게 달성할 수 있습니다. 이 포괄적인 가이드는 페이지 번호 매기기를 다시 시작하는 비결을 공개하여 전문가 수준의 문서를 쉽게 만들 수 있도록 도와줍니다.
 
 ## 전제 조건
 
@@ -37,7 +37,7 @@ using Aspose.Words.Settings;
 
  문자열 변수 정의`dataDir` 문서 디렉토리의 경로를 저장합니다. "YOUR DOCUMENT DIRECTORY"를 실제 위치로 바꾸십시오.
 
- 2개 생성`Document` 를 사용하는 객체`Aspose.Words.Document`건설자. 첫번째 (`srcDoc`)에는 추가할 콘텐츠가 포함된 소스 문서가 보관됩니다. 두번째 (`dstDoc`)는 다시 시작된 페이지 번호 매기기와 함께 소스 콘텐츠를 통합할 대상 문서를 나타냅니다.
+ 2개 생성`Document` 를 사용하는 객체`Aspose.Words.Document`건설자. 첫 번째 (`srcDoc`)에는 추가할 콘텐츠가 포함된 소스 문서가 보관됩니다. 두 번째 (`dstDoc`)는 다시 시작된 페이지 번호 매기기와 함께 소스 콘텐츠를 통합할 대상 문서를 나타냅니다.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // 실제 디렉터리로 바꾸세요.
@@ -51,7 +51,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
  활용`PageSetup` 섹션의 속성을 사용하여 레이아웃 동작을 구성합니다.
 
- 설정`SectionStart` 의 자산`PageSetup` 에게`SectionStart.NewPage`. 이렇게 하면 소스 콘텐츠가 대상 문서에 추가되기 전에 새 페이지가 생성됩니다.
+ 설정`SectionStart` 재산`PageSetup` 에게`SectionStart.NewPage`. 이렇게 하면 소스 콘텐츠가 대상 문서에 추가되기 전에 새 페이지가 생성됩니다.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

@@ -16,7 +16,7 @@ Jika Anda ingin menguasai seni memformat tabel di dokumen Word menggunakan Aspos
 Sebelum kita masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
 
 1.  Aspose.Words untuk .NET - Jika Anda belum melakukannya, unduh dan instal dari[Di Sini](https://releases.aspose.com/words/net/).
-2. Lingkungan Pengembangan - IDE apa pun seperti Visual Studio yang mendukung .NET.
+2. Lingkungan Pengembangan - Semua IDE seperti Visual Studio yang mendukung .NET.
 3. Pengetahuan Dasar C# - Memahami konsep dasar C# akan membantu Anda mengikutinya dengan lancar.
 
 ## Impor Namespace
@@ -100,7 +100,7 @@ Dan itu dia! Anda telah berhasil membuat tabel yang diformat dalam dokumen Word 
  Ya, Anda dapat mengatur pemformatan individual untuk setiap baris dengan menerapkan berbeda`RowFormat` properti untuk setiap baris yang Anda buat.
 
 ### Apakah mungkin untuk menambahkan elemen lain, seperti gambar, ke dalam sel tabel?
- Sangat! Anda dapat menyisipkan gambar, bentuk, dan elemen lainnya ke dalam sel tabel menggunakan`DocumentBuilder` kelas.
+ Sangat! Anda bisa menyisipkan gambar, bentuk, dan elemen lainnya ke dalam sel tabel menggunakan`DocumentBuilder` kelas.
 
 ### Bagaimana cara mengubah perataan teks di dalam sel tabel?
  Anda dapat mengubah perataan teks dengan mengatur`ParagraphFormat.Alignment` properti dari`DocumentBuilder` obyek.
@@ -109,4 +109,4 @@ Dan itu dia! Anda telah berhasil membuat tabel yang diformat dalam dokumen Word 
  Ya, Anda dapat menggabungkan sel menggunakan`CellFormat.HorizontalMerge`Dan`CellFormat.VerticalMerge` properti.
 
 ### Apakah ada cara untuk menata tabel dengan gaya yang telah ditentukan sebelumnya?
- Ya, Aspose.Words untuk .NET memungkinkan Anda menerapkan gaya tabel yang telah ditentukan sebelumnya menggunakan`Table.Style` Properti.
+ Ya, Aspose.Words untuk .NET memungkinkan Anda menerapkan gaya tabel yang telah ditentukan sebelumnya menggunakan`Table.Style` milik.

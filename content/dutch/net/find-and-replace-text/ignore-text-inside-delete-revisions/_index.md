@@ -17,7 +17,7 @@ Voordat u in deze zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende v
 - Basiskennis van de programmeertaal C#.
 - Visual Studio is op uw systeem geïnstalleerd.
 -  Aspose.Words voor .NET-bibliotheek geïntegreerd in uw project. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
-- Toegang tot Aspose.Words voor .NET[documentatie](https://reference.aspose.com/words/net/) als referentie.
+- Toegang tot Aspose.Words voor .NET[documentatie](https://reference.aspose.com/words/net/) ter referentie.
 
 ## Naamruimten importeren
 

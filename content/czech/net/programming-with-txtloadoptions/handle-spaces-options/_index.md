@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
-## Úvod
+## Zavedení
 
 Manipulace s mezerami v textových dokumentech může někdy vypadat jako žonglování. Prostory se mohou vplížit tam, kde je nechcete, nebo chybět tam, kde jsou potřeba. Při práci s Aspose.Words for .NET máte nástroje pro přesnou a efektivní správu těchto prostorů. V tomto tutoriálu se ponoříme do toho, jak zacházet s mezerami v textových dokumentech pomocí Aspose.Words, se zaměřením na úvodní a koncové mezery.
 
@@ -52,7 +52,7 @@ const string textDoc = "      Line 1 \n" +
                        " Line 3       ";
 ```
 
- Tady,`textDoc` je řetězec, který simuluje textový soubor s mezerami navíc před a za každým řádkem. To nám pomůže zjistit, jak Aspose.Words zachází s těmito prostory.
+ Zde,`textDoc` je řetězec, který simuluje textový soubor s mezerami navíc před a za každým řádkem. To nám pomůže zjistit, jak Aspose.Words zachází s těmito prostory.
 
 ## Krok 3: Nastavte možnosti zatížení pro manipulaci s prostory
 

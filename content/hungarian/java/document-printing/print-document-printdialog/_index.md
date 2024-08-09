@@ -81,7 +81,7 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 
 ### Kinyomtathatok bizonyos oldalakat egy dokumentumból?
 
- Igen, kinyomtathat bizonyos oldalakat egy dokumentumból, ha megadja az oldaltartományt a dokumentumban`PrinterSettings` tárgy. Íme egy példa:
+ Igen, kinyomtathat bizonyos oldalakat egy dokumentumból, ha megadja az oldaltartományt a dokumentumban`PrinterSettings` objektum. Íme egy példa:
 
 ```java
 PrinterSettings settings = new PrinterSettings();

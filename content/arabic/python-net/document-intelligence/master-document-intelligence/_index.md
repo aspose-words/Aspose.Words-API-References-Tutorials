@@ -2,7 +2,7 @@
 title: إتقان ذكاء الوثيقة
 linktitle: إتقان ذكاء الوثيقة
 second_title: Aspose.Words Python إدارة المستندات API
-description: إتقان ذكاء المستندات باستخدام Aspose.Words for Python. أتمتة سير العمل، وتحليل البيانات، ومعالجة المستندات بكفاءة. نبدأ الآن!
+description: إتقان ذكاء المستندات باستخدام Aspose.Words for Python. أتمتة سير العمل، وتحليل البيانات، ومعالجة المستندات بكفاءة. ابدأ الآن!
 type: docs
 weight: 10
 url: /ar/python-net/document-intelligence/master-document-intelligence/

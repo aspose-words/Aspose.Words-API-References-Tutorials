@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinin belirli bir sayfasını özelleştirilmiş ayarlarla bir JPEG görüntüsüne başarıyla dönüştürdünüz. Bu süreç, ister bir web sitesi için görseller hazırlıyor olun, ister belge önizlemeleri oluşturuyor olun veya daha fazlasını yapıyor olun, çeşitli ihtiyaçlara uyacak şekilde uyarlanabilir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinin belirli bir sayfasını özelleştirilmiş ayarlarla bir JPEG görüntüsüne başarıyla dönüştürdünüz. Bu süreç, ister bir web sitesi için görseller hazırlıyor olun, ister belge önizlemeleri oluşturuyor olun veya daha fazlasını yapıyor olun, çeşitli ihtiyaçlara uyacak şekilde uyarlanabilir.
 
 ## SSS'ler
 

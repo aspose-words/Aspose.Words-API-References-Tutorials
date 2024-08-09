@@ -9,7 +9,7 @@ url: /pl/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 ## Wstęp
 
-Czy kiedykolwiek miałeś problemy z tabelami, które wyglądały, jakby były wciśnięte w dokument programu Word, przez co tekst był zatłoczony, a kolumny niewyrównane? Jeśli tak, nie jesteś sam! Zarządzanie formatowaniem tabeli może być naprawdę kłopotliwe, szczególnie w przypadku zawartości dynamicznej. Ale nie martw się; Aspose.Words dla .NET Cię wspiera. W tym przewodniku zagłębimy się w fajną funkcję automatycznego dopasowywania tabel do zawartości. Dzięki tej funkcjonalności Twoje tabele idealnie dostosowują się do ich zawartości, dzięki czemu Twoje dokumenty będą wyglądać elegancko i profesjonalnie przy minimalnym wysiłku. Gotowy żeby zacząć? Sprawmy, aby Twoje stoły pracowały dla Ciebie ciężej!
+Czy kiedykolwiek miałeś problemy z tabelami, które wyglądały, jakby były wciśnięte w dokument programu Word, przez co tekst był zatłoczony, a kolumny niewyrównane? Jeśli tak, nie jesteś sam! Zarządzanie formatowaniem tabeli może być naprawdę kłopotliwe, szczególnie w przypadku zawartości dynamicznej. Ale nie martw się; Aspose.Words dla .NET Cię wspiera. W tym przewodniku zagłębimy się w fajną funkcję automatycznego dopasowywania tabel do zawartości. Ta funkcjonalność gwarantuje, że Twoje tabele idealnie dostosują się do ich zawartości, dzięki czemu Twoje dokumenty będą wyglądały elegancko i profesjonalnie przy minimalnym wysiłku. Gotowy, aby zacząć? Sprawmy, aby Twoje stoły pracowały dla Ciebie ciężej!
 
 ## Warunki wstępne
 
@@ -17,7 +17,7 @@ Zanim przejdziemy do kodu, oto co musisz mieć:
 
 1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
 2. Visual Studio: środowisko programistyczne, takie jak Visual Studio, do pisania i testowania kodu.
-3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie pomocna, ponieważ będziemy go używać do manipulowania dokumentami programu Word.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie pomocna, ponieważ będziemy go używać do manipulowania dokumentami Word.
 
 ## Importuj przestrzenie nazw
 

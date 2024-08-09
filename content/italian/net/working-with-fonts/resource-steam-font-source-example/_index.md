@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Introduzione
 
 Se lavori con documenti in .NET e utilizzi Aspose.Words, la gestione delle origini dei caratteri può essere un aspetto cruciale per garantire che i tuoi documenti appaiano come previsto. Aspose.Words offre un modo potente per gestire i caratteri, incluso l'utilizzo dei flussi di risorse. In questa guida, esamineremo l'utilizzo di un flusso di risorse come origine di caratteri con Aspose.Words per .NET. Immergiamoci!
 
@@ -15,7 +16,7 @@ Se lavori con documenti in .NET e utilizzi Aspose.Words, la gestione delle origi
 Prima di iniziare, assicurati di avere quanto segue:
 
 - Conoscenza di base di C#: la familiarità con la programmazione C# ti aiuterà a proseguire.
--  Aspose.Words per .NET Library: scaricalo e installalo da[Link per scaricare](https://releases.aspose.com/words/net/).
+-  Aspose.Words per .NET Library: scaricalo e installalo da[collegamento per il download](https://releases.aspose.com/words/net/).
 - Ambiente di sviluppo: una configurazione come Visual Studio per scrivere ed eseguire il codice.
 -  Documento di esempio: disporre di un documento di esempio (ad es.`Rendering.docx`) pronto per testare le impostazioni del carattere.
 
@@ -103,7 +104,7 @@ Ora hai imparato il processo di utilizzo di un flusso di risorse come origine di
 
 ### Q4: Dove posso trovare supporto per Aspose.Words?
 
- Visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) per assistenza.
+ Visita il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) per assistenza.
 
 ### Q5: È possibile ottenere una licenza temporanea per Aspose.Words?
 

@@ -40,7 +40,7 @@ Sebelum kita masuk ke kodenya, pastikan proyek kita sudah diatur dengan benar.
 ## Membuat Proyek
 
 1. Buka Visual Studio: Mulailah dengan membuka Visual Studio atau lingkungan pengembangan C# pilihan Anda.
-2.  Buat Proyek Baru: Navigasikan ke`File > New > Project` . Pilih`Console App (.NET Core)` atau jenis proyek lain yang relevan.
+2.  Buat Proyek Baru: Navigasikan ke`File > New > Project` . Memilih`Console App (.NET Core)` atau jenis proyek lain yang relevan.
 3.  Beri Nama Proyek Anda: Berikan nama yang bermakna pada proyek Anda, kira-kira`AsposeWordsExportExample`.
 
 ## Menambahkan Aspose.Kata-kata

@@ -42,7 +42,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. Adım: Varsayılan Numaralandırmayı Uygulayın
 
- Numaralandırılmış bir listeyle başlamak için`ApplyNumberDefault` yöntem. Bu, varsayılan numaralı liste formatını ayarlar.
+ Numaralandırılmış bir listeyle başlamak için`ApplyNumberDefault` Yöntem. Bu, varsayılan numaralı liste formatını ayarlar.
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -54,7 +54,7 @@ builder.Writeln("Item 2");
 
 ## Adım 3: Alt Düzeyler için Girinti
 
- Daha sonra, listenizde alt düzeyler oluşturmak için`ListIndent` yöntem. Bu yöntem, liste öğesinin girintisini oluşturarak onu önceki öğenin bir alt düzeyi haline getirir.
+ Daha sonra, listenizde alt düzeyler oluşturmak için`ListIndent` Yöntem. Bu yöntem, liste öğesinin girintisini oluşturarak onu önceki öğenin bir alt düzeyi haline getirir.
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -78,7 +78,7 @@ Artık "Madde 2.2" altında üçüncü düzey bir listeniz var.
 
 ## Adım 5: Daha Yüksek Seviyelere Dönüş için Çıkıntı
 
- Daha yüksek bir seviyeye dönmek için,`ListOutdent` yöntem. Bu, öğeyi önceki liste düzeyine geri taşır.
+ Daha yüksek bir seviyeye dönmek için,`ListOutdent` Yöntem. Bu, öğeyi önceki liste düzeyine geri taşır.
 
 ```csharp
 builder.ListFormat.ListOutdent();
@@ -111,7 +111,7 @@ Bu, güzel biçimlendirilmiş belgenizi çok düzeyli listelerle kaydeder.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla çok düzeyli bir liste oluşturdunuz. Bu güçlü kitaplık, karmaşık belge biçimlendirme görevlerini kolaylıkla otomatikleştirmenize olanak tanır. Unutmayın, bu araçlarda uzmanlaşmak yalnızca zamandan tasarruf etmekle kalmaz, aynı zamanda belge oluşturma sürecinizde tutarlılık ve profesyonellik de sağlar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla çok düzeyli bir liste oluşturdunuz. Bu güçlü kitaplık, karmaşık belge biçimlendirme görevlerini kolaylıkla otomatikleştirmenize olanak tanır. Unutmayın, bu araçlarda uzmanlaşmak yalnızca zamandan tasarruf etmekle kalmaz, aynı zamanda belge oluşturma sürecinizde tutarlılık ve profesyonellik de sağlar.
 
 ## SSS'ler
 

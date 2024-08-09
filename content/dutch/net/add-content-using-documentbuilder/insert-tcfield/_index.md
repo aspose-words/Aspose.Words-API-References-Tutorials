@@ -9,7 +9,7 @@ url: /nl/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## Invoering
 
-Hallo daar! Als u zich in de wereld van documentautomatisering duikt, bent u hier op de juiste plek. Vandaag gaan we onderzoeken hoe je een TC-veld (Table of Contents) in een Word-document kunt invoegen met Aspose.Words voor .NET. Geloof me, aan het einde van deze tutorial voel je je als een tovenaar die spreuken uitspreekt in je Word-documenten. klaar om te beginnen? Laten we dit doen!
+Hé daar! Als u zich in de wereld van documentautomatisering duikt, bent u hier op de juiste plek. Vandaag gaan we onderzoeken hoe je een TC-veld (Table of Contents) in een Word-document kunt invoegen met Aspose.Words voor .NET. Geloof me, aan het einde van deze tutorial voel je je als een tovenaar die spreuken uitspreekt in je Word-documenten. Klaar om aan de slag te gaan? Laten we dit doen!
 
 ## Vereisten
 
@@ -79,7 +79,7 @@ Boom! U hebt zojuist een Word-document gemaakt met een TC-veld. Hoe geweldig is 
 
 ## Conclusie
 
- En daar heb je het! We hebben besproken hoe u een TC-veld in een Word-document kunt invoegen met Aspose.Words voor .NET. Het is vrij eenvoudig, toch? Met deze vaardigheden kunt u uw Word-documenten nu als een professional automatiseren en aanpassen. Als u vragen heeft of tegen problemen aanloopt, aarzel dan niet om de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of neem contact op met hun[Helpforum](https://forum.aspose.com/c/words/8). Veel codeerplezier!
+ En daar heb je het! We hebben besproken hoe u een TC-veld in een Word-document kunt invoegen met Aspose.Words voor .NET. Het is vrij eenvoudig, toch? Met deze vaardigheden kunt u uw Word-documenten nu als een professional automatiseren en aanpassen. Als u vragen heeft of tegen problemen aanloopt, aarzel dan niet om de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of neem contact op met hun[ondersteuningsforum](https://forum.aspose.com/c/words/8). Veel codeerplezier!
 
 ## Veelgestelde vragen
 

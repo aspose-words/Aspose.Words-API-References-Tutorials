@@ -92,7 +92,7 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功更改了 Word 文件中的區域設定。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功更改了 Word 文件中的區域設定。
 
 ## 結論
 

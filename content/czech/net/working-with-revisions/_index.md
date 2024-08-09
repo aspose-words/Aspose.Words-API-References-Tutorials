@@ -16,12 +16,12 @@ Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy v
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Přijmout revize](./accept-revisions/) | Naučte se přijímat revize dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Získejte revizní typy slov](./get-revision-types/) | Získejte typy revizí slov v dokumentu aplikace Word pomocí Aspose.Words pro .NET. |
-| [Získejte skupiny revizí](./get-revision-groups/) | Získejte podrobnosti o skupině revizí v dokumentu aplikace Word pomocí Aspose.Words pro .NET. |
-| [Odebrat komentáře v souboru PDF](./remove-comments-in-pdf/) | Odstraňte komentáře ze souboru PDF pomocí Aspose.Words for .NET. |
-| [Zobrazit revize v bublinách](./show-revisions-in-balloons/) | Zobrazte revize v bublinách pomocí Aspose.Words pro .NET. |
-| [Získejte podrobnosti o skupině revizí](./get-revision-group-details/) | Získejte podrobnosti o skupině revizí v dokumentu aplikace Word pomocí Aspose.Words pro .NET. |
-| [Přístup k revidované verzi](./access-revised-version/) | Získejte přístup k revidované verzi dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Přesunout uzel ve sledovaném dokumentu](./move-node-in-tracked-document/) | Přesunout uzly ve sledovaném dokumentu pomocí Aspose.Words for .NET. |
-| [Revize tvaru](./shape-revision/) | Revidujte tvary v dokumentu aplikace Word pomocí Aspose.Words pro .NET. |
+| [Přijmout revize](./accept-revisions/) | Revize hlavního dokumentu s Aspose.Words pro .NET. Naučte se bez námahy sledovat, přijímat a odmítat změny. Zvyšte své dovednosti v oblasti správy dokumentů. |
+| [Získejte revizní typy slov](./get-revision-types/) |Naučte se, jak získat revizní typy slov v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento podrobný průvodce vám pomůže efektivně zvládnout revize dokumentů. |
+| [Získejte skupiny revizí](./get-revision-groups/) | Naučte se, jak načíst skupiny revizí z dokumentů aplikace Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem. Ideální pro správu dokumentů. |
+| [Odebrat komentáře v souboru PDF](./remove-comments-in-pdf/) | Naučte se, jak odstranit komentáře ze souboru PDF pomocí Aspose.Words for .NET s naším podrobným průvodcem. |
+| [Zobrazit revize v bublinách](./show-revisions-in-balloons/) | Naučte se zobrazovat revize v bublinách pomocí Aspose.Words for .NET. Tento podrobný průvodce vás provede každým krokem a zajistí, že změny dokumentu budou jasné a uspořádané. |
+| [Získejte podrobnosti o skupině revizí](./get-revision-group-details/) | Pomocí tohoto podrobného průvodce můžete snadno získat podrobnosti o skupině revizí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ideální pro .NET vývojáře. |
+| [Přístup k revidované verzi](./access-revised-version/) | Naučte se přistupovat k revidované verzi dokumentu a zobrazovat ji pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou správu dokumentů. |
+| [Přesunout uzel ve sledovaném dokumentu](./move-node-in-tracked-document/) | Naučte se přesouvat uzly ve sledovaném dokumentu Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro vývojáře. |
+| [Revize tvaru](./shape-revision/) | Naučte se, jak zacházet s revizemi tvarů v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto komplexního průvodce. Ovládněte sledování změn, vkládání tvarů a další. |

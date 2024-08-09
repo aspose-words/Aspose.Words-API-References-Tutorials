@@ -15,7 +15,7 @@ Op het gebied van documentmanipulatie is Aspose.Words voor Java een krachtig hul
 
 ### Watermerken toevoegen
 
-Het toevoegen van watermerken aan documenten kan van cruciaal belang zijn voor de branding of beveiliging van uw inhoud. Aspose.Words voor Java maakt deze taak eenvoudig. Hier is hoe:
+Het toevoegen van watermerken aan documenten kan van cruciaal belang zijn voor de branding of beveiliging van uw inhoud. Aspose.Words voor Java maakt deze taak eenvoudig. Hier ziet u hoe:
 
 ```java
 // Laad het document
@@ -45,7 +45,7 @@ doc.save("document_with_watermark.docx");
 
 U kunt watermerken verder aanpassen door het lettertype, de grootte, de kleur en de rotatie aan te passen. Deze flexibiliteit zorgt ervoor dat uw watermerk naadloos aansluit bij de stijl van uw document.
 
-## Pagina instellingen
+## Pagina-instelling
 
 ### Paginagrootte en richting
 

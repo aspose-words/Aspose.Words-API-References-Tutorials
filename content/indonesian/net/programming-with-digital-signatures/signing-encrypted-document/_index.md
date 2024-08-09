@@ -57,7 +57,7 @@ Anda memerlukan direktori untuk menyimpan dokumen dan sertifikat Word Anda. Mari
 
 ## Langkah 4: Menulis Kode
 
- Sekarang, mari selami kodenya. Bukalah`Program.cs` file dan mulai dengan menyiapkan jalur ke direktori dokumen Anda dan menginisialisasi`SignOptions` dengan kata sandi dekripsi.
+ Sekarang, mari selami kodenya. Buka milikmu`Program.cs` file dan mulai dengan menyiapkan jalur ke direktori dokumen Anda dan menginisialisasi`SignOptions` dengan kata sandi dekripsi.
 
 ```csharp
 // Jalur ke direktori dokumen.

@@ -72,7 +72,7 @@ table.TopPadding = 30;
 table.BottomPadding = 30;
 ```
 
-## Étape 5 : Ajouter du contenu à la ligne
+## Étape 5 : ajouter du contenu à la ligne
 
 Une fois le formatage en place, il est temps d'ajouter du contenu à la ligne. Il peut s'agir de n'importe quel texte ou donnée que vous souhaitez inclure.
 
@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 
 ## Conclusion
 
-Et voila! Vous avez créé avec succès un tableau formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus peut être étendu et personnalisé pour répondre à des exigences plus complexes, mais ces étapes de base constituent une base solide. Expérimentez différentes options de formatage et voyez comment elles améliorent vos documents.
+Et voilà ! Vous avez créé avec succès un tableau formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus peut être étendu et personnalisé pour répondre à des exigences plus complexes, mais ces étapes de base constituent une base solide. Expérimentez différentes options de formatage et voyez comment elles améliorent vos documents.
 
 ## FAQ
 

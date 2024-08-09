@@ -2,7 +2,7 @@
 title: Korzystanie z pól formularzy w Aspose.Words dla Java
 linktitle: Korzystanie z pól formularza
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Naucz się używać Aspose.Words for Java do tworzenia interaktywnych dokumentów Word z polami formularzy. Zacznij teraz!
+description: Naucz się używać Aspose.Words for Java do tworzenia interaktywnych dokumentów Word z polami formularzy. Zacznij już teraz!
 type: docs
 weight: 14
 url: /pl/java/using-document-elements/using-form-fields/

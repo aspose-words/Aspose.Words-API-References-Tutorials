@@ -16,7 +16,7 @@ Này, anh bạn lập trình viên! Bạn đã bao giờ thấy mình bị vư�
 Trước khi bắt đầu, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
 
 -  Visual Studio: Bạn có thể tải xuống từ[đây](https://visualstudio.microsoft.com/).
--  Aspose.Words for .NET: Lấy nó từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Lấy nó từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 -  Giấy phép Aspose.Words hợp lệ: Bạn có thể nhận được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/) nếu bạn không có.
 
 Và tất nhiên, một số kiến thức cơ bản về C# và .NET sẽ giúp ích rất nhiều.
@@ -82,13 +82,13 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Hiểu MoveToBookmark
 
- Các`MoveToBookmark`phương pháp cho phép bạn điều hướng đến một dấu trang cụ thể trong tài liệu của bạn. Chữ ký phương thức là:
+ các`MoveToBookmark`phương pháp cho phép bạn điều hướng đến một dấu trang cụ thể trong tài liệu của bạn. Chữ ký phương thức là:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
 ```
 
-- `bookmarkName`: Tên của bookmark bạn muốn điều hướng tới.
+- `bookmarkName`: Tên của bookmark bạn muốn điều hướng đến.
 - `isBookmarkStart` : Nếu đặt thành`true`, di chuyển đến đầu dấu trang.
 - `isBookmarkEnd` : Nếu đặt thành`true`, di chuyển đến cuối dấu trang.
 
@@ -120,7 +120,7 @@ Cuối cùng, đừng quên lưu các thay đổi của bạn:
 doc.Save(dataDir + "UpdatedBookmarks.docx");
 ```
 
- Bây giờ bạn có thể mở tài liệu đã cập nhật và xem dòng chữ "Đây là dấu trang". ngay sau khi`MyBookmark1`.
+ Bây giờ bạn có thể mở tài liệu đã cập nhật và xem dòng chữ "Đây là dấu trang". ngay sau đó`MyBookmark1`.
 
 ## Phần kết luận
 
@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. Tôi có thể di chuyển đến đầu dấu trang thay vì cuối không?
 
- Tuyệt đối! Chỉ cần thiết lập`isBookmarkStart` tham số để`true`Và`isBookmarkEnd` ĐẾN`false` bên trong`MoveToBookmark` phương pháp.
+ Tuyệt đối! Chỉ cần thiết lập`isBookmarkStart` tham số để`true`Và`isBookmarkEnd` ĐẾN`false` trong`MoveToBookmark` phương pháp.
 
 ### 2. Nếu tên dấu trang của tôi sai thì sao?
 

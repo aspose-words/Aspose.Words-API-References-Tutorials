@@ -59,7 +59,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Adım 4: Belgeyi PDF olarak kaydedin
 
-Kaydetme seçenekleri yapılandırıldığında son adım, belgeyi PDF olarak kaydetmektir. Sihir yapılan yer burasıdır!
+Kaydetme seçenekleri yapılandırıldığında son adım, belgeyi PDF olarak kaydetmektir. Sihrin gerçekleştiği yer burası!
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);

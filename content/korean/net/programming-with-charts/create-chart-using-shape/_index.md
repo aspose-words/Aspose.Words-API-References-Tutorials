@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 
 ### .NET용 Aspose.Words를 사용하여 다른 유형의 차트를 만들 수 있나요?
 
- 예, Aspose.Words for .NET은 막대 차트, 원형 차트 등을 포함한 다양한 차트 유형을 지원합니다. 문서를 탐색할 수 있습니다.[여기](https://reference.aspose.com/words/net/) 상세 사항은.
+ 예, Aspose.Words for .NET은 막대 차트, 원형 차트 등을 포함한 다양한 차트 유형을 지원합니다. 문서를 탐색할 수 있습니다.[여기](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### 구매하기 전에 Aspose.Words for .NET을 어떻게 사용해 볼 수 있나요?
 

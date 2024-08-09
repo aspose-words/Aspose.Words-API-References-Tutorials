@@ -36,7 +36,7 @@ Visual Studio'yu açın ve yeni bir Konsol Uygulaması (.NET Core) projesi oluş
 ## Adım 2: Aspose.Words for .NET'i yükleyin
 
 NuGet Paket Yöneticisi aracılığıyla yükleme  
-Çözüm Gezgini'nde projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin ve şunu arayın:`Aspose.Words`. Yükle.
+Çözüm Gezgini'nde projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin ve şunu arayın:`Aspose.Words`. Kurun.
 
 ## 3. Adım: Belgeyi Başlatın
 
@@ -81,7 +81,7 @@ Bu, belgeyi uygulanan korumayla kaydeder.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanılarak yalnızca form alanlarının düzenlenebilmesi için bir Word belgesini nasıl koruyacağınızı öğrendiniz. Bu, belirli alanların doldurulmasına izin verirken belgenizin belirli bölümlerinin değişmeden kalmasını sağlamanız gerektiğinde kullanışlı bir özelliktir.
+Ve işte karşınızda! Aspose.Words for .NET kullanılarak yalnızca form alanlarının düzenlenebilmesi için bir Word belgesini nasıl koruyacağınızı öğrendiniz. Bu, belirli alanların doldurulmasına izin verirken belgenizin belirli bölümlerinin değişmeden kalmasını sağlamanız gerektiğinde kullanışlı bir özelliktir.
 
 ## SSS'ler
 

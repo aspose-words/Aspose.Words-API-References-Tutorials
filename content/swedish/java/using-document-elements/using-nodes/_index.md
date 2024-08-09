@@ -9,7 +9,7 @@ url: /sv/java/using-document-elements/using-nodes/
 ---
 I denna omfattande handledning kommer vi att fördjupa oss i världen av att arbeta med noder i Aspose.Words för Java. Noder är grundläggande delar av ett dokuments struktur, och att förstå hur man manipulerar dem är avgörande för dokumentbearbetningsuppgifter. Vi kommer att utforska olika aspekter, inklusive att erhålla överordnade noder, räkna upp underordnade noder och skapa och lägga till styckenoder.
 
-## 1. Introduktion
+## 1. Inledning
 Aspose.Words för Java är ett kraftfullt bibliotek för att arbeta med Word-dokument programmatiskt. Noder representerar olika element i ett Word-dokument, såsom stycken, körningar, sektioner och mer. I den här handledningen kommer vi att utforska hur man manipulerar dessa noder effektivt.
 
 ## 2. Komma igång

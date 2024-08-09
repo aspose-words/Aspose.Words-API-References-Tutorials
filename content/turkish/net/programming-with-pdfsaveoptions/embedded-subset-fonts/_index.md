@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## Çözüm
 
-İşte buyur! Bu basit adımları izleyerek, Aspose.Words for .NET'i kullanarak yalnızca gerekli yazı tipi alt kümelerini gömerek PDF dosyalarınızın boyutunu etkili bir şekilde azaltabilirsiniz. Bu yalnızca depolama alanından tasarruf etmekle kalmaz, aynı zamanda özellikle geniş yazı tiplerine sahip belgeler için daha hızlı yükleme süreleri ve daha iyi performans sağlar.
+Ve işte karşınızda! Bu basit adımları izleyerek, Aspose.Words for .NET'i kullanarak yalnızca gerekli yazı tipi alt kümelerini gömerek PDF dosyalarınızın boyutunu etkili bir şekilde azaltabilirsiniz. Bu yalnızca depolama alanından tasarruf etmekle kalmaz, aynı zamanda özellikle geniş yazı tiplerine sahip belgeler için daha hızlı yükleme süreleri ve daha iyi performans sağlar.
 
 ## SSS'ler
 

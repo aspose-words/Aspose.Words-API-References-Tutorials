@@ -91,7 +91,7 @@ Nein, Aspose.Words für .NET behält beim Öffnen oder Speichern von Dokumenten 
 
 ### Gibt es eine Möglichkeit, mehrere digitale Signaturen auf einem Dokument zu erkennen?
 
- Ja das`HasDigitalSignature` kann auf das Vorhandensein einer oder mehrerer digitaler Signaturen im Dokument hinweisen.
+ Ja, die`HasDigitalSignature` kann auf das Vorhandensein einer oder mehrerer digitaler Signaturen im Dokument hinweisen.
 
 ### Wie erhalte ich eine kostenlose Testversion von Aspose.Words für .NET?
 

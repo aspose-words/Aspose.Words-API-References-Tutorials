@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Adım 4: Yinelenen Bölüm Oluşturun
 
- Oluşturmak`StructuredDocumentTag` (SDT) yinelenen bölüm için ve bunu XML verileriyle eşleyin:
+ Bir oluştur`StructuredDocumentTag` (SDT) yinelenen bölüm için ve bunu XML verileriyle eşleyin:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

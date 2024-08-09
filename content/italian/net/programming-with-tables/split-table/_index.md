@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/split-table/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato a lavorare con una tabella di grandi dimensioni in un documento Word e vorresti poterla dividere in due tabelle più piccole e più gestibili? Bene, oggi approfondiremo esattamente come ottenere questo risultato utilizzando Aspose.Words per .NET. Che tu abbia a che fare con tabelle di dati estese o strutture di documenti complesse, dividere le tabelle può aiutare a migliorare la leggibilità e l'organizzazione. Esploriamo il processo passo passo per dividere una tabella utilizzando Aspose.Words per .NET.
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, puoi facilmente dividere una tabella in un documento Word utilizzando Aspose.Words per .NET. Questo approccio ti aiuta a gestire tabelle di grandi dimensioni in modo più efficace, migliorando la leggibilità e l'organizzazione dei tuoi documenti. Provalo e scopri come semplifica il tuo lavoro con le tabelle nei documenti di Word.
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente dividere una tabella in un documento Word utilizzando Aspose.Words per .NET. Questo approccio ti aiuta a gestire tabelle di grandi dimensioni in modo più efficace, migliorando la leggibilità e l'organizzazione dei tuoi documenti. Provalo e scopri come semplifica il tuo lavoro con le tabelle nei documenti di Word.
 
 ## Domande frequenti
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
-## introduzione
+## Introduzione
 
 Gestire gli spazi nei documenti di testo a volte può sembrare un atto di giocoleria. Gli spazi possono intrufolarsi dove non li vuoi o essere assenti dove sono necessari. Quando lavori con Aspose.Words per .NET, hai gli strumenti per gestire questi spazi in modo preciso ed efficiente. In questo tutorial, approfondiremo come gestire gli spazi nei documenti di testo utilizzando Aspose.Words, concentrandoci sugli spazi iniziali e finali.
 

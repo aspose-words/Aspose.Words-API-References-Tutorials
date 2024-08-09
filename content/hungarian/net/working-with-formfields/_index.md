@@ -12,7 +12,7 @@ Words Processing with Form Fields egy átfogó forrás a Word-dokumentumok űrla
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Űrlapmezők beszúrása](./insert-form-fields/) | Ismerje meg, hogyan szúrhat be legördülő űrlapmezőket Word dokumentumokba az Aspose.Words for .NET használatával. |
-| [Az űrlapmezők a tulajdonságokkal dolgoznak](./form-fields-work-with-properties/) | Ismerje meg, hogyan dolgozhat az űrlapmező tulajdonságaival Word dokumentumokban az Aspose.Words for .NET használatával. |
-| [Űrlapmezők Űrlapmezők gyűjteménye](./form-fields-get-form-fields-collection/) | Ismerje meg, hogyan kérheti le és kezelheti az űrlapmezők gyűjteményét Word dokumentumokban az Aspose.Words for .NET használatával. |
-| [Űrlapmezők név szerint](./form-fields-get-by-name/) | Ismerje meg, hogyan kérheti le és módosíthatja név szerint az űrlapmezőket Word dokumentumokban az Aspose.Words for .NET használatával. |
+| [Űrlapmezők beszúrása](./insert-form-fields/) | Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan szúrhat be kombinált mezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. |
+| [Az űrlapmezők a tulajdonságokkal dolgoznak](./form-fields-work-with-properties/) | Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan kezelheti az űrlapmezőket Word dokumentumokban az Aspose.Words for .NET használatával. |
+| [Űrlapmezők Űrlapmezők gyűjteménye](./form-fields-get-form-fields-collection/) | Átfogó, lépésenkénti útmutatónkkal megtudhatja, hogyan szerezhet be és kezelhet űrlapmezőket Word dokumentumokban az Aspose.Words for .NET használatával. |
+| [Űrlapmezők név szerint](./form-fields-get-by-name/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan szerezhet be és módosíthat név szerint űrlapmezőket Word-dokumentumokban az Aspose.Words for .NET használatával. |

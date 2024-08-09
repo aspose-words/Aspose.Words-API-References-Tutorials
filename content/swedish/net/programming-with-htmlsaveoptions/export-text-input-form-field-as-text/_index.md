@@ -40,7 +40,7 @@ Innan vi går in i koden, låt oss se till att vårt projekt är korrekt konfigu
 ## Skapar projektet
 
 1. Öppna Visual Studio: Börja med att öppna Visual Studio eller din föredragna C#-utvecklingsmiljö.
-2.  Skapa ett nytt projekt: Navigera till`File > New > Project` . Välj`Console App (.NET Core)` eller någon annan relevant projekttyp.
+2.  Skapa ett nytt projekt: Navigera till`File > New > Project` . Välja`Console App (.NET Core)` eller någon annan relevant projekttyp.
 3.  Namnge ditt projekt: Ge ditt projekt ett meningsfullt namn, något liknande`AsposeWordsExportExample`.
 
 ## Lägger till Aspose.Words
@@ -79,7 +79,7 @@ Directory.CreateDirectory(imagesDir);
 
 ## Steg 4: Konfigurera sparalternativ
 
-Det är här magin händer. Vi måste ställa in våra sparalternativ för att exportera textinmatningsformulärfältet som vanlig text.
+Här händer magin. Vi måste ställa in våra sparalternativ för att exportera textinmatningsformulärfältet som vanlig text.
 
 1.  Skapa sparalternativ: Initiera ett nytt`HtmlSaveOptions` objekt.
 2.  Ställ in exporttextalternativ: Konfigurera`ExportTextInputFormFieldAsText`egendom till`true`.
@@ -124,7 +124,7 @@ Och där har du det! Du har framgångsrikt exporterat ett textinmatningsformulä
 
 ### Kan jag anpassa den exporterade HTML-koden?
 
- Absolut! Aspose.Words erbjuder olika alternativ för att anpassa HTML-utdata. Referera till[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Absolut! Aspose.Words erbjuder olika alternativ för att anpassa HTML-utdata. Se till[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Är Aspose.Words kompatibelt med .NET Core?
 

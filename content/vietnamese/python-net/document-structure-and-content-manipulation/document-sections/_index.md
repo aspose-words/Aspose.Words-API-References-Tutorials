@@ -96,7 +96,7 @@ Có, bạn có thể có nhiều phần trong một tài liệu, mỗi phần c�
 Có, Aspose.Words hỗ trợ nhiều định dạng Word khác nhau, bao gồm DOC, DOCX, RTF, v.v.
 
 ### Làm cách nào để thêm hình ảnh vào đầu trang hoặc chân trang?
- Bạn có thể dùng`Shape` lớp để thêm hình ảnh vào đầu trang hoặc chân trang. Kiểm tra tài liệu API để được hướng dẫn chi tiết.
+ Bạn có thể sử dụng`Shape` lớp để thêm hình ảnh vào đầu trang hoặc chân trang. Kiểm tra tài liệu API để được hướng dẫn chi tiết.
 
 ### Tôi có thể tải xuống phiên bản Aspose.Words mới nhất cho Python ở đâu?
  Bạn có thể tải xuống phiên bản mới nhất của Aspose.Words cho Python từ[Trang phát hành Aspose.Words](https://releases.aspose.com/words/python/).

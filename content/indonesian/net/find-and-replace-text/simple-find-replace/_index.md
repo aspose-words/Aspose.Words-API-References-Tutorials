@@ -69,7 +69,7 @@ Console.WriteLine("Original document text: " + doc.Range.Text);
 
 ## Langkah 4: Mengganti Teks
 
-Ini adalah dimana keajaiban terjadi! Kami akan menggantinya"_CustomerName_ " dengan "James Bond" menggunakan`Replace` metode. 
+Di sinilah keajaiban terjadi! Kami akan menggantinya"_CustomerName_ " dengan "James Bond" menggunakan`Replace` metode. 
 
 ```csharp
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
@@ -102,7 +102,7 @@ Dan itu dia! Anda baru saja mengotomatiskan proses mencari dan mengganti teks da
 ## FAQ
 
 ### Bisakah saya mengganti beberapa teks berbeda sekaligus?
- Ya kamu bisa. Telepon saja`Replace` metode untuk setiap teks yang ingin Anda ganti.
+ Ya, kamu bisa. Telepon saja`Replace` metode untuk setiap teks yang ingin Anda ganti.
 
 ### Apakah Aspose.Words untuk .NET gratis?
 Aspose.Words untuk .NET menawarkan uji coba gratis, tetapi untuk fungsionalitas penuh, Anda harus membeli lisensi. Lihat mereka[penetapan harga](https://purchase.aspose.com/buy) untuk lebih jelasnya.

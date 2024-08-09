@@ -77,7 +77,7 @@ foreach (Comment childComment in parentComment.Replies)
 
 In deze lus afdrukken we de ID van de ouderopmerking en de status ervan (of deze nu klaar is of niet). Vervolgens markeren we elk antwoord als voltooid.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het gewijzigde document op in uw map.
 

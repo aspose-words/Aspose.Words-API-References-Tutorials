@@ -14,7 +14,7 @@ Czy kiedykolwiek znalazłeś się w trudnej sytuacji, próbując ustalić dokła
 ## Warunki wstępne
 
 Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz:
--  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Visual Studio: wystarczy każda wersja, ale zawsze zalecana jest najnowsza.
 - .NET Framework: Upewnij się, że masz .NET Framework 4.0 lub nowszy.
 - Dokument programu Word: w tym samouczku użyjemy dokumentu o nazwie`Tables.docx`.
@@ -52,7 +52,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ## Krok 3: Sprawdź zawijanie tekstu w tabeli
 
-Tabele w programie Word można owijać wokół tekstu na różne sposoby. Zobaczmy, jak zapakowany jest nasz stół.
+Tabele w programie Word można owijać wokół tekstu na różne sposoby. Zobaczmy jak zapakowany jest nasz stół.
 
 ```csharp
 // Sprawdź, czy zawijanie tekstu tabeli jest ustawione na „Wokół”

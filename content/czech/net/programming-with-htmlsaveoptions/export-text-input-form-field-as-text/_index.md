@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-text/
 ---
-## Úvod
+## Zavedení
 
 Takže se ponoříte do světa Aspose.Words pro .NET? Skvělá volba! Pokud se chcete naučit, jak exportovat pole formuláře pro zadávání textu jako text, jste na správném místě. Ať už teprve začínáte nebo si oprašujete své dovednosti, tento průvodce vás provede vším, co potřebujete vědět. Začněme, ano?
 
@@ -15,7 +15,7 @@ Takže se ponoříte do světa Aspose.Words pro .NET? Skvělá volba! Pokud se c
 
 Než se pustíme do toho nejzákladnějšího, ujistěte se, že máte vše, co potřebujete, abyste mohli hladce postupovat:
 
--  Aspose.Words for .NET: Stáhněte si a nainstalujte nejnovější verzi z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Stáhněte si a nainstalujte nejnovější verzi z[zde](https://releases.aspose.com/words/net/).
 - IDE: Visual Studio nebo jakékoli vývojové prostředí C#.
 - Základní znalosti C#: Pochopení základní syntaxe C# a konceptů objektově orientovaného programování.
 - Dokument: Ukázkový dokument aplikace Word (`Rendering.docx`) s poli formuláře pro zadávání textu.
@@ -120,11 +120,11 @@ A tady to máte! Úspěšně jste exportovali pole formuláře pro zadávání t
 
 ### Potřebuji licenci pro Aspose.Words?
 
- Ano, můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo zakoupit licenci[tady](https://purchase.aspose.com/buy).
+ Ano, můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Mohu upravit exportovaný HTML?
 
- Absolutně! Aspose.Words poskytuje různé možnosti přizpůsobení výstupu HTML. Odkazovat na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Absolutně! Aspose.Words poskytuje různé možnosti přizpůsobení výstupu HTML. Viz[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 

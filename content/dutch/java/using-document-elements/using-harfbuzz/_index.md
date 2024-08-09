@@ -12,7 +12,7 @@ Aspose.Words voor Java is een krachtige API waarmee ontwikkelaars met Word-docum
 
 ## Introductie tot HarfBuzz
 
-HarfBuzz is een open-source tekstvormmachine die complexe scripts en talen ondersteunt. Het wordt veel gebruikt voor het weergeven van tekst in verschillende talen, vooral talen waarvoor geavanceerde tekstvormgevingsfuncties nodig zijn, zoals Arabische, Perzische en Indische scripts.
+HarfBuzz is een open-source tekstvormmachine die complexe scripts en talen ondersteunt. Het wordt veel gebruikt voor het weergeven van tekst in verschillende talen, vooral in talen waarvoor geavanceerde tekstvormgevingsfuncties nodig zijn, zoals Arabische, Perzische en Indische scripts.
 
 ## Vereisten
 

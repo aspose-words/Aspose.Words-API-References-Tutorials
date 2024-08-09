@@ -89,7 +89,7 @@ Hãy thêm một thuộc tính để lưu trữ ngày ủy quyền. Điều này
 customDocumentProperties.Add("Authorized Date", DateTime.Today);
 ```
 
- Đoạn mã này thêm thuộc tính có tên "Ngày được ủy quyền" với ngày hiện tại làm giá trị. Các`DateTime.Today`thuộc tính tự động tìm nạp ngày hôm nay.
+ Đoạn mã này thêm thuộc tính có tên "Ngày được ủy quyền" với ngày hiện tại làm giá trị. các`DateTime.Today`thuộc tính tự động tìm nạp ngày hôm nay.
 
 ## Bước 7: Thêm số sửa đổi
 
@@ -113,7 +113,7 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thêm thành công các thuộc tính tài liệu tùy chỉnh vào tài liệu Word bằng Aspose.Words cho .NET. Các thuộc tính này có thể cực kỳ hữu ích để lưu trữ siêu dữ liệu bổ sung dành riêng cho nhu cầu của bạn. Cho dù bạn đang theo dõi chi tiết ủy quyền, số sửa đổi hay số tiền cụ thể, thuộc tính tùy chỉnh đều cung cấp giải pháp linh hoạt.
+Và bạn có nó! Bạn đã thêm thành công các thuộc tính tài liệu tùy chỉnh vào tài liệu Word bằng Aspose.Words cho .NET. Các thuộc tính này có thể cực kỳ hữu ích để lưu trữ siêu dữ liệu bổ sung dành riêng cho nhu cầu của bạn. Cho dù bạn đang theo dõi chi tiết ủy quyền, số sửa đổi hay số tiền cụ thể, thuộc tính tùy chỉnh đều cung cấp giải pháp linh hoạt.
 
 Hãy nhớ rằng, chìa khóa để thành thạo Aspose.Words cho .NET là thực hành. Vì vậy, hãy tiếp tục thử nghiệm các thuộc tính khác nhau và xem chúng có thể cải thiện tài liệu của bạn như thế nào. Chúc mừng mã hóa!
 

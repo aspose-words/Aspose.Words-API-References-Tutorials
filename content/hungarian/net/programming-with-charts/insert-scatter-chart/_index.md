@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Helyezze be a szóródiagramot
+## 2. lépés: Helyezze be a szórási diagramot
 
  Használja a`InsertChart` módszere a`DocumentBuilder` osztályban szóródiagramot szúrjon be a dokumentumba.
 
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan illeszthet be szóródiagramot a Word-dokumentumába az Aspose.Words for .NET használatával. A szóródiagramok kiváló eszközök az adatkapcsolatok megjelenítésére, és az Aspose.Words segítségével könnyedén integrálhatja őket dokumentumaiba az áttekinthetőség és a megértés javítása érdekében.
+Gratulálok! Sikeresen megtanulta, hogyan illeszthet be szóródiagramot a Word-dokumentumába az Aspose.Words for .NET használatával. A szóródiagramok kiváló eszközök az adatkapcsolatok megjelenítésére, és az Aspose.Words segítségével könnyedén integrálhatja őket dokumentumaiba az áttekinthetőség és a megértés javítása érdekében.
 
 ## GYIK
 

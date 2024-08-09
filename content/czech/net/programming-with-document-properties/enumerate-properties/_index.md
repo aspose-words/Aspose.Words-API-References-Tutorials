@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/enumerate-properties/
 ---
-## Úvod
+## Zavedení
 
 Chcete pracovat s dokumenty Wordu programově? Aspose.Words for .NET je výkonný nástroj, který vám může pomoci dosáhnout právě toho. Dnes vás provedu tím, jak vytvořit výčet vlastností dokumentu aplikace Word pomocí Aspose.Words for .NET. Bez ohledu na to, zda jste začátečník nebo máte nějaké zkušenosti, tento průvodce to krok za krokem rozebere konverzačním a snadno pochopitelným způsobem.
 
@@ -19,7 +19,7 @@ Než se pustíme do výukového programu, je několik věcí, které budete pot�
 - Vývojové prostředí: Doporučuje se Visual Studio, ale můžete použít libovolné IDE C#.
 - Základní znalost C#: Základní znalost C# vám pomůže pokračovat.
 
-Tak pojďme rovnou do toho!
+Teď pojďme rovnou do toho!
 
 ## Krok 1: Nastavení vašeho projektu
 
@@ -106,7 +106,7 @@ tady to máte! Úspěšně jste vytvořili výčet jak vestavěných, tak uživa
  Aspose.Words nabízí a[zkušební verze zdarma](https://releases.aspose.com/) a různé[možnosti nákupu](https://purchase.aspose.com/buy).
 
 ### Jak získám podporu pro Aspose.Words?
- Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Můžete získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).
 
 ### Mohu používat Aspose.Words s jinými jazyky .NET?
 Ano, Aspose.Words podporuje více jazyků .NET včetně VB.NET.

@@ -111,7 +111,7 @@ Memformat sel tabel dapat meningkatkan keterbacaan dan daya tarik visual dokumen
 ## FAQ
 
 ### Bisakah saya menetapkan nilai padding yang berbeda untuk setiap sel dalam tabel?
- Ya, Anda dapat menetapkan nilai padding yang berbeda untuk setiap sel satu per satu dengan mengaksesnya`CellFormat` properti secara terpisah.
+ Ya, Anda dapat mengatur nilai padding yang berbeda untuk setiap sel satu per satu dengan mengaksesnya`CellFormat` properti secara terpisah.
 
 ### Apakah mungkin menerapkan pemformatan yang sama ke beberapa sel sekaligus?
 Ya, Anda dapat mengulang sel dan menerapkan pengaturan pemformatan yang sama ke masing-masing sel secara terprogram.

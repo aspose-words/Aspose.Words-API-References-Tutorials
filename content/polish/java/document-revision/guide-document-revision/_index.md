@@ -2,7 +2,7 @@
 title: Kompletny przewodnik po rewizji dokumentów
 linktitle: Kompletny przewodnik po rewizji dokumentów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Weryfikacja dokumentu głównego za pomocą Aspose.Words dla Java! Efektywnie zarządzaj zmianami, akceptuj/odrzucaj poprawki i bezproblemowo współpracuj. Zacznij teraz!
+description: Weryfikacja dokumentu głównego za pomocą Aspose.Words dla Java! Efektywnie zarządzaj zmianami, akceptuj/odrzucaj poprawki i bezproblemowo współpracuj. Zacznij już teraz!
 type: docs
 weight: 10
 url: /pl/java/document-revision/guide-document-revision/

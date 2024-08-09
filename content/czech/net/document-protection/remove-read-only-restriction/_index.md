@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/document-protection/remove-read-only-restriction/
 ---
-## Úvod
+## Zavedení
 
 Odstranění omezení pouze pro čtení z dokumentu aplikace Word může být docela náročný úkol, pokud neznáte správné nástroje a metody. Naštěstí Aspose.Words for .NET poskytuje bezproblémový způsob, jak toho dosáhnout. V tomto tutoriálu vás provedeme procesem odstranění omezení pouze pro čtení z dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
@@ -15,7 +15,7 @@ Odstranění omezení pouze pro čtení z dokumentu aplikace Word může být do
 
 Než se pustíme do podrobného průvodce, ujistěte se, že máte splněny následující předpoklady:
 
--  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio.
 - Základní znalost C#: Bude užitečné porozumět základním konceptům programování v C#.
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ## Závěr
 
-A to je vše! Úspěšně jste odstranili omezení pouze pro čtení z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento proces je přímočarý a zajišťuje, že vaše dokumenty lze volně upravovat bez zbytečných omezení. 
+A je to! Úspěšně jste odstranili omezení pouze pro čtení z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento proces je přímočarý a zajišťuje, že vaše dokumenty lze volně upravovat bez zbytečných omezení. 
 
 Ať už pracujete na malém projektu nebo zpracováváte více dokumentů, znalost správy ochrany dokumentů vám může ušetřit spoustu času a potíží. Takže pokračujte a vyzkoušejte to ve svých projektech. Šťastné kódování!
 

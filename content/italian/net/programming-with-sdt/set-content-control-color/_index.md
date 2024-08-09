@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/set-content-control-color/
 ---
-## introduzione
+## Introduzione
 
 Se lavori con documenti di Word e devi personalizzare l'aspetto dei tag di documenti strutturati (SDT), potresti voler cambiare il loro colore. Ciò è particolarmente utile quando hai a che fare con moduli o modelli in cui la differenziazione visiva degli elementi è essenziale. In questa guida, esamineremo il processo di impostazione del colore di un SDT utilizzando Aspose.Words per .NET.
 
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Passaggio 2: caricare il documento
 
- Creare un`Document` oggetto caricando il file Word:
+ Crea un`Document` oggetto caricando il file Word:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -77,7 +77,7 @@ Cambiare il colore di un tag di documento strutturato in un documento di Word ut
 
 ### Posso utilizzare colori diversi per gli SDT?
 
- Sì, puoi utilizzare qualsiasi colore disponibile nel`System.Drawing.Color` classe. Ad esempio, puoi usare`Color.Blue`, `Color.Green`, eccetera.
+ Sì, puoi utilizzare qualsiasi colore disponibile nel`System.Drawing.Color` classe. Ad esempio, puoi usare`Color.Blue`, `Color.Green`, ecc.
 
 ### Come posso cambiare il colore di più SDT in un documento?
 

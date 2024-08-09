@@ -9,7 +9,7 @@ url: /sv/net/programming-with-table-styles-and-formatting/format-table-and-cell-
 ---
 ## Introduktion
 
-Har du någonsin försökt få dina Word-dokument att se mer professionella ut genom att anpassa kanterna på tabeller och celler? Om inte, du är i för en njutning! Denna handledning kommer att leda dig genom processen att formatera tabeller och celler med olika kanter med Aspose.Words för .NET. Föreställ dig att du har makten att ändra utseendet på dina tabeller med bara några rader kod. Fascinerad? Låt oss dyka in och utforska hur du enkelt kan uppnå detta.
+Har du någonsin försökt få dina Word-dokument att se mer professionella ut genom att anpassa kanterna på tabeller och celler? Om inte, är du i för en njutning! Denna handledning kommer att leda dig genom processen att formatera tabeller och celler med olika kanter med Aspose.Words för .NET. Föreställ dig att du har makten att ändra utseendet på dina tabeller med bara några rader kod. Nyfiken? Låt oss dyka in och utforska hur du enkelt kan uppnå detta.
 
 ## Förutsättningar
 
@@ -132,16 +132,16 @@ Och där har du det! Du har precis lärt dig hur du formaterar tabeller och cell
 ## FAQ's
 
 ### Kan jag använda olika kantstilar för varje cell?
- Ja, du kan ställa in olika kantstilar för varje cell genom att använda`CellFormat.Borders` fast egendom.
+ Ja, du kan ställa in olika kantstilar för varje cell genom att använda`CellFormat.Borders` egendom.
 
 ### Hur kan jag ta bort alla kanter från en tabell?
  Du kan ta bort alla kanter genom att ställa in kantstilen till`LineStyle.None`.
 
 ### Är det möjligt att ställa in olika kantfärger för varje cell?
- Absolut! Du kan anpassa kantfärgen för varje cell med hjälp av`CellFormat.Borders.Color` fast egendom.
+ Absolut! Du kan anpassa kantfärgen för varje cell med hjälp av`CellFormat.Borders.Color` egendom.
 
-### Kan jag använda bilder som cellbakgrunder?
+### Kan jag använda bilder som cellbakgrund?
 Även om Aspose.Words inte direkt stöder bilder som cellbakgrunder, kan du infoga en bild i en cell och justera dess storlek för att täcka cellområdet.
 
 ### Hur slår jag ihop celler i en tabell?
- Du kan slå samman celler med hjälp av`CellFormat.HorizontalMerge`och`CellFormat.VerticalMerge` egenskaper.
+ Du kan slå samman celler med hjälp av`CellFormat.HorizontalMerge`och`CellFormat.VerticalMerge` fastigheter.

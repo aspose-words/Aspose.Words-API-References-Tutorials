@@ -9,13 +9,13 @@ url: /fr/net/programming-with-document-options-and-settings/view-options/
 ---
 ## Introduction
 
-Salut, camarade codeur ! Vous êtes-vous déjà demandé comment modifier la façon dont vous affichez vos documents Word à l'aide d'Aspose.Words pour .NET ? Que vous souhaitiez passer à un autre type d'affichage ou effectuer un zoom avant et arrière pour obtenir un aperçu parfait de votre document, vous êtes au bon endroit. Aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET, en nous concentrant spécifiquement sur la façon de manipuler les options d'affichage. Nous allons tout décomposer en étapes simples et compréhensibles, afin que vous deveniez un expert en un rien de temps. Prêt? Commençons!
+Salut, camarade codeur ! Vous êtes-vous déjà demandé comment modifier la façon dont vous affichez vos documents Word à l'aide d'Aspose.Words pour .NET ? Que vous souhaitiez passer à un autre type d'affichage ou effectuer un zoom avant et arrière pour obtenir un aperçu parfait de votre document, vous êtes au bon endroit. Aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET, en nous concentrant spécifiquement sur la façon de manipuler les options d'affichage. Nous allons tout décomposer en étapes simples et compréhensibles, afin que vous deveniez un expert en un rien de temps. Prêt? Commençons !
 
 ## Conditions préalables
 
 Avant de plonger tête première dans le code, assurons-nous que nous disposons de tout ce dont nous avons besoin pour suivre ce didacticiel. Voici une liste de contrôle rapide :
 
-1.  Bibliothèque Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Bibliothèque Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : vous devez avoir un IDE comme Visual Studio installé sur votre machine.
 3. Connaissance de base de C# : même si nous gardons les choses simples, une compréhension de base de C# sera bénéfique.
 4. Exemple de document Word : préparez un exemple de document Word. Pour ce didacticiel, nous l'appellerons « Document.docx ».
@@ -76,7 +76,7 @@ Cette ligne de code enregistre le document modifié sous un nouveau nom, afin de
 
 ## Conclusion
 
-Et voila! Modifier les options d'affichage de votre document Word à l'aide d'Aspose.Words pour .NET est simple une fois que vous connaissez les étapes. En suivant ce didacticiel, vous avez appris à charger un document, à modifier le type d'affichage, à ajuster le niveau de zoom et à enregistrer le document avec les nouveaux paramètres. N'oubliez pas que la clé pour maîtriser Aspose.Words for .NET est la pratique. Alors n’hésitez pas et expérimentez différents paramètres pour voir ce qui vous convient le mieux. Bon codage !
+Et voilà ! Modifier les options d'affichage de votre document Word à l'aide d'Aspose.Words pour .NET est simple une fois que vous connaissez les étapes. En suivant ce didacticiel, vous avez appris à charger un document, à modifier le type d'affichage, à ajuster le niveau de zoom et à enregistrer le document avec les nouveaux paramètres. N'oubliez pas que la clé pour maîtriser Aspose.Words for .NET est la pratique. Alors n’hésitez pas et expérimentez différents paramètres pour voir ce qui vous convient le mieux. Bon codage !
 
 ## FAQ
 

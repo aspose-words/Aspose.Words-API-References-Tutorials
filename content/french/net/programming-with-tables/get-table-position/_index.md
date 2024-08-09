@@ -9,12 +9,12 @@ url: /fr/net/programming-with-tables/get-table-position/
 ---
 ## Introduction
 
-Vous êtes-vous déjà retrouvé dans le pétrin en essayant de déterminer la position exacte d’un tableau dans votre document Word ? Que ce soit pour aligner parfaitement votre contenu ou simplement par curiosité, connaître la position d'un tableau peut s'avérer très pratique. Aujourd'hui, nous examinons en profondeur comment obtenir la position de la table à l'aide d'Aspose.Words pour .NET. Nous le décomposerons en petites étapes afin que même si vous êtes un débutant, vous puissiez suivre sans accroc. Prêt à devenir un assistant de documents Word ? Commençons!
+Vous êtes-vous déjà retrouvé dans le pétrin en essayant de déterminer la position exacte d’un tableau dans votre document Word ? Que ce soit pour aligner parfaitement votre contenu ou simplement par curiosité, connaître la position d'un tableau peut s'avérer très pratique. Aujourd'hui, nous examinons en profondeur comment obtenir la position de la table à l'aide d'Aspose.Words pour .NET. Nous le décomposerons en petites étapes afin que même si vous êtes un débutant, vous puissiez suivre sans accroc. Prêt à devenir un assistant de documents Word ? Commençons !
 
 ## Conditions préalables
 
 Avant de passer aux choses sérieuses, assurons-nous que vous disposez de tout ce dont vous avez besoin :
--  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Visual Studio : n'importe quelle version fera l'affaire, mais la dernière est toujours recommandée.
 - .NET Framework : assurez-vous que vous disposez de .NET Framework 4.0 ou version ultérieure.
 - Un document Word : pour ce didacticiel, nous utiliserons un document nommé`Tables.docx`.
@@ -79,7 +79,7 @@ Une fois votre code exécuté, vous verrez les détails de la position de la tab
 
 ## Conclusion
 
-Et voila! En suivant ces étapes simples, vous avez appris à déterminer la position d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Que ce soit pour un alignement parfait ou simplement pour satisfaire votre curiosité, savoir comment déterminer la position d'une table peut s'avérer incroyablement utile. Continuez à expérimenter et à explorer davantage de fonctionnalités d’Aspose.Words pour devenir un véritable maestro des documents Word !
+Et voilà ! En suivant ces étapes simples, vous avez appris à déterminer la position d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Que ce soit pour un alignement parfait ou simplement pour satisfaire votre curiosité, savoir comment déterminer la position d'une table peut s'avérer incroyablement utile. Continuez à expérimenter et à explorer davantage de fonctionnalités d’Aspose.Words pour devenir un véritable maestro des documents Word !
 
 ## FAQ
 

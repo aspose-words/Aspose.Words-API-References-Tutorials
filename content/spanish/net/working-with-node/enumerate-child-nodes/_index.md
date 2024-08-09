@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /es/net/working-with-node/enumerate-child-nodes/
 ---
+## Introducción
 
 Trabajar con documentos mediante programación puede ser muy sencillo con las herramientas adecuadas. Aspose.Words para .NET es una de esas bibliotecas poderosas que permite a los desarrolladores manipular documentos de Word con facilidad. Hoy, veremos el proceso de enumerar nodos secundarios dentro de un documento de Word usando Aspose.Words para .NET. Esta guía paso a paso cubrirá todo, desde requisitos previos hasta ejemplos prácticos, lo que garantizará que tenga una comprensión sólida del proceso.
 
@@ -88,17 +89,17 @@ Enumerar nodos secundarios en un documento de Word usando Aspose.Words para .NET
 
 ## Preguntas frecuentes
 
-### 1. ¿Qué tipos de nodos puede contener un párrafo?
+### ¿Qué tipos de nodos puede contener un párrafo?
 Un párrafo puede contener nodos como ejecuciones, formas, comentarios y otros elementos en línea.
 
-### 2. ¿Cómo puedo cargar un documento de Word existente?
+### ¿Cómo puedo cargar un documento de Word existente?
  Puede cargar un documento existente usando`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. ¿Puedo manipular otros tipos de nodos además de Ejecutar?
+### ¿Puedo manipular otros tipos de nodos además de Ejecutar?
  Sí, puedes manipular varios tipos de nodos, como formas, comentarios y más, comprobando su`NodeType`.
 
-### 4. ¿Necesito una licencia para utilizar Aspose.Words para .NET?
-Puede comenzar con una prueba gratuita u obtener una licencia temporal de[aquí](https://purchase.aspose.com/temporary-license/).
+### ¿Necesito una licencia para usar Aspose.Words para .NET?
+ Puede comenzar con una prueba gratuita u obtener una licencia temporal de[aquí](https://purchase.aspose.com/temporary-license/).
 
-### 5. ¿Dónde puedo encontrar más ejemplos y documentación?
- Visita el[Aspose.Words para la documentación de la API .NET](https://reference.aspose.com/words/net/) para más ejemplos y documentación detallada.
+### ¿Dónde puedo encontrar más ejemplos y documentación?
+ Visita el[Aspose.Words para la documentación de la API .NET](https://reference.aspose.com/words/net/)para más ejemplos y documentación detallada.

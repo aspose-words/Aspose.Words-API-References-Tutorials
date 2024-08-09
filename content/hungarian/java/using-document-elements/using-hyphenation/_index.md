@@ -64,7 +64,7 @@ Az elválasztás az a folyamat, amikor kötőjeleket adunk a sorok végére, hog
 
 ### 2. Használhatom az elválasztást több nyelven is?
 
-Igen tudsz. Az Aspose.Words for Java lehetővé teszi a különböző nyelvek elválasztási szótárainak regisztrálását és betöltését.
+Igen, megteheti. Az Aspose.Words for Java lehetővé teszi a különböző nyelvek elválasztási szótárainak regisztrálását és betöltését.
 
 ### 3. Az Aspose.Words for Java könnyen integrálható a Java projektembe?
 
@@ -76,4 +76,4 @@ Igen, az Aspose.Words for Java felhasználóbarát API-t biztosít, amely megkö
 
 ### 5. Hogyan juthatok hozzá az Aspose.Words for Java-hoz?
 
- Az Aspose.Words for Java-hoz való hozzáféréshez,[kattints ide](https://purchase.aspose.com/buy). Tapasztalja meg a dokumentumfeldolgozás erejét Java alkalmazásaiban!
+ Az Aspose.Words for Java-hoz való hozzáféréshez,[kattintson ide](https://purchase.aspose.com/buy). Tapasztalja meg a dokumentumfeldolgozás erejét Java alkalmazásaiban!

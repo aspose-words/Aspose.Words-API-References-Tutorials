@@ -88,7 +88,7 @@ Uma assinatura digital é uma forma eletrônica de assinatura que verifica a aut
 Sim, você precisará de um arquivo de certificado .pfx para adicionar uma assinatura digital ao seu PDF.
 
 ### Posso criar um certificado autoassinado para teste?
-Sim, você pode criar um certificado autoassinado para fins de teste. No entanto, para uso em produção, é recomendável obter um certificado de uma autoridade de certificação confiável.
+Sim, você pode criar um certificado autoassinado para fins de teste. No entanto, para utilização em produção, é recomendado obter um certificado de uma autoridade de certificação confiável.
 
 ### O Aspose.Words para .NET é gratuito?
  Aspose.Words for .NET é um produto comercial, mas você pode baixar uma versão de avaliação gratuita no[Aspor site](https://releases.aspose.com/).

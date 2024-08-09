@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Шаг 2. Вставьте столбчатую диаграмму
 
- Использовать`InsertChart` метод`DocumentBuilder`класс для вставки гистограммы.
+ Используйте`InsertChart` метод`DocumentBuilder`класс для вставки гистограммы.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);

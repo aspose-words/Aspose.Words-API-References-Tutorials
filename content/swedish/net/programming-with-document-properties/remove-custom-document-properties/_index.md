@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-properties/remove-custom-document-propert
 ---
 ## Introduktion
 
-Har du någonsin hittat dig själv insnärjd i webben av anpassade dokumentegenskaper i dina Word-filer? Du är inte ensam! Att hantera dessa egenskaper kan vara besvärligt, men med Aspose.Words för .NET kan du effektivisera denna process utan ansträngning. I den här handledningen går vi igenom hur du tar bort anpassade dokumentegenskaper med Aspose.Words för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här guiden är enkel och okomplicerad. Redo att dyka i? Låt oss börja!
+Har du någonsin hittat dig själv insnärjd i webben av anpassade dokumentegenskaper i dina Word-filer? Du är inte ensam! Att hantera dessa egenskaper kan vara besvärligt, men med Aspose.Words för .NET kan du effektivisera denna process utan ansträngning. I den här handledningen går vi igenom hur du tar bort anpassade dokumentegenskaper med Aspose.Words för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här guiden är enkel och okomplicerad. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 

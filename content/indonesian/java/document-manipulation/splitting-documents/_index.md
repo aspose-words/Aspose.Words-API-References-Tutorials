@@ -108,7 +108,7 @@ Ya, Aspose.Words untuk Java sangat cocok untuk bekerja dengan dokumen berukuran 
 
 ### Bisakah saya menggabungkan kembali dokumen yang terpisah dengan Aspose.Words untuk Java?
 
-Sangat. Aspose.Words untuk Java memungkinkan Anda menggabungkan dokumen terpisah dengan mulus, memastikan Anda dapat bekerja dengan bagian individual dan keseluruhan dokumen sesuai kebutuhan.
+Sangat. Aspose.Words untuk Java memungkinkan Anda menggabungkan dokumen terpisah dengan lancar, memastikan Anda dapat bekerja dengan bagian individual dan keseluruhan dokumen sesuai kebutuhan.
 
 ### Di mana saya dapat mengakses Aspose.Words untuk Java dan mulai menggunakannya?
 

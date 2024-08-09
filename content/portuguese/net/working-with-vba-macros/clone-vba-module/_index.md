@@ -107,7 +107,7 @@ Esta linha salva o novo documento com o nome "WorkingWithVba.CloneVbaModule.docm
 
 aí está! Você clonou com sucesso um módulo VBA de um documento do Word para outro usando Aspose.Words for .NET. Esta poderosa biblioteca torna incrivelmente fácil a manipulação de documentos do Word, e as etapas que abordamos são apenas a ponta do iceberg. Esteja você automatizando a criação de documentos, modificando conteúdo ou gerenciando projetos VBA, o Aspose.Words tem o que você precisa.
 
- Se você estiver interessado em explorar mais recursos, confira o[Documentação da API](https://reference.aspose.com/words/net/) . Preciso de ajuda? Visite a[Fórum de suporte](https://forum.aspose.com/c/words/8) para assistência.
+ Se você estiver interessado em explorar mais recursos, confira o[Documentação da API](https://reference.aspose.com/words/net/) . Precisar de ajuda? Visite o[fórum de suporte](https://forum.aspose.com/c/words/8) para obter assistência.
 
 Boa codificação e lembre-se: a prática leva à perfeição!
 
@@ -117,7 +117,7 @@ Boa codificação e lembre-se: a prática leva à perfeição!
 Aspose.Words for .NET é uma biblioteca poderosa para criar, modificar e converter documentos do Word em aplicativos .NET. É perfeito para automatizar fluxos de trabalho de documentos.
 
 ### Posso usar o Aspose.Words gratuitamente?  
- Sim, você pode tentar Aspose.Words com um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para fins de avaliação.
+ Sim, você pode tentar Aspose.Words com um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para fins de avaliação.
 
 ### Como faço para clonar um módulo VBA no Aspose.Words?  
 Para clonar um módulo VBA, carregue o documento original, clone o módulo desejado e adicione-o ao projeto VBA de um novo documento. Em seguida, salve o novo documento.

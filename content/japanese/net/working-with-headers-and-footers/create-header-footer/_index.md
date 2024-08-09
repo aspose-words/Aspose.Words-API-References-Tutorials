@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ja/net/working-with-headers-and-footers/create-header-footer/
 ---
+## 導入
 
 ドキュメントにヘッダーとフッターを追加すると、ドキュメントの専門性と読みやすさが向上します。Aspose.Words for .NET を使用すると、Word ドキュメントのヘッダーとフッターを簡単に作成してカスタマイズできます。このチュートリアルでは、これらの機能をシームレスに実装できるように、プロセスを段階的に説明します。
 
@@ -168,22 +169,22 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## よくある質問
 
-### Q1: Aspose.Words for .NET とは何ですか?
+### Aspose.Words for .NET とは何ですか?
 
 Aspose.Words for .NET は、開発者が .NET アプリケーション内でプログラムによって Word 文書を作成、編集、変換できるようにするライブラリです。
 
-### Q2: ヘッダーやフッターに画像を追加できますか?
+### ヘッダーやフッターに画像を追加できますか?
 
 はい、ヘッダーやフッターに画像を簡単に追加できます。`DocumentBuilder.InsertImage`方法。
 
-### Q3: 最初のページに異なるヘッダーとフッターを設定するにはどうすればよいですか?
+### 最初のページに異なるヘッダーとフッターを設定するにはどうすればよいですか?
 
 最初のページに異なるヘッダーとフッターを設定するには、`DifferentFirstPageHeaderFooter`の財産`PageSetup`クラス。
 
-### Q4: Aspose.Words に関する詳細なドキュメントはどこで入手できますか?
+### Aspose.Words に関する詳細なドキュメントはどこで見つかりますか?
 
 包括的なドキュメントは、[Aspose.Words API ドキュメント ページ](https://reference.aspose.com/words/net/).
 
-### Q5: Aspose.Words のサポートはありますか?
+### Aspose.Words のサポートはありますか?
 
 はい、Asposeはサポートを提供しています[サポートフォーラム](https://forum.aspose.com/c/words/8).

@@ -75,4 +75,4 @@ Se till att dina XML-data följer den struktur som krävs, med tabeller och rela
 
 ### Vad är Mustache-syntaxen, och när ska jag använda den?
 
- Mustache-syntaxen låter dig formatera sammanslagningsfält på ett mer flexibelt sätt. Använda sig av`doc.getMailMerge().setUseNonMergeFields(true)` för att aktivera Mustache-syntax.
+ Mustache-syntaxen låter dig formatera sammanslagningsfält på ett mer flexibelt sätt. Använda`doc.getMailMerge().setUseNonMergeFields(true)` för att aktivera Mustache-syntax.

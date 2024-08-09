@@ -16,7 +16,7 @@ url: /zh/net/working-with-hyphenation/hyphenation-callback/
 
 在我们开始编写代码之前，让我们先确保您已经拥有所需的一切：
 
-1.  Aspose.Words for .NET：确保您拥有该库。您可以[点击下载](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：确保您拥有该库。您可以[点击下载](https://releases.aspose.com/words/net/).
 2. IDE：像 Visual Studio 这样的开发环境。
 3. C# 基础知识：了解 C# 和 .NET 框架。
 4. 连字词典：您计划使用的语言的连字词典。

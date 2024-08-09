@@ -18,7 +18,7 @@ Zanim zaczniemy, upewnij się, że masz następujące elementy:
 -  Aspose.Words dla .NET: Pobierz i zainstaluj najnowszą wersję z[Tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Visual Studio lub dowolne inne kompatybilne IDE.
 - Podstawowa znajomość C#: Znajomość języka programowania C# i frameworku .NET.
--  Licencja Aspose: Aby odblokować pełny potencjał Aspose.Words, rozważ uzyskanie licencji[licencja](https://purchase.aspose.com/buy) . Możesz także użyć A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+-  Licencja Aspose: Aby odblokować pełny potencjał Aspose.Words, rozważ uzyskanie licencji[licencja](https://purchase.aspose.com/buy) . Możesz także użyć A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ## Importuj przestrzenie nazw
 
@@ -94,7 +94,7 @@ Tak, Aspose.Words dla .NET pozwala skonfigurować opcje zapisywania dla różnyc
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
 
- Chociaż możesz używać Aspose.Words dla .NET bez licencji do oceny, wymagana jest licencja, aby odblokować pełną funkcjonalność. Można uzyskać licencję[Tutaj](https://purchase.aspose.com/buy)lub użyj A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+ Chociaż możesz używać Aspose.Words dla .NET bez licencji do oceny, wymagana jest licencja, aby odblokować pełną funkcjonalność. Można uzyskać licencję[Tutaj](https://purchase.aspose.com/buy)lub użyj A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ### Jak mogę zapewnić zgodność moich dokumentów ze standardami PDF/A?
 

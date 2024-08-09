@@ -101,7 +101,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx"
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công trường biểu mẫu hộp tổ hợp vào tài liệu Word bằng Aspose.Words for .NET. Bạn thấy đấy, nó không khó đến thế phải không? Với các bước đơn giản này, bạn có thể tạo các tài liệu tương tác và năng động, chắc chắn sẽ gây ấn tượng. Vì vậy, hãy tiếp tục và thử xem. Ai biết được, bạn thậm chí có thể khám phá ra một số thủ thuật mới trong quá trình thực hiện. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã chèn thành công trường biểu mẫu hộp tổ hợp vào tài liệu Word bằng Aspose.Words for .NET. Bạn thấy đấy, nó không khó đến thế phải không? Với các bước đơn giản này, bạn có thể tạo các tài liệu tương tác và năng động, chắc chắn sẽ gây ấn tượng. Vì vậy, hãy tiếp tục và thử xem. Ai biết được, bạn thậm chí có thể khám phá ra một số thủ thuật mới trong quá trình thực hiện. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

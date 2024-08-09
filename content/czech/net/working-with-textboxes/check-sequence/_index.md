@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-textboxes/check-sequence/
 ---
-## Úvod
+## Zavedení
 
 Zdravím vás, kolegové vývojáři a příznivci dokumentů! 🌟 Ocitli jste se někdy v bahně a snažili jste se určit posloupnost textových polí v dokumentu aplikace Word? Je to jako vymýšlet puzzle, kde každý dílek musí dokonale zapadnout! S Aspose.Words pro .NET se tento proces stává hračkou. Tento tutoriál vás provede kontrolou pořadí textových polí v dokumentech aplikace Word. Prozkoumáme, jak zjistit, zda je textové pole na začátku, uprostřed nebo na konci sekvence, abychom zajistili, že budete moci přesně řídit tok dokumentu. Jste připraveni se ponořit? Pojďme společně rozluštit tuto hádanku!
 
@@ -151,4 +151,4 @@ Ano, textová pole lze propojit v libovolném pořadí, včetně nelineárních 
 Ano, můžete stylovat text v každém textovém poli nezávisle, což vám poskytuje flexibilitu při návrhu a formátování.
 
 ### Kde najdu další zdroje o práci s textovými poli v Aspose.Words?
- Pro více informací se podívejte na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[Fórum podpory](https://forum.aspose.com/c/words/8).
+ Pro více informací se podívejte na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[fórum podpory](https://forum.aspose.com/c/words/8).

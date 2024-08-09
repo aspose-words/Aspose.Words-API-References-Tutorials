@@ -67,7 +67,7 @@ builder.Write("Text in one cell");
 builder.EndRow();
 ```
 
- Hier voegen we een cel in en stellen de verticale samenvoegeigenschap in op`CellMerge.None`en voeg er wat tekst aan toe. Vervolgens beëindigen we de huidige rij.
+ Hier voegen we een cel in en stellen we de verticale samenvoegeigenschap in`CellMerge.None`en voeg er wat tekst aan toe. Vervolgens beëindigen we de huidige rij.
 
 ## Stap 4: De tweede rij invoegen en verticaal samenvoegen
 

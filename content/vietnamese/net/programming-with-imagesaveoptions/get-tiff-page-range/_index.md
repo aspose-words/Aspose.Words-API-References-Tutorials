@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước đơn giản này, bạn đã chuyển đổi thành công một phạm vi trang cụ thể từ tài liệu Word sang tệp TIFF bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác và chuyển đổi tài liệu, cung cấp cho bạn khả năng vô tận cho các dự án của mình. Vì vậy, hãy tiếp tục, dùng thử và xem nó có thể nâng cao quy trình làm việc của bạn như thế nào!
+Và bạn có nó! Bằng cách làm theo các bước đơn giản này, bạn đã chuyển đổi thành công một phạm vi trang cụ thể từ tài liệu Word sang tệp TIFF bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác và chuyển đổi tài liệu, cung cấp cho bạn khả năng vô tận cho các dự án của mình. Vì vậy, hãy tiếp tục, dùng thử và xem nó có thể nâng cao quy trình làm việc của bạn như thế nào!
 
 ## Câu hỏi thường gặp
 

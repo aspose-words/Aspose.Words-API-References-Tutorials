@@ -2,93 +2,113 @@
 title: Obtener lista de fuentes disponibles
 linktitle: Obtener lista de fuentes disponibles
 second_title: API de procesamiento de documentos Aspose.Words
-description: En este tutorial, aprenderá cómo obtener la lista de fuentes disponibles en Aspose.Words para .NET.
+description: Descubra cómo obtener una lista de fuentes disponibles usando Aspose.Words para .NET en este tutorial detallado paso a paso. Mejore sus habilidades de administración de fuentes.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/get-list-of-available-fonts/
 ---
-En este tutorial, explicaremos cómo obtener la lista de fuentes disponibles en Aspose.Words para .NET. La lista de fuentes disponibles le permite saber qué fuentes puede utilizar en sus documentos. Lo guiaremos paso a paso para ayudarlo a comprender e implementar el código en su proyecto .NET.
+## Introducción
+
+¿Alguna vez ha tenido dificultades para administrar las fuentes en sus documentos de Word? Si es desarrollador de .NET, ¡Aspose.Words para .NET está aquí para rescatarlo! Esta poderosa biblioteca no solo lo ayuda a crear y manipular documentos de Word mediante programación, sino que también ofrece amplias capacidades de administración de fuentes. En esta guía, lo guiaremos a través de un tutorial paso a paso sobre cómo obtener una lista de fuentes disponibles usando Aspose.Words para .NET. Lo dividiremos en pasos digeribles para asegurarnos de que pueda seguirlos con facilidad. Entonces, ¡profundicemos y hagamos que la administración de fuentes sea muy sencilla!
 
 ## Requisitos previos
-Antes de comenzar, asegúrese de tener los siguientes elementos:
-- Un conocimiento práctico del lenguaje de programación C#.
-- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## Paso 1: definir el directorio de documentos
- Primero, debe configurar la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta apropiada.
+Antes de comenzar, hay algunas cosas que necesitará:
+
+-  Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+- Visual Studio: este ejemplo utiliza Visual Studio como entorno de desarrollo.
+- .NET Framework: asegúrese de tener .NET Framework instalado en su máquina.
+- Directorio de documentos: una ruta de directorio donde se almacenan sus documentos.
+
+## Importar espacios de nombres
+
+Primero, importe los espacios de nombres necesarios a su proyecto:
 
 ```csharp
-// Ruta a su directorio de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Paso 2: configurar las fuentes de fuentes
- A continuación, crearemos una instancia de`FontSettings` y obtener las fuentes de fuentes existentes utilizando el`GetFontsSources()` método. También agregaremos una nueva fuente de fuente especificando una carpeta que contenga fuentes.
+## Paso 1: inicializar la configuración de fuente
+
+El primer paso es inicializar la configuración de fuente. Esto le permitirá administrar las fuentes de fuentes de sus documentos.
 
 ```csharp
-// Configurar fuentes de fuentes
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-// Agregar una nueva fuente de fuente
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## Paso 3: obtenga la lista de fuentes disponibles
- Ahora exploraremos las fuentes disponibles usando el`GetAvailableFonts()` método en la primera fuente de fuente actualizada.
+- FontSettings: esta clase se utiliza para especificar la configuración para la sustitución de fuentes y las fuentes de fuentes.
+- fontSources: Creamos una lista de fuentes de fuentes existentes a partir de la configuración de fuentes actual.
+
+## Paso 2: definir el directorio de documentos
+
+A continuación, especifique la ruta a su directorio de documentos. Aquí es donde Aspose.Words buscará fuentes.
 
 ```csharp
-// Obtener la lista de fuentes disponibles
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### Código fuente de muestra para obtener una lista de fuentes disponibles usando Aspose.Words para .NET 
-
-```csharp
-
-// Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Agregue una nueva fuente de carpeta que le indicará a Aspose.Words que busque fuentes en la siguiente carpeta.
+-  dataDir: esta variable de cadena contiene la ruta al directorio donde se encuentran sus fuentes. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con el camino real.
+
+## Paso 3: agregar una carpeta de fuentes personalizadas
+
+Ahora, agregue una nueva fuente de carpeta para indicarle a Aspose.Words que busque fuentes en esta carpeta.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Agregue la carpeta personalizada que contiene nuestras fuentes a la lista de fuentes de fuentes existentes.
+```
+
+- FolderFontSource: esta clase representa una fuente de fuente de carpeta. El segundo parámetro (`true`) indica si se deben buscar fuentes de forma recursiva en subcarpetas.
+
+## Paso 4: actualice las fuentes de fuentes
+
+Agregue la carpeta de fuentes personalizadas a la lista de fuentes de fuentes existentes y actualice la configuración de fuentes.
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- fontSources.Add(folderFontSource): agrega la carpeta de fuentes personalizadas a las fuentes de fuentes existentes.
+- updateFontSources: convierte la lista de fuentes de fuentes en una matriz.
+
+## Paso 5: recuperar y mostrar fuentes
+
+Finalmente, recupere las fuentes disponibles y muestre sus detalles.
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts(): recupera la lista de fuentes disponibles de la primera fuente de fuente en la lista actualizada.
+-  fontInfo: una instancia de`PhysicalFontInfo` que contiene detalles sobre cada fuente.
+
 ## Conclusión
-En este tutorial, vimos cómo obtener la lista de fuentes disponibles en Aspose.Words para .NET. Esto le permite saber qué fuentes puede utilizar en sus documentos. No dude en utilizar esta función para elegir las fuentes adecuadas a sus necesidades.
 
-### Preguntas frecuentes
+¡Felicidades! Ha recuperado con éxito una lista de fuentes disponibles utilizando Aspose.Words para .NET. Este tutorial lo ha guiado a través de cada paso, desde inicializar la configuración de fuente hasta mostrar los detalles de la fuente. Con este conocimiento, ahora puedes administrar las fuentes en tus documentos de Word con facilidad. Recuerde, Aspose.Words para .NET es una herramienta poderosa que puede mejorar significativamente sus capacidades de procesamiento de documentos. Entonces, continúe y explore más funciones para que su proceso de desarrollo sea aún más eficiente.
 
-#### P: ¿Cómo puedo recuperar la lista de fuentes disponibles en Aspose.Words?
+## Preguntas frecuentes
 
- R: Para recuperar la lista de fuentes disponibles en Aspose.Words, puede utilizar el`FontsProvider` clase y el`GetAvailableFonts` método. Este método devolverá una lista de todas las fuentes instaladas en su sistema.
+### ¿Puedo usar Aspose.Words para .NET con otros frameworks .NET?
+Sí, Aspose.Words para .NET es compatible con varios marcos .NET, incluidos .NET Core y .NET 5+.
 
-#### P: ¿Puedo filtrar la lista de fuentes disponibles según ciertos criterios en Aspose.Words?
+### ¿Cómo instalo Aspose.Words para .NET?
+Puede instalarlo a través del Administrador de paquetes NuGet en Visual Studio buscando "Aspose.Words".
 
-R: Sí, puedes filtrar la lista de fuentes disponibles en Aspose.Words usando criterios específicos. Por ejemplo, puedes filtrar fuentes por familia, estilo o idioma.
+### ¿Es posible agregar varias carpetas de fuentes personalizadas?
+ Sí, puede agregar varias carpetas de fuentes personalizadas creando varias`FolderFontSource` instancias y agregarlas a la lista de fuentes de fuentes.
 
-#### P: ¿Cómo puedo utilizar la lista de fuentes disponibles en mis documentos de Word?
+### ¿Puedo recuperar detalles de fuentes de una fuente de fuente específica?
+ Sí, puede recuperar detalles de fuente de cualquier fuente especificando el índice de la fuente en el`updatedFontSources` formación.
 
- R: Para usar la lista de fuentes disponibles en sus documentos de Word, puede explorar la lista y seleccionar las fuentes apropiadas usando los métodos y propiedades del`FontSettings` clase en Aspose.Words.
+### ¿Aspose.Words para .NET admite la sustitución de fuentes?
+Sí, admite la sustitución de fuentes para garantizar que el texto se represente correctamente incluso si la fuente original no está disponible.

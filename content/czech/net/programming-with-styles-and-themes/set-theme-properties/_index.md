@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-styles-and-themes/set-theme-properties/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy o tom, jak programově vylepšit vzhled a dojem z vašich dokumentů Word? Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty aplikace Word v aplikacích .NET. V tomto tutoriálu prozkoumáme, jak nastavit vlastnosti motivu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už chcete změnit písma, upravit barvy nebo použít styly, tento průvodce vás provede procesem krok za krokem.
 
@@ -89,4 +89,4 @@ Absolutně! Aspose.Words for .NET poskytuje rozsáhlé možnosti přizpůsobení
  Můžete odkazovat na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) pro podrobnější informace.
 
 ### Jaké možnosti podpory jsou k dispozici, pokud narazím na problémy?  
- Aspose poskytuje a[Fórum podpory](https://forum.aspose.com/c/words/8) kde můžete získat pomoc od komunity a týmu Aspose.
+ Aspose poskytuje a[fórum podpory](https://forum.aspose.com/c/words/8) kde můžete získat pomoc od komunity a týmu Aspose.

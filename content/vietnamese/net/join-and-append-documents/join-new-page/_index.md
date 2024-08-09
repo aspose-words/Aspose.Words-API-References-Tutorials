@@ -90,7 +90,7 @@ Aspose.Words cung cấp nhiều chế độ nhập khác nhau để xử lý xun
 ### Aspose.Words có hỗ trợ nối thêm tài liệu với các ngôn ngữ hoặc bảng mã khác nhau không?
 Có, Aspose.Words xử lý việc nối thêm tài liệu bất kể ngôn ngữ hoặc mã hóa, đảm bảo tích hợp liền mạch.
 
-### Có thể nối thêm tài liệu có chứa macro hoặc trường biểu mẫu không?
+### Có thể nối thêm tài liệu chứa macro hoặc trường biểu mẫu không?
 Aspose.Words hỗ trợ nối thêm tài liệu với macro và trường biểu mẫu, duy trì chức năng của chúng trong tài liệu đã hợp nhất.
 
 ### Tôi có thể tự động hóa các tác vụ nối thêm tài liệu theo quy trình hàng loạt bằng Aspose.Words không?

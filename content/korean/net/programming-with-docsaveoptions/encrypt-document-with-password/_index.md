@@ -9,21 +9,21 @@ url: /ko/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
 ## 소개
 
-비밀번호로 문서를 보호해야 했던 적이 있나요? 당신은 혼자가 아닙니다. 디지털 문서의 등장으로 민감한 정보를 보호하는 것이 그 어느 때보다 중요해졌습니다. Aspose.Words for .NET은 문서를 비밀번호로 암호화하는 원활한 방법을 제공합니다. 일기장에 자물쇠를 걸어놓는 것을 상상해 보세요. 열쇠(이 경우 비밀번호)를 가진 사람만이 내부를 엿볼 수 있습니다. 이를 달성할 수 있는 방법을 단계별로 살펴보겠습니다.
+비밀번호로 문서를 보호해야 했던 적이 있나요? 당신은 혼자가 아닙니다. 디지털 문서의 등장으로 민감한 정보를 보호하는 것이 그 어느 때보다 중요해졌습니다. Aspose.Words for .NET은 문서를 비밀번호로 암호화하는 완벽한 방법을 제공합니다. 일기장에 자물쇠를 걸어놓는 것을 상상해 보세요. 열쇠(이 경우 비밀번호)를 가진 사람만이 내부를 엿볼 수 있습니다. 이를 달성할 수 있는 방법을 단계별로 살펴보겠습니다.
 
 ## 전제 조건
 
 일부 코드로 손을 더럽히기 전에 필요한 몇 가지 사항이 있습니다.
-1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 원하는 C# IDE.
 3. .NET Framework: 설치되어 있는지 확인하세요.
-4.  라이센스: 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
+4.  라이센스: 다음으로 시작할 수 있습니다.[무료 평가판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
 
 모든 것을 얻었나요? 엄청난! 프로젝트 설정으로 넘어가겠습니다.
 
 ## 네임스페이스 가져오기
 
-시작하기 전에 필요한 네임스페이스를 가져와야 합니다. 네임스페이스를 DIY 프로젝트에 필요한 툴킷으로 생각하십시오.
+시작하기 전에 필요한 네임스페이스를 가져와야 합니다. 네임스페이스를 DIY 프로젝트에 필요한 툴킷으로 생각하세요.
 
 ```csharp
 using Aspose.Words;
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 ## FAQ
 
 ### 다른 유형의 암호화를 사용할 수 있나요?
- 예, Aspose.Words for .NET은 다양한 암호화 방법을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 예, Aspose.Words for .NET은 다양한 암호화 방법을 지원합니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### 문서 비밀번호를 잊어버리면 어떻게 되나요?
 안타깝게도 비밀번호를 잊어버리시면 문서에 접근하실 수 없습니다. 비밀번호를 안전하게 보관하세요!

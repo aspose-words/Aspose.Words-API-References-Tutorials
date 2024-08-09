@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 將文件另存為 Markdown
 
-用一個`MemoryStream`以 Markdown 格式儲存文件。
+使用一個`MemoryStream`以 Markdown 格式儲存文件。
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

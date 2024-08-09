@@ -131,7 +131,7 @@ In this class, the `RequestDictionary` method is called whenever a hyphenation d
 
 And there you have it! You’ve just learned how to implement a hyphenation callback in Aspose.Words for .NET. By following these steps, you can ensure your documents are beautifully formatted, regardless of the language. Whether you’re dealing with English, German, or any other language, this method allows you to handle hyphenation effortlessly.
 
-## FAQs
+## FAQ's
 
 ### What is Aspose.Words for .NET?
 Aspose.Words for .NET is a powerful document manipulation library that allows developers to create, modify, and convert documents programmatically.

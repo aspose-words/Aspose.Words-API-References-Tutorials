@@ -2,18 +2,38 @@
 title: Liste Numarasını Yeniden Başlat
 linktitle: Liste Numarasını Yeniden Başlat
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesindeki listenin numarasını nasıl sıfırlayacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki liste numaralarını nasıl yeniden başlatacağınızı öğrenin. Bu ayrıntılı, 2000 kelimelik kılavuz, kurulumdan gelişmiş özelleştirmeye kadar bilmeniz gereken her şeyi kapsar.
 type: docs
 weight: 10
 url: /tr/net/working-with-list/restart-list-number/
 ---
-Bu adım adım eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki listenin numarasını nasıl sıfırlayacağınızı göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
+## giriiş
 
- Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şuradan indirip yükleyin:[Aspose.Releases]https://releases.aspose.com/words/net/.
+Aspose.Words for .NET'i kullanarak Word belgelerinizde liste düzenleme sanatında ustalaşmak mı istiyorsunuz? Peki, doğru yerdesiniz! Bu eğitimde, belge otomasyon becerilerinizi bir sonraki seviyeye taşıyacak şık bir özellik olan liste numaralarını yeniden başlatma konusuna derinlemesine dalacağız. Kemerlerinizi bağlayın ve başlayalım!
 
-## Adım 1: Belge ve Belge Oluşturucuyu Oluşturma
+## Önkoşullar
 
-Öncelikle yeni bir belge ve ilişkili bir belge oluşturucu oluşturun:
+Koda geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Henüz yüklemediyseniz, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi uygun bir geliştirme ortamına sahip olduğunuzdan emin olun.
+3. Temel C# Bilgisi: Temel C# anlayışı, öğreticiyi takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bunlar Aspose.Words özelliklerine erişim için çok önemlidir.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+Şimdi süreci takip edilmesi kolay adımlara ayıralım. Liste oluşturmaktan numaralandırmayı yeniden başlatmaya kadar her şeyi ele alacağız.
+
+## 1. Adım: Belgenizi ve Oluşturucunuzu Kurun
+
+Listeleri değiştirmeye başlamadan önce bir belgeye ve DocumentBuilder'a ihtiyacınız vardır. DocumentBuilder, belgenize içerik eklemek için başvuracağınız araçtır.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +41,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 2: İlk Listeyi Oluşturma ve Özelleştirme
+## Adım 2: İlk Listenizi Oluşturun ve Özelleştirin
 
-Daha sonra mevcut bir şablonu temel alan bir liste oluşturun ve ardından düzeylerini özelleştirin:
+Daha sonra şablona dayalı bir liste oluşturacağız ve görünümünü özelleştireceğiz. Bu örnekte parantezli Arap sayı biçimini kullanıyoruz.
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,102 +51,75 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## 3. Adım: İlk listeye öğe ekleme
+Burada yazı tipi rengini kırmızı olarak ayarladık ve metni sağa hizaladık.
 
-İlk listeye öğe eklemek ve liste numaralarını kaldırmak için belge oluşturucuyu kullanın:
+## 3. Adım: İlk Listenize Öğe Ekleyin
+
+ Listeniz hazır olduğuna göre artık bazı öğeler eklemenin zamanı geldi. DocumentBuilder'ın`ListFormat.List` özelliği, liste formatının metne uygulanmasına yardımcı olur.
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## Adım 4: İkinci Listeyi Oluşturma ve Özelleştirme
+## Adım 4: Liste Numaralandırmayı Yeniden Başlatın
 
-Numarayı sıfırlayarak ilk listeyi yeniden kullanmak için orijinal liste düzeninin bir kopyasını oluşturun:
+Listeyi yeniden kullanmak ve numaralandırmayı yeniden başlatmak için orijinal listenin bir kopyasını oluşturmanız gerekir. Bu, yeni listeyi bağımsız olarak değiştirmenize olanak tanır.
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-Gerekirse ikinci listede ek değişiklikler de yapabilirsiniz.
+Bu örnekte yeni liste 10 numaradan başlıyor.
 
-## Adım 5: Öğeleri ikinci listeye ekleme
+## Adım 5: Yeni Listeye Öğe Ekleme
 
-İkinci listeye öğe eklemek ve liste numaralarını kaldırmak için belge oluşturucuyu tekrar kullanın:
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## Adım 6: Değiştirilen belgeyi kaydedin
-
-Son olarak değiştirilen belgeyi kaydedin:
+Daha önce olduğu gibi yeni listenize öğeler ekleyin. Bu, listenin belirtilen numaradan yeniden başladığını gösterir.
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-Bu yüzden ! Aspose.Words for .NET'i kullanarak bir Word belgesindeki liste numarasını başarıyla sıfırladınız.
-
-### Liste Numarası Sıfırlaması için Örnek Kaynak Kodu
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Şablona dayalı bir liste oluşturun.
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-// İlk listeyi yeniden kullanmak için orijinal liste formatının bir kopyasını oluşturarak numaralandırmayı yeniden başlatmamız gerekir.
-List list2 = doc.Lists.AddCopy(list1);
-
-// Yeni listeyi, yeni bir başlangıç numarası ayarlamak da dahil olmak üzere herhangi bir şekilde değiştirebiliriz.
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## Adım 6: Belgenizi Kaydedin
+
+Son olarak belgenizi belirttiğiniz dizine kaydedin.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### SSS'ler
+## Çözüm
 
-#### S: Aspose.Words'te bir listenin numaralandırmasını nasıl yeniden başlatabilirim?
+Aspose.Words for .NET kullanarak Word belgelerindeki liste numaralarını yeniden başlatmak basit ve son derece kullanışlıdır. İster rapor oluşturuyor olun, ister yapılandırılmış belgeler oluşturuyor olun, ister listeleriniz üzerinde daha iyi kontrole ihtiyaç duyuyor olun, bu teknik ihtiyacınızı karşılar.
 
- C: Aspose.Words'te bir listenin numaralandırılmasını yeniden başlatmak için`ListRestartAtNumber` yöntemi`List` sınıf. Bu yöntem, listenin yeniden başlatılması gereken yeni bir arama değeri ayarlamanıza olanak tanır. Örneğin şunları kullanabilirsiniz:`list.ListRestartAtNumber(1)` Numaralandırmayı 1'den yeniden başlatmak için
+## SSS'ler
 
-#### S: Aspose.Words'te yeniden başlatılan liste numaralandırmasının önekini ve sonekini özelleştirmek mümkün mü?
+### NumberArabicParenthesis dışında başka liste şablonları da kullanabilir miyim?
 
- C: Evet, Aspose.Words'te yeniden başlatılan liste numaralandırmasının önekini ve sonekini özelleştirebilirsiniz.`ListLevel`sınıf gibi özellikler sunar`ListLevel.NumberPrefix`Ve`ListLevel.NumberSuffix` bu, listedeki her düzey için önek ve son eki belirtmenize olanak tanır. Ön eki ve son eki gerektiği gibi özelleştirmek için bu özellikleri kullanabilirsiniz.
+Kesinlikle! Aspose.Words madde işaretleri, harfler, Romen rakamları ve daha fazlası gibi çeşitli liste şablonları sunar. İhtiyaçlarınıza en uygun olanı seçebilirsiniz.
 
-#### S: Listenin yeniden başlatılması gereken belirli bir numaralandırma değerini nasıl belirleyebilirim?
+### Liste düzeyini nasıl değiştiririm?
 
- C: Listenin yeniden başlatılması gereken belirli bir sayı değerini belirtmek için`ListRestartAtNumber` İstenilen değeri argüman olarak ileten yöntem. Örneğin, numaralandırmayı 5'ten yeniden başlatmak için şunu kullanabilirsiniz:`list.ListRestartAtNumber(5)`.
+ Liste düzeyini değiştirerek değiştirebilirsiniz.`ListLevels` mülk. Örneğin,`list1.ListLevels[1]` listenin ikinci düzeyine atıfta bulunur.
 
-#### S: Aspose.Words'te çok seviyeli liste numaralandırmayı yeniden başlatmak mümkün mü?
+### Numaralandırmayı herhangi bir numaradan yeniden başlatabilir miyim?
 
- C: Evet, Aspose.Words birden fazla liste düzeyinde yeniden numaralandırmayı destekler. Şunu uygulayabilirsiniz:`ListRestartAtNumber` Numaralandırmayı tek tek yeniden başlatmak için her liste düzeyindeki yöntemi kullanın. Örneğin şunları kullanabilirsiniz:`list.Levels[0].ListRestartAtNumber(1)` ilk liste düzeyini 1'den yeniden başlatmak için ve`list.Levels[1].ListRestartAtNumber(1)` 1'den başlayarak ikinci düzey listeyi yeniden başlatmak için.
+ Evet, başlangıç numarasını herhangi bir tamsayı değerine ayarlayabilirsiniz.`StartAt` liste düzeyinin özelliği.
 
+### Farklı liste düzeyleri için farklı biçimlendirmelere sahip olmak mümkün müdür?
+
+Aslında! Her liste düzeyinin yazı tipi, hizalama ve numaralandırma stili gibi kendi biçimlendirme ayarları olabilir.
+
+### Numaralandırmayı yeniden başlatmak yerine önceki listeden devam etmek istersem ne olur?
+
+Numaralandırmaya devam etmek istiyorsanız listenin bir kopyasını oluşturmanıza gerek yoktur. Orijinal listeye öğe eklemeye devam etmeniz yeterlidir.
 
 

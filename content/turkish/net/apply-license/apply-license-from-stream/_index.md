@@ -9,7 +9,7 @@ url: /tr/net/apply-license/apply-license-from-stream/
 ---
 ## giriiş
 
-Merhaba kodlayıcı arkadaşlar! Aspose.Words for .NET dünyasına dalmak istiyorsanız yapmanız gereken ilk şeylerden biri, kütüphanenin tüm potansiyelini ortaya çıkarmak için bir lisans başvurusunda bulunmaktır. Bu kılavuzda, bir akıştan lisansın nasıl uygulanacağı konusunda size yol göstereceğiz. İnan bana, göründüğünden daha kolay ve bu eğitimin sonunda uygulamanızı sorunsuz bir şekilde çalışır hale getireceksiniz. başlamaya hazır mısın? Hadi hemen içeri girelim!
+Merhaba kodlayıcı arkadaşlar! Aspose.Words for .NET dünyasına dalmak istiyorsanız yapmanız gereken ilk şeylerden biri, kütüphanenin tüm potansiyelini ortaya çıkarmak için bir lisans başvurusunda bulunmaktır. Bu kılavuzda, bir akıştan lisansın nasıl uygulanacağı konusunda size yol göstereceğiz. İnan bana, göründüğünden daha kolay ve bu eğitimin sonunda uygulamanızı sorunsuz bir şekilde çalışır hale getireceksiniz. Başlamaya hazır mısınız? Hadi hemen içeri girelim!
 
 ## Önkoşullar
 
@@ -17,7 +17,7 @@ Ellerimizi kirletmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan em
 
 1.  Aspose.Words for .NET: Kütüphanenin kurulu olduğundan emin olun. Değilse, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2.  Lisans Dosyası: Geçerli bir lisans dosyasına ihtiyacınız var. Eğer bir tane yoksa, bir tane alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) test amaçlı.
-3. Temel C# Bilgisi: C# programlamanın temel düzeyde anlaşıldığı varsayılmaktadır.
+3. Temel C# Bilgisi: C# programlamanın temel düzeyde anlaşıldığı varsayılır.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -41,7 +41,7 @@ License license = new License();
 
 ## Adım 2: Lisans Dosyasını Akışa Okuyun
 
- Şimdi lisans dosyanızı bir bellek akışına okumak isteyeceksiniz. Bu, dosyayı yüklemeyi ve kullanıma hazırlamayı içerir.`SetLicense` yöntem.
+ Şimdi lisans dosyanızı bir bellek akışına okumak isteyeceksiniz. Bu, dosyayı yüklemeyi ve kullanıma hazırlamayı içerir.`SetLicense` Yöntem.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.lic")))
@@ -52,7 +52,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.li
 
 ## 3. Adım: Lisansı Uygulayın
 
- İçinde`using` bloke et, arayacaksın`SetLicense` senin yöntemi`license` bellek akışından geçen nesne. Bu yöntem Aspose.Words'ün lisansını belirler.
+ İçinde`using` bloke et, arayacaksın`SetLicense` senin yöntemi`license` bellek akışından geçen nesne. Bu yöntem Aspose.Words'ün lisansını ayarlar.
 
 ```csharp
 license.SetLicense(stream);
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'te bir akıştan lisans uygulamak, adımları öğrendikten sonra basit bir işlemdir. Bu kılavuzu takip ederek uygulamanızın Aspose.Words'ün tüm özelliklerinden hiçbir sınırlama olmaksızın yararlanabilmesini sağlarsınız. Herhangi bir sorunla karşılaşırsanız, kontrol etmekten çekinmeyin.[dokümantasyon](https://reference.aspose.com/words/net/) veya şu konuda yardım isteyin:[destek Forumu](https://forum.aspose.com/c/words/8). Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'te bir akıştan lisans uygulamak, adımları öğrendikten sonra basit bir işlemdir. Bu kılavuzu takip ederek uygulamanızın Aspose.Words'ün tüm özelliklerinden hiçbir sınırlama olmaksızın yararlanabilmesini sağlarsınız. Herhangi bir sorunla karşılaşırsanız, kontrol etmekten çekinmeyin.[dokümantasyon](https://reference.aspose.com/words/net/) veya şu konuda yardım isteyin:[destek forumu](https://forum.aspose.com/c/words/8). Mutlu kodlama!
 
 ## SSS'ler
 

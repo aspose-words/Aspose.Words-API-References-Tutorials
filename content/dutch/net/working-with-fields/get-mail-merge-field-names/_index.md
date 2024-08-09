@@ -92,7 +92,7 @@ Deze coderegel drukt het totale aantal samenvoegvelden in het document af, zodat
 
 Gefeliciteerd! U hebt nu geleerd hoe u veldnamen voor samenvoegbewerkingen uit een Word-document kunt extraheren met behulp van Aspose.Words voor .NET. Deze techniek is een waardevol hulpmiddel voor het beheren en automatiseren van documentworkflows, waardoor het gemakkelijker wordt om met gepersonaliseerde inhoud om te gaan. Door deze stappen te volgen, kunt u op efficiënte wijze samenvoegvelden in uw documenten identificeren en ermee werken.
 
- Als u vragen heeft of meer hulp nodig heeft, kunt u de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of sluit je aan bij de[Stel gemeenschap](https://forum.aspose.com/c/words/8) Voor ondersteuning. Veel codeerplezier!
+ Als u vragen heeft of meer hulp nodig heeft, kunt u de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of sluit je aan bij de[Stel gemeenschap](https://forum.aspose.com/c/words/8) voor ondersteuning. Veel codeerplezier!
 
 ## Veelgestelde vragen
 

@@ -2,83 +2,105 @@
 title: Lettertype-nadrukmarkering instellen
 linktitle: Lettertype-nadrukmarkering instellen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de nadrukstijl van het lettertype in een Word-document instelt met Aspose.Words voor .NET.
+description: Leer hoe u de nadruktekens voor lettertypen in Word-documenten kunt instellen met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Perfect voor .NET-ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Invoering
 
-In deze zelfstudie laten we u zien hoe u de nadrukstijl van het lettertype in een Word-document instelt met behulp van Aspose.Words voor .NET. Lettertypenadruk wordt gebruikt om bepaalde woorden of zinsdelen in de tekst te markeren.
+In de tutorial van vandaag gaan we dieper in op het instellen van lettertype-accenttekens in een Word-document met behulp van Aspose.Words voor .NET. Of u nu specifieke tekst wilt onderstrepen met een unieke markering of gewoon bepaalde woorden wilt laten opvallen, deze handleiding heeft de oplossing voor u. Dus, gordel om en laten we aan de slag gaan!
 
 ## Vereisten
-Zorg ervoor dat u over de volgende items beschikt voordat u begint:
-- Een praktische kennis van de programmeertaal C#
-- De Aspose.Words-bibliotheek voor .NET die in uw project is geïnstalleerd
 
-## Stap 1: Definieer de documentmap
-Begin met het instellen van het mappad naar de locatie van uw Word-document. Vervangen`"YOUR DOCUMENT DIRECTORY"` in de code met het juiste pad.
+Voordat we ingaan op de details, moet je ervoor zorgen dat de volgende vereisten zijn aangevinkt:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Een werkende ontwikkelomgeving zoals Visual Studio.
+- .NET Framework: Zorg ervoor dat .NET Framework is geïnstalleerd.
 
-## Stap 2: Maak het document en pas het aan
- Maak een exemplaar van de`Document` klasse en een geassocieerde`DocumentBuilder` om de documentinhoud op te bouwen. Gebruik de`Font.EmphasisMark` eigenschap waarop u de nadrukstijl van het lettertype wilt instellen`EmphasisMark.UnderSolidCircle` . Gebruik dan de`Write`En`Writeln` methoden van de`DocumentBuilder` om tekst toe te voegen met de opgegeven nadruk op het lettertype.
+## Naamruimten importeren
+
+Om met Aspose.Words voor .NET te werken, moet u de benodigde naamruimten importeren. Voeg deze toe bovenaan uw codebestand:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Stap 3: Sla het document op
- Sla het document op met behulp van de`Save` werkwijze van de`Document` met het juiste pad en de juiste bestandsnaam.
+Laten we het proces nu in eenvoudige stappen opsplitsen. Volg elke stap zorgvuldig om de nadruktekens voor lettertypen in uw Word-document in te stellen.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Stap 1: Initialiseer Document en DocumentBuilder
 
-### Voorbeeldbroncode voor Set Font Emphasis Mark met Aspose.Words voor .NET 
+Allereerst moet u een nieuw document en een DocumentBuilder initialiseren. De klasse DocumentBuilder biedt methoden om tekst en andere elementen in het document in te voegen.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Initialiseer een nieuw document
 Document document = new Document();
+
+// Initialiseer DocumentBuilder met het document
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Stap 2: Stel de lettertypenadrukmarkering in
+
+Nu DocumentBuilder gereed is, kunt u nu de nadruk van het lettertype instellen. In dit voorbeeld gebruiken we de nadrukmarkering "UnderSolidCircle".
+
+```csharp
+// Stel de nadrukmarkering van het lettertype in
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Schrijf tekst met de nadrukmarkering
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Stap 3: Wis de opmaak en voeg gewone tekst toe
+
+Nadat u de nadruk hebt ingesteld, wilt u misschien wat gewone tekst toevoegen zonder enige nadruk. Daarvoor moet u de opmaak wissen.
+
+```csharp
+// Wis de lettertypeopmaak
 builder.Font.ClearFormatting();
+
+// Schrijf gewone tekst
 builder.Write("Simple text");
+```
+
+## Stap 4: Sla het document op
+
+Nadat u alle benodigde tekst en opmaak heeft toegevoegd, is de laatste stap het opslaan van het document. Geef het pad en de bestandsnaam op waar u uw document wilt opslaan.
+
+```csharp
+// Bewaar het document
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Conclusie
-In deze zelfstudie hebt u geleerd hoe u de nadrukstijl van het lettertype in een Word-document kunt instellen met behulp van Aspose.Words voor .NET. Experimenteer met verschillende nadrukstijlen en gebruik deze functie om woorden of zinsdelen in uw documenten te markeren.
 
-### Veelgestelde vragen
+En daar heb je het! Zo eenvoudig is het instellen van de nadruktekens in een Word-document met Aspose.Words voor .NET. Met slechts een paar regels code kunt u uw tekst laten opvallen en een professioneel tintje aan uw documenten geven. Aarzel niet om te experimenteren met verschillende nadruktekens en stijlen om aan uw behoeften te voldoen.
 
-#### Vraag: Hoe kan ik accenttekens toevoegen aan een specifiek lettertype in een Word-document met Aspose.Words?
+## Veelgestelde vragen
 
-A: Om accenttekens toe te voegen aan een specifiek lettertype in een Word-document met Aspose.Words, kunt u de API gebruiken om naar het gewenste lettertype te navigeren en de juiste accenttekens toe te passen. Hierdoor worden accenttekens toegevoegd aan de tekst met het geselecteerde lettertype.
+### Wat zijn lettertype-accenttekens?
 
-#### Vraag: Is het mogelijk om de stijl van accenttekens in een Word-document te wijzigen met Aspose.Words?
+Lettertype-nadrukmarkeringen zijn speciale symbolen die aan tekst worden toegevoegd om deze te laten opvallen. Ze kunnen stippen, cirkels en andere decoratieve markeringen bevatten.
 
-A: Ja, met Aspose.Words kun je de stijl van accenttekens in een Word-document wijzigen. Met de API kunt u stijleigenschappen aanpassen, zoals kleur, grootte, lijntype, enz., om het uiterlijk van accenttekens aan te passen.
+### Kan ik andere nadruktekens gebruiken met Aspose.Words voor .NET?
 
-#### Vraag: Hoe kan ik alle accenttekens uit een Word-document verwijderen met Aspose.Words?
+ Ja, Aspose.Words voor .NET ondersteunt verschillende nadruktekens. U kunt verschillende opties verkennen door te verwijzen naar de[documentatie](https://reference.aspose.com/words/net/).
 
-A: Om alle accenttekens uit een Word-document te verwijderen met Aspose.Words, kunt u de API gebruiken om door het document te bladeren, bestaande accenttekens te detecteren en deze te verwijderen met behulp van de juiste methoden. Hiermee worden alle nadruktekens uit het document verwijderd.
+### Is Aspose.Words voor .NET gratis te gebruiken?
 
-#### Vraag: Kan ik accenttekens toevoegen aan een specifiek tekstgedeelte in een Word-document?
+ Aspose.Words voor .NET vereist een licentie voor volledige functionaliteit. U kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/) of koop een licentie[hier](https://purchase.aspose.com/buy).
 
-A: Ja, u kunt accenttekens toevoegen aan een specifiek tekstgedeelte in een Word-document met Aspose.Words. U kunt met behulp van de API het gewenste tekstbereik selecteren en de juiste nadruktekens aan dat deel van de tekst toevoegen.
+### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
 
-#### Vraag: Kunnen de accenttekens worden aangepast aan mijn behoeften?
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap en het ondersteuningsteam door hun te bezoeken[ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
-A: Ja, accenttekens kunnen aan uw behoeften worden aangepast met Aspose.Words. U kunt de stijleigenschappen van accenttekens, zoals kleur, grootte, lijntype en meer, aanpassen aan uw opmaakvoorkeuren.
+### Kan ik Aspose.Words voor .NET gebruiken met andere .NET-frameworks?
+
+Ja, Aspose.Words voor .NET is compatibel met verschillende .NET-frameworks, waaronder .NET Core en .NET 5/6.

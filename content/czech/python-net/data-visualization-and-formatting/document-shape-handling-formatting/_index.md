@@ -8,7 +8,7 @@ weight: 13
 url: /cs/python-net/data-visualization-and-formatting/document-shape-handling-formatting/
 ---
 
-## Úvod
+## Zavedení
 
 Moderní dokumenty nejsou jen o obsahu, který obsahují; jejich vizuální přitažlivost hraje významnou roli v zapojení čtenářů. Aspose.Words pro Python nabízí výkonnou sadu nástrojů pro programovou manipulaci s dokumenty, která vám umožní vytvářet vizuálně výrazná rozvržení, která rezonují s vaším publikem.
 
@@ -89,7 +89,7 @@ Vytváření vizuálně působivých tvarů a rozvržení dokumentů již není 
  Aspose.Words pro Python si můžete stáhnout z[odkaz ke stažení](https://releases.aspose.com/words/python/).
 
 ### Kde najdu komplexní dokumentaci k Aspose.Words pro Python?
- Odkazovat na[dokumentace](https://reference.aspose.com/words/python-net/) pro podrobné pokyny k používání Aspose.Words pro Python.
+ Viz[dokumentace](https://reference.aspose.com/words/python-net/) pro podrobné pokyny k používání Aspose.Words pro Python.
 
 ### Mohu přizpůsobit barvy a styly tvarů?
 Absolutně! Aspose.Words pro Python nabízí možnosti přizpůsobení barev, velikostí a stylů tvarů tak, aby odpovídaly vašim preferencím designu.

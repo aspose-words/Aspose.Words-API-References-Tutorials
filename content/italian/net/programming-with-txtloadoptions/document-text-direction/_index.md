@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-txtloadoptions/document-text-direction/
 ---
-## introduzione
+## Introduzione
 
 Quando si lavora con documenti Word, in particolare quelli contenenti più lingue o con esigenze di formattazione speciali, l'impostazione della direzione del testo può essere fondamentale. Ad esempio, quando si tratta di lingue con scrittura da destra a sinistra come l'ebraico o l'arabo, potrebbe essere necessario regolare di conseguenza la direzione del testo. In questa guida, spiegheremo come impostare la direzione del testo del documento utilizzando Aspose.Words per .NET. 
 
@@ -87,7 +87,7 @@ Impostare la direzione del testo nei documenti di Word è un processo semplice c
 
 ## Domande frequenti
 
-###  Quale è`DocumentDirection` property used for?
+###  Cos'è il`DocumentDirection` property used for?
 
  IL`DocumentDirection` proprietà dentro`TxtLoadOptions` determina la direzione del testo per il documento. Può essere impostato su`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , O`DocumentDirection.RightToLeft`.
 
@@ -105,4 +105,4 @@ Impostare la direzione del testo nei documenti di Word è un processo semplice c
 
 ### Dove posso trovare ulteriori informazioni su Aspose.Words per .NET?
 
- Per maggiori dettagli, consulta il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) . Puoi anche esplorare risorse aggiuntive come[Link per scaricare](https://releases.aspose.com/words/net/), [Acquistare](https://purchase.aspose.com/buy), [Prova gratuita](https://releases.aspose.com/), [Licenza temporanea](https://purchase.aspose.com/temporary-license/) , E[Supporto](https://forum.aspose.com/c/words/8).
+ Per maggiori dettagli, consulta il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) . Puoi anche esplorare risorse aggiuntive come[Collegamento per il download](https://releases.aspose.com/words/net/), [Acquistare](https://purchase.aspose.com/buy), [Prova gratuita](https://releases.aspose.com/), [Licenza temporanea](https://purchase.aspose.com/temporary-license/) , E[Supporto](https://forum.aspose.com/c/words/8).

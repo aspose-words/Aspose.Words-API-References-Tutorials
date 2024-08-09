@@ -2,125 +2,98 @@
 title: Illessze be az Ole objektumot ikonként a Stream segítségével
 linktitle: Illessze be az Ole objektumot ikonként a Stream segítségével
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan illeszthet be egy OLE-objektumot ikonként egy adatfolyam segítségével az Aspose.Words for .NET segítségével.
+description: Ebből a részletes, lépésenkénti oktatóanyagból megtudhatja, hogyan szúrhat be egy OLE-objektumot ikonként az Aspose.Words for .NET-hez tartozó adatfolyam segítségével.
 type: docs
 weight: 10
 url: /hu/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## Bevezetés
 
-Az alábbiakban egy lépésről lépésre bemutatjuk a C# forráskódot, amely bemutatja, hogyan lehet OLE-objektumot ikonként beszúrni az Aspose.Words for .NET-hez tartozó adatfolyam segítségével.
+Ebben az oktatóanyagban az Aspose.Words for .NET egy nagyszerű funkciójában merülünk el: egy OLE (Object Linking and Embedding) objektum beszúrása ikonként egy adatfolyam segítségével. Akár PowerPoint-prezentációt, Excel-táblázatot vagy bármilyen más típusú fájlt ágyaz be, ez az útmutató pontosan megmutatja, hogyan kell ezt megtenni. Készen áll az indulásra? Menjünk!
 
-## 1. lépés: Importálja a szükséges referenciákat
-Mielőtt elkezdené, győződjön meg arról, hogy importálta az Aspose.Words for .NET használatához szükséges hivatkozásokat a projektbe. Ez magában foglalja az Aspose.Words könyvtár importálását és a szükséges névterek hozzáadását a forrásfájlhoz.
+## Előfeltételek
+
+Mielőtt belevágnánk a kódba, néhány dologra lesz szüksége:
+
+-  Aspose.Words for .NET: Ha még nem tette meg,[letöltés](https://releases.aspose.com/words/net/) és telepítse az Aspose.Words for .NET programot.
+- Fejlesztői környezet: Visual Studio vagy bármely más C# fejlesztői környezet.
+- Beviteli fájlok: A beágyazni kívánt fájl (pl. PowerPoint bemutató) és egy ikonkép.
+
+## Névterek importálása
+
+A kezdéshez győződjön meg arról, hogy importálta a szükséges névtereket a projektben:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## 2. lépés: Hozzon létre egy új dokumentumot és dokumentumgenerátort
- Ebben a lépésben egy új dokumentumot hozunk létre a`Document` osztályt és egy dokumentumkészítőt a`DocumentBuilder` osztály.
+Lépésről lépésre bontsuk le a folyamatot, hogy könnyen követhető legyen.
+
+## 1. lépés: Hozzon létre egy új dokumentumot
+
+Először is létrehozunk egy új dokumentumot és egy dokumentumkészítőt a vele való munkához.
 
 ```csharp
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Szúrjon be egy OLE-objektumot ikonként egy adatfolyamból
- Használja a Dokumentumkészítőt`InsertOleObjectAsIcon` módszer egy OLE objektum ikonként történő beszúrására egy adatfolyamból a dokumentumba. Adja meg az adatfolyamot, az objektum típusát, az ikon elérési útját és a beágyazott objektum nevét.
+ Gondolj bele`Document` mint az üres vászonod és`DocumentBuilder` mint az ecseted. Beállítjuk eszközeinket, hogy elkezdhessük mesterművünket.
+
+## 2. lépés: Készítse elő az adatfolyamot
+
+Ezután elő kell készítenünk egy memóriafolyamot, amely tartalmazza a beágyazni kívánt fájlt. Ebben a példában egy PowerPoint bemutatót ágyazunk be.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+Ez a lépés olyan, mintha a festéket az ecsettel töltené fel. Felkészítjük a fájlunkat a beágyazásra.
+
+## 3. lépés: Illessze be az OLE objektumot ikonként
+
+Most a dokumentumkészítővel illesztjük be az OLE objektumot a dokumentumba. Megadjuk a fájladatfolyamot, a fájltípushoz tartozó ProgID-t (ebben az esetben a „Csomag”), az ikonkép elérési útját és a beágyazott fájl címkéjét.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
+
+Itt történik a varázslat! A fájlunkat beágyazzuk, és ikonként jelenítjük meg a dokumentumban.
 
 ## 4. lépés: Mentse el a dokumentumot
- Használja a dokumentumot`Save` módszerrel mentheti a dokumentumot fájlba.
+
+Végül elmentjük a dokumentumot egy megadott útvonalra.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### Példa forráskód egy OLE objektum ikonként történő beszúrásához Aspose.Words for .NET adatfolyam használatával
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-Ez egy teljes kódminta egy OLE objektum ikonként történő beszúrásához az Aspose.Words for .NET-hez tartozó adatfolyam használatával. Ügyeljen arra, hogy importálja a szükséges hivatkozásokat, és kövesse a korábban leírt lépéseket a kód projektbe való integrálásához.
+Ez a lépés olyan, mintha a kész festményt egy keretbe helyezné, és a falra akasztaná. A dokumentum most használatra kész!
 
 ## Következtetés
 
-A fenti, lépésenkénti útmutató elmagyarázza, hogyan lehet OLE-objektumot ikonként beszúrni egy Word-dokumentumba az Aspose.Words for .NET-hez tartozó folyamat segítségével. A leírt lépéseket követve integrálhatja ezt a funkciót a projektjébe. Mindenképpen importálja a szükséges hivatkozásokat, hozzon létre egy új dokumentumot és dokumentumgenerátort, illessze be az OLE objektumot ikonként a folyamból, majd mentse el a dokumentumot. Használja kiindulópontként a megadott mintakódot, és szabja testre igényeinek megfelelően.
+És megvan! Sikeresen beágyazott egy OLE objektumot ikonként egy Word dokumentumba az Aspose.Words for .NET használatával. Ezzel a hatékony funkcióval könnyedén hozhat létre dinamikus és interaktív dokumentumokat. Akár prezentációkat, táblázatokat vagy más fájlokat ágyaz be, az Aspose.Words gyerekjáték. Tehát menjen előre, próbálja ki, és nézze meg, milyen különbséget jelenthet a dokumentumaiban!
 
-### GYIK
+## GYIK
 
-#### K. Hogyan lehet importálni a szükséges hivatkozásokat az Aspose.Words for .NET használatához?
+### Beágyazhatok különböző típusú fájlokat ezzel a módszerrel?
+Igen, beágyazhat bármilyen, az OLE által támogatott fájltípust, beleértve a Word, Excel, PowerPoint és egyebeket.
 
-A. A szükséges referenciák importálásához kövesse az alábbi lépéseket:
+### Szükségem van speciális licencre az Aspose.Words for .NET használatához?
+ Igen, az Aspose.Words for .NET használatához licenc szükséges. Kaphatsz a[ingyenes próbaverzió](https://releases.aspose.com/) vagy vásárolni a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) tesztelésre.
 
- Adja hozzá a következőket`using` állítások a forrásfájl tetején:
+### Testreszabhatom az OLE objektumhoz használt ikont?
+ Teljesen! Az ikonhoz bármilyen képfájlt használhat, ha megadja annak elérési útját a`InsertOleObjectAsIcon` módszer.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-Győződjön meg arról, hogy hozzáadta az Aspose.Words könyvtárat a projekthez.
+### Mi történik, ha a fájl vagy az ikon elérési útja helytelen?
+A módszer kivételt fog dobni. A hibák elkerülése érdekében győződjön meg arról, hogy a fájlok elérési útja helyes.
 
-#### K. Hogyan lehet új dokumentumot és dokumentumkészítőt létrehozni az Aspose.Words for .NET használatával?
-
-A. Új dokumentum és dokumentumgenerátor létrehozásához kövesse az alábbi lépéseket:
-
- Használja a`Document` osztályban új dokumentum létrehozásához:
-
-```csharp
-Document doc = new Document();
-```
- Használja a`DocumentBuilder` osztály a korábban létrehozott dokumentumhoz társított dokumentumkészítő létrehozásához:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### K. Hogyan lehet OLE objektumot ikonként beszúrni egy adatfolyamból az Aspose.Words for .NET használatával?
-
-A. Ha egy OLE-objektumot ikonként szeretne beszúrni egy adatfolyamból, kövesse az alábbi lépéseket:
-
- Használja a`InsertOleObjectAsIcon` a dokumentumgenerátor módszere az OLE objektum beszúrásához:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### K. Hogyan lehet a dokumentumot fájlba menteni?
-
-A.  A dokumentum fájlba mentéséhez használhatja a`Save` a cél elérési útját meghatározó dokumentum módszere:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### K. Hogyan ágyazhatom be a kódot egy OLE objektumnak egy adatfolyamból ikonként való beillesztéséhez a projektembe?
-
-A. Ha be szeretné ágyazni a kódot egy OLE objektumnak egy adatfolyamból ikonként való beillesztéséhez a projektbe, kövesse az alábbi lépéseket:
-- Importálja a szükséges referenciákat a megfelelő hozzáadásával`using` nyilatkozatok.
--  Hozzon létre egy új dokumentumot és egy dokumentumkészítőt a`Document`és`DocumentBuilder` osztályok.
-- Használja a kódot az OLE objektum adatfolyamból való ikonként történő beszúrásához.
--  Mentse el a dokumentumot a`Save` módszert a megfelelő célútvonallal.
-
-Az alábbi lépések követésével sikeresen beszúrhat egy OLE-objektumot ikonként egy adatfolyamból az Aspose.Words for .NET használatával. Ügyeljen arra, hogy kövesse az utasításokat, és importálja a szükséges referenciákat a kívánt eredmények eléréséhez.
+### Lehetséges a beágyazott objektumot beágyazás helyett linkelni?
+Igen, az Aspose.Words lehetővé teszi csatolt OLE objektumok beszúrását, amelyek a fájlra hivatkoznak anélkül, hogy annak tartalmát beágyaznák.

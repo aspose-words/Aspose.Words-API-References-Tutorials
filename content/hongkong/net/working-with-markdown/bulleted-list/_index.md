@@ -2,95 +2,98 @@
 title: 項目符號列表
 linktitle: 項目符號列表
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 逐步指南建立項目符號清單。
+description: 透過此逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中建立和自訂項目符號清單。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-markdown/bulleted-list/
 ---
+## 介紹
 
-在本教學中，我們將告訴您如何使用 Aspose.Words for .NET 建立項目符號清單。項目符號清單用於列出項目而不使用編號。
+準備好進入 Aspose.Words for .NET 的世界了嗎？今天，我們將逐步介紹如何在 Word 文件中建立項目符號清單。無論您是組織想法、列出項目，還是只是在文件中添加一些結構，項目符號清單都非常方便。那麼，就讓我們開始吧！
 
-## 第 1 步：使用文件產生器
+## 先決條件
 
-首先，我們將使用文件產生器將內容新增至文件。
+在我們開始享受編碼樂趣之前，讓我們確保您擁有所需的一切：
+
+1.  Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。如果您還沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
+2. 開發環境：AC#開發環境，如Visual Studio。
+3. 基本 C# 知識：對 C# 程式設計的基本了解將幫助您跟進。
+
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這就像為我們的程式碼順利運行奠定了基礎。
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+現在，讓我們將流程分解為簡單、易於管理的步驟。
+
+## 第 1 步：建立一個新文檔
+
+好吧，讓我們開始建立一個新文件。這就是所有魔法發生的地方。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 第 2 步：套用預設項目符號列表
+## 第 2 步：套用項目符號清單格式
 
-我們可以使用文件建構器來套用預設的項目符號列表`ApplyBulletDefault`方法。
+接下來，我們將套用項目符號清單格式。這告訴文檔我們即將開始項目符號清單。
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## 第 3 步：自訂項目符號格式
+## 第 3 步：自訂項目符號列表
 
-我們可以透過存取屬性來自訂項目符號格式`ListFormat.List.ListLevels[0]`。在此範例中，我們使用破折號“-”作為項目符號。
+在這裡，我們將根據自己的喜好自訂項目符號清單。在此範例中，我們將使用破折號 (-) 作為項目符號。
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## 第 4 步：將項目新增到清單中
+## 第 4 步：新增清單項
 
-現在我們可以使用文件產生器將項目新增到項目符號清單中`Writeln`方法。
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## 步驟 5：從清單中刪除縮排
-
-如果我們想要建立一個子列表，我們可以使用以下命令增加縮排`ListFormat.ListIndent()`方法。在此範例中，我們為項目 2a 和 2b 新增一個子清單。
+現在，讓我們將一些項目新增到項目符號清單中。您可以在這裡發揮創意並添加您需要的任何內容。
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### 使用 Aspose.Words for .NET 的項目符號清單的範例原始碼
-
-
-```csharp
-//使用文件產生器將內容新增至文件。
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-恭喜！現在您已經學習如何使用 Aspose.Words for .NET 建立項目符號清單。
+## 第 5 步：新增子項目
 
-### 常見問題解答
+為了讓事情變得更有趣，讓我們在「Item 2」下加入一些子項目。這有助於組織子點。
 
-#### Q：如何在 Markdown 中建立項目符號清單？
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); //返回主列表級別
+```
 
-答：要在 Markdown 中建立項目符號列表，請以項目符號 (`-`, `*`， 或者`+`)，後面跟一個空格。
+## 結論
 
-#### Q：可以在 Markdown 中嵌套項目符號清單嗎？
+現在你就得到它了！您剛剛使用 Aspose.Words for .NET 在 Word 文件中建立了項目符號清單。這是一個簡單的過程，但對於組織文件來說卻非常強大。無論您是建立簡單的列表還是複雜的巢狀列表，Aspose.Words 都能滿足您的需求。
 
-答：是的，可以透過在每個嵌套列表項前面添加四個偏移空格來在 Markdown 中嵌套項目符號列表。
+請隨意嘗試不同的清單樣式和格式以滿足您的需求。快樂編碼！
 
-#### Q：如何自訂項目符號？
+## 常見問題解答
 
-答：在標準 Markdown 中，項目符號是預先定義的。但是，某些 Markdown 編輯器可讓您使用特定擴充功能來自訂它們。
+### 我可以在清單中使用不同的項目符號嗎？
+   是的，您可以透過變更來自訂項目符號符號`NumberFormat`財產。
 
-#### Q：Markdown 中的項目符號清單支援縮排嗎？
+### 如何新增更多等級的縮排？
+   使用`ListIndent`添加更多級別的方法和`ListOutdent`回到更高的水平。
 
-答：是的，Markdown 中的項目符號清單支援縮排。您可以使用空格或製表符新增左移。
+### 是否可以混合使用項目符號清單和編號清單？
+   絕對地！您可以使用以下命令在項目符號和數字格式之間切換`ApplyNumberDefault`和`ApplyBulletDefault`方法。
 
-#### Q：可以將連結或內嵌文字新增至清單項目嗎？
+### 我可以設定清單項目中文字的樣式嗎？
+   是的，您可以使用以下命令將不同的樣式、字體和格式套用至清單項目中的文字：`Font`的財產`DocumentBuilder`.
 
-答：是的，您可以使用適當的 Markdown 語法添加連結或內聯文字以列出項目。
+### 如何建立多列項目符號清單？
+   您可以使用表格格式建立多列列表，其中每個儲存格都包含一個單獨的項目符號列表。

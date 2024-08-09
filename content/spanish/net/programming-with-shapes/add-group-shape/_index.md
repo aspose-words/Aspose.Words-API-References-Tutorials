@@ -53,7 +53,7 @@ GroupShape groupShape = new GroupShape(doc);
 
 ## Paso 3: agregar formas a GroupShape
 
- Ahora, agreguemos formas individuales a nuestro`GroupShape` envase. Comenzaremos con una forma de borde acentuada y luego agregaremos una forma de botón de acción.
+ Ahora, agreguemos formas individuales a nuestro`GroupShape` recipiente. Comenzaremos con una forma de borde acentuada y luego agregaremos una forma de botón de acción.
 
 ### Agregar una forma de borde de acento
 
@@ -113,7 +113,7 @@ Finalmente, guarde el documento en su directorio especificado.
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-¡Y ahí lo tienes! Su documento con formas de grupo está listo.
+¡Y ahí lo tienes! Su documento con formas grupales está listo.
 
 ## Conclusión
 

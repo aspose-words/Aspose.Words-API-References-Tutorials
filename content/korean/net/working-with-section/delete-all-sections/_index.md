@@ -69,7 +69,7 @@ doc.Sections.Clear();
  에서 구매하실 수 있습니다.[여기](https://purchase.aspose.com/buy).
 
 ### .NET용 Aspose.Words에 대한 지원이 있습니까?
- 예, Aspose 커뮤니티로부터 지원을 받을 수 있습니다[여기](https://forum.aspose.com/c/words/8).
+예, Aspose 커뮤니티로부터 지원을 받을 수 있습니다[여기](https://forum.aspose.com/c/words/8).
 
 ### 임시 라이센스가 필요한 경우 어떻게 해야 합니까?
  임시면허를 받을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).

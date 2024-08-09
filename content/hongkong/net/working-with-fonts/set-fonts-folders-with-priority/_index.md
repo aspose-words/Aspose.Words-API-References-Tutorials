@@ -2,79 +2,91 @@
 title: 設定優先權字體資料夾
 linktitle: 設定優先權字體資料夾
 second_title: Aspose.Words 文件處理 API
-description: 使用 Aspose.Words for .NET 渲染文件時優先設定字體資料夾的逐步指南。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定優先字體資料夾。我們的指南可確保您的文件每次都能完美呈現。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## 介紹
 
-在本教學中，我們將引導您逐步完成使用 Aspose.Words for .NET 渲染文件時設定優先字體資料夾的過程。我們將解釋捆綁的 C# 原始程式碼，並為您提供全面的指南，幫助您理解並在自己的專案中實現此功能。在本教學結束時，您將了解在使用 Aspose.Words for .NET 渲染文件時如何指定具有自訂搜尋優先順序的多個字體資料夾。
+在文件操作領域，設定自訂字型資料夾可以在確保文件完美呈現方面發揮巨大作用，無論在何處查看。今天，我們將深入探討如何使用 Aspose.Words for .NET 在 Word 文件中設定優先字體資料夾。這份綜合指南將引導您完成每個步驟，使整個過程盡可能順利。
 
-## 步驟1：定義文檔目錄
-首先，您需要設定文檔目錄的路徑。這是您要儲存編輯後的渲染文件的位置。將“您的文件目錄”替換為適當的路徑。
+## 先決條件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+在開始之前，讓我們確保我們擁有所需的一切。這是一個快速清單：
 
-## 步驟2：設定優先字體資料夾
-然後您可以使用以下命令設定優先字體資料夾`FontSettings`類和`SetFontsSources()`方法。您可以使用下列實例指定多個字型來源`SystemFontSource`和`FolderFontSource`。在本例中，我們定義了兩個字體來源：預設的系統字體來源和優先順序為1的自訂字體資料夾。
+-  Aspose.Words for .NET：您需要安裝此程式庫。如果您還沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
+- 開發環境：確保您有一個有效的 .NET 開發環境，例如 Visual Studio。
+- 文件目錄：確保您有一個文件目錄。對於我們的範例，我們將使用`"YOUR DOCUMENT DIRECTORY"`作為此路徑的佔位符。
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## 導入命名空間
 
-## 第 3 步：載入要渲染的文檔
-現在您可以使用以下命令載入要渲染的文檔`Document`班級。請務必指定正確的文件路徑。
+首先，我們需要導入必要的名稱空間。這些命名空間對於存取 Aspose.Words 提供的類別和方法至關重要。
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 步驟 4：儲存渲染的文檔
-最後，您可以使用以下命令將渲染的文檔儲存到檔案中`Save()`的方法`Document`班級。請務必指定正確的路徑和檔案名稱。
+現在，讓我們分解每個步驟來設定優先字體資料夾。
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## 第 1 步：設定字體來源
 
-### 使用 Aspose.Words for .NET 設定優先權字體資料夾的範例原始碼 
+首先，您需要定義字體來源。您可以在此處告訴 Aspose.Words 在哪裡找到字體。您可以指定多個字型資料夾，甚至可以設定它們的優先權。
+
 ```csharp
 //文檔目錄的路徑
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+在此範例中，我們設定兩個字體來源：
+- SystemFontSource：這是預設字型來源，包括系統上安裝的所有字型。
+-  FolderFontSource：這是一個自訂字體資料夾，位於`C:\\MyFonts\\`。這`true`參數指定應遞歸掃描該資料夾，並且`1`設定其優先權。
+
+## 第 2 步：載入您的文檔
+
+接下來，載入您要使用的文檔。確保該文件位於您指定的目錄中。
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+這行程式碼載入一個名為的文檔`Rendering.docx`從您的文件目錄。
+
+## 步驟 3：使用新字體設定儲存文檔
+
+最後，儲存您的文件。當您儲存文件時，Aspose.Words 將使用您指定的字體設定。
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+這會將文件作為 PDF 保存在您的文件目錄中，名稱為`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## 結論
-在本教學中，我們學習如何在使用 Aspose.Words for .NET 渲染文件時優先設定字體資料夾。透過遵循此逐步指南，您可以在渲染文件時輕鬆指定具有自訂搜尋優先順序的多個字體資料夾。 Aspose.Words 提供了強大且靈活的 API，用於文件中字體的文字處理。有了這些知識，您就可以控制和自訂根據您的特定需求渲染文件時使用的字體來源。
 
-### 常見問題解答
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功設定了優先字體資料夾。透過指定自訂字型資料夾和優先級，您可以確保文件呈現一致，無論在何處查看。這在預設情況下未安裝特定字體的環境中特別有用。
 
-#### Q：如何在 Aspose.Words 中設定優先字體資料夾？
+## 常見問題解答
 
-答：要在 Aspose.Words 中設定優先字體資料夾，您可以使用`SetFontsFoldersWithPriority`的方法`Fonts`透過指定字型資料夾位置及其優先順序來定義類別。
+### 為什麼需要設定自訂字體資料夾？
+設定自訂字型資料夾可確保您的文件正確呈現，即使它們使用的字型未安裝在正在檢視的系統上。
 
-#### Q：如果一種字體存在於多個具有不同優先順序的資料夾中，會發生什麼情況？
+### 我可以設定多個自訂字體資料夾嗎？
+是的，您可以指定多個字型資料夾。 Aspose.Words 允許您設定每個資料夾的優先級，確保首先找到最重要的字體。
 
-答：如果一種字體存在於多個具有不同優先順序的資料夾中，Aspose.Words 在處理文件時將使用具有最高優先順序的資料夾中的版本。
+### 如果所有指定來源中缺少某種字體，會發生什麼情況？
+如果所有指定來源中缺少某種字體，Aspose.Words 將使用後備字體來確保文件仍然可讀。
 
-#### Q：我可以在 Aspose.Words 中指定多個具有相同優先順序的字體資料夾嗎？
+### 我可以更改系統字體的優先順序嗎？
+預設始終包含系統字體，但您可以設定它們相對於自訂字體資料夾的優先順序。
 
-答：是的，您可以在 Aspose.Words 中指定多個具有相同優先權的字體資料夾。在文件中搜尋字體時，Aspose.Words 會同等優先考慮它們。
-
-#### Q：如何查看Aspose.Words中定義的優先字體資料夾？
-
-答：要檢查 Aspose.Words 中優先定義的字體資料夾，您可以使用`GetFolders`的方法`Fonts`類別來取得已配置字體資料夾的列表，包括它們的優先順序。
-
-#### Q：在Aspose.Words中設定優先字體資料夾有什麼用？
-
-答：在Aspose.Words中設定優先字體資料夾可以讓您控制Word文件中字體的搜尋順序。這有助於您確保使用所需的字體並避免不必要的字體替換問題。
+### 是否可以使用自訂字型資料夾的網路路徑？
+是的，您可以將網頁路徑指定為自訂字型資料夾，從而使您可以將字型資源集中在網頁位置上。

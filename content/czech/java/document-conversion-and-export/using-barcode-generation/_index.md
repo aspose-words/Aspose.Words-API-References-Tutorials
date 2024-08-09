@@ -17,7 +17,7 @@ oblasti zpracování a automatizace dokumentů představuje Aspose.Words pro Jav
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Import nezbytných tříd
 
@@ -62,7 +62,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili generovat vlastní obrázky čárových kódů pomocí Aspose.Words for Java. Tato všestranná knihovna otevírá svět možností pro automatizaci a manipulaci s dokumenty.
+Gratuluji! Úspěšně jste se naučili generovat vlastní obrázky čárových kódů pomocí Aspose.Words for Java. Tato všestranná knihovna otevírá svět možností pro automatizaci a manipulaci s dokumenty.
 
 ## FAQ
 

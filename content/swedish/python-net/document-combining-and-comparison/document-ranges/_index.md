@@ -20,7 +20,7 @@ Innan vi dyker in i den praktiska implementeringen, se till att du har följande
 - Installerade Python på ditt system.
 - Tillgång till Aspose.Words for Python-biblioteket.
 
-## Installerar Aspose.Words för Python
+## Installera Aspose.Words för Python
 
 För att börja måste du installera Aspose.Words for Python-biblioteket. Du kan göra detta med följande pip-kommando:
 
@@ -146,7 +146,7 @@ pip install aspose-words
 
 ### Kan jag extrahera specifikt innehåll från ett dokument?
 
-Jo det kan du. Definiera ett innehållsintervall med hjälp av dokumentnavigeringstekniker, extrahera sedan önskat innehåll med det definierade intervallet.
+Ja, det kan du. Definiera ett innehållsintervall med hjälp av dokumentnavigeringstekniker, extrahera sedan önskat innehåll med det definierade intervallet.
 
 ### Är det möjligt att slå samman flera dokument med Aspose.Words för Python?
 

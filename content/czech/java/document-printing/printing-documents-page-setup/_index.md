@@ -8,13 +8,13 @@ weight: 11
 url: /cs/java/document-printing/printing-documents-page-setup/
 ---
 
-## Úvod
+## Zavedení
 
 Tisk dokumentů s přesným nastavením stránky je zásadní, pokud jde o vytváření profesionálně vypadajících zpráv, faktur nebo jakéhokoli tištěného materiálu. Aspose.Words for Java zjednodušuje tento proces vývojářům Java a umožňuje jim ovládat každý aspekt rozvržení stránky.
 
 ## Nastavení vývojového prostředí
 
-Než začneme, ujistíme se, že máte k dispozici vhodné vývojové prostředí. Budeš potřebovat:
+Než začneme, ujistíme se, že máte k dispozici vhodné vývojové prostředí. Budete potřebovat:
 
 - Java Development Kit (JDK)
 - Integrované vývojové prostředí (IDE) jako Eclipse nebo IntelliJ IDEA
@@ -26,9 +26,9 @@ Začněte vytvořením nového projektu Java ve vámi zvoleném IDE. Dejte mu sm
 
 ## Přidání Aspose.Words pro Java do vašeho projektu
 
-Chcete-li používat Aspose.Words pro Javu, musíte do projektu přidat knihovnu. Následuj tyto kroky:
+Chcete-li používat Aspose.Words pro Javu, musíte do projektu přidat knihovnu. Postupujte takto:
 
-1.  Stáhněte si knihovnu Aspose.Words for Java z[tady](https://releases.aspose.com/words/java/).
+1.  Stáhněte si knihovnu Aspose.Words for Java z[zde](https://releases.aspose.com/words/java/).
 
 2. Přidejte soubor JAR do cesty třídy vašeho projektu.
 
@@ -87,7 +87,7 @@ Ano, Aspose.Words for Java podporuje širokou škálu formátů dokumentů, vče
 
 ### Mohu tisknout na konkrétní tiskárně?
 
-Rozhodně! Konkrétní tiskárnu můžete určit pomocí`setPrintService` způsob a poskytnutí požadovaného`PrintService` objekt.
+Jistě! Konkrétní tiskárnu můžete určit pomocí`setPrintService` způsob a poskytnutí požadovaného`PrintService` objekt.
 
 ### Jak uložím vytištěný dokument jako PDF?
 

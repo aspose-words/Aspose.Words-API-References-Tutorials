@@ -101,8 +101,8 @@ Aspose.Words for .NET ile Word belgelerinde metin yönünü ayarlamak basit bir 
 
 ### Karışık metin talimatlarına sahip belgeleri nasıl işleyebilirim?
 
- Karışık metin yönlerine sahip belgeler için biçimlendirmeyi paragraf başına ayrı ayrı ele almanız gerekebilir. Kullan`ParagraphFormat.Bidi` Her paragrafın yönünü gerektiği gibi ayarlama özelliği.
+ Karışık metin yönlerine sahip belgeler için biçimlendirmeyi paragraf başına ayrı ayrı ele almanız gerekebilir. Kullanın`ParagraphFormat.Bidi` Her paragrafın yönünü gerektiği gibi ayarlama özelliği.
 
 ### Aspose.Words for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
 
- Daha fazla ayrıntı için şuraya göz atın:[Aspose.Words for .NET Belgeleri](https://reference.aspose.com/words/net/) . Ayrıca aşağıdaki gibi ek kaynakları da keşfedebilirsiniz.[İndirme: {link](https://releases.aspose.com/words/net/), [Satın almak](https://purchase.aspose.com/buy), [Ücretsiz deneme](https://releases.aspose.com/), [Geçici lisans](https://purchase.aspose.com/temporary-license/) , Ve[Destek](https://forum.aspose.com/c/words/8).
+ Daha fazla ayrıntı için şuraya göz atın:[Aspose.Words for .NET Belgeleri](https://reference.aspose.com/words/net/) . Ayrıca aşağıdaki gibi ek kaynakları da keşfedebilirsiniz.[İndirme bağlantısı](https://releases.aspose.com/words/net/), [Satın almak](https://purchase.aspose.com/buy), [Ücretsiz deneme](https://releases.aspose.com/), [Geçici lisans](https://purchase.aspose.com/temporary-license/) , Ve[Destek](https://forum.aspose.com/c/words/8).

@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Menerapkan Gaya Paragraf
 
-Ini adalah dimana keajaiban terjadi! Kami akan menerapkan gaya paragraf ke dokumen kami.
+Di sinilah keajaiban terjadi! Kami akan menerapkan gaya paragraf ke dokumen kami.
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;

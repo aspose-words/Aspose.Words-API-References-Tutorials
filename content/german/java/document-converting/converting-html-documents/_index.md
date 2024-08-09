@@ -20,7 +20,7 @@ Bevor wir uns in den Code vertiefen, stellen Sie sicher, dass Sie die folgenden 
 -  Aspose.Words für Java-Bibliothek. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/java/).
 - Grundlegende Kenntnisse der Java-Programmierung.
 
-## Schritt für Schritt Anleitung
+## Schritt-für-Schritt-Anleitung
 
 ## Schritt 1: Einrichten Ihres Projekts
 

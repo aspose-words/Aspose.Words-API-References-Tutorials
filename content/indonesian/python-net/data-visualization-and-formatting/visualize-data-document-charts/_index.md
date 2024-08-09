@@ -101,7 +101,7 @@ doc.save("dynamic_chart_document.pdf", aw.SaveFormat.PDF)
 
 ## Kesimpulan
 
-Dalam artikel ini, kita telah mempelajari cara memanfaatkan Aspose.Words untuk Python untuk membuat bagan dokumen dinamis. Visualisasi data adalah alat penting untuk menyampaikan wawasan secara efektif, dan dengan mengikuti langkah-langkah yang diuraikan di sini, Anda dapat mengintegrasikan bagan interaktif ke dalam dokumen Anda dengan lancar. Mulailah meningkatkan presentasi data Anda hari ini!
+Dalam artikel ini, kita telah mempelajari cara memanfaatkan Aspose.Words untuk Python untuk membuat bagan dokumen dinamis. Visualisasi data adalah alat penting untuk menyampaikan wawasan secara efektif, dan dengan mengikuti langkah-langkah yang dijelaskan di sini, Anda dapat mengintegrasikan bagan interaktif ke dalam dokumen Anda dengan lancar. Mulailah meningkatkan presentasi data Anda hari ini!
 
 ## FAQ
 

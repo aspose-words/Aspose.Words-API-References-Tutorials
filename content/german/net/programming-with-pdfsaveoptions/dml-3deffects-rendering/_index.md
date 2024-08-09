@@ -66,7 +66,7 @@ Abschließend speichern wir das Dokument mit den angegebenen Speicheroptionen al
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);
 ```
 
- Wir benutzen das`Save` Methode der`Document` Klasse, um das Word-Dokument als PDF zu speichern. Die zuvor konfigurierten Speicheroptionen werden als Parameter übergeben, um sicherzustellen, dass die 3D-Effekte richtig gerendert werden.
+ Wir verwenden die`Save` Methode der`Document` Klasse, um das Word-Dokument als PDF zu speichern. Die zuvor konfigurierten Speicheroptionen werden als Parameter übergeben, um sicherzustellen, dass die 3D-Effekte richtig gerendert werden.
 
 ## Abschluss
 

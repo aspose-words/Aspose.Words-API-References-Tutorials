@@ -100,7 +100,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 ## Conclusion
 
-Et voila! Vous avez réussi à nettoyer les styles en double de votre document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez garder vos documents propres et organisés, les rendant plus faciles à gérer et moins sujets aux problèmes de style. N'oubliez pas que la clé pour maîtriser n'importe quel outil est la pratique, alors continuez à expérimenter Aspose.Words et découvrez toutes les fonctionnalités puissantes qu'il a à offrir.
+Et voilà ! Vous avez réussi à nettoyer les styles en double de votre document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez garder vos documents propres et organisés, les rendant plus faciles à gérer et moins sujets aux problèmes de style. N'oubliez pas que la clé pour maîtriser n'importe quel outil est la pratique, alors continuez à expérimenter Aspose.Words et découvrez toutes les fonctionnalités puissantes qu'il a à offrir.
 
 ## FAQ
 

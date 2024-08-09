@@ -9,13 +9,13 @@ url: /pl/net/programming-with-charts/define-xyaxis-properties/
 ---
 ## Wstęp
 
-Wykresy są potężnym narzędziem do wizualizacji danych. Kiedy potrzebujesz tworzyć profesjonalne dokumenty z dynamicznymi wykresami, Aspose.Words dla .NET jest nieocenioną biblioteką. Ten artykuł przeprowadzi Cię przez proces definiowania właściwości osi XY na wykresie przy użyciu Aspose.Words dla .NET, dzieląc każdy krok w celu zapewnienia przejrzystości i łatwości zrozumienia.
+Wykresy są potężnym narzędziem do wizualizacji danych. Kiedy potrzebujesz tworzyć profesjonalne dokumenty z dynamicznymi wykresami, Aspose.Words dla .NET jest nieocenioną biblioteką. W tym artykule przeprowadzimy Cię przez proces definiowania właściwości osi XY na wykresie przy użyciu Aspose.Words dla .NET, dzieląc każdy krok w celu zapewnienia przejrzystości i łatwości zrozumienia.
 
 ## Warunki wstępne
 
 Zanim zagłębisz się w kodowanie, musisz spełnić kilka warunków wstępnych:
 
-1. Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: potrzebujesz zintegrowanego środowiska programistycznego (IDE), takiego jak Visual Studio.
 3. .NET Framework: Upewnij się, że środowisko programistyczne jest skonfigurowane pod kątem programowania .NET.
 4. Podstawowa znajomość języka C#: W tym przewodniku założono, że masz podstawową wiedzę na temat programowania w języku C#.

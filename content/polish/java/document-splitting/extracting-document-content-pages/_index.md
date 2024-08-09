@@ -8,7 +8,7 @@ weight: 13
 url: /pl/java/document-splitting/extracting-document-content-pages/
 ---
 
-Czy jesteś gotowy, aby wyruszyć w podróż, aby opanować sztukę wyodrębniania zawartości dokumentu według stron za pomocą Aspose.Words dla Java? Jesteś we właściwym miejscu! W tym obszernym przewodniku zagłębimy się w zawiłości Aspose.Words dla Java, przedstawiając instrukcje krok po kroku i przykłady kodu źródłowego, które pomogą Ci odblokować pełny potencjał tego potężnego API Java.
+Czy jesteś gotowy, aby wyruszyć w podróż, aby opanować sztukę wyodrębniania zawartości dokumentu według stron za pomocą Aspose.Words dla Java? Jesteś we właściwym miejscu! W tym obszernym przewodniku zagłębimy się w zawiłości Aspose.Words dla Java, przedstawiając instrukcje krok po kroku i przykłady kodu źródłowego, które pomogą Ci uwolnić pełny potencjał tego potężnego API Java.
 
 ## Wstęp
 
@@ -152,7 +152,7 @@ Możesz wnieść swój wkład, dzieląc się swoją wiedzą na forach, zgłaszaj
 
 ### Czy są jakieś uwagi dotyczące licencji?
 
-Aspose.Words dla Java wymaga ważnej licencji do użytku komercyjnego. Upewnij się, że uzyskałeś niezbędne licencje, aby zachować zgodność z warunkami użytkowania.
+Aspose.Words dla Java wymaga ważnej licencji do użytku komercyjnego. Upewnij się, że nabyłeś niezbędne licencje, aby zachować zgodność z warunkami użytkowania.
 
 ## Wniosek
 

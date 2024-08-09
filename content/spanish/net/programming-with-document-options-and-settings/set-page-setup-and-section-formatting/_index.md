@@ -15,7 +15,7 @@ Cuando se trata de manipulación de documentos, es fundamental configurar el dis
 
 Antes de profundizar en el código, cubramos lo que necesita para comenzar.
 
--  Aspose.Words para .NET: Debe tener instalado Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: Debe tener instalado Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: cualquier IDE compatible con .NET (por ejemplo, Visual Studio).
 - Conocimientos básicos de C#: la familiaridad con la programación en C# es esencial.
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
-## introduzione
+## Introduzione
 
 Quando si tratta di manipolare i documenti Word a livello di programmazione, Aspose.Words per .NET è una centrale elettrica. Una delle sue caratteristiche interessanti è l'esportazione dei caratteri come Base64 all'interno di file HTML, garantendo che i caratteri siano incorporati e visualizzati correttamente su diversi browser e sistemi. In questo tutorial, approfondiremo come ottenere questo risultato. Pronto a rendere i caratteri dei tuoi documenti Word ottimizzati per il Web? Iniziamo!
 

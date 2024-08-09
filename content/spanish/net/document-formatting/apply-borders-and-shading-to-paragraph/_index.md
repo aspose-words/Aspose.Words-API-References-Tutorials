@@ -9,7 +9,7 @@ url: /es/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Introducción
 
-Hola, ¿alguna vez te has preguntado cómo hacer que tus documentos de Word destaquen con bordes y sombreados elegantes? Bueno, ¡estás en el lugar correcto! Hoy nos sumergimos en el mundo de Aspose.Words para .NET para darle vida a nuestros párrafos. Imagine que su documento luzca tan elegante como el trabajo de un diseñador profesional con sólo unas pocas líneas de código. ¿Listo para comenzar? ¡Vamos!
+Hola, ¿alguna vez te has preguntado cómo hacer que tus documentos de Word destaquen con bordes y sombreados elegantes? Bueno, ¡estás en el lugar correcto! Hoy nos sumergimos en el mundo de Aspose.Words para .NET para darle vida a nuestros párrafos. Imagine que su documento luzca tan elegante como el trabajo de un diseñador profesional con sólo unas pocas líneas de código. ¿Listo para empezar? ¡Vamos!
 
 ## Requisitos previos
 
@@ -113,7 +113,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
  ¡Absolutamente! Aspose.Words para .NET le permite personalizar cada borde individualmente. Simplemente configura el`LineStyle` para cada tipo de borde como se muestra en la guía.
 
 ### ¿Qué otras texturas de sombreado están disponibles?  
- Hay varias texturas que puede utilizar, como sólida, raya horizontal, raya vertical y más. Comprobar el[Asponer documentación](https://reference.aspose.com/words/net/) para obtener una lista completa.
+ Hay varias texturas que puede utilizar, como sólida, raya horizontal, raya vertical y más. Compruebe el[Asponer documentación](https://reference.aspose.com/words/net/) para obtener una lista completa.
 
 ### ¿Cómo puedo cambiar el color del borde?  
  Puede establecer el color del borde usando el`Color` propiedad para cada frontera. Por ejemplo,`borders[BorderType.Left].Color = Color.Red;`.

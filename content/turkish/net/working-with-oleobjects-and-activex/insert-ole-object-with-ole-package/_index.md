@@ -2,140 +2,103 @@
 title: Ole Paketi ile Word'e Ole Nesnesi Ekleme
 linktitle: Ole Paketi ile Word'e Ole Nesnesi Ekleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak OLE paketi içeren bir OLE nesnesini bir belgeye nasıl ekleyeceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak OLE nesnelerini Word belgelerine nasıl ekleyeceğinizi öğrenin. Dosyaları sorunsuz bir şekilde gömmek için ayrıntılı adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
+## giriiş
 
-Aşağıda, Aspose.Words for .NET kullanarak bir OLE paketiyle bir OLE nesnesinin word'e nasıl ekleneceğini gösteren, C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır.
+Bir dosyayı bir Word belgesine gömmek istediyseniz doğru yerdesiniz. İster ZIP dosyası, ister Excel sayfası, ister başka bir dosya türü olsun, onu doğrudan Word belgenize yerleştirmek inanılmaz derecede yararlı olabilir. Bunu, belgenizde her türlü hazineyi saklayabileceğiniz gizli bir bölmenin olması gibi düşünün. Bugün bunu Aspose.Words for .NET kullanarak nasıl yapacağımızı anlatacağız. Bir Word sihirbazı olmaya hazır mısınız? Hadi dalalım!
 
-## 1. Adım: Gerekli referansları içe aktarın
-Başlamadan önce Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Buna Aspose.Words kütüphanesinin içe aktarılması ve gerekli ad alanlarının kaynak dosyanıza eklenmesi de dahildir.
+## Önkoşullar
+
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+1. Aspose.Words for .NET: Henüz yapmadıysanız adresinden indirin.[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir .NET geliştirme ortamı.
+3. Temel C# Anlayışı: Uzman olmanıza gerek yok, ancak C#'ı nasıl kullanacağınızı bilmek yardımcı olacaktır.
+4. Belge Dizini: Belgeleri saklayabileceğiniz ve alabileceğiniz bir klasör.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle isim alanlarımızı düzene koyalım. Projenize aşağıdaki ad alanlarını eklemeniz gerekir:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## 2. Adım: Yeni bir belge ve belge oluşturucu oluşturun
- Bu adımda yeni bir belge oluşturacağız.`Document` sınıf ve bir belge oluşturucu kullanarak`DocumentBuilder` sınıf.
+Bunu küçük adımlara bölelim, böylece takip edilmesi kolay olur.
+
+## 1. Adım: Belgenizi Ayarlayın
+
+Boş bir tuvali olan bir sanatçı olduğunuzu hayal edin. Öncelikle Word belgemiz olan boş tuvalimize ihtiyacımız var. Bunu nasıl ayarlayacağınız aşağıda açıklanmıştır:
 
 ```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: OLE paketiyle bir OLE nesnesi ekleyin
- Belge Oluşturucuyu kullanın`InsertOleObject`OLE paketi içeren bir OLE nesnesini belgeye ekleme yöntemi. Veri akışını, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin.
+Bu kod yeni bir Word belgesini başlatır ve belgemize içerik eklemek için kullanacağımız DocumentBuilder'ı kurar.
+
+## Adım 2: Ole Nesnenizi Okuyun
+
+Daha sonra yerleştirmek istediğiniz dosyayı okuyalım. Bunu gizli bölmenizde saklamak istediğiniz hazineyi almak gibi düşünün:
 
 ```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
+byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
+```
+
+Bu satır, ZIP dosyanızdaki tüm baytları okur ve bunları bir bayt dizisinde saklar.
+
+## Adım 3: Ole Nesnesini Ekleyin
+
+Şimdi işin sihirli kısmı geliyor. Dosyayı Word belgemize gömeceğiz:
+
+```csharp
 using (Stream stream = new MemoryStream(bs))
 {
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
+    Shape shape = builder.InsertOleObject(stream, "Package", true, null);
+    OlePackage olePackage = shape.OleFormat.OlePackage;
+    olePackage.FileName = "filename.zip";
+    olePackage.DisplayName = "displayname.zip";
 }
 ```
 
-## 4. Adım: Belgeyi kaydedin
- Belgenin`Save` Belgeyi bir dosyaya kaydetme yöntemi.
+ Burada bayt dizisinden bir bellek akışı oluşturuyoruz ve bunu kullanıyoruz.`InsertOleObject` belgeye yerleştirme yöntemini kullanın. Ayrıca gömülü nesnenin dosya adını ve görünen adını da ayarladık.
+
+## 4. Adım: Belgenizi Kaydedin
+
+Son olarak şaheserimizi kaydedelim:
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### Aspose.Words for .NET ile OLE paketine OLE nesnesi eklemek için örnek kaynak kodu
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-Bu, Aspose.Words for .NET ile OLE paketine bir OLE nesnesi eklemek için eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun.
+Bu, belgeyi gömülü dosyanızla birlikte belirtilen dizine kaydeder.
 
 ## Çözüm
 
-Sonuç olarak, Aspose.Words for .NET kullanarak OLE paketiyle bir Word belgesine OLE nesnesi eklemek için adım adım kılavuzu inceledik.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir OLE nesnesini bir Word belgesine başarıyla gömdünüz. Bu, belgenizin içine her an ortaya çıkabilecek gizli bir mücevher eklemek gibidir. Bu teknik, teknik dokümantasyondan dinamik raporlara kadar çeşitli uygulamalar için inanılmaz derecede faydalı olabilir. 
 
-Bu adımları takip ederek, Aspose.Words for .NET'i kullanarak OLE paketlerini içeren OLE nesnelerini Word belgelerinize başarıyla ekleyebileceksiniz. İstediğiniz sonuçları elde etmek için gerekli referansları içe aktardığınızdan ve talimatları dikkatlice uyguladığınızdan emin olun.
+## SSS'ler
 
-### Ole paketiyle Word'e ole nesnesi eklemeyle ilgili SSS
+### Bu yöntemi kullanarak başka dosya türlerini gömebilir miyim?
+Evet, Excel sayfaları, PDF'ler ve resimler gibi çeşitli dosya türlerini gömebilirsiniz.
 
-#### S: Aspose.Words for .NET'i kullanmak için hangi kimlik bilgilerini içe aktarmam gerekiyor?
+### Aspose.Words için lisansa ihtiyacım var mı?
+ Evet, geçerli bir lisansa ihtiyacınız var. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
-C: Aspose.Words for .NET'i kullanmak için aşağıdaki referansları içe aktarmanız gerekir:
+### OLE nesnesinin görünen adını nasıl özelleştirebilirim?
+ Ayarlayabilirsiniz`DisplayName` mülkiyeti`OlePackage` özelleştirmek için.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
+### Aspose.Words .NET Core ile uyumlu mu?
+Evet, Aspose.Words hem .NET Framework'ü hem de .NET Core'u destekler.
 
-#### S: Yeni bir belge ve belge oluşturucu nasıl oluşturulur?
-
- C: Kullanarak yeni bir belge oluşturabilirsiniz.`Document` sınıf ve bir belge oluşturucu kullanarak`DocumentBuilder` aşağıda gösterildiği gibi sınıf:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### S: OLE paketine sahip bir OLE nesnesi belgeye nasıl eklenir?
-
- C: Kullan`InsertOleObject` belge oluşturucunun yöntemi (`DocumentBuilder`) belgeye OLE paketi içeren bir OLE nesnesi eklemek için. Veri akışını, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin. İşte bir örnek :
-
-```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-```
-
-#### S: Belge nasıl kaydedilir?
-
- C: Belgeyi kullanın`Save`Belgeyi bir dosyaya kaydetme yöntemi. İşte bir örnek :
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-#### S: Aspose.Words for .NET ile OLE paketine OLE nesnesi eklemenin tam bir örneğini verebilir misiniz?
-
-C: Burada Aspose.Words for .NET kullanarak bir OLE paketiyle bir OLE nesnesi eklemek için tam bir örnek kod bulacaksınız. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-Bu, Aspose.Words for .NET kullanarak bir Word belgesine OLE paketi içeren bir OLE nesnesi ekleme konusundaki eğitimimizin sonuncusudur. Bu kodu projenize entegre etmek için gerekli referansları içe aktarmaktan ve açıklanan adımları takip etmekten çekinmeyin. Başka sorularınız varsa lütfen bizimle iletişime geçmekten çekinmeyin.
+### Katıştırılmış OLE nesnesini Word belgesinde düzenleyebilir miyim?
+Hayır, OLE nesnesini doğrudan Word'ün içinden düzenleyemezsiniz. Yerel uygulamasında açmanız gerekir.

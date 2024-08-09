@@ -15,7 +15,7 @@ Amikor dokumentumokkal dolgozik, különösen szakmai vagy tanulmányi célokra,
 
 Mielőtt elkezdené, néhány dolgot meg kell győződnie arról, hogy rendelkezik:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, akkor megteheti[töltse le a legújabb verziót innen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, akkor lehet[töltse le a legújabb verziót innen](https://releases.aspose.com/words/net/).
 2. .NET fejlesztői környezet: Szüksége lesz egy működő .NET fejlesztői környezetre, például a Visual Studiora.
 3. A C# alapvető ismerete: A C# programozási nyelv ismerete segít a könnyebb követésben.
 4. Word-dokumentum: Készítsen egy Word-dokumentumot, amelyet PDF-be konvertálhat.

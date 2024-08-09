@@ -9,7 +9,7 @@ url: /es/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 ## Introducción
 
-Crear un documento de Word mediante programación puede ser una tarea desalentadora, especialmente cuando necesita mantener el formato en varias páginas. ¿Alguna vez ha intentado crear una tabla en Word y se ha dado cuenta de que las filas del encabezado no se repiten en las páginas siguientes? ¡No temáis! Con Aspose.Words para .NET, puede asegurarse fácilmente de que los encabezados de sus tablas se repitan en cada página, brindando una apariencia profesional y pulida a sus documentos. En este tutorial, lo guiaremos a través de los pasos para lograr esto utilizando ejemplos de código simples y explicaciones detalladas. ¡Vamos a sumergirnos!
+Crear un documento de Word mediante programación puede ser una tarea desalentadora, especialmente cuando necesita mantener el formato en varias páginas. ¿Alguna vez ha intentado crear una tabla en Word y se ha dado cuenta de que las filas del encabezado no se repiten en las páginas siguientes? ¡No temas! Con Aspose.Words para .NET, puede asegurarse fácilmente de que los encabezados de sus tablas se repitan en cada página, brindando una apariencia profesional y pulida a sus documentos. En este tutorial, lo guiaremos a través de los pasos para lograr esto utilizando ejemplos de código simples y explicaciones detalladas. ¡Vamos a sumergirnos!
 
 ## Requisitos previos
 
@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Este bucle inserta 50 filas de datos en la tabla, con dos columnas en cada fila. El`HeadingFormat` se establece en`false` para estas filas, ya que no son filas de encabezado.
+ Este bucle inserta 50 filas de datos en la tabla, con dos columnas en cada fila. El`HeadingFormat` está configurado para`false` para estas filas, ya que no son filas de encabezado.
 
 ## Paso 4: guarde el documento
 
@@ -118,4 +118,4 @@ Esto guarda el documento con el nombre especificado en su directorio de document
  Sí, puede modificar las tablas existentes accediendo a ellas a través del`Document` objeto y aplicando un formato similar.
 
 ### ¿Qué otras opciones de formato de tabla están disponibles en Aspose.Words para .NET?
- Aspose.Words para .NET ofrece una amplia gama de opciones de formato de tablas, incluida la combinación de celdas, la configuración de bordes y la alineación de tablas. Revisar la[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Aspose.Words para .NET ofrece una amplia gama de opciones de formato de tablas, incluida la combinación de celdas, la configuración de bordes y la alineación de tablas. Mira el[documentación](https://reference.aspose.com/words/net/) para más detalles.

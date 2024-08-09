@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
-## introduzione
+## Introduzione
 
 Quando si lavora con file PDF, in particolare quelli generati da documenti Word contenenti grafica WMF (Windows Metafile), la gestione delle dimensioni può diventare un aspetto cruciale della gestione dei documenti. Un modo per controllare la dimensione del PDF è regolare il modo in cui i caratteri WMF vengono visualizzati all'interno del documento. In questo tutorial, esploreremo come ridurre le dimensioni del PDF ridimensionando i caratteri WMF alla dimensione del metafile utilizzando Aspose.Words per .NET.
 
@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- IL`MetafileRenderingOptions` fornisce opzioni su come vengono visualizzati i metafile (come WMF). IMPOSTANDO`ScaleWmfFontsToMetafileSize` A`false`, stai indicando ad Aspose.Words di non ridimensionare i caratteri in base alla dimensione del metafile, il che può aiutare a ridurre la dimensione complessiva del PDF.
+ IL`MetafileRenderingOptions` fornisce opzioni su come vengono visualizzati i metafile (come WMF). Impostando`ScaleWmfFontsToMetafileSize` A`false`, stai indicando ad Aspose.Words di non ridimensionare i caratteri in base alla dimensione del metafile, il che può aiutare a ridurre la dimensione complessiva del PDF.
 
 ## Passaggio 3: imposta le opzioni di salvataggio del PDF
 

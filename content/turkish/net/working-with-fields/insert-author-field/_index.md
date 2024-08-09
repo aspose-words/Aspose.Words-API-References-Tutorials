@@ -9,7 +9,7 @@ url: /tr/net/working-with-fields/insert-author-field/
 ---
 ## giriiş
 
-Bu derste, Aspose.Words for .NET kullanarak bir Word belgesine yazar alanının nasıl ekleneceğinin en ince ayrıntısına kadar inceliyoruz. İster işletmeniz için belge oluşturmayı otomatikleştiriyor olun ister yalnızca dosyalarınızı kişiselleştirmek istiyor olun, bu adım adım kılavuz ihtiyacınızı karşılayacaktır. Ortamınızın kurulmasından bitmiş belgenizin kaydedilmesine kadar her şeyin üzerinden geçeceğiz. Başlayalım!
+Bu derste, Aspose.Words for .NET kullanarak bir Word belgesine yazar alanının nasıl ekleneceğinin en ince ayrıntısına kadar inceliyoruz. İster işletmeniz için belge oluşturmayı otomatikleştiriyor olun ister yalnızca dosyalarınızı kişiselleştirmek istiyor olun, bu adım adım kılavuz ihtiyacınızı karşılayacaktır. Ortamınızın kurulmasından bitmiş belgenizin kaydedilmesine kadar her şeyin üzerinden geçeceğiz. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -116,7 +116,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla yazar alanı eklediniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla yazar alanı eklediniz.
 
 ## Çözüm
 
@@ -138,8 +138,8 @@ Aspose.Words ücretsiz deneme sürümü sunuyor ancak tüm özellikler ve ticari
 
 ### Aspose.Words'ü kullanarak başka türde alanlar ekleyebilir miyim?
 
- Evet, Aspose.Words tarih, saat, sayfa numarası ve daha fazlasını içeren çeşitli alan türlerini destekler. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) detaylar için.
+ Evet, Aspose.Words tarih, saat, sayfa numarası ve daha fazlasını içeren çeşitli alan türlerini destekler. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) ayrıntılar için.
 
-### Sorunlarla karşılaşırsam nereden destek bulabilirim?
+### Sorunla karşılaşırsam nereden destek bulabilirim?
 
  Aspose.Words forumunda destek bulabilirsiniz[Burada](https://forum.aspose.com/c/words/8).

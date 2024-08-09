@@ -37,7 +37,7 @@ using Aspose.Words.Settings;
 
 定義一個字串變數`dataDir`儲存文檔目錄的路徑。將“您的文件目錄”替換為實際位置。
 
-創建兩個`Document`物件使用`Aspose.Words.Document`構造函數。第一個 （`srcDoc`) 將儲存包含要附加的內容的來源文件。第二 （`dstDoc`) 代表目標文檔，我們將在其中將來源內容與重新啟動的頁碼整合。
+創建兩個`Document`物件使用`Aspose.Words.Document`構造函數。第一個（`srcDoc`) 將儲存包含要附加的內容的來源文件。第二個（`dstDoc`) 代表目標文檔，我們將在其中將來源內容與重新啟動的頁碼整合。
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; //替換為你的實際目錄
@@ -71,7 +71,7 @@ srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 
 僱用`AppendDocument`目標文檔的方法（`dstDoc`）無縫添加來源內容。
 
-傳遞來源文檔（`srcDoc` ） 和`ImportFormatMode.KeepSourceFormatting`此方法的參數。此參數在附加時保留來源文件的原始格式。
+傳遞來源文檔（`srcDoc` ）和一個`ImportFormatMode.KeepSourceFormatting`此方法的參數。此參數在附加時保留來源文件的原始格式。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

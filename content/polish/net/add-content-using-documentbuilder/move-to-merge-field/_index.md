@@ -9,7 +9,7 @@ url: /pl/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 ## Wstęp
 
-No hej! Czy zdarzyło Ci się kiedyś zakopać w dokumencie programu Word i zastanawiać się, jak przejść do określonego pola scalania? To jak być w labiryncie bez mapy, prawda? Cóż, nie martw się więcej! Dzięki Aspose.Words dla .NET możesz płynnie przejść do pola scalania w swoim dokumencie. Niezależnie od tego, czy generujesz raporty, tworzysz spersonalizowane listy, czy po prostu automatyzujesz dokumenty programu Word, ten przewodnik przeprowadzi Cię krok po kroku przez cały proces. Zanurzmy się!
+Hej tam! Czy zdarzyło Ci się kiedyś zakopać w dokumencie programu Word i zastanawiać się, jak przejść do określonego pola scalania? To jak być w labiryncie bez mapy, prawda? Cóż, nie martw się więcej! Dzięki Aspose.Words dla .NET możesz płynnie przejść do pola scalania w swoim dokumencie. Niezależnie od tego, czy generujesz raporty, tworzysz spersonalizowane listy, czy po prostu automatyzujesz dokumenty programu Word, ten przewodnik przeprowadzi Cię krok po kroku przez cały proces. Zanurzmy się!
 
 ## Warunki wstępne
 

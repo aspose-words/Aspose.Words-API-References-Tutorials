@@ -2,95 +2,91 @@
 title: 在 Word 文件中插入 Ole 物件作為圖標
 linktitle: 在 Word 文件中插入 Ole 物件作為圖標
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中插入 OLE 物件作為圖示。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中插入 OLE 物件作為圖示。請按照我們的逐步指南來增強您的文件。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon/
 ---
+## 介紹
 
-以下是解釋 C# 原始程式碼的逐步指南，說明如何使用 Aspose.Words for .NET 在 Word 文件中插入 OLE 物件作為圖示。
+您是否曾經需要將 OLE 物件（如 PowerPoint 簡報或 Excel 試算表）嵌入到 Word 文件中，但希望它顯示為整潔的小圖示而不是完整的物件？嗯，您來對地方了！在本教學中，我們將引導您了解如何使用 Aspose.Words for .NET 在 Word 文件中插入 OLE 物件作為圖示。閱讀本指南後，您將能夠將 OLE 物件無縫整合到文件中，使它們更具互動性和視覺吸引力。
 
-## 第 1 步：導入必要的參考文獻
-在開始之前，請確保您已將使用 Aspose.Words for .NET 所需的參考匯入到您的專案中。這包括匯入 Aspose.Words 庫並將所需的命名空間新增至來源檔案。
+## 先決條件
+
+在我們深入了解具體細節之前，讓我們先介紹一下您的需求：
+
+1.  Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET。如果您還沒有安裝，可以從以下地址下載[Aspose 發佈頁面](https://releases.aspose.com/words/net/).
+2. 開發環境：您需要一個整合開發環境（IDE），例如 Visual Studio。
+3. C# 基礎知識：對 C# 程式設計的基本了解會很有幫助。
+
+## 導入命名空間
+
+首先，您需要匯入必要的名稱空間。這對於存取 Aspose.Words 函式庫函數至關重要。
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## 步驟 2：建立新文檔和文檔產生器
-在此步驟中，我們將使用以下命令建立一個新文檔`Document`類別和文檔產生器使用`DocumentBuilder`班級。
+## 第 1 步：建立一個新文檔
+
+首先，您需要建立一個新的 Word 文件實例。
 
 ```csharp
+//文檔目錄的路徑
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 步驟 3：插入 OLE 物件作為圖標
-使用文件產生器`InsertOleObjectAsIcon`方法將 OLE 物件作為圖示插入到文件中。指定 OLE 檔案路徑、顯示標誌、圖示路徑和嵌入物件名稱。
+此程式碼片段初始化一個新的 Word 文件和一個用於建立文件內容的 DocumentBuilder 物件。
+
+## 步驟 2：插入 OLE 物件作為圖標
+
+現在，讓我們將 OLE 物件作為圖示插入。這`InsertOleObjectAsIcon`DocumentBuilder 類別的方法用於此目的。
 
 ```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
+builder.InsertOleObjectAsIcon("path_to_your_presentation.pptx", false, "path_to_your_icon.ico", "My embedded file");
 ```
 
-## 步驟 4：儲存文檔
-使用文件的`Save`將文件儲存到文件的方法。
+我們來分解一下這個方法：
+- `"path_to_your_presentation.pptx"`：這是您要嵌入的 OLE 物件的路徑。
+- `false` ：此佈林參數指定是否將 OLE 物件顯示為圖示。因為我們想要一個圖標，所以我們將其設置為`false`.
+- `"path_to_your_icon.ico"`：這是要用於 OLE 物件的圖示檔案的路徑。
+- `"My embedded file"`：這是將出現在圖示下方的標籤。
+
+## 第 3 步：儲存文檔
+
+最後，您需要儲存文件。選擇要儲存檔案的目錄。
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 ```
 
-### 使用 Aspose.Words for .NET 將 OLE 物件作為圖示插入的範例原始程式碼
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
-
-這是一個完整的程式碼範例，用於使用 Aspose.Words for .NET 將 OLE 物件插入圖示為圖示。請務必匯入必要的引用並按照前面描述的步驟將此程式碼整合到您的專案中。
+這行程式碼將文件儲存到指定路徑。
 
 ## 結論
 
-總之，我們探索了使用 Aspose.Words for .NET 在 Word 文件中插入 OLE 物件作為圖示的逐步指南。
+恭喜！您已經成功學習如何使用 Aspose.Words for .NET 在 Word 文件中插入 OLE 物件作為圖示。這種技術不僅有助於嵌入複雜的對象，還可以保持文件整潔和專業。
 
-透過執行這些步驟，您將能夠使用 Aspose.Words for .NET 在 Word 文件中成功插入 OLE 物件作為圖示。請務必匯入必要的參考並仔細按照說明進行操作，以獲得所需的結果。
+## 常見問題解答
 
-### 在 Word 文件中插入 ole 物件作為圖示的常見問題解答
+### 我可以透過此方法使用不同類型的 OLE 物件嗎？
 
-#### Q：使用 Aspose.Words for .NET 在 Word 文件中插入 OLE 物件作為圖示需要哪些參考？
+是的，您可以嵌入各種類型的 OLE 對象，例如 Excel 試算表、PowerPoint 簡報，甚至 PDF。
 
-答：您需要將以下引用匯入到您的專案中才能使用 Aspose.Words for .NET：
+### 如何獲得 Aspose.Words for .NET 的免費試用版？
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-```
+您可以從以下網站獲得免費試用[Aspose 發佈頁面](https://releases.aspose.com/).
 
-#### Q：如何在 Aspose.Words for .NET 中建立新文件和文件產生器？
+### 什麼是 OLE 物件？
 
-答：您可以使用以下命令建立一個新文檔`Document`類別和文檔產生器使用`DocumentBuilder`班級。這是一個例子：
+OLE（物件連結和嵌入）是 Microsoft 開發的技術，允許嵌入和連結到文件和其他物件。
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
 
-#### Q：如何在文件中插入 OLE 物件作為圖示？
+是的，Aspose.Words for .NET 需要授權。您可以從[Aspose購買頁面](https://purchase.aspose.com/buy)或得到一個[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
 
- A：使用文件產生器`InsertOleObjectAsIcon`方法插入 OLE 物件作為圖示。指定 OLE 檔案路徑、顯示標誌、圖示路徑和嵌入物件名稱。這是一個例子：
+### 在哪裡可以找到更多關於 Aspose.Words for .NET 的教學？
 
-```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-```
-
-#### Q：如何儲存以圖示形式插入的 OLE 物件的文件？
-
-答：使用文檔`Save`將文件儲存到文件的方法。這是一個例子：
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
+您可以在以下位置找到更多教學課程和文檔[Aspose 文件頁面](https://reference.aspose.com/words/net/).

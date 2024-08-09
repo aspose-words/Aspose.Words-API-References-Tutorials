@@ -99,9 +99,9 @@ Après avoir exécuté votre application, accédez au répertoire spécifié et 
 
 ## Conclusion
 
-Et voila! Vous avez défini avec succès le niveau de compression d'un document Word à l'aide d'Aspose.Words pour .NET. Cela peut réduire considérablement la taille du fichier et améliorer les performances lorsque vous travaillez avec des documents volumineux. N'oubliez pas d'explorer d'autres niveaux de compression pour trouver le meilleur équilibre entre taille de fichier et performances pour vos besoins.
+Et voilà ! Vous avez défini avec succès le niveau de compression d'un document Word à l'aide d'Aspose.Words pour .NET. Cela peut réduire considérablement la taille du fichier et améliorer les performances lorsque vous travaillez avec des documents volumineux. N'oubliez pas d'explorer d'autres niveaux de compression pour trouver le meilleur équilibre entre taille de fichier et performances pour vos besoins.
 
-Si vous avez des questions ou rencontrez des problèmes, consultez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou contactez leur[Forum d'entraide](https://forum.aspose.com/c/words/8).
+Si vous avez des questions ou rencontrez des problèmes, consultez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou contactez leur[Forum d'assistance](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 
@@ -123,4 +123,4 @@ Oui, Aspose.Words for .NET prend en charge la compression pour divers formats de
 
 ### Où puis-je obtenir de l'aide si je rencontre des problèmes ?
 
- Vous pouvez obtenir le soutien de la communauté Aspose en visitant leur[Forum d'entraide](https://forum.aspose.com/c/words/8).
+ Vous pouvez obtenir le soutien de la communauté Aspose en visitant leur[Forum d'assistance](https://forum.aspose.com/c/words/8).

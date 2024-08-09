@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à restituer des effets DML 3D dans un document PDF à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez convertir vos documents Word avec des effets 3D avancés en superbes PDF, rendant vos documents plus attrayants et visuellement attrayants. Cette fonctionnalité puissante d'Aspose.Words peut améliorer considérablement la qualité de présentation de vos documents.
+Félicitations! Vous avez réussi à restituer des effets DML 3D dans un document PDF à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez convertir vos documents Word avec des effets 3D avancés en superbes PDF, rendant vos documents plus attrayants et visuellement attrayants. Cette fonctionnalité puissante d'Aspose.Words peut améliorer considérablement la qualité de présentation de vos documents.
 
 ## FAQ
 

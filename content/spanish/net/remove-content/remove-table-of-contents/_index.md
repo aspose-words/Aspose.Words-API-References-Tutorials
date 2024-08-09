@@ -89,7 +89,7 @@ Aspose.Words para .NET es una biblioteca .NET sólida para la manipulación de d
 
 ### ¿Puedo utilizar Aspose.Words gratis?
 
- Sí, puedes usar Aspose.Words con un[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
+ Sí, puedes usar Aspose.Words con un[prueba gratuita](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
 ### ¿Es posible eliminar otros campos usando Aspose.Words?
 

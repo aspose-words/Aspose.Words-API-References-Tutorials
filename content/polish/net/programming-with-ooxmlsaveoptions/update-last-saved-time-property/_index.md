@@ -15,7 +15,7 @@ Czy zastanawiałeś się kiedyś, jak programowo śledzić ostatnią zaoszczędz
 
 Zanim przejdziemy do przewodnika krok po kroku, będziesz potrzebować kilku rzeczy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: środowisko programistyczne, takie jak Visual Studio.
 3. Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstaw programowania w języku C#.
 

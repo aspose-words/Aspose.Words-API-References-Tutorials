@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/split-document/merge-documents/
 ---
-## Úvod
+## Zavedení
 
 Přistihli jste se někdy, že potřebujete sloučit více dokumentů Wordu do jednoho soudržného souboru? Ať už sestavujete zprávy, sestavujete projekt nebo se jen snažíte uklidit, sloučení dokumentů vám může ušetřit spoustu času a úsilí. S Aspose.Words pro .NET se tento proces stává hračkou. V tomto tutoriálu si projdeme, jak sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET, přičemž si rozebereme jednotlivé kroky, abyste je mohli snadno sledovat. Na konci budete slučovat dokumenty jako profesionál!
 
@@ -16,7 +16,7 @@ Přistihli jste se někdy, že potřebujete sloučit více dokumentů Wordu do j
 Než se ponoříme, ujistěte se, že máte vše, co potřebujete:
 
 1. Základní znalost C#: Měli byste být spokojeni se syntaxí a koncepty C#.
-2.  Aspose.Words pro .NET: Stáhněte si ji[tady](https://releases.aspose.com/words/net/) . Pokud teprve zkoumáte, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
+2.  Aspose.Words pro .NET: Stáhněte si ji[zde](https://releases.aspose.com/words/net/) . Pokud teprve zkoumáte, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
 3. Visual Studio: Jakákoli nejnovější verze by měla fungovat, ale doporučujeme nejnovější verzi.
 4. .NET Framework: Ujistěte se, že je ve vašem systému nainstalováno.
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Jak zvládnu různé formátování během slučování?
 
- Aspose.Words poskytuje různé režimy formátu sloučení, jako je`KeepSourceFormatting`a`MergeFormatting` Odkazovat na[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
+ Aspose.Words poskytuje různé režimy formátu sloučení, jako je`KeepSourceFormatting`a`MergeFormatting` Viz[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
 
 ### Jak získám podporu pro Aspose.Words for .NET?
 

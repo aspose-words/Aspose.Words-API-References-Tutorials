@@ -104,4 +104,4 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 Para documentos grandes, considere procesar páginas en lotes para administrar el uso de la memoria de manera efectiva.
 
 ### ¿Dónde puedo encontrar más información sobre Aspose.Words para .NET?  
- Revisar la[documentación](https://reference.aspose.com/words/net/) para guías completas y ejemplos.
+ Mira el[documentación](https://reference.aspose.com/words/net/) para guías completas y ejemplos.

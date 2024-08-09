@@ -128,7 +128,7 @@ doc.save("output.txt", saveOptions);
 
 ### Как добавить метки биди к текстовому выводу?
 
- Чтобы добавить метки биди к текстовому выводу, установите`AddBidiMarks` свойство`TxtSaveOptions` к`true`. Например:
+ Чтобы добавить метки биди к текстовому выводу, установите`AddBidiMarks` собственность`TxtSaveOptions` к`true`. Например:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -137,7 +137,7 @@ saveOptions.setAddBidiMarks(true);
 
 ### Могу ли я настроить символ отступа списка?
 
- Да, вы можете настроить символ отступа списка, настроив`ListIndentation` свойство`TxtSaveOptions`. Например, чтобы использовать символ табуляции для отступа списка, вы можете сделать следующее:
+ Да, вы можете настроить символ отступа списка, настроив`ListIndentation` собственность`TxtSaveOptions`. Например, чтобы использовать символ табуляции для отступа списка, вы можете сделать следующее:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();

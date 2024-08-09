@@ -9,7 +9,7 @@ url: /ja/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 ## 導入
 
-こんにちは、技術愛好家の皆さん！ Aspose.Words for .NET を使用して、グラフで複数行のラベルの配置をチェックする方法を知りたくて、頭を悩ませたことはありませんか？ 今、うなずいているなら、あなたは正しい場所にいます！ この包括的なガイドでは、このプロセスの隅々まで説明します。 前提条件の設定からコーディングの細部まで深く掘り下げるまで、私たちがカバーします。 では、コーヒーを一杯飲み、くつろいで、さっそく始めましょう！
+こんにちは、技術愛好家の皆さん。Aspose.Words for .NET を使用して、グラフで複数行のラベルの配置をチェックする方法を知りたくて、頭を悩ませたことはありませんか。今、うなずいているなら、あなたは正しい場所にいます。この包括的なガイドでは、このプロセスの隅々まで説明します。前提条件の設定からコーディングの細部まで深く掘り下げるまで、私たちがカバーします。では、コーヒーを一杯飲み、ゆっくり座って、さっそく始めましょう。
 
 ## 前提条件
 
@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 次は魔法の登場です! 複数行のラベルの目盛りラベルの配置を設定します。
 
-をセットする`TickLabelAlignment`軸の特性`ParagraphAlignment.Right`.
+設定する`TickLabelAlignment`軸の特性`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -124,4 +124,4 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### Aspose.Words for .NET のシステム要件は何ですか?
 
- Aspose.Words for .NETには.NET環境が必要です。具体的なシステム要件については、[ドキュメンテーション](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NETには.NET環境が必要です。具体的なシステム要件については、[ドキュメント](https://reference.aspose.com/words/net/).

@@ -20,7 +20,7 @@ url: /zh-hant/net/add-content-using-documentbuilder/move-to-paragraph/
 3. .NET Framework：確保您已安裝 .NET Framework。
 4. Word 文件：您需要一個範例 Word 文件才能使用。
 
-東西都齊全了嗎？偉大的！讓我們繼續。
+東西都齊全了嗎？偉大的！讓我們繼續吧。
 
 ## 導入命名空間
 
@@ -74,7 +74,7 @@ builder.Writeln("This is the 3rd paragraph.");
 
 ## 結論
 
-現在你就擁有了！使用 Aspose.Words for .NET 移動到 Word 文件中的特定段落非常簡單。只需幾行程式碼，您就可以自動化文件編輯過程並節省大量時間。因此，下次您需要以程式設計方式瀏覽文件時，您將確切地知道該怎麼做。
+現在你就得到它了！使用 Aspose.Words for .NET 移動到 Word 文件中的特定段落非常簡單。只需幾行程式碼，您就可以自動化文件編輯過程並節省大量時間。因此，下次您需要以程式設計方式瀏覽文件時，您將確切地知道該怎麼做。
 
 ## 常見問題解答
 

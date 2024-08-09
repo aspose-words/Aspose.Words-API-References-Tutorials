@@ -20,13 +20,13 @@ Antes de nos aprofundarmos nos aspectos técnicos, vamos entender os conceitos f
 
 ### Tipos de proteção de documentos
 
-- #### Proteção de senha:
+- #### Proteção por senha:
  Restrinja o acesso aos seus documentos com uma senha, garantindo que apenas usuários autorizados possam abri-los e visualizá-los.
 - #### Criptografia:
  Converta o conteúdo do documento em um formato embaralhado usando algoritmos de criptografia, tornando-o indecifrável sem a chave de descriptografia correta.
-- #### Assinaturas digitais:
+- #### Assinaturas Digitais:
  Anexe assinaturas digitais para verificar a autenticidade e integridade do documento.
-- #### Marca d’água:
+- #### Marca d'água:
  Sobreponha marcas d'água visíveis ou invisíveis para indicar propriedade ou confidencialidade.
 - #### Redação:
  Remova permanentemente informações confidenciais do documento.
@@ -40,7 +40,7 @@ A criptografia de documentos fornece uma camada adicional de segurança, tornand
 Antes de prosseguirmos com a segurança de documentos, vamos primeiro nos familiarizar com Aspose.Words for Java. É uma biblioteca rica em recursos que permite aos desenvolvedores Java criar, modificar e converter documentos do Word programaticamente. Para começar:
 
 1. ### Baixe Aspose.Words para Java:
-  Visite a[Aspose.Lançamentos](https://releases.aspose.com/words/java/) e baixe a versão mais recente do Aspose.Words para Java.
+  Visite o[Aspose.Lançamentos](https://releases.aspose.com/words/java/) e baixe a versão mais recente do Aspose.Words para Java.
 
 2. ### Instale a biblioteca:
  Assim que o download for concluído, siga as instruções de instalação para configurar o Aspose.Words em seu projeto Java.
@@ -50,7 +50,7 @@ Antes de prosseguirmos com a segurança de documentos, vamos primeiro nos famili
 Instalar Aspose.Words for Java é um processo simples. Siga estas etapas simples para adicionar a biblioteca ao seu projeto Java:
 
 1. ### Download:
-  Vou ao[Aspose.Lançamentos](https://releases.aspose.com/words/java/) e baixe o pacote Aspose.Words para Java.
+  Vá para o[Aspose.Lançamentos](https://releases.aspose.com/words/java/) e baixe o pacote Aspose.Words para Java.
 
 2. ### Extrair:
  Extraia o pacote baixado em um local conveniente em seu computador.
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 A marca d'água pode ajudar a proteger a confidencialidade do seu documento e indicar seu status. Aspose.Words for Java oferece recursos de marca d'água fáceis de usar:
 
 ```java
-// Adicione uma marca d'água visível
+// Adicione uma marca d’água visível
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);
@@ -199,7 +199,7 @@ Depois de aplicar medidas de segurança, teste minuciosamente seus documentos pa
 
 ## 14. Conclusão
 
-Neste guia passo a passo, exploramos a importância da segurança dos documentos e como o Aspose.Words for Java pode ajudar a proteger seus documentos contra acesso não autorizado. Ao aproveitar os recursos da biblioteca, como proteção por senha, criptografia, assinaturas digitais, marca d’água e redação, você pode garantir que seus documentos permaneçam seguros e protegidos.
+Neste guia passo a passo, exploramos a importância da segurança dos documentos e como o Aspose.Words for Java pode ajudar a proteger seus documentos contra acesso não autorizado. Ao aproveitar os recursos da biblioteca, como proteção por senha, criptografia, assinaturas digitais, marca d'água e redação, você pode garantir que seus documentos permaneçam seguros e protegidos.
 
 ## Perguntas frequentes
 

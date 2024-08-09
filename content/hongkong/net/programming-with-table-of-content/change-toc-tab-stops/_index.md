@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
 ## 介紹
 
-有沒有想過如何讓 Word 文件中的目錄 (TOC) 變得生動活潑？也許您希望這些製表位能夠完美對齊以達到專業的風格。您來對地方了！今天，我們將深入探討如何使用 Aspose.Words for .NET 變更 TOC 製表位。堅持下去，我保證你會帶著所有的專業知識離開，讓你的 TOC 看起來時髦和整潔。
+有沒有想過如何讓 Word 文件中的目錄 (TOC) 變得生動活潑？也許您希望這些製表位能夠完美對齊以達到專業的風格。您來對地方了！今天，我們將深入探討如何使用 Aspose.Words for .NET 變更 TOC 製表位。堅持下去，我保證您會帶著所有的專業知識離開，讓您的 TOC 看起來時髦而整潔。
 
 ## 先決條件
 
@@ -19,7 +19,7 @@ url: /zh-hant/net/programming-with-table-of-content/change-toc-tab-stops/
 2. 開發環境：Visual Studio 或任何 C# 相容 IDE。
 3. Word 文件：具體來說，是包含目錄的文件。
 
-明白了嗎？驚人的！來吧。
+明白了嗎？驚人的！讓我們滾吧。
 
 ## 導入命名空間
 
@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ## 常見問題解答
 
 ### 我可以分別修改不同目錄層級的製表位嗎？
-是的你可以！只需檢查每個特定的 TOC 等級（Toc1、Toc2 等）並進行相應調整。
+是的，你可以！只需檢查每個特定的 TOC 等級（Toc1、Toc2 等）並進行相應調整。
 
 ### 如果我的文件有多個目錄怎麼辦？
 程式碼會掃描所有 TOC 樣式的段落，因此它將修改文件中存在的所有 TOC。

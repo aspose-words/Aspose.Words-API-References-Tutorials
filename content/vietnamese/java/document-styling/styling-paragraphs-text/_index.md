@@ -9,7 +9,7 @@ url: /vi/java/document-styling/styling-paragraphs-text/
 ---
 ## Giới thiệu
 
-Khi nói đến thao tác và định dạng tài liệu theo chương trình trong Java, Aspose.Words for Java là lựa chọn hàng đầu của các nhà phát triển. API mạnh mẽ này cho phép bạn tạo, chỉnh sửa và tạo kiểu cho các đoạn văn và văn bản trong tài liệu của mình một cách dễ dàng. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn quy trình tạo kiểu cho đoạn văn và văn bản bằng Aspose.Words cho Java. Cho dù bạn là một nhà phát triển dày dặn kinh nghiệm hay chỉ mới bắt đầu, hướng dẫn từng bước với mã nguồn này sẽ trang bị cho bạn kiến thức và kỹ năng cần thiết để thành thạo việc định dạng tài liệu. Hãy đi sâu vào!
+Khi nói đến thao tác và định dạng tài liệu theo chương trình trong Java, Aspose.Words for Java là lựa chọn hàng đầu của các nhà phát triển. API mạnh mẽ này cho phép bạn tạo, chỉnh sửa và tạo kiểu cho các đoạn văn và văn bản trong tài liệu của mình một cách dễ dàng. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn quy trình tạo kiểu cho đoạn văn và văn bản bằng Aspose.Words cho Java. Cho dù bạn là một nhà phát triển dày dặn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước với mã nguồn này sẽ trang bị cho bạn kiến thức và kỹ năng cần thiết để thành thạo việc định dạng tài liệu. Hãy đi sâu vào!
 
 ## Tìm hiểu Aspose.Words cho Java
 
@@ -282,7 +282,7 @@ doc.save("PageLayoutDocument.docx");
 
 Trong ví dụ này, chúng tôi đặt lề bằng nhau 1 inch cho tất cả các cạnh của trang.
 
-## Đầu trang và cuối trang
+## Đầu trang và chân trang
 
 Đầu trang và chân trang rất cần thiết để thêm thông tin nhất quán vào từng trang trong tài liệu của bạn. Sau đây là cách làm việc với đầu trang và chân trang:
 
@@ -359,7 +359,7 @@ doc.save("Document.pdf", SaveFormat.PDF);
 
 Đoạn mã này lưu tài liệu dưới dạng tệp PDF.
 
-## Các tính năng tiên tiến
+## Tính năng nâng cao
 
 Aspose.Words for Java cung cấp các tính năng nâng cao để thao tác tài liệu phức tạp. Chúng bao gồm trộn thư, so sánh tài liệu và hơn thế nữa. Khám phá tài liệu để được hướng dẫn chuyên sâu về các chủ đề nâng cao này.
 

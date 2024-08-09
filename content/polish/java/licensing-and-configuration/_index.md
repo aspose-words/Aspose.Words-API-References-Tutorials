@@ -19,7 +19,7 @@ Rozpoczynając podróż w celu wykorzystania Aspose.Words dla Java, pierwszym kr
 
 3.  Zintegruj licencję: Aby włączyć Aspose.Words, zintegruj licencję z aplikacją Java. Zwykle wiąże się to z załadowaniem pliku licencji i zastosowaniem go do Aspose.Words. Patrz[Dokumentacja API](https://reference.aspose.com/words/java/) szczegółowe próbki kodu.
 
-## Ustawienia konfiguracji
+## Ustawienia konfiguracyjne
 
 Kiedy już posiadasz licencję na Aspose.Words, czas skonfigurować ją tak, aby spełniała Twoje specyficzne potrzeby. Ustawienia konfiguracyjne pozwalają dostosować zachowanie zestawu narzędzi. Oto kilka kluczowych aspektów, które należy wziąć pod uwagę:
 
@@ -33,7 +33,7 @@ Kiedy już posiadasz licencję na Aspose.Words, czas skonfigurować ją tak, aby
 
 Dostosowując te ustawienia, możesz dostosować Aspose.Words dokładnie do wymagań Twojego projektu.
 
-Licencjonowanie i konfigurowanie Aspose.Words dla Java to podstawowy aspekt efektywnego wykorzystania tego potężnego zestawu narzędzi. Dzięki odpowiednim ustawieniom licencji i konfiguracji możesz bezproblemowo zintegrować możliwości przetwarzania dokumentów z aplikacjami Java. Wykorzystaj pełny potencjał Aspose.Words i przenieś swoje zadania związane z zarządzaniem dokumentami na nowy poziom.
+Licencjonowanie i konfigurowanie Aspose.Words dla Java to podstawowy aspekt efektywnego wykorzystania tego potężnego zestawu narzędzi. Dzięki odpowiednim ustawieniom licencji i konfiguracji możesz bezproblemowo zintegrować możliwości przetwarzania dokumentów z aplikacjami Java. Wykorzystaj pełny potencjał Aspose.Words i wynieś swoje zadania związane z zarządzaniem dokumentami na nowy poziom.
 
  Pamiętaj, że szczegółowe przykłady kodu i dalsze wskazówki można znaleźć w artykule[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/). Rozpocznij swoją podróż już dziś i odblokuj świat możliwości, jakie Aspose.Words oferuje programistom Java.
 

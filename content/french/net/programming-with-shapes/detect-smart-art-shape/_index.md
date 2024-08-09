@@ -21,7 +21,7 @@ Avant d'entrer dans les détails, assurons-nous que tout est configuré :
 3. Visual Studio : toute version récente devrait fonctionner, mais la dernière version est recommandée.
 4. .NET Framework : assurez-vous qu'il est installé sur votre système.
 
-Prêt à commencer? Génial! Allons-y directement.
+Prêt à commencer ? Génial! Allons-y directement.
 
 ## Importer des espaces de noms
 
@@ -80,7 +80,7 @@ Remplacez « X » par le nombre réel de formes SmartArt dans votre document.
 
 ## Conclusion
 
-Et voila! Vous avez appris avec succès comment détecter les formes SmartArt dans les documents Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert la configuration de votre environnement, le chargement de documents, la détection de formes SmartArt et l'exécution du code. Aspose.Words offre un large éventail de fonctionnalités, alors assurez-vous d'explorer le[Documentation API](https://reference.aspose.com/words/net/) pour libérer tout son potentiel.
+Et voilà ! Vous avez appris avec succès comment détecter les formes SmartArt dans les documents Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert la configuration de votre environnement, le chargement de documents, la détection de formes SmartArt et l'exécution du code. Aspose.Words offre un large éventail de fonctionnalités, alors assurez-vous d'explorer le[Documentation API](https://reference.aspose.com/words/net/) pour libérer tout son potentiel.
 
 ## FAQ
 
@@ -94,7 +94,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 
 ### 3. Comment détecter d'autres types de formes dans un document ?
 
- Vous pouvez modifier la requête LINQ pour rechercher d'autres propriétés ou types de formes. Se référer au[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Vous pouvez modifier la requête LINQ pour rechercher d'autres propriétés ou types de formes. Référez-vous au[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
 
@@ -102,4 +102,4 @@ Vous pouvez obtenir de l'aide en visitant le[Forum d'assistance Aspose](https://
 
 ### 5. Puis-je manipuler les formes SmartArt par programmation ?
 
- Oui, Aspose.Words vous permet de manipuler des formes SmartArt par programme. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour des instructions détaillées.
+ Oui, Aspose.Words vous permet de manipuler des formes SmartArt par programme. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour des instructions détaillées.

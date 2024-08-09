@@ -67,7 +67,7 @@ Trích xuất văn bản
 string text = doc.Range.Text;
 ```
 
- Các`Range.Text` thuộc tính cung cấp cho bạn tất cả văn bản có trong phạm vi của tài liệu. Điều này bao gồm văn bản từ tất cả các phần, đầu trang, chân trang và nội dung chính.
+ các`Range.Text` thuộc tính cung cấp cho bạn tất cả văn bản có trong phạm vi của tài liệu. Điều này bao gồm văn bản từ tất cả các phần, đầu trang, chân trang và nội dung chính.
 
 ## Bước 4: Hiển thị văn bản được trích xuất
 
@@ -84,7 +84,7 @@ Bước này in văn bản được trích xuất ra bảng điều khiển, cho
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Việc trích xuất văn bản từ tài liệu Word bằng Aspose.Words cho .NET thật đơn giản khi bạn chia nó thành các bước đơn giản sau. Bằng cách làm theo hướng dẫn này, bạn có thể tự động hóa quá trình trích xuất văn bản trong các ứng dụng .NET của mình, tiết kiệm thời gian và công sức.
+Và bạn có nó! Việc trích xuất văn bản từ tài liệu Word bằng Aspose.Words cho .NET thật đơn giản khi bạn chia nó thành các bước đơn giản sau. Bằng cách làm theo hướng dẫn này, bạn có thể tự động hóa quá trình trích xuất văn bản trong các ứng dụng .NET của mình, tiết kiệm thời gian và công sức.
 
 ## Câu hỏi thường gặp
 

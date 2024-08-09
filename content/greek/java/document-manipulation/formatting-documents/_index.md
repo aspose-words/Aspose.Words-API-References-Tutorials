@@ -157,7 +157,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 ```
 
 
-## συμπέρασμα
+## Σύναψη
 
  Σε αυτό το άρθρο, εξερευνήσαμε διάφορες πτυχές της μορφοποίησης εγγράφων στο Aspose.Words για Java. Οπλισμένοι με αυτές τις πληροφορίες, μπορείτε να δημιουργήσετε όμορφα μορφοποιημένα έγγραφα για τις εφαρμογές σας Java. Θυμηθείτε να ανατρέξετε στο[Aspose.Words για τεκμηρίωση Java](https://reference.aspose.com/words/java/) για πιο εμπεριστατωμένη καθοδήγηση.
 
@@ -165,7 +165,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ### Πώς μπορώ να κατεβάσω το Aspose.Words για Java;
 
- Μπορείτε να κάνετε λήψη του Aspose.Words για Java από[αυτός ο σύνδεσμος](https://releases.aspose.com/words/java/).
+ Μπορείτε να κάνετε λήψη του Aspose.Words για Java από[αυτόν τον σύνδεσμο](https://releases.aspose.com/words/java/).
 
 ### Είναι το Aspose.Words για Java κατάλληλο για τη δημιουργία πολύπλοκων εγγράφων;
 

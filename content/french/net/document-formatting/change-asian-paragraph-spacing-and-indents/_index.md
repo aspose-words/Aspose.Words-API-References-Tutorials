@@ -9,13 +9,13 @@ url: /fr/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 ## Introduction
 
-Salut! Vous êtes-vous déjà demandé comment modifier l'espacement et les retraits dans un document Word, en particulier lorsqu'il s'agit de typographie asiatique ? Si vous travaillez avec des documents incluant des langues comme le chinois, le japonais ou le coréen, vous avez peut-être remarqué que les paramètres par défaut ne suffisent pas toujours. N'ayez crainte ! Dans ce didacticiel, nous verrons comment modifier l'espacement et le retrait des paragraphes asiatiques à l'aide d'Aspose.Words pour .NET. C'est plus facile que vous ne le pensez et cela peut donner à vos documents un aspect beaucoup plus professionnel. Prêt à égayer la mise en forme de vos documents ? Commençons!
+Salut! Vous êtes-vous déjà demandé comment modifier l'espacement et les retraits dans un document Word, en particulier lorsqu'il s'agit de typographie asiatique ? Si vous travaillez avec des documents incluant des langues comme le chinois, le japonais ou le coréen, vous avez peut-être remarqué que les paramètres par défaut ne suffisent pas toujours. N'ayez crainte ! Dans ce didacticiel, nous verrons comment modifier l'espacement et le retrait des paragraphes asiatiques à l'aide d'Aspose.Words pour .NET. C'est plus facile que vous ne le pensez et cela peut donner à vos documents un aspect beaucoup plus professionnel. Prêt à égayer la mise en forme de vos documents ? Commençons !
 
 ## Conditions préalables
 
 Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin pour suivre :
 
-1.  Bibliothèque Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Si ce n'est pas déjà fait, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Bibliothèque Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Si ce n'est pas déjà fait, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : vous avez besoin d’un environnement de développement mis en place. Visual Studio est un choix populaire pour le développement .NET.
 3. Un document Word : préparez un document Word avec lequel vous pourrez jouer. Nous utiliserons un exemple de document nommé "Asian typography.docx".
 4. Connaissance de base de C# : Vous devez être familier avec la programmation C# pour suivre les exemples de code.
@@ -75,7 +75,7 @@ format.LineUnitBefore = 5;  // ParagraphFormat.SpaceBefore sera mis à jour
 format.LineUnitAfter = 10;  // ParagraphFormat.SpaceAfter sera mis à jour
 ```
 
-Définir l'unité de ligne avant et après sur 5 et 10 unités, respectivement, garantit qu'il y a un espace suffisant entre les paragraphes, rendant le document plus lisible.
+La définition de l'unité de ligne avant et après sur 5 et 10 unités, respectivement, garantit un espace suffisant entre les paragraphes, rendant le document plus lisible.
 
 ## Étape 5 : Enregistrez le document
 
@@ -89,7 +89,7 @@ Cette ligne enregistre le document avec le nouveau formatage. Vous pouvez vérif
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à modifier l'espacement et les retraits des paragraphes asiatiques dans un document Word à l'aide d'Aspose.Words pour .NET. Ce n'était pas si difficile, n'est-ce pas ? En suivant ces étapes, vous pouvez garantir à vos documents un aspect professionnel et bien formaté, même lorsqu'il s'agit d'une typographie asiatique complexe. Continuez à expérimenter différentes valeurs et voyez ce qui fonctionne le mieux pour vos documents. Bon codage !
+Et voilà ! Vous venez d'apprendre à modifier l'espacement et les retraits des paragraphes asiatiques dans un document Word à l'aide d'Aspose.Words pour .NET. Ce n'était pas si difficile, n'est-ce pas ? En suivant ces étapes, vous pouvez garantir à vos documents un aspect professionnel et bien formaté, même lorsqu'il s'agit d'une typographie asiatique complexe. Continuez à expérimenter différentes valeurs et voyez ce qui fonctionne le mieux pour vos documents. Bon codage !
 
 ## FAQ
 

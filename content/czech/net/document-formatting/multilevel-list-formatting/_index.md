@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/document-formatting/multilevel-list-formatting/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste vývojář, který chce automatizovat vytváření a formátování dokumentů aplikace Word, Aspose.Words for .NET je hra, která mění hru. Dnes se ponoříme do toho, jak můžete zvládnout víceúrovňové formátování seznamů pomocí této výkonné knihovny. Ať už vytváříte strukturované dokumenty, sestavujete přehledy nebo generujete technickou dokumentaci, víceúrovňové seznamy mohou zlepšit čitelnost a organizaci vašeho obsahu.
 
@@ -16,8 +16,8 @@ Pokud jste vývojář, který chce automatizovat vytváření a formátování d
 Než se pustíme do podrobných podrobností, ujistěte se, že máte vše, co potřebujete, abyste spolu s tímto tutoriálem dodrželi.
 
 1. Vývojové prostředí: Ujistěte se, že máte nastavené vývojové prostředí. Visual Studio je skvělá volba.
-2.  Aspose.Words for .NET: Stáhněte si a nainstalujte knihovnu Aspose.Words for .NET. Můžeš to dostat[tady](https://releases.aspose.com/words/net/).
-3.  Licence: Získejte dočasnou licenci, pokud nemáte plnou. Pochopit to[tady](https://purchase.aspose.com/temporary-license/).
+2.  Aspose.Words for .NET: Stáhněte si a nainstalujte knihovnu Aspose.Words for .NET. Můžete to získat[zde](https://releases.aspose.com/words/net/).
+3.  Licence: Získejte dočasnou licenci, pokud nemáte plnou. Získejte to[zde](https://purchase.aspose.com/temporary-license/).
 4. Základní znalost C#: Výhodou bude znalost C# a .NET frameworku.
 
 ## Importovat jmenné prostory

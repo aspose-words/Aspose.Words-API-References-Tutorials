@@ -66,7 +66,7 @@ image.getImageData().setImage("path/to/your/image.png");
 header.appendChild(image);
 ```
 
-#### Numéros de page:
+#### Numéros de pages :
 
 L'ajout de numéros de page est une exigence courante. Aspose.Words for Java fournit un moyen pratique d'insérer dynamiquement des numéros de page :
 
@@ -75,7 +75,7 @@ FieldPage field = new FieldPage(doc);
 header.appendChild(field);
 ```
 
-## Les meilleures pratiques
+## Meilleures pratiques
 
 Pour garantir une expérience fluide lors du style des en-têtes et des pieds de page de documents, tenez compte de ces bonnes pratiques :
 

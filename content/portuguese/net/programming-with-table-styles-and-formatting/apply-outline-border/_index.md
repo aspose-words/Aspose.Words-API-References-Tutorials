@@ -53,7 +53,7 @@ A seguir, precisamos acessar a tabela específica que queremos formatar.
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
- Aqui,`GetChild` O método busca a primeira tabela do documento. Os parametros`NodeType.Table, 0, true` garantir que obtemos o tipo de nó correto.
+ Aqui,`GetChild` O método busca a primeira tabela do documento. Os parâmetros`NodeType.Table, 0, true` garantir que obtemos o tipo de nó correto.
 
 ## Etapa 3: Alinhe a Mesa
 

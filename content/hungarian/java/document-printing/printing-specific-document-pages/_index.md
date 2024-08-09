@@ -23,7 +23,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek
 
 ## Hozzon létre egy új Java projektet
 
-Kezdjük egy új Java projekt létrehozásával az Ön által preferált IDE-ben. Nevezheted, ahogy akarod. Ez a projekt szolgál majd munkaterületünkként meghatározott dokumentumoldalak nyomtatásához.
+Kezdjük egy új Java projekt létrehozásával az Ön által preferált IDE-ben. Nevezheti úgy, ahogy akarja. Ez a projekt szolgál majd munkaterületünkként meghatározott dokumentumoldalak nyomtatásához.
 
 ## Adja hozzá az Aspose.Words Dependency-t
 
@@ -55,7 +55,7 @@ public class PrintSpecificPages {
 
 ## Adja meg a nyomtatandó oldalakat
 
- Most pedig határozzuk meg, mely oldalakat kívánjuk nyomtatni. Használhatja a`PageRange` osztályban, hogy meghatározza a szükséges oldalak körét. Például a 3–5. oldal nyomtatásához:
+ Most pedig határozzuk meg, mely oldalakat kívánjuk nyomtatni. Használhatja a`PageRange` osztályt, hogy meghatározza a szükséges oldalak körét. Például a 3–5. oldal nyomtatásához:
 
 ```java
 PageRange pageRange = new PageRange(3, 5);
@@ -82,7 +82,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan nyomtathatunk ki egy Word-dokumentu
 
 ### Hogyan nyomtathatok több, nem egymást követő oldalt egy Word-dokumentumból?
 
- Több, nem egymást követő oldal nyomtatásához több oldalt is létrehozhat`PageRange` objektumokat, és adja meg a kívánt oldaltartományokat. Ezután add hozzá ezeket`PageRange` kifogásolják a`PageRanges` tömb a`PrintOptions` tárgy.
+ Több, nem egymást követő oldal nyomtatásához több oldalt is létrehozhat`PageRange` objektumokat, és adja meg a kívánt oldaltartományokat. Ezután add hozzá ezeket`PageRange` kifogásolják a`PageRanges` tömb a`PrintOptions` objektum.
 
 ### Az Aspose.Words for Java kompatibilis a különböző dokumentumformátumokkal?
 

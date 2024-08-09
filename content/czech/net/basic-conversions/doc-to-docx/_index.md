@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/basic-conversions/doc-to-docx/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu prozkoumáme, jak převést soubory DOC do formátu DOCX pomocí Aspose.Words for .NET. Aspose.Words je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům manipulovat a převádět dokumenty aplikace Word programově.
 
@@ -15,7 +15,7 @@ V tomto tutoriálu prozkoumáme, jak převést soubory DOC do formátu DOCX pomo
 
 Než začneme, ujistěte se, že máte následující nastavení:
 - Visual Studio nainstalované ve vašem systému.
--  Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Základní znalost programovacího jazyka C#.
 
 ## Importovat jmenné prostory
@@ -64,13 +64,13 @@ Převod DOC na DOCX programově pomocí Aspose.Words pro .NET je přímočarý a
 Ano, Aspose.Words podporuje konverzi mezi různými formáty, včetně DOC, DOCX, RTF, HTML, PDF a dalších.
 
 ### Kde najdu dokumentaci Aspose.Words?
- Máte přístup k dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Máte přístup k dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words?
- Ano, můžete získat bezplatnou zkušební verzi od[tady](https://releases.aspose.com/).
+ Ano, můžete získat bezplatnou zkušební verzi od[zde](https://releases.aspose.com/).
 
 ### Jak si mohu zakoupit licenci pro Aspose.Words?
- Můžete si koupit licenci[tady](https://purchase.aspose.com/buy).
+ Můžete si koupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Kde mohu získat podporu pro Aspose.Words?
- Pro podporu navštivte Aspose.Words[Fórum](https://forum.aspose.com/c/words/8).
+ Pro podporu navštivte Aspose.Words[forum](https://forum.aspose.com/c/words/8).

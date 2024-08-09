@@ -9,7 +9,7 @@ url: /nl/net/programming-with-charts/format-number-of-data-label/
 ---
 ## Invoering
 
-Bij het maken van boeiende en informatieve documenten gaat het vaak om het opnemen van diagrammen met goed opgemaakte gegevenslabels. Als u een .NET-ontwikkelaar bent en uw Word-documenten wilt verbeteren met geavanceerde grafieken, is Aspose.Words voor .NET een fantastische bibliotheek om u te helpen dat te bereiken. In deze zelfstudie wordt u stap voor stap door het proces geleid van het opmaken van nummerlabels in een diagram met Aspose.Words voor .NET.
+Bij het maken van boeiende en informatieve documenten gaat het vaak om het opnemen van diagrammen met goed opgemaakte gegevenslabels. Als u een .NET-ontwikkelaar bent en uw Word-documenten wilt uitbreiden met geavanceerde grafieken, is Aspose.Words voor .NET een fantastische bibliotheek om u daarbij te helpen. In deze zelfstudie wordt u stap voor stap door het proces geleid van het opmaken van nummerlabels in een diagram met Aspose.Words voor .NET.
 
 ## Vereisten
 
@@ -92,7 +92,7 @@ De kern van deze zelfstudie is het opmaken van de gegevenslabels. Op elk gegeven
 
 ```csharp
 series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Valuta-indeling
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Datumnotatie
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Datumformaat
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Percentage-indeling
 ```
 
@@ -114,7 +114,7 @@ Hierdoor wordt uw document opgeslagen met de opgegeven naam en wordt ervoor gezo
 
 ## Conclusie
 
-Het opmaken van gegevenslabels in een diagram met Aspose.Words voor .NET kan de leesbaarheid en professionaliteit van uw Word-documenten aanzienlijk verbeteren. Door deze stapsgewijze handleiding te volgen, zou u nu een diagram moeten kunnen maken, gegevensreeksen toevoegen en de gegevenslabels opmaken om aan uw behoeften te voldoen. Aspose.Words voor .NET is een krachtige tool die uitgebreide aanpassing en automatisering van Word-documenten mogelijk maakt, waardoor het van onschatbare waarde is voor .NET-ontwikkelaars.
+Het opmaken van gegevenslabels in een diagram met Aspose.Words voor .NET kan de leesbaarheid en professionaliteit van uw Word-documenten aanzienlijk verbeteren. Door deze stapsgewijze handleiding te volgen, zou u nu een diagram moeten kunnen maken, gegevensreeksen toevoegen en de gegevenslabels opmaken om aan uw behoeften te voldoen. Aspose.Words voor .NET is een krachtig hulpmiddel dat uitgebreide aanpassing en automatisering van Word-documenten mogelijk maakt, waardoor het van onschatbare waarde is voor .NET-ontwikkelaars.
 
 ## Veelgestelde vragen
 

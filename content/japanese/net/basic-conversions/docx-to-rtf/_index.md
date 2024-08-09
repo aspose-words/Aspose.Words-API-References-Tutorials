@@ -102,5 +102,5 @@ using (MemoryStream dstStream = new MemoryStream())
 ### この変換プロセスを自動化できますか?
 もちろんです! このコードをアプリケーションまたはスクリプトに統合して、ドキュメント管理ワークフローの一部として変換プロセスを自動化します。
 
-### 問題が発生した場合、さらにサポートを受けるにはどこに行けばよいですか?
-訪問[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8)Aspose.Words に関連するコミュニティのヘルプとサポート。
+### 問題が発生した場合、さらにサポートを受けられる場所はどこですか?
+訪問する[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8)Aspose.Words に関連するコミュニティのヘルプとサポート。

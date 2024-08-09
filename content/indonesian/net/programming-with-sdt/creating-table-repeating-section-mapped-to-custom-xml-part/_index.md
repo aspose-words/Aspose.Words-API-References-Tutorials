@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Langkah 4: Buat Bagian Berulang
 
- Membuat`StructuredDocumentTag` (SDT) untuk bagian berulang dan memetakannya ke data XML:
+ Buat sebuah`StructuredDocumentTag` (SDT) untuk bagian berulang dan memetakannya ke data XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

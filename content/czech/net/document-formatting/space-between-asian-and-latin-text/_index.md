@@ -7,20 +7,20 @@ type: docs
 weight: 10
 url: /cs/net/document-formatting/space-between-asian-and-latin-text/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Zažili jste někdy ten frustrující okamžik, kdy pracujete s dokumentem aplikace Word a mezery mezi asijským a latinským textem prostě nevypadají správně? Je to jako snažit se poskládat dílky skládačky z různých sad dohromady a každého to může přivést k šílenství! Ale nebojte se, mám vás v bezpečí. Dnes se ponoříme do světa Aspose.Words for .NET, abychom vyřešili přesně tento problém. Na konci tohoto kurzu budete přesně vědět, jak automaticky upravit mezeru mezi asijským a latinským textem v dokumentech aplikace Word jako profesionál.
+Ahoj! Zažili jste někdy ten frustrující okamžik, kdy pracujete s dokumentem aplikace Word a mezery mezi asijským a latinským textem prostě nevypadají správně? Je to jako snažit se poskládat dílky skládačky z různých sad dohromady a každého to může přivést k šílenství! Ale nebojte se, mám vás v bezpečí. Dnes se ponoříme do světa Aspose.Words for .NET, abychom vyřešili přesně tento problém. Na konci tohoto kurzu budete přesně vědět, jak automaticky upravit mezeru mezi asijským a latinským textem v dokumentech aplikace Word jako profesionál.
 
 ## Předpoklady
 
 Než se pustíme do kouzla, ujistíme se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Jakékoli prostředí kompatibilní s .NET, jako je Visual Studio.
 3. Základní znalost C#: Nemusíte být kouzelník, ale trocha znalosti vám hodně pomůže.
-4.  Platná licence: Získejte bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo koupit licenci[tady](https://purchase.aspose.com/buy).
+4.  Platná licence: Získejte bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo koupit licenci[zde](https://purchase.aspose.com/buy).
 
-Dobře, máš všechno? Skvělý! Ušpiníme si ruce.
+Dobře, máš všechno? Děsivý! Ušpiníme si ruce.
 
 ## Importovat jmenné prostory
 
@@ -94,11 +94,11 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- Ano, Aspose.Words for .NET vyžaduje licenci. Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/) nebo si jeden koupit[tady](https://purchase.aspose.com/buy).
+ Ano, Aspose.Words for .NET vyžaduje licenci. Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/) nebo si jeden koupit[zde](https://purchase.aspose.com/buy).
 
 ### Mohu upravit další nastavení formátování pomocí Aspose.Words pro .NET?
 
- Absolutně! Aspose.Words for .NET nabízí širokou škálu možností formátování pro odstavce, písma, tabulky a další. Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Absolutně! Aspose.Words for .NET nabízí širokou škálu možností formátování pro odstavce, písma, tabulky a další. Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Kde mohu získat podporu, pokud narazím na problémy?
 

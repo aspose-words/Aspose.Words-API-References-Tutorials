@@ -15,7 +15,7 @@ Hai, para penggemar teknologi dan ahli dokumen! 🌟 Pernahkah Anda menghadapi t
 
 Sebelum kita menyelami keajaiban menghubungkan kotak teks, pastikan Anda sudah menyiapkan semua hal penting:
 
-1. Perpustakaan Aspose.Words untuk .NET: Anda memerlukan versi terbaru Aspose.Words untuk .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1. Perpustakaan Aspose.Words untuk .NET: Anda memerlukan versi terbaru Aspose.Words untuk .NET. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET, seperti Visual Studio, diperlukan untuk menulis dan menguji kode Anda.
 3. Pengetahuan Dasar C#: Pemahaman dasar tentang C# akan membantu Anda mengikuti contoh kode.
 4. Contoh Dokumen Word: Meskipun tidak sepenuhnya diperlukan untuk tutorial ini, memiliki contoh dokumen Word untuk menguji kotak teks tertaut dapat membantu.
@@ -132,7 +132,7 @@ Ya, Anda dapat menautkan beberapa kotak teks secara berurutan. Pastikan saja set
 Anda dapat mengatur gaya teks di dalam setiap kotak teks sama seperti teks lainnya di dokumen Word, menggunakan opsi pemformatan kaya Aspose.Words atau UI Word.
 
 ### Apakah mungkin untuk memutuskan tautan kotak teks setelah ditautkan?
- Ya, Anda dapat memutuskan tautan kotak teks dengan mengatur`Next` properti dari`TextBox` objek untuk`null`.
+ Ya, Anda dapat memutuskan tautan kotak teks dengan mengatur`Next` properti dari`TextBox` keberatan dengan`null`.
 
 ### Di mana saya dapat menemukan tutorial lainnya tentang Aspose.Words untuk .NET?
  Anda dapat menemukan lebih banyak tutorial dan sumber daya di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/).

@@ -82,7 +82,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 
  Hier maken we een`MemoryStream` uit de gecodeerde voorbeeldtekst en geef deze door aan de`Document` constructor samen met onze laadopties. Met deze stap wordt de tekst gelezen en worden de regels voor het omgaan met spaties toegepast.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het verwerkte document op in de door u opgegeven map. Met deze stap wordt het opgeschoonde document naar een bestand geschreven.
 

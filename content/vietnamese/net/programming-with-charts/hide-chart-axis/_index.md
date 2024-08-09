@@ -55,7 +55,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- Ở đây, chúng tôi chèn biểu đồ cột với các kích thước được chỉ định. Các`InsertChart` phương thức trả về một`Shape` đối tượng chứa biểu đồ.
+ Ở đây, chúng tôi chèn biểu đồ cột với các kích thước được chỉ định. các`InsertChart` phương thức trả về một`Shape` đối tượng chứa biểu đồ.
 
 ## Bước 3: Xóa chuỗi hiện có
 

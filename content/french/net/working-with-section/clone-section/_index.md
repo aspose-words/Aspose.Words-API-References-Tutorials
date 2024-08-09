@@ -10,7 +10,7 @@ url: /fr/net/working-with-section/clone-section/
 
 ## Introduction
 
-Salut, amis codeurs ! 🚀 Vous êtes-vous déjà retrouvé plongé dans un projet de document Word, souhaitant pouvoir simplement cloner une section plutôt que de refaire tout ce travail acharné ? Bien devinez quoi? Avec Aspose.Words pour .NET, vous pouvez facilement cloner des sections de vos documents Word. Ce didacticiel vous guidera pas à pas tout au long du processus, ce qui facilitera la réplication des sections de vos documents. Alors, allons-y et simplifions grandement vos tâches de manipulation de documents !
+Salut, amis codeurs ! 🚀 Vous êtes-vous déjà retrouvé plongé dans un projet de document Word, souhaitant pouvoir simplement cloner une section plutôt que de refaire tout ce travail acharné ? Eh bien, devinez quoi ? Avec Aspose.Words pour .NET, vous pouvez facilement cloner des sections de vos documents Word. Ce didacticiel vous guidera pas à pas tout au long du processus, ce qui facilitera la réplication des sections de vos documents. Alors, allons-y et simplifions grandement vos tâches de manipulation de documents !
 
 ## Conditions préalables
 
@@ -138,7 +138,7 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
 ## Conclusion
 
-Et voila! 🎉 Vous avez réussi à cloner une section dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d’efforts, en particulier lorsque vous traitez des structures de documents répétitives. N'oubliez pas que les sections sont un excellent moyen d'organiser votre contenu et que le fait de pouvoir les cloner par programme ajoute un tout nouveau niveau d'efficacité. Bon codage !
+Et voilà ! 🎉 Vous avez réussi à cloner une section dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d’efforts, en particulier lorsque vous traitez des structures de documents répétitives. N'oubliez pas que les sections sont un excellent moyen d'organiser votre contenu et que le fait de pouvoir les cloner par programme ajoute un tout nouveau niveau d'efficacité. Bon codage !
 
 ## FAQ
 
@@ -160,4 +160,4 @@ Oui, Aspose.Words prend en charge divers formats Word, notamment DOC, DOCX, RTF,
 
 ### Où puis-je trouver plus de ressources sur Aspose.Words ?
 
- Pour plus d'informations, vous pouvez visiter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou la[forum d'entraide](https://forum.aspose.com/c/words/8) pour de l'aide et des discussions.
+ Pour plus d'informations, vous pouvez visiter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou le[forum d'assistance](https://forum.aspose.com/c/words/8) pour de l'aide et des discussions.

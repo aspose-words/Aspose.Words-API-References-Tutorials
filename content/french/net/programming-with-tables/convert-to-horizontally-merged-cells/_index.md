@@ -63,7 +63,7 @@ table.ConvertToHorizontallyMergedCells();
 
 ## Conclusion
 
-Et c'est tout! Vous avez réussi à convertir des cellules fusionnées verticalement en cellules fusionnées horizontalement dans un document Word à l'aide d'Aspose.Words pour .NET. Cette méthode garantit que vos tableaux sont bien organisés et plus faciles à lire. En suivant ces étapes, vous pouvez personnaliser et manipuler vos documents Word pour répondre à vos besoins spécifiques.
+Et c'est tout ! Vous avez réussi à convertir des cellules fusionnées verticalement en cellules fusionnées horizontalement dans un document Word à l'aide d'Aspose.Words pour .NET. Cette méthode garantit que vos tableaux sont bien organisés et plus faciles à lire. En suivant ces étapes, vous pouvez personnaliser et manipuler vos documents Word pour répondre à vos besoins spécifiques.
 
 ## FAQ
 
@@ -74,10 +74,10 @@ Aspose.Words for .NET est principalement conçu pour les langages .NET comme C#.
  Oui, vous pouvez télécharger un[essai gratuit](https://releases.aspose.com/) sur le site Web d'Aspose.
 
 ### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?  
- Vous pouvez visiter le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8) à l'aide.
+ Vous pouvez visiter le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8) pour obtenir de l'aide.
 
 ### Puis-je appliquer une licence à partir d’un fichier ou d’un flux ?  
-Oui, Aspose.Words for .NET vous permet d'appliquer une licence à la fois à partir d'un fichier et d'un flux. Vous pouvez trouver plus d'informations dans le[Documentation](https://reference.aspose.com/words/net/).
+Oui, Aspose.Words for .NET vous permet d'appliquer une licence à la fois à partir d'un fichier et d'un flux. Vous pouvez trouver plus d'informations dans le[documentation](https://reference.aspose.com/words/net/).
 
 ### Quelles autres fonctionnalités Aspose.Words pour .NET offre-t-il ?  
- Aspose.Words for .NET offre un large éventail de fonctionnalités, notamment la génération, la manipulation, la conversion et le rendu de documents. Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Aspose.Words for .NET offre un large éventail de fonctionnalités, notamment la génération, la manipulation, la conversion et le rendu de documents. Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.

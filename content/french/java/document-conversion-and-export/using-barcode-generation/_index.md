@@ -14,7 +14,7 @@ Dans le domaine du traitement et de l'automatisation des documents, Aspose.Words
 
 ## Conditions préalables
 
-Avant de commencer, assurez-vous que les conditions préalables suivantes sont remplies :
+Avant de commencer, assurez-vous que vous disposez des conditions préalables suivantes :
 
 - Kit de développement Java (JDK) installé sur votre système.
 -  Bibliothèque Aspose.Words pour Java. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/java/).
@@ -62,7 +62,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment générer des images de codes-barres personnalisées à l'aide d'Aspose.Words pour Java. Cette bibliothèque polyvalente ouvre un monde de possibilités pour l'automatisation et la manipulation de documents.
+Félicitations! Vous avez appris avec succès comment générer des images de codes-barres personnalisées à l'aide d'Aspose.Words pour Java. Cette bibliothèque polyvalente ouvre un monde de possibilités pour l'automatisation et la manipulation de documents.
 
 ## FAQ
 

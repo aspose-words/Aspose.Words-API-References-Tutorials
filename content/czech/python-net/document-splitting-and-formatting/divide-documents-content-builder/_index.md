@@ -10,7 +10,7 @@ url: /cs/python-net/document-splitting-and-formatting/divide-documents-content-b
 
 Aspose.Words pro Python poskytuje robustní rozhraní API pro práci s dokumenty Wordu, které vám umožňuje efektivně provádět různé úkoly. Jednou ze základních funkcí je dělení dokumentů pomocí Content Builderu, který pomáhá dosáhnout přesnosti a organizace v dokumentech. V tomto tutoriálu prozkoumáme, jak používat Aspose.Words pro Python k rozdělení dokumentů pomocí modulu Content Builder.
 
-## Úvod
+## Zavedení
 
 Při práci s velkými dokumenty je zásadní zachovat jasnou strukturu a organizaci. Rozdělení dokumentu do sekcí může zlepšit čitelnost a usnadnit cílené úpravy. Aspose.Words pro Python vám toho umožňuje dosáhnout pomocí výkonného modulu Content Builder.
 

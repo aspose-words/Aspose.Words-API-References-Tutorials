@@ -117,7 +117,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
 
- 예, Aspose.Words for .NET은 상용 제품입니다. 당신은 얻을 수 있습니다[무료 시험판](https://releases.aspose.com/) 또는 라이센스를 구매하세요[여기](https://purchase.aspose.com/buy).
+ 예, Aspose.Words for .NET은 상용 제품입니다. 당신은 얻을 수 있습니다[무료 평가판](https://releases.aspose.com/) 또는 라이센스를 구매하세요[여기](https://purchase.aspose.com/buy).
 
 ### 이 방법을 사용하여 두 개 이상의 문서를 병합할 수 있나요?
 

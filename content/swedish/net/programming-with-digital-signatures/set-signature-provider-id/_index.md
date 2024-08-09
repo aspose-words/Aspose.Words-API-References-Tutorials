@@ -9,7 +9,7 @@ url: /sv/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
 ## Introduktion
 
-Hallå där! Så, du har det här fantastiska Word-dokumentet som behöver en digital signatur, eller hur? Men inte vilken signatur som helst – du måste ange ett specifikt ID för signaturleverantör. Oavsett om du hanterar juridiska dokument, kontrakt eller annat pappersarbete är det avgörande att lägga till en säker, digital signatur. I den här handledningen kommer jag att gå igenom hela processen med att ställa in ett ID för signaturleverantör i ett Word-dokument med Aspose.Words för .NET. Redo? Låt oss dyka in!
+Hej där! Så, du har det här fantastiska Word-dokumentet som behöver en digital signatur, eller hur? Men inte vilken signatur som helst – du måste ange ett specifikt ID för signaturleverantör. Oavsett om du hanterar juridiska dokument, kontrakt eller annat pappersarbete är det avgörande att lägga till en säker, digital signatur. I den här handledningen kommer jag att gå igenom hela processen med att ställa in ett ID för signaturleverantör i ett Word-dokument med Aspose.Words för .NET. Redo? Låt oss dyka in!
 
 ## Förutsättningar
 
@@ -44,7 +44,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
 ```
 
- Här anger vi katalogen där ditt dokument finns. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
+ Här anger vi katalogen där ditt dokument finns. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
 
 ## Steg 2: Gå till signaturlinjen
 
@@ -78,7 +78,7 @@ Dessa alternativ kommer att användas när du signerar dokumentet för att säke
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
- Byta ut`"aw"` med lösenordet för din certifikatfil om den har ett.
+ Ersätta`"aw"` med lösenordet för din certifikatfil om den har ett.
 
 ## Steg 5: Signera dokumentet
 

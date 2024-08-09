@@ -19,7 +19,7 @@ Bevor wir uns auf unser Tischbau-Abenteuer einlassen, sollten wir sicherstellen,
 - .NET Framework (4.0 oder höher)
 - Aspose.Words für .NET-Bibliothek
 
- Wenn Sie Aspose.Words noch nicht haben, können Sie ganz einfach[hier herunterladen](https://releases.aspose.com/words/net/) Sie können auch mit einem[Kostenlose Testphase](https://releases.aspose.com/) wenn Sie das Wasser testen möchten. Für diejenigen, die bereit sind, den Sprung zu wagen, können Sie[eine Lizenz kaufen](https://purchase.aspose.com/buy) oder wenn Sie mehr Zeit zur Auswertung benötigen, holen Sie sich ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+ Wenn Sie Aspose.Words noch nicht haben, können Sie ganz einfach[Laden Sie es hier herunter](https://releases.aspose.com/words/net/) Sie können auch mit einem[Kostenlose Testversion](https://releases.aspose.com/) wenn Sie das Wasser testen möchten. Für diejenigen, die bereit sind, den Sprung zu wagen, können Sie[eine Lizenz kaufen](https://purchase.aspose.com/buy) oder wenn Sie mehr Zeit zur Auswertung benötigen, holen Sie sich ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
 ## Namespaces importieren
 
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Starten Sie die Tabelle
 
- Nun beginnen wir mit unserem Tisch. Wir nennen die`StartTable` Methode der`DocumentBuilder` beginnen.
+ Nun beginnen wir mit unserem Tisch. Wir nennen die`StartTable` Methode der`DocumentBuilder` um zu beginnen.
 
 ```csharp
 Table table = builder.StartTable();
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Durch die Nutzung`StartTable`sagen wir Aspose.Words, dass wir dabei sind, eine Tabelle zu erstellen.`InsertCell` Methode fügt die erste Zelle hinzu und`AutoFit` stellt sicher, dass unsere Spalten eine feste Breite haben.
+ Durch die Verwendung`StartTable`sagen wir Aspose.Words, dass wir dabei sind, eine Tabelle zu erstellen.`InsertCell` Methode fügt die erste Zelle hinzu und`AutoFit` stellt sicher, dass unsere Spalten eine feste Breite haben.
 
 ## Schritt 3: Formatieren Sie die erste Zeile
 
@@ -128,7 +128,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgest
  Du kannst[Laden Sie Aspose.Words für .NET hier herunter](https://releases.aspose.com/words/net/). Befolgen Sie die bereitgestellten Installationsanweisungen, um es in Ihrer Entwicklungsumgebung einzurichten.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Aspose.Words bietet eine[Kostenlose Testphase](https://releases.aspose.com/) damit Sie die Funktionen testen können. Für eine erweiterte Nutzung können Sie eine Lizenz erwerben oder eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words bietet eine[Kostenlose Testversion](https://releases.aspose.com/) damit Sie die Funktionen testen können. Für eine erweiterte Nutzung können Sie eine Lizenz erwerben oder eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
 ### Was sind weitere Funktionen von Aspose.Words für .NET?
 Neben dem Erstellen von Tabellen können Sie mit Aspose.Words auch mit Text, Bildern, Stilen und vielen anderen Dokumentelementen arbeiten. Es unterstützt eine breite Palette von Dokumentformaten, darunter DOCX, PDF und HTML.

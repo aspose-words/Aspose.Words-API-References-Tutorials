@@ -72,7 +72,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompli
 
  Uitleg: We maken een exemplaar van`OoxmlSaveOptions` en stel zijn`Compliance`eigendom aan`OoxmlCompliance.Iso29500_2008_Strict`Dit zorgt ervoor dat het document wordt opgeslagen volgens de ISO 29500_2008_Strict-normen.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Laten we tot slot het document opslaan met de nieuwe compliance-instellingen.
 

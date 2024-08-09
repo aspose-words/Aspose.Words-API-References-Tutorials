@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/remove-content/remove-page-breaks/
 ---
-## Úvod
+## Zavedení
 
 Odstranění zalomení stránek z dokumentu aplikace Word může být zásadní pro udržení konzistentního toku textu. Ať už připravujete konečný návrh k publikaci nebo jen děláte pořádek v dokumentu, odstranění zbytečných zalomení stránek vám může pomoci. V tomto tutoriálu vás provedeme procesem pomocí Aspose.Words pro .NET. Tato výkonná knihovna poskytuje komplexní možnosti manipulace s dokumenty, takže úkoly, jako je tento, jsou hračkou.
 

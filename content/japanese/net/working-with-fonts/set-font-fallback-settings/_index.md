@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ja/net/working-with-fonts/set-font-fallback-settings/
 ---
+## 導入
 
 異なる言語や特殊文字などの多様なテキスト要素を含むドキュメントを扱う場合、これらの要素が正しく表示されるようにすることが重要です。Aspose.Words for .NET には、フォント フォールバック設定と呼ばれる強力な機能があり、元のフォントが特定の文字をサポートしていない場合にフォントを置き換えるルールを定義するのに役立ちます。このガイドでは、Aspose.Words for .NET を使用してフォント フォールバック設定を設定する方法を、ステップ バイ ステップのチュートリアルで説明します。
 
@@ -49,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## ステップ3: フォント設定を構成する
 
-新しいを作成します`FontSettings`オブジェクトを作成し、XML ファイルからフォント フォールバック設定を読み込みます。この XML ファイルには、フォント フォールバックのルールが含まれています。
+新規作成`FontSettings`オブジェクトを作成し、XML ファイルからフォント フォールバック設定を読み込みます。この XML ファイルには、フォント フォールバックのルールが含まれています。
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Ta pętla wstawia do tabeli 50 wierszy danych, po dwie kolumny w każdym wierszu. The`HeadingFormat` jest ustawione na`false` dla tych wierszy, ponieważ nie są to wiersze nagłówka.
+ Ta pętla wstawia do tabeli 50 wierszy danych, po dwie kolumny w każdym wierszu. The`HeadingFormat` jest ustawiony na`false` dla tych wierszy, ponieważ nie są to wiersze nagłówka.
 
 ## Krok 4: Zapisz dokument
 
@@ -118,4 +118,4 @@ masz to! Za pomocą zaledwie kilku linii kodu możesz utworzyć dokument Word z 
  Tak, możesz modyfikować istniejące tabele, uzyskując do nich dostęp za pośrednictwem`Document` obiekt i stosując podobne formatowanie.
 
 ### Jakie inne opcje formatowania tabeli są dostępne w Aspose.Words dla .NET?
- Aspose.Words dla .NET oferuje szeroką gamę opcji formatowania tabeli, w tym łączenie komórek, ustawienia obramowania i wyrównywanie tabeli. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words dla .NET oferuje szeroką gamę opcji formatowania tabeli, w tym łączenie komórek, ustawienia obramowania i wyrównywanie tabeli. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.

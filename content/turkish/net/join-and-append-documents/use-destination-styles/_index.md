@@ -2,7 +2,7 @@
 title: Hedef Stillerini Kullan
 linktitle: Hedef Stillerini Kullan
 second_title: Aspose.Words Belge İşleme API'si
-description: Tutarlı biçimlendirmeyi korurken belgeleri sorunsuz bir şekilde eklemek için Aspose.Words for .NET ile hedef stillerini nasıl kullanacağınızı öğrenin.
+description: Tutarlı formatlamayı korurken belgeleri sorunsuz bir şekilde eklemek için Aspose.Words for .NET ile hedef stillerini nasıl kullanacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/use-destination-styles/
@@ -71,7 +71,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek, hedef belgenin stillerini kullanırken bir belgeyi diğerine sorunsuz bir şekilde ekleyebilirsiniz. Bu teknik özellikle birden fazla belgede tutarlı bir görünüm ve his sağlamanız gerektiğinde kullanışlıdır.
+Ve işte karşınızda! Bu adımları izleyerek, hedef belgenin stillerini kullanırken bir belgeyi diğerine sorunsuz bir şekilde ekleyebilirsiniz. Bu teknik özellikle birden fazla belgede tutarlı bir görünüm ve his sağlamanız gerektiğinde kullanışlıdır.
 
 ## SSS'ler
 

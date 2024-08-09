@@ -8,7 +8,7 @@ weight: 14
 url: /it/java/document-merging/document-splitting-extraction/
 ---
 
-## introduzione
+## Introduzione
 
 In questa guida completa, esploreremo le potenti funzionalità di Aspose.Words per Java, un'API versatile per lavorare con i documenti. Nello specifico, approfondiremo l'intrigante mondo della suddivisione e dell'estrazione dei documenti, dimostrando come questa funzionalità possa semplificare le attività di elaborazione dei documenti. 
 

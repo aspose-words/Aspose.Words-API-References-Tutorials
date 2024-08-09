@@ -9,7 +9,7 @@ url: /pl/net/join-and-append-documents/keep-source-numbering/
 ---
 ## Wstęp
 
- Podczas pracy z Aspose.Words dla .NET importowanie dokumentów z jednego źródła do drugiego przy zachowaniu formatowania może być efektywnie obsługiwane przy użyciu`NodeImporter` klasa. Ten samouczek przeprowadzi Cię przez proces krok po kroku.
+ Podczas pracy z Aspose.Words dla .NET, importowanie dokumentów z jednego źródła do drugiego przy zachowaniu formatowania może być efektywnie obsługiwane przy użyciu`NodeImporter` klasa. Ten samouczek przeprowadzi Cię przez proces krok po kroku.
 
 ## Warunki wstępne
 
@@ -78,7 +78,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ## Często zadawane pytania
 
 ### Czy mogę importować dokumenty z różnymi stylami formatowania?
- Tak`NodeImporter` klasa obsługuje importowanie dokumentów o różnych stylach formatowania.
+ Tak,`NodeImporter` klasa obsługuje importowanie dokumentów o różnych stylach formatowania.
 
 ### Co się stanie, jeśli moje dokumenty zawierają złożone tabele i obrazy?
 Aspose.Words dla .NET obsługuje złożone struktury, takie jak tabele i obrazy, podczas operacji importu.
@@ -90,4 +90,4 @@ Aspose.Words obsługuje wersje .NET Framework i .NET Core w celu zapewnienia bez
 Użyj bloków try-catch do obsługi wyjątków, które mogą wystąpić podczas procesu importu.
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację dotyczącą Aspose.Words dla .NET?
- Odwiedzić[dokumentacja](https://reference.aspose.com/words/net/) w celu uzyskania kompleksowych przewodników i referencji API.
+ Odwiedź[dokumentacja](https://reference.aspose.com/words/net/) w celu uzyskania kompleksowych przewodników i referencji API.

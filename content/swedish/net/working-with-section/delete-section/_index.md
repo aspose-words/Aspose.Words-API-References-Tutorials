@@ -9,7 +9,7 @@ url: /sv/net/working-with-section/delete-section/
 ---
 ## Introduktion
 
-Så du har bestämt dig för att dyka in i en värld av dokumentmanipulation med Aspose.Words för .NET. Fantastiskt val! Aspose.Words är ett kraftpaket bibliotek för att hantera allt som har med Word-dokument att göra. Oavsett om du har att göra med skapande, modifiering eller konvertering, har Aspose.Words dig täckt. I den här guiden går vi igenom hur man tar bort ett avsnitt från ett Word-dokument. Redo att bli ett Aspose-proffs? Låt oss börja!
+Så du har bestämt dig för att dyka in i en värld av dokumentmanipulation med Aspose.Words för .NET. Fantastiskt val! Aspose.Words är ett kraftpaket bibliotek för att hantera allt som har med Word-dokument att göra. Oavsett om du har att göra med skapande, modifiering eller konvertering, har Aspose.Words dig täckt. I den här guiden går vi igenom hur man tar bort ett avsnitt från ett Word-dokument. Redo att bli ett Aspose-proffs? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -55,7 +55,7 @@ doc.FirstSection.Remove();
 ## FAQ's
 
 ### Kan jag ta bort flera avsnitt samtidigt?
-Jo det kan du. Gå bara igenom avsnitten du vill ta bort och ta bort dem en efter en.
+Ja, det kan du. Gå bara igenom avsnitten du vill ta bort och ta bort dem en efter en.
 
 ### Är Aspose.Words för .NET gratis?
  Aspose.Words erbjuder en gratis provperiod som du kan få[här](https://releases.aspose.com/) För alla funktioner måste du köpa en licens[här](https://purchase.aspose.com/buy).

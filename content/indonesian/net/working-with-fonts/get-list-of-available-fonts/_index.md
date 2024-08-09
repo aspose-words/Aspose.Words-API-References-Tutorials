@@ -2,93 +2,113 @@
 title: Dapatkan Daftar Font yang Tersedia
 linktitle: Dapatkan Daftar Font yang Tersedia
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Dalam tutorial ini, pelajari cara mendapatkan daftar font yang tersedia di Aspose.Words untuk .NET.
+description: Temukan cara mendapatkan daftar font yang tersedia menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang mendetail ini. Tingkatkan keterampilan manajemen font Anda.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/get-list-of-available-fonts/
 ---
-Dalam tutorial ini, kami akan menjelaskan cara mendapatkan daftar font yang tersedia di Aspose.Words untuk .NET. Daftar font yang tersedia memungkinkan Anda mengetahui font mana yang dapat Anda gunakan dalam dokumen Anda. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+## Perkenalan
+
+Pernahkah Anda kesulitan mengelola font di dokumen Word Anda? Jika Anda seorang pengembang .NET, Aspose.Words for .NET hadir untuk menyelamatkan Anda! Pustaka canggih ini tidak hanya membantu Anda membuat dan memanipulasi dokumen Word secara terprogram tetapi juga menawarkan kemampuan manajemen font yang ekstensif. Dalam panduan ini, kami akan memandu Anda melalui tutorial langkah demi langkah tentang cara mendapatkan daftar font yang tersedia menggunakan Aspose.Words untuk .NET. Kami akan membaginya menjadi langkah-langkah yang mudah dipahami untuk memastikan Anda dapat mengikutinya dengan mudah. Jadi, mari selami dan jadikan pengelolaan font menjadi mudah!
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
 
-## Langkah 1: Tentukan direktori dokumen
- Pertama, Anda perlu mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
+
+-  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Visual Studio: Contoh ini menggunakan Visual Studio sebagai lingkungan pengembangan.
+- .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.
+- Direktori Dokumen: Jalur direktori tempat dokumen Anda disimpan.
+
+## Impor Namespace
+
+Pertama, impor namespace yang diperlukan ke dalam proyek Anda:
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Langkah 2: Konfigurasikan sumber font
- Selanjutnya, kita akan membuat sebuah instance dari`FontSettings` dan dapatkan sumber font yang ada menggunakan`GetFontsSources()` metode. Kami juga akan menambahkan sumber font baru dengan menentukan folder yang berisi font.
+## Langkah 1: Inisialisasi Pengaturan Font
+
+Langkah pertama adalah menginisialisasi pengaturan font. Ini akan memungkinkan Anda mengelola sumber font untuk dokumen Anda.
 
 ```csharp
-// Konfigurasikan sumber font
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-// Tambahkan sumber font baru
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## Langkah 3: Dapatkan daftar font yang tersedia
- Sekarang kita akan menelusuri font yang tersedia menggunakan`GetAvailableFonts()` metode pada sumber font pertama yang diperbarui.
+- FontSettings: Kelas ini digunakan untuk menentukan pengaturan substitusi font dan sumber font.
+- fontSources: Kami membuat daftar sumber font yang ada dari pengaturan font saat ini.
+
+## Langkah 2: Tentukan Direktori Dokumen
+
+Selanjutnya, tentukan jalur ke direktori dokumen Anda. Di sinilah Aspose.Words akan mencari font.
 
 ```csharp
-// Dapatkan daftar font yang tersedia
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### Contoh kode sumber untuk Dapatkan Daftar Font yang Tersedia menggunakan Aspose.Words untuk .NET 
-
-```csharp
-
-// Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Tambahkan folder baru sumber yang akan menginstruksikan Aspose.Words untuk mencari font di folder berikut.
+-  dataDir: Variabel string ini menyimpan jalur ke direktori tempat font Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya.
+
+## Langkah 3: Tambahkan Folder Font Kustom
+
+Sekarang, tambahkan folder baru sumber untuk menginstruksikan Aspose.Words mencari font di folder ini.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Tambahkan folder khusus yang berisi font kami ke daftar sumber font yang ada.
+```
+
+- FolderFontSource: Kelas ini mewakili sumber font folder. Parameter kedua (`true`) menunjukkan apakah akan mencari font secara rekursif di subfolder.
+
+## Langkah 4: Perbarui Sumber Font
+
+Tambahkan folder font khusus ke daftar sumber font yang ada dan perbarui pengaturan font.
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- fontSources.Add(folderFontSource): Menambahkan folder font khusus ke sumber font yang ada.
+- updateFontSources: Mengonversi daftar sumber font menjadi array.
+
+## Langkah 5: Ambil dan Tampilkan Font
+
+Terakhir, ambil font yang tersedia dan tampilkan detailnya.
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts(): Mengambil daftar font yang tersedia dari sumber font pertama dalam daftar yang diperbarui.
+-  fontInfo: Sebuah contoh dari`PhysicalFontInfo` berisi detail tentang setiap font.
+
 ## Kesimpulan
-Dalam tutorial ini, kita melihat cara mendapatkan daftar font yang tersedia di Aspose.Words untuk .NET. Ini memungkinkan Anda mengetahui font mana yang dapat Anda gunakan dalam dokumen Anda. Jangan ragu untuk menggunakan fitur ini untuk memilih font yang sesuai dengan kebutuhan Anda.
 
-### FAQ
+Selamat! Anda telah berhasil mengambil daftar font yang tersedia menggunakan Aspose.Words untuk .NET. Tutorial ini telah memandu Anda melalui setiap langkah, mulai dari menginisialisasi pengaturan font hingga menampilkan detail font. Dengan pengetahuan ini, kini Anda dapat mengelola font di dokumen Word Anda dengan mudah. Ingat, Aspose.Words for .NET adalah alat canggih yang dapat meningkatkan kemampuan pemrosesan dokumen Anda secara signifikan. Jadi, lanjutkan dan jelajahi lebih banyak fitur untuk membuat proses pengembangan Anda lebih efisien.
 
-#### T: Bagaimana cara mengambil daftar font yang tersedia di Aspose.Words?
+## FAQ
 
- A: Untuk mengambil daftar font yang tersedia di Aspose.Words, Anda dapat menggunakan`FontsProvider` kelas dan`GetAvailableFonts` metode. Metode ini akan mengembalikan daftar semua font yang diinstal pada sistem Anda.
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan kerangka .NET lainnya?
+Ya, Aspose.Words untuk .NET kompatibel dengan berbagai kerangka .NET termasuk .NET Core dan .NET 5+.
 
-#### T: Bisakah saya memfilter daftar font yang tersedia berdasarkan kriteria tertentu di Aspose.Words?
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
+Anda dapat menginstalnya melalui NuGet Package Manager di Visual Studio dengan mencari "Aspose.Words".
 
-A: Ya, Anda dapat memfilter daftar font yang tersedia di Aspose.Words menggunakan kriteria tertentu. Misalnya, Anda dapat memfilter font berdasarkan jenis, gaya, atau bahasa.
+### Apakah mungkin untuk menambahkan beberapa folder font khusus?
+ Ya, Anda dapat menambahkan beberapa folder font khusus dengan membuat beberapa folder`FolderFontSource` contoh dan menambahkannya ke daftar sumber font.
 
-#### T: Bagaimana cara menggunakan daftar font yang tersedia di dokumen Word saya?
+### Bisakah saya mengambil detail font dari sumber font tertentu?
+ Ya, Anda dapat mengambil detail font dari sumber font mana pun dengan menentukan indeks sumber font di`updatedFontSources` susunan.
 
- J: Untuk menggunakan daftar font yang tersedia di dokumen Word Anda, Anda dapat menelusuri daftar dan memilih font yang sesuai menggunakan metode dan properti dari`FontSettings` kelas di Aspose.Words.
+### Apakah Aspose.Words untuk .NET mendukung substitusi font?
+Ya, ini mendukung substitusi font untuk memastikan bahwa teks ditampilkan dengan benar meskipun font asli tidak tersedia.

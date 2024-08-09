@@ -149,7 +149,7 @@ Zengin medya görsellerini belgelerinize dahil etmek oyunun kurallarını deği�
 
 ### Eklediğim görsellere başlık ekleyebilir miyim?
 
- Evet, Aspose.Words'ü kullanarak görsellere yazı ekleyebilirsiniz. Kullan`add_caption` yöntemini kullanın ve altyazının görünümünü özelleştirin.
+ Evet, Aspose.Words'ü kullanarak görsellere yazı ekleyebilirsiniz. Kullanın`add_caption` yöntemini kullanın ve altyazının görünümünü özelleştirin.
 
 ### Belgelerimi hangi formatlara aktarabilirim?
 

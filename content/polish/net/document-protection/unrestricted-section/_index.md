@@ -9,13 +9,13 @@ url: /pl/net/document-protection/unrestricted-section/
 ---
 ## Wstęp
 
-No hej! Gotowy do zanurzenia się w świat Aspose.Words dla .NET? Dzisiaj zajmiemy się czymś niezwykle praktycznym: jak odblokować określone sekcje w dokumencie programu Word, jednocześnie chroniąc inne części. Jeśli kiedykolwiek musiałeś zabezpieczyć niektóre sekcje swojego dokumentu, ale inne pozostawić otwarte do edycji, ten samouczek jest dla Ciebie. Zacznijmy!
+Hej tam! Gotowy do zanurzenia się w świat Aspose.Words dla .NET? Dzisiaj zajmiemy się czymś niezwykle praktycznym: jak odblokować określone sekcje w dokumencie programu Word, jednocześnie chroniąc inne części. Jeśli kiedykolwiek musiałeś zabezpieczyć niektóre sekcje swojego dokumentu, ale inne pozostawić otwarte do edycji, ten samouczek jest dla Ciebie. Zacznijmy!
 
 ## Warunki wstępne
 
 Zanim przejdziemy do sedna, upewnij się, że masz wszystko, czego potrzebujesz:
 
--  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Visual Studio: Lub dowolne inne IDE kompatybilne z .NET.
 - Podstawowa znajomość języka C#: Trochę znajomości języka C# ułatwi ci przejście przez ten samouczek.
 -  Licencja Aspose: Weź a[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli potrzebujesz go do testów.
@@ -110,7 +110,7 @@ Teraz nadszedł czas, aby zapisać dokument z zastosowanymi ustawieniami ochrony
 doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 ```
 
- Spowoduje to zapisanie dokumentu w określonym katalogu o podanej nazwie`DocumentProtection.UnrestrictedSection.docx`.
+ Spowoduje to zapisanie dokumentu w określonym katalogu pod nazwą`DocumentProtection.UnrestrictedSection.docx`.
 
 ### Załaduj dokument
 

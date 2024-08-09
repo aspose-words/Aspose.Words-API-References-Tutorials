@@ -9,7 +9,7 @@ url: /sv/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff
 ---
 ## Introduktion
 
-Har du någonsin undrat hur man kontrollerar tröskeln för TIFF-binarisering i dina Word-dokument? Du är på rätt plats! Den här guiden leder dig genom processen steg-för-steg med Aspose.Words för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här handledningen är engagerande, lätt att följa och packad med alla detaljer du behöver för att få jobbet gjort. Redo att dyka i? Nu går vi!
+Har du någonsin undrat hur man kontrollerar tröskeln för TIFF-binarisering i dina Word-dokument? Du är på rätt plats! Den här guiden leder dig genom processen steg-för-steg med Aspose.Words för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här handledningen är engagerande, lätt att följa och packad med alla detaljer du behöver för att få jobbet gjort. Redo att dyka i? Låt oss gå!
 
 ## Förutsättningar
 
@@ -37,7 +37,7 @@ Först och främst måste du ställa in sökvägen till din dokumentkatalog. Det
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ## Steg 2: Ladda ditt dokument
 

@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## Stap 4: Implementeer de waarschuwings-callback-klasse
 
- Maak een klasse die de`IWarningCallback` koppel. Deze klasse definieert hoe waarschuwingen worden afgehandeld tijdens documentverwerking.
+ Maak een klasse die de`IWarningCallback` interface. Deze klasse definieert hoe waarschuwingen worden afgehandeld tijdens documentverwerking.
 
 ```csharp
 private class DocumentLoadingWarningCallback : IWarningCallback
@@ -94,7 +94,7 @@ Door deze stappen te volgen, kunt u waarschuwingen effectief beheren en afhandel
 Met de waarschuwingscallback kunt u waarschuwingen opvangen en afhandelen die optreden tijdens de documentverwerking, zodat u potentiële problemen proactief kunt aanpakken.
 
 ### Hoe stel ik de waarschuwings-terugbelfunctie in?
- U moet de`LoadOptions` met de`WarningCallback` property en implementeer een klasse die de waarschuwingen afhandelt door de`IWarningCallback` koppel.
+ U moet de`LoadOptions` met de`WarningCallback` property en implementeer een klasse die de waarschuwingen afhandelt door de`IWarningCallback` interface.
 
 ### Kan ik de waarschuwings-terugbelfunctie gebruiken zonder een geldige licentie?
  Je kunt het gebruiken met de gratis proefversie, maar voor volledige functionaliteit is het raadzaam een geldige licentie aan te schaffen. Je kunt een[tijdelijke licentie hier](https://purchase.aspose.com/temporary-license/).

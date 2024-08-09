@@ -15,7 +15,7 @@ Jeśli kiedykolwiek pracowałeś z dokumentami programu Word i musiałeś modyfi
 
 Zanim przejdziemy do sedna modyfikowania elementów sterujących zawartością, upewnij się, że masz następujące elementy:
 
-1.  Zainstalowano Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Zainstalowano Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 
 2. Podstawowa znajomość języka C#: W tym samouczku założono, że znasz podstawowe koncepcje programowania w języku C#.
 
@@ -106,7 +106,7 @@ if (sdt.SdtType == SdtType.Picture)
 
 ## Krok 6: Zapisz zmodyfikowany dokument
 
-Po dokonaniu wszystkich niezbędnych zmian zapisz zmodyfikowany dokument pod nową nazwą, aby zachować oryginalny dokument w nienaruszonym stanie.
+Po dokonaniu wszystkich niezbędnych zmian zapisz zmodyfikowany dokument pod nową nazwą, aby zachować oryginalny dokument w stanie nienaruszonym.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
@@ -134,7 +134,7 @@ Tak, możesz usunąć SDT, uzyskując dostęp do węzłów dokumentu i usuwając
 
 4. Jak obsługiwać SDT zagnieżdżone w innych elementach?
 
- Użyj`GetChildNodes` metodę z odpowiednimi parametrami, aby uzyskać dostęp do zagnieżdżonych SDT.
+ Skorzystaj z`GetChildNodes` metodę z odpowiednimi parametrami, aby uzyskać dostęp do zagnieżdżonych SDT.
 
 5. Co powinienem zrobić, jeśli SDT, które muszę zmodyfikować, nie jest widoczne w dokumencie?
 
@@ -181,4 +181,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-Otóż to! Pomyślnie zmodyfikowałeś różne typy kontroli treści w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+To wszystko! Pomyślnie zmodyfikowałeś różne typy kontroli treści w dokumencie programu Word przy użyciu Aspose.Words dla .NET.

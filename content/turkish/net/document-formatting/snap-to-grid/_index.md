@@ -86,7 +86,7 @@ par.ParagraphFormat.SnapToGrid = true;
 
 Izgaraya Yasla özelliğinin pratikte nasıl çalıştığını görmek için belgeye biraz metin içeriği ekleyelim.
 
-Yazma metni
+Metin Yazma
 
 ```csharp
 builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");

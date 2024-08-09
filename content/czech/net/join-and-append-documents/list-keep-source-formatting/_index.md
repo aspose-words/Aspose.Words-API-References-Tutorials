@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/list-keep-source-formatting/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu prozkoumáme, jak využít Aspose.Words pro .NET ke sloučení dokumentů při zachování zdrojového formátování. Tato schopnost je nezbytná pro scénáře, kde je zásadní zachování původního vzhledu dokumentů.
 
@@ -16,7 +16,7 @@ V tomto tutoriálu prozkoumáme, jak využít Aspose.Words pro .NET ke sloučen�
 Než budete pokračovat, ujistěte se, že máte následující předpoklady:
 
 - Visual Studio nainstalované na vašem počítači.
--  Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Základní znalost programování v C# a prostředí .NET.
 
 ## Importovat jmenné prostory

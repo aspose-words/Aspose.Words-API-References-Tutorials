@@ -77,7 +77,7 @@ table.ClearBorders();
 
 ## ステップ5: アウトラインの境界線を設定する
 
-次に、表に緑のアウトライン境界線を適用します。
+次に、表に緑のアウトラインの境界線を適用します。
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);

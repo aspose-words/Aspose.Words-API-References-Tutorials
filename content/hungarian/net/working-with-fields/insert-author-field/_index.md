@@ -9,7 +9,7 @@ url: /hu/net/working-with-fields/insert-author-field/
 ---
 ## Bevezetés
 
-Ebben az oktatóanyagban az Aspose.Words for .NET használatával illeszthető be szerzői mező egy Word-dokumentumba. Akár automatizálja a dokumentumkészítést vállalkozása számára, akár egyszerűen csak személyre szeretné szabni fájljait, ez a lépésről-lépésre szóló útmutató mindenre kiterjed. A környezet beállításától a kész dokumentum mentéséig mindent végigjárunk. Kezdjük el!
+Ebben az oktatóanyagban az Aspose.Words for .NET használatával illeszthető be szerzői mező egy Word-dokumentumba. Akár automatizálja a dokumentumkészítést vállalkozása számára, akár egyszerűen csak személyre szeretné szabni fájljait, ez a lépésről-lépésre szóló útmutató mindenre kiterjed. A környezet beállításától a kész dokumentum mentéséig mindent végigjárunk. Kezdjük is!
 
 ## Előfeltételek
 
@@ -138,7 +138,7 @@ Az Aspose.Words ingyenes próbaverziót kínál, de a teljes szolgáltatáshoz �
 
 ### Hozzáadhatok más típusú mezőket az Aspose.Words használatával?
 
- Igen, az Aspose.Words különféle mezőtípusokat támogat, beleértve a dátumot, időt, oldalszámot stb. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) a részletekért.
+ Igen, az Aspose.Words különféle mezőtípusokat támogat, beleértve a dátumot, időt, oldalszámot stb. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) részletekért.
 
 ### Hol találok támogatást, ha problémákba ütközöm?
 

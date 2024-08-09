@@ -15,7 +15,7 @@ url: /es/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 
 Antes de comenzar, asegúrese de tener lo siguiente:
 
--  Aspose.Words para .NET: si aún no lo ha instalado,[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: si aún no lo ha instalado,[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: Visual Studio o cualquier otro IDE de C#.
 -  Un documento de Word: usaremos un documento llamado`Rendering.docx`. Colóquelo en el directorio de su proyecto.
 
@@ -120,10 +120,10 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  El`CssClassNamePrefix`La propiedad funciona con CSS externo. Para CSS en línea, necesitará un enfoque diferente.
 
 ### ¿Cómo puedo incluir otras opciones para guardar HTML?
- Puede configurar varias propiedades de`HtmlSaveOptions` para personalizar su salida HTML. Comprobar el[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Puede configurar varias propiedades de`HtmlSaveOptions` para personalizar su salida HTML. Compruebe el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### ¿Es posible guardar el HTML en una secuencia?
  ¡Absolutamente! Puede guardar el documento en una secuencia pasando el objeto de secuencia al`Save` método.
 
 ### ¿Cómo obtengo soporte si tengo problemas?
- Puede obtener apoyo del[asponer foro](https://forum.aspose.com/c/words/8).
+ Puede obtener apoyo del[aspose foro](https://forum.aspose.com/c/words/8).

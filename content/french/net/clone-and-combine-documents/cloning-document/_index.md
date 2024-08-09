@@ -43,7 +43,7 @@ Tout d’abord, vous devez configurer votre projet dans Visual Studio. Si vous a
 Maintenant que votre projet est mis en place, préparons l'environnement :
 
 1.  Créez un répertoire pour vos documents : vous aurez besoin d'un dossier dans lequel vos documents seront stockés. Appelons-le`Documents`.
-2.  Ajoutez votre exemple de document : placez votre`Document.docx` à l'intérieur de`Documents` dossier. C'est le fichier que nous allons cloner.
+2.  Ajoutez votre exemple de document : placez votre`Document.docx` à l'intérieur du`Documents` dossier. C'est le fichier que nous allons cloner.
 
 ## Étape 3 : Charger le document original
 
@@ -93,7 +93,7 @@ Enfin, vérifions si notre document cloné est comme prévu :
 
 ## Conclusion
 
-Et voila! Vous avez cloné avec succès un document Word à l'aide d'Aspose.Words pour .NET. Ce n'était pas si difficile, non ? Cette puissante bibliothèque facilite la gestion des documents Word, vous faisant gagner beaucoup de temps et d'efforts. Continuez à expérimenter les autres fonctionnalités proposées par Aspose.Words et vous deviendrez un pro en un rien de temps.
+Et voilà ! Vous avez cloné avec succès un document Word à l'aide d'Aspose.Words pour .NET. Ce n'était pas si difficile, non ? Cette puissante bibliothèque facilite la gestion des documents Word, vous faisant gagner beaucoup de temps et d'efforts. Continuez à expérimenter les autres fonctionnalités proposées par Aspose.Words et vous deviendrez un pro en un rien de temps.
 
 ## FAQ
 
@@ -111,8 +111,8 @@ Bien sûr! Une fois que vous avez cloné un document, vous pouvez le manipuler c
 
 ### Ai-je besoin d’une licence pour utiliser Aspose.Words pour .NET ?
 
- Bien que vous puissiez utiliser Aspose.Words for .NET avec un essai gratuit, il est recommandé d'acheter un[Licence](https://purchase.aspose.com/buy) pour une fonctionnalité complète et pour éviter toute limitation.
+ Bien que vous puissiez utiliser Aspose.Words for .NET avec un essai gratuit, il est recommandé d'acheter un[licence](https://purchase.aspose.com/buy) pour une fonctionnalité complète et pour éviter toute limitation.
 
 ### Où puis-je trouver plus de didacticiels sur Aspose.Words pour .NET ?
 
- Vérifiez[Documentation](https://reference.aspose.com/words/net/) et le[Forums communautaires Aspose](https://forum.aspose.com/c/words/8) pour plus de ressources et de soutien.
+ Découvrez le[documentation](https://reference.aspose.com/words/net/) et le[Forums communautaires Aspose](https://forum.aspose.com/c/words/8) pour plus de ressources et de soutien.

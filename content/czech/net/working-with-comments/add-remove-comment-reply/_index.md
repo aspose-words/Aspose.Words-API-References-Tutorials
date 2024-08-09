@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-comments/add-remove-comment-reply/
 ---
-## Úvod
+## Zavedení
 
 Práce s komentáři a jejich odpověďmi v dokumentech aplikace Word může výrazně zlepšit proces kontroly dokumentu. S Aspose.Words for .NET můžete tyto úkoly automatizovat, čímž se vaše pracovní postupy zefektivní a zefektivní. Tento tutoriál vás provede přidáváním a odebíráním odpovědí na komentáře a poskytne vám podrobného průvodce, jak tuto funkci zvládnout.
 
@@ -15,7 +15,7 @@ Práce s komentáři a jejich odpověďmi v dokumentech aplikace Word může vý
 
 Než se ponoříte do kódu, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET: Stáhněte a nainstalujte jej z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Stáhněte a nainstalujte jej z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje .NET.
 - Základní znalost C#: Znalost programování v C# je nezbytná.
 

@@ -26,9 +26,9 @@ Door documentrevisie onder de knie te krijgen met Aspose.Words voor Java, kunnen
 
 ## Handleidingen voor documentrevisie
 ### [De ultieme gids voor documentrevisie](./guide-document-revision/)
-Hoofddocumentrevisie met Aspose.Words voor Java! Beheer wijzigingen efficiënt, accepteer/weiger revisies en werk naadloos samen. Begin nu!
+Hoofddocumentrevisie met Aspose.Words voor Java! Beheer wijzigingen efficiënt, accepteer/weiger revisies en werk naadloos samen. Ga nu aan de slag!
 ### [Documentrevisies volgen en beheren](./tracking-managing-document-revisions/)
-Leer in deze uitgebreide handleiding hoe u documentrevisies kunt volgen en beheren met Aspose.Words voor Java. Ontvang stapsgewijze instructies en broncodevoorbeelden.
+Leer in deze uitgebreide handleiding hoe u documentrevisies kunt bijhouden en beheren met Aspose.Words voor Java. Ontvang stapsgewijze instructies en broncodevoorbeelden.
 ### [Documentversies vergelijken](./comparing-document-versions/)
 Leer hoe u documentversies kunt vergelijken met Aspose.Words voor Java. Stap-voor-stap handleiding voor efficiënt versiebeheer.
 ### [Documentwijzigingen accepteren en afwijzen](./accepting-rejecting-document-changes/)

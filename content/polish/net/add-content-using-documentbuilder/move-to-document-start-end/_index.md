@@ -9,13 +9,13 @@ url: /pl/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## Wstęp
 
-No hej! Więc pracujesz z dokumentami programu Word i potrzebujesz sposobu, aby szybko i programowo przejść na początek lub na koniec dokumentu, co? Cóż, jesteś we właściwym miejscu! W tym przewodniku opisujemy, jak przenieść kursor na początek lub na koniec dokumentu programu Word za pomocą Aspose.Words dla .NET. Zaufaj mi, pod koniec będziesz poruszać się po dokumentach jak profesjonalista. Zacznijmy!
+Hej tam! Więc pracujesz z dokumentami programu Word i potrzebujesz sposobu, aby szybko i programowo przejść na początek lub na koniec dokumentu, co? Cóż, jesteś we właściwym miejscu! W tym przewodniku opisujemy, jak przenieść kursor na początek lub na koniec dokumentu programu Word za pomocą Aspose.Words dla .NET. Zaufaj mi, pod koniec będziesz poruszać się po dokumentach jak profesjonalista. Zacznijmy!
 
 ## Warunki wstępne
 
 Zanim zagłębimy się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: To jest magiczne narzędzie, którego będziemy używać. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/) lub złap[bezpłatna wersja próbna](https://releases.aspose.com/).
+1.  Aspose.Words dla .NET: To jest magiczne narzędzie, którego będziemy używać. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/) lub złap[bezpłatna wersja próbna](https://releases.aspose.com/).
 2. Środowisko programistyczne .NET: Visual Studio to solidny wybór.
 3. Podstawowa znajomość języka C#: Nie martw się, nie musisz być czarodziejem, ale odrobina znajomości bardzo Ci się przyda.
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tutaj tworzymy instancję`Document`I`DocumentBuilder` . Myśleć o`Document` jako pusty dokument programu Word i`DocumentBuilder` jak twój długopis.
+ Tutaj tworzymy instancję`Document`I`DocumentBuilder` . Myśleć`Document` jako pusty dokument programu Word i`DocumentBuilder` jak twój długopis.
 
 ## Krok 2: Przejdź do początku dokumentu
 
@@ -63,7 +63,7 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` umieszcza kursor na samym końcu, gotowy do dodania kolejnych treści. Bułka z masłem!
+`MoveToDocumentEnd()` umieszcza kursor na samym końcu, gotowy do dodania kolejnych treści. Łatwe, proste!
 
 ## Wniosek
 

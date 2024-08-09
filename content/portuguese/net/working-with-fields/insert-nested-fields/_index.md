@@ -109,7 +109,7 @@ Um campo aninhado é um campo que contém outros campos dentro dele. Permite con
 Sim, você pode aninhar vários campos como DATA, HORA e AUTOR no campo IF para criar conteúdo dinâmico.
 
 ### O Aspose.Words para .NET é gratuito?
- Aspose.Words for .NET é uma biblioteca comercial, mas você pode obter uma[teste grátis](https://releases.aspose.com/) para experimentar.
+ Aspose.Words for .NET é uma biblioteca comercial, mas você pode obter uma[teste gratuito](https://releases.aspose.com/) para experimentar.
 
 ### Posso usar o Aspose.Words com outras linguagens .NET?
 Sim, Aspose.Words oferece suporte a todas as linguagens .NET, incluindo VB.NET e F#.

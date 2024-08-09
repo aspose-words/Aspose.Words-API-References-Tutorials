@@ -9,7 +9,7 @@ url: /vi/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 ## Giới thiệu
 
-Việc xóa một hàng theo dấu trang trong tài liệu Word nghe có vẻ phức tạp, nhưng với Aspose.Words dành cho .NET, điều đó thật dễ dàng. Hướng dẫn này sẽ hướng dẫn bạn mọi thứ bạn cần biết để hoàn thành nhiệm vụ này một cách hiệu quả. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Việc xóa một hàng theo dấu trang trong tài liệu Word nghe có vẻ phức tạp, nhưng với Aspose.Words dành cho .NET, điều đó thật dễ dàng. Hướng dẫn này sẽ hướng dẫn bạn mọi thứ bạn cần biết để hoàn thành nhiệm vụ này một cách hiệu quả. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -72,7 +72,7 @@ doc.Save("output-document.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Xóa một hàng bằng dấu trang trong tài liệu Word bằng Aspose.Words for .NET thật đơn giản khi bạn chia nó thành các bước đơn giản. Phương pháp này đảm bảo bạn có thể nhắm mục tiêu và xóa chính xác các hàng dựa trên dấu trang, giúp công việc quản lý tài liệu của bạn hiệu quả hơn.
+Và bạn có nó! Xóa một hàng bằng dấu trang trong tài liệu Word bằng Aspose.Words for .NET thật đơn giản khi bạn chia nó thành các bước đơn giản. Phương pháp này đảm bảo bạn có thể nhắm mục tiêu và xóa chính xác các hàng dựa trên dấu trang, giúp công việc quản lý tài liệu của bạn hiệu quả hơn.
 
 ## Câu hỏi thường gặp
 

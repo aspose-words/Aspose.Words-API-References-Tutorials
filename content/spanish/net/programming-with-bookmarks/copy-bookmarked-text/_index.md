@@ -21,7 +21,7 @@ Antes de sumergirnos, asegúrese de tener lo siguiente:
 
 ## Importar espacios de nombres
 
-Para comenzar, asegúrese de haber importado los espacios de nombres necesarios en su proyecto:
+Para comenzar, asegúrese de tener importados los espacios de nombres necesarios en su proyecto:
 
 ```csharp
 using Aspose.Words;
@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Conclusión
 
-¡Y eso es! Ha copiado con éxito el texto marcado como favorito de un documento de Word a otro usando Aspose.Words para .NET. Este método es potente para automatizar las tareas de manipulación de documentos, haciendo que su flujo de trabajo sea más eficiente y optimizado.
+¡Y eso es todo! Ha copiado con éxito el texto marcado como favorito de un documento de Word a otro usando Aspose.Words para .NET. Este método es potente para automatizar las tareas de manipulación de documentos, haciendo que su flujo de trabajo sea más eficiente y optimizado.
 
 ## Preguntas frecuentes
 

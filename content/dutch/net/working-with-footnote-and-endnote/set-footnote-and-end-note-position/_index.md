@@ -2,76 +2,95 @@
 title: Voetnoot- en eindnootpositie instellen
 linktitle: Voetnoot- en eindnootpositie instellen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de positie van voetnoten en eindnoten in Word-documenten instelt met Aspose.Words voor .NET.
+description: Leer hoe u voetnoot- en eindnootposities in Word-documenten instelt met Aspose.Words voor .NET met deze gedetailleerde stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/working-with-footnote-and-endnote/set-footnote-and-end-note-position/
 ---
+## Invoering
 
-In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kunt gebruiken om de positie van voetnoten en eindnoten in een Word-document in te stellen. We leggen de meegeleverde C#-broncode uit en laten u zien hoe u deze in uw eigen projecten kunt implementeren.
+Als u met Word-documenten werkt en voetnoten en eindnoten effectief moet beheren, is Aspose.Words voor .NET uw favoriete bibliotheek. In deze zelfstudie leert u hoe u voetnoot- en eindnootposities in een Word-document instelt met behulp van Aspose.Words voor .NET. We zullen elke stap opsplitsen, zodat deze gemakkelijk te volgen en te implementeren is.
 
- Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Vereisten
 
-## Stap 1: Het documentobject initialiseren
+Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u over het volgende beschikt:
 
- Initialiseer eerst de`Document` object door het pad naar uw brondocument op te geven:
+-  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Visual Studio: Elke recente versie werkt prima.
+- Basiskennis van C#: als u de basisbeginselen begrijpt, kunt u deze eenvoudig volgen.
+
+## Naamruimten importeren
+
+Importeer eerst de benodigde naamruimten in uw C#-project:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";     
+using System;
+using Aspose.Words;
+```
+
+## Stap 1: Laad het Word-document
+
+Om te beginnen moet u uw Word-document in het Aspose.Words Document-object laden. Hierdoor kunt u de inhoud van het document manipuleren.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Stap 2: Voetnoot- en eindnootpositie instellen
+ Vervang in deze code`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad waar uw document zich bevindt.
 
- Ga vervolgens naar de`FootnoteOptions`En`EndnoteOptions`eigenschappen van het document om de positie van voetnoten en eindnoten in te stellen. In dit voorbeeld stellen we de positie van de voetnoten in op onder de tekst en de positie van de eindnoten op het einde van de sectie:
+## Stap 2: Stel de voetnootpositie in
+
+Vervolgens stelt u de positie van de voetnoten in. Met Aspose.Words voor .NET kunt u voetnoten onderaan de pagina of onder de tekst plaatsen.
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
+```
+
+ Hier hebben we ingesteld dat de voetnoten onder de tekst verschijnen. Als u ze liever onderaan de pagina heeft, gebruik dan`FootnotePosition.BottomOfPage`.
+
+## Stap 3: Stel de eindnootpositie in
+
+Op dezelfde manier kunt u de positie van eindnoten instellen. Eindnoten kunnen aan het einde van de sectie of aan het einde van het document worden geplaatst.
+
+```csharp
 doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 ```
 
-## Stap 3: Het document opslaan
+ In dit voorbeeld worden eindnoten aan het einde van elke sectie geplaatst. Gebruik om ze aan het einde van het document te plaatsen`EndnotePosition.EndOfDocument`.
 
-Sla ten slotte het gewijzigde document op:
+## Stap 4: Sla het document op
+
+Sla ten slotte het document op om de wijzigingen toe te passen. Zorg ervoor dat u het juiste bestandspad en de juiste naam voor het uitvoerdocument opgeeft.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 ```
 
-Dat is het! U hebt met succes de positie van voetnoten en eindnoten in een Word-document ingesteld met Aspose.Words voor .NET.
+Deze regel slaat het gewijzigde document op in de door u opgegeven map.
 
-### Voorbeeldbroncode voor voetnoot- en eindnootpositie instellen met Aspose.Words voor .NET
+## Conclusie
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";     
-Document doc = new Document(dataDir + "Document.docx");
+Het instellen van voetnoot- en eindnootposities in Word-documenten met Aspose.Words voor .NET is eenvoudig zodra u de stappen kent. Door deze handleiding te volgen, kunt u uw documenten aanpassen aan uw behoeften, zodat voetnoten en eindnoten precies daar worden geplaatst waar u ze wilt hebben.
 
-doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
-doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
+## Veelgestelde vragen
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
-```
+### Kan ik verschillende posities instellen voor individuele voetnoten of eindnoten?
 
-U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw specifieke vereisten.
+Nee, Aspose.Words voor .NET stelt de positie voor alle voet- en eindnoten in een document op uniforme wijze in.
 
-### Veelgestelde vragen
+### Is Aspose.Words voor .NET compatibel met alle versies van Word-documenten?
 
-#### Vraag: Hoe kan ik voetnoten en eindnoten positioneren in Aspose.Words?
+Ja, Aspose.Words voor .NET ondersteunt een breed scala aan Word-documentformaten, waaronder DOC, DOCX, RTF en meer.
 
- A: Om voetnoten en eindnoten in Aspose.Words te positioneren, moet u de`FootnoteOptions` klasse en de`Position` eigendom. U kunt deze eigenschap instellen op elke gewenste waarde, zoals`BottomOfPage` (onderaan de pagina) of`EndOfSection` (aan het einde van het gedeelte).
+### Kan ik Aspose.Words voor .NET gebruiken met andere programmeertalen?
 
-#### Vraag: Is het mogelijk om de positie van voetnoten en eindnoten voor elke pagina of sectie van het document aan te passen?
+Aspose.Words voor .NET is ontworpen voor .NET-toepassingen, maar u kunt het gebruiken met elke door .NET ondersteunde taal, zoals C#, VB.NET, enz.
 
-A: Ja, het is mogelijk om de positie van voetnoten en eindnoten voor elke pagina of sectie van het document aan te passen. U kunt de sectie- en paginamanipulatiemethoden van Aspose.Words gebruiken om specifieke posities voor voetnoten en eindnoten te definiëren.
+### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
 
-#### Vraag: Hoe verwijder ik voetnoten of eindnoten uit een document?
+ Ja, u kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/).
 
- A: Om voetnoten of eindnoten uit een document in Aspose.Words te verwijderen, kunt u geschikte methoden gebruiken, zoals`RemoveAllFootnotes` om alle voetnoten te verwijderen of`RemoveAllEndnotes` om alle eindnoten te verwijderen. Zorg ervoor dat u het document opslaat nadat u deze handelingen heeft uitgevoerd.
+### Waar kan ik meer gedetailleerde documentatie vinden voor Aspose.Words voor .NET?
 
-#### Vraag: Kunnen voetnoten en eindnoten buiten de paginamarges worden geplaatst?
-
-Nee, voetnoten en eindnoten kunnen standaard niet buiten de paginamarges in Aspose.Words worden geplaatst. Indien nodig kunt u de documentmarges echter aanpassen om meer ruimte voor voet- en eindnoten vrij te maken.
-
-#### Vraag: Kunnen voetnoten en eindnoten worden aangepast met een specifiek lettertype of opmaakstijl?
-
-A: Ja, u kunt voetnoten en eindnoten aanpassen met specifieke lettertypen of opmaakstijlen in Aspose.Words. U kunt de beschikbare methoden en eigenschappen gebruiken om lettertypestijlen, kleuren, lettergroottes, enz. toe te passen op voetnoten en eindnoten.
+ Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).

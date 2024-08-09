@@ -12,7 +12,7 @@ No mundo da documentação digital, rapidez e eficiência são fundamentais. Os 
 
 ## Introdução
 
-Antes de nos aprofundarmos nos detalhes técnicos, vamos estabelecer uma compreensão clara da importância de otimizar o carregamento de documentos. No atual ambiente digital acelerado, os usuários exigem acesso rápido à informação. O carregamento lento de documentos pode causar frustração e perda de engajamento. Aspose.Words for Java oferece uma solução para esse problema, permitindo agilizar o processo de carregamento de documentos HTML, RTF e TXT.
+Antes de nos aprofundarmos nos detalhes técnicos, vamos estabelecer uma compreensão clara da importância de otimizar o carregamento de documentos. No atual ambiente digital acelerado, os usuários exigem acesso rápido à informação. O carregamento lento de documentos pode causar frustração e perda de envolvimento. Aspose.Words for Java oferece uma solução para esse problema, permitindo agilizar o processo de carregamento de documentos HTML, RTF e TXT.
 
 ## Primeiros passos com Aspose.Words para Java
 

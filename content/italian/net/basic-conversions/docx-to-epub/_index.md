@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/basic-conversions/docx-to-epub/
 ---
-## introduzione
+## Introduzione
 
 Nell'ambito dello sviluppo .NET, la manipolazione efficiente dei documenti Word è fondamentale per molte applicazioni. Aspose.Words per .NET fornisce un potente toolkit che semplifica le attività di elaborazione dei documenti, inclusa la conversione di file DOCX in formato EPUB. Questo tutorial ti guiderà attraverso i passaggi necessari per raggiungere questo obiettivo utilizzando Aspose.Words per .NET.
 
@@ -59,7 +59,7 @@ Sì, puoi convertire in batch file DOCX in EPUB o altri formati utilizzando Aspo
 Sì, Aspose.Words supporta completamente .NET Core e .NET Framework.
 
 ### Dove posso trovare altri esempi e documentazione per Aspose.Words?
- Visitare il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per esempi dettagliati e riferimenti API.
+ Visita il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per esempi dettagliati e riferimenti API.
 
 ### Come posso ottenere supporto per i problemi relativi ad Aspose.Words?
  Per supporto, visitare il[Forum Aspose.Words](https://forum.aspose.com/c/words/8) dove puoi porre domande e interagire con la community.

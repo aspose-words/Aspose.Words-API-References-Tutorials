@@ -15,7 +15,7 @@ Pronto para mergulhar em algumas coisas incríveis de tecnologia? Hoje, vamos ab
 
 Antes de entrarmos na parte divertida, vamos ter certeza de que você tem tudo o que precisa:
 
-1.  Biblioteca Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) . Se você ainda não comprou, pegue um[teste grátis](https://releases.aspose.com/) ou[compre aqui](https://purchase.aspose.com/buy).
+1.  Biblioteca Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) . Se você ainda não comprou, pegue um[teste gratuito](https://releases.aspose.com/) ou[compre aqui](https://purchase.aspose.com/buy).
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE que suporte .NET.
 3. Conhecimento básico de C#: você precisará estar confortável com C# para acompanhar.
 
@@ -49,7 +49,7 @@ A seguir, precisamos configurar as opções de carregamento para reconhecer text
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- Definindo`RecognizeUtf8Text` para`true`, estamos dizendo ao Aspose.Words para ficar atento ao texto UTF-8. Isso é muito útil ao lidar com documentos que contêm uma variedade de caracteres.
+ Ao definir`RecognizeUtf8Text` para`true`, estamos dizendo ao Aspose.Words para ficar atento ao texto UTF-8. Isso é muito útil ao lidar com documentos que contêm uma variedade de caracteres.
 
 ## Etapa 3: carregue o documento
 
@@ -75,7 +75,7 @@ Esta linha salva o documento com um novo nome, para que você possa identificar 
 
 E aí está! Você acabou de aprender como reconhecer texto UTF-8 em documentos do Word usando Aspose.Words for .NET. Este pequeno truque pode evitar muitas dores de cabeça ao lidar com documentos multilíngues ou caracteres especiais.
 
-Lembre-se de que as principais etapas são configurar as opções de carregamento, carregar o documento e salvá-lo. É simples assim! Então, vá em frente e experimente. Você ficará surpreso com a facilidade de lidar com textos complexos em documentos do Word.
+Lembre-se de que as principais etapas são configurar as opções de carregamento, carregar o documento e salvá-lo. É tão simples quanto isso! Então, vá em frente e experimente. Você ficará surpreso com a facilidade de lidar com textos complexos em documentos do Word.
 
 ## Perguntas frequentes
 

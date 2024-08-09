@@ -95,8 +95,8 @@ Um die Größe eines eingebetteten Objekts zu ändern, klicken Sie darauf, um es
 
 ### Warum funktioniert mein ActiveX-Steuerelement nicht?
 
-Wenn das ActiveX-Steuerelement nicht funktioniert, liegt dies möglicherweise an den Sicherheitseinstellungen des Dokuments oder an der Software, die zum Anzeigen des Dokuments verwendet wird. Überprüfen Sie die Sicherheitseinstellungen und stellen Sie sicher, dass ActiveX-Steuerelemente aktiviert sind.
+Wenn das ActiveX-Steuerelement nicht funktioniert, liegt dies möglicherweise an den Sicherheitseinstellungen des Dokuments oder an der zum Anzeigen des Dokuments verwendeten Software. Überprüfen Sie die Sicherheitseinstellungen und stellen Sie sicher, dass ActiveX-Steuerelemente aktiviert sind.
 
 ## Abschluss
 
-Die Einbindung von OLE-Objekten und ActiveX-Steuerelementen mit Aspose.Words für Python eröffnet eine Welt voller Möglichkeiten zur Erstellung dynamischer und interaktiver Word-Dokumente. Ganz gleich, ob Sie Tabellen, Multimedia oder interaktive Formulare einbetten möchten, mit dieser Funktion können Sie Ihre Ideen effektiv kommunizieren.
+Die Einbindung von OLE-Objekten und ActiveX-Steuerelementen mit Aspose.Words für Python eröffnet eine Welt voller Möglichkeiten für die Erstellung dynamischer und interaktiver Word-Dokumente. Ganz gleich, ob Sie Tabellen, Multimedia oder interaktive Formulare einbetten möchten, mit dieser Funktion können Sie Ihre Ideen effektiv kommunizieren.

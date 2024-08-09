@@ -16,7 +16,7 @@ url: /es/net/working-with-textboxes/break-a-link/
 
 Antes de comenzar, asegurémonos de que tiene todo lo que necesita:
 
-1.  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión.[Descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión.[Descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo compatible con .NET como Visual Studio.
 3. Conocimientos básicos de C#: será útil comprender la sintaxis básica de C#.
 4. Documento de Word de muestra: aunque crearemos uno desde cero, tener una muestra puede ser beneficioso para realizar pruebas.
@@ -94,7 +94,7 @@ veces, un cuadro de texto puede ser parte de una cadena, con otros cuadros vincu
 
 ### Rompiendo enlaces entrantes
 
- Para romper un enlace entrante, verifique si el`Previous` el cuadro de texto existe y llama`BreakForwardLink` en eso:
+ Para romper un enlace entrante, verifique si el`Previous` el cuadro de texto existe y llama`BreakForwardLink` en ello:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
@@ -110,7 +110,7 @@ textBox.Previous?.BreakForwardLink();
 
 ## Preguntas frecuentes
 
-### ¿Cuál es el propósito de dividir enlaces directos en cuadros de texto?
+### ¿Cuál es el propósito de dividir los enlaces directos en los cuadros de texto?
 
 Romper enlaces directos le permite reorganizar o aislar el contenido dentro de su documento, proporcionando un mayor control sobre el flujo y la estructura del documento.
 
@@ -128,4 +128,4 @@ Los enlaces rotos pueden afectar potencialmente el diseño, especialmente si los
 
 ### ¿Dónde puedo encontrar más recursos sobre cómo trabajar con Aspose.Words?
 
- Para obtener más información y recursos, puede visitar el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/)y[Foro de soporte](https://forum.aspose.com/c/words/8).
+ Para obtener más información y recursos, puede visitar el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/)y[foro de soporte](https://forum.aspose.com/c/words/8).

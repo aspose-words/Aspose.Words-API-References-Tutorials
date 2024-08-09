@@ -107,7 +107,7 @@ Dalam tutorial ini, kami telah membahas langkah-langkah penting untuk menerapkan
 ## FAQ
 
 ### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk Java?
- Mengunjungi[Asumsikan Halaman Lisensi Sementara](https://purchase.aspose.com/temporary-license/) untuk meminta izin sementara.
+ Kunjungi[Asumsikan Halaman Lisensi Sementara](https://purchase.aspose.com/temporary-license/) untuk meminta izin sementara.
 
 ### Bisakah saya menggunakan Aspose.Words untuk Java tanpa lisensi?
 Ya, tapi itu akan beroperasi dalam mode uji coba dengan batasan. Disarankan untuk mendapatkan lisensi yang valid untuk fungsionalitas penuh.

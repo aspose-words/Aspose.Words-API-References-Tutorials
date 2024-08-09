@@ -77,7 +77,7 @@ Neste guia, demonstramos como salvar documentos no formato RTF usando Aspose.Wor
 
 ### Como altero outras opções de salvamento em RTF?
 
- Você pode modificar várias opções de salvamento RTF usando o`RtfSaveOptions` aula. Consulte a documentação do Aspose.Words for Java para obter uma lista completa de opções disponíveis.
+ Você pode modificar várias opções de salvamento RTF usando o`RtfSaveOptions` aula. Consulte a documentação do Aspose.Words for Java para obter uma lista completa das opções disponíveis.
 
 ### Posso salvar o documento RTF em uma codificação diferente?
 

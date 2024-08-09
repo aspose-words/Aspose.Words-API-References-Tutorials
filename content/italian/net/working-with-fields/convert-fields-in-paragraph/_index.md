@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/convert-fields-in-paragraph/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato intrappolato in una rete di campi nei tuoi documenti Word, soprattutto quando stai solo cercando di convertire quei subdoli campi IF in testo semplice? Beh, non sei solo. Oggi approfondiremo come padroneggiare questo con Aspose.Words per .NET. Immagina di essere un mago con una bacchetta magica e di trasformare i campi con un semplice tocco del tuo codice. Sembra intrigante? Iniziamo questo magico viaggio!
 
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 
 ## Conclusione
 
-il gioco è fatto! Hai trasformato con successo i campi IF in testo semplice utilizzando Aspose.Words per .NET. È come trasformare incantesimi complessi in incantesimi semplici, rendendo la gestione dei documenti molto più semplice. Quindi, la prossima volta che ti imbatti in un groviglio di campi, sai esattamente cosa fare. Buona programmazione!
+Ed ecco qua! Hai trasformato con successo i campi IF in testo semplice utilizzando Aspose.Words per .NET. È come trasformare incantesimi complessi in incantesimi semplici, rendendo la gestione dei documenti molto più semplice. Quindi, la prossima volta che ti imbatti in un groviglio di campi, sai esattamente cosa fare. Buona programmazione!
 
 ## Domande frequenti
 

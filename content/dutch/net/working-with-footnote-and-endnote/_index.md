@@ -12,6 +12,6 @@ Woordenverwerking met voetnoten en eindnoten is een uitgebreide hulpbron die u d
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Voetnootkolommen instellen](./set-foot-note-columns/) | Leer hoe u het aantal kolommen voor voetnoten in Word-documenten instelt met Aspose.Words voor .NET. |
-| [Voetnoot- en eindnootpositie instellen](./set-footnote-and-end-note-position/) | Leer hoe u de positie van voetnoten en eindnoten in Word-documenten instelt met Aspose.Words voor .NET. |
-| [Eindnootopties instellen](./set-endnote-options/) | Leer hoe u eindnootopties in Word-documenten instelt met Aspose.Words voor .NET. |
+| [Voetnootkolommen instellen](./set-foot-note-columns/) | Leer hoe u voetnootkolommen in Word-documenten instelt met Aspose.Words voor .NET. Pas uw voetnootindeling eenvoudig aan met onze stapsgewijze handleiding. |
+| [Voetnoot- en eindnootpositie instellen](./set-footnote-and-end-note-position/) | Leer hoe u voetnoot- en eindnootposities in Word-documenten instelt met Aspose.Words voor .NET met deze gedetailleerde stapsgewijze handleiding. |
+| [Eindnootopties instellen](./set-endnote-options/) | Leer hoe u eindnootopties in Word-documenten instelt met Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding. |

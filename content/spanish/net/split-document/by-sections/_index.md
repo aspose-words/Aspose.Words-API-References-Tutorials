@@ -15,7 +15,7 @@ url: /es/net/split-document/by-sections/
 
 Antes de profundizar en el meollo de la cuestión, asegurémonos de tener todo lo que necesitamos para trabajar con Aspose.Words para .NET:
 
-1.  Aspose.Words para la biblioteca .NET: necesita tener esta biblioteca. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para la biblioteca .NET: necesita tener esta biblioteca. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE compatible con .NET.
 3. Comprensión básica de C#: si estás aquí, supongo que ya te sientes cómodo con C#.
 

@@ -19,7 +19,7 @@ Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 2. .NET Framework: Pastikan Anda memiliki .NET Framework 4.0 atau lebih baru.
 3.  Aspose.Words for .NET: Unduh dan instal Aspose.Words for .NET dari[tautan unduhan](https://releases.aspose.com/words/net/).
 4. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# sangat penting.
-5.  Lisensi yang Sah: Dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) atau beli satu dari[membeli tautan](https://purchase.aspose.com/buy).
+5.  Lisensi yang Sah: Dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) atau beli satu dari[tautan beli](https://purchase.aspose.com/buy).
 
 ## Impor Namespace
 

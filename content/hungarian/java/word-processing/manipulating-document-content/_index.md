@@ -14,7 +14,7 @@ Java programozás világában a hatékony dokumentumkezelés számos alkalmazás
 
 ## Az Aspose.Words for Java első lépései
 
-Mielőtt belemerülnénk a dokumentumtartalom kezelésének sajátosságaiba, győződjön meg arról, hogy rendelkezik a kezdéshez szükséges eszközökkel és ismeretekkel. Kovesd ezeket a lepeseket:
+Mielőtt belemerülnénk a dokumentumtartalom kezelésének sajátosságaiba, győződjön meg arról, hogy rendelkezik a kezdéshez szükséges eszközökkel és ismeretekkel. Kövesse az alábbi lépéseket:
 
 1. Telepítés és beállítás
    

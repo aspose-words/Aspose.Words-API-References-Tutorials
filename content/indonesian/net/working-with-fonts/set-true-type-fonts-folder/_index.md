@@ -2,82 +2,96 @@
 title: Setel Folder Font Tipe Benar
 linktitle: Setel Folder Font Tipe Benar
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengatur folder font tipe sebenarnya saat merender dokumen menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengatur folder True Type Fonts di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk memastikan pengelolaan font yang konsisten.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah untuk mengatur folder font tipe sebenarnya saat merender dokumen menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan paket kode sumber C# dan memberi Anda panduan komprehensif untuk membantu Anda memahami dan menerapkan fitur ini dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan mengetahui cara menentukan folder khusus yang berisi font True Type untuk digunakan saat merender dokumen Anda menggunakan Aspose.Words untuk .NET.
+kita menyelami dunia manajemen font yang menakjubkan di dokumen Word menggunakan Aspose.Words untuk .NET. Jika Anda pernah kesulitan menyematkan font yang benar atau memastikan dokumen Anda terlihat sempurna di setiap perangkat, Anda berada di tempat yang tepat. Kami akan memandu proses pengaturan folder True Type Fonts untuk menyederhanakan pengelolaan font dokumen Anda, memastikan konsistensi dan kejelasan dalam dokumen Anda.
 
-## Langkah 1: Tentukan direktori dokumen
-Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ini adalah lokasi di mana Anda ingin menyimpan dokumen hasil editan Anda. Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai.
+## Prasyarat
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Sebelum kita masuk ke seluk beluknya, mari kita bahas beberapa prasyarat untuk memastikan Anda siap untuk sukses:
 
-## Langkah 2: Muat dokumen yang akan dirender
- Selanjutnya, Anda perlu memuat dokumen untuk dirender menggunakan`Document` kelas. Pastikan untuk menentukan jalur dokumen yang benar.
+1.  Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan .NET yang berfungsi, seperti Visual Studio.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan sangat membantu.
+4. Contoh Dokumen: Siapkan dokumen Word yang ingin Anda kerjakan.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Impor Namespace
 
-## Langkah 3: Atur Folder Font Tipe Benar
-Sekarang Anda dapat menentukan folder font tipe sebenarnya yang akan digunakan saat rendering dengan membuat instance dari`FontSettings` kelas dan menggunakan`SetFontsFolder()` metode untuk mengatur folder font. Anda dapat menentukan folder khusus yang berisi font True Type Anda. Parameter kedua untuk`SetFontsFolder()` menunjukkan apakah Anda ingin mencari subfolder dari folder tertentu juga.
+Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan. Ini seperti kru di belakang panggung yang memastikan semuanya berjalan lancar.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Langkah 4: Simpan dokumen yang dirender
- Terakhir, Anda dapat menyimpan dokumen yang dirender ke file menggunakan`Save()` metode`Document` kelas. Pastikan untuk menentukan jalur dan nama file yang benar.
+## Langkah 1: Muat Dokumen Anda
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### Contoh kode sumber untuk Mengatur Folder Font Tipe Benar menggunakan Aspose.Words untuk .NET 
+ Mari kita mulai dengan memuat dokumen Anda. Kami akan menggunakan`Document` kelas dari Aspose.Words untuk memuat dokumen Word yang ada.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Langkah 2: Inisialisasi Pengaturan Font
+
+ Selanjutnya, kita akan membuat sebuah instance dari`FontSettings`kelas. Kelas ini memungkinkan kita untuk menyesuaikan bagaimana font ditangani dalam dokumen kita.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Perhatikan bahwa pengaturan ini akan mengesampingkan sumber font default apa pun yang sedang dicari secara default. Sekarang hanya folder-folder ini yang akan dicari
-// Font saat merender atau menyematkan font. Untuk menambahkan sumber font tambahan sambil mempertahankan sumber font sistem, gunakan FontSettings.GetFontSources dan
-// FontSettings.SetFontSources sebagai gantinya
+```
+
+## Langkah 3: Atur Folder Font
+
+Sekarang sampai pada bagian yang menarik. Kami akan menentukan folder di mana True Type Fonts kami berada. Langkah ini memastikan Aspose.Words menggunakan font dari folder ini saat merender atau menyematkan font.
+
+```csharp
+// Perhatikan bahwa pengaturan ini akan mengesampingkan sumber font default apa pun yang sedang dicari secara default.
+// Sekarang hanya folder-folder ini yang akan dicari fontnya saat merender atau menyematkan font.
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## Langkah 4: Terapkan Pengaturan Font ke Dokumen
+
+Dengan pengaturan font yang dikonfigurasi, kami sekarang akan menerapkan pengaturan ini ke dokumen kami. Langkah ini penting untuk memastikan bahwa dokumen kita menggunakan font yang ditentukan.
+
+```csharp
 // Tetapkan pengaturan font
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## Langkah 5: Simpan Dokumen
+
+Terakhir, kami akan menyimpan dokumen tersebut. Anda dapat menyimpannya dalam berbagai format, namun untuk tutorial ini, kami akan menyimpannya sebagai PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mengatur folder font tipe sebenarnya saat merender dokumen menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah menentukan folder khusus yang berisi font True Type untuk digunakan saat merender dokumen Anda. Aspose.Words menawarkan API yang kuat dan fleksibel untuk Pemrosesan Kata dengan font di dokumen Anda. Dengan pengetahuan ini, Anda dapat mengontrol dan menyesuaikan font yang digunakan saat merender dokumen sesuai kebutuhan spesifik Anda.
 
-### FAQ
+Dan itu dia! Anda telah berhasil menyiapkan folder True Type Fonts untuk dokumen Word Anda menggunakan Aspose.Words untuk .NET. Hal ini memastikan dokumen Anda terlihat konsisten dan profesional di semua platform. Manajemen font adalah aspek penting dalam pembuatan dokumen, dan dengan Aspose.Words, semuanya menjadi sangat mudah.
 
-#### T: Bagaimana cara mengonfigurasi folder font TrueType di Aspose.Words?
+## FAQ
 
- J: Untuk mengonfigurasi folder font TrueType di Aspose.Words, Anda dapat menggunakan`SetTrueTypeFontsFolder` metode`Fonts` kelas yang menentukan lokasi folder yang berisi font TrueType.
+### Bisakah saya menggunakan beberapa folder font?
+ Ya, Anda dapat menggunakan beberapa folder font dengan menggabungkannya`FontSettings.GetFontSources`Dan`FontSettings.SetFontSources`.
 
-#### T: Jenis font apa yang dianggap sebagai font TrueType?
+### Bagaimana jika folder font yang ditentukan tidak ada?
+Jika folder font yang ditentukan tidak ada, Aspose.Words tidak akan dapat menemukan font tersebut, dan font sistem default akan digunakan sebagai gantinya.
 
-J: Font TrueType adalah format font yang populer. Mereka sering digunakan dalam dokumen Word dan memiliki ekstensi file .ttf atau .ttc.
+### Bisakah saya kembali ke pengaturan font default?
+ Ya, Anda dapat kembali ke pengaturan font default dengan mengatur ulang`FontSettings` contoh.
 
-#### T: Bisakah saya menentukan beberapa folder font TrueType di Aspose.Words?
+### Apakah mungkin untuk menyematkan font ke dalam dokumen?
+Ya, Aspose.Words memungkinkan Anda menyematkan font di dokumen untuk memastikan konsistensi di berbagai perangkat.
 
-J: Ya, Anda dapat menentukan beberapa folder font TrueType di Aspose.Words menggunakan`SetTrueTypeFontsFolder` metode`Fonts` kelas dengan daftar lokasi folder.
-
-#### T: Bagaimana cara memeriksa folder font TrueType yang dikonfigurasi di Aspose.Words?
-
- J: Untuk memeriksa folder TrueType Fonts yang dikonfigurasi di Aspose.Words, Anda dapat menggunakan`GetTrueTypeFontsFolder` metode`Fonts` kelas untuk mendapatkan lokasi folder TrueType Fonts yang dikonfigurasi.
-
-#### T: Mengapa penting untuk mengonfigurasi folder font TrueType di Aspose.Words?
-
-J: Menyiapkan folder font TrueType di Aspose.Words penting karena membantu Aspose.Words menemukan font yang diperlukan saat memproses dokumen Word. Hal ini memastikan konsistensi dalam format dan tampilan dokumen, bahkan di berbagai sistem.
+### Dalam format apa saya dapat menyimpan dokumen saya?
+Aspose.Words mendukung berbagai format termasuk PDF, DOCX, HTML, dan banyak lagi.

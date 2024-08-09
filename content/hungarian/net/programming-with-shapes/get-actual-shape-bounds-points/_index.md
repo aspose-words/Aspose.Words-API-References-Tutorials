@@ -9,7 +9,7 @@ url: /hu/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 ## Bevezetés
 
-Próbálkozott már alakzatokkal manipulálni Word-dokumentumaiban, és elgondolkozott a pontos méretükön? Az alakzatok pontos határainak ismerete kulcsfontosságú lehet különféle dokumentumszerkesztési és formázási feladatoknál. Akár egy részletes jelentést, akár egy divatos hírlevelet vagy egy kifinomult szórólapot készít, a formaméretek megértése biztosítja, hogy a design pontosan nézzen ki. Ebben az útmutatóban azt mutatjuk be, hogyan lehet az alakzatok tényleges határait pontokban megadni az Aspose.Words for .NET használatával. Készen áll arra, hogy formáit tökéletessé tegye? Kezdjük el!
+Próbálkozott már alakzatokkal manipulálni Word-dokumentumaiban, és elgondolkozott a pontos méretükön? Az alakzatok pontos határainak ismerete kulcsfontosságú lehet különféle dokumentumszerkesztési és formázási feladatoknál. Akár egy részletes jelentést, akár egy divatos hírlevelet vagy egy kifinomult szórólapot készít, a formaméretek megértése biztosítja, hogy a design pontosan nézzen ki. Ebben az útmutatóban azt mutatjuk be, hogyan lehet az alakzatok tényleges határait pontokban megadni az Aspose.Words for .NET használatával. Készen áll arra, hogy formáit tökéletessé tegye? Kezdjük is!
 
 ## Előfeltételek
 

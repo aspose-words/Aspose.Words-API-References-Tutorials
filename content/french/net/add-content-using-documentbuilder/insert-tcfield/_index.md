@@ -9,7 +9,7 @@ url: /fr/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## Introduction
 
-Salut! Si vous plongez dans le monde de l'automatisation des documents, vous êtes au bon endroit. Aujourd'hui, nous allons explorer comment insérer un champ TC (Table des matières) dans un document Word à l'aide d'Aspose.Words pour .NET. Croyez-moi, à la fin de ce didacticiel, vous vous sentirez comme un sorcier jetant des sorts dans vos documents Word. Prêt à commencer? Faisons cela!
+Salut! Si vous plongez dans le monde de l'automatisation des documents, vous êtes au bon endroit. Aujourd'hui, nous allons explorer comment insérer un champ TC (Table des matières) dans un document Word à l'aide d'Aspose.Words pour .NET. Croyez-moi, à la fin de ce didacticiel, vous vous sentirez comme un sorcier jetant des sorts dans vos documents Word. Prêt à commencer ? Faisons ça !
 
 ## Conditions préalables
 
@@ -79,7 +79,7 @@ Boom! Vous venez de créer un document Word avec un champ TC. C'est génial à q
 
 ## Conclusion
 
- Et voila! Nous avons expliqué comment insérer un champ TC dans un document Word à l'aide d'Aspose.Words pour .NET. C'est assez simple, non ? Grâce à ces compétences, vous pouvez désormais automatiser et personnaliser vos documents Word comme un pro. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou contactez leur[forum d'entraide](https://forum.aspose.com/c/words/8). Bon codage !
+ Et voilà ! Nous avons expliqué comment insérer un champ TC dans un document Word à l'aide d'Aspose.Words pour .NET. C'est assez simple, non ? Grâce à ces compétences, vous pouvez désormais automatiser et personnaliser vos documents Word comme un pro. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou contactez leur[forum d'assistance](https://forum.aspose.com/c/words/8). Bon codage !
 
 ## FAQ
 

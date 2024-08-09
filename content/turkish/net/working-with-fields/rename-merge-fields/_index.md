@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 
 ## Çözüm
 
-İşte buyur! Adımları öğrendikten sonra Aspose.Words for .NET kullanarak Word belgelerindeki birleştirme alanlarını yeniden adlandırmak çok kolaydır. Bu kılavuzu takip ederek Word belgelerinizi ihtiyaçlarınıza uyacak şekilde kolayca değiştirebilir ve özelleştirebilirsiniz. İster rapor oluşturuyor olun, ister kişiselleştirilmiş mektuplar oluşturuyor olun, ister verileri yönetiyor olun, bu teknik işinize yarayacaktır.
+Ve işte karşınızda! Adımları öğrendikten sonra Aspose.Words for .NET kullanarak Word belgelerindeki birleştirme alanlarını yeniden adlandırmak çok kolaydır. Bu kılavuzu takip ederek Word belgelerinizi ihtiyaçlarınıza uyacak şekilde kolayca değiştirebilir ve özelleştirebilirsiniz. İster rapor oluşturuyor olun, ister kişiselleştirilmiş mektuplar oluşturuyor olun, ister verileri yönetiyor olun, bu teknik işinize yarayacaktır.
 
 ## SSS'ler
 

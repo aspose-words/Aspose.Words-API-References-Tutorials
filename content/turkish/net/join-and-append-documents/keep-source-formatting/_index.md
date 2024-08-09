@@ -1,6 +1,6 @@
 ---
-title: Kaynak biçimlendirmesini koruyun
-linktitle: Kaynak biçimlendirmesini koruyun
+title: Kaynak Formatını Koru
+linktitle: Kaynak Formatını Koru
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak biçimlendirmeyi korurken Word belgelerini nasıl birleştireceğinizi öğrenin. Belge birleştirme görevlerini otomatikleştirmek isteyen geliştiriciler için idealdir.
 type: docs
@@ -77,7 +77,7 @@ dstDoc.Save(dataDir + "MergedDocument.docx");
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak orijinal formatı korurken Word belgelerini nasıl birleştireceğinizi ele aldık. Bu yaklaşım, kaynak belgelerdeki stillerin, yazı tiplerinin ve düzenlerin hedef belgeye sorunsuz bir şekilde entegre edilmesini sağlayarak belge birleştirme görevleri için sağlam bir çözüm sunar.
+Bu eğitimde Aspose.Words for .NET kullanarak orijinal formatı korurken Word belgelerini nasıl birleştireceğinizi ele aldık. Bu yaklaşım, kaynak belgelerdeki stillerin, yazı tiplerinin ve düzenlerin hedef belgeye sorunsuz bir şekilde entegre edilmesini sağlayarak belge birleştirme görevleri için sağlam bir çözüm sağlar.
 
 ## SSS'ler
 

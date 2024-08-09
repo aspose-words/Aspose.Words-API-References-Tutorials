@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-comments/add-comments/
 ---
-## introduzione
+## Introduzione
 
 Benvenuto nella nostra guida dettagliata sull'aggiunta di commenti ai tuoi documenti Word utilizzando Aspose.Words per .NET! Se stai cercando di semplificare il processo di revisione dei documenti incorporando i commenti in modo programmatico, sei nel posto giusto. Questo tutorial ti guiderà attraverso tutto ciò che devi sapere, dalla configurazione del tuo ambiente alla scrittura e al salvataggio di commenti nei tuoi documenti Word. Immergiamoci e rendiamo la collaborazione dei documenti un gioco da ragazzi!
 

@@ -15,7 +15,7 @@ Formatowanie warunkowe umożliwia zastosowanie określonego formatowania do kom�
 
 Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-1. Aspose.Words dla .NET: Potrzebujesz biblioteki Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Potrzebujesz biblioteki Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: odpowiednie środowisko programistyczne, takie jak Visual Studio.
 3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie pomocna.
 4. Dokument programu Word: dokument programu Word, w którym chcesz zastosować formatowanie warunkowe.

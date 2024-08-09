@@ -15,7 +15,7 @@ url: /ru/net/programming-with-loadoptions/load-with-encoding/
 
 Прежде чем мы перейдем к подробностям, давайте убедимся, что у вас есть все необходимое:
 
-1.  Aspose.Words для .NET: вы можете[скачать](https://releases.aspose.com/words/net/) Последняя версия.
+1.  Aspose.Words для .NET: вы можете[скачать](https://releases.aspose.com/words/net/) последняя версия.
 2. Среда разработки .NET: Visual Studio работает отлично.
 3. Документ Word: убедитесь, что он закодирован в формате, с которым вы имеете дело, например UTF-7.
 

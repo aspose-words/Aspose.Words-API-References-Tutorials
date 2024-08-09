@@ -47,7 +47,7 @@ Na de vergelijking is het essentieel om de wijzigingen tussen de twee documenten
 List<DocumentChange> changes = comparer.getChanges();
 ```
 
-## Veranderingen doorvoeren
+## Wijzigingen toepassen
 
 Nadat u de wijzigingen heeft geïdentificeerd, kunt u ervoor kiezen om ze selectief of allemaal tegelijk toe te passen op een van de documenten.
 

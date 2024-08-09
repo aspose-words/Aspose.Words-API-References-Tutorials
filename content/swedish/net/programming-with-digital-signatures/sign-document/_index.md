@@ -47,7 +47,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 ### Förklaring
 
 - `dataDir`: Detta är katalogen där ditt certifikat och dina dokument lagras.
-- `CertificateHolder.Create` : Den här metoden laddar certifikatet från den angivna sökvägen. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog, och`"morzal.pfx"` med namnet på din certifikatfil. De`"aw"` är lösenordet för certifikatet.
+- `CertificateHolder.Create` : Den här metoden laddar certifikatet från den angivna sökvägen. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog, och`"morzal.pfx"` med namnet på din certifikatfil. De`"aw"` är lösenordet för certifikatet.
 
 ## Steg 2: Ladda Word-dokumentet
 
@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Digitally signed.docx");
 
 ### Förklaring
 
-- `Document` : Den här klassen representerar Word-dokumentet. Byta ut`"Digitally signed.docx"`med namnet på ditt dokument.
+- `Document` : Den här klassen representerar Word-dokumentet. Ersätta`"Digitally signed.docx"`med namnet på ditt dokument.
 
 ## Steg 3: Signera dokumentet
 
@@ -86,7 +86,7 @@ doc.Save(dataDir + "Document.Signed.docx");
 
 ### Förklaring
 
-- `doc.Save` : Denna metod sparar det signerade dokumentet. Byta ut`"Document.Signed.docx"` med önskat namn på ditt undertecknade dokument.
+- `doc.Save` : Denna metod sparar det signerade dokumentet. Ersätta`"Document.Signed.docx"` med önskat namn på ditt undertecknade dokument.
 
 ## Slutsats
 
@@ -107,4 +107,4 @@ Ja, så länge .pfx-filen innehåller ett giltigt digitalt certifikat och du har
  Aspose.Words för .NET är ett kommersiellt bibliotek. Du kan ladda ner en gratis testversion[här](https://releases.aspose.com/) , men du måste köpa en licens för full funktionalitet. Du kan köpa den[här](https://purchase.aspose.com/buy).
 
 ### Var kan jag hitta mer information om Aspose.Words för .NET?
- Du kan hitta omfattande dokumentation[här](https://reference.aspose.com/words/net/) och hjälp[här](https://forum.aspose.com/c/words/8).
+ Du kan hitta omfattande dokumentation[här](https://reference.aspose.com/words/net/) och stöd[här](https://forum.aspose.com/c/words/8).

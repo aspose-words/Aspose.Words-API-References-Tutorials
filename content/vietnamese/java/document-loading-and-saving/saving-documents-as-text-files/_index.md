@@ -37,7 +37,7 @@ Trong mã này, chúng tôi tạo một tài liệu mới và thêm một số v
 
 ## Bước 2: Xác định tùy chọn lưu văn bản
 
-Tiếp theo, chúng ta cần xác định các tùy chọn lưu văn bản chỉ định cách lưu tài liệu dưới dạng tệp văn bản. Chúng tôi có thể định cấu hình các cài đặt khác nhau như thêm dấu bidi, thụt lề danh sách, v.v. Chúng ta hãy xem hai ví dụ:
+Tiếp theo, chúng ta cần xác định các tùy chọn lưu văn bản chỉ định cách lưu tài liệu dưới dạng tệp văn bản. Chúng tôi có thể định cấu hình các cài đặt khác nhau như thêm dấu giá thầu, thụt lề danh sách, v.v. Chúng ta hãy xem hai ví dụ:
 
 ### Ví dụ 1: Thêm nhãn hiệu Bidi
 

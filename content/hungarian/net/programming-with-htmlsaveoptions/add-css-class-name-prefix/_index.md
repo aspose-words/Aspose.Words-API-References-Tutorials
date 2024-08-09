@@ -86,7 +86,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 
 ### 3.2. lépés: Állítsa be a CSS-osztálynév előtagját
 
- Most állítsuk be a`CssClassNamePrefix` tulajdonságot a kívánt előtaghoz. Ebben a példában használjuk`"pfx_"`.
+ Most állítsuk be a`CssClassNamePrefix` tulajdonságot a kívánt előtaghoz. Ehhez a példához használjuk`"pfx_"`.
 
 ```csharp
 saveOptions.CssClassNamePrefix = "pfx_";
@@ -120,7 +120,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  A`CssClassNamePrefix` tulajdonság külső CSS-sel működik. A beépített CSS-hez más megközelítésre lesz szüksége.
 
 ### Hogyan vehetek fel más HTML mentési lehetőségeket?
- Különféle tulajdonságait konfigurálhatja`HtmlSaveOptions` a HTML-kimenet testreszabásához. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Különféle tulajdonságait konfigurálhatja`HtmlSaveOptions` a HTML-kimenet testreszabásához. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### Elmenthető a HTML adatfolyamba?
  Teljesen! A dokumentumot adatfolyamba mentheti, ha átadja a stream objektumot a`Save` módszer.

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/receive-warning-notification/
 ---
+## Zavedení
 
 Už vás nebaví řešit neočekávané problémy s písmy ve vašich dokumentech? S Aspose.Words for .NET můžete být upozorněni na jakékoli potenciální problémy během zpracování dokumentu, což usnadňuje udržování kvality dokumentu. Tento komplexní průvodce vás provede nastavením varovných upozornění v Aspose.Words a zajistí, že už nikdy nezmeškáte zásadní varování.
 
@@ -17,7 +18,7 @@ Než se ponoříme, ujistěte se, že máte následující:
 - Základní znalost C#: Znalost C# vám pomůže pochopit a implementovat kroky.
 -  Aspose.Words for .NET Library: Stáhněte a nainstalujte ji z[odkaz ke stažení](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění kódu.
--  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) pracovat s.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) pracovat.
 
 ## Importovat jmenné prostory
 
@@ -69,7 +70,7 @@ doc.WarningCallback = callback;
 ```
 ## Krok 5: Aktualizujte rozvržení stránky
 
- Zavolej`UpdatePageLayout` metoda. Tím se vykreslí dokument v paměti a zachytí se všechna varování, která se vyskytnou během vykreslování.
+ Zavolejte na`UpdatePageLayout` metoda. Tím se vykreslí dokument v paměti a zachytí se všechna varování, která se vyskytnou během vykreslování.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -105,7 +106,7 @@ Ne, můžete zadat pouze jedno výchozí písmo pro nahrazení. Můžete však n
 
 ### Q4: Kde najdu podporu pro Aspose.Words?
 
- Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.
+ Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### Q5: Je možné získat dočasnou licenci pro Aspose.Words?
 

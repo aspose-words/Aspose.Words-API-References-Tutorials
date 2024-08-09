@@ -89,7 +89,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ## Conclusion
 
-Et c'est tout! Vous avez réussi à supprimer la restriction en lecture seule d'un document Word à l'aide d'Aspose.Words pour .NET. Ce processus est simple et garantit que vos documents peuvent être modifiés librement sans aucune restriction inutile. 
+Et c'est tout ! Vous avez réussi à supprimer la restriction en lecture seule d'un document Word à l'aide d'Aspose.Words pour .NET. Ce processus est simple et garantit que vos documents peuvent être modifiés librement sans aucune restriction inutile. 
 
 Que vous travailliez sur un petit projet ou que vous traitiez plusieurs documents, savoir comment gérer la protection des documents peut vous faire gagner beaucoup de temps et vous éviter bien des tracas. Alors n’hésitez plus et essayez-le dans vos projets. Bon codage !
 

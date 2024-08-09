@@ -102,7 +102,7 @@ Parabéns! Você aprendeu com sucesso como reconhecer e substituir texto em padr
 Aspose.Words for .NET é uma biblioteca poderosa para trabalhar com documentos do Word em aplicativos .NET. Ele permite criar, modificar e converter documentos programaticamente.
 
 ### Como posso instalar o Aspose.Words para .NET?
- Você pode instalar o Aspose.Words for .NET a partir do[Link para Download](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
+ Você pode instalar o Aspose.Words for .NET a partir do[link para baixar](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
 
 ### Posso usar expressões regulares com Aspose.Words for .NET?
 Sim, Aspose.Words oferece suporte a expressões regulares para operações de localização e substituição, permitindo manipulações complexas de texto.

@@ -2,12 +2,12 @@
 title: Uso de objetos OLE y controles ActiveX en Aspose.Words para Java
 linktitle: Uso de objetos OLE y controles ActiveX
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a utilizar objetos OLE y controles ActiveX en Aspose.Words para Java. Cree documentos interactivos con facilidad. ¡Empieza ahora!
+description: Aprenda a utilizar objetos OLE y controles ActiveX en Aspose.Words para Java. Cree documentos interactivos con facilidad. ¡Empiece ahora!
 type: docs
 weight: 21
 url: /es/java/using-document-elements/using-ole-objects-and-activex/
 ---
-En este tutorial, exploraremos cómo trabajar con objetos OLE (vinculación e incrustación de objetos) y controles ActiveX en Aspose.Words para Java. Los objetos OLE y los controles ActiveX son herramientas poderosas que le permiten mejorar sus documentos incrustando o vinculando contenido externo, como hojas de cálculo, archivos multimedia o controles interactivos. Siga mientras profundizamos en los ejemplos de código y aprenda a utilizar estas funciones de forma eficaz.
+En este tutorial, exploraremos cómo trabajar con objetos OLE (vinculación e incrustación de objetos) y controles ActiveX en Aspose.Words para Java. Los objetos OLE y los controles ActiveX son herramientas poderosas que le permiten mejorar sus documentos incrustando o vinculando contenido externo, como hojas de cálculo, archivos multimedia o controles interactivos. Siga mientras profundizamos en los ejemplos de código y aprenda cómo utilizar estas funciones de forma eficaz.
 
 ### Requisitos previos
 
@@ -60,7 +60,7 @@ En este ejemplo, insertamos un objeto OLE usando un OlePackage, lo que le permit
 
 ### Insertar un objeto OLE como icono
 
-Ahora veamos cómo insertar un objeto OLE como icono. Esto resulta útil cuando desea mostrar un icono que representa un archivo incrustado.
+Ahora veamos cómo insertar un objeto OLE como icono. Esto resulta útil cuando desea mostrar un icono que represente un archivo incrustado.
 
 ```java
 @Test

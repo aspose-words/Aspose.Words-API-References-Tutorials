@@ -10,7 +10,7 @@ url: /nl/net/document-formatting/get-paragraph-style-separator/
 
 ## Invoering
 
-Ooit geprobeerd door het labyrint van een Word-document te navigeren, om vervolgens te worden struikeld over die stiekeme scheidingstekens voor alineastijlen? Als je daar bent geweest, weet je dat de strijd reëel is. Maar Raad eens? Met Aspose.Words voor .NET is het identificeren en verwerken van deze scheidingstekens een fluitje van een cent. Laten we in deze tutorial duiken en van jou een professional voor het scheiden van alineastijlen maken!
+Ooit geprobeerd door het labyrint van een Word-document te navigeren, om vervolgens te worden struikeld over die stiekeme scheidingstekens voor alineastijlen? Als je daar bent geweest, weet je dat de strijd reëel is. Maar raad eens? Met Aspose.Words voor .NET is het identificeren en verwerken van deze scheidingstekens een fluitje van een cent. Laten we in deze tutorial duiken en van jou een professional voor het scheiden van alineastijlen maken!
 
 ## Vereisten
 

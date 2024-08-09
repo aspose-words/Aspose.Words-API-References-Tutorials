@@ -124,7 +124,7 @@ Você pode implementar sua lógica personalizada para dividir documentos com bas
 
 Aspose.Words for Java também fornece funcionalidade para combinar os documentos divididos em um único documento. Este recurso é útil quando você precisa mesclar seções individuais em um documento unificado.
 
-## 10. Considerações de desempenho
+## 10. Considerações de Desempenho
 
 Ao lidar com documentos grandes, é essencial considerar otimizações de desempenho. Aspor.Palavras
 
@@ -154,4 +154,4 @@ Sim, Aspose.Words for Java suporta a divisão de documentos protegidos por senha
 
 ### Q5. O Aspose.Words for Java é adequado para processamento de documentos em nível empresarial?
 
-Absolutamente! Aspose.Words for Java é amplamente utilizado em aplicativos de nível empresarial para várias tarefas de processamento de documentos devido à sua robustez e amplo conjunto de recursos.
+Absolutamente! Aspose.Words for Java é amplamente utilizado em aplicativos de nível empresarial para várias tarefas de processamento de documentos devido à sua robustez e extenso conjunto de recursos.

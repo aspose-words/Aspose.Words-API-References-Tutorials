@@ -99,4 +99,4 @@ Si bien puede utilizar Aspose.Words sin licencia, algunas funciones avanzadas pu
  Sí, puedes personalizar los márgenes y otras configuraciones para diferentes secciones usando el`Section` clase.
 
 ### ¿Qué otras características ofrece Aspose.Words?
- Aspose.Words admite una amplia gama de funciones que incluyen conversión de documentos, combinación de correspondencia y amplias opciones de formato. Comprobar el[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Aspose.Words admite una amplia gama de funciones que incluyen conversión de documentos, combinación de correspondencia y amplias opciones de formato. Compruebe el[documentación](https://reference.aspose.com/words/net/) para más detalles.

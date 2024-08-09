@@ -82,7 +82,7 @@ Parabéns! Você converteu com sucesso metarquivos para PNG em um documento do W
 ## Perguntas frequentes
 
 ### Posso converter outros tipos de arquivo além de metarquivos para PNG?
- Aspose.Words for .NET oferece amplo suporte para vários formatos de arquivo. Verifica a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Aspose.Words for .NET oferece amplo suporte para vários formatos de arquivo. Verifique o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
 
 ### Existe uma maneira de processar vários documentos em lote?
 Sim, você pode percorrer um diretório de documentos e aplicar as mesmas opções de carregamento a cada arquivo.
@@ -94,4 +94,4 @@ Os metarquivos permanecerão em seu formato original, o que pode não ser compat
  Sim, é necessária uma licença para funcionalidade completa. Você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para fins de teste.
 
 ### Posso usar este método para outros formatos gráficos como JPEG ou GIF?
- Este método específico é para metarquivos, mas Aspose.Words for .NET oferece suporte a vários formatos de imagem. Consulte o[documentação](https://reference.aspose.com/words/net/) Para maiores informações.
+ Este método específico é para metarquivos, mas Aspose.Words for .NET oferece suporte a vários formatos de imagem. Consulte o[documentação](https://reference.aspose.com/words/net/) para mais informações.

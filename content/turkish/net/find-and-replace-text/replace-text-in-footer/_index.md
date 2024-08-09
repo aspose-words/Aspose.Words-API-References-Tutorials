@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- Bu örnekte,`MatchCase` ayarlandı`false` büyük/küçük harf farklılıklarını göz ardı etmek ve`FindWholeWordsOnly` ayarlandı`false` kelimelerin içinde kısmi eşleşmelere izin vermek için.
+ Bu örnekte,`MatchCase` şu şekilde ayarlandı:`false` büyük/küçük harf farklılıklarını göz ardı etmek ve`FindWholeWordsOnly` şu şekilde ayarlandı:`false` kelimelerin içinde kısmi eşleşmelere izin vermek için.
 
 ## 4. Adım: Alt Bilgideki Metni Değiştirin
 
@@ -102,7 +102,7 @@ Altbilgideki herhangi bir metni değiştirebilirsiniz. Birden fazla satırı de�
  Kesinlikle! Ayarlamak`MatchCase` ile`true` içinde`FindReplaceOptions` değiştirmeyi büyük/küçük harfe duyarlı hale getirmek için.
 
 ### Metin değişimi için normal ifadeleri kullanabilir miyim?
-Evet, Aspose.Words bulma ve değiştirme işlemleri için normal ifadelerin kullanılmasını destekler. Bir normal ifade modeli belirleyebilirsiniz.`Range.Replace` yöntem.
+Evet, Aspose.Words bulma ve değiştirme işlemleri için normal ifadelerin kullanılmasını destekler. Bir normal ifade modeli belirleyebilirsiniz.`Range.Replace` Yöntem.
 
 ### Bir belgede birden çok altbilgiyi nasıl yönetirim?
 Belgenizde farklı altbilgilere sahip birden fazla bölüm varsa, her bölümü yineleyin ve metin değiştirmeyi her altbilgi için ayrı ayrı uygulayın.

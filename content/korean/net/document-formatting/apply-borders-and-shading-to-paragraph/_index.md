@@ -113,7 +113,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
  전적으로! .NET용 Aspose.Words를 사용하면 각 테두리를 개별적으로 사용자 정의할 수 있습니다. 그냥 설정하세요`LineStyle` 가이드에 표시된 대로 각 테두리 유형에 대해
 
 ### 다른 어떤 음영 텍스처를 사용할 수 있나요?  
- 단색, 가로 줄무늬, 세로 줄무늬 등 사용할 수 있는 여러 텍스처가 있습니다. 을 체크 해봐[Aspose 문서](https://reference.aspose.com/words/net/) 전체 목록을 보려면.
+ 단색, 가로 줄무늬, 세로 줄무늬 등 사용할 수 있는 여러 텍스처가 있습니다. 확인해보세요[Aspose 문서](https://reference.aspose.com/words/net/) 전체 목록을 보려면.
 
 ### 테두리 색상을 어떻게 변경할 수 있나요?  
  다음을 사용하여 테두리 색상을 설정할 수 있습니다.`Color` 각 테두리에 대한 속성입니다. 예를 들어,`borders[BorderType.Left].Color = Color.Red;`.

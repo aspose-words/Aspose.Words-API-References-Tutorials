@@ -62,7 +62,7 @@ Mentse el a módosított dokumentumot a mezők átalakítása után:
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
- Beállítani`"WorkingWithFields.ConvertFieldsInBody.docx"` a kívánt kimeneti fájl elérési útjának megadásához.
+ Állítsa be`"WorkingWithFields.ConvertFieldsInBody.docx"` a kívánt kimeneti fájl elérési útjának megadásához.
 
 ## Következtetés
 

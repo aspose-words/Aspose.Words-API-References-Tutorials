@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Här definierar vi sökvägen till din dokumentkatalog och laddar Word-dokumentet med hjälp av`Document` klass. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
+ Här definierar vi sökvägen till din dokumentkatalog och laddar Word-dokumentet med hjälp av`Document` klass. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
 
 ## Steg 2: Konfigurera PDF-sparalternativ
 

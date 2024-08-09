@@ -120,7 +120,7 @@ En daar heb je het! Door deze stappen te volgen, hebt u met succes een CSS-klass
  De`CssClassNamePrefix`property werkt met externe CSS. Voor inline CSS heb je een andere aanpak nodig.
 
 ### Hoe kan ik andere HTML-opslagopties toevoegen?
- U kunt verschillende eigenschappen van configureren`HtmlSaveOptions` om uw HTML-uitvoer aan te passen. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ U kunt verschillende eigenschappen van configureren`HtmlSaveOptions` om uw HTML-uitvoer aan te passen. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Is het mogelijk om de HTML in een stream op te slaan?
  Absoluut! U kunt het document in een stream opslaan door het streamobject door te geven aan de`Save` methode.

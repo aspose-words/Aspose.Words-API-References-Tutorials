@@ -47,7 +47,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 ### Uitleg
 
 - `dataDir`: Dit is de map waar uw certificaat en documenten worden opgeslagen.
-- `CertificateHolder.Create` : Deze methode laadt het certificaat vanaf het opgegeven pad. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map, en`"morzal.pfx"` met de naam van uw certificaatbestand. De`"aw"` is het wachtwoord voor het certificaat.
+- `CertificateHolder.Create` : Deze methode laadt het certificaat vanaf het opgegeven pad. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory, en`"morzal.pfx"` met de naam van uw certificaatbestand. De`"aw"` is het wachtwoord voor het certificaat.
 
 ## Stap 2: Laad het Word-document
 
@@ -104,7 +104,7 @@ Voor het aanmaken van een digitale handtekening is een digitaal certificaat nodi
 Ja, zolang het .pfx-bestand een geldig digitaal certificaat bevat en u over het wachtwoord beschikt om er toegang toe te krijgen.
 
 ### Is Aspose.Words voor .NET gratis te gebruiken?
- Aspose.Words voor .NET is een commerciële bibliotheek. U kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/) , maar voor volledige functionaliteit moet u een licentie aanschaffen. Je kan het kopen[hier](https://purchase.aspose.com/buy).
+ Aspose.Words voor .NET is een commerciële bibliotheek. U kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/) , maar voor volledige functionaliteit moet u een licentie aanschaffen. Je kunt het kopen[hier](https://purchase.aspose.com/buy).
 
 ### Waar kan ik meer informatie vinden over Aspose.Words voor .NET?
  U kunt uitgebreide documentatie vinden[hier](https://reference.aspose.com/words/net/) en ondersteuning[hier](https://forum.aspose.com/c/words/8).

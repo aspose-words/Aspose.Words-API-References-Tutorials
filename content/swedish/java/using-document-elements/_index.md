@@ -22,13 +22,13 @@ En av kärnfärdigheterna du kommer att förvärva genom dessa handledningar är
 
 Med Aspose.Words för Java kan du skapa dynamiska dokument i farten. Föreställ dig att generera fakturor, rapporter eller kontrakt direkt från din Java-applikation. Dessa handledningar kommer att leda dig genom processen att dynamiskt lägga till innehåll, formatera och spara dokument i olika format som PDF, DOCX och mer.
 
-## Förbättra dina färdigheter i dokumentbehandling
+## Förbättra dina färdigheter i dokumenthantering
 
 Genom att följa dessa handledningar lär du dig inte bara grunderna för manipulering av dokumentelement utan också dyka djupt in i avancerade ämnen som stil, dokumentskydd, e-postkoppling och mer. Den kunskap som du får här ger dig möjlighet att hantera även de mest komplexa dokumentbearbetningsuppgifterna med lätthet.
 
 ## Kom igång idag
 
- Redo att komma igång? Gå över till[Aspose.Words för Java API-dokumentation](https://reference.aspose.com/words/java/) för att få tillgång till den omfattande dokumentationen. Du hittar detaljerade förklaringar, kodexempel och API-referenser som guidar dig genom varje aspekt av manipulering av dokumentelement.
+ Redo att börja? Gå över till[Aspose.Words för Java API-dokumentation](https://reference.aspose.com/words/java/) för att få tillgång till den omfattande dokumentationen. Du hittar detaljerade förklaringar, kodexempel och API-referenser som guidar dig genom varje aspekt av manipulering av dokumentelement.
 
 Sammanfattningsvis är att behärska dokumentelementmanipulation med Aspose.Words för Java en värdefull färdighet för alla Java-utvecklare som arbetar med dokument. Dessa handledningar ger en tydlig och strukturerad väg som hjälper dig att bli skicklig inom detta område. Så kavla upp ärmarna, dyk in i handledningarna och lås upp den fulla potentialen hos Aspose.Words för Java i dina dokumentbearbetningsprojekt.
 
@@ -58,7 +58,7 @@ Lär dig att använda Markdown i Aspose.Words för Java med denna steg-för-steg
 ### [Använda noder i Aspose.Words för Java](./using-nodes/)
 Lär dig att manipulera noder i Aspose.Words för Java med denna steg-för-steg handledning. Lås upp dokumentbearbetningskraft.
 ### [Använda OLE-objekt och ActiveX-kontroller i Aspose.Words för Java](./using-ole-objects-and-activex/)
-Lär dig att använda OLE-objekt och ActiveX-kontroller i Aspose.Words för Java. Skapa interaktiva dokument med lätthet. Börja nu!
+Lär dig att använda OLE-objekt och ActiveX-kontroller i Aspose.Words för Java. Skapa interaktiva dokument med lätthet. Kom igång nu!
 ### [Använda revisioner i Aspose.Words för Java](./using-revisions/)
 Lär dig att använda Aspose.Words för Javas revisionskontroller effektivt. Steg-för-steg-guide för utvecklare. Optimera din dokumenthantering.
 ### [Använda sektioner i Aspose.Words för Java](./using-sections/)

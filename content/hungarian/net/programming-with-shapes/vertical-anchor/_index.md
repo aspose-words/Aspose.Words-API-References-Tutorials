@@ -9,7 +9,7 @@ url: /hu/net/programming-with-shapes/vertical-anchor/
 ---
 ## Bevezetés
 
-Előfordult már, hogy szüksége van arra, hogy pontosan szabályozza, hol jelenjen meg a szöveg egy Word-dokumentum szövegdobozában? Talán azt szeretné, hogy a szöveg a szövegdoboz tetejéhez, közepéhez vagy aljához rögzítve legyen? Ha igen, akkor jó helyen jársz! Ebben az oktatóanyagban megvizsgáljuk, hogyan használható az Aspose.Words for .NET a Word dokumentumok szövegdobozainak függőleges rögzítésére. A függőleges rögzítést úgy képzelje el, mint egy varázspálcát, amely pontosan oda helyezi a szöveget a tárolójában, ahol szeretné. Készen állsz a merülésre? Kezdjük el!
+Előfordult már, hogy szüksége van arra, hogy pontosan szabályozza, hol jelenjen meg a szöveg egy Word-dokumentum szövegdobozában? Talán azt szeretné, hogy a szöveg a szövegdoboz tetejéhez, közepéhez vagy aljához rögzítve legyen? Ha igen, akkor jó helyen jársz! Ebben az oktatóanyagban megvizsgáljuk, hogyan használható az Aspose.Words for .NET a Word dokumentumok szövegdobozainak függőleges rögzítésére. A függőleges rögzítést úgy képzelje el, mint egy varázspálcát, amely pontosan oda helyezi a szöveget a tárolójában, ahol szeretné. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Szúrjon be egy szövegdoboz alakzatot
 
-Most adjunk szövegdobozt a dokumentumunkhoz. Itt fog élni a szöveged. 
+Most adjunk hozzá egy szövegdobozt a dokumentumunkhoz. Itt fog élni a szöveged. 
 
 ```csharp
 Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
@@ -62,7 +62,7 @@ Itt történik a varázslat! A szövegmezőn belül beállíthatja a szöveg fü
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
- Ebben az esetben,`TextBoxAnchor.Bottom`biztosítja, hogy a szöveg a szövegdoboz aljához rögzítve legyen. Ha azt szeretné, hogy középre vagy a tetejére igazodjon, akkor használja`TextBoxAnchor.Center` vagy`TextBoxAnchor.Top`, ill.
+ Ebben az esetben`TextBoxAnchor.Bottom`biztosítja, hogy a szöveg a szövegdoboz aljához rögzítve legyen. Ha azt szeretné, hogy középre vagy a tetejére igazodjon, akkor használja`TextBoxAnchor.Center` vagy`TextBoxAnchor.Top`, ill.
 
 ## 4. lépés: Szöveg hozzáadása a szövegdobozhoz
 

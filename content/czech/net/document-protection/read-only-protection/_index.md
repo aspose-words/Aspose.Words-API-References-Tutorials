@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/document-protection/read-only-protection/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o správu dokumentů aplikace Word, jsou chvíle, kdy je potřebujete nastavit pouze pro čtení, abyste ochránili jejich obsah. Ať už jde o sdílení důležitých informací bez rizika náhodných úprav nebo zajištění integrity právních dokumentů, ochrana pouze pro čtení je cennou funkcí. V tomto tutoriálu prozkoumáme, jak implementovat ochranu pouze pro čtení v dokumentu aplikace Word pomocí Aspose.Words for .NET. Provedeme vás podrobným a poutavým způsobem každým krokem, abyste je mohli snadno sledovat.
 

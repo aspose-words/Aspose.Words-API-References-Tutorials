@@ -71,7 +71,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez ajouter en toute transparence un document à un autre tout en utilisant les styles du document de destination. Cette technique est particulièrement utile lorsque vous devez conserver une apparence cohérente sur plusieurs documents.
+Et voilà ! En suivant ces étapes, vous pouvez ajouter en toute transparence un document à un autre tout en utilisant les styles du document de destination. Cette technique est particulièrement utile lorsque vous devez conserver une apparence cohérente sur plusieurs documents.
 
 ## FAQ
 

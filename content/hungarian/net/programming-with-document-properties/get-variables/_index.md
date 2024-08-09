@@ -43,7 +43,7 @@ Indítsuk el a dolgokat egy új projekt létrehozásával a Visual Studióban.
 
 Most pedig vegyük be az Aspose.Words könyvtárat a projektünkbe.
 
-1. Nyissa meg a NuGet Package Manager alkalmazást a Visual Studio alkalmazásban.
+1. Nyissa meg a NuGet Package Manager alkalmazást a Visual Studióban.
 2. Keresse meg az "Aspose.Words" kifejezést, és telepítse.
 
 ## 2. lépés: Word-dokumentum betöltése
@@ -55,7 +55,7 @@ Most pedig vegyük be az Aspose.Words könyvtárat a projektünkbe.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  Hozzon létre egy`Document` objektumot, és töltse be a dokumentumot:
+2.  Hozzon létre a`Document` objektumot, és töltse be a dokumentumot:
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
     ```

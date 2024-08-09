@@ -89,7 +89,7 @@ Mengabaikan teks yang disisipkan membantu mempertahankan fokus pada konten inti 
 Ya, Anda dapat mengembalikan teks yang disisipkan yang diabaikan menggunakan pengaturan FindReplaceOptions yang sesuai.
 
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
- Mengunjungi[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/) untuk panduan terperinci dan referensi API.
+ Kunjungi[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/) untuk panduan terperinci dan referensi API.
 
 ### Apakah ada forum komunitas untuk mendiskusikan pertanyaan terkait Aspose.Words untuk .NET?
  Ya, Anda dapat mengunjungi[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8) untuk dukungan dan diskusi komunitas.

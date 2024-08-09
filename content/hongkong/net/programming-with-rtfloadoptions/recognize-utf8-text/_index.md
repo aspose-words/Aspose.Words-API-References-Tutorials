@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 識別 Word 文件中的 UTF-8 文字。在處理多語言文件或特殊字元時，這個小技巧可以為您省去很多麻煩。
+現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 識別 Word 文件中的 UTF-8 文字。在處理多語言文件或特殊字元時，這個小技巧可以為您省去很多麻煩。
 
 請記住，關鍵步驟是設定載入選項、載入文件並儲存。就這麼簡單！所以，繼續嘗試吧。您會驚訝地發現處理 Word 文件中的複雜文字是多麼容易。
 

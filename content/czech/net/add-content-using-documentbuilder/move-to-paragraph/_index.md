@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/move-to-paragraph/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, technický nadšenec! Stalo se vám někdy, že jste se potřebovali programově přesunout na konkrétní odstavec v dokumentu aplikace Word? Ať už automatizujete vytváření dokumentů nebo se jen snažíte zefektivnit svůj pracovní postup, Aspose.Words for .NET vám pomůže. V této příručce vás provedeme procesem přechodu na konkrétní odstavec v dokumentu aplikace Word pomocí Aspose.Words for .NET. Rozdělíme si to do jednoduchých, srozumitelných kroků. Takže, pojďme se rovnou ponořit!
 
@@ -15,12 +15,12 @@ Ahoj, technický nadšenec! Stalo se vám někdy, že jste se potřebovali progr
 
 Než se vrhneme na to, co děláte, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
-1.  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Bude stačit jakákoli nejnovější verze.
 3. .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 4. Dokument aplikace Word: Budete potřebovat ukázkový dokument aplikace Word, se kterým budete pracovat.
 
-Máš všechno? Skvělý! Pokračujme.
+Máš všechno? Velký! Jdeme dál.
 
 ## Importovat jmenné prostory
 
@@ -91,4 +91,4 @@ Pokud je index mimo rozsah, metoda vyvolá výjimku. Vždy se ujistěte, že ind
  Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
 
 ### Kde najdu podrobnější dokumentaci?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).

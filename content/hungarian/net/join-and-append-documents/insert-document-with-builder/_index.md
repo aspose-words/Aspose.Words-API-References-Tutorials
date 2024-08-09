@@ -90,7 +90,7 @@ Most jön az izgalmas rész – tulajdonképpen a forrásdokumentum beillesztés
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Használni a`InsertDocument` módszerrel a teljes forrásdokumentumot beilleszthetjük a céldokumentumba. A`ImportFormatMode.KeepSourceFormatting` biztosítja a forrásdokumentum formázásának megőrzését.
+ A`InsertDocument` módszerrel a teljes forrásdokumentumot beilleszthetjük a céldokumentumba. A`ImportFormatMode.KeepSourceFormatting` biztosítja a forrásdokumentum formázásának megőrzését.
 
 ## 7. lépés: Az egyesített dokumentum mentése
 
@@ -121,4 +121,4 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 Teljesen! A leírt módszer beépíthető nagyobb alkalmazásokba a dokumentumfeldolgozási feladatok automatizálása érdekében.
 
 ### Hol találhatok további forrásokat és támogatást?  
-További információkért ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) , vagy látogassa meg a[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért.
+További információkért ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) , vagy látogassa meg a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/formatted-table/
 ---
-## introduzione
+## Introduzione
 
 Creare e formattare tabelle nei documenti di Word a livello di codice può sembrare un compito arduo, ma con Aspose.Words per .NET diventa semplice e gestibile. In questo tutorial ti spiegheremo come creare una tabella formattata in un documento Word utilizzando Aspose.Words per .NET. Copriremo tutto, dalla configurazione del tuo ambiente al salvataggio del tuo documento con una tabella ben formattata.
 
@@ -157,7 +157,7 @@ Questo creerà e salverà un documento Word con la tabella formattata.
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, puoi creare una tabella ben formattata in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione a livello di codice dei documenti Word, risparmiando tempo e fatica.
+Ed ecco qua! Seguendo questi passaggi, puoi creare una tabella ben formattata in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione a livello di codice dei documenti Word, risparmiando tempo e fatica.
 
 ## Domande frequenti
 

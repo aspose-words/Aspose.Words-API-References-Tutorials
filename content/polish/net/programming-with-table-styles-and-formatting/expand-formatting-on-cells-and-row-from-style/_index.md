@@ -109,4 +109,4 @@ Absolutnie! Możesz przeglądać wszystkie tabele w dokumencie i zastosować te 
 Po rozwinięciu stylów są one bezpośrednio stosowane do komórek. Aby przywrócić zmiany, należy ponownie załadować dokument lub ponownie zastosować style ręcznie.
 
 ### Czy ta metoda działa ze wszystkimi wersjami Aspose.Words dla .NET?
- Tak`ExpandTableStylesToDirectFormatting` metoda jest dostępna w najnowszych wersjach Aspose.Words dla .NET. Zawsze sprawdzaj[dokumentacja](https://reference.aspose.com/words/net/) w celu uzyskania najnowszych aktualizacji.
+ Tak,`ExpandTableStylesToDirectFormatting` metoda jest dostępna w najnowszych wersjach Aspose.Words dla .NET. Zawsze sprawdzaj[dokumentacja](https://reference.aspose.com/words/net/) w celu uzyskania najnowszych aktualizacji.

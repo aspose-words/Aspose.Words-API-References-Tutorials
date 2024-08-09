@@ -109,7 +109,7 @@ Une fois que vous êtes à la fin du signet, vous pouvez insérer du texte ou to
 builder.Writeln("This is a bookmark.");
 ```
 
-Et c'est tout! Vous avez réussi à vous déplacer vers la fin d'un signet et à y insérer du texte.
+Et c'est tout ! Vous avez réussi à vous déplacer vers la fin d'un signet et à y insérer du texte.
 
 ## Étape 6 : Enregistrez le document
 
@@ -124,7 +124,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ## Conclusion
 
-Voilà! Vous venez d'apprendre comment accéder à la fin d'un signet dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d'efforts, rendant vos tâches de traitement de documents beaucoup plus efficaces. N'oubliez pas que la pratique rend parfait. Continuez donc à expérimenter différents signets et structures de documents pour maîtriser cette compétence.
+Et voilà ! Vous venez d'apprendre comment accéder à la fin d'un signet dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d'efforts, rendant vos tâches de traitement de documents beaucoup plus efficaces. N'oubliez pas que la pratique rend parfait. Continuez donc à expérimenter différents signets et structures de documents pour maîtriser cette compétence.
 
 ## FAQ
 
@@ -138,7 +138,7 @@ Voilà! Vous venez d'apprendre comment accéder à la fin d'un signet dans un do
 
 ### 3. Puis-je insérer d’autres types de contenu à la fin du signet ?
 
- Oui, DocumentBuilder vous permet d'insérer différents types de contenu comme des tableaux, des images, etc. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Oui, DocumentBuilder vous permet d'insérer différents types de contenu comme des tableaux, des images, etc. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### 4. Comment puis-je obtenir une licence temporaire pour Aspose.Words ?
 

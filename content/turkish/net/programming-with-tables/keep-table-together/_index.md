@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 
 ## Çözüm
 
-İşte buyur! Yalnızca birkaç satır kodla, tablolarınızın Word belgelerinizdeki sayfalara bölünmesini önleyebilirsiniz. Bu basit ama etkili çözüm, tablolarınızın düzenli ve profesyonel kalmasını sağlayarak belgelerinizin okunabilirliğini artırır. Aspose.Words for .NET, bu tür biçimlendirme sorunlarının üstesinden gelmeyi kolaylaştırarak harika içerik oluşturmaya odaklanmanıza olanak tanır.
+Ve işte karşınızda! Yalnızca birkaç satır kodla, tablolarınızın Word belgelerinizdeki sayfalara bölünmesini önleyebilirsiniz. Bu basit ama etkili çözüm, tablolarınızın düzenli ve profesyonel kalmasını sağlayarak belgelerinizin okunabilirliğini artırır. Aspose.Words for .NET, bu tür biçimlendirme sorunlarının üstesinden gelmeyi kolaylaştırarak harika içerik oluşturmaya odaklanmanıza olanak tanır.
 
 ## SSS'ler
 

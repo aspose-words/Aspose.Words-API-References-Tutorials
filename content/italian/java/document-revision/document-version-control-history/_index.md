@@ -8,7 +8,7 @@ weight: 13
 url: /it/java/document-revision/document-version-control-history/
 ---
 
-## introduzione
+## Introduzione
 
 Un controllo efficace della versione dei documenti garantisce che tutte le parti interessate lavorino con le informazioni più recenti e accurate. Aspose.Words per Java è una libreria versatile che consente agli sviluppatori di creare, modificare e gestire documenti con facilità. Immergiamoci nel processo passo passo di implementazione del controllo della versione e della cronologia dei documenti.
 

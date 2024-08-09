@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ###  cái gì là`DocumentDirection` property used for?
 
- Các`DocumentDirection` tài sản ở`TxtLoadOptions` xác định hướng văn bản cho tài liệu. Nó có thể được đặt thành`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , hoặc`DocumentDirection.RightToLeft`.
+ các`DocumentDirection` tài sản ở`TxtLoadOptions` xác định hướng văn bản cho tài liệu. Nó có thể được đặt thành`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , hoặc`DocumentDirection.RightToLeft`.
 
 ### Tôi có thể đặt hướng văn bản cho các đoạn cụ thể thay vì toàn bộ tài liệu không?
 

@@ -2,7 +2,7 @@
 title: Yeni İmza Satırı Oluşturun ve Sağlayıcı Kimliğini Ayarlayın
 linktitle: Yeni İmza Satırı Oluşturun ve Sağlayıcı Kimliğini Ayarlayın
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerinde yeni bir imza satırı oluşturmayı ve sağlayıcı kimliğini nasıl ayarlayacağınızı öğrenin. Adım adım rehber.
+description: Aspose.Words for .NET kullanarak Word belgelerinde yeni bir imza satırı oluşturmayı ve sağlayıcı kimliğini nasıl ayarlayacağınızı öğrenin. Adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
@@ -125,7 +125,7 @@ Bu, belgeyi imzalar ve yeni bir dosya olarak kaydeder.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak başarılı bir şekilde yeni bir imza satırı oluşturdunuz ve sağlayıcı kimliğini bir Word belgesinde ayarladınız. Bu güçlü kitaplık, belge işleme görevlerini yönetmeyi ve otomatikleştirmeyi inanılmaz derecede kolaylaştırır. Bir deneyin ve iş akışınızı nasıl kolaylaştırabileceğini görün.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak başarılı bir şekilde yeni bir imza satırı oluşturdunuz ve sağlayıcı kimliğini bir Word belgesinde ayarladınız. Bu güçlü kitaplık, belge işleme görevlerini yönetmeyi ve otomatikleştirmeyi inanılmaz derecede kolaylaştırır. Bir deneyin ve iş akışınızı nasıl kolaylaştırabileceğini görün.
 
 ## SSS'ler
 

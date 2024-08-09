@@ -164,7 +164,7 @@ Aspose.Words for Java のクリーンアップ オプションは、差し込み
 
 文書から未使用の差し込みフィールドを削除するには、`MailMergeCleanupOptions.REMOVE_UNUSED_FIELDS`オプションを true に設定します。これにより、差し込み印刷中に入力されていない差し込みフィールドが自動的に削除され、よりクリーンなドキュメントが作成されます。
 
-### 違いは何ですか`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
+### 違いは何ですか？`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
 の`REMOVE_EMPTY_FIELDS`オプションは、差し込み印刷処理中にデータがないか空の差し込みフィールドを削除します。一方、`REMOVE_UNUSED_FIELDS`オプションは、マージ中にデータが入力されていないマージ フィールドを削除します。どちらを選択するかは、コンテンツのないフィールドを削除するか、特定のマージ操作で使用されていないフィールドを削除するかによって異なります。
 

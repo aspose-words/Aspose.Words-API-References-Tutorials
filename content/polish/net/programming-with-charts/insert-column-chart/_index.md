@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Wstaw wykres kolumnowy
 
- Użyj`InsertChart` metoda`DocumentBuilder`class, aby wstawić wykres kolumnowy.
+ Skorzystaj z`InsertChart` metoda`DocumentBuilder`class, aby wstawić wykres kolumnowy.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);

@@ -126,7 +126,7 @@ Si sigue estos pasos, podrá manejar eficazmente las advertencias de representac
 
 ### P1: ¿Puedo manejar otros tipos de advertencias con este método?
 
- Sí el`IWarningCallback` La interfaz puede manejar varios tipos de advertencias, no solo aquellas relacionadas con la representación de PDF.
+ Sí, el`IWarningCallback` La interfaz puede manejar varios tipos de advertencias, no solo aquellas relacionadas con la representación de PDF.
 
 ### P2: ¿Dónde puedo descargar una prueba gratuita de Aspose.Words para .NET?
 
@@ -138,7 +138,7 @@ MetafileRenderingOptions son configuraciones que determinan cómo se representan
 
 ### P4: ¿Dónde puedo encontrar soporte para Aspose.Words?
 
- Visita el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) para asistencia.
+ Visita el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) para obtener ayuda.
 
 ### P5: ¿Es posible obtener una licencia temporal para Aspose.Words?
 

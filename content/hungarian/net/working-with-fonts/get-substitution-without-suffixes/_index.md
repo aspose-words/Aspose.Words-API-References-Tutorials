@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /hu/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Bevezetés
 
-Üdvözöljük ebben az átfogó útmutatóban a betűtípusok Aspose.Words for .NET használatával történő kezeléséről. Ha valaha is küzdött azzal, hogy a betűtípusok nem jelennek meg megfelelően a dokumentumokban, akkor jó helyen jár. Ez az oktatóanyag lépésről lépésre vezeti végig a betűtípusok utótagok nélküli helyettesítésének hatékony kezelését. Kezdjük el!
+Üdvözöljük ebben az átfogó útmutatóban a betűtípusok Aspose.Words for .NET használatával történő kezeléséről. Ha valaha is küzdött azzal, hogy a betűtípusok nem jelennek meg megfelelően a dokumentumokban, akkor jó helyen jár. Ez az oktatóanyag lépésről lépésre vezeti végig a betűtípusok utótagok nélküli helyettesítésének hatékony kezelését.
 
 ## Előfeltételek
 
@@ -17,7 +18,7 @@ Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy rendelkezik
 - C# alapismeretek: A C# programozás megértése megkönnyíti a lépések követését és végrehajtását.
 -  Aspose.Words for .NET Library: Töltse le és telepítse a könyvtárat a[letöltési link](https://releases.aspose.com/words/net/).
 - Fejlesztési környezet: állítson be egy fejlesztői környezetet, például a Visual Studio-t a kód írásához és futtatásához.
-- Dokumentumminta: Egy mintadokumentum (pl.`Rendering.docx`), amellyel az oktatóprogram során dolgozhat.
+-  Dokumentumminta: Egy mintadokumentum (pl.`Rendering.docx`), amellyel az oktatóprogram során dolgozhat.
 
 ## Névterek importálása
 
@@ -26,7 +27,6 @@ Először is importálnunk kell a szükséges névtereket, hogy elérjük az Asp
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## 5. lépés: Hozza létre a Figyelmeztetéskezelő osztályt
 
- figyelmeztetések hatékony kezeléséhez hozzon létre egy egyéni osztályt, amely megvalósítja a`IWarningCallback` felület. Ez az osztály rögzíti és naplózza a betűtípus helyettesítésére vonatkozó figyelmeztetéseket.
+ A figyelmeztetések hatékony kezeléséhez hozzon létre egy egyéni osztályt, amely megvalósítja a`IWarningCallback` felület. Ez az osztály rögzíti és naplózza a betűtípus helyettesítésére vonatkozó figyelmeztetéseket.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,7 +93,7 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Ebben az osztályban:
--  A`Warning` metódus rögzíti a betűtípus-cserével kapcsolatos figyelmeztetéseket.
+-  A`Warning`metódus rögzíti a betűtípus-cserével kapcsolatos figyelmeztetéseket.
 -  A`FontWarnings` A gyűjtemény ezeket a figyelmeztetéseket tárolja további ellenőrzés vagy naplózás céljából.
 
 ## Következtetés
@@ -102,22 +102,22 @@ Most már elsajátította a betűtípusok utótagok nélküli helyettesítésén
 
 ## GYIK
 
-### 1. kérdés: Hogyan használhatok betűtípusokat több egyéni könyvtárból?
+### Hogyan használhatok betűtípusokat több egyéni könyvtárból?
 
  Többet is hozzáadhat`FolderFontSource` példányok a`fontSources` listázza ki, és ennek megfelelően frissítse a fontforrásokat.
 
-### 2. kérdés: Honnan tölthetem le az Aspose.Words for .NET ingyenes próbaverzióját?
+### Honnan tölthetem le az Aspose.Words for .NET ingyenes próbaverzióját?
 
  Ingyenes próbaverziót tölthet le a webhelyről[Aspose ingyenes próbaoldal](https://releases.aspose.com/).
 
-###  3. kérdés: Kezelhetek-e többféle figyelmeztetést a használatával`IWarningCallback`?
+###  Kezelhetek-e többféle figyelmeztetést a használatával`IWarningCallback`?
 
  Igen, a`IWarningCallback` Az interfész lehetővé teszi a különböző típusú figyelmeztetések kezelését, nem csak a betűtípusok helyettesítését.
 
-### 4. kérdés: Hol kaphatok támogatást az Aspose.Words számára?
+### Hol kaphatok támogatást az Aspose.Words számára?
 
  Támogatásért keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).
 
-### 5. kérdés: Lehetséges ideiglenes licenc vásárlása?
+### Lehetséges ideiglenes licenc vásárlása?
 
  Igen, ideiglenes engedélyt kaphat a[ideiglenes licenc oldal](https://purchase.aspose.com/temporary-license/).

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/preferred-width-settings/
 ---
-## introduzione
+## Introduzione
 
 Le tabelle rappresentano un modo efficace per organizzare e presentare le informazioni nei documenti di Word. Quando lavori con le tabelle in Aspose.Words per .NET, hai diverse opzioni per impostare la larghezza delle celle della tabella per assicurarti che si adattino perfettamente al layout del tuo documento. Questa guida ti guiderà attraverso il processo di creazione di tabelle con le impostazioni di larghezza preferite utilizzando Aspose.Words per .NET, concentrandosi sulle opzioni di dimensionamento assoluto, relativo e automatico. 
 

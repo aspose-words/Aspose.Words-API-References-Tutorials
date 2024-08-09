@@ -77,7 +77,7 @@ Tak, Aspose.Words dla .NET obsługuje różne formaty obrazów, takie jak PNG, J
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
  Tak, Aspose.Words dla .NET wymaga licencji. Możesz kupić jeden[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-### Czy mogę uzyskać wsparcie, jeśli napotkam problemy?
+### Czy mogę uzyskać pomoc, jeśli napotkam problemy?
  Zdecydowanie! Aspose oferuje kompleksowe wsparcie za pośrednictwem swoich forów. Możesz uzyskać dostęp do wsparcia[Tutaj](https://forum.aspose.com/c/words/8).
 
 ### Czy są jakieś szczególne wymagania systemowe dla Aspose.Words dla .NET?

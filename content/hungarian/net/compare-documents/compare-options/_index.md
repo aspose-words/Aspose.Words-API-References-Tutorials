@@ -1,6 +1,6 @@
 ---
-title: Hasonlítsa össze a Word dokumentum beállításait
-linktitle: Hasonlítsa össze a Word dokumentum beállításait
+title: Hasonlítsa össze a Word-dokumentum beállításait
+linktitle: Hasonlítsa össze a Word-dokumentum beállításait
 second_title: Aspose.Words Document Processing API
 description: Részletes útmutatónkból megtudhatja, hogyan hasonlíthatja össze a Word dokumentumokat az Aspose.Words for .NET használatával. Gondoskodjon a dokumentumok konzisztenciájáról könnyedén.
 type: docs
@@ -58,7 +58,7 @@ Document docB = docA.Clone();
 Ebben a részletben:
 - Megadjuk a könyvtárat, ahol dokumentumainkat tároljuk.
 - Betöltjük az első dokumentumot (`docA`).
--  klónozunk`docA` készíteni`docB`. Így két azonos dokumentummal kell dolgoznunk.
+-  klónozunk`docA` létrehozni`docB`. Így két azonos dokumentummal kell dolgoznunk.
 
 ## 3. lépés: Konfigurálja az összehasonlítási beállításokat
 
@@ -97,7 +97,7 @@ docA.Compare(docB, "user", DateTime.Now, options);
 ```
 
 Ebben a sorban:
--  Összehasonlítjuk`docA` val vel`docB`.
+-  Összehasonlítjuk`docA` -vel`docB`.
 - Megadunk egy felhasználónevet ("felhasználó"), valamint az aktuális dátumot és időt.
 
 ## 5. lépés: Ellenőrizze és jelenítse meg az eredményeket
@@ -116,7 +116,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## GYIK
 
-### Összehasonlíthatok kettőnél több dokumentumot egyszerre?  
+### Összehasonlíthatok egyszerre kettőnél több dokumentumot?  
 Az Aspose.Words for .NET egyszerre két dokumentumot hasonlít össze. Több dokumentum összehasonlításához páronként is megteheti.
 
 ### Hogyan hagyhatom figyelmen kívül a képek változásait?  

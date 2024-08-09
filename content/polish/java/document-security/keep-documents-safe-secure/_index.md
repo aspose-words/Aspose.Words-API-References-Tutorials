@@ -10,7 +10,7 @@ url: /pl/java/document-security/keep-documents-safe-secure/
 
 W epoce cyfrowej, gdzie informacja jest kluczowa, bezpieczeństwo dokumentów jest sprawą najwyższej wagi. Niezależnie od tego, czy są to pliki osobiste, dokumenty biznesowe czy dane poufne, zabezpieczenie ich przed nieupoważnionym dostępem i potencjalnymi zagrożeniami ma kluczowe znaczenie. W tym obszernym przewodniku przeprowadzimy Cię przez proces zabezpieczania dokumentów przy użyciu Aspose.Words dla Java, potężnej biblioteki do przetwarzania tekstu i manipulowania dokumentami.
 
-## 1. Wstęp
+## 1. Wprowadzenie
 
 szybko zmieniającym się cyfrowym świecie bezpieczeństwo dokumentów elektronicznych stało się najwyższym priorytetem zarówno dla osób prywatnych, jak i firm. Naruszenia danych i ataki cybernetyczne wzbudziły obawy co do poufności i integralności informacji wrażliwych. Aspose.Words for Java przychodzi na ratunek, udostępniając kompleksowy zestaw funkcji zapewniających bezpieczeństwo dokumentów przed nieautoryzowanym dostępem.
 
@@ -20,7 +20,7 @@ Zanim zagłębimy się w aspekty techniczne, przyjrzyjmy się podstawowym pojęc
 
 ### Rodzaje ochrony dokumentów
 
-- #### Ochrona hasła:
+- #### Ochrona hasłem:
  Ogranicz dostęp do swoich dokumentów hasłem, zapewniając, że tylko autoryzowani użytkownicy będą mogli je otwierać i przeglądać.
 - #### Szyfrowanie:
  Konwertuj zawartość dokumentu na zaszyfrowany format za pomocą algorytmów szyfrowania, dzięki czemu będzie on nieczytelny bez prawidłowego klucza deszyfrującego.
@@ -37,10 +37,10 @@ Szyfrowanie dokumentów zapewnia dodatkową warstwę bezpieczeństwa, sprawiają
 
 ## 3. Pierwsze kroki z Aspose.Words dla Java
 
-Zanim zajmiemy się bezpieczeństwem dokumentów, zapoznajmy się najpierw z Aspose.Words dla Java. Jest to bogata w funkcje biblioteka, która umożliwia programistom Java programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word. Rozpocząć:
+Zanim zajmiemy się bezpieczeństwem dokumentów, zapoznajmy się najpierw z Aspose.Words dla Java. Jest to bogata w funkcje biblioteka, która umożliwia programistom Java programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word. Aby rozpocząć:
 
 1. ### Pobierz Aspose.Words dla Java:
-  Odwiedzić[Aspose.Wydaje](https://releases.aspose.com/words/java/) i pobierz najnowszą wersję Aspose.Words dla Java.
+  Odwiedź[Aspose.Wydaje](https://releases.aspose.com/words/java/) i pobierz najnowszą wersję Aspose.Words dla Java.
 
 2. ### Zainstaluj bibliotekę:
  Po zakończeniu pobierania postępuj zgodnie z instrukcjami instalacji, aby skonfigurować Aspose.Words w swoim projekcie Java.
@@ -52,7 +52,7 @@ Instalacja Aspose.Words dla Java jest prostym procesem. Wykonaj poniższe proste
 1. ### Pobierać:
   Idź do[Aspose.Wydaje](https://releases.aspose.com/words/java/) i pobierz pakiet Aspose.Words dla Java.
 
-2. ### Wyciąg:
+2. ### Ekstrakt:
  Wyodrębnij pobrany pakiet w dogodne miejsce na swoim komputerze.
 
 3. ### Dodaj do projektu:

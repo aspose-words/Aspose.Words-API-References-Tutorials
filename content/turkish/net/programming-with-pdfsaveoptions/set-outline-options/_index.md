@@ -13,7 +13,7 @@ url: /tr/net/programming-with-pdfsaveoptions/set-outline-options/
 
 ## Önkoşullar
 
-Başlamadan önce, sahip olduğunuzdan emin olmanız gereken birkaç şey var:
+Başlamadan önce, sahip olduğunuzdan emin olmanız gereken birkaç şey vardır:
 
 1.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Değilse, yapabilirsiniz[en son sürümü buradan indirin](https://releases.aspose.com/words/net/).
 2. .NET Geliştirme Ortamı: Visual Studio gibi çalışan bir .NET geliştirme ortamına ihtiyacınız olacak.
@@ -68,7 +68,7 @@ saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 
 ## 3. Adım: Belgeyi PDF olarak kaydedin
 
- Seçenekler yapılandırıldığında belgeyi PDF olarak kaydetmeye hazırsınız. Kullan`Save` yöntemi`Document` sınıf ve dosya yolunu iletin ve seçenekleri kaydedin.
+ Seçenekler yapılandırıldığında belgeyi PDF olarak kaydetmeye hazırsınız. Kullanın`Save` yöntemi`Document` sınıf ve dosya yolunu iletin ve seçenekleri kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
@@ -94,7 +94,7 @@ Hayır, anahat ayarları belgenin tamamına genel olarak uygulanır. Ancak benze
 
 Anahatın nasıl göründüğünü kontrol etmek için anahat gezinmesini destekleyen PDF görüntüleyicileri kullanabilirsiniz. Bazı uygulamalar bunun için bir önizleme özelliği sağlar.
 
-### PDF'yi kaydettikten sonra taslağı kaldırmak mümkün müdür?
+### PDF'yi kaydettikten sonra taslağı kaldırmak mümkün mü?
 
 Evet, PDF düzenleme yazılımını kullanarak ana hatları kaldırabilirsiniz ancak PDF oluşturulduktan sonra bunu Aspose.Words ile doğrudan başarmak mümkün değildir.
 

@@ -2,125 +2,98 @@
 title: Akışı Kullanarak Ole Nesnesini Simge Olarak Ekleme
 linktitle: Akışı Kullanarak Ole Nesnesini Simge Olarak Ekleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir akışı kullanarak bir OLE nesnesini simge olarak nasıl ekleyeceğinizi öğrenin.
+description: Bu ayrıntılı, adım adım eğitimde Aspose.Words for .NET ile bir akışı kullanarak bir OLE nesnesini simge olarak nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## giriiş
 
-Aşağıda Aspose.Words for .NET ile bir akış kullanarak bir OLE nesnesinin simge olarak nasıl ekleneceğini gösteren C# kaynak kodunu açıklayan adım adım bir kılavuz bulunmaktadır.
+Bu derste Aspose.Words for .NET'in harika bir özelliğini inceleyeceğiz: bir akış kullanarak simge olarak bir OLE (Nesne Bağlama ve Gömme) nesnesi eklemek. İster bir PowerPoint sunumu, ister bir Excel elektronik tablosu veya başka türde bir dosya gömüyor olun, bu kılavuz size bunu tam olarak nasıl yapacağınızı gösterecektir. Başlamaya hazır mısınız? Hadi gidelim!
 
-## 1. Adım: Gerekli referansları içe aktarın
-Başlamadan önce Aspose.Words for .NET'i kullanmak için gerekli referansları projenize aktardığınızdan emin olun. Buna Aspose.Words kütüphanesinin içe aktarılması ve gerekli ad alanlarının kaynak dosyanıza eklenmesi de dahildir.
+## Önkoşullar
+
+Koda geçmeden önce ihtiyacınız olacak birkaç şey var:
+
+-  Aspose.Words for .NET: Henüz yapmadıysanız,[indirmek](https://releases.aspose.com/words/net/) ve Aspose.Words for .NET'i yükleyin.
+- Geliştirme Ortamı: Visual Studio veya başka herhangi bir C# geliştirme ortamı.
+- Giriş Dosyaları: Gömmek istediğiniz dosya (örneğin bir PowerPoint sunumu) ve bir simge görüntüsü.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için projenize gerekli ad alanlarını içe aktardığınızdan emin olun:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## 2. Adım: Yeni bir belge ve belge oluşturucu oluşturun
- Bu adımda yeni bir belge oluşturacağız.`Document` sınıf ve bir belge oluşturucu kullanarak`DocumentBuilder` sınıf.
+Takip etmeyi kolaylaştırmak için süreci adım adım inceleyelim.
+
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+Öncelikle yeni bir belge ve onunla çalışacak bir belge oluşturucu oluşturacağız.
 
 ```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Bir akıştan simge olarak bir OLE nesnesi ekleyin
- Belge Oluşturucu'yu kullanın`InsertOleObjectAsIcon` Bir OLE nesnesini bir akıştan belgeye simge olarak ekleme yöntemi. Veri akışını, nesne türünü, simge yolunu ve katıştırılmış nesne adını belirtin.
+ Düşün`Document` boş tuvaliniz olarak ve`DocumentBuilder` boya fırçanız olarak. Başyapıtımızı yaratmaya başlamak için araçlarımızı ayarlıyoruz.
+
+## 2. Adım: Akışı Hazırlayın
+
+Daha sonra gömmek istediğimiz dosyayı içeren bir bellek akışı hazırlamamız gerekiyor. Bu örnekte bir PowerPoint sunusu yerleştireceğiz.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+Bu adım boyanızı fırçaya yüklemek gibidir. Dosyamızı gömülmeye hazır hale getiriyoruz.
+
+## Adım 3: OLE Nesnesini Simge Olarak Ekleme
+
+Şimdi OLE nesnesini belgeye eklemek için belge oluşturucuyu kullanacağız. Dosya akışını, dosya türü için ProgID'yi (bu durumda "Paket"), simge görüntüsünün yolunu ve gömülü dosya için bir etiketi belirteceğiz.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
 
-## 4. Adım: Belgeyi kaydedin
- Belgenin`Save` Belgeyi bir dosyaya kaydetme yöntemi.
+Sihrin gerçekleştiği yer burası! Dosyamızı gömüyor ve belgenin içinde simge olarak gösteriyoruz.
+
+## Adım 4: Belgeyi Kaydedin
+
+Son olarak belgeyi belirtilen yola kaydediyoruz.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### Aspose.Words for .NET ile bir akış kullanarak OLE nesnesini simge olarak eklemek için örnek kaynak kodu
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-Bu, Aspose.Words for .NET ile bir akışı kullanarak bir OLE nesnesini simge olarak eklemek için kullanılan eksiksiz bir kod örneğidir. Bu kodu projenize entegre etmek için gerekli referansları içe aktardığınızdan ve daha önce açıklanan adımları izlediğinizden emin olun.
+Bu adım, bitmiş tablonuzu bir çerçeveye koyup duvara asmak gibidir. Belgeniz artık kullanıma hazır!
 
 ## Çözüm
 
-Yukarıdaki adım adım kılavuz, Aspose.Words for .NET ile bir akış kullanarak bir Word belgesine bir OLE nesnesinin simge olarak nasıl ekleneceğini açıklamaktadır. Açıklanan adımları takip ederek bu işlevselliği projenize entegre edebileceksiniz. Gerekli referansları içe aktardığınızdan, yeni bir belge ve belge oluşturucu oluşturduğunuzdan, OLE nesnesini akıştan bir simge olarak eklediğinizden ve ardından belgeyi kaydettiğinizden emin olun. Başlangıç noktası olarak sağlanan örnek kodu kullanın ve ihtiyaçlarınıza göre özelleştirin.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir OLE nesnesini bir Word belgesine simge olarak başarıyla gömdünüz. Bu güçlü özellik, dinamik ve etkileşimli belgeleri kolaylıkla oluşturmanıza yardımcı olabilir. İster sunumlar, elektronik tablolar veya başka dosyalar gömün, Aspose.Words bunu çocuk oyuncağı haline getirir. Öyleyse devam edin, deneyin ve belgelerinizde yaratabileceği farkı görün!
 
-### SSS'ler
+## SSS'ler
 
-#### S. Aspose.Words for .NET'i kullanmak için gerekli referanslar nasıl içe aktarılır?
+### Bu yöntemi kullanarak farklı dosya türlerini gömebilir miyim?
+Evet, Word, Excel, PowerPoint ve daha fazlası dahil olmak üzere OLE tarafından desteklenen herhangi bir dosya türünü gömebilirsiniz.
 
-A. Gerekli referansları içe aktarmak için şu adımları izlemelisiniz:
+### Aspose.Words for .NET'i kullanmak için özel bir lisansa ihtiyacım var mı?
+ Evet, Aspose.Words for .NET lisans gerektirir. Alabilirsin[ücretsiz deneme](https://releases.aspose.com/) veya bir satın alın[geçici lisans](https://purchase.aspose.com/temporary-license/) test için.
 
- Aşağıdakileri ekleyin`using` kaynak dosyanızın üst kısmındaki ifadeler:
+### OLE nesnesi için kullanılan simgeyi özelleştirebilir miyim?
+ Kesinlikle! Simgenin yolunu belirterek herhangi bir görüntü dosyasını simge için kullanabilirsiniz.`InsertOleObjectAsIcon` Yöntem.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-Aspose.Words kütüphanesini projenize eklediğinizden emin olun.
+### Dosya veya simge yolları yanlışsa ne olur?
+Yöntem bir istisna atacaktır. Hataları önlemek için dosyalarınızın yollarının doğru olduğundan emin olun.
 
-#### S. Aspose.Words for .NET kullanarak yeni bir belge ve belge oluşturucu nasıl oluşturulur?
-
-A. Yeni bir belge ve belge oluşturucu oluşturmak için şu adımları takip edebilirsiniz:
-
- Kullan`Document` yeni bir belge oluşturmak için sınıf:
-
-```csharp
-Document doc = new Document();
-```
- Kullan`DocumentBuilder` önceden oluşturulan belgeyle ilişkili bir belge oluşturucu oluşturmak için sınıf:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### S. Aspose.Words for .NET kullanarak bir akışa simge olarak bir OLE nesnesi nasıl eklenir?
-
-A. Bir OLE nesnesini bir akıştan simge olarak eklemek için şu adımları takip edebilirsiniz:
-
- Kullan`InsertOleObjectAsIcon` OLE nesnesini eklemek için belge oluşturucunun yöntemi:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### S. Belge bir dosyaya nasıl kaydedilir?
-
-A.  Belgeyi bir dosyaya kaydetmek için kullanabilirsiniz.`Save` Hedef yolunu belirten belgenin yöntemi:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### S. Bir OLE nesnesini bir akıştan simge olarak projeme eklemek için kodu nasıl eklerim?
-
-A. Bir OLE nesnesini bir akıştan simge olarak projenize ekleme kodunu eklemek için şu adımları izleyin:
-- Uygun referansları ekleyerek gerekli referansları içe aktarın`using` ifadeler.
--  kullanarak yeni bir belge ve belge oluşturucu oluşturun.`Document`Ve`DocumentBuilder` sınıflar.
-- OLE nesnesini bir akıştan simge olarak eklemek için kodu kullanın.
--  kullanarak belgeyi kaydedin.`Save` uygun hedef yolu ile yöntem.
-
-Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir akıştan simge olarak bir OLE nesnesini başarılı bir şekilde ekleyebileceksiniz. İstediğiniz sonuçları elde etmek için talimatları izlediğinizden ve gerekli referansları içe aktardığınızdan emin olun.
+### Gömülü nesneyi gömmek yerine bağlamak mümkün müdür?
+Evet, Aspose.Words, içeriğini gömmeden dosyaya referans veren bağlantılı OLE nesneleri eklemenize olanak tanır.

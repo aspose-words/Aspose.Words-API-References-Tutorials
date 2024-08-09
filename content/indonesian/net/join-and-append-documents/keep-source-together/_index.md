@@ -16,7 +16,7 @@ Di era digital saat ini, memanipulasi dokumen Word secara terprogram sangat pent
 Sebelum mendalami penggabungan dokumen dengan Aspose.Words untuk .NET, pastikan Anda memiliki hal berikut:
 
 - Visual Studio: Lingkungan Pengembangan Terpadu (IDE) untuk pengembangan .NET.
-- Aspose.Words untuk .NET: Diinstal dan diatur di lingkungan pengembangan Anda.
+- Aspose.Words untuk .NET: Diinstal dan disiapkan di lingkungan pengembangan Anda.
 - Keakraban dengan C#: Pemahaman dasar bahasa pemrograman C#.
 
 ## Impor Namespace

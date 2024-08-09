@@ -9,7 +9,7 @@ url: /vi/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
 ## Giới thiệu
 
-Aspose.Words dành cho những người đam mê .NET! Hôm nay, chúng ta sẽ đi sâu vào một tính năng thú vị có thể giúp việc xử lý danh sách trong tài liệu văn bản gốc trở nên dễ dàng. Bạn đã bao giờ xử lý các tệp văn bản trong đó một số dòng được coi là danh sách nhưng chúng trông không ổn lắm khi được tải vào tài liệu Word? Chà, chúng ta có một mẹo nhỏ: phát hiện việc đánh số bằng khoảng trắng. Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng`DetectNumberingWithWhitespaces` tùy chọn trong Aspose.Words for .NET để đảm bảo danh sách của bạn được nhận dạng chính xác, ngay cả khi có khoảng trắng giữa các số và văn bản.
+Aspose.Words dành cho những người đam mê .NET! Hôm nay, chúng ta sẽ đi sâu vào một tính năng thú vị có thể giúp việc xử lý danh sách trong tài liệu văn bản gốc trở nên dễ dàng. Bạn đã bao giờ xử lý các tệp văn bản trong đó một số dòng được cho là danh sách nhưng chúng trông không ổn lắm khi được tải vào tài liệu Word? Chà, chúng ta có một mẹo nhỏ: phát hiện việc đánh số bằng khoảng trắng. Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng`DetectNumberingWithWhitespaces` tùy chọn trong Aspose.Words for .NET để đảm bảo danh sách của bạn được nhận dạng chính xác, ngay cả khi có khoảng trắng giữa các số và văn bản.
 
 ## Điều kiện tiên quyết
 
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã thành thạo nghệ thuật phát hiện việc đánh số bằng khoảng trắng trong tài liệu văn bản gốc bằng cách sử dụng Aspose.Words cho .NET. Tính năng này có thể cực kỳ tiện dụng khi xử lý các định dạng văn bản khác nhau và đảm bảo danh sách của bạn được thể hiện chính xác trong tài liệu Word. Vì vậy, lần tới khi gặp phải những danh sách phức tạp đó, bạn sẽ biết chính xác phải làm gì.
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã thành thạo nghệ thuật phát hiện việc đánh số bằng khoảng trắng trong tài liệu văn bản gốc bằng cách sử dụng Aspose.Words cho .NET. Tính năng này có thể cực kỳ tiện dụng khi xử lý các định dạng văn bản khác nhau và đảm bảo danh sách của bạn được thể hiện chính xác trong tài liệu Word. Vì vậy, lần tới khi gặp phải những danh sách phức tạp đó, bạn sẽ biết chính xác phải làm gì.
 
 ## Câu hỏi thường gặp
 
@@ -98,7 +98,7 @@ Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã th�
 `DetectNumberingWithWhitespaces` là một lựa chọn trong`TxtLoadOptions` điều đó cho phép Aspose.Words nhận dạng danh sách ngay cả khi có khoảng trắng giữa phần đánh số và văn bản mục danh sách.
 
 ### Tôi có thể sử dụng tính năng này cho các dấu phân cách khác như dấu đầu dòng và dấu ngoặc không?
- Có, Aspose.Words tự động phát hiện các danh sách có dấu phân cách phổ biến như dấu đầu dòng và dấu ngoặc. Các`DetectNumberingWithWhitespaces` đặc biệt trợ giúp với các danh sách có khoảng trắng.
+ Có, Aspose.Words tự động phát hiện các danh sách có dấu phân cách phổ biến như dấu đầu dòng và dấu ngoặc. các`DetectNumberingWithWhitespaces` đặc biệt trợ giúp với các danh sách có khoảng trắng.
 
 ###  Điều gì xảy ra nếu tôi không sử dụng`DetectNumberingWithWhitespaces`?
 Nếu không có tùy chọn này, các danh sách có khoảng trắng giữa phần đánh số và văn bản có thể không được nhận dạng là danh sách và các mục có thể xuất hiện dưới dạng đoạn văn đơn giản.

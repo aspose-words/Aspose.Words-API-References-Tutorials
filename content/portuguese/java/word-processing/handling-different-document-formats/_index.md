@@ -20,7 +20,7 @@ Para embarcar nesta jornada de manipulação de formatos de documentos, vamos pr
 
 ### Instalando Aspose.Words para Java
 
-Para utilizar Aspose.Words for Java, você precisa adicionar o arquivo Aspose.Words JAR ao seu projeto. Siga esses passos:
+Para utilizar Aspose.Words for Java, você precisa adicionar o arquivo Aspose.Words JAR ao seu projeto. Siga estas etapas:
 
 1.  Baixe Aspose.Words para Java: Visite o site Aspose[aqui](https://releases.aspose.com/words/java/) para obter a versão mais recente do Aspose.Words for Java.
 

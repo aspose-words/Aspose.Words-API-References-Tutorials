@@ -97,7 +97,7 @@ Aspose.Words for .NET을 사용하여 Word 문서에 텍스트 워터마크를 �
 
 ### 워터마크 색상은 어떻게 변경하나요?
 
- 설정을 통해 워터마크의 색상을 변경할 수 있습니다.`Color` 에 있는 재산`TextWatermarkOptions` 아무에게나`System.Drawing.Color` 값.
+ 설정을 통해 워터마크의 색상을 변경할 수 있습니다.`Color` 에 있는 재산`TextWatermarkOptions` 누구에게나`System.Drawing.Color` 값.
 
 ### 문서에 여러 개의 워터마크를 추가할 수 있나요?
 

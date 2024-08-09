@@ -2,88 +2,115 @@
 title: Activer Désactiver la substitution de polices
 linktitle: Activer Désactiver la substitution de polices
 second_title: API de traitement de documents Aspose.Words
-description: Dans ce didacticiel, découvrez comment activer ou désactiver la substitution de police dans un document Word avec Aspose.Words pour .NET.
+description: Découvrez comment activer ou désactiver la substitution de polices dans les documents Word à l'aide d'Aspose.Words pour .NET. Assurez-vous que vos documents sont cohérents sur toutes les plateformes.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/enable-disable-font-substitution/
 ---
-Dans ce didacticiel, nous vous expliquerons comment activer ou désactiver la substitution de police dans un document Word lors de son rendu à l'aide de la bibliothèque Aspose.Words pour .NET. L'activation ou la désactivation de la substitution de police vous permet de contrôler si les polices manquantes sont automatiquement remplacées par une police par défaut. Nous vous guiderons étape par étape pour vous aider à comprendre et à implémenter le code dans votre projet .NET.
+## Introduction
+
+Vous êtes-vous déjà retrouvé dans une situation où vos polices méticuleusement choisies dans un document Word sont remplacées lorsqu'elles sont affichées sur un autre ordinateur ? Ennuyeux, non ? Cela se produit en raison de la substitution de polices, un processus par lequel le système remplace une police manquante par une police disponible. Mais ne vous inquiétez pas ! Avec Aspose.Words pour .NET, vous pouvez facilement gérer et contrôler la substitution de polices. Dans ce didacticiel, nous vous guiderons à travers les étapes pour activer ou désactiver la substitution de polices dans vos documents Word, garantissant ainsi que vos documents auront toujours exactement l'apparence que vous souhaitez.
 
 ## Conditions préalables
-Avant de commencer, assurez-vous de disposer des éléments suivants :
-- Une connaissance pratique du langage de programmation C#
-- La bibliothèque Aspose.Words pour .NET installée dans votre projet
-- Un document Word que vous souhaitez restituer avec ou sans substitution de police
 
-## Étape 1 : Définir le répertoire des documents
- Tout d’abord, vous devez définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+Avant de plonger dans les étapes, assurons-nous que vous disposez de tout ce dont vous avez besoin :
+
+-  Aspose.Words pour .NET : téléchargez la dernière version[ici](https://releases.aspose.com/words/net/).
+- Visual Studio : toute version prenant en charge .NET.
+- Connaissance de base de C# : cela vous aidera à suivre les exemples de codage.
+
+## Importer des espaces de noms
+
+Pour commencer, assurez-vous d'avoir importé les espaces de noms nécessaires dans votre projet. Ajoutez-les en haut de votre fichier C# :
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Étape 2 : Téléchargez le document et configurez les paramètres de police
- Ensuite, nous chargerons le document Word que vous souhaitez restituer et créerons une instance du`FontSettings` classe pour gérer les paramètres de police. Nous allons définir le remplacement de police par défaut en spécifiant le nom de la police dans`DefaultFontName` et désactivez le remplacement des informations de police avec`Enabled` mis à`false`.
+Maintenant, décomposons le processus en étapes simples et gérables.
+
+## Étape 1 : Configurez votre projet
+
+Tout d’abord, configurez un nouveau projet dans Visual Studio et ajoutez une référence à la bibliothèque Aspose.Words for .NET. Si vous ne l'avez pas déjà fait, téléchargez-le depuis le[Site Aspose](https://releases.aspose.com/words/net/).
+
+## Étape 2 : Chargez votre document
+
+Ensuite, chargez le document avec lequel vous souhaitez travailler. Voici comment procéder :
 
 ```csharp
-// Charger le document
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Configurer les paramètres de police
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Appliquer les paramètres de police au document
-doc.FontSettings = fontSettings;
-```
-
-## Étape 3 : Enregistrez le document rendu
-Enfin, nous enregistrerons le document rendu, qui respectera les paramètres de remplacement de police définis.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Exemple de code source pour activer la substitution de polices à l'aide d'Aspose.Words pour .NET 
-
-```csharp
-
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents. Ce code charge le document en mémoire afin que vous puissiez le manipuler.
+
+## Étape 3 : configurer les paramètres de police
+
+ Maintenant, créons un`FontSettings` objet pour gérer les paramètres de substitution de police :
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Étape 4 : définir la substitution de police par défaut
+
+Définissez la substitution de police par défaut sur une police de votre choix. Cette police sera utilisée si la police d'origine n'est pas disponible :
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+Dans cet exemple, nous utilisons Arial comme police par défaut.
+
+## Étape 5 : Désactiver la substitution des informations sur la police
+
+Pour désactiver la substitution des informations sur les polices, qui empêche le système de remplacer les polices manquantes par celles disponibles, utilisez le code suivant :
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## Étape 6 : appliquer les paramètres de police au document
+
+Maintenant, appliquez ces paramètres à votre document :
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Étape 7 : Enregistrez votre document
+
+Enfin, enregistrez votre document modifié. Vous pouvez l'enregistrer dans n'importe quel format de votre choix. Pour ce didacticiel, nous l'enregistrerons au format PDF :
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Conclusion
-Dans ce didacticiel, nous avons vu comment activer ou désactiver la substitution de police dans un document Word lors de son rendu avec Aspose.Words pour .NET. En contrôlant la substitution des polices, vous pouvez influencer la façon dont les polices manquantes sont traitées dans vos documents rendus. N'hésitez pas à utiliser cette fonctionnalité pour personnaliser la gestion des polices dans vos documents Word.
 
-### FAQ
+Et voilà ! En suivant ces étapes, vous pouvez facilement contrôler la substitution de polices dans vos documents Word à l'aide d'Aspose.Words pour .NET. Cela garantit que vos documents conservent leur apparence et leur convivialité, quel que soit l'endroit où ils sont consultés.
 
-#### Q : Comment puis-je activer la substitution de police dans un document Word avec Aspose.Words ?
+## FAQ
 
-R : Pour activer la substitution de polices dans un document Word avec Aspose.Words, vous pouvez utiliser l'API pour spécifier les polices de substitution à utiliser lorsque les polices requises ne sont pas disponibles. Cela garantira une visualisation cohérente du texte, même sans les polices d’origine.
+### Puis-je utiliser des polices autres qu’Arial pour la substitution ?
 
-#### Q : Est-il possible de désactiver la substitution de police dans un document Word avec Aspose.Words ?
+ Absolument! Vous pouvez spécifier n'importe quelle police disponible sur votre système en modifiant le nom de la police dans le`DefaultFontName` propriété.
 
-: Oui, avec Aspose.Words, vous pouvez désactiver la substitution de police dans un document Word. En utilisant l'API, vous pouvez empêcher Word de remplacer les polices requises par d'autres polices, ce qui conserve l'apparence d'origine du texte.
+### Que se passe-t-il si la police par défaut spécifiée n'est pas disponible ?
 
-#### Q : Que se passe-t-il lorsque les polices requises sont manquantes lors de la substitution dans un document Word ?
+Si la police par défaut n'est pas disponible, Aspose.Words utilisera un mécanisme de secours du système pour trouver un remplacement approprié.
 
-R : Lorsque les polices requises sont manquantes lors de la substitution dans un document Word, Aspose.Words peut détecter ce problème et vous proposer des options pour le résoudre. Vous pouvez choisir de remplacer les polices manquantes par d'autres polices ou d'inclure les polices manquantes dans le document, garantissant ainsi une visualisation correcte.
+### Puis-je réactiver la substitution de police après l'avoir désactivée ?
 
-#### Q : Comment puis-je gérer les polices manquantes lors d'un remplacement dans un document Word avec Aspose.Words ?
+ Oui, vous pouvez basculer le`Enabled` propriété de`FontInfoSubstitution` retour à`true` si vous souhaitez réactiver la substitution de police.
 
-R : Pour gérer les polices manquantes lors d'un remplacement dans un document Word avec Aspose.Words, vous pouvez utiliser l'API pour détecter les polices manquantes et fournir des options de résolution. Vous pouvez choisir de remplacer les polices manquantes par des polices alternatives ou d'inclure les polices manquantes dans le document, en fonction de vos besoins.
+### Existe-t-il un moyen de vérifier quelles polices sont remplacées ?
 
-#### Q : Est-il important de contrôler la substitution de polices dans un document Word ?
+Oui, Aspose.Words fournit des méthodes pour enregistrer et suivre la substitution de polices, vous permettant de voir quelles polices sont remplacées.
 
-R : Oui, il est important de contrôler la substitution de polices dans un document Word afin de maintenir l'intégrité visuelle du texte. En utilisant Aspose.Words pour activer ou désactiver la substitution de polices, vous pouvez vous assurer que les polices requises sont utilisées et éviter les problèmes liés aux polices manquantes ou remplacées.
+### Puis-je utiliser cette méthode pour d’autres formats de documents que DOCX ?
+
+Certainement! Aspose.Words prend en charge différents formats et vous pouvez appliquer ces paramètres de police à n'importe quel format pris en charge.

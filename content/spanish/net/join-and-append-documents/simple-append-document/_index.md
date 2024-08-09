@@ -9,7 +9,7 @@ url: /es/net/join-and-append-documents/simple-append-document/
 ---
 ## Introducción
 
-¡Hola! ¿Alguna vez has necesitado fusionar dos documentos de Word sin problemas? ¡Pues estás de suerte! Hoy nos sumergimos en el mundo de Aspose.Words para .NET, una poderosa biblioteca que le permite manipular documentos de Word mediante programación. Específicamente, nos centraremos en cómo adjuntar un documento a otro en unos sencillos pasos. Ya sea que esté creando informes, combinando secciones de un proyecto o simplemente optimizando la gestión de documentos, esta guía lo tiene cubierto. ¡Entonces empecemos!
+¡Hola! ¿Alguna vez has necesitado fusionar dos documentos de Word sin problemas? ¡Pues estás de suerte! Hoy nos sumergimos en el mundo de Aspose.Words para .NET, una poderosa biblioteca que le permite manipular documentos de Word mediante programación. Específicamente, nos centraremos en cómo adjuntar un documento a otro en unos sencillos pasos. Ya sea que esté creando informes, combinando secciones de un proyecto o simplemente optimizando la gestión de documentos, esta guía lo tiene cubierto. Entonces, ¡comencemos!
 
 ## Requisitos previos
 
@@ -17,7 +17,7 @@ Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
 
 1.  Aspose.Words para .NET: si aún no lo ha hecho, descargue la biblioteca desde[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: puede utilizar Visual Studio o cualquier otro IDE compatible con .NET.
-3. Conocimientos básicos de C#: este tutorial asume que tiene conocimientos básicos de programación en C#.
+3. Conocimientos básicos de C#: este tutorial asume que tienes conocimientos básicos de programación en C#.
 4. Dos documentos de Word: asegúrese de tener dos documentos de Word listos para fusionar.
 
 ## Importar espacios de nombres
@@ -106,7 +106,7 @@ Esta línea de código guarda el documento combinado con un nuevo nombre, asegur
 
 ### ¿Qué pasa si mis documentos tienen un formato diferente?
 
- Puede controlar cómo se maneja el formato utilizando el`ImportFormatMode` parámetro. Las opciones incluyen`KeepSourceFormatting`, `UseDestinationStyles`, y más.
+ Puede controlar cómo se maneja el formato utilizando el`ImportFormatMode` parámetro. Las opciones incluyen`KeepSourceFormatting`, `UseDestinationStyles`y más.
 
 ### ¿Aspose.Words es de uso gratuito?
 

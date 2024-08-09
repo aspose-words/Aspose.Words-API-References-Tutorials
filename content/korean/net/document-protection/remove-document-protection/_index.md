@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "ProtectedDocument.docx");
 ```
 
- 여기서는 문서가 포함된 디렉터리의 경로를 지정합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 여기서는 문서가 포함된 디렉터리의 경로를 지정합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ## 2단계: 비밀번호 없이 보호 제거
 
@@ -107,7 +107,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 
 ### .NET용 Aspose.Words는 무료인가요?
 
- Aspose.Words for .NET은 유료 라이브러리이지만 무료로 사용해 볼 수 있습니다. 확인해 보세요[무료 시험판](https://releases.aspose.com/)!
+ Aspose.Words for .NET은 유료 라이브러리이지만 무료로 사용해 볼 수 있습니다. 확인해 보세요[무료 평가판](https://releases.aspose.com/)!
 
 ### Word 문서에 어떤 다른 유형의 보호를 적용할 수 있나요?
 

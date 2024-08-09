@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/current-state-of-check-box/
 ---
-## Úvod
+## Zavedení
 
 tomto tutoriálu si projdeme procesem práce se zaškrtávacími políčky v dokumentech aplikace Word. Probereme, jak získat přístup k zaškrtávacímu políčku, určit jeho stav a podle toho jej aktualizovat. Ať už vyvíjíte formulář, který vyžaduje kontrolovatelné možnosti nebo automatizujete úpravy dokumentů, tato příručka vám poskytne pevný základ.
 
@@ -51,7 +51,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
- Tady,`"Structured document tags.docx"` by měl být nahrazen názvem souboru aplikace Word.
+ Zde,`"Structured document tags.docx"` by měl být nahrazen názvem souboru aplikace Word.
 
 ## Krok 3: Přístup k zaškrtávacímu poli formuláře
 
@@ -98,7 +98,7 @@ Chcete-li zpracovat více zaškrtávacích políček, procházeli byste sbírku 
  Ano, můžete vytvořit nová zaškrtávací políčka přidáním strukturovaných značek dokumentu typu`SdtType.Checkbox` k vašemu dokumentu.
 
 ### Je možné vyčíst stav zaškrtávacího políčka z dokumentu?
- Absolutně. Stav zaškrtávacího políčka si můžete přečíst přístupem k`Checked` majetek z`StructuredDocumentTag` pokud je typu`SdtType.Checkbox`.
+ Absolutně. Stav zaškrtávacího políčka si můžete přečíst přístupem k`Checked` vlastnictvím`StructuredDocumentTag` pokud je typu`SdtType.Checkbox`.
 
 ### Jak získám dočasnou licenci pro Aspose.Words for .NET?
  Dočasnou licenci můžete získat od[Aspose nákupní stránku](https://purchase.aspose.com/temporary-license/), který umožňuje vyhodnotit plnou funkčnost knihovny.

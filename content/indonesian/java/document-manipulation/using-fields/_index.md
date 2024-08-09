@@ -10,7 +10,7 @@ url: /id/java/document-manipulation/using-fields/
  
 ## Pengantar Menggunakan Bidang di Aspose.Words untuk Java
 
-Dalam panduan langkah demi langkah ini, kita akan menjelajahi cara menggunakan kolom di Aspose.Words untuk Java. Bidang adalah tempat penampung yang dapat menyisipkan data secara dinamis ke dalam dokumen Anda. Kami akan membahas berbagai skenario, termasuk penggabungan bidang dasar, bidang bersyarat, bekerja dengan gambar, dan pemformatan baris bergantian. Kami akan memberikan cuplikan kode Java dan penjelasan untuk setiap skenario.
+Dalam panduan langkah demi langkah ini, kita akan mempelajari cara menggunakan kolom di Aspose.Words untuk Java. Bidang adalah tempat penampung yang dapat menyisipkan data secara dinamis ke dalam dokumen Anda. Kami akan membahas berbagai skenario, termasuk penggabungan bidang dasar, bidang bersyarat, bekerja dengan gambar, dan pemformatan baris bergantian. Kami akan memberikan cuplikan kode Java dan penjelasan untuk setiap skenario.
 
 ## Prasyarat
 

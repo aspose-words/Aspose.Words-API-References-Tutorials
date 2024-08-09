@@ -9,7 +9,7 @@ url: /hu/net/join-and-append-documents/unlink-headers-footers/
 ---
 ## Bevezetés
 
-dokumentumfeldolgozás világában a fejlécek és láblécek következetes tartása néha kihívást jelenthet. Akár dokumentumokat egyesít, akár csak különböző fejlécet és láblécet szeretne a különböző szakaszokhoz, elengedhetetlen a szétválasztásuk ismerete. Ma megvizsgáljuk, hogyan érheti el ezt az Aspose.Words for .NET használatával. Lépésről lépésre lebontjuk, hogy könnyen követhesd. Készen áll a dokumentumkezelés elsajátítására? Kezdjük el!
+dokumentumfeldolgozás világában a fejlécek és láblécek következetes tartása néha kihívást jelenthet. Akár dokumentumokat egyesít, akár csak különböző fejlécet és láblécet szeretne a különböző szakaszokhoz, elengedhetetlen a szétválasztásuk ismerete. Ma megvizsgáljuk, hogyan érheti el ezt az Aspose.Words for .NET használatával. Lépésről lépésre lebontjuk, hogy könnyen követhesd. Készen áll a dokumentumkezelés elsajátítására? Kezdjük is!
 
 ## Előfeltételek
 

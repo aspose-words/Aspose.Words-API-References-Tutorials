@@ -2,7 +2,7 @@
 title: Den ultimata guiden till dokumentrevision
 linktitle: Den ultimata guiden till dokumentrevision
 second_title: Aspose.Words Java Document Processing API
-description: Master dokumentrevision med Aspose.Words för Java! Hantera ändringar effektivt, acceptera/avvisa revisioner och samarbeta sömlöst. Börja nu!
+description: Master dokumentrevision med Aspose.Words för Java! Hantera ändringar effektivt, acceptera/avvisa revisioner och samarbeta sömlöst. Kom igång nu!
 type: docs
 weight: 10
 url: /sv/java/document-revision/guide-document-revision/

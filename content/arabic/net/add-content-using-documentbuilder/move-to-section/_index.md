@@ -94,4 +94,4 @@ builder.Writeln("This is a new third paragraph.");
  يمكنك الحصول على الدعم من[منتدى Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### هل يمكنني استخدام Aspose.Words لـ .NET في مشروع تجاري؟
- نعم، ولكن عليك شراء ترخيص من[رابط شراء](https://purchase.aspose.com/buy).
+ نعم، ولكن عليك شراء ترخيص من[رابط الشراء](https://purchase.aspose.com/buy).

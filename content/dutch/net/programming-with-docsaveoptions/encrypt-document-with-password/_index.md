@@ -9,7 +9,7 @@ url: /nl/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
 ## Invoering
 
-Ooit gemerkt dat u een document met een wachtwoord moest beveiligen? Je bent niet alleen. Met de opkomst van digitale documentatie is het beschermen van gevoelige informatie belangrijker dan ooit. Aspose.Words voor .NET biedt een naadloze manier om uw documenten met wachtwoorden te coderen. Stel je voor dat je een slot op je agenda zet. Alleen degenen met de sleutel (of het wachtwoord, in dit geval) kunnen naar binnen gluren. Laten we eens kijken hoe u dit stap voor stap kunt bereiken.
+Ooit gemerkt dat u een document met een wachtwoord moest beveiligen? Je bent niet de enige. Met de opkomst van digitale documentatie is het beschermen van gevoelige informatie belangrijker dan ooit. Aspose.Words voor .NET biedt een naadloze manier om uw documenten met wachtwoorden te coderen. Stel je voor dat je een slot op je agenda zet. Alleen degenen met de sleutel (of het wachtwoord, in dit geval) kunnen naar binnen gluren. Laten we eens kijken hoe u dit stap voor stap kunt bereiken.
 
 ## Vereisten
 
@@ -19,7 +19,7 @@ Voordat we onze handen vuil maken met wat code, zijn er een paar dingen die je n
 3. .NET Framework: zorg ervoor dat u het hebt geïnstalleerd.
 4.  Licentie: U kunt beginnen met een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor volledige functies.
 
-Heb alles? Geweldig! Laten we verder gaan met het opzetten van ons project.
+Heb je alles? Geweldig! Laten we verder gaan met het opzetten van ons project.
 
 ## Naamruimten importeren
 
@@ -91,7 +91,7 @@ En daar heb je het! U hebt zojuist geleerd hoe u een document met een wachtwoord
 ## Veelgestelde vragen
 
 ### Kan ik een ander type codering gebruiken?
- Ja, Aspose.Words voor .NET ondersteunt verschillende versleutelingsmethoden. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Ja, Aspose.Words voor .NET ondersteunt verschillende versleutelingsmethoden. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Wat moet ik doen als ik mijn documentwachtwoord vergeet?
 Als u het wachtwoord vergeet, heeft u helaas geen toegang tot het document. Zorg ervoor dat u uw wachtwoorden veilig bewaart!

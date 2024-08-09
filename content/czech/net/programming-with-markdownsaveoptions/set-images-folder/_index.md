@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
-## Úvod
+## Zavedení
 
 Chtěli jste někdy exportovat dokument aplikace Word do formátu Markdown a zároveň zajistit, aby byly tabulky a obsah dokonale zarovnány? Aspose.Words for .NET je vaším řešením pro tento úkol. V tomto článku vás provedeme procesem nastavení Aspose.Words, přípravou dokumentu a jeho exportem do Markdown se správným zarovnáním obsahu tabulky. Každý krok rozebereme, aby se dal snadno sledovat a pochopit. Pojďme se tedy ponořit a přeměnit vaše dokumenty Wordu na krásně zarovnané soubory Markdown!
 
@@ -15,8 +15,8 @@ Chtěli jste někdy exportovat dokument aplikace Word do formátu Markdown a zá
 
 Než začneme, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
--  Platná licence: Získejte bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
+-  Platná licence: Získejte bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 - Visual Studio: Nebo jakékoli jiné IDE, které podporuje vývoj .NET.
 - Základní znalost C#: Pochopení programovacího jazyka C#.
 
@@ -100,7 +100,7 @@ Ano, Aspose.Words for .NET lze použít s jakýmkoli jazykem kompatibilním s .N
 
 ### Jak získám dočasnou licenci pro Aspose.Words?
 
- Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jaké typy dokumentů mohu převést na Markdown?
 
@@ -108,7 +108,7 @@ Můžete převádět různé dokumenty aplikace Word včetně .doc, .docx, .rtf 
 
 ### Existují nějaká omezení ve zkušební verzi Aspose.Words?
 
-Zkušební verze má určitá omezení, jako jsou vodoznaky ve výstupních souborech. Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+Zkušební verze má určitá omezení, jako jsou vodoznaky ve výstupních souborech. Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Kde najdu další příklady a dokumentaci pro Aspose.Words?
 

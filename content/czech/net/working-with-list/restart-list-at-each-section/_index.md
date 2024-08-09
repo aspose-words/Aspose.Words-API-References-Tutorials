@@ -2,101 +2,111 @@
 title: Seznam restartů v každé sekci
 linktitle: Seznam restartů v každé sekci
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak obnovit číslovaný seznam pro každou sekci v dokumentu Word pomocí Aspose.Words for .NET.
+description: Přečtěte si, jak restartovat seznamy v každé sekci v dokumentech aplikace Word pomocí Aspose.Words for .NET. Chcete-li seznamy efektivně spravovat, postupujte podle našeho podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/working-with-list/restart-list-at-each-section/
 ---
+## Zavedení
 
-tomto tutoriálu krok za krokem vám ukážeme, jak pomocí Aspose.Words for .NET resetovat číslovaný seznam pro každou sekci v dokumentu aplikace Word. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+Vytváření strukturovaných a dobře organizovaných dokumentů může někdy vypadat jako řešení složité hádanky. Jedním kouskem této skládačky je efektivní správa seznamů, zvláště když chcete, aby se v každé sekci restartovaly. S Aspose.Words pro .NET toho můžete dosáhnout bez problémů. Pojďme se ponořit do toho, jak můžete restartovat seznamy v každé sekci vašich dokumentů Word pomocí Aspose.Words for .NET.
 
- Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nakonfigurovaný ve svém vývojovém prostředí. Pokud jste tak ještě neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Předpoklady
 
-## Krok 1: Vytvoření dokumentu a seznamu
+Než začneme, ujistěte se, že máte následující:
 
-Nejprve vytvořte nový dokument a přidejte výchozí číslovaný seznam:
+1.  Aspose.Words for .NET: Stáhněte a nainstalujte nejnovější verzi z[Aspose Releases](https://releases.aspose.com/words/net/) strana.
+2. Prostředí .NET: Nastavte své vývojové prostředí s nainstalovaným .NET.
+3. Základní znalost C#: Doporučuje se znalost programovacího jazyka C#.
+4.  Aspose License: Můžete se rozhodnout pro a[dočasná licence](https://purchase.aspose.com/temporary-license/) pokud žádný nemáte.
+
+## Importovat jmenné prostory
+
+Před napsáním kódu se ujistěte, že jste importovali potřebné jmenné prostory:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Nyní si tento proces rozdělíme do několika kroků, aby bylo snadné jej sledovat.
+
+## Krok 1: Inicializujte dokument
+
+Nejprve budete muset vytvořit novou instanci dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## Krok 2: Přidání položek do seznamu
+## Krok 2: Přidejte číslovaný seznam
 
- Poté použijte a`DocumentBuilder` pro přidání položek do seznamu. K přidání více položek do seznamu můžete použít smyčku:
+Dále do dokumentu přidejte číslovaný seznam. Tento seznam bude mít výchozí formát číslování.
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## Krok 3: Otevřete seznam a nastavte vlastnost restartování
+
+Načtěte seznam, který jste právě vytvořili, a nastavte jej`IsRestartAtEachSection`majetek do`true`. Tím je zajištěno, že seznam znovu začne číslovat u každé nové sekce.
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## Krok 4: Vytvořte Tvůrce dokumentů a přidružte seznam
+
+ Vytvořte a`DocumentBuilder` vložit obsah do dokumentu a přiřadit jej k seznamu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## Krok 5: Přidejte položky seznamu a vložte konec oddílu
+
+Nyní přidejte položky do seznamu. Pro ilustraci funkčnosti restartu vložíme za určitý počet položek konec oddílu.
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-V tomto příkladu vkládáme konec oddílu za 15. položku seznamu pro ilustraci přečíslování.
+## Krok 6: Uložte dokument
 
-## Krok 3: Uložte upravený dokument
-
-Nakonec upravený dokument uložte:
+Nakonec uložte dokument s příslušnými možnostmi, abyste zajistili shodu.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-Tak ! Úspěšně jste resetovali číslovaný seznam pro každou sekci v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+## Závěr
 
-### Příklad zdrojového kódu pro resetování seznamu v každé sekci
+A tady to máte! Podle těchto kroků můžete bez námahy restartovat seznamy v každé sekci vašich dokumentů aplikace Word pomocí Aspose.Words for .NET. Tato funkce je neuvěřitelně užitečná pro vytváření dobře strukturovaných dokumentů, které vyžadují samostatné sekce s vlastním číslováním seznamu. S Aspose.Words se zvládání takových úkolů stává hračkou a umožňuje vám soustředit se na vytváření vysoce kvalitního obsahu.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## FAQ
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### Mohu restartovat seznamy v každé sekci pro různé typy seznamů?
+Ano, Aspose.Words for .NET umožňuje restartovat různé typy seznamů, včetně seznamů s odrážkami a číslovaných seznamů.
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### Co když chci upravit formát číslování?
+ Formát číslování můžete upravit úpravou`ListTemplate` vlastnost při vytváření seznamu.
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### Je počet položek v seznamu omezen?
+Ne, neexistuje žádný konkrétní limit na počet položek, které můžete mít v seznamu pomocí Aspose.Words for .NET.
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### Mohu tuto funkci použít v jiných formátech dokumentů, jako je PDF?
+Ano, můžete použít Aspose.Words k převodu dokumentů aplikace Word do jiných formátů, jako je PDF, při zachování struktury seznamu.
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-Neváhejte použít tento kód ve svých vlastních projektech a upravit jej tak, aby vyhovoval vašim konkrétním potřebám.
-
-### FAQ
-
-#### Otázka: Jak mohu restartovat seznam v každé sekci v Aspose.Words?
-
- A: Chcete-li restartovat seznam v každé sekci v Aspose.Words, musíte vytvořit instanci souboru`List`třídy a přiřadit k ní číslovaný seznam. Poté můžete použít`List.IsRestartAtEachSection` vlastnost, která určuje, že číslování by mělo být restartováno v každé sekci. Tento seznam můžete přidružit k jednomu nebo více oddílům dokumentu, aby se číslování u každého oddílu správně restartovalo.
-
-#### Otázka: Mohu upravit formát číslování seznamů v Aspose.Words?
-
- Odpověď: Ano, můžete upravit formát číslování seznamů v Aspose.Words. The`List` třída k tomu nabízí několik vlastností, jako např`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, atd. Pomocí těchto vlastností můžete nastavit typ seznamu (číslovaný, s odrážkami atd.), formát číslování (arabské číslice, římské číslice, písmena atd.) a další možnosti formátování číslování.
-
-#### Otázka: Je možné přidat další úrovně do číslovaného seznamu v Aspose.Words?
-
- Odpověď: Ano, je možné přidat další úrovně do číslovaného seznamu v Aspose.Words. The`ListLevel`class umožňuje nastavit vlastnosti formátování pro každou úroveň seznamu. Můžete nastavit možnosti, jako je předpona, přípona, zarovnání, odsazení atd. To vám umožní vytvářet seznamy s více úrovněmi hierarchie.
+### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
+ Můžete získat bezplatnou zkušební verzi od[Aspose Releases](https://releases.aspose.com/) strana.

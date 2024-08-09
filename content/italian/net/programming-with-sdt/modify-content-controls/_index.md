@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/modify-content-controls/
 ---
-## introduzione
+## Introduzione
 
 Se hai mai lavorato con documenti di Word e hai avuto bisogno di modificare controlli di contenuto strutturato, come testo semplice, elenchi a discesa o immagini, utilizzando Aspose.Words per .NET, sei nel posto giusto! I tag di documenti strutturati (SDT) sono strumenti potenti che rendono l'automazione dei documenti più semplice e flessibile. In questo tutorial, approfondiremo come modificare questi SDT per adattarli alle tue esigenze. Che tu stia aggiornando il testo, modificando le selezioni a discesa o scambiando immagini, questa guida ti guiderà attraverso il processo passo dopo passo.
 

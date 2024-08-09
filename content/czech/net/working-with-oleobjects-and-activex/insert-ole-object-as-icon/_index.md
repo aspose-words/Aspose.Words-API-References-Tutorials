@@ -2,95 +2,91 @@
 title: Vložit OLE objekt do dokumentu aplikace Word jako ikonu
 linktitle: Vložit OLE objekt do dokumentu aplikace Word jako ikonu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit objekt OLE do dokumentu aplikace Word jako ikonu pomocí Aspose.Words for .NET.
+description: Naučte se vložit objekt OLE jako ikonu do dokumentů aplikace Word pomocí Aspose.Words for .NET. Vylepšete své dokumenty podle našeho podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon/
 ---
+## Zavedení
 
-Zde je průvodce krok za krokem, který vysvětluje zdrojový kód C# níže, který ilustruje, jak vložit objekt OLE do dokumentu aplikace Word jako ikonu pomocí Aspose.Words for .NET.
+Stalo se vám někdy, že jste potřebovali vložit objekt OLE, například prezentaci v PowerPointu nebo tabulku Excel, do dokumentu aplikace Word, ale chtěli jste, aby vypadal jako úhledná malá ikona a ne jako celý objekt? Tak to jste na správném místě! V tomto tutoriálu vás provedeme tím, jak vložit objekt OLE jako ikonu do dokumentu aplikace Word pomocí Aspose.Words for .NET. Na konci této příručky budete schopni bezproblémově integrovat objekty OLE do svých dokumentů, díky čemuž budou interaktivnější a vizuálně přitažlivější.
 
-## Krok 1: Importujte potřebné reference
-Než začnete, ujistěte se, že jste do svého projektu naimportovali potřebné reference pro použití Aspose.Words for .NET. To zahrnuje import knihovny Aspose.Words a přidání požadovaných jmenných prostorů do zdrojového souboru.
+## Předpoklady
+
+Než se ponoříme do podrobností, pojďme si probrat, co potřebujete:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout z[Aspose stránku vydání](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Potřebujete integrované vývojové prostředí (IDE), jako je Visual Studio.
+3. Základní znalost C#: Základní znalost programování v C# bude užitečná.
+
+## Importovat jmenné prostory
+
+Nejprve musíte importovat potřebné jmenné prostory. To je nezbytné pro přístup k funkcím knihovny Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## Krok 2: Vytvořte nový dokument a generátor dokumentů
- V tomto kroku vytvoříme nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder` třída.
+## Krok 1: Vytvořte nový dokument
+
+Chcete-li začít, musíte vytvořit novou instanci dokumentu aplikace Word.
 
 ```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Vložte OLE objekt jako ikonu
- Použijte Tvůrce dokumentů`InsertOleObjectAsIcon` metoda pro vložení objektu OLE jako ikony do dokumentu. Zadejte cestu k souboru OLE, příznak zobrazení, cestu k ikoně a název vloženého objektu.
+Tento fragment kódu inicializuje nový dokument aplikace Word a objekt DocumentBuilder, který se používá k vytvoření obsahu dokumentu.
+
+## Krok 2: Vložte OLE objekt jako ikonu
+
+ Nyní vložíme objekt OLE jako ikonu. The`InsertOleObjectAsIcon` K tomuto účelu se používá metoda třídy DocumentBuilder.
 
 ```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
+builder.InsertOleObjectAsIcon("path_to_your_presentation.pptx", false, "path_to_your_icon.ico", "My embedded file");
 ```
 
-## Krok 4: Uložte dokument
- Použijte dokument`Save` způsob uložení dokumentu do souboru.
+Pojďme si tuto metodu rozebrat:
+- `"path_to_your_presentation.pptx"`: Toto je cesta k objektu OLE, který chcete vložit.
+- `false` : Tento booleovský parametr určuje, zda se má objekt OLE zobrazit jako ikona. Protože chceme ikonu, nastavíme ji na`false`.
+- `"path_to_your_icon.ico"`: Toto je cesta k souboru ikony, který chcete použít pro objekt OLE.
+- `"My embedded file"`: Toto je štítek, který se zobrazí pod ikonou.
+
+## Krok 3: Uložte dokument
+
+Nakonec je potřeba dokument uložit. Vyberte adresář, kam chcete soubor uložit.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 ```
 
-### Příklad zdrojového kódu pro vložení objektu OLE jako ikony pomocí Aspose.Words for .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
-
-Toto je kompletní ukázka kódu pro vložení objektu OLE jako ikony pomocí Aspose.Words for .NET. Nezapomeňte importovat potřebné reference a postupujte podle výše popsaných kroků k integraci tohoto kódu do vašeho projektu.
+Tento řádek kódu uloží dokument do zadané cesty.
 
 ## Závěr
 
-Na závěr jsme prozkoumali podrobný návod, jak vložit objekt OLE jako ikonu do dokumentu aplikace Word pomocí Aspose.Words for .NET.
+Gratuluji! Úspěšně jste se naučili, jak vložit objekt OLE jako ikonu do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato technika nejen pomáhá při vkládání složitých objektů, ale také udržuje váš dokument uklizený a profesionální.
 
-Podle těchto kroků budete moci úspěšně vložit objekt OLE jako ikonu do dokumentů aplikace Word pomocí Aspose.Words for .NET. Nezapomeňte importovat potřebné reference a pečlivě dodržujte pokyny, abyste získali požadované výsledky.
+## FAQ
 
-### Časté dotazy pro vložení ole objektu do dokumentu aplikace Word jako ikonu
+### Mohu touto metodou používat různé typy objektů OLE?
 
-#### Q. Jaké odkazy jsou potřebné k vložení objektu OLE jako ikony do dokumentu aplikace Word pomocí Aspose.Words for .NET?
+Ano, můžete vložit různé typy objektů OLE, jako jsou tabulky aplikace Excel, prezentace PowerPoint a dokonce i soubory PDF.
 
-A: Chcete-li používat Aspose.Words pro .NET, musíte do svého projektu importovat následující odkazy:
+### Jak získám bezplatnou zkušební verzi Aspose.Words pro .NET?
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-```
+ Můžete získat bezplatnou zkušební verzi od[Aspose stránku vydání](https://releases.aspose.com/).
 
-#### Otázka: Jak vytvořit nový dokument a generátor dokumentů v Aspose.Words pro .NET?
+### Co je objekt OLE?
 
- Odpověď: Můžete vytvořit nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder`třída. Zde je příklad:
+OLE (Object Linking and Embedding) je technologie vyvinutá společností Microsoft, která umožňuje vkládání a propojování dokumentů a dalších objektů.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+### Potřebuji licenci k používání Aspose.Words pro .NET?
 
-#### Dotaz: Jak vložit objekt OLE jako ikonu do dokumentu?
+ Ano, Aspose.Words for .NET vyžaduje licenci. Můžete si jej zakoupit od[Aspose nákupní stránku](https://purchase.aspose.com/buy) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
 
- Odpověď: Použijte Tvůrce dokumentů`InsertOleObjectAsIcon` metoda pro vložení objektu OLE jako ikony. Zadejte cestu k souboru OLE, příznak zobrazení, cestu k ikoně a název vloženého objektu. Zde je příklad:
+### Kde najdu další návody na Aspose.Words pro .NET?
 
-```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-```
-
-#### Q. Jak uložit dokument s objektem OLE vloženým jako ikona?
-
- A: Použijte dokument`Save`způsob uložení dokumentu do souboru. Zde je příklad:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
+ Další návody a dokumentaci najdete na[Aspose dokumentační stránku](https://reference.aspose.com/words/net/).

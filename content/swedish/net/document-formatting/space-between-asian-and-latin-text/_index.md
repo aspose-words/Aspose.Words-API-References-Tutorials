@@ -9,7 +9,7 @@ url: /sv/net/document-formatting/space-between-asian-and-latin-text/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin haft det där frustrerande ögonblicket när du arbetar med ett Word-dokument och avståndet mellan asiatisk och latinsk text helt enkelt inte ser rätt ut? Det är som att försöka passa ihop pusselbitar från olika uppsättningar, och det kan göra vem som helst galen! Men oroa dig inte, jag har dig täckt. Idag dyker vi in i Aspose.Words för .NET-världen för att ta itu med just detta problem. I slutet av den här handledningen vet du exakt hur du automatiskt justerar utrymmet mellan asiatisk och latinsk text i dina Word-dokument som ett proffs.
+Hej där! Har du någonsin haft det där frustrerande ögonblicket när du arbetar med ett Word-dokument och avståndet mellan asiatisk och latinsk text helt enkelt inte ser rätt ut? Det är som att försöka passa ihop pusselbitar från olika uppsättningar, och det kan göra vem som helst galen! Men oroa dig inte, jag har dig täckt. Idag dyker vi in i Aspose.Words för .NET-världen för att ta itu med just detta problem. I slutet av den här handledningen vet du exakt hur du automatiskt justerar utrymmet mellan asiatisk och latinsk text i dina Word-dokument som ett proffs.
 
 ## Förutsättningar
 
@@ -20,7 +20,7 @@ Innan vi hoppar in i magin, låt oss se till att vi har allt vi behöver. Här �
 3. Grundläggande kunskaper i C#: Du behöver inte vara en trollkarl, men lite förtrogenhet kommer att räcka långt.
 4.  En giltig licens: Få en gratis provperiod[här](https://releases.aspose.com/) eller köp en licens[här](https://purchase.aspose.com/buy).
 
-Okej, har du allt? Grymt bra! Låt oss smutsa ner händerna.
+Okej, har du allt? Fantastisk! Låt oss smutsa ner händerna.
 
 ## Importera namnområden
 
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Genom att sätta`AddSpaceBetweenFarEastAndAlpha`och`AddSpaceBetweenFarEastAndDigit` till`true`, säger vi till Aspose.Words att automatiskt justera avståndet mellan asiatiska tecken och latinska bokstäver eller siffror.
+ Genom att ställa in`AddSpaceBetweenFarEastAndAlpha`och`AddSpaceBetweenFarEastAndDigit` till`true`, säger vi till Aspose.Words att automatiskt justera avståndet mellan asiatiska tecken och latinska bokstäver eller siffror.
 
 ## Steg 3: Lägga till text i dokumentet
 

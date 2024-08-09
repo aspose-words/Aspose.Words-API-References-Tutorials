@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/load-with-encoding/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Quindi stai lavorando con documenti Word e devi caricarne uno con una codifica specifica? Forse ti sei imbattuto in documenti con testo codificato in qualcosa come UTF-7 e ti stai grattando la testa su come gestirli. Bene, sei nel posto giusto! In questo tutorial, approfondiremo come caricare un documento Word con una codifica specifica utilizzando Aspose.Words per .NET. Questa potente libreria ti consente di manipolare i documenti Word in modi che probabilmente non avresti mai pensato possibili. Iniziamo!
 
@@ -70,7 +70,7 @@ Questa riga di codice carica il documento dal percorso specificato utilizzando l
 
 ## Conclusione
 
-E il gioco è fatto! Hai caricato con successo un documento Word con una codifica specifica utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la gestione di diverse codifiche di testo e garantisce che i tuoi documenti vengano elaborati correttamente. Che tu abbia a che fare con documenti legacy o lavori con testo internazionale, Aspose.Words ti copre.
+Ed ecco qua! Hai caricato con successo un documento Word con una codifica specifica utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la gestione di diverse codifiche di testo e garantisce che i tuoi documenti vengano elaborati correttamente. Che tu abbia a che fare con documenti legacy o lavori con testo internazionale, Aspose.Words ti copre.
 
 ## Domande frequenti
 

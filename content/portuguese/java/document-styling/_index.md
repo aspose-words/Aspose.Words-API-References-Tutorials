@@ -12,7 +12,7 @@ Aspose.Words for Java fornece ferramentas poderosas para estilização de docume
 
 ## Compreendendo os fundamentos do estilo de documentos
 
-Antes de se aprofundar nas técnicas avançadas de estilo de documentos, é essencial compreender os fundamentos. Nestes tutoriais, abordaremos os conceitos básicos de processamento e estilo de documentos, explorando os diversos elementos que contribuem para a estética do documento. Você aprenderá como configurar uma estrutura de documento, aplicar diferentes estilos de títulos e formatar parágrafos para criar conteúdo claro e organizado. Além disso, exploraremos o uso de listas, tabelas e outros elementos para apresentar dados de maneira eficiente e visualmente atraente. Essas habilidades básicas servirão como uma base sólida para dominar a arte do estilo de documentos usando Aspose.Words for Java.
+Antes de se aprofundar nas técnicas avançadas de estilo de documentos, é essencial compreender os fundamentos. Nestes tutoriais, abordaremos os conceitos básicos de processamento e estilo de documentos, explorando os vários elementos que contribuem para a estética do documento. Você aprenderá como configurar uma estrutura de documento, aplicar diferentes estilos de títulos e formatar parágrafos para criar conteúdo claro e organizado. Além disso, exploraremos o uso de listas, tabelas e outros elementos para apresentar dados de maneira eficiente e visualmente atraente. Essas habilidades básicas servirão como uma base sólida para dominar a arte do estilo de documentos usando Aspose.Words for Java.
 
 ## Aproveitando recursos avançados de estilo
 

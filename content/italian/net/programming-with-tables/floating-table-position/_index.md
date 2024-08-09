@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/floating-table-position/
 ---
-## introduzione
+## Introduzione
 
 Sei pronto per immergerti nel mondo della manipolazione delle posizioni delle tabelle nei documenti Word utilizzando Aspose.Words per .NET? Allacciate le cinture, perché oggi esploreremo come controllare facilmente la posizione fluttuante dei tavoli. Ti trasformeremo in un mago del posizionamento del tavolo in pochissimo tempo!
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 
 ## Conclusione
 
-il gioco è fatto! Hai appena imparato come controllare la posizione mobile delle tabelle in un documento Word utilizzando Aspose.Words per .NET. Con queste competenze, puoi garantire che le tue tabelle siano posizionate perfettamente per migliorare la leggibilità e l'estetica dei tuoi documenti. Continua a sperimentare ed esplorare le vaste funzionalità di Aspose.Words per .NET.
+Ed ecco qua! Hai appena imparato come controllare la posizione mobile delle tabelle in un documento Word utilizzando Aspose.Words per .NET. Con queste competenze, puoi garantire che le tue tabelle siano posizionate perfettamente per migliorare la leggibilità e l'estetica dei tuoi documenti. Continua a sperimentare ed esplorare le vaste funzionalità di Aspose.Words per .NET.
 
 ## Domande frequenti
 

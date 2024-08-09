@@ -53,7 +53,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
- Ở đây, chúng ta khởi tạo hai`Document` các đối tượng.`srcDoc` đại diện cho tài liệu nguồn và`dstDoc` đại diện cho tài liệu đích.
+ Ở đây, chúng ta khởi tạo hai`Document` đồ vật.`srcDoc` đại diện cho tài liệu nguồn và`dstDoc` đại diện cho tài liệu đích.
 
 ## Bước 3: Nối tài liệu nguồn vào tài liệu đích
 
@@ -63,7 +63,7 @@ Bây giờ đến phần thú vị – nối tài liệu nguồn vào tài liệ
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Ở bước này, chúng ta sử dụng`AppendDocument`phương pháp kết hợp hai tài liệu. Các`ImportFormatMode.KeepSourceFormatting` tham số đảm bảo rằng định dạng của tài liệu nguồn được giữ nguyên.
+ Ở bước này, chúng ta sử dụng`AppendDocument`phương pháp kết hợp hai tài liệu. các`ImportFormatMode.KeepSourceFormatting` tham số đảm bảo rằng định dạng của tài liệu nguồn được giữ nguyên.
 
 ## Bước 4: Lưu tài liệu kết hợp
 
@@ -77,7 +77,7 @@ dstDoc.Save(dataDir + "AppendedDocument.docx");
 
 ## Phần kết luận
 
- Và bạn có nó rồi đấy! Bạn đã học thành công cách nối một tài liệu Word vào một tài liệu Word khác bằng Aspose.Words for .NET. Hướng dẫn này bao gồm việc thiết lập môi trường của bạn, tải tài liệu, nối tài liệu này với tài liệu khác trong khi vẫn giữ định dạng nguồn và lưu tài liệu kết hợp. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
+ Và bạn có nó! Bạn đã học thành công cách nối một tài liệu Word vào một tài liệu Word khác bằng Aspose.Words for .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, tải tài liệu, nối thêm tài liệu này với tài liệu khác trong khi vẫn giữ định dạng nguồn và lưu tài liệu kết hợp. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
 
 ## Câu hỏi thường gặp
 

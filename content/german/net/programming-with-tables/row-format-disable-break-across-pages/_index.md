@@ -81,7 +81,7 @@ In diesem Tutorial haben wir gezeigt, wie Sie Zeilenumbrüche über Seiten in ei
 Ja, Sie können auf dieselbe Weise auf verschachtelte Tabellen zugreifen und diese ändern. Stellen Sie sicher, dass Sie die verschachtelte Tabelle über ihren Index oder andere Eigenschaften korrekt referenzieren.
 
 ### Wie kann ich prüfen, ob eine Zeile einen Seitenumbruch zulässt?  
- Sie können überprüfen, ob eine Zeile einen Seitenumbruch zulässt, indem Sie auf`AllowBreakAcrossPages` Eigentum der`RowFormat` und seinen Wert überprüfen.
+ Sie können überprüfen, ob eine Zeile einen Seitenumbruch zulässt, indem Sie auf die`AllowBreakAcrossPages` Eigentum der`RowFormat` und seinen Wert überprüfen.
 
 ### Gibt es eine Möglichkeit, diese Einstellung auf alle Tabellen in einem Dokument anzuwenden?  
 Ja, Sie können alle Tabellen im Dokument durchlaufen und diese Einstellung auf jede einzelne anwenden.

@@ -10,7 +10,7 @@ url: /it/python-net/document-structure-and-content-manipulation/document-textbox
 
 Le caselle di testo sono una funzionalità potente nei documenti di Word che consente di creare layout di contenuti visivamente accattivanti e organizzati. Con Aspose.Words per Python, puoi portare la generazione di documenti a un livello superiore integrando perfettamente le caselle di testo nei tuoi documenti. In questa guida passo passo, esploreremo come migliorare il contenuto visivo con le caselle di testo utilizzando l'API Python Aspose.Words.
 
-## introduzione
+## Introduzione
 
 Le caselle di testo forniscono un modo versatile per presentare il contenuto all'interno di un documento di Word. Ti consentono di isolare testo e immagini, controllarne il posizionamento e applicare la formattazione in modo specifico al contenuto all'interno della casella di testo. Questa guida ti guiderà attraverso il processo di utilizzo di Aspose.Words per Python per creare e personalizzare caselle di testo all'interno dei tuoi documenti.
 
@@ -106,7 +106,7 @@ In questa guida, abbiamo esplorato il processo di miglioramento del contenuto vi
 
 ### Come faccio ad aggiungere bordi a una casella di testo?
 
- Puoi aggiungere bordi a una casella di testo utilizzando il comando`textbox.border`proprietà e personalizzarne l'aspetto.
+ Puoi aggiungere bordi a una casella di testo utilizzando il comando`textbox.border`proprietà e personalizzandone l'aspetto.
 
 ### Posso incorporare collegamenti ipertestuali all'interno di una casella di testo?
 

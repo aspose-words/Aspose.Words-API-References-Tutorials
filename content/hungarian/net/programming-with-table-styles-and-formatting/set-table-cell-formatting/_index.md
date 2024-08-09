@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Indítson el egy táblázatot
 
- A ... val`DocumentBuilder` például elkezdheti a táblázat létrehozását. Ez úgy történik, hogy felhívja a`StartTable` módszer.
+ A`DocumentBuilder` például elkezdheti a táblázat létrehozását. Ez úgy történik, hogy felhívja a`StartTable` módszer.
 
 ```csharp
 // Indítsa el a táblázatot

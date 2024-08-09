@@ -15,10 +15,10 @@ Hallo liebe Programmierer und Dokumentautomatisierungs-Enthusiasten! Seid ihr be
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version von Aspose.Words für .NET haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version von Aspose.Words für .NET haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-Entwicklungsumgebung wie Visual Studio ist zum Schreiben und Testen Ihres Codes unerlässlich.
 3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse in C# helfen Ihnen dabei, den Codeausschnitten zu folgen.
-4.  Beispiel eines Word-Dokuments:[Word-Datei](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) mit vorhandenen VBA-Makros. Dies wird unser Testobjekt zum Ändern der Makros sein.
+4.  Beispiel eines Word-Dokuments:[Word-Dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) mit vorhandenen VBA-Makros. Dies wird unser Testobjekt zum Ändern der Makros sein.
 
 ## Namespaces importieren
 
@@ -110,7 +110,7 @@ Diese Zeile speichert das Dokument mit dem geänderten VBA-Makro als "WorkingWit
 
 Und da haben Sie es! Sie haben erfolgreich VBA-Makros in einem Word-Dokument mit Aspose.Words für .NET geändert. Dieses Tutorial behandelte alles, vom Laden Ihres Dokuments und dem Zugriff auf das VBA-Projekt bis hin zum Ändern des Makrocodes und dem Speichern des geänderten Dokuments. Mit Aspose.Words können Sie Aufgaben problemlos automatisieren, Ihre Dokumente anpassen und sogar mit VBA-Makros experimentieren, um sie Ihren Anforderungen anzupassen.
 
- Wenn Sie mehr entdecken möchten,[API-Dokumentation](https://reference.aspose.com/words/net/) ist eine fantastische Ressource. Und wenn Sie jemals auf ein Problem stoßen,[Hilfeforum](https://forum.aspose.com/c/words/8) ist immer da, um Ihnen zu helfen.
+ Wenn Sie mehr entdecken möchten,[API-Dokumentation](https://reference.aspose.com/words/net/) ist eine fantastische Ressource. Und wenn Sie jemals auf ein Problem stoßen,[Support-Forum](https://forum.aspose.com/c/words/8) ist immer da, um Ihnen zu helfen.
 
 Viel Spaß beim Programmieren und denken Sie daran: Bei der Automatisierung Ihrer Word-Dokumente sind Ihnen keine Grenzen gesetzt!
 

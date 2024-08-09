@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Шаг 3. Настройте базовое сжатие изображения
 
- Создать`PdfSaveOptions`объект для настройки параметров сохранения PDF, включая сжатие изображений. Установить`ImageCompression`собственность`PdfImageCompression.Jpeg` использовать сжатие JPEG для изображений.
+ Создайте`PdfSaveOptions`объект для настройки параметров сохранения PDF, включая сжатие изображений. Установите`ImageCompression`собственность`PdfImageCompression.Jpeg` использовать сжатие JPEG для изображений.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## Шаг 5. Настройте расширенное сжатие с соблюдением требований PDF/A
 
- Для еще лучшего сжатия, особенно если вам необходимо соответствовать стандартам PDF/A, вы можете настроить дополнительные параметры. Установить`Compliance`собственность`PdfCompliance.PdfA2u` и отрегулируйте`JpegQuality` свойство.
+ Для еще лучшего сжатия, особенно если вам необходимо соответствовать стандартам PDF/A, вы можете настроить дополнительные параметры. Установите`Compliance`собственность`PdfCompliance.PdfA2u` и отрегулируйте`JpegQuality` свойство.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions

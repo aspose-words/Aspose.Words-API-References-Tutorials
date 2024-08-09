@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-comments/add-comments/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v našem podrobném průvodci přidáváním komentářů do dokumentů aplikace Word pomocí Aspose.Words pro .NET! Pokud chcete zefektivnit proces kontroly dokumentů programovým začleněním komentářů, jste na správném místě. Tento tutoriál vás provede vším, co potřebujete vědět, od nastavení prostředí až po psaní a ukládání komentářů v dokumentech aplikace Word. Pojďme se ponořit a udělejte ze spolupráce na dokumentech hračku!
 
@@ -15,7 +15,7 @@ Vítejte v našem podrobném průvodci přidáváním komentářů do dokumentů
 
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
-1. Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 3. Vývojové prostředí: IDE jako Visual Studio pro psaní a spouštění vašeho kódu.
 4. Základní znalost C#: Znalost programovacího jazyka C# vám pomůže postupovat podle příkladů.
@@ -103,7 +103,7 @@ Aspose.Words for .NET je výkonné rozhraní API, které umožňuje vývojářů
 
 Ano, k jednomu dokumentu můžete přidat více komentářů opakováním procesu vytváření a přidávání komentářů k různým odstavcům nebo textovým úsekům.
 
-### Jak mohu upravit vzhled komentářů?
+### Jak mohu přizpůsobit vzhled komentářů?
 
 Zatímco Aspose.Words se zaměřuje na obsah a strukturu komentářů, vzhled lze přizpůsobit pomocí vestavěných funkcí formátování aplikace Word.
 

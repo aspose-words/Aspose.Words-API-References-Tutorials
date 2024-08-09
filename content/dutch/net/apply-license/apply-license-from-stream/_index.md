@@ -9,7 +9,7 @@ url: /nl/net/apply-license/apply-license-from-stream/
 ---
 ## Invoering
 
-Hallo daar, mede-codeerders! Als u in de wereld van Aspose.Words voor .NET duikt, is een van de eerste dingen die u moet doen het aanvragen van een licentie om het volledige potentieel van de bibliotheek te ontsluiten. In deze handleiding laten we u zien hoe u een licentie voor een stream kunt aanvragen. Geloof me, het is eenvoudiger dan het klinkt, en aan het einde van deze tutorial heb je je applicatie soepel werkend. klaar om te beginnen? Laten we er meteen in springen!
+Hallo daar, mede-codeerders! Als u in de wereld van Aspose.Words voor .NET duikt, is een van de eerste dingen die u hoeft te doen een licentie aanvragen om het volledige potentieel van de bibliotheek te ontsluiten. In deze handleiding laten we u zien hoe u een licentie voor een stream kunt aanvragen. Geloof me, het is eenvoudiger dan het klinkt, en aan het einde van deze tutorial heb je je applicatie soepel werkend. Klaar om aan de slag te gaan? Laten we er meteen in springen!
 
 ## Vereisten
 
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Conclusie
 
-En daar heb je het! Het toepassen van een licentie van een stream in Aspose.Words voor .NET is een eenvoudig proces zodra u de stappen kent. Door deze handleiding te volgen, zorgt u ervoor dat uw toepassing zonder enige beperking de volledige mogelijkheden van Aspose.Words kan benutten. Als u problemen ondervindt, aarzel dan niet om de[documentatie](https://reference.aspose.com/words/net/) of zoek hulp op de[Helpforum](https://forum.aspose.com/c/words/8). Veel codeerplezier!
+En daar heb je het! Het toepassen van een licentie van een stream in Aspose.Words voor .NET is een eenvoudig proces zodra u de stappen kent. Door deze handleiding te volgen, zorgt u ervoor dat uw toepassing zonder enige beperking de volledige mogelijkheden van Aspose.Words kan benutten. Als u problemen ondervindt, aarzel dan niet om de[documentatie](https://reference.aspose.com/words/net/) of zoek hulp op de[ondersteuningsforum](https://forum.aspose.com/c/words/8). Veel codeerplezier!
 
 ## Veelgestelde vragen
 

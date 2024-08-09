@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /fr/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Introduction
 
 Si vous avez déjà rencontré des problèmes de polices qui ne s'affichent pas correctement dans vos documents, vous n'êtes pas seul. La gestion des paramètres de police et la réception de notifications sur les substitutions de polices peuvent vous éviter bien des maux de tête. Dans ce guide complet, nous explorerons comment gérer les notifications de polices à l'aide d'Aspose.Words for .NET, garantissant ainsi que vos documents soient toujours à leur meilleur.
 
@@ -99,7 +99,7 @@ En suivant ces étapes, vous avez configuré votre application pour gérer les s
 
 ## Conclusion
 
-Vous maîtrisez désormais le processus de réception de notifications pour les substitutions de polices à l'aide d'Aspose.Words for .NET. Cette compétence vous aidera à garantir que vos documents soient toujours à leur meilleur, même lorsque les polices nécessaires ne sont pas disponibles. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d'Aspose.Words.
+Vous maîtrisez désormais le processus de réception de notifications pour les substitutions de polices à l'aide d'Aspose.Words for .NET. Cette compétence vous aidera à garantir que vos documents soient toujours à leur meilleur, même lorsque les polices nécessaires ne sont pas disponibles. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d’Aspose.Words.
 
 ## FAQ
 
@@ -113,11 +113,11 @@ Non, vous ne pouvez spécifier qu'une seule police par défaut pour la substitut
 
 ###  Q3 : Puis-je gérer d'autres types d'avertissements avec`IWarningCallback`?
 
- Oui le`IWarningCallback`L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
+ Oui, le`IWarningCallback`L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
 
 ### Q4 : Où puis-je trouver de l'aide pour Aspose.Words ?
 
- Visiter le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) à l'aide.
+ Visitez le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) pour obtenir de l'aide.
 
 ### Q5 : Est-il possible d'obtenir une licence temporaire pour Aspose.Words ?
 

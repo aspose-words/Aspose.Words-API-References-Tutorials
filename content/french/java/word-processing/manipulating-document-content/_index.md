@@ -14,7 +14,7 @@ Dans le monde de la programmation Java, une gestion efficace des documents est u
 
 ## Premiers pas avec Aspose.Words pour Java
 
-Avant d'entrer dans les détails de la manipulation du contenu d'un document, assurons-nous que vous disposez des outils et des connaissances nécessaires pour commencer. Suivez ces étapes:
+Avant d'entrer dans les détails de la manipulation du contenu d'un document, assurons-nous que vous disposez des outils et des connaissances nécessaires pour commencer. Suivez ces étapes :
 
 1. Installation et configuration
    

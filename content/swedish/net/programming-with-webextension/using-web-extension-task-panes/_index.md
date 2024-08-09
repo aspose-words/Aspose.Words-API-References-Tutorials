@@ -42,7 +42,7 @@ Först och främst måste vi ställa in sökvägen till din dokumentkatalog. Det
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentmapp.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentmapp.
 
 ### Steg 2: Skapa ett nytt dokument
 
@@ -76,7 +76,7 @@ taskPane.Width = 300;
 ```
 
 - `DockState` anger var aktivitetsfönstret ska visas. I det här fallet är det till höger.
-- `IsVisible` ser till att aktivitetsfönstret är synligt.
+- `IsVisible` ser till att uppgiftsfönstret är synligt.
 - `Width` anger bredden på aktivitetsfönstret.
 
 ### Steg 5: Konfigurera webbtilläggsreferens
@@ -147,7 +147,7 @@ Den här koden laddar dokumentet och skriver ut leverantören, versionen och kat
 
 ## Slutsats
 
-Och det är allt! Du har framgångsrikt lagt till och konfigurerat en aktivitetsruta för webbtillägg i ett Word-dokument med Aspose.Words för .NET. Denna kraftfulla funktion kan avsevärt förbättra dina Word-dokument genom att tillhandahålla ytterligare funktioner direkt i dokumentet. 
+Och det är det! Du har framgångsrikt lagt till och konfigurerat en aktivitetsruta för webbtillägg i ett Word-dokument med Aspose.Words för .NET. Denna kraftfulla funktion kan avsevärt förbättra dina Word-dokument genom att tillhandahålla ytterligare funktioner direkt i dokumentet. 
 
 ## FAQ's
 

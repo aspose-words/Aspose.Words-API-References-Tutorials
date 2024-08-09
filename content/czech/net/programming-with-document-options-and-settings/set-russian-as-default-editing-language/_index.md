@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
-## Úvod
+## Zavedení
 
 V dnešním vícejazyčném světě je často nutné upravit dokumenty tak, aby vyhovovaly jazykovým preferencím různých uživatelů. Jednou z takových úprav je nastavení výchozího jazyka pro úpravy v dokumentu aplikace Word. Pokud používáte Aspose.Words pro .NET, tento kurz vás provede nastavením ruštiny jako výchozího jazyka pro úpravy v dokumentech aplikace Word. 
 

@@ -16,7 +16,7 @@ Hallo liebe Entwicklerkollegen! 👋 Wurden Sie schon einmal mit der Erstellung 
 
 Bevor wir uns in den Code stürzen, gehen wir durch, was Sie brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-kompatible IDE wie Visual Studio reicht aus.
 3. Grundkenntnisse in C#: Wenn Sie die C#-Syntax verstehen, können Sie problemlos folgen.
 4. Ein Beispiel-Word-Dokument: Obwohl wir ein Dokument von Grund auf neu erstellen, kann ein Beispiel für Testzwecke nützlich sein.
@@ -83,7 +83,7 @@ Sobald wir einen neuen Abschnitt hinzugefügt haben, können wir ihn genau wie d
 
 ### Verwenden von DocumentBuilder für den neuen Abschnitt
 
-Um Inhalt zum neuen Abschnitt hinzuzufügen, müssen Sie die`DocumentBuilder` Cursor zum neuen Abschnitt:
+ Um Inhalt zum neuen Abschnitt hinzuzufügen, müssen Sie die`DocumentBuilder` Cursor zum neuen Abschnitt:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ Nein, Abschnitte können nicht ineinander verschachtelt werden. Sie können jedo
 
 ### Wo finde ich weitere Ressourcen zu Aspose.Words?
 
- Weitere Informationen finden Sie unter[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder der[Hilfeforum](https://forum.aspose.com/c/words/8) für Hilfe und Diskussionen.
+ Weitere Informationen finden Sie unter[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder die[Support-Forum](https://forum.aspose.com/c/words/8) für Hilfe und Diskussionen.

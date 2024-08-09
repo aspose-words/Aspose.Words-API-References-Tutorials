@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
- Ở đây, chúng ta truy cập vào bảng đầu tiên trong tài liệu. Các`NodeType.Table` đảm bảo chúng tôi đang tìm nạp nút bảng và chỉ mục`0` cho biết chúng tôi muốn bảng đầu tiên.
+ Ở đây, chúng ta truy cập vào bảng đầu tiên trong tài liệu. các`NodeType.Table` đảm bảo chúng tôi đang tìm nạp nút bảng và chỉ mục`0` cho biết chúng tôi muốn bảng đầu tiên.
 
 ## Bước 3: Xóa đường viền hiện có
 

@@ -16,7 +16,7 @@ Hallo! Haben Sie sich schon einmal gefragt, wie Sie Word-Dokumente programmgeste
 Bevor wir beginnen, benötigen Sie einige Dinge:
 
 1. Grundkenntnisse in C#: Sie müssen kein Experte sein, aber grundlegende Kenntnisse in C# sind hilfreich.
-2.  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/) Wenn Sie es nicht sofort kaufen möchten, können Sie sich für eine[Kostenlose Testphase](https://releases.aspose.com/).
+2.  Aspose.Words für .NET: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/) Wenn Sie es nicht sofort kaufen möchten, können Sie sich für eine[Kostenlose Testversion](https://releases.aspose.com/).
 3. Visual Studio: Jede Version sollte funktionieren, aber die neueste Version wird empfohlen.
 4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem Computer installiert ist.
 
@@ -112,7 +112,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
 
- Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/)Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
+ Sie können Aspose.Words für .NET mit einem[Kostenlose Testversion](https://releases.aspose.com/)Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
 
 ## 3. Was sind die Hauptfunktionen von Aspose.Words für .NET?
 

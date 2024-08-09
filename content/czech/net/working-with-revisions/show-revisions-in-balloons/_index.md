@@ -2,94 +2,90 @@
 title: Zobrazit revize v bublinách
 linktitle: Zobrazit revize v bublinách
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Zobrazit revize v bublinách pomocí Aspose.Words pro .NET.
+description: Naučte se zobrazovat revize v bublinách pomocí Aspose.Words for .NET. Tento podrobný průvodce vás provede každým krokem a zajistí, že změny dokumentu budou jasné a uspořádané.
 type: docs
 weight: 10
 url: /cs/net/working-with-revisions/show-revisions-in-balloons/
 ---
+## Zavedení
 
-V tomto podrobném průvodci vám ukážeme, jak zobrazit revize v bublinách v dokumentu aplikace Word pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
+Sledování změn v dokumentu aplikace Word je zásadní pro spolupráci a úpravy. Aspose.Words for .NET nabízí robustní nástroje pro správu těchto revizí, které zajišťují srozumitelnost a snadnou kontrolu. Tato příručka vám pomůže zobrazit revize v bublinách, takže snáze uvidíte, jaké změny byly provedeny a kým.
 
-## Krok 1: Načtení dokumentu
+## Předpoklady
 
-Prvním krokem je nahrání dokumentu obsahujícího revize.
+Než začneme, ujistěte se, že máte následující:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+-  Aspose.Words pro knihovnu .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
+-  Platná licence Aspose. Pokud žádný nemáte, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+- Visual Studio nebo jakékoli jiné IDE, které podporuje vývoj .NET.
+- Základní znalost C# a .NET frameworku.
 
-## Krok 2: Nakonfigurujte možnosti zobrazení recenze
+## Importovat jmenné prostory
 
-Nakonfigurujeme možnosti zobrazení tak, aby byly revize viditelné v bublinách.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-```
-
-## Krok 3: Uložte dokument ve formátu PDF
-
-Nakonec dokument uložíme jako PDF s revizemi zobrazenými v bublinách.
+Nejprve importujme potřebné jmenné prostory do vašeho projektu C#. Tyto jmenné prostory jsou nezbytné pro přístup k funkcím Aspose.Words.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
+using Aspose.Words.RevisionOptions;
 ```
 
-## Výstupní formáty Markdown
+Pojďme si tento proces rozdělit do jednoduchých, snadno pochopitelných kroků.
 
-Výstup lze formátovat v markdown pro zlepšení čitelnosti. Například :
+## Krok 1: Vložte svůj dokument
 
-```markdown
-- Revisions are Showed in bubbles with revision bars on the right side.
-```
-
-### Příklad zdrojového kódu pro Show Revisions In Balloons pomocí Aspose.Words for .NET
-
-Zde je úplný zdrojový kód pro zobrazení revizí v bublinách v dokumentu pomocí Aspose.Words pro .NET:
+Nejprve musíme načíst dokument, který obsahuje revize. Ujistěte se, že cesta k dokumentu je správná.
 
 ```csharp
 // Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(MyDir + "Revisions.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+## Krok 2: Konfigurace možností revize
+
+Dále nakonfigurujeme možnosti revize tak, aby zobrazovaly vložené revize a odstraňovaly a formátovaly revize v pozicích. To usnadňuje rozlišování mezi různými typy revizí.
+
+```csharp
 // Vykresluje vložené revize, odstraňuje a formátuje revize v pozicích.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+```
+
+## Krok 3: Nastavte polohu revizních pruhů
+
+Aby byl dokument ještě čitelnější, můžeme nastavit polohu revizních pruhů. V tomto příkladu je umístíme na pravou stranu stránky.
+
+```csharp
 // Vykreslí revizní pruhy na pravé straně stránky.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+```
 
+## Krok 4: Uložte dokument
+
+Nakonec dokument uložíme jako PDF. To nám umožní vidět revize v požadovaném formátu.
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak zobrazit revize v bublinách v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí vhodných možností zobrazení jsme byli schopni zviditelnit revize v bublinách s revizními pruhy na pravé straně. Aspose.Words for .NET nabízí mnoho výkonných funkcí pro manipulaci s dokumenty Word, včetně správy revizí. Nyní můžete tyto znalosti použít k zobrazení revizí v bublinách ve vašich vlastních dokumentech aplikace Word pomocí Aspose.Words for .NET.
+A tady to máte! Pomocí těchto jednoduchých kroků můžete snadno zobrazit revize v bublinách pomocí Aspose.Words for .NET. Díky tomu je kontrola a spolupráce na dokumentech hračkou a zajišťuje, že všechny změny jsou jasně viditelné a organizované. Šťastné kódování!
 
+## FAQ
 
-### FAQ
+### Mohu přizpůsobit barvu revizních pruhů?
+Ano, Aspose.Words vám umožňuje přizpůsobit barvu revizních pruhů tak, aby vyhovovaly vašim preferencím.
 
-#### Otázka: Jak nahrát dokument do Aspose.Words pro .NET?
+### Je možné v bublinách zobrazit pouze určité typy revizí?
+Absolutně. Aspose.Words můžete nakonfigurovat tak, aby v bublinách zobrazoval pouze určité typy revizí, jako jsou odstranění nebo změny formátování.
 
- A: Použijte`Document` třídy Aspose.Words pro .NET k načtení dokumentu ze souboru. Můžete zadat úplnou cestu dokumentu.
+### Jak získám dočasnou licenci pro Aspose.Words?
+ Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Mohu používat Aspose.Words pro .NET s jinými programovacími jazyky?
+Aspose.Words je primárně navržen pro .NET, ale můžete jej použít s jakýmkoli jazykem podporovaným .NET, včetně VB.NET a C++/CLI.
 
-#### Otázka: Jak zobrazit revize v bublinách pomocí Aspose.Words pro .NET?
-
- A: Použijte`ShowInBalloons` majetek z`RevisionOptions` objekt pro konfiguraci zobrazení revizí v bublinách. Tuto vlastnost můžete zapnout`ShowInBalloons.FormatAndDelete` k zobrazení revizí v bublinách s revizemi odstranění a formátování.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-```
-
-#### Otázka: Jak uložit dokument ve formátu PDF pomocí Aspose.Words pro .NET?
-
- A: Použijte`Save` metoda`Document` objekt pro uložení dokumentu ve formátu PDF. Musíte zadat úplnou cílovou cestu s příponou „.pdf“.
-
-```csharp
-doc.Save("path/to/destination/document.pdf");
-```
+### Podporuje Aspose.Words jiné formáty dokumentů kromě Wordu?
+Ano, Aspose.Words podporuje různé formáty dokumentů, včetně PDF, HTML, EPUB a dalších.

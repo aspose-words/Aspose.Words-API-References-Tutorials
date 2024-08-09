@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Ở đây chúng ta tạo một cái mới`Document`Và`DocumentBuilder` ví dụ. Các`DocumentBuilder` cho phép chúng ta thêm văn bản vào tài liệu của mình.
+ Ở đây chúng ta tạo một cái mới`Document`Và`DocumentBuilder` ví dụ. các`DocumentBuilder` cho phép chúng ta thêm văn bản vào tài liệu của mình.
 
 ## Bước 4: Bảo vệ tài liệu
 
@@ -81,7 +81,7 @@ doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách bảo vệ tài liệu Word để chỉ có thể chỉnh sửa các trường biểu mẫu bằng Aspose.Words cho .NET. Đây là một tính năng hữu ích khi bạn cần đảm bảo rằng một số phần nhất định trong tài liệu của bạn không thay đổi trong khi cho phép điền vào các trường cụ thể.
+Và bạn có nó! Bạn vừa học cách bảo vệ tài liệu Word để chỉ có thể chỉnh sửa các trường biểu mẫu bằng Aspose.Words cho .NET. Đây là một tính năng hữu ích khi bạn cần đảm bảo rằng một số phần nhất định trong tài liệu của bạn không thay đổi trong khi cho phép điền vào các trường cụ thể.
 
 ## Câu hỏi thường gặp
 

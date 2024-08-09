@@ -96,7 +96,7 @@ In diesem Handbuch haben wir verschiedene Techniken zum Aufteilen von Dokumenten
 
 ### Wie kann ich mit Aspose.Words für Java beginnen?
 
- Der Einstieg in Aspose.Words für Java ist ganz einfach. Sie können die Bibliothek von der Aspose-Website herunterladen und der Dokumentation folgen, um Installations- und Nutzungsanweisungen zu erhalten. Besuchen Sie[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/) für mehr Details.
+ Der Einstieg in Aspose.Words für Java ist ganz einfach. Sie können die Bibliothek von der Aspose-Website herunterladen und der Dokumentation folgen, um Installations- und Nutzungsanweisungen zu erhalten. Besuchen Sie[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/) für weitere Details.
 
 ### Was sind die Hauptfunktionen von Aspose.Words für Java?
 

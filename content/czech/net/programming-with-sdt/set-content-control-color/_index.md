@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/set-content-control-color/
 ---
-## Úvod
+## Zavedení
 
 Pokud pracujete s dokumenty aplikace Word a potřebujete upravit vzhled značek strukturovaných dokumentů (SDT), možná budete chtít změnit jejich barvu. To je zvláště užitečné, když pracujete s formuláři nebo šablonami, kde je zásadní vizuální odlišení prvků. V této příručce projdeme procesem nastavení barvy SDT pomocí Aspose.Words for .NET.
 
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Vložte dokument
 
- Vytvořit`Document` objekt načtením souboru aplikace Word:
+ Vytvořte a`Document` objekt načtením souboru aplikace Word:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -77,7 +77,7 @@ Změna barvy tagu strukturovaného dokumentu v dokumentu aplikace Word pomocí A
 
 ### Mohu pro SDT použít různé barvy?
 
- Ano, můžete použít jakoukoli barvu dostupnou v`System.Drawing.Color` třída. Můžete například použít`Color.Blue`, `Color.Green`, atd.
+ Ano, můžete použít jakoukoli barvu dostupnou v`System.Drawing.Color` třída. Můžete například použít`Color.Blue`, `Color.Green`atd.
 
 ### Jak změním barvu více SDT v dokumentu?
 

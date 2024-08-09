@@ -14,7 +14,7 @@ Haben Sie sich schon einmal in einer Zwickmühle befunden, als Sie versucht habe
 ## Voraussetzungen
 
 Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Visual Studio: Jede Version ist geeignet, aber die neueste wird immer empfohlen.
 - .NET Framework: Stellen Sie sicher, dass Sie .NET Framework 4.0 oder höher haben.
 - Ein Word-Dokument: Für dieses Tutorial verwenden wir ein Dokument namens`Tables.docx`.
@@ -101,4 +101,4 @@ Sie müssen durch den Knotenbaum des Dokuments navigieren, um auf verschachtelte
 
 ### Gibt es eine Testversion?
 
- Ja, Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) oder ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) um Aspose.Words für .NET auszuprobieren.
+ Ja, Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) oder ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) um Aspose.Words für .NET auszuprobieren.

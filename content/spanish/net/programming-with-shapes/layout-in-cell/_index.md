@@ -15,7 +15,7 @@ Si alguna vez ha querido ajustar el diseño de las celdas de su tabla en documen
 
 Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
 
-1.  Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Si no lo has hecho, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Si no lo has hecho, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: necesitará un entorno de desarrollo configurado con .NET. Visual Studio es una excelente opción si busca recomendaciones.
 3. Conocimientos básicos de C#: si bien explicaré cada paso, un conocimiento básico de C# le ayudará a seguirlo más fácilmente.
 4.  Directorio de documentos: prepare una ruta de directorio donde guardará sus documentos. Nos referiremos a esto como`YOUR DOCUMENT DIRECTORY`.

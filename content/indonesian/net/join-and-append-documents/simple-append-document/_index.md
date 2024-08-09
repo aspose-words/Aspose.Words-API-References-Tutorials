@@ -9,7 +9,7 @@ url: /id/net/join-and-append-documents/simple-append-document/
 ---
 ## Perkenalan
 
-Hai! Pernahkah Anda merasa perlu menggabungkan dua dokumen Word dengan mulus? Nah, Anda beruntung! Hari ini, kita menyelami dunia Aspose.Words untuk .NET, perpustakaan canggih yang memungkinkan Anda memanipulasi dokumen Word secara terprogram. Secara khusus, kami akan fokus pada cara menambahkan satu dokumen ke dokumen lainnya dalam beberapa langkah sederhana. Baik Anda membuat laporan, menggabungkan bagian proyek, atau sekadar menyederhanakan pengelolaan dokumen, panduan ini siap membantu Anda. Jadi, mari kita mulai!
+Hai! Pernahkah Anda merasa perlu menggabungkan dua dokumen Word dengan mulus? Nah, Anda beruntung! Hari ini, kita menyelami dunia Aspose.Words untuk .NET, perpustakaan hebat yang memungkinkan Anda memanipulasi dokumen Word secara terprogram. Secara khusus, kami akan fokus pada cara menambahkan satu dokumen ke dokumen lainnya dalam beberapa langkah sederhana. Baik Anda membuat laporan, menggabungkan bagian proyek, atau sekadar menyederhanakan pengelolaan dokumen, panduan ini siap membantu Anda. Jadi, mari kita mulai!
 
 ## Prasyarat
 
@@ -74,7 +74,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Langkah 5: Tambahkan Dokumen Sumber
 
- Ini adalah dimana keajaiban terjadi! Kami akan menambahkan dokumen sumber ke dokumen tujuan menggunakan`AppendDocument` metode.
+ Di sinilah keajaiban terjadi! Kami akan menambahkan dokumen sumber ke dokumen tujuan menggunakan`AppendDocument` metode.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

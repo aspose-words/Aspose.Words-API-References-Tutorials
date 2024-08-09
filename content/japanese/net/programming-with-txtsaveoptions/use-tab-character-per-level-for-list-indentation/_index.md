@@ -83,7 +83,7 @@ builder.Write("Element 3");
 
 ## ステップ4: 保存オプションを設定する
 
-インデントをタブ文字を使用するように設定する
+インデントにタブ文字を使用するように設定する
 
 ```csharp
 //インデントにタブ文字を使用するように保存オプションを設定します
@@ -103,7 +103,7 @@ saveOptions.ListIndentation.Character = '\t';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-最後に、`Save`弊社のカスタムメソッド`TxtSaveOptions`これにより、リストがインデント レベル用のタブ文字とともに保存されます。
+最後に、`Save`弊社のカスタムメソッド`TxtSaveOptions`これにより、リストはインデント レベルにタブ文字を付けて保存されます。
 
 ## 結論
 

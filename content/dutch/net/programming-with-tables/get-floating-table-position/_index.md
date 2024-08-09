@@ -9,7 +9,7 @@ url: /nl/net/programming-with-tables/get-floating-table-position/
 ---
 ## Invoering
 
-Ben je klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag nemen we je mee op een reis om de geheimen van zwevende tabellen in Word-documenten te ontdekken. Stel je voor dat je een tafel hebt die niet alleen stilstaat, maar ook elegant rond de tekst zweeft. Best cool, toch? In deze tutorial leert u hoe u de positioneringseigenschappen van dergelijke zwevende tabellen kunt verkrijgen. Dus laten we beginnen!
+Ben je klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag nemen we je mee op een reis om de geheimen van zwevende tabellen in Word-documenten te ontdekken. Stel je voor dat je een tafel hebt die niet alleen stilstaat, maar ook elegant rond de tekst zweeft. Best cool, toch? In deze tutorial leert u hoe u de positioneringseigenschappen van dergelijke zwevende tabellen kunt verkrijgen. Dus laten we aan de slag gaan!
 
 ## Vereisten
 

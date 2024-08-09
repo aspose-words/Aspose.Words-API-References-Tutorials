@@ -9,13 +9,13 @@ url: /tr/net/programming-with-tables/get-table-position/
 ---
 ## giriiş
 
-Hiç Word belgenizdeki bir tablonun tam konumunu bulmaya çalışırken kendinizi zor durumda buldunuz mu? İçeriğinizi mükemmel bir şekilde hizalamak için ya da sadece meraktan dolayı olsun, bir masanın konumunu bilmek son derece kullanışlı olabilir. Bugün Aspose.Words for .NET'i kullanarak tablo konumunu nasıl elde edeceğimizi derinlemesine inceliyoruz. Bunu küçük adımlara ayıracağız, böylece yeni başlamış olsanız bile, hiçbir aksama olmadan ilerleyebileceksiniz. Word belgesi sihirbazı olmaya hazır mısınız? Başlayalım!
+Hiç Word belgenizdeki bir tablonun tam konumunu bulmaya çalışırken kendinizi zor durumda buldunuz mu? İçeriğinizi mükemmel bir şekilde hizalamak için ya da sadece meraktan dolayı olsun, bir masanın konumunu bilmek son derece kullanışlı olabilir. Bugün Aspose.Words for .NET'i kullanarak tablo konumunu nasıl elde edeceğimizi derinlemesine inceliyoruz. Bunu küçük adımlara ayıracağız, böylece yeni başlamış olsanız bile, hiçbir aksama olmadan ilerleyebileceksiniz. Word belgesi sihirbazı olmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
 İşin özüne geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 -  Aspose.Words for .NET: En son sürüme sahip olduğunuzdan emin olun. Değilse, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
-- Visual Studio: Herhangi bir sürüm işe yarar, ancak her zaman en son sürüm önerilir.
+- Visual Studio: Herhangi bir sürüm işe yarar, ancak her zaman en yeni sürüm önerilir.
 - .NET Framework: .NET Framework 4.0 veya sonraki bir sürüme sahip olduğunuzdan emin olun.
 - Bir Word Belgesi: Bu eğitim için adlı bir belge kullanacağız.`Tables.docx`.
 
@@ -79,7 +79,7 @@ Kodunuz çalıştığında, tablonun konum ayrıntılarının konsolda yazdırı
 
 ## Çözüm
 
-İşte buyur! Bu basit adımları takip ederek Aspose.Words for .NET kullanarak bir Word belgesindeki tablonun konumunu nasıl belirleyeceğinizi öğrendiniz. İster mükemmel hizalama için ister sadece merakınızı gidermek için olsun, bir masanın konumunu nasıl alacağınızı bilmek inanılmaz derecede faydalı olabilir. Gerçek bir Word belgesi ustası olmak için Aspose.Words'ün daha fazla özelliğini denemeye ve keşfetmeye devam edin!
+Ve işte karşınızda! Bu basit adımları takip ederek Aspose.Words for .NET kullanarak bir Word belgesindeki tablonun konumunu nasıl belirleyeceğinizi öğrendiniz. İster mükemmel hizalama için ister sadece merakınızı gidermek için olsun, bir masanın konumunu nasıl alacağınızı bilmek inanılmaz derecede faydalı olabilir. Gerçek bir Word belgesi ustası olmak için Aspose.Words'ün daha fazla özelliğini denemeye ve keşfetmeye devam edin!
 
 ## SSS'ler
 

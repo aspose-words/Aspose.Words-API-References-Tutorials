@@ -36,7 +36,7 @@ public void getFootnoteOptions(){
 
 ## 4. Modificar las opciones de las notas al pie
 
-Puede modificar las opciones de las notas al pie para personalizar su apariencia y comportamiento. Así es cómo:
+Puede modificar las opciones de las notas al pie para personalizar su apariencia y comportamiento. He aquí cómo:
 ```java
 @Test
 public void setFootnoteAndEndNotePosition() throws Exception {
@@ -117,7 +117,7 @@ Ahora que ha aprendido a utilizar notas al pie y notas finales, puede mejorar el
 Las notas a pie de página aparecen en la parte inferior de la página, mientras que las notas al final se recopilan al final de una sección o del documento.
 
 ### 2. ¿Cómo puedo cambiar la posición de las notas al pie o al final?
- Puedes usar el`setPosition` Método para cambiar la posición de notas al pie o notas al final.
+ Puedes usar el`setPosition` Método para cambiar la posición de las notas al pie o al final.
 
 ### 3. ¿Puedo personalizar el formato de las notas al pie y al final?
 Sí, puede personalizar el formato de las notas al pie y al final utilizando Aspose.Words para Java.

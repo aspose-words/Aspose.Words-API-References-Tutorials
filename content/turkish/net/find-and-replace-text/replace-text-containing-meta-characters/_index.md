@@ -9,12 +9,12 @@ url: /tr/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
 ## giriiş
 
-Hiç kendinizi Word belgelerindeki metin değiştirme labirentinde sıkışmış halde buldunuz mu? Başınızı sallıyorsanız kemerlerinizi bağlayın çünkü Aspose.Words for .NET'i kullanarak heyecan verici bir eğitime başlıyoruz. Bugün meta karakterler içeren metnin nasıl değiştirileceğini ele alacağız. Belge işlemlerinizi her zamankinden daha sorunsuz hale getirmeye hazır mısınız? Başlayalım!
+Hiç kendinizi Word belgelerindeki metin değiştirme labirentinde sıkışmış halde buldunuz mu? Başınızı sallıyorsanız kemerlerinizi bağlayın çünkü Aspose.Words for .NET'i kullanarak heyecan verici bir eğitime başlıyoruz. Bugün meta karakterler içeren metnin nasıl değiştirileceğini ele alacağız. Belge işlemlerinizi her zamankinden daha sorunsuz hale getirmeye hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
 İşin özüne geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
--  Aspose.Words for .NET:[İndirme: {link](https://releases.aspose.com/words/net/)
+-  Aspose.Words for .NET:[İndirme bağlantısı](https://releases.aspose.com/words/net/)
 - .NET Framework: Kurulu olduğundan emin olun.
 - Temel C# anlayışı: Biraz kodlama bilgisi çok işe yarar.
 - Metin Düzenleyici veya IDE: Visual Studio şiddetle tavsiye edilir.
@@ -105,7 +105,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 
 ## Çözüm
 
-İşte buyur! Artık Aspose.Words for .NET'i kullanarak bir Word belgesindeki meta karakterleri içeren metni değiştirme sanatında ustalaştınız. Ortamınızı ayarlamaktan belgenizin son halini kaydetmeye kadar her adım, metin düzenlemeniz üzerinde kontrol sahibi olmanızı sağlayacak şekilde tasarlanmıştır. Öyleyse devam edin, belgelerinizi inceleyin ve bu değişiklikleri güvenle yapın!
+Ve işte karşınızda! Artık Aspose.Words for .NET'i kullanarak bir Word belgesindeki meta karakterleri içeren metni değiştirme sanatında ustalaştınız. Ortamınızı ayarlamaktan belgenizin son halini kaydetmeye kadar her adım, metin düzenlemeniz üzerinde kontrol sahibi olmanızı sağlayacak şekilde tasarlanmıştır. Öyleyse devam edin, belgelerinizi inceleyin ve bu değişiklikleri güvenle yapın!
 
 ## SSS'ler
 

@@ -99,7 +99,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, chúng tôi đã loại bỏ thành công ngắt trang khỏi tài liệu Word bằng Aspose.Words cho .NET. Thư viện này làm cho thao tác tài liệu trở nên đơn giản và hiệu quả. Cho dù bạn đang làm việc trên các tài liệu lớn hay nhỏ, Aspose.Words đều cung cấp các công cụ bạn cần để hoàn thành công việc.
+Và bạn có nó! Chỉ với một vài dòng mã, chúng tôi đã loại bỏ thành công ngắt trang khỏi tài liệu Word bằng Aspose.Words cho .NET. Thư viện này làm cho thao tác tài liệu trở nên đơn giản và hiệu quả. Cho dù bạn đang làm việc trên các tài liệu lớn hay nhỏ, Aspose.Words đều cung cấp các công cụ bạn cần để hoàn thành công việc.
 
 ## Câu hỏi thường gặp
 

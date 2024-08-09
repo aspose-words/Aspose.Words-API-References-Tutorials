@@ -74,7 +74,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-現在你就擁有了！您的 PDF 檔案現在保存在指定的目錄中，沒有那些龐大的核心字體。
+現在你就得到它了！您的 PDF 檔案現在保存在指定的目錄中，沒有那些龐大的核心字體。
 
 ## 結論
 

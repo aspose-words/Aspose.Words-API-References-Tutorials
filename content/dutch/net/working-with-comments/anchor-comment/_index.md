@@ -104,7 +104,7 @@ commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 
  Hier creëren wij`CommentRangeStart`En`CommentRangeEnd` objecten, en koppelt ze aan de opmerking via de ID ervan. Vervolgens voegen we deze bereiken in het document in, waardoor onze opmerking effectief aan de opgegeven tekst wordt verankerd.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Laten we ten slotte ons document opslaan in de opgegeven map.
 

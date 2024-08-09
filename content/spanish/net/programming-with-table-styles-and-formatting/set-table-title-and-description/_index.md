@@ -22,7 +22,7 @@ Antes de entrar en detalles, asegurémonos de que tiene todo lo que necesita. Aq
 
 ## Importar espacios de nombres
 
-Antes de comenzar a codificar, necesitamos importar los espacios de nombres necesarios. Piense en esto como configurar su caja de herramientas.
+Antes de comenzar a codificar, necesitamos importar los espacios de nombres necesarios. Piensa en esto como configurar tu kit de herramientas.
 
 ```csharp
 using Aspose.Words;
@@ -87,7 +87,7 @@ Sí, puedes repetir el proceso para cada tabla que quieras actualizar.
 Ayudan a proporcionar contexto, especialmente en documentos grandes con varias tablas.
 
 ### ¿Aspose.Words para .NET es gratuito?
- No, pero puedes empezar con un[prueba gratis](https://releases.aspose.com/).
+ No, pero puedes empezar con un[prueba gratuita](https://releases.aspose.com/).
 
 ### ¿Puedo personalizar otros aspectos de la tabla usando Aspose.Words para .NET?
 ¡Absolutamente! Puede personalizar casi todos los aspectos de sus tablas y documentos.

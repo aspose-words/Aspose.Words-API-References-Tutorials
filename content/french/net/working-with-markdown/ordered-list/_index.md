@@ -9,13 +9,13 @@ url: /fr/net/working-with-markdown/ordered-list/
 ---
 ## Introduction
 
-Vous avez donc décidé de vous plonger dans Aspose.Words for .NET pour créer d’étonnants documents Word par programme. Choix fantastique ! Aujourd'hui, nous allons expliquer comment créer une liste ordonnée dans un document Word. Nous y procéderons étape par étape, donc que vous soyez un débutant en codage ou un professionnel chevronné, vous trouverez ce guide très utile. Commençons!
+Vous avez donc décidé de vous plonger dans Aspose.Words for .NET pour créer d’étonnants documents Word par programme. Choix fantastique ! Aujourd'hui, nous allons expliquer comment créer une liste ordonnée dans un document Word. Nous y procéderons étape par étape, donc que vous soyez un débutant en codage ou un professionnel chevronné, vous trouverez ce guide très utile. Commençons !
 
 ## Conditions préalables
 
 Avant de plonger dans le code, vous aurez besoin de quelques éléments :
 
-1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Si ce n'est pas le cas, vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+1. Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Si ce n'est pas le cas, vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout autre IDE compatible .NET.
 3. Connaissance de base de C# : Vous devez être à l'aise avec les bases de C# pour pouvoir suivre facilement.
 
@@ -64,7 +64,7 @@ Avec ces lignes, vous ajoutez les deux premiers éléments à votre liste.
 
 ## Étape 4 : mettre en retrait la liste
 
-Que faire si vous souhaitez ajouter des sous-éléments sous un élément ? Faisons cela!
+Que faire si vous souhaitez ajouter des sous-éléments sous un élément ? Faisons ça !
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -82,7 +82,7 @@ Créer une liste ordonnée dans un document Word par programmation peut sembler 
 ## FAQ
 
 ### Puis-je personnaliser le style de numérotation de la liste ?  
- Oui, vous pouvez personnaliser le style de numérotation à l'aide de l'option`ListFormat` propriétés. Vous pouvez définir différents styles de numérotation comme des chiffres romains, des lettres, etc.
+ Oui, vous pouvez personnaliser le style de numérotation à l'aide de l'option`ListFormat`propriétés. Vous pouvez définir différents styles de numérotation comme des chiffres romains, des lettres, etc.
 
 ### Comment puis-je ajouter plus de niveaux d'indentation ?  
  Vous pouvez utiliser le`ListIndent` méthode plusieurs fois pour créer des niveaux plus profonds de sous-listes. Chaque appel à`ListIndent` ajoute un niveau d'indentation.

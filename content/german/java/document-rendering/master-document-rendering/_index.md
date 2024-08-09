@@ -105,7 +105,7 @@ pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "H
 pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
-### Kopf-und Fußzeilen
+### Kopf- und Fußzeilen
 
 Kopf- und Fußzeilen bieten konsistente Informationen auf allen Dokumentseiten. Sie können den primären Kopf- und Fußzeilen, den Kopfzeilen der ersten Seite und den geraden/ungerade Kopf- und Fußzeilen unterschiedliche Inhalte hinzufügen.
 

@@ -81,7 +81,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), load
 
 Hier converteren we de HTML-tekenreeks naar een byte-array en laden deze in het document met behulp van een geheugenstroom. Dit zorgt ervoor dat de HTML-inhoud correct wordt geïnterpreteerd en weergegeven door Aspose.Words.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document ten slotte op in de opgegeven map in DOCX-indeling.
 

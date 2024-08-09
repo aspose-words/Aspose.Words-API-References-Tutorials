@@ -14,7 +14,7 @@ Att skriva ut dokument med exakt siduppsättning är avgörande när det kommer 
 
 ## Ställa in utvecklingsmiljön
 
-Innan vi börjar, låt oss se till att du har en lämplig utvecklingsmiljö på plats. Du kommer att behöva:
+Innan vi börjar, låt oss se till att du har en lämplig utvecklingsmiljö på plats. Du behöver:
 
 - Java Development Kit (JDK)
 - Integrated Development Environment (IDE) som Eclipse eller IntelliJ IDEA

@@ -55,7 +55,7 @@ Bu basit kod satırı, yüklenen belgedeki tüm bölümleri temizler. Peki nası
 
 ## Çözüm
 
-İşte buyur! Adımları öğrendikten sonra Aspose.Words for .NET kullanarak bir Word belgesindeki tüm bölümleri silmek çok kolaydır. Bu güçlü kütüphane, normalde oldukça sıkıcı olabilecek birçok görevi basitleştirir. İster basit ister karmaşık belgelerle uğraşıyor olun, Aspose.Words yanınızdadır. 
+Ve işte karşınızda! Adımları öğrendikten sonra Aspose.Words for .NET kullanarak bir Word belgesindeki tüm bölümleri silmek çok kolaydır. Bu güçlü kütüphane, normalde oldukça sıkıcı olabilecek birçok görevi basitleştirir. İster basit ister karmaşık belgelerle uğraşıyor olun, Aspose.Words yanınızdadır. 
 
 ## SSS'ler
 
@@ -69,7 +69,7 @@ Bu basit kod satırı, yüklenen belgedeki tüm bölümleri temizler. Peki nası
  adresinden satın alabilirsiniz.[Burada](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET için herhangi bir destek mevcut mu?
- Evet, Aspose topluluğundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).
+Evet, Aspose topluluğundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).
 
 ### Geçici bir lisansa ihtiyacım olursa ne olur?
  adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).

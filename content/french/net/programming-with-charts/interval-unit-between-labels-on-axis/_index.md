@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris à intégrer et à manipuler des graphiques à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque permet aux développeurs de créer sans effort des documents dynamiques et visuellement attrayants.
+Félicitations! Vous avez appris à intégrer et à manipuler des graphiques à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque permet aux développeurs de créer sans effort des documents dynamiques et visuellement attrayants.
 
 
 ## FAQ

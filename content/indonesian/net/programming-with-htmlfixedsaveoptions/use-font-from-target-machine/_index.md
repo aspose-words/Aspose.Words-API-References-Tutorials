@@ -69,7 +69,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 
 ## Langkah 3: Simpan Dokumen
 
-Terakhir, kami menyimpan dokumen sebagai file HTML tetap. Ini adalah dimana keajaiban terjadi!
+Terakhir, kami menyimpan dokumen sebagai file HTML tetap. Di sinilah keajaiban terjadi!
 
  Kami akan menggunakan`Save` metode untuk menyimpan dokumen dengan opsi penyimpanan yang dikonfigurasi.
 

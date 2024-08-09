@@ -2,93 +2,113 @@
 title: 获取可用字体列表
 linktitle: 获取可用字体列表
 second_title: Aspose.Words 文档处理 API
-description: 在本教程中，了解如何获取 Aspose.Words for .NET 中可用的字体列表。
+description: 在本详细的分步教程中了解如何使用 Aspose.Words for .NET 获取可用字体列表。提高您的字体管理技能。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/get-list-of-available-fonts/
 ---
-在本教程中，我们将解释如何获取 Aspose.Words for .NET 中可用的字体列表。可用字体列表可让您了解可以在文档中使用哪些字体。我们将逐步指导您理解和实现 .NET 项目中的代码。
+## 介绍
+
+您是否曾经发现自己难以管理 Word 文档中的字体？如果您是 .NET 开发人员，Aspose.Words for .NET 可以帮您！这个功能强大的库不仅可以帮助您以编程方式创建和操作 Word 文档，还提供广泛的字体管理功能。在本指南中，我们将引导您逐步了解如何使用 Aspose.Words for .NET 获取可用字体列表。我们将把它分解为易于理解的步骤，以确保您能够轻松跟上。所以，让我们开始吧，让字体管理变得轻而易举！
 
 ## 先决条件
-开始之前，请确保您拥有以下物品：
-- 具备 C# 编程语言的工作知识
-- 项目中安装的 .NET Aspose.Words 库
 
-## 步骤1：定义文档目录
-首先，您需要将目录路径设置为 Word 文档的位置。替换`"YOUR DOCUMENT DIRECTORY"`在代码中使用适当的路径。
+在开始之前，您需要准备一些东西：
+
+-  Aspose.Words for .NET：确保已安装 Aspose.Words for .NET 库。您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+- Visual Studio：本示例使用Visual Studio作为开发环境。
+- .NET Framework：确保您的机器上安装了 .NET Framework。
+- 文档目录：存储文档的目录路径。
+
+## 导入命名空间
+
+首先，将必要的命名空间导入到您的项目中：
 
 ```csharp
-//文档目录的路径
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 第 2 步：配置字体源
-接下来，我们将创建一个实例`FontSettings`并使用获取现有字体源`GetFontsSources()`方法。我们还将通过指定包含字体的文件夹来添加新的字体源。
+## 步骤 1：初始化字体设置
+
+第一步是初始化字体设置。这将允许您管理文档的字体来源。
 
 ```csharp
-//配置字体源
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-//添加新的字体源
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## 步骤 3：获取可用字体列表
-现在我们将使用`GetAvailableFonts()`方法在第一个更新的字体源上。
+- FontSettings：该类用于指定字体替换和字体源的设置。
+- fontSources：我们从当前字体设置中创建现有字体源的列表。
+
+## 第 2 步：定义文档目录
+
+接下来，指定文档目录的路径。这是 Aspose.Words 将搜索字体的地方。
 
 ```csharp
-//获取可用字体列表
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### 使用 Aspose.Words for .NET 获取可用字体列表的示例源代码 
-
-```csharp
-
-//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-//添加一个新的文件夹源，它将指示 Aspose.Words 在以下文件夹中搜索字体。
+-  dataDir：此字符串变量保存字体所在目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`与实际路径。
+
+## 步骤 3：添加自定义字体文件夹
+
+现在，添加一个新的文件夹源来指示 Aspose.Words 在该文件夹中搜索字体。
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//将包含我们字体的自定义文件夹添加到现有字体源列表中。
+```
+
+- FolderFontSource：该类表示文件夹字体源。第二个参数（`true`)表示是否在子文件夹中递归搜索字体。
+
+## 步骤 4：更新字体源
+
+将自定义字体文件夹添加到现有字体源列表中并更新字体设置。
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- fontSources.Add(folderFontSource)：将自定义字体文件夹添加到现有字体源。
+- updatedFontSources：将字体源列表转换为数组。
+
+## 步骤 5：检索并显示字体
+
+最后，检索可用的字体并显示其详细信息。
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts()：从更新列表中的第一个字体源检索可用字体列表。
+-  fontInfo：一个实例`PhysicalFontInfo`包含每种字体的详细信息。
+
 ## 结论
-在本教程中，我们了解了如何获取 Aspose.Words for .NET 中可用的字体列表。这让您知道可以在文档中使用哪些字体。请随意使用此功能来选择适合您需求的字体。
 
-### 常见问题解答
+恭喜！您已成功使用 Aspose.Words for .NET 检索可用字体列表。本教程将引导您完成每个步骤，从初始化字体设置到显示字体详细信息。有了这些知识，您现在可以轻松管理 Word 文档中的字体。请记住，Aspose.Words for .NET 是一个功能强大的工具，可以显著增强您的文档处理能力。因此，请继续探索更多功能，让您的开发过程更加高效。
 
-#### 问：如何检索 Aspose.Words 中可用的字体列表？
+## 常见问题解答
 
-答：要检索 Aspose.Words 中可用的字体列表，您可以使用`FontsProvider`类和`GetAvailableFonts`方法。此方法将返回系统上安装的所有字体的列表。
+### 我可以将 Aspose.Words for .NET 与其他 .NET 框架一起使用吗？
+是的，Aspose.Words for .NET 与各种 .NET 框架兼容，包括 .NET Core 和 .NET 5+。
 
-#### 问：我可以在 Aspose.Words 中根据某些标准过滤可用字体列表吗？
+### 如何安装 Aspose.Words for .NET？
+您可以通过 Visual Studio 中的 NuGet 包管理器搜索“Aspose.Words”来安装它。
 
-答：是的，您可以使用特定条件过滤 Aspose.Words 中可用的字体列表。例如，您可以按系列、样式或语言过滤字体。
+### 可以添加多个自定义字体文件夹吗？
+是的，您可以通过创建多个来添加多个自定义字体文件夹`FolderFontSource`实例并将它们添加到字体源列表中。
 
-#### 问：如何在 Word 文档中使用可用字体列表？
+### 我可以从特定字体源检索字体详细信息吗？
+是的，您可以通过在`updatedFontSources`大批。
 
-答：要使用 Word 文档中可用的字体列表，您可以浏览列表并使用`FontSettings`Aspose.Words 中的类。
+### Aspose.Words for .NET 支持字体替换吗？
+是的，它支持字体替换，以确保即使原始字体不可用，文本也能正确呈现。

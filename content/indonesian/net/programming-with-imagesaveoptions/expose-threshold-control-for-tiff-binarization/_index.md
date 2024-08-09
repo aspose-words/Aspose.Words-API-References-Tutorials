@@ -2,7 +2,7 @@
 title: Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff
 linktitle: Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengekspos kontrol ambang batas untuk binerisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
+description: Pelajari cara mengekspos kontrol ambang batas untuk binarisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Langkah 3: Konfigurasikan Opsi Penyimpanan Gambar
 
- Sekarang tiba bagian menyenangkan! Kita perlu mengkonfigurasi opsi penyimpanan gambar untuk mengontrol binarisasi TIFF. Kami akan menggunakan`ImageSaveOptions` kelas untuk mengatur berbagai properti.
+ Sekarang sampai pada bagian yang menyenangkan! Kita perlu mengkonfigurasi opsi penyimpanan gambar untuk mengontrol binarisasi TIFF. Kami akan menggunakan`ImageSaveOptions` kelas untuk mengatur berbagai properti.
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
@@ -81,7 +81,7 @@ Baris kode ini menyimpan dokumen ke jalur yang ditentukan dengan opsi penyimpana
 
 ## Kesimpulan
 
-Dan itu dia! Anda baru saja mempelajari cara mengekspos kontrol ambang batas untuk binarisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan manipulasi dokumen Word dengan berbagai cara, termasuk mengonversinya ke format berbeda dengan pengaturan khusus. Cobalah dan lihat bagaimana ini dapat menyederhanakan tugas pemrosesan dokumen Anda!
+Dan itu dia! Anda baru saja mempelajari cara mengekspos kontrol ambang batas untuk binerisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan manipulasi dokumen Word dengan berbagai cara, termasuk mengonversinya ke format berbeda dengan pengaturan khusus. Cobalah dan lihat bagaimana ini dapat menyederhanakan tugas pemrosesan dokumen Anda!
 
 ## FAQ
 

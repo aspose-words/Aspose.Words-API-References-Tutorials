@@ -8,7 +8,7 @@ weight: 27
 url: /pt/java/document-manipulation/cloning-and-combining-documents/
 ---
 
-## Introdução à clonagem e combinação de documentos em Aspose.Words for Java
+## Introdução à clonagem e combinação de documentos em Aspose.Words para Java
 
 Neste tutorial, exploraremos como clonar e combinar documentos usando Aspose.Words for Java. Abordaremos vários cenários, incluindo clonagem de um documento, inserção de documentos em pontos de substituição, marcadores e durante operações de mala direta.
 
@@ -64,7 +64,7 @@ mainDoc.getMailMerge().execute(new String[] { "Document_1" }, new Object[] { "Yo
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");
 ```
 
- Neste exemplo, definimos um retorno de chamada de mesclagem de campo usando o`InsertDocumentAtMailMergeHandler` classe para tratar a inserção do documento especificado pelo campo "Documento_1".
+ Neste exemplo, definimos um retorno de chamada de mesclagem de campo usando o`InsertDocumentAtMailMergeHandler` classe para tratar a inserção do documento especificado pelo campo "Document_1".
 
 ## Conclusão
 

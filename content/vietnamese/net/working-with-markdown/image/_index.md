@@ -9,7 +9,7 @@ url: /vi/net/working-with-markdown/image/
 ---
 ## Giới thiệu
 
-Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ khám phá cách thêm hình ảnh vào tài liệu của bạn. Cho dù bạn đang làm báo cáo, tài liệu quảng cáo hay chỉ đang soạn thảo một tài liệu đơn giản, việc thêm hình ảnh có thể tạo ra sự khác biệt rất lớn. Vậy hãy bắt đầu!
+Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ khám phá cách thêm hình ảnh vào tài liệu của bạn. Cho dù bạn đang làm báo cáo, tài liệu quảng cáo hay chỉ đang soạn thảo một tài liệu đơn giản, việc thêm hình ảnh có thể tạo ra sự khác biệt rất lớn. Vì vậy, hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -46,7 +46,7 @@ Tiếp theo, bạn sẽ chèn một hình ảnh vào tài liệu của mình. Đ
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Thay thế`"path_to_your_image.jpg"` với đường dẫn thực tế của tệp hình ảnh của bạn. Các`InsertImage` phương pháp sẽ thêm hình ảnh vào tài liệu của bạn.
+ Thay thế`"path_to_your_image.jpg"` với đường dẫn thực tế của tệp hình ảnh của bạn. các`InsertImage`phương pháp sẽ thêm hình ảnh vào tài liệu của bạn.
 
 ## Bước 3: Đặt thuộc tính hình ảnh
 
@@ -72,7 +72,7 @@ Aspose.Words hỗ trợ nhiều định dạng hình ảnh khác nhau bao gồm 
  Tuyệt đối! Bạn có thể đặt thuộc tính chiều cao và chiều rộng của`Shape` đối tượng để thay đổi kích thước hình ảnh.
 
 ### Có thể thêm hình ảnh từ một URL không?  
- Có, bạn có thể thêm hình ảnh từ một URL bằng cách cung cấp URL trong`InsertImage` phương pháp.
+Có, bạn có thể thêm hình ảnh từ một URL bằng cách cung cấp URL trong`InsertImage` phương pháp.
 
 ### Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?  
  Bạn có thể dùng thử miễn phí từ[trang web giả định](https://releases.aspose.com/).

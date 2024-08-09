@@ -73,7 +73,7 @@ doc1.save("joined_document.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan lehet dokumentumokat egyesíteni és hozzáfűzni az Aspose.Words for Java használatával. Ez a sokoldalú könyvtár lehetővé teszi, hogy könnyedén kezelje a dokumentumokat, így felbecsülhetetlen értékű eszköz a Java fejlesztők számára.
+Gratulálok! Sikeresen megtanulta, hogyan lehet dokumentumokat egyesíteni és hozzáfűzni az Aspose.Words for Java használatával. Ez a sokoldalú könyvtár lehetővé teszi, hogy könnyedén kezelje a dokumentumokat, így felbecsülhetetlen értékű eszköz a Java fejlesztők számára.
 
 ## GYIK
 

@@ -173,7 +173,7 @@ public class DocumentMerger {
 
 - Thường xuyên kiểm tra các bản cập nhật và sử dụng phiên bản mới nhất của Aspose.Words dành cho Java để hưởng lợi từ các bản sửa lỗi và tính năng mới.
 
-- Kiểm tra việc hợp nhất tài liệu với nhiều loại và kích thước tài liệu khác nhau để đảm bảo hiệu suất tối ưu.
+- Kiểm tra việc hợp nhất tài liệu với nhiều loại và kích cỡ tài liệu khác nhau để đảm bảo hiệu suất tối ưu.
 
 - Hãy cân nhắc sử dụng hệ thống kiểm soát phiên bản để theo dõi các thay đổi trong quá trình hợp nhất tài liệu.
 
@@ -203,7 +203,7 @@ Aspose.Words for Java trao quyền cho các nhà phát triển Java khả năng 
 
     Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
 
-### Aspose.Words có giữ nguyên định dạng ban đầu của tài liệu được hợp nhất không?
+### Aspose.Words có giữ nguyên định dạng ban đầu của tài liệu đã hợp nhất không?
 
     Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
 

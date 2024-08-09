@@ -14,7 +14,7 @@ Styly a témata jsou zásadní pro zachování konzistence a estetiky napříč 
 
 ## Nastavení prostředí
 
- Než se vrhneme na styling, nastavíme naše vývojové prostředí. Ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/python/).
+ Než se vrhneme na styling, nastavíme naše vývojové prostředí. Ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/python/).
 
 ## Načítání a ukládání dokumentů
 

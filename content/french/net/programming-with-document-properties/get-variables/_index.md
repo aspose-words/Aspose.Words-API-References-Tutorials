@@ -98,7 +98,7 @@ Considérez cette étape comme le fait de feuilleter le livre et de noter toutes
 
 ## Conclusion
 
-Et voila! Vous avez utilisé avec succès Aspose.Words for .NET pour charger un document Word et extraire ses variables. En suivant ces étapes, vous pouvez facilement manipuler des documents Word dans vos applications .NET. Continuez à expérimenter et à explorer les fonctionnalités de la bibliothèque pour voir ce que vous pouvez réaliser d'autre.
+Et voilà ! Vous avez utilisé avec succès Aspose.Words for .NET pour charger un document Word et extraire ses variables. En suivant ces étapes, vous pouvez facilement manipuler des documents Word dans vos applications .NET. Continuez à expérimenter et à explorer les fonctionnalités de la bibliothèque pour voir ce que vous pouvez réaliser d'autre.
 
 ## FAQ
 
@@ -115,4 +115,4 @@ Absolument! Aspose.Words prend en charge divers formats tels que DOC, DOCX, ODT,
 Oui, vous pouvez intégrer Aspose.Words dans des applications Web, des applications de bureau, etc.
 
 ### Où puis-je trouver plus d’exemples et de documentation ?
- Vérifiez[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour plus d’exemples et de guides détaillés.
+ Découvrez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour plus d’exemples et de guides détaillés.

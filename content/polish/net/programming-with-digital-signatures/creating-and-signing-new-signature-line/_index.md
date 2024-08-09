@@ -9,12 +9,12 @@ url: /pl/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ---
 ## Wstęp
 
-No hej! Masz więc dokument Word i musisz dodać linię podpisu, a następnie podpisać go cyfrowo. Brzmi trudne? Zupełnie nie! Dzięki Aspose.Words dla .NET możesz to osiągnąć bezproblemowo za pomocą zaledwie kilku linijek kodu. W tym samouczku przeprowadzimy Cię przez cały proces, od skonfigurowania środowiska po zapisanie dokumentu z nowym, błyszczącym podpisem. Gotowy? Zanurzmy się!
+Hej tam! Masz więc dokument Word i musisz dodać linię podpisu, a następnie podpisać go cyfrowo. Brzmi trudne? Zupełnie nie! Dzięki Aspose.Words dla .NET możesz to osiągnąć bezproblemowo za pomocą zaledwie kilku linijek kodu. W tym samouczku przeprowadzimy Cię przez cały proces, od skonfigurowania środowiska po zapisanie dokumentu z nowym, błyszczącym podpisem. Gotowy? Zanurzmy się!
 
 ## Warunki wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
-1.  Aspose.Words dla .NET - Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET - Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne .NET — zdecydowanie zaleca się program Visual Studio.
 3. Dokument do podpisania — utwórz prosty dokument Word lub użyj istniejącego.
 4.  Plik certyfikatu — jest potrzebny w przypadku podpisów cyfrowych. Możesz użyć A`.pfx` plik.
@@ -105,7 +105,7 @@ I masz to! Wykonując te kroki, pomyślnie utworzyłeś nowy dokument Word, doda
 Tak, możesz używać różnych formatów obrazów, takich jak PNG, JPG, BMP itp.
 
 ###  Czy konieczne jest użycie tzw`.pfx` file for the certificate?
- Tak`.pfx` plik to powszechny format przechowywania informacji kryptograficznych, w tym certyfikatów i kluczy prywatnych.
+ Tak,`.pfx` plik to powszechny format przechowywania informacji kryptograficznych, w tym certyfikatów i kluczy prywatnych.
 
 ### Czy mogę dodać wiele linii podpisu w jednym dokumencie?
 Absolutnie! Można wstawić wiele wierszy podpisu, powtarzając krok wstawiania dla każdego podpisu.

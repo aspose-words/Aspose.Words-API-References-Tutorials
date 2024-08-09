@@ -47,7 +47,7 @@ Först måste du ställa in sökvägen till katalogen där ditt Word-dokument fi
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENTS DIRECTORY"`med den faktiska sökvägen där ditt dokument finns. Det här kan vara något liknande`"C:\\Documents\\MyDoc.docx"`.
+ Ersätta`"YOUR DOCUMENTS DIRECTORY"`med den faktiska sökvägen där ditt dokument finns. Det här kan vara något liknande`"C:\\Documents\\MyDoc.docx"`.
 
 ## Steg 2: Ladda dokumentet
 
@@ -60,7 +60,7 @@ Rubrik: Ladda Word-dokumentet
 Document doc = new Document(dataDir + "YOUR DOCUMENT FILE");
 ```
 
- Byta ut`"YOUR DOCUMENT FILE"` med namnet på din Word-dokumentfil, som t.ex`"example.docx"`. Denna kodrad läser dokumentet från din angivna katalog och förbereder det för ytterligare manipulation.
+ Ersätta`"YOUR DOCUMENT FILE"` med namnet på din Word-dokumentfil, som t.ex`"example.docx"`. Denna kodrad läser dokumentet från din angivna katalog och förbereder det för ytterligare manipulation.
 
 ## Steg 3: Hämta fältnamnen för sammankoppling av brev
 
@@ -92,7 +92,7 @@ Denna kodrad skriver ut det totala antalet kopplingsfält i dokumentet, vilket h
 
 Grattis! Du har nu lärt dig hur du extraherar fältnamn för sammanslagningsfält från ett Word-dokument med Aspose.Words för .NET. Denna teknik är ett värdefullt verktyg för att hantera och automatisera dokumentarbetsflöden, vilket gör det lättare att hantera personligt innehåll. Genom att följa dessa steg kan du effektivt identifiera och arbeta med kopplingsfält i dina dokument.
 
- Om du har några frågor eller behöver mer hjälp är du välkommen att utforska[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) eller gå med i[Aspose gemenskap](https://forum.aspose.com/c/words/8) för support. Glad kodning!
+ Om du har några frågor eller behöver mer hjälp är du välkommen att utforska[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) eller gå med i[Aspose gemenskap](https://forum.aspose.com/c/words/8) för stöd. Glad kodning!
 
 ## FAQ's
 

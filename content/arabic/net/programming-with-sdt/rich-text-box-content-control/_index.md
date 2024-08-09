@@ -68,7 +68,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
 ## الخطوة 4: إضافة محتوى إلى مربع النص المنسق
 
- إنشاء`Paragraph` و أ`Run` كائن للاحتفاظ بالمحتوى الذي تريد عرضه في مربع النص المنسق. تخصيص النص والتنسيق حسب الحاجة.
+ إنشاء أ`Paragraph` و أ`Run` كائن للاحتفاظ بالمحتوى الذي تريد عرضه في مربع النص المنسق. تخصيص النص والتنسيق حسب الحاجة.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -83,7 +83,7 @@ sdtRichText.ChildNodes.Add(para);
 
 ## الخطوة 5: إلحاق مربع النص المنسق بالمستند
 
- أضف ال`StructuredDocumentTag` إلى نص الوثيقة.
+ أضف`StructuredDocumentTag` إلى نص الوثيقة.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);

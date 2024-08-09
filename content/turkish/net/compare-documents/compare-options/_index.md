@@ -112,7 +112,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak iki Word belgesini başarıyla karşılaştırdınız. Büyük projeler üzerinde çalışırken tutarlılık ve doğruluk sağlamanız gerektiğinde bu süreç gerçek bir cankurtaran olabilir. Unutmayın, önemli olan, karşılaştırmayı özel ihtiyaçlarınıza göre uyarlamak için karşılaştırma seçeneklerinizi dikkatli bir şekilde ayarlamaktır. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak iki Word belgesini başarıyla karşılaştırdınız. Büyük projeler üzerinde çalışırken tutarlılık ve doğruluk sağlamanız gerektiğinde bu süreç gerçek bir cankurtaran olabilir. Unutmayın, önemli olan, karşılaştırmayı özel ihtiyaçlarınıza göre uyarlamak için karşılaştırma seçeneklerinizi dikkatli bir şekilde ayarlamaktır. Mutlu kodlama!
 
 ## SSS'ler
 

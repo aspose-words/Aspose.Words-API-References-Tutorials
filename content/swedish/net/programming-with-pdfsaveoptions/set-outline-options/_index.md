@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions();
 ```
 
-Låt oss nu ställa in dispositionsalternativen. 
+Låt oss nu ställa in konturalternativen. 
 
 ### Ställ in översiktsnivåer för rubriker
 

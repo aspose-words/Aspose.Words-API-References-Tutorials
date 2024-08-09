@@ -32,7 +32,7 @@ Most bontsuk le a folyamatot könnyen követhető lépésekre. A dokumentum bet�
 
 ## 1. lépés: Töltse be a dokumentumot
 
- Az első lépés a Word-dokumentum betöltése az Aspose.Wordsba`Document` tárgy. Ez az objektum a teljes dokumentumot reprezentálja.
+ Az első lépés a Word-dokumentum betöltése az Aspose.Wordsba`Document` objektum. Ez az objektum a teljes dokumentumot reprezentálja.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -83,7 +83,7 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ## GYIK
 
 ### Beállíthatom programozottan a távolságokat?
- Igen, az Aspose.Words segítségével programozottan beállíthatja a távolságokat a`DistanceTop`, `DistanceBottom`, `DistanceRight` , és`DistanceLeft` tulajdonságai a`Table` tárgy.
+ Igen, az Aspose.Words segítségével programozottan beállíthatja a távolságokat a`DistanceTop`, `DistanceBottom`, `DistanceRight` , és`DistanceLeft` tulajdonságai a`Table` objektum.
 
 ### Mi a teendő, ha a dokumentumom több táblával rendelkezik?
  A dokumentum utódcsomópontjait végigcsinálhatja, és ugyanazt a módszert alkalmazhatja minden táblára. Használat`GetChildNodes(NodeType.Table, true)` hogy megkapja az összes asztalt.
@@ -95,4 +95,4 @@ Teljesen! Az Aspose.Words támogatja a .NET Core-t, és ugyanazt a kódot kisebb
 Az Aspose.Words for .NET a Visual Studio NuGet Package Manager segítségével telepíthető. Egyszerűen keresse meg az "Aspose.Words" kifejezést, és telepítse a csomagot.
 
 ### Vannak korlátozások az Aspose.Words által támogatott dokumentumtípusokra vonatkozóan?
- Az Aspose.Words a dokumentumformátumok széles skáláját támogatja, beleértve a DOCX-et, DOC-t, PDF-t, HTML-t és még sok mást. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) a támogatott formátumok teljes listájához.
+ Az Aspose.Words a dokumentumformátumok széles skáláját támogatja, beleértve a DOCX-et, DOC-t, PDF-t, HTML-t és még sok mást. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) a támogatott formátumok teljes listájához.

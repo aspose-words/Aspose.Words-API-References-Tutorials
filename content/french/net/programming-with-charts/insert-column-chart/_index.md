@@ -68,7 +68,7 @@ doc.Save(dataDir + "InsertColumnChart.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment insérer un histogramme dans un document Word à l'aide d'Aspose.Words pour .NET. Cette compétence peut grandement améliorer l’attrait visuel et la valeur informative de vos documents, rendant la présentation des données plus claire et plus percutante.
+Félicitations! Vous avez appris avec succès comment insérer un histogramme dans un document Word à l'aide d'Aspose.Words pour .NET. Cette compétence peut grandement améliorer l’attrait visuel et la valeur informative de vos documents, rendant la présentation des données plus claire et plus percutante.
 
 ## FAQ
 

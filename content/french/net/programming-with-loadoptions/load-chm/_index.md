@@ -99,7 +99,7 @@ doc.Save(outputPath);
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez chargé avec succès un fichier CHM dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'intégration de divers formats de fichiers dans des documents Word, offrant ainsi une solution robuste pour vos besoins de documentation.
+Félicitations! Vous avez chargé avec succès un fichier CHM dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'intégration de divers formats de fichiers dans des documents Word, offrant ainsi une solution robuste pour vos besoins de documentation.
 
 ## FAQ
 
@@ -121,4 +121,4 @@ Oui, vous pouvez créer un script ou une fonction pour automatiser le processus 
 
 ### Où puis-je trouver plus d’informations sur Aspose.Words pour .NET ?
 
- Vous pouvez visiter le[Documentation](https://reference.aspose.com/words/net/) pour des informations plus détaillées et des exemples.
+ Vous pouvez visiter le[documentation](https://reference.aspose.com/words/net/) pour des informations plus détaillées et des exemples.

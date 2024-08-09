@@ -41,7 +41,7 @@ Därefter måste du installera paketet Aspose.Words for .NET. Du kan göra detta
 
 ## Steg 3: Ladda ditt dokument
 
- Låt oss nu ladda Word-dokumentet du vill konvertera till PDF. Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt dokument.
+ Låt oss nu ladda Word-dokumentet du vill konvertera till PDF. Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

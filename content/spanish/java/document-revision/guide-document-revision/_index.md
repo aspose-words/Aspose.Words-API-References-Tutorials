@@ -2,7 +2,7 @@
 title: La guía definitiva para la revisión de documentos
 linktitle: La guía definitiva para la revisión de documentos
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: ¡Revisión de documentos maestros con Aspose.Words para Java! Administre cambios de manera eficiente, acepte/rechace revisiones y colabore sin problemas. ¡Empieza ahora!
+description: ¡Revisión de documentos maestros con Aspose.Words para Java! Administre cambios de manera eficiente, acepte/rechace revisiones y colabore sin problemas. ¡Empiece ahora!
 type: docs
 weight: 10
 url: /es/java/document-revision/guide-document-revision/

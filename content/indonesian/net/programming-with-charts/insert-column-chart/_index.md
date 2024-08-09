@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Sisipkan Bagan Kolom
 
- Menggunakan`InsertChart` metode`DocumentBuilder`kelas untuk menyisipkan bagan kolom.
+ Gunakan`InsertChart` metode`DocumentBuilder`kelas untuk menyisipkan bagan kolom.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);

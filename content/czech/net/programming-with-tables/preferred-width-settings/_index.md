@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/preferred-width-settings/
 ---
-## Úvod
+## Zavedení
 
 Tabulky představují účinný způsob, jak organizovat a prezentovat informace v dokumentech aplikace Word. Při práci s tabulkami v Aspose.Words pro .NET máte několik možností pro nastavení šířky buněk tabulky, aby se zajistilo, že budou dokonale odpovídat rozvržení vašeho dokumentu. Tato příručka vás provede procesem vytváření tabulek s preferovaným nastavením šířky pomocí Aspose.Words pro .NET se zaměřením na absolutní, relativní a automatické možnosti velikosti. 
 
@@ -15,7 +15,7 @@ Tabulky představují účinný způsob, jak organizovat a prezentovat informace
 
 Než se pustíte do výukového programu, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte ve svém vývojovém prostředí nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte ve svém vývojovém prostředí nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 
 2. Vývojové prostředí .NET: Mějte nastavené vývojové prostředí .NET, jako je Visual Studio.
 

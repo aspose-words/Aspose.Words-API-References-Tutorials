@@ -15,7 +15,7 @@ url: /es/net/programming-with-document-properties/remove-personal-information/
 
 Antes de ensuciarnos las manos, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Aspose.Words para .NET: si aún no lo has hecho, descárgalo[aquí](https://releases.aspose.com/words/net/) . También puedes coger un[prueba gratis](https://releases.aspose.com/) si recién estás comenzando.
+1.  Aspose.Words para .NET: si aún no lo has hecho, descárgalo[aquí](https://releases.aspose.com/words/net/) . También puedes coger un[prueba gratuita](https://releases.aspose.com/) si recién estás comenzando.
 2. Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo .NET que prefiera.
 3. Conocimientos básicos de C#: no es necesario ser un mago, pero un poco de familiaridad será de gran ayuda.
 
@@ -76,7 +76,7 @@ La información personal incluye nombres de autores, propiedades del documento y
 
 ### ¿Aspose.Words para .NET es gratuito?
 
- Aspose.Words ofrece una[prueba gratis](https://releases.aspose.com/) para que puedas probarlo, pero necesitarás comprar una licencia para obtener todas las funciones. Revisar la[precios](https://purchase.aspose.com/buy) para más detalles.
+ Aspose.Words ofrece una[prueba gratuita](https://releases.aspose.com/) para que puedas probarlo, pero necesitarás comprar una licencia para obtener todas las funciones. Mira el[precios](https://purchase.aspose.com/buy) para más detalles.
 
 ### ¿Puedo utilizar Aspose.Words para otros formatos de documentos?
 
@@ -84,7 +84,7 @@ La información personal incluye nombres de autores, propiedades del documento y
 
 ### ¿Cómo obtengo soporte si tengo problemas?
 
- Puedes visitar Aspose.Words[Foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda con cualquier problema o pregunta que pueda tener.
+ Puedes visitar Aspose.Words[foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda con cualquier problema o pregunta que pueda tener.
 
 ### ¿Qué otras características ofrece Aspose.Words?
 

@@ -94,7 +94,7 @@ sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 
 ## Langkah 6: Simpan Dokumen
 
-Terakhir, simpan dokumen untuk melihat perubahan yang terjadi. SDT di dokumen Word sekarang akan menampilkan konten XML yang ditentukan.
+Terakhir, simpan dokumen untuk melihat perubahannya. SDT di dokumen Word sekarang akan menampilkan konten XML yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

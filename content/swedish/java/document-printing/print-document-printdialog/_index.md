@@ -90,7 +90,7 @@ settings.setPageRange("1-3, 5");
 
 ### Hur kan jag ändra pappersstorleken för utskrift?
 
-För att ändra pappersstorleken för utskrift kan du använda`PageSetup` klass och ställ in`PaperSize` fast egendom. Här är ett exempel:
+För att ändra pappersstorleken för utskrift kan du använda`PageSetup` klass och ställ in`PaperSize` egendom. Här är ett exempel:
 
 ```java
 Document doc = new Document("sample.docx");

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/build-table-with-style/
 ---
-## introduzione
+## Introduzione
 
 La creazione di documenti eleganti e professionali spesso richiede qualcosa di più del semplice testo. Le tabelle rappresentano un modo fantastico per organizzare i dati, ma renderle attraenti è una sfida completamente diversa. Inserisci Aspose.Words per .NET! In questo tutorial approfondiremo come creare una tabella con stile, rendendo i tuoi documenti Word raffinati e professionali.
 
@@ -128,7 +128,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 
 ## Conclusione
 
-E il gioco è fatto! Hai creato con successo una tabella elegante in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica l'automazione e la personalizzazione dei documenti Word per soddisfare le tue precise esigenze. Che tu stia creando report, fatture o qualsiasi altro tipo di documento, Aspose.Words ti copre.
+Ed ecco qua! Hai creato con successo una tabella elegante in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica l'automazione e la personalizzazione dei documenti Word per soddisfare le tue precise esigenze. Che tu stia creando report, fatture o qualsiasi altro tipo di documento, Aspose.Words ti copre.
 
 ## Domande frequenti
 

@@ -42,8 +42,8 @@ docLandscape.save("landscape.docx", SaveFormat.DOCX);
 //设置自定义页边距
 Document doc = new Document();
 PageSetup pageSetup = doc.getFirstSection().getPageSetup();
-pageSetup.setLeftMargin(72.0); //1英尺
-pageSetup.setRightMargin(72.0); //1英尺
+pageSetup.setLeftMargin(72.0); // 英寸
+pageSetup.setRightMargin(72.0); // 英寸
 pageSetup.setTopMargin(36.0); //0.5 英寸
 pageSetup.setBottomMargin(36.0); //0.5 英寸
 doc.save("custom_margins.docx", SaveFormat.DOCX);
@@ -173,7 +173,7 @@ Document doc2 = new Document("modified.docx");
 doc1.compare(doc2, "comparison_result.docx");
 ```
 
-## 常见问题故障排除
+## 解决常见问题
 
 即使是最好的开发人员也会遇到问题。我们将在本节中解决常见问题及其解决方案。
 

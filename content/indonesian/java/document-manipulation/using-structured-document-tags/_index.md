@@ -12,7 +12,7 @@ url: /id/java/document-manipulation/using-structured-document-tags/
 
 Tag Dokumen Terstruktur (SDT) adalah fitur canggih di Aspose.Words untuk Java yang memungkinkan Anda membuat dan memanipulasi konten terstruktur dalam dokumen Anda. Dalam panduan komprehensif ini, kami akan memandu Anda melalui berbagai aspek penggunaan SDT di Aspose.Words untuk Java. Baik Anda seorang pemula atau pengembang berpengalaman, Anda akan menemukan wawasan berharga dan contoh praktis dalam artikel ini.
 
-## Mulai
+## Memulai
 
 Sebelum kita mendalami detailnya, mari siapkan lingkungan kita dan buat SDT dasar. Di bagian ini, kami akan membahas topik-topik berikut:
 

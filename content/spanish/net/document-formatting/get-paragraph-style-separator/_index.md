@@ -10,7 +10,7 @@ url: /es/net/document-formatting/get-paragraph-style-separator/
 
 ## Introducción
 
-¿Alguna vez has intentado navegar por el laberinto de un documento de Word y te has encontrado con esos astutos separadores de estilo de párrafo? Si has estado allí, sabrás que la lucha es real. ¿Pero adivina que? Con Aspose.Words para .NET, identificar y manejar estos separadores es muy sencillo. ¡Vamos a sumergirnos en este tutorial y convertirte en un profesional del separador de estilos de párrafo!
+¿Alguna vez has intentado navegar por el laberinto de un documento de Word y te has encontrado con esos astutos separadores de estilo de párrafo? Si has estado allí, sabrás que la lucha es real. ¿Pero adivina qué? Con Aspose.Words para .NET, identificar y manejar estos separadores es muy sencillo. ¡Vamos a sumergirnos en este tutorial y convertirte en un profesional del separador de estilos de párrafo!
 
 ## Requisitos previos
 
@@ -99,4 +99,4 @@ Sí, Aspose.Words para .NET es compatible tanto con .NET Framework como con .NET
  Puede obtener apoyo del[Foro Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Aspose.Words ofrece una[prueba gratis](https://releases.aspose.com/) y también proporciona[licencias temporales](https://purchase.aspose.com/temporary-license/) Para evaluar.
+ Aspose.Words ofrece una[prueba gratuita](https://releases.aspose.com/) y también proporciona[licencias temporales](https://purchase.aspose.com/temporary-license/) para evaluación.

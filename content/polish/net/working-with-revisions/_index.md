@@ -16,12 +16,12 @@ Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programist
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Zaakceptuj poprawki](./accept-revisions/) | Dowiedz się, jak akceptować poprawki w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Uzyskaj typy wersji słów](./get-revision-types/) | Uzyskaj typy wersji słów w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Pobierz grupy wersji](./get-revision-groups/) | Uzyskaj szczegółowe informacje o grupie wersji w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Usuń komentarze z pliku PDF](./remove-comments-in-pdf/) | Usuń komentarze z pliku PDF za pomocą Aspose.Words dla .NET. |
-| [Pokaż poprawki w dymkach](./show-revisions-in-balloons/) | Wyświetlaj wersje w dymkach za pomocą Aspose.Words dla .NET. |
-| [Uzyskaj szczegóły grupy wersji](./get-revision-group-details/) | Uzyskaj szczegółowe informacje o grupie wersji w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Uzyskaj dostęp do poprawionej wersji](./access-revised-version/) | Uzyskaj dostęp do poprawionej wersji dokumentu Word za pomocą Aspose.Words dla .NET. |
-| [Przesuń węzeł w śledzonym dokumencie](./move-node-in-tracked-document/) | Przenieś węzły w śledzonym dokumencie za pomocą Aspose.Words dla .NET. |
-| [Rewizja kształtu](./shape-revision/) | Poprawiaj kształty w dokumencie Word za pomocą Aspose.Words dla .NET. |
+| [Zaakceptuj poprawki](./accept-revisions/) | Wersje dokumentów głównych za pomocą Aspose.Words dla .NET. Naucz się bez wysiłku śledzić, akceptować i odrzucać zmiany. Zwiększ swoje umiejętności zarządzania dokumentami. |
+| [Uzyskaj typy wersji słów](./get-revision-types/) |Dowiedz się, jak uzyskać typy wersji słów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci efektywnie zarządzać zmianami dokumentów. |
+| [Pobierz grupy wersji](./get-revision-groups/) | Dowiedz się, jak odzyskać grupy wersji z dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku. Idealny do zarządzania dokumentami. |
+| [Usuń komentarze z pliku PDF](./remove-comments-in-pdf/) | Dowiedz się, jak usunąć komentarze z pliku PDF za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. |
+| [Pokaż poprawki w dymkach](./show-revisions-in-balloons/) | Dowiedz się, jak wyświetlać wersje w dymkach za pomocą Aspose.Words dla .NET. Ten szczegółowy przewodnik przeprowadzi Cię przez każdy krok, zapewniając przejrzystość i uporządkowanie zmian w dokumencie. |
+| [Uzyskaj szczegóły grupy wersji](./get-revision-group-details/) | Z łatwością uzyskaj szczegółowe informacje o grupie wersji w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny dla programistów .NET. |
+| [Uzyskaj dostęp do poprawionej wersji](./access-revised-version/) | Dowiedz się, jak uzyskać dostęp i wyświetlić poprawioną wersję dokumentu za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bezproblemowo zarządzać dokumentami. |
+| [Przesuń węzeł w śledzonym dokumencie](./move-node-in-tracked-document/) | Dowiedz się, jak przenosić węzły w śledzonym dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. Idealny dla programistów. |
+| [Rewizja kształtu](./shape-revision/) | Dowiedz się, jak radzić sobie z poprawkami kształtów w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika. Opanuj śledzenie zmian, wstawianie kształtów i nie tylko. |

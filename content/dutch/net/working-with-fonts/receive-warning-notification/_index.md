@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/working-with-fonts/receive-warning-notification/
 ---
+## Invoering
 
 Bent u het beu om met onverwachte lettertypeproblemen in uw documenten om te gaan? Met Aspose.Words voor .NET kunt u op de hoogte worden gesteld van mogelijke problemen tijdens de documentverwerking, waardoor het eenvoudiger wordt de documentkwaliteit te behouden. Deze uitgebreide gids begeleidt u bij het instellen van waarschuwingsmeldingen in Aspose.Words, zodat u nooit meer een cruciale waarschuwing mist.
 
@@ -15,9 +16,9 @@ Bent u het beu om met onverwachte lettertypeproblemen in uw documenten om te gaa
 Voordat we erin duiken, zorg ervoor dat je het volgende hebt:
 
 - Basiskennis van C#: Bekendheid met C# zal u helpen de stappen te begrijpen en te implementeren.
--  Aspose.Words voor .NET Library: Download en installeer het vanaf de .NET-bibliotheek[download link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET Library: Download en installeer het vanaf de .NET-bibliotheek[downloadlink](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Een opstelling zoals Visual Studio om uw code te schrijven en uit te voeren.
--  Voorbeelddocument: zorg dat u een voorbeelddocument hebt (bijv.`Rendering.docx`) werken met.
+-  Voorbeelddocument: zorg dat u een voorbeelddocument hebt (bijv.`Rendering.docx`) om mee te werken.
 
 ## Naamruimten importeren
 
@@ -47,7 +48,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Stap 3: Stel de waarschuwingscallback in
 
- Om waarschuwingen vast te leggen en af te handelen, maakt u een klasse die de`IWarningCallback` koppel. Deze klasse registreert alle waarschuwingen die optreden tijdens de documentverwerking.
+ Om waarschuwingen vast te leggen en af te handelen, maakt u een klasse die de`IWarningCallback` interface. Deze klasse registreert alle waarschuwingen die optreden tijdens de documentverwerking.
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback
@@ -101,11 +102,11 @@ Nee, u kunt slechts één standaardlettertype ter vervanging opgeven. U kunt ech
 
 ###  Vraag 3: Kan ik andere soorten waarschuwingen verwerken?`IWarningCallback`?
 
- Ja de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
+ Ja, de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
 
 ### V4: Waar kan ik ondersteuning vinden voor Aspose.Words?
 
- Bezoek de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+ Bezoek de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.
 
 ### V5: Is het mogelijk om een tijdelijke licentie voor Aspose.Words te krijgen?
 

@@ -1,6 +1,6 @@
 ---
-title: Ölçü birimi
-linktitle: Ölçü birimi
+title: Ölçü Birimi
+linktitle: Ölçü Birimi
 second_title: Aspose.Words Belge İşleme API'si
 description: ODT dönüşümü sırasında belge formatını korumak için Aspose.Words for .NET'te ölçü birimi özelliğini nasıl yapılandıracağınızı öğrenin.
 type: docs
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## 3. Adım: Ölçü Birimini Yapılandırın
 
- Şimdi ODT dönüşümü için ölçü birimini yapılandıralım. Sihir yapılan yer burasıdır. Biz kuracağız`OdtSaveOptions` ölçü birimi olarak inç kullanmak.
+ Şimdi ODT dönüşümü için ölçü birimini yapılandıralım. Sihrin gerçekleştiği yer burasıdır. Biz kuracağız`OdtSaveOptions` ölçü birimi olarak inç kullanmak.
 
 ```csharp
 // Yedekleme seçeneklerinin "Ölçü birimi" özelliği ile yapılandırılması
@@ -75,7 +75,7 @@ Bu kod satırı, dönüştürülen belgeyi, uygulanan yeni ölçü birimiyle bel
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'teki ölçü birimi özelliğini kolayca yapılandırarak belgenizin düzeninin dönüştürme sırasında korunmasını sağlayabilirsiniz. İster inç, ister santimetre veya noktalarla çalışıyor olun, bu eğitim size belgenizin biçimlendirmesini nasıl kolaylıkla kontrol altına alacağınızı göstermiştir.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'teki ölçü birimi özelliğini kolayca yapılandırarak belgenizin düzeninin dönüştürme sırasında korunmasını sağlayabilirsiniz. İster inç, ister santimetre veya noktalarla çalışıyor olun, bu eğitim size belgenizin biçimlendirmesini nasıl kolaylıkla kontrol altına alacağınızı göstermiştir.
 
 ## SSS
 

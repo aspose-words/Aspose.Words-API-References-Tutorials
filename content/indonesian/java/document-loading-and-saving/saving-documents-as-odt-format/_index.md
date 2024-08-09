@@ -69,7 +69,7 @@ Pada artikel ini, kita telah mempelajari cara menyimpan dokumen sebagai format O
 
 ### Bagaimana cara mengunduh Aspose.Words untuk Java?
 
- Anda dapat mengunduh Aspose.Words untuk Java dari situs web Aspose. Mengunjungi[Link ini](https://releases.aspose.com/words/java/)untuk mengakses halaman unduh.
+ Anda dapat mengunduh Aspose.Words untuk Java dari situs web Aspose. Mengunjungi[tautan ini](https://releases.aspose.com/words/java/)untuk mengakses halaman unduh.
 
 ### Apa keuntungan menyimpan dokumen dalam format ODT?
 

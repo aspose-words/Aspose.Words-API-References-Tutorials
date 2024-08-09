@@ -2,104 +2,108 @@
 title: Uzyskaj szczegóły grupy wersji
 linktitle: Uzyskaj szczegóły grupy wersji
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Uzyskaj szczegółowe informacje o grupie wersji w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Z łatwością uzyskaj szczegółowe informacje o grupie wersji w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny dla programistów .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/get-revision-group-details/
 ---
+## Wstęp
 
-W tym przewodniku krok po kroku pokażemy, jak uzyskać szczegóły grupy wersji w dokumencie programu Word za pomocą Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
+Czy kiedykolwiek czułeś potrzebę zagłębienia się w najdrobniejsze szczegóły poprawek w dokumencie programu Word? Być może współpracujesz nad projektem i musisz skrupulatnie śledzić zmiany. Cóż, zapnij pasy, bo zaraz zagłębimy się w niesamowity samouczek na temat uzyskiwania szczegółów grupy wersji za pomocą Aspose.Words dla .NET. Pod koniec tego przewodnika będziesz profesjonalistą w wyodrębnianiu i wyświetlaniu szczegółów wersji, dzięki czemu zarządzanie dokumentami będzie proste.
 
-## Krok 1: Ładowanie dokumentu
+## Warunki wstępne
 
-Pierwszym krokiem jest przesłanie dokumentu zawierającego poprawki.
+Zanim wyruszymy w tę podróż kodowania, upewnijmy się, że masz wszystko, czego potrzebujesz:
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną najnowszą wersję. Jeśli nie, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko .NET: Upewnij się, że masz skonfigurowane działające środowisko programistyczne .NET. Visual Studio to świetna opcja.
+- Dokument programu Word z wersjami: W tym samouczku będziemy używać przykładowego dokumentu programu Word z wersjami (`Revisions.docx`).
+
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw do Twojego projektu. Jest to niezbędne, aby uzyskać dostęp do funkcjonalności Aspose.Words.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using System;
 ```
 
-## Krok 2: Przeglądaj wersje
+W porządku, rozbijmy to krok po kroku. Każdy krok poprowadzi Cię przez proces uzyskiwania szczegółów grupy wersji przy użyciu Aspose.Words dla .NET.
 
-Następnie przejrzymy wersje obecne w dokumencie i wyświetlimy ich szczegóły, takie jak typ, autor, data i poprawiony tekst.
+## Krok 1: Załaduj dokument Word
+
+Pierwszym krokiem jest załadowanie dokumentu Word. Tutaj przechowywane są Twoje poprawki.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ W tym fragmencie zamień`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu. Ten kod załaduje plik`Revisions.docx` plik do`doc` obiekt.
+
+## Krok 2: Uzyskaj dostęp do kolekcji wersji
+
+ Przejdźmy teraz do wersji dokumentu. Aspose.Words zapewnia`Revisions` kolekcję, po której możemy iterować.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     string groupText = revision.Group != null
-         ? "Revision group text: " + revision.Group.Text
-         : "The revision does not belong to any group";
-
-     Console.WriteLine("Type: " + revision.RevisionType);
-     Console.WriteLine("Author: " + revision.Author);
-     Console.WriteLine("Date: " + revision.DateTime);
-     Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-     Console.WriteLine(groupText);
+    // Przetwarzaj każdą wersję
 }
 ```
 
+Ta pętla przejdzie przez każdą wersję dokumentu, pozwalając nam wyodrębnić szczegóły.
 
-### Przykładowy kod źródłowy dla opcji Pobierz szczegóły grupy wersji przy użyciu Aspose.Words dla .NET
+## Krok 3: Wyodrębnij szczegóły wersji
 
-Oto kompletny kod źródłowy umożliwiający uzyskanie szczegółów grupy wersji w dokumencie przy użyciu Aspose.Words dla .NET:
+W pętli możemy wyodrębnić różne szczegóły dotyczące każdej wersji, takie jak typ, autor, data i tekst.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
 foreach (Revision revision in doc.Revisions)
 {
-	 string groupText = revision.Group != null
-		 ? "Revision group text: " + revision.Group.Text
-		 : "The revision does not belong to any group";
-
-	 Console.WriteLine("Type: " + revision.RevisionType);
-	 Console.WriteLine("Author: " + revision.Author);
-	 Console.WriteLine("Date: " + revision.DateTime);
-	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-	 Console.WriteLine(groupText);
+    Console.WriteLine("Type: " + revision.RevisionType);
+    Console.WriteLine("Author: " + revision.Author);
+    Console.WriteLine("Date: " + revision.DateTime);
+    Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
 }
 ```
+
+Ten kod wydrukuje na konsoli typ wersji, autora, datę i tekst.
+
+## Krok 4: Sprawdź grupę wersji
+
+Czasami wersje są grupowane. Musimy sprawdzić, czy wersja należy do grupy i wyświetlić tekst grupy, jeśli tak.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+    string groupText = revision.Group != null
+        ? "Revision group text: " + revision.Group.Text
+        : "The revision does not belong to any group";
+
+    Console.WriteLine(groupText);
+}
+```
+
+Ten fragment spowoduje wydrukowanie tekstu grupy, jeśli wersja jest częścią grupy lub wskazuje, że nie należy do żadnej grupy.
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak uzyskać szczegóły grupy wersji w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Używając pętli i odpowiednich właściwości, mogliśmy wyświetlić szczegóły, takie jak typ wersji, autor, data i poprawiony tekst. Aspose.Words dla .NET oferuje wiele zaawansowanych funkcji do manipulowania dokumentami Word, w tym zarządzanie wersjami. Możesz teraz wykorzystać tę wiedzę, aby uzyskać szczegółowe informacje o grupach wersji we własnych dokumentach programu Word przy użyciu Aspose.Words dla .NET.
+I masz to! Wykonując poniższe kroki, możesz łatwo uzyskać szczegółowe informacje na temat wersji w dokumencie programu Word przy użyciu Aspose.Words dla .NET. To potężne narzędzie ułatwia zarządzanie zmianami i śledzenie ich, zapewniając płynną realizację wspólnych projektów.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jak załadować dokument z wersjami do Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
+Jest to potężna biblioteka .NET do programowego tworzenia, edytowania, konwertowania i drukowania dokumentów programu Word.
 
- O: Skorzystaj z`Document` klasa Aspose.Words dla .NET, aby załadować dokument z pliku zawierającego poprawki. Można określić pełną ścieżkę dokumentu.
+### Czy mogę używać Aspose.Words dla .NET z innymi językami .NET?
+Absolutnie! Można go używać z dowolnym językiem .NET, w tym C#, VB.NET i ASP.NET.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Jak mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
+ Możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
 
-#### P: Jak uzyskać szczegółowe informacje na temat grupy wersji w Aspose.Words dla .NET?
+### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz kupić jeden[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-O: Przeglądaj wersje dokumentu za pomocą pętli i uzyskaj dostęp do właściwości każdej wersji, aby uzyskać żądane szczegóły. Możesz skorzystać z`RevisionType`, `Author`, `DateTime`I`ParentNode` właściwości, aby uzyskać odpowiednio typ wersji, autora, datę i poprawiony tekst.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-      Console.WriteLine("Type: " + revision.RevisionType
-
-);
-      Console.WriteLine("Author: " + revision.Author);
-      Console.WriteLine("Date: " + revision.DateTime);
-      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-}
-```
-
-#### P: Jak sprawdzić, czy wersja należy do grupy w Aspose.Words dla .NET?
-
- O: Skorzystaj z`Group` własność`Revision` obiekt, aby sprawdzić, czy wersja należy do grupy. Jeśli`Group` własność jest`null`, oznacza to, że wersja nie należy do żadnej grupy.
-
-```csharp
-if (revision.Group != null)
-{
-      // Wersja należy do grupy
-}
-else
-{
-      // Wersja nie należy do żadnej grupy
-}
-```
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+ Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).

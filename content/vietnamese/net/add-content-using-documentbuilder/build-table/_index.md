@@ -19,7 +19,7 @@ Trước khi bắt tay vào cuộc phiêu lưu xây dựng bàn của mình, hã
 - .NET Framework (4.0 trở lên)
 - Thư viện Aspose.Words cho .NET
 
- Nếu bạn chưa có Aspose.Words, bạn có thể dễ dàng[tải về tại đây](https://releases.aspose.com/words/net/) . Bạn cũng có thể bắt đầu bằng một[dùng thử miễn phí](https://releases.aspose.com/) nếu bạn muốn thử nước. Đối với những người sẵn sàng dấn thân, bạn có thể[mua giấy phép](https://purchase.aspose.com/buy) hoặc nếu bạn cần thêm thời gian để đánh giá, hãy lấy[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
+ Nếu bạn chưa có Aspose.Words, bạn có thể dễ dàng[tải nó ở đây](https://releases.aspose.com/words/net/) . Bạn cũng có thể bắt đầu bằng một[dùng thử miễn phí](https://releases.aspose.com/) nếu bạn muốn thử nước. Đối với những người sẵn sàng dấn thân, bạn có thể[mua giấy phép](https://purchase.aspose.com/buy) hoặc nếu bạn cần thêm thời gian để đánh giá, hãy lấy[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
 
 ## Nhập không gian tên
 
@@ -35,14 +35,14 @@ using Aspose.Words.Tables;
 
 ## Bước 1: Khởi tạo Document và DocumentBuilder
 
- Đầu tiên, chúng ta cần thiết lập tài liệu và trình tạo tài liệu của mình. Các`Document` lớp đại diện cho tài liệu Word và`DocumentBuilder` là công cụ hữu ích của chúng tôi để thêm nội dung vào đó.
+ Đầu tiên, chúng ta cần thiết lập tài liệu và trình tạo tài liệu của mình. các`Document` lớp đại diện cho tài liệu Word và`DocumentBuilder` là công cụ hữu ích của chúng tôi để thêm nội dung vào đó.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hãy tưởng tượng điều này giống như việc trải canvas xuống trước khi bạn bắt đầu vẽ. Các`DocumentBuilder` là bàn chải của chúng tôi, sẵn sàng để tạo ra một kiệt tác.
+ Hãy tưởng tượng điều này giống như việc trải canvas xuống trước khi bạn bắt đầu vẽ. các`DocumentBuilder` là bàn chải của chúng tôi, sẵn sàng để tạo ra một kiệt tác.
 
 ## Bước 2: Bắt đầu bảng
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Bằng cách sử dụng`StartTable` chúng tôi đang thông báo cho Aspose.Words rằng chúng tôi sắp tạo một bảng. Các`InsertCell` phương thức thêm ô đầu tiên và`AutoFit` đảm bảo các cột của chúng tôi có chiều rộng cố định.
+ Bằng cách sử dụng`StartTable` chúng tôi đang thông báo cho Aspose.Words rằng chúng tôi sắp tạo một bảng. các`InsertCell` phương thức thêm ô đầu tiên và`AutoFit` đảm bảo các cột của chúng tôi có chiều rộng cố định.
 
 ## Bước 3: Định dạng hàng đầu tiên
 
@@ -115,7 +115,7 @@ Hãy coi điều này giống như việc đóng khung kiệt tác của chúng 
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công bảng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này hướng dẫn bạn từng bước, từ khởi tạo tài liệu đến lưu sản phẩm cuối cùng. Với Aspose.Words, khả năng là vô tận. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ tài liệu nào khác, giờ đây bạn có khả năng định dạng và tùy chỉnh các bảng theo ý muốn của mình.
+Và bạn có nó! Bạn đã tạo thành công bảng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này hướng dẫn bạn từng bước, từ khởi tạo tài liệu đến lưu sản phẩm cuối cùng. Với Aspose.Words, khả năng là vô tận. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ tài liệu nào khác, giờ đây bạn có khả năng định dạng và tùy chỉnh các bảng theo ý muốn của mình.
 
 Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo. Vì vậy, đừng ngần ngại thử nghiệm các định dạng và kiểu bảng khác nhau. Chúc mừng mã hóa!
 
@@ -125,7 +125,7 @@ Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo. Vì vậy, đ
 Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó cho phép bạn tạo, chỉnh sửa và thao tác với tài liệu mà không cần Microsoft Word.
 
 ### Làm cách nào để cài đặt Aspose.Words cho .NET?
- Bạn có thể[tải xuống Aspose.Words cho .NET tại đây](https://releases.aspose.com/words/net/). Làm theo hướng dẫn cài đặt được cung cấp để thiết lập nó trong môi trường phát triển của bạn.
+ bạn có thể[tải xuống Aspose.Words cho .NET tại đây](https://releases.aspose.com/words/net/). Làm theo hướng dẫn cài đặt được cung cấp để thiết lập nó trong môi trường phát triển của bạn.
 
 ### Tôi có thể sử dụng Aspose.Words miễn phí không?
  Aspose.Words cung cấp một[dùng thử miễn phí](https://releases.aspose.com/) để bạn có thể kiểm tra các tính năng của nó. Để sử dụng lâu dài, bạn có thể mua giấy phép hoặc mua một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).

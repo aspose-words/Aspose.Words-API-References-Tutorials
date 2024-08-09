@@ -364,7 +364,7 @@ Aspose.Words for Java는 Java 개발자가 문서 스타일을 지정하고 창�
 
 ### Java용 Aspose.Words는 문서 암호화를 지원합니까?
 
-   예, Aspose.Words for Java는 민감한 정보를 보호하기 위해 문서 암호화를 지원합니다.
+   예, Aspose.Words for Java는 중요한 정보를 보호하기 위해 문서 암호화를 지원합니다.
 
 ### Java 사용자를 위한 Aspose.Words에 사용할 수 있는 커뮤니티 포럼이나 지원이 있습니까?
 
@@ -372,6 +372,6 @@ Aspose.Words for Java는 Java 개발자가 문서 스타일을 지정하고 창�
 
 ### 라이선스를 구매하기 전에 Aspose.Words for Java를 사용해 볼 수 있나요?
 
-   예, Aspose는 사용자가 구매 결정을 내리기 전에 기능을 평가할 수 있도록 무료 평가판 라이브러리를 제공합니다.
+   예, Aspose는 사용자가 구매 결정을 내리기 전에 기능을 평가할 수 있도록 라이브러리의 무료 평가판을 제공합니다.
 
 ---

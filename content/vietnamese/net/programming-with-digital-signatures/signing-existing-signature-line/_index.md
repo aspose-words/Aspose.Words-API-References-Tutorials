@@ -84,7 +84,7 @@ DigitalSignatureUtil.Sign(
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã ký thành công dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET. Không quá khó khăn phải không? Với các bước này, giờ đây bạn có thể ký điện tử vào các tài liệu, tăng thêm tính xác thực và tính chuyên nghiệp. Vì vậy, lần tới khi ai đó gửi cho bạn một tài liệu để ký, bạn sẽ biết chính xác phải làm gì!
+Và bạn có nó! Bạn đã ký thành công dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET. Không quá khó khăn phải không? Với các bước này, giờ đây bạn có thể ký điện tử vào các tài liệu, tăng thêm tính xác thực và tính chuyên nghiệp. Vì vậy, lần tới khi ai đó gửi cho bạn một tài liệu để ký, bạn sẽ biết chính xác phải làm gì!
 
 ## Câu hỏi thường gặp
 

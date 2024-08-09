@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.DigitalSignatures;
 ```
 
-W porządku, podzielmy to na łatwe do wykonania kroki. Każdy krok poprowadzi Cię przez określoną część procesu. Gotowy? Chodźmy!
+W porządku, podzielmy to na łatwe do wykonania kroki. Każdy krok poprowadzi Cię przez określoną część procesu. Gotowy? chodźmy!
 
 ## Krok 1: Skonfiguruj swój projekt
 

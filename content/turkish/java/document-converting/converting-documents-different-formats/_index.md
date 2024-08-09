@@ -68,7 +68,7 @@ Bu kılavuzda, belgeleri farklı formatlara dönüştürmek için Aspose.Words f
 
 ## SSS'ler
 
-### Aspose.Words for Java'yı kullanmaya nasıl başlarım?
+### Aspose.Words for Java'yı kullanmaya nasıl başlayabilirim?
 
 Aspose.Words for Java'yı kullanmaya başlamak kolaydır. Öncelikle kütüphaneyi web sitesinden indirip yükleyin. Ardından Java projenizi kurun ve Aspose.Words JAR dosyasını sınıf yolunuza ekleyin.
 

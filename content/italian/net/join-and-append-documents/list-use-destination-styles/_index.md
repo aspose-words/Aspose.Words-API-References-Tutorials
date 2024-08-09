@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/list-use-destination-styles/
 ---
-## introduzione
+## Introduzione
 
 Hai mai provato a unire documenti Word e sei rimasto intrappolato nella formattazione? A volte è come provare a mescolare olio e acqua, giusto? Bene, oggi ci immergeremo in un trucco accurato utilizzando Aspose.Words per .NET che ti salverà da questo mal di testa. Impareremo come importare elenchi da un documento all'altro senza rovinare la numerazione e gli stili. Pronto a renderti la vita un po' più semplice? Iniziamo!
 
@@ -64,7 +64,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Passaggio 4: aggiungi il documento di origine al documento di destinazione
 
-Ora eseguiamo la fusione. Qui è dove avviene la magia. Aggiungiamo il documento di origine al documento di destinazione utilizzando le opzioni di importazione specificate.
+Ora eseguiamo la fusione. È qui che avviene la magia. Aggiungiamo il documento di origine al documento di destinazione utilizzando le opzioni di importazione specificate.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

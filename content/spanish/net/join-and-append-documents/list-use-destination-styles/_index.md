@@ -74,7 +74,7 @@ Ha fusionado exitosamente dos documentos, manteniendo las listas intactas.
 
 ## Conclusión
 
-¡Ahí tienes! Fusionar documentos sin perder la cabeza por problemas de formato es muy sencillo con Aspose.Words para .NET. Ya sea que esté trabajando en un proyecto grande o simplemente necesite ordenar algunos archivos, este método mantendrá sus listas en buen estado. Así que la próxima vez que te enfrentes a un dilema al fusionar documentos, recuerda esta guía y afrontala como un profesional.
+¡Ahí lo tienes! Fusionar documentos sin perder la cabeza por problemas de formato es muy sencillo con Aspose.Words para .NET. Ya sea que esté trabajando en un proyecto grande o simplemente necesite ordenar algunos archivos, este método mantendrá sus listas en buen estado. Así que la próxima vez que te enfrentes a un dilema al fusionar documentos, recuerda esta guía y afrontala como un profesional.
 
 ## Preguntas frecuentes
 
@@ -85,7 +85,7 @@ Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos d
  Puedes descargarlo desde el[sitio web](https://releases.aspose.com/words/net/) y siga las instrucciones de instalación en el[documentación](https://reference.aspose.com/words/net/).
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Aspose.Words ofrece una[prueba gratis](https://releases.aspose.com/) con funciones limitadas. Para obtener acceso completo, deberá adquirir una licencia[aquí](https://purchase.aspose.com/buy).
+ Aspose.Words ofrece una[prueba gratuita](https://releases.aspose.com/) con funciones limitadas. Para obtener acceso completo, deberá adquirir una licencia[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Qué son las opciones de formato de importación?
  ImportFormatOptions le permite especificar cómo se maneja el formato al importar contenido de un documento a otro. Por ejemplo,`KeepSourceNumbering` garantiza que se conserve la numeración de la lista del documento fuente.

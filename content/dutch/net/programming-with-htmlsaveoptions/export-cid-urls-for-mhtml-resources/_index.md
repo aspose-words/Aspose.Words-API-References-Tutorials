@@ -52,7 +52,7 @@ Definieer het pad naar uw documentmap. Dit is waar uw Word-document zich bevindt
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
 
 ### Stap 2.2: Laad het document
 Laad uw Word-document in het project.
@@ -96,7 +96,7 @@ Gefeliciteerd! U heeft met succes Cid-URL's voor MHTML-bronnen geëxporteerd met
 Het exporteren van Cid-URL's voor MHTML-bronnen zorgt ervoor dat ingesloten bronnen in uw MHTML-bestand op de juiste manier worden verwezen, waardoor de documentportabiliteit en -integriteit worden verbeterd.
 
 ### Kan ik het uitvoerformaat verder aanpassen?
- Ja, Aspose.Words voor .NET biedt uitgebreide aanpassingsmogelijkheden voor het opslaan van documenten. Verwijs naar de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Ja, Aspose.Words voor .NET biedt uitgebreide aanpassingsmogelijkheden voor het opslaan van documenten. Raadpleeg de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
  Ja, u heeft een licentie nodig om Aspose.Words voor .NET te gebruiken. U kunt een gratis proefversie verkrijgen[hier](https://releases.aspose.com/) of koop een licentie[hier](https://purchase.aspose.com/buy).

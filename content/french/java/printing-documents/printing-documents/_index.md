@@ -182,7 +182,7 @@ class MultipagePrintDocument implements Printable
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez imprimé avec succès un document Word à l'aide d'Aspose.Words pour Java. Ce guide étape par étape devrait vous aider à intégrer de manière transparente l'impression de documents dans vos applications Java.
+Félicitations! Vous avez imprimé avec succès un document Word à l'aide d'Aspose.Words pour Java. Ce guide étape par étape devrait vous aider à intégrer de manière transparente l'impression de documents dans vos applications Java.
 
 ## FAQ
 

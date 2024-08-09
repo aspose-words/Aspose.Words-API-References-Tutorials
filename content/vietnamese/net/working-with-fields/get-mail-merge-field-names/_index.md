@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
- Các`Aspose.Words` không gian tên cho phép bạn truy cập vào tất cả các lớp và phương thức cần thiết để thao tác với tài liệu Word, trong khi`System` được sử dụng cho chức năng cơ bản như đầu ra của bàn điều khiển.
+ các`Aspose.Words` không gian tên cho phép bạn truy cập vào tất cả các lớp và phương thức cần thiết để thao tác với tài liệu Word, trong khi`System` được sử dụng cho chức năng cơ bản như đầu ra của bàn điều khiển.
 
 Hãy chia nhỏ quá trình trích xuất tên trường trộn thư thành hướng dẫn từng bước rõ ràng.
 
@@ -73,7 +73,7 @@ Tiêu đề: Trích xuất tên trường trộn thư
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
- Các`GetFieldNames()` phương thức trả về một chuỗi các chuỗi, mỗi chuỗi đại diện cho một tên trường phối thư được tìm thấy trong tài liệu. Đây là những phần giữ chỗ bạn sẽ thấy trong tài liệu Word của mình.
+ các`GetFieldNames()` phương thức trả về một chuỗi các chuỗi, mỗi chuỗi đại diện cho một tên trường phối thư được tìm thấy trong tài liệu. Đây là những phần giữ chỗ bạn sẽ thấy trong tài liệu Word của mình.
 
 ## Bước 4: Hiển thị số trường hợp nhất
 
@@ -92,7 +92,7 @@ Dòng mã này in ra tổng số trường trộn thư trong tài liệu, giúp 
 
 Chúc mừng! Bây giờ bạn đã học cách trích xuất tên trường trộn thư từ tài liệu Word bằng Aspose.Words cho .NET. Kỹ thuật này là một công cụ có giá trị để quản lý và tự động hóa quy trình làm việc của tài liệu, giúp xử lý nội dung được cá nhân hóa dễ dàng hơn. Bằng cách làm theo các bước này, bạn có thể xác định và làm việc hiệu quả với các trường phối thư trong tài liệu của mình.
 
- Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm, vui lòng khám phá[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc tham gia[Cộng đồng đề xuất](https://forum.aspose.com/c/words/8) để hỗ trợ. Chúc mừng mã hóa!
+ Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm, vui lòng khám phá[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc tham gia[cộng đồng Aspose](https://forum.aspose.com/c/words/8) để được hỗ trợ. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

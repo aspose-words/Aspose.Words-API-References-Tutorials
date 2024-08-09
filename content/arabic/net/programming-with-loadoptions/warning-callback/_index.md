@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## الخطوة 4: تنفيذ فئة رد الاتصال التحذيرية
 
- قم بإنشاء فئة تنفذ`IWarningCallback` واجهه المستخدم. ستحدد هذه الفئة كيفية التعامل مع التحذيرات أثناء معالجة المستندات.
+ قم بإنشاء فئة تنفذ`IWarningCallback` واجهة. ستحدد هذه الفئة كيفية التعامل مع التحذيرات أثناء معالجة المستندات.
 
 ```csharp
 private class DocumentLoadingWarningCallback : IWarningCallback
@@ -94,7 +94,7 @@ private class DocumentLoadingWarningCallback : IWarningCallback
 يسمح لك رد الاتصال التحذيري برصد التحذيرات التي تحدث أثناء معالجة المستندات والتعامل معها، مما يساعدك على معالجة المشكلات المحتملة بشكل استباقي.
 
 ### كيف أقوم بإعداد ميزة رد الاتصال التحذيري؟
- تحتاج إلى تكوين`LoadOptions` مع ال`WarningCallback` الخاصية وقم بتنفيذ فئة تتعامل مع التحذيرات من خلال تنفيذ`IWarningCallback` واجهه المستخدم.
+ تحتاج إلى تكوين`LoadOptions` مع`WarningCallback` الخاصية وقم بتنفيذ فئة تتعامل مع التحذيرات من خلال تنفيذ`IWarningCallback` واجهة.
 
 ### هل يمكنني استخدام ميزة رد الاتصال التحذيري بدون ترخيص صالح؟
  يمكنك استخدامه مع الإصدار التجريبي المجاني، ولكن للحصول على الوظائف الكاملة، يوصى بالحصول على ترخيص صالح. يمكنك الحصول على[الترخيص المؤقت هنا](https://purchase.aspose.com/temporary-license/).
@@ -103,4 +103,4 @@ private class DocumentLoadingWarningCallback : IWarningCallback
 يمكن أن تتضمن التحذيرات مشكلات تتعلق بالميزات غير المدعومة، أو عدم تناسق التنسيق، أو مشكلات أخرى خاصة بالمستند.
 
 ### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ .NET؟
- يمكنك الرجوع إلى[توثيق](https://reference.aspose.com/words/net/)للحصول على معلومات وأمثلة مفصلة.
+ يمكنك الرجوع إلى[الوثائق](https://reference.aspose.com/words/net/)للحصول على معلومات وأمثلة مفصلة.

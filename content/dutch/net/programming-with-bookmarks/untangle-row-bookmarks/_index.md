@@ -17,7 +17,7 @@ Deze gids leidt u door het proces van het ontwarren van rijbladwijzers in uw Wor
 
 Voordat je erin duikt, heb je een paar dingen nodig:
 
-1.  Aspose.Words voor .NET: Deze commerciële bibliotheek biedt functionaliteiten voor het programmatisch werken met Word-documenten. 2. U kunt een gratis proefversie downloaden van[download link](https://releases.aspose.com/words/net/) of koop een licentie bij[kopen](https://purchase.aspose.com/buy).
+1.  Aspose.Words voor .NET: Deze commerciële bibliotheek biedt functionaliteiten voor het programmatisch werken met Word-documenten. 2. U kunt een gratis proefversie downloaden van[downloadlink](https://releases.aspose.com/words/net/) of koop een licentie bij[kopen](https://purchase.aspose.com/buy).
 3. AC# ontwikkelomgeving: Visual Studio of een andere C# IDE zal perfect werken.
 4. Een Word-document met rijbladwijzers: We gebruiken een voorbeelddocument met de naam 'Tabelkolombladwijzers.docx' voor demonstratiedoeleinden.
 
@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 Hier volgt een stapsgewijze uitleg van wat de code doet:
 
  We doorlopen alle bladwijzers in het document met behulp van a`foreach` lus.
-Voor elke bladwijzer halen we de bovenliggende rij op van zowel de bladwijzerstart (`bookmark.BookmarkStart`) en het bladwijzereinde (`bookmark.BookmarkEnd` ) de ... gebruiken`GetAncestor` methode.
+Voor elke bladwijzer halen we de bovenliggende rij op van zowel de bladwijzerstart (`bookmark.BookmarkStart`) en het bladwijzereinde (`bookmark.BookmarkEnd` ) met behulp van de`GetAncestor` methode.
 Vervolgens controleren we of beide rijen worden gevonden (`row1 != null`En`row2 != null`) en als het aangrenzende rijen zijn (`row1.NextSibling == row2`). Dit zorgt ervoor dat we alleen bladwijzers wijzigen die zich over aangrenzende rijen uitstrekken.
 Als aan de voorwaarden is voldaan, verplaatsen we het eindknooppunt van de bladwijzer naar het einde van de laatste alinea in de laatste cel van de bovenste rij (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) om ze effectief te ontwarren.
 
@@ -101,7 +101,7 @@ if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 
 Dit codefragment controleert of het einde van de bladwijzer met de naam 'ROW1' nog steeds bestaat nadat de rij met de bladwijzer 'ROW2' is verwijderd. Als deze nul is, wordt er een uitzondering gegenereerd, wat aangeeft dat er een probleem is met het ontwarringsproces. 
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
  Tenslotte, na het ontwarren van de bladwijzers en mogelijk het verwijderen van rijen, slaat u het gewijzigde document op met behulp van de`Save` methode:
 
@@ -119,7 +119,7 @@ Hierdoor wordt het document met de ontwarde bladwijzers en eventuele verwijderde
 
 ### Is Aspose.Words voor .NET gratis?
 
- Aspose.Words voor .NET is een commerciële bibliotheek met een gratis proefversie. Je kunt het downloaden van[download link](https://releases.aspose.com/words/net/).
+ Aspose.Words voor .NET is een commerciële bibliotheek met een gratis proefversie. Je kunt het downloaden van[downloadlink](https://releases.aspose.com/words/net/).
 
 ### Kan ik rijbladwijzers handmatig ontwarren in Word?
 

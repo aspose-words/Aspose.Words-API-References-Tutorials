@@ -2,76 +2,100 @@
 title: Formularfelder einfügen
 linktitle: Formularfelder einfügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Dropdown-Formularfelder in Word-Dokumente einfügen.
+description: Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET ein Kombinationsfeld-Formularfeld in ein Word-Dokument einfügen.
 type: docs
 weight: 10
 url: /de/net/working-with-formfields/insert-form-fields/
 ---
+## Einführung
 
-In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Formularfelder, insbesondere ein Dropdown-Formularfeld, in ein Word-Dokument einfügen. Wir erklären den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
+Formularfelder in Word-Dokumenten können unglaublich nützlich sein, um interaktive Formulare oder Vorlagen zu erstellen. Egal, ob Sie eine Umfrage, ein Bewerbungsformular oder ein anderes Dokument erstellen, das Benutzereingaben erfordert, Formularfelder sind unverzichtbar. In diesem Tutorial führen wir Sie durch den Prozess des Einfügens eines Kombinationsfeld-Formularfelds in ein Word-Dokument mit Aspose.Words für .NET. Wir behandeln alles von den Voraussetzungen bis hin zu detaillierten Schritten und stellen sicher, dass Sie den Prozess umfassend verstehen.
 
- Stellen Sie zunächst sicher, dass Sie Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet haben. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie von[[Originaltext von Aspose.Releases]https://releases.aspose.com/words/net/.
+## Voraussetzungen
 
-## Schritt 1: Initialisieren der Document- und DocumentBuilder-Objekte
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie für den Einstieg benötigen:
 
- Initialisieren Sie zunächst den`Document`Und`DocumentBuilder` Objekte:
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie es hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Sie benötigen eine IDE wie Visual Studio.
+3. .NET Framework: Stellen Sie sicher, dass das .NET Framework auf Ihrem Computer installiert ist.
+
+## Namespaces importieren
+
+Zunächst müssen Sie die erforderlichen Namespaces importieren. Diese Namespaces enthalten Klassen und Methoden, die Sie zum Arbeiten mit Word-Dokumenten in Aspose.Words für .NET verwenden.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Lassen Sie uns nun in die Schritt-für-Schritt-Anleitung zum Einfügen eines Kombinationsfeld-Formularfelds eintauchen.
+
+## Schritt 1: Neues Dokument erstellen
+
+Zuerst müssen Sie ein neues Word-Dokument erstellen. Dieses Dokument dient als Leinwand zum Hinzufügen Ihrer Formularfelder.
+
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Einfügen eines Dropdown-Formularfelds
+ In diesem Schritt erstellen wir eine Instanz des`Document` Klasse. Diese Instanz repräsentiert das Word-Dokument. Wir erstellen dann eine Instanz der`DocumentBuilder` Klasse, die Methoden zum Einfügen von Inhalten in das Dokument bereitstellt.
 
- Geben Sie als nächstes die Optionen für das Dropdown-Formularfeld an und fügen Sie es mit dem`InsertComboBox` Methode der`DocumentBuilder` Objekt. In diesem Beispiel fügen wir ein Dropdown-Formularfeld namens „DropDown“ mit drei Optionen ein: „Eins“, „Zwei“ und „Drei“:
+## Schritt 2: Combobox-Elemente definieren
+
+Definieren Sie als Nächstes die Elemente, die Sie in das Kombinationsfeld aufnehmen möchten. Diese Elemente sind die zur Auswahl stehenden Optionen.
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
+```
+
+ Hier erstellen wir ein String-Array namens`items` das die Optionen „Eins“, „Zwei“ und „Drei“ enthält.
+
+## Schritt 3: Einfügen der Combobox
+
+ Fügen Sie nun die Combobox in das Dokument ein, indem Sie`DocumentBuilder` Beispiel.
+
+```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## Schritt 3: Speichern des Dokuments
+ In diesem Schritt verwenden wir die`InsertComboBox` Methode der`DocumentBuilder` Klasse. Der erste Parameter ist der Name des Kombinationsfelds („DropDown“), der zweite Parameter ist das Array von Elementen und der dritte Parameter ist der Index des standardmäßig ausgewählten Elements (in diesem Fall das erste Element).
 
-Speichern Sie abschließend das Dokument:
+## Schritt 4: Speichern Sie das Dokument
+
+Speichern Sie das Dokument abschließend am gewünschten Ort.
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-Das ist es! Sie haben mit Aspose.Words für .NET erfolgreich ein Dropdown-Formularfeld in ein Word-Dokument eingefügt.
+Diese Codezeile speichert das Dokument als „OutputDocument.docx“ im Verzeichnis Ihres Projekts. Sie können einen anderen Pfad angeben, wenn Sie es woanders speichern möchten.
 
-### Beispielquellcode zum Einfügen von Formularfeldern mit Aspose.Words für .NET
+## Abschluss
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+Wenn Sie diese Schritte befolgen, haben Sie mithilfe von Aspose.Words für .NET erfolgreich ein Kombinationsfeld-Formularfeld in ein Word-Dokument eingefügt. Dieser Vorgang kann angepasst werden, um andere Arten von Formularfeldern einzuschließen und Ihre Dokumente interaktiv und benutzerfreundlich zu gestalten.
 
-string[] items = { "One", "Two", "Three" };
-builder.InsertComboBox("DropDown", items, 0);
+Das Einfügen von Formularfeldern kann die Funktionalität Ihrer Word-Dokumente erheblich verbessern und ermöglicht dynamische Inhalte und Benutzerinteraktion. Aspose.Words für .NET macht diesen Prozess unkompliziert und effizient, sodass Sie problemlos professionelle Dokumente erstellen können.
 
-doc.Save("OutputDocument.docx");
-```
+## Häufig gestellte Fragen
 
-Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und ihn entsprechend Ihren spezifischen Anforderungen ändern.
+### Kann ich einem Dokument mehr als ein Kombinationsfeld hinzufügen?
 
-### Häufig gestellte Fragen
+Ja, Sie können Ihrem Dokument mehrere Kombinationsfelder oder andere Formularfelder hinzufügen, indem Sie die Einfügeschritte mit unterschiedlichen Namen und Elementen wiederholen.
 
-#### F: Wie kann ich in Aspose.Words ein Formularfeld vom Typ „Text“ einfügen?
+### Wie kann ich im Kombinationsfeld ein anderes standardmäßig ausgewähltes Element festlegen?
 
- A: Um ein Textformularfeld in Aspose.Words einzufügen, können Sie das`FormField` Klasse und legen Sie deren`Type`Eigentum an`FormFieldType.Text`. Sie können auch andere Eigenschaften wie Name, Bezeichnung und Optionen anpassen.
+Sie können das standardmäßig ausgewählte Element ändern, indem Sie den dritten Parameter im`InsertComboBox` Methode. Wenn Sie es beispielsweise auf`1` wählt standardmäßig das zweite Element aus.
 
-#### F: Ist es möglich, in einem Dokument ein Formularfeld vom Typ „Kontrollkästchen“ zu erstellen?
+### Kann ich das Erscheinungsbild des Kombinationsfelds anpassen?
 
- A: Ja, es ist möglich, ein Formularfeld vom Typ Kontrollkästchen in einem Aspose.Words-Dokument zu erstellen. Sie können das`FormField` Klasse und legen Sie deren`Type`Eigentum an`FormFieldType.CheckBox` , um ein Kontrollkästchen zu erstellen. Anschließend können Sie die Eigenschaften des Kontrollkästchens nach Bedarf anpassen.
+ Das Erscheinungsbild von Formularfeldern kann mithilfe verschiedener Eigenschaften und Methoden in Aspose.Words angepasst werden. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
-#### F: Wie kann ich einem Dokument ein Dropdown-Formularfeld hinzufügen?
+### Ist es möglich, andere Arten von Formularfeldern wie Texteingaben oder Kontrollkästchen einzufügen?
 
- A: Um ein Dropdown-Formularfeld in ein Aspose.Words-Dokument einzufügen, verwenden Sie die`FormField` Klasse und legen Sie deren`Type`Eigentum an`FormFieldType.DropDown` Sie können dann die Dropdown-Optionen mit dem`DropDownItems` Eigentum.
+ Ja, Aspose.Words für .NET unterstützt verschiedene Arten von Formularfeldern, darunter Texteingabefelder, Kontrollkästchen und mehr. Beispiele und ausführliche Anleitungen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/).
 
-#### F: Kann ich in Aspose.Words einen Standardwert für ein Formularfeld festlegen?
+### Wie kann ich Aspose.Words für .NET vor dem Kauf ausprobieren?
 
-A: Ja, Sie können einen Standardwert für ein Formularfeld in Aspose.Words festlegen. Verwenden Sie die`FormField.Result` -Eigenschaft, um den Anfangswert des Formularfelds festzulegen.
-
-#### F: Wie kann ich in Formularfeldern in Aspose.Words eingegebene Daten abrufen?
-
- A: Um Daten abzurufen, die in Formularfeldern in Aspose.Words eingegeben wurden, können Sie das`FormField.Result` Eigenschaft, die den vom Benutzer eingegebenen Wert enthält. Sie können für jedes Formularfeld in Ihrem Dokument auf diese Eigenschaft zugreifen.
+ Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/) und fordern Sie eine temporäre Lizenz an bei[Hier](https://purchase.aspose.com/temporary-license/).

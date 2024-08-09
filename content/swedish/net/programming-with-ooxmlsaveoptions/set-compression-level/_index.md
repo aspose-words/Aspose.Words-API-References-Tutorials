@@ -72,7 +72,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Steg 3: Ställ in komprimeringsnivå
 
-Det är här magin händer. Vi kommer att ställa in komprimeringsnivån för dokumentet.
+Här händer magin. Vi kommer att ställa in komprimeringsnivån för dokumentet.
 
  Skapa en instans av`OoxmlSaveOptions` och ställ in komprimeringsnivån. De`CompressionLevel` egenskap kan ställas in på olika nivåer som t.ex`Normal`, `Maximum`, `Fast` , och`SuperFast` . För det här exemplet kommer vi att använda`SuperFast`.
 

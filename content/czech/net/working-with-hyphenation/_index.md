@@ -12,6 +12,6 @@ Zpracování slov s dělením slov je komplexní zdroj, který vás provede pou�
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Dělit slova jazyků](./hyphenate-words-of-languages/) | Naučte se dělit slova v různých jazycích v dokumentech aplikace Word pomocí Aspose.Words for .NET. |
-| [Načíst slovník dělení slov pro jazyk](./load-hyphenation-dictionary-for-language/) |Naučte se, jak načíst slovník dělení pro konkrétní jazyk v Aspose.Words pro .NET. |
-| [Zpětné volání dělení slov](./hyphenation-callback/) | Naučte se používat zpětné volání dělení slov v Aspose.Words pro .NET ke zpracování dělení slov. |
+| [Dělit slova jazyků](./hyphenate-words-of-languages/) | Naučte se dělit slova v různých jazycích pomocí Aspose.Words pro .NET. Chcete-li zlepšit čitelnost dokumentu, postupujte podle tohoto podrobného průvodce krok za krokem. |
+| [Načíst slovník dělení slov pro jazyk](./load-hyphenation-dictionary-for-language/) | Naučte se, jak načíst slovník dělení slov pro jakýkoli jazyk pomocí Aspose.Words for .NET v tomto komplexním, podrobném tutoriálu. |
+| [Zpětné volání dělení slov](./hyphenation-callback/) | Naučte se implementovat zpětné volání dělení slov v Aspose.Words pro .NET a vylepšit formátování dokumentu pomocí tohoto komplexního podrobného průvodce. |

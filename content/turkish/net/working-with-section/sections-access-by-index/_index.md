@@ -101,7 +101,7 @@ doc.Save(dataDir + "ModifiedDocument.docx");
 
 ## Çözüm
 
-İşte buyur! 🎉 Aspose.Words for .NET'i kullanarak bir Word belgesindeki bölümlere başarıyla erişip yönettiniz. İster içeriği temizleyin, ister yeni metin ekleyin, ister başka bölüm düzenlemeleri yapın, Aspose.Words süreci sorunsuz ve verimli hale getirir. Bir belge işleme sihirbazı olmak için farklı özellikleri denemeye devam edin. Mutlu kodlama!
+Ve işte karşınızda! 🎉 Aspose.Words for .NET'i kullanarak bir Word belgesindeki bölümlere başarıyla erişip yönettiniz. İster içeriği temizleyin, ister yeni metin ekleyin, ister başka bölüm düzenlemeleri yapın, Aspose.Words süreci sorunsuz ve verimli hale getirir. Bir belge işleme sihirbazı olmak için farklı özellikleri denemeye devam edin. Mutlu kodlama!
 
 ## SSS
 
@@ -118,7 +118,7 @@ foreach (Section section in doc.Sections)
 
 ### Bir bölümün üstbilgilerini ve altbilgilerini ayrı ayrı temizleyebilir miyim?
 
- Evet, üstbilgileri ve altbilgileri şunu kullanarak temizleyebilirsiniz:`ClearHeadersFooters()` yöntem.
+ Evet, üstbilgileri ve altbilgileri şunu kullanarak temizleyebilirsiniz:`ClearHeadersFooters()` Yöntem.
 
 ```csharp
 section.ClearHeadersFooters();

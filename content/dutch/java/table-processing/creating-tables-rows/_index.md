@@ -11,7 +11,7 @@ url: /nl/java/table-processing/creating-tables-rows/
 ## Invoering
 Het maken van tabellen en rijen in documenten is een fundamenteel aspect van documentverwerking, en Aspose.Words voor Java maakt deze taak eenvoudiger dan ooit. In deze stapsgewijze handleiding onderzoeken we hoe u Aspose.Words voor Java kunt gebruiken om tabellen en rijen in uw documenten te maken. Of u nu rapporten samenstelt, facturen genereert of een ander document maakt waarvoor een gestructureerde gegevenspresentatie vereist is, deze handleiding heeft de oplossing voor u.
 
-## Het podium opzetten
+## Het podium instellen
  Voordat we ingaan op de details, moeten we ervoor zorgen dat u over de benodigde instellingen beschikt om met Aspose.Words voor Java te werken. Zorg ervoor dat u de bibliotheek heeft gedownload en geïnstalleerd. Als je dat nog niet hebt gedaan, kun je de downloadlink vinden[hier](https://releases.aspose.com/words/java/).
 
 ## Tafels bouwen
@@ -118,4 +118,4 @@ Ja, u kunt gegevens uit een database importeren en een tabel in uw document invu
  Met Aspose.Words voor Java kunt u uw document in verschillende formaten opslaan, waaronder DOCX, PDF, HTML en meer. Gebruik de`Document.save` methode om het gewenste formaat op te geven.
 
 ## Conclusie
-Het maken van tabellen en rijen in documenten met Aspose.Words voor Java is een krachtige mogelijkheid voor documentautomatisering. Met de broncode en begeleiding in deze uitgebreide handleiding bent u goed uitgerust om het potentieel van Aspose.Words voor Java in uw Java-toepassingen te benutten. Of u nu rapporten, documenten of presentaties maakt, de gestructureerde gegevenspresentatie is slechts een codefragment verwijderd.
+Het maken van tabellen en rijen in documenten met Aspose.Words voor Java is een krachtige mogelijkheid voor documentautomatisering. Met de meegeleverde broncode en begeleiding in deze uitgebreide handleiding bent u goed uitgerust om het potentieel van Aspose.Words voor Java in uw Java-toepassingen te benutten. Of u nu rapporten, documenten of presentaties maakt, de gestructureerde gegevenspresentatie is slechts een codefragment verwijderd.

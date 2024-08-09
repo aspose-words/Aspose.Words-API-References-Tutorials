@@ -85,7 +85,7 @@ Dit codefragment slaat het gewijzigde document op in dezelfde map met een nieuwe
 
 ## Conclusie
 
-Het toevoegen van een tekstwatermerk aan uw Word-documenten met Aspose.Words voor .NET is een eenvoudig proces als u het opsplitst in beheersbare stappen. Door deze zelfstudie te volgen, heeft u geleerd hoe u verschillende watermerkopties kunt configureren, waaronder lettertype, grootte, kleur, lay-out en transparantie. Met deze vaardigheden kunt u uw documenten nu aanpassen om beter aan uw behoeften te voldoen of om essentiële informatie zoals vertrouwelijkheid of branding op te nemen.
+Het toevoegen van een tekstwatermerk aan uw Word-documenten met Aspose.Words voor .NET is een eenvoudig proces als u het opsplitst in beheersbare stappen. Door deze zelfstudie te volgen, heeft u geleerd hoe u verschillende watermerkopties kunt configureren, waaronder lettertype, grootte, kleur, lay-out en transparantie. Met deze vaardigheden kunt u uw documenten nu aanpassen zodat ze beter aan uw behoeften voldoen of essentiële informatie bevatten, zoals vertrouwelijkheid of branding.
 
  Als u vragen heeft of meer hulp nodig heeft, neem dan gerust een kijkje op de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of bezoek de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor meer hulp.
 

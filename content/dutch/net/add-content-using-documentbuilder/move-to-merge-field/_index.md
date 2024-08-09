@@ -9,14 +9,14 @@ url: /nl/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit verdiept in een Word-document, terwijl u probeerde uit te vinden hoe u naar een specifiek samenvoegveld moest navigeren? Het is alsof je in een doolhof zit zonder kaart, toch? Nou, maak je geen zorgen meer! Met Aspose.Words voor .NET kunt u naadloos naar een samenvoegveld in uw document gaan. Of u nu rapporten genereert, gepersonaliseerde brieven maakt of gewoon uw Word-documenten automatiseert: deze gids begeleidt u stap voor stap door het hele proces. Laten we erin duiken!
+Hé daar! Heeft u zich ooit verdiept in een Word-document, terwijl u probeerde uit te vinden hoe u naar een specifiek samenvoegveld moest navigeren? Het is alsof je in een doolhof zit zonder kaart, toch? Nou, maak je geen zorgen meer! Met Aspose.Words voor .NET kunt u naadloos naar een samenvoegveld in uw document gaan. Of u nu rapporten genereert, gepersonaliseerde brieven maakt of gewoon uw Word-documenten automatiseert: deze gids begeleidt u stap voor stap door het hele proces. Laten we erin duiken!
 
 ## Vereisten
 
 Voordat we in de kern duiken, laten we onze eenden op een rij zetten. Dit is wat u nodig heeft om aan de slag te gaan:
 
 -  Visual Studio: Zorg ervoor dat Visual Studio op uw computer is geïnstalleerd. Zo niet, dan kunt u deze downloaden[hier](https://visualstudio.microsoft.com/).
--  Aspose.Words voor .NET: u hebt de Aspose.Words-bibliotheek nodig. Je kunt het downloaden van[deze link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET: u hebt de Aspose.Words-bibliotheek nodig. Je kunt het downloaden van[deze koppeling](https://releases.aspose.com/words/net/).
 - .NET Framework: Zorg ervoor dat .NET Framework is geïnstalleerd.
 
 ## Naamruimten importeren
@@ -115,7 +115,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
  Ja, Aspose.Words voor .NET is compatibel met .NET Core. Meer details vindt u in de[documentatie](https://reference.aspose.com/words/net/).
 
 ### Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
- Een tijdelijke licentie kunt u verkrijgen bij[deze link](https://purchase.aspose.com/temporary-license/).
+ Een tijdelijke licentie kunt u verkrijgen bij[deze koppeling](https://purchase.aspose.com/temporary-license/).
 
 ### Waar kan ik meer voorbeelden en ondersteuning vinden voor Aspose.Words voor .NET?
  Ga voor meer voorbeelden en ondersteuning naar de[Aspose.Words voor .NET-forum](https://forum.aspose.com/c/words/8).

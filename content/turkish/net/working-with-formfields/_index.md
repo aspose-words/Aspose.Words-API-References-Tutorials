@@ -12,7 +12,7 @@ Form Alanlarıyla Kelime İşleme, Aspose.Words for .NET kütüphanesini kullana
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Form Alanları Ekle](./insert-form-fields/) | Aspose.Words for .NET kullanarak açılır form alanlarını Word belgelerine nasıl ekleyeceğinizi öğrenin. |
-| [Form Alanları Özelliklerle Çalışır](./form-fields-work-with-properties/) | Aspose.Words for .NET kullanarak Word belgelerinde form alanı özellikleriyle nasıl çalışılacağını öğrenin. |
-| [Form Alanları Form Alanları Koleksiyonunu Al](./form-fields-get-form-fields-collection/) | Aspose.Words for .NET'i kullanarak Word belgelerindeki form alanları koleksiyonunu nasıl alacağınızı ve değiştireceğinizi öğrenin. |
-| [Form Alanları Ada Göre Al](./form-fields-get-by-name/) | Aspose.Words for .NET kullanarak Word belgelerinde form alanlarını ada göre nasıl alacağınızı ve değiştireceğinizi öğrenin. |
+| [Form Alanları Ekle](./insert-form-fields/) | Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesine nasıl birleşik giriş kutusu form alanı ekleyeceğinizi öğrenin. |
+| [Form Alanları Özelliklerle Çalışır](./form-fields-work-with-properties/) | Ayrıntılı adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerindeki form alanlarını nasıl değiştireceğinizi öğrenin. |
+| [Form Alanları Form Alanları Koleksiyonunu Al](./form-fields-get-form-fields-collection/) | Kapsamlı adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerindeki form alanlarını nasıl alacağınızı ve değiştireceğinizi öğrenin. |
+| [Form Alanları Ada Göre Al](./form-fields-get-by-name/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki form alanlarını ada göre nasıl alacağınızı ve değiştireceğinizi öğrenin. |

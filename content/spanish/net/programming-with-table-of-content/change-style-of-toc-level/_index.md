@@ -9,7 +9,7 @@ url: /es/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## Introducción
 
-Si alguna vez ha necesitado crear un documento de Word profesional, sabe lo crucial que puede ser una tabla de contenido (TOC). No sólo organiza su contenido sino que también agrega un toque de profesionalismo. Sin embargo, personalizar el TOC para que coincida con su estilo puede resultar un poco complicado. En este tutorial, veremos cómo cambiar el estilo TOC en un documento de Word usando Aspose.Words para .NET. ¿Listo para sumergirte? ¡Empecemos!
+Si alguna vez ha necesitado crear un documento de Word profesional, sabe lo crucial que puede ser una tabla de contenido (TOC). No sólo organiza su contenido sino que también agrega un toque de profesionalismo. Sin embargo, personalizar el TOC para que coincida con su estilo puede ser un poco complicado. En este tutorial, veremos cómo cambiar el estilo TOC en un documento de Word usando Aspose.Words para .NET. ¿Listo para sumergirte? ¡Empecemos!
 
 ## Requisitos previos
 
@@ -74,7 +74,7 @@ Aspose.Words para .NET es una biblioteca de clases para crear, modificar y conve
 Sí, puede modificar varios estilos dentro del TOC accediendo a diferentes niveles y propiedades de estilo.
 
 ### ¿Aspose.Words para .NET es gratuito?
- Aspose.Words para .NET es una biblioteca paga, pero puede obtener una[prueba gratis](https://releases.aspose.com/) o un[licencia temporal](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words para .NET es una biblioteca paga, pero puede obtener una[prueba gratuita](https://releases.aspose.com/) o un[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
 ### ¿Necesito instalar Microsoft Word para usar Aspose.Words para .NET?
 No, Aspose.Words para .NET no requiere que Microsoft Word esté instalado en su máquina.

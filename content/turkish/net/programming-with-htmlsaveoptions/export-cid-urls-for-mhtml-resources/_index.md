@@ -96,7 +96,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak MHTML kaynaklarının Cid URL'leri
 MHTML kaynakları için Cid URL'lerini dışa aktarmak, MHTML dosyanızdaki gömülü kaynaklara doğru şekilde referans verilmesini sağlayarak belge taşınabilirliğini ve bütünlüğünü artırır.
 
 ### Çıktı formatını daha da özelleştirebilir miyim?
- Evet, Aspose.Words for .NET, belgeleri kaydetmek için kapsamlı özelleştirme seçenekleri sunar. Bakın[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Evet, Aspose.Words for .NET, belgeleri kaydetmek için kapsamlı özelleştirme seçenekleri sunar. Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
  Evet, Aspose.Words for .NET'i kullanmak için lisansa ihtiyacınız var. Ücretsiz deneme sürümü alabilirsiniz[Burada](https://releases.aspose.com/) veya bir lisans satın alın[Burada](https://purchase.aspose.com/buy).
@@ -104,5 +104,5 @@ MHTML kaynakları için Cid URL'lerini dışa aktarmak, MHTML dosyanızdaki göm
 ### Bu işlemi birden fazla belge için otomatikleştirebilir miyim?
 Kesinlikle! Toplu işlemleri verimli bir şekilde gerçekleştirmek için Aspose.Words for .NET'in gücünden yararlanarak birden fazla belgenin sürecini otomatikleştirmek amacıyla bir komut dosyası oluşturabilirsiniz.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
 Desteğe ihtiyacınız varsa Aspose destek forumunu ziyaret edin[Burada](https://forum.aspose.com/c/words/8) topluluktan ve Aspose geliştiricilerinden yardım için.

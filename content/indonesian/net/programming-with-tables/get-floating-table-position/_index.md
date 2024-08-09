@@ -100,7 +100,7 @@ Ingat, bekerja dengan Aspose.Words untuk .NET membuka banyak kemungkinan untuk m
 Tabel mengambang adalah tabel yang tidak terpaku pada teks namun dapat berpindah-pindah, biasanya dengan teks yang membungkusnya.
 
 ### Bagaimana cara mengetahui apakah suatu tabel mengambang menggunakan Aspose.Words untuk .NET?
- Anda dapat memeriksa apakah suatu tabel mengambang dengan memeriksanya`TextWrapping` Properti. Jika disetel ke`TextWrapping.Around`, mejanya mengambang.
+ Anda dapat memeriksa apakah suatu tabel mengambang dengan memeriksanya`TextWrapping` milik. Jika disetel ke`TextWrapping.Around`, mejanya mengambang.
 
 ### Bisakah saya mengubah properti posisi tabel mengambang?
 Ya, menggunakan Aspose.Words untuk .NET, Anda dapat mengubah properti pemosisian tabel mengambang untuk menyesuaikan tata letaknya.

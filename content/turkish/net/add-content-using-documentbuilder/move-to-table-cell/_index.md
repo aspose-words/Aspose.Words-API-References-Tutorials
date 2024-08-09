@@ -77,14 +77,14 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesinde belirli bir tablo hücresine nasıl taşınacağınızı az önce öğrendiniz. Bu güçlü kitaplık, belge işlemeyi basitleştirerek kodlama görevlerinizi daha verimli ve keyifli hale getirir. İster karmaşık raporlar üzerinde ister basit belge değişiklikleri üzerinde çalışıyor olun, Aspose.Words ihtiyacınız olan araçları sağlar.
+Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesinde belirli bir tablo hücresine nasıl geçeceğinizi öğrendiniz. Bu güçlü kitaplık, belge işlemeyi basitleştirerek kodlama görevlerinizi daha verimli ve keyifli hale getirir. İster karmaşık raporlar üzerinde ister basit belge değişiklikleri üzerinde çalışıyor olun, Aspose.Words ihtiyacınız olan araçları sağlar.
 
 ## SSS'ler
 
 ### Çok tablolu bir belgede herhangi bir hücreye geçebilir miyim?
- Evet, doğru tablo dizinini belirterek`MoveToCell` yöntemiyle, belgedeki herhangi bir tablodaki herhangi bir hücreye gidebilirsiniz.
+ Evet, doğru tablo dizinini belirterek`MoveToCell` yöntemiyle belgedeki herhangi bir tablodaki herhangi bir hücreye gidebilirsiniz.
 
-### Birden çok satır veya sütuna yayılan hücreleri nasıl yönetirim?
+### Birden çok satıra veya sütuna yayılan hücreleri nasıl yönetirim?
  Şunu kullanabilirsiniz:`RowSpan`Ve`ColSpan` özellikleri`Cell` birleştirilmiş hücreleri yönetmek için sınıf.
 
 ### Hücre içindeki metni biçimlendirmek mümkün mü?
@@ -94,5 +94,5 @@ Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesinde belirli bir ta
  Evet,`DocumentBuilder` hücre içindeki geçerli konuma resimler, tablolar ve diğer öğeleri eklemenizi sağlar.
 
 ### Değiştirilen belgeyi nasıl kaydederim?
- Kullan`Save` yöntemi`Document` Değişikliklerinizi kaydetmek için sınıf. Örneğin:`doc.Save(dataDir + "UpdatedTables.docx");`
+ Kullanın`Save` yöntemi`Document` Değişikliklerinizi kaydetmek için sınıf. Örneğin:`doc.Save(dataDir + "UpdatedTables.docx");`
 

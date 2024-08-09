@@ -82,7 +82,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã dọn dẹp thành công tài liệu Word của mình bằng cách xóa các kiểu và danh sách không sử dụng bằng Aspose.Words for .NET. Nó giống như việc sắp xếp lại bàn làm việc kỹ thuật số của bạn, giúp tài liệu của bạn dễ quản lý và hiệu quả hơn. Hãy tự khen mình để hoàn thành tốt công việc!
+Và bạn có nó! Bạn đã dọn dẹp thành công tài liệu Word của mình bằng cách xóa các kiểu và danh sách không sử dụng bằng Aspose.Words for .NET. Nó giống như việc sắp xếp lại bàn làm việc kỹ thuật số của bạn, giúp tài liệu của bạn dễ quản lý và hiệu quả hơn. Hãy tự khen mình để hoàn thành tốt công việc!
 
 ## Câu hỏi thường gặp
 
@@ -90,7 +90,7 @@ Và bạn có nó rồi đấy! Bạn đã dọn dẹp thành công tài liệu 
 Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình bằng C#.
 
 ### Tôi có thể xóa đồng thời cả kiểu và danh sách không sử dụng không?
-Có, bạn có thể đặt cả hai`UnusedLists`Và`UnusedStyles` ĐẾN`true` bên trong`CleanupOptions` để loại bỏ cả hai.
+Có, bạn có thể đặt cả hai`UnusedLists`Và`UnusedStyles` ĐẾN`true` trong`CleanupOptions` để loại bỏ cả hai.
 
 ### Có thể hoàn tác việc dọn dẹp?
 Không, sau khi dọn dẹp xong và tài liệu được lưu, bạn không thể hoàn tác các thay đổi. Luôn giữ một bản sao lưu của tài liệu gốc của bạn.

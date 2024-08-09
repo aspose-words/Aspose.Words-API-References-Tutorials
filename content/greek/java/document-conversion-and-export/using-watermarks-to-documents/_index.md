@@ -58,7 +58,7 @@ byte[] imageBytes = Files.readAllBytes(Paths.get("watermark.png"));
 Shape watermark = new Shape(doc, ShapeType.IMAGE);
 watermark.getImageData().setImage(imageBytes);
 
-// Ορίστε το μέγεθος και τη θέση του υδατογραφήματος
+// Ρυθμίστε το μέγεθος και τη θέση του υδατογραφήματος
 watermark.setWidth(200.0);
 watermark.setHeight(100.0);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.CENTER);
@@ -97,7 +97,7 @@ doc.save("DocumentWithoutWatermark.docx");
 ```
 
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το σεμινάριο, μάθαμε πώς να προσθέτουμε υδατογραφήματα σε έγγραφα χρησιμοποιώντας το Aspose.Words για Java. Είτε θέλετε να προσθέσετε υδατογραφήματα κειμένου είτε εικόνας, το Aspose.Words παρέχει τα εργαλεία για την αποτελεσματική προσαρμογή και διαχείριση τους. Μπορείτε επίσης να αφαιρέσετε υδατογραφήματα όταν δεν χρειάζονται πλέον, διασφαλίζοντας ότι τα έγγραφά σας είναι καθαρά και επαγγελματικά.
 

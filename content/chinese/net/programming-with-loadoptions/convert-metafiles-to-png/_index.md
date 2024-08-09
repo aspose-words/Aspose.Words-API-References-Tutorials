@@ -82,7 +82,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ## 常见问题解答
 
 ### 除了图元文件之外，我可以将其他文件类型转换为 PNG 吗？
- Aspose.Words for .NET 为各种文件格式提供广泛的支持。检查[文档](https://reference.aspose.com/words/net/)更多细节。
+ Aspose.Words for .NET 为各种文件格式提供广泛的支持。检查[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 有没有办法批量处理多个文档？
 是的，您可以循环遍历文档目录并将相同的加载选项应用于每个文件。

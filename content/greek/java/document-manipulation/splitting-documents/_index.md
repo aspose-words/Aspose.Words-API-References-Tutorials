@@ -88,7 +88,7 @@ Document extractedPages = doc.extractPages(3, 6);
 extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτόν τον οδηγό, έχουμε εξερευνήσει διάφορες τεχνικές για τον διαχωρισμό εγγράφων στο Aspose.Words για Java. Είτε θέλετε να χωρίσετε ανά επικεφαλίδες, ενότητες, σελίδες ή συγκεκριμένες περιοχές σελίδων, το Aspose.Words για Java παρέχει την ευελιξία και τη δύναμη για να ολοκληρώσετε αυτές τις εργασίες αποτελεσματικά. Ακολουθώντας τα παρεχόμενα αποσπάσματα κώδικα Java και παραδείγματα, μπορείτε να αρχίσετε να διαχειρίζεστε τα έγγραφά σας πιο αποτελεσματικά σήμερα.
 
@@ -96,7 +96,7 @@ extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 
 ### Πώς μπορώ να ξεκινήσω με το Aspose.Words για Java;
 
- Το να ξεκινήσετε με το Aspose.Words για Java είναι εύκολο. Μπορείτε να κάνετε λήψη της βιβλιοθήκης από τον ιστότοπο του Aspose και να ακολουθήσετε την τεκμηρίωση για οδηγίες εγκατάστασης και χρήσης. Επίσκεψη[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/) Για περισσότερες πληροφορίες.
+ Το να ξεκινήσετε με το Aspose.Words για Java είναι εύκολο. Μπορείτε να κάνετε λήψη της βιβλιοθήκης από τον ιστότοπο του Aspose και να ακολουθήσετε την τεκμηρίωση για οδηγίες εγκατάστασης και χρήσης. Επίσκεψη[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/) για περισσότερες λεπτομέρειες.
 
 ### Ποια είναι τα βασικά χαρακτηριστικά του Aspose.Words για Java;
 

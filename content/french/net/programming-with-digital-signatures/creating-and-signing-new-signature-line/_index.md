@@ -14,7 +14,7 @@ Salut! Donc, vous avez un document Word et vous devez ajouter une ligne de signa
 ## Conditions préalables
 
 Avant de passer au code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
-1.  Aspose.Words pour .NET - Vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET - Vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Un environnement de développement .NET - Visual Studio est fortement recommandé.
 3. Un document à signer - Créez un simple document Word ou utilisez-en un existant.
 4.  Un fichier de certificat – Ceci est nécessaire pour les signatures numériques. Vous pouvez utiliser un`.pfx` déposer.
@@ -97,7 +97,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Conclusion
 
-Et voila! Grâce à ces étapes, vous avez réussi à créer un nouveau document Word, à ajouter une ligne de signature et à le signer numériquement à l'aide d'Aspose.Words pour .NET. C'est un outil puissant qui facilite l'automatisation des documents. Qu'il s'agisse de contrats, d'accords ou de tout autre document formel, cette méthode garantit qu'ils sont signés et authentifiés en toute sécurité.
+Et voilà ! Grâce à ces étapes, vous avez réussi à créer un nouveau document Word, à ajouter une ligne de signature et à le signer numériquement à l'aide d'Aspose.Words pour .NET. C'est un outil puissant qui facilite l'automatisation des documents. Qu'il s'agisse de contrats, d'accords ou de tout autre document formel, cette méthode garantit qu'ils sont signés et authentifiés en toute sécurité.
 
 ## FAQ
 
@@ -105,7 +105,7 @@ Et voila! Grâce à ces étapes, vous avez réussi à créer un nouveau document
 Oui, vous pouvez utiliser différents formats d'image comme PNG, JPG, BMP, etc.
 
 ###  Est-il nécessaire d'utiliser un`.pfx` file for the certificate?
- Oui un`.pfx` Le fichier est un format courant pour stocker des informations cryptographiques, notamment des certificats et des clés privées.
+ Oui, un`.pfx` Le fichier est un format courant pour stocker des informations cryptographiques, notamment des certificats et des clés privées.
 
 ### Puis-je ajouter plusieurs lignes de signature dans un seul document ?
 Absolument! Vous pouvez insérer plusieurs lignes de signature en répétant l'étape d'insertion pour chaque signature.

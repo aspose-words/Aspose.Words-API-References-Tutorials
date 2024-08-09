@@ -164,4 +164,4 @@ Ja, Sie können den Rückrufhandler so ändern, dass er mehrere Einfügungen ver
 Sie erhalten Unterstützung unter[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich die Formatierung des eingefügten Dokuments beibehalten?
- Ja das`NodeImporter` Mit der Klasse können Sie angeben, wie die Formatierung beim Importieren von Knoten von einem Dokument in ein anderes gehandhabt wird.
+ Ja, die`NodeImporter` Mit der Klasse können Sie angeben, wie die Formatierung beim Importieren von Knoten von einem Dokument in ein anderes gehandhabt wird.

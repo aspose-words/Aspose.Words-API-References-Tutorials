@@ -106,7 +106,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 Bạn có thể kiểm soát thứ tự hiển thị hình dạng bằng thứ tự Z:
 
 ```java
-shape1.setZOrder(1); // Mang ra phía trước
+shape1.setZOrder(1); // Đưa ra phía trước
 shape2.setZOrder(0); // Gửi lại
 ```
 
@@ -127,7 +127,7 @@ Aspose.Words for Java rất linh hoạt và có thể được sử dụng trong
 - Thiết kế các giấy chứng nhận và giải thưởng.
 - Thêm chú thích và chú thích vào tài liệu.
 
-## Những mẹo xử lí sự cố
+## Mẹo khắc phục sự cố
 
 Nếu bạn gặp sự cố khi làm việc với hình dạng và đồ họa, hãy tham khảo tài liệu Aspose.Words for Java hoặc diễn đàn cộng đồng để biết giải pháp. Các vấn đề thường gặp bao gồm khả năng tương thích định dạng hình ảnh và các vấn đề liên quan đến phông chữ.
 

@@ -56,7 +56,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.InsertImage(dataDir + "Transparent background logo.png");
 ```
 
- Byta ut`dataDir + "Transparent background logo.png"` med sökvägen till din bildfil.
+ Ersätta`dataDir + "Transparent background logo.png"` med sökvägen till din bildfil.
 
 ## Steg 4: Lås bildförhållandet
 

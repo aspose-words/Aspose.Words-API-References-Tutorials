@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir PDF belgesindeki son yazdırılan özelliği kolayca güncelleyebilirsiniz. Bu yöntem, belge yönetimi sürecinizin verimli ve güncel kalmasını sağlar. Bir deneyin ve iş akışınızı nasıl kolaylaştırdığını görün.
+Ve işte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir PDF belgesindeki son yazdırılan özelliği kolayca güncelleyebilirsiniz. Bu yöntem, belge yönetimi sürecinizin verimli ve güncel kalmasını sağlar. Bir deneyin ve iş akışınızı nasıl kolaylaştırdığını görün.
 
 ## SSS'ler
 

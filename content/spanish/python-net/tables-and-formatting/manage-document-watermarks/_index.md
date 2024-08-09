@@ -92,7 +92,7 @@ image_watermark.relative_vertical_position = aw.drawing.RelativeVerticalPosition
 
 ## Aplicar marcas de agua a secciones de documentos específicas
 
-Si desea aplicar marcas de agua a secciones específicas del documento, puede utilizar el siguiente enfoque:
+Si desea aplicar marcas de agua a secciones específicas del documento, puede utilizar el siguiente método:
 
 ```python
 # Apply watermark to a specific section

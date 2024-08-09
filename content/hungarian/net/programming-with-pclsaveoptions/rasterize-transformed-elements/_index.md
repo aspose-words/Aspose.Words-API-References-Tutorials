@@ -2,7 +2,7 @@
 title: Raszterizálja az átalakított elemeket
 linktitle: Raszterizálja az átalakított elemeket
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan raszterizálható az átalakított elemek Word-dokumentumok PCL formátumba konvertálásakor az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve.
+description: Ismerje meg, hogyan lehet raszterizálni átalakított elemeket Word-dokumentumok PCL-formátumba konvertálásakor az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. lépés: Konfigurálja a mentési beállításokat
 
- A dokumentum PCL formátumba konvertálásához konfigurálnia kell a mentési beállításokat. Ez magában foglalja a`SaveFormat` nak nek`Pcl` és annak megadása, hogy kell-e raszterizálni a transzformált elemeket.
+ A dokumentum PCL formátumba konvertálásához konfigurálnia kell a mentési beállításokat. Ez magában foglalja a`SaveFormat` hogy`Pcl` és annak megadása, hogy kell-e raszterizálni a transzformált elemeket.
 
 ```csharp
 //Konfigurálja a biztonsági mentési beállításokat a PCL formátumra való átalakításhoz
@@ -87,13 +87,13 @@ Az átalakított elemeket tartalmazó Word-dokumentumok PCL-formátumba konvert�
 Igen, az Aspose.Words for .NET különféle típusú alkalmazásokban használható, beleértve a webalkalmazásokat is. Biztosítsa a megfelelő licencelést és konfigurációt.
 
 ### Milyen más formátumokba konvertálható az Aspose.Words for .NET?  
-Az Aspose.Words a formátumok széles skáláját támogatja, beleértve a PDF, HTML, EPUB és egyebeket. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
+Az Aspose.Words a formátumok széles skáláját támogatja, beleértve a PDF, HTML, EPUB és egyebeket. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
 
 ### Lehetséges-e csak bizonyos elemek raszterizálása a dokumentumban?  
  Jelenleg a`RasterizeTransformedElements` opció a dokumentum összes átalakított elemére vonatkozik. A részletesebb szabályozás érdekében fontolja meg az elemek külön feldolgozását az átalakítás előtt.
 
 ### Hogyan háríthatom el a dokumentumok konvertálásával kapcsolatos problémákat?  
- Győződjön meg arról, hogy az Aspose.Words legújabb verziójával rendelkezik, és ellenőrizze a dokumentációt az esetleges konverziós problémákra vonatkozóan. Ezenkívül a[támogatói fórum](https://forum.aspose.com/c/words/8) remek hely a segítség kérésére.
+ Győződjön meg arról, hogy az Aspose.Words legújabb verziójával rendelkezik, és ellenőrizze a dokumentációt az esetleges konverziós problémákra vonatkozóan. Ezenkívül a[támogatási fórum](https://forum.aspose.com/c/words/8) remek hely a segítség kérésére.
 
 ### Vannak korlátozások az Aspose.Words for .NET próbaverziójára vonatkozóan?  
  A próbaverziónak van néhány korlátozása, például az értékelési vízjel. A teljesen működőképes élmény érdekében fontolja meg a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).

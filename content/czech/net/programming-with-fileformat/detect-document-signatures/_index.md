@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-fileformat/detect-document-signatures/
 ---
-## Úvod
+## Zavedení
 
 Zajištění integrity a autenticity dokumentů aplikace Word je zásadní, zvláště v dnešní digitální době. Jedním ze způsobů, jak toho dosáhnout, je použití digitálních podpisů. V tomto tutoriálu se ponoříme do toho, jak můžete detekovat digitální podpisy v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše od základů až po průvodce krok za krokem a zajistíme, že na konci budete mít komplexní porozumění.
 
@@ -35,7 +35,7 @@ Než budeme moci začít detekovat digitální podpisy, musíme nastavit náš p
 
 ### 1.1 Vytvořte nový projekt
 
- Otevřete Visual Studio a vytvořte nový projekt Console App (.NET Core). Pojmenuj to`DigitalSignatureDetector`.
+ Otevřete Visual Studio a vytvořte nový projekt Console App (.NET Core). Pojmenujte to`DigitalSignatureDetector`.
 
 ### 1.2 Nainstalujte Aspose.Words pro .NET
 

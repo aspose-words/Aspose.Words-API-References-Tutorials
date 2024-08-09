@@ -12,7 +12,7 @@ url: /id/java/document-styling/customizing-document-themes/
 
 Menyesuaikan tema dokumen adalah aspek penting dalam pemrosesan dokumen dalam aplikasi Java. Dengan Aspose.Words untuk Java, Anda dapat dengan mudah mencapainya. Dalam panduan komprehensif ini, kami akan memandu Anda melalui proses penyesuaian tema dokumen langkah demi langkah, memberi Anda contoh kode sumber dan wawasan berharga sepanjang prosesnya. Baik Anda seorang pemula atau pengembang berpengalaman, panduan ini akan membantu Anda menguasai seni menyesuaikan tema dokumen menggunakan Aspose.Words untuk Java.
 
-## Mulai
+## Memulai
 
 ### Menyiapkan Lingkungan Pengembangan Anda
 

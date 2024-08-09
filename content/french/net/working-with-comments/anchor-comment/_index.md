@@ -117,7 +117,7 @@ Cette étape enregistre le document avec le commentaire ancré dans votre réper
 
 ## Conclusion
 
-Et voila! Vous avez appris avec succès comment ajouter des commentaires d'ancrage à des sections de texte spécifiques dans un document Word à l'aide d'Aspose.Words pour .NET. Cette technique est incroyablement utile pour la collaboration documentaire, vous permettant de mettre en évidence et de commenter facilement des parties spécifiques du texte. Que vous travailliez sur un projet avec votre équipe ou révisiez des documents, cette méthode améliorera votre productivité et rationalisera votre flux de travail.
+Et voilà ! Vous avez appris avec succès comment ajouter des commentaires d'ancrage à des sections de texte spécifiques dans un document Word à l'aide d'Aspose.Words pour .NET. Cette technique est incroyablement utile pour la collaboration documentaire, vous permettant de mettre en évidence et de commenter facilement des parties spécifiques du texte. Que vous travailliez sur un projet avec votre équipe ou révisiez des documents, cette méthode améliorera votre productivité et rationalisera votre flux de travail.
 
 ## FAQ
 

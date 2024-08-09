@@ -60,7 +60,7 @@ Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 
 ## Krok 3: Uzyskaj dostęp do obiektu wykresu
 
- Po wstawieniu wykresu musimy uzyskać dostęp do`Chart` obiekt, aby dostosować nasz wykres warstwowy.
+ Po wstawieniu wykresu musimy uzyskać dostęp do pliku`Chart` obiekt, aby dostosować nasz wykres warstwowy.
 
 ```csharp
 Chart chart = shape.Chart;

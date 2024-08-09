@@ -147,7 +147,7 @@ Ten kod ładuje dokument i drukuje dostawcę, wersję i identyfikator katalogu k
 
 ## Wniosek
 
-I to wszystko! Pomyślnie dodałeś i skonfigurowałeś okienko zadań rozszerzenia sieciowego w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może znacznie ulepszyć dokumenty programu Word, udostępniając dodatkowe funkcje bezpośrednio w dokumencie. 
+I tyle! Pomyślnie dodałeś i skonfigurowałeś okienko zadań rozszerzenia sieciowego w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może znacznie ulepszyć dokumenty programu Word, udostępniając dodatkowe funkcje bezpośrednio w dokumencie. 
 
 ## Często zadawane pytania
 

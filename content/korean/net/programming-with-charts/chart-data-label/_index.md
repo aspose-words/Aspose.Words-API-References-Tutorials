@@ -19,7 +19,7 @@ url: /ko/net/programming-with-charts/chart-data-label/
 2. .NET Framework: .NET Framework 4.0 이상이 있는지 확인하세요.
 3.  .NET용 Aspose.Words: 다음에서 .NET용 Aspose.Words를 다운로드하고 설치하세요.[다운로드 링크](https://releases.aspose.com/words/net/).
 4. C#에 대한 기본 지식: C# 프로그래밍에 대한 지식이 필수적입니다.
-5.  유효한 라이센스: 취득[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는 다음 중 하나를 구매하세요.[구매 링크](https://purchase.aspose.com/buy).
+5.  유효한 라이센스: 취득[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는 다음 중 하나를 구매하세요.[구매링크](https://purchase.aspose.com/buy).
 
 ## 네임스페이스 가져오기
 
@@ -126,7 +126,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
  에서 다운로드하여 설치할 수 있습니다.[다운로드 링크](https://releases.aspose.com/words/net/). 제공된 설치 지침을 따르십시오.
 
 ### .NET용 Aspose.Words를 무료로 사용해 볼 수 있나요?
- 예, 다음을 얻을 수 있습니다.[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/)제품을 평가합니다.
+ 예, 다음을 얻을 수 있습니다.[무료 평가판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/)제품을 평가합니다.
 
 ### .NET용 Aspose.Words는 .NET Core와 호환됩니까?
 예, .NET용 Aspose.Words는 .NET Core, .NET Standard 및 .NET Framework와 호환됩니다.

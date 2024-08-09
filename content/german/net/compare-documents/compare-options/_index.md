@@ -58,7 +58,7 @@ Document docB = docA.Clone();
 In diesem Snippet:
 - Wir geben das Verzeichnis an, in dem unsere Dokumente gespeichert sind.
 - Wir laden das erste Dokument (`docA`).
--  Wir klonen`docA` erschaffen`docB`Auf diese Weise haben wir zwei identische Dokumente, mit denen wir arbeiten können.
+-  Wir klonen`docA` erstellen`docB`Auf diese Weise haben wir zwei identische Dokumente, mit denen wir arbeiten können.
 
 ## Schritt 3: Vergleichsoptionen konfigurieren
 

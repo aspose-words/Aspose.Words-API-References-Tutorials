@@ -93,7 +93,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 예, 여러 교체 작업을 연결하거나 정규식을 사용하여 여러 패턴을 일치시키고 교체할 수 있습니다.
 
 ### .NET용 Aspose.Words는 무료인가요?
- Aspose.Words for .NET은 유료 라이브러리이지만[무료 시험판](https://releases.aspose.com/) 기능을 테스트합니다.
+ Aspose.Words for .NET은 유료 라이브러리이지만[무료 평가판](https://releases.aspose.com/) 기능을 테스트합니다.
 
 ### 텍스트를 서식이 지정된 콘텐츠로 바꿀 수 있나요?
 전적으로! Aspose.Words를 사용하면 텍스트를 다양한 글꼴, 색상 및 스타일을 포함하여 서식이 지정된 콘텐츠로 바꿀 수 있습니다.

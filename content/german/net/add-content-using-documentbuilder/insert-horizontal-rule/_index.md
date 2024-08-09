@@ -9,13 +9,13 @@ url: /de/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Einführung
 
-Hallo liebe Entwicklerkollegen! Haben Sie sich schon einmal mitten in einem Word-Dokumentprojekt wiedergefunden und gedacht: „Mann, ich muss hier wirklich eine horizontale Linie einfügen, um das Ganze aufzulockern“? Nun, wissen Sie was? Sie haben Glück! Im heutigen Tutorial tauchen wir ein in das Einfügen einer horizontalen Linie in ein Word-Dokument mit Aspose.Words für .NET. Dies ist nicht nur irgendein gewöhnliches Tutorial – es ist vollgepackt mit detaillierten Schritten, interessanten Erklärungen und einer Prise Spaß. Also schnallen Sie sich an und machen Sie sich bereit, ein Profi im Umgang mit Aspose.Words für .NET zu werden!
+Hallo, liebe Entwickler! Haben Sie sich schon einmal mitten in einem Word-Dokumentprojekt wiedergefunden und gedacht: „Mann, ich muss hier wirklich eine horizontale Linie einfügen, um das Ganze aufzulockern“? Nun, wissen Sie was? Sie haben Glück! Im heutigen Tutorial tauchen wir ein in das Einfügen einer horizontalen Linie in ein Word-Dokument mit Aspose.Words für .NET. Dies ist nicht nur irgendein gewöhnliches Tutorial – es ist vollgepackt mit detaillierten Schritten, interessanten Erklärungen und einer Prise Spaß. Also schnallen Sie sich an und machen Sie sich bereit, ein Profi im Umgang mit Aspose.Words für .NET zu werden!
 
 ## Voraussetzungen
 
 Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie für den Anfang brauchen. Hier ist eine kurze Checkliste:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Jede IDE, die .NET unterstützt, z. B. Visual Studio.
 3. Grundkenntnisse in C#: Wenn Sie mit der C#-Programmierung vertraut sind, wird dieses Tutorial einfacher.
 4. Ein Dokumentverzeichnis: Sie benötigen ein Verzeichnis, in dem Sie Ihre Word-Dokumente speichern können.
@@ -117,7 +117,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern e
 
 ### Kann ich Aspose.Words kostenlos nutzen?
 
- Aspose.Words bietet eine[Kostenlose Testphase](https://releases.aspose.com/) So können Sie die Funktionen ausprobieren, bevor Sie eine Lizenz erwerben.
+ Aspose.Words bietet eine[Kostenlose Testversion](https://releases.aspose.com/) So können Sie die Funktionen ausprobieren, bevor Sie eine Lizenz erwerben.
 
 ### Wo finde ich weitere Tutorials zu Aspose.Words für .NET?
 

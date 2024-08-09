@@ -15,9 +15,9 @@ Halo, ahli dokumen Word! Pernahkah Anda bertanya-tanya apa yang terjadi di balik
 
 Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
 
-1.  Perpustakaan Aspose.Words for .NET: Untuk bekerja dengan dokumen Word, Anda memerlukan Aspose.Words for .NET versi terbaru. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Perpustakaan Aspose.Words for .NET: Untuk bekerja dengan dokumen Word, Anda memerlukan Aspose.Words for .NET versi terbaru. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET, seperti Visual Studio, sangat penting untuk menulis dan menguji kode Anda.
-3. Pengetahuan Dasar C#: Pemahaman dasar tentang C# akan membantu Anda menavigasi cuplikan kode dan konsep.
+3. Pengetahuan C# Dasar: Pemahaman dasar tentang C# akan membantu Anda menavigasi cuplikan kode dan konsep.
 4.  Contoh Dokumen Word: Miliki a[Dokumen kata](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) dengan makro VBA siap. Ini akan menjadi sumber kita untuk membaca makro.
 
 ## Impor Namespace
@@ -115,7 +115,7 @@ Ini adalah contoh sederhana makro VBA yang menampilkan kotak pesan dengan teks "
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil membaca makro VBA dari dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup segalanya mulai dari menyiapkan lingkungan Anda dan memuat dokumen Anda hingga mengakses proyek VBA dan membaca makro. Dengan Aspose.Words, Anda memiliki alat canggih yang dapat Anda gunakan untuk mengotomatiskan tugas, menyesuaikan dokumen, dan mendalami dunia VBA.
+Dan itu dia! Anda telah berhasil membaca makro VBA dari dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup segalanya mulai dari menyiapkan lingkungan Anda dan memuat dokumen Anda hingga mengakses proyek VBA dan membaca makro. Dengan Aspose.Words, Anda memiliki alat canggih yang dapat Anda gunakan untuk mengotomatiskan tugas, menyesuaikan dokumen, dan mempelajari lebih dalam dunia VBA.
 
  Jika Anda ingin mempelajari lebih lanjut,[dokumentasi API](https://reference.aspose.com/words/net/) adalah tempat yang bagus untuk memulai. Dan jika Anda memiliki pertanyaan atau membutuhkan bantuan,[forum dukungan](https://forum.aspose.com/c/words/8) apakah ada untukmu.
 

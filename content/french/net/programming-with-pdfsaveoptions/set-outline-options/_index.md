@@ -15,7 +15,7 @@ Lorsque vous travaillez avec des documents, notamment à des fins professionnell
 
 Avant de commencer, vous devez vous assurer de disposer de quelques éléments :
 
-1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Sinon, vous pouvez[Télécharger la dernière version ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Sinon, vous pouvez[téléchargez la dernière version ici](https://releases.aspose.com/words/net/).
 2. Un environnement de développement .NET : vous aurez besoin d'un environnement de développement .NET fonctionnel, tel que Visual Studio.
 3. Compréhension de base de C# : La familiarité avec le langage de programmation C# vous aidera à suivre facilement.
 4. Un document Word : préparez un document Word que vous convertirez en PDF.
@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 PdfSaveOptions saveOptions = new PdfSaveOptions();
 ```
 
-Maintenant, définissons les options de plan. 
+Maintenant, définissons les options de contour. 
 
 ### Définir les niveaux de plan des titres
 
@@ -78,7 +78,7 @@ Cette ligne de code enregistre votre document Word au format PDF, en appliquant 
 
 ## Conclusion
 
-La définition d'options de plan dans un document PDF peut grandement améliorer sa navigabilité, permettant ainsi aux utilisateurs de trouver et d'accéder plus facilement aux sections dont ils ont besoin. Avec Aspose.Words pour .NET, vous pouvez facilement configurer ces paramètres en fonction de vos besoins, garantissant ainsi que vos documents PDF sont aussi conviviaux que possible.
+La définition d'options de plan dans un document PDF peut considérablement améliorer sa navigabilité, permettant ainsi aux utilisateurs de trouver et d'accéder plus facilement aux sections dont ils ont besoin. Avec Aspose.Words pour .NET, vous pouvez facilement configurer ces paramètres en fonction de vos besoins, garantissant ainsi que vos documents PDF sont aussi conviviaux que possible.
 
 ## FAQ
 

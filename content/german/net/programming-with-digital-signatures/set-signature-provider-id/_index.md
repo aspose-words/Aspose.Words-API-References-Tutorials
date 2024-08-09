@@ -15,7 +15,7 @@ Hallo! Sie haben also dieses erstaunliche Word-Dokument, das eine digitale Signa
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-1. Aspose.Words für .NET-Bibliothek: Falls noch nicht geschehen,[hier herunterladen](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET-Bibliothek: Falls noch nicht geschehen,[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder jede C#-kompatible IDE.
 3. Word-Dokument: Ein Dokument mit einer Signaturzeile (`Signature line.docx`).
 4.  Digitales Zertifikat: A`.pfx` Zertifikatsdatei (z. B.`morzal.pfx`).
@@ -82,7 +82,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Schritt 5: Unterschreiben Sie das Dokument
 
- Zum Schluss ist es an der Zeit, das Dokument zu unterzeichnen.`DigitalSignatureUtil.Sign` Methode.
+ Zum Schluss ist es an der Zeit, das Dokument zu unterzeichnen.`DigitalSignatureUtil.Sign` Verfahren.
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",

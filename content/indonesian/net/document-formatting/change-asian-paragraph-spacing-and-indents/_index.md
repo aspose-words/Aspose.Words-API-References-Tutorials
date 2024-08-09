@@ -15,7 +15,7 @@ Hai! Pernah bertanya-tanya bagaimana cara mengubah spasi dan indentasi dalam dok
 
 Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang perlu Anda ikuti:
 
-1.  Perpustakaan Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Perpustakaan Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Anda memerlukan pengaturan lingkungan pengembangan. Visual Studio adalah pilihan populer untuk pengembangan .NET.
 3. Dokumen Word: Siapkan dokumen Word yang dapat Anda mainkan. Kami akan menggunakan contoh dokumen bernama "Asian typography.docx".
 4. Pengetahuan Dasar C#: Anda harus terbiasa dengan pemrograman C# untuk mengikuti contoh kode.

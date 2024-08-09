@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/check-box-type-content-control/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti nella guida definitiva su come inserire un controllo del contenuto del tipo casella di controllo in un documento Word utilizzando Aspose.Words per .NET! Se stai cercando di automatizzare il processo di creazione dei documenti e aggiungere elementi interattivi come le caselle di controllo, sei nel posto giusto. In questo tutorial ti guideremo attraverso tutto ciò che devi sapere, dai prerequisiti a una guida passo passo sull'implementazione di questa funzionalità. Alla fine di questo articolo, avrai una chiara comprensione di come migliorare i tuoi documenti Word con le caselle di controllo utilizzando Aspose.Words per .NET.
 
@@ -80,7 +80,7 @@ Questa riga salva il documento con la casella di controllo appena aggiunta nella
 
 ## Conclusione
 
-E il gioco è fatto! Hai aggiunto con successo un controllo del contenuto del tipo di casella di controllo al tuo documento Word utilizzando Aspose.Words per .NET. Questa funzionalità può essere incredibilmente utile per creare documenti interattivi e di facile utilizzo. Che tu stia creando moduli, sondaggi o qualsiasi documento che richieda l'input dell'utente, le caselle di controllo sono un ottimo modo per migliorare l'usabilità.
+Ed ecco qua! Hai aggiunto con successo un controllo del contenuto del tipo di casella di controllo al tuo documento Word utilizzando Aspose.Words per .NET. Questa funzionalità può essere incredibilmente utile per creare documenti interattivi e di facile utilizzo. Che tu stia creando moduli, sondaggi o qualsiasi documento che richieda l'input dell'utente, le caselle di controllo sono un ottimo modo per migliorare l'usabilità.
 
  Se hai domande o hai bisogno di ulteriore assistenza, non esitare a consultare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) oppure visitare il[Forum di supporto di Aspose](https://forum.aspose.com/c/words/8).
 

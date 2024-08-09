@@ -121,4 +121,4 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 Absolutamente! O método descrito pode ser incorporado em aplicações maiores para automatizar tarefas de processamento de documentos.
 
 ### Onde posso encontrar mais recursos e suporte?  
-Para mais informações, você pode verificar o[documentação](https://reference.aspose.com/words/net/) , ou visite o[Fórum de suporte](https://forum.aspose.com/c/words/8) para assistência.
+Para mais informações, você pode verificar o[documentação](https://reference.aspose.com/words/net/) , ou visite o[fórum de suporte](https://forum.aspose.com/c/words/8) para obter assistência.

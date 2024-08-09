@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 2: Infoga ett diagram
 
- Därefter kommer du att infoga ett linjediagram i dokumentet. De`DocumentBuilder.InsertChart` metod används för detta ändamål.
+ Därefter kommer du att infoga ett linjediagram i dokumentet. De`DocumentBuilder.InsertChart` metoden används för detta ändamål.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -86,7 +86,7 @@ I den här handledningen behandlade vi hur man skapar och anpassar ett linjediag
 
 ### Kan jag använda Aspose.Words för .NET för att skapa andra typer av diagram?
 
- Ja, Aspose.Words för .NET stöder olika diagramtyper, inklusive stapeldiagram, cirkeldiagram och mer. Du kan utforska dokumentationen[här](https://reference.aspose.com/words/net/) för mer detaljer.
+ Ja, Aspose.Words för .NET stöder olika diagramtyper, inklusive stapeldiagram, cirkeldiagram och mer. Du kan utforska dokumentationen[här](https://reference.aspose.com/words/net/) för mer information.
 
 ### Hur kan jag prova Aspose.Words för .NET innan jag köper?
 

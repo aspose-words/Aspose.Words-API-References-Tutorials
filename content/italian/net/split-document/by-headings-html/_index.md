@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/split-document/by-headings-html/
 ---
-## introduzione
+## Introduzione
 
 Dividere un documento Word per intestazioni può rappresentare una svolta nella gestione di documenti di grandi dimensioni o nella creazione di output HTML segmentati. Aspose.Words per .NET fornisce un modo semplice per raggiungere questo obiettivo. In questo tutorial ti guideremo attraverso l'intero processo, assicurandoti di cogliere ogni dettaglio lungo il percorso.
 
@@ -78,7 +78,7 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Conclusione
 
-E il gioco è fatto! Hai diviso con successo un documento Word per intestazioni e lo hai salvato come HTML utilizzando Aspose.Words per .NET. Questo metodo è molto efficace per organizzare documenti di grandi dimensioni e creare output HTML segmentati, rendendo i tuoi contenuti più gestibili e accessibili.
+Ed ecco qua! Hai diviso con successo un documento Word per intestazioni e lo hai salvato come HTML utilizzando Aspose.Words per .NET. Questo metodo è molto efficace per organizzare documenti di grandi dimensioni e creare output HTML segmentati, rendendo i tuoi contenuti più gestibili e accessibili.
 
 ## Domande frequenti
 
@@ -89,10 +89,10 @@ Aspose.Words per .NET è una potente libreria per lavorare con documenti Word ne
 Sì, Aspose.Words ti consente di dividere i documenti in base a vari criteri come sezioni, pagine e altro.
 
 ### Aspose.Words è gratuito?
- Aspose.Words offre una prova gratuita, ma per usufruire delle funzionalità complete dovrai acquistare una licenza. Controlla il loro[pagina acquista](https://purchase.aspose.com/buy) per ulteriori dettagli.
+ Aspose.Words offre una prova gratuita, ma per usufruire delle funzionalità complete dovrai acquistare una licenza. Controlla il loro[pagina acquista](https://purchase.aspose.com/buy) per maggiori dettagli
 
 ### Dove posso trovare la documentazione?
  È disponibile una documentazione completa[Qui](https://reference.aspose.com/words/net/).
 
 ### Come posso ottenere supporto?
- Per supporto, visitare Aspose.Words[Forum](https://forum.aspose.com/c/words/8).
+ Per supporto, visitare Aspose.Words[foro](https://forum.aspose.com/c/words/8).

@@ -13,7 +13,7 @@ Podział dokumentu programu Word według nagłówków może zmienić zasady gry 
 
 ## Warunki wstępne
 
-Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące informacje:
+Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące elementy:
 
 1. Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz go z[Tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: IDE takie jak Visual Studio.
@@ -78,7 +78,7 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Wniosek
 
-I masz to! Pomyślnie podzieliłeś dokument programu Word według nagłówków i zapisałeś go jako HTML przy użyciu Aspose.Words dla .NET. Ta metoda jest bardzo skuteczna w organizowaniu dużych dokumentów i tworzeniu podzielonych na segmenty wyników HTML, dzięki czemu treść jest łatwiejsza w zarządzaniu i dostępna.
+I masz to! Pomyślnie podzieliłeś dokument programu Word według nagłówków i zapisałeś go jako HTML przy użyciu Aspose.Words dla .NET. Ta metoda jest bardzo skuteczna w organizowaniu dużych dokumentów i tworzeniu podzielonych na segmenty wyników HTML, dzięki czemu zawartość jest łatwiejsza w zarządzaniu i dostępna.
 
 ## Często zadawane pytania
 
@@ -89,7 +89,7 @@ Aspose.Words dla .NET to potężna biblioteka do pracy z dokumentami Word w apli
 Tak, Aspose.Words umożliwia dzielenie dokumentów według różnych kryteriów, takich jak sekcje, strony i inne.
 
 ### Czy Aspose.Words jest darmowe?
- Aspose.Words oferuje bezpłatną wersję próbną, ale aby uzyskać pełne funkcje, musisz kupić licencję. Sprawdź ich[kup stronę](https://purchase.aspose.com/buy) po więcej szczegółów.
+ Aspose.Words oferuje bezpłatną wersję próbną, ale aby uzyskać pełne funkcje, musisz kupić licencję. Sprawdź ich[kup stronę](https://purchase.aspose.com/buy) aby uzyskać więcej szczegółów.
 
 ### Gdzie mogę znaleźć dokumentację?
  Dostępna jest obszerna dokumentacja[Tutaj](https://reference.aspose.com/words/net/).

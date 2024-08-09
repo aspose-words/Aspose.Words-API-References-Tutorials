@@ -30,7 +30,7 @@ using Aspose.Words.DocumentBuilder;
 
 ## Bước 1: Tải tài liệu
 
- Đầu tiên, tải tài liệu nguồn và đích vào Aspose.Words`Document` các đối tượng.
+ Đầu tiên, tải tài liệu nguồn và đích vào Aspose.Words`Document` đồ vật.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn

@@ -33,7 +33,7 @@ Pekala, şimdi süreci yönetilebilir adımlara ayıralım.
 
 ## 1. Adım: Projenizi Kurun
 
-Öncelikle projenizi oluşturmanız gerekiyor. IDE'nizi açın ve yeni bir C# projesi oluşturun. Projenizde Aspose.Words kütüphanesinin referans alındığından emin olun. Henüz eklemediyseniz NuGet Paket Yöneticisi aracılığıyla bunu yapabilirsiniz.
+Öncelikle projenizi oluşturmanız gerekiyor. IDE'nizi açın ve yeni bir C# projesi oluşturun. Projenizde Aspose.Words kütüphanesinin referans alındığından emin olun. Henüz eklemediyseniz bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz.
 
 ```shell
 Install-Package Aspose.Words
@@ -80,15 +80,15 @@ else
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'teki bir dosyadan lisansı başarıyla uyguladınız. Bu, Aspose.Words'ün sunduğu tüm özellik ve işlevlerin kilidini açmak için önemli bir adımdır. Lisans setiniz ile artık Word belgelerini herhangi bir sınırlama olmadan oluşturabilir ve değiştirebilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET'teki bir dosyadan lisansı başarıyla uyguladınız. Bu, Aspose.Words'ün sunduğu tüm özellik ve işlevlerin kilidini açmak için önemli bir adımdır. Lisans setiniz ile artık Word belgelerini herhangi bir sınırlama olmadan oluşturabilir ve değiştirebilirsiniz.
 
 ## SSS'ler
 
 ### Lisans ayarlamazsam ne olur?  
-Bir lisans ayarlamazsanız Aspose.Words, filigranlı belgeler ve kısıtlı işlevsellik gibi sınırlamalara sahip olan değerlendirme modunda çalışacaktır.
+Bir lisans ayarlamazsanız Aspose.Words, filigranlı belgeler ve sınırlı işlevsellik gibi sınırlamalara sahip olan değerlendirme modunda çalışacaktır.
 
 ### Bir akıştan lisans kullanabilir miyim?  
- Evet, lisans dosyası kaynak olarak katıştırılmışsa lisansı bir akıştan yükleyebilirsiniz. Kullan`SetLicense` bir akışı kabul eden yöntem.
+ Evet, lisans dosyası kaynak olarak katıştırılmışsa lisansı bir akıştan yükleyebilirsiniz. Kullanın`SetLicense` bir akışı kabul eden yöntem.
 
 ### Lisans dosyamı nereye yerleştirmeliyim?  
 Lisans dosyanızı yürütülebilir dosyanızla aynı dizine veya uygulamanızın erişebileceği herhangi bir yola yerleştirebilirsiniz.

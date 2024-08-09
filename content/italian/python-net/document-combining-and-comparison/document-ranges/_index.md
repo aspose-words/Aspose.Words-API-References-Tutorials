@@ -8,7 +8,7 @@ weight: 12
 url: /it/python-net/document-combining-and-comparison/document-ranges/
 ---
 
-## introduzione
+## Introduzione
 
 La modifica dei documenti spesso richiede la massima precisione, soprattutto quando si ha a che fare con strutture complesse come accordi legali o documenti accademici. Navigare senza problemi attraverso le varie parti di un documento è fondamentale per apportare modifiche precise senza disturbare il layout generale. La libreria Aspose.Words per Python fornisce agli sviluppatori una serie di strumenti per navigare, manipolare e modificare gli intervalli di documenti in modo efficace.
 
@@ -146,7 +146,7 @@ pip install aspose-words
 
 ### Posso estrarre contenuti specifici da un documento?
 
-Si, puoi. Definire un intervallo di contenuti utilizzando le tecniche di navigazione del documento, quindi estrarre il contenuto desiderato utilizzando l'intervallo definito.
+Sì, puoi. Definire un intervallo di contenuti utilizzando le tecniche di navigazione del documento, quindi estrarre il contenuto desiderato utilizzando l'intervallo definito.
 
 ### È possibile unire più documenti utilizzando Aspose.Words per Python?
 

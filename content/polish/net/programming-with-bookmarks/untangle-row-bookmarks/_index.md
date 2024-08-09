@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 Oto wyjaśnienie krok po kroku działania kodu:
 
  Iterujemy po wszystkich zakładkach w dokumencie za pomocą a`foreach` pętla.
-Dla każdej zakładki pobieramy wiersz nadrzędny początku zakładki (`bookmark.BookmarkStart`) i koniec zakładki (`bookmark.BookmarkEnd` ) używając`GetAncestor` metoda.
+Dla każdej zakładki pobieramy wiersz nadrzędny początku zakładki (`bookmark.BookmarkStart`) i koniec zakładki (`bookmark.BookmarkEnd` ) za pomocą`GetAncestor` metoda.
 Następnie sprawdzamy, czy znaleziono oba wiersze (`row1 != null`I`row2 != null`) i jeśli są sąsiadującymi rzędami (`row1.NextSibling == row2`). Dzięki temu modyfikujemy tylko zakładki rozciągające się na sąsiednie wiersze.
 Jeżeli warunki są spełnione przesuwamy węzeł końcowy zakładki na koniec ostatniego akapitu w ostatniej komórce górnego wiersza (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) skutecznie je rozplątując.
 
@@ -87,12 +87,12 @@ Oto podział tej funkcji:
 
 Bierzemy nazwę zakładki (`bookmarkName`) jako dane wejściowe.
  Pobieramy odpowiedni obiekt zakładki za pomocą`doc.Range.Bookmarks[bookmarkName]`.
-Następnie otrzymujemy wiersz nadrzędny zakładki, który zaczyna być używany`GetAncestor` (podobny do`Untangle` funkcjonować).
+Następnie otrzymujemy wiersz nadrzędny zakładki, który zaczyna być używany`GetAncestor` (podobnie jak`Untangle` funkcjonować).
 Na koniec sprawdzamy, czy zakładka i wiersz istnieją (`bookmark != null` I
 
 ## Krok 4: Sprawdź rozplątanie
 
- Podczas`Untangle` powinna zapewniać bezpieczeństwo innych zakładek, zawsze warto to sprawdzić. Oto jak możemy sprawdzić, czy proces rozplątywania nie spowodował przypadkowego usunięcia końcówki kolejnej zakładki:
+ Podczas gdy`Untangle` powinna zapewniać bezpieczeństwo innych zakładek, zawsze warto to sprawdzić. Oto jak możemy sprawdzić, czy proces rozplątywania nie spowodował przypadkowego usunięcia końcówki kolejnej zakładki:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -113,7 +113,7 @@ Spowoduje to zapisanie dokumentu z rozplątanymi zakładkami i wszystkimi usuni�
 
 ## Wniosek
 
- Wykonując poniższe kroki i korzystając z`Untangle`funkcji, możesz skutecznie rozplątać zakładki wierszy w dokumentach Word za pomocą Aspose.Words dla .NET. Dzięki temu usuwanie wierszy według zakładek nie spowoduje niezamierzonych konsekwencji w przypadku innych zakładek w sąsiednich wierszach. Pamiętaj o zastąpieniu symboli zastępczych, takich jak`"YOUR DOCUMENT DIRECTORY"` z rzeczywistymi ścieżkami i nazwami plików.
+ Wykonując poniższe kroki i korzystając z`Untangle`funkcji, możesz skutecznie rozplątać zakładki wierszy w dokumentach programu Word za pomocą Aspose.Words dla .NET. Dzięki temu usuwanie wierszy według zakładek nie spowoduje niezamierzonych konsekwencji w przypadku innych zakładek w sąsiednich wierszach. Pamiętaj o zastąpieniu symboli zastępczych, takich jak`"YOUR DOCUMENT DIRECTORY"` z rzeczywistymi ścieżkami i nazwami plików.
 
 ## Często zadawane pytania
 

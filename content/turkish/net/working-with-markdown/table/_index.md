@@ -85,7 +85,7 @@ Aspose.Words for .NET'te tablo oluşturmak ve özelleştirmek, alıştığınız
  kullanarak hücreleri birleştirebilirsiniz.`CellFormat.HorizontalMerge`Ve`CellFormat.VerticalMerge` özellikler.
 
 ### Tablo hücrelerine resim eklemek mümkün mü?
- Kesinlikle! kullanarak hücrelere resim ekleyebilirsiniz.`DocumentBuilder.InsertImage` yöntem.
+ Kesinlikle! kullanarak hücrelere resim ekleyebilirsiniz.`DocumentBuilder.InsertImage` Yöntem.
 
 ### Tek tek hücreleri farklı şekilde biçimlendirebilir miyim?
  Evet, tek tek hücrelere farklı stiller uygulayabilirsiniz.`Cells` bir satırın toplanması.

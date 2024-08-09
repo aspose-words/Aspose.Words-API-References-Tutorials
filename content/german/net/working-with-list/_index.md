@@ -13,6 +13,6 @@ url: /de/net/working-with-list/
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Liste in jedem Abschnitt neu starten](./restart-list-at-each-section/)  | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine nummerierte Liste auf jeden Abschnitt in einem Word-Dokument zurücksetzen. |
-| [Listenebene angeben](./specify-list-level/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Listenebene in einem Word-Dokument angeben. |
-| [Neustartlistennummer](./restart-list-number/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Nummer einer Liste in einem Word-Dokument zurücksetzen. |
+| [Liste in jedem Abschnitt neu starten](./restart-list-at-each-section/)  | Erfahren Sie, wie Sie mit Aspose.Words für .NET Listen in jedem Abschnitt in Word-Dokumenten neu starten. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung, um Listen effektiv zu verwalten. |
+| [Listenebene angeben](./specify-list-level/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET mehrstufige nummerierte und Aufzählungslisten in Word-Dokumenten erstellen. Schritt-für-Schritt-Anleitung enthalten. Perfekt für .NET-Entwickler. |
+| [Neustartlistennummer](./restart-list-number/) | Erfahren Sie, wie Sie Listennummern in Word-Dokumenten mit Aspose.Words für .NET neu starten. Dieser ausführliche, 2000 Wörter umfassende Leitfaden behandelt alles, was Sie wissen müssen, von der Einrichtung bis zur erweiterten Anpassung. |

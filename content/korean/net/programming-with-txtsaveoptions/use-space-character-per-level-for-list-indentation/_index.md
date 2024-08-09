@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2단계: 여러 수준의 들여쓰기가 포함된 목록 만들기
 
- 와 더불어`DocumentBuilder` 예를 들어 이제 다양한 들여쓰기 수준으로 목록을 만들 수 있습니다. 사용`ListFormat` 번호 매기기를 적용하고 필요에 따라 목록 항목을 들여쓰기하는 속성입니다.
+ 와 함께`DocumentBuilder` 예를 들어 이제 다양한 들여쓰기 수준으로 목록을 만들 수 있습니다. 사용`ListFormat` 번호 매기기를 적용하고 필요에 따라 목록 항목을 들여쓰기하는 속성입니다.
 
 ```csharp
 // 세 가지 들여쓰기 수준으로 목록 만들기

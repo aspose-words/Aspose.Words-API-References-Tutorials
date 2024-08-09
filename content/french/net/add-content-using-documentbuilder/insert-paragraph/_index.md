@@ -70,7 +70,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez inséré avec succès un paragraphe formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus vous permet de générer dynamiquement un contenu riche adapté aux besoins de votre application.
+Félicitations! Vous avez inséré avec succès un paragraphe formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus vous permet de générer dynamiquement un contenu riche adapté aux besoins de votre application.
 
 ## FAQ
 
@@ -87,4 +87,4 @@ Oui, Aspose.Words for .NET garantit la compatibilité avec différentes versions
 Oui, vous pouvez chiffrer et sécuriser vos documents par programme à l'aide d'Aspose.Words for .NET.
 
 ### Où puis-je trouver plus d’aide et de support pour Aspose.Words for .NET ?
- Visiter le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) pour le soutien et les discussions de la communauté.
+ Visitez le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) pour le soutien et les discussions de la communauté.

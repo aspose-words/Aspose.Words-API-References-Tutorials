@@ -40,7 +40,7 @@ doc = aw.Document("path/to/your/document.docx")
 
 ## Xóa văn bản
 
- Việc xóa văn bản cụ thể khỏi tài liệu Word thật đơn giản với Aspose.Words. Bạn có thể dùng`Range.replace` phương pháp để đạt được điều này:
+ Việc xóa văn bản cụ thể khỏi tài liệu Word thật đơn giản với Aspose.Words. Bạn có thể sử dụng`Range.replace` phương pháp để đạt được điều này:
 
 ```python
 text_to_remove = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."

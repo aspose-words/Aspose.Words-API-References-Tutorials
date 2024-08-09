@@ -16,7 +16,7 @@ url: /es/net/split-document/merge-documents/
 Antes de sumergirnos, asegurémonos de que tiene todo lo que necesita:
 
 1. Conocimientos básicos de C#: debe sentirse cómodo con la sintaxis y los conceptos de C#.
-2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratis](https://releases.aspose.com/).
+2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratuita](https://releases.aspose.com/).
 3. Visual Studio: cualquier versión reciente debería funcionar, pero se recomienda la última versión.
 4. .NET Framework: asegúrese de que esté instalado en su sistema.
 
@@ -99,11 +99,11 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
 
 ### ¿Puedo utilizar Aspose.Words para .NET de forma gratuita?
 
- Puedes probar Aspose.Words para .NET usando un[prueba gratis](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
+ Puedes probar Aspose.Words para .NET usando un[prueba gratuita](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
 
 ### ¿Cómo manejo diferentes formatos durante la fusión?
 
- Aspose.Words proporciona varios modos de formato de combinación como`KeepSourceFormatting`y`MergeFormatting` Referirse a[Documentación API](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.
+ Aspose.Words proporciona varios modos de formato de combinación como`KeepSourceFormatting`y`MergeFormatting` Consulte el[Documentación API](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.
 
 ### ¿Cómo obtengo soporte para Aspose.Words para .NET?
 

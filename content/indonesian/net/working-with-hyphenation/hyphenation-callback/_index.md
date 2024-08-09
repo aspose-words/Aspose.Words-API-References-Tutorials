@@ -10,13 +10,13 @@ url: /id/net/working-with-hyphenation/hyphenation-callback/
 
 ## Perkenalan
 
-Hai! Pernahkah Anda terjebak dalam kerumitan pemformatan teks, terutama ketika berhadapan dengan bahasa yang memerlukan tanda hubung? Kamu tidak sendiri. Tanda hubung, meskipun penting untuk tata letak teks yang tepat, bisa sedikit memusingkan. Tapi coba tebak? Aspose.Words untuk .NET mendukung Anda. Pustaka canggih ini memungkinkan Anda mengelola pemformatan teks dengan lancar, termasuk menangani tanda hubung melalui mekanisme panggilan balik. Penasaran? Mari selami seluk beluk bagaimana Anda dapat mengimplementasikan callback tanda hubung menggunakan Aspose.Words untuk .NET.
+Hai! Pernahkah Anda terjebak dalam kerumitan pemformatan teks, terutama ketika berhadapan dengan bahasa yang memerlukan tanda hubung? Anda tidak sendirian. Tanda hubung, meskipun penting untuk tata letak teks yang tepat, bisa sedikit memusingkan. Tapi coba tebak? Aspose.Words untuk .NET mendukung Anda. Pustaka canggih ini memungkinkan Anda mengelola pemformatan teks dengan lancar, termasuk menangani tanda hubung melalui mekanisme panggilan balik. Penasaran? Mari selami seluk beluk bagaimana Anda dapat mengimplementasikan callback tanda hubung menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
 Sebelum kita mengotak-atik kode, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. IDE: Lingkungan pengembangan seperti Visual Studio.
 3. Pengetahuan Dasar C#: Pemahaman C# dan .NET framework.
 4. Kamus Tanda Hubung: Kamus tanda hubung untuk bahasa yang ingin Anda gunakan.
@@ -68,7 +68,7 @@ Sekarang, mari muat dokumen yang memerlukan tanda hubung.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Di sini, kami memuat dokumen teks Jerman. Anda bisa menggantinya`"German text.docx"` dengan nama file dokumen Anda.
+Di sini, kami memuat dokumen teks Jerman. Anda bisa menggantinya`"German text.docx"` dengan nama file dokumen Anda.
 
 ## Langkah 4: Simpan Dokumen
 
@@ -140,10 +140,10 @@ Aspose.Words for .NET adalah pustaka manipulasi dokumen canggih yang memungkinka
 Tanda hubung meningkatkan tata letak teks dengan memecah kata-kata di tempat yang tepat, memastikan dokumen lebih mudah dibaca dan menarik secara visual.
 
 ### Bisakah saya menggunakan Aspose.Words secara gratis?
- Aspose.Words menawarkan uji coba gratis. Kamu bisa mendapatkannya[Di Sini](https://releases.aspose.com/).
+ Aspose.Words menawarkan uji coba gratis. Anda bisa mendapatkannya[Di Sini](https://releases.aspose.com/).
 
 ### Bagaimana cara mendapatkan kamus tanda hubung?
 Anda dapat mengunduh kamus tanda hubung dari berbagai sumber online atau membuatnya sendiri jika diperlukan.
 
 ### Apa yang terjadi jika kamus tanda hubung tidak ada?
- Jika kamus tidak ada,`RequestDictionary` metode memunculkan pengecualian, yang dapat Anda tangani untuk memberi tahu pengguna atau menyediakan cadangan.
+ Jika kamus tidak ada,`RequestDictionary`metode memunculkan pengecualian, yang dapat Anda tangani untuk memberi tahu pengguna atau menyediakan cadangan.

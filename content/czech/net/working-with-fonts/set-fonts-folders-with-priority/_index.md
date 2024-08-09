@@ -2,79 +2,91 @@
 title: Nastavte složky písem s prioritou
 linktitle: Nastavte složky písem s prioritou
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce nastavením složek písem s prioritou při vykreslování dokumentu pomocí Aspose.Words for .NET.
+description: Naučte se, jak nastavit složky písem s prioritou v dokumentech aplikace Word pomocí Aspose.Words for .NET. Náš průvodce zajistí, že se vaše dokumenty pokaždé dokonale vykreslí.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## Zavedení
 
-V tomto tutoriálu vás provedeme krok za krokem procesem nastavení prioritních složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak určit více složek písem s vlastní prioritou vyhledávání při vykreslování dokumentů pomocí Aspose.Words for .NET.
+Ve světě manipulace s dokumenty může nastavení vlastních složek písem znamenat velký rozdíl v zajištění dokonalého vykreslení vašich dokumentů bez ohledu na to, kde jsou zobrazeny. Dnes se ponoříme do toho, jak můžete nastavit složky písem s prioritou v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento komplexní průvodce vás provede každým krokem a celý proces bude co nejhladší.
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Toto je umístění, kam chcete uložit upravený vykreslený dokument. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+## Předpoklady
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Než začneme, ujistěte se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
-## Krok 2: Nastavte složky písem s prioritou
- Potom můžete nastavit prioritu složek písem pomocí`FontSettings` třída a`SetFontsSources()`metoda. Pomocí instancí můžete určit více zdrojů písem`SystemFontSource`a`FolderFontSource`. V tomto příkladu jsme definovali dva zdroje písem: výchozí systémový zdroj písem a vlastní složku písem s prioritou 1.
+-  Aspose.Words for .NET: Tuto knihovnu musíte mít nainstalovanou. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Ujistěte se, že máte funkční vývojové prostředí .NET, jako je Visual Studio.
+-  Adresář dokumentů: Ujistěte se, že máte adresář pro své dokumenty. Pro naše příklady použijeme`"YOUR DOCUMENT DIRECTORY"` jako zástupný symbol pro tuto cestu.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## Importovat jmenné prostory
 
-## Krok 3: Načtěte dokument k vykreslení
- Nyní můžete načíst dokument k vykreslení pomocí`Document` třída. Ujistěte se, že jste zadali správnou cestu dokumentu.
+Nejprve musíme importovat potřebné jmenné prostory. Tyto jmenné prostory jsou nezbytné pro přístup ke třídám a metodám poskytovaným Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 4: Uložte vykreslený dokument
- Nakonec můžete vykreslený dokument uložit do souboru pomocí`Save()` metoda`Document` třída. Ujistěte se, že jste zadali správnou cestu a název souboru.
+Nyní si rozeberme jednotlivé kroky nastavení složek písem s prioritou.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## Krok 1: Nastavte zdroje písem
 
-### Ukázkový zdrojový kód pro Nastavit složky písem s prioritou pomocí Aspose.Words pro .NET 
+Chcete-li začít, budete chtít definovat zdroje písem. Zde řeknete Aspose.Words, kde hledat písma. Můžete určit více složek písem a dokonce nastavit jejich prioritu.
+
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+V tomto příkladu nastavujeme dva zdroje písem:
+- SystemFontSource: Toto je výchozí zdroj písem, který zahrnuje všechna písma nainstalovaná ve vašem systému.
+-  FolderFontSource: Toto je vlastní složka písem umístěná na`C:\\MyFonts\\` . The`true` parametr určuje, že tato složka by měla být kontrolována rekurzivně a`1` stanoví svou prioritu.
+
+## Krok 2: Vložte svůj dokument
+
+Dále načtěte dokument, se kterým chcete pracovat. Ujistěte se, že je dokument umístěn ve vámi určeném adresáři.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Tento řádek kódu načte dokument s názvem`Rendering.docx` z vašeho adresáře dokumentů.
+
+## Krok 3: Uložte dokument s nastavením nového písma
+
+Nakonec dokument uložte. Když dokument uložíte, Aspose.Words použije nastavení písma, které jste zadali.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+ Tím se dokument uloží jako PDF do adresáře dokumentů s názvem`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak nastavit složky písem s prioritou při vykreslování dokumentu pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno určit více složek písem s vlastní prioritou vyhledávání při vykreslování dokumentů. Aspose.Words nabízí výkonné a flexibilní API pro zpracování textu s písmy ve vašich dokumentech. S těmito znalostmi můžete ovládat a přizpůsobovat zdroje písem používané při vykreslování dokumentů podle vašich specifických potřeb.
 
-### FAQ
+A tady to máte! Úspěšně jste nastavili složky písem s prioritou pomocí Aspose.Words pro .NET. Zadáním vlastních složek písem a priorit můžete zajistit konzistentní vykreslování dokumentů bez ohledu na to, kde jsou zobrazeny. To je užitečné zejména v prostředích, kde nejsou ve výchozím nastavení nainstalována specifická písma.
 
-#### Otázka: Jak mohu nastavit prioritu složek písem v Aspose.Words?
+## FAQ
 
- A: Chcete-li nastavit prioritu složek písem v Aspose.Words, můžete použít`SetFontsFoldersWithPriority` metoda`Fonts` třídy zadáním umístění složek písem a jejich pořadí priority.
+### Proč bych potřeboval nastavit vlastní složky písem?
+Nastavení vlastních složek písem zajišťuje správné vykreslení dokumentů, i když používají písma, která nejsou nainstalována v systému, kde jsou prohlíženy.
 
-#### Otázka: Co se stane, když je písmo přítomno v několika složkách s různou prioritou?
+### Mohu nastavit více vlastních složek písem?
+Ano, můžete zadat více složek písem. Aspose.Words vám umožňuje nastavit prioritu pro každou složku a zajistit, že nejdůležitější písma budou nalezena jako první.
 
-Odpověď: Pokud je písmo přítomno ve více složkách s různou prioritou, Aspose.Words použije při zpracování dokumentů verzi ze složky s nejvyšší prioritou.
+### Co se stane, když písmo chybí ve všech zadaných zdrojích?
+Pokud písmo chybí ze všech zadaných zdrojů, Aspose.Words použije záložní písmo, aby bylo zajištěno, že dokument bude stále čitelný.
 
-#### Otázka: Mohu v Aspose.Words zadat více složek písem se stejnou prioritou?
+### Mohu změnit prioritu systémových písem?
+Systémová písma jsou ve výchozím nastavení vždy zahrnuta, ale můžete nastavit jejich prioritu vzhledem k vašim vlastním složkám písem.
 
-Odpověď: Ano, v Aspose.Words můžete zadat více složek písem se stejnou prioritou. Aspose.Words je všechny zváží se stejnou prioritou při hledání písem ve vašich dokumentech.
-
-#### Otázka: Jak mohu zkontrolovat složky písem definované s prioritou v Aspose.Words?
-
- A: Chcete-li zkontrolovat složky písem definované s prioritou v Aspose.Words, můžete použít`GetFolders` metoda`Fonts` třídy, abyste získali seznam nakonfigurovaných složek písem včetně pořadí jejich priorit.
-
-#### Otázka: K čemu slouží nastavení složek písem s prioritou v Aspose.Words?
-
-Odpověď: Nastavení složek písem s prioritou v Aspose.Words vám umožňuje řídit pořadí vyhledávání písem v dokumentech aplikace Word. To vám pomůže zajistit, že se používají požadovaná písma, a vyhnout se nežádoucím problémům s nahrazováním písem.
+### Je možné použít síťové cesty pro vlastní složky písem?
+Ano, můžete zadat síťové cesty jako vlastní složky písem, což vám umožní centralizovat zdroje písem v síťovém umístění.

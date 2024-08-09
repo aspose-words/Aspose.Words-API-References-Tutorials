@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Stap 2: Toegang tot de eerste tabel
 
-Laten we nu de eerste tabel in het document in handen krijgen. Zie dit als het vissen van het eerste snoepje uit een pot.
+Laten we nu de eerste tabel in het document in handen krijgen. Zie dit als het eerste snoepje uit een pot vissen.
 
 ```csharp
 // Toegang tot de eerste tabel in het document

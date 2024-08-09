@@ -41,7 +41,7 @@ builder.insert_field('DATE \\@ "dd/MM/yyyy"')
 
 ## Integratie van numerieke en berekende velden
 
-Numerieke velden kunnen worden gebruikt voor automatische berekeningen. Als u bijvoorbeeld een veld wilt maken dat de som van twee getallen berekent:
+Numerieke velden kunnen worden gebruikt voor automatische berekeningen. Om bijvoorbeeld een veld te maken dat de som van twee getallen berekent:
 
 ```python
 builder.insert_field('= 5 + 3')

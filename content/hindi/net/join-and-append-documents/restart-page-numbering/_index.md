@@ -15,7 +15,7 @@ url: /hi/net/join-and-append-documents/restart-page-numbering/
 
 इस यात्रा पर निकलने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित चीजें हैं:
 
-1.  .NET के लिए Aspose.Words: आधिकारिक वेबसाइट से लाइब्रेरी डाउनलोड करें[लिंक को डाउनलोड करें](https://releases.aspose.com/words/net/) . आप एक निःशुल्क परीक्षण का पता लगा सकते हैं[निःशुल्क परीक्षण लिंक](https://releases.aspose.com/) या लाइसेंस खरीदें[लिंक खरीदें](https://purchase.aspose.com/buy) आपकी आवश्यकताओं के आधार पर.
+1.  .NET के लिए Aspose.Words: आधिकारिक वेबसाइट से लाइब्रेरी डाउनलोड करें[लिंक को डाउनलोड करें](https://releases.aspose.com/words/net/) . आप एक निःशुल्क परीक्षण का पता लगा सकते हैं[निःशुल्क परीक्षण लिंक](https://releases.aspose.com/) या लाइसेंस खरीदें[खरीदें लिंक](https://purchase.aspose.com/buy) आपकी आवश्यकताओं के आधार पर.
 2. AC# विकास वातावरण: विजुअल स्टूडियो या कोई भी वातावरण जो .NET विकास का समर्थन करता है, पूरी तरह से काम करेगा।
 3. नमूना दस्तावेज़: वह Word दस्तावेज़ खोजें जिसके साथ आप प्रयोग करना चाहते हैं।
 
@@ -51,7 +51,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
  उपयोग करें`PageSetup` अनुभाग की संपत्ति का उपयोग करके उसके लेआउट व्यवहार को कॉन्फ़िगर करें।
 
- ठीक`SectionStart` की संपत्ति`PageSetup` को`SectionStart.NewPage`यह सुनिश्चित करता है कि स्रोत सामग्री को गंतव्य दस्तावेज़ में जोड़े जाने से पहले एक नया पृष्ठ बनाया जाए।
+ सेट करें`SectionStart` की संपत्ति`PageSetup` को`SectionStart.NewPage`यह सुनिश्चित करता है कि स्रोत सामग्री को गंतव्य दस्तावेज़ में जोड़े जाने से पहले एक नया पृष्ठ बनाया जाए।
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

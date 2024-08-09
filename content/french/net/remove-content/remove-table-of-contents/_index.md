@@ -9,7 +9,7 @@ url: /fr/net/remove-content/remove-table-of-contents/
 ---
 ## Introduction
 
-Êtes-vous fatigué de devoir gérer une table des matières (TOC) indésirable dans vos documents Word ? Nous sommes tous passés par là : parfois, la table des matières n'est tout simplement pas nécessaire. Heureusement pour vous, Aspose.Words for .NET facilite la suppression d'une table des matières par programme. Dans ce tutoriel, je vais vous guider étape par étape tout au long du processus, afin que vous puissiez le maîtriser en un rien de temps. Allons-y !
+Êtes-vous fatigué de devoir gérer une table des matières (TOC) indésirable dans vos documents Word ? Nous sommes tous passés par là : parfois, la table des matières n'est tout simplement pas nécessaire. Heureusement pour vous, Aspose.Words for .NET facilite la suppression d'une table des matières par programme. Dans ce didacticiel, je vais vous guider étape par étape tout au long du processus, afin que vous puissiez le maîtriser en un rien de temps. Allons-y !
 
 ## Conditions préalables
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusion
 
-Et voila! Supprimer une table des matières d'un document Word à l'aide d'Aspose.Words pour .NET est simple une fois que vous l'avez décomposé en ces étapes simples. Cette puissante bibliothèque aide non seulement à supprimer les tables des matières, mais peut également gérer une myriade d'autres manipulations de documents. Alors n’hésitez plus et essayez-le !
+Et voilà ! Supprimer une table des matières d'un document Word à l'aide d'Aspose.Words pour .NET est simple une fois que vous l'avez décomposé en ces étapes simples. Cette puissante bibliothèque aide non seulement à supprimer les tables des matières, mais peut également gérer une myriade d'autres manipulations de documents. Alors n’hésitez plus et essayez-le !
 
 ## FAQ
 

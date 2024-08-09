@@ -9,7 +9,7 @@ url: /sv/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Introduktion
 
-Hallå där! Har du någon gång kliat dig i huvudet och undrat hur du infogar dynamiska fält i dina Word-dokument programmatiskt? Nåväl, oroa dig inte längre! I den här handledningen kommer vi att dyka in i underverken i Aspose.Words för .NET, ett kraftfullt bibliotek som låter dig skapa, manipulera och transformera Word-dokument sömlöst. Specifikt kommer vi att gå igenom hur du infogar fält med hjälp av Fältbyggaren. Låt oss börja!
+Hej där! Har du någon gång kliat dig i huvudet och undrat hur du infogar dynamiska fält i dina Word-dokument programmatiskt? Nåväl, oroa dig inte längre! I den här handledningen kommer vi att dyka in i underverken i Aspose.Words för .NET, ett kraftfullt bibliotek som låter dig skapa, manipulera och transformera Word-dokument sömlöst. Specifikt kommer vi att gå igenom hur du infogar fält med hjälp av Fältbyggaren. Låt oss komma igång!
 
 ## Förutsättningar
 

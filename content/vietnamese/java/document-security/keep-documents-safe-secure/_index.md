@@ -20,7 +20,7 @@ Trước khi đi sâu vào các khía cạnh kỹ thuật, hãy hiểu các khá
 
 ### Các loại bảo vệ tài liệu
 
-- #### Mật khẩu bảo vệ:
+- #### Bảo vệ bằng mật khẩu:
  Hạn chế quyền truy cập vào tài liệu của bạn bằng mật khẩu, đảm bảo chỉ những người dùng được ủy quyền mới có thể mở và xem chúng.
 - #### Mã hóa:
  Chuyển đổi nội dung của tài liệu sang định dạng xáo trộn bằng thuật toán mã hóa, khiến tài liệu không thể giải mã được nếu không có khóa giải mã chính xác.
@@ -28,7 +28,7 @@ Trước khi đi sâu vào các khía cạnh kỹ thuật, hãy hiểu các khá
  Đính kèm chữ ký số để xác minh tính xác thực và tính toàn vẹn của tài liệu.
 - #### Hình mờ:
  Phủ các hình mờ hiển thị hoặc vô hình để biểu thị quyền sở hữu hoặc tính bảo mật.
-- #### Sự biên tập:
+- #### Biên tập:
  Xóa vĩnh viễn thông tin nhạy cảm khỏi tài liệu.
 
 ### Lợi ích của việc mã hóa tài liệu
@@ -40,7 +40,7 @@ Mã hóa tài liệu cung cấp một lớp bảo mật bổ sung, khiến ngư�
 Trước khi chúng ta tiến hành bảo mật tài liệu, trước tiên chúng ta hãy làm quen với Aspose.Words cho Java. Đây là một thư viện giàu tính năng cho phép các nhà phát triển Java tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình. Để bắt đầu:
 
 1. ### Tải Aspose.Words cho Java:
-  Tham quan[Aspose.Rereleases](https://releases.aspose.com/words/java/) và tải xuống phiên bản mới nhất của Aspose.Words cho Java.
+  Ghé thăm[Aspose.Rereleases](https://releases.aspose.com/words/java/) và tải xuống phiên bản mới nhất của Aspose.Words cho Java.
 
 2. ### Cài đặt Thư viện:
  Sau khi quá trình tải xuống hoàn tất, hãy làm theo hướng dẫn cài đặt để thiết lập Aspose.Words trong dự án Java của bạn.
@@ -50,7 +50,7 @@ Trước khi chúng ta tiến hành bảo mật tài liệu, trước tiên chú
 Quá trình cài đặt Aspose.Words cho Java là một quá trình đơn giản. Hãy làm theo các bước đơn giản sau để thêm thư viện vào dự án Java của bạn:
 
 1. ### Tải xuống:
-  đi tới[Aspose.Rereleases](https://releases.aspose.com/words/java/) và tải xuống gói Aspose.Words cho Java.
+  đi đến[Aspose.Rereleases](https://releases.aspose.com/words/java/) và tải xuống gói Aspose.Words cho Java.
 
 2. ### Trích xuất:
  Giải nén gói đã tải xuống vào một vị trí thuận tiện trên máy tính của bạn.

@@ -96,7 +96,7 @@ Ces lignes imprimeront le type et la valeur de largeur préférés sur la consol
 
 ## Conclusion
 
-Et voila! La récupération du type de largeur préféré des cellules de tableau dans les documents Word à l'aide d'Aspose.Words pour .NET est simple lorsqu'elle est décomposée en étapes gérables. En suivant ce guide, vous pouvez facilement manipuler les propriétés des tableaux dans vos documents Word, rendant ainsi vos tâches de gestion de documents beaucoup plus efficaces.
+Et voilà ! La récupération du type de largeur préféré des cellules de tableau dans les documents Word à l'aide d'Aspose.Words pour .NET est simple lorsqu'elle est décomposée en étapes gérables. En suivant ce guide, vous pouvez facilement manipuler les propriétés des tableaux dans vos documents Word, rendant ainsi vos tâches de gestion de documents beaucoup plus efficaces.
 
 ## FAQ
 

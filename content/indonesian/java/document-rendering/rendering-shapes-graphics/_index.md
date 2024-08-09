@@ -161,8 +161,8 @@ shape.setFillColor(Color.GREEN);
 
 ### Bisakah saya menambahkan teks di dalam bentuk?
 
- Ya, Anda bisa menambahkan teks di dalam bentuk. Menggunakan`getTextPath` properti bentuk untuk mengatur teks dan menyesuaikan formatnya.
+ Ya, Anda bisa menambahkan teks di dalam bentuk. Gunakan`getTextPath` properti bentuk untuk mengatur teks dan menyesuaikan formatnya.
 
 ### Bagaimana cara menyusun bentuk dalam urutan tertentu?
 
- Anda dapat mengontrol urutan bentuk menggunakan properti Z-order. Mengatur`ZOrder` properti suatu bentuk untuk menentukan posisinya dalam tumpukan bentuk. Nilai yang lebih rendah dikirim ke belakang, sedangkan nilai yang lebih tinggi dibawa ke depan.
+ Anda dapat mengontrol urutan bentuk menggunakan properti Z-order. Atur`ZOrder` properti suatu bentuk untuk menentukan posisinya dalam tumpukan bentuk. Nilai yang lebih rendah dikirim ke belakang, sedangkan nilai yang lebih tinggi dibawa ke depan.

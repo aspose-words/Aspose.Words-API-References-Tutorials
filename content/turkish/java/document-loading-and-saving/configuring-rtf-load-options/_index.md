@@ -14,7 +14,7 @@ Bu kılavuzda Aspose.Words for Java kullanarak RTF yükleme seçeneklerinin nas�
 
 ## Önkoşullar
 
- Başlamadan önce Aspose.Words for Java kütüphanesinin projenize entegre olduğundan emin olun. adresinden indirebilirsiniz.[İnternet sitesi](https://releases.aspose.com/words/java/).
+ Başlamadan önce Aspose.Words for Java kütüphanesinin projenize entegre olduğundan emin olun. adresinden indirebilirsiniz.[web sitesi](https://releases.aspose.com/words/java/).
 
 ## 1. Adım: RTF Yükleme Seçeneklerini Ayarlama
 

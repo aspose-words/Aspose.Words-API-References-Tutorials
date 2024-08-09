@@ -64,7 +64,7 @@ doc.getLayoutOptions().setTextShaperFactory(HarfBuzzTextShaperFactory.getInstanc
 doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το σεμινάριο, μάθαμε πώς να χρησιμοποιούμε το HarfBuzz για τη διαμόρφωση κειμένου στο Aspose.Words για Java. Ακολουθώντας αυτά τα βήματα, μπορείτε να βελτιώσετε τις δυνατότητες επεξεργασίας εγγράφων του Word και να διασφαλίσετε τη σωστή απόδοση πολύπλοκων σεναρίων και γλωσσών.
 

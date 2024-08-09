@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- A beállítással`FontEmbeddingMode` nak nek`EmbedNone`, utasítjuk az Aspose.Words-t, hogy ne vegye fel ezeket a betűtípusokat a PDF-be, ezzel csökkentve a fájlméretet.
+ Beállítás által`FontEmbeddingMode` hogy`EmbedNone`, utasítjuk az Aspose.Words-t, hogy ne vegye fel ezeket a betűtípusokat a PDF-be, ezzel csökkentve a fájlméretet.
 
 ## 3. lépés: Mentse el a dokumentumot PDF formátumban
 
@@ -85,4 +85,4 @@ Igen, az Aspose.Words for .NET lehetővé teszi a beágyazott betűtípusok test
 Igen, az Aspose.Words for .NET biztosítja a PDF-fájlok betűtípus-beágyazási beállításainak konfigurálásához szükséges funkciókat.
 
 ### Hogyan kaphatok támogatást, ha problémákba ütközöm?
- Meglátogathatja a[Támogatói fórum](https://forum.aspose.com/c/words/8) segítségért bármilyen felmerülő problémával kapcsolatban.
+ Meglátogathatja a[Támogatási fórum](https://forum.aspose.com/c/words/8) segítségért bármilyen felmerülő problémával kapcsolatban.

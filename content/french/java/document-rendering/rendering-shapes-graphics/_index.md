@@ -107,7 +107,7 @@ Vous pouvez contrôler l'ordre dans lequel les formes sont affichées à l'aide 
 
 ```java
 shape1.setZOrder(1); // Mettre au premier plan
-shape2.setZOrder(0); // Envoyer au fond
+shape2.setZOrder(0); // Envoyer à l'arrière
 ```
 
 ## Enregistrer le document
@@ -127,7 +127,7 @@ Aspose.Words for Java est polyvalent et peut être utilisé dans divers scénari
 - Conception de certificats et de récompenses.
 - Ajout d'annotations et de légendes aux documents.
 
-## Des conseils de dépannage
+## Conseils de dépannage
 
 Si vous rencontrez des problèmes lorsque vous travaillez avec des formes et des graphiques, reportez-vous à la documentation Aspose.Words pour Java ou aux forums communautaires pour trouver des solutions. Les problèmes courants incluent la compatibilité des formats d’image et les problèmes liés aux polices.
 
@@ -165,4 +165,4 @@ shape.setFillColor(Color.GREEN);
 
 ### Comment puis-je disposer les formes dans un ordre spécifique ?
 
- Vous pouvez contrôler l'ordre des formes à l'aide de la propriété Z-order. Met le`ZOrder` propriété d'une forme pour déterminer sa position dans la pile de formes. Les valeurs inférieures sont envoyées à l'arrière-plan, tandis que les valeurs supérieures sont placées au premier plan.
+ Vous pouvez contrôler l'ordre des formes à l'aide de la propriété Z-order. Réglez le`ZOrder` propriété d'une forme pour déterminer sa position dans la pile de formes. Les valeurs inférieures sont envoyées à l'arrière-plan, tandis que les valeurs supérieures sont placées au premier plan.

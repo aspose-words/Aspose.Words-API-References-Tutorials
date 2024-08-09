@@ -17,7 +17,7 @@ Antes de começarmos, certifique-se de ter o seguinte:
 
 1. Visual Studio: instale o Visual Studio 2019 ou posterior.
 2. .NET Framework: certifique-se de ter o .NET Framework 4.0 ou posterior.
-3.  Aspose.Words for .NET: Baixe e instale Aspose.Words for .NET do[Link para Download](https://releases.aspose.com/words/net/).
+3.  Aspose.Words for .NET: Baixe e instale Aspose.Words for .NET do[link para baixar](https://releases.aspose.com/words/net/).
 4. Conhecimento básico de C#: Familiaridade com programação C# é essencial.
 5.  Uma licença válida: obtenha uma[licença temporária](https://purchase.aspose.com/temporary-license/) ou compre um no[comprar link](https://purchase.aspose.com/buy).
 
@@ -60,7 +60,7 @@ Chart chart = shape.Chart;
 
 ### Explicação
 
-- Forma da forma: representa o gráfico como uma forma no documento.
+- Forma da forma: Representa o gráfico como uma forma no documento.
 - builder.InsertChart(ChartType.Bar, 432, 252): Insere um gráfico de barras com dimensões especificadas.
 
 ## Etapa 3: acesse a série de gráficos
@@ -123,13 +123,13 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Aspose.Words for .NET é uma poderosa biblioteca de processamento de documentos que permite aos desenvolvedores criar, modificar e converter documentos do Word programaticamente.
 
 ### Como instalo o Aspose.Words para .NET?
- Você pode baixá-lo e instalá-lo no[Link para Download](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
+ Você pode baixá-lo e instalá-lo no[link para baixar](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
 
 ### Posso experimentar o Aspose.Words for .NET gratuitamente?
- Sim, você pode obter um[teste grátis](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/)para avaliar o produto.
+ Sim, você pode obter um[teste gratuito](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/)para avaliar o produto.
 
 ### O Aspose.Words for .NET é compatível com o .NET Core?
 Sim, Aspose.Words for .NET é compatível com .NET Core, .NET Standard e .NET Framework.
 
 ### Onde posso obter suporte para Aspose.Words for .NET?
- Você pode visitar o[Fórum de suporte](https://forum.aspose.com/c/words/8) para obter ajuda e assistência da comunidade e especialistas Aspose.
+ Você pode visitar o[fórum de suporte](https://forum.aspose.com/c/words/8) para obter ajuda e assistência da comunidade e especialistas Aspose.

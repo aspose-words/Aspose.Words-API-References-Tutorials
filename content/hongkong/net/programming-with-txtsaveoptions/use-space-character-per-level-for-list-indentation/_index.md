@@ -95,7 +95,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 是的，您可以透過設定為列表縮排指定不同的字符`Character`財產在`TxtSaveOptions`.
 
 ### 如何應用項目符號而不是清單中的數字？
-使用`ListFormat.ApplyBulletDefault()`代替`ApplyNumberDefault()`建立項目符號清單。
+使用`ListFormat.ApplyBulletDefault()`而不是`ApplyNumberDefault()`建立項目符號清單。
 
 ### 我可以動態調整縮排的空格數嗎？
 是的，您可以調整`ListIndentation.Count`屬性來根據您的要求設定空格數。

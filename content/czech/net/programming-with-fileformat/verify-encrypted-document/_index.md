@@ -15,7 +15,7 @@ url: /cs/net/programming-with-fileformat/verify-encrypted-document/
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
--  Aspose.Words for .NET Library: Můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Můžete si ji stáhnout z[zde](https://releases.aspose.com/words/net/).
 - .NET Framework: Ujistěte se, že máte na svém počítači nainstalováno rozhraní .NET.
 - IDE: Integrované vývojové prostředí jako Visual Studio.
 - Základní znalost C#: Pochopení základů C# vám pomůže snadněji sledovat.
@@ -46,13 +46,13 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Krok 3: Zkontrolujte, zda je dokument zašifrován
 
- Používáme`IsEncrypted` majetek z`FileFormatInfo` objekt pro kontrolu, zda je dokument zašifrován. Tato vlastnost se vrací`true` pokud je dokument zašifrován, jinak se vrátí`false`. Výsledek zobrazíme v konzole.
+ Používáme`IsEncrypted` vlastnictvím`FileFormatInfo` objekt pro kontrolu, zda je dokument zašifrován. Tato vlastnost se vrací`true` pokud je dokument zašifrován, jinak se vrátí`false`. Výsledek zobrazíme v konzole.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
 ```
 
-To je vše ! Úspěšně jste zkontrolovali, zda je dokument zašifrován pomocí Aspose.Words for .NET.
+To je vše! Úspěšně jste zkontrolovali, zda je dokument zašifrován pomocí Aspose.Words for .NET.
 
 ## Závěr
 
@@ -67,10 +67,10 @@ Aspose.Words for .NET je výkonná knihovna, která vám umožňuje vytvářet, 
 Ano, Aspose.Words for .NET je kompatibilní s .NET Framework i .NET Core.
 
 ### Jak získám dočasnou licenci pro Aspose.Words?
- Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
+ Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).
 
 ### Kde najdu další příklady a dokumentaci?
- Kompletní dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).
+ Komplexní dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

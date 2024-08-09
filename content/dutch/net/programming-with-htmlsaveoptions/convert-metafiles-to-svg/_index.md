@@ -81,7 +81,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 
 Dit vertelt Aspose.Words om alle metabestanden in het document op te slaan als SVG bij het exporteren naar HTML.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
  Laten we tot slot ons document opslaan. Wij gebruiken de`Save` werkwijze van de`Document` class en geef het directorypad door en sla opties op.
 

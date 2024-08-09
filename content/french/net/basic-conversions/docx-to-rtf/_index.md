@@ -86,7 +86,7 @@ Dans cette étape :
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment convertir un fichier DOCX au format RTF à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez désormais intégrer cette fonctionnalité dans vos propres applications et automatiser facilement les conversions de documents. N'oubliez pas qu'Aspose.Words offre une gamme de fonctionnalités au-delà de la conversion de format, alors explorez la documentation pour découvrir plus de possibilités de gestion de vos documents.
+Félicitations! Vous avez appris avec succès comment convertir un fichier DOCX au format RTF à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez désormais intégrer cette fonctionnalité dans vos propres applications et automatiser facilement les conversions de documents. N'oubliez pas qu'Aspose.Words offre une gamme de fonctionnalités au-delà de la conversion de format, alors explorez la documentation pour découvrir plus de possibilités de gestion de vos documents.
 
 ## FAQ
 
@@ -103,4 +103,4 @@ Oui, Aspose.Words prend en charge différents formats, vous pouvez donc converti
 Absolument! Intégrez ce code dans vos applications ou scripts pour automatiser le processus de conversion dans le cadre de vos workflows de gestion documentaire.
 
 ### Où puis-je trouver de l'aide supplémentaire si je rencontre des problèmes ?
- Visiter le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8) pour l'aide et le soutien de la communauté liés à Aspose.Words.
+ Visitez le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8) pour l'aide et le soutien de la communauté liés à Aspose.Words.

@@ -7,17 +7,18 @@ type: docs
 weight: 10
 url: /nl/net/working-with-fonts/font-settings-default-instance/
 ---
+## Invoering
 
-Welkom bij deze uitgebreide tutorial over het beheren van lettertype-instellingen met Aspose.Words voor .NET. Als u ooit problemen heeft ondervonden bij het omgaan met lettertypen in uw documenten, begeleidt deze handleiding u door alles wat u moet weten om lettertypen effectief aan te passen en te beheren. Laten we erin duiken!
+Welkom bij deze uitgebreide tutorial over het beheren van lettertype-instellingen met Aspose.Words voor .NET. Als u ooit problemen heeft ondervonden met het omgaan met lettertypen in uw documenten, begeleidt deze handleiding u door alles wat u moet weten om lettertypen effectief aan te passen en te beheren.
 
 ## Vereisten
 
 Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
 - Basiskennis van C#: Bekendheid met programmeren in C# zal u helpen de stappen soepel te begrijpen en te implementeren.
--  Aspose.Words voor .NET-bibliotheek: Download en installeer Aspose.Words voor .NET vanaf de[download link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET-bibliotheek: Download en installeer Aspose.Words voor .NET vanaf de[downloadlink](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Een geschikte omgeving zoals Visual Studio om uw code te schrijven en uit te voeren.
-- Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om de lettertype-instellingen toe te passen.
+-  Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om de lettertype-instellingen toe te passen.
 
 ## Naamruimten importeren
 
@@ -77,22 +78,22 @@ Gefeliciteerd! U beheerst de basisprincipes van het beheren van lettertype-inste
 
 ## Veelgestelde vragen
 
-### V1: Kan ik lettertypen uit meerdere aangepaste mappen gebruiken?
+### Kan ik lettertypen uit meerdere aangepaste mappen gebruiken?
 
  Ja, u kunt er meerdere opgeven`FolderFontSource` exemplaren binnen de`SetFontsSources` methode om lettertypen uit verschillende mappen op te nemen.
 
-### V2: Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?
+### Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?
 
  U kunt een gratis proefversie downloaden van de[Aspose gratis proefpagina](https://releases.aspose.com/).
 
-### Vraag 3: Is het mogelijk om lettertypen rechtstreeks in het document in te sluiten?
+### Is het mogelijk om lettertypen rechtstreeks in het document in te sluiten?
 
 Aspose.Words maakt het insluiten van lettertypen in sommige formaten mogelijk, zoals PDF. Raadpleeg de documentatie voor meer informatie over het insluiten van lettertypen.
 
-### V4: Waar kan ik ondersteuning krijgen voor Aspose.Words?
+### Waar kan ik ondersteuning krijgen voor Aspose.Words?
 
  Voor ondersteuning kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
-### Vraag 5: Kan ik een tijdelijke licentie kopen?
+### Kan ik een tijdelijke licentie kopen?
 
  Ja, u kunt een tijdelijke licentie verkrijgen bij de[tijdelijke licentiepagina](https://purchase.aspose.com/temporary-license/).

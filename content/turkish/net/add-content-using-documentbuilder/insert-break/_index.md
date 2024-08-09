@@ -68,7 +68,7 @@ builder.Writeln("This is page 1.");
 
 ## Adım 5: Sayfa Sonu Ekleme
 
- Şimdi işin eğlenceli kısmı geliyor. Bir sonraki sayfaya geçmek için sayfa sonu eklememiz gerekiyor. numarayı aramak kadar basit`InsertBreak` yöntem.
+ Şimdi işin eğlenceli kısmı geliyor. Bir sonraki sayfaya geçmek için sayfa sonu eklememiz gerekiyor. numarayı aramak kadar basit`InsertBreak` Yöntem.
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -106,11 +106,11 @@ Son olarak belgemizi kaydetmemiz gerekiyor. Tüm sıkı çalışmanızın bir ar
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak başarıyla bir Word belgesi oluşturdunuz ve sayfa sonları eklediniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak başarıyla bir Word belgesi oluşturdunuz ve sayfa sonları eklediniz.
 
 ## Çözüm
 
-Çok eğlenceli değil miydi? Aspose.Words for .NET ile Word belgelerinde değişiklik yapmak çocuk oyuncağıdır. İster basit sayfa sonları ekleyin ister karmaşık belge otomasyonu gerçekleştirin, bu kitaplık hayatınızı çok daha kolaylaştırır. Öyleyse devam edin ve Aspose.Words'ün neler yapabileceğini daha fazla keşfedin. İmkanlar sonsuzdur!
+Çok eğlenceli değil miydi? Aspose.Words for .NET ile Word belgelerinde değişiklik yapmak çocuk oyuncağıdır. İster basit sayfa sonları ekleyin ister karmaşık belge otomasyonu gerçekleştirin, bu kitaplık hayatınızı çok daha kolaylaştırır. Öyleyse devam edin ve Aspose.Words'ün neler yapabileceğini daha fazla keşfedin. Olasılıklar sonsuzdur!
 
 ## SSS'ler
 

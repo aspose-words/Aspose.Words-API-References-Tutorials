@@ -113,7 +113,7 @@ Ya, Aspose.Words menyediakan berbagai opsi untuk menyesuaikan proses impor, term
 
 ### Apakah mungkin untuk menyimpan header dan footer alih-alih mengabaikannya?
 
- Sangat. Cukup atur`IgnoreHeaderFooter` ke`false` dalam`ImportFormatOptions`.
+ Sangat. Cukup atur`IgnoreHeaderFooter` ke`false` di`ImportFormatOptions`.
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
 

@@ -9,13 +9,13 @@ url: /vi/net/working-with-fields/insert-author-field/
 ---
 ## Giới thiệu
 
-Trong hướng dẫn này, chúng ta sẽ đi sâu vào chi tiết về cách chèn trường tác giả vào tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang tự động hóa việc tạo tài liệu cho doanh nghiệp của mình hay chỉ muốn cá nhân hóa các tệp của mình, hướng dẫn từng bước này sẽ giúp bạn. Chúng tôi sẽ hướng dẫn mọi thứ từ việc thiết lập môi trường cho đến lưu tài liệu đã hoàn thành của bạn. Bắt đầu nào!
+Trong hướng dẫn này, chúng ta sẽ đi sâu vào chi tiết về cách chèn trường tác giả vào tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang tự động hóa việc tạo tài liệu cho doanh nghiệp của mình hay chỉ muốn cá nhân hóa các tệp của mình, hướng dẫn từng bước này sẽ giúp bạn. Chúng tôi sẽ hướng dẫn mọi thứ từ việc thiết lập môi trường cho đến lưu tài liệu đã hoàn thành của bạn. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi bắt đầu phần hướng dẫn, hãy đảm bảo bạn có mọi thứ mình cần:
 
--  Aspose.Words for .NET Thư viện: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Thư viện: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Visual Studio: Đây là nơi chúng ta sẽ viết và chạy mã của mình.
 - .NET Framework: Đảm bảo bạn đã cài đặt nó trên máy của mình.
 - Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp bạn theo dõi.
@@ -116,7 +116,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công trường tác giả vào tài liệu Word bằng Aspose.Words cho .NET.
+Và bạn có nó! Bạn đã chèn thành công trường tác giả vào tài liệu Word bằng Aspose.Words cho .NET.
 
 ## Phần kết luận
 

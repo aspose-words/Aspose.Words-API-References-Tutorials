@@ -15,7 +15,7 @@ Menjelajahi dunia manipulasi dokumen terkadang terasa seperti berjalan-jalan di 
 
 Sebelum kita memulai perjalanan ini, mari kumpulkan semua hal penting yang Anda perlukan untuk memulai.
 
-- Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+- Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Lingkungan pengembangan yang kompatibel dengan .NET seperti Visual Studio.
 -  Contoh Dokumen: Dokumen Word (misalnya,`Paragraphs.docx`) yang akan Anda konversi ke PDF.
 
@@ -59,7 +59,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Langkah 4: Simpan Dokumen sebagai PDF
 
-Dengan opsi penyimpanan yang dikonfigurasi, langkah terakhir adalah menyimpan dokumen sebagai PDF. Ini adalah dimana keajaiban terjadi!
+Dengan opsi penyimpanan yang dikonfigurasi, langkah terakhir adalah menyimpan dokumen sebagai PDF. Di sinilah keajaiban terjadi!
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/keep-source-together/
 ---
-## Úvod
+## Zavedení
 
 V dnešní digitální době je programová manipulace s dokumenty Wordu zásadní v různých odvětvích. Aspose.Words for .NET umožňuje vývojářům efektivně automatizovat úlohy manipulace s dokumenty. Tento komplexní průvodce vás provede procesem slučování dokumentů při zachování formátování zdroje pomocí Aspose.Words for .NET.
 
@@ -90,10 +90,10 @@ Ano, dokáže sloučit dokumenty bez ohledu na jejich formát, přičemž zachov
 Rozhodně zvládne velké dokumenty s optimálním výkonem.
 
 ### Je k dispozici zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Jak mohu získat technickou podporu pro Aspose.Words pro .NET?
  Technická podpora je k dispozici prostřednictvím[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Mohu si zakoupit dočasnou licenci pro Aspose.Words pro .NET?
- Ano, můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Ano, můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).

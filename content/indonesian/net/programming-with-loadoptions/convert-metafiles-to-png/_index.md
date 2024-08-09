@@ -82,7 +82,7 @@ Selamat! Anda telah berhasil mengonversi metafile ke PNG di dokumen Word menggun
 ## FAQ
 
 ### Bisakah saya mengonversi jenis file lain selain metafile ke PNG?
- Aspose.Words for .NET menyediakan dukungan ekstensif untuk berbagai format file. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+ Aspose.Words for .NET menyediakan dukungan ekstensif untuk berbagai format file. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
 ### Apakah ada cara untuk memproses banyak dokumen secara batch?
 Ya, Anda dapat menelusuri direktori dokumen dan menerapkan opsi pemuatan yang sama ke setiap file.

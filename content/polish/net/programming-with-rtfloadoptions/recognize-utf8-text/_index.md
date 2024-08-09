@@ -15,7 +15,7 @@ Gotowy, aby zanurzyć się w niesamowitych rzeczach technicznych? Dzisiaj zajmie
 
 Zanim przejdziemy do zabawnej części, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla biblioteki .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/) . Jeśli jeszcze go nie kupiłeś, złap[bezpłatna wersja próbna](https://releases.aspose.com/) Lub[kup go tutaj](https://purchase.aspose.com/buy).
+1.  Aspose.Words dla biblioteki .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/) . Jeśli jeszcze go nie kupiłeś, złap[bezpłatna wersja próbna](https://releases.aspose.com/) Lub[kup go tutaj](https://purchase.aspose.com/buy).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE obsługujące platformę .NET.
 3. Podstawowa znajomość języka C#: Aby móc dalej pracować, musisz znać język C#.
 
@@ -49,7 +49,7 @@ Następnie musimy skonfigurować opcje ładowania, aby rozpoznawały tekst UTF-8
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- Przez ustawienie`RecognizeUtf8Text` Do`true`, mówimy Aspose.Words, aby szukał tekstu w formacie UTF-8. Jest to bardzo przydatne w przypadku dokumentów zawierających różne znaki.
+ Ustawiając`RecognizeUtf8Text` Do`true`, mówimy Aspose.Words, aby szukał tekstu w formacie UTF-8. Jest to bardzo przydatne w przypadku dokumentów zawierających różne znaki.
 
 ## Krok 3: Załaduj dokument
 

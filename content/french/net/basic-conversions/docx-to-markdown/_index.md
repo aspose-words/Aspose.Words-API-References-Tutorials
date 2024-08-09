@@ -9,7 +9,7 @@ url: /fr/net/basic-conversions/docx-to-markdown/
 ---
 ## Introduction
 
-Dans le domaine du développement .NET, la manipulation de documents Word par programmation peut considérablement améliorer la productivité et les fonctionnalités. Aspose.Words for .NET se distingue comme une API puissante qui permet aux développeurs d'intégrer de manière transparente des capacités de traitement de documents dans leurs applications. Que vous cherchiez à convertir, créer, modifier ou même générer des documents à partir de zéro, Aspose.Words fournit des outils robustes pour rationaliser efficacement ces tâches.
+Dans le domaine du développement .NET, la manipulation de documents Word par programmation peut considérablement améliorer la productivité et les fonctionnalités. Aspose.Words for .NET se distingue comme une API puissante qui permet aux développeurs d'intégrer de manière transparente les capacités de traitement de documents dans leurs applications. Que vous cherchiez à convertir, créer, modifier ou même générer des documents à partir de zéro, Aspose.Words fournit des outils robustes pour rationaliser efficacement ces tâches.
 
 ## Conditions préalables
 

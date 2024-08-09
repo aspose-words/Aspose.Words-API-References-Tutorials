@@ -80,7 +80,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 ### 附加作者字段
 
-1. 插入字段：使用`AppendField`方法将作者字段插入段落。
+1. 插入字段：使用`AppendField`方法将作者字段插入到段落中。
 
 ```csharp
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);

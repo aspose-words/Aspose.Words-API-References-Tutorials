@@ -9,7 +9,7 @@ url: /de/net/programming-with-table-styles-and-formatting/build-table-with-style
 ---
 ## Einführung
 
-Zum Erstellen stilvoller, professioneller Dokumente ist oft mehr als nur einfacher Text erforderlich. Tabellen sind eine fantastische Möglichkeit, Daten zu organisieren, aber sie ansprechend aussehen zu lassen, ist eine ganz andere Herausforderung. Hier kommt Aspose.Words für .NET ins Spiel! In diesem Tutorial erfahren Sie, wie Sie eine stilvolle Tabelle erstellen, die Ihren Word-Dokumenten ein elegantes und professionelles Aussehen verleiht.
+Zum Erstellen stilvoller, professioneller Dokumente ist oft mehr als nur einfacher Text erforderlich. Tabellen sind eine fantastische Möglichkeit, Daten zu organisieren, aber sie ansprechend aussehen zu lassen, ist eine ganz andere Herausforderung. Hier kommt Aspose.Words für .NET ins Spiel! In diesem Tutorial erfahren Sie, wie Sie eine Tabelle mit Stil erstellen, damit Ihre Word-Dokumente elegant und professionell aussehen.
 
 ## Voraussetzungen
 

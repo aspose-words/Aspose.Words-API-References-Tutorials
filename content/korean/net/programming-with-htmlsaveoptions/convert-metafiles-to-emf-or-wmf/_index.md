@@ -20,7 +20,7 @@ url: /ko/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 3. 개발 환경: Visual Studio와 같은 IDE는 여러분의 삶을 더 쉽게 만들어줄 것입니다.
 4. C#에 대한 기본 지식: 전문가가 될 필요는 없지만 기본적인 이해가 있으면 도움이 됩니다.
 
-모든 것을 얻었나요? 엄청난! 시작하자.
+모든 것을 얻었나요? 엄청난! 시작해 봅시다.
 
 ## 네임스페이스 가져오기
 

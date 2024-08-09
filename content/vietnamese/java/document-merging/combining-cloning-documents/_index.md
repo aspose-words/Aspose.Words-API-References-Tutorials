@@ -120,7 +120,7 @@ Cuối cùng, lưu tài liệu nhân bản vào một tập tin.
 clonedDoc.save("cloned_document.docx");
 ```
 
-## Kỹ thuật tiên tiến
+## Kỹ thuật nâng cao
 
 Trong phần này, chúng ta sẽ khám phá các kỹ thuật nâng cao để làm việc với Aspose.Words trong Java, chẳng hạn như xử lý các cấu trúc tài liệu phức tạp và áp dụng định dạng tùy chỉnh.
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
-## introduzione
+## Introduzione
 
 Ehi, appassionati di tecnologia! Ti sei mai trovato in difficoltà cercando di incorporare caratteri in un documento PDF utilizzando Aspose.Words per .NET? Bene, sei nel posto giusto! In questo tutorial, approfondiremo l'essenza dell'incorporamento dei caratteri nei tuoi PDF. Che tu sia un principiante o un professionista esperto, questa guida ti guiderà attraverso ogni passaggio in modo semplice e coinvolgente. Alla fine, sarai un mago nel garantire che i tuoi PDF mantengano l'aspetto previsto, indipendentemente da dove vengono visualizzati. Quindi cominciamo, ok?
 
@@ -76,7 +76,7 @@ In questa riga salviamo il documento come PDF nella directory dei documenti, inc
 
 ## Conclusione
 
-E il gioco è fatto! Hai incorporato con successo i caratteri in un documento PDF utilizzando Aspose.Words per .NET. Con questa conoscenza, puoi garantire che i tuoi PDF mantengano l'aspetto previsto, indipendentemente da dove vengono visualizzati. Non è bello? Ora vai avanti e provalo con i tuoi documenti.
+Ed ecco qua! Hai incorporato con successo i caratteri in un documento PDF utilizzando Aspose.Words per .NET. Con questa conoscenza, puoi garantire che i tuoi PDF mantengano l'aspetto previsto, indipendentemente da dove vengono visualizzati. Non è bello? Ora vai avanti e provalo con i tuoi documenti.
 
 ## Domande frequenti
 

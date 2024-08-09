@@ -97,7 +97,7 @@ Menambahkan tanda air teks ke dokumen Word Anda menggunakan Aspose.Words untuk .
 
 ### Bagaimana cara mengubah warna tanda air?
 
- Anda dapat mengubah warna tanda air dengan mengatur`Color` properti di`TextWatermarkOptions` untuk setiap`System.Drawing.Color` nilai.
+ Anda dapat mengubah warna tanda air dengan mengatur`Color` properti di`TextWatermarkOptions` untuk siapa pun`System.Drawing.Color` nilai.
 
 ### Apakah mungkin menambahkan banyak tanda air ke dokumen?
 
@@ -109,4 +109,4 @@ Aspose.Words mendukung penambahan satu tanda air dalam satu waktu. Untuk menamba
 
 ### Bagaimana jika saya memerlukan tanda air semi transparan?
 
- Mengatur`IsSemitrasparent`properti ke`true` untuk membuat tanda air Anda semi-transparan.
+ Atur`IsSemitrasparent`properti ke`true` untuk membuat tanda air Anda semi-transparan.

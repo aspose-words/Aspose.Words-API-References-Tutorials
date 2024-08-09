@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/font-settings-default-instance/
 ---
+## Wstęp
 
-Witamy w tym szczegółowym samouczku na temat zarządzania ustawieniami czcionek za pomocą Aspose.Words dla .NET. Jeśli kiedykolwiek napotkałeś problemy związane z obsługą czcionek w dokumentach, ten przewodnik przeprowadzi Cię przez wszystko, co musisz wiedzieć, aby skutecznie dostosowywać czcionki i zarządzać nimi. Zanurzmy się!
+Witamy w tym szczegółowym samouczku na temat zarządzania ustawieniami czcionek za pomocą Aspose.Words dla .NET. Jeśli kiedykolwiek napotkałeś problemy związane z obsługą czcionek w dokumentach, ten przewodnik przeprowadzi Cię przez wszystko, co musisz wiedzieć, aby skutecznie dostosowywać czcionki i zarządzać nimi.
 
 ## Warunki wstępne
 
@@ -17,7 +18,7 @@ Zanim zaczniemy, upewnij się, że masz następujące elementy:
 - Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci płynnie zrozumieć i wdrożyć kroki.
 -  Biblioteka Aspose.Words dla .NET: Pobierz i zainstaluj Aspose.Words dla .NET z[link do pobrania](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: odpowiednie środowisko, takie jak Visual Studio, do pisania i wykonywania kodu.
-- Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), aby zastosować ustawienia czcionki.
+-  Przykładowy dokument: przykładowy dokument (np.`Rendering.docx`), aby zastosować ustawienia czcionki.
 
 ## Importuj przestrzenie nazw
 
@@ -77,22 +78,22 @@ Gratulacje! Opanowałeś podstawy zarządzania ustawieniami czcionek przy użyci
 
 ## Często zadawane pytania
 
-### P1: Czy mogę używać czcionek z wielu folderów niestandardowych?
+### Czy mogę używać czcionek z wielu folderów niestandardowych?
 
  Tak, możesz określić wiele`FolderFontSource` przypadki w`SetFontsSources` metoda dołączania czcionek z różnych folderów.
 
-### P2: Jak uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
+### Jak uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
 
  Możesz pobrać bezpłatną wersję próbną ze strony[Aspose bezpłatna strona próbna](https://releases.aspose.com/).
 
-### P3: Czy możliwe jest osadzanie czcionek bezpośrednio w dokumencie?
+### Czy można osadzić czcionki bezpośrednio w dokumencie?
 
 Aspose.Words umożliwia osadzanie czcionek w niektórych formatach, np. PDF. Więcej szczegółów na temat osadzania czcionek znajdziesz w dokumentacji.
 
-### P4: Gdzie mogę uzyskać wsparcie dla Aspose.Words?
+### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words?
 
  Aby uzyskać pomoc, odwiedź stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### P5: Czy mogę kupić licencję tymczasową?
+### Czy mogę kupić licencję tymczasową?
 
  Tak, możesz uzyskać tymczasową licencję od[strona licencji tymczasowej](https://purchase.aspose.com/temporary-license/).

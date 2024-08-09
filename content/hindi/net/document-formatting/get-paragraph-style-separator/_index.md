@@ -99,4 +99,4 @@ using System;
  आप यहाँ से सहायता प्राप्त कर सकते हैं[Aspose.Words फ़ोरम](https://forum.aspose.com/c/words/8).
 
 ### क्या मैं Aspose.Words का निःशुल्क उपयोग कर सकता हूँ?
- Aspose.Words प्रदान करता है एक[मुफ्त परीक्षण](https://releases.aspose.com/) और यह भी प्रदान करता है[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन के लिए।
+ Aspose.Words प्रदान करता है एक[मुफ्त परीक्षण](https://releases.aspose.com/) और यह भी प्रदान करता है[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.

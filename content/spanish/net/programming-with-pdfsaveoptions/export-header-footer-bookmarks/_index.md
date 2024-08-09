@@ -72,7 +72,7 @@ En este paso, guardará el documento en la ruta especificada con las opciones qu
 
 ### ¿Puedo exportar todos los marcadores del documento de Word a PDF?
 
- Sí tu puedes. En el`PdfSaveOptions`, puede ajustar la configuración para incluir todos los marcadores si es necesario.
+ Sí, puedes. En el`PdfSaveOptions`, puede ajustar la configuración para incluir todos los marcadores si es necesario.
 
 ### ¿Qué pasa si también quiero exportar marcadores del cuerpo del documento?
 

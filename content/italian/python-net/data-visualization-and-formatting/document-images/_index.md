@@ -8,7 +8,7 @@ weight: 11
 url: /it/python-net/data-visualization-and-formatting/document-images/
 ---
 
-## introduzione
+## Introduzione
 
 In un mondo in cui la capacità di attenzione si riduce e il sovraccarico di informazioni è una sfida costante, l'utilizzo di immagini multimediali diventa una strategia cruciale per far risaltare i tuoi documenti. I contenuti visivi hanno la capacità unica di trasmettere rapidamente concetti complessi, rendendo più semplice per il pubblico cogliere idee e approfondimenti chiave.
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
-## Úvod
+## Zavedení
 
 Převod dokumentů aplikace Word do formátu PDF je běžný úkol, zejména pokud chcete dokumenty sdílet nebo archivovat při zachování jejich formátování. Někdy tyto dokumenty obsahují důležité záložky v záhlaví a zápatí. V tomto tutoriálu projdeme procesem exportu těchto záložek z dokumentu Word do PDF pomocí Aspose.Words for .NET.
 
@@ -15,7 +15,7 @@ Převod dokumentů aplikace Word do formátu PDF je běžný úkol, zejména pok
 
 Než se ponoříme, ujistěte se, že máte následující:
 
-- Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Nastavte své vývojové prostředí. Můžete použít Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 - Základní znalost C#: Spolu s příklady kódu je vyžadována znalost programování C#.
 
@@ -72,7 +72,7 @@ tady to máte! Podle těchto kroků můžete snadno exportovat záložky ze záh
 
 ### Mohu exportovat všechny záložky z dokumentu Word do PDF?
 
- Ano můžeš. V`PdfSaveOptions`, můžete v případě potřeby upravit nastavení tak, aby zahrnovala všechny záložky.
+ Ano, můžete. V`PdfSaveOptions`, můžete v případě potřeby upravit nastavení tak, aby zahrnovala všechny záložky.
 
 ### Co když chci exportovat záložky i z těla dokumentu?
 

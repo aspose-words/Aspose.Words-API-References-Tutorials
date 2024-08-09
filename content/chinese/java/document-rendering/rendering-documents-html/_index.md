@@ -64,7 +64,7 @@ public class DocumentRenderer {
 }
 ```
 
-此代码将以 HTML 格式保存您的文档。您可以通过调整`HtmlSaveOptions`如所须。
+此代码将以 HTML 格式保存您的文档。您可以通过调整`HtmlSaveOptions`根据需要。
 
 ## 步骤 4：运行代码
 

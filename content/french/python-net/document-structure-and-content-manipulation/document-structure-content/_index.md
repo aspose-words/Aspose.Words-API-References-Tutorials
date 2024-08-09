@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## Chargement et création de documents Word
 
-Vous pouvez charger un document Word existant ou en créer un nouveau à partir de zéro. Voici comment:
+Vous pouvez charger un document Word existant ou en créer un nouveau à partir de zéro. Voici comment procéder :
 
 ```python
 from aspose.words import Document
@@ -178,7 +178,7 @@ for data in dataset:
 
 - Gardez votre code organisé en utilisant des fonctions pour différentes tâches de manipulation de documents.
 - Utilisez la gestion des exceptions pour gérer efficacement les erreurs lors du traitement des documents.
--  Vérifier la[Documentation Aspose.Words](https://reference.aspose.com/words/python-net/) pour des références API détaillées et des exemples.
+-  Vérifiez le[Documentation Aspose.Words](https://reference.aspose.com/words/python-net/) pour des références API détaillées et des exemples.
 
 ## Conclusion
 
@@ -204,7 +204,7 @@ Absolument! Aspose.Words vous permet d'automatiser la génération de documents 
 
 ### Où puis-je trouver plus d’informations sur les fonctionnalités Aspose.Words Python ?
 
- Pour des informations complètes sur les fonctionnalités Aspose.Words Python, reportez-vous au[Documentation](https://reference.aspose.com/words/python-net/).
+ Pour des informations complètes sur les fonctionnalités Aspose.Words Python, reportez-vous au[documentation](https://reference.aspose.com/words/python-net/).
 
 ### Comment enregistrer mon document au format PDF avec Aspose.Words ?
 

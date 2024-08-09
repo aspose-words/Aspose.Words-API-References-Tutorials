@@ -35,7 +35,7 @@ Di akhir tutorial ini, Anda akan memiliki keterampilan membuat tabel yang dinami
 
 ## Tabel dan Tutorial Pemformatan
 ### [Membuat dan Memformat Tanda Air untuk Estetika Dokumen](./manage-document-watermarks/)
-Pelajari cara membuat dan memformat tanda air dalam dokumen menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk menambahkan tanda air teks dan gambar. Tingkatkan estetika dokumen Anda dengan tutorial ini.
+Pelajari cara membuat dan memformat tanda air di dokumen menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk menambahkan tanda air teks dan gambar. Tingkatkan estetika dokumen Anda dengan tutorial ini.
 ### [Mengoptimalkan Tabel untuk Penyajian Data di Dokumen Word](./document-tables/)
 Pelajari cara mengoptimalkan tabel untuk presentasi data di dokumen Word menggunakan Aspose.Words untuk Python. Tingkatkan keterbacaan dan daya tarik visual dengan panduan langkah demi langkah dan contoh kode sumber.
 ### [Gaya dan Pemformatan Tabel Dokumen](./document-table-styles-formatting/)

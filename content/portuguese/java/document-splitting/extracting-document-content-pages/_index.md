@@ -18,7 +18,7 @@ Aspose.Words for Java é uma virada de jogo quando se trata de trabalhar com doc
 
 ### Configurando seu ambiente de desenvolvimento
 
-Antes de começarmos a trabalhar com Aspose.Words for Java, precisamos configurar nosso ambiente de desenvolvimento. Siga esses passos:
+Antes de começarmos a trabalhar com Aspose.Words for Java, precisamos configurar nosso ambiente de desenvolvimento. Siga estas etapas:
 
 1. Instale o Java: Se você não tiver o Java instalado, baixe e instale a versão mais recente do site.
 

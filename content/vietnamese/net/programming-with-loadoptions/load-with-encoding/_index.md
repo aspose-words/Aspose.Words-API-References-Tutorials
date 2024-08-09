@@ -9,13 +9,13 @@ url: /vi/net/programming-with-loadoptions/load-with-encoding/
 ---
 ## Giới thiệu
 
-Này! Vì vậy, bạn đang làm việc với các tài liệu Word và cần tải một tài liệu có mã hóa cụ thể? Có thể bạn đã gặp các tài liệu có văn bản được mã hóa bằng UTF-7 và bạn đang loay hoay tìm cách xử lý chúng. Vâng, bạn đang ở đúng nơi! Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể tải tài liệu Word bằng mã hóa cụ thể bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này cho phép bạn thao tác với tài liệu Word theo những cách mà bạn có thể chưa bao giờ nghĩ là có thể. Bắt đầu nào!
+Này! Vì vậy, bạn đang làm việc với các tài liệu Word và cần tải một tài liệu có mã hóa cụ thể? Có thể bạn đã gặp các tài liệu có văn bản được mã hóa bằng UTF-7 và bạn đang loay hoay tìm cách xử lý chúng. Vâng, bạn đang ở đúng nơi! Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể tải tài liệu Word bằng mã hóa cụ thể bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này cho phép bạn thao tác với tài liệu Word theo những cách mà bạn có thể chưa bao giờ nghĩ là có thể. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo bạn có mọi thứ mình cần:
 
-1.  Aspose.Words cho .NET: Bạn có thể[Tải xuống](https://releases.aspose.com/words/net/) phiên bản mới nhất.
+1.  Aspose.Words cho .NET: Bạn có thể[tải về](https://releases.aspose.com/words/net/) phiên bản mới nhất.
 2. Môi trường phát triển .NET: Visual Studio hoạt động hoàn hảo.
 3. Tài liệu Word: Đảm bảo tài liệu được mã hóa theo định dạng bạn đang xử lý, như UTF-7.
 
@@ -70,7 +70,7 @@ Dòng mã này tải tài liệu từ đường dẫn đã chỉ định bằng 
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tải thành công tài liệu Word có mã hóa cụ thể bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng xử lý các mã hóa văn bản khác nhau và đảm bảo rằng tài liệu của bạn được xử lý chính xác. Cho dù bạn đang xử lý các tài liệu cũ hay làm việc với văn bản quốc tế, Aspose.Words đều có thể giúp bạn.
+Và bạn có nó! Bạn đã tải thành công tài liệu Word có mã hóa cụ thể bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng xử lý các mã hóa văn bản khác nhau và đảm bảo rằng tài liệu của bạn được xử lý chính xác. Cho dù bạn đang xử lý các tài liệu cũ hay làm việc với văn bản quốc tế, Aspose.Words đều có thể giúp bạn.
 
 ## Câu hỏi thường gặp
 

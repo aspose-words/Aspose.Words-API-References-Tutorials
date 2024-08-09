@@ -283,7 +283,7 @@ Thông tin tài liệu rất cần thiết vì nó cho phép các tổ chức h�
 Aspose.Words là một thư viện Python mạnh mẽ cung cấp nhiều khả năng xử lý tài liệu. Nó cho phép người dùng tạo, chỉnh sửa, trích xuất và thao tác với tài liệu Word theo chương trình, khiến nó trở thành một công cụ có giá trị cho các tác vụ thu thập thông tin tài liệu.
 
 ### Aspose.Words có thể xử lý các định dạng tài liệu khác ngoài tài liệu Word (DOCX) không?
-Có, mặc dù Aspose.Words chủ yếu tập trung vào các tài liệu Word (DOCX), nhưng nó cũng có thể xử lý các định dạng khác như RTF (Định dạng văn bản có định dạng) và ODT (Văn bản OpenDocument).
+Có, mặc dù Aspose.Words chủ yếu tập trung vào tài liệu Word (DOCX), nhưng nó cũng có thể xử lý các định dạng khác như RTF (Rich Text Format) và ODT (OpenDocument Text).
 
 ### Aspose.Words có tương thích với phiên bản Python 3.x không?
 Có, Aspose.Words hoàn toàn tương thích với các phiên bản Python 3.x, đảm bảo người dùng có thể khai thác các tính năng và cải tiến mới nhất do Python cung cấp.

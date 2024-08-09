@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/skip-pdf-images/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, nadšenci Aspose.Words! Dnes se ponoříme do fantastické funkce Aspose.Words pro .NET: jak přeskočit obrázky PDF při načítání dokumentu. Tento tutoriál vás provede celým procesem a zajistí, že každý krok snadno pochopíte. Takže se připoutejte a připravte se na zvládnutí tohoto šikovného triku.
 
@@ -15,7 +15,7 @@ Ahoj, nadšenci Aspose.Words! Dnes se ponoříme do fantastické funkce Aspose.W
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Stáhněte si nejnovější verzi[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Stáhněte si nejnovější verzi[zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Jakákoli nejnovější verze by měla fungovat dobře.
 - Základní porozumění C#: Nemusíte být profík, ale základní pochopení vám pomůže.
 - Dokument PDF: Připravte si vzorový dokument PDF k testování.
@@ -73,7 +73,7 @@ S nastavenými možnostmi načtení jste připraveni načíst dokument PDF. Tent
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Ujisti se že`"Pdf Document.pdf"` je název vašeho souboru PDF v zadaném adresáři.
+ Zajistěte to`"Pdf Document.pdf"` je název vašeho souboru PDF v zadaném adresáři.
 
 ## Závěr
 

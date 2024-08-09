@@ -9,7 +9,7 @@ url: /id/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
 ## Perkenalan
 
-Hai, para penggemar coding! Pernahkah Anda bertanya-tanya bagaimana cara mengonversi metafile ke SVG di dokumen Word Anda menggunakan Aspose.Words untuk .NET? Nah, Anda siap menerima hadiahnya! Hari ini, kita akan mendalami dunia Aspose.Words, perpustakaan canggih yang memudahkan manipulasi dokumen. Di akhir tutorial ini, Anda akan menjadi ahli dalam mengonversi metafile ke SVG, menjadikan dokumen Word Anda lebih serbaguna dan menarik secara visual. Jadi, mari kita mulai, oke?
+Hai, para penggemar coding! Pernahkah Anda bertanya-tanya bagaimana cara mengonversi metafile ke SVG di dokumen Word Anda menggunakan Aspose.Words untuk .NET? Nah, Anda siap menerima hadiahnya! Hari ini, kita akan mendalami dunia Aspose.Words, perpustakaan canggih yang memudahkan manipulasi dokumen. Di akhir tutorial ini, Anda akan menjadi ahli dalam mengonversi metafile ke SVG, menjadikan dokumen Word Anda lebih fleksibel dan menarik secara visual. Jadi, mari kita mulai, ya?
 
 ## Prasyarat
 
@@ -22,7 +22,7 @@ Sebelum kita masuk ke detail seluk beluknya, mari pastikan kita memiliki semua y
 
 ## Impor Namespace
 
-Hal pertama yang pertama, mari kita impor. Dalam proyek C# Anda, Anda harus mengimpor namespace yang diperlukan. Ini penting untuk mengakses fungsi Aspose.Words.
+Hal pertama yang pertama, mari kita impor. Dalam proyek C# Anda, Anda harus mengimpor namespace yang diperlukan. Ini penting untuk mengakses fungsionalitas Aspose.Words.
 
 ```csharp
 using Aspose.Words;

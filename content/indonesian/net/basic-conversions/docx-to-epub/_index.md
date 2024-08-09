@@ -59,7 +59,7 @@ Ya, Anda dapat mengonversi file DOCX secara batch ke EPUB atau format lain mengg
 Ya, Aspose.Words sepenuhnya mendukung .NET Core dan .NET Framework.
 
 ### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi untuk Aspose.Words?
- Mengunjungi[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/) untuk contoh detail dan referensi API.
+ Kunjungi[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/) untuk contoh detail dan referensi API.
 
 ### Bagaimana saya bisa mendapatkan dukungan untuk masalah terkait Aspose.Words?
  Untuk dukungan, kunjungi[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8) tempat Anda dapat bertanya dan berinteraksi dengan komunitas.

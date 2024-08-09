@@ -10,7 +10,7 @@ url: /id/java/document-loading-and-saving/advance-html-documents-saving-options/
 
 Dalam tutorial ini, kita akan menjelajahi opsi penyimpanan dokumen HTML tingkat lanjut yang disediakan oleh Aspose.Words untuk Java. Aspose.Words adalah Java API yang kuat untuk bekerja dengan dokumen Word, dan menawarkan berbagai fitur untuk manipulasi dan konversi dokumen.
 
-## 1. Perkenalan
+## 1. Pendahuluan
 Aspose.Words untuk Java memungkinkan Anda bekerja dengan dokumen Word secara terprogram. Dalam tutorial ini, kami akan fokus pada opsi penyimpanan dokumen HTML tingkat lanjut, yang memungkinkan Anda mengontrol bagaimana dokumen Word dikonversi ke HTML.
 
 ## 2. Ekspor Informasi Pulang Pergi
@@ -65,7 +65,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```
 
 ## 6. Konversikan Metafile ke SVG
- Menggunakan`convertMetafilesToSvg` metode untuk mengonversi metafile ke format SVG. Format ini ideal untuk menampilkan grafik vektor dalam dokumen HTML.
+ Gunakan`convertMetafilesToSvg` metode untuk mengonversi metafile ke format SVG. Format ini ideal untuk menampilkan grafik vektor dalam dokumen HTML.
 
 ```java
 @Test

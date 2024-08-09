@@ -38,7 +38,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- 위의 코드 조각에서`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요. 이는 프로그램에 Word 문서를 찾을 수 있는 위치를 알려줍니다.
+ 위의 코드 조각에서`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오. 이는 프로그램에 Word 문서를 찾을 수 있는 위치를 알려줍니다.
 
 ## 2단계: PDF 저장 옵션 구성
 

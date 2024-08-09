@@ -15,7 +15,7 @@ Wenn es um die Handhabung von PDFs in .NET-Anwendungen geht, ist Aspose.Words f�
 
 Bevor wir beginnen, benötigen Sie einige Dinge:
 
-1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek haben. Wenn Sie sie noch nicht haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek haben. Wenn Sie sie noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Richten Sie Ihre Entwicklungsumgebung mit Visual Studio oder einer anderen bevorzugten IDE ein.
 3.  Lizenz: Obwohl Aspose.Words eine kostenlose Testversion anbietet, sollten Sie sich eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) für volle Funktionalität ohne Einschränkungen.
 

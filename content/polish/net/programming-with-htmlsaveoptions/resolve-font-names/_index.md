@@ -96,7 +96,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom pr
  Tak, ale będzie to miało pewne ograniczenia. Aby uzyskać pełną funkcjonalność, możesz kupić licencję[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Dlaczego moje czcionki nie wyświetlają się poprawnie w formacie HTML?
- Może się to zdarzyć, jeśli czcionki nie zostaną poprawnie rozwiązane podczas konwersji. Za pomocą`ResolveFontNames = true` W`HtmlSaveOptions` może pomóc rozwiązać ten problem.
+ Może się to zdarzyć, jeśli czcionki nie zostaną poprawnie rozwiązane podczas konwersji. Używanie`ResolveFontNames = true` W`HtmlSaveOptions` może pomóc rozwiązać ten problem.
 
 ### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words dla .NET?
  Możesz uzyskać wsparcie od[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).

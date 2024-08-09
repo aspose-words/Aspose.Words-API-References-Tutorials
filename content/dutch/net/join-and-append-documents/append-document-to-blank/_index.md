@@ -9,7 +9,7 @@ url: /nl/net/join-and-append-documents/append-document-to-blank/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u een document naadloos aan een leeg document kunt toevoegen met Aspose.Words voor .NET? Je bent niet alleen! Of u nu een doorgewinterde ontwikkelaar bent of net kennismaakt met de wereld van documentautomatisering, deze gids is er om u door het proces te helpen navigeren. We zullen de stappen opsplitsen op een manier die gemakkelijk te volgen is, zelfs als u geen codeerwizard bent. Dus pak een kop koffie, leun achterover en laten we een duik nemen in de wereld van documentmanipulatie met Aspose.Words voor .NET!
+Hé daar! Heeft u zich ooit afgevraagd hoe u een document naadloos aan een leeg document kunt toevoegen met Aspose.Words voor .NET? Je bent niet de enige! Of u nu een doorgewinterde ontwikkelaar bent of net kennismaakt met de wereld van documentautomatisering, deze gids is er om u door het proces te helpen navigeren. We zullen de stappen opsplitsen op een manier die gemakkelijk te volgen is, zelfs als u geen codeerwizard bent. Dus pak een kop koffie, leun achterover en laten we een duik nemen in de wereld van documentmanipulatie met Aspose.Words voor .NET!
 
 ## Vereisten
 
@@ -48,7 +48,7 @@ Om aan de slag te gaan, moet u uw projectomgeving instellen. Dit omvat het maken
    Install-Package Aspose.Words
    ```
 
-Met deze opdracht wordt de Aspose.Words-bibliotheek gedownload en in uw project geïnstalleerd, waardoor alle krachtige functies voor documentmanipulatie beschikbaar komen.
+Met deze opdracht wordt de Aspose.Words-bibliotheek in uw project gedownload en geïnstalleerd, waardoor alle krachtige functies voor documentmanipulatie beschikbaar komen.
 
 ## Stap 2: Laad het brondocument
 

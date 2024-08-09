@@ -9,7 +9,7 @@ url: /vi/net/join-and-append-documents/unlink-headers-footers/
 ---
 ## Giới thiệu
 
-Trong thế giới xử lý tài liệu, việc giữ cho đầu trang và chân trang nhất quán đôi khi có thể là một thách thức. Cho dù bạn đang hợp nhất các tài liệu hay chỉ muốn có các đầu trang và chân trang khác nhau cho các phần khác nhau thì việc biết cách hủy liên kết chúng là điều cần thiết. Hôm nay, chúng ta sẽ đi sâu vào cách bạn có thể đạt được điều này bằng cách sử dụng Aspose.Words for .NET. Chúng tôi sẽ chia nhỏ từng bước để bạn có thể dễ dàng theo dõi. Sẵn sàng để làm chủ thao tác tài liệu? Bắt đầu nào!
+Trong thế giới xử lý tài liệu, việc giữ cho đầu trang và chân trang nhất quán đôi khi có thể là một thách thức. Cho dù bạn đang hợp nhất các tài liệu hay chỉ muốn có các đầu trang và chân trang khác nhau cho các phần khác nhau thì việc biết cách hủy liên kết chúng là điều cần thiết. Hôm nay, chúng ta sẽ đi sâu vào cách bạn có thể đạt được điều này bằng cách sử dụng Aspose.Words for .NET. Chúng tôi sẽ chia nhỏ từng bước để bạn có thể dễ dàng theo dõi. Sẵn sàng để làm chủ thao tác tài liệu? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -83,7 +83,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã hủy liên kết thành công đầu trang và chân trang trong tài liệu nguồn của mình và nối nó vào tài liệu đích bằng Aspose.Words for .NET. Kỹ thuật này có thể đặc biệt hữu ích khi bạn làm việc với các tài liệu phức tạp yêu cầu các đầu trang và chân trang khác nhau cho các phần khác nhau. Chúc mừng mã hóa!
+Và bạn có nó! Bằng cách làm theo các bước này, bạn đã hủy liên kết thành công đầu trang và chân trang trong tài liệu nguồn của mình và nối nó vào tài liệu đích bằng Aspose.Words for .NET. Kỹ thuật này có thể đặc biệt hữu ích khi bạn làm việc với các tài liệu phức tạp yêu cầu các đầu trang và chân trang khác nhau cho các phần khác nhau. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

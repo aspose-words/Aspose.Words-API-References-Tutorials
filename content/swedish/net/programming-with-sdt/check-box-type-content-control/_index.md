@@ -99,4 +99,4 @@ Ja, Aspose.Words stöder olika typer av innehållskontroller, inklusive text-, d
  Ja, du kan ladda ner en gratis testversion från[Aspose hemsida](https://releases.aspose.com/).
 
 ### Var kan jag få support om jag stöter på problem?
- Du kan besöka[Aspose Support Forum](https://forum.aspose.com/c/words/8) för assistens.
+ Du kan besöka[Aspose Support Forum](https://forum.aspose.com/c/words/8) för hjälp.

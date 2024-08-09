@@ -157,7 +157,7 @@ Cela créera et enregistrera un document Word avec le tableau formaté.
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez créer un tableau bien formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation par programmation de documents Word, vous permettant ainsi d'économiser du temps et des efforts.
+Et voilà ! En suivant ces étapes, vous pouvez créer un tableau bien formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation par programmation de documents Word, vous permettant ainsi d'économiser du temps et des efforts.
 
 ## FAQ
 

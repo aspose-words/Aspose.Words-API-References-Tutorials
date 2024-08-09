@@ -152,4 +152,4 @@ public void setImagesFolder() throws Exception
 
 ### その他の例やドキュメントはどこで見つかりますか?
 
- Aspose.Words for Javaのその他の例、ドキュメント、および詳細情報については、[ドキュメンテーション](https://reference.aspose.com/words/java/).
+ Aspose.Words for Javaのその他の例、ドキュメント、および詳細情報については、[ドキュメント](https://reference.aspose.com/words/java/).

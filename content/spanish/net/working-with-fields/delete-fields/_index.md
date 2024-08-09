@@ -15,7 +15,7 @@ En el ámbito del procesamiento y la automatización de documentos, Aspose.Words
 
 Antes de sumergirse en este tutorial, asegúrese de cumplir con los siguientes requisitos previos:
 
-### Requisitos de Software
+### Requisitos de software
 
 1. Visual Studio: instalado y configurado en su sistema.
 2.  Aspose.Words para .NET: descargado e integrado en su proyecto de Visual Studio. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).

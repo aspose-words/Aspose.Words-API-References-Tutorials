@@ -69,7 +69,7 @@ Och där har du det! Att ta bort alla avsnitt i ett Word-dokument med Aspose.Wor
  Du kan köpa den från[här](https://purchase.aspose.com/buy).
 
 ### Finns det något stöd tillgängligt för Aspose.Words för .NET?
- Ja, du kan få stöd från Aspose-gemenskapen[här](https://forum.aspose.com/c/words/8).
+Ja, du kan få stöd från Aspose-gemenskapen[här](https://forum.aspose.com/c/words/8).
 
 ### Vad händer om jag behöver en tillfällig licens?
  Du kan få en tillfällig licens från[här](https://purchase.aspose.com/temporary-license/).

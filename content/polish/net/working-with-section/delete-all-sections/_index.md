@@ -9,7 +9,7 @@ url: /pl/net/working-with-section/delete-all-sections/
 ---
 ## Wstęp
 
-Czy kiedykolwiek próbowałeś usunąć wszystkie sekcje w dokumencie programu Word i utknąłeś w labiryncie mylących kroków? Nie jesteś sam. Wielu z nas musi manipulować dokumentami programu Word z różnych powodów, a czasami wyczyszczenie wszystkich sekcji może przypominać nawigację w labiryncie. Ale nie martw się! Dzięki Aspose.Words dla .NET zadanie to staje się dziecinnie proste. W tym artykule przeprowadzimy Cię przez cały proces, dzieląc go na proste, łatwe do wykonania etapy. Pod koniec tego samouczka będziesz profesjonalistą w obsłudze sekcji dokumentów programu Word przy użyciu Aspose.Words dla .NET.
+Czy kiedykolwiek próbowałeś usunąć wszystkie sekcje w dokumencie programu Word i utknąłeś w labiryncie skomplikowanych kroków? Nie jesteś sam. Wielu z nas musi manipulować dokumentami programu Word z różnych powodów, a czasami wyczyszczenie wszystkich sekcji może przypominać nawigację w labiryncie. Ale nie martw się! Dzięki Aspose.Words dla .NET zadanie to staje się dziecinnie proste. W tym artykule przeprowadzimy Cię przez cały proces, dzieląc go na proste, łatwe do wykonania etapy. Pod koniec tego samouczka będziesz profesjonalistą w obsłudze sekcji dokumentów programu Word przy użyciu Aspose.Words dla .NET.
 
 ## Warunki wstępne
 
@@ -69,7 +69,7 @@ masz to! Usuwanie wszystkich sekcji w dokumencie programu Word za pomocą Aspose
  Można go kupić od[Tutaj](https://purchase.aspose.com/buy).
 
 ### Czy jest dostępna obsługa Aspose.Words dla .NET?
- Tak, możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).
+Tak, możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).
 
 ### Co jeśli potrzebuję licencji tymczasowej?
  Możesz uzyskać tymczasową licencję od[Tutaj](https://purchase.aspose.com/temporary-license/).

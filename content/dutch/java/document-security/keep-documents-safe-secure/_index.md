@@ -20,7 +20,7 @@ Voordat we ingaan op de technische aspecten, moeten we eerst de fundamentele con
 
 ### Soorten documentbeveiliging
 
-- #### Wachtwoord beveiliging:
+- #### Wachtwoordbeveiliging:
  Beperk de toegang tot uw documenten met een wachtwoord, zodat alleen geautoriseerde gebruikers ze kunnen openen en bekijken.
 - #### Encryptie:
  Converteer de inhoud van het document naar een gecodeerd formaat met behulp van versleutelingsalgoritmen, waardoor het onleesbaar wordt zonder de juiste decoderingssleutel.
@@ -37,7 +37,7 @@ Documentencryptie biedt een extra beveiligingslaag, waardoor de inhoud onleesbaa
 
 ## 3. Aan de slag met Aspose.Words voor Java
 
-Voordat we verder gaan met documentbeveiliging, laten we eerst vertrouwd raken met Aspose.Words voor Java. Het is een veelzijdige bibliotheek waarmee Java-ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren. Starten:
+Voordat we verder gaan met documentbeveiliging, laten we eerst vertrouwd raken met Aspose.Words voor Java. Het is een veelzijdige bibliotheek waarmee Java-ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren. Om te beginnen:
 
 1. ### Download Aspose.Words voor Java:
   Bezoek de[Aspose.Releases](https://releases.aspose.com/words/java/) en download de nieuwste versie van Aspose.Words voor Java.

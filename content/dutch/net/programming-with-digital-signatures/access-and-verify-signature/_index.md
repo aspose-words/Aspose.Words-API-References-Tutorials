@@ -33,7 +33,7 @@ Oké, laten we dit opsplitsen in beheersbare stappen. Elke stap begeleidt u door
 
 ## Stap 1: Stel uw project in
 
-Voordat u een digitale handtekening kunt verifiëren, moet u uw project instellen in Visual Studio. Hier is hoe:
+Voordat u een digitale handtekening kunt verifiëren, moet u uw project instellen in Visual Studio. Hier ziet u hoe:
 
 ### Maak een nieuw project
 

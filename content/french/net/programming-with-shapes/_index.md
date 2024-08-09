@@ -7,7 +7,7 @@ type: docs
 weight: 1560
 url: /fr/net/programming-with-shapes/
 ---
-Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec des formes offrent un guide complet sur la manipulation et la gestion des formes dans les documents Word. Ces tutoriels expliquent étape par étape comment créer, modifier et supprimer des formes, ainsi que comment les personnaliser en termes de couleur, taille, position et autres attributs. Les didacticiels incluent des exemples de code clairs et des explications étape par étape pour faciliter la compréhension et la mise en œuvre.
+Les didacticiels Aspose.Words for .NET sur le traitement de mots avec des formes offrent un guide complet sur la manipulation et la gestion des formes dans les documents Word. Ces tutoriels expliquent étape par étape comment créer, modifier et supprimer des formes, ainsi que comment les personnaliser en termes de couleur, taille, position et autres attributs. Les didacticiels incluent des exemples de code clairs et des explications étape par étape pour faciliter la compréhension et la mise en œuvre.
 
 Grâce à ces didacticiels, vous apprendrez à ajouter des formes à vos documents, telles que des rectangles, des cercles, des lignes et des flèches, pour améliorer la mise en page et la visualisation des informations. Vous apprendrez également à manipuler les propriétés de forme, telles que la rotation, la transparence et le remplissage, pour répondre à vos besoins spécifiques.
 

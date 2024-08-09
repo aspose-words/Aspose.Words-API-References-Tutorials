@@ -60,7 +60,7 @@ loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ## 4단계: 문서 로드
 
@@ -99,7 +99,7 @@ Console.WriteLine(
  예, 상업적으로 사용하려면 라이센스가 필요합니다. 하나 사셔도 돼요[여기](https://purchase.aspose.com/buy) 아니면 임시면허를 취득하세요.[여기](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words는 어떤 다른 기능을 제공합니까?
- Aspose.Words for .NET은 문서 생성, 변환, 조작 등을 포함한 광범위한 기능을 제공합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ Aspose.Words for .NET은 문서 생성, 변환, 조작 등을 포함한 광범위한 기능을 제공합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### Aspose.Words for .NET을 구매하기 전에 사용해 볼 수 있나요?
  전적으로! 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).

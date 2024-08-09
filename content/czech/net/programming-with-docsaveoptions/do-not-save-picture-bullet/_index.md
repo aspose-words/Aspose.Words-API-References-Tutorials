@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
-## Úvod
+## Zavedení
 
-Ahoj, kolegové vývojáři! Už jste někdy pracovali s dokumenty aplikace Word a ocitli jste se zapleteni do složitostí ukládání obrázkových odrážek? Je to jeden z těch drobných detailů, které mohou mít velký vliv na konečný vzhled vašeho dokumentu. Dnes jsem tu, abych vás provedl procesem zpracování obrázkových odrážek v Aspose.Words pro .NET, zejména se zaměřením na funkci „Neukládat obrázkové odrážky“. Jste připraveni se ponořit? Pojďme!
+Ahoj, kolegové vývojáři! Už jste někdy pracovali s dokumenty aplikace Word a ocitli jste se zapleteni do složitostí ukládání obrázkových odrážek? Je to jeden z těch drobných detailů, které mohou mít velký vliv na konečný vzhled vašeho dokumentu. Dnes jsem tu, abych vás provedl procesem zpracování obrázkových odrážek v Aspose.Words pro .NET, zejména se zaměřením na funkci „Neukládat obrázkové odrážky“. Jste připraveni se ponořit? Jdeme na to!
 
 ## Předpoklady
 
 Než se pustíme do práce s kódem, je potřeba mít připraveno několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ji ještě nemáte, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ji ještě nemáte, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Pracovní vývojové prostředí .NET, jako je Visual Studio.
 3. Základní znalost C#: Určitá znalost programování v C# bude užitečná.
 4. Ukázkový dokument: Dokument aplikace Word s odrážkami obrázků pro účely testování.
@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Dále načtete dokument aplikace Word, který obsahuje odrážky obrázků. Tento dokument bude upraven tak, aby při uložení odstranil odrážky obrázku.
 
 ```csharp
-// Vložte dokument s obrázkovými odrážkami
+// Vložte dokument s odrážkami obrázků
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
@@ -91,7 +91,7 @@ Ne, tato specifická funkce je určena pro obrázkové odrážky. Aspose.Words v
  Můžete získat podporu od[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Existuje bezplatná zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Jak si koupím licenci pro Aspose.Words for .NET?
  Licenci si můžete zakoupit od[Obchod Aspose](https://purchase.aspose.com/buy).

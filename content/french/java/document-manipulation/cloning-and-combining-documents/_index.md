@@ -55,7 +55,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtB
 
 ## Étape 4 : Insérer des documents lors du publipostage
 
-Vous pouvez insérer des documents lors d'une opération de publipostage dans Aspose.Words pour Java. Voici comment:
+Vous pouvez insérer des documents lors d'une opération de publipostage dans Aspose.Words pour Java. Voici comment procéder :
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");

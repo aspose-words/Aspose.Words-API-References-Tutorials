@@ -2,95 +2,98 @@
 title: Lijst met opsommingstekens
 linktitle: Lijst met opsommingstekens
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een lijst met opsommingstekens maakt met Aspose.Words voor .NET Stapsgewijze handleiding.
+description: Leer met deze stapsgewijze handleiding hoe u lijsten met opsommingstekens in Word-documenten kunt maken en aanpassen met Aspose.Words voor .NET.
 type: docs
 weight: 10
 url: /nl/net/working-with-markdown/bulleted-list/
 ---
+## Invoering
 
-In deze zelfstudie gaan we u vertellen hoe u een lijst met opsommingstekens kunt maken met Aspose.Words voor .NET. Een lijst met opsommingstekens wordt gebruikt om items weer te geven zonder nummering.
+Klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag gaan we kijken hoe u een lijst met opsommingstekens in uw Word-documenten kunt maken. Of je nu ideeën ordent, items opsomt of gewoon wat structuur aan je document toevoegt, lijsten met opsommingstekens zijn superhandig. Dus laten we aan de slag gaan!
 
-## Stap 1: Een documentgenerator gebruiken
+## Vereisten
 
-Eerst gebruiken we een documentgenerator om inhoud aan ons document toe te voegen.
+Voordat we aan het codeerplezier beginnen, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt:
+
+1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words-bibliotheek is geïnstalleerd. Als je hem nog niet hebt, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: AC#-ontwikkelomgeving zoals Visual Studio.
+3. Basiskennis van C#: Een basiskennis van programmeren in C# zal u helpen dit te volgen.
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Dit is hetzelfde als het voorbereiden van een soepele werking van onze code.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Laten we het proces nu opsplitsen in eenvoudige, beheersbare stappen.
+
+## Stap 1: Maak een nieuw document
+
+Oké, laten we beginnen met het maken van een nieuw document. Dit is waar alle magie zal gebeuren.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Stap 2: Een standaardlijst met opsommingstekens toepassen
+## Stap 2: Pas de opsommingslijst toe
 
- We kunnen een standaardlijst met opsommingstekens toepassen met behulp van de documentbuilder`ApplyBulletDefault` methode.
+Vervolgens passen we een lijst met opsommingstekens toe. Dit vertelt het document dat we op het punt staan een lijst met opsommingstekens te starten.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Stap 3: Het opsommingstekenformaat aanpassen
+## Stap 3: Pas de lijst met opsommingen aan
 
- We kunnen het opsommingstekenformaat aanpassen door toegang te krijgen tot de eigenschappen van`ListFormat.List.ListLevels[0]`. In dit voorbeeld gebruiken we het streepje "-" als opsommingsteken.
+Hier zullen we de lijst met opsommingstekens naar wens aanpassen. Voor dit voorbeeld gebruiken we een streepje (-) als opsommingsteken.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Stap 4: Items aan de lijst toevoegen
+## Stap 4: lijstitems toevoegen
 
- Nu kunnen we items toevoegen aan de lijst met opsommingstekens met behulp van de documentbuilder`Writeln` methode.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Stap 5: Inspringing uit de lijst verwijderen
-
- Als we een sublijst willen maken, kunnen we de inspringing vergroten met behulp van de`ListFormat.ListIndent()` methode. In dit voorbeeld voegen we een sublijst toe aan de items 2a en 2b.
+Laten we nu enkele items toevoegen aan onze lijst met opsommingstekens. Hier kunt u creatief aan de slag en de inhoud toevoegen die u nodig heeft.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Voorbeeldbroncode voor Lijst met opsommingstekens met Aspose.Words voor .NET
-
-
-```csharp
-// Gebruik een documentbuilder om inhoud aan het document toe te voegen.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Gefeliciteerd! U hebt nu geleerd hoe u een lijst met opsommingstekens kunt maken met Aspose.Words voor .NET.
+## Stap 5: Subitems toevoegen
 
-### Veelgestelde vragen
+Om het nog interessanter te maken, voegen we enkele subitems toe onder "Item 2". Dit helpt bij het organiseren van subpunten.
 
-#### Vraag: Hoe maak ik een lijst met opsommingen in Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Keer terug naar het hoofdlijstniveau
+```
 
-A: Om een lijst met opsommingen te maken in Markdown, begint u elk lijstitem met een opsommingsteken (`-`, `*` , of`+`), gevolgd door een spatie.
+## Conclusie
 
-#### Vraag: Kun je lijsten met opsommingstekens nesten in Markdown?
+En daar heb je het! U hebt zojuist een lijst met opsommingstekens gemaakt in een Word-document met Aspose.Words voor .NET. Het is een eenvoudig proces, maar ongelooflijk krachtig voor het organiseren van uw documenten. Of u nu eenvoudige lijsten of complexe geneste lijsten maakt, Aspose.Words staat voor u klaar.
 
-A: Ja, het is mogelijk om lijsten met opsommingstekens in Markdown te nesten door vier spaties toe te voegen vóór elk genest lijstitem.
+Experimenteer gerust met verschillende lijststijlen en -formaten om aan uw behoeften te voldoen. Veel codeerplezier!
 
-#### Vraag: Hoe kan ik opsommingstekens aanpassen?
+## Veelgestelde vragen
 
-A: In standaard Markdown zijn opsommingstekens vooraf gedefinieerd. Met sommige Markdown-editors kunt u ze echter aanpassen met specifieke extensies.
+### Kan ik verschillende opsommingstekens in de lijst gebruiken?
+    Ja, u kunt de opsommingstekens aanpassen door de`NumberFormat` eigendom.
 
-#### Vraag: Ondersteunen lijsten met opsommingstekens in Markdown inspringen?
+### Hoe voeg ik meer inspringingsniveaus toe?
+    Gebruik de`ListIndent` methode om meer niveaus toe te voegen en`ListOutdent` om terug te gaan naar een hoger niveau.
 
-A: Ja, lijsten met opsommingstekens in Markdown ondersteunen inspringen. U kunt een verschuiving naar links toevoegen met behulp van spaties of tabs.
+### Is het mogelijk om opsommingstekens en cijferlijsten te combineren?
+   Absoluut! U kunt schakelen tussen opsommingstekens en getalnotaties met behulp van de`ApplyNumberDefault`En`ApplyBulletDefault` methoden.
 
-#### Vraag: Kunnen links of inline tekst worden toegevoegd aan lijstitems?
+### Kan ik de tekst in de lijstitems opmaken?
+    Ja, u kunt verschillende stijlen, lettertypen en opmaak toepassen op de tekst in lijstitems met behulp van de`Font` eigendom van de`DocumentBuilder`.
 
-A: Ja, u kunt links of inline tekst toevoegen aan lijstitems met behulp van de juiste Markdown-syntaxis.
+### Hoe kan ik een lijst met opsommingstekens met meerdere kolommen maken?
+   U kunt tabelopmaak gebruiken om lijsten met meerdere kolommen te maken, waarbij elke cel een afzonderlijke lijst met opsommingstekens bevat.

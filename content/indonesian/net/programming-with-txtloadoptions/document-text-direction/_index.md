@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Buat TxtLoadOptions dengan Pengaturan Arah Dokumen
 
- Selanjutnya, Anda harus membuat sebuah instance dari`TxtLoadOptions` dan atur`DocumentDirection` Properti. Ini memberi tahu Aspose.Words cara menangani arah teks dalam dokumen.
+ Selanjutnya, Anda harus membuat sebuah instance dari`TxtLoadOptions` dan atur`DocumentDirection` milik. Ini memberi tahu Aspose.Words cara menangani arah teks dalam dokumen.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection.Auto };
@@ -101,7 +101,7 @@ Mengatur arah teks dalam dokumen Word adalah proses yang mudah dengan Aspose.Wor
 
 ### Bagaimana cara menangani dokumen dengan arah teks campuran?
 
- Untuk dokumen dengan arah teks campuran, Anda mungkin perlu menangani pemformatan per paragraf. Menggunakan`ParagraphFormat.Bidi` properti untuk menyesuaikan arah setiap paragraf sesuai kebutuhan.
+ Untuk dokumen dengan arah teks campuran, Anda mungkin perlu menangani pemformatan per paragraf. Gunakan`ParagraphFormat.Bidi` properti untuk menyesuaikan arah setiap paragraf sesuai kebutuhan.
 
 ### Di mana saya dapat menemukan informasi selengkapnya tentang Aspose.Words untuk .NET?
 

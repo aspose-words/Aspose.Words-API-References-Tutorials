@@ -118,7 +118,7 @@ Deze regel slaat het document op als "WorkingWithVba.CreateVbaProject.docm" in d
 
 Gefeliciteerd! U hebt met succes een VBA-project in een Word-document gemaakt met Aspose.Words voor .NET. In deze tutorial werd alles behandeld, van het instellen van uw omgeving tot het schrijven en opslaan van VBA-code. Met Aspose.Words kunt u taken automatiseren, macro's maken en uw Word-documenten aanpassen op manieren die u nooit voor mogelijk had gehouden.
 
- Als je meer wilt ontdekken, kun je terecht bij de[API-documentatie](https://reference.aspose.com/words/net/) is een schat aan informatie. En als je ooit hulp nodig hebt, kun je terecht bij de[Helpforum](https://forum.aspose.com/c/words/8) is slechts een klik verwijderd.
+ Als je meer wilt ontdekken, kun je terecht bij de[API-documentatie](https://reference.aspose.com/words/net/) is een schat aan informatie. En als je ooit hulp nodig hebt, kun je terecht bij de[ondersteuningsforum](https://forum.aspose.com/c/words/8) is slechts een klik verwijderd.
 
 Veel codeerplezier, en onthoud: de enige beperking is je fantasie!
 

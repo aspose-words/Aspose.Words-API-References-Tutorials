@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Introduction
 
 If you’ve ever faced issues with fonts not rendering correctly in your documents, you’re not alone. Managing font settings and receiving notifications about font substitutions can save you a lot of headaches. In this comprehensive guide, we’ll explore how to handle font notifications using Aspose.Words for .NET, ensuring your documents always look their best.
 
@@ -101,7 +101,7 @@ By following these steps, you’ve configured your application to handle font su
 
 You’ve now mastered the process of receiving notifications for font substitutions using Aspose.Words for .NET. This skill will help you ensure that your documents always look their best, even when the necessary fonts aren’t available. Keep experimenting with different settings to fully leverage the power of Aspose.Words.
 
-## FAQs
+## FAQ's
 
 ### Q1: Can I specify multiple default fonts?
 

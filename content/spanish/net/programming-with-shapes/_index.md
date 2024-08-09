@@ -11,7 +11,7 @@ Los tutoriales de Aspose.Words para .NET sobre procesamiento de palabras con for
 
 A través de estos tutoriales, aprenderá cómo agregar formas a sus documentos, como rectángulos, círculos, líneas y flechas, para mejorar el diseño y la visualización de la información. También aprenderá a manipular las propiedades de las formas, como la rotación, la transparencia y el relleno, para satisfacer sus necesidades específicas.
 
-Al utilizar Aspose.Words para .NET y seguir estos tutoriales, podrá dominar la manipulación de formas en sus documentos de Word, lo que le permitirá crear documentos visualmente atractivos y de aspecto profesional. Ya sea que sea principiante o un desarrollador experimentado, estos tutoriales lo guiarán a través del proceso y lo ayudarán a desbloquear todo el potencial de la manipulación de formas en Aspose.Words para .NET.
+Al utilizar Aspose.Words para .NET y seguir estos tutoriales, podrá dominar la manipulación de formas en sus documentos de Word, lo que le permitirá crear documentos visualmente atractivos y de aspecto profesional. Ya sea un principiante o un desarrollador experimentado, estos tutoriales lo guiarán a través del proceso y lo ayudarán a desbloquear todo el potencial de la manipulación de formas en Aspose.Words para .NET.
 
  ## Tutoriales
 | Título | Descripción |

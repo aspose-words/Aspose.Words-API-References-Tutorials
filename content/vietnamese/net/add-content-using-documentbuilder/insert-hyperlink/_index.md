@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Tạo một tài liệu mới
 
- Tiếp theo, chúng ta tạo một tài liệu mới và khởi tạo một`DocumentBuilder` . Các`DocumentBuilder` lớp cung cấp các phương thức để chèn văn bản, hình ảnh, bảng biểu và các nội dung khác vào tài liệu.
+ Tiếp theo, chúng ta tạo một tài liệu mới và khởi tạo một`DocumentBuilder` . các`DocumentBuilder` lớp cung cấp các phương thức để chèn văn bản, hình ảnh, bảng biểu và các nội dung khác vào tài liệu.
 
 ```csharp
 Document doc = new Document();
@@ -118,7 +118,7 @@ Việc chèn siêu liên kết vào tài liệu Word bằng Aspose.Words cho .NE
 
 ### Điều gì xảy ra nếu URL không hợp lệ?
 
- Các`InsertHyperlink` phương pháp này không xác thực URL, vì vậy điều quan trọng là phải đảm bảo URL chính xác trước khi chèn chúng.
+ các`InsertHyperlink` phương pháp này không xác thực URL, vì vậy điều quan trọng là phải đảm bảo URL chính xác trước khi chèn chúng.
 
 ### Có thể xóa siêu liên kết sau khi nó được chèn vào không?
 

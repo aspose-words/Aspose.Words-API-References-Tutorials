@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/use-control-characters/
 ---
-## introduzione
+## Introduzione
 
 Pronto a tuffarti nel mondo dell'automazione dei documenti? Se ti sei mai ritrovato a dedicare troppo tempo alla creazione o alla modifica manuale di documenti Word, Aspose.Words per .NET è qui per salvare la situazione. Questa potente libreria ti consente di creare, modificare e convertire facilmente documenti Word a livello di codice. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida ti guiderà attraverso tutto ciò di cui hai bisogno per iniziare.
 
@@ -95,7 +95,7 @@ Infine, salviamo il nostro documento modificato. Puoi salvarlo come .docx, .pdf 
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-E voilà! Hai appena automatizzato una parte del flusso di lavoro dei tuoi documenti. Quant'è fico?
+E voilà! Hai appena automatizzato una parte del flusso di lavoro dei tuoi documenti. Quanto è bello?
 
 ## Conclusione
 
@@ -116,4 +116,4 @@ Supporta una varietà di formati, inclusi .doc, .docx, .pdf, .html e altri.
 La conoscenza di base di C# è utile, ma la libreria è progettata per essere facile da usare per gli sviluppatori a tutti i livelli.
 
 ### Dove posso trovare maggiori informazioni o ottenere supporto?
- Dai un'occhiata a[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) oppure visitare il[Forum di assistenza](https://forum.aspose.com/c/words/8).
+ Dai un'occhiata a[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) oppure visitare il[forum di supporto](https://forum.aspose.com/c/words/8).

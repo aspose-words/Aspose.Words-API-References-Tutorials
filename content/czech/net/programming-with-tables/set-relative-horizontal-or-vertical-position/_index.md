@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
-## Úvod
+## Zavedení
 
 Zasekli jste se někdy v tom, jak umístit tabulky v dokumentech aplikace Word tak, jak chcete? No, nejsi sám. Ať už vytváříte profesionální zprávu nebo stylovou brožuru, zarovnání tabulek může znamenat velký rozdíl. To je místo, kde se Aspose.Words for .NET hodí. Tento tutoriál vás krok za krokem provede nastavením relativní vodorovné nebo svislé polohy tabulek v dokumentech aplikace Word. Pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Zasekli jste se někdy v tom, jak umístit tabulky v dokumentech aplikace Word t
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 3. Základní znalost C#: Tento tutoriál předpokládá, že jste obeznámeni se základy programování v C#.
 
@@ -91,13 +91,13 @@ A tady to máte! Úspěšně jste nastavili relativní horizontální a vertiká
 Ano, Aspose.Words vám umožňuje umístit tabulky vzhledem k různým prvkům, jako jsou okraje, stránky, sloupce a další.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?  
- Ano, můžete si zakoupit licenci[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Ano, můžete si zakoupit licenci[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?  
- Absolutně! Můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Absolutně! Můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Mohu používat Aspose.Words s jinými programovacími jazyky?  
 Aspose.Words je navržen primárně pro .NET, ale jsou dostupné verze pro Java, Python a další platformy.
 
 ### Kde najdu podrobnější dokumentaci?  
-Podrobnější informace naleznete v dokumentaci Aspose.Words[tady](https://reference.aspose.com/words/net/).
+Podrobnější informace naleznete v dokumentaci Aspose.Words[zde](https://reference.aspose.com/words/net/).

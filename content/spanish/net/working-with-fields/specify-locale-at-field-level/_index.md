@@ -9,7 +9,7 @@ url: /es/net/working-with-fields/specify-locale-at-field-level/
 ---
 ## Introducción
 
-¿Estás listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy vamos a explorar cómo especificar la configuración regional a nivel de campo. Esta práctica característica es especialmente útil cuando necesita que sus documentos se adhieran a formatos culturales o regionales específicos. Piense en ello como darle a su documento un pasaporte que le indica cómo comportarse según el lugar que "visite". Al final de este tutorial, podrá personalizar fácilmente la configuración regional de los campos de sus documentos de Word. ¡Empecemos!
+¿Estás listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy vamos a explorar cómo especificar la configuración regional a nivel de campo. Esta práctica característica es especialmente útil cuando necesita que sus documentos se adhieran a formatos culturales o regionales específicos. Piense en ello como darle a su documento un pasaporte que le indica cómo comportarse según el lugar que "visita". Al final de este tutorial, podrá personalizar fácilmente la configuración regional de los campos de sus documentos de Word. ¡Empecemos!
 
 ## Requisitos previos
 

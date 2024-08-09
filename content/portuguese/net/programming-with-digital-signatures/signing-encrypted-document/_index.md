@@ -57,7 +57,7 @@ Você precisará de um diretório para armazenar seus documentos e certificados 
 
 ## Etapa 4: Escrevendo o Código
 
- Agora, vamos mergulhar no código. Abre o teu`Program.cs` arquivo e comece configurando o caminho para o diretório do documento e inicializando o`SignOptions` com a senha de descriptografia.
+ Agora, vamos mergulhar no código. Abra o seu`Program.cs` arquivo e comece configurando o caminho para o diretório do documento e inicializando o`SignOptions` com a senha de descriptografia.
 
 ```csharp
 // O caminho para o diretório de documentos.
@@ -67,7 +67,7 @@ SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPass
 
 ## Etapa 5: Carregando o Certificado
 
- Em seguida, carregue seu certificado usando o`CertificateHolder`aula. Isso exigirá o caminho para o arquivo .pfx e a senha do certificado.
+ Em seguida, carregue seu certificado usando o`CertificateHolder`aula. Isso exigirá o caminho para o seu arquivo .pfx e a senha do certificado.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-options-and-settings/optimize-for-ms-word
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin undrat hur du gör dina Word-dokument superkompatibla med olika versioner av MS Word? Föreställ dig att du har ägnat timmar åt att skapa det perfekta dokumentet, men det ser stökigt ut när någon öppnar det i en annan version av Word. Bummer, eller hur? Tja, det är där Aspose.Words för .NET kommer in! Detta fiffiga verktyg låter dig optimera dina dokument för olika versioner av MS Word med bara några rader kod. Låt oss dyka in i hur du kan göra detta utan ansträngning.
+Hej där! Har du någonsin undrat hur du gör dina Word-dokument superkompatibla med olika versioner av MS Word? Föreställ dig att du har ägnat timmar åt att skapa det perfekta dokumentet, men det ser stökigt ut när någon öppnar det i en annan version av Word. Bummer, eller hur? Tja, det är där Aspose.Words för .NET kommer in! Detta fiffiga verktyg låter dig optimera dina dokument för olika versioner av MS Word med bara några rader kod. Låt oss dyka in i hur du kan göra detta utan ansträngning.
 
 ## Förutsättningar
 

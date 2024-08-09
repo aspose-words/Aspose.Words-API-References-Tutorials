@@ -58,7 +58,7 @@ table.preferred_width = doc.page_width
 
 ## Sütun Genişliklerinin Ayarlanması:
 
- Sütun genişliklerinin doğru şekilde ayarlanması, tablo içeriğinin düzgün ve eşit bir şekilde sığmasını sağlar. Tek tek sütunların genişliğini kullanarak ayarlayabilirsiniz.`set_preferred_width` yöntem.
+ Sütun genişliklerinin doğru şekilde ayarlanması, tablo içeriğinin düzgün ve eşit bir şekilde sığmasını sağlar. Tek tek sütunların genişliğini kullanarak ayarlayabilirsiniz.`set_preferred_width` Yöntem.
 
 ```python
 # Set preferred width for the first column

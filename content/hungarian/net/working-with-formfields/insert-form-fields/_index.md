@@ -2,76 +2,100 @@
 title: Űrlapmezők beszúrása
 linktitle: Űrlapmezők beszúrása
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan szúrhat be legördülő űrlapmezőket Word dokumentumokba az Aspose.Words for .NET használatával.
+description: Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan szúrhat be kombinált mezőt egy Word-dokumentumba az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/working-with-formfields/insert-form-fields/
 ---
+## Bevezetés
 
-Ebben a lépésenkénti oktatóanyagban bemutatjuk, hogyan illeszthet be űrlapmezőket, különösen egy legördülő űrlapmezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Elmagyarázzuk a mellékelt C# forráskódot, és megmutatjuk, hogyan implementálhatja azt saját projektjeibe.
+Word dokumentumok űrlapmezői hihetetlenül hasznosak lehetnek interaktív űrlapok vagy sablonok létrehozásához. Legyen szó felmérésről, jelentkezési űrlapról vagy bármilyen más olyan dokumentumról, amelyhez felhasználói bevitel szükséges, az űrlapmezők elengedhetetlenek. Ebben az oktatóanyagban végigvezetjük a kombinált űrlapmező Word-dokumentumba történő beszúrásának folyamatán az Aspose.Words for .NET használatával. Az előfeltételektől a részletes lépésekig mindent lefedünk, így biztosítva, hogy átfogóan megértse a folyamatot.
 
- A kezdéshez győződjön meg arról, hogy az Aspose.Words for .NET telepítve van és be van állítva a fejlesztői környezetben. Ha még nem tette meg, töltse le és telepítse a könyvtárat innen[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Előfeltételek
 
-## 1. lépés: A Document és a DocumentBuilder objektumok inicializálása
+Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel rendelkezünk, ami a kezdéshez szükséges:
 
- Először inicializálja a`Document`és`DocumentBuilder` objektumok:
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztési környezet: Szüksége lesz egy IDE-re, például a Visual Studiora.
+3. .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a számítógépére.
+
+## Névterek importálása
+
+Először importálnia kell a szükséges névtereket. Ezek a névterek olyan osztályokat és metódusokat tartalmaznak, amelyeket az Aspose.Words for .NET-ben lévő Word-dokumentumokkal való munkához használ.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Most pedig nézzük meg a lépésről lépésre szóló útmutatót egy kombinált űrlapmező beillesztéséhez.
+
+## 1. lépés: Hozzon létre egy új dokumentumot
+
+Először is létre kell hoznia egy új Word-dokumentumot. Ez a dokumentum vászonként szolgál az űrlapmezők hozzáadásához.
+
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Legördülő űrlapmező beszúrása
+ Ebben a lépésben létrehozzuk a`Document` osztály. Ez a példány a Word dokumentumot képviseli. Ezután létrehozunk egy példányt a`DocumentBuilder` osztály, amely módszereket biztosít a tartalom dokumentumba történő beillesztésére.
 
- Ezután adja meg a legördülő űrlapmező beállításait, és szúrja be a dokumentumba a gombbal`InsertComboBox` módszere a`DocumentBuilder` tárgy. Ebben a példában beszúrunk egy „Legördülő” nevű legördülő űrlapmezőt három lehetőséggel: „Egy”, „Két” és „Három”:
+## 2. lépés: Adja meg a kombinált mező elemeit
+
+Ezután határozza meg a kombinált mezőbe felvenni kívánt elemeket. Ezek az elemek lesznek a választható lehetőségek.
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
+```
+
+ Itt létrehozunk egy string tömböt, melynek neve`items` amely az „Egy”, „Két” és „Három” opciókat tartalmazza.
+
+## 3. lépés: Helyezze be a kombinált dobozt
+
+ Most helyezze be a kombinált mezőt a dokumentumba a gombbal`DocumentBuilder` példa.
+
+```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## 3. lépés: A dokumentum mentése
+ Ebben a lépésben a`InsertComboBox` módszere a`DocumentBuilder` osztály. Az első paraméter a kombinált mező neve ("DropDown"), a második paraméter az elemek tömbje, a harmadik paraméter pedig az alapértelmezett kiválasztott elem (jelen esetben az első elem) indexe.
 
-Végül mentse el a dokumentumot:
+## 4. lépés: Mentse el a dokumentumot
+
+Végül mentse a dokumentumot a kívánt helyre.
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-Ez az! Sikeresen beszúrt egy legördülő űrlapmezőt egy Word-dokumentumba az Aspose.Words for .NET használatával.
+Ez a kódsor a dokumentumot "OutputDocument.docx" néven menti a projekt könyvtárába. Megadhat egy másik elérési utat, ha máshová szeretné menteni.
 
-### Példa a Form Fields beszúrása Aspose.Words for .NET forráskódjához
+## Következtetés
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+Az alábbi lépések végrehajtásával sikeresen beszúrt egy kombinált űrlapmezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a folyamat más típusú űrlapmezőket is magában foglalhat, így a dokumentumok interaktívak és felhasználóbarátok.
 
-string[] items = { "One", "Two", "Three" };
-builder.InsertComboBox("DropDown", items, 0);
+Űrlapmezők beszúrása nagymértékben javíthatja a Word-dokumentumok funkcionalitását, lehetővé téve a dinamikus tartalmat és a felhasználói interakciót. Az Aspose.Words for .NET ezt a folyamatot egyszerűvé és hatékonysá teszi, lehetővé téve a professzionális dokumentumok egyszerű létrehozását.
 
-doc.Save("OutputDocument.docx");
-```
+## GYIK
 
-Nyugodtan használja ezt a kódot saját projektjeiben, és módosítsa saját igényei szerint.
+### Hozzáadhatok egynél több kombinált mezőt egy dokumentumhoz?
 
-### GYIK
+Igen, több kombinált mezőt vagy más űrlapmezőt is hozzáadhat a dokumentumhoz, ha megismétli a beszúrási lépéseket különböző nevekkel és elemekkel.
 
-#### K: Hogyan illeszthetek be szöveges űrlapmezőt az Aspose.Words-be?
+### Hogyan állíthatok be egy másik alapértelmezett kiválasztott elemet a kombinált mezőben?
 
- V: Ha szöveges űrlapmezőt szeretne beszúrni az Aspose.Words-be, használja a`FormField` osztályt, és állítsa be`Type`tulajdonát`FormFieldType.Text`. Más tulajdonságokat, például nevet, címkét és beállításokat is személyre szabhat.
+Az alapértelmezett kiválasztott elemet a harmadik paraméter módosításával módosíthatja a`InsertComboBox` módszer. Például beállítva`1` alapértelmezés szerint a második elemet választja ki.
 
-#### K: Létre lehet hozni egy jelölőnégyzet típusú űrlapmezőt egy dokumentumban?
+### Testreszabhatom a kombinált doboz megjelenését?
 
- V: Igen, lehetőség van jelölőnégyzet típusú űrlapmező létrehozására egy Aspose.Words dokumentumban. Használhatja a`FormField` osztályt, és állítsa be`Type`tulajdonát`FormFieldType.CheckBox` jelölőnégyzet létrehozásához. Ezután szükség szerint testreszabhatja a jelölőnégyzet tulajdonságait.
+ Az űrlapmezők megjelenése testreszabható az Aspose.Words különböző tulajdonságaival és módszereivel. Lásd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
-#### K: Hogyan adhatok hozzá egy legördülő típusú űrlapmezőt egy dokumentumhoz?
+### Lehetséges más típusú űrlapmezőket, például szövegbevitelt vagy jelölőnégyzeteket beszúrni?
 
- V: Ha egy Aspose.Words dokumentumhoz legördülő típusú űrlapmezőt szeretne hozzáadni, használja a`FormField` osztályt, és állítsa be`Type`tulajdonát`FormFieldType.DropDown` . Ezután beállíthatja a legördülő menü beállításait a`DropDownItems` ingatlan.
+ Igen, az Aspose.Words for .NET különféle típusú űrlapmezőket támogat, beleértve a szövegbeviteli mezőket, a jelölőnégyzeteket és egyebeket. Példákat és részletes útmutatókat találhat a[dokumentáció](https://reference.aspose.com/words/net/).
 
-#### K: Beállíthatok alapértelmezett értéket az Aspose.Words űrlapmezőjéhez?
+### Hogyan próbálhatom ki az Aspose.Words for .NET-et vásárlás előtt?
 
-V: Igen, beállíthat alapértelmezett értéket az Aspose.Words űrlapmezőjéhez. Használja a`FormField.Result` tulajdonság megadásához az űrlapmező kezdeti értékét.
-
-#### K: Hogyan kérhetem le az Aspose.Words űrlapmezőiben megadott adatokat?
-
- V: Az Aspose.Words űrlapmezőiben megadott adatok lekéréséhez használhatja a`FormField.Result` tulajdonság, amely a felhasználó által beírt értéket tartalmazza. Ezt a tulajdonságot a dokumentum minden űrlapmezőjéhez érheti el.
+ Ingyenes próbaverziót letölthet a webhelyről[itt](https://releases.aspose.com/) és kérjen ideiglenes engedélyt tőle[itt](https://purchase.aspose.com/temporary-license/).

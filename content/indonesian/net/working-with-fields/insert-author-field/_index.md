@@ -9,13 +9,13 @@ url: /id/net/working-with-fields/insert-author-field/
 ---
 ## Perkenalan
 
-Dalam tutorial ini, kita mendalami seluk beluk cara menyisipkan kolom penulis di dokumen Word menggunakan Aspose.Words untuk .NET. Baik Anda mengotomatiskan pembuatan dokumen untuk bisnis Anda atau sekadar ingin mempersonalisasi file Anda, panduan langkah demi langkah ini siap membantu Anda. Kami akan memandu semuanya mulai dari menyiapkan lingkungan Anda hingga menyimpan dokumen Anda yang sudah selesai. Mari kita mulai!
+Dalam tutorial ini, kita mendalami seluk beluk cara menyisipkan kolom penulis di dokumen Word menggunakan Aspose.Words untuk .NET. Baik Anda mengotomatiskan pembuatan dokumen untuk bisnis Anda atau sekadar ingin mempersonalisasi file Anda, panduan langkah demi langkah ini siap membantu Anda. Kami akan memandu semuanya mulai dari menyiapkan lingkungan Anda hingga menyimpan dokumen Anda yang sudah jadi. Mari kita mulai!
 
 ## Prasyarat
 
 Sebelum kita masuk ke tutorial, pastikan Anda memiliki semua yang Anda butuhkan:
 
--  Aspose.Words untuk .NET Library: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET Library: Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Visual Studio: Di sinilah kita akan menulis dan menjalankan kode kita.
 - .NET Framework: Pastikan Anda telah menginstalnya di mesin Anda.
 - Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda mengikutinya.
@@ -138,7 +138,7 @@ Aspose.Words menawarkan uji coba gratis, tetapi untuk fitur lengkap dan pengguna
 
 ### Bisakah saya menambahkan jenis bidang lain menggunakan Aspose.Words?
 
- Ya, Aspose.Words mendukung berbagai jenis bidang, termasuk tanggal, waktu, nomor halaman, dan lainnya. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk detailnya.
+ Ya, Aspose.Words mendukung berbagai jenis bidang, termasuk tanggal, waktu, nomor halaman, dan lainnya. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk detailnya.
 
 ### Di mana saya dapat memperoleh dukungan jika saya mengalami masalah?
 

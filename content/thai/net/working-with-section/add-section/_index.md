@@ -83,7 +83,7 @@ doc.Sections.Add(sectionToAdd);
 
 ### การใช้ DocumentBuilder สำหรับส่วนใหม่
 
-หากต้องการเพิ่มเนื้อหาในส่วนใหม่ คุณจะต้องตั้งค่า`DocumentBuilder` เคอร์เซอร์ไปที่ส่วนใหม่:
+ หากต้องการเพิ่มเนื้อหาในส่วนใหม่ คุณจะต้องตั้งค่า`DocumentBuilder` เคอร์เซอร์ไปที่ส่วนใหม่:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));

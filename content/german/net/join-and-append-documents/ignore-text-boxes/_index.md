@@ -108,7 +108,7 @@ Sie haben erfolgreich zwei Word-Dokumente mit Aspose.Words für .NET zusammengef
 ## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für .NET?
- Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Konvertieren von Word-Dokumenten innerhalb von .NET-Anwendungen.[Erfahren Sie mehr](https://reference.aspose.com/words/net/).
+ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbeiten und Konvertieren von Word-Dokumenten innerhalb von .NET-Anwendungen.[Mehr erfahren](https://reference.aspose.com/words/net/).
 
 ### Kann ich Aspose.Words für .NET vor dem Kauf ausprobieren?
  Ja, Sie können eine kostenlose Testversion herunterladen[Hier](https://releases.aspose.com/).

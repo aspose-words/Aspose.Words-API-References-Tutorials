@@ -66,7 +66,7 @@ field.Remove();
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功從 Word 文件中刪除了欄位。但等等，還有更多！讓我們進一步分解，以確保您掌握每個細節。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功從 Word 文件中刪除了欄位。但等等，還有更多！讓我們進一步分解，以確保您掌握每個細節。
 
 ## 結論
 

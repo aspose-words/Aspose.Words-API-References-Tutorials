@@ -2,71 +2,97 @@
 title: Girintili Kod
 linktitle: Girintili Kod
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile girintili kodun nasıl kullanılacağını öğrenin. Adım adım kılavuz.
+description: Bu ayrıntılı, adım adım eğitimle Aspose.Words for .NET kullanarak Word belgelerine girintili kod bloklarını nasıl ekleyeceğinizi ve stillendireceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/indented-code/
 ---
+## giriiş
 
-Bu örnekte girintili kod özelliğinin Aspose.Words for .NET ile nasıl kullanılacağını açıklayacağız. Girintili kod, belirli biçimlendirmeye sahip kod bloklarını görsel olarak temsil etmek için kullanılır.
+Aspose.Words for .NET'i kullanarak Word belgelerinize nasıl özelleştirme dokunuşu ekleyebileceğinizi hiç merak ettiniz mi? Sorunsuz belge işleme için tasarlanmış sağlam bir kitaplık kullanırken, metne belirli bir biçimlendirmeyle stil verme veya içeriği hassas bir şekilde yönetme gücüne sahip olduğunuzu hayal edin. Bu öğreticide, Word belgelerinizde girintili kod blokları oluşturmak için metni nasıl stillendirebileceğinizi ele alacağız. İster kod parçacıklarına profesyonel bir hava katmak isteyin, ister bilgileri sunmanın temiz bir yoluna ihtiyacınız olsun, Aspose.Words güçlü bir çözüm sunar.
 
-## 1. Adım: Belge oluşturucuyu kullanma
+## Önkoşullar
 
-Öncelikle belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
+İşin özüne geçmeden önce, yerine getirmeniz gereken birkaç şey var:
+
+1.  Aspose.Words for .NET Library: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[alan](https://releases.aspose.com/words/net/).
+   
+2. Visual Studio veya Herhangi Bir .NET IDE: Kodunuzu yazmak ve yürütmek için bir IDE'ye ihtiyacınız olacak. Visual Studio popüler bir seçimdir ancak .NET uyumlu herhangi bir IDE çalışacaktır.
+   
+3. Temel C# Bilgisi: C#'ın temellerini anlamak, örnekleri daha kolay takip etmenize yardımcı olacaktır.
+
+4. .NET Framework: Projenizin Aspose.Words ile uyumlu .NET Framework'ü kullanacak şekilde ayarlandığından emin olun.
+
+5.  Aspose.Words Belgelendirmesi:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) ek ayrıntılar ve referans için.
+
+Her şey hazır mı? Harika! Eğlenceli kısma geçelim.
+
+## Ad Alanlarını İçe Aktar
+
+.NET projenizde Aspose.Words'ü kullanmaya başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu adım, projenizin Aspose.Words kütüphanesi tarafından sağlanan tüm sınıflara ve yöntemlere erişebilmesini sağlar. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Bu ad alanları belge nesneleriyle çalışmanıza ve Word dosyalarınızdaki içeriği değiştirmenize olanak tanır.
+
+Şimdi Aspose.Words'ü kullanarak Word belgenize girintili kod bloğu ekleme ve stillendirme sürecini inceleyelim. Bunu birkaç net adıma ayıracağız:
+
+## 1. Adım: Belgenizi Ayarlayın
+
+ Öncelikle yeni bir belge oluşturmanız veya mevcut bir belgeyi yüklemeniz gerekir. Bu adım, başlatmayı içerir`Document` Çalışmanızın temelini oluşturacak nesne.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. Adım: Girintili kod için stil ekleyin
+ Burada yeni bir belge oluşturuyoruz ve kullanıyoruz.`DocumentBuilder` İçerik eklemeye başlamak için.
 
- Girintili kod için özel bir stil ekleyeceğiz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte girintili kod için "IndentedCode" adında bir stil oluşturuyoruz.
+## Adım 2: Özel Stili Tanımlayın
+
+Daha sonra girintili kod için özel bir stil tanımlayacağız. Bu stil kod bloklarınızın belirgin bir görünüme sahip olmasını sağlayacaktır. 
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
-builder.ParagraphFormat.Style = indentedCode;
+indentedCode.ParagraphFormat.LeftIndent = 20; // Stil için sol girintiyi ayarlama
+indentedCode.Font.Name = "Courier New"; // Kod için tek aralıklı bir yazı tipi kullanın
+indentedCode.Font.Size = 10; // Kod için daha küçük bir yazı tipi boyutu ayarlayın
 ```
 
-## 3. Adım: Girintili kodu ekleyin
+Bu adımda, "IndentedCode" adı verilen yeni bir paragraf stili oluşturuyoruz, sol girintiyi 20 puntoya ayarlıyoruz ve tek aralıklı bir yazı tipi uyguluyoruz (genellikle kod için kullanılır).
 
-Artık "IndentedCode" özel stilini kullanarak girintili bir kod bloğu ekleyebiliriz.
+## 3. Adım: Stili Uygulayın ve İçerik Ekleyin
+
+Tanımlanan stil ile artık onu uygulayabilir ve girintili kodu belgemize ekleyebiliriz.
 
 ```csharp
-builder.Writeln("This is an indented code block");
-```
-
-### Aspose.Words for .NET ile girintili kod için örnek kaynak kodu
-
-```csharp
-// Belgeye içerik eklemek için belge oluşturucuyu kullanın.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
-builder.Writeln("This is an indented code");
+builder.Writeln("This is an indented code block.");
 ```
 
-Tebrikler! Artık Aspose.Words for .NET ile girintili kod özelliğini nasıl kullanacağınızı öğrendiniz.
+Burada paragraf formatını özel stilimize ayarlıyoruz ve girintili kod bloğu olarak görünecek bir metin satırı yazıyoruz.
 
+## Çözüm
 
-### SSS'ler
+Ve işte karşınızda: Aspose.Words for .NET'i kullanarak Word belgelerinize girintili kod blokları eklemenin ve stillendirmenin basit ama etkili bir yolu. Bu adımları izleyerek kod parçacıklarının okunabilirliğini artırabilir ve belgelerinize profesyonel bir dokunuş katabilirsiniz. İster teknik raporlar, kod dokümantasyonu veya formatlanmış kod gerektiren diğer içerik türlerini hazırlıyor olun, Aspose.Words işinizi verimli bir şekilde halletmeniz için ihtiyacınız olan araçları sağlar.
 
-#### S: Markdown'daki girintili kod nedir?
+Kod bloklarınızın görünümünü ve hissini ihtiyaçlarınıza uyacak şekilde uyarlamak için farklı stiller ve ayarlarla denemeler yapmaktan çekinmeyin. Mutlu kodlama!
 
-C: Markdown'daki girintili kod, Markdown belgesindeki kodu görüntülemek için kullanılan bir biçimlendirme yöntemidir. Her kod satırının boşluk veya sekmelerle girintilenmesinden oluşur.
+## SSS'ler
 
-#### S: Markdown'da girintili kod nasıl kullanılır?
+### Kod bloğunun girintisini ayarlayabilir miyim?  
+ Evet, değiştirebilirsiniz`LeftIndent` Girintiyi artırmak veya azaltmak için stilin özelliği.
 
-C: Markdown'da girintili kod kullanmak için her kod satırını boşluk veya sekmelerle girintileyin.
+### Kod bloğu için kullanılan yazı tipini nasıl değiştirebilirim?  
+ Ayarlayabilirsiniz`Font.Name`"Courier New" veya "Consolas" gibi seçtiğiniz herhangi bir tek aralıklı yazı tipine sahip olabilirsiniz.
 
-#### S: Markdown'da girintili kodun avantajları nelerdir?
+### Farklı stillere sahip birden fazla kod bloğu eklemek mümkün müdür?  
+Kesinlikle! Farklı adlarla birden çok stil tanımlayabilir ve bunları gerektiği gibi çeşitli kod bloklarına uygulayabilirsiniz.
 
-C: Markdown'daki girintili kod, kodun okunabilirliğini artırır ve okuyucuların anlamasını kolaylaştırır.
+### Kod bloğuna başka biçimlendirme seçenekleri uygulayabilir miyim?  
+Evet, yazı tipi rengi, arka plan rengi ve hizalama gibi çeşitli biçimlendirme seçenekleriyle stili özelleştirebilirsiniz.
 
-#### S: Markdown'daki girintili kod ile kod blokları arasındaki fark nedir?
-
-C: Girintili kod, metne eklenen küçük kod parçacıkları için kullanılırken kod blokları, daha büyük kod parçalarını ayrı biçimlendirmede görüntülemek için kullanılır.
-
-#### S: Markdown'daki girintili kod tüm Markdown düzenleyicileri tarafından destekleniyor mu?
-
-C: Markdown'daki girintili kod desteği, Markdown editörleri arasında farklılık gösterebilir. Emin olmak için yayıncınızın özel belgelerini kontrol edin.
+### Kaydedilen belgeyi oluşturduktan sonra nasıl açarım?  
+Stillendirilmiş içeriği görüntülemek için belgeyi Microsoft Word gibi herhangi bir Word işlemciyi veya uyumlu yazılımı kullanarak açabilirsiniz.

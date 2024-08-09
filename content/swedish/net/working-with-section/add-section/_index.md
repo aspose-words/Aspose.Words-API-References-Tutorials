@@ -83,7 +83,7 @@ När vi har lagt till ett nytt avsnitt kan vi fylla det med innehåll precis som
 
 ### Använder DocumentBuilder för den nya sektionen
 
-För att lägga till innehåll i det nya avsnittet måste du ställa in`DocumentBuilder` markören till det nya avsnittet:
+ För att lägga till innehåll i det nya avsnittet måste du ställa in`DocumentBuilder` markören till det nya avsnittet:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -103,7 +103,7 @@ När du har lagt till avsnitt och innehåll är det sista steget att spara ditt 
 doc.Save("YourPath/YourDocument.docx");
 ```
 
- Byta ut`"YourPath/YourDocument.docx"` med den faktiska sökvägen där du vill spara ditt dokument. Denna kodrad kommer att spara din Word-fil, komplett med de nya avsnitten och innehållet.
+ Ersätta`"YourPath/YourDocument.docx"` med den faktiska sökvägen där du vill spara ditt dokument. Denna kodrad kommer att spara din Word-fil, komplett med de nya avsnitten och innehållet.
 
 ## Slutsats
 
@@ -125,7 +125,7 @@ Du kan anpassa layouten för ett avsnitt genom att ställa in egenskaper som sid
 
 ### Kan avsnitt kapslas i Word-dokument?
 
-Nej, avsnitt kan inte kapslas in i varandra. Du kan dock ha flera avsnitt efter varandra, var och en med sin egen distinkta layout och formatering.
+Nej, avsnitt kan inte kapslas inuti varandra. Du kan dock ha flera avsnitt efter varandra, var och en med sin egen distinkta layout och formatering.
 
 ### Var kan jag hitta fler resurser på Aspose.Words?
 

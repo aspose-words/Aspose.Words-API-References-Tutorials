@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /ja/net/working-with-fonts/font-settings-default-instance/
 ---
+## 導入
 
-Aspose.Words for .NET を使用してフォント設定を管理する詳細なチュートリアルへようこそ。ドキュメント内のフォント処理で課題に直面したことがある場合、このガイドではフォントを効果的にカスタマイズおよび管理するために必要なすべての手順を説明します。さっそく始めましょう。
+Aspose.Words for .NET を使用してフォント設定を管理する詳細なチュートリアルへようこそ。ドキュメント内のフォント処理で課題に直面したことがある場合、このガイドでは、フォントを効果的にカスタマイズおよび管理するために必要なすべてのことを説明します。
 
 ## 前提条件
 
@@ -77,22 +78,22 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## よくある質問
 
-### Q1: 複数のカスタム フォルダーのフォントを使用できますか?
+### 複数のカスタム フォルダーのフォントを使用できますか?
 
 はい、複数指定できます`FolderFontSource`インスタンス内の`SetFontsSources`異なるフォルダーからフォントを含める方法。
 
-### Q2: Aspose.Words for .NET の無料試用版を入手するにはどうすればよいですか?
+### Aspose.Words for .NET の無料試用版を入手するにはどうすればよいですか?
 
 無料トライアルは以下からダウンロードできます。[Aspose 無料トライアルページ](https://releases.aspose.com/).
 
-### Q3: ドキュメントにフォントを直接埋め込むことは可能ですか?
+### ドキュメントにフォントを直接埋め込むことは可能ですか?
 
 Aspose.Words では、PDF などの一部の形式でフォントを埋め込むことができます。フォントの埋め込みの詳細については、ドキュメントを参照してください。
 
-### Q4: Aspose.Words のサポートはどこで受けられますか?
+### Aspose.Words のサポートはどこで受けられますか?
 
 サポートについては、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).
 
-### Q5: 一時ライセンスを購入できますか?
+### 一時ライセンスを購入できますか?
 
 はい、臨時免許証は取得できます。[一時ライセンスページ](https://purchase.aspose.com/temporary-license/).

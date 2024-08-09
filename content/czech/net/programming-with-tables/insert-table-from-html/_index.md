@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/insert-table-from-html/
 ---
-## Úvod
+## Zavedení
 
 Potřebovali jste někdy vložit tabulku z HTML do dokumentu aplikace Word? Ať už pracujete na projektu, který vyžaduje převod webového obsahu do dokumentu aplikace Word, nebo se jednoduše snažíte zefektivnit svůj pracovní postup, Aspose.Words for .NET vám pomůže. V tomto tutoriálu vás provedeme celým procesem vkládání tabulky z HTML do dokumentu aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše, co potřebujete, od předpokladů až po podrobného průvodce krok za krokem. Jste připraveni se ponořit? Začněme!
 
@@ -77,7 +77,7 @@ Nakonec po vložení tabulky musíte dokument uložit. Tento krok zajistí, že 
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-A to je vše! Úspěšně jste vložili tabulku z HTML do dokumentu aplikace Word pomocí Aspose.Words for .NET.
+A je to! Úspěšně jste vložili tabulku z HTML do dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
 ## Závěr
 

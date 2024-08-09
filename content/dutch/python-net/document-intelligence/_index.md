@@ -24,4 +24,4 @@ Door Document Intelligence te beheersen met Aspose.Words voor Python kunnen ontw
 
 ## Python Document Intelligence-tutorials
 ### [Hoofddocumentintelligentie](./master-document-intelligence/)
-Beheers documentintelligentie met Aspose.Words voor Python. Automatiseer workflows, analyseer gegevens en verwerk documenten efficiënt. Begin nu!
+Beheers documentintelligentie met Aspose.Words voor Python. Automatiseer workflows, analyseer gegevens en verwerk documenten efficiënt. Ga nu aan de slag!

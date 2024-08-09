@@ -2,88 +2,40 @@
 title: Chấp nhận sửa đổi
 linktitle: Chấp nhận sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words cho .NET
+description: Sửa đổi tài liệu chính với Aspose.Words cho .NET. Học cách theo dõi, chấp nhận và từ chối các thay đổi một cách dễ dàng. Tăng cường kỹ năng quản lý tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/accept-revisions/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách chấp nhận các bản sửa đổi đối với tài liệu Word bằng cách sử dụng tính năng Chấp nhận bản sửa đổi của Aspose.Words cho .NET. Thực hiện theo các bước bên dưới để hiểu mã nguồn và chấp nhận các thay đổi đối với tài liệu.
+Bạn đã bao giờ thấy mình trong một mê cung của các bản sửa đổi tài liệu, cố gắng theo dõi mọi thay đổi được thực hiện bởi nhiều người đóng góp chưa? Với Aspose.Words for .NET, việc quản lý các bản sửa đổi trong tài liệu Word trở nên dễ dàng. Thư viện mạnh mẽ này cho phép các nhà phát triển theo dõi, chấp nhận và từ chối các thay đổi một cách dễ dàng, đảm bảo tài liệu của bạn luôn được sắp xếp và cập nhật. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình từng bước xử lý các bản sửa đổi tài liệu bằng Aspose.Words cho .NET, từ khởi tạo tài liệu đến chấp nhận tất cả các thay đổi.
 
-## Bước 1: Thêm và chỉnh sửa nội dung tài liệu
+## Điều kiện tiên quyết
 
-Trong ví dụ này, chúng tôi đang tạo một tài liệu và thêm nội dung. Chúng tôi sử dụng một số đoạn văn để minh họa những thay đổi và sửa đổi. Đây là cách thực hiện:
+Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
 
-```csharp
-// Đường dẫn đến thư mục tài liệu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- Visual Studio được cài đặt trên máy của bạn.
+- .NET framework (tốt nhất là phiên bản mới nhất).
+-  Aspose.Words cho thư viện .NET. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+- Hiểu biết cơ bản về lập trình C#.
 
-// Thêm văn bản vào đoạn đầu tiên, sau đó thêm hai đoạn văn nữa.
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+Bây giờ, hãy đi vào chi tiết cụ thể và xem cách chúng ta có thể nắm vững các bản sửa đổi tài liệu với Aspose.Words cho .NET.
 
-## Bước 2: Theo dõi đánh giá và thêm đánh giá
+## Nhập không gian tên
 
-Chúng tôi kích hoạt tính năng theo dõi sửa đổi và thêm bản sửa đổi vào tài liệu. Đây là cách thực hiện:
+Trước tiên, bạn cần nhập các không gian tên cần thiết để hoạt động với Aspose.Words. Thêm các lệnh sử dụng sau vào đầu tệp mã của bạn:
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-// Đoạn này là một bản sửa đổi và sẽ có bộ cờ "IsInsertRevision" tương ứng.
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## Bước 3: Xóa một đoạn văn và quản lý các bản sửa đổi
+Hãy chia nhỏ quy trình thành các bước có thể quản lý được. Mỗi bước sẽ được giải thích chi tiết để đảm bảo bạn hiểu từng phần của mã.
 
-Chúng tôi xóa một đoạn văn và kiểm tra các bản sửa đổi đã lưu. Đây là cách thực hiện:
+## Bước 1: Khởi tạo tài liệu
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-// Vì chúng tôi đang theo dõi các bản sửa đổi nên đoạn văn vẫn tồn tại trong tài liệu nên sẽ có cờ "IsDeleteRevision" được đặt
-// và sẽ được hiển thị dưới dạng bài đánh giá trong Microsoft Word cho đến khi chúng tôi chấp nhận hoặc từ chối tất cả các bài đánh giá.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## Bước 4: Chấp nhận thay đổi
-
-Chúng tôi chấp nhận mọi thay đổi đối với tài liệu. Đây là cách thực hiện:
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## Bước 5: Dừng theo dõi đánh giá
-
-Chúng tôi sẽ ngừng theo dõi các bản sửa đổi để những thay đổi đối với tài liệu không còn hiển thị dưới dạng bản sửa đổi nữa. Đây là cách thực hiện:
-
-```csharp
-doc.StopTrackRevisions();
-```
-## Bước 6: Lưu tài liệu
-
- Sau khi chèn trường biểu mẫu nhập văn bản, hãy lưu tài liệu vào vị trí mong muốn bằng cách sử dụng`Save`phương pháp. Đảm bảo cung cấp đường dẫn tệp thích hợp:
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### Mã nguồn mẫu cho Chấp nhận bản sửa đổi bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh để chấp nhận các thay đổi trong tài liệu bằng Aspose.Words cho .NET:
-
+Để bắt đầu, chúng ta cần tạo một tài liệu mới và thêm một số đoạn văn. Điều này sẽ tạo tiền đề cho việc theo dõi các sửa đổi.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//Chúng tôi có ba đoạn, không có đoạn nào được đăng ký là bất kỳ loại sửa đổi nào
-// Nếu chúng tôi thêm/xóa bất kỳ nội dung nào trong tài liệu trong khi theo dõi các bản sửa đổi,
-// chúng sẽ được hiển thị như vậy trong tài liệu và có thể được chấp nhận/từ chối.
+Trong bước này, chúng tôi đã tạo một tài liệu mới và thêm ba đoạn vào đó. Những đoạn này sẽ đóng vai trò là cơ sở cho việc theo dõi sửa đổi của chúng tôi.
+
+## Bước 2: Bắt đầu theo dõi các bản sửa đổi
+
+Tiếp theo, chúng ta cần kích hoạt tính năng theo dõi sửa đổi. Điều này cho phép chúng tôi nắm bắt mọi thay đổi được thực hiện đối với tài liệu.
+
+```csharp
+// Bắt đầu theo dõi các sửa đổi.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+ Bằng cách gọi`StartTrackRevisions`, chúng tôi cho phép tài liệu theo dõi tất cả các thay đổi tiếp theo. Tên tác giả và ngày hiện tại được truyền dưới dạng tham số.
+
+## Bước 3: Thêm bản sửa đổi
+
+Bây giờ tính năng theo dõi sửa đổi đã được bật, hãy thêm một đoạn mới. Sự bổ sung này sẽ được đánh dấu là một bản sửa đổi.
+
+```csharp
 // Đoạn này là một bản sửa đổi và sẽ có cờ "IsInsertRevision" được đặt tương ứng.
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+Ở đây, một đoạn mới ("Đoạn 4.") được thêm vào. Vì tính năng theo dõi sửa đổi được bật nên đoạn này được đánh dấu là bản sửa đổi.
+
+## Bước 4: Xóa một đoạn văn
+
+Tiếp theo, chúng tôi sẽ xóa một đoạn văn hiện có và quan sát cách theo dõi bản sửa đổi.
+
+```csharp
 // Lấy bộ sưu tập đoạn văn của tài liệu và xóa một đoạn văn.
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-// Vì chúng tôi đang theo dõi các bản sửa đổi nên đoạn văn vẫn tồn tại trong tài liệu nên sẽ có tập hợp "IsDeleteRevision"
-// và sẽ được hiển thị dưới dạng bản sửa đổi trong Microsoft Word cho đến khi chúng tôi chấp nhận hoặc từ chối tất cả các bản sửa đổi.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+Ở bước này, đoạn thứ ba được loại bỏ. Do theo dõi sửa đổi, việc xóa này được ghi lại và đoạn văn được đánh dấu để xóa thay vì bị xóa ngay khỏi tài liệu.
 
-// Đoạn sửa đổi xóa sẽ bị xóa khi chúng tôi chấp nhận thay đổi.
+## Bước 5: Chấp nhận tất cả các bản sửa đổi
+
+Cuối cùng, hãy chấp nhận tất cả các bản sửa đổi được theo dõi, củng cố các thay đổi trong tài liệu.
+
+```csharp
+// Chấp nhận tất cả các sửa đổi.
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-// Việc dừng theo dõi các bản sửa đổi sẽ làm cho văn bản này xuất hiện dưới dạng văn bản bình thường.
-// Các sửa đổi không được tính khi tài liệu được thay đổi.
+ Bằng cách gọi`AcceptAllRevisions`, chúng tôi đảm bảo rằng mọi thay đổi (bổ sung và xóa) đều được chấp nhận và áp dụng cho tài liệu. Các bản sửa đổi không còn được đánh dấu và được tích hợp vào tài liệu.
+
+## Bước 6: Dừng theo dõi các bản sửa đổi
+
+### Tắt theo dõi sửa đổi
+
+Để kết thúc, chúng tôi có thể tắt tính năng theo dõi sửa đổi để ngừng ghi lại các thay đổi tiếp theo.
+
+```csharp
+// Dừng theo dõi các sửa đổi.
 doc.StopTrackRevisions();
+```
 
+Bước này ngăn tài liệu theo dõi bất kỳ thay đổi mới nào, coi tất cả các chỉnh sửa tiếp theo là nội dung thông thường.
+
+## Bước 7: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu đã sửa đổi vào thư mục được chỉ định.
+
+```csharp
 // Lưu tài liệu.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+Bằng cách lưu tài liệu, chúng tôi đảm bảo tất cả các thay đổi và bản sửa đổi được chấp nhận của chúng tôi đều được giữ nguyên.
+
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã học cách chấp nhận các bản sửa đổi trong tài liệu Word bằng tính năng Chấp nhận bản sửa đổi của Aspose.Words cho .NET. Chúng tôi đã làm theo các bước để thêm và chỉnh sửa nội dung tài liệu, theo dõi các bản sửa đổi, xóa đoạn sửa đổi, chấp nhận tất cả các thay đổi và ngừng theo dõi các bản sửa đổi. Giờ đây, bạn có thể áp dụng kiến thức này để quản lý hiệu quả các bản sửa đổi trong tài liệu Word của riêng mình bằng Aspose.Words for .NET.
+Quản lý các bản sửa đổi tài liệu có thể là một nhiệm vụ khó khăn, nhưng với Aspose.Words dành cho .NET, công việc này trở nên đơn giản và hiệu quả. Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng theo dõi, chấp nhận và từ chối các thay đổi trong tài liệu Word của mình, đảm bảo tài liệu của bạn luôn cập nhật và chính xác. Vì vậy, tại sao phải chờ đợi? Hãy hòa mình vào thế giới của Aspose.Words và hợp lý hóa việc quản lý tài liệu của bạn ngay hôm nay!
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Làm cách nào để bật tính năng theo dõi sửa đổi trong Aspose.Words cho .NET?
+### Làm cách nào để bắt đầu theo dõi các bản sửa đổi trong Aspose.Words cho .NET?
 
-#### Giải pháp 1:
+ Bạn có thể bắt đầu theo dõi các sửa đổi bằng cách gọi`StartTrackRevisions` trên đối tượng tài liệu của bạn và chuyển tên tác giả cũng như ngày hiện tại.
 
- Trả lời: Để bật theo dõi sửa đổi trong Aspose.Words cho .NET, hãy sử dụng`StartTrackRevisions` phương pháp của`Document` đối tượng và chỉ định tên tác giả cũng như ngày bắt đầu theo dõi sửa đổi.
+### Tôi có thể ngừng theo dõi các bản sửa đổi bất kỳ lúc nào không?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+Có, bạn có thể ngừng theo dõi các bản sửa đổi bằng cách gọi`StopTrackRevisions` phương pháp trên đối tượng tài liệu của bạn.
 
-#### Giải pháp 2:
+### Làm cách nào để chấp nhận tất cả các sửa đổi trong một tài liệu?
 
- Đáp: Bạn cũng có thể kích hoạt tính năng theo dõi sửa đổi bằng cách sử dụng`Document` hàm tạo chấp nhận`trackRevisions`Và`author` thông số.
+ Để chấp nhận tất cả các sửa đổi, hãy sử dụng`AcceptAllRevisions` phương pháp trên đối tượng tài liệu của bạn.
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### Tôi có thể từ chối các sửa đổi cụ thể không?
 
-#### Câu hỏi: Làm cách nào để chấp nhận tất cả các thay đổi trong tài liệu bằng Aspose.Words cho .NET?
+ Có, bạn có thể từ chối các bản sửa đổi cụ thể bằng cách điều hướng đến chúng và sử dụng`Reject` phương pháp.
 
- Đáp: Hãy sử dụng`AcceptAllRevisions` phương pháp của`Document` phản đối việc chấp nhận mọi thay đổi được thực hiện đối với tài liệu.
+### Tôi có thể tải xuống Aspose.Words cho .NET ở đâu?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### Hỏi: Làm cách nào để lưu tài liệu đã sửa đổi với các bản sửa đổi được chấp nhận?
-
- Sử dụng`Save` phương pháp của`Document` đối tượng lưu tài liệu đã sửa đổi với các bản sửa đổi được chấp nhận. Đảm bảo cung cấp đường dẫn tệp chính xác.
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### Câu hỏi: Làm cách nào để ngừng theo dõi các bản sửa đổi trong Aspose.Words cho .NET?
-
- Đáp: Hãy sử dụng`StopTrackRevisions` phương pháp của`Document` phản đối việc ngừng theo dõi các phiên bản.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### Câu hỏi: Làm cách nào để xóa đoạn đã sửa đổi trong tài liệu bằng Aspose.Words cho .NET?
-
- Đáp: Để xóa đoạn văn đã sửa đổi trong tài liệu, bạn có thể sử dụng`Remove` phương pháp thu thập đoạn văn.
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ Bạn có thể tải xuống Aspose.Words cho .NET từ[liên kết tải xuống](https://releases.aspose.com/words/net/).

@@ -121,4 +121,4 @@ Aspose.Words voor .NET is een bibliotheek waarmee u Word-documenten programmatis
  Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
 
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Words?
- U kunt een bezoek brengen aan de[Helpforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+ U kunt een bezoek brengen aan de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.

@@ -15,7 +15,7 @@ En este tutorial, profundizaremos en el meollo de la cuestión de cómo insertar
 
 Antes de pasar al tutorial, asegurémonos de que tiene todo lo que necesita:
 
--  Aspose.Words para la biblioteca .NET: puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para la biblioteca .NET: puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Visual Studio: aquí es donde escribiremos y ejecutaremos nuestro código.
 - .NET Framework: asegúrese de tenerlo instalado en su máquina.
 - Conocimientos básicos de C#: la familiaridad con la programación en C# le ayudará a seguir adelante.
@@ -138,7 +138,7 @@ Aspose.Words ofrece una prueba gratuita, pero para disfrutar de todas las funcio
 
 ### ¿Puedo agregar otros tipos de campos usando Aspose.Words?
 
- Sí, Aspose.Words admite varios tipos de campos, incluidos fecha, hora, número de página y más. Comprobar el[documentación](https://reference.aspose.com/words/net/) para detalles.
+ Sí, Aspose.Words admite varios tipos de campos, incluidos fecha, hora, número de página y más. Compruebe el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### ¿Dónde puedo encontrar soporte si tengo problemas?
 

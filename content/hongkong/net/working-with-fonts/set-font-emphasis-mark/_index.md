@@ -2,83 +2,105 @@
 title: 設定字體強調標記
 linktitle: 設定字體強調標記
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定字體強調樣式。
+description: 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中設定字體強調標記。非常適合 .NET 開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## 介紹
 
-在本教學中，我們將向您展示如何使用 Aspose.Words for .NET 在 Word 文件中設定字體強調樣式。字體強調用於突出顯示文字中的某些單字或短語。
+在今天的教學中，我們將深入探討如何使用 Aspose.Words for .NET 在 Word 文件中設定字體強調標記。無論您是想用獨特的標記在特定文字下劃線，還是只是想讓某些單字脫穎而出，本指南都能滿足您的需求。所以，繫好安全帶，讓我們開始吧！
 
 ## 先決條件
-在開始之前，請確保您擁有以下物品：
-- C# 程式語言的應用知識
-- 專案中安裝的 .NET 的 Aspose.Words 函式庫
 
-## 步驟1：定義文檔目錄
-首先將目錄路徑設定為 Word 文件的位置。代替`"YOUR DOCUMENT DIRECTORY"`在具有適當路徑的程式碼中。
+在我們深入了解具體細節之前，請確保您已勾選以下先決條件：
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words for .NET 程式庫：確保您已安裝 Aspose.Words for .NET 程式庫。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
+- 開發環境：工作開發環境，例如 Visual Studio。
+- .NET Framework：確保您已安裝 .NET Framework。
 
-## 第 2 步：建立並自訂文檔
-建立一個實例`Document`類別和關聯的`DocumentBuilder`建構文檔內容。使用`Font.EmphasisMark`屬性將字體強調樣式設定為`EmphasisMark.UnderSolidCircle`。然後使用`Write`和`Writeln`的方法`DocumentBuilder`新增具有指定字體強調的文字。
+## 導入命名空間
+
+若要使用 Aspose.Words for .NET，您需要匯入必要的命名空間。將這些添加到程式碼檔案的頂部：
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 步驟 3：儲存文檔
-使用儲存文檔`Save`的方法`Document`具有適當的路徑和檔案名稱。
+現在，讓我們將該過程分解為簡單的步驟。仔細按照每個步驟在 Word 文件中設定字型強調標記。
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## 步驟1：初始化Document和DocumentBuilder
 
-### 使用 Aspose.Words for .NET 設定字體強調標記的範例原始碼 
+首先，您需要初始化一個新文件和一個 DocumentBuilder。 DocumentBuilder 類別提供了將文字和其他元素插入文件的方法。
 
 ```csharp
 //文檔目錄的路徑
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+//初始化一個新文檔
 Document document = new Document();
+
+//使用文件初始化 DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## 第2步：設定字體強調標記
+
+準備好 DocumentBuilder 後，現在可以設定字體強調標記。在此範例中，我們將使用“UnderSolidCircle”強調標記。
+
+```csharp
+//設定字體強調標記
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+//用強調標記書寫文本
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## 第 3 步：清除格式並新增常規文本
+
+設定強調標記後，您可能想要添加一些不帶任何強調的常規文字。為此，您需要清除格式。
+
+```csharp
+//清除字體格式
 builder.Font.ClearFormatting();
+
+//寫入常規文本
 builder.Write("Simple text");
+```
+
+## 步驟 4：儲存文檔
+
+在新增所需的所有文字和格式後，最後一步是儲存文件。指定要儲存文件的路徑和檔案名稱。
+
+```csharp
+//儲存文件
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## 結論
-在本教學中，您學習如何使用 Aspose.Words for .NET 在 Word 文件中設定字體強調樣式。嘗試不同的強調風格，並使用此功能突出顯示文件中的單字或短語。
 
-### 常見問題解答
+現在你就得到它了！使用 Aspose.Words for .NET 在 Word 文件中設定字體強調標記就是這麼簡單。只需幾行程式碼，您就可以使您的文字脫穎而出，並為您的文件添加專業風格。請毫不猶豫地嘗試不同的強調標記和樣式來滿足您的需求。
 
-#### Q：如何使用 Aspose.Words 將重音符號新增至 Word 文件中的特定字體？
+## 常見問題解答
 
-答：要使用 Aspose.Words 將重音標記新增至 Word 文件中的特定字體，您可以使用 API 導覽至所需的字體並套用適當的重音標記。這將為具有所選字體的文字添加重音符號。
+### 什麼是字體強調標記？
 
-#### Q：是否可以使用 Aspose.Words 來變更 Word 文件中重音符號的樣式？
+字體強調標記是添加到文字中以使其脫穎而出的特殊符號。它們可以包括點、圓圈和其他裝飾標記。
 
-答：是的，使用 Aspose.Words，您可以變更 Word 文件中重音符號的樣式。此 API 可讓您調整顏色、大小、線型等樣式屬性，以自訂重音標記的外觀。
+### 我可以在 Aspose.Words for .NET 中使用其他強調標記嗎？
 
-#### Q：如何使用 Aspose.Words 刪除 Word 文件中的所有重音符號？
+是的，Aspose.Words for .NET 支援各種強調標記。您可以參考以下內容探索不同的選項[文件](https://reference.aspose.com/words/net/).
 
-答：要使用 Aspose.Words 從 Word 文件中刪除所有重音符號，您可以使用 API 瀏覽文件、偵測現有重音符號並使用適當的方法將其刪除。這將從文件中刪除所有強調標記。
+### Aspose.Words for .NET 可以免費使用嗎？
 
-#### Q：我可以在 Word 文件中的文字的特定部分中添加重音符號嗎？
+Aspose.Words for .NET 需要完整功能的授權。您可以獲得免費試用[這裡](https://releases.aspose.com/)或購買許可證[這裡](https://purchase.aspose.com/buy).
 
-答：是的，您可以使用 Aspose.Words 將重音符號新增至 Word 文件中文字的特定部分。您可以使用 API 選擇所需的文字範圍，並在該文字部分中添加適當的強調標記。
+### 如何獲得 Aspose.Words for .NET 支援？
 
-#### Q：重音符號可以依照我的需求客製嗎？
+您可以透過造訪 Aspose 社群和支持團隊獲得支持[支援論壇](https://forum.aspose.com/c/words/8).
 
-答：是的，可以使用 Aspose.Words 根據您的需求自訂重音符號。您可以調整重音標記的樣式屬性，例如顏色、大小、線型等，以符合您的格式首選項。
+### 我可以將 Aspose.Words for .NET 與其他 .NET 框架一起使用嗎？
+
+是的，Aspose.Words for .NET 與各種 .NET 框架相容，包括 .NET Core 和 .NET 5/6。

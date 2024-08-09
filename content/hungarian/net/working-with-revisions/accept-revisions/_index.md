@@ -2,88 +2,40 @@
 title: Változások elfogadása
 linktitle: Változások elfogadása
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan fogadhat el Word-dokumentumok módosításait az Aspose.Words for .NET használatával
+description: Fődokumentum-revíziók az Aspose.Words for .NET segítségével. Tanulja meg követni, elfogadni és elutasítani a változtatásokat erőfeszítés nélkül. Növelje dokumentumkezelési készségeit.
 type: docs
 weight: 10
 url: /hu/net/working-with-revisions/accept-revisions/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok módosításainak elfogadásán az Aspose.Words for .NET Verziók elfogadása funkciójával. Kövesse az alábbi lépéseket a forráskód megértéséhez és a dokumentum módosításainak elfogadásához.
+Előfordult már, hogy a dokumentumok átdolgozásának útvesztőjében küszködik, hogy nyomon kövesse a több közreműködő által végrehajtott változtatásokat? Az Aspose.Words for .NET segítségével a Word-dokumentumok revízióinak kezelése gyerekjáték lesz. Ez a nagy teljesítményű könyvtár lehetővé teszi a fejlesztők számára, hogy könnyedén nyomon kövessék, elfogadják és elutasítsák a változtatásokat, így biztosítva, hogy a dokumentumok rendszerezettek és naprakészek maradjanak. Ebben az oktatóanyagban az Aspose.Words for .NET használatával történő dokumentumrevíziók kezelésének lépésről lépésre történő folyamatát mutatjuk be, a dokumentum inicializálásától az összes módosítás elfogadásáig.
 
-## 1. lépés: Dokumentumtartalom hozzáadása és szerkesztése
+## Előfeltételek
 
-Ebben a példában egy dokumentumot hozunk létre, és tartalmat adunk hozzá. Számos bekezdést használunk a változtatások és átdolgozások szemléltetésére. Itt van, hogyan:
+Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
 
-```csharp
-// A dokumentumok könyvtár elérési útja.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- A Visual Studio telepítve van a gépedre.
+- .NET keretrendszer (lehetőleg a legújabb verzió).
+-  Aspose.Words a .NET könyvtárhoz. Letöltheti[itt](https://releases.aspose.com/words/net/).
+- A C# programozás alapjai.
 
-// Adjon hozzá szöveget az első bekezdéshez, majd adjon hozzá még két bekezdést.
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+Most ugorjunk bele a részletekbe, és nézzük meg, hogyan tudjuk elsajátítani a dokumentumok átdolgozását az Aspose.Words for .NET segítségével.
 
-## 2. lépés: Kövesse nyomon az értékeléseket és adjon hozzá véleményeket
+## Névterek importálása
 
-Engedélyezzük a revíziókövetést, és hozzáadunk egy változatot a dokumentumhoz. Itt van, hogyan:
+Először is importálnia kell a szükséges névtereket az Aspose.Words használatához. Adja hozzá a következőket a kódfájl tetején található direktívák használatával:
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-// Ez a bekezdés egy változat, és a megfelelő „IsInsertRevision” jelzője be van állítva.
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## 3. lépés: Töröljön egy bekezdést és kezelje a revíziókat
+Bontsuk fel a folyamatot kezelhető lépésekre. Minden lépést részletesen elmagyarázunk, hogy biztosan megértse a kód minden részét.
 
-Törölünk egy bekezdést, és ellenőrizzük a mentett változatokat. Itt van, hogyan:
+## 1. lépés: Inicializálja a dokumentumot
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-// Miközben a revíziókat nyomon követjük, a bekezdés továbbra is létezik a dokumentumban, és az "IsDeleteRevision" jelző lesz beállítva
-// és véleményként jelenik meg a Microsoft Wordben, mindaddig, amíg el nem fogadunk vagy el nem utasítunk minden véleményt.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## 4. lépés: Fogadja el a változtatásokat
-
-A dokumentum minden módosítását elfogadjuk. Itt van, hogyan:
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## 5. lépés: Állítsa le a vélemények követését
-
-Leállítjuk a revíziók követését, hogy a dokumentum módosításai többé ne jelenjenek meg revízióként. Itt van, hogyan:
-
-```csharp
-doc.StopTrackRevisions();
-```
-## 6. lépés: A dokumentum mentése
-
- A szövegbeviteli űrlapmező beszúrása után mentse a dokumentumot a kívánt helyre a gombbal`Save`módszer. Ügyeljen arra, hogy megadja a megfelelő fájl elérési utat:
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### Példa forráskódra az Aspose.Words for .NET-hez használható változatok elfogadásához
-
-Íme a teljes forráskód a dokumentum módosításainak elfogadásához az Aspose.Words for .NET használatával:
-
+A kezdéshez létre kell hoznunk egy új dokumentumot, és hozzá kell adni néhány bekezdést. Ez megteremti a terepet a revíziók nyomon követéséhez.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//Három paragrafusunk van, amelyek közül egyiket sem vették nyilvántartásba bármilyen típusú revízióként
-// Ha a revíziók nyomon követése közben bármilyen tartalmat hozzáadunk/eltávolítunk a dokumentumból,
-// ilyen formában jelennek meg a dokumentumban, és elfogadhatók/elutasíthatók.
+Ebben a lépésben létrehoztunk egy új dokumentumot, és három bekezdést adtunk hozzá. Ezek a bekezdések szolgálnak majd kiindulási pontként a felülvizsgálatok nyomon követéséhez.
+
+## 2. lépés: Kezdje el a módosítások követését
+
+Ezután engedélyeznünk kell a revíziókövetést. Ez lehetővé teszi, hogy rögzítsük a dokumentumon végrehajtott változtatásokat.
+
+```csharp
+// Kezdje el a változatok követését.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+ Hívással`StartTrackRevisions`, lehetővé tesszük, hogy a dokumentum nyomon kövesse az összes későbbi változást. Paraméterként a szerző neve és az aktuális dátum kerül átadásra.
+
+## 3. lépés: Adjon hozzá egy változatot
+
+Most, hogy a verziókövetés engedélyezve van, adjunk hozzá egy új bekezdést. Ez a kiegészítés átdolgozásként lesz megjelölve.
+
+```csharp
 // Ez a bekezdés egy átdolgozás, és a megfelelő "IsInsertRevision" jelző lesz beállítva.
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+Itt egy új bekezdés ("4. bekezdés.") egészül ki. Mivel a revíziókövetés engedélyezve van, ez a bekezdés revízióként van megjelölve.
+
+## 4. lépés: Távolítson el egy bekezdést
+
+Ezután eltávolítunk egy meglévő bekezdést, és megfigyeljük, hogyan történik a revízió nyomon követése.
+
+```csharp
 // Szerezze be a dokumentum bekezdésgyűjteményét, és távolítsa el a bekezdést.
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-// Mivel a revíziókat nyomon követjük, a bekezdés továbbra is létezik a dokumentumban, és az "IsDeleteRevision" lesz beállítva
-// és változatként jelenik meg a Microsoft Wordben, amíg el nem fogadjuk vagy el nem utasítjuk az összes revíziót.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+Ebben a lépésben a harmadik bekezdés törlésre kerül. A revíziókövetés miatt ez a törlés rögzítésre kerül, és a bekezdés törlésre kerül megjelölésre, nem pedig azonnali eltávolításra a dokumentumból.
 
-// A revízió törlése bekezdés eltávolításra kerül, ha elfogadjuk a változtatásokat.
+## 5. lépés: Minden módosítás elfogadása
+
+Végül fogadjuk el az összes nyomon követett revíziót, megszilárdítva a változtatásokat a dokumentumban.
+
+```csharp
+// Minden átdolgozást elfogad.
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-// A revíziók követésének leállításával ez a szöveg normál szövegként jelenik meg.
-// A revíziókat a rendszer nem veszi figyelembe a dokumentum megváltoztatásakor.
+ Hívással`AcceptAllRevisions`, biztosítjuk, hogy minden változtatást (kiegészítést és törlést) elfogadunk és alkalmazunk a dokumentumon. A revíziók már nincsenek megjelölve, és beépülnek a dokumentumba.
+
+## 6. lépés: Állítsa le a módosítások követését
+
+### Revíziókövetés letiltása
+
+Befejezésként letilthatjuk a revíziókövetést, hogy leállítsuk a további változtatások rögzítését.
+
+```csharp
+// Állítsa le a változatok követését.
 doc.StopTrackRevisions();
+```
 
+Ez a lépés megakadályozza, hogy a dokumentum nyomon kövesse az új változtatásokat, és az összes későbbi szerkesztést normál tartalomként kezelje.
+
+## 7. lépés: Mentse el a dokumentumot
+
+Végül mentse a módosított dokumentumot a megadott könyvtárba.
+
+```csharp
 // Mentse el a dokumentumot.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+A dokumentum mentésével biztosítjuk, hogy minden változtatásunk és elfogadott revízió megmaradjon.
+
 ## Következtetés
 
-Ebben az oktatóanyagban megtanultuk, hogyan fogadhatunk el revíziókat egy Word-dokumentumban az Aspose.Words for .NET Verziók elfogadása funkciójával. Követtük a dokumentumok tartalmának hozzáadásához és szerkesztéséhez, a módosítások nyomon követéséhez, a módosított bekezdés törléséhez, az összes módosítás elfogadásához és a módosítások követésének leállításához szükséges lépéseket. Mostantól ezt a tudást alkalmazhatja saját Word-dokumentumai revízióinak hatékony kezelésére az Aspose.Words for .NET segítségével.
+A dokumentumok revízióinak kezelése ijesztő feladat lehet, de az Aspose.Words for .NET segítségével egyszerűvé és hatékonysá válik. Az ebben az útmutatóban ismertetett lépések követésével könnyedén nyomon követheti, elfogadhatja és elutasíthatja a Word-dokumentumok módosításait, így biztosítva, hogy a dokumentumok mindig naprakészek és pontosak legyenek. Szóval minek várni? Merüljön el az Aspose.Words világában, és egyszerűsítse dokumentumkezelését még ma!
 
-### GYIK
+## GYIK
 
-#### K: Hogyan engedélyezhetem a revíziókövetést az Aspose.Words for .NET-ben?
+### Hogyan kezdhetem el az Aspose.Words for .NET verzióinak nyomon követését?
 
-#### 1. megoldás:
+ A revíziók nyomon követését a`StartTrackRevisions` metódust a dokumentum objektumon, és átadja a szerző nevét és az aktuális dátumot.
 
- V: A revíziókövetés engedélyezéséhez az Aspose.Words for .NET-ben használja a`StartTrackRevisions` módszere a`Document` objektumot, és adja meg a szerző nevét és a revíziókövetés kezdő dátumát.
+### Bármikor leállíthatom a revíziók követését?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+Igen, leállíthatja a revíziók követését a`StopTrackRevisions` módszert a dokumentumobjektumban.
 
-#### 2. megoldás:
+### Hogyan fogadhatom el a dokumentum összes átdolgozását?
 
- V: A revíziókövetést a következővel is engedélyezheti`Document` kivitelező, amely elfogadja`trackRevisions`és`author` paramétereket.
+ Az összes módosítás elfogadásához használja a`AcceptAllRevisions` módszert a dokumentumobjektumban.
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### Elutasíthatok bizonyos módosításokat?
 
-#### K: Hogyan fogadható el az összes módosítás egy dokumentumban az Aspose.Words for .NET segítségével?
+ Igen, bizonyos módosításokat elutasíthat, ha rájuk navigál, és használja a`Reject` módszer.
 
- V: Használja a`AcceptAllRevisions` módszere a`Document` tiltakozik a dokumentumon végzett összes módosítás elfogadására.
+### Honnan tölthetem le az Aspose.Words for .NET fájlt?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### K: Hogyan menthetek el egy módosított dokumentumot elfogadott változatokkal?
-
- Használja a`Save` módszere a`Document` objektumot a módosított dokumentum mentéséhez az elfogadott változatokkal. Ügyeljen arra, hogy a megfelelő fájl elérési utat adja meg.
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### K: Hogyan állíthatom le az Aspose.Words for .NET változatainak követését?
-
- V: Használja a`StopTrackRevisions` módszere a`Document` objektumot a követési változatok leállításához.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### K: Hogyan törölhetek átdolgozott bekezdést egy dokumentumból az Aspose.Words for .NET segítségével?
-
- V: A dokumentum módosított bekezdésének eltávolításához használja a`Remove` a bekezdésgyűjtés módszere.
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ Az Aspose.Words for .NET letölthető innen[letöltési link](https://releases.aspose.com/words/net/).

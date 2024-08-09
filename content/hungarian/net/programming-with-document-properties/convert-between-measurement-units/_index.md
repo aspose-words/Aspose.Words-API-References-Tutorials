@@ -9,7 +9,7 @@ url: /hu/net/programming-with-document-properties/convert-between-measurement-un
 ---
 ## Bevezetés
 
-Halihó! Ön olyan fejlesztő, aki Word-dokumentumokkal dolgozik az Aspose.Words for .NET használatával? Ha igen, akkor gyakran előfordulhat, hogy margót, fejlécet vagy láblécet kell beállítania különböző mértékegységekben. A mértékegységek, például hüvelyk és pont közötti konvertálás bonyolult lehet, ha nem ismeri a könyvtár funkcióit. Ebben az átfogó oktatóanyagban végigvezetjük a mértékegységek közötti konvertálás folyamatán az Aspose.Words for .NET használatával. Merüljünk el, és egyszerűsítsük ezeket az átalakításokat!
+Szia! Ön olyan fejlesztő, aki Word-dokumentumokkal dolgozik az Aspose.Words for .NET használatával? Ha igen, akkor gyakran előfordulhat, hogy margót, fejlécet vagy láblécet kell beállítania különböző mértékegységekben. A mértékegységek, például hüvelyk és pont közötti konvertálás bonyolult lehet, ha nem ismeri a könyvtár funkcióit. Ebben az átfogó oktatóanyagban végigvezetjük a mértékegységek közötti konvertálás folyamatán az Aspose.Words for .NET használatával. Merüljünk el, és egyszerűsítsük ezeket az átalakításokat!
 
 ## Előfeltételek
 
@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Nyissa meg az oldalbeállításokat
 
- A margók, fejlécek és láblécek beállításához el kell érnie a`PageSetup` tárgy.
+ A margók, fejlécek és láblécek beállításához el kell érnie a`PageSetup` objektum.
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -99,4 +99,4 @@ Bár az Aspose.Words licenc nélkül is használható, egyes speciális funkció
  Igen, testreszabhatja a margókat és egyéb beállításokat a különböző szakaszokhoz a segítségével`Section` osztály.
 
 ### Milyen egyéb funkciókat kínál az Aspose.Words?
- Az Aspose.Words a funkciók széles skáláját támogatja, beleértve a dokumentumkonverziót, a körlevél-egyesítést és a kiterjedt formázási lehetőségeket. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Az Aspose.Words a funkciók széles skáláját támogatja, beleértve a dokumentumkonverziót, a körlevél-egyesítést és a kiterjedt formázási lehetőségeket. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.

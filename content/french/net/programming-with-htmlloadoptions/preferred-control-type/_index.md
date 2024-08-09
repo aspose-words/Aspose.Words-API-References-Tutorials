@@ -93,7 +93,7 @@ Cela enregistre le document Word avec le contrôle de zone de liste déroulante 
 
 ## Conclusion
 
-Et voila! Nous avons réussi à insérer un champ de formulaire de zone de liste déroulante dans un document Word à l'aide d'Aspose.Words pour .NET en tirant parti des options de chargement HTML. Ce guide étape par étape devrait vous aider à comprendre le processus et à l'appliquer à vos projets. Que vous automatisiez la création de documents ou manipuliez du contenu HTML, Aspose.Words for .NET fournit des outils puissants pour atteindre vos objectifs.
+Et voilà ! Nous avons réussi à insérer un champ de formulaire de zone de liste déroulante dans un document Word à l'aide d'Aspose.Words pour .NET en tirant parti des options de chargement HTML. Ce guide étape par étape devrait vous aider à comprendre le processus et à l'appliquer à vos projets. Que vous automatisiez la création de documents ou manipuliez du contenu HTML, Aspose.Words for .NET fournit des outils puissants pour atteindre vos objectifs.
 
 ## FAQ
 

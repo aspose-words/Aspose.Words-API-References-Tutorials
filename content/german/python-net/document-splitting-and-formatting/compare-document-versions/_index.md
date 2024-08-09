@@ -41,7 +41,7 @@ doc2 = aw.Document(doc2_path)
 
 ## Vergleichen von Dokumentversionen
 
- Vergleichen Sie die beiden geladenen Dokumente mit dem`Compare` Methode:
+ Vergleichen Sie die beiden geladenen Dokumente mit dem`Compare` Verfahren:
 
 ```python
 comparison = doc1.compare(doc2, "Author Name", datetime.now())

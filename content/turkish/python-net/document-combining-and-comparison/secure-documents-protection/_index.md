@@ -55,7 +55,7 @@ Belgenin içeriğini şifrelemek güvenliği artırır:
 doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 ```
 
-## Dijital imzalar
+## Dijital İmzalar
 
 Belgenin orijinalliğinden emin olmak için dijital imza ekleyin:
 

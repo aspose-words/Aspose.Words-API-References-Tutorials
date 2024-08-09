@@ -2,76 +2,100 @@
 title: Wstaw pola formularza
 linktitle: Wstaw pola formularza
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawiać rozwijane pola formularzy do dokumentów programu Word przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawić pole formularza pola kombi do dokumentu programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-formfields/insert-form-fields/
 ---
+## Wstęp
 
-W tym samouczku krok po kroku poprowadzimy Cię, jak wstawić pola formularza, w szczególności pole formularza rozwijanego, do dokumentu programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+Pola formularzy w dokumentach programu Word mogą być niezwykle przydatne do tworzenia interaktywnych formularzy lub szablonów. Niezależnie od tego, czy generujesz ankietę, formularz wniosku, czy inny dokument wymagający wkładu użytkownika, pola formularza są niezbędne. W tym samouczku przeprowadzimy Cię przez proces wstawiania pola pola kombi do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Omówimy wszystko, od wymagań wstępnych po szczegółowe kroki, zapewniając kompleksowe zrozumienie procesu.
 
- Aby rozpocząć, upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Warunki wstępne
 
-## Krok 1: Inicjowanie obiektów Document i DocumentBuilder
+Zanim zagłębisz się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
 
- Najpierw zainicjuj`Document`I`DocumentBuilder` obiekty:
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli nie, możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Będziesz potrzebować IDE, takiego jak Visual Studio.
+3. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
+
+## Importuj przestrzenie nazw
+
+Na początek musisz zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw zawierają klasy i metody, których będziesz używać do pracy z dokumentami programu Word w Aspose.Words dla .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Przejdźmy teraz do przewodnika krok po kroku, jak wstawić pole formularza kombi.
+
+## Krok 1: Utwórz nowy dokument
+
+Najpierw musisz utworzyć nowy dokument Word. Dokument ten posłuży jako kanwa do dodawania pól formularza.
+
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Wstawianie pola formularza rozwijanego
+ W tym kroku tworzymy instancję pliku`Document` klasa. To wystąpienie reprezentuje dokument programu Word. Następnie tworzymy instancję`DocumentBuilder` class, która udostępnia metody wstawiania treści do dokumentu.
 
- Następnie określ opcje rozwijanego pola formularza i wstaw go do dokumentu za pomocą`InsertComboBox` metoda`DocumentBuilder` obiekt. W tym przykładzie wstawimy rozwijane pole formularza o nazwie „DropDown” z trzema opcjami: „Jeden”, „Dwa” i „Trzy”:
+## Krok 2: Zdefiniuj elementy pola kombi
+
+Następnie zdefiniuj elementy, które chcesz uwzględnić w polu kombi. Pozycje te będą opcjami dostępnymi do wyboru.
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
+```
+
+ Tutaj tworzymy tablicę ciągów o nazwie`items` zawierający opcje „Jeden”, „Dwa” i „Trzy”.
+
+## Krok 3: Wstaw pole kombi
+
+ Teraz wstaw pole kombi do dokumentu za pomocą`DocumentBuilder` przykład.
+
+```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## Krok 3: Zapisywanie dokumentu
+ Na tym etapie używamy`InsertComboBox` metoda`DocumentBuilder` klasa. Pierwszy parametr to nazwa pola kombi („DropDown”), drugi parametr to tablica elementów, a trzeci parametr to indeks domyślnie wybranego elementu (w tym przypadku pierwszego elementu).
 
-Na koniec zapisz dokument:
+## Krok 4: Zapisz dokument
+
+Na koniec zapisz dokument w wybranej lokalizacji.
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-Otóż to! Pomyślnie wstawiłeś rozwijane pole formularza do dokumentu Word przy użyciu Aspose.Words dla .NET.
+Ta linia kodu zapisuje dokument jako „OutputDocument.docx” w katalogu projektu. Możesz określić inną ścieżkę, jeśli chcesz zapisać ją w innym miejscu.
 
-### Przykładowy kod źródłowy dla wstawiania pól formularza przy użyciu Aspose.Words dla .NET
+## Wniosek
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+Wykonując te kroki, pomyślnie wstawiłeś pole formularza kombi do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Proces ten można dostosować, aby uwzględnić inne typy pól formularzy, dzięki czemu Twoje dokumenty będą interaktywne i przyjazne dla użytkownika.
 
-string[] items = { "One", "Two", "Three" };
-builder.InsertComboBox("DropDown", items, 0);
+Wstawianie pól formularzy może znacznie zwiększyć funkcjonalność dokumentów programu Word, umożliwiając dynamiczną zawartość i interakcję z użytkownikiem. Aspose.Words dla .NET czyni ten proces prostym i wydajnym, umożliwiając łatwe tworzenie profesjonalnych dokumentów.
 
-doc.Save("OutputDocument.docx");
-```
+## Często zadawane pytania
 
-Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go zgodnie ze swoimi specyficznymi wymaganiami.
+### Czy mogę dodać więcej niż jedno pole kombi do dokumentu?
 
-### Często zadawane pytania
+Tak, możesz dodać do dokumentu wiele pól kombi lub innych pól formularzy, powtarzając kroki wstawiania z różnymi nazwami i elementami.
 
-#### P: Jak mogę wstawić pole formularza tekstowego w Aspose.Words?
+### Jak ustawić inny domyślny wybrany element w polu kombi?
 
- Odp.: Aby wstawić pole formularza tekstowego w Aspose.Words, możesz użyć`FormField` klasę i ustaw ją`Type`własność do`FormFieldType.Text`. Można także dostosować inne właściwości, takie jak nazwa, etykieta i opcje.
+Możesz zmienić domyślnie wybrany element, modyfikując trzeci parametr w pliku`InsertComboBox` metoda. Na przykład ustawienie go na`1` domyślnie wybierze drugi element.
 
-#### P: Czy można utworzyć w dokumencie pole formularza typu checkbox?
+### Czy mogę dostosować wygląd pola kombi?
 
- O: Tak, możliwe jest utworzenie pola formularza typu checkbox w dokumencie Aspose.Words. Możesz skorzystać z`FormField` klasę i ustaw ją`Type`własność do`FormFieldType.CheckBox` aby utworzyć pole wyboru. Następnie możesz dostosować właściwości pola wyboru według potrzeb.
+ Wygląd pól formularza można dostosować za pomocą różnych właściwości i metod w Aspose.Words. Patrz[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
-#### P: Jak mogę dodać pole formularza rozwijanego do dokumentu?
+### Czy można wstawiać inne typy pól formularzy, takie jak wprowadzanie tekstu lub pola wyboru?
 
- O: Aby dodać pole formularza rozwijanego w dokumencie Aspose.Words, użyj opcji`FormField` klasę i ustaw ją`Type`własność do`FormFieldType.DropDown` . Następnie możesz ustawić opcje rozwijane za pomocą`DropDownItems` nieruchomość.
+ Tak, Aspose.Words dla .NET obsługuje różne typy pól formularzy, w tym pola wprowadzania tekstu, pola wyboru i inne. Przykłady i szczegółowe instrukcje można znaleźć w pliku[dokumentacja](https://reference.aspose.com/words/net/).
 
-#### P: Czy mogę ustawić domyślną wartość pola formularza w Aspose.Words?
+### Jak mogę wypróbować Aspose.Words dla .NET przed zakupem?
 
-O: Tak, możesz ustawić domyślną wartość pola formularza w Aspose.Words. Użyj`FormField.Result` właściwość określająca wartość początkową pola formularza.
-
-#### P: Jak mogę odzyskać dane wprowadzone w polach formularza w Aspose.Words?
-
- Odp.: Aby odzyskać dane wprowadzone w polach formularza w Aspose.Words, możesz użyć`FormField.Result` właściwość zawierająca wartość wprowadzoną przez użytkownika. Dostęp do tej właściwości można uzyskać dla każdego pola formularza w dokumencie.
+ Możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/) i poproś o tymczasową licencję od[Tutaj](https://purchase.aspose.com/temporary-license/).

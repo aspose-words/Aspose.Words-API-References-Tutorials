@@ -52,7 +52,7 @@ Zodra uw project is opgezet, is de volgende stap het laden van het Word-document
     Document doc = new Document(dataDir + "Rendering.docx");
     ```
 
-## Stap 3: Configureer PDF-opslagopties
+## Stap 3: Configureer de PDF-opslagopties
 
  De magie gebeurt hier! Wij configureren de`PdfSaveOptions` om extra tekstpositionering mogelijk te maken.
 
@@ -60,7 +60,7 @@ Zodra uw project is opgezet, is de volgende stap het laden van het Word-document
     ```csharp
     PdfSaveOptions saveOptions = new PdfSaveOptions();
     ```
-2.  Schakel aanvullende tekstpositionering in: Stel de`AdditionalTextPositioning`eigendom aan`true`.
+2.  Extra tekstpositionering inschakelen: Stel de`AdditionalTextPositioning`eigendom aan`true`.
     ```csharp
     saveOptions.AdditionalTextPositioning = true;
     ```

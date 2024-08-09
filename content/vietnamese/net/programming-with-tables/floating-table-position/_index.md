@@ -15,7 +15,7 @@ Bạn đã sẵn sàng đi sâu vào thế giới thao tác các vị trí bản
 
 Trước khi bắt đầu cuộc hành trình thú vị này, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
 
-1. Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất. Nếu bạn không,[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất. Nếu bạn không,[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. .NET Framework: Đảm bảo môi trường phát triển của bạn được thiết lập bằng .NET.
 3. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE ưa thích nào.
 4. Tài liệu Word: Chuẩn bị sẵn tài liệu Word có chứa bảng.
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Hướng dẫn từng bước một
+## Hướng dẫn từng bước
 
 Bây giờ, hãy chia quy trình thành các bước đơn giản, dễ hiểu.
 
@@ -65,7 +65,7 @@ Bây giờ, hãy đặt vị trí nằm ngang của bảng. Điều này xác đ
 table.AbsoluteHorizontalDistance = 10;
 ```
 
- Hãy hình dung điều này khi di chuyển bảng theo chiều ngang trong tài liệu của bạn. Các`AbsoluteHorizontalDistance` là khoảng cách chính xác từ cạnh trái.
+ Hãy hình dung điều này khi di chuyển bảng theo chiều ngang trong tài liệu của bạn. các`AbsoluteHorizontalDistance` là khoảng cách chính xác từ cạnh trái.
 
 ## Bước 4: Đặt căn chỉnh dọc
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa nắm vững cách kiểm soát vị trí nổi của bảng trong tài liệu Word bằng Aspose.Words for .NET. Với những kỹ năng này, bạn có thể đảm bảo các bảng của mình được đặt ở vị trí hoàn hảo để nâng cao khả năng đọc và tính thẩm mỹ cho tài liệu của bạn. Hãy tiếp tục thử nghiệm và khám phá những khả năng to lớn của Aspose.Words dành cho .NET.
+Và bạn có nó! Bạn vừa nắm vững cách kiểm soát vị trí nổi của bảng trong tài liệu Word bằng Aspose.Words for .NET. Với những kỹ năng này, bạn có thể đảm bảo các bảng của mình được đặt ở vị trí hoàn hảo để nâng cao khả năng đọc và tính thẩm mỹ cho tài liệu của bạn. Hãy tiếp tục thử nghiệm và khám phá những khả năng to lớn của Aspose.Words dành cho .NET.
 
 ## Câu hỏi thường gặp
 

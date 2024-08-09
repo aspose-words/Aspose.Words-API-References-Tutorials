@@ -15,7 +15,7 @@ Ben je het beu om met gigantische Word-documenten om te gaan die een nachtmerrie
 
 Voordat we in de kern duiken, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben om met Aspose.Words voor .NET te werken:
 
-1.  Aspose.Words voor .NET-bibliotheek: u hebt deze bibliotheek nodig. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET-bibliotheek: u hebt deze bibliotheek nodig. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere .NET-compatibele IDE.
 3. Basiskennis van C#: Als je hier bent, neem ik aan dat je al vertrouwd bent met C#.
 
@@ -98,7 +98,7 @@ En daar heb je het! Het opsplitsen van een Word-document in secties met Aspose.W
 Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunnen ontwikkelaars Word-documenten maken, wijzigen en beheren binnen hun .NET-toepassingen.
 
 ### Hoe kan ik een gratis proefversie van Aspose.Words voor .NET krijgen?
- Jij kan[download een gratis proefversie](https://releases.aspose.com/) van Aspose.Words voor .NET van de Aspose-website.
+ Dat kan[download een gratis proefversie](https://releases.aspose.com/) van Aspose.Words voor .NET van de Aspose-website.
 
 ### Kan ik documenten op basis van andere criteria splitsen met Aspose.Words voor .NET?
 Ja, u kunt documenten opsplitsen op basis van verschillende criteria, zoals alinea's, pagina's of aangepaste markeringen, door de codelogica dienovereenkomstig aan te passen.

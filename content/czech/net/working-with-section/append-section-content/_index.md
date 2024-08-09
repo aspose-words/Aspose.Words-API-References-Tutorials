@@ -2,14 +2,14 @@
 title: Připojit část Slovní obsah
 linktitle: Připojit část Slovní obsah
 second_title: Aspose.Words API pro zpracování dokumentů
-description: V tomto kurzu se dozvíte, jak přidat obsah slov do konkrétních částí dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: tomto kurzu se dozvíte, jak přidat obsah slov do konkrétních částí dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-section/append-section-content/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přemýšleli jste někdy, jak programově manipulovat s dokumenty Wordu pomocí .NET? Pokud hledáte robustní knihovnu pro práci s dokumenty Word, Aspose.Words for .NET je vaše nejlepší volba. Dnes vás provedu procesem připojování sekcí do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už jste začátečník nebo ostřílený vývojář, tento tutoriál vám pomůže zvládnout základy a některé pokročilé koncepty. Takže, pojďme se ponořit!
+Ahoj! Přemýšleli jste někdy, jak programově manipulovat s dokumenty Wordu pomocí .NET? Pokud hledáte robustní knihovnu pro práci s dokumenty Word, Aspose.Words for .NET je vaše nejlepší volba. Dnes vás provedu procesem připojování sekcí do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už jste začátečník nebo ostřílený vývojář, tento tutoriál vám pomůže zvládnout základy a některé pokročilé koncepty. Takže, pojďme se ponořit!
 
 ## Předpoklady
 

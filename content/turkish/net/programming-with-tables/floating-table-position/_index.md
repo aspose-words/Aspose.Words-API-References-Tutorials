@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Adım adım rehber
+## Adım Adım Kılavuz
 
 Şimdi süreci basit, sindirilebilir adımlara ayıralım.
 
@@ -89,7 +89,7 @@ Bu, düzenlediğiniz belgede 'Kaydet'e basmak gibidir. Artık tüm değişiklikl
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tabloların kayan konumunu nasıl kontrol edeceğinizi artık öğrendiniz. Bu becerilerle, belgelerinizin okunabilirliğini ve estetiğini artırmak için tablolarınızın mükemmel şekilde konumlandırılmasını sağlayabilirsiniz. Aspose.Words for .NET'in geniş yeteneklerini denemeye ve keşfetmeye devam edin.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tabloların kayan konumunu nasıl kontrol edeceğinizi artık öğrendiniz. Bu becerilerle, belgelerinizin okunabilirliğini ve estetiğini artırmak için tablolarınızın mükemmel şekilde konumlandırılmasını sağlayabilirsiniz. Aspose.Words for .NET'in geniş yeteneklerini denemeye ve keşfetmeye devam edin.
 
 ## SSS'ler
 
@@ -101,7 +101,7 @@ Bu, düzenlediğiniz belgede 'Kaydet'e basmak gibidir. Artık tüm değişiklikl
 
  Tabloyu sağa hizalamak için`HorizontalAlignment` tablonun özelliği`HorizontalAlignment.Right`.
 
-### Aynı belgede birden fazla tabloyu farklı şekilde konumlandırmak mümkün müdür?
+### Aynı belgede birden fazla tabloyu farklı şekilde konumlandırmak mümkün mü?
 
  Kesinlikle! Birden çok tablonun konumlarına tek tek erişebilir ve bunları ayarlayabilirsiniz.`Tables` belgede toplanması.
 

@@ -99,4 +99,4 @@ using System;
  คุณสามารถรับการสนับสนุนจาก[ฟอรั่ม Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### ฉันสามารถใช้ Aspose.Words ได้ฟรีหรือไม่
- Aspose.Words เสนอ[ทดลองฟรี](https://releases.aspose.com/) และยังจัดให้มี[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) สำหรับการประเมินผล
+ Aspose.Words เสนอ[ทดลองใช้ฟรี](https://releases.aspose.com/) และยังจัดให้มี[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) สำหรับการประเมินผล

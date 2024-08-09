@@ -2,7 +2,7 @@
 title: Granularidade de comparação em documento do Word
 linktitle: Granularidade de comparação em documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda a comparar granularidade no recurso de documento do Word do Aspose.Words for .NET que permite que documentos sejam comparados caractere por caractere, relatando as alterações feitas.
+description: Aprenda a comparar granularidade no recurso de documento do Word do Aspose.Words for .NET que permite que os documentos sejam comparados caractere por caractere, relatando as alterações feitas.
 type: docs
 weight: 10
 url: /pt/net/compare-documents/comparison-granularity/

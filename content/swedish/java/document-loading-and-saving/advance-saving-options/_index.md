@@ -58,7 +58,7 @@ public void doNotCompressSmallMetafiles() throws Exception {
 
 ## Undviker att spara bildpunkter
 
-Bildkulor kan vara iögonfallande, men du kanske vill utesluta dem. Här är hur:
+Bildkulor kan vara iögonfallande, men du kanske vill utesluta dem. Så här gör du:
 
 ```java
 @Test

@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## 結論
 
-現在你就擁有了！您已成功學習如何使用 Aspose.Words for .NET 偵測 Word 文件中的 SmartArt 形狀。本教學介紹了設定環境、載入文件、偵測 SmartArt 形狀以及運行程式碼。 Aspose.Words 提供了廣泛的功能，因此請務必探索[API文件](https://reference.aspose.com/words/net/)釋放其全部潛力。
+現在你就得到它了！您已成功學習如何使用 Aspose.Words for .NET 偵測 Word 文件中的 SmartArt 形狀。本教學介紹了設定環境、載入文件、偵測 SmartArt 形狀以及運行程式碼。 Aspose.Words 提供了廣泛的功能，因此請務必探索[API文件](https://reference.aspose.com/words/net/)釋放其全部潛力。
 
 ## 常見問題解答
 
@@ -94,7 +94,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以�
 
 ### 3. 如何偵測文件中其他類型的形狀？
 
-您可以修改 LINQ 查詢來檢查形狀的其他屬性或類型。請參閱[文件](https://reference.aspose.com/words/net/)更多細節。
+您可以修改 LINQ 查詢來檢查形狀的其他屬性或類型。請參閱[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 4. 如何獲得 Aspose.Words for .NET 支援？
 

@@ -359,7 +359,7 @@ doc.save("Document.pdf", SaveFormat.PDF);
 
 Este trecho de código salva o documento como um arquivo PDF.
 
-## Características avançadas
+## Recursos avançados
 
 Aspose.Words for Java oferece recursos avançados para manipulação complexa de documentos. Isso inclui mala direta, comparação de documentos e muito mais. Explore a documentação para obter orientações detalhadas sobre esses tópicos avançados.
 

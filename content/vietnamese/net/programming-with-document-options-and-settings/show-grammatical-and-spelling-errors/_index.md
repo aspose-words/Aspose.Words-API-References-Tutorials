@@ -77,7 +77,7 @@ Thao tác này sẽ lưu tài liệu đã sửa đổi bằng tên mới, đảm
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ trong một vài bước đơn giản, bạn đã học được cách tự động hóa quy trình hiển thị lỗi ngữ pháp và chính tả trong tài liệu Word bằng Aspose.Words for .NET. Điều này không chỉ giúp bạn tiết kiệm thời gian mà còn đảm bảo tài liệu của bạn không có lỗi và chuyên nghiệp.
+Và bạn có nó! Chỉ trong một vài bước đơn giản, bạn đã học được cách tự động hóa quy trình hiển thị lỗi ngữ pháp và chính tả trong tài liệu Word bằng Aspose.Words for .NET. Điều này không chỉ giúp bạn tiết kiệm thời gian mà còn đảm bảo tài liệu của bạn không có lỗi và chuyên nghiệp.
 
  Nhân tiện, nếu bạn chưa dùng thử Aspose.Words cho .NET, bạn có thể tải xuống bản dùng thử miễn phí[đây](https://releases.aspose.com/) . Nếu bạn cần mua giấy phép, bạn có thể làm như vậy[đây](https://purchase.aspose.com/buy) Và nếu bạn cần hỗ trợ, đừng ngần ngại ghé thăm[diễn đàn](https://forum.aspose.com/c/words/8).
 
@@ -90,7 +90,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 Tuyệt đối! Aspose.Words tích hợp hoàn hảo với các dự án .NET của bạn.
 
 ### Làm cách nào để cài đặt Aspose.Words cho .NET?
- Bạn có thể tải xuống thư viện từ[trang mạng](https://releases.aspose.com/words/net/) và thêm nó vào dự án của bạn như một tài liệu tham khảo.
+ Bạn có thể tải xuống thư viện từ[trang web](https://releases.aspose.com/words/net/) và thêm nó vào dự án của bạn như một tài liệu tham khảo.
 
 ### Có bản dùng thử miễn phí dành cho Aspose.Words cho .NET không?
  Có, bạn có thể dùng thử miễn phí từ[đây](https://releases.aspose.com/).

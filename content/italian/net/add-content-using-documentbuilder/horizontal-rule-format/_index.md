@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
-## introduzione
+## Introduzione
 
 Nell'ambito dello sviluppo .NET, la manipolazione e la formattazione dei documenti Word a livello di codice può essere un compito arduo. Fortunatamente, Aspose.Words per .NET fornisce una soluzione solida, che consente agli sviluppatori di automatizzare facilmente la creazione, la modifica e la gestione dei documenti. Questo articolo approfondisce una delle funzionalità essenziali: l'inserimento di regole orizzontali nei documenti Word. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato con Aspose.Words, padroneggiare questa funzionalità migliorerà il processo di generazione dei documenti.
 

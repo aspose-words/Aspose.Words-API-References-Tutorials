@@ -17,25 +17,25 @@ url: /ko/net/working-with-fonts/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [글꼴 서식](./font-formatting/) | 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서의 글꼴 형식을 지정하는 방법을 알아봅니다. |
-| [글꼴 줄 간격 가져오기](./get-font-line-spacing/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 글꼴 줄 간격을 얻는 방법을 알아봅니다. |
-| [DrawingML 텍스트 효과 확인](./check-drawingml-text-effect/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 DrawingML 텍스트 효과를 확인하는 방법을 알아봅니다. |
-| [글꼴 서식 설정](./set-font-formatting/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 서식을 설정하고 매력적인 문서를 만드는 방법을 알아보세요. |
-| [글꼴 강조 표시 설정](./set-font-emphasis-mark/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 강조 스타일을 설정하는 방법을 알아보세요. |
-| [글꼴 폴더 설정](./set-fonts-folders/) | .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 글꼴 폴더 설정에 대한 단계별 가이드입니다. |
-| [글꼴 대체 비활성화 활성화](./enable-disable-font-substitution/) | 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 대체를 활성화하거나 비활성화하는 방법을 알아봅니다. |
+| [글꼴 서식](./font-formatting/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 형식을 지정하는 방법을 알아보세요. |
+| [글꼴 줄 간격 가져오기](./get-font-line-spacing/) | 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 글꼴 줄 간격을 얻는 방법을 알아보세요. 개발자에게 적합합니다. |
+| [DrawingML 텍스트 효과 확인](./check-drawingml-text-effect/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 DrawingML 텍스트 효과를 확인하는 방법을 알아보세요. 문서를 쉽게 향상하세요. |
+| [글꼴 서식 설정](./set-font-formatting/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 서식을 설정하는 방법을 알아보세요. 문서 자동화를 향상하려면 자세한 단계별 가이드를 따르세요. |
+| [글꼴 강조 표시 설정](./set-font-emphasis-mark/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 강조 표시를 설정하는 방법을 알아보세요. .NET 개발자에게 적합합니다. |
+| [글꼴 폴더 설정](./set-fonts-folders/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words에서 사용자 정의 글꼴 폴더를 설정하는 방법을 알아보세요. 문서 글꼴을 향상시키려는 개발자에게 적합합니다. |
+| [글꼴 대체 비활성화 활성화](./enable-disable-font-substitution/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 대체를 활성화하거나 비활성화하는 방법을 알아보세요. 모든 플랫폼에서 문서가 일관되게 보이도록 하세요. |
 | [글꼴 대체 설정 지정](./set-font-fallback-settings/) | .NET용 Aspose.Words에서 글꼴 대체 설정을 지정하고 Word 문서에서 글꼴 대체를 사용자 정의하는 방법을 알아보세요. |
-| [Noto 대체 설정 로드](./load-noto-fallback-settings/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Noto 재정의 매개변수를 Word 문서에 로드하는 방법을 알아봅니다. |
-| [글꼴 폴더 기본 인스턴스 설정](./set-fonts-folders-default-instance/) | .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 기본 글꼴 폴더를 설정하는 단계별 가이드입니다. |
-| [글꼴 폴더를 여러 폴더로 설정](./set-fonts-folders-multiple-folders/) | .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 여러 글꼴 폴더를 설정하는 단계별 가이드입니다. |
-| [글꼴 폴더 시스템 및 사용자 정의 폴더 설정](./set-fonts-folders-system-and-custom-folder/) | .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 시스템 및 사용자 정의 글꼴 폴더 설정에 대한 단계별 가이드입니다. |
-| [우선순위로 글꼴 폴더 설정](./set-fonts-folders-with-priority/) | .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 글꼴 폴더를 우선적으로 설정하는 단계별 가이드입니다. |
-| [트루타입 글꼴 폴더 설정](./set-true-type-fonts-folder/) | .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 트루타입 글꼴 폴더 설정에 대한 단계별 가이드입니다. |
-| [렌더링 시 기본 글꼴 지정](./specify-default-font-when-rendering/) | .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 기본 글꼴을 지정하는 방법에 대한 단계별 가이드입니다. |
-| [로드 옵션이 있는 글꼴 설정](./font-settings-with-load-options/) | 이 튜토리얼에서는 사용자 정의 로딩 옵션과 해당 글꼴 설정을 사용하여 Word 문서를 로드하는 방법을 알아봅니다.|
-| [글꼴 폴더 설정](./set-fonts-folder/) | .NET용 Aspose.Words에서 글꼴 디렉터리를 설정하고 문서에 사용되는 글꼴의 가용성을 확인하는 방법을 알아보세요. |
+| [Noto 대체 설정 로드](./load-noto-fallback-settings/) | .NET용 Aspose.Words를 사용하여 Word 문서에 Noto 대체 설정을 로드하는 방법을 알아보세요. 모든 문자가 올바르게 표시되도록 하려면 단계별 가이드를 따르세요. |
+| [글꼴 폴더 기본 인스턴스 설정](./set-fonts-folders-default-instance/) | 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words에서 기본 인스턴스에 대한 글꼴 폴더를 설정하는 방법을 알아보세요. Word 문서를 손쉽게 사용자 정의하세요. |
+| [글꼴 폴더를 여러 폴더로 설정](./set-fonts-folders-multiple-folders/) | .NET용 Aspose.Words를 사용하여 Word 문서에 여러 글꼴 폴더를 설정하는 방법을 알아보세요. 이 단계별 가이드는 귀하의 문서에 필요한 정확한 글꼴이 사용되도록 보장합니다. |
+| [글꼴 폴더 시스템 및 사용자 정의 폴더 설정](./set-fonts-folders-system-and-custom-folder/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 시스템 및 사용자 정의 글꼴 폴더를 설정하여 문서가 다양한 환경에서 올바르게 표시되도록 하는 방법을 알아보세요. |
+| [우선순위로 글꼴 폴더 설정](./set-fonts-folders-with-priority/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 폴더에 우선순위를 설정하는 방법을 알아보세요. 우리 가이드는 귀하의 문서가 매번 완벽하게 렌더링되도록 보장합니다. |
+| [트루타입 글꼴 폴더 설정](./set-true-type-fonts-folder/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 트루타입 글꼴 폴더를 설정하는 방법을 알아보세요. 일관된 글꼴 관리를 보장하려면 자세한 단계별 가이드를 따르세요. |
+| [렌더링 시 기본 글꼴 지정](./specify-default-font-when-rendering/) | .NET용 Aspose.Words를 사용하여 Word 문서를 렌더링할 때 기본 글꼴을 지정하는 방법을 알아보세요. 플랫폼 전반에 걸쳐 일관된 문서 모양을 보장합니다. |
+| [로드 옵션이 있는 글꼴 설정](./font-settings-with-load-options/) | .NET용 Aspose.Words에서 로드 옵션을 사용하여 글꼴 설정을 관리하는 방법을 알아보세요. 개발자가 Word 문서에서 일관된 글꼴 모양을 보장하기 위한 단계별 가이드입니다.|
+| [글꼴 폴더 설정](./set-fonts-folder/) | Word 문서가 누락된 글꼴 없이 올바르게 렌더링되도록 .NET용 Aspose.Words에서 사용자 정의 글꼴 폴더를 설정하는 방법을 알아보세요. |
 | [글꼴 설정 기본 인스턴스](./font-settings-default-instance/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 기본 글꼴 설정을 구성하는 방법을 알아봅니다. |
-| [사용 가능한 글꼴 목록 가져오기](./get-list-of-available-fonts/) | 이 튜토리얼에서는 .NET용 Aspose.Words에서 사용할 수 있는 글꼴 목록을 얻는 방법을 알아봅니다. |
+| [사용 가능한 글꼴 목록 가져오기](./get-list-of-available-fonts/) | 이 상세한 단계별 튜토리얼에서 .NET용 Aspose.Words를 사용하여 사용 가능한 글꼴 목록을 얻는 방법을 알아보세요. 글꼴 관리 기술을 향상시키세요. |
 | [글꼴 알림 받기](./receive-notifications-of-fonts/) | .NET용 Aspose.Words를 사용할 때 누락되거나 대체된 글꼴 알림을 받는 방법을 알아보세요. |
 | [경고 알림 수신](./receive-warning-notification/) | .NET용 Aspose.Words를 사용할 때 경고 알림을 받고 문서의 문제나 경고를 관리하는 방법을 알아보세요. |
 | [리소스 Steam 글꼴 소스 예](./resource-steam-font-source-example/) | 리소스 스트림 글꼴 소스를 사용하여 .NET용 Aspose.Words에 사용자 정의 글꼴을 로드하는 방법을 알아보세요. |

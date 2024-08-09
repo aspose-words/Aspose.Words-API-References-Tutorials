@@ -9,7 +9,7 @@ url: /tr/net/programming-with-document-options-and-settings/show-grammatical-and
 ---
 ## giriiş
 
-Her küçük gramer ve yazım hatasını yakalamak için kendinizi hiç yorulmadan belgeleri tararken buldunuz mu? Hiç bitmeyen bir "Waldo Nerede" oyunu oynamak gibi, değil mi? Artık endişelenmeyin! Aspose.Words for .NET ile süreci otomatikleştirebilir, zamandan ve zahmetten tasarruf edebilirsiniz. Bu şık aracı kullanarak Word belgelerinizde gramer ve yazım hatalarının görüntülenmesini nasıl etkinleştirebileceğinizi ayrıntılı olarak inceleyelim.
+Her küçük gramer ve yazım hatasını yakalamak için kendinizi hiç yorulmadan belgeleri tararken buldunuz mu? Hiç bitmeyen bir "Waldo Nerede" oyunu oynamak gibi, değil mi? Artık endişelenmeyin! Aspose.Words for .NET ile süreci otomatikleştirebilir, zamandan ve zahmetten tasarruf edebilirsiniz. Bu şık aracı kullanarak Word belgelerinizde dilbilgisi ve yazım hatalarının görüntülenmesini nasıl etkinleştirebileceğinize bakalım.
 
 ## Önkoşullar
 
@@ -77,7 +77,7 @@ Bu, değiştirilen belgeyi yeni bir adla kaydederek orijinal dosyanın üzerine 
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde gramer ve yazım hatalarını görüntüleme sürecini yalnızca birkaç kolay adımda nasıl otomatikleştireceğinizi öğrendiniz. Bu sadece zamandan tasarruf etmenizi sağlamakla kalmaz, aynı zamanda belgelerinizin hatasız ve profesyonel olmasını da sağlar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde gramer ve yazım hatalarını görüntüleme sürecini yalnızca birkaç kolay adımda nasıl otomatikleştireceğinizi öğrendiniz. Bu sadece zamandan tasarruf etmenizi sağlamakla kalmaz, aynı zamanda belgelerinizin hatasız ve profesyonel olmasını da sağlar.
 
  Bu arada Aspose.Words for .NET'i henüz denemediyseniz ücretsiz deneme sürümünü indirebilirsiniz.[Burada](https://releases.aspose.com/) . Lisans satın almanız gerekiyorsa bunu yapabilirsiniz.[Burada](https://purchase.aspose.com/buy) Ve eğer desteğe ihtiyacınız olursa, onları ziyaret etmekten çekinmeyin.[forum](https://forum.aspose.com/c/words/8).
 
@@ -90,7 +90,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 Kesinlikle! Aspose.Words, .NET projelerinizle sorunsuz bir şekilde bütünleşir.
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
- Kütüphaneyi adresinden indirebilirsiniz.[İnternet sitesi](https://releases.aspose.com/words/net/) ve projenize referans olarak ekleyin.
+ Kütüphaneyi adresinden indirebilirsiniz.[web sitesi](https://releases.aspose.com/words/net/) ve projenize referans olarak ekleyin.
 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
  Evet, şu adresten ücretsiz deneme alabilirsiniz:[Burada](https://releases.aspose.com/).

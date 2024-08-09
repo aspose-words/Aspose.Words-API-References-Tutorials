@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Posso adicionar campos personalizados, como títulos de documentos, a cabeçalhos ou rodapés?
 
-Sim, você pode adicionar campos personalizados a cabeçalhos ou rodapés. Criar uma`Run` elemento e insira-o no conteúdo do cabeçalho ou rodapé, fornecendo o texto desejado. Personalize a formatação conforme necessário.
+Sim, você pode adicionar campos personalizados a cabeçalhos ou rodapés. Crie um`Run` elemento e insira-o no conteúdo do cabeçalho ou rodapé, fornecendo o texto desejado. Personalize a formatação conforme necessário.
 
 ### O Aspose.Words for Java é compatível com diferentes formatos de documentos?
 

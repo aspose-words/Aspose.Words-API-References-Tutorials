@@ -9,13 +9,13 @@ url: /fr/net/join-and-append-documents/different-page-setup/
 ---
 ## Introduction
 
-Salut! Prêt à plonger dans le monde fascinant de la manipulation de documents avec Aspose.Words for .NET ? Aujourd'hui, nous abordons quelque chose d'assez intéressant : configurer différentes mises en page lors de la combinaison de documents Word. Que vous fusionniez des rapports, rédigiez un roman ou manipuliez simplement des documents pour le plaisir, ce guide vous guidera pas à pas. Commençons!
+Salut! Prêt à plonger dans le monde fascinant de la manipulation de documents avec Aspose.Words for .NET ? Aujourd'hui, nous abordons quelque chose d'assez intéressant : configurer différentes mises en page lors de la combinaison de documents Word. Que vous fusionniez des rapports, rédigiez un roman ou manipuliez simplement des documents pour le plaisir, ce guide vous guidera pas à pas. Commençons !
 
 ## Conditions préalables
 
 Avant de mettre la main à la pâte, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. .NET Framework : toute version prenant en charge Aspose.Words pour .NET.
 3. Environnement de développement : Visual Studio ou tout autre IDE compatible .NET.
 4. Connaissances de base en C# : juste les bases pour comprendre la syntaxe et la structure.
@@ -78,7 +78,7 @@ srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 ```
 
-## Étape 4 : Faire correspondre les paramètres de configuration de la page
+## Étape 4 : faire correspondre les paramètres de configuration de la page
 
 Pour éviter toute incohérence de mise en page, assurez-vous que les paramètres de mise en page de la première section du document source correspondent à ceux de la dernière section du document de destination.
 
@@ -119,7 +119,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 
 ## Conclusion
 
-Et voila! Vous venez de combiner deux documents Word avec des mises en page différentes à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite grandement la manipulation de documents par programmation. Que vous créiez des rapports complexes, assembliez des livres ou gériez des documents à plusieurs sections, Aspose.Words est là pour vous.
+Et voilà ! Vous venez de combiner deux documents Word avec des mises en page différentes à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite grandement la manipulation de documents par programmation. Que vous créiez des rapports complexes, assembliez des livres ou gériez des documents à plusieurs sections, Aspose.Words est là pour vous.
 
 ## FAQ
 
@@ -133,7 +133,7 @@ Vous pouvez également faire correspondre les paramètres de marge de la même m
 Oui, Aspose.Words pour .NET est entièrement compatible avec .NET Core.
 
 ### Puis-je conserver les styles des deux documents ?
- Oui le`ImportFormatMode.KeepSourceFormatting` L'option garantit que les styles du document source sont préservés.
+ Oui, le`ImportFormatMode.KeepSourceFormatting` L'option garantit que les styles du document source sont préservés.
 
 ### Où puis-je obtenir plus d’aide avec Aspose.Words ?
- Vérifiez[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou visitez leur[forum d'entraide](https://forum.aspose.com/c/words/8) pour plus d'aide.
+ Découvrez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou visitez leur[forum d'assistance](https://forum.aspose.com/c/words/8) pour plus d'aide.

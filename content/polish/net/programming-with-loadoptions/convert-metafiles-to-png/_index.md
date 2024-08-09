@@ -73,7 +73,7 @@ Po skonfigurowaniu opcji ładowania możesz teraz załadować dokument.
 Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ```
 
-2. Sprawdź załadowanie dokumentu — upewnij się, że dokument został załadowany poprawnie, sprawdzając jego właściwości lub po prostu uruchamiając projekt i sprawdzając, czy nie występują jakieś błędy.
+2. Sprawdź załadowanie dokumentu — upewnij się, że dokument został załadowany poprawnie, sprawdzając jego właściwości lub po prostu uruchamiając projekt, aby sprawdzić, czy nie występują jakieś błędy.
 
 ## Wniosek
 
@@ -82,7 +82,7 @@ Gratulacje! Pomyślnie przekonwertowałeś metapliki na format PNG w dokumencie 
 ## Często zadawane pytania
 
 ### Czy mogę konwertować inne typy plików oprócz metaplików na PNG?
- Aspose.Words dla .NET zapewnia szeroką obsługę różnych formatów plików. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words dla .NET zapewnia szeroką obsługę różnych formatów plików. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### Czy istnieje sposób na przetwarzanie wsadowe wielu dokumentów?
 Tak, możesz przeglądać katalog dokumentów i stosować te same opcje ładowania do każdego pliku.
@@ -91,7 +91,7 @@ Tak, możesz przeglądać katalog dokumentów i stosować te same opcje ładowan
 Metapliki pozostaną w oryginalnym formacie, który może nie być kompatybilny ze wszystkimi aplikacjami lub urządzeniami.
 
 ### Czy potrzebuję licencji na Aspose.Words dla .NET?
- Tak, do pełnej funkcjonalności wymagana jest licencja. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) w celach próbnych.
+ Tak, do pełnej funkcjonalności wymagana jest licencja. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) w celach próbnych.
 
 ### Czy mogę użyć tej metody do innych formatów graficznych, takich jak JPEG lub GIF?
- Ta specyficzna metoda dotyczy metaplików, ale Aspose.Words dla .NET obsługuje różne formaty obrazów. Patrz[dokumentacja](https://reference.aspose.com/words/net/) po więcej informacji.
+ Ta specyficzna metoda dotyczy metaplików, ale Aspose.Words dla .NET obsługuje różne formaty obrazów. Patrz[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej informacji.

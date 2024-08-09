@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Ti sei mai chiesto come esportare il tuo documento Word nel formato Markdown con tabelle perfettamente allineate? Che tu sia uno sviluppatore che lavora sulla documentazione o semplicemente qualcuno che ama Markdown, questa guida è per te. Ci immergeremo nel nocciolo dell'utilizzo di Aspose.Words per .NET per raggiungere questo obiettivo. Pronto a trasformare le tue tabelle Word in tabelle Markdown perfettamente allineate? Iniziamo!
 
@@ -97,7 +97,7 @@ doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 
 ## Conclusione
 
-E il gioco è fatto! Esportare documenti Word in Markdown con tabelle allineate utilizzando Aspose.Words per .NET è un gioco da ragazzi una volta che sai come farlo. Questa potente libreria semplifica il controllo della formattazione e dell'allineamento delle tabelle, garantendo che i tuoi documenti Markdown abbiano l'aspetto che desideri. Buona programmazione!
+Ed ecco qua! Esportare documenti Word in Markdown con tabelle allineate utilizzando Aspose.Words per .NET è un gioco da ragazzi una volta che sai come farlo. Questa potente libreria semplifica il controllo della formattazione e dell'allineamento delle tabelle, garantendo che i tuoi documenti Markdown abbiano l'aspetto che desideri. Buona programmazione!
 
 ## Domande frequenti
 
@@ -108,7 +108,7 @@ Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di 
  Sì, utilizzando il`Auto` opzione di allineamento, puoi avere allineamenti diversi in base al primo paragrafo di ciascuna colonna.
 
 ### Ho bisogno di una licenza per utilizzare Aspose.Words per .NET?
- Sì, Aspose.Words per .NET richiede una licenza per la piena funzionalità. Puoi ottenere un[licenza temporanea](https://purchase.aspose.com/temporary-license/) Per la valutazione.
+ Sì, Aspose.Words per .NET richiede una licenza per la piena funzionalità. Puoi ottenere un[licenza temporanea](https://purchase.aspose.com/temporary-license/) per la valutazione.
 
 ### È possibile esportare altri elementi del documento in Markdown utilizzando Aspose.Words?
 Sì, Aspose.Words supporta l'esportazione di vari elementi come intestazioni, elenchi e immagini nel formato Markdown.

@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 
 ## 結論
 
-現在你就擁有了！只需幾行程式碼，您就可以成功地將 Word 文件轉換為 HTML，並將所有 CSS 規則整齊地組織在一個檔案中。這種方法不僅簡化了 CSS 管理，還增強了 HTML 文件的可維護性。因此，下次您執行轉換 Word 文件的任務時，您就知道如何保持文件整潔！
+現在你就得到它了！只需幾行程式碼，您就可以成功地將 Word 文件轉換為 HTML，並將所有 CSS 規則整齊地組織在一個檔案中。這種方法不僅簡化了 CSS 管理，還增強了 HTML 文件的可維護性。因此，下次您執行轉換 Word 文件的任務時，您就知道如何保持文件整潔！
 
 ## 常見問題解答
 

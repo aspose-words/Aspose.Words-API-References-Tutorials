@@ -78,7 +78,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ## SSS'ler
 
 ### Farklı biçimlendirme stillerine sahip belgeleri içe aktarabilir miyim?
- Evet`NodeImporter` class, çeşitli biçimlendirme stillerine sahip belgelerin içe aktarılmasını destekler.
+ Evet,`NodeImporter` class, çeşitli biçimlendirme stillerine sahip belgelerin içe aktarılmasını destekler.
 
 ### Belgelerim karmaşık tablolar ve resimler içeriyorsa ne olur?
 Aspose.Words for .NET, içe aktarma işlemleri sırasında tablolar ve görüntüler gibi karmaşık yapıları yönetir.

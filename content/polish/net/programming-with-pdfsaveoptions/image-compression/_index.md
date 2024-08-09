@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Skonfiguruj podstawową kompresję obrazu
 
- Stwórz`PdfSaveOptions`obiekt, aby skonfigurować opcje zapisywania plików PDF, w tym kompresję obrazu. Ustaw`ImageCompression`własność do`PdfImageCompression.Jpeg` aby używać kompresji JPEG dla obrazów.
+ Utwórz`PdfSaveOptions`obiekt, aby skonfigurować opcje zapisywania plików PDF, w tym kompresję obrazu. Ustaw`ImageCompression`własność do`PdfImageCompression.Jpeg` aby używać kompresji JPEG dla obrazów.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions

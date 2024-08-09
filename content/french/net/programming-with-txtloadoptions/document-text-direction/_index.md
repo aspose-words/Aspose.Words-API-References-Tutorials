@@ -2,7 +2,7 @@
 title: Direction du texte du document
 linktitle: Direction du texte du document
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment définir la direction du texte d'un document dans Word à l'aide d'Aspose.Words pour .NET avec ce guide étape par étape. Parfait pour gérer les langues de droite à gauche.
+description: Découvrez comment définir la direction du texte d'un document dans Word à l'aide d'Aspose.Words pour .NET avec ce guide étape par étape. Parfait pour gérer les langues s'écrivant de droite à gauche.
 type: docs
 weight: 10
 url: /fr/net/programming-with-txtloadoptions/document-text-direction/

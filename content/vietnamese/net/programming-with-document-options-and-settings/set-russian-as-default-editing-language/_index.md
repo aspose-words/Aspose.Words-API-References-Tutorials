@@ -64,7 +64,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
- Trong bước này, bạn chỉ định đường dẫn thư mục chứa tài liệu của bạn và tải tài liệu bằng cách sử dụng`Document` người xây dựng. Các`LoadOptions` đảm bảo rằng tiếng Nga được đặt làm ngôn ngữ chỉnh sửa mặc định.
+ Trong bước này, bạn chỉ định đường dẫn thư mục chứa tài liệu của bạn và tải tài liệu bằng cách sử dụng`Document` người xây dựng. các`LoadOptions` đảm bảo rằng tiếng Nga được đặt làm ngôn ngữ chỉnh sửa mặc định.
 
 ## Bước 3: Xác minh ngôn ngữ chỉnh sửa mặc định
 
@@ -109,7 +109,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với 
 
 ### Tôi có thể đặt các ngôn ngữ khác làm ngôn ngữ chỉnh sửa mặc định không?
 
- Có, bạn có thể đặt bất kỳ ngôn ngữ nào được Aspose.Words hỗ trợ bằng cách chỉ định ngôn ngữ thích hợp`EditingLanguage` có giá trị đối với`DefaultEditingLanguage`.
+ Có, bạn có thể đặt bất kỳ ngôn ngữ nào được Aspose.Words hỗ trợ bằng cách chỉ định ngôn ngữ thích hợp`EditingLanguage` giá trị để`DefaultEditingLanguage`.
 
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.Words cho .NET?
 

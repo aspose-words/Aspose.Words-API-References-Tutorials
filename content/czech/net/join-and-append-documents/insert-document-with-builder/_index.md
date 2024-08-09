@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/insert-document-with-builder/
 ---
-## Úvod
+## Zavedení
 
 Takže máte dva dokumenty aplikace Word a chcete je sloučit do jednoho. Možná si říkáte: "Existuje snadný způsob, jak to udělat programově?" Absolutně! Dnes vás provedu procesem vkládání jednoho dokumentu do druhého pomocí knihovny Aspose.Words for .NET. Tato metoda je velmi užitečná, zvláště když pracujete s velkými dokumenty nebo potřebujete automatizovat proces. Pojďme se rovnou ponořit!
 
@@ -15,7 +15,7 @@ Takže máte dva dokumenty aplikace Word a chcete je sloučit do jednoho. Možn�
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte nainstalované Visual Studio nebo jiné vhodné IDE.
 3. Základní znalost C#: Malá znalost C# bude dlouhá cesta.
 
@@ -90,7 +90,7 @@ Nyní přichází ta vzrušující část – vlastně vložení zdrojového dok
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Za použití`InsertDocument` metodou můžeme vložit celý zdrojový dokument do cílového dokumentu. The`ImportFormatMode.KeepSourceFormatting` zajišťuje zachování formátování zdrojového dokumentu.
+ Pomocí`InsertDocument` metodou můžeme vložit celý zdrojový dokument do cílového dokumentu. The`ImportFormatMode.KeepSourceFormatting` zajišťuje zachování formátování zdrojového dokumentu.
 
 ## Krok 7: Uložení sloučeného dokumentu
 
@@ -121,4 +121,4 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 Absolutně! Popsaný způsob může být začleněn do větších aplikací pro automatizaci úloh zpracování dokumentů.
 
 ### Kde najdu další zdroje a podporu?  
-Pro více informací můžete zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) nebo navštivte[Fórum podpory](https://forum.aspose.com/c/words/8) pro pomoc.
+Pro více informací můžete zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) nebo navštivte[fórum podpory](https://forum.aspose.com/c/words/8) o pomoc.

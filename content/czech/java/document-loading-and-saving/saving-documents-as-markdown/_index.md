@@ -17,7 +17,7 @@ V tomto podrobném průvodci si ukážeme, jak ukládat dokumenty jako Markdown 
 Než začnete, ujistěte se, že máte následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Krok 1: Vytvoření dokumentu aplikace Word
 
@@ -136,7 +136,7 @@ této příručce jsme prozkoumali, jak ukládat dokumenty jako Markdown pomocí
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Aspose.Words for Java lze nainstalovat zahrnutím knihovny do vašeho projektu Java. Knihovnu si můžete stáhnout z[tady](https://releases.aspose.com/words/java/) a postupujte podle pokynů k instalaci uvedených v dokumentaci.
+ Aspose.Words for Java lze nainstalovat zahrnutím knihovny do vašeho projektu Java. Knihovnu si můžete stáhnout z[zde](https://releases.aspose.com/words/java/) a postupujte podle pokynů k instalaci uvedených v dokumentaci.
 
 ### Mohu převést složité dokumenty Wordu s tabulkami a obrázky do Markdown?
 

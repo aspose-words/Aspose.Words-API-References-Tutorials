@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Wstaw wykres punktowy
 
- Użyj`InsertChart` metoda`DocumentBuilder` class, aby wstawić wykres punktowy do dokumentu.
+ Skorzystaj z`InsertChart` metoda`DocumentBuilder` class, aby wstawić wykres punktowy do dokumentu.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);

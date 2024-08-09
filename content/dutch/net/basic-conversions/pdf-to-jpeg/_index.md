@@ -33,10 +33,10 @@ Oké, laten we naar het leuke gedeelte gaan! We gaan het proces opsplitsen in ee
 
 ## Stap 1: Stel uw project in
 
-Voordat u in de code duikt, moet u uw project opzetten. Hier is hoe:
+Voordat u in de code duikt, moet u uw project opzetten. Hier ziet u hoe:
 
 1. Open Visual Studio: Begin met het starten van Visual Studio en het maken van een nieuw C#-project.
-2.  Installeer Aspose.Words: Gebruik NuGet Package Manager om Aspose.Words voor .NET te installeren. Je kan het vinden[hier](https://releases.aspose.com/words/net/).
+2.  Installeer Aspose.Words: Gebruik NuGet Package Manager om Aspose.Words voor .NET te installeren. Je kunt het vinden[hier](https://releases.aspose.com/words/net/).
 
 ```shell
 Install-Package Aspose.Words
@@ -82,10 +82,10 @@ En daar heb je het! Het converteren van een PDF naar een JPEG met Aspose.Words v
 Absoluut! U kunt door een map met PDF's bladeren en ze allemaal naar een JPEG converteren.
 
 ### Ondersteunt Aspose.Words andere afbeeldingsformaten?
-Ja dat doet het! U kunt uw PDF's opslaan als PNG, BMP en meer.
+Ja, dat klopt! U kunt uw PDF's opslaan als PNG, BMP en meer.
 
 ### Is Aspose.Words compatibel met .NET Core?
-Inderdaad. Aspose.Words ondersteunt zowel .NET Framework als .NET Core.
+Dat is het inderdaad. Aspose.Words ondersteunt zowel .NET Framework als .NET Core.
 
 ### Heb ik een licentie nodig om Aspose.Words te gebruiken?
  U kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/) of koop een licentie[hier](https://purchase.aspose.com/buy).

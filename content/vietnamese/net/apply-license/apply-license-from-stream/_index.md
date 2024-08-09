@@ -9,13 +9,13 @@ url: /vi/net/apply-license/apply-license-from-stream/
 ---
 ## Giới thiệu
 
-Này các bạn lập trình viên! Nếu bạn đang tìm hiểu về thế giới Aspose.Words dành cho .NET, một trong những điều đầu tiên bạn cần làm là xin giấy phép để khai thác toàn bộ tiềm năng của thư viện. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách đăng ký giấy phép từ luồng. Tin tôi đi, điều đó dễ hơn bạn tưởng và khi kết thúc hướng dẫn này, bạn sẽ thiết lập và chạy ứng dụng của mình một cách trơn tru. Sẵn sàng để bắt đầu? Hãy nhảy ngay vào!
+Này các bạn lập trình viên! Nếu bạn đang tìm hiểu sâu hơn về thế giới của Aspose.Words dành cho .NET, một trong những điều đầu tiên bạn cần làm là xin giấy phép để khai thác toàn bộ tiềm năng của thư viện. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách đăng ký giấy phép từ luồng. Tin tôi đi, điều đó dễ hơn bạn tưởng và khi kết thúc hướng dẫn này, bạn sẽ thiết lập và chạy ứng dụng của mình một cách trơn tru. Sẵn sàng để bắt đầu? Hãy nhảy ngay vào!
 
 ## Điều kiện tiên quyết
 
 Trước khi bắt tay vào việc, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện. Nếu không, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2.  Tệp giấy phép: Bạn cần một tệp giấy phép hợp lệ. Nếu bạn không có, bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) cho mục đích thử nghiệm.
 3. Kiến thức C# cơ bản: Giả sử có hiểu biết cơ bản về lập trình C#.
 
@@ -52,7 +52,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.li
 
 ## Bước 3: Áp dụng giấy phép
 
- Trong`using` chặn, bạn sẽ gọi`SetLicense` phương pháp trên của bạn`license` đối tượng, truyền vào luồng bộ nhớ. Phương pháp này đặt giấy phép cho Aspose.Words.
+ Trong vòng`using` chặn, bạn sẽ gọi`SetLicense` phương pháp trên của bạn`license` đối tượng, truyền vào luồng bộ nhớ. Phương pháp này đặt giấy phép cho Aspose.Words.
 
 ```csharp
 license.SetLicense(stream);
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Áp dụng giấy phép từ luồng trong Aspose.Words cho .NET là một quy trình đơn giản khi bạn biết các bước. Bằng cách làm theo hướng dẫn này, bạn đảm bảo rằng ứng dụng của bạn có thể tận dụng toàn bộ khả năng của Aspose.Words mà không có bất kỳ giới hạn nào. Nếu bạn gặp phải bất kỳ vấn đề nào, đừng ngần ngại kiểm tra[tài liệu](https://reference.aspose.com/words/net/) hoặc tìm kiếm sự giúp đỡ trên[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8). Chúc mừng mã hóa!
+Và bạn có nó! Áp dụng giấy phép từ một luồng trong Aspose.Words cho .NET là một quy trình đơn giản khi bạn biết các bước. Bằng cách làm theo hướng dẫn này, bạn đảm bảo rằng ứng dụng của bạn có thể tận dụng toàn bộ khả năng của Aspose.Words mà không có bất kỳ giới hạn nào. Nếu bạn gặp phải bất kỳ vấn đề nào, đừng ngần ngại kiểm tra[tài liệu](https://reference.aspose.com/words/net/) hoặc tìm kiếm sự giúp đỡ trên[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8). Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

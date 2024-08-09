@@ -9,13 +9,13 @@ url: /fr/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## Introduction
 
-Salut! Vous avez donc travaillé avec des documents Word et vous avez besoin d'un moyen d'accéder rapidement au début ou à la fin de votre document par programmation, n'est-ce pas ? Eh bien, vous êtes au bon endroit ! Dans ce guide, nous expliquons comment déplacer le curseur au début ou à la fin d'un document Word à l'aide d'Aspose.Words pour .NET. Croyez-moi, à la fin, vous naviguerez dans vos documents comme un pro. Commençons!
+Salut! Vous avez donc travaillé avec des documents Word et vous avez besoin d'un moyen d'accéder rapidement au début ou à la fin de votre document par programmation, n'est-ce pas ? Eh bien, vous êtes au bon endroit ! Dans ce guide, nous expliquons comment déplacer le curseur au début ou à la fin d'un document Word à l'aide d'Aspose.Words pour .NET. Croyez-moi, à la fin, vous naviguerez dans vos documents comme un pro. Commençons !
 
 ## Conditions préalables
 
 Avant de plonger tête première dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words for .NET : c'est l'outil magique que nous utiliserons. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/) ou prenez un[essai gratuit](https://releases.aspose.com/).
+1.  Aspose.Words for .NET : c'est l'outil magique que nous utiliserons. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/) ou prenez un[essai gratuit](https://releases.aspose.com/).
 2. Environnement de développement .NET : Visual Studio est un choix solide.
 3. Connaissance de base de C# : ne vous inquiétez pas, vous n'avez pas besoin d'être un assistant, mais un peu de familiarité sera très utile.
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ici, nous créons une instance de`Document`et`DocumentBuilder` . Penser à`Document` comme document Word vierge et`DocumentBuilder` comme votre stylo.
+ Ici, nous créons une instance de`Document`et`DocumentBuilder` . Pensez à`Document` comme document Word vierge et`DocumentBuilder` comme votre stylo.
 
 ## Étape 2 : passer au début du document
 
@@ -67,7 +67,7 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Conclusion
 
-Et voila! Passer au début et à la fin d'un document dans Aspose.Words for .NET est un jeu d'enfant une fois que vous savez comment procéder. Cette fonctionnalité simple mais puissante peut vous faire gagner beaucoup de temps, en particulier lorsque vous travaillez avec des documents plus volumineux. Ainsi, la prochaine fois que vous aurez besoin de parcourir votre document, vous saurez exactement quoi faire !
+Et voilà ! Passer au début et à la fin d'un document dans Aspose.Words for .NET est un jeu d'enfant une fois que vous savez comment procéder. Cette fonctionnalité simple mais puissante peut vous faire gagner beaucoup de temps, en particulier lorsque vous travaillez avec des documents plus volumineux. Ainsi, la prochaine fois que vous aurez besoin de parcourir votre document, vous saurez exactement quoi faire !
 
 ## FAQ
 
@@ -84,4 +84,4 @@ Absolument! Bien que ce guide utilise C#, vous pouvez utiliser Aspose.Words pour
 Oui, Aspose.Words for .NET prend en charge à la fois .NET Framework et .NET Core.
 
 ### Où puis-je trouver plus de didacticiels sur Aspose.Words pour .NET ?  
-Vous pouvez consulter le[Documentation](https://reference.aspose.com/words/net/) ou visitez leur[forum d'entraide](https://forum.aspose.com/c/words/8) pour plus d'aide.
+Vous pouvez consulter le[documentation](https://reference.aspose.com/words/net/) ou visitez leur[forum d'assistance](https://forum.aspose.com/c/words/8) pour plus d'aide.

@@ -108,7 +108,7 @@ builder.Writeln("In this case the cell will fill up the rest of the available sp
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-此步驟最終確定表格，並將文件以檔案名稱「WorkingWithTables.PreferredWidthSettings.docx」儲存在指定目錄中。
+此步驟完成表格並將文件保存在指定目錄中，文件名為「WorkingWithTables.PreferredWidthSettings.docx」。
 
 ## 結論
 

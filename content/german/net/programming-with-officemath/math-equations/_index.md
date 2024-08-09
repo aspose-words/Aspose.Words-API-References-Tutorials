@@ -15,7 +15,7 @@ Bereit, in die Welt der mathematischen Gleichungen in Word-Dokumenten einzutauch
 
 Bevor wir uns in die Einzelheiten stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen, um diesem Tutorial folgen zu können:
 
-1.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Wenn Sie es noch nicht haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Wenn Sie es noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Visual Studio: Jede Version von Visual Studio funktioniert, stellen Sie aber sicher, dass sie installiert und einsatzbereit ist.
 3. Grundkenntnisse in C#: Sie sollten mit der grundlegenden C#-Programmierung vertraut sein. Keine Sorge, wir halten die Dinge einfach!
 4. Ein Word-Dokument: Sie haben ein Word-Dokument mit einigen mathematischen Gleichungen. Wir werden in unseren Beispielen damit arbeiten.

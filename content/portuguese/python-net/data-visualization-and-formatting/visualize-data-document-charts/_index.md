@@ -101,7 +101,7 @@ doc.save("dynamic_chart_document.pdf", aw.SaveFormat.PDF)
 
 ## Conclusão
 
-Neste artigo, exploramos como aproveitar o Aspose.Words for Python para criar gráficos de documentos dinâmicos. A visualização de dados é uma ferramenta essencial para transmitir insights de maneira eficaz e, seguindo as etapas descritas aqui, você pode integrar perfeitamente gráficos interativos aos seus documentos. Comece a aprimorar suas apresentações de dados hoje mesmo!
+Neste artigo, exploramos como aproveitar o Aspose.Words for Python para criar gráficos de documentos dinâmicos. A visualização de dados é uma ferramenta essencial para transmitir insights de forma eficaz e, seguindo as etapas descritas aqui, você pode integrar perfeitamente gráficos interativos aos seus documentos. Comece a aprimorar suas apresentações de dados hoje mesmo!
 
 ## Perguntas frequentes
 

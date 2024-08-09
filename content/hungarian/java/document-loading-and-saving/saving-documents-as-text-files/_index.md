@@ -128,7 +128,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan lehet dokumentumokat szövegfájlk�
 
 ### Hogyan adhatok kétirányú jeleket a szövegkimenethez?
 
- Ha kétirányú jeleket szeretne hozzáadni a szövegkimenethez, állítsa be a`AddBidiMarks` tulajdona`TxtSaveOptions` nak nek`true`. Például:
+ Ha kétirányú jeleket szeretne hozzáadni a szövegkimenethez, állítsa be a`AddBidiMarks` tulajdona`TxtSaveOptions` hogy`true`. Például:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();

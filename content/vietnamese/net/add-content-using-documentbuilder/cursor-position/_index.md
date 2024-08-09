@@ -9,7 +9,7 @@ url: /vi/net/add-content-using-documentbuilder/cursor-position/
 ---
 ## Giới thiệu
 
-Này các bạn lập trình viên! Bạn đã bao giờ chìm đắm trong một dự án, vật lộn với các tài liệu Word trong ứng dụng .NET của mình chưa? Bạn không cô đơn. Tất cả chúng ta đều đã ở đó, gãi đầu, cố gắng tìm ra cách thao tác với các tệp Word mà không mất đi sự tỉnh táo. Hôm nay, chúng ta sẽ đi sâu vào thế giới của Aspose.Words dành cho .NET—một thư viện tuyệt vời giúp bạn dễ dàng xử lý các tài liệu Word theo chương trình. Chúng tôi sẽ chia nhỏ cách quản lý vị trí con trỏ trong tài liệu Word bằng công cụ tiện lợi này. Vì vậy, hãy lấy cà phê của bạn và bắt đầu viết mã!
+Này các bạn lập trình viên! Bạn đã bao giờ chìm đắm trong một dự án, vật lộn với các tài liệu Word trong ứng dụng .NET của mình chưa? Bạn không đơn độc. Tất cả chúng ta đều đã ở đó, gãi đầu, cố gắng tìm ra cách thao tác với các tệp Word mà không mất đi sự tỉnh táo. Hôm nay, chúng ta sẽ đi sâu vào thế giới của Aspose.Words dành cho .NET—một thư viện tuyệt vời giúp bạn dễ dàng xử lý các tài liệu Word theo chương trình. Chúng tôi sẽ chia nhỏ cách quản lý vị trí con trỏ trong tài liệu Word bằng công cụ tiện lợi này. Vì vậy, hãy lấy cà phê của bạn và bắt đầu viết mã!
 
 ## Điều kiện tiên quyết
 
@@ -110,7 +110,7 @@ Cuối cùng, hãy lưu tài liệu của chúng tôi để xem những thay đ�
 doc.Save("ManipulatedDocument.docx");
 ```
 
-Và bạn có nó rồi đấy! Một cách đơn giản nhưng mạnh mẽ để thao tác vị trí con trỏ trong tài liệu Word bằng Aspose.Words for .NET.
+Và bạn có nó! Một cách đơn giản nhưng mạnh mẽ để thao tác vị trí con trỏ trong tài liệu Word bằng Aspose.Words for .NET.
 
 ## Phần kết luận
 

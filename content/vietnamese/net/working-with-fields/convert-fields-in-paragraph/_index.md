@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chuyển đổi thành công các trường IF thành văn bản thuần túy bằng Aspose.Words cho .NET. Nó giống như biến những câu thần chú phức tạp thành những câu thần chú đơn giản, giúp việc quản lý tài liệu của bạn dễ dàng hơn nhiều. Vì vậy, lần tới khi bạn gặp phải một đống trường lộn xộn, bạn sẽ biết chính xác phải làm gì. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã chuyển đổi thành công các trường IF thành văn bản thuần túy bằng Aspose.Words cho .NET. Nó giống như biến những câu thần chú phức tạp thành những câu thần chú đơn giản, giúp việc quản lý tài liệu của bạn dễ dàng hơn nhiều. Vì vậy, lần tới khi bạn gặp phải một đống trường lộn xộn, bạn sẽ biết chính xác phải làm gì. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

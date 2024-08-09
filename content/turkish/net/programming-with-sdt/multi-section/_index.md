@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Belgeyi Yükleyin
 
- Kullan`Document` Word belgenizi yüklemek için sınıf. Bu sınıf, belgeyi programlı olarak açmanıza ve değiştirmenize olanak tanır.
+ Kullanın`Document` Word belgenizi yüklemek için sınıf. Bu sınıf, belgeyi programlı olarak açmanıza ve değiştirmenize olanak tanır.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "Multi-section structured document tags.do
 
 ## 3. Adım: Yapılandırılmış Belge Etiketlerini Alın
 
- Aspose.Words, yapılandırılmış belge etiketlerine`GetChildNodes` yöntem. Bu yöntem, belgeden belirli bir türdeki düğümleri almanıza yardımcı olur.
+ Aspose.Words, yapılandırılmış belge etiketlerine`GetChildNodes` Yöntem. Bu yöntem, belgeden belirli bir türdeki düğümleri almanıza yardımcı olur.
 
 ```csharp
 NodeCollection tags = doc.GetChildNodes(NodeType.StructuredDocumentTagRangeStart, true);
@@ -96,7 +96,7 @@ Geliştirici sekmesinden içerik kontrolleri ekleyerek Microsoft Word'ü kullana
 Evet, Aspose.Words API aracılığıyla özelliklerine erişip bunları güncelleyerek SDT'lerin içeriğini değiştirebilirsiniz.
 
 ### Belgemde birden fazla SDT türü varsa ne olur?
- ayarlayarak farklı SDT türlerini filtreleyebilir ve alabilirsiniz.`NodeType` parametresi`GetChildNodes` yöntem.
+ ayarlayarak farklı SDT türlerini filtreleyebilir ve alabilirsiniz.`NodeType` parametresi`GetChildNodes` Yöntem.
 
 ### Aspose.Words for .NET ile ilgili nereden daha fazla yardım alabilirim?
  Ek destek için şu adresi ziyaret edebilirsiniz:[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8).
@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizdeki çok bölümlü yapılandırılmış belge etiketlerini başarıyla aldınız ve işlediniz.
+İşte bu! Aspose.Words for .NET'i kullanarak Word belgenizdeki çok bölümlü yapılandırılmış belge etiketlerini başarıyla aldınız ve işlediniz.

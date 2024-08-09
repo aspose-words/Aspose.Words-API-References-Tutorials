@@ -94,7 +94,7 @@ Vous pouvez enregistrer le document dans différents formats tels que DOCX, PDF,
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès à reconnaître et à remplacer du texte dans des modèles de remplacement à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d'efforts dans les tâches de traitement de documents. Que vous automatisiez des rapports, génériez des documents ou gérez simplement du texte, Aspose.Words est là pour vous.
+Félicitations! Vous avez appris avec succès à reconnaître et à remplacer du texte dans des modèles de remplacement à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d'efforts dans les tâches de traitement de documents. Que vous automatisiez des rapports, génériez des documents ou gérez simplement du texte, Aspose.Words est là pour vous.
 
 ## FAQ
 

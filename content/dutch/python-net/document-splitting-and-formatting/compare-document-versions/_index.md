@@ -29,7 +29,7 @@ Wanneer u samen aan documenten werkt, is het van cruciaal belang om de wijziging
 
 ## Documentversies laden
 
-Om documentversies te vergelijken, moet u de bestanden in het geheugen laden. Hier is hoe:
+Om documentversies te vergelijken, moet u de bestanden in het geheugen laden. Hier ziet u hoe:
 
 ```python
 doc1_path = "path/to/first/document.docx"

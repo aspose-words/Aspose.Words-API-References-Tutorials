@@ -63,7 +63,7 @@ Převod dokumentů na obrázky v Javě je s Aspose.Words pro Javu snadný. Posky
 ## FAQ
 
 ### Jak mohu nastavit rozlišení obrazu během převodu?
- Pro nastavení rozlišení obrazu použijte`setResolution` metoda`ImageSaveOptions` a zadejte požadované rozlišení v bodech na palec (DPI).
+ Pro nastavení rozlišení obrazu použijte`setResolution` způsob`ImageSaveOptions` a zadejte požadované rozlišení v bodech na palec (DPI).
 
 ### Mohu převést konkrétní stránky dokumentu na obrázky?
  Ano, můžete určit rozsah stránek pomocí`setPageCount`a`setPageIndex` metody`ImageSaveOptions` převést konkrétní stránky na obrázky.

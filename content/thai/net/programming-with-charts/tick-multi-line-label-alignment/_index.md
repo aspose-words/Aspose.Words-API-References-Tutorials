@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 มาแทรกแผนภูมิลงในเอกสารของเรากัน เราจะใช้แผนภูมิกระจายสำหรับตัวอย่างนี้
 
- ใช้`InsertChart` วิธีการของ`DocumentBuilder` ในชั้นเรียน เราสามารถแทรกแผนภูมิกระจายลงในเอกสารของเราได้
+ การใช้`InsertChart` วิธีการของ`DocumentBuilder` ในชั้นเรียน เราสามารถแทรกแผนภูมิกระจายลงในเอกสารของเราได้
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 มาถึงความมหัศจรรย์แล้ว! เราจะตั้งค่าการจัดตำแหน่งป้ายกำกับสำหรับป้ายกำกับหลายบรรทัด
 
- ตั้ง`TickLabelAlignment` คุณสมบัติของแกนถึง`ParagraphAlignment.Right`.
+ ตั้งค่า`TickLabelAlignment` คุณสมบัติของแกนถึง`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### ฉันสามารถใช้ Aspose.Words สำหรับ .NET ได้ฟรีหรือไม่
 
- Aspose เสนอ[ทดลองฟรี](https://releases.aspose.com/) ที่คุณสามารถใช้เพื่อประเมินผลิตภัณฑ์ได้ หากต้องการเข้าถึงแบบเต็ม คุณจะต้องซื้อใบอนุญาต
+ Aspose เสนอ[ทดลองใช้ฟรี](https://releases.aspose.com/) ที่คุณสามารถใช้เพื่อประเมินผลิตภัณฑ์ได้ หากต้องการเข้าถึงแบบเต็ม คุณจะต้องซื้อใบอนุญาต
 
 ### ฉันจะรับการสนับสนุนสำหรับ Aspose.Words สำหรับ .NET ได้ที่ไหน
 

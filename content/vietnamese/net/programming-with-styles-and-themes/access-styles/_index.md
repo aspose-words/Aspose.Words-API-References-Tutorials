@@ -15,7 +15,7 @@ Bạn đã sẵn sàng đi sâu vào thế giới tạo kiểu tài liệu trong
 
 Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có những điều sau:
 
-1.  Aspose.Words for .NET: Bạn cần cài đặt thư viện này trong môi trường .NET của mình. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Bạn cần cài đặt thư viện này trong môi trường .NET của mình. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Kiến thức cơ bản về .NET: Làm quen với C# hoặc ngôn ngữ .NET khác sẽ giúp bạn hiểu các đoạn mã được cung cấp.
 3. Môi trường phát triển: Đảm bảo bạn có IDE như Visual Studio được thiết lập để viết và thực thi mã .NET.
 
@@ -46,7 +46,7 @@ Khi bạn có đối tượng tài liệu của mình, bạn có thể truy cậ
 StyleCollection styles = doc.Styles;
 ```
 
-`StyleCollection` là một tập hợp của`Style` các đối tượng. Mỗi`Style` đối tượng đại diện cho một phong cách duy nhất trong tài liệu.
+`StyleCollection` là một tập hợp của`Style` đồ vật. Mỗi`Style` đối tượng đại diện cho một phong cách duy nhất trong tài liệu.
 
 ## Bước 3: Lặp lại các kiểu
 
@@ -73,7 +73,7 @@ foreach (Style style in styles)
 Đây là bảng phân tích về chức năng của mã này:
 
 -  Khởi tạo`styleName`: Chúng tôi bắt đầu bằng một chuỗi trống để xây dựng danh sách tên kiểu.
--  Lặp lại các kiểu: The`foreach` vòng lặp lặp đi lặp lại trên mỗi`Style` bên trong`styles` bộ sưu tập.
+-  Lặp lại các kiểu: The`foreach` vòng lặp lặp đi lặp lại trên mỗi`Style` trong`styles` bộ sưu tập.
 - Cập nhật và hiển thị`styleName` : Đối với mỗi kiểu, chúng tôi thêm tên của nó vào`styleName` và in nó ra.
 
 ## Bước 4: Tùy chỉnh đầu ra

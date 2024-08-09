@@ -83,7 +83,7 @@ doc.Sections.Add(sectionToAdd);
 
 ### استخدام DocumentBuilder للقسم الجديد
 
-لإضافة محتوى إلى القسم الجديد، ستحتاج إلى تعيين`DocumentBuilder` المؤشر إلى القسم الجديد:
+ لإضافة محتوى إلى القسم الجديد، ستحتاج إلى تعيين`DocumentBuilder` المؤشر إلى القسم الجديد:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ doc.Save("YourPath/YourDocument.docx");
 
 ### أين يمكنني العثور على المزيد من الموارد على Aspose.Words؟
 
- لمزيد من المعلومات، يمكنك زيارة[وثائق Aspose.Words](https://reference.aspose.com/words/net/) أو ال[منتدى الدعم](https://forum.aspose.com/c/words/8) للمساعدة والمناقشات.
+ لمزيد من المعلومات، يمكنك زيارة[وثائق Aspose.Words](https://reference.aspose.com/words/net/) أو[منتدى الدعم](https://forum.aspose.com/c/words/8) للمساعدة والمناقشات.

@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Các`DocumentBuilder` là một lớp trợ giúp giúp đơn giản hóa quá trình xây dựng tài liệu.
+ các`DocumentBuilder` là một lớp trợ giúp giúp đơn giản hóa quá trình xây dựng tài liệu.
 
 ## Bước 3: Bắt đầu bảng
 
@@ -157,7 +157,7 @@ Thao tác này sẽ tạo và lưu tài liệu Word với bảng được địn
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể tạo bảng được định dạng phù hợp trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác theo chương trình với các tài liệu Word, giúp bạn tiết kiệm thời gian và công sức.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể tạo bảng được định dạng phù hợp trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác theo chương trình với các tài liệu Word, giúp bạn tiết kiệm thời gian và công sức.
 
 ## Câu hỏi thường gặp
 

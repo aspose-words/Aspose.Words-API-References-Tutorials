@@ -56,7 +56,7 @@ const string textDoc = "      Line 1 \n" +
 
 ## 3. lépés: Állítsa be a betöltési beállításokat a terek kezeléséhez
 
- A kezdő és záró szóközök kezelésének szabályozásához konfigurálnia kell a`TxtLoadOptions` tárgy. Ez az objektum lehetővé teszi annak megadását, hogy a szövegfájl betöltésekor hogyan kezeljék a szóközöket.
+ A kezdő és záró szóközök kezelésének szabályozásához konfigurálnia kell a`TxtLoadOptions` objektum. Ez az objektum lehetővé teszi annak megadását, hogy a szövegfájl betöltésekor hogyan kezeljék a szóközöket.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions
@@ -74,7 +74,7 @@ Ez a beállítás elengedhetetlen a szövegfájlok feldolgozása vagy mentése e
 
 ## 4. lépés: Töltse be a szöveges dokumentumot az opciókkal
 
- Most, hogy konfiguráltuk betöltési beállításainkat, használja őket a szöveges mintadokumentum Aspose.Words fájlba való betöltéséhez`Document` tárgy.
+ Most, hogy konfiguráltuk betöltési beállításainkat, használja őket a szöveges mintadokumentum Aspose.Words fájlba való betöltéséhez`Document` objektum.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
  Használhatja a`TxtLoadOptions` osztályban, hogy megadja, hogyan kell kezelni a kezdő és a záró szóközöket szöveges fájlok betöltésekor.
 
 ### Megtarthatok vezető szóközöket a dokumentumban?  
- Igen, beállíthatja a`TxtLoadOptions` hogy a beállítással megtartsák a vezető tereket`LeadingSpacesOptions` nak nek`TxtLeadingSpacesOptions.None`.
+ Igen, beállíthatja a`TxtLoadOptions` hogy a beállítással megtartsák a vezető tereket`LeadingSpacesOptions` hogy`TxtLeadingSpacesOptions.None`.
 
 ### Mi történik, ha nem vágom le a záró szóközöket?  
 Ha a záró szóközöket nem vágja le, azok a sorok végén maradnak a dokumentumban, ami befolyásolhatja a formázást vagy a megjelenést.

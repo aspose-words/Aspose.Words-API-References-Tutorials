@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
-## Úvod
+## Zavedení
 
 Při práci se soubory PDF, zejména se soubory generovanými z dokumentů aplikace Word obsahujících grafiku WMF (Windows Metafile), se může správa velikosti stát zásadním aspektem při manipulaci s dokumenty. Jedním ze způsobů, jak ovládat velikost PDF, je upravit způsob vykreslování písem WMF v dokumentu. V tomto tutoriálu prozkoumáme, jak zmenšit velikost PDF změnou velikosti písem WMF na velikost metasouboru pomocí Aspose.Words for .NET.
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
- Tady,`dataDir` je zástupný symbol pro cestu k adresáři vašeho dokumentu. Vytvoříme instanci`Document` třídy předáním cesty k souboru aplikace Word. Tím se dokument načte do paměti, připraven k dalšímu zpracování.
+ Zde,`dataDir` je zástupný symbol pro cestu k adresáři vašeho dokumentu. Vytvoříme instanci`Document` třídy předáním cesty k souboru aplikace Word. Tím se dokument načte do paměti, připraven k dalšímu zpracování.
 
 ## Krok 2: Nakonfigurujte možnosti vykreslování metasouborů
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- The`PdfSaveOptions` class umožňuje určit různá nastavení pro uložení dokumentu jako PDF. Přiřazením dříve nakonfigurovaného`MetafileRenderingOptions` k`MetafileRenderingOptions` majetek`PdfSaveOptions`, zajistíte, že se dokument uloží podle požadovaného nastavení vykreslování metasouboru.
+ The`PdfSaveOptions` class umožňuje určit různá nastavení pro uložení dokumentu jako PDF. Přiřazením dříve nakonfigurovaného`MetafileRenderingOptions` k`MetafileRenderingOptions` vlastnictví`PdfSaveOptions`, zajistíte, že se dokument uloží podle požadovaného nastavení vykreslování metasouboru.
 
 ## Krok 4: Uložte dokument jako PDF
 
@@ -107,4 +107,4 @@ Ano, tuto techniku lze použít na jakýkoli dokument aplikace Word, který obsa
 
 ### Kde najdu více informací o Aspose.Words?
 
- Více o Aspose.Words můžete prozkoumat v[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) . Pro stažení, zkušební verze a podporu navštivte stránku[Stránka ke stažení Aspose.Words](https://releases.aspose.com/words/net/), [Koupit Aspose.Words](https://purchase.aspose.com/buy), [Zkušební verze zdarma](https://releases.aspose.com/), [Dočasná licence](https://purchase.aspose.com/temporary-license/) , a[Podpěra, podpora](https://forum.aspose.com/c/words/8).
+ Více o Aspose.Words můžete prozkoumat v[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) . Pro stažení, zkušební verze a podporu navštivte stránku[Stránka ke stažení Aspose.Words](https://releases.aspose.com/words/net/), [Koupit Aspose.Words](https://purchase.aspose.com/buy), [Bezplatná zkušební verze](https://releases.aspose.com/), [Dočasná licence](https://purchase.aspose.com/temporary-license/) a[Podpora](https://forum.aspose.com/c/words/8).

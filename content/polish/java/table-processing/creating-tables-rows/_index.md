@@ -115,7 +115,7 @@ Tak, możesz zaimportować dane z bazy danych i wypełnić tabelę w swoim dokum
  Tekst w komórkach tabeli można formatować, korzystając z opcji`Run` obiektów i w razie potrzeby zastosuj formatowanie. Na przykład zmiana rozmiaru lub stylu czcionki.
 
 ### Czy mogę wyeksportować dokument do różnych formatów?
- Aspose.Words dla Java umożliwia zapisanie dokumentu w różnych formatach, w tym DOCX, PDF, HTML i innych. Użyj`Document.save` metodę określenia żądanego formatu.
+ Aspose.Words dla Java umożliwia zapisanie dokumentu w różnych formatach, w tym DOCX, PDF, HTML i innych. Skorzystaj z`Document.save` metodę określenia żądanego formatu.
 
 ## Wniosek
 Tworzenie tabel i wierszy w dokumentach za pomocą Aspose.Words dla Java to potężna funkcja automatyzacji dokumentów. Dzięki dostarczonemu kodowi źródłowemu i wskazówkom zawartym w tym obszernym przewodniku jesteś dobrze przygotowany do wykorzystania potencjału Aspose.Words for Java w swoich aplikacjach Java. Niezależnie od tego, czy tworzysz raporty, dokumenty czy prezentacje, prezentacja danych strukturalnych jest w zasięgu ręki.

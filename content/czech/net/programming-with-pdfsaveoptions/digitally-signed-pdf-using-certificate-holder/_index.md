@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak zabezpečit dokumenty PDF digitálním podpisem? Tak to jste na správném místě! Digitální podpisy jsou moderním ekvivalentem ručně psaných podpisů a nabízejí způsob, jak ověřit pravost a integritu digitálních dokumentů. V tomto tutoriálu vám ukážeme, jak přidat digitální podpis do PDF pomocí Aspose.Words for .NET. Pokryjeme vše od nastavení vašeho prostředí až po spuštění kódu krok za krokem. Na konci této příručky budete mít digitálně podepsané PDF, které je bezpečné a spolehlivé.
 
@@ -73,7 +73,7 @@ Nakonec uložte dokument jako PDF s digitálním podpisem.
 doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-A to je vše! Váš dokument je nyní podepsán a uložen jako PDF.
+A je to! Váš dokument je nyní podepsán a uložen jako PDF.
 
 ## Závěr
 

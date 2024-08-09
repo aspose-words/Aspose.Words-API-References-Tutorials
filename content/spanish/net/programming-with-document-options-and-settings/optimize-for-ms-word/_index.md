@@ -15,9 +15,9 @@ url: /es/net/programming-with-document-options-and-settings/optimize-for-ms-word
 
 Antes de ensuciarnos las manos, asegurémonos de tener todo lo que necesitamos:
 
-1.  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE que admita .NET.
-3. Conocimientos básicos de C#: no es necesario ser un mago, pero conocer C# le resultará útil.
+3. Conocimientos básicos de C#: No es necesario ser un mago, pero conocer C# le resultará útil.
 
 ## Importar espacios de nombres
 

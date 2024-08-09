@@ -2,45 +2,61 @@
 title: Tetapkan Opsi Catatan Akhir
 linktitle: Tetapkan Opsi Catatan Akhir
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur opsi catatan akhir di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial langkah demi langkah dengan contoh kode sumber.
+description: Pelajari cara mengatur opsi catatan akhir di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## Perkenalan
 
-Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan Aspose.Words untuk .NET untuk mengatur opsi catatan akhir di dokumen Word. Kami akan menjelaskan kode sumber C# yang disediakan dan menunjukkan cara mengimplementasikannya di proyek Anda sendiri.
+Apakah Anda ingin menyempurnakan dokumen Word Anda dengan mengelola catatan akhir secara efisien? Tidak perlu mencari lagi! Dalam tutorial ini, kami akan memandu Anda melalui proses pengaturan opsi catatan akhir di dokumen Word menggunakan Aspose.Words untuk .NET. Di akhir panduan ini, Anda akan mahir dalam menyesuaikan catatan akhir agar sesuai dengan kebutuhan dokumen Anda.
 
- Untuk memulai, pastikan Anda telah menginstal dan menyiapkan Aspose.Words untuk .NET di lingkungan pengembangan Anda. Jika Anda belum melakukannya, unduh dan instal perpustakaan dari[Aspose.Rilis]https://releases.aspose.com/words/net/.
+## Prasyarat
 
-## Langkah 1: Menginisialisasi Objek Dokumen
+Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
 
- Pertama, inisialisasi`Document` objek dengan memberikan jalur ke dokumen sumber Anda:
+-  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Siapkan lingkungan pengembangan, seperti Visual Studio.
+- Pengetahuan Dasar C#: Pemahaman mendasar tentang pemrograman C# akan bermanfaat.
+
+## Impor Namespace
+
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan. Namespace ini menyediakan akses ke kelas dan metode yang diperlukan untuk memanipulasi dokumen Word.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## Langkah 1: Muat Dokumen
+
+ Pertama, mari muat dokumen di mana kita ingin mengatur opsi catatan akhir. Kami akan menggunakan`Document` kelas dari perpustakaan Aspose.Words untuk mencapai hal ini.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Langkah 2: Menginisialisasi Objek DocumentBuilder
+## Langkah 2: Inisialisasi DocumentBuilder
 
- Selanjutnya, inisialisasi`DocumentBuilder` objek untuk melakukan operasi pada dokumen:
+ Selanjutnya, kita akan menginisialisasi`DocumentBuilder`kelas. Kelas ini menyediakan cara sederhana untuk menambahkan konten ke dokumen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 3: Menambahkan Teks dan Catatan Akhir
+## Langkah 3: Tambahkan Teks dan Sisipkan Catatan Akhir
 
- Menggunakan`Write` metode`DocumentBuilder` objek untuk menambahkan teks ke dokumen, dan`InsertFootnote` metode untuk memasukkan catatan akhir:
+ Sekarang, mari tambahkan beberapa teks ke dokumen dan masukkan catatan akhir. Itu`InsertFootnote` metode`DocumentBuilder` kelas memungkinkan kita menambahkan catatan akhir ke dokumen.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## Langkah 4: Mengatur Opsi Catatan Akhir
+## Langkah 4: Akses dan Atur Opsi Catatan Akhir
 
- Akses`EndnoteOptions`properti dokumen untuk mengubah opsi catatan akhir. Dalam contoh ini, kami menetapkan aturan mulai ulang untuk memulai ulang pada setiap halaman dan posisinya di akhir bagian:
+ Untuk menyesuaikan opsi catatan akhir, kita perlu mengakses`EndnoteOptions` properti dari`Document` kelas. Kami kemudian dapat mengatur berbagai opsi seperti aturan dan posisi restart.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,53 +64,31 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## Langkah 5: Menyimpan Dokumen
+## Langkah 5: Simpan Dokumen
 
-Terakhir, simpan dokumen yang diubah:
+ Terakhir, mari simpan dokumen dengan opsi catatan akhir yang diperbarui. Itu`Save` metode`Document` kelas memungkinkan kita menyimpan dokumen ke direktori yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Itu dia! Anda telah berhasil mengatur opsi catatan akhir di dokumen Word menggunakan Aspose.Words untuk .NET.
+## Kesimpulan
 
-### Contoh kode sumber untuk Mengatur Opsi Catatan Akhir menggunakan Aspose.Words untuk .NET
+Mengatur opsi catatan akhir di dokumen Word Anda menggunakan Aspose.Words untuk .NET sangatlah mudah dengan langkah sederhana ini. Dengan menyesuaikan aturan mulai ulang dan posisi catatan akhir, Anda dapat menyesuaikan dokumen Anda untuk memenuhi persyaratan tertentu. Dengan Aspose.Words, kemampuan untuk memanipulasi dokumen Word ada di ujung jari Anda.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## FAQ
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk memanipulasi dokumen Word secara terprogram. Hal ini memungkinkan pengembang untuk membuat, memodifikasi, dan mengkonversi dokumen Word dalam berbagai format.
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Bisakah saya menggunakan Aspose.Words secara gratis?
+ Anda dapat menggunakan Aspose.Words dengan uji coba gratis. Untuk penggunaan jangka panjang, Anda dapat membeli lisensi dari[Di Sini](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### Apa itu catatan akhir?
+Catatan akhir adalah referensi atau catatan yang ditempatkan di akhir suatu bagian atau dokumen. Mereka memberikan informasi atau kutipan tambahan.
 
-Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasinya sesuai dengan kebutuhan spesifik Anda.
+### Bagaimana cara menyesuaikan tampilan catatan akhir?
+ Anda dapat menyesuaikan opsi catatan akhir seperti aturan penomoran, posisi, dan mulai ulang menggunakan`EndnoteOptions` kelas di Aspose.Words untuk .NET.
 
-### FAQ
-
-#### T: Bagaimana cara menata gaya catatan akhir di Aspose.Words?
-
- J: Untuk menata catatan akhir di Aspose.Words, Anda dapat menggunakan`EndnoteOptions` kelas dan`SeparatorNoteTextStyle` Properti. Anda dapat menentukan gaya font, ukuran, warna, dll. untuk catatan akhir menggunakan properti ini.
-
-#### T: Apakah mungkin untuk menyesuaikan penomoran catatan akhir dalam dokumen?
-
- J: Ya, dimungkinkan untuk menyesuaikan penomoran catatan akhir dalam dokumen. Anda dapat menggunakan`RestartRule`Dan`NumberStyle` properti dari`EndnoteOptions` kelas untuk menentukan aturan restart tertentu dan gaya penomoran.
-
-#### T: Bagaimana cara memposisikan catatan akhir dalam dokumen?
-
-J: Untuk memposisikan catatan akhir dalam dokumen, Anda dapat menggunakan`Position` properti dari`EndnoteOptions` kelas. Anda dapat menentukan apakah catatan akhir harus ditempatkan di bagian bawah setiap halaman, di akhir setiap bagian, atau di akhir dokumen.
-
-#### T: Dapatkah saya menyesuaikan format penomoran catatan akhir?
-
- A: Ya, Anda dapat menyesuaikan format penomoran catatan akhir di Aspose.Words. Menggunakan`NumberFormat` properti dari`EndnoteOptions` class untuk mengatur format yang diinginkan, seperti angka arab, angka romawi, huruf, dll.
-
-#### T: Apakah mungkin untuk melanjutkan penomoran catatan akhir antar bagian dokumen?
-
- J: Ya, dimungkinkan untuk melanjutkan penomoran catatan akhir antar bagian dokumen. Menggunakan`RestartRule` properti dari`EndnoteOptions` kelas dan atur ke`RestartContinuous` untuk memungkinkan penomoran berlanjut antar bagian.
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+ Dokumentasi terperinci tersedia di[Aspose.Words untuk Dokumentasi .NET](https://reference.aspose.com/words/net/) halaman.

@@ -32,7 +32,7 @@ doc = aw.Document()
 
 ## Modificación de propiedades del documento:
 
-Ajustar las propiedades del documento, como el título, el autor y las palabras clave, es esencial para una organización y capacidad de búsqueda adecuadas:
+Ajustar las propiedades del documento, como título, autor y palabras clave, es esencial para una organización y capacidad de búsqueda adecuadas:
 
 ```python
 doc.built_in_document_properties["Title"].value = "My Document"
@@ -53,7 +53,7 @@ page_setup.top_margin = aw.ConvertUtil.inch_to_point(1.5)
 page_setup.bottom_margin = aw.ConvertUtil.inch_to_point(1.5)
 ```
 
-## Control de fuente y formato:
+## Control de fuentes y formato:
 
 Aplique un formato consistente al texto de su documento usando Aspose.Words:
 

@@ -9,7 +9,7 @@ url: /nl/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit geprobeerd tekst toe te voegen uit een gedeelte met een bladwijzer in een Word-document en vond u dit lastig? Je hebt geluk! In deze zelfstudie wordt u door het proces geleid met Aspose.Words voor .NET. We zullen het in eenvoudige stappen opsplitsen, zodat u het gemakkelijk kunt volgen. Laten we erin duiken en die tekst met bladwijzer als een professional toevoegen!
+Hé daar! Heeft u ooit geprobeerd tekst toe te voegen uit een gedeelte met een bladwijzer in een Word-document en vond u dit lastig? Je hebt geluk! In deze zelfstudie wordt u door het proces geleid met Aspose.Words voor .NET. We zullen het in eenvoudige stappen opsplitsen, zodat u het gemakkelijk kunt volgen. Laten we erin duiken en die tekst met bladwijzer als een professional toevoegen!
 
 ## Vereisten
 

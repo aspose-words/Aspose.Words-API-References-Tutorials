@@ -89,7 +89,7 @@ Herzlichen Glückwunsch! Sie haben ein DOCX-Dokument erfolgreich in MHTML konver
 Ja, Aspose.Words unterstützt verschiedene Formate und Sie können Dokumente wie DOC, DOCX, RTF und mehr in MHTML konvertieren.
 
 ### Wie kann ich der E-Mail Anhänge hinzufügen?
- Du kannst den ... benutzen`Attachments` Eigentum der`MailMessage`Klasse, um Ihrer E-Mail Anhänge hinzuzufügen.
+ Sie können die`Attachments` Eigentum der`MailMessage`Klasse, um Ihrer E-Mail Anhänge hinzuzufügen.
 
 ### Ist Aspose.Words mit .NET Core kompatibel?
 Ja, Aspose.Words ist mit .NET Core kompatibel. Sie können es auch in .NET Core-Anwendungen verwenden.

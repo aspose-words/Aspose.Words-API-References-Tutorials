@@ -95,7 +95,7 @@ string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-И вуаля! Вы только что автоматизировали часть документооборота. Как это круто?
+И вуаля! Вы только что автоматизировали часть документооборота. Насколько это круто?
 
 ## Заключение
 

@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Kode ini mengambil tabel pertama (indeks 0) dari dokumen. Jika dokumen Anda memiliki beberapa tabel dan Anda ingin mengakses tabel yang berbeda, Anda dapat mengubah indeksnya sesuai dengan itu.
+Kode ini mengambil tabel pertama (indeks 0) dari dokumen. Jika dokumen Anda memiliki beberapa tabel dan Anda ingin mengakses tabel yang berbeda, Anda dapat mengubah indeksnya.
 
 ## Langkah 3: Ganti Teks di Tabel
 

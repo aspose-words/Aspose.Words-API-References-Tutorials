@@ -57,7 +57,7 @@ U hebt een map nodig waarin u uw Word-documenten en certificaten kunt opslaan. L
 
 ## Stap 4: Het schrijven van de code
 
- Laten we nu in de code duiken. Open je`Program.cs` bestand en begin met het instellen van het pad naar uw documentmap en het initialiseren van het`SignOptions` met het decoderingswachtwoord.
+ Laten we nu in de code duiken. Open uw`Program.cs` bestand en begin met het instellen van het pad naar uw documentmap en het initialiseren van het`SignOptions` met het decoderingswachtwoord.
 
 ```csharp
 // Het pad naar de documentenmap.

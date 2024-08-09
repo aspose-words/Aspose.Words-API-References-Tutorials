@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Bước 2: Bắt đầu một bảng
 
- Tiếp theo, bạn sẽ bắt đầu tạo bảng. Các`DocumentBuilder` lớp cung cấp một cách đơn giản để chèn và định dạng bảng.
+ Tiếp theo, bạn sẽ bắt đầu tạo bảng. các`DocumentBuilder` lớp cung cấp một cách đơn giản để chèn và định dạng bảng.
 
 ```csharp
 Table table = builder.StartTable();
@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công bảng được định dạng trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này có thể được mở rộng và tùy chỉnh để phù hợp với các yêu cầu phức tạp hơn, nhưng các bước cơ bản này cung cấp nền tảng vững chắc. Thử nghiệm với các tùy chọn định dạng khác nhau và xem chúng cải thiện tài liệu của bạn như thế nào.
+Và bạn có nó! Bạn đã tạo thành công bảng được định dạng trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này có thể được mở rộng và tùy chỉnh để phù hợp với các yêu cầu phức tạp hơn, nhưng các bước cơ bản này cung cấp nền tảng vững chắc. Thử nghiệm với các tùy chọn định dạng khác nhau và xem chúng cải thiện tài liệu của bạn như thế nào.
 
 ## Câu hỏi thường gặp
 

@@ -110,7 +110,7 @@ doc.Sections[0].ProtectedForForms = false;
 doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 ```
 
-これにより、指定されたディレクトリに次の名前でドキュメントが保存されます。`DocumentProtection.UnrestrictedSection.docx`.
+指定されたディレクトリに文書を次の名前で保存します。`DocumentProtection.UnrestrictedSection.docx`.
 
 ### ドキュメントを読み込む
 

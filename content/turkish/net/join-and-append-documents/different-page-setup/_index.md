@@ -9,7 +9,7 @@ url: /tr/net/join-and-append-documents/different-page-setup/
 ---
 ## giriiş
 
-Selam! Aspose.Words for .NET ile belge manipülasyonunun büyüleyici dünyasına dalmaya hazır mısınız? Bugün oldukça güzel bir şeyle uğraşıyoruz: Word belgelerini birleştirirken farklı sayfa düzenleri ayarlamak. İster raporları birleştiriyor olun, ister bir roman hazırlayın, ister sadece eğlence olsun diye belgelerle uğraşıyor olun, bu kılavuz size adım adım yol gösterecektir. Başlayalım!
+Selam! Aspose.Words for .NET ile belge manipülasyonunun büyüleyici dünyasına dalmaya hazır mısınız? Bugün oldukça güzel bir şeyle uğraşıyoruz: Word belgelerini birleştirirken farklı sayfa düzenleri ayarlamak. İster raporları birleştiriyor olun, ister bir roman hazırlayın, ister sadece eğlence olsun diye belgelerle uğraşıyor olun, bu kılavuz size adım adım yol gösterecektir. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -119,7 +119,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak farklı sayfa düzenlerine sahip iki Word belgesini birleştirdiniz. Bu güçlü kitaplık, belgeleri programlı olarak düzenlemeyi son derece kolaylaştırır. İster karmaşık raporlar oluşturuyor olun, ister kitapları bir araya getiriyor olun, ister çok bölümlü belgeleri yönetiyor olun, Aspose.Words arkanızdadır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak farklı sayfa düzenlerine sahip iki Word belgesini birleştirdiniz. Bu güçlü kitaplık, belgeleri programlı olarak düzenlemeyi son derece kolaylaştırır. İster karmaşık raporlar oluşturuyor olun, ister kitapları bir araya getiriyor olun, ister çok bölümlü belgeleri yönetiyor olun, Aspose.Words arkanızdadır.
 
 ## SSS'ler
 
@@ -133,7 +133,7 @@ Sayfa genişliğini, yüksekliğini ve yönünü nasıl eşleştirdiğimize benz
 Evet, Aspose.Words for .NET, .NET Core ile tamamen uyumludur.
 
 ### Her iki belgedeki stilleri de koruyabilir miyim?
- Evet`ImportFormatMode.KeepSourceFormatting` seçeneği kaynak belgedeki stillerin korunmasını sağlar.
+ Evet,`ImportFormatMode.KeepSourceFormatting` seçeneği kaynak belgedeki stillerin korunmasını sağlar.
 
 ### Aspose.Words ile ilgili nereden daha fazla yardım alabilirim?
- Kontrol et[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya onları ziyaret edin[destek Forumu](https://forum.aspose.com/c/words/8) Daha fazla yardım için.
+ Şuna göz atın:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya onları ziyaret edin[destek forumu](https://forum.aspose.com/c/words/8) Daha fazla yardım için.

@@ -87,7 +87,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
 
 Son olarak belgeyi yeni sıkıştırma ayarlarıyla kaydedin.
 
- Kullan`Save` Belgenizi belirtilen sıkıştırma düzeyiyle kaydetme yöntemini kullanın.
+ Kullanın`Save` Belgenizi belirtilen sıkıştırma düzeyiyle kaydetme yöntemini kullanın.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveOptions);
@@ -99,7 +99,7 @@ Uygulamanızı çalıştırdıktan sonra belirtilen dizine gidin ve yeni dosyay�
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinin sıkıştırma düzeyini başarıyla ayarladınız. Bu, büyük belgelerle çalışırken dosya boyutunu önemli ölçüde azaltabilir ve performansı artırabilir. İhtiyaçlarınıza göre dosya boyutu ve performans arasındaki en iyi dengeyi bulmak için diğer sıkıştırma düzeylerini keşfetmeyi unutmayın.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinin sıkıştırma düzeyini başarıyla ayarladınız. Bu, büyük belgelerle çalışırken dosya boyutunu önemli ölçüde azaltabilir ve performansı artırabilir. İhtiyaçlarınıza göre dosya boyutu ve performans arasındaki en iyi dengeyi bulmak için diğer sıkıştırma düzeylerini keşfetmeyi unutmayın.
 
 Herhangi bir sorunuz varsa veya herhangi bir sorunla karşılaşırsanız, şuraya göz atın:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) veya onlara ulaşın[Destek Forumu](https://forum.aspose.com/c/words/8).
 
@@ -121,6 +121,6 @@ Aspose.Words for .NET Normal, Maksimum, Hızlı ve Süper Hızlı dahil olmak ü
 
 Evet, Aspose.Words for .NET, DOCX, PDF ve daha fazlasını içeren çeşitli belge formatları için sıkıştırmayı destekler.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
 
  Aspose topluluğunu ziyaret ederek destek alabilirsiniz.[Destek Forumu](https://forum.aspose.com/c/words/8).

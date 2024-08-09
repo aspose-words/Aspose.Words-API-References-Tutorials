@@ -57,7 +57,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Langkah 4: Simpan Dokumen sebagai PDF
 
-Terakhir, simpan dokumen sebagai PDF dengan opsi penyimpanan yang ditentukan. Ini adalah dimana keajaiban terjadi.
+Terakhir, simpan dokumen sebagai PDF dengan opsi penyimpanan yang ditentukan. Di sinilah keajaiban terjadi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);

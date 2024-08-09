@@ -9,7 +9,7 @@ url: /vi/net/remove-content/remove-footers/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ gặp khó khăn trong việc xóa phần chân trang khỏi tài liệu Word chưa? Bạn không cô đơn! Nhiều người phải đối mặt với thách thức này, đặc biệt là khi xử lý các tài liệu có phần chân trang khác nhau trên nhiều trang khác nhau. Rất may, Aspose.Words for .NET cung cấp giải pháp liền mạch cho việc này. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách xóa chân trang khỏi tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này hoàn hảo cho các nhà phát triển muốn thao tác các tài liệu Word theo chương trình một cách dễ dàng và hiệu quả.
+Bạn đã bao giờ gặp khó khăn trong việc xóa phần chân trang khỏi tài liệu Word chưa? Bạn không đơn độc! Nhiều người phải đối mặt với thách thức này, đặc biệt là khi xử lý các tài liệu có phần chân trang khác nhau trên nhiều trang khác nhau. Rất may, Aspose.Words for .NET cung cấp giải pháp liền mạch cho việc này. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách xóa chân trang khỏi tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này hoàn hảo cho các nhà phát triển muốn thao tác các tài liệu Word theo chương trình một cách dễ dàng và hiệu quả.
 
 ## Điều kiện tiên quyết
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã xóa thành công phần chân trang khỏi tài liệu Word của mình bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác với tài liệu Word theo chương trình, giúp bạn tiết kiệm thời gian và công sức. Cho dù bạn đang xử lý tài liệu một trang hay báo cáo nhiều phần, Aspose.Words for .NET đều có thể giúp bạn.
+Và bạn có nó! Bạn đã xóa thành công phần chân trang khỏi tài liệu Word của mình bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác với tài liệu Word theo chương trình, giúp bạn tiết kiệm thời gian và công sức. Cho dù bạn đang xử lý tài liệu một trang hay báo cáo nhiều phần, Aspose.Words for .NET đều có thể giúp bạn.
 
 ## Câu hỏi thường gặp
 
@@ -95,7 +95,7 @@ Và bạn có nó rồi đấy! Bạn đã xóa thành công phần chân trang 
  Có, bạn có thể sử dụng cách tiếp cận tương tự để xóa tiêu đề bằng cách truy cập`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` , Và`HeaderFooterType.HeaderEven`.
 
 ### Aspose.Words cho .NET có được sử dụng miễn phí không?
- Aspose.Words for .NET là một sản phẩm thương mại, nhưng bạn có thể có được[dùng thử miễn phí](https://releases.aspose.com/) để kiểm tra tính năng của nó.
+ Aspose.Words for .NET là một sản phẩm thương mại, nhưng bạn có thể có được[dùng thử miễn phí](https://releases.aspose.com/) để kiểm tra các tính năng của nó.
 
 ### Tôi có thể thao tác các thành phần khác của tài liệu Word bằng Aspose.Words không?
 Tuyệt đối! Aspose.Words cung cấp các chức năng mở rộng để thao tác văn bản, hình ảnh, bảng, v.v. trong tài liệu Word.

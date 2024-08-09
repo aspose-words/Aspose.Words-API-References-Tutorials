@@ -30,7 +30,7 @@ builder.endBookmark("My Bookmark");
 
 ## Paso 2: acceder a los marcadores
 
-Puede acceder a los marcadores de un documento utilizando su índice o nombre. Así es cómo:
+Puede acceder a los marcadores de un documento utilizando su índice o nombre. He aquí cómo:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## Paso 4: trabajar con texto marcado
 
-Puede copiar el texto marcado como favorito y agregarlo a otro documento. Así es cómo:
+Puede copiar el texto marcado como favorito y agregarlo a otro documento. He aquí cómo:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");

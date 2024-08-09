@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/use-temp-folder/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato ad avere a che fare con documenti Word di grandi dimensioni che semplicemente non si caricavano in modo efficiente? O forse hai riscontrato problemi di prestazioni quando lavori con file di grandi dimensioni? Bene, lascia che ti presenti una caratteristica interessante di Aspose.Words per .NET che può aiutarti ad affrontare questo problema frontalmente: utilizzare una cartella temporanea durante il caricamento dei documenti. Questo tutorial ti guiderà attraverso il processo di configurazione e utilizzo di una cartella temporanea nei tuoi documenti Word per migliorare le prestazioni e gestire le risorse in modo efficace.
 
@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## Conclusione
 
-E il gioco è fatto! Utilizzando una cartella temporanea durante il caricamento dei documenti Word, puoi migliorare significativamente le prestazioni e l'efficienza delle tue applicazioni, soprattutto quando si tratta di file di grandi dimensioni. Questa funzionalità semplice ma potente di Aspose.Words per .NET aiuta a gestire meglio le risorse e garantisce un'elaborazione dei documenti più fluida.
+Ed ecco qua! Utilizzando una cartella temporanea durante il caricamento dei documenti Word, puoi migliorare significativamente le prestazioni e l'efficienza delle tue applicazioni, soprattutto quando si tratta di file di grandi dimensioni. Questa funzionalità semplice ma potente di Aspose.Words per .NET aiuta a gestire meglio le risorse e garantisce un'elaborazione dei documenti più fluida.
 
 ## Domande frequenti
 

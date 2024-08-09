@@ -9,7 +9,7 @@ url: /tr/net/programming-with-tables/insert-table-from-html/
 ---
 ## giriiş
 
-Hiç HTML'den bir Word belgesine tablo eklemeniz gerekti mi? İster web içeriğini bir Word belgesine dönüştürmeyi gerektiren bir proje üzerinde çalışıyor olun, ister yalnızca iş akışınızı kolaylaştırmaya çalışıyor olun, Aspose.Words for .NET size yardımcı olacaktır. Bu eğitimde, Aspose.Words for .NET'i kullanarak HTML'den bir Word belgesine tablo ekleme işleminin tamamı boyunca size yol göstereceğiz. Ön koşullardan ayrıntılı adım adım kılavuza kadar ihtiyacınız olan her şeyi ele alacağız. Dalmaya hazır mısınız? Başlayalım!
+Hiç HTML'den bir Word belgesine tablo eklemeniz gerekti mi? İster web içeriğini bir Word belgesine dönüştürmeyi gerektiren bir proje üzerinde çalışıyor olun, ister yalnızca iş akışınızı kolaylaştırmaya çalışıyor olun, Aspose.Words for .NET size yardımcı olacaktır. Bu eğitimde, Aspose.Words for .NET'i kullanarak HTML'den bir Word belgesine tablo ekleme işleminin tamamı boyunca size yol göstereceğiz. Ön koşullardan ayrıntılı adım adım kılavuza kadar ihtiyacınız olan her şeyi ele alacağız. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -77,7 +77,7 @@ Son olarak tabloyu ekledikten sonra belgenizi kaydetmeniz gerekiyor. Bu adım, d
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-Ve bu kadar! Aspose.Words for .NET'i kullanarak HTML'den bir tabloyu Word belgesine başarıyla eklediniz.
+İşte bu kadar! Aspose.Words for .NET'i kullanarak HTML'den bir tabloyu Word belgesine başarıyla eklediniz.
 
 ## Çözüm
 
@@ -91,7 +91,7 @@ Evet, HTML tablosunun görünümünü, Word belgesine eklemeden önce standart H
 ### Aspose.Words for .NET tabloların yanı sıra diğer HTML öğelerini de destekliyor mu?
 Kesinlikle! Aspose.Words for .NET, çok çeşitli HTML öğelerini destekleyerek Word belgelerinize çeşitli içerik türleri eklemenizi sağlar.
 
-### Tek bir Word belgesine birden fazla HTML tablosu eklemek mümkün mü?
+### Tek bir Word belgesine birden fazla HTML tablosu eklemek mümkün müdür?
  Evet, birden fazla HTML tablosunu çağırarak ekleyebilirsiniz.`InsertHtml` yöntemi farklı HTML tablo koduyla birden çok kez kullanın.
 
 ### Birden çok sayfaya yayılan büyük HTML tablolarını nasıl işleyebilirim?

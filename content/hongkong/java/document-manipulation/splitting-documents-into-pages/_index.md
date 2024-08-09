@@ -12,7 +12,7 @@ url: /zh-hant/java/document-manipulation/splitting-documents-into-pages/
 
 ## 一、簡介
 
-Aspose.Words for Java 是一個 Java 函式庫，可讓您以程式設計方式操作 Word 文件。一項常見任務是將文件拆分為單獨的頁面，這可用於多種目的，例如存檔、列印或文件處理。
+Aspose.Words for Java 是一個 Java 函式庫，可讓您以程式設計方式操作 Word 文件。一項常見任務是將文件拆分為單獨的頁面，這可用於多種目的，例如歸檔、列印或文件處理。
 
 ## 2. 前提條件
 

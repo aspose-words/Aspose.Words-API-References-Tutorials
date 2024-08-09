@@ -116,7 +116,7 @@ Houd rekening met de volgende tips om een soepel en efficiënt documentconversie
 ## Uitzonderingen voor afhandeling: 
 Als u met een groot aantal documenten werkt, kunnen er fouten optreden tijdens het conversieproces. Implementeer de juiste afhandeling van uitzonderingen om deze problemen op een elegante manier te identificeren en aan te pakken.
 
-## Kwaliteitsverzekering: 
+## Kwaliteitsborging: 
 Voordat u de documentconversiefunctie in een productieomgeving implementeert, moet u het conversieproces grondig testen met verschillende documenttypen en -formaten om de nauwkeurigheid en betrouwbaarheid van de uitvoer te verifiëren.
 
 ## Conclusie

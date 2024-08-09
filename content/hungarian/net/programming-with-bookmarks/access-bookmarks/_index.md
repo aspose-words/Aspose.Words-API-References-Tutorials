@@ -41,7 +41,7 @@ Document doc = new Document(dataDir + "Bookmarks.docx");
 
 Magyarázat:
 - `dataDir`: Ennek a változónak tartalmaznia kell a dokumentumkönyvtár elérési útját.
-- `Document doc = new Document(dataDir + "Bookmarks.docx");` : Ez a sor betölti a "Bookmarks.docx" nevű Word dokumentumot a`doc` tárgy.
+- `Document doc = new Document(dataDir + "Bookmarks.docx");` : Ez a sor betölti a "Bookmarks.docx" nevű Word dokumentumot a`doc` objektum.
 
 ## 2. lépés: Nyissa meg a könyvjelzőket index szerint
 
@@ -69,7 +69,7 @@ Magyarázat:
 - `doc.Range.Bookmarks["MyBookmark3"]`: Ezzel eléri a "MyBookmark3" nevű könyvjelzőt.
 - `Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];` : Ez eltárolja az elért könyvjelzőt a`bookmark2` változó.
 
-## 4. lépés: Manipulálja a könyvjelző tartalmát
+## 4. lépés: Manipulálja a könyvjelzők tartalmát
 
 Miután hozzáfért egy könyvjelzőhöz, módosíthatja annak tartalmát. Például frissítheti a könyvjelzőn belüli szöveget.
 

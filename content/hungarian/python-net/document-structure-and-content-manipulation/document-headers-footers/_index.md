@@ -12,7 +12,7 @@ A Word-dokumentumok fejlécei és láblécei döntő szerepet játszanak abban, 
 
 ## Az Aspose.Words for Python használatának megkezdése
 
-Mielőtt belevágna a fejléc- és lábléckezelésbe, be kell állítania az Aspose.Words for Python alkalmazást. Kovesd ezeket a lepeseket:
+Mielőtt belevágna a fejléc- és lábléckezelésbe, be kell állítania az Aspose.Words for Python alkalmazást. Kövesse az alábbi lépéseket:
 
 1. Telepítés: Telepítse az Aspose.Words for Python programot a pip használatával.
 
@@ -89,7 +89,7 @@ footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE
 
 ## Különböző fejlécek és láblécek páratlan és páros oldalakhoz
 
-Különböző fejlécek és láblécek létrehozása páratlan és páros oldalakhoz professzionális megjelenést adhat a dokumentumoknak. Itt van, hogyan:
+Különböző fejlécek és láblécek létrehozása páratlan és páros oldalakhoz professzionális megjelenést adhat a dokumentumoknak. Íme, hogyan:
 
 1. Páratlan és páros oldalelrendezés beállítása: Határozza meg az elrendezést, hogy különböző fejléceket és lábléceket engedélyezzen a páratlan és páros oldalakhoz.
 

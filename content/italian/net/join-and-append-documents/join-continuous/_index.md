@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/join-continuous/
 ---
-## introduzione
+## Introduzione
 
 Stai cercando di unire perfettamente due documenti Word in uno senza interruzioni? Aspose.Words per .NET offre un modo fantastico per raggiungere questo obiettivo utilizzando la funzione Interruzione di sezione continua. Questo tutorial ti guiderà passo dopo passo attraverso il processo, assicurandoti di poter unire facilmente i documenti senza problemi. Immergiamoci!
 
@@ -85,7 +85,7 @@ Assicurati che il percorso e il nome del file siano corretti per le tue esigenze
 
 ## Conclusione
 
-E il gioco è fatto! Con solo poche righe di codice, hai unito con successo due documenti Word in un unico documento continuo utilizzando Aspose.Words per .NET. Questo processo non è solo semplice ma anche altamente efficiente e garantisce che i tuoi documenti mantengano la formattazione originale.
+Ed ecco qua! Con solo poche righe di codice, hai unito con successo due documenti Word in un unico documento continuo utilizzando Aspose.Words per .NET. Questo processo non è solo semplice ma anche altamente efficiente e garantisce che i tuoi documenti mantengano la formattazione originale.
 
 ## Domande frequenti
 

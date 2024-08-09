@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
-## introduzione
+## Introduzione
 
 Quando si tratta di creare e gestire documenti Word a livello di codice, Aspose.Words per .NET è un potente strumento che può farti risparmiare molto tempo e fatica. In questo articolo esploreremo come passare alle intestazioni e ai piè di pagina all'interno di un documento Word utilizzando Aspose.Words per .NET. Questa funzionalità è essenziale quando è necessario aggiungere contenuto specifico alle sezioni di intestazione o piè di pagina del documento. Che tu stia creando un report, una fattura o qualsiasi documento che richieda un tocco professionale, capire come manipolare intestazioni e piè di pagina è fondamentale.
 
@@ -116,4 +116,4 @@ Aspose.Words per .NET è una libreria che consente agli sviluppatori di creare, 
 Puoi utilizzare tabelle, immagini e varie opzioni di formattazione fornite da Aspose.Words per creare layout complessi.
 
 ### Dove posso trovare altri esempi e tutorial?
- Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) e il[Forum di assistenza](https://forum.aspose.com/c/words/8) per ulteriori esempi e supporto della comunità.
+ Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) e il[forum di supporto](https://forum.aspose.com/c/words/8) per ulteriori esempi e supporto della comunità.

@@ -9,7 +9,7 @@ url: /vi/net/programming-with-tables/get-floating-table-position/
 ---
 ## Giới thiệu
 
-Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng tôi sẽ đưa các bạn vào cuộc hành trình khám phá bí mật về bảng nổi trong văn bản Word. Hãy tưởng tượng bạn có một chiếc bàn không chỉ ngồi yên mà còn nổi một cách trang nhã xung quanh văn bản. Khá tuyệt phải không? Hướng dẫn này sẽ hướng dẫn bạn cách lấy các thuộc tính định vị của các bảng nổi như vậy. Vậy hãy bắt đầu!
+Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng tôi sẽ đưa các bạn vào cuộc hành trình khám phá bí mật về bảng nổi trong văn bản Word. Hãy tưởng tượng bạn có một chiếc bàn không chỉ ngồi yên mà còn nổi một cách trang nhã xung quanh văn bản. Khá tuyệt phải không? Hướng dẫn này sẽ hướng dẫn bạn cách lấy các thuộc tính định vị của các bảng nổi như vậy. Vì vậy, hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -90,7 +90,7 @@ Các thuộc tính này cung cấp cho bạn cái nhìn chi tiết về cách b�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng truy xuất và in các thuộc tính định vị của bảng nổi trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang tự động hóa quá trình xử lý tài liệu hay chỉ tò mò về cách bố trí bảng, kiến thức này chắc chắn sẽ hữu ích.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng truy xuất và in các thuộc tính định vị của bảng nổi trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang tự động hóa quá trình xử lý tài liệu hay chỉ tò mò về cách bố trí bảng, kiến thức này chắc chắn sẽ hữu ích.
 
 Hãy nhớ rằng, làm việc với Aspose.Words cho .NET sẽ mở ra một thế giới khả năng tự động hóa và thao tác tài liệu. Chúc mừng mã hóa!
 

@@ -15,7 +15,7 @@ Das Navigieren in der Welt der Dokumentbearbeitung kann sich manchmal anfühlen,
 
 Bevor wir uns auf diese Reise begeben, sammeln wir alle wichtigen Dinge, die Sie für den Anfang brauchen.
 
-- Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+- Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Eine .NET-kompatible Entwicklungsumgebung wie Visual Studio.
 -  Beispieldokument: Ein Word-Dokument (z. B.`Paragraphs.docx`), das Sie in ein PDF konvertieren.
 

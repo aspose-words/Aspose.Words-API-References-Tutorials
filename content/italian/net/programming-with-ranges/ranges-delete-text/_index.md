@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-ranges/ranges-delete-text/
 ---
-## introduzione
+## Introduzione
 
 Se ti è mai capitato di dover eliminare sezioni specifiche di testo all'interno di un documento Word, sei nel posto giusto! Aspose.Words per .NET è una potente libreria che ti consente di manipolare facilmente i documenti Word. In questo tutorial ti guideremo attraverso i passaggi per eliminare il testo da un intervallo all'interno di un documento Word. Suddivideremo il processo in passaggi semplici e digeribili per renderlo facile come un gioco da ragazzi. Quindi tuffiamoci!
 

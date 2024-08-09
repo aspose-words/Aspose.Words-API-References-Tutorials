@@ -2,83 +2,105 @@
 title: Nastavte značku zvýraznění písma
 linktitle: Nastavte značku zvýraznění písma
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak nastavit styl zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak nastavit značky zvýraznění písma v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. Ideální pro .NET vývojáře.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Zavedení
 
-V tomto tutoriálu vám ukážeme, jak nastavit styl zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words for .NET. Zvýraznění písma se používá ke zvýraznění určitých slov nebo frází v textu.
+dnešním tutoriálu se ponoříme do toho, jak nastavit značky zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words pro .NET. Ať už chcete podtrhnout konkrétní text jedinečným označením nebo jednoduše nechat vyniknout určitá slova, tento průvodce vám pomůže. Tak se připoutejte a můžeme začít!
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
 
-## Krok 1: Definujte adresář dokumentů
-Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+Než se ponoříme do hrubších detailů, ujistěte se, že máte zaškrtnuté následující předpoklady:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Knihovna Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Pracovní vývojové prostředí, jako je Visual Studio.
+- .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 
-## Krok 2: Vytvořte a přizpůsobte dokument
- Vytvořte instanci souboru`Document` třída a přidružená`DocumentBuilder` k vytvoření obsahu dokumentu. Použijte`Font.EmphasisMark` vlastnost, na kterou chcete nastavit styl zvýraznění písma`EmphasisMark.UnderSolidCircle` . Poté použijte`Write`a`Writeln` metody`DocumentBuilder` pro přidání textu se zadaným zvýrazněním písma.
+## Importovat jmenné prostory
+
+Chcete-li pracovat s Aspose.Words pro .NET, budete muset importovat potřebné jmenné prostory. Přidejte tyto v horní části souboru kódu:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 3: Uložte dokument
- Uložte dokument pomocí`Save` metoda`Document` s příslušnou cestou a názvem souboru.
+Nyní si celý proces rozdělíme do jednoduchých kroků. Pečlivě proveďte každý krok a nastavte značky zvýraznění písma v dokumentu aplikace Word.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Krok 1: Inicializujte Document a DocumentBuilder
 
-### Ukázkový zdrojový kód pro Set Font Emphas Mark pomocí Aspose.Words for .NET 
+Nejprve musíte inicializovat nový dokument a DocumentBuilder. Třída DocumentBuilder poskytuje metody pro vkládání textu a dalších prvků do dokumentu.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Inicializujte nový dokument
 Document document = new Document();
+
+// Inicializujte DocumentBuilder s dokumentem
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Krok 2: Nastavte značku zvýraznění písma
+
+S připraveným DocumentBuilderem můžete nyní nastavit značku zvýraznění písma. V tomto příkladu použijeme zvýrazněnou značku "UnderSolidCircle".
+
+```csharp
+// Nastavte značku zvýraznění písma
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Napište text se značkou důrazu
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Krok 3: Vymažte formátování a přidejte běžný text
+
+Po nastavení značky zvýraznění možná budete chtít přidat nějaký běžný text bez jakéhokoli zvýraznění. K tomu je potřeba vymazat formátování.
+
+```csharp
+// Vymažte formátování písma
 builder.Font.ClearFormatting();
+
+// Napište běžný text
 builder.Write("Simple text");
+```
+
+## Krok 4: Uložte dokument
+
+Po přidání veškerého textu a formátování, které potřebujete, je posledním krokem uložení dokumentu. Zadejte cestu a název souboru, kam chcete dokument uložit.
+
+```csharp
+// Uložte dokument
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Závěr
-V tomto kurzu jste se naučili, jak nastavit styl zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words for .NET. Experimentujte s různými styly důrazu a použijte tuto funkci ke zvýraznění slov nebo frází v dokumentech.
 
-### FAQ
+tady to máte! Nastavení značek zvýraznění písma v dokumentu aplikace Word pomocí Aspose.Words pro .NET je tak jednoduché. Pomocí několika řádků kódu můžete nechat svůj text vyniknout a dodat dokumentům profesionální vzhled. Neváhejte experimentovat s různými zdůrazňovacími značkami a styly, aby vyhovovaly vašim potřebám.
 
-#### Otázka: Jak mohu přidat akcenty do konkrétního písma v dokumentu aplikace Word pomocí Aspose.Words?
+## FAQ
 
-A: Chcete-li přidat akcenty do konkrétního písma v dokumentu aplikace Word pomocí Aspose.Words, můžete použít API k navigaci k požadovanému fontu a použití příslušných akcentů. Tím se do textu s vybraným písmem přidají akcenty.
+### Co jsou značky zvýraznění písma?
 
-#### Otázka: Je možné pomocí Aspose.Words změnit styl diakritických znamének v dokumentu aplikace Word?
+Značky zvýraznění písma jsou speciální symboly přidané do textu, aby vynikl. Mohou obsahovat tečky, kolečka a další dekorativní značky.
 
-Odpověď: Ano, pomocí Aspose.Words můžete změnit styl diakritických znamének v dokumentu aplikace Word. Rozhraní API umožňuje upravit vlastnosti stylu, jako je barva, velikost, typ čáry atd., a přizpůsobit tak vzhled akcentů.
+### Mohu s Aspose.Words pro .NET používat jiné zvýrazněné značky?
 
-#### Otázka: Jak mohu odstranit všechna diakritická znaménka z dokumentu aplikace Word pomocí Aspose.Words?
+ Ano, Aspose.Words for .NET podporuje různé značky důrazu. Různé možnosti můžete prozkoumat odkazem na[dokumentace](https://reference.aspose.com/words/net/).
 
-Odpověď: Chcete-li odstranit všechna diakritická znaménka z dokumentu aplikace Word pomocí Aspose.Words, můžete použít API k procházení dokumentu, zjištění existujících akcentů a jejich odstranění pomocí vhodných metod. Tím se z dokumentu odstraní všechny značky důrazu.
+### Je Aspose.Words for .NET zdarma k použití?
 
-#### Otázka: Mohu přidat diakritická znaménka do určité části textu v dokumentu aplikace Word?
+ Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
-Odpověď: Ano, pomocí Aspose.Words můžete do určité části textu v dokumentu aplikace Word přidat diakritická znaménka. Pomocí rozhraní API můžete vybrat požadovaný rozsah textu a do této části textu přidat vhodné značky zvýraznění.
+### Jak mohu získat podporu pro Aspose.Words pro .NET?
 
-#### Otázka: Mohou být akcenty přizpůsobeny mým potřebám?
+ Můžete získat podporu od komunity Aspose a týmu podpory tím, že navštívíte jejich[fórum podpory](https://forum.aspose.com/c/words/8).
 
-Odpověď: Ano, akcenty lze upravit podle vašich potřeb pomocí Aspose.Words. Vlastnosti stylu akcentních značek, jako je barva, velikost, typ čáry a další, můžete upravit tak, aby odpovídaly vašim předvolbám formátování.
+### Mohu používat Aspose.Words pro .NET s jinými frameworky .NET?
+
+Ano, Aspose.Words for .NET je kompatibilní s různými .NET frameworky, včetně .NET Core a .NET 5/6.

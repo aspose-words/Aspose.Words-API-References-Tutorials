@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 
 ## Conclusion
 
-Et voila! Vous avez réussi à transformer les champs IF en texte brut à l'aide d'Aspose.Words pour .NET. C'est comme transformer des sorts complexes en sorts simples, ce qui rend la gestion de vos documents beaucoup plus facile. Ainsi, la prochaine fois que vous rencontrerez un fouillis de champs, vous saurez exactement quoi faire. Bon codage !
+Et voilà ! Vous avez réussi à transformer les champs IF en texte brut à l'aide d'Aspose.Words pour .NET. C'est comme transformer des sorts complexes en sorts simples, ce qui rend la gestion de vos documents beaucoup plus facile. Ainsi, la prochaine fois que vous rencontrerez un fouillis de champs, vous saurez exactement quoi faire. Bon codage !
 
 ## FAQ
 

@@ -89,7 +89,7 @@ footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE
 
 ## Olika sidhuvuden och sidfötter för udda och jämna sidor
 
-Att skapa olika sidhuvuden och sidfötter för udda och jämna sidor kan ge dina dokument en professionell touch. Här är hur:
+Att skapa olika sidhuvuden och sidfötter för udda och jämna sidor kan ge dina dokument en professionell touch. Så här gör du:
 
 1. Ställa in udda och jämna sidlayout: Definiera layouten för att tillåta olika sidhuvuden och sidfötter för udda och jämna sidor.
 
@@ -132,9 +132,9 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ## Vanliga frågor
 
-### Hur kommer jag åt sidhuvud och sidfotsinnehåll?
+### Hur får jag åtkomst till sidhuvud och sidfotsinnehåll?
 
- För att komma åt sidhuvud och sidfotsinnehåll, använd`headers_footers` egendom för dokumentets avsnitt.
+ För att komma åt sidhuvud och sidfotsinnehåll, använd`headers_footers` egendom för dokumentets avdelning.
 
 ### Kan jag lägga till bilder i sidhuvuden och sidfötter?
 

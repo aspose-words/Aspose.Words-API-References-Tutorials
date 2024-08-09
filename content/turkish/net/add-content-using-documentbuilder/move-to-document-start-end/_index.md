@@ -9,7 +9,7 @@ url: /tr/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## giriiş
 
-Selam! Yani, Word belgeleriyle çalışıyorsunuz ve program aracılığıyla belgenizin başına veya sonuna hızlı bir şekilde atlamanın bir yoluna ihtiyacınız var, öyle mi? Peki, doğru yerdesiniz! Bu kılavuzda, Aspose.Words for .NET kullanarak imleci bir Word belgesinin başına veya sonuna nasıl taşıyacağımızı ayrıntılı olarak inceliyoruz. İnanın bana, bunun sonunda belgelerinizde bir profesyonel gibi gezineceksiniz. Başlayalım!
+Selam! Yani, Word belgeleriyle çalışıyorsunuz ve program aracılığıyla belgenizin başına veya sonuna hızlı bir şekilde atlamanın bir yoluna ihtiyacınız var, öyle mi? Peki, doğru yerdesiniz! Bu kılavuzda, Aspose.Words for .NET kullanarak imleci bir Word belgesinin başına veya sonuna nasıl taşıyacağımızı ayrıntılı olarak inceliyoruz. İnanın bana, bunun sonunda belgelerinizde bir profesyonel gibi gezineceksiniz. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -63,11 +63,11 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` Daha fazla içerik eklemeniz için imleci en sona yerleştirir. Basit!
+`MoveToDocumentEnd()` Daha fazla içerik eklemeniz için imleci en sona yerleştirir. Kolay gelsin!
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'te bir belgenin başına ve sonuna gitmek, nasıl yapılacağını öğrendikten sonra çocuk oyuncağıdır. Bu basit ama güçlü özellik, özellikle büyük belgelerle çalışırken size çok fazla zaman kazandırabilir. Yani bir dahaki sefere belgenizin etrafından dolaşmak zorunda kaldığınızda ne yapmanız gerektiğini tam olarak biliyorsunuz!
+Ve işte karşınızda! Aspose.Words for .NET'te bir belgenin başına ve sonuna gitmek, nasıl yapılacağını öğrendikten sonra çocuk oyuncağıdır. Bu basit ama güçlü özellik, özellikle büyük belgelerle çalışırken size çok fazla zaman kazandırabilir. Yani bir dahaki sefere belgenizin etrafından dolaşmak zorunda kaldığınızda ne yapmanız gerektiğini tam olarak biliyorsunuz!
 
 ## SSS'ler
 
@@ -84,4 +84,4 @@ Kesinlikle! Bu kılavuz C# kullanıyor olsa da Aspose.Words for .NET'i VB.NET gi
 Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core'u destekler.
 
 ### Aspose.Words for .NET hakkında daha fazla eğitimi nerede bulabilirim?  
-Şunu kontrol edebilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/) veya onları ziyaret edin[destek Forumu](https://forum.aspose.com/c/words/8) daha fazla yardım için.
+Şunu kontrol edebilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/) veya onları ziyaret edin[destek forumu](https://forum.aspose.com/c/words/8) daha fazla yardım için.

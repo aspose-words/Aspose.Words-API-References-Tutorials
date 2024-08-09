@@ -100,4 +100,4 @@ Anda dapat menggunakan blok coba-tangkap untuk menangani pengecualian yang mungk
 Ya, metode yang ditampilkan di sini secara khusus hanya menargetkan bidang dan tidak mengubah konten lainnya.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk Aspose.Words?
- Mengunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/) dan itu[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8) untuk bantuan selanjutnya.
+ Kunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/) dan itu[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8) untuk bantuan lebih lanjut.

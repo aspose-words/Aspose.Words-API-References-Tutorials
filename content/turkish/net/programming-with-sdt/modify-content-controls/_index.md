@@ -75,7 +75,7 @@ if (sdt.SdtType == SdtType.PlainText)
 
 ## 4. Adım: Açılır Liste SDT'lerini değiştirin
 
- Açılır liste SDT'leri için, seçilen öğeyi şuraya erişerek değiştirebilirsiniz:`ListItems` Toplamak. Burada listedeki üçüncü öğeyi seçiyoruz.
+ Açılır liste SDT'leri için, seçilen öğeyi şuraya erişerek değiştirebilirsiniz:`ListItems` koleksiyon. Burada listedeki üçüncü öğeyi seçiyoruz.
 
 ```csharp
 if (sdt.SdtType == SdtType.DropDownList)
@@ -134,7 +134,7 @@ Evet, belgenin düğümlerine erişip istediğiniz SDT'yi silerek SDT'leri kald�
 
 4. Diğer öğelerin içine yerleştirilmiş SDT'leri nasıl işleyebilirim?
 
- Kullan`GetChildNodes` iç içe SDT'lere erişmek için uygun parametrelere sahip yöntem.
+ Kullanın`GetChildNodes` iç içe SDT'lere erişmek için uygun parametrelere sahip yöntem.
 
 5. Değiştirmem gereken SDT belgede görünmüyorsa ne yapmalıyım?
 
@@ -181,4 +181,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Word belgenizdeki farklı içerik kontrol türlerini başarıyla değiştirdiniz.
+İşte bu! Aspose.Words for .NET'i kullanarak Word belgenizdeki farklı içerik kontrol türlerini başarıyla değiştirdiniz.

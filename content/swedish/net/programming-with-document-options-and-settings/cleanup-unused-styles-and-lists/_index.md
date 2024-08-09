@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin känt att dina Word-dokument blir lite röriga? Du vet, de där oanvända stilarna och listorna som bara sitter där, tar upp plats och får ditt dokument att se mer komplext ut än det behöver vara? Nåväl, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET för att rensa bort dessa oanvända stilar och listor. Det är som att ge ditt dokument ett skönt, uppfriskande bad. Så ta ditt kaffe, luta dig tillbaka och låt oss börja!
+Hej där! Har du någonsin känt att dina Word-dokument blir lite röriga? Du vet, de där oanvända stilarna och listorna som bara sitter där, tar upp plats och får ditt dokument att se mer komplext ut än det behöver vara? Nåväl, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET för att rensa bort dessa oanvända stilar och listor. Det är som att ge ditt dokument ett skönt, uppfriskande bad. Så ta ditt kaffe, luta dig tillbaka och låt oss börja!
 
 ## Förutsättningar
 
@@ -93,7 +93,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter dig skapa, ändra
 Ja, du kan ställa in båda`UnusedLists`och`UnusedStyles` till`true` i`CleanupOptions` att ta bort båda.
 
 ### Är det möjligt att ångra rensningen?
-Nej, när rensningen är klar och dokumentet har sparats kan du inte ångra ändringarna. Spara alltid en säkerhetskopia av ditt originaldokument.
+Nej, när rensningen är klar och dokumentet har sparats kan du inte ångra ändringarna. Håll alltid en säkerhetskopia av ditt originaldokument.
 
 ### Behöver jag en licens för Aspose.Words för .NET?
  Ja, Aspose.Words för .NET kräver en licens för full funktionalitet. Du kan få en[tillfällig licens](https://purchase.aspose.com/temporary-license) eller[köp en](https://purchase.aspose.com/buy).

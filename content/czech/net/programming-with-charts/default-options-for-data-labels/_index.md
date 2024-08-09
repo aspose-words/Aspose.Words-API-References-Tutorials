@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/default-options-for-data-labels/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Rádi se ponoříte do světa automatizace dokumentů? Dnes se podíváme na to, jak používat Aspose.Words pro .NET k vytváření úžasných dokumentů programově. Aspose.Words je výkonná knihovna, která vám umožňuje snadno manipulovat s dokumenty Wordu, a v tomto tutoriálu se zaměříme na nastavení výchozích možností pro popisky dat v grafu. Ať už jste ostřílený vývojář nebo nováček, tento průvodce vás provede každým krokem, abyste mohli okamžitě začít pracovat.
+Ahoj! Rádi se ponoříte do světa automatizace dokumentů? Dnes se podíváme na to, jak používat Aspose.Words pro .NET k vytváření úžasných dokumentů programově. Aspose.Words je výkonná knihovna, která vám umožňuje snadno manipulovat s dokumenty Wordu, a v tomto tutoriálu se zaměříme na nastavení výchozích možností pro popisky dat v grafu. Ať už jste ostřílený vývojář nebo nováček, tento průvodce vás provede každým krokem, abyste mohli okamžitě začít pracovat.
 
 ## Předpoklady
 
@@ -19,7 +19,7 @@ Než začneme, ujistíme se, že spolu s tímto návodem máte vše, co potřebu
 -  Aspose.Words pro .NET: Můžete[stáhnout nejnovější verzi](https://releases.aspose.com/words/net/) a nainstalujte jej do svého projektu.
 - Základní znalost programování v C#: I když je tato příručka vhodná pro začátečníky, trocha znalosti C# vám pomůže.
 - Nainstalované rozhraní .NET Framework: Ujistěte se, že máte na počítači nastaveno rozhraní .NET Framework.
--  Dočasná licence pro Aspose.Words: Získejte jednu[tady](https://purchase.aspose.com/temporary-license/) pro odemknutí plné funkčnosti.
+-  Dočasná licence pro Aspose.Words: Získejte jednu[zde](https://purchase.aspose.com/temporary-license/) pro odemknutí plné funkčnosti.
 
 Jakmile máte tyto předpoklady vyřešené, jsme připraveni začít!
 
@@ -135,7 +135,7 @@ Aspose.Words můžete používat zdarma s a[dočasná licence](https://purchase.
  Podporu můžete získat prostřednictvím[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Mohu přidat další typy grafů?
- Ano, Aspose.Words podporuje různé typy grafů, jako jsou pruhové, spojnicové a sloupcové grafy. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Ano, Aspose.Words podporuje různé typy grafů, jako jsou pruhové, spojnicové a sloupcové grafy. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
  Ano, Aspose.Words je kompatibilní s .NET Core. Více informací najdete v[dokumentace](https://reference.aspose.com/words/net/).

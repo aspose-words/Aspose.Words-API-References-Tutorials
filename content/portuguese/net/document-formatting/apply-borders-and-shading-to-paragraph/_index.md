@@ -113,7 +113,7 @@ E aí está! Com apenas algumas linhas de código, transformamos um parágrafo s
  Absolutamente! Aspose.Words for .NET permite personalizar cada borda individualmente. Basta definir o`LineStyle` para cada tipo de borda, conforme mostrado no guia.
 
 ### Que outras texturas de sombreamento estão disponíveis?  
- Existem várias texturas que você pode usar, como sólida, listra horizontal, listra vertical e muito mais. Verifica a[Aspor documentação](https://reference.aspose.com/words/net/) para obter uma lista completa.
+ Existem várias texturas que você pode usar, como sólida, listra horizontal, listra vertical e muito mais. Verifique o[Aspor documentação](https://reference.aspose.com/words/net/) para obter uma lista completa.
 
 ### Como posso alterar a cor da borda?  
  Você pode definir a cor da borda usando o`Color` propriedade para cada fronteira. Por exemplo,`borders[BorderType.Left].Color = Color.Red;`.

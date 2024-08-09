@@ -113,7 +113,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### Hur kommer jag igång med Aspose.Words för .NET?
 
- Du kan komma igång genom att ladda ner biblioteket från[hemsida](https://releases.aspose.com/words/net/) och lägga till det i ditt .NET-projekt.
+ Du kan komma igång genom att ladda ner biblioteket från[webbplats](https://releases.aspose.com/words/net/) och lägga till det i ditt .NET-projekt.
 
 ### Kan jag använda Aspose.Words gratis?
 

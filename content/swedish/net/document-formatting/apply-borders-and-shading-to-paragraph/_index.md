@@ -9,7 +9,7 @@ url: /sv/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Introduktion
 
-Hej, har du någonsin undrat hur du får dina Word-dokument att dyka upp med några snygga kanter och skuggningar? Tja, du är på rätt plats! Idag dyker vi in i Aspose.Words för .NET-världen för att förstärka våra stycken. Föreställ dig att ditt dokument ser lika elegant ut som en professionell designers arbete med bara några rader kod. Redo att komma igång? Nu går vi!
+Hej, har du någonsin undrat hur du får dina Word-dokument att dyka upp med några snygga kanter och skuggningar? Nåväl, du är på rätt plats! Idag dyker vi in i Aspose.Words för .NET-världen för att förstärka våra stycken. Föreställ dig att ditt dokument ser lika elegant ut som en professionell designers arbete med bara några rader kod. Redo att börja? Låt oss gå!
 
 ## Förutsättningar
 
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Låt oss nu dela upp processen i små steg. Varje steg kommer att ha en rubrik och en detaljerad förklaring. Redo? Nu går vi!
+Låt oss nu dela upp processen i små steg. Varje steg kommer att ha en rubrik och en detaljerad förklaring. Redo? Låt oss gå!
 
 ## Steg 1: Konfigurera din dokumentkatalog
 
@@ -42,7 +42,7 @@ Först och främst behöver vi en plats för att spara vårt vackert formaterade
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Den här katalogen är där ditt slutliga dokument kommer att sparas. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen på din maskin.
+ Den här katalogen är där ditt slutliga dokument kommer att sparas. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen på din maskin.
 
 ## Steg 2: Skapa ett nytt dokument och DocumentBuilder
 
@@ -113,7 +113,7 @@ Och där har du det! Med bara några rader kod har vi förvandlat ett enkelt sty
  Absolut! Aspose.Words för .NET låter dig anpassa varje kant individuellt. Ställ bara in`LineStyle` för varje kanttyp som visas i guiden.
 
 ### Vilka andra skuggningstexturer finns tillgängliga?  
- Det finns flera texturer du kan använda, till exempel solid, horisontell rand, vertikal rand och mer. Kolla[Aspose dokumentation](https://reference.aspose.com/words/net/) för en fullständig lista.
+ Det finns flera texturer du kan använda, till exempel solid, horisontell rand, vertikal rand och mer. Kontrollera[Aspose dokumentation](https://reference.aspose.com/words/net/) för en fullständig lista.
 
 ### Hur kan jag ändra kantfärgen?  
  Du kan ställa in kantfärgen med hjälp av`Color` egendom för varje gräns. Till exempel,`borders[BorderType.Left].Color = Color.Red;`.

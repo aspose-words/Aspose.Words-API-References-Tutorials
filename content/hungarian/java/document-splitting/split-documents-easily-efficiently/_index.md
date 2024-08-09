@@ -10,7 +10,7 @@ url: /hu/java/document-splitting/split-documents-easily-efficiently/
 
 Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan lehet egyszerűen és hatékonyan felosztani dokumentumokat az Aspose.Words for Java használatával. Az Aspose.Words for Java egy hatékony szövegszerkesztő és dokumentumfeldolgozó könyvtár, amely lehetővé teszi a fejlesztők számára, hogy programozottan dolgozzanak Word-dokumentumokkal, és a funkciók széles skáláját kínálja a dokumentumok zökkenőmentes manipulálásához és kezeléséhez.
 
-## 1. Bemutatkozás
+## 1. Bevezetés
 
 Az Aspose.Words for Java egy Java API, amellyel a fejlesztők könnyedén hozhatnak létre, módosíthatnak, konvertálhatnak és feloszthatnak Word dokumentumokat. Ebben a cikkben az Aspose.Words dokumentumfelosztási funkciójára fogunk összpontosítani, amely rendkívül hasznos nagyméretű dokumentumok kezelésekor, amelyeket kisebb, jobban kezelhető részekre kell bontani.
 
@@ -114,7 +114,7 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 
 ### 8.1 Egyedi szakaszok felosztása külön dokumentumokra
 
-Bizonyos esetekben előfordulhat, hogy csak bizonyos szakaszokat szeretne külön dokumentumokra felosztani. Az Aspose.Words for Java lehetővé teszi, hogy egyéni feltételeket határozzon meg a felosztandó szakaszok meghatározásához.
+Bizonyos esetekben előfordulhat, hogy csak bizonyos szakaszokat kíván külön dokumentumokra felosztani. Az Aspose.Words for Java lehetővé teszi, hogy egyéni feltételeket határozzon meg a felosztandó szakaszok meghatározásához.
 
 ## 8.2 Dokumentumok felosztása egyéni kritériumok alapján
 

@@ -2,83 +2,105 @@
 title: Establecer marca de énfasis de fuente
 linktitle: Establecer marca de énfasis de fuente
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a configurar el estilo de énfasis de fuente en un documento de Word usando Aspose.Words para .NET.
+description: Aprenda a configurar marcas de énfasis de fuente en documentos de Word usando Aspose.Words para .NET con esta guía detallada paso a paso. Perfecto para desarrolladores .NET.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Introducción
 
-En este tutorial, le mostraremos cómo configurar el estilo de énfasis de fuente en un documento de Word usando Aspose.Words para .NET. El énfasis de fuente se utiliza para resaltar ciertas palabras o frases en el texto.
+En el tutorial de hoy, profundizaremos en cómo establecer marcas de énfasis de fuente en un documento de Word usando Aspose.Words para .NET. Ya sea que esté buscando subrayar un texto específico con una marca única o simplemente resaltar ciertas palabras, esta guía lo tiene cubierto. Así que ¡abróchate el cinturón y comencemos!
 
 ## Requisitos previos
-Antes de comenzar, asegúrese de tener los siguientes elementos:
-- Un conocimiento práctico del lenguaje de programación C#.
-- La biblioteca Aspose.Words para .NET instalada en su proyecto
 
-## Paso 1: definir el directorio de documentos
-Comience configurando la ruta del directorio a la ubicación de su documento de Word. Reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta apropiada.
+Antes de profundizar en los detalles esenciales, asegúrese de tener marcados los siguientes requisitos previos:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Biblioteca Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+- Entorno de desarrollo: un entorno de desarrollo de trabajo como Visual Studio.
+- .NET Framework: asegúrese de tener .NET Framework instalado.
 
-## Paso 2: Crea y personaliza el documento
- Crear una instancia del`Document` clase y un asociado`DocumentBuilder` para construir el contenido del documento. Utilizar el`Font.EmphasisMark` propiedad para establecer el estilo de énfasis de fuente en`EmphasisMark.UnderSolidCircle` . Luego usa el`Write`y`Writeln` métodos de la`DocumentBuilder` para agregar texto con el énfasis de fuente especificado.
+## Importar espacios de nombres
+
+Para trabajar con Aspose.Words para .NET, deberá importar los espacios de nombres necesarios. Agregue estos en la parte superior de su archivo de código:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Paso 3: guarde el documento
- Guarde el documento usando el`Save` método de la`Document` con la ruta y el nombre de archivo apropiados.
+Ahora, dividamos el proceso en pasos simples. Siga cada paso cuidadosamente para establecer marcas de énfasis en la fuente en su documento de Word.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Paso 1: Inicializar documento y DocumentBuilder
 
-### Código fuente de muestra para establecer marca de énfasis de fuente usando Aspose.Words para .NET 
+Lo primero es lo primero: debe inicializar un nuevo documento y un DocumentBuilder. La clase DocumentBuilder proporciona métodos para insertar texto y otros elementos en el documento.
 
 ```csharp
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Inicializar un nuevo documento
 Document document = new Document();
+
+// Inicialice DocumentBuilder con el documento
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Paso 2: Establecer la marca de énfasis de fuente
+
+Con DocumentBuilder listo, ahora puede configurar la marca de énfasis de la fuente. En este ejemplo, usaremos la marca de énfasis "UnderSolidCircle".
+
+```csharp
+// Establecer la marca de énfasis de la fuente
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Escribir texto con la marca de énfasis.
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Paso 3: borre el formato y agregue texto normal
+
+Después de configurar la marca de énfasis, es posible que desees agregar texto normal sin ningún énfasis. Para eso, debe borrar el formato.
+
+```csharp
+// Borrar el formato de fuente
 builder.Font.ClearFormatting();
+
+// Escribir texto normal
 builder.Write("Simple text");
+```
+
+## Paso 4: guarde el documento
+
+Una vez que haya agregado todo el texto y el formato que necesita, el último paso es guardar el documento. Especifique la ruta y el nombre del archivo donde desea guardar su documento.
+
+```csharp
+// guardar el documento
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Conclusión
-En este tutorial, aprendió cómo configurar el estilo de énfasis de fuente en un documento de Word usando Aspose.Words para .NET. Experimente con diferentes estilos de énfasis y utilice esta función para resaltar palabras o frases en sus documentos.
 
-### Preguntas frecuentes
+¡Y ahí lo tienes! Configurar marcas de énfasis de fuente en un documento de Word usando Aspose.Words para .NET es tan simple como eso. Con solo unas pocas líneas de código, puedes hacer que tu texto destaque y agregar un toque profesional a tus documentos. No dude en experimentar con diferentes marcas de énfasis y estilos que se adapten a sus necesidades.
 
-#### P: ¿Cómo puedo agregar acentos a una fuente específica en un documento de Word usando Aspose.Words?
+## Preguntas frecuentes
 
-R: Para agregar acentos a una fuente específica en un documento de Word usando Aspose.Words, puede usar la API para navegar hasta la fuente deseada y aplicar los acentos apropiados. Esto agregará acentos al texto con la fuente seleccionada.
+### ¿Qué son las marcas de énfasis de fuente?
 
-#### P: ¿Es posible cambiar el estilo de los acentos en un documento de Word con Aspose.Words?
+Las marcas de énfasis de fuente son símbolos especiales que se agregan al texto para resaltarlo. Pueden incluir puntos, círculos y otras marcas decorativas.
 
-R: Sí, con Aspose.Words puedes cambiar el estilo de los acentos en un documento de Word. La API le permite ajustar propiedades de estilo como color, tamaño, tipo de línea, etc., para personalizar la apariencia de las marcas de acento.
+### ¿Puedo utilizar otras marcas de énfasis con Aspose.Words para .NET?
 
-#### P: ¿Cómo puedo eliminar todos los acentos de un documento de Word usando Aspose.Words?
+ Sí, Aspose.Words para .NET admite varias marcas de énfasis. Puede explorar diferentes opciones consultando la[documentación](https://reference.aspose.com/words/net/).
 
-R: Para eliminar todos los acentos de un documento de Word usando Aspose.Words, puede usar la API para explorar el documento, detectar los acentos existentes y eliminarlos usando los métodos apropiados. Esto eliminará todas las marcas de énfasis del documento.
+### ¿Aspose.Words para .NET es de uso gratuito?
 
-#### P: ¿Puedo agregar acentos a una parte específica del texto en un documento de Word?
+ Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes obtener una prueba gratuita[aquí](https://releases.aspose.com/) o comprar una licencia[aquí](https://purchase.aspose.com/buy).
 
-R: Sí, puedes agregar acentos a una parte específica del texto en un documento de Word usando Aspose.Words. Puede seleccionar el rango de texto deseado usando la API y agregar marcas de énfasis apropiadas a esa parte del texto.
+### ¿Cómo puedo obtener soporte para Aspose.Words para .NET?
 
-#### P: ¿Se pueden personalizar los acentos según mis necesidades?
+ Puede obtener soporte de la comunidad de Aspose y del equipo de soporte visitando su[foro de soporte](https://forum.aspose.com/c/words/8).
 
-R: Sí, las tildes se pueden personalizar según sus necesidades utilizando Aspose.Words. Puede ajustar las propiedades de estilo de las marcas de acento, como el color, el tamaño, el tipo de línea y más, para que coincidan con sus preferencias de formato.
+### ¿Puedo usar Aspose.Words para .NET con otros frameworks .NET?
+
+Sí, Aspose.Words para .NET es compatible con varios marcos .NET, incluidos .NET Core y .NET 5/6.

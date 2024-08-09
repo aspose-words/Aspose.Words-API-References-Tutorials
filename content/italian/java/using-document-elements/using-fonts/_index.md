@@ -10,7 +10,7 @@ url: /it/java/using-document-elements/using-fonts/
 
 Nel mondo dell'elaborazione dei documenti, Aspose.Words per Java si distingue come un potente strumento che consente agli sviluppatori di creare e manipolare facilmente documenti Word. Uno degli aspetti essenziali della formattazione del documento è lavorare con i caratteri e in questo tutorial passo passo esploreremo come utilizzare i caratteri in modo efficace in Aspose.Words per Java.
 
-## introduzione
+## Introduzione
 
 caratteri svolgono un ruolo cruciale nella progettazione e nella leggibilità dei documenti. Aspose.Words per Java fornisce un set completo di funzionalità per la formattazione dei caratteri, consentendo di controllare vari aspetti dell'aspetto del testo, come dimensione, stile, colore e altro.
 

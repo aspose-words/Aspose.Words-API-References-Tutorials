@@ -9,7 +9,7 @@ url: /fr/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 ## Introduction
 
-Avez-vous déjà essayé de manipuler des formes dans vos documents Word et vous êtes-vous déjà interrogé sur leurs dimensions précises ? Connaître les limites exactes des formes peut être crucial pour diverses tâches d'édition et de formatage de documents. Que vous créiez un rapport détaillé, une newsletter sophistiquée ou un dépliant sophistiqué, comprendre les dimensions de la forme garantit que votre conception sera parfaite. Dans ce guide, nous verrons comment obtenir les limites réelles des formes en points à l'aide d'Aspose.Words pour .NET. Prêt à rendre vos formes parfaites ? Commençons!
+Avez-vous déjà essayé de manipuler des formes dans vos documents Word et vous êtes-vous déjà interrogé sur leurs dimensions précises ? Connaître les limites exactes des formes peut être crucial pour diverses tâches d'édition et de formatage de documents. Que vous créiez un rapport détaillé, une newsletter sophistiquée ou un dépliant sophistiqué, comprendre les dimensions de la forme garantit que votre conception sera parfaite. Dans ce guide, nous verrons comment obtenir les limites réelles des formes en points à l'aide d'Aspose.Words pour .NET. Prêt à rendre vos formes parfaites ? Commençons !
 
 ## Conditions préalables
 
@@ -73,7 +73,7 @@ Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 
 ## Conclusion
 
-Et voila! Vous avez réussi à récupérer les limites réelles d'une forme en points à l'aide d'Aspose.Words pour .NET. Ces connaissances vous permettent de manipuler et de positionner les formes avec précision, garantissant ainsi que vos documents ressemblent exactement à ce que vous les imaginez. Que vous conceviez des mises en page complexes ou que vous ayez simplement besoin de modifier un élément, comprendre les limites de la forme change la donne.
+Et voilà ! Vous avez réussi à récupérer les limites réelles d'une forme en points à l'aide d'Aspose.Words pour .NET. Ces connaissances vous permettent de manipuler et de positionner les formes avec précision, garantissant ainsi que vos documents ressemblent exactement à ce que vous les imaginez. Que vous conceviez des mises en page complexes ou que vous ayez simplement besoin de modifier un élément, comprendre les limites de la forme change la donne.
 
 ## FAQ
 

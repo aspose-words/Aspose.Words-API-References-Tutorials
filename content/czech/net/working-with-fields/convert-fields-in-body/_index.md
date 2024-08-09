@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/convert-fields-in-body/
 ---
-## Úvod
+## Zavedení
 
 V oblasti vývoje .NET je dynamická správa obsahu dokumentů zásadní, často vyžaduje manipulaci s různými typy polí v dokumentech. Aspose.Words for .NET vyniká jako výkonná sada nástrojů pro vývojáře a nabízí robustní funkce pro efektivní zpracování polí dokumentů. Tato obsáhlá příručka se zaměřuje na to, jak převádět pole v těle dokumentu pomocí Aspose.Words for .NET, a poskytuje podrobné pokyny, které umožní vývojářům zlepšit automatizaci a správu dokumentů.
 
@@ -16,7 +16,7 @@ V oblasti vývoje .NET je dynamická správa obsahu dokumentů zásadní, často
 Než se pustíte do výukového programu o převodu polí v těle dokumentu pomocí Aspose.Words for .NET, ujistěte se, že máte následující předpoklady:
 
 - Visual Studio: Nainstalované a nakonfigurované pro vývoj .NET.
--  Aspose.Words for .NET: Staženo a odkazováno ve vašem projektu sady Visual Studio. Můžete jej získat z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Staženo a odkazováno ve vašem projektu sady Visual Studio. Můžete jej získat z[zde](https://releases.aspose.com/words/net/).
 - Základní znalost C#: Znalost programovacího jazyka C# pro pochopení a úpravu poskytnutých úryvků kódu.
 
 ## Importovat jmenné prostory
@@ -80,7 +80,7 @@ Aspose.Words podporuje různé typy polí jako DATE, PAGE, MERGEFIELD a další,
 Ano, Aspose.Words for .NET dokáže bez problémů převádět a manipulovat s poli napříč formáty jako DOCX, DOC, RTF a další.
 
 ### Kde najdu komplexní dokumentaci k Aspose.Words pro .NET?
- K dispozici je podrobná dokumentace a reference API[tady](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace a reference API[zde](https://reference.aspose.com/words/net/).
 
 ### Je k dispozici zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).

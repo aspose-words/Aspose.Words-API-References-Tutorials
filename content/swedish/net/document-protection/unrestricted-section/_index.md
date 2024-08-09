@@ -9,7 +9,7 @@ url: /sv/net/document-protection/unrestricted-section/
 ---
 ## Introduktion
 
-Hallå där! Är du redo att dyka in i Aspose.Words-världen för .NET? Idag tar vi oss an något superpraktiskt: hur man låser upp specifika avsnitt i ett Word-dokument samtidigt som andra delar skyddas. Om du någonsin har behövt skydda vissa delar av ditt dokument men lämnar andra öppna för redigering, är den här handledningen för dig. Låt oss börja!
+Hej där! Är du redo att dyka in i Aspose.Words-världen för .NET? Idag tar vi oss an något superpraktiskt: hur man låser upp specifika avsnitt i ett Word-dokument samtidigt som andra delar skyddas. Om du någonsin har behövt skydda vissa delar av ditt dokument men lämnar andra öppna för redigering, är den här handledningen för dig. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -18,7 +18,7 @@ Innan vi hoppar in i det roliga, se till att du har allt du behöver:
 -  Aspose.Words för .NET: Om du inte redan har gjort det kan du[ladda ner den här](https://releases.aspose.com/words/net/).
 - Visual Studio: Eller någon annan .NET-kompatibel IDE.
 - Grundläggande förståelse för C#: Lite bekantskap med C# hjälper dig att ta dig igenom den här handledningen.
--  Aspose-licens: Ta en[gratis provperiod](https://releases.aspose.com/) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) om du behöver det för att testa.
+-  Aspose-licens: Ta en[gratis provperiod](https://releases.aspose.com/) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) om du behöver den för att testa.
 
 ## Importera namnområden
 
@@ -42,7 +42,7 @@ Först och främst måste du ställa in sökvägen till din dokumentkatalog. Det
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara dina dokument. Detta är avgörande eftersom det säkerställer att dina filer lagras på rätt plats.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara dina dokument. Detta är avgörande eftersom det säkerställer att dina filer lagras på rätt plats.
 
 ### Skapa ett nytt dokument
 

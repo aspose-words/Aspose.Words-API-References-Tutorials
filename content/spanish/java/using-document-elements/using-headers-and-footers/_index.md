@@ -18,7 +18,7 @@ Aspose.Words es una potente API de Java que le permite crear, manipular y repres
 
 ## 2. Configurando su entorno Java
 
- Antes de comenzar a utilizar Aspose.Words, asegúrese de tener su entorno de desarrollo Java configurado correctamente. Puede encontrar las instrucciones de configuración necesarias en la página de documentación de Aspose.Words:[Aspose.Words Documentación Java](https://reference.aspose.com/words/java/).
+ Antes de comenzar a usar Aspose.Words, asegúrese de tener su entorno de desarrollo Java configurado correctamente. Puede encontrar las instrucciones de configuración necesarias en la página de documentación de Aspose.Words:[Aspose.Words Documentación Java](https://reference.aspose.com/words/java/).
 
 ## 3. Crear un nuevo documento
 
@@ -223,7 +223,7 @@ Sí, Aspose.Words brinda soporte para el desarrollo de Java. Asegúrese de tener
 Por supuesto, puedes personalizar las fuentes, la alineación y otros estilos para que tus encabezados y pies de página sean visualmente atractivos.
 
 ### 4. ¿Es posible tener encabezados diferentes para páginas pares e impares?
- Sí, puedes usar`PageSetup.OddAndEvenPagesHeaderFooter` para especificar diferentes encabezados para páginas pares e impares.
+ Si, puedes usar`PageSetup.OddAndEvenPagesHeaderFooter` para especificar diferentes encabezados para páginas pares e impares.
 
 ### 5. ¿Cómo empiezo a utilizar Aspose.Words para Java?
  Para comenzar, visite el[Aspose.Words Documentación Java](https://reference.aspose.com/words/java/) para obtener orientación completa sobre el uso de la API.

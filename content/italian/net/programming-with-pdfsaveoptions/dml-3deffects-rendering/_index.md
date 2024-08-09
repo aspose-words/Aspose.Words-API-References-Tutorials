@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/dml-3deffects-rendering/
 ---
-## introduzione
+## Introduzione
 
 Hai mai desiderato creare straordinari documenti PDF con effetti 3D dai tuoi file Word? Bene, sei fortunato! Oggi approfondiremo come eseguire il rendering degli effetti 3D DrawingML (DML) nei documenti PDF utilizzando Aspose.Words per .NET. Aspose.Words è una potente libreria che ti consente di manipolare i documenti Word in modo programmatico e, con le sue robuste funzionalità, puoi facilmente esportare i tuoi documenti con effetti 3D avanzati in formato PDF. Questa guida passo passo ti guiderà attraverso tutto ciò che devi sapere, dalla configurazione del tuo ambiente all'esecuzione del codice. Quindi, cominciamo e rendiamo i tuoi documenti risaltanti con effetti 3D!
 
@@ -66,7 +66,7 @@ Infine, salviamo il documento come PDF utilizzando le opzioni di salvataggio spe
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);
 ```
 
- Noi usiamo il`Save` metodo del`Document` classe per salvare il documento Word come PDF. Le opzioni di salvataggio che abbiamo configurato in precedenza vengono passate come parametro per garantire che gli effetti 3D vengano renderizzati correttamente.
+ Usiamo il`Save` metodo del`Document` classe per salvare il documento Word come PDF. Le opzioni di salvataggio che abbiamo configurato in precedenza vengono passate come parametro per garantire che gli effetti 3D vengano renderizzati correttamente.
 
 ## Conclusione
 

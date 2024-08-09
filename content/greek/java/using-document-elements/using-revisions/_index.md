@@ -135,7 +135,7 @@ doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ### 4. Υπάρχουν απαιτήσεις αδειοδότησης για τη χρήση του Aspose.Words για Java;
 
- Ναι, θα πρέπει να αποκτήσετε άδεια χρήσης για να χρησιμοποιήσετε το Aspose.Words για Java στα έργα σας. Μπορείς[αποκτήστε πρόσβαση σε άδεια εδώ](https://purchase.aspose.com/buy).
+ Ναι, θα πρέπει να αποκτήσετε άδεια χρήσης για να χρησιμοποιήσετε το Aspose.Words για Java στα έργα σας. Μπορείτε[αποκτήστε πρόσβαση σε άδεια εδώ](https://purchase.aspose.com/buy).
 
 ### 5. Πού μπορώ να βρω υποστήριξη για το Aspose.Words για Java;
 

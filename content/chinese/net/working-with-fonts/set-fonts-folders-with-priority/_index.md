@@ -2,79 +2,91 @@
 title: 设置字体文件夹优先级
 linktitle: 设置字体文件夹优先级
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 呈现文档时优先设置字体文件夹的分步指南。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置优先字体文件夹。我们的指南可确保您的文档每次都能完美呈现。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## 介绍
 
-在本教程中，我们将引导您逐步完成使用 Aspose.Words for .NET 渲染文档时设置具有优先级的字体文件夹的过程。我们将解释捆绑的 C# 源代码并为您提供全面的指南，以帮助您理解并在自己的项目中实现此功能。在本教程结束时，您将了解如何在使用 Aspose.Words for .NET 渲染文档时指定具有自定义搜索优先级的多个字体文件夹。
+在文档处理领域，设置自定义字体文件夹可以大大提高文档的呈现效果，无论在何处查看。今天，我们将深入介绍如何使用 Aspose.Words for .NET 在 Word 文档中优先设置字体文件夹。本综合指南将引导您完成每个步骤，使流程尽可能顺利。
 
-## 步骤1：定义文档目录
-首先，您需要设置文档目录的路径。这是您要保存编辑后的渲染文档的位置。将“YOUR DOCUMENTS DIRECTORY”替换为适当的路径。
+## 先决条件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+在我们开始之前，让我们确保我们已经准备好了所有需要的东西。以下是一份快速检查清单：
 
-## 第 2 步：设置优先字体文件夹
-然后，您可以使用`FontSettings`类和`SetFontsSources()`方法。您可以使用以下实例指定多个字体源`SystemFontSource`和`FolderFontSource`在这个例子中，我们定义了两个字体源：默认的系统字体源和优先级为1的自定义字体文件夹。
+-  Aspose.Words for .NET：您需要安装此库。如果您还没有安装，您可以[点击下载](https://releases.aspose.com/words/net/).
+- 开发环境：确保您有一个可运行的 .NET 开发环境，例如 Visual Studio。
+- 文档目录：确保你有一个文档目录。在我们的示例中，我们将使用`"YOUR DOCUMENT DIRECTORY"`作为此路径的占位符。
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## 导入命名空间
 
-## 步骤 3：加载要渲染的文档
-现在，您可以使用`Document`类。请确保指定正确的文档路径。
+首先，我们需要导入必要的命名空间。这些命名空间对于访问 Aspose.Words 提供的类和方法至关重要。
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 步骤 4：保存渲染的文档
-最后，您可以使用`Save()`方法`Document`类。请确保指定正确的路径和文件名。
+现在，让我们分解优先设置字体文件夹的每个步骤。
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## 步骤 1：设置字体源
 
-### 使用 Aspose.Words for .NET 设置字体文件夹优先级的示例源代码 
+首先，您需要定义字体源。这是您告诉 Aspose.Words 在哪里查找字体的地方。您可以指定多个字体文件夹，甚至可以设置它们的优先级。
+
 ```csharp
 //文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+在此示例中，我们设置了两个字体源：
+- SystemFontSource：这是默认字体源，包含系统上安装的所有字体。
+-  FolderFontSource：这是一个自定义字体文件夹，位于`C:\\MyFonts\\`。 这`true`参数指定应递归扫描此文件夹，并且`1`设置其优先级。
+
+## 步骤 2：加载文档
+
+接下来，加载您要处理的文档。确保文档位于您指定的目录中。
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+这行代码加载一个名为`Rendering.docx`来自您的文档目录。
+
+## 步骤 3：使用新字体设置保存文档
+
+最后，保存您的文档。当您保存文档时，Aspose.Words 将使用您指定的字体设置。
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+这会将文档保存为 PDF 格式，保存在文档目录中，名称为`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 在渲染文档时设置字体文件夹的优先级。按照本分步指南，您可以在渲染文档时轻松指定具有自定义搜索优先级的多个字体文件夹。Aspose.Words 提供了强大而灵活的 API，用于处理文档中字体的文字。有了这些知识，您可以根据特定需求控制和自定义渲染文档时使用的字体源。
 
-### 常见问题解答
+就这样！您已成功使用 Aspose.Words for .NET 设置了具有优先级的字体文件夹。通过指定自定义字体文件夹和优先级，您可以确保您的文档无论在何处查看都能一致地呈现。这在默认情况下未安装特定字体的环境中尤其有用。
 
-#### 问：如何在 Aspose.Words 中设置优先字体文件夹？
+## 常见问题解答
 
-答：要在 Aspose.Words 中设置字体文件夹的优先级，您可以使用`SetFontsFoldersWithPriority`方法`Fonts`通过指定字体文件夹位置及其优先级顺序来分类。
+### 为什么我需要设置自定义字体文件夹？
+设置自定义字体文件夹可确保您的文档正确呈现，即使它们使用在查看的系统上未安装的字体。
 
-#### 问：如果一种字体存在于多个具有不同优先级的文件夹中，会发生什么情况？
+### 我可以设置多个自定义字体文件夹吗？
+是的，您可以指定多个字体文件夹。Aspose.Words 允许您设置每个文件夹的优先级，确保首先找到最重要的字体。
 
-答：如果字体存在于具有不同优先级的多个文件夹中，Aspose.Words 将在处理文档时使用优先级最高的文件夹中的版本。
+### 如果所有指定的来源都缺少某种字体，会发生什么情况？
+如果所有指定的源都缺少某种字体，Aspose.Words 将使用后备字体来确保文档仍然可读。
 
-#### 问：我可以在 Aspose.Words 中指定具有相同优先级的多个字体文件夹吗？
+### 我可以更改系统字体的优先级吗？
+默认情况下始终包含系统字体，但您可以相对于自定义字体文件夹设置它们优先级。
 
-答：是的，您可以在 Aspose.Words 中指定多个具有相同优先级的字体文件夹。Aspose.Words 在您的文档中搜索字体时会以相同的优先级考虑所有字体文件夹。
-
-#### 问：如何检查 Aspose.Words 中优先定义的字体文件夹？
-
-答：要检查 Aspose.Words 中优先定义的字体文件夹，您可以使用`GetFolders`方法`Fonts`类来获取配置的字体文件夹列表，包括它们的优先级顺序。
-
-#### 问：在Aspose.Words中设置字体文件夹优先有什么用？
-
-答：在 Aspose.Words 中设置字体文件夹的优先级，可以控制 Word 文档中字体的搜索顺序。这有助于确保使用所需的字体，并避免不必要的字体替换问题。
+### 是否可以对自定义字体文件夹使用网络路径？
+是的，您可以将网络路径指定为自定义字体文件夹，从而允许您将字体资源集中在网络位置上。

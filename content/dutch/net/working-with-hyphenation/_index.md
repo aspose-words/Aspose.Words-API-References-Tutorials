@@ -12,6 +12,6 @@ Woordenverwerking met woordafbreking is een uitgebreide hulpbron die u begeleidt
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Woorden van talen afbreken](./hyphenate-words-of-languages/) | Leer hoe u woorden in verschillende talen in Word-documenten kunt afbreken met Aspose.Words voor .NET. |
-| [Afbreekwoordenboek voor taal laden](./load-hyphenation-dictionary-for-language/) |Leer hoe u een woordafbrekingswoordenboek laadt voor een specifieke taal in Aspose.Words voor .NET. |
-| [Terugbellen bij woordafbreking](./hyphenation-callback/) | Leer hoe u callback voor woordafbreking kunt gebruiken in Aspose.Words voor .NET om woordafbreking af te handelen. |
+| [Woorden van talen afbreken](./hyphenate-words-of-languages/) | Leer hoe u woorden in verschillende talen kunt afbreken met Aspose.Words voor .NET. Volg deze gedetailleerde, stapsgewijze handleiding om de leesbaarheid van uw document te verbeteren. |
+| [Afbreekwoordenboek voor taal laden](./load-hyphenation-dictionary-for-language/) | Leer hoe u een woordafbrekingswoordenboek voor elke taal kunt laden met Aspose.Words voor .NET in deze uitgebreide, stapsgewijze zelfstudie. |
+| [Terugbellen bij woordafbreking](./hyphenation-callback/) | Leer hoe u callback voor afbreking implementeert in Aspose.Words voor .NET om de documentopmaak te verbeteren met deze uitgebreide stapsgewijze handleiding. |

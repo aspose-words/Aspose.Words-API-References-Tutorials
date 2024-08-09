@@ -39,14 +39,14 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Βήμα 2: Εισαγάγετε ένα πεδίο με κείμενο
 
- Χρησιμοποιήστε το`InsertField` μέθοδος για`DocumentBuilder` για να προσθέσετε ένα πεδίο που περιέχει κείμενο:
+ Χρησιμοποιήστε το`InsertField` μέθοδος του`DocumentBuilder` για να προσθέσετε ένα πεδίο που περιέχει κείμενο:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
 ## Βήμα 3: Αγνοήστε το κείμενο μέσα στα πεδία
 
- Για να χειριστείτε το κείμενο ενώ αγνοείτε περιεχόμενο εντός πεδίων, χρησιμοποιήστε το`FindReplaceOptions` με την`IgnoreFields` ιδιοκτησία ορίζεται σε`true`:
+ Για να χειριστείτε το κείμενο ενώ αγνοείτε περιεχόμενο εντός πεδίων, χρησιμοποιήστε το`FindReplaceOptions` με το`IgnoreFields` ιδιοκτησία ορίζεται σε`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
@@ -74,7 +74,7 @@ options.IgnoreFields = false;
 doc.Range.Replace(regex, "*", options);
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το σεμινάριο, εξερευνήσαμε τον τρόπο χειρισμού κειμένου μέσα σε πεδία σε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET. Αυτή η δυνατότητα είναι απαραίτητη για σενάρια όπου το περιεχόμενο πεδίου χρειάζεται ειδικό χειρισμό κατά την επεξεργασία εγγράφων μέσω προγραμματισμού.
 

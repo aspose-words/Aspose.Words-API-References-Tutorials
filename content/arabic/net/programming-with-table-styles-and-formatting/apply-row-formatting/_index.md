@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 2: بدء جدول جديد
 
- بعد ذلك، سنبدأ جدولًا جديدًا باستخدام`DocumentBuilder`هدف. هذا هو المكان الذي يحدث السحر.
+ بعد ذلك، سنبدأ جدولًا جديدًا باستخدام`DocumentBuilder`هدف. هذا هو المكان الذي يحدث فيه السحر.
 
 ```csharp
 Table table = builder.StartTable();
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 
 ## خاتمة
 
-وهناك لديك! لقد نجحت في تطبيق تنسيق الصف على جدول في مستند Word باستخدام Aspose.Words لـ .NET. يمكن لهذه التقنية البسيطة والقوية أن تعزز بشكل كبير سهولة قراءة مستنداتك وجمالياتها.
+وهنا لديك! لقد نجحت في تطبيق تنسيق الصف على جدول في مستند Word باستخدام Aspose.Words لـ .NET. يمكن لهذه التقنية البسيطة والقوية أن تعزز بشكل كبير سهولة قراءة مستنداتك وجمالياتها.
 
 ## الأسئلة الشائعة
 

@@ -77,7 +77,7 @@ Aspose.Words for .NET は、主に C# などの .NET 言語向けに設計され
 訪問することができます[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
 
 ### ファイルまたはストリームからライセンスを適用できますか?  
-はい、Aspose.Words for .NETでは、ファイルとストリームの両方からライセンスを適用できます。詳細については、[ドキュメンテーション](https://reference.aspose.com/words/net/).
+はい、Aspose.Words for .NETでは、ファイルとストリームの両方からライセンスを適用できます。詳細については、[ドキュメント](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET には他にどのような機能がありますか?  
- Aspose.Words for .NETは、ドキュメントの生成、操作、変換、レンダリングなど、幅広い機能を提供します。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+ Aspose.Words for .NETは、ドキュメントの生成、操作、変換、レンダリングなど、幅広い機能を提供します。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。

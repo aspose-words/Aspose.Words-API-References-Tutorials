@@ -17,7 +17,7 @@ Ei! Você já precisou trabalhar com SmartArt em documentos do Word de forma pro
 Antes de mergulharmos nos detalhes, vamos ter certeza de que você tem tudo configurado:
 
 1. Conhecimento básico de C#: você deve estar confortável com a sintaxe e os conceitos do C#.
-2.  Aspose.Words para .NET: Faça o download[aqui](https://releases.aspose.com/words/net/) . Se você está apenas explorando, você pode começar com um[teste grátis](https://releases.aspose.com/).
+2.  Aspose.Words para .NET: Faça o download[aqui](https://releases.aspose.com/words/net/) . Se você está apenas explorando, você pode começar com um[teste gratuito](https://releases.aspose.com/).
 3. Visual Studio: Qualquer versão recente deve funcionar, mas a versão mais recente é recomendada.
 4. .NET Framework: certifique-se de que esteja instalado em seu sistema.
 
@@ -90,7 +90,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 
 ### 2. Posso usar o Aspose.Words for .NET gratuitamente?
 
- Você pode tentar Aspose.Words for .NET usando um[teste grátis](https://releases.aspose.com/). Para uso de longo prazo, você precisará adquirir uma licença.
+ Você pode tentar Aspose.Words for .NET usando um[teste gratuito](https://releases.aspose.com/). Para uso de longo prazo, você precisará adquirir uma licença.
 
 ### 3. Como posso detectar outros tipos de formas em um documento?
 
@@ -102,4 +102,4 @@ Você pode obter suporte visitando o[Aspose fórum de suporte](https://forum.asp
 
 ### 5. Posso manipular formas SmartArt programaticamente?
 
- Sim, Aspose.Words permite manipular formas SmartArt programaticamente. Verifica a[documentação](https://reference.aspose.com/words/net/) para obter instruções detalhadas.
+ Sim, Aspose.Words permite manipular formas SmartArt programaticamente. Verifique o[documentação](https://reference.aspose.com/words/net/) para obter instruções detalhadas.

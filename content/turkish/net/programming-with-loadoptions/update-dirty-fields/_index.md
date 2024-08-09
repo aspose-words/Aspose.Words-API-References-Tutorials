@@ -33,7 +33,7 @@ Süreci yönetilebilir adımlara ayıralım. Yakından takip edin!
 
 ## 1. Adım: Projenizi Kurun
 
-Öncelikle .NET projenizi kurun ve Aspose.Words for .NET'i kurun. Henüz yüklemediyseniz NuGet Paket Yöneticisi aracılığıyla bunu yapabilirsiniz:
+Öncelikle .NET projenizi kurun ve Aspose.Words for .NET'i yükleyin. Henüz yüklemediyseniz NuGet Paket Yöneticisi aracılığıyla bunu yapabilirsiniz:
 
 ```bash
 Install-Package Aspose.Words
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki kirli alanları güncelleme işlemini otomatikleştirdiniz. Artık manuel güncelleme yok, baş ağrısı yok. Bu basit adımlarla zamandan tasarruf edebilir ve belgelerinizin doğruluğunu sağlayabilirsiniz. Denemeye hazır mısın?
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki kirli alanları güncelleme işlemini otomatikleştirdiniz. Artık manuel güncelleme yok, baş ağrısı yok. Bu basit adımlarla zamandan tasarruf edebilir ve belgelerinizin doğruluğunu sağlayabilirsiniz. Denemeye hazır mısın?
 
 ## SSS'ler
 
@@ -92,4 +92,4 @@ Evet, Aspose.Words belirli alanların güncellenmesi için esneklik sağlar, anc
 Evet, Aspose.Words, Word belgelerinin programlı olarak işlenmesi sürecini kolaylaştıran güçlü bir kütüphanedir.
 
 ### Aspose.Words hakkında daha fazla bilgiyi nerede bulabilirim?
- Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) ayrıntılı kılavuzlar ve örnekler için.
+ Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) ayrıntılı kılavuzlar ve örnekler için.

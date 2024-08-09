@@ -30,7 +30,7 @@ builder.endBookmark("My Bookmark");
 
 ## Étape 2 : accéder aux signets
 
-Vous pouvez accéder aux signets d'un document en utilisant leur index ou leur nom. Voici comment:
+Vous pouvez accéder aux signets d'un document en utilisant leur index ou leur nom. Voici comment procéder :
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 // Par indice :
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// De nom:
+// Par nom :
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 
@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## Étape 4 : Travailler avec du texte marqué d'un signet
 
-Vous pouvez copier le texte mis en signet et l'ajouter à un autre document. Voici comment:
+Vous pouvez copier le texte mis en signet et l'ajouter à un autre document. Voici comment procéder :
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");

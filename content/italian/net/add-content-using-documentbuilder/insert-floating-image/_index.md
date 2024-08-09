@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-floating-image/
 ---
-## introduzione
+## Introduzione
 
 Immagina di creare un report o una proposta straordinaria in cui le immagini sono perfettamente posizionate per completare il tuo testo. Con Aspose.Words per .NET, puoi raggiungere questo obiettivo senza sforzo. Questa libreria fornisce potenti funzionalità per la manipolazione dei documenti, rendendola una soluzione ideale per gli sviluppatori. In questo tutorial ci concentreremo sull'inserimento di un'immagine mobile utilizzando la classe DocumentBuilder. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida ti guiderà attraverso ogni passaggio.
 

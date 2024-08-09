@@ -9,7 +9,7 @@ url: /ko/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
 ## 소개
 
-안녕하세요, 기술 매니아 여러분! Word 문서의 디지털 서명에 액세스하고 확인해야 하지만 어디서부터 시작해야 할지 모르는 상황에 처한 적이 있습니까? 글쎄, 당신은 운이 좋다! 오늘 우리는 Word 문서를 쉽게 처리할 수 있게 해주는 강력한 라이브러리인 Aspose.Words for .NET의 놀라운 세계에 대해 알아봅니다. 프로세스를 단계별로 안내하므로 이 가이드가 끝나면 Word 문서에서 디지털 서명을 확인하는 전문가가 될 것입니다. 시작하자!
+안녕하세요, 기술 매니아 여러분! Word 문서의 디지털 서명에 액세스하고 확인해야 하지만 어디서부터 시작해야 할지 모르는 상황에 처한 적이 있습니까? 글쎄, 당신은 운이 좋다! 오늘 우리는 Word 문서를 쉽게 처리할 수 있게 해주는 강력한 라이브러리인 Aspose.Words for .NET의 놀라운 세계에 대해 알아봅니다. 프로세스를 단계별로 안내하므로 이 가이드가 끝나면 Word 문서에서 디지털 서명을 확인하는 전문가가 될 것입니다. 시작해 봅시다!
 
 ## 전제 조건
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.DigitalSignatures;
 ```
 
-좋습니다. 이를 관리 가능한 단계로 나누어 보겠습니다. 각 단계는 프로세스의 특정 부분을 안내합니다. 준비가 된? 갑시다!
+좋습니다. 관리 가능한 단계로 나누어 보겠습니다. 각 단계는 프로세스의 특정 부분을 안내합니다. 준비가 된? 갑시다!
 
 ## 1단계: 프로젝트 설정
 
@@ -44,7 +44,7 @@ using Aspose.Words.DigitalSignatures;
 
 ### .NET용 Aspose.Words 설치
 
-1. 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 버튼으로 클릭하고 NuGet 패키지 관리를 선택합니다.
+1. 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 NuGet 패키지 관리를 선택합니다.
 2. NuGet 패키지 관리자에서 Aspose.Words를 검색합니다.
 3. 설치를 클릭하여 프로젝트에 추가하세요.
 
@@ -58,7 +58,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요. 이 코드 조각은 새로운`Document` 개체를 선택하고 서명된 Word 문서를 로드합니다.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오. 이 코드 조각은 새로운`Document` 개체를 선택하고 서명된 Word 문서를 로드합니다.
 
 ## 3단계: 디지털 서명에 액세스
 
@@ -130,7 +130,7 @@ catch (Exception ex)
 
 ## FAQ
 
-### .NET용 Aspose.Words를 사용하여 Word 문서에 디지털 서명을 추가할 수 있습니까?
+### .NET용 Aspose.Words를 사용하여 Word 문서에 디지털 서명을 추가할 수 있나요?
 
 예, .NET용 Aspose.Words를 사용하여 Word 문서에 디지털 서명을 추가할 수 있습니다. 라이브러리는 디지털 서명 추가 및 확인을 위한 포괄적인 기능을 제공합니다.
 

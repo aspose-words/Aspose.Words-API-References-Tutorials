@@ -12,6 +12,6 @@ Ordbehandling med avstavning är en omfattande resurs som leder dig genom att an
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Avstava ord av språk](./hyphenate-words-of-languages/) | Lär dig hur du avstavar ord på olika språk i Word-dokument med Aspose.Words för .NET. |
-| [Ladda avstavningsordbok för språk](./load-hyphenation-dictionary-for-language/) |Lär dig hur du laddar en avstavningsordbok för ett specifikt språk i Aspose.Words för .NET. |
-| [Återuppringning med avstavning](./hyphenation-callback/) | Lär dig hur du använder återuppringning av avstavning i Aspose.Words för .NET för att hantera ordavstavning. |
+| [Avstava ord av språk](./hyphenate-words-of-languages/) | Lär dig hur du avstavar ord på olika språk med Aspose.Words för .NET. Följ denna detaljerade, steg-för-steg-guide för att förbättra ditt dokuments läsbarhet. |
+| [Ladda avstavningsordbok för språk](./load-hyphenation-dictionary-for-language/) | Lär dig hur du laddar en avstavningsordbok för alla språk med Aspose.Words för .NET i denna omfattande, steg-för-steg handledning. |
+| [Återuppringning med avstavning](./hyphenation-callback/) | Lär dig att implementera återuppringning av avstavning i Aspose.Words för .NET för att förbättra dokumentformateringen med denna omfattande steg-för-steg-guide. |

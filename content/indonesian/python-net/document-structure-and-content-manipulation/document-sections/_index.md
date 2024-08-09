@@ -2,7 +2,7 @@
 title: Mengelola Bagian dan Tata Letak Dokumen
 linktitle: Mengelola Bagian dan Tata Letak Dokumen
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara mengelola bagian dan tata letak dokumen dengan Aspose.Words untuk Python. Membuat, memodifikasi bagian, menyesuaikan tata letak, dan banyak lagi. Mulai sekarang!
+description: Pelajari cara mengelola bagian dan tata letak dokumen dengan Aspose.Words untuk Python. Membuat, memodifikasi bagian, menyesuaikan tata letak, dan banyak lagi. Mulailah sekarang!
 type: docs
 weight: 24
 url: /id/python-net/document-structure-and-content-manipulation/document-sections/
@@ -42,7 +42,7 @@ section.page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
 
 ## Menyesuaikan Tata Letak Halaman
 
-Aspose.Words untuk Python memungkinkan Anda menyesuaikan tata letak halaman sesuai dengan kebutuhan Anda. Anda dapat menyesuaikan margin, ukuran halaman, orientasi, dan lainnya. Contohnya:
+Aspose.Words untuk Python memungkinkan Anda menyesuaikan tata letak halaman sesuai dengan kebutuhan Anda. Anda dapat menyesuaikan margin, ukuran halaman, orientasi, dan lainnya. Misalnya:
 
 ```python
 # Customize page layout

@@ -239,7 +239,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Μην κάνεις τίποτα.
+            // Μην κάνετε τίποτα.
         }
         /// <περίληψη>
         /// Καλείται όταν η μηχανή συγχώνευσης αλληλογραφίας συναντά το πεδίο συγχώνευσης εικόνας:XXX στο έγγραφο.
@@ -320,7 +320,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Μην κάνεις τίποτα.
+            // Μην κάνετε τίποτα.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

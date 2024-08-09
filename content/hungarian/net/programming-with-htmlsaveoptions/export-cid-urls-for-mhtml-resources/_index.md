@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 
 ## Következtetés
 
-Gratulálunk! Sikeresen exportálta az MHTML-források Cid URL-címeit az Aspose.Words for .NET használatával. Ez az oktatóanyag végigvezeti a projekt beállításán, a Word-dokumentum betöltésén, a HTML-mentési beállítások konfigurálásán és a dokumentum MHTML formátumban történő elmentésén. Most már alkalmazhatja ezeket a lépéseket saját projektjeire, és javíthatja dokumentumkezelési feladatait.
+Gratulálok! Sikeresen exportálta az MHTML-források Cid URL-címeit az Aspose.Words for .NET használatával. Ez az oktatóanyag végigvezeti a projekt beállításán, a Word-dokumentum betöltésén, a HTML-mentési beállítások konfigurálásán és a dokumentum MHTML formátumban történő elmentésén. Most már alkalmazhatja ezeket a lépéseket saját projektjeire, és javíthatja dokumentumkezelési feladatait.
 
 ## GYIK
 
@@ -96,7 +96,7 @@ Gratulálunk! Sikeresen exportálta az MHTML-források Cid URL-címeit az Aspose
 Az MHTML-erőforrásokhoz tartozó Cid URL-ek exportálása biztosítja, hogy az MHTML-fájl beágyazott erőforrásaira megfelelően hivatkozzon, javítva a dokumentumok hordozhatóságát és integritását.
 
 ### Testreszabhatom a kimeneti formátumot?
- Igen, az Aspose.Words for .NET kiterjedt testreszabási lehetőségeket kínál a dokumentumok mentéséhez. Utal[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Igen, az Aspose.Words for .NET kiterjedt testreszabási lehetőségeket kínál a dokumentumok mentéséhez. Lásd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### Szükségem van licencre az Aspose.Words for .NET használatához?
  Igen, az Aspose.Words for .NET használatához licencre van szüksége. Ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/) vagy vásároljon licencet[itt](https://purchase.aspose.com/buy).

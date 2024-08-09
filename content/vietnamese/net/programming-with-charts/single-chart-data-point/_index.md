@@ -15,7 +15,7 @@ Bạn đã bao giờ tự hỏi làm thế nào bạn có thể làm cho biểu 
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn đã chuẩn bị sẵn tất cả những thứ cần thiết:
 
--  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất.[Tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất.[Tải nó ở đây](https://releases.aspose.com/words/net/).
 - .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework trên máy của mình.
 - Hiểu biết cơ bản về C#: Việc nắm bắt cơ bản về lập trình C# sẽ rất hữu ích.
 - Môi trường phát triển tích hợp (IDE): Khuyến khích sử dụng Visual Studio.
@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Đây,`dataDir` là đường dẫn thư mục nơi bạn sẽ lưu tài liệu của mình. Các`DocumentBuilder` lớp giúp xây dựng tài liệu.
+ Đây,`dataDir` là đường dẫn thư mục nơi bạn sẽ lưu tài liệu của mình. các`DocumentBuilder` lớp giúp xây dựng tài liệu.
 
 ## Bước 2: Chèn biểu đồ
 
@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- Các`InsertChart` phương thức lấy loại biểu đồ, chiều rộng và chiều cao làm tham số. Trong trường hợp này, chúng tôi đang chèn biểu đồ dạng đường có chiều rộng là 432 và chiều cao là 252.
+ các`InsertChart` phương thức lấy loại biểu đồ, chiều rộng và chiều cao làm tham số. Trong trường hợp này, chúng tôi đang chèn biểu đồ dạng đường có chiều rộng là 432 và chiều cao là 252.
 
 ## Bước 3: Truy cập chuỗi biểu đồ
 
@@ -118,7 +118,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartDataPoint.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tùy chỉnh thành công các điểm dữ liệu riêng lẻ trong biểu đồ bằng Aspose.Words for .NET. Bằng cách điều chỉnh một số thuộc tính, bạn có thể làm cho biểu đồ của mình có nhiều thông tin hơn và hấp dẫn hơn về mặt hình ảnh. Vì vậy, hãy tiếp tục và thử nghiệm các điểm đánh dấu và kích thước khác nhau để xem cái nào phù hợp nhất với dữ liệu của bạn.
+Và bạn có nó! Bạn đã tùy chỉnh thành công các điểm dữ liệu riêng lẻ trong biểu đồ bằng Aspose.Words for .NET. Bằng cách điều chỉnh một số thuộc tính, bạn có thể làm cho biểu đồ của mình có nhiều thông tin hơn và hấp dẫn hơn về mặt hình ảnh. Vì vậy, hãy tiếp tục và thử nghiệm các điểm đánh dấu và kích thước khác nhau để xem cái nào phù hợp nhất với dữ liệu của bạn.
 
 ## Câu hỏi thường gặp
 

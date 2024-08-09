@@ -103,7 +103,7 @@ Sub HandleErrors()
 End Sub
 ```
 
-## Consideraciones de Seguridad
+## Consideraciones de seguridad
 
 La automatización de documentos de Word requiere atención a la seguridad. Aspose.Words para Python proporciona funciones para proteger sus documentos y macros, garantizando que sus procesos de automatización sean eficientes y seguros.
 

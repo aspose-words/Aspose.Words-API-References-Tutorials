@@ -2,7 +2,7 @@
 title: Podpisy cyfrowe w dokumentach
 linktitle: Podpisy cyfrowe w dokumentach
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak wdrożyć bezpieczne podpisy cyfrowe w dokumentach za pomocą Aspose.Words dla Java. Zapewnij integralność dokumentu dzięki szczegółowym wskazówkom i kodowi źródłowemu
+description: Dowiedz się, jak wdrożyć bezpieczne podpisy cyfrowe w dokumentach przy użyciu Aspose.Words dla Java. Zapewnij integralność dokumentu dzięki szczegółowym wskazówkom i kodowi źródłowemu
 type: docs
 weight: 13
 url: /pl/java/document-security/digital-signatures-in-documents/

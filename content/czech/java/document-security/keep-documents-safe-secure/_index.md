@@ -22,7 +22,7 @@ Než se ponoříme do technických aspektů, pojďme pochopit základní koncept
 
 - #### Ochrana heslem:
  Omezte přístup ke svým dokumentům heslem, aby je mohli otevřít a prohlížet pouze oprávnění uživatelé.
-- #### šifrování:
+- #### Šifrování:
  Převeďte obsah dokumentu do kódovaného formátu pomocí šifrovacích algoritmů, díky čemuž je bez správného dešifrovacího klíče nerozluštitelný.
 - #### Digitální podpisy:
  Připojte digitální podpisy k ověření pravosti a integrity dokumentu.
@@ -37,7 +37,7 @@ Než se ponoříme do technických aspektů, pojďme pochopit základní koncept
 
 ## 3. Začínáme s Aspose.Words pro Java
 
-Než přistoupíme k zabezpečení dokumentů, seznamme se nejprve s Aspose.Words for Java. Jedná se o knihovnu bohatou na funkce, která umožňuje vývojářům v jazyce Java vytvářet, upravovat a převádět dokumenty aplikace Word programově. Začít:
+Než přistoupíme k zabezpečení dokumentů, seznamme se nejprve s Aspose.Words for Java. Jedná se o knihovnu bohatou na funkce, která umožňuje vývojářům v jazyce Java vytvářet, upravovat a převádět dokumenty aplikace Word programově. Chcete-li začít:
 
 1. ### Stáhněte si Aspose.Words pro Java:
   Navštivte[Aspose.Releases](https://releases.aspose.com/words/java/) a stáhněte si nejnovější verzi Aspose.Words for Java.
@@ -49,7 +49,7 @@ Než přistoupíme k zabezpečení dokumentů, seznamme se nejprve s Aspose.Word
 
 Instalace Aspose.Words for Java je jednoduchý proces. Chcete-li přidat knihovnu do svého projektu Java, postupujte podle těchto jednoduchých kroků:
 
-1. ### Stažení:
+1. ### Stáhnout:
   Přejít na[Aspose.Releases](https://releases.aspose.com/words/java/) a stáhněte si balíček Aspose.Words for Java.
 
 2. ### Výpis:

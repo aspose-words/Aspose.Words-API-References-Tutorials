@@ -105,4 +105,4 @@ Das Festlegen der Textrichtung in Word-Dokumenten ist mit Aspose.Words für .NET
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
 
- Weitere Einzelheiten finden Sie im[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) Sie können auch zusätzliche Ressourcen erkunden wie[Download-Link](https://releases.aspose.com/words/net/), [Kaufen](https://purchase.aspose.com/buy), [Kostenlose Testphase](https://releases.aspose.com/), [Temporäre Lizenz](https://purchase.aspose.com/temporary-license/) , Und[Unterstützung](https://forum.aspose.com/c/words/8).
+ Weitere Einzelheiten finden Sie im[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) . Sie können auch zusätzliche Ressourcen erkunden wie[Download-Link](https://releases.aspose.com/words/net/), [Kaufen](https://purchase.aspose.com/buy), [Kostenlose Testversion](https://releases.aspose.com/), [Temporäre Lizenz](https://purchase.aspose.com/temporary-license/) , Und[Unterstützung](https://forum.aspose.com/c/words/8).

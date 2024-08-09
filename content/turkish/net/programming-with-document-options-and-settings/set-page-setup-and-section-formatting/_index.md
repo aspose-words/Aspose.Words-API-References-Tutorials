@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
 
 ## Çözüm
 
-İşte buyur! Bu basit adımları izleyerek Aspose.Words for .NET'i kullanarak sayfa yönünü ayarlamayı, kenar boşluklarını ayarlamayı ve kağıt boyutlarını seçmeyi öğrendiniz. Bu özellikler, programlı olarak iyi yapılandırılmış ve profesyonel biçimde biçimlendirilmiş belgeler oluşturmanıza olanak tanır.
+Ve işte karşınızda! Bu basit adımları izleyerek Aspose.Words for .NET'i kullanarak sayfa yönünü ayarlamayı, kenar boşluklarını ayarlamayı ve kağıt boyutlarını seçmeyi öğrendiniz. Bu özellikler, programlı olarak iyi yapılandırılmış ve profesyonel biçimde biçimlendirilmiş belgeler oluşturmanıza olanak tanır.
 
 İster küçük bir proje üzerinde çalışıyor olun ister büyük ölçekli belge işlemeyle ilgileniyor olun, bu temel ayarlarda uzmanlaşmak belgelerinizin sunumunu ve kullanılabilirliğini önemli ölçüde geliştirebilir. Daha derinlere dalın[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş özellikler ve kişiselleştirme seçenekleri için.
 

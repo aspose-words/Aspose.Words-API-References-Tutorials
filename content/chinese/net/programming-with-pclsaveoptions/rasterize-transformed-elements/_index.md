@@ -64,7 +64,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
-这里，`RasterizeTransformedElements`被设定为`false`，意味着转换后的元素不会被栅格化。您可以将其设置为`true`如果您希望它们被栅格化。
+这里，`RasterizeTransformedElements`设置为`false`，意味着转换后的元素不会被栅格化。您可以将其设置为`true`如果您希望它们被栅格化。
 
 ## 步骤 4：转换文档
 

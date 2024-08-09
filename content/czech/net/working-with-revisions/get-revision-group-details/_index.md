@@ -2,104 +2,108 @@
 title: Získejte podrobnosti o skupině revizí
 linktitle: Získejte podrobnosti o skupině revizí
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Získejte podrobnosti o skupině revizí v dokumentu aplikace Word pomocí Aspose.Words pro .NET.
+description: Pomocí tohoto podrobného průvodce můžete snadno získat podrobnosti o skupině revizí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ideální pro .NET vývojáře.
 type: docs
 weight: 10
 url: /cs/net/working-with-revisions/get-revision-group-details/
 ---
+## Zavedení
 
-V tomto podrobném průvodci vám ukážeme, jak získat podrobnosti o skupině revizí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
+Přistihli jste se někdy, že jste se potřebovali ponořit do nejhrubších detailů revizí v dokumentu aplikace Word? Možná spolupracujete na projektu a potřebujete pečlivě sledovat změny. No, připoutejte se, protože se chystáme ponořit do úžasného tutoriálu, jak získat podrobnosti o skupině revizí pomocí Aspose.Words pro .NET. Na konci této příručky budete profesionálem v extrahování a zobrazování podrobností o revizi, díky čemuž bude vaše správa dokumentů hračkou.
 
-## Krok 1: Načtení dokumentu
+## Předpoklady
 
-Prvním krokem je nahrání dokumentu obsahujícího revize.
+Než se pustíme do této kódovací cesty, ujistěte se, že máte vše, co potřebujete:
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Pokud ne, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
+- Prostředí .NET: Ujistěte se, že máte nastavené funkční vývojové prostředí .NET. Visual Studio je skvělá volba.
+- Dokument aplikace Word s revizemi: V tomto kurzu použijeme vzorový dokument aplikace Word s revizemi (`Revisions.docx`).
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory do vašeho projektu. To je klíčové pro přístup k funkci Aspose.Words.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using System;
 ```
 
-## Krok 2: Procházení revizí
+Dobře, pojďme si to rozebrat krok za krokem. Každý krok vás provede procesem získání podrobností o revizní skupině pomocí Aspose.Words for .NET.
 
-Dále projdeme revize přítomné v dokumentu a zobrazíme jejich podrobnosti, jako je typ, autor, datum a revidovaný text.
+## Krok 1: Načtěte dokument aplikace Word
+
+Prvním krokem je načtení dokumentu aplikace Word. Zde jsou uloženy vaše revize.
+
+```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ V tomto úryvku nahraďte`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu. Tento kód načte soubor`Revisions.docx` soubor do`doc` objekt.
+
+## Krok 2: Přístup ke kolekci revizí
+
+ Nyní se podívejme na revize v dokumentu. Aspose.Words poskytuje a`Revisions` kolekce, kterou můžeme iterovat.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     string groupText = revision.Group != null
-         ? "Revision group text: " + revision.Group.Text
-         : "The revision does not belong to any group";
-
-     Console.WriteLine("Type: " + revision.RevisionType);
-     Console.WriteLine("Author: " + revision.Author);
-     Console.WriteLine("Date: " + revision.DateTime);
-     Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-     Console.WriteLine(groupText);
+    // Zpracujte každou revizi
 }
 ```
 
+Tato smyčka projde každou revizí v dokumentu, což nám umožní extrahovat podrobnosti.
 
-### Příklad zdrojového kódu pro Get Revision Group Details pomocí Aspose.Words for .NET
+## Krok 3: Extrahujte podrobnosti o revizi
 
-Zde je úplný zdrojový kód pro získání podrobností o skupině revizí v dokumentu pomocí Aspose.Words for .NET:
+V rámci smyčky můžeme extrahovat různé podrobnosti o každé revizi, jako je typ, autor, datum a text.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
 foreach (Revision revision in doc.Revisions)
 {
-	 string groupText = revision.Group != null
-		 ? "Revision group text: " + revision.Group.Text
-		 : "The revision does not belong to any group";
-
-	 Console.WriteLine("Type: " + revision.RevisionType);
-	 Console.WriteLine("Author: " + revision.Author);
-	 Console.WriteLine("Date: " + revision.DateTime);
-	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-	 Console.WriteLine(groupText);
+    Console.WriteLine("Type: " + revision.RevisionType);
+    Console.WriteLine("Author: " + revision.Author);
+    Console.WriteLine("Date: " + revision.DateTime);
+    Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
 }
 ```
+
+Tento kód vytiskne do konzoly typ revize, autora, datum a text.
+
+## Krok 4: Zkontrolujte skupinu revizí
+
+Někdy jsou revize seskupeny. Musíme zkontrolovat, zda revize patří do skupiny, a zobrazit text skupiny, pokud ano.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+    string groupText = revision.Group != null
+        ? "Revision group text: " + revision.Group.Text
+        : "The revision does not belong to any group";
+
+    Console.WriteLine(groupText);
+}
+```
+
+Tento úryvek vytiskne text skupiny, pokud je revize součástí skupiny nebo značí, že nepatří do žádné skupiny.
 
 ## Závěr
 
-V tomto tutoriálu jsme se naučili, jak získat podrobnosti o skupině revizí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí smyčky a příslušných vlastností jsme byli schopni zobrazit podrobnosti, jako je typ revize, autor, datum a revidovaný text. Aspose.Words for .NET nabízí mnoho výkonných funkcí pro manipulaci s dokumenty Word, včetně správy revizí. Nyní můžete tyto znalosti použít k získání podrobností o skupině revizí do vašich vlastních dokumentů aplikace Word pomocí Aspose.Words for .NET.
+A tady to máte! Pomocí těchto kroků můžete snadno získat podrobné informace o revizích v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výkonný nástroj usnadňuje správu a sledování změn a zajišťuje hladký průběh vašich společných projektů.
 
-### FAQ
+## FAQ
 
-#### Otázka: Jak načtu dokument s revizemi do Aspose.Words pro .NET?
+### Co je Aspose.Words for .NET?
+Je to výkonná knihovna .NET pro vytváření, úpravy, konverzi a tisk dokumentů aplikace Word programově.
 
- A: Použijte`Document` třídy Aspose.Words for .NET k načtení dokumentu ze souboru obsahujícího revize. Můžete zadat úplnou cestu dokumentu.
+### Mohu používat Aspose.Words pro .NET s jinými jazyky .NET?
+Absolutně! Můžete jej použít s jakýmkoli jazykem .NET, včetně C#, VB.NET a ASP.NET.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
+ Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
-#### Otázka: Jak získám podrobnosti o skupině revizí v Aspose.Words for .NET?
+### Potřebuji licenci k používání Aspose.Words pro .NET?
+ Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete si jeden zakoupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
-Odpověď: Projděte revize dokumentu pomocí smyčky a otevřete vlastnosti každé revize, abyste získali požadované podrobnosti. Můžete použít`RevisionType`, `Author`, `DateTime`a`ParentNode` vlastnosti, abyste získali typ revize, autora, datum a revidovaný text.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-      Console.WriteLine("Type: " + revision.RevisionType
-
-);
-      Console.WriteLine("Author: " + revision.Author);
-      Console.WriteLine("Date: " + revision.DateTime);
-      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-}
-```
-
-#### Otázka: Jak zkontrolovat, zda revize patří do skupiny v Aspose.Words pro .NET?
-
- A: Použijte`Group` majetek z`Revision` objekt pro kontrolu, zda revize patří do skupiny. Pokud`Group` majetek je`null`, to znamená, že revize nepatří do žádné skupiny.
-
-```csharp
-if (revision.Group != null)
-{
-      // Revize patří do skupiny
-}
-else
-{
-      // Revize nepatří do žádné skupiny
-}
-```
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+ K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).

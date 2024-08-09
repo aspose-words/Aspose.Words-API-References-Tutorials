@@ -15,7 +15,7 @@ Hai! Pernah bertanya-tanya bagaimana Anda bisa mengamankan dokumen Word Anda dar
 
 Sebelum kita mendalami seluk beluk perlindungan kata sandi pada dokumen Word Anda, ada beberapa hal yang Anda perlukan:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan C# lainnya.
 3. Pengetahuan C# Dasar: Pemahaman mendasar tentang pemrograman C#.
 4.  Lisensi Aspose: Dapatkan lisensi dari[Di Sini](https://purchase.aspose.com/buy)atau gunakan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
@@ -60,7 +60,7 @@ Document doc = new Document();
 
 ## Langkah 3: Terapkan Perlindungan Kata Sandi
 
-Ini adalah dimana keajaiban terjadi. Kami akan menerapkan perlindungan kata sandi pada dokumen kami untuk mencegah akses tidak sah.
+Di sinilah keajaiban terjadi. Kami akan menerapkan perlindungan kata sandi pada dokumen kami untuk mencegah akses tidak sah.
 
 ### Pilih Jenis Perlindungan
 
@@ -68,7 +68,7 @@ Ini adalah dimana keajaiban terjadi. Kami akan menerapkan perlindungan kata sand
 
 ### Terapkan Perlindungan
 
- Menggunakan`Protect` metode`Document` kelas untuk menerapkan perlindungan kata sandi. 
+ Gunakan`Protect` metode`Document` kelas untuk menerapkan perlindungan kata sandi. 
 
 ```csharp
 // Terapkan perlindungan dokumen.
@@ -80,7 +80,7 @@ doc.Protect(ProtectionType.NoProtection, "password");
 Terakhir, mari simpan dokumen kita yang dilindungi ke direktori tertentu.
 
 
- Menggunakan`Save` metode untuk menyimpan dokumen Anda. Berikan jalur di mana Anda ingin menyimpan dokumen beserta nama filenya.
+ Gunakan`Save` metode untuk menyimpan dokumen Anda. Berikan jalur di mana Anda ingin menyimpan dokumen beserta nama filenya.
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
@@ -108,6 +108,6 @@ Ya, Aspose.Words kompatibel dengan .NET Core, .NET Framework, dan platform .NET 
 
  Sangat! Anda dapat memuat dokumen yang ada menggunakan`Document` kelas dan kemudian menerapkan perlindungan.
 
-### Di mana saya dapat menemukan lebih banyak dokumentasi tentang Aspose.Words?
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words?
 
 Anda dapat menemukan dokumentasi lebih lanjut di[Halaman dokumentasi Aspose.Words](https://reference.aspose.com/words/net/).

@@ -2,88 +2,40 @@
 title: 개정판 수락
 linktitle: 개정판 수락
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서의 수정본을 수락하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용한 마스터 문서 개정. 변경 사항을 쉽게 추적하고, 수락하고, 거부하는 방법을 알아보세요. 문서 관리 기술을 향상시키세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-revisions/accept-revisions/
 ---
+## 소개
 
-이 튜토리얼에서는 Aspose.Words for .NET의 수정본 수락 기능을 사용하여 Word 문서의 수정본을 수락하는 과정을 안내합니다. 소스 코드를 이해하고 문서 변경 사항을 적용하려면 아래 단계를 따르세요.
+여러 기여자가 변경한 모든 내용을 추적하려고 애쓰며 문서 수정의 미로에 빠진 적이 있습니까? .NET용 Aspose.Words를 사용하면 Word 문서의 수정본을 쉽게 관리할 수 있습니다. 이 강력한 라이브러리를 통해 개발자는 변경 사항을 손쉽게 추적, 수락 및 거부할 수 있으므로 문서를 체계적으로 최신 상태로 유지할 수 있습니다. 이 튜토리얼에서는 문서 초기화부터 모든 변경 사항 수락까지 Aspose.Words for .NET을 사용하여 문서 개정을 처리하는 단계별 프로세스를 살펴보겠습니다.
 
-## 1단계: 문서 콘텐츠 추가 및 편집
+## 전제 조건
 
-이 예에서는 문서를 만들고 콘텐츠를 추가합니다. 우리는 변경 사항과 개정 사항을 설명하기 위해 여러 단락을 사용합니다. 방법은 다음과 같습니다.
+시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
-```csharp
-// 문서 디렉터리의 경로입니다.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- 컴퓨터에 Visual Studio가 설치되어 있습니다.
+- .NET 프레임워크(최신 버전 권장).
+-  .NET 라이브러리용 Aspose.Words. 당신은 그것을 다운로드 할 수 있습니다[여기](https://releases.aspose.com/words/net/).
+- C# 프로그래밍에 대한 기본 이해.
 
-// 첫 번째 단락에 텍스트를 추가한 다음 두 개의 단락을 더 추가합니다.
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+이제 구체적인 내용을 살펴보고 Aspose.Words for .NET을 사용하여 문서 개정을 마스터하는 방법을 살펴보겠습니다.
 
-## 2단계: 리뷰 추적 및 리뷰 추가
+## 네임스페이스 가져오기
 
-개정 추적을 활성화하고 문서에 개정을 추가합니다. 방법은 다음과 같습니다.
+먼저 Aspose.Words를 사용하려면 필요한 네임스페이스를 가져와야 합니다. 코드 파일 상단에 다음 using 지시문을 추가합니다.
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-// 이 단락은 개정판이며 해당 "IsInsertRevision" 플래그가 설정됩니다.
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## 3단계: 단락 삭제 및 개정 관리
+프로세스를 관리 가능한 단계로 나누어 보겠습니다. 코드의 모든 부분을 이해할 수 있도록 각 단계를 자세히 설명합니다.
 
-단락을 삭제하고 저장된 개정 내용을 확인합니다. 방법은 다음과 같습니다.
+## 1단계: 문서 초기화
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-// 개정 내용을 추적하는 동안 해당 단락은 여전히 문서에 존재하며 "IsDeleteRevision" 플래그가 설정됩니다.
-// 모든 리뷰를 수락하거나 거부할 때까지 Microsoft Word에 리뷰로 표시됩니다.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## 4단계: 변경 사항 수락
-
-우리는 문서의 모든 변경 사항을 수락합니다. 방법은 다음과 같습니다.
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## 5단계: 리뷰 추적 중지
-
-문서 변경 사항이 더 이상 수정본으로 표시되지 않도록 수정본 추적을 중단할 예정입니다. 방법은 다음과 같습니다.
-
-```csharp
-doc.StopTrackRevisions();
-```
-## 6단계: 문서 저장
-
- 텍스트 입력 양식 필드를 삽입한 후,`Save`방법. 적절한 파일 경로를 제공해야 합니다.
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### .NET용 Aspose.Words를 사용하여 개정 승인을 위한 예제 소스 코드
-
-다음은 .NET용 Aspose.Words를 사용하여 문서의 변경 사항을 수락하는 전체 소스 코드입니다.
-
+시작하려면 새 문서를 만들고 몇 가지 단락을 추가해야 합니다. 이는 개정판 추적을 위한 단계를 설정합니다.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//세 개의 문단이 있는데 그 중 어느 것도 개정 유형으로 등록되지 않았습니다.
-// 개정 내용을 추적하는 동안 문서의 내용을 추가/제거하는 경우,
-// 문서에 그대로 표시되며 승인/거부될 수 있습니다.
+이 단계에서는 새 문서를 만들고 여기에 세 개의 단락을 추가했습니다. 이 단락은 개정 추적을 위한 기준으로 사용됩니다.
+
+## 2단계: 개정 추적 시작
+
+다음으로 개정 추적을 활성화해야 합니다. 이를 통해 문서에 대한 모든 변경 사항을 캡처할 수 있습니다.
+
+```csharp
+// 개정판 추적을 시작하세요.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+ 전화로`StartTrackRevisions`를 사용하면 문서에서 모든 후속 변경 사항을 추적할 수 있습니다. 작성자 이름과 현재 날짜가 매개변수로 전달됩니다.
+
+## 3단계: 개정판 추가
+
+이제 개정 추적이 활성화되었으므로 새 단락을 추가해 보겠습니다. 이 추가사항은 개정으로 표시됩니다.
+
+```csharp
 // 이 단락은 개정판이며 이에 따라 "IsInsertRevision" 플래그가 설정됩니다.
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+여기에 새로운 문단("문단 4.")이 추가됩니다. 개정 추적이 활성화되어 있으므로 이 단락은 개정으로 표시됩니다.
+
+## 4단계: 단락 제거
+
+다음으로 기존 단락을 제거하고 개정 내용이 어떻게 추적되는지 살펴보겠습니다.
+
+```csharp
 // 문서의 단락 컬렉션을 가져오고 단락을 제거합니다.
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-// 개정 내용을 추적하고 있으므로 해당 단락은 여전히 문서에 존재하며 "IsDeleteRevision"이 설정됩니다.
-// 모든 수정본을 승인하거나 거부할 때까지 Microsoft Word에 수정본으로 표시됩니다.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+이 단계에서는 세 번째 단락이 제거됩니다. 개정 추적으로 인해 이 삭제 내용이 기록되고 해당 단락이 문서에서 즉시 제거되지 않고 삭제 대상으로 표시됩니다.
 
-// 변경 사항을 수락하면 개정 삭제 단락이 제거됩니다.
+## 5단계: 모든 개정 사항 수락
+
+마지막으로 추적된 모든 수정 사항을 수락하여 문서의 변경 사항을 확정해 보겠습니다.
+
+```csharp
+// 모든 개정판을 수락합니다.
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-// 개정판 추적을 중지하면 이 텍스트가 일반 텍스트로 표시됩니다.
-// 문서가 변경되면 수정본은 계산되지 않습니다.
+ 전화로`AcceptAllRevisions`, 모든 변경 사항(추가 및 삭제)이 문서에 승인되고 적용되는지 확인합니다. 수정본은 더 이상 표시되지 않으며 문서에 통합됩니다.
+
+## 6단계: 개정 추적 중지
+
+### 개정 추적 비활성화
+
+마무리하려면 개정 추적을 비활성화하여 추가 변경 사항 기록을 중지할 수 있습니다.
+
+```csharp
+// 개정판 추적을 중지합니다.
 doc.StopTrackRevisions();
+```
 
+이 단계에서는 문서가 새로운 변경 사항을 추적하는 것을 중지하고 모든 후속 편집 내용을 일반 콘텐츠로 처리합니다.
+
+## 7단계: 문서 저장
+
+마지막으로 수정된 문서를 지정된 디렉터리에 저장합니다.
+
+```csharp
 // 문서를 저장합니다.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+문서를 저장하면 모든 변경 사항과 승인된 수정 사항이 보존됩니다.
+
 ## 결론
 
-이 튜토리얼에서는 Aspose.Words for .NET의 수정본 수락 기능을 사용하여 Word 문서의 수정본을 수락하는 방법을 배웠습니다. 우리는 문서 내용을 추가 및 편집하고, 개정 내용을 추적하고, 개정된 단락을 삭제하고, 모든 변경 사항을 수락하고, 개정 내용 추적을 중지하는 단계를 수행했습니다. 이제 이 지식을 적용하여 Aspose.Words for .NET을 사용하여 자신의 Word 문서의 수정본을 효과적으로 관리할 수 있습니다.
+문서 개정판을 관리하는 것은 어려운 작업일 수 있지만 Aspose.Words for .NET을 사용하면 이 작업이 간단하고 효율적이 됩니다. 이 가이드에 설명된 단계를 따르면 Word 문서의 변경 사항을 쉽게 추적, 수락 및 거부하여 문서를 항상 최신 상태로 정확하게 유지할 수 있습니다. 그렇다면 왜 기다리나요? 지금 Aspose.Words의 세계로 뛰어들어 문서 관리를 간소화하세요!
 
-### 자주 묻는 질문
+## FAQ
 
-#### Q: .NET용 Aspose.Words에서 개정 추적을 어떻게 활성화합니까?
+### .NET용 Aspose.Words에서 개정 추적을 어떻게 시작합니까?
 
-#### 해결 방법 1:
+ 다음을 호출하여 개정 추적을 시작할 수 있습니다.`StartTrackRevisions` 문서 개체에 메서드를 사용하고 작성자 이름과 현재 날짜를 전달합니다.
 
- A: .NET용 Aspose.Words에서 개정 추적을 활성화하려면`StartTrackRevisions` 의 방법`Document` 개체를 선택하고 작성자 이름과 개정 추적 시작 날짜를 지정합니다.
+### 언제든지 개정판 추적을 중지할 수 있나요?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+예, 다음을 호출하여 개정 추적을 중지할 수 있습니다.`StopTrackRevisions` 문서 개체에 대한 메서드입니다.
 
-#### 해결 방법 2:
+### 문서의 모든 수정 사항을 어떻게 수락합니까?
 
- A: 다음을 사용하여 개정 추적을 활성화할 수도 있습니다.`Document` 받아들이는 생성자`trackRevisions`그리고`author` 매개변수.
+ 모든 개정판을 승인하려면 다음을 사용하십시오.`AcceptAllRevisions` 문서 개체에 대한 메서드입니다.
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### 특정 개정을 거부할 수 있나요?
 
-#### Q: Aspose.Words for .NET을 사용하여 문서의 모든 변경 사항을 어떻게 수락합니까?
+ 예, 특정 개정판을 탐색하고 다음을 사용하여 거부할 수 있습니다.`Reject` 방법.
 
- 답변:`AcceptAllRevisions` 의 방법`Document` 문서에 대한 모든 변경 사항을 수락하는 데 반대합니다.
+### .NET용 Aspose.Words를 어디서 다운로드할 수 있나요?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### Q: 승인된 수정본이 포함된 수정된 문서를 어떻게 저장합니까?
-
- 사용`Save` 의 방법`Document` 승인된 수정본과 함께 수정된 문서를 저장하는 개체입니다. 올바른 파일 경로를 제공하십시오.
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### Q: .NET용 Aspose.Words에서 개정 추적을 어떻게 중지합니까?
-
- 답변:`StopTrackRevisions` 의 방법`Document` 추적 개정을 중지하려면 개체를 사용하세요.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### Q: Aspose.Words for .NET을 사용하여 문서에서 수정된 단락을 어떻게 삭제합니까?
-
- A: 문서에서 수정된 단락을 제거하려면`Remove` 단락 수집 방법.
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ .NET용 Aspose.Words를 다운로드할 수 있습니다.[다운로드 링크](https://releases.aspose.com/words/net/).

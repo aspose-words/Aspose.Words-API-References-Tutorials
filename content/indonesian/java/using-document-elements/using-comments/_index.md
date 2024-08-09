@@ -10,7 +10,7 @@ url: /id/java/using-document-elements/using-comments/
 
 Dalam dunia pemrosesan dokumen, menambahkan komentar ke dokumen Anda bisa menjadi fitur penting. Ini memungkinkan kolaborasi, umpan balik, dan anotasi pada konten. Aspose.Words for Java menyediakan API yang kuat dan serbaguna untuk bekerja dengan dokumen, dan dalam tutorial langkah demi langkah ini, kita akan mempelajari cara menggunakan komentar di Aspose.Words for Java.
 
-## 1. Perkenalan
+## 1. Pendahuluan
 Komentar sangat berharga untuk mendokumentasikan kode Anda atau memberikan penjelasan dalam dokumen. Aspose.Words untuk Java memungkinkan Anda menambahkan komentar ke dokumen Anda secara terprogram, menjadikannya pilihan yang sangat baik untuk menghasilkan dokumen yang dinamis dan interaktif.
 
 ## 2. Menata Lingkungan Hidup
@@ -65,7 +65,7 @@ doc.save(outPath + "WorkingWithComments.AddComments.docx");
 
 
 ## 7. Kesimpulan
-Dalam tutorial ini, kita mempelajari cara menggunakan komentar di Aspose.Words untuk Java. Kini Anda dapat membuat dokumen dinamis dengan penjelasan dan anotasi, sehingga meningkatkan kolaborasi dan kejelasan dokumen.
+Dalam tutorial ini, kita mempelajari cara menggunakan komentar di Aspose.Words untuk Java. Anda kini dapat membuat dokumen dinamis dengan penjelasan dan anotasi, sehingga meningkatkan kolaborasi dan kejelasan dokumen.
 
 ## FAQ
 

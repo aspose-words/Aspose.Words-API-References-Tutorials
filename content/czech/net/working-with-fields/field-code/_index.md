@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/field-code/
 ---
-## Úvod
+## Zavedení
 
 této příručce prozkoumáme, jak pracovat s kódy polí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Na konci tohoto výukového programu budete pohodlně procházet poli, extrahovat jejich kódy a využívat tyto informace pro své potřeby. Ať už chcete zkontrolovat vlastnosti pole nebo automatizovat úpravy dokumentů, tento podrobný průvodce vám pomůže snadno manipulovat s kódy polí.
 
@@ -70,7 +70,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- Vysvětlení: Tento fragment kódu prochází každým polem v dokumentu. Pro každé pole načte kód pole a výsledek pole. The`GetFieldCode()` metoda vrací nezpracovaný kód pole, zatímco metoda`Result` vlastnost vám dává hodnotu nebo výsledek vytvořený polem.
+ Vysvětlení: Tento fragment kódu prochází každým polem v dokumentu. Pro každé pole načte kód pole a výsledek pole. The`GetFieldCode()` metoda vrací nezpracovaný kód pole, zatímco`Result` vlastnost vám dává hodnotu nebo výsledek vytvořený polem.
 
 ## Krok 4: Zpracujte kódy polí
 

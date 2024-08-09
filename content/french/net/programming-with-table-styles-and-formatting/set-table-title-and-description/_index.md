@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 
 ## Conclusion
 
-Et voila! Vous venez d'ajouter un titre et une description à un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. C'est comme ajouter une cerise sur le gâteau de votre document. Cette petite touche peut rendre vos documents plus informatifs et professionnels. Alors n'hésitez plus, expérimentez différents titres et descriptions et faites briller vos documents !
+Et voilà ! Vous venez d'ajouter un titre et une description à un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. C'est comme ajouter une cerise sur le gâteau de votre document. Cette petite touche peut rendre vos documents plus informatifs et professionnels. Alors n'hésitez plus, expérimentez différents titres et descriptions et faites briller vos documents !
 
 ## FAQ
 

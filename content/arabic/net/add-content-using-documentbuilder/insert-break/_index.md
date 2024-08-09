@@ -106,7 +106,7 @@ builder.Writeln("This is page 3.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-وهناك لديك! لقد نجحت في إنشاء مستند Word وإدراج فواصل الصفحات باستخدام Aspose.Words لـ .NET.
+وهنا لديك! لقد نجحت في إنشاء مستند Word وإدراج فواصل الصفحات باستخدام Aspose.Words لـ .NET.
 
 ## خاتمة
 

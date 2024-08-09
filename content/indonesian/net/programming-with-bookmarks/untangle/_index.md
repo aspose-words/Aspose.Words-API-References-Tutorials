@@ -15,7 +15,7 @@ Menavigasi dokumen Word secara terprogram bisa seperti menemukan jalan melewati 
 
 Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
 
-1.  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words untuk .NET. Jika Anda tidak memilikinya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words untuk .NET. Jika Anda tidak memilikinya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio.
 3. Pengetahuan Dasar C#: Memahami dasar-dasar C# akan membantu Anda mengikuti cuplikan kode dan penjelasannya.
 

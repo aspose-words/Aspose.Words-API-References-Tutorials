@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/chart-data-label/
 ---
-## Úvod
+## Zavedení
 
 Chcete vylepšit své aplikace .NET dynamickými a přizpůsobenými možnostmi zpracování dokumentů? Aspose.Words for .NET může být právě vaší odpovědí! V této příručce se ponoříme hluboko do přizpůsobení štítků dat grafu pomocí Aspose.Words for .NET, výkonné knihovny pro vytváření, úpravy a převod dokumentů aplikace Word. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás provede každým krokem a zajistí, že pochopíte, jak tento nástroj efektivně využívat.
 
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 
 ## Závěr
 
- Gratulujeme! Úspěšně jste přizpůsobili štítky dat grafu pomocí Aspose.Words pro .NET. Tato knihovna nabízí robustní řešení pro programovou manipulaci s dokumenty Word, což vývojářům usnadňuje vytváření sofistikovaných a dynamických aplikací pro zpracování dokumentů. Ponořte se do[dokumentace](https://reference.aspose.com/words/net/) prozkoumat další funkce a možnosti.
+ Gratuluji! Úspěšně jste přizpůsobili štítky dat grafu pomocí Aspose.Words pro .NET. Tato knihovna nabízí robustní řešení pro programovou manipulaci s dokumenty Word, což vývojářům usnadňuje vytváření sofistikovaných a dynamických aplikací pro zpracování dokumentů. Ponořte se do[dokumentace](https://reference.aspose.com/words/net/) prozkoumat další funkce a možnosti.
 
 ## FAQ
 
@@ -132,4 +132,4 @@ Aspose.Words for .NET je výkonná knihovna pro zpracování dokumentů, která 
 Ano, Aspose.Words for .NET je kompatibilní s .NET Core, .NET Standard a .NET Framework.
 
 ### Kde mohu získat podporu pro Aspose.Words pro .NET?
- Můžete navštívit[Fórum podpory](https://forum.aspose.com/c/words/8) za pomoc a pomoc od komunity Aspose a odborníků.
+ Můžete navštívit[fórum podpory](https://forum.aspose.com/c/words/8) za pomoc a pomoc od komunity Aspose a odborníků.

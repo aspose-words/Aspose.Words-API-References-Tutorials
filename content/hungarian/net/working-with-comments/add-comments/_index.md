@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 ## Következtetés
 
-Tessék, itt van! Sikeresen hozzáadott megjegyzéseket egy Word-dokumentumhoz az Aspose.Words for .NET használatával. Ez a hatékony funkció nagyban javíthatja a dokumentum-ellenőrzési folyamatot, megkönnyítve az együttműködést és a visszajelzések közlését. Ne felejtse el felfedezni az Aspose.Words egyéb lehetőségeit a dokumentumkezelési feladatok további egyszerűsítéséhez.
+Megvan! Sikeresen hozzáadott megjegyzéseket egy Word-dokumentumhoz az Aspose.Words for .NET használatával. Ez a hatékony funkció nagyban javíthatja a dokumentum-ellenőrzési folyamatot, megkönnyítve az együttműködést és a visszajelzések közlését. Ne felejtse el felfedezni az Aspose.Words egyéb lehetőségeit a dokumentumkezelési feladatok további egyszerűsítéséhez.
 
 ## GYIK
 

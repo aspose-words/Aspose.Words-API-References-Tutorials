@@ -2,91 +2,98 @@
 title: Campos de formulário Obtenha coleção de campos de formulário
 linktitle: Campos de formulário Obtenha coleção de campos de formulário
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como recuperar e manipular a coleção de campos de formulário em documentos do Word usando Aspose.Words for .NET.
+description: Aprenda como obter e manipular campos de formulário em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo abrangente.
 type: docs
 weight: 10
 url: /pt/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
+## Introdução
 
-Neste tutorial passo a passo, iremos orientá-lo sobre como usar Aspose.Words for .NET para recuperar a coleção de campos de formulário de um documento do Word. Explicaremos o código-fonte C# fornecido e mostraremos como implementá-lo em seus próprios projetos.
+Você está pronto para mergulhar no mundo da manipulação de campos de formulário em documentos do Word? Esteja você automatizando a criação de documentos ou simplesmente precise lidar com formulários com mais eficiência, o Aspose.Words for .NET é a sua ferramenta ideal. Vamos explorar como obter uma coleção de campos de formulário de um documento do Word e trabalhar com eles passo a passo.
 
- Para começar, certifique-se de ter o Aspose.Words for .NET instalado e configurado em seu ambiente de desenvolvimento. Caso ainda não tenha feito isso, baixe e instale a biblioteca em[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Pré-requisitos
 
-## Etapa 1: inicializando o objeto Documento
+Antes de entrarmos no código, vamos ter certeza de que você tem tudo o que precisa para começar.
 
- Primeiro, inicialize o`Document` objeto fornecendo o caminho para o documento de origem contendo campos de formulário:
+1.  Aspose.Words for .NET: Certifique-se de ter a versão mais recente do Aspose.Words for .NET instalada. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: um IDE como o Visual Studio para escrever e executar seu código .NET.
+3. .NET Framework: certifique-se de que seu projeto seja direcionado a uma versão compatível do .NET Framework.
+
+## Importar namespaces
+
+Antes de começar a codificar, você precisa importar os namespaces necessários. Isso ajuda a evitar escrever nomes completos de classes repetidamente, tornando seu código mais limpo e legível.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Vamos detalhar o processo de obtenção e manipulação de campos de formulário em um documento do Word usando Aspose.Words for .NET.
+
+## Etapa 1: carregue o documento
+
+Primeiro, você precisa carregar o documento Word que contém os campos do formulário. Este documento será o seu ponto de partida.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## Etapa 2: recuperando a coleção de campos do formulário
+ Explicação: Aqui,`dataDir` é o caminho para o diretório que contém o documento do Word. Criamos um novo`Document` objeto e carregue o arquivo`Form fields.docx`.
 
- A seguir, acesse o`FormFields` propriedade do`Range` objeto no documento para recuperar a coleção de campos do formulário:
+## Etapa 2: obtenha a coleção de campos do formulário
+
+Depois de carregado o documento, o próximo passo é acessar o conjunto de campos do formulário. Esta coleção permite manipular campos de formulário individuais conforme necessário.
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- Agora, você tem a coleção de campos de formulário do documento Word armazenado no`formFields` variável.
+ Explicação: O`FormFields` propriedade do`Range` object dá acesso aos campos do formulário no documento. Armazenamos esta coleção em um`formFields` variável para manipulação adicional.
 
-## Etapa 3: acessando e manipulando os campos do formulário
+## Etapa 3: manipular os campos do formulário
 
-Você pode iterar pela coleção de campos de formulário e executar diversas operações em cada campo de formulário, como obter ou definir valores, modificar formatação ou extrair informações.
+Agora que você tem a coleção de campos do formulário, pode acessar e manipular cada campo do formulário de acordo com suas necessidades. Digamos que você queira alterar o valor de um campo específico do formulário.
 
 ```csharp
 foreach (FormField formField in formFields)
 {
-    // Acesse e manipule cada campo do formulário
-    // ...
+    if (formField.Type == FieldType.FieldFormTextInput)
+    {
+        formField.Result = "New Value";
+    }
 }
 ```
 
-## Etapa 4: salvando o documento
+Explicação: Neste exemplo, percorremos cada campo de formulário da coleção. Se o campo do formulário for uma entrada de texto (`FieldType.FieldFormTextInput`), alteramos seu valor para "Novo Valor".
 
-Por fim, salve o documento modificado, se necessário:
+## Etapa 4: salve o documento modificado
+
+Após fazer as alterações necessárias nos campos do formulário, a etapa final é salvar o documento modificado.
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-É isso! Você recuperou com êxito a coleção de campos de formulário de um documento do Word usando Aspose.Words for .NET.
+ Explicação: Salvamos o documento modificado como`ModifiedFormFields.docx` no mesmo diretório.
 
-### Exemplo de código-fonte para campos de formulário Obtenha a coleção de campos de formulário usando Aspose.Words for .NET
+## Conclusão
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Form fields.docx");
+Parabéns! Você acabou de aprender como obter e manipular campos de formulário em um documento do Word usando Aspose.Words for .NET. Esta poderosa biblioteca facilita a automatização de tarefas de processamento de documentos, economizando tempo e esforço.
 
-FormFieldCollection formFields = doc.Range.FormFields;
+## Perguntas frequentes
 
-// Acesse e manipule os campos do formulário conforme necessário
-// ...
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma biblioteca abrangente para trabalhar com documentos do Word em aplicativos .NET. Ele permite criar, editar, converter e manipular documentos do Word programaticamente.
 
-doc.Save(dataDir + "ModifiedFormFields.docx");
-```
+### Posso usar o Aspose.Words for .NET em um aplicativo da web?
+Sim, o Aspose.Words for .NET pode ser usado em vários tipos de aplicativos, incluindo aplicativos da web, aplicativos de desktop e serviços.
 
-Sinta-se à vontade para usar este código em seus próprios projetos e modificá-lo de acordo com suas necessidades específicas.
+### O Aspose.Words para .NET é gratuito?
+Aspose.Words for .NET oferece uma avaliação gratuita, mas para funcionalidade completa é necessária uma licença. Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 
-### Perguntas frequentes
+### Onde posso encontrar a documentação do Aspose.Words for .NET?
+ A documentação do Aspose.Words for .NET pode ser encontrada[aqui](https://reference.aspose.com/words/net/).
 
-#### P: Como posso acessar a coleção de campos de formulário no Aspose.Words?
-
- R: Para acessar a coleção de campos de formulário no Aspose.Words, você pode usar o`Document.FormFields` propriedade. Esta propriedade retorna a coleção completa de campos do formulário presentes no documento.
-
-#### P: Como posso iterar pelos campos do formulário e realizar operações em cada um deles?
-
- R: Você pode iterar pelos campos do formulário usando um`foreach` loop no`Document.FormFields` coleção. A cada iteração, você pode acessar propriedades e realizar operações específicas no campo do formulário.
-
-#### P: Posso filtrar a coleção de campos do formulário para obter apenas determinados tipos de campos?
-
-R: Sim, você pode filtrar a coleção de campos do formulário usando condições apropriadas em seu loop de iteração. Por exemplo, você pode verificar o tipo de campo de cada item e operar apenas nos campos que correspondem aos seus critérios.
-
-#### P: Como posso remover um campo de formulário específico da coleção?
-
- R: Para remover um campo de formulário específico da coleção, você pode usar o`FormField.Remove` método especificando o campo que você deseja remover. Este método removerá o campo do formulário da coleção.
-
-#### P: É possível modificar as propriedades de um campo de formulário no Aspose.Words?
-
-R: Sim, você pode alterar as propriedades de um campo de formulário no Aspose.Words acessando suas propriedades individuais. Por exemplo, você pode alterar o nome, o valor ou as opções de um campo de formulário usando as propriedades apropriadas.
+### Como obtenho suporte para Aspose.Words for .NET?
+ Você pode obter suporte para Aspose.Words for .NET por meio do fórum de suporte[aqui](https://forum.aspose.com/c/words/8).

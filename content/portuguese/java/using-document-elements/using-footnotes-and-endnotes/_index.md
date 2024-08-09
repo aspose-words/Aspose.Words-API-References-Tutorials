@@ -111,7 +111,7 @@ Neste tutorial, exploramos como trabalhar com notas de rodapé e notas finais em
 
 Agora que você aprendeu como usar notas de rodapé e finais, pode aprimorar a formatação do documento e tornar o conteúdo mais profissional.
 
-### perguntas frequentes
+### Perguntas frequentes
 
 ### 1. Qual é a diferença entre notas de rodapé e notas finais?
 As notas de rodapé aparecem na parte inferior da página, enquanto as notas finais são coletadas no final de uma seção ou do documento.

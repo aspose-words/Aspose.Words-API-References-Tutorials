@@ -2,7 +2,7 @@
 title: Dokumentumok konvertálása képekké
 linktitle: Dokumentumok konvertálása képekké
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan konvertálhat dokumentumokat képekké az Aspose.Words for Java használatával. Lépésről lépésre szóló útmutató Java fejlesztőknek.
+description: Ismerje meg, hogyan konvertálhat dokumentumokat képekké az Aspose.Words for Java használatával. Lépésről lépésre útmutató Java fejlesztőknek.
 type: docs
 weight: 14
 url: /hu/java/document-converting/converting-documents-images/
@@ -63,7 +63,7 @@ Az Aspose.Words for Java segítségével könnyedén konvertálhat dokumentumoka
 ## GYIK
 
 ### Hogyan állíthatom be a képfelbontást a konvertálás során?
- A képfelbontás beállításához használja a`setResolution` a metódusa`ImageSaveOptions` és adja meg a kívánt felbontást pont per hüvelykben (DPI).
+ A képfelbontás beállításához használja a`setResolution` módszere`ImageSaveOptions` és adja meg a kívánt felbontást pont per hüvelykben (DPI).
 
 ### Átalakíthatom a dokumentum egyes oldalait képekké?
  Igen, megadhat oldaltartományt a`setPageCount`és`setPageIndex` módszerei`ImageSaveOptions` adott oldalak képpé alakításához.
@@ -72,7 +72,7 @@ Az Aspose.Words for Java segítségével könnyedén konvertálhat dokumentumoka
 Teljesen! Az Aspose.Words for Java segítségével több dokumentumot kötegesen konvertálhat hatékonyan képpé.
 
 ### Milyen más formátumokba konvertálhatom a dokumentumokat?
- Az Aspose.Words for Java különféle kimeneti formátumokat támogat, beleértve a PDF-t, HTML-t és még sok mást. Könnyen beállíthatja a`SaveFormat` ban ben`ImageSaveOptions`dokumentumokat a kívánt formátumra konvertálni.
+ Az Aspose.Words for Java különféle kimeneti formátumokat támogat, beleértve a PDF-t, HTML-t és még sok mást. Könnyen beállíthatja a`SaveFormat` be`ImageSaveOptions`dokumentumokat a kívánt formátumra konvertálni.
 
 ### Hol találok további dokumentációt és példákat?
  Átfogó dokumentációért és kódpéldákért keresse fel a[Aspose.Words for Java API Reference](https://reference.aspose.com/words/java/).

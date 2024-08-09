@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-在這裡，我們建立一個實例`Document`和`DocumentBuilder`。考慮到`Document`作為您的空白 Word 文件和`DocumentBuilder`作為你的筆。
+在這裡，我們建立一個實例`Document`和`DocumentBuilder`。想想`Document`作為您的空白 Word 文件和`DocumentBuilder`作為你的筆。
 
 ## 第 2 步：移至文件開頭
 
@@ -63,11 +63,11 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()`將遊標置於最後，準備添加更多內容。十分簡單！
+`MoveToDocumentEnd()`將遊標置於最後，準備添加更多內容。簡單易行！
 
 ## 結論
 
-現在你就擁有了！一旦您知道如何操作，在 Aspose.Words for .NET 中移至文件的開頭和結尾就變得輕而易舉。這個簡單而強大的功能可以節省您大量的時間，尤其是在處理較大的文件時。因此，下次您需要跳轉文件時，您就知道該怎麼做！
+現在你就得到它了！一旦您知道如何操作，在 Aspose.Words for .NET 中移至文件的開頭和結尾就變得輕而易舉。這個簡單而強大的功能可以節省您大量的時間，尤其是在處理較大的文件時。因此，下次您需要跳轉文件時，您就知道該怎麼做！
 
 ## 常見問題解答
 

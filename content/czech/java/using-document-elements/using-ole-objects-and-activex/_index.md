@@ -13,7 +13,7 @@ tomto tutoriálu prozkoumáme, jak pracovat s objekty OLE (Object Linking and Em
 
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
-1.  Aspose.Words for Java: Ujistěte se, že máte v projektu Java nainstalovanou knihovnu Aspose.Words. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java: Ujistěte se, že máte v projektu Java nainstalovanou knihovnu Aspose.Words. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 2. Vývojové prostředí Java: Ve vašem systému byste měli mít nastavené funkční vývojové prostředí Java.
 
@@ -112,7 +112,7 @@ V tomto kódu procházíme tvary v dokumentu aplikace Word, identifikujeme ovlá
 
 ### Závěr
 
-Gratulujeme! Naučili jste se pracovat s objekty OLE a ovládacími prvky ActiveX v Aspose.Words for Java. Tyto funkce otevírají svět možností pro vytváření dynamických a interaktivních dokumentů.
+Gratuluji! Naučili jste se pracovat s objekty OLE a ovládacími prvky ActiveX v Aspose.Words for Java. Tyto funkce otevírají svět možností pro vytváření dynamických a interaktivních dokumentů.
 
 ### Nejčastější dotazy
 
@@ -129,6 +129,6 @@ Gratulujeme! Naučili jste se pracovat s objekty OLE a ovládacími prvky Active
    - Ano, Aspose.Words for Java je výkonná knihovna pro automatizaci generování dokumentů a manipulaci s nimi v aplikacích Java.
 
 ### Kde mohu získat přístup k Aspose.Words for Java? 
-   -  Aspose.Words for Java si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
+   -  Aspose.Words for Java si můžete stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 Začněte s Aspose.Words for Java ještě dnes a odemkněte plný potenciál automatizace a přizpůsobení dokumentů!

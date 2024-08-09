@@ -82,7 +82,7 @@ redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTEN
 doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Το Aspose.Words for Python σάς δίνει τη δυνατότητα να ασφαλίσετε τα έγγραφά σας χρησιμοποιώντας προηγμένες τεχνικές. Από την προστασία με κωδικό πρόσβασης και την κρυπτογράφηση έως τις ψηφιακές υπογραφές και τη σύνταξη, αυτές οι δυνατότητες διασφαλίζουν ότι τα έγγραφά σας παραμένουν εμπιστευτικά και στεγανά.
 

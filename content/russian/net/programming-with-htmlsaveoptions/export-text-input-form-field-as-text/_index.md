@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### Могу ли я настроить экспортированный HTML?
 
- Абсолютно! Aspose.Words предоставляет различные параметры для настройки вывода HTML. Обратитесь к[документация](https://reference.aspose.com/words/net/) Больше подробностей.
+ Абсолютно! Aspose.Words предоставляет различные параметры для настройки вывода HTML. Обратитесь к[документация](https://reference.aspose.com/words/net/) для более подробной информации.
 
 ### Совместим ли Aspose.Words с .NET Core?
 

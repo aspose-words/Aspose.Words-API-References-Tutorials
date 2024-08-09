@@ -9,7 +9,7 @@ url: /fr/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
 ## Introduction
 
-Vous êtes-vous déjà retrouvé coincé dans un labyrinthe de remplacements de texte dans des documents Word ? Si vous hochez la tête, attachez votre ceinture car nous plongeons dans un didacticiel passionnant utilisant Aspose.Words pour .NET. Aujourd'hui, nous verrons comment remplacer le texte contenant des méta-caractères. Prêt à rendre la manipulation de vos documents plus fluide que jamais ? Commençons!
+Vous êtes-vous déjà retrouvé coincé dans un labyrinthe de remplacements de texte dans des documents Word ? Si vous hochez la tête, attachez votre ceinture car nous plongeons dans un didacticiel passionnant utilisant Aspose.Words pour .NET. Aujourd'hui, nous verrons comment remplacer le texte contenant des méta-caractères. Prêt à rendre la manipulation de vos documents plus fluide que jamais ? Commençons !
 
 ## Conditions préalables
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 
 ## Conclusion
 
-Et voila! Vous maîtrisez désormais l'art de remplacer du texte contenant des méta-caractères dans un document Word à l'aide d'Aspose.Words pour .NET. De la configuration de votre environnement à l'enregistrement de votre document final, chaque étape est conçue pour vous donner le contrôle de la manipulation de votre texte. Alors n’hésitez plus, plongez dans vos documents et effectuez ces remplacements en toute confiance !
+Et voilà ! Vous maîtrisez désormais l'art de remplacer du texte contenant des méta-caractères dans un document Word à l'aide d'Aspose.Words pour .NET. De la configuration de votre environnement à l'enregistrement de votre document final, chaque étape est conçue pour vous donner le contrôle de la manipulation de votre texte. Alors n’hésitez plus, plongez dans vos documents et effectuez ces remplacements en toute confiance !
 
 ## FAQ
 

@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
 ## 結論
 
-現在你就擁有了！透過這些簡單的步驟，您就可以使用 Aspose.Words for .NET 設定文件的頁面佈局。這個過程可以為您省去很多格式化麻煩，並確保您的文件看起來專業且精美。因此，下次您處理專案時，請記住本指南並像專業人士一樣輕鬆完成頁面設定。
+現在你就得到它了！透過這些簡單的步驟，您就可以使用 Aspose.Words for .NET 設定文件的頁面佈局。這個過程可以為您省去很多格式化麻煩，並確保您的文件看起來專業且精美。因此，下次您處理專案時，請記住本指南並像專業人士一樣輕鬆完成頁面設定。
 
 ## 常見問題解答
 

@@ -46,7 +46,7 @@ using Aspose.Words.Importing;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ## 3단계: 문서 로드
 
@@ -108,7 +108,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ## FAQ
 
 ### .NET용 Aspose.Words란 무엇입니까?
- Aspose.Words for .NET은 .NET 애플리케이션 내에서 Word 문서를 생성, 조작 및 변환하기 위한 강력한 라이브러리입니다.[더 알아보기](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET은 .NET 애플리케이션 내에서 Word 문서를 생성, 조작 및 변환하기 위한 강력한 라이브러리입니다.[자세히 알아보기](https://reference.aspose.com/words/net/).
 
 ### 구매하기 전에 Aspose.Words for .NET을 사용해 볼 수 있나요?
  예, 무료 평가판을 다운로드할 수 있습니다[여기](https://releases.aspose.com/).

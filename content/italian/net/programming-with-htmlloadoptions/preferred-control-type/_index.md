@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-## introduzione
+## Introduzione
 
 ci stiamo immergendo in un entusiasmante tutorial su come lavorare con le opzioni di caricamento HTML in Aspose.Words per .NET, concentrandoci in particolare sull'impostazione del tipo di controllo preferito quando si inserisce un campo modulo casella combinata in un documento Word. Questa guida passo passo ti aiuterà a capire come manipolare e visualizzare in modo efficace il contenuto HTML all'interno dei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- IMPOSTANDO`PreferredControlType` A`HtmlControlType.StructuredDocumentTag`, ci assicuriamo che la casella combinata venga visualizzata come tag di documento strutturato (SDT) nel documento di Word.
+ Impostando`PreferredControlType` A`HtmlControlType.StructuredDocumentTag`, ci assicuriamo che la casella combinata venga visualizzata come tag di documento strutturato (SDT) nel documento di Word.
 
 ## Passaggio 4: carica il contenuto HTML nel documento
 
@@ -93,7 +93,7 @@ Ciò salva il documento di Word con il controllo della casella combinata renderi
 
 ## Conclusione
 
-il gioco è fatto! Abbiamo inserito con successo un campo modulo casella combinata in un documento Word utilizzando Aspose.Words per .NET sfruttando le opzioni di caricamento HTML. Questa guida passo passo dovrebbe aiutarti a comprendere il processo e ad applicarlo ai tuoi progetti. Sia che tu stia automatizzando la creazione di documenti o manipolando contenuto HTML, Aspose.Words per .NET fornisce potenti strumenti per raggiungere i tuoi obiettivi.
+Ed ecco qua! Abbiamo inserito con successo un campo modulo casella combinata in un documento Word utilizzando Aspose.Words per .NET sfruttando le opzioni di caricamento HTML. Questa guida passo passo dovrebbe aiutarti a comprendere il processo e ad applicarlo ai tuoi progetti. Sia che tu stia automatizzando la creazione di documenti o manipolando contenuto HTML, Aspose.Words per .NET fornisce potenti strumenti per raggiungere i tuoi obiettivi.
 
 ## Domande frequenti
 

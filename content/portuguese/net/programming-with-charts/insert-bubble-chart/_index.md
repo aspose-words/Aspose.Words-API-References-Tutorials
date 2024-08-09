@@ -89,7 +89,7 @@ Parabéns! Você inseriu com sucesso um gráfico de bolhas em um documento do Wo
 
 ### Posso personalizar a aparência do gráfico de bolhas?
 
- Absolutamente! Aspose.Words for .NET oferece uma ampla gama de opções de personalização, desde cores e rótulos até formatação de séries de dados. Confira a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Absolutamente! Aspose.Words for .NET oferece uma ampla gama de opções de personalização, desde cores e rótulos até formatação de séries de dados. Confira o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
 
 ### É possível adicionar vários gráficos a um único documento?
 
@@ -101,7 +101,7 @@ Definitivamente. Embora este guia use C#, Aspose.Words for .NET é compatível c
 
 ### Como faço para obter uma avaliação gratuita do Aspose.Words for .NET?
 
- Você pode obter um teste gratuito no[local na rede Internet](https://releases.aspose.com/). Isso permite que você teste os recursos antes de fazer uma compra.
+ Você pode obter um teste gratuito no[site](https://releases.aspose.com/). Isso permite que você teste os recursos antes de fazer uma compra.
 
 ### Onde posso encontrar mais tutoriais e suporte para Aspose.Words for .NET?
 

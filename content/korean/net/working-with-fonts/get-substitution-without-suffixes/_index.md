@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /ko/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## 소개
 
-.NET용 Aspose.Words를 사용하여 글꼴 대체를 관리하는 포괄적인 가이드에 오신 것을 환영합니다. 문서에 글꼴이 올바르게 표시되지 않는 문제로 어려움을 겪은 적이 있다면 제대로 찾아오셨습니다. 이 튜토리얼에서는 접미사 없이 글꼴 대체를 효율적으로 처리하는 단계별 프로세스를 안내합니다. 시작하자!
+.NET용 Aspose.Words를 사용하여 글꼴 대체를 관리하는 포괄적인 가이드에 오신 것을 환영합니다. 문서에 글꼴이 올바르게 표시되지 않는 문제로 어려움을 겪은 적이 있다면 제대로 찾아오셨습니다. 이 튜토리얼에서는 접미사 없이 글꼴 대체를 효율적으로 처리하는 단계별 프로세스를 안내합니다.
 
 ## 전제 조건
 
@@ -17,7 +18,7 @@ url: /ko/net/working-with-fonts/get-substitution-without-suffixes/
 - C#에 대한 기본 지식: C# 프로그래밍을 이해하면 단계를 더 쉽게 따르고 구현할 수 있습니다.
 -  .NET 라이브러리용 Aspose.Words: 다음에서 라이브러리를 다운로드하고 설치하세요.[다운로드 링크](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio와 같은 개발 환경을 설정하여 코드를 작성하고 실행합니다.
-- 샘플 문서: 샘플 문서(예:`Rendering.docx`)를 이 튜토리얼에서 사용할 수 있습니다.
+-  샘플 문서: 샘플 문서(예:`Rendering.docx`)를 이 튜토리얼에서 사용할 수 있습니다.
 
 ## 네임스페이스 가져오기
 
@@ -26,7 +27,6 @@ url: /ko/net/working-with-fonts/get-substitution-without-suffixes/
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## 5단계: 경고 처리기 클래스 만들기
 
-경고를 효과적으로 처리하려면`IWarningCallback` 상호 작용. 이 클래스는 모든 글꼴 대체 경고를 캡처하고 기록합니다.
+ 경고를 효과적으로 처리하려면`IWarningCallback` 인터페이스. 이 클래스는 모든 글꼴 대체 경고를 캡처하고 기록합니다.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,31 +93,31 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 이 수업에서는:
--  그만큼`Warning` 메서드는 글꼴 대체와 관련된 경고를 캡처합니다.
+-  그만큼`Warning`메서드는 글꼴 대체와 관련된 경고를 캡처합니다.
 -  그만큼`FontWarnings` 컬렉션은 추가 검사 또는 로깅을 위해 이러한 경고를 저장합니다.
 
 ## 결론
 
 이제 Aspose.Words for .NET을 사용하여 접미사 없이 글꼴 대체를 처리하는 프로세스를 마스터했습니다. 이러한 지식을 통해 시스템에서 사용 가능한 글꼴에 관계없이 문서가 의도한 모양을 유지할 수 있습니다. Aspose.Words의 기능을 완전히 활용하려면 다양한 설정과 소스를 계속 실험해 보세요.
 
-## 자주 묻는 질문
+## FAQ
 
-### Q1: 여러 사용자 정의 디렉토리의 글꼴을 어떻게 사용할 수 있습니까?
+### 여러 사용자 정의 디렉토리의 글꼴을 어떻게 사용할 수 있습니까?
 
  여러 개를 추가할 수 있습니다.`FolderFontSource` 인스턴스에 대한`fontSources` 이에 따라 글꼴 소스를 나열하고 업데이트합니다.
 
-### Q2: Aspose.Words for .NET 무료 평가판은 어디서 다운로드할 수 있나요?
+### .NET용 Aspose.Words 무료 평가판을 어디에서 다운로드할 수 있나요?
 
  다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 무료 평가판 페이지](https://releases.aspose.com/).
 
-###  Q3: 다음을 사용하여 여러 유형의 경고를 처리할 수 있나요?`IWarningCallback`?
+###  다음을 사용하여 여러 유형의 경고를 처리할 수 있나요?`IWarningCallback`?
 
  예,`IWarningCallback` 인터페이스를 사용하면 글꼴 대체뿐만 아니라 다양한 유형의 경고를 처리할 수 있습니다.
 
-### Q4: Aspose.Words에 대한 지원은 어디서 받을 수 있나요?
+### Aspose.Words에 대한 지원은 어디서 받을 수 있나요?
 
  지원을 받으려면 다음을 방문하세요.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8).
 
-### Q5: 임시 라이센스를 구매할 수 있나요?
+### 임시 라이센스를 구매할 수 있나요?
 
  네, 임시 면허는 다음 기관에서 받으실 수 있습니다.[임시 라이센스 페이지](https://purchase.aspose.com/temporary-license/).

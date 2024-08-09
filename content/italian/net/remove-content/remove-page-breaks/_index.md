@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/remove-content/remove-page-breaks/
 ---
-## introduzione
+## Introduzione
 
 Rimuovere le interruzioni di pagina da un documento di Word può essere fondamentale per mantenere un flusso coerente nel testo. Che tu stia preparando una bozza finale per la pubblicazione o semplicemente riordinando un documento, rimuovere le interruzioni di pagina non necessarie può essere d'aiuto. In questo tutorial ti guideremo attraverso il processo utilizzando Aspose.Words per .NET. Questa potente libreria offre funzionalità complete di manipolazione dei documenti, rendendo attività come questa un gioco da ragazzi.
 
@@ -99,7 +99,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusione
 
-E il gioco è fatto! Con solo poche righe di codice, abbiamo rimosso con successo le interruzioni di pagina da un documento Word utilizzando Aspose.Words per .NET. Questa libreria rende la manipolazione dei documenti semplice ed efficiente. Che tu stia lavorando su documenti di grandi dimensioni o piccoli, Aspose.Words fornisce gli strumenti necessari per portare a termine il lavoro.
+Ed ecco qua! Con solo poche righe di codice, abbiamo rimosso con successo le interruzioni di pagina da un documento Word utilizzando Aspose.Words per .NET. Questa libreria rende la manipolazione dei documenti semplice ed efficiente. Che tu stia lavorando su documenti di grandi dimensioni o piccoli, Aspose.Words fornisce gli strumenti necessari per portare a termine il lavoro.
 
 ## Domande frequenti
 

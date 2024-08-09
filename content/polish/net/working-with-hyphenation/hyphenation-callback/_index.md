@@ -10,17 +10,17 @@ url: /pl/net/working-with-hyphenation/hyphenation-callback/
 
 ## Wstęp
 
-No hej! Czy kiedykolwiek miałeś trudności z formatowaniem tekstu, szczególnie w przypadku języków wymagających dzielenia wyrazów? Nie jesteś sam. Dzielenie wyrazów, choć kluczowe dla prawidłowego układu tekstu, może przyprawiać o ból głowy. Ale zgadnij co? Aspose.Words dla .NET Cię wspiera. Ta potężna biblioteka umożliwia płynne zarządzanie formatowaniem tekstu, w tym obsługę dzielenia wyrazów poprzez mechanizm wywołania zwrotnego. Zaintrygowany? Zanurzmy się w sedno tego, jak zaimplementować wywołanie zwrotne polegające na dzieleniu wyrazów przy użyciu Aspose.Words dla .NET.
+Hej tam! Czy kiedykolwiek miałeś trudności z formatowaniem tekstu, szczególnie w przypadku języków wymagających dzielenia wyrazów? Nie jesteś sam. Dzielenie wyrazów, choć kluczowe dla prawidłowego układu tekstu, może przyprawiać o ból głowy. Ale zgadnij co? Aspose.Words dla .NET Cię wspiera. Ta potężna biblioteka umożliwia płynne zarządzanie formatowaniem tekstu, w tym obsługę dzielenia wyrazów poprzez mechanizm wywołania zwrotnego. Zaintrygowany? Zanurzmy się w sedno tego, jak zaimplementować wywołanie zwrotne polegające na dzieleniu wyrazów przy użyciu Aspose.Words dla .NET.
 
 ## Warunki wstępne
 
 Zanim zabrudzimy sobie ręce kodem, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Upewnij się, że masz bibliotekę. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. IDE: środowisko programistyczne, takie jak Visual Studio.
 3. Podstawowa znajomość C#: Zrozumienie C# i frameworku .NET.
 4. Słowniki dzielenia wyrazów: słowniki dzielenia wyrazów dla języków, których planujesz używać.
-5.  Licencja Aspose: Ważna licencja Aspose. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
+5.  Licencja Aspose: Ważna licencja Aspose. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
 
 ## Importuj przestrzenie nazw
 
@@ -68,7 +68,7 @@ Teraz załadujmy dokument wymagający dzielenia wyrazów.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Tutaj ładujemy niemiecki dokument tekstowy. Możesz wymienić`"German text.docx"` z nazwą pliku dokumentu.
+Tutaj ładujemy niemiecki dokument tekstowy. Możesz wymienić`"German text.docx"` z nazwą pliku dokumentu.
 
 ## Krok 4: Zapisz dokument
 
@@ -129,7 +129,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## Wniosek
 
-I masz to! Właśnie nauczyłeś się, jak zaimplementować wywołanie zwrotne polegające na dzieleniu wyrazów w Aspose.Words dla .NET. Wykonując poniższe kroki, możesz mieć pewność, że Twoje dokumenty będą pięknie sformatowane, niezależnie od języka. Niezależnie od tego, czy masz do czynienia z angielskim, niemieckim czy jakimkolwiek innym językiem, ta metoda pozwala bez wysiłku poradzić sobie z dzieleniem wyrazów.
+masz to! Właśnie nauczyłeś się, jak zaimplementować wywołanie zwrotne polegające na dzieleniu wyrazów w Aspose.Words dla .NET. Wykonując poniższe kroki, możesz mieć pewność, że Twoje dokumenty będą pięknie sformatowane, niezależnie od języka. Niezależnie od tego, czy masz do czynienia z angielskim, niemieckim czy jakimkolwiek innym językiem, ta metoda pozwala bez wysiłku poradzić sobie z dzieleniem wyrazów.
 
 ## Często zadawane pytania
 
@@ -140,10 +140,10 @@ Aspose.Words dla .NET to potężna biblioteka do manipulacji dokumentami, która
 Dzielenie wyrazów poprawia układ tekstu poprzez dzielenie słów w odpowiednich miejscach, zapewniając bardziej czytelny i atrakcyjny wizualnie dokument.
 
 ### Czy mogę używać Aspose.Words za darmo?
- Aspose.Words oferuje bezpłatną wersję próbną. Możesz to dostać[Tutaj](https://releases.aspose.com/).
+ Aspose.Words oferuje bezpłatną wersję próbną. Możesz to zdobyć[Tutaj](https://releases.aspose.com/).
 
 ### Jak uzyskać słownik dzielenia wyrazów?
 Możesz pobrać słowniki dzielenia wyrazów z różnych zasobów internetowych lub w razie potrzeby utworzyć własne.
 
 ### Co się stanie, jeśli brakuje słownika dzielenia wyrazów?
- Jeśli brakuje słownika,`RequestDictionary` Metoda zgłasza wyjątek, który można obsłużyć, aby poinformować użytkownika lub zapewnić rozwiązanie awaryjne.
+ Jeśli brakuje słownika,`RequestDictionary`Metoda zgłasza wyjątek, który można obsłużyć, aby poinformować użytkownika lub zapewnić rozwiązanie awaryjne.

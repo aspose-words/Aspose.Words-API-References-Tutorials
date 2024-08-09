@@ -17,7 +17,7 @@ Antes de profundizar en el meollo de la cuestión, hay algunas cosas que necesit
 
 -  Aspose.Words para la biblioteca .NET: puede descargarlo desde[Página de lanzamientos de Aspose](https://releases.aspose.com/words/net/).
 - .NET Framework: asegúrese de tener instalado un .NET framework compatible.
-- IDE: Visual Studio o cualquier otro entorno de desarrollo integrado compatible con .NET.
+- IDE: Visual Studio o cualquier otro Entorno de Desarrollo Integrado compatible con .NET.
 - Comprensión básica de C#: necesitará una comprensión básica del lenguaje de programación C#.
 
 ## Importar espacios de nombres
@@ -32,7 +32,7 @@ Dividamos el proceso en pasos manejables para ayudarlo a desvincular encabezados
 
 ## Paso 1: configura tu proyecto
 
-Primero, deberá configurar el entorno de su proyecto. Abra su IDE y cree un nuevo proyecto .NET. Agregue una referencia a la biblioteca Aspose.Words que descargó anteriormente.
+Primero, necesitará configurar el entorno de su proyecto. Abra su IDE y cree un nuevo proyecto .NET. Agregue una referencia a la biblioteca Aspose.Words que descargó anteriormente.
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -67,7 +67,7 @@ srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 
 ## Paso 5: agregue el documento fuente
 
- Después de desvincular los encabezados y pies de página, puede agregar el documento de origen al documento de destino. Utilizar el`AppendDocument` método y establezca el modo de formato de importación en`KeepSourceFormatting` para mantener el formato original del documento fuente.
+ Después de desvincular los encabezados y pies de página, puede agregar el documento de origen al documento de destino. Utilice el`AppendDocument` método y establezca el modo de formato de importación en`KeepSourceFormatting` para mantener el formato original del documento fuente.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -100,4 +100,4 @@ Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos d
 ¡Absolutamente! Aspose.Words para .NET se puede utilizar con cualquier lenguaje .NET, incluidos VB.NET y F#.
 
 ### ¿Dónde puedo encontrar más documentación y soporte para Aspose.Words para .NET?  
- Puede encontrar documentación completa sobre el[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/) , y hay soporte disponible en el[asponer foro](https://forum.aspose.com/c/words/8).
+ Puede encontrar documentación completa sobre el[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/) , y hay soporte disponible en el[aspose foro](https://forum.aspose.com/c/words/8).

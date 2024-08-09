@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf");
 
 ## Langkah 3: Menyimpan PDF sebagai Dokumen Word
 
-Langkah terakhir adalah menyimpan dokumen PDF yang dimuat sebagai dokumen Word (Docx). Ini adalah dimana keajaiban terjadi.
+Langkah terakhir adalah menyimpan dokumen PDF yang dimuat sebagai dokumen Word (Docx). Di sinilah keajaiban terjadi.
 
 ```csharp
 doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");

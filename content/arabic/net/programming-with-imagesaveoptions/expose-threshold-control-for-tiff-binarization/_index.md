@@ -66,7 +66,7 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
 دعونا نحلل هذا:
 -  TiffCompression: يضبط نوع الضغط لصورة TIFF. هنا، نحن نستخدم`Ccitt3`.
 -  ImageColorMode: يضبط وضع اللون. وضعناها على`Grayscale` لإنشاء صورة ذات تدرج رمادي.
--  TiffBinarizationMethod: يحدد طريقة الثنائية. كانوا يستخدمون`FloydSteinbergDithering`.
+-  TiffBinarizationMethod: يحدد طريقة الثنائية. نحن نستخدم`FloydSteinbergDithering`.
 - ThresholdForFloydSteinbergDithering: يضبط عتبة ثبات Floyd-Steinberg. القيمة الأعلى تعني عددًا أقل من وحدات البكسل السوداء.
 
 ## الخطوة 4: احفظ المستند كملف TIFF
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBin
 
 ## خاتمة
 
-وهناك لديك! لقد تعلمت للتو كيفية الكشف عن التحكم في العتبة لثنائية TIFF في مستند Word باستخدام Aspose.Words لـ .NET. تسهل هذه المكتبة القوية التعامل مع مستندات Word بطرق مختلفة، بما في ذلك تحويلها إلى تنسيقات مختلفة باستخدام إعدادات مخصصة. جربه وشاهد كيف يمكنه تبسيط مهام معالجة المستندات الخاصة بك!
+وهنا لديك! لقد تعلمت للتو كيفية الكشف عن التحكم في العتبة لثنائية TIFF في مستند Word باستخدام Aspose.Words لـ .NET. تسهل هذه المكتبة القوية التعامل مع مستندات Word بطرق مختلفة، بما في ذلك تحويلها إلى تنسيقات مختلفة باستخدام إعدادات مخصصة. جربه وشاهد كيف يمكنه تبسيط مهام معالجة المستندات الخاصة بك!
 
 ## الأسئلة الشائعة
 

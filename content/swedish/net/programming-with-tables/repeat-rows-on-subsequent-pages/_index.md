@@ -9,7 +9,7 @@ url: /sv/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 ## Introduktion
 
-Att skapa ett Word-dokument programmatiskt kan vara en skrämmande uppgift, särskilt när du behöver behålla formateringen över flera sidor. Har du någonsin försökt skapa en tabell i Word, bara för att inse att dina rubrikrader inte upprepas på efterföljande sidor? Frukta inte! Med Aspose.Words för .NET kan du enkelt se till att dina tabellrubriker upprepas på varje sida, vilket ger dina dokument ett professionellt och polerat utseende. I den här handledningen går vi igenom stegen för att uppnå detta med enkla kodexempel och detaljerade förklaringar. Låt oss dyka in!
+Att skapa ett Word-dokument programmatiskt kan vara en skrämmande uppgift, särskilt när du behöver behålla formateringen över flera sidor. Har du någonsin försökt skapa en tabell i Word, bara för att inse att dina rubrikrader inte upprepas på efterföljande sidor? Var inte rädd! Med Aspose.Words för .NET kan du enkelt se till att dina tabellrubriker upprepas på varje sida, vilket ger dina dokument ett professionellt och polerat utseende. I den här handledningen går vi igenom stegen för att uppnå detta med enkla kodexempel och detaljerade förklaringar. Låt oss dyka in!
 
 ## Förutsättningar
 
@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Denna loop infogar 50 rader med data i tabellen, med två kolumner i varje rad. De`HeadingFormat` är satt till`false` för dessa rader, eftersom de inte är rubrikrader.
+ Denna loop infogar 50 rader med data i tabellen, med två kolumner i varje rad. De`HeadingFormat` är inställd på`false` för dessa rader, eftersom de inte är rubrikrader.
 
 ## Steg 4: Spara dokumentet
 
@@ -118,4 +118,4 @@ Och där har du det! Med bara några rader kod kan du skapa ett Word-dokument me
  Ja, du kan ändra befintliga tabeller genom att komma åt dem via`Document` objekt och tillämpa liknande formatering.
 
 ### Vilka andra tabellformateringsalternativ finns i Aspose.Words för .NET?
- Aspose.Words för .NET erbjuder ett brett utbud av tabellformateringsalternativ, inklusive cellsammanslagning, gränsinställningar och tabelljustering. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Aspose.Words för .NET erbjuder ett brett utbud av tabellformateringsalternativ, inklusive cellsammanslagning, gränsinställningar och tabelljustering. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer information.

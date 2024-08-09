@@ -9,7 +9,7 @@ url: /es/net/join-and-append-documents/ignore-text-boxes/
 ---
 ## Introducción
 
-Bienvenido a este tutorial detallado sobre el uso de Aspose.Words para .NET para fusionar documentos de Word ignorando los cuadros de texto. Si busca optimizar el procesamiento de sus documentos y asegurarse de mantener el formato de los cuadros de texto, está en el lugar correcto. Profundicemos en esta guía paso a paso.
+Bienvenido a este tutorial detallado sobre el uso de Aspose.Words para .NET para fusionar documentos de Word ignorando los cuadros de texto. Si está buscando optimizar el procesamiento de sus documentos y asegurarse de que se mantenga el formato de los cuadros de texto, está en el lugar correcto. Profundicemos en esta guía paso a paso.
 
 ## Requisitos previos
 
@@ -108,7 +108,7 @@ Ha fusionado con éxito dos documentos de Word utilizando Aspose.Words para .NET
 ## Preguntas frecuentes
 
 ### ¿Qué es Aspose.Words para .NET?
- Aspose.Words para .NET es una poderosa biblioteca para crear, manipular y convertir documentos de Word dentro de aplicaciones .NET.[Aprende más](https://reference.aspose.com/words/net/).
+ Aspose.Words para .NET es una poderosa biblioteca para crear, manipular y convertir documentos de Word dentro de aplicaciones .NET.[Más información](https://reference.aspose.com/words/net/).
 
 ### ¿Puedo probar Aspose.Words para .NET antes de comprarlo?
  Sí, puedes descargar una prueba gratuita.[aquí](https://releases.aspose.com/).

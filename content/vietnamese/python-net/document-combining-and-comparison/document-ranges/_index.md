@@ -113,7 +113,7 @@ for section in sections:
 
 ## Xử lý đầu trang và chân trang
 
-Đầu trang và chân trang thường yêu cầu cách xử lý riêng biệt. Điều hướng các khu vực này cho phép chúng tôi tùy chỉnh chúng một cách hiệu quả:
+Đầu trang và chân trang thường yêu cầu cách xử lý riêng biệt. Việc điều hướng các vùng này cho phép chúng tôi tùy chỉnh chúng một cách hiệu quả:
 
 ```python
 for section in doc.sections:
@@ -133,7 +133,7 @@ for hyperlink in doc.range.get_child_nodes(NodeType.FIELD_HYPERLINK, True):
 
 ## Phần kết luận
 
-Điều hướng phạm vi tài liệu là một kỹ năng cần thiết để chỉnh sửa chính xác. Thư viện Aspose.Words for Python trao quyền cho các nhà phát triển các công cụ để điều hướng các đoạn văn, phần, bảng, v.v. Bằng cách nắm vững các kỹ thuật này, bạn sẽ hợp lý hóa quy trình chỉnh sửa của mình và tạo tài liệu chuyên nghiệp một cách dễ dàng.
+Điều hướng phạm vi tài liệu là một kỹ năng cần thiết để chỉnh sửa chính xác. Thư viện Aspose.Words for Python trao quyền cho các nhà phát triển các công cụ để điều hướng các đoạn văn, phần, bảng, v.v. Bằng cách nắm vững các kỹ thuật này, bạn sẽ hợp lý hóa quy trình chỉnh sửa của mình và tạo các tài liệu chuyên nghiệp một cách dễ dàng.
 
 ## Câu hỏi thường gặp
 

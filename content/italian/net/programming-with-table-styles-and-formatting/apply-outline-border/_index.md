@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
-## introduzione
+## Introduzione
 
 Nel tutorial di oggi, ci immergiamo nel mondo della manipolazione dei documenti utilizzando Aspose.Words per .NET. Nello specifico, impareremo come applicare un bordo di contorno a una tabella in un documento di Word. Questa è un'abilità fantastica da avere nel tuo toolkit se lavori spesso con la generazione e la formattazione automatizzata di documenti. Quindi, iniziamo questo viaggio per rendere i vostri tavoli non solo funzionali ma anche visivamente accattivanti.
 
@@ -86,7 +86,7 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
- Ciascun tipo di bordo (sinistro, destro, superiore, inferiore) viene impostato individualmente. Noi usiamo`LineStyle.Single` per una linea continua,`1.5` per la larghezza della linea e`Color.Green` per il colore del bordo.
+ Ciascun tipo di bordo (sinistro, destro, superiore, inferiore) viene impostato individualmente. Usiamo`LineStyle.Single` per una linea continua,`1.5` per la larghezza della linea e`Color.Green` per il colore del bordo.
 
 ## Passaggio 6: applicare l'ombreggiatura delle celle
 
@@ -110,7 +110,7 @@ Questo passaggio salva il documento con la formattazione applicata. Puoi aprirlo
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, hai applicato con successo un bordo di contorno a una tabella in un documento di Word utilizzando Aspose.Words per .NET. Questo tutorial ha trattato il caricamento del documento, l'accesso alla tabella, l'allineamento, la cancellazione dei bordi esistenti, l'applicazione di nuovi bordi, l'aggiunta dell'ombreggiatura delle celle e infine il salvataggio del documento. 
+Ed ecco qua! Seguendo questi passaggi, hai applicato con successo un bordo di contorno a una tabella in un documento di Word utilizzando Aspose.Words per .NET. Questo tutorial ha trattato il caricamento del documento, l'accesso alla tabella, l'allineamento, la cancellazione dei bordi esistenti, l'applicazione di nuovi bordi, l'aggiunta dell'ombreggiatura delle celle e infine il salvataggio del documento. 
 
 Con queste competenze, puoi migliorare la presentazione visiva delle tue tabelle, rendendo i tuoi documenti più professionali e accattivanti. Buona programmazione!
 

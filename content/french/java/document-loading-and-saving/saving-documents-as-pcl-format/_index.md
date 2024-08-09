@@ -81,7 +81,7 @@ Aspose.Words for Java traite principalement des documents Word. Pour convertir d
 
 ### Existe-t-il une version d’essai d’Aspose.Words pour Java disponible ?
 
-Oui, vous pouvez accéder à une version d'essai d'Aspose.Words for Java pour explorer ses fonctionnalités avant de faire un achat. Visitez le site Web d'Aspose pour plus de détails.
+Oui, vous pouvez accéder à une version d'essai d'Aspose.Words for Java pour explorer ses fonctionnalités avant de faire un achat. Visitez le site Web Aspose pour plus de détails.
 
 ### Où puis-je trouver plus de ressources et de documentation pour Aspose.Words pour Java ?
 

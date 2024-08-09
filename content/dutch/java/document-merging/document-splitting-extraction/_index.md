@@ -98,7 +98,7 @@ Met Aspose.Words voor Java kunt u eenvoudig inhoud uit documenten splitsen en ex
 
 ### Kan ik een document splitsen op basis van aangepaste criteria?
 
- Ja, u kunt aangepaste criteria definiëren voor het splitsen van een document met Aspose.Words voor Java. Creëer eenvoudig uw eigen maat`DocumentSplitCriteria` implementatie.
+ Ja, u kunt aangepaste criteria definiëren voor het splitsen van een document met Aspose.Words voor Java. Creëer eenvoudig uw eigen maat`DocumentSplitCriteria` uitvoering.
 
 ### Welke bestandsformaten ondersteunt Aspose.Words voor Java?
 

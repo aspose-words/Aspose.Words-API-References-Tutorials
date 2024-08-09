@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-check-box-form-field/
 ---
-## introduzione
+## Introduzione
 Nel mondo dell'automazione dei documenti, Aspose.Words per .NET si pone come una centrale elettrica, offrendo agli sviluppatori un ampio toolkit per creare, modificare e manipolare documenti Word a livello di codice. Sia che tu stia lavorando su sondaggi, moduli o qualsiasi documento che richieda l'interazione dell'utente, l'inserimento dei campi del modulo con casella di controllo è un gioco da ragazzi con Aspose.Words per .NET. In questa guida completa ti guideremo attraverso il processo, passo dopo passo, assicurandoti di padroneggiare questa funzionalità come un professionista.
 
 ## Prerequisiti

@@ -118,7 +118,7 @@ Ja, u kunt meerdere tabellen klonen door elke tabel in het document te doorlopen
  De`Clone` methode behoudt alle opmaak, inclusief samengevoegde cellen, waardoor een exact duplicaat van de tabel wordt gegarandeerd.
 
 ### Hoe kloon ik een specifieke tabel op naam?
-U kunt tabellen identificeren aan de hand van aangepaste eigenschappen of unieke inhoud en vervolgens de gewenste tabel klonen met behulp van soortgelijke stappen.
+U kunt tabellen identificeren aan de hand van aangepaste eigenschappen of unieke inhoud en vervolgens de gewenste tabel klonen met behulp van vergelijkbare stappen.
 
 ### Kan ik de opmaak van de gekloonde tabel aanpassen?
 Ja, na het klonen kunt u de opmaak van de gekloonde tabel wijzigen met behulp van de opmaakeigenschappen en -methoden van Aspose.Words.

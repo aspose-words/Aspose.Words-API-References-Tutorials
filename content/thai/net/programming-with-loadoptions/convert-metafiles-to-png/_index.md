@@ -94,4 +94,4 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
  ใช่ จำเป็นต้องมีใบอนุญาตเพื่อการใช้งานเต็มรูปแบบ คุณจะได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อวัตถุประสงค์ในการทดลอง
 
 ### ฉันสามารถใช้วิธีนี้กับรูปแบบกราฟิกอื่นๆ เช่น JPEG หรือ GIF ได้หรือไม่
- วิธีการเฉพาะนี้ใช้สำหรับ metafiles แต่ Aspose.Words สำหรับ .NET รองรับรูปแบบรูปภาพที่หลากหลาย อ้างถึง[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับข้อมูลเพิ่มเติม.
+ วิธีการเฉพาะนี้ใช้สำหรับ metafiles แต่ Aspose.Words สำหรับ .NET รองรับรูปแบบรูปภาพที่หลากหลาย อ้างถึง[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับข้อมูลเพิ่มเติม

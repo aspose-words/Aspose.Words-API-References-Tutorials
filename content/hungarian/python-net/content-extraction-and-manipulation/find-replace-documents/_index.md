@@ -106,7 +106,7 @@ Word-dokumentumok hatékony kezelése és kezelése gyakran magában foglalja a 
 
 ### Cserélhetek szöveget csak az oldalak meghatározott tartományán belül?
 
- Igen tudsz. A csere végrehajtása előtt adja meg az oldaltartományt a gombbal`doc.get_child_nodes()` módszert az adott oldalak tartalmának lekéréséhez.
+ Igen, megteheti. A csere végrehajtása előtt adja meg az oldaltartományt a gombbal`doc.get_child_nodes()` módszert az adott oldalak tartalmának lekéréséhez.
 
 ### Vissza lehet vonni egy keresési és csereműveletet?
 

@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/get-floating-table-position/
 ---
-## introduzione
+## Introduzione
 
-Sei pronto per tuffarti nel mondo di Aspose.Words per .NET? Oggi ti porteremo in un viaggio alla scoperta dei segreti delle tabelle mobili nei documenti Word. Immagina di avere un tavolo che non si limita a stare fermo ma fluttua elegantemente attorno al testo. Abbastanza bello, vero? Questo tutorial ti spiegherà come ottenere le proprietà di posizionamento di tali tabelle mobili. Quindi iniziamo!
+Sei pronto per tuffarti nel mondo di Aspose.Words per .NET? Oggi ti porteremo in un viaggio alla scoperta dei segreti delle tabelle mobili nei documenti Word. Immagina di avere un tavolo che non si limita a stare fermo ma fluttua elegantemente attorno al testo. Abbastanza bello, vero? Questo tutorial ti spiegherà come ottenere le proprietà di posizionamento di tali tabelle mobili. Quindi, cominciamo!
 
 ## Prerequisiti
 
@@ -90,7 +90,7 @@ Queste proprietà forniscono uno sguardo dettagliato su come la tabella è ancor
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, puoi facilmente recuperare e stampare le proprietà di posizionamento delle tabelle mobili nei tuoi documenti Word utilizzando Aspose.Words per .NET. Che tu stia automatizzando l'elaborazione dei documenti o semplicemente sei curioso di conoscere i layout delle tabelle, questa conoscenza ti tornerà sicuramente utile.
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente recuperare e stampare le proprietà di posizionamento delle tabelle mobili nei tuoi documenti Word utilizzando Aspose.Words per .NET. Che tu stia automatizzando l'elaborazione dei documenti o semplicemente sei curioso di conoscere i layout delle tabelle, questa conoscenza ti tornerà sicuramente utile.
 
 Ricorda, lavorare con Aspose.Words per .NET apre un mondo di possibilità per la manipolazione e l'automazione dei documenti. Buona programmazione!
 

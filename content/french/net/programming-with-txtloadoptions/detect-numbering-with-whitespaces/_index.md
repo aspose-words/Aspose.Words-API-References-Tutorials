@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous maîtrisez l'art de détecter la numérotation avec des espaces dans les documents en texte brut à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité peut être incroyablement pratique lorsque vous traitez différents formats de texte et assurez-vous que vos listes sont représentées avec précision dans vos documents Word. Ainsi, la prochaine fois que vous rencontrerez ces listes délicates, vous saurez exactement quoi faire.
+Et voilà ! Avec seulement quelques lignes de code, vous maîtrisez l'art de détecter la numérotation avec des espaces dans les documents en texte brut à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité peut être incroyablement pratique lorsque vous traitez différents formats de texte et assurez-vous que vos listes sont représentées avec précision dans vos documents Word. Ainsi, la prochaine fois que vous rencontrerez ces listes délicates, vous saurez exactement quoi faire.
 
 ## FAQ
 

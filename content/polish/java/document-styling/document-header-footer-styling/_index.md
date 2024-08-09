@@ -99,7 +99,7 @@ Tak, możesz mieć różne nagłówki i stopki dla stron nieparzystych i parzyst
 
 ### Czy można dodać hiperłącza w nagłówkach lub stopkach?
 
- Z pewnością! Możesz dodawać hiperłącza w nagłówkach i stopkach, używając Aspose.Words dla Java. Użyj`Hyperlink` class, aby utworzyć hiperłącza i wstawić je do treści nagłówka lub stopki.
+ Z pewnością! Możesz dodawać hiperłącza w nagłówkach i stopkach, używając Aspose.Words dla Java. Skorzystaj z`Hyperlink` class, aby utworzyć hiperłącza i wstawić je do treści nagłówka lub stopki.
 
 ### Jak wyrównać zawartość nagłówka lub stopki do lewej lub prawej strony?
 
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Czy mogę dodać niestandardowe pola, takie jak tytuły dokumentów, do nagłówków i stopek?
 
-Tak, możesz dodać niestandardowe pola do nagłówków i stopek. Stwórz`Run` element i wstaw go do treści nagłówka lub stopki, podając żądany tekst. Dostosuj formatowanie według potrzeb.
+Tak, możesz dodać niestandardowe pola do nagłówków i stopek. Utwórz`Run` element i wstaw go do treści nagłówka lub stopki, podając żądany tekst. Dostosuj formatowanie według potrzeb.
 
 ### Czy Aspose.Words dla Java jest kompatybilny z różnymi formatami dokumentów?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/remove-custom-document-properties/
 ---
-## Úvod
+## Zavedení
 
 Zapletli jste se někdy do sítě vlastních vlastností dokumentu v souborech aplikace Word? Nejsi sám! Správa těchto vlastností může být obtížná, ale s Aspose.Words pro .NET můžete tento proces bez námahy zefektivnit. V tomto tutoriálu vás provedeme odstraněním vlastních vlastností dokumentu pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce bude pro vás jednoduchý a přímočarý. Jste připraveni se ponořit? Začněme!
 
@@ -101,10 +101,10 @@ Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty W
 Aspose.Words for .NET je speciálně navržen pro aplikace .NET. Aspose však nabízí podobné knihovny pro Javu a další platformy.
 
 ### 3. Jak získám bezplatnou zkušební verzi Aspose.Words for .NET?
- Můžeš[stáhnout zkušební verzi zdarma](https://releases.aspose.com/) z webu Aspose.
+ Můžete[stáhnout zkušební verzi zdarma](https://releases.aspose.com/) z webu Aspose.
 
 ### 4. Kde najdu další návody na Aspose.Words pro .NET?
  Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro další návody a příklady.
 
 ### 5. Jak si mohu zakoupit licenci pro Aspose.Words for .NET?
- Můžeš[koupit licenci](https://purchase.aspose.com/buy) přímo z webu Aspose.
+ Můžete[koupit licenci](https://purchase.aspose.com/buy) přímo z webu Aspose.

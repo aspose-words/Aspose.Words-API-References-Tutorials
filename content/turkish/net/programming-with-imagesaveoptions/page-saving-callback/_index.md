@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinin her sayfasını ayrı bir PNG görüntüsü olarak kaydetmek için sayfa kaydetme geri çağrısını başarıyla kurdunuz. Bu teknik, sayfa önizlemeleri oluşturmaktan, raporlar için ayrı sayfa görüntüleri oluşturmaya kadar çeşitli uygulamalar için inanılmaz derecede faydalıdır. 
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinin her sayfasını ayrı bir PNG görüntüsü olarak kaydetmek için sayfa kaydetme geri çağrısını başarıyla kurdunuz. Bu teknik, sayfa önizlemeleri oluşturmaktan, raporlar için ayrı sayfa görüntüleri oluşturmaya kadar çeşitli uygulamalar için inanılmaz derecede faydalıdır. 
 
 Mutlu kodlama!
 
@@ -104,4 +104,4 @@ Mutlu kodlama!
 Büyük belgelerde, bellek kullanımını etkili bir şekilde yönetmek için sayfaları toplu olarak işlemeyi düşünün.
 
 ### Aspose.Words for .NET hakkında daha fazla bilgiyi nerede bulabilirim?  
- Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) Kapsamlı kılavuzlar ve örnekler için.
+ Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) Kapsamlı kılavuzlar ve örnekler için.

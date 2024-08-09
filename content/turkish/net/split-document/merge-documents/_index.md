@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Basit Birleştirme
 
- Basit bir birleştirmeyle başlayalım. Aşağıdakileri kullanarak iki belgeyi tek bir belgede birleştireceğiz:`Merger.Merge` yöntem.
+ Basit bir birleştirmeyle başlayalım. Aşağıdakileri kullanarak iki belgeyi tek bir belgede birleştireceğiz:`Merger.Merge` Yöntem.
 
 ```csharp
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
@@ -89,7 +89,7 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## Çözüm
 
- İşte buyur! Aspose.Words for .NET kullanarak Word belgelerini nasıl birleştireceğinizi öğrendiniz. Bu eğitim, ortamınızı ayarlamayı, basit birleştirmeleri gerçekleştirmeyi, kaydetme seçenekleriyle birleştirmeyi, birleştirilmiş belgeleri PDF'ye dönüştürmeyi ve birleştirilmiş belgelerden belge örneği oluşturmayı kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
+ Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgelerini nasıl birleştireceğinizi öğrendiniz. Bu eğitim, ortamınızı ayarlamayı, basit birleştirmeleri gerçekleştirmeyi, kaydetme seçenekleriyle birleştirmeyi, birleştirilmiş belgeleri PDF'ye dönüştürmeyi ve birleştirilmiş belgelerden belge örneği oluşturmayı kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
 
 ## SSS'ler
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ### Birleştirme sırasında farklı biçimlendirmeyi nasıl halledebilirim?
 
- Aspose.Words aşağıdakiler gibi çeşitli birleştirme formatı modları sağlar:`KeepSourceFormatting`Ve`MergeFormatting` Bakın[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
+ Aspose.Words aşağıdakiler gibi çeşitli birleştirme formatı modları sağlar:`KeepSourceFormatting`Ve`MergeFormatting` Şuraya bakın:[API belgeleri](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
 
 ### Aspose.Words for .NET için nasıl destek alabilirim?
 

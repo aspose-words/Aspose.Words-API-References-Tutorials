@@ -17,7 +17,7 @@ Antes de entrarmos no código, vamos ter certeza de que você tem tudo o que pre
 
 1.  Aspose.Words for .NET: Se ainda não o fez, baixe a versão mais recente no[Página de lançamentos do Aspose](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: configure seu ambiente de desenvolvimento. O Visual Studio é uma escolha popular, mas você pode usar qualquer IDE que suporte .NET.
-3.  Licença: Se você está apenas experimentando, você pode usar um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para desbloquear todas as funcionalidades.
+3.  Licença: Se você está apenas experimentando, você pode usar um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para desbloquear todas as funcionalidades.
 4. Compreensão básica de C#: A familiaridade com a programação C# o ajudará a acompanhar os exemplos.
 
 ## Importar namespaces

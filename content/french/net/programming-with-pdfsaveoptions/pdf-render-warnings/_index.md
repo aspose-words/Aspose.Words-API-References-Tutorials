@@ -126,7 +126,7 @@ En suivant ces étapes, vous pouvez gérer efficacement les avertissements de re
 
 ### Q1 : Puis-je gérer d’autres types d’avertissements avec cette méthode ?
 
- Oui le`IWarningCallback` L'interface peut gérer différents types d'avertissements, pas seulement ceux liés au rendu PDF.
+ Oui, le`IWarningCallback` L'interface peut gérer différents types d'avertissements, pas seulement ceux liés au rendu PDF.
 
 ### Q2 : Où puis-je télécharger un essai gratuit d'Aspose.Words pour .NET ?
 
@@ -138,7 +138,7 @@ MetafileRenderingOptions sont des paramètres qui déterminent la manière dont 
 
 ### Q4 : Où puis-je trouver de l'aide pour Aspose.Words ?
 
- Visiter le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) à l'aide.
+ Visitez le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) pour obtenir de l'aide.
 
 ### Q5 : Est-il possible d'obtenir une licence temporaire pour Aspose.Words ?
 

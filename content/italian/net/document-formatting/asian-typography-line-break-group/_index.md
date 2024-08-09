@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/document-formatting/asian-typography-line-break-group/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come perfezionare la tipografia dei tuoi documenti Word alla perfezione? Soprattutto quando si ha a che fare con le lingue asiatiche, le sfumature delle interruzioni di riga e della formattazione possono essere piuttosto complicate. Ma non preoccuparti, ci pensiamo noi! In questa guida completa, approfondiremo come controllare le interruzioni di riga della tipografia asiatica nei documenti di Word utilizzando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial passo passo ti guiderà attraverso tutto ciò che devi sapere. Pronto a rendere i tuoi documenti impeccabili? Iniziamo!
 
@@ -83,12 +83,12 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 
 ## Conclusione
 
-il gioco è fatto! Con solo poche righe di codice, hai imparato l'arte di controllare le interruzioni di riga della tipografia asiatica nei documenti Word utilizzando Aspose.Words per .NET. Questo potente strumento ti consente di apportare modifiche precise, garantendo ai tuoi documenti un aspetto professionale e raffinato. Che tu stia preparando un rapporto, una presentazione o qualsiasi documento che includa testo asiatico, questi passaggi ti aiuteranno a mantenere una formattazione impeccabile. 
+Ed ecco qua! Con solo poche righe di codice, hai imparato l'arte di controllare le interruzioni di riga della tipografia asiatica nei documenti Word utilizzando Aspose.Words per .NET. Questo potente strumento ti consente di apportare modifiche precise, garantendo ai tuoi documenti un aspetto professionale e raffinato. Che tu stia preparando un rapporto, una presentazione o qualsiasi documento che includa testo asiatico, questi passaggi ti aiuteranno a mantenere una formattazione impeccabile. 
 
 ## Domande frequenti
 
 ### Cos'è il controllo delle interruzioni di linea in Estremo Oriente?
-Il controllo delle interruzioni di riga dell'Estremo Oriente è un'impostazione che gestisce il modo in cui il testo va a capo nelle lingue asiatiche, garantendo formattazione e leggibilità corrette.
+Il controllo delle interruzioni di riga dell'Estremo Oriente è un'impostazione che gestisce il modo in cui il testo va a capo nelle lingue asiatiche, garantendo formattazione e leggibilità adeguate.
 
 ### Perché dovrei disabilitare la punteggiatura sporgente?
 Disabilitare la punteggiatura sporgente aiuta a mantenere un aspetto pulito e professionale, soprattutto nei documenti con tipografia asiatica.

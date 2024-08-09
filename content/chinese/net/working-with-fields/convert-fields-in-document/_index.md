@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ## 常见问题解答
 
 ### 我可以使用 Aspose.Words for .NET 转换其他类型的字段吗？
-是的，Aspose.Words for .NET 允许您操作各种类型的字段，而不仅仅是 IF 字段。您可以探索[文档](https://reference.aspose.com/words/net/)更多细节。
+是的，Aspose.Words for .NET 允许您操作各种类型的字段，而不仅仅是 IF 字段。您可以探索[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### Word 文档中的 IF 字段是什么？
 IF 字段是条件字段，根据特定条件显示文本。它们通常用于在 Word 文档中创建动态内容。

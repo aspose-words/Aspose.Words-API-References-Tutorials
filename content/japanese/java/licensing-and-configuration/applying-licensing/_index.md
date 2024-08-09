@@ -107,7 +107,7 @@ try {
 ## よくある質問
 
 ### Aspose.Words for Java の一時ライセンスを取得するにはどうすればよいですか?
-訪問[Aspose 一時ライセンス ページ](https://purchase.aspose.com/temporary-license/)一時ライセンスを申請します。
+訪問する[Aspose 一時ライセンス ページ](https://purchase.aspose.com/temporary-license/)一時ライセンスを申請します。
 
 ### ライセンスなしで Aspose.Words for Java を使用できますか?
 はい、ただし制限付きの試用モードで動作します。完全な機能を使用するには、有効なライセンスを取得することをお勧めします。

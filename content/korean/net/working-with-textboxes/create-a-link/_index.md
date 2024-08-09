@@ -15,7 +15,7 @@ url: /ko/net/working-with-textboxes/create-a-link/
 
 텍스트 상자를 연결하는 마법에 대해 알아보기 전에 모든 필수 사항이 준비되었는지 확인하세요.
 
-1. .NET 라이브러리용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 필요합니다. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1. .NET 라이브러리용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 필요합니다. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: 코드를 작성하고 테스트하려면 Visual Studio와 같은 .NET 개발 환경이 필요합니다.
 3. 기본 C# 지식: C#에 대한 기본적인 이해는 코드 예제를 따라가는 데 도움이 됩니다.
 4. 샘플 Word 문서: 이 튜토리얼에서는 반드시 필요한 것은 아니지만 연결된 텍스트 상자를 테스트하기 위해 샘플 Word 문서를 준비하는 것이 도움이 될 수 있습니다.

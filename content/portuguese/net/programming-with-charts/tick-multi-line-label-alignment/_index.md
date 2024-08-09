@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 Agora vem a magia! Definiremos o alinhamento do rótulo de escala para rótulos de múltiplas linhas.
 
- Colocou o`TickLabelAlignment` propriedade do eixo para`ParagraphAlignment.Right`.
+ Defina o`TickLabelAlignment` propriedade do eixo para`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -112,11 +112,11 @@ E aí está! Você marcou com sucesso o alinhamento de rótulos multilinhas em u
 
 ### Como instalo o Aspose.Words para .NET?
 
- Você pode baixar Aspose.Words para .NET em[local na rede Internet](https://releases.aspose.com/words/net/)Siga as instruções de instalação fornecidas lá.
+ Você pode baixar Aspose.Words para .NET em[site](https://releases.aspose.com/words/net/)Siga as instruções de instalação fornecidas lá.
 
 ### Posso usar o Aspose.Words for .NET gratuitamente?
 
- Aspose oferece um[teste grátis](https://releases.aspose.com/) que você pode usar para avaliar o produto. Para acesso total, você precisará adquirir uma licença.
+ Aspose oferece um[teste gratuito](https://releases.aspose.com/) que você pode usar para avaliar o produto. Para acesso total, você precisará adquirir uma licença.
 
 ### Onde posso obter suporte para Aspose.Words for .NET?
 

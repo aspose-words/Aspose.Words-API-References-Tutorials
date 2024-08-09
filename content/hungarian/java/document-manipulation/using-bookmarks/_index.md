@@ -30,7 +30,7 @@ builder.endBookmark("My Bookmark");
 
 ## 2. lépés: A könyvjelzők elérése
 
-A dokumentumban lévő könyvjelzőket indexük vagy nevük alapján érheti el. Itt van, hogyan:
+A dokumentumban lévő könyvjelzőket indexük vagy nevük alapján érheti el. Íme, hogyan:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## 4. lépés: Munka a könyvjelzővel ellátott szöveggel
 
-A könyvjelzővel ellátott szöveget másolhatja, és hozzáadhatja egy másik dokumentumhoz. Itt van, hogyan:
+A könyvjelzővel ellátott szöveget másolhatja, és hozzáadhatja egy másik dokumentumhoz. Íme, hogyan:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");

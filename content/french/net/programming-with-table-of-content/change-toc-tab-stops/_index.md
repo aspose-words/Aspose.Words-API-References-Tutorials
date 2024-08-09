@@ -15,7 +15,7 @@ Vous êtes-vous déjà demandé comment égayer la table des matières (TOC) de 
 
 Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words pour .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout IDE compatible C#.
 3. Un document Word : plus précisément, celui qui contient une table des matières.
 
@@ -108,7 +108,7 @@ Changer l'onglet de la table des matières dans un document Word à l'aide d'Asp
 ## FAQ
 
 ### Puis-je modifier séparément les taquets de tabulation pour différents niveaux de table des matières ?
-Oui, vous pouvez! Vérifiez simplement chaque niveau de table des matières spécifique (Toc1, Toc2, etc.) et ajustez en conséquence.
+Oui, vous pouvez ! Vérifiez simplement chaque niveau de table des matières spécifique (Toc1, Toc2, etc.) et ajustez en conséquence.
 
 ### Que se passe-t-il si mon document comporte plusieurs tables des matières ?
 Le code recherche tous les paragraphes de style table des matières, il modifiera donc toutes les tables des matières présentes dans le document.
@@ -120,4 +120,4 @@ Le code recherche tous les paragraphes de style table des matières, il modifier
 Oui, vous pouvez spécifier différents alignements et styles de repère lors de l'ajout d'un nouveau taquet de tabulation.
 
 ### Ai-je besoin d’une licence pour utiliser Aspose.Words pour .NET ?
- Oui, vous avez besoin d'une licence valide pour utiliser Aspose.Words for .NET au-delà de la période d'essai. Vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) ou[achète-en un](https://purchase.aspose.com/buy).
+ Oui, vous avez besoin d'une licence valide pour utiliser Aspose.Words for .NET au-delà de la période d'essai. Vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) ou[acheter un](https://purchase.aspose.com/buy).

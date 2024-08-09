@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/convert-fields-in-document/
 ---
-## Úvod
+## Zavedení
 
 Chcete snadno převést pole v dokumentech aplikace Word? Jste na správném místě! V této příručce vás provedeme procesem převodu polí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už jste v Aspose.Words noví nebo chcete vylepšit své dovednosti, tento tutoriál vám poskytne komplexního průvodce krok za krokem, který vám pomůže dosáhnout vašeho cíle.
 
@@ -15,7 +15,7 @@ Chcete snadno převést pole v dokumentech aplikace Word? Jste na správném mí
 
 Než se ponoříme do podrobností, je třeba splnit několik předpokladů:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Výhodou bude znalost programování v C#.
 
@@ -72,12 +72,12 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste převedli pole v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle této příručky nyní máte znalosti, jak manipulovat a transformovat pole ve vašich dokumentech a vylepšit tak možnosti zpracování dokumentů.
+Gratuluji! Úspěšně jste převedli pole v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle této příručky nyní máte znalosti, jak manipulovat a transformovat pole ve vašich dokumentech a vylepšit tak možnosti zpracování dokumentů.
 
 ## FAQ
 
 ### Mohu pomocí Aspose.Words for .NET převést jiné typy polí?
- Ano, Aspose.Words for .NET vám umožňuje manipulovat s různými typy polí, nejen s poli IF. Můžete prozkoumat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Ano, Aspose.Words for .NET vám umožňuje manipulovat s různými typy polí, nejen s poli IF. Můžete prozkoumat[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Co jsou pole IF v dokumentech aplikace Word?
 Pole IF jsou podmíněná pole, která zobrazují text na základě určitých podmínek. Často se používají pro vytváření dynamického obsahu v dokumentech aplikace Word.

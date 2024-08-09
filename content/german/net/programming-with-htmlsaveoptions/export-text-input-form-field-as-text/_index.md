@@ -124,7 +124,7 @@ Und da haben Sie es! Sie haben erfolgreich ein Texteingabeformularfeld mit Aspos
 
 ### Kann ich das exportierte HTML anpassen?
 
- Absolut! Aspose.Words bietet verschiedene Optionen zur Anpassung der HTML-Ausgabe. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Absolut! Aspose.Words bietet verschiedene Optionen zur Anpassung der HTML-Ausgabe. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Ist Aspose.Words mit .NET Core kompatibel?
 

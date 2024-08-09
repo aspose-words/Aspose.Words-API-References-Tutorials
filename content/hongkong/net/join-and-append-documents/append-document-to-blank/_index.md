@@ -9,7 +9,7 @@ url: /zh-hant/net/join-and-append-documents/append-document-to-blank/
 ---
 ## 介紹
 
-嘿！您是否曾經發現自己摸不著頭腦，想知道如何使用 Aspose.Words for .NET 將文件無縫附加到空白文件中？你不是一個人！無論您是經驗豐富的開發人員還是剛剛涉足文件自動化領域，本指南都可以幫助您完成整個過程。即使您不是編碼嚮導，我們也會以易於遵循的方式分解這些步驟。因此，喝杯咖啡，坐下來，讓我們深入了解 Aspose.Words for .NET 的文檔操作世界！
+嘿！您是否曾經發現自己摸不著頭腦，想知道如何使用 Aspose.Words for .NET 將文件無縫附加到空白文件中？你並不孤單！無論您是經驗豐富的開發人員還是剛剛涉足文件自動化領域，本指南都可以幫助您完成整個過程。即使您不是編碼嚮導，我們也會以易於遵循的方式分解這些步驟。因此，喝杯咖啡，坐下來，讓我們深入了解 Aspose.Words for .NET 的文檔操作世界！
 
 ## 先決條件
 
@@ -108,7 +108,7 @@ using Aspose.Words;
    dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
    ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將文件附加到空白文件。這不是比你想像的更容易嗎？
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將文件附加到空白文件。這不是比你想像的更容易嗎？
 
 ## 結論
 

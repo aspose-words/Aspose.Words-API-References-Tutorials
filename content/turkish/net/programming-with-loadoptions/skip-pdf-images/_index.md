@@ -59,7 +59,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ### PDF Görüntülerini Atlamak için Yükleme Seçeneklerini Ayarlama
 
-Şimdi görüntüleri atlamak için PDF yükleme seçeneklerini yapılandırın. Sihir yapılan yer burasıdır. 
+Şimdi görüntüleri atlamak için PDF yükleme seçeneklerini yapılandırın. Sihrin gerçekleştiği yer burasıdır. 
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
@@ -77,7 +77,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir PDF belgesindeki görüntüleri nasıl atlayacağınızı öğrendiniz. Bu özellik, metin ağırlıklı PDF'leri görüntü karmaşası olmadan işlemeniz gerektiğinde son derece kullanışlıdır. Unutmayın, pratik yapmak mükemmelleştirir; bu nedenle, bu özelliğin çeşitli senaryolarda nasıl çalıştığını görmek için farklı PDF'lerle denemeler yapmayı deneyin.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir PDF belgesindeki görüntüleri nasıl atlayacağınızı öğrendiniz. Bu özellik, metin ağırlıklı PDF'leri görüntü karmaşası olmadan işlemeniz gerektiğinde son derece kullanışlıdır. Unutmayın, pratik yapmak mükemmelleştirir; bu nedenle, bu özelliğin çeşitli senaryolarda nasıl çalıştığını görmek için farklı PDF'lerle denemeler yapmayı deneyin.
 
 ## SSS'ler
 

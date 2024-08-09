@@ -2,85 +2,100 @@
 title: Dapatkan Spasi Baris Font
 linktitle: Dapatkan Spasi Baris Font
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Dalam tutorial ini, pelajari cara mendapatkan spasi baris font di dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mendapatkan spasi baris font menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. Sempurna untuk pengembang.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/get-font-line-spacing/
 ---
-Dalam tutorial ini, kami akan memberi tahu Anda cara mendapatkan spasi baris font di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Spasi baris font menentukan jarak vertikal antar baris teks. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+## Perkenalan
+
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan Anda membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Salah satu tugas umum yang mungkin perlu Anda lakukan adalah mengambil spasi baris font tertentu dalam dokumen. Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah, memastikan bahwa Anda dapat dengan mudah mendapatkan spasi baris font menggunakan Aspose.Words untuk .NET. 
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
 
-## Langkah 1: Buat dokumen baru dan pembuat dokumen
- Pertama, kita akan membuat dokumen baru dengan membuat instance`Document` kelas dan pembuat dokumen dengan membuat instance`DocumentBuilder` kelas.
+Sebelum kita mendalami kodenya, pastikan Anda memiliki prasyarat berikut:
+
+1.  Aspose.Words untuk .NET Library: Unduh dan instal versi terbaru dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Pastikan Anda memiliki pengaturan IDE seperti Visual Studio.
+3. Pengetahuan Dasar C#: Tutorial ini mengasumsikan Anda memiliki pemahaman dasar tentang pemrograman C#.
+
+## Impor Namespace
+
+Pertama, Anda perlu mengimpor namespace yang diperlukan dalam proyek C# Anda. Namespace ini akan memungkinkan Anda mengakses fungsionalitas Aspose.Words.
 
 ```csharp
-// Buat dokumen baru
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//Buat pembuat dokumen
+Mari kita uraikan proses penspasian baris font menjadi langkah-langkah sederhana dan mudah dikelola.
+
+## Langkah 1: Buat Dokumen Baru
+
+Langkah pertama adalah membuat contoh dokumen Word baru menggunakan Aspose.Words untuk .NET.
+
+```csharp
+Document doc = new Document();
+```
+
+## Langkah 2: Inisialisasi DocumentBuilder
+
+Selanjutnya, kita perlu menginisialisasi`DocumentBuilder` obyek. Objek ini akan membantu kita membangun dan memanipulasi konten dokumen.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Konfigurasikan font
- Selanjutnya kita akan mengkonfigurasi font dengan mengatur`Name` milik pembuat dokumen.
+## Langkah 3: Atur Properti Font
+
+Sekarang, kita mengatur properti font untuk teks yang ingin kita sisipkan. Untuk contoh ini, kita akan menggunakan font "Calibri".
 
 ```csharp
-// Konfigurasikan fontnya
 builder.Font.Name = "Calibri";
 ```
 
-## Langkah 3: Tambahkan teks ke dokumen
-Kami sekarang akan menggunakan pembuat dokumen untuk menambahkan teks berformat ke dokumen.
+## Langkah 4: Tulis Teks ke Dokumen
+
+ Menggunakan`DocumentBuilder` objek, tulis beberapa teks ke dalam dokumen. Teks ini akan menggunakan properti font yang kita atur pada langkah sebelumnya.
 
 ```csharp
-// Tambahkan teks ke dokumen
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## Langkah 4: Dapatkan Spasi Baris Font
- Sekarang kita akan mengakses`Font` objek paragraf pertama dokumen dan mengambil nilai`LineSpacing` Properti.
+## Langkah 5: Ambil Objek Font
+
+Untuk mendapatkan spasi baris, kita perlu mengakses objek font dari teks yang baru saja kita tambahkan. Hal ini dapat dilakukan dengan menavigasi struktur dokumen ke paragraf pertama yang dijalankan.
 
 ```csharp
-// Dapatkan spasi baris font
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### Contoh kode sumber untuk Mendapatkan Spasi Baris Font menggunakan Aspose.Words untuk .NET 
+## Langkah 6: Dapatkan Spasi Garis
+
+Terakhir, kita mengambil spasi baris dari objek font dan mencetaknya ke konsol.
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita melihat cara mendapatkan spasi baris font di dokumen Word dengan Aspose.Words untuk .NET. Spasi baris font penting untuk mengontrol spasi vertikal antar baris teks. Jangan ragu untuk menggunakan fitur ini untuk menyesuaikan tampilan teks di dokumen Anda.
 
-### FAQ
+Dan itu dia! Mengambil spasi baris font menggunakan Aspose.Words untuk .NET sangatlah mudah jika Anda membaginya menjadi langkah-langkah sederhana ini. Baik Anda membuat dokumen baru atau mengerjakan dokumen yang sudah ada, Aspose.Words menyediakan semua alat yang Anda perlukan untuk mengelola properti font secara efisien.
 
-#### T: Bagaimana cara mengubah spasi baris teks tertentu di dokumen Word?
+## FAQ
 
-J: Dengan Aspose.Words, Anda dapat dengan mudah mengubah spasi baris teks tertentu dalam dokumen Word. Gunakan API untuk memilih teks yang diinginkan dan sesuaikan jarak antar baris dengan menentukan nilai yang sesuai.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram menggunakan C#.
 
-#### T: Apakah mungkin menerapkan spasi tepat antar baris dalam dokumen Word?
+### Bisakah saya menggunakan Aspose.Words untuk .NET dalam bahasa .NET lainnya?
+Ya, Anda dapat menggunakan Aspose.Words untuk .NET dengan bahasa .NET apa pun, termasuk VB.NET dan F#.
 
-J: Ya, Aspose.Words memungkinkan Anda menerapkan spasi tepat antar baris dalam dokumen Word. Anda dapat menentukan nilai tepat untuk spasi baris menggunakan API.
+### Bagaimana cara mengunduh Aspose.Words untuk .NET?
+ Anda dapat mengunduh Aspose.Words untuk .NET versi terbaru dari[Di Sini](https://releases.aspose.com/words/net/).
 
-#### T: Bagaimana cara menyesuaikan spasi baris untuk seluruh dokumen Word?
+### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
+ Ya, Anda bisa mendapatkan uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
-J: Dengan Aspose.Words, Anda dapat dengan mudah menyesuaikan spasi baris untuk seluruh dokumen Word. Gunakan metode yang disediakan oleh API untuk menentukan spasi baris yang diinginkan untuk keseluruhan dokumen.
-
-#### T: Apakah Aspose.Words mendukung spasi beberapa baris?
-
-J: Ya, Aspose.Words mendukung spasi beberapa baris di dokumen Word. Anda dapat mengatur beberapa spasi, misalnya 1,5 kali atau 2 kali spasi normal, untuk baris teks Anda.
-
-#### T: Bagaimana cara menghindari masalah garis yang tumpang tindih saat menyesuaikan spasi baris?
-
-J: Untuk menghindari masalah garis yang tumpang tindih saat mengatur jarak antar baris, pastikan untuk memilih nilai jarak yang sesuai. Uji juga rendering akhir dokumen Anda untuk memastikan teks tetap dapat dibaca dan diformat dengan baik.
+### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
+ Dokumentasi untuk Aspose.Words untuk .NET tersedia[Di Sini](https://reference.aspose.com/words/net/).

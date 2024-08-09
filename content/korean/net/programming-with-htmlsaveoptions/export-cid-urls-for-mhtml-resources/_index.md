@@ -96,7 +96,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 MHTML 리소스에 대한 CID URL을 내보내면 MHTML 파일에 포함된 리소스가 올바르게 참조되어 문서 이식성과 무결성이 향상됩니다.
 
 ### 출력 형식을 추가로 사용자 정의할 수 있나요?
- 예, Aspose.Words for .NET은 문서 저장을 위한 광범위한 사용자 정의 옵션을 제공합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 예, Aspose.Words for .NET은 문서 저장을 위한 광범위한 사용자 정의 옵션을 제공합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
  예, Aspose.Words for .NET을 사용하려면 라이선스가 필요합니다. 무료 평가판을 받을 수 있습니다.[여기](https://releases.aspose.com/) 또는 라이센스를 구매하세요[여기](https://purchase.aspose.com/buy).

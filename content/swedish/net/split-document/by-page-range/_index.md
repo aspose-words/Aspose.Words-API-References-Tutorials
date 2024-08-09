@@ -42,7 +42,7 @@ För att använda Aspose.Words måste du lägga till det i ditt projekt. Du kan 
 
 ## Steg 3: Ladda ditt dokument
 
- Låt oss nu ladda dokumentet du vill dela. Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt dokument:
+ Låt oss nu ladda dokumentet du vill dela. Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt dokument:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -73,7 +73,7 @@ Att dela upp ett Word-dokument efter sidintervall med Aspose.Words för .NET är
 
 ### Kan jag dela upp flera sidintervall samtidigt?
 
-Jo det kan du. Du måste upprepa extraheringsprocessen för varje område du behöver och spara dem som separata dokument.
+Ja, det kan du. Du måste upprepa extraheringsprocessen för varje område du behöver och spara dem som separata dokument.
 
 ### Vad händer om jag behöver dela upp efter specifika avsnitt istället för sidintervall?
 

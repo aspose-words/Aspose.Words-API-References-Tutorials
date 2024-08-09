@@ -187,7 +187,7 @@ saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 
 ### Hogyan menthetek egy adott oldalt egy dokumentumból külön képként?
 
- Egy adott oldal képként való mentéséhez használja a`setPageSet`módszer be`ImageSaveOptions` . Például, ha csak az első oldalt szeretné menteni, állítsa be a`PageSet` nak nek`new PageSet(0)`.
+ Egy adott oldal képként való mentéséhez használja a`setPageSet`módszer be`ImageSaveOptions` . Például, ha csak az első oldalt szeretné menteni, állítsa be a`PageSet` hogy`new PageSet(0)`.
 
 ```java
 saveOptions.setPageSet(new PageSet(0)); // Mentse el az első oldalt képként
@@ -204,7 +204,7 @@ options.setImageContrast(0.7f);
 
 ### Hogyan használhatom a visszahívást a képmentés testreszabásához?
 
- Ha visszahívást szeretne használni a képmentés testreszabásához, állítsa be a`PageSavingCallback` ban ben`ImageSaveOptions` . Hozzon létre egy osztályt, amely megvalósítja a`IPageSavingCallback` felületet, és felülírja a`pageSaving` módszer.
+ Ha visszahívást szeretne használni a képmentés testreszabásához, állítsa be a`PageSavingCallback` be`ImageSaveOptions` . Hozzon létre egy osztályt, amely megvalósítja a`IPageSavingCallback` felületet, és felülírja a`pageSaving` módszer.
 
 ```java
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());

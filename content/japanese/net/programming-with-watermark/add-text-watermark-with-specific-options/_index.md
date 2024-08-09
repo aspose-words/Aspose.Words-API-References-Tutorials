@@ -109,4 +109,4 @@ Aspose.Words では、一度に 1 つの透かしを追加できます。複数�
 
 ### 半透明の透かしが必要な場合はどうすればいいですか?
 
-をセットする`IsSemitrasparent`財産に`true`透かしを半透明にします。
+設定する`IsSemitrasparent`財産に`true`透かしを半透明にします。

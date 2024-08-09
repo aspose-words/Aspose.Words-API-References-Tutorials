@@ -68,7 +68,7 @@ Nu när vi har definierat textsparalternativen kan vi spara dokumentet som en te
 doc.save("output.txt", saveOptions);
 ```
 
- Byta ut`"output.txt"` med önskad sökväg där du vill spara textfilen.
+ Ersätta`"output.txt"` med önskad sökväg där du vill spara textfilen.
 
 ## Komplett källkod för att spara dokument som textfiler i Aspose.Words för Java
 

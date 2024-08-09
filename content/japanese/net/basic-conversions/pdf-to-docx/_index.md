@@ -85,7 +85,7 @@ doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");
 はい、Aspose.Words は元の書式設定を非常によく維持します。
 
 ### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
-評価には一時ライセンスを使用できますが、商用利用にはフルライセンスを購入する必要があります。[購入ページ](https://purchase.aspose.com/buy)詳細については。
+評価には一時ライセンスを使用できますが、商用利用にはフルライセンスを購入する必要があります。[購入ページ](https://purchase.aspose.com/buy)詳細についてはこちらをご覧ください。
 
 ### Aspose.Words for .NET を異なるオペレーティング システムで使用できますか?
 はい、Aspose.Words for .NET はクロスプラットフォームであり、Windows、Linux、macOS で使用できます。

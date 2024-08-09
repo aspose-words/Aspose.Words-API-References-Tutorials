@@ -17,7 +17,7 @@ url: /es/net/join-and-append-documents/append-document/
 Antes de profundizar en el meollo de la cuestión, asegurémonos de que tiene todo lo que necesita:
 
 1. Conocimientos básicos de C#: debe sentirse cómodo con la sintaxis y los conceptos de C#.
-2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratis](https://releases.aspose.com/).
+2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratuita](https://releases.aspose.com/).
 3. Visual Studio: cualquier versión reciente debería funcionar, pero se recomienda la última versión.
 4. .NET Framework: asegúrese de que esté instalado en su sistema.
 
@@ -87,11 +87,11 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
 
 ### 2. ¿Puedo utilizar Aspose.Words para .NET de forma gratuita?
 
- Puedes probar Aspose.Words para .NET usando un[prueba gratis](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
+ Puedes probar Aspose.Words para .NET usando un[prueba gratuita](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
 
 ### 3. ¿Cómo me aseguro de que se conserve el formato al adjuntar documentos?
 
- Utilizar el`ImportFormatMode.KeepSourceFormatting` parámetro en el`AppendDocument` método para preservar el formato del documento fuente.
+ Utilice el`ImportFormatMode.KeepSourceFormatting` parámetro en el`AppendDocument` método para preservar el formato del documento fuente.
 
 ### 4. ¿Cómo obtengo soporte para Aspose.Words para .NET?
 

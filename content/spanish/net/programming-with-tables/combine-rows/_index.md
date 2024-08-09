@@ -19,7 +19,7 @@ Antes de pasar a la parte de codificación, asegurémonos de tener todo lo que n
 2. Un entorno de desarrollo: Visual Studio o cualquier otro IDE compatible con .NET.
 3. Conocimientos básicos de C#: La comprensión de C# será beneficiosa.
 
- Si aún no tiene Aspose.Words para .NET, puede obtener un[prueba gratis](https://releases.aspose.com/) o comprarlo[aquí](https://purchase.aspose.com/buy) . Para cualquier pregunta, el[Foro de soporte](https://forum.aspose.com/c/words/8) es un gran lugar para comenzar.
+ Si aún no tiene Aspose.Words para .NET, puede obtener un[prueba gratuita](https://releases.aspose.com/) o comprarlo[aquí](https://purchase.aspose.com/buy) . Para cualquier pregunta, el[foro de soporte](https://forum.aspose.com/c/words/8) es un gran lugar para comenzar.
 
 ## Importar espacios de nombres
 
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Paso 2: identificar las tablas
 
- A continuación, debe identificar las tablas que desea combinar. Aspose.Words le permite obtener tablas de un documento usando el`GetChild` método. Así es cómo:
+ A continuación, debe identificar las tablas que desea combinar. Aspose.Words le permite obtener tablas de un documento usando el`GetChild` método. He aquí cómo:
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -84,13 +84,13 @@ Finalmente, guarde el documento modificado. Este paso garantiza que sus cambios 
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-¡Y eso es! Ha combinado con éxito filas de dos tablas en una usando Aspose.Words para .NET.
+¡Y eso es todo! Ha combinado con éxito filas de dos tablas en una usando Aspose.Words para .NET.
 
 ## Conclusión
 
 Combinar filas de varias tablas en una puede simplificar significativamente las tareas de procesamiento de documentos. Con Aspose.Words para .NET, esta tarea se vuelve sencilla y eficiente. Si sigue esta guía paso a paso, podrá fusionar tablas fácilmente y optimizar su flujo de trabajo.
 
-Si necesita más información o tiene alguna pregunta, el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) es un excelente recurso. También puedes explorar opciones de compra.[aquí](https://purchase.aspose.com/buy) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para las pruebas.
+Si necesita más información o tiene alguna pregunta, el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) es un excelente recurso. También puedes explorar opciones de compra.[aquí](https://purchase.aspose.com/buy) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para pruebas.
 
 ## Preguntas frecuentes
 
@@ -106,7 +106,7 @@ El formato de las filas se conserva cuando se añaden a la primera tabla.
 
 Sí, puedes combinar varias tablas repitiendo los pasos para cada tabla adicional.
 
-### ¿Puedo automatizar este proceso para múltiples documentos?
+### ¿Puedo automatizar este proceso para varios documentos?
 
 ¡Absolutamente! Puede crear una secuencia de comandos para automatizar este proceso para varios documentos.
 

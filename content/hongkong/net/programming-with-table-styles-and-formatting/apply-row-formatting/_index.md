@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將行格式套用至 Word 文件中的表格。這種簡單而強大的技術可以大大增強文件的可讀性和美觀性。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將行格式套用至 Word 文件中的表格。這種簡單而強大的技術可以大大增強文件的可讀性和美觀性。
 
 ## 常見問題解答
 

@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Với các bước đơn giản này, bạn đã thiết lập bố cục trang tài liệu của mình bằng Aspose.Words for .NET. Quá trình này có thể giúp bạn tránh được nhiều rắc rối khi định dạng và đảm bảo tài liệu của bạn trông chuyên nghiệp và bóng bẩy. Vì vậy, lần tới khi bạn thực hiện một dự án, hãy nhớ hướng dẫn này và lướt qua cách thiết lập trang của bạn như một người chuyên nghiệp.
+Và bạn có nó! Với các bước đơn giản này, bạn đã thiết lập bố cục trang tài liệu của mình bằng Aspose.Words for .NET. Quá trình này có thể giúp bạn tránh được nhiều rắc rối khi định dạng và đảm bảo tài liệu của bạn trông chuyên nghiệp và bóng bẩy. Vì vậy, lần tới khi bạn thực hiện một dự án, hãy nhớ hướng dẫn này và lướt qua cách thiết lập trang của bạn như một người chuyên nghiệp.
 
 ## Câu hỏi thường gặp
 

@@ -14,7 +14,7 @@ url: /ko/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ## 전제 조건
 
 코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
-1.  .NET용 Aspose.Words - 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words - 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. .NET 개발 환경 - Visual Studio를 적극 권장합니다.
 3. 서명할 문서 - 간단한 Word 문서를 만들거나 기존 문서를 사용합니다.
 4.  인증서 파일 - 디지털 서명에 필요합니다. 당신은 사용할 수 있습니다`.pfx` 파일.

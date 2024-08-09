@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Giới thiệu
 
 Khi làm việc với các tài liệu chứa các thành phần văn bản đa dạng, chẳng hạn như các ngôn ngữ khác nhau hoặc các ký tự đặc biệt, điều quan trọng là phải đảm bảo rằng các thành phần này được hiển thị chính xác. Aspose.Words for .NET cung cấp một tính năng mạnh mẽ được gọi là Cài đặt dự phòng phông chữ, giúp xác định quy tắc thay thế phông chữ khi phông chữ gốc không hỗ trợ một số ký tự nhất định. Trong hướng dẫn này, chúng ta sẽ khám phá cách thiết lập Cài đặt dự phòng phông chữ bằng Aspose.Words cho .NET theo hướng dẫn từng bước.
 
@@ -15,7 +16,7 @@ Khi làm việc với các tài liệu chứa các thành phần văn bản đa 
 Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
 
 - Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# và .NET framework.
--  Aspose.Words for .NET: Tải xuống và cài đặt từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Tải xuống và cài đặt từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Thiết lập như Visual Studio để viết và chạy mã của bạn.
 -  Tài liệu mẫu: Có tài liệu mẫu (ví dụ:`Rendering.docx`) sẵn sàng để thử nghiệm.
 - Quy tắc dự phòng phông chữ XML: Chuẩn bị tệp XML xác định quy tắc dự phòng phông chữ.
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Bước 4: Áp dụng cài đặt phông chữ cho tài liệu
 
- Chỉ định cấu hình`FontSettings` vào tài liệu. Điều này đảm bảo rằng các quy tắc dự phòng phông chữ được áp dụng khi hiển thị tài liệu.
+ Chỉ định cấu hình`FontSettings`vào tài liệu. Điều này đảm bảo rằng các quy tắc dự phòng phông chữ được áp dụng khi hiển thị tài liệu.
 
 ```csharp
 doc.FontSettings = fontSettings;

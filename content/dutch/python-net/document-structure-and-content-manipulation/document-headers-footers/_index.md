@@ -89,7 +89,7 @@ footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE
 
 ## Verschillende kop- en voetteksten voor oneven en even pagina's
 
-Het maken van verschillende kop- en voetteksten voor oneven en even pagina's kan een professioneel tintje aan uw documenten geven. Hier is hoe:
+Het maken van verschillende kop- en voetteksten voor oneven en even pagina's kan een professioneel tintje aan uw documenten geven. Hier ziet u hoe:
 
 1. Lay-out van oneven en even pagina's instellen: Definieer de lay-out om verschillende kop- en voetteksten voor oneven en even pagina's toe te staan.
 

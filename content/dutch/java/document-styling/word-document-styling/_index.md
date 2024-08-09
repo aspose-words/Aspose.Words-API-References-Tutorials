@@ -18,7 +18,7 @@ Aspose.Words voor Java is een krachtige bibliotheek waarmee Java-ontwikkelaars W
 
 ### 1. Aspose.Words voor Java installeren
 
-Ga om aan de slag te gaan naar de Aspose-releases (https://releases.aspose.com/words/java/) en download de Aspose.Words voor Java-bibliotheek. Volg na het downloaden de installatie-instructies om de bibliotheek in uw ontwikkelomgeving in te stellen.
+Ga om te beginnen naar de Aspose-releases (https://releases.aspose.com/words/java/) en download de Aspose.Words voor Java-bibliotheek. Volg na het downloaden de installatie-instructies om de bibliotheek in uw ontwikkelomgeving in te stellen.
 
 ### 2. De ontwikkelomgeving opzetten
 

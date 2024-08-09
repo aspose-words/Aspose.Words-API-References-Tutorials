@@ -15,7 +15,7 @@ La création de documents attrayants et informatifs implique souvent d'inclure d
 
 Avant de vous plonger dans le code, vous devez mettre en place quelques prérequis :
 
--  Aspose.Words for .NET : assurez-vous que la bibliothèque Aspose.Words for .NET est installée. Si vous ne l'avez pas encore installé, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET : assurez-vous que la bibliothèque Aspose.Words for .NET est installée. Si vous ne l'avez pas encore installé, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : vous devez disposer d'un environnement de développement .NET. Visual Studio est fortement recommandé.
 - Connaissance de base de C# : une connaissance de la programmation C# est essentielle car ce didacticiel implique l'écriture et la compréhension du code C#.
 -  Licence temporaire : pour utiliser Aspose.Words sans aucune limitation, vous pouvez obtenir une[permis temporaire](https://purchase.aspose.com/temporary-license/).
@@ -92,7 +92,7 @@ Le cœur de ce didacticiel est le formatage des étiquettes de données. Nous po
 
 ```csharp
 series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Format monétaire
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Format de date
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Format des dates
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Format pourcentage
 ```
 

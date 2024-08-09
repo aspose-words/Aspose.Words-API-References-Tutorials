@@ -80,7 +80,7 @@ Bu kod satırı ile belgemizi açıklayıcı bir isimle belirtilen dizine kayded
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde Asya ve Latin metinleri arasındaki boşluğu otomatik olarak nasıl ayarlayacağınızı öğrendiniz. Mükemmel biçimlendirme için sihirli bir değneğe sahip olmak gibidir. Şimdi devam edin ve yeni keşfettiğiniz becerilerinizle arkadaşlarınızı ve iş arkadaşlarınızı etkileyin. Unutmayın, doğru araçlar büyük fark yaratır ve Aspose.Words for .NET kesinlikle cephanenizde bulundurmaya değer bir araçtır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde Asya ve Latin metinleri arasındaki boşluğu otomatik olarak nasıl ayarlayacağınızı öğrendiniz. Mükemmel biçimlendirme için sihirli bir değneğe sahip olmak gibidir. Şimdi devam edin ve yeni keşfettiğiniz becerilerinizle arkadaşlarınızı ve iş arkadaşlarınızı etkileyin. Unutmayın, doğru araçlar büyük fark yaratır ve Aspose.Words for .NET kesinlikle cephanenizde bulundurmaya değer bir araçtır.
 
 ## SSS'ler
 

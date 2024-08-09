@@ -9,7 +9,7 @@ url: /tr/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## giriiş
 
-Selam! Hiç kendinizi Word belgelerinize programlı olarak nasıl dinamik alanlar ekleyeceğinizi merak ederken buldunuz mu? Artık endişelenmeyin! Bu eğitimde, Word belgelerini sorunsuz bir şekilde oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan güçlü bir kütüphane olan Aspose.Words for .NET'in harikalarına dalacağız. Özellikle Field Builder'ı kullanarak alanların nasıl ekleneceğini açıklayacağız. Başlayalım!
+Selam! Hiç kendinizi Word belgelerinize programlı olarak nasıl dinamik alanlar ekleyeceğinizi merak ederken buldunuz mu? Artık endişelenmeyin! Bu eğitimde, Word belgelerini sorunsuz bir şekilde oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan güçlü bir kütüphane olan Aspose.Words for .NET'in harikalarına dalacağız. Özellikle Field Builder'ı kullanarak alanların nasıl ekleneceğini açıklayacağız. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -95,7 +95,7 @@ Son olarak belgemizi kaydedip sonuçlara göz atalım.
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla alan eklediniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla alan eklediniz.
 
 ## Çözüm
 

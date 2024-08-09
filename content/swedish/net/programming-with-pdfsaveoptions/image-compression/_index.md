@@ -45,7 +45,7 @@ Innan du börjar koda, definiera sökvägen till din dokumentkatalog. Detta hjä
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen där ditt exempeldokument är lagrat.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen där ditt exempeldokument är lagrat.
 
 ## Steg 2: Ladda Word-dokumentet
 
@@ -83,16 +83,16 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## Steg 5: Konfigurera avancerad komprimering med PDF/A-kompatibilitet
 
- För ännu bättre komprimering, särskilt om du behöver följa PDF/A-standarder, kan du konfigurera ytterligare alternativ. Ställ in`Compliance`egendom till`PdfCompliance.PdfA2u` och justera`JpegQuality` fast egendom.
+ För ännu bättre komprimering, särskilt om du behöver följa PDF/A-standarder, kan du konfigurera ytterligare alternativ. Ställ in`Compliance`egendom till`PdfCompliance.PdfA2u` och justera`JpegQuality` egendom.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
 {
-	// Ställ in efterlevnad till PDF/A-2u
+	// Ställ in compliance till PDF/A-2u
     Compliance = PdfCompliance.PdfA2u,
 	// Använd JPEG-komprimering
     ImageCompression = PdfImageCompression.Jpeg,
-	// Justera JPEG-kvalitet för att kontrollera komprimeringsnivån
+	// Justera JPEG-kvaliteten för att kontrollera komprimeringsnivån
     JpegQuality = 100 
 };
 ```

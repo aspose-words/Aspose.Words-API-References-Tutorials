@@ -9,11 +9,11 @@ url: /pl/net/compare-documents/comparison-target/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek zdarzyło Ci się porównywać dwie wersje dokumentu programu Word i ręcznie śledzić każdą najmniejszą zmianę? To jak szukanie igły w stogu siana, prawda? Cóż, co jeśli powiem Ci, że istnieje bardzo łatwy sposób, aby to zrobić za pomocą Aspose.Words dla .NET? Zgadza się! Ta potężna biblioteka umożliwia błyskawiczne porównywanie dokumentów programu Word. Dziś przeprowadzę Cię przez ten proces krok po kroku. Gotowy, aby zostać kreatorem porównywania dokumentów? Zanurzmy się!
+Hej tam! Czy kiedykolwiek zdarzyło Ci się porównywać dwie wersje dokumentu programu Word i ręcznie śledzić każdą najmniejszą zmianę? To jak szukanie igły w stogu siana, prawda? Cóż, co jeśli powiem Ci, że istnieje bardzo łatwy sposób, aby to zrobić za pomocą Aspose.Words dla .NET? Zgadza się! Ta potężna biblioteka umożliwia błyskawiczne porównywanie dokumentów programu Word. Dziś przeprowadzę Cię przez ten proces krok po kroku. Gotowy, aby zostać kreatorem porównywania dokumentów? Zanurzmy się!
 
 ## Warunki wstępne
 
-Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby rozpocząć:
+Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
 
 1.  Aspose.Words dla .NET: Potrzebujesz tej biblioteki. Jeśli jeszcze go nie masz, chwyć go[Tutaj](https://releases.aspose.com/words/net/).
 2.  Licencja: Będziesz potrzebować ważnej licencji, aby odblokować pełny potencjał Aspose.Words. Możesz kupić jeden[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
@@ -42,7 +42,7 @@ Przygotujmy nasz projekt. Uruchom swoje środowisko programistyczne i utwórz no
 
 ## Krok 2: Zainstaluj Aspose.Words dla .NET
 
-Następnie musisz dodać Aspose.Words do swojego projektu. Możesz to zrobić za pomocą Menedżera pakietów NuGet. Po prostu wyszukaj Aspose.Words i zainstaluj go. Bułka z masłem!
+Następnie musisz dodać Aspose.Words do swojego projektu. Możesz to zrobić za pomocą Menedżera pakietów NuGet. Po prostu wyszukaj Aspose.Words i zainstaluj go. Łatwe, proste!
 
 ```bash
 Install-Package Aspose.Words

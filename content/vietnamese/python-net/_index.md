@@ -39,7 +39,7 @@ Khám phá thế giới trích xuất và thao tác nội dung với các hướ
 ### [Kết hợp và so sánh tài liệu](./document-combining-and-comparison/)
 Khám phá các hướng dẫn toàn diện về kết hợp và so sánh tài liệu bằng Aspose.Words cho Python và .NET. Tìm hiểu cách hợp nhất và so sánh các tài liệu một cách liền mạch, nâng cao quy trình xử lý tài liệu của bạn.
 ### [Tách và định dạng tài liệu](./document-splitting-and-formatting/)
-Khám phá các hướng dẫn Aspose.Words về phân tách và định dạng tài liệu trong Python và .NET. Tìm hiểu cách phân chia và định dạng tài liệu một cách hiệu quả, nâng cao tác vụ xử lý tài liệu của bạn. 
+Khám phá các hướng dẫn Aspose.Words về phân tách và định dạng tài liệu bằng Python và .NET. Tìm hiểu cách phân chia và định dạng tài liệu một cách hiệu quả, nâng cao tác vụ xử lý tài liệu của bạn. 
 ### [Tùy chọn và cài đặt tài liệu](./document-options-and-settings/)
 Khám phá các hướng dẫn của Aspose.Words về các tùy chọn và cài đặt tài liệu trong Python và .NET. Tìm hiểu cách tối ưu hóa việc tạo và định dạng tài liệu bằng hướng dẫn từng bước và ví dụ về mã nguồn.
 ### [Trực quan hóa và định dạng dữ liệu](./data-visualization-and-formatting/)

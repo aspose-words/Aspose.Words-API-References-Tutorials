@@ -44,10 +44,10 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-### Giải trình
+### Giải thích
 
 - `dataDir`: Đây là thư mục lưu trữ chứng chỉ và tài liệu của bạn.
-- `CertificateHolder.Create` : Phương thức này tải chứng chỉ từ đường dẫn đã chỉ định. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục của bạn và`"morzal.pfx"` với tên của tệp chứng chỉ của bạn. Các`"aw"` là mật khẩu cho chứng chỉ.
+- `CertificateHolder.Create` : Phương thức này tải chứng chỉ từ đường dẫn đã chỉ định. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục của bạn và`"morzal.pfx"` với tên của tệp chứng chỉ của bạn. các`"aw"` là mật khẩu cho chứng chỉ.
 
 ## Bước 2: Tải tài liệu Word
 
@@ -58,7 +58,7 @@ Tiếp theo, tải tài liệu Word bạn muốn ký.
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-### Giải trình
+### Giải thích
 
 - `Document` : Lớp này đại diện cho tài liệu Word. Thay thế`"Digitally signed.docx"`với tên tài liệu của bạn.
 
@@ -71,7 +71,7 @@ Document doc = new Document(dataDir + "Digitally signed.docx");
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
 ```
 
-### Giải trình
+### Giải thích
 
 - `DigitalSignatureUtil.Sign`: Phương pháp này ký tài liệu bằng chứng chỉ đã tải. Tham số đầu tiên là đường dẫn đến tài liệu gốc, tham số thứ hai là đường dẫn đến tài liệu đã ký và tham số thứ ba là chủ sở hữu chứng chỉ.
 
@@ -84,13 +84,13 @@ Cuối cùng, lưu tài liệu đã ký vào vị trí đã chỉ định.
 doc.Save(dataDir + "Document.Signed.docx");
 ```
 
-### Giải trình
+### Giải thích
 
 - `doc.Save` : Phương pháp này lưu tài liệu đã ký. Thay thế`"Document.Signed.docx"` với tên mong muốn của tài liệu đã ký của bạn.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã ký thành công tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể đảm bảo tài liệu của mình được ký và xác thực an toàn. Hãy nhớ rằng, chữ ký điện tử là một công cụ mạnh mẽ trong việc bảo vệ tính toàn vẹn của tài liệu của bạn, vì vậy hãy sử dụng chúng bất cứ khi nào cần thiết.
+Và bạn có nó! Bạn đã ký thành công tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể đảm bảo tài liệu của mình được ký và xác thực an toàn. Hãy nhớ rằng, chữ ký điện tử là một công cụ mạnh mẽ trong việc bảo vệ tính toàn vẹn của tài liệu của bạn, vì vậy hãy sử dụng chúng bất cứ khi nào cần thiết.
 
 ## Câu hỏi thường gặp
 

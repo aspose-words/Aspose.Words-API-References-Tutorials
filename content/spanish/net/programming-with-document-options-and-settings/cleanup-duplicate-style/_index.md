@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Paso 1: cargue su documento
 
-Para comenzar, debes cargar tu documento de Word en tu proyecto. Aquí es donde entra en juego su documento de muestra.
+Para comenzar, debe cargar su documento de Word en su proyecto. Aquí es donde entra en juego su documento de muestra.
 
 1. Especifique el directorio de documentos: defina la ruta al directorio donde está almacenado su documento.
 2.  Cargue el documento: utilice el`Document` clase para cargar su documento.
@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 Aspose.Words para .NET es una potente biblioteca que permite a los desarrolladores crear, editar, convertir y manipular documentos de Word mediante programación utilizando lenguajes .NET.
 
 ### ¿Por qué es importante limpiar estilos duplicados en un documento de Word?
-Limpiar estilos duplicados ayuda a mantener una apariencia uniforme y profesional en sus documentos, reduce el tamaño del archivo y hace que el documento sea más fácil de administrar.
+Limpiar estilos duplicados ayuda a mantener una apariencia consistente y profesional en sus documentos, reduce el tamaño del archivo y hace que el documento sea más fácil de administrar.
 
 ### ¿Puedo usar Aspose.Words para .NET con otros lenguajes .NET además de C#?
 Sí, Aspose.Words para .NET se puede utilizar con cualquier lenguaje .NET, incluidos VB.NET y F#.

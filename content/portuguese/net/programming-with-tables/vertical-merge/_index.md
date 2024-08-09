@@ -46,7 +46,7 @@ Aqui, criamos um novo documento e inicializamos um objeto DocumentBuilder para t
 
 ## Passo 2: Inserindo a Primeira Célula
 
-Agora, vamos inserir a primeira célula em nossa tabela e definir sua mesclagem vertical para a primeira célula em um intervalo mesclado.
+Agora, vamos inserir a primeira célula em nossa tabela e definir sua mesclagem vertical para a primeira célula de um intervalo mesclado.
 
 ```csharp
 builder.InsertCell();

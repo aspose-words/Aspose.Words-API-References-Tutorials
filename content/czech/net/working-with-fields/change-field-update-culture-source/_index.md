@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/change-field-update-culture-source/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu se ponoříme do světa Aspose.Words pro .NET a prozkoumáme, jak změnit zdroj kultury aktualizace pole. Pokud máte co do činění s dokumenty Wordu, které obsahují pole data, a potřebujete ovládat, jak jsou tato data formátována na základě různých kultur, je tato příručka určena právě vám. Pojďme si projít procesem krok za krokem a ujistěte se, že pochopíte každý koncept a dokážete jej efektivně aplikovat ve svých projektech.
 
@@ -15,7 +15,7 @@ V tomto tutoriálu se ponoříme do světa Aspose.Words pro .NET a prozkoumáme,
 
 Než skočíme do kódu, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli .NET kompatibilní IDE (např. Visual Studio).
 - Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
 
@@ -54,7 +54,7 @@ builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 
 ## Krok 3: Nastavte zdroj kultury aktualizace pole
 
- Pro kontrolu kultury používané při aktualizaci polí jsme nastavili`FieldUpdateCultureSource` majetek z`FieldOptions`třída. Tato vlastnost určuje, zda je kultura převzata z kódu pole nebo dokumentu.
+ Pro kontrolu kultury používané při aktualizaci polí jsme nastavili`FieldUpdateCultureSource` vlastnictvím`FieldOptions`třída. Tato vlastnost určuje, zda je kultura převzata z kódu pole nebo dokumentu.
 
 ```csharp
 doc.FieldOptions.FieldUpdateCultureSource = FieldUpdateCultureSource.FieldCode;

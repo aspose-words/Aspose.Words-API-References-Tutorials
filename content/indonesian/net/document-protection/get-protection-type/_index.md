@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Langkah 3: Dapatkan Jenis Perlindungan
 
-Ini adalah dimana keajaiban terjadi! Kami akan mengambil jenis perlindungan dokumen menggunakan Aspose.Words.
+Di sinilah keajaiban terjadi! Kami akan mengambil jenis perlindungan dokumen menggunakan Aspose.Words.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;

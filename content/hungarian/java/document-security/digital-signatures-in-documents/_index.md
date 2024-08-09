@@ -8,7 +8,7 @@ weight: 13
 url: /hu/java/document-security/digital-signatures-in-documents/
 ---
 
-digitális aláírások döntő szerepet játszanak a digitális dokumentumok hitelességének és integritásának biztosításában. Módot biztosítanak annak ellenőrzésére, hogy a dokumentumot nem manipulálták, és valóban a megjelölt aláíró hozta-e létre vagy hagyta jóvá. Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan lehet digitális aláírásokat implementálni dokumentumokba az Aspose.Words for Java használatával. Mindenre kiterjedünk a környezet beállításától a digitális aláírások dokumentumaihoz való hozzáadásáig. Kezdjük el!
+digitális aláírások döntő szerepet játszanak a digitális dokumentumok hitelességének és integritásának biztosításában. Módot biztosítanak annak ellenőrzésére, hogy a dokumentumot nem manipulálták, és valóban a megjelölt aláíró hozta-e létre vagy hagyta jóvá. Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan lehet digitális aláírásokat implementálni dokumentumokba az Aspose.Words for Java használatával. Mindenre kiterjedünk a környezet beállításától a digitális aláírások dokumentumaihoz való hozzáadásáig. Kezdjük is!
 
 ## Előfeltételek
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/export-resources/
 ---
-## introduzione
+## Introduzione
 
 Ehi, amico appassionato di tecnologia! Se ti è mai capitato di dover convertire documenti Word in HTML, sei nel posto giusto. Oggi ci immergiamo nel meraviglioso mondo di Aspose.Words per .NET. Questa potente libreria semplifica il lavoro con i documenti Word a livello di codice. In questo tutorial, esamineremo i passaggi per esportare risorse, come caratteri e CSS, quando salvi un documento Word come HTML utilizzando Aspose.Words per .NET. Allacciate le cinture per un giro divertente e informativo!
 
@@ -87,12 +87,12 @@ Questa riga di codice salva il documento in formato HTML, insieme alle risorse e
 
 ## Conclusione
 
-il gioco è fatto! Hai esportato con successo risorse durante il salvataggio di un documento Word come HTML utilizzando Aspose.Words per .NET. Con questa potente libreria, gestire i documenti Word a livello di codice diventa un gioco da ragazzi. Che tu stia lavorando su un'applicazione Web o abbia semplicemente bisogno di convertire documenti per l'utilizzo offline, Aspose.Words ti copre.
+Ed ecco qua! Hai esportato con successo risorse durante il salvataggio di un documento Word come HTML utilizzando Aspose.Words per .NET. Con questa potente libreria, gestire i documenti Word a livello di codice diventa un gioco da ragazzi. Che tu stia lavorando su un'applicazione Web o abbia semplicemente bisogno di convertire documenti per l'utilizzo offline, Aspose.Words ti copre.
 
 ## Domande frequenti
 
 ### Posso esportare immagini insieme a caratteri e CSS?
- Si, puoi! Aspose.Words per .NET supporta anche l'esportazione di immagini. Assicurati solo di configurare il file`HtmlSaveOptions` di conseguenza.
+ Sì, puoi! Aspose.Words per .NET supporta anche l'esportazione di immagini. Assicurati solo di configurare il file`HtmlSaveOptions` di conseguenza.
 
 ### C'è un modo per incorporare CSS invece di utilizzare un foglio di stile esterno?
  Assolutamente. Puoi impostare`CssStyleSheetType` A`CssStyleSheetType.Embedded` se preferisci gli stili incorporati.

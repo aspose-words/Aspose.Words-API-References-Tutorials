@@ -89,7 +89,7 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## Conclusion
 
- Et voila! Vous avez appris à fusionner des documents Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvre la configuration de votre environnement, l'exécution de fusions simples, la fusion avec les options d'enregistrement, la conversion de documents fusionnés en PDF et la création d'une instance de document à partir de documents fusionnés. Aspose.Words offre un large éventail de fonctionnalités, alors assurez-vous d'explorer le[Documentation API](https://reference.aspose.com/words/net/) pour libérer tout son potentiel.
+ Et voilà ! Vous avez appris à fusionner des documents Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvre la configuration de votre environnement, l'exécution de fusions simples, la fusion avec les options d'enregistrement, la conversion de documents fusionnés en PDF et la création d'une instance de document à partir de documents fusionnés. Aspose.Words offre un large éventail de fonctionnalités, alors assurez-vous d'explorer le[Documentation API](https://reference.aspose.com/words/net/) pour libérer tout son potentiel.
 
 ## FAQ
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 
 ### Comment gérer les différents formats lors de la fusion ?
 
- Aspose.Words propose différents modes de format de fusion comme`KeepSourceFormatting`et`MergeFormatting` Se référer au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
+ Aspose.Words propose différents modes de format de fusion comme`KeepSourceFormatting`et`MergeFormatting` Référez-vous au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
 
 ### Comment puis-je obtenir une assistance pour Aspose.Words pour .NET ?
 

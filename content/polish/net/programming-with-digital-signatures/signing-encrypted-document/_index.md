@@ -57,7 +57,7 @@ Będziesz potrzebować katalogu do przechowywania dokumentów i certyfikatów pr
 
 ## Krok 4: Pisanie kodu
 
- Teraz zagłębimy się w kod. Otwórz swoje`Program.cs` i zacznij od ustawienia ścieżki do katalogu dokumentów i zainicjowania pliku`SignOptions` z hasłem deszyfrującym.
+ Teraz zagłębmy się w kod. Otwórz swoje`Program.cs` i zacznij od ustawienia ścieżki do katalogu dokumentów i zainicjowania pliku`SignOptions` z hasłem deszyfrującym.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.

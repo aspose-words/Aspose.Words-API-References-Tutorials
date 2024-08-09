@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder();
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- 바꾸다`"path_to_your_image.jpg"` 이미지 파일의 실제 경로를 사용하세요. 그만큼`InsertImage` 메소드는 문서에 이미지를 추가합니다.
+ 바꾸다`"path_to_your_image.jpg"` 이미지 파일의 실제 경로를 사용하세요. 그만큼`InsertImage`메소드는 문서에 이미지를 추가합니다.
 
 ## 3단계: 이미지 속성 설정
 
@@ -72,7 +72,7 @@ Aspose.Words는 JPEG, PNG, BMP, GIF 등을 포함한 다양한 이미지 형식�
  전적으로! 높이와 너비 속성을 설정할 수 있습니다.`Shape` 이미지 크기를 조정하는 개체입니다.
 
 ### URL에서 이미지를 추가할 수 있나요?  
- 예, URL을 제공하여 URL에서 이미지를 추가할 수 있습니다.`InsertImage` 방법.
+예, URL을 제공하여 URL에서 이미지를 추가할 수 있습니다.`InsertImage` 방법.
 
 ### .NET용 Aspose.Words 무료 평가판을 받으려면 어떻게 해야 합니까?  
  다음에서 무료 평가판을 받을 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/).

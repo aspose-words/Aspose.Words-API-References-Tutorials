@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-حسنًا، دعنا نحلل هذا خطوة بخطوة. مستعد؟ هيا بنا نبدأ!
+حسنًا، دعنا نحلل هذا خطوة بخطوة. مستعد؟ دعونا نبدأ!
 
 ## الخطوة 1: إعداد دليل المستندات الخاص بك
 
@@ -82,13 +82,13 @@ builder.InsertHtml(
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-وهناك لديك! لقد قمت للتو بإدراج HTML في مستند Word باستخدام Aspose.Words لـ .NET. كفك!
+وهنا لديك! لقد قمت للتو بإدراج HTML في مستند Word باستخدام Aspose.Words لـ .NET. عالية خمسة!
 
 ## خاتمة
 
 لم يكن إدراج HTML في مستند Word أسهل من أي وقت مضى، أليس كذلك؟ باستخدام Aspose.Words for .NET، يمكنك المزج بسلاسة بين قوة HTML وتعدد استخدامات مستندات Word. سواء كنت تقوم بأتمتة إنشاء التقارير أو صياغة مستندات منسقة بشكل جميل، فإن هذه الأداة هي الحل الأمثل لك.
 
-إذا كان لديك أي أسئلة أو كنت بحاجة إلى مزيد من المساعدة، فلا تتردد في مراجعة[توثيق](https://reference.aspose.com/words/net/), [منتديات الدعم](https://forum.aspose.com/c/words/8) ، أو احصل على نفسك أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) لفتح الإمكانات الكاملة لـ Aspose.Words لـ .NET.
+إذا كان لديك أي أسئلة أو كنت بحاجة إلى مزيد من المساعدة، فلا تتردد في مراجعة[الوثائق](https://reference.aspose.com/words/net/), [منتديات الدعم](https://forum.aspose.com/c/words/8) ، أو احصل على نفسك أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) لفتح الإمكانات الكاملة لـ Aspose.Words لـ .NET.
 
 ترميز سعيد!
 
@@ -107,4 +107,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
  يمكنك البدء بـ أ[تجربة مجانية](https://releases.aspose.com/) أو الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للحصول على الميزات الكاملة.
 
 ### أين يمكنني العثور على المزيد من الدروس والأمثلة؟  
- ال[توثيق](https://reference.aspose.com/words/net/)و[منتديات الدعم](https://forum.aspose.com/c/words/8)هي أماكن رائعة للبدء للحصول على أدلة أكثر تفصيلاً ودعم المجتمع.
+ ال[الوثائق](https://reference.aspose.com/words/net/)و[منتديات الدعم](https://forum.aspose.com/c/words/8)هي أماكن رائعة للبدء للحصول على أدلة أكثر تفصيلاً ودعم المجتمع.

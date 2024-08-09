@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ2: 新しいドキュメントを作成する
 
-新しいを作成します`Document`オブジェクトは、Word 文書の基礎として機能します。
+新規作成`Document`オブジェクトは、Word 文書の基礎として機能します。
 
 ```csharp
 Document doc = new Document();

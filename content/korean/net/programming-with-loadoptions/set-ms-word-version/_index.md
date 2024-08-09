@@ -16,7 +16,7 @@ url: /ko/net/programming-with-loadoptions/set-ms-word-version/
 
 코드를 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
--  .NET용 Aspose.Words: 최신 버전인지 확인하세요.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 최신 버전인지 확인하세요.[여기서 다운로드하세요](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE를 사용할 수 있습니다.
 - C#에 대한 기본 지식: 간단하게 설명하겠지만 C#에 대한 기본적인 이해가 필요합니다.
 - 샘플 문서: 테스트 목적으로 문서 디렉터리에 Word 문서를 준비하세요.

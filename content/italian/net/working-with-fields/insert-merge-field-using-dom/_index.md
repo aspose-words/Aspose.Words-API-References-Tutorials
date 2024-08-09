@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-merge-field-using-dom/
 ---
-## introduzione
+## Introduzione
 
 Se lavori con l'elaborazione di documenti in .NET, probabilmente ti sei imbattuto in Aspose.Words. Questa potente libreria offre un'ampia gamma di funzionalità per la manipolazione dei documenti Word a livello di codice. In questo tutorial, ci concentreremo su una funzionalità specifica: l'inserimento di un campo di unione utilizzando il Document Object Model (DOM) in Aspose.Words per .NET. Questa guida ti guiderà attraverso ogni passaggio, dalla configurazione del tuo ambiente all'inserimento e all'aggiornamento di un campo di unione in un documento di Word.
 
@@ -18,7 +18,7 @@ Prima di immergerti nel codice, assicuriamoci di avere tutto ciò di cui hai bis
 1. Conoscenza di base di C#: dovresti avere dimestichezza con la programmazione in C#.
 2. Visual Studio installato: assicurati di avere Visual Studio o qualsiasi altro IDE C# installato sul tuo computer.
 3.  Aspose.Words per .NET: scarica e installa l'ultima versione di Aspose.Words per .NET dal[Rilasci](https://releases.aspose.com/words/net/).
-4.  Licenza valida: se non disponi di una licenza, puoi ottenerne una[licenza temporanea](https://purchase.aspose.com/temporary-license/) Per la valutazione.
+4.  Licenza valida: se non disponi di una licenza, puoi ottenerne una[licenza temporanea](https://purchase.aspose.com/temporary-license/) per la valutazione.
 
 ## Passaggio 1: imposta il tuo progetto
 

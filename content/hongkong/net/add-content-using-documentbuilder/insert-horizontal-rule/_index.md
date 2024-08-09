@@ -97,7 +97,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將水平線插入 Word 文件中。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將水平線插入 Word 文件中。
 
 ## 結論
 

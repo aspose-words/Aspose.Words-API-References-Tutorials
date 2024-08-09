@@ -9,7 +9,7 @@ url: /es/net/programming-with-table-styles-and-formatting/format-table-and-cell-
 ---
 ## Introducción
 
-¿Alguna vez ha intentado que sus documentos de Word tengan un aspecto más profesional personalizando los bordes de las tablas y las celdas? Si no, ¡te espera un regalo! Este tutorial lo guiará a través del proceso de formatear tablas y celdas con diferentes bordes usando Aspose.Words para .NET. Imagine tener el poder de cambiar la apariencia de sus tablas con sólo unas pocas líneas de código. ¿Intrigado? Profundicemos y exploremos cómo puede lograr esto con facilidad.
+¿Alguna vez ha intentado que sus documentos de Word tengan un aspecto más profesional personalizando los bordes de las tablas y las celdas? Si no, ¡te espera un capricho! Este tutorial lo guiará a través del proceso de formatear tablas y celdas con diferentes bordes usando Aspose.Words para .NET. Imagine tener el poder de cambiar la apariencia de sus tablas con sólo unas pocas líneas de código. ¿Intrigado? Profundicemos y exploremos cómo puede lograr esto con facilidad.
 
 ## Requisitos previos
 
@@ -98,7 +98,7 @@ Personaliza los bordes de celdas específicas para que se destaquen. Aquí estab
 
 ```csharp
 builder.InsertCell();
-// Crea bordes más grandes para la primera celda de esta fila. Esto será diferente
+// Crea bordes más grandes para la primera celda de esta fila. esto sera diferente
 // en comparación con los bordes establecidos para la mesa.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;

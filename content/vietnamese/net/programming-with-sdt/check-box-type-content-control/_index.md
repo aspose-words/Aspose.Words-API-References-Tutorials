@@ -80,7 +80,7 @@ Dòng này lưu tài liệu có hộp kiểm mới được thêm vào thư mụ
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thêm thành công Kiểm soát nội dung loại hộp kiểm vào tài liệu Word của mình bằng Aspose.Words for .NET. Tính năng này có thể cực kỳ hữu ích để tạo các tài liệu tương tác và thân thiện với người dùng. Cho dù bạn đang xây dựng biểu mẫu, khảo sát hay bất kỳ tài liệu nào yêu cầu người dùng nhập liệu thì hộp kiểm là cách tuyệt vời để nâng cao khả năng sử dụng.
+Và bạn có nó! Bạn đã thêm thành công Kiểm soát nội dung loại hộp kiểm vào tài liệu Word của mình bằng Aspose.Words for .NET. Tính năng này có thể cực kỳ hữu ích để tạo các tài liệu tương tác và thân thiện với người dùng. Cho dù bạn đang xây dựng biểu mẫu, khảo sát hay bất kỳ tài liệu nào yêu cầu người dùng nhập liệu thì hộp kiểm là cách tuyệt vời để nâng cao khả năng sử dụng.
 
  Nếu bạn có bất kỳ câu hỏi nào hoặc cần hỗ trợ thêm, vui lòng kiểm tra[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc ghé thăm[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
 

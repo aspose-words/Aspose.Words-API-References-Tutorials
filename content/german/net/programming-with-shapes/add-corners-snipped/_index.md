@@ -17,7 +17,7 @@ Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, wa
 
 1.  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, laden Sie die neueste Version von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Richten Sie Ihre Entwicklungsumgebung ein. Visual Studio ist eine beliebte Wahl, Sie können jedoch jede IDE verwenden, die .NET unterstützt.
-3.  Lizenz: Wenn Sie nur experimentieren, können Sie eine[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) um die volle Funktionalität freizuschalten.
+3.  Lizenz: Wenn Sie nur experimentieren, können Sie eine[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) um die volle Funktionalität freizuschalten.
 4. Grundlegende Kenntnisse in C#: Wenn Sie mit der C#-Programmierung vertraut sind, können Sie den Beispielen leichter folgen.
 
 ## Namespaces importieren
@@ -85,7 +85,7 @@ Da haben Sie es! Das Hinzufügen benutzerdefinierter Formen zu Ihren Word-Dokume
 ## Häufig gestellte Fragen
 
 ### Kann ich die Größe der Form „Abgeschnittene Ecken“ anpassen?
-Ja, Sie können die Größe anpassen, indem Sie die Abmessungen im`InsertShape` Methode.
+Ja, Sie können die Größe anpassen, indem Sie die Abmessungen im`InsertShape` Verfahren.
 
 ### Ist es möglich, andere Arten von Formen hinzuzufügen?
  Absolut! Aspose.Words unterstützt verschiedene Formen. Ändern Sie einfach die`ShapeType` in die gewünschte Form.

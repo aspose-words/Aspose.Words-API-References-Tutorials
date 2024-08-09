@@ -72,7 +72,7 @@ Une fois nos options de sauvegarde configurées, la dernière étape consiste à
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-Et voila! Vous avez réussi à diviser un document Word en sections en HTML à l'aide d'Aspose.Words pour .NET.
+Et voilà ! Vous avez réussi à diviser un document Word en sections en HTML à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 

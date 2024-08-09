@@ -38,7 +38,7 @@ Först måste du definiera sökvägen dit dokumentet ska sparas.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara dokumentet.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara dokumentet.
 
 ## Steg 2: Initiera Document and DocumentBuilder
 
@@ -115,7 +115,7 @@ builder.RowFormat.HeightRule = HeightRule.Auto;
 
 ## Steg 8: Infoga kroppsrader
 
-Infoga brödraderna med innehåll:
+Infoga brödtextraderna med innehåll:
 
 ```csharp
 builder.InsertCell();

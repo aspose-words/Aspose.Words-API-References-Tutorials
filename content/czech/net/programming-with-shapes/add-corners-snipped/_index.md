@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/add-corners-snipped/
 ---
-## Úvod
+## Zavedení
 
 Přidání vlastních tvarů do dokumentů aplikace Word může být zábavným a vizuálně přitažlivým způsobem, jak zvýraznit důležité informace nebo dodat svému obsahu trochu šmrncu. V tomto tutoriálu se ponoříme do toho, jak můžete vložit tvary „Vystřižené rohy“ do dokumentů aplikace Word pomocí Aspose.Words for .NET. Tato příručka vás provede každým krokem a zajistí, že můžete bez námahy přidávat tyto tvary a upravovat své dokumenty jako profesionál.
 
@@ -80,7 +80,7 @@ A stejně tak váš dokument nyní obsahuje vlastní tvar "Rohy Snipped" uložen
 
 ## Závěr
 
-Tady to máš! Přidávání vlastních tvarů do dokumentů aplikace Word pomocí Aspose.Words for .NET je přímočaré a může výrazně zlepšit vizuální přitažlivost vašich dokumentů. Podle těchto kroků můžete snadno vložit tvar "Rohy Snipped" a zajistit, aby váš dokument splňoval požadované standardy. Šťastné kódování!
+Tady to máš! Přidávání vlastních tvarů do dokumentů aplikace Word pomocí Aspose.Words for .NET je jednoduché a může výrazně zlepšit vizuální přitažlivost vašich dokumentů. Podle těchto kroků můžete snadno vložit tvar "Rohy Snipped" a zajistit, aby váš dokument splňoval požadované standardy. Šťastné kódování!
 
 ## FAQ
 

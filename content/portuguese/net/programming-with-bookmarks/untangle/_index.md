@@ -111,7 +111,7 @@ Este tutorial aborda marcadores que abrangem duas linhas adjacentes. Para casos 
 
 ### Existe uma versão de teste do Aspose.Words for .NET disponível?
 
- Sim você pode[baixe um teste gratuito](https://releases.aspose.com/) do site Aspose para explorar os recursos da biblioteca.
+ Sim, você pode[baixe um teste gratuito](https://releases.aspose.com/) do site Aspose para explorar os recursos da biblioteca.
 
 ### Como posso obter suporte se encontrar problemas?
 

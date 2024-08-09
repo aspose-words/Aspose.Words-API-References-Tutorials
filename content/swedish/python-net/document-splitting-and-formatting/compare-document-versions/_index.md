@@ -29,7 +29,7 @@ När du arbetar med dokument tillsammans är det avgörande att hålla reda på 
 
 ## Laddar dokumentversioner
 
-För att jämföra dokumentversioner måste du ladda filerna i minnet. Här är hur:
+För att jämföra dokumentversioner måste du ladda filerna i minnet. Så här gör du:
 
 ```python
 doc1_path = "path/to/first/document.docx"

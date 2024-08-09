@@ -9,7 +9,7 @@ url: /es/net/programming-with-tables/get-floating-table-position/
 ---
 ## Introducción
 
-¿Estás listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy lo llevaremos en un viaje para descubrir los secretos de las tablas flotantes en documentos de Word. Imagine que tiene una mesa que no sólo permanece quieta sino que flota elegantemente alrededor del texto. Muy bien, ¿verdad? Este tutorial le mostrará cómo obtener las propiedades de posicionamiento de dichas tablas flotantes. ¡Entonces empecemos!
+¿Estás listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy lo llevaremos en un viaje para descubrir los secretos de las tablas flotantes en documentos de Word. Imagine que tiene una mesa que no sólo permanece quieta sino que flota elegantemente alrededor del texto. Muy bien, ¿verdad? Este tutorial le mostrará cómo obtener las propiedades de posicionamiento de dichas tablas flotantes. Entonces, ¡comencemos!
 
 ## Requisitos previos
 

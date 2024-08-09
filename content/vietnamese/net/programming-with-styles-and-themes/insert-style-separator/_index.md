@@ -38,7 +38,7 @@ Các không gian tên này cung cấp quyền truy cập vào các lớp và ph�
 
 Tiêu đề: Tạo một tài liệu và trình tạo mới
 
- Giải thích: Bắt đầu bằng cách tạo một cái mới`Document` đối tượng và một`DocumentBuilder` ví dụ. Các`DocumentBuilder` lớp cho phép bạn chèn và định dạng văn bản và các thành phần vào tài liệu.
+ Giải thích: Bắt đầu bằng cách tạo một cái mới`Document` đối tượng và một`DocumentBuilder` ví dụ. các`DocumentBuilder` lớp cho phép bạn chèn và định dạng văn bản và các thành phần vào tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-inline-image/
 ---
-## Úvod
+## Zavedení
 
 oblasti zpracování dokumentů pomocí aplikací .NET stojí Aspose.Words jako robustní řešení pro programovou manipulaci s dokumenty Word. Jednou z jeho klíčových funkcí je schopnost bez námahy vkládat vložené obrázky, což zvyšuje vizuální přitažlivost a funkčnost vašich dokumentů. Tento výukový program se ponoří hluboko do toho, jak můžete využít Aspose.Words pro .NET k bezproblémovému vkládání obrázků do dokumentů aplikace Word.
 
@@ -16,7 +16,7 @@ oblasti zpracování dokumentů pomocí aplikací .NET stojí Aspose.Words jako 
 Než se ponoříte do procesu vkládání vložených obrázků pomocí Aspose.Words for .NET, ujistěte se, že máte splněny následující předpoklady:
 
 1. Prostředí Visual Studio: Mít nainstalované Visual Studio a připravené k vytváření a kompilaci aplikací .NET.
-2.  Knihovna Aspose.Words for .NET: Stáhněte a nainstalujte knihovnu Aspose.Words for .NET z[tady](https://releases.aspose.com/words/net/).
+2.  Knihovna Aspose.Words for .NET: Stáhněte a nainstalujte knihovnu Aspose.Words for .NET z[zde](https://releases.aspose.com/words/net/).
 3. Základní porozumění C#: Pro implementaci úryvků kódu bude přínosem znalost základů programovacího jazyka C#.
 
 Nyní si projdeme kroky k importu potřebných jmenných prostorů a vložení vloženého obrázku pomocí Aspose.Words for .NET.

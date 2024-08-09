@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přemýšleli jste někdy, jak exportovat dokument aplikace Word do formátu Markdown s dokonale zarovnanými tabulkami? Ať už jste vývojář pracující na dokumentaci nebo jen někdo, kdo miluje Markdown, tento průvodce je pro vás. Abychom toho dosáhli, ponoříme se do toho nejnutnějšího použití Aspose.Words pro .NET. Jste připraveni přeměnit své Word tabulky na úhledně zarovnané Markdown tabulky? Začněme!
+Ahoj! Přemýšleli jste někdy, jak exportovat dokument aplikace Word do formátu Markdown s dokonale zarovnanými tabulkami? Ať už jste vývojář pracující na dokumentaci nebo jen někdo, kdo miluje Markdown, tento průvodce je pro vás. Abychom toho dosáhli, ponoříme se do toho nejnutnějšího použití Aspose.Words pro .NET. Jste připraveni přeměnit své Word tabulky na úhledně zarovnané Markdown tabulky? Začněme!
 
 ## Předpoklady
 
@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Inicializujte Document a DocumentBuilder
 
-Nejprve musíme vytvořit nový dokument aplikace Word a inicializovat a`DocumentBuilder` objekt začít budovat náš dokument.
+Nejprve musíme vytvořit nový dokument aplikace Word a inicializovat a`DocumentBuilder` začněte budovat náš dokument.
 
 ```csharp
 // Cesta k adresáři dokumentů.

@@ -94,7 +94,7 @@ textBox.Next = null;
 
 ### Разрыв входящих ссылок
 
- Чтобы разорвать входящую ссылку, проверьте,`Previous` текстовое поле существует и позвоните`BreakForwardLink` в теме:
+ Чтобы разорвать входящую ссылку, проверьте,`Previous` текстовое поле существует и позвоните`BreakForwardLink` на этом:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();

@@ -13,9 +13,9 @@ Hai, penggemar teknologi! Pernahkah Anda menggaruk-garuk kepala dan bertanya-tan
 
 ## Prasyarat
 
-Sebelum kita mendalami dunia penyelarasan label multi-baris, pastikan Anda sudah menyiapkan semua hal secara berurutan. Inilah yang Anda perlukan:
+Sebelum kita mendalami dunia penyelarasan label multi-baris, pastikan Anda sudah menyiapkan semuanya secara berurutan. Inilah yang Anda perlukan:
 
-1.  Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan .NET: Pastikan lingkungan pengembangan Anda diatur dengan .NET.
 3. Pengetahuan Dasar C#: Pemahaman mendasar tentang C# akan membuat perjalanan ini lebih lancar.
 
@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 Sekarang tibalah keajaibannya! Kami akan mengatur perataan label centang untuk label multi-baris.
 
- Mengatur`TickLabelAlignment` properti sumbu ke`ParagraphAlignment.Right`.
+ Atur`TickLabelAlignment` properti sumbu ke`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -94,7 +94,7 @@ axis.TickLabelAlignment = ParagraphAlignment.Right;
 
 Terakhir, mari simpan dokumen kita dengan perubahan yang diinginkan.
 
- Menggunakan`Save` metode`Document` kelas untuk menyimpan dokumen di direktori yang ditentukan.
+ Gunakan`Save` metode`Document` kelas untuk menyimpan dokumen di direktori yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");

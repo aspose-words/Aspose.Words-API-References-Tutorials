@@ -7,18 +7,18 @@ type: docs
 weight: 10
 url: /cs/net/document-protection/password-protection/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přemýšleli jste někdy nad tím, jak můžete zabezpečit své dokumenty ve Wordu před nechtěnými úpravami a slídícími očima? No, máte štěstí, protože dnes se ponoříme do světa ochrany heslem pomocí Aspose.Words pro .NET. Je to jako zamknout si diář – jen chladnější a technologicky zdatnější. Vydejme se společně na tuto cestu a naučme se, jak uchovávat naše doklady v bezpečí!
+Ahoj! Přemýšleli jste někdy nad tím, jak můžete zabezpečit své dokumenty ve Wordu před nechtěnými úpravami a slídícími očima? No, máte štěstí, protože dnes se ponoříme do světa ochrany heslem pomocí Aspose.Words pro .NET. Je to jako zamknout si diář – jen chladnější a technologicky zdatnější. Vydejme se společně na tuto cestu a naučme se, jak uchovávat naše doklady v bezpečí!
 
 ## Předpoklady
 
 Než se ponoříme do toho nejnutnějšího, jak chránit vaše dokumenty ve Wordu heslem, budete potřebovat několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí C#.
 3. Základní znalost C#: Základní znalost programování v C#.
-4.  Aspose License: Získejte licenci od[tady](https://purchase.aspose.com/buy)nebo použijte a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
+4.  Aspose License: Získejte licenci od[zde](https://purchase.aspose.com/buy)nebo použijte a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
 
 ## Importovat jmenné prostory
 
@@ -64,7 +64,7 @@ Tady se děje kouzlo. Na náš dokument použijeme ochranu heslem, abychom zabr�
 
 ### Vyberte Typ ochrany
 
- Aspose.Words nabízí různé druhy ochrany, jako např`NoProtection`, `ReadOnly`, `AllowOnlyComments` , a`AllowOnlyFormFields` . Pro tento příklad použijeme`NoProtection` ale s heslem, což v podstatě znamená, že dokument je upravitelný, ale k odstranění ochrany vyžaduje heslo.
+ Aspose.Words nabízí různé druhy ochrany, jako např`NoProtection`, `ReadOnly`, `AllowOnlyComments` a`AllowOnlyFormFields` . Pro tento příklad použijeme`NoProtection` ale s heslem, což v podstatě znamená, že dokument je upravitelný, ale k odstranění ochrany vyžaduje heslo.
 
 ### Použít ochranu
 
@@ -94,7 +94,7 @@ tady to máte! Úspěšně jste přidali ochranu heslem do dokumentu aplikace Wo
 
 ### Mohu s Aspose.Words používat různé typy ochrany?
 
- Ano, Aspose.Words podporuje různé typy ochrany, včetně`ReadOnly`, `AllowOnlyComments` , a`AllowOnlyFormFields`.
+ Ano, Aspose.Words podporuje různé typy ochrany, včetně`ReadOnly`, `AllowOnlyComments` a`AllowOnlyFormFields`.
 
 ### Jak mohu odstranit ochranu heslem z dokumentu?
 

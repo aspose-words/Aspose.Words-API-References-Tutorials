@@ -2,79 +2,110 @@
 title: Codice recintato
 linktitle: Codice recintato
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come utilizzare la funzionalità di codice recintato con Aspose.Words per .NET Guida passo passo.
+description: Scopri come aggiungere codice protetto e stringhe informative ai documenti Word utilizzando Aspose.Words per .NET. Guida passo passo inclusa. Migliora le tue capacità di formattazione dei documenti.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/fenced-code/
 ---
+## Introduzione
 
-In questo esempio, ti spiegheremo come utilizzare la funzionalità di codice recintato con Aspose.Words per .NET. il codice protetto viene utilizzato per rappresentare blocchi di codice con formattazione specifica.
+Ehi, collega programmatore! Oggi ci immergiamo nel mondo di Aspose.Words per .NET per padroneggiare l'arte di aggiungere codice recintato e codice recintato con stringhe informative ai tuoi documenti Word. Immagina il tuo documento Word come una tela e tu, l'artista, stai per dipingere con la precisione di uno sviluppatore esperto. Con Aspose.Words, hai il potere di migliorare a livello di codice i tuoi documenti con blocchi di codice strutturati e formattati, facendo brillare i tuoi documenti tecnici con professionalità e chiarezza.
 
-## Passaggio 1: utilizzo di un generatore di documenti
+## Prerequisiti
 
-Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
+Prima di passare al tutorial, assicuriamoci di avere tutto ciò di cui hai bisogno:
+
+- Conoscenza di base di C#: una conoscenza generale di C# ti aiuterà a cogliere rapidamente i concetti.
+-  Aspose.Words per .NET: è necessario che sia installato Aspose.Words per .NET. Se non l'hai ancora preso, prendilo[Qui](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: Visual Studio o qualsiasi altro IDE C# con cui ti trovi a tuo agio.
+
+## Importa spazi dei nomi
+
+Per prima cosa, devi importare gli spazi dei nomi necessari. È come raccogliere tutti gli strumenti prima di iniziare un progetto.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+Ora analizziamo il processo passo dopo passo.
+
+## Passaggio 1: impostazione del progetto
+
+Prima di poter creare bellissimi blocchi di codice formattati nel nostro documento Word, dobbiamo impostare un nuovo progetto in Visual Studio.
+
+1. Crea un nuovo progetto: apri Visual Studio e crea una nuova applicazione console C#.
+2. Aggiungi riferimento ad Aspose.Words: installa Aspose.Words tramite Gestione pacchetti NuGet. Puoi farlo facendo clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, selezionando "Gestisci pacchetti NuGet" e cercando Aspose.Words.
+
+## Passaggio 2: inizializzare DocumentBuilder
+
+Ora che il tuo progetto è configurato, inizializziamo DocumentBuilder, che sarà il nostro strumento principale per aggiungere contenuto al documento Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Passaggio 2: aggiunta di uno stile per il codice protetto
+## Passaggio 3: crea uno stile per il codice protetto
 
- Aggiungeremo uno stile personalizzato per il codice recintato utilizzando il file`Styles.Add` metodo del`Document` oggetto. In questo esempio, stiamo creando uno stile chiamato "FencedCode" per il codice protetto.
+Per aggiungere codice protetto, dobbiamo prima creare uno stile. Pensa a questo come all'impostazione del tema per il nostro blocco di codice.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## Passaggio 3: aggiunta di codice protetto senza informazioni
+## Passaggio 4: aggiungi il codice protetto al documento
 
-Ora possiamo aggiungere un blocco di codice recintato senza stringa di informazioni utilizzando lo stile personalizzato "FencedCode".
+Con il nostro stile pronto, ora possiamo aggiungere un blocco di codice delimitato al documento.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## Passaggio 4: aggiungi il codice protetto con la stringa informativa
+## Passaggio 5: crea uno stile per il codice recintato con la stringa informativa
 
-Possiamo anche aggiungere un blocco di codice delimitato con una stringa di informazioni utilizzando un altro stile personalizzato. In questo esempio stiamo creando uno stile chiamato "FencedCode.C#" per rappresentare un blocco di codice C#.
+A volte potresti voler specificare il linguaggio di programmazione o aggiungere ulteriori informazioni al tuo blocco di codice. Creiamo uno stile per questo.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Codice sorgente di esempio per il codice recintato utilizzando Aspose.Words per .NET
+## Passaggio 6: aggiungere il codice recintato con la stringa informativa al documento
+
+Aggiungiamo ora un blocco di codice protetto con una stringa informativa per indicare che si tratta di codice C#.
 
 ```csharp
-// Utilizza un generatore di documenti per aggiungere contenuto al documento.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### Domande frequenti
+## Conclusione
 
-#### D: Cos'è il codice delimitato in Markdown?
+Congratulazioni! Hai appena aggiunto blocchi di codice recintato e codice recintato con stringhe informative ai tuoi documenti Word utilizzando Aspose.Words per .NET. Questa è solo la punta dell'iceberg. Con Aspose.Words, puoi automatizzare e migliorare l'elaborazione dei tuoi documenti a nuovi livelli. Continua a esplorare e felice di programmare!
 
-R: Il codice delimitato in Markdown è un metodo di formattazione utilizzato per visualizzare il codice in un documento Markdown. Consiste nell'inquadrare il codice con delimitatori specifici.
+## Domande frequenti
 
-#### D: Quali sono i vantaggi del codice delimitato in Markdown?
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di creare, manipolare e convertire documenti Word a livello di codice.
 
-R: Il codice delimitato in Markdown migliora la leggibilità del codice e ne facilita la comprensione per i lettori. Consente inoltre di preservare l'evidenziazione della sintassi in alcuni editor Markdown.
+### Posso utilizzare Aspose.Words con altri linguaggi di programmazione?
+Aspose.Words supporta principalmente i linguaggi .NET, ma sono disponibili versioni per Java, Python e altri linguaggi.
 
-#### D: Qual è la differenza tra codice delimitato e rientrato in Markdown?
+### Aspose.Words è gratuito?
+ Aspose.Words è un prodotto commerciale, ma puoi scaricare una versione di prova gratuita[Qui](https://releases.aspose.com/)per esplorarne le caratteristiche.
 
-R: Il codice delimitato utilizza delimitatori specifici per racchiudere il codice, mentre il codice rientrato prevede il rientro di ogni riga di codice con spazi o tabulazioni.
+### Come posso ottenere supporto per Aspose.Words?
+ Puoi ottenere supporto dalla comunità e dagli sviluppatori di Aspose[Qui](https://forum.aspose.com/c/words/8).
 
-#### D: Il codice delimitato in Markdown è supportato da tutti gli editor Markdown?
-
-R: Il supporto per il codice delimitato in Markdown può variare a seconda degli editor Markdown. Controlla la documentazione specifica del tuo editore per essere sicuro.
-
+### Quali altre funzionalità offre Aspose.Words?
+Aspose.Words offre una vasta gamma di funzionalità tra cui conversione di documenti, generazione di documenti basata su modelli, reporting e molto altro.

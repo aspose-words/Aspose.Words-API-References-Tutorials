@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
-## Úvod
+## Zavedení
 
 Uvízli jste někdy v bludišti nahrazování textu v dokumentech aplikace Word? Pokud přikyvujete hlavou, připoutejte se, protože se ponoříme do vzrušujícího výukového programu pomocí Aspose.Words pro .NET. Dnes se budeme zabývat tím, jak nahradit text obsahující meta znaky. Jste připraveni, aby byla manipulace s dokumenty plynulejší než kdykoli předtím? Začněme!
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
 
-Nyní si tento proces rozdělíme na stravitelné kroky. Připraveni? Pojďme!
+Nyní si tento proces rozdělíme na stravitelné kroky. Připraveni? Jdeme na to!
 
 ## Krok 1: Nastavte své prostředí
 
@@ -91,7 +91,7 @@ Dále nahradíme vlastní textovou značku zalomením oddílu. Je to jako vyměn
 count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 ```
 
- Tady,`{insert-section}` je nahrazeno koncem oddílu (`&b`).
+ Zde,`{insert-section}` je nahrazeno koncem oddílu (`&b`).
 
 ## Krok 6: Uložte dokument
 

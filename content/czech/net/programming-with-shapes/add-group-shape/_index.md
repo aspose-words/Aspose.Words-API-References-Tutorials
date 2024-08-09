@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/add-group-shape/
 ---
-## Úvod
+## Zavedení
 
 Vytváření složitých dokumentů s bohatými vizuálními prvky může být někdy skličující úkol, zejména při práci se skupinovými tvary. Ale nebojte se! Aspose.Words for .NET tento proces zjednodušuje, takže je snadný jako facka. V tomto kurzu vás provedeme kroky pro přidávání skupinových tvarů do dokumentů aplikace Word. Jste připraveni se ponořit? Začněme!
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 doc.EnsureMinimum();
 ```
 
- Tady,`EnsureMinimum()` přidá minimální sadu uzlů požadovaných pro dokument.
+ Zde,`EnsureMinimum()` přidá minimální sadu uzlů požadovaných pro dokument.
 
 ## Krok 2: Vytvořte objekt GroupShape
 

@@ -2,100 +2,102 @@
 title: Dapatkan Jenis Kata Revisi
 linktitle: Dapatkan Jenis Kata Revisi
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Dapatkan revisi jenis kata dalam dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mendapatkan revisi jenis kata dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini membantu Anda menangani revisi dokumen secara efisien.
 type: docs
 weight: 10
 url: /id/net/working-with-revisions/get-revision-types/
 ---
+## Perkenalan
 
-Dalam panduan langkah demi langkah ini, kami akan memberi tahu Anda cara mendapatkan revisi jenis kata dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memberi Anda kode sumber lengkap dan menunjukkan cara memformat keluaran penurunan harga.
+Pernahkah Anda tenggelam dalam lautan revisi dokumen, bertanya-tanya siapa yang memindahkan apa dan kapan? Anda tidak sendirian. Menangani revisi dokumen bisa menjadi tugas yang membosankan, terutama jika menangani dokumen yang luas. Tapi, jangan khawatir! Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah mengidentifikasi dan mengelola revisi ini. Dalam panduan ini, kami akan memandu Anda melalui proses langkah demi langkah tentang cara mendapatkan revisi jenis kata dalam dokumen Word menggunakan Aspose.Words untuk .NET. Jadi, kencangkan sabuk pengaman, dan mari selami!
 
-## Langkah 1: Memuat dokumen
+## Prasyarat
 
-Langkah pertama adalah mengunggah dokumen yang berisi revisi.
+Sebelum kita mengotori beberapa kode, ada beberapa hal yang Anda perlukan:
+
+1.  Aspose.Words untuk .NET Library: Jika Anda belum melakukannya, unduh dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
+3. Pengetahuan Dasar C#: Pemahaman bahasa pemrograman C# akan bermanfaat.
+4.  Dokumen Word dengan Revisi: Pastikan Anda memiliki a`.docx`file dengan perubahan terlacak untuk menguji kode.
+
+## Impor Namespace
+
+Untuk memulai, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda. Ini akan memungkinkan Anda mengakses fungsionalitas yang disediakan oleh Aspose.Words untuk .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using Aspose.Words.Revision;
+using System;
 ```
 
-## Langkah 2: Telusuri paragraf
+Mari kita bagi contoh ini menjadi beberapa langkah untuk pemahaman dan penerapan yang lebih baik.
 
-Selanjutnya, kita akan menelusuri paragraf dokumen dan memeriksa jenis revisi kata yang terkait dengan setiap paragraf.
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Hal pertama yang pertama, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda yang telah direvisi akan ditempatkan.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke folder dokumen Anda.
+
+## Langkah 2: Muat Dokumen Word Anda
+
+Selanjutnya, Anda perlu memuat dokumen Word ke dalam proyek Anda. Dokumen ini harus memiliki revisi yang ingin Anda analisis.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ Pastikan file tersebut`Revisions.docx` ada di direktori yang ditentukan.
+
+## Langkah 3: Akses Koleksi Paragraf
+
+Sekarang setelah dokumen Anda dimuat, Anda perlu mengakses paragraf di bagian pertama badan dokumen. Ini akan membantu Anda mengulangi setiap paragraf untuk memeriksa revisi.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     if (paragraphs[i].IsMoveFromRevision)
-         Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-     if (paragraphs[i].IsMoveToRevision)
-         Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-}
 ```
 
-### Contoh kode sumber untuk Dapatkan Jenis Revisi menggunakan Aspose.Words untuk .NET
+## Langkah 4: Ulangi Paragraf dan Periksa Revisi
 
-Berikut kode sumber lengkap untuk mendapatkan tipe revisi dalam dokumen menggunakan Aspose.Words untuk .NET:
+Di sinilah keajaiban terjadi. Anda akan mengulangi setiap paragraf dan memeriksa apakah paragraf telah dipindahkan (dihapus atau disisipkan).
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 for (int i = 0; i < paragraphs.Count; i++)
 {
-	 if (paragraphs[i].IsMoveFromRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-	 if (paragraphs[i].IsMoveToRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+    if (paragraphs[i].IsMoveFromRevision)
+        Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+    if (paragraphs[i].IsMoveToRevision)
+        Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
 }
 ```
+
+ Perulangan ini melewati setiap paragraf dan menggunakan`IsMoveFromRevision`Dan`IsMoveToRevision` properti untuk menentukan apakah paragraf dipindahkan (dihapus) atau dipindahkan (dimasukkan).
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara mendapatkan revisi jenis kata dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami mengikuti langkah-langkah untuk memuat dokumen, menelusuri paragraf, dan memeriksa jenis ulasan kata yang terkait dengan setiap paragraf. Sekarang Anda dapat menerapkan pengetahuan ini untuk menganalisis ulasan kata di dokumen Word Anda sendiri menggunakan Aspose.Words untuk .NET.
+Dan itu dia! Hanya dengan beberapa baris kode, Anda dapat dengan mudah mengidentifikasi jenis revisi di dokumen Word Anda menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan penanganan revisi dokumen, memungkinkan Anda fokus pada tugas yang lebih penting. 
 
-### FAQ untuk mendapatkan revisi jenis kata
+## FAQ
 
-#### T: Bagaimana cara mengunggah dokumen di Aspose.Words untuk .NET?
+### Bisakah saya menggunakan Aspose.Words untuk .NET untuk melacak perubahan yang dibuat oleh pengguna tertentu?
 
- J: Gunakan`Document` kelas Aspose.Words untuk .NET untuk memuat dokumen dari file. Anda dapat menentukan jalur dokumen lengkap.
+Ya, Aspose.Words untuk .NET menyediakan fungsionalitas untuk mengakses detail revisi, termasuk pembuat perubahan.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
 
-#### T: Bagaimana cara mengulang paragraf dalam dokumen di Aspose.Words untuk .NET?
+ Sangat! Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/).
 
- J: Gunakan`Paragraphs` milik bagian dokumen untuk mendapatkan kumpulan paragraf. Anda kemudian dapat menggunakan loop untuk mengulang setiap paragraf.
+### Bagaimana cara menerapkan lisensi sementara untuk Aspose.Words untuk .NET?
 
-```csharp
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     // Proses setiap paragraf di sini
-}
-```
+ Anda dapat meminta dan menerapkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-#### T: Bagaimana cara memeriksa apakah paragraf telah dipindahkan (dihapus) di Aspose.Words untuk .NET?
+### Di mana saya dapat menemukan dokumentasi lebih rinci untuk Aspose.Words untuk .NET?
 
- A: Gunakan paragraf`IsMoveFromRevision`properti untuk memeriksa apakah sudah dipindahkan (dihapus).
+ Dokumentasi terperinci tersedia di[Asumsikan situs web](https://reference.aspose.com/words/net/).
 
-```csharp
-if (paragraph. IsMove
+### Bisakah saya menggunakan Aspose.Words untuk .NET dalam proyek non-komersial?
 
-FromRevision)
-{
-     // Paragraf telah dipindahkan (dihapus)
-}
-```
-
-#### T: Bagaimana cara memeriksa apakah paragraf telah dipindahkan (dimasukkan) di Aspose.Words untuk .NET?
-
- A: Gunakan paragraf`IsMoveToRevision` properti untuk memeriksa apakah sudah dipindahkan (dimasukkan).
-
-```csharp
-if (paragraph.IsMoveToRevision)
-{
-     // Paragraf telah dipindahkan (dimasukkan)
-}
-```
+Ya, Aspose.Words untuk .NET dapat digunakan dalam proyek komersial dan non-komersial, namun pastikan untuk memeriksa persyaratan lisensi.

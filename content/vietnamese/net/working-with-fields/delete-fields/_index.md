@@ -100,4 +100,4 @@ Bạn có thể sử dụng khối try-catch để xử lý các trường hợp
 Có, phương pháp hiển thị ở đây chỉ nhắm mục tiêu cụ thể vào các trường và không thay đổi nội dung khác.
 
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Words ở đâu?
- Tham quan[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/) và[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
+ Ghé thăm[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/) và[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ thêm.

@@ -135,7 +135,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
  आप इसके माध्यम से सहायता प्राप्त कर सकते हैं[Aspose.Words समर्थन मंच](https://forum.aspose.com/c/words/8).
 
 ### क्या मैं अन्य प्रकार के चार्ट जोड़ सकता हूँ?
- हां, Aspose.Words विभिन्न चार्ट प्रकारों जैसे बार, लाइन और कॉलम चार्ट का समर्थन करता है।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए।
+ हां, Aspose.Words विभिन्न चार्ट प्रकारों जैसे बार, लाइन और कॉलम चार्ट का समर्थन करता है।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए.
 
 ### क्या Aspose.Words .NET कोर के साथ संगत है?
  हां, Aspose.Words .NET Core के साथ संगत है। आप अधिक जानकारी यहाँ पा सकते हैं[प्रलेखन](https://reference.aspose.com/words/net/).

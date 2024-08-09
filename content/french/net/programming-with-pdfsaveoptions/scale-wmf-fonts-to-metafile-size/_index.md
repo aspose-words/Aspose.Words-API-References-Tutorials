@@ -15,7 +15,7 @@ Lorsque vous travaillez avec des fichiers PDF, en particulier ceux générés à
 
 Avant de plonger dans les étapes, assurez-vous d'avoir les éléments suivants :
 
-1. Aspose.Words pour .NET : assurez-vous que la bibliothèque Aspose.Words est installée. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1. Aspose.Words pour .NET : assurez-vous que la bibliothèque Aspose.Words est installée. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : ce didacticiel suppose que vous disposez d'un environnement de développement .NET (comme Visual Studio) dans lequel vous pouvez écrire et exécuter du code C#.
 3. Compréhension de base de la programmation .NET : une connaissance des concepts de base de la programmation .NET et de la syntaxe C# sera utile.
 4. Document Word avec graphiques WMF : vous aurez besoin d'un document Word contenant des graphiques WMF. Vous pouvez utiliser votre propre document ou en créer un pour le tester.

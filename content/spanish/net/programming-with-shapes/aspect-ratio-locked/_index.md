@@ -15,7 +15,7 @@ url: /es/net/programming-with-shapes/aspect-ratio-locked/
 
 Antes de profundizar en el código, repasemos lo que necesita para comenzar:
 
-- Biblioteca Aspose.Words para .NET: debe tener instalado Aspose.Words para .NET. Si aún no lo has hecho, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+- Biblioteca Aspose.Words para .NET: debe tener instalado Aspose.Words para .NET. Si aún no lo has hecho, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo .NET. Visual Studio es una opción popular.
 - Conocimientos básicos de C#: será útil tener cierta familiaridad con la programación en C#.
 

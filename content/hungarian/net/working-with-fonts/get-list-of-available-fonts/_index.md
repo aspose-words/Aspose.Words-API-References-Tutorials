@@ -2,93 +2,113 @@
 title: Szerezze meg az elérhető betűtípusok listáját
 linktitle: Szerezze meg az elérhető betűtípusok listáját
 second_title: Aspose.Words Document Processing API
-description: Ebből az oktatóanyagból megtudhatja, hogyan szerezheti be az Aspose.Words for .NET-ben elérhető betűtípusok listáját.
+description: Fedezze fel, hogyan szerezheti meg az elérhető betűtípusok listáját az Aspose.Words for .NET használatával ebben a részletes, lépésről lépésre mutató oktatóanyagban. Növelje fontkezelési készségeit.
 type: docs
 weight: 10
 url: /hu/net/working-with-fonts/get-list-of-available-fonts/
 ---
-Ebben az oktatóanyagban elmagyarázzuk, hogyan szerezheti be az Aspose.Words for .NET-ben elérhető betűtípusok listáját. Az elérhető betűtípusok listája megmutatja, hogy mely betűtípusokat használhatja a dokumentumokban. Lépésről lépésre segítünk megérteni és megvalósítani a kódot a .NET-projektben.
+## Bevezetés
+
+Volt már olyan, hogy nehézségekkel küzd a betűtípusok kezelésével a Word-dokumentumokban? Ha Ön .NET-fejlesztő, az Aspose.Words for .NET megmenti Önt! Ez a hatékony könyvtár nemcsak a Word-dokumentumok programozott létrehozásában és kezelésében segít, hanem kiterjedt betűtípus-kezelési lehetőségeket is kínál. Ebben az útmutatóban lépésről lépésre végigvezetjük az Aspose.Words for .NET használatával elérhető betűtípusok listáját. Könnyen követhető lépésekre bontjuk. Szóval, merüljünk bele, és tegyük gyerekjátékká a betűkészletkezelést!
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
-- C# programozási nyelv gyakorlati ismerete
-- A projektben telepített .NET Aspose.Words könyvtár
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
- Először is be kell állítania a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
+Mielőtt elkezdenénk, van néhány dolog, amire szüksége lesz:
+
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Visual Studio: Ez a példa a Visual Studio-t használja fejlesztői környezetként.
+- .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a számítógépen.
+- Dokumentumkönyvtár: Az a könyvtár elérési útja, ahol a dokumentumokat tárolják.
+
+## Névterek importálása
+
+Először is importálja a szükséges névtereket a projektbe:
 
 ```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 2. lépés: Konfigurálja a fontforrásokat
- Ezután létrehozunk egy példányt`FontSettings` és szerezze be a meglévő fontforrásokat a`GetFontsSources()` módszer. A betűtípusokat tartalmazó mappa megadásával egy új fontforrást is hozzáadunk.
+## 1. lépés: Inicializálja a betűtípus-beállításokat
+
+Az első lépés a betűtípus-beállítások inicializálása. Ez lehetővé teszi a dokumentumok betűtípus-forrásainak kezelését.
 
 ```csharp
-// Betűtípus-források konfigurálása
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-// Új fontforrás hozzáadása
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## 3. lépés: Szerezze meg az elérhető betűtípusok listáját
- Most a rendelkezésre álló betűtípusok között fogunk böngészni a`GetAvailableFonts()` módszert az első frissített betűtípus-forráson.
+- FontSettings: Ez az osztály a betűkészlet-helyettesítés és a betűtípus-források beállításainak megadására szolgál.
+- fontSources: Az aktuális betűkészlet-beállításokból létrehozunk egy listát a meglévő fontforrásokról.
+
+## 2. lépés: Határozza meg a dokumentumkönyvtárat
+
+Ezután adja meg a dokumentumkönyvtár elérési útját. Az Aspose.Words itt fog betűtípusokat keresni.
 
 ```csharp
-// Szerezze meg az elérhető betűtípusok listáját
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### Minta forráskód az elérhető betűtípusok listájának lekéréséhez az Aspose.Words for .NET használatával 
-
-```csharp
-
-// A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Adjon hozzá egy új mappaforrást, amely utasítja az Aspose.Words-t, hogy keressen betűtípusokat a következő mappában.
+-  dataDir: Ez a karakterlánc-változó tartalmazza annak a könyvtárnak az elérési útját, ahol a betűtípusok találhatók. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges úttal.
+
+## 3. lépés: Adjon hozzá egyéni betűtípus-mappát
+
+Most adjon hozzá egy új mappaforrást, és utasítsa az Aspose.Words-t, hogy keressen ebben a mappában betűtípusokat.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Adja hozzá a fontjainkat tartalmazó egyéni mappát a meglévő fontforrások listájához.
+```
+
+- FolderFontSource: Ez az osztály egy mappa betűtípus-forrást jelöl. A második paraméter (`true`) jelzi, hogy kell-e rekurzívan keresni a betűtípusokat az almappákban.
+
+## 4. lépés: Frissítse a betűtípusforrásokat
+
+Adja hozzá az egyéni betűtípus mappát a meglévő fontforrások listájához, és frissítse a betűtípus-beállításokat.
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- fontSources.Add(folderFontSource): Az egyéni betűtípus-mappát hozzáadja a meglévő fontforrásokhoz.
+- updatedFontSources: A betűtípus-források listáját tömbbé alakítja.
+
+## 5. lépés: Töltse le és jelenítse meg a betűtípusokat
+
+Végül kérje le az elérhető betűtípusokat, és jelenítse meg azok részleteit.
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts(): Lekéri az elérhető betűtípusok listáját a frissített lista első fontforrásából.
+-  fontInfo: A`PhysicalFontInfo` részleteket tartalmaz az egyes betűtípusokról.
+
 ## Következtetés
-Ebben az oktatóanyagban megnéztük, hogyan szerezheti be az Aspose.Words for .NET-ben elérhető betűtípusok listáját. Ezzel megtudhatja, milyen betűtípusokat használhat a dokumentumokban. Nyugodtan használja ezt a funkciót az igényeinek megfelelő betűtípus kiválasztásához.
 
-### GYIK
+Gratulálok! Sikeresen lekérte az elérhető betűtípusok listáját az Aspose.Words for .NET használatával. Ez az oktatóanyag végigvezeti Önt minden lépésen, a betűtípus-beállítások inicializálásától a betűtípus részleteinek megjelenítéséig. Ezzel a tudással most már könnyedén kezelheti a betűtípusokat Word-dokumentumaiban. Ne feledje, az Aspose.Words for .NET egy hatékony eszköz, amely jelentősen javíthatja dokumentumfeldolgozási képességeit. Tehát menjen tovább, és fedezzen fel további funkciókat, hogy még hatékonyabbá tegye fejlesztési folyamatát.
 
-#### K: Hogyan kérhetem le az Aspose.Words-ben elérhető betűtípusok listáját?
+## GYIK
 
- V: Az Aspose.Words-ben elérhető betűtípusok listájának lekéréséhez használja a`FontsProvider` osztály és a`GetAvailableFonts` módszer. Ez a módszer visszaadja a rendszerre telepített összes betűtípus listáját.
+### Használhatom az Aspose.Words for .NET-et más .NET-keretrendszerekkel?
+Igen, az Aspose.Words for .NET kompatibilis különféle .NET-keretrendszerekkel, beleértve a .NET Core-t és a .NET 5+-t.
 
-#### K: Szűrhetem a rendelkezésre álló betűtípusok listáját bizonyos kritériumok szerint az Aspose.Wordsben?
+### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
+Telepítheti a NuGet Package Manageren keresztül a Visual Studio alkalmazásban az „Aspose.Words” kifejezésre keresve.
 
-V: Igen, szűrheti az Aspose.Words-ben elérhető betűtípusok listáját meghatározott kritériumok alapján. Például szűrheti a betűtípusokat család, stílus vagy nyelv szerint.
+### Lehetséges több egyéni betűtípus-mappa hozzáadása?
+ Igen, több egyéni betűtípus-mappát is hozzáadhat több létrehozásával`FolderFontSource` példányokat, és hozzáadjuk őket a fontforrások listájához.
 
-#### K: Hogyan használhatom a Word dokumentumaimban elérhető betűtípusok listáját?
+### Lekérhetem a betűtípus részleteit egy adott fontforrásból?
+ Igen, lekérheti a betűtípus részleteit bármely fontforrásból, ha megadja a betűtípus forrásának indexét a`updatedFontSources` sor.
 
- V: A Word dokumentumokban elérhető betűtípusok listájának használatához böngészhet a listában, és kiválaszthatja a megfelelő betűtípusokat a`FontSettings` osztályban Aspose.Words.
+### Az Aspose.Words for .NET támogatja a betűtípusok helyettesítését?
+Igen, támogatja a betűkészlet-helyettesítést, hogy a szöveg akkor is helyesen jelenjen meg, ha az eredeti betűtípus nem elérhető.

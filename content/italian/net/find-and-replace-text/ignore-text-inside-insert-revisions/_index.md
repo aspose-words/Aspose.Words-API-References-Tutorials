@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
-## introduzione
+## Introduzione
 
 In questa guida completa, approfondiremo l'utilizzo di Aspose.Words per .NET per gestire le revisioni dei documenti in modo efficace. Che tu sia uno sviluppatore o un appassionato di tecnologia, capire come ignorare il testo all'interno delle revisioni degli inserti può semplificare i flussi di lavoro di elaborazione dei documenti. Questo tutorial ti fornirà le competenze necessarie per sfruttare le potenti funzionalità di Aspose.Words per gestire le revisioni dei documenti senza problemi.
 
@@ -89,7 +89,7 @@ Ignorare il testo inserito aiuta a mantenere l'attenzione sul contenuto principa
 Sì, puoi ripristinare il testo inserito ignorato utilizzando le impostazioni FindReplaceOptions appropriate.
 
 ### Dove posso trovare ulteriore documentazione su Aspose.Words per .NET?
- Visitare il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per guide dettagliate e riferimenti API.
+ Visita il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per guide dettagliate e riferimenti API.
 
 ### Esiste un forum della community per discutere delle query relative ad Aspose.Words per .NET?
  Sì, puoi visitare il[Forum Aspose.Words](https://forum.aspose.com/c/words/8) per il supporto e le discussioni della comunità.

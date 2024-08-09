@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
-設定することにより`AddSpaceBetweenFarEastAndAlpha`そして`AddSpaceBetweenFarEastAndDigit`に`true`では、Aspose.Words に、アジア文字とラテン文字または数字の間の間隔を自動的に調整するように指示します。
+設定により`AddSpaceBetweenFarEastAndAlpha`そして`AddSpaceBetweenFarEastAndDigit`に`true`では、Aspose.Words に、アジア文字とラテン文字または数字の間の間隔を自動的に調整するように指示します。
 
 ## ステップ3: ドキュメントにテキストを追加する
 

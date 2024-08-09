@@ -1,6 +1,6 @@
 ---
-title: Tingkatkan Penempatan Teks PDF dengan Pemosisian Teks Tambahan
-linktitle: Tingkatkan Penempatan Teks PDF dengan Pemosisian Teks Tambahan
+title: Tingkatkan Penempatan Teks PDF dengan Penempatan Teks Tambahan
+linktitle: Tingkatkan Penempatan Teks PDF dengan Penempatan Teks Tambahan
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara meningkatkan pemosisian teks PDF dengan Aspose.Words untuk .NET dalam beberapa langkah mudah. Sempurnakan tampilan dokumen Anda.
 type: docs

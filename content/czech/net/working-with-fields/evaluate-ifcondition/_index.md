@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/evaluate-ifcondition/
 ---
-## Úvod
+## Zavedení
 
 Při práci s dynamickými dokumenty je často nezbytné zahrnout podmíněnou logiku pro přizpůsobení obsahu na základě konkrétních kritérií. V Aspose.Words for .NET můžete využít pole jako příkazy IF k zavedení podmínek do dokumentů aplikace Word. Tato příručka vás provede procesem vyhodnocení podmínky IF pomocí Aspose.Words for .NET, od nastavení vašeho prostředí až po zkoumání výsledků vyhodnocení.
 
@@ -15,13 +15,13 @@ Při práci s dynamickými dokumenty je často nezbytné zahrnout podmíněnou l
 
 Než se pustíte do výukového programu, ujistěte se, že máte následující:
 
-1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/net/).
+1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[webové stránky](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: Jakákoli verze sady Visual Studio, která podporuje vývoj .NET. Ujistěte se, že máte nastaven projekt .NET, do kterého můžete integrovat Aspose.Words.
 
 3. Základní znalost C#: Znalost programovacího jazyka C# a .NET frameworku.
 
-4.  Licence Aspose: Pokud používáte licencovanou verzi Aspose.Words, ujistěte se, že je vaše licence správně nakonfigurována. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) V případě potřeby.
+4.  Licence Aspose: Pokud používáte licencovanou verzi Aspose.Words, ujistěte se, že je vaše licence správně nakonfigurována. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) v případě potřeby.
 
 5. Porozumění polím Word: Znalosti o polích Word, konkrétně o poli IF, budou užitečné, ale nejsou povinné.
 
@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder();
 FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 ```
 
- Tady,`builder.InsertField` se používá k vložení pole na aktuální pozici kurzoru. Typ pole je určen jako`"IF 1 = 1"` , což je jednoduchá podmínka, kde 1 se rovná 1. To bude vždy vyhodnoceno jako pravda. The`null` Parametr znamená, že pro pole není vyžadováno žádné další formátování.
+ Zde,`builder.InsertField` se používá k vložení pole na aktuální pozici kurzoru. Typ pole je určen jako`"IF 1 = 1"` , což je jednoduchá podmínka, kde 1 se rovná 1. To bude vždy vyhodnoceno jako pravda. The`null` Parametr znamená, že pro pole není vyžadováno žádné další formátování.
 
 ## Krok 3: Vyhodnoťte podmínku IF
 

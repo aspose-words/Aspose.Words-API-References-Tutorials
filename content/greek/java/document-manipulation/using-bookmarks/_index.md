@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 // Κατά ευρετήριο:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// Από όνομα:
+// Με όνομα:
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 
@@ -78,7 +78,7 @@ showHideBookmarkedContent(doc, "MyBookmark1", false);
 doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-## Βήμα 6: Ξεμπέρδεμα σελιδοδεικτών σειρών
+## Βήμα 6: Ξεμπλέξιμο σελιδοδεικτών σειράς
 
 Το ξεμπέρδεμα σελιδοδεικτών σειρών σάς επιτρέπει να εργάζεστε με αυτούς πιο αποτελεσματικά:
 
@@ -89,7 +89,7 @@ deleteRowByBookmark(doc, "ROW2");
 doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Η χρήση σελιδοδεικτών στο Aspose.Words για Java μπορεί να απλοποιήσει σημαντικά τις εργασίες επεξεργασίας εγγράφων. Είτε χρειάζεται να πλοηγηθείτε, να εξαγάγετε ή να χειριστείτε περιεχόμενο, οι σελιδοδείκτες παρέχουν έναν ισχυρό μηχανισμό για να το κάνετε αποτελεσματικά.
 

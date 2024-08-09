@@ -106,7 +106,7 @@ gerenciamento e a manipulação eficiente de documentos do Word geralmente envol
 
 ### Posso substituir texto apenas dentro de um intervalo específico de páginas?
 
- Sim você pode. Antes de realizar a substituição, especifique o intervalo de páginas usando o`doc.get_child_nodes()` método para obter o conteúdo das páginas específicas.
+ Sim, você pode. Antes de realizar a substituição, especifique o intervalo de páginas usando o`doc.get_child_nodes()` método para obter o conteúdo das páginas específicas.
 
 ### É possível desfazer uma operação localizar e substituir?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-field/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám někdy, že jste potřebovali automatizovat vytváření dokumentů a manipulaci s nimi? Tak to jste na správném místě. Dnes se ponoříme do Aspose.Words for .NET, výkonné knihovny, se kterou je práce s dokumenty Wordu hračkou. Ať už vkládáte pole, slučujete data nebo upravujete dokumenty, Aspose.Words vám pomůže. Vyhrňme si rukávy a prozkoumáme, jak vložit pole do dokumentu aplikace Word pomocí tohoto šikovného nástroje.
 
@@ -15,10 +15,10 @@ Stalo se vám někdy, že jste potřebovali automatizovat vytváření dokument�
 
 Než se ponoříme, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 3. IDE: Integrované vývojové prostředí jako Visual Studio.
-4.  Dočasná licence: Můžete získat jednu[tady](https://purchase.aspose.com/temporary-license/).
+4.  Dočasná licence: Můžete získat jednu[zde](https://purchase.aspose.com/temporary-license/).
 
 Ujistěte se, že jste nainstalovali Aspose.Words for .NET a nastavili své vývojové prostředí. Připraveni? Začněme!
 
@@ -80,11 +80,11 @@ Po vložení pole musíme náš dokument uložit. Zde je postup:
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-A to je vše! Úspěšně jste vložili pole do dokumentu aplikace Word.
+A je to! Úspěšně jste vložili pole do dokumentu aplikace Word.
 
 ## Závěr
 
-Gratulujeme! Právě jste se naučili, jak vložit pole do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna nabízí nepřeberné množství funkcí, díky kterým je automatizace dokumentů procházkou růžovým sadem. Pokračujte v experimentování a zkoumání různých funkcí, které Aspose.Words nabízí. Šťastné kódování!
+Gratuluji! Právě jste se naučili, jak vložit pole do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna nabízí nepřeberné množství funkcí, díky kterým je automatizace dokumentů procházkou růžovým sadem. Pokračujte v experimentování a zkoumání různých funkcí, které Aspose.Words nabízí. Šťastné kódování!
 
 ## FAQ
 
@@ -101,4 +101,4 @@ Ano, Aspose.Words for .NET je kompatibilní s .NET Framework i .NET Core.
 Ano, hromadné vkládání polí můžete automatizovat procházením dat a programovým vkládáním polí pomocí DocumentBuilder.
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?  
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).

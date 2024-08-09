@@ -28,7 +28,7 @@ using Aspose.Words.Fields;
 using System.Drawing;
 ```
 
-## Steg 1: Konfigurera din dokumentsökväg
+## Steg 1: Ställ in din dokumentsökväg
 
 Ange sökvägen till din dokumentkatalog och ladda dokumentet:
 
@@ -85,7 +85,7 @@ Du skulle behöva gå igenom alla SDT:er i dokumentet och tillämpa färgändrin
 
 ### Är det möjligt att skilja andra egenskaper hos SDT:er från färg?
 
- Ja den`StructuredDocumentTag` class har olika egenskaper som du kan ställa in, inklusive teckenstorlek, teckensnittsstil och mer. Se Aspose.Words-dokumentationen för mer information.
+ Ja, den`StructuredDocumentTag` class har olika egenskaper som du kan ställa in, inklusive teckenstorlek, teckensnittsstil och mer. Se Aspose.Words-dokumentationen för mer information.
 
 ### Kan jag lägga till händelser till SDT, till exempel klickhändelser?
 
@@ -93,4 +93,4 @@ Aspose.Words stöder inte direkt händelsehantering för SDT. Du kan dock hanter
 
 ### Är det möjligt att ta bort en SDT från dokumentet?
 
- Ja, du kan ta bort en SDT genom att ringa till`Remove()` metod på SDT:ns föräldranod.
+ Ja, du kan ta bort en SDT genom att ringa`Remove()` metod på SDT:ns föräldranod.

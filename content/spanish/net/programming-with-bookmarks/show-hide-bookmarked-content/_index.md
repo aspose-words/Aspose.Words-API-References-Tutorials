@@ -9,7 +9,7 @@ url: /es/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 ## Introducción
 
-¿Listo para sumergirse en el mundo de la manipulación de documentos con Aspose.Words para .NET? Si eres un desarrollador que busca automatizar tareas de documentos o simplemente alguien curioso acerca del manejo de archivos de Word mediante programación, estás en el lugar correcto. Hoy, exploraremos cómo mostrar y ocultar contenido marcado como favorito en un documento de Word usando Aspose.Words para .NET. Esta guía paso a paso lo convertirá en un profesional en el control de la visibilidad del contenido según los marcadores. ¡Empecemos!
+¿Listo para sumergirse en el mundo de la manipulación de documentos con Aspose.Words para .NET? Si eres un desarrollador que busca automatizar tareas de documentos o simplemente alguien con curiosidad sobre cómo manejar archivos de Word mediante programación, estás en el lugar correcto. Hoy, exploraremos cómo mostrar y ocultar contenido marcado como favorito en un documento de Word usando Aspose.Words para .NET. Esta guía paso a paso lo convertirá en un profesional en el control de la visibilidad del contenido según los marcadores. ¡Empecemos!
 
 ## Requisitos previos
 

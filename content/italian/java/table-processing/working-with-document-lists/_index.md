@@ -10,7 +10,7 @@ url: /it/java/table-processing/working-with-document-lists/
 
 Sei pronto per tuffarti nel mondo della manipolazione dei documenti in Java con Aspose.Words? In questa guida completa, esploreremo le complessità del lavoro con gli elenchi di documenti utilizzando Aspose.Words per Java. Ti forniremo istruzioni dettagliate ed esempi di codice sorgente per aiutarti a sfruttare tutta la potenza di questa versatile API Java. Iniziamo!
 
-## introduzione
+## Introduzione
 
 Aspose.Words per Java è una solida API che consente agli sviluppatori Java di lavorare con vari aspetti dell'elaborazione dei documenti. In questa guida ci concentreremo sulla gestione degli elenchi di documenti, un compito fondamentale nell'automazione dei documenti. Se hai bisogno di creare, modificare o estrarre informazioni da elenchi di documenti, Aspose.Words per Java ti copre.
 

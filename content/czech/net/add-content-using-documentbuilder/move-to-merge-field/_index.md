@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Ocitli jste se někdy pohřbeni v dokumentu aplikace Word a snažili se přijít na to, jak přejít na konkrétní slučovací pole? Je to jako být v bludišti bez mapy, že? No, už se nebojte! S Aspose.Words for .NET můžete plynule přejít na slučovací pole v dokumentu. Ať už generujete zprávy, vytváříte personalizované dopisy nebo jen automatizujete své dokumenty Word, tento průvodce vás krok za krokem provede celým procesem. Pojďme se ponořit!
+Ahoj! Ocitli jste se někdy pohřbeni v dokumentu aplikace Word a snažili se přijít na to, jak přejít na konkrétní slučovací pole? Je to jako být v bludišti bez mapy, že? No, už se nebojte! S Aspose.Words for .NET můžete plynule přejít na slučovací pole v dokumentu. Ať už generujete zprávy, vytváříte personalizované dopisy nebo jen automatizujete své dokumenty Word, tento průvodce vás krok za krokem provede celým procesem. Pojďme se ponořit!
 
 ## Předpoklady
 
 Než se pustíme do toho hnusného, dáme si kachny do řady. Zde je to, co potřebujete, abyste mohli začít:
 
--  Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Pokud ne, můžete si jej stáhnout[tady](https://visualstudio.microsoft.com/).
+-  Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Pokud ne, můžete si jej stáhnout[zde](https://visualstudio.microsoft.com/).
 -  Aspose.Words for .NET: Potřebujete knihovnu Aspose.Words. Můžete si jej stáhnout z[tento odkaz](https://releases.aspose.com/words/net/).
 - .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 
@@ -109,7 +109,7 @@ A tady to máte! Přesunutí do slučovacího pole v dokumentu aplikace Word pom
 Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově pomocí rozhraní .NET.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Aspose.Words for .NET si můžete stáhnout a nainstalovat z[tady](https://releases.aspose.com/words/net/). Postupujte podle pokynů k instalaci uvedených na webových stránkách.
+ Aspose.Words for .NET si můžete stáhnout a nainstalovat z[zde](https://releases.aspose.com/words/net/). Postupujte podle pokynů k instalaci uvedených na webových stránkách.
 
 ### Mohu používat Aspose.Words pro .NET s .NET Core?
  Ano, Aspose.Words for .NET je kompatibilní s .NET Core. Více podrobností najdete v[dokumentace](https://reference.aspose.com/words/net/).

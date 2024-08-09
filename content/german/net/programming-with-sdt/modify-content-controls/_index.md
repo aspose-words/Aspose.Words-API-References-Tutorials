@@ -15,7 +15,7 @@ Wenn Sie schon einmal mit Word-Dokumenten gearbeitet und strukturierte Inhaltsst
 
 Bevor wir uns in die Einzelheiten der Änderung von Inhaltssteuerelementen stürzen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-1.  Aspose.Words für .NET installiert: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET installiert: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 
 2. Grundkenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie mit den grundlegenden Konzepten der C#-Programmierung vertraut sind.
 

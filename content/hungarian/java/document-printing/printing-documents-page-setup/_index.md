@@ -26,7 +26,7 @@ Kezdje új Java-projekt létrehozásával a kiválasztott IDE-ben. Adjon neki é
 
 ## Az Aspose.Words for Java hozzáadása projektjéhez
 
-Az Aspose.Words for Java használatához hozzá kell adnia a könyvtárat a projekthez. Kovesd ezeket a lepeseket:
+Az Aspose.Words for Java használatához hozzá kell adnia a könyvtárat a projekthez. Kövesse az alábbi lépéseket:
 
 1.  Töltse le az Aspose.Words for Java könyvtárat innen[itt](https://releases.aspose.com/words/java/).
 
@@ -87,7 +87,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
 ### Nyomtathatok egy adott nyomtatóra?
 
-Biztosan! Megadhat egy adott nyomtatót a segítségével`setPrintService` módszer és a kívánt biztosítása`PrintService` tárgy.
+Biztosan! Megadhat egy adott nyomtatót a segítségével`setPrintService` módszer és a kívánt biztosítása`PrintService` objektum.
 
 ### Hogyan menthetem el a kinyomtatott dokumentumot PDF formátumban?
 

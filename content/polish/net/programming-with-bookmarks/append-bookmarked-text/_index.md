@@ -9,13 +9,13 @@ url: /pl/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek próbowałeś dołączyć tekst z sekcji oznaczonej zakładkami w dokumencie programu Word i okazało się to trudne? Masz szczęście! Ten samouczek przeprowadzi Cię przez proces korzystania z Aspose.Words dla .NET. Podzielimy to na proste kroki, dzięki czemu będziesz mógł łatwo je wykonać. Zanurzmy się i dołączmy tekst z zakładek jak profesjonalista!
+Hej tam! Czy kiedykolwiek próbowałeś dołączyć tekst z sekcji oznaczonej zakładkami w dokumencie programu Word i okazało się to trudne? Masz szczęście! Ten samouczek przeprowadzi Cię przez proces korzystania z Aspose.Words dla .NET. Podzielimy to na proste kroki, dzięki czemu będziesz mógł łatwo je wykonać. Zanurzmy się i dołączmy tekst z zakładek jak profesjonalista!
 
 ## Warunki wstępne
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
--  Aspose.Words dla .NET: Upewnij się, że masz go zainstalowanego. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Upewnij się, że masz go zainstalowanego. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: dowolne środowisko programistyczne .NET, takie jak Visual Studio.
 - Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstawowych koncepcji programowania w języku C#.
 - Dokument programu Word z zakładkami: dokument programu Word z ustawionymi zakładkami, z których będziemy dodawać tekst.

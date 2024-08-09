@@ -101,7 +101,7 @@ doc.Save(dataDir + "ModifiedDocument.docx");
 
 ## Conclusion
 
-Et voila! 🎉 Vous avez accédé et manipulé avec succès des sections d'un document Word à l'aide d'Aspose.Words pour .NET. Que vous effaciez du contenu, ajoutiez un nouveau texte ou effectuiez d'autres manipulations de sections, Aspose.Words rend le processus fluide et efficace. Continuez à expérimenter différentes fonctionnalités pour devenir un assistant de manipulation de documents. Bon codage !
+Et voilà ! 🎉 Vous avez accédé et manipulé avec succès des sections d'un document Word à l'aide d'Aspose.Words pour .NET. Que vous effaciez du contenu, ajoutiez un nouveau texte ou effectuiez d'autres manipulations de sections, Aspose.Words rend le processus fluide et efficace. Continuez à expérimenter différentes fonctionnalités pour devenir un assistant de manipulation de documents. Bon codage !
 
 ## FAQ
 

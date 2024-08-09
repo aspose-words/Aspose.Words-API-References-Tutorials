@@ -15,8 +15,8 @@ OLE 및 ActiveX 개체를 사용한 단어 처리에 대한 .NET용 Aspose.Words
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Word 문서에 Ole 개체 삽입](./insert-ole-object/) | Aspose.Words for .NET을 사용하여 Word 문서에 OLE 개체를 삽입하는 방법을 알아보세요. |
-| [Ole 패키지를 사용하여 Word에 Ole 개체 삽입](./insert-ole-object-with-ole-package/) | .NET용 Aspose.Words를 사용하여 OLE 패키지가 포함된 Word의 OLE 개체를 문서에 삽입하는 방법을 알아보세요. |
-| [Word 문서에 Ole 개체를 아이콘으로 삽입](./insert-ole-object-as-icon/) | Aspose.Words for .NET을 사용하여 Word 문서에 OLE 개체를 아이콘으로 삽입하는 방법을 알아보세요. |
-| [스트림을 사용하여 Ole 객체를 아이콘으로 삽입](./insert-ole-object-as-icon-using-stream/) | .NET용 Aspose.Words가 포함된 스트림을 사용하여 OLE 개체를 아이콘으로 삽입하는 방법을 알아보세요. |
-| [Word 파일에서 Active XControl 속성 읽기](./read-active-xcontrol-properties/) | .NET용 Aspose.Words를 사용하여 Word 파일에서 ActiveX 컨트롤의 속성을 읽습니다. |
+| [Word 문서에 Ole 개체 삽입](./insert-ole-object/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 OLE 개체를 삽입하는 방법을 알아보세요. 포함된 콘텐츠로 문서를 강화하세요. |
+| [Ole 패키지를 사용하여 Word에 Ole 개체 삽입](./insert-ole-object-with-ole-package/) | .NET용 Aspose.Words를 사용하여 Word 문서에 OLE 개체를 삽입하는 방법을 알아보세요. 파일을 원활하게 삽입하려면 자세한 단계별 가이드를 따르세요. |
+| [Word 문서에 Ole 개체를 아이콘으로 삽입](./insert-ole-object-as-icon/) | .NET용 Aspose.Words를 사용하여 Word 문서에 OLE 개체를 아이콘으로 삽입하는 방법을 알아보세요. 문서를 개선하려면 단계별 가이드를 따르세요. |
+| [스트림을 사용하여 Ole 객체를 아이콘으로 삽입](./insert-ole-object-as-icon-using-stream/) | 이 상세한 단계별 튜토리얼에서 .NET용 Aspose.Words가 포함된 스트림을 사용하여 OLE 개체를 아이콘으로 삽입하는 방법을 알아보세요. |
+| [Word 파일에서 Active XControl 속성 읽기](./read-active-xcontrol-properties/) | 단계별 가이드에서 Aspose.Words for .NET을 사용하여 Word 파일에서 ActiveX 컨트롤 속성을 읽는 방법을 알아보세요. 문서 자동화 기술을 향상시키세요. |

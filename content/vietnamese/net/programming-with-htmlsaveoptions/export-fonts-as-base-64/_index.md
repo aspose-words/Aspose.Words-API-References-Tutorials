@@ -9,7 +9,7 @@ url: /vi/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## Giới thiệu
 
-Khi nói đến việc thao tác các tài liệu Word theo chương trình, Aspose.Words for .NET là một công cụ mạnh mẽ. Một trong những tính năng tiện lợi của nó là xuất phông chữ dưới dạng Base64 trong tệp HTML, đảm bảo phông chữ được nhúng và hiển thị chính xác trên các trình duyệt và hệ thống khác nhau. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể đạt được điều này. Bạn đã sẵn sàng làm cho phông chữ tài liệu Word của mình thân thiện với web chưa? Bắt đầu nào!
+Khi nói đến việc thao tác các tài liệu Word theo chương trình, Aspose.Words for .NET là một công cụ mạnh mẽ. Một trong những tính năng tiện lợi của nó là xuất phông chữ dưới dạng Base64 trong tệp HTML, đảm bảo phông chữ được nhúng và hiển thị chính xác trên các trình duyệt và hệ thống khác nhau. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể đạt được điều này. Bạn đã sẵn sàng làm cho phông chữ tài liệu Word của mình thân thiện với web chưa? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 

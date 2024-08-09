@@ -9,7 +9,7 @@ url: /fr/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titleba
 ---
 ## Introduction
 
-Êtes-vous prêt à donner à vos PDF un aspect encore plus professionnel ? Un changement petit mais impactant consiste à afficher le titre du document dans la barre de titre de la fenêtre. C'est comme mettre une balise de nom sur votre PDF, le rendant instantanément reconnaissable. Aujourd'hui, nous allons découvrir comment y parvenir à l'aide d'Aspose.Words pour .NET. À la fin de ce guide, vous aurez une compréhension parfaitement claire du processus. Commençons!
+Êtes-vous prêt à donner à vos PDF un aspect encore plus professionnel ? Un changement petit mais impactant consiste à afficher le titre du document dans la barre de titre de la fenêtre. C'est comme mettre une balise de nom sur votre PDF, le rendant instantanément reconnaissable. Aujourd'hui, nous allons découvrir comment y parvenir à l'aide d'Aspose.Words pour .NET. À la fin de ce guide, vous aurez une compréhension parfaitement claire du processus. Commençons !
 
 ## Conditions préalables
 
@@ -68,7 +68,7 @@ Cette ligne de code se charge de sauvegarder votre document au format PDF avec l
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous avez configuré avec succès votre PDF pour afficher le titre du document dans la barre de titre de la fenêtre à l'aide d'Aspose.Words for .NET. Cette petite amélioration peut donner à vos PDF un aspect plus soigné et professionnel.
+Et voilà ! Avec seulement quelques lignes de code, vous avez configuré avec succès votre PDF pour afficher le titre du document dans la barre de titre de la fenêtre à l'aide d'Aspose.Words for .NET. Cette petite amélioration peut donner à vos PDF un aspect plus soigné et professionnel.
 
 ## FAQ
 

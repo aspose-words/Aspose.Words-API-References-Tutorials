@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ### 거품형 차트의 모양을 사용자 정의할 수 있나요?
 
- 전적으로! Aspose.Words for .NET은 색상 및 레이블부터 데이터 시리즈 형식에 이르기까지 광범위한 사용자 정의 옵션을 제공합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 전적으로! Aspose.Words for .NET은 색상 및 레이블부터 데이터 시리즈 형식에 이르기까지 광범위한 사용자 정의 옵션을 제공합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### 단일 문서에 여러 차트를 추가할 수 있나요?
 

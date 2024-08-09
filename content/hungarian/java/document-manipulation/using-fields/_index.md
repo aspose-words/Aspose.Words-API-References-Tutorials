@@ -85,7 +85,7 @@ doc.getMailMerge().executeWithRegions(dataTable);
 doc.save("FormattedDocument.doc");
 ```
 
- Ez a kód változó színekkel formázza meg a táblázat sorait a`CompanyName` terület.
+ Ez a kód változó színekkel formázza meg a táblázat sorait a`CompanyName` mező.
 
 ## Következtetés
 
@@ -107,7 +107,7 @@ Az Aspose.Words for Java feltételes mezői lehetővé teszik dinamikus dokument
 
 ### Hogyan formázhatom a táblázat váltakozó sorait az Aspose.Words for Java segítségével?
 
- A táblázat váltakozó sorainak formázásához használhatja az Aspose.Words for Java-t, hogy a feltételek alapján meghatározott formázást alkalmazzon a sorokra. A "Változó sorformázás" részben talál egy példát, amely bemutatja, hogyan lehet formázni a sorokat váltakozó színekkel a`CompanyName` terület.
+ A táblázat váltakozó sorainak formázásához használhatja az Aspose.Words for Java-t, hogy a feltételek alapján meghatározott formázást alkalmazzon a sorokra. A "Változó sorformázás" részben talál egy példát, amely bemutatja, hogyan lehet formázni a sorokat váltakozó színekkel a`CompanyName` mező.
 
 ### Hol találok további dokumentációt és forrásokat az Aspose.Words for Java-hoz?
 

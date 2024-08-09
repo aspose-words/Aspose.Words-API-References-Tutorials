@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/configuring-link-to-content/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak programově propojit obsah v dokumentu aplikace Word? Pomocí Aspose.Words for .NET můžete do dokumentů aplikace Word bez námahy přidat vlastnosti propojeného obsahu. Tato výkonná knihovna nabízí širokou škálu funkcí, které usnadňují manipulaci s dokumenty Wordu prostřednictvím kódu. V tomto tutoriálu vás provedeme procesem konfigurace odkazu na obsah v dokumentu aplikace Word a zajistíme, že porozumíte každému kroku na cestě.
 
@@ -15,7 +15,7 @@ Přemýšleli jste někdy, jak programově propojit obsah v dokumentu aplikace W
 
 Než se ponoříme do podrobného průvodce, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
--  Aspose.Words pro .NET: Ujistěte se, že máte nejnovější verzi Aspose.Words pro .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words pro .NET: Ujistěte se, že máte nejnovější verzi Aspose.Words pro .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje vývoj .NET.
 
@@ -78,7 +78,7 @@ string customPropertyValue = customProperty.Value.ToString();
 
 ## Závěr
 
- Gratulujeme! Úspěšně jste nakonfigurovali odkaz na obsah v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete přidávat a spravovat vlastní vlastnosti propojené s konkrétním obsahem v dokumentech aplikace Word, díky čemuž je správa dokumentů dynamičtější a efektivnější. Pokud máte nějaké dotazy nebo narazíte na nějaké problémy, neváhejte se podívat na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo vyhledejte pomoc na[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
+ Gratuluji! Úspěšně jste nakonfigurovali odkaz na obsah v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete přidávat a spravovat vlastní vlastnosti propojené s konkrétním obsahem v dokumentech aplikace Word, díky čemuž je správa dokumentů dynamičtější a efektivnější. Pokud máte nějaké dotazy nebo narazíte na nějaké problémy, neváhejte se podívat na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo vyhledejte pomoc na[Aspose fórum podpory](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 
@@ -86,13 +86,13 @@ string customPropertyValue = customProperty.Value.ToString();
 Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu. Nabízí rozsáhlé funkce pro vytváření, úpravy a převod dokumentů aplikace Word.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Aspose.Words for .NET si můžete nainstalovat stažením z[tady](https://releases.aspose.com/words/net/) a přidání DLL do vašeho projektu. Případně jej můžete nainstalovat přes NuGet Package Manager ve Visual Studiu.
+ Aspose.Words for .NET si můžete nainstalovat stažením z[zde](https://releases.aspose.com/words/net/) a přidání DLL do vašeho projektu. Případně jej můžete nainstalovat přes NuGet Package Manager ve Visual Studiu.
 
 ### Mohu přidat více odkazů na různý obsah ve stejném dokumentu?
 Ano, můžete přidat více odkazů na různý obsah ve stejném dokumentu vytvořením více záložek a propojením uživatelských vlastností s každou záložkou.
 
 ### Je Aspose.Words for .NET zdarma?
- Aspose.Words for .NET je komerční produkt, ale můžete začít s bezplatnou zkušební verzí[tady](https://releases.aspose.com/).
+ Aspose.Words for .NET je komerční produkt, ale můžete začít s bezplatnou zkušební verzí[zde](https://releases.aspose.com/).
 
 ### Kde mohu získat podporu pro Aspose.Words pro .NET?
  Podporu pro Aspose.Words pro .NET můžete získat na[Aspose fórum podpory](https://forum.aspose.com/c/words/8).

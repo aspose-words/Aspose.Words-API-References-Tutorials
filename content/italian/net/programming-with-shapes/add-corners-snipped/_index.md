@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-shapes/add-corners-snipped/
 ---
-## introduzione
+## Introduzione
 
 Aggiungere forme personalizzate ai tuoi documenti Word può essere un modo divertente e visivamente accattivante per evidenziare informazioni importanti o aggiungere un tocco di stile ai tuoi contenuti. In questo tutorial, approfondiremo come inserire forme "Angoli tagliati" nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida ti guiderà attraverso ogni passaggio, assicurandoti di poter aggiungere facilmente queste forme e personalizzare i tuoi documenti come un professionista.
 

@@ -15,7 +15,7 @@ Vous êtes-vous déjà retrouvé empêtré dans un réseau de règles CSS disper
 
 Avant de plonger dans le vif du sujet, mettons nos canards en rang. Voici ce dont vous avez besoin pour commencer :
 
-1.  Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Si vous ne l'avez pas encore, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Si vous ne l'avez pas encore, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement .NET : vous aurez besoin d'un environnement de développement .NET configuré sur votre machine. Visual Studio est un choix populaire.
 3. Connaissance de base de C# : Une compréhension de base de la programmation C# sera utile.
 4. Un document Word : préparez un document Word (.docx) que vous souhaitez convertir.
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous avez réussi à convertir votre document Word en HTML avec toutes les règles CSS soigneusement organisées dans un seul fichier. Cette méthode simplifie non seulement votre gestion CSS mais améliore également la maintenabilité de vos documents HTML. Ainsi, la prochaine fois que vous serez chargé de convertir un document Word, vous saurez exactement comment garder les choses en ordre !
+Et voilà ! Avec seulement quelques lignes de code, vous avez réussi à convertir votre document Word en HTML avec toutes les règles CSS soigneusement organisées dans un seul fichier. Cette méthode simplifie non seulement votre gestion CSS mais améliore également la maintenabilité de vos documents HTML. Ainsi, la prochaine fois que vous serez chargé de convertir un document Word, vous saurez exactement comment garder les choses en ordre !
 
 ## FAQ
 
@@ -89,4 +89,4 @@ L'utilisation d'un seul fichier CSS simplifie la gestion et la maintenance de vo
 Aspose.Words for .NET prend en charge divers formats, notamment PDF, TXT et les formats d'image tels que JPEG et PNG.
 
 ### Où puis-je trouver plus de ressources sur Aspose.Words pour .NET ?
- Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour des guides complets et des références API.
+ Découvrez le[documentation](https://reference.aspose.com/words/net/) pour des guides complets et des références API.

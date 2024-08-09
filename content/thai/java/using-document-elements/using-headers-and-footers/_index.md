@@ -25,7 +25,7 @@ Aspose.Words เป็น Java API อันทรงพลังที่ช่
 หากต้องการทำงานกับส่วนหัวและส่วนท้าย คุณต้องสร้างเอกสารใหม่โดยใช้ Aspose.Words รหัสต่อไปนี้สาธิตวิธีการทำเช่นนี้:
 
 ```java
-// รหัส Java สำหรับสร้างเอกสารใหม่
+// รหัส Java สำหรับการสร้างเอกสารใหม่
 string dataDir = "Your Document Directory";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);

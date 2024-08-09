@@ -2,7 +2,7 @@
 title: Membuat dan Mengelola Daftar di Dokumen Word
 linktitle: Membuat dan Mengelola Daftar di Dokumen Word
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara membuat dan mengelola daftar di dokumen Word menggunakan Aspose.Words Python API. Panduan langkah demi langkah dengan kode sumber untuk pemformatan daftar, penyesuaian, penyusunan, dan banyak lagi.
+description: Pelajari cara membuat dan mengelola daftar di dokumen Word menggunakan Aspose.Words Python API. Panduan langkah demi langkah dengan kode sumber untuk pemformatan daftar, penyesuaian, penyusunan susunan, dan banyak lagi.
 type: docs
 weight: 18
 url: /id/python-net/document-structure-and-content-manipulation/document-lists/
@@ -16,7 +16,7 @@ Daftar tersedia dalam dua tipe utama: berpoin dan bernomor. Mereka memungkinkan 
 
 ## Menyiapkan Lingkungan
 
-Sebelum kita mendalami pembuatan dan pengelolaan daftar, pastikan Anda telah menginstal pustaka Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/) . Selain itu, lihat dokumentasi API di[Link ini](https://reference.aspose.com/words/python-net/) untuk informasi rinci.
+Sebelum kita mendalami pembuatan dan pengelolaan daftar, pastikan Anda telah menginstal pustaka Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/) . Selain itu, lihat dokumentasi API di[tautan ini](https://reference.aspose.com/words/python-net/) untuk informasi rinci.
 
 ## Membuat Daftar Berpoin
 
@@ -90,7 +90,7 @@ Anda dapat mengkustomisasi lebih lanjut tampilan daftar Anda dengan menyesuaikan
 
 ## Mengelola Tingkat Daftar
 
-Daftar dapat memiliki beberapa tingkatan, yang berguna untuk membuat daftar bertingkat. Setiap level dapat memiliki skema format dan penomorannya sendiri.
+Daftar dapat memiliki beberapa tingkatan, yang berguna untuk membuat daftar bertingkat. Setiap level dapat memiliki skema pemformatan dan penomorannya sendiri.
 
 ## Menambahkan Sublist
 
@@ -115,7 +115,7 @@ Dalam tutorial ini, kita menjelajahi cara membuat dan mengelola daftar di dokume
 ## FAQ
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
- Anda dapat mengunduh perpustakaan dari[Link ini](https://releases.aspose.com/words/python/) dan ikuti petunjuk instalasi yang disediakan dalam dokumentasi.
+ Anda dapat mengunduh perpustakaan dari[tautan ini](https://releases.aspose.com/words/python/) dan ikuti petunjuk instalasi yang disediakan dalam dokumentasi.
 
 ### Bisakah saya menyesuaikan gaya penomoran untuk daftar saya?
 Sangat! Aspose.Words Python memungkinkan Anda menyesuaikan format penomoran, gaya poin, dan penyelarasan untuk menyesuaikan daftar dengan kebutuhan spesifik Anda.

@@ -9,7 +9,7 @@ url: /es/net/programming-with-imagesaveoptions/get-tiff-page-range/
 ---
 ## Introducción
 
-¡Hola, compañeros desarrolladores! ¿Está cansado de la molestia que implica convertir páginas específicas de sus documentos de Word a imágenes TIFF? ¡No busque más! Con Aspose.Words para .NET, puede convertir sin esfuerzo rangos de páginas específicos de sus documentos de Word en archivos TIFF. Esta poderosa biblioteca simplifica la tarea y ofrece una gran variedad de opciones de personalización para satisfacer sus necesidades exactas. En este tutorial, desglosaremos el proceso paso a paso, asegurándonos de que pueda dominar esta función e integrarla perfectamente en sus proyectos.
+¡Hola, compañeros desarrolladores! ¿Está cansado de la molestia que implica convertir páginas específicas de sus documentos de Word a imágenes TIFF? ¡No busques más! Con Aspose.Words para .NET, puede convertir sin esfuerzo rangos de páginas específicos de sus documentos de Word en archivos TIFF. Esta poderosa biblioteca simplifica la tarea y ofrece una gran variedad de opciones de personalización para satisfacer sus necesidades exactas. En este tutorial, desglosaremos el proceso paso a paso, asegurándonos de que pueda dominar esta función e integrarla perfectamente en sus proyectos.
 
 ## Requisitos previos
 

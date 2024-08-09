@@ -55,7 +55,7 @@ public class PrintSpecificPages {
 
 ## Chỉ định trang để in
 
- Bây giờ, hãy chỉ định những trang bạn muốn in. Bạn có thể dùng`PageRange` class để xác định phạm vi trang bạn cần. Ví dụ: để in trang 3 đến 5:
+ Bây giờ, hãy chỉ định những trang bạn muốn in. Bạn có thể sử dụng`PageRange` class để xác định phạm vi trang bạn cần. Ví dụ: để in trang 3 đến 5:
 
 ```java
 PageRange pageRange = new PageRange(3, 5);

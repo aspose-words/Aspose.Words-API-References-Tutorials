@@ -16,7 +16,7 @@ V digitálním věku je vykreslování dokumentů zásadním aspektem správy ob
 
 Než se ponoříme do podrobností, ujistěte se, že máte splněny následující předpoklady:
 
--  Aspose.Words for Java API: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java API: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 - Vývojové prostředí Java: Ujistěte se, že máte v systému nainstalovanou Javu.
 
 Nyní začněme s procesem krok za krokem.

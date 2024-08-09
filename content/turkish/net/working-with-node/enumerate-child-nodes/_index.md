@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/working-with-node/enumerate-child-nodes/
 ---
+## giriiş
 
 Doğru araçlarla belgelerle programlı olarak çalışmak çok kolay olabilir. Aspose.Words for .NET, geliştiricilerin Word belgelerini kolaylıkla yönetmelerine olanak tanıyan güçlü bir kütüphanedir. Bugün Aspose.Words for .NET'i kullanarak bir Word belgesindeki alt düğümleri numaralandırma sürecini inceleyeceğiz. Bu adım adım kılavuz, önkoşullardan pratik örneklere kadar her şeyi kapsayacak ve süreci sağlam bir şekilde anlamanızı sağlayacaktır.
 
@@ -86,19 +87,19 @@ Temel adımları anladıktan sonra Aspose.Words for .NET kullanarak bir Word bel
 
  Daha ayrıntılı belgeler ve gelişmiş kullanım için şu adresi ziyaret edin:[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/) . Ek desteğe ihtiyacınız varsa şuraya göz atın:[destek forumları](https://forum.aspose.com/c/words/8).
 
-## SSS
+## SSS'ler
 
-### 1. Bir paragraf ne tür düğümler içerebilir?
+### Bir paragraf ne tür düğümler içerebilir?
 Bir paragraf; çalıştırmalar, şekiller, yorumlar ve diğer satır içi öğeler gibi düğümler içerebilir.
 
-### 2. Mevcut bir Word belgesini nasıl yükleyebilirim?
+### Mevcut bir Word belgesini nasıl yükleyebilirim?
  Mevcut bir belgeyi kullanarak yükleyebilirsiniz.`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Çalıştırmanın yanı sıra diğer düğüm türlerini de değiştirebilir miyim?
+### Çalıştır dışında diğer düğüm türlerini değiştirebilir miyim?
  Evet, şekiller, yorumlar ve daha fazlası gibi çeşitli düğüm türlerini kontrol ederek değiştirebilirsiniz.`NodeType`.
 
-### 4. Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
-Ücretsiz denemeyle başlayabilir veya şu adresten geçici bir lisans alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
+### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
+ Ücretsiz denemeyle başlayabilir veya şu adresten geçici bir lisans alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
 
-### 5. Daha fazla örnek ve belgeyi nerede bulabilirim?
- Ziyaret edin[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/) daha fazla örnek ve ayrıntılı belgeler için.
+### Daha fazla örnek ve belgeyi nerede bulabilirim?
+ Ziyaret edin[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/)daha fazla örnek ve ayrıntılı belgeler için.

@@ -70,7 +70,7 @@ foreach(Field field in doc.Range.Fields)
 }
 ```
 
- Giải thích: Đoạn mã này lặp qua từng trường trong tài liệu. Đối với mỗi trường, nó lấy mã trường và kết quả của trường. Các`GetFieldCode()` phương thức trả về mã trường thô, trong khi phương thức`Result` thuộc tính cung cấp cho bạn giá trị hoặc kết quả do trường tạo ra.
+ Giải thích: Đoạn mã này lặp qua từng trường trong tài liệu. Đối với mỗi trường, nó lấy mã trường và kết quả của trường. các`GetFieldCode()` phương thức trả về mã trường thô, trong khi phương thức`Result` thuộc tính cung cấp cho bạn giá trị hoặc kết quả do trường tạo ra.
 
 ## Bước 4: Xử lý mã trường
 
@@ -93,7 +93,7 @@ Giải thích: Vòng lặp nâng cao này in mã trường và kết quả của
 
 Làm việc với mã trường trong tài liệu Word bằng Aspose.Words for .NET có thể là một công cụ mạnh mẽ để tự động hóa và tùy chỉnh việc xử lý tài liệu. Bằng cách làm theo hướng dẫn này, giờ đây bạn biết cách truy cập và xử lý mã trường một cách hiệu quả. Cho dù bạn cần kiểm tra các trường hay sửa đổi chúng, bạn đều có nền tảng để bắt đầu tích hợp các tính năng này vào ứng dụng của mình.
 
-Vui lòng khám phá thêm về Aspose.Words và thử nghiệm các loại trường và mã khác nhau. Càng thực hành nhiều, bạn sẽ càng thành thạo hơn trong việc tận dụng các công cụ này để tạo các tài liệu Word linh hoạt và phản hồi nhanh.
+Vui lòng khám phá thêm về Aspose.Words và thử nghiệm các loại và mã trường khác nhau. Càng thực hành nhiều, bạn sẽ càng thành thạo hơn trong việc tận dụng các công cụ này để tạo các tài liệu Word linh hoạt và phản hồi nhanh.
 
 ## Câu hỏi thường gặp
 

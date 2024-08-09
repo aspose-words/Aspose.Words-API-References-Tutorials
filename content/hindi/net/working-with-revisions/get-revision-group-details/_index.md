@@ -2,104 +2,108 @@
 title: संशोधन समूह विवरण प्राप्त करें
 linktitle: संशोधन समूह विवरण प्राप्त करें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words के साथ Word दस्तावेज़ में संशोधन समूह विवरण प्राप्त करें।
+description: इस चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में संशोधन समूह विवरण आसानी से प्राप्त करें। .NET डेवलपर्स के लिए बिल्कुल सही।
 type: docs
 weight: 10
 url: /hi/net/working-with-revisions/get-revision-group-details/
 ---
+## परिचय
 
-इस चरण-दर-चरण मार्गदर्शिका में, हम आपको दिखाएंगे कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में संशोधनों के समूह का विवरण कैसे प्राप्त करें। हम आपको पूरा स्रोत कोड प्रदान करेंगे और आपको दिखाएंगे कि मार्कडाउन आउटपुट को कैसे प्रारूपित किया जाए।
+क्या आपको कभी किसी Word दस्तावेज़ में संशोधनों के बारीक विवरणों को समझने की ज़रूरत महसूस हुई है? हो सकता है कि आप किसी प्रोजेक्ट पर सहयोग कर रहे हों, और आपको परिवर्तनों को सावधानीपूर्वक ट्रैक करने की ज़रूरत हो। खैर, तैयार हो जाइए क्योंकि हम .NET के लिए Aspose.Words का उपयोग करके संशोधन समूह विवरण प्राप्त करने के तरीके पर एक शानदार ट्यूटोरियल में गोता लगाने वाले हैं। इस गाइड के अंत तक, आप संशोधन विवरण निकालने और प्रदर्शित करने में माहिर हो जाएँगे, जिससे आपका दस्तावेज़ प्रबंधन आसान हो जाएगा।
 
-## चरण 1: दस्तावेज़ लोड करना
+## आवश्यक शर्तें
 
-पहला चरण संशोधनों वाले दस्तावेज़ को अपलोड करना है।
+इससे पहले कि हम इस कोडिंग यात्रा पर निकलें, आइए सुनिश्चित करें कि आपके पास वह सब कुछ है जो आपको चाहिए:
+-  Aspose.Words for .NET: सुनिश्चित करें कि आपके पास नवीनतम संस्करण स्थापित है। यदि नहीं, तो आप इसे डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/).
+- .NET वातावरण: सुनिश्चित करें कि आपके पास एक कार्यशील .NET विकास वातावरण स्थापित है। विज़ुअल स्टूडियो एक बढ़िया विकल्प है।
+- संशोधनों के साथ एक वर्ड दस्तावेज़: इस ट्यूटोरियल के लिए, हम संशोधनों के साथ एक नमूना वर्ड दस्तावेज़ का उपयोग करेंगे (`Revisions.docx`).
+
+## नामस्थान आयात करें
+
+सबसे पहले, आइए अपने प्रोजेक्ट में आवश्यक नेमस्पेस को आयात करें। Aspose.Words कार्यक्षमता तक पहुँचने के लिए यह महत्वपूर्ण है।
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using System;
 ```
 
-## चरण 2: संशोधन ब्राउज़ करें
+ठीक है, चलिए इसे चरण दर चरण समझते हैं। प्रत्येक चरण आपको .NET के लिए Aspose.Words का उपयोग करके संशोधन समूह विवरण प्राप्त करने की प्रक्रिया के माध्यम से मार्गदर्शन करेगा।
 
-इसके बाद, हम दस्तावेज़ में मौजूद संशोधनों पर नज़र डालेंगे और उनके विवरण प्रदर्शित करेंगे, जैसे कि प्रकार, लेखक, दिनांक और संशोधित पाठ।
+## चरण 1: वर्ड दस्तावेज़ लोड करें
+
+पहला कदम है अपना वर्ड डॉक्यूमेंट लोड करना। यहीं पर आपके संशोधन संग्रहित होते हैं।
+
+```csharp
+// दस्तावेज़ निर्देशिका का पथ.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ इस स्निपेट में, प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` आपके दस्तावेज़ के वास्तविक पथ के साथ। यह कोड लोड करेगा`Revisions.docx` फ़ाइल में`doc` वस्तु।
+
+## चरण 2: संशोधन संग्रह तक पहुंचें
+
+ अब, आइए दस्तावेज़ में संशोधनों तक पहुँचें। Aspose.Words एक प्रदान करता है`Revisions` संग्रह जिसे हम पुनरावृत्त कर सकते हैं।
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     string groupText = revision.Group != null
-         ? "Revision group text: " + revision.Group.Text
-         : "The revision does not belong to any group";
-
-     Console.WriteLine("Type: " + revision.RevisionType);
-     Console.WriteLine("Author: " + revision.Author);
-     Console.WriteLine("Date: " + revision.DateTime);
-     Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-     Console.WriteLine(groupText);
+    // प्रत्येक संशोधन की प्रक्रिया
 }
 ```
 
+यह लूप दस्तावेज़ के प्रत्येक संशोधन से गुजरेगा, जिससे हमें विवरण निकालने में मदद मिलेगी।
 
-### .NET के लिए Aspose.Words का उपयोग करके संशोधन समूह विवरण प्राप्त करने के लिए उदाहरण स्रोत कोड
+## चरण 3: संशोधन विवरण निकालें
 
-.NET के लिए Aspose.Words का उपयोग करके किसी दस्तावेज़ में संशोधनों के समूह का विवरण प्राप्त करने के लिए यहां संपूर्ण स्रोत कोड दिया गया है:
+लूप के भीतर, हम प्रत्येक संशोधन के बारे में विभिन्न विवरण निकाल सकते हैं, जैसे कि प्रकार, लेखक, दिनांक और पाठ।
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
 foreach (Revision revision in doc.Revisions)
 {
-	 string groupText = revision.Group != null
-		 ? "Revision group text: " + revision.Group.Text
-		 : "The revision does not belong to any group";
-
-	 Console.WriteLine("Type: " + revision.RevisionType);
-	 Console.WriteLine("Author: " + revision.Author);
-	 Console.WriteLine("Date: " + revision.DateTime);
-	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-	 Console.WriteLine(groupText);
+    Console.WriteLine("Type: " + revision.RevisionType);
+    Console.WriteLine("Author: " + revision.Author);
+    Console.WriteLine("Date: " + revision.DateTime);
+    Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
 }
 ```
+
+यह कोड कंसोल पर संशोधन प्रकार, लेखक, दिनांक और पाठ प्रिंट करेगा।
+
+## चरण 4: संशोधन समूह की जाँच करें
+
+कभी-कभी, संशोधनों को समूहीकृत किया जाता है। हमें यह जांचना होगा कि क्या संशोधन किसी समूह से संबंधित है और यदि ऐसा है तो समूह का पाठ प्रदर्शित करना होगा।
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+    string groupText = revision.Group != null
+        ? "Revision group text: " + revision.Group.Text
+        : "The revision does not belong to any group";
+
+    Console.WriteLine(groupText);
+}
+```
+
+यदि संशोधन किसी समूह का हिस्सा है तो यह स्निपेट समूह पाठ को प्रिंट करेगा या यह इंगित करेगा कि यह किसी समूह से संबंधित नहीं है।
 
 ## निष्कर्ष
 
-इस ट्यूटोरियल में, हमने सीखा कि Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में संशोधनों के समूह का विवरण कैसे प्राप्त करें। लूप और उचित गुणों का उपयोग करके, हम संशोधन प्रकार, लेखक, तिथि और संशोधित पाठ जैसे विवरण प्रदर्शित करने में सक्षम थे। Aspose.Words for .NET, संशोधन प्रबंधन सहित Word दस्तावेज़ों में हेरफेर करने के लिए कई शक्तिशाली सुविधाएँ प्रदान करता है। अब आप इस ज्ञान का उपयोग Aspose.Words for .NET का उपयोग करके अपने स्वयं के Word दस्तावेज़ों में संशोधन समूह विवरण प्राप्त करने के लिए कर सकते हैं।
+और अब यह हो गया! इन चरणों का पालन करके, आप आसानी से .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में संशोधनों के बारे में विस्तृत जानकारी प्राप्त कर सकते हैं। यह शक्तिशाली उपकरण परिवर्तनों को प्रबंधित करना और ट्रैक करना आसान बनाता है, जिससे यह सुनिश्चित होता है कि आपकी सहयोगी परियोजनाएँ सुचारू रूप से चले।
 
-### अक्सर पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
-#### प्रश्न: मैं .NET के लिए Aspose.Words में संशोधन के साथ एक दस्तावेज़ कैसे लोड करूं?
+### .NET के लिए Aspose.Words क्या है?
+यह प्रोग्रामेटिक रूप से Word दस्तावेज़ों को बनाने, संपादित करने, परिवर्तित करने और प्रिंट करने के लिए एक शक्तिशाली .NET लाइब्रेरी है।
 
- उत्तर: का प्रयोग करें`Document` .NET के लिए Aspose.Words की क्लास का उपयोग संशोधनों वाली फ़ाइल से दस्तावेज़ लोड करने के लिए करें। आप पूर्ण दस्तावेज़ पथ निर्दिष्ट कर सकते हैं।
+### क्या मैं अन्य .NET भाषाओं के साथ .NET के लिए Aspose.Words का उपयोग कर सकता हूँ?
+बिल्कुल! आप इसे C#, VB.NET और ASP.NET सहित किसी भी .NET भाषा के साथ उपयोग कर सकते हैं।
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### मैं .NET के लिए Aspose.Words का निःशुल्क परीक्षण कैसे प्राप्त कर सकता हूँ?
+ आप निःशुल्क परीक्षण प्राप्त कर सकते हैं[यहाँ](https://releases.aspose.com/).
 
-#### प्रश्न: मैं Aspose.Words for .NET में संशोधन समूह का विवरण कैसे प्राप्त करूं?
+### क्या मुझे .NET के लिए Aspose.Words का उपयोग करने के लिए लाइसेंस की आवश्यकता है?
+ हां, Aspose.Words for .NET को पूर्ण कार्यक्षमता के लिए लाइसेंस की आवश्यकता होती है। आप एक खरीद सकते हैं[यहाँ](https://purchase.aspose.com/buy) या अस्थायी लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/temporary-license/).
 
-उत्तर: लूप का उपयोग करके दस्तावेज़ के संशोधनों को देखें और प्रत्येक संशोधन के गुणों तक पहुँचें ताकि आपको वांछित विवरण मिल सके। आप इसका उपयोग कर सकते हैं`RevisionType`, `Author`, `DateTime`और`ParentNode` संशोधन प्रकार, लेखक, दिनांक और संशोधित पाठ क्रमशः प्राप्त करने के लिए गुण।
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-      Console.WriteLine("Type: " + revision.RevisionType
-
-);
-      Console.WriteLine("Author: " + revision.Author);
-      Console.WriteLine("Date: " + revision.DateTime);
-      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-}
-```
-
-#### प्रश्न: कैसे जांचें कि कोई संशोधन Aspose.Words for .NET में किसी समूह से संबंधित है या नहीं?
-
- उत्तर: का प्रयोग करें`Group` की संपत्ति`Revision` यह जाँचने के लिए कि क्या संशोधन किसी समूह से संबंधित है या नहीं। यदि`Group` संपत्ति है`null`इसका मतलब है कि संशोधन किसी भी समूह से संबंधित नहीं है।
-
-```csharp
-if (revision.Group != null)
-{
-      // यह संशोधन एक समूह से संबंधित है
-}
-else
-{
-      // यह संशोधन किसी भी समूह से संबंधित नहीं है
-}
-```
+### मैं .NET के लिए Aspose.Words पर अधिक दस्तावेज़ कहां पा सकता हूं?
+ विस्तृत दस्तावेज उपलब्ध है[यहाँ](https://reference.aspose.com/words/net/).

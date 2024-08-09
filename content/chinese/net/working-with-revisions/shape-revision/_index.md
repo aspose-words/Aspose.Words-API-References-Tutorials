@@ -2,186 +2,128 @@
 title: 形状修改
 linktitle: 形状修改
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 修改 Word 文档中的形状。
+description: 通过本综合指南了解如何使用 Aspose.Words for .NET 处理 Word 文档中的形状修订。掌握跟踪更改、插入形状等。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/shape-revision/
 ---
+## 介绍
 
-在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET 对 Word 文档中的形状进行修改。我们将为您提供完整的源代码并向您展示如何格式化 markdown 输出。
+以编程方式编辑 Word 文档可能是一项艰巨的任务，尤其是在处理形状时。无论您是创建报告、设计模板还是简单地自动创建文档，跟踪和管理形状修订的能力都至关重要。Aspose.Words for .NET 提供了强大的 API，使此过程无缝且高效。在本教程中，我们将深入探讨修改 Word 文档中形状的具体细节，确保您拥有轻松管理文档的工具和知识。
 
-## 步骤 1：创建文档并添加形状
+## 先决条件
 
-第一步是创建一个新文档并添加形状。
+在深入研究代码之前，请确保您已准备好所需的一切：
+
+-  Aspose.Words for .NET：确保已安装 Aspose.Words 库。您可以[点击下载](https://releases.aspose.com/words/net/).
+- 开发环境：您应该设置一个开发环境，例如 Visual Studio。
+- 对 C# 的基本了解：熟悉 C# 编程语言和面向对象编程的基本概念。
+- Word 文档：要使用的 Word 文档，或者您可以在教程期间创建一个。
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这将为我们提供处理 Word 文档和形状所需的类和方法。
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## 步骤 1：设置文档目录
+
+在开始处理形状之前，我们需要定义文档目录的路径。我们将在这里保存修改后的文档。
+
+```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## 步骤 2：创建新文档
+
+让我们创建一个新的 Word 文档，在其中插入和修改形状。
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## 第 2 步：跟踪修订并添加另一个形状
+## 步骤 3：插入内联形状
 
-我们将启用修订跟踪并添加另一个形状。
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## 步骤 3：获取形状集合并检查修订
-
-我们将从文档中获取形状集合并检查与每个形状相关的修订。
+首先，我们将在不跟踪修订的情况下将内联形状插入到文档中。内联形状是与文本一起流动的形状。
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## 步骤 4：检查形状移动修订
-
-我们将加载包含形状位移修订的现有文档并检查相关修订。
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### 使用 Aspose.Words for .NET 进行形状修订的示例源代码
-
-以下是使用 Aspose.Words for .NET 对文档中的形状进行修改的完整源代码：
-
-```csharp
-Document doc = new Document();
-
-//插入内联形状而不跟踪修订。
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-//开始跟踪修订，然后插入另一个形状。
+## 步骤 4：开始跟踪修订
+
+为了跟踪文档中的更改，我们需要启用修订跟踪。这对于识别对形状所做的修改至关重要。
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## 步骤 5：插入另一个带修订的形状
+
+现在已启用修订跟踪，让我们插入另一个形状。这次，任何更改都将被跟踪。
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-//获取文档的形状集合，其中仅包含我们添加的两个形状。
+## 步骤 6：检索和修改形状
+
+我们可以检索文档中的所有形状并根据需要进行修改。在这里，我们将获取形状并删除第一个形状。
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-//删除第一个形状。
 shapes[0].Remove();
+```
 
-//因为我们在跟踪更改时删除了该形状，所以该形状算作删除修订。
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## 步骤 7：保存文档
 
-//我们在跟踪变化时插入了另一个形状，因此该形状将算作插入修订。
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+完成更改后，我们需要保存文档。这可确保所有修订和修改都已保存。
 
-//文档中有一个被移动的形状，但形状移动修订将有该形状的两个实例。
-//一个是其到达目的地时的形状，另一个是其原始位置时的形状。
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## 步骤 8：处理形状移动修订
+
+当形状移动时，Aspose.Words 会将其作为修订进行跟踪。这意味着该形状将有两个实例：一个位于其原始位置，一个位于其新位置。
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-//这是修正的举动，也是其到达目的地时的形状。
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-//这是从修订版开始的移动，即其原始位置的形状。
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 对 Word 文档中的形状进行修订。通过遵循创建文档、启用修订跟踪、检查与每个形状相关的修订以及检查移动形状的修订的步骤，我们能够成功管理修订。Aspose.Words for .NET 为 Word 文档中的评论和表单提供了强大的文字处理 API。
+就这样！您已经成功学会了如何使用 Aspose.Words for .NET 处理 Word 文档中的形状修订。无论您是管理文档模板、自动生成报告还是只是跟踪更改，这些技能都是无价的。通过遵循本分步指南，您不仅掌握了基础知识，还深入了解了更高级的文档处理技术。
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：如何在 Aspose.Words for .NET 中创建新文档并添加形状？
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个功能强大的库，允许开发人员使用 C# 以编程方式创建、修改和转换 Word 文档。
 
-答：要在 Aspose.Words for .NET 中创建新文档并添加形状，您可以使用以下代码。这里我们在文档的第一部分添加了两个形状，一个立方体和一个太阳：
+### 我可以跟踪对 Word 文档中其他元素所做的更改吗？
+是的，Aspose.Words for .NET 支持跟踪各种元素的变化，包括文本、表格等。
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### 如何免费试用 Aspose.Words for .NET？
+您可以免费试用 Aspose.Words for .NET[这里](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### 是否可以通过编程来接受或拒绝修订？
+是的，Aspose.Words for .NET 提供了以编程方式接受或拒绝修订的方法。
 
-#### 问：如何在 Aspose.Words for .NET 中启用修订跟踪？
-
-答：要在 Aspose.Words for .NET 中启用修订跟踪，您可以使用`StartTrackRevisions`方法`Document`对象。此方法将修订作者的姓名作为参数：
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### 问：如何检查 Aspose.Words for .NET 文档中每个形状相关的修订？
-
-答：要检查 Aspose.Words for .NET 文档中每个形状相关的修订，您可以使用以下方式获取文档的形状集合：`GetChildNodes`方法`NodeType.Shape`节点类型。然后你可以访问每个形状的`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision`， 和`IsMoveToRevision`属性来确定与形状相关的修订类型：
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### 问：如何检查 Aspose.Words for .NET 文档中形状的位移修订？
-
-答：要检查 Aspose.Words for .NET 文档中的形状位移修订，您可以加载包含形状位移修订的现有文档。然后，您可以访问每个形状的`IsMoveFromRevision`和`IsMoveToRevision`属性来确定它是否被移动，如果是，从哪里移动，到哪里移动：
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### 除了 C# 之外，我可以将 Aspose.Words for .NET 与其他 .NET 语言一起使用吗？
+当然！Aspose.Words for .NET 可以与任何 .NET 语言一起使用，包括 VB.NET 和 F#。

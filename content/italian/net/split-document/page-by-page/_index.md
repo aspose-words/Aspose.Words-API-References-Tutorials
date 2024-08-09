@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/split-document/page-by-page/
 ---
-## introduzione
+## Introduzione
 
 Dividere un documento Word per pagina può essere incredibilmente utile, soprattutto quando si ha a che fare con documenti di grandi dimensioni in cui pagine specifiche devono essere estratte o condivise separatamente. In questo tutorial, esamineremo il processo di suddivisione di un documento Word in singole pagine utilizzando Aspose.Words per .NET. Questa guida coprirà tutto, dai prerequisiti a un'analisi dettagliata passo passo, assicurandoti di poter seguire e implementare facilmente la soluzione.
 

@@ -9,7 +9,7 @@ url: /hu/net/join-and-append-documents/simple-append-document/
 ---
 ## Bevezetés
 
-Halihó! Előfordult már, hogy két Word-dokumentumot kell zökkenőmentesen egyesítenie? Nos, szerencséd van! Ma az Aspose.Words for .NET világában merülünk el, amely egy olyan nagy teljesítményű könyvtár, amely lehetővé teszi a Word-dokumentumok programozott kezelését. Konkrétan arra fogunk összpontosítani, hogyan fűzzünk egy dokumentumot a másikhoz néhány egyszerű lépésben. Akár jelentéseket készít, akár egy projekt szakaszait kombinálja, akár csak egyszerűsíti a dokumentumkezelést, ez az útmutató mindenre kiterjed. Szóval, kezdjük!
+Szia! Előfordult már, hogy két Word-dokumentumot kell zökkenőmentesen egyesítenie? Nos, szerencséd van! Ma az Aspose.Words for .NET világában merülünk el, amely egy olyan nagy teljesítményű könyvtár, amely lehetővé teszi a Word-dokumentumok programozott kezelését. Konkrétan arra fogunk összpontosítani, hogyan fűzzünk egy dokumentumot a másikhoz néhány egyszerű lépésben. Akár jelentéseket készít, akár egy projekt szakaszait kombinálja, akár csak egyszerűsíti a dokumentumkezelést, ez az útmutató mindenre kiterjed. Szóval, kezdjük!
 
 ## Előfeltételek
 
@@ -106,7 +106,7 @@ Ez a kódsor új néven menti az egyesített dokumentumot, így biztosítva, hog
 
 ### Mi van, ha a dokumentumaim eltérő formátumúak?
 
- A formázás kezelésének módját a`ImportFormatMode` paraméter. A lehetőségek közé tartozik`KeepSourceFormatting`, `UseDestinationStyles`, és több.
+ A formázás kezelésének módját a`ImportFormatMode` paraméter. A lehetőségek közé tartozik`KeepSourceFormatting`, `UseDestinationStyles`, és még sok más.
 
 ### Az Aspose.Words ingyenesen használható?
 

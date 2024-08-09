@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Introduktion
 
 Om du någonsin har stött på problem med att teckensnitt inte återges korrekt i dina dokument, är du inte ensam. Att hantera teckensnittsinställningar och ta emot meddelanden om teckensnittsersättningar kan spara mycket huvudvärk. I den här omfattande guiden kommer vi att utforska hur du hanterar teckensnittsaviseringar med Aspose.Words för .NET, vilket säkerställer att dina dokument alltid ser bäst ut.
 
@@ -89,7 +89,7 @@ doc.FontSettings = fontSettings;
 
 ## Steg 6: Spara dokumentet
 
-Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna och hanterat eventuella teckensnittsersättningar. Spara den i ett valfritt format; här sparar vi den som en PDF.
+Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna och hanterat eventuella teckensnittsersättningar. Spara den i ett valfritt format; här sparar vi den som PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
@@ -101,7 +101,7 @@ Genom att följa dessa steg har du konfigurerat din applikation att hantera teck
 
 Du har nu bemästrat processen att ta emot meddelanden om teckensnittsersättningar med Aspose.Words för .NET. Den här färdigheten hjälper dig att se till att dina dokument alltid ser bäst ut, även när de nödvändiga typsnitten inte är tillgängliga. Fortsätt att experimentera med olika inställningar för att fullt ut utnyttja kraften i Aspose.Words.
 
-## Vanliga frågor
+## FAQ's
 
 ### F1: Kan jag ange flera standardteckensnitt?
 
@@ -113,11 +113,11 @@ Nej, du kan bara ange ett standardteckensnitt för ersättning. Du kan dock konf
 
 ###  F3: Kan jag hantera andra typer av varningar med`IWarningCallback`?
 
- Ja den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
+ Ja, den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
 
 ### F4: Var kan jag hitta support för Aspose.Words?
 
- Besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för assistens.
+ Besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för hjälp.
 
 ### F5: Är det möjligt att få en tillfällig licens för Aspose.Words?
 

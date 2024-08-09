@@ -9,7 +9,7 @@ url: /hu/net/programming-with-tables/insert-table-from-html/
 ---
 ## Bevezetés
 
-Szüksége volt valaha táblázatot beszúrni HTML-ből egy Word dokumentumba? Függetlenül attól, hogy egy olyan projekten dolgozik, amely a webtartalom Word-dokumentummá alakítását igényli, vagy egyszerűen csak egyszerűsíteni kívánja munkafolyamatát, az Aspose.Words for .NET megoldást nyújt Önnek. Ebben az oktatóanyagban végigvezetjük az Aspose.Words for .NET segítségével egy táblázat HTML-kódból Word-dokumentumba történő beszúrásának teljes folyamatán. Mindent lefedünk, amire szüksége van, az előfeltételektől a részletes, lépésről lépésre szóló útmutatóig. Készen állsz a merülésre? Kezdjük el!
+Szüksége volt valaha táblázatot beszúrni HTML-ből egy Word dokumentumba? Függetlenül attól, hogy egy olyan projekten dolgozik, amely a webtartalom Word-dokumentummá alakítását igényli, vagy egyszerűen csak egyszerűsíteni kívánja munkafolyamatát, az Aspose.Words for .NET megoldást nyújt Önnek. Ebben az oktatóanyagban végigvezetjük az Aspose.Words for .NET segítségével egy táblázat HTML-kódból Word-dokumentumba történő beszúrásának teljes folyamatán. Mindent lefedünk, amire szüksége van, az előfeltételektől a részletes, lépésről lépésre szóló útmutatóig. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 
@@ -77,7 +77,7 @@ Végül a táblázat beillesztése után el kell mentenie a dokumentumot. Ez a l
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-És ez az! Sikeresen beszúrt egy táblázatot HTML-ből egy Word-dokumentumba az Aspose.Words for .NET használatával.
+És ennyi! Sikeresen beszúrt egy táblázatot HTML-ből egy Word-dokumentumba az Aspose.Words for .NET használatával.
 
 ## Következtetés
 

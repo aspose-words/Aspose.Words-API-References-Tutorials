@@ -12,7 +12,7 @@ url: /zh/net/working-with-formfields/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [插入表单字段](./insert-form-fields/) | 了解如何使用 Aspose.Words for .NET 将下拉表单字段插入 Word 文档。 |
-| [表单字段与属性配合使用](./form-fields-work-with-properties/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的表单字段属性。 |
-| [表单字段 获取表单字段集合](./form-fields-get-form-fields-collection/) | 了解如何使用 Aspose.Words for .NET 检索和操作 Word 文档中的表单字段集合。 |
-| [按名称获取表单字段](./form-fields-get-by-name/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中按名称检索和修改表单字段。 |
+| [插入表单字段](./insert-form-fields/) | 通过我们详细的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中插入组合框表单字段。 |
+| [表单字段与属性配合使用](./form-fields-work-with-properties/) | 通过我们详细的分步指南学习如何使用 Aspose.Words for .NET 操作 Word 文档中的表单字段。 |
+| [表单字段 获取表单字段集合](./form-fields-get-form-fields-collection/) | 通过我们全面的分步指南学习如何使用 Aspose.Words for .NET 获取和操作 Word 文档中的表单字段。 |
+| [按名称获取表单字段](./form-fields-get-by-name/) | 通过本详细的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中按名称获取和修改表单字段。 |

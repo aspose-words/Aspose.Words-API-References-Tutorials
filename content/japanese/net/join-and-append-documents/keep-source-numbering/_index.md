@@ -78,7 +78,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ## よくある質問
 
 ### 異なる書式スタイルのドキュメントをインポートできますか?
-はい`NodeImporter`クラスは、さまざまな書式設定スタイルを持つドキュメントのインポートをサポートします。
+はい、`NodeImporter`クラスは、さまざまな書式設定スタイルを持つドキュメントのインポートをサポートします。
 
 ### ドキュメントに複雑な表や画像が含まれている場合はどうなりますか?
 Aspose.Words for .NET は、インポート操作中にテーブルや画像などの複雑な構造を処理します。
@@ -90,4 +90,4 @@ Aspose.Words は、シームレスな統合のために .NET Framework および
 インポート プロセス中に発生する可能性のある例外を処理するには、try-catch ブロックを使用します。
 
 ### Aspose.Words for .NET の詳細なドキュメントはどこで入手できますか?
-訪問[ドキュメンテーション](https://reference.aspose.com/words/net/)包括的なガイドと API リファレンスについては、こちらをご覧ください。
+訪問する[ドキュメント](https://reference.aspose.com/words/net/)包括的なガイドと API リファレンスについては、こちらをご覧ください。

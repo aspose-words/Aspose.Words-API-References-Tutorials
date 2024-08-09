@@ -101,7 +101,7 @@ Nadat u uw toepassing hebt uitgevoerd, navigeert u naar de opgegeven map en cont
 
 En daar heb je het! U hebt het compressieniveau voor een Word-document met succes ingesteld met Aspose.Words voor .NET. Dit kan de bestandsgrootte aanzienlijk verkleinen en de prestaties verbeteren bij het werken met grote documenten. Vergeet niet andere compressieniveaus te verkennen om de beste balans tussen bestandsgrootte en prestaties voor uw behoeften te vinden.
 
-Als u vragen heeft of tegen problemen aanloopt, raadpleeg dan de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of neem contact op met hun[Helpforum](https://forum.aspose.com/c/words/8).
+Als u vragen heeft of tegen problemen aanloopt, raadpleeg dan de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of neem contact op met hun[Ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
 ## Veelgestelde vragen
 
@@ -123,4 +123,4 @@ Ja, Aspose.Words voor .NET ondersteunt compressie voor verschillende documentfor
 
 ### Waar kan ik ondersteuning krijgen als ik problemen tegenkom?
 
- U kunt ondersteuning krijgen van de Aspose-gemeenschap door hun te bezoeken[Helpforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap door hun te bezoeken[Ondersteuningsforum](https://forum.aspose.com/c/words/8).

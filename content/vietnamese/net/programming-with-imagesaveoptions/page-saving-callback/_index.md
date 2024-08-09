@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thiết lập thành công lệnh gọi lại lưu trang để lưu từng trang của tài liệu Word dưới dạng hình ảnh PNG riêng biệt bằng cách sử dụng Aspose.Words for .NET. Kỹ thuật này cực kỳ hữu ích cho nhiều ứng dụng khác nhau, từ tạo bản xem trước trang đến tạo hình ảnh trang riêng lẻ cho báo cáo. 
+Và bạn có nó! Bạn đã thiết lập thành công lệnh gọi lại lưu trang để lưu từng trang của tài liệu Word dưới dạng hình ảnh PNG riêng biệt bằng cách sử dụng Aspose.Words for .NET. Kỹ thuật này cực kỳ hữu ích cho nhiều ứng dụng khác nhau, từ tạo bản xem trước trang đến tạo hình ảnh trang riêng lẻ cho báo cáo. 
 
 Chúc mừng mã hóa!
 

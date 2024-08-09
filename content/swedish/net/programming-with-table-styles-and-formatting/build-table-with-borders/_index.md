@@ -99,13 +99,13 @@ Genom att följa dessa steg kan du enkelt skapa och anpassa tabellkanter i ett W
 Ja, Aspose.Words för .NET låter dig tillämpa olika kantstilar på olika delar av tabellen, till exempel enskilda celler, rader eller kolumner.
 
 ### Är det möjligt att endast ställa in gränser för specifika celler?
- Absolut. Du kan rikta in dig på specifika celler och ställa in gränser för dem individuellt med hjälp av`CellFormat` fast egendom.
+ Absolut. Du kan rikta in dig på specifika celler och ställa in gränser för dem individuellt med hjälp av`CellFormat` egendom.
 
 ### Hur kan jag ta bort kanter från en tabell?
  Du kan ta bort gränser genom att använda`ClearBorders` metod, som rensar alla befintliga gränser från tabellen.
 
 ### Kan jag använda anpassade färger för kanterna?
- Ja, du kan använda vilken färg som helst för kanterna genom att ange`Color` fast egendom. Anpassade färger kan ställas in med hjälp av`Color.FromArgb` metod om du behöver specifika nyanser.
+ Ja, du kan använda vilken färg som helst för kanterna genom att ange`Color` egendom. Anpassade färger kan ställas in med hjälp av`Color.FromArgb` metod om du behöver specifika nyanser.
 
 ### Är det nödvändigt att rensa befintliga gränser innan man sätter nya?
 Även om det inte är obligatoriskt, rensar du befintliga gränser innan du ställer in nya säkerställer du att dina nya gränsinställningar tillämpas utan störningar från tidigare stilar.

@@ -16,7 +16,7 @@ Aspose.Words for Python je všestranná knihovna, která umožňuje vývojářů
 
 ## Nastavení vašeho prostředí
 
-Než se ponoříme do kódu, ujistěte se, že je naše prostředí správně nastaveno. Následuj tyto kroky:
+Než se ponoříme do kódu, ujistěte se, že je naše prostředí správně nastaveno. Postupujte takto:
 
 1. Nainstalujte Python do svého systému.
 2. Nainstalujte knihovnu Aspose.Words pro Python pomocí pip:

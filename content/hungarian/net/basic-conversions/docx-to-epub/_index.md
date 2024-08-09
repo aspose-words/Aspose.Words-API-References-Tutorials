@@ -59,7 +59,7 @@ Igen, kötegelt konvertálhat DOCX-fájlokat EPUB-ba vagy más formátumokba az 
 Igen, az Aspose.Words teljes mértékben támogatja a .NET Core-t és a .NET-keretrendszert.
 
 ### Hol találok további példákat és dokumentációt az Aspose.Words-hez?
- Meglátogatni a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes példákért és API hivatkozásokért.
+ Látogassa meg a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes példákért és API hivatkozásokért.
 
 ### Hogyan kaphatok támogatást az Aspose.Words-szal kapcsolatos problémákhoz?
  Támogatásért keresse fel a[Aspose.Words fórum](https://forum.aspose.com/c/words/8) ahol kérdéseket tehet fel, és kapcsolatba léphet a közösséggel.

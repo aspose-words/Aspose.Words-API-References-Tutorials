@@ -101,4 +101,4 @@ Ja, Sie können mit dem Modul „Content Builder“ jedem Abschnitt unterschiedl
 Auf jeden Fall! Aspose.Words für Python wird häufig zum Erstellen verschiedener Arten von Berichten und Dokumenten mit präziser Formatierung verwendet.
 
 ### Wo kann ich auf die Dokumentation und Downloads zugreifen?
- Besuche den[Aspose.Words für Python-Dokumentation](https://reference.aspose.com/words/python-net/) und laden Sie die Bibliothek herunter von[Aspose.Words Python-Versionen](https://releases.aspose.com/words/python/).
+ Besuchen Sie die[Aspose.Words für Python-Dokumentation](https://reference.aspose.com/words/python-net/) und laden Sie die Bibliothek herunter von[Aspose.Words Python-Versionen](https://releases.aspose.com/words/python/).

@@ -17,7 +17,7 @@ Word 문서에 사용자 지정 도형을 추가하면 중요한 정보를 강�
 
 1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다음 사이트에서 최신 버전을 다운로드하세요.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
 2. 개발 환경: 개발 환경을 설정합니다. Visual Studio가 널리 사용되지만 .NET을 지원하는 모든 IDE를 사용할 수 있습니다.
-3.  라이센스: 단지 실험 중이라면 다음을 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 전체 기능의 잠금을 해제합니다.
+3.  라이센스: 단지 실험 중이라면 다음을 사용할 수 있습니다.[무료 평가판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 전체 기능의 잠금을 해제합니다.
 4. C#에 대한 기본 이해: C# 프로그래밍에 익숙하면 예제를 따라가는 데 도움이 됩니다.
 
 ## 네임스페이스 가져오기

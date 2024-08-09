@@ -81,7 +81,7 @@ Sekarang, mari aktifkan spasi sel untuk tabel.
 
 ### Langkah 4.1: Izinkan Spasi Sel
 
- Mengatur`AllowCellSpacing` properti tabel ke`true`.
+ Atur`AllowCellSpacing` properti tabel ke`true`.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -99,7 +99,7 @@ table.CellSpacing = 2;
 
 Terakhir, simpan dokumen yang dimodifikasi ke direktori yang Anda tentukan.
 
- Menggunakan`Save` metode untuk menyimpan dokumen Anda.
+ Gunakan`Save` metode untuk menyimpan dokumen Anda.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
@@ -117,7 +117,7 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang
 
 ### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
 
-Aspose.Words untuk .NET dirancang khusus untuk bahasa .NET seperti C#. Namun, ada versi Aspose.Words lain yang tersedia untuk Java, Python, dan lainnya.
+Aspose.Words untuk .NET dirancang khusus untuk bahasa .NET seperti C#. Namun, ada versi lain Aspose.Words yang tersedia untuk Java, Python, dan lainnya.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
 

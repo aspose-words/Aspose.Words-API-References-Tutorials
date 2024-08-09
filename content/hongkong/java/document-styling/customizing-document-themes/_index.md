@@ -51,7 +51,7 @@ doc.save("customized.docx");
 
 ### 修改主題顏色
 
-您可以使用 Aspose.Words for Java 輕鬆修改主題顏色。就是這樣：
+您可以使用 Aspose.Words for Java 輕鬆修改主題顏色。方法如下：
 
 ```java
 //載入文檔

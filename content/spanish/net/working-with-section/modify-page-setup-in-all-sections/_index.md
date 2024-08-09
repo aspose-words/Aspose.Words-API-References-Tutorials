@@ -16,7 +16,7 @@ url: /es/net/working-with-section/modify-page-setup-in-all-sections/
 Antes de sumergirnos, asegurémonos de tener todo lo que necesitamos:
 
 1. Conocimientos básicos de C#: es necesaria estar familiarizado con la sintaxis y los conceptos de C#.
-2.  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/) Si recién lo estás probando, un[prueba gratis](https://releases.aspose.com/) está disponible.
+2.  Aspose.Words para .NET: puedes[descárgalo aquí](https://releases.aspose.com/words/net/) Si recién lo estás probando, un[prueba gratuita](https://releases.aspose.com/) está disponible.
 3. Visual Studio: cualquier versión reciente debería funcionar, pero se recomienda la última para obtener la mejor experiencia.
 4. .NET Framework: asegúrese de tenerlo instalado en su sistema.
 
@@ -99,11 +99,11 @@ Aspose.Words para .NET es una biblioteca completa para trabajar con documentos d
 
 ### 2. ¿Puedo utilizar Aspose.Words para .NET de forma gratuita?
 
- Puedes probar Aspose.Words para .NET con un[prueba gratis](https://releases.aspose.com/). Para un uso prolongado, es necesario adquirir una licencia.
+ Puedes probar Aspose.Words para .NET con un[prueba gratuita](https://releases.aspose.com/). Para un uso prolongado, es necesario adquirir una licencia.
 
 ### 3. ¿Cómo modifico otras propiedades de configuración de página?
 
- Aspose.Words le permite modificar varias propiedades de configuración de la página, como la orientación, los márgenes y el tamaño del papel. Referirse a[Documentación API](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.
+ Aspose.Words le permite modificar varias propiedades de configuración de la página, como la orientación, los márgenes y el tamaño del papel. Consulte el[Documentación API](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.
 
 ### 4. ¿Cómo obtengo soporte para Aspose.Words para .NET?
 

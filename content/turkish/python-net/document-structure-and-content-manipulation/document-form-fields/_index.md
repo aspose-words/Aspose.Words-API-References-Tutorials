@@ -93,7 +93,7 @@ date_picker.name = "birth_date"
 
 ### Yer Tutucu Metin Ekleme
 
- Metin giriş alanlarındaki yer tutucu metin, kullanıcılara beklenen giriş formatı konusunda rehberlik eder. Kullan`PlaceholderText` yer tutucu ekleme özelliği:
+ Metin giriş alanlarındaki yer tutucu metin, kullanıcılara beklenen giriş formatı konusunda rehberlik eder. Kullanın`PlaceholderText` yer tutucu ekleme özelliği:
 
 ```python
 text_input_field.placeholder_text = "Enter your full name"

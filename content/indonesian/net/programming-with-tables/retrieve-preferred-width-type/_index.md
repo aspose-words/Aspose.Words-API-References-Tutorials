@@ -9,7 +9,7 @@ url: /id/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 ## Perkenalan
 
-Pernahkah Anda bertanya-tanya bagaimana cara mengambil tipe lebar sel tabel yang disukai di dokumen Word Anda menggunakan Aspose.Words untuk .NET? Nah, Anda berada di tempat yang tepat! Dalam tutorial ini, kami akan menguraikan prosesnya langkah demi langkah, menjadikannya sangat mudah. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan berguna dan menarik bagi Anda. Jadi, mari selami dan temukan rahasia di balik pengelolaan lebar sel tabel di dokumen Word.
+Pernahkah Anda bertanya-tanya bagaimana cara mengambil tipe lebar sel tabel yang diinginkan di dokumen Word Anda menggunakan Aspose.Words untuk .NET? Nah, Anda berada di tempat yang tepat! Dalam tutorial ini, kami akan menguraikan prosesnya langkah demi langkah, menjadikannya sangat mudah. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan berguna dan menarik bagi Anda. Jadi, mari selami dan temukan rahasia di balik pengelolaan lebar sel tabel di dokumen Word.
 
 ## Prasyarat
 
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen
 
-Selanjutnya, kita memuat dokumen Word ke dalam aplikasi kita. Hal ini memungkinkan kita untuk berinteraksi dengan kontennya secara terprogram.
+Selanjutnya, kita memuat dokumen Word ke dalam aplikasi kita. Hal ini memungkinkan kita untuk berinteraksi dengan isinya secara terprogram.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
@@ -81,7 +81,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Baris kode ini mengakses sel pertama di baris pertama tabel dan mengambil jenis lebar dan nilai yang diinginkan. Itu`PreferredWidthType` dapat`Auto`, `Percent` , atau`Point`, menunjukkan bagaimana lebar ditentukan.
+ Baris kode ini mengakses sel pertama di baris pertama tabel dan mengambil jenis lebar dan nilai yang diinginkan. Itu`PreferredWidthType` bisa jadi`Auto`, `Percent` , atau`Point`, menunjukkan bagaimana lebar ditentukan.
 
 ## Langkah 6: Tampilkan Hasilnya
 
@@ -106,7 +106,7 @@ Ya, Anda dapat mengulang setiap sel dalam tabel dan mengambil tipe lebar pilihan
 
 ###  Untuk apa nilai yang mungkin`PreferredWidthType`?
 
-`PreferredWidthType` dapat`Auto`, `Percent` , atau`Point`.
+`PreferredWidthType` bisa jadi`Auto`, `Percent` , atau`Point`.
 
 ### Apakah mungkin untuk mengatur tipe lebar yang diinginkan secara terprogram?
 

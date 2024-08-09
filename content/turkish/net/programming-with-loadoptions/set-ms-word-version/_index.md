@@ -10,13 +10,13 @@ url: /tr/net/programming-with-loadoptions/set-ms-word-version/
 ---
 ## giriiş
 
-Hiç MS Word belgelerinin belirli sürümleriyle çalışmanız gerektiğini ancak bunu programlı olarak nasıl ayarlayacağınızı bilmediğinizi fark ettiğiniz oldu mu? Yalnız değilsin! Bu eğitimde Aspose.Words for .NET'i kullanarak MS Word sürümünü ayarlama sürecini anlatacağız. Bu, Word belgelerinde değişiklik yapmayı çocuk oyuncağı haline getiren muhteşem bir araçtır. Sorunsuz bir şekilde çalışmaya başladığınızdan emin olmak için her adımı parçalara ayırarak işin en ince noktasına dalacağız. başlamaya hazır mısın? Hadi dalalım!
+Hiç MS Word belgelerinin belirli sürümleriyle çalışmanız gerektiğini ancak bunu programlı olarak nasıl ayarlayacağınızı bilmediğinizi fark ettiğiniz oldu mu? Yalnız değilsin! Bu eğitimde Aspose.Words for .NET'i kullanarak MS Word sürümünü ayarlama sürecini anlatacağız. Bu, Word belgelerinde değişiklik yapmayı çocuk oyuncağı haline getiren muhteşem bir araçtır. Sorunsuz bir şekilde çalışmaya başladığınızdan emin olmak için her adımı parçalara ayırarak işin en ince noktasına dalacağız. Başlamaya hazır mısınız? Hadi dalalım!
 
 ## Önkoşullar
 
 Koda geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
--  Aspose.Words for .NET: En son sürüme sahip olduğunuzdan emin olun.[Buradan indir](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: En son sürüme sahip olduğunuzdan emin olun.[Buradan indirin](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Visual Studio'yu veya herhangi bir .NET uyumlu IDE'yi kullanabilirsiniz.
 - Temel C# Bilgisi: Her ne kadar basit tutsak da, temel bir C# anlayışı gereklidir.
 - Örnek Belge: Test amacıyla belge dizininizde bir Word belgesini hazır bulundurun.
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Adım 2: Yükleme Seçeneklerini Yapılandırın
 
-Daha sonra yükleme seçeneklerini yapılandırmanız gerekir. Sihir yapılan yer burasıdır! Yükleme seçeneklerinde MS Word sürümünü ayarlayarak Aspose.Words'e belgeyi yüklerken hangi Word sürümünü taklit edeceğini belirtmiş olursunuz.
+Daha sonra yükleme seçeneklerini yapılandırmanız gerekir. Sihrin gerçekleştiği yer burası! Yükleme seçeneklerinde MS Word sürümünü ayarlayarak Aspose.Words'e belgeyi yüklerken hangi Word sürümünü taklit edeceğini belirtmiş olursunuz.
 
 ```csharp
 // "MS Word Sürümünü Ayarla" özelliğiyle yükleme seçeneklerini yapılandırma
@@ -86,4 +86,4 @@ Kesinlikle! Aspose.Words .NET Framework, .NET Core ve .NET 5+'yi destekler.
 Evet, Aspose.Words, Word belgelerinin neredeyse tüm yönlerini değiştirmenize olanak tanıyan kapsamlı bir kütüphanedir.
 
 ### Daha fazla örnek ve belgeyi nerede bulabilirim?
- Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) Daha fazla örnek ve detaylı bilgi için.
+ Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) Daha fazla örnek ve detaylı bilgi için.

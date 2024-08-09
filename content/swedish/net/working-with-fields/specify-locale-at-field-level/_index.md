@@ -9,7 +9,7 @@ url: /sv/net/working-with-fields/specify-locale-at-field-level/
 ---
 ## Introduktion
 
-Är du redo att dyka in i Aspose.Words för .NET-världen? Idag ska vi utforska hur man anger lokalen på fältnivå. Denna praktiska funktion är särskilt användbar när du behöver dina dokument för att följa specifika kulturella eller regionala format. Se det som att ge ditt dokument ett pass som talar om hur det ska bete sig baserat på var det "besöker". I slutet av den här handledningen kommer du enkelt att kunna anpassa lokalinställningarna för fält i dina Word-dokument. Låt oss börja!
+Är du redo att dyka in i Aspose.Words för .NET-världen? Idag ska vi utforska hur man anger lokalen på fältnivå. Denna praktiska funktion är särskilt användbar när du behöver dina dokument för att följa specifika kulturella eller regionala format. Se det som att ge ditt dokument ett pass som talar om hur det ska bete sig baserat på var det "besöker". I slutet av den här handledningen kommer du enkelt att kunna anpassa lokalinställningarna för fält i dina Word-dokument. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -41,7 +41,7 @@ Först måste vi ställa in katalogen där vi ska spara vårt dokument. Se det h
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 ```
 
- Byta ut`"YOUR_DOCUMENT_DIRECTORY"` med den faktiska sökvägen till din katalog.
+ Ersätta`"YOUR_DOCUMENT_DIRECTORY"` med den faktiska sökvägen till din katalog.
 
 ## Steg 2: Initiera DocumentBuilder
 

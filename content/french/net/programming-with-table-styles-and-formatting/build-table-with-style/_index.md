@@ -128,7 +128,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 
 ## Conclusion
 
-Et voila! Vous avez réussi à créer un tableau élégant dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation et la personnalisation des documents Word pour répondre précisément à vos besoins. Que vous créiez des rapports, des factures ou tout autre type de document, Aspose.Words est là pour vous.
+Et voilà ! Vous avez réussi à créer un tableau élégant dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation et la personnalisation des documents Word pour répondre précisément à vos besoins. Que vous créiez des rapports, des factures ou tout autre type de document, Aspose.Words est là pour vous.
 
 ## FAQ
 

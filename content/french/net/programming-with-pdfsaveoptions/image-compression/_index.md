@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Étape 3 : Configurer la compression d'image de base
 
- Créer un`PdfSaveOptions`objet pour configurer les options d’enregistrement PDF, y compris la compression d’image. Met le`ImageCompression`propriété à`PdfImageCompression.Jpeg` pour utiliser la compression JPEG pour les images.
+ Créer un`PdfSaveOptions`objet pour configurer les options d’enregistrement PDF, y compris la compression d’image. Réglez le`ImageCompression`propriété à`PdfImageCompression.Jpeg` pour utiliser la compression JPEG pour les images.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## Étape 5 : Configurer la compression avancée avec la conformité PDF/A
 
- Pour une compression encore meilleure, surtout si vous devez vous conformer aux normes PDF/A, vous pouvez configurer des options supplémentaires. Met le`Compliance`propriété à`PdfCompliance.PdfA2u` et ajuster le`JpegQuality` propriété.
+ Pour une compression encore meilleure, surtout si vous devez vous conformer aux normes PDF/A, vous pouvez configurer des options supplémentaires. Réglez le`Compliance`propriété à`PdfCompliance.PdfA2u` et ajuster le`JpegQuality` propriété.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions

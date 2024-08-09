@@ -13,7 +13,7 @@ Selam! Belge otomasyonu dünyasına dalmaya hazır mısınız? İster deneyimli 
 
 ## Önkoşullar
 
-En ince ayrıntılara geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım. İşte hazırlanmanıza ve hazır olmanıza yardımcı olacak hızlı bir kontrol listesi:
+En ince ayrıntılara atlamadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım. İşte hazırlanmanıza ve hazır olmanıza yardımcı olacak hızlı bir kontrol listesi:
 
 1.  Aspose.Words for .NET: Her şeyden önce Aspose.Words for .NET kütüphanesine ihtiyacınız var. Henüz indirmediyseniz şuradan indirebilirsiniz.[İndirilenler sayfasını Aspose](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya .NET'i destekleyen başka bir IDE ile kurulmuş bir geliştirme ortamına sahip olduğunuzdan emin olun.
@@ -101,7 +101,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx"
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla birleşik giriş kutusu form alanı eklediniz. Bak, o kadar da zor değildi, değil mi? Bu basit adımlarla etkileyeceğinden emin olduğunuz etkileşimli ve dinamik belgeler oluşturabilirsiniz. Öyleyse devam edin ve deneyin. Kim bilir, yol boyunca bazı yeni numaralar bile keşfedebilirsiniz. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla birleşik giriş kutusu form alanı eklediniz. Bak, o kadar da zor değildi, değil mi? Bu basit adımlarla etkileyeceğinden emin olduğunuz etkileşimli ve dinamik belgeler oluşturabilirsiniz. Öyleyse devam edin ve deneyin. Kim bilir, yol boyunca bazı yeni numaralar bile keşfedebilirsiniz. Mutlu kodlama!
 
 ## SSS'ler
 

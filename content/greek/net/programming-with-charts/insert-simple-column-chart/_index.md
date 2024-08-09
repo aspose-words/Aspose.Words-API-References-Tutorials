@@ -75,7 +75,7 @@ seriesColl.Add("Aspose Series 2", categories, dataValues2);
 doc.Save(dataDir + "InsertSimpleColumnChart.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συγχαρητήρια! Μάθατε με επιτυχία πώς να εισάγετε ένα απλό γράφημα στηλών σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Ακολουθώντας αυτά τα βήματα, μπορείτε πλέον να ενσωματώσετε δυναμικά οπτικά στοιχεία στα έγγραφά σας, καθιστώντας τα πιο ελκυστικά και ενημερωτικά.
 
@@ -94,4 +94,4 @@ doc.Save(dataDir + "InsertSimpleColumnChart.docx");
 Ναι, το Aspose.Words για .NET σάς επιτρέπει να συμπληρώνετε δυναμικά γραφήματα με δεδομένα από εξωτερικές πηγές, όπως βάσεις δεδομένων ή API.
 
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη για το Aspose.Words για .NET;
- Επισκέψου το[Aspose.Words for .NET Documentation](https://reference.aspose.com/words/net/) για λεπτομερείς αναφορές και παραδείγματα API. Για υποστήριξη, μπορείτε επίσης να επισκεφθείτε το[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
+ Επισκεφθείτε το[Aspose.Words for .NET Documentation](https://reference.aspose.com/words/net/) για λεπτομερείς αναφορές και παραδείγματα API. Για υποστήριξη, μπορείτε επίσης να επισκεφθείτε το[Aspose.Words Forum](https://forum.aspose.com/c/words/8).

@@ -93,7 +93,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 
 ## 結論
 
-現在你就擁有了！使用 Aspose.Words for .NET 輕鬆刪除 Word 文件的保護。無論文件是否受密碼保護，Aspose.Words 都能讓您輕鬆靈活地管理文件保護。現在，您只需幾行程式碼即可解鎖文件並完全控制。
+現在你就得到它了！使用 Aspose.Words for .NET 輕鬆刪除 Word 文件的保護。無論文件是否受密碼保護，Aspose.Words 都能讓您輕鬆靈活地管理文件保護。現在，您只需幾行程式碼即可解鎖文件並完全控制。
 
 ## 常見問題解答
 

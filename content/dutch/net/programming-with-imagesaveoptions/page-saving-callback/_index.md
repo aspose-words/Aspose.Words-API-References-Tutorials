@@ -9,7 +9,7 @@ url: /nl/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit de behoefte gevoeld om elke pagina van een Word-document als afzonderlijke afbeeldingen op te slaan? Misschien wilt u een groot rapport opsplitsen in gemakkelijk verteerbare beelden, of misschien moet u miniaturen maken voor een voorbeeld. Wat uw reden ook is, het gebruik van Aspose.Words voor .NET maakt deze taak een fluitje van een cent. In deze handleiding begeleiden we u bij het instellen van een callback voor het opslaan van pagina's om elke pagina van een document op te slaan als een afzonderlijke PNG-afbeelding. Laten we er meteen in duiken!
+Hé daar! Heeft u ooit de behoefte gevoeld om elke pagina van een Word-document als afzonderlijke afbeeldingen op te slaan? Misschien wilt u een groot rapport opsplitsen in gemakkelijk verteerbare beelden, of misschien moet u miniaturen maken voor een voorbeeld. Wat uw reden ook is, het gebruik van Aspose.Words voor .NET maakt deze taak een fluitje van een cent. In deze handleiding begeleiden we u bij het instellen van een callback voor het opslaan van pagina's om elke pagina van een document op te slaan als een afzonderlijke PNG-afbeelding. Laten we er meteen in duiken!
 
 ## Vereisten
 
@@ -98,7 +98,7 @@ Veel codeerplezier!
  U kunt de pagina's opgeven die u wilt opslaan door het aan te passen`PageSet` parameter in`ImageSaveOptions`.
 
 ### Is het mogelijk om de beeldkwaliteit aan te passen?  
- Absoluut! U kunt eigenschappen instellen zoals`ImageSaveOptions.JpegQuality` om de kwaliteit van de uitgevoerde afbeeldingen te controleren.
+ Absoluut! U kunt eigenschappen instellen zoals`ImageSaveOptions.JpegQuality` om de kwaliteit van de uitvoerafbeeldingen te controleren.
 
 ### Hoe kan ik efficiënt omgaan met grote documenten?  
 Voor grote documenten kunt u overwegen pagina's in batches te verwerken om het geheugengebruik effectief te beheren.

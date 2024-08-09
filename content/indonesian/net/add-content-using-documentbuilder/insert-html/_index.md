@@ -9,13 +9,13 @@ url: /id/net/add-content-using-documentbuilder/insert-html/
 ---
 ## Perkenalan
 
-Hai, sobat penggila coding! Pernahkah Anda bertanya-tanya bagaimana cara memasukkan HTML ke dalam dokumen Word menggunakan Aspose.Words untuk .NET? Baik Anda ingin menambahkan beberapa pemformatan mewah atau hanya ingin menyederhanakan proses pembuatan dokumen, Anda berada di tempat yang tepat. Dalam tutorial ini, kita akan mendalami seluk beluk penggunaan Aspose.Words untuk .NET untuk menyematkan HTML langsung ke dokumen Word Anda. Dan jangan khawatir; kami akan membuat semuanya tetap sederhana, menarik, dan benar-benar menyenangkan!
+Hai, sobat penggila coding! Pernahkah Anda bertanya-tanya bagaimana cara memasukkan HTML ke dalam dokumen Word menggunakan Aspose.Words untuk .NET? Baik Anda ingin menambahkan beberapa format mewah atau hanya ingin menyederhanakan proses pembuatan dokumen, Anda berada di tempat yang tepat. Dalam tutorial ini, kita akan mendalami seluk beluk penggunaan Aspose.Words untuk .NET untuk menyematkan HTML langsung ke dokumen Word Anda. Dan jangan khawatir; kami akan membuat semuanya tetap sederhana, menarik, dan benar-benar menyenangkan!
 
 ## Prasyarat
 
 Sebelum kita menyelami panduan langkah demi langkah, pastikan kita memiliki semua yang kita butuhkan. Berikut daftar periksa singkatnya:
 
-1. Aspose.Words for .NET Library: Jika Anda belum melakukannya, Anda harus mengunduh perpustakaan Aspose.Words for .NET. Kamu bisa mendapatkannya[Di Sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Jika belum, Anda harus mengunduh Aspose.Words for .NET Library. Anda bisa mendapatkannya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Pastikan Anda telah menyiapkan lingkungan pengembangan, seperti Visual Studio.
 3. .NET Framework: Pastikan Anda telah menginstal .NET framework di mesin Anda.
 4. Pengetahuan Dasar C#: Sedikit keakraban dengan C# akan sangat bermanfaat.

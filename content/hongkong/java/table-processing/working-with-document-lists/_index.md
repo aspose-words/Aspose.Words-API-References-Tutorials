@@ -116,7 +116,7 @@ public class ExtractListItemsExample {
 ## 常見問題 (FAQ)
 
 ### 如何為文件清單新增項目符號點？
-若要將項目符號點新增至文件列表，請在建立清單時使用適當的 ListTemplate。例如，使用`ListTemplate.BULLET_DEFAULT`代替`ListTemplate.NUMBER_DEFAULT`.
+若要將項目符號點新增至文件列表，請在建立清單時使用適當的 ListTemplate。例如，使用`ListTemplate.BULLET_DEFAULT`而不是`ListTemplate.NUMBER_DEFAULT`.
 
 ### 我可以更改清單項目的格式嗎？
 是的，您可以使用 Aspose.Words for Java 的格式設定功能自訂清單項目的格式設置，包括字體、大小、顏色等。

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/split-document/by-page-range/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám někdy, že potřebujete jen pár stránek z obsáhlého dokumentu aplikace Word? Možná potřebujete sdílet konkrétní sekci s kolegou nebo extrahovat kapitolu pro zprávu. Ať je to jakkoli, rozdělení dokumentu aplikace Word podle rozsahu stránek může být záchranou. S Aspose.Words pro .NET se tento úkol stává hračkou. V této příručce vás provedeme tím, jak rozdělit dokument aplikace Word podle určitého rozsahu stránek pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento podrobný návod vám usnadní dosažení vašeho cíle.
 
@@ -15,7 +15,7 @@ Stalo se vám někdy, že potřebujete jen pár stránek z obsáhlého dokumentu
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud ji ještě nemáte, můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud ji ještě nemáte, můžete si ji stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vhodné vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: I když vás provedeme každým krokem, základní znalost C# bude užitečná.
 
@@ -73,7 +73,7 @@ Rozdělení dokumentu aplikace Word podle rozsahu stránek pomocí Aspose.Words 
 
 ### Mohu rozdělit více rozsahů stránek najednou?
 
-Ano můžeš. Budete muset opakovat proces extrakce pro každý potřebný rozsah a uložit je jako samostatné dokumenty.
+Ano, můžete. Budete muset opakovat proces extrakce pro každý potřebný rozsah a uložit je jako samostatné dokumenty.
 
 ### Co když potřebuji rozdělit podle konkrétních sekcí namísto rozsahů stránek?
 

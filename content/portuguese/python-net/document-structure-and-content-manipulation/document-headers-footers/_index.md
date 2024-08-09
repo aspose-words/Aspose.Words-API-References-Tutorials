@@ -12,7 +12,7 @@ Cabeçalhos e rodapés em documentos do Word desempenham um papel crucial no for
 
 ## Primeiros passos com Aspose.Words para Python
 
-Antes de mergulhar na manipulação de cabeçalho e rodapé, você precisa configurar o Aspose.Words para Python. Siga esses passos:
+Antes de mergulhar na manipulação de cabeçalho e rodapé, você precisa configurar o Aspose.Words para Python. Siga estas etapas:
 
 1. Instalação: Instale Aspose.Words para Python usando pip.
 

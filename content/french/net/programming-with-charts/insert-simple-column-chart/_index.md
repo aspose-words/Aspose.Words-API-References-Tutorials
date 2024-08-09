@@ -2,7 +2,7 @@
 title: Insérer un diagramme à colonnes simple dans un document Word
 linktitle: Insérer un diagramme à colonnes simple dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment insérer un histogramme simple dans Word à l'aide d'Aspose.Words pour .NET. Améliorez vos documents avec des présentations de données visuelles dynamiques.
+description: Découvrez comment insérer un histogramme simple dans Word à l’aide d’Aspose.Words pour .NET. Améliorez vos documents avec des présentations de données visuelles dynamiques.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/insert-simple-column-chart/
@@ -77,7 +77,7 @@ doc.Save(dataDir + "InsertSimpleColumnChart.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment insérer un simple histogramme dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez désormais intégrer des éléments visuels dynamiques dans vos documents, les rendant plus attrayants et informatifs.
+Félicitations! Vous avez appris avec succès comment insérer un simple histogramme dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez désormais intégrer des éléments visuels dynamiques dans vos documents, les rendant plus attrayants et informatifs.
 
 ## FAQ
 
@@ -94,4 +94,4 @@ Oui, vous pouvez exporter des documents contenant des graphiques vers différent
 Oui, Aspose.Words for .NET vous permet de remplir dynamiquement des graphiques avec des données provenant de sources externes telles que des bases de données ou des API.
 
 ### Où puis-je trouver plus de ressources et d’assistance pour Aspose.Words for .NET ?
- Visiter le[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour des références API détaillées et des exemples. Pour obtenir de l'aide, vous pouvez également visiter le[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Visitez le[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour des références API détaillées et des exemples. Pour obtenir de l'aide, vous pouvez également visiter le[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

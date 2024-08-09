@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Vòng lặp này chèn 50 hàng dữ liệu vào bảng, mỗi hàng có hai cột. Các`HeadingFormat` được đặt thành`false` cho những hàng này vì chúng không phải là hàng tiêu đề.
+ Vòng lặp này chèn 50 hàng dữ liệu vào bảng, mỗi hàng có hai cột. các`HeadingFormat` được đặt thành`false` cho những hàng này vì chúng không phải là hàng tiêu đề.
 
 ## Bước 4: Lưu tài liệu
 
@@ -101,7 +101,7 @@ Thao tác này sẽ lưu tài liệu với tên được chỉ định trong th�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn có thể tạo tài liệu Word có các bảng có hàng tiêu đề lặp lại trên các trang tiếp theo bằng cách sử dụng Aspose.Words cho .NET. Điều này không chỉ nâng cao khả năng đọc tài liệu của bạn mà còn đảm bảo hình thức nhất quán và chuyên nghiệp. Bây giờ, hãy tiếp tục và thử điều này trong các dự án của bạn!
+Và bạn có nó! Chỉ với một vài dòng mã, bạn có thể tạo tài liệu Word có các bảng có hàng tiêu đề lặp lại trên các trang tiếp theo bằng cách sử dụng Aspose.Words cho .NET. Điều này không chỉ nâng cao khả năng đọc tài liệu của bạn mà còn đảm bảo hình thức nhất quán và chuyên nghiệp. Bây giờ, hãy tiếp tục và thử điều này trong các dự án của bạn!
 
 ## Câu hỏi thường gặp
 

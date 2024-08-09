@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /fr/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Introduction
 
 Si vous travaillez avec des documents dans .NET et utilisez Aspose.Words, la gestion des sources de polices peut être un aspect crucial pour garantir que vos documents ont l'aspect attendu. Aspose.Words offre un moyen puissant de gérer les polices, notamment en utilisant des flux de ressources. Dans ce guide, nous verrons comment utiliser un flux de ressources comme source de police avec Aspose.Words pour .NET. Allons-y !
 
@@ -85,7 +86,7 @@ En suivant ces étapes, vous avez configuré votre application pour utiliser un 
 
 ## Conclusion
 
-Vous maîtrisez désormais le processus d'utilisation d'un flux de ressources comme source de police avec Aspose.Words pour .NET. Cette technique vous aidera à gérer les polices plus efficacement et à garantir que vos documents soient toujours à leur meilleur. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d'Aspose.Words.
+Vous maîtrisez désormais le processus d'utilisation d'un flux de ressources comme source de police avec Aspose.Words pour .NET. Cette technique vous aidera à gérer les polices plus efficacement et à garantir que vos documents soient toujours à leur meilleur. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d’Aspose.Words.
 
 ## FAQ
 
@@ -99,11 +100,11 @@ Vous maîtrisez désormais le processus d'utilisation d'un flux de ressources co
 
 ###  Q3 : Puis-je gérer d'autres types d'avertissements avec`IWarningCallback`?
 
- Oui le`IWarningCallback`L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
+ Oui, le`IWarningCallback`L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
 
 ### Q4 : Où puis-je trouver de l'aide pour Aspose.Words ?
 
- Visiter le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) à l'aide.
+ Visitez le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) pour obtenir de l'aide.
 
 ### Q5 : Est-il possible d'obtenir une licence temporaire pour Aspose.Words ?
 

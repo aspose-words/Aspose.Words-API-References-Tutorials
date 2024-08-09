@@ -40,7 +40,7 @@ Document doc = new Document();
 
 ## Bước 2: Truy cập đối tượng chủ đề
 
-Tiếp theo, bạn cần truy cập vào`Theme` đối tượng từ tài liệu. Các`Theme` đối tượng chứa các thuộc tính liên quan đến chủ đề của tài liệu, bao gồm phông chữ và màu sắc.
+Tiếp theo, bạn cần truy cập vào`Theme` đối tượng từ tài liệu. các`Theme` đối tượng chứa các thuộc tính liên quan đến chủ đề của tài liệu, bao gồm phông chữ và màu sắc.
 
 ```csharp
 Aspose.Words.Themes.Theme theme = doc.Theme;
@@ -72,7 +72,7 @@ doc.Save("StyledDocument.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng đặt thuộc tính chủ đề trong tài liệu Word bằng Aspose.Words cho .NET. Công cụ mạnh mẽ này mở ra vô số khả năng tùy chỉnh tài liệu của bạn theo chương trình. Cho dù bạn đang làm việc trên một dự án nhỏ hay một ứng dụng quy mô lớn, việc nắm vững các kỹ thuật này sẽ nâng cao hình thức và tính chuyên nghiệp cho tài liệu Word của bạn.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng đặt thuộc tính chủ đề trong tài liệu Word bằng Aspose.Words cho .NET. Công cụ mạnh mẽ này mở ra vô số khả năng tùy chỉnh tài liệu của bạn theo chương trình. Cho dù bạn đang làm việc trên một dự án nhỏ hay một ứng dụng quy mô lớn, việc nắm vững các kỹ thuật này sẽ nâng cao hình thức và tính chuyên nghiệp cho tài liệu Word của bạn.
 
 ## Câu hỏi thường gặp
 

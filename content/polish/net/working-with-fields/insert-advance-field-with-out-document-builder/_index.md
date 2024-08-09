@@ -52,7 +52,7 @@ Teraz, gdy nasz projekt jest już skonfigurowany, musimy zainicjować nowy dokum
 
 ### Zainicjuj dokument
 
-1.  W Twoim`Program.cs` plik, zacznij od utworzenia nowego dokumentu:
+1.  W twoim`Program.cs` plik, zacznij od utworzenia nowego dokumentu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -136,13 +136,13 @@ Pole zaawansowane w Aspose.Words pozwala kontrolować położenie tekstu względ
 
 ### Czy mogę używać narzędzia DocumentBuilder z polami zaawansowanymi?
 
-Tak, możesz użyć programu DocumentBuilder do wstawiania pól zaawansowanych, ale w tym samouczku pokazano, jak to zrobić bez korzystania z programu DocumentBuilder, co zapewnia większą elastyczność i kontrolę.
+Tak, możesz użyć programu DocumentBuilder do wstawiania pól z wyprzedzeniem, ale w tym samouczku pokazano, jak to zrobić bez korzystania z programu DocumentBuilder, co zapewnia większą elastyczność i kontrolę.
 
 ### Gdzie mogę znaleźć więcej przykładów użycia Aspose.Words?
 
  Obszerną dokumentację i przykłady można znaleźć na stronie[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) strona.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
 
  Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/). Aby uzyskać pełną funkcjonalność, należy zakupić licencję.
 

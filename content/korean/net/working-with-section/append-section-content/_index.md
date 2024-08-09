@@ -16,7 +16,7 @@ url: /ko/net/working-with-section/append-section-content/
 시작하기 전에 필요한 몇 가지 사항이 있습니다.
 
 1. C# 기본 지식: 전문가가 될 필요는 없지만 C#에 대한 기본적인 이해가 있으면 도움이 됩니다.
-2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) . 바로 구매하기 싫으신 분들은 옵션을 선택하시면 됩니다[무료 시험판](https://releases.aspose.com/).
+2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/) . 바로 구매하기 싫으신 분들은 옵션을 선택하시면 됩니다[무료 평가판](https://releases.aspose.com/).
 3. Visual Studio: 모든 버전이 작동하지만 최신 버전을 권장합니다.
 4. .NET Framework: 컴퓨터에 설치되어 있는지 확인하세요.
 
@@ -112,7 +112,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
 
 ### 2. Aspose.Words for .NET을 무료로 사용할 수 있나요?
 
- 다음을 사용하여 .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
+ 다음을 사용하여 .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 평가판](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
 
 ## 3. Aspose.Words for .NET의 주요 기능은 무엇입니까?
 

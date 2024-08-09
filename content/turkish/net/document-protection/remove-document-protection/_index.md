@@ -10,7 +10,7 @@ url: /tr/net/document-protection/remove-document-protection/
 
 ## giriiş
 
-Selam! Koruma ayarları nedeniyle hiç kendi Word belgenize erişemediğinizi fark ettiniz mi? Yanlış anahtarla bir kapıyı açmaya çalışmak gibi, sinir bozucu, değil mi? Ama korkmayın! Aspose.Words for .NET ile Word belgelerinizdeki korumayı kolayca kaldırabilirsiniz. Bu eğitim, süreç boyunca size adım adım yol gösterecek ve kısa sürede belgelerinizin tam kontrolünü yeniden kazanmanızı sağlayacaktır. Hadi dalalım!
+Selam! Koruma ayarları nedeniyle hiç kendi Word belgenize erişemediğinizi fark ettiniz mi? Yanlış anahtarla kapıyı açmaya çalışmak gibi, sinir bozucu, değil mi? Ama korkmayın! Aspose.Words for .NET ile Word belgelerinizdeki korumayı kolayca kaldırabilirsiniz. Bu eğitim, süreç boyunca size adım adım yol gösterecek ve kısa sürede belgelerinizin tam kontrolünü yeniden kazanmanızı sağlayacaktır. Hadi dalalım!
 
 ## Önkoşullar
 
@@ -53,7 +53,7 @@ Bazen belgeler şifre olmadan korunur. Bu gibi durumlarda korumayı tek satır k
 doc.Unprotect();
 ```
 
-Bu kadar! Belgeniz artık korumasız. Peki ya bir şifre varsa?
+İşte bu! Belgeniz artık korumasız. Peki ya bir şifre varsa?
 
 ## 3. Adım: Korumayı Parolayla Kaldırma
 
@@ -93,7 +93,7 @@ Bu, korumasız belgenizi belirtilen dizine kaydedecektir.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesinden korumayı kaldırmak çocuk oyuncağıdır. Parola korumalı bir belge olsun veya olmasın, Aspose.Words size belge korumasını zahmetsizce yönetme esnekliği sağlar. Artık belgelerinizin kilidini açabilir ve yalnızca birkaç satır kodla tam kontrolü ele geçirebilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinden korumayı kaldırmak çocuk oyuncağıdır. Parola korumalı bir belge olsun veya olmasın, Aspose.Words size belge korumasını zahmetsizce yönetme esnekliği sağlar. Artık belgelerinizin kilidini açabilir ve yalnızca birkaç satır kodla tam kontrolü ele geçirebilirsiniz.
 
 ## SSS'ler
 
@@ -107,7 +107,7 @@ Evet, bir belge listesinde dolaşabilir ve her birine aynı korumayı kaldırma 
 
 ### Aspose.Words for .NET ücretsiz mi?
 
- Aspose.Words for .NET ücretli bir kütüphanedir ancak ücretsiz olarak deneyebilirsiniz. Kontrol et[ücretsiz deneme](https://releases.aspose.com/)!
+ Aspose.Words for .NET ücretli bir kütüphanedir ancak ücretsiz olarak deneyebilirsiniz. Şuna göz atın:[ücretsiz deneme](https://releases.aspose.com/)!
 
 ### Bir Word belgesine başka hangi koruma türlerini uygulayabilirim?
 

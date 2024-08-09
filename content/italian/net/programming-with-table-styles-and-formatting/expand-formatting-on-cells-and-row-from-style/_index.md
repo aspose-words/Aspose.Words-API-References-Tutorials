@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato a dover applicare uno stile coerente tra le tabelle dei tuoi documenti Word? La regolazione manuale di ciascuna cella può essere noiosa e soggetta a errori. È qui che Aspose.Words per .NET torna utile. Questo tutorial ti guiderà attraverso il processo di espansione della formattazione su celle e righe da uno stile di tabella, assicurando che i tuoi documenti abbiano un aspetto raffinato e professionale senza problemi aggiuntivi.
 
@@ -92,7 +92,7 @@ Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, puoi facilmente espandere la formattazione su celle e righe dagli stili nei tuoi documenti Word utilizzando Aspose.Words per .NET. Ciò non solo fa risparmiare tempo, ma garantisce anche la coerenza tra i tuoi documenti. Buona programmazione!
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente espandere la formattazione su celle e righe dagli stili nei tuoi documenti Word utilizzando Aspose.Words per .NET. Ciò non solo fa risparmiare tempo, ma garantisce anche la coerenza tra i tuoi documenti. Buona programmazione!
 
 ## Domande frequenti
 

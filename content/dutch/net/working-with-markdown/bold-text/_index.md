@@ -2,63 +2,71 @@
 title: Vetgedrukte tekst
 linktitle: Vetgedrukte tekst
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u tekst vetgedrukt maakt met Aspose.Words voor .NET Stapsgewijze handleiding.
+description: Leer hoe u tekst vetgedrukt kunt maken in Word-documenten met Aspose.Words voor .NET met onze stapsgewijze handleiding. Perfect voor het automatiseren van uw documentopmaak.
 type: docs
 weight: 10
 url: /nl/net/working-with-markdown/bold-text/
 ---
+## Invoering
 
-In dit voorbeeld gaan we u vertellen hoe u tekst vetgedrukt kunt maken met Aspose.Words voor .NET. Door tekst vetgedrukt te maken, wordt deze beter zichtbaar en krijgt deze meer aandacht.
+Hallo daar, documentliefhebbers! Als je met Aspose.Words voor .NET in de wereld van documentverwerking duikt, staat je iets lekkers te wachten. Deze krachtige bibliotheek biedt een overvloed aan functies om Word-documenten programmatisch te manipuleren. Vandaag laten we u zo'n functie zien: hoe u tekst vetgedrukt kunt maken met Aspose.Words voor .NET. Of u nu rapporten genereert, dynamische documenten maakt of uw documentatieproces automatiseert, het leren beheersen van de tekstopmaak is essentieel. Klaar om jouw tekst te laten opvallen? Laten we beginnen!
 
-## Stap 1: Een documentgenerator gebruiken
+## Vereisten
 
-Eerst gebruiken we een documentgenerator om inhoud aan ons document toe te voegen.
+Voordat we ingaan op de code, zijn er een paar dingen die je moet instellen:
 
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-```
+1.  Aspose.Words voor .NET: Zorg ervoor dat u de nieuwste versie van Aspose.Words voor .NET hebt. Als u dat nog niet heeft gedaan, kunt u deze downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: een IDE zoals Visual Studio om uw code te schrijven en uit te voeren.
+3. Basiskennis van C#: Bekendheid met programmeren in C# zal u helpen de voorbeelden te volgen.
 
-## Stap 2: Vetgedrukte tekst
+## Naamruimten importeren
 
- We kunnen de tekst vetgedrukt maken door de documentbuilder in te stellen`Font.Bold`eigendom aan`true`.
-
-```csharp
-builder.Font.Bold = true;
-```
-
-## Stap 3: Voeg inhoud toe aan het document
-
- Nu kunnen we inhoud aan het document toevoegen met behulp van de documentbuilder-methoden, zoals`Writeln`, waarmee een regel tekst wordt toegevoegd.
+Laten we eerst de benodigde naamruimten importeren. Hierdoor hebben we toegang tot de Aspose.Words-functionaliteiten zonder voortdurend naar de volledige naamruimtepaden te verwijzen.
 
 ```csharp
-builder.Writeln("This text will be bold");
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Voorbeeldbroncode voor vetgedrukte tekst met Aspose.Words voor .NET
+Laten we nu het proces van het vetgedrukt maken van tekst in een Word-document bekijken met Aspose.Words voor .NET.
 
+## Stap 1: Initialiseer DocumentBuilder
+
+ De`DocumentBuilder` class biedt een snelle en gemakkelijke manier om inhoud aan uw document toe te voegen. Laten we het initialiseren.
 
 ```csharp
 // Gebruik een documentbuilder om inhoud aan het document toe te voegen.
 DocumentBuilder builder = new DocumentBuilder();
-
-// Maak de tekst vetgedrukt.
-builder.Font.Bold = true;
-builder.Writeln("This text will be Bold");  
 ```
 
-Gefeliciteerd! U hebt nu geleerd hoe u tekst vetgedrukt kunt maken met Aspose.Words voor .NET.
+## Stap 2: Maak de tekst vetgedrukt
 
+ Nu komt het leuke gedeelte: de tekst vetgedrukt maken. Wij stellen de`Bold` eigendom van de`Font` bezwaar tegen`true` en schrijf onze vetgedrukte tekst.
 
-### Veelgestelde vragen
+```csharp
+// Maak de tekst vetgedrukt.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");
+```
 
-#### Vraag: Hoe kan ik tekst vetgedrukt maken in Aspose.Words?
+## Conclusie
 
- A: Om tekst vetgedrukt te maken in Aspose.Words, kunt u de`Font.Bold` eigendom van de`Run` voorwerp. U kunt deze eigenschap instellen op`true` om specifieke tekst vet te maken. U kunt bijvoorbeeld gebruiken`run.Font.Bold=true` om de tekst binnenin vet te maken`Run` voorwerp.
+En daar heb je het! U hebt met succes tekst vetgedrukt gemaakt in een Word-document met Aspose.Words voor .NET. Deze eenvoudige maar krachtige functie is slechts het topje van de ijsberg als het gaat om wat u kunt bereiken met Aspose.Words. Blijf dus experimenteren en ontdekken om het volledige potentieel van uw documentautomatiseringstaken te benutten.
 
-#### Vraag: Is het mogelijk om meerdere stukken tekst in dezelfde alinea vet te maken?
+## Veelgestelde vragen
 
- A: Ja, u kunt meerdere stukken tekst in één alinea vetgedrukt maken door er meerdere te gebruiken`Run` voorwerpen. Je kunt er meerdere maken`Run` objecten en stel de in`Font.Bold`eigendom aan`true` voor elk object om de gewenste delen van de tekst vet te maken. Vervolgens kunt u ze aan de alinea toevoegen met behulp van de`Paragraph.AppendChild(run)` methode.
+### Kan ik slechts een deel van de tekst vetgedrukt maken?
+ Ja, dat kan. Gebruik de`DocumentBuilder` om specifieke delen van uw tekst op te maken.
 
-#### Vraag: Kan ik tekst in een tabel of cel in Aspose.Words vetgedrukt maken?
+### Is het mogelijk om de tekstkleur ook te wijzigen?
+ Absoluut! U kunt gebruik maken van de`builder.Font.Color`eigenschap om de tekstkleur in te stellen.
 
- A: Ja, u kunt tekst in een tabel of cel in Aspose.Words vetgedrukt maken. U kunt met behulp van de juiste methoden naar de gewenste cel of alinea navigeren en vervolgens de vetgedrukte opmaak toepassen met behulp van de`Font.Bold` eigendom van de`Run` of`Paragraph` voorwerp.
+### Kan ik meerdere lettertypestijlen tegelijk toepassen?
+ Ja, dat kan. U kunt tekst bijvoorbeeld tegelijkertijd vet en cursief maken door beide in te stellen`builder.Font.Bold`En`builder.Font.Italic` naar`true`.
+
+### Welke andere opties voor tekstopmaak zijn beschikbaar?
+Aspose.Words biedt een breed scala aan opties voor tekstopmaak, zoals lettergrootte, onderstrepen, doorhalen en meer.
+
+### Heb ik een licentie nodig om Aspose.Words te gebruiken?
+ U kunt Aspose.Words gebruiken met een gratis proefversie of een tijdelijke licentie, maar voor volledige functionaliteit wordt een aangeschafte licentie aanbevolen. Bekijk de[kopen](https://purchase.aspose.com/buy) pagina voor meer details.

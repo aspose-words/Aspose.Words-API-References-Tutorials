@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
-## introduzione
+## Introduzione
 
 Nel mondo multilingue di oggi, è spesso necessario personalizzare i documenti per soddisfare le preferenze linguistiche di pubblici diversi. L'impostazione di una lingua di modifica predefinita in un documento di Word è una di queste personalizzazioni. Se utilizzi Aspose.Words per .NET, questo tutorial ti guiderà attraverso l'impostazione del russo come lingua di modifica predefinita nei tuoi documenti Word. 
 

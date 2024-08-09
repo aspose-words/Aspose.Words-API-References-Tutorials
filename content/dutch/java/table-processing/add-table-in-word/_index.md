@@ -123,7 +123,7 @@ Door deze stapsgewijze handleiding te volgen, heeft u geleerd hoe u de ontwikkel
 
 ### V1: Kan ik Aspose.Words voor Java gebruiken met andere Java-bibliotheken?
 
-Ja, Aspose.Words voor Java is ontworpen om goed samen te werken met andere Java-bibliotheken, waardoor naadloze integratie in uw bestaande projecten mogelijk wordt.
+Ja, Aspose.Words voor Java is ontworpen om goed samen te werken met andere Java-bibliotheken, waardoor naadloze integratie in uw bestaande projecten mogelijk is.
 
 ### V2: Ondersteunt Aspose.Words het converteren van Word-documenten naar andere formaten?
 

@@ -96,7 +96,7 @@ extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");
 
 ### Aspose.Words for Java를 시작하려면 어떻게 해야 하나요?
 
- Aspose.Words for Java를 시작하는 것은 쉽습니다. Aspose 웹사이트에서 라이브러리를 다운로드하고 설치 및 사용 지침에 대한 설명서를 따를 수 있습니다. 방문하다[Aspose.Words for Java 문서](https://reference.aspose.com/words/java/) 상세 사항은.
+ Aspose.Words for Java를 시작하는 것은 쉽습니다. Aspose 웹사이트에서 라이브러리를 다운로드하고 설치 및 사용 지침에 대한 설명서를 따를 수 있습니다. 방문하다[Aspose.Words for Java 문서](https://reference.aspose.com/words/java/) 자세한 내용은
 
 ### Aspose.Words for Java의 주요 기능은 무엇입니까?
 

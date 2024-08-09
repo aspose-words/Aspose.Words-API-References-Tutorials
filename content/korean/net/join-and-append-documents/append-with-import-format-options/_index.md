@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 
 ## 3단계: 가져오기 형식 옵션 정의
 
-이제 마법이 일어나는 곳이 바로 여기입니다. 추가 작업 중에 서식을 처리하는 방법을 정의하겠습니다.
+자, 여기서 마법이 일어납니다. 추가 작업 중에 서식을 처리하는 방법을 정의하겠습니다.
 
 ```csharp
 // 원본 문서와 대상 문서의 번호 매기기가 충돌하는 경우 다음을 지정합니다.

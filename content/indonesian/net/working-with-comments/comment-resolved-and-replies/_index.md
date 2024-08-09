@@ -32,7 +32,7 @@ Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah diikuti. Se
 
 ## Langkah 1: Muat Dokumen
 
- Untuk memulai, muat dokumen Word yang berisi komentar. Menggunakan`Document` kelas untuk ini.
+ Untuk memulai, muat dokumen Word yang berisi komentar. Gunakan`Document` kelas untuk ini.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -89,7 +89,7 @@ Kode ini menyimpan perubahan pada dokumen baru, memastikan file asli Anda tetap 
 
 ## Kesimpulan
 
-Menangani komentar di dokumen Word tidak harus menjadi tugas manual. Dengan Aspose.Words untuk .NET, Anda dapat mengotomatiskan proses, menghemat waktu dan mengurangi kesalahan. Ikuti panduan ini untuk menyelesaikan dan membalas komentar di dokumen Anda secara efisien.
+Menangani komentar di dokumen Word tidak harus menjadi pekerjaan manual. Dengan Aspose.Words untuk .NET, Anda dapat mengotomatiskan proses, menghemat waktu dan mengurangi kesalahan. Ikuti panduan ini untuk menyelesaikan dan membalas komentar di dokumen Anda secara efisien.
 
 ## FAQ
 

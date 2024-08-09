@@ -14,7 +14,7 @@ Java programlama dünyasında, verimli belge yönetimi birçok uygulamanın çok
 
 ## Aspose.Words for Java'ya Başlarken
 
-Belge içeriğini değiştirmenin ayrıntılarına dalmadan önce, başlamak için gerekli araçlara ve bilgiye sahip olduğunuzdan emin olalım. Bu adımları takip et:
+Belge içeriğini değiştirmenin ayrıntılarına dalmadan önce, başlamak için gerekli araçlara ve bilgiye sahip olduğunuzdan emin olalım. Şu adımları izleyin:
 
 1. Kurulum ve Kurulum
    

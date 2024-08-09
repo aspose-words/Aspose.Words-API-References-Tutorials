@@ -103,4 +103,4 @@ Puede crear y manipular DOC, DOCX, PDF, HTML y muchos otros formatos.
 
 ### ¿Dónde puedo encontrar más documentación y ejemplos?
 
- Revisar la[Aspose.Words para la documentación de .NET](https://reference.aspose.com/words/net/) para obtener más ejemplos y guías detalladas.
+ Mira el[Aspose.Words para la documentación de .NET](https://reference.aspose.com/words/net/) para obtener más ejemplos y guías detalladas.

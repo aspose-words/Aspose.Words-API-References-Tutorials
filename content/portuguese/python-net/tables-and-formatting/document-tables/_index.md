@@ -12,7 +12,7 @@ As tabelas desempenham um papel fundamental na apresentação eficaz de dados em
 
 ## Introdução:
 
-As tabelas são uma ferramenta fundamental para apresentar dados estruturados em documentos Word. Eles nos permitem organizar informações em linhas e colunas, tornando conjuntos de dados complexos mais acessíveis e compreensíveis. No entanto, criar uma tabela esteticamente agradável e fácil de navegar requer uma consideração cuidadosa de vários fatores, como formatação, layout e design. Neste artigo, exploraremos como otimizar tabelas usando Aspose.Words for Python para criar apresentações de dados funcionais e visualmente atraentes.
+As tabelas são uma ferramenta fundamental para apresentar dados estruturados em documentos Word. Eles nos permitem organizar informações em linhas e colunas, tornando conjuntos de dados complexos mais acessíveis e compreensíveis. No entanto, a criação de uma tabela esteticamente agradável e fácil de navegar requer uma consideração cuidadosa de vários fatores, como formatação, layout e design. Neste artigo, exploraremos como otimizar tabelas usando Aspose.Words for Python para criar apresentações de dados funcionais e visualmente atraentes.
 
 ## Importância da otimização da tabela:
 

@@ -154,4 +154,4 @@ Ja, Aspose.Words voor Java ondersteunt het splitsen van met een wachtwoord bevei
 
 ### Vraag 5. Is Aspose.Words voor Java geschikt voor documentverwerking op ondernemingsniveau?
 
-Absoluut! Aspose.Words voor Java wordt veel gebruikt in toepassingen op ondernemingsniveau voor verschillende documentverwerkingstaken vanwege de robuustheid en uitgebreide functieset.
+Absoluut! Aspose.Words voor Java wordt veel gebruikt in toepassingen op bedrijfsniveau voor verschillende documentverwerkingstaken vanwege de robuustheid en uitgebreide functieset.

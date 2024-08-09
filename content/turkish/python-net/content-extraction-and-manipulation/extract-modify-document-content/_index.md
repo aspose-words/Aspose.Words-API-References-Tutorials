@@ -125,7 +125,7 @@ doc.save("path/to/converted/document.pdf", asposewords.SaveFormat.PDF)
 
 ## Gelişmiş Özellikler ve Otomasyon
 
-Aspose.Words, adres-mektup birleştirme, belge karşılaştırma ve daha fazlası gibi daha gelişmiş özellikler sunar. Karmaşık görevleri kolayca otomatikleştirin.
+Aspose.Words adres-mektup birleştirme, belge karşılaştırma ve daha fazlası gibi daha gelişmiş özellikler sunar. Karmaşık görevleri kolayca otomatikleştirin.
 
 ## Çözüm
 

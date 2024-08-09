@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 LoadOptions loadOptions = new LoadOptions { TempFolder = dataDir };
 ```
 
- Här,`LoadOptions` används för att ange den tillfälliga mappen. Byta ut`"YOUR DOCUMENTS DIRECTORY"`med sökvägen till din katalog.
+ Här,`LoadOptions` används för att ange den tillfälliga mappen. Ersätta`"YOUR DOCUMENTS DIRECTORY"`med sökvägen till din katalog.
 
 ## Steg 3: Ladda dokumentet
 

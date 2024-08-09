@@ -15,7 +15,7 @@ Czy jesteś gotowy, aby zanurzyć się w świat manipulowania pozycjami tabel w 
 
 Zanim wyruszymy w tę ekscytującą podróż, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1. Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję. Jeśli tego nie zrobisz,[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję. Jeśli tego nie zrobisz,[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: Upewnij się, że środowisko programistyczne jest skonfigurowane z platformą .NET.
 3. Środowisko programistyczne: Visual Studio lub dowolne preferowane IDE.
 4. Dokument programu Word: Przygotuj dokument programu Word zawierający tabelę.

@@ -93,7 +93,7 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng chèn FieldIncludeText mà không cần sử dụng DocumentBuilder trong Aspose.Words cho .NET. Cách tiếp cận này cung cấp một cách hợp lý để đưa nội dung từ tài liệu này sang tài liệu khác, giúp các tác vụ tự động hóa tài liệu của bạn trở nên đơn giản hơn nhiều.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng chèn FieldIncludeText mà không cần sử dụng DocumentBuilder trong Aspose.Words cho .NET. Cách tiếp cận này cung cấp một cách hợp lý để đưa nội dung từ tài liệu này sang tài liệu khác, giúp các tác vụ tự động hóa tài liệu của bạn trở nên đơn giản hơn nhiều.
 
 ## Câu hỏi thường gặp
 

@@ -116,7 +116,7 @@ Um einen reibungslosen und effizienten Dokumentkonvertierungsprozess zu gewährl
 ## Ausnahmebehandlung: 
 Beim Konvertieren einer großen Anzahl von Dokumenten können Fehler auftreten. Implementieren Sie eine geeignete Ausnahmebehandlung, um diese Probleme zu identifizieren und zu beheben.
 
-## Qualitätskontrolle: 
+## Qualitätssicherung: 
 Bevor Sie die Dokumentkonvertierungsfunktion in einer Produktionsumgebung einsetzen, testen Sie den Konvertierungsprozess gründlich mit verschiedenen Dokumenttypen und -größen, um die Genauigkeit und Wiedergabetreue der Ausgabe zu überprüfen.
 
 ## Abschluss

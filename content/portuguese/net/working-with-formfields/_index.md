@@ -12,7 +12,7 @@ Processamento de palavras com campos de formulário é um recurso abrangente par
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Inserir campos de formulário](./insert-form-fields/) | Aprenda como inserir campos de formulário suspensos em documentos do Word usando Aspose.Words for .NET. |
-| [Campos de formulário funcionam com propriedades](./form-fields-work-with-properties/) | Aprenda como trabalhar com propriedades de campos de formulário em documentos do Word usando Aspose.Words for .NET. |
-| [Campos de formulário Obtenha coleção de campos de formulário](./form-fields-get-form-fields-collection/) | Aprenda como recuperar e manipular a coleção de campos de formulário em documentos do Word usando Aspose.Words for .NET. |
-| [Campos de formulário obtidos por nome](./form-fields-get-by-name/) | Aprenda como recuperar e modificar campos de formulário por nome em documentos do Word usando Aspose.Words for .NET. |
+| [Inserir campos de formulário](./insert-form-fields/) | Aprenda como inserir um campo de formulário de caixa de combinação em um documento do Word usando Aspose.Words for .NET com nosso guia passo a passo detalhado. |
+| [Campos de formulário funcionam com propriedades](./form-fields-work-with-properties/) | Aprenda como manipular campos de formulário em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo detalhado. |
+| [Campos de formulário Obtenha coleção de campos de formulário](./form-fields-get-form-fields-collection/) | Aprenda como obter e manipular campos de formulário em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo abrangente. |
+| [Campos de formulário obtidos por nome](./form-fields-get-by-name/) | Aprenda como obter e modificar campos de formulário por nome em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. |

@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Bước 3: Khởi tạo DocumentBuilder
 
- Các`DocumentBuilder` class là công cụ chính của chúng tôi để thêm nội dung vào tài liệu. Hãy coi nó như một cây bút viết trên khung tài liệu Word.
+ các`DocumentBuilder` class là công cụ chính của chúng tôi để thêm nội dung vào tài liệu. Hãy coi nó như một cây bút viết trên khung tài liệu Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -79,7 +79,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công trường biểu mẫu nhập văn bản vào tài liệu Word bằng Aspose.Words for .NET. Đây chỉ là đỉnh của tảng băng trôi. Với Aspose.Words, bạn có thể tự động hóa và nâng cao các tác vụ xử lý tài liệu của mình theo vô số cách. Từ việc tạo các mẫu phức tạp đến tạo các biểu mẫu tương tác, khả năng là vô tận.
+Và bạn có nó! Bạn đã chèn thành công trường biểu mẫu nhập văn bản vào tài liệu Word bằng Aspose.Words for .NET. Đây chỉ là phần nổi của tảng băng chìm. Với Aspose.Words, bạn có thể tự động hóa và nâng cao các tác vụ xử lý tài liệu của mình theo vô số cách. Từ việc tạo các mẫu phức tạp đến tạo các biểu mẫu tương tác, khả năng là vô tận.
 
 ## Câu hỏi thường gặp
 

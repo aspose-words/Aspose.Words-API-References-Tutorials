@@ -72,7 +72,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 Hãy chia nhỏ chức năng của từng tùy chọn:
 - `CssStyleSheetType = CssStyleSheetType.External`: Tùy chọn này chỉ định rằng các kiểu CSS sẽ được lưu trong biểu định kiểu bên ngoài.
 - `ExportFontResources = true`: Điều này cho phép xuất tài nguyên phông chữ.
-- `ResourceFolder = dataDir + "Resources"`: Chỉ định thư mục cục bộ nơi các tài nguyên (như phông chữ và tệp CSS) sẽ được lưu.
+- `ResourceFolder = dataDir + "Resources"`: Chỉ định thư mục cục bộ nơi tài nguyên (như phông chữ và tệp CSS) sẽ được lưu.
 - `ResourceFolderAlias = "http://example.com/resources"`: Đặt bí danh cho thư mục tài nguyên sẽ được sử dụng trong tệp HTML.
 
 ## Bước 4: Lưu tài liệu dưới dạng HTML
@@ -87,7 +87,7 @@ Dòng mã này lưu tài liệu ở định dạng HTML, cùng với các tài n
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã xuất thành công tài nguyên trong khi lưu tài liệu Word dưới dạng HTML bằng Aspose.Words cho .NET. Với thư viện mạnh mẽ này, việc xử lý tài liệu Word theo chương trình trở nên dễ dàng. Cho dù bạn đang làm việc trên một ứng dụng web hay chỉ cần chuyển đổi tài liệu để sử dụng ngoại tuyến, Aspose.Words đều có thể giúp bạn.
+Và bạn có nó! Bạn đã xuất thành công tài nguyên trong khi lưu tài liệu Word dưới dạng HTML bằng Aspose.Words cho .NET. Với thư viện mạnh mẽ này, việc xử lý tài liệu Word theo chương trình trở nên dễ dàng. Cho dù bạn đang làm việc trên một ứng dụng web hay chỉ cần chuyển đổi tài liệu để sử dụng ngoại tuyến, Aspose.Words đều có thể giúp bạn.
 
 ## Câu hỏi thường gặp
 

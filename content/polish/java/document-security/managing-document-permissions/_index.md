@@ -40,7 +40,7 @@ Teraz, gdy znasz już podstawy, przejdźmy do ustawiania uprawnień do dokument�
 
 1. Otwórz dokument: Załaduj dokument programu Word za pomocą Aspose.Words dla Java.
 
-2. Zdefiniuj kontrolę dostępu: Użyj Aspose.Words for Java, aby określić, którzy użytkownicy lub grupy mogą uzyskać dostęp do dokumentu i jakie działania mogą wykonywać, takie jak czytanie, edytowanie lub drukowanie.
+2. Zdefiniuj kontrolę dostępu: Użyj Aspose.Words for Java, aby określić, którzy użytkownicy lub grupy mogą uzyskać dostęp do dokumentu i jakie czynności mogą wykonywać, takie jak czytanie, edytowanie lub drukowanie.
 
 3. Zastosuj ochronę dokumentów: W razie potrzeby zastosuj ochronę dokumentów za pomocą hasła, aby ograniczyć dostęp.
 

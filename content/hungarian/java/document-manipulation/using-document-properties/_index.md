@@ -97,7 +97,7 @@ public void configuringLinkToContent() throws Exception
 
 Ez a kódrészlet bemutatja, hogyan hozhat létre könyvjelzőt a dokumentumban, és hogyan adhat hozzá egy egyéni dokumentumtulajdonságot, amely a könyvjelzőre hivatkozik.
 
-## Konvertálás mértékegységek között
+## Konvertálás a mértékegységek között
 
 Az Aspose.Words for Java programban egyszerűen konvertálhatja a mértékegységeket. Íme egy példa, hogyan kell csinálni:
 
@@ -146,11 +146,11 @@ dokumentum tulajdonságai jelentős szerepet játszanak a dokumentumok hatékony
 
 ### Hogyan érhetem el a beépített dokumentumtulajdonságokat?
 
- Az Aspose.Words for Java beépített dokumentumtulajdonságainak eléréséhez használja a`getBuiltInDocumentProperties` módszer a`Document` tárgy. Ez a metódus beépített tulajdonságok gyűjteményét adja vissza, amelyeken keresztül ismételhet.
+ Az Aspose.Words for Java beépített dokumentumtulajdonságainak eléréséhez használja a`getBuiltInDocumentProperties` módszer a`Document` objektum. Ez a metódus beépített tulajdonságok gyűjteményét adja vissza, amelyeken keresztül ismételhet.
 
 ### Hozzáadhatok egyéni dokumentumtulajdonságokat egy dokumentumhoz?
 
- Igen, egyéni dokumentumtulajdonságokat adhat a dokumentumhoz a segítségével`CustomDocumentProperties` Gyűjtemény. Különféle adattípusokkal határozhat meg egyéni tulajdonságokat, beleértve a karakterláncokat, logikai értékeket, dátumokat és numerikus értékeket.
+ Igen, egyéni dokumentumtulajdonságokat adhat a dokumentumhoz a segítségével`CustomDocumentProperties` gyűjtemény. Különféle adattípusokkal határozhat meg egyéni tulajdonságokat, beleértve a karakterláncokat, logikai értékeket, dátumokat és numerikus értékeket.
 
 ### Hogyan távolíthatok el egy adott egyéni dokumentumtulajdonságot?
 

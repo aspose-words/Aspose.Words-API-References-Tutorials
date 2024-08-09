@@ -15,7 +15,7 @@ Chào mừng! Nếu bạn đang tìm hiểu thế giới của Aspose.Words dàn
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
--  Aspose.Words for .NET: Nếu bạn chưa cài đặt nó,[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Nếu bạn chưa cài đặt nó,[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Visual Studio hoặc bất kỳ IDE C# nào khác.
 -  Tài liệu Word: Chúng tôi sẽ sử dụng tài liệu có tên`Rendering.docx`. Đặt nó trong thư mục dự án của bạn.
 
@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã thêm thành công tiền tố tên lớp CSS vào đầu ra HTML của mình bằng Aspose.Words cho .NET. Tính năng đơn giản nhưng mạnh mẽ này có thể giúp bạn duy trì phong cách rõ ràng và không xung đột trong tài liệu HTML của mình.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn đã thêm thành công tiền tố tên lớp CSS vào đầu ra HTML của mình bằng Aspose.Words cho .NET. Tính năng đơn giản nhưng mạnh mẽ này có thể giúp bạn duy trì phong cách rõ ràng và không xung đột trong tài liệu HTML của mình.
 
 ## Câu hỏi thường gặp
 
@@ -117,7 +117,7 @@ Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn 
  Có, bạn có thể tùy chỉnh tiền tố mỗi lần lưu tài liệu bằng cách thay đổi`CssClassNamePrefix` tài sản.
 
 ### Phương pháp này có hỗ trợ CSS nội tuyến không?
- Các`CssClassNamePrefix`thuộc tính hoạt động với CSS bên ngoài. Đối với CSS nội tuyến, bạn sẽ cần một cách tiếp cận khác.
+ các`CssClassNamePrefix`thuộc tính hoạt động với CSS bên ngoài. Đối với CSS nội tuyến, bạn sẽ cần một cách tiếp cận khác.
 
 ### Làm cách nào tôi có thể bao gồm các tùy chọn lưu HTML khác?
  Bạn có thể cấu hình các thuộc tính khác nhau của`HtmlSaveOptions` để tùy chỉnh đầu ra HTML của bạn. Kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.

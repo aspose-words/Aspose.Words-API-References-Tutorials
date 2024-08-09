@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Következtetés
 
-És ez az! Sikeresen átmásolta a könyvjelzővel ellátott szöveget egyik Word-dokumentumból a másikba az Aspose.Words for .NET segítségével. Ez a módszer hatékonyan automatizálja a dokumentumkezelési feladatokat, hatékonyabbá és egyszerűbbé teszi a munkafolyamatot.
+És ennyi! Sikeresen átmásolta a könyvjelzővel ellátott szöveget egyik Word-dokumentumból a másikba az Aspose.Words for .NET segítségével. Ez a módszer hatékonyan automatizálja a dokumentumkezelési feladatokat, hatékonyabbá és egyszerűbbé teszi a munkafolyamatot.
 
 ## GYIK
 

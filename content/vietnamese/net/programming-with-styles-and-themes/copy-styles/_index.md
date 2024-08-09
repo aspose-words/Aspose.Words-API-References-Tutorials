@@ -9,7 +9,7 @@ url: /vi/net/programming-with-styles-and-themes/copy-styles/
 ---
 ## Giới thiệu
 
-Nếu bạn từng cần làm cho một tài liệu trông nhất quán với một tài liệu khác, có thể bạn đã gặp phải thách thức trong việc sao chép kiểu dáng. Hãy tưởng tượng bạn là nhà thiết kế được giao nhiệm vụ đảm bảo rằng mọi báo cáo mới đều phù hợp với kiểu của mẫu hiện có. Sử dụng Aspose.Words cho .NET, bạn có thể đơn giản hóa tác vụ này và giữ cho tài liệu của bạn trông sắc nét và thống nhất. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể dễ dàng sao chép kiểu từ tài liệu Word này sang tài liệu Word khác. Bắt đầu nào!
+Nếu bạn từng cần làm cho một tài liệu trông nhất quán với một tài liệu khác, có thể bạn đã gặp phải thách thức trong việc sao chép kiểu dáng. Hãy tưởng tượng bạn là nhà thiết kế được giao nhiệm vụ đảm bảo rằng mọi báo cáo mới đều phù hợp với kiểu của mẫu hiện có. Sử dụng Aspose.Words cho .NET, bạn có thể đơn giản hóa tác vụ này và giữ cho tài liệu của bạn trông sắc nét và thống nhất. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể dễ dàng sao chép kiểu từ tài liệu Word này sang tài liệu Word khác. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -46,11 +46,11 @@ Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- Đây,`Rendering.docx` là tài liệu nguồn của bạn chứa các kiểu bạn muốn sao chép. Các`doc` đối tượng đại diện cho tài liệu đích nơi các kiểu sẽ được sao chép.
+ Đây,`Rendering.docx` là tài liệu nguồn của bạn chứa các kiểu bạn muốn sao chép. các`doc` đối tượng đại diện cho tài liệu đích nơi các kiểu sẽ được sao chép.
 
 ## Bước 3: Sao chép kiểu từ nguồn sang đích
 
- Với cả hai tài liệu đã được tải, bây giờ bạn có thể sao chép các kiểu. Các`CopyStylesFromTemplate` phương pháp là công cụ của bạn cho công việc này. Nó sao chép các kiểu từ`doc`mẫu để`target` tài liệu.
+ Với cả hai tài liệu đã được tải, bây giờ bạn có thể sao chép các kiểu. các`CopyStylesFromTemplate` phương pháp là công cụ của bạn cho công việc này. Nó sao chép các kiểu từ`doc`mẫu để`target` tài liệu.
 
 ```csharp
 target.CopyStylesFromTemplate(doc);
@@ -68,12 +68,12 @@ Mã này lưu tài liệu đã sửa đổi bằng tên mới, giữ nguyên cá
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Sao chép kiểu giữa các tài liệu Word bằng Aspose.Words cho .NET là một quá trình đơn giản khi bạn đã hiểu rõ về nó. Bằng cách làm theo các bước này, bạn đảm bảo rằng tài liệu của mình duy trì giao diện nhất quán, giúp công việc của bạn hiệu quả và chuyên nghiệp hơn. Cho dù bạn đang cập nhật báo cáo hay tạo mẫu mới, phương pháp này giúp bạn tiết kiệm thời gian và công sức, cho phép bạn tập trung vào nội dung thay vì định dạng.
+Và bạn có nó! Sao chép kiểu giữa các tài liệu Word bằng Aspose.Words cho .NET là một quá trình đơn giản khi bạn đã hiểu rõ về nó. Bằng cách làm theo các bước này, bạn đảm bảo rằng tài liệu của mình duy trì giao diện nhất quán, giúp công việc của bạn hiệu quả và chuyên nghiệp hơn. Cho dù bạn đang cập nhật báo cáo hay tạo mẫu mới, phương pháp này giúp bạn tiết kiệm thời gian và công sức, cho phép bạn tập trung vào nội dung thay vì định dạng.
 
 ## Câu hỏi thường gặp
 
 ###  Mục đích của việc này là gì`CopyStylesFromTemplate` method?  
- Các`CopyStylesFromTemplate` phương pháp sao chép kiểu từ tài liệu này sang tài liệu khác, đảm bảo rằng tài liệu đích kế thừa định dạng của tài liệu nguồn.
+ các`CopyStylesFromTemplate` phương pháp sao chép kiểu từ tài liệu này sang tài liệu khác, đảm bảo rằng tài liệu đích kế thừa định dạng của tài liệu nguồn.
 
 ###  Tôi có thể sử dụng không?`CopyStylesFromTemplate` with documents in different formats?  
  Không, cái`CopyStylesFromTemplate` phương pháp chỉ hoạt động với các tài liệu có cùng định dạng, điển hình là DOCX.
@@ -82,7 +82,7 @@ Và bạn có nó rồi đấy! Sao chép kiểu giữa các tài liệu Word b�
 Mở tài liệu đích và kiểm tra cài đặt kiểu. Bạn sẽ thấy các kiểu từ tài liệu nguồn được áp dụng.
 
 ### Điều gì sẽ xảy ra nếu tài liệu đích đã có kiểu dáng?  
- Các`CopyStylesFromTemplate` phương thức sẽ ghi đè các kiểu hiện có trong tài liệu đích bằng các kiểu từ tài liệu nguồn.
+ các`CopyStylesFromTemplate` phương thức sẽ ghi đè các kiểu hiện có trong tài liệu đích bằng các kiểu từ tài liệu nguồn.
 
 ### Aspose.Words cho .NET có được sử dụng miễn phí không?  
  Aspose.Words for .NET là một sản phẩm thương mại nhưng bạn có thể dùng thử miễn phí từ[Aspose.Words để dùng thử miễn phí .NET](https://releases.aspose.com/).

@@ -9,7 +9,7 @@ url: /vi/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình bị mắc kẹt trong mê cung thay thế văn bản trong tài liệu Word chưa? Nếu bạn gật đầu thì hãy yên tâm vì chúng ta đang đi sâu vào một hướng dẫn thú vị bằng cách sử dụng Aspose.Words cho .NET. Hôm nay, chúng ta sẽ tìm hiểu cách thay thế văn bản chứa các ký tự meta. Bạn đã sẵn sàng để thao tác với tài liệu của mình mượt mà hơn bao giờ hết chưa? Bắt đầu nào!
+Bạn đã bao giờ thấy mình bị mắc kẹt trong mê cung thay thế văn bản trong tài liệu Word chưa? Nếu bạn gật đầu thì hãy yên tâm vì chúng ta đang đi sâu vào một hướng dẫn thú vị bằng cách sử dụng Aspose.Words cho .NET. Hôm nay, chúng ta sẽ tìm hiểu cách thay thế văn bản chứa các ký tự meta. Bạn đã sẵn sàng để thao tác với tài liệu của mình mượt mà hơn bao giờ hết chưa? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
 
-Bây giờ, hãy chia nhỏ quy trình thành các bước dễ hiểu. Sẵn sàng? Đi nào!
+Bây giờ, hãy chia nhỏ quy trình thành các bước dễ hiểu. Sẵn sàng? Đi thôi!
 
 ## Bước 1: Thiết lập môi trường của bạn
 
@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Đoạn mã này khởi tạo tài liệu và thiết lập trình tạo. Các`dataDir` là cơ sở chính cho tài liệu của bạn.
+ Đoạn mã này khởi tạo tài liệu và thiết lập trình tạo. các`dataDir` là cơ sở chính cho tài liệu của bạn.
 
 ## Bước 2: Tùy chỉnh phông chữ của bạn và thêm nội dung
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bây giờ bạn đã thành thạo nghệ thuật thay thế văn bản chứa các ký tự meta trong tài liệu Word bằng Aspose.Words cho .NET. Từ việc thiết lập môi trường cho đến lưu tài liệu cuối cùng, mỗi bước đều được thiết kế để giúp bạn kiểm soát thao tác văn bản của mình. Vì vậy, hãy tiếp tục, đi sâu vào tài liệu của bạn và tự tin thực hiện những thay thế đó!
+Và bạn có nó! Bây giờ bạn đã thành thạo nghệ thuật thay thế văn bản chứa các ký tự meta trong tài liệu Word bằng Aspose.Words cho .NET. Từ việc thiết lập môi trường cho đến lưu tài liệu cuối cùng, mỗi bước đều được thiết kế để giúp bạn kiểm soát thao tác văn bản của mình. Vì vậy, hãy tiếp tục, đi sâu vào tài liệu của bạn và tự tin thực hiện những thay thế đó!
 
 ## Câu hỏi thường gặp
 
@@ -119,7 +119,7 @@ Tuyệt đối! Bạn có thể sửa đổi chuỗi thay thế để bao gồm 
  Bạn có thể xâu chuỗi nhiều`Replace` các cuộc gọi để xử lý các thẻ hoặc mẫu khác nhau trong tài liệu của bạn.
 
 ### Có thể sử dụng các phông chữ và định dạng khác?
-Có, bạn có thể tùy chỉnh phông chữ và các tùy chọn định dạng khác bằng cách sử dụng`DocumentBuilder`Và`FindReplaceOptions` các đối tượng.
+Có, bạn có thể tùy chỉnh phông chữ và các tùy chọn định dạng khác bằng cách sử dụng`DocumentBuilder`Và`FindReplaceOptions` đồ vật.
 
 ### Tôi có thể tìm thêm thông tin về Aspose.Words cho .NET ở đâu?
  Bạn có thể ghé thăm[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) để biết thêm chi tiết và ví dụ.

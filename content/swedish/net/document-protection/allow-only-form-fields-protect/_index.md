@@ -9,7 +9,7 @@ url: /sv/net/document-protection/allow-only-form-fields-protect/
 ---
 ## Introduktion
 
-Hallå där! Någonsin behövt skydda specifika delar av ett Word-dokument samtidigt som andra delar kan redigeras? Aspose.Words för .NET gör detta superenkelt. I den här självstudien går vi in på hur man endast tillåter skydd av formulärfält i ett Word-dokument. I slutet av den här guiden har du en gedigen förståelse för dokumentskydd med Aspose.Words för .NET. Redo? Låt oss hoppa in!
+Hej där! Någonsin behövt skydda specifika delar av ett Word-dokument samtidigt som andra delar kan redigeras? Aspose.Words för .NET gör detta superenkelt. I den här självstudien går vi in på hur man endast tillåter skydd av formulärfält i ett Word-dokument. I slutet av den här guiden har du en gedigen förståelse för dokumentskydd med Aspose.Words för .NET. Redo? Låt oss hoppa in!
 
 ## Förutsättningar
 

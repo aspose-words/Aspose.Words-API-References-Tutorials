@@ -19,7 +19,7 @@ Mielőtt belevágnánk a kódolási részbe, győződjünk meg arról, hogy mind
 2. Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
 3. Alapszintű C# ismerete: A C# ismerete előnyt jelent.
 
- Ha még nem rendelkezik Aspose.Words for .NET programmal, beszerezheti a[ingyenes próbaverzió](https://releases.aspose.com/) vagy vegye meg[itt](https://purchase.aspose.com/buy) . Bármilyen kérdés esetén a[támogatói fórum](https://forum.aspose.com/c/words/8) remek hely a kezdéshez.
+ Ha még nem rendelkezik Aspose.Words for .NET programmal, beszerezheti a[ingyenes próbaverzió](https://releases.aspose.com/) vagy vegye meg[itt](https://purchase.aspose.com/buy) . Bármilyen kérdés esetén a[támogatási fórum](https://forum.aspose.com/c/words/8) remek hely a kezdéshez.
 
 ## Névterek importálása
 
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## 2. lépés: Azonosítsa a táblázatokat
 
- Ezután meg kell határoznia az egyesíteni kívánt táblákat. Az Aspose.Words lehetővé teszi a táblázatok lekérését egy dokumentumból a`GetChild` módszer. Itt van, hogyan:
+ Ezután meg kell határoznia az egyesíteni kívánt táblákat. Az Aspose.Words lehetővé teszi a táblázatok lekérését egy dokumentumból a`GetChild` módszer. Íme, hogyan:
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -84,7 +84,7 @@ Végül mentse el a módosított dokumentumot. Ez a lépés biztosítja, hogy a 
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-És ez az! Sikeresen egyesítette két tábla sorait egybe az Aspose.Words for .NET segítségével.
+És ennyi! Sikeresen egyesítette két tábla sorait egybe az Aspose.Words for .NET segítségével.
 
 ## Következtetés
 
@@ -102,7 +102,7 @@ Igen, az Aspose.Words lehetővé teszi a táblázatok kombinálását még akkor
 
 A sorok formázása megmarad az első táblázathoz való hozzáfűzéskor.
 
-### Lehetséges kettőnél több asztalt kombinálni?
+### Lehetséges kettőnél több asztal kombinálása?
 
 Igen, több táblát is kombinálhat úgy, hogy minden további táblánál megismétli a lépéseket.
 
@@ -110,6 +110,6 @@ Igen, több táblát is kombinálhat úgy, hogy minden további táblánál megi
 
 Teljesen! Létrehozhat egy szkriptet a folyamat automatizálásához több dokumentum esetében.
 
-### Hol kaphatok segítséget, ha problémákba ütközöm?
+### Hol kaphatok segítséget, ha problémákat tapasztalok?
 
  A[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) egy nagyszerű hely, ahol segítséget kaphat, és megoldást találhat a gyakori problémákra.

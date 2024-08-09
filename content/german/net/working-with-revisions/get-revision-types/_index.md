@@ -2,100 +2,102 @@
 title: Holen Sie sich Revisionsarten von Wörtern
 linktitle: Holen Sie sich Revisionsarten von Wörtern
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Holen Sie sich mit Aspose.Words für .NET Revisionstypen von Wörtern in einem Word-Dokument.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Revisionstypen von Wörtern in einem Word-Dokument erhalten. Diese Schritt-für-Schritt-Anleitung hilft Ihnen, Dokumentrevisionen effizient durchzuführen.
 type: docs
 weight: 10
 url: /de/net/working-with-revisions/get-revision-types/
 ---
+## Einführung
 
-In dieser Schritt-für-Schritt-Anleitung erklären wir Ihnen, wie Sie mit Aspose.Words für .NET die Worttypenrevisionen in einem Word-Dokument erhalten. Wir stellen Ihnen den vollständigen Quellcode zur Verfügung und zeigen Ihnen, wie Sie die Markdown-Ausgabe formatieren.
+Haben Sie sich schon einmal knietief in einem Meer von Dokumentrevisionen wiedergefunden und sich gefragt, wer was wann verschoben hat? Damit sind Sie nicht allein. Die Handhabung von Dokumentrevisionen kann eine mühsame Aufgabe sein, insbesondere bei umfangreichen Dokumenten. Aber keine Sorge! Mit Aspose.Words für .NET können Sie diese Revisionen problemlos identifizieren und verwalten. In dieser Anleitung führen wir Sie Schritt für Schritt durch den Prozess, wie Sie mit Aspose.Words für .NET Revisionstypen von Wörtern in einem Word-Dokument erhalten. Also, schnallen Sie sich an und legen Sie los!
 
-## Schritt 1: Dokument einlegen
+## Voraussetzungen
 
-Der erste Schritt besteht darin, das Dokument mit den Revisionen hochzuladen.
+Bevor wir uns mit dem Code die Hände schmutzig machen, benötigen Sie ein paar Dinge:
+
+1.  Aspose.Words für .NET-Bibliothek: Falls noch nicht geschehen, laden Sie sie herunter von[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
+3. Grundkenntnisse in C#: Kenntnisse der Programmiersprache C# sind von Vorteil.
+4.  Ein Word-Dokument mit Revisionen: Stellen Sie sicher, dass Sie ein`.docx`Datei mit nachverfolgten Änderungen zum Testen des Codes.
+
+## Namespaces importieren
+
+Um zu beginnen, müssen Sie die erforderlichen Namespaces in Ihr C#-Projekt importieren. Dadurch können Sie auf die von Aspose.Words für .NET bereitgestellten Funktionen zugreifen.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using Aspose.Words.Revision;
+using System;
 ```
 
-## Schritt 2: Durch die Absätze blättern
+Lassen Sie uns das Beispiel zum besseren Verständnis und zur besseren Umsetzung in mehrere Schritte aufteilen.
 
-Als Nächstes gehen wir die Absätze des Dokuments durch und überprüfen die mit jedem Absatz verbundenen Wortartenrevisionen.
+## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
+
+Als Erstes müssen Sie den Pfad zu Ihrem Dokumentverzeichnis definieren. Hier befindet sich Ihr Word-Dokument mit Revisionen.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentordner.
+
+## Schritt 2: Laden Sie Ihr Word-Dokument
+
+Als nächstes müssen Sie das Word-Dokument in Ihr Projekt laden. Dieses Dokument sollte die Revisionen enthalten, die Sie analysieren möchten.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ Stellen Sie sicher, dass die Datei`Revisions.docx` existiert im angegebenen Verzeichnis.
+
+## Schritt 3: Zugriff auf die Absatzsammlung
+
+Nachdem Ihr Dokument geladen wurde, müssen Sie auf die Absätze im ersten Abschnitt des Dokumenttexts zugreifen. Auf diese Weise können Sie jeden Absatz durchgehen, um nach Änderungen zu suchen.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     if (paragraphs[i].IsMoveFromRevision)
-         Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-     if (paragraphs[i].IsMoveToRevision)
-         Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-}
 ```
 
-### Beispielquellcode für Get Revision Types mit Aspose.Words für .NET
+## Schritt 4: Absätze durchgehen und auf Überarbeitungen prüfen
 
-Hier ist der vollständige Quellcode zum Abrufen von Revisionstypen in einem Dokument mit Aspose.Words für .NET:
+Und hier geschieht die Magie. Sie durchlaufen jeden Absatz und prüfen, ob er verschoben (gelöscht oder eingefügt) wurde.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 for (int i = 0; i < paragraphs.Count; i++)
 {
-	 if (paragraphs[i].IsMoveFromRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-	 if (paragraphs[i].IsMoveToRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+    if (paragraphs[i].IsMoveFromRevision)
+        Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+    if (paragraphs[i].IsMoveToRevision)
+        Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
 }
 ```
+
+ Diese Schleife durchläuft jeden Absatz und verwendet die`IsMoveFromRevision`Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, ob der Absatz verschoben (gelöscht) oder verschoben (eingefügt) wurde.
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET die Arten von Wortüberarbeitungen in einem Word-Dokument erhält. Wir haben die Schritte befolgt, um das Dokument zu laden, die Absätze durchzugehen und die mit jedem Absatz verbundenen Arten von Wortüberarbeitungen zu überprüfen. Jetzt können Sie dieses Wissen anwenden, um Wortüberarbeitungen in Ihren eigenen Word-Dokumenten mit Aspose.Words für .NET zu analysieren.
+Und da haben Sie es! Mit nur wenigen Codezeilen können Sie mit Aspose.Words für .NET problemlos die Revisionstypen in Ihrem Word-Dokument identifizieren. Diese leistungsstarke Bibliothek macht die Handhabung von Dokumentrevisionen zum Kinderspiel, sodass Sie sich auf wichtigere Aufgaben konzentrieren können. 
 
-### FAQs zum Abrufen von Revisionstypen für Wörter
+## Häufig gestellte Fragen
 
-#### F: Wie lade ich ein Dokument in Aspose.Words für .NET hoch?
+### Kann ich Aspose.Words für .NET verwenden, um von bestimmten Benutzern vorgenommene Änderungen zu verfolgen?
 
- A: Verwenden Sie die`Document` Klasse von Aspose.Words für .NET, um ein Dokument aus einer Datei zu laden. Sie können den vollständigen Dokumentpfad angeben.
+Ja, Aspose.Words für .NET bietet eine Funktion für den Zugriff auf Revisionsdetails, einschließlich des Autors der Änderungen.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
 
-#### F: Wie durchlaufe ich in Aspose.Words für .NET Absätze in einem Dokument?
+ Auf jeden Fall! Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/).
 
- A: Verwenden Sie die`Paragraphs` Eigenschaft des Dokumentabschnitts, um die Sammlung von Absätzen abzurufen. Sie können dann eine Schleife verwenden, um jeden Absatz zu durchlaufen.
+### Wie kann ich eine temporäre Lizenz für Aspose.Words für .NET beantragen?
 
-```csharp
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     // Verarbeiten Sie hier jeden Absatz
-}
-```
+ Sie können eine temporäre Lizenz anfordern und beantragen bei[Hier](https://purchase.aspose.com/temporary-license/).
 
-#### F: Wie kann ich in Aspose.Words für .NET überprüfen, ob ein Absatz verschoben (gelöscht) wurde?
+### Wo finde ich ausführlichere Dokumentation für Aspose.Words für .NET?
 
- A: Verwenden Sie einen Absatz`IsMoveFromRevision`Eigenschaft, um zu überprüfen, ob sie verschoben (gelöscht) wurde.
+ Eine ausführliche Dokumentation finden Sie auf der[Aspose-Website](https://reference.aspose.com/words/net/).
 
-```csharp
-if (paragraph. IsMove
+### Kann ich Aspose.Words für .NET in einem nicht kommerziellen Projekt verwenden?
 
-FromRevision)
-{
-     // Der Absatz wurde verschoben (gelöscht)
-}
-```
-
-#### F: Wie kann ich überprüfen, ob ein Absatz in Aspose.Words für .NET verschoben (eingefügt) wurde?
-
- A: Verwenden Sie einen Absatz`IsMoveToRevision` Eigenschaft, um zu überprüfen, ob es verschoben (eingefügt) wurde.
-
-```csharp
-if (paragraph.IsMoveToRevision)
-{
-     // Der Absatz wurde verschoben (eingefügt)
-}
-```
+Ja, Aspose.Words für .NET kann sowohl in kommerziellen als auch in nicht kommerziellen Projekten verwendet werden. Achten Sie jedoch darauf, die Lizenzbedingungen zu überprüfen.

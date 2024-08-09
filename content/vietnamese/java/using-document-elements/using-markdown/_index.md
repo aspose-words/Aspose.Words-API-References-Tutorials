@@ -89,7 +89,7 @@ builder.insertHyperlink("Aspose", "https://www.aspose.com", sai);
 builder.getFont().setBold(false);
 ```
 
-## Những cái bàn
+## Bàn
 
 Việc thêm bảng vào tài liệu Markdown của bạn thật đơn giản với Aspose.Words for Java.
 

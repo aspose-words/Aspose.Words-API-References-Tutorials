@@ -101,7 +101,7 @@ Cela enregistre le document avec le nom spécifié dans votre répertoire de doc
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous pouvez créer un document Word avec des tableaux comportant des lignes d'en-tête répétitives sur les pages suivantes à l'aide d'Aspose.Words pour .NET. Cela améliore non seulement la lisibilité de vos documents, mais garantit également une apparence cohérente et professionnelle. Maintenant, allez-y et essayez cela dans vos projets !
+Et voilà ! Avec seulement quelques lignes de code, vous pouvez créer un document Word avec des tableaux comportant des lignes d'en-tête répétitives sur les pages suivantes à l'aide d'Aspose.Words pour .NET. Cela améliore non seulement la lisibilité de vos documents, mais garantit également une apparence cohérente et professionnelle. Maintenant, allez-y et essayez cela dans vos projets !
 
 ## FAQ
 
@@ -118,4 +118,4 @@ Et voila! Avec seulement quelques lignes de code, vous pouvez créer un document
  Oui, vous pouvez modifier les tables existantes en y accédant via le`Document` objet et en appliquant un formatage similaire.
 
 ### Quelles autres options de formatage de tableau sont disponibles dans Aspose.Words pour .NET ?
- Aspose.Words for .NET offre une large gamme d'options de formatage de tableau, notamment la fusion de cellules, les paramètres de bordure et l'alignement des tableaux. Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Aspose.Words for .NET offre une large gamme d'options de formatage de tableau, notamment la fusion de cellules, les paramètres de bordure et l'alignement des tableaux. Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.

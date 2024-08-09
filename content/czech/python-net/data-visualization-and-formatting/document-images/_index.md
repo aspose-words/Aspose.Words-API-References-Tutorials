@@ -8,7 +8,7 @@ weight: 11
 url: /cs/python-net/data-visualization-and-formatting/document-images/
 ---
 
-## Úvod
+## Zavedení
 
 Ve světě, kde se rozsahy pozornosti zmenšují a přetížení informacemi je neustálou výzvou, se používání multimediálních obrázků stává klíčovou strategií, aby vaše dokumenty vynikly. Vizuální obsah má jedinečnou schopnost rychle zprostředkovat složité koncepty, takže vaše publikum snáze pochopí klíčové myšlenky a poznatky.
 
@@ -149,7 +149,7 @@ Začlenění multimediálních obrázků do vašich dokumentů znamená změnu h
 
 ### Mohu k obrázkům, které vkládám, přidat popisky?
 
- Ano, k obrázkům můžete přidávat popisky pomocí Aspose.Words. Použijte`add_caption` metodu a přizpůsobte vzhled titulku.
+ Ano, k obrázkům můžete přidávat popisky pomocí Aspose.Words. Použijte`add_caption` a přizpůsobte vzhled titulku.
 
 ### Do jakých formátů mohu exportovat své dokumenty?
 

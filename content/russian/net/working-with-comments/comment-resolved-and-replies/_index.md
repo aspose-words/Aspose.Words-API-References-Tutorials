@@ -32,7 +32,7 @@ using Aspose.Words.Comments;
 
 ## Шаг 1. Загрузите документ
 
- Для начала загрузите документ Word, содержащий комментарии. Использовать`Document` класс для этого.
+ Для начала загрузите документ Word, содержащий комментарии. Используйте`Document` класс для этого.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -9,7 +9,7 @@ url: /tr/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 ## giriiş
 
-Hiç Word belgenize sıkıştırılmış gibi görünen, metni sıkışık ve sütunları hizasız bırakan tablolarla boğuştunuz mu? Eğer öyleyse, yalnız değilsin! Tablo biçimlendirmesini yönetmek, özellikle dinamik içerikle uğraşırken gerçek bir güçlük olabilir. Ama endişelenmeyin; Aspose.Words for .NET arkanızı kolluyor. Bu kılavuzda, tabloları içeriğe otomatik olarak sığdırmanın kullanışlı özelliğine değineceğiz. Bu işlevsellik, tablolarınızın içeriklerine mükemmel şekilde uyum sağlamasını sağlayarak belgelerinizin minimum çabayla gösterişli ve profesyonel görünmesini sağlar. başlamaya hazır mısın? Gelin masalarınızın sizin için daha çok çalışmasını sağlayalım!
+Hiç Word belgenize sıkıştırılmış gibi görünen, metni sıkışık ve sütunları hizasız bırakan tablolarla boğuştunuz mu? Eğer öyleyse, yalnız değilsin! Tablo biçimlendirmesini yönetmek, özellikle dinamik içerikle uğraşırken gerçek bir güçlük olabilir. Ama endişelenmeyin; Aspose.Words for .NET arkanızı kolluyor. Bu kılavuzda, tabloları içeriğe otomatik olarak sığdırmanın kullanışlı özelliğine değineceğiz. Bu işlevsellik, tablolarınızın içeriklerine mükemmel şekilde uyum sağlamasını sağlayarak belgelerinizin minimum çabayla gösterişli ve profesyonel görünmesini sağlar. Başlamaya hazır mısınız? Gelin masalarınızın sizin için daha çok çalışmasını sağlayalım!
 
 ## Önkoşullar
 

@@ -106,8 +106,8 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 Puedes controlar el orden en que se muestran las formas usando el orden Z:
 
 ```java
-shape1.setZOrder(1); // Traer al frente
-shape2.setZOrder(0); // Enviar al fondo
+shape1.setZOrder(1); // traer al frente
+shape2.setZOrder(0); // enviar atrás
 ```
 
 ## Guardar el documento
@@ -161,8 +161,8 @@ shape.setFillColor(Color.GREEN);
 
 ### ¿Puedo agregar texto dentro de una forma?
 
- Sí, puedes agregar texto dentro de una forma. Utilizar el`getTextPath` Propiedad de la forma para establecer el texto y personalizar su formato.
+ Sí, puedes agregar texto dentro de una forma. Utilice el`getTextPath` Propiedad de la forma para establecer el texto y personalizar su formato.
 
 ### ¿Cómo puedo organizar las formas en un orden específico?
 
- Puede controlar el orden de las formas utilizando la propiedad Orden Z. Selecciona el`ZOrder` Propiedad de una forma para determinar su posición en la pila de formas. Los valores más bajos se envían hacia atrás, mientras que los valores más altos se llevan al frente.
+ Puede controlar el orden de las formas utilizando la propiedad Orden Z. Establecer el`ZOrder` Propiedad de una forma para determinar su posición en la pila de formas. Los valores más bajos se envían hacia atrás, mientras que los valores más altos se llevan al frente.

@@ -238,7 +238,7 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ### ¿Cómo extraigo contenido de secciones específicas de un documento?
 
-Para extraer contenido de secciones específicas de un documento, puede identificar los puntos inicial y final de las secciones y utilizar los métodos Aspose.Words para Java adecuados para extraer contenido entre ellas.
+Para extraer contenido de secciones de documentos específicas, puede identificar los puntos inicial y final de las secciones y utilizar los métodos apropiados de Aspose.Words para Java para extraer contenido entre ellas.
 
 ### ¿Puedo extraer contenido de documentos protegidos con contraseña?
 
@@ -254,4 +254,4 @@ Sí, puede extraer contenido de elementos de documentos específicos, como tabla
 
 ### ¿Cómo puedo automatizar el proceso de extracción de contenido en mi aplicación Java?
 
-Para automatizar el proceso de extracción de contenido en su aplicación Java, puede crear código personalizado basado en las técnicas descritas en esta guía. También puede implementar lógica para recorrer varios documentos y extraer contenido según sea necesario.
+Para automatizar el proceso de extracción de contenido en su aplicación Java, puede crear código personalizado basado en las técnicas descritas en esta guía. También puede implementar lógica para iterar a través de múltiples documentos y extraer contenido según sea necesario.

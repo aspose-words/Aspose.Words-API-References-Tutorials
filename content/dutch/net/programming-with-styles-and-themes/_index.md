@@ -16,7 +16,7 @@ Of u nu een beginner of een ervaren ontwikkelaar bent, Aspose.Words voor .NET-tu
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Documentstijlen ophalen in Word](./access-styles/) | Leer hoe u documentstijlen in Word kunt verkrijgen met Aspose.Words voor .NET met deze gedetailleerde stapsgewijze zelfstudie. Krijg toegang tot en beheer stijlen programmatisch in uw .NET-applicaties. |
+| [Krijg documentstijlen in Word](./access-styles/) | Leer hoe u documentstijlen in Word kunt verkrijgen met Aspose.Words voor .NET met deze gedetailleerde stapsgewijze zelfstudie. Krijg toegang tot en beheer stijlen programmatisch in uw .NET-applicaties. |
 | [Kopieer Word-documentstijlen](./copy-styles/) | Leer hoe u Word-documentstijlen kopieert met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om moeiteloos consistente documentopmaak te garanderen. |
 | [Documentthema-eigenschappen ophalen in Word](./get-theme-properties/) | Ontdek hoe u documentthema-eigenschappen in Word kunt openen en beheren met Aspose.Words voor .NET. Leer lettertypen en kleuren ophalen met onze gids. |
 | [Stel thema-eigenschappen in in Word-document](./set-theme-properties/) | Leer hoe u thema-eigenschappen in Word-documenten instelt met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om lettertypen en kleuren eenvoudig aan te passen. |

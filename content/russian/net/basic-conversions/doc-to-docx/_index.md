@@ -73,4 +73,4 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
  Вы можете купить лицензию[здесь](https://purchase.aspose.com/buy).
 
 ### Где я могу получить поддержку для Aspose.Words?
- Для поддержки посетите Aspose.Words[Форум](https://forum.aspose.com/c/words/8).
+ Для поддержки посетите Aspose.Words[форум](https://forum.aspose.com/c/words/8).

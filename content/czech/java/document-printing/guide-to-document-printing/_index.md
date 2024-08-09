@@ -8,7 +8,7 @@ weight: 15
 url: /cs/java/document-printing/guide-to-document-printing/
 ---
 
-## Úvod
+## Zavedení
 
 V tomto tutoriálu vás provedeme procesem tisku dokumentů pomocí Aspose.Words for Java. Ať už jste vývojář pracující na projektech zpracování textu nebo dokumentů, pochopení toho, jak tisknout dokumenty programově, může být velmi přínosné. Probereme základní kroky, které vám umožní rychle začít s tiskem dokumentů.
 

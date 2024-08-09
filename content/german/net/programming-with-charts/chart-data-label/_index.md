@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 1. Visual Studio: Installieren Sie Visual Studio 2019 oder höher.
 2. .NET Framework: Stellen Sie sicher, dass Sie .NET Framework 4.0 oder höher haben.
-3.  Aspose.Words für .NET: Laden Sie Aspose.Words für .NET herunter und installieren Sie es von der[Download-Link](https://releases.aspose.com/words/net/).
+3.  Aspose.Words für .NET: Laden Sie Aspose.Words für .NET herunter und installieren Sie es von der[Downloadlink](https://releases.aspose.com/words/net/).
 4. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind unbedingt erforderlich.
 5.  Eine gültige Lizenz: Besorgen Sie sich eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder kaufen Sie eines im[Kauflink](https://purchase.aspose.com/buy).
 
@@ -123,13 +123,13 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, mit der Entwickler Word-Dokumente programmgesteuert erstellen, ändern und konvertieren können.
 
 ### Wie installiere ich Aspose.Words für .NET?
- Sie können es herunterladen und installieren von der[Download-Link](https://releases.aspose.com/words/net/). Befolgen Sie die bereitgestellten Installationsanweisungen.
+ Sie können es herunterladen und installieren von der[Downloadlink](https://releases.aspose.com/words/net/). Befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Kann ich Aspose.Words für .NET kostenlos testen?
- Ja, Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) oder ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/)um das Produkt zu bewerten.
+ Ja, Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) oder ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/)um das Produkt zu bewerten.
 
 ### Ist Aspose.Words für .NET mit .NET Core kompatibel?
 Ja, Aspose.Words für .NET ist mit .NET Core, .NET Standard und .NET Framework kompatibel.
 
 ### Wo erhalte ich Support für Aspose.Words für .NET?
- Besuchen Sie die[Hilfeforum](https://forum.aspose.com/c/words/8) für Hilfe und Unterstützung durch die Aspose-Community und Experten.
+ Besuchen Sie die[Support-Forum](https://forum.aspose.com/c/words/8) für Hilfe und Unterstützung durch die Aspose-Community und Experten.

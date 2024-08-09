@@ -23,7 +23,7 @@ Trước khi đi vào phần phức tạp khi làm việc với Office Math tron
 
 Các đối tượng Office Math được sử dụng để biểu diễn các phương trình toán học trong một tài liệu. Aspose.Words for Java cung cấp hỗ trợ mạnh mẽ cho Office Math, cho phép bạn kiểm soát việc hiển thị và định dạng của chúng. 
 
-## Hướng dẫn từng bước một
+## Hướng dẫn từng bước
 
 Hãy bắt đầu với quy trình từng bước làm việc với Office Math trong Aspose.Words for Java:
 

@@ -9,7 +9,7 @@ url: /fr/net/programming-with-styles-and-themes/copy-styles/
 ---
 ## Introduction
 
-Si vous avez déjà eu besoin de rendre un document cohérent avec un autre, vous avez probablement été confronté au défi de copier des styles. Imaginez que vous êtes un concepteur chargé de veiller à ce que chaque nouveau rapport corresponde au style d'un modèle existant. En utilisant Aspose.Words pour .NET, vous pouvez simplifier cette tâche et conserver à vos documents un aspect net et uniforme. Dans ce didacticiel, nous verrons comment copier facilement des styles d'un document Word à un autre. Commençons!
+Si vous avez déjà eu besoin de rendre un document cohérent avec un autre, vous avez probablement été confronté au défi de copier des styles. Imaginez que vous êtes un concepteur chargé de veiller à ce que chaque nouveau rapport corresponde au style d'un modèle existant. En utilisant Aspose.Words pour .NET, vous pouvez simplifier cette tâche et conserver à vos documents un aspect net et uniforme. Dans ce didacticiel, nous verrons comment copier facilement des styles d’un document Word à un autre. Commençons !
 
 ## Conditions préalables
 
@@ -68,7 +68,7 @@ Ce code enregistre le document modifié sous un nouveau nom, préservant ainsi v
 
 ## Conclusion
 
-Et voila! Copier des styles entre des documents Word à l'aide d'Aspose.Words pour .NET est un processus simple une fois que vous l'avez compris. En suivant ces étapes, vous vous assurez que vos documents conservent une apparence cohérente, rendant votre travail plus efficace et professionnel. Que vous mettiez à jour un rapport ou créiez un nouveau modèle, cette méthode vous fait gagner du temps et des efforts, vous permettant de vous concentrer sur le contenu plutôt que sur le formatage.
+Et voilà ! Copier des styles entre des documents Word à l'aide d'Aspose.Words pour .NET est un processus simple une fois que vous l'avez compris. En suivant ces étapes, vous vous assurez que vos documents conservent une apparence cohérente, rendant votre travail plus efficace et professionnel. Que vous mettiez à jour un rapport ou créiez un nouveau modèle, cette méthode vous fait gagner du temps et des efforts, vous permettant de vous concentrer sur le contenu plutôt que sur le formatage.
 
 ## FAQ
 

@@ -23,7 +23,7 @@ PdfSaveOptions를 사용한 단어 처리에 대한 .NET용 Aspose.Words 자습�
 | [PDF 문서에 하위 집합 글꼴 포함](./embedded-subset-fonts/) | .NET용 Aspose.Words를 사용하여 필요한 글꼴 하위 집합만 포함하여 PDF 파일 크기를 줄입니다. PDF를 효율적으로 최적화하려면 단계별 가이드를 따르십시오. |
 | [포함된 글꼴을 비활성화하여 PDF 크기 줄이기](./disable-embed-windows-fonts/) | .NET용 Aspose.Words를 사용하여 포함된 글꼴을 비활성화하여 PDF 크기를 줄입니다. 효율적인 저장 및 공유를 위해 문서를 최적화하려면 단계별 가이드를 따르십시오. |
 | [내장된 Arial 및 Times Roman 글꼴 건너뛰기로 PDF 크기 최적화](./skip-embedded-arial-and-times-roman-fonts/) | .NET용 Aspose.Words를 사용하여 내장된 Arial 및 Times Roman 글꼴을 건너뛰어 PDF 크기를 최적화하세요. PDF 파일을 간소화하려면 이 단계별 가이드를 따르세요. |
-| [핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기 줄이기](./avoid-embedding-core-fonts/) | .NET용 Aspose.Words를 사용하여 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기를 줄이는 방법을 알아보세요. PDF를 최적화하려면 단계별 가이드를 따르세요. |
+| [핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기 줄이기](./avoid-embedding-core-fonts/) | .NET용 Aspose.Words를 사용하여 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기를 줄이는 방법을 알아보세요. PDF를 최적화하려면 단계별 가이드를 따르십시오. |
 | [PDF 문서의 이스케이프 URI](./escape-uri/) | .NET용 Aspose.Words를 사용하여 PDF에서 URI를 이스케이프하는 방법을 알아보세요. 이 자세한 가이드는 프로세스를 단계별로 안내합니다. |
 | [Word 문서 머리글 바닥글 책갈피를 PDF 문서로 내보내기](./export-header-footer-bookmarks/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 머리글 및 바닥글 북마크를 PDF로 내보내는 방법을 알아보세요. |
 | [Wmf 글꼴을 메타파일 크기로 조정하여 PDF 크기 줄이기](./scale-wmf-fonts-to-metafile-size/) | .NET용 Aspose.Words를 사용하여 PDF로 변환할 때 wmf 글꼴 크기를 메타파일 크기로 축소하여 PDF 크기를 줄이는 단계별 가이드입니다. |

@@ -9,7 +9,7 @@ url: /hu/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Bevezetés
 
-Ha fejleszteni szeretné dokumentumautomatizálási készségeit, akkor ez egy csemege. Ez az oktatóanyag végigvezeti Önt egy Word-dokumentum táblázatoszlopainak könyvjelzővel történő megjelölésén az Aspose.Words for .NET használatával. Készen állsz a merülésre? Kezdjük el!
+Ha fejleszteni szeretné dokumentumautomatizálási készségeit, akkor ez egy csemege. Ez az oktatóanyag végigvezeti Önt egy Word-dokumentum táblázatoszlopainak könyvjelzővel történő megjelölésén az Aspose.Words for .NET használatával. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 
@@ -121,7 +121,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való pro
 Igen, az Aspose.Words for .NET bármely .NET által támogatott nyelven használható, beleértve a C#-ot, a VB.NET-t és az F#-t.
 
 ### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
- Támogatást kaphat az Aspose közösségtől és szakértőktől, ha ellátogat a webhelyre[támogatói fórum](https://forum.aspose.com/c/words/8).
+ Támogatást kaphat az Aspose közösségtől és szakértőktől, ha ellátogat a webhelyre[támogatási fórum](https://forum.aspose.com/c/words/8).
 
 ### Elérhető az Aspose.Words .NET-hez próbaverziója?
  Igen, ingyenes próbaverziót kaphat a webhelyen[itt](https://releases.aspose.com/).

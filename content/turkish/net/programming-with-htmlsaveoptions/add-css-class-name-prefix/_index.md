@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak HTML çıktınıza başarıyla bir CSS sınıfı adı öneki eklediniz. Bu basit ama güçlü özellik, HTML belgelerinizde temiz ve çakışmayan stiller korumanıza yardımcı olabilir.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak HTML çıktınıza başarıyla bir CSS sınıfı adı öneki eklediniz. Bu basit ama güçlü özellik, HTML belgelerinizde temiz ve çakışmayan stiller korumanıza yardımcı olabilir.
 
 ## SSS'ler
 
@@ -123,7 +123,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  Çeşitli özelliklerini yapılandırabilirsiniz`HtmlSaveOptions` HTML çıktınızı özelleştirmek için. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
 ### HTML'yi bir akışa kaydetmek mümkün mü?
- Kesinlikle! Akış nesnesini aktararak belgeyi bir akışa kaydedebilirsiniz.`Save` yöntem.
+ Kesinlikle! Akış nesnesini aktararak belgeyi bir akışa kaydedebilirsiniz.`Save` Yöntem.
 
 ### Sorunla karşılaşırsam nasıl destek alabilirim?
  adresinden destek alabilirsiniz.[Forumu aspose](https://forum.aspose.com/c/words/8).

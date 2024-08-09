@@ -95,11 +95,11 @@ Cuối cùng, hãy lưu tài liệu đã sửa đổi của chúng tôi. Bạn c
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-Và Voila! Bạn vừa tự động hóa một phần quy trình làm việc tài liệu của mình. Thật tuyệt vời phải không?
+Và thì đấy! Bạn vừa tự động hóa một phần quy trình làm việc tài liệu của mình. Thật tuyệt vời phải không?
 
 ## Phần kết luận
 
-Chúc mừng! Bạn vừa thực hiện những bước đầu tiên vào thế giới tự động hóa tài liệu với Aspose.Words cho .NET. Từ việc thiết lập dự án đến thay thế văn bản và xử lý các ký tự điều khiển, giờ đây bạn đã có những kiến thức cơ bản để bắt đầu quản lý tài liệu của mình hiệu quả hơn. Khả năng là vô tận với Aspose.Words, vì vậy hãy tiếp tục thử nghiệm và xem bạn có thể tự động hóa những gì khác!
+Xin chúc mừng! Bạn vừa thực hiện những bước đầu tiên vào thế giới tự động hóa tài liệu với Aspose.Words cho .NET. Từ việc thiết lập dự án đến thay thế văn bản và xử lý các ký tự điều khiển, giờ đây bạn đã có những kiến thức cơ bản để bắt đầu quản lý tài liệu của mình hiệu quả hơn. Khả năng là vô tận với Aspose.Words, vì vậy hãy tiếp tục thử nghiệm và xem bạn có thể tự động hóa những gì khác!
 
 ## Câu hỏi thường gặp
 

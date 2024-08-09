@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## giriiş
 
 Belgelerinizde yazı tiplerinin doğru şekilde görüntülenmemesiyle ilgili sorunlarla karşılaştıysanız yalnız değilsiniz. Yazı tipi ayarlarını yönetmek ve yazı tipi değişiklikleriyle ilgili bildirimler almak sizi birçok baş ağrısından kurtarabilir. Bu kapsamlı kılavuzda, Aspose.Words for .NET kullanarak yazı tipi bildirimlerini nasıl ele alacağınızı keşfederek belgelerinizin her zaman en iyi şekilde görünmesini sağlayacağız.
 
@@ -101,7 +101,7 @@ Bu adımları izleyerek, uygulamanızı yazı tipi değişikliklerini sorunsuz b
 
 Artık Aspose.Words for .NET kullanarak yazı tipi değişiklikleri için bildirim alma sürecinde uzmanlaştınız. Bu beceri, gerekli yazı tipleri mevcut olmadığında bile belgelerinizin her zaman en iyi şekilde görünmesini sağlamanıza yardımcı olacaktır. Aspose.Words'ün gücünden tam anlamıyla yararlanmak için farklı ayarlarla denemeler yapmaya devam edin.
 
-## SSS
+## SSS'ler
 
 ### S1: Birden fazla varsayılan yazı tipi belirtebilir miyim?
 
@@ -113,7 +113,7 @@ Hayır, değiştirme için yalnızca bir varsayılan yazı tipi belirleyebilirsi
 
 ###  S3: Diğer uyarı türlerini şununla işleyebilir miyim?`IWarningCallback`?
 
- Evet`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
+ Evet,`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
 
 ### S4: Aspose.Words desteğini nerede bulabilirim?
 

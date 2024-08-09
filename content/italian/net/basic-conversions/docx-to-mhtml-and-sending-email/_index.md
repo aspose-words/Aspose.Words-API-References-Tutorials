@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
-## introduzione
+## Introduzione
 
 Nell'era digitale di oggi, convertire documenti da un formato all'altro e inviarli via e-mail è un compito comune. Questo articolo ti guiderà attraverso il processo di conversione di un file DOCX in formato MHTML e quindi di invio come e-mail utilizzando Aspose.Words per .NET. Analizzeremo ogni passaggio in una guida dettagliata e facile da seguire, assicurandoti di comprendere il processo dall'inizio alla fine. Immergiamoci!
 

@@ -81,7 +81,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- บรรทัดโค้ดเหล่านี้จะเข้าถึงเซลล์แรกในแถวแรกของตารางและดึงข้อมูลประเภทความกว้างและค่าที่ต้องการ ที่`PreferredWidthType` เป็นไปได้`Auto`, `Percent` , หรือ`Point`เพื่อระบุวิธีกำหนดความกว้าง
+ บรรทัดโค้ดเหล่านี้จะเข้าถึงเซลล์แรกในแถวแรกของตารางและดึงข้อมูลประเภทความกว้างและค่าที่ต้องการ ที่`PreferredWidthType` สามารถเป็นได้`Auto`, `Percent` , หรือ`Point`เพื่อระบุวิธีกำหนดความกว้าง
 
 ## ขั้นตอนที่ 6: แสดงผลลัพธ์
 
@@ -106,7 +106,7 @@ Console.WriteLine("Preferred Width Value: " + value);
 
 ###  ค่าที่เป็นไปได้สำหรับ`PreferredWidthType`?
 
-`PreferredWidthType` เป็นไปได้`Auto`, `Percent` , หรือ`Point`.
+`PreferredWidthType` สามารถเป็นได้`Auto`, `Percent` , หรือ`Point`.
 
 ### เป็นไปได้ไหมที่จะตั้งค่าประเภทความกว้างที่ต้องการโดยทางโปรแกรม
 

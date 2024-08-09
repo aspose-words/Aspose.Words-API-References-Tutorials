@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-section/delete-all-sections/
 ---
-## Úvod
+## Zavedení
 
 Zkoušeli jste někdy smazat všechny sekce v dokumentu aplikace Word a ocitli jste se v bludišti matoucích kroků? Nejsi sám. Mnoho z nás potřebuje z různých důvodů manipulovat s dokumenty Wordu a někdy může smazání všech oddílů připadat jako navigace v labyrintu. Ale nebojte se! S Aspose.Words pro .NET je tento úkol snadný jako facka. Tento článek vás provede celým procesem a rozdělí jej do jednoduchých, zvládnutelných kroků. Na konci tohoto tutoriálu budete profesionálem v práci s oddíly v dokumentech aplikace Word pomocí Aspose.Words for .NET.
 
@@ -15,7 +15,7 @@ Zkoušeli jste někdy smazat všechny sekce v dokumentu aplikace Word a ocitli j
 
 Než se ponoříme, ujistěte se, že máte vše, co potřebujete. Pro začátek budete potřebovat:
 
--  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli IDE kompatibilní s .NET (jako Visual Studio).
 - Základní znalost C#: To vám pomůže lépe porozumět úryvkům kódu.
 - Dokument aplikace Word: Vstupní dokument pro práci.
@@ -60,16 +60,16 @@ tady to máte! Odstranění všech sekcí v dokumentu aplikace Word pomocí Aspo
 ## FAQ
 
 ### Co je Aspose.Words for .NET?
- Aspose.Words for .NET je výkonná knihovna pro programovou manipulaci s dokumenty Wordu. Více informací naleznete[tady](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET je výkonná knihovna pro programovou manipulaci s dokumenty Wordu. Více informací naleznete[zde](https://reference.aspose.com/words/net/).
 
 ### Mohu vyzkoušet Aspose.Words pro .NET zdarma?
- Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).
 
 ### Jak si mohu koupit Aspose.Words pro .NET?
- Můžete si jej zakoupit od[tady](https://purchase.aspose.com/buy).
+ Můžete si jej zakoupit od[zde](https://purchase.aspose.com/buy).
 
 ### Je k dispozici nějaká podpora pro Aspose.Words pro .NET?
- Ano, můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+Ano, můžete získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).
 
 ### Co když potřebuji dočasnou licenci?
- Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
+ Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/).

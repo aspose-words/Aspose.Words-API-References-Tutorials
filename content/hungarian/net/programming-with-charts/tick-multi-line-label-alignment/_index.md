@@ -15,7 +15,7 @@ Sziasztok, a technika szerelmesei! Valaha azon kapta magát, hogy vakarja a fej�
 
 Mielőtt belemerülnénk a többsoros címkeigazítás világába, győződjünk meg arról, hogy az összes kacsa egy sorban van. Íme, amire szüksége lesz:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET legújabb verziójával rendelkezik. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET legújabb verziójával rendelkezik. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
 2. .NET-környezet: Győződjön meg arról, hogy a fejlesztői környezet .NET-tel van beállítva.
 3. Alapvető C# ismerete: A C# alapvető ismerete simábbá teszi ezt az utat.
 
@@ -50,7 +50,7 @@ Most hozzunk létre egy új Word-dokumentumot. Ez a dokumentum vászonként szol
 Document doc = new Document();
 ```
 
-## 3. lépés: Használja a DocumentBuilder programot
+## 3. lépés: A DocumentBuilder használata
 
  A`DocumentBuilder` osztály az Aspose.Words-ben egy hatékony eszköz, amely segít a dokumentumok létrehozásában. Arra használjuk, hogy beszúrjunk egy diagramot a dokumentumunkba.
 
@@ -62,9 +62,9 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 4. lépés: Helyezzen be egy diagramot
 
-Szúrjunk be egy diagramot a dokumentumunkba. Ehhez a példához szóródiagramot fogunk használni.
+Szúrjunk be egy diagramot a dokumentumunkba. Ehhez a példához egy szóródiagramot fogunk használni.
 
- Használni a`InsertChart` módszere a`DocumentBuilder` osztályba, beszúrhatunk egy szóródiagramot a dokumentumunkba.
+ A`InsertChart` módszere a`DocumentBuilder` osztályba, beszúrhatunk egy szóródiagramot a dokumentumunkba.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);

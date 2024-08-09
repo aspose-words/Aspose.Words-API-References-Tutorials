@@ -94,7 +94,7 @@ Az alábbi lépések követésével hatékonyan kezelheti és kezelheti a figyel
 figyelmeztetés visszahívása lehetővé teszi a dokumentumfeldolgozás során előforduló figyelmeztetések elkapását és kezelését, segítve a lehetséges problémák proaktív kezelését.
 
 ### Hogyan állíthatom be a figyelmeztető visszahívás funkciót?
- Konfigurálnia kell a`LoadOptions` a ... val`WarningCallback` tulajdonságot, és valósítson meg egy osztályt, amely a figyelmeztetéseket a megvalósításával kezeli`IWarningCallback` felület.
+ Konfigurálnia kell a`LoadOptions` a`WarningCallback` tulajdonságot, és valósítson meg egy osztályt, amely a figyelmeztetéseket a megvalósításával kezeli`IWarningCallback` felület.
 
 ### Használhatom a figyelmeztető visszahívás funkciót érvényes licenc nélkül?
  Használhatja az ingyenes próbaverzióval, de a teljes funkcionalitás érdekében ajánlatos érvényes licencet szerezni. Kaphatsz a[ideiglenes engedély itt](https://purchase.aspose.com/temporary-license/).

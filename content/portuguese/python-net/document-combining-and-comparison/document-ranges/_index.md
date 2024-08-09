@@ -146,7 +146,7 @@ pip install aspose-words
 
 ### Posso extrair conteúdo específico de um documento?
 
-Sim você pode. Defina um intervalo de conteúdo usando técnicas de navegação de documentos e, em seguida, extraia o conteúdo desejado usando o intervalo definido.
+Sim, você pode. Defina um intervalo de conteúdo usando técnicas de navegação de documentos e, em seguida, extraia o conteúdo desejado usando o intervalo definido.
 
 ### É possível mesclar vários documentos usando Aspose.Words for Python?
 

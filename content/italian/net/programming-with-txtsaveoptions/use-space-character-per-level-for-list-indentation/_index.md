@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-## introduzione
+## Introduzione
 
 Quando si tratta di formattare i documenti, soprattutto quando si lavora con gli elenchi, la precisione è fondamentale. Negli scenari in cui è necessario creare documenti con vari livelli di rientro, Aspose.Words per .NET offre potenti strumenti per gestire questa attività. Una caratteristica particolare che può tornare utile è la configurazione del rientro dell'elenco nei file di testo. Questa guida ti spiegherà come utilizzare i caratteri spazio per il rientro dell'elenco, garantendo che il tuo documento mantenga la struttura e la leggibilità desiderate.
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/layout-in-cell/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste někdy chtěli doladit rozložení buněk tabulky v dokumentech Wordu programově, jste na správném místě. Dnes se ponoříme do toho, jak nastavit rozložení v buňce pomocí Aspose.Words pro .NET. Projdeme si praktický příklad a rozebereme ho krok za krokem, abyste jej mohli snadno sledovat.
 
@@ -135,7 +135,7 @@ A tady to máte! Úspěšně jste vytvořili dokument aplikace Word s přizpůso
  Ano, můžete změnit písmo nastavením`watermark.TextPath.FontFamily` vlastnost na požadované písmo.
 
 ### Jak upravím polohu vodoznaku?
- Můžete upravit`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , a`VerticalAlignment` vlastnosti pro úpravu polohy vodoznaku.
+ Můžete upravit`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` a`VerticalAlignment` vlastnosti pro úpravu polohy vodoznaku.
 
 ### Je možné pro vodoznak použít místo textu obrázek?
  Absolutně! Můžete vytvořit a`Shape` s typem`ShapeType.Image` a nastavte jeho obrázek pomocí`ImageData.SetImage` metoda.

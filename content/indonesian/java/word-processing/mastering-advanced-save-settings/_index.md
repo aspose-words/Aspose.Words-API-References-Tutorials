@@ -27,7 +27,7 @@ Pelajari cara menentukan format dan orientasi dokumen Anda. Baik itu surat stand
 Document doc = new Document();
 doc.save("output.docx", SaveFormat.DOCX);
 
-// Atur orientasi halaman ke Lanskap
+// Atur orientasi halaman ke Lansekap
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
@@ -138,7 +138,7 @@ doc.save("automated_document.docx", SaveFormat.DOCX);
 
 ## Bekerja dengan Metadata Dokumen
 
-Metadata berisi informasi berharga tentang suatu dokumen. Kita akan mempelajari cara bekerja dengan dan memanipulasi metadata dokumen.
+Metadata berisi informasi berharga tentang suatu dokumen. Kami akan mempelajari cara bekerja dengan dan memanipulasi metadata dokumen.
 
 ```java
 // Akses dan ubah metadata dokumen

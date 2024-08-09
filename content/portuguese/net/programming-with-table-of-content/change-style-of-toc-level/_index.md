@@ -74,7 +74,7 @@ Aspose.Words for .NET é uma biblioteca de classes para criar, modificar e conve
 Sim, você pode modificar vários estilos no sumário acessando diferentes níveis e propriedades de estilo.
 
 ### O Aspose.Words para .NET é gratuito?
- Aspose.Words for .NET é uma biblioteca paga, mas você pode obter um[teste grátis](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for .NET é uma biblioteca paga, mas você pode obter um[teste gratuito](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
 ### Preciso instalar o Microsoft Word para usar o Aspose.Words for .NET?
 Não, o Aspose.Words for .NET não requer a instalação do Microsoft Word em sua máquina.

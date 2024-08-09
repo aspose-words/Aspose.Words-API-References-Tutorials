@@ -12,6 +12,6 @@ Xử lý văn bản với chú thích cuối trang và chú thích cuối trang 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Đặt cột ghi chú chân](./set-foot-note-columns/) | Tìm hiểu cách đặt số cột cho chú thích cuối trang trong tài liệu Word bằng Aspose.Words for .NET. |
-| [Đặt vị trí chú thích cuối trang và chú thích cuối trang](./set-footnote-and-end-note-position/) | Tìm hiểu cách đặt vị trí của chú thích cuối trang và chú thích cuối trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Đặt tùy chọn chú thích cuối](./set-endnote-options/) | Tìm hiểu cách đặt tùy chọn chú thích cuối trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Đặt cột ghi chú chân](./set-foot-note-columns/) | Tìm hiểu cách đặt cột chú thích cuối trang trong tài liệu Word bằng Aspose.Words cho .NET. Dễ dàng tùy chỉnh bố cục chú thích cuối trang của bạn bằng hướng dẫn từng bước của chúng tôi. |
+| [Đặt vị trí chú thích cuối trang và chú thích cuối trang](./set-footnote-and-end-note-position/) | Tìm hiểu cách đặt vị trí chú thích cuối trang và chú thích cuối trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. |
+| [Đặt tùy chọn chú thích cuối](./set-endnote-options/) | Tìm hiểu cách đặt tùy chọn chú thích cuối trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-author-field/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu se ponoříme do toho, jak vložit pole autora do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už automatizujete vytváření dokumentů pro vaši firmu, nebo si jednoduše chcete přizpůsobit své soubory, tento podrobný průvodce vás pokryje. Projdeme vším od nastavení vašeho prostředí až po uložení hotového dokumentu. Začněme!
 
@@ -130,7 +130,7 @@ Aspose.Words for .NET primárně podporuje jazyky .NET, včetně C# a VB.NET. Pr
 
 ### Je Aspose.Words for .NET zdarma k použití?
 
-Aspose.Words nabízí bezplatnou zkušební verzi, ale pro plné funkce a komerční využití si musíte zakoupit licenci. Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+Aspose.Words nabízí bezplatnou zkušební verzi, ale pro plné funkce a komerční využití si musíte zakoupit licenci. Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jak dynamicky aktualizuji jméno autora?
 
@@ -138,8 +138,8 @@ Aspose.Words nabízí bezplatnou zkušební verzi, ale pro plné funkce a komer�
 
 ### Mohu přidat další typy polí pomocí Aspose.Words?
 
- Ano, Aspose.Words podporuje různé typy polí, včetně data, času, čísla stránky a dalších. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) pro detaily.
+ Ano, Aspose.Words podporuje různé typy polí, včetně data, času, čísla stránky a dalších. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro podrobnosti.
 
 ### Kde najdu podporu, pokud narazím na problémy?
 
- Podporu najdete na fóru Aspose.Words[tady](https://forum.aspose.com/c/words/8).
+ Podporu najdete na fóru Aspose.Words[zde](https://forum.aspose.com/c/words/8).

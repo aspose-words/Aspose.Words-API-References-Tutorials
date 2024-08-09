@@ -15,7 +15,7 @@ A Word-dokumentumban egy adott táblázatcellára költözni ijesztő feladatnak
 
 Mielőtt elkezdenénk, van néhány előfeltétel, amelyeket meg kell tennie. Íme, amire szüksége van:
 
-1.  Aspose.Words for .NET Library: Töltse le és telepítse a[webhely](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Töltse le és telepítse a[telek](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más C# IDE.
 3. A C# alapvető ismerete: A C# programozás ismerete segít a követésben.
 
@@ -77,7 +77,7 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
 
 ## Következtetés
 
-Gratulálunk! Most tanulta meg, hogyan léphet át egy adott táblázatcellára egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony könyvtár leegyszerűsíti a dokumentumok kezelését, hatékonyabbá és élvezetesebbé teszi a kódolási feladatokat. Akár összetett jelentésekkel, akár egyszerű dokumentummódosításokkal dolgozik, az Aspose.Words biztosítja a szükséges eszközöket.
+Gratulálok! Most tanulta meg, hogyan léphet át egy adott táblázatcellára egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony könyvtár leegyszerűsíti a dokumentumok kezelését, hatékonyabbá és élvezetesebbé teszi a kódolási feladatokat. Akár összetett jelentésekkel, akár egyszerű dokumentummódosításokkal dolgozik, az Aspose.Words biztosítja a szükséges eszközöket.
 
 ## GYIK
 

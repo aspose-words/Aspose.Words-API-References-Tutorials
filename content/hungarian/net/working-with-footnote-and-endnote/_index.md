@@ -12,6 +12,6 @@ Szövegfeldolgozás lábjegyzetekkel és végjegyzetekkel egy átfogó forrás, 
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Állítsa be a lábjegyzet oszlopait](./set-foot-note-columns/) | Ismerje meg, hogyan állíthatja be a lábjegyzetek oszlopainak számát a Word dokumentumokban az Aspose.Words for .NET használatával. |
-| [Állítsa be a lábjegyzet és a végjegyzet pozícióját](./set-footnote-and-end-note-position/) | Ismerje meg, hogyan állíthatja be a lábjegyzetek és végjegyzetek pozícióját a Word dokumentumokban az Aspose.Words for .NET használatával. |
-| [Állítsa be a végjegyzet beállításait](./set-endnote-options/) | Ismerje meg, hogyan állíthat be végjegyzetbeállításokat Word dokumentumokban az Aspose.Words for .NET használatával. |
+| [Állítsa be a lábjegyzet oszlopait](./set-foot-note-columns/) | Ismerje meg, hogyan állíthat be lábjegyzetoszlopokat Word dokumentumokban az Aspose.Words for .NET használatával. Egyszerűen testreszabhatja lábjegyzetének elrendezését lépésről lépésre szóló útmutatónkkal. |
+| [Állítsa be a lábjegyzet és a végjegyzet pozícióját](./set-footnote-and-end-note-position/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan állíthat be lábjegyzetek és végjegyzetek pozícióit a Word dokumentumokban az Aspose.Words for .NET használatával. |
+| [Állítsa be a végjegyzet beállításait](./set-endnote-options/) | Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan állíthat be végjegyzetbeállításokat Word-dokumentumokban az Aspose.Words for .NET használatával. |

@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre comment échapper aux URI lors de l'enregistrement d'un document Word au format PDF à l'aide d'Aspose.Words pour .NET. Ce processus garantit que vos hyperliens restent fonctionnels et correctement formatés dans le PDF résultant. 
+Et voilà ! Vous venez d'apprendre comment échapper aux URI lors de l'enregistrement d'un document Word au format PDF à l'aide d'Aspose.Words pour .NET. Ce processus garantit que vos hyperliens restent fonctionnels et correctement formatés dans le PDF résultant. 
 
 N'oubliez pas que la maîtrise de ces techniques petites mais importantes peut grandement améliorer la qualité et la fonctionnalité de vos documents. Bon codage !
 

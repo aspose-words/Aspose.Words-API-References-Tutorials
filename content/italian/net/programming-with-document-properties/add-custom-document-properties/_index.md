@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/add-custom-document-properties/
 ---
-## introduzione
+## Introduzione
 
-Ehilà! Ti stai immergendo nel mondo di Aspose.Words per .NET e ti stai chiedendo come aggiungere proprietà di documento personalizzate ai tuoi file Word? Bene, sei arrivato nel posto giusto! Le proprietà personalizzate possono essere incredibilmente utili per archiviare metadati aggiuntivi non coperti dalle proprietà integrate. Che si tratti di autorizzare un documento, aggiungere un numero di revisione o anche inserire date specifiche, le proprietà personalizzate ti coprono. In questo tutorial, ti guideremo attraverso i passaggi per aggiungere facilmente queste proprietà utilizzando Aspose.Words per .NET. Pronto per iniziare? Immergiamoci!
+Ehilà! Ti stai immergendo nel mondo di Aspose.Words per .NET e ti stai chiedendo come aggiungere proprietà di documento personalizzate ai tuoi file Word? Bene, sei arrivato nel posto giusto! Le proprietà personalizzate possono essere incredibilmente utili per archiviare metadati aggiuntivi non coperti dalle proprietà integrate. Che si tratti di autorizzare un documento, aggiungere un numero di revisione o anche inserire date specifiche, le proprietà personalizzate ti coprono. In questo tutorial, ti guideremo attraverso i passaggi per aggiungere facilmente queste proprietà utilizzando Aspose.Words per .NET. Pronti per iniziare? Immergiamoci!
 
 ## Prerequisiti
 
@@ -113,7 +113,7 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 ## Conclusione
 
-il gioco è fatto! Hai aggiunto con successo proprietà del documento personalizzate a un documento di Word utilizzando Aspose.Words per .NET. Queste proprietà possono essere incredibilmente utili per archiviare metadati aggiuntivi specifici per le tue esigenze. Che tu stia monitorando i dettagli dell'autorizzazione, i numeri di revisione o importi specifici, le proprietà personalizzate forniscono una soluzione flessibile.
+Ed ecco qua! Hai aggiunto con successo proprietà del documento personalizzate a un documento di Word utilizzando Aspose.Words per .NET. Queste proprietà possono essere incredibilmente utili per archiviare metadati aggiuntivi specifici per le tue esigenze. Che tu stia monitorando i dettagli dell'autorizzazione, i numeri di revisione o importi specifici, le proprietà personalizzate forniscono una soluzione flessibile.
 
 Ricorda, la chiave per padroneggiare Aspose.Words per .NET è la pratica. Quindi, continua a sperimentare proprietà diverse e scopri come possono migliorare i tuoi documenti. Buona programmazione!
 

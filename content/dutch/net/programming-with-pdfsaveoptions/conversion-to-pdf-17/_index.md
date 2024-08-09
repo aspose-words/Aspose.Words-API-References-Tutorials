@@ -15,7 +15,7 @@ Het converteren van Word-documenten naar PDF is een veel voorkomende vereiste in
 
 Voordat we aan de slag gaan, zorgen we ervoor dat u over alles beschikt wat u nodig heeft:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat je de nieuwste versie hebt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Zorg ervoor dat je de nieuwste versie hebt. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere IDE die .NET-ontwikkeling ondersteunt.
 3. Basiskennis van C#: Als u de basisbeginselen begrijpt, kunt u de codefragmenten volgen.
 

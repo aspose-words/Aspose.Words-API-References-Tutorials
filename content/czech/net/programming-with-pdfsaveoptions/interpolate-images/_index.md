@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/interpolate-images/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o zpracování dokumentů, jednou z běžných potřeb je zajistit, aby obrázky na konečném výstupu vypadaly ostré a jasné. Ať už vytváříte zprávy, manuály nebo jakýkoli dokument, kde je vizuální kvalita zásadní, interpolace obrázků ve vašem PDF může mít velký význam. Dnes se ponoříme do toho, jak můžete použít Aspose.Words pro .NET k interpolaci obrázků při ukládání dokumentu aplikace Word jako PDF. Tato technika zajišťuje, že vaše obrázky vypadají ostře i při různých úrovních přiblížení nebo rozlišení.
 
@@ -20,7 +20,7 @@ Než se pustíme do podrobností, ujistěte se, že máte vše nastaveno:
 3. Základní znalost C#: Znalost programování C# a .NET vám pomůže hladce pokračovat.
 4. Ukázkový dokument: Připravte si dokument aplikace Word, který obsahuje obrázky k testování.
 
-Máš všechno? Skvělý! Pojďme se ponořit.
+Máš všechno? Velký! Pojďme se ponořit.
 
 ## Importovat jmenné prostory
 
@@ -52,7 +52,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Tady,`"Rendering.docx"` je název vašeho souboru aplikace Word. Ujistěte se, že tento soubor existuje v zadaném adresáři.
+ Zde,`"Rendering.docx"` je název vašeho souboru aplikace Word. Ujistěte se, že tento soubor existuje v zadaném adresáři.
 
 ## Krok 3: Nakonfigurujte možnosti uložení PDF
 
@@ -75,7 +75,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
 ```
 
- Tady,`"WorkingWithPdfSaveOptions.InterpolateImages.pdf"` je název, který chcete pro výstupní soubor PDF. Tento soubor bude obsahovat vaše obrázky se zlepšenou kvalitou díky interpolaci.
+ Zde,`"WorkingWithPdfSaveOptions.InterpolateImages.pdf"` je název, který chcete pro výstupní soubor PDF. Tento soubor bude obsahovat vaše obrázky se zlepšenou kvalitou díky interpolaci.
 
 ## Závěr
 
@@ -91,7 +91,7 @@ Interpolace obrazu je technika používaná ke zlepšení kvality obrazů odhade
 
 ### Potřebuji speciální licenci k použití interpolace obrázků s Aspose.Words?
 
- K používání všech jeho funkcí bez omezení potřebujete platnou licenci Aspose.Words. Šek[Aspose.Words Koupit](https://purchase.aspose.com/buy) pro licenční možnosti.
+ K používání všech jeho funkcí bez omezení potřebujete platnou licenci Aspose.Words. Kontrola[Aspose.Words Koupit](https://purchase.aspose.com/buy) pro licenční možnosti.
 
 ### Mohu použít obrazovou interpolaci pro jiné formáty souborů?
 
@@ -99,7 +99,7 @@ Aspose.Words primárně podporuje interpolaci obrázků pro soubory PDF. Další
 
 ### Jak mohu otestovat interpolaci obrazu před zakoupením licence?
 
- Můžeš[stáhnout zkušební verzi zdarma](https://releases.aspose.com/) of Aspose.Words k testování interpolace obrazu a dalších funkcí.
+ Můžete[stáhnout zkušební verzi zdarma](https://releases.aspose.com/) of Aspose.Words k testování interpolace obrazu a dalších funkcí.
 
 ### Kde mohu získat pomoc, pokud narazím na problémy?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/dml-3deffects-rendering/
 ---
-## Úvod
+## Zavedení
 
 Chtěli jste někdy ze souborů aplikace Word vytvářet úžasné dokumenty PDF s 3D efekty? Tak to máš štěstí! Dnes se ponoříme do toho, jak vykreslit efekty 3D DrawingML (DML) v dokumentech PDF pomocí Aspose.Words for .NET. Aspose.Words je výkonná knihovna, která vám umožňuje programově manipulovat s dokumenty Wordu a díky svým robustním funkcím můžete snadno exportovat své dokumenty s pokročilými 3D efekty do formátu PDF. Tento podrobný průvodce vás provede vším, co potřebujete vědět, od nastavení prostředí až po spuštění kódu. Takže začněme a vybavte své dokumenty 3D efekty!
 
@@ -15,11 +15,11 @@ Chtěli jste někdy ze souborů aplikace Word vytvářet úžasné dokumenty PDF
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete. Zde je seznam nezbytných předpokladů, abyste mohli začít:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Měli byste mít na svém počítači nainstalované rozhraní .NET Framework.
 3. Vývojové prostředí: Vývojové prostředí, jako je Visual Studio.
 4. Dokument aplikace Word: Dokument aplikace Word s 3D efekty, který chcete převést do formátu PDF.
-5.  Dočasná licence: Pro plné funkce možná budete potřebovat dočasnou licenci od Aspose, kterou můžete získat[tady](https://purchase.aspose.com/temporary-license/).
+5.  Dočasná licence: Pro plné funkce možná budete potřebovat dočasnou licenci od Aspose, kterou můžete získat[zde](https://purchase.aspose.com/temporary-license/).
 
 S těmito předpoklady jste připraveni vykreslit 3D efekty ve vašich dokumentech PDF.
 
@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste vykreslili 3D DML efekty v dokumentu PDF pomocí Aspose.Words for .NET. Pomocí těchto jednoduchých kroků můžete převést své dokumenty aplikace Word s pokročilými 3D efekty na úžasné soubory PDF, díky nimž budou vaše dokumenty poutavější a vizuálně přitažlivější. Tato výkonná funkce Aspose.Words může výrazně zlepšit kvalitu prezentace vašich dokumentů.
+Gratuluji! Úspěšně jste vykreslili 3D DML efekty v dokumentu PDF pomocí Aspose.Words for .NET. Pomocí těchto jednoduchých kroků můžete převést své dokumenty aplikace Word s pokročilými 3D efekty na úžasné soubory PDF, díky nimž budou vaše dokumenty poutavější a vizuálně přitažlivější. Tato výkonná funkce Aspose.Words může výrazně zlepšit kvalitu prezentace vašich dokumentů.
 
 ## FAQ
 
@@ -92,4 +92,4 @@ Absolutně! Aspose.Words poskytuje širokou škálu možností přizpůsobení v
 
 ### Kde najdu podrobnější dokumentaci?
 
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).

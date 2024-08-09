@@ -85,7 +85,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 ## 第5步：行動書籤末端
 
-最後，如果滿足條件，我們將書籤結束節點移到頂行最後一個單元格中最後一段的末尾。此步驟有效地解開了書籤。
+最後，如果滿足條件，我們將書籤結束節點移到頂行最後一個單元格中最後一段的末尾。此步驟有效解開書籤。
 
 步驟 5 標題：行動書籤末端
 
@@ -111,7 +111,7 @@ row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 
 ### 是否有 Aspose.Words for .NET 的試用版？
 
-是的你可以[下載免費試用版](https://releases.aspose.com/)從 Aspose 網站探索該程式庫的功能。
+是的，你可以[下載免費試用版](https://releases.aspose.com/)從 Aspose 網站探索該程式庫的功能。
 
 ### 如果遇到問題，我該如何獲得支援？
 

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-shapes/add-group-shape/
 ---
 ## Introduktion
 
-Att skapa komplexa dokument med rika visuella element kan ibland vara en svår uppgift, särskilt när man hanterar gruppformer. Men frukta inte! Aspose.Words för .NET förenklar denna process, vilket gör det lätt som en plätt. I den här handledningen går vi igenom stegen för att lägga till gruppformer i dina Word-dokument. Redo att dyka i? Låt oss börja!
+Att skapa komplexa dokument med rika visuella element kan ibland vara en svår uppgift, särskilt när man hanterar gruppformer. Men frukta inte! Aspose.Words för .NET förenklar denna process, vilket gör det lätt som en plätt. I den här handledningen går vi igenom stegen för att lägga till gruppformer i dina Word-dokument. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -128,10 +128,10 @@ Att lägga till gruppformer i dina Word-dokument behöver inte vara en komplicer
  Absolut! Varje form kan stylas individuellt med hjälp av egenskaperna som finns tillgängliga i`Shape` klass.
 
 ### Hur placerar jag GroupShape i dokumentet?
- Du kan placera`GroupShape` genom att ställa in dess`Left`och`Top` egenskaper.
+ Du kan placera`GroupShape` genom att ställa in dess`Left`och`Top` fastigheter.
 
 ### Kan jag lägga till text till formerna i GroupShape?
- Ja, du kan lägga till text till former med hjälp av`AppendChild` metod för att lägga till en`Paragraph` som innehåller`Run` noder med text.
+ Ja, du kan lägga till text till former med hjälp av`AppendChild` metod för att lägga till en`Paragraph` innehållande`Run` noder med text.
 
 ### Är det möjligt att gruppera former dynamiskt baserat på användarinmatning?
 Ja, du kan dynamiskt skapa och gruppera former baserat på användarinmatning genom att justera egenskaperna och metoderna därefter.

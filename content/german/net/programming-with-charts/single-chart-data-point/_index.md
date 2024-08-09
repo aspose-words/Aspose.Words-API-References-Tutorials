@@ -15,7 +15,7 @@ Haben Sie sich schon einmal gefragt, wie Sie Ihre Diagramme mit einzigartigen Da
 
 Bevor wir beginnen, stellen wir sicher, dass Sie alle wichtigen Voraussetzungen erfüllt haben:
 
--  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben.[Hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben.[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem Computer installiert ist.
 - Grundlegende Kenntnisse in C#: Grundkenntnisse in der C#-Programmierung sind hilfreich.
 - Integrierte Entwicklungsumgebung (IDE): Visual Studio wird empfohlen.

@@ -20,7 +20,7 @@ url: /ar/net/working-with-fields/insert-field/
 3. IDE: بيئة تطوير متكاملة مثل Visual Studio.
 4.  الترخيص المؤقت: يمكنك الحصول على واحد[هنا](https://purchase.aspose.com/temporary-license/).
 
-تأكد من تثبيت Aspose.Words لـ .NET وإعداد بيئة التطوير الخاصة بك. مستعد؟ هيا بنا نبدأ!
+تأكد من تثبيت Aspose.Words لـ .NET وإعداد بيئة التطوير الخاصة بك. مستعد؟ دعونا نبدأ!
 
 ## استيراد مساحات الأسماء
 
@@ -74,7 +74,7 @@ builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 
 ### احفظ المستند
 
-بعد إدراج الحقل، نحتاج إلى حفظ وثيقتنا. إليك الطريقة:
+بعد إدراج الحقل، نحتاج إلى حفظ وثيقتنا. وإليك الطريقة:
 
 ```csharp
 doc.Save(dataDir + "InsertionField.docx");

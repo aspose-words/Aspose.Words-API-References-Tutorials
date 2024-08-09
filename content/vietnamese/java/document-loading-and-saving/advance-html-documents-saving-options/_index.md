@@ -14,7 +14,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá các tùy chọn lưu tài 
 Aspose.Words for Java cho phép bạn làm việc với các tài liệu Word theo chương trình. Trong hướng dẫn này, chúng tôi sẽ tập trung vào các tùy chọn lưu tài liệu HTML nâng cao, cho phép bạn kiểm soát cách chuyển đổi tài liệu Word sang HTML.
 
 ## 2. Xuất thông tin khứ hồi
- Các`exportRoundtripInformation` phương pháp cho phép bạn xuất tài liệu Word sang HTML trong khi vẫn giữ được thông tin khứ hồi. Thông tin này có thể hữu ích khi bạn muốn chuyển đổi HTML trở lại định dạng Word mà không làm mất bất kỳ chi tiết cụ thể nào về tài liệu.
+ các`exportRoundtripInformation` phương pháp cho phép bạn xuất tài liệu Word sang HTML trong khi vẫn giữ được thông tin khứ hồi. Thông tin này có thể hữu ích khi bạn muốn chuyển đổi HTML trở lại định dạng Word mà không làm mất bất kỳ chi tiết cụ thể nào về tài liệu.
 
 ```java
 public void exportRoundtripInformation() throws Exception {
@@ -39,7 +39,7 @@ public void exportFontsAsBase64() throws Exception {
 ```
 
 ## 4. Xuất khẩu tài nguyên
- Các`exportResources` phương thức cho phép bạn chỉ định loại biểu định kiểu CSS và xuất tài nguyên phông chữ. Bạn cũng có thể đặt thư mục tài nguyên và bí danh cho tài nguyên trong HTML.
+ các`exportResources` phương thức cho phép bạn chỉ định loại biểu định kiểu CSS và xuất tài nguyên phông chữ. Bạn cũng có thể đặt thư mục tài nguyên và bí danh cho tài nguyên trong HTML.
 
 ```java
 @Test
@@ -55,7 +55,7 @@ public void exportResources() throws Exception {
 ```
 
 ## 5. Chuyển đổi siêu tệp sang EMF hoặc WMF
- Các`convertMetafilesToEmfOrWmf`phương pháp này cho phép bạn chuyển đổi siêu tệp trong tài liệu sang định dạng EMF hoặc WMF, đảm bảo khả năng tương thích và hiển thị mượt mà trong HTML.
+ các`convertMetafilesToEmfOrWmf`phương pháp này cho phép bạn chuyển đổi siêu tệp trong tài liệu sang định dạng EMF hoặc WMF, đảm bảo khả năng tương thích và hiển thị mượt mà trong HTML.
 
 ```java
 @Test
@@ -75,7 +75,7 @@ public void convertMetafilesToSvg() throws Exception {
 ```
 
 ## 7. Thêm tiền tố tên lớp CSS
- Với`addCssClassNamePrefix` phương thức này, bạn có thể thêm tiền tố vào tên lớp CSS trong HTML được xuất. Điều này giúp ngăn ngừa xung đột với các phong cách hiện có.
+ Với`addCssClassNamePrefix` phương thức này, bạn có thể thêm tiền tố vào tên lớp CSS trong HTML đã xuất. Điều này giúp ngăn ngừa xung đột với các phong cách hiện có.
 
 ```java
 @Test
@@ -89,7 +89,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```
 
 ## 8. Xuất URL CID cho tài nguyên MHTML
- Các`exportCidUrlsForMhtmlResources` phương pháp được sử dụng khi lưu tài liệu ở định dạng MHTML. Nó cho phép xuất URL Content-ID cho tài nguyên.
+ các`exportCidUrlsForMhtmlResources` phương pháp được sử dụng khi lưu tài liệu ở định dạng MHTML. Nó cho phép xuất URL Content-ID cho tài nguyên.
 
 ```java
 @Test
@@ -99,7 +99,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```
 
 ## 9. Giải quyết tên phông chữ
- Các`resolveFontNames` phương pháp giúp giải quyết tên phông chữ khi lưu tài liệu ở định dạng HTML, đảm bảo hiển thị nhất quán trên các nền tảng khác nhau.
+ các`resolveFontNames` phương pháp giúp giải quyết tên phông chữ khi lưu tài liệu ở định dạng HTML, đảm bảo hiển thị nhất quán trên các nền tảng khác nhau.
 
 ```java
 @Test
@@ -109,7 +109,7 @@ public void resolveFontNames() throws Exception {
 ```
 
 ## 10. Xuất trường biểu mẫu nhập văn bản dưới dạng văn bản
- Các`exportTextInputFormFieldAsText` phương thức xuất các trường biểu mẫu dưới dạng văn bản thuần túy trong HTML, làm cho chúng dễ đọc và chỉnh sửa.
+ các`exportTextInputFormFieldAsText` phương thức xuất các trường biểu mẫu dưới dạng văn bản thuần túy trong HTML, làm cho chúng dễ đọc và chỉnh sửa.
 
 ```java
 @Test

@@ -85,4 +85,4 @@ Oui, Aspose.Words for .NET vous permet de personnaliser les polices intégrées,
 Oui, Aspose.Words for .NET fournit les fonctionnalités nécessaires pour configurer les options d'intégration de polices dans les PDF.
 
 ### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?
- Vous pouvez visiter le[Forum d'entraide](https://forum.aspose.com/c/words/8) pour obtenir de l'aide concernant tout problème que vous rencontrez.
+ Vous pouvez visiter le[Forum d'assistance](https://forum.aspose.com/c/words/8) pour obtenir de l'aide concernant tout problème que vous rencontrez.

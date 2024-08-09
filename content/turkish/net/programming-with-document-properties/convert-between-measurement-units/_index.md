@@ -54,7 +54,7 @@ Bu, kenar boşlukları, üst bilgi mesafesi ve alt bilgi mesafesi gibi çeşitli
 
 ## Adım 3: İnçleri Noktalara Dönüştürün
 
- Aspose.Words varsayılan olarak ölçü birimi olarak noktaları kullanır. Kenar boşluklarını inç cinsinden ayarlamak için inçleri noktalara dönüştürmeniz gerekir.`ConvertUtil.InchToPoint` yöntem.
+ Aspose.Words varsayılan olarak ölçü birimi olarak noktaları kullanır. Kenar boşluklarını inç cinsinden ayarlamak için inçleri noktalara dönüştürmeniz gerekir.`ConvertUtil.InchToPoint` Yöntem.
 
 ```csharp
 pageSetup.TopMargin = ConvertUtil.InchToPoint(1.0);
@@ -82,7 +82,7 @@ Bu, belgenizi belirtilen kenar boşlukları ve mesafelerle nokta cinsinden kayde
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki kenar boşluklarını ve mesafeleri başarıyla dönüştürüp ayarladınız. Bu adımları izleyerek çeşitli birim dönüşümlerini kolayca gerçekleştirebilir ve belge özelleştirme sürecinizi çok kolaylaştırabilirsiniz. Farklı ayarları denemeye devam edin ve Aspose.Words'ün sunduğu geniş işlevleri keşfedin. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki kenar boşluklarını ve mesafeleri başarıyla dönüştürüp ayarladınız. Bu adımları izleyerek çeşitli birim dönüşümlerini kolayca gerçekleştirebilir ve belge özelleştirme sürecinizi çok kolaylaştırabilirsiniz. Farklı ayarları denemeye devam edin ve Aspose.Words'ün sunduğu geniş işlevleri keşfedin. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -93,7 +93,7 @@ Bu, belgenizi belirtilen kenar boşlukları ve mesafelerle nokta cinsinden kayde
 Aspose.Words'ü lisans olmadan kullanabilirsiniz ancak bazı gelişmiş özellikler kısıtlı olabilir. Lisans almak tam işlevsellik sağlar.
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
- adresinden indirebilirsiniz.[İnternet sitesi](https://releases.aspose.com/words/net/) ve kurulum talimatlarını takip edin.
+ adresinden indirebilirsiniz.[web sitesi](https://releases.aspose.com/words/net/) ve kurulum talimatlarını takip edin.
 
 ### Bir belgenin farklı bölümleri için farklı birimler ayarlayabilir miyim?
  Evet, farklı bölümler için kenar boşluklarını ve diğer ayarları özelleştirebilirsiniz.`Section` sınıf.

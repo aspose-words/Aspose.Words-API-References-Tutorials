@@ -17,8 +17,8 @@ Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek
 
 1. Visual Studio vagy bármely .NET IDE: A .NET-kód írásához és futtatásához fejlesztői környezetre van szüksége.
 2.  Aspose.Words for .NET: Az Aspose.Words for .NET könyvtárnak telepítve kell lennie. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
-3. Alapvető C# ismeretek: Ez az oktatóanyag feltételezi, hogy rendelkezik a C# programozás alapvető ismereteivel.
-4.  Érvényes Aspose licenc: Ideiglenes licencet szerezhet be[itt](https://purchase.aspose.com/temporary-license/).
+3. Alapvető C# ismeretek: Ez az oktatóanyag feltételezi, hogy rendelkezik alapvető ismeretekkel a C# programozásról.
+4.  Érvényes Aspose-licenc: Ideiglenes licencet szerezhet be[itt](https://purchase.aspose.com/temporary-license/).
 
 ## Névterek importálása
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
 
- Ezután hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` tárgy. Ezek az objektumok segítenek a dokumentum elkészítésében és kezelésében.
+ Ezután hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` objektum. Ezek az objektumok segítenek a dokumentum elkészítésében és kezelésében.
 
 ```csharp
 Document doc = new Document();
@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. lépés: Szúrjon be egy diagramot a dokumentumba
 
- Most szúrjon be egy diagramot a dokumentumba a`DocumentBuilder` tárgy. Ebben a példában oszlopdiagramot használunk, de választhat más típusokat is.
+ Most szúrjon be egy diagramot a dokumentumba a`DocumentBuilder` objektum. Ebben a példában oszlopdiagramot használunk, de választhat más típusokat is.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);

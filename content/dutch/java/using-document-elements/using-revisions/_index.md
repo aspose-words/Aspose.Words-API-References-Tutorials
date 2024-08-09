@@ -112,7 +112,7 @@ doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //was Is.Leeg
 // Als u het bijhouden van revisies stopt, verschijnt deze tekst als normale tekst.
-// Revisies worden niet meegeteld als het document wordt gewijzigd.
+// Revisies worden niet meegeteld wanneer het document wordt gewijzigd.
 doc.stopTrackRevisions();
 // Bewaar het document.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -135,7 +135,7 @@ Ja, u kunt Aspose.Words voor Java gebruiken om revisies in bestaande Word-docume
 
 ### 4. Zijn er licentievereisten voor het gebruik van Aspose.Words voor Java?
 
- Ja, u heeft een licentie nodig om Aspose.Words voor Java in uw projecten te gebruiken. Jij kan[krijg hier toegang tot een licentie](https://purchase.aspose.com/buy).
+ Ja, u heeft een licentie nodig om Aspose.Words voor Java in uw projecten te gebruiken. Dat kan[krijg hier toegang tot een licentie](https://purchase.aspose.com/buy).
 
 ### 5. Waar kan ik ondersteuning vinden voor Aspose.Words voor Java?
 

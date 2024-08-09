@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/rich-text-box-content-control/
 ---
-## Úvod
+## Zavedení
 
 Ve světě zpracování dokumentů může možnost přidávat interaktivní prvky do dokumentů aplikace Word výrazně zlepšit jejich funkčnost. Jedním z takových interaktivních prvků je ovládací prvek obsahu pole Rich Text Box. Pomocí Aspose.Words for .NET můžete do dokumentů snadno vkládat a upravovat formátované textové pole. Tato příručka vás provede procesem krok za krokem a zajistí, že pochopíte, jak tuto funkci efektivně implementovat.
 
@@ -15,7 +15,7 @@ Ve světě zpracování dokumentů může možnost přidávat interaktivní prvk
 
 Než se pustíte do výukového programu, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: Vývojové prostředí jako Visual Studio vám pomůže napsat a spustit kód.
 
@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Vytvořte nový dokument
 
- Vytvoř nový`Document` objekt, který bude sloužit jako základ pro váš dokument Word.
+ Vytvořte nový`Document` objekt, který bude sloužit jako základ pro váš dokument Word.
 
 ```csharp
 Document doc = new Document();
@@ -64,11 +64,11 @@ Tím se inicializuje prázdný dokument aplikace Word, do kterého přidáte sv�
 StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichText, MarkupLevel.Block);
 ```
 
- Tady,`SdtType.RichText` určuje, že SDT bude formátované textové pole a`MarkupLevel.Block` definuje jeho chování v dokumentu.
+ Zde,`SdtType.RichText` určuje, že SDT bude formátované textové pole a`MarkupLevel.Block` definuje jeho chování v dokumentu.
 
 ## Krok 4: Přidejte obsah do pole RTF
 
- Vytvořit`Paragraph` a a`Run` objekt pro uložení obsahu, který chcete zobrazit v poli RTF. Upravte text a formátování podle potřeby.
+ Vytvořte a`Paragraph` a a`Run` objekt pro uložení obsahu, který chcete zobrazit v poli RTF. Upravte text a formátování podle potřeby.
 
 ```csharp
 Paragraph para = new Paragraph(doc);
@@ -83,7 +83,7 @@ tomto příkladu přidáváme odstavec obsahující text „Hello World“ se ze
 
 ## Krok 5: Připojte k dokumentu pole RTF
 
- Přidat`StructuredDocumentTag` do těla dokumentu.
+ Přidejte`StructuredDocumentTag` do těla dokumentu.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);

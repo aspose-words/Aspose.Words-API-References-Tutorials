@@ -9,7 +9,7 @@ url: /sv/net/working-with-fields/insert-author-field/
 ---
 ## Introduktion
 
-I den här handledningen dyker vi in i det stökiga hur man infogar ett författarefält i ett Word-dokument med Aspose.Words för .NET. Oavsett om du automatiserar dokumentskapandet för ditt företag eller helt enkelt vill anpassa dina filer, har den här steg-för-steg-guiden dig täckt. Vi går igenom allt från att ställa in din miljö till att spara ditt färdiga dokument. Låt oss börja!
+I den här handledningen dyker vi in i det stökiga hur man infogar ett författarefält i ett Word-dokument med Aspose.Words för .NET. Oavsett om du automatiserar dokumentskapandet för ditt företag eller helt enkelt vill anpassa dina filer, har den här steg-för-steg-guiden dig täckt. Vi går igenom allt från att ställa in din miljö till att spara ditt färdiga dokument. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -138,7 +138,7 @@ Aspose.Words erbjuder en gratis provperiod, men för alla funktioner och kommers
 
 ### Kan jag lägga till andra typer av fält med Aspose.Words?
 
- Ja, Aspose.Words stöder olika fälttyper, inklusive datum, tid, sidnummer och mer. Kolla[dokumentation](https://reference.aspose.com/words/net/) för detaljer.
+ Ja, Aspose.Words stöder olika fälttyper, inklusive datum, tid, sidnummer och mer. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för detaljer.
 
 ### Var kan jag hitta support om jag stöter på problem?
 

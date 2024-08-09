@@ -14,7 +14,7 @@ url: /pl/java/word-processing/manipulating-document-content/
 
 ## Pierwsze kroki z Aspose.Words dla Java
 
-Zanim zagłębimy się w szczegóły manipulowania zawartością dokumentu, upewnijmy się, że dysponujesz niezbędnymi narzędziami i wiedzą, aby rozpocząć. Wykonaj następujące kroki:
+Zanim zagłębimy się w szczegóły manipulowania treścią dokumentu, upewnijmy się, że dysponujesz niezbędnymi narzędziami i wiedzą, aby rozpocząć. Wykonaj następujące kroki:
 
 1. Instalacja i konfiguracja
    
@@ -172,4 +172,4 @@ Ten kod wiąże dane XML z określonymi częściami dokumentu, czyniąc go dynam
 
 ## Wniosek
 
-W tym obszernym przewodniku zgłębiliśmy świat manipulowania zawartością dokumentów za pomocą czyszczenia, pól i danych XML przy użyciu Aspose.Words dla Java. Nauczyłeś się, jak porządkować dokumenty, pracować z polami i płynnie włączać dane XML. Umiejętności te są nieocenione dla każdego, kto zajmuje się zarządzaniem dokumentami w aplikacjach Java.
+W tym obszernym przewodniku zgłębiliśmy świat manipulowania zawartością dokumentów za pomocą czyszczenia, pól i danych XML przy użyciu Aspose.Words dla Java. Nauczyłeś się, jak porządkować dokumenty, pracować z polami i bezproblemowo włączać dane XML. Umiejętności te są nieocenione dla każdego, kto zajmuje się zarządzaniem dokumentami w aplikacjach Java.

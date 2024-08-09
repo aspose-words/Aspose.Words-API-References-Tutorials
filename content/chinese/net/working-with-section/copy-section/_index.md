@@ -109,7 +109,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ### 在哪里可以找到有关 Aspose.Words 的更多资源？
 
-欲了解更多信息，请访问[Aspose.Words API 文档](https://reference.aspose.com/words/net/)或者[支持论坛](https://forum.aspose.com/c/words/8)寻求帮助和讨论。
+欲了解更多信息，请访问[Aspose.Words API 文档](https://reference.aspose.com/words/net/)或[支持论坛](https://forum.aspose.com/c/words/8)寻求帮助和讨论。
 
 ### 我可以免费试用 Aspose.Words for .NET 吗？
 

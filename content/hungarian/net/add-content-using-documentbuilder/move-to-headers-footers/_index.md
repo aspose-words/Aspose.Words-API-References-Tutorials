@@ -1,6 +1,6 @@
 ---
-title: Mozgás a fejlécek láblécéhez a Word dokumentumban
-linktitle: Mozgás a fejlécek láblécéhez a Word dokumentumban
+title: Ugrás a fejlécek láblécére a Word dokumentumban
+linktitle: Ugrás a fejlécek láblécére a Word dokumentumban
 second_title: Aspose.Words Document Processing API
 description: Lépésről lépésre szóló útmutatónkból megtudhatja, hogyan léphet át fejlécekre és láblécekre egy Word-dokumentumban az Aspose.Words for .NET használatával. Javítsa dokumentumkészítési készségeit.
 type: docs
@@ -116,4 +116,4 @@ Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi a fejleszt
 Az Aspose.Words által biztosított táblázatok, képek és különféle formázási lehetőségek segítségével összetett elrendezéseket hozhat létre.
 
 ### Hol találok további példákat és oktatóanyagokat?
- Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) és a[támogatói fórum](https://forum.aspose.com/c/words/8) további példákért és közösségi támogatásért.
+ Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) és a[támogatási fórum](https://forum.aspose.com/c/words/8) további példákért és közösségi támogatásért.

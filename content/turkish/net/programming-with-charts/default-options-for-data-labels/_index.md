@@ -118,11 +118,11 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 
 ### Açıklama
 
- Bu son adımda belgemizi kullanarak kaydediyoruz.`Save` yöntem. Belge, belirtilen dizine kaydedilecektir.`dataDir`, "WorkingWithCharts.DefaultOptionsForDataLabels.docx" adıyla.
+ Bu son adımda belgemizi kullanarak kaydediyoruz.`Save` Yöntem. Belge, belirtilen dizine kaydedilecektir.`dataDir`, "WorkingWithCharts.DefaultOptionsForDataLabels.docx" adıyla.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak özelleştirilmiş pasta grafiğine sahip bir Word belgesini başarıyla oluşturdunuz. Bu güçlü kitaplık, belge oluşturmayı ve düzenlemeyi otomatikleştirmeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar. İster rapor, ister fatura, ister başka türde bir belge oluşturuyor olun, Aspose.Words yanınızdadır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak özelleştirilmiş pasta grafiğine sahip bir Word belgesini başarıyla oluşturdunuz. Bu güçlü kitaplık, belge oluşturmayı ve düzenlemeyi otomatikleştirmeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar. İster rapor, ister fatura, ister başka türde bir belge oluşturuyor olun, Aspose.Words yanınızdadır.
 
  Keşfetmekten çekinmeyin[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) daha fazla özellik ve örnek için. Mutlu kodlama!
 

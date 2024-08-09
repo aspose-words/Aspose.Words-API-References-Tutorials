@@ -115,13 +115,13 @@ E aí está! Você marcou com êxito colunas de tabela em um documento do Word u
 Aspose.Words for .NET é uma biblioteca poderosa para trabalhar programaticamente com documentos do Word. Ele permite criar, modificar e converter documentos sem precisar do Microsoft Word instalado.
 
 ### Como instalo o Aspose.Words para .NET?
- Você pode baixar Aspose.Words para .NET em[local na rede Internet](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
+ Você pode baixar Aspose.Words para .NET em[site](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
 
 ### Posso usar Aspose.Words for .NET com outras linguagens de programação?
 Sim, Aspose.Words for .NET pode ser usado com qualquer linguagem compatível com .NET, incluindo C#, VB.NET e F#.
 
 ### Como posso obter suporte para Aspose.Words for .NET?
- Você pode obter suporte da comunidade Aspose e de especialistas visitando o[Fórum de suporte](https://forum.aspose.com/c/words/8).
+ Você pode obter suporte da comunidade Aspose e de especialistas visitando o[fórum de suporte](https://forum.aspose.com/c/words/8).
 
 ### Existe uma versão de teste do Aspose.Words for .NET disponível?
  Sim, você pode obter um teste gratuito em[aqui](https://releases.aspose.com/).

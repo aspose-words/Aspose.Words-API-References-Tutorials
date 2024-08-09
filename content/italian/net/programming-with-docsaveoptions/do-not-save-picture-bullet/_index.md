@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
-## introduzione
+## Introduzione
 
 Ehi, colleghi sviluppatori! Hai mai lavorato con documenti di Word e ti sei trovato intrappolato nelle complessità del salvataggio di elenchi puntati di immagini? È uno di quei piccoli dettagli che possono fare una grande differenza nell'aspetto finale del tuo documento. Bene, oggi sono qui per guidarti attraverso il processo di gestione dei punti elenco di immagini in Aspose.Words per .NET, concentrandomi in particolare sulla funzione "Non salvare Picture Bullet". Pronti a tuffarvi? Andiamo!
 
@@ -55,14 +55,14 @@ Document doc = new Document(dataDir + "Image bullet points.docx");
 
 ## Passaggio 3: configura le opzioni di salvataggio
 
-Ora configuriamo le opzioni di salvataggio per specificare che i punti elenco delle immagini non devono essere salvati. Qui è dove avviene la magia!
+Ora configuriamo le opzioni di salvataggio per specificare che i punti elenco delle immagini non devono essere salvati. È qui che avviene la magia!
 
 ```csharp
 // Configura le opzioni di salvataggio con la funzione "Non salvare Picture Bullet".
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- IMPOSTANDO`SavePictureBullet` A`false`, imposti ad Aspose.Words di non salvare i punti elenco delle immagini nel documento di output.
+ Impostando`SavePictureBullet` A`false`, imposti ad Aspose.Words di non salvare i punti elenco delle immagini nel documento di output.
 
 ## Passaggio 4: salva il documento
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 ## Conclusione
 
-E il gioco è fatto! Con solo poche righe di codice, hai configurato con successo Aspose.Words per .NET per omettere i punti elenco delle immagini durante il salvataggio di un documento. Questo può essere incredibilmente utile quando hai bisogno di un aspetto pulito e coerente senza la distrazione dei punti elenco.
+Ed ecco qua! Con solo poche righe di codice, hai configurato con successo Aspose.Words per .NET per omettere i punti elenco delle immagini durante il salvataggio di un documento. Questo può essere incredibilmente utile quando hai bisogno di un aspetto pulito e coerente senza la distrazione dei punti elenco.
 
 ## Domande frequenti
 

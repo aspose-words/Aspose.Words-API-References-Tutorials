@@ -19,7 +19,7 @@ Kodlama kısmına geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzd
 2. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
 3. Temel C# Bilgisi: C#'ı anlamak faydalı olacaktır.
 
- Henüz Aspose.Words for .NET'e sahip değilseniz,[ücretsiz deneme](https://releases.aspose.com/) veya satın al[Burada](https://purchase.aspose.com/buy) . Her türlü sorunuz için,[destek Forumu](https://forum.aspose.com/c/words/8) başlamak için harika bir yerdir.
+ Henüz Aspose.Words for .NET'e sahip değilseniz,[ücretsiz deneme](https://releases.aspose.com/) veya satın al[Burada](https://purchase.aspose.com/buy) . Her türlü sorunuz için,[destek forumu](https://forum.aspose.com/c/words/8) başlamak için harika bir yerdir.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Adım 2: Tabloları Tanımlayın
 
- Daha sonra birleştirmek istediğiniz tabloları tanımlamanız gerekir. Aspose.Words, bir belgeden tablolar almanızı sağlar.`GetChild` yöntem. İşte nasıl:
+ Daha sonra birleştirmek istediğiniz tabloları tanımlamanız gerekir. Aspose.Words, bir belgeden tablolar almanızı sağlar.`GetChild` Yöntem. İşte nasıl:
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -84,7 +84,7 @@ Son olarak değiştirilen belgeyi kaydedin. Bu adım, değişikliklerinizin dosy
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-Ve bu kadar! Aspose.Words for .NET'i kullanarak iki tablodaki satırları başarılı bir şekilde tek tablo halinde birleştirdiniz.
+İşte bu kadar! Aspose.Words for .NET'i kullanarak iki tablodaki satırları başarılı bir şekilde tek tablo halinde birleştirdiniz.
 
 ## Çözüm
 
@@ -110,6 +110,6 @@ Evet, her ek tablo için adımları tekrarlayarak birden fazla tabloyu birleşti
 
 Kesinlikle! Birden fazla belge için bu işlemi otomatikleştirmek amacıyla bir komut dosyası oluşturabilirsiniz.
 
-### Sorunla karşılaşırsam nereden yardım alabilirim?
+### Sorunlarla karşılaşırsam nereden yardım alabilirim?
 
 [Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım almak ve sık karşılaşılan sorunlara çözüm bulmak için harika bir yerdir.

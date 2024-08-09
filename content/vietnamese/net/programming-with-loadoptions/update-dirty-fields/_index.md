@@ -16,7 +16,7 @@ Bạn đã bao giờ rơi vào tình huống mà bạn có một tài liệu Wor
 
 Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. Nếu không, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. .NET Framework: Bất kỳ phiên bản nào tương thích với Aspose.Words.
 3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ có lợi.
 4. Tài liệu Word mẫu: Tài liệu có các trường không cần thiết cần cập nhật.
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa tự động hóa quá trình cập nhật các trường bẩn trong tài liệu Word bằng Aspose.Words cho .NET. Không còn cập nhật thủ công, không còn đau đầu nữa. Với các bước đơn giản này, bạn có thể tiết kiệm thời gian và đảm bảo tính chính xác trong tài liệu của mình. Bạn đã sẵn sàng để thử chưa?
+Và bạn có nó! Bạn vừa tự động hóa quá trình cập nhật các trường bẩn trong tài liệu Word bằng Aspose.Words cho .NET. Không còn cập nhật thủ công, không còn đau đầu nữa. Với các bước đơn giản này, bạn có thể tiết kiệm thời gian và đảm bảo tính chính xác trong tài liệu của mình. Bạn đã sẵn sàng để thử chưa?
 
 ## Câu hỏi thường gặp
 
@@ -83,7 +83,7 @@ Và bạn có nó rồi đấy! Bạn vừa tự động hóa quá trình cập 
 Trường bẩn là các trường đã được đánh dấu để cập nhật vì kết quả hiển thị của chúng đã lỗi thời.
 
 ### Tại sao việc cập nhật các trường bẩn lại quan trọng?
-Việc cập nhật các trường dirty đảm bảo rằng thông tin hiển thị trong tài liệu là cập nhật và chính xác, điều này rất quan trọng đối với các tài liệu chuyên nghiệp.
+Cập nhật các trường bẩn đảm bảo rằng thông tin hiển thị trong tài liệu là cập nhật và chính xác, điều này rất quan trọng đối với các tài liệu chuyên nghiệp.
 
 ### Tôi có thể cập nhật các trường cụ thể thay vì tất cả các trường bẩn không?
 Có, Aspose.Words cung cấp tính linh hoạt để cập nhật các trường cụ thể, nhưng việc cập nhật tất cả các trường bẩn thường đơn giản hơn và ít xảy ra lỗi hơn.

@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: inserte el gráfico de columnas
 
- Utilizar el`InsertChart` método de la`DocumentBuilder`clase para insertar un gráfico de columnas.
+ Utilice el`InsertChart` método de la`DocumentBuilder`clase para insertar un gráfico de columnas.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);

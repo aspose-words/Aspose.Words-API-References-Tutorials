@@ -75,7 +75,7 @@ doc.range.replace("old_text", "new_text", False, False, condition_callback)
 
 ## Krok 6: Zamiana formatowania
 
-Zamień tekst, zachowując formatowanie:
+Zastąp tekst, zachowując formatowanie:
 
 ```python
 def format_callback(sender, args):

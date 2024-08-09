@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 필요한 글꼴 하위 집합만 포함하면 문서의 모양과 가독성을 저하시키지 않고 PDF 파일 크기를 크게 줄일 수 있습니다.
 
 ### 필요한 경우 전체 글꼴 포함으로 되돌릴 수 있나요?
- 그래 넌 할수있어. 간단히 설정`EmbedFullFonts`재산`true` 에서`PdfSaveOptions`.
+ 예, 가능합니다. 간단히 설정`EmbedFullFonts`재산`true` 에서`PdfSaveOptions`.
 
 ### .NET용 Aspose.Words는 다른 PDF 최적화 기능을 지원합니까?
 전적으로! Aspose.Words for .NET은 이미지 압축, 사용하지 않는 개체 제거 등 PDF 최적화를 위한 다양한 옵션을 제공합니다.

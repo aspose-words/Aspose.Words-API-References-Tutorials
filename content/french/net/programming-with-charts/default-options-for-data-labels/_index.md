@@ -70,7 +70,7 @@ Chart chart = shape.Chart;
 
 Ici, nous insérons un diagramme circulaire dans notre document. Le`InsertChart` La méthode nécessite le type, la largeur et la hauteur du graphique comme paramètres. Après avoir inséré le graphique, nous accédons à l’objet graphique pour le manipuler davantage.
 
-## Étape 3 : Personnalisez la série de graphiques
+## Étape 3 : Personnaliser la série de graphiques
 
 Maintenant, nous allons effacer toutes les séries existantes dans le graphique et ajouter notre série personnalisée. Cette série représentera nos points de données.
 
@@ -122,7 +122,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 
 ## Conclusion
 
-Et voila! Vous avez créé avec succès un document Word avec un diagramme circulaire personnalisé à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation de la création et de la manipulation de documents, vous permettant ainsi d'économiser du temps et des efforts. Que vous génériez des rapports, des factures ou tout autre type de document, Aspose.Words est là pour vous.
+Et voilà ! Vous avez créé avec succès un document Word avec un diagramme circulaire personnalisé à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation de la création et de la manipulation de documents, vous permettant ainsi d'économiser du temps et des efforts. Que vous génériez des rapports, des factures ou tout autre type de document, Aspose.Words est là pour vous.
 
  N'hésitez pas à explorer le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour plus de fonctionnalités et d’exemples. Bon codage !
 
@@ -135,10 +135,10 @@ Vous pouvez utiliser Aspose.Words gratuitement avec un[permis temporaire](https:
  Vous pouvez obtenir de l'aide via le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Puis-je ajouter d’autres types de graphiques ?
- Oui, Aspose.Words prend en charge différents types de graphiques tels que les graphiques à barres, en courbes et en colonnes. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Oui, Aspose.Words prend en charge différents types de graphiques tels que les graphiques à barres, en courbes et en colonnes. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Aspose.Words est-il compatible avec .NET Core ?
- Oui, Aspose.Words est compatible avec .NET Core. Vous pouvez trouver plus d'informations dans le[Documentation](https://reference.aspose.com/words/net/).
+ Oui, Aspose.Words est compatible avec .NET Core. Vous pouvez trouver plus d'informations dans le[documentation](https://reference.aspose.com/words/net/).
 
 ### Comment puis-je acheter une licence pour Aspose.Words ?
  Vous pouvez acheter une licence auprès du[Magasin Aspose](https://purchase.aspose.com/buy).

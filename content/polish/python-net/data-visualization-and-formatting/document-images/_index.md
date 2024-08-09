@@ -149,7 +149,7 @@ Włączanie obrazów multimedialnych do dokumentów zmienia zasady gry. Wykonuj�
 
 ### Czy mogę dodać podpisy do wstawionych obrazów?
 
- Tak, możesz dodawać podpisy do obrazów za pomocą Aspose.Words. Użyj`add_caption` metodę i dostosuj wygląd podpisu.
+ Tak, możesz dodawać podpisy do obrazów za pomocą Aspose.Words. Skorzystaj z`add_caption` metodę i dostosuj wygląd podpisu.
 
 ### Do jakich formatów mogę eksportować dokumenty?
 

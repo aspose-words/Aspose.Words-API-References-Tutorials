@@ -15,7 +15,7 @@ url: /th/net/programming-with-rtfloadoptions/recognize-utf8-text/
 
 ก่อนที่เราจะเข้าสู่ส่วนที่สนุกสนาน มาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
 
-1.  Aspose.Words สำหรับ .NET Library: คุณทำได้[ดาวน์โหลดได้ที่นี่](https://releases.aspose.com/words/net/) - ใครยังไม่ได้ซื้อ รีบคว้าเลย[ทดลองฟรี](https://releases.aspose.com/) หรือ[ซื้อได้ที่นี่](https://purchase.aspose.com/buy).
+1.  Aspose.Words สำหรับ .NET Library: คุณทำได้[ดาวน์โหลดได้ที่นี่](https://releases.aspose.com/words/net/) - ใครยังไม่ได้ซื้อ รีบคว้าเลย[ทดลองใช้ฟรี](https://releases.aspose.com/) หรือ[ซื้อได้ที่นี่](https://purchase.aspose.com/buy).
 2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือ IDE อื่น ๆ ที่รองรับ .NET
 3. ความรู้พื้นฐานของ C#: คุณจะต้องคุ้นเคยกับ C# เพื่อที่จะปฏิบัติตาม
 

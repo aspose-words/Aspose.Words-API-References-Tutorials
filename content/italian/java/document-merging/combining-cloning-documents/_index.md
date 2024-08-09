@@ -8,7 +8,7 @@ weight: 10
 url: /it/java/document-merging/combining-cloning-documents/
 ---
 
-## introduzione
+## Introduzione
 
 Aspose.Words per Java è una libreria robusta che ti consente di lavorare con documenti Word a livello di codice. Fornisce un'ampia gamma di funzionalità, tra cui la creazione, la manipolazione e la formattazione dei documenti. In questa guida ci concentreremo su due attività essenziali: combinare più documenti in uno solo e clonare un documento apportando modifiche.
 

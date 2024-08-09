@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-## Adım adım rehber
+## Adım Adım Kılavuz
 
 Şimdi süreci takip edilmesi kolay adımlara ayıralım.
 
@@ -94,4 +94,4 @@ Meta dosyalar, tüm uygulamalarla veya cihazlarla uyumlu olmayabilecek orijinal 
  Evet, tam işlevsellik için lisans gereklidir. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) deneme amaçlı.
 
 ### Bu yöntemi JPEG veya GIF gibi diğer grafik formatları için kullanabilir miyim?
- Bu özel yöntem meta dosyalar içindir, ancak Aspose.Words for .NET çeşitli görüntü formatlarını destekler. Bakın[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla bilgi için.
+ Bu özel yöntem meta dosyalar içindir, ancak Aspose.Words for .NET çeşitli görüntü formatlarını destekler. Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla bilgi için.

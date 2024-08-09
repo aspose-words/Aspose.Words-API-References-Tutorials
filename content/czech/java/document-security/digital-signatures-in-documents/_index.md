@@ -14,7 +14,7 @@ Digitální podpisy hrají klíčovou roli při zajišťování pravosti a integ
 
 Než se pustíme do implementace, ujistěte se, že máte splněny následující předpoklady:
 
--  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z[zde](https://releases.aspose.com/words/java/).
 
 ## Nastavení vašeho projektu
 

@@ -28,7 +28,7 @@ using System;
 using Aspose.Words;
 ```
 
-## Adım adım rehber
+## Adım Adım Kılavuz
 
 Süreci basit, takip edilmesi kolay adımlara ayıralım. Her adım, görevin belirli bir bölümünde size rehberlik edecek ve her şeyi net bir şekilde anlamanızı sağlayacaktır.
 
@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## 3. Adım: Koruma Türünü Alın
 
-Sihir yapılan yer burasıdır! Aspose.Words'ü kullanarak belgenin koruma türünü alacağız.
+Sihrin gerçekleştiği yer burası! Aspose.Words'ü kullanarak belgenin koruma türünü alacağız.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
@@ -67,7 +67,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinin koruma türünü başarıyla aldınız. Bu, belgelerinizin uygun şekilde korunmasını sağlamak veya yalnızca denetim amacıyla inanılmaz derecede yararlı olabilir. Aspose.Words'ün, Word belgelerini kolaylıkla değiştirmenize yardımcı olacak tonlarca başka özellik sunduğunu unutmayın. Bir deneyin ve mutlu kodlamalar yapın!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinin koruma türünü başarıyla aldınız. Bu, belgelerinizin uygun şekilde korunmasını sağlamak veya yalnızca denetim amacıyla inanılmaz derecede yararlı olabilir. Aspose.Words'ün, Word belgelerini kolaylıkla değiştirmenize yardımcı olacak tonlarca başka özellik sunduğunu unutmayın. Bir deneyin ve mutlu kodlamalar yapın!
 
 ## SSS'ler
 
@@ -75,7 +75,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza, düzenlemenize, dönüştürmenize ve değiştirmenize olanak tanıyan güçlü bir kitaplıktır.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
- Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) ancak tam işlevsellik için bir lisans satın almanız gerekir. Kontrol et[satın alma seçenekleri](https://purchase.aspose.com/buy).
+ Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) ancak tam işlevsellik için bir lisans satın almanız gerekir. Şuna göz atın:[satın alma seçenekleri](https://purchase.aspose.com/buy).
 
 ### Aspose.Words hangi koruma türlerini tespit edebilir?
 Aspose.Words, NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments ve AllowOnlyFormFields gibi çeşitli koruma türlerini tespit edebilir.

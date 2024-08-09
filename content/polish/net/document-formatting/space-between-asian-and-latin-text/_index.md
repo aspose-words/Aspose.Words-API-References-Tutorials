@@ -9,7 +9,7 @@ url: /pl/net/document-formatting/space-between-asian-and-latin-text/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek miałeś ten frustrujący moment, gdy pracowałeś z dokumentem programu Word, a odstępy między tekstem azjatyckim i łacińskim po prostu nie wyglądały prawidłowo? To jak próba dopasowania puzzli z różnych zestawów, a to może doprowadzić każdego do szału! Ale nie martw się, zadbam o ciebie. Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, aby rozwiązać dokładnie ten problem. Pod koniec tego samouczka będziesz wiedział dokładnie, jak automatycznie dostosowywać odstępy między tekstem azjatyckim i łacińskim w dokumentach programu Word jak profesjonalista.
+Hej tam! Czy kiedykolwiek miałeś ten frustrujący moment, gdy pracowałeś z dokumentem programu Word, a odstępy między tekstem azjatyckim i łacińskim po prostu nie wyglądały prawidłowo? To jak próba dopasowania puzzli z różnych zestawów, a to może doprowadzić każdego do szału! Ale nie martw się, zadbam o ciebie. Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, aby rozwiązać dokładnie ten problem. Pod koniec tego samouczka będziesz wiedział dokładnie, jak automatycznie dostosowywać odstępy między tekstem azjatyckim i łacińskim w dokumentach programu Word jak profesjonalista.
 
 ## Warunki wstępne
 
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Przez ustawienie`AddSpaceBetweenFarEastAndAlpha`I`AddSpaceBetweenFarEastAndDigit` Do`true`, mówimy Aspose.Words, aby automatycznie dostosowywał odstępy między znakami azjatyckimi a literami lub cyframi łacińskimi.
+ Ustawiając`AddSpaceBetweenFarEastAndAlpha`I`AddSpaceBetweenFarEastAndDigit` Do`true`, mówimy Aspose.Words, aby automatycznie dostosowywał odstępy między znakami azjatyckimi a literami lub cyframi łacińskimi.
 
 ## Krok 3: Dodawanie tekstu do dokumentu
 

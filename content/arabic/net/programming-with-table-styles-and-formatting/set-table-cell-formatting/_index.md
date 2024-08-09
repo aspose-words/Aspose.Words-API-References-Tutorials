@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 2: ابدأ الجدول
 
- مع ال`DocumentBuilder` على سبيل المثال، يمكنك البدء في إنشاء جدول. ويتم ذلك عن طريق استدعاء`StartTable` طريقة.
+ مع`DocumentBuilder` على سبيل المثال، يمكنك البدء في إنشاء جدول. ويتم ذلك عن طريق استدعاء`StartTable` طريقة.
 
 ```csharp
 // ابدأ الجدول

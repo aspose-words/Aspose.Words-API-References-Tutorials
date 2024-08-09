@@ -99,4 +99,4 @@ Ja, Aspose.Words unterstützt verschiedene Arten von Inhaltssteuerelementen, dar
  Ja, Sie können eine kostenlose Testversion herunterladen von der[Aspose-Website](https://releases.aspose.com/).
 
 ### Wo erhalte ich Unterstützung, wenn Probleme auftreten?
- Besuchen Sie die[Aspose Support Forum](https://forum.aspose.com/c/words/8) zur Hilfe.
+ Besuchen Sie die[Aspose Support Forum](https://forum.aspose.com/c/words/8) um Hilfe.

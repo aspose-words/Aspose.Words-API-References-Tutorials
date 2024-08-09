@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. Adım: Metin İçeren Bir Alan Ekleme
 
- Kullan`InsertField` yöntemi`DocumentBuilder` metin içeren bir alan eklemek için:
+ Kullanın`InsertField` yöntemi`DocumentBuilder` metin içeren bir alan eklemek için:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```

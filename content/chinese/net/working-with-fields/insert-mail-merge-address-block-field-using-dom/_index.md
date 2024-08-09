@@ -122,4 +122,4 @@ Aspose.Words for .NET 是一个功能强大的库，使开发人员能够使用 
 您可以获得 Aspose 社区和技术团队的支持[这里](https://forum.aspose.com/c/words/8).
 
 ### 我可以使用 Aspose.Words 自动化 Word 文档的其他方面吗？
-当然！Aspose.Words for .NET 提供了广泛的功能来自动生成、编辑、转换文档等。查看[文档](https://reference.aspose.com/words/net/)更多细节。
+当然！Aspose.Words for .NET 提供了广泛的功能来自动生成、编辑、转换文档等。查看[文档](https://reference.aspose.com/words/net/)了解更多详情。

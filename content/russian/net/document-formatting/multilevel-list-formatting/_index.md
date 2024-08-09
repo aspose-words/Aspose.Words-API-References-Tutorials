@@ -16,7 +16,7 @@ url: /ru/net/document-formatting/multilevel-list-formatting/
 Прежде чем мы перейдем к мельчайшим деталям, давайте убедимся, что у вас есть все необходимое для выполнения этого руководства.
 
 1. Среда разработки: убедитесь, что у вас настроена среда разработки. Visual Studio — отличный выбор.
-2.  Aspose.Words для .NET: Загрузите и установите библиотеку Aspose.Words для .NET. Ты можешь его достать[здесь](https://releases.aspose.com/words/net/).
+2.  Aspose.Words для .NET: Загрузите и установите библиотеку Aspose.Words для .NET. Вы можете получить это[здесь](https://releases.aspose.com/words/net/).
 3.  Лицензия: получите временную лицензию, если у вас нет полной. Возьми[здесь](https://purchase.aspose.com/temporary-license/).
 4. Базовые знания C#: знание C# и .NET Framework будет преимуществом.
 

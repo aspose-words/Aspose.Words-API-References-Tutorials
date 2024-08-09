@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 
 ## Çözüm
 
-İşte aldın! Aspose.Words for .NET'i kullanarak bir PDF belgesinden belirli bir sayfa aralığını başarıyla yüklediniz. Bu güçlü kitaplık, PDF'lerin kullanımını çocuk oyuncağı haline getirerek gerçekten önemli olana, yani sağlam ve verimli uygulamalar oluşturmaya odaklanmanıza olanak tanır. İster küçük bir proje üzerinde ister büyük ölçekli bir kurumsal çözüm üzerinde çalışıyor olun, Aspose.Words .NET cephaneliğinizdeki vazgeçilmez bir araçtır.
+İşte burada! Aspose.Words for .NET'i kullanarak bir PDF belgesinden belirli bir sayfa aralığını başarıyla yüklediniz. Bu güçlü kitaplık, PDF'lerin kullanımını çocuk oyuncağı haline getirerek gerçekten önemli olana, yani sağlam ve verimli uygulamalar oluşturmaya odaklanmanıza olanak tanır. İster küçük bir proje üzerinde ister büyük ölçekli bir kurumsal çözüm üzerinde çalışıyor olun, Aspose.Words .NET cephaneliğinizdeki vazgeçilmez bir araçtır.
 
 ## SSS'ler
 

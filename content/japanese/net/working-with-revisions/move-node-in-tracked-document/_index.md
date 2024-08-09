@@ -2,144 +2,130 @@
 title: 追跡ドキュメント内のノードを移動
 linktitle: 追跡ドキュメント内のノードを移動
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、追跡されたドキュメント内のノードを移動します。
+description: 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して追跡された Word 文書内のノードを移動する方法を学びます。開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-revisions/move-node-in-tracked-document/
 ---
+## 導入
 
-このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して追跡された Word 文書内のノードを移動する方法について説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を説明します。
+Aspose.Words 愛好家の皆さん、こんにちは。Word 文書のリビジョンを追跡しながらノードを移動する必要があった場合は、適切な場所に来ています。今日は、Aspose.Words for .NET を使用してこれを実現する方法について詳しく説明します。ステップ バイ ステップのプロセスを学ぶだけでなく、ドキュメント操作をスムーズかつ効率的にするためのヒントやコツも学べます。
 
-## ステップ1: ドキュメントの作成
+## 前提条件
 
-最初のステップは、新しいドキュメントを作成し、段落を追加することです。
+コードに取り掛かる前に、必要なものがすべて揃っていることを確認しましょう。
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Paragraph 1");
-builder.Writeln("Paragraph 2");
-builder.Writeln("Paragraph 3");
-builder.Writeln("Paragraph 4");
-builder.Writeln("Paragraph 5");
-builder.Writeln("Paragraph 6");
-Body body = doc.FirstSection.Body;
-Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
-```
+-  Aspose.Words for .NET: ダウンロード[ここ](https://releases.aspose.com/words/net/).
+- .NET 環境: 互換性のある .NET 開発環境が設定されていることを確認します。
+- 基本的な C# の知識: このチュートリアルでは、C# の基本的な知識があることを前提としています。
 
-## ステップ2: 変更履歴を追跡する
+すべて取得しましたか? 素晴らしい! インポートする必要がある名前空間に進みましょう。
 
-ドキュメント内でリビジョン追跡を有効にします。
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートする必要があります。これらは、Aspose.Words の操作やドキュメント ノードの処理に不可欠です。
 
 ```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+using Aspose.Words;
+using System;
 ```
 
-## ステップ3: ノードを移動する
+では、プロセスを管理しやすいステップに分解してみましょう。各ステップを詳しく説明して、各ポイントで何が起こっているのか理解できるようにします。
 
-リビジョンを生成しながら、ノード (段落) をある位置から別の位置に移動します。
+## ステップ1: ドキュメントを初期化する
 
-```csharp
-Node node = body.Paragraphs[3];
-Node endNode = body.Paragraphs[5].NextSibling;
-Node referenceNode = body.Paragraphs[0];
-while (node != endNode)
-{
-     Node nextNode = node. NextSibling;
-     body. InsertBefore(node, referenceNode);
-     node = nextNode;
-}
-```
-
-## ステップ4: レビューの追跡を停止する
-
-ドキュメント内の変更の追跡を停止します。
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-## ステップ5: ドキュメントを保存する
-
-テキスト入力フォームフィールドを挿入した後、`Save`メソッド。適切なファイル パスを指定してください。
-
-```csharp
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-```
-
-
-### Aspose.Words for .NET を使用して追跡ドキュメント内のノードを移動するサンプル ソース コード
-
-以下は、Aspose.Words for .NET を使用して追跡されたドキュメント内のノードを移動するための完全なソース コードです。
-
+まず、新しいドキュメントを初期化し、`DocumentBuilder`いくつかの段落を追加します。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+//いくつかの段落を追加する
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
 builder.Writeln("Paragraph 4");
 builder.Writeln("Paragraph 5");
 builder.Writeln("Paragraph 6");
+
+//最初の段落数を確認する
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+```
 
-//リビジョンの追跡を開始します。
+## ステップ2: リビジョンの追跡を開始する
+
+次に、リビジョンの追跡を開始する必要があります。これは、ドキュメントに加えられた変更を確認できるため、非常に重要です。
+
+```csharp
+//リビジョンの追跡を開始する
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
 
-//ノードをある場所から別の場所に移動するときにリビジョンを生成します。
+## ステップ3: ノードを移動する
+
+ここで、タスクの核心部分、つまりノードをある場所から別の場所に移動する作業が始まります。3 番目の段落を移動し、最初の段落の前に配置します。
+
+```csharp
+//移動するノードとその終了範囲を定義する
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
+
+//定義された範囲内でノードを移動する
 while (node != endNode)
 {
-	Node nextNode = node.NextSibling;
-	body.InsertBefore(node, referenceNode);
-	node = nextNode;
+    Node nextNode = node.NextSibling;
+    body.InsertBefore(node, referenceNode);
+    node = nextNode;
 }
+```
 
-//リビジョンの追跡プロセスを停止します。
+## ステップ4: リビジョンの追跡を停止する
+
+ノードを移動したら、リビジョンの追跡を停止する必要があります。
+
+```csharp
+//リビジョンの追跡を停止する
 doc.StopTrackRevisions();
+```
 
-//移動元の範囲には 3 つの追加の段落があります。
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+## ステップ5: ドキュメントを保存する
+
+最後に、変更したドキュメントを指定されたディレクトリに保存します。
+
+```csharp
+//変更したドキュメントを保存する
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
+
+//最終段落数を出力する
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、追跡された Word 文書内のノードを移動する方法を学びました。文書の作成、リビジョン追跡の有効化、ノードの移動、リビジョン追跡の停止の手順に従うことで、この操作を正常に実行できました。Aspose.Words for .NET は、Word 文書でのワード処理用の強力なツールであり、リビジョンを管理するための高度な機能を提供します。この知識を使用して、Aspose.Words for .NET を使用してリビジョンを追跡しながら、独自の Word 文書内のノードを移動できるようになりました。
+これで完了です。Aspose.Words for .NET を使用して、追跡されたドキュメント内のノードを正常に移動できました。この強力なライブラリを使用すると、Word ドキュメントをプログラムで簡単に操作できます。作成、編集、変更の追跡のいずれの場合でも、Aspose.Words が対応します。ぜひお試しください。コーディングをお楽しみください。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET ドキュメントでリビジョン追跡を有効にするにはどうすればよいでしょうか?
+### Aspose.Words for .NET とは何ですか?
 
- A: Aspose.Words for .NETドキュメントでリビジョン追跡を有効にするには、`StartTrackRevisions`方法の`Document`オブジェクト。このメソッドは、リビジョンの作成者の名前とリビジョンのフォローアップの開始日をパラメータとして受け取ります。
+Aspose.Words for .NET は、Word 文書をプログラムで操作するためのクラス ライブラリです。開発者は、これを使用して .NET アプリケーション内で Word 文書を作成、編集、変換、印刷できます。
 
-```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
-```
+### Aspose.Words を使用して Word 文書の変更履歴を追跡するにはどうすればよいですか?
 
-#### Q: リビジョンを生成せずに追跡されたドキュメント内のノードを移動するにはどうすればよいですか?
+改訂履歴を追跡するには、`StartTrackRevisions`方法`Document`オブジェクト。これにより、リビジョンの追跡が有効になり、ドキュメントに加えられた変更が表示されます。
 
- A: 追跡されたドキュメント内のノードをリビジョンを生成せずに移動したい場合は、`Remove`そして`InsertAfter`または`InsertBefore`の`Node`オブジェクト。たとえば、段落を別の段落の後に移動するには、次のコードを使用します。
+### Aspose.Words で複数のノードを移動できますか?
 
-```csharp
-Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
-Node referenceNode = document.FirstSection.Body.Paragraphs[1];
-nodeToMove.Remove();
-document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
-```
+はい、複数のノードを反復処理して次のようなメソッドを使用することで移動できます。`InsertBefore`または`InsertAfter`希望の場所に配置します。
 
-#### Q: Aspose.Words for .NET ドキュメントでリビジョン追跡を停止するにはどうすればよいですか?
+### Aspose.Words でリビジョンの追跡を停止するにはどうすればよいですか?
 
- A: Aspose.Words for .NETドキュメントのリビジョンの追跡を停止するには、`StopTrackRevisions`方法の`Document`物体。
+使用`StopTrackRevisions`方法`Document`リビジョンの追跡を停止するにはオブジェクトを使用します。
 
-```csharp
-doc.StopTrackRevisions();
-```
+### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
+
+詳細なドキュメントは以下をご覧ください[ここ](https://reference.aspose.com/words/net/).

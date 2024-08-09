@@ -10,7 +10,7 @@ url: /id/python-net/content-extraction-and-manipulation/document-content-extract
 
 ## Perkenalan
 
-Mengekstraksi konten dari dokumen Word secara efisien adalah persyaratan umum dalam pemrosesan data, analisis konten, dan banyak lagi. Aspose.Words untuk Python adalah perpustakaan canggih yang menyediakan alat komprehensif untuk bekerja dengan dokumen Word secara terprogram.
+Mengekstraksi konten dari dokumen Word secara efisien merupakan persyaratan umum dalam pemrosesan data, analisis konten, dan banyak lagi. Aspose.Words untuk Python adalah perpustakaan canggih yang menyediakan alat komprehensif untuk bekerja dengan dokumen Word secara terprogram.
 
 ## Prasyarat
 

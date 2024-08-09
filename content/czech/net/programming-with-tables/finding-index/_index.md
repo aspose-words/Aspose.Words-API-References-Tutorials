@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/finding-index/
 ---
-## Úvod
+## Zavedení
 
 Práce s tabulkami v dokumentech aplikace Word může někdy připadat jako pohyb v bludišti. Ať už zpracováváte složité dokumenty nebo se jednoduše snažíte najít konkrétní prvky, vědět, jak najít index tabulek, řádků a buněk, může být neuvěřitelně užitečné. V této příručce se ponoříme do procesu hledání těchto indexů pomocí Aspose.Words for .NET. Každý krok rozebereme, abyste měli jistotu, že tomu rozumíte a můžete jej snadno implementovat do svých vlastních projektů.
 
@@ -15,7 +15,7 @@ Práce s tabulkami v dokumentech aplikace Word může někdy připadat jako pohy
 
 Než se ponoříme, ujistěte se, že máte vše, co potřebujete:
 
-- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE dle vašeho výběru.
 - Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti C#.
 

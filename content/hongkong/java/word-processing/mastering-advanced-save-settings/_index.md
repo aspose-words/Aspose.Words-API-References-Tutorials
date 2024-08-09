@@ -7,7 +7,7 @@ type: docs
 weight: 13
 url: /zh-hant/java/word-processing/mastering-advanced-save-settings/
 ---
-您準備好將您的文件處理技能提升到一個新的水平嗎？在本綜合指南中，我們將深入探討如何使用 Aspose.Words for Java 掌握文件的進階保存設定。無論您是經驗豐富的開發人員還是剛入門，我們都將引導您完成使用 Aspose.Words for Java 進行文件操作的複雜過程。
+您準備好將您的文件處理技能提升到新的水平了嗎？在本綜合指南中，我們將深入探討如何使用 Aspose.Words for Java 掌握文件的進階保存設定。無論您是經驗豐富的開發人員還是剛入門，我們都會引導您完成使用 Aspose.Words for Java 進行文件操作的複雜過程。
 
 ## 介紹
 
@@ -42,8 +42,8 @@ docLandscape.save("landscape.docx", SaveFormat.DOCX);
 //設定自訂頁邊距
 Document doc = new Document();
 PageSetup pageSetup = doc.getFirstSection().getPageSetup();
-pageSetup.setLeftMargin(72.0); //1英尺
-pageSetup.setRightMargin(72.0); //1英尺
+pageSetup.setLeftMargin(72.0); //1英吋
+pageSetup.setRightMargin(72.0); //1英吋
 pageSetup.setTopMargin(36.0); //0.5英寸
 pageSetup.setBottomMargin(36.0); //0.5英寸
 doc.save("custom_margins.docx", SaveFormat.DOCX);

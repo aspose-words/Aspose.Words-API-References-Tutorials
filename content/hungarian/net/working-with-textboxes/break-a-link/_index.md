@@ -78,7 +78,7 @@ Ez a módszer megszakítja a hivatkozást az aktuális szövegmezőről a követ
 
 ## 4. lépés: Állítsa a továbbítási hivatkozást nullára
 
- A hivatkozás megszakításának másik módja a`Next` a szövegdoboz tulajdonsága`null`. Ez a módszer különösen akkor hasznos, ha dinamikusan módosítja a dokumentumszerkezetet.
+ A link megszakításának másik módja a`Next` a szövegdoboz tulajdonsága`null`. Ez a módszer különösen akkor hasznos, ha dinamikusan módosítja a dokumentumszerkezetet.
 
 ### A Null melletti beállítás
 
@@ -94,7 +94,7 @@ Néha egy szövegdoboz egy lánc része lehet, és más mezők hivatkoznak rá. 
 
 ### Bejövő linkek feltörése
 
- Egy bejövő hivatkozás megszakításához ellenőrizze, hogy a`Previous` szövegdoboz létezik, és hívja`BreakForwardLink` Rajta:
+ Egy bejövő hivatkozás megszakításához ellenőrizze, hogy a`Previous` szövegdoboz létezik, és hívja`BreakForwardLink` rajta:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
@@ -128,4 +128,4 @@ A hivatkozások megszakítása potenciálisan befolyásolhatja az elrendezést, 
 
 ### Hol találhatok további forrásokat az Aspose.Words használatával kapcsolatban?
 
- További információkért és forrásokért keresse fel a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatói fórum](https://forum.aspose.com/c/words/8).
+ További információkért és forrásokért keresse fel a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatási fórum](https://forum.aspose.com/c/words/8).

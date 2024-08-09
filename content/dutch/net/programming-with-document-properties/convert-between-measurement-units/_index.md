@@ -9,7 +9,7 @@ url: /nl/net/programming-with-document-properties/convert-between-measurement-un
 ---
 ## Invoering
 
-Hallo daar! Bent u een ontwikkelaar die met Word-documenten werkt met Aspose.Words voor .NET? Als dat het geval is, zult u vaak de marges, kop- of voetteksten in verschillende maateenheden moeten instellen. Het omrekenen tussen eenheden zoals inches en punten kan lastig zijn als u niet bekend bent met de functionaliteiten van de bibliotheek. In deze uitgebreide zelfstudie begeleiden we u bij het converteren tussen maateenheden met behulp van Aspose.Words voor .NET. Laten we erin duiken en die conversies vereenvoudigen!
+Hé daar! Bent u een ontwikkelaar die met Word-documenten werkt met Aspose.Words voor .NET? Als dat het geval is, zult u vaak de marges, kop- of voetteksten in verschillende maateenheden moeten instellen. Het omrekenen tussen eenheden zoals inches en punten kan lastig zijn als u niet bekend bent met de functionaliteiten van de bibliotheek. In deze uitgebreide zelfstudie begeleiden we u bij het converteren tussen maateenheden met behulp van Aspose.Words voor .NET. Laten we erin duiken en die conversies vereenvoudigen!
 
 ## Vereisten
 
@@ -54,7 +54,7 @@ Dit geeft u toegang tot verschillende eigenschappen voor de pagina-instelling, z
 
 ## Stap 3: Converteer inches naar punten
 
- Aspose.Words gebruikt standaard punten als meeteenheid. Om de marges in inches in te stellen, moet u inches naar punten converteren met behulp van de`ConvertUtil.InchToPoint` methode.
+ Aspose.Words gebruikt standaard punten als meeteenheid. Als u de marges in inches wilt instellen, moet u inches naar punten converteren met behulp van de`ConvertUtil.InchToPoint` methode.
 
 ```csharp
 pageSetup.TopMargin = ConvertUtil.InchToPoint(1.0);
@@ -99,4 +99,4 @@ Hoewel u Aspose.Words zonder licentie kunt gebruiken, zijn sommige geavanceerde 
  Ja, u kunt de marges en andere instellingen voor verschillende secties aanpassen met behulp van de`Section` klas.
 
 ### Welke andere functies biedt Aspose.Words?
- Aspose.Words ondersteunt een breed scala aan functies, waaronder documentconversie, samenvoegen en uitgebreide opmaakopties. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Aspose.Words ondersteunt een breed scala aan functies, waaronder documentconversie, samenvoegen en uitgebreide opmaakopties. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.

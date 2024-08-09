@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 // ตามดัชนี:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// โดยชื่อ:
+// ตามชื่อ:
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 

@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- Indem man es einstellt`PreferredControlType` Zu`HtmlControlType.StructuredDocumentTag`stellen wir sicher, dass das Kombinationsfeld im Word-Dokument als strukturiertes Dokument-Tag (SDT) gerendert wird.
+ Durch die Einstellung`PreferredControlType` Zu`HtmlControlType.StructuredDocumentTag`stellen wir sicher, dass das Kombinationsfeld im Word-Dokument als strukturiertes Dokument-Tag (SDT) gerendert wird.
 
 ## Schritt 4: Laden Sie den HTML-Inhalt in das Dokument
 

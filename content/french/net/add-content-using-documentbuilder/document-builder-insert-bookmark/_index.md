@@ -95,7 +95,7 @@ Cette ligne enregistre le document avec le nom spécifié dans le répertoire qu
 
 ## Conclusion
 
-Et voila! Vous avez réussi à insérer un signet dans un document Word à l'aide d'Aspose.Words pour .NET. Cela peut sembler un petit pas, mais il s’agit d’un outil puissant dans le domaine de l’automatisation des documents. Avec les signets, vous pouvez créer des documents dynamiques et interactifs faciles à parcourir.
+Et voilà ! Vous avez réussi à insérer un signet dans un document Word à l'aide d'Aspose.Words pour .NET. Cela peut sembler un petit pas, mais il s’agit d’un outil puissant dans le domaine de l’automatisation des documents. Avec les signets, vous pouvez créer des documents dynamiques et interactifs faciles à parcourir.
 
 ## FAQ
 

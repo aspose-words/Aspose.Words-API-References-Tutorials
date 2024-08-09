@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Einführung
 
 Wenn Sie jemals Probleme mit Schriftarten hatten, die in Ihren Dokumenten nicht richtig dargestellt wurden, sind Sie nicht allein. Das Verwalten von Schriftarteinstellungen und das Erhalten von Benachrichtigungen über Schriftartersetzungen kann Ihnen viel Kopfzerbrechen ersparen. In diesem umfassenden Handbuch erfahren Sie, wie Sie mit Aspose.Words für .NET mit Schriftartbenachrichtigungen umgehen und sicherstellen, dass Ihre Dokumente immer optimal aussehen.
 
@@ -101,7 +101,7 @@ Durch Befolgen dieser Schritte haben Sie Ihre Anwendung so konfiguriert, dass si
 
 Sie beherrschen jetzt den Prozess des Empfangens von Benachrichtigungen für Schriftartenersetzungen mit Aspose.Words für .NET. Mit dieser Fähigkeit können Sie sicherstellen, dass Ihre Dokumente immer optimal aussehen, auch wenn die erforderlichen Schriftarten nicht verfügbar sind. Experimentieren Sie weiter mit verschiedenen Einstellungen, um die Leistungsfähigkeit von Aspose.Words voll auszunutzen.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### F1: Kann ich mehrere Standardschriftarten angeben?
 
@@ -113,11 +113,11 @@ Nein, Sie können nur eine Standardschriftart als Ersatz angeben. Sie können je
 
 ###  F3: Kann ich andere Arten von Warnungen mit`IWarningCallback`?
 
- Ja das`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
+ Ja, die`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
 
 ### F4: Wo finde ich Unterstützung für Aspose.Words?
 
- Besuche den[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) zur Hilfe.
+ Besuchen Sie die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.
 
 ### F5: Ist es möglich, eine temporäre Lizenz für Aspose.Words zu erhalten?
 

@@ -82,7 +82,7 @@ Gefeliciteerd! U hebt metabestanden met succes geconverteerd naar PNG in een Wor
 ## Veelgestelde vragen
 
 ### Kan ik naast metabestanden ook andere bestandstypen naar PNG converteren?
- Aspose.Words voor .NET biedt uitgebreide ondersteuning voor verschillende bestandsformaten. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Aspose.Words voor .NET biedt uitgebreide ondersteuning voor verschillende bestandsformaten. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Is er een manier om meerdere documenten batchgewijs te verwerken?
 Ja, u kunt door een map met documenten bladeren en op elk bestand dezelfde laadopties toepassen.
@@ -94,4 +94,4 @@ Metabestanden behouden hun oorspronkelijke formaat, wat mogelijk niet compatibel
  Ja, voor volledige functionaliteit is een licentie vereist. Je kunt een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor proefdoeleinden.
 
 ### Kan ik deze methode gebruiken voor andere grafische formaten zoals JPEG of GIF?
- Deze specifieke methode is voor metabestanden, maar Aspose.Words voor .NET ondersteunt verschillende afbeeldingsformaten. Verwijs naar de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
+ Deze specifieke methode is voor metabestanden, maar Aspose.Words voor .NET ondersteunt verschillende afbeeldingsformaten. Raadpleeg de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.

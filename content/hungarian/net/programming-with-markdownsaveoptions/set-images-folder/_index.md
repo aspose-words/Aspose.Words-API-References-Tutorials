@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 Mentse el a dokumentumot Markdown néven
 
- Használj`MemoryStream` a dokumentum Markdown formátumban történő mentéséhez.
+ Használja a`MemoryStream` a dokumentum Markdown formátumban történő mentéséhez.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

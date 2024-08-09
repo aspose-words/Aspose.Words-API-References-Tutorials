@@ -77,7 +77,7 @@ Table tableClone = (Table) table.Clone(true);
 
 ## Langkah 5: Masukkan Tabel Kloning ke dalam Dokumen
 
- Masukkan tabel yang dikloning ke dalam dokumen segera setelah tabel aslinya. Menggunakan`InsertAfter` metode untuk ini.
+ Masukkan tabel yang dikloning ke dalam dokumen segera setelah tabel aslinya. Gunakan`InsertAfter` metode untuk ini.
 
 ```csharp
 table.ParentNode.InsertAfter(tableClone, table);
@@ -87,7 +87,7 @@ Cuplikan kode ini menempatkan tabel yang dikloning tepat setelah tabel asli dala
 
 ## Langkah 6: Tambahkan Paragraf Kosong
 
-Untuk memastikan bahwa tabel yang dikloning tidak menyatu dengan tabel asli, sisipkan paragraf kosong di antara tabel tersebut. Langkah ini penting untuk menjaga pemisahan tabel.
+Untuk memastikan tabel kloning tidak menyatu dengan tabel asli, sisipkan paragraf kosong di antara tabel tersebut. Langkah ini penting untuk menjaga pemisahan tabel.
 
 ```csharp
 table.ParentNode.InsertAfter(new Paragraph(doc), table);

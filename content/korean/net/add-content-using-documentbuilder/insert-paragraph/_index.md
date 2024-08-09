@@ -56,7 +56,7 @@ paragraphFormat.KeepTogether = true;
 
 ## 3단계: 단락 삽입
 
- 이제 다음을 사용하여 원하는 콘텐츠를 추가하세요.`WriteLn` 의 방법`DocumentBuilder`.
+ 이제 다음을 사용하여 원하는 콘텐츠를 추가하세요.`WriteLn` 방법`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
@@ -87,4 +87,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 예, Aspose.Words for .NET을 사용하여 프로그래밍 방식으로 문서를 암호화하고 보호할 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 추가 도움말과 지원은 어디서 찾을 수 있나요?
- 방문하다[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 커뮤니티 지원 및 토론을 위해.
+ 방문[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 커뮤니티 지원 및 토론을 위해.

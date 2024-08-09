@@ -33,7 +33,7 @@ using Aspose.Words;
 
 ## 第 1 步：設定您的項目
 
-在深入研究程式碼之前，您需要設定您的專案。就是這樣：
+在深入研究程式碼之前，您需要設定您的專案。方法如下：
 
 1. 開啟 Visual Studio：先啟動 Visual Studio 並建立一個新的 C# 專案。
 2. 安裝 Aspose.Words：使用 NuGet Package Manager 安裝 Aspose.Words for .NET。你可以找到它[這裡](https://releases.aspose.com/words/net/).
@@ -54,7 +54,7 @@ Install-Package Aspose.Words
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2. 載入 PDF：使用`Document`Aspose.Words 中的類別來載入 PDF。
+2. 載入 PDF：使用`Document`來自 Aspose.Words 的類別來載入 PDF。
 
     ```csharp
     Document doc = new Document(dataDir + "Pdf Document.pdf");
@@ -74,7 +74,7 @@ Install-Package Aspose.Words
 
 ## 結論
 
-現在你就擁有了！使用 Aspose.Words for .NET 將 PDF 轉換為 JPEG 非常簡單。只需幾行程式碼，您就可以轉換文件並打開一個充滿可能性的世界。無論您是希望簡化工作流程的開發人員還是只是喜歡修改程式碼的開發人員，Aspose.Words 都能滿足您的需求。
+現在你就得到它了！使用 Aspose.Words for .NET 將 PDF 轉換為 JPEG 非常簡單。只需幾行程式碼，您就可以轉換文件並打開一個充滿可能性的世界。無論您是希望簡化工作流程的開發人員還是只是喜歡修改程式碼的開發人員，Aspose.Words 都能滿足您的需求。
 
 ## 常見問題解答
 
@@ -82,10 +82,10 @@ Install-Package Aspose.Words
 絕對地！您可以循環瀏覽 PDF 目錄並將每個 PDF 轉換為 JPEG。
 
 ### Aspose.Words 支援其他圖片格式嗎？
-是的，它確實！您可以將 PDF 儲存為 PNG、BMP 等格式。
+是的，確實如此！您可以將 PDF 儲存為 PNG、BMP 等格式。
 
 ### Aspose.Words 與 .NET Core 相容嗎？
-它的確是。 Aspose.Words 同時支援 .NET Framework 和 .NET Core。
+確實如此。 Aspose.Words 同時支援 .NET Framework 和 .NET Core。
 
 ### 我需要許可證才能使用 Aspose.Words 嗎？
 您可以獲得免費試用[這裡](https://releases.aspose.com/)或購買許可證[這裡](https://purchase.aspose.com/buy).

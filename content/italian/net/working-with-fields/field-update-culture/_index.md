@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/field-update-culture/
 ---
-## introduzione
+## Introduzione
 
 Immagina di lavorare su un documento Word con vari campi come date, orari o informazioni personalizzate che devono essere aggiornate dinamicamente. Se hai già utilizzato i campi in Word, sai quanto sia fondamentale ottenere gli aggiornamenti corretti. Ma cosa succede se è necessario gestire le impostazioni culturali per questi campi? In un mondo globale in cui i documenti vengono condivisi in diverse regioni, capire come configurare la cultura dell'aggiornamento sul campo può fare una grande differenza. Questa guida ti spiegherà come gestire la cultura dell'aggiornamento sul campo nei documenti Word utilizzando Aspose.Words per .NET. Copriremo tutto, dalla configurazione del tuo ambiente all'implementazione e al salvataggio delle modifiche.
 
@@ -23,7 +23,7 @@ Prima di immergerci nel nocciolo della cultura dell'aggiornamento sul campo, ci 
 
 4.  Licenza Aspose: per la funzionalità completa, potrebbe essere necessaria una licenza. Puoi acquistarne uno[Qui](https://purchase.aspose.com/buy) o ottenere una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/).
 
-5.  Accesso alla documentazione e al supporto: per qualsiasi ulteriore aiuto, il[Richiedere documentazione](https://reference.aspose.com/words/net/)E[Forum di assistenza](https://forum.aspose.com/c/words/8) sono grandi risorse.
+5.  Accesso alla documentazione e al supporto: per qualsiasi ulteriore aiuto, il[Richiedere documentazione](https://reference.aspose.com/words/net/)E[Forum di supporto](https://forum.aspose.com/c/words/8) sono grandi risorse.
 
 ## Importa spazi dei nomi
 
@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 2: inserisci un campo ora
 
-Successivamente, inserirai un campo ora nel documento. Questo è un campo dinamico che si aggiorna all'ora corrente.
+Successivamente, inserirai un campo temporale nel documento. Questo è un campo dinamico che si aggiorna all'ora corrente.
 
 ```csharp
 // Inserisci il campo dell'ora.
@@ -64,7 +64,7 @@ builder.InsertField(FieldType.FieldTime, true);
 
 ## Passaggio 3: configurare la cultura dell'aggiornamento del campo
 
-Qui è dove avviene la magia. Configurerai la lingua di aggiornamento del campo per garantire che i campi si aggiornino in base alle impostazioni della lingua specificate.
+È qui che avviene la magia. Configurerai la lingua di aggiornamento del campo per garantire che i campi si aggiornino in base alle impostazioni della lingua specificate.
 
 ```csharp
 // Configurare la lingua di aggiornamento del campo.

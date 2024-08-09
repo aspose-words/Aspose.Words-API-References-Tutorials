@@ -2,88 +2,115 @@
 title: Yazı Tipi Değiştirmeyi Devre Dışı Bırakmayı Etkinleştir
 linktitle: Yazı Tipi Değiştirmeyi Devre Dışı Bırakmayı Etkinleştir
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu eğitimde Aspose.Words for .NET ile bir Word belgesinde yazı tipi değiştirmeyi nasıl etkinleştireceğinizi veya devre dışı bırakacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerinde yazı tipi değiştirmeyi nasıl etkinleştireceğinizi veya devre dışı bırakacağınızı öğrenin. Belgelerinizin tüm platformlarda tutarlı görünmesini sağlayın.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/enable-disable-font-substitution/
 ---
-Bu eğitimde, bir Word belgesini .NET için Aspose.Words kütüphanesini kullanarak oluştururken yazı tipi değiştirmeyi nasıl etkinleştireceğiniz veya devre dışı bırakacağınız konusunda size yol göstereceğiz. Yazı tipi değiştirmeyi etkinleştirmek veya devre dışı bırakmak, eksik yazı tiplerinin otomatik olarak varsayılan yazı tipiyle değiştirilip değiştirilmeyeceğini denetlemenize olanak tanır. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+## giriiş
+
+Hiç kendinizi bir Word belgesinde titizlikle seçtiğiniz yazı tiplerinin başka bir bilgisayarda görüntülendiğinde değiştirildiği bir durumda buldunuz mu? Sinir bozucu, değil mi? Bunun nedeni, sistemin eksik bir yazı tipini kullanılabilir bir yazı tipiyle değiştirdiği bir işlem olan yazı tipi değiştirme işlemidir. Ama endişelenmeyin! Aspose.Words for .NET ile yazı tipi değişimini kolayca yönetebilir ve kontrol edebilirsiniz. Bu eğitimde, Word belgelerinizde yazı tipi değiştirmeyi etkinleştirme veya devre dışı bırakma adımlarında size yol göstererek belgelerinizin her zaman tam istediğiniz gibi görünmesini sağlayacağız.
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
-- C# programlama dili hakkında çalışma bilgisi
-- .NET için Aspose.Words kütüphanesi projenizde yüklü
-- Yazı tipi değişikliğiyle veya yazı tipi değişikliği olmadan oluşturmak istediğiniz bir Word belgesi
 
-## 1. Adım: Belge dizinini tanımlayın
- Öncelikle, Word belgenizin konumuna giden dizin yolunu ayarlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+Adımlara geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+-  Aspose.Words for .NET: En son sürümü indirin[Burada](https://releases.aspose.com/words/net/).
+- Visual Studio: .NET'i destekleyen herhangi bir sürüm.
+- Temel C# bilgisi: Bu, kodlama örneklerini takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için projenize gerekli ad alanlarının aktarıldığından emin olun. Bunları C# dosyanızın en üstüne ekleyin:
 
 ```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 2. Adım: Belgeyi yükleyin ve yazı tipi ayarlarını yapılandırın
- Daha sonra, oluşturmak istediğiniz Word belgesini yükleyeceğiz ve örneğini oluşturacağız.`FontSettings` Yazı tipi ayarlarını yönetmek için sınıf. Yazı tipi adını belirterek varsayılan yazı tipi geçersiz kılmayı ayarlayacağız.`DefaultFontName` ve yazı tipi bilgilerini geçersiz kılmayı şununla devre dışı bırakın:`Enabled` ayarlanır`false`.
+Şimdi süreci basit, yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Projenizi Kurun
+
+Öncelikle Visual Studio'da yeni bir proje oluşturun ve Aspose.Words for .NET kütüphanesine bir referans ekleyin. Henüz yapmadıysanız, şuradan indirin:[Web sitesi](https://releases.aspose.com/words/net/).
+
+## 2. Adım: Belgenizi Yükleyin
+
+Ardından, çalışmak istediğiniz belgeyi yükleyin. İşte bunu nasıl yapacağınız:
 
 ```csharp
-// Belgeyi yükleyin
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Yazı tipi ayarlarını yapılandırma
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Yazı tipi ayarlarını belgeye uygulama
-doc.FontSettings = fontSettings;
-```
-
-## 3. Adım: İşlenen belgeyi kaydedin
-Son olarak, tanımlanmış yazı tipi geçersiz kılma ayarlarına uyacak şekilde oluşturulan belgeyi kaydedeceğiz.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Aspose.Words for .NET kullanarak Yazı Tipi Değiştirmeyi Etkinleştirme ve Devre Dışı Bırakma için örnek kaynak kodu 
-
-```csharp
-
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile. Bu kod belgeyi belleğe yükler, böylece onu işleyebilirsiniz.
+
+## 3. Adım: Yazı Tipi Ayarlarını Yapılandırın
+
+ Şimdi bir oluşturalım`FontSettings` yazı tipi değiştirme ayarlarını yönetme nesnesi:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Adım 4: Varsayılan Yazı Tipi Değiştirmeyi Ayarlayın
+
+Varsayılan yazı tipi değişimini istediğiniz bir yazı tipine ayarlayın. Orijinal yazı tipi mevcut değilse bu yazı tipi kullanılacaktır:
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+Bu örnekte varsayılan yazı tipi olarak Arial'ı kullanıyoruz.
+
+## Adım 5: Yazı Tipi Bilgisi Değiştirmeyi Devre Dışı Bırakın
+
+Sistemin eksik yazı tiplerini mevcut yazı tipleriyle değiştirmesini engelleyen yazı tipi bilgisi değiştirmeyi devre dışı bırakmak için aşağıdaki kodu kullanın:
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## Adım 6: Yazı Tipi Ayarlarını Belgeye Uygulayın
+
+Şimdi bu ayarları belgenize uygulayın:
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Adım 7: Belgenizi Kaydedin
+
+Son olarak değiştirilen belgenizi kaydedin. İstediğiniz formatta kaydedebilirsiniz. Bu eğitim için onu PDF olarak kaydedeceğiz:
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Çözüm
-Bu eğitimde, bir Word belgesini Aspose.Words for .NET ile oluştururken yazı tipi değiştirmeyi nasıl etkinleştirip devre dışı bırakacağımızı gördük. Yazı tipi değişimini kontrol ederek, oluşturulan belgelerinizde eksik yazı tiplerinin nasıl ele alınacağını etkileyebilirsiniz. Word belgelerinizdeki yazı tiplerinin yönetimini özelleştirmek için bu özelliği kullanmaktan çekinmeyin.
 
-### SSS'ler
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinizdeki yazı tipi değişimini kolayca kontrol edebilirsiniz. Bu, belgelerinizin nerede görüntülenirse görüntülensin amaçlanan görünüm ve hislerini korumasını sağlar.
 
-#### S: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi nasıl etkinleştirebilirim?
+## SSS'ler
 
-C: Aspose.Words ile bir Word belgesinde yazı tipi değişimini etkinleştirmek için gerekli yazı tipleri mevcut olmadığında kullanılacak ikame yazı tiplerini belirlemek için API'yi kullanabilirsiniz. Bu, orijinal yazı tipleri olmasa bile tutarlı metin görselleştirmesi sağlayacaktır.
+### Değiştirmek için Arial dışındaki yazı tiplerini kullanabilir miyim?
 
-#### S: Aspose.Words ile bir Word belgesinde yazı tipi değiştirmeyi devre dışı bırakmak mümkün müdür?
+ Kesinlikle! Yazı tipi adını değiştirerek sisteminizde bulunan herhangi bir yazı tipini belirleyebilirsiniz.`DefaultFontName` mülk.
 
-C: Evet, Aspose.Words ile Word belgesinde yazı tipi değiştirmeyi devre dışı bırakabilirsiniz. API'yi kullanarak, Word'ün gerekli yazı tiplerini diğer yazı tipleriyle değiştirmesini önleyebilirsiniz; bu, metnin orijinal görünümünü korur.
+### Belirtilen varsayılan yazı tipi mevcut değilse ne olur?
 
-#### S: Bir Word belgesinde değişiklik sırasında gerekli yazı tipleri eksik olduğunda ne olur?
+Varsayılan yazı tipi mevcut değilse Aspose.Words, uygun bir alternatif bulmak için sistem geri dönüş mekanizmasını kullanacaktır.
 
-C: Bir Word belgesinde değişiklik sırasında gerekli yazı tipleri eksik olduğunda Aspose.Words bu sorunu tespit edebilir ve size düzeltmeniz için seçenekler sunabilir. Eksik yazı tiplerini alternatif yazı tipleriyle değiştirmeyi veya eksik yazı tiplerini belgeye dahil ederek doğru görüntülemeyi seçebilirsiniz.
+### Yazı tipi değiştirmeyi devre dışı bıraktıktan sonra tekrar etkinleştirebilir miyim?
 
-#### S: Bir Word belgesindeki yazı tiplerini Aspose.Words ile değiştirirken eksik yazı tiplerini nasıl halledebilirim?
+ Evet, geçiş yapabilirsiniz`Enabled` mülkiyeti`FontInfoSubstitution` geri dönmek`true` yazı tipi değiştirmeyi tekrar etkinleştirmek istiyorsanız.
 
-C: Bir Word belgesinde Aspose.Words ile değiştirirken eksik yazı tiplerini ele almak için, eksik yazı tiplerini tespit etmek ve çözünürlük seçenekleri sunmak amacıyla API'yi kullanabilirsiniz. İhtiyaçlarınıza bağlı olarak, eksik yazı tiplerini alternatif yazı tipleriyle değiştirmeyi veya eksik yazı tiplerini belgeye dahil etmeyi seçebilirsiniz.
+### Hangi yazı tiplerinin değiştirildiğini kontrol etmenin bir yolu var mı?
 
-#### S: Bir Word belgesinde yazı tipi değişimini denetlemek önemli midir?
+Evet, Aspose.Words, yazı tipi değişimini günlüğe kaydetme ve izleme yöntemleri sunarak hangi yazı tiplerinin değiştirildiğini görmenizi sağlar.
 
-C: Evet, metnin görsel bütünlüğünü korumak için bir Word belgesinde yazı tipi değişimini kontrol etmek önemlidir. Yazı tipi değiştirmeyi etkinleştirmek veya devre dışı bırakmak için Aspose.Words'ü kullanarak gerekli yazı tiplerinin kullanılmasını sağlayabilir ve eksik veya değiştirilmiş yazı tiplerinden kaynaklanan sorunları önleyebilirsiniz.
+### Bu yöntemi DOCX dışında diğer belge formatları için de kullanabilir miyim?
+
+Kesinlikle! Aspose.Words çeşitli formatları destekler ve bu yazı tipi ayarlarını desteklenen herhangi bir formata uygulayabilirsiniz.

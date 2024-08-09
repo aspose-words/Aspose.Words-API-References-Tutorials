@@ -92,7 +92,7 @@ aí está! Você exportou recursos com êxito ao salvar um documento do Word com
 ## Perguntas frequentes
 
 ### Posso exportar imagens junto com fontes e CSS?
- Sim você pode! Aspose.Words for .NET também oferece suporte à exportação de imagens. Apenas certifique-se de configurar o`HtmlSaveOptions` de acordo.
+ Sim, você pode! Aspose.Words for .NET também oferece suporte à exportação de imagens. Apenas certifique-se de configurar o`HtmlSaveOptions` de acordo.
 
 ### Existe uma maneira de incorporar CSS em vez de usar uma folha de estilo externa?
  Absolutamente. Você pode definir`CssStyleSheetType` para`CssStyleSheetType.Embedded` se você preferir estilos incorporados.
@@ -101,7 +101,7 @@ aí está! Você exportou recursos com êxito ao salvar um documento do Word com
  Você pode especificar qualquer nome de arquivo que desejar no`doc.Save` método. Por exemplo,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
 ### O Aspose.Words oferece suporte a outros formatos além de HTML?
- Sim, suporta vários formatos, incluindo PDF, DOCX, TXT e muito mais. Confira a[documentação](https://reference.aspose.com/words/net/) para obter uma lista completa.
+ Sim, suporta vários formatos, incluindo PDF, DOCX, TXT e muito mais. Confira o[documentação](https://reference.aspose.com/words/net/) para obter uma lista completa.
 
 ### Onde posso obter mais suporte e recursos?
 Para obter mais ajuda, visite o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) . Você também pode encontrar documentação detalhada e exemplos no[Aspor site](https://reference.aspose.com/words/net/).

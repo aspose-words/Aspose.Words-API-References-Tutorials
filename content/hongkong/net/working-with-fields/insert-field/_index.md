@@ -74,7 +74,7 @@ builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 
 ### 儲存文件
 
-插入欄位後，我們需要儲存文件。就是這樣：
+插入欄位後，我們需要儲存文件。方法如下：
 
 ```csharp
 doc.Save(dataDir + "InsertionField.docx");
@@ -91,7 +91,7 @@ doc.Save(dataDir + "InsertionField.docx");
 ### 我可以使用 Aspose.Words for .NET 插入不同類型的欄位嗎？  
 絕對地！ Aspose.Words 支援廣泛的字段，包括 MERGEFIELD、IF、INCLUDETEXT 等。
 
-### 如何格式化插入文件中的欄位？  
+### 如何設定插入文件中的欄位的格式？  
 您可以使用欄位開關來格式化欄位。例如，`\* MERGEFORMAT`保留應用於該欄位的格式。
 
 ### Aspose.Words for .NET 與 .NET Core 相容嗎？  

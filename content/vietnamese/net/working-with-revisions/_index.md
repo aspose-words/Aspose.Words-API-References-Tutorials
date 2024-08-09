@@ -16,12 +16,12 @@ Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh ng
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Chấp nhận sửa đổi](./accept-revisions/) | Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words cho .NET. |
-| [Nhận sửa đổi các loại từ](./get-revision-types/) | Nhận các loại từ sửa đổi trong tài liệu Word với Aspose.Words cho .NET. |
-| [Nhận nhóm sửa đổi](./get-revision-groups/) | Nhận thông tin chi tiết về nhóm sửa đổi trong tài liệu Word bằng Aspose.Words for .NET. |
-| [Xóa nhận xét trong tệp PDF](./remove-comments-in-pdf/) | Xóa nhận xét trong tệp PDF bằng Aspose.Words cho .NET. |
-| [Hiển thị các bản sửa đổi trong bong bóng](./show-revisions-in-balloons/) | Hiển thị các bản sửa đổi dưới dạng bong bóng với Aspose.Words for .NET. |
-| [Nhận thông tin chi tiết về nhóm sửa đổi](./get-revision-group-details/) | Nhận thông tin chi tiết về nhóm sửa đổi trong tài liệu Word bằng Aspose.Words for .NET. |
-| [Truy cập phiên bản sửa đổi](./access-revised-version/) | Truy cập phiên bản sửa đổi của tài liệu Word bằng Aspose.Words cho .NET. |
-| [Di chuyển nút trong tài liệu được theo dõi](./move-node-in-tracked-document/) | Di chuyển các nút trong tài liệu được theo dõi bằng Aspose.Words for .NET. |
-| [Sửa đổi hình dạng](./shape-revision/) | Sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Chấp nhận sửa đổi](./accept-revisions/) | Sửa đổi tài liệu chính với Aspose.Words cho .NET. Học cách theo dõi, chấp nhận và từ chối các thay đổi một cách dễ dàng. Tăng cường kỹ năng quản lý tài liệu của bạn. |
+| [Nhận sửa đổi các loại từ](./get-revision-types/) |Tìm hiểu cách lấy các loại từ sửa đổi trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước này giúp bạn xử lý các bản sửa đổi tài liệu một cách hiệu quả. |
+| [Nhận nhóm sửa đổi](./get-revision-groups/) | Tìm hiểu cách truy xuất các nhóm sửa đổi từ tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. Hoàn hảo cho việc quản lý tài liệu. |
+| [Xóa nhận xét trong tệp PDF](./remove-comments-in-pdf/) | Tìm hiểu cách xóa nhận xét khỏi tệp PDF bằng Aspose.Words dành cho .NET với hướng dẫn từng bước của chúng tôi. |
+| [Hiển thị các bản sửa đổi trong bong bóng](./show-revisions-in-balloons/) | Tìm hiểu cách hiển thị các bản sửa đổi trong bong bóng bằng Aspose.Words cho .NET. Hướng dẫn chi tiết này sẽ hướng dẫn bạn từng bước, đảm bảo các thay đổi trong tài liệu của bạn được rõ ràng và có tổ chức. |
+| [Nhận thông tin chi tiết về nhóm sửa đổi](./get-revision-group-details/) | Dễ dàng lấy thông tin chi tiết về nhóm sửa đổi trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển .NET. |
+| [Truy cập phiên bản sửa đổi](./access-revised-version/) | Tìm hiểu cách truy cập và hiển thị phiên bản sửa đổi của tài liệu bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để quản lý tài liệu liền mạch. |
+| [Di chuyển nút trong tài liệu được theo dõi](./move-node-in-tracked-document/) | Tìm hiểu cách di chuyển các nút trong tài liệu Word được theo dõi bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển. |
+| [Sửa đổi hình dạng](./shape-revision/) | Tìm hiểu cách xử lý các bản sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn toàn diện này. Theo dõi chính các thay đổi, chèn hình dạng, v.v. |

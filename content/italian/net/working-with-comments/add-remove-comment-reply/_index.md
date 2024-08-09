@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-comments/add-remove-comment-reply/
 ---
-## introduzione
+## Introduzione
 
 Lavorare con i commenti e le relative risposte nei documenti di Word può migliorare in modo significativo il processo di revisione dei documenti. Con Aspose.Words per .NET, puoi automatizzare queste attività, rendendo il tuo flusso di lavoro più efficiente e snello. Questo tutorial ti guiderà attraverso l'aggiunta e la rimozione delle risposte ai commenti, fornendo una guida passo passo per padroneggiare questa funzionalità.
 

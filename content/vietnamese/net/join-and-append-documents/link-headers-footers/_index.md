@@ -31,7 +31,7 @@ Hãy chia quy trình thành các bước rõ ràng:
 
 ## Bước 1: Tải tài liệu
 
- Đầu tiên, tải tài liệu nguồn và đích vào`Document` các đối tượng:
+ Đầu tiên, tải tài liệu nguồn và đích vào`Document` đối tượng:
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Wstęp
 
 Dodawanie nagłówków i stopek do dokumentów może zwiększyć ich profesjonalizm i czytelność. Dzięki Aspose.Words dla .NET możesz łatwo tworzyć i dostosowywać nagłówki i stopki dla swoich dokumentów Word. W tym samouczku przeprowadzimy Cię krok po kroku przez proces, upewniając się, że możesz bezproblemowo wdrożyć te funkcje.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Krok 2: Utwórz nowy dokument
 
- Utwórz nowy dokument i a`DocumentBuilder` aby ułatwić dodawanie treści.
+ Utwórz nowy dokument i a`DocumentBuilder`aby ułatwić dodawanie treści.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ Wykonując te kroki, możesz skutecznie dodawać i dostosowywać nagłówki i st
 
 ## Często zadawane pytania
 
-### P1: Co to jest Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
 
 Aspose.Words dla .NET to biblioteka, która umożliwia programistom programowe tworzenie, edytowanie i konwertowanie dokumentów programu Word w aplikacjach .NET.
 
-### P2: Czy mogę dodać obrazy do nagłówka lub stopki?
+### Czy mogę dodać obrazy do nagłówka lub stopki?
 
  Tak, możesz łatwo dodawać obrazy do nagłówka lub stopki za pomocą`DocumentBuilder.InsertImage` metoda.
 
-### P3: Jak ustawić różne nagłówki i stopki dla pierwszej strony?
+### Jak ustawić różne nagłówki i stopki dla pierwszej strony?
 
  Możesz ustawić różne nagłówki i stopki dla pierwszej strony, korzystając z opcji`DifferentFirstPageHeaderFooter` własność`PageSetup` klasa.
 
-### P4: Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words?
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words?
 
  Obszerną dokumentację można znaleźć na stronie[Strona dokumentacji API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### P5: Czy dostępna jest obsługa Aspose.Words?
+### Czy dostępna jest obsługa Aspose.Words?
 
  Tak, Aspose oferuje wsparcie za pośrednictwem swoich[forum wsparcia](https://forum.aspose.com/c/words/8).

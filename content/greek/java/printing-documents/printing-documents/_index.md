@@ -18,7 +18,7 @@ url: /el/java/printing-documents/printing-documents/
 
 Πριν βουτήξουμε στον κώδικα, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-- Εγκατεστημένο Java Development Kit (JDK).
+- Εγκαταστάθηκε το Java Development Kit (JDK).
 - Η βιβλιοθήκη Aspose.Words for Java έγινε λήψη και προσθήκη στο έργο σας
 
 ## Φόρτωση του εγγράφου
@@ -180,7 +180,7 @@ class MultipagePrintDocument implements Printable
 }
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συγχαρητήρια! Εκτυπώσατε με επιτυχία ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για Java. Αυτός ο οδηγός βήμα προς βήμα θα σας βοηθήσει να ενσωματώσετε απρόσκοπτα την εκτύπωση εγγράφων στις εφαρμογές σας Java.
 

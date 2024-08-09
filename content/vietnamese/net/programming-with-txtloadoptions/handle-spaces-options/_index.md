@@ -99,7 +99,7 @@ Xử lý khoảng trắng trong tài liệu văn bản là một nhiệm vụ ph
 ## Câu hỏi thường gặp
 
 ### Làm cách nào tôi có thể xử lý khoảng trắng trong tệp văn bản bằng Aspose.Words cho .NET?  
- Bạn có thể dùng`TxtLoadOptions` lớp để chỉ định cách quản lý khoảng trắng ở đầu và cuối khi tải tệp văn bản.
+ Bạn có thể sử dụng`TxtLoadOptions` lớp để chỉ định cách quản lý khoảng trắng ở đầu và cuối khi tải tệp văn bản.
 
 ### Tôi có thể giữ khoảng trắng ở đầu tài liệu của mình không?  
  Có, bạn có thể cấu hình`TxtLoadOptions` để giữ không gian dẫn đầu bằng cách thiết lập`LeadingSpacesOptions` ĐẾN`TxtLeadingSpacesOptions.None`.

@@ -50,7 +50,7 @@ Hyphenation.registerDictionary("de-CH", stream);
 doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.pdf");
 ```
 
-## 六，結論
+## 六、結論
 
 連字符在保持文件的品質和美觀方面起著至關重要的作用，尤其是在處理多語言內容時。 Aspose.Words for Java 簡化了套用連字號規則的過程，以確保您的文件具有最佳外觀。
 
@@ -64,7 +64,7 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ### 2. 我可以在多種語言中使用連字符嗎？
 
-是的你可以。 Aspose.Words for Java 可讓您註冊和載入不同語言的連字字典。
+是的，你可以。 Aspose.Words for Java 可讓您註冊和載入不同語言的連字字典。
 
 ### 3. Aspose.Words for Java 是否易於整合到我的 Java 專案中？
 

@@ -2,7 +2,7 @@
 title: Domina la inteligencia documental
 linktitle: Domina la inteligencia documental
 second_title: API de gestión de documentos Aspose.Words Python
-description: Domine la inteligencia de documentos con Aspose.Words para Python. Automatice flujos de trabajo, analice datos y procese documentos de manera eficiente. ¡Empieza ahora!
+description: Domine la inteligencia de documentos con Aspose.Words para Python. Automatice flujos de trabajo, analice datos y procese documentos de manera eficiente. ¡Empiece ahora!
 type: docs
 weight: 10
 url: /es/python-net/document-intelligence/master-document-intelligence/
@@ -140,7 +140,7 @@ doc.save("output.docx")
 
 ### Técnicas de PNL para el análisis de documentos
 
-Combine el poder de las bibliotecas de procesamiento del lenguaje natural (NLP) con Aspose.Words para realizar análisis de documentos en profundidad, análisis de sentimientos y reconocimiento de entidades.
+Combine el poder de las bibliotecas de procesamiento del lenguaje natural (NLP) con Aspose.Words para realizar análisis de documentos en profundidad, análisis de opiniones y reconocimiento de entidades.
 
 ```python
 # Use a Python NLP library (e.g., spaCy) in combination with Aspose.Words for document analysis

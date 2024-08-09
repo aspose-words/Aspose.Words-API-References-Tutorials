@@ -34,7 +34,7 @@ Most bontsuk le az IF mezők átalakítási folyamatát egy bekezdésben egyszer
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
 
-Először is meg kell határoznia, hol találhatók a dokumentumok. Tekintse ezt úgy, mint a munkaterület beállítását.
+Először is meg kell határoznia, hol találhatók a dokumentumok. Tekintsd ezt a munkaterület beállításának.
 
 ```csharp
 // A dokumentumok könyvtár elérési útja.

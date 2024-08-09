@@ -15,7 +15,7 @@ url: /es/net/programming-with-document-options-and-settings/view-options/
 
 Antes de sumergirnos de lleno en el código, asegurémonos de tener todo lo que necesitamos para seguir este tutorial. Aquí hay una lista de verificación rápida:
 
-1.  Biblioteca Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: debe tener un IDE como Visual Studio instalado en su máquina.
 3. Conocimientos básicos de C#: si bien mantendremos las cosas simples, una comprensión básica de C# será beneficiosa.
 4. Documento de Word de muestra: tenga listo un documento de Word de muestra. En este tutorial, nos referiremos a él como "Documento.docx".
@@ -72,7 +72,7 @@ Finalmente, después de realizar los cambios necesarios, querrás guardar tu doc
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 ```
 
-Esta línea de código guarda el documento modificado con un nuevo nombre, para que no sobrescriba su archivo original. Ahora puede abrir este archivo para ver las opciones de vista actualizadas.
+Esta línea de código guarda el documento modificado con un nuevo nombre, para que no sobrescriba su archivo original. Ahora puede abrir este archivo para ver las opciones de visualización actualizadas.
 
 ## Conclusión
 

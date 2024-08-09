@@ -129,13 +129,13 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ## FAQ
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
-Aspose.Words를 무료로 사용할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는[무료 시험판](https://releases.aspose.com/).
+Aspose.Words를 무료로 사용할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는[무료 평가판](https://releases.aspose.com/).
 
 ### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
  통해 지원을 받으실 수 있습니다.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8).
 
 ### 다른 유형의 차트를 추가할 수 있나요?
- 네, Aspose.Words는 막대형, 꺾은선형, 기둥형 차트 등 다양한 차트 유형을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 네, Aspose.Words는 막대형, 꺾은선형, 기둥형 차트 등 다양한 차트 유형을 지원합니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### Aspose.Words는 .NET Core와 호환됩니까?
  예, Aspose.Words는 .NET Core와 호환됩니다. 자세한 내용은 다음에서 확인할 수 있습니다.[선적 서류 비치](https://reference.aspose.com/words/net/).

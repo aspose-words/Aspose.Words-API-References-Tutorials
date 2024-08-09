@@ -59,7 +59,7 @@ Aspose.Words는 DOCX, EPUB, PDF, HTML 등을 포함한 광범위한 문서 형�
 예, Aspose.Words는 .NET Core 및 .NET Framework를 완벽하게 지원합니다.
 
 ### Aspose.Words에 대한 추가 예제와 문서는 어디에서 찾을 수 있나요?
- 방문하다[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 자세한 예시와 API 참조를 확인하세요.
+ 방문[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 자세한 예시와 API 참조를 확인하세요.
 
 ### Aspose.Words 관련 문제에 대한 지원을 어떻게 받을 수 있나요?
  지원을 받으려면 다음을 방문하세요.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 질문을 하고 커뮤니티와 소통할 수 있는 곳입니다.

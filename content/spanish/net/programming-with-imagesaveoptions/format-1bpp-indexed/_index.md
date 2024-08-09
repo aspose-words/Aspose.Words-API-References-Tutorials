@@ -9,13 +9,13 @@ url: /es/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## Introducción
 
-¿Alguna vez te has preguntado cómo guardar un documento de Word como una imagen en blanco y negro con sólo unas pocas líneas de código? ¡Pues estás de suerte! Hoy, nos sumergimos en un pequeño truco usando Aspose.Words para .NET que le permite convertir sus documentos en imágenes indexadas de 1 Bpp. Este formato es perfecto para ciertos tipos de archivo digital, impresión o cuando necesitas ahorrar espacio. Desglosaremos cada paso para que sea muy fácil. ¿Listo para comenzar? ¡Vamos a sumergirnos!
+¿Alguna vez te has preguntado cómo guardar un documento de Word como una imagen en blanco y negro con sólo unas pocas líneas de código? ¡Pues estás de suerte! Hoy, nos sumergimos en un pequeño truco usando Aspose.Words para .NET que le permite convertir sus documentos en imágenes indexadas de 1 Bpp. Este formato es perfecto para ciertos tipos de archivo digital, impresión o cuando necesitas ahorrar espacio. Desglosaremos cada paso para que sea muy fácil. ¿Listo para empezar? ¡Vamos a sumergirnos!
 
 ## Requisitos previos
 
 Antes de ensuciarnos las manos, hay algunas cosas que debes tener en cuenta:
 
--  Aspose.Words para .NET: asegúrese de tener la biblioteca instalada. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: asegúrese de tener la biblioteca instalada. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo .NET: Visual Studio es una buena opción, pero puedes utilizar cualquier entorno con el que te sientas cómodo.
 - Conocimientos básicos de C#: no se preocupe, lo haremos sencillo, pero un poco de familiaridad con C# le ayudará.
 - Un documento de Word: tenga un documento de Word de muestra listo para convertir.
@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 Una imagen indexada de 1 Bpp (1 bit por píxel) es un formato de imagen en blanco y negro en el que cada píxel está representado por un único bit, ya sea 0 o 1. Este formato ocupa muy poco espacio.
 
 ### ¿Puedo convertir varias páginas de un documento de Word a la vez?
- Sí tu puedes. Modificar el`PageSet` propiedad en el`ImageSaveOptions` para incluir varias páginas o el documento completo.
+ Sí, puedes. Modificar el`PageSet` propiedad en el`ImageSaveOptions` para incluir varias páginas o el documento completo.
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?
  Sí, Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes conseguir un[licencia temporal aquí](https://purchase.aspose.com/temporary-license/).

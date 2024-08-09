@@ -15,8 +15,8 @@ Tutorial ini memberi Anda pendekatan langsung langkah demi langkah untuk Pemrose
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Masukkan Objek Ole ke dalam Dokumen Word](./insert-ole-object/) | Pelajari cara menyisipkan objek OLE dalam dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Masukkan Objek Ole Di Word Dengan Paket Ole](./insert-ole-object-with-ole-package/) | Pelajari cara menyisipkan objek OLE di Word dengan paket OLE ke dalam dokumen menggunakan Aspose.Words untuk .NET. |
-| [Sisipkan Objek Ole Di Dokumen Word Sebagai Ikon](./insert-ole-object-as-icon/) | Pelajari cara menyisipkan objek OLE di dokumen Word sebagai ikon dengan Aspose.Words untuk .NET. |
-| [Masukkan Objek Ole Sebagai Ikon Menggunakan Stream](./insert-ole-object-as-icon-using-stream/) | Pelajari cara menyisipkan objek OLE sebagai ikon menggunakan aliran dengan Aspose.Words untuk .NET. |
-| [Baca Properti XControl Aktif Dari File Word](./read-active-xcontrol-properties/) | Baca properti kontrol ActiveX dalam file Word dengan Aspose.Words untuk .NET. |
+| [Masukkan Objek Ole ke dalam Dokumen Word](./insert-ole-object/) | Pelajari cara menyisipkan objek OLE di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurnakan dokumen Anda dengan konten yang disematkan. |
+| [Masukkan Objek Ole Di Word Dengan Paket Ole](./insert-ole-object-with-ole-package/) | Pelajari cara menyisipkan objek OLE di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk menyematkan file dengan lancar. |
+| [Sisipkan Objek Ole Di Dokumen Word Sebagai Ikon](./insert-ole-object-as-icon/) | Pelajari cara menyisipkan objek OLE sebagai ikon di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk menyempurnakan dokumen Anda. |
+| [Masukkan Objek Ole Sebagai Ikon Menggunakan Stream](./insert-ole-object-as-icon-using-stream/) | Pelajari cara menyisipkan objek OLE sebagai ikon menggunakan aliran dengan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang mendetail ini. |
+| [Baca Properti XControl Aktif Dari File Word](./read-active-xcontrol-properties/) | Pelajari cara membaca properti kontrol ActiveX dari file Word menggunakan Aspose.Words untuk .NET dalam panduan langkah demi langkah. Tingkatkan keterampilan otomatisasi dokumen Anda. |

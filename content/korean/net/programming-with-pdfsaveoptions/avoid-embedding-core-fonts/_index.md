@@ -2,7 +2,7 @@
 title: 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기 줄이기
 linktitle: 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기 줄이기
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기를 줄이는 방법을 알아보세요. PDF를 최적화하려면 단계별 가이드를 따르세요.
+description: .NET용 Aspose.Words를 사용하여 핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기를 줄이는 방법을 알아보세요. PDF를 최적화하려면 단계별 가이드를 따르십시오.
 type: docs
 weight: 10
 url: /ko/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/

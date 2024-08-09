@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng chia bảng trong tài liệu Word bằng Aspose.Words cho .NET. Cách tiếp cận này giúp bạn quản lý các bảng lớn hiệu quả hơn, cải thiện khả năng đọc và sắp xếp tài liệu của bạn. Hãy dùng thử và xem nó đơn giản hóa công việc của bạn với các bảng trong tài liệu Word như thế nào.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng chia bảng trong tài liệu Word bằng Aspose.Words cho .NET. Cách tiếp cận này giúp bạn quản lý các bảng lớn hiệu quả hơn, cải thiện khả năng đọc và sắp xếp tài liệu của bạn. Hãy dùng thử và xem nó đơn giản hóa công việc của bạn với các bảng trong tài liệu Word như thế nào.
 
 ## Câu hỏi thường gặp
 

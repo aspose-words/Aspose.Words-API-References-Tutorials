@@ -16,8 +16,8 @@ Jeśli jesteś programistą i chcesz zautomatyzować tworzenie i formatowanie do
 Zanim przejdziemy do najdrobniejszych szczegółów, upewnijmy się, że masz wszystko, czego potrzebujesz, wraz z tym samouczkiem.
 
 1. Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne. Visual Studio to świetny wybór.
-2.  Aspose.Words dla .NET: Pobierz i zainstaluj bibliotekę Aspose.Words dla .NET. Możesz to dostać[Tutaj](https://releases.aspose.com/words/net/).
-3.  Licencja: Uzyskaj licencję tymczasową, jeśli nie masz pełnej. Zdobyć[Tutaj](https://purchase.aspose.com/temporary-license/).
+2.  Aspose.Words dla .NET: Pobierz i zainstaluj bibliotekę Aspose.Words dla .NET. Możesz to zdobyć[Tutaj](https://releases.aspose.com/words/net/).
+3.  Licencja: Uzyskaj licencję tymczasową, jeśli nie masz pełnej. Dostać za swoje[Tutaj](https://purchase.aspose.com/temporary-license/).
 4. Podstawowa znajomość C#: Znajomość C# i frameworku .NET będzie korzystna.
 
 ## Importuj przestrzenie nazw
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Lists;
 ```
 
-## Krok 1: Zainicjuj dokument i kreatora
+## Krok 1: Zainicjuj dokument i kreator
 
 Na początek utwórzmy nowy dokument Worda i zainicjujmy DocumentBuilder. Klasa DocumentBuilder udostępnia metody wstawiania treści do dokumentu.
 

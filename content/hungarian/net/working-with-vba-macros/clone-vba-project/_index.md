@@ -60,7 +60,7 @@ A beállított könyvtár mellett ideje betölteni a klónozni kívánt VBA-proj
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
-Ez a kód betölti a "VBA project.docm" nevű Word dokumentumot a megadott könyvtárból a`doc` tárgy.
+Ez a kód betölti a "VBA project.docm" nevű Word dokumentumot a megadott könyvtárból a`doc` objektum.
 
 ## 3. lépés: A VBA projekt klónozása
 
@@ -94,7 +94,7 @@ Ez a sor a klónozott VBA-projektet tartalmazó új dokumentumot "WorkingWithVba
 
 És megvan! Éppen most sajátította el a VBA-projektek Word dokumentumokba való klónozásának művészetét az Aspose.Words for .NET használatával. Ezzel a nagy teljesítményű könyvtárral gyerekjáték az összetett Word-dokumentumokkal való munka, az egyszerű szövegmanipulációktól a bonyolult VBA-projektekig. Az útmutató követésével nemcsak a VBA-projektek klónozását tanulta meg, hanem megalapozta az Aspose.Words hatalmas képességeinek további felfedezését is.
 
- Ha mélyebbre szeretne merülni, ne felejtse el megnézni a[API dokumentáció](https://reference.aspose.com/words/net/) . Bármilyen kérdése vagy támogatása esetén a[támogatói fórum](https://forum.aspose.com/c/words/8) mindig remek hely a kapcsolattartásra más fejlesztőkkel.
+ Ha mélyebbre szeretne merülni, ne felejtse el megnézni a[API dokumentáció](https://reference.aspose.com/words/net/) . Bármilyen kérdése vagy támogatása esetén a[támogatási fórum](https://forum.aspose.com/c/words/8) mindig remek hely a kapcsolattartásra más fejlesztőkkel.
 
 Boldog kódolást, és ne feledje, minden dokumentumkezelési kaland egyetlen kódsorral kezdődik!
 

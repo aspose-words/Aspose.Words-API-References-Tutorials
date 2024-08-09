@@ -16,7 +16,7 @@ V této příručce vás provedeme procesem ukládání dokumentů ve formátu R
 
 Než začnete, ujistěte se, že máte splněny následující předpoklady:
 
-1.  Knihovna Aspose.Words for Java: Ujistěte se, že máte knihovnu Aspose.Words for Java integrovanou do vašeho projektu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+1.  Knihovna Aspose.Words for Java: Ujistěte se, že máte knihovnu Aspose.Words for Java integrovanou do vašeho projektu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 2. Dokument k uložení: Měli byste mít existující dokument aplikace Word (např. "Document.docx"), který chcete uložit ve formátu RTF.
 
@@ -85,7 +85,7 @@ této příručce jsme si ukázali, jak ukládat dokumenty ve formátu RTF pomoc
 
 ### Je možné uložit dokument RTF bez obrázků?
 
- Rozhodně. Ukládání obrázků můžete zakázat pomocí`saveOptions.setSaveImagesAsWmf(false)`.
+ Jistě. Ukládání obrázků můžete zakázat pomocí`saveOptions.setSaveImagesAsWmf(false)`.
 
 ### Jak mohu zpracovat výjimky během procesu ukládání?
 

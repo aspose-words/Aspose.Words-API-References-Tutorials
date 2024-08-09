@@ -9,7 +9,7 @@ url: /fr/net/enable-opentype-features/open-type-features/
 ---
 ## Introduction
 
-Êtes-vous prêt à plonger dans le monde des fonctionnalités OpenType à l’aide d’Aspose.Words for .NET ? Attachez votre ceinture, car nous sommes sur le point de nous lancer dans un voyage engageant qui non seulement améliorera vos documents Word, mais fera également de vous un expert Aspose.Words. Commençons!
+Êtes-vous prêt à plonger dans le monde des fonctionnalités OpenType à l’aide d’Aspose.Words for .NET ? Attachez votre ceinture, car nous sommes sur le point de nous lancer dans un voyage engageant qui non seulement améliorera vos documents Word, mais fera également de vous un expert Aspose.Words. Commençons !
 
 ## Conditions préalables
 
@@ -90,14 +90,14 @@ Cette ligne de code enregistre le document au format PDF, intégrant les fonctio
 
 ## Conclusion
 
-Et voila! Vous avez activé avec succès les fonctionnalités OpenType dans votre document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez débloquer des capacités typographiques avancées, garantissant ainsi à vos documents un aspect professionnel et soigné.
+Et voilà ! Vous avez activé avec succès les fonctionnalités OpenType dans votre document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez débloquer des capacités typographiques avancées, garantissant ainsi à vos documents un aspect professionnel et soigné.
 
 Mais ne vous arrêtez pas là ! Explorez plus de fonctionnalités d'Aspose.Words et voyez comment vous pouvez améliorer davantage vos documents. N'oubliez pas que la pratique rend parfait, alors continuez à expérimenter et à apprendre.
 
 ## FAQ
 
 ### Que sont les fonctionnalités OpenType ?
-Les fonctionnalités OpenType incluent des fonctionnalités typographiques avancées telles que les ligatures, le crénage et les ensembles stylistiques qui améliorent l'apparence du texte dans les documents.
+Les fonctionnalités OpenType incluent des fonctionnalités typographiques avancées telles que les ligatures, le crénage et les jeux stylistiques qui améliorent l'apparence du texte dans les documents.
 
 ### Pourquoi utiliser HarfBuzz avec Aspose.Words ?
 HarfBuzz est un moteur de mise en forme de texte open source qui offre une prise en charge robuste des fonctionnalités OpenType, améliorant ainsi la qualité typographique de vos documents.
@@ -106,7 +106,7 @@ HarfBuzz est un moteur de mise en forme de texte open source qui offre une prise
 Oui, Aspose.Words prend en charge différents moteurs de mise en forme de texte. Cependant, HarfBuzz est fortement recommandé en raison de sa prise en charge complète des fonctionnalités OpenType.
 
 ### Aspose.Words est-il compatible avec toutes les versions de .NET ?
- Aspose.Words prend en charge diverses versions de .NET, notamment .NET Framework, .NET Core et .NET Standard. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour des informations détaillées sur la compatibilité.
+ Aspose.Words prend en charge diverses versions de .NET, notamment .NET Framework, .NET Core et .NET Standard. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour des informations détaillées sur la compatibilité.
 
 ### Comment puis-je essayer Aspose.Words avant d’acheter ?
  Vous pouvez télécharger un essai gratuit à partir du[Site Aspose](https://releases.aspose.com/) et demander une licence temporaire[ici](https://purchase.aspose.com/temporary-license/).

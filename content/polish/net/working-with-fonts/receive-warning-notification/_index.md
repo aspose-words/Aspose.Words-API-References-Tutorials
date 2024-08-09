@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/receive-warning-notification/
 ---
+## Wstęp
 
 Czy masz dość rozwiązywania nieoczekiwanych problemów z czcionkami w dokumentach? Dzięki Aspose.Words dla .NET możesz otrzymywać powiadomienia o wszelkich potencjalnych problemach podczas przetwarzania dokumentów, co ułatwia utrzymanie jakości dokumentów. Ten obszerny przewodnik przeprowadzi Cię przez proces konfigurowania powiadomień ostrzegawczych w Aspose.Words, dzięki czemu nigdy więcej nie przegapisz żadnego ważnego ostrzeżenia.
 
@@ -17,7 +18,7 @@ Zanim zagłębimy się w temat, upewnij się, że masz następujące elementy:
 - Podstawowa znajomość języka C#: Znajomość języka C# pomoże Ci zrozumieć i wdrożyć kroki.
 -  Biblioteka Aspose.Words dla .NET: Pobierz i zainstaluj ją z[link do pobrania](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: konfiguracja taka jak Visual Studio do pisania i uruchamiania kodu.
--  Przykładowy dokument: Przygotuj przykładowy dokument (np.`Rendering.docx`) pracować z.
+-  Przykładowy dokument: Przygotuj przykładowy dokument (np.`Rendering.docx`) do pracy.
 
 ## Importuj przestrzenie nazw
 
@@ -101,11 +102,11 @@ Nie, możesz określić tylko jedną domyślną czcionkę do zamiany. Można jed
 
 ###  P3: Czy mogę obsługiwać inne typy ostrzeżeń za pomocą`IWarningCallback`?
 
- Tak`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
+ Tak,`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
 
 ### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 
- Odwiedzić[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) do pomocy.
+ Odwiedź[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### P5: Czy można uzyskać tymczasową licencję na Aspose.Words?
 

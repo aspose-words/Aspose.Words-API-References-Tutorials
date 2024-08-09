@@ -41,4 +41,4 @@ Pelajari cara menggabungkan dan mengkloning dokumen secara efisien menggunakan A
 ### [Membandingkan Versi Dokumen untuk Pengendalian Revisi yang Efektif](./compare-document-versions/)
 Pelajari cara membandingkan versi dokumen secara efektif menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk kontrol revisi. Meningkatkan kolaborasi dan mencegah kesalahan.
 ### [Menguasai Teknik Pemformatan Dokumen untuk Dampak Visual](./document-formatting-techniques/)
-Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan lainnya. Panduan langkah demi langkah dengan contoh kode.
+Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan banyak lagi. Panduan langkah demi langkah dengan contoh kode.

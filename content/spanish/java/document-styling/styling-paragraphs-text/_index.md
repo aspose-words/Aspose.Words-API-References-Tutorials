@@ -185,7 +185,7 @@ Crear listas con viñetas o numeración es una tarea común de formato de docume
 // Crear un nuevo documento
 Document doc = new Document();
 
-// Crear una lista
+// crear una lista
 List list = new List(doc);
 
 // Agregar elementos de lista con viñetas
@@ -282,7 +282,7 @@ doc.save("PageLayoutDocument.docx");
 
 En este ejemplo, establecemos márgenes iguales de 1 pulgada en todos los lados de la página.
 
-## Encabezado y pié de página
+## Encabezado y pie de página
 
 Los encabezados y pies de página son esenciales para agregar información coherente a cada página de su documento. A continuación se explica cómo trabajar con encabezados y pies de página:
 
@@ -359,7 +359,7 @@ doc.save("Document.pdf", SaveFormat.PDF);
 
 Este fragmento de código guarda el documento como un archivo PDF.
 
-## Características avanzadas
+## Funciones avanzadas
 
 Aspose.Words para Java ofrece funciones avanzadas para la manipulación de documentos complejos. Estos incluyen combinación de correspondencia, comparación de documentos y más. Explore la documentación para obtener orientación detallada sobre estos temas avanzados.
 

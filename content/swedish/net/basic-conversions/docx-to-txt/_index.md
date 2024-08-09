@@ -40,7 +40,7 @@ Innan du dyker in i koden, se till att ditt projekt är korrekt konfigurerat.
 
 Därefter måste du ange sökvägen till din dokumentkatalog. Det är här dina DOCX-filer lagras och där de konverterade TXT-filerna kommer att sparas.
 
-1.  Definiera sökväg för datakatalog: Definiera sökvägen till din dokumentkatalog i din kod. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska vägen.
+1.  Definiera sökväg för datakatalog: Definiera sökvägen till din dokumentkatalog i din kod. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska vägen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

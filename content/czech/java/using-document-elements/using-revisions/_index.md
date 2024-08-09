@@ -135,7 +135,7 @@ Ano, můžete použít Aspose.Words for Java ke sledování revizí ve stávají
 
 ### 4. Existují nějaké licenční požadavky pro používání Aspose.Words for Java?
 
- Ano, k používání Aspose.Words for Java ve svých projektech budete muset získat licenci. Můžeš[získat přístup k licenci zde](https://purchase.aspose.com/buy).
+ Ano, k používání Aspose.Words for Java ve svých projektech budete muset získat licenci. Můžete[získat přístup k licenci zde](https://purchase.aspose.com/buy).
 
 ### 5. Kde najdu podporu pro Aspose.Words for Java?
 

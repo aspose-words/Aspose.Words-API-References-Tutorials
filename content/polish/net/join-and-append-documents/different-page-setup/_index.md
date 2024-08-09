@@ -9,13 +9,13 @@ url: /pl/net/join-and-append-documents/different-page-setup/
 ---
 ## Wstęp
 
-No hej! Gotowy do zanurzenia się w fascynujący świat manipulacji dokumentami za pomocą Aspose.Words dla .NET? Dzisiaj zajmiemy się czymś całkiem fajnym: konfigurowaniem różnych ustawień strony podczas łączenia dokumentów programu Word. Niezależnie od tego, czy łączysz raporty, tworzysz powieść, czy po prostu bawisz się dokumentami dla zabawy, ten przewodnik przeprowadzi Cię przez to krok po kroku. Zacznijmy!
+Hej tam! Gotowy do zanurzenia się w fascynujący świat manipulacji dokumentami za pomocą Aspose.Words dla .NET? Dzisiaj zajmiemy się czymś całkiem fajnym: konfigurowaniem różnych ustawień strony podczas łączenia dokumentów programu Word. Niezależnie od tego, czy łączysz raporty, tworzysz powieść, czy po prostu bawisz się dokumentami dla zabawy, ten przewodnik przeprowadzi Cię przez to krok po kroku. Zacznijmy!
 
 ## Warunki wstępne
 
 Zanim ubrudzimy sobie ręce, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: dowolna wersja obsługująca Aspose.Words dla .NET.
 3. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
 4. Podstawowa znajomość języka C#: tylko podstawy, aby zrozumieć składnię i strukturę.
@@ -133,7 +133,7 @@ Możesz także dopasować ustawienia marginesów w podobny sposób, jak szeroko�
 Tak, Aspose.Words dla .NET jest w pełni kompatybilny z .NET Core.
 
 ### Czy mogę zachować style z obu dokumentów?
- Tak`ImportFormatMode.KeepSourceFormatting` Opcja zapewnia zachowanie stylów z dokumentu źródłowego.
+ Tak,`ImportFormatMode.KeepSourceFormatting` Opcja zapewnia zachowanie stylów z dokumentu źródłowego.
 
 ### Gdzie mogę uzyskać dodatkową pomoc dotyczącą Aspose.Words?
  Sprawdź[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) lub odwiedź ich[forum wsparcia](https://forum.aspose.com/c/words/8) aby uzyskać dodatkową pomoc.

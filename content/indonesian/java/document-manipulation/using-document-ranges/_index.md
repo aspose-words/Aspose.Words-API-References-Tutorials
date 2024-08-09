@@ -12,7 +12,7 @@ url: /id/java/document-manipulation/using-document-ranges/
 
 Dalam panduan komprehensif ini, kita akan mempelajari cara memanfaatkan kekuatan rentang dokumen di Aspose.Words untuk Java. Anda akan mempelajari cara memanipulasi dan mengekstrak teks dari bagian tertentu dokumen, membuka banyak kemungkinan untuk kebutuhan pemrosesan dokumen Java Anda.
 
-## Mulai
+## Memulai
 
  Sebelum mendalami kodenya, pastikan Anda telah menyiapkan pustaka Aspose.Words untuk Java di proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
 

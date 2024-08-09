@@ -39,7 +39,7 @@ Innan vi börjar koda måste du ange sökvägen till din dokumentkatalog. Det ä
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument finns. Detta kommer att hjälpa programmet att enkelt hitta dina filer.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument finns. Detta kommer att hjälpa programmet att enkelt hitta dina filer.
 
 ## Steg 2: Ladda käll- och måldokument
 
@@ -90,7 +90,7 @@ Nu kommer den spännande delen - att faktiskt infoga källdokumentet i måldokum
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Använda`InsertDocument` metod kan vi infoga hela källdokumentet i måldokumentet. De`ImportFormatMode.KeepSourceFormatting` säkerställer att formateringen av källdokumentet bevaras.
+ Med hjälp av`InsertDocument` metod kan vi infoga hela källdokumentet i måldokumentet. De`ImportFormatMode.KeepSourceFormatting` säkerställer att formateringen av källdokumentet bevaras.
 
 ## Steg 7: Spara det sammanslagna dokumentet
 
@@ -121,4 +121,4 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 Absolut! Metoden som beskrivs kan införlivas i större applikationer för att automatisera dokumentbearbetningsuppgifter.
 
 ### Var kan jag hitta mer resurser och support?  
-För mer information kan du kontrollera[dokumentation](https://reference.aspose.com/words/net/) , eller besök[supportforum](https://forum.aspose.com/c/words/8) för assistens.
+För mer information kan du kontrollera[dokumentation](https://reference.aspose.com/words/net/) , eller besök[supportforum](https://forum.aspose.com/c/words/8) för hjälp.

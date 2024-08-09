@@ -56,7 +56,7 @@ Bu satır, belgenize "İşte bir SVG resmi: " metnini ekler. Eklemek üzere oldu
 
 ## 3. Adım: SVG Resmini Ekle
 
- Şimdi işin eğlenceli kısmına geçelim! Aşağıdaki aracı kullanarak belgemize bir SVG resmi ekleyeceğiz:`InsertHtml` yöntem.
+ Şimdi işin eğlenceli kısmına geçelim! Aşağıdaki aracı kullanarak belgemize bir SVG resmi ekleyeceğiz:`InsertHtml` Yöntem.
 
 ```csharp
 builder.InsertHtml(
@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", save
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizdeki meta dosyalarını başarıyla SVG'ye dönüştürdünüz. Oldukça hoş, değil mi? Yalnızca birkaç satır kodla, ölçeklenebilir vektör grafikleri ekleyerek Word belgelerinizi geliştirebilir, onları daha dinamik ve görsel olarak çekici hale getirebilirsiniz. Öyleyse devam edin ve projelerinizde deneyin. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizdeki meta dosyalarını başarıyla SVG'ye dönüştürdünüz. Oldukça hoş, değil mi? Yalnızca birkaç satır kodla, ölçeklenebilir vektör grafikleri ekleyerek Word belgelerinizi geliştirebilir, onları daha dinamik ve görsel olarak çekici hale getirebilirsiniz. Öyleyse devam edin ve projelerinizde deneyin. Mutlu kodlama!
 
 ## SSS'ler
 

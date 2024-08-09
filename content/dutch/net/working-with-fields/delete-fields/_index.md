@@ -100,4 +100,4 @@ U kunt try-catch-blokken gebruiken om uitzonderingen af te handelen die kunnen o
 Ja, de hier getoonde methode richt zich specifiek alleen op velden en laat andere inhoud ongewijzigd.
 
 ### Waar kan ik meer bronnen en ondersteuning vinden voor Aspose.Words?
- Bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/) en de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) voor verdere assistentie.
+ Bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/) en de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) voor verdere hulp.

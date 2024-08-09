@@ -107,7 +107,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 한 Word 문서에서 다른 Word 문서로 VBA 모듈을 성공적으로 복제했습니다. 이 강력한 라이브러리를 사용하면 Word 문서를 매우 쉽게 조작할 수 있으며, 우리가 다룬 단계는 빙산의 일각에 불과합니다. 문서 생성 자동화, 콘텐츠 수정, VBA 프로젝트 관리 등 무엇이든 Aspose.Words가 도와드립니다.
 
- 더 많은 기능을 살펴보고 싶다면 다음을 확인하세요.[API 문서](https://reference.aspose.com/words/net/) . 도움이 필요하다? 방문하다[지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
+ 더 많은 기능을 살펴보고 싶다면 다음을 확인하세요.[API 문서](https://reference.aspose.com/words/net/) . 도움이 필요하신가요? 방문[지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
 
 즐겁게 코딩하세요. 기억하세요. 연습하면 완벽해집니다!
 
@@ -117,7 +117,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 Aspose.Words for .NET은 .NET 애플리케이션에서 Word 문서를 생성, 수정 및 변환하기 위한 강력한 라이브러리입니다. 문서 작업 흐름을 자동화하는 데 적합합니다.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?  
- 예, Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
+ 예, Aspose.Words를 사용해 볼 수 있습니다.[무료 평가판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가 목적으로.
 
 ### Aspose.Words에서 VBA 모듈을 어떻게 복제합니까?  
 VBA 모듈을 복제하려면 원본 문서를 로드하고 원하는 모듈을 복제한 다음 새 문서의 VBA 프로젝트에 추가합니다. 그런 다음 새 문서를 저장합니다.

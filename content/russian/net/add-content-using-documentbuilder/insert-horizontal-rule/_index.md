@@ -97,7 +97,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-И вот оно! Вы успешно вставили горизонтальную линейку в документ Word с помощью Aspose.Words для .NET.
+И вот оно! Вы успешно вставили горизонтальную линию в документ Word с помощью Aspose.Words для .NET.
 
 ## Заключение
 
@@ -113,11 +113,11 @@ Aspose.Words for .NET — это мощная библиотека, котора
 
 ### Как мне начать работу с Aspose.Words для .NET?
 
- Вы можете начать, загрузив библиотеку с сайта[Веб-сайт](https://releases.aspose.com/words/net/) и добавив его в свой проект .NET.
+ Вы можете начать, загрузив библиотеку с сайта[веб-сайт](https://releases.aspose.com/words/net/) и добавив его в свой проект .NET.
 
 ### Могу ли я использовать Aspose.Words бесплатно?
 
- Aspose.Words предлагает[бесплатная пробная версия](https://releases.aspose.com/) поэтому вы можете опробовать его функции перед покупкой лицензии.
+ Aspose.Words предлагает[бесплатная пробная версия](https://releases.aspose.com/) так что вы можете опробовать его функции перед покупкой лицензии.
 
 ### Где я могу найти дополнительные руководства по Aspose.Words для .NET?
 

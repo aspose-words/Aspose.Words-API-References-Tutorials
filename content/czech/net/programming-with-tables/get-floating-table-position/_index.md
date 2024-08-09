@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/get-floating-table-position/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes vás vezmeme na cestu za tajemstvím plovoucích tabulek v dokumentech Wordu. Představte si, že máte stůl, který nejen nehybně sedí, ale elegantně se vznáší kolem textu. Docela cool, že? Tento tutoriál vás provede tím, jak získat vlastnosti polohování takových plovoucích stolů. Takže, pojďme začít!
 

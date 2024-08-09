@@ -2,83 +2,105 @@
 title: Állítsa be a Font Emphasis Mark
 linktitle: Állítsa be a Font Emphasis Mark
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan állíthatja be a betűk kiemelésének stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával.
+description: Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan állíthat be betűtípus-kiemeléseket a Word dokumentumokban az Aspose.Words for .NET használatával. Tökéletes .NET fejlesztőknek.
 type: docs
 weight: 10
 url: /hu/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban bemutatjuk, hogyan állíthatja be a betűtípus-kiemelés stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával. A betűk kiemelése bizonyos szavak vagy kifejezések kiemelésére szolgál a szövegben.
+mai oktatóanyagban azt mutatjuk be, hogyan állíthatunk be betűtípus-kiemeléseket egy Word-dokumentumban az Aspose.Words for .NET használatával. Akár konkrét szöveget szeretne egyedi jelöléssel aláhúzni, akár egyszerűen csak kiemelni szeretne bizonyos szavakat, ez az útmutató segít Önnek. Szóval, csatt, és kezdjük!
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
-- C# programozási nyelv gyakorlati ismerete
-- A projektben telepített .NET Aspose.Words könyvtár
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
-Először állítsa be a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
+Mielőtt belemerülnénk a finom részletekbe, győződjön meg arról, hogy bejelölte a következő előfeltételeket:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words for .NET Library: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Fejlesztési környezet: működő fejlesztői környezet, például a Visual Studio.
+- .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van.
 
-## 2. lépés: A dokumentum létrehozása és testreszabása
- Hozzon létre egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` a dokumentumtartalom felépítéséhez. Használja a`Font.EmphasisMark` tulajdonság a betűk kiemelési stílusának beállításához`EmphasisMark.UnderSolidCircle` . Ezután használja a`Write`és`Writeln` módszerei a`DocumentBuilder` szöveg hozzáadásához a megadott betűtípussal.
+## Névterek importálása
+
+Az Aspose.Words for .NET használatához importálnia kell a szükséges névtereket. Adja hozzá ezeket a kódfájl tetejéhez:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 3. lépés: Mentse el a dokumentumot
- Mentse el a dokumentumot a`Save` módszere a`Document` a megfelelő elérési úttal és fájlnévvel.
+Most bontsuk le a folyamatot egyszerű lépésekre. Gondosan kövesse az egyes lépéseket a betűk kiemelésének beállításához a Word-dokumentumban.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuilder-t
 
-### Minta forráskód a Set Font Emphasis Mark funkcióhoz az Aspose.Words for .NET használatával 
+Először is inicializálnia kell egy új dokumentumot és egy DocumentBuildert. A DocumentBuilder osztály módszereket biztosít a szöveg és más elemek dokumentumba való beillesztésére.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Inicializáljon egy új dokumentumot
 Document document = new Document();
+
+// Inicializálja a DocumentBuilder programot a dokumentummal
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## 2. lépés: Állítsa be a Font Emphasis Mark
+
+Ha a DocumentBuilder készen áll, beállíthatja a betűk kiemelését. Ebben a példában az "UnderSolidCircle" hangsúlyjelet fogjuk használni.
+
+```csharp
+// Állítsa be a betűk kiemelését
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Írjon szöveget a hangsúlyjellel
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## 3. lépés: Törölje a formázást és adjon hozzá normál szöveget
+
+A hangsúlyjel beállítása után érdemes lehet normál szöveget kiemelés nélkül hozzáadni. Ehhez törölnie kell a formázást.
+
+```csharp
+// Törölje a betűtípus formázását
 builder.Font.ClearFormatting();
+
+// Írj rendes szöveget
 builder.Write("Simple text");
+```
+
+## 4. lépés: Mentse el a dokumentumot
+
+Miután hozzáadta az összes szükséges szöveget és formázást, az utolsó lépés a dokumentum mentése. Adja meg az elérési utat és a fájlnevet, ahová menteni szeretné a dokumentumot.
+
+```csharp
+// Mentse el a dokumentumot
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban megtanulta, hogyan állíthatja be a betűk kiemelési stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával. Kísérletezzen a különböző hangsúlyozási stílusokkal, és használja ezt a funkciót a szavak vagy kifejezések kiemelésére a dokumentumokban.
 
-### GYIK
+És megvan! A betűtípus-kiemelések beállítása Word-dokumentumban az Aspose.Words for .NET használatával ilyen egyszerű. Csak néhány sornyi kóddal kiemelheti a szöveget, és professzionális hatást varázsolhat dokumentumaiba. Ne habozzon kísérletezni a különböző hangsúlyjelekkel és stílusokkal, hogy megfeleljen igényeinek.
 
-#### K: Hogyan adhatok ékezetes jeleket egy adott betűtípushoz egy Word-dokumentumban az Aspose.Words használatával?
+## GYIK
 
-V: Ha egy Word-dokumentumban az Aspose.Words használatával szeretne ékezetjeleket hozzáadni egy adott betűtípushoz, az API segítségével navigálhat a kívánt betűtípushoz, és alkalmazhatja a megfelelő ékezetes jeleket. Ez ékezetes jeleket ad a szöveghez a kiválasztott betűtípussal.
+### Mik azok a betűk kiemelő jelei?
 
-#### K: Megváltoztatható az Aspose.Words segítségével az ékezetes jelek stílusa egy Word-dokumentumban?
+A betűk kiemelő jelei speciális szimbólumok, amelyeket a szöveghez adnak, hogy kiemeljék azt. Pontokat, köröket és egyéb díszítő jeleket tartalmazhatnak.
 
-V: Igen, az Aspose.Words segítségével megváltoztathatja az ékezetes jelek stílusát a Word dokumentumokban. Az API lehetővé teszi a stílustulajdonságok, például a szín, a méret, a vonaltípus stb. beállítását az ékezetes jelek megjelenésének testreszabásához.
+### Használhatok más kiemelő jeleket az Aspose.Words for .NET-hez?
 
-#### K: Hogyan távolíthatok el minden ékezetes jelet egy Word-dokumentumból az Aspose.Words használatával?
+ Igen, az Aspose.Words for .NET támogatja a különböző kiemeléseket. Különböző lehetőségeket fedezhet fel a[dokumentáció](https://reference.aspose.com/words/net/).
 
-V: Ha egy Word-dokumentumból az Aspose.Words használatával szeretne eltávolítani minden ékezetet, az API segítségével böngészhet a dokumentumban, észlelheti a meglévő ékezetes jeleket, és eltávolíthatja azokat a megfelelő módszerekkel. Ezzel eltávolítja az összes kiemelő jelet a dokumentumból.
+### Ingyenesen használható az Aspose.Words for .NET?
 
-#### K: Hozzáadhatok ékezetes jeleket egy adott szövegrészhez egy Word-dokumentumban?
+ Az Aspose.Words for .NET használatához licenc szükséges a teljes funkcionalitáshoz. Ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/) vagy vásároljon licencet[itt](https://purchase.aspose.com/buy).
 
-V: Igen, az Aspose.Words használatával ékezetes jeleket adhat a Word-dokumentum egy adott szövegrészéhez. Az API segítségével kiválaszthatja a kívánt szövegtartományt, és megfelelő kiemelő jeleket adhat hozzá a szöveg adott részéhez.
+### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 
-#### K: Az ékezetes jelek testreszabhatók az igényeim szerint?
+ Támogatást kaphat az Aspose közösségtől és a támogató csapattól, ha felkeresi őket[támogatási fórum](https://forum.aspose.com/c/words/8).
 
-V: Igen, az Aspose.Words segítségével az ékezetes jelek az Ön igényei szerint testreszabhatók. Beállíthatja az ékezetes jelek stílustulajdonságait, mint például a szín, a méret, a vonaltípus és egyebek, hogy megfeleljenek a formázási preferenciáknak.
+### Használhatom az Aspose.Words for .NET-et más .NET-keretrendszerekkel?
+
+Igen, az Aspose.Words for .NET kompatibilis különféle .NET-keretrendszerekkel, beleértve a .NET Core-t és a .NET 5/6-ot.

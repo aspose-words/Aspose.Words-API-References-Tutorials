@@ -69,7 +69,7 @@ In dit artikel hebben we geleerd hoe u documenten in ODT-indeling kunt opslaan m
 
 ### Hoe kan ik Aspose.Words voor Java downloaden?
 
- U kunt Aspose.Words voor Java downloaden van de Aspose-website. Bezoek[deze link](https://releases.aspose.com/words/java/)om toegang te krijgen tot de downloadpagina.
+ U kunt Aspose.Words voor Java downloaden van de Aspose-website. Bezoek[deze koppeling](https://releases.aspose.com/words/java/)om toegang te krijgen tot de downloadpagina.
 
 ### Wat is het voordeel van het opslaan van documenten in ODT-formaat?
 

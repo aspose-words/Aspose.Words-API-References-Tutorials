@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a dokumentumot
 
- Hozzon létre egy`Document` objektumot a Word fájl betöltésével:
+ Hozzon létre a`Document` objektumot a Word fájl betöltésével:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

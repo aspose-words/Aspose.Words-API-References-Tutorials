@@ -15,7 +15,7 @@ Word 문서에서 이미지와 모양의 완벽한 비율을 유지하는 방법
 
 코드를 살펴보기 전에 시작하는 데 필요한 사항을 살펴보겠습니다.
 
-- .NET용 Aspose.Words 라이브러리: .NET용 Aspose.Words가 설치되어 있어야 합니다. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+- .NET용 Aspose.Words 라이브러리: .NET용 Aspose.Words가 설치되어 있어야 합니다. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - 개발 환경: .NET 개발 환경이 설정되어 있는지 확인하세요. Visual Studio는 널리 사용되는 선택입니다.
 - C#에 대한 기본 지식: C# 프로그래밍에 어느 정도 익숙하면 도움이 됩니다.
 

@@ -15,7 +15,7 @@ Hallo! Haben Sie schon einmal mit Diagrammen in Ihren Dokumenten gearbeitet und 
 
 Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen. Hier ist eine kurze Checkliste:
 
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie es installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie es installiert haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - .NET Framework: Stellen Sie sicher, dass Sie ein kompatibles .NET Framework installiert haben.
 - Entwicklungsumgebung: Eine IDE wie Visual Studio funktioniert perfekt.
 - Grundkenntnisse in C#: Dies wird Ihnen helfen, den Codierungsbeispielen zu folgen.
@@ -98,7 +98,7 @@ Nachdem nun alles eingerichtet ist, ist es an der Zeit, Ihr Dokument zu speicher
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
- Hier das`Save` Die Methode speichert das Dokument im angegebenen Pfad mit dem Dateinamen`WorkingWithCharts.NumberFormatForAxis.docx`.
+ Hier die`Save` Die Methode speichert das Dokument im angegebenen Pfad mit dem Dateinamen`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Abschluss
 

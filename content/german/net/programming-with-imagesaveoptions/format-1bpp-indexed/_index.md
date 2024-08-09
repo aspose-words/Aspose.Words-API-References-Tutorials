@@ -15,7 +15,7 @@ Haben Sie sich schon einmal gefragt, wie Sie ein Word-Dokument mit nur wenigen C
 
 Bevor wir loslegen, müssen Sie einige Dinge vorbereitet haben:
 
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek installiert haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek installiert haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - .NET-Entwicklungsumgebung: Visual Studio ist eine gute Option, Sie können jedoch jede andere Umgebung verwenden, mit der Sie vertraut sind.
 - Grundkenntnisse in C#: Keine Sorge, wir halten es einfach, aber ein wenig Vertrautheit mit C# ist hilfreich.
 - Ein Word-Dokument: Halten Sie ein Beispiel-Word-Dokument zur Konvertierung bereit.

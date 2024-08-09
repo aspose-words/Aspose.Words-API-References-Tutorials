@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti nella nostra guida completa sull'utilizzo di Aspose.Words per .NET! Che tu sia uno sviluppatore esperto o abbia appena iniziato, questo articolo ti guiderà attraverso tutto ciò che devi sapere sull'utilizzo di Aspose.Words per manipolare e generare documenti Word a livello di codice nelle applicazioni .NET.
 

@@ -39,7 +39,7 @@ Föreställ dig att du är en kock som förbereder dina ingredienser innan du la
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument. Detta är ditt dokuments hemmabas.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument. Detta är ditt dokuments hemmabas.
 
 ## Steg 2: Skapa dokumentet
 

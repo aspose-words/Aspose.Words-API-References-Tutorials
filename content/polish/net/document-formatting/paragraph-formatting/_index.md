@@ -9,7 +9,7 @@ url: /pl/net/document-formatting/paragraph-formatting/
 ---
 ## Wstęp
 
-Czy kiedykolwiek utknąłeś w niekończącej się bitwie z formatowaniem dokumentów programu Word? Nie jesteś sam. Wszyscy przez to przechodziliśmy, bawiąc się ustawieniami akapitów, ale ostatecznie otrzymaliśmy dokument, który bardziej przypomina układankę niż profesjonalny raport. Ale zgadnij co? Istnieje magiczne rozwiązanie wszystkich problemów związanych z formatowaniem – Aspose.Words dla .NET. Wyobraź sobie, że masz narzędzie, które może sformatować akapity dokładnie tak, jak chcesz, bez typowych problemów. Brzmi marzycielsko, prawda? Cóż, zapnij pasy, bo zaraz zagłębimy się w świat formatowania akapitów za pomocą Aspose.Words dla .NET, dzięki któremu Twoje dokumenty będą wyglądały elegancko i profesjonalnie za pomocą zaledwie kilku linijek kodu.
+Czy kiedykolwiek utknąłeś w niekończącej się bitwie z formatowaniem dokumentów programu Word? Nie jesteś sam. Wszyscy przez to przechodziliśmy, bawiąc się ustawieniami akapitów, ale ostatecznie otrzymaliśmy dokument, który bardziej przypomina układankę niż profesjonalny raport. Ale zgadnij co? Istnieje magiczne rozwiązanie wszystkich problemów związanych z formatowaniem – Aspose.Words dla .NET. Wyobraź sobie, że masz narzędzie, które może sformatować akapity dokładnie tak, jak chcesz, bez typowych problemów. Brzmi marzycielsko, prawda? Cóż, zapnij pasy, bo zaraz zagłębimy się w świat formatowania akapitów za pomocą Aspose.Words dla .NET, dzięki któremu Twoje dokumenty będą wyglądać elegancko i profesjonalnie za pomocą zaledwie kilku linijek kodu.
 
 ## Warunki wstępne
 
@@ -20,7 +20,7 @@ Zanim rozpoczniemy tę przygodę z formatowaniem, przygotujmy nasz zestaw narzę
 3. .NET Framework: Upewnij się, że jest zainstalowany.
 4. Podstawowa znajomość języka C#: Nie martw się, nie musisz być czarodziejem, wystarczy podstawowa znajomość.
 
-Mam wszystko? Świetnie! Przejdźmy dalej.
+Masz wszystko? Świetnie! Przejdźmy dalej.
 
 ## Importuj przestrzenie nazw
 
@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
-Konfigurujemy`ParagraphFormat` nieruchomości. Rozłóżmy działanie każdej właściwości:
+Konfigurujemy`ParagraphFormat` właściwości. Rozłóżmy działanie każdej właściwości:
 - Wyrównanie: centruje akapit.
 - LeftIndent: Ustawia wcięcie z lewej strony na 50 punktów.
 - RightIndent: Ustawia prawe wcięcie na 50 punktów.

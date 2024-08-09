@@ -94,7 +94,7 @@ saveOptions.ListIndentation.Character = '\t';
 
  Wij configureren de`TxtSaveOptions` om tabtekens te gebruiken voor inspringing in het opgeslagen tekstbestand. De`ListIndentation.Character` eigenschap is ingesteld`'\t'`, wat een tabteken vertegenwoordigt.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document op met opgegeven opties
 
@@ -121,7 +121,7 @@ Ja, Aspose.Words maakt het mogelijk om lijststijlen op verschillende niveaus aan
  Gebruik de`ListFormat.ApplyBulletDefault()` methode in plaats van`ApplyNumberDefault()` om een lijst met opsommingstekens te maken.
 
 ### Hoe kan ik de grootte aanpassen van het tabteken dat wordt gebruikt voor inspringen?
- Helaas is de tabgrootte in`TxtSaveOptions`is gemaakt. Als u de inspringgrootte wilt aanpassen, moet u mogelijk spaties gebruiken of de lijstopmaak rechtstreeks aanpassen.
+ Helaas is de tabgrootte in`TxtSaveOptions`staat vast. Als u de inspringgrootte wilt aanpassen, moet u mogelijk spaties gebruiken of de lijstopmaak rechtstreeks aanpassen.
 
 ### Kan ik deze instellingen gebruiken bij het exporteren naar andere formaten zoals PDF of DOCX?
 De specifieke instellingen voor tabtekens zijn van toepassing op tekstbestanden. Voor formaten zoals PDF of DOCX moet u de opmaakopties binnen die formaten aanpassen.

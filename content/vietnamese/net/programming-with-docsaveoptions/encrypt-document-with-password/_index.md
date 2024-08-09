@@ -9,12 +9,12 @@ url: /vi/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình cần bảo mật tài liệu bằng mật khẩu chưa? Bạn không cô đơn. Với sự gia tăng của tài liệu kỹ thuật số, việc bảo vệ thông tin nhạy cảm trở nên quan trọng hơn bao giờ hết. Aspose.Words for .NET cung cấp một cách liền mạch để mã hóa tài liệu của bạn bằng mật khẩu. Hãy tưởng tượng nó giống như việc khóa nhật ký của bạn. Chỉ những người có chìa khóa (hoặc mật khẩu, trong trường hợp này) mới có thể nhìn vào bên trong. Hãy đi sâu vào cách bạn có thể đạt được điều này, từng bước một.
+Bạn đã bao giờ thấy mình cần bảo mật tài liệu bằng mật khẩu chưa? Bạn không đơn độc. Với sự gia tăng của tài liệu kỹ thuật số, việc bảo vệ thông tin nhạy cảm trở nên quan trọng hơn bao giờ hết. Aspose.Words for .NET cung cấp một cách liền mạch để mã hóa tài liệu của bạn bằng mật khẩu. Hãy tưởng tượng nó giống như việc khóa nhật ký của bạn. Chỉ những người có chìa khóa (hoặc mật khẩu, trong trường hợp này) mới có thể nhìn vào bên trong. Hãy đi sâu vào cách bạn có thể đạt được điều này, từng bước một.
 
 ## Điều kiện tiên quyết
 
 Trước khi bắt tay vào làm một số mã, bạn sẽ cần một số thứ:
-1.  Aspose.Words cho .NET: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words cho .NET: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE C# nào bạn chọn.
 3. .NET Framework: Đảm bảo bạn đã cài đặt nó.
 4.  Giấy phép: Bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) hoặc nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để có đầy đủ tính năng.
@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### Giải trình
+### Giải thích
 
 - dataDir: Biến này lưu trữ đường dẫn nơi tài liệu của bạn sẽ được lưu.
 - Document doc = new Document(): Dòng này khởi tạo một tài liệu mới.
@@ -54,7 +54,7 @@ Bây giờ chúng ta đã có tờ giấy trắng, hãy viết điều gì đó 
 builder.Write("Hello world!");
 ```
 
-### Giải trình
+### Giải thích
 
 - builder.Write("Xin chào thế giới!"): Dòng này thêm dòng chữ "Xin chào thế giới!" vào tài liệu của bạn.
 
@@ -66,7 +66,7 @@ builder.Write("Hello world!");
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 ```
 
-### Giải trình
+### Giải thích
 
 - DocSaveOptions saveOptions = DocSaveOptions mới: Khởi tạo một phiên bản mới của lớp DocSaveOptions.
 - Mật khẩu = “mật khẩu”: Đặt mật khẩu cho tài liệu. Thay thế "mật khẩu" bằng mật khẩu bạn muốn.
@@ -79,14 +79,14 @@ Cuối cùng, hãy lưu tài liệu của chúng ta với các tùy chọn đã 
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
 ```
 
-### Giải trình
+### Giải thích
 
 - doc.Save: Lưu tài liệu vào đường dẫn đã chỉ định với các tùy chọn lưu đã xác định.
 - dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx": Xây dựng đường dẫn và tên tệp đầy đủ cho tài liệu.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách mã hóa tài liệu bằng mật khẩu bằng Aspose.Words cho .NET. Nó giống như trở thành một thợ khóa kỹ thuật số, đảm bảo tài liệu của bạn được an toàn. Cho dù bạn đang bảo mật các báo cáo kinh doanh nhạy cảm hay ghi chú cá nhân, phương pháp này đều cung cấp giải pháp đơn giản nhưng hiệu quả.
+Và bạn có nó! Bạn vừa học cách mã hóa tài liệu bằng mật khẩu bằng Aspose.Words cho .NET. Nó giống như trở thành một thợ khóa kỹ thuật số, đảm bảo tài liệu của bạn được an toàn. Cho dù bạn đang bảo mật các báo cáo kinh doanh nhạy cảm hay ghi chú cá nhân, phương pháp này đều cung cấp giải pháp đơn giản nhưng hiệu quả.
 
 ## Câu hỏi thường gặp
 

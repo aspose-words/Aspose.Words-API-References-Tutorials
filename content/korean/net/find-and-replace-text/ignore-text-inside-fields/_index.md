@@ -39,14 +39,14 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2단계: 텍스트가 포함된 필드 삽입
 
- 사용`InsertField` 의 방법`DocumentBuilder` 텍스트가 포함된 필드를 추가하려면:
+ 사용`InsertField` 방법`DocumentBuilder` 텍스트가 포함된 필드를 추가하려면:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
 ## 3단계: 필드 내부의 텍스트 무시
 
- 필드 내의 내용을 무시하면서 텍스트를 조작하려면 다음을 사용하십시오.`FindReplaceOptions` 와 더불어`IgnoreFields` 다음으로 설정된 속성`true`:
+ 필드 내의 내용을 무시하면서 텍스트를 조작하려면 다음을 사용하십시오.`FindReplaceOptions` 와 함께`IgnoreFields` 다음으로 설정된 속성`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```

@@ -41,7 +41,7 @@ Ahora que ha registrado los diccionarios, es hora de aplicar la separación de p
 
 ## 5. Cargando diccionarios de separación de palabras
 
-En algunos casos, es posible que necesite cargar diccionarios de separación de palabras dinámicamente. Esto le permite adaptarse a diferentes requisitos lingüísticos. Así es como puedes cargar un diccionario de separación de palabras para un idioma específico:
+En algunos casos, es posible que necesites cargar diccionarios de separación de palabras dinámicamente. Esto le permite adaptarse a diferentes requisitos lingüísticos. Así es como puedes cargar un diccionario de separación de palabras para un idioma específico:
 
 ```java
 Document doc = new Document(dataDir + "German text.docx");
@@ -60,11 +60,11 @@ La separación de palabras juega un papel crucial en el mantenimiento de la cali
 
 ### 1. ¿Qué es la separación de palabras y por qué es importante?
 
-La división de palabras es el proceso de agregar guiones al final de las líneas para mejorar la alineación del texto en los documentos. Es importante porque mejora la legibilidad y la estética del documento.
+La separación de palabras es el proceso de agregar guiones al final de las líneas para mejorar la alineación del texto en los documentos. Es importante porque mejora la legibilidad y la estética del documento.
 
 ### 2. ¿Puedo utilizar la separación de palabras en varios idiomas?
 
-Sí tu puedes. Aspose.Words para Java le permite registrar y cargar diccionarios de separación de palabras para diferentes idiomas.
+Sí, puedes. Aspose.Words para Java le permite registrar y cargar diccionarios de separación de palabras para diferentes idiomas.
 
 ### 3. ¿Es fácil integrar Aspose.Words para Java en mi proyecto Java?
 

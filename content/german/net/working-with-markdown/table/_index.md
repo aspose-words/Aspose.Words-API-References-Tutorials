@@ -85,7 +85,7 @@ Das Erstellen und Anpassen von Tabellen in Aspose.Words für .NET ist unkomplizi
  Sie können Zellen verbinden, indem Sie`CellFormat.HorizontalMerge`Und`CellFormat.VerticalMerge` Eigenschaften.
 
 ### Ist es möglich, Tabellenzellen Bilder hinzuzufügen?
- Auf jeden Fall! Sie können Bilder in Zellen einfügen, indem Sie`DocumentBuilder.InsertImage` Methode.
+ Auf jeden Fall! Sie können Bilder in Zellen einfügen, indem Sie`DocumentBuilder.InsertImage` Verfahren.
 
 ### Kann ich einzelne Zellen unterschiedlich stylen?
  Ja, Sie können einzelne Zellen durch den Zugriff über die`Cells` Sammlung einer Zeile.

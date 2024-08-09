@@ -36,7 +36,7 @@ public void getFootnoteOptions(){
 
 ## 4. Modification des options de note de bas de page
 
-Vous pouvez modifier les options des notes de bas de page pour personnaliser leur apparence et leur comportement. Voici comment:
+Vous pouvez modifier les options des notes de bas de page pour personnaliser leur apparence et leur comportement. Voici comment procéder :
 ```java
 @Test
 public void setFootnoteAndEndNotePosition() throws Exception {
@@ -111,7 +111,7 @@ Dans ce didacticiel, nous avons expliqué comment utiliser les notes de bas de p
 
 Maintenant que vous avez appris à utiliser les notes de bas de page et de fin, vous pouvez améliorer la mise en forme de votre document et rendre votre contenu plus professionnel.
 
-### Questions fréquemment posées
+### Foire aux questions
 
 ### 1. Quelle est la différence entre les notes de bas de page et les notes de fin ?
 Les notes de bas de page apparaissent en bas de page, tandis que les notes de fin sont collectées à la fin d'une section ou du document.

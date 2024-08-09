@@ -49,7 +49,7 @@ public class TableFormattingExample {
 
 ### 建立表
 
-要在文件中建立表格，您可以使用`Table`來自 Aspose.Words for Java 的類別。建立基本表的方法如下：
+要在文件中建立表格，您可以使用`Table`來自 Aspose.Words for Java 的類別。以下是建立基本表的方法：
 
 ```java
 Table table = new Table(doc);

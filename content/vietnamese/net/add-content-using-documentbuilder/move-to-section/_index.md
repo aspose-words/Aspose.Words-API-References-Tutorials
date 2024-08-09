@@ -16,7 +16,7 @@ Trong thế giới kỹ thuật số ngày nay, tự động hóa là chìa khó
 Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
 1. Visual Studio: Máy tính của bạn cần cài đặt Visual Studio.
-2.  Aspose.Words for .NET: Tải xuống và cài đặt Aspose.Words for .NET từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Tải xuống và cài đặt Aspose.Words for .NET từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 3. Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# sẽ có lợi.
 
 ## Nhập không gian tên
@@ -82,7 +82,7 @@ Aspose.Words for .NET giúp việc thao tác các tài liệu Word theo chương
 ## Câu hỏi thường gặp
 
 ### Làm cách nào để cài đặt Aspose.Words cho .NET?
- Bạn có thể tải xuống và cài đặt Aspose.Words cho .NET từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+ Bạn có thể tải xuống và cài đặt Aspose.Words cho .NET từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 
 ### Tôi có thể sử dụng Aspose.Words cho .NET với các ngôn ngữ .NET khác không?
 Có, Aspose.Words for .NET hỗ trợ mọi ngôn ngữ .NET, bao gồm VB.NET và F#.
@@ -94,4 +94,4 @@ Có, Aspose.Words for .NET hỗ trợ mọi ngôn ngữ .NET, bao gồm VB.NET v
  Bạn có thể nhận được sự hỗ trợ từ[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Tôi có thể sử dụng Aspose.Words cho .NET trong một dự án thương mại không?
- Có, nhưng bạn cần mua giấy phép từ[đường link mua hàng](https://purchase.aspose.com/buy).
+ Có, nhưng bạn cần mua giấy phép từ[mua liên kết](https://purchase.aspose.com/buy).

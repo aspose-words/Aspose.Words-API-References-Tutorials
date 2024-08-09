@@ -9,13 +9,13 @@ url: /id/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single
 ---
 ## Perkenalan
 
-Pernahkah Anda terjebak dalam aturan CSS yang tersebar di mana-mana saat mengonversi dokumen Word ke HTML? Jangan khawatir! Hari ini, kita mendalami fitur menarik dari Aspose.Words untuk .NET yang memungkinkan Anda menulis semua aturan CSS dalam satu file. Ini tidak hanya merapikan kode Anda tetapi juga membuat hidup Anda jauh lebih mudah. Bersiaplah, dan mari kita mulai perjalanan menuju keluaran HTML yang lebih bersih dan efisien!
+Pernahkah Anda menemukan diri Anda terjerat dalam jaringan aturan CSS yang tersebar di mana-mana saat mengonversi dokumen Word ke HTML? Jangan khawatir! Hari ini, kita mendalami fitur menarik dari Aspose.Words untuk .NET yang memungkinkan Anda menulis semua aturan CSS dalam satu file. Ini tidak hanya merapikan kode Anda tetapi juga membuat hidup Anda jauh lebih mudah. Bersiaplah, dan mari kita mulai perjalanan menuju keluaran HTML yang lebih bersih dan efisien!
 
 ## Prasyarat
 
 Sebelum kita mendalami seluk beluknya, mari kita urutkan dulu. Inilah yang Anda perlukan untuk memulai:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Jika Anda belum memilikinya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words untuk .NET. Jika Anda belum memilikinya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan .NET: Anda memerlukan pengaturan lingkungan pengembangan .NET di mesin Anda. Visual Studio adalah pilihan yang populer.
 3. Pengetahuan Dasar C#: Pemahaman dasar tentang pemrograman C# akan sangat membantu.
 4. Dokumen Word: Siapkan dokumen Word (.docx) yang ingin Anda konversi.
@@ -83,7 +83,7 @@ Menggunakan satu file CSS menyederhanakan pengelolaan dan pemeliharaan gaya Anda
  Ya, dengan pengaturan`SaveFontFaceCssSeparately` ke`true`, Anda dapat memisahkan aturan CSS tampilan font ke dalam file lain.
 
 ### Apakah Aspose.Words untuk .NET gratis untuk digunakan?
- Aspose.Words menawarkan uji coba gratis yang Anda bisa[Unduh disini](https://releases.aspose.com/) . Untuk penggunaan berkelanjutan, pertimbangkan untuk membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
+ Aspose.Words menawarkan uji coba gratis yang Anda bisa[unduh di sini](https://releases.aspose.com/) . Untuk penggunaan berkelanjutan, pertimbangkan untuk membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
 ### Format lain apa yang dapat dikonversi ke Aspose.Words untuk .NET?
 Aspose.Words untuk .NET mendukung berbagai format termasuk PDF, TXT, dan format gambar seperti JPEG dan PNG.

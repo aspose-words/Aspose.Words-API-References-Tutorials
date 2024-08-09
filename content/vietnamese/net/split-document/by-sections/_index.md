@@ -9,13 +9,13 @@ url: /vi/net/split-document/by-sections/
 ---
 ## Giới thiệu
 
-Bạn có mệt mỏi khi phải xử lý các tài liệu Word khổng lồ vốn là cơn ác mộng khi điều hướng không? Hãy tưởng tượng bạn đang cố gắng tìm một chiếc kim trong đống cỏ khô – cảm giác đó là như vậy, phải không? Thôi, đừng băn khoăn nữa! Hôm nay, chúng ta sẽ đi sâu vào thế giới tuyệt vời của Aspose.Words dành cho .NET. Chúng ta sẽ tìm hiểu cách chia tài liệu Word theo các phần, giúp tài liệu của bạn dễ quản lý hơn và cuộc sống của bạn dễ dàng hơn rất nhiều. Bắt đầu nào!
+Bạn có mệt mỏi khi phải xử lý các tài liệu Word khổng lồ vốn là cơn ác mộng khi điều hướng không? Hãy tưởng tượng bạn đang cố gắng tìm một chiếc kim trong đống cỏ khô – cảm giác đó là như vậy, phải không? Thôi, đừng băn khoăn nữa! Hôm nay, chúng ta sẽ đi sâu vào thế giới tuyệt vời của Aspose.Words dành cho .NET. Chúng ta sẽ tìm hiểu cách chia tài liệu Word theo các phần, giúp tài liệu của bạn dễ quản lý hơn và cuộc sống của bạn dễ dàng hơn rất nhiều. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi đi sâu vào nội dung chi tiết, hãy đảm bảo rằng chúng ta có mọi thứ cần thiết để làm việc với Aspose.Words cho .NET:
 
-1.  Aspose.Words for .NET Library: Bạn cần có thư viện này. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Bạn cần có thư viện này. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
 3. Hiểu biết cơ bản về C#: Nếu bạn ở đây, tôi đoán bạn đã quen với C#.
 
@@ -76,7 +76,7 @@ Section newSection = (Section)newDoc.ImportNode(section, true);
 newDoc.Sections.Add(newSection);
 ```
 
- Đây,`ImportNode` được sử dụng để nhập phần nhân bản vào tài liệu mới. Các`true` tham số đảm bảo rằng chúng tôi nhập phần có tất cả các nút con của nó.
+ Đây,`ImportNode` được sử dụng để nhập phần nhân bản vào tài liệu mới. các`true` tham số đảm bảo rằng chúng tôi nhập phần có tất cả các nút con của nó.
 
 ## Bước 5: Lưu tài liệu mới
 
@@ -86,11 +86,11 @@ Cuối cùng, chúng ta lưu từng tài liệu mới bằng một tên duy nh�
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
- Các`Save` phương thức lưu tài liệu mới vào thư mục đã chỉ định với một tên duy nhất dựa trên chỉ mục phần.
+ các`Save` phương thức lưu tài liệu mới vào thư mục đã chỉ định với một tên duy nhất dựa trên chỉ mục phần.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Việc chia tài liệu Word theo các phần bằng Aspose.Words cho .NET dễ dàng như ăn bánh. Phương pháp này có thể giúp bạn tiết kiệm rất nhiều thời gian và rắc rối, giúp xử lý tài liệu của bạn dễ dàng hơn nhiều. Hãy nhớ rằng, chia nhỏ các nhiệm vụ lớn thành các phần nhỏ hơn để dễ quản lý luôn là một bước đi thông minh. Bây giờ hãy tiếp tục, dùng thử và giúp việc quản lý tài liệu của bạn trở nên dễ dàng!
+Và bạn có nó! Việc chia tài liệu Word theo các phần bằng Aspose.Words cho .NET dễ dàng như ăn bánh. Phương pháp này có thể giúp bạn tiết kiệm rất nhiều thời gian và rắc rối, giúp xử lý tài liệu của bạn dễ dàng hơn nhiều. Hãy nhớ rằng, chia nhỏ các nhiệm vụ lớn thành các phần nhỏ hơn để dễ quản lý luôn là một bước đi thông minh. Bây giờ hãy tiếp tục, dùng thử và giúp việc quản lý tài liệu của bạn trở nên dễ dàng!
 
 ## Câu hỏi thường gặp
 
@@ -98,7 +98,7 @@ Và bạn có nó rồi đấy! Việc chia tài liệu Word theo các phần b�
 Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó cho phép các nhà phát triển tạo, sửa đổi và quản lý tài liệu Word trong các ứng dụng .NET của họ.
 
 ### Làm cách nào tôi có thể dùng thử miễn phí Aspose.Words cho .NET?
- Bạn có thể[tải về dùng thử miễn phí](https://releases.aspose.com/) của Aspose.Words for .NET từ trang web Aspose.
+ bạn có thể[tải về dùng thử miễn phí](https://releases.aspose.com/) của Aspose.Words for .NET từ trang web Aspose.
 
 ### Tôi có thể chia tài liệu theo tiêu chí khác bằng Aspose.Words cho .NET không?
 Có, bạn có thể phân chia tài liệu theo nhiều tiêu chí khác nhau như đoạn văn, trang hoặc điểm đánh dấu tùy chỉnh bằng cách sửa đổi logic mã cho phù hợp.

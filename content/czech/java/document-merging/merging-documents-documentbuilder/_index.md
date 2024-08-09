@@ -22,7 +22,7 @@ Než se ponoříte do procesu slučování dokumentů, ujistěte se, že máte s
 
 ## Začínáme
 
- Začněme vytvořením nového projektu Java a přidáním knihovny Aspose.Words do něj. Knihovnu si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Začněme vytvořením nového projektu Java a přidáním knihovny Aspose.Words do něj. Knihovnu si můžete stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Vytvoření nového dokumentu
 
@@ -41,7 +41,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Nyní řekněme, že máme dva existující dokumenty, které chceme sloučit. Tyto dokumenty načteme a poté připojíme obsah k našemu nově vytvořenému dokumentu pomocí DocumentBuilderu.
 
 ```java
-// Načtěte dokumenty, které chcete sloučit
+// Vložte dokumenty, které chcete sloučit
 Document doc1 = new Document("document1.docx");
 Document doc2 = new Document("document2.docx");
 
@@ -71,7 +71,7 @@ doc.save("merged_document.docx");
 
 ## Závěr
 
-Gratulujeme! Naučili jste se slučovat dokumenty pomocí Aspose.Words for Java. Tato výkonná funkce může změnit hru pro vaše úkoly správy dokumentů. Experimentujte s různými kombinacemi dokumentů a prozkoumejte další možnosti přizpůsobení, aby vyhovovaly vašim potřebám.
+Gratuluji! Naučili jste se slučovat dokumenty pomocí Aspose.Words for Java. Tato výkonná funkce může změnit hru pro vaše úkoly správy dokumentů. Experimentujte s různými kombinacemi dokumentů a prozkoumejte další možnosti přizpůsobení, aby vyhovovaly vašim potřebám.
 
 ## FAQ
 

@@ -9,13 +9,13 @@ url: /de/net/programming-with-document-options-and-settings/set-page-setup-and-s
 ---
 ## Einführung
 
-Wenn es um die Bearbeitung von Dokumenten geht, ist es entscheidend, das Seitenlayout richtig einzurichten und Abschnitte richtig zu formatieren. Egal, ob Sie einen Bericht erstellen, eine Broschüre erstellen oder einen Roman formatieren, das Layout legt den Grundstein für Lesbarkeit und Professionalität. Mit Aspose.Words für .NET steht Ihnen ein leistungsstarkes Tool zur Verfügung, mit dem Sie diese Einstellungen programmgesteuert optimieren können. In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET das Seitenlayout und die Abschnittsformatierung in einem Word-Dokument festlegen.
+Wenn es um die Bearbeitung von Dokumenten geht, ist es entscheidend, das Seitenlayout richtig einzurichten und Abschnitte richtig zu formatieren. Egal, ob Sie einen Bericht erstellen, eine Broschüre erstellen oder einen Roman formatieren, das Layout schafft die Voraussetzungen für Lesbarkeit und Professionalität. Mit Aspose.Words für .NET steht Ihnen ein leistungsstarkes Tool zur Verfügung, mit dem Sie diese Einstellungen programmgesteuert optimieren können. In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET das Seitenlayout und die Abschnittsformatierung in einem Word-Dokument festlegen.
 
 ## Voraussetzungen
 
 Bevor wir uns in den Code vertiefen, klären wir, was Sie für den Einstieg benötigen.
 
--  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Jede .NET-kompatible IDE (z. B. Visual Studio).
 - Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind unbedingt erforderlich.
 

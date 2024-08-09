@@ -117,7 +117,7 @@ Bu adım, bağlantılı yorumu içeren belgeyi belirttiğiniz dizine kaydeder.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki belirli metin bölümlerine bağlantı yorumlarının nasıl ekleneceğini başarıyla öğrendiniz. Bu teknik, belge işbirliği için son derece kullanışlıdır ve metnin belirli bölümlerini kolayca vurgulamanıza ve bunlara yorum yapmanıza olanak tanır. İster ekibinizle birlikte bir proje üzerinde çalışıyor olun ister belgeleri inceliyor olun, bu yöntem üretkenliğinizi artıracak ve iş akışınızı kolaylaştıracaktır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki belirli metin bölümlerine bağlantı yorumlarının nasıl ekleneceğini başarıyla öğrendiniz. Bu teknik, belge işbirliği için son derece kullanışlıdır ve metnin belirli bölümlerini kolayca vurgulamanıza ve bunlara yorum yapmanıza olanak tanır. İster ekibinizle birlikte bir proje üzerinde çalışıyor olun ister belgeleri inceliyor olun, bu yöntem üretkenliğinizi artıracak ve iş akışınızı kolaylaştıracaktır.
 
 ## SSS'ler
 

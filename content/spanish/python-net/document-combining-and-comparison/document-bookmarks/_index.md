@@ -2,7 +2,7 @@
 title: Aprovechando el poder de los marcadores de documentos
 linktitle: Aprovechando el poder de los marcadores de documentos
 second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda a aprovechar el poder de los marcadores de documentos utilizando Aspose.Words para Python. Cree, administre y navegue por marcadores con guías paso a paso y ejemplos de código.
+description: Aprenda cómo aprovechar el poder de los marcadores de documentos usando Aspose.Words para Python. Cree, administre y navegue por marcadores con guías paso a paso y ejemplos de código.
 type: docs
 weight: 11
 url: /es/python-net/document-combining-and-comparison/document-bookmarks/
@@ -120,7 +120,7 @@ A medida que se familiarice con los marcadores, podrá explorar técnicas avanza
 
 ## Conclusión
 
-Los marcadores de documentos son herramientas invaluables que le permiten navegar y administrar documentos grandes de manera eficiente. Con la API de Aspose.Words para Python, tiene la capacidad de integrar sin problemas funciones relacionadas con marcadores en sus aplicaciones, haciendo que sus tareas de procesamiento de documentos sean más fluidas y optimizadas.
+Los marcadores de documentos son herramientas invaluables que le permiten navegar y administrar documentos grandes de manera eficiente. Con la API Aspose.Words para Python, tiene la capacidad de integrar sin problemas funciones relacionadas con marcadores en sus aplicaciones, haciendo que sus tareas de procesamiento de documentos sean más fluidas y optimizadas.
 
 ## Preguntas frecuentes
 

@@ -105,7 +105,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 Sí, puede recorrer las celdas de su tabla y aplicar el mismo formato a cada una.
 
 ### ¿Cómo guardo el documento modificado?
- Utilizar el`doc.Save("output.docx")` método para guardar los cambios.
+ Utilice el`doc.Save("output.docx")` método para guardar los cambios.
 
 ### ¿Es posible aplicar diferentes tonos a diferentes celdas?
 ¡Absolutamente! Simplemente acceda a cada celda individualmente y configure su sombreado.

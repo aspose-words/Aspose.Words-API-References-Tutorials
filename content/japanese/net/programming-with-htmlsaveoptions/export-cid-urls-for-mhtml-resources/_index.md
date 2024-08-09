@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 
 ## 結論
 
-おめでとうございます! Aspose.Words for .NET を使用して、MHTML リソースの Cid URL を正常にエクスポートしました。このチュートリアルでは、プロジェクトの設定、Word 文書の読み込み、HTML 保存オプションの構成、および文書を MHTML として保存する手順について説明しました。これで、これらの手順を独自のプロジェクトに適用して、ドキュメント管理タスクを強化できます。
+おめでとうございます! Aspose.Words for .NET を使用して、MHTML リソースの Cid URL を正常にエクスポートできました。このチュートリアルでは、プロジェクトの設定、Word 文書の読み込み、HTML 保存オプションの構成、および文書を MHTML として保存する手順について説明しました。これで、これらの手順を独自のプロジェクトに適用して、ドキュメント管理タスクを強化できます。
 
 ## よくある質問
 
@@ -96,7 +96,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 MHTML リソースの Cid URL をエクスポートすると、MHTML ファイルに埋め込まれたリソースが適切に参照されるようになり、ドキュメントの移植性と整合性が向上します。
 
 ### 出力形式をさらにカスタマイズできますか?
-はい、Aspose.Words for .NET では、ドキュメントを保存するための幅広いカスタマイズ オプションを提供しています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、Aspose.Words for .NET では、ドキュメントを保存するための幅広いカスタマイズ オプションを提供しています。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
 はい、Aspose.Words for .NETを使用するにはライセンスが必要です。無料トライアルを入手できます。[ここ](https://releases.aspose.com/)またはライセンスを購入する[ここ](https://purchase.aspose.com/buy).

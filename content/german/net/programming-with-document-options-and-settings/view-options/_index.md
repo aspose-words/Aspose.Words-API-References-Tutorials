@@ -15,7 +15,7 @@ Hallo, Programmierkollege! Haben Sie sich schon einmal gefragt, wie Sie die Anze
 
 Bevor wir uns kopfüber in den Code stürzen, stellen wir sicher, dass wir alles haben, was wir brauchen, um diesem Tutorial zu folgen. Hier ist eine kurze Checkliste:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Auf Ihrem Computer sollte eine IDE wie Visual Studio installiert sein.
 3. Grundkenntnisse in C#: Wir halten die Dinge zwar einfach, aber ein grundlegendes Verständnis von C# ist von Vorteil.
 4. Beispiel-Word-Dokument: Halten Sie ein Beispiel-Word-Dokument bereit. In diesem Tutorial nennen wir es „Dokument.docx“.

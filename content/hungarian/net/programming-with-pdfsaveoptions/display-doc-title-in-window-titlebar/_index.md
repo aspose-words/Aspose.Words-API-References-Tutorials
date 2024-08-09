@@ -9,7 +9,7 @@ url: /hu/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titleba
 ---
 ## Bevezetés
 
-Készen áll arra, hogy PDF-fájljait még professzionálisabbá tegye? Egy apró, de hatásos változás a dokumentum címének megjelenítése az ablak címsorában. Ez olyan, mintha egy névcímkét helyezne el a PDF-ben, amely azonnal felismerhetővé teszi. Ma azt vizsgáljuk meg, hogyan érhető el ez az Aspose.Words for .NET használatával. Az útmutató végére kristálytisztán megérti a folyamatot. Kezdjük el!
+Készen áll arra, hogy PDF-fájljait még professzionálisabbá tegye? Egy apró, de hatásos változás a dokumentum címének megjelenítése az ablak címsorában. Ez olyan, mintha egy névcímkét helyezne el a PDF-ben, amely azonnal felismerhetővé teszi. Ma azt vizsgáljuk meg, hogyan érhető el ez az Aspose.Words for .NET használatával. Az útmutató végére kristálytisztán megérti a folyamatot. Kezdjük is!
 
 ## Előfeltételek
 
@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- A beállítással`DisplayDocTitle` nak nek`true`, utasítjuk az Aspose.Words-t, hogy használja a dokumentum címét a PDF ablak címsorában.
+ Beállítás által`DisplayDocTitle` hogy`true`, utasítjuk az Aspose.Words-t, hogy használja a dokumentum címét a PDF ablak címsorában.
 
 ## 3. lépés: Mentse el a dokumentumot PDF formátumban
 

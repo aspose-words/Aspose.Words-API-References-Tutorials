@@ -2,85 +2,100 @@
 title: Yazı Tipi Satır Aralığını Alma
 linktitle: Yazı Tipi Satır Aralığını Alma
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu eğitimde Aspose.Words for .NET ile bir Word belgesinde yazı tipi satır aralığının nasıl elde edileceğini öğrenin.
+description: Bu adım adım eğitimle Aspose.Words for .NET kullanarak yazı tipi satır aralığını nasıl elde edeceğinizi öğrenin. Geliştiriciler için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/get-font-line-spacing/
 ---
-Bu derste, .NET için Aspose.Words kütüphanesini kullanarak bir Word belgesinde yazı tipi satır aralığını nasıl alacağınızı anlatacağız. Yazı tipi satır aralığı, metin satırları arasındaki dikey boşluğu tanımlar. .NET projenizdeki kodu anlamanıza ve uygulamanıza yardımcı olmak için sizi adım adım yönlendireceğiz.
+## giriiş
+
+Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan güçlü bir kitaplıktır. Gerçekleştirmeniz gerekebilecek yaygın görevlerden biri, bir belgedeki belirli bir yazı tipinin satır aralığını almaktır. Bu eğitimde, Aspose.Words for .NET'i kullanarak yazı tipi satır aralığını kolayca alabilmenizi sağlamak için size süreç boyunca adım adım yol göstereceğiz. 
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
-- C# programlama dili hakkında çalışma bilgisi
-- .NET için Aspose.Words kütüphanesi projenizde yüklü
 
-## 1. Adım: Yeni bir belge ve belge oluşturucu oluşturun
- İlk olarak, örneği başlatarak yeni bir belge oluşturacağız.`Document` sınıf ve bir belge oluşturucuyu başlatarak`DocumentBuilder` sınıf.
+Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+
+1.  Aspose.Words for .NET Library: En son sürümü şuradan indirin ve yükleyin:[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi bir IDE kurulumuna sahip olduğunuzdan emin olun.
+3. Temel C# Bilgisi: Bu eğitimde, C# programlama konusunda temel bir anlayışa sahip olduğunuz varsayılmaktadır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle C# projenize gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları Aspose.Words işlevlerine erişmenizi sağlayacaktır.
 
 ```csharp
-// Yeni bir belge oluştur
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//Belge oluşturucu oluşturma
+Yazı tipi satır aralığını alma sürecini basit, yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+İlk adım Aspose.Words for .NET'i kullanarak yeni bir Word belgesi örneği oluşturmaktır.
+
+```csharp
+Document doc = new Document();
+```
+
+## Adım 2: DocumentBuilder'ı başlatın
+
+Daha sonra, başlatmamız gerekiyor`DocumentBuilder` nesne. Bu nesne belge içeriğini oluşturmamıza ve işlememize yardımcı olacaktır.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Yazı tipini yapılandırın
- Daha sonra yazı tipini ayarlayarak yapılandıracağız.`Name` belge oluşturucunun özelliği.
+## 3. Adım: Yazı Tipi Özelliklerini Ayarlayın
+
+Artık eklemek istediğimiz metnin yazı tipi özelliklerini ayarlıyoruz. Bu örnek için "Calibri" yazı tipini kullanacağız.
 
 ```csharp
-// Yazı tipini yapılandırma
 builder.Font.Name = "Calibri";
 ```
 
-## 3. Adım: Belgeye metin ekleyin
-Artık belgeye biçimlendirilmiş metin eklemek için belge oluşturucuyu kullanacağız.
+## Adım 4: Belgeye Metin Yazma
+
+ kullanarak`DocumentBuilder` nesne, belgeye bir miktar metin yazın. Bu metin, önceki adımda belirlediğimiz yazı tipi özelliklerini kullanacaktır.
 
 ```csharp
-// Belgeye metin ekleme
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## Adım 4: Yazı Tipi Satır Aralığını Alın
- Şimdi şuraya erişeceğiz:`Font` belgenin ilk paragrafının nesnesini bulun ve değerini alın`LineSpacing` mülk.
+## Adım 5: Yazı Tipi Nesnesini Alın
+
+Satır aralığını elde etmek için yeni eklediğimiz metnin font nesnesine erişmemiz gerekiyor. Bu, belge yapısından ilk paragraf dizisine gidilerek yapılabilir.
 
 ```csharp
-// Yazı tipinin satır aralığını alın
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### Aspose.Words for .NET kullanarak Yazı Tipi Satır Aralığını Alma için örnek kaynak kodu 
+## Adım 6: Satır Aralığını Alın
+
+Son olarak yazı tipi nesnesinden satır aralığını alıp konsola yazdırıyoruz.
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET ile bir Word belgesinde yazı tipi satır aralığının nasıl alınacağını gördük. Yazı tipi satır aralığı, metin satırları arasındaki dikey aralığı kontrol etmek için önemlidir. Belgelerinizdeki metninizin görünümünü özelleştirmek için bu özelliği kullanmaktan çekinmeyin.
 
-### SSS'ler
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yazı tipi satır aralığını almak, bunu aşağıdaki basit adımlara ayırdığınızda çok kolaydır. İster yeni bir belge oluşturuyor olun ister mevcut bir belgeyle çalışıyor olun, Aspose.Words yazı tipi özelliklerini verimli bir şekilde yönetmek için ihtiyacınız olan tüm araçları sağlar.
 
-#### S: Bir Word belgesindeki belirli bir metnin satır aralığını nasıl değiştirebilirim?
+## SSS'ler
 
-C: Aspose.Words ile bir Word belgesindeki belirli bir metnin satır aralığını kolayca değiştirebilirsiniz. İstediğiniz metni seçmek ve uygun değeri belirterek satırlar arasındaki boşluğu ayarlamak için API'yi kullanın.
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır.
 
-#### S: Bir Word belgesinde satırlar arasında tam boşluk bırakmak mümkün müdür?
+### Aspose.Words for .NET'i diğer .NET dillerinde kullanabilir miyim?
+Evet, Aspose.Words for .NET'i VB.NET ve F# dahil herhangi bir .NET diliyle kullanabilirsiniz.
 
-C: Evet, Aspose.Words, bir Word belgesindeki satırlar arasında tam boşluk bırakmanıza olanak tanır. API'yi kullanarak satır aralığı için kesin bir değer belirleyebilirsiniz.
+### Aspose.Words for .NET'i nasıl indirebilirim?
+ Aspose.Words for .NET'in en son sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/).
 
-#### S: Word belgesinin tamamı için satır aralığını nasıl ayarlayabilirim?
+### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
+ Evet, şu adresten ücretsiz deneme alabilirsiniz:[Burada](https://releases.aspose.com/).
 
-C: Aspose.Words ile tüm Word belgesinin satır aralığını kolayca ayarlayabilirsiniz. Belgenin tamamı için istenen satır aralığını belirtmek üzere API tarafından sağlanan yöntemleri kullanın.
-
-#### S: Aspose.Words çoklu satır aralığını destekliyor mu?
-
-C: Evet, Aspose.Words, Word belgelerinde birden fazla satır aralığını destekler. Metninizin satırları için 1,5 kat veya 2 kat normal aralık gibi çoklu aralıklar ayarlayabilirsiniz.
-
-#### S: Satır aralığını ayarlarken satır çakışması sorunlarını nasıl önleyebilirim?
-
-C: Satırlar arasındaki boşluğu ayarlarken satır çakışması sorunlarını önlemek için uygun aralık değerlerini seçtiğinizden emin olun. Ayrıca metnin okunabilir ve iyi biçimlendirilmiş olduğundan emin olmak için belgenizin son görüntüsünü de test edin.
+### Aspose.Words for .NET belgelerini nerede bulabilirim?
+ Aspose.Words for .NET'in belgeleri mevcuttur[Burada](https://reference.aspose.com/words/net/).

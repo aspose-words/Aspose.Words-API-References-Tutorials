@@ -20,7 +20,7 @@ url: /ko/java/document-security/keep-documents-safe-secure/
 
 ### 문서 보호 유형
 
-- #### 비밀번호 보안:
+- #### 비밀번호 보호:
  비밀번호를 사용하여 문서에 대한 액세스를 제한하여 승인된 사용자만 문서를 열고 볼 수 있도록 하세요.
 - #### 암호화:
  암호화 알고리즘을 사용하여 문서의 콘텐츠를 스크램블된 형식으로 변환하여 올바른 암호 해독 키 없이는 해독할 수 없도록 만듭니다.
@@ -40,7 +40,7 @@ url: /ko/java/document-security/keep-documents-safe-secure/
 문서 보안을 진행하기 전에 먼저 Aspose.Words for Java에 대해 알아봅시다. Java 개발자가 프로그래밍 방식으로 Word 문서를 생성, 수정 및 변환할 수 있는 기능이 풍부한 라이브러리입니다. 시작하려면:
 
 1. ### Java용 Aspose.Words 다운로드:
-  방문하다[Aspose.릴리스](https://releases.aspose.com/words/java/) 최신 버전의 Aspose.Words for Java를 다운로드하세요.
+  방문[Aspose.릴리스](https://releases.aspose.com/words/java/) 최신 버전의 Aspose.Words for Java를 다운로드하세요.
 
 2. ### 라이브러리를 설치합니다:
  다운로드가 완료되면 설치 지침에 따라 Java 프로젝트에 Aspose.Words를 설정하세요.

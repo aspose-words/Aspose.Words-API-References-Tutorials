@@ -9,7 +9,7 @@ url: /nl/net/find-and-replace-text/replace-with-regex/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit tekst in een Word-document moeten vervangen, maar heeft u iets meer kracht nodig dan eenvoudig zoeken en vervangen? Misschien heb je iets nodig dat met patronen en jokertekens overweg kan? Nou, je hebt geluk! Aspose.Words voor .NET heeft u gedekt met zijn op regex gebaseerde zoek- en vervangfunctionaliteit. In deze zelfstudie gaan we dieper in op hoe u regex kunt gebruiken om tekst in uw Word-documenten te vervangen met Aspose.Words voor .NET. We zullen alles stap voor stap opsplitsen, dus zelfs als u nieuw bent bij regex of Aspose.Words, kunt u het in een mum van tijd volgen en aan de slag gaan.
+Hé daar! Heeft u ooit tekst in een Word-document moeten vervangen, maar heeft u iets meer kracht nodig dan eenvoudig zoeken en vervangen? Misschien heb je iets nodig dat met patronen en jokertekens overweg kan? Nou, je hebt geluk! Aspose.Words voor .NET heeft u gedekt met zijn op regex gebaseerde zoek- en vervangfunctionaliteit. In deze zelfstudie gaan we dieper in op hoe u regex kunt gebruiken om tekst in uw Word-documenten te vervangen met Aspose.Words voor .NET. We zullen alles stap voor stap opsplitsen, dus zelfs als u nieuw bent bij regex of Aspose.Words, kunt u het in een mum van tijd volgen en aan de slag gaan.
 
 ## Vereisten
 
@@ -38,7 +38,7 @@ Laten we beginnen met het definiëren van het pad naar uw documentenmap. Hier wo
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
 
 ## Stap 2: Maak een nieuw document
 
@@ -93,7 +93,7 @@ En daar heb je het! U hebt regex met succes gebruikt om tekst in een Word-docume
 Absoluut! Aspose.Words ondersteunt een breed scala aan regex-patronen. U kunt uw patronen aanpassen zodat ze precies overeenkomen met wat u nodig heeft.
 
 ### Ondersteunt Aspose.Words voor .NET andere tekstbewerkingen?  
-Ja dat doet het. Aspose.Words voor .NET biedt een uitgebreide reeks functies voor het manipuleren van Word-documenten, inclusief tekstextractie, opmaak en meer.
+Ja, dat klopt. Aspose.Words voor .NET biedt een uitgebreide reeks functies voor het manipuleren van Word-documenten, inclusief tekstextractie, opmaak en meer.
 
 ### Kan ik tekst in specifieke secties van een document vervangen?  
 Ja, dat kan. U kunt verschillende methoden gebruiken om specifieke secties, alinea's of zelfs kop- en voetteksten in uw document te targeten.

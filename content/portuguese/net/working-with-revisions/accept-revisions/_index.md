@@ -2,88 +2,40 @@
 title: Aceitar revisões
 linktitle: Aceitar revisões
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como aceitar revisões em um documento do Word usando Aspose.Words for .NET
+description: Domine as revisões de documentos com Aspose.Words for .NET. Aprenda a rastrear, aceitar e rejeitar alterações sem esforço. Aumente suas habilidades de gerenciamento de documentos.
 type: docs
 weight: 10
 url: /pt/net/working-with-revisions/accept-revisions/
 ---
+## Introdução
 
-Neste tutorial, orientaremos você na aceitação de revisões em um documento do Word usando o recurso Aceitar revisões do Aspose.Words for .NET. Siga as etapas abaixo para entender o código-fonte e aceitar as alterações no documento.
+Você já se viu em um labirinto de revisões de documentos, lutando para acompanhar cada alteração feita por vários colaboradores? Com Aspose.Words for .NET, gerenciar revisões em documentos do Word torna-se muito fácil. Esta poderosa biblioteca permite que os desenvolvedores rastreiem, aceitem e rejeitem alterações sem esforço, garantindo que seus documentos permaneçam organizados e atualizados. Neste tutorial, mergulharemos no processo passo a passo de tratamento de revisões de documentos usando Aspose.Words for .NET, desde a inicialização do documento até a aceitação de todas as alterações.
 
-## Etapa 1: adicionar e editar o conteúdo do documento
+## Pré-requisitos
 
-Neste exemplo, estamos criando um documento e adicionando conteúdo. Usamos vários parágrafos para ilustrar alterações e revisões. Veja como:
+Antes de começarmos, certifique-se de ter os seguintes pré-requisitos em vigor:
 
-```csharp
-// Caminho para o diretório de documentos.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- Visual Studio instalado em sua máquina.
+- Framework .NET (de preferência a versão mais recente).
+-  Biblioteca Aspose.Words para .NET. Você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+- Compreensão básica de programação C#.
 
-// Adicione texto ao primeiro parágrafo e, em seguida, adicione mais dois parágrafos.
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+Agora, vamos entrar em detalhes e ver como podemos dominar as revisões de documentos com Aspose.Words for .NET.
 
-## Etapa 2: rastrear comentários e adicionar comentários
+## Importar namespaces
 
-Ativamos o rastreamento de revisão e adicionamos uma revisão ao documento. Veja como:
+Em primeiro lugar, você precisa importar os namespaces necessários para trabalhar com Aspose.Words. Adicione o seguinte usando diretivas na parte superior do seu arquivo de código:
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-// Este parágrafo é uma revisão e terá o sinalizador "IsInsertRevision" correspondente definido.
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## Etapa 3: exclua um parágrafo e gerencie as revisões
+Vamos dividir o processo em etapas gerenciáveis. Cada etapa será explicada em detalhes para garantir que você entenda cada parte do código.
 
-Excluímos um parágrafo e verificamos as revisões salvas. Veja como:
+## Etapa 1: inicializar o documento
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-// Como estamos acompanhando as revisões, o parágrafo ainda existe no documento, terá o sinalizador "IsDeleteRevision" definido
-// e será exibido como uma revisão no Microsoft Word, até aceitarmos ou rejeitarmos todas as revisões.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## Etapa 4: aceitar as alterações
-
-Aceitamos todas as alterações no documento. Veja como:
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## Etapa 5: parar de rastrear avaliações
-
-Pararemos de rastrear revisões para que as alterações no documento não apareçam mais como revisões. Veja como:
-
-```csharp
-doc.StopTrackRevisions();
-```
-## Passo 6: Salvando o documento
-
- Após inserir o campo do formulário de entrada de texto, salve o documento no local desejado usando o`Save`método. Certifique-se de fornecer o caminho de arquivo apropriado:
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### Exemplo de código-fonte para aceitar revisões usando Aspose.Words for .NET
-
-Aqui está o código-fonte completo para aceitar alterações em um documento usando Aspose.Words for .NET:
-
+Para começar, precisamos criar um novo documento e adicionar alguns parágrafos. Isso preparará o terreno para o rastreamento de revisões.
 
 ```csharp
 // O caminho para o diretório de documentos.
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//Temos três parágrafos, nenhum deles registrado como qualquer tipo de revisão
-// Se adicionarmos/removermos qualquer conteúdo do documento enquanto rastreamos as revisões,
-// eles serão exibidos como tal no documento e poderão ser aceitos/rejeitados.
+Nesta etapa, criamos um novo documento e adicionamos três parágrafos a ele. Esses parágrafos servirão como base para nosso acompanhamento de revisões.
+
+## Etapa 2: comece a rastrear revisões
+
+Em seguida, precisamos habilitar o rastreamento de revisão. Isso nos permite capturar quaisquer alterações feitas no documento.
+
+```csharp
+// Comece a rastrear revisões.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+ Ao ligar`StartTrackRevisions`, habilitamos o documento para rastrear todas as alterações subsequentes. O nome do autor e a data atual são passados como parâmetros.
+
+## Etapa 3: adicionar uma revisão
+
+Agora que o rastreamento de revisão está habilitado, vamos adicionar um novo parágrafo. Esta adição será marcada como uma revisão.
+
+```csharp
 // Este parágrafo é uma revisão e terá o sinalizador "IsInsertRevision" definido.
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+Aqui, é adicionado um novo parágrafo (“Parágrafo 4”). Como o rastreamento de revisão está ativado, este parágrafo é marcado como uma revisão.
+
+## Etapa 4: remover um parágrafo
+
+A seguir, removeremos um parágrafo existente e observaremos como a revisão é rastreada.
+
+```csharp
 // Obtenha a coleção de parágrafos do documento e remova um parágrafo.
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-// Como estamos rastreando revisões, o parágrafo ainda existe no documento e terá o conjunto "IsDeleteRevision"
-// e será exibido como uma revisão no Microsoft Word, até aceitarmos ou rejeitarmos todas as revisões.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+Nesta etapa, o terceiro parágrafo é removido. Devido ao controle de revisão, essa exclusão é registrada e o parágrafo é marcado para exclusão, em vez de ser imediatamente removido do documento.
 
-// O parágrafo de exclusão de revisão é removido assim que aceitamos as alterações.
+## Etapa 5: aceitar todas as revisões
+
+Por fim, vamos aceitar todas as revisões rastreadas, solidificando as alterações no documento.
+
+```csharp
+// Aceite todas as revisões.
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-// Interromper o rastreamento de revisões faz com que este texto apareça como texto normal.
-// As revisões não são contabilizadas quando o documento é alterado.
+ Ao ligar`AcceptAllRevisions`, garantimos que todas as alterações (adições e exclusões) sejam aceitas e aplicadas ao documento. As revisões não estão mais marcadas e são integradas ao documento.
+
+## Etapa 6: parar de rastrear revisões
+
+### Desativar rastreamento de revisão
+
+Para finalizar, podemos desabilitar o rastreamento de revisão para parar de registrar novas alterações.
+
+```csharp
+// Pare de rastrear revisões.
 doc.StopTrackRevisions();
+```
 
+Esta etapa impede que o documento rastreie quaisquer novas alterações, tratando todas as edições subsequentes como conteúdo normal.
+
+## Etapa 7: salve o documento
+
+Finalmente, salve o documento modificado no diretório especificado.
+
+```csharp
 // Salve o documento.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+Ao salvar o documento, garantimos que todas as alterações e revisões aceitas sejam preservadas.
+
 ## Conclusão
 
-Neste tutorial, aprendemos como aceitar revisões em um documento do Word usando o recurso Aceitar Revisões do Aspose.Words for .NET. Seguimos as etapas para adicionar e editar o conteúdo do documento, rastrear revisões, excluir um parágrafo revisado, aceitar todas as alterações e parar de rastrear revisões. Agora você pode aplicar esse conhecimento para gerenciar revisões com eficácia em seus próprios documentos do Word usando Aspose.Words for .NET.
+Gerenciar revisões de documentos pode ser uma tarefa difícil, mas com Aspose.Words for .NET, torna-se simples e eficiente. Seguindo as etapas descritas neste guia, você pode rastrear, aceitar e rejeitar facilmente alterações em seus documentos do Word, garantindo que seus documentos estejam sempre atualizados e precisos. Então, por que esperar? Mergulhe no mundo do Aspose.Words e agilize seu gerenciamento de documentos hoje mesmo!
 
-### Perguntas frequentes
+## Perguntas frequentes
 
-#### P: Como habilito o rastreamento de revisão no Aspose.Words for .NET?
+### Como começo a rastrear revisões no Aspose.Words for .NET?
 
-#### Solução 1:
+ Você pode começar a rastrear revisões ligando para o`StartTrackRevisions` método em seu objeto de documento e passando o nome do autor e a data atual.
 
- R: Para habilitar o rastreamento de revisão no Aspose.Words for .NET, use o`StartTrackRevisions` método do`Document` objeto e especifique o nome do autor e a data de início do rastreamento de revisão.
+### Posso parar de rastrear revisões a qualquer momento?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+Sim, você pode parar de rastrear revisões ligando para o`StopTrackRevisions` método em seu objeto de documento.
 
-#### Solução 2:
+### Como aceito todas as revisões em um documento?
 
- R: Você também pode ativar o rastreamento de revisão usando o`Document` construtor que aceita`trackRevisions`e`author` parâmetros.
+ Para aceitar todas as revisões, use o`AcceptAllRevisions` método em seu objeto de documento.
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### Posso rejeitar revisões específicas?
 
-#### P: Como aceitar todas as alterações em um documento com Aspose.Words for .NET?
+ Sim, você pode rejeitar revisões específicas navegando até elas e usando o botão`Reject` método.
 
- R: Use o`AcceptAllRevisions` método do`Document` opor-se a aceitar todas as alterações feitas no documento.
+### Onde posso baixar o Aspose.Words para .NET?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### P: Como salvo um documento modificado com revisões aceitas?
-
- Use o`Save` método do`Document` objeto para salvar o documento modificado com as revisões aceitas. Certifique-se de fornecer o caminho correto do arquivo.
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### P: Como faço para parar de rastrear revisões no Aspose.Words for .NET?
-
- R: Use o`StopTrackRevisions` método do`Document` objeto para interromper as revisões de rastreamento.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### P: Como excluo um parágrafo revisado em um documento com Aspose.Words for .NET?
-
- R: Para remover um parágrafo revisado de um documento, você pode usar o`Remove` método da coleção de parágrafos.
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ Você pode baixar Aspose.Words para .NET em[link para baixar](https://releases.aspose.com/words/net/).

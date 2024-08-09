@@ -1,64 +1,72 @@
 ---
-title: Tučné písmo
-linktitle: Tučné písmo
+title: Tučný text
+linktitle: Tučný text
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se zvýraznit text tučným písmem pomocí Aspose.Words for .NET Podrobný průvodce.
+description: Naučte se, jak vytvořit tučný text v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem. Ideální pro automatizaci formátování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-markdown/bold-text/
 ---
+## Zavedení
 
-V tomto příkladu vám řekneme, jak zvýraznit tučný text pomocí Aspose.Words pro .NET. Tučný text jej zviditelní a zvýrazňuje.
+Ahoj, dokumentoví nadšenci! Pokud se ponoříte do světa zpracování dokumentů pomocí Aspose.Words pro .NET, budete se těšit. Tato výkonná knihovna nabízí nepřeberné množství funkcí pro programovou manipulaci s dokumenty Wordu. Dnes vás provedeme jednou takovou funkcí – jak udělat text tučným pomocí Aspose.Words for .NET. Ať už generujete sestavy, vytváříte dynamické dokumenty nebo automatizujete proces dokumentace, naučit se ovládat formátování textu je zásadní. Jste připraveni, aby váš text vynikl? Začněme!
 
-## Krok 1: Použití generátoru dokumentů
+## Předpoklady
 
-Nejprve použijeme generátor dokumentů k přidání obsahu do našeho dokumentu.
+Než se pustíme do kódu, je potřeba nastavit několik věcí:
 
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-```
+1.  Aspose.Words pro .NET: Ujistěte se, že máte nejnovější verzi Aspose.Words pro .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: IDE jako Visual Studio pro psaní a spouštění vašeho kódu.
+3. Základní porozumění C#: Znalost programování C# vám pomůže postupovat podle příkladů.
 
-## Krok 2: Tučný text
+## Importovat jmenné prostory
 
- Nastavením tvůrce dokumentů můžeme text zvýraznit tučným písmem`Font.Bold`majetek do`true`.
-
-```csharp
-builder.Font.Bold = true;
-```
-
-## Krok 3: Přidejte obsah do dokumentu
-
- Nyní můžeme do dokumentu přidat obsah pomocí metod tvůrce dokumentů, jako je např`Writeln`, který přidá řádek textu.
+Nejprve importujme potřebné jmenné prostory. To nám umožní přístup k funkcím Aspose.Words, aniž bychom neustále odkazovali na úplné cesty jmenného prostoru.
 
 ```csharp
-builder.Writeln("This text will be bold");
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Příklad zdrojového kódu pro tučný text pomocí Aspose.Words pro .NET
+Nyní si rozeberme proces vytváření tučného textu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
+## Krok 1: Inicializujte DocumentBuilder
+
+ The`DocumentBuilder` class poskytuje rychlý a snadný způsob přidávání obsahu do vašeho dokumentu. Pojďme to inicializovat.
 
 ```csharp
 // K přidání obsahu do dokumentu použijte tvůrce dokumentů.
 DocumentBuilder builder = new DocumentBuilder();
-
-// Udělejte text tučným písmem.
-builder.Font.Bold = true;
-builder.Writeln("This text will be Bold");  
 ```
 
-gratuluji! Nyní jste se naučili, jak zvýraznit tučný text pomocí Aspose.Words pro .NET.
+## Krok 2: Udělejte text tučným
 
+ Nyní přichází ta zábavná část – udělat text tučným. Nastavíme`Bold` vlastnictvím`Font` namítat proti`true` a napište náš tučný text.
 
-### FAQ
+```csharp
+// Udělejte text tučným písmem.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");
+```
 
-#### Otázka: Jak mohu v Aspose.Words nastavit tučný text?
+## Závěr
 
- A: Chcete-li, aby byl text v Aspose.Words tučný, můžete použít`Font.Bold` majetek z`Run` objekt. Tuto vlastnost můžete nastavit na`true` na tučný konkrétní text. Můžete například použít`run.Font.Bold=true` zvýraznit text uvnitř`Run` objekt.
+A tady to máte! Úspěšně jste pomocí Aspose.Words for .NET vytvořili tučný text v dokumentu aplikace Word. Tato jednoduchá, ale výkonná funkce je jen špičkou ledovce, pokud jde o to, čeho můžete dosáhnout pomocí Aspose.Words. Takže pokračujte v experimentování a objevování, abyste odemkli plný potenciál svých úloh automatizace dokumentů.
 
-#### Otázka: Je možné zvýraznit několik částí textu ve stejném odstavci tučně?
+## FAQ
 
- Odpověď: Ano, můžete použít tučné písmo více kusů textu v jednom odstavci pomocí více`Run` objektů. Můžete vytvořit více`Run` objekty a nastavte`Font.Bold`majetek do`true` pro každý objekt zvýraznit požadované části textu tučně. Poté je můžete přidat do odstavce pomocí`Paragraph.AppendChild(run)` metoda.
+### Mohu jen část textu označit tučným písmem?
+ Ano, můžete. Použijte`DocumentBuilder` k formátování konkrétních částí vašeho textu.
 
-#### Otázka: Mohu zvýraznit tučný text, který je v tabulce nebo buňce v Aspose.Words?
+### Je možné změnit i barvu textu?
+ Absolutně! Můžete použít`builder.Font.Color`vlastnost pro nastavení barvy textu.
 
- Odpověď: Ano, text v tabulce nebo buňce v Aspose.Words můžete zvýraznit tučným písmem. Pomocí vhodných metod můžete přejít na požadovanou buňku nebo odstavec a poté použít tučné formátování pomocí`Font.Bold` majetek z`Run` nebo`Paragraph` objekt.
+### Mohu použít více stylů písma najednou?
+ Ano, můžete. Můžete například nastavit text na tučný a kurzívu současně, a nanastavením obou`builder.Font.Bold`a`builder.Font.Italic` to `true`.
+
+### Jaké další možnosti formátování textu jsou k dispozici?
+Aspose.Words poskytuje širokou škálu možností formátování textu, jako je velikost písma, podtržení, přeškrtnutí a další.
+
+### Potřebuji licenci k používání Aspose.Words?
+ Aspose.Words můžete používat s bezplatnou zkušební verzí nebo dočasnou licencí, ale pro plnou funkčnost se doporučuje zakoupená licence. Podívejte se na[nakoupit](https://purchase.aspose.com/buy) stránce pro více podrobností.

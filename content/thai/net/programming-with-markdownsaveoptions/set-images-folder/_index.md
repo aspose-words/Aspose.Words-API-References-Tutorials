@@ -68,7 +68,7 @@ Document doc = new Document(dataDir + "Image bullet points.docx");
 
 ### 2.3 กำหนดค่าตัวเลือกการบันทึก Markdown
 
- กำหนดค่า`MarkdownSaveOptions` เพื่อระบุตำแหน่งที่ควรจัดเก็บรูปภาพ
+ กำหนดค่า`MarkdownSaveOptions` เพื่อระบุตำแหน่งที่ควรจัดเก็บภาพ
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions

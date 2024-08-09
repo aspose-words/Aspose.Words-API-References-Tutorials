@@ -126,7 +126,7 @@ Thao tác này sẽ lưu tài liệu có chứa trường nâng cao.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công trường nâng cao vào tài liệu Word mà không cần sử dụng lớp DocumentBuilder. Bằng cách làm theo các bước này, bạn đã khai thác sức mạnh của Aspose.Words dành cho .NET để thao tác các tài liệu Word theo chương trình. Cho dù bạn đang tự động hóa việc tạo báo cáo hay tạo các mẫu tài liệu phức tạp, kiến thức này chắc chắn sẽ hữu ích. Hãy tiếp tục thử nghiệm và khám phá các khả năng của Aspose.Words để đưa quá trình xử lý tài liệu của bạn lên một tầm cao mới!
+Và bạn có nó! Bạn đã chèn thành công trường nâng cao vào tài liệu Word mà không cần sử dụng lớp DocumentBuilder. Bằng cách làm theo các bước này, bạn đã khai thác sức mạnh của Aspose.Words dành cho .NET để thao tác các tài liệu Word theo chương trình. Cho dù bạn đang tự động hóa việc tạo báo cáo hay tạo các mẫu tài liệu phức tạp, kiến thức này chắc chắn sẽ hữu ích. Hãy tiếp tục thử nghiệm và khám phá các khả năng của Aspose.Words để đưa quá trình xử lý tài liệu của bạn lên một tầm cao mới!
 
 ## Câu hỏi thường gặp
 

@@ -9,7 +9,7 @@ url: /pt/net/programming-with-tables/nested-table/
 ---
 ## Introdução
 
-Você já precisou criar uma tabela aninhada em um documento do Word programaticamente? Esteja você gerando relatórios, faturas ou qualquer tipo de documento que requeira uma estrutura tabular detalhada, o Aspose.Words for .NET pode ser seu melhor amigo. Neste tutorial, mergulharemos no processo de criação de tabelas aninhadas em documentos do Word usando Aspose.Words for .NET. Abordaremos tudo, desde os pré-requisitos até a implementação final do código. Então vamos começar!
+Você já precisou criar uma tabela aninhada em um documento do Word programaticamente? Esteja você gerando relatórios, faturas ou qualquer tipo de documento que requeira uma estrutura tabular detalhada, o Aspose.Words for .NET pode ser seu melhor amigo. Neste tutorial, mergulharemos no processo de criação de tabelas aninhadas em documentos do Word usando Aspose.Words for .NET. Abordaremos tudo, desde os pré-requisitos até a implementação final do código. Então, vamos começar!
 
 ## Pré-requisitos
 

@@ -104,7 +104,7 @@ dataPoint12.Marker.Symbol = MarkerSymbol.Star;
 dataPoint12.Marker.Size = 20;
 ```
 
- För den tredje datapunkten i`series1`, vi ställer in den för att invertera om värdet är negativt, ändrar markörsymbolen till en stjärna och ställer in markörstorleken till 20.
+ För den tredje datapunkten in`series1`, vi ställer in den för att invertera om värdet är negativt, ändrar markörsymbolen till en stjärna och ställer in markörstorleken till 20.
 
 ## Steg 5: Spara dokumentet
 
@@ -128,7 +128,7 @@ Absolut! Du kan anpassa datapunkter i olika diagramtyper, inklusive stapeldiagra
 
 ### Är det möjligt att lägga till anpassade etiketter till datapunkter?
 
- Ja, du kan lägga till anpassade etiketter till datapunkter med hjälp av`ChartDataPoint.Label` fast egendom. Detta gör att du kan ge mer sammanhang för varje datapunkt.
+ Ja, du kan lägga till anpassade etiketter till datapunkter med hjälp av`ChartDataPoint.Label` egendom. Detta gör att du kan ge mer sammanhang för varje datapunkt.
 
 ### Hur kan jag ta bort en datapunkt från en serie?
 

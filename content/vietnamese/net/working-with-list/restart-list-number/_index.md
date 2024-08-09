@@ -2,18 +2,38 @@
 title: Khởi động lại số danh sách
 linktitle: Khởi động lại số danh sách
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách đặt lại số danh sách trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách khởi động lại số danh sách trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn chi tiết, 2000 từ này bao gồm mọi thứ bạn cần biết, từ thiết lập đến tùy chỉnh nâng cao.
 type: docs
 weight: 10
 url: /vi/net/working-with-list/restart-list-number/
 ---
-Trong hướng dẫn từng bước này, chúng tôi sẽ chỉ cho bạn cách đặt lại số danh sách trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# được cung cấp và chỉ cho bạn cách triển khai nó trong các dự án của riêng bạn.
+## Giới thiệu
 
- Để bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình Aspose.Words for .NET trong môi trường phát triển của mình. Nếu bạn chưa có, hãy tải xuống và cài đặt thư viện từ[Aspose.Releases]https://releases.aspose.com/words/net/.
+Bạn đang muốn nắm vững nghệ thuật thao tác danh sách trong tài liệu Word của mình bằng Aspose.Words cho .NET? Vâng, bạn đang ở đúng nơi! Trong hướng dẫn này, chúng ta sẽ đi sâu vào việc khởi động lại số danh sách, một tính năng tiện lợi sẽ nâng kỹ năng tự động hóa tài liệu của bạn lên một tầm cao mới. Hãy thắt dây an toàn và bắt đầu nào!
 
-## Bước 1: Tạo tài liệu và trình tạo tài liệu
+## Điều kiện tiên quyết
 
-Đầu tiên, tạo một tài liệu mới và trình tạo tài liệu liên quan:
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
+
+1.  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Nếu bạn chưa cài đặt nó, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Đảm bảo bạn có môi trường phát triển phù hợp như Visual Studio.
+3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp bạn làm theo hướng dẫn.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Đây là những điều quan trọng để truy cập các tính năng của Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+Bây giờ, hãy chia quy trình thành các bước dễ thực hiện. Chúng tôi sẽ đề cập đến mọi thứ từ việc tạo danh sách đến bắt đầu lại việc đánh số.
+
+## Bước 1: Thiết lập tài liệu và trình tạo của bạn
+
+Trước khi có thể bắt đầu thao tác với danh sách, bạn cần có tài liệu và DocumentBuilder. DocumentBuilder là công cụ dùng để thêm nội dung vào tài liệu của bạn.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +41,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 2: Tạo và tùy chỉnh danh sách đầu tiên
+## Bước 2: Tạo và tùy chỉnh danh sách đầu tiên của bạn
 
-Tiếp theo, tạo danh sách dựa trên mẫu hiện có, sau đó tùy chỉnh các cấp độ của mẫu đó:
+Tiếp theo, chúng tôi sẽ tạo một danh sách dựa trên mẫu và tùy chỉnh giao diện của nó. Trong ví dụ này, chúng tôi đang sử dụng định dạng số Ả Rập có dấu ngoặc đơn.
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,102 +51,75 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## Bước 3: Thêm các mục vào danh sách đầu tiên
+Ở đây, chúng ta đã thiết lập màu chữ thành màu đỏ và căn chỉnh văn bản về bên phải.
 
-Sử dụng trình tạo tài liệu để thêm các mục vào danh sách đầu tiên và xóa số danh sách:
+## Bước 3: Thêm các mục vào danh sách đầu tiên của bạn
+
+ Với danh sách của bạn đã sẵn sàng, đã đến lúc thêm một số mục. Trình tạo tài liệu`ListFormat.List` thuộc tính giúp áp dụng định dạng danh sách cho văn bản.
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## Bước 4: Tạo và tùy chỉnh danh sách thứ hai
+## Bước 4: Khởi động lại việc đánh số danh sách
 
-Để sử dụng lại danh sách đầu tiên bằng cách đặt lại số, hãy tạo bản sao bố cục danh sách gốc:
+Để sử dụng lại danh sách và bắt đầu lại việc đánh số, bạn cần tạo một bản sao của danh sách gốc. Điều này cho phép bạn sửa đổi danh sách mới một cách độc lập.
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-Bạn cũng có thể thực hiện các thay đổi bổ sung cho danh sách thứ hai nếu cần.
+Trong ví dụ này, danh sách mới bắt đầu ở số 10.
 
-## Bước 5: Thêm các mục vào danh sách thứ hai
+## Bước 5: Thêm mục vào danh sách mới
 
-Sử dụng lại trình tạo tài liệu để thêm các mục vào danh sách thứ hai và xóa số danh sách:
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## Bước 6: Lưu tài liệu đã sửa đổi
-
-Cuối cùng, lưu tài liệu đã sửa đổi:
+Cũng giống như trước đây, hãy thêm các mục vào danh sách mới của bạn. Điều này thể hiện danh sách khởi động lại ở số được chỉ định.
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-Vì thế ! Bạn đã đặt lại thành công số danh sách trong tài liệu Word bằng Aspose.Words for .NET.
-
-### Mã nguồn mẫu để đặt lại số danh sách
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Tạo một danh sách dựa trên một mẫu.
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-// Để sử dụng lại danh sách đầu tiên, chúng ta cần bắt đầu lại việc đánh số bằng cách tạo bản sao của định dạng danh sách ban đầu.
-List list2 = doc.Lists.AddCopy(list1);
-
-// Chúng tôi có thể sửa đổi danh sách mới theo bất kỳ cách nào, bao gồm cả việc đặt số bắt đầu mới.
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## Bước 6: Lưu tài liệu của bạn
+
+Cuối cùng, lưu tài liệu của bạn vào thư mục được chỉ định.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### Câu hỏi thường gặp
+## Phần kết luận
 
-#### Câu hỏi: Làm cách nào tôi có thể bắt đầu lại việc đánh số danh sách trong Aspose.Words?
+Việc khởi động lại số danh sách trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản và cực kỳ hữu ích. Cho dù bạn đang tạo báo cáo, tạo tài liệu có cấu trúc hay chỉ cần kiểm soát tốt hơn danh sách của mình, kỹ thuật này đều có thể đáp ứng được nhu cầu của bạn.
 
- Trả lời: Để khởi động lại việc đánh số danh sách trong Aspose.Words, bạn có thể sử dụng`ListRestartAtNumber` phương pháp của`List` lớp học. Phương pháp này cho phép bạn đặt một giá trị quay số mới để khởi động lại danh sách. Ví dụ, bạn có thể sử dụng`list.ListRestartAtNumber(1)` để bắt đầu lại việc đánh số từ 1.
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Có thể tùy chỉnh tiền tố và hậu tố của việc đánh số danh sách được khởi động lại trong Aspose.Words không?
+### Tôi có thể sử dụng các mẫu danh sách khác ngoài NumberArabicParenthesis không?
 
- Trả lời: Có, bạn có thể tùy chỉnh tiền tố và hậu tố của việc đánh số danh sách được khởi động lại trong Aspose.Words. Các`ListLevel`lớp cung cấp các thuộc tính như`ListLevel.NumberPrefix`Và`ListLevel.NumberSuffix` cho phép bạn chỉ định tiền tố và hậu tố cho từng cấp độ trong danh sách. Bạn có thể sử dụng các thuộc tính này để tùy chỉnh tiền tố và hậu tố nếu cần.
+Tuyệt đối! Aspose.Words cung cấp nhiều mẫu danh sách khác nhau như dấu đầu dòng, chữ cái, chữ số La Mã, v.v. Bạn có thể chọn một trong những phù hợp nhất với nhu cầu của bạn.
 
-#### Câu hỏi: Làm cách nào tôi có thể chỉ định một giá trị đánh số cụ thể mà từ đó danh sách sẽ được khởi động lại?
+### Làm cách nào để thay đổi cấp độ danh sách?
 
- Đáp: Để chỉ định một giá trị số cụ thể mà từ đó danh sách sẽ được khởi động lại, bạn có thể sử dụng`ListRestartAtNumber` phương thức truyền giá trị mong muốn làm đối số. Ví dụ: để bắt đầu lại việc đánh số từ 5, bạn có thể sử dụng`list.ListRestartAtNumber(5)`.
+ Bạn có thể thay đổi cấp độ danh sách bằng cách sửa đổi`ListLevels` tài sản. Ví dụ,`list1.ListLevels[1]` sẽ đề cập đến cấp độ thứ hai của danh sách.
 
-#### Câu hỏi: Có thể khởi động lại việc đánh số danh sách nhiều cấp trong Aspose.Words không?
+### Tôi có thể bắt đầu lại việc đánh số ở số bất kỳ không?
 
- Trả lời: Có, Aspose.Words hỗ trợ khởi động lại việc đánh số nhiều cấp độ danh sách. Bạn có thể áp dụng`ListRestartAtNumber` ở mỗi cấp danh sách để bắt đầu lại việc đánh số riêng lẻ. Ví dụ, bạn có thể sử dụng`list.Levels[0].ListRestartAtNumber(1)` để khởi động lại cấp danh sách đầu tiên từ 1 và`list.Levels[1].ListRestartAtNumber(1)` để khởi động lại danh sách cấp độ thứ hai bắt đầu từ 1, v.v.
+ Có, bạn có thể đặt số bắt đầu thành bất kỳ giá trị số nguyên nào bằng cách sử dụng`StartAt` thuộc tính của cấp danh sách.
 
+### Có thể có định dạng khác nhau cho các cấp độ danh sách khác nhau không?
+
+Thực vậy! Mỗi cấp độ danh sách có thể có cài đặt định dạng riêng, chẳng hạn như phông chữ, căn chỉnh và kiểu đánh số.
+
+### Nếu tôi muốn tiếp tục đánh số từ danh sách trước đó thay vì khởi động lại thì sao?
+
+Nếu muốn tiếp tục đánh số, bạn không cần tạo bản sao của danh sách. Đơn giản chỉ cần tiếp tục thêm các mục vào danh sách ban đầu.
 
 

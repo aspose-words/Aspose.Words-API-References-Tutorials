@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/remove-content/remove-table-of-contents/
 ---
-## Úvod
+## Zavedení
 
 Už vás nebaví zabývat se nežádoucím obsahem (TOC) v dokumentech aplikace Word? Všichni jsme tam byli – někdy TOC prostě není nutné. Naštěstí pro vás Aspose.Words pro .NET usnadňuje programové odstranění obsahu. V tomto tutoriálu vás provedu procesem krok za krokem, abyste jej zvládli během chvilky. Pojďme se rovnou ponořit!
 

@@ -15,7 +15,7 @@ Hallo! Haben Sie sich schon einmal gefragt, wie Sie die Abstände und Einzüge i
 
 Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen, um den Anweisungen zu folgen:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek haben. Wenn Sie sie noch nicht haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek haben. Wenn Sie sie noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Sie müssen eine Entwicklungsumgebung einrichten. Visual Studio ist eine beliebte Wahl für die .NET-Entwicklung.
 3. Ein Word-Dokument: Halten Sie ein Word-Dokument bereit, mit dem Sie experimentieren können. Wir verwenden ein Beispieldokument mit dem Namen „Asian typography.docx“.
 4. Grundkenntnisse in C#: Sie sollten mit der C#-Programmierung vertraut sein, um den Codebeispielen folgen zu können.
@@ -97,7 +97,7 @@ Und da haben Sie es! Sie haben gerade gelernt, wie Sie asiatische Absatzabständ
 Ja, diese Einstellungen können auf jeden Text angewendet werden, sie sind aber aufgrund der besonderen Anforderungen an Abstand und Einrückung besonders für die asiatische Typografie nützlich.
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
- Ja, Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, aber Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) oder ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) um es auszuprobieren.
+ Ja, Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, aber Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) oder ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) um es auszuprobieren.
 
 ### Wo finde ich weitere Dokumentation?
  Eine ausführliche Dokumentation finden Sie auf der[Aspose.Words für .NET-Dokumentationsseite](https://reference.aspose.com/words/net/).

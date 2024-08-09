@@ -16,7 +16,7 @@ Xin chào các nhà phát triển và những người đam mê tài liệu! �
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất.[Tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất.[Tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển tương thích với .NET như Visual Studio.
 3. Kiến thức C# cơ bản: Hiểu cú pháp C# cơ bản sẽ hữu ích.
 4. Tài liệu Word mẫu: Mặc dù chúng tôi sẽ tạo một tài liệu từ đầu nhưng việc có một mẫu có thể có ích cho việc thử nghiệm.
@@ -100,11 +100,11 @@ textBox.Next = null;
 textBox.Previous?.BreakForwardLink();
 ```
 
- Các`?.` toán tử đảm bảo rằng phương thức này chỉ được gọi nếu`Previous` không phải là null, ngăn chặn các lỗi thời gian chạy tiềm ẩn.
+ các`?.` toán tử đảm bảo rằng phương thức này chỉ được gọi nếu`Previous` không phải là null, ngăn chặn các lỗi thời gian chạy tiềm ẩn.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! 🎉 Bạn đã học thành công cách ngắt liên kết chuyển tiếp trong hộp văn bản bằng Aspose.Words for .NET. Cho dù bạn đang dọn dẹp tài liệu, chuẩn bị cho định dạng mới hay chỉ đang thử nghiệm, các bước này sẽ giúp bạn quản lý hộp văn bản của mình một cách chính xác. Phá vỡ các liên kết cũng giống như gỡ một nút thắt—đôi khi cần thiết để giữ mọi thứ gọn gàng và ngăn nắp. 
+Và bạn có nó! 🎉 Bạn đã học thành công cách ngắt liên kết chuyển tiếp trong hộp văn bản bằng Aspose.Words for .NET. Cho dù bạn đang dọn dẹp tài liệu, chuẩn bị cho định dạng mới hay chỉ đang thử nghiệm, các bước này sẽ giúp bạn quản lý hộp văn bản của mình một cách chính xác. Phá vỡ các liên kết cũng giống như gỡ một nút thắt—đôi khi cần thiết để giữ mọi thứ gọn gàng và ngăn nắp. 
 
  Nếu bạn đang muốn khám phá thêm về những gì Aspose.Words có thể làm, thì[tài liệu](https://reference.aspose.com/words/net/) là một kho tàng thông tin. Chúc bạn viết mã vui vẻ và chúc tài liệu của bạn luôn được sắp xếp tốt!
 

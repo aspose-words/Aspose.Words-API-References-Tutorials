@@ -9,7 +9,7 @@ url: /fr/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 ## Introduction
 
-Avez-vous déjà eu du mal avec des tableaux qui semblent avoir été intégrés dans votre document Word, laissant le texte à l'étroit et les colonnes désalignées ? Si c'est le cas, vous n'êtes pas seul ! La gestion du formatage des tableaux peut être un véritable casse-tête, surtout lorsqu'il s'agit de contenu dynamique. Mais ne vous inquiétez pas ; Aspose.Words for .NET vous soutient. Dans ce guide, nous allons plonger dans la fonctionnalité astucieuse de l'ajustement automatique des tableaux au contenu. Cette fonctionnalité garantit que vos tableaux s'adaptent parfaitement à leur contenu, donnant à vos documents un aspect soigné et professionnel avec un minimum d'effort. Prêt à commencer? Faisons travailler vos tables plus dur pour vous !
+Avez-vous déjà eu du mal avec des tableaux qui semblent avoir été intégrés dans votre document Word, laissant le texte à l'étroit et les colonnes désalignées ? Si c'est le cas, vous n'êtes pas seul ! La gestion du formatage des tableaux peut être un véritable casse-tête, surtout lorsqu'il s'agit de contenu dynamique. Mais ne vous inquiétez pas ; Aspose.Words for .NET vous soutient. Dans ce guide, nous allons plonger dans la fonctionnalité astucieuse de l'ajustement automatique des tableaux au contenu. Cette fonctionnalité garantit que vos tableaux s'adaptent parfaitement à leur contenu, donnant à vos documents un aspect soigné et professionnel avec un minimum d'effort. Prêt à commencer ? Faisons travailler vos tables plus dur pour vous !
 
 ## Conditions préalables
 

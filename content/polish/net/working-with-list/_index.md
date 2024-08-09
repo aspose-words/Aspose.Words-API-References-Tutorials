@@ -13,6 +13,6 @@ Przetwarzanie słów za pomocą list to kompleksowe źródło informacji, które
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Uruchom ponownie listę w każdej sekcji](./restart-list-at-each-section/)  | Dowiedz się, jak zresetować listę numerowaną dla każdej sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET. |
-| [Określ poziom listy](./specify-list-level/) | Dowiedz się, jak określić poziom listy w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Uruchom ponownie numer listy](./restart-list-number/) | Dowiedz się, jak zresetować numer listy w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
+| [Uruchom ponownie listę w każdej sekcji](./restart-list-at-each-section/)  | Dowiedz się, jak ponownie uruchomić listy w każdej sekcji dokumentów programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku, aby skutecznie zarządzać listami. |
+| [Określ poziom listy](./specify-list-level/) | Dowiedz się, jak tworzyć wielopoziomowe listy numerowane i punktowane w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W zestawie instrukcja krok po kroku. Idealny dla programistów .NET. |
+| [Uruchom ponownie numer listy](./restart-list-number/) | Dowiedz się, jak ponownie uruchomić numery list w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten szczegółowy przewodnik zawierający 2000 słów zawiera wszystko, co musisz wiedzieć, od konfiguracji po zaawansowaną personalizację. |

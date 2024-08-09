@@ -14,12 +14,12 @@ url: /es/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ## Requisitos previos
 
 Antes de ensuciarnos las manos con algún código, hay algunas cosas que necesitarás:
-1.  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier IDE de C# de su elección.
 3. .NET Framework: asegúrese de tenerlo instalado.
-4.  Licencia: Puede comenzar con una[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para funciones completas.
+4.  Licencia: Puede comenzar con una[prueba gratuita](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para funciones completas.
 
-¿Tengo todo? ¡Excelente! Pasemos a configurar nuestro proyecto.
+¿Tienes todo? ¡Excelente! Pasemos a configurar nuestro proyecto.
 
 ## Importar espacios de nombres
 
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 ## Preguntas frecuentes
 
 ### ¿Puedo utilizar un tipo diferente de cifrado?
- Sí, Aspose.Words para .NET admite varios métodos de cifrado. Comprobar el[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Sí, Aspose.Words para .NET admite varios métodos de cifrado. Compruebe el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### ¿Qué pasa si olvido la contraseña de mi documento?
 Lamentablemente, si olvida la contraseña, no podrá acceder al documento. ¡Asegúrate de mantener tus contraseñas seguras!

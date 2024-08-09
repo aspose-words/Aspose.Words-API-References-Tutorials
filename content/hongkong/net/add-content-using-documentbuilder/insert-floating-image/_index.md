@@ -134,7 +134,7 @@ doc.Save(outputPath);
 
 ### 還有哪些可用於影像的環繞類型？
 
- Aspose.Words 支援各種換行類型，例如`Inline`, `TopBottom`, `Tight`, `Through`， 和更多。您可以選擇最適合您的文件佈局的一種。
+ Aspose.Words 支援各種換行類型，例如`Inline`, `TopBottom`, `Tight`, `Through`，等等。您可以選擇最適合您的文件佈局的一種。
 
 ### 我可以使用不同的圖像格式嗎？
 

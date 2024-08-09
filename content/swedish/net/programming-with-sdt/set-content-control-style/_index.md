@@ -9,7 +9,7 @@ url: /sv/net/programming-with-sdt/set-content-control-style/
 ---
 ## Introduktion
 
-Har du någonsin velat förstärka dina Word-dokument med några anpassade stilar, men funnit dig fast i det tekniska ogräset? Nåväl, du har tur! Idag dyker vi in i världen av att ställa in stilar för innehållskontroll med Aspose.Words för .NET. Det är enklare än du tror, och i slutet av den här handledningen kommer du att styla dina dokument som ett proffs. Vi går igenom allt steg för steg och ser till att du förstår varje del av processen. Är du redo att förvandla dina Word-dokument? Låt oss börja!
+Har du någonsin velat förstärka dina Word-dokument med några anpassade stilar, men funnit dig fast i det tekniska ogräset? Nåväl, du har tur! Idag dyker vi in i världen av att ställa in stilar för innehållskontroll med Aspose.Words för .NET. Det är enklare än du tror, och i slutet av den här handledningen kommer du att styla dina dokument som ett proffs. Vi går igenom allt steg för steg och ser till att du förstår varje del av processen. Är du redo att förvandla dina Word-dokument? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "Structured document tags.docx");
 
  I det här steget anger vi sökvägen till vår dokumentkatalog och laddar dokumentet med hjälp av`Document` klass från Aspose.Words. Den här klassen representerar ett Word-dokument.
 
-## Steg 2: Få tillgång till strukturerade dokumenttaggen
+## Steg 2: Gå till strukturerade dokumenttaggen
 
 Därefter måste vi komma åt den första strukturerade dokumenttaggen i vårt dokument.
 
@@ -103,4 +103,4 @@ Ja, du kan lagra den ursprungliga stilen innan du gör ändringar och använda d
 Absolut! Denna metod fungerar för olika dokumentelement. Justera bara koden för att rikta in det önskade elementet.
 
 ### Stöder Aspose.Words andra plattformar förutom .NET?  
-Ja, Aspose.Words är tillgängligt för Java, C++ och andra plattformar. Kolla deras[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+Ja, Aspose.Words är tillgängligt för Java, C++ och andra plattformar. Kolla deras[dokumentation](https://reference.aspose.com/words/net/) för mer information.

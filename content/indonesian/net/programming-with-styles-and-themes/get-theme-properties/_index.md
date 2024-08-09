@@ -54,7 +54,7 @@ Document doc = new Document();
 Aspose.Words.Themes.Theme theme = doc.Theme;
 ```
 
- Di sini, kami mengambil`Theme` objek yang terkait dengan dokumen tersebut. Objek ini berisi properti font dan warna, yang akan kita jelajahi pada langkah berikutnya.
+ Di sini, kami mengambil`Theme` objek yang terkait dengan dokumen tersebut. Objek ini berisi properti font dan warna, yang akan kita jelajahi pada langkah selanjutnya.
 
 ## Langkah 3: Ambil Font Utama
 
@@ -108,7 +108,7 @@ Ya, Anda dapat mengambil properti tema dari dokumen Word baru dan yang sudah ada
 
 ### Bagaimana cara menerapkan tema baru ke dokumen Word?
 
- Untuk menerapkan tema baru, Anda perlu mengatur properti tema di`Document` obyek. Periksalah[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk detail tentang penerapan tema.
+ Untuk menerapkan tema baru, Anda perlu mengatur properti tema di`Document` obyek. Periksa[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk detail tentang penerapan tema.
 
 ### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
 

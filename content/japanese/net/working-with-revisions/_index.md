@@ -16,12 +16,12 @@ Words Processing with Revisions チュートリアルでは、Aspose.Words for .
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [修正を承認](./accept-revisions/) | Aspose.Words for .NET を使用して Word 文書の修正を受け入れる方法を学習します。 |
-| [単語の修正タイプを取得する](./get-revision-types/) | Aspose.Words for .NET を使用して、Word 文書内の単語の修正タイプを取得します。 |
-| [リビジョングループを取得](./get-revision-groups/) | Aspose.Words for .NET を使用して、Word 文書内のリビジョン グループの詳細を取得します。 |
-| [PDF ファイル内のコメントを削除する](./remove-comments-in-pdf/) | Aspose.Words for .NET を使用して PDF ファイル内のコメントを削除します。 |
-| [バルーンで変更履歴を表示](./show-revisions-in-balloons/) | Aspose.Words for .NET を使用して、バルーン内にリビジョンを表示します。 |
-| [リビジョングループの詳細を取得](./get-revision-group-details/) | Aspose.Words for .NET を使用して、Word 文書内のリビジョン グループの詳細を取得します。 |
-| [改訂版にアクセス](./access-revised-version/) | Aspose.Words for .NET を使用して、Word 文書の改訂版にアクセスします。 |
-| [追跡ドキュメント内のノードを移動](./move-node-in-tracked-document/) | Aspose.Words for .NET を使用して、追跡されたドキュメント内のノードを移動します。 |
-| [形状修正](./shape-revision/) | Aspose.Words for .NET を使用して Word 文書内の図形を修正します。 |
+| [修正を承認](./accept-revisions/) | Aspose.Words for .NET でドキュメントの改訂をマスターしましょう。変更を簡単に追跡、承認、拒否する方法を学びます。ドキュメント管理スキルを高めましょう。 |
+| [単語の修正タイプを取得する](./get-revision-types/) |Aspose.Words for .NET を使用して、Word 文書内の単語の修正タイプを取得する方法を学びます。このステップ バイ ステップ ガイドは、文書の修正を効率的に処理するのに役立ちます。 |
+| [リビジョングループを取得](./get-revision-groups/) | この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word ドキュメントからリビジョン グループを取得する方法を説明します。ドキュメント管理に最適です。 |
+| [PDF ファイル内のコメントを削除する](./remove-comments-in-pdf/) | ステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して PDF ファイルからコメントを削除する方法を学習します。 |
+| [バルーンで変更履歴を表示](./show-revisions-in-balloons/) | Aspose.Words for .NET を使用してバルーンで変更履歴を表示する方法を学びます。この詳細なガイドでは、各手順を順を追って説明し、ドキュメントの変更が明確かつ整理されていることを保証します。 |
+| [リビジョングループの詳細を取得](./get-revision-group-details/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内のリビジョン グループの詳細を簡単に取得できます。.NET 開発者に最適です。 |
+| [改訂版にアクセス](./access-revised-version/) | Aspose.Words for .NET を使用して、ドキュメントの改訂版にアクセスして表示する方法を学びます。シームレスなドキュメント管理のためのステップバイステップ ガイドに従ってください。 |
+| [追跡ドキュメント内のノードを移動](./move-node-in-tracked-document/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して追跡された Word 文書内のノードを移動する方法を学びます。開発者に最適です。 |
+| [形状修正](./shape-revision/) | この包括的なガイドでは、Aspose.Words for .NET を使用して Word 文書内の図形の修正を処理する方法を学びます。変更の追跡、図形の挿入などをマスターします。 |

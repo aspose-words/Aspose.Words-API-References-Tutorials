@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Giới thiệu
 
 Nếu bạn đang làm việc với tài liệu trong .NET và sử dụng Aspose.Words, việc quản lý nguồn phông chữ có thể là một khía cạnh quan trọng để đảm bảo tài liệu của bạn trông như mong đợi. Aspose.Words cung cấp một cách mạnh mẽ để xử lý phông chữ, bao gồm cả việc sử dụng các luồng tài nguyên. Trong hướng dẫn này, chúng ta sẽ hướng dẫn cách sử dụng luồng tài nguyên làm nguồn phông chữ với Aspose.Words cho .NET. Hãy đi sâu vào!
 
@@ -15,7 +16,7 @@ Nếu bạn đang làm việc với tài liệu trong .NET và sử dụng Aspos
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
 - Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp bạn theo dõi.
--  Aspose.Words for .NET Library: Tải xuống và cài đặt nó từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Tải xuống và cài đặt nó từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Thiết lập như Visual Studio để viết và thực thi mã của bạn.
 -  Tài liệu mẫu: Có tài liệu mẫu (ví dụ:`Rendering.docx`) sẵn sàng kiểm tra cài đặt phông chữ.
 
@@ -99,11 +100,11 @@ Bây giờ bạn đã nắm vững quy trình sử dụng luồng tài nguyên l
 
 ###  Câu hỏi 3: Tôi có thể xử lý các loại cảnh báo khác bằng`IWarningCallback`?
 
- Vâng`IWarningCallback`Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
+ Vâng, cái`IWarningCallback`Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
 
 ### Câu hỏi 4: Tôi có thể tìm hỗ trợ cho Aspose.Words ở đâu?
 
- Tham quan[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
+ Ghé thăm[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
 
 ### Câu hỏi 5: Có thể xin giấy phép tạm thời cho Aspose.Words không?
 

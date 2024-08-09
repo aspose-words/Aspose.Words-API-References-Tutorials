@@ -18,7 +18,7 @@ Zanim zagłębisz się w szczegóły, upewnij się, że masz wszystko, czego pot
 - Środowisko programistyczne: IDE takie jak Visual Studio będzie Twoim placem zabaw.
 - Podstawowa znajomość języka C#: Chociaż omówimy wszystko szczegółowo, podstawowa znajomość języka C# będzie korzystna.
 
-Gotowy by skręcić? Zacznijmy!
+Gotowy do działania? Zacznijmy!
 
 ## Importowanie niezbędnych przestrzeni nazw
 

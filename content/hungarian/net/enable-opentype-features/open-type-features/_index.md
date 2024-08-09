@@ -9,7 +9,7 @@ url: /hu/net/enable-opentype-features/open-type-features/
 ---
 ## Bevezetés
 
-Készen áll arra, hogy belemerüljön az OpenType-szolgáltatások világába az Aspose.Words for .NET használatával? Kapcsold be, mert egy lebilincselő utazásra készülünk, amely nem csak javítja Word-dokumentumait, hanem az Aspose.Words szakértőjévé is teszi. Kezdjük el!
+Készen áll arra, hogy belemerüljön az OpenType-szolgáltatások világába az Aspose.Words for .NET használatával? Kapcsold be, mert egy lebilincselő utazásra készülünk, amely nem csak javítja Word-dokumentumait, hanem az Aspose.Words szakértőjévé is teszi. Kezdjük is!
 
 ## Előfeltételek
 
@@ -70,7 +70,7 @@ Ez a kódsor megnyitja a megadott dokumentumot, így tudjuk kezelni.
 
 ## 3. lépés: Engedélyezze az OpenType-szolgáltatásokat
 
- A HarfBuzz egy nyílt forráskódú szövegformáló motor, amely zökkenőmentesen működik az Aspose.Words programmal. Az OpenType funkciók engedélyezéséhez be kell állítanunk a`TextShaperFactory` tulajdona a`LayoutOptions` tárgy.
+ A HarfBuzz egy nyílt forráskódú szövegformáló motor, amely zökkenőmentesen működik az Aspose.Words programmal. Az OpenType funkciók engedélyezéséhez be kell állítanunk a`TextShaperFactory` tulajdona a`LayoutOptions` objektum.
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;
@@ -106,7 +106,7 @@ A HarfBuzz egy nyílt forráskódú szövegformáló motor, amely erőteljes tá
 Igen, az Aspose.Words különböző szövegformáló motorokat támogat. A HarfBuzz azonban erősen ajánlott az átfogó OpenType funkció támogatása miatt.
 
 ### Az Aspose.Words kompatibilis az összes .NET-verzióval?
- Az Aspose.Words különféle .NET-verziókat támogat, beleértve a .NET-keretrendszert, a .NET Core-t és a .NET Standard-t. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) részletes kompatibilitási információkért.
+ Az Aspose.Words különféle .NET-verziókat támogat, beleértve a .NET-keretrendszert, a .NET Core-t és a .NET Standard-t. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) részletes kompatibilitási információkért.
 
 ### Hogyan próbálhatom ki az Aspose.Words-t vásárlás előtt?
  Ingyenes próbaverziót tölthet le a webhelyről[Aspose honlapja](https://releases.aspose.com/) és kérjen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).

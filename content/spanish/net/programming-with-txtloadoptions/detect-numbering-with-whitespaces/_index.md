@@ -2,7 +2,7 @@
 title: Detectar numeración con espacios en blanco
 linktitle: Detectar numeración con espacios en blanco
 second_title: API de procesamiento de documentos Aspose.Words
-description: Descubra cómo utilizar Aspose.Words para .NET para detectar numeraciones con espacios en blanco en documentos de texto sin formato y asegurarse de que sus listas se reconozcan correctamente.
+description: Descubra cómo utilizar Aspose.Words para .NET para detectar numeración con espacios en blanco en documentos de texto sin formato y asegurarse de que sus listas se reconozcan correctamente.
 type: docs
 weight: 10
 url: /es/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/

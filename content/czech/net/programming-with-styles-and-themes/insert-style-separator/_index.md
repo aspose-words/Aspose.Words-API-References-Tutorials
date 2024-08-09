@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-## Úvod
+## Zavedení
 
 Při programové práci s dokumenty aplikace Word pomocí Aspose.Words for .NET budete možná muset pečlivě spravovat styly dokumentů a formátování. Jedním z takových úkolů je vložení oddělovače stylů pro rozlišení stylů v dokumentu. Tato příručka vás provede procesem přidání oddělovače stylu dokumentu a poskytne vám postup krok za krokem.
 

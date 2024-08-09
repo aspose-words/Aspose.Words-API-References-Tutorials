@@ -17,7 +17,7 @@ Trước khi chúng ta đi vào chi tiết quan trọng, hãy đảm bảo bạn
 
 1. Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển. Visual Studio là một lựa chọn tuyệt vời.
 2.  Aspose.Words for .NET: Tải xuống và cài đặt thư viện Aspose.Words for .NET. Bạn có thể lấy nó[đây](https://releases.aspose.com/words/net/).
-3.  Giấy phép: Lấy giấy phép tạm thời nếu bạn không có giấy phép đầy đủ. Hiểu rồi[đây](https://purchase.aspose.com/temporary-license/).
+3.  Giấy phép: Lấy giấy phép tạm thời nếu bạn không có giấy phép đầy đủ. Nhận nó[đây](https://purchase.aspose.com/temporary-license/).
 4. Kiến thức cơ bản về C#: Làm quen với C# và .NET framework sẽ có lợi.
 
 ## Nhập không gian tên
@@ -111,7 +111,7 @@ doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công danh sách đa cấp trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này cho phép bạn tự động hóa các tác vụ định dạng tài liệu phức tạp một cách dễ dàng. Hãy nhớ rằng, việc thành thạo các công cụ này không chỉ giúp tiết kiệm thời gian mà còn đảm bảo tính nhất quán và chuyên nghiệp trong quá trình tạo tài liệu của bạn.
+Và bạn có nó! Bạn đã tạo thành công danh sách đa cấp trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này cho phép bạn tự động hóa các tác vụ định dạng tài liệu phức tạp một cách dễ dàng. Hãy nhớ rằng, việc thành thạo các công cụ này không chỉ giúp tiết kiệm thời gian mà còn đảm bảo tính nhất quán và chuyên nghiệp trong quá trình tạo tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 

@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ## 結論
 
-現在你就擁有了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 成功將往返資訊從 Word 文件匯出到 HTML。這項強大的功能可確保您的文件在轉換過程中保持完整性和格式，使您的生活變得更加輕鬆。
+現在你就得到它了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 成功將往返資訊從 Word 文件匯出到 HTML。這項強大的功能可確保您的文件在轉換過程中保持完整性和格式，使您的生活變得更加輕鬆。
 
 ## 常見問題解答
 

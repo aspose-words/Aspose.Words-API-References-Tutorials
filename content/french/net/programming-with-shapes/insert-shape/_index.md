@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 
 ## Conclusion
 
-Et voila! Vous avez réussi à insérer et à manipuler des formes dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvre les bases, mais Aspose.Words propose de nombreuses fonctionnalités plus avancées pour travailler avec des formes, telles que des styles personnalisés, des connecteurs et des formes de groupe.
+Et voilà ! Vous avez réussi à insérer et à manipuler des formes dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvre les bases, mais Aspose.Words propose de nombreuses fonctionnalités plus avancées pour travailler avec des formes, telles que des styles personnalisés, des connecteurs et des formes de groupe.
 
  Pour des informations plus détaillées, visitez le[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/).
 

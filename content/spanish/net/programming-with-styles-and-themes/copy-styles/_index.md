@@ -75,7 +75,7 @@ Este código guarda el documento modificado con un nuevo nombre, conservando sus
 ###  ¿Cuál es el propósito de la`CopyStylesFromTemplate` method?  
  El`CopyStylesFromTemplate` El método copia estilos de un documento a otro, asegurando que el documento de destino herede el formato del documento de origen.
 
-###  Puedo usar`CopyStylesFromTemplate` with documents in different formats?  
+###  ¿Puedo usar`CopyStylesFromTemplate` with documents in different formats?  
  No, el`CopyStylesFromTemplate` El método sólo funciona con documentos en el mismo formato, normalmente DOCX.
 
 ### ¿Cómo puedo comprobar si los estilos se han copiado correctamente?  

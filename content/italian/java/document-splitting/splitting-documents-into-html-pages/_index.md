@@ -18,9 +18,9 @@ Prima di immergerci nel codice, assicurati di avere i seguenti prerequisiti:
 -  Aspose.Words per la libreria Java. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/java/).
 
 
-## introduzione
+## Introduzione
 
-Nel mondo digitale di oggi, la conversione di documenti Word in pagine HTML è un requisito comune. Aspose.Words semplifica questo compito fornendo un'API Java che ci consente di dividere documenti Word in pagine HTML senza sforzo. Iniziamo.
+Nel mondo digitale di oggi, la conversione di documenti Word in pagine HTML è un requisito comune. Aspose.Words semplifica questo compito fornendo un'API Java che ci consente di dividere documenti Word in pagine HTML senza sforzo. Cominciamo.
 
 ## Impostazione del progetto
 
@@ -47,7 +47,7 @@ splitOptions.setDocumentSplitCriteria(DocumentSplitCriteria.PAGE_BREAK);
 List<Document> pages = DocumentSplitter.split(doc, splitOptions);
 ```
 
-Questo codice divide il documento in base alle interruzioni di pagina e memorizza ogni pagina nel file`pages` elenco.
+Questo codice divide il documento in base alle interruzioni di pagina e memorizza ogni pagina nel file`pages` lista.
 
 ## Salvataggio in formato HTML
 

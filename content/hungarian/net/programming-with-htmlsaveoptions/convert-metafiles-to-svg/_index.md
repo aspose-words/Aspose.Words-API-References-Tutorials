@@ -33,7 +33,7 @@ Most, hogy az előfeltételeinket és a névtereinket rendeztük, nézzük meg a
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Rendben, kezdjük a dolgokat egy új Word-dokumentum létrehozásával és a`DocumentBuilder` tárgy. Ez az építő segít nekünk tartalmat hozzáadni a dokumentumunkhoz.
+ Rendben, kezdjük a dolgokat egy új Word-dokumentum létrehozásával és a`DocumentBuilder` objektum. Ez az építő segít nekünk tartalmat hozzáadni a dokumentumunkhoz.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

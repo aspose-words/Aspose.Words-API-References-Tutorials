@@ -15,7 +15,7 @@ Bu kılavuzda Aspose.Words for Java kullanarak XML verileriyle nasıl çalışı
 ## Önkoşullar
 
 Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
-- [Aspose.Words for Java](https://products.aspose.com/words/java/) Kurulmuş.
+- [Aspose.Words for Java](https://products.aspose.com/words/java/) yüklü.
 - Müşteriler, siparişler ve satıcılar için örnek XML veri dosyaları.
 - Adres-mektup birleştirme hedefleri için örnek Word belgeleri.
 

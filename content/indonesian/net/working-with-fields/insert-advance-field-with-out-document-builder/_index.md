@@ -126,7 +126,7 @@ Ini menyimpan dokumen dengan bidang muka disertakan.
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil menyisipkan bidang lanjutan ke dalam dokumen Word tanpa menggunakan kelas DocumentBuilder. Dengan mengikuti langkah-langkah ini, Anda telah memanfaatkan kekuatan Aspose.Words untuk .NET untuk memanipulasi dokumen Word secara terprogram. Baik Anda mengotomatiskan pembuatan laporan atau membuat templat dokumen yang rumit, pengetahuan ini pasti akan berguna. Teruslah bereksperimen dan jelajahi kemampuan Aspose.Words untuk membawa pemrosesan dokumen Anda ke tingkat berikutnya!
+Dan itu dia! Anda telah berhasil menyisipkan bidang lanjutan ke dalam dokumen Word tanpa menggunakan kelas DocumentBuilder. Dengan mengikuti langkah-langkah ini, Anda telah memanfaatkan kekuatan Aspose.Words untuk .NET untuk memanipulasi dokumen Word secara terprogram. Baik Anda mengotomatiskan pembuatan laporan atau membuat templat dokumen yang rumit, pengetahuan ini pasti akan berguna. Teruslah bereksperimen dan jelajahi kemampuan Aspose.Words untuk membawa pemrosesan dokumen Anda ke tingkat selanjutnya!
 
 ## FAQ
 

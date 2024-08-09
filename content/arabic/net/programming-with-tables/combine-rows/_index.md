@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## الخطوة 2: تحديد الجداول
 
- بعد ذلك، عليك تحديد الجداول التي تريد دمجها. يتيح لك Aspose.Words الحصول على الجداول من مستند باستخدام الملف`GetChild` طريقة. إليك الطريقة:
+ بعد ذلك، عليك تحديد الجداول التي تريد دمجها. يتيح لك Aspose.Words الحصول على الجداول من مستند باستخدام الملف`GetChild` طريقة. وإليك الطريقة:
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);

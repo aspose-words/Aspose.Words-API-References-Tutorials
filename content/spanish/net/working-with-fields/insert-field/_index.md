@@ -74,13 +74,13 @@ En este ejemplo, insertamos un MERGEFIELD, que normalmente se usa para operacion
 
 ### Guardar el documento
 
-Después de insertar el campo, debemos guardar nuestro documento. Así es cómo:
+Después de insertar el campo, debemos guardar nuestro documento. He aquí cómo:
 
 ```csharp
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-¡Y eso es! Ha insertado exitosamente un campo en su documento de Word.
+¡Y eso es todo! Ha insertado exitosamente un campo en su documento de Word.
 
 ## Conclusión
 

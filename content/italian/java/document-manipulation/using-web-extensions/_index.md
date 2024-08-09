@@ -26,7 +26,7 @@ Per aggiungere un riquadro attività dell'estensione Web a un documento, attener
 Document doc = new Document();
 ```
 
-##  Creare un`TaskPane` instance and add it to the document's web extension task panes:
+##  Crea un`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();

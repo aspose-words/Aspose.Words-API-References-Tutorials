@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
-## Úvod
+## Zavedení
 
 Aspose.Words for .NET je výkonná knihovna pro programové zpracování dokumentů aplikace Word. Dnes se ponoříme do toho, jak využít metaznaky ve vzorcích vyhledávání pomocí této knihovny. Pokud chcete zvládnout manipulaci s dokumenty, tato příručka je vaším hlavním zdrojem. Projdeme si každý krok, abychom zajistili, že můžete efektivně nahradit text pomocí metaznaků.
 
@@ -96,7 +96,7 @@ doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste manipulovali s dokumentem aplikace Word pomocí metaznaků ve vzorcích vyhledávání pomocí Aspose.Words for .NET. Tato technika je neuvěřitelně užitečná pro automatizaci úloh úprav a formátování dokumentů. Pokračujte v experimentování s různými metaznaky, abyste objevili výkonnější způsoby zpracování dokumentů.
+Gratuluji! Úspěšně jste manipulovali s dokumentem aplikace Word pomocí metaznaků ve vzorcích vyhledávání pomocí Aspose.Words for .NET. Tato technika je neuvěřitelně užitečná pro automatizaci úloh úprav a formátování dokumentů. Pokračujte v experimentování s různými metaznaky, abyste objevili výkonnější způsoby zpracování dokumentů.
 
 ## Nejčastější dotazy
 
@@ -110,7 +110,7 @@ Meta znaky jsou speciální znaky používané k reprezentaci prvků, jako jsou 
 Aspose.Words for .NET je speciálně navržen pro jazyky .NET, jako je C#. Aspose však poskytuje knihovny i pro jiné platformy.
 
 ### Jak získám dočasnou licenci pro Aspose.Words for .NET?
- Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
+ Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
  Komplexní dokumentaci naleznete na[Aspose Documentation Page](https://reference.aspose.com/words/net/).

@@ -15,7 +15,7 @@ Salut! Vous êtes-vous déjà demandé comment protéger vos documents Word cont
 
 Avant de plonger dans le vif du sujet de la protection par mot de passe de vos documents Word, vous aurez besoin de quelques éléments :
 
-1.  Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout autre environnement de développement C#.
 3. Connaissances de base en C# : Une compréhension fondamentale de la programmation C#.
 4.  Licence Aspose : obtenez une licence auprès de[ici](https://purchase.aspose.com/buy)ou utilisez un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 Maintenant que notre projet est mis en place, créons un document Word que nous pouvons protéger.
 
- Dans ton`Program.cs` fichier, initialisez une nouvelle instance du`Document` classe. Cette classe représente le document Word avec lequel vous allez travailler.
+ Dans votre`Program.cs` fichier, initialisez une nouvelle instance du`Document` classe. Cette classe représente le document Word avec lequel vous allez travailler.
 
 ```csharp
 // Le chemin d'accès au répertoire des documents.
@@ -88,7 +88,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ## Conclusion
 
-Et voila! Vous avez ajouté avec succès une protection par mot de passe à votre document Word à l'aide d'Aspose.Words pour .NET. C'est comme si vous disposiez d'un verrou numérique sur vos documents les plus importants, garantissant qu'ils sont à l'abri des regards indiscrets. Que vous protégiez des informations sensibles ou que vous souhaitiez simplement ajouter une couche de sécurité supplémentaire, Aspose.Words rend les choses simples et efficaces. Bon codage !
+Et voilà ! Vous avez ajouté avec succès une protection par mot de passe à votre document Word à l'aide d'Aspose.Words pour .NET. C'est comme si vous disposiez d'un verrou numérique sur vos documents les plus importants, garantissant qu'ils sont à l'abri des regards indiscrets. Que vous protégiez des informations sensibles ou que vous souhaitiez simplement ajouter une couche de sécurité supplémentaire, Aspose.Words rend les choses simples et efficaces. Bon codage !
 
 ## FAQ
 

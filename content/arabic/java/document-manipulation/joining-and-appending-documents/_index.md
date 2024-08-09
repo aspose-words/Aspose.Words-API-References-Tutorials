@@ -140,4 +140,4 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ### ماذا لو كنت أرغب في ربط/إلغاء ربط الرؤوس والتذييلات بين المستندات؟
 
- يمكنك ربط الرؤوس والتذييلات باستخدام`linkToPrevious(true)` أو فك الارتباط معهم`linkToPrevious(false)` كما هو مطلوب.
+ يمكنك ربط الرؤوس والتذييلات باستخدام`linkToPrevious(true)` أو فك الارتباط معهم`linkToPrevious(false)` حسب الحاجة.

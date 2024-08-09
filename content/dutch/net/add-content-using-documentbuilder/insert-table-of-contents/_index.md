@@ -33,7 +33,7 @@ Laten we het proces in duidelijke stappen opsplitsen:
 
 ## Stap 1: Initialiseer Aspose.Words Document en DocumentBuilder
 
- Initialiseer eerst een nieuwe Aspose.Words`Document` voorwerp en een`DocumentBuilder` werken met:
+ Initialiseer eerst een nieuwe Aspose.Words`Document` voorwerp en een`DocumentBuilder` om mee te werken:
 
 ```csharp
 // Initialiseer Document en DocumentBuilder

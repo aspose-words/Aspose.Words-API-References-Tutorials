@@ -129,13 +129,13 @@ E aí está! Você criou com sucesso um documento do Word com um gráfico de piz
 ## Perguntas frequentes
 
 ### Posso usar o Aspose.Words gratuitamente?
-Você pode usar Aspose.Words gratuitamente com um[licença temporária](https://purchase.aspose.com/temporary-license/) ou explore seus recursos usando o[teste grátis](https://releases.aspose.com/).
+Você pode usar Aspose.Words gratuitamente com um[licença temporária](https://purchase.aspose.com/temporary-license/) ou explore seus recursos usando o[teste gratuito](https://releases.aspose.com/).
 
 ### Como obtenho suporte para Aspose.Words?
  Você pode obter suporte através do[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Posso adicionar outros tipos de gráficos?
- Sim, Aspose.Words oferece suporte a vários tipos de gráficos, como gráficos de barras, linhas e colunas. Verifica a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Sim, Aspose.Words oferece suporte a vários tipos de gráficos, como gráficos de barras, linhas e colunas. Verifique o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
 
 ### O Aspose.Words é compatível com o .NET Core?
  Sim, Aspose.Words é compatível com .NET Core. Você pode encontrar mais informações no[documentação](https://reference.aspose.com/words/net/).

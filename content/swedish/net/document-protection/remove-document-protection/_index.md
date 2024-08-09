@@ -10,7 +10,7 @@ url: /sv/net/document-protection/remove-document-protection/
 
 ## Introduktion
 
-Hallå där! Har du någonsin funnit dig själv utelåst från ditt eget Word-dokument på grund av skyddsinställningar? Det är som att försöka öppna en dörr med fel nyckel – frustrerande, eller hur? Men frukta inte! Med Aspose.Words för .NET kan du enkelt ta bort skyddet från dina Word-dokument. Den här handledningen leder dig genom processen, steg för steg, och säkerställer att du kan återfå full kontroll över dina dokument på nolltid. Låt oss dyka in!
+Hej där! Har du någonsin funnit dig själv utelåst från ditt eget Word-dokument på grund av skyddsinställningar? Det är som att försöka öppna en dörr med fel nyckel – frustrerande, eller hur? Men frukta inte! Med Aspose.Words för .NET kan du enkelt ta bort skyddet från dina Word-dokument. Den här handledningen leder dig genom processen, steg för steg, och säkerställer att du kan återfå full kontroll över dina dokument på nolltid. Låt oss dyka in!
 
 ## Förutsättningar
 
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "ProtectedDocument.docx");
 ```
 
- Här anger vi sökvägen till katalogen som innehåller vårt dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Här anger vi sökvägen till katalogen som innehåller vårt dokument. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ## Steg 2: Ta bort skydd utan lösenord
 
@@ -53,7 +53,7 @@ Ibland är dokument skyddade utan lösenord. I sådana fall kan vi helt enkelt t
 doc.Unprotect();
 ```
 
-Det är allt! Ditt dokument är nu oskyddat. Men vad händer om det finns ett lösenord?
+Det är det! Ditt dokument är nu oskyddat. Men vad händer om det finns ett lösenord?
 
 ## Steg 3: Ta bort skydd med lösenord
 
@@ -64,7 +64,7 @@ Om ditt dokument är skyddat med ett lösenord måste du ange det lösenordet f�
 doc.Unprotect("currentPassword");
 ```
 
- Byta ut`"currentPassword"` med det faktiska lösenordet som används för att skydda dokumentet. När du anger rätt lösenord upphävs skyddet.
+ Ersätta`"currentPassword"` med det faktiska lösenordet som används för att skydda dokumentet. När du anger rätt lösenord upphävs skyddet.
 
 ## Steg 4: Lägg till och ta bort skydd
 

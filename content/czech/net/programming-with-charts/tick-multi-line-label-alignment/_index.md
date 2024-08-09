@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, tech nadšenci! Přistihli jste se někdy, že se škrábete na hlavě a přemýšlíte, jak zaškrtnout víceřádkové zarovnání štítků v grafu pomocí Aspose.Words pro .NET? Pokud právě teď kýváte hlavou, jste na správném místě! V tomto obsáhlém průvodci vás provedeme všemi zákoutími a zákoutími tohoto procesu. Od nastavení vašich předpokladů až po ponoření se hluboko do groteskního kódování, máme pro vás vše. Takže, vezměte si šálek kávy, posaďte se a jdeme na to!
 
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Vložme do našeho dokumentu graf. Pro tento příklad použijeme bodový graf.
 
- Za použití`InsertChart` metoda`DocumentBuilder` třídy, můžeme do našeho dokumentu vložit bodový graf.
+ Pomocí`InsertChart` metoda`DocumentBuilder` třídy, můžeme do našeho dokumentu vložit bodový graf.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 Nyní přichází kouzlo! Nastavíme zarovnání štítků pro víceřádkové štítky.
 
- Nastav`TickLabelAlignment` vlastnost osy k`ParagraphAlignment.Right`.
+ Nastavte`TickLabelAlignment` vlastnost osy k`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -108,11 +108,11 @@ A tady to máte! Úspěšně jste zaškrtli víceřádkové zarovnání štítk�
 
 ### Co je Aspose.Words for .NET?
 
- Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově. Můžete se o tom dozvědět více[tady](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově. Můžete se o tom dozvědět více[zde](https://reference.aspose.com/words/net/).
 
 ### Jak nainstaluji Aspose.Words for .NET?
 
- Aspose.Words for .NET si můžete stáhnout z webu[webová stránka](https://releases.aspose.com/words/net/)Postupujte podle tam uvedených pokynů k instalaci.
+ Aspose.Words for .NET si můžete stáhnout z webu[webové stránky](https://releases.aspose.com/words/net/)Postupujte podle tam uvedených pokynů k instalaci.
 
 ### Mohu používat Aspose.Words pro .NET zdarma?
 

@@ -77,7 +77,7 @@ string imagePath = dataDir + "Transparent background logo.png";
 
 Po skonfigurowaniu wszystkiego wstawmy pływający obraz do dokumentu.
 
- Użyj`InsertImage` metoda`DocumentBuilder` klasa, aby wstawić obraz:
+ Skorzystaj z`InsertImage` metoda`DocumentBuilder` klasa, aby wstawić obraz:
 
 ```csharp
 builder.InsertImage(imagePath,
@@ -134,7 +134,7 @@ Wstawianie pływającego obrazu do dokumentu programu Word za pomocą Aspose.Wor
 
 ### Jakie inne rodzaje zawijania są dostępne dla obrazów?
 
- Aspose.Words obsługuje różne typy zawijania, takie jak`Inline`, `TopBottom`, `Tight`, `Through`, i więcej. Możesz wybrać ten, który najlepiej pasuje do układu Twojego dokumentu.
+ Aspose.Words obsługuje różne typy zawijania, takie jak`Inline`, `TopBottom`, `Tight`, `Through`i nie tylko. Możesz wybrać ten, który najlepiej pasuje do układu Twojego dokumentu.
 
 ### Czy mogę używać różnych formatów obrazów?
 

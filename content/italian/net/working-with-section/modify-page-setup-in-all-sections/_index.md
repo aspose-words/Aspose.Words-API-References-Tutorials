@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-section/modify-page-setup-in-all-sections/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Se hai mai avuto bisogno di modificare le impostazioni di pagina su più sezioni in un documento Word, sei nel posto giusto. In questo tutorial, ti guiderò attraverso il processo utilizzando Aspose.Words per .NET. Questa potente libreria ti consente di controllare a livello di codice quasi ogni aspetto dei documenti di Word, rendendolo uno strumento di riferimento per gli sviluppatori. Quindi, prendi una tazza di caffè e iniziamo questo viaggio passo passo per padroneggiare le modifiche all'impostazione della pagina!
 
@@ -89,7 +89,7 @@ Questa riga di codice salva il documento nella directory specificata con un nome
 
 ## Conclusione
 
- E il gioco è fatto! Hai modificato con successo l'impostazione della pagina per tutte le sezioni in un documento di Word utilizzando Aspose.Words per .NET. Questo tutorial ti ha guidato attraverso la creazione di un documento, l'aggiunta di sezioni e la regolazione uniforme delle impostazioni di pagina. Aspose.Words offre un ricco set di funzionalità, quindi sentiti libero di esplorare il[Documentazione dell'API](https://reference.aspose.com/words/net/) per funzionalità più avanzate.
+ Ed ecco qua! Hai modificato con successo l'impostazione della pagina per tutte le sezioni in un documento di Word utilizzando Aspose.Words per .NET. Questo tutorial ti ha guidato attraverso la creazione di un documento, l'aggiunta di sezioni e la regolazione uniforme delle impostazioni di pagina. Aspose.Words offre un ricco set di funzionalità, quindi sentiti libero di esplorare il[Documentazione dell'API](https://reference.aspose.com/words/net/) per funzionalità più avanzate.
 
 ## Domande frequenti
 

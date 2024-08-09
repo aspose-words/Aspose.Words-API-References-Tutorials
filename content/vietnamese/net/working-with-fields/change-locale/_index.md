@@ -92,7 +92,7 @@ Cuối cùng, lưu tài liệu vào thư mục được chỉ định của bạ
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-Và bạn có nó rồi đấy! Bạn đã thay đổi thành công ngôn ngữ trong tài liệu Word của mình bằng Aspose.Words for .NET.
+Và bạn có nó! Bạn đã thay đổi thành công ngôn ngữ trong tài liệu Word của mình bằng Aspose.Words for .NET.
 
 ## Phần kết luận
 

@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /fr/net/working-with-fonts/font-settings-default-instance/
 ---
+## Introduction
 
-Bienvenue dans ce didacticiel approfondi sur la gestion des paramètres de police à l'aide d'Aspose.Words for .NET. Si vous avez déjà rencontré des difficultés avec la gestion des polices dans vos documents, ce guide vous expliquera tout ce que vous devez savoir pour personnaliser et gérer efficacement les polices. Allons-y !
+Bienvenue dans ce didacticiel approfondi sur la gestion des paramètres de police à l'aide d'Aspose.Words for .NET. Si vous avez déjà rencontré des difficultés avec la gestion des polices dans vos documents, ce guide vous expliquera tout ce que vous devez savoir pour personnaliser et gérer efficacement les polices.
 
 ## Conditions préalables
 
@@ -17,7 +18,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 - Connaissance de base de C# : La familiarité avec la programmation C# vous aidera à comprendre et à mettre en œuvre les étapes en douceur.
 -  Bibliothèque Aspose.Words for .NET : téléchargez et installez Aspose.Words for .NET à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
 - Environnement de développement : un environnement approprié comme Visual Studio pour écrire et exécuter votre code.
-- Exemple de document : Un exemple de document (par exemple,`Rendering.docx`) pour appliquer les paramètres de police.
+-  Exemple de document : Un exemple de document (par exemple,`Rendering.docx`) pour appliquer les paramètres de police.
 
 ## Importer des espaces de noms
 
@@ -73,26 +74,26 @@ En suivant ces étapes, vous avez configuré avec succès les paramètres de pol
 
 ## Conclusion
 
-Toutes nos félicitations! Vous maîtrisez les bases de la gestion des paramètres de police à l'aide d'Aspose.Words for .NET. Que vous travailliez sur un projet simple ou sur un système de traitement de documents complexe, ces compétences vous aideront à garantir que vos documents correspondent exactement à vos souhaits. N'oubliez pas que la flexibilité offerte par Aspose.Words permet un large éventail de personnalisations, alors n'hésitez pas à explorer et expérimenter différents paramètres.
+Félicitations! Vous maîtrisez les bases de la gestion des paramètres de police à l'aide d'Aspose.Words for .NET. Que vous travailliez sur un projet simple ou sur un système de traitement de documents complexe, ces compétences vous aideront à garantir que vos documents correspondent exactement à vos souhaits. N'oubliez pas que la flexibilité offerte par Aspose.Words permet un large éventail de personnalisations, alors n'hésitez pas à explorer et expérimenter différents paramètres.
 
 ## FAQ
 
-### Q1 : Puis-je utiliser les polices de plusieurs dossiers personnalisés ?
+### Puis-je utiliser des polices de plusieurs dossiers personnalisés ?
 
  Oui, vous pouvez spécifier plusieurs`FolderFontSource` instances au sein de`SetFontsSources` méthode pour inclure des polices de différents dossiers.
 
-### Q2 : Comment puis-je obtenir un essai gratuit d'Aspose.Words pour .NET ?
+### Comment puis-je obtenir un essai gratuit d'Aspose.Words pour .NET ?
 
  Vous pouvez télécharger un essai gratuit à partir du[Page d'essai gratuit d'Aspose](https://releases.aspose.com/).
 
-### Q3 : Est-il possible d'intégrer des polices directement dans le document ?
+### Est-il possible d’incorporer des polices directement dans le document ?
 
 Aspose.Words permet d'intégrer des polices dans certains formats, comme le PDF. Consultez la documentation pour plus de détails sur l'intégration des polices.
 
-### Q4 : Où puis-je obtenir de l'aide pour Aspose.Words ?
+### Où puis-je obtenir de l’aide pour Aspose.Words ?
 
  Pour obtenir de l'aide, visitez le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### Q5 : Puis-je acheter une licence temporaire ?
+### Puis-je acheter une licence temporaire ?
 
  Oui, vous pouvez obtenir une licence temporaire auprès du[page de licence temporaire](https://purchase.aspose.com/temporary-license/).

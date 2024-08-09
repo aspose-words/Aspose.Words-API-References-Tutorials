@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/font-settings-default-instance/
 ---
+## 介紹
 
-歡迎來到這個關於使用 Aspose.Words for .NET 管理字體設定的深入教學。如果您曾經在文件中的字體處理方面遇到挑戰，本指南將引導您了解有效自訂和管理字體所需了解的所有資訊。讓我們深入了解吧！
+歡迎來到這個關於使用 Aspose.Words for .NET 管理字體設定的深入教學。如果您曾經在文件中的字體處理方面遇到挑戰，本指南將引導您了解有效自訂和管理字體所需了解的所有資訊。
 
 ## 先決條件
 
@@ -77,22 +78,22 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## 常見問題解答
 
-### Q1：我可以使用多個自訂資料夾中的字體嗎？
+### 我可以使用多個自訂資料夾中的字體嗎？
 
 是的，您可以指定多個`FolderFontSource`內的實例`SetFontsSources`包含來自不同資料夾的字體的方法。
 
-### 問題 2：如何取得 Aspose.Words for .NET 的免費試用版？
+### 如何獲得 Aspose.Words for .NET 的免費試用版？
 
 您可以從以下位置下載免費試用版：[Aspose免費試用頁面](https://releases.aspose.com/).
 
-### Q3：可以直接在文件中嵌入字體嗎？
+### 是否可以將字體直接嵌入到文件中？
 
 Aspose.Words 允許以某些格式嵌入字體，例如 PDF。有關嵌入字體的更多詳細信息，請參閱文件。
 
-### Q4：我可以在哪裡獲得 Aspose.Words 的支援？
+### 我可以在哪裡獲得 Aspose.Words 的支援？
 
 如需支持，請訪問[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8).
 
-### Q5：我可以購買臨時許可證嗎？
+### 我可以購買臨時許可證嗎？
 
 是的，您可以從以下機構獲得臨時許可證[臨時許可證頁面](https://purchase.aspose.com/temporary-license/).

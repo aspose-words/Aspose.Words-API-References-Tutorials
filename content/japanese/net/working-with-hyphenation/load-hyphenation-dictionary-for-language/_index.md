@@ -2,74 +2,110 @@
 title: 言語のハイフネーション辞書を読み込む
 linktitle: 言語のハイフネーション辞書を読み込む
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET で特定の言語のハイフネーション辞書を読み込む方法を学習します。
+description: この包括的なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して任意の言語のハイフネーション辞書を読み込む方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 ---
+## 導入
 
-このステップバイステップのチュートリアルでは、特定の言語のハイフネーション辞書を Aspose.Words for .NET に読み込む方法を説明します。提供されている C# ソース コードについて説明し、独自のプロジェクトに実装する方法を示します。
+Word 文書の厄介なハイフネーション問題に悩まされたことはありませんか? それはあなただけではありません。ハイフネーションは、特に複雑なハイフネーション ルールを持つ言語では、テキストの読みやすさを左右します。心配はいりません。Aspose.Words for .NET が対応します。このチュートリアルでは、特定の言語のハイフネーション辞書を読み込むプロセスを順を追って説明し、文書が洗練されプロフェッショナルに見えるようにします。さっそく始めましょう。
 
-始めるには、開発環境にAspose.Words for .NETがインストールされ、構成されていることを確認してください。まだインストールしていない場合は、次の場所からライブラリをダウンロードしてインストールしてください。[Aspose.Releases]https://releases.aspose.com/words/net/.
+## 前提条件
 
-## ステップ1: ドキュメントの読み込み
+始める前に、以下のものを用意してください。
 
-まず、指定されたディレクトリからドキュメントを読み込みます。
+- Visual Studio がコンピューターにインストールされています。
+- .NET フレームワークがインストールされています。
+-  Aspose.Words for .NETライブラリ。まだインストールしていない場合は、ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- 対象言語のハイフネーション辞書ファイル。このチュートリアルでは、ドイツ語のハイフネーション辞書（`hyph_de_CH.dic`）。
+- 対象言語のサンプルWord文書。ここでは、`German text.docx`.
+
+## 名前空間のインポート
+
+まず最初に、プロジェクトに必要な名前空間をインポートする必要があります。手順は次のとおりです。
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Hyphenation;
+```
+
+それでは、プロセスをわかりやすいステップに分解してみましょう。
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+始める前に、ドキュメントとハイフネーション辞書が配置されているディレクトリを指定する必要があります。これにより、プロジェクトが整理され、コードがクリーンな状態を保つことができます。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+交換する`"YOUR DOCUMENT DIRECTORY"`ファイルを含むディレクトリへのパスを指定します。
+
+## ステップ2: ドキュメントを読み込む
+
+次に、処理したいWord文書を読み込みます。これは、`Document` Aspose.Words のクラス。
+
+```csharp
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## ステップ2: ハイフネーション辞書の読み込み
+このコード行は新しい`Document`オブジェクトを読み込み、ファイルをロードする`German text.docx`指定したディレクトリから。
 
-次に、ハイフネーション辞書ファイルへのストリームを開き、目的の言語用に保存します。この例では、スイスドイツ語 (de-CH) の辞書を読み込みます。
+## ステップ3: ハイフネーション辞書を開く
+
+次に、ハイフネーション辞書ファイルを開きます。`File.OpenRead`辞書ファイルをストリームとして読み取るメソッド。
 
 ```csharp
 Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");
+```
+
+この行はハイフネーション辞書ファイルを開きます`hyph_de_CH.dic`それをストリームに読み込みます。
+
+## ステップ4: ハイフネーション辞書を登録する
+
+辞書ファイルを開いたら、次のステップはそれをAspose.Wordsで使用できるように登録することです。これは、`Hyphenation.RegisterDictionary`方法。
+
+```csharp
 Hyphenation.RegisterDictionary("de-CH", stream);
 ```
 
-データ ディレクトリに適切な辞書ファイルがあることを確認してください。
+ここでは、ハイフネーション辞書を登録します。`de-CH` (スイスドイツ語) 言語。
 
-## ステップ3: 変更したドキュメントを保存する
+## ステップ5: ドキュメントを保存する
 
-最後に、変更したドキュメントを保存します。
+最後に、処理したドキュメントを保存します。任意の形式を選択できますが、このチュートリアルでは PDF として保存します。
 
 ```csharp
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
-これで、Aspose.Words for .NET に特定の言語のハイフネーション辞書が正常に読み込まれました。
+この行は、ドキュメントを指定したディレクトリにファイル名で保存します。`ProcessingByBreakingWithDictionary.pdf`.
 
-### Aspose.Words for .NET を使用して言語のハイフネーション辞書を読み込むためのサンプル ソース コード
+## 結論
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "German text.docx");
+これで完了です。Aspose.Words for .NET を使用して、特定の言語のハイフネーション辞書を正常に読み込みました。この小さいながらも強力な機能により、ドキュメントの読みやすさと専門性が大幅に向上します。さあ、さまざまな言語で試して、その魔法を自分の目で確かめてください。
 
-Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");
-Hyphenation.RegisterDictionary("de-CH", stream);
+## よくある質問
 
-doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
-```
+### ハイフネーション辞書とは何ですか?
 
-このコードを自分のプロジェクトで自由に使用し、特定のニーズに合わせて変更してください。
+ハイフネーション辞書は、適切な位置で単語を分割し、テキストのレイアウトと読みやすさを向上させるためのルールが含まれたファイルです。
 
-### よくある質問
+### ハイフネーション辞書はどこにありますか?
 
-#### Q: Aspose.Words で特定の言語の音節化辞書を読み込むにはどうすればいいですか?
+ハイフネーション辞書はオンラインで見つかります。多くの場合、言語学組織またはオープンソース組織によって提供されています。それらが Aspose.Words と互換性のある形式であることを確認してください。
 
- A: Aspose.Wordsで特定の言語の音節辞書を読み込むには、`Hyphenation`クラスと`LoadDictionary()`メソッドのインスタンスを作成します`Hyphenation`クラスを呼び、`LoadDictionary()`目的の言語の音節化辞書ファイルへのパスを指定するメソッド。これにより、音節化辞書が Aspose.Words に読み込まれます。
+### この方法は他の言語でも使えますか？
 
-#### Q: さまざまな言語の音節化辞書ファイルはどこにありますか?
+はい、正しい言語コードと辞書ファイルを指定することで、さまざまな言語のハイフネーション辞書を登録できます。
 
-A: さまざまな言語の音節化辞書ファイルは、さまざまなオンライン リソースで見つけることができます。これらのファイルは通常、XML または TEX 形式です。さまざまな言語のオープン ソース音節化辞書は、言語学プロジェクト専用の Web サイトやソース コード リポジトリで見つけることができます。
+### Aspose.Words はどのようなファイル形式で保存できますか?
 
-#### Q: 読み込んだ音節辞書を Aspose.Words のドキュメントに適用するにはどうすればよいですか?
+Aspose.Words は、PDF、DOCX、DOC、HTML など、さまざまな形式でのドキュメントの保存をサポートしています。
 
-A: 読み込まれた音節化辞書をAspose.Wordsのドキュメントに適用するには、ドキュメント内の単語を反復処理し、`Hyphenate()`方法の`Hyphenation`クラスを使用して単語の音節化を取得します。その後、音節間にハイフンを追加するなど、必要に応じて音節化された単語をフォーマットできます。
+### Aspose.Words を使用するにはライセンスが必要ですか?
 
-#### Q: Aspose.Words の音節化ではどの言語がサポートされていますか?
-
-A: Aspose.Words は、英語、フランス語、スペイン語、ドイツ語、イタリア語、オランダ語、ロシア語、ポルトガル語、スウェーデン語、ノルウェー語、デンマーク語、フィンランド語、ポーランド語、チェコ語など、複数の言語の音節化をサポートしています。音節化がサポートされている言語の完全なリストについては、Aspose.Words のドキュメントを確認してください。
+はい、Aspose.Wordsの全機能を使用するにはライセンスが必要です。ライセンスを購入することができます。[ここ](https://purchase.aspose.com/buy)または一時免許を取得する[ここ](https://purchase.aspose.com/temporary-license/).

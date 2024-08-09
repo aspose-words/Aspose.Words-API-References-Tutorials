@@ -15,7 +15,7 @@ Aspose.Words voor .NET-enthousiastelingen! Vandaag duiken we in een fascinerende
 
 Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
--  Aspose.Words voor .NET: Je kunt het downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) bladzijde.
+-  Aspose.Words voor .NET: Je kunt het downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) pagina.
 - Ontwikkelomgeving: Visual Studio of een andere C# IDE.
 - .NET Framework op uw computer geïnstalleerd.
 - Basiskennis van C#: Als u de basisbeginselen begrijpt, kunt u de voorbeelden volgen.
@@ -80,7 +80,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document ten slotte op in de door u opgegeven map. Hierdoor wordt een Word-document met correct gedetecteerde lijsten uitgevoerd.
 
@@ -107,5 +107,5 @@ Zonder deze optie worden lijsten met witruimte tussen de nummering en de tekst m
 Deze specifieke functie is op maat gemaakt voor Aspose.Words voor .NET, ontworpen voor de verwerking van Word-documenten.
 
 ### Hoe kan ik een tijdelijke licentie krijgen voor Aspose.Words voor .NET?
- Een tijdelijke licentie kunt u verkrijgen bij de[Tijdelijke licentie aanvragen](https://purchase.aspose.com/temporary-license/) bladzijde.
+ Een tijdelijke licentie kunt u verkrijgen bij de[Tijdelijke licentie aanvragen](https://purchase.aspose.com/temporary-license/) pagina.
 

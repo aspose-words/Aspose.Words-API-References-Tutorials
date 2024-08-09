@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/working-with-headers-and-footers/create-header-footer/
 ---
+## giriiş
 
 Belgelerinize üstbilgi ve altbilgi eklemek, belgelerinizin profesyonelliğini ve okunabilirliğini artırabilir. Aspose.Words for .NET ile Word belgeleriniz için kolayca üstbilgi ve altbilgi oluşturabilir ve özelleştirebilirsiniz. Bu eğitimde, bu özellikleri sorunsuz bir şekilde uygulayabilmenizi sağlamak için süreç boyunca size adım adım yol göstereceğiz.
 
@@ -14,7 +15,7 @@ Belgelerinize üstbilgi ve altbilgi eklemek, belgelerinizin profesyonelliğini v
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--  Aspose.Words for .NET: Buradan indirip yükleyin.[İndirme: {link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Buradan indirip yükleyin.[indirme bağlantısı](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi.
 - Temel C# Bilgisi: C# ve .NET çerçevesinin anlaşılması.
 - Örnek Belge: Üstbilgileri ve altbilgileri uygulamak veya öğreticide gösterildiği gibi yeni bir tane oluşturmak için örnek bir belge.
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 
- Yeni bir belge oluşturun ve`DocumentBuilder` İçerik eklenmesini kolaylaştırmak için.
+ Yeni bir belge oluşturun ve`DocumentBuilder`İçerik eklenmesini kolaylaştırmak için.
 
 ```csharp
 Document doc = new Document();
@@ -166,24 +167,24 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinize etkili bir şekilde üstbilgi ve altbilgi ekleyebilir ve özelleştirebilirsiniz. Bu, belgenizin görünümünü ve profesyonelliğini geliştirerek onu daha okunabilir ve ilgi çekici hale getirir.
 
-## SSS
+## SSS'ler
 
-### S1: Aspose.Words for .NET nedir?
+### Aspose.Words for .NET nedir?
 
 Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içerisinde Word belgelerini programlı olarak oluşturmasına, düzenlemesine ve dönüştürmesine olanak tanıyan bir kütüphanedir.
 
-### S2: Üstbilgiye veya altbilgiye resim ekleyebilir miyim?
+### Üstbilgiye veya altbilgiye resim ekleyebilir miyim?
 
- Evet, üst bilgi veya alt bilgiye kolayca resim ekleyebilirsiniz.`DocumentBuilder.InsertImage` yöntem.
+ Evet, üst bilgi veya alt bilgiye kolayca resim ekleyebilirsiniz.`DocumentBuilder.InsertImage` Yöntem.
 
-### S3: İlk sayfa için farklı üstbilgileri ve altbilgileri nasıl ayarlarım?
+### İlk sayfa için farklı üstbilgileri ve altbilgileri nasıl ayarlarım?
 
  İlk sayfa için farklı üstbilgiler ve altbilgiler ayarlayabilirsiniz.`DifferentFirstPageHeaderFooter` mülkiyeti`PageSetup` sınıf.
 
-### S4: Aspose.Words hakkında daha fazla belgeyi nerede bulabilirim?
+### Aspose.Words hakkında daha fazla belgeyi nerede bulabilirim?
 
  Hakkında kapsamlı belgeler bulabilirsiniz.[Aspose.Words API dokümantasyon sayfası](https://reference.aspose.com/words/net/).
 
-### S5: Aspose.Words için destek mevcut mu?
+### Aspose.Words için destek mevcut mu?
 
- Evet, Aspose kendi aracılığıyla destek sunuyor[destek Forumu](https://forum.aspose.com/c/words/8).
+ Evet, Aspose kendi aracılığıyla destek sunuyor[destek forumu](https://forum.aspose.com/c/words/8).

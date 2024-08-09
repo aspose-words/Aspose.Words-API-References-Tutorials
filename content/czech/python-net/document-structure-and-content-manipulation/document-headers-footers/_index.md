@@ -12,7 +12,7 @@ Záhlaví a zápatí v dokumentech aplikace Word hrají zásadní roli při posk
 
 ## Začínáme s Aspose.Words pro Python
 
-Než se pustíte do manipulace se záhlavím a zápatím, musíte nastavit Aspose.Words pro Python. Následuj tyto kroky:
+Než se pustíte do manipulace se záhlavím a zápatím, musíte nastavit Aspose.Words pro Python. Postupujte takto:
 
 1. Instalace: Nainstalujte Aspose.Words pro Python pomocí pip.
 

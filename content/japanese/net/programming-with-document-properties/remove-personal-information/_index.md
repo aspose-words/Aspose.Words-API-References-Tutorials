@@ -76,7 +76,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ### Aspose.Words for .NET は無料ですか?
 
- Aspose.Wordsは、[無料トライアル](https://releases.aspose.com/)試用はできますが、フル機能を使用するにはライセンスを購入する必要があります。[価格設定](https://purchase.aspose.com/buy)詳細については。
+ Aspose.Wordsは、[無料トライアル](https://releases.aspose.com/)試用はできますが、フル機能を使用するにはライセンスを購入する必要があります。[価格設定](https://purchase.aspose.com/buy)詳細についてはこちらをご覧ください。
 
 ### Aspose.Words を他のドキュメント形式で使用できますか?
 
@@ -88,4 +88,4 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ### Aspose.Words には他にどのような機能がありますか?
 
-Aspose.Wordsにはさまざまな機能があります。さまざまな方法でドキュメントを作成、編集、変換、操作できます。完全なリストについては、[ドキュメンテーション](https://reference.aspose.com/words/net/).
+Aspose.Wordsにはさまざまな機能があります。さまざまな方法でドキュメントを作成、編集、変換、操作できます。完全なリストについては、[ドキュメント](https://reference.aspose.com/words/net/).

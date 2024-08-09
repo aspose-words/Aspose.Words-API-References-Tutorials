@@ -49,7 +49,7 @@ A continuación, cargamos el documento de Word en nuestra aplicación. Esto nos 
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Esta línea de código abre el`Tables.docx` documento del directorio especificado. Ahora, nuestro documento está listo para futuras operaciones.
+ Esta línea de código abre el`Tables.docx` documento del directorio especificado. Ahora nuestro documento está listo para futuras operaciones.
 
 ## Paso 3: acceda a la mesa
 

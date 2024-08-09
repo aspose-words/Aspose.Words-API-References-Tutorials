@@ -95,7 +95,7 @@ string replace = text.Replace(ControlChar.Cr, ControlChar.CrLf);
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-瞧！您剛剛自動化了文件工作流程的一部分。多麼酷啊？
+瞧！您剛剛自動化了文件工作流程的一部分。那有多酷？
 
 ## 結論
 

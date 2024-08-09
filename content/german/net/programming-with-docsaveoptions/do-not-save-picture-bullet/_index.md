@@ -62,7 +62,7 @@ Konfigurieren wir nun die Speicheroptionen, um anzugeben, dass Bildaufzählungsz
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- Indem man es einstellt`SavePictureBullet` Zu`false`weisen Sie Aspose.Words an, keine Bildaufzählungszeichen im Ausgabedokument zu speichern.
+ Durch die Einstellung`SavePictureBullet` Zu`false`weisen Sie Aspose.Words an, keine Bildaufzählungszeichen im Ausgabedokument zu speichern.
 
 ## Schritt 4: Speichern Sie das Dokument
 

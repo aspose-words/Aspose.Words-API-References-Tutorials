@@ -9,7 +9,7 @@ url: /hu/net/working-with-section/append-section-content/
 ---
 ## Bevezetés
 
-Halihó! Gondolkozott már azon, hogyan lehet programozottan kezelni a Word-dokumentumokat .NET használatával? Ha robusztus könyvtárat keres a Word-dokumentumfeladatok kezelésére, az Aspose.Words for .NET a legjobb választás. Ma végigvezetem Önt a szakaszok hozzáfűzésének folyamatán egy Word-dokumentumban az Aspose.Words for .NET használatával. Akár kezdő, akár tapasztalt fejlesztő vagy, ez az oktatóanyag segít elsajátítani az alapokat és néhány haladó fogalmat. Szóval, merüljünk bele!
+Szia! Gondolkozott már azon, hogyan lehet programozottan kezelni a Word-dokumentumokat .NET használatával? Ha robusztus könyvtárat keres a Word-dokumentumfeladatok kezelésére, az Aspose.Words for .NET a legjobb választás. Ma végigvezetem Önt a szakaszok hozzáfűzésének folyamatán egy Word-dokumentumban az Aspose.Words for .NET használatával. Akár kezdő, akár tapasztalt fejlesztő vagy, ez az oktatóanyag segít elsajátítani az alapokat és néhány haladó fogalmat. Szóval, merüljünk bele!
 
 ## Előfeltételek
 
@@ -88,7 +88,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-Ebben a lépésben elérjük a második részt, és hozzáfűzzük annak tartalmát a harmadik részhez. Most a harmadik rész tartalmazza mind az első, mind a második rész tartalmát.
+Ebben a lépésben elérjük a második szakaszt, és hozzáfűzzük annak tartalmát a harmadik szakaszhoz. Most a harmadik rész tartalmazza mind az első, mind a második rész tartalmát.
 
 ## 6. lépés: A dokumentum mentése
 
@@ -98,7 +98,7 @@ A szakaszok manipulálása után ideje elmenteni dokumentumunkat.
 doc.Save("output.docx");
 ```
 
-Itt elmentjük a dokumentumot "output.docx" néven. A módosítások megtekintéséhez megnyithatja ezt a fájlt a Microsoft Word alkalmazásban.
+Itt mentjük a dokumentumot "output.docx" néven. A módosítások megtekintéséhez megnyithatja ezt a fájlt a Microsoft Word alkalmazásban.
 
 ## Következtetés
 

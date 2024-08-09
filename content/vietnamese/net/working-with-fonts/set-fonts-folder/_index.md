@@ -2,75 +2,99 @@
 title: Đặt thư mục phông chữ
 linktitle: Đặt thư mục phông chữ
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách đặt thư mục phông chữ trong Aspose.Words cho .NET và đảm bảo tính khả dụng của phông chữ được sử dụng trong tài liệu của bạn.
+description: Tìm hiểu cách đặt thư mục phông chữ tùy chỉnh trong Aspose.Words cho .NET để đảm bảo tài liệu Word của bạn được hiển thị chính xác mà không bị thiếu phông chữ.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/set-fonts-folder/
 ---
-Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách đặt thư mục phông chữ trong Aspose.Words cho .NET. Bạn sẽ học cách chỉ định thư mục chứa các phông chữ được sử dụng trong tài liệu Word của mình.
+## Giới thiệu
+
+Bạn đã bao giờ gặp phải vấn đề thiếu phông chữ khi làm việc với tài liệu Word trong ứng dụng .NET của mình chưa? Vâng, bạn không đơn độc. Đặt đúng thư mục phông chữ có thể giải quyết vấn đề này một cách liền mạch. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách đặt thư mục phông chữ bằng Aspose.Words cho .NET. Hãy đi sâu vào!
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
+
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
+
+- Visual Studio được cài đặt trên máy của bạn
+- .NET Framework được thiết lập
+-  Aspose.Words cho thư viện .NET. Nếu chưa có, bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết để hoạt động với Aspose.Words. Thêm các dòng sau vào đầu tệp mã của bạn:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
+
+Việc thiết lập thư mục phông chữ rất đơn giản nếu bạn làm theo các bước sau một cách cẩn thận.
 
 ## Bước 1: Xác định thư mục tài liệu
-Bắt đầu bằng cách đặt đường dẫn thư mục đến vị trí tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+
+Trước bất cứ điều gì khác, hãy xác định đường dẫn đến thư mục tài liệu của bạn. Thư mục này sẽ chứa các tài liệu Word của bạn và các phông chữ bạn muốn sử dụng.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Bước 2: Đặt thư mục phông chữ
- Tạo một thể hiện của`FontSettings` lớp và sử dụng`SetFontsFolder` phương pháp chỉ định thư mục chứa phông chữ. Thay thế`"Fonts"` với tên của thư mục phông chữ thực tế.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## Bước 3: Tải tài liệu với cài đặt phông chữ
- Sử dụng`LoadOptions` lớp để chỉ định cài đặt phông chữ trong`FontSettings` lựa chọn. Sau đó sử dụng`Document` class để tải tài liệu bằng các tùy chọn này.
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Mã nguồn mẫu cho Đặt thư mục phông chữ bằng Aspose.Words cho .NET 
-
-```csharp
-
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+ Đảm bảo thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục của bạn.
+
+## Bước 2: Khởi tạo FontSettings
+
+ Bây giờ, bạn cần khởi tạo`FontSettings` sự vật. Đối tượng này cho phép bạn chỉ định các thư mục phông chữ tùy chỉnh.
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Bước 3: Đặt thư mục phông chữ
+
+ Sử dụng`SetFontsFolder` phương pháp của`FontSettings` đối tượng, hãy chỉ định thư mục nơi lưu trữ phông chữ tùy chỉnh của bạn.
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ Đây,`dataDir + "Fonts"` trỏ đến thư mục có tên "Phông chữ" trong thư mục tài liệu của bạn. Tham số thứ hai,`false`, chỉ ra rằng thư mục không đệ quy.
+
+## Bước 4: Tạo LoadOptions
+
+ Tiếp theo, tạo một thể hiện của`LoadOptions` lớp học. Lớp này sẽ giúp bạn tải tài liệu với các cài đặt phông chữ được chỉ định.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## Bước 5: Tải tài liệu
+
+ Cuối cùng, tải tài liệu Word bằng cách sử dụng`Document` lớp học và`LoadOptions` sự vật.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+ Hãy chắc chắn rằng`"Rendering.docx"` là tên tài liệu Word của bạn. Bạn có thể thay thế nó bằng tên tập tin của bạn.
+
 ## Phần kết luận
-Xin chúc mừng! Bây giờ bạn đã biết cách đặt thư mục phông chữ trong Aspose.Words cho .NET. Bạn có thể sử dụng tính năng này để đảm bảo tính sẵn có của phông chữ được sử dụng trong tài liệu của bạn và đảm bảo tính nhất quán trong việc hiển thị phông chữ.
 
-### Câu hỏi thường gặp
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng đặt thư mục phông chữ tùy chỉnh trong Aspose.Words cho .NET, đảm bảo rằng tất cả phông chữ của bạn được hiển thị chính xác. Thiết lập đơn giản này có thể giúp bạn tránh khỏi nhiều rắc rối và làm cho tài liệu của bạn trông chính xác như bạn muốn.
 
-#### Câu hỏi: Làm cách nào tôi có thể đặt thư mục phông chữ tùy chỉnh trong Aspose.Words?
+## Câu hỏi thường gặp
 
- Trả lời: Để đặt thư mục phông chữ tùy chỉnh trong Aspose.Words, bạn có thể sử dụng`FontsFolder` lớp học và`SetFontsFolders` phương pháp chỉ định đường dẫn đến thư mục chứa phông chữ của bạn.
+### Tại sao tôi cần đặt thư mục phông chữ tùy chỉnh?
+Việc đặt thư mục phông chữ tùy chỉnh sẽ đảm bảo rằng tất cả các phông chữ được sử dụng trong tài liệu Word của bạn đều được hiển thị chính xác, tránh các vấn đề về thiếu phông chữ.
 
-#### Câu hỏi: Tôi có thể đặt nhiều thư mục phông chữ trong Aspose.Words không?
+### Tôi có thể đặt nhiều thư mục phông chữ không?
+ Có, bạn có thể sử dụng`SetFontsFolders` phương pháp để chỉ định nhiều thư mục.
 
- Trả lời: Có, bạn có thể đặt nhiều thư mục phông chữ trong Aspose.Words bằng cách gọi hàm`SetFontsFolders` nhiều lần với đường dẫn của các thư mục phông chữ khác nhau mà bạn muốn sử dụng.
+### Điều gì xảy ra nếu không tìm thấy phông chữ?
+Aspose.Words sẽ cố gắng thay thế phông chữ bị thiếu bằng phông chữ tương tự từ phông chữ hệ thống.
 
-#### Hỏi: Điều gì sẽ xảy ra nếu phông chữ được sử dụng trong tài liệu không có trong các thư mục phông chữ đã xác định?
+### Aspose.Words có tương thích với .NET Core không?
+Có, Aspose.Words hỗ trợ .NET Core cùng với .NET Framework.
 
-Trả lời: Nếu phông chữ được sử dụng trong tài liệu không có trong các thư mục phông chữ được xác định trong Aspose.Words, thì phông chữ thay thế sẽ được sử dụng thay thế. Điều này đảm bảo rằng văn bản trong tài liệu sẽ luôn được hiển thị chính xác, ngay cả khi không có phông chữ gốc.
-
-#### Câu hỏi: Các thư mục phông chữ được xác định trong Aspose.Words có được ưu tiên hơn các phông chữ được cài đặt trên hệ thống không?
-
-Trả lời: Có, các thư mục phông chữ được xác định trong Aspose.Words được ưu tiên hơn các phông chữ được cài đặt trên hệ thống. Điều này có nghĩa là nếu một phông chữ có cùng tên xuất hiện cả trong các thư mục phông chữ đã xác định và trong phông chữ hệ thống, phiên bản trong thư mục phông chữ sẽ được sử dụng khi xử lý tài liệu Word.
+### Tôi có thể nhận hỗ trợ ở đâu nếu gặp vấn đề?
+ Bạn có thể nhận được sự hỗ trợ từ[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).

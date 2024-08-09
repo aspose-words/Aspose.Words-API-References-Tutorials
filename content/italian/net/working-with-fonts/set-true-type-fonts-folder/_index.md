@@ -2,82 +2,96 @@
 title: Imposta la cartella dei caratteri True Type
 linktitle: Imposta la cartella dei caratteri True Type
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per impostare la cartella dei caratteri true type durante il rendering di un documento utilizzando Aspose.Words per .NET.
+description: Scopri come impostare una cartella True Type Fonts nei documenti di Word utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata passo dopo passo per garantire una gestione coerente dei caratteri.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## Introduzione
 
-In questo tutorial, ti guideremo attraverso il processo passo passo per impostare la cartella dei caratteri true type durante il rendering di un documento utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come specificare una cartella personalizzata contenente i caratteri True Type da utilizzare durante il rendering dei tuoi documenti utilizzando Aspose.Words per .NET.
+ci stiamo immergendo nell'affascinante mondo della gestione dei caratteri nei documenti Word utilizzando Aspose.Words per .NET. Se hai mai avuto difficoltà a incorporare i caratteri corretti o a garantire che il tuo documento appaia perfetto su ogni dispositivo, sei nel posto giusto. Esamineremo il processo di impostazione di una cartella True Type Fonts per semplificare la gestione dei font del tuo documento, garantendo coerenza e chiarezza nei tuoi documenti.
 
-## Passaggio 1: definire la directory dei documenti
-Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento renderizzato modificato. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.
+## Prerequisiti
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Prima di passare al nocciolo della questione, esaminiamo alcuni prerequisiti per assicurarci che tu sia pronto per il successo:
 
-## Passaggio 2: caricare il documento da renderizzare
- Successivamente, è necessario caricare il documento da renderizzare utilizzando il file`Document` classe. Assicurati di specificare il percorso corretto del documento.
+1.  Aspose.Words per .NET: assicurati di avere installata la versione più recente. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: un ambiente di sviluppo .NET funzionante, come Visual Studio.
+3. Conoscenza di base di C#: sarà utile la familiarità con la programmazione C#.
+4. Un documento di esempio: tieni pronto un documento Word con cui desideri lavorare.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importa spazi dei nomi
 
-## Passaggio 3: imposta la cartella dei caratteri True Type
-Ora puoi specificare la cartella dei caratteri true type da utilizzare durante il rendering creando un'istanza del file`FontSettings` classe e utilizzando il file`SetFontsFolder()` metodo per impostare la cartella dei caratteri. Puoi specificare una cartella personalizzata contenente i tuoi font True Type. Il secondo parametro a`SetFontsFolder()` indica se si desidera eseguire la ricerca anche nelle sottocartelle della cartella specificata.
+Per prima cosa, dobbiamo importare gli spazi dei nomi necessari. Sono come la troupe dietro le quinte che garantisce che tutto funzioni senza intoppi.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Passaggio 4: salva il documento renderizzato
- Infine, puoi salvare il documento renderizzato in un file utilizzando il file`Save()` metodo del`Document` classe. Assicurati di specificare il percorso e il nome file corretti.
+## Passaggio 1: carica il documento
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### Codice sorgente di esempio per la cartella Imposta caratteri True Type utilizzando Aspose.Words per .NET 
+ Iniziamo caricando il documento. Utilizzeremo il`Document` classe da Aspose.Words per caricare un documento Word esistente.
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Passaggio 2: inizializzare FontSettings
+
+ Successivamente, creeremo un'istanza di`FontSettings`classe. Questa classe ci consente di personalizzare il modo in cui vengono gestiti i caratteri nel nostro documento.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Tieni presente che questa impostazione sovrascriverà qualsiasi origine di caratteri predefinita ricercata per impostazione predefinita. Ora verranno cercate solo queste cartelle
-// Caratteri durante il rendering o l'incorporamento di caratteri. Per aggiungere un'origine di caratteri aggiuntiva mantenendo le origini di caratteri di sistema, utilizzare sia FontSettings.GetFontSources che
-// FontSettings.SetFontSources invece
+```
+
+## Passaggio 3: imposta la cartella dei caratteri
+
+Ora arriva la parte emozionante. Specificheremo la cartella in cui si trovano i nostri caratteri True Type. Questo passaggio garantisce che Aspose.Words utilizzi i caratteri da questa cartella durante il rendering o l'incorporamento dei caratteri.
+
+```csharp
+// Tieni presente che questa impostazione sovrascriverà qualsiasi origine di caratteri predefinita ricercata per impostazione predefinita.
+// Ora solo queste cartelle verranno cercate per i caratteri durante il rendering o l'incorporamento dei caratteri.
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## Passaggio 4: applica le impostazioni dei caratteri al documento
+
+Con le nostre impostazioni dei caratteri configurate, ora applicheremo queste impostazioni al nostro documento. Questo passaggio è fondamentale per garantire che il nostro documento utilizzi i caratteri specificati.
+
+```csharp
 // Configura le impostazioni dei caratteri
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## Passaggio 5: salva il documento
+
+Infine, salveremo il documento. Puoi salvarlo in vari formati, ma per questo tutorial lo salveremo come PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come impostare la cartella dei caratteri di tipo reale durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo, puoi facilmente specificare una cartella personalizzata contenente i caratteri True Type da utilizzare durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per l'elaborazione delle parole con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare i caratteri utilizzati durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.
 
-### Domande frequenti
+Ed ecco qua! Hai impostato con successo una cartella True Type Fonts per i tuoi documenti Word utilizzando Aspose.Words per .NET. Ciò garantisce che i tuoi documenti abbiano un aspetto coerente e professionale su tutte le piattaforme. La gestione dei caratteri è un aspetto critico della creazione di documenti e con Aspose.Words è incredibilmente semplice.
 
-#### D: Come posso configurare la cartella dei caratteri TrueType in Aspose.Words?
+## Domande frequenti
 
- R: Per configurare la cartella dei caratteri TrueType in Aspose.Words, è possibile utilizzare il file`SetTrueTypeFontsFolder` metodo del`Fonts` classe che specifica la posizione della cartella contenente i caratteri TrueType.
+### Posso utilizzare più cartelle di caratteri?
+ Sì, puoi utilizzare più cartelle di caratteri combinandole`FontSettings.GetFontSources`E`FontSettings.SetFontSources`.
 
-#### D: Quali tipi di caratteri sono considerati caratteri TrueType?
+### Cosa succede se la cartella dei caratteri specificata non esiste?
+Se la cartella dei caratteri specificata non esiste, Aspose.Words non sarà in grado di individuare i caratteri e verranno invece utilizzati i caratteri di sistema predefiniti.
 
-R: I caratteri TrueType sono un formato di carattere molto diffuso. Sono spesso utilizzati nei documenti di Word e hanno un'estensione di file .ttf o .ttc.
+### Posso ripristinare le impostazioni predefinite dei caratteri?
+ Sì, puoi ripristinare le impostazioni predefinite dei caratteri reimpostando il file`FontSettings` esempio.
 
-#### D: Posso specificare più cartelle di caratteri TrueType in Aspose.Words?
+### È possibile incorporare caratteri nel documento?
+Sì, Aspose.Words ti consente di incorporare caratteri nel documento per garantire coerenza tra diversi dispositivi.
 
-R: Sì, puoi specificare più cartelle di caratteri TrueType in Aspose.Words utilizzando il file`SetTrueTypeFontsFolder` metodo del`Fonts` classe con un elenco di posizioni delle cartelle.
-
-#### D: Come posso controllare la cartella dei caratteri TrueType configurata in Aspose.Words?
-
- R: Per controllare la cartella TrueType Fonts configurata in Aspose.Words, puoi utilizzare il file`GetTrueTypeFontsFolder` metodo del`Fonts` class per ottenere il percorso della cartella TrueType Fonts configurata.
-
-#### D: Perché è importante configurare la cartella dei caratteri TrueType in Aspose.Words?
-
-R: L'impostazione della cartella dei caratteri TrueType in Aspose.Words è importante perché aiuta Aspose.Words a individuare i caratteri necessari durante l'elaborazione dei documenti di Word. Ciò garantisce coerenza nella formattazione e nell'aspetto dei documenti, anche tra sistemi diversi.
+### In quali formati posso salvare il mio documento?
+Aspose.Words supporta una varietà di formati tra cui PDF, DOCX, HTML e altri.

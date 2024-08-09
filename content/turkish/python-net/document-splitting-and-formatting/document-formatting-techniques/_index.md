@@ -163,10 +163,10 @@ pip install aspose-words
  Evet, paragraf ve başlıklara farklı stiller uygulayabilirsiniz.`paragraph_format.style` mülk.
 
 ### Belgelerime resim eklemek mümkün mü?
- Kesinlikle! kullanarak belgelerinize resimler ekleyebilirsiniz.`insert_image` yöntem.
+ Kesinlikle! kullanarak belgelerinize resimler ekleyebilirsiniz.`insert_image` Yöntem.
 
 ### Belgemi şifreyle koruyabilir miyim?
- Evet, belge korumasını kullanarak belgenizi koruyabilirsiniz.`protect` yöntem.
+ Evet, belge korumasını kullanarak belgenizi koruyabilirsiniz.`protect` Yöntem.
 
 ### Belgelerimi hangi formatlara aktarabilirim?
 Aspose.Words, belgelerinizi PDF, DOCX ve daha fazlası dahil olmak üzere çeşitli formatlara aktarmanıza olanak tanır.

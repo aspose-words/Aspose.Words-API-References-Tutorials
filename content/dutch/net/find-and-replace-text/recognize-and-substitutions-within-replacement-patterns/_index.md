@@ -102,7 +102,7 @@ Gefeliciteerd! U hebt met succes geleerd hoe u tekst binnen vervangingspatronen 
 Aspose.Words voor .NET is een krachtige bibliotheek voor het werken met Word-documenten in .NET-toepassingen. Hiermee kunt u programmatisch documenten maken, wijzigen en converteren.
 
 ### Hoe kan ik Aspose.Words voor .NET installeren?
- U kunt Aspose.Words voor .NET installeren vanaf de[download link](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies.
+ U kunt Aspose.Words voor .NET installeren vanaf de[downloadlink](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies.
 
 ### Kan ik reguliere expressies gebruiken met Aspose.Words voor .NET?
 Ja, Aspose.Words ondersteunt reguliere expressies voor zoek- en vervangbewerkingen, waardoor complexe tekstmanipulaties mogelijk zijn.

@@ -24,7 +24,7 @@ Sebelum kita mendalami kodenya, pastikan Anda memiliki prasyarat berikut:
 
 ## Menyiapkan Lingkungan
 
-Untuk mulai menggunakan Aspose.Words untuk Java, Anda perlu menyiapkan lingkungan pengembangan Anda. Ikuti langkah ini:
+Untuk mulai menggunakan Aspose.Words untuk Java, Anda perlu menyiapkan lingkungan pengembangan Anda. Ikuti langkah-langkah berikut:
 
 1. Buat proyek Java baru di Lingkungan Pengembangan Terpadu (IDE) favorit Anda.
 

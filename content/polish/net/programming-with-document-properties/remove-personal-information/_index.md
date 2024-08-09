@@ -9,7 +9,7 @@ url: /pl/net/programming-with-document-properties/remove-personal-information/
 ---
 ## Wstęp
 
-No hej! Czy zdarzyło Ci się kiedyś utonąć w zadaniach związanych z zarządzaniem dokumentami? Wszyscy tam byliśmy. Niezależnie od tego, czy masz do czynienia z umowami, raportami, czy po prostu codzienną pracą papierkową, posiadanie narzędzia upraszczającego ten proces jest ratunkiem. Wpisz Aspose.Words dla .NET. Ten klejnot biblioteki pozwala zautomatyzować tworzenie, manipulowanie i konwersję dokumentów jak profesjonalista. Dzisiaj przeprowadzimy Cię przez bardzo przydatną funkcję: usuwanie danych osobowych z dokumentu. Zanurzmy się!
+Hej tam! Czy zdarzyło Ci się kiedyś utonąć w zadaniach związanych z zarządzaniem dokumentami? Wszyscy tam byliśmy. Niezależnie od tego, czy masz do czynienia z umowami, raportami, czy po prostu codzienną pracą papierkową, posiadanie narzędzia upraszczającego ten proces jest ratunkiem. Wpisz Aspose.Words dla .NET. Ten klejnot biblioteki pozwala zautomatyzować tworzenie, manipulowanie i konwersję dokumentów jak profesjonalista. Dzisiaj przeprowadzimy Cię przez bardzo przydatną funkcję: usuwanie danych osobowych z dokumentu. Zanurzmy się!
 
 ## Warunki wstępne
 
@@ -76,7 +76,7 @@ Dane osobowe obejmują nazwiska autorów, właściwości dokumentu i inne metada
 
 ### Czy Aspose.Words dla .NET jest darmowy?
 
- Aspose.Words oferuje[bezpłatna wersja próbna](https://releases.aspose.com/) więc możesz go przetestować, ale aby uzyskać pełną funkcjonalność, musisz kupić licencję. Sprawdź[cennik](https://purchase.aspose.com/buy) po więcej szczegółów.
+ Aspose.Words oferuje[bezpłatna wersja próbna](https://releases.aspose.com/) więc możesz go przetestować, ale aby uzyskać pełną funkcjonalność, musisz kupić licencję. Sprawdź[wycena](https://purchase.aspose.com/buy) aby uzyskać więcej szczegółów.
 
 ### Czy mogę używać Aspose.Words do innych formatów dokumentów?
 

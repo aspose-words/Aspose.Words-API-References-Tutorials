@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-txtsaveoptions/use-space-character-per-level-for-list-indentation/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o formátování dokumentů, zejména při práci se seznamy, je klíčová přesnost. Ve scénářích, kdy potřebujete vytvořit dokumenty s různými úrovněmi odsazení, nabízí Aspose.Words for .NET výkonné nástroje pro zvládnutí tohoto úkolu. Jedna konkrétní funkce, která se může hodit, je konfigurace odsazení seznamu v textových souborech. Tato příručka vás provede tím, jak používat mezery k odsazení seznamu, aby si dokument zachová požadovanou strukturu a čitelnost.
 
@@ -72,7 +72,7 @@ saveOptions.ListIndentation.Count = 3;
 saveOptions.ListIndentation.Character = ' ';
 ```
 
- Tady,`ListIndentation.Count` určuje počet mezer na úrovni odsazení a`ListIndentation.Character` nastaví skutečný znak použitý pro odsazení.
+ Zde,`ListIndentation.Count` určuje počet mezer na úrovni odsazení a`ListIndentation.Character` nastaví skutečný znak použitý pro odsazení.
 
 ## Krok 4: Uložte dokument se zadanými možnostmi
 
@@ -95,7 +95,7 @@ Pomocí těchto kroků jste úspěšně vytvořili dokument s víceúrovňovým 
  Ano, můžete zadat různé znaky pro odsazení seznamu nastavením`Character` majetek v`TxtSaveOptions`.
 
 ### Jak mohu v seznamech použít odrážky místo čísel?
- Použití`ListFormat.ApplyBulletDefault()` namísto`ApplyNumberDefault()` vytvořit seznam s odrážkami.
+ Použití`ListFormat.ApplyBulletDefault()` místo`ApplyNumberDefault()` k vytvoření seznamu s odrážkami.
 
 ### Mohu dynamicky upravit počet mezer pro odsazení?
  Ano, můžete upravit`ListIndentation.Count` vlastnost nastavit počet míst na základě vašich požadavků.

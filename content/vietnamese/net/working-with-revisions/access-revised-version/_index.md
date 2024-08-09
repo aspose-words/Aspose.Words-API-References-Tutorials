@@ -2,119 +2,137 @@
 title: Truy cập phiên bản sửa đổi
 linktitle: Truy cập phiên bản sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Truy cập phiên bản sửa đổi của tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách truy cập và hiển thị phiên bản sửa đổi của tài liệu bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để quản lý tài liệu liền mạch.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/access-revised-version/
 ---
+## Giới thiệu
 
-Trong hướng dẫn từng bước này, chúng tôi sẽ chỉ cho bạn cách truy cập phiên bản sửa đổi của tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ cung cấp cho bạn mã nguồn hoàn chỉnh và chỉ cho bạn cách định dạng đầu ra đánh dấu.
+Bạn đã bao giờ cần truy cập phiên bản sửa đổi của tài liệu theo chương trình chưa? Cho dù bạn đang làm việc trên các dự án hợp tác hay chỉ cần quản lý các bản sửa đổi tài liệu, Aspose.Words for .NET là công cụ bạn nên sử dụng. Hướng dẫn này sẽ hướng dẫn bạn toàn bộ quá trình, từ thiết lập môi trường đến truy cập và hiển thị các bản sửa đổi trong tài liệu Word. Vì vậy, hãy đi sâu vào ngay!
 
-## Bước 1: Tải tài liệu
+## Điều kiện tiên quyết
 
-Bước đầu tiên là tải lên tài liệu có chứa các bản sửa đổi.
+Trước khi chúng ta bắt đầu, bạn sẽ cần một số thứ:
+
+1.  Thư viện Aspose.Words for .NET: Bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE nào khác hỗ trợ .NET.
+3. Kiến thức cơ bản về C#: Điều này sẽ giúp bạn theo dõi phần viết mã.
+
+Đảm bảo bạn đã sắp xếp các điều kiện tiên quyết này trước khi tiến hành các bước tiếp theo.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết. Đây là một bước quan trọng để đảm bảo rằng mã của bạn nhận ra thư viện Aspose.Words cho .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ thực hiện.
+
+## Bước 1: Thiết lập đường dẫn tài liệu
+
+Trước khi bạn có thể làm việc với tài liệu, bạn cần chỉ định đường dẫn chứa tài liệu của bạn. Điều này rất cần thiết để mã tìm và thao tác với tệp.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Bước 2: Tải tài liệu
+
+ Tiếp theo, bạn sẽ tải tài liệu vào ứng dụng của mình. Bước này liên quan đến việc tạo mới`Document` đối tượng và khởi tạo nó bằng đường dẫn đến tài liệu của bạn.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## Bước 3: Cập nhật nhãn danh sách
+
+Nếu tài liệu của bạn chứa danh sách thì điều quan trọng là phải cập nhật nhãn danh sách. Điều này đảm bảo rằng tất cả các mục trong danh sách đều được đánh số và định dạng chính xác.
+
+```csharp
 doc.UpdateListLabels();
 ```
 
-## Bước 2: Truy cập phiên bản đã sửa đổi
+## Bước 4: Chuyển sang phiên bản đã sửa đổi
 
-Bây giờ chúng ta sẽ chuyển sang phiên bản sửa đổi của tài liệu.
-
-```csharp
-doc.RevisionsView = RevisionsView.Final;
-```
-
-## Bước 3: Duyệt các bản sửa đổi
-
-Tiếp theo, chúng tôi sẽ lặp qua các bản sửa đổi có trong tài liệu và hiển thị thông tin cụ thể cho các đoạn văn là mục danh sách.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-     if (revision.ParentNode.NodeType == NodeType.Paragraph)
-     {
-         Paragraph paragraph = (Paragraph)revision.ParentNode;
-         if (paragraph.IsListItem)
-         {
-             Console.WriteLine(paragraph.ListLabel.LabelString);
-             Console.WriteLine(paragraph.ListFormat.ListLevel);
-         }
-     }
-}
-```
-
-### Mã nguồn mẫu cho Access Revised Version sử dụng Aspose.Words for .NET
-
-Đây là mã nguồn hoàn chỉnh để truy cập phiên bản sửa đổi của tài liệu bằng Aspose.Words cho .NET:
-
-```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-doc.UpdateListLabels();
-
-// Chuyển sang phiên bản sửa đổi của tài liệu.
-doc.RevisionsView = RevisionsView.Final;
-
-foreach (Revision revision in doc.Revisions)
-{
-	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
-	 {
-		 Paragraph paragraph = (Paragraph)revision.ParentNode;
-		 if (paragraph.IsListItem)
-		 {
-			 Console.WriteLine(paragraph.ListLabel.LabelString);
-			 Console.WriteLine(paragraph.ListFormat.ListLevel);
-		 }
-	 }
-}
-```
-
-## Phần kết luận
-
-Trong hướng dẫn này, chúng ta đã học cách truy cập phiên bản sửa đổi của tài liệu Word bằng Aspose.Words cho .NET. Bằng cách tải tài liệu, điều hướng đến phiên bản đã sửa đổi và duyệt qua các bản sửa đổi, chúng tôi có thể nhận được thông tin cụ thể cho các đoạn văn là mục danh sách. Aspose.Words for .NET cung cấp các tính năng mạnh mẽ để thao tác với tài liệu Word, bao gồm quyền truy cập vào các bài đánh giá. Giờ đây, bạn có thể sử dụng kiến thức này để truy cập phiên bản sửa đổi của tài liệu Word của riêng mình bằng Aspose.Words for .NET.
-
-### Câu hỏi thường gặp
-
-#### Câu hỏi: Làm cách nào để tải tài liệu có bản sửa đổi vào Aspose.Words cho .NET?
-
- Đáp: Hãy sử dụng`Document` lớp Aspose.Words dành cho .NET để tải tài liệu từ một tệp có chứa các bản sửa đổi. Bạn có thể chỉ định đường dẫn tài liệu đầy đủ.
-
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
-
-#### Câu hỏi: Làm cách nào để truy cập phiên bản sửa đổi của tài liệu trong Aspose.Words cho .NET?
-
- Đáp: Hãy sử dụng`RevisionsView` tài sản của`Document` đối tượng để truy cập phiên bản sửa đổi của tài liệu. Bạn có thể đặt giá trị của`RevisionsView`tài sản để`RevisionsView.Final` để hiển thị phiên bản cuối cùng mà không cần sửa đổi.
+Bây giờ, hãy chuyển sang phiên bản sửa đổi của tài liệu. Bước này rất quan trọng nếu bạn muốn truy cập và hiển thị các bản sửa đổi.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### Câu hỏi: Làm cách nào để duyệt các bản sửa đổi tài liệu trong Aspose.Words cho .NET?
+## Bước 5: Lặp lại các bản sửa đổi
 
-Đáp: Hãy sử dụng một`foreach` vòng lặp để lặp qua các sửa đổi có trong tài liệu. Bạn có thể dùng`Revisions` tài sản của`Document` object để có được một bộ sưu tập tất cả các phiên bản của tài liệu.
+ Để truy cập các bản sửa đổi, bạn sẽ cần phải lặp qua`Revisions` việc sưu tầm tài liệu. Bước này liên quan đến việc sử dụng một`foreach` vòng lặp để đi qua từng bản sửa đổi.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     // Xử lý từng bản sửa đổi tại đây
+    // Mã bổ sung sẽ ở đây
 }
 ```
 
-#### Hỏi: Làm cách nào để kiểm tra xem một đoạn văn có phải là một mục danh sách trong Aspose.Words cho .NET không?
+## Bước 6: Kiểm tra loại nút gốc
 
- Đáp: Hãy sử dụng`IsListItem` tài sản của`Paragraph` đối tượng để kiểm tra xem một đoạn văn có phải là một mục danh sách hay không. Các`IsListItem` trả lại tài sản`true` nếu đoạn văn là một mục danh sách, nếu không nó sẽ trả về`false`.
+ Đối với mỗi bản sửa đổi, hãy kiểm tra xem nút cha có thuộc loại không`Paragraph`. Điều này rất quan trọng vì chúng tôi muốn truy cập đoạn văn có chứa bản sửa đổi.
+
+```csharp
+if (revision.ParentNode.NodeType == NodeType.Paragraph)
+{
+    // Mã bổ sung sẽ ở đây
+}
+```
+
+## Bước 7: Truy cập đoạn văn
+
+ Khi bạn đã xác nhận rằng nút cha là một đoạn văn, hãy truyền nó tới một`Paragraph` sự vật. Bước này cho phép bạn làm việc với đoạn văn và các thuộc tính của nó.
+
+```csharp
+Paragraph paragraph = (Paragraph)revision.ParentNode;
+```
+
+## Bước 8: Kiểm tra xem đoạn văn có phải là một mục danh sách không
+
+Tiếp theo, kiểm tra xem đoạn văn đó có phải là một mục danh sách hay không. Điều này quan trọng vì các mục trong danh sách có các thuộc tính cụ thể mà chúng ta cần truy cập.
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     // Đoạn văn là một mục danh sách
-}
-else
-{
-     // Đoạn văn không phải là một mục danh sách
+    // Mã bổ sung sẽ ở đây
 }
 ```
+
+## Bước 9: Hiển thị Nhãn và Cấp độ Danh sách
+
+Cuối cùng hiển thị nhãn danh sách và cấp độ danh sách của đoạn văn. Bước này cung cấp thông tin hữu ích về mục danh sách, chẳng hạn như mức độ đánh số và thụt lề của mục đó.
+
+```csharp
+Console.WriteLine(paragraph.ListLabel.LabelString);
+Console.WriteLine(paragraph.ListFormat.ListLevel);
+```
+
+## Phần kết luận
+
+Và bạn có nó! Bạn đã truy cập thành công phiên bản sửa đổi của tài liệu bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể quản lý và hiển thị các bản sửa đổi tài liệu một cách dễ dàng. Cho dù bạn đang xử lý các dự án hợp tác hay chỉ cần theo dõi các thay đổi, Aspose.Words for .NET đều có thể giúp bạn.
+
+## Câu hỏi thường gặp
+
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn tạo, chỉnh sửa và thao tác với tài liệu Word theo chương trình.
+
+### Tôi có thể truy cập các bản sửa đổi trong bất kỳ tài liệu Word nào không?
+Có, miễn là tài liệu có chứa các bản sửa đổi, bạn có thể truy cập chúng bằng Aspose.Words for .NET.
+
+### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
+ Có, bạn có thể nhận được giấy phép từ[đây](https://purchase.aspose.com/buy) . Họ cũng cung cấp một[dùng thử miễn phí](https://releases.aspose.com/) và một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
+
+### Aspose.Words for .NET có tương thích với tất cả các phiên bản .NET không?
+Aspose.Words for .NET tương thích với nhiều phiên bản .NET. Bạn có thể tìm thêm chi tiết trong[tài liệu](https://reference.aspose.com/words/net/).
+
+### Tôi có thể nhận hỗ trợ cho Aspose.Words cho .NET ở đâu?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose trên[diễn đàn](https://forum.aspose.com/c/words/8).

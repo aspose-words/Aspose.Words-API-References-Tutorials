@@ -74,7 +74,7 @@ Här är en uppdelning av vad den här koden gör:
 
 -  Initiera`styleName`: Vi börjar med en tom sträng för att bygga vår lista med stilnamn.
 -  Gå igenom stilarna: The`foreach` loop itererar över varje`Style` i`styles` samling.
-- Uppdatera och visa`styleName` : För varje stil lägger vi till dess namn till`styleName` och skriv ut det.
+- Uppdatera och visa`styleName` : För varje stil lägger vi dess namn till`styleName` och skriv ut det.
 
 ## Steg 4: Anpassa utdata
 
@@ -94,7 +94,7 @@ foreach (Style style in styles)
 }
 ```
 
- I det här exemplet skiljer vi mellan inbyggda och anpassade stilar genom att markera`IsBuiltin` fast egendom.
+ I det här exemplet skiljer vi mellan inbyggda och anpassade stilar genom att markera`IsBuiltin` egendom.
 
 ## Slutsats
 

@@ -2,95 +2,98 @@
 title: Aufzählungsliste
 linktitle: Aufzählungsliste
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in der Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine Aufzählungsliste erstellen.
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Aufzählungslisten in Word-Dokumenten erstellen und anpassen.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/bulleted-list/
 ---
+## Einführung
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET eine Aufzählungsliste erstellen. Eine Aufzählungsliste wird verwendet, um Elemente ohne Nummerierung aufzulisten.
+Bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute werden wir durch die Erstellung einer Aufzählungsliste in Ihren Word-Dokumenten gehen. Ob Sie Ideen organisieren, Elemente auflisten oder Ihrem Dokument einfach ein wenig Struktur verleihen möchten, Aufzählungslisten sind äußerst praktisch. Also, legen wir los!
 
-## Schritt 1: Einen Dokumentgenerator verwenden
+## Voraussetzungen
 
-Zuerst verwenden wir einen Dokumentgenerator, um unserem Dokument Inhalt hinzuzufügen.
+Bevor wir uns in den Programmierspaß stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn Sie sie noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: AC#-Entwicklungsumgebung wie Visual Studio.
+3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse der C#-Programmierung erleichtern Ihnen den Einstieg.
+
+## Namespaces importieren
+
+Als Erstes importieren wir die erforderlichen Namespaces. Damit bereiten wir die Voraussetzungen für die reibungslose Ausführung unseres Codes vor.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Lassen Sie uns den Prozess nun in einfache, überschaubare Schritte unterteilen.
+
+## Schritt 1: Neues Dokument erstellen
+
+Okay, beginnen wir mit der Erstellung eines neuen Dokuments. Hier geschieht die ganze Magie.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Schritt 2: Anwenden einer Standardaufzählungsliste
+## Schritt 2: Aufzählungslistenformat anwenden
 
- Wir können eine Standard-Aufzählungsliste mit dem Dokument-Generator anwenden.`ApplyBulletDefault` Methode.
+Als Nächstes wenden wir ein Aufzählungslistenformat an. Dadurch wird dem Dokument mitgeteilt, dass wir eine Aufzählungsliste beginnen werden.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Schritt 3: Anpassen des Aufzählungszeichenformats
+## Schritt 3: Aufzählungsliste anpassen
 
- Wir können das Aufzählungsformat anpassen, indem wir auf die Eigenschaften von zugreifen`ListFormat.List.ListLevels[0]`. In diesem Beispiel verwenden wir den Bindestrich „-“ als Aufzählungszeichen.
+Hier passen wir die Aufzählungsliste nach unseren Wünschen an. Für dieses Beispiel verwenden wir einen Bindestrich (-) als Aufzählungszeichen.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Schritt 4: Elemente zur Liste hinzufügen
+## Schritt 4: Listenelemente hinzufügen
 
- Nun können wir Elemente zur Aufzählungsliste hinzufügen, indem wir den Dokumentgenerator verwenden.`Writeln` Methode.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Schritt 5: Einrückung aus der Liste entfernen
-
- Wenn wir eine Unterliste erstellen möchten, können wir die Einrückung vergrößern mit dem`ListFormat.ListIndent()` Methode. In diesem Beispiel fügen wir den Elementen 2a und 2b eine Unterliste hinzu.
+Fügen wir nun unserer Aufzählungsliste einige Elemente hinzu. Hier können Sie Ihrer Kreativität freien Lauf lassen und alle gewünschten Inhalte hinzufügen.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Beispielquellcode für Aufzählungsliste mit Aspose.Words für .NET
-
-
-```csharp
-// Verwenden Sie einen Dokument-Generator, um dem Dokument Inhalt hinzuzufügen.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie mit Aspose.Words für .NET eine Aufzählungsliste erstellen.
+## Schritt 5: Unterelemente hinzufügen
 
-### Häufig gestellte Fragen
+Um die Sache interessanter zu gestalten, fügen wir unter „Punkt 2“ einige Unterpunkte hinzu. Dies erleichtert die Organisation der Unterpunkte.
 
-#### F: Wie erstelle ich eine Aufzählungsliste in Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Zurück zur Hauptlistenebene
+```
 
-A: Um eine Aufzählungsliste in Markdown zu erstellen, beginnen Sie jedes Listenelement mit einem Aufzählungssymbol (`-`, `*` , oder`+`), gefolgt von einem Leerzeichen.
+## Abschluss
 
-#### F: Können Sie Aufzählungslisten in Markdown verschachteln?
+Und da haben Sie es! Sie haben gerade mit Aspose.Words für .NET eine Aufzählungsliste in einem Word-Dokument erstellt. Es ist ein unkomplizierter Prozess, aber unglaublich leistungsstark für die Organisation Ihrer Dokumente. Egal, ob Sie einfache Listen oder komplexe verschachtelte Listen erstellen, Aspose.Words bietet alles.
 
-A: Ja, es ist möglich, Aufzählungslisten in Markdown zu verschachteln, indem Sie vor jedem verschachtelten Listenelement vier versetzte Leerzeichen hinzufügen.
+Experimentieren Sie mit verschiedenen Listenstilen und -formaten, um Ihren Anforderungen gerecht zu werden. Viel Spaß beim Programmieren!
 
-#### F: Wie kann ich Aufzählungszeichen anpassen?
+## Häufig gestellte Fragen
 
-A: In Standard-Markdown sind Aufzählungszeichen vordefiniert. Einige Markdown-Editoren ermöglichen jedoch die Anpassung dieser Symbole mithilfe bestimmter Erweiterungen.
+### Kann ich in der Liste andere Aufzählungszeichen verwenden?
+    Ja, Sie können die Aufzählungszeichen anpassen, indem Sie die`NumberFormat` Eigentum.
 
-#### F: Unterstützen Aufzählungslisten in Markdown Einrückungen?
+### Wie füge ich weitere Einrückungsebenen hinzu?
+    Verwenden Sie die`ListIndent` Methode, um weitere Ebenen hinzuzufügen und`ListOutdent` um auf eine höhere Ebene zurückzukehren.
 
-A: Ja, Aufzählungslisten in Markdown unterstützen Einrückungen. Sie können mit Leerzeichen oder Tabulatoren eine Linksverschiebung hinzufügen.
+### Ist es möglich, Aufzählungs- und Nummerierungslisten zu mischen?
+   Auf jeden Fall! Sie können zwischen Aufzählungszeichen- und Nummerierungsformaten wechseln, indem Sie`ApplyNumberDefault`Und`ApplyBulletDefault` Methoden.
 
-#### F: Können zu Listenelementen Links oder Inline-Text hinzugefügt werden?
+### Kann ich den Text in den Listenelementen formatieren?
+    Ja, Sie können verschiedene Stile, Schriftarten und Formatierungen auf den Text in Listenelementen anwenden, indem Sie`Font` Eigentum der`DocumentBuilder`.
 
-A: Ja, Sie können mit der entsprechenden Markdown-Syntax Links oder Inline-Text zu Listenelementen hinzufügen.
+### Wie kann ich eine mehrspaltige Aufzählungsliste erstellen?
+   Mithilfe der Tabellenformatierung können Sie mehrspaltige Listen erstellen, in denen jede Zelle eine separate Aufzählungsliste enthält.

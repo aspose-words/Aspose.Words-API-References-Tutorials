@@ -8,7 +8,7 @@ weight: 10
 url: /cs/python-net/document-options-and-settings/join-append-documents/
 ---
 
-## Úvod
+## Zavedení
 
 Aspose.Words for Python je knihovna bohatá na funkce, která umožňuje vývojářům vytvářet, upravovat a manipulovat s dokumenty Wordu programově. Nabízí širokou škálu funkcí, včetně možnosti snadného spojování a připojování dokumentů.
 

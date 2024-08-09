@@ -15,7 +15,7 @@ Trabalhar com documentos programaticamente pode ser um pouco assustador se você
 
 Antes de mergulharmos no código, vamos garantir que você tenha tudo o que precisa para começar:
 
-1.  Aspose.Words for .NET: Você precisará baixar e instalar o Aspose.Words for .NET. Você pode encontrá lo[aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Você precisará baixar e instalar o Aspose.Words for .NET. Você pode encontrá-lo[aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: uma instalação funcional do Visual Studio ou qualquer outro IDE que ofereça suporte ao desenvolvimento .NET.
 3. Compreensão básica de C#: A familiaridade com a programação C# será benéfica, pois a usaremos em nosso exemplo.
 
@@ -49,7 +49,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Etapa 3: comece a construir a mesa
 
- Para começar a construir nossa mesa, chamamos o`StartTable` método no`DocumentBuilder`instância. Este método inicializa uma nova tabela no documento.
+ Para começar a construir nossa mesa, chamamos o`StartTable` método no`DocumentBuilder`exemplo. Este método inicializa uma nova tabela no documento.
 
 ```csharp
 builder.StartTable();
@@ -127,7 +127,7 @@ Sim, Aspose.Words for .NET oferece suporte a várias linguagens de programação
  Sim, você pode baixar uma avaliação gratuita em[aqui](https://releases.aspose.com/).
 
 ### Como posso obter suporte para Aspose.Words for .NET?
- Você pode obter suporte visitando Aspose.Words[Fórum de suporte](https://forum.aspose.com/c/words/8).
+ Você pode obter suporte visitando Aspose.Words[fórum de suporte](https://forum.aspose.com/c/words/8).
 
 ### Onde posso encontrar documentação mais detalhada para Aspose.Words for .NET?
  Documentação detalhada pode ser encontrada[aqui](https://reference.aspose.com/words/net/).

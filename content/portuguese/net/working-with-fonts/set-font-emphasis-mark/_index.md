@@ -2,83 +2,105 @@
 title: Definir marca de ênfase da fonte
 linktitle: Definir marca de ênfase da fonte
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como definir o estilo de ênfase da fonte em um documento do Word usando Aspose.Words for .NET.
+description: Aprenda como definir marcas de ênfase de fonte em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. Perfeito para desenvolvedores .NET.
 type: docs
 weight: 10
 url: /pt/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Introdução
 
-Neste tutorial, mostraremos como definir o estilo de ênfase da fonte em um documento do Word usando Aspose.Words for .NET. A ênfase da fonte é usada para destacar certas palavras ou frases no texto.
+No tutorial de hoje, vamos nos aprofundar em como definir marcas de ênfase de fonte em um documento do Word usando Aspose.Words for .NET. Esteja você procurando sublinhar um texto específico com uma marca exclusiva ou simplesmente destacar certas palavras, este guia tem o que você precisa. Então, aperte o cinto e vamos começar!
 
 ## Pré-requisitos
-Antes de começar, certifique-se de ter os seguintes itens:
-- Conhecimento prático da linguagem de programação C#
-- A biblioteca Aspose.Words para .NET instalada em seu projeto
 
-## Passo 1: Defina o diretório do documento
-Comece definindo o caminho do diretório para o local do seu documento do Word. Substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado.
+Antes de mergulharmos nos detalhes essenciais, certifique-se de ter marcado os seguintes pré-requisitos:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Biblioteca Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET instalada. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: um ambiente de desenvolvimento funcional, como o Visual Studio.
+- .NET Framework: certifique-se de ter o .NET Framework instalado.
 
-## Passo 2: Crie e personalize o documento
- Crie uma instância do`Document` classe e um associado`DocumentBuilder` para construir o conteúdo do documento. Use o`Font.EmphasisMark` propriedade para definir o estilo de ênfase da fonte como`EmphasisMark.UnderSolidCircle` . Então use o`Write`e`Writeln` métodos do`DocumentBuilder` para adicionar texto com a ênfase de fonte especificada.
+## Importar namespaces
+
+Para trabalhar com Aspose.Words for .NET, você precisará importar os namespaces necessários. Adicione-os no topo do seu arquivo de código:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Etapa 3: salve o documento
- Salve o documento usando o`Save` método do`Document` com o caminho e nome de arquivo apropriados.
+Agora, vamos dividir o processo em etapas simples. Siga cada etapa cuidadosamente para definir marcas de ênfase de fonte em seu documento do Word.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Etapa 1: inicializar o documento e o DocumentBuilder
 
-### Exemplo de código-fonte para definir marca de ênfase da fonte usando Aspose.Words for .NET 
+Primeiramente, você precisa inicializar um novo documento e um DocumentBuilder. A classe DocumentBuilder fornece métodos para inserir texto e outros elementos no documento.
 
 ```csharp
 // Caminho para o diretório do seu documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Inicialize um novo documento
 Document document = new Document();
+
+// Inicialize o DocumentBuilder com o documento
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Etapa 2: definir a marca de ênfase da fonte
+
+Com o DocumentBuilder pronto, agora você pode definir a marca de ênfase da fonte. Neste exemplo, usaremos a marca de ênfase "UnderSolidCircle".
+
+```csharp
+// Defina a marca de ênfase da fonte
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Escreva o texto com a marca de ênfase
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Etapa 3: limpar a formatação e adicionar texto normal
+
+Depois de definir a marca de ênfase, você pode adicionar algum texto normal sem qualquer ênfase. Para isso, você precisa limpar a formatação.
+
+```csharp
+// Limpe a formatação da fonte
 builder.Font.ClearFormatting();
+
+// Escreva um texto normal
 builder.Write("Simple text");
+```
+
+## Etapa 4: salve o documento
+
+Depois de adicionar todo o texto e formatação necessários, a etapa final é salvar o documento. Especifique o caminho e o nome do arquivo onde deseja salvar o documento.
+
+```csharp
+// Salve o documento
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Conclusão
-Neste tutorial, você aprendeu como definir o estilo de ênfase da fonte em um documento do Word usando Aspose.Words for .NET. Experimente diferentes estilos de ênfase e use esse recurso para destacar palavras ou frases em seus documentos.
 
-### Perguntas frequentes
+aí está! Definir marcas de ênfase de fonte em um documento do Word usando Aspose.Words for .NET é tão simples quanto isso. Com apenas algumas linhas de código, você pode destacar seu texto e adicionar um toque profissional aos seus documentos. Não hesite em experimentar diferentes marcas de ênfase e estilos para atender às suas necessidades.
 
-#### P: Como posso adicionar acentos a uma fonte específica em um documento do Word usando Aspose.Words?
+## Perguntas frequentes
 
-R: Para adicionar acentos a uma fonte específica em um documento do Word usando Aspose.Words, você pode usar a API para navegar até a fonte desejada e aplicar os acentos apropriados. Isso adicionará acentos ao texto com a fonte selecionada.
+### O que são marcas de ênfase de fonte?
 
-#### P: É possível alterar o estilo dos acentos em um documento do Word com Aspose.Words?
+As marcas de ênfase da fonte são símbolos especiais adicionados ao texto para destacá-lo. Eles podem incluir pontos, círculos e outras marcas decorativas.
 
-R: Sim, com Aspose.Words você pode alterar o estilo dos acentos em um documento do Word. A API permite ajustar propriedades de estilo, como cor, tamanho, tipo de linha, etc., para personalizar a aparência dos acentos.
+### Posso usar outras marcas de ênfase com Aspose.Words for .NET?
 
-#### P: Como posso remover todos os acentos de um documento do Word usando Aspose.Words?
+ Sim, Aspose.Words for .NET oferece suporte a vários sinais de ênfase. Você pode explorar diferentes opções consultando o[documentação](https://reference.aspose.com/words/net/).
 
-R: Para remover todos os acentos de um documento do Word usando Aspose.Words, você pode usar a API para navegar no documento, detectar os acentos existentes e removê-los usando os métodos apropriados. Isso removerá todas as marcas de ênfase do documento.
+### O uso do Aspose.Words for .NET é gratuito?
 
-#### P: Posso adicionar acentos a uma parte específica do texto em um documento do Word?
+ Aspose.Words for .NET requer uma licença para funcionalidade completa. Você pode obter um teste gratuito[aqui](https://releases.aspose.com/) ou compre uma licença[aqui](https://purchase.aspose.com/buy).
 
-R: Sim, você pode adicionar acentos a uma parte específica do texto em um documento do Word usando Aspose.Words. Você pode selecionar o intervalo de texto desejado usando a API e adicionar marcas de ênfase apropriadas a essa parte do texto.
+### Como posso obter suporte para Aspose.Words for .NET?
 
-#### P: Os acentos podem ser personalizados de acordo com minhas necessidades?
+ Você pode obter suporte da comunidade e da equipe de suporte do Aspose visitando seu[fórum de suporte](https://forum.aspose.com/c/words/8).
 
-R: Sim, os acentos podem ser personalizados de acordo com suas necessidades usando Aspose.Words. Você pode ajustar as propriedades de estilo dos acentos, como cor, tamanho, tipo de linha e muito mais, para corresponder às suas preferências de formatação.
+### Posso usar o Aspose.Words for .NET com outras estruturas .NET?
+
+Sim, Aspose.Words for .NET é compatível com vários frameworks .NET, incluindo .NET Core e .NET 5/6.

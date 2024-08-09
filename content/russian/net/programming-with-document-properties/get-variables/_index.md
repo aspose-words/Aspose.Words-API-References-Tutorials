@@ -41,7 +41,7 @@ using Aspose.Words;
 
 ### Установка Aspose.Words
 
-Теперь давайте добавим библиотеку Aspose.Words в наш проект.
+Теперь давайте добавим в наш проект библиотеку Aspose.Words.
 
 1. Откройте диспетчер пакетов NuGet в Visual Studio.
 2. Найдите «Aspose.Words» и установите его.
@@ -55,7 +55,7 @@ using Aspose.Words;
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  Создать`Document` объект и загрузите документ:
+2.  Создайте`Document` объект и загрузите документ:
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
     ```

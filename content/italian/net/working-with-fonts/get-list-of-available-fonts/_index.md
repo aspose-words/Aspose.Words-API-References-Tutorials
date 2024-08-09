@@ -2,93 +2,113 @@
 title: Ottieni l'elenco dei caratteri disponibili
 linktitle: Ottieni l'elenco dei caratteri disponibili
 second_title: API di elaborazione dei documenti Aspose.Words
-description: In questo tutorial, scopri come ottenere l'elenco dei caratteri disponibili in Aspose.Words per .NET.
+description: Scopri come ottenere un elenco di caratteri disponibili utilizzando Aspose.Words per .NET in questo tutorial dettagliato passo dopo passo. Migliora le tue capacità di gestione dei caratteri.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/get-list-of-available-fonts/
 ---
-In questo tutorial spiegheremo come ottenere l'elenco dei caratteri disponibili in Aspose.Words per .NET. L'elenco dei caratteri disponibili ti consente di sapere quali caratteri puoi utilizzare nei tuoi documenti. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
+## Introduzione
+
+Ti sei mai trovato in difficoltà nel gestire i caratteri nei tuoi documenti Word? Se sei uno sviluppatore .NET, Aspose.Words per .NET è qui per salvarti! Questa potente libreria non solo ti aiuta a creare e manipolare documenti Word a livello di codice, ma offre anche ampie funzionalità di gestione dei caratteri. In questa guida ti guideremo attraverso un tutorial passo passo su come ottenere un elenco di caratteri disponibili utilizzando Aspose.Words per .NET. Lo suddivideremo in passaggi digeribili per assicurarti di poterlo seguire con facilità. Quindi, tuffiamoci e rendiamo la gestione dei caratteri un gioco da ragazzi!
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti elementi:
-- Una conoscenza pratica del linguaggio di programmazione C#
-- La libreria Aspose.Words per .NET installata nel tuo progetto
 
-## Passaggio 1: definire la directory dei documenti
- Innanzitutto, devi impostare il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+Prima di iniziare, ci sono alcune cose di cui avrai bisogno:
+
+-  Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words per .NET installata. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+- Visual Studio: questo esempio usa Visual Studio come ambiente di sviluppo.
+- .NET Framework: assicurati di avere .NET Framework installato sul tuo computer.
+- Directory dei documenti: un percorso di directory in cui sono archiviati i documenti.
+
+## Importa spazi dei nomi
+
+Innanzitutto, importa gli spazi dei nomi necessari nel tuo progetto:
 
 ```csharp
-// Percorso della directory dei documenti
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Passaggio 2: configura le origini dei caratteri
- Successivamente, creeremo un'istanza di`FontSettings` e ottieni le fonti dei caratteri esistenti utilizzando il file`GetFontsSources()` metodo. Aggiungeremo anche una nuova fonte di carattere specificando una cartella contenente i caratteri.
+## Passaggio 1: inizializza le impostazioni dei caratteri
+
+Il primo passo è inizializzare le impostazioni del carattere. Ciò ti consentirà di gestire le fonti dei caratteri per i tuoi documenti.
 
 ```csharp
-// Configura le origini dei caratteri
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-// Aggiungi una nuova fonte di carattere
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## Passaggio 3: ottieni l'elenco dei caratteri disponibili
- Ora esploreremo i caratteri disponibili utilizzando il file`GetAvailableFonts()` metodo sulla prima origine del carattere aggiornata.
+- FontSettings: questa classe viene utilizzata per specificare le impostazioni per la sostituzione dei caratteri e le origini dei caratteri.
+- fontSources: creiamo un elenco di fonti di caratteri esistenti dalle impostazioni dei caratteri correnti.
+
+## Passaggio 2: definire la directory dei documenti
+
+Successivamente, specifica il percorso della directory dei documenti. Qui è dove Aspose.Words cercherà i caratteri.
 
 ```csharp
-// Ottieni l'elenco dei caratteri disponibili
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### Codice sorgente di esempio per ottenere l'elenco dei caratteri disponibili utilizzando Aspose.Words per .NET 
-
-```csharp
-
-// Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Aggiungi una nuova sorgente di cartella che indicherà ad Aspose.Words di cercare i caratteri nella seguente cartella.
+-  dataDir: questa variabile stringa contiene il percorso della directory in cui si trovano i caratteri. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso vero e proprio.
+
+## Passaggio 3: aggiungi la cartella dei caratteri personalizzati
+
+Ora aggiungi una nuova sorgente di cartella per istruire Aspose.Words a cercare i caratteri in questa cartella.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Aggiungi la cartella personalizzata che contiene i nostri caratteri all'elenco delle fonti di caratteri esistenti.
+```
+
+- FolderFontSource: questa classe rappresenta l'origine del carattere di una cartella. Il secondo parametro (`true`) indica se cercare i caratteri in modo ricorsivo nelle sottocartelle.
+
+## Passaggio 4: aggiorna le origini dei caratteri
+
+Aggiungi la cartella dei caratteri personalizzati all'elenco delle origini dei caratteri esistenti e aggiorna le impostazioni dei caratteri.
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- fontSources.Add(folderFontSource): aggiunge la cartella dei caratteri personalizzati alle origini dei caratteri esistenti.
+- aggiornatoFontSources: converte l'elenco delle origini dei caratteri in un array.
+
+## Passaggio 5: recuperare e visualizzare i caratteri
+
+Infine, recupera i caratteri disponibili e visualizza i loro dettagli.
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts(): recupera l'elenco dei caratteri disponibili dalla prima origine dei caratteri nell'elenco aggiornato.
+-  fontInfo: un'istanza di`PhysicalFontInfo` contenente dettagli su ciascun carattere.
+
 ## Conclusione
-In questo tutorial, abbiamo visto come ottenere l'elenco dei caratteri disponibili in Aspose.Words per .NET. Ciò ti consente di sapere quali caratteri puoi utilizzare nei tuoi documenti. Sentiti libero di utilizzare questa funzione per scegliere i caratteri appropriati per le tue esigenze.
 
-### Domande frequenti
+Congratulazioni! Hai recuperato con successo un elenco di caratteri disponibili utilizzando Aspose.Words per .NET. Questo tutorial ti ha guidato attraverso ogni passaggio, dall'inizializzazione delle impostazioni dei caratteri alla visualizzazione dei dettagli dei caratteri. Con questa conoscenza, ora puoi gestire facilmente i caratteri nei tuoi documenti Word. Ricorda, Aspose.Words per .NET è un potente strumento che può migliorare significativamente le tue capacità di elaborazione dei documenti. Quindi, vai avanti ed esplora più funzionalità per rendere il tuo processo di sviluppo ancora più efficiente.
 
-#### D: Come posso recuperare l'elenco dei caratteri disponibili in Aspose.Words?
+## Domande frequenti
 
- R: Per recuperare l'elenco dei caratteri disponibili in Aspose.Words, è possibile utilizzare il file`FontsProvider` classe e il`GetAvailableFonts` metodo. Questo metodo restituirà un elenco di tutti i caratteri installati sul tuo sistema.
+### Posso utilizzare Aspose.Words per .NET con altri framework .NET?
+Sì, Aspose.Words per .NET è compatibile con vari framework .NET tra cui .NET Core e .NET 5+.
 
-#### D: Posso filtrare l'elenco dei caratteri disponibili in base a determinati criteri in Aspose.Words?
+### Come installo Aspose.Words per .NET?
+È possibile installarlo tramite NuGet Package Manager in Visual Studio cercando "Aspose.Words".
 
-R: Sì, puoi filtrare l'elenco dei caratteri disponibili in Aspose.Words utilizzando criteri specifici. Ad esempio, puoi filtrare i caratteri per famiglia, stile o lingua.
+### È possibile aggiungere più cartelle di caratteri personalizzati?
+ Sì, puoi aggiungere più cartelle di caratteri personalizzati creandone più`FolderFontSource` istanze e aggiungendole all'elenco delle origini dei caratteri.
 
-#### D: Come posso utilizzare l'elenco dei caratteri disponibili nei miei documenti Word?
+### Posso recuperare i dettagli del carattere da una fonte di carattere specifica?
+ Sì, puoi recuperare i dettagli del carattere da qualsiasi fonte di carattere specificando l'indice della fonte di carattere nel file`updatedFontSources` vettore.
 
- R: Per utilizzare l'elenco dei caratteri disponibili nei tuoi documenti Word, puoi sfogliare l'elenco e selezionare i caratteri appropriati utilizzando i metodi e le proprietà del`FontSettings` classe in Aspose.Words.
+### Aspose.Words per .NET supporta la sostituzione dei caratteri?
+Sì, supporta la sostituzione dei caratteri per garantire che il testo venga visualizzato correttamente anche se il carattere originale non è disponibile.

@@ -96,13 +96,13 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 匯出 MHTML 資源的 Cid URL 可確保正確引用 MHTML 檔案中的嵌入資源，進而提高文件的可移植性和完整性。
 
 ### 我可以進一步自訂輸出格式嗎？
-是的，Aspose.Words for .NET 提供了廣泛的自訂選項來保存文件。請參閱[文件](https://reference.aspose.com/words/net/)更多細節。
+是的，Aspose.Words for .NET 提供了廣泛的自訂選項來保存文件。請參閱[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
 是的，您需要授權才能使用 Aspose.Words for .NET。您可以獲得免費試用[這裡](https://releases.aspose.com/)或購買許可證[這裡](https://purchase.aspose.com/buy).
 
 ### 我可以針對多個文件自動執行此程序嗎？
-絕對地！您可以建立一個腳本來自動處理多個文件的流程，利用 Aspose.Words for .NET 的強大功能來有效率地處理批次作業。
+絕對地！您可以建立一個腳本來自動執行多個文件的流程，利用 Aspose.Words for .NET 的強大功能來有效率地處理批次作業。
 
 ### 如果遇到問題，我可以在哪裡獲得支援？
 如果您需要支持，請造訪 Aspose 支援論壇[這裡](https://forum.aspose.com/c/words/8)尋求社區和 Aspose 開發人員的協助。

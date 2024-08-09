@@ -97,7 +97,7 @@ E aí está! Você criou com sucesso uma tabela formatada em um documento do Wor
 ## Perguntas frequentes
 
 ### Posso definir uma formatação diferente para cada linha da tabela?
- Sim, você pode definir formatação individual para cada linha aplicando diferentes`RowFormat` propriedades para cada linha que você criar.
+ Sim, você pode definir formatação individual para cada linha aplicando diferentes`RowFormat` propriedades para cada linha que você cria.
 
 ### É possível adicionar outros elementos, como imagens, nas células da tabela?
  Absolutamente! Você pode inserir imagens, formas e outros elementos nas células da tabela usando o`DocumentBuilder` aula.

@@ -25,7 +25,7 @@ Genel olarak, Aspose.Words for Java kullanan belge birleştirme eğitimleri, kel
 ## Belge Birleştirme Eğitimleri
 
 ### [Belge Birleştirmeyi Kullanma](./using-document-merging/)
-Aspose.Words for Java'yı kullanarak Word belgelerini sorunsuz bir şekilde birleştirmeyi öğrenin. Yalnızca birkaç adımda çakışmaları verimli bir şekilde birleştirin, biçimlendirin ve yönetin. Şimdi başla!
+Aspose.Words for Java'yı kullanarak Word belgelerini sorunsuz bir şekilde birleştirmeyi öğrenin. Yalnızca birkaç adımda çakışmaları verimli bir şekilde birleştirin, biçimlendirin ve yönetin. Şimdi başlayın!
 ### [Belgeleri Birleştirme ve Klonlama](./combining-cloning-documents/)
 Aspose.Words'ü kullanarak belgeleri Java'da zahmetsizce nasıl birleştireceğinizi ve kopyalayacağınızı öğrenin. Bu adım adım kılavuz, bilmeniz gereken her şeyi kapsar.
 ### [Belgelerin Birleştirilmesi ve Eklenmesi](./joining-appending-documents/)

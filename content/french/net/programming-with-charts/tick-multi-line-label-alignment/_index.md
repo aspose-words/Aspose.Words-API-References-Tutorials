@@ -15,7 +15,7 @@ Salut les passionnés de technologie ! Vous êtes-vous déjà demandé comment 
 
 Avant de plonger tête première dans le monde de l’alignement d’étiquettes multilignes, assurons-nous que vous avez tous vos canards d’affilée. Voici ce dont vous aurez besoin :
 
-1.  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version d'Aspose.Words pour .NET. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version d'Aspose.Words pour .NET. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement .NET : assurez-vous que votre environnement de développement est configuré avec .NET.
 3. Connaissance de base de C# : Une compréhension fondamentale de C# rendra ce voyage plus fluide.
 
@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 Maintenant vient la magie ! Nous allons définir l’alignement des étiquettes de graduation pour les étiquettes multilignes.
 
- Met le`TickLabelAlignment` propriété de l'axe à`ParagraphAlignment.Right`.
+ Réglez le`TickLabelAlignment` propriété de l'axe à`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## Conclusion
 
-Et voila! Vous avez coché avec succès l'alignement des étiquettes multilignes dans un graphique à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement personnaliser vos graphiques pour répondre à vos besoins spécifiques. Que vous prépariez un rapport professionnel ou que vous expérimentiez simplement, Aspose.Words for .NET offre la flexibilité et la puissance nécessaires pour accomplir votre travail. Bon codage !
+Et voilà ! Vous avez coché avec succès l'alignement des étiquettes multilignes dans un graphique à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement personnaliser vos graphiques pour répondre à vos besoins spécifiques. Que vous prépariez un rapport professionnel ou que vous expérimentiez simplement, Aspose.Words for .NET offre la flexibilité et la puissance nécessaires pour accomplir votre travail. Bon codage !
 
 ## FAQ
 
@@ -124,4 +124,4 @@ Et voila! Vous avez coché avec succès l'alignement des étiquettes multilignes
 
 ### Quelle est la configuration système requise pour Aspose.Words pour .NET ?
 
- Aspose.Words pour .NET nécessite un environnement .NET. La configuration système requise spécifique peut être trouvée dans le[Documentation](https://reference.aspose.com/words/net/).
+ Aspose.Words pour .NET nécessite un environnement .NET. La configuration système requise spécifique peut être trouvée dans le[documentation](https://reference.aspose.com/words/net/).

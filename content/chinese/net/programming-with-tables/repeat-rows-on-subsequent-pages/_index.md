@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
-此循环将 50 行数据插入到表中，每行有两列。`HeadingFormat`被设定为`false`这些行，因为它们不是标题行。
+此循环将 50 行数据插入到表中，每行有两列。`HeadingFormat`设置为`false`这些行，因为它们不是标题行。
 
 ## 步骤 4：保存文档
 
@@ -118,4 +118,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 是的，您可以通过访问现有表格来修改它们`Document`对象并应用类似的格式。
 
 ### Aspose.Words for .NET 中还有哪些其他表格格式化选项？
- Aspose.Words for .NET 提供多种表格格式选项，包括单元格合并、边框设置和表格对齐。查看[文档](https://reference.aspose.com/words/net/)更多细节。
+ Aspose.Words for .NET 提供多种表格格式选项，包括单元格合并、边框设置和表格对齐。查看[文档](https://reference.aspose.com/words/net/)了解更多详情。

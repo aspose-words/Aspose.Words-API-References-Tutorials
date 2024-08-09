@@ -86,7 +86,7 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
- 각 테두리 유형(왼쪽, 오른쪽, 위쪽, 아래쪽)은 개별적으로 설정됩니다. 우리는 사용`LineStyle.Single` 실선의 경우,`1.5` 선 너비에 대해`Color.Green` 테두리 색상의 경우.
+ 각 테두리 유형(왼쪽, 오른쪽, 위쪽, 아래쪽)은 개별적으로 설정됩니다. 우리는`LineStyle.Single` 실선의 경우,`1.5` 선 너비에 대해`Color.Green` 테두리 색상의 경우.
 
 ## 6단계: 셀 음영 적용
 

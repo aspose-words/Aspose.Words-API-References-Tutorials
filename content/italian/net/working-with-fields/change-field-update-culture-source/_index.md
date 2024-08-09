@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/change-field-update-culture-source/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial, ci immergeremo nel mondo di Aspose.Words per .NET ed esploreremo come modificare l'origine della cultura dell'aggiornamento del campo. Se hai a che fare con documenti Word che includono campi data e devi controllare come queste date vengono formattate in base alle diverse culture, questa guida fa al caso tuo. Esaminiamo il processo passo dopo passo, assicurandoci di comprendere ogni concetto e di poterlo applicare in modo efficace nei tuoi progetti.
 
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Successivamente, dobbiamo inserire i campi nel documento. Per questo esempio, inseriremo due campi data. Imposteremo la locale del carattere su tedesco (LocaleId = 1031) per dimostrare come la lingua influisce sul formato della data.
 
 ```csharp
-builder.Font.LocaleId = 1031; // Tedesco
+builder.Font.LocaleId = 1031; // tedesco
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai modificato con successo l'origine della cultura dell'aggiornamento del campo in Aspose.Words per .NET. Seguendo questi passaggi puoi assicurarti che i tuoi documenti Word visualizzino date e altri valori di campo in base alle impostazioni cultura specificate. Ciò può essere particolarmente utile quando si generano documenti per un pubblico internazionale.
+Ed ecco qua! Hai modificato con successo l'origine della cultura dell'aggiornamento del campo in Aspose.Words per .NET. Seguendo questi passaggi puoi assicurarti che i tuoi documenti Word visualizzino date e altri valori di campo in base alle impostazioni cultura specificate. Ciò può essere particolarmente utile quando si generano documenti per un pubblico internazionale.
 
 ## Domande frequenti
 

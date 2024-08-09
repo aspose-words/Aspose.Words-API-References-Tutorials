@@ -73,7 +73,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-確認しておいて`"Pdf Document.pdf"`指定されたディレクトリ内の PDF ファイルの名前です。
+確実に`"Pdf Document.pdf"`指定されたディレクトリ内の PDF ファイルの名前です。
 
 ## 結論
 

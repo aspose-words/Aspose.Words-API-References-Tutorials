@@ -91,7 +91,7 @@ Seguindo essas etapas, você pode gerenciar e lidar com avisos de maneira eficaz
 ## Perguntas frequentes
 
 ### Qual é o propósito do retorno de chamada de aviso no Aspose.Words for .NET?
-retorno de chamada de aviso permite capturar e tratar avisos que ocorrem durante o processamento de documentos, ajudando a resolver possíveis problemas de forma proativa.
+retorno de chamada de aviso permite capturar e tratar avisos que ocorrem durante o processamento de documentos, ajudando você a resolver possíveis problemas de forma proativa.
 
 ### Como configuro o recurso de retorno de chamada de aviso?
  Você precisa configurar o`LoadOptions` com o`WarningCallback` propriedade e implemente uma classe que lida com os avisos implementando o`IWarningCallback` interface.

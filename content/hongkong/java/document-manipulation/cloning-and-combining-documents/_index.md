@@ -55,7 +55,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtB
 
 ## 步驟 4：在郵件合併期間插入文檔
 
-您可以在 Aspose.Words for Java 中的郵件合併作業期間插入文件。就是這樣：
+您可以在 Aspose.Words for Java 中的郵件合併作業期間插入文件。方法如下：
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");
@@ -68,7 +68,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtM
 
 ## 結論
 
-可以使用多種技術來完成 Aspose.Words for Java 中的複製和合併文件。無論您需要複製文件、在替換點、書籤處插入內容，還是在郵件合併過程中，Aspose.Words 都提供了強大的功能來無縫操作文件。
+可以使用多種技術來完成 Aspose.Words for Java 中的複製和組合文件。無論您需要複製文件、在替換點插入內容、書籤或在郵件合併過程中，Aspose.Words 都提供了強大的功能來無縫操作文件。
 
 ## 常見問題解答
 

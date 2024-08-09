@@ -109,7 +109,7 @@ class MultipagePrintDocument implements Printable
         // Chọn số trang cuối cùng sẽ được in trên tờ giấy này.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //Lặp lại các trang đã chọn từ trang hiện tại được lưu trữ đến trang được tính toán
-        // trang cuối.
+        // trang cuối cùng.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Tính chỉ số cột và hàng.
             int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());

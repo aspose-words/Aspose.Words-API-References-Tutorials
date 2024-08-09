@@ -19,7 +19,7 @@ Zanim zaczniemy, upewnij się, że masz następujące elementy:
 2. .NET Framework: Upewnij się, że masz .NET Framework 4.0 lub nowszy.
 3.  Aspose.Words dla .NET: Pobierz i zainstaluj Aspose.Words dla .NET z[link do pobrania](https://releases.aspose.com/words/net/).
 4. Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest niezbędna.
-5.  Ważna licencja: Uzyskaj[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) lub kup jeden z[Kup Link](https://purchase.aspose.com/buy).
+5.  Ważna licencja: Uzyskaj[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) lub kup jeden z[kup link](https://purchase.aspose.com/buy).
 
 ## Importuj przestrzenie nazw
 

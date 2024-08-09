@@ -117,11 +117,11 @@ options.setFontFamily("Times New Roman");
 
 ### Lehetséges a vízjel elforgatása?
 
- Igen, elforgathatja a vízjelet a beállításával`setRotation` ingatlan a`Shape` tárgy. A pozitív értékek az óramutató járásával megegyező, a negatív értékek pedig az óramutató járásával ellentétes irányba forgatják el a vízjelet.
+ Igen, elforgathatja a vízjelet a beállításával`setRotation` ingatlan a`Shape` objektum. A pozitív értékek az óramutató járásával megegyező, a negatív értékek pedig az óramutató járásával ellentétes irányba forgatják el a vízjelet.
 
 ### Hogyan lehet a vízjelet félig átlátszóvá tenni?
 
- A vízjel félig átlátszóvá tételéhez állítsa be a`setSemitransparent`tulajdonát`true` ban,-ben`TextWatermarkOptions`.
+ A vízjel félig átlátszóvá tételéhez állítsa be a`setSemitransparent`tulajdonát`true` a`TextWatermarkOptions`.
 
 ### Hozzáadhatok vízjelet a dokumentum bizonyos részeihez?
 

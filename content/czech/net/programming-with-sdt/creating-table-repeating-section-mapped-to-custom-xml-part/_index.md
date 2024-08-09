@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu si projdeme procesem vytváření tabulky s opakující se částí, která je mapována na vlastní XML část pomocí Aspose.Words for .NET. To je užitečné zejména pro dynamické generování dokumentů na základě strukturovaných dat.
 
@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Krok 4: Vytvořte opakující se oddíl
 
- Vytvořit`StructuredDocumentTag` (SDT) pro opakující se sekci a namapujte ji na data XML:
+ Vytvořte a`StructuredDocumentTag` (SDT) pro opakující se sekci a namapujte ji na data XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

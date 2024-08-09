@@ -9,7 +9,7 @@ url: /sv/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## Introduktion
 
-Hej där, dokumentmästare! Har du någonsin funnit dig själv i koden och försökt ta reda på hur man infogar ett Word-dokument i ett annat sömlöst? Var inte rädd, för idag dyker vi in i Aspose.Words-världen för .NET för att göra den uppgiften till en lek. Vi går igenom en detaljerad, steg-för-steg-guide om hur du använder detta kraftfulla bibliotek för att infoga dokument vid specifika punkter under en sök- och ersättningsoperation. Är du redo att bli en Aspose.Words-guide? Låt oss börja!
+Hej där, dokumentmästare! Har du någonsin funnit dig själv i koden och försökt ta reda på hur man infogar ett Word-dokument i ett annat sömlöst? Var inte rädd, för idag dyker vi in i Aspose.Words-världen för .NET för att göra den uppgiften till en lek. Vi går igenom en detaljerad, steg-för-steg-guide om hur du använder detta kraftfulla bibliotek för att infoga dokument vid specifika punkter under en sök- och ersättningsoperation. Är du redo att bli en Aspose.Words-guide? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -43,7 +43,7 @@ Först måste vi ange katalogen där våra dokument lagras. Det här är som att
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din katalog. Det är här dina dokument kommer att leva och andas.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din katalog. Det är här dina dokument kommer att leva och andas.
 
 ## Steg 2: Ladda huvuddokumentet
 
@@ -164,4 +164,4 @@ Ja, du kan modifiera återuppringningshanteraren för att hantera flera infognin
 Du kan få stöd genom att besöka[Aspose.Words forum](https://forum.aspose.com/c/words/8).
 
 ### Kan jag behålla formateringen av det infogade dokumentet?
- Ja den`NodeImporter` class låter dig ange hur formatering ska hanteras när du importerar noder från ett dokument till ett annat.
+ Ja, den`NodeImporter` class låter dig ange hur formatering ska hanteras när du importerar noder från ett dokument till ett annat.

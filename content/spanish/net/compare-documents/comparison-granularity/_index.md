@@ -95,7 +95,7 @@ R: Para usar la granularidad de comparación en Aspose.Words para .NET, siga est
 2. Agregue los ensamblajes necesarios a su proyecto haciendo referencia a Aspose.Words.
 3.  Cree los documentos que desee comparar utilizando el`DocumentBuilder` clase.
 4.  Configure las opciones de comparación creando un`CompareOptions` objeto y establecer el`Granularity` propiedad al nivel deseado (por ejemplo,`Granularity.CharLevel` para comparación a nivel de personaje).
-5.  Utilizar el`Compare`método en un documento, pasando el otro documento y el`CompareOptions` objeto como parámetros. Este método comparará los documentos según la granularidad especificada y guardará los cambios en el primer documento.
+5.  Utilice el`Compare`método en un documento, pasando el otro documento y el`CompareOptions` objeto como parámetros. Este método comparará los documentos según la granularidad especificada y guardará los cambios en el primer documento.
 
 #### P: ¿Cuáles son los niveles disponibles de granularidad de comparación en Aspose.Words para .NET?
 

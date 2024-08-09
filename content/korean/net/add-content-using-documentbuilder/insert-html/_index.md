@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-좋아요, 이것을 단계별로 분석해 보겠습니다. 준비가 된? 시작하자!
+좋아요, 이것을 단계별로 분석해 보겠습니다. 준비가 된? 시작해 봅시다!
 
 ## 1단계: 문서 디렉토리 설정
 
@@ -82,7 +82,7 @@ builder.InsertHtml(
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-그리고 거기에 있습니다! 방금 Aspose.Words for .NET을 사용하여 Word 문서에 HTML을 삽입했습니다. 하이 파이브!
+그리고 거기에 있습니다! 방금 Aspose.Words for .NET을 사용하여 Word 문서에 HTML을 삽입했습니다. 하이파이브!
 
 ## 결론
 
@@ -104,7 +104,7 @@ Word 문서에 HTML을 삽입하는 것이 이보다 쉬웠던 적은 없었습�
 예, HTML이 삽입되면 Aspose.Words for .NET에서 제공하는 다양한 방법을 사용하여 문서를 추가로 조작할 수 있습니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?  
- 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
+ 다음으로 시작할 수 있습니다.[무료 평가판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
 
 ### 더 많은 튜토리얼과 예제는 어디서 찾을 수 있나요?  
  그만큼[선적 서류 비치](https://reference.aspose.com/words/net/)그리고[지원 포럼](https://forum.aspose.com/c/words/8)자세한 가이드와 커뮤니티 지원을 시작하기에 좋은 곳입니다.

@@ -14,7 +14,7 @@ tomto podrobném průvodci prozkoumáme, jak používat pole v Aspose.Words pro 
 
 ## Předpoklady
 
- Než začnete, ujistěte se, že máte nainstalovaný Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než začnete, ujistěte se, že máte nainstalovaný Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Základní slučování polí
 
@@ -56,7 +56,7 @@ doc.getMailMerge().execute(dataTable);
 
 ## Práce s obrázky
 
-Obrázky můžete sloučit do svých dokumentů. Zde je příklad sloučení obrázků z databáze do dokumentu:
+Obrázky můžete sloučit do dokumentů. Zde je příklad sloučení obrázků z databáze do dokumentu:
 
 ```java
 Document doc = new Document("ImageMergeTemplate.docx");
@@ -115,7 +115,7 @@ Podmíněná pole v Aspose.Words pro Java umožňují vytvářet dynamické doku
 
 ### Jak mohu získat podporu nebo vyhledat pomoc s Aspose.Words for Java?
 
- Pokud potřebujete pomoc, máte otázky nebo se při používání Aspose.Words pro Java setkáte s problémy, můžete navštívit fórum Aspose.Words, kde najdete podporu komunity a diskuse:[Fórum Aspose.Words](https://forum.aspose.com/c/words).
+ Pokud potřebujete pomoc, máte otázky nebo se při používání Aspose.Words pro Java setkáte s problémy, můžete navštívit fórum Aspose.Words, kde získáte podporu komunity a diskuse:[Fórum Aspose.Words](https://forum.aspose.com/c/words).
 
 ### Je Aspose.Words for Java kompatibilní s různými Java IDE?
 

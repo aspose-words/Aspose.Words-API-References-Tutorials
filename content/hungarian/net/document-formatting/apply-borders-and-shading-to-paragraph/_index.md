@@ -9,7 +9,7 @@ url: /hu/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Bevezetés
 
-Szia! Gondolkozott már azon, hogyan lehet Word-dokumentumait feldobni néhány díszes szegéllyel és árnyékolással? Nos, jó helyen jársz! Ma az Aspose.Words for .NET világában merülünk el, hogy feldobjuk bekezdéseinket. Képzelje el, hogy dokumentuma néhány sornyi kóddal olyan elegánsnak tűnik, mint egy professzionális tervező munkája. Készen áll az indulásra? Gyerünk!
+Szia! Gondolkozott már azon, hogyan lehet Word-dokumentumait feldobni néhány díszes szegéllyel és árnyékolással? Nos, jó helyen jársz! Ma az Aspose.Words for .NET világában merülünk el, hogy feldobjuk bekezdéseinket. Képzelje el, hogy dokumentuma néhány sornyi kóddal olyan elegánsnak tűnik, mint egy professzionális tervező munkája. Készen áll az indulásra? Menjünk!
 
 ## Előfeltételek
 
@@ -18,7 +18,7 @@ Mielőtt feltűrjük az ingujjunkat és belemerülünk a kódolásba, győződj�
 -  Aspose.Words for .NET: Telepíteni kell ezt a könyvtárat. Letöltheti a[Aspose honlapja](https://releases.aspose.com/words/net/).
 - Fejlesztési környezet: Visual Studio vagy bármely más IDE, amely támogatja a .NET-et.
 - Alapvető C# ismerete: éppen elég ahhoz, hogy megértse és módosítsa a kódrészleteket.
-- Érvényes licenc: vagy a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) vagy egy től vásárolt[Aspose](https://purchase.aspose.com/buy).
+- Érvényes engedély: vagy a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) vagy egy től vásárolt[Aspose](https://purchase.aspose.com/buy).
 
 ## Névterek importálása
 
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Most bontsuk le a folyamatot falatnyi lépésekre. Minden lépéshez tartozik egy cím és egy részletes magyarázat. Kész? Gyerünk!
+Most bontsuk le a folyamatot falatnyi lépésekre. Minden lépéshez tartozik egy cím és egy részletes magyarázat. Kész? Menjünk!
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
 
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
 
- Ezután létre kell hoznunk egy új dokumentumot, és a`DocumentBuilder` tárgy. A`DocumentBuilder` a varázspálcánk, amely lehetővé teszi a dokumentum kezelését.
+ Ezután létre kell hoznunk egy új dokumentumot, és a`DocumentBuilder` objektum. A`DocumentBuilder` a varázspálcánk, amely lehetővé teszi a dokumentum kezelését.
 
 ```csharp
 Document doc = new Document();
@@ -112,8 +112,8 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ### Használhatok különböző vonalstílusokat minden szegélyhez?  
  Teljesen! Az Aspose.Words for .NET lehetővé teszi az egyes szegélyek egyéni testreszabását. Csak állítsd be a`LineStyle` minden szegélytípushoz az útmutatóban látható módon.
 
-### Milyen más árnyékoló textúrák állnak rendelkezésre?  
- Számos textúra használható, például tömör, vízszintes csík, függőleges csík stb. Ellenőrizd a[Aspose dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
+### Milyen egyéb árnyékoló textúrák állnak rendelkezésre?  
+ Számos textúra használható, például tömör, vízszintes csík, függőleges csík stb. Ellenőrizze a[Aspose dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
 
 ### Hogyan tudom megváltoztatni a keret színét?  
  A szegély színét a gombbal állíthatja be`Color` ingatlan minden határhoz. Például,`borders[BorderType.Left].Color = Color.Red;`.
@@ -122,4 +122,4 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
  Igen, szegélyeket és árnyékolást alkalmazhat adott szövegsorozatokhoz a`Run` objektum a`DocumentBuilder`.
 
 ### Automatizálhatom ezt a folyamatot több bekezdésnél?  
-Egyértelműen! Végigpörgetheti a bekezdéseket, és programozottan alkalmazhatja ugyanazokat a szegélyeket és árnyékolási beállításokat.
+Határozottan! Végigpörgetheti a bekezdéseket, és programozottan alkalmazhatja ugyanazokat a szegélyeket és árnyékolási beállításokat.

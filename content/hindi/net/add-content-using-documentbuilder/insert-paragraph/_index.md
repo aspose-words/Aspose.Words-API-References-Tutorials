@@ -56,7 +56,7 @@ paragraphFormat.KeepTogether = true;
 
 ## चरण 3: पैराग्राफ़ डालें
 
- अब, का उपयोग करके अपनी इच्छित सामग्री जोड़ें`WriteLn` उसकि विधि`DocumentBuilder`.
+ अब, का उपयोग करके अपनी इच्छित सामग्री जोड़ें`WriteLn` की विधि`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```

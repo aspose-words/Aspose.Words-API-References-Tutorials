@@ -62,7 +62,7 @@ Agora, vamos configurar as opções de salvamento para especificar que os marcad
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- Definindo`SavePictureBullet` para`false`, você instrui o Aspose.Words a não salvar marcadores de imagem no documento de saída.
+ Ao definir`SavePictureBullet` para`false`, você instrui o Aspose.Words a não salvar marcadores de imagem no documento de saída.
 
 ## Etapa 4: salve o documento
 

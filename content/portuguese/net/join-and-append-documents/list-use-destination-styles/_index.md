@@ -82,10 +82,10 @@ Aí está! Mesclar documentos sem perder a cabeça com problemas de formatação
 Aspose.Words for .NET é uma biblioteca poderosa para trabalhar programaticamente com documentos do Word. Ele permite criar, modificar e converter documentos em vários formatos.
 
 ### Como instalo o Aspose.Words para .NET?
- Você pode baixá-lo no[local na rede Internet](https://releases.aspose.com/words/net/) e siga as instruções de instalação no[documentação](https://reference.aspose.com/words/net/).
+ Você pode baixá-lo no[site](https://releases.aspose.com/words/net/) e siga as instruções de instalação no[documentação](https://reference.aspose.com/words/net/).
 
 ### Posso usar o Aspose.Words gratuitamente?
- Aspose.Words oferece um[teste grátis](https://releases.aspose.com/) com recursos limitados. Para acesso total, você precisará adquirir uma licença[aqui](https://purchase.aspose.com/buy).
+ Aspose.Words oferece um[teste gratuito](https://releases.aspose.com/) com recursos limitados. Para acesso total, você precisará adquirir uma licença[aqui](https://purchase.aspose.com/buy).
 
 ### O que são ImportFormatOptions?
  ImportFormatOptions permite especificar como a formatação é tratada ao importar conteúdo de um documento para outro. Por exemplo,`KeepSourceNumbering` garante que a numeração da lista do documento de origem seja preservada.

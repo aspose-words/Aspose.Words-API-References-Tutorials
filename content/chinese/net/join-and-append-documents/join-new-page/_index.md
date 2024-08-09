@@ -48,7 +48,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 步骤 3：将章节开始设置为新页
 
-将源文档中第一节的节开头设置为在新页面上开始：
+将源文档中第一节的节开头设置为从新页面开始：
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

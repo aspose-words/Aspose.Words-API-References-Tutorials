@@ -15,7 +15,7 @@ Har du någonsin undrat hur du gör dina Word-dokument mer professionella och vi
 
 Innan vi börjar, se till att du har följande:
 
-1.  Aspose.Words för .NET: Du kan ladda ner det från[Nedladdningslänk](https://releases.aspose.com/words/net/).
+1.  Aspose.Words för .NET: Du kan ladda ner det från[Ladda ner länk](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Visual Studio eller någon annan IDE som stöder .NET-utveckling.
 3. Grundläggande kunskaper i C#: Förståelse för grundläggande programmeringskoncept och syntax i C#.
 4.  Din dokumentkatalog: Se till att du har en utsedd katalog för att spara dina dokument. Vi kommer att hänvisa till detta som`YOUR DOCUMENT DIRECTORY`.

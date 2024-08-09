@@ -176,4 +176,4 @@ Per rimuovere la protezione tramite password da un documento protetto da passwor
 
 ### Qual è il livello di compressione predefinito quando si salva un documento in formato OOXML?
 
- Il livello di compressione predefinito quando si salva un documento in formato OOXML utilizzando Aspose.Words per Java è`NORMAL` . È possibile modificare il livello di compressione su`SUPER_FAST` O`MAXIMUM` come necessario.
+ Il livello di compressione predefinito quando si salva un documento in formato OOXML utilizzando Aspose.Words per Java è`NORMAL` . È possibile modificare il livello di compressione su`SUPER_FAST` O`MAXIMUM` secondo necessità.

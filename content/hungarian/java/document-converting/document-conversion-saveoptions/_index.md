@@ -65,7 +65,7 @@ doc.save("output.pdf", pdfSaveOptions);
 
 Az Aspose.Words for Java a kimeneti formátumok széles skáláját támogatja a dokumentumok konvertálásához. A népszerű formátumok közé tartozik a PDF, DOCX, HTML, RTF és még sok más. Kiválaszthatja az igényeinek leginkább megfelelő formátumot.
 
-## Haladó beállítások
+## Speciális beállítások
 
 A fejlettebb dokumentum-átalakítási feladatokhoz az Aspose.Words további lehetőségeket és szolgáltatásokat kínál. Fedezze fel a dokumentációt, hogy többet megtudjon a vízjelezésről, a dokumentumok egyesítéséről és még sok másról.
 
@@ -77,7 +77,7 @@ Ebben az átfogó útmutatóban az Aspose.Words for Java használatával törté
 
 ### Hogyan telepíthetem az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java telepítése egyszerű. Meglátogatni a[letöltési oldal](https://releases.aspose.com/words/java/)és kövesse a fejlesztői környezet telepítési utasításait.
+ Az Aspose.Words for Java telepítése egyszerű. Látogassa meg a[letöltési oldal](https://releases.aspose.com/words/java/)és kövesse a fejlesztői környezet telepítési utasításait.
 
 ### Mik azok a SaveOptions az Aspose.Words-ben?
 

@@ -8,7 +8,7 @@ weight: 11
 url: /hu/java/table-processing/working-with-document-lists/
 ---
 
-Készen állsz, hogy belemerülj a Java dokumentumkezelés világába az Aspose.Words segítségével? Ebben az átfogó útmutatóban megvizsgáljuk a dokumentumlisták Aspose.Words for Java használatával történő munkavégzés bonyolultságát. Lépésről lépésre útmutatásokat és forráskód-példákat adunk, amelyek segítenek kihasználni ennek a sokoldalú Java API-nak a teljes erejét. Kezdjük el!
+Készen állsz, hogy belemerülj a Java dokumentumkezelés világába az Aspose.Words segítségével? Ebben az átfogó útmutatóban megvizsgáljuk a dokumentumlisták Aspose.Words for Java használatával történő munkavégzés bonyolultságát. Lépésről lépésre útmutatásokat és forráskód-példákat adunk, amelyek segítenek kihasználni ennek a sokoldalú Java API-nak a teljes erejét. Kezdjük is!
 
 ## Bevezetés
 
@@ -116,7 +116,7 @@ public class ExtractListItemsExample {
 ## Gyakran Ismételt Kérdések (GYIK)
 
 ### Hogyan adhatok felsoroláspontokat a dokumentumlistához?
- Ha felsorolásjeleket szeretne hozzáadni egy dokumentumlistához, használja a megfelelő Listtemplate-et a lista létrehozásakor. Például használja`ListTemplate.BULLET_DEFAULT` ahelyett`ListTemplate.NUMBER_DEFAULT`.
+ Ha felsorolásjeleket szeretne hozzáadni egy dokumentumlistához, használja a megfelelő Listtemplate-et a lista létrehozásakor. Például használja`ListTemplate.BULLET_DEFAULT` helyett`ListTemplate.NUMBER_DEFAULT`.
 
 ### Módosíthatom a listaelemek formázását?
 Igen, testreszabhatja a listaelemek formázását, beleértve a betűtípust, méretet, színt és egyebeket az Aspose.Words for Java formázási funkcióival.

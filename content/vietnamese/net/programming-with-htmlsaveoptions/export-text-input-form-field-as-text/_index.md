@@ -106,7 +106,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã xuất thành công trường biểu mẫu nhập văn bản dưới dạng văn bản thuần túy bằng Aspose.Words cho .NET. Hướng dẫn này lẽ ra phải cung cấp cho bạn cách tiếp cận rõ ràng, từng bước để đạt được nhiệm vụ này. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm các tùy chọn và cài đặt khác nhau để xem bạn có thể làm gì khác với Aspose.Words.
+Và bạn có nó! Bạn đã xuất thành công trường biểu mẫu nhập văn bản dưới dạng văn bản thuần túy bằng Aspose.Words cho .NET. Hướng dẫn này lẽ ra phải cung cấp cho bạn cách tiếp cận rõ ràng, từng bước để đạt được nhiệm vụ này. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm các tùy chọn và cài đặt khác nhau để xem bạn có thể làm gì khác với Aspose.Words.
 
 ## Câu hỏi thường gặp
 
@@ -124,7 +124,7 @@ Và bạn có nó rồi đấy! Bạn đã xuất thành công trường biểu 
 
 ### Tôi có thể tùy chỉnh HTML đã xuất không?
 
- Tuyệt đối! Aspose.Words cung cấp nhiều tùy chọn khác nhau để tùy chỉnh đầu ra HTML. Tham khảo đến[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
+ Tuyệt đối! Aspose.Words cung cấp nhiều tùy chọn khác nhau để tùy chỉnh đầu ra HTML. Tham khảo[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
 
 ### Aspose.Words có tương thích với .NET Core không?
 

@@ -89,7 +89,7 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
  Ersetzen`"dataDir + "ClonedDocument.docx"` durch den tatsächlichen Pfad, in dem Sie Ihr Dokument speichern möchten. Diese Codezeile speichert Ihre Word-Datei, komplett mit dem geklonten Abschnitt.
 
-## Schritt für Schritt Anleitung
+## Schritt-für-Schritt-Anleitung
 
 Um Klarheit und Verständnis zu gewährleisten, wollen wir das Beispiel in eine detaillierte Schritt-für-Schritt-Anleitung aufschlüsseln.
 
@@ -160,4 +160,4 @@ Ja, Aspose.Words unterstützt verschiedene Word-Formate, darunter DOC, DOCX, RTF
 
 ### Wo finde ich weitere Ressourcen zu Aspose.Words?
 
- Weitere Informationen finden Sie unter[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder der[Hilfeforum](https://forum.aspose.com/c/words/8) für Hilfe und Diskussionen.
+ Weitere Informationen finden Sie unter[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder die[Support-Forum](https://forum.aspose.com/c/words/8) für Hilfe und Diskussionen.

@@ -35,7 +35,7 @@ Aspose.Words für Java bietet umfangreiche Optionen zum Anpassen des Dokumentver
 
 ## Formatierung ignorieren
 
- Um Unterschiede in der Formatierung zu ignorieren, verwenden Sie die`setIgnoreFormatting` Möglichkeit.
+ Um Unterschiede in der Formatierung zu ignorieren, verwenden Sie die`setIgnoreFormatting` Option.
 
 ```java
 CompareOptions options = new CompareOptions();
@@ -45,7 +45,7 @@ docA.compare(docB, "user", new Date(), options);
 
 ## Kopf- und Fußzeilen ignorieren
 
- Um Kopf- und Fußzeilen vom Vergleich auszuschließen, setzen Sie die`setIgnoreHeadersAndFooters` Möglichkeit.
+ Um Kopf- und Fußzeilen vom Vergleich auszuschließen, setzen Sie die`setIgnoreHeadersAndFooters` Option.
 
 ```java
 CompareOptions options = new CompareOptions();

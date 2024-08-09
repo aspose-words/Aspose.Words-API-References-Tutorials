@@ -9,7 +9,7 @@ url: /nl/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 ## Invoering
 
-Bent u ooit verbaasd geweest over die vreemde, onzichtbare controletekens in uw Word-documenten? Het zijn net kleine, verborgen gremlins die de opmaak en functionaliteit kunnen verstoren. Gelukkig biedt Aspose.Words voor .NET een handige functie om deze verouderde stuurtekens intact te houden bij het opslaan van documenten. In deze zelfstudie gaan we dieper in op het beheren van deze controletekens met Aspose.Words voor .NET. We leggen het stap voor stap uit, zodat u onderweg elk detail begrijpt. klaar om te beginnen? Laten we erin duiken!
+Bent u ooit verbaasd geweest over die vreemde, onzichtbare controletekens in uw Word-documenten? Het zijn net kleine, verborgen gremlins die de opmaak en functionaliteit kunnen verstoren. Gelukkig biedt Aspose.Words voor .NET een handige functie om deze verouderde stuurtekens intact te houden bij het opslaan van documenten. In deze zelfstudie gaan we dieper in op het beheren van deze controletekens met Aspose.Words voor .NET. We leggen het stap voor stap uit, zodat u onderweg elk detail begrijpt. Klaar om aan de slag te gaan? Laten we erin duiken!
 
 ## Vereisten
 
@@ -56,7 +56,7 @@ Vervolgens laadt u het Word-document dat de oude besturingstekens bevat.
 
 Laten we nu de opslagopties configureren om de oude stuurtekens intact te houden.
 
-1.  Creëer opslagopties: initialiseer een exemplaar van`OoxmlSaveOptions` en stel de`KeepLegacyControlChars`eigendom aan`true`.
+1.  Creëer opslagopties: Initialiseer een exemplaar van`OoxmlSaveOptions` en stel de`KeepLegacyControlChars`eigendom aan`true`.
 
    ```csharp
    OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)

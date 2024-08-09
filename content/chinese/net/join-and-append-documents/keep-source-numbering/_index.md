@@ -78,7 +78,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ## 常见问题解答
 
 ### 我可以导入具有不同格式样式的文档吗？
-是的`NodeImporter`类支持导入具有多种格式样式的文档。
+是的，`NodeImporter`类支持导入具有多种格式样式的文档。
 
 ### 如果我的文档包含复杂的表格和图像怎么办？
 Aspose.Words for .NET 在导入操作期间处理表格和图像等复杂结构。

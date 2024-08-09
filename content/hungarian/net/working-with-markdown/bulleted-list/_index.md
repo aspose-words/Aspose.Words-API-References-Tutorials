@@ -2,95 +2,98 @@
 title: Felsorolásos lista
 linktitle: Felsorolásos lista
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan hozhat létre felsorolásjeles listát az Aspose.Words for .NET segítségével Lépésről lépésre.
+description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan hozhat létre és testreszabhat felsorolásjeles listákat Word-dokumentumokban az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/working-with-markdown/bulleted-list/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban bemutatjuk, hogyan hozhat létre felsorolásjeles listát az Aspose.Words for .NET segítségével. A felsorolásjeles lista az elemek felsorolására szolgál számozás nélkül.
+Készen áll, hogy belemerüljön az Aspose.Words for .NET világába? Ma végigvezetjük egy felsorolásos lista létrehozását a Word-dokumentumokban. Függetlenül attól, hogy ötleteket rendszerez, elemeket listáz, vagy csak egy kis szerkezetet ad a dokumentumhoz, a felsorolásjeles listák rendkívül hasznosak. Szóval, kezdjük!
 
-## 1. lépés: Dokumentumgenerátor használata
+## Előfeltételek
 
-Először egy dokumentumgenerátort fogunk használni, hogy tartalmat adjunk a dokumentumunkhoz.
+Mielőtt belevágnánk a kódolási mókába, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
+
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha még nincs meg, megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: AC# fejlesztői környezet, például a Visual Studio.
+3. Alapvető C# ismeretek: A C# programozás alapvető ismerete segít a követésében.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket. Ez olyan, mintha kódunk zökkenőmentes működéséhez szabná a terepet.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Most bontsuk le a folyamatot egyszerű, kezelhető lépésekre.
+
+## 1. lépés: Hozzon létre egy új dokumentumot
+
+Rendben, kezdjük egy új dokumentum létrehozásával. Itt fog megtörténni minden varázslat.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. lépés: Alapértelmezett felsorolásjeles lista alkalmazása
+## 2. lépés: Alkalmazza a felsorolásjellista formátumot
 
- Alkalmazhatunk egy alapértelmezett felsorolásjeles listát a dokumentumkészítő segítségével`ApplyBulletDefault` módszer.
+Ezután egy felsorolás formátumot alkalmazunk. Ez jelzi a dokumentumnak, hogy egy felsorolásjeles listát fogunk indítani.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## 3. lépés: A listajel formátum testreszabása
+## 3. lépés: A felsoroláslista testreszabása
 
- Testreszabhatjuk a felsorolás formátumát a tulajdonságok elérésével`ListFormat.List.ListLevels[0]`. Ebben a példában a "-" kötőjelet használjuk felsorolásjelként.
+Itt ízlésünk szerint testre szabjuk a felsoroláslistát. Ebben a példában egy kötőjelet (-) használunk pontként.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## 4. lépés: Elemek hozzáadása a listához
+## 4. lépés: Listaelemek hozzáadása
 
- Most hozzáadhatunk elemeket a felsorolt listához a dokumentumkészítő segítségével`Writeln` módszer.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## 5. lépés: A behúzás eltávolítása a listából
-
- Ha részlistát akarunk létrehozni, a behúzást a segítségével növelhetjük`ListFormat.ListIndent()` módszer. Ebben a példában egy allistát adunk a 2a és 2b elemekhez.
+Most adjunk hozzá néhány elemet a felsorolt listánkhoz. Itt kreatívkodhat, és bármilyen tartalmat hozzáadhat, amire szüksége van.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Példa forráskód a felsorolásjeles listához az Aspose.Words for .NET használatával
-
-
-```csharp
-// Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Gratulálok ! Most megtanulta, hogyan hozhat létre felsorolásjeles listát az Aspose.Words for .NET segítségével.
+## 5. lépés: Alelemek hozzáadása
 
-### GYIK
+A dolgok érdekesebbé tétele érdekében adjunk hozzá néhány altételt a „2. tétel” alatt. Ez segít az alpontok rendszerezésében.
 
-#### K: Hogyan készítsünk felsorolásjeles listát a Markdownban?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Visszatérés a fő lista szintjére
+```
 
-V: Ha a Markdown alkalmazásban felsorolásjeles listát szeretne létrehozni, kezdje az egyes listaelemeket egy felsorolásjellel (`-`, `*` , vagy`+`), szóköz követi.
+## Következtetés
 
-#### K: Beágyazhatok felsorolásjeles listákat a Markdownba?
+És megvan! Éppen most hozott létre egy felsorolásjeles listát egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez egy egyszerű folyamat, de hihetetlenül hatékony a dokumentumok rendszerezéséhez. Akár egyszerű listákat, akár összetett, egymásba ágyazott listákat hoz létre, az Aspose.Words mindent megtalál.
 
-V: Igen, lehetőség van felsorolásjeles listák egymásba ágyazására a Markdown alkalmazásban négy eltolási szóköz hozzáadásával minden beágyazott listaelem elé.
+Nyugodtan kísérletezzen a különböző listastílusokkal és -formátumokkal az igényeinek megfelelően. Boldog kódolást!
 
-#### K: Hogyan lehet testreszabni a felsorolásjeleket?
+## GYIK
 
-V: A szabványos Markdownban a felsorolásjelek előre meghatározottak. Egyes Markdown szerkesztők azonban lehetővé teszik, hogy testre szabhassa őket meghatározott bővítmények segítségével.
+### Használhatok különböző felsorolásjeleket a listában?
+    Igen, testreszabhatja a felsorolásjeleket a`NumberFormat` ingatlan.
 
-#### K: A Markdown felsorolásjeles listái támogatják a behúzást?
+### Hogyan adhatok hozzá több behúzási szintet?
+    Használja a`ListIndent` módszer további szintek hozzáadásához és`ListOutdent` hogy visszatérjen egy magasabb szintre.
 
-V: Igen, a Markdown felsorolásjeles listái támogatják a behúzást. Balra eltolást szóközök vagy tabulátorok használatával adhat hozzá.
+### Lehet-e keverni a felsorolásjeleket és a számlistákat?
+   Teljesen! A felsorolásjelek és a számformátumok között a gombbal válthat`ApplyNumberDefault`és`ApplyBulletDefault` mód.
 
-#### K: Hozzá lehet adni linkeket vagy szövegközi szöveget a listaelemekhez?
+### Stílusozhatom a szöveget a listaelemekben?
+    Igen, különböző stílusokat, betűtípusokat és formázásokat alkalmazhat a listaelemeken belüli szövegre a segítségével`Font` tulajdona a`DocumentBuilder`.
 
-V: Igen, a megfelelő Markdown szintaxis használatával linkeket vagy szövegközi szöveget is hozzáadhat a listaelemekhez.
+### Hogyan hozhatok létre többoszlopos felsorolásjeles listát?
+   A táblázat formázásával több oszlopból álló listákat hozhat létre, ahol minden cella külön felsorolásjeles listát tartalmaz.

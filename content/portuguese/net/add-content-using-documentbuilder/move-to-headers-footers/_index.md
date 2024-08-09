@@ -116,4 +116,4 @@ Aspose.Words for .NET é uma biblioteca que permite aos desenvolvedores criar, m
 Você pode usar tabelas, imagens e várias opções de formatação fornecidas pelo Aspose.Words para criar layouts complexos.
 
 ### Onde posso encontrar mais exemplos e tutoriais?
- Confira a[documentação](https://reference.aspose.com/words/net/) e a[Fórum de suporte](https://forum.aspose.com/c/words/8) para mais exemplos e apoio da comunidade.
+ Confira o[documentação](https://reference.aspose.com/words/net/) e o[fórum de suporte](https://forum.aspose.com/c/words/8) para mais exemplos e apoio da comunidade.

@@ -25,13 +25,13 @@ Az Aspose.Words használatával készült dokumentum-egyesítési oktatóanyagok
 ## Dokumentum egyesítése oktatóanyagok
 
 ### [A dokumentum-egyesítés használata](./using-document-merging/)
-Tanulja meg a Word dokumentumok zökkenőmentes egyesítését az Aspose.Words for Java segítségével. Hatékonyan kombinálhatja, formázhatja és kezelheti a konfliktusokat néhány lépésben. Kezd el most!
+Tanulja meg a Word dokumentumok zökkenőmentes egyesítését az Aspose.Words for Java segítségével. Hatékonyan kombinálhatja, formázhatja és kezelheti a konfliktusokat néhány lépésben. Kezdje el most!
 ### [Dokumentumok kombinálása és klónozása](./combining-cloning-documents/)
 Tanulja meg, hogyan kombinálhat és klónozhat könnyedén dokumentumokat Java nyelven az Aspose.Words használatával. Ez a lépésenkénti útmutató mindent tartalmaz, amit tudnia kell.
 ### [Dokumentumok összekapcsolása és csatolása](./joining-appending-documents/)
 Ismerje meg, hogyan kapcsolhat össze és fűzhet hozzá dokumentumokat az Aspose.Words for Java használatával. Lépésről lépésre útmutató kódpéldákkal a hatékony dokumentumkezelés érdekében.
 ### [Dokumentumok összehasonlítása a különbségekért](./comparing-documents-for-differences/)
-Tanulja meg, hogyan hasonlíthatja össze a dokumentumokat a különbségek szempontjából az Aspose.Words használatával Java nyelven. Lépésről lépésre bemutatott útmutatónk biztosítja a pontos dokumentumkezelést.
+Ismerje meg, hogyan hasonlíthatja össze a dokumentumokat a különbségek szempontjából az Aspose.Words használatával Java nyelven. Lépésről lépésre bemutatott útmutatónk biztosítja a pontos dokumentumkezelést.
 ### [Dokumentumok egyesítése a DocumentBuilderrel](./merging-documents-documentbuilder/)
 Ismerje meg, hogyan kezelheti a Word dokumentumokat az Aspose.Words for Java segítségével. Dokumentumokat hozhat létre, szerkeszthet, egyesíthet és konvertálhat programozottan Java nyelven.
 ### [Dokumentumfelosztás és kinyerés](./document-splitting-extraction/)

@@ -44,7 +44,7 @@ Låt oss börja med att definiera vägen:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument. Det är här ditt källdokument med VBA-projektet kommer att finnas och där det nya dokumentet kommer att sparas.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument. Det är här ditt källdokument med VBA-projektet kommer att finnas och där det nya dokumentet kommer att sparas.
 
 ## Steg 2: Ladda dokumentet med VBA Project
 
@@ -107,7 +107,7 @@ Den här raden sparar det nya dokumentet med namnet "WorkingWithVba.CloneVbaModu
 
 Och där har du det! Du har lyckats klona en VBA-modul från ett Word-dokument till ett annat med Aspose.Words för .NET. Detta kraftfulla bibliotek gör det otroligt enkelt att manipulera Word-dokument, och stegen vi har täckt är bara toppen av ett isberg. Oavsett om du automatiserar dokumentskapande, ändrar innehåll eller hanterar VBA-projekt, har Aspose.Words dig täckt.
 
- Om du är intresserad av att utforska fler funktioner, kolla in[API dokumentation](https://reference.aspose.com/words/net/) . Behövs hjälp? Besök[supportforum](https://forum.aspose.com/c/words/8) för assistens.
+ Om du är intresserad av att utforska fler funktioner, kolla in[API dokumentation](https://reference.aspose.com/words/net/) . Behöver du hjälp? Besök[supportforum](https://forum.aspose.com/c/words/8) för hjälp.
 
 Lycka till med kodningen, och kom ihåg – övning ger färdighet!
 

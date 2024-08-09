@@ -97,7 +97,7 @@ Dodawanie tekstowego znaku wodnego do dokumentów programu Word za pomocą Aspos
 
 ### Jak zmienić kolor znaku wodnego?
 
- Możesz zmienić kolor znaku wodnego, ustawiając opcję`Color` nieruchomość w`TextWatermarkOptions` do każdego`System.Drawing.Color` wartość.
+ Możesz zmienić kolor znaku wodnego, ustawiając opcję`Color` nieruchomość w`TextWatermarkOptions` do dowolnego`System.Drawing.Color` wartość.
 
 ### Czy można dodać wiele znaków wodnych do dokumentu?
 

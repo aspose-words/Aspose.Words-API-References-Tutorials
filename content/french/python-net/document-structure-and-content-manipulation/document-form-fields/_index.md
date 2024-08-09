@@ -203,7 +203,7 @@ De plus, vous pouvez définir la sélection par défaut pour la liste déroulant
 drop_down.text = "USA"
 ```
 
-Les listes déroulantes rationalisent le processus de sélection des options à partir d'un ensemble prédéfini, garantissant ainsi la cohérence et la précision de la capture des données.
+Les listes déroulantes rationalisent le processus de sélection des options à partir d'un ensemble prédéfini, garantissant ainsi la cohérence et l'exactitude de la capture des données.
 
 ### Sélecteurs de dates
 

@@ -99,7 +99,7 @@ masz to! Pomyślnie dodałeś język japoński jako język edycji do swojego dok
  Tak, potrzebujesz licencji do użytku komercyjnego. Możesz kupić jeden[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Jakie inne funkcje oferuje Aspose.Words dla .NET?
- Aspose.Words dla .NET oferuje szeroką gamę funkcji, w tym generowanie dokumentów, konwersję, manipulację i wiele innych. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words dla .NET oferuje szeroką gamę funkcji, w tym generowanie dokumentów, konwersję, manipulację i wiele innych. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### Czy mogę wypróbować Aspose.Words dla .NET przed zakupem?
  Absolutnie! Możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).

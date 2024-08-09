@@ -12,13 +12,13 @@ Pola tekstowe to zaawansowana funkcja dokumentów programu Word, która umożliw
 
 ## Wstęp
 
-Pola tekstowe zapewniają wszechstronny sposób prezentowania treści w dokumencie programu Word. Umożliwiają izolowanie tekstu i obrazów, kontrolowanie ich położenia i stosowanie formatowania specjalnie do treści w polu tekstowym. Ten przewodnik przeprowadzi Cię przez proces używania Aspose.Words dla Pythona do tworzenia i dostosowywania pól tekstowych w dokumentach.
+Pola tekstowe zapewniają wszechstronny sposób prezentowania treści w dokumencie programu Word. Pozwalają izolować tekst i obrazy, kontrolować ich położenie i stosować formatowanie specjalnie do treści w polu tekstowym. Ten przewodnik przeprowadzi Cię przez proces używania Aspose.Words dla Pythona do tworzenia i dostosowywania pól tekstowych w dokumentach.
 
 ## Warunki wstępne
 
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
 
-- Python zainstalowany w Twoim systemie.
+- Python zainstalowany w twoim systemie.
 - Podstawowa znajomość programowania w języku Python.
 - Aspose.Words — odniesienia do API języka Python.
 
@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Pozycjonowanie pól tekstowych
 
- Kontrolowanie położenia pól tekstowych ma kluczowe znaczenie dla osiągnięcia pożądanego układu. Pozycję można ustawić za pomocą`left`I`top` nieruchomości. Na przykład:
+ Kontrolowanie położenia pól tekstowych ma kluczowe znaczenie dla osiągnięcia pożądanego układu. Pozycję można ustawić za pomocą`left`I`top` właściwości. Na przykład:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ W tym przewodniku zbadaliśmy proces ulepszania treści wizualnych za pomocą p�
 
 ### Jak zmienić rozmiar pola tekstowego?
 
- Aby zmienić rozmiar pola tekstowego, możesz dostosować jego właściwości szerokości i wysokości za pomocą opcji`width`I`height` atrybuty.
+ Aby zmienić rozmiar pola tekstowego, możesz dostosować jego właściwości szerokości i wysokości za pomocą`width`I`height` atrybuty.
 
 ### Czy mogę obrócić pole tekstowe?
 

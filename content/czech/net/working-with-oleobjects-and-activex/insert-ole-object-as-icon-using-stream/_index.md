@@ -2,125 +2,98 @@
 title: Vložit OLE objekt jako ikonu pomocí proudu
 linktitle: Vložit OLE objekt jako ikonu pomocí proudu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se vložit objekt OLE jako ikonu pomocí streamu pomocí Aspose.Words for .NET.
+description: Naučte se, jak vložit objekt OLE jako ikonu pomocí streamu s Aspose.Words for .NET v tomto podrobném, podrobném tutoriálu.
 type: docs
 weight: 10
 url: /cs/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## Zavedení
 
-Zde je krok za krokem vysvětlující zdrojový kód C# níže, který ilustruje, jak vložit objekt OLE jako ikonu pomocí streamu s Aspose.Words for .NET.
+tomto tutoriálu se ponoříme do super skvělé funkce Aspose.Words pro .NET: vložení objektu OLE (Object Linking and Embedding) jako ikony pomocí streamu. Ať už vkládáte powerpointovou prezentaci, excelovou tabulku nebo jakýkoli jiný typ souboru, tato příručka vám přesně ukáže, jak na to. Jste připraveni začít? Jdeme na to!
 
-## Krok 1: Importujte potřebné reference
-Než začnete, ujistěte se, že jste do svého projektu naimportovali potřebné reference pro použití Aspose.Words for .NET. To zahrnuje import knihovny Aspose.Words a přidání požadovaných jmenných prostorů do zdrojového souboru.
+## Předpoklady
+
+Než se pustíme do kódu, budete potřebovat několik věcí:
+
+-  Aspose.Words for .NET: Pokud jste to ještě neudělali,[stáhnout](https://releases.aspose.com/words/net/) a nainstalujte Aspose.Words for .NET.
+- Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí C#.
+- Vstupní soubory: Soubor, který chcete vložit (např. prezentace PowerPoint) a obrázek ikony.
+
+## Importovat jmenné prostory
+
+Chcete-li začít, ujistěte se, že jste do projektu importovali potřebné jmenné prostory:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## Krok 2: Vytvořte nový dokument a generátor dokumentů
- V tomto kroku vytvoříme nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder` třída.
+Pojďme si proces rozebrat krok za krokem, aby bylo snadné jej sledovat.
+
+## Krok 1: Vytvořte nový dokument
+
+Nejprve vytvoříme nový dokument a tvůrce dokumentů pro práci s ním.
 
 ```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Vložte objekt OLE jako ikonu ze streamu
- Použijte Tvůrce dokumentů`InsertOleObjectAsIcon` metoda pro vložení objektu OLE jako ikony z proudu do dokumentu. Zadejte datový proud, typ objektu, cestu k ikoně a název vloženého objektu.
+ Myslete na to`Document` jako vaše prázdné plátno a`DocumentBuilder` jako váš štětec. Nastavujeme naše nástroje, abychom mohli začít vytvářet naše mistrovské dílo.
+
+## Krok 2: Připravte stream
+
+Dále musíme připravit paměťový stream, který obsahuje soubor, který chceme vložit. V tomto příkladu vložíme prezentaci v PowerPointu.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+Tento krok je jako nakládání barvy na štětec. Připravujeme náš soubor k vložení.
+
+## Krok 3: Vložte objekt OLE jako ikonu
+
+Nyní použijeme tvůrce dokumentů k vložení objektu OLE do dokumentu. Zadáme datový proud souboru, ProgID pro typ souboru (v tomto případě "Balík"), cestu k obrázku ikony a štítek pro vložený soubor.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
+
+Tady se děje kouzlo! Vkládáme náš soubor a zobrazujeme jej jako ikonu v dokumentu.
 
 ## Krok 4: Uložte dokument
- Použijte dokument`Save` způsob uložení dokumentu do souboru.
+
+Nakonec dokument uložíme na zadanou cestu.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### Příklad zdrojového kódu pro vložení objektu OLE jako ikony pomocí streamu s Aspose.Words for .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-Toto je kompletní ukázka kódu pro vložení objektu OLE jako ikony pomocí streamu s Aspose.Words for .NET. Nezapomeňte importovat potřebné reference a postupujte podle výše popsaných kroků k integraci tohoto kódu do vašeho projektu.
+Tento krok je jako vložení hotového obrazu do rámu a jeho zavěšení na zeď. Váš dokument je nyní připraven k použití!
 
 ## Závěr
 
-Výše uvedený podrobný průvodce vysvětluje, jak vložit objekt OLE jako ikonu do dokumentu aplikace Word pomocí toku s Aspose.Words for .NET. Podle popsaných kroků budete moci integrovat tuto funkci do svého projektu. Nezapomeňte importovat potřebné reference, vytvořit nový dokument a generátor dokumentů, vložit objekt OLE jako ikonu ze streamu a poté dokument uložit. Jako výchozí bod použijte poskytnutý ukázkový kód a přizpůsobte jej svým potřebám.
+tady to máte! Úspěšně jste vložili objekt OLE jako ikonu do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná funkce vám může pomoci snadno vytvářet dynamické a interaktivní dokumenty. Ať už vkládáte prezentace, tabulky nebo jiné soubory, s Aspose.Words to bude hračka. Takže jděte do toho, vyzkoušejte to a uvidíte rozdíl, který to může udělat ve vašich dokumentech!
 
-### FAQ
+## FAQ
 
-#### Otázka: Jak importovat potřebné odkazy pro použití Aspose.Words pro .NET?
+### Mohu pomocí této metody vložit různé typy souborů?
+Ano, můžete vložit jakýkoli typ souboru podporovaný OLE, včetně Wordu, Excelu, PowerPointu a dalších.
 
-A. Chcete-li importovat potřebné reference, musíte provést následující kroky:
+### Potřebuji k používání Aspose.Words pro .NET speciální licenci?
+ Ano, Aspose.Words for .NET vyžaduje licenci. Můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) nebo koupit a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro testování.
 
- Přidejte následující`using` příkazy v horní části zdrojového souboru:
+### Mohu upravit ikonu použitou pro objekt OLE?
+ Absolutně! Pro ikonu můžete použít libovolný soubor obrázku zadáním její cesty v`InsertOleObjectAsIcon` metoda.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-Ujistěte se, že jste do projektu přidali knihovnu Aspose.Words.
+### Co se stane, pokud jsou cesty k souboru nebo ikoně nesprávné?
+Metoda vyvolá výjimku. Ujistěte se, že cesty k souborům jsou správné, abyste předešli chybám.
 
-#### Otázka: Jak vytvořit nový dokument a tvůrce dokumentů pomocí Aspose.Words for .NET?
-
-A. Chcete-li vytvořit nový dokument a generátor dokumentů, postupujte takto:
-
- Použijte`Document` třídy k vytvoření nového dokumentu:
-
-```csharp
-Document doc = new Document();
-```
- Použijte`DocumentBuilder` třídy k vytvoření tvůrce dokumentů přidruženého k dříve vytvořenému dokumentu:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### Otázka: Jak vložit objekt OLE jako ikonu ze streamu pomocí Aspose.Words for .NET?
-
-A. Chcete-li vložit objekt OLE jako ikonu ze streamu, postupujte takto:
-
- Použijte`InsertOleObjectAsIcon` metoda generátoru dokumentů pro vložení objektu OLE:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### Otázka: Jak uložit dokument do souboru?
-
-A.  Chcete-li dokument uložit do souboru, můžete použít`Save` metoda dokumentu určující cílovou cestu:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### Dotaz: Jak mohu vložit kód pro vložení objektu OLE jako ikonu z proudu do mého projektu?
-
-A. Chcete-li do projektu vložit kód pro vložení objektu OLE jako ikonu ze streamu, postupujte takto:
-- Importujte potřebné reference přidáním příslušných`using` prohlášení.
--  Vytvořte nový dokument a tvůrce dokumentů pomocí`Document`a`DocumentBuilder` třídy.
-- Použijte kód pro vložení objektu OLE jako ikonu ze streamu.
--  Uložte dokument pomocí`Save` metoda s příslušnou cílovou cestou.
-
-Podle těchto kroků budete moci úspěšně vložit objekt OLE jako ikonu ze streamu pomocí Aspose.Words for .NET. Ujistěte se, že postupujte podle pokynů a importujte potřebné reference, abyste získali požadované výsledky.
+### Je možné propojit vložený objekt místo jeho vložení?
+Ano, Aspose.Words umožňuje vkládat propojené objekty OLE, které odkazují na soubor, aniž by vkládaly jeho obsah.

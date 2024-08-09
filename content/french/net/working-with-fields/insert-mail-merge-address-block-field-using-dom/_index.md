@@ -87,7 +87,7 @@ field.NameAndAddressFormat = "Test3";
 field.LanguageId = "Test 4";
 ```
 
-## Étape 6 : mettre à jour le champ
+## Étape 6 : Mettre à jour le champ
 
 Après avoir configuré les propriétés du champ, nous devons mettre à jour le champ pour appliquer ces paramètres. Cela garantit que le champ reflète les dernières modifications.
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsingDOM.d
 
 ## Conclusion
 
-Et voila! Vous avez inséré avec succès un champ de bloc d’adresse de fusion et publipostage dans un document Word à l’aide d’Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation des documents Word par programmation, vous permettant ainsi d'économiser du temps et des efforts. Continuez à expérimenter d'autres fonctionnalités d'Aspose.Words pour libérer encore plus de potentiel dans vos tâches de traitement de documents.
+Et voilà ! Vous avez inséré avec succès un champ de bloc d’adresse de fusion et publipostage dans un document Word à l’aide d’Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation des documents Word par programmation, vous permettant ainsi d'économiser du temps et des efforts. Continuez à expérimenter d'autres fonctionnalités d'Aspose.Words pour libérer encore plus de potentiel dans vos tâches de traitement de documents.
 
 ## FAQ
 
@@ -122,4 +122,4 @@ Un bloc d'adresses de publipostage est un champ dans Word qui vous permet d'ins�
  Vous pouvez obtenir l'assistance de la communauté Aspose et de l'équipe technique[ici](https://forum.aspose.com/c/words/8).
 
 ### Puis-je automatiser d’autres aspects des documents Word avec Aspose.Words ?
-Absolument! Aspose.Words for .NET fournit un large éventail de fonctionnalités pour automatiser la génération, l'édition, la conversion de documents, etc. Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+Absolument! Aspose.Words for .NET fournit un large éventail de fonctionnalités pour automatiser la génération, l'édition, la conversion de documents, etc. Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.

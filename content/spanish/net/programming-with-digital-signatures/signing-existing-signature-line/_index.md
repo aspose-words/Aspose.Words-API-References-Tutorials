@@ -34,7 +34,7 @@ using Aspose.Words.DigitalSignatures;
 
 ## Paso 1: cargue su documento
 
-Lo primero es cargar el documento de Word que contiene la línea de firma. Este paso es crucial ya que sienta las bases de todo el proceso.
+Lo primero es cargar el documento de Word que contiene la línea de firma. Este paso es crucial ya que sienta las bases para todo el proceso.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

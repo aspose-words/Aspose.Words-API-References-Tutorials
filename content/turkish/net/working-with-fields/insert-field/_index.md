@@ -20,7 +20,7 @@ Konuya dalmadan önce ihtiyacımız olan her şeye sahip olduğumuzdan emin olal
 3. IDE: Visual Studio gibi entegre bir geliştirme ortamı.
 4.  Geçici Lisans: Bir tane alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
-Aspose.Words for .NET'i yüklediğinizden ve geliştirme ortamınızı kurduğunuzdan emin olun. Hazır? Başlayalım!
+Aspose.Words for .NET'i yüklediğinizden ve geliştirme ortamınızı kurduğunuzdan emin olun. Hazır? Hadi başlayalım!
 
 ## Ad Alanlarını İçe Aktar
 
@@ -80,7 +80,7 @@ Alanı ekledikten sonra belgemizi kaydetmemiz gerekiyor. İşte nasıl:
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-Ve bu kadar! Word belgenize başarıyla bir alan eklediniz.
+İşte bu kadar! Word belgenize başarıyla bir alan eklediniz.
 
 ## Çözüm
 
@@ -95,7 +95,7 @@ Kesinlikle! Aspose.Words, MERGEFIELD, IF, INCLUDETEXT ve daha fazlasını içere
  Alanları biçimlendirmek için alan anahtarlarını kullanabilirsiniz. Örneğin,`\* MERGEFORMAT` alana uygulanan biçimlendirmeyi korur.
 
 ### Aspose.Words for .NET, .NET Core ile uyumlu mu?  
-Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core ile uyumludur.
+Evet, Aspose.Words for .NET, hem .NET Framework hem de .NET Core ile uyumludur.
 
 ### Alanları toplu olarak ekleme işlemini otomatikleştirebilir miyim?  
 Evet, verileriniz arasında döngü yaparak ve alanları programlı olarak eklemek için DocumentBuilder'ı kullanarak alanların toplu olarak eklenmesini otomatikleştirebilirsiniz.

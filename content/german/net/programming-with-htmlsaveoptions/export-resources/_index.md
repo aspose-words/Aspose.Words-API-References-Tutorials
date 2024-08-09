@@ -87,7 +87,7 @@ Diese Codezeile speichert das Dokument zusammen mit den exportierten Ressourcen 
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich Ressourcen exportiert, während Sie ein Word-Dokument mit Aspose.Words für .NET als HTML gespeichert haben. Mit dieser leistungsstarken Bibliothek wird die programmgesteuerte Handhabung von Word-Dokumenten zum Kinderspiel. Egal, ob Sie an einer Webanwendung arbeiten oder nur Dokumente für die Offline-Verwendung konvertieren müssen, Aspose.Words bietet Ihnen alles.
+Und da haben Sie es! Sie haben erfolgreich Ressourcen exportiert, während Sie ein Word-Dokument mit Aspose.Words für .NET als HTML gespeichert haben. Mit dieser leistungsstarken Bibliothek wird die programmgesteuerte Handhabung von Word-Dokumenten zum Kinderspiel. Egal, ob Sie an einer Webanwendung arbeiten oder nur Dokumente für die Offline-Verwendung konvertieren müssen, Aspose.Words bietet alles.
 
 ## Häufig gestellte Fragen
 

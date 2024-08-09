@@ -2,88 +2,40 @@
 title: 接受修改
 linktitle: 接受修改
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 接受 Word 文件的修訂
+description: 使用 Aspose.Words for .NET 掌握文件修訂。學習毫不費力地追蹤、接受和拒絕變更。提升您的文件管理技能。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-revisions/accept-revisions/
 ---
+## 介紹
 
-在本教學中，我們將引導您使用 Aspose.Words for .NET 的接受修訂功能接受 Word 文件的修訂。請按照以下步驟了解原始程式碼並接受對文件的變更。
+您是否曾經發現自己陷入了文件修訂的迷宮中，努力追蹤多個貢獻者所做的每一項更改？透過 Aspose.Words for .NET，管理 Word 文件中的修訂變得輕而易舉。這個強大的程式庫允許開發人員輕鬆追蹤、接受和拒絕更改，確保您的文件保持井然有序且最新。在本教程中，我們將深入了解使用 Aspose.Words for .NET 處理文件修訂的逐步過程，從初始化文件到接受所有更改。
 
-## 步驟1：新增和編輯文檔內容
+## 先決條件
 
-在此範例中，我們將建立一個文件並新增內容。我們用幾個段落來說明變化和修訂。就是這樣：
+在我們開始之前，請確保您具備以下先決條件：
 
-```csharp
-//文檔目錄的路徑。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- Visual Studio 安裝在您的電腦上。
+- .NET框架（最好是最新版本）。
+-  Aspose.Words for .NET 函式庫。你可以下載它[這裡](https://releases.aspose.com/words/net/).
+- 對 C# 程式設計有基本了解。
 
-//將文字新增到第一個段落，然後再新增兩個段落。
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+現在，讓我們深入了解具體細節，看看如何使用 Aspose.Words for .NET 掌握文件修訂。
 
-## 第 2 步：追蹤評論並新增評論
+## 導入命名空間
 
-我們啟用修訂追蹤並新增修訂文件。就是這樣：
+首先，您需要匯入必要的命名空間才能使用 Aspose.Words。在程式碼檔案頂部新增以下 using 指令：
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-//該段落是修訂版，並且將設定相應的“IsInsertRevision”標誌。
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## 第 3 步：刪除段落並管理修訂
+讓我們將這個過程分解為可管理的步驟。每個步驟都會詳細解釋，以確保您理解程式碼的每個部分。
 
-我們刪除一個段落並檢查已儲存的修訂。就是這樣：
+## 步驟1：初始化文檔
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-//由於我們正在追蹤修訂，該段落仍然存在於文件中，將設定「IsDeleteRevision」標誌
-//並將在 Microsoft Word 中顯示為評論，直到我們接受或拒絕所有評論。
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## 第 4 步：接受更改
-
-我們接受對文檔的所有更改。就是這樣：
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## 第 5 步：停止追蹤評論
-
-我們將停止追蹤修訂，以便對文件的變更不再顯示為修訂。就是這樣：
-
-```csharp
-doc.StopTrackRevisions();
-```
-## 第 6 步：儲存文檔
-
-插入文字輸入表單欄位後，使用以下命令將文件儲存到所需位置`Save`方法。確保提供適當的文件路徑：
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### 使用 Aspose.Words for .NET 接受修訂的範例原始程式碼
-
-以下是使用 Aspose.Words for .NET 接受文件變更的完整原始碼：
-
+首先，我們需要建立一個新文件並添加一些段落。這將為追蹤修訂奠定基礎。
 
 ```csharp
 //文檔目錄的路徑。
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//我們有三個段落，其中沒有一個被註冊為任何類型的修訂
-//如果我們在追蹤修訂時新增/刪除文件中的任何內容，
-//它們將在文件中顯示並可以接受/拒絕。
+在此步驟中，我們建立了一個新文件並向其中添加了三個段落。這些段落將作為我們修訂追蹤的基線。
+
+## 第 2 步：開始追蹤修訂
+
+接下來，我們需要啟用修訂追蹤。這使我們能夠捕獲對文檔所做的任何更改。
+
+```csharp
+//開始追蹤修訂。
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+透過致電`StartTrackRevisions`，我們使文件能夠追蹤所有後續更改。作者姓名和當前日期作為參數傳遞。
+
+## 第 3 步：新增修訂
+
+現在已啟用修訂跟踪，讓我們添加一個新段落。此新增將被標記為修訂。
+
+```csharp
 //本段是修訂版，並將設定對應的「IsInsertRevision」標誌。
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+此處新增了一個新段落（「第 4 段」）。由於啟用了修訂跟踪，因此該段落被標記為修訂。
+
+## 第 4 步：刪除段落
+
+接下來，我們將刪除現有段落並觀察如何追蹤修訂。
+
+```csharp
 //取得文件的段落集合並刪除段落。
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-//由於我們正在追蹤修訂，該段落仍然存在於文件中，將設定“IsDeleteRevision”
-//並將在 Microsoft Word 中顯示為修訂版本，直到我們接受或拒絕所有修訂版本。
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+在此步驟中，刪除第三段。由於修訂跟踪，此刪除被記錄下來，並且該段落被標記為刪除，而不是立即從文件中刪除。
 
-//一旦我們接受更改，刪除修訂段落就會被刪除。
+## 第 5 步：接受所有修改
+
+最後，讓我們接受所有追蹤的修訂，鞏固文件中的變更。
+
+```csharp
+//接受所有修改。
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-//停止追蹤修訂會使該文字顯示為普通文字。
-//文件變更時不計算修訂版本。
+透過致電`AcceptAllRevisions`，我們確保所有變更（新增和刪除）均被接受並套用至文件。修訂不再被標記並整合到文件中。
+
+## 第 6 步：停止追蹤修訂
+
+### 禁用修訂追蹤
+
+最後，我們可以停用修訂追蹤以停止記錄進一步的變更。
+
+```csharp
+//停止追蹤修訂。
 doc.StopTrackRevisions();
+```
 
+此步驟會阻止文件追蹤任何新更改，並將所有後續編輯視為常規內容。
+
+## 步驟7：儲存文檔
+
+最後將修改後的文檔儲存到指定目錄。
+
+```csharp
 //儲存文檔。
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+透過儲存文檔，我們確保保留所有變更和接受的修訂。
+
 ## 結論
 
-在本教學中，我們學習如何使用 Aspose.Words for .NET 的接受修訂功能接受 Word 文件中的修訂。我們已按照以下步驟新增和編輯文件內容、追蹤修訂、刪除修訂的段落、接受所有變更以及停止追蹤修訂。現在，您可以使用 Aspose.Words for .NET 應用這些知識來有效管理您自己的 Word 文件中的修訂。
+管理文件修訂可能是一項艱鉅的任務，但使用 Aspose.Words for .NET，它變得簡單而有效率。透過遵循本指南中概述的步驟，您可以輕鬆追蹤、接受和拒絕 Word 文件中的更改，確保您的文件始終是最新且準確的。那麼，為什麼還要等呢？立即深入 Aspose.Words 的世界並簡化您的文件管理！
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：如何在 Aspose.Words for .NET 中啟用修訂追蹤？
+### 如何開始追蹤 Aspose.Words for .NET 中的修訂？
 
-#### 解決方案一：
+您可以透過呼叫開始追蹤修訂`StartTrackRevisions`文件物件上的方法並傳遞作者姓名和當前日期。
 
-答：要在 Aspose.Words for .NET 中啟用修訂跟踪，請使用`StartTrackRevisions`的方法`Document`對象並指定作者姓名和修訂追蹤的開始日期。
+### 我可以隨時停止追蹤修訂嗎？
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+是的，您可以透過呼叫停止追蹤修訂`StopTrackRevisions`文檔物件上的方法。
 
-#### 解決方案2：
+### 如何接受文件中的所有修訂？
 
-答：您還可以使用以下命令啟用修訂跟踪`Document`接受的構造函數`trackRevisions`和`author`參數。
+若要接受所有修訂，請使用`AcceptAllRevisions`文檔物件上的方法。
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### 我可以拒絕具體修改嗎？
 
-#### Q：如何使用 Aspose.Words for .NET 接受文件中的所有變更？
+是的，您可以透過導航到特定修訂並使用`Reject`方法。
 
-答：使用`AcceptAllRevisions`的方法`Document`反對接受對文件所做的所有更改。
+### 哪裡可以下載 Aspose.Words for .NET？
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### Q：如何儲存已接受修訂的修改文件？
-
-使用`Save`的方法`Document`物件保存已接受修訂的修改後的文件。請務必提供正確的檔案路徑。
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### Q：如何停止追蹤 Aspose.Words for .NET 中的修訂？
-
-答：使用`StopTrackRevisions`的方法`Document`反對停止追蹤修訂。
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### Q：如何使用 Aspose.Words for .NET 刪除文件中修改的段落？
-
-答：要刪除文件中修改的段落，您可以使用`Remove`段落收集方法。
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+您可以從以下位置下載 Aspose.Words for .NET[下載連結](https://releases.aspose.com/words/net/).

@@ -140,4 +140,4 @@ Aspose.Words for Java 提供灵活而强大的工具来合并和附加文档，�
 
 ### 如果我想链接/取消链接文档之间的页眉和页脚怎么办？
 
-您可以使用以下方式链接页眉和页脚`linkToPrevious(true)`或取消链接`linkToPrevious(false)`如所须。
+您可以使用以下方式链接页眉和页脚`linkToPrevious(true)`或取消链接`linkToPrevious(false)`根据需要。

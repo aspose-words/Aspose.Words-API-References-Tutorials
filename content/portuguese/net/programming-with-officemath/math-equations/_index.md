@@ -54,7 +54,7 @@ A seguir, precisamos obter o elemento OfficeMath do documento. O elemento Office
 OfficeMath officeMath = (OfficeMath)doc.GetChild(NodeType.OfficeMath, 0, true);
 ```
 
- Nesta etapa, estamos usando o`GetChild`método para recuperar o primeiro elemento OfficeMath do documento. Os parametros`NodeType.OfficeMath, 0, true` especifique que estamos procurando a primeira ocorrência de um nó OfficeMath.
+ Nesta etapa, estamos usando o`GetChild`método para recuperar o primeiro elemento OfficeMath do documento. Os parâmetros`NodeType.OfficeMath, 0, true` especifique que estamos procurando a primeira ocorrência de um nó OfficeMath.
 
 ## Passo 3: Configurar as Propriedades da Equação Matemática
 

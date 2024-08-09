@@ -73,7 +73,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
-設定することにより`IgnoreHeaderFooter`に`true`マージ処理中にヘッダーとフッターを無視するように Aspose.Words に指示します。
+設定により`IgnoreHeaderFooter`に`true`マージ処理中にヘッダーとフッターを無視するように Aspose.Words に指示します。
 
 ## ステップ4: ドキュメントを結合する
 
@@ -103,7 +103,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 これで完了です。Aspose.Words for .NET を使用して、ヘッダーとフッターを無視しながら 2 つの Word 文書を結合できました。この方法は、特定の文書セクションを維持することが重要なさまざまな文書管理タスクに便利です。
 
-Aspose.Words for .NETを使用すると、ドキュメント処理ワークフローを大幅に効率化できます。困ったときやさらに詳しい情報が必要なときは、いつでも[ドキュメンテーション](https://reference.aspose.com/words/net/).
+Aspose.Words for .NETを使用すると、ドキュメント処理ワークフローを大幅に効率化できます。困ったときやさらに詳しい情報が必要なときは、いつでも[ドキュメント](https://reference.aspose.com/words/net/).
 
 ## よくある質問
 
@@ -113,7 +113,7 @@ Aspose.Words for .NETを使用すると、ドキュメント処理ワークフ�
 
 ### ヘッダーとフッターを無視せずに保持することは可能ですか?
 
-もちろんです。`IgnoreHeaderFooter`に`false`の中に`ImportFormatOptions`.
+もちろんです。`IgnoreHeaderFooter`に`false`の`ImportFormatOptions`.
 
 ### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
 

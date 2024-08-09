@@ -2,19 +2,41 @@
 title: Określ poziom listy
 linktitle: Określ poziom listy
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak określić poziom listy w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak tworzyć wielopoziomowe listy numerowane i punktowane w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W zestawie instrukcja krok po kroku. Idealny dla programistów .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-list/specify-list-level/
 ---
+## Wstęp
 
-tym samouczku krok po kroku pokażemy, jak określić poziom listy w dokumencie programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+Hej, kolego koderze! Jeśli kiedykolwiek zmagałeś się z tworzeniem dynamicznych i wyrafinowanych list w dokumentach programu Word przy użyciu platformy .NET, czeka Cię nie lada gratka. Dzisiaj zanurzamy się w świat Aspose.Words dla .NET. W szczególności skupimy się na określeniu poziomów list. Potraktuj to jako ulepszenie swojej gry w dokumenty, umożliwiające łatwe tworzenie profesjonalnych, dopracowanych list. Pod koniec tego przewodnika będziesz miał jasną ścieżkę do tworzenia wielopoziomowych list numerowanych i punktowanych. Gotowy? Wskoczmy od razu!
 
- Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Warunki wstępne
 
-## Krok 1: Tworzenie dokumentu i generatora dokumentów
+Zanim zagłębimy się w szczegóły, upewnijmy się, że mamy wszystko, czego potrzebujemy. Oto krótka lista kontrolna:
 
-Najpierw utwórz nowy dokument i powiązany z nim generator dokumentów:
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: IDE takie jak Visual Studio ułatwi Ci życie.
+3. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
+4. Podstawowe zrozumienie języka C#: W tym samouczku założono, że znasz podstawowe programowanie w języku C#.
+
+Masz wszystko? Świetnie! Ubrudzmy sobie ręce.
+
+## Importuj przestrzenie nazw
+
+Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw. Otwórz projekt C# i dodaj następujące dyrektywy using:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+To przygotowuje grunt pod pracę z Aspose.Words w Twoim projekcie.
+
+## Krok 1: Konfigurowanie dokumentu i narzędzia DocumentBuider
+
+ Zacznijmy od utworzenia nowego dokumentu i pliku`DocumentBuilder` sprzeciwiać się pracy z nim.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,113 +44,83 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Tworzenie i stosowanie listy numerowanej
+## Krok 2: Tworzenie listy numerowanej
 
-Następnie utwórz listę numerowaną na podstawie jednego z szablonów list programu Microsoft Word i zastosuj ją do bieżącego akapitu w kreatorze dokumentów:
+ Teraz utworzymy listę numerowaną na podstawie jednego z szablonów list Microsoft Word i zastosujemy ją do`DocumentBuilder`'aktualny akapit.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## Krok 3: Specyfikacja na poziomie listy
+## Krok 3: Stosowanie wielu poziomów listy
 
- Użyj narzędzia do tworzenia dokumentów`ListLevelNumber` aby określić poziom listy i dodać tekst do akapitu:
+Aspose.Words umożliwia określenie do dziewięciu poziomów listy. Zastosujmy je wszystkie, aby zobaczyć, jak to działa.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-Powtórz te kroki, aby określić poziomy listy i dodać tekst na każdym poziomie.
+W tej pętli ustawiamy poziom listy dla każdego akapitu i piszemy wiersz tekstu wskazujący ten poziom.
 
-## Krok 4: Tworzenie i stosowanie listy wypunktowanej
+## Krok 4: Tworzenie listy wypunktowanej
 
-Możesz także utworzyć i zastosować listę punktowaną, korzystając z jednego z szablonów list programu Microsoft Word:
+Następnie zmieńmy biegi i utwórz listę punktowaną. Tym razem użyjemy innego szablonu listy.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## Krok 5: Dodawanie tekstu do poziomów listy wypunktowanej
+## Krok 5: Stosowanie wielu poziomów do listy wypunktowanej
 
- Użyj`ListLevelNumber` ponownie, aby określić poziom listy punktowanej i dodać tekst:
+Podobnie jak w przypadku listy numerowanej, do naszej listy punktowanej zastosujemy wiele poziomów.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-## Krok 6: Zatrzymaj formatowanie listy
+## Krok 6: Zatrzymywanie formatowania listy
 
- Aby zatrzymać formatowanie listy, ustaw`null` do`List`właściwość generatora dokumentów:
-
-```csharp
-builder. ListFormat. List = null;
-```
-
-## Krok 7: Zapisanie zmodyfikowanego dokumentu
-
-Zapisz zmodyfikowany dokument:
+Na koniec zobaczmy, jak możemy zatrzymać formatowanie listy, aby powrócić do normalnego tekstu.
 
 ```csharp
-builder.Document.Save(dataDir + "SpecifyListLevel.docx");
-```
-
-Więc ! Pomyślnie określiłeś poziom listy w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy, aby określić poziom listy
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Utwórz listę numerowaną w oparciu o jeden z szablonów list Microsoft Word
-// zastosuj go do bieżącego akapitu kreatora dokumentu.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
-
-// Na tej liście jest dziewięć poziomów, wypróbujmy je wszystkie.
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Utwórz listę punktowaną w oparciu o jeden z szablonów list programu Microsoft Word
-// zastosuj go do bieżącego akapitu kreatora dokumentu.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
-
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Jest to sposób na zatrzymanie formatowania listy.
 builder.ListFormat.List = null;
-
-builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
-            
 ```
 
-### Często zadawane pytania
+## Krok 7: Zapisywanie dokumentu
 
-#### P: Jak mogę określić poziom listy w Aspose.Words?
+Po całej tej ciężkiej pracy czas zapisać nasz dokument. Zapiszmy to pod znaczącą nazwą.
 
- O: Aby określić poziom listy w Aspose.Words, musisz utworzyć instancję`List` klasę i podaj jej listę numerowaną. Następnie możesz użyć`Paragraph.ListFormat.ListLevelNumber` Aby określić poziom każdego elementu listy. Możesz powiązać tę listę z sekcją dokumentu, aby elementy listy miały pożądany poziom.
+```csharp
+builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
+```
 
-#### P: Czy można zmienić format numeracji elementów listy w Aspose.Words?
+I tyle! Właśnie utworzyłeś dokument ze złożonymi strukturami list przy użyciu Aspose.Words dla .NET.
 
- O: Tak, możesz zmienić format numeracji elementów listy w Aspose.Words. The`ListLevel` class oferuje do tego kilka właściwości, takich jak`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`itp. Możesz użyć tych właściwości, aby ustawić format numeracji elementów listy, takich jak cyfry arabskie, cyfry rzymskie, litery itp.
+## Wniosek
 
-#### P: Czy mogę dodać dodatkowe poziomy do listy numerowanej w Aspose.Words?
+Tworzenie ustrukturyzowanych i wielopoziomowych list w dokumentach programu Word może znacznie zwiększyć czytelność i profesjonalizm. Dzięki Aspose.Words dla .NET możesz zautomatyzować ten proces, oszczędzając czas i zapewniając spójność. Mamy nadzieję, że ten przewodnik pomógł Ci zrozumieć, jak skutecznie określać poziomy listy. Eksperymentuj dalej i przekonaj się, jak potężne może być to narzędzie w przypadku Twoich potrzeb związanych z przetwarzaniem dokumentów.
 
- O: Tak, możliwe jest dodanie dodatkowych poziomów do listy numerowanej w Aspose.Words. The`ListLevel`class umożliwia ustawienie właściwości formatowania dla każdego poziomu listy. Możesz ustawić opcje takie jak przedrostek, przyrostek, wyrównanie, wcięcie itp. Umożliwia to tworzenie list o wielu poziomach hierarchii.
+## Często zadawane pytania
 
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która pozwala programowo tworzyć, edytować, konwertować i drukować dokumenty programu Word w języku C#.
 
+### Czy mogę używać Aspose.Words za darmo?
+Aspose.Words oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/) . Aby uzyskać pełną wersję, możesz sprawdzić opcje zakupu[Tutaj](https://purchase.aspose.com/buy).
+
+### Ile poziomów mogę określić na liście za pomocą Aspose.Words?
+Możesz określić do dziewięciu poziomów na liście za pomocą Aspose.Words.
+
+### Czy można łączyć listy numerowane i punktowane w jednym dokumencie?
+Tak, możesz mieszać różne typy list w jednym dokumencie, zmieniając szablon listy w razie potrzeby.
+
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+ Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).

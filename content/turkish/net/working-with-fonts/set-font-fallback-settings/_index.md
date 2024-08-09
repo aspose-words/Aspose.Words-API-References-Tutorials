@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-font-fallback-settings/
 ---
+## giriiş
 
 Farklı diller veya özel karakterler gibi çeşitli metin öğeleri içeren belgelerle çalışırken bu öğelerin doğru şekilde görüntülendiğinden emin olmak çok önemlidir. Aspose.Words for .NET, orijinal yazı tipi belirli karakterleri desteklemediğinde yazı tiplerinin değiştirilmesine ilişkin kuralların tanımlanmasına yardımcı olan Yazı Tipi Geri Dönüş Ayarları adı verilen güçlü bir özellik sunar. Bu kılavuzda, Aspose.Words for .NET kullanarak Font Geri Dönüş Ayarlarının nasıl kurulacağını adım adım eğitimle inceleyeceğiz.
 
@@ -15,7 +16,7 @@ Farklı diller veya özel karakterler gibi çeşitli metin öğeleri içeren bel
 Eğiticiye dalmadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
 
 - Temel C# Bilgisi: C# programlama dili ve .NET çerçevesine aşinalık.
--  Aspose.Words for .NET: Buradan indirip yükleyin.[İndirme: {link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Buradan indirip yükleyin.[indirme bağlantısı](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi bir kurulum.
 -  Örnek Belge: Örnek bir belgeye sahip olun (örn.`Rendering.docx`) teste hazır.
 - Yazı Tipi Geri Dönüş Kuralları XML: Yazı tipi geri dönüş kurallarını tanımlayan bir XML dosyası hazırlayın.
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Adım 4: Yazı Tipi Ayarlarını Belgeye Uygulayın
 
- Yapılandırılmış olanı ata`FontSettings` belgeye. Bu, belge oluşturulurken yazı tipi geri dönüş kurallarının uygulanmasını sağlar.
+ Yapılandırılmış olanı ata`FontSettings`belgeye. Bu, belge oluşturulurken yazı tipi geri dönüş kurallarının uygulanmasını sağlar.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -94,7 +95,7 @@ Aşağıda, yazı tipi geri dönüş kurallarını tanımlayan XML dosyanızın 
 
 Bu adımları izleyerek Aspose.Words for .NET'te Font Geri Dönüş Ayarlarını etkili bir şekilde ayarlayabilir ve kullanabilirsiniz. Bu, orijinal yazı tipi belirli karakterleri desteklemese bile belgelerinizin tüm karakterleri doğru şekilde görüntülemesini sağlar. Bu ayarların uygulanması belgelerinizin kalitesini ve okunabilirliğini büyük ölçüde artıracaktır.
 
-## SSS
+## SSS'ler
 
 ### S1: Yazı Tipi Geri Dönüşü nedir?
 

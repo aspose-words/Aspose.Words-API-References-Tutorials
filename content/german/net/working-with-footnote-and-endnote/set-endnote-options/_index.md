@@ -2,45 +2,61 @@
 title: Endnote-Optionen festlegen
 linktitle: Endnote-Optionen festlegen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Endnotenoptionen in Word-Dokumenten festlegen. Schritt-für-Schritt-Anleitung mit Beispiel-Quellcode.
+description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Endnotenoptionen in Word-Dokumenten festlegen.
 type: docs
 weight: 10
 url: /de/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## Einführung
 
-In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Endnotenoptionen in einem Word-Dokument festlegen. Wir erklären den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
+Möchten Sie Ihre Word-Dokumente durch die effiziente Verwaltung von Endnoten verbessern? Suchen Sie nicht weiter! In diesem Tutorial führen wir Sie durch den Prozess der Festlegung von Endnotenoptionen in Word-Dokumenten mit Aspose.Words für .NET. Am Ende dieses Handbuchs sind Sie ein Profi im Anpassen von Endnoten an die Anforderungen Ihres Dokuments.
 
- Stellen Sie zunächst sicher, dass Sie Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und eingerichtet haben. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie von[[Originaltext von Aspose.Releases]https://releases.aspose.com/words/net/.
+## Voraussetzungen
 
-## Schritt 1: Initialisieren des Dokumentobjekts
+Bevor Sie mit dem Lernprogramm beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
- Initialisieren Sie zunächst den`Document` Objekt, indem Sie den Pfad zu Ihrem Quelldokument angeben:
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Sie können sie hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Richten Sie eine Entwicklungsumgebung wie beispielsweise Visual Studio ein.
+- Grundkenntnisse in C#: Grundlegende Kenntnisse der C#-Programmierung sind von Vorteil.
+
+## Namespaces importieren
+
+Zunächst müssen Sie die erforderlichen Namespaces importieren. Diese Namespaces bieten Zugriff auf die Klassen und Methoden, die zum Bearbeiten von Word-Dokumenten erforderlich sind.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## Schritt 1: Dokument laden
+
+ Laden wir zunächst das Dokument, in dem wir die Endnotenoptionen festlegen möchten. Wir verwenden die`Document` Klasse aus der Aspose.Words-Bibliothek, um dies zu erreichen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Schritt 2: Initialisieren des DocumentBuilder-Objekts
+## Schritt 2: DocumentBuilder initialisieren
 
- Als nächstes initialisieren Sie den`DocumentBuilder` Objekt, um Operationen am Dokument durchzuführen:
+ Als nächstes initialisieren wir die`DocumentBuilder`Klasse. Diese Klasse bietet eine einfache Möglichkeit, dem Dokument Inhalt hinzuzufügen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 3: Text und Endnote hinzufügen
+## Schritt 3: Text hinzufügen und Endnote einfügen
 
- Verwenden Sie die`Write` Methode der`DocumentBuilder` Objekt, um Text zum Dokument hinzuzufügen, und das`InsertFootnote` Methode zum Einfügen einer Endnote:
+ Fügen wir nun dem Dokument Text hinzu und fügen eine Endnote ein.`InsertFootnote` Methode der`DocumentBuilder` Klasse ermöglicht es uns, dem Dokument Endnoten hinzuzufügen.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## Schritt 4: Endnote-Optionen festlegen
+## Schritt 4: Auf Endnote-Optionen zugreifen und diese festlegen
 
- Greife auf ... zu`EndnoteOptions`Eigenschaft des Dokuments, um Endnotenoptionen zu ändern. In diesem Beispiel legen wir die Neustartregel so fest, dass auf jeder Seite neu gestartet wird und die Position am Ende des Abschnitts:
+ Um die Endnotenoptionen anzupassen, müssen wir auf die`EndnoteOptions` Eigentum der`Document` Klasse. Wir können dann verschiedene Optionen wie die Neustartregel und -position festlegen.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,53 +64,31 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## Schritt 5: Speichern des Dokuments
+## Schritt 5: Speichern Sie das Dokument
 
-Speichern Sie abschließend das geänderte Dokument:
+ Speichern wir nun das Dokument mit den aktualisierten Endnotenoptionen.`Save` Methode der`Document` Klasse ermöglicht es uns, das Dokument im angegebenen Verzeichnis zu speichern.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Das ist es! Sie haben mit Aspose.Words für .NET erfolgreich Endnotenoptionen in einem Word-Dokument festgelegt.
+## Abschluss
 
-### Beispielquellcode zum Festlegen von Endnote-Optionen mit Aspose.Words für .NET
+Mit diesen einfachen Schritten ist das Festlegen von Endnotenoptionen in Ihren Word-Dokumenten mit Aspose.Words für .NET ein Kinderspiel. Durch Anpassen der Neustartregel und der Position von Endnoten können Sie Ihre Dokumente an bestimmte Anforderungen anpassen. Mit Aspose.Words haben Sie die Möglichkeit, Word-Dokumente zu bearbeiten.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Häufig gestellte Fragen
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zur programmgesteuerten Bearbeitung von Word-Dokumenten. Entwickler können damit Word-Dokumente in verschiedenen Formaten erstellen, ändern und konvertieren.
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Kann ich Aspose.Words kostenlos nutzen?
+ Sie können Aspose.Words mit einer kostenlosen Testversion verwenden. Für eine erweiterte Nutzung können Sie eine Lizenz erwerben bei[Hier](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### Was sind Endnoten?
+Endnoten sind Verweise oder Anmerkungen am Ende eines Abschnitts oder Dokuments. Sie enthalten zusätzliche Informationen oder Zitate.
 
-Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und ihn entsprechend Ihren spezifischen Anforderungen ändern.
+### Wie passe ich das Erscheinungsbild von Endnoten an?
+ Sie können Endnotenoptionen wie Nummerierung, Position und Neustartregeln mithilfe der`EndnoteOptions` Klasse in Aspose.Words für .NET.
 
-### Häufig gestellte Fragen
-
-#### F: Wie kann ich Endnoten in Aspose.Words formatieren?
-
- A: Um Endnoten in Aspose.Words zu formatieren, können Sie die`EndnoteOptions` Klasse und die`SeparatorNoteTextStyle` -Eigenschaft. Mit dieser Eigenschaft können Sie Schriftstil, Größe, Farbe usw. für Endnoten festlegen.
-
-#### F: Ist es möglich, die Nummerierung der Endnoten in einem Dokument anzupassen?
-
- A: Ja, es ist möglich, die Nummerierung von Endnoten in einem Dokument anzupassen. Sie können die`RestartRule`Und`NumberStyle` Eigenschaften der`EndnoteOptions` Klasse zum Definieren spezifischer Neustartregeln und Nummerierungsstile.
-
-#### F: Wie kann ich Endnoten in einem Dokument positionieren?
-
-A: Um Endnoten in einem Dokument zu positionieren, können Sie die`Position` Eigentum der`EndnoteOptions` Klasse. Sie können angeben, ob Endnoten am unteren Ende jeder Seite, am Ende jedes Abschnitts oder am Ende des Dokuments platziert werden sollen.
-
-#### F: Kann ich das Nummerierungsformat der Endnoten anpassen?
-
- A: Ja, Sie können das Format der Endnotennummerierung in Aspose.Words anpassen. Verwenden Sie die`NumberFormat` Eigentum der`EndnoteOptions` Klasse, um das gewünschte Format festzulegen, beispielsweise arabische Ziffern, römische Ziffern, Buchstaben usw.
-
-#### F: Ist es möglich, die Endnotennummerierung zwischen Abschnitten eines Dokuments fortzusetzen?
-
- A: Ja, es ist möglich, die Endnotennummerierung zwischen den Abschnitten eines Dokuments fortzusetzen. Verwenden Sie die`RestartRule` Eigentum der`EndnoteOptions` Klasse und setzen Sie sie auf`RestartContinuous` um die Nummerierung zwischen den Abschnitten fortzusetzen.
+### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
+ Eine ausführliche Dokumentation finden Sie auf der[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) Seite.

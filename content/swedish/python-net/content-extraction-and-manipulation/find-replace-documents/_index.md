@@ -38,7 +38,7 @@ Ladda Word-dokumentet som du vill utföra sök- och ersättningsoperationer på:
 doc = aw.Document("path/to/your/document.docx")
 ```
 
-## Steg 3: Enkelt textbyte
+## Steg 3: Enkel textersättning
 
 Utför en grundläggande sök- och ersättoperation för ett specifikt ord eller en specifik fras:
 
@@ -106,7 +106,7 @@ Att effektivt hantera och manipulera Word-dokument innebär ofta att hitta och e
 
 ### Kan jag ersätta text endast inom ett specifikt intervall av sidor?
 
- Jo det kan du. Innan du utför bytet, ange sidintervallet med hjälp av`doc.get_child_nodes()` metod för att få de specifika sidornas innehåll.
+ Ja, det kan du. Innan du utför bytet, ange sidintervallet med hjälp av`doc.get_child_nodes()` metod för att få de specifika sidornas innehåll.
 
 ### Är det möjligt att ångra en sök- och ersätt-operation?
 

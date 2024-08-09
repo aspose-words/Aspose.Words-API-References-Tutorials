@@ -26,7 +26,7 @@ Opanowując rewizję dokumentów za pomocą Aspose.Words dla Java, programiści 
 
 ## Poradniki dotyczące rewizji dokumentów
 ### [Kompletny przewodnik po rewizji dokumentów](./guide-document-revision/)
-Weryfikacja dokumentu głównego za pomocą Aspose.Words dla Java! Efektywnie zarządzaj zmianami, akceptuj/odrzucaj poprawki i bezproblemowo współpracuj. Zacznij teraz!
+Weryfikacja dokumentu głównego za pomocą Aspose.Words dla Java! Efektywnie zarządzaj zmianami, akceptuj/odrzucaj poprawki i bezproblemowo współpracuj. Zacznij już teraz!
 ### [Śledzenie i zarządzanie wersjami dokumentów](./tracking-managing-document-revisions/)
 Z tego obszernego przewodnika dowiesz się, jak śledzić i zarządzać wersjami dokumentów za pomocą Aspose.Words for Java. Uzyskaj instrukcje krok po kroku i przykłady kodu źródłowego.
 ### [Porównywanie wersji dokumentów](./comparing-document-versions/)

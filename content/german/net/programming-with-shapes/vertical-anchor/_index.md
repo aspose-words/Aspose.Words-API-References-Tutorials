@@ -15,7 +15,7 @@ Mussten Sie schon einmal genau steuern, wo Text in einem Textfeld in einem Word-
 
 Bevor wir uns mit den Einzelheiten der vertikalen Verankerung befassen, müssen Sie einige Dinge vorbereitet haben:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Wenn Sie sie noch nicht haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Wenn Sie sie noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Visual Studio: Dieses Tutorial setzt voraus, dass Sie Visual Studio oder eine andere .NET-IDE zum Codieren verwenden.
 3. Grundkenntnisse in C#: Wenn Sie mit C# und .NET vertraut sind, können Sie problemlos mitmachen.
 
@@ -102,4 +102,4 @@ Ja, Sie können die vertikale Verankerung mit anderen Formen verwenden, Textfeld
  Absolut! Verwenden Sie einfach`TextBoxAnchor.Center` um den Text vertikal im Textfeld zu zentrieren.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
- Besuche die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) für weitere Details und Anleitungen.
+ Schauen Sie sich die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) für weitere Details und Anleitungen.

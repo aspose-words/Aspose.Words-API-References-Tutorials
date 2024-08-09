@@ -15,7 +15,7 @@ url: /es/net/add-content-using-documentbuilder/insert-break/
 
 Antes de pasar al código, asegurémonos de tener todo lo que necesitamos:
 
-1.  Aspose.Words para la biblioteca .NET: puede[descarguelo aqui](https://releases.aspose.com/words/net/) . Si eres nuevo en Aspose, es posible que desees comenzar con un[prueba gratis](https://releases.aspose.com/).
+1.  Aspose.Words para la biblioteca .NET: puede[descárgalo aquí](https://releases.aspose.com/words/net/) . Si eres nuevo en Aspose, quizás quieras comenzar con un[prueba gratuita](https://releases.aspose.com/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE compatible con .NET.
 3. .NET Framework: asegúrese de tener .NET Framework instalado.
 4. Conocimientos básicos de C#: este tutorial asume que está familiarizado con la programación en C#.
@@ -118,7 +118,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos de Word mediante programación. Admite una amplia gama de funciones, desde la creación y edición de documentos hasta la conversión entre diferentes formatos.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Sí, puedes empezar con un[prueba gratis](https://releases.aspose.com/) para explorar sus características. Para uso a largo plazo, puede[comprar una licencia](https://purchase.aspose.com/buy).
+ Sí, puedes empezar con un[prueba gratuita](https://releases.aspose.com/) para explorar sus características. Para uso a largo plazo, puede[comprar una licencia](https://purchase.aspose.com/buy).
 
 ### ¿Cómo obtengo soporte para Aspose.Words?
  Puede obtener apoyo del[Aspose foro de la comunidad](https://forum.aspose.com/c/words/8). Es un gran lugar para hacer preguntas y compartir sus experiencias.

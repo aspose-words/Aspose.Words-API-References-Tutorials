@@ -15,7 +15,7 @@ Jika Anda pernah bekerja dengan dokumen Word dan perlu mengubah kontrol konten t
 
 Sebelum kita masuk ke seluk beluk memodifikasi kontrol konten, pastikan Anda memiliki hal berikut:
 
-1.  Aspose.Words untuk .NET Terpasang: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET Terpasang: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 
 2. Pengetahuan Dasar C#: Tutorial ini mengasumsikan Anda sudah familiar dengan konsep dasar pemrograman C#.
 
@@ -134,7 +134,7 @@ Ya, Anda dapat menghapus SDT dengan mengakses node dokumen dan menghapus SDT yan
 
 4. Bagaimana cara menangani SDT yang bersarang di dalam elemen lain?
 
- Menggunakan`GetChildNodes` metode dengan parameter yang sesuai untuk mengakses SDT bersarang.
+ Gunakan`GetChildNodes` metode dengan parameter yang sesuai untuk mengakses SDT bersarang.
 
 5. Apa yang harus saya lakukan jika SDT yang perlu saya modifikasi tidak terlihat di dokumen?
 
@@ -181,4 +181,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-Itu dia! Anda telah berhasil memodifikasi berbagai tipe kontrol konten di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+Itu saja! Anda telah berhasil memodifikasi berbagai tipe kontrol konten di dokumen Word Anda menggunakan Aspose.Words untuk .NET.

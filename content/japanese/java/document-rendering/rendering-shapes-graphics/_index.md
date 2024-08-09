@@ -106,7 +106,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 順序を使用して、図形の表示順序を制御できます。
 
 ```java
-shape1.setZOrder(1); //前に持ってくる
+shape1.setZOrder(1); //最前面へ移動
 shape2.setZOrder(0); //後ろに送る
 ```
 

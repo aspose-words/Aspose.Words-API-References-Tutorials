@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功修改了 Word 文件中的 VBA 巨集。本教學涵蓋了從載入文件和存取 VBA 項目到更改巨集程式碼和保存修改後的文件的所有內容。透過 Aspose.Words，您可以輕鬆地自動執行任務、自訂文檔，甚至可以使用 VBA 巨集來滿足您的需求。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功修改了 Word 文件中的 VBA 巨集。本教學涵蓋了從載入文件和存取 VBA 項目到更改巨集程式碼和保存修改後的文件的所有內容。透過 Aspose.Words，您可以輕鬆地自動執行任務、自訂文檔，甚至可以使用 VBA 巨集來滿足您的需求。
 
 如果您渴望探索更多，[API文件](https://reference.aspose.com/words/net/)是一個很棒的資源。如果您遇到困難，[支援論壇](https://forum.aspose.com/c/words/8)隨時為您提供協助。
 

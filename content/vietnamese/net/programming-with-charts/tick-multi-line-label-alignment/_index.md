@@ -15,7 +15,7 @@ Này, những người đam mê công nghệ! Bạn đã bao giờ thấy mình 
 
 Trước khi chúng ta đi sâu vào thế giới căn chỉnh nhãn nhiều dòng, hãy đảm bảo rằng bạn đã sắp xếp tất cả các con vịt của mình trong một hàng. Đây là những gì bạn sẽ cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã có phiên bản Aspose.Words mới nhất cho .NET. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn đã có phiên bản Aspose.Words mới nhất cho .NET. Nếu không, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường .NET: Đảm bảo môi trường phát triển của bạn được thiết lập bằng .NET.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp hành trình này suôn sẻ hơn.
 
@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Bước 3: Sử dụng DocumentBuilder
 
- Các`DocumentBuilder` lớp trong Aspose.Words là một công cụ mạnh mẽ giúp xây dựng tài liệu. Chúng tôi sẽ sử dụng nó để chèn biểu đồ vào tài liệu của chúng tôi.
+ các`DocumentBuilder` lớp trong Aspose.Words là một công cụ mạnh mẽ giúp xây dựng tài liệu. Chúng tôi sẽ sử dụng nó để chèn biểu đồ vào tài liệu của chúng tôi.
 
  Khởi tạo một thể hiện của`DocumentBuilder` lớp, chuyển đối tượng tài liệu của chúng ta tới hàm tạo của nó.
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã đánh dấu thành công việc căn chỉnh nhãn nhiều dòng trong biểu đồ bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng tùy chỉnh biểu đồ để đáp ứng nhu cầu cụ thể của mình. Cho dù bạn đang chuẩn bị một báo cáo chuyên nghiệp hay chỉ đang thử nghiệm, Aspose.Words for .NET đều mang đến sự linh hoạt và sức mạnh để hoàn thành công việc. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã đánh dấu thành công việc căn chỉnh nhãn nhiều dòng trong biểu đồ bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng tùy chỉnh biểu đồ để đáp ứng nhu cầu cụ thể của mình. Cho dù bạn đang chuẩn bị một báo cáo chuyên nghiệp hay chỉ đang thử nghiệm, Aspose.Words for .NET đều mang đến sự linh hoạt và sức mạnh để hoàn thành công việc. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -112,7 +112,7 @@ Và bạn có nó rồi đấy! Bạn đã đánh dấu thành công việc căn
 
 ### Làm cách nào để cài đặt Aspose.Words cho .NET?
 
- Bạn có thể tải xuống Aspose.Words cho .NET từ[trang mạng](https://releases.aspose.com/words/net/)Thực hiện theo các hướng dẫn cài đặt được cung cấp ở đó.
+ Bạn có thể tải xuống Aspose.Words cho .NET từ[trang web](https://releases.aspose.com/words/net/)Thực hiện theo các hướng dẫn cài đặt được cung cấp ở đó.
 
 ### Tôi có thể sử dụng Aspose.Words cho .NET miễn phí không?
 

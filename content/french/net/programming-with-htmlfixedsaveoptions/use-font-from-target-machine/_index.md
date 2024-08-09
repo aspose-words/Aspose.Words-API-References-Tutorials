@@ -9,7 +9,7 @@ url: /fr/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 ## Introduction
 
-Êtes-vous prêt à plonger dans le monde fascinant d’Aspose.Words for .NET ? Attachez votre ceinture, car nous sommes sur le point de vous emmener dans un voyage à travers le royaume magique des polices. Aujourd'hui, nous nous concentrons sur la façon d'utiliser les polices de la machine cible lorsque vous travaillez avec des documents Word. Cette fonctionnalité astucieuse garantit que votre document apparaît exactement comme vous le souhaitez, quel que soit l'endroit où il est affiché. Commençons!
+Êtes-vous prêt à plonger dans le monde fascinant d’Aspose.Words for .NET ? Attachez votre ceinture, car nous sommes sur le point de vous emmener dans un voyage à travers le royaume magique des polices. Aujourd'hui, nous nous concentrons sur la façon d'utiliser les polices de la machine cible lorsque vous travaillez avec des documents Word. Cette fonctionnalité astucieuse garantit que votre document apparaît exactement comme vous le souhaitez, quel que soit l'endroit où il est affiché. Commençons !
 
 ## Conditions préalables
 
@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## Étape 1 : Charger le document Word
 
- La première étape de notre tutoriel consiste à charger le document Word. C'est là que tout commence. Nous utiliserons le`Document` classe de la bibliothèque Aspose.Words pour y parvenir.
+ La première étape de notre tutoriel consiste à charger le document Word. C'est ici que tout commence. Nous utiliserons le`Document` classe de la bibliothèque Aspose.Words pour y parvenir.
 
 ### Étape 1.1 : Définir le chemin du document
 
@@ -89,7 +89,7 @@ Accédez au répertoire dans lequel vous avez enregistré le fichier HTML et ouv
 System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
 ```
 
-Et voila! Vous avez utilisé avec succès les polices de la machine cible dans votre document Word à l'aide d'Aspose.Words pour .NET.
+Et voilà ! Vous avez utilisé avec succès les polices de la machine cible dans votre document Word à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 
@@ -104,10 +104,10 @@ Oui, Aspose.Words for .NET prend en charge différents formats de documents et v
 Si la machine cible ne dispose pas des polices requises, le document risque de ne pas s'afficher comme prévu. C'est toujours une bonne idée d'intégrer des polices lorsque cela est nécessaire.
 
 ### Comment intégrer des polices dans un document ?
- L'intégration de polices peut être effectuée à l'aide de l'outil`FontSettings` classe dans Aspose.Words pour .NET. Se référer au[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ L'intégration de polices peut être effectuée à l'aide de l'outil`FontSettings` classe dans Aspose.Words pour .NET. Référez-vous au[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Existe-t-il un moyen de prévisualiser le document avant de l'enregistrer ?
- Oui, vous pouvez utiliser le`DocumentRenderer` classe pour prévisualiser le document avant de l’enregistrer. Découvrez Aspose.Words pour .NET[Documentation](https://reference.aspose.com/words/net/) pour plus d'informations.
+ Oui, vous pouvez utiliser le`DocumentRenderer` classe pour prévisualiser le document avant de l’enregistrer. Découvrez Aspose.Words pour .NET[documentation](https://reference.aspose.com/words/net/) pour plus d'informations.
 
 ### Puis-je personnaliser davantage la sortie HTML ?
- Absolument! Le`HtmlFixedSaveOptions` La classe fournit diverses propriétés pour personnaliser la sortie HTML. Explore le[Documentation](https://reference.aspose.com/words/net/) pour toutes les options disponibles.
+ Absolument! Le`HtmlFixedSaveOptions` La classe fournit diverses propriétés pour personnaliser la sortie HTML. Explorez le[documentation](https://reference.aspose.com/words/net/) pour toutes les options disponibles.

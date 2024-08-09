@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
-## Úvod
+## Zavedení
 
 tomto tutoriálu se ponoříme hluboko do světa Aspose.Words pro .NET, abychom se naučili, jak vložit pole formuláře pro zadávání textu do dokumentu aplikace Word. Připoutejte se, protože se právě chystáme vydat na cestu, díky které budou vaše úkoly automatizace dokumentů hračkou. Ať už vytváříte formuláře, šablony nebo interaktivní dokumenty, zvládnutí této dovednosti pozvedne vaše aplikace .NET na další úroveň.
 
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 4: Vložení textového vstupního pole formuláře
 
- Tady se děje kouzlo. Použijeme`InsertTextInput` metoda`DocumentBuilder` třídy a přidejte pole formuláře pro zadávání textu. Toto pole formuláře umožní uživatelům zadávat text do dokumentu.
+ Tady se děje kouzlo. Použijeme`InsertTextInput` metoda`DocumentBuilder` třídy přidat pole formuláře pro zadávání textu. Toto pole formuláře umožní uživatelům zadávat text do dokumentu.
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);

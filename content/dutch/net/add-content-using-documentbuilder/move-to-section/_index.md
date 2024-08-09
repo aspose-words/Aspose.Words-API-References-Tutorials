@@ -16,7 +16,7 @@ In de digitale wereld van vandaag is automatisering de sleutel tot het verhogen 
 Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
 1. Visual Studio: Visual Studio moet op uw computer zijn geïnstalleerd.
-2.  Aspose.Words voor .NET: Download en installeer Aspose.Words voor .NET vanaf de[download link](https://releases.aspose.com/words/net/).
+2.  Aspose.Words voor .NET: Download en installeer Aspose.Words voor .NET vanaf de[downloadlink](https://releases.aspose.com/words/net/).
 3. Basiskennis van C#: Bekendheid met de programmeertaal C# is een voordeel.
 
 ## Naamruimten importeren
@@ -82,7 +82,7 @@ Aspose.Words voor .NET maakt het ongelooflijk eenvoudig om Word-documenten progr
 ## Veelgestelde vragen
 
 ### Hoe installeer ik Aspose.Words voor .NET?
- U kunt Aspose.Words voor .NET downloaden en installeren vanaf de[download link](https://releases.aspose.com/words/net/).
+ U kunt Aspose.Words voor .NET downloaden en installeren vanaf de[downloadlink](https://releases.aspose.com/words/net/).
 
 ### Kan ik Aspose.Words voor .NET gebruiken met andere .NET-talen?
 Ja, Aspose.Words voor .NET ondersteunt elke .NET-taal, inclusief VB.NET en F#.
@@ -94,4 +94,4 @@ Ja, Aspose.Words voor .NET ondersteunt elke .NET-taal, inclusief VB.NET en F#.
  U kunt ondersteuning krijgen van de[Aspose.Words-forum](https://forum.aspose.com/c/words/8).
 
 ### Kan ik Aspose.Words voor .NET gebruiken in een commercieel project?
- Ja, maar u moet een licentie aanschaffen bij de[koop link](https://purchase.aspose.com/buy).
+ Ja, maar u moet een licentie aanschaffen bij de[koop linkje](https://purchase.aspose.com/buy).

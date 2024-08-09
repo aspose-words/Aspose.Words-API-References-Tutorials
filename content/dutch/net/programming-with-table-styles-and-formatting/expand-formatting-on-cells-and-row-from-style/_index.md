@@ -109,4 +109,4 @@ Absoluut! U kunt alle tabellen in uw document doorlopen en op elke tabel dezelfd
 Zodra stijlen zijn uitgevouwen, worden ze rechtstreeks op de cellen toegepast. Om dit terug te draaien, moet u het document opnieuw laden of de stijlen handmatig opnieuw toepassen.
 
 ### Werkt deze methode met alle versies van Aspose.Words voor .NET?
- Ja de`ExpandTableStylesToDirectFormatting` methode is beschikbaar in recente versies van Aspose.Words voor .NET. Controleer altijd de[documentatie](https://reference.aspose.com/words/net/) voor de laatste updates.
+ Ja, de`ExpandTableStylesToDirectFormatting` methode is beschikbaar in recente versies van Aspose.Words voor .NET. Controleer altijd de[documentatie](https://reference.aspose.com/words/net/) voor de laatste updates.

@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Langkah 2: Akses Tabel
 
-Selanjutnya, Anda perlu mengakses tabel di dalam dokumen Anda. Anggap saja ini seperti menemukan tabel di dokumen Anda secara visual, namun kami melakukannya melalui kode.
+Selanjutnya, Anda perlu mengakses tabel di dalam dokumen Anda. Anggap saja ini seperti menemukan tabel di dokumen Anda secara visual, tapi kami melakukannya melalui kode.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -105,7 +105,7 @@ Dan itu dia! Kami telah berhasil memodifikasi pemformatan sel dalam dokumen Word
 Ya, Anda dapat mengulang sel-sel di tabel Anda dan menerapkan pemformatan yang sama ke masing-masing sel.
 
 ### Bagaimana cara menyimpan dokumen yang diubah?
- Menggunakan`doc.Save("output.docx")` metode untuk menyimpan perubahan Anda.
+ Gunakan`doc.Save("output.docx")` metode untuk menyimpan perubahan Anda.
 
 ### Apakah mungkin untuk menerapkan corak berbeda pada sel berbeda?
 Sangat! Cukup akses setiap sel satu per satu dan atur bayangannya.

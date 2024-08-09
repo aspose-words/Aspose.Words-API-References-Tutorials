@@ -2,79 +2,110 @@
 title: 圍欄代碼
 linktitle: 圍欄代碼
 second_title: Aspose.Words 文件處理 API
-description: 了解如何透過 Aspose.Words for .NET 逐步指南使用隔離程式碼功能。
+description: 了解如何使用 Aspose.Words for .NET 將隔離程式碼和資訊字串新增至 Word 文件。包括逐步指南。提升您的文件格式化技能。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-markdown/fenced-code/
 ---
+## 介紹
 
-在此範例中，我們將引導您了解如何透過 Aspose.Words for .NET 使用隔離程式碼功能。圍欄代碼用於表示具有特定格式的程式碼區塊。
+嘿，編碼員朋友！今天，我們將深入了解 Aspose.Words for .NET 的世界，掌握在 Word 文件中添加防護程式碼和帶有資訊字串的防護程式碼的藝術。將您的 Word 文件想像成一塊畫布，而您，這位藝術家，將以經驗豐富的開發人員的精確度進行繪畫。透過 Aspose.Words，您可以透過結構化、格式化的程式碼區塊以程式設計方式增強您的文檔，使您的技術文件煥發專業性和清晰度。
 
-## 第 1 步：使用文件產生器
+## 先決條件
 
-首先，我們將使用文件產生器將內容新增至文件。
+在我們開始本教程之前，讓我們確保您擁有所需的一切：
+
+- C# 基礎知識：對 C# 的整體了解將幫助您快速掌握概念。
+-  Aspose.Words for .NET：您需要安裝 Aspose.Words for .NET。如果你還沒有得到它，抓住它[這裡](https://releases.aspose.com/words/net/).
+- 開發環境：Visual Studio 或您熟悉的任何其他 C# IDE。
+
+## 導入命名空間
+
+首先，您需要匯入必要的名稱空間。這就像在開始專案之前收集所有工具一樣。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+現在，讓我們逐步分解這個過程。
+
+## 第 1 步：設定您的項目
+
+在我們可以在 Word 文件中建立漂亮的格式化程式碼區塊之前，我們需要在 Visual Studio 中設定一個新專案。
+
+1. 建立新專案：開啟 Visual Studio 並建立一個新的 C# 控制台應用程式。
+2. 新增 Aspose.Words 參考：透過 NuGet 套件管理器安裝 Aspose.Words。您可以透過在解決方案資源管理器中右鍵單擊您的項目，選擇「管理 NuGet 套件」並蒐索 Aspose.Words 來完成此操作。
+
+## 第 2 步：初始化 DocumentBuilder
+
+現在您的專案已設定完畢，讓我們初始化 DocumentBuilder，它將成為我們在 Word 文件中新增內容的主要工具。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 步驟 2： 新增受防護代碼的樣式
+## 第 3 步：為受保護的程式碼建立樣式
 
-我們將使用以下命令為受防護的程式碼添加自訂樣式`Styles.Add`的方法`Document`目的。在此範例中，我們為受保護的程式碼建立一個名為「FencedCode」的樣式。
+要新增防護程式碼，我們首先需要建立一個樣式。將此視為為我們的程式碼區塊設定主題。
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## 第 3 步：新增不含資訊的防護代碼
+## 步驟 4：將受防護的程式碼加入文件中
 
-現在我們可以使用「FencedCode」自訂樣式來新增一個沒有資訊字串的隔離程式碼區塊。
+準備好樣式後，我們現在可以為文件添加受隔離的程式碼區塊。
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## 步驟 4： 新增帶有資訊字串的防護代碼
+## 第 5 步：使用資訊字串為受保護程式碼建立樣式
 
-我們還可以使用另一種自訂樣式來添加帶有一串資訊的圍欄程式碼區塊。在此範例中，我們將建立一個名為「FencedCode.C#」的樣式來表示 C# 程式碼區塊。
+有時，您可能想要指定程式語言或在程式碼區塊中添加額外的資訊。讓我們為此創建一個樣式。
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### 使用 Aspose.Words for .NET 的 Fenced Code 的範例原始碼
+## 第 6 步：將帶有資訊字串的防護代碼新增至文件中
+
+現在，讓我們新增一個帶有資訊字串的隔離程式碼區塊，以指示它是 C# 程式碼。
 
 ```csharp
-//使用文件產生器將內容新增至文件。
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### 常見問題解答
+## 結論
 
-#### Q：Markdown 中的分隔程式碼是什麼？
+恭喜！您剛剛使用 Aspose.Words for .NET 將防護程式碼區塊和帶有資訊字串的防護程式碼新增至您的 Word 文件。這只是冰山一角。使用 Aspose.Words，您可以將文件處理自動化並增強到新的高度。繼續探索並快樂編碼！
 
-答：Markdown 中的分隔程式碼是一種用於在 Markdown 文件中顯示程式碼的格式化方法。它包括使用特定分隔符號建立程式碼。
+## 常見問題解答
 
-#### Q：Markdown 中分隔程式碼有什麼好處？
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以程式設計方式建立、操作和轉換 Word 文件。
 
-答：Markdown 中的分隔程式碼提高了程式碼的可讀性，讓讀者更容易理解。它還允許在某些 Markdown 編輯器中保留語法突出顯示。
+### 我可以將 Aspose.Words 與其他程式語言一起使用嗎？
+Aspose.Words 主要支援 .NET 語言，但也有適用於 Java、Python 和其他語言的版本。
 
-#### Q：Markdown 中分隔程式碼和縮排程式碼有什麼差別？
+### Aspose.Words 可以免費使用嗎？
+ Aspose.Words是一個商業產品，但您可以下載免費試用版[這裡](https://releases.aspose.com/)來探索它的特點。
 
-答：分隔程式碼使用特定的分隔符號將程式碼括起來，而縮排程式碼則涉及使用空格或製表符縮排每行程式碼。
+### 我如何獲得 Aspose.Words 支援？
+您可以獲得 Aspose 社群和開發人員的支持[這裡](https://forum.aspose.com/c/words/8).
 
-#### Q：所有 Markdown 編輯器都支援 Markdown 中的分隔程式碼嗎？
-
-答：Markdown 中對分隔程式碼的支援可能會因 Markdown 編輯器而異。請檢查您的發布商的具體文件以確保確定。
-
+### Aspose.Words 還提供哪些功能？
+Aspose.Words 提供了廣泛的功能，包括文件轉換、基於範本的文件產生、報告等等。

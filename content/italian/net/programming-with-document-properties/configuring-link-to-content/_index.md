@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/configuring-link-to-content/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come collegare il contenuto in un documento di Word a livello di codice? Utilizzando Aspose.Words per .NET, puoi aggiungere facilmente proprietà di contenuto collegato ai tuoi documenti Word. Questa potente libreria offre un'ampia gamma di funzionalità, semplificando la manipolazione dei documenti Word tramite codice. In questo tutorial ti guideremo attraverso il processo di configurazione di un collegamento al contenuto all'interno di un documento Word, assicurandoti di comprendere ogni passaggio lungo il percorso.
 

@@ -100,4 +100,4 @@ Você pode usar blocos try-catch para lidar com exceções que podem ocorrer dur
 Sim, o método mostrado aqui visa especificamente apenas os campos e deixa o restante do conteúdo inalterado.
 
 ### Onde posso encontrar mais recursos e suporte para Aspose.Words?
- Visite a[Documentação da API Aspose.Words para .NET](https://reference.aspose.com/words/net/) e a[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) Para obter mais assistência.
+ Visite o[Documentação da API Aspose.Words para .NET](https://reference.aspose.com/words/net/) e o[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) para obter mais assistência.

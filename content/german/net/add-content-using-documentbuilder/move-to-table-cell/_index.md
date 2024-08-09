@@ -85,7 +85,7 @@ Herzlichen Glückwunsch! Sie haben gerade gelernt, wie Sie mit Aspose.Words für
  Ja, durch Angabe des korrekten Tabellenindexes im`MoveToCell` Methode können Sie zu jeder Zelle in jeder Tabelle im Dokument navigieren.
 
 ### Wie gehe ich mit Zellen um, die sich über mehrere Zeilen oder Spalten erstrecken?
- Du kannst den ... benutzen`RowSpan`Und`ColSpan` Eigenschaften der`Cell` Klasse zum Verwalten zusammengeführter Zellen.
+ Sie können die`RowSpan`Und`ColSpan` Eigenschaften der`Cell` Klasse zum Verwalten zusammengeführter Zellen.
 
 ### Ist es möglich, den Text innerhalb der Zelle zu formatieren?
  Auf jeden Fall! Verwenden Sie`DocumentBuilder` Methoden wie`Font.Size`, `Font.Bold`und andere, um Ihren Text zu formatieren.

@@ -15,7 +15,7 @@ Her biri 1. sayfadan başlayan farklı bölümlere sahip gösterişli bir belge 
 
 Bu yolculuğa çıkmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1.  Aspose.Words for .NET: Kütüphaneyi resmi web sitesinden indirin[İndirme: {link](https://releases.aspose.com/words/net/) . Ücretsiz denemeyi keşfedebilirsiniz[Ücretsiz deneme bağlantısı](https://releases.aspose.com/) veya bir lisans satın alın[Bağlantıyı satın al](https://purchase.aspose.com/buy) ihtiyaçlarınıza göre.
+1.  Aspose.Words for .NET: Kütüphaneyi resmi web sitesinden indirin[İndirme bağlantısı](https://releases.aspose.com/words/net/) . Ücretsiz denemeyi keşfedebilirsiniz[Ücretsiz deneme bağlantısı](https://releases.aspose.com/) veya bir lisans satın alın[Bağlantıyı satın al](https://purchase.aspose.com/buy) ihtiyaçlarınıza göre.
 2. AC# geliştirme ortamı: Visual Studio veya .NET geliştirmeyi destekleyen herhangi bir ortam mükemmel çalışacaktır.
 3. Örnek bir belge: Denemek istediğiniz bir Word belgesini bulun.
 
@@ -37,7 +37,7 @@ using Aspose.Words.Settings;
 
  Bir dize değişkeni tanımlayın`dataDir` belge dizininizin yolunu saklamak için. "BELGE DİZİNİNİZ"i gerçek konumla değiştirin.
 
- İki tane oluştur`Document` kullanarak nesneler`Aspose.Words.Document`yapıcı. İlki (`srcDoc`) eklenecek içeriği içeren kaynak belgeyi tutacaktır. İkinci (`dstDoc`), kaynak içeriği yeniden başlatılan sayfa numaralandırmayla entegre edeceğimiz hedef belgeyi temsil eder.
+ İki tane oluştur`Document` kullanarak nesneler`Aspose.Words.Document`yapıcı. İlki (`srcDoc`) eklenecek içeriği içeren kaynak belgeyi tutacaktır. İkincisi (`dstDoc`), kaynak içeriği yeniden başlatılan sayfa numaralandırmayla entegre edeceğimiz hedef belgeyi temsil eder.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Gerçek dizininizle değiştirin
@@ -47,11 +47,11 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
 ## Adım 2: Bölüm Sonunu Ayarlama:
 
- Erişmek`FirstSection` kaynak belgenin özelliği (`srcDoc`) başlangıç bölümünü değiştirmek için. Bu bölümün sayfa numaralandırması yeniden başlatılacaktır.
+ Erişim`FirstSection` kaynak belgenin özelliği (`srcDoc`) başlangıç bölümünü değiştirmek için. Bu bölümün sayfa numaralandırması yeniden başlatılacaktır.
 
  Kullanın`PageSetup` Düzen davranışını yapılandırmak için bölümün özelliği.
 
- Yı kur`SectionStart` mülkiyet`PageSetup` ile`SectionStart.NewPage`. Bu, kaynak içerik hedef belgeye eklenmeden önce yeni bir sayfanın oluşturulmasını sağlar.
+ Ayarla`SectionStart` mülkiyeti`PageSetup` ile`SectionStart.NewPage`. Bu, kaynak içerik hedef belgeye eklenmeden önce yeni bir sayfanın oluşturulmasını sağlar.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;

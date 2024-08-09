@@ -15,7 +15,7 @@ Pemformatan bersyarat memungkinkan Anda menerapkan pemformatan tertentu ke sel d
 
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-1. Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words untuk .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words untuk .NET. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan yang sesuai seperti Visual Studio.
 3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan sangat membantu.
 4. Dokumen Word: Dokumen Word tempat Anda ingin menerapkan pemformatan bersyarat.

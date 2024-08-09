@@ -112,7 +112,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 ## Fonctionnalités avancées d'automatisation des mots
 
-Aspose.Words fournit des fonctionnalités avancées telles que le publipostage, le cryptage de documents et l'utilisation de signets, d'hyperliens et de commentaires.
+Aspose.Words fournit des fonctionnalités avancées telles que le publipostage, le cryptage de documents et l'utilisation de signets, de liens hypertexte et de commentaires.
 
 ## Automatisation du traitement des documents
 
@@ -130,7 +130,7 @@ Oui, Aspose.Words est disponible pour plusieurs plates-formes, notamment Java et
 ### Puis-je convertir des documents Word en PDF à l’aide d’Aspose.Words ?
 Absolument! Aspose.Words prend en charge divers formats, y compris la conversion DOCX en PDF.
 
-### Aspose.Words est-il adapté à l’automatisation de tâches de traitement de documents à grande échelle ?
+### Aspose.Words est-il adapté à l’automatisation de tâches de traitement de documents à grande échelle ?
 Oui, Aspose.Words est conçu pour gérer efficacement de gros volumes de documents.
 
 ### Aspose.Words prend-il en charge la manipulation de documents dans le cloud ?

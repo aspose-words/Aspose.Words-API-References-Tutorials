@@ -98,7 +98,7 @@ Mit Aspose.Words für Java können Sie Inhalte aus Dokumenten ganz einfach aufte
 
 ### Kann ich ein Dokument nach benutzerdefinierten Kriterien aufteilen?
 
- Ja, Sie können benutzerdefinierte Kriterien für die Aufteilung eines Dokuments mit Aspose.Words für Java definieren. Erstellen Sie einfach Ihre benutzerdefinierte`DocumentSplitCriteria` Implementierung.
+ Ja, Sie können benutzerdefinierte Kriterien für die Aufteilung eines Dokuments mit Aspose.Words für Java definieren. Erstellen Sie einfach Ihre benutzerdefinierte`DocumentSplitCriteria` Durchführung.
 
 ### Welche Dateiformate unterstützt Aspose.Words für Java?
 

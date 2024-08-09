@@ -15,7 +15,7 @@ Hallo! Haben Sie sich schon einmal gefragt, wie Sie Ihre Word-Dokumente vor uner
 
 Bevor wir uns mit den Einzelheiten des Kennwortschutzes Ihrer Word-Dokumente befassen, benötigen Sie einige Dinge:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-Entwicklungsumgebung.
 3. Grundlegende C#-Kenntnisse: Grundlegendes Verständnis der C#-Programmierung.
 4.  Aspose-Lizenz: Erhalten Sie eine Lizenz von[Hier](https://purchase.aspose.com/buy)oder verwenden Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 Nachdem unser Projekt nun eingerichtet ist, erstellen wir ein Word-Dokument, das wir schützen können.
 
- In deinem`Program.cs` Datei, initialisieren Sie eine neue Instanz der`Document` Klasse. Diese Klasse stellt das Word-Dokument dar, mit dem Sie arbeiten werden.
+ In Ihrem`Program.cs` Datei, initialisieren Sie eine neue Instanz der`Document` Klasse. Diese Klasse stellt das Word-Dokument dar, mit dem Sie arbeiten werden.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.

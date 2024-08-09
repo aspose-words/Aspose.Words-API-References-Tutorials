@@ -9,7 +9,7 @@ url: /nl/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u dynamische velden programmatisch in uw Word-documenten kunt invoegen? Nou, maak je geen zorgen meer! In deze zelfstudie duiken we in de wonderen van Aspose.Words voor .NET, een krachtige bibliotheek waarmee u naadloos Word-documenten kunt maken, manipuleren en transformeren. We zullen specifiek bekijken hoe u velden kunt invoegen met behulp van de Veldbouwer. Laten we beginnen!
+Hé daar! Heeft u zich ooit afgevraagd hoe u dynamische velden programmatisch in uw Word-documenten kunt invoegen? Nou, maak je geen zorgen meer! In deze zelfstudie duiken we in de wonderen van Aspose.Words voor .NET, een krachtige bibliotheek waarmee u naadloos Word-documenten kunt maken, manipuleren en transformeren. We zullen specifiek bekijken hoe u velden kunt invoegen met behulp van de Veldbouwer. Laten we beginnen!
 
 ## Vereisten
 

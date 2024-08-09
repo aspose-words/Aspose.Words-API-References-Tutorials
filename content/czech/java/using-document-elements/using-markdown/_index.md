@@ -178,7 +178,7 @@ tomto tutoriálu jsme probrali základy používání Markdown v Aspose.Words fo
    Ano, můžete použít Aspose.Words pro Java k převodu dokumentů Markdown na dokumenty Word a naopak.
 
 ### Je Aspose.Words for Java k použití zdarma? 
-    Aspose.Words for Java je komerční produkt a k použití je vyžadována licence. Licenci můžete získat od[tady](https://purchase.aspose.com/buy).
+    Aspose.Words for Java je komerční produkt a k použití je vyžadována licence. Licenci můžete získat od[zde](https://purchase.aspose.com/buy).
 
 ### Jsou k dispozici nějaké návody nebo dokumentace pro Aspose.Words for Java? 
     Ano, na webu najdete komplexní návody a dokumentaci[Aspose.Words for Java API dokumentace](https://reference.aspose.com/words/java/).

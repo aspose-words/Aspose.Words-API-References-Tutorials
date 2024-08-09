@@ -15,10 +15,10 @@ Xin chào các thuật sĩ tài liệu Word! Bạn đã bao giờ tự hỏi đi
 
 Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
-1.  Thư viện Aspose.Words for .NET: Để làm việc với tài liệu Word, bạn cần có phiên bản Aspose.Words for .NET mới nhất. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Thư viện Aspose.Words for .NET: Để làm việc với tài liệu Word, bạn cần có phiên bản Aspose.Words for .NET mới nhất. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển .NET, chẳng hạn như Visual Studio, rất cần thiết để viết và kiểm tra mã của bạn.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp bạn điều hướng qua các đoạn mã và khái niệm.
-4.  Tài liệu Word mẫu: Có một[Tài liệu văn bản](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) với macro VBA đã sẵn sàng. Đây sẽ là nguồn của chúng tôi để đọc các macro.
+4.  Tài liệu Word mẫu: Có một[tài liệu Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) với macro VBA đã sẵn sàng. Đây sẽ là nguồn của chúng tôi để đọc các macro.
 
 ## Nhập không gian tên
 
@@ -45,7 +45,7 @@ Trước tiên, hãy thiết lập đường dẫn đến thư mục tài liệu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi chứa tài liệu Word của bạn. Đây là nơi vui vẻ bắt đầu!
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi chứa tài liệu Word của bạn. Đây là nơi niềm vui bắt đầu!
 
 ## Bước 2: Tải tài liệu Word
 
@@ -115,7 +115,7 @@ End Sub
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã đọc thành công macro VBA từ tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm mọi thứ từ thiết lập môi trường và tải tài liệu của bạn đến truy cập dự án VBA và đọc macro. Với Aspose.Words, bạn có thể tùy ý sử dụng một công cụ mạnh mẽ để tự động hóa các tác vụ, tùy chỉnh tài liệu và tìm hiểu sâu về thế giới VBA.
+Và bạn có nó! Bạn đã đọc thành công macro VBA từ tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm mọi thứ từ thiết lập môi trường và tải tài liệu của bạn đến truy cập dự án VBA và đọc macro. Với Aspose.Words, bạn có thể tùy ý sử dụng một công cụ mạnh mẽ để tự động hóa các tác vụ, tùy chỉnh tài liệu và tìm hiểu sâu về thế giới VBA.
 
  Nếu bạn mong muốn tìm hiểu thêm,[Tài liệu API](https://reference.aspose.com/words/net/) là một nơi tuyệt vời để bắt đầu. Và nếu bạn gặp phải thắc mắc hoặc cần trợ giúp,[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) có ở đó dành cho bạn không.
 

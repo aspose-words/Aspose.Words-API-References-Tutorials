@@ -2,100 +2,102 @@
 title: Uzyskaj typy wersji słów
 linktitle: Uzyskaj typy wersji słów
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Uzyskaj typy wersji słów w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak uzyskać typy wersji słów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci efektywnie zarządzać zmianami dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/get-revision-types/
 ---
+## Wstęp
 
-W tym przewodniku krok po kroku powiemy Ci, jak uzyskać typy wersji słów w dokumencie programu Word za pomocą Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
+Czy kiedykolwiek znalazłeś się po kolana w morzu poprawek dokumentów i zastanawiałeś się, kto co i kiedy przeniósł? Nie jesteś sam. Obsługa poprawek dokumentów może być żmudnym zadaniem, szczególnie w przypadku obszernych dokumentów. Ale nie martw się! Dzięki Aspose.Words dla .NET możesz łatwo zidentyfikować te wersje i zarządzać nimi. W tym przewodniku przeprowadzimy Cię krok po kroku przez proces uzyskiwania typów wersji słów w dokumencie programu Word za pomocą Aspose.Words dla .NET. Zatem zapnij pasy i zanurzmy się!
 
-## Krok 1: Ładowanie dokumentu
+## Warunki wstępne
 
-Pierwszym krokiem jest przesłanie dokumentu zawierającego poprawki.
+Zanim zabrudzimy sobie ręce kodem, potrzebujemy kilku rzeczy:
+
+1.  Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz ją z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
+3. Podstawowa znajomość języka C#: Znajomość języka programowania C# będzie korzystna.
+4.  Dokument programu Word ze zmianami: Upewnij się, że masz plik`.docx`plik ze prześledzonymi zmianami w celu przetestowania kodu.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#. Umożliwi to dostęp do funkcjonalności udostępnianych przez Aspose.Words dla .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using Aspose.Words.Revision;
+using System;
 ```
 
-## Krok 2: Przejdź przez akapity
+Podzielmy przykład na wiele kroków, aby lepiej zrozumieć i wdrożyć.
 
-Następnie przejrzymy akapity dokumentu i sprawdzimy typy wersji słów powiązanych z każdym akapitem.
+## Krok 1: Skonfiguruj katalog dokumentów
+
+Najpierw musisz zdefiniować ścieżkę do katalogu dokumentów. W tym miejscu będzie znajdować się dokument programu Word z wersjami.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do folderu dokumentów.
+
+## Krok 2: Załaduj dokument Word
+
+Następnie musisz załadować dokument Word do swojego projektu. Dokument ten powinien zawierać poprawki, które chcesz przeanalizować.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ Upewnij się, że plik`Revisions.docx` istnieje w określonym katalogu.
+
+## Krok 3: Uzyskaj dostęp do zbioru akapitów
+
+Teraz, gdy dokument jest załadowany, musisz uzyskać dostęp do akapitów w pierwszej sekcji treści dokumentu. Pomoże Ci to w przeglądaniu każdego akapitu w celu sprawdzenia poprawek.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     if (paragraphs[i].IsMoveFromRevision)
-         Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-     if (paragraphs[i].IsMoveToRevision)
-         Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-}
 ```
 
-### Przykładowy kod źródłowy dla opcji Pobierz typy wersji przy użyciu Aspose.Words dla .NET
+## Krok 4: Iteruj po akapitach i sprawdzaj, czy nie ma poprawek
 
-Oto pełny kod źródłowy umożliwiający uzyskanie typów wersji w dokumencie przy użyciu Aspose.Words dla .NET:
+Tutaj dzieje się magia. Będziesz przeglądać każdy akapit i sprawdzać, czy został przeniesiony (usunięty lub wstawiony).
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 for (int i = 0; i < paragraphs.Count; i++)
 {
-	 if (paragraphs[i].IsMoveFromRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-	 if (paragraphs[i].IsMoveToRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+    if (paragraphs[i].IsMoveFromRevision)
+        Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+    if (paragraphs[i].IsMoveToRevision)
+        Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
 }
 ```
+
+ Ta pętla przechodzi przez każdy akapit i wykorzystuje metodę`IsMoveFromRevision`I`IsMoveToRevision` właściwości, aby określić, czy akapit został przeniesiony (usunięty), czy przeniesiony (wstawiony).
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak uzyskać typy wersji słów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcjami, aby załadować dokument, przejrzeć akapity i sprawdzić typy recenzji słownych powiązanych z każdym akapitem. Teraz możesz zastosować tę wiedzę do analizowania recenzji słów we własnych dokumentach Word przy użyciu Aspose.Words dla .NET.
+I masz to! Za pomocą zaledwie kilku linii kodu możesz łatwo zidentyfikować typy wersji w dokumencie programu Word za pomocą Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że obsługa poprawek dokumentów jest dziecinnie prosta i pozwala skupić się na ważniejszych zadaniach. 
 
-### Często zadawane pytania dotyczące typów wersji słów
+## Często zadawane pytania
 
-#### P: Jak przesłać dokument do Aspose.Words dla .NET?
+### Czy mogę używać Aspose.Words dla .NET do śledzenia zmian wprowadzanych przez określonych użytkowników?
 
- O: Skorzystaj z`Document` klasa Aspose.Words dla .NET, aby załadować dokument z pliku. Można określić pełną ścieżkę dokumentu.
+Tak, Aspose.Words dla .NET zapewnia funkcjonalność umożliwiającą dostęp do szczegółów wersji, w tym autora zmian.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
 
-#### P: Jak przeglądać akapity w dokumencie w Aspose.Words dla .NET?
+ Absolutnie! Możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
 
- O: Skorzystaj z`Paragraphs` właściwość sekcji dokumentu, aby uzyskać zbiór akapitów. Następnie możesz użyć pętli, aby przeglądać każdy akapit.
+### Jak mogę zastosować tymczasową licencję na Aspose.Words dla .NET?
 
-```csharp
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     // Przetwórz każdy akapit tutaj
-}
-```
+ Możesz poprosić o licencję tymczasową i ją zastosować[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-#### P: Jak sprawdzić, czy akapit został przeniesiony (usunięty) w Aspose.Words dla .NET?
+### Gdzie mogę znaleźć bardziej szczegółową dokumentację Aspose.Words dla .NET?
 
- O: Użyj akapitu`IsMoveFromRevision`właściwość, aby sprawdzić, czy została przeniesiona (usunięta).
+ Szczegółowa dokumentacja dostępna jest na stronie[Strona Aspose](https://reference.aspose.com/words/net/).
 
-```csharp
-if (paragraph. IsMove
+### Czy mogę używać Aspose.Words dla .NET w projekcie niekomercyjnym?
 
-FromRevision)
-{
-     // Akapit został przeniesiony (usunięty)
-}
-```
-
-#### P: Jak sprawdzić, czy akapit został przeniesiony (wstawiony) w Aspose.Words dla .NET?
-
- O: Użyj akapitu`IsMoveToRevision` właściwość, aby sprawdzić, czy została przeniesiona (wstawiona).
-
-```csharp
-if (paragraph.IsMoveToRevision)
-{
-     // Akapit został przeniesiony (wstawiony)
-}
-```
+Tak, Aspose.Words dla .NET może być używany zarówno w projektach komercyjnych, jak i niekomercyjnych, ale pamiętaj o sprawdzeniu warunków licencji.

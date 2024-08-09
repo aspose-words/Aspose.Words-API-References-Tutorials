@@ -17,7 +17,7 @@ Antes de pasar al código, asegurémonos de que tiene todo lo que necesita para 
 
 1.  Aspose.Words para .NET: si aún no lo ha hecho, descargue la última versión desde[Página de lanzamientos de Aspose](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: configure su entorno de desarrollo. Visual Studio es una opción popular, pero puede utilizar cualquier IDE que admita .NET.
-3.  Licencia: si solo estás experimentando, puedes usar una[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para desbloquear la funcionalidad completa.
+3.  Licencia: si solo estás experimentando, puedes usar una[prueba gratuita](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para desbloquear la funcionalidad completa.
 4. Comprensión básica de C#: la familiaridad con la programación de C# le ayudará a seguir los ejemplos.
 
 ## Importar espacios de nombres
@@ -43,7 +43,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- En este paso, hemos configurado nuestro documento y nuestro generador. Pensar en`DocumentBuilder` como tu bolígrafo digital, listo para escribir y dibujar en tu documento de Word.
+ En este paso, hemos configurado nuestro documento y nuestro generador. Piensa en el`DocumentBuilder` como tu bolígrafo digital, listo para escribir y dibujar en tu documento de Word.
 
 ## Paso 2: inserte la forma recortada de las esquinas
 
@@ -80,7 +80,7 @@ Y así, su documento ahora contiene una forma personalizada de "Esquinas recorta
 
 ## Conclusión
 
-¡Ahí tienes! Agregar formas personalizadas a sus documentos de Word usando Aspose.Words para .NET es sencillo y puede mejorar enormemente el atractivo visual de sus documentos. Si sigue estos pasos, podrá insertar fácilmente una forma de "Esquinas recortadas" y asegurarse de que su documento cumpla con los estándares requeridos. ¡Feliz codificación!
+¡Ahí lo tienes! Agregar formas personalizadas a sus documentos de Word usando Aspose.Words para .NET es sencillo y puede mejorar enormemente el atractivo visual de sus documentos. Si sigue estos pasos, podrá insertar fácilmente una forma de "Esquinas recortadas" y asegurarse de que su documento cumpla con los estándares requeridos. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 

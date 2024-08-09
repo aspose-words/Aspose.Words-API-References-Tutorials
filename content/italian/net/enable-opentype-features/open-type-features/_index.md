@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/enable-opentype-features/open-type-features/
 ---
-## introduzione
+## Introduzione
 
 Sei pronto per tuffarti nel mondo delle funzionalità OpenType utilizzando Aspose.Words per .NET? Allaccia le cinture, perché stiamo per intraprendere un viaggio avvincente che non solo migliorerà i tuoi documenti Word, ma ti renderà anche un esperto di Aspose.Words. Iniziamo!
 
@@ -90,7 +90,7 @@ Questa riga di codice salva il documento in formato PDF, incorporando le funzion
 
 ## Conclusione
 
-E il gioco è fatto! Hai abilitato con successo le funzionalità OpenType nel tuo documento Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi sbloccare funzionalità tipografiche avanzate, assicurando che i tuoi documenti abbiano un aspetto professionale e raffinato.
+Ed ecco qua! Hai abilitato con successo le funzionalità OpenType nel tuo documento Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi sbloccare funzionalità tipografiche avanzate, assicurando che i tuoi documenti abbiano un aspetto professionale e raffinato.
 
 Ma non fermarti qui! Esplora altre funzionalità di Aspose.Words e scopri come puoi migliorare ulteriormente i tuoi documenti. Ricorda, la pratica rende perfetti, quindi continua a sperimentare e imparare.
 

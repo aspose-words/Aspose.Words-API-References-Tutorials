@@ -90,7 +90,7 @@ Ahora viene la parte interesante: insertar el documento de origen en el document
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Utilizando el`InsertDocument` método, podemos insertar el documento de origen completo en el documento de destino. El`ImportFormatMode.KeepSourceFormatting` garantiza que se conserve el formato del documento fuente.
+ Usando el`InsertDocument` método, podemos insertar el documento de origen completo en el documento de destino. El`ImportFormatMode.KeepSourceFormatting` garantiza que se conserve el formato del documento fuente.
 
 ## Paso 7: guardar el documento combinado
 
@@ -115,10 +115,10 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
  Sí, usando`ImportFormatMode.KeepSourceFormatting`, el formato del documento de origen se conserva cuando se inserta en el documento de destino.
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?  
- Sí, Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+ Sí, Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
 
 ### ¿Puedo automatizar este proceso?  
 ¡Absolutamente! El método descrito se puede incorporar a aplicaciones más grandes para automatizar las tareas de procesamiento de documentos.
 
 ### ¿Dónde puedo encontrar más recursos y soporte?  
-Para obtener más información, puede consultar el[documentación](https://reference.aspose.com/words/net/) , o visitar el[Foro de soporte](https://forum.aspose.com/c/words/8) para asistencia.
+Para obtener más información, puede consultar el[documentación](https://reference.aspose.com/words/net/) , o visitar el[foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda.

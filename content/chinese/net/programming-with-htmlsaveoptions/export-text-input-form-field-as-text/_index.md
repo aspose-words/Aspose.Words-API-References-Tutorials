@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### 我可以自定义导出的 HTML 吗？
 
-当然！Aspose.Words 提供了各种选项来自定义 HTML 输出。请参阅[文档](https://reference.aspose.com/words/net/)更多细节。
+当然！Aspose.Words 提供了各种选项来自定义 HTML 输出。请参阅[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### Aspose.Words 与 .NET Core 兼容吗？
 

@@ -19,7 +19,7 @@ Word 文書を結合しようとして、書式設定に困ったことはあり
 2. Visual Studio: 最新バージョンであればどれでも構いません。
 3. C# の基本的な理解: 魔法使いになる必要はありませんが、ある程度の知識があると役立ちます。
 
- Aspose.Wordsがプロジェクトにインストールされ、設定されていることを確認してください。方法がわからない場合は、[ドキュメンテーション](https://reference.aspose.com/words/net/)始めるのに最適な場所です。
+ Aspose.Wordsがプロジェクトにインストールされ、設定されていることを確認してください。方法がわからない場合は、[ドキュメント](https://reference.aspose.com/words/net/)始めるのに最適な場所です。
 
 ## 名前空間のインポート
 
@@ -82,7 +82,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。さまざまな形式の文書を作成、変更、変換できます。
 
 ### Aspose.Words for .NET をインストールするにはどうすればよいですか?
-ダウンロードはこちらから[Webサイト](https://releases.aspose.com/words/net/)インストール手順に従ってください。[ドキュメンテーション](https://reference.aspose.com/words/net/).
+ダウンロードはこちらから[Webサイト](https://releases.aspose.com/words/net/)インストール手順に従ってください。[ドキュメント](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words を無料で使用できますか?
  Aspose.Wordsは、[無料トライアル](https://releases.aspose.com/)機能が制限されています。フルアクセスするにはライセンスを購入する必要があります[ここ](https://purchase.aspose.com/buy).

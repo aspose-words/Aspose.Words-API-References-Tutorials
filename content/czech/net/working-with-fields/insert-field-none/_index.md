@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-field-none/
 ---
-## Úvod
+## Zavedení
 
 Cítili jste se někdy zavaleni opakujícími se úkoly při vytváření a správě dokumentů? Představte si, že máte kouzelnou hůlku, která by tyto všední úkoly zautomatizovala a uvolnila váš čas pro kreativnější úsilí. Tak to máš štěstí! Aspose.Words for .NET je ta kouzelná hůlka. Je to výkonná knihovna, která vám umožňuje bez námahy manipulovat s dokumenty aplikace Word. Ať už jste ostřílený vývojář nebo teprve začínáte, tato příručka vás provede spletitostí používání Aspose.Words pro .NET a zaměří se na vkládání polí do vašich dokumentů. Jste připraveni se ponořit? Začněme!
 
@@ -15,7 +15,7 @@ Cítili jste se někdy zavaleni opakujícími se úkoly při vytváření a spr�
 
 Než se vrhneme do vzrušujícího světa Aspose.Words pro .NET, je třeba mít připraveno několik věcí:
 
-1.  Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Pokud ji ještě nemáte, můžete si ji stáhnout z[tady](https://visualstudio.microsoft.com/downloads/).
+1.  Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Pokud ji ještě nemáte, můžete si ji stáhnout z[zde](https://visualstudio.microsoft.com/downloads/).
 2.  Aspose.Words for .NET: Budete potřebovat knihovnu Aspose.Words. Můžete si jej stáhnout z[stránka ke stažení](https://releases.aspose.com/words/net/).
 3. .NET Framework: Ujistěte se, že váš projekt cílí na kompatibilní verzi .NET Framework. Aspose.Words podporuje rozhraní .NET Framework 2.0 nebo vyšší, .NET Core a .NET 5.0 nebo novější.
 4. Základní znalosti C#: Základní znalost programování v C# vám pomůže postupovat podle příkladů.
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
  Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou ke složce dokumentů. Zde bude uložen váš nový dokument.
 
-## Krok 2: Vytvořte Document a DocumentBuilder
+## Krok 2: Vytvořte dokument a DocumentBuilder
 
 Nyní, když máme nastavený adresář, pojďme vytvořit nový dokument a DocumentBuilder. DocumentBuilder je jako naše kouzelné pero, které nám umožňuje přidávat obsah do dokumentu.
 
@@ -70,11 +70,11 @@ Nakonec náš dokument uložíme. Zde se všechna vaše tvrdá práce spojí do 
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-A to je vše! Právě jste vytvořili dokument aplikace Word a vložili pole pomocí Aspose.Words for .NET. Docela pěkné, že?
+A je to! Právě jste vytvořili dokument aplikace Word a vložili pole pomocí Aspose.Words for .NET. Docela pěkné, že?
 
 ## Závěr
 
-Tady to máte, lidi! Vydali jsme se na cestu přes základy používání Aspose.Words pro .NET k automatizaci tvorby dokumentů a manipulace s nimi. Od nastavení prostředí po vkládání polí a ukládání dokumentu, každý krok směřuje ke zvládnutí tohoto mocného nástroje. Ať už chcete zefektivnit svůj pracovní postup nebo vytvořit dynamické dokumenty, Aspose.Words pro .NET vám pomůže. Takže do toho a vyzkoušejte to. Kdo ví? Možná budete mít čas navíc na prozkoumání nových dobrodružství. Šťastné kódování!
+Tady to máte, lidi! Vydali jsme se na cestu přes základy používání Aspose.Words pro .NET k automatizaci tvorby dokumentů a manipulace s nimi. Od nastavení prostředí po vkládání polí a ukládání dokumentu, každý krok směřuje ke zvládnutí tohoto mocného nástroje. Ať už chcete zefektivnit svůj pracovní postup nebo vytvořit dynamické dokumenty, Aspose.Words pro .NET vám pomůže. Takže do toho a vyzkoušejte to. kdo ví? Možná budete mít čas navíc na prozkoumání nových dobrodružství. Šťastné kódování!
 
 ## FAQ
 
@@ -88,7 +88,7 @@ Ano, Aspose.Words for .NET podporuje .NET Core, .NET 5.0 a novější verze, tak
  Můžete vložit různé typy polí pomocí`DocumentBuilder.InsertField`metoda. Každý typ pole má svou specifickou metodu a parametry.
 
 ### Je Aspose.Words for .NET zdarma k použití?
- Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost si možná budete muset zakoupit licenci. Můžete prozkoumat možnosti cen a licencí[tady](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost si možná budete muset zakoupit licenci. Můžete prozkoumat možnosti cen a licencí[zde](https://purchase.aspose.com/buy).
 
 ### Kde najdu další dokumentaci a podporu pro Aspose.Words pro .NET?
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/) a získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/) a získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).

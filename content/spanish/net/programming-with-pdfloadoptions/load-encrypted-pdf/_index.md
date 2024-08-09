@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Aquí creamos un nuevo`PdfSaveOptions` objeto y establecer su`EncryptionDetails` . La contraseña`"Aspose"` se utiliza para cifrar el PDF.
+ Aquí creamos un nuevo`PdfSaveOptions` objeto y establecer su`EncryptionDetails` . la contraseña`"Aspose"` se utiliza para cifrar el PDF.
 
 ## Paso 4: guardar el PDF cifrado
 
@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ¡Y ahí lo tienes! Cargar un PDF cifrado con Aspose.Words para .NET no sólo es fácil: es francamente divertido. Si sigue estos pasos, desbloqueará la capacidad de manejar el cifrado de PDF como un profesional. Recuerde, la clave para dominar cualquier herramienta es la práctica, así que no dude en experimentar y explorar.
 
- Si tiene alguna pregunta o necesita más ayuda, el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/)y[Foro de soporte](https://forum.aspose.com/c/words/8) son excelentes lugares para comenzar.
+ Si tiene alguna pregunta o necesita más ayuda, el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/)y[foro de soporte](https://forum.aspose.com/c/words/8) son excelentes lugares para comenzar.
 
 ## Preguntas frecuentes
 

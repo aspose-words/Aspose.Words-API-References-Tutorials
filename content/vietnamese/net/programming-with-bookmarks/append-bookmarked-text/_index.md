@@ -9,13 +9,13 @@ url: /vi/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thử nối thêm văn bản từ một phần được đánh dấu trong tài liệu Word và thấy việc này phức tạp chưa? Bạn may mắn! Hướng dẫn này sẽ hướng dẫn bạn qua quy trình sử dụng Aspose.Words cho .NET. Chúng tôi sẽ chia nó thành các bước đơn giản để bạn có thể dễ dàng làm theo. Hãy cùng bắt tay vào và thêm văn bản được đánh dấu đó vào như một người chuyên nghiệp!
+Này! Bạn đã bao giờ thử nối thêm văn bản từ một phần được đánh dấu trong tài liệu Word và thấy việc này phức tạp chưa? Bạn thật may mắn! Hướng dẫn này sẽ hướng dẫn bạn qua quy trình sử dụng Aspose.Words cho .NET. Chúng tôi sẽ chia nó thành các bước đơn giản để bạn có thể dễ dàng làm theo. Hãy cùng bắt tay vào và thêm văn bản được đánh dấu đó vào như một người chuyên nghiệp!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có mọi thứ bạn cần:
 
--  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt nó. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt nó. Nếu không, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Bất kỳ môi trường phát triển .NET nào như Visual Studio.
 - Kiến thức cơ bản về C#: Hiểu các khái niệm lập trình C# cơ bản sẽ giúp ích.
 - Tài liệu Word có dấu trang: Một tài liệu Word có dấu trang được thiết lập mà chúng tôi sẽ sử dụng để nối văn bản từ đó.
@@ -104,7 +104,7 @@ dstDoc.Save("appended_document.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã nối thành công văn bản từ phần được đánh dấu trong tài liệu Word bằng Aspose.Words for .NET. Công cụ mạnh mẽ này giúp việc thao tác tài liệu trở nên dễ dàng và giờ đây bạn đã có thêm một thủ thuật nữa. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã nối thành công văn bản từ phần được đánh dấu trong tài liệu Word bằng Aspose.Words for .NET. Công cụ mạnh mẽ này giúp việc thao tác tài liệu trở nên dễ dàng và giờ đây bạn đã có thêm một thủ thuật nữa. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -115,7 +115,7 @@ Có, bạn có thể lặp lại quy trình cho từng dấu trang và nối th�
 Ví dụ hiện tại giả định rằng chúng có cùng cha mẹ. Đối với các bậc cha mẹ khác nhau, cần phải xử lý phức tạp hơn.
 
 ### Tôi có thể giữ nguyên định dạng ban đầu của văn bản được thêm vào không?
- Tuyệt đối! Các`ImportFormatMode.KeepSourceFormatting` đảm bảo định dạng ban đầu được giữ nguyên.
+ Tuyệt đối! các`ImportFormatMode.KeepSourceFormatting` đảm bảo định dạng ban đầu được giữ nguyên.
 
 ### Có thể nối văn bản vào một vị trí cụ thể trong tài liệu đích không?
 Có, bạn có thể nối văn bản vào bất kỳ vị trí nào bằng cách điều hướng đến nút mong muốn trong tài liệu đích.

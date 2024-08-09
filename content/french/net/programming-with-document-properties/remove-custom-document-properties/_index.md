@@ -9,13 +9,13 @@ url: /fr/net/programming-with-document-properties/remove-custom-document-propert
 ---
 ## Introduction
 
-Vous êtes-vous déjà retrouvé mêlé au réseau de propriétés de documents personnalisées dans vos fichiers Word ? Tu n'es pas seul! La gestion de ces propriétés peut s'avérer fastidieuse, mais avec Aspose.Words for .NET, vous pouvez rationaliser ce processus sans effort. Dans ce didacticiel, nous vous guiderons dans la suppression des propriétés de document personnalisées à l'aide d'Aspose.Words for .NET. Que vous soyez un développeur chevronné ou que vous débutiez tout juste, vous trouverez ce guide simple et direct. Prêt à plonger ? Commençons!
+Vous êtes-vous déjà retrouvé mêlé au réseau de propriétés de documents personnalisées dans vos fichiers Word ? Vous n'êtes pas seul ! La gestion de ces propriétés peut s'avérer fastidieuse, mais avec Aspose.Words for .NET, vous pouvez rationaliser ce processus sans effort. Dans ce didacticiel, nous vous guiderons dans la suppression des propriétés de document personnalisées à l'aide d'Aspose.Words for .NET. Que vous soyez un développeur chevronné ou que vous débutiez tout juste, vous trouverez ce guide simple et direct. Prêt à plonger ? Commençons !
 
 ## Conditions préalables
 
 Avant de passer au code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words pour la bibliothèque .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour la bibliothèque .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. .NET Framework : assurez-vous que .NET Framework est installé sur votre ordinateur.
 3. Connaissance de base de C# : Une connaissance de la programmation C# est utile.
 
@@ -90,7 +90,7 @@ doc.Save(savePath);
 
 ## Conclusion
 
-Et voila! Supprimer les propriétés de documents personnalisées dans les fichiers Word à l'aide d'Aspose.Words pour .NET est aussi simple que bonjour. En suivant ces étapes, vous pouvez gérer efficacement les propriétés de votre document, ce qui vous fera gagner du temps et des efforts. Que vous souhaitiez nettoyer des métadonnées ou automatiser le traitement de documents, Aspose.Words for .NET est là pour vous. Bon codage !
+Et voilà ! Supprimer les propriétés de documents personnalisées dans les fichiers Word à l'aide d'Aspose.Words pour .NET est aussi simple que bonjour. En suivant ces étapes, vous pouvez gérer efficacement les propriétés de votre document, ce qui vous fera gagner du temps et des efforts. Que vous souhaitiez nettoyer des métadonnées ou automatiser le traitement de documents, Aspose.Words for .NET est là pour vous. Bon codage !
 
 ## FAQ
 
@@ -104,7 +104,7 @@ Aspose.Words for .NET est spécialement conçu pour les applications .NET. Cepen
  Tu peux[téléchargez un essai gratuit](https://releases.aspose.com/) sur le site Web d'Aspose.
 
 ### 4. Où puis-je trouver d'autres didacticiels sur Aspose.Words pour .NET ?
- Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour plus de tutoriels et d'exemples.
+ Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus de tutoriels et d'exemples.
 
 ### 5. Comment puis-je acheter une licence pour Aspose.Words pour .NET ?
  Tu peux[acheter une licence](https://purchase.aspose.com/buy) directement depuis le site Aspose.

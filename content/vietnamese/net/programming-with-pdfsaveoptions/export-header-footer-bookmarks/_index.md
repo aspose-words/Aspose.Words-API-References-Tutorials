@@ -52,7 +52,7 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
- Ở đây, chúng tôi đang thiết lập`PdfSaveOptions` . Các`DefaultBookmarksOutlineLevel` thuộc tính đặt mức phác thảo cho dấu trang và`HeaderFooterBookmarksExportMode` thuộc tính đảm bảo rằng chỉ lần xuất hiện đầu tiên của dấu trang trong đầu trang và chân trang mới được xuất.
+ Ở đây, chúng tôi đang thiết lập`PdfSaveOptions` . các`DefaultBookmarksOutlineLevel` thuộc tính đặt mức phác thảo cho dấu trang và`HeaderFooterBookmarksExportMode` thuộc tính đảm bảo rằng chỉ lần xuất hiện đầu tiên của dấu trang trong đầu trang và chân trang mới được xuất.
 
 ## Bước 3: Lưu tài liệu dưới dạng PDF
 
@@ -66,13 +66,13 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", 
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng xuất dấu trang từ đầu trang và chân trang của tài liệu Word sang PDF bằng Aspose.Words for .NET. Phương pháp này đảm bảo rằng các công cụ hỗ trợ điều hướng quan trọng trong tài liệu của bạn được giữ nguyên ở định dạng PDF, giúp người đọc điều hướng qua tài liệu của bạn dễ dàng hơn.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng xuất dấu trang từ đầu trang và chân trang của tài liệu Word sang PDF bằng Aspose.Words for .NET. Phương pháp này đảm bảo rằng các công cụ hỗ trợ điều hướng quan trọng trong tài liệu của bạn được giữ nguyên ở định dạng PDF, giúp người đọc điều hướng qua tài liệu của bạn dễ dàng hơn.
 
 ## Câu hỏi thường gặp
 
 ### Tôi có thể xuất tất cả dấu trang từ tài liệu Word sang PDF không?
 
- Vâng, bạn có thể. bên trong`PdfSaveOptions`, bạn có thể điều chỉnh cài đặt để bao gồm tất cả dấu trang nếu cần.
+ Vâng, bạn có thể. trong`PdfSaveOptions`, bạn có thể điều chỉnh cài đặt để bao gồm tất cả dấu trang nếu cần.
 
 ### Nếu tôi cũng muốn xuất dấu trang từ nội dung tài liệu thì sao?
 

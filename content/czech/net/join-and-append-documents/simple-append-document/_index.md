@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/simple-append-document/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přistihli jste se někdy, že potřebujete hladce sloučit dva dokumenty aplikace Word? Tak to máš štěstí! Dnes se ponoříme do světa Aspose.Words for .NET, výkonné knihovny, která vám umožní programově manipulovat s dokumenty Wordu. Konkrétně se zaměříme na to, jak připojit jeden dokument k druhému v několika jednoduchých krocích. Ať už vytváříte sestavy, kombinujete části projektu nebo jen zjednodušujete správu dokumentů, tento průvodce vám pomůže. Takže, pojďme začít!
+Ahoj! Přistihli jste se někdy, že potřebujete hladce sloučit dva dokumenty aplikace Word? Tak to máš štěstí! Dnes se ponoříme do světa Aspose.Words for .NET, výkonné knihovny, která vám umožní programově manipulovat s dokumenty Wordu. Konkrétně se zaměříme na to, jak připojit jeden dokument k druhému v několika jednoduchých krocích. Ať už vytváříte sestavy, kombinujete části projektu nebo jen zjednodušujete správu dokumentů, tento průvodce vám pomůže. Takže, pojďme začít!
 
 ## Předpoklady
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si knihovnu z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si knihovnu z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Můžete použít Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 3. Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
 4. Dva dokumenty Word: Ujistěte se, že máte dva dokumenty Word připravené ke sloučení.
@@ -60,7 +60,7 @@ Nyní načteme dokument, který chcete připojit. Toto je váš zdrojový dokume
 Document srcDoc = new Document(dataDir + "Document source.docx");
 ```
 
- Tady vytváříme nový`Document` objekt a načtení souboru s názvem "Document source.docx" z vašeho adresáře.
+ Zde vytváříme nový`Document` objekt a načtení souboru s názvem "Document source.docx" z vašeho adresáře.
 
 ## Krok 4: Vložte cílový dokument
 
@@ -106,11 +106,11 @@ tady to máte! Úspěšně jste přidali jeden dokument aplikace Word k jinému 
 
 ### Co když mají moje dokumenty jiné formátování?
 
- Způsob zpracování formátování můžete ovládat pomocí`ImportFormatMode` parametr. Možnosti zahrnují`KeepSourceFormatting`, `UseDestinationStyles`, a více.
+ Způsob zpracování formátování můžete ovládat pomocí`ImportFormatMode` parametr. Možnosti zahrnují`KeepSourceFormatting`, `UseDestinationStyles`a další.
 
 ### Je Aspose.Words zdarma k použití?
 
- Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/) . Pro plnou funkčnost si budete muset zakoupit licenci od[tady](https://purchase.aspose.com/buy).
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) . Pro plnou funkčnost si budete muset zakoupit licenci od[zde](https://purchase.aspose.com/buy).
 
 ### Mohu připojit dokumenty různých formátů?
 

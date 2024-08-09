@@ -126,7 +126,7 @@ using Aspose.Words;
 
 ### Aspose.Words를 사용하려면 라이센스가 필요합니까?
 
- 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 확장된 기능을 위해.
+ 다음으로 시작할 수 있습니다.[무료 평가판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 확장된 기능을 위해.
 
 ### DOCX, DOC 등 다양한 유형의 문서를 추가할 수 있나요?
 

@@ -67,7 +67,7 @@ Deze eigenschappen vertellen Aspose.Words om eventuele grammaticale en spelfoute
 
 ## Stap 5: Sla het gewijzigde document op
 
-Ten slotte moet u het document opslaan nadat u de foutweergaven hebt ingeschakeld. Hiermee wordt een nieuw bestand gemaakt met de wijzigingen die u hebt aangebracht.
+Ten slotte moet u het document opslaan nadat u de foutweergaven hebt ingeschakeld. Hierdoor wordt een nieuw bestand gemaakt met de wijzigingen die u hebt aangebracht.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpellingErrors.docx");

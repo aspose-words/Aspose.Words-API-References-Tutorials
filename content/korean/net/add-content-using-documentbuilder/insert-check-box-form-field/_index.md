@@ -14,11 +14,11 @@ url: /ko/net/add-content-using-documentbuilder/insert-check-box-form-field/
 
 핵심을 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
--  .NET 라이브러리용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 다운로드하세요.[여기](https://releases.aspose.com/words/net/) . 다음을 선택할 수도 있습니다.[무료 시험판](https://releases.aspose.com/) 도서관을 탐색 중이라면.
+-  .NET 라이브러리용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 다운로드하세요.[여기](https://releases.aspose.com/words/net/) . 다음을 선택할 수도 있습니다.[무료 평가판](https://releases.aspose.com/) 도서관을 탐색 중이라면.
 - 개발 환경: Visual Studio와 같은 IDE가 여러분의 놀이터가 될 것입니다.
 - C#의 기본 이해: 모든 내용을 자세히 다루지만 C#에 대한 기본적인 이해가 도움이 됩니다.
 
-시작할 준비가 되셨나요? 시작하자!
+시작할 준비가 되셨나요? 시작해 봅시다!
 
 ## 필요한 네임스페이스 가져오기
 
@@ -98,7 +98,7 @@ Aspose.Words for .NET은 개발자가 .NET을 사용하여 프로그래밍 방�
 
 ### .NET용 Aspose.Words를 어떻게 얻을 수 있나요?
 
- .NET용 Aspose.Words를 다운로드할 수 있습니다.[웹사이트](https://releases.aspose.com/words/net/) . 에 대한 옵션도 있습니다.[무료 시험판](https://releases.aspose.com/) 그 기능을 탐색하고 싶다면.
+ .NET용 Aspose.Words를 다운로드할 수 있습니다.[웹사이트](https://releases.aspose.com/words/net/) . 에 대한 옵션도 있습니다.[무료 평가판](https://releases.aspose.com/) 그 기능을 탐색하고 싶다면.
 
 ### .NET 애플리케이션에서 Aspose.Words for .NET을 사용할 수 있나요?
 

@@ -16,7 +16,7 @@ A listáknak két fő típusa van: felsorolásjeles és számozott. Lehetővé t
 
 ## A környezet beállítása
 
-Mielőtt belemerülnénk a listák létrehozásába és kezelésébe, győződjön meg arról, hogy telepítve van az Aspose.Words for Python könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/python/) . Ezenkívül tekintse meg az API dokumentációját a következő címen:[ez a link](https://reference.aspose.com/words/python-net/) részletes információkért.
+Mielőtt belemerülnénk a listák létrehozásába és kezelésébe, győződjön meg arról, hogy telepítve van az Aspose.Words for Python könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/python/) . Ezenkívül tekintse meg az API dokumentációját a következő címen:[ezt a linket](https://reference.aspose.com/words/python-net/) részletes információkért.
 
 ## Felsorolásos listák létrehozása
 
@@ -115,7 +115,7 @@ Ebben az oktatóanyagban megvizsgáltuk, hogyan hozhat létre és kezelhet list�
 ## GYIK
 
 ### Hogyan telepíthetem az Aspose.Words for Python programot?
- A könyvtárat innen töltheti le[ez a link](https://releases.aspose.com/words/python/) és kövesse a dokumentációban található telepítési utasításokat.
+ A könyvtárat innen töltheti le[ezt a linket](https://releases.aspose.com/words/python/) és kövesse a dokumentációban található telepítési utasításokat.
 
 ### Testreszabhatom a listáim számozási stílusát?
 Teljesen! Az Aspose.Words Python lehetővé teszi a számozási formátumok, a felsorolás-stílusok és az igazítás testreszabását, hogy listáit az Ön egyedi igényeihez igazítsa.

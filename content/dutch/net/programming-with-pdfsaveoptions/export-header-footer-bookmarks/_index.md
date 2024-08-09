@@ -72,7 +72,7 @@ En daar heb je het! Door deze stappen te volgen, kunt u eenvoudig bladwijzers ui
 
 ### Kan ik alle bladwijzers van het Word-document naar PDF exporteren?
 
- Ja, dat kan. In de`PdfSaveOptions`, kunt u indien nodig de instellingen aanpassen om alle bladwijzers op te nemen.
+ Ja, dat kan. In de`PdfSaveOptions`, kunt u indien nodig de instellingen aanpassen zodat alle bladwijzers worden opgenomen.
 
 ### Wat moet ik doen als ik bladwijzers ook uit de hoofdtekst van het document wil exporteren?
 

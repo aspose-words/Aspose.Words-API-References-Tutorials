@@ -33,7 +33,7 @@ Bontsuk le a folyamatot egyértelmű lépésekre:
 
 ## 1. lépés: Az Aspose.Words dokumentum és a DocumentBuilder inicializálása
 
- Először inicializáljon egy új Aspose.Words-t`Document` tárgy és a`DocumentBuilder` valakivel együtt dolgozni:
+ Először inicializáljon egy új Aspose.Words-t`Document` tárgy és a`DocumentBuilder` dolgozni:
 
 ```csharp
 // Inicializálja a dokumentumot és a DocumentBuildert

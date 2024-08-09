@@ -9,13 +9,13 @@ url: /vi/net/programming-with-document-properties/remove-custom-document-propert
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình bị vướng vào mạng lưới các thuộc tính tài liệu tùy chỉnh trong tệp Word của mình chưa? Bạn không cô đơn! Việc quản lý các thuộc tính này có thể gặp rắc rối, nhưng với Aspose.Words dành cho .NET, bạn có thể hợp lý hóa quy trình này một cách dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách xóa các thuộc tính tài liệu tùy chỉnh bằng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn hay chỉ mới bắt đầu, bạn sẽ thấy hướng dẫn này đơn giản và dễ hiểu. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Bạn đã bao giờ thấy mình bị vướng vào mạng lưới các thuộc tính tài liệu tùy chỉnh trong tệp Word của mình chưa? Bạn không đơn độc! Việc quản lý các thuộc tính này có thể gặp rắc rối, nhưng với Aspose.Words dành cho .NET, bạn có thể hợp lý hóa quy trình này một cách dễ dàng. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách xóa các thuộc tính tài liệu tùy chỉnh bằng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn hay chỉ mới bắt đầu, bạn sẽ thấy hướng dẫn này đơn giản và dễ hiểu. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-1.  Aspose.Words for .NET Thư viện: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Thư viện: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework trên máy của mình.
 3. Kiến thức cơ bản về C#: Làm quen với lập trình C# rất hữu ích.
 
@@ -90,7 +90,7 @@ doc.Save(savePath);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Loại bỏ các thuộc tính tài liệu tùy chỉnh trong tệp Word bằng Aspose.Words cho .NET dễ dàng như ăn bánh. Bằng cách làm theo các bước này, bạn có thể quản lý các thuộc tính tài liệu của mình một cách hiệu quả, tiết kiệm thời gian và công sức. Cho dù bạn đang dọn dẹp siêu dữ liệu hay tự động hóa quá trình xử lý tài liệu, Aspose.Words for .NET đều có thể hỗ trợ bạn. Chúc mừng mã hóa!
+Và bạn có nó! Loại bỏ các thuộc tính tài liệu tùy chỉnh trong tệp Word bằng Aspose.Words cho .NET dễ dàng như ăn bánh. Bằng cách làm theo các bước này, bạn có thể quản lý các thuộc tính tài liệu của mình một cách hiệu quả, tiết kiệm thời gian và công sức. Cho dù bạn đang dọn dẹp siêu dữ liệu hay tự động hóa quá trình xử lý tài liệu, Aspose.Words for .NET đều có thể hỗ trợ bạn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -101,10 +101,10 @@ Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với 
 Aspose.Words for .NET được thiết kế đặc biệt cho các ứng dụng .NET. Tuy nhiên, Aspose cung cấp các thư viện tương tự cho Java và các nền tảng khác.
 
 ### 3. Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?
- Bạn có thể[tải về dùng thử miễn phí](https://releases.aspose.com/) từ trang web Aspose.
+ bạn có thể[tải về dùng thử miễn phí](https://releases.aspose.com/) từ trang web Aspose.
 
 ### 4. Tôi có thể tìm thêm hướng dẫn về Aspose.Words cho .NET ở đâu?
  Kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết thêm hướng dẫn và ví dụ.
 
 ### 5. Làm cách nào tôi có thể mua giấy phép Aspose.Words cho .NET?
- Bạn có thể[mua giấy phép](https://purchase.aspose.com/buy) trực tiếp từ trang web Aspose.
+ bạn có thể[mua giấy phép](https://purchase.aspose.com/buy) trực tiếp từ trang web Aspose.

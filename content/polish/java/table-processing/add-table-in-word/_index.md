@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Krok 6: Utwórz tabelę i dodaj wiersze
 
- Stwórz nowy`Table`obiekt i określ liczbę wierszy i kolumn.
+ Utwórz nowy`Table`obiekt i określ liczbę wierszy i kolumn.
 
 ```java
 Table table = new Table(doc);

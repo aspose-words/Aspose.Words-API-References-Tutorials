@@ -47,7 +47,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
 ## Schritt 2: Einrichten des Abschnittsumbruchs:
 
- Greife auf ... zu`FirstSection` Eigenschaft des Quelldokuments (`srcDoc`), um den ersten Abschnitt zu bearbeiten. Die Seitennummerierung dieses Abschnitts wird neu gestartet.
+ Zugriff auf die`FirstSection` Eigenschaft des Quelldokuments (`srcDoc`), um den ersten Abschnitt zu bearbeiten. Die Seitennummerierung dieses Abschnitts wird neu gestartet.
 
  Nutzen Sie die`PageSetup` Eigenschaft des Abschnitts, um sein Layoutverhalten zu konfigurieren.
 
@@ -71,7 +71,7 @@ Nachdem das Quelldokument nun mit der gewünschten Seitenumbruch- und Nummerieru
 
  Nutzen Sie die`AppendDocument` Methode des Zieldokuments (`dstDoc`), um den Quellinhalt nahtlos hinzuzufügen.
 
-Übergeben Sie das Quelldokument (`srcDoc` ) und ein`ImportFormatMode.KeepSourceFormatting` Argument für diese Methode. Dieses Argument behält beim Anhängen die ursprüngliche Formatierung des Quelldokuments bei.
+Übergeben Sie das Quelldokument (`srcDoc` ) und eine`ImportFormatMode.KeepSourceFormatting` Argument für diese Methode. Dieses Argument behält beim Anhängen die ursprüngliche Formatierung des Quelldokuments bei.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

@@ -2,101 +2,111 @@
 title: Liste in jedem Abschnitt neu starten
 linktitle: Liste in jedem Abschnitt neu starten
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine nummerierte Liste auf jeden Abschnitt in einem Word-Dokument zurücksetzen.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Listen in jedem Abschnitt in Word-Dokumenten neu starten. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung, um Listen effektiv zu verwalten.
 type: docs
 weight: 10
 url: /de/net/working-with-list/restart-list-at-each-section/
 ---
+## Einführung
 
-In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET eine nummerierte Liste auf jeden Abschnitt in einem Word-Dokument zurücksetzen. Wir erklären den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
+Das Erstellen strukturierter und gut organisierter Dokumente kann sich manchmal wie das Lösen eines komplexen Puzzles anfühlen. Ein Teil dieses Puzzles ist die effektive Verwaltung von Listen, insbesondere wenn Sie möchten, dass sie in jedem Abschnitt neu gestartet werden. Mit Aspose.Words für .NET können Sie dies nahtlos erreichen. Lassen Sie uns einen Blick darauf werfen, wie Sie mit Aspose.Words für .NET Listen in jedem Abschnitt Ihrer Word-Dokumente neu starten können.
 
- Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und konfiguriert ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie von[[Originaltext von Aspose.Releases]https://releases.aspose.com/words/net/.
+## Voraussetzungen
 
-## Schritt 1: Erstellen des Dokuments und der Liste
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-Erstellen Sie zunächst ein neues Dokument und fügen Sie eine standardmäßige nummerierte Liste hinzu:
+1.  Aspose.Words für .NET: Laden Sie die neueste Version herunter und installieren Sie sie vom[Aspose-Veröffentlichungen](https://releases.aspose.com/words/net/) Seite.
+2. .NET-Umgebung: Richten Sie Ihre Entwicklungsumgebung mit installiertem .NET ein.
+3. Grundlegende Kenntnisse in C#: Vertrautheit mit der Programmiersprache C# wird empfohlen.
+4.  Aspose-Lizenz: Sie können sich für eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) wenn Sie keines haben.
+
+## Namespaces importieren
+
+Stellen Sie vor dem Schreiben des Codes sicher, dass Sie die erforderlichen Namespaces importieren:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Lassen Sie uns den Vorgang nun in mehrere Schritte unterteilen, damit er leichter nachvollziehbar ist.
+
+## Schritt 1: Initialisieren Sie das Dokument
+
+Zuerst müssen Sie eine neue Dokumentinstanz erstellen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## Schritt 2: Elemente zur Liste hinzufügen
+## Schritt 2: Fügen Sie eine nummerierte Liste hinzu
 
- Verwenden Sie dann ein`DocumentBuilder` um Elemente zur Liste hinzuzufügen. Sie können eine Schleife verwenden, um mehrere Elemente zur Liste hinzuzufügen:
+Fügen Sie als Nächstes dem Dokument eine nummerierte Liste hinzu. Diese Liste folgt einem Standardnummerierungsformat.
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## Schritt 3: Auf die Liste zugreifen und Neustarteigenschaft festlegen
+
+Rufen Sie die soeben erstellte Liste ab und legen Sie deren`IsRestartAtEachSection`Eigentum an`true`Dadurch wird sichergestellt, dass die Nummerierung der Liste bei jedem neuen Abschnitt neu beginnt.
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## Schritt 4: Erstellen Sie einen Dokumentgenerator und verknüpfen Sie die Liste
+
+ Erstellen Sie ein`DocumentBuilder` um Inhalte in das Dokument einzufügen und mit der Liste zu verknüpfen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## Schritt 5: Listenelemente hinzufügen und Abschnittsumbruch einfügen
+
+Fügen Sie nun Elemente zur Liste hinzu. Um die Neustartfunktion zu veranschaulichen, fügen wir nach einer bestimmten Anzahl von Elementen einen Abschnittsumbruch ein.
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-In diesem Beispiel fügen wir nach dem 15. Listenelement einen Abschnittsumbruch ein, um die Neunummerierung zu veranschaulichen.
+## Schritt 6: Speichern Sie das Dokument
 
-## Schritt 3: Speichern Sie das geänderte Dokument
-
-Speichern Sie abschließend das geänderte Dokument:
+Speichern Sie das Dokument abschließend mit den entsprechenden Optionen, um die Konformität sicherzustellen.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-So! Sie haben mit Aspose.Words für .NET erfolgreich eine nummerierte Liste auf jeden Abschnitt in einem Word-Dokument zurückgesetzt.
+## Abschluss
 
-### Beispielquellcode zum Zurücksetzen der Liste in jedem Abschnitt
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie mit Aspose.Words für .NET mühelos Listen in jedem Abschnitt Ihrer Word-Dokumente neu starten. Diese Funktion ist unglaublich nützlich, um gut strukturierte Dokumente zu erstellen, die separate Abschnitte mit eigener Listennummerierung erfordern. Mit Aspose.Words wird die Erledigung solcher Aufgaben zum Kinderspiel, sodass Sie sich auf die Erstellung hochwertiger Inhalte konzentrieren können.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## Häufig gestellte Fragen
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### Kann ich Listen für verschiedene Listentypen in jedem Abschnitt neu starten?
+Ja, Aspose.Words für .NET ermöglicht Ihnen, verschiedene Listentypen neu zu starten, einschließlich Aufzählungs- und nummerierter Listen.
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### Was ist, wenn ich das Nummerierungsformat anpassen möchte?
+ Sie können das Nummerierungsformat anpassen, indem Sie die`ListTemplate` -Eigenschaft beim Erstellen der Liste.
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### Gibt es eine Begrenzung für die Anzahl der Elemente in einer Liste?
+Nein, es gibt keine bestimmte Begrenzung für die Anzahl der Elemente, die Sie mit Aspose.Words für .NET in einer Liste haben können.
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### Kann ich diese Funktion in anderen Dokumentformaten wie PDF verwenden?
+Ja, Sie können Aspose.Words verwenden, um Word-Dokumente in andere Formate wie PDF zu konvertieren und dabei die Listenstruktur beizubehalten.
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und ihn Ihren spezifischen Anforderungen entsprechend ändern.
-
-### Häufig gestellte Fragen
-
-#### F: Wie kann ich in Aspose.Words in jedem Abschnitt eine Liste neu starten?
-
- A: Um eine Liste in jedem Abschnitt in Aspose.Words neu zu starten, müssen Sie eine Instanz des`List`Klasse und weisen Sie ihr eine nummerierte Liste zu. Anschließend können Sie mit dem`List.IsRestartAtEachSection` -Eigenschaft, um anzugeben, dass die Nummerierung in jedem Abschnitt neu gestartet werden soll. Sie können diese Liste mit einem oder mehreren Abschnitten Ihres Dokuments verknüpfen, sodass die Nummerierung in jedem Abschnitt korrekt neu gestartet wird.
-
-#### F: Kann ich das Nummerierungsformat von Listen in Aspose.Words anpassen?
-
- A: Ja, Sie können das Nummerierungsformat von Listen in Aspose.Words anpassen. Die`List` bietet hierfür mehrere Eigenschaften an, wie zum Beispiel`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`usw. Mit diesen Eigenschaften können Sie den Listentyp (nummeriert, mit Aufzählungszeichen usw.), das Nummerierungsformat (arabische Ziffern, römische Ziffern, Buchstaben usw.) und andere Formatierungsoptionen für die Nummerierung festlegen.
-
-#### F: Ist es möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen?
-
- A: Ja, es ist möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen.`ListLevel`Mit der Klasse können Sie Formatierungseigenschaften für jede Ebene der Liste festlegen. Sie können Optionen wie Präfix, Suffix, Ausrichtung, Einzug usw. festlegen. Auf diese Weise können Sie Listen mit mehreren Hierarchieebenen erstellen.
+### Wie kann ich eine kostenlose Testversion von Aspose.Words für .NET erhalten?
+ Sie erhalten eine kostenlose Testversion von[Aspose-Veröffentlichungen](https://releases.aspose.com/) Seite.

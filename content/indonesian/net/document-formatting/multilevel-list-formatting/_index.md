@@ -16,8 +16,8 @@ Jika Anda seorang pengembang yang ingin mengotomatiskan pembuatan dan pemformata
 Sebelum kita masuk ke detail seluk beluknya, pastikan Anda memiliki semua yang Anda perlukan untuk mengikuti tutorial ini.
 
 1. Lingkungan Pengembangan: Pastikan Anda telah menyiapkan lingkungan pengembangan. Visual Studio adalah pilihan yang bagus.
-2.  Aspose.Words for .NET: Unduh dan instal perpustakaan Aspose.Words for .NET. Kamu bisa mendapatkannya[Di Sini](https://releases.aspose.com/words/net/).
-3.  Lisensi: Dapatkan lisensi sementara jika Anda tidak memiliki lisensi penuh. Mendapatkan[Di Sini](https://purchase.aspose.com/temporary-license/).
+2.  Aspose.Words for .NET: Unduh dan instal perpustakaan Aspose.Words for .NET. Anda bisa mendapatkannya[Di Sini](https://releases.aspose.com/words/net/).
+3.  Lisensi: Dapatkan lisensi sementara jika Anda tidak memiliki lisensi penuh. Dapatkan itu[Di Sini](https://purchase.aspose.com/temporary-license/).
 4. Pengetahuan Dasar C#: Keakraban dengan kerangka C# dan .NET akan bermanfaat.
 
 ## Impor Namespace

@@ -9,7 +9,7 @@ url: /id/net/basic-conversions/docx-to-pdf/
 ---
 ## Perkenalan
 
-Hai! Pernah merasa perlu mengonversi dokumen Word ke PDF? Ini adalah tugas yang cukup umum, terutama dalam lingkungan profesional di mana PDF lebih disukai karena format tetap dan fitur keamanannya. Jika Anda bekerja dengan .NET, Anda beruntung karena Aspose.Words untuk .NET membuat proses ini mudah. Dalam tutorial ini, kita mendalami cara mengonversi file Word ke PDF menggunakan Aspose.Words untuk .NET. Bersiaplah untuk panduan langkah demi langkah yang mudah diikuti, bahkan jika Anda seorang pemula. Mari kita mulai!
+Hai! Pernah merasa perlu mengonversi dokumen Word ke PDF? Ini adalah tugas yang cukup umum, terutama dalam pengaturan profesional di mana PDF lebih disukai karena format tetap dan fitur keamanannya. Jika Anda bekerja dengan .NET, Anda beruntung karena Aspose.Words untuk .NET membuat proses ini mudah. Dalam tutorial ini, kita mendalami cara mengonversi file Word ke PDF menggunakan Aspose.Words untuk .NET. Bersiaplah untuk panduan langkah demi langkah yang mudah diikuti, bahkan jika Anda seorang pemula. Mari kita mulai!
 
 ## Prasyarat
 
@@ -44,7 +44,7 @@ Anda perlu menambahkan perpustakaan Aspose.Words untuk .NET ke proyek Anda. Anda
 
 1. Klik kanan pada proyek Anda di Solution Explorer.
 2. Pilih "Kelola Paket NuGet".
-3.  Pencarian untuk`Aspose.Words` dan menginstalnya.
+3.  Cari`Aspose.Words` dan menginstalnya.
 
 ## Langkah 2: Muat Dokumen Word
 

@@ -103,4 +103,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 बिल्कुल! यह विधि विभिन्न दस्तावेज़ तत्वों के लिए काम करती है। बस वांछित तत्व को लक्षित करने के लिए कोड को समायोजित करें।
 
 ### क्या Aspose.Words .NET के अलावा अन्य प्लेटफॉर्म का समर्थन करता है?  
-हाँ, Aspose.Words Java, C के लिए उपलब्ध है++ , और अन्य प्लेटफ़ॉर्म। उनकी जाँच करें[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए।
+हाँ, Aspose.Words Java, C के लिए उपलब्ध है++ , और अन्य प्लेटफ़ॉर्म। उनकी जाँच करें[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए.

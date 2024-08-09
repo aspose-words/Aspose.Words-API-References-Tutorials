@@ -15,7 +15,7 @@ Bạn đang muốn làm việc với các tài liệu Word theo chương trình?
 
 Trước khi chúng ta đi sâu vào hướng dẫn, có một số điều bạn cần để bắt đầu:
 
--  Aspose.Words cho .NET: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words cho .NET: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Nên sử dụng Visual Studio, nhưng bạn có thể sử dụng bất kỳ IDE C# nào.
 - Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp bạn theo dõi.
 
@@ -95,7 +95,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã liệt kê thành công cả thuộc tính tùy chỉnh và tích hợp sẵn của tài liệu Word bằng Aspose.Words cho .NET. Đây chỉ là phần nổi của tảng băng trôi khi nói đến những gì bạn có thể làm với Aspose.Words. Cho dù bạn đang tự động hóa việc tạo tài liệu hay thao tác các tài liệu phức tạp, Aspose.Words đều cung cấp một bộ tính năng phong phú để giúp cuộc sống của bạn dễ dàng hơn.
+Và bạn có nó! Bạn đã liệt kê thành công cả thuộc tính tùy chỉnh và tích hợp sẵn của tài liệu Word bằng Aspose.Words cho .NET. Đây chỉ là phần nổi của tảng băng trôi khi nói đến những gì bạn có thể làm với Aspose.Words. Cho dù bạn đang tự động hóa việc tạo tài liệu hay thao tác các tài liệu phức tạp, Aspose.Words đều cung cấp một bộ tính năng phong phú để giúp cuộc sống của bạn dễ dàng hơn.
 
 ## Câu hỏi thường gặp
 

@@ -1,58 +1,83 @@
 ---
-title: Verknüpfung
-linktitle: Verknüpfung
+title: Link
+linktitle: Link
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Links einfügen. Schritt-für-Schritt-Anleitung.
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Hyperlinks in Word-Dokumente einfügen. Erweitern Sie Ihre Dokumente ganz einfach mit interaktiven Links.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/link/
 ---
+## Einführung
 
-In diesem Beispiel zeigen wir Ihnen, wie Sie die Linkfunktion mit Aspose.Words für .NET verwenden. Links werden verwendet, um anklickbare Verweise auf Websites oder andere Dokumente zu erstellen.
+Durch das Hinzufügen von Hyperlinks zu Word-Dokumenten können Sie statischen Text in dynamische, interaktive Ressourcen umwandeln. Unabhängig davon, ob Sie auf externe Websites, E-Mail-Adressen oder andere Abschnitte im Dokument verlinken, bietet Aspose.Words für .NET eine leistungsstarke und flexible Möglichkeit, diese Aufgaben programmgesteuert zu erledigen. In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Hyperlinks in ein Word-Dokument einfügen. 
 
-## Schritt 1: Einen Dokumentgenerator verwenden
+## Voraussetzungen
 
-Zuerst verwenden wir einen Dokumentgenerator, um unserem Dokument Inhalt hinzuzufügen.
+Bevor Sie sich in den Code vertiefen, benötigen Sie zunächst einige Dinge:
+
+1.  Visual Studio: Stellen Sie sicher, dass Visual Studio auf Ihrem Computer installiert ist. Sie können es hier herunterladen:[Microsoft-Website](https://visualstudio.microsoft.com/).
+
+2.  Aspose.Words für .NET: Sie benötigen die Aspose.Words-Bibliothek. Sie können sie von der[Aspose-Website](https://releases.aspose.com/words/net/).
+
+3. Grundlegende C#-Kenntnisse: Kenntnisse in der C#-Programmierung sind von Vorteil, da in diesem Lernprogramm das Schreiben von C#-Code erfolgt.
+
+4.  Aspose-Lizenz: Sie können mit einer kostenlosen Testversion oder einer temporären Lizenz beginnen. Weitere Informationen finden Sie unter[Kostenlose Testversion von Aspose](https://releases.aspose.com/).
+
+## Namespaces importieren
+
+Zu Beginn müssen Sie die erforderlichen Namespaces importieren. So gehen Sie dabei in Ihrem C#-Projekt vor:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Diese Namespaces stellen die wesentlichen Klassen und Methoden bereit, die zum Bearbeiten von Word-Dokumenten und -Tabellen erforderlich sind.
+
+Lassen Sie uns den Prozess des Einfügens von Hyperlinks in ein Word-Dokument mit Aspose.Words für .NET durchgehen. Wir werden dies in klare, umsetzbare Schritte unterteilen.
+
+## Schritt 1: DocumentBuilder initialisieren
+
+ Um Inhalt zum Dokument hinzuzufügen, benötigen Sie ein`DocumentBuilder`. Diese Klasse bietet Methoden zum Einfügen verschiedener Arten von Inhalten, einschließlich Text und Hyperlinks.
+
+```csharp
+// Erstellen einer DocumentBuilder-Instanz
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Schritt 2: Link einfügen
+ Der`DocumentBuilder` Klasse ist ein vielseitiges Tool, mit dem Sie das Dokument erstellen und ändern können.
 
- Wir können einen Link einfügen mit dem`InsertHyperlink` Methode des Dokumentgenerators. Wir müssen den Linktext, hier „Aspose“, sowie die Ziel-URL angeben.
+## Schritt 2: Hyperlink einfügen
+
+ Fügen wir nun einen Hyperlink in das Dokument ein. Verwenden Sie die`InsertHyperlink` Methode bereitgestellt von`DocumentBuilder`. 
 
 ```csharp
+// Einfügen eines Hyperlinks
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
 
-### Beispielquellcode für Links mit Aspose.Words für .NET
+Die einzelnen Parameter bewirken Folgendes:
+- `"Aspose"`: Der Text, der als Hyperlink angezeigt wird.
+- `"https://www.aspose.com"`: Die URL, auf die der Hyperlink verweist.
+- `false` Dieser Parameter bestimmt, ob der Link als Hyperlink angezeigt werden soll. Wenn Sie ihn auf`false` macht es zu einem Standard-Text-Hyperlink.
 
+## Abschluss
 
-```csharp
-// Verwenden Sie einen Dokument-Generator, um dem Dokument Inhalt hinzuzufügen.
-DocumentBuilder builder = new DocumentBuilder();
+Das Einfügen von Hyperlinks in Word-Dokumente mit Aspose.Words für .NET ist ein unkomplizierter Vorgang. Indem Sie diese Schritte befolgen, können Sie Ihren Dokumenten ganz einfach interaktive Links hinzufügen und so deren Funktionalität und Benutzerinteraktion verbessern. Diese Funktion ist besonders nützlich zum Erstellen von Dokumenten mit Referenzen, externen Ressourcen oder Navigationselementen.
 
-// Link einfügen.
-builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
-```
-Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Linkfunktion mit Aspose.Words für .NET verwenden.
+## Häufig gestellte Fragen
 
+### Wie kann ich mehrere Hyperlinks in ein Word-Dokument einfügen?
+ Wiederholen Sie einfach die`InsertHyperlink` Methode mit unterschiedlichen Parametern für jeden Hyperlink, den Sie hinzufügen möchten.
 
-### Häufig gestellte Fragen
+### Kann ich den Hyperlinktext formatieren?
+ Ja, Sie können die`DocumentBuilder` Methoden zum Anwenden einer Formatierung auf den Hyperlinktext.
 
-#### F: Wie kann ich in Aspose.Words auf eine URL verlinken?
+### Wie erstelle ich einen Hyperlink zu einem bestimmten Abschnitt innerhalb desselben Dokuments?
+Verwenden Sie Lesezeichen im Dokument, um interne Links zu erstellen. Fügen Sie ein Lesezeichen ein und erstellen Sie dann einen Hyperlink, der auf dieses Lesezeichen verweist.
 
- A: Um auf eine URL-Adresse in Aspose.Words zu verlinken, können Sie den`<a>` Tag mit dem`href` Attribut, das die URL-Adresse enthält. Sie können beispielsweise`<a href="https://www.aspose.com">Click Here</a>` um einen Hyperlink zur URL „https://www.example.com“ mit dem Anzeigetext „Klicken Sie hier“ zu erstellen.
+### Ist es möglich, mit Aspose.Words E-Mail-Hyperlinks hinzuzufügen?
+ Ja, Sie können E-Mail-Hyperlinks erstellen, indem Sie das`mailto:` Protokoll in der Hyperlink-URL, z. B.`mailto:example@example.com`.
 
-#### F: Ist es möglich, in Aspose.Words auf ein internes Lesezeichen zu verlinken?
-
- A: Ja, es ist möglich, auf ein internes Lesezeichen in Aspose.Words zu verlinken. Sie können das`<a>` Tag mit dem`href` Attribut, das den Namen des Lesezeichens enthält, dem ein Hash (#) vorangestellt ist. Beispiel:`<a href="#bookmark1">Go to bookmark 1</a>` wird auf das Lesezeichen mit dem Namen „bookmark1“ im Dokument verwiesen.
-
-#### F: Wie kann ich den Anzeigetext eines Links in Aspose.Words anpassen?
-
- A: Um den Anzeigetext eines Links in Aspose.Words anzupassen, können Sie den Inhalt zwischen den`<a>` Tags. Zum Beispiel`<a href="https://www.aspose.com">Click here</a>` wird der Text „Klicken Sie hier“ als Hyperlink angezeigt.
-
-#### F: Kann ich in Aspose.Words ein Ziel für einen Link angeben?
-
-A: Ja, Sie können ein Ziel für einen Link in Aspose.Words angeben, indem Sie`target` Attribut des`<a>` Tag. Beispiel:`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` öffnet den Link in einem neuen Fenster oder Tab.
+### Was ist, wenn ich einen Link zu einem in einem Cloud-Dienst gespeicherten Dokument benötigen?
+Sie können auf jede beliebige URL verlinken, auch auf URLs, die auf in Cloud-Diensten gespeicherte Dokumente verweisen, solange die URL zugänglich ist.

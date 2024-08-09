@@ -2,88 +2,115 @@
 title: Bật Tắt thay thế phông chữ
 linktitle: Bật Tắt thay thế phông chữ
 second_title: API xử lý tài liệu Aspose.Words
-description: Trong hướng dẫn này, hãy tìm hiểu cách bật hoặc tắt tính năng thay thế phông chữ trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách bật hoặc tắt tính năng thay thế phông chữ trong tài liệu Word bằng Aspose.Words cho .NET. Đảm bảo tài liệu của bạn trông nhất quán trên tất cả các nền tảng.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/enable-disable-font-substitution/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách bật hoặc tắt tính năng thay thế phông chữ trong tài liệu Word khi hiển thị nó bằng thư viện Aspose.Words cho .NET. Việc bật hoặc tắt tính năng thay thế phông chữ cho phép bạn kiểm soát xem các phông chữ bị thiếu có được tự động thay thế bằng phông chữ mặc định hay không. Chúng tôi sẽ hướng dẫn bạn từng bước để giúp bạn hiểu và triển khai mã trong dự án .NET của mình.
+## Giới thiệu
+
+Bạn đã bao giờ rơi vào tình huống các phông chữ được chọn tỉ mỉ trong tài liệu Word của bạn bị thay thế khi xem trên máy tính khác chưa? Khó chịu phải không? Điều này xảy ra do thay thế phông chữ, một quá trình trong đó hệ thống thay thế phông chữ bị thiếu bằng phông chữ có sẵn. Nhưng đừng lo lắng! Với Aspose.Words for .NET, bạn có thể dễ dàng quản lý và kiểm soát việc thay thế phông chữ. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để bật hoặc tắt tính năng thay thế phông chữ trong tài liệu Word của bạn, đảm bảo tài liệu của bạn luôn trông giống như cách bạn muốn.
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
-- Tài liệu Word mà bạn muốn kết xuất có hoặc không có thay thế phông chữ
 
-## Bước 1: Xác định thư mục tài liệu
- Trước tiên, bạn cần đặt đường dẫn thư mục đến vị trí tài liệu Word của mình. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+Trước khi đi sâu vào các bước, hãy đảm bảo bạn có mọi thứ bạn cần:
+
+-  Aspose.Words for .NET: Tải phiên bản mới nhất[đây](https://releases.aspose.com/words/net/).
+- Visual Studio: Bất kỳ phiên bản nào hỗ trợ .NET.
+- Kiến thức cơ bản về C#: Điều này sẽ giúp bạn theo dõi các ví dụ mã hóa.
+
+## Nhập không gian tên
+
+Để bắt đầu, hãy đảm bảo bạn đã nhập các không gian tên cần thiết vào dự án của mình. Thêm những thứ này vào đầu tệp C# của bạn:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Bước 2: Tải tài liệu lên và định cấu hình cài đặt phông chữ
- Tiếp theo, chúng tôi sẽ tải tài liệu Word mà bạn muốn kết xuất và tạo một phiên bản của`FontSettings` class để xử lý các cài đặt phông chữ. Chúng tôi sẽ đặt ghi đè phông chữ mặc định bằng cách chỉ định tên phông chữ trong`DefaultFontName` và vô hiệu hóa ghi đè thông tin phông chữ bằng`Enabled` đặt thành`false`.
+Bây giờ, hãy chia quy trình thành các bước đơn giản, dễ quản lý.
+
+## Bước 1: Thiết lập dự án của bạn
+
+Đầu tiên, thiết lập một dự án mới trong Visual Studio và thêm một tham chiếu đến thư viện Aspose.Words cho .NET. Nếu bạn chưa có, hãy tải xuống từ[trang web giả định](https://releases.aspose.com/words/net/).
+
+## Bước 2: Tải tài liệu của bạn
+
+Tiếp theo, tải tài liệu bạn muốn làm việc. Đây là cách bạn làm điều đó:
 
 ```csharp
-// Tải tài liệu
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Định cấu hình cài đặt phông chữ
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Áp dụng cài đặt phông chữ cho tài liệu
-doc.FontSettings = fontSettings;
-```
-
-## Bước 3: Lưu tài liệu được kết xuất
-Cuối cùng, chúng ta sẽ lưu tài liệu được kết xuất, tài liệu này sẽ tuân theo các cài đặt ghi đè phông chữ đã xác định.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Mã nguồn mẫu cho Bật Tắt thay thế phông chữ bằng Aspose.Words cho .NET 
-
-```csharp
-
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn. Mã này tải tài liệu vào bộ nhớ để bạn có thể thao tác với nó.
+
+## Bước 3: Định cấu hình cài đặt phông chữ
+
+ Bây giờ, hãy tạo một`FontSettings` đối tượng để quản lý cài đặt thay thế phông chữ:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Bước 4: Đặt thay thế phông chữ mặc định
+
+Đặt thay thế phông chữ mặc định thành phông chữ bạn chọn. Phông chữ này sẽ được sử dụng nếu phông chữ gốc không có sẵn:
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+Trong ví dụ này, chúng tôi đang sử dụng Arial làm phông chữ mặc định.
+
+## Bước 5: Vô hiệu hóa thay thế thông tin phông chữ
+
+Để tắt tính năng thay thế thông tin phông chữ, ngăn hệ thống thay thế các phông chữ bị thiếu bằng các phông chữ có sẵn, hãy sử dụng mã sau:
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## Bước 6: Áp dụng cài đặt phông chữ cho tài liệu
+
+Bây giờ, hãy áp dụng các cài đặt này cho tài liệu của bạn:
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Bước 7: Lưu tài liệu của bạn
+
+Cuối cùng, lưu tài liệu đã sửa đổi của bạn. Bạn có thể lưu nó ở bất kỳ định dạng nào bạn thích. Đối với hướng dẫn này, chúng tôi sẽ lưu nó dưới dạng PDF:
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã biết cách bật hoặc tắt tính năng thay thế phông chữ trong tài liệu Word khi hiển thị nó bằng Aspose.Words cho .NET. Bằng cách kiểm soát việc thay thế phông chữ, bạn có thể tác động đến cách xử lý các phông chữ bị thiếu trong tài liệu được hiển thị của mình. Đừng ngần ngại sử dụng tính năng này để tùy chỉnh việc quản lý phông chữ trong tài liệu Word của bạn.
 
-### Câu hỏi thường gặp
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng kiểm soát việc thay thế phông chữ trong tài liệu Word của mình bằng Aspose.Words for .NET. Điều này đảm bảo tài liệu của bạn duy trì giao diện như mong muốn, bất kể chúng được xem ở đâu.
 
-#### Câu hỏi: Làm cách nào tôi có thể bật tính năng thay thế phông chữ trong tài liệu Word bằng Aspose.Words?
+## Câu hỏi thường gặp
 
-Trả lời: Để bật tính năng thay thế phông chữ trong tài liệu Word bằng Aspose.Words, bạn có thể sử dụng API để chỉ định phông chữ thay thế sẽ sử dụng khi không có phông chữ được yêu cầu. Điều này sẽ đảm bảo hiển thị văn bản nhất quán, ngay cả khi không có phông chữ gốc.
+### Tôi có thể sử dụng phông chữ khác ngoài Arial để thay thế không?
 
-#### Câu hỏi: Có thể tắt tính năng thay thế phông chữ trong tài liệu Word bằng Aspose.Words không?
+ Tuyệt đối! Bạn có thể chỉ định bất kỳ phông chữ nào có sẵn trên hệ thống của mình bằng cách thay đổi tên phông chữ trong`DefaultFontName` tài sản.
 
-Trả lời: Có, với Aspose.Words, bạn có thể tắt tính năng thay thế phông chữ trong tài liệu Word. Bằng cách sử dụng API, bạn có thể ngăn Word thay thế các phông chữ bắt buộc bằng các phông chữ khác, giúp duy trì hình thức ban đầu của văn bản.
+### Điều gì xảy ra nếu phông chữ mặc định được chỉ định không có sẵn?
 
-#### Hỏi: Điều gì xảy ra khi thiếu phông chữ bắt buộc trong quá trình thay thế trong tài liệu Word?
+Nếu phông chữ mặc định không có sẵn, Aspose.Words sẽ sử dụng cơ chế dự phòng hệ thống để tìm phông chữ thay thế thích hợp.
 
-Trả lời: Khi thiếu phông chữ bắt buộc trong quá trình thay thế trong tài liệu Word, Aspose.Words có thể phát hiện sự cố này và cung cấp cho bạn các tùy chọn để khắc phục. Bạn có thể chọn thay thế phông chữ bị thiếu bằng phông chữ thay thế hoặc đưa phông chữ bị thiếu vào tài liệu, đảm bảo xem chính xác.
+### Tôi có thể bật lại tính năng thay thế phông chữ sau khi tắt nó không?
 
-#### Câu hỏi: Làm cách nào tôi có thể xử lý các phông chữ bị thiếu khi thay thế trong tài liệu Word bằng Aspose.Words?
+ Có, bạn có thể chuyển đổi`Enabled` tài sản của`FontInfoSubstitution` quay lại`true` nếu bạn muốn bật lại tính năng thay thế phông chữ.
 
-Trả lời: Để xử lý các phông chữ bị thiếu khi thay thế trong tài liệu Word bằng Aspose.Words, bạn có thể sử dụng API để phát hiện các phông chữ bị thiếu và cung cấp các tùy chọn độ phân giải. Bạn có thể chọn thay thế phông chữ bị thiếu bằng phông chữ thay thế hoặc đưa phông chữ bị thiếu vào tài liệu, tùy theo nhu cầu của bạn.
+### Có cách nào để kiểm tra phông chữ nào đang được thay thế không?
 
-#### Hỏi: Việc kiểm soát việc thay thế phông chữ trong tài liệu Word có quan trọng không?
+Có, Aspose.Words cung cấp các phương pháp ghi nhật ký và theo dõi việc thay thế phông chữ, cho phép bạn xem phông chữ nào đang được thay thế.
 
-Đáp: Có, điều quan trọng là phải kiểm soát việc thay thế phông chữ trong tài liệu Word để duy trì tính toàn vẹn hình ảnh của văn bản. Bằng cách sử dụng Aspose.Words để bật hoặc tắt tính năng thay thế phông chữ, bạn có thể đảm bảo rằng các phông chữ cần thiết được sử dụng và tránh các vấn đề về phông chữ bị thiếu hoặc bị thay thế.
+### Tôi có thể sử dụng phương pháp này cho các định dạng tài liệu khác ngoài DOCX không?
+
+Chắc chắn! Aspose.Words hỗ trợ nhiều định dạng khác nhau và bạn có thể áp dụng các cài đặt phông chữ này cho bất kỳ định dạng được hỗ trợ nào.

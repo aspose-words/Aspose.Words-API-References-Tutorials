@@ -79,7 +79,7 @@ builder.Write("Heading 1");
 
 Här ställer vi in`StyleIdentifier` till`Heading1`, som tillämpar den fördefinierade rubrikstilen på texten vi ska infoga.
 
-## Steg 4: Sätt i en stilavskiljare
+## Steg 4: Sätt i en Style Separator
 
 Rubrik: Lägg till stilavskiljaren
 

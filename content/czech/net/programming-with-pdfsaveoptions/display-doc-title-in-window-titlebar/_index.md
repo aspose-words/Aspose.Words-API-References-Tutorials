@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni, aby vaše soubory PDF vypadaly ještě profesionálněji? Jednou malou, ale působivou změnou je zobrazení názvu dokumentu v záhlaví okna. Je to jako vložit jmenovku do PDF, takže je okamžitě rozpoznatelný. Dnes se ponoříme do toho, jak toho dosáhnout pomocí Aspose.Words for .NET. Na konci této příručky budete mít křišťálově jasné pochopení procesu. Začněme!
 
@@ -15,7 +15,7 @@ Jste připraveni, aby vaše soubory PDF vypadaly ještě profesionálněji? Jedn
 
 Než skočíme do kroků, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET Library: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné kompatibilní IDE.
 - Základní znalost C#: Budeme psát kód v C#.
 

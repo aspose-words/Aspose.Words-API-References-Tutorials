@@ -42,7 +42,7 @@ using Aspose.Words.Compare;
 
 ## 步驟 2：安裝 Aspose.Words for .NET
 
-接下來，您需要將 Aspose.Words 新增到您的專案中。您可以透過 NuGet 套件管理器執行此操作。只需搜尋 Aspose.Words 並安裝它。十分簡單！
+接下來，您需要將 Aspose.Words 新增到您的專案中。您可以透過 NuGet 套件管理器執行此操作。只需搜尋 Aspose.Words 並安裝它。簡單易行！
 
 ```bash
 Install-Package Aspose.Words

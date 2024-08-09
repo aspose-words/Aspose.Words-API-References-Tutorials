@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgesindeki bir tabloya başlık ve açıklama eklediniz. Belge dondurmanızın üstüne kiraz eklemek gibi bir şey. Bu küçük dokunuş belgelerinizi daha bilgilendirici ve profesyonel hale getirebilir. Öyleyse devam edin, farklı başlıklar ve açıklamalar deneyin ve belgelerinizin parıldamasını sağlayın!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgesindeki bir tabloya başlık ve açıklama eklediniz. Belge dondurmanızın üstüne kiraz eklemek gibi bir şey. Bu küçük dokunuş belgelerinizi daha bilgilendirici ve profesyonel hale getirebilir. Öyleyse devam edin, farklı başlıklar ve açıklamalar deneyin ve belgelerinizin parıldamasını sağlayın!
 
 ## SSS'ler
 

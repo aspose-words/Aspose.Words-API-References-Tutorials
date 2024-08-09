@@ -60,7 +60,7 @@ doc.WriteProtection.SetPassword("MyPassword");
 Uitleg:
 
 -  De`SetPassword` methode wordt aangeroepen op de`WriteProtection` eigendom van het document.
-- Wij verstrekken een wachtwoord ("MyPassword" in dit geval) dat nodig is om de beveiliging op te heffen.
+- Wij verstrekken een wachtwoord (“MyPassword” in dit geval) dat nodig is om de beveiliging op te heffen.
 
 ## Stap 3: Alleen-lezen aanbeveling inschakelen
 
@@ -90,7 +90,7 @@ Uitleg:
 -  De`Protect` methode wordt aangeroepen op het document met`ProtectionType.ReadOnly` als argument.
 - Deze methode dwingt de alleen-lezen-beveiliging af, waardoor wijzigingen aan het document zonder het wachtwoord worden voorkomen.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 De laatste stap is het opslaan van het document met de toegepaste beveiligingsinstellingen.
 

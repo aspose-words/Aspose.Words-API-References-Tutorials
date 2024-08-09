@@ -14,7 +14,7 @@ V tomto podrobném průvodci prozkoumáme, jak používat Aspose.Words for Java'
 
 ## Předpoklady
 
- Než začnete, ujistěte se, že máte v projektu nastavenou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než začnete, ujistěte se, že máte v projektu nastavenou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Přidání textu
 
@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## Krok 10: Přesunutí kurzoru
 
- Pozici kurzoru v dokumentu můžete ovládat různými způsoby, např`moveToParagraph`, `moveToCell`a více. Zde je příklad:
+ Pozici kurzoru v dokumentu můžete ovládat různými způsoby, např`moveToParagraph`, `moveToCell`další. Zde je příklad:
 
 ```java
 Document doc = new Document();
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### Otázka: Jak mohu přesunout kurzor na určité místo v dokumentu?
 
- Odpověď: Pozici kurzoru můžete ovládat pomocí metod jako`moveToParagraph`, `moveToCell`a více. Zde je příklad:
+ Odpověď: Pozici kurzoru můžete ovládat pomocí metod jako`moveToParagraph`, `moveToCell`další. Zde je příklad:
 
 ```java
 Document doc = new Document();

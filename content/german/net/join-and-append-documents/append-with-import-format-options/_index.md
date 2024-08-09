@@ -91,7 +91,7 @@ Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie mühelos Dok
 ## Häufig gestellte Fragen
 
 ### Kann ich die Nummerierung des Zieldokuments anstelle der der Quelle beibehalten?
- Ja, Sie können die`ImportFormatOptions` um das zu erreichen.
+ Ja, Sie können die`ImportFormatOptions` um dies zu erreichen.
 
 ### Was ist, wenn ich Aspose.Words für .NET nicht habe?
  Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).

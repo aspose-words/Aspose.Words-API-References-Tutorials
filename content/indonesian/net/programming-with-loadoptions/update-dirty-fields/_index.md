@@ -16,7 +16,7 @@ Pernahkah Anda berada dalam situasi di mana Anda memiliki dokumen Word yang beri
 
 Sebelum kita mendalami seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. .NET Framework: Versi apa pun yang kompatibel dengan Aspose.Words.
 3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan bermanfaat.
 4. Contoh Dokumen Word: Dokumen dengan kolom kotor yang perlu diperbarui.

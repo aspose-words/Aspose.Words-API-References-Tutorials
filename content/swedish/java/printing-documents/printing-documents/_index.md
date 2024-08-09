@@ -23,7 +23,7 @@ Innan vi dyker in i koden, se till att du har följande förutsättningar på pl
 
 ## Laddar dokumentet
 
- För att komma igång måste du ladda Word-dokumentet du vill skriva ut. Byta ut`"Your Document Directory"` med sökvägen till ditt dokument och`"Your Output Directory"` med önskad utdatakatalog.
+ För att komma igång måste du ladda Word-dokumentet du vill skriva ut. Ersätta`"Your Document Directory"` med sökvägen till ditt dokument och`"Your Output Directory"` med önskad utdatakatalog.
 
 ```java
 string dataDir = "Your Document Directory";

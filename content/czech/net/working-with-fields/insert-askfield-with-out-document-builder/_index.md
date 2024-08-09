@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
-## Úvod
+## Zavedení
 
 Chcete zvládnout automatizaci dokumentů pomocí Aspose.Words pro .NET? Jste na správném místě! Dnes vás provedeme tím, jak vložit pole ASK bez použití Tvůrce dokumentů. Toto je šikovná funkce, když chcete, aby váš dokument vyzval uživatele ke konkrétnímu vstupu, díky čemuž budou vaše dokumenty Word interaktivnější a dynamičtější. Pojďme se tedy ponořit a udělat vaše dokumenty chytřejšími!
 
@@ -15,11 +15,11 @@ Chcete zvládnout automatizaci dokumentů pomocí Aspose.Words pro .NET? Jste na
 
 Než si ušpiníme ruce nějakým kódem, ujistěte se, že máme vše nastaveno:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto knihovnu. Pokud ne, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto knihovnu. Pokud ne, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vhodné IDE jako Visual Studio.
 3. .NET Framework: Ujistěte se, že máte nainstalované rozhraní .NET Framework.
 
-Skvělý! Nyní, když jsme vše připraveni, začněme importem potřebných jmenných prostorů.
+Velký! Nyní, když jsme vše připraveni, začněme importem potřebných jmenných prostorů.
 
 ## Importovat jmenné prostory
 
@@ -103,7 +103,7 @@ Tento řádek uloží dokument s vloženým polem ASK. A tady to máte – váš
 
 ## Závěr
 
-Gratulujeme! Právě jste přidali pole ASK do dokumentu aplikace Word pomocí Aspose.Words for .NET bez Tvůrce dokumentů. Tato funkce může výrazně zlepšit interakci uživatele s vašimi dokumenty, díky čemuž jsou flexibilnější a uživatelsky přívětivější. Pokračujte v experimentování s různými poli a vlastnostmi, abyste odemkli plný potenciál Aspose.Words. Šťastné kódování!
+Gratuluji! Právě jste přidali pole ASK do dokumentu aplikace Word pomocí Aspose.Words for .NET bez Tvůrce dokumentů. Tato funkce může výrazně zlepšit interakci uživatele s vašimi dokumenty, díky čemuž jsou flexibilnější a uživatelsky přívětivější. Pokračujte v experimentování s různými poli a vlastnostmi, abyste odemkli plný potenciál Aspose.Words. Šťastné kódování!
 
 ## FAQ
 

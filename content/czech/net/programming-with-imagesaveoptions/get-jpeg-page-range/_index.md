@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
-## Úvod
+## Zavedení
 
 Převod dokumentů aplikace Word na obrázky může být neuvěřitelně užitečný, ať už vytváříte miniatury, zobrazujete náhled dokumentů online nebo sdílíte obsah v přístupnějším formátu. S Aspose.Words for .NET můžete snadno převést konkrétní stránky dokumentů Word do formátu JPEG a zároveň upravit různá nastavení, jako je jas, kontrast a rozlišení. Pojďme se ponořit do toho, jak toho dosáhnout krok za krokem!
 
@@ -15,7 +15,7 @@ Převod dokumentů aplikace Word na obrázky může být neuvěřitelně užite�
 
 Než začneme, budete potřebovat několik věcí:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Vývojové prostředí AC# jako Visual Studio.
 - Ukázkový dokument: Dokument aplikace Word pro práci. Pro tento výukový program můžete použít jakýkoli soubor .docx.
 - Základní znalost C#: Znalost programování v C#.
@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Vložte svůj dokument
 
-Nejprve musíme načíst dokument aplikace Word, který chceme převést. Předpokládejme, že náš dokument je pojmenován`Rendering.docx` a je umístěn v adresáři určeném zástupným symbolem`YOUR DOCUMENT DIRECTORY`.
+Nejprve musíme načíst dokument aplikace Word, který chceme převést. Předpokládejme, že se náš dokument jmenuje`Rendering.docx` a je umístěn v adresáři určeném zástupným symbolem`YOUR DOCUMENT DIRECTORY`.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -77,7 +77,7 @@ tady to máte! Úspěšně jste převedli konkrétní stránku dokumentu aplikac
  Kvalitu JPEG můžete upravit pomocí`JpegQuality` majetek v`ImageSaveOptions`.
 
 ### Mohu uložit v jiných formátech obrázků?
- Ano, Aspose.Words podporuje různé formáty obrázků jako PNG, BMP a TIFF. Změň`SaveFormat` v`ImageSaveOptions` podle toho.
+ Ano, Aspose.Words podporuje různé formáty obrázků jako PNG, BMP a TIFF. Změňte`SaveFormat` v`ImageSaveOptions` podle toho.
 
 ### Existuje způsob, jak zobrazit náhled obrázku před uložením?
 Mechanismus náhledu byste museli implementovat samostatně, protože Aspose.Words neposkytuje vestavěnou funkci náhledu.

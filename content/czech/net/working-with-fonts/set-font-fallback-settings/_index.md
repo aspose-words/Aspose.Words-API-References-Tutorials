@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Zavedení
 
 Při práci s dokumenty, které obsahují různé textové prvky, jako jsou různé jazyky nebo speciální znaky, je zásadní zajistit, aby se tyto prvky zobrazovaly správně. Aspose.Words for .NET nabízí výkonnou funkci nazvanou Font Fallback Settings, která pomáhá při definování pravidel pro nahrazování písem, když původní písmo nepodporuje určité znaky. V této příručce prozkoumáme, jak nastavit nastavení zálohování písem pomocí Aspose.Words pro .NET v podrobném tutoriálu.
 
@@ -49,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Nakonfigurujte nastavení písma
 
- Vytvoř nový`FontSettings` objekt a načtěte záložní nastavení písma ze souboru XML. Tento soubor XML obsahuje pravidla pro záložní písmo.
+ Vytvořte nový`FontSettings` objekt a načtěte záložní nastavení písma ze souboru XML. Tento soubor XML obsahuje pravidla pro záložní písmo.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Krok 4: Použijte nastavení písma na dokument
 
- Přiřadit nakonfigurované`FontSettings` k dokumentu. Tím je zajištěno, že se při vykreslování dokumentu použijí záložní pravidla pro písmo.
+ Přiřadit nakonfigurované`FontSettings` dokumentu. Tím je zajištěno, že se při vykreslování dokumentu použijí záložní pravidla pro písmo.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -94,7 +95,7 @@ Zde je příklad toho, jak by měl vypadat váš soubor XML definující pravidl
 
 Pomocí následujících kroků můžete efektivně nastavit a používat nastavení Font Fallback v Aspose.Words for .NET. Tím zajistíte, že vaše dokumenty zobrazí všechny znaky správně, i když původní písmo určité znaky nepodporuje. Implementace těchto nastavení výrazně zvýší kvalitu a čitelnost vašich dokumentů.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Q1: Co je to zálohování písem?
 

@@ -50,7 +50,7 @@ Hyphenation.registerDictionary("de-CH", stream);
 doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.pdf");
 ```
 
-## 6. Sammanfattning
+## 6. Slutsats
 
 Avstavning spelar en avgörande roll för att upprätthålla kvaliteten och estetiken på dina dokument, särskilt när det handlar om flerspråkigt innehåll. Aspose.Words för Java förenklar processen med att tillämpa avstavningsregler för att säkerställa att dina dokument ser bäst ut.
 
@@ -64,7 +64,7 @@ Avstavning är processen att lägga till bindestreck i slutet av rader för att 
 
 ### 2. Kan jag använda avstavning på flera språk?
 
-Jo det kan du. Aspose.Words för Java låter dig registrera och ladda avstavningsordböcker för olika språk.
+Ja, det kan du. Aspose.Words för Java låter dig registrera och ladda avstavningsordböcker för olika språk.
 
 ### 3. Är Aspose.Words för Java lätt att integrera i mitt Java-projekt?
 
@@ -76,4 +76,4 @@ Ja, Aspose.Words för Java tillhandahåller ett användarvänligt API, vilket g�
 
 ### 5. Hur får jag tillgång till Aspose.Words för Java?
 
- För att få tillgång till Aspose.Words för Java,[Klicka här](https://purchase.aspose.com/buy). Upplev kraften i dokumentbehandling i dina Java-applikationer!
+ För att få tillgång till Aspose.Words för Java,[klicka här](https://purchase.aspose.com/buy). Upplev kraften i dokumentbehandling i dina Java-applikationer!

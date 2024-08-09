@@ -65,4 +65,4 @@ Sim, Aspose.Words oferece suporte a vários frameworks .NET, garantindo compatib
 Sim, você pode processar em lote vários arquivos de texto usando APIs Aspose.Words para agilizar suas tarefas de conversão de documentos.
 
 ### Onde posso encontrar mais recursos e suporte para Aspose.Words?
- Visite a[Documentação Aspose.Words](https://reference.aspose.com/words/net/)e[Fórum de suporte](https://forum.aspose.com/c/words/8) para mais informações e assistência.
+ Visite o[Documentação Aspose.Words](https://reference.aspose.com/words/net/)e[fórum de suporte](https://forum.aspose.com/c/words/8) para mais informações e assistência.

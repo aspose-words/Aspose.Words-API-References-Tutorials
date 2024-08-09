@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- Neste exemplo,`MatchCase` está configurado para`false` ignorar diferenças de caso, e`FindWholeWordsOnly` está configurado para`false` para permitir correspondências parciais dentro de palavras.
+ Neste exemplo,`MatchCase` está definido para`false` ignorar diferenças de caso, e`FindWholeWordsOnly` está definido para`false` para permitir correspondências parciais dentro de palavras.
 
 ## Etapa 4: substitua o texto no rodapé
 

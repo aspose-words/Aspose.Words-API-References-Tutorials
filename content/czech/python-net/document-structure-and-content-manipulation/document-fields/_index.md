@@ -10,7 +10,7 @@ url: /cs/python-net/document-structure-and-content-manipulation/document-fields/
 
 Manipulace s poli a daty v dokumentech aplikace Word může výrazně zlepšit automatizaci dokumentů a reprezentaci dat. V této příručce prozkoumáme, jak pracovat s poli a daty pomocí rozhraní Aspose.Words for Python API. Od vkládání dynamického obsahu po extrakci dat probereme základní kroky spolu s příklady kódu.
 
-## Úvod
+## Zavedení
 
 Dokumenty Microsoft Word často vyžadují dynamický obsah, jako jsou data, výpočty nebo data z externích zdrojů. Aspose.Words pro Python poskytuje výkonný způsob programové interakce s těmito prvky.
 

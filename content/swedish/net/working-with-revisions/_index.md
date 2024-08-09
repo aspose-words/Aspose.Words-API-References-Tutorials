@@ -16,12 +16,12 @@ Oavsett om du är nybörjare eller erfaren utvecklare, kommer dessa handledninga
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Acceptera revisioner](./accept-revisions/) | Lär dig hur du accepterar ändringar av ett Word-dokument med Aspose.Words för .NET. |
-| [Få revisionstyper av ord](./get-revision-types/) | Få versionstyper av ord i ett Word-dokument med Aspose.Words för .NET. |
-| [Skaffa revisionsgrupper](./get-revision-groups/) | Få detaljer om revisionsgrupp i ett Word-dokument med Aspose.Words för .NET. |
-| [Ta bort kommentarer i pdf-fil](./remove-comments-in-pdf/) | Ta bort kommentarer i en PDF-fil med Aspose.Words för .NET. |
-| [Visa revisioner i ballonger](./show-revisions-in-balloons/) | Visa revisioner i ballonger med Aspose.Words för .NET. |
-| [Få information om revisionsgruppen](./get-revision-group-details/) | Få detaljer om revisionsgrupp i ett Word-dokument med Aspose.Words för .NET. |
-| [Få tillgång till reviderad version](./access-revised-version/) | Få tillgång till en reviderad version av ett Word-dokument med Aspose.Words för .NET. |
-| [Flytta nod i spårat dokument](./move-node-in-tracked-document/) | Flytta noder i ett spårat dokument med Aspose.Words för .NET. |
-| [Formrevision](./shape-revision/) | Revidera former i ett Word-dokument med Aspose.Words för .NET. |
+| [Acceptera revisioner](./accept-revisions/) | Masterdokumentrevisioner med Aspose.Words för .NET. Lär dig att spåra, acceptera och förkasta ändringar utan ansträngning. Öka dina färdigheter i dokumenthantering. |
+| [Få revisionstyper av ord](./get-revision-types/) |Lär dig hur du får versionstyper av ord i ett Word-dokument med Aspose.Words för .NET. Den här steg-för-steg-guiden hjälper dig att hantera dokumentrevisioner effektivt. |
+| [Skaffa revisionsgrupper](./get-revision-groups/) | Lär dig hur du hämtar versionsgrupper från Word-dokument med Aspose.Words för .NET med den här omfattande steg-för-steg-guiden. Perfekt för dokumenthantering. |
+| [Ta bort kommentarer i pdf-fil](./remove-comments-in-pdf/) | Lär dig hur du tar bort kommentarer från en PDF-fil med Aspose.Words för .NET med vår steg-för-steg-guide. |
+| [Visa revisioner i ballonger](./show-revisions-in-balloons/) | Lär dig hur du visar ändringar i ballonger med Aspose.Words för .NET. Den här detaljerade guiden leder dig genom varje steg och säkerställer att dina dokumentändringar är tydliga och organiserade. |
+| [Få information om revisionsgruppen](./get-revision-group-details/) | Få enkelt versionsgruppsinformation i Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för .NET-utvecklare. |
+| [Få tillgång till reviderad version](./access-revised-version/) | Lär dig hur du kommer åt och visar den reviderade versionen av ett dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för sömlös dokumenthantering. |
+| [Flytta nod i spårat dokument](./move-node-in-tracked-document/) | Lär dig hur du flyttar noder i ett spårat Word-dokument med Aspose.Words för .NET med vår detaljerade, steg-för-steg-guide. Perfekt för utvecklare. |
+| [Formrevision](./shape-revision/) | Lär dig hur du hanterar formrevisioner i Word-dokument med Aspose.Words för .NET med den här omfattande guiden. Bemästra spåra ändringar, infoga former och mer. |

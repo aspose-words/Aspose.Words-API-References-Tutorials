@@ -1,6 +1,6 @@
 ---
-title: asztal
-linktitle: asztal
+title: Táblázat
+linktitle: Táblázat
 second_title: Aspose.Words Document Processing API
 description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan hozhat létre és testreszabhat táblázatokat az Aspose.Words for .NET-ben. Tökéletes strukturált és tetszetős dokumentumok létrehozásához.
 type: docs
@@ -9,7 +9,7 @@ url: /hu/net/working-with-markdown/table/
 ---
 ## Bevezetés
 
-dokumentumokban lévő táblázatokkal való munka általános követelmény. Legyen szó jelentésről, számláról vagy bármilyen strukturált adatról, a táblázatok nélkülözhetetlenek. Ebben az oktatóanyagban végigvezetem a táblázatok létrehozásán és testreszabásán az Aspose.Words for .NET használatával. Merüljünk el!
+A dokumentumokban lévő táblázatokkal való munka általános követelmény. Legyen szó jelentésről, számláról vagy bármilyen strukturált adatról, a táblázatok nélkülözhetetlenek. Ebben az oktatóanyagban végigvezetem a táblázatok létrehozásán és testreszabásán az Aspose.Words for .NET használatával. Merüljünk el!
 
 ## Előfeltételek
 
@@ -17,7 +17,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő el�
 
 - Visual Studio: A kód írásához és teszteléséhez fejlesztői környezetre van szüksége. A Visual Studio jó választás.
 -  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nincs meg, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
-- A C# alapvető ismerete: A C# programozásban való némi jártasság szükséges a követéshez.
+- C# alapvető ismerete: A C# programozásban való némi jártasság szükséges a követéshez.
 
 ## Névterek importálása
 
@@ -74,7 +74,7 @@ Itt egyszerűen kibővítjük a táblázatot egy másik sor hozzáadásával, k�
 
 ## Következtetés
 
-A táblák létrehozása és testreszabása az Aspose.Words for .NET-ben egyszerű, ha rájött a dologra. Ha követi ezeket a lépéseket, strukturált és tetszetős táblázatokat hozhat létre dokumentumaiban. Boldog kódolást!
+táblák létrehozása és testreszabása az Aspose.Words for .NET-ben egyszerű, ha rájött a dologra. Ha követi ezeket a lépéseket, strukturált és tetszetős táblázatokat hozhat létre dokumentumaiban. Boldog kódolást!
 
 ## GYIK
 

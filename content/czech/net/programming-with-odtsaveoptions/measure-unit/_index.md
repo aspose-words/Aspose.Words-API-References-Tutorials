@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-odtsaveoptions/measure-unit/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám někdy, že jste museli převádět dokumenty aplikace Word do různých formátů, ale potřebovali jste pro své rozvržení konkrétní měrnou jednotku? Ať už máte co do činění s palci, centimetry nebo body, je zásadní zajistit, aby si dokument během procesu převodu zachoval integritu. V tomto tutoriálu si projdeme, jak nakonfigurovat funkci jednotky měření v Aspose.Words pro .NET. Tato výkonná funkce zajišťuje, že při převodu do formátu ODT (Open Document Text) bude formátování vašeho dokumentu zachováno přesně tak, jak jej potřebujete.
 
@@ -15,7 +15,7 @@ Stalo se vám někdy, že jste museli převádět dokumenty aplikace Word do rů
 
 Než se ponoříte do kódu, je několik věcí, které budete potřebovat:
 
-1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi Aspose.Words pro .NET. Pokud ji ještě nemáte, můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi Aspose.Words pro .NET. Pokud ji ještě nemáte, můžete si ji stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE jako Visual Studio pro psaní a spouštění vašeho kódu C#.
 3. Základní znalost C#: Pochopení základů C# vám pomůže postupovat společně s výukovým programem.
 4. Dokument aplikace Word: Připravte si vzorový dokument aplikace Word, který můžete použít pro převod.
@@ -86,7 +86,7 @@ Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty W
  Ano, Aspose.Words for .NET podporuje další jednotky měření, jako jsou centimetry a body. Požadovanou jednotku můžete určit pomocí`OdtSaveMeasureUnit` výčet.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi Aspose.Words for .NET z[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi Aspose.Words for .NET z[zde](https://releases.aspose.com/).
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
  Kompletní dokumentaci k Aspose.Words pro .NET získáte na adrese[tento odkaz](https://reference.aspose.com/words/net/).

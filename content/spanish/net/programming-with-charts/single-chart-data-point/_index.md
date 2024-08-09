@@ -15,7 +15,7 @@ url: /es/net/programming-with-charts/single-chart-data-point/
 
 Antes de comenzar, asegurémonos de tener todos los elementos esenciales en su lugar:
 
--  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión.[Descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión.[Descárgalo aquí](https://releases.aspose.com/words/net/).
 - .NET Framework: asegúrese de tener .NET Framework instalado en su máquina.
 - Comprensión básica de C#: Será útil tener conocimientos básicos de programación en C#.
 - Entorno de desarrollo integrado (IDE): se recomienda Visual Studio.

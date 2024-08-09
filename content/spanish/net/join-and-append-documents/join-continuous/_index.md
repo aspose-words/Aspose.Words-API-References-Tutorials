@@ -2,7 +2,7 @@
 title: Unirse continuo
 linktitle: Unirse continuo
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo unir dos documentos de Word sin problemas usando Aspose.Words para .NET. Siga nuestra guía paso a paso para una combinación de documentos fluida y eficiente.
+description: Aprenda cómo unir sin problemas dos documentos de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para una combinación de documentos fluida y eficiente.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/join-continuous/

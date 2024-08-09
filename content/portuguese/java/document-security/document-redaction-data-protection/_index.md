@@ -16,7 +16,7 @@ Neste guia, exploraremos como redigir informações confidenciais de documentos 
 
 ## Configurando seu ambiente de desenvolvimento
 
-Antes de começarmos a trabalhar com Aspose.Words for Java, precisamos configurar nosso ambiente de desenvolvimento. Siga esses passos:
+Antes de começarmos a trabalhar com Aspose.Words for Java, precisamos configurar nosso ambiente de desenvolvimento. Siga estas etapas:
 
 1.  Baixe e instale Aspose.Words para Java: Visite[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) para baixar a versão mais recente do Aspose.Words para Java.
 

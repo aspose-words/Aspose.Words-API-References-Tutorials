@@ -181,7 +181,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Αυτός είναι ένας τρόπος για να σταματήσετε τη μορφοποίηση λίστας.
+        // Αυτός είναι ένας τρόπος για να σταματήσετε τη μορφοποίηση της λίστας.
         builder.getListFormat().setList(null);
         builder.getDocument().save(outPath + "WorkingWithList.SpecifyListLevel.docx");
     }
@@ -212,7 +212,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
 	}
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συγχαρητήρια! Έχετε μάθει πώς να εργάζεστε αποτελεσματικά με λίστες στο Aspose.Words για Java. Οι λίστες είναι ζωτικής σημασίας για την οργάνωση και την παρουσίαση περιεχομένου στα έγγραφά σας. Είτε θέλετε να επανεκκινήσετε λίστες σε κάθε ενότητα είτε να καθορίσετε επίπεδα λίστας, το Aspose.Words για Java παρέχει τα εργαλεία που χρειάζεστε για να δημιουργήσετε έγγραφα με επαγγελματική εμφάνιση.
 

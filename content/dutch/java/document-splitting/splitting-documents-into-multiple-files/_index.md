@@ -52,8 +52,8 @@ Deze code slaat elk gesplitst onderdeel op met een bestandsnaam zoals 'split-par
 
 ## Veelgestelde vragen
 
-### Hoe splits ik een document op basis van een specifiek trefwoord?
-Om een document op basis van een trefwoord te splitsen, kunt u de inhoud van het document doorlopen en naar het trefwoord zoeken. Wanneer u het vindt, maakt u een nieuw document en voegt u de inhoud tot dat punt toe.
+### Hoe kan ik een document opsplitsen op een specifiek trefwoord?
+Om een document op trefwoord te splitsen, kunt u door de inhoud van het document bladeren en naar het trefwoord zoeken. Wanneer u het vindt, maakt u een nieuw document en voegt u de inhoud tot dat punt toe.
 
 ### Kan ik een document opsplitsen in PDF-bestanden?
 Ja, dat kan. Nadat u het document hebt gesplitst met Aspose.Words voor Java, kunt u Aspose.PDF voor Java gebruiken om elk onderdeel op te slaan als een PDF-bestand.

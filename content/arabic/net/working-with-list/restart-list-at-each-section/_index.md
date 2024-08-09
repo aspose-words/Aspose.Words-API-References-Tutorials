@@ -2,101 +2,111 @@
 title: إعادة تشغيل القائمة في كل قسم
 linktitle: إعادة تشغيل القائمة في كل قسم
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إعادة تشغيل القوائم في كل قسم في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا التفصيلي خطوة بخطوة لإدارة القوائم بفعالية.
 type: docs
 weight: 10
 url: /ar/net/working-with-list/restart-list-at-each-section/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي خطوة بخطوة، سنوضح لك كيفية إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words for .NET. سنشرح لك كود مصدر C# المقدم ونوضح لك كيفية تنفيذه في مشاريعك الخاصة.
+قد يبدو إنشاء مستندات منظمة ومنظمة جيدًا في بعض الأحيان وكأنه حل لغز معقد. أحد أجزاء هذا اللغز هو إدارة القوائم بفعالية، خاصة عندما تريد إعادة تشغيلها عند كل قسم. باستخدام Aspose.Words for .NET، يمكنك إنجاز ذلك بسلاسة. دعنا نتعمق في كيفية إعادة تشغيل القوائم في كل قسم في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
 
- للبدء، تأكد من تثبيت Aspose.Words for .NET وتكوينه في بيئة التطوير لديك. إذا لم تكن قد قمت بذلك بالفعل، قم بتنزيل المكتبة وتثبيتها من[Aspose.Releases]https://releases.aspose.com/words/net/.
+## المتطلبات الأساسية
 
-## الخطوة 1: إنشاء المستند والقائمة
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-أولاً، قم بإنشاء مستند جديد وإضافة قائمة مرقمة افتراضية:
+1.  Aspose.Words for .NET: قم بتنزيل أحدث إصدار من .NET وتثبيته[إصدارات Aspose](https://releases.aspose.com/words/net/) صفحة.
+2. بيئة .NET: قم بإعداد بيئة التطوير الخاصة بك مع تثبيت .NET.
+3. الفهم الأساسي لـ C#: يوصى بالإلمام بلغة البرمجة C#.
+4.  ترخيص Aspose: يمكنك اختيار[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) إذا لم يكن لديك واحدة.
+
+## استيراد مساحات الأسماء
+
+قبل كتابة الكود، تأكد من استيراد مساحات الأسماء الضرورية:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+الآن، دعونا نقسم العملية إلى خطوات متعددة لتسهيل متابعتها.
+
+## الخطوة 1: تهيئة المستند
+
+أولاً، ستحتاج إلى إنشاء نسخة مستند جديدة.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## الخطوة 2: إضافة عناصر إلى القائمة
+## الخطوة 2: إضافة قائمة مرقمة
 
- ثم استخدم أ`DocumentBuilder` لإضافة عناصر إلى القائمة. يمكنك استخدام حلقة لإضافة عناصر متعددة إلى القائمة:
+بعد ذلك، أضف قائمة مرقمة إلى المستند. ستتبع هذه القائمة تنسيق الترقيم الافتراضي.
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## الخطوة 3: الوصول إلى القائمة وتعيين خاصية إعادة التشغيل
+
+استرجع القائمة التي أنشأتها للتو وقم بتعيينها`IsRestartAtEachSection`الملكية ل`true`. وهذا يضمن إعادة تشغيل القائمة للترقيم في كل قسم جديد.
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## الخطوة 4: إنشاء منشئ المستندات وربط القائمة
+
+ إنشاء أ`DocumentBuilder` لإدراج محتوى في المستند وربطه بالقائمة.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## الخطوة 5: إضافة عناصر القائمة وإدراج فاصل مقطعي
+
+الآن قم بإضافة العناصر إلى القائمة. لتوضيح وظيفة إعادة التشغيل، سنقوم بإدراج فاصل مقطعي بعد عدد معين من العناصر.
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-في هذا المثال، نقوم بإدراج فاصل مقطعي بعد عنصر القائمة الخامس عشر لتوضيح إعادة الترقيم.
+## الخطوة 6: احفظ المستند
 
-## الخطوة 3: احفظ المستند المعدل
-
-وأخيرا، احفظ الوثيقة المعدلة:
+وأخيرًا، احفظ المستند بالخيارات المناسبة لضمان الامتثال.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-لذا ! لقد نجحت في إعادة تعيين قائمة مرقمة لكل قسم في مستند Word باستخدام Aspose.Words لـ .NET.
+## خاتمة
 
-### مثال على كود المصدر لإعادة ضبط القائمة في كل قسم
+وهنا لديك! باتباع هذه الخطوات، يمكنك بسهولة إعادة تشغيل القوائم في كل قسم في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. تعد هذه الميزة مفيدة بشكل لا يصدق لإنشاء مستندات جيدة التنظيم تتطلب أقسامًا منفصلة مع ترقيم القائمة الخاصة بها. مع Aspose.Words، يصبح التعامل مع مثل هذه المهام أمرًا سهلاً، مما يسمح لك بالتركيز على صياغة محتوى عالي الجودة.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## الأسئلة الشائعة
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### هل يمكنني إعادة تشغيل القوائم في كل قسم لأنواع القوائم المختلفة؟
+نعم، يسمح لك Aspose.Words for .NET بإعادة تشغيل أنواع مختلفة من القوائم، بما في ذلك القوائم النقطية والمرقمة.
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### ماذا لو كنت أرغب في تخصيص تنسيق الترقيم؟
+ يمكنك تخصيص تنسيق الترقيم عن طريق تعديل`ListTemplate` الخاصية عند إنشاء القائمة.
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### هل هناك حد لعدد العناصر في القائمة؟
+لا، لا يوجد حد محدد لعدد العناصر التي يمكنك تضمينها في القائمة باستخدام Aspose.Words for .NET.
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### هل يمكنني استخدام هذه الميزة في تنسيقات المستندات الأخرى مثل PDF؟
+نعم، يمكنك استخدام Aspose.Words لتحويل مستندات Word إلى تنسيقات أخرى مثل PDF مع الاحتفاظ ببنية القائمة.
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-لا تتردد في استخدام هذا الرمز في مشاريعك الخاصة وتعديله ليناسب احتياجاتك الخاصة.
-
-### الأسئلة الشائعة
-
-#### س: كيف يمكنني إعادة تشغيل القائمة في كل قسم في Aspose.Words؟
-
- ج: لإعادة تشغيل قائمة في كل قسم في Aspose.Words، تحتاج إلى إنشاء مثيل لـ`List`فئة وتعيين قائمة مرقمة لها. ثم يمكنك استخدام`List.IsRestartAtEachSection` الخاصية لتحديد أنه يجب إعادة تشغيل الترقيم في كل قسم. يمكنك ربط هذه القائمة بقسم واحد أو أكثر من مستندك بحيث يتم إعادة تشغيل الترقيم بشكل صحيح في كل قسم.
-
-#### س: هل يمكنني تخصيص تنسيق ترقيم القوائم في Aspose.Words؟
-
- ج: نعم، يمكنك تخصيص تنسيق ترقيم القوائم في Aspose.Words. ال`List` تقدم الطبقة العديد من الخصائص لهذا، مثل`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`، وما إلى ذلك. يمكنك استخدام هذه الخصائص لتعيين نوع القائمة (مرقمة، نقطية، وما إلى ذلك)، وتنسيق الترقيم (الأرقام العربية، والأرقام الرومانية، والحروف، وما إلى ذلك)، وخيارات تنسيق الترقيم الأخرى.
-
-#### س: هل من الممكن إضافة مستويات إضافية إلى قائمة مرقمة في Aspose.Words؟
-
- ج: نعم، من الممكن إضافة مستويات إضافية إلى القائمة المرقمة في Aspose.Words. ال`ListLevel`يسمح لك class بتعيين خصائص التنسيق لكل مستوى من القائمة. يمكنك تعيين خيارات مثل البادئة، واللاحقة، والمحاذاة، والمسافة البادئة، وما إلى ذلك. ويتيح لك ذلك إنشاء قوائم ذات مستويات متعددة من التسلسل الهرمي.
+### كيف يمكنني الحصول على نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
+ يمكنك الحصول على نسخة تجريبية مجانية من[إصدارات Aspose](https://releases.aspose.com/) صفحة.

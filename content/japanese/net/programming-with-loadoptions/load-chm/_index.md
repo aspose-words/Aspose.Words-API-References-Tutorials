@@ -121,4 +121,4 @@ doc.Save(outputPath);
 
 ### Aspose.Words for .NET の詳細情報はどこで入手できますか?
 
-訪問することができます[ドキュメンテーション](https://reference.aspose.com/words/net/)より詳しい情報と例については、こちらをご覧ください。
+訪問することができます[ドキュメント](https://reference.aspose.com/words/net/)より詳しい情報と例については、こちらをご覧ください。

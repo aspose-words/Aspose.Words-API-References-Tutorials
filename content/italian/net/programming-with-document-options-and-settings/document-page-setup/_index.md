@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-options-and-settings/document-page-setup/
 ---
-## introduzione
+## Introduzione
 
 Sei mai stato sconcertato da come impostare il layout di pagina del tuo documento utilizzando Aspose.Words per .NET? Che tu stia cercando di strutturare un report o di formattare un pezzo creativo, impostare correttamente la pagina del documento è essenziale. In questa guida ti guideremo attraverso ogni passaggio per padroneggiare l'impostazione della pagina del documento. Credetemi, è più facile di quanto sembri!
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
 ## Conclusione
 
-E il gioco è fatto! Con questi semplici passaggi, hai impostato il layout della pagina del tuo documento utilizzando Aspose.Words per .NET. Questo processo può farti risparmiare molti grattacapi di formattazione e garantire che i tuoi documenti abbiano un aspetto professionale e raffinato. Quindi, la prossima volta che lavorerai a un progetto, ricorda questa guida e procedi rapidamente nella configurazione della pagina come un professionista.
+Ed ecco qua! Con questi semplici passaggi, hai impostato il layout della pagina del tuo documento utilizzando Aspose.Words per .NET. Questo processo può farti risparmiare molti grattacapi di formattazione e garantire che i tuoi documenti abbiano un aspetto professionale e raffinato. Quindi, la prossima volta che lavorerai a un progetto, ricorda questa guida e procedi rapidamente nella configurazione della pagina come un professionista.
 
 ## Domande frequenti
 

@@ -9,13 +9,13 @@ url: /fr/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Introduction
 
-Salut, amis développeurs ! Vous êtes-vous déjà retrouvé plongé dans un projet de document Word et pensé : « Mec, j'ai vraiment besoin d'insérer une règle horizontale ici pour diviser les choses » ? Bien devinez quoi? Tu es chanceux! Dans le didacticiel d'aujourd'hui, nous expliquons comment insérer une règle horizontale dans un document Word à l'aide d'Aspose.Words pour .NET. Il ne s'agit pas d'un didacticiel ordinaire : il contient des étapes détaillées, des explications intéressantes et une pincée de plaisir. Alors, attachez votre ceinture et préparez-vous à devenir un pro de la gestion d'Aspose.Words pour .NET !
+Salut, amis développeurs ! Vous êtes-vous déjà retrouvé plongé dans un projet de document Word et pensé : « Mec, j'ai vraiment besoin d'insérer une règle horizontale ici pour diviser les choses » ? Eh bien, devinez quoi ? Vous avez de la chance ! Dans le didacticiel d'aujourd'hui, nous expliquons comment insérer une règle horizontale dans un document Word à l'aide d'Aspose.Words pour .NET. Il ne s'agit pas d'un didacticiel ordinaire : il contient des étapes détaillées, des explications intéressantes et une pincée de plaisir. Alors, attachez votre ceinture et préparez-vous à devenir un pro de la gestion d'Aspose.Words pour .NET !
 
 ## Conditions préalables
 
 Avant de plonger dans le vif du sujet, assurons-nous que vous disposez de tout ce dont vous avez besoin pour commencer. Voici une liste de contrôle rapide :
 
-1.  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : tout IDE prenant en charge .NET, tel que Visual Studio.
 3. Connaissance de base de C# : La familiarité avec la programmation C# rendra ce didacticiel plus fluide.
 4. Un répertoire de documents : vous aurez besoin d'un répertoire dans lequel vous pourrez enregistrer vos documents Word.
@@ -97,7 +97,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-Et voila! Vous avez réussi à insérer une règle horizontale dans un document Word à l'aide d'Aspose.Words pour .NET.
+Et voilà ! Vous avez réussi à insérer une règle horizontale dans un document Word à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 

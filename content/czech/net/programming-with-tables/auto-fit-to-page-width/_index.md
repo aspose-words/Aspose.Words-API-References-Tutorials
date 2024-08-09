@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/auto-fit-to-page-width/
 ---
-## Úvod
+## Zavedení
 
 Cítili jste někdy frustraci z tabulek v dokumentech Wordu, které na stránku dokonale nezapadají? Upravíte okraje, změníte velikost sloupců a stále to vypadá trapně. Pokud používáte Aspose.Words pro .NET, existuje elegantní řešení tohoto problému – automatické přizpůsobení tabulek oknu. Tato šikovná funkce upravuje šířku stolu tak, aby se dokonale srovnala s šířkou stránky, takže váš dokument bude vypadat uhlazeně a profesionálně. V této příručce vás provedeme kroky, jak toho pomocí Aspose.Words pro .NET dosáhnout, a zajistit, aby vaše stoly vždy padly jako ulité.
 
@@ -16,7 +16,7 @@ Cítili jste někdy frustraci z tabulek v dokumentech Wordu, které na stránku 
 Než se ponoříte do kódu, ujistěte se, že máte vše na svém místě:
 
 1. Visual Studio: K psaní a spouštění kódu .NET budete potřebovat IDE jako Visual Studio.
-2.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 3. Základní znalost C#: Znalost programovacího jazyka C# vám pomůže snáze porozumět úryvkům kódu.
 
 těmito předpoklady uspořádanými, pojďme k té vzrušující části – kódování!
@@ -100,4 +100,4 @@ Automatické přizpůsobení přepíše konkrétní šířky sloupců. Pokud pot
 Aspose.Words primárně podporuje dokumenty Word (.docx). U jiných formátů je možná budete muset nejprve převést na .docx.
 
 ### Jak mohu získat zkušební verzi Aspose.Words?  
- Můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

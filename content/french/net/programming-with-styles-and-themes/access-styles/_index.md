@@ -15,7 +15,7 @@ url: /fr/net/programming-with-styles-and-themes/access-styles/
 
 Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1.  Aspose.Words pour .NET : vous devez installer cette bibliothèque dans votre environnement .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : vous devez installer cette bibliothèque dans votre environnement .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Connaissance de base de .NET : la familiarité avec C# ou un autre langage .NET vous aidera à comprendre les extraits de code fournis.
 3. Un environnement de développement : assurez-vous d'avoir un IDE tel que Visual Studio configuré pour écrire et exécuter du code .NET.
 

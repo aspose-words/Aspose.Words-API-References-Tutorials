@@ -2,140 +2,103 @@
 title: OLE पैकेज के साथ Word में OLE ऑब्जेक्ट डालें
 linktitle: OLE पैकेज के साथ Word में OLE ऑब्जेक्ट डालें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके किसी दस्तावेज़ में OLE पैकेज के साथ OLE ऑब्जेक्ट सम्मिलित करना सीखें।
+description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में OLE ऑब्जेक्ट सम्मिलित करना सीखें। फ़ाइलों को सहजता से एम्बेड करने के लिए हमारे विस्तृत चरण-दर-चरण मार्गदर्शिका का पालन करें।
 type: docs
 weight: 10
 url: /hi/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
+## परिचय
 
-नीचे C# स्रोत कोड को समझाने के लिए चरण-दर-चरण मार्गदर्शिका दी गई है, जो यह दर्शाती है कि .NET के लिए Aspose.Words का उपयोग करके OLE पैकेज के साथ Word में OLE ऑब्जेक्ट कैसे सम्मिलित किया जाए।
+अगर आप कभी भी किसी फ़ाइल को Word दस्तावेज़ में एम्बेड करना चाहते हैं, तो आप सही जगह पर हैं। चाहे वह ZIP फ़ाइल हो, Excel शीट हो या कोई अन्य फ़ाइल प्रकार हो, उसे सीधे अपने Word दस्तावेज़ में एम्बेड करना अविश्वसनीय रूप से उपयोगी हो सकता है। इसे अपने दस्तावेज़ में एक गुप्त डिब्बे की तरह समझें जहाँ आप सभी प्रकार के खजाने छिपा सकते हैं। और आज, हम .NET के लिए Aspose.Words का उपयोग करके ऐसा करने का तरीका बताने जा रहे हैं। Word जादूगर बनने के लिए तैयार हैं? चलिए शुरू करते हैं!
 
-## चरण 1: आवश्यक संदर्भ आयात करें
-आरंभ करने से पहले, सुनिश्चित करें कि आपने अपने प्रोजेक्ट में .NET के लिए Aspose.Words का उपयोग करने के लिए आवश्यक संदर्भ आयात किए हैं। इसमें Aspose.Words लाइब्रेरी को आयात करना और अपनी स्रोत फ़ाइल में आवश्यक नामस्थान जोड़ना शामिल है।
+## आवश्यक शर्तें
+
+शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+
+1. .NET के लिए Aspose.Words: यदि आपने अभी तक इसे डाउनलोड नहीं किया है, तो इसे यहां से डाउनलोड करें[यहाँ](https://releases.aspose.com/words/net/).
+2. विकास वातावरण: विजुअल स्टूडियो या कोई अन्य .NET विकास वातावरण।
+3. C# की बुनियादी समझ: आपको कोई विशेषज्ञ होने की आवश्यकता नहीं है, लेकिन C# की जानकारी होना सहायक होगा।
+4. दस्तावेज़ निर्देशिका: एक फ़ोल्डर जहाँ आप दस्तावेज़ों को संग्रहीत और पुनर्प्राप्त कर सकते हैं।
+
+## नामस्थान आयात करें
+
+सबसे पहले, आइए अपने नामस्थानों को क्रम में रखें। आपको अपने प्रोजेक्ट में निम्नलिखित नामस्थानों को शामिल करना होगा:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## चरण 2: नया दस्तावेज़ और दस्तावेज़ जनरेटर बनाएँ
- इस चरण में, हम इसका उपयोग करके एक नया दस्तावेज़ बनाएंगे।`Document` क्लास और एक दस्तावेज़ बिल्डर का उपयोग कर`DocumentBuilder` कक्षा।
+आइये इसे छोटे-छोटे चरणों में विभाजित करें, ताकि इसका अनुसरण करना आसान हो।
+
+## चरण 1: अपना दस्तावेज़ सेट करें
+
+कल्पना करें कि आप एक कलाकार हैं और आपके पास एक खाली कैनवास है। सबसे पहले, हमें अपना खाली कैनवास चाहिए, जो हमारा वर्ड डॉक्यूमेंट है। इसे सेट करने का तरीका इस प्रकार है:
 
 ```csharp
+// आपके दस्तावेज़ निर्देशिका का पथ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## चरण 3: OLE पैकेज के साथ OLE ऑब्जेक्ट डालें
- दस्तावेज़ जनरेटर का उपयोग करें`InsertOleObject`दस्तावेज़ में OLE पैकेज के साथ OLE ऑब्जेक्ट डालने की विधि। डेटा स्ट्रीम, ऑब्जेक्ट प्रकार, प्रदर्शन विकल्प और अन्य आवश्यक सेटिंग्स निर्दिष्ट करें।
+यह कोड एक नया वर्ड दस्तावेज़ आरंभ करता है और एक डॉक्यूमेंटबिल्डर सेट करता है, जिसका उपयोग हम अपने दस्तावेज़ में सामग्री सम्मिलित करने के लिए करेंगे।
+
+## चरण 2: अपना पुराना ऑब्जेक्ट पढ़ें
+
+इसके बाद, आइए उस फ़ाइल को पढ़ें जिसे आप एम्बेड करना चाहते हैं। इसे उस ख़ज़ाने को उठाने के रूप में सोचें जिसे आप अपने गुप्त डिब्बे में छिपाना चाहते हैं:
 
 ```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
+byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
+```
+
+यह लाइन आपकी ZIP फ़ाइल से सभी बाइट्स को पढ़ती है और उन्हें बाइट ऐरे में संग्रहीत करती है।
+
+## चरण 3: ओले ऑब्जेक्ट डालें
+
+अब जादुई हिस्सा आता है। हम फ़ाइल को अपने वर्ड दस्तावेज़ में एम्बेड करने जा रहे हैं:
+
+```csharp
 using (Stream stream = new MemoryStream(bs))
 {
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
+    Shape shape = builder.InsertOleObject(stream, "Package", true, null);
+    OlePackage olePackage = shape.OleFormat.OlePackage;
+    olePackage.FileName = "filename.zip";
+    olePackage.DisplayName = "displayname.zip";
 }
 ```
 
-## चरण 4: दस्तावेज़ सहेजें
- दस्तावेज़ का उपयोग करें`Save` दस्तावेज़ को फ़ाइल में सहेजने की विधि.
+ यहाँ, हम बाइट सरणी से एक मेमोरी स्ट्रीम बनाते हैं और इसका उपयोग करते हैं`InsertOleObject` दस्तावेज़ में इसे एम्बेड करने के लिए विधि। हम एम्बेड किए गए ऑब्जेक्ट के लिए फ़ाइल नाम और प्रदर्शन नाम भी सेट करते हैं।
+
+## चरण 4: अपना दस्तावेज़ सहेजें
+
+अंत में, आइए अपनी उत्कृष्ट कृति को बचाएं:
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### .NET के लिए Aspose.Words के साथ OLE पैकेज के साथ OLE ऑब्जेक्ट सम्मिलित करने के लिए नमूना स्रोत कोड
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-यह .NET के लिए Aspose.Words के साथ OLE पैकेज के साथ OLE ऑब्जेक्ट डालने के लिए एक पूर्ण कोड नमूना है। इस कोड को अपने प्रोजेक्ट में एकीकृत करने के लिए आवश्यक संदर्भों को आयात करना सुनिश्चित करें और पहले बताए गए चरणों का पालन करें।
+यह दस्तावेज़ को आपकी एम्बेडेड फ़ाइल के साथ निर्दिष्ट निर्देशिका में सहेज देता है।
 
 ## निष्कर्ष
 
-अंत में, हमने .NET के लिए Aspose.Words का उपयोग करके OLE पैकेज वाले Word दस्तावेज़ में OLE ऑब्जेक्ट सम्मिलित करने के लिए चरण-दर-चरण मार्गदर्शिका का अध्ययन किया है।
+और अब यह हो गया! आपने .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में OLE ऑब्जेक्ट को सफलतापूर्वक एम्बेड कर लिया है। यह आपके दस्तावेज़ के अंदर एक छिपे हुए रत्न को जोड़ने जैसा है जिसे किसी भी समय प्रकट किया जा सकता है। यह तकनीक तकनीकी दस्तावेज़ों से लेकर गतिशील रिपोर्ट तक, विभिन्न अनुप्रयोगों के लिए अविश्वसनीय रूप से उपयोगी हो सकती है। 
 
-इन चरणों का पालन करके, आप .NET के लिए Aspose.Words का उपयोग करके अपने Word दस्तावेज़ों में OLE पैकेज के साथ OLE ऑब्जेक्ट को सफलतापूर्वक सम्मिलित करने में सक्षम होंगे। वांछित परिणाम प्राप्त करने के लिए आवश्यक संदर्भों को आयात करना सुनिश्चित करें और निर्देशों का सावधानीपूर्वक पालन करें।
+## अक्सर पूछे जाने वाले प्रश्न
 
-### OLE पैकेज के साथ वर्ड में OLE ऑब्जेक्ट सम्मिलित करने के लिए अक्सर पूछे जाने वाले प्रश्न
+### क्या मैं इस विधि का उपयोग करके अन्य फ़ाइल प्रकारों को एम्बेड कर सकता हूँ?
+हां, आप विभिन्न फ़ाइल प्रकारों जैसे एक्सेल शीट, पीडीएफ और छवियों को एम्बेड कर सकते हैं।
 
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करने के लिए मुझे कौन से क्रेडेंशियल आयात करने की आवश्यकता है?
+### क्या मुझे Aspose.Words के लिए लाइसेंस की आवश्यकता है?
+ हां, आपको वैध लाइसेंस की आवश्यकता है। आप एक वैध लाइसेंस प्राप्त कर सकते हैं।[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
 
-उत्तर: .NET के लिए Aspose.Words का उपयोग करने के लिए, आपको निम्नलिखित संदर्भ आयात करने होंगे:
+### मैं OLE ऑब्जेक्ट का प्रदर्शन नाम कैसे अनुकूलित कर सकता हूं?
+ आप सेट कर सकते हैं`DisplayName` की संपत्ति`OlePackage` इसे अनुकूलित करने के लिए.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
+### क्या Aspose.Words .NET कोर के साथ संगत है?
+हां, Aspose.Words .NET फ्रेमवर्क और .NET कोर दोनों का समर्थन करता है।
 
-#### प्रश्न: नया दस्तावेज़ और दस्तावेज़ जनरेटर कैसे बनाएं?
-
- उत्तर: आप इसका उपयोग करके एक नया दस्तावेज़ बना सकते हैं`Document` क्लास और एक दस्तावेज़ बिल्डर का उपयोग कर`DocumentBuilder` वर्ग, जैसा कि नीचे दिखाया गया है:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### प्रश्न: दस्तावेज़ में OLE पैकेज के साथ OLE ऑब्जेक्ट कैसे सम्मिलित करें?
-
- उत्तर: का प्रयोग करें`InsertOleObject` दस्तावेज़ निर्माता की विधि (`DocumentBuilder`) दस्तावेज़ में OLE पैकेज के साथ OLE ऑब्जेक्ट डालने के लिए। डेटा स्ट्रीम, ऑब्जेक्ट प्रकार, प्रदर्शन विकल्प और अन्य आवश्यक सेटिंग्स निर्दिष्ट करें। यहाँ एक उदाहरण दिया गया है :
-
-```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-```
-
-#### प्रश्न: दस्तावेज़ को कैसे सुरक्षित करें?
-
- उत्तर: दस्तावेज़ का उपयोग करें`Save`दस्तावेज़ को फ़ाइल में सहेजने की विधि। यहाँ एक उदाहरण दिया गया है:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-#### प्रश्न: क्या आप .NET के लिए Aspose.Words के साथ OLE पैकेज के साथ OLE ऑब्जेक्ट सम्मिलित करने का पूर्ण उदाहरण प्रदान कर सकते हैं?
-
-उत्तर: यहाँ .NET के लिए Aspose.Words का उपयोग करके OLE पैकेज के साथ OLE ऑब्जेक्ट सम्मिलित करने के लिए एक पूर्ण नमूना कोड है। इस कोड को अपने प्रोजेक्ट में एकीकृत करने के लिए आवश्यक संदर्भों को आयात करना सुनिश्चित करें और पहले बताए गए चरणों का पालन करें:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-यह Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में OLE पैकेज के साथ OLE ऑब्जेक्ट डालने पर हमारा ट्यूटोरियल समाप्त करता है। आवश्यक संदर्भों को आयात करने और इस कोड को अपने प्रोजेक्ट में एकीकृत करने के लिए वर्णित चरणों का पालन करने के लिए स्वतंत्र महसूस करें। यदि आपके पास कोई और प्रश्न है, तो कृपया हमसे संपर्क करने में संकोच न करें।
+### क्या मैं Word दस्तावेज़ में एम्बेडेड OLE ऑब्जेक्ट को संपादित कर सकता हूँ?
+नहीं, आप OLE ऑब्जेक्ट को सीधे Word में संपादित नहीं कर सकते। आपको इसे इसके मूल एप्लिकेशन में खोलना होगा।

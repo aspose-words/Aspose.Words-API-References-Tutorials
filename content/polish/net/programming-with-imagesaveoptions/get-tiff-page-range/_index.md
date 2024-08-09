@@ -9,7 +9,7 @@ url: /pl/net/programming-with-imagesaveoptions/get-tiff-page-range/
 ---
 ## Wstęp
 
-Hej, drodzy programiści! Czy jesteś zmęczony kłopotami związanymi z konwersją określonych stron dokumentów programu Word na obrazy TIFF? Nie szukaj dalej! Dzięki Aspose.Words dla .NET możesz bez wysiłku konwertować określone zakresy stron dokumentów Word do plików TIFF. Ta potężna biblioteka upraszcza zadanie i oferuje mnóstwo opcji dostosowywania, aby dokładnie dopasować je do Twoich potrzeb. W tym samouczku opiszemy proces krok po kroku, upewniając się, że możesz opanować tę funkcję i bezproblemowo zintegrować ją ze swoimi projektami.
+Hej, drodzy programiści! Czy jesteś zmęczony kłopotami związanymi z konwersją określonych stron dokumentów programu Word na obrazy TIFF? Nie szukaj dalej! Dzięki Aspose.Words dla .NET możesz bez wysiłku konwertować określone zakresy stron dokumentów Word do plików TIFF. Ta potężna biblioteka upraszcza zadanie i oferuje mnóstwo opcji dostosowywania, aby dokładnie dopasować je do Twoich potrzeb. W tym samouczku opiszemy ten proces krok po kroku, upewniając się, że możesz opanować tę funkcję i bezproblemowo zintegrować ją ze swoimi projektami.
 
 ## Warunki wstępne
 
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokument Word
 
-Następnie musimy załadować dokument Word, z którym chcesz pracować. Dokument ten będzie źródłem, z którego wyodrębnimy określone strony.
+Następnie musimy załadować dokument Word, z którym chcesz pracować. Ten dokument będzie źródłem, z którego wyodrębnimy określone strony.
 
 ```csharp
 // Załaduj dokument

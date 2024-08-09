@@ -7,17 +7,18 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fonts/font-settings-default-instance/
 ---
+## Giới thiệu
 
-Chào mừng bạn đến với hướng dẫn chuyên sâu này về cách quản lý cài đặt phông chữ bằng Aspose.Words cho .NET. Nếu bạn đã từng gặp khó khăn khi xử lý phông chữ trong tài liệu của mình thì hướng dẫn này sẽ hướng dẫn bạn mọi thứ bạn cần biết để tùy chỉnh và quản lý phông chữ một cách hiệu quả. Hãy đi sâu vào!
+Chào mừng bạn đến với hướng dẫn chuyên sâu này về cách quản lý cài đặt phông chữ bằng Aspose.Words cho .NET. Nếu bạn đã từng gặp khó khăn khi xử lý phông chữ trong tài liệu của mình thì hướng dẫn này sẽ hướng dẫn bạn mọi thứ bạn cần biết để tùy chỉnh và quản lý phông chữ một cách hiệu quả.
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có những điều sau:
 
 - Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp bạn hiểu và thực hiện các bước một cách trôi chảy.
--  Thư viện Aspose.Words for .NET: Tải xuống và cài đặt Aspose.Words for .NET từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+-  Thư viện Aspose.Words for .NET: Tải xuống và cài đặt Aspose.Words for .NET từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Một môi trường phù hợp như Visual Studio để viết và thực thi mã của bạn.
-- Tài liệu mẫu: Một tài liệu mẫu (ví dụ:`Rendering.docx`) để áp dụng cài đặt phông chữ.
+-  Tài liệu mẫu: Một tài liệu mẫu (ví dụ:`Rendering.docx`) để áp dụng cài đặt phông chữ.
 
 ## Nhập không gian tên
 
@@ -51,7 +52,7 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 
 Trong ví dụ này:
 - `SystemFontSource` đại diện cho phông chữ mặc định của hệ thống.
-- `FolderFontSource` trỏ đến một thư mục tùy chỉnh (`C:\\MyFonts\\` ) nơi lưu trữ các phông chữ bổ sung. Các`true` tham số chỉ ra rằng thư mục này cần được quét đệ quy.
+- `FolderFontSource` trỏ đến một thư mục tùy chỉnh (`C:\\MyFonts\\` ) nơi lưu trữ các phông chữ bổ sung. các`true` tham số chỉ ra rằng thư mục này cần được quét đệ quy.
 
 ## Bước 3: Tải tài liệu
 
@@ -77,22 +78,22 @@ Chúc mừng! Bạn đã nắm vững kiến thức cơ bản về quản lý c�
 
 ## Câu hỏi thường gặp
 
-### Câu hỏi 1: Tôi có thể sử dụng phông chữ từ nhiều thư mục tùy chỉnh không?
+### Tôi có thể sử dụng phông chữ từ nhiều thư mục tùy chỉnh không?
 
  Có, bạn có thể chỉ định nhiều`FolderFontSource` các trường hợp trong`SetFontsSources` phương pháp bao gồm phông chữ từ các thư mục khác nhau.
 
-### Câu hỏi 2: Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?
+### Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?
 
  Bạn có thể tải xuống bản dùng thử miễn phí từ[Trang dùng thử miễn phí](https://releases.aspose.com/).
 
-### Câu hỏi 3: Có thể nhúng phông chữ trực tiếp vào tài liệu không?
+### Có thể nhúng phông chữ trực tiếp vào tài liệu không?
 
 Aspose.Words cho phép nhúng phông chữ ở một số định dạng, như PDF. Kiểm tra tài liệu để biết thêm chi tiết về cách nhúng phông chữ.
 
-### Câu hỏi 4: Tôi có thể nhận hỗ trợ cho Aspose.Words ở đâu?
+### Tôi có thể nhận hỗ trợ cho Aspose.Words ở đâu?
 
  Để được hỗ trợ, hãy truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### Câu hỏi 5: Tôi có thể mua giấy phép tạm thời không?
+### Tôi có thể mua giấy phép tạm thời không?
 
  Có, bạn có thể xin giấy phép tạm thời từ[trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).

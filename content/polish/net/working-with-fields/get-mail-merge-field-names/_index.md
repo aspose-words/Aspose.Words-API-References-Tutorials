@@ -13,7 +13,7 @@ Witamy w tym przewodniku na temat wyodrębniania nazw pól korespondencji seryjn
 
 ## Warunki wstępne
 
-Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące informacje:
+Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące elementy:
 
 1.  Aspose.Words dla biblioteki .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli nie, możesz pobrać go ze strony[Strona Aspose](https://releases.aspose.com/words/net/).
 
@@ -92,7 +92,7 @@ Ten wiersz kodu wyświetla całkowitą liczbę pól korespondencji seryjnej w do
 
 Gratulacje! Nauczyłeś się teraz, jak wyodrębnić nazwy pól korespondencji seryjnej z dokumentu programu Word przy użyciu Aspose.Words dla .NET. Technika ta stanowi cenne narzędzie do zarządzania i automatyzacji obiegu dokumentów, ułatwiając obsługę spersonalizowanych treści. Wykonując poniższe kroki, możesz efektywnie identyfikować pola korespondencji seryjnej w dokumentach i pracować z nimi.
 
- Jeśli masz jakieś pytania lub potrzebujesz dalszej pomocy, nie krępuj się zapoznać z naszą stroną[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) lub dołącz do[społeczność Aspose](https://forum.aspose.com/c/words/8) dla wsparcia. Miłego kodowania!
+ Jeśli masz jakieś pytania lub potrzebujesz dalszej pomocy, nie krępuj się zapoznać z naszą stroną[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) lub dołącz do[społeczność Aspose](https://forum.aspose.com/c/words/8) za wsparcie. Miłego kodowania!
 
 ## Często zadawane pytania
 

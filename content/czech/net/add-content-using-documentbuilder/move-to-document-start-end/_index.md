@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Takže jste pracovali s dokumenty Word a potřebujete způsob, jak rychle programově přejít na začátek nebo konec dokumentu, co? Tak to jste na správném místě! V této příručce se ponoříme do toho, jak přesunout kurzor na začátek nebo konec dokumentu aplikace Word pomocí Aspose.Words for .NET. Věřte mi, že na konci tohoto se budete v dokumentech pohybovat jako profesionál. Začněme!
+Ahoj! Takže jste pracovali s dokumenty Word a potřebujete způsob, jak rychle programově přejít na začátek nebo konec dokumentu, co? Tak to jste na správném místě! V této příručce se ponoříme do toho, jak přesunout kurzor na začátek nebo konec dokumentu aplikace Word pomocí Aspose.Words for .NET. Věřte mi, že na konci tohoto se budete v dokumentech pohybovat jako profesionál. Začněme!
 
 ## Předpoklady
 
 Než se po hlavě ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Toto je magický nástroj, který budeme používat. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/) nebo chytit a[zkušební verze zdarma](https://releases.aspose.com/).
+1.  Aspose.Words for .NET: Toto je magický nástroj, který budeme používat. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) nebo chytit a[zkušební verze zdarma](https://releases.aspose.com/).
 2. Vývojové prostředí .NET: Visual Studio je dobrá volba.
 3. Základní znalost C#: Nebojte se, nemusíte být kouzelník, ale trocha znalosti vám hodně pomůže.
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Zde vytváříme instanci`Document`a`DocumentBuilder` . Myslet na`Document` jako váš prázdný dokument aplikace Word a`DocumentBuilder` jako vaše pero.
+ Zde vytváříme instanci`Document`a`DocumentBuilder` . Myslete na to`Document` jako váš prázdný dokument aplikace Word a`DocumentBuilder` jako vaše pero.
 
 ## Krok 2: Přejděte na Start dokumentu
 
@@ -84,4 +84,4 @@ Absolutně! I když tato příručka používá C#, můžete Aspose.Words pro .N
 Ano, Aspose.Words for .NET podporuje .NET Framework i .NET Core.
 
 ### Kde najdu další návody na Aspose.Words pro .NET?  
-Můžete se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo navštívit jejich[Fórum podpory](https://forum.aspose.com/c/words/8) pro další pomoc.
+Můžete se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo navštívit jejich[fórum podpory](https://forum.aspose.com/c/words/8) pro další pomoc.

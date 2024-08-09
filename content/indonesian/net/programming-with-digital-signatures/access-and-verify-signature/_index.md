@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Digitally signed.docx");
 
 ## Langkah 3: Akses Tanda Tangan Digital
 
-Dengan dokumen Anda dimuat, saatnya mengakses tanda tangan digital.
+Setelah dokumen Anda dimuat, saatnya mengakses tanda tangan digital.
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)

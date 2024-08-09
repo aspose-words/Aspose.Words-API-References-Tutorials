@@ -118,7 +118,7 @@ Esta linha salva o documento como "WorkingWithVba.CreateVbaProject.docm" no dire
 
 Parabéns! Você criou com sucesso um projeto VBA em um documento do Word usando Aspose.Words for .NET. Este tutorial cobriu tudo, desde a configuração do seu ambiente até escrever e salvar código VBA. Com Aspose.Words, você pode automatizar tarefas, criar macros e personalizar seus documentos do Word de maneiras que você nunca imaginou ser possível.
 
- Se você estiver ansioso para explorar mais, o[Documentação da API](https://reference.aspose.com/words/net/) é um tesouro de informações. E se você precisar de ajuda, o[Fórum de suporte](https://forum.aspose.com/c/words/8) está a apenas um clique de distância.
+ Se você estiver ansioso para explorar mais, o[Documentação da API](https://reference.aspose.com/words/net/) é um tesouro de informações. E se você precisar de ajuda, o[fórum de suporte](https://forum.aspose.com/c/words/8) está a apenas um clique de distância.
 
 Boa codificação e lembre-se, o único limite é a sua imaginação!
 
@@ -128,7 +128,7 @@ Boa codificação e lembre-se, o único limite é a sua imaginação!
 Aspose.Words for .NET é uma biblioteca abrangente que permite aos desenvolvedores criar, editar e converter documentos do Word em aplicativos .NET. É perfeito para automatizar fluxos de trabalho de documentos e aprimorar a funcionalidade com VBA.
 
 ### Posso experimentar o Aspose.Words gratuitamente?  
- Sim, você pode tentar Aspose.Words com um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
+ Sim, você pode tentar Aspose.Words com um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
 
 ### Como adiciono código VBA a um documento do Word?  
  Você pode adicionar código VBA criando um`VbaModule` e definindo seu`SourceCode` propriedade com seu código de macro. Em seguida, adicione o módulo ao seu`VbaProject`.

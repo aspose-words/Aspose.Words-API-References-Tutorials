@@ -9,7 +9,7 @@ url: /zh-hant/net/add-content-using-documentbuilder/cursor-position/
 ---
 ## 介紹
 
-嘿，編碼員們！您是否曾經發現自己深陷一個專案中，在 .NET 應用程式中與 Word 文件搏鬥？你不是一個人。我們都經歷過這種情況，摸不著頭腦，試圖弄清楚如何在不失去理智的情況下操作 Word 文件。今天，我們將深入了解 Aspose.Words for .NET 的世界，這是一個出色的程式庫，可以減輕以程式設計方式處理 Word 文件的痛苦。我們將詳細介紹如何使用這個漂亮的工具來管理 Word 文件中的遊標位置。所以，喝杯咖啡，讓我們開始編碼吧！
+嘿，編碼員們！您是否曾經發現自己深陷一個專案中，在 .NET 應用程式中與 Word 文件搏鬥？你並不孤單。我們都經歷過這種情況，摸不著頭腦，試圖弄清楚如何在不失去理智的情況下操作 Word 文件。今天，我們將深入了解 Aspose.Words for .NET 的世界，這是一個出色的程式庫，可以減輕以程式設計方式處理 Word 文件的痛苦。我們將詳細介紹如何使用這個漂亮的工具來管理 Word 文件中的遊標位置。所以，喝杯咖啡，讓我們開始編碼吧！
 
 ## 先決條件
 
@@ -110,7 +110,7 @@ builder.Writeln("This is a new paragraph after moving the cursor.");
 doc.Save("ManipulatedDocument.docx");
 ```
 
-現在你就擁有了！使用 Aspose.Words for .NET 來操作 Word 文件中遊標位置的簡單且強大的方法。
+現在你就得到它了！使用 Aspose.Words for .NET 來操作 Word 文件中遊標位置的簡單且強大的方法。
 
 ## 結論
 

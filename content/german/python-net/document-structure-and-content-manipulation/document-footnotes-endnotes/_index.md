@@ -73,7 +73,7 @@ Sie können Fußnoten und Endnoten programmgesteuert verwalten, indem Sie:
 
 - Halten Sie Fußnoten kurz und relevant
 - Verwenden Sie Endnoten für ausführlichere Erklärungen
-- Behalten Sie eine einheitliche Formatierung bei
+- Achten Sie auf eine einheitliche Formatierung
 - Überprüfen Sie die Richtigkeit der Zitate
 
 ## Fehlerbehebung bei allgemeinen Problemen
@@ -98,7 +98,7 @@ Ja, Sie können das Erscheinungsbild von Fußnoten und Endnoten mit Aspose.Words
 
 ### Was ist der Unterschied zwischen Fußnoten und Endnoten?
 
-Fußnoten erscheinen unten auf der Seite, während Endnoten am Ende des Dokuments oder Abschnitts stehen. Sie dienen demselben Zweck, nämlich zusätzliche Informationen oder Referenzen bereitzustellen.
+Fußnoten erscheinen unten auf der Seite, während Endnoten am Ende des Dokuments oder Abschnitts stehen. Sie dienen demselben Zweck, nämlich der Bereitstellung zusätzlicher Informationen oder Referenzen.
 
 ### Wie verwalte ich die Reihenfolge von Fußnoten oder Endnoten?
 

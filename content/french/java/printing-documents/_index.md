@@ -18,7 +18,7 @@ Avant de nous plonger dans les didacticiels, comprenons pourquoi Aspose.Words fo
 
  Pour démarrer votre parcours vers l'impression de documents avec Aspose.Words for Java, rendez-vous sur notre documentation[ici](https://reference.aspose.com/words/java/). C'est votre passerelle vers un trésor de ressources qui vous aideront à maîtriser l'art de l'impression de documents à l'aide de Java.
 
-## Où commencer?
+## Par où commencer ?
 
 Prêt à vous lancer dans la maîtrise d’Aspose.Words pour Java ? Commencez par le didacticiel 1 et parcourez les didacticiels qui suscitent votre intérêt et correspondent aux besoins de votre projet. Chaque didacticiel est un pas de plus pour devenir un expert en impression de documents Java.
 
@@ -26,7 +26,7 @@ Prêt à vous lancer dans la maîtrise d’Aspose.Words pour Java ? Commencez p
 
 Dans cet article, nous vous avons présenté le monde de l'impression de documents à l'aide d'Aspose.Words pour Java. Avec notre liste de didacticiels et la puissance d'Aspose.Words à portée de main, vous êtes bien équipé pour relever tout défi d'impression de documents qui se présente à vous. Commencez à explorer, expérimenter et créer de superbes documents imprimés en toute confiance.
 
- N'oubliez pas que si vous avez des questions ou avez besoin d'aide supplémentaire, n'hésitez pas à visiter notre[forum d'entraide](https://forum.aspose.com/) ou explorez[options de licence temporaire](https://purchase.aspose.com/temporary-license/) pour dynamiser votre parcours Aspose.Words for Java.
+ N'oubliez pas que si vous avez des questions ou avez besoin d'aide supplémentaire, n'hésitez pas à visiter notre[forum d'assistance](https://forum.aspose.com/) ou explorez[options de licence temporaire](https://purchase.aspose.com/temporary-license/) pour dynamiser votre parcours Aspose.Words for Java.
 
 ## Didacticiels sur l'impression de documents
 ### [Impression de documents dans Aspose.Words pour Java](./printing-documents/)

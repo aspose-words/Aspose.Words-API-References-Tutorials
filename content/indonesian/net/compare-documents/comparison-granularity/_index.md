@@ -95,7 +95,7 @@ J: Untuk menggunakan Granularitas Perbandingan di Aspose.Words untuk .NET, ikuti
 2. Tambahkan rakitan yang diperlukan ke proyek Anda dengan merujuk Aspose.Words.
 3.  Buat dokumen yang ingin Anda bandingkan menggunakan`DocumentBuilder` kelas.
 4.  Konfigurasikan opsi perbandingan dengan membuat a`CompareOptions` objek dan pengaturannya`Granularity` properti ke tingkat yang diinginkan (misalnya,`Granularity.CharLevel` untuk perbandingan tingkat karakter).
-5.  Menggunakan`Compare`metode pada satu dokumen, meneruskan dokumen lain dan`CompareOptions` objek sebagai parameter. Cara ini akan membandingkan dokumen berdasarkan granularitas yang ditentukan dan menyimpan perubahan pada dokumen pertama.
+5.  Gunakan`Compare`metode pada satu dokumen, meneruskan dokumen lain dan`CompareOptions` objek sebagai parameter. Cara ini akan membandingkan dokumen berdasarkan granularitas yang ditentukan dan menyimpan perubahan pada dokumen pertama.
 
 #### T: Berapa tingkat Granularitas Perbandingan yang tersedia di Aspose.Words untuk .NET?
 

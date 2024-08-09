@@ -15,7 +15,7 @@ Hallo, liebe Programmierer! Wenn Sie in die Welt von Aspose.Words für .NET eint
 
 Bevor wir uns die Hände schmutzig machen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek installiert haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2.  Lizenzdatei: Sie benötigen eine gültige Lizenzdatei. Wenn Sie keine haben, können Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zu Testzwecken.
 3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse der C#-Programmierung werden vorausgesetzt.
 
@@ -41,7 +41,7 @@ License license = new License();
 
 ## Schritt 2: Einlesen der Lizenzdatei in einen Stream
 
- Nun möchten Sie Ihre Lizenzdatei in einen Speicherstrom einlesen. Dazu müssen Sie die Datei laden und für den`SetLicense` Methode.
+ Nun möchten Sie Ihre Lizenzdatei in einen Speicherstrom einlesen. Dazu müssen Sie die Datei laden und für den`SetLicense` Verfahren.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.lic")))
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Abschluss
 
-Und da haben Sie es! Das Anwenden einer Lizenz aus einem Stream in Aspose.Words für .NET ist ein unkomplizierter Vorgang, wenn Sie die Schritte kennen. Indem Sie dieser Anleitung folgen, stellen Sie sicher, dass Ihre Anwendung die vollen Funktionen von Aspose.Words ohne Einschränkungen nutzen kann. Wenn Sie auf Probleme stoßen, zögern Sie nicht, sich die[Dokumentation](https://reference.aspose.com/words/net/) oder suchen Sie Hilfe auf der[Hilfeforum](https://forum.aspose.com/c/words/8). Viel Spaß beim Programmieren!
+Und da haben Sie es! Das Anwenden einer Lizenz aus einem Stream in Aspose.Words für .NET ist ein unkomplizierter Vorgang, wenn Sie die Schritte kennen. Indem Sie dieser Anleitung folgen, stellen Sie sicher, dass Ihre Anwendung die vollen Funktionen von Aspose.Words ohne Einschränkungen nutzen kann. Wenn Sie auf Probleme stoßen, zögern Sie nicht, sich die[Dokumentation](https://reference.aspose.com/words/net/) oder suchen Sie Hilfe auf der[Support-Forum](https://forum.aspose.com/c/words/8). Viel Spaß beim Programmieren!
 
 ## Häufig gestellte Fragen
 

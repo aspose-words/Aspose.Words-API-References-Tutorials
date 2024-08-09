@@ -116,7 +116,7 @@ Aspose.Words, adres-mektup birleştirme, belge şifreleme ve yer imleri, köprü
 
 ## Belge İşlemenin Otomatikleştirilmesi
 
-Aspose.Words, belgeleri oluşturma ve biçimlendirmenin yanı sıra, posta birleştirme, metin çıkarma ve dosyaları çeşitli biçimlere dönüştürme gibi belge işleme görevlerini de otomatikleştirebilir.
+Aspose.Words, belgeleri oluşturma ve biçimlendirmenin yanı sıra, adres-posta birleştirme, metin çıkarma ve dosyaları çeşitli biçimlere dönüştürme gibi belge işleme görevlerini de otomatikleştirebilir.
 
 ## Çözüm
 
@@ -125,7 +125,7 @@ Aspose.Words for Python ile Kelime Otomasyonu, belge oluşturma ve işlemede ola
 ## SSS
 
 ### Aspose.Words Java veya .NET gibi diğer platformlarla uyumlu mu?
-Evet, Aspose.Words, Java ve .NET dahil birden fazla platform için mevcut olup, geliştiricilerin onu tercih ettikleri programlama dilinde kullanmalarına olanak tanır.
+Evet, Aspose.Words, Java ve .NET dahil olmak üzere birçok platformda mevcut olduğundan geliştiricilerin onu tercih ettikleri programlama dilinde kullanmalarına olanak tanır.
 
 ### Aspose.Words'ü kullanarak Word belgelerini PDF'ye dönüştürebilir miyim?
 Kesinlikle! Aspose.Words, DOCX'ten PDF'ye dönüştürme de dahil olmak üzere çeşitli formatları destekler.
@@ -154,7 +154,7 @@ Cevap6: Evet, Aspose.Words for Python'u kullanarak Word belgelerine kolayca gör
 ### Aspose.Words'ü kullanarak Word belgelerini farklı dosya formatlarına aktarabilir miyim?
 Kesinlikle! Aspose.Words, dışa aktarma için PDF, DOCX, RTF, HTML ve daha fazlası dahil olmak üzere çeşitli dosya formatlarını destekleyerek farklı ihtiyaçlar için esneklik sağlar.
 
-### Aspose.Words adres-mektup birleştirme işlemlerini otomatikleştirmek için uygun mu?
+### Aspose.Words adres-mektup birleştirme işlemlerini otomatikleştirmek için uygun mudur?
 Evet, Aspose.Words adres-mektup birleştirme işlevini etkinleştirerek çeşitli kaynaklardan gelen verileri Word şablonlarında birleştirmenize olanak tanır ve kişiselleştirilmiş belgeler oluşturma sürecini basitleştirir.
 
 ### Aspose.Words belge şifreleme için herhangi bir güvenlik özelliği sunuyor mu?

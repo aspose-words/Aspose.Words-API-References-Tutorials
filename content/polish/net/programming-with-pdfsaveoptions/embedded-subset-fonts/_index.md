@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 2: Skonfiguruj opcje zapisywania plików PDF
 
- Następnie konfigurujemy`PdfSaveOptions` aby mieć pewność, że osadzone zostaną tylko niezbędne podzbiory czcionek. Przez ustawienie`EmbedFullFonts` Do`false`, mówimy Aspose.Words, aby osadził tylko glify użyte w dokumencie.
+ Następnie konfigurujemy`PdfSaveOptions` aby mieć pewność, że osadzone zostaną tylko niezbędne podzbiory czcionek. Ustawiając`EmbedFullFonts` Do`false`, mówimy Aspose.Words, aby osadził tylko glify użyte w dokumencie.
 
 ```csharp
 // Wyjściowy plik PDF będzie zawierał podzbiory czcionek w dokumencie.

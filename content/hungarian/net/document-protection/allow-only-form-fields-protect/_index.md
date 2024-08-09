@@ -9,7 +9,7 @@ url: /hu/net/document-protection/allow-only-form-fields-protect/
 ---
 ## Bevezetés
 
-Halihó! Szüksége volt valaha egy Word-dokumentum bizonyos részei védelmére, miközben más részeit szerkeszthetővé kell tenni? Az Aspose.Words for .NET ezt rendkívül egyszerűvé teszi. Ebben az oktatóanyagban azt mutatjuk be, hogyan lehet csak az űrlapmezők védelmét engedélyezni egy Word-dokumentumban. Az útmutató végére sziklaszilárd ismerete lesz az Aspose.Words for .NET használatával történő dokumentumvédelemről. Kész? ugorjunk be!
+Szia! Szüksége volt valaha egy Word-dokumentum bizonyos részei védelmére, miközben más részeit szerkeszthetővé kell tenni? Az Aspose.Words for .NET ezt rendkívül egyszerűvé teszi. Ebben az oktatóanyagban azt mutatjuk be, hogyan lehet csak az űrlapmezők védelmét engedélyezni egy Word-dokumentumban. Az útmutató végére sziklaszilárd ismerete lesz az Aspose.Words for .NET használatával történő dokumentumvédelemről. Kész? ugorjunk be!
 
 ## Előfeltételek
 

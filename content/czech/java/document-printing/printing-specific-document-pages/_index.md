@@ -8,7 +8,7 @@ weight: 13
 url: /cs/java/document-printing/printing-specific-document-pages/
 ---
 
-## Úvod
+## Zavedení
 
 Tisk konkrétních stránek dokumentu může být běžným požadavkem v různých aplikacích. Aspose.Words for Java tento úkol zjednodušuje poskytováním komplexní sady funkcí pro správu dokumentů aplikace Word. V tomto tutoriálu vytvoříme Java aplikaci, která načte dokument aplikace Word a vytiskne pouze požadované stránky.
 

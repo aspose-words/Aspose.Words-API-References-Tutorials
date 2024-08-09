@@ -15,7 +15,7 @@ url: /ko/net/programming-with-charts/define-xyaxis-properties/
 
 코딩을 시작하기 전에 갖춰야 할 몇 가지 전제 조건이 있습니다.
 
-1. .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1. .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 통합 개발 환경(IDE)이 필요합니다.
 3. .NET Framework: 개발 환경이 .NET 개발용으로 설정되어 있는지 확인하세요.
 4. C# 기본 지식: 이 가이드에서는 사용자가 C# 프로그래밍에 대한 기본 지식을 가지고 있다고 가정합니다.

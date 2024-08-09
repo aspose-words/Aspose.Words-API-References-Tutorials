@@ -65,7 +65,7 @@ En este momento, estamos usando las opciones predeterminadas, pero puedes person
 
 ## Paso 4: realice el reemplazo de expresiones regulares
 
- ¡Ahora viene la parte divertida! Usaremos el`Range.Replace` Método para reemplazar todas las apariciones de "triste" o "loco" por "malo" usando una expresión regular.
+ ¡Ahora viene la parte divertida! Usaremos el`Range.Replace` Método para reemplazar todas las apariciones de "triste" o "enojado" por "malo" usando una expresión regular.
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
@@ -89,14 +89,14 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## Preguntas frecuentes
 
-### ¿Puedo utilizar patrones de expresiones regulares más complejos con Aspose.Words para .NET?  
+### ¿Puedo usar patrones de expresiones regulares más complejos con Aspose.Words para .NET?  
 ¡Absolutamente! Aspose.Words admite una amplia gama de patrones de expresiones regulares. Puede adaptar sus patrones para que coincidan exactamente con lo que necesita.
 
 ### ¿Aspose.Words para .NET admite otras operaciones de texto?  
 Sí, lo hace. Aspose.Words para .NET ofrece un amplio conjunto de funciones para manipular documentos de Word, incluida la extracción de texto, el formato y más.
 
 ### ¿Puedo reemplazar texto en secciones específicas de un documento?  
-Sí tu puedes. Puede utilizar diferentes métodos para apuntar a secciones, párrafos o incluso encabezados y pies de página específicos de su documento.
+Sí, puedes. Puede utilizar diferentes métodos para apuntar a secciones, párrafos o incluso encabezados y pies de página específicos de su documento.
 
 ### ¿Existe alguna forma de obtener una vista previa de los cambios antes de guardar el documento?  
 Si bien Aspose.Words no proporciona una función de vista previa directa, siempre puede guardar una copia del documento antes de realizar cambios y comparar las versiones.

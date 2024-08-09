@@ -9,7 +9,7 @@ url: /nl/net/working-with-markdown/use-warning-source/
 ---
 ## Invoering
 
- Heeft u ooit documenten programmatisch moeten beheren en opmaken? Als dat zo is, heeft u waarschijnlijk te maken gehad met de complexiteit van het omgaan met verschillende documenttypen en het garanderen dat alles er goed uitziet. Voer Aspose.Words voor .NET in – een krachtige bibliotheek die documentverwerking vereenvoudigt. Vandaag duiken we in een specifieke functie: het gebruik van de`WarningSource`klasse om waarschuwingen op te vangen en af te handelen bij het werken met Markdown. Laten we aan deze reis beginnen om Aspose.Words voor .NET onder de knie te krijgen!
+Heeft u ooit documenten programmatisch moeten beheren en opmaken? Als dat zo is, heeft u waarschijnlijk te maken gehad met de complexiteit van het omgaan met verschillende documenttypen en het garanderen dat alles er goed uitziet. Voer Aspose.Words voor .NET in – een krachtige bibliotheek die documentverwerking vereenvoudigt. Vandaag duiken we in een specifieke functie: het gebruik van de`WarningSource` klasse om waarschuwingen op te vangen en af te handelen bij het werken met Markdown. Laten we aan deze reis beginnen om Aspose.Words voor .NET onder de knie te krijgen!
 
 ## Vereisten
 
@@ -39,7 +39,7 @@ Elk project heeft een solide basis nodig, toch? Laten we beginnen met het instel
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw DOCX-bestand zich bevindt.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad waar uw DOCX-bestand zich bevindt.
 
 ## Stap 2: Het document laden
 
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
 ## Stap 3: Waarschuwingsverzameling instellen
 
- Stel je voor dat je een boek leest met plaknotities waarin belangrijke punten worden benadrukt. De`WarningInfoCollection`doet precies dat voor onze documentverwerking.
+ Stel je voor dat je een boek leest met plaknotities waarin belangrijke punten worden benadrukt. De`WarningInfoCollection` doet precies dat voor onze documentverwerking.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
@@ -88,7 +88,7 @@ Deze regel slaat het document op als een Markdown-bestand in de opgegeven map.
 
 ## Conclusie
 
- En daar heb je het! Je hebt zojuist geleerd hoe je de`WarningSource`klasse in Aspose.Words voor .NET om Markdown-waarschuwingen af te handelen. Deze tutorial behandelde het opzetten van uw project, het laden van een document, het verzamelen en verwerken van waarschuwingen en het opslaan van het definitieve document. Met deze kennis bent u beter in staat om de documentverwerking in uw applicaties te beheren. Blijf experimenteren en ontdek de enorme mogelijkheden van Aspose.Words voor .NET!
+En daar heb je het! Je hebt zojuist geleerd hoe je de`WarningSource` klasse in Aspose.Words voor .NET om Markdown-waarschuwingen af te handelen. Deze tutorial behandelde het opzetten van uw project, het laden van een document, het verzamelen en verwerken van waarschuwingen en het opslaan van het definitieve document. Met deze kennis bent u beter in staat om de documentverwerking in uw applicaties te beheren. Blijf experimenteren en ontdek de enorme mogelijkheden van Aspose.Words voor .NET!
 
 ## Veelgestelde vragen
 
@@ -102,7 +102,7 @@ Aspose.Words voor .NET is een bibliotheek voor het programmatisch werken met Wor
  Waarschuwingsbronnen geven de oorsprong aan van waarschuwingen die worden gegenereerd tijdens de documentverwerking. Bijvoorbeeld,`WarningSource.Markdown` geeft een waarschuwing aan met betrekking tot de verwerking van Markdown.
 
 ### Kan ik de waarschuwingsafhandeling in Aspose.Words aanpassen?
- Ja, u kunt de afhandeling van waarschuwingen aanpassen door de`IWarningCallback` interface en stel deze in op die van het document`WarningCallback` eigendom.
+ Ja, u kunt de afhandeling van waarschuwingen aanpassen door de`IWarningCallback`interface en stel deze in op die van het document`WarningCallback` eigendom.
 
 ### Hoe sla ik een document in verschillende formaten op met Aspose.Words?
  U kunt een document in verschillende formaten (zoals DOCX, PDF, Markdown) opslaan met behulp van de`Save` werkwijze van de`Document` class, waarbij het gewenste formaat als parameter wordt opgegeven.

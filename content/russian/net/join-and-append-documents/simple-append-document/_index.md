@@ -106,7 +106,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 
 ### Что делать, если мои документы имеют другое форматирование?
 
- Вы можете контролировать обработку форматирования с помощью`ImportFormatMode` параметр. Опции включают в себя`KeepSourceFormatting`, `UseDestinationStyles`, и более.
+ Вы можете контролировать обработку форматирования с помощью`ImportFormatMode` параметр. Опции включают в себя`KeepSourceFormatting`, `UseDestinationStyles`и многое другое.
 
 ### Можно ли использовать Aspose.Words бесплатно?
 

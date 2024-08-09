@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/auto-fit-to-page-width/
 ---
-## introduzione
+## Introduzione
 
 Hai mai provato la frustrazione di vedere le tabelle nei documenti Word che non si adattano perfettamente alla pagina? Modifichi i margini, ridimensioni le colonne e sembra ancora imbarazzante. Se utilizzi Aspose.Words per .NET, esiste una soluzione elegante a questo problema: l'adattamento automatico delle tabelle alla finestra. Questa elegante funzionalità regola la larghezza della tabella in modo che si allinei perfettamente con la larghezza della pagina, conferendo al tuo documento un aspetto raffinato e professionale. In questa guida ti guideremo attraverso i passaggi per raggiungere questo obiettivo con Aspose.Words per .NET, assicurandoti che le tue tabelle si adattino sempre come un guanto.
 

@@ -15,7 +15,7 @@ Podczas pracy z dokumentami programu Word zapewnienie identyczności dwóch doku
 
 Zanim zagłębimy się w przewodnik krok po kroku, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne .NET. Zdecydowanie zaleca się korzystanie z programu Visual Studio.
 3. Przykładowe dokumenty: Przygotuj dwa dokumenty programu Word, które chcesz porównać.
 

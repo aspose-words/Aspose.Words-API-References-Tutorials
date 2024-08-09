@@ -10,7 +10,7 @@ url: /it/java/table-processing/table-contents-generation/
 
 Sei pronto per intraprendere un viaggio per padroneggiare la generazione del sommario (TOC) utilizzando Aspose.Words per Java? In questa guida completa, esploreremo l'arte di creare senza sforzo sommari dinamici e visivamente accattivanti. Avrai le conoscenze e le competenze necessarie per implementare perfettamente questa funzionalità nelle tue applicazioni Java. Quindi, tuffiamoci subito!
 
-## introduzione
+## Introduzione
 
 Il sommario (TOC) è una componente essenziale di qualsiasi documento ben strutturato. Fornisce ai lettori una tabella di marcia, consentendo loro di navigare con facilità attraverso documenti lunghi. Aspose.Words per Java è una potente API che semplifica la generazione del sommario nelle applicazioni Java. In questa guida passo passo, tratteremo tutto ciò che devi sapere per creare sommari dinamicamente utilizzando Aspose.Words per Java.
 

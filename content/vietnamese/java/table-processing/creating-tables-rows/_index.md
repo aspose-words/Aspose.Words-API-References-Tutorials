@@ -11,7 +11,7 @@ url: /vi/java/table-processing/creating-tables-rows/
 ## Giới thiệu
 Tạo bảng và hàng trong tài liệu là một khía cạnh cơ bản của quá trình xử lý tài liệu và Aspose.Words for Java giúp công việc này trở nên dễ dàng hơn bao giờ hết. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho Java để tạo bảng và hàng trong tài liệu của bạn. Cho dù bạn đang xây dựng báo cáo, tạo hóa đơn hay tạo bất kỳ tài liệu nào yêu cầu trình bày dữ liệu có cấu trúc thì hướng dẫn này đều hỗ trợ bạn.
 
-## Sắp đặt sân khấu
+## Thiết lập sân khấu
  Trước khi chúng ta đi sâu vào chi tiết thực tế, hãy đảm bảo bạn có thiết lập cần thiết để làm việc với Aspose.Words cho Java. Hãy chắc chắn rằng bạn đã tải xuống và cài đặt thư viện. Nếu chưa có, bạn có thể tìm thấy liên kết tải xuống[đây](https://releases.aspose.com/words/java/).
 
 ## Bàn xây dựng

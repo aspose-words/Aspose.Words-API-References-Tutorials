@@ -98,7 +98,7 @@ Agora que tudo está configurado, é hora de salvar seu documento. Esta etapa é
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
- Aqui o`Save` método salva o documento no caminho especificado com o nome do arquivo`WorkingWithCharts.NumberFormatForAxis.docx`.
+ Aqui, o`Save` método salva o documento no caminho especificado com o nome do arquivo`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Conclusão
 

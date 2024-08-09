@@ -15,7 +15,7 @@ Dinamik belgelerle çalışırken, içeriği belirli kriterlere göre uyarlamak 
 
 Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1.  Aspose.Words for .NET Library: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[İnternet sitesi](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[web sitesi](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: .NET geliştirmeyi destekleyen herhangi bir Visual Studio sürümü. Aspose.Words'ü entegre edebileceğiniz bir .NET projenizin olduğundan emin olun.
 
@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Adım 2: IF Alanını Ekleyin
 
- İle`DocumentBuilder`örnek hazırsa bir sonraki adım belgeye bir IF alanı eklemektir. IF alanı, bir koşulu belirtmenize ve koşulun doğru veya yanlış olmasına bağlı olarak farklı çıktılar tanımlamanıza olanak tanır.
+ ile`DocumentBuilder`örnek hazırsa bir sonraki adım belgeye bir IF alanı eklemektir. IF alanı, bir koşulu belirtmenize ve koşulun doğru veya yanlış olmasına bağlı olarak farklı çıktılar tanımlamanıza olanak tanır.
 
 ```csharp
 // IF alanını belgeye ekleyin.
@@ -92,7 +92,7 @@ IF alanı, belgenize koşullu mantık eklemenizi sağlayan bir Word alanıdır. 
 ### Bir belgeye nasıl IF alanı eklerim?
  kullanarak bir IF alanı ekleyebilirsiniz.`InsertField` yöntemi`DocumentBuilder` değerlendirmek istediğiniz koşulu belirten sınıf.
 
-###  Nedir`EvaluateCondition` method do?
+###  ne işe yarar`EvaluateCondition` method do?
 `EvaluateCondition` yöntemi, IF alanında belirtilen koşulu değerlendirir ve koşulun doğru mu yanlış mı olduğunu belirten sonucu döndürür.
 
 ### IF alanıyla karmaşık koşulları kullanabilir miyim?

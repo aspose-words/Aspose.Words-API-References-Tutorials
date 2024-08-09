@@ -19,7 +19,7 @@ Bazı kodlarla elimizi kirletmeden önce ihtiyacınız olacak birkaç şey var:
 3. .NET Framework: Yüklediğinizden emin olun.
 4.  Lisans: Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) tüm özellikler için.
 
-Herşeye sahip? Harika! Projemizi oluşturmaya devam edelim.
+Herşeyi aldın mı? Harika! Projemizi oluşturmaya devam edelim.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir belgeyi parolayla nasıl şifreleyeceğinizi öğrendiniz. Belgelerinizin güvende ve sağlam olmasını sağlayan dijital bir çilingir olmak gibidir. İster hassas iş raporlarınızı ister kişisel notlarınızı güvence altına alıyor olun, bu yöntem basit ama etkili bir çözüm sunar.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir belgeyi parolayla nasıl şifreleyeceğinizi öğrendiniz. Belgelerinizin güvende ve sağlam olmasını sağlayan dijital bir çilingir olmak gibidir. İster hassas iş raporlarınızı ister kişisel notlarınızı güvence altına alıyor olun, bu yöntem basit ama etkili bir çözüm sunar.
 
 ## SSS'ler
 

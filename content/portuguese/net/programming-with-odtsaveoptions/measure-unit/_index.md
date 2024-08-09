@@ -89,7 +89,7 @@ Aspose.Words for .NET é uma biblioteca poderosa para trabalhar programaticament
  Sim, você pode baixar uma avaliação gratuita do Aspose.Words for .NET em[aqui](https://releases.aspose.com/).
 
 ### Onde posso encontrar documentação para Aspose.Words for .NET?
- Você pode acessar a documentação abrangente do Aspose.Words for .NET em[esse link](https://reference.aspose.com/words/net/).
+ Você pode acessar a documentação abrangente do Aspose.Words for .NET em[este link](https://reference.aspose.com/words/net/).
 
 ### Como posso obter suporte para Aspose.Words for .NET?
- Para suporte, você pode visitar o fórum Aspose.Words em[esse link](https://forum.aspose.com/c/words/8).
+ Para suporte, você pode visitar o fórum Aspose.Words em[este link](https://forum.aspose.com/c/words/8).

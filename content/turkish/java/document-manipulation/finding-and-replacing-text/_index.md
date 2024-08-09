@@ -355,4 +355,4 @@ Evet, Aspose.Words for Java'da metin değişimi için normal ifadeleri kullanabi
 
 ### UseLegacyOrder seçeneği ne işe yarar?
 
-`UseLegacyOrder` seçenek`FindReplaceOptions` Bulma ve değiştirme işlemlerini gerçekleştirirken eski sırayı kullanmanıza olanak tanır. Bu, eski sipariş davranışının istendiği belirli senaryolarda faydalı olabilir.
+`UseLegacyOrder` seçenek`FindReplaceOptions` Bulma ve değiştirme işlemlerini gerçekleştirirken eski sırayı kullanmanıza olanak tanır. Bu, eski sipariş davranışının istendiği belirli senaryolarda yararlı olabilir.

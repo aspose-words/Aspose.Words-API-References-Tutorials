@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato in una situazione in cui le dimensioni del tuo file PDF sono semplicemente troppo grandi? È come fare le valigie per una vacanza e rendersi conto che la valigia è piena. Sai che hai bisogno di perdere peso, ma cosa lasci andare? Quando si lavora con file PDF, in particolare quelli convertiti da documenti Word, i caratteri incorporati possono aumentare le dimensioni del file. Per fortuna, Aspose.Words per .NET fornisce una soluzione elegante per mantenere i tuoi PDF snelli e meschini. In questo tutorial, approfondiremo come ottimizzare le dimensioni del tuo PDF saltando i caratteri Arial e Times Roman incorporati. Iniziamo!
 
@@ -57,7 +57,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Passaggio 4: salva il documento come PDF
 
-Infine, salva il documento come PDF con le opzioni di salvataggio specificate. Qui è dove avviene la magia.
+Infine, salva il documento come PDF con le opzioni di salvataggio specificate. È qui che avviene la magia.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
@@ -67,7 +67,7 @@ Questo comando salva il documento come PDF denominato "OptimizedPDF.pdf" nella d
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato come ottimizzare le dimensioni del tuo file PDF saltando l'incorporamento dei caratteri Arial e Times Roman utilizzando Aspose.Words per .NET. Questa semplice modifica può ridurre significativamente le dimensioni dei file, rendendoli più facili da condividere e archiviare. È come andare in palestra per i tuoi PDF, perdendo peso inutile mantenendo intatti tutti gli elementi essenziali.
+Ed ecco qua! Hai appena imparato come ottimizzare le dimensioni del tuo file PDF saltando l'incorporamento dei caratteri Arial e Times Roman utilizzando Aspose.Words per .NET. Questa semplice modifica può ridurre significativamente le dimensioni dei file, rendendoli più facili da condividere e archiviare. È come andare in palestra per i tuoi PDF, perdendo peso inutile mantenendo intatti tutti gli elementi essenziali.
 
 ## Domande frequenti
 

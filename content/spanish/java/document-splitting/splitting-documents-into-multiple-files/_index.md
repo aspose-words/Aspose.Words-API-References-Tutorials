@@ -56,7 +56,7 @@ Este código guarda cada parte dividida con un nombre de archivo como "split-par
 Para dividir un documento por una palabra clave, puede recorrer el contenido del documento y buscar la palabra clave. Cuando lo encuentres, crea un nuevo documento y agrega el contenido hasta ese punto.
 
 ### ¿Puedo dividir un documento en archivos PDF?
-Sí tu puedes. Después de dividir el documento usando Aspose.Words para Java, puede usar Aspose.PDF para Java para guardar cada parte como un archivo PDF.
+Sí, puedes. Después de dividir el documento usando Aspose.Words para Java, puede usar Aspose.PDF para Java para guardar cada parte como un archivo PDF.
 
 ### ¿Aspose.Words para Java es de uso gratuito?
 Aspose.Words para Java es una biblioteca comercial, pero ofrece una prueba gratuita. Puede consultar sus precios y licencias en su sitio web.

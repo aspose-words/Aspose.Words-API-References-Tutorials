@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 Đây là nơi phép thuật xảy ra. Chúng ta sẽ thiết lập mức độ nén cho tài liệu.
 
- Tạo một thể hiện của`OoxmlSaveOptions` và thiết lập mức độ nén. Các`CompressionLevel` thuộc tính có thể được đặt ở nhiều cấp độ khác nhau như`Normal`, `Maximum`, `Fast` , Và`SuperFast` . Đối với ví dụ này, chúng tôi sẽ sử dụng`SuperFast`.
+ Tạo một thể hiện của`OoxmlSaveOptions` và thiết lập mức độ nén. các`CompressionLevel` thuộc tính có thể được đặt ở nhiều cấp độ khác nhau như`Normal`, `Maximum`, `Fast` , Và`SuperFast` . Đối với ví dụ này, chúng tôi sẽ sử dụng`SuperFast`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
@@ -99,7 +99,7 @@ Sau khi chạy ứng dụng của bạn, hãy điều hướng đến thư mục
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã đặt thành công mức nén cho tài liệu Word bằng Aspose.Words for .NET. Điều này có thể làm giảm đáng kể kích thước tệp và cải thiện hiệu suất khi làm việc với các tài liệu lớn. Đừng quên khám phá các mức nén khác để tìm ra sự cân bằng tốt nhất giữa kích thước tệp và hiệu suất cho nhu cầu của bạn.
+Và bạn có nó! Bạn đã đặt thành công mức nén cho tài liệu Word bằng Aspose.Words for .NET. Điều này có thể làm giảm đáng kể kích thước tệp và cải thiện hiệu suất khi làm việc với các tài liệu lớn. Đừng quên khám phá các mức nén khác để tìm ra sự cân bằng tốt nhất giữa kích thước tệp và hiệu suất cho nhu cầu của bạn.
 
 Nếu bạn có bất kỳ câu hỏi nào hoặc gặp phải bất kỳ vấn đề nào, hãy xem[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc liên hệ với họ[Diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8).
 

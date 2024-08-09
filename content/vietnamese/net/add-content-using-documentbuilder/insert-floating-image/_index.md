@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Các`Document` đối tượng đại diện cho tài liệu Word và`DocumentBuilder` giúp thêm nội dung vào đó.
+ các`Document` đối tượng đại diện cho tài liệu Word và`DocumentBuilder` giúp thêm nội dung vào đó.
 
 ## Bước 3: Xác định đường dẫn hình ảnh
 
@@ -134,7 +134,7 @@ Chèn hình ảnh nổi vào tài liệu Word bằng Aspose.Words cho .NET là m
 
 ### Những loại bọc nào khác có sẵn cho hình ảnh?
 
- Aspose.Words hỗ trợ nhiều loại bọc khác nhau như`Inline`, `TopBottom`, `Tight`, `Through`, và hơn thế nữa. Bạn có thể chọn cái phù hợp nhất với bố cục tài liệu của mình.
+ Aspose.Words hỗ trợ nhiều loại bọc khác nhau như`Inline`, `TopBottom`, `Tight`, `Through`, và hơn thế nữa Bạn có thể chọn cái phù hợp nhất với bố cục tài liệu của mình.
 
 ### Tôi có thể sử dụng các định dạng hình ảnh khác nhau không?
 

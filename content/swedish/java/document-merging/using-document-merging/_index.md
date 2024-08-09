@@ -2,7 +2,7 @@
 title: Använda dokumentsammanslagning
 linktitle: Använda dokumentsammanslagning
 second_title: Aspose.Words Java Document Processing API
-description: Lär dig att slå samman Word-dokument sömlöst med Aspose.Words för Java. Kombinera, formatera och hantera konflikter effektivt med bara några få steg. Börja nu!
+description: Lär dig att slå samman Word-dokument sömlöst med Aspose.Words för Java. Kombinera, formatera och hantera konflikter effektivt med bara några få steg. Kom igång nu!
 type: docs
 weight: 10
 url: /sv/java/document-merging/using-document-merging/

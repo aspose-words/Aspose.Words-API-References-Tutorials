@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 ## خاتمة
 
-وهناك لديك! لقد نجحت في تحويل صفحة معينة من مستند Word إلى صورة JPEG باستخدام إعدادات مخصصة باستخدام Aspose.Words for .NET. يمكن تخصيص هذه العملية لتناسب الاحتياجات المختلفة، سواء كنت تقوم بإعداد صور لموقع ويب، أو إنشاء معاينات للمستندات، أو أكثر.
+وهنا لديك! لقد نجحت في تحويل صفحة معينة من مستند Word إلى صورة JPEG باستخدام إعدادات مخصصة باستخدام Aspose.Words for .NET. يمكن تخصيص هذه العملية لتناسب الاحتياجات المختلفة، سواء كنت تقوم بإعداد صور لموقع ويب، أو إنشاء معاينات للمستندات، أو أكثر.
 
 ## الأسئلة الشائعة
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
  يمكنك ضبط جودة ملف JPEG باستخدام`JpegQuality` الممتلكات في`ImageSaveOptions`.
 
 ### هل يمكنني الحفظ بتنسيقات صور أخرى؟
- نعم، يدعم Aspose.Words تنسيقات الصور المختلفة مثل PNG، وBMP، وTIFF. غير ال`SaveFormat` في`ImageSaveOptions` وفقاً لذلك.
+ نعم، يدعم Aspose.Words تنسيقات الصور المختلفة مثل PNG، وBMP، وTIFF. تغيير`SaveFormat` في`ImageSaveOptions` وفقاً لذلك.
 
 ### هل هناك طريقة لمعاينة الصورة قبل الحفظ؟
 ستحتاج إلى تنفيذ آلية معاينة بشكل منفصل، حيث أن Aspose.Words لا يوفر ميزة معاينة مدمجة.

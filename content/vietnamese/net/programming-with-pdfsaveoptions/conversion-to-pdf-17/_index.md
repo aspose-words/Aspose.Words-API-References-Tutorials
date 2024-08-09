@@ -15,7 +15,7 @@ Chuyển đổi tài liệu Word sang PDF là yêu cầu phổ biến trong nhi�
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE nào khác hỗ trợ phát triển .NET.
 3. Kiến thức cơ bản về C#: Hiểu những điều cơ bản sẽ giúp bạn theo dõi các đoạn mã.
 
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOption
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chuyển đổi tài liệu Word sang PDF 1.7 bằng Aspose.Words cho .NET rất đơn giản và hiệu quả. Quá trình này không chỉ tiết kiệm thời gian mà còn đảm bảo tài liệu của bạn có thể truy cập được trên toàn cầu và được định dạng chuyên nghiệp. Cho dù bạn đang xử lý các tài liệu pháp lý, tài liệu học thuật hay báo cáo kinh doanh, phương pháp này là một giải pháp đáng tin cậy.
+Và bạn có nó! Chuyển đổi tài liệu Word sang PDF 1.7 bằng Aspose.Words cho .NET rất đơn giản và hiệu quả. Quá trình này không chỉ tiết kiệm thời gian mà còn đảm bảo tài liệu của bạn có thể truy cập được trên toàn cầu và được định dạng chuyên nghiệp. Cho dù bạn đang xử lý các tài liệu pháp lý, tài liệu học thuật hay báo cáo kinh doanh, phương pháp này là một giải pháp đáng tin cậy.
 
 ## Câu hỏi thường gặp
 

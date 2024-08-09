@@ -80,10 +80,10 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 Egyetlen CSS-fájl használata leegyszerűsíti a stílusok kezelését és karbantartását. Tisztábbá és hatékonyabbá teszi a HTML-kódot.
 
 ### Elválaszthatom a betűtípus-arcok CSS-szabályait, ha szükséges?
- Igen, beállítással`SaveFontFaceCssSeparately` nak nek`true`, a font arc CSS-szabályait egy másik fájlba különítheti el.
+ Igen, beállítással`SaveFontFaceCssSeparately` hogy`true`, a font arc CSS-szabályait egy másik fájlba különítheti el.
 
 ### Ingyenesen használható az Aspose.Words for .NET?
- Az Aspose.Words ingyenes próbaverziót kínál, amelyet megtehet[töltse le itt](https://releases.aspose.com/) . A folyamatos használat érdekében fontolja meg a licenc megvásárlását[itt](https://purchase.aspose.com/buy).
+ Az Aspose.Words ingyenes próbaverziót kínál, amelyet megtehet[letöltés itt](https://releases.aspose.com/) . A folyamatos használat érdekében fontolja meg a licenc megvásárlását[itt](https://purchase.aspose.com/buy).
 
 ### Milyen más formátumokba konvertálható az Aspose.Words for .NET?
 Az Aspose.Words for .NET különféle formátumokat támogat, beleértve a PDF, TXT és képformátumokat, például JPEG és PNG.

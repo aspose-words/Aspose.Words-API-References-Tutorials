@@ -46,7 +46,7 @@ Daha sonra belgenize bir resim ekleyeceksiniz. İşte bunu nasıl yapacağınız
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Yer değiştirmek`"path_to_your_image.jpg"` resim dosyanızın gerçek yolu ile.`InsertImage` yöntemi görüntüyü belgenize ekleyecektir.
+ Yer değiştirmek`"path_to_your_image.jpg"` resim dosyanızın gerçek yolu ile.`InsertImage`yöntemi görüntüyü belgenize ekleyecektir.
 
 ## 3. Adım: Görüntü Özelliklerini Ayarlayın
 
@@ -72,7 +72,7 @@ Aspose.Words, JPEG, PNG, BMP, GIF ve daha fazlasını içeren çeşitli görünt
  Kesinlikle! Yükseklik ve genişlik özelliklerini ayarlayabilirsiniz.`Shape` görüntüleri yeniden boyutlandırmak için nesne.
 
 ### Bir URL'den resim eklemek mümkün mü?  
- Evet, URL'yi girerek bir URL'den resim ekleyebilirsiniz.`InsertImage` yöntem.
+Evet, URL'yi girerek bir URL'den resim ekleyebilirsiniz.`InsertImage` Yöntem.
 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?  
  adresinden ücretsiz deneme alabilirsiniz.[Web sitesi](https://releases.aspose.com/).

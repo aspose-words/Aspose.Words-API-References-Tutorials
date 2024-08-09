@@ -15,7 +15,7 @@ Khi làm việc với các tài liệu, đặc biệt là cho các mục đích 
 
 Trước khi bắt đầu, có một số điều bạn cần đảm bảo mình có:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Nếu không, bạn có thể[Tải về phiên bản mới nhất tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Nếu không, bạn có thể[tải phiên bản mới nhất tại đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển .NET: Bạn sẽ cần một môi trường phát triển .NET hoạt động được, chẳng hạn như Visual Studio.
 3. Hiểu biết cơ bản về C#: Làm quen với ngôn ngữ lập trình C# sẽ giúp bạn dễ dàng theo dõi.
 4. Tài liệu Word: Chuẩn bị sẵn tài liệu Word để bạn chuyển đổi thành PDF.
@@ -52,7 +52,7 @@ Bây giờ, hãy thiết lập các tùy chọn phác thảo.
 
 ### Đặt cấp độ phác thảo tiêu đề
 
- Các`HeadingsOutlineLevels` thuộc tính xác định số lượng tiêu đề nên được đưa vào trong bản phác thảo PDF. Ví dụ: nếu bạn đặt thành 3, nó sẽ bao gồm tối đa ba cấp độ tiêu đề trong bố cục PDF.
+ các`HeadingsOutlineLevels` thuộc tính xác định số lượng tiêu đề nên được đưa vào trong bản phác thảo PDF. Ví dụ: nếu bạn đặt thành 3, nó sẽ bao gồm tối đa ba cấp độ tiêu đề trong bố cục PDF.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Đặt cấp độ phác thảo mở rộng
 
- Các`ExpandedOutlineLevels`thuộc tính kiểm soát số lượng đường viền sẽ được mở rộng theo mặc định khi tệp PDF được mở. Đặt giá trị này thành 1 sẽ mở rộng các tiêu đề cấp cao nhất, mang lại cái nhìn rõ ràng về các phần chính.
+ các`ExpandedOutlineLevels`thuộc tính kiểm soát số lượng đường viền sẽ được mở rộng theo mặc định khi tệp PDF được mở. Đặt giá trị này thành 1 sẽ mở rộng các tiêu đề cấp cao nhất, mang lại cái nhìn rõ ràng về các phần chính.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

@@ -17,7 +17,7 @@ url: /ko/net/join-and-append-documents/append-document/
 핵심 내용을 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
 1. C# 기본 지식: C# 구문과 개념에 익숙해야 합니다.
-2.  .NET용 Aspose.Words: 다운로드[여기](https://releases.aspose.com/words/net/) . 단지 탐색 중이라면 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/).
+2.  .NET용 Aspose.Words: 다운로드[여기](https://releases.aspose.com/words/net/) . 단지 탐색 중이라면 다음과 같이 시작할 수 있습니다.[무료 평가판](https://releases.aspose.com/).
 3. Visual Studio: 모든 최신 버전이 작동하지만 최신 버전을 권장합니다.
 4. .NET Framework: 시스템에 설치되어 있는지 확인하세요.
 
@@ -87,7 +87,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
 
 ### 2. Aspose.Words for .NET을 무료로 사용할 수 있나요?
 
- 다음을 사용하여 .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
+ 다음을 사용하여 .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 평가판](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
 
 ### 3. 문서를 추가할 때 서식이 유지되도록 하려면 어떻게 해야 합니까?
 

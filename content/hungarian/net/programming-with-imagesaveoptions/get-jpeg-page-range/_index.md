@@ -15,7 +15,7 @@ Word-dokumentumok képekké konvertálása hihetetlenül hasznos lehet, legyen s
 
 Mielőtt elkezdené, meg kell tennie néhány dolgot:
 
--  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: AC# fejlesztői környezet, például a Visual Studio.
 - Mintadokumentum: Word dokumentum, amellyel dolgozni. Ehhez az oktatóanyaghoz bármilyen .docx fájlt használhat.
 - C# alapismeretek: C# programozás ismerete.
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ez a kód inicializálja a dokumentum elérési útját, és betölti az Aspose.Words-be`Document` tárgy.
+ Ez a kód inicializálja a dokumentum elérési útját, és betölti az Aspose.Words-be`Document` objektum.
 
 ## 2. lépés: Az ImageSaveOptions beállítása
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
  A JPEG minőségét a gombbal állíthatja be`JpegQuality` ingatlan be`ImageSaveOptions`.
 
 ### Menthetek más képformátumba?
- Igen, az Aspose.Words különféle képformátumokat támogat, például PNG, BMP és TIFF. Változtasd meg a`SaveFormat` ban ben`ImageSaveOptions` Eszerint.
+ Igen, az Aspose.Words különféle képformátumokat támogat, például PNG, BMP és TIFF. Változtasd meg a`SaveFormat` be`ImageSaveOptions` ennek megfelelően.
 
 ### Van mód a kép előnézetére mentés előtt?
 Külön meg kell valósítania egy előnézeti mechanizmust, mivel az Aspose.Words nem biztosít beépített előnézeti funkciót.

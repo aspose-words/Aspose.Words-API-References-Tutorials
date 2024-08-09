@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/join-continuous/
 ---
-## Úvod
+## Zavedení
 
 Hledáte bezproblémové sloučení dvou dokumentů aplikace Word do jednoho bez přerušení? Aspose.Words for .NET nabízí fantastický způsob, jak toho dosáhnout pomocí funkce Continuous Section Break. Tento výukový program vás provede krok za krokem celým procesem a zajistí, že budete moci snadno připojit dokumenty bez jakýchkoli potíží. Pojďme se ponořit!
 
@@ -71,7 +71,7 @@ Nyní připojíme zdrojový dokument k cílovému dokumentu. Tento krok zajistí
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Použitím`ImportFormatMode.KeepSourceFormatting` zajišťuje, že formátování ze zdrojového dokumentu bude zachováno ve finálním sloučeném dokumentu.
+ Použití`ImportFormatMode.KeepSourceFormatting` zajišťuje, že formátování ze zdrojového dokumentu bude zachováno ve finálním sloučeném dokumentu.
 
 ## Krok 5: Uložte sloučený dokument
 
@@ -102,4 +102,4 @@ Ano, Aspose.Words for .NET je kompatibilní s .NET Framework i .NET Core.
 Ano, ale možná budete muset upravit vlastnosti nastavení stránky, abyste zajistili bezproblémové sloučení.
 
 ### Kde mohu získat podporu, pokud narazím na problémy?
- Podporu můžete získat na fóru komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Podporu můžete získat na fóru komunity Aspose[zde](https://forum.aspose.com/c/words/8).

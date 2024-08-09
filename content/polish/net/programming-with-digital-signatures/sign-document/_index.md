@@ -103,7 +103,7 @@ Do utworzenia podpisu cyfrowego potrzebny jest certyfikat cyfrowy. Zawiera klucz
 ### Czy do podpisania mogę użyć dowolnego pliku .pfx?
 Tak, o ile plik .pfx zawiera ważny certyfikat cyfrowy i posiadasz hasło umożliwiające dostęp do niego.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
  Aspose.Words dla .NET jest biblioteką komercyjną. Możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/) , ale aby uzyskać pełną funkcjonalność, będziesz musiał kupić licencję. Możesz to kupić[Tutaj](https://purchase.aspose.com/buy).
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?

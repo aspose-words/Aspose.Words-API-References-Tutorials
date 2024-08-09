@@ -2,88 +2,115 @@
 title: Aktifkan Nonaktifkan Substitusi Font
 linktitle: Aktifkan Nonaktifkan Substitusi Font
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Dalam tutorial ini, pelajari cara mengaktifkan atau menonaktifkan substitusi font di dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengaktifkan atau menonaktifkan substitusi font di dokumen Word menggunakan Aspose.Words untuk .NET. Pastikan dokumen Anda terlihat konsisten di semua platform.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/enable-disable-font-substitution/
 ---
-Dalam tutorial ini, kami akan memandu Anda tentang cara mengaktifkan atau menonaktifkan substitusi font di dokumen Word saat merendernya menggunakan pustaka Aspose.Words untuk .NET. Mengaktifkan atau menonaktifkan substitusi font memungkinkan Anda mengontrol apakah font yang hilang secara otomatis diganti dengan font default. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+## Perkenalan
+
+Pernahkah Anda menemukan diri Anda dalam situasi di mana font yang Anda pilih dengan cermat di dokumen Word diganti saat dilihat di komputer lain? Mengganggu, bukan? Hal ini terjadi karena substitusi font, suatu proses dimana sistem mengganti font yang hilang dengan font yang tersedia. Tapi jangan khawatir! Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah mengelola dan mengontrol substitusi font. Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk mengaktifkan atau menonaktifkan substitusi font di dokumen Word Anda, memastikan dokumen Anda selalu terlihat sesuai keinginan Anda.
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
-- Dokumen Word yang ingin Anda render dengan atau tanpa substitusi font
 
-## Langkah 1: Tentukan direktori dokumen
- Pertama, Anda perlu mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Sebelum mendalami langkah-langkahnya, pastikan Anda memiliki semua yang Anda butuhkan:
+
+-  Aspose.Words untuk .NET: Unduh versi terbaru[Di Sini](https://releases.aspose.com/words/net/).
+- Visual Studio: Versi apa pun yang mendukung .NET.
+- Pengetahuan dasar C#: Ini akan membantu Anda mengikuti contoh pengkodean.
+
+## Impor Namespace
+
+Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda. Tambahkan ini di bagian atas file C# Anda:
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Langkah 2: Unggah dokumen dan konfigurasikan pengaturan font
- Selanjutnya, kita akan memuat dokumen Word yang ingin Anda render dan membuat sebuah instance darinya`FontSettings` kelas untuk menangani pengaturan font. Kami akan mengatur penggantian font default dengan menentukan nama font di dalamnya`DefaultFontName` dan nonaktifkan penggantian informasi font dengan`Enabled` mulai`false`.
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dilakukan.
+
+## Langkah 1: Siapkan Proyek Anda
+
+Pertama, siapkan proyek baru di Visual Studio dan tambahkan referensi ke perpustakaan Aspose.Words untuk .NET. Jika Anda belum melakukannya, unduh dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
+
+## Langkah 2: Muat Dokumen Anda
+
+Selanjutnya, muat dokumen yang ingin Anda kerjakan. Inilah cara Anda melakukannya:
 
 ```csharp
-// Muat dokumen
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Konfigurasikan pengaturan font
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Terapkan pengaturan font ke dokumen
-doc.FontSettings = fontSettings;
-```
-
-## Langkah 3: Simpan dokumen yang dirender
-Terakhir, kita akan menyimpan dokumen yang dirender, yang akan mengikuti pengaturan penggantian font yang ditentukan.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Contoh kode sumber untuk Aktifkan Nonaktifkan Substitusi Font menggunakan Aspose.Words untuk .NET 
-
-```csharp
-
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda. Kode ini memuat dokumen ke dalam memori sehingga Anda dapat memanipulasinya.
+
+## Langkah 3: Konfigurasikan Pengaturan Font
+
+ Sekarang, mari kita buat a`FontSettings` objek untuk mengelola pengaturan substitusi font:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Langkah 4: Tetapkan Substitusi Font Default
+
+Atur substitusi font default ke font pilihan Anda. Font ini akan digunakan jika font asli tidak tersedia:
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+Dalam contoh ini, kami menggunakan Arial sebagai font default.
+
+## Langkah 5: Nonaktifkan Substitusi Info Font
+
+Untuk menonaktifkan substitusi info font, yang menghentikan sistem mengganti font yang hilang dengan font yang tersedia, gunakan kode berikut:
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## Langkah 6: Terapkan Pengaturan Font ke Dokumen
+
+Sekarang, terapkan pengaturan ini ke dokumen Anda:
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Langkah 7: Simpan Dokumen Anda
+
+Terakhir, simpan dokumen Anda yang telah dimodifikasi. Anda dapat menyimpannya dalam format apa pun yang Anda suka. Untuk tutorial ini, kami akan menyimpannya sebagai PDF:
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita melihat cara mengaktifkan atau menonaktifkan substitusi font di dokumen Word saat merendernya dengan Aspose.Words untuk .NET. Dengan mengontrol substitusi font, Anda dapat memengaruhi cara penanganan font yang hilang dalam dokumen yang dirender. Jangan ragu untuk menggunakan fitur ini untuk menyesuaikan pengelolaan font di dokumen Word Anda.
 
-### FAQ
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengontrol substitusi font di dokumen Word Anda menggunakan Aspose.Words untuk .NET. Hal ini memastikan dokumen Anda mempertahankan tampilan dan nuansa yang diinginkan, di mana pun dokumen tersebut dilihat.
 
-#### T: Bagaimana cara mengaktifkan substitusi font di dokumen Word dengan Aspose.Words?
+## FAQ
 
-J: Untuk mengaktifkan substitusi font di dokumen Word dengan Aspose.Words, Anda dapat menggunakan API untuk menentukan font substitusi yang akan digunakan ketika font yang diperlukan tidak tersedia. Ini akan memastikan visualisasi teks yang konsisten, bahkan tanpa font aslinya.
+### Bisakah saya menggunakan font selain Arial untuk substitusi?
 
-#### T: Apakah mungkin untuk menonaktifkan substitusi font di dokumen Word dengan Aspose.Words?
+ Sangat! Anda dapat menentukan font apa pun yang tersedia di sistem Anda dengan mengubah nama font di`DefaultFontName` milik.
 
-J: Ya, dengan Aspose.Words Anda dapat menonaktifkan substitusi font di dokumen Word. Dengan menggunakan API, Anda dapat mencegah Word mengganti font yang diperlukan dengan font lain, sehingga mempertahankan tampilan asli teks.
+### Apa yang terjadi jika font default yang ditentukan tidak tersedia?
 
-#### T: Apa yang terjadi jika font yang diperlukan hilang saat substitusi di dokumen Word?
+Jika font default tidak tersedia, Aspose.Words akan menggunakan mekanisme fallback sistem untuk menemukan pengganti yang sesuai.
 
-J: Ketika font yang diperlukan hilang selama penggantian di dokumen Word, Aspose.Words dapat mendeteksi masalah ini dan memberi Anda opsi untuk memperbaikinya. Anda dapat memilih untuk mengganti font yang hilang dengan font alternatif atau menyertakan font yang hilang dalam dokumen, memastikan tampilan yang benar.
+### Bisakah saya mengaktifkan substitusi font lagi setelah menonaktifkannya?
 
-#### T: Bagaimana cara menangani font yang hilang saat mengganti dokumen Word dengan Aspose.Words?
+ Ya, Anda dapat mengaktifkannya`Enabled` milik`FontInfoSubstitution` kembali ke`true` jika Anda ingin mengaktifkan substitusi font lagi.
 
-J: Untuk menangani font yang hilang saat mengganti dokumen Word dengan Aspose.Words, Anda dapat menggunakan API untuk mendeteksi font yang hilang dan memberikan opsi resolusi. Anda dapat memilih untuk mengganti font yang hilang dengan font alternatif atau menyertakan font yang hilang dalam dokumen, tergantung kebutuhan Anda.
+### Apakah ada cara untuk memeriksa font mana yang diganti?
 
-#### T: Apakah penting mengontrol substitusi font di dokumen Word?
+Ya, Aspose.Words menyediakan metode untuk mencatat dan melacak substitusi font, memungkinkan Anda melihat font mana yang diganti.
 
-J: Ya, penting untuk mengontrol substitusi font di dokumen Word untuk menjaga integritas visual teks. Dengan menggunakan Aspose.Words untuk mengaktifkan atau menonaktifkan substitusi font, Anda dapat memastikan bahwa font yang diperlukan digunakan dan menghindari masalah dengan font yang hilang atau diganti.
+### Bisakah saya menggunakan metode ini untuk format dokumen lain selain DOCX?
+
+Tentu saja! Aspose.Words mendukung berbagai format, dan Anda dapat menerapkan pengaturan font ini ke format apa pun yang didukung.

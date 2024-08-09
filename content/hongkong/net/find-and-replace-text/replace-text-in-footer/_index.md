@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
-在這個例子中，`MatchCase`被設定為`false`忽略大小寫差異，並且`FindWholeWordsOnly`被設定為`false`允許單字內部分匹配。
+在這個例子中，`MatchCase`設定為`false`忽略大小寫差異，並且`FindWholeWordsOnly`設定為`false`允許單字內部分匹配。
 
 ## 步驟 4：替換頁腳中的文本
 
@@ -74,7 +74,7 @@ FindReplaceOptions options = new FindReplaceOptions
 footer.Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
 ```
 
-在這一步中，文本`(C) 2006 Aspose Pty Ltd.`被替換為`Copyright (C) 2020 by Aspose Pty Ltd.`頁腳內。
+在此步驟中，文字`(C) 2006 Aspose Pty Ltd.`被替換為`Copyright (C) 2020 by Aspose Pty Ltd.`頁腳內。
 
 ## 第五步：儲存修改後的文檔
 
@@ -99,7 +99,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 您可以替換頁腳中的任何特定文字。如果您需要替換多行，請確保您的搜尋字串與您要替換的文字完全匹配。
 
 ### 是否可以使替換區分大小寫？
-絕對地！放`MatchCase`到`true`在裡面`FindReplaceOptions`使替換區分大小寫。
+絕對地！放`MatchCase`到`true`在`FindReplaceOptions`使替換區分大小寫。
 
 ### 我可以使用正規表示式進行文字替換嗎？
 是的，Aspose.Words 支援使用正規表示式進行尋找和取代操作。您可以在中指定正規表示式模式`Range.Replace`方法。

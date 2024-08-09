@@ -81,7 +81,7 @@ doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何保護 Word 文檔，以便只能使用 Aspose.Words for .NET 編輯表單欄位。當您需要確保文件的某些部分保持不變同時允許填寫特定欄位時，這是一個方便的功能。
+現在你就得到它了！您剛剛學習如何保護 Word 文檔，以便只能使用 Aspose.Words for .NET 編輯表單欄位。當您需要確保文件的某些部分保持不變同時允許填寫特定欄位時，這是一個方便的功能。
 
 ## 常見問題解答
 

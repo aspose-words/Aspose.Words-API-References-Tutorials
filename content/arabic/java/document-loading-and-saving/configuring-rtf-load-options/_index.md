@@ -76,6 +76,6 @@ doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rt
 
 نعم، يمكنك إجراء تعديلات مختلفة على المستند بعد تحميله بالخيارات المحددة. يوفر Aspose.Words مجموعة واسعة من الميزات للعمل مع محتوى المستند وتنسيقه وبنيته.
 
-### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ Java؟
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words for Java؟
 
  يمكنك الرجوع إلى[Aspose.Words لوثائق جافا](https://reference.aspose.com/words/java/) للحصول على معلومات شاملة ومرجع API وأمثلة حول استخدام المكتبة.

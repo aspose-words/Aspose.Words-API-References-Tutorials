@@ -76,7 +76,7 @@ doc.save("auto_alignment.md", saveOptions);
 A következőképpen állíthatja be a képek mappát, és mentheti el a dokumentumot képekkel:
 
 ```java
-// Töltse be a képeket tartalmazó dokumentumot
+// Töltsön be képeket tartalmazó dokumentumot
 Document doc = new Document("document_with_images.docx");
 
 // Állítsa be a képek mappa elérési útját

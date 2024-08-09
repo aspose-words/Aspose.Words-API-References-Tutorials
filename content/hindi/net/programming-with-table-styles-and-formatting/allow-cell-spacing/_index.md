@@ -81,7 +81,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ### चरण 4.1: सेल स्पेसिंग की अनुमति दें
 
- ठीक`AllowCellSpacing` तालिका की संपत्ति`true`.
+ सेट करें`AllowCellSpacing` तालिका की संपत्ति`true`.
 
 ```csharp
 table.AllowCellSpacing = true;

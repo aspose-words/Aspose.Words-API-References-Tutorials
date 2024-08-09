@@ -2,7 +2,7 @@
 title: Sao chép mô-đun Vba từ tài liệu Word
 linktitle: Sao chép mô-đun Vba từ tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Sao chép mô-đun VBA trong tài liệu Word một cách dễ dàng với Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để thao tác tài liệu liền mạch!
+description: Sao chép mô-đun VBA trong tài liệu Word một cách dễ dàng với Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để thao tác tài liệu liền mạch!
 type: docs
 weight: 10
 url: /vi/net/working-with-vba-macros/clone-vba-module/
@@ -19,7 +19,7 @@ Trước khi chúng ta chuyển sang phần mã, hãy đảm bảo rằng bạn 
 1.  Aspose.Words for .NET Library: Đảm bảo bạn đã có phiên bản mới nhất của[Thư viện Aspose.Words cho .NET](https://releases.aspose.com/words/net/). Bạn có thể tải nó từ trang web chính thức.
 2. Môi trường phát triển: Bạn sẽ cần môi trường phát triển .NET như Visual Studio.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ hữu ích khi chúng ta điều hướng qua mã.
-4.  Tài liệu mẫu: Có một[Tài liệu văn bản](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) với dự án VBA sẵn sàng hoạt động. Bạn có thể tạo của riêng bạn hoặc sử dụng một cái hiện có.
+4.  Tài liệu mẫu: Có một[tài liệu Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) với dự án VBA sẵn sàng hoạt động. Bạn có thể tạo của riêng bạn hoặc sử dụng một cái hiện có.
 
 ## Nhập không gian tên
 
@@ -105,9 +105,9 @@ Dòng này lưu tài liệu mới với tên "WorkingWithVba.CloneVbaModule.docm
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã sao chép thành công mô-đun VBA từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp việc thao tác các tài liệu Word trở nên cực kỳ dễ dàng và các bước chúng tôi đã trình bày chỉ là phần nổi của tảng băng trôi. Cho dù bạn đang tự động hóa việc tạo tài liệu, sửa đổi nội dung hay quản lý các dự án VBA, Aspose.Words đều có thể hỗ trợ bạn.
+Và bạn có nó! Bạn đã sao chép thành công mô-đun VBA từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp việc thao tác các tài liệu Word trở nên cực kỳ dễ dàng và các bước chúng tôi đã trình bày chỉ là phần nổi của tảng băng trôi. Cho dù bạn đang tự động hóa việc tạo tài liệu, sửa đổi nội dung hay quản lý các dự án VBA, Aspose.Words đều có thể hỗ trợ bạn.
 
- Nếu bạn muốn khám phá thêm các tính năng, hãy xem[Tài liệu API](https://reference.aspose.com/words/net/) . Cần giúp đỡ? Tham quan[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được hỗ trợ.
+ Nếu bạn muốn khám phá thêm các tính năng, hãy xem[Tài liệu API](https://reference.aspose.com/words/net/) . Cần giúp đỡ? Ghé thăm[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được hỗ trợ.
 
 Chúc bạn viết mã vui vẻ và hãy nhớ—thực hành sẽ tạo nên sự hoàn hảo!
 

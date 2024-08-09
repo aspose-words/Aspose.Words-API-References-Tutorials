@@ -50,7 +50,7 @@ Kaynak belge içeriğinin hedef belgeden sonra sürekli olarak akmasını sağla
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Adım 3: Paragrafları Bir Arada Tutun
+## 3. Adım: Paragrafları Bir Arada Tutun
 
 Biçimlendirme bütünlüğünü korumak için kaynak belgedeki her paragrafı bir sonraki paragrafta kalacak şekilde işaretleyin.
 

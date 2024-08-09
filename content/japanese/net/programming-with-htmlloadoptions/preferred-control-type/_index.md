@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-設定することにより`PreferredControlType`に`HtmlControlType.StructuredDocumentTag`、コンボ ボックスが Word 文書内で構造化ドキュメント タグ (SDT) としてレンダリングされるようにします。
+設定により`PreferredControlType`に`HtmlControlType.StructuredDocumentTag`、コンボ ボックスが Word 文書内で構造化ドキュメント タグ (SDT) としてレンダリングされるようにします。
 
 ## ステップ4: HTMLコンテンツをドキュメントに読み込む
 

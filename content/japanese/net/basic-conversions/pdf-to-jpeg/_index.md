@@ -91,4 +91,4 @@ PDF が読み込まれたら、変換を実行します。この手順は驚く�
 無料トライアルをご利用ください[ここ](https://releases.aspose.com/)またはライセンスを購入する[ここ](https://purchase.aspose.com/buy).
 
 ### Aspose.Words に関するその他のチュートリアルはどこで見つかりますか?
-チェックしてください[ドキュメンテーション](https://reference.aspose.com/words/net/)豊富なチュートリアルとガイドをご覧ください。
+チェックしてください[ドキュメント](https://reference.aspose.com/words/net/)豊富なチュートリアルとガイドをご覧ください。

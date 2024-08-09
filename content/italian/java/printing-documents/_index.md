@@ -26,7 +26,7 @@ Pronto per intraprendere il tuo viaggio per padroneggiare Aspose.Words per Java?
 
 In questo articolo ti abbiamo presentato il mondo della stampa di documenti utilizzando Aspose.Words per Java. Con il nostro elenco di tutorial e la potenza di Aspose.Words a portata di mano, sei ben attrezzato per vincere qualsiasi sfida di stampa di documenti che ti si presenta. Inizia a esplorare, sperimentare e creare straordinari documenti stampati in tutta sicurezza.
 
- Ricorda, se hai domande o hai bisogno di ulteriore assistenza, non esitare a visitare il nostro[Forum di assistenza](https://forum.aspose.com/) o esplorare[opzioni di licenza temporanee](https://purchase.aspose.com/temporary-license/) per potenziare il tuo viaggio Aspose.Words per Java.
+ Ricorda, se hai domande o hai bisogno di ulteriore assistenza, non esitare a visitare il nostro[forum di supporto](https://forum.aspose.com/) o esplorare[opzioni di licenza temporanee](https://purchase.aspose.com/temporary-license/) per potenziare il tuo viaggio Aspose.Words per Java.
 
 ## Esercitazioni sulla stampa di documenti
 ### [Stampa di documenti in Aspose.Words per Java](./printing-documents/)

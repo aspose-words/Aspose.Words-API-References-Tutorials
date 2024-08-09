@@ -9,7 +9,7 @@ url: /sv/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## Introduktion
 
-När det gäller att manipulera Word-dokument programmatiskt är Aspose.Words för .NET ett kraftpaket. En av dess fiffiga funktioner är att exportera typsnitt som Base64 i HTML-filer, vilket säkerställer att typsnitt är inbäddade och visas korrekt i olika webbläsare och system. I den här handledningen kommer vi att dyka ner i hur du kan uppnå detta. Är du redo att göra dina Word-dokumenttypsnitt webbvänliga? Låt oss börja!
+När det gäller att manipulera Word-dokument programmatiskt är Aspose.Words för .NET ett kraftpaket. En av dess fiffiga funktioner är att exportera typsnitt som Base64 i HTML-filer, vilket säkerställer att typsnitt är inbäddade och visas korrekt i olika webbläsare och system. I den här handledningen kommer vi att dyka ner i hur du kan uppnå detta. Är du redo att göra dina Word-dokumenttypsnitt webbvänliga? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -62,7 +62,7 @@ Först definierar du katalogen där ditt Word-dokument finns:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ### 2.2 Ladda dokumentet
 

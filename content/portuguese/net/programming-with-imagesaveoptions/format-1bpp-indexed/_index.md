@@ -1,6 +1,6 @@
 ---
-title: Formato 1Bpp indexado
-linktitle: Formato 1Bpp indexado
+title: Formato 1Bpp Indexado
+linktitle: Formato 1Bpp Indexado
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como converter um documento do Word em uma imagem indexada de 1Bpp usando Aspose.Words for .NET. Siga nosso guia passo a passo para fácil conversão.
 type: docs
@@ -82,7 +82,7 @@ E aí está! Com apenas algumas linhas de código, você transformou seu documen
 Uma imagem indexada de 1Bpp (1 bit por pixel) é um formato de imagem em preto e branco onde cada pixel é representado por um único bit, 0 ou 1. Este formato é altamente eficiente em termos de espaço.
 
 ### Posso converter várias páginas de um documento do Word de uma só vez?
- Sim você pode. Modifique o`PageSet` propriedade no`ImageSaveOptions` para incluir várias páginas ou o documento inteiro.
+ Sim, você pode. Modifique o`PageSet` propriedade no`ImageSaveOptions` para incluir várias páginas ou o documento inteiro.
 
 ### Preciso de uma licença para usar o Aspose.Words for .NET?
  Sim, Aspose.Words for .NET requer uma licença para funcionalidade completa. Você pode obter um[licença temporária aqui](https://purchase.aspose.com/temporary-license/).

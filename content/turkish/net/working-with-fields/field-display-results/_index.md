@@ -88,7 +88,7 @@ Aspose.Words for .NET ile saha sonuçlarını Word belgelerinde güncellemek ve 
 Tarih alanları, belge özellikleri ve formül alanları da dahil olmak üzere çeşitli alan türlerini güncelleştirebilirsiniz.
 
 ### Alanları güncelledikten sonra belgeyi kaydetmem gerekir mi?  
- Hayır, arıyorum`UpdateFields` belgeyi otomatik olarak kaydetmez. Kullan`Save` Değişiklikleri kaydetme yöntemi.
+ Hayır, arıyorum`UpdateFields` belgeyi otomatik olarak kaydetmez. Kullanın`Save` Değişiklikleri kaydetme yöntemi.
 
 ### Belgenin belirli bir bölümündeki alanları güncelleyebilir miyim?  
  Evet, kullanabilirsiniz`Document.Sections` Belirli bölümlere erişmek ve bunların içindeki alanları güncellemek için özellik.

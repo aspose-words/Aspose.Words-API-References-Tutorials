@@ -9,7 +9,7 @@ url: /tr/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 ## giriiş
 
-Selam! Özellikle Asya tipografisi ile uğraşırken, bir Word belgesindeki boşlukları ve girintileri nasıl ayarlayacağınızı hiç merak ettiniz mi? Çince, Japonca veya Korece gibi dilleri içeren belgelerle çalışıyorsanız varsayılan ayarların her zaman işe yaramadığını fark etmiş olabilirsiniz. Korkma! Bu eğitimde Aspose.Words for .NET'i kullanarak Asya paragraf aralıklarını ve girintilerini nasıl değiştirebileceğinizi ele alacağız. Düşündüğünüzden daha kolaydır ve belgelerinizin çok daha profesyonel görünmesini sağlayabilir. Belge biçimlendirmenizi canlandırmaya hazır mısınız? Başlayalım!
+Selam! Özellikle Asya tipografisi ile uğraşırken, bir Word belgesindeki boşlukları ve girintileri nasıl ayarlayacağınızı hiç merak ettiniz mi? Çince, Japonca veya Korece gibi dilleri içeren belgelerle çalışıyorsanız varsayılan ayarların her zaman işe yaramadığını fark etmiş olabilirsiniz. Korkma! Bu eğitimde Aspose.Words for .NET'i kullanarak Asya paragraf aralıklarını ve girintilerini nasıl değiştirebileceğinizi ele alacağız. Düşündüğünüzden daha kolaydır ve belgelerinizin çok daha profesyonel görünmesini sağlayabilir. Belge biçimlendirmenizi canlandırmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -89,7 +89,7 @@ Bu satır belgeyi yeni biçimlendirmeyle kaydeder. Yaptığımız değişiklikle
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde Asya dilindeki paragraf aralıklarını ve girintilerini nasıl değiştireceğinizi öğrendiniz. O kadar da zor değildi, değil mi? Bu adımları izleyerek, karmaşık Asya tipografisiyle uğraşırken bile belgelerinizin profesyonel ve iyi biçimlendirilmiş görünmesini sağlayabilirsiniz. Farklı değerlerle denemeler yapmaya devam edin ve belgeleriniz için en iyi neyin işe yaradığını görün. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde Asya dilindeki paragraf aralıklarını ve girintilerini nasıl değiştireceğinizi öğrendiniz. O kadar da zor değildi, değil mi? Bu adımları izleyerek, karmaşık Asya tipografisiyle uğraşırken bile belgelerinizin profesyonel ve iyi biçimlendirilmiş görünmesini sağlayabilirsiniz. Farklı değerlerle denemeler yapmaya devam edin ve belgeleriniz için en iyi neyin işe yaradığını görün. Mutlu kodlama!
 
 ## SSS'ler
 

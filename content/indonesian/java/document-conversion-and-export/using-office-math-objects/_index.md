@@ -2,7 +2,7 @@
 title: Menggunakan Objek Office Math di Aspose.Words untuk Java
 linktitle: Menggunakan Objek Matematika Office
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Buka kekuatan persamaan matematika dalam dokumen dengan Aspose.Words untuk Java. Belajar memanipulasi dan menampilkan objek Office Math dengan mudah.
+description: Temukan kekuatan persamaan matematika dalam dokumen dengan Aspose.Words untuk Java. Belajar memanipulasi dan menampilkan objek Office Math dengan mudah.
 type: docs
 weight: 13
 url: /id/java/document-conversion-and-export/using-office-math-objects/
@@ -45,7 +45,7 @@ OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true)
 
 ### Atur Jenis Tampilan
 
- Anda dapat mengontrol bagaimana persamaan ditampilkan dalam dokumen. Menggunakan`setDisplayType` metode untuk menentukan apakah itu harus ditampilkan sejajar dengan teks atau pada barisnya:
+ Anda dapat mengontrol bagaimana persamaan ditampilkan dalam dokumen. Gunakan`setDisplayType` metode untuk menentukan apakah itu harus ditampilkan sejajar dengan teks atau pada barisnya:
 
 ```java
 officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
@@ -90,7 +90,7 @@ Objek Office Math di Aspose.Words untuk Java memungkinkan Anda mewakili dan mema
 
 ### Bisakah saya menyelaraskan persamaan Office Math secara berbeda dalam dokumen saya?
 
- Ya, Anda dapat mengontrol penyelarasan persamaan Office Math. Menggunakan`setJustification` metode untuk menentukan opsi perataan seperti kiri, kanan, atau tengah.
+ Ya, Anda dapat mengontrol penyelarasan persamaan Office Math. Gunakan`setJustification` metode untuk menentukan opsi perataan seperti kiri, kanan, atau tengah.
 
 ### Apakah Aspose.Words untuk Java cocok untuk menangani dokumen matematika yang rumit?
 

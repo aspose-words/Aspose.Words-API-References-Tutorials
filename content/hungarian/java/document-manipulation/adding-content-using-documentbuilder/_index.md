@@ -10,7 +10,7 @@ url: /hu/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## Bevezetés a tartalom hozzáadásához az Aspose.Words for Java DocumentBuilder használatával
 
-Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan használhatjuk az Aspose.Words for Java DocumentBuilder alkalmazását különféle típusú tartalom hozzáadására egy Word-dokumentumhoz. Kitérünk a szöveg beszúrására, táblázatokra, vízszintes szabályokra, űrlapmezőkre, HTML-re, hiperhivatkozásokra, tartalomjegyzékre, szövegközi és lebegő képekre, bekezdésekre és egyebekre. Kezdjük el!
+Ebben a lépésenkénti útmutatóban megvizsgáljuk, hogyan használhatjuk az Aspose.Words for Java DocumentBuilder alkalmazását különféle típusú tartalom hozzáadására egy Word-dokumentumhoz. Kitérünk a szöveg beszúrására, táblázatokra, vízszintes szabályokra, űrlapmezőkre, HTML-re, hiperhivatkozásokra, tartalomjegyzékre, szövegközi és lebegő képekre, bekezdésekre és egyebekre. Kezdjük is!
 
 ## Előfeltételek
 
@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## 10. lépés: A kurzor mozgatása
 
- Különféle módszerekkel szabályozhatja a kurzor pozícióját a dokumentumon belül`moveToParagraph`, `moveToCell`és több. Íme egy példa:
+ Különféle módszerekkel szabályozhatja a kurzor pozícióját a dokumentumon belül`moveToParagraph`, `moveToCell`és még sok más. Íme egy példa:
 
 ```java
 Document doc = new Document();
@@ -224,7 +224,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Mozgassa a kurzort egy adott bekezdésre
 builder.moveToParagraph(2, 0);
 
-// Adjon hozzá tartalmat az új kurzorpozícióhoz
+// Tartalom hozzáadása az új kurzorpozícióhoz
 builder.writeln("This is the 3rd paragraph.");
 ```
 
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### K: Hogyan mozgathatom a kurzort egy adott helyre a dokumentumon belül?
 
- V: A kurzor pozícióját olyan módszerekkel szabályozhatja, mint pl`moveToParagraph`, `moveToCell`és több. Íme egy példa:
+ V: A kurzor pozícióját olyan módszerekkel szabályozhatja, mint pl`moveToParagraph`, `moveToCell`és még sok más. Íme egy példa:
 
 ```java
 Document doc = new Document();
@@ -319,7 +319,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Mozgassa a kurzort egy adott bekezdésre
 builder.moveToParagraph(2, 0);
 
-// Adjon hozzá tartalmat az új kurzorpozícióhoz
+// Tartalom hozzáadása az új kurzorpozícióhoz
 builder.writeln("This is the 3rd paragraph.");
 ```
 

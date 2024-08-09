@@ -1,6 +1,6 @@
 ---
-title: Konvertera Shape till Office Math
-linktitle: Konvertera Shape till Office Math
+title: Konvertera form till Office Math
+linktitle: Konvertera form till Office Math
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du konverterar former till Office Math i Word-dokument med Aspose.Words för .NET med vår guide. Förbättra din dokumentformatering utan ansträngning.
 type: docs

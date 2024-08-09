@@ -8,7 +8,7 @@ weight: 13
 url: /fr/java/document-security/digital-signatures-in-documents/
 ---
 
-Les signatures numériques jouent un rôle crucial pour garantir l'authenticité et l'intégrité des documents numériques. Ils permettent de vérifier qu'un document n'a pas été falsifié et qu'il a bien été créé ou approuvé par le signataire indiqué. Dans ce guide étape par étape, nous explorerons comment implémenter des signatures numériques dans des documents à l'aide d'Aspose.Words pour Java. Nous couvrirons tout, de la configuration de l'environnement à l'ajout de signatures numériques à vos documents. Commençons!
+Les signatures numériques jouent un rôle crucial pour garantir l'authenticité et l'intégrité des documents numériques. Ils permettent de vérifier qu'un document n'a pas été falsifié et qu'il a bien été créé ou approuvé par le signataire indiqué. Dans ce guide étape par étape, nous explorerons comment implémenter des signatures numériques dans des documents à l'aide d'Aspose.Words pour Java. Nous couvrirons tout, de la configuration de l'environnement à l'ajout de signatures numériques à vos documents. Commençons !
 
 ## Conditions préalables
 

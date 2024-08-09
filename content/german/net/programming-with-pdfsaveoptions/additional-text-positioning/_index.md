@@ -89,7 +89,7 @@ Nein, die Funktion „Zusätzliche Textpositionierung“ ist spezifisch für PDF
  Ja, Sie erhalten eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder erwerben Sie eine Volllizenz[Hier](https://purchase.aspose.com/buy).
 
 ### Gibt es eine kostenlose Testversion?
- Ja, Sie können ein[Kostenlose Testphase](https://releases.aspose.com/) von Aspose.Words für .NET.
+ Ja, Sie können ein[Kostenlose Testversion](https://releases.aspose.com/) von Aspose.Words für .NET.
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
  Eine ausführliche Dokumentation finden Sie auf der[Aspose-Website](https://reference.aspose.com/words/net/).

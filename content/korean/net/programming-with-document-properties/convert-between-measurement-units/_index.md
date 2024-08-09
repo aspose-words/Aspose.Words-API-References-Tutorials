@@ -99,4 +99,4 @@ doc.Save("ConvertedDocument.docx");
  예, 다음을 사용하여 다양한 섹션의 여백 및 기타 설정을 사용자 정의할 수 있습니다.`Section` 수업.
 
 ### Aspose.Words는 어떤 다른 기능을 제공합니까?
- Aspose.Words는 문서 변환, 메일 병합 및 광범위한 서식 옵션을 포함한 광범위한 기능을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ Aspose.Words는 문서 변환, 메일 병합 및 광범위한 서식 옵션을 포함한 광범위한 기능을 지원합니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은

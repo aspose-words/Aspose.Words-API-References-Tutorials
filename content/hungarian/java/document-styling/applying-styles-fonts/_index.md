@@ -15,7 +15,7 @@ Az Aspose.Words for Java egy Java-alapú API, amely lehetővé teszi a fejleszt�
 
 ## Stílusok és betűtípusok alkalmazása: Az alapok
 
-### Elkezdeni
+### Kezdő lépések
  A kezdéshez be kell állítania a Java fejlesztői környezetet, és le kell töltenie az Aspose.Words for Java könyvtárat. A letöltési linket megtalálod[itt](https://releases.aspose.com/words/java/). Ügyeljen arra, hogy a könyvtárat is tartalmazza a projektben.
 
 ### Dokumentum létrehozása

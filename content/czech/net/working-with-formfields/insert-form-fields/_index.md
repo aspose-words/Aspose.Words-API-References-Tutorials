@@ -2,76 +2,100 @@
 title: Vložit pole formuláře
 linktitle: Vložit pole formuláře
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se vkládat pole rozevíracího formuláře do dokumentů aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak vložit pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/working-with-formfields/insert-form-fields/
 ---
+## Zavedení
 
-V tomto podrobném tutoriálu vás provedeme tím, jak vložit pole formuláře, konkrétně pole rozevíracího formuláře, do dokumentu aplikace Word pomocí Aspose.Words for .NET. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+Pole formulářů v dokumentech aplikace Word mohou být neuvěřitelně užitečná pro vytváření interaktivních formulářů nebo šablon. Ať už generujete průzkum, formulář žádosti nebo jakýkoli jiný dokument, který vyžaduje vstup uživatele, pole formuláře jsou nezbytná. V tomto tutoriálu vás provedeme procesem vložení pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše od nezbytných předpokladů až po podrobné kroky, abychom zajistili, že celému procesu porozumíte.
 
- Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nastavený ve svém vývojovém prostředí. Pokud jste tak neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Předpoklady
 
-## Krok 1: Inicializace objektů Document a DocumentBuilder
+Než se ponoříte do kódu, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
- Nejprve inicializujte`Document`a`DocumentBuilder` objekty:
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Budete potřebovat IDE jako Visual Studio.
+3. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
+
+## Importovat jmenné prostory
+
+Pro začátek je třeba importovat potřebné jmenné prostory. Tyto jmenné prostory obsahují třídy a metody, které budete používat pro práci s dokumenty aplikace Word v Aspose.Words for .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Nyní se pojďme ponořit do podrobného průvodce pro vložení pole formuláře se seznamem.
+
+## Krok 1: Vytvořte nový dokument
+
+Nejprve musíte vytvořit nový dokument aplikace Word. Tento dokument bude sloužit jako plátno pro přidání polí formuláře.
+
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Vložení pole rozevíracího formuláře
+ V tomto kroku vytvoříme instanci`Document` třída. Tato instance představuje dokument aplikace Word. Poté vytvoříme instanci`DocumentBuilder` třídy, která poskytuje metody pro vkládání obsahu do dokumentu.
 
- Dále určete možnosti pro pole rozevíracího formuláře a vložte jej do dokumentu pomocí`InsertComboBox` metoda`DocumentBuilder` objekt. V tomto příkladu vložíme pole rozevíracího formuláře s názvem „DropDown“ se třemi možnostmi: „Jedna“, „Dva“ a „Tři“:
+## Krok 2: Definujte položky Combo Box
+
+Dále definujte položky, které chcete zahrnout do pole se seznamem. Tyto položky budou možnosti dostupné k výběru.
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
+```
+
+ Zde vytvoříme pole řetězců s názvem`items` který obsahuje možnosti „Jedna“, „Dva“ a „Tři“.
+
+## Krok 3: Vložte Combo Box
+
+ Nyní vložte pole se seznamem do dokumentu pomocí`DocumentBuilder` instance.
+
+```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## Krok 3: Uložení dokumentu
+ V tomto kroku použijeme`InsertComboBox` metoda`DocumentBuilder` třída. Prvním parametrem je název pole se seznamem („DropDown“), druhým parametrem je pole položek a třetím parametrem je index výchozí vybrané položky (v tomto případě první položky).
 
-Nakonec dokument uložte:
+## Krok 4: Uložte dokument
+
+Nakonec dokument uložte na požadované místo.
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-je to! Úspěšně jste vložili pole rozevíracího formuláře do dokumentu aplikace Word pomocí Aspose.Words for .NET.
+Tento řádek kódu uloží dokument jako "OutputDocument.docx" do adresáře vašeho projektu. Pokud ji chcete uložit jinam, můžete zadat jinou cestu.
 
-### Příklad zdrojového kódu pro vložení polí formuláře pomocí Aspose.Words pro .NET
+## Závěr
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+Pomocí těchto kroků jste úspěšně vložili pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento proces lze upravit tak, aby zahrnoval další typy polí formuláře, díky čemuž budou vaše dokumenty interaktivní a uživatelsky přívětivé.
 
-string[] items = { "One", "Two", "Three" };
-builder.InsertComboBox("DropDown", items, 0);
+Vkládání polí formuláře může výrazně zlepšit funkčnost vašich dokumentů aplikace Word, což umožňuje dynamický obsah a interakci uživatele. Aspose.Words for .NET činí tento proces přímočarým a efektivním a umožňuje vám snadno vytvářet profesionální dokumenty.
 
-doc.Save("OutputDocument.docx");
-```
+## FAQ
 
-Neváhejte použít tento kód ve svých vlastních projektech a upravit jej podle svých konkrétních požadavků.
+### Mohu do dokumentu přidat více než jedno pole se seznamem?
 
-### FAQ
+Ano, do dokumentu můžete přidat více polí se seznamem nebo jiná pole formuláře opakováním kroků vkládání s různými názvy a položkami.
 
-#### Otázka: Jak mohu vložit pole formuláře typu text do Aspose.Words?
+### Jak mohu nastavit jinou výchozí vybranou položku v poli se seznamem?
 
- A: Chcete-li vložit pole formuláře typu text do Aspose.Words, můžete použít`FormField` třídu a nastavte ji`Type`majetek do`FormFieldType.Text`. Můžete také přizpůsobit další vlastnosti, jako je název, štítek a možnosti.
+Výchozí vybranou položku můžete změnit úpravou třetího parametru v`InsertComboBox` metoda. Například nastavení na`1` ve výchozím nastavení vybere druhou položku.
 
-#### Otázka: Je možné v dokumentu vytvořit pole formuláře typu checkbox?
+### Mohu upravit vzhled pole se seznamem?
 
- Odpověď: Ano, je možné vytvořit pole formuláře typu checkbox v dokumentu Aspose.Words. Můžete použít`FormField` třídu a nastavte ji`Type`majetek do`FormFieldType.CheckBox` pro vytvoření zaškrtávacího políčka. Poté můžete upravit vlastnosti zaškrtávacího políčka podle potřeby.
+ Vzhled polí formuláře lze upravit pomocí různých vlastností a metod v Aspose.Words. Viz[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
-#### Otázka: Jak mohu do dokumentu přidat pole formuláře rozevíracího typu?
+### Je možné vložit jiné typy polí formuláře, jako je zadávání textu nebo zaškrtávací políčka?
 
- A: Chcete-li přidat pole formuláře rozevíracího typu do dokumentu Aspose.Words, použijte`FormField` třídu a nastavte ji`Type`majetek do`FormFieldType.DropDown` . Poté můžete nastavit možnosti rozevíracího seznamu pomocí`DropDownItems` vlastnictví.
+ Ano, Aspose.Words for .NET podporuje různé typy polí formulářů, včetně polí pro zadávání textu, zaškrtávacích políček a dalších. Příklady a podrobné návody najdete v[dokumentace](https://reference.aspose.com/words/net/).
 
-#### Otázka: Mohu nastavit výchozí hodnotu pro pole formuláře v Aspose.Words?
+### Jak mohu vyzkoušet Aspose.Words for .NET před nákupem?
 
-Odpověď: Ano, můžete nastavit výchozí hodnotu pro pole formuláře v Aspose.Words. Použijte`FormField.Result` vlastnost k určení počáteční hodnoty pole formuláře.
-
-#### Otázka: Jak mohu získat data zadaná do polí formuláře v Aspose.Words?
-
- A: Chcete-li získat data zadaná do polí formuláře v Aspose.Words, můžete použít`FormField.Result` vlastnost, která obsahuje hodnotu zadanou uživatelem. K této vlastnosti máte přístup pro každé pole formuláře v dokumentu.
+ Bezplatnou zkušební verzi si můžete stáhnout z[zde](https://releases.aspose.com/) a požádat o dočasnou licenci od[zde](https://purchase.aspose.com/temporary-license/).

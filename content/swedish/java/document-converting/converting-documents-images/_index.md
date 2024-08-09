@@ -63,7 +63,7 @@ Att konvertera dokument till bilder i Java är enkelt med Aspose.Words för Java
 ## FAQ's
 
 ### Hur kan jag ställa in bildupplösningen under konverteringen?
- För att ställa in bildupplösningen, använd`setResolution` metod av`ImageSaveOptions` och ange önskad upplösning i punkter per tum (DPI).
+ För att ställa in bildupplösningen, använd`setResolution` metod för`ImageSaveOptions` och ange önskad upplösning i punkter per tum (DPI).
 
 ### Kan jag konvertera specifika sidor i dokumentet till bilder?
  Ja, du kan ange ett sidintervall med hjälp av`setPageCount`och`setPageIndex` metoder för`ImageSaveOptions` för att konvertera specifika sidor till bilder.

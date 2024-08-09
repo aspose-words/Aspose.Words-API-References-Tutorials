@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 //按索引：
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-//按名字：
+//按名称：
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 

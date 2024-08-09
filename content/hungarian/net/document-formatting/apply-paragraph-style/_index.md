@@ -9,7 +9,7 @@ url: /hu/net/document-formatting/apply-paragraph-style/
 ---
 ## Bevezetés
 
-Halihó! Gondolkozott már azon, hogyan lehet feldobni Word-dokumentumait néhány pofonegyszerű bekezdésstílussal az Aspose.Words for .NET használatával? Akár jelentést készít, akár javaslatot készít, akár csak azt szeretné, hogy dokumentumai elsőrangúan nézzenek ki, a bekezdésstílusok alkalmazása világméretű változást hozhat. Ebben az oktatóanyagban az Aspose.Words for .NET használatával a bekezdésstílusok Word-dokumentumokban való alkalmazásának okoskodásaiba fogunk belemerülni. Szóval, csat, igyál egy csésze kávét, és kezdjük a formázást!
+Szia! Gondolkozott már azon, hogyan lehet feldobni Word-dokumentumait néhány pofonegyszerű bekezdésstílussal az Aspose.Words for .NET használatával? Akár jelentést készít, akár javaslatot készít, akár csak azt szeretné, hogy dokumentumai elsőrangúan nézzenek ki, a bekezdésstílusok alkalmazása világméretű változást hozhat. Ebben az oktatóanyagban az Aspose.Words for .NET használatával a bekezdésstílusok Word-dokumentumokban való alkalmazásának okoskodásaiba fogunk belemerülni. Szóval, csat, igyál egy csésze kávét, és kezdjük a formázást!
 
 ## Előfeltételek
 
@@ -33,7 +33,7 @@ Rendben, most, hogy készen vannak a hozzávalóink, bontsuk le a folyamatot fal
 
 ## 1. lépés: A dokumentumkönyvtár beállítása
 
-Először is meg kell határoznunk, hogy a dokumentumainkat hova mentsük. Tekintse ezt úgy, mint a munkaterület beállítását.
+Először is meg kell határoznunk, hogy a dokumentumainkat hova mentsük. Tekintsd ezt a munkaterület beállításának.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

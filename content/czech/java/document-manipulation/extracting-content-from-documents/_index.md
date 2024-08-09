@@ -16,7 +16,7 @@ Ve světě zpracování dokumentů je extrahování obsahu z dokumentů běžný
 
 Než se pustíme do procesu extrakce, ujistěte se, že máte splněny následující předpoklady:
 
-1.  Aspose.Words for Java: Měli byste mít Aspose.Words for Java nainstalovaný a nastavený ve vývojovém prostředí Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java: Měli byste mít Aspose.Words for Java nainstalovaný a nastavený ve vývojovém prostředí Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 2. Dokument k extrahování obsahu: Pro tuto příručku použijeme vzorový dokument s názvem "Extrahovat obsah.docx." Ujistěte se, že máte podobný dokument připravený k extrakci.
 
@@ -232,7 +232,7 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## Závěr
 
-Gratulujeme! Naučili jste se extrahovat obsah z dokumentů pomocí Aspose.Words for Java. Tato příručka pokryla různé techniky extrakce, včetně obsahu mezi uzly na úrovni bloků, záložky, rozsahy komentářů, odstavce a další. Nyní jste vybaveni pro efektivní extrakci obsahu dokumentů ve vašich aplikacích Java.
+Gratuluji! Naučili jste se extrahovat obsah z dokumentů pomocí Aspose.Words for Java. Tato příručka pokryla různé techniky extrakce, včetně obsahu mezi uzly na úrovni bloků, záložky, rozsahy komentářů, odstavce a další. Nyní jste vybaveni pro efektivní extrakci obsahu dokumentů ve vašich aplikacích Java.
 
 ## FAQ
 

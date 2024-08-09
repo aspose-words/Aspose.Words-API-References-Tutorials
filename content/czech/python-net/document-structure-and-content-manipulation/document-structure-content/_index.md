@@ -178,7 +178,7 @@ for data in dataset:
 
 - Udržujte svůj kód organizovaný pomocí funkcí pro různé úlohy manipulace s dokumenty.
 - Využijte zpracování výjimek k elegantnímu zpracování chyb během zpracování dokumentu.
--  Zkontrolovat[Dokumentace Aspose.Words](https://reference.aspose.com/words/python-net/) pro podrobné odkazy a příklady API.
+-  Zkontrolujte[Dokumentace Aspose.Words](https://reference.aspose.com/words/python-net/) pro podrobné odkazy a příklady API.
 
 ## Závěr
 

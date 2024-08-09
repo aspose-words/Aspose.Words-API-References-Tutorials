@@ -104,7 +104,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 
 ## Conclusion
 
-Et voila! Vous avez personnalisé avec succès une série de graphiques uniques dans un document Word à l'aide d'Aspose.Words pour .NET. Plutôt cool, non ? Ce n'est que la pointe de l'iceberg ; vous pouvez faire bien plus avec Aspose.Words. Alors continuez à expérimenter et à créer des documents géniaux !
+Et voilà ! Vous avez personnalisé avec succès une série de graphiques uniques dans un document Word à l'aide d'Aspose.Words pour .NET. Plutôt cool, non ? Ce n'est que la pointe de l'iceberg ; vous pouvez faire bien plus avec Aspose.Words. Alors continuez à expérimenter et à créer des documents géniaux !
 
 ## FAQ
 
@@ -121,4 +121,4 @@ Aspose.Words for .NET est une bibliothèque puissante qui vous permet de créer,
 Absolument! Aspose.Words prend en charge différents types de graphiques tels que les graphiques à barres, à secteurs et à nuages de points.
 
 ### Où puis-je trouver plus de documentation ?
- Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour des guides et des exemples plus détaillés.
+ Découvrez le[documentation](https://reference.aspose.com/words/net/) pour des guides et des exemples plus détaillés.

@@ -2,7 +2,7 @@
 title: Word 文書から VBA プロジェクトを複製する
 linktitle: Word 文書から VBA プロジェクトを複製する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書に VBA プロジェクトを複製する方法を学びます。シームレスな文書操作については、ステップバイステップのガイドに従ってください。
+description: Aspose.Words for .NET を使用して Word 文書に VBA プロジェクトを複製する方法を学びます。シームレスなドキュメント操作については、ステップバイステップのガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/working-with-vba-macros/clone-vba-project/

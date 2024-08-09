@@ -100,7 +100,7 @@ Kom ihåg att att arbeta med Aspose.Words för .NET öppnar upp en värld av mö
 Ett flytande bord är ett bord som inte är fixerat till texten utan kan flytta runt, vanligtvis med text omsluten.
 
 ### Hur kan jag se om en tabell flyter med Aspose.Words för .NET?
- Du kan kontrollera om ett bord är flytande genom att undersöka dess`TextWrapping` fast egendom. Om den är inställd på`TextWrapping.Around`, bordet flyter.
+ Du kan kontrollera om ett bord är flytande genom att undersöka dess`TextWrapping` egendom. Om den är inställd på`TextWrapping.Around`, bordet flyter.
 
 ### Kan jag ändra placeringsegenskaperna för ett flytande bord?
 Ja, med Aspose.Words för .NET kan du ändra placeringsegenskaperna för ett flytande bord för att anpassa dess layout.

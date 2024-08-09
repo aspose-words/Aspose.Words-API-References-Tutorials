@@ -60,7 +60,7 @@ Bây giờ, hãy chèn một siêu liên kết vào tài liệu. Siêu liên k�
 builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", sai);
 ```
 
- Trong dòng này,`"Testlink"` là văn bản hiển thị cho siêu liên kết và`"https://www.google.com/search?q= aspose"` là URL. Các`false` tham số chỉ ra rằng liên kết không được định dạng dưới dạng siêu liên kết (nghĩa là nó sẽ không được gạch chân và có màu xanh lam).
+ Trong dòng này,`"Testlink"` là văn bản hiển thị cho siêu liên kết và`"https://www.google.com/search?q= aspose"` là URL. các`false` tham số chỉ ra rằng liên kết không được định dạng dưới dạng siêu liên kết (nghĩa là nó sẽ không được gạch chân và có màu xanh lam).
 
 ## Bước 4: Lưu tài liệu dưới dạng PDF
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách thoát URI khi lưu tài liệu Word dưới dạng PDF bằng Aspose.Words cho .NET. Quá trình này đảm bảo rằng các siêu liên kết của bạn vẫn hoạt động và được định dạng chính xác trong tệp PDF thu được. 
+Và bạn có nó! Bạn vừa học cách thoát URI khi lưu tài liệu Word dưới dạng PDF bằng Aspose.Words cho .NET. Quá trình này đảm bảo rằng các siêu liên kết của bạn vẫn hoạt động và được định dạng chính xác trong tệp PDF thu được. 
 
 Hãy nhớ rằng, việc nắm vững những kỹ thuật nhỏ nhưng quan trọng này có thể nâng cao đáng kể chất lượng và chức năng của tài liệu của bạn. Chúc mừng mã hóa!
 

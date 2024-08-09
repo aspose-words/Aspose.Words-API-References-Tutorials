@@ -9,13 +9,13 @@ url: /ko/net/programming-with-document-properties/remove-personal-information/
 ---
 ## 소개
 
-안녕하세요! 문서 관리 작업에 푹 빠져본 적이 있나요? 우리 모두 거기에 가본 적이 있어요. 계약서, 보고서 또는 일상적인 서류 작업을 처리하는 경우 프로세스를 단순화하는 도구를 사용하면 생명을 구할 수 있습니다. .NET용 Aspose.Words를 입력합니다. 이 보석 같은 라이브러리를 사용하면 전문가처럼 문서 생성, 조작 및 변환을 자동화할 수 있습니다. 오늘은 매우 편리한 기능인 문서에서 개인 정보를 제거하는 방법을 안내해 드리겠습니다. 뛰어들어보자!
+안녕하세요! 문서 관리 작업에 푹 빠져본 적이 있나요? 우리 모두 거기에 가봤습니다. 계약서, 보고서 또는 일상적인 서류 작업을 처리하는 경우 프로세스를 단순화하는 도구를 사용하면 생명을 구할 수 있습니다. .NET용 Aspose.Words를 입력합니다. 이 보석 같은 라이브러리를 사용하면 전문가처럼 문서 생성, 조작 및 변환을 자동화할 수 있습니다. 오늘은 매우 편리한 기능인 문서에서 개인 정보를 제거하는 방법을 안내해 드리겠습니다. 뛰어들어보자!
 
 ## 전제 조건
 
 손을 더럽히기 전에 필요한 모든 것이 있는지 확인합시다.
 
-1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다운로드하세요.[여기](https://releases.aspose.com/words/net/) . 당신은 또한[무료 시험판](https://releases.aspose.com/) 이제 막 시작했다면.
+1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다운로드하세요.[여기](https://releases.aspose.com/words/net/) . 당신은 또한[무료 평가판](https://releases.aspose.com/) 이제 막 시작했다면.
 2. 개발 환경: Visual Studio 또는 원하는 기타 .NET 개발 환경.
 3. C#에 대한 기본 지식: 마법사가 될 필요는 없지만 약간만 익숙해지면 큰 도움이 됩니다.
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 
 ### 1.1 경로 정의
 
-우리는 작업 중인 문서를 어디서 찾을 수 있는지 프로그램에 알려줘야 합니다. 여기에서 문서 디렉토리의 경로를 정의합니다.
+우리는 작업 중인 문서를 어디서 찾을 수 있는지 프로그램에 알려주어야 합니다. 여기에서 문서 디렉토리의 경로를 정의합니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -76,7 +76,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ### .NET용 Aspose.Words는 무료인가요?
 
- Aspose.Words는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 테스트해 볼 수 있지만 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해 보세요[가격](https://purchase.aspose.com/buy) 상세 사항은.
+ Aspose.Words는 다음을 제공합니다.[무료 평가판](https://releases.aspose.com/) 테스트해 볼 수 있지만 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해 보세요[가격](https://purchase.aspose.com/buy) 자세한 내용은
 
 ### 다른 문서 형식에 Aspose.Words를 사용할 수 있나요?
 

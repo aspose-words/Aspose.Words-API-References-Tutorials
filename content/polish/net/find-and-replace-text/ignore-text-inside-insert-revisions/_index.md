@@ -89,7 +89,7 @@ Ignorowanie wstawionego tekstu pomaga skupić się na podstawowej treści, jedno
 Tak, możesz przywrócić zignorowany wstawiony tekst, używając odpowiednich ustawień FindReplaceOptions.
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
- Odwiedzić[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe przewodniki i odniesienia do API.
+ Odwiedź[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe przewodniki i odniesienia do API.
 
 ### Czy istnieje forum społecznościowe do omawiania zapytań związanych z Aspose.Words związanych z platformą .NET?
  Tak, możesz odwiedzić[Forum Aspose.Words](https://forum.aspose.com/c/words/8) za wsparcie społeczności i dyskusje.

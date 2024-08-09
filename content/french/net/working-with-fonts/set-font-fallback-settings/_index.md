@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Introduction
 
 Lorsque vous travaillez avec des documents contenant divers éléments de texte, tels que différentes langues ou caractères spéciaux, il est crucial de garantir que ces éléments s'affichent correctement. Aspose.Words for .NET offre une fonctionnalité puissante appelée Paramètres de secours des polices, qui aide à définir des règles de substitution des polices lorsque la police d'origine ne prend pas en charge certains caractères. Dans ce guide, nous explorerons comment configurer les paramètres de secours des polices à l'aide d'Aspose.Words pour .NET dans un didacticiel étape par étape.
 
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Étape 4 : appliquer les paramètres de police au document
 
- Attribuer le configuré`FontSettings` au document. Cela garantit que les règles de remplacement des polices sont appliquées lors du rendu du document.
+ Attribuer le configuré`FontSettings`au document. Cela garantit que les règles de remplacement des polices sont appliquées lors du rendu du document.
 
 ```csharp
 doc.FontSettings = fontSettings;

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ko/net/working-with-fonts/set-font-fallback-settings/
 ---
+## 소개
 
 다양한 언어나 특수 문자 등 다양한 텍스트 요소가 포함된 문서로 작업할 때 이러한 요소가 올바르게 표시되는지 확인하는 것이 중요합니다. Aspose.Words for .NET은 글꼴 대체 설정이라는 강력한 기능을 제공합니다. 이 기능은 원본 글꼴이 특정 문자를 지원하지 않을 때 글꼴 대체 규칙을 정의하는 데 도움이 됩니다. 이 가이드에서는 단계별 튜토리얼에서 Aspose.Words for .NET을 사용하여 글꼴 대체 설정을 구성하는 방법을 살펴보겠습니다.
 
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## 4단계: 문서에 글꼴 설정 적용
 
- 구성된 할당`FontSettings` 문서에. 이렇게 하면 문서를 렌더링할 때 글꼴 대체 규칙이 적용됩니다.
+ 구성된 할당`FontSettings`문서에. 이렇게 하면 문서를 렌더링할 때 글꼴 대체 규칙이 적용됩니다.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -94,7 +95,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 다음 단계를 수행하면 Aspose.Words for .NET에서 글꼴 대체 설정을 효과적으로 설정하고 사용할 수 있습니다. 이렇게 하면 원본 글꼴이 특정 문자를 지원하지 않는 경우에도 문서가 모든 문자를 올바르게 표시할 수 있습니다. 이러한 설정을 구현하면 문서의 품질과 가독성이 크게 향상됩니다.
 
-## 자주 묻는 질문
+## FAQ
 
 ### Q1: 글꼴 대체란 무엇입니까?
 

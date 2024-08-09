@@ -8,7 +8,7 @@ weight: 11
 url: /tr/java/table-processing/working-with-document-lists/
 ---
 
-Aspose.Words ile Java'da belge işleme dünyasına dalmaya hazır mısınız? Bu kapsamlı kılavuzda Aspose.Words for Java kullanarak belge listeleriyle çalışmanın inceliklerini keşfedeceğiz. Bu çok yönlü Java API'nin tüm gücünden yararlanmanıza yardımcı olmak için size adım adım talimatlar ve kaynak kodu örnekleri sunacağız. Başlayalım!
+Aspose.Words ile Java'da belge işleme dünyasına dalmaya hazır mısınız? Bu kapsamlı kılavuzda Aspose.Words for Java kullanarak belge listeleriyle çalışmanın inceliklerini keşfedeceğiz. Bu çok yönlü Java API'nin tüm gücünden yararlanmanıza yardımcı olmak için size adım adım talimatlar ve kaynak kodu örnekleri sunacağız. Hadi başlayalım!
 
 ## giriiş
 

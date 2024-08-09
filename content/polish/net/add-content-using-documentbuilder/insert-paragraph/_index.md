@@ -87,4 +87,4 @@ Tak, Aspose.Words dla .NET zapewnia kompatybilność z różnymi wersjami Micros
 Tak, możesz programowo szyfrować i zabezpieczać swoje dokumenty za pomocą Aspose.Words dla .NET.
 
 ### Gdzie mogę znaleźć dodatkową pomoc i wsparcie dla Aspose.Words dla .NET?
- Odwiedzić[Forum Aspose.Words](https://forum.aspose.com/c/words/8) za wsparcie społeczności i dyskusje.
+ Odwiedź[Forum Aspose.Words](https://forum.aspose.com/c/words/8) za wsparcie społeczności i dyskusje.

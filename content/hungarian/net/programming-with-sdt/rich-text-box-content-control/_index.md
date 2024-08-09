@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Hozzon létre egy új dokumentumot
 
- Újat csinálni`Document` objektumot, amely a Word-dokumentum alapjául fog szolgálni.
+ Hozzon létre egy újat`Document` objektumot, amely a Word-dokumentum alapjául fog szolgálni.
 
 ```csharp
 Document doc = new Document();
@@ -68,7 +68,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
 ## 4. lépés: Adjon hozzá tartalmat a Rich Text Boxhoz
 
- Hozzon létre egy`Paragraph` és a`Run` objektumot a Rich Text Boxban megjeleníteni kívánt tartalom tárolására. Igény szerint testreszabhatja a szöveget és a formázást.
+ Hozzon létre a`Paragraph` és a`Run` objektumot a Rich Text Boxban megjeleníteni kívánt tartalom tárolására. Igény szerint testreszabhatja a szöveget és a formázást.
 
 ```csharp
 Paragraph para = new Paragraph(doc);

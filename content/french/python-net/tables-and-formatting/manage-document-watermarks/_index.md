@@ -65,7 +65,7 @@ L'ajout de filigranes d'image implique un processus similaire :
 
 1. Chargez l'image pour le filigrane.
 2. Créez un objet de filigrane d’image.
-3. Ajoutez le filigrane de l'image au document.
+3. Ajoutez le filigrane de l’image au document.
 
 ```python
 # Load the image for the watermark

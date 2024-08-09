@@ -15,7 +15,7 @@ Professzionális dokumentumokat szeretne létrehozni diagramokkal .NET-ben? Jó 
 
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
 
--  Aspose.Words for .NET: Megteheti[Letöltés](https://releases.aspose.com/words/net/) a legújabb verziót, vagy használja a[ingyenes próbaverzió](https://releases.aspose.com/).
+-  Aspose.Words for .NET: Megteheti[letöltés](https://releases.aspose.com/words/net/) a legújabb verziót, vagy használja a[ingyenes próbaverzió](https://releases.aspose.com/).
 - .NET-keretrendszer: Győződjön meg arról, hogy a .NET telepítve van a rendszeren.
 - IDE: Olyan fejlesztői környezet, mint a Visual Studio.
 
@@ -100,11 +100,11 @@ Végül mentse a dokumentumot a megadott könyvtárba.
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-És ez az! Sikeresen létrehozott egy dokumentumot diagrammal az Aspose.Words for .NET használatával. 
+És ennyi! Sikeresen létrehozott egy dokumentumot diagrammal az Aspose.Words for .NET használatával. 
 
 ## Következtetés
 
-Az Aspose.Words for .NET használatával egyszerűen hozhat létre és kezelhet diagramokat a dokumentumokban. Ez a lépésről lépésre bemutatott útmutató bemutatja, hogyan állíthatja be a tengely határait egy diagramon, így pontosabbá és professzionálisabbá teheti az adatok bemutatását. Akár jelentéseket, prezentációkat vagy bármilyen más dokumentumot készít, az Aspose.Words biztosítja a szükséges eszközöket.
+Az Aspose.Words for .NET használatával egyszerűen hozhat létre és kezelhet diagramokat a dokumentumokban. Ez a lépésről lépésre bemutatott útmutató bemutatja, hogyan állíthatja be a tengely határait egy diagramban, így pontosabbá és professzionálisabbá teheti az adatok bemutatását. Akár jelentéseket, prezentációkat vagy bármilyen más dokumentumot készít, az Aspose.Words biztosítja a szükséges eszközöket.
 
 ## GYIK
 
@@ -121,4 +121,4 @@ Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi Word-dokum
  A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
 
 ### Hogyan kaphatok támogatást az Aspose.Words számára?
- Meglátogathatja a[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért.
+ Meglátogathatja a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.

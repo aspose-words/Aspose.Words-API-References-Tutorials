@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Krok 4: Utwórz sekcję powtarzalną
 
- Stwórz`StructuredDocumentTag` (SDT) dla sekcji powtarzalnej i zmapuj ją na dane XML:
+ Utwórz`StructuredDocumentTag` (SDT) dla sekcji powtarzalnej i zmapuj ją na dane XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

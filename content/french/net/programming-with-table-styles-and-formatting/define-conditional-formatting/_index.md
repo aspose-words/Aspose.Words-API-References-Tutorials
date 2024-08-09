@@ -15,7 +15,7 @@ La mise en forme conditionnelle vous permet d'appliquer une mise en forme spéci
 
 Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1. Aspose.Words pour .NET : vous avez besoin de la bibliothèque Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1. Aspose.Words pour .NET : vous avez besoin de la bibliothèque Aspose.Words pour .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un environnement de développement approprié comme Visual Studio.
 3. Connaissance de base de C# : Une connaissance de la programmation C# sera utile.
 4. Document Word : un document Word dans lequel vous souhaitez appliquer une mise en forme conditionnelle.
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 
 ## Conclusion
 
-Et voila! Vous avez défini avec succès la mise en forme conditionnelle dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement mettre en évidence les données importantes dans vos tableaux, rendant ainsi vos documents plus informatifs et visuellement attrayants. La mise en forme conditionnelle est un outil puissant et sa maîtrise peut améliorer considérablement vos capacités de traitement de documents.
+Et voilà ! Vous avez défini avec succès la mise en forme conditionnelle dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement mettre en évidence les données importantes dans vos tableaux, rendant ainsi vos documents plus informatifs et visuellement attrayants. La mise en forme conditionnelle est un outil puissant et sa maîtrise peut améliorer considérablement vos capacités de traitement de documents.
 
 ## FAQ
 

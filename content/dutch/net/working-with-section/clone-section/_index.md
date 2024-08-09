@@ -160,4 +160,4 @@ Ja, Aspose.Words ondersteunt verschillende Word-formaten, waaronder DOC, DOCX, R
 
 ### Waar kan ik meer bronnen vinden over Aspose.Words?
 
- Voor meer informatie kunt u terecht op de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of de[Helpforum](https://forum.aspose.com/c/words/8) voor hulp en discussies.
+ Voor meer informatie kunt u terecht op de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp en discussies.

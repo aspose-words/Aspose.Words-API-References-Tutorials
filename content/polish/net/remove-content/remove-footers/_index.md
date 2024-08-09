@@ -94,7 +94,7 @@ masz to! Pomyślnie usunąłeś stopki z dokumentu programu Word przy użyciu As
 ### Czy mogę usunąć nagłówki przy użyciu tej samej metody?
  Tak, możesz zastosować podobne podejście, aby usunąć nagłówki, uzyskując dostęp`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` , I`HeaderFooterType.HeaderEven`.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
  Aspose.Words dla .NET jest produktem komercyjnym, ale możesz uzyskać[bezpłatna wersja próbna](https://releases.aspose.com/) aby przetestować jego funkcje.
 
 ### Czy mogę manipulować innymi elementami dokumentu Word za pomocą Aspose.Words?

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-comments/comment-resolved-and-replies/
 ---
-## Úvod
+## Zavedení
 
 Pokud pracujete s dokumenty Wordu, pravděpodobně jste se zabývali komentáři. Jsou skvělé pro spolupráci, ale jejich správa může být obtížná. S Aspose.Words pro .NET můžete automatizovat proces řešení a odpovídání na komentáře. Tento průvodce vás provede kroky, jak toho dosáhnout.
 
@@ -15,7 +15,7 @@ Pokud pracujete s dokumenty Wordu, pravděpodobně jste se zabývali komentáři
 
 Před potápěním se ujistěte, že máte následující:
 
-1.  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Nastavení pomocí rozhraní .NET Framework.
 3. Základní znalost C#: Seznámení se syntaxí a pojmy.
 
@@ -100,10 +100,10 @@ Ano, můžete automatizovat různé úkoly, jako je přidávání, mazání a ú
 Ano, Aspose.Words for .NET podporuje .NET Framework i .NET Core.
 
 ### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?  
- Bezplatnou zkušební verzi si můžete stáhnout z[tady](https://releases.aspose.com/).
+ Bezplatnou zkušební verzi si můžete stáhnout z[zde](https://releases.aspose.com/).
 
 ### Mohu použít Aspose.Words pro .NET pro práci s jinými typy dokumentů?  
 Ano, Aspose.Words podporuje různé formáty včetně DOCX, PDF, HTML a dalších.
 
 ### Kde najdu podrobnou dokumentaci k Aspose.Words pro .NET?  
- Máte přístup k dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Máte přístup k dokumentaci[zde](https://reference.aspose.com/words/net/).

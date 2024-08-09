@@ -16,7 +16,7 @@ Aspose.Words for Python 是一個多功能函式庫，可讓開發人員以程�
 
 ## 設定您的環境
 
-在深入研究程式碼之前，讓我們確保我們的環境已正確設定。按著這些次序：
+在深入研究程式碼之前，讓我們確保我們的環境已正確設定。請依照下列步驟操作：
 
 1. 在您的系統上安裝 Python。
 2. 使用 pip 安裝 Aspose.Words for Python 函式庫：
@@ -24,7 +24,7 @@ Aspose.Words for Python 是一個多功能函式庫，可讓開發人員以程�
    pip install aspose-words
    ```
 
-## 載入並建立Word文檔
+## 載入和建立Word文檔
 
 首先，導入必要的類別並使用 Aspose.Words 建立一個新的 Word 文件。這是一個基本範例：
 

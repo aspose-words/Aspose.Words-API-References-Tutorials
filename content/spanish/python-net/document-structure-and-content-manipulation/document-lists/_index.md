@@ -121,7 +121,7 @@ En este tutorial, exploramos cómo crear y administrar listas en documentos de W
 ¡Absolutamente! Aspose.Words Python le permite personalizar formatos de numeración, estilos de viñetas y alineación para adaptar sus listas a sus necesidades específicas.
 
 ### ¿Es posible crear listas anidadas usando Aspose.Words?
-Sí, puedes crear listas anidadas agregando sublistas a tu lista principal. Esto es útil para presentar información jerárquicamente.
+Sí, puedes crear listas anidadas agregando sublistas a tu lista principal. Esto es útil para presentar información de forma jerárquica.
 
 ### ¿Puedo convertir mi texto sin formato existente en listas?
 Sí, Aspose.Words Python proporciona métodos para analizar y formatear texto sin formato en listas, lo que facilita la estructuración de su contenido.

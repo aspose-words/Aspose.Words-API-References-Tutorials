@@ -106,7 +106,7 @@ I masz to! Za pomocą zaledwie kilku linii kodu udało nam się usunąć podzia�
 ### Czy mogę używać Aspose.Words z innymi językami .NET?
 Tak, Aspose.Words obsługuje wszystkie języki .NET, w tym VB.NET, F# i inne.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
  Aspose.Words oferuje bezpłatną wersję próbną. Aby używać długoterminowo, możesz kupić licencję od[Zakup Aspose](https://purchase.aspose.com/buy).
 
 ### Czy mogę usunąć inne rodzaje przerw (takie jak podziały sekcji) za pomocą Aspose.Words?

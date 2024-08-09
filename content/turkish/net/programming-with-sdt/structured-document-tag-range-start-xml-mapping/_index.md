@@ -83,7 +83,7 @@ StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart
 
 ## Adım 5: SDT için XML Eşlemesini Ayarlayın
 
-Şimdi sıra XML parçamızı SDT'ye bağlamaya geldi. Bir XML eşleme ayarlayarak, XML verilerinin hangi bölümünün SDT'de görüntülenmesi gerektiğini belirtiriz.
+Şimdi sıra XML parçamızı SDT'ye bağlamaya geldi. Bir XML eşleme ayarlayarak, XML verilerinin hangi bölümünün SDT'de görüntülenmesi gerektiğini belirleriz.
 
  XPath, XML bölümünde görüntülemek istediğimiz belirli öğeye işaret eder. Burada ikinciye işaret ediyoruz.`<text>` içindeki eleman`<root>` eleman.
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir XML parçasını bir Word belgesindeki yapılandırılmış belge etiketine başarıyla eşlediniz. Bu güçlü özellik, dinamik ve veri odaklı belgeleri zahmetsizce oluşturmanıza olanak tanır. İster rapor, ister fatura, ister başka bir belge türü oluşturuyor olun, XML eşleme iş akışınızı önemli ölçüde kolaylaştırabilir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir XML parçasını bir Word belgesindeki yapılandırılmış belge etiketine başarıyla eşlediniz. Bu güçlü özellik, dinamik ve veri odaklı belgeleri zahmetsizce oluşturmanıza olanak tanır. İster rapor, ister fatura, ister başka bir belge türü oluşturuyor olun, XML eşleme iş akışınızı önemli ölçüde kolaylaştırabilir.
 
 ## SSS'ler
 
@@ -110,7 +110,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 İçerik denetimleri olarak da bilinen yapılandırılmış belge etiketleri, Word belgelerindeki belirli içerik türlerine yönelik kaplardır. Verileri bağlamak, düzenlemeyi kısıtlamak veya belge oluşturmada kullanıcılara rehberlik etmek için kullanılabilirler.
 
 ### XML parçası içeriğini dinamik olarak nasıl güncelleyebilirim?
- XML bölümünün içeriğini değiştirerek güncelleyebilirsiniz.`xmlPartContent` dizeyi belgeye eklemeden önce. Basitçe dizeyi yeni verilerle güncelleyin ve`CustomXmlParts` Toplamak.
+ XML bölümünün içeriğini değiştirerek güncelleyebilirsiniz.`xmlPartContent` belgeye eklemeden önce dize. Basitçe dizeyi yeni verilerle güncelleyin ve`CustomXmlParts` koleksiyon.
 
 ### Aynı belgede birden fazla XML parçasını farklı SDT'lere bağlayabilir miyim?
 Evet, aynı belgede birden fazla XML parçasını farklı SDT'lere bağlayabilirsiniz. Her SDT'nin kendine özgü XML bölümü ve XPath eşlemesi olabilir.

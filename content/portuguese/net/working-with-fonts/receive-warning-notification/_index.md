@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pt/net/working-with-fonts/receive-warning-notification/
 ---
+## Introdução
 
 Você está cansado de lidar com problemas inesperados de fonte em seus documentos? Com Aspose.Words for .NET, você pode ser notificado sobre quaisquer problemas potenciais durante o processamento de documentos, facilitando a manutenção da qualidade do documento. Este guia completo irá orientá-lo na configuração de notificações de aviso no Aspose.Words, garantindo que você nunca mais perca um aviso crucial.
 
@@ -15,9 +16,9 @@ Você está cansado de lidar com problemas inesperados de fonte em seus document
 Antes de começarmos, certifique-se de ter o seguinte:
 
 - Conhecimento básico de C#: A familiaridade com C# o ajudará a compreender e implementar as etapas.
--  Biblioteca Aspose.Words for .NET: Baixe e instale-a do[Link para Download](https://releases.aspose.com/words/net/).
+-  Biblioteca Aspose.Words for .NET: Baixe e instale-a do[link para baixar](https://releases.aspose.com/words/net/).
 - Ambiente de desenvolvimento: uma configuração como o Visual Studio para escrever e executar seu código.
--  Documento de amostra: tenha um documento de amostra (por exemplo,`Rendering.docx`) trabalhar com.
+-  Documento de amostra: tenha um documento de amostra (por exemplo,`Rendering.docx`) para trabalhar.
 
 ## Importar namespaces
 
@@ -69,7 +70,7 @@ doc.WarningCallback = callback;
 ```
 ## Etapa 5: atualizar o layout da página
 
- Ligar para`UpdatePageLayout` método. Isso renderiza o documento na memória e captura quaisquer avisos que ocorram durante a renderização.
+ Ligue para o`UpdatePageLayout` método. Isso renderiza o documento na memória e captura quaisquer avisos que ocorram durante a renderização.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -101,11 +102,11 @@ Não, você só pode especificar uma fonte padrão para substituição. No entan
 
 ###  Q3: Posso lidar com outros tipos de avisos com`IWarningCallback`?
 
- Sim o`IWarningCallback`interface pode lidar com vários tipos de avisos, não apenas com substituição de fontes.
+ Sim, o`IWarningCallback`interface pode lidar com vários tipos de avisos, não apenas com substituição de fontes.
 
 ### Q4: Onde posso encontrar suporte para Aspose.Words?
 
- Visite a[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) para assistência.
+ Visite o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) para obter assistência.
 
 ### Q5: É possível obter uma licença temporária para Aspose.Words?
 

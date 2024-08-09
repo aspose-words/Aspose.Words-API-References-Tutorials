@@ -2,83 +2,105 @@
 title: フォント強調マークの設定
 linktitle: フォント強調マークの設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書のフォント強調スタイルを設定する方法を学習します。
+description: この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書にフォント強調マークを設定する方法を学習します。.NET 開発者に最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のフォント強調スタイルを設定する方法を説明します。フォント強調は、テキスト内の特定の単語またはフレーズを強調表示するために使用されます。
+今日のチュートリアルでは、Aspose.Words for .NET を使用して Word 文書にフォント強調マークを設定する方法について詳しく説明します。特定のテキストに独自のマークで下線を引く場合でも、特定の単語を目立たせる場合でも、このガイドが役立ちます。さあ、シートベルトを締めて始めましょう!
 
 ## 前提条件
-始める前に、次のものが揃っていることを確認してください。
-- C#プログラミング言語の実用的な知識
-- プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
 
-## ステップ1: ドキュメントディレクトリを定義する
-まず、Word文書の場所にディレクトリパスを設定します。`"YOUR DOCUMENT DIRECTORY"`コード内に適切なパスを追加します。
+細かい詳細に入る前に、次の前提条件が満たされていることを確認してください。
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words for .NET ライブラリ: Aspose.Words for .NET ライブラリがインストールされていることを確認してください。次の場所からダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio などの実用的な開発環境。
+- .NET Framework: .NET Framework がインストールされていることを確認します。
 
-## ステップ2: ドキュメントを作成してカスタマイズする
-インスタンスを作成する`Document`クラスと関連する`DocumentBuilder`ドキュメントコンテンツを構築します。`Font.EmphasisMark`フォントの強調スタイルを設定するプロパティ`EmphasisMark.UnderSolidCircle` 次に、`Write`そして`Writeln`の`DocumentBuilder`指定されたフォント強調でテキストを追加します。
+## 名前空間のインポート
+
+Aspose.Words for .NET を使用するには、必要な名前空間をインポートする必要があります。コード ファイルの先頭に以下を追加します。
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## ステップ3: ドキュメントを保存する
-ドキュメントを保存するには、`Save`方法の`Document`適切なパスとファイル名を使用します。
+それでは、プロセスを簡単なステップに分解してみましょう。各ステップに注意深く従って、Word 文書にフォント強調マークを設定してください。
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## ステップ 1: Document と DocumentBuilder を初期化する
 
-### Aspose.Words for .NET を使用してフォント強調マークを設定するサンプル ソース コード 
+まず最初に、新しいドキュメントと DocumentBuilder を初期化する必要があります。DocumentBuilder クラスは、ドキュメントにテキストやその他の要素を挿入するためのメソッドを提供します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+//新しいドキュメントを初期化する
 Document document = new Document();
+
+//ドキュメントでDocumentBuilderを初期化する
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## ステップ2: フォント強調マークを設定する
+
+DocumentBuilder の準備ができたら、フォント強調マークを設定できます。この例では、「UnderSolidCircle」強調マークを使用します。
+
+```csharp
+//フォント強調マークを設定する
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+//強調マーク付きのテキストを書く
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## ステップ3: 書式をクリアして通常のテキストを追加する
+
+強調マークを設定した後、強調なしの通常のテキストを追加したい場合があります。そのためには、書式設定をクリアする必要があります。
+
+```csharp
+//フォントの書式をクリアする
 builder.Font.ClearFormatting();
+
+//通常のテキストを書く
 builder.Write("Simple text");
+```
+
+## ステップ4: ドキュメントを保存する
+
+必要なテキストと書式をすべて追加したら、最後の手順はドキュメントを保存することです。ドキュメントを保存するパスとファイル名を指定します。
+
+```csharp
+//文書を保存する
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のフォント強調スタイルを設定する方法を学習しました。さまざまな強調スタイルを試し、この機能を使用して文書内の単語やフレーズを強調表示します。
 
-### よくある質問
+これで完了です。Aspose.Words for .NET を使用して Word 文書にフォント強調マークを設定するのは、とても簡単です。数行のコードだけで、テキストを目立たせ、文書にプロフェッショナルな雰囲気を加えることができます。ニーズに合わせて、さまざまな強調マークやスタイルを試してみてください。
 
-#### Q: Aspose.Words を使用して Word 文書内の特定のフォントにアクセント記号を追加するにはどうすればよいですか?
+## よくある質問
 
-A: Aspose.Words を使用して Word 文書内の特定のフォントにアクセント記号を追加するには、API を使用して目的のフォントに移動し、適切なアクセント記号を適用します。これにより、選択したフォントのテキストにアクセント記号が追加されます。
+### フォント強調マークとは何ですか?
 
-#### Q: Aspose.Words を使用して Word 文書内のアクセント記号のスタイルを変更することは可能ですか?
+フォント強調マークは、テキストを目立たせるためにテキストに追加される特別な記号です。ドット、円、その他の装飾マークが含まれます。
 
-A: はい、Aspose.Words を使用すると、Word 文書内のアクセント記号のスタイルを変更できます。API を使用すると、色、サイズ、線種などのスタイル プロパティを調整して、アクセント記号の外観をカスタマイズできます。
+### Aspose.Words for .NET で他の強調記号を使用できますか?
 
-#### Q: Aspose.Words を使用して Word 文書からすべてのアクセント記号を削除するにはどうすればよいですか?
+はい、Aspose.Words for .NETはさまざまな強調マークをサポートしています。[ドキュメント](https://reference.aspose.com/words/net/).
 
-A: Aspose.Words を使用して Word 文書からすべてのアクセント記号を削除するには、API を使用して文書を参照し、既存のアクセント記号を検出し、適切な方法で削除します。これにより、文書からすべての強調記号が削除されます。
+### Aspose.Words for .NET は無料で使用できますか?
 
-#### Q: Word 文書内のテキストの特定の部分にアクセント記号を追加できますか?
+ Aspose.Words for .NETの全機能を使用するにはライセンスが必要です。無料トライアルをご利用いただけます。[ここ](https://releases.aspose.com/)またはライセンスを購入する[ここ](https://purchase.aspose.com/buy).
 
-A: はい、Aspose.Words を使用して Word 文書内のテキストの特定の部分にアクセント記号を追加できます。API を使用して必要なテキスト範囲を選択し、そのテキスト部分に適切な強調記号を追加できます。
+### Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
 
-#### Q: アクセント記号はニーズに合わせてカスタマイズできますか?
+ Asposeコミュニティとサポートチームからのサポートを受けるには、次のサイトにアクセスしてください。[サポートフォーラム](https://forum.aspose.com/c/words/8).
 
-A: はい、Aspose.Words を使用してアクセント記号をニーズに合わせてカスタマイズできます。アクセント記号の色、サイズ、線種などのスタイル プロパティを、書式設定の設定に合わせて調整できます。
+### Aspose.Words for .NET を他の .NET フレームワークと一緒に使用できますか?
+
+はい、Aspose.Words for .NET は、.NET Core や .NET 5/6 を含むさまざまな .NET フレームワークと互換性があります。

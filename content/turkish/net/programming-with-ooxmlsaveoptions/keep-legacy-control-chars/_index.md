@@ -9,7 +9,7 @@ url: /tr/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 ## giriiş
 
-Hiç Word belgelerinizdeki o garip, görünmez kontrol karakterleri karşısında şaşırdınız mı? Biçimlendirmeyi ve işlevselliği bozabilecek küçük, gizli gremlinler gibidirler. Neyse ki Aspose.Words for .NET, belgeleri kaydederken bu eski kontrol karakterlerini olduğu gibi tutmak için kullanışlı bir özellik sunuyor. Bu eğitimde, Aspose.Words for .NET kullanarak bu kontrol karakterlerinin nasıl yönetileceğini derinlemesine inceleyeceğiz. Bunu adım adım anlatacağız ve yol boyunca her ayrıntıyı kavramanızı sağlayacağız. başlamaya hazır mısın? Hadi dalalım!
+Hiç Word belgelerinizdeki o garip, görünmez kontrol karakterleri karşısında şaşırdınız mı? Biçimlendirmeyi ve işlevselliği bozabilecek küçük, gizli gremlinler gibidirler. Neyse ki Aspose.Words for .NET, belgeleri kaydederken bu eski kontrol karakterlerini olduğu gibi tutmak için kullanışlı bir özellik sunuyor. Bu eğitimde, Aspose.Words for .NET kullanarak bu kontrol karakterlerinin nasıl yönetileceğini derinlemesine inceleyeceğiz. Bunu adım adım anlatacağız ve yol boyunca her ayrıntıyı kavramanızı sağlayacağız. Başlamaya hazır mısınız? Hadi dalalım!
 
 ## Önkoşullar
 
@@ -77,7 +77,7 @@ Son olarak, belgeyi yapılandırılmış kaydetme seçenekleriyle kaydedin.
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'te Word belgeleriyle çalışırken eski kontrol karakterlerinizin korunduğundan emin olabilirsiniz. Bu özellik, özellikle kontrol karakterlerinin çok önemli bir rol oynadığı karmaşık belgelerle uğraşırken cankurtaran olabilir. 
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'te Word belgeleriyle çalışırken eski kontrol karakterlerinizin korunduğundan emin olabilirsiniz. Bu özellik, özellikle kontrol karakterlerinin çok önemli bir rol oynadığı karmaşık belgelerle uğraşırken cankurtaran olabilir. 
 
 ## SSS'ler
 

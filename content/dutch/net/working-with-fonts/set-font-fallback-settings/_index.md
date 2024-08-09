@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Invoering
 
 Wanneer u werkt met documenten die diverse tekstelementen bevatten, zoals verschillende talen of speciale tekens, is het van cruciaal belang ervoor te zorgen dat deze elementen correct worden weergegeven. Aspose.Words voor .NET biedt een krachtige functie genaamd Font Fallback Settings, die helpt bij het definiëren van regels voor het vervangen van lettertypen wanneer het originele lettertype bepaalde tekens niet ondersteunt. In deze handleiding onderzoeken we in een stapsgewijze zelfstudie hoe u Font Fallback-instellingen kunt instellen met Aspose.Words voor .NET.
 
@@ -15,7 +16,7 @@ Wanneer u werkt met documenten die diverse tekstelementen bevatten, zoals versch
 Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
 - Basiskennis van C#: Bekendheid met de programmeertaal C# en het .NET-framework.
--  Aspose.Words voor .NET: downloaden en installeren vanaf de[download link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET: downloaden en installeren vanaf de[downloadlink](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Een opstelling zoals Visual Studio om uw code te schrijven en uit te voeren.
 -  Voorbeelddocument: zorg dat u een voorbeelddocument hebt (bijv.`Rendering.docx`) klaar om te testen.
 - XML voor lettertype-fallback-regels: bereid een XML-bestand voor waarin de fallback-regels voor lettertypen worden gedefinieerd.
@@ -58,13 +59,13 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Stap 4: Pas lettertype-instellingen toe op het document
 
- Wijs de geconfigureerde toe`FontSettings` naar het document. Dit zorgt ervoor dat de fallback-regels voor lettertypen worden toegepast bij het renderen van het document.
+ Wijs de geconfigureerde toe`FontSettings`naar het document. Dit zorgt ervoor dat de fallback-regels voor lettertypen worden toegepast bij het renderen van het document.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het document op. De fallback-instellingen voor het lettertype worden tijdens de opslagbewerking gebruikt om een juiste lettertypevervanging te garanderen.
 

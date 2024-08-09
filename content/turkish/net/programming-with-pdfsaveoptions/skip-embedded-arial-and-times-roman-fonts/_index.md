@@ -9,7 +9,7 @@ url: /tr/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman
 ---
 ## giriiş
 
-Hiç kendinizi PDF dosya boyutunun çok büyük olduğu bir durumda buldunuz mu? Bu, tatile hazırlanırken valizinizin dikiş yerlerinden patladığını fark etmek gibidir. Biraz kilo vermen gerektiğini biliyorsun ama neyden vazgeçiyorsun? PDF dosyalarıyla, özellikle de Word belgelerinden dönüştürülenlerle çalışırken, gömülü yazı tipleri dosya boyutunuzu şişirebilir. Neyse ki Aspose.Words for .NET, PDF'lerinizi sade ve anlamlı tutmak için şık bir çözüm sunuyor. Bu eğitimde, gömülü Arial ve Times Roman yazı tiplerini atlayarak PDF boyutunuzu nasıl optimize edebileceğinizi ele alacağız. Başlayalım!
+Hiç kendinizi PDF dosya boyutunun çok büyük olduğu bir durumda buldunuz mu? Bu, tatile hazırlanırken valizinizin dikiş yerlerinden patladığını fark etmek gibidir. Biraz kilo vermen gerektiğini biliyorsun ama neyden vazgeçiyorsun? PDF dosyalarıyla, özellikle de Word belgelerinden dönüştürülenlerle çalışırken, gömülü yazı tipleri dosya boyutunuzu şişirebilir. Neyse ki Aspose.Words for .NET, PDF'lerinizi sade ve anlamlı tutmak için şık bir çözüm sunuyor. Bu eğitimde, gömülü Arial ve Times Roman yazı tiplerini atlayarak PDF boyutunuzu nasıl optimize edebileceğinizi ele alacağız. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -57,7 +57,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Adım 4: Belgeyi PDF olarak kaydedin
 
-Son olarak, belirtilen kaydetme seçenekleriyle belgeyi PDF olarak kaydedin. Sihir yapılan yer burasıdır.
+Son olarak, belirtilen kaydetme seçenekleriyle belgeyi PDF olarak kaydedin. Sihrin gerçekleştiği yer burasıdır.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
@@ -67,7 +67,7 @@ Bu komut, belgenizi belirtilen dizine "OptimizedPDF.pdf" adlı bir PDF olarak ka
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak Arial ve Times Roman yazı tiplerini ekleme işlemini atlayarak PDF dosya boyutunuzu nasıl optimize edeceğinizi öğrendiniz. Bu basit ayar, dosya boyutlarınızı önemli ölçüde azaltarak paylaşmalarını ve saklamalarını kolaylaştırabilir. Bu, PDF'leriniz için spor salonuna gitmek, tüm temel özellikleri korurken gereksiz ağırlıklardan kurtulmak gibidir.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak Arial ve Times Roman yazı tiplerini ekleme işlemini atlayarak PDF dosya boyutunuzu nasıl optimize edeceğinizi öğrendiniz. Bu basit ayar, dosya boyutlarınızı önemli ölçüde azaltarak paylaşmalarını ve saklamalarını kolaylaştırabilir. Bu, PDF'leriniz için spor salonuna gitmek, tüm temel özellikleri korurken gereksiz ağırlıklardan kurtulmak gibidir.
 
 ## SSS'ler
 

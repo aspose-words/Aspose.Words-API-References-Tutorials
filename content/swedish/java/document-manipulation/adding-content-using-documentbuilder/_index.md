@@ -10,7 +10,7 @@ url: /sv/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## Introduktion till att lägga till innehåll med DocumentBuilder i Aspose.Words för Java
 
-I den här steg-för-steg-guiden kommer vi att utforska hur man använder Aspose.Words för Javas DocumentBuilder för att lägga till olika typer av innehåll i ett Word-dokument. Vi täcker infogning av text, tabeller, horisontella regler, formulärfält, HTML, hyperlänkar, innehållsförteckning, infogade och flytande bilder, stycken och mer. Låt oss börja!
+I den här steg-för-steg-guiden kommer vi att utforska hur man använder Aspose.Words för Javas DocumentBuilder för att lägga till olika typer av innehåll i ett Word-dokument. Vi täcker infogning av text, tabeller, horisontella regler, formulärfält, HTML, hyperlänkar, innehållsförteckning, infogade och flytande bilder, stycken och mer. Låt oss komma igång!
 
 ## Förutsättningar
 

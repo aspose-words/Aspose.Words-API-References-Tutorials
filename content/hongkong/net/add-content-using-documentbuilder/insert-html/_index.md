@@ -82,7 +82,7 @@ builder.InsertHtml(
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-現在你就擁有了！您剛剛使用 Aspose.Words for .NET 將 HTML 插入到 Word 文件中。舉手擊掌！
+現在你就得到它了！您剛剛使用 Aspose.Words for .NET 將 HTML 插入到 Word 文件中。高五！
 
 ## 結論
 

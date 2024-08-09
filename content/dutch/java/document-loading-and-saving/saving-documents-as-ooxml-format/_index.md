@@ -37,7 +37,7 @@ doc.save("EncryptedDoc.docx", saveOptions);
 
 ## OOXML-compliance instellen
 
-U kunt het OOXML-nalevingsniveau opgeven wanneer u het document opslaat. U kunt dit bijvoorbeeld instellen op ISO 29500:2008 (Strikt). Hier is hoe:
+U kunt het OOXML-nalevingsniveau opgeven wanneer u het document opslaat. U kunt dit bijvoorbeeld instellen op ISO 29500:2008 (Strikt). Hier ziet u hoe:
 
 ```java
 import com.aspose.words.Document;
@@ -61,7 +61,7 @@ doc.save("ComplianceDoc.docx", saveOptions);
 
 ## Laatste opgeslagen tijd-eigenschap bijwerken
 
-U kunt ervoor kiezen om de eigenschap "Laatst opgeslagen tijd" van het document bij te werken wanneer u het opslaat. Hier is hoe:
+U kunt ervoor kiezen om de eigenschap "Laatst opgeslagen tijd" van het document bij te werken wanneer u het opslaat. Hier ziet u hoe:
 
 ```java
 import com.aspose.words.Document;
@@ -80,7 +80,7 @@ doc.save("UpdatedLastSavedTime.docx", saveOptions);
 
 ## Legacy-controlekarakters behouden
 
-Als uw document oudere stuurtekens bevat, kunt u ervoor kiezen deze tijdens het opslaan te behouden. Hier is hoe:
+Als uw document oudere stuurtekens bevat, kunt u ervoor kiezen deze tijdens het opslaan te behouden. Hier ziet u hoe:
 
 ```java
 import com.aspose.words.Document;
@@ -100,7 +100,7 @@ doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 
 ## Compressieniveau instellen
 
-U kunt het compressieniveau aanpassen wanneer u het document opslaat. U kunt dit bijvoorbeeld instellen op SUPER_FAST voor minimale compressie. Hier is hoe:
+U kunt het compressieniveau aanpassen wanneer u het document opslaat. U kunt dit bijvoorbeeld instellen op SUPER_FAST voor minimale compressie. Hier ziet u hoe:
 
 ```java
 import com.aspose.words.Document;
@@ -176,4 +176,4 @@ Om de wachtwoordbeveiliging van een met een wachtwoord beveiligd document te ver
 
 ### Wat is het standaardcompressieniveau bij het opslaan van een document in OOXML-indeling?
 
- Het standaardcompressieniveau bij het opslaan van een document in OOXML-indeling met Aspose.Words voor Java is`NORMAL` . U kunt het compressieniveau wijzigen in`SUPER_FAST` of`MAXIMUM` zoals nodig.
+ Het standaardcompressieniveau bij het opslaan van een document in OOXML-indeling met Aspose.Words voor Java is`NORMAL` . U kunt het compressieniveau wijzigen in`SUPER_FAST` of`MAXIMUM` indien nodig.

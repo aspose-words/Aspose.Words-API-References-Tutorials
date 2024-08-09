@@ -2,106 +2,91 @@
 title: 글꼴 서식
 linktitle: 글꼴 서식
 second_title: Aspose.Words 문서 처리 API
-description: 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서의 글꼴 형식을 지정하는 방법을 알아봅니다.
+description: 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 형식을 지정하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-fonts/font-formatting/
 ---
+## 소개
 
-이 튜토리얼에서는 .NET용 Aspose.Words 라이브러리를 사용하여 Word 문서에서 글꼴 서식을 지정하는 방법을 안내합니다. 글꼴 서식을 사용하면 크기, 굵게, 색상, 글꼴, 밑줄 등을 포함한 텍스트 모양을 사용자 정의할 수 있습니다. .NET 프로젝트에서 코드를 이해하고 구현하는 데 도움이 되도록 단계별로 안내해 드리겠습니다.
+Word 문서에서 글꼴 형식을 지정하면 콘텐츠가 인식되는 방식이 크게 달라질 수 있습니다. 요점을 강조하거나, 텍스트를 더 읽기 쉽게 만들거나, 단순히 스타일 가이드와 일치시키려는 경우 글꼴 서식이 중요합니다. 이 튜토리얼에서는 Word 문서를 쉽게 처리할 수 있게 해주는 강력한 라이브러리인 Aspose.Words for .NET을 사용하여 글꼴 형식을 지정하는 방법에 대해 알아봅니다.
 
 ## 전제 조건
-시작하기 전에 다음 항목이 있는지 확인하세요.
-- C# 프로그래밍 언어에 대한 실무 지식
-- 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리
 
-## 1단계: 문서 디렉터리 정의
- 먼저, Word 문서 위치에 대한 디렉터리 경로를 설정해야 합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 코드에서 적절한 경로를 사용하세요.
+시작하기 전에 다음 사항이 있는지 확인하세요.
 
-```csharp
-// 문서 디렉토리 경로
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+1.  .NET 라이브러리용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio 또는 기타 C# IDE.
+3. C#의 기본 지식: C# 프로그래밍의 기본 사항을 이해하면 예제를 따라가는 데 도움이 됩니다.
 
-## 2단계: 새 문서 및 문서 생성기 만들기
- 다음으로, 인스턴스를 생성하여 새 문서를 생성하겠습니다.`Document` 클래스와 문서 작성기를 인스턴스화하여`DocumentBuilder` 수업.
+## 네임스페이스 가져오기
+
+먼저 프로젝트에서 필요한 네임스페이스를 가져왔는지 확인하세요.
 
 ```csharp
-// 새 문서 만들기
-Document doc = new Document();
-
-//문서 생성기 만들기
-DocumentBuilder builder = new DocumentBuilder(doc);
+using System;
+using System.Drawing;
+using Aspose.Words;
 ```
 
-## 3단계: 글꼴 형식 구성
- 이제 우리는`Font` 문서 생성기의 개체를 선택하고 크기, 굵게, 색상, 글꼴, 밑줄 등과 같은 글꼴 서식 속성을 구성합니다.
+## 1단계: 문서 설정
 
-```csharp
-// 글꼴에 액세스
-Font font = builder.Font;
+ 시작하려면 새 문서를 만들고`DocumentBuilder`:
 
-// 글꼴 서식 구성
-font.Size = 16;
-font. Bold = true;
-font.Color = Color.Blue;
-font.Name = "Arial";
-font.Underline = Underline.Dash;
-```
-
-## 4단계: 문서에 텍스트 추가
-다음으로 문서 작성기를 사용하여 서식이 지정된 일부 텍스트를 문서에 추가하겠습니다.
-
-```csharp
-// 문서에 텍스트 추가
-builder.Write("Example text.");
-```
-
-## 5단계: 문서 저장
-마지막으로 글꼴 서식이 포함된 문서를 저장하겠습니다.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
-```
-
-### .NET용 Aspose.Words를 사용한 글꼴 서식 지정을 위한 샘플 소스 코드 
 ```csharp
 // 문서 디렉터리 경로
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## 2단계: 글꼴 구성
+
+다음으로 글꼴 속성을 구성하겠습니다. 여기에는 크기 설정, 텍스트를 굵게 만들기, 색상 변경, 글꼴 이름 지정 및 밑줄 스타일 추가가 포함됩니다.
+
+```csharp
 Font font = builder.Font;
 font.Size = 16;
 font.Bold = true;
 font.Color = Color.Blue;
 font.Name = "Arial";
 font.Underline = Underline.Dash;
+```
+
+## 3단계: 텍스트 작성
+
+글꼴이 구성되었으므로 이제 문서에 텍스트를 쓸 수 있습니다.
+
+```csharp
 builder.Write("Sample text.");
+```
+
+## 4단계: 문서 저장
+
+마지막으로 문서를 지정된 디렉터리에 저장합니다.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.FontFormatting.docx");
 ```
 
 ## 결론
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 서식을 지정하는 방법을 살펴보았습니다. 글꼴 서식을 사용하면 문서의 텍스트 모양을 맞춤설정할 수 있습니다. 매력적이고 전문적인 문서를 만들려면 이 기능을 자유롭게 사용해 보세요.
 
-### FAQ
+그리고 거기에 있습니다! 다음의 간단한 단계를 따르면 Aspose.Words for .NET을 사용하여 Word 문서의 글꼴 서식을 지정할 수 있습니다. 이 강력한 라이브러리를 사용하면 문서 형식을 세밀하게 제어할 수 있으므로 전문적이고 세련된 문서를 쉽게 만들 수 있습니다.
 
-#### Q: Word 문서에서 특정 텍스트의 글꼴 크기를 변경할 수 있습니까?
+## FAQ
 
-A: 예, Aspose.Words를 사용하면 Word 문서에서 특정 텍스트의 글꼴 크기를 쉽게 변경할 수 있습니다. API를 사용하여 원하는 텍스트를 선택하고 적절한 글꼴 크기를 적용할 수 있습니다.
+### .NET용 Aspose.Words를 사용하여 설정할 수 있는 다른 글꼴 속성은 무엇입니까?
+ 기울임꼴, 취소선, 아래 첨자, 위 첨자 등과 같은 속성을 설정할 수 있습니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 전체 목록을 보려면.
 
-#### 질문: Word 문서의 여러 단락에 서로 다른 글꼴 스타일을 적용할 수 있나요?
+### 문서에 있는 기존 텍스트의 글꼴을 변경할 수 있나요?
+예, 문서 전체를 탐색하고 기존 텍스트에 글꼴 변경 사항을 적용할 수 있습니다. 
 
-답: 물론이죠! Aspose.Words를 사용하면 Word 문서의 다양한 단락에 다양한 글꼴 스타일을 적용할 수 있습니다. API에서 제공하는 메서드를 사용하여 필요에 따라 각 단락의 서식을 개별적으로 지정할 수 있습니다.
+### .NET용 Aspose.Words에서 사용자 정의 글꼴을 사용할 수 있습니까?
+전적으로! 시스템에 설치된 글꼴을 사용하거나 사용자 정의 글꼴을 문서에 직접 포함할 수 있습니다.
 
-#### Q: Word 문서에서 굵은 텍스트를 강조하려면 어떻게 해야 합니까?
+### 텍스트의 다양한 부분에 다양한 글꼴 스타일을 적용하려면 어떻게 해야 합니까?
+ 여러 개 사용`DocumentBuilder` 인스턴스 또는 글꼴 설정 전환`Write` 다양한 텍스트 세그먼트에 다양한 스타일을 적용하기 위한 호출입니다.
 
-A: Aspose.Words를 사용하면 Word 문서에서 굵은 텍스트를 쉽게 강조 표시할 수 있습니다. API를 사용하여 특정 텍스트에 굵은 글꼴 스타일을 적용하면 됩니다.
-
-#### Q: Aspose.Words는 사용자 정의 글꼴을 지원합니까?
-
-A: 예, Aspose.Words는 Word 문서에서 사용자 정의 글꼴을 지원합니다. 문서에서 사용자 정의 글꼴을 사용하고 원하는 대로 형식을 지정할 수 있습니다.
-
-#### Q: Word 문서의 텍스트에 특정 글꼴 색상을 적용하려면 어떻게 해야 합니까?
-
-A: Aspose.Words를 사용하면 Word 문서의 텍스트에 특정 글꼴 색상을 쉽게 적용할 수 있습니다. API를 사용하여 텍스트를 선택하고 적절한 색상 코드를 지정하여 원하는 글꼴 색상을 적용합니다.
+### .NET용 Aspose.Words는 DOCX 외에 다른 문서 형식을 지원합니까?
+예, PDF, HTML, EPUB 등을 포함한 다양한 형식을 지원합니다. 

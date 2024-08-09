@@ -15,7 +15,7 @@ Naviguer dans un document Word par programmation peut être un peu comme se fray
 
 Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words for .NET : vous aurez besoin de la bibliothèque Aspose.Words for .NET. Si vous ne l'avez pas, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET : vous aurez besoin de la bibliothèque Aspose.Words for .NET. Si vous ne l'avez pas, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un environnement de développement .NET tel que Visual Studio.
 3. Connaissance de base de C# : Comprendre les bases de C# vous aidera à suivre les extraits de code et les explications.
 
@@ -111,7 +111,7 @@ Ce didacticiel traite des signets répartis sur deux lignes adjacentes. Pour les
 
 ### Existe-t-il une version d’essai d’Aspose.Words pour .NET disponible ?
 
- Oui, vous pouvez[téléchargez un essai gratuit](https://releases.aspose.com/) depuis le site Web Aspose pour explorer les fonctionnalités de la bibliothèque.
+ Oui, tu peux[téléchargez un essai gratuit](https://releases.aspose.com/) depuis le site Web Aspose pour explorer les fonctionnalités de la bibliothèque.
 
 ### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?
 

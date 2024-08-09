@@ -56,7 +56,7 @@ Naučte se používat seznamy v Aspose.Words pro Java pomocí tohoto podrobného
 ### [Použití Markdown v Aspose.Words pro Java](./using-markdown/)
 Naučte se používat Markdown v Aspose.Words pro Java pomocí tohoto podrobného návodu. Vytvářejte, upravujte a ukládejte dokumenty Markdown bez námahy.
 ### [Použití uzlů v Aspose.Words pro Javu](./using-nodes/)
-Naučte se manipulovat s uzly v Aspose.Words pro Java pomocí tohoto podrobného návodu. Odemkněte výkon zpracování dokumentů.
+Naučte se manipulovat s uzly v Aspose.Words pro Java pomocí tohoto podrobného tutoriálu. Odemkněte výkon zpracování dokumentů.
 ### [Použití objektů OLE a ovládacích prvků ActiveX v Aspose.Words for Java](./using-ole-objects-and-activex/)
 Naučte se používat OLE objekty a ovládací prvky ActiveX v Aspose.Words for Java. Vytvářejte snadno interaktivní dokumenty. Začněte hned!
 ### [Použití revizí v Aspose.Words pro Javu](./using-revisions/)

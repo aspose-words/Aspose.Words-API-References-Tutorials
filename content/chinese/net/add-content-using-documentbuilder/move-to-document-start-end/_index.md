@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-在这里，我们创建一个实例`Document`和`DocumentBuilder`。 考虑到`Document`作为空白 Word 文档，`DocumentBuilder`作为你的笔。
+在这里，我们创建一个实例`Document`和`DocumentBuilder` 想想`Document`作为空白 Word 文档，`DocumentBuilder`作为你的笔。
 
 ## 第 2 步：移至文档开始处
 

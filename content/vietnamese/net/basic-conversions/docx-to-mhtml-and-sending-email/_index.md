@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Bước 4: Gửi Email
 
- Cuối cùng, gửi email bằng ứng dụng khách SMTP. Định cấu hình máy khách SMTP với chi tiết máy chủ SMTP của bạn và sử dụng`Send` phương thức gửi tin nhắn.
+ Cuối cùng, gửi email bằng ứng dụng khách SMTP. Định cấu hình máy khách SMTP với chi tiết máy chủ SMTP của bạn và sử dụng`Send` phương pháp gửi tin nhắn.
 
 ```csharp
 // Gửi tin nhắn bằng Aspose.Email.
@@ -89,7 +89,7 @@ Chúc mừng! Bạn đã chuyển đổi thành công tài liệu DOCX sang MHTM
 Có, Aspose.Words hỗ trợ nhiều định dạng khác nhau và bạn có thể chuyển đổi các tài liệu như DOC, DOCX, RTF, v.v. sang MHTML.
 
 ### Làm cách nào để thêm tệp đính kèm vào email?
- Bạn có thể dùng`Attachments` tài sản của`MailMessage`class để thêm tệp đính kèm vào email của bạn.
+ Bạn có thể sử dụng`Attachments` tài sản của`MailMessage`class để thêm tệp đính kèm vào email của bạn.
 
 ### Aspose.Words có tương thích với .NET Core không?
 Có, Aspose.Words tương thích với .NET Core. Bạn cũng có thể sử dụng nó trong các ứng dụng .NET Core.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-## Úvod
+## Zavedení
 
 ponoříme se do vzrušujícího návodu, jak pracovat s možnostmi načítání HTML v Aspose.Words pro .NET, konkrétně se zaměřujeme na nastavení preferovaného typu ovládacího prvku při vkládání pole formuláře se seznamem do dokumentu aplikace Word. Tento podrobný průvodce vám pomůže pochopit, jak efektivně manipulovat a vykreslovat obsah HTML v dokumentech aplikace Word pomocí Aspose.Words for .NET.
 
@@ -15,7 +15,7 @@ ponoříme se do vzrušujícího návodu, jak pracovat s možnostmi načítání
 
 Než se pustíme do kódu, je třeba mít připraveno několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[webové stránky](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Měli byste mít nastavené vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Spolu s výukovým programem je nutné dodržet základní znalost programování v C#.
 4. Obsah HTML: Základní znalost HTML je užitečná, protože v tomto příkladu budeme pracovat s obsahem HTML.

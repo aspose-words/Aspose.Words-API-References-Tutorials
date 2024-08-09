@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-node/enumerate-child-nodes/
 ---
+## Introduktion
 
 Att arbeta med dokument programmatiskt kan vara enkelt med rätt verktyg. Aspose.Words för .NET är ett sådant kraftfullt bibliotek som gör det möjligt för utvecklare att manipulera Word-dokument med lätthet. Idag går vi igenom processen att räkna upp underordnade noder i ett Word-dokument med Aspose.Words för .NET. Denna steg-för-steg-guide kommer att täcka allt från förutsättningar till praktiska exempel, vilket säkerställer att du har en gedigen förståelse för processen.
 
@@ -86,19 +87,19 @@ Att räkna upp underordnade noder i ett Word-dokument med Aspose.Words för .NET
 
  För mer detaljerad dokumentation och avancerad användning, besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/) . Om du behöver ytterligare support, kolla in[supportforum](https://forum.aspose.com/c/words/8).
 
-## Vanliga frågor
+## FAQ's
 
-### 1. Vilka typer av noder kan ett stycke innehålla?
+### Vilka typer av noder kan ett stycke innehålla?
 Ett stycke kan innehålla noder som körningar, former, kommentarer och andra inline-element.
 
-### 2. Hur kan jag ladda ett befintligt Word-dokument?
+### Hur kan jag ladda ett befintligt Word-dokument?
  Du kan ladda ett befintligt dokument med`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Kan jag manipulera andra nodtyper förutom Run?
+### Kan jag manipulera andra nodtyper förutom Run?
  Ja, du kan manipulera olika nodtyper som former, kommentarer och mer genom att kontrollera deras`NodeType`.
 
-### 4. Behöver jag en licens för att använda Aspose.Words för .NET?
-Du kan börja med en gratis provperiod eller skaffa en tillfällig licens från[här](https://purchase.aspose.com/temporary-license/).
+### Behöver jag en licens för att använda Aspose.Words för .NET?
+ Du kan börja med en gratis provperiod eller skaffa en tillfällig licens från[här](https://purchase.aspose.com/temporary-license/).
 
-### 5. Var kan jag hitta fler exempel och dokumentation?
- Besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/) för fler exempel och detaljerad dokumentation.
+### Var kan jag hitta fler exempel och dokumentation?
+ Besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/)för fler exempel och detaljerad dokumentation.

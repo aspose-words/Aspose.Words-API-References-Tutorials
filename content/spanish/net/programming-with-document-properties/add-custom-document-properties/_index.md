@@ -9,7 +9,7 @@ url: /es/net/programming-with-document-properties/add-custom-document-properties
 ---
 ## Introducción
 
-¡Hola! ¿Se está sumergiendo en el mundo de Aspose.Words para .NET y se pregunta cómo agregar propiedades de documentos personalizadas a sus archivos de Word? Bueno, ¡has venido al lugar correcto! Las propiedades personalizadas pueden resultar increíblemente útiles para almacenar metadatos adicionales que no están cubiertos por las propiedades integradas. Ya sea autorizando un documento, agregando un número de revisión o incluso insertando fechas específicas, las propiedades personalizadas lo tienen cubierto. En este tutorial, lo guiaremos a través de los pasos para agregar sin problemas estas propiedades usando Aspose.Words para .NET. ¿Listo para comenzar? ¡Vamos a sumergirnos!
+¡Hola! ¿Se está sumergiendo en el mundo de Aspose.Words para .NET y se pregunta cómo agregar propiedades de documentos personalizadas a sus archivos de Word? Bueno, ¡has venido al lugar correcto! Las propiedades personalizadas pueden resultar increíblemente útiles para almacenar metadatos adicionales que no están cubiertos por las propiedades integradas. Ya sea autorizando un documento, agregando un número de revisión o incluso insertando fechas específicas, las propiedades personalizadas lo tienen cubierto. En este tutorial, lo guiaremos a través de los pasos para agregar sin problemas estas propiedades usando Aspose.Words para .NET. ¿Listo para empezar? ¡Vamos a sumergirnos!
 
 ## Requisitos previos
 

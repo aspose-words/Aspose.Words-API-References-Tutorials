@@ -16,7 +16,7 @@ Cộng tác là một khía cạnh cơ bản của việc tạo tài liệu và 
 
 ## Thiết lập Aspose.Words cho Python
 
- Để bắt đầu, bạn cần cài đặt Aspose.Words cho Python. Bạn có thể tải xuống thư viện từ[Aspose.Words cho Python](https://releases.aspose.com/words/python/) Liên kết tải xuống. Sau khi tải xuống, bạn có thể cài đặt nó bằng pip:
+ Để bắt đầu, bạn cần cài đặt Aspose.Words cho Python. Bạn có thể tải xuống thư viện từ[Aspose.Words cho Python](https://releases.aspose.com/words/python/) liên kết tải về. Sau khi tải xuống, bạn có thể cài đặt nó bằng pip:
 
 ```python
 pip install aspose-words

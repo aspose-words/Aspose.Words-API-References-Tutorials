@@ -10,7 +10,7 @@ url: /hu/net/document-protection/remove-document-protection/
 
 ## Bevezetés
 
-Halihó! Előfordult már, hogy a védelmi beállítások miatt ki van zárva saját Word-dokumentumából? Mintha rossz kulccsal próbálnánk kinyitni az ajtót – frusztráló, igaz? De ne félj! Az Aspose.Words for .NET segítségével könnyedén eltávolíthatja Word-dokumentumai védelmét. Ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton, biztosítva, hogy pillanatok alatt visszanyerje az irányítást a dokumentumok felett. Merüljünk el!
+Szia! Előfordult már, hogy a védelmi beállítások miatt ki van zárva saját Word-dokumentumából? Mintha rossz kulccsal próbálnánk kinyitni az ajtót – frusztráló, igaz? De ne félj! Az Aspose.Words for .NET segítségével könnyedén eltávolíthatja Word-dokumentumai védelmét. Ez az oktatóanyag lépésről lépésre végigvezeti a folyamaton, biztosítva, hogy pillanatok alatt visszanyerje az irányítást a dokumentumok felett. Merüljünk el!
 
 ## Előfeltételek
 
@@ -53,7 +53,7 @@ Néha a dokumentumokat jelszó nélkül védik. Ilyenkor egyszerűen egyetlen k�
 doc.Unprotect();
 ```
 
-Ez az! A dokumentuma most védelem nélküli. De mi van, ha van jelszó?
+Ennyi! A dokumentuma most védelem nélküli. De mi van, ha van jelszó?
 
 ## 3. lépés: Távolítsa el a jelszavas védelmet
 

@@ -15,9 +15,9 @@ Pernahkah Anda bertanya-tanya bagaimana cara mempertahankan proporsi gambar dan 
 
 Sebelum kita mendalami kodenya, mari kita bahas apa yang Anda perlukan untuk memulai:
 
-- Aspose.Words untuk .NET Library: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+- Aspose.Words untuk .NET Library: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Pastikan Anda telah menyiapkan lingkungan pengembangan .NET. Visual Studio adalah pilihan yang populer.
-- Pengetahuan Dasar tentang C#: Keakraban dengan pemrograman C# akan sangat membantu.
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan sangat membantu.
 
 ## Impor Namespace
 

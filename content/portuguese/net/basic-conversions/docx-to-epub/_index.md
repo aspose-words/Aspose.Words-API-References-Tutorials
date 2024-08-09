@@ -59,7 +59,7 @@ Sim, você pode converter em lote arquivos DOCX para EPUB ou outros formatos usa
 Sim, Aspose.Words oferece suporte total a .NET Core e .NET Framework.
 
 ### Onde posso encontrar mais exemplos e documentação para Aspose.Words?
- Visite a[Documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/) para exemplos detalhados e referência de API.
+ Visite o[Documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/) para exemplos detalhados e referência de API.
 
 ### Como posso obter suporte para problemas relacionados ao Aspose.Words?
  Para suporte, visite o[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) onde você pode fazer perguntas e interagir com a comunidade.

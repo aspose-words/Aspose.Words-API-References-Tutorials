@@ -9,7 +9,7 @@ url: /sv/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 ## Introduktion
 
-Hej där, teknikentusiaster! Har du någonsin funnit dig själv insnärjd i nätet av att arbeta med krypterade PDF-filer? Om så är fallet, är du i för en njutning. Idag dyker vi in i världen av Aspose.Words för .NET, ett fantastiskt verktyg som gör det enkelt att hantera krypterade PDF-filer. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att leda dig genom varje steg i processen. Är du redo att låsa upp lite PDF-magi? Låt oss börja!
+Hej där, teknikentusiaster! Har du någonsin funnit dig själv insnärjd i nätet av att arbeta med krypterade PDF-filer? Om så är fallet, är du i för en njutning. Idag dyker vi in i världen av Aspose.Words för .NET, ett fantastiskt verktyg som gör det enkelt att hantera krypterade PDF-filer. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer den här guiden att leda dig genom varje steg i processen. Är du redo att låsa upp lite PDF-magi? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -41,7 +41,7 @@ Varje bra projekt börjar med en solid grund. Här ställer vi in sökvägen til
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till där dina PDF-filer lagras. Detta kommer att vara arbetsytan för dina PDF-filer.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till där dina PDF-filer lagras. Detta kommer att vara arbetsytan för dina PDF-filer.
 
 ## Steg 2: Ladda PDF-dokumentet
 

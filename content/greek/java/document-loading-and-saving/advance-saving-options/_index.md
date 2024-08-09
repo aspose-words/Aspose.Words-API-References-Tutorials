@@ -105,7 +105,7 @@ public void doNotSavePictureBullet() throws Exception {
 	doc.save("Your Directory Path" + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συγχαρητήρια! Έχετε μάθει πώς να χρησιμοποιείτε το Aspose.Words για Java για την εκτέλεση προηγμένων επιλογών αποθήκευσης. Είτε πρόκειται για κρυπτογράφηση εγγράφων, χειρισμό μετα-αρχείων ή διαχείριση κουκκίδων εικόνων, το Aspose.Words για Java σάς δίνει τη δυνατότητα να αναλάβετε τον έλεγχο των εγγράφων του Word.
 

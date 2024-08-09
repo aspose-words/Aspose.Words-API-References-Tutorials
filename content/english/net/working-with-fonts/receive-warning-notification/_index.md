@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /net/working-with-fonts/receive-warning-notification/
 ---
+## Introduction
 
 Are you tired of dealing with unexpected font issues in your documents? With Aspose.Words for .NET, you can get notified of any potential issues during document processing, making it easier to maintain document quality. This comprehensive guide will walk you through setting up warning notifications in Aspose.Words, ensuring that you never miss a crucial warning again.
 

@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
-## introduzione
+## Introduzione
 
-Ehi, ti sei mai chiesto come far risaltare i tuoi documenti Word con bordi e ombreggiature fantasiosi? Bene, sei nel posto giusto! Oggi ci immergiamo nel mondo di Aspose.Words per .NET per ravvivare i nostri paragrafi. Immagina che il tuo documento abbia l'aspetto elegante del lavoro di un designer professionista con solo poche righe di codice. Pronto per iniziare? Andiamo!
+Ehi, ti sei mai chiesto come far risaltare i tuoi documenti Word con bordi e ombreggiature fantasiosi? Bene, sei nel posto giusto! Oggi ci immergiamo nel mondo di Aspose.Words per .NET per ravvivare i nostri paragrafi. Immagina che il tuo documento abbia l'aspetto elegante del lavoro di un designer professionista con solo poche righe di codice. Pronti per iniziare? Andiamo!
 
 ## Prerequisiti
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## Conclusione
 
-E il gioco è fatto! Con solo poche righe di codice, abbiamo trasformato un semplice paragrafo in un contenuto visivamente accattivante. Aspose.Words per .NET rende incredibilmente facile aggiungere una formattazione dall'aspetto professionale ai tuoi documenti. Che tu stia preparando un rapporto, una lettera o qualsiasi documento, questi trucchi ti aiuteranno a fare un'ottima impressione. Quindi vai avanti, provalo e guarda i tuoi documenti prendere vita!
+Ed ecco qua! Con solo poche righe di codice, abbiamo trasformato un semplice paragrafo in un contenuto visivamente accattivante. Aspose.Words per .NET rende incredibilmente facile aggiungere una formattazione dall'aspetto professionale ai tuoi documenti. Che tu stia preparando un rapporto, una lettera o qualsiasi documento, questi trucchi ti aiuteranno a fare un'ottima impressione. Quindi vai avanti, provalo e guarda i tuoi documenti prendere vita!
 
 ## Domande frequenti
 

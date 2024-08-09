@@ -15,7 +15,7 @@ Hallo! Sind Sie bereit, in die Welt von Aspose.Words für .NET einzutauchen? Die
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Sie können[hier herunterladen](https://releases.aspose.com/words/net/) Wenn Sie neu bei Aspose sind, möchten Sie vielleicht mit einem[Kostenlose Testphase](https://releases.aspose.com/).
+1.  Aspose.Words für .NET-Bibliothek: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/) Wenn Sie neu bei Aspose sind, möchten Sie vielleicht mit einem[Kostenlose Testversion](https://releases.aspose.com/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
 3. .NET Framework: Stellen Sie sicher, dass Sie .NET Framework installiert haben.
 4. Grundkenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie mit der C#-Programmierung vertraut sind.
@@ -68,7 +68,7 @@ builder.Writeln("This is page 1.");
 
 ## Schritt 5: Einfügen eines Seitenumbruchs
 
- Jetzt kommt der lustige Teil. Wir müssen einen Seitenumbruch einfügen, um zur nächsten Seite zu gelangen. Das geht ganz einfach, indem wir`InsertBreak` Methode.
+ Jetzt kommt der lustige Teil. Wir müssen einen Seitenumbruch einfügen, um zur nächsten Seite zu gelangen. Das geht ganz einfach, indem wir`InsertBreak` Verfahren.
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -118,7 +118,7 @@ Hat das nicht Spaß gemacht? Mit Aspose.Words für .NET ist die Bearbeitung von 
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgesteuerte Arbeit mit Word-Dokumenten. Sie unterstützt eine breite Palette von Funktionen, vom Erstellen und Bearbeiten von Dokumenten bis zur Konvertierung zwischen verschiedenen Formaten.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Ja, Sie können beginnen mit einem[Kostenlose Testphase](https://releases.aspose.com/) um seine Funktionen zu erkunden. Für den Langzeitgebrauch können Sie[eine Lizenz erwerben](https://purchase.aspose.com/buy).
+ Ja, Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/) um seine Funktionen zu erkunden. Für den Langzeitgebrauch können Sie[eine Lizenz erwerben](https://purchase.aspose.com/buy).
 
 ### Wie erhalte ich Support für Aspose.Words?
  Unterstützung erhalten Sie vom[Aspose-Community-Forum](https://forum.aspose.com/c/words/8). Es ist ein großartiger Ort, um Fragen zu stellen und Ihre Erfahrungen auszutauschen.

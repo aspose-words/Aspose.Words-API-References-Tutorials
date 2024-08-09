@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/field-display-results/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste někdy pracovali s dokumenty Microsoft Word, víte, jak výkonná pole mohou být. Jsou jako malé dynamické zástupné symboly, které mohou zobrazovat věci jako data, vlastnosti dokumentu nebo dokonce výpočty. Co se ale stane, když potřebujete aktualizovat tato pole a zobrazit jejich výsledky programově? To je místo, kde přichází Aspose.Words pro .NET. Tato příručka vás provede procesem aktualizace a zobrazení výsledků polí v dokumentech aplikace Word pomocí Aspose.Words pro .NET. Nakonec budete vědět, jak tyto úkoly snadno automatizovat, ať už se zabýváte složitým dokumentem nebo jednoduchou sestavou.
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
- The`DisplayResult` majetek z`Field` class vrátí formátovanou hodnotu pole. The`foreach` smyčka prochází všechna pole v dokumentu a vytiskne jejich výsledky.
+ The`DisplayResult` vlastnictvím`Field` class vrátí formátovanou hodnotu pole. The`foreach` smyčka prochází všechna pole v dokumentu a vytiskne jejich výsledky.
 
 ## Závěr
 
@@ -88,7 +88,7 @@ Aktualizace a zobrazení výsledků polí v dokumentech aplikace Word pomocí As
 Můžete aktualizovat různé typy polí, včetně polí data, vlastností dokumentu a polí vzorců.
 
 ### Musím dokument po aktualizaci polí uložit?  
- Ne, volám`UpdateFields` neuloží dokument automaticky. Použijte`Save` způsob uložení změn.
+ Ne, volám`UpdateFields` neuloží dokument automaticky. Použijte`Save` způsob uložení jakýchkoli změn.
 
 ### Mohu aktualizovat pole v konkrétní části dokumentu?  
  Ano, můžete použít`Document.Sections` pro přístup ke konkrétním sekcím a aktualizaci polí v nich.

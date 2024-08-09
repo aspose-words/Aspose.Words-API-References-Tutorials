@@ -17,7 +17,7 @@ Antes de profundizar en el código, asegurémonos de que tiene todo lo que neces
 
 - Biblioteca Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Puedes descargarlo desde el[Página de lanzamientos de Aspose](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: debe tener configurado un entorno de desarrollo, como Visual Studio.
-- Conocimientos básicos de C#: este tutorial asume que tiene conocimientos básicos de programación en C#.
+- Conocimientos básicos de C#: este tutorial asume que tienes conocimientos básicos de programación en C#.
 - Documento de muestra: usaremos un documento de Word de muestra llamado "Tables.docx". Asegúrese de tener este documento en el directorio de su proyecto.
 
 ## Importar espacios de nombres

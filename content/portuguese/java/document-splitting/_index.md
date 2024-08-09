@@ -18,7 +18,7 @@ Nestes tutoriais, os desenvolvedores explorarão várias técnicas para dividir 
 
 Os tutoriais se concentram na automatização de tarefas de divisão de documentos, agilizando o processo para os desenvolvedores. Aspose.Words for Java permite que os desenvolvedores integrem perfeitamente a divisão de documentos em seus aplicativos Java. Ao aproveitar exemplos de código e instruções passo a passo, os desenvolvedores podem implementar a divisão automatizada de documentos para aprimorar seus fluxos de trabalho de processamento de documentos.
 
-Ao dominar a divisão de documentos usando Aspose.Words para Java, os desenvolvedores podem otimizar seus recursos de processamento de texto e de documentos. Os tutoriais equipam os desenvolvedores com o conhecimento e as ferramentas para dividir documentos de forma eficiente e precisa, levando a um melhor gerenciamento e organização de documentos. Aproveite estes tutoriais para aproveitar o poder do Aspose.Words e obter uma divisão perfeita de documentos em seus aplicativos Java.
+Ao dominar a divisão de documentos usando Aspose.Words for Java, os desenvolvedores podem otimizar seus recursos de processamento de texto e de documentos. Os tutoriais equipam os desenvolvedores com o conhecimento e as ferramentas para dividir documentos de forma eficiente e precisa, levando a um melhor gerenciamento e organização de documentos. Aproveite estes tutoriais para aproveitar o poder do Aspose.Words e obter uma divisão perfeita de documentos em seus aplicativos Java.
 
 ## Tutoriais de divisão de documentos
 
@@ -34,4 +34,4 @@ Aprenda como realizar a separação de páginas do documento usando Aspose.Words
 ### [Extraindo o conteúdo do documento por páginas](./extracting-document-content-pages/)
 Aprenda como extrair o conteúdo do documento por páginas usando Aspose.Words for Java. Este guia passo a passo com código-fonte tornará você um especialista rapidamente.
 ### [Técnicas de divisão e extração de documentos](./document-splitting-extraction-techniques/)
-Aprenda a divisão e extração de documentos usando Aspose.Words para Java. Guia passo a passo com código-fonte para manipulação eficiente. Desbloqueie o poder do Aspose
+Aprenda a divisão e extração de documentos usando Aspose.Words para Java. Guia passo a passo com código fonte para manipulação eficiente. Desbloqueie o poder do Aspose

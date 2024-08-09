@@ -9,7 +9,7 @@ url: /hu/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## Bevezetés
 
-Halihó! Ha a dokumentumautomatizálás világába merül, akkor jó helyen jár. Ma azt vizsgáljuk meg, hogyan lehet TC (Tartalomjegyzék) mezőt beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával. Bízzon bennem, ennek az oktatóanyagnak a végére úgy fogja érezni magát, mint egy varázsló, aki varázsol a Word-dokumentumaiba. Készen áll az indulásra? Csináljuk!
+Szia! Ha a dokumentumautomatizálás világába merül, akkor jó helyen jár. Ma azt vizsgáljuk meg, hogyan lehet TC (Tartalomjegyzék) mezőt beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával. Bízzon bennem, ennek az oktatóanyagnak a végére úgy fogja érezni magát, mint egy varázsló, aki varázsol a Word-dokumentumaiba. Készen áll az indulásra? Tegyük ezt!
 
 ## Előfeltételek
 
@@ -75,11 +75,11 @@ Végül mentsük el a dokumentumunkat. Itt jön össze minden kemény munkánk.
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-Bumm! Most hozott létre egy Word-dokumentumot TC mezővel. Milyen fantasztikus?
+Fellendülés! Most hozott létre egy Word-dokumentumot TC mezővel. Milyen fantasztikus?
 
 ## Következtetés
 
- És megvan! Végigjártuk, hogyan lehet TC-mezőt beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával. Elég egyértelmű, igaz? Ezekkel a készségekkel most már profi módon automatizálhatja és testreszabhatja Word-dokumentumait. Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, ne habozzon megnézni a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy nyúljon hozzájuk[támogatói fórum](https://forum.aspose.com/c/words/8). Boldog kódolást!
+ És megvan! Végigjártuk, hogyan lehet TC-mezőt beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával. Elég egyértelmű, igaz? Ezekkel a készségekkel most már profi módon automatizálhatja és testreszabhatja Word-dokumentumait. Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, ne habozzon megnézni a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy nyúljon hozzájuk[támogatási fórum](https://forum.aspose.com/c/words/8). Boldog kódolást!
 
 ## GYIK
 

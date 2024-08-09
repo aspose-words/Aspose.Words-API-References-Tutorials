@@ -16,7 +16,7 @@ As listas vêm em dois tipos principais: com marcadores e numeradas. Eles permit
 
 ## Configurando o Ambiente
 
-Antes de nos aprofundarmos na criação e gerenciamento de listas, certifique-se de ter a biblioteca Aspose.Words para Python instalada. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/) . Além disso, consulte a documentação da API em[esse link](https://reference.aspose.com/words/python-net/) para obter informações detalhadas.
+Antes de nos aprofundarmos na criação e gerenciamento de listas, certifique-se de ter a biblioteca Aspose.Words para Python instalada. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/python/) . Além disso, consulte a documentação da API em[este link](https://reference.aspose.com/words/python-net/) para obter informações detalhadas.
 
 ## Criando listas com marcadores
 
@@ -115,7 +115,7 @@ Neste tutorial, exploramos como criar e gerenciar listas em documentos do Word u
 ## Perguntas frequentes
 
 ### Como instalo o Aspose.Words para Python?
- Você pode baixar a biblioteca em[esse link](https://releases.aspose.com/words/python/) e siga as instruções de instalação fornecidas na documentação.
+ Você pode baixar a biblioteca em[este link](https://releases.aspose.com/words/python/) e siga as instruções de instalação fornecidas na documentação.
 
 ### Posso personalizar o estilo de numeração das minhas listas?
 Absolutamente! Aspose.Words Python permite que você personalize formatos de numeração, estilos de marcadores e alinhamento para adaptar suas listas às suas necessidades específicas.

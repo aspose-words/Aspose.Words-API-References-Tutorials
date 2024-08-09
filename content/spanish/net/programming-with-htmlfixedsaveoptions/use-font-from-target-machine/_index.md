@@ -104,10 +104,10 @@ Sí, Aspose.Words para .NET admite varios formatos de documentos y puede configu
 Si la máquina de destino no tiene las fuentes requeridas, es posible que el documento no se reproduzca según lo previsto. Siempre es una buena idea incrustar fuentes cuando sea necesario.
 
 ### ¿Cómo incrusto fuentes en un documento?
- La incrustación de fuentes se puede realizar utilizando el`FontSettings` clase en Aspose.Words para .NET. Referirse a[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ La incrustación de fuentes se puede realizar utilizando el`FontSettings` clase en Aspose.Words para .NET. Consulte el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
-### ¿Existe alguna forma de obtener una vista previa del documento antes de guardarlo?
+### ¿Hay alguna forma de obtener una vista previa del documento antes de guardarlo?
  Sí, puedes usar el`DocumentRenderer` clase para obtener una vista previa del documento antes de guardarlo. Consulte Aspose.Words para .NET[documentación](https://reference.aspose.com/words/net/) para más información.
 
 ### ¿Puedo personalizar aún más la salida HTML?
- ¡Absolutamente! El`HtmlFixedSaveOptions` La clase proporciona varias propiedades para personalizar la salida HTML. Explorar el[documentación](https://reference.aspose.com/words/net/) para todas las opciones disponibles.
+ ¡Absolutamente! El`HtmlFixedSaveOptions` La clase proporciona varias propiedades para personalizar la salida HTML. Explora el[documentación](https://reference.aspose.com/words/net/) para todas las opciones disponibles.

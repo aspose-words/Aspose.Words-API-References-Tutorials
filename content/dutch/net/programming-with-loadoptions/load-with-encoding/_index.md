@@ -9,13 +9,13 @@ url: /nl/net/programming-with-loadoptions/load-with-encoding/
 ---
 ## Invoering
 
-Hallo daar! U werkt dus met Word-documenten en moet er een laden met een specifieke codering? Misschien bent u documenten tegengekomen met tekst die is gecodeerd in zoiets als UTF-7 en vraagt u zich af hoe u hiermee om moet gaan. Nou, je bent op de juiste plek! In deze zelfstudie gaan we dieper in op hoe u een Word-document met een specifieke codering kunt laden met Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten manipuleren op manieren die u waarschijnlijk nooit voor mogelijk had gehouden. Laten we beginnen!
+Hé daar! U werkt dus met Word-documenten en moet er een laden met een specifieke codering? Misschien bent u documenten tegengekomen met tekst die is gecodeerd in zoiets als UTF-7 en vraagt u zich af hoe u hiermee om moet gaan. Nou, je bent op de juiste plek! In deze zelfstudie gaan we dieper in op hoe u een Word-document met een specifieke codering kunt laden met Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten manipuleren op manieren die u waarschijnlijk nooit voor mogelijk had gehouden. Laten we beginnen!
 
 ## Vereisten
 
 Voordat we in de kern duiken, laten we ervoor zorgen dat je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET: dat kan[downloaden](https://releases.aspose.com/words/net/) de laatste versie.
+1.  Aspose.Words voor .NET: dat kan[downloaden](https://releases.aspose.com/words/net/) de nieuwste versie.
 2. .NET-ontwikkelomgeving: Visual Studio werkt perfect.
 3. Een Word-document: zorg ervoor dat het is gecodeerd in het formaat waarmee u te maken heeft, zoals UTF-7.
 

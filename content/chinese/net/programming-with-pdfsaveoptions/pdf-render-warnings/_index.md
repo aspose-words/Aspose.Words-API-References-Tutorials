@@ -126,7 +126,7 @@ foreach (WarningInfo warningInfo in callback.mWarnings)
 
 ### 问题 1：我可以使用此方法处理其他类型的警告吗？
 
-是的`IWarningCallback`界面可以处理各种类型的警告，而不仅仅是与 PDF 渲染相关的警告。
+是的，`IWarningCallback`界面可以处理各种类型的警告，而不仅仅是与 PDF 渲染相关的警告。
 
 ### 问题2：我可以在哪里下载 Aspose.Words for .NET 的免费试用版？
 

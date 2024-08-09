@@ -15,7 +15,7 @@ Hai! Siap terjun ke dunia Aspose.Words untuk .NET? Hari ini, kami membahas sesua
 
 Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
 
--  Aspose.Words for .NET: Jika Anda belum melakukannya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Jika Anda belum melakukannya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Visual Studio: Atau IDE lain yang kompatibel dengan .NET.
 - Pemahaman Dasar C#: Sedikit pemahaman tentang C# akan membantu Anda memahami tutorial ini.
 -  Lisensi Aspose: Ambil a[uji coba gratis](https://releases.aspose.com/) atau dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) Jika Anda membutuhkannya untuk pengujian.

@@ -15,7 +15,7 @@ dokumentumkezelés területén az Aspose.Words for Java hatékony szövetséges,
 
 Ahhoz, hogy valóban elsajátíthassuk a dokumentumkezelést, először meg kell értenünk a dokumentumok hatékony betöltésének művészetét. Az Aspose.Words for Java rendkívül egyszerűvé teszi ezt a feladatot, oktatóanyagaink pedig útmutatást adnak az út minden lépéséhez.
 
-### Elkezdeni
+### Kezdő lépések
 
 Útjának első lépése, hogy megismerkedjen az alapokkal. Végigvezetjük a beállítási folyamaton, biztosítva, hogy a szükséges eszközök a rendelkezésére álljanak. A könyvtár letöltésétől a telepítésig nem hagyunk szó nélkül.
 

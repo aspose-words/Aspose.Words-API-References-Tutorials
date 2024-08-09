@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám, že jste se při převodu dokumentů Wordu do HTML zapletli do sítě pravidel CSS roztroušených všude možně? Nebojte se! Dnes se ponoříme do úhledné funkce Aspose.Words for .NET, která vám umožňuje psát všechna pravidla CSS do jednoho souboru. To nejen uklidí váš kód, ale také vám to usnadní život. Připoutejte se a vydejte se na cestu k čistšímu a efektivnějšímu výstupu HTML!
 
@@ -83,7 +83,7 @@ Použití jediného souboru CSS zjednodušuje správu a údržbu vašich stylů.
  Ano, nastavením`SaveFontFaceCssSeparately` na`true`, můžete oddělit pravidla CSS pro vzhled písma do jiného souboru.
 
 ### Je Aspose.Words for .NET zdarma k použití?
- Aspose.Words nabízí bezplatnou zkušební verzi, kterou můžete[stáhnout zde](https://releases.aspose.com/) . Pro další používání zvažte zakoupení licence[tady](https://purchase.aspose.com/buy).
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou můžete[stáhnout zde](https://releases.aspose.com/) . Pro další používání zvažte zakoupení licence[zde](https://purchase.aspose.com/buy).
 
 ### Na jaké další formáty lze Aspose.Words for .NET převést?
 Aspose.Words for .NET podporuje různé formáty včetně PDF, TXT a obrazových formátů jako JPEG a PNG.

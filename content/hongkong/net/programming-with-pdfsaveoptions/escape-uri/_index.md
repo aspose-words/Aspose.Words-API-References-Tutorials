@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## 結論
 
-現在你就擁有了！您剛剛學會如何在使用 Aspose.Words for .NET 將 Word 文件儲存為 PDF 時轉義 URI。此流程可確保您的超連結在產生的 PDF 中保持功能且格式正確。 
+現在你就得到它了！您剛剛學會如何在使用 Aspose.Words for .NET 將 Word 文件儲存為 PDF 時轉義 URI。此流程可確保您的超連結在產生的 PDF 中保持功能且格式正確。 
 
 請記住，掌握這些小而重要的技術可以大大提高文件的品質和功能。快樂編碼！
 

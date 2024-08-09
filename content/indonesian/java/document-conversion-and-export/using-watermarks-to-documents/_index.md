@@ -121,7 +121,7 @@ options.setFontFamily("Times New Roman");
 
 ### Bagaimana cara membuat tanda air menjadi semi transparan?
 
- Untuk membuat tanda air menjadi semi-transparan, atur`setSemitransparent`properti ke`true` dalam`TextWatermarkOptions`.
+ Untuk membuat tanda air menjadi semi-transparan, atur`setSemitransparent`properti ke`true` di`TextWatermarkOptions`.
 
 ### Bisakah saya menambahkan tanda air ke bagian tertentu pada dokumen?
 

@@ -38,7 +38,7 @@ using System.Drawing;
 Document doc = new Document();
 ```
 
-## 第 2 步：访问主题对象
+## 步骤 2：访问主题对象
 
 接下来，您需要访问`Theme`文档中的对象。`Theme`对象包含与文档主题相关的属性，包括字体和颜色。
 

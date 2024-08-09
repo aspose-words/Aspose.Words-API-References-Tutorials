@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 步驟 3：設定影像儲存選項
 
-有趣的來了！我們需要配置影像保存選項來控制 TIFF 二值化。我們將使用`ImageSaveOptions`類別來設定各種屬性。
+現在來了有趣的部分！我們需要配置影像保存選項來控制 TIFF 二值化。我們將使用`ImageSaveOptions`類別來設定各種屬性。
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBin
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 在 Word 文件中公開 TIFF 二值化的閾值控制。這個功能強大的庫可以輕鬆地以各種方式操作 Word 文檔，包括使用自訂設定將其轉換為不同的格式。嘗試一下，看看它如何簡化您的文件處理任務！
+現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 在 Word 文件中公開 TIFF 二值化的閾值控制。這個功能強大的庫可以輕鬆地以各種方式操作 Word 文檔，包括使用自訂設定將其轉換為不同的格式。嘗試一下，看看它如何簡化您的文件處理任務！
 
 ## 常見問題解答
 

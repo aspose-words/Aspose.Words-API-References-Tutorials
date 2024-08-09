@@ -9,7 +9,7 @@ url: /tr/net/programming-with-table-styles-and-formatting/create-table-style/
 ---
 ## giriiş
 
-.NET kullanarak Word belgelerinizdeki tablolara stil vermeye çalışırken kendinizi hiç takılıp kalmış buldunuz mu? Endişelenme! Bugün Aspose.Words for .NET'in fantastik dünyasına dalıyoruz. Basit, sohbet havasında bir tablo oluşturmayı, özel stilleri nasıl uygulayacağınızı ve belgenizi nasıl kaydedeceğinizi anlatacağız. İster yeni başlayan ister deneyimli bir profesyonel olun, bu kılavuzda sizin için bir şeyler olacaktır. Sıkıcı masalarınızı şık, profesyonel masalara dönüştürmeye hazır mısınız? Başlayalım!
+.NET kullanarak Word belgelerinizdeki tablolara stil vermeye çalışırken kendinizi hiç takılıp kalmış buldunuz mu? Endişelenme! Bugün Aspose.Words for .NET'in fantastik dünyasına dalıyoruz. Basit, sohbet havasında bir tablo oluşturmayı, özel stilleri nasıl uygulayacağınızı ve belgenizi nasıl kaydedeceğinizi anlatacağız. İster yeni başlayan ister deneyimli bir profesyonel olun, bu kılavuzda sizin için bir şeyler olacaktır. Sıkıcı masalarınızı şık, profesyonel masalara dönüştürmeye hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 

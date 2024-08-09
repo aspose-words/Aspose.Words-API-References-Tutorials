@@ -90,7 +90,7 @@ paragraph = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True).add(shape)
 
 ## Управление разделами документа
 
-Aspose.Words позволяет нам разделить наши документы на разделы, каждый из которых имеет свои собственные свойства.
+Aspose.Words позволяет нам разделить наши документы на разделы, каждый со своими свойствами.
 
 ```python
 # Add a new section to the document

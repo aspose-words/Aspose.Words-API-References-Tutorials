@@ -95,7 +95,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIn
 是的，您可以通过设置指定列表缩进的不同字符`Character`财产`TxtSaveOptions`.
 
 ### 如何在列表中使用项目符号代替数字？
-使用`ListFormat.ApplyBulletDefault()`代替`ApplyNumberDefault()`创建项目符号列表。
+使用`ListFormat.ApplyBulletDefault()`而不是`ApplyNumberDefault()`创建项目符号列表。
 
 ### 我可以动态调整缩进的空格数吗？
 是的，你可以调整`ListIndentation.Count`属性根据您的要求设置空格数。

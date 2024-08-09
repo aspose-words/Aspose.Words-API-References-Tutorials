@@ -15,7 +15,7 @@ Czy kiedykolwiek spotkałeś się z sytuacją, w której musiałeś dynamicznie 
 
 Zanim zagłębimy się w kod, upewnijmy się, że masz do dyspozycji niezbędne narzędzia:
 
--  Aspose.Words dla .NET: Jest to potężna biblioteka, która umożliwia programową pracę z dokumentami programu Word. Przejdź do sekcji pobierania na stronie Aspose[Link do pobrania](https://releases.aspose.com/words/net/) aby zdobyć swój egzemplarz. - Możesz zdecydować się na bezpłatny okres próbny lub zapoznać się z różnymi opcjami licencjonowania[połączyć](https://purchase.aspose.com/buy).
+-  Aspose.Words dla .NET: Jest to potężna biblioteka, która umożliwia programową pracę z dokumentami programu Word. Przejdź do sekcji pobierania na stronie Aspose[Pobierz połączyć](https://releases.aspose.com/words/net/) aby zdobyć swój egzemplarz. - Możesz zdecydować się na bezpłatny okres próbny lub zapoznać się z różnymi opcjami licencjonowania[link](https://purchase.aspose.com/buy).
 - Środowisko programistyczne .NET: Visual Studio, Visual Studio Code lub dowolne inne wybrane środowisko .NET IDE będzie służyć jako plac zabaw programistycznych.
 - Przykładowy dokument programu Word: Utwórz prosty dokument programu Word (np. „Bookmarks.docx”) zawierający tekst i wstaw zakładkę (omówimy, jak to zrobić później), aby ćwiczyć.
 
@@ -65,7 +65,7 @@ Console.WriteLine("Existing Bookmark Name: " + name);
 Console.WriteLine("Existing Bookmark Text: " + text);
 ```
 
-Ten fragment kodu pobiera bieżącą nazwę (`name`) i tekst (`text`) docelowej zakładki i wyświetla je na konsoli (możesz to modyfikować do własnych potrzeb, np. rejestrując informacje do pliku). Ten krok jest opcjonalny, ale może być przydatny do debugowania lub weryfikowania zakładki, z którą pracujesz.
+Ten fragment kodu pobiera bieżącą nazwę (`name`) i tekst (`text`) docelowej zakładki i wyświetla je na konsoli (możesz to modyfikować do własnych potrzeb, na przykład rejestrując informacje do pliku). Ten krok jest opcjonalny, ale może być przydatny do debugowania lub weryfikowania zakładki, z którą pracujesz.
 
 ## Krok 4: Zaktualizuj nazwę zakładki (opcjonalnie)
 

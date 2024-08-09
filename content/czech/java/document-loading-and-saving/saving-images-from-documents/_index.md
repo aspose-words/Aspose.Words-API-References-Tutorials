@@ -14,7 +14,7 @@ V tomto tutoriálu prozkoumáme, jak ukládat obrázky z dokumentů pomocí Aspo
 
 ## Předpoklady
 
- Než začnete, ujistěte se, že máte do projektu integrovanou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než začnete, ujistěte se, že máte do projektu integrovanou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Krok 1: Ukládání obrázků jako TIFF s ovládáním prahu
 

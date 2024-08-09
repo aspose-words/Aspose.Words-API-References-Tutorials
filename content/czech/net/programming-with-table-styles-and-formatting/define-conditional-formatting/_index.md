@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/define-conditional-formatting/
 ---
-## Úvod
+## Zavedení
 
 Podmíněné formátování vám umožňuje použít specifické formátování buněk v tabulce na základě určitých kritérií. Tato funkce je neuvěřitelně užitečná pro zdůraznění klíčových informací, díky čemuž budou vaše dokumenty čitelnější a vizuálně přitažlivější. Provedeme vás procesem krok za krokem a zajistíme, že tuto funkci můžete implementovat bez námahy.
 
@@ -15,7 +15,7 @@ Podmíněné formátování vám umožňuje použít specifické formátování 
 
 Než začneme, ujistěte se, že máte následující:
 
-1. Aspose.Words for .NET: Potřebujete knihovnu Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Potřebujete knihovnu Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vhodné vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Užitečná bude znalost programování v C#.
 4. Dokument aplikace Word: Dokument aplikace Word, ve kterém chcete použít podmíněné formátování.

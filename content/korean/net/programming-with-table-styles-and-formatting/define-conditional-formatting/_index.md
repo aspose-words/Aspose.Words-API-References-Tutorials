@@ -15,7 +15,7 @@ url: /ko/net/programming-with-table-styles-and-formatting/define-conditional-for
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
-1. .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 필요합니다. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1. .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 필요합니다. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 적합한 개발 환경.
 3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 도움이 됩니다.
 4. Word 문서: 조건부 서식을 적용하려는 Word 문서입니다.
@@ -119,4 +119,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 이 튜토리얼은 테이블에 초점을 맞추고 있지만 .NET용 Aspose.Words는 다양한 문서 요소에 대한 광범위한 서식 옵션을 제공합니다.
 
 ### 대용량 문서의 조건부 서식을 자동화할 수 있나요?
-예, 코드의 루프와 조건을 사용하여 프로세스를 자동화할 수 있으므로 대용량 문서에 효율적으로 사용할 수 있습니다.
+예, 코드의 루프와 조건을 사용하여 프로세스를 자동화하여 대용량 문서에 효율적으로 만들 수 있습니다.

@@ -129,7 +129,7 @@ doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 
 ### الخطوة 9: تحميل وعرض معلومات جزء المهام
 
-للتحقق من معلومات جزء المهام وعرضها، نقوم بتحميل المستند ونكرره عبر أجزاء المهام.
+للتحقق من معلومات جزء المهام وعرضها، نقوم بتحميل المستند ونكرره خلال أجزاء المهام.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");

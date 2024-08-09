@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Quindi, hai un documento Word e devi aggiungere una riga per la firma e quindi firmarlo digitalmente. Sembra complicato? Affatto! Grazie ad Aspose.Words per .NET, puoi raggiungere questo obiettivo senza problemi con solo poche righe di codice. In questo tutorial ti guideremo attraverso l'intero processo, dalla configurazione del tuo ambiente al salvataggio del tuo documento con una nuova firma brillante. Pronto? Immergiamoci!
 
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 3: inserimento della riga della firma
 
- Qui è dove avviene la magia. Inseriamo una riga di firma nel nostro documento utilizzando il file`DocumentBuilder` classe.
+ È qui che avviene la magia. Inseriamo una riga di firma nel nostro documento utilizzando il file`DocumentBuilder` classe.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
@@ -88,7 +88,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Passaggio 7: firma del documento
 
- Questo è il passo finale. Noi usiamo il`DigitalSignatureUtil`classe per firmare il documento. Il documento firmato viene salvato con un nuovo nome.
+ Questo è il passo finale. Usiamo il`DigitalSignatureUtil`classe per firmare il documento. Il documento firmato viene salvato con un nuovo nome.
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
@@ -97,7 +97,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Conclusione
 
-E il gioco è fatto! Con questi passaggi, hai creato con successo un nuovo documento Word, aggiunto una riga della firma e firmato digitalmente utilizzando Aspose.Words per .NET. È uno strumento potente che rende l'automazione dei documenti un gioco da ragazzi. Che tu abbia a che fare con contratti, accordi o qualsiasi documento formale, questo metodo garantisce che siano firmati e autenticati in modo sicuro.
+Ed ecco qua! Con questi passaggi, hai creato con successo un nuovo documento Word, aggiunto una riga della firma e firmato digitalmente utilizzando Aspose.Words per .NET. È uno strumento potente che rende l'automazione dei documenti un gioco da ragazzi. Che tu abbia a che fare con contratti, accordi o qualsiasi documento formale, questo metodo garantisce che siano firmati e autenticati in modo sicuro.
 
 ## Domande frequenti
 
@@ -105,7 +105,7 @@ E il gioco è fatto! Con questi passaggi, hai creato con successo un nuovo docum
 Sì, puoi utilizzare vari formati di immagine come PNG, JPG, BMP, ecc.
 
 ###  È necessario utilizzare a`.pfx` file for the certificate?
- Sì un`.pfx` file è un formato comune per l'archiviazione di informazioni crittografiche inclusi certificati e chiavi private.
+ Sì, un`.pfx` file è un formato comune per l'archiviazione di informazioni crittografiche inclusi certificati e chiavi private.
 
 ### Posso aggiungere più righe di firma in un singolo documento?
 Assolutamente! È possibile inserire più righe di firma ripetendo il passaggio di inserimento per ciascuna firma.

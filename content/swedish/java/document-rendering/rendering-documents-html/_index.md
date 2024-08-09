@@ -40,7 +40,7 @@ public class DocumentRenderer {
 }
 ```
 
- Byta ut`"path/to/your/document.docx"` med den faktiska sökvägen till ditt dokument.
+ Ersätta`"path/to/your/document.docx"` med den faktiska sökvägen till ditt dokument.
 
 ## Steg 3: Rendering till HTML
 

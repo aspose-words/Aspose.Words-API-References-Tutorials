@@ -99,4 +99,4 @@ Sim, Aspose.Words for .NET é compatível com .NET Framework e .NET Core.
  Você pode obter suporte do[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Posso usar o Aspose.Words gratuitamente?
- Aspose.Words oferece um[teste grátis](https://releases.aspose.com/) e também fornece[licenças temporárias](https://purchase.aspose.com/temporary-license/) para avaliação.
+ Aspose.Words oferece um[teste gratuito](https://releases.aspose.com/) e também fornece[licenças temporárias](https://purchase.aspose.com/temporary-license/) para avaliação.

@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước đơn giản này, bạn có thể giảm kích thước tệp PDF của mình một cách hiệu quả bằng cách chỉ nhúng các tập hợp con phông chữ cần thiết bằng Aspose.Words cho .NET. Điều này không chỉ tiết kiệm không gian lưu trữ mà còn đảm bảo thời gian tải nhanh hơn và hiệu suất tốt hơn, đặc biệt đối với các tài liệu có phông chữ phong phú.
+Và bạn có nó! Bằng cách làm theo các bước đơn giản này, bạn có thể giảm kích thước tệp PDF của mình một cách hiệu quả bằng cách chỉ nhúng các tập hợp con phông chữ cần thiết bằng Aspose.Words cho .NET. Điều này không chỉ tiết kiệm không gian lưu trữ mà còn đảm bảo thời gian tải nhanh hơn và hiệu suất tốt hơn, đặc biệt đối với các tài liệu có phông chữ phong phú.
 
 ## Câu hỏi thường gặp
 
@@ -73,7 +73,7 @@ Và bạn có nó rồi đấy! Bằng cách làm theo các bước đơn giản
 Chỉ nhúng các tập hợp phông chữ cần thiết có thể giảm đáng kể kích thước tệp PDF mà không ảnh hưởng đến hình thức và khả năng đọc của tài liệu.
 
 ### Tôi có thể quay lại nhúng phông chữ đầy đủ nếu cần không?
- Vâng, bạn có thể. Đơn giản chỉ cần thiết lập`EmbedFullFonts`tài sản để`true` bên trong`PdfSaveOptions`.
+ Vâng, bạn có thể. Đơn giản chỉ cần thiết lập`EmbedFullFonts`tài sản để`true` trong`PdfSaveOptions`.
 
 ### Aspose.Words for .NET có hỗ trợ các tính năng tối ưu hóa PDF khác không?
 Tuyệt đối! Aspose.Words for .NET cung cấp nhiều tùy chọn để tối ưu hóa tệp PDF, bao gồm nén hình ảnh và loại bỏ các đối tượng không sử dụng.

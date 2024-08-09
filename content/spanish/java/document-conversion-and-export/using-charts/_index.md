@@ -10,7 +10,7 @@ url: /es/java/document-conversion-and-export/using-charts/
 
 ## Introducción al uso de gráficos en Aspose.Words para Java
 
-En este tutorial, exploraremos cómo trabajar con gráficos usando Aspose.Words para Java. Aprenderá a crear varios tipos de gráficos, personalizar las propiedades de los ejes, dar formato a las etiquetas de datos y más. ¡Vamos a sumergirnos!
+En este tutorial, exploraremos cómo trabajar con gráficos usando Aspose.Words para Java. Aprenderá a crear varios tipos de gráficos, personalizar las propiedades de los ejes, dar formato a etiquetas de datos y más. ¡Vamos a sumergirnos!
 
 ## Crear un gráfico de líneas
 

@@ -2,119 +2,137 @@
 title: Přístup k revidované verzi
 linktitle: Přístup k revidované verzi
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Získejte přístup k revidované verzi dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se přistupovat k revidované verzi dokumentu a zobrazovat ji pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou správu dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-revisions/access-revised-version/
 ---
+## Zavedení
 
-V tomto podrobném průvodci vám ukážeme, jak získat přístup k revidované verzi dokumentu aplikace Word pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
+Potřebovali jste někdy přistupovat k revidované verzi dokumentu programově? Ať už pracujete na společných projektech, nebo prostě potřebujete spravovat revize dokumentů, Aspose.Words for .NET je váš oblíbený nástroj. Tento tutoriál vás provede celým procesem, od nastavení prostředí až po přístup k revizím a jejich zobrazení v dokumentu aplikace Word. Takže, pojďme se rovnou ponořit!
 
-## Krok 1: Načtení dokumentu
+## Předpoklady
 
-Prvním krokem je nahrání dokumentu obsahujícího revize.
+Než začneme, budete potřebovat několik věcí:
+
+1.  Aspose.Words for .NET Library: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje .NET.
+3. Základní znalost C#: To vám pomůže sledovat část kódování.
+
+Než přistoupíte k dalším krokům, ujistěte se, že máte tyto předpoklady vyřešené.
+
+## Importovat jmenné prostory
+
+Nejprve musíte importovat potřebné jmenné prostory. Toto je zásadní krok, který zajistí, že váš kód rozpozná knihovnu Aspose.Words for .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Pojďme si tento proces rozdělit do jednoduchých, snadno pochopitelných kroků.
+
+## Krok 1: Nastavení cesty dokumentu
+
+Než budete moci s dokumentem pracovat, musíte určit cestu, kde se dokument nachází. To je nezbytné, aby kód našel soubor a mohl s ním manipulovat.
+
+```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Krok 2: Vložení dokumentu
+
+ Dále načtete dokument do aplikace. Tento krok zahrnuje vytvoření nového`Document` objekt a jeho inicializaci s cestou k vašemu dokumentu.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## Krok 3: Aktualizace štítků seznamu
+
+Pokud váš dokument obsahuje seznamy, je důležité aktualizovat štítky seznamu. To zajistí, že všechny položky seznamu jsou správně očíslovány a naformátovány.
+
+```csharp
 doc.UpdateListLabels();
 ```
 
-## Krok 2: Přístup k revidované verzi
+## Krok 4: Přepnutí na revidovanou verzi
 
-Nyní přejdeme k revidované verzi dokumentu.
-
-```csharp
-doc.RevisionsView = RevisionsView.Final;
-```
-
-## Krok 3: Procházení revizí
-
-Dále projdeme revize v dokumentu a zobrazíme konkrétní informace pro odstavce, které jsou položkami seznamu.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-     if (revision.ParentNode.NodeType == NodeType.Paragraph)
-     {
-         Paragraph paragraph = (Paragraph)revision.ParentNode;
-         if (paragraph.IsListItem)
-         {
-             Console.WriteLine(paragraph.ListLabel.LabelString);
-             Console.WriteLine(paragraph.ListFormat.ListLevel);
-         }
-     }
-}
-```
-
-### Příklad zdrojového kódu pro Access Revised Version pomocí Aspose.Words for .NET
-
-Zde je úplný zdrojový kód pro přístup k revidované verzi dokumentu pomocí Aspose.Words pro .NET:
-
-```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-doc.UpdateListLabels();
-
-// Přepněte na revidovanou verzi dokumentu.
-doc.RevisionsView = RevisionsView.Final;
-
-foreach (Revision revision in doc.Revisions)
-{
-	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
-	 {
-		 Paragraph paragraph = (Paragraph)revision.ParentNode;
-		 if (paragraph.IsListItem)
-		 {
-			 Console.WriteLine(paragraph.ListLabel.LabelString);
-			 Console.WriteLine(paragraph.ListFormat.ListLevel);
-		 }
-	 }
-}
-```
-
-## Závěr
-
-tomto tutoriálu jsme se naučili, jak získat přístup k revidované verzi dokumentu aplikace Word pomocí Aspose.Words for .NET. Načtením dokumentu, přechodem na revidovanou verzi a procházením revizí jsme byli schopni získat konkrétní informace pro odstavce, které jsou položkami seznamu. Aspose.Words for .NET nabízí výkonné funkce pro manipulaci s dokumenty aplikace Word, včetně přístupu k recenzím. Nyní můžete tyto znalosti využít k přístupu k revidované verzi svých vlastních dokumentů Word pomocí Aspose.Words for .NET.
-
-### FAQ
-
-#### Otázka: Jak načtu dokument s revizemi do Aspose.Words pro .NET?
-
- A: Použijte`Document` třídy Aspose.Words for .NET k načtení dokumentu ze souboru obsahujícího revize. Můžete zadat úplnou cestu dokumentu.
-
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
-
-#### Otázka: Jak získám přístup k revidované verzi dokumentu v Aspose.Words for .NET?
-
- A: Použijte`RevisionsView` majetek z`Document` zamítnout přístup k revidované verzi dokumentu. Můžete nastavit hodnotu`RevisionsView`majetek do`RevisionsView.Final` zobrazit konečnou verzi bez revizí.
+Nyní přejdeme na revidovanou verzi dokumentu. Tento krok je zásadní, pokud chcete přistupovat k revizím a zobrazovat je.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### Otázka: Jak mohu procházet revize dokumentů v Aspose.Words pro .NET?
+## Krok 5: Iterace přes revize
 
-A: Použijte a`foreach` smyčka pro iteraci revizí přítomných v dokumentu. Můžete použít`Revisions` majetek z`Document` objekt k získání kolekce všech revizí dokumentu.
+ Chcete-li získat přístup k revizím, budete muset iterovat přes`Revisions` sbírka listiny. Tento krok zahrnuje použití a`foreach` smyčka pro procházení každé revize.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     // Zde zpracujte každou revizi
+    // Dodatečný kód bude uveden zde
 }
 ```
 
-#### Otázka: Jak zkontrolovat, zda je odstavec položkou seznamu v Aspose.Words pro .NET?
+## Krok 6: Kontrola typu nadřazeného uzlu
 
- A: Použijte`IsListItem` majetek z`Paragraph` objekt pro kontrolu, zda je odstavec položkou seznamu. The`IsListItem` majetkové výnosy`true` pokud je odstavec položkou seznamu, jinak se vrátí`false`.
+ U každé revize zkontrolujte, zda je nadřazený uzel typu`Paragraph`. To je důležité, protože chceme získat přístup k odstavci obsahujícímu revizi.
+
+```csharp
+if (revision.ParentNode.NodeType == NodeType.Paragraph)
+{
+    // Dodatečný kód bude uveden zde
+}
+```
+
+## Krok 7: Přístup k odstavci
+
+ Jakmile potvrdíte, že nadřazený uzel je odstavec, přetypujte jej na a`Paragraph` objekt. Tento krok vám umožní pracovat s odstavcem a jeho vlastnostmi.
+
+```csharp
+Paragraph paragraph = (Paragraph)revision.ParentNode;
+```
+
+## Krok 8: Kontrola, zda je odstavec položkou seznamu
+
+Dále zkontrolujte, zda je odstavec položkou seznamu. To je důležité, protože položky seznamu mají specifické vlastnosti, ke kterým potřebujeme přistupovat.
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     // Odstavec je položka seznamu
-}
-else
-{
-     // Odstavec není položka seznamu
+    // Dodatečný kód bude uveden zde
 }
 ```
+
+## Krok 9: Zobrazení štítku seznamu a úrovně
+
+Nakonec zobrazte štítek seznamu a úroveň seznamu odstavce. Tento krok poskytuje užitečné informace o položce seznamu, jako je její číslování a úroveň odsazení.
+
+```csharp
+Console.WriteLine(paragraph.ListLabel.LabelString);
+Console.WriteLine(paragraph.ListFormat.ListLevel);
+```
+
+## Závěr
+
+A tady to máte! Úspěšně jste přistoupili k revidované verzi dokumentu pomocí Aspose.Words for .NET. Podle těchto kroků můžete snadno spravovat a zobrazovat revize dokumentů. Ať už se zabýváte společnými projekty nebo prostě potřebujete sledovat změny, Aspose.Words pro .NET vám pomůže.
+
+## FAQ
+
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která vám umožňuje programově vytvářet, upravovat a manipulovat s dokumenty Wordu.
+
+### Mohu získat přístup k revizím v libovolném dokumentu aplikace Word?
+Ano, pokud dokument obsahuje revize, můžete k nim přistupovat pomocí Aspose.Words for .NET.
+
+### Potřebuji licenci k používání Aspose.Words pro .NET?
+ Ano, můžete získat licenci od[zde](https://purchase.aspose.com/buy) . Nabízejí také a[zkušební verze zdarma](https://releases.aspose.com/) a a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+
+### Je Aspose.Words for .NET kompatibilní se všemi verzemi .NET?
+Aspose.Words for .NET je kompatibilní s celou řadou verzí .NET. Více podrobností najdete v[dokumentace](https://reference.aspose.com/words/net/).
+
+### Kde mohu získat podporu pro Aspose.Words pro .NET?
+ Na jejich stránkách můžete získat podporu od komunity Aspose[forum](https://forum.aspose.com/c/words/8).

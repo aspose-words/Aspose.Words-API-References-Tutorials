@@ -73,7 +73,7 @@ Aqui está o código para configurar as opções de importação:
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
- Definindo`IgnoreHeaderFooter` para`true`, estamos dizendo ao Aspose.Words para ignorar cabeçalhos e rodapés durante o processo de mesclagem.
+ Ao definir`IgnoreHeaderFooter` para`true`, estamos dizendo ao Aspose.Words para ignorar cabeçalhos e rodapés durante o processo de mesclagem.
 
 ## Etapa 4: mesclar os documentos
 
@@ -117,7 +117,7 @@ Sim, Aspose.Words oferece várias opções para personalizar o processo de impor
 
 ### Preciso de uma licença para usar o Aspose.Words for .NET?
 
- Sim, Aspose.Words for .NET é um produto comercial. Você pode obter um[teste grátis](https://releases.aspose.com/) ou compre uma licença[aqui](https://purchase.aspose.com/buy).
+ Sim, Aspose.Words for .NET é um produto comercial. Você pode obter um[teste gratuito](https://releases.aspose.com/) ou compre uma licença[aqui](https://purchase.aspose.com/buy).
 
 ### Posso mesclar mais de dois documentos usando este método?
 

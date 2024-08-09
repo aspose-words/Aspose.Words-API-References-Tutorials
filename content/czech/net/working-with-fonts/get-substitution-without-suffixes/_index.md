@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Zavedení
 
-Vítejte v této komplexní příručce o správě nahrazování písem pomocí Aspose.Words pro .NET. Pokud jste se někdy potýkali s tím, že se písma ve vašich dokumentech nezobrazují správně, jste na správném místě. Tento výukový program vás krok za krokem provede procesem efektivního nahrazování písem bez přípon. Začněme!
+Vítejte v této komplexní příručce o správě nahrazování písem pomocí Aspose.Words pro .NET. Pokud jste se někdy potýkali s tím, že se písma ve vašich dokumentech nezobrazují správně, jste na správném místě. Tento výukový program vás krok za krokem provede procesem efektivního nahrazování písem bez přípon.
 
 ## Předpoklady
 
@@ -17,7 +18,7 @@ Než se pustíte do výukového programu, ujistěte se, že máte následující
 - Základní znalost C#: Pochopení programování v C# vám usnadní sledování a implementaci kroků.
 -  Aspose.Words for .NET Library: Stáhněte a nainstalujte knihovnu z[odkaz ke stažení](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Nastavte vývojové prostředí, jako je Visual Studio, abyste mohli psát a spouštět svůj kód.
-- Vzorový dokument: Vzorový dokument (např.`Rendering.docx`), se kterými budete pracovat během tohoto tutoriálu.
+-  Vzorový dokument: Vzorový dokument (např.`Rendering.docx`), se kterými budete pracovat během tohoto tutoriálu.
 
 ## Importovat jmenné prostory
 
@@ -26,7 +27,6 @@ Nejprve musíme importovat potřebné jmenné prostory pro přístup ke třídá
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Krok 5: Vytvořte třídu Warning Handler
 
-Chcete-li efektivně zpracovávat varování, vytvořte vlastní třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zachytí a zaprotokoluje všechna varování o záměně písem.
+ Chcete-li efektivně zpracovávat varování, vytvořte vlastní třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zachytí a zaprotokoluje všechna varování o záměně písem.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,31 +93,31 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 V této třídě:
--  The`Warning` metoda zachycuje varování související se záměnou písem.
+-  The`Warning`metoda zachycuje varování související se záměnou písem.
 -  The`FontWarnings` kolekce ukládá tato varování pro další kontrolu nebo protokolování.
 
 ## Závěr
 
 Nyní jste zvládli proces nahrazování písem bez přípon pomocí Aspose.Words for .NET. Tyto znalosti zajistí, že si vaše dokumenty zachovají svůj zamýšlený vzhled bez ohledu na písma dostupná v systému. Pokračujte v experimentování s různými nastaveními a zdroji, abyste plně využili sílu Aspose.Words.
 
-## Nejčastější dotazy
+## FAQ
 
-### Q1: Jak mohu používat písma z více vlastních adresářů?
+### Jak mohu používat písma z více vlastních adresářů?
 
  Můžete přidat více`FolderFontSource` instance k`fontSources` seznam a odpovídajícím způsobem aktualizujte zdroje písem.
 
-### Q2: Kde si mohu stáhnout bezplatnou zkušební verzi Aspose.Words pro .NET?
+### Kde si mohu stáhnout bezplatnou zkušební verzi Aspose.Words pro .NET?
 
  Můžete si stáhnout bezplatnou zkušební verzi z[Aspose zkušební stránku zdarma](https://releases.aspose.com/).
 
-###  Q3: Mohu zpracovat více typů varování pomocí`IWarningCallback`?
+###  Mohu zpracovat více typů varování pomocí`IWarningCallback`?
 
  Ano,`IWarningCallback` rozhraní vám umožňuje zpracovávat různé typy varování, nejenom nahrazování písem.
 
-### Q4: Kde mohu získat podporu pro Aspose.Words?
+### Kde mohu získat podporu pro Aspose.Words?
 
  Pro podporu navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### Q5: Je možné zakoupit dočasnou licenci?
+### Je možné zakoupit dočasnou licenci?
 
  Ano, můžete získat dočasnou licenci od[dočasná licenční stránka](https://purchase.aspose.com/temporary-license/).

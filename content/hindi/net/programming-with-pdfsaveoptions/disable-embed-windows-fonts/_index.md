@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- व्यवस्थित करके`FontEmbeddingMode` को`EmbedNone`, हम Aspose.Words को निर्देश देते हैं कि इन फ़ॉन्ट्स को पीडीएफ में शामिल न करें, जिससे फ़ाइल का आकार कम हो जाए।
+ सेटिंग करके`FontEmbeddingMode` को`EmbedNone`, हम Aspose.Words को निर्देश देते हैं कि इन फ़ॉन्ट्स को पीडीएफ में शामिल न करें, जिससे फ़ाइल का आकार कम हो जाए।
 
 ## चरण 3: दस्तावेज़ को PDF के रूप में सहेजें
 

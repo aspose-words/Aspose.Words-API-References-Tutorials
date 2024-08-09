@@ -56,7 +56,7 @@ En av nyckelfunktionerna i Aspose.Words för Java är dess förmåga att spåra 
 
 ### Aktivera revisionsspårning
 
- För att aktivera revisionsspårning i ett Word-dokument med Aspose.Words för Java kan du använda`TrackRevisions` fast egendom. Här är ett exempel på hur du aktiverar revisionsspårning:
+ För att aktivera revisionsspårning i ett Word-dokument med Aspose.Words för Java kan du använda`TrackRevisions` egendom. Här är ett exempel på hur du aktiverar revisionsspårning:
 
 ```java
 Document doc = new Document("MyDocument.docx");

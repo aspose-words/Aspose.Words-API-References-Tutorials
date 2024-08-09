@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-markdown/table/
 ---
-## introduzione
+## Introduzione
 
 Lavorare con le tabelle nei documenti è un requisito comune. Che tu stia generando report, fatture o dati strutturati, le tabelle sono indispensabili. In questo tutorial ti guiderò attraverso la creazione e la personalizzazione delle tabelle utilizzando Aspose.Words per .NET. Immergiamoci!
 

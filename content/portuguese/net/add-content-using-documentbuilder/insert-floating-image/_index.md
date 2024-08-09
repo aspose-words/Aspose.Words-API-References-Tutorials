@@ -134,7 +134,7 @@ Inserir uma imagem flutuante em um documento do Word usando Aspose.Words for .NE
 
 ### Que outros tipos de wrap estão disponíveis para imagens?
 
- Aspose.Words oferece suporte a vários tipos de wrap, como`Inline`, `TopBottom`, `Tight`, `Through`, e mais. Você pode escolher aquele que melhor se adapta ao layout do seu documento.
+ Aspose.Words oferece suporte a vários tipos de wrap, como`Inline`, `TopBottom`, `Tight`, `Through`e muito mais. Você pode escolher aquele que melhor se adapta ao layout do seu documento.
 
 ### Posso usar diferentes formatos de imagem?
 

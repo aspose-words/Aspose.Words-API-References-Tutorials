@@ -75,7 +75,7 @@ En este tutorial, demostramos cómo deshabilitar los saltos de fila entre págin
  Sí, puede desactivar los saltos de fila para filas específicas accediendo a la fila deseada y configurando su`AllowBreakAcrossPages`propiedad a`false`.
 
 ### ¿Este método funciona para tablas con celdas combinadas?  
- Sí, este método funciona para tablas con celdas combinadas. La propiedad`AllowBreakAcrossPages` se aplica a toda la fila, independientemente de la combinación de celdas.
+ Sí, este método funciona para tablas con celdas combinadas. la propiedad`AllowBreakAcrossPages` se aplica a toda la fila, independientemente de la combinación de celdas.
 
 ### ¿Funcionará este método si la tabla está anidada dentro de otra tabla?  
 Sí, puedes acceder y modificar tablas anidadas de la misma manera. Asegúrese de hacer referencia correctamente a la tabla anidada por su índice u otras propiedades.

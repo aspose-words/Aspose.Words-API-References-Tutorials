@@ -2,7 +2,7 @@
 title: 在 Word 文档中创建书签
 linktitle: 在 Word 文档中创建书签
 second_title: Aspose.Words 文档处理 API
-description: 通过本详细的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中创建书签。非常适合文档导航和组织。
+description: 通过本详细分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中创建书签。非常适合文档导航和组织。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/create-bookmark/

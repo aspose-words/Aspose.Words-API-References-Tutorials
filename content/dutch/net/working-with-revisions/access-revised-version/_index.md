@@ -2,119 +2,137 @@
 title: Toegang tot herziene versie
 linktitle: Toegang tot herziene versie
 second_title: Aspose.Words-API voor documentverwerking
-description: Krijg toegang tot een herziene versie van een Word-document met Aspose.Words voor .NET.
+description: Leer hoe u de herziene versie van een document kunt openen en weergeven met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor naadloos documentbeheer.
 type: docs
 weight: 10
 url: /nl/net/working-with-revisions/access-revised-version/
 ---
+## Invoering
 
-In deze stapsgewijze handleiding laten we u zien hoe u toegang krijgt tot de herziene versie van een Word-document met Aspose.Words voor .NET. We voorzien u van de volledige broncode en laten u zien hoe u de markdown-uitvoer kunt formatteren.
+Heeft u ooit programmatisch toegang moeten krijgen tot de herziene versie van een document? Of u nu aan samenwerkingsprojecten werkt of eenvoudigweg documentrevisies moet beheren, Aspose.Words voor .NET is uw favoriete tool. Deze tutorial begeleidt u door het hele proces, van het instellen van uw omgeving tot het openen en weergeven van revisies in een Word-document. Dus laten we er meteen in duiken!
 
-## Stap 1: Het document laden
+## Vereisten
 
-De eerste stap is het uploaden van het document met de revisies.
+Voordat we aan de slag gaan, heb je een paar dingen nodig:
+
+1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Visual Studio of een andere IDE die .NET ondersteunt.
+3. Basiskennis van C#: dit helpt u bij het volgen van het codeergedeelte.
+
+Zorg ervoor dat u aan deze vereisten voldoet voordat u doorgaat met de volgende stappen.
+
+## Naamruimten importeren
+
+Allereerst moet u de benodigde naamruimten importeren. Dit is een cruciale stap om ervoor te zorgen dat uw code de Aspose.Words voor .NET-bibliotheek herkent.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Laten we het proces opsplitsen in eenvoudige, gemakkelijk te volgen stappen.
+
+## Stap 1: Het documentpad instellen
+
+Voordat u met het document kunt werken, moet u het pad opgeven waar uw document zich bevindt. Dit is essentieel voor de code om het bestand te vinden en te manipuleren.
+
+```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Stap 2: Het document laden
+
+ Vervolgens laadt u het document in uw toepassing. Deze stap omvat het maken van een nieuw`Document` object en initialiseer het met het pad naar uw document.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## Stap 3: Lijstlabels bijwerken
+
+Als uw document lijsten bevat, is het belangrijk om de lijstlabels bij te werken. Dit zorgt ervoor dat alle lijstitems correct zijn genummerd en opgemaakt.
+
+```csharp
 doc.UpdateListLabels();
 ```
 
-## Stap 2: Toegang tot de herziene versie
+## Stap 4: Overschakelen naar de herziene versie
 
-We gaan nu verder met de herziene versie van het document.
-
-```csharp
-doc.RevisionsView = RevisionsView.Final;
-```
-
-## Stap 3: Blader door revisies
-
-Vervolgens doorlopen we de revisies die in het document aanwezig zijn en geven we specifieke informatie weer voor alinea's die lijstitems zijn.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-     if (revision.ParentNode.NodeType == NodeType.Paragraph)
-     {
-         Paragraph paragraph = (Paragraph)revision.ParentNode;
-         if (paragraph.IsListItem)
-         {
-             Console.WriteLine(paragraph.ListLabel.LabelString);
-             Console.WriteLine(paragraph.ListFormat.ListLevel);
-         }
-     }
-}
-```
-
-### Voorbeeldbroncode voor Access Revised Version met Aspose.Words voor .NET
-
-Hier is de volledige broncode voor toegang tot de herziene versie van een document met Aspose.Words voor .NET:
-
-```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-doc.UpdateListLabels();
-
-// Schakel over naar de herziene versie van het document.
-doc.RevisionsView = RevisionsView.Final;
-
-foreach (Revision revision in doc.Revisions)
-{
-	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
-	 {
-		 Paragraph paragraph = (Paragraph)revision.ParentNode;
-		 if (paragraph.IsListItem)
-		 {
-			 Console.WriteLine(paragraph.ListLabel.LabelString);
-			 Console.WriteLine(paragraph.ListFormat.ListLevel);
-		 }
-	 }
-}
-```
-
-## Conclusie
-
-In deze zelfstudie hebben we geleerd hoe u toegang krijgt tot de herziene versie van een Word-document met Aspose.Words voor .NET. Door het document te laden, naar de herziene versie te navigeren en door de herzieningen te bladeren, konden we specifieke informatie verkrijgen voor paragrafen die lijstitems zijn. Aspose.Words voor .NET biedt krachtige functies voor het manipuleren van Word-documenten, inclusief toegang tot recensies. U kunt deze kennis nu gebruiken om toegang te krijgen tot de herziene versie van uw eigen Word-documenten met behulp van Aspose.Words voor .NET.
-
-### Veelgestelde vragen
-
-#### Vraag: Hoe laad ik een document met revisies in Aspose.Words voor .NET?
-
- EEN: Gebruik de`Document` klasse van Aspose.Words voor .NET om een document te laden vanuit een bestand met revisies. U kunt het volledige documentpad opgeven.
-
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
-
-#### Vraag: Hoe krijg ik toegang tot de herziene versie van een document in Aspose.Words voor .NET?
-
- EEN: Gebruik de`RevisionsView` eigendom van de`Document` bezwaar maken tegen toegang tot de herziene versie van het document. U kunt de waarde van de`RevisionsView`eigendom aan`RevisionsView.Final` om de definitieve versie zonder de revisies weer te geven.
+Laten we nu overschakelen naar de herziene versie van het document. Deze stap is cruciaal als u de revisies wilt openen en weergeven.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### Vraag: Hoe blader ik door documentrevisies in Aspose.Words voor .NET?
+## Stap 5: Herhaal de revisies
 
-EEN: Gebruik een`foreach` lus om de revisies in het document te doorlopen. U kunt gebruik maken van de`Revisions` eigendom van de`Document` object om een verzameling van alle revisies van het document te krijgen.
+ Om toegang te krijgen tot de revisies, moet u de`Revisions` verzameling van het document. Deze stap omvat het gebruik van een`foreach` lus om elke revisie te doorlopen.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     // Verwerk elke revisie hier
+    // Extra code komt hier te staan
 }
 ```
 
-#### Vraag: Hoe controleer ik of een alinea een lijstitem is in Aspose.Words voor .NET?
+## Stap 6: Het type bovenliggende knooppunt controleren
 
- EEN: Gebruik de`IsListItem` eigendom van de`Paragraph` object om te controleren of een alinea een lijstitem is. De`IsListItem` eigendommen retourneren`true` als de alinea een lijstitem is, wordt deze anders geretourneerd`false`.
+ Controleer voor elke revisie of het bovenliggende knooppunt van het type is`Paragraph`. Dit is belangrijk omdat we toegang willen krijgen tot de paragraaf met de revisie.
+
+```csharp
+if (revision.ParentNode.NodeType == NodeType.Paragraph)
+{
+    // Extra code komt hier te staan
+}
+```
+
+## Stap 7: Toegang tot de paragraaf
+
+ Zodra u hebt bevestigd dat het bovenliggende knooppunt een alinea is, cast u deze naar a`Paragraph` voorwerp. Met deze stap kunt u met de alinea en de eigenschappen ervan werken.
+
+```csharp
+Paragraph paragraph = (Paragraph)revision.ParentNode;
+```
+
+## Stap 8: Controleren of de alinea een lijstitem is
+
+Controleer vervolgens of de alinea een lijstitem is. Dit is belangrijk omdat lijstitems specifieke eigenschappen hebben waartoe we toegang moeten hebben.
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     // De alinea is een lijstitem
-}
-else
-{
-     // De alinea is geen lijstitem
+    // Extra code komt hier te staan
 }
 ```
+
+## Stap 9: Het lijstlabel en niveau weergeven
+
+Geef ten slotte het lijstlabel en het lijstniveau van de alinea weer. Deze stap biedt nuttige informatie over het lijstitem, zoals de nummering en het inspringniveau.
+
+```csharp
+Console.WriteLine(paragraph.ListLabel.LabelString);
+Console.WriteLine(paragraph.ListFormat.ListLevel);
+```
+
+## Conclusie
+
+En daar heb je het! U hebt met succes toegang gekregen tot de herziene versie van een document met Aspose.Words voor .NET. Door deze stappen te volgen, kunt u documentrevisies eenvoudig beheren en weergeven. Of u nu te maken heeft met samenwerkingsprojecten of eenvoudigweg de veranderingen wilt bijhouden, Aspose.Words voor .NET heeft de oplossing voor u.
+
+## Veelgestelde vragen
+
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt maken, bewerken en manipuleren.
+
+### Heb ik toegang tot revisies in elk Word-document?
+Ja, zolang het document revisies bevat, kunt u deze openen met Aspose.Words voor .NET.
+
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
+ Ja, u kunt een licentie krijgen van[hier](https://purchase.aspose.com/buy) . Ze bieden ook een[gratis proefperiode](https://releases.aspose.com/) en een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
+
+### Is Aspose.Words voor .NET compatibel met alle .NET-versies?
+Aspose.Words voor .NET is compatibel met een breed scala aan .NET-versies. Meer details vindt u in de[documentatie](https://reference.aspose.com/words/net/).
+
+### Waar kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap op hun[forum](https://forum.aspose.com/c/words/8).

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/
 ---
-## introduzione
+## Introduzione
 
 Sei pronto a tuffarti nel mondo della conformità dei documenti con OOXML ISO 29500_2008_Strict? Facciamo un viaggio attraverso questo tutorial completo utilizzando Aspose.Words per .NET. Analizzeremo ogni passaggio, rendendolo estremamente facile da seguire e implementare. Quindi, allacciate le cinture e iniziamo!
 

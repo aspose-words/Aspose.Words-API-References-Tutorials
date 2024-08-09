@@ -20,7 +20,7 @@ Avant de passer aux choses sérieuses, assurons-nous que vous disposez de tout c
 3. .NET Framework : assurez-vous que .NET Framework est installé.
 4. Un document Word : vous aurez besoin d'un exemple de document Word avec lequel travailler.
 
-Vous avez tout ? Super! Allons-nous en.
+Vous avez tout ? Super! Passons à autre chose.
 
 ## Importer des espaces de noms
 
@@ -74,7 +74,7 @@ Et voilà ! Vous venez de passer à un paragraphe spécifique et d'y ajouter du 
 
 ## Conclusion
 
-Et voila! Passer à un paragraphe spécifique dans un document Word à l’aide d’Aspose.Words pour .NET est aussi simple que bonjour. Avec seulement quelques lignes de code, vous pouvez automatiser votre processus d'édition de documents et gagner beaucoup de temps. Ainsi, la prochaine fois que vous aurez besoin de parcourir un document par programmation, vous saurez exactement quoi faire.
+Et voilà ! Passer à un paragraphe spécifique dans un document Word à l’aide d’Aspose.Words pour .NET est aussi simple que bonjour. Avec seulement quelques lignes de code, vous pouvez automatiser votre processus d'édition de documents et gagner beaucoup de temps. Ainsi, la prochaine fois que vous aurez besoin de parcourir un document par programmation, vous saurez exactement quoi faire.
 
 ## FAQ
 

@@ -9,13 +9,13 @@ url: /ko/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 ## 소개
 
-안녕하세요! 특히 아시아 타이포그래피를 다룰 때 Word 문서에서 간격과 들여쓰기를 조정하는 방법이 궁금하신가요? 중국어, 일본어, 한국어 등의 언어가 포함된 문서로 작업하는 경우 기본 설정이 항상 만족스럽지는 않다는 것을 알 수 있습니다. 두려워하지 마세요! 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 아시아 단락 간격과 들여쓰기를 변경하는 방법에 대해 알아봅니다. 생각보다 쉬우며 문서를 더욱 전문적으로 보이게 만들 수 있습니다. 문서 서식을 개선할 준비가 되셨나요? 시작하자!
+안녕하세요! 특히 아시아 타이포그래피를 다룰 때 Word 문서에서 간격과 들여쓰기를 조정하는 방법이 궁금하신가요? 중국어, 일본어, 한국어 등의 언어가 포함된 문서로 작업하는 경우 기본 설정이 항상 만족스럽지는 않다는 것을 알 수 있습니다. 두려워하지 마세요! 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 아시아 단락 간격과 들여쓰기를 변경하는 방법에 대해 알아봅니다. 생각보다 쉬우며 문서를 더욱 전문적으로 보이게 만들 수 있습니다. 문서 서식을 개선할 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 
 코드를 살펴보기 전에 따라야 할 모든 것이 준비되어 있는지 확인하겠습니다.
 
-1.  .NET 라이브러리용 Aspose.Words: .NET 라이브러리용 Aspose.Words가 있는지 확인하세요. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET 라이브러리용 Aspose.Words: .NET 라이브러리용 Aspose.Words가 있는지 확인하세요. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: 개발 환경 설정이 필요합니다. Visual Studio는 .NET 개발에 널리 사용되는 선택입니다.
 3. Word 문서: 가지고 놀 수 있는 Word 문서를 준비하세요. 우리는 "Asian typography.docx"라는 샘플 문서를 사용할 것입니다.
 4. C# 기본 지식: 코드 예제를 따르려면 C# 프로그래밍에 익숙해야 합니다.
@@ -97,7 +97,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 예, 이러한 설정은 모든 텍스트에 적용할 수 있지만 고유한 간격 및 들여쓰기 요구 사항으로 인해 아시아 타이포그래피에 특히 유용합니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
- 예, Aspose.Words for .NET은 유료 라이브러리이지만[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 그것을 시험해보려고.
+ 예, Aspose.Words for .NET은 유료 라이브러리이지만[무료 평가판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 그것을 시험해보려고.
 
 ### 추가 문서는 어디서 찾을 수 있나요?
  다음에서 포괄적인 문서를 찾을 수 있습니다.[.NET 문서 페이지용 Aspose.Words](https://reference.aspose.com/words/net/).

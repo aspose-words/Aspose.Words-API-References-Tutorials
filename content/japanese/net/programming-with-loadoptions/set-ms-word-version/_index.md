@@ -86,4 +86,4 @@ Aspose.Words for .NET で MS Word のバージョンを設定するのは、管�
 はい、Aspose.Words は、Word 文書のほぼすべての側面を操作できる包括的なライブラリです。
 
 ### その他の例やドキュメントはどこで見つかりますか?
-チェックしてください[ドキュメンテーション](https://reference.aspose.com/words/net/)より多くの例と詳細な情報については、こちらをご覧ください。
+チェックしてください[ドキュメント](https://reference.aspose.com/words/net/)より多くの例と詳細な情報については、こちらをご覧ください。

@@ -16,7 +16,7 @@ Bienvenido a este tutorial detallado sobre el uso de paneles de tareas de extens
 Antes de sumergirnos, asegurémonos de que tiene todo lo que necesita:
 
 -  Aspose.Words para .NET: puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
-- Entorno de desarrollo .NET: Visual Studio o cualquier otro IDE que prefiera.
+- Entorno de desarrollo .NET: Visual Studio o cualquier otro IDE que prefieras.
 - Conocimientos básicos de C#: esto le ayudará a seguir los ejemplos de código.
 -  Licencia para Aspose.Words: Puedes comprar una[aquí](https://purchase.aspose.com/buy) u obtener una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.WebExtensions;
 ```
 
-## Guía paso por paso
+## Guía paso a paso
 
 Ahora, dividamos el proceso en pasos fáciles de seguir.
 
@@ -147,7 +147,7 @@ Este código carga el documento e imprime el proveedor, la versión y el identif
 
 ## Conclusión
 
-¡Y eso es! Ha agregado y configurado con éxito un panel de tareas de extensión web en un documento de Word usando Aspose.Words para .NET. Esta poderosa característica puede mejorar significativamente sus documentos de Word al proporcionar funcionalidades adicionales directamente dentro del documento. 
+¡Y eso es todo! Ha agregado y configurado con éxito un panel de tareas de extensión web en un documento de Word usando Aspose.Words para .NET. Esta poderosa característica puede mejorar significativamente sus documentos de Word al proporcionar funcionalidades adicionales directamente dentro del documento. 
 
 ## Preguntas frecuentes
 

@@ -90,7 +90,7 @@ doc.Save(dataDir + "Document.Signed.docx");
 
 ## Conclusion
 
-Et voila! Vous avez signé avec succès un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez vous assurer que vos documents sont signés et authentifiés en toute sécurité. N'oubliez pas que les signatures numériques sont un outil puissant pour protéger l'intégrité de vos documents, alors utilisez-les chaque fois que cela est nécessaire.
+Et voilà ! Vous avez signé avec succès un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez vous assurer que vos documents sont signés et authentifiés en toute sécurité. N'oubliez pas que les signatures numériques sont un outil puissant pour protéger l'intégrité de vos documents, alors utilisez-les chaque fois que cela est nécessaire.
 
 ## FAQ
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/clone-and-combine-documents/insert-document-at-mail-merge/
 ---
-## Úvod
+## Zavedení
 
 Vítejte ve světě automatizace dokumentů s Aspose.Words pro .NET! Přemýšleli jste někdy o tom, jak dynamicky vkládat dokumenty do určitých polí v hlavním dokumentu během operace hromadné korespondence? Tak to jste na správném místě. Tento tutoriál vás krok za krokem provede procesem vkládání dokumentů do polí hromadné korespondence pomocí Aspose.Words for .NET. Je to jako skládání puzzle, kde každý dílek dokonale zapadne na své místo. Takže, pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Vítejte ve světě automatizace dokumentů s Aspose.Words pro .NET! Přemýšle
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words pro .NET: Můžete[stáhněte si nejnovější verzi zde](https://releases.aspose.com/words/net/) . Pokud potřebujete zakoupit licenci, můžete tak učinit[tady](https://purchase.aspose.com/buy) . Případně můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo to zkuste s a[zkušební verze zdarma](https://releases.aspose.com/).
+1.  Aspose.Words pro .NET: Můžete[stáhněte si nejnovější verzi zde](https://releases.aspose.com/words/net/) . Pokud potřebujete zakoupit licenci, můžete tak učinit[zde](https://purchase.aspose.com/buy) . Případně můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo to zkuste s a[zkušební verze zdarma](https://releases.aspose.com/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné C# IDE.
 3. Základní znalost C#: Díky znalosti programování v C# bude tento tutoriál hračkou.
 
@@ -139,7 +139,7 @@ A tady to máte! Úspěšně jste vložili dokumenty do určitých polí během 
 ## FAQ
 
 ### Mohu vložit více dokumentů do různých slučovacích polí?
-Ano můžeš. Jednoduše zadejte příslušná slučovací pole a odpovídající cesty dokumentu v`MailMerge.Execute` metoda.
+Ano, můžete. Jednoduše zadejte příslušná slučovací pole a odpovídající cesty dokumentu v`MailMerge.Execute` metoda.
 
 ### Je možné formátovat vložený dokument jinak než hlavní dokument?
  Absolutně! Můžete použít`ImportFormatMode` parametr v`NodeImporter` k ovládání formátování.

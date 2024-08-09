@@ -75,13 +75,13 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Aspose.Words for .NET은 프로그래밍 방식으로 Word 문서를 생성, 편집, 변환 및 조작할 수 있는 강력한 라이브러리입니다.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) , 그러나 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해 보세요[구매 옵션](https://purchase.aspose.com/buy).
+ 다음으로 시작할 수 있습니다.[무료 평가판](https://releases.aspose.com/) , 그러나 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해 보세요[구매 옵션](https://purchase.aspose.com/buy).
 
 ### Aspose.Words는 어떤 보호 유형을 감지할 수 있나요?
 Aspose.Words는 NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments 및 AllowOnlyFormFields와 같은 다양한 보호 유형을 감지할 수 있습니다.
 
 ### 문제가 발생하면 어떻게 지원을 받을 수 있나요?
- 문제가 있는 경우[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8)도와주기 위해.
+ 문제가 있는 경우[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8)도움을 위해.
 
 ### Aspose.Words는 .NET Core와 호환됩니까?
 예, Aspose.Words는 .NET Framework 및 .NET Core와 모두 호환됩니다.

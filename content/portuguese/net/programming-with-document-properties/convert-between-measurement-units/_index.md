@@ -82,7 +82,7 @@ Isso salva seu documento com as margens e distâncias especificadas em pontos.
 
 ## Conclusão
 
-E aí está! Você converteu e definiu com sucesso margens e distâncias em um documento do Word usando Aspose.Words for .NET. Seguindo essas etapas, você pode lidar facilmente com várias conversões de unidades, facilitando muito o processo de personalização de documentos. Continue experimentando diferentes configurações e explore as vastas funcionalidades que o Aspose.Words oferece. Boa codificação!
+E aí está! Você converteu e definiu com sucesso margens e distâncias em um documento do Word usando Aspose.Words for .NET. Seguindo essas etapas, você pode lidar facilmente com várias conversões de unidades, facilitando o processo de personalização de documentos. Continue experimentando diferentes configurações e explore as vastas funcionalidades que o Aspose.Words oferece. Boa codificação!
 
 ## Perguntas frequentes
 
@@ -93,10 +93,10 @@ E aí está! Você converteu e definiu com sucesso margens e distâncias em um d
 Embora você possa usar o Aspose.Words sem licença, alguns recursos avançados podem ser restritos. A obtenção de uma licença garante funcionalidade total.
 
 ### Como instalo o Aspose.Words para .NET?
- Você pode baixá-lo no[local na rede Internet](https://releases.aspose.com/words/net/) e siga as instruções de instalação.
+ Você pode baixá-lo no[site](https://releases.aspose.com/words/net/) e siga as instruções de instalação.
 
 ### Posso definir unidades diferentes para seções diferentes de um documento?
  Sim, você pode personalizar margens e outras configurações para diferentes seções usando o`Section` aula.
 
 ### Que outros recursos o Aspose.Words oferece?
- Aspose.Words oferece suporte a uma ampla gama de recursos, incluindo conversão de documentos, mala direta e extensas opções de formatação. Verifica a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Aspose.Words oferece suporte a uma ampla gama de recursos, incluindo conversão de documentos, mala direta e amplas opções de formatação. Verifique o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.

@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- ال`MetafileRenderingOptions` توفر الفئة خيارات لكيفية عرض ملفات التعريف (مثل WMF). عن طريق الإعداد`ScaleWmfFontsToMetafileSize` ل`false`، أنت تطلب من Aspose.Words عدم تغيير حجم الخطوط وفقًا لحجم ملف التعريف، مما قد يساعد في تقليل الحجم الإجمالي لملف PDF.
+ ال`MetafileRenderingOptions` توفر الفئة خيارات لكيفية عرض ملفات التعريف (مثل WMF). عن طريق الإعداد`ScaleWmfFontsToMetafileSize` ل`false`، فإنك تطلب من Aspose.Words عدم تغيير حجم الخطوط وفقًا لحجم ملف التعريف، مما قد يساعد في تقليل الحجم الإجمالي لملف PDF.
 
 ## الخطوة 3: ضبط خيارات حفظ PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- ال`PdfSaveOptions` تتيح لك الفئة تحديد إعدادات مختلفة لحفظ المستند كملف PDF. عن طريق تعيين تكوينها مسبقا`MetafileRenderingOptions` إلى`MetafileRenderingOptions` ممتلكات`PdfSaveOptions`، فإنك تتأكد من حفظ المستند وفقًا لإعدادات عرض ملف التعريف المطلوب.
+ ال`PdfSaveOptions` تتيح لك الفئة تحديد إعدادات مختلفة لحفظ المستند كملف PDF. عن طريق تعيين تكوينها مسبقا`MetafileRenderingOptions` إلى`MetafileRenderingOptions` ملكية`PdfSaveOptions`، فإنك تتأكد من حفظ المستند وفقًا لإعدادات عرض ملف التعريف المطلوب.
 
 ## الخطوة 4: احفظ المستند بصيغة PDF
 
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 
 ### ما هو WMF ولماذا هو مهم بالنسبة لحجم PDF؟
 
-WMF (ملف تعريف Windows) هو تنسيق رسومي يستخدم في Microsoft Windows. يمكن أن تحتوي على بيانات متجهة وبيانات نقطية. نظرًا لأنه يمكن تغيير حجم البيانات المتجهة ومعالجتها، فمن المهم التعامل معها بشكل صحيح لتجنب ملفات PDF الكبيرة غير الضرورية.
+WMF (ملف تعريف Windows) هو تنسيق رسومي يستخدم في Microsoft Windows. يمكن أن تحتوي على بيانات متجهة وبيانات نقطية. نظرًا لأنه يمكن قياس البيانات المتجهة ومعالجتها، فمن المهم التعامل معها بشكل صحيح لتجنب ملفات PDF الكبيرة غير الضرورية.
 
 ### كيف يؤثر تغيير حجم خطوط WMF إلى حجم ملف التعريف على ملف PDF؟
 

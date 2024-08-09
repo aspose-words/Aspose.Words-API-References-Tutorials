@@ -10,7 +10,7 @@ url: /pl/net/working-with-section/clone-section/
 
 ## Wstęp
 
-Hej, drodzy koderzy! 🚀 Czy zdarzyło Ci się kiedyś, że po kolana w projekcie dokumentu w programie Word żałowałeś, że nie możesz po prostu sklonować sekcji, zamiast powtarzać całą tę ciężką pracę? Zastanów się? Dzięki Aspose.Words dla .NET możesz łatwo klonować sekcje w dokumentach Word. Ten samouczek przeprowadzi Cię przez ten proces krok po kroku, dzięki czemu replikowanie sekcji w dokumentach będzie dziecinnie proste. Przejdźmy więc do rzeczy i sprawmy, że zadania związane z manipulacją dokumentami staną się o wiele łatwiejsze!
+Hej, drodzy koderzy! 🚀 Czy zdarzyło Ci się kiedyś, że po kolana w projekcie dokumentu w programie Word żałowałeś, że nie możesz po prostu sklonować sekcji, zamiast powtarzać całą tę ciężką pracę? Cóż, zgadnij co? Dzięki Aspose.Words dla .NET możesz łatwo klonować sekcje w dokumentach Word. Ten samouczek przeprowadzi Cię przez ten proces krok po kroku, dzięki czemu replikowanie sekcji w dokumentach będzie dziecinnie proste. Przejdźmy więc do rzeczy i sprawmy, że zadania związane z manipulacją dokumentami staną się o wiele łatwiejsze!
 
 ## Warunki wstępne
 
@@ -152,7 +152,7 @@ Tak, możesz sklonować wiele sekcji, przeglądając kolekcję sekcji i klonują
 
 ### Jak dostosować sklonowaną sekcję?
 
- Możesz dostosować sklonowaną sekcję, modyfikując jej właściwości i zawartość po sklonowaniu. Użyj`Section` metody i właściwości klas umożliwiające wprowadzanie zmian.
+ Możesz dostosować sklonowaną sekcję, modyfikując jej właściwości i zawartość po sklonowaniu. Skorzystaj z`Section` metody i właściwości klas umożliwiające wprowadzanie zmian.
 
 ### Czy Aspose.Words jest kompatybilny z różnymi wersjami programu Word?
 
@@ -160,4 +160,4 @@ Tak, Aspose.Words obsługuje różne formaty Worda, w tym DOC, DOCX, RTF i inne.
 
 ### Gdzie mogę znaleźć więcej zasobów na temat Aspose.Words?
 
- Więcej informacji można znaleźć na stronie[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) albo[forum wsparcia](https://forum.aspose.com/c/words/8) za pomoc i dyskusję.
+ Aby uzyskać więcej informacji, odwiedź stronę[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) lub[forum wsparcia](https://forum.aspose.com/c/words/8) za pomoc i dyskusję.

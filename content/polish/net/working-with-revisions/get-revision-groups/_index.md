@@ -2,86 +2,103 @@
 title: Pobierz grupy wersji
 linktitle: Pobierz grupy wersji
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Uzyskaj grupy wersji w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak odzyskać grupy wersji z dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku. Idealny do zarządzania dokumentami.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/get-revision-groups/
 ---
+## Wstęp
 
-W tym przewodniku krok po kroku powiemy Ci, jak uzyskać grupy wersji w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
+W dynamicznym świecie przetwarzania dokumentów śledzenie zmian i poprawek w dokumentach programu Word ma kluczowe znaczenie. Aspose.Words dla .NET oferuje solidny zestaw funkcji pozwalających bezproblemowo sprostać takim wymaganiom. W tym samouczku przeprowadzimy Cię przez proces pobierania grup wersji z dokumentu programu Word przy użyciu Aspose.Words dla .NET. Zagłębmy się więc w szczegóły i uprośćmy Twoje zadania związane z zarządzaniem dokumentami!
 
-## Krok 1: Ładowanie dokumentu
+## Warunki wstępne
 
-Pierwszym krokiem jest przesłanie dokumentu zawierającego poprawki.
+Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
+
+1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że pobrałeś i zainstalowałeś najnowszą wersję Aspose.Words dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: skonfiguruj środowisko programistyczne .NET (np. Visual Studio).
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie korzystna.
+
+## Importuj przestrzenie nazw
+
+Najpierw musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#. Ten krok zapewnia dostęp do klas i metod udostępnianych przez Aspose.Words dla .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## Krok 2: Przeglądaj grupy wersji
+Podzielmy teraz proces pobierania grup wersji z dokumentu programu Word na łatwe do wykonania kroki.
 
-Następnie przejdziemy przez grupy wersji obecne w dokumencie i wyświetlimy ich szczegóły, takie jak autor, typ wersji i poprawiony tekst.
+## Krok 1: Zainicjuj dokument
+
+ Pierwszym krokiem jest inicjalizacja pliku`Document` obiekt ścieżką do dokumentu programu Word. Obiekt ten umożliwi Ci dostęp i manipulowanie zawartością dokumentu.
 
 ```csharp
-foreach(RevisionGroup group in doc.Revisions.Groups)
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## Krok 2: Uzyskaj dostęp do grup wersji
+
+Następnie uzyskasz dostęp do grup wersji w dokumencie. Grupy rewizyjne pomagają w organizowaniu zmian wprowadzonych przez różnych autorów.
+
+```csharp
+foreach (RevisionGroup group in doc.Revisions.Groups)
 {
-     Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-     Console.WriteLine(group.Text);
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
 }
 ```
 
+## Krok 3: Iteruj po grupach poprawek
 
-### Przykładowy kod źródłowy dla opcji Pobierz grupy wersji przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy umożliwiający pobranie grup wersji w dokumencie przy użyciu Aspose.Words dla .NET:
+Na tym etapie będziesz przeglądać każdą grupę wersji, aby uzyskać szczegółowe informacje, takie jak autor wersji, typ wersji i tekst powiązany z każdą wersją.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-foreach(RevisionGroup group in doc.Revisions.Groups)
+foreach (RevisionGroup group in doc.Revisions.Groups)
 {
-	 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-	 Console.WriteLine(group.Text);
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
+}
+```
+
+## Krok 4: Wyświetl informacje o wersji
+
+Na koniec wyświetl zebrane informacje o wersji. Pomoże Ci to zrozumieć, kto dokonał jakich zmian i jaki charakter miały te zmiany.
+
+```csharp
+foreach (RevisionGroup group in doc.Revisions.Groups)
+{
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
 }
 ```
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak uzyskać grupy wersji w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcjami, aby załadować dokument i przeglądać grupy recenzji, wyświetlając szczegóły, takie jak autor i typ recenzji. Możesz teraz zastosować tę wiedzę do analizy wersji własnego dokumentu programu Word przy użyciu Aspose.Words dla .NET.
+Pobieranie grup wersji z dokumentu programu Word za pomocą Aspose.Words dla .NET jest prostym procesem. Wykonując kroki opisane w tym samouczku, możesz łatwo zarządzać zmianami w dokumentach i śledzić je. Niezależnie od tego, czy współpracujesz nad projektem, czy po prostu śledzisz zmiany, ta funkcja niewątpliwie okaże się nieoceniona.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jak przesłać dokument do Aspose.Words dla .NET?
+### Czy mogę filtrować wersje według konkretnego autora?
 
- O: Skorzystaj z`Document` klasa Aspose.Words dla .NET, aby załadować dokument z pliku. Można określić pełną ścieżkę dokumentu.
+ Tak, możesz filtrować wersje według konkretnego autora, zaznaczając opcję`Author` własność każdego`RevisionGroup` podczas iteracji.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Jak uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
 
-#### P: Jak przeglądać grupy wersji w dokumencie w Aspose.Words dla .NET?
+ Możesz uzyskać bezpłatną wersję próbną Aspose.Words dla .NET[Tutaj](https://releases.aspose.com/).
 
- O: Skorzystaj z`Groups` własność dokumentu`Revisions`obiekt, aby uzyskać kolekcję grup wersji. Następnie możesz użyć pętli, aby przeglądać każdą grupę recenzji.
+### Jakie inne funkcje oferuje Aspose.Words dla .NET do zarządzania wersjami?
 
-```csharp
-foreach(RevisionGroup group in doc.Revisions.Groups)
-{
-     // Przetwórz tutaj każdą grupę recenzji
-}
-```
+ Aspose.Words dla .NET oferuje funkcje takie jak akceptowanie lub odrzucanie wersji, porównywanie dokumentów i wiele innych. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać szczegółowe informacje.
 
-#### P: Jak zdobyć autora grupy recenzji w Aspose.Words dla .NET?
+### Czy można uzyskać wsparcie dla Aspose.Words dla .NET?
 
- O: Skorzystaj z`Author` własność`RevisionGroup` obiekt, aby uzyskać autora grupy wersji.
+Tak, możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).
 
-```csharp
-string author = group.Author;
-```
+### Jak mogę kupić Aspose.Words dla .NET?
 
-#### P: Jak uzyskać typ wersji grupy wersji w Aspose.Words dla .NET?
-
- O: Skorzystaj z`RevisionType` własność`RevisionGroup` obiekt, aby uzyskać typ wersji grupy.
-
-```csharp
-string revisionType = group.RevisionType;
-```
+ Możesz kupić Aspose.Words dla .NET[Tutaj](https://purchase.aspose.com/buy).

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
-## introduzione
+## Introduzione
 
 Hai mai desiderato inserire dinamicamente dati XML in un documento Word? Bene, sei fortunato! Aspose.Words per .NET rende questo compito un gioco da ragazzi. In questo tutorial, approfondiremo la mappatura XML degli intervalli di tag dei documenti strutturati. Questa funzionalità ti consente di associare parti XML personalizzate ai controlli del contenuto, garantendo che il contenuto del documento si aggiorni perfettamente con i tuoi dati XML. Pronto a trasformare i tuoi documenti in capolavori dinamici.
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 
 ## Conclusione
 
-il gioco è fatto! Hai mappato con successo una parte XML a un tag di documento strutturato in un documento di Word utilizzando Aspose.Words per .NET. Questa potente funzionalità ti consente di creare documenti dinamici e basati sui dati senza sforzo. Che tu stia generando report, fatture o qualsiasi altro tipo di documento, la mappatura XML può semplificare notevolmente il tuo flusso di lavoro.
+Ed ecco qua! Hai mappato con successo una parte XML a un tag di documento strutturato in un documento di Word utilizzando Aspose.Words per .NET. Questa potente funzionalità ti consente di creare documenti dinamici e basati sui dati senza sforzo. Che tu stia generando report, fatture o qualsiasi altro tipo di documento, la mappatura XML può semplificare notevolmente il tuo flusso di lavoro.
 
 ## Domande frequenti
 

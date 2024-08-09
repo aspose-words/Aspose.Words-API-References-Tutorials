@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /sv/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Introduktion
 
-Välkommen till den här omfattande guiden om hur du hanterar teckensnittsersättning med Aspose.Words för .NET. Om du någonsin har kämpat med att teckensnitt inte visas korrekt i dina dokument, har du kommit till rätt plats. Denna handledning tar dig igenom en steg-för-steg-process för att effektivt hantera teckensnittsersättning utan suffix. Låt oss börja!
+Välkommen till den här omfattande guiden om hur du hanterar teckensnittsersättning med Aspose.Words för .NET. Om du någonsin har kämpat med att teckensnitt inte visas korrekt i dina dokument, har du kommit till rätt plats. Denna handledning tar dig igenom en steg-för-steg-process för att effektivt hantera teckensnittsersättning utan suffix.
 
 ## Förutsättningar
 
@@ -17,7 +18,7 @@ Innan du dyker in i handledningen, se till att du har följande:
 - Grundläggande kunskaper om C#: Att förstå C#-programmering gör det lättare att följa och implementera stegen.
 -  Aspose.Words för .NET Library: Ladda ner och installera biblioteket från[nedladdningslänk](https://releases.aspose.com/words/net/).
 - Utvecklingsmiljö: Konfigurera en utvecklingsmiljö som Visual Studio för att skriva och köra din kod.
-- Exempeldokument: Ett exempeldokument (t.ex.`Rendering.docx`) att arbeta med under denna handledning.
+-  Exempeldokument: Ett exempeldokument (t.ex.`Rendering.docx`) att arbeta med under denna handledning.
 
 ## Importera namnområden
 
@@ -26,7 +27,6 @@ Först måste vi importera de nödvändiga namnområdena för att komma åt klas
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Steg 5: Skapa varningshanterarens klass
 
-För att hantera varningar effektivt, skapa en anpassad klass som implementerar`IWarningCallback` gränssnitt. Den här klassen kommer att fånga och logga alla varningar för teckensnittsersättning.
+ För att hantera varningar effektivt, skapa en anpassad klass som implementerar`IWarningCallback` gränssnitt. Den här klassen kommer att fånga och logga alla varningar för teckensnittsersättning.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,31 +93,31 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 I den här klassen:
--  De`Warning` metoden fångar varningar relaterade till teckensnittsersättning.
+-  De`Warning`metoden fångar varningar relaterade till teckensnittsersättning.
 -  De`FontWarnings` insamling lagrar dessa varningar för vidare inspektion eller loggning.
 
 ## Slutsats
 
 Du har nu bemästrat processen att hantera teckensnittsersättning utan suffix med Aspose.Words för .NET. Denna kunskap säkerställer att dina dokument behåller sitt avsedda utseende, oavsett vilka teckensnitt som finns tillgängliga i systemet. Fortsätt att experimentera med olika inställningar och källor för att fullt ut utnyttja kraften i Aspose.Words.
 
-## Vanliga frågor
+## FAQ's
 
-### F1: Hur kan jag använda typsnitt från flera anpassade kataloger?
+### Hur kan jag använda typsnitt från flera anpassade kataloger?
 
  Du kan lägga till flera`FolderFontSource` instanser till`fontSources` lista och uppdatera teckensnittskällorna därefter.
 
-### F2: Var kan jag ladda ner en gratis testversion av Aspose.Words för .NET?
+### Var kan jag ladda ner en gratis testversion av Aspose.Words för .NET?
 
  Du kan ladda ner en gratis testversion från[Aspose gratis provsida](https://releases.aspose.com/).
 
-###  F3: Kan jag hantera flera typer av varningar med hjälp av`IWarningCallback`?
+###  Kan jag hantera flera typer av varningar med`IWarningCallback`?
 
- Ja den`IWarningCallback` gränssnitt låter dig hantera olika typer av varningar, inte bara teckensnittsersättning.
+ Ja, den`IWarningCallback` gränssnitt låter dig hantera olika typer av varningar, inte bara teckensnittsersättning.
 
-### F4: Var kan jag få support för Aspose.Words?
+### Var kan jag få support för Aspose.Words?
 
  För support, besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8).
 
-### F5: Är det möjligt att köpa en tillfällig licens?
+### Är det möjligt att köpa en tillfällig licens?
 
  Ja, du kan få en tillfällig licens från[sida för tillfällig licens](https://purchase.aspose.com/temporary-license/).

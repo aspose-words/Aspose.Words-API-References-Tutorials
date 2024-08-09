@@ -17,7 +17,7 @@ url: /ar/net/working-with-fields/insert-merge-field-using-dom/
 
 1. المعرفة الأساسية بـ C#: يجب أن تكون مرتاحًا لبرمجة C#.
 2. تثبيت Visual Studio: تأكد من تثبيت Visual Studio أو أي برنامج C# IDE آخر على جهازك.
-3.  Aspose.Words for .NET: قم بتنزيل أحدث إصدار من Aspose.Words for .NET وتثبيته من[إطلاق](https://releases.aspose.com/words/net/).
+3.  Aspose.Words for .NET: قم بتنزيل أحدث إصدار من Aspose.Words for .NET وتثبيته من[الإصدارات](https://releases.aspose.com/words/net/).
 4.  ترخيص صالح: إذا لم يكن لديك ترخيص، يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
 
 ## الخطوة 1: قم بإعداد مشروعك

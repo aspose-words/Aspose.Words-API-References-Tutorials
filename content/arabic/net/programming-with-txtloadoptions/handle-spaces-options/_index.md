@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ## الأسئلة الشائعة
 
 ### كيف يمكنني التعامل مع المسافات في الملفات النصية باستخدام Aspose.Words لـ .NET؟  
- يمكنك استخدام ال`TxtLoadOptions` فئة لتحديد كيفية إدارة المسافات البادئة والزائدة عند تحميل الملفات النصية.
+ يمكنك استخدام`TxtLoadOptions` فئة لتحديد كيفية إدارة المسافات البادئة والزائدة عند تحميل الملفات النصية.
 
 ### هل يمكنني الاحتفاظ بالمسافات البادئة في المستند الخاص بي؟  
  نعم يمكنك تكوين`TxtLoadOptions` للحفاظ على المسافات الرائدة عن طريق الإعداد`LeadingSpacesOptions` ل`TxtLeadingSpacesOptions.None`.

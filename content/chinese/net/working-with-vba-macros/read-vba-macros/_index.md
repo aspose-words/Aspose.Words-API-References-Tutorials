@@ -9,7 +9,7 @@ url: /zh/net/working-with-vba-macros/read-vba-macros/
 ---
 ## 介绍
 
-您好，Word 文档向导！您是否想知道 Word 文档中那些漂亮的 VBA（Visual Basic for Applications）宏在幕后发生了什么？无论您是好奇的开发人员还是经验丰富的专业人士，了解如何读取 VBA 宏都可以打开一个全新的自动化和自定义世界。在本教程中，我们将指导您使用 Aspose.Words for .NET 从 Word 文档读取 VBA 宏的过程。使用这个强大的工具，您将能够窥视幕后并看到魔法的运作。那么，让我们开始释放 VBA 的力量吧！
+您好，Word 文档向导！您是否想知道 Word 文档中那些漂亮的 VBA（Visual Basic for Applications）宏在幕后发生了什么？无论您是好奇的开发人员还是经验丰富的专业人士，了解如何读取 VBA 宏都可以打开一个全新的自动化和自定义世界。在本教程中，我们将指导您使用 Aspose.Words for .NET 从 Word 文档读取 VBA 宏的过程。使用这个强大的工具，您将能够窥视其内部并看到魔法的运作。那么，让我们开始释放 VBA 的力量吧！
 
 ## 先决条件
 

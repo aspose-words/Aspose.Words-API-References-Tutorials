@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/ignore-text-boxes/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v tomto podrobném tutoriálu o používání Aspose.Words pro .NET ke slučování dokumentů aplikace Word při ignorování textových polí. Pokud chcete zefektivnit zpracování dokumentů a zajistit zachování formátování textových polí, jste na správném místě. Pojďme se ponořit do tohoto podrobného průvodce.
 
@@ -15,7 +15,7 @@ Vítejte v tomto podrobném tutoriálu o používání Aspose.Words pro .NET ke 
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words pro .NET: Stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pro .NET: Stáhněte si ji[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí .NET: Visual Studio nebo jakékoli jiné preferované IDE.
 3. Základní znalost C#: Pochopení základních programovacích konceptů v C#.
 
@@ -111,13 +111,13 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
  Aspose.Words for .NET je výkonná knihovna pro vytváření, manipulaci a konverzi dokumentů aplikace Word v aplikacích .NET.[Zjistěte více](https://reference.aspose.com/words/net/).
 
 ### Mohu Aspose.Words for .NET vyzkoušet před nákupem?
- Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Jak mohu získat dočasnou licenci pro Aspose.Words pro .NET?
- Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu podrobnější dokumentaci?
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat podporu pro Aspose.Words pro .NET?
- Pro podporu navštivte fóra Aspose[tady](https://forum.aspose.com/c/words/8).
+ Pro podporu navštivte fóra Aspose[zde](https://forum.aspose.com/c/words/8).

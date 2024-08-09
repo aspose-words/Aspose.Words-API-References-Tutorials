@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/working-with-fonts/set-font-fallback-settings/
 ---
+## 介绍
 
 在处理包含各种文本元素（例如不同语言或特殊字符）的文档时，确保这些元素正确显示至关重要。Aspose.Words for .NET 提供了一项名为“字体后备设置”的强大功能，当原始字体不支持某些字符时，它有助于定义替换字体的规则。在本指南中，我们将通过分步教程探索如何使用 Aspose.Words for .NET 设置字体后备设置。
 
@@ -49,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 步骤 3：配置字体设置
 
-创建一个新的`FontSettings`对象并从 XML 文件加载字体回退设置。此 XML 文件包含字体回退规则。
+创建新的`FontSettings`对象并从 XML 文件加载字体回退设置。此 XML 文件包含字体回退规则。
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## चरण 2: टेक्स्ट वाला फ़ील्ड डालें
 
- उपयोग`InsertField` उसकि विधि`DocumentBuilder` पाठ युक्त फ़ील्ड जोड़ने के लिए:
+ उपयोग`InsertField` की विधि`DocumentBuilder` पाठ युक्त फ़ील्ड जोड़ने के लिए:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```

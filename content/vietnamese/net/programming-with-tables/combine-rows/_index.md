@@ -112,4 +112,4 @@ Tuyệt đối! Bạn có thể tạo tập lệnh để tự động hóa quy t
 
 ### Tôi có thể nhận trợ giúp ở đâu nếu gặp vấn đề?
 
- Các[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) là nơi tuyệt vời để nhận trợ giúp và tìm giải pháp cho các vấn đề thường gặp.
+ các[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) là nơi tuyệt vời để nhận trợ giúp và tìm giải pháp cho các vấn đề thường gặp.

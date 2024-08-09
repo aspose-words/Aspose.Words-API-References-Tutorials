@@ -89,4 +89,4 @@ Oui, vous pouvez appliquer le formatage Bidi à des paragraphes ou des sections 
 Dans l'exemple fourni, le document est enregistré sous forme de fichier texte. Cependant, Aspose.Words prend également en charge l'enregistrement de documents dans différents formats tout en préservant les marques Bidi.
 
 ### Où puis-je trouver plus d’informations sur Aspose.Words pour .NET ?
- Vous pouvez en savoir plus sur Aspose.Words pour .NET via le[Documentation Aspose](https://reference.aspose.com/words/net/) et accédez au[Forum d'entraide](https://forum.aspose.com/c/words/8) pour une aide supplémentaire.
+ Vous pouvez en savoir plus sur Aspose.Words pour .NET via le[Documentation Aspose](https://reference.aspose.com/words/net/) et accédez au[Forum d'assistance](https://forum.aspose.com/c/words/8) pour une aide supplémentaire.

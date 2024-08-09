@@ -2,7 +2,7 @@
 title: การใช้เขตข้อมูลแบบฟอร์มใน Aspose.Words สำหรับ Java
 linktitle: การใช้เขตข้อมูลแบบฟอร์ม
 second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: เรียนรู้การใช้ Aspose.Words สำหรับ Java เพื่อสร้างเอกสาร Word แบบโต้ตอบพร้อมฟิลด์แบบฟอร์ม เริ่มตอนนี้เลย!
+description: เรียนรู้การใช้ Aspose.Words สำหรับ Java เพื่อสร้างเอกสาร Word แบบโต้ตอบพร้อมฟิลด์แบบฟอร์ม เริ่มต้นทันที!
 type: docs
 weight: 14
 url: /th/java/using-document-elements/using-form-fields/

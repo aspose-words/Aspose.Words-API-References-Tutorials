@@ -16,4 +16,4 @@ Of u nu documenten moet converteren, inhoud moet manipuleren, opmaak moet behere
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Meeteenheid](./measure-unit/) | Leer hoe u de functie voor maateenheden in Aspose.Words voor .NET configureert om de documentopmaak te behouden tijdens ODT-conversie. |
+| [Maateenheid](./measure-unit/) | Leer hoe u de functie voor maateenheden in Aspose.Words voor .NET configureert om de documentopmaak te behouden tijdens ODT-conversie. |

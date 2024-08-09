@@ -96,7 +96,7 @@ Herzlichen Glückwunsch! Sie haben erfolgreich Cid-URLs für MHTML-Ressourcen mi
 Durch das Exportieren von Cid-URLs für MHTML-Ressourcen wird sichergestellt, dass auf eingebettete Ressourcen in Ihrer MHTML-Datei ordnungsgemäß verwiesen wird, wodurch die Portabilität und Integrität der Dokumente verbessert wird.
 
 ### Kann ich das Ausgabeformat weiter anpassen?
- Ja, Aspose.Words für .NET bietet umfangreiche Anpassungsoptionen zum Speichern von Dokumenten. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Ja, Aspose.Words für .NET bietet umfangreiche Anpassungsoptionen zum Speichern von Dokumenten. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
  Ja, Sie benötigen eine Lizenz, um Aspose.Words für .NET zu verwenden. Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/) oder eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).

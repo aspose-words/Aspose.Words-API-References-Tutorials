@@ -15,11 +15,11 @@ Czy zastanawiałeś się kiedyś, jak urozmaicić spis treści (TOC) w dokumenta
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne IDE zgodne z C#.
 3. Dokument programu Word: w szczególności taki, który zawiera spis treści.
 
-Masz to wszystko? Wspaniały! Zaczynajmy.
+Masz to wszystko? Wspaniały! Rzućmy się.
 
 ## Importuj przestrzenie nazw
 
@@ -120,4 +120,4 @@ Kod skanuje wszystkie akapity ze stylem TOC, zatem modyfikuje wszystkie spisy tr
 Tak, podczas dodawania nowego tabulatora można określić różne wyrównania i style linii wiodących.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
- Tak, potrzebujesz ważnej licencji, aby używać Aspose.Words dla .NET po okresie próbnym. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) Lub[Kup jedno](https://purchase.aspose.com/buy).
+ Tak, potrzebujesz ważnej licencji, aby używać Aspose.Words dla .NET po okresie próbnym. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) Lub[kup jeden](https://purchase.aspose.com/buy).

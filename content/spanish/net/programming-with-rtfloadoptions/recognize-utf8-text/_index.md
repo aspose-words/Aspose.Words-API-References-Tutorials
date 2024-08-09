@@ -15,7 +15,7 @@ url: /es/net/programming-with-rtfloadoptions/recognize-utf8-text/
 
 Antes de pasar a la parte divertida, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Aspose.Words para la biblioteca .NET: puede[descarguelo aqui](https://releases.aspose.com/words/net/) . Si aún no lo has comprado, consigue un[prueba gratis](https://releases.aspose.com/) o[cómpralo aquí](https://purchase.aspose.com/buy).
+1.  Aspose.Words para la biblioteca .NET: puede[descárgalo aquí](https://releases.aspose.com/words/net/) . Si aún no lo has comprado, consigue un[prueba gratuita](https://releases.aspose.com/) o[cómpralo aquí](https://purchase.aspose.com/buy).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE que admita .NET.
 3. Conocimientos básicos de C#: necesitarás sentirte cómodo con C# para seguir adelante.
 
@@ -49,7 +49,7 @@ A continuación, debemos configurar las opciones de carga para reconocer texto U
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- Configurando`RecognizeUtf8Text` a`true`, le estamos diciendo a Aspose.Words que esté atento al texto UTF-8. Esto es muy útil cuando se trata de documentos que contienen una variedad de caracteres.
+ Al configurar`RecognizeUtf8Text` a`true`, le estamos diciendo a Aspose.Words que esté atento al texto UTF-8. Esto es muy útil cuando se trata de documentos que contienen una variedad de caracteres.
 
 ## Paso 3: cargue el documento
 
@@ -73,7 +73,7 @@ Esta línea guarda el documento con un nuevo nombre, para que pueda identificar 
 
 ## Conclusión
 
-¡Y ahí lo tienes! Acaba de aprender a reconocer texto UTF-8 en documentos de Word usando Aspose.Words para .NET. Este pequeño truco puede ahorrarle muchos dolores de cabeza al tratar con documentos multilingües o caracteres especiales.
+¡Y ahí lo tienes! Acaba de aprender cómo reconocer texto UTF-8 en documentos de Word usando Aspose.Words para .NET. Este pequeño truco puede ahorrarle muchos dolores de cabeza al tratar con documentos multilingües o caracteres especiales.
 
 Recuerde, los pasos clave son configurar las opciones de carga, cargar su documento y guardarlo. ¡Es tan simple como eso! Entonces, adelante, pruébalo. Te sorprenderá lo fácil que es manejar texto complejo en tus documentos de Word.
 

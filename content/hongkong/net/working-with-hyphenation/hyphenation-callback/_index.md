@@ -10,13 +10,13 @@ url: /zh-hant/net/working-with-hyphenation/hyphenation-callback/
 
 ## 介紹
 
-嘿！您是否曾經發現自己陷入了文字格式的複雜性中，尤其是在處理需要連字符的語言時？你不是一個人。連字符雖然對於正確的文字佈局至關重要，但也可能有點令人頭疼。但猜猜怎麼了？ Aspose.Words for .NET 為您提供支援。這個功能強大的庫允許您無縫管理文字格式，包括透過回調機制處理連字符。有興趣嗎？讓我們深入了解如何使用 Aspose.Words for .NET 實現連字符回呼的實質內容。
+嘿！您是否曾經發現自己陷入了文字格式的複雜性中，尤其是在處理需要連字符的語言時？你並不孤單。連字符雖然對於正確的文字佈局至關重要，但也可能有點令人頭疼。但你猜怎麼著？ Aspose.Words for .NET 為您提供支援。這個功能強大的庫允許您無縫管理文字格式，包括透過回調機制處理連字符。有興趣嗎？讓我們深入了解如何使用 Aspose.Words for .NET 實現連字符回呼的實質內容。
 
 ## 先決條件
 
 在我們開始編寫程式碼之前，讓我們確保您已擁有所需的一切：
 
-1.  Aspose.Words for .NET：確保您擁有該程式庫。你可以[在這裡下載](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：確保您擁有該程式庫。你可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. IDE：類似 Visual Studio 的開發環境。
 3. C#基礎：了解C#和.NET架構。
 4. 連接詞詞典：您計劃使用的語言的連字詞典。
@@ -62,7 +62,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 3 步：載入文檔
 
-現在，讓我們載入需要連字的文檔。
+現在，讓我們載入需要連字符的文檔。
 
 ```csharp
 Document document = new Document(dataDir + "German text.docx");
@@ -129,7 +129,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何在 Aspose.Words for .NET 中實現連字符回呼。透過執行這些步驟，您可以確保文件格式精美，無論使用何種語言。無論您處理的是英語、德語或任何其他語言，此方法都可以讓您輕鬆處理連字符。
+現在你就得到它了！您剛剛學習如何在 Aspose.Words for .NET 中實現連字符回呼。透過執行這些步驟，您可以確保文件格式精美，無論使用何種語言。無論您處理的是英語、德語或任何其他語言，此方法都可以讓您輕鬆處理連字符。
 
 ## 常見問題解答
 

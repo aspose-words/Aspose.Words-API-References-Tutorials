@@ -17,7 +17,7 @@ Innan vi går in i de små detaljerna, låt oss se till att du har allt du behö
 
 1. Utvecklingsmiljö: Se till att du har en utvecklingsmiljö inrättad. Visual Studio är ett utmärkt val.
 2.  Aspose.Words for .NET: Ladda ner och installera Aspose.Words for .NET-biblioteket. Du kan få det[här](https://releases.aspose.com/words/net/).
-3.  Licens: Skaffa en tillfällig licens om du inte har en fullständig. Förstår[här](https://purchase.aspose.com/temporary-license/).
+3.  Licens: Skaffa en tillfällig licens om du inte har en fullständig. Få det[här](https://purchase.aspose.com/temporary-license/).
 4. Grundläggande C#-kunskaper: Bekantskap med C# och .NET framework kommer att vara fördelaktigt.
 
 ## Importera namnområden

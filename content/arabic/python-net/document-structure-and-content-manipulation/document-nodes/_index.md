@@ -131,7 +131,7 @@ header.append_paragraph("Header text")
 footer.append_paragraph("Footer text")
 ```
 
-## بحث واستبدال النص
+## البحث عن النص واستبداله
 
 يمكّنك Aspose.Words من البحث عن نص معين واستبداله داخل المستند.
 

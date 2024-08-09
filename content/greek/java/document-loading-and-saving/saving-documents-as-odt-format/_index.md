@@ -61,7 +61,7 @@ OdtSaveOptions saveOptions = new OdtSaveOptions(); { saveOptions.setMeasureUnit(
 doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το άρθρο, μάθαμε πώς να αποθηκεύουμε έγγραφα σε μορφή ODT χρησιμοποιώντας το Aspose.Words για Java. Αυτό μπορεί να είναι ιδιαίτερα χρήσιμο όταν χρειάζεται να διασφαλίσετε τη συμβατότητα με σουίτες γραφείου ανοιχτού κώδικα όπως το OpenOffice και το LibreOffice.
 
@@ -69,7 +69,7 @@ doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", sa
 
 ### Πώς μπορώ να κατεβάσω το Aspose.Words για Java;
 
- Μπορείτε να κατεβάσετε το Aspose.Words για Java από τον ιστότοπο Aspose. Επίσκεψη[αυτός ο σύνδεσμος](https://releases.aspose.com/words/java/)για πρόσβαση στη σελίδα λήψης.
+ Μπορείτε να κατεβάσετε το Aspose.Words για Java από τον ιστότοπο Aspose. Επίσκεψη[αυτόν τον σύνδεσμο](https://releases.aspose.com/words/java/)για πρόσβαση στη σελίδα λήψης.
 
 ### Ποιο είναι το όφελος της αποθήκευσης εγγράφων σε μορφή ODT;
 

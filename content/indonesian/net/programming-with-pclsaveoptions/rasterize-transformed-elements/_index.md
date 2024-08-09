@@ -87,7 +87,7 @@ Mengonversi dokumen Word dengan elemen yang diubah ke format PCL bisa jadi sedik
 Ya, Aspose.Words for .NET dapat digunakan di berbagai jenis aplikasi, termasuk aplikasi web. Pastikan lisensi dan konfigurasi yang tepat.
 
 ### Format lain apa yang dapat dikonversi ke Aspose.Words untuk .NET?  
-Aspose.Words mendukung berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk daftar lengkap.
+Aspose.Words mendukung berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk daftar lengkap.
 
 ### Apakah mungkin untuk melakukan rasterisasi hanya pada elemen tertentu dalam dokumen?  
  Saat ini,`RasterizeTransformedElements` opsi berlaku untuk semua elemen yang diubah dalam dokumen. Untuk kontrol yang lebih terperinci, pertimbangkan untuk memproses elemen secara terpisah sebelum konversi.

@@ -9,7 +9,7 @@ url: /id/net/programming-with-sdt/
 ---
 Tutorial Aspose.Words untuk .NET memungkinkan Anda menjelajahi fitur perpustakaan secara mendalam dan mempelajari cara memprogram dengan konten terstruktur di Word menggunakan Kontrol Konten Terstruktur (SDT). Tutorial langkah demi langkah ini memandu Anda melalui langkah-langkah yang diperlukan untuk membuat, memanipulasi, dan mengekstrak data dari kontrol SDT di dokumen Word Anda.
 
-Dalam tutorial ini, Anda akan mempelajari cara menambahkan dan menghapus kontrol SDT, cara menyesuaikannya dengan properti tertentu, dan cara mengakses dan mengubah datanya. Anda juga akan mempelajari cara menggunakan peristiwa yang terkait dengan kontrol SDT untuk melakukan tindakan kustom saat memodifikasi atau memvalidasi data.
+Dalam tutorial ini, Anda akan mempelajari cara menambahkan dan menghapus kontrol SDT, cara menyesuaikannya dengan properti tertentu, dan cara mengakses dan mengubah datanya. Anda juga akan mempelajari cara menggunakan peristiwa yang terkait dengan kontrol SDT untuk melakukan tindakan kustom saat mengubah atau memvalidasi data.
 
 Contoh kode yang diberikan dalam tutorial akan membantu Anda memahami konsep dan mempraktikkan fungsi kontrol SDT dalam proyek Anda sendiri. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan membantu Anda menguasai penggunaan kontrol SDT di Aspose.Words untuk .NET dan meningkatkan keterampilan pengembangan dokumen Word Anda.
 

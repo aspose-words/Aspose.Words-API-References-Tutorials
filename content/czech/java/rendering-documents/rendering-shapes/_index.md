@@ -75,7 +75,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ## 8. Závěr
 
-Gratulujeme! Úspěšně jste se naučili vykreslovat tvary v Aspose.Words pro Javu. Tato schopnost otevírá svět možností při programové práci s dokumenty Wordu.
+Gratuluji! Úspěšně jste se naučili vykreslovat tvary v Aspose.Words pro Javu. Tato schopnost otevírá svět možností při programové práci s dokumenty Wordu.
 
 ## 9. Nejčastější dotazy
 
@@ -93,7 +93,7 @@ Ano, Aspose.Words for Java podporuje širokou škálu formátů dokumentů, vče
 
 ### Q4: Mohu vyzkoušet Aspose.Words for Java před nákupem?
 
- Rozhodně! Máte přístup k bezplatné zkušební verzi Aspose.Words for Java na[Aspose.Releases](https://releases.aspose.com/).
+ Jistě! Máte přístup k bezplatné zkušební verzi Aspose.Words for Java na[Aspose.Releases](https://releases.aspose.com/).
 
 ### Otázka 5: Kde mohu vyhledat podporu nebo se zeptat na otázky týkající se Aspose.Words for Java?
 

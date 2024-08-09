@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 
 ## Conclusion
 
-Et voila! Vous avez réussi à définir le remplissage des cellules dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité simple mais puissante peut améliorer considérablement la lisibilité et l’esthétique de vos tableaux. Que vous soyez un développeur chevronné ou débutant, nous espérons que ce guide vous a été utile et facile à suivre. Bon codage !
+Et voilà ! Vous avez réussi à définir le remplissage des cellules dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité simple mais puissante peut améliorer considérablement la lisibilité et l’esthétique de vos tableaux. Que vous soyez un développeur chevronné ou débutant, nous espérons que ce guide vous a été utile et facile à suivre. Bon codage !
 
 ## FAQ
 

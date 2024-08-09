@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Introduktion
 
 Att lägga till sidhuvuden och sidfötter till dina dokument kan förbättra deras professionalism och läsbarhet. Med Aspose.Words för .NET kan du enkelt skapa och anpassa sidhuvuden och sidfötter för dina Word-dokument. I den här handledningen går vi igenom processen steg för steg, och ser till att du kan implementera dessa funktioner sömlöst.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Steg 2: Skapa ett nytt dokument
 
- Skapa ett nytt dokument och en`DocumentBuilder` för att underlätta tillägg av innehåll.
+ Skapa ett nytt dokument och en`DocumentBuilder`för att underlätta tillägg av innehåll.
 
 ```csharp
 Document doc = new Document();
@@ -166,24 +167,24 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 Genom att följa dessa steg kan du effektivt lägga till och anpassa sidhuvuden och sidfötter i dina Word-dokument med Aspose.Words för .NET. Detta förbättrar ditt dokuments utseende och professionalism, vilket gör det mer läsbart och engagerande.
 
-## Vanliga frågor
+## FAQ's
 
-### F1: Vad är Aspose.Words för .NET?
+### Vad är Aspose.Words för .NET?
 
 Aspose.Words för .NET är ett bibliotek som gör det möjligt för utvecklare att skapa, redigera och konvertera Word-dokument programmatiskt i .NET-applikationer.
 
-### F2: Kan jag lägga till bilder i sidhuvudet eller sidfoten?
+### Kan jag lägga till bilder i sidhuvudet eller sidfoten?
 
  Ja, du kan enkelt lägga till bilder i sidhuvudet eller sidfoten med hjälp av`DocumentBuilder.InsertImage` metod.
 
-### F3: Hur ställer jag in olika sidhuvuden och sidfötter för första sidan?
+### Hur ställer jag in olika sidhuvuden och sidfötter för första sidan?
 
  Du kan ställa in olika sidhuvuden och sidfötter för den första sidan genom att använda`DifferentFirstPageHeaderFooter` egendom av`PageSetup` klass.
 
-### F4: Var kan jag hitta mer dokumentation om Aspose.Words?
+### Var kan jag hitta mer dokumentation om Aspose.Words?
 
  Du kan hitta omfattande dokumentation på[Dokumentationssida för Aspose.Words API](https://reference.aspose.com/words/net/).
 
-### F5: Finns det stöd tillgängligt för Aspose.Words?
+### Finns det stöd tillgängligt för Aspose.Words?
 
  Ja, Aspose erbjuder support genom deras[supportforum](https://forum.aspose.com/c/words/8).

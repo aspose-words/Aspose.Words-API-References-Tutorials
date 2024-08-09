@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
- 이 코드는 새 Word 문서를 초기화합니다. 교체하셔야 합니다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+ 이 코드는 새 Word 문서를 초기화합니다. 교체하셔야 합니다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ## 2단계: 테이블 개체 생성
 
@@ -137,7 +137,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
  .NET용 Aspose.Words를 다운로드할 수 있습니다.[다운로드 페이지](https://releases.aspose.com/words/net/).
 
 ### 구매하기 전에 Aspose.Words for .NET을 사용해 볼 수 있나요?
- 예, 요청하실 수 있습니다[무료 시험판](https://releases.aspose.com/) 구매하기 전에 라이브러리를 평가하십시오.
+ 예, 요청하실 수 있습니다[무료 평가판](https://releases.aspose.com/) 구매하기 전에 라이브러리를 평가하십시오.
 
 ### .NET용 Aspose.Words를 어떻게 구매하나요?
 .NET용 Aspose.Words를 다음에서 구입할 수 있습니다.[구매 페이지](https://purchase.aspose.com/buy).

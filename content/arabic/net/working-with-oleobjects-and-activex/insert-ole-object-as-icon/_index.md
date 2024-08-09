@@ -2,95 +2,91 @@
 title: إدراج كائن Ole في مستند Word كأيقونة
 linktitle: إدراج كائن Ole في مستند Word كأيقونة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج كائن OLE في مستند Word كأيقونة باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إدراج كائن OLE كرمز في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا خطوة بخطوة لتحسين مستنداتك.
 type: docs
 weight: 10
 url: /ar/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon/
 ---
+## مقدمة
 
-فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه والتي توضح كيفية إدراج كائن OLE في مستند Word كأيقونة باستخدام Aspose.Words لـ .NET.
+هل سبق لك أن احتجت إلى تضمين كائن OLE، مثل عرض PowerPoint التقديمي أو جدول بيانات Excel، في مستند Word، ولكنك أردت أن يظهر كرمز صغير أنيق بدلاً من كائن كامل؟ حسنا، أنت في المكان الصحيح! في هذا البرنامج التعليمي، سنرشدك إلى كيفية إدراج كائن OLE كرمز في مستند Word باستخدام Aspose.Words for .NET. بحلول نهاية هذا الدليل، ستكون قادرًا على دمج كائنات OLE في مستنداتك بسلاسة، مما يجعلها أكثر تفاعلية وجاذبية بصريًا.
 
-## الخطوة 1: استيراد المراجع اللازمة
-قبل أن تبدأ، تأكد من استيراد المراجع اللازمة لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملفك المصدر.
+## المتطلبات الأساسية
+
+قبل أن نتعمق في التفاصيل الجوهرية، دعنا نغطي ما تحتاجه:
+
+1.  Aspose.Words for .NET: تأكد من تثبيت Aspose.Words for .NET. إذا لم تكن قد قمت بتثبيته بعد، فيمكنك تنزيله من[صفحة الإصدارات Aspose](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: أنت بحاجة إلى بيئة تطوير متكاملة (IDE) مثل Visual Studio.
+3. المعرفة الأساسية بـ C#: الفهم الأساسي لبرمجة C# سيكون مفيدًا.
+
+## استيراد مساحات الأسماء
+
+أولاً، تحتاج إلى استيراد مساحات الأسماء الضرورية. يعد هذا أمرًا ضروريًا للوصول إلى وظائف مكتبة Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد المستندات
- في هذه الخطوة، سنقوم بإنشاء مستند جديد باستخدام الملف`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` فصل.
+## الخطوة 1: إنشاء مستند جديد
+
+للبدء، تحتاج إلى إنشاء مثيل مستند Word جديد.
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: قم بإدراج كائن OLE كرمز
- استخدم منشئ المستندات`InsertOleObjectAsIcon` طريقة لإدراج كائن OLE كرمز في المستند. حدد مسار ملف OLE وعلامة العرض ومسار الرمز واسم الكائن المضمن.
+يقوم مقتطف التعليمات البرمجية هذا بتهيئة مستند Word جديد وكائن DocumentBuilder الذي يُستخدم لإنشاء محتوى المستند.
+
+## الخطوة 2: قم بإدراج كائن OLE كرمز
+
+ الآن، دعونا نقوم بإدراج كائن OLE كرمز. ال`InsertOleObjectAsIcon` يتم استخدام طريقة فئة DocumentBuilder لهذا الغرض.
 
 ```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
+builder.InsertOleObjectAsIcon("path_to_your_presentation.pptx", false, "path_to_your_icon.ico", "My embedded file");
 ```
 
-## الخطوة 4: احفظ المستند
- استخدم الوثيقة`Save` طريقة حفظ المستند في ملف .
+دعونا نحلل هذه الطريقة:
+- `"path_to_your_presentation.pptx"`: هذا هو المسار إلى كائن OLE الذي تريد تضمينه.
+- `false` : تحدد هذه المعلمة المنطقية ما إذا كان سيتم عرض كائن OLE كرمز. وبما أننا نريد أيقونة، قمنا بتعيينها على`false`.
+- `"path_to_your_icon.ico"`: هذا هو المسار إلى ملف الرمز الذي تريد استخدامه لكائن OLE.
+- `"My embedded file"`: هذه هي التسمية التي ستظهر أسفل الأيقونة.
+
+## الخطوة 3: احفظ المستند
+
+وأخيرا، تحتاج إلى حفظ الوثيقة. اختر الدليل الذي تريد حفظ ملفك فيه.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 ```
 
-### مثال للتعليمة البرمجية المصدر لإدراج كائن OLE كأيقونة باستخدام Aspose.Words لـ .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
-
-هذا نموذج تعليمات برمجية كامل لإدراج كائن OLE كرمز مع Aspose.Words لـ .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+يقوم سطر التعليمات البرمجية هذا بحفظ المستند في المسار المحدد.
 
 ## خاتمة
 
-في الختام، قمنا باستكشاف دليل خطوة بخطوة لإدراج كائن OLE كرمز في مستند Word باستخدام Aspose.Words for .NET.
+تهانينا! لقد تعلمت بنجاح كيفية إدراج كائن OLE كرمز في مستند Word باستخدام Aspose.Words لـ .NET. لا تساعد هذه التقنية في تضمين الكائنات المعقدة فحسب، بل تحافظ أيضًا على مستندك مرتبًا واحترافيًا.
 
-باتباع هذه الخطوات، ستتمكن من إدراج كائن OLE كرمز في مستندات Word الخاصة بك بنجاح باستخدام Aspose.Words for .NET. تأكد من استيراد المراجع اللازمة واتبع التعليمات بعناية للحصول على النتائج المرجوة.
+## الأسئلة الشائعة
 
-### الأسئلة الشائعة حول إدراج كائن ole في مستند Word كرمز
+### هل يمكنني استخدام أنواع مختلفة من كائنات OLE بهذه الطريقة؟
 
-#### س. ما هي المراجع المطلوبة لإدراج كائن OLE كرمز في مستند Word باستخدام Aspose.Words لـ .NET؟
+نعم، يمكنك تضمين أنواع مختلفة من كائنات OLE مثل جداول بيانات Excel وعروض PowerPoint التقديمية وحتى ملفات PDF.
 
-ج: أنت بحاجة إلى استيراد المراجع التالية إلى مشروعك لاستخدام Aspose.Words لـ .NET:
+### كيف يمكنني الحصول على نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-```
+ يمكنك الحصول على نسخة تجريبية مجانية من[صفحة الإصدارات Aspose](https://releases.aspose.com/).
 
-#### س. كيفية إنشاء مستند جديد ومولد المستندات في Aspose.Words لـ .NET؟
+### ما هو كائن OLE؟
 
- ج: يمكنك إنشاء مستند جديد باستخدام`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder`فصل. هنا مثال :
+OLE (ربط الكائنات وتضمينها) هي تقنية طورتها Microsoft وتسمح بدمج المستندات والكائنات الأخرى وربطها.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+### هل أحتاج إلى ترخيص لاستخدام Aspose.Words لـ .NET؟
 
-#### س. كيفية إدراج كائن OLE كرمز في المستند؟
+ نعم، يتطلب Aspose.Words for .NET ترخيصًا. يمكنك شرائه من[Aspose صفحة الشراء](https://purchase.aspose.com/buy) أو الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
 
- ج: استخدم أداة إنشاء المستندات`InsertOleObjectAsIcon` طريقة لإدراج كائن OLE كرمز. حدد مسار ملف OLE وعلامة العرض ومسار الرمز واسم الكائن المضمن. هنا مثال :
+### أين يمكنني العثور على المزيد من البرامج التعليمية حول Aspose.Words لـ .NET؟
 
-```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-```
-
-#### س. كيفية حفظ المستند مع إدراج كائن OLE كرمز؟
-
- ج: استخدم الوثيقة`Save`طريقة حفظ المستند في ملف . هنا مثال :
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
+ يمكنك العثور على المزيد من البرامج التعليمية والوثائق على[صفحة التوثيق Aspose](https://reference.aspose.com/words/net/).

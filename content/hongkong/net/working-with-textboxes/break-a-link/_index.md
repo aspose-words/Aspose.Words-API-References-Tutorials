@@ -94,7 +94,7 @@ textBox.Next = null;
 
 ### 破壞傳入連結
 
-要中斷傳入鏈接，請檢查是否`Previous`文字方塊存在並調用`BreakForwardLink`在上面：
+要中斷傳入鏈接，請檢查是否`Previous`文字方塊存在並調用`BreakForwardLink`其上：
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
@@ -104,7 +104,7 @@ textBox.Previous?.BreakForwardLink();
 
 ## 結論
 
-現在你就擁有了！ 🎉 您已成功學習如何使用 Aspose.Words for .NET 斷開文字方塊中的前向連結。無論您是在清理文件、準備新格式還是只是進行試驗，這些步驟都將幫助您精確管理文字方塊。斷開連結就像解開一個結——有時是保持事物整潔的必要條件。 
+現在你就得到它了！ 🎉 您已成功學習如何使用 Aspose.Words for .NET 斷開文字方塊中的前向連結。無論您是在清理文件、準備新格式還是只是進行試驗，這些步驟都將幫助您精確管理文字方塊。斷開連結就像解開一個結——有時是保持事物整潔的必要條件。 
 
 如果您想了解有關 Aspose.Words 功能的更多信息，他們的[文件](https://reference.aspose.com/words/net/)是一個資訊寶庫。祝您編碼愉快，祝您的文件始終井井有條！
 

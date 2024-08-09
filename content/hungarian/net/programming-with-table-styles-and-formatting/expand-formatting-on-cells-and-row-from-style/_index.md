@@ -76,7 +76,7 @@ Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
  Itt történik a varázslat. Felhívjuk a`ExpandTableStylesToDirectFormatting` módszer a táblázatstílusok közvetlenül a cellákra történő alkalmazására.
 
 ```csharp
-// Bővítse ki a táblázatstílusokat a közvetlen formázásra.
+// Bontsa ki a táblázatstílusokat a közvetlen formázásra.
 doc.ExpandTableStylesToDirectFormatting();
 ```
 

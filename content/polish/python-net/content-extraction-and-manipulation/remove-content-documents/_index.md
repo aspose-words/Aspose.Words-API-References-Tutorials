@@ -166,7 +166,7 @@ Absolutnie! Aspose.Words umożliwia włączanie i zarządzanie śledzonymi zmian
 
 ### Jak mogę zapisać zmodyfikowany dokument?
 
- Użyj`save` metodę na obiekcie dokumentu, określającą ścieżkę pliku wyjściowego, w celu zapisania zmodyfikowanego dokumentu.
+ Skorzystaj z`save` metodę na obiekcie dokumentu, określającą ścieżkę pliku wyjściowego, w celu zapisania zmodyfikowanego dokumentu.
 
 ### Gdzie mogę uzyskać dostęp do dokumentacji Aspose.Words dla języka Python?
 

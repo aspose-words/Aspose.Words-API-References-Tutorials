@@ -9,7 +9,7 @@ url: /fr/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## Introduction
 
-Si vous avez déjà eu besoin de créer un document Word professionnel, vous savez à quel point une table des matières (TOC) peut être cruciale. Il organise non seulement votre contenu mais ajoute également une touche de professionnalisme. Cependant, personnaliser la table des matières pour qu'elle corresponde à votre style peut s'avérer un peu délicat. Dans ce didacticiel, nous expliquerons comment modifier le style de la table des matières dans un document Word à l'aide d'Aspose.Words pour .NET. Prêt à plonger ? Commençons!
+Si vous avez déjà eu besoin de créer un document Word professionnel, vous savez à quel point une table des matières (TOC) peut être cruciale. Il organise non seulement votre contenu mais ajoute également une touche de professionnalisme. Cependant, personnaliser la table des matières pour qu'elle corresponde à votre style peut s'avérer un peu délicat. Dans ce didacticiel, nous expliquerons comment modifier le style de la table des matières dans un document Word à l'aide d'Aspose.Words pour .NET. Prêt à plonger ? Commençons !
 
 ## Conditions préalables
 
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Conclusion
 
-Et voila! Vous avez réussi à modifier le style de la table des matières dans un document Word à l'aide d'Aspose.Words pour .NET. Cette petite personnalisation peut faire une grande différence dans l’apparence générale de votre document. N'oubliez pas d'expérimenter avec d'autres styles et niveaux pour personnaliser entièrement votre table des matières.
+Et voilà ! Vous avez réussi à modifier le style de la table des matières dans un document Word à l'aide d'Aspose.Words pour .NET. Cette petite personnalisation peut faire une grande différence dans l’apparence générale de votre document. N'oubliez pas d'expérimenter avec d'autres styles et niveaux pour personnaliser entièrement votre table des matières.
 
 ## FAQ
 

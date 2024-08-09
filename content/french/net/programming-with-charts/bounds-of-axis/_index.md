@@ -100,7 +100,7 @@ Enfin, enregistrez votre document dans le répertoire spécifié.
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-Et c'est tout! Vous avez créé avec succès un document avec un graphique à l'aide d'Aspose.Words pour .NET. 
+Et c'est tout ! Vous avez créé avec succès un document avec un graphique à l'aide d'Aspose.Words pour .NET. 
 
 ## Conclusion
 
@@ -121,4 +121,4 @@ Aspose.Words for .NET est une bibliothèque qui vous permet de créer, modifier 
  Une documentation détaillée est disponible[ici](https://reference.aspose.com/words/net/).
 
 ### Comment puis-je obtenir de l'aide pour Aspose.Words ?
- Vous pouvez visiter le[forum d'entraide](https://forum.aspose.com/c/words/8) à l'aide.
+ Vous pouvez visiter le[forum d'assistance](https://forum.aspose.com/c/words/8) pour obtenir de l'aide.

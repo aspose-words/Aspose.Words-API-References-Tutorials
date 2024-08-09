@@ -2,186 +2,128 @@
 title: Shape Revision
 linktitle: Shape Revision
 second_title: Aspose.Words Document Processing API
-description: Revise shapes in a Word document with Aspose.Words for .NET.
+description: Learn how to handle shape revisions in Word documents using Aspose.Words for .NET with this comprehensive guide. Master tracking changes, inserting shapes, and more.
 type: docs
 weight: 10
 url: /net/working-with-revisions/shape-revision/
 ---
+## Introduction
 
-In this step-by-step guide, we'll walk you through how to make revisions to shapes in a Word document using Aspose.Words for .NET. We'll provide you with the complete source code and show you how to format the markdown output.
+Editing Word documents programmatically can be a daunting task, especially when it comes to handling shapes. Whether you're creating reports, designing templates, or simply automating document creation, the ability to track and manage shape revisions is crucial. Aspose.Words for .NET offers a powerful API to make this process seamless and efficient. In this tutorial, we'll dive into the specifics of revising shapes in Word documents, ensuring you have the tools and knowledge to manage your documents with ease.
 
-## Step 1: Creating the document and adding shapes
+## Prerequisites
 
-The first step is to create a new document and add shapes.
+Before we dive into the code, let's ensure you have everything you need:
+
+- Aspose.Words for .NET: Make sure you have the Aspose.Words library installed. You can [download it here](https://releases.aspose.com/words/net/).
+- Development Environment: You should have a development environment set up, such as Visual Studio.
+- Basic Understanding of C#: Familiarity with C# programming language and basic concepts of object-oriented programming.
+- Word Document: A Word document to work with, or you can create one during the tutorial.
+
+## Import Namespaces
+
+First, let's import the necessary namespaces. These will provide us with access to the classes and methods required for handling Word documents and shapes.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## Step 1: Setting Up Your Document Directory
+
+Before we start working with shapes, we need to define the path to our document directory. This is where we'll save our modified documents.
+
+```csharp
+// The path to the documents directory.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Step 2: Creating a New Document
+
+Let's create a new Word document where we'll insert and revise shapes.
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Step 2: Track revisions and add another shape
+## Step 3: Inserting an Inline Shape
 
-We'll turn on revision tracking and add another shape.
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## Step 3: Get the shape collection and check for revisions
-
-We'll get the collection of shapes from the document and check the revisions associated with each shape.
+We'll begin by inserting an inline shape into our document without tracking revisions. An inline shape is one that flows with the text.
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## Step 4: Checking Shape Move Revisions
-
-We are going to load an existing document containing shape displacement revisions and check the associated revisions.
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### Example source code for Shape Revision using Aspose.Words for .NET
-
-Here is the complete source code for making revisions to shapes in a document using Aspose.Words for .NET:
-
-```csharp
-Document doc = new Document();
-
-// Insert an inline shape without tracking revisions.
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Start tracking revisions and then insert another shape.
+## Step 4: Starting to Track Revisions
+
+To track changes in our document, we need to enable revision tracking. This is essential for identifying modifications made to shapes.
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## Step 5: Inserting Another Shape with Revisions
+
+Now that revision tracking is enabled, let's insert another shape. This time, any changes will be tracked.
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Get the document's shape collection which includes just the two shapes we added.
+## Step 6: Retrieving and Modifying Shapes
+
+We can retrieve all shapes in the document and modify them as needed. Here, we'll get the shapes and remove the first one.
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Remove the first shape.
 shapes[0].Remove();
+```
 
-// Because we removed that shape while changes were being tracked, the shape counts as a delete revision.
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## Step 7: Saving the Document
 
-// And we inserted another shape while tracking changes, so that shape will count as an insert revision.
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+After making our changes, we need to save the document. This ensures all revisions and modifications are stored.
 
-// The document has one shape that was moved, but shape move revisions will have two instances of that shape.
-// One will be the shape at its arrival destination and the other will be the shape at its original location.
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## Step 8: Handling Shape Move Revisions
+
+When a shape is moved, Aspose.Words tracks this as a revision. This means there will be two instances of the shape: one at its original location and one at its new location.
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// This is the move to revision, also the shape at its arrival destination.
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-// This is the move from revision, which is the shape at its original location.
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## Conclusion
 
-In this tutorial, we learned how to make revisions to shapes in a Word document using Aspose.Words for .NET. By following the steps of creating the document, enabling revision tracking, checking the revisions associated with each shape, and checking the revisions for moving the shapes, we were able to manage the revisions successfully. Aspose.Words for .NET offers a powerful API for Words Processing with reviews and forms in Word documents.
+And there you have it! You've successfully learned how to handle shape revisions in Word documents using Aspose.Words for .NET. Whether you're managing document templates, automating reports, or simply keeping track of changes, these skills are invaluable. By following this step-by-step guide, you've not only mastered the basics but also gained insight into more advanced document handling techniques.
 
-### FAQ's
+## FAQ's
 
-#### Q: How can I create a new document and add shapes in Aspose.Words for .NET?
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library that allows developers to create, modify, and convert Word documents programmatically using C#.
 
-A: To create a new document and add shapes in Aspose.Words for .NET, you can use the following code. Here we add two shapes, a cube and a sun, to the first section of the document:
+### Can I track changes made to other elements in a Word document?
+Yes, Aspose.Words for .NET supports tracking changes to various elements, including text, tables, and more.
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### How can I get a free trial of Aspose.Words for .NET?
+You can get a free trial of Aspose.Words for .NET [here](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### Is it possible to accept or reject revisions programmatically?
+Yes, Aspose.Words for .NET provides methods to accept or reject revisions programmatically.
 
-#### Q: How do I enable revision tracking in Aspose.Words for .NET?
-
-A: To enable revision tracking in Aspose.Words for .NET, you can use the `StartTrackRevisions` method of the `Document` object. This method takes the name of the author of the revisions as a parameter:
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### Q: How can I check the revisions associated with each shape in an Aspose.Words for .NET document?
-
-A: To check the revisions associated with each shape in an Aspose.Words for .NET document, you can get the document's collection of shapes using the `GetChildNodes` method with the `NodeType.Shape` node type. Then you can access each shape's `IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision`, and `IsMoveToRevision` properties to determine what type of revision is associated with the shape:
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### Q: How can I check for displacement revisions of shapes in an Aspose.Words for .NET document?
-
-A: To check for shape displacement revisions in an Aspose.Words for .NET document, you can load an existing document that contains shape displacement revisions. Then you can access each shape's `IsMoveFromRevision` and `IsMoveToRevision` properties to determine if it is being moved and if so, from where and to where:
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### Can I use Aspose.Words for .NET with other .NET languages besides C#?
+Absolutely! Aspose.Words for .NET can be used with any .NET language, including VB.NET and F#.

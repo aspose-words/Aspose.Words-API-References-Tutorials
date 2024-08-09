@@ -15,7 +15,7 @@ När det kommer till att arbeta med Word-dokument kan möjligheten att manipuler
 
 Innan vi börjar behöver du några saker för att säkerställa att allt fungerar smidigt:
 
-1.  Aspose.Words för .NET: Se till att du har Aspose.Words-biblioteket installerat. Du kan få det från[Nedladdningslänk](https://releases.aspose.com/words/net/).
+1.  Aspose.Words för .NET: Se till att du har Aspose.Words-biblioteket installerat. Du kan få det från[Ladda ner länk](https://releases.aspose.com/words/net/).
 
 2. Utvecklingsmiljö: En .NET-utvecklingsmiljö, som Visual Studio, för att skriva och köra din kod.
 
@@ -100,7 +100,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att hantera och manipul
 
 ### Hur installerar jag Aspose.Words för .NET?
 
- Du kan installera Aspose.Words för .NET från[Nedladdningslänk](https://releases.aspose.com/words/net/). Du kan också använda NuGet Package Manager för enklare installation.
+ Du kan installera Aspose.Words för .NET från[Ladda ner länk](https://releases.aspose.com/words/net/). Du kan också använda NuGet Package Manager för enklare installation.
 
 ### Kan jag få temaegenskaper från ett befintligt Word-dokument?
 
@@ -108,7 +108,7 @@ Ja, du kan hämta temaegenskaper från både nya och befintliga Word-dokument me
 
 ### Hur applicerar jag ett nytt tema på ett Word-dokument?
 
- För att tillämpa ett nytt tema måste du ställa in temaegenskaperna på din`Document` objekt. Kolla[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) för detaljer om tillämpning av teman.
+ För att tillämpa ett nytt tema måste du ställa in temaegenskaperna på din`Document` objekt. Kontrollera[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) för detaljer om tillämpning av teman.
 
 ### Var kan jag få support för Aspose.Words för .NET?
 

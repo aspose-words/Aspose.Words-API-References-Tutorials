@@ -9,7 +9,7 @@ url: /tr/net/working-with-fields/insert-field-none/
 ---
 ## giriiş
 
-Belge oluşturma ve yönetmeyle ilgili tekrarlanan görevlerden hiç bunaldığınızı hissettiniz mi? Bu sıradan görevleri otomatikleştirebilecek, daha yaratıcı çabalara zaman ayırabilecek sihirli bir değneğiniz olduğunu hayal edin. Şanslısın! Aspose.Words for .NET işte bu sihirli değnektir. Word belgelerini zahmetsizce değiştirmenizi sağlayan güçlü bir kitaplıktır. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu kılavuz Aspose.Words for .NET kullanımının tüm ayrıntılarını size anlatacak ve belgelerinize alan eklemeye odaklanacaktır. Dalmaya hazır mısınız? Başlayalım!
+Belge oluşturma ve yönetmeyle ilgili tekrarlanan görevlerden hiç bunaldığınızı hissettiniz mi? Bu sıradan görevleri otomatikleştirebilecek, daha yaratıcı çabalara zaman ayırabilecek sihirli bir değneğiniz olduğunu hayal edin. Şanslısın! Aspose.Words for .NET işte bu sihirli değnektir. Word belgelerini zahmetsizce değiştirmenizi sağlayan güçlü bir kitaplıktır. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu kılavuz Aspose.Words for .NET kullanımının tüm ayrıntılarını size anlatacak ve belgelerinize alan eklemeye odaklanacaktır. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -70,7 +70,7 @@ Son olarak belgemizi kaydedelim. Burası, tüm sıkı çalışmanızın, açıp 
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-Ve bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesi oluşturdunuz ve bir alan eklediniz. Oldukça düzgün, değil mi?
+İşte bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesi oluşturdunuz ve bir alan eklediniz. Oldukça düzgün, değil mi?
 
 ## Çözüm
 
@@ -85,7 +85,7 @@ Aspose.Words for .NET, geliştiricilerin .NET çerçevesini kullanarak Word belg
 Evet, Aspose.Words for .NET, .NET Core, .NET 5.0 ve sonraki sürümleri destekler; bu da onu çeşitli .NET uygulamaları için çok yönlü hale getirir.
 
 ### Bir Word belgesine farklı türdeki alanları nasıl eklerim?
- kullanarak çeşitli alan türleri ekleyebilirsiniz.`DocumentBuilder.InsertField`yöntem. Her alan türünün kendine özgü yöntemi ve parametreleri vardır.
+ kullanarak çeşitli alan türleri ekleyebilirsiniz.`DocumentBuilder.InsertField`Yöntem. Her alan türünün kendine özgü yöntemi ve parametreleri vardır.
 
 ### Aspose.Words for .NET'in kullanımı ücretsiz mi?
  Aspose.Words for .NET ücretsiz deneme sürümü sunar ancak tam işlevsellik için bir lisans satın almanız gerekebilir. Fiyatlandırma ve lisanslama seçeneklerini keşfedebilirsiniz[Burada](https://purchase.aspose.com/buy).

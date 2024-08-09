@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/remove-custom-document-properties/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato intrappolato nella rete delle proprietà personalizzate dei documenti nei tuoi file Word? Non sei solo! Gestire queste proprietà può essere una seccatura, ma con Aspose.Words per .NET puoi semplificare questo processo senza sforzo. In questo tutorial ti guideremo attraverso la rimozione delle proprietà personalizzate del documento utilizzando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, troverai questa guida semplice e diretta. Pronti a tuffarvi? Iniziamo!
 
@@ -90,7 +90,7 @@ doc.Save(savePath);
 
 ## Conclusione
 
-E il gioco è fatto! Rimuovere le proprietà personalizzate del documento nei file Word utilizzando Aspose.Words per .NET è facile come una torta. Seguendo questi passaggi, puoi gestire in modo efficiente le proprietà del documento, risparmiando tempo e fatica. Che tu stia ripulendo i metadati o automatizzando l'elaborazione dei documenti, Aspose.Words per .NET ti copre. Buona programmazione!
+Ed ecco qua! Rimuovere le proprietà personalizzate del documento nei file Word utilizzando Aspose.Words per .NET è facile come una torta. Seguendo questi passaggi, puoi gestire in modo efficiente le proprietà del documento, risparmiando tempo e fatica. Che tu stia ripulendo i metadati o automatizzando l'elaborazione dei documenti, Aspose.Words per .NET ti copre. Buona programmazione!
 
 ## Domande frequenti
 

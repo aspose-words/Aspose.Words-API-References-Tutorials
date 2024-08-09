@@ -14,9 +14,9 @@ Aspose.Words for .NET 中的节点代表 Word 文档的各种元素，例如段�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [使用节点类型](./use-node-type/) | 了解如何使用节点类型通过 Aspose.Words for .NET 访问文档特定信息。 |
-| [获取父节点](./get-parent-node/) | 了解如何使用 Aspose.Words for .NET 获取特定元素的父节点。 |
-| [业主文件](./owner-document/) | 了解如何在 Aspose.Words for .NET 中使用所有者文档。 |
-| [枚举子节点](./enumerate-child-nodes/) | 了解如何使用 Aspose.Words for .NET 枚举段落中的子节点。 |
-| [类型访问](./typed-access/) | 了解如何使用类型访问来操作 Aspose.Words for .NET 中的表。 |
-| [创建并添加段落节点](./create-and-add-paragraph-node/) | 使用 Aspose.Words for .NET 为您的 Word 文档创建并添加段落节点。 |
+| [使用节点类型](./use-node-type/) | 通过我们的详细指南了解如何掌握 Aspose.Words for .NET 中的 NodeType 属性。非常适合希望提高文档处理技能的开发人员。 |
+| [获取父节点](./get-parent-node/) | 通过这个详细的分步教程学习如何使用 Aspose.Words for .NET 获取文档部分的父节点。 |
+| [业主文件](./owner-document/) | 了解如何使用 Aspose.Words for .NET 中的所有者文档。本分步指南介绍了如何在文档中创建和操作节点。 |
+| [枚举子节点](./enumerate-child-nodes/) | 通过本分步教程了解如何使用 Aspose.Words for .NET 枚举 Word 文档中的子节点。 |
+| [类型访问](./typed-access/) | 了解如何使用 Aspose.Words for .NET 中的 类型访问 轻松操作文档元素（如表和行）。本分步指南可简化您的工作流程。 |
+| [创建并添加段落节点](./create-and-add-paragraph-node/) | 通过这个详细的分步教程学习如何使用 Aspose.Words for .NET 在文档中创建和添加段落节点。 |

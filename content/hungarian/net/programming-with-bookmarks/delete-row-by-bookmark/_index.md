@@ -9,7 +9,7 @@ url: /hu/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 ## Bevezetés
 
-Egy sor könyvjelzővel történő törlése egy Word-dokumentumban bonyolultnak tűnhet, de az Aspose.Words for .NET használatával gyerekjáték. Ez az útmutató végigvezeti Önt mindenen, amit tudnia kell a feladat hatékony elvégzéséhez. Készen állsz a merülésre? Kezdjük el!
+Egy sor könyvjelzővel történő törlése egy Word-dokumentumban bonyolultnak tűnhet, de az Aspose.Words for .NET használatával gyerekjáték. Ez az útmutató végigvezeti Önt mindenen, amit tudnia kell a feladat hatékony elvégzéséhez. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 

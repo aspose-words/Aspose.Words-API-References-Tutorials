@@ -9,7 +9,7 @@ url: /pl/net/join-and-append-documents/simple-append-document/
 ---
 ## Wstęp
 
-No hej! Czy zdarzyło Ci się kiedyś, że musiałeś bezproblemowo połączyć dwa dokumenty programu Word? Cóż, masz szczęście! Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, potężnej biblioteki, która pozwala programowo manipulować dokumentami programu Word. W szczególności skupimy się na tym, jak w kilku prostych krokach dołączyć jeden dokument do drugiego. Niezależnie od tego, czy tworzysz raporty, łączysz sekcje projektu, czy po prostu usprawniasz zarządzanie dokumentami, ten przewodnik pomoże Ci. Więc zacznijmy!
+Hej tam! Czy zdarzyło Ci się kiedyś, że musiałeś bezproblemowo połączyć dwa dokumenty programu Word? Cóż, masz szczęście! Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, potężnej biblioteki, która pozwala programowo manipulować dokumentami programu Word. W szczególności skupimy się na tym, jak w kilku prostych krokach dołączyć jeden dokument do drugiego. Niezależnie od tego, czy tworzysz raporty, łączysz sekcje projektu, czy po prostu usprawniasz zarządzanie dokumentami, ten przewodnik pomoże Ci. Więc zaczynajmy!
 
 ## Warunki wstępne
 
@@ -36,7 +36,7 @@ Podzielmy teraz proces na proste, zrozumiałe etapy.
 Zanim zagłębimy się w kod, upewnij się, że Twój projekt jest poprawnie skonfigurowany. Oto krótka lista kontrolna:
 
 1. Utwórz nowy projekt: Otwórz program Visual Studio i utwórz nowy projekt aplikacji konsolowej.
-2.  Dodaj odwołanie do Aspose.Words: Pobierz i dodaj bibliotekę Aspose.Words do swojego projektu. Możesz to zrobić za pomocą Menedżera pakietów NuGet, wyszukując`Aspose.Words`.
+2.  Dodaj odniesienie Aspose.Words: Pobierz i dodaj bibliotekę Aspose.Words do swojego projektu. Możesz to zrobić za pomocą Menedżera pakietów NuGet, wyszukując`Aspose.Words`.
 
 ```csharp
 Install-Package Aspose.Words
@@ -106,7 +106,7 @@ masz to! Pomyślnie dołączyłeś jeden dokument programu Word do drugiego za p
 
 ### Co się stanie, jeśli moje dokumenty mają inne formatowanie?
 
- Możesz kontrolować sposób obsługi formatowania za pomocą`ImportFormatMode` parametr. Opcje obejmują`KeepSourceFormatting`, `UseDestinationStyles`, i więcej.
+ Możesz kontrolować sposób obsługi formatowania za pomocą`ImportFormatMode` parametr. Opcje obejmują`KeepSourceFormatting`, `UseDestinationStyles`i nie tylko.
 
 ### Czy korzystanie z Aspose.Words jest darmowe?
 

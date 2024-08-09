@@ -9,7 +9,7 @@ url: /ar/net/programming-with-charts/format-number-of-data-label/
 ---
 ## مقدمة
 
-غالبًا ما يتضمن إنشاء مستندات جذابة وغنية بالمعلومات تضمين مخططات تحتوي على تسميات بيانات منسقة جيدًا. إذا كنت مطور .NET وتتطلع إلى تحسين مستندات Word الخاصة بك باستخدام مخططات معقدة، فإن Aspose.Words for .NET هي مكتبة رائعة لمساعدتك في تحقيق ذلك. سيرشدك هذا البرنامج التعليمي خلال عملية تنسيق تسميات الأرقام في مخطط باستخدام Aspose.Words for .NET، خطوة بخطوة.
+غالبًا ما يتضمن إنشاء مستندات جذابة وغنية بالمعلومات تضمين مخططات تحتوي على تسميات بيانات منسقة جيدًا. إذا كنت أحد مطوري .NET وتتطلع إلى تحسين مستندات Word الخاصة بك باستخدام مخططات معقدة، فإن Aspose.Words for .NET هي مكتبة رائعة لمساعدتك في تحقيق ذلك. سيرشدك هذا البرنامج التعليمي خلال عملية تنسيق تسميات الأرقام في مخطط باستخدام Aspose.Words for .NET، خطوة بخطوة.
 
 ## المتطلبات الأساسية
 
@@ -92,7 +92,7 @@ series1.DataLabels.ShowValue = true;
 
 ```csharp
 series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // تنسيق العملة
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // صيغة التاريخ
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // تنسيق التاريخ
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // تنسيق النسبة المئوية
 ```
 

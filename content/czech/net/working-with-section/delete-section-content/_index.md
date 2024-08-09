@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-section/delete-section-content/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, přátelé Wordu! Už jste se někdy ocitli po kolena v dlouhém dokumentu a přáli si, abyste mohli magicky vymazat obsah konkrétní části, aniž byste ručně smazali každý kousek textu? Tak to máš štěstí! V této příručce prozkoumáme, jak odstranit obsah části v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento šikovný trik vám ušetří spoustu času a proces úprav dokumentů bude mnohem plynulejší. Jste připraveni se ponořit? Začněme!
 
@@ -15,7 +15,7 @@ Ahoj, přátelé Wordu! Už jste se někdy ocitli po kolena v dlouhém dokumentu
 
 Než si ušpiníme ruce nějakým kódem, ujistíme se, že máte vše, co potřebujete k dodržení:
 
-1.  Aspose.Words for .NET Library: Můžete si stáhnout nejnovější verzi[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Můžete si stáhnout nejnovější verzi[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE kompatibilní s .NET, jako je Visual Studio.
 3. Základní znalost C#: Díky znalosti jazyka C# bude snazší sledovat tento tutoriál.
 4. Ukázkový dokument aplikace Word: Připravte si dokument aplikace Word k testování.
@@ -34,7 +34,7 @@ Tento jmenný prostor je nezbytný pro práci s dokumenty aplikace Word pomocí 
 
 Než se ponoříte do kódu, ujistěte se, že máte nainstalovanou knihovnu Aspose.Words a vzorový dokument Word připravený k práci.
 
-1.  Stáhněte a nainstalujte Aspose.Words: Můžete to získat[tady](https://releases.aspose.com/words/net/).
+1.  Stáhněte a nainstalujte Aspose.Words: Můžete to získat[zde](https://releases.aspose.com/words/net/).
 2. Nastavení projektu: Otevřete Visual Studio a vytvořte nový projekt .NET.
 3. Přidat referenci Aspose.Words: Zahrňte do projektu knihovnu Aspose.Words.
 
@@ -105,7 +105,7 @@ foreach (Section section in doc.Sections)
 
 ### Odstraňuje tato metoda také záhlaví a zápatí?
 
- Ne,`ClearContent()` nemá vliv na záhlaví a zápatí. K vymazání záhlaví a zápatí byste použili`ClearHeadersFooters()` metoda.
+ Žádný,`ClearContent()` nemá vliv na záhlaví a zápatí. K vymazání záhlaví a zápatí byste použili`ClearHeadersFooters()` metoda.
 
 ### Je Aspose.Words for .NET kompatibilní se všemi verzemi dokumentů aplikace Word?
 
@@ -113,4 +113,4 @@ Ano, Aspose.Words podporuje různé formáty Wordu, včetně DOC, DOCX, RTF a da
 
 ### Mohu vyzkoušet Aspose.Words pro .NET zdarma?
 
- Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

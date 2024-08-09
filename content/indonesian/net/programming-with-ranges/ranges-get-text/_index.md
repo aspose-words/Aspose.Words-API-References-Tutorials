@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Langkah 3: Ekstrak Teks dari Dokumen
 
-Dengan dokumen Anda dimuat, saatnya mengekstrak teks. Ini adalah dimana keajaiban terjadi:
+Dengan dokumen Anda dimuat, saatnya mengekstrak teks. Di sinilah keajaiban terjadi:
 
 Ekstrak Teks
 
@@ -80,7 +80,7 @@ Tampilkan Teks
 Console.WriteLine(text);
 ```
 
-Langkah ini mencetak teks yang diekstrak ke konsol, memungkinkan Anda melihat hasil proses ekstraksi teks Anda.
+Langkah ini mencetak teks yang diekstraksi ke konsol, memungkinkan Anda melihat hasil proses ekstraksi teks Anda.
 
 ## Kesimpulan
 

@@ -7,17 +7,18 @@ type: docs
 weight: 10
 url: /tr/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## giriiş
 
-Aspose.Words for .NET kullanarak yazı tipi değiştirmeyi yönetmeye yönelik bu kapsamlı kılavuza hoş geldiniz. Belgelerinizde düzgün görünmeyen yazı tipleri ile sorun yaşadıysanız doğru yere geldiniz. Bu eğitim, sonekler olmadan yazı tipi değişimini verimli bir şekilde gerçekleştirmek için adım adım bir süreçten geçecektir. Başlayalım!
+Aspose.Words for .NET kullanarak yazı tipi değiştirmeyi yönetmeye yönelik bu kapsamlı kılavuza hoş geldiniz. Belgelerinizde düzgün görünmeyen yazı tipleri ile sorun yaşadıysanız doğru yere geldiniz. Bu eğitim, sonekler olmadan yazı tipi değişimini verimli bir şekilde gerçekleştirmek için adım adım bir süreçten geçecektir.
 
 ## Önkoşullar
 
 Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 - Temel C# Bilgisi: C# programlamayı anlamak, adımları takip etmeyi ve uygulamayı kolaylaştıracaktır.
--  Aspose.Words for .NET Library: Kütüphaneyi şuradan indirip yükleyin:[İndirme: {link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Kütüphaneyi şuradan indirip yükleyin:[indirme bağlantısı](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi bir geliştirme ortamı kurun.
-- Örnek Belge: Örnek bir belge (örn.`Rendering.docx`) bu eğitim sırasında üzerinde çalışılacak.
+-  Örnek Belge: Örnek bir belge (örn.`Rendering.docx`) bu eğitim sırasında üzerinde çalışılacak.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -26,7 +27,6 @@ Aspose.Words tarafından sağlanan sınıflara ve yöntemlere erişmek için ön
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Adım 5: Uyarı İşleyicisi Sınıfını Oluşturun
 
-Uyarıları etkili bir şekilde işlemek için, aşağıdakileri uygulayan özel bir sınıf oluşturun:`IWarningCallback` arayüz. Bu sınıf, yazı tipi değiştirme uyarılarını yakalayacak ve günlüğe kaydedecektir.
+ Uyarıları etkili bir şekilde işlemek için, aşağıdakileri uygulayan özel bir sınıf oluşturun:`IWarningCallback` arayüz. Bu sınıf, yazı tipi değiştirme uyarılarını yakalayacak ve günlüğe kaydedecektir.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,31 +93,31 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Bu sınıfta:
-- `Warning` yöntem, yazı tipi değişikliğiyle ilgili uyarıları yakalar.
+- `Warning`yöntem, yazı tipi değişikliğiyle ilgili uyarıları yakalar.
 - `FontWarnings` koleksiyon, daha fazla inceleme veya kayıt için bu uyarıları saklar.
 
 ## Çözüm
 
 Artık Aspose.Words for .NET'i kullanarak son ekler olmadan yazı tipi değiştirme işleminde uzmanlaştınız. Bu bilgi, sistemde mevcut yazı tipleri ne olursa olsun belgelerinizin amaçlanan görünümünü korumasını sağlayacaktır. Aspose.Words'ün gücünden tam anlamıyla yararlanmak için farklı ayarlar ve kaynaklarla denemeler yapmaya devam edin.
 
-## SSS
+## SSS'ler
 
-### S1: Birden çok özel dizindeki yazı tiplerini nasıl kullanabilirim?
+### Birden çok özel dizindeki yazı tiplerini nasıl kullanabilirim?
 
  Birden fazla ekleyebilirsiniz`FolderFontSource` örnekler`fontSources` yazı tipi kaynaklarını buna göre listeleyin ve güncelleyin.
 
-### S2: Aspose.Words for .NET'in ücretsiz deneme sürümünü nereden indirebilirim?
+### Aspose.Words for .NET'in ücretsiz deneme sürümünü nereden indirebilirim?
 
  Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Ücretsiz deneme sayfasını aspose](https://releases.aspose.com/).
 
-###  S3: kullanarak birden fazla uyarı türünü işleyebilir miyim?`IWarningCallback`?
+###  kullanarak birden fazla uyarı türünü işleyebilir miyim?`IWarningCallback`?
 
- Evet`IWarningCallback` arayüz, yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de yönetmenize olanak tanır.
+ Evet,`IWarningCallback` arayüz, yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de yönetmenize olanak tanır.
 
-### S4: Aspose.Words için nereden destek alabilirim?
+### Aspose.Words için nereden destek alabilirim?
 
  Destek için şu adresi ziyaret edin:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).
 
-### S5: Geçici lisans satın almak mümkün mü?
+### Geçici lisans satın almak mümkün mü?
 
  Evet, geçici lisans alabilirsiniz.[geçici lisans sayfası](https://purchase.aspose.com/temporary-license/).

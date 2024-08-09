@@ -9,7 +9,7 @@ url: /vi/net/working-with-section/delete-header-footer-content/
 ---
 ## Giới thiệu
 
-Này, những người sắp xếp tài liệu Word! 📝 Bạn đã bao giờ cần xóa đầu trang và chân trang trong tài liệu Word nhưng lại thấy mình bị sa lầy bởi công việc thủ công tẻ nhạt? Thôi, đừng lo lắng nữa! Với Aspose.Words for .NET, bạn có thể tự động hóa tác vụ này chỉ trong vài bước. Hướng dẫn này sẽ hướng dẫn bạn quy trình xóa nội dung đầu trang và chân trang khỏi tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng để dọn dẹp những tài liệu đó? Bắt đầu nào!
+Này, những người sắp xếp tài liệu Word! 📝 Bạn đã bao giờ cần xóa đầu trang và chân trang trong tài liệu Word nhưng lại thấy mình bị sa lầy bởi công việc thủ công tẻ nhạt? Thôi, đừng lo lắng nữa! Với Aspose.Words for .NET, bạn có thể tự động hóa tác vụ này chỉ trong vài bước. Hướng dẫn này sẽ hướng dẫn bạn quy trình xóa nội dung đầu trang và chân trang khỏi tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng để dọn dẹp những tài liệu đó? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "Document_Without_Headers_Footers.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! 🎉 Bạn đã xóa thành công đầu trang và chân trang khỏi tài liệu Word bằng Aspose.Words for .NET. Tính năng tiện dụng này có thể giúp bạn tiết kiệm rất nhiều thời gian, đặc biệt khi xử lý các tài liệu lớn hoặc các công việc lặp đi lặp lại. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm các tính năng khác nhau của Aspose.Words để trở thành một thuật sĩ thao tác tài liệu thực sự. Chúc mừng mã hóa!
+Và bạn có nó! 🎉 Bạn đã xóa thành công đầu trang và chân trang khỏi tài liệu Word bằng Aspose.Words for .NET. Tính năng tiện dụng này có thể giúp bạn tiết kiệm rất nhiều thời gian, đặc biệt khi xử lý các tài liệu lớn hoặc các công việc lặp đi lặp lại. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm các tính năng khác nhau của Aspose.Words để trở thành một thuật sĩ thao tác tài liệu thực sự. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

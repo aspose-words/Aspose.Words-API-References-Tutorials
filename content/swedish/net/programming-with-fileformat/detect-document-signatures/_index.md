@@ -54,7 +54,7 @@ Nu måste vi definiera sökvägen till katalogen där ditt dokument är lagrat.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ## Steg 3: Identifiera filformat
 
@@ -91,7 +91,7 @@ Nej, Aspose.Words för .NET bevarar inte digitala signaturer när du öppnar ell
 
 ### Finns det något sätt att upptäcka flera digitala signaturer på ett dokument?
 
- Ja den`HasDigitalSignature` egendom kan indikera närvaron av en eller flera digitala signaturer på dokumentet.
+ Ja, den`HasDigitalSignature` egendom kan indikera närvaron av en eller flera digitala signaturer på dokumentet.
 
 ### Hur får jag en gratis provversion av Aspose.Words för .NET?
 

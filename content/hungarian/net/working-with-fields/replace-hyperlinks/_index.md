@@ -56,7 +56,7 @@ foreach (Field field in doc.Range.Fields)
         if (hyperlink.SubAddress != null)
             continue;
         
-        // Cserélje ki a hiperhivatkozás címét és az eredményt.
+        // Cserélje ki a hiperhivatkozás címét és eredményét.
         hyperlink.Address = "http://www.aspose.com";
         hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
     }

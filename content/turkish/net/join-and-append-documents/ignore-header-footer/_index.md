@@ -101,7 +101,7 @@ Bu, birleştirilmiş belgeyi "JoinAndAppendDocuments.IgnoreHeaderFooter.docx" do
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak üstbilgi ve altbilgilerini göz ardı ederek iki Word belgesini başarıyla birleştirdiniz. Bu yöntem, belirli belge bölümlerinin korunmasının çok önemli olduğu çeşitli belge yönetimi görevleri için kullanışlıdır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak üstbilgi ve altbilgilerini göz ardı ederek iki Word belgesini başarıyla birleştirdiniz. Bu yöntem, belirli belge bölümlerinin korunmasının çok önemli olduğu çeşitli belge yönetimi görevleri için kullanışlıdır.
 
 Aspose.Words for .NET ile çalışmak, belge işleme iş akışlarınızı önemli ölçüde kolaylaştırabilir. Unutmayın, takılıp kalırsanız veya daha fazla bilgiye ihtiyaç duyarsanız, her zaman şu adrese göz atabilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/).
 

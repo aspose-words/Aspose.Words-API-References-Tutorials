@@ -120,7 +120,7 @@ Bên cạnh việc tạo và định dạng tài liệu, Aspose.Words có thể 
 
 ## Phần kết luận
 
-Tự động hóa Word với Aspose.Words dành cho Python mở ra một thế giới khả năng trong việc tạo và thao tác tài liệu. Hướng dẫn này đã trình bày các bước cơ bản để giúp bạn bắt đầu nhưng còn rất nhiều điều khác cần khám phá. Tận dụng sức mạnh của Tự động hóa Word và hợp lý hóa quy trình làm việc tài liệu của bạn một cách dễ dàng!
+Tự động hóa Word với Aspose.Words dành cho Python mở ra một thế giới khả năng trong việc tạo và thao tác tài liệu. Hướng dẫn này đã trình bày các bước cơ bản để giúp bạn bắt đầu nhưng còn nhiều điều khác cần khám phá. Tận dụng sức mạnh của Tự động hóa Word và hợp lý hóa quy trình làm việc tài liệu của bạn một cách dễ dàng!
 
 ## Câu hỏi thường gặp
 
@@ -157,7 +157,7 @@ Tuyệt đối! Aspose.Words hỗ trợ nhiều định dạng tệp khác nhau 
 ### Aspose.Words có phù hợp để tự động hóa các hoạt động trộn thư không?
 Có, Aspose.Words kích hoạt chức năng trộn thư, cho phép bạn hợp nhất dữ liệu từ nhiều nguồn khác nhau vào các mẫu Word, đơn giản hóa quá trình tạo tài liệu được cá nhân hóa.
 
-### Aspose.Words có cung cấp bất kỳ tính năng bảo mật nào cho việc mã hóa tài liệu không?
+### Aspose.Words có cung cấp bất kỳ tính năng bảo mật nào để mã hóa tài liệu không?
 Có, Aspose.Words cung cấp các tính năng mã hóa và bảo vệ bằng mật khẩu để bảo vệ nội dung nhạy cảm trong tài liệu Word của bạn.
 
 ### Aspose.Words có thể được sử dụng để trích xuất văn bản từ tài liệu Word không?

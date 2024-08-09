@@ -9,7 +9,7 @@ url: /tr/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## giriiş
 
-Word belgelerinin programlı olarak işlenmesi söz konusu olduğunda Aspose.Words for .NET bir güç merkezidir. Şık özelliklerinden biri, yazı tiplerini HTML dosyaları içinde Base64 olarak dışa aktararak yazı tiplerinin farklı tarayıcılarda ve sistemlerde doğru şekilde gömülmesini ve görüntülenmesini sağlamaktır. Bu eğitimde bunu nasıl başarabileceğinizi ele alacağız. Word belgesi yazı tiplerinizi web dostu hale getirmeye hazır mısınız? Başlayalım!
+Word belgelerinin programlı olarak işlenmesi söz konusu olduğunda Aspose.Words for .NET bir güç merkezidir. Şık özelliklerinden biri, yazı tiplerini HTML dosyaları içinde Base64 olarak dışa aktararak yazı tiplerinin farklı tarayıcılarda ve sistemlerde doğru şekilde gömülmesini ve görüntülenmesini sağlamaktır. Bu eğitimde bunu nasıl başarabileceğinizi ele alacağız. Word belgesi yazı tiplerinizi web dostu hale getirmeye hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -90,7 +90,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true }
 Son olarak, yapılandırılmış seçeneklerle belgeyi kaydedelim.
 
 
- Kullan`Save` yöntemi`Document` belgenizi kaydetmek için sınıf:
+ Kullanın`Save` yöntemi`Document` belgenizi kaydetmek için sınıf:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);

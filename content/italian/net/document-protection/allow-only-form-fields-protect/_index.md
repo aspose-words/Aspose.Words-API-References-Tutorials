@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/document-protection/allow-only-form-fields-protect/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Hai mai avuto bisogno di proteggere parti specifiche di un documento Word lasciando le altre parti modificabili? Aspose.Words per .NET rende tutto questo estremamente semplice. In questo tutorial, approfondiremo come consentire solo la protezione dei campi modulo in un documento Word. Alla fine di questa guida avrai una conoscenza approfondita della protezione dei documenti utilizzando Aspose.Words per .NET. Pronto? Facciamo un salto!
 
@@ -81,7 +81,7 @@ Ciò salva il documento con la protezione applicata.
 
 ## Conclusione
 
-il gioco è fatto! Hai appena imparato come proteggere un documento Word in modo che solo i campi del modulo possano essere modificati utilizzando Aspose.Words per .NET. Questa è una funzionalità utile quando è necessario garantire che alcune parti del documento rimangano invariate consentendo al tempo stesso la compilazione di campi specifici.
+Ed ecco qua! Hai appena imparato come proteggere un documento Word in modo che solo i campi del modulo possano essere modificati utilizzando Aspose.Words per .NET. Questa è una funzionalità utile quando è necessario garantire che alcune parti del documento rimangano invariate consentendo al tempo stesso la compilazione di campi specifici.
 
 ## Domande frequenti
 

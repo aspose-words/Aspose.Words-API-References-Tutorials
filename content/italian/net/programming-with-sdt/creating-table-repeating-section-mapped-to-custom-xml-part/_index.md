@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial, esamineremo il processo di creazione di una tabella con una sezione ripetuta mappata su una parte XML personalizzata utilizzando Aspose.Words per .NET. Ciò è particolarmente utile per generare dinamicamente documenti basati su dati strutturati.
 
@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Passaggio 4: crea una sezione ripetuta
 
- Creare un`StructuredDocumentTag` (SDT) per la sezione ripetuta e mapparla sui dati XML:
+ Crea un`StructuredDocumentTag` (SDT) per la sezione ripetuta e mapparla sui dati XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

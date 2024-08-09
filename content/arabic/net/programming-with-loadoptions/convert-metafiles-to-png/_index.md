@@ -82,7 +82,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ## الأسئلة الشائعة
 
 ### هل يمكنني تحويل أنواع الملفات الأخرى إلى جانب ملفات التعريف إلى PNG؟
- يوفر Aspose.Words for .NET دعمًا شاملاً لتنسيقات الملفات المختلفة. افحص ال[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
+ يوفر Aspose.Words for .NET دعمًا شاملاً لتنسيقات الملفات المختلفة. تحقق من[الوثائق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
 
 ### هل هناك طريقة لمعالجة مستندات متعددة دفعة واحدة؟
 نعم، يمكنك التنقل عبر دليل المستندات وتطبيق نفس خيارات التحميل على كل ملف.
@@ -94,4 +94,4 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
  نعم، الترخيص مطلوب للحصول على الوظائف الكاملة. يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) لأغراض المحاكمة.
 
 ### هل يمكنني استخدام هذه الطريقة مع تنسيقات رسومية أخرى مثل JPEG أو GIF؟
- هذه الطريقة المحددة مخصصة لملفات التعريف، لكن Aspose.Words for .NET يدعم تنسيقات الصور المختلفة. الرجوع إلى[توثيق](https://reference.aspose.com/words/net/) للمزيد من المعلومات.
+ هذه الطريقة المحددة مخصصة لملفات التعريف، لكن Aspose.Words for .NET يدعم تنسيقات الصور المختلفة. الرجوع إلى[الوثائق](https://reference.aspose.com/words/net/) لمزيد من المعلومات.

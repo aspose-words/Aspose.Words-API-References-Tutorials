@@ -42,8 +42,8 @@ docLandscape.save("landscape.docx", SaveFormat.DOCX);
 // 사용자 정의 페이지 여백 설정
 Document doc = new Document();
 PageSetup pageSetup = doc.getFirstSection().getPageSetup();
-pageSetup.setLeftMargin(72.0); // 1 인치
-pageSetup.setRightMargin(72.0); // 1 인치
+pageSetup.setLeftMargin(72.0); // 1인치
+pageSetup.setRightMargin(72.0); // 1인치
 pageSetup.setTopMargin(36.0); // 0.5인치
 pageSetup.setBottomMargin(36.0); // 0.5인치
 doc.save("custom_margins.docx", SaveFormat.DOCX);

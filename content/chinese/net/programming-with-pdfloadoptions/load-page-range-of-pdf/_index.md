@@ -9,7 +9,7 @@ url: /zh/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
 ## 介绍
 
-在 .NET 应用程序中处理 PDF 时，Aspose.Words for .NET 绝对是一个改变游戏规则的产品。无论您需要转换、操作还是提取 PDF 中的特定页面，这个功能强大的库都能满足您的需求。今天，我们将深入研究一项常见但至关重要的任务：从 PDF 文档中加载特定范围的页面。系好安全带，我们将开始这个详细的教程！
+在 .NET 应用程序中处理 PDF 时，Aspose.Words for .NET 绝对是一个改变游戏规则的产品。无论您需要转换、操作还是提取 PDF 中的特定页面，这个强大的库都能满足您的需求。今天，我们将深入研究一项常见但至关重要的任务：从 PDF 文档中加载特定范围的页面。系好安全带，我们将开始这个详细的教程！
 
 ## 先决条件
 
@@ -17,7 +17,7 @@ url: /zh/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 
 1. Aspose.Words for .NET：确保您拥有 Aspose.Words 库。如果您还没有，您可以[点击下载](https://releases.aspose.com/words/net/).
 2. 开发环境：使用 Visual Studio 或任何其他首选 IDE 设置您的开发环境。
-3. 许可证：虽然 Aspose.Words 提供免费试用，但您可以考虑获取[临时执照](https://purchase.aspose.com/temporary-license/)实现所有功能，不受限制。
+3. 许可证：虽然 Aspose.Words 提供免费试用，但可以考虑获取[临时执照](https://purchase.aspose.com/temporary-license/)实现所有功能，不受限制。
 
 ## 导入命名空间
 

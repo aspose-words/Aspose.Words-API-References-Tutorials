@@ -9,13 +9,13 @@ url: /es/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single
 ---
 ## Introducción
 
-¿Alguna vez te has encontrado enredado en una red de reglas CSS esparcidas por todas partes al convertir documentos de Word a HTML? ¡No temas! Hoy, nos sumergimos en una característica interesante de Aspose.Words para .NET que le permite escribir todas las reglas CSS en un solo archivo. Esto no sólo ordena tu código sino que también te hace la vida mucho más fácil. ¡Abróchese el cinturón y comencemos este viaje hacia una producción HTML más limpia y eficiente!
+¿Alguna vez te has encontrado enredado en una red de reglas CSS esparcidas por todas partes al convertir documentos de Word a HTML? ¡No te preocupes! Hoy, nos sumergimos en una característica interesante de Aspose.Words para .NET que le permite escribir todas las reglas CSS en un solo archivo. Esto no sólo ordena tu código sino que también te hace la vida mucho más fácil. ¡Abróchese el cinturón y comencemos este viaje hacia una producción HTML más limpia y eficiente!
 
 ## Requisitos previos
 
 Antes de sumergirnos en el meollo de la cuestión, pongamos los patos en fila. Esto es lo que necesita para comenzar:
 
-1.  Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Si aún no lo tienes, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Si aún no lo tienes, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo .NET: necesitará un entorno de desarrollo .NET configurado en su máquina. Visual Studio es una opción popular.
 3. Conocimientos básicos de C#: Será útil tener un conocimiento básico de la programación en C#.
 4. Un documento de Word: tenga listo un documento de Word (.docx) que desee convertir.
@@ -83,10 +83,10 @@ El uso de un único archivo CSS simplifica la gestión y el mantenimiento de sus
  Sí, configurando`SaveFontFaceCssSeparately` a`true`, puede separar las reglas CSS de fuentes en un archivo diferente.
 
 ### ¿Aspose.Words para .NET es de uso gratuito?
- Aspose.Words ofrece una prueba gratuita que puedes[descarga aquí](https://releases.aspose.com/) . Para un uso continuo, considere comprar una licencia[aquí](https://purchase.aspose.com/buy).
+ Aspose.Words ofrece una prueba gratuita que puedes[descargar aquí](https://releases.aspose.com/) . Para un uso continuo, considere comprar una licencia[aquí](https://purchase.aspose.com/buy).
 
 ### ¿A qué otros formatos se puede convertir Aspose.Words para .NET?
 Aspose.Words para .NET admite varios formatos, incluidos PDF, TXT y formatos de imagen como JPEG y PNG.
 
 ### ¿Dónde puedo encontrar más recursos sobre Aspose.Words para .NET?
- Revisar la[documentación](https://reference.aspose.com/words/net/) para guías completas y referencias de API.
+ Mira el[documentación](https://reference.aspose.com/words/net/) para guías completas y referencias de API.

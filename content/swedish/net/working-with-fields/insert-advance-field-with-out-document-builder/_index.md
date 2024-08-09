@@ -9,7 +9,7 @@ url: /sv/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
 ## Introduktion
 
-Vill du förbättra dina Word-dokumentmanipulationer med Aspose.Words för .NET? Tja, du är på rätt plats! I den här handledningen går vi igenom processen att infoga ett förskottsfält i ett Word-dokument utan att använda klassen DocumentBuilder. I slutet av den här guiden har du en gedigen förståelse för hur du uppnår detta med Aspose.Words för .NET. Så låt oss dyka in och göra din dokumentbehandling ännu mer kraftfull och mångsidig!
+Vill du förbättra dina Word-dokumentmanipulationer med Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här handledningen går vi igenom processen att infoga ett förskottsfält i ett Word-dokument utan att använda klassen DocumentBuilder. I slutet av den här guiden har du en gedigen förståelse för hur du uppnår detta med Aspose.Words för .NET. Så låt oss dyka in och göra din dokumentbehandling ännu mer kraftfull och mångsidig!
 
 ## Förutsättningar
 
@@ -63,7 +63,7 @@ Detta skapar ett nytt, tomt dokument.
 
 ### Lägg till ett stycke
 
-2. Hämta det första stycket i dokumentet:
+2. Hämta första stycket i dokumentet:
 
 ```csharp
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];

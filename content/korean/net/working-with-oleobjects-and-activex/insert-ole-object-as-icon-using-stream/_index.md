@@ -2,125 +2,98 @@
 title: 스트림을 사용하여 Ole 객체를 아이콘으로 삽입
 linktitle: 스트림을 사용하여 Ole 객체를 아이콘으로 삽입
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words가 포함된 스트림을 사용하여 OLE 개체를 아이콘으로 삽입하는 방법을 알아보세요.
+description: 이 상세한 단계별 튜토리얼에서 .NET용 Aspose.Words가 포함된 스트림을 사용하여 OLE 개체를 아이콘으로 삽입하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## 소개
 
-다음은 .NET용 Aspose.Words가 포함된 스트림을 사용하여 OLE 개체를 아이콘으로 삽입하는 방법을 보여주는 C# 소스 코드를 설명하는 단계별 가이드입니다.
+이 튜토리얼에서는 .NET용 Aspose.Words의 매우 멋진 기능인 스트림을 사용하여 OLE(Object Linking and Embedding) 개체를 아이콘으로 삽입하는 기능을 살펴보겠습니다. PowerPoint 프리젠테이션, Excel 스프레드시트 또는 기타 유형의 파일을 포함하는 경우 이 가이드에서는 해당 작업을 수행하는 방법을 정확하게 보여줍니다. 시작할 준비가 되셨나요? 갑시다!
 
-## 1단계: 필요한 참조 가져오기
-시작하기 전에 Aspose.Words for .NET을 사용하는 데 필요한 참조를 프로젝트에 가져왔는지 확인하세요. 여기에는 Aspose.Words 라이브러리를 가져오고 소스 파일에 필요한 네임스페이스를 추가하는 작업이 포함됩니다.
+## 전제 조건
+
+코드를 시작하기 전에 필요한 몇 가지 사항이 있습니다.
+
+-  .NET용 Aspose.Words: 아직 하지 않으셨다면,[다운로드](https://releases.aspose.com/words/net/) .NET용 Aspose.Words를 설치하세요.
+- 개발 환경: Visual Studio 또는 기타 C# 개발 환경.
+- 입력 파일: 삽입하려는 파일(예: PowerPoint 프레젠테이션) 및 아이콘 이미지입니다.
+
+## 네임스페이스 가져오기
+
+시작하려면 프로젝트에 필요한 네임스페이스를 가져왔는지 확인하세요.
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## 2단계: 새 문서 및 문서 생성기 만들기
- 이 단계에서는 다음을 사용하여 새 문서를 만듭니다.`Document` 클래스와 문서 작성기를 사용하는`DocumentBuilder` 수업.
+따라하기 쉽도록 과정을 단계별로 나누어 보겠습니다.
+
+## 1단계: 새 문서 만들기
+
+먼저 새 문서와 해당 문서로 작업할 문서 작성기를 만듭니다.
 
 ```csharp
+// 문서 디렉터리 경로
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3단계: 스트림에서 OLE 개체를 아이콘으로 삽입
- 문서 작성기 사용`InsertOleObjectAsIcon` 스트림의 아이콘으로 OLE 개체를 문서에 삽입하는 방법입니다. 데이터 스트림, 개체 유형, 아이콘 경로 및 포함된 개체 이름을 지정합니다.
+ 생각하다`Document` 당신의 빈 캔버스로서`DocumentBuilder` 당신의 붓으로. 우리는 걸작을 만들기 위한 도구를 설정하고 있습니다.
+
+## 2단계: 스트림 준비
+
+다음으로, 삽입하려는 파일이 포함된 메모리 스트림을 준비해야 합니다. 이 예에서는 PowerPoint 프레젠테이션을 포함하겠습니다.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+이 단계는 페인트를 브러시에 넣는 것과 같습니다. 파일을 삽입할 준비를 하고 있습니다.
+
+## 3단계: OLE 개체를 아이콘으로 삽입
+
+이제 문서 작성기를 사용하여 OLE 개체를 문서에 삽입하겠습니다. 파일 스트림, 파일 유형(이 경우 "패키지")에 대한 ProgID, 아이콘 이미지 경로 및 포함된 파일에 대한 레이블을 지정합니다.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
+
+이곳이 바로 마법이 일어나는 곳입니다! 파일을 삽입하고 문서 내에 아이콘으로 표시합니다.
 
 ## 4단계: 문서 저장
- 문서의 내용을 사용하세요`Save` 문서를 파일로 저장하는 방법입니다.
+
+마지막으로 문서를 지정된 경로에 저장합니다.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### .NET용 Aspose.Words가 포함된 스트림을 사용하여 OLE 개체를 아이콘으로 삽입하기 위한 예제 소스 코드
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-이것은 .NET용 Aspose.Words가 포함된 스트림을 사용하여 OLE 개체를 아이콘으로 삽입하기 위한 전체 코드 샘플입니다. 필요한 참조를 가져오고 이전에 설명한 단계에 따라 이 코드를 프로젝트에 통합하십시오.
+이 단계는 완성된 그림을 액자에 넣어 벽에 걸어 두는 것과 같습니다. 이제 문서를 사용할 준비가 되었습니다!
 
 ## 결론
 
-위의 단계별 가이드에서는 Aspose.Words for .NET의 흐름을 사용하여 Word 문서에 OLE 개체를 아이콘으로 삽입하는 방법을 설명합니다. 설명된 단계를 따르면 이 기능을 프로젝트에 통합할 수 있습니다. 필요한 참조를 가져오고, 새 문서 및 문서 생성기를 만들고, OLE 개체를 스트림의 아이콘으로 삽입한 다음 문서를 저장하십시오. 제공된 샘플 코드를 시작점으로 사용하고 필요에 맞게 사용자 정의하세요.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에 OLE 개체를 아이콘으로 성공적으로 포함했습니다. 이 강력한 기능을 사용하면 동적이고 대화형인 문서를 쉽게 만들 수 있습니다. 프리젠테이션, 스프레드시트 또는 기타 파일을 삽입하든 Aspose.Words를 사용하면 매우 쉽습니다. 그러니 직접 사용해 보시고 문서에 어떤 변화가 생기는지 확인해 보세요!
 
-### FAQ
+## FAQ
 
-#### Q. Aspose.Words for .NET을 사용하기 위해 필요한 참조를 어떻게 가져오나요?
+### 이 방법을 사용하여 다양한 유형의 파일을 포함할 수 있습니까?
+예, Word, Excel, PowerPoint 등을 포함하여 OLE에서 지원하는 모든 파일 형식을 포함할 수 있습니다.
 
-A. 필요한 참조를 가져오려면 다음 단계를 수행해야 합니다.
+### .NET용 Aspose.Words를 사용하려면 특별한 라이센스가 필요합니까?
+ 예, .NET용 Aspose.Words에는 라이선스가 필요합니다. 당신은 얻을 수 있습니다[무료 평가판](https://releases.aspose.com/) 또는 구매[임시 면허증](https://purchase.aspose.com/temporary-license/) 테스트용.
 
- 다음을 추가하세요`using` 소스 파일 상단에 있는 명령문:
+### OLE 개체에 사용되는 아이콘을 사용자 정의할 수 있나요?
+ 전적으로! 경로를 지정하여 아이콘에 대한 이미지 파일을 사용할 수 있습니다.`InsertOleObjectAsIcon` 방법.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-프로젝트에 Aspose.Words 라이브러리를 추가했는지 확인하세요.
+### 파일이나 아이콘 경로가 올바르지 않으면 어떻게 되나요?
+메서드에서 예외가 발생합니다. 오류를 방지하려면 파일 경로가 올바른지 확인하세요.
 
-#### Q. Aspose.Words for .NET을 사용하여 새 문서 및 문서 빌더를 만드는 방법은 무엇입니까?
-
-A. 새 문서 및 문서 생성기를 만들려면 다음 단계를 따르세요.
-
- 사용`Document` 새 문서를 생성하는 클래스:
-
-```csharp
-Document doc = new Document();
-```
- 사용`DocumentBuilder` 이전에 생성된 문서와 연결된 문서 빌더를 생성하는 클래스:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### Q. Aspose.Words for .NET을 사용하여 스트림에서 OLE 개체를 아이콘으로 삽입하는 방법은 무엇입니까?
-
-A. OLE 개체를 스트림의 아이콘으로 삽입하려면 다음 단계를 수행하세요.
-
- 사용`InsertOleObjectAsIcon` OLE 개체를 삽입하는 문서 생성기의 메서드:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### Q. 문서를 파일로 저장하는 방법은 무엇인가요?
-
-A.  문서를 파일로 저장하려면`Save` 대상 경로를 지정하는 문서의 메소드:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### Q. 스트림의 아이콘으로 OLE 개체를 내 프로젝트에 삽입하기 위한 코드를 어떻게 포함합니까?
-
-A. OLE 개체를 스트림의 아이콘으로 프로젝트에 삽입하기 위한 코드를 포함하려면 다음 단계를 따르세요.
-- 적절한 참조를 추가하여 필요한 참조를 가져옵니다.`using` 진술.
--  다음을 사용하여 새 문서와 문서 작성기를 만듭니다.`Document`그리고`DocumentBuilder` 클래스.
-- 스트림에서 OLE 개체를 아이콘으로 삽입하는 코드를 사용합니다.
--  다음을 사용하여 문서를 저장합니다.`Save` 적절한 대상 경로를 사용하는 메소드입니다.
-
-다음 단계를 수행하면 Aspose.Words for .NET을 사용하여 스트림에서 아이콘으로 OLE 개체를 성공적으로 삽입할 수 있습니다. 원하는 결과를 얻으려면 지침을 따르고 필요한 참조를 가져와야 합니다.
+### 포함된 개체를 포함하는 대신 연결하는 것이 가능합니까?
+예, Aspose.Words를 사용하면 내용을 포함하지 않고 파일을 참조하는 연결된 OLE 개체를 삽입할 수 있습니다.

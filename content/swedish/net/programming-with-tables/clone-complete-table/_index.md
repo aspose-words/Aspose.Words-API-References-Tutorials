@@ -15,7 +15,7 @@ url: /sv/net/programming-with-tables/clone-complete-table/
 
 Innan vi dyker in i kloningstabellerna, se till att du har följande förutsättningar:
 
-1. Aspose.Words for .NET installerat: Se till att du har Aspose.Words for .NET installerat på din dator. Om du inte har installerat det ännu kan du ladda ner det från[webbplats](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET installerat: Se till att du har Aspose.Words for .NET installerat på din dator. Om du inte har installerat det ännu kan du ladda ner det från[plats](https://releases.aspose.com/words/net/).
 
 2. Visual Studio eller vilken .NET IDE som helst: Du behöver en utvecklingsmiljö för att skriva och testa din kod. Visual Studio är ett populärt val för .NET-utveckling.
 
@@ -43,7 +43,7 @@ Ange först sökvägen till katalogen där ditt Word-dokument finns. Detta är a
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
 
 ## Steg 2: Ladda dokumentet
 
@@ -103,7 +103,7 @@ Spara slutligen det ändrade dokumentet med ett nytt namn för att bevara origin
 doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 ```
 
- Byta ut`"WorkingWithTables.CloneCompleteTable.docx"` med önskat utdatafilnamn.
+ Ersätta`"WorkingWithTables.CloneCompleteTable.docx"` med önskat utdatafilnamn.
 
 ## Slutsats
 

@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: cree una lista con múltiples niveles de sangría
 
- Con el`DocumentBuilder` Por ejemplo, ahora puede crear una lista con diferentes niveles de sangría. Utilizar el`ListFormat` propiedad para aplicar numeración y sangría a los elementos de la lista según sea necesario.
+ Con el`DocumentBuilder` Por ejemplo, ahora puede crear una lista con diferentes niveles de sangría. Utilice el`ListFormat` propiedad para aplicar numeración y sangría a los elementos de la lista según sea necesario.
 
 ```csharp
 // Crea una lista con tres niveles de sangría
@@ -104,4 +104,4 @@ Si sigue estos pasos, habrá creado con éxito un documento con sangría de list
 Sí, puede modificar el formato de la lista y la configuración de sangría en cualquier momento antes de guardar el documento.
 
 ### ¿Qué otros formatos de documentos admiten la configuración de sangría de lista?
-Además de los archivos de texto, la configuración de sangría de lista se puede aplicar a otros formatos como DOCX, PDF y HTML cuando se utiliza Aspose.Words.
+Además de los archivos de texto, la configuración de sangría de lista se puede aplicar a otros formatos como DOCX, PDF y HTML cuando se usa Aspose.Words.

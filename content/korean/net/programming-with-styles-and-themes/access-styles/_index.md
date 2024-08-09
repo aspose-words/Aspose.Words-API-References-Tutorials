@@ -15,7 +15,7 @@ Word의 문서 스타일 세계로 뛰어들 준비가 되셨나요? 복잡한 �
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
-1.  .NET용 Aspose.Words: 이 라이브러리를 .NET 환경에 설치해야 합니다. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 이 라이브러리를 .NET 환경에 설치해야 합니다. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. .NET에 대한 기본 지식: C# 또는 다른 .NET 언어에 익숙하면 제공된 코드 조각을 이해하는 데 도움이 됩니다.
 3. 개발 환경: .NET 코드를 작성하고 실행할 수 있도록 Visual Studio와 같은 IDE가 설정되어 있는지 확인하세요.
 

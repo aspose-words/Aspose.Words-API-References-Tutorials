@@ -2,83 +2,105 @@
 title: Atur Tanda Penekanan Font
 linktitle: Atur Tanda Penekanan Font
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur gaya penekanan font di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengatur tanda penekanan font di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk pengembang .NET.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan menunjukkan cara mengatur gaya penekanan font di dokumen Word menggunakan Aspose.Words untuk .NET. Penekanan font digunakan untuk menyorot kata atau frasa tertentu dalam teks.
+Dalam tutorial hari ini, kita mendalami cara menyetel tanda penekanan font di dokumen Word menggunakan Aspose.Words untuk .NET. Baik Anda ingin menggarisbawahi teks tertentu dengan tanda unik atau sekadar menonjolkan kata-kata tertentu, panduan ini siap membantu Anda. Jadi, kencangkan sabuk pengaman dan mari kita mulai!
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
 
-## Langkah 1: Tentukan direktori dokumen
-Mulailah dengan mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Sebelum kita menyelami detail seluk beluknya, pastikan Anda telah mencentang prasyarat berikut:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Perpustakaan Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Lingkungan pengembangan yang berfungsi seperti Visual Studio.
+- .NET Framework: Pastikan Anda telah menginstal .NET Framework.
 
-## Langkah 2: Buat dan sesuaikan dokumen
- Buat sebuah instance dari`Document` kelas dan yang terkait`DocumentBuilder` untuk membangun konten dokumen. Menggunakan`Font.EmphasisMark` properti untuk mengatur gaya penekanan font`EmphasisMark.UnderSolidCircle` . Kemudian gunakan`Write`Dan`Writeln` metode dari`DocumentBuilder` untuk menambahkan teks dengan penekanan font yang ditentukan.
+## Impor Namespace
+
+Untuk bekerja dengan Aspose.Words untuk .NET, Anda harus mengimpor namespace yang diperlukan. Tambahkan ini di bagian atas file kode Anda:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Langkah 3: Simpan dokumen
- Simpan dokumen menggunakan`Save` metode`Document` dengan jalur dan nama file yang sesuai.
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana. Ikuti setiap langkah dengan hati-hati untuk mengatur tanda penekanan font di dokumen Word Anda.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
 
-### Contoh kode sumber untuk Mengatur Tanda Penekanan Font menggunakan Aspose.Words untuk .NET 
+Hal pertama yang pertama, Anda perlu menginisialisasi dokumen baru dan DocumentBuilder. Kelas DocumentBuilder menyediakan metode untuk menyisipkan teks dan elemen lain ke dalam dokumen.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Inisialisasi Dokumen baru
 Document document = new Document();
+
+// Inisialisasi DocumentBuilder dengan dokumen
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Langkah 2: Atur Tanda Penekanan Font
+
+Dengan DocumentBuilder siap, kini Anda dapat mengatur tanda penekanan font. Dalam contoh ini, kita akan menggunakan tanda penekanan "UnderSolidCircle".
+
+```csharp
+// Atur tanda penekanan font
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Tulis teks dengan tanda penekanan
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Langkah 3: Hapus Pemformatan dan Tambahkan Teks Biasa
+
+Setelah mengatur tanda penekanan, Anda mungkin ingin menambahkan beberapa teks biasa tanpa penekanan apa pun. Untuk itu, Anda perlu menghapus pemformatan.
+
+```csharp
+// Hapus pemformatan font
 builder.Font.ClearFormatting();
+
+// Tulis teks biasa
 builder.Write("Simple text");
+```
+
+## Langkah 4: Simpan Dokumen
+
+Setelah Anda menambahkan semua teks dan format yang Anda perlukan, langkah terakhir adalah menyimpan dokumen. Tentukan jalur dan nama file tempat Anda ingin menyimpan dokumen Anda.
+
+```csharp
+// Simpan dokumennya
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, Anda mempelajari cara mengatur gaya penekanan font di dokumen Word menggunakan Aspose.Words untuk .NET. Bereksperimenlah dengan berbagai gaya penekanan dan gunakan fitur ini untuk menyorot kata atau frasa dalam dokumen Anda.
 
-### FAQ
+Dan itu dia! Mengatur tanda penekanan font di dokumen Word menggunakan Aspose.Words untuk .NET sesederhana itu. Hanya dengan beberapa baris kode, Anda dapat membuat teks Anda menonjol dan menambahkan sentuhan profesional pada dokumen Anda. Jangan ragu untuk bereksperimen dengan tanda penekanan dan gaya berbeda sesuai kebutuhan Anda.
 
-#### T: Bagaimana cara menambahkan tanda aksen ke font tertentu di dokumen Word menggunakan Aspose.Words?
+## FAQ
 
-J: Untuk menambahkan tanda aksen ke font tertentu di dokumen Word menggunakan Aspose.Words, Anda dapat menggunakan API untuk menavigasi ke font yang diinginkan dan menerapkan tanda aksen yang sesuai. Ini akan menambahkan tanda aksen pada teks dengan font yang dipilih.
+### Apa yang dimaksud dengan tanda penekanan font?
 
-#### T: Apakah mungkin mengubah gaya tanda aksen di dokumen Word dengan Aspose.Words?
+Tanda penekanan font adalah simbol khusus yang ditambahkan ke teks untuk membuatnya menonjol. Mereka dapat mencakup titik, lingkaran, dan tanda dekoratif lainnya.
 
-J: Ya, dengan Aspose.Words Anda dapat mengubah gaya tanda aksen di dokumen Word. API memungkinkan Anda menyesuaikan properti gaya seperti warna, ukuran, tipe garis, dll., untuk menyesuaikan tampilan tanda aksen.
+### Bisakah saya menggunakan tanda penekanan lain dengan Aspose.Words untuk .NET?
 
-#### T: Bagaimana cara menghapus semua tanda aksen dari dokumen Word menggunakan Aspose.Words?
+ Ya, Aspose.Words untuk .NET mendukung berbagai tanda penekanan. Anda dapat menjelajahi berbagai opsi dengan mengacu pada[dokumentasi](https://reference.aspose.com/words/net/).
 
-J: Untuk menghapus semua tanda aksen dari dokumen Word menggunakan Aspose.Words, Anda dapat menggunakan API untuk menelusuri dokumen, mendeteksi tanda aksen yang ada, dan menghapusnya menggunakan metode yang sesuai. Ini akan menghapus semua tanda penekanan dari dokumen.
+### Apakah Aspose.Words untuk .NET gratis untuk digunakan?
 
-#### T: Bisakah saya menambahkan tanda aksen ke bagian teks tertentu di dokumen Word?
+ Aspose.Words untuk .NET memerlukan lisensi untuk fungsionalitas penuh. Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/) atau membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
-J: Ya, Anda dapat menambahkan tanda aksen ke bagian teks tertentu di dokumen Word menggunakan Aspose.Words. Anda dapat memilih rentang teks yang diinginkan menggunakan API dan menambahkan tanda penekanan yang sesuai ke bagian teks tersebut.
+### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
-#### Q: Apakah tanda aksen dapat disesuaikan dengan kebutuhan saya?
+ Anda bisa mendapatkan dukungan dari komunitas Aspose dan tim dukungan dengan mengunjungi mereka[forum dukungan](https://forum.aspose.com/c/words/8).
 
-A: Ya, tanda aksen dapat disesuaikan dengan kebutuhan Anda menggunakan Aspose.Words. Anda dapat menyesuaikan properti gaya tanda aksen, seperti warna, ukuran, tipe garis, dan lainnya, agar sesuai dengan preferensi pemformatan Anda.
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan kerangka .NET lainnya?
+
+Ya, Aspose.Words untuk .NET kompatibel dengan berbagai kerangka .NET, termasuk .NET Core dan .NET 5/6.

@@ -66,7 +66,7 @@ image.getImageData().setImage("path/to/your/image.png");
 header.appendChild(image);
 ```
 
-#### Número de páginas:
+#### Números de página:
 
 Agregar números de página es un requisito común. Aspose.Words para Java proporciona una manera conveniente de insertar números de página dinámicamente:
 
@@ -99,7 +99,7 @@ Sí, puede tener diferentes encabezados y pies de página para páginas pares e 
 
 ### ¿Es posible agregar hipervínculos dentro de los encabezados o pies de página?
 
- ¡Ciertamente! Puede agregar hipervínculos dentro de encabezados o pies de página usando Aspose.Words para Java. Utilizar el`Hyperlink` clase para crear hipervínculos e insertarlos en el contenido del encabezado o pie de página.
+ ¡Ciertamente! Puede agregar hipervínculos dentro de encabezados o pies de página usando Aspose.Words para Java. Utilice el`Hyperlink` clase para crear hipervínculos e insertarlos en el contenido del encabezado o pie de página.
 
 ### ¿Cómo puedo alinear el contenido del encabezado o pie de página a la izquierda o a la derecha?
 

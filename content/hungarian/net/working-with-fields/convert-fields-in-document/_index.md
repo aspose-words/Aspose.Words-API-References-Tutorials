@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen konvertálta a mezőket egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt az útmutatót, akkor most már rendelkezik a dokumentumok mezőinek manipulálásához és átalakításához szükséges ismeretekkel, ami javítja dokumentumfeldolgozási képességeit.
+Gratulálok! Sikeresen konvertálta a mezőket egy Word-dokumentumban az Aspose.Words for .NET használatával. Ha követi ezt az útmutatót, akkor most már rendelkezik a dokumentumok mezőinek manipulálásához és átalakításához szükséges ismeretekkel, ami javítja dokumentumfeldolgozási képességeit.
 
 ## GYIK
 

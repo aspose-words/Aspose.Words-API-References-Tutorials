@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/field-display-results/
 ---
-## introduzione
+## Introduzione
 
 Se hai mai lavorato con documenti di Microsoft Word, sai quanto possono essere potenti i campi. Sono come piccoli segnaposto dinamici che possono mostrare cose come date, proprietà del documento o persino calcoli. Ma cosa succede quando è necessario aggiornare questi campi e visualizzarne i risultati a livello di codice? È qui che entra in gioco Aspose.Words per .NET. Questa guida ti guiderà attraverso il processo di aggiornamento e visualizzazione dei risultati dei campi nei documenti Word utilizzando Aspose.Words per .NET. Alla fine, saprai come automatizzare facilmente queste attività, sia che tu abbia a che fare con un documento complesso o un semplice report.
 

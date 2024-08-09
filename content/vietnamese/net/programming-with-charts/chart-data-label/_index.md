@@ -17,9 +17,9 @@ Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều
 
 1. Visual Studio: Cài đặt Visual Studio 2019 trở lên.
 2. .NET Framework: Đảm bảo bạn có .NET Framework 4.0 trở lên.
-3.  Aspose.Words for .NET: Tải xuống và cài đặt Aspose.Words for .NET từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+3.  Aspose.Words for .NET: Tải xuống và cài đặt Aspose.Words for .NET từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 4. Kiến thức cơ bản về C#: Cần phải làm quen với lập trình C#.
-5.  Giấy phép hợp lệ: Nhận một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) hoặc mua một cái từ[đường link mua hàng](https://purchase.aspose.com/buy).
+5.  Giấy phép hợp lệ: Nhận một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) hoặc mua một cái từ[mua liên kết](https://purchase.aspose.com/buy).
 
 ## Nhập không gian tên
 
@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### Giải trình
+### Giải thích
 
 - Tài liệu doc: Tạo một phiên bản mới của lớp Tài liệu.
 - Trình tạo DocumentBuilder: DocumentBuilder giúp chèn nội dung vào đối tượng Document.
@@ -58,7 +58,7 @@ Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-### Giải trình
+### Giải thích
 
 - Hình dạng hình dạng: Biểu thị biểu đồ dưới dạng hình dạng trong tài liệu.
 - builder.InsertChart(ChartType.Bar, 432, 252): Chèn biểu đồ thanh với các kích thước được chỉ định.
@@ -71,7 +71,7 @@ Chart chart = shape.Chart;
 ChartSeries series0 = shape.Chart.Series[0];
 ```
 
-### Giải trình
+### Giải thích
 
 - ChartSeries series0: Truy xuất chuỗi đầu tiên của biểu đồ mà chúng tôi sẽ tùy chỉnh.
 
@@ -90,7 +90,7 @@ labels.ShowValue = true;
 labels.Separator = "/";
 ```
 
-### Giải trình
+### Giải thích
 
 - Nhãn ChartDataLabelCollection: Truy cập nhãn dữ liệu của chuỗi.
 - labels.ShowLegendKey: Hiển thị phím chú giải.
@@ -109,7 +109,7 @@ Cuối cùng, lưu tài liệu vào thư mục được chỉ định.
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-### Giải trình
+### Giải thích
 
 - doc.Save: Lưu tài liệu với tên được chỉ định trong thư mục được cung cấp.
 
@@ -123,7 +123,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Aspose.Words for .NET là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình.
 
 ### Làm cách nào để cài đặt Aspose.Words cho .NET?
- Bạn có thể tải xuống và cài đặt nó từ[Liên kết tải xuống](https://releases.aspose.com/words/net/). Thực hiện theo các hướng dẫn cài đặt được cung cấp.
+ Bạn có thể tải xuống và cài đặt nó từ[liên kết tải xuống](https://releases.aspose.com/words/net/). Thực hiện theo các hướng dẫn cài đặt được cung cấp.
 
 ### Tôi có thể dùng thử Aspose.Words cho .NET miễn phí không?
  Vâng, bạn có thể nhận được một[dùng thử miễn phí](https://releases.aspose.com/) hoặc một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/)để đánh giá sản phẩm.

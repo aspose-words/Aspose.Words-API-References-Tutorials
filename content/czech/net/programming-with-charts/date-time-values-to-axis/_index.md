@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/date-time-values-to-axis/
 ---
-## Úvod
+## Zavedení
 
 Vytváření grafů v dokumentech může být účinným způsobem vizualizace dat. Při práci s daty časových řad je přidání hodnot data a času na osu grafu zásadní pro přehlednost. V tomto tutoriálu vás provedeme procesem přidávání hodnot data a času na osu grafu pomocí Aspose.Words for .NET. Tento podrobný průvodce vám pomůže nastavit vaše prostředí, napsat kód a porozumět každé části procesu. Pojďme se ponořit!
 
@@ -16,9 +16,9 @@ Vytváření grafů v dokumentech může být účinným způsobem vizualizace d
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
 1. Visual Studio nebo jakékoli .NET IDE: K psaní a spouštění kódu .NET potřebujete vývojové prostředí.
-2.  Aspose.Words for .NET: Měli byste mít nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Měli byste mít nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 3. Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
-4.  Platná licence Aspose: Můžete získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/).
+4.  Platná licence Aspose: Můžete získat dočasnou licenci od[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 
@@ -125,4 +125,4 @@ Data grafu můžete aktualizovat dynamicky úpravou vlastností řad a os progra
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
 
- Můžete najít podrobnější dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnější dokumentaci[zde](https://reference.aspose.com/words/net/).

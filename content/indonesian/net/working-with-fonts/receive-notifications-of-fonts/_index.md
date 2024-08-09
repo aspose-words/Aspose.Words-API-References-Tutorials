@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Perkenalan
 
 Jika Anda pernah menghadapi masalah dengan font yang tidak ditampilkan dengan benar di dokumen Anda, Anda tidak sendirian. Mengelola pengaturan font dan menerima pemberitahuan tentang penggantian font dapat menyelamatkan Anda dari banyak sakit kepala. Dalam panduan komprehensif ini, kita akan mempelajari cara menangani pemberitahuan font menggunakan Aspose.Words untuk .NET, memastikan dokumen Anda selalu terlihat terbaik.
 
@@ -99,7 +99,7 @@ Dengan mengikuti langkah-langkah ini, Anda telah mengonfigurasi aplikasi Anda un
 
 ## Kesimpulan
 
-Anda sekarang telah menguasai proses penerimaan notifikasi untuk penggantian font menggunakan Aspose.Words untuk .NET. Keterampilan ini akan membantu Anda memastikan bahwa dokumen Anda selalu terlihat terbaik, bahkan ketika font yang diperlukan tidak tersedia. Teruslah bereksperimen dengan pengaturan berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
+Anda sekarang telah menguasai proses menerima pemberitahuan untuk penggantian font menggunakan Aspose.Words untuk .NET. Keterampilan ini akan membantu Anda memastikan bahwa dokumen Anda selalu terlihat terbaik, bahkan ketika font yang diperlukan tidak tersedia. Teruslah bereksperimen dengan pengaturan berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
 
 ## FAQ
 
@@ -113,11 +113,11 @@ Tidak, Anda hanya dapat menentukan satu font default untuk substitusi. Namun, An
 
 ###  Q3: Dapatkah saya menangani jenis peringatan lainnya`IWarningCallback`?
 
- Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
+ Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, tidak hanya penggantian font.
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 
- Mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
+ Kunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
 
 ### Q5: Apakah mungkin untuk mendapatkan lisensi sementara untuk Aspose.Words?
 

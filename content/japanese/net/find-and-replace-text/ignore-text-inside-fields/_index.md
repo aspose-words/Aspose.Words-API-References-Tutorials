@@ -46,7 +46,7 @@ builder.InsertField("INCLUDETEXT", "Text in field");
 
 ## ステップ3: フィールド内のテキストを無視する
 
-フィールド内のコンテンツを無視してテキストを操作するには、`FindReplaceOptions`とともに`IgnoreFields`プロパティが設定されている`true`:
+フィールド内のコンテンツを無視してテキストを操作するには、`FindReplaceOptions`と`IgnoreFields`プロパティが設定されている`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```

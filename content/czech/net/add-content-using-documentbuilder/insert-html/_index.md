@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-html/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové nadšenci do kódování! Přemýšleli jste někdy o tom, jak vložit HTML do dokumentu aplikace Word pomocí Aspose.Words for .NET? Ať už chcete přidat nějaké efektní formátování nebo jen chcete zefektivnit proces vytváření dokumentů, jste na správném místě. V tomto tutoriálu se ponoříme hluboko do toho nejnutnějšího použití Aspose.Words for .NET k vložení HTML přímo do vašich dokumentů aplikace Word. A nebojte se; budeme dělat věci jednoduché, poutavé a přímo zábavné!
 
@@ -15,7 +15,7 @@ Ahoj, kolegové nadšenci do kódování! Přemýšleli jste někdy o tom, jak v
 
 Než se ponoříme do podrobného průvodce, ujistěte se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
-1. Aspose.Words for .NET Library: Pokud jste tak dosud neučinili, budete si muset stáhnout knihovnu Aspose.Words for .NET. Můžeš to dostat[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Pokud jste tak dosud neučinili, budete si muset stáhnout knihovnu Aspose.Words for .NET. Můžete to získat[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte nastavené vývojové prostředí, jako je Visual Studio.
 3. .NET Framework: Ujistěte se, že máte na svém počítači nainstalovaný .NET Framework.
 4. Základní znalost C#: Malá znalost C# bude dlouhá cesta.
@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Vytvoření nového dokumentu
 
- Dále vytvoříme novou instanci`Document` třída. Toto představuje náš dokument Word.
+ Dále vytvoříme novou instanci souboru`Document` třída. Toto představuje náš dokument Word.
 
 ```csharp
 Document doc = new Document();
@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 4: Vložení obsahu HTML
 
- Nyní přichází ta zábavná část – přidání obsahu HTML. Za použití`InsertHtml` metoda`DocumentBuilder` třídy, můžeme HTML vložit přímo do našeho dokumentu aplikace Word.
+ Nyní přichází ta zábavná část – přidání obsahu HTML. Pomocí`InsertHtml` metoda`DocumentBuilder` třídy, můžeme HTML vložit přímo do našeho dokumentu aplikace Word.
 
 ```csharp
 builder.InsertHtml(
@@ -82,7 +82,7 @@ V neposlední řadě uložíme náš dokument do zadaného adresáře.
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-A tady to máte! Právě jste vložili HTML do dokumentu aplikace Word pomocí Aspose.Words for .NET. Plácnutí!
+A tady to máte! Právě jste vložili HTML do dokumentu aplikace Word pomocí Aspose.Words for .NET. Pět!
 
 ## Závěr
 

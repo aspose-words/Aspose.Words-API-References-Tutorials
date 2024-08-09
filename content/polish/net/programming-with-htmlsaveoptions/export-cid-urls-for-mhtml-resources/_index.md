@@ -93,10 +93,10 @@ Gratulacje! Pomyślnie wyeksportowałeś adresy URL Cid dla zasobów MHTML przy 
 ## Często zadawane pytania
 
 ### Jaki jest cel eksportowania adresów URL Cid dla zasobów MHTML?
-Eksportowanie adresów URL Cid dla zasobów MHTML gwarantuje, że zasoby osadzone w pliku MHTML będą miały prawidłowe odniesienia, co poprawi przenośność i integralność dokumentu.
+Eksportowanie adresów URL Cid dla zasobów MHTML gwarantuje, że zasoby osadzone w pliku MHTML będą prawidłowo odwoływane, co poprawia przenośność i integralność dokumentu.
 
 ### Czy mogę bardziej dostosować format wyjściowy?
- Tak, Aspose.Words dla .NET oferuje szerokie możliwości dostosowywania do zapisywania dokumentów. Patrz[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, Aspose.Words dla .NET oferuje szerokie możliwości dostosowywania do zapisywania dokumentów. Patrz[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
  Tak, potrzebujesz licencji, aby używać Aspose.Words dla .NET. Możesz uzyskać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/) lub kup licencję[Tutaj](https://purchase.aspose.com/buy).

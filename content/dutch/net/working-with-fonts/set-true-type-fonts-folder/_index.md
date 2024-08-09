@@ -2,82 +2,96 @@
 title: Stel de map TrueType-lettertypen in
 linktitle: Stel de map TrueType-lettertypen in
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het instellen van de map True Type Fonts bij het renderen van een document met Aspose.Words voor .NET.
+description: Leer hoe u een True Type Fonts-map in Word-documenten instelt met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding om consistent lettertypebeheer te garanderen.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u stapsgewijs door het proces om de map True Type Fonts in te stellen bij het renderen van een document met Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze zelfstudie weet u hoe u een aangepaste map met True Type-lettertypen kunt opgeven die u kunt gebruiken bij het renderen van uw documenten met Aspose.Words voor .NET.
+we duiken in de fascinerende wereld van lettertypebeheer in Word-documenten met Aspose.Words voor .NET. Als u ooit moeite heeft gehad met het insluiten van de juiste lettertypen of ervoor zorgen dat uw document er op elk apparaat perfect uitziet, bent u hier op de juiste plek. We doorlopen het proces voor het instellen van een True Type Fonts-map om het lettertypebeheer van uw document te stroomlijnen en consistentie en duidelijkheid in uw documenten te garanderen.
 
-## Stap 1: Definieer de documentmap
-Eerst moet u het pad naar uw documentenmap instellen. Dit is de locatie waar u uw bewerkte, gerenderde document wilt opslaan. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
+## Vereisten
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Voordat we ingaan op de kern van de zaak, laten we eerst een paar voorwaarden bespreken om ervoor te zorgen dat u helemaal klaar bent voor succes:
 
-## Stap 2: Laad het document dat u wilt renderen
- Vervolgens moet u het document laden om te renderen met behulp van de`Document` klas. Zorg ervoor dat u het juiste documentpad opgeeft.
+1.  Aspose.Words voor .NET: Zorg ervoor dat de nieuwste versie is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een werkende .NET-ontwikkelomgeving, zoals Visual Studio.
+3. Basiskennis van C#: Bekendheid met programmeren in C# kan nuttig zijn.
+4. Een voorbeelddocument: Zorg dat u een Word-document bij de hand heeft waarmee u wilt werken.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Naamruimten importeren
 
-## Stap 3: Stel de map TrueType-lettertypen in
-Nu kunt u de map met True Type-lettertypen opgeven die u wilt gebruiken bij het renderen, door een exemplaar van het`FontSettings` klasse en het gebruik van de`SetFontsFolder()` methode om de map met lettertypen in te stellen. U kunt een aangepaste map opgeven met uw TrueType-lettertypen. De tweede parameter voor`SetFontsFolder()` geeft aan of u ook in submappen van de opgegeven map wilt zoeken.
+Allereerst moeten we de benodigde naamruimten importeren. Dit is een soort backstagecrew die ervoor zorgt dat alles soepel verloopt.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Stap 4: Sla het gerenderde document op
- Ten slotte kunt u het gerenderde document opslaan in een bestand met behulp van de`Save()` werkwijze van de`Document` klas. Zorg ervoor dat u het juiste pad en de juiste bestandsnaam opgeeft.
+## Stap 1: Laad uw document
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### Voorbeeldbroncode voor Set True Type Fonts Folder met Aspose.Words voor .NET 
+ Laten we beginnen met het laden van uw document. Wij gebruiken de`Document` klasse van Aspose.Words om een bestaand Word-document te laden.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Stap 2: Initialiseer FontSettings
+
+ Vervolgens maken we een exemplaar van de`FontSettings`klas. Met deze klasse kunnen we aanpassen hoe lettertypen in ons document worden verwerkt.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Houd er rekening mee dat deze instelling alle standaardlettertypebronnen overschrijft die standaard worden doorzocht. Nu wordt alleen naar deze mappen gezocht
-// Lettertypen bij het renderen of insluiten van lettertypen. Als u een extra lettertypebron wilt toevoegen terwijl u de systeemlettertypebronnen behoudt, gebruikt u zowel FontSettings.GetFontSources als
-// FontSettings.SetFontSources in plaats daarvan
+```
+
+## Stap 3: Stel de map Lettertypen in
+
+Nu komt het spannende gedeelte. We specificeren de map waarin onze True Type-lettertypen zich bevinden. Deze stap zorgt ervoor dat Aspose.Words de lettertypen uit deze map gebruikt bij het renderen of insluiten van lettertypen.
+
+```csharp
+// Houd er rekening mee dat deze instelling alle standaardlettertypebronnen overschrijft die standaard worden doorzocht.
+// Nu wordt alleen in deze mappen naar lettertypen gezocht bij het renderen of insluiten van lettertypen.
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## Stap 4: Pas lettertype-instellingen toe op het document
+
+Nu onze lettertype-instellingen zijn geconfigureerd, passen we deze instellingen nu toe op ons document. Deze stap is cruciaal om ervoor te zorgen dat ons document de opgegeven lettertypen gebruikt.
+
+```csharp
 // Lettertype-instellingen instellen
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## Stap 5: Bewaar het document
+
+Ten slotte slaan we het document op. Je kunt het in verschillende formaten opslaan, maar voor deze tutorial bewaren we het als PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u de map True Type Fonts kunt instellen bij het renderen van een document met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen, kunt u eenvoudig een aangepaste map opgeven met True Type-lettertypen die u kunt gebruiken bij het renderen van uw documenten. Aspose.Words biedt een krachtige en flexibele API voor woordenverwerking met lettertypen in uw documenten. Met deze kennis kunt u de gebruikte lettertypen bij het renderen van uw documenten beheren en aanpassen aan uw specifieke behoeften.
 
-### Veelgestelde vragen
+En daar heb je het! U hebt met succes een True Type Fonts-map voor uw Word-documenten ingesteld met Aspose.Words voor .NET. Dit zorgt ervoor dat uw documenten er op alle platforms consistent en professioneel uitzien. Lettertypebeheer is een cruciaal aspect bij het maken van documenten, en met Aspose.Words is het ongelooflijk eenvoudig.
 
-#### Vraag: Hoe kan ik de map TrueType-lettertypen in Aspose.Words configureren?
+## Veelgestelde vragen
 
- A: Om de map TrueType-lettertypen in Aspose.Words te configureren, kunt u de`SetTrueTypeFontsFolder` werkwijze van de`Fonts` klasse die de locatie specificeert van de map die de TrueType-lettertypen bevat.
+### Kan ik meerdere lettertypemappen gebruiken?
+ Ja, u kunt meerdere lettertypemappen gebruiken door ze te combineren`FontSettings.GetFontSources`En`FontSettings.SetFontSources`.
 
-#### Vraag: Welke typen lettertypen worden beschouwd als TrueType-lettertypen?
+### Wat moet ik doen als de opgegeven lettertypemap niet bestaat?
+Als de opgegeven lettertypemap niet bestaat, kan Aspose.Words de lettertypen niet vinden en worden in plaats daarvan de standaardsysteemlettertypen gebruikt.
 
-A: TrueType-lettertypen zijn een populair lettertypeformaat. Ze worden vaak gebruikt in Word-documenten en hebben de bestandsextensie .ttf of .ttc.
+### Kan ik terugkeren naar de standaardlettertype-instellingen?
+ Ja, u kunt terugkeren naar de standaardlettertype-instellingen door de`FontSettings` aanleg.
 
-#### Vraag: Kan ik meerdere TrueType-lettertypemappen opgeven in Aspose.Words?
+### Is het mogelijk om lettertypen in het document in te sluiten?
+Ja, met Aspose.Words kunt u lettertypen in het document insluiten om consistentie op verschillende apparaten te garanderen.
 
-A: Ja, u kunt meerdere TrueType-lettertypemappen opgeven in Aspose.Words met behulp van de`SetTrueTypeFontsFolder` werkwijze van de`Fonts` klasse met een lijst met maplocaties.
-
-#### Vraag: Hoe kan ik de TrueType-lettertypenmap controleren die is geconfigureerd in Aspose.Words?
-
- A: Om de geconfigureerde map TrueType Fonts in Aspose.Words te controleren, kunt u de`GetTrueTypeFontsFolder` werkwijze van de`Fonts` class om de locatie van de geconfigureerde map TrueType Fonts op te halen.
-
-#### Vraag: Waarom is het belangrijk om de map TrueType-lettertypen in Aspose.Words te configureren?
-
-A: Het instellen van de map TrueType-lettertypen in Aspose.Words is belangrijk omdat Aspose.Words hiermee de lettertypen kan vinden die nodig zijn bij het verwerken van Word-documenten. Dit zorgt voor consistentie in documentopmaak en -uiterlijk, zelfs op verschillende systemen.
+### In welke formaten kan ik mijn document opslaan?
+Aspose.Words ondersteunt verschillende formaten, waaronder PDF, DOCX, HTML en meer.

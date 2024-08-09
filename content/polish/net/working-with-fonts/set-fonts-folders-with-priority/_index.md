@@ -2,79 +2,91 @@
 title: Ustaw foldery czcionek z priorytetem
 linktitle: Ustaw foldery czcionek z priorytetem
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący ustawiania folderów czcionek z priorytetem podczas renderowania dokumentu przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak ustawić foldery czcionek z priorytetem w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Dzięki naszemu przewodnikowi Twoje dokumenty będą wyświetlane perfekcyjnie za każdym razem.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię krok po kroku przez proces ustawiania folderów czcionek z priorytetem podczas renderowania dokumentu za pomocą Aspose.Words dla .NET. Wyjaśnimy dołączony kod źródłowy C# i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć tę funkcję we własnych projektach. Pod koniec tego samouczka będziesz wiedział, jak określić wiele folderów czcionek z niestandardowym priorytetem wyszukiwania podczas renderowania dokumentów przy użyciu Aspose.Words dla .NET.
+W świecie manipulacji dokumentami ustawienie niestandardowych folderów czcionek może mieć ogromne znaczenie, zapewniając idealne renderowanie dokumentów, niezależnie od tego, gdzie są przeglądane. Dzisiaj zajmiemy się tym, jak ustawić foldery czcionek z priorytetem w dokumentach programu Word za pomocą Aspose.Words dla .NET. Ten obszerny przewodnik przeprowadzi Cię przez każdy krok, dzięki czemu proces będzie możliwie najbardziej płynny.
 
-## Krok 1: Zdefiniuj katalog dokumentów
-Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Jest to lokalizacja, w której chcesz zapisać edytowany, wyrenderowany dokument. Zastąp „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką.
+## Warunki wstępne
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Zanim zaczniemy, upewnijmy się, że mamy wszystko, czego potrzebujemy. Oto krótka lista kontrolna:
 
-## Krok 2: Ustaw priorytet folderów czcionek
- Następnie możesz ustawić priorytet folderów czcionek za pomocą`FontSettings` klasa i`SetFontsSources()`metoda. Można określić wiele źródeł czcionek, korzystając z instancji`SystemFontSource`I`FolderFontSource`. W tym przykładzie zdefiniowaliśmy dwa źródła czcionek: domyślne źródło czcionek systemowych i niestandardowy folder czcionek z priorytetem 1.
+-  Aspose.Words dla .NET: Musisz mieć zainstalowaną tę bibliotekę. Jeśli jeszcze tego nie masz, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: upewnij się, że masz działające środowisko programistyczne .NET, takie jak Visual Studio.
+-  Katalog dokumentów: Upewnij się, że masz katalog na swoje dokumenty. W naszych przykładach użyjemy`"YOUR DOCUMENT DIRECTORY"` jako symbol zastępczy tej ścieżki.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## Importuj przestrzenie nazw
 
-## Krok 3: Załaduj dokument do renderowania
- Teraz możesz załadować dokument do renderowania za pomocą`Document` klasa. Pamiętaj, aby określić poprawną ścieżkę dokumentu.
+Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw są niezbędne do uzyskania dostępu do klas i metod udostępnianych przez Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 4: Zapisz wyrenderowany dokument
- Na koniec możesz zapisać wyrenderowany dokument do pliku za pomocą`Save()` metoda`Document` klasa. Pamiętaj, aby podać poprawną ścieżkę i nazwę pliku.
+Teraz podzielmy każdy krok, aby ustawić priorytet folderów czcionek.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## Krok 1: Skonfiguruj źródła czcionek
 
-### Przykładowy kod źródłowy dla Ustawiaj foldery czcionek z priorytetem przy użyciu Aspose.Words dla .NET 
+Na początek zdefiniuj źródła czcionek. W tym miejscu możesz powiedzieć Aspose.Words, gdzie szukać czcionek. Możesz określić wiele folderów czcionek, a nawet ustawić ich priorytet.
+
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+W tym przykładzie ustawiamy dwa źródła czcionek:
+- SystemFontSource: Jest to domyślne źródło czcionek, które zawiera wszystkie czcionki zainstalowane w systemie.
+-  FolderFontSource: Jest to folder niestandardowych czcionek znajdujący się pod adresem`C:\\MyFonts\\` . The`true` parametr określa, że ten folder powinien być skanowany rekurencyjnie, oraz`1` ustala swój priorytet.
+
+## Krok 2: Załaduj swój dokument
+
+Następnie załaduj dokument, z którym chcesz pracować. Upewnij się, że dokument znajduje się w określonym katalogu.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Ta linia kodu ładuje dokument o nazwie`Rendering.docx` z katalogu dokumentów.
+
+## Krok 3: Zapisz swój dokument z nowymi ustawieniami czcionki
+
+Na koniec zapisz dokument. Kiedy zapiszesz dokument, Aspose.Words użyje określonych ustawień czcionki.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+ Spowoduje to zapisanie dokumentu jako pliku PDF w katalogu dokumentów pod nazwą`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak ustawić foldery czcionek z priorytetem podczas renderowania dokumentu za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym szczegółowym przewodnikiem, możesz łatwo określić wiele folderów czcionek z niestandardowym priorytetem wyszukiwania podczas renderowania dokumentów. Aspose.Words oferuje potężny i elastyczny interfejs API do przetwarzania tekstu z czcionkami w dokumentach. Dzięki tej wiedzy możesz kontrolować i dostosowywać źródła czcionek używanych podczas renderowania dokumentów do swoich konkretnych potrzeb.
 
-### Często zadawane pytania
+I masz to! Pomyślnie skonfigurowałeś foldery czcionek z priorytetem przy użyciu Aspose.Words dla .NET. Określając niestandardowe foldery i priorytety czcionek, możesz mieć pewność, że Twoje dokumenty będą renderowane spójnie, niezależnie od tego, gdzie są przeglądane. Jest to szczególnie przydatne w środowiskach, w których określone czcionki nie są domyślnie instalowane.
 
-#### P: Jak mogę ustawić foldery czcionek z priorytetem w Aspose.Words?
+## Często zadawane pytania
 
- Odp.: Aby ustawić priorytet folderów czcionek w Aspose.Words, możesz użyć opcji`SetFontsFoldersWithPriority` metoda`Fonts` class, określając lokalizację folderów czcionek i ich kolejność.
+### Dlaczego miałbym ustawić niestandardowe foldery czcionek?
+Ustawienie niestandardowych folderów czcionek zapewnia prawidłowe renderowanie dokumentów, nawet jeśli używają czcionek niezainstalowanych w systemie, w którym są przeglądane.
 
-#### P: Co się stanie, jeśli czcionka znajduje się w kilku folderach o różnym priorytecie?
+### Czy mogę ustawić wiele niestandardowych folderów czcionek?
+Tak, możesz określić wiele folderów czcionek. Aspose.Words pozwala ustawić priorytet dla każdego folderu, zapewniając, że najważniejsze czcionki zostaną znalezione jako pierwsze.
 
-Odp.: Jeśli czcionka znajduje się w wielu folderach o różnym priorytecie, Aspose.Words podczas przetwarzania dokumentów użyje wersji z folderu o najwyższym priorytecie.
+### Co się stanie, jeśli we wszystkich określonych źródłach brakuje czcionki?
+Jeśli brakuje czcionki ze wszystkich określonych źródeł, Aspose.Words użyje czcionki zastępczej, aby upewnić się, że dokument jest nadal czytelny.
 
-#### P: Czy mogę określić wiele folderów czcionek z tym samym priorytetem w Aspose.Words?
+### Czy mogę zmienić priorytet czcionek systemowych?
+Czcionki systemowe są zawsze domyślnie dołączane, ale możesz ustawić ich priorytet w stosunku do niestandardowych folderów czcionek.
 
-O: Tak, możesz określić wiele folderów czcionek z tym samym priorytetem w Aspose.Words. Aspose.Words uwzględni je wszystkie z równym priorytetem podczas wyszukiwania czcionek w dokumentach.
-
-#### P: Jak mogę sprawdzić foldery czcionek zdefiniowane z priorytetem w Aspose.Words?
-
- O: Aby sprawdzić foldery czcionek zdefiniowane jako priorytetowe w Aspose.Words, możesz użyć metody`GetFolders` metoda`Fonts` class, aby uzyskać listę skonfigurowanych folderów czcionek, w tym ich kolejność.
-
-#### P: Jaki jest pożytek z ustawienia priorytetu folderów czcionek w Aspose.Words?
-
-Odp.: Ustawienie priorytetu folderów czcionek w Aspose.Words pozwala kontrolować kolejność wyszukiwania czcionek w dokumentach Word. Dzięki temu możesz mieć pewność, że użyte zostaną żądane czcionki, i uniknąć niepożądanych problemów z zastępowaniem czcionek.
+### Czy można używać ścieżek sieciowych dla niestandardowych folderów czcionek?
+Tak, możesz określić ścieżki sieciowe jako niestandardowe foldery czcionek, co umożliwi centralizację zasobów czcionek w lokalizacji sieciowej.

@@ -95,7 +95,7 @@ Son olarak değiştirdiğimiz belgemizi kaydedelim. Bunu .docx, .pdf veya Aspose
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-Ve işte! Belge iş akışınızın bir bölümünü otomatikleştirdiniz. Ne kadar serin?
+Ve işte! Belge iş akışınızın bir bölümünü otomatikleştirdiniz. Bu ne kadar hoş?
 
 ## Çözüm
 
@@ -116,4 +116,4 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 Temel C# bilgisi faydalıdır ancak kitaplık, her düzeydeki geliştiriciler için kullanıcı dostu olacak şekilde tasarlanmıştır.
 
 ### Daha fazla bilgiyi nerede bulabilirim veya destek alabilirim?
- Kontrol et[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya ziyaret edin[destek Forumu](https://forum.aspose.com/c/words/8).
+ Şuna göz atın:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya ziyaret edin[destek forumu](https://forum.aspose.com/c/words/8).

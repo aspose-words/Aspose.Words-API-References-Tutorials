@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/load-encrypted-document/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial imparerai come caricare un documento Word crittografato e salvarlo con una nuova password utilizzando Aspose.Words per .NET. La gestione dei documenti crittografati è essenziale per mantenere la sicurezza dei documenti, soprattutto quando si tratta di informazioni sensibili.
 

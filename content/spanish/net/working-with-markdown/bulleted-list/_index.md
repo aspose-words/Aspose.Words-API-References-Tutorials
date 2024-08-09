@@ -2,95 +2,98 @@
 title: Lista con viñetas
 linktitle: Lista con viñetas
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a crear una lista con viñetas con Aspose.Words para la guía paso a paso de .NET.
+description: Aprenda a crear y personalizar listas con viñetas en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/bulleted-list/
 ---
+## Introducción
 
-En este tutorial, le diremos cómo crear una lista con viñetas con Aspose.Words para .NET. Una lista con viñetas se utiliza para enumerar elementos sin utilizar numeración.
+¿Listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy, veremos cómo crear una lista con viñetas en sus documentos de Word. Ya sea que esté organizando ideas, enumerando elementos o simplemente agregando un poco de estructura a su documento, las listas con viñetas son muy útiles. Entonces, ¡comencemos!
 
-## Paso 1: usar un generador de documentos
+## Requisitos previos
 
-Primero, usaremos un generador de documentos para agregar contenido a nuestro documento.
+Antes de lanzarnos a la diversión de codificar, asegurémonos de que tienes todo lo que necesitas:
+
+1.  Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words. Si aún no lo tienes, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
+2. Entorno de desarrollo: entorno de desarrollo AC# como Visual Studio.
+3. Conocimientos básicos de C#: una comprensión básica de la programación en C# le ayudará a seguir adelante.
+
+## Importar espacios de nombres
+
+Primero lo primero, importemos los espacios de nombres necesarios. Esto es como preparar el escenario para que nuestro código se ejecute sin problemas.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Ahora, dividamos el proceso en pasos sencillos y manejables.
+
+## Paso 1: crear un nuevo documento
+
+Muy bien, comencemos creando un nuevo documento. Aquí es donde sucederá toda la magia.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Paso 2: aplicar una lista con viñetas predeterminada
+## Paso 2: aplicar el formato de lista con viñetas
 
- Podemos aplicar una lista con viñetas predeterminada utilizando la función del generador de documentos.`ApplyBulletDefault` método.
+A continuación, aplicaremos un formato de lista con viñetas. Esto le indica al documento que estamos a punto de comenzar una lista con viñetas.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Paso 3: Personalizar el formato de viñeta
+## Paso 3: personalizar la lista de viñetas
 
- Podemos personalizar el formato de viñeta accediendo a las propiedades de`ListFormat.List.ListLevels[0]`. En este ejemplo, utilizamos el guión "-" como viñeta.
+Aquí, personalizaremos la lista de viñetas a nuestro gusto. Para este ejemplo, usaremos un guión (-) como viñeta.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Paso 4: Agregar elementos a la lista
+## Paso 4: agregar elementos de la lista
 
- Ahora podemos agregar elementos a la lista con viñetas usando la herramienta del generador de documentos.`Writeln` método.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Paso 5: eliminar la sangría de la lista
-
- Si queremos crear una sublista, podemos aumentar la sangría usando el`ListFormat.ListIndent()` método. En este ejemplo, agregamos una sublista a los elementos 2a y 2b.
+Ahora, agreguemos algunos elementos a nuestra lista con viñetas. Aquí es donde puedes ser creativo y agregar cualquier contenido que necesites.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Código fuente de ejemplo para la lista con viñetas usando Aspose.Words para .NET
-
-
-```csharp
-// Utilice un generador de documentos para agregar contenido al documento.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-¡Enhorabuena! Ahora ha aprendido cómo crear una lista con viñetas con Aspose.Words para .NET.
+## Paso 5: agregar subelementos
 
-### Preguntas frecuentes
+Para hacer las cosas más interesantes, agreguemos algunos subelementos en el "Elemento 2". Esto ayuda a organizar los subpuntos.
 
-#### P: ¿Cómo crear una lista con viñetas en Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Volver al nivel de lista principal
+```
 
-R: Para crear una lista con viñetas en Markdown, comience cada elemento de la lista con un símbolo de viñeta (`-`, `*` , o`+`), seguido de un espacio.
+## Conclusión
 
-#### P: ¿Se pueden anidar listas con viñetas en Markdown?
+¡Y ahí lo tienes! Acaba de crear una lista con viñetas en un documento de Word usando Aspose.Words para .NET. Es un proceso sencillo, pero increíblemente poderoso para organizar sus documentos. Ya sea que esté creando listas simples o listas anidadas complejas, Aspose.Words lo tiene cubierto.
 
-R: Sí, es posible anidar listas con viñetas en Markdown agregando cuatro espacios de desplazamiento delante de cada elemento de la lista anidada.
+Siéntase libre de experimentar con diferentes estilos y formatos de listas que se adapten a sus necesidades. ¡Feliz codificación!
 
-#### P: ¿Cómo personalizar los símbolos de viñetas?
+## Preguntas frecuentes
 
-R: En Markdown estándar, los símbolos de viñetas están predefinidos. Sin embargo, algunos editores de Markdown te permiten personalizarlos usando extensiones específicas.
+### ¿Puedo utilizar diferentes símbolos de viñetas en la lista?
+    Sí, puedes personalizar los símbolos de viñetas cambiando el`NumberFormat` propiedad.
 
-#### P: ¿Las listas con viñetas en Markdown admiten sangría?
+### ¿Cómo agrego más niveles de sangría?
+    Utilice el`ListIndent` método para agregar más niveles y`ListOutdent` para volver a un nivel superior.
 
-R: Sí, las listas con viñetas en Markdown admiten sangría. Puede agregar un desplazamiento a la izquierda usando espacios o tabulaciones.
+### ¿Es posible mezclar listas de viñetas y números?
+   ¡Absolutamente! Puede cambiar entre formatos de viñetas y números utilizando el`ApplyNumberDefault`y`ApplyBulletDefault` métodos.
 
-#### P: ¿Se pueden agregar enlaces o texto en línea a los elementos de la lista?
+### ¿Puedo diseñar el texto en los elementos de la lista?
+    Sí, puede aplicar diferentes estilos, fuentes y formatos al texto dentro de los elementos de la lista usando el`Font` propiedad de la`DocumentBuilder`.
 
-R: Sí, puede agregar enlaces o texto en línea para enumerar elementos utilizando la sintaxis de Markdown adecuada.
+### ¿Cómo puedo crear una lista con viñetas de varias columnas?
+   Puede utilizar el formato de tabla para crear listas de varias columnas, donde cada celda contiene una lista con viñetas separada.

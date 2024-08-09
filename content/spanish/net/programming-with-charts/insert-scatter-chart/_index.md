@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: inserta el gráfico de dispersión
 
- Utilizar el`InsertChart` método de la`DocumentBuilder` clase para insertar un gráfico de dispersión en el documento.
+ Utilice el`InsertChart` método de la`DocumentBuilder` clase para insertar un gráfico de dispersión en el documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);

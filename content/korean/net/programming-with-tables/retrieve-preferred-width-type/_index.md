@@ -39,7 +39,7 @@ using Aspose.Words.Tables;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요. 이는 우리가 작업하려는 파일을 찾을 위치를 프로그램에 알려줍니다.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오. 이는 우리가 작업하려는 파일을 찾을 위치를 프로그램에 알려줍니다.
 
 ## 2단계: 문서 로드
 
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## 3단계: 테이블에 액세스
 
-이제 문서가 로드되었으므로 작업할 테이블에 액세스해야 합니다. 단순화를 위해 문서의 첫 번째 테이블을 대상으로 하겠습니다.
+이제 문서가 로드되었으므로 작업하려는 테이블에 액세스해야 합니다. 단순화를 위해 문서의 첫 번째 테이블을 대상으로 하겠습니다.
 
 ```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);

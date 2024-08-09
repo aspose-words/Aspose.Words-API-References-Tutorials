@@ -2,119 +2,137 @@
 title: 改訂版にアクセス
 linktitle: 改訂版にアクセス
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書の改訂版にアクセスします。
+description: Aspose.Words for .NET を使用して、ドキュメントの改訂版にアクセスして表示する方法を学びます。シームレスなドキュメント管理のためのステップバイステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/working-with-revisions/access-revised-version/
 ---
+## 導入
 
-このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書の改訂版にアクセスする方法を説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を説明します。
+プログラムでドキュメントの改訂版にアクセスする必要があることはありませんか? 共同プロジェクトで作業している場合でも、単にドキュメントの改訂版を管理する必要がある場合でも、Aspose.Words for .NET は頼りになるツールです。このチュートリアルでは、環境の設定から Word ドキュメントの改訂版へのアクセスと表示まで、プロセス全体を順を追って説明します。それでは、早速始めましょう!
 
-## ステップ1: ドキュメントの読み込み
+## 前提条件
 
-最初のステップは、修正を含むドキュメントをアップロードすることです。
+始める前に、いくつか必要なものがあります:
+
+1.  Aspose.Words for .NETライブラリ: ダウンロードできます[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio または .NET をサポートするその他の IDE。
+3. C# の基礎知識: コーディング部分を理解するのに役立ちます。
+
+次の手順に進む前に、これらの前提条件が満たされていることを確認してください。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートする必要があります。これは、コードが Aspose.Words for .NET ライブラリを認識するようにするための重要な手順です。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+プロセスをシンプルでわかりやすいステップに分解してみましょう。
+
+## ステップ1: ドキュメントパスの設定
+
+ドキュメントを操作する前に、ドキュメントが保存されているパスを指定する必要があります。これは、コードがファイルを見つけて操作するために不可欠です。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## ステップ2: ドキュメントの読み込み
+
+次に、ドキュメントをアプリケーションに読み込みます。この手順では、新しい`Document`オブジェクトを作成し、ドキュメントへのパスで初期化します。
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## ステップ3: リストラベルの更新
+
+ドキュメントにリストが含まれている場合は、リスト ラベルを更新することが重要です。これにより、すべてのリスト項目に正しい番号が付けられ、書式が設定されます。
+
+```csharp
 doc.UpdateListLabels();
 ```
 
-## ステップ2: 改訂版にアクセスする
+## ステップ4: 改訂版への切り替え
 
-それでは、文書の改訂版に移りましょう。
-
-```csharp
-doc.RevisionsView = RevisionsView.Final;
-```
-
-## ステップ3: リビジョンを参照する
-
-次に、ドキュメント内に存在するリビジョンをループし、リスト項目である段落の特定の情報を表示します。
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-     if (revision.ParentNode.NodeType == NodeType.Paragraph)
-     {
-         Paragraph paragraph = (Paragraph)revision.ParentNode;
-         if (paragraph.IsListItem)
-         {
-             Console.WriteLine(paragraph.ListLabel.LabelString);
-             Console.WriteLine(paragraph.ListFormat.ListLevel);
-         }
-     }
-}
-```
-
-### Aspose.Words for .NET を使用した Access 改訂版のサンプル ソース コード
-
-Aspose.Words for .NET を使用してドキュメントの改訂版にアクセスするための完全なソース コードは次のとおりです。
-
-```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-doc.UpdateListLabels();
-
-//ドキュメントの改訂版に切り替えます。
-doc.RevisionsView = RevisionsView.Final;
-
-foreach (Revision revision in doc.Revisions)
-{
-	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
-	 {
-		 Paragraph paragraph = (Paragraph)revision.ParentNode;
-		 if (paragraph.IsListItem)
-		 {
-			 Console.WriteLine(paragraph.ListLabel.LabelString);
-			 Console.WriteLine(paragraph.ListFormat.ListLevel);
-		 }
-	 }
-}
-```
-
-## 結論
-
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の改訂版にアクセスする方法を学習しました。文書を読み込み、改訂版に移動して改訂版を参照することで、リスト項目である段落の特定の情報を取得できました。Aspose.Words for .NET は、レビューへのアクセスなど、Word 文書を操作するための強力な機能を提供します。この知識を使用して、Aspose.Words for .NET を使用して独自の Word 文書の改訂版にアクセスできるようになりました。
-
-### よくある質問
-
-#### Q: 修正を加えたドキュメントを Aspose.Words for .NET に読み込むにはどうすればよいですか?
-
- A:`Document` Aspose.Words for .NET のクラスを使用して、リビジョンを含むファイルからドキュメントを読み込みます。ドキュメントの完全なパスを指定できます。
-
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
-
-#### Q: Aspose.Words for .NET でドキュメントの改訂版にアクセスするにはどうすればよいですか?
-
- A:`RevisionsView`の財産`Document`オブジェクトを使用して、ドキュメントの改訂版にアクセスします。`RevisionsView`財産に`RevisionsView.Final`修正を加えずに最終バージョンを表示します。
+次に、ドキュメントの改訂版に切り替えましょう。改訂版にアクセスして表示するには、この手順が重要です。
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### Q: Aspose.Words for .NET でドキュメントのリビジョンを参照するにはどうすればよいですか?
+## ステップ5: 修正を繰り返す
 
-A: 使用してください`foreach`ループを使用して、文書内のリビジョンを反復処理します。`Revisions`の財産`Document`ドキュメントのすべてのリビジョンのコレクションを取得するオブジェクト。
+リビジョンにアクセスするには、`Revisions`文書の収集。このステップでは、`foreach`各リビジョンをループして確認します。
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     //各リビジョンをここで処理します
+    //追加コードはここに記入します
 }
 ```
 
-#### Q: Aspose.Words for .NET で段落がリスト項目であるかどうかを確認する方法を教えてください。
+## ステップ6: 親ノードタイプの確認
 
- A:`IsListItem`の財産`Paragraph`段落がリスト項目であるかどうかを確認するオブジェクト。`IsListItem`不動産収益`true`段落がリスト項目である場合は、そうでない場合は`false`.
+各リビジョンについて、親ノードのタイプが`Paragraph`これは、リビジョンを含む段落にアクセスするため重要です。
+
+```csharp
+if (revision.ParentNode.NodeType == NodeType.Paragraph)
+{
+    //追加コードはここに記入します
+}
+```
+
+## ステップ7: 段落にアクセスする
+
+親ノードが段落であることを確認したら、それを`Paragraph`オブジェクト。この手順では、段落とそのプロパティを操作できます。
+
+```csharp
+Paragraph paragraph = (Paragraph)revision.ParentNode;
+```
+
+## ステップ 8: 段落がリスト項目であるかどうかを確認する
+
+次に、段落がリスト項目であるかどうかを確認します。リスト項目にはアクセスする必要がある特定のプロパティがあるため、これは重要です。
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     //段落はリスト項目です
-}
-else
-{
-     //段落はリスト項目ではありません
+    //追加コードはここに記入します
 }
 ```
+
+## ステップ9: リストラベルとレベルの表示
+
+最後に、段落のリスト ラベルとリスト レベルを表示します。この手順では、番号付けやインデント レベルなど、リスト項目に関する有用な情報が提供されます。
+
+```csharp
+Console.WriteLine(paragraph.ListLabel.LabelString);
+Console.WriteLine(paragraph.ListFormat.ListLevel);
+```
+
+## 結論
+
+これで完了です。Aspose.Words for .NET を使用して、ドキュメントの改訂版に正常にアクセスできました。これらの手順に従うことで、ドキュメントの改訂版を簡単に管理および表示できます。共同プロジェクトを扱っている場合でも、変更を追跡する必要がある場合でも、Aspose.Words for .NET が役立ちます。
+
+## よくある質問
+
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、Word 文書をプログラムで作成、編集、操作できる強力なライブラリです。
+
+### どの Word 文書でも変更履歴にアクセスできますか?
+はい、ドキュメントにリビジョンが含まれている限り、Aspose.Words for .NET を使用してアクセスできます。
+
+### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
+はい、ライセンスは以下から取得できます。[ここ](https://purchase.aspose.com/buy)また、[無料トライアル](https://releases.aspose.com/)そして[一時ライセンス](https://purchase.aspose.com/temporary-license/).
+
+### Aspose.Words for .NET はすべての .NET バージョンと互換性がありますか?
+Aspose.Words for .NETは幅広い.NETバージョンと互換性があります。詳細については、[ドキュメント](https://reference.aspose.com/words/net/).
+
+### Aspose.Words for .NET のサポートはどこで受けられますか?
+ Asposeコミュニティからサポートを受けることができます。[フォーラム](https://forum.aspose.com/c/words/8).

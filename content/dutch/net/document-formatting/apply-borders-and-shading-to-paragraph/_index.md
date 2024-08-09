@@ -9,7 +9,7 @@ url: /nl/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Invoering
 
-Hallo daar, heb je je ooit afgevraagd hoe je je Word-documenten kunt laten opvallen met mooie randen en schaduwen? Nou, je bent op de juiste plek! Vandaag duiken we in de wereld van Aspose.Words voor .NET om onze paragrafen op te fleuren. Stel u voor dat uw document er met slechts een paar regels code net zo strak uitziet als het werk van een professionele ontwerper. klaar om te beginnen? Laten we gaan!
+Hallo daar, heb je je ooit afgevraagd hoe je je Word-documenten kunt laten opvallen met mooie randen en schaduwen? Nou, je bent op de juiste plek! Vandaag duiken we in de wereld van Aspose.Words voor .NET om onze paragrafen op te fleuren. Stel u voor dat uw document er met slechts een paar regels code net zo strak uitziet als het werk van een professionele ontwerper. Klaar om aan de slag te gaan? Laten we gaan!
 
 ## Vereisten
 

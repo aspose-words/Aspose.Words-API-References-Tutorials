@@ -82,7 +82,7 @@ doc.Save("ConvertedDocument.docx");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功轉換並設定邊距和距離。透過執行以下步驟，您可以輕鬆處理各種單位轉換，使您的文件自訂過程變得輕而易舉。不斷嘗試不同的設定並探索 Aspose.Words 提供的廣泛功能。快樂編碼！
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功轉換並設定邊距和距離。透過執行以下步驟，您可以輕鬆處理各種單位轉換，使您的文件自訂過程變得輕而易舉。不斷嘗試不同的設定並探索 Aspose.Words 提供的廣泛功能。快樂編碼！
 
 ## 常見問題解答
 
@@ -99,4 +99,4 @@ doc.Save("ConvertedDocument.docx");
 是的，您可以使用以下命令自訂不同部分的邊距和其他設置`Section`班級。
 
 ### Aspose.Words 還提供哪些功能？
- Aspose.Words 支援廣泛的功能，包括文件轉換、郵件合併和廣泛的格式選項。檢查[文件](https://reference.aspose.com/words/net/)更多細節。
+ Aspose.Words 支援廣泛的功能，包括文件轉換、郵件合併和廣泛的格式選項。檢查[文件](https://reference.aspose.com/words/net/)了解更多詳情。

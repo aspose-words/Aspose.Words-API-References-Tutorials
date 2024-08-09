@@ -51,7 +51,7 @@ string imagePath = "PATH_TO_YOUR_IMAGE_FILE";
 builder.InsertImage(imagePath);
 ```
 
- Byta ut`"PATH_TO_YOUR_IMAGE_FILE"` med den faktiska sökvägen till din bildfil. Denna metod integrerar bilden sömlöst i dokumentet.
+ Ersätta`"PATH_TO_YOUR_IMAGE_FILE"` med den faktiska sökvägen till din bildfil. Denna metod integrerar bilden sömlöst i dokumentet.
 
 ## Steg 3: Spara dokumentet
 

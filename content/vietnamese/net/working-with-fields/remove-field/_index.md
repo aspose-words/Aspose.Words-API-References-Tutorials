@@ -66,7 +66,7 @@ Cuối cùng, chúng ta cần lưu tài liệu của mình. Bước này đảm 
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-Và bạn có nó rồi đấy! Bạn đã xóa thành công một trường khỏi tài liệu Word của mình bằng Aspose.Words for .NET. Nhưng xin chờ chút nữa! Hãy chia nhỏ điều này hơn nữa để đảm bảo bạn nắm bắt được mọi chi tiết.
+Và bạn có nó! Bạn đã xóa thành công một trường khỏi tài liệu Word của mình bằng Aspose.Words for .NET. Nhưng chờ đã, còn nhiều hơn thế nữa! Hãy chia nhỏ điều này hơn nữa để đảm bảo bạn nắm bắt được mọi chi tiết.
 
 ## Phần kết luận
 

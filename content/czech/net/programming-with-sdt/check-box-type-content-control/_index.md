@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/check-box-type-content-control/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v dokonalém průvodci, jak vložit kontrolu obsahu zaškrtávacího pole typu do dokumentu aplikace Word pomocí Aspose.Words for .NET! Pokud chcete zautomatizovat proces vytváření dokumentů a přidat interaktivní prvky, jako jsou zaškrtávací políčka, jste na správném místě. V tomto tutoriálu vás provedeme vším, co potřebujete vědět, od nezbytných předpokladů až po podrobného průvodce implementací této funkce. Na konci tohoto článku budete mít jasno v tom, jak vylepšit své dokumenty Word pomocí zaškrtávacích políček pomocí Aspose.Words for .NET.
 
@@ -15,7 +15,7 @@ Vítejte v dokonalém průvodci, jak vložit kontrolu obsahu zaškrtávacího po
 
 Než se ponoříme do části kódování, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
-1.  Aspose.Words pro .NET: Ujistěte se, že máte nejnovější verzi Aspose.Words pro .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pro .NET: Ujistěte se, že máte nejnovější verzi Aspose.Words pro .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné C# IDE nainstalované na vašem počítači.
 3. Základní znalost C#: Spolu s výukovým programem je nutná znalost programování v C#.
 4. Adresář dokumentů: Adresář, kam budete ukládat dokumenty aplikace Word.
@@ -99,4 +99,4 @@ Ano, Aspose.Words podporuje různé typy ovládacích prvků obsahu, včetně ov
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[Aspose webové stránky](https://releases.aspose.com/).
 
 ### Kde mohu získat podporu, pokud narazím na problémy?
- Můžete navštívit[Aspose Support Forum](https://forum.aspose.com/c/words/8) pro pomoc.
+ Můžete navštívit[Aspose Support Forum](https://forum.aspose.com/c/words/8) o pomoc.

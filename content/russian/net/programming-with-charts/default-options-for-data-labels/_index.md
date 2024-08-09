@@ -135,7 +135,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
  Вы можете получить поддержку через[Форум поддержки Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Могу ли я добавить другие типы диаграмм?
- Да, Aspose.Words поддерживает различные типы диаграмм, такие как гистограммы, линейные и столбчатые диаграммы. Проверить[документация](https://reference.aspose.com/words/net/) Больше подробностей.
+ Да, Aspose.Words поддерживает различные типы диаграмм, такие как гистограммы, линейные и столбчатые диаграммы. Проверьте[документация](https://reference.aspose.com/words/net/) для более подробной информации.
 
 ### Совместим ли Aspose.Words с .NET Core?
  Да, Aspose.Words совместим с .NET Core. Более подробную информацию вы можете найти в[документация](https://reference.aspose.com/words/net/).

@@ -37,7 +37,7 @@ doc.save("EncryptedDoc.docx", saveOptions);
 
 ## Définition de la conformité OOXML
 
-Vous pouvez spécifier le niveau de conformité OOXML lors de l'enregistrement du document. Par exemple, vous pouvez le définir sur ISO 29500:2008 (Strict). Voici comment:
+Vous pouvez spécifier le niveau de conformité OOXML lors de l'enregistrement du document. Par exemple, vous pouvez le définir sur ISO 29500:2008 (Strict). Voici comment procéder :
 
 ```java
 import com.aspose.words.Document;
@@ -61,7 +61,7 @@ doc.save("ComplianceDoc.docx", saveOptions);
 
 ## Mise à jour de la propriété Dernière heure enregistrée
 
-Vous pouvez choisir de mettre à jour la propriété « Dernière heure enregistrée » du document lors de son enregistrement. Voici comment:
+Vous pouvez choisir de mettre à jour la propriété « Dernière heure enregistrée » du document lors de son enregistrement. Voici comment procéder :
 
 ```java
 import com.aspose.words.Document;
@@ -80,7 +80,7 @@ doc.save("UpdatedLastSavedTime.docx", saveOptions);
 
 ## Conserver les personnages de contrôle hérités
 
-Si votre document contient des caractères de contrôle hérités, vous pouvez choisir de les conserver lors de l'enregistrement. Voici comment:
+Si votre document contient des caractères de contrôle hérités, vous pouvez choisir de les conserver lors de l'enregistrement. Voici comment procéder :
 
 ```java
 import com.aspose.words.Document;
@@ -100,7 +100,7 @@ doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 
 ## Réglage du niveau de compression
 
-Vous pouvez ajuster le niveau de compression lors de l'enregistrement du document. Par exemple, vous pouvez le définir sur SUPER_FAST pour une compression minimale. Voici comment:
+Vous pouvez ajuster le niveau de compression lors de l'enregistrement du document. Par exemple, vous pouvez le définir sur SUPER_FAST pour une compression minimale. Voici comment procéder :
 
 ```java
 import com.aspose.words.Document;
@@ -176,4 +176,4 @@ Pour supprimer la protection par mot de passe d'un document protégé par mot de
 
 ### Quel est le niveau de compression par défaut lors de l'enregistrement d'un document au format OOXML ?
 
- Le niveau de compression par défaut lors de l'enregistrement d'un document au format OOXML à l'aide d'Aspose.Words for Java est`NORMAL` . Vous pouvez modifier le niveau de compression pour`SUPER_FAST` ou`MAXIMUM` comme requis.
+ Le niveau de compression par défaut lors de l'enregistrement d'un document au format OOXML à l'aide d'Aspose.Words for Java est`NORMAL` . Vous pouvez modifier le niveau de compression pour`SUPER_FAST` ou`MAXIMUM` au besoin.

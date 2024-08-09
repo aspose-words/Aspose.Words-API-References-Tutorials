@@ -77,7 +77,7 @@ string imagePath = dataDir + "Transparent background logo.png";
 
 بعد أن تم إعداد كل شيء، فلندرج الصورة العائمة في المستند.
 
- استخدم ال`InsertImage` طريقة`DocumentBuilder` فئة لإدراج الصورة:
+ استخدم`InsertImage` طريقة`DocumentBuilder` فئة لإدراج الصورة:
 
 ```csharp
 builder.InsertImage(imagePath,
@@ -134,7 +134,7 @@ doc.Save(outputPath);
 
 ### ما هي أنواع الالتفاف الأخرى المتوفرة للصور؟
 
- يدعم Aspose.Words أنواع الالتفاف المختلفة مثل`Inline`, `TopBottom`, `Tight`, `Through`، و اكثر. يمكنك اختيار الخيار الذي يناسب تخطيط المستند الخاص بك.
+ يدعم Aspose.Words أنواع الالتفاف المختلفة مثل`Inline`, `TopBottom`, `Tight`, `Through`وأكثر من ذلك. يمكنك اختيار الخيار الذي يناسب تخطيط المستند الخاص بك.
 
 ### هل يمكنني استخدام تنسيقات صور مختلفة؟
 

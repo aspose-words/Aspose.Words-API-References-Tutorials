@@ -11,7 +11,7 @@ Samouczki Aspose.Words dla .NET dotyczące przetwarzania słów z opcją PdfSave
 
 Dowiesz się, jak dostosować opcje jakości obrazu, wybrać poziom kompresji obrazów, skonfigurować ustawienia zabezpieczeń PDF, takie jak szyfrowanie i uprawnienia, a nawet wstawiać znaki wodne do generowanych plików PDF. Samouczki zawierają również szczegółowe próbki kodu, które pomogą Ci przećwiczyć te funkcje w projektach.
 
-Niezależnie od tego, czy chcesz konwertować dokumenty programu Word do formatu PDF w celu dystrybucji online, archiwizacji czy drukowania, te samouczki zapewnią Ci wiedzę niezbędną do uzyskania dokładnych wyników o wysokiej jakości. Dzięki Aspose.Words dla .NET i PdfSaveOptions możesz zoptymalizować proces konwersji plików i uzyskać pliki PDF spełniające Twoje specyficzne potrzeby.
+Niezależnie od tego, czy chcesz konwertować dokumenty programu Word do formatu PDF w celu dystrybucji, archiwizacji czy drukowania online, te samouczki zapewniają wiedzę niezbędną do uzyskania dokładnych wyników o wysokiej jakości. Dzięki Aspose.Words dla .NET i PdfSaveOptions możesz zoptymalizować proces konwersji plików i uzyskać pliki PDF spełniające Twoje specyficzne potrzeby.
 
  ## Poradniki
 | Tytuł | Opis |

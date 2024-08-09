@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-styles-and-themes/copy-styles/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste někdy potřebovali, aby dokument vypadal konzistentně s jiným, pravděpodobně jste čelili výzvě kopírování stylů. Představte si, že jste návrhář, jehož úkolem je zajistit, aby každá nová sestava odpovídala stylu existující šablony. Pomocí Aspose.Words for .NET můžete tento úkol zjednodušit a udržet vaše dokumenty ostré a jednotné. V tomto tutoriálu se ponoříme do toho, jak můžete bez námahy kopírovat styly z jednoho dokumentu aplikace Word do druhého. Začněme!
 
@@ -46,7 +46,7 @@ Document doc = new Document();
 Document target = new Document(dataDir + "Rendering.docx");
 ```
 
- Tady,`Rendering.docx` je váš zdrojový dokument obsahující styly, které chcete zkopírovat. The`doc` objekt představuje cílový dokument, do kterého budou styly zkopírovány.
+ Zde,`Rendering.docx` je váš zdrojový dokument obsahující styly, které chcete zkopírovat. The`doc` objekt představuje cílový dokument, do kterého budou styly zkopírovány.
 
 ## Krok 3: Zkopírujte styly ze zdroje do cíle
 

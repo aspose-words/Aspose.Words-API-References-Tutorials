@@ -15,7 +15,7 @@ Mengonversi dokumen Word menjadi gambar bisa sangat berguna, baik Anda membuat t
 
 Sebelum kita mulai, Anda memerlukan beberapa hal:
 
--  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Lingkungan pengembangan AC# seperti Visual Studio.
 - Contoh Dokumen: Dokumen Word untuk dikerjakan. Anda dapat menggunakan file .docx apa pun untuk tutorial ini.
 - Pengetahuan Dasar C#: Keakraban dengan pemrograman C#.
@@ -77,7 +77,7 @@ Dan itu dia! Anda telah berhasil mengonversi halaman tertentu dari dokumen Word 
  Anda dapat mengatur kualitas JPEG dengan menggunakan`JpegQuality` properti di`ImageSaveOptions`.
 
 ### Bisakah saya menyimpan dalam format gambar lain?
- Ya, Aspose.Words mendukung berbagai format gambar seperti PNG, BMP, dan TIFF. Mengubah`SaveFormat` di dalam`ImageSaveOptions` demikian.
+ Ya, Aspose.Words mendukung berbagai format gambar seperti PNG, BMP, dan TIFF. Ubah`SaveFormat` di dalam`ImageSaveOptions` demikian.
 
 ### Apakah ada cara untuk melihat pratinjau gambar sebelum menyimpannya?
 Anda perlu menerapkan mekanisme pratinjau secara terpisah, karena Aspose.Words tidak menyediakan fitur pratinjau bawaan.

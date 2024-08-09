@@ -15,7 +15,7 @@ Gotowy do zanurzenia się w świat równań matematycznych w dokumentach Word? D
 
 Zanim przejdziemy do najdrobniejszych szczegółów, upewnijmy się, że masz wszystko, czego potrzebujesz, wraz z tym samouczkiem:
 
-1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Visual Studio: dowolna wersja programu Visual Studio będzie działać, ale upewnij się, że jest zainstalowana i gotowa do pracy.
 3. Podstawowa znajomość języka C#: Powinieneś znać podstawy programowania w języku C#. Nie martw się; Utrzymamy wszystko w prostocie!
 4. Dokument programu Word: Przygotuj dokument programu Word z kilkoma równaniami matematycznymi. Będziemy z nimi pracować w naszych przykładach.

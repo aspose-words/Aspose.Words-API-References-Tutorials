@@ -8,7 +8,7 @@ weight: 19
 url: /pt/java/document-loading-and-saving/saving-documents-as-odt-format/
 ---
 
-## Introdução ao salvamento de documentos como formato ODT em Aspose.Words para Java
+## Introdução ao salvamento de documentos como formato ODT em Aspose.Words for Java
 
 Neste artigo, exploraremos como salvar documentos no formato ODT (Open Document Text) usando Aspose.Words para Java. ODT é um formato de documento de padrão aberto popular usado por vários pacotes de escritório, incluindo OpenOffice e LibreOffice. Ao salvar documentos no formato ODT, você pode garantir a compatibilidade com esses pacotes de software.
 
@@ -69,7 +69,7 @@ Neste artigo, aprendemos como salvar documentos no formato ODT usando Aspose.Wor
 
 ### Como posso baixar Aspose.Words para Java?
 
- Você pode baixar Aspose.Words para Java no site da Aspose. Visita[esse link](https://releases.aspose.com/words/java/)para acessar a página de download.
+ Você pode baixar Aspose.Words para Java no site da Aspose. Visita[este link](https://releases.aspose.com/words/java/)para acessar a página de download.
 
 ### Qual é a vantagem de salvar documentos no formato ODT?
 

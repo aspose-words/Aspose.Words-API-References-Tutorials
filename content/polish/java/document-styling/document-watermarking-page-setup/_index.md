@@ -45,7 +45,7 @@ doc.save("document_with_watermark.docx");
 
 Możesz dodatkowo dostosować znaki wodne, dostosowując czcionkę, rozmiar, kolor i obrót. Dzięki tej elastyczności znak wodny będzie idealnie dopasowany do stylu dokumentu.
 
-## Ustawienia strony
+## Konfiguracja strony
 
 ### Rozmiar strony i orientacja
 

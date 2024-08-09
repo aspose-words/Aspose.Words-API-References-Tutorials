@@ -73,7 +73,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Гарантировать, что`"Pdf Document.pdf"` — это имя вашего PDF-файла в указанном каталоге.
+ Убедитесь, что`"Pdf Document.pdf"` — это имя вашего PDF-файла в указанном каталоге.
 
 ## Заключение
 

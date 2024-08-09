@@ -9,7 +9,7 @@ url: /sv/net/document-formatting/apply-paragraph-style/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin undrat hur du kan förstärka dina Word-dokument med några snygga styckestilar med Aspose.Words för .NET? Oavsett om du förbereder en rapport, skapar ett förslag eller bara vill att dina dokument ska se förstklassiga ut, kan tillämpning av styckestilar göra en värld av skillnad. I den här självstudien kommer vi att dyka djupt in i det finurliga med att tillämpa styckestilar i ett Word-dokument med Aspose.Words för .NET. Så, spänn fast dig, ta en kopp kaffe och låt oss börja styla!
+Hej där! Har du någonsin undrat hur du kan förstärka dina Word-dokument med några snygga styckestilar med Aspose.Words för .NET? Oavsett om du förbereder en rapport, skapar ett förslag eller bara vill att dina dokument ska se förstklassiga ut, kan tillämpning av styckestilar göra en värld av skillnad. I den här självstudien kommer vi att dyka djupt in i det finurliga med att tillämpa styckestilar i ett Word-dokument med Aspose.Words för .NET. Så, spänn fast dig, ta en kopp kaffe och låt oss börja styla!
 
 ## Förutsättningar
 
@@ -40,7 +40,7 @@ Först och främst måste vi definiera var våra dokument ska sparas. Se detta s
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentmapp. Det är här ditt formaterade Word-dokument kommer att sparas.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentmapp. Det är här ditt formaterade Word-dokument kommer att sparas.
 
 ## Steg 2: Skapa ett nytt dokument
 

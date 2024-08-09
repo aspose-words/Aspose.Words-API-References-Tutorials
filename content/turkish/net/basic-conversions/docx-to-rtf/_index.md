@@ -94,7 +94,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak DOCX dosyasını RTF formatına na
 Evet, Aspose.Words çeşitli formatları destekler, böylece belgeleri DOC, DOCX ve HTML gibi formatlardan RTF'ye dönüştürebilirsiniz.
 
 ### Aspose.Words'ü kullanmak için lisansa ihtiyacım var mı?
- Aspose.Words'ü deneme modunda kullanabilirsiniz, ancak uzun süreli kullanım veya ticari projeler için bir lisans satın almalısınız. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+ Aspose.Words'ü deneme modunda kullanabilirsiniz, ancak uzun süreli kullanım veya ticari projeler için bir lisans satın almalısınız. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ### Dönüşüm çıktısı beklendiği gibi değilse ne yapmalıyım?
  Uyumluluk sorunları için giriş belgenizi kontrol edin veya[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) Sorun giderme ipuçları için.

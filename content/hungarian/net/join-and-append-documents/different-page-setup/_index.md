@@ -9,13 +9,13 @@ url: /hu/net/join-and-append-documents/different-page-setup/
 ---
 ## Bevezetés
 
-Halihó! Készen áll, hogy belemerüljön a dokumentumkezelés lenyűgöző világába az Aspose.Words for .NET segítségével? Ma valami nagyon ügyes dologgal foglalkozunk: különböző oldalbeállítások beállításával a Word dokumentumok kombinálásakor. Függetlenül attól, hogy jelentéseket egyesít, regényt készít, vagy csak szórakozásból dokumentumokkal babrál, ez az útmutató lépésről lépésre végigvezeti ezen. Kezdjük el!
+Szia! Készen áll, hogy belemerüljön a dokumentumkezelés lenyűgöző világába az Aspose.Words for .NET segítségével? Ma valami nagyon ügyes dologgal foglalkozunk: különböző oldalbeállítások beállításával a Word dokumentumok kombinálásakor. Függetlenül attól, hogy jelentéseket egyesít, regényt készít, vagy csak szórakozásból dokumentumokkal babrál, ez az útmutató lépésről lépésre végigvezeti ezen. Kezdjük is!
 
 ## Előfeltételek
 
 Mielőtt bemocskolnánk a kezünket, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. .NET-keretrendszer: Bármely verzió, amely támogatja az Aspose.Words for .NET-et.
 3. Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
 4. Alapvető C# ismeretek: Csak az alapok a szintaxis és a szerkezet megértéséhez.
@@ -136,4 +136,4 @@ Igen, az Aspose.Words for .NET teljes mértékben kompatibilis a .NET Core-al.
  Igen, a`ImportFormatMode.KeepSourceFormatting` opció biztosítja, hogy a forrásdokumentum stílusai megmaradjanak.
 
 ### Hol kaphatok további segítséget az Aspose.Words-hez?
- Nézze meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy látogassa meg őket[támogatói fórum](https://forum.aspose.com/c/words/8) további segítségért.
+ Nézze meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy látogassa meg őket[támogatási fórum](https://forum.aspose.com/c/words/8) további segítségért.

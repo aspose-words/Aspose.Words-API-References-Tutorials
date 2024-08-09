@@ -10,7 +10,7 @@ url: /nl/net/document-protection/remove-document-protection/
 
 ## Invoering
 
-Hallo daar! Bent u ooit buitengesloten van uw eigen Word-document vanwege beveiligingsinstellingen? Het is alsof je een deur probeert te openen met de verkeerde sleutel: frustrerend, toch? Maar vrees niet! Met Aspose.Words voor .NET kunt u eenvoudig de beveiliging van uw Word-documenten verwijderen. Deze tutorial begeleidt u stap voor stap door het proces, zodat u in een mum van tijd de volledige controle over uw documenten terugkrijgt. Laten we erin duiken!
+Hé daar! Bent u ooit buitengesloten van uw eigen Word-document vanwege beveiligingsinstellingen? Het is alsof je een deur probeert te openen met de verkeerde sleutel: frustrerend, toch? Maar vrees niet! Met Aspose.Words voor .NET kunt u eenvoudig de beveiliging van uw Word-documenten verwijderen. Deze tutorial begeleidt u stap voor stap door het proces, zodat u in een mum van tijd de volledige controle over uw documenten terugkrijgt. Laten we erin duiken!
 
 ## Vereisten
 
@@ -80,7 +80,7 @@ doc.Unprotect("newPassword");
 
  In de bovenstaande code voegen we eerst een nieuwe beveiliging toe met het wachtwoord`"newPassword"`en verwijder het vervolgens onmiddellijk met hetzelfde wachtwoord.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Vergeet ten slotte niet om, nadat u alle noodzakelijke wijzigingen heeft aangebracht, uw document op te slaan. Hier is de code om het document op te slaan:
 

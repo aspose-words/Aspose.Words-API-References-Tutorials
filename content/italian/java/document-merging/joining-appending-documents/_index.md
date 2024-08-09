@@ -8,7 +8,7 @@ weight: 11
 url: /it/java/document-merging/joining-appending-documents/
 ---
 
-## introduzione
+## Introduzione
 
 Aspose.Words per Java è una libreria ricca di funzionalità che ti consente di lavorare con vari formati di documenti, inclusi DOC, DOCX, RTF e altri. Unire e accodare documenti è un'attività comune quando si ha a che fare con la manipolazione dei documenti e questa guida ti fornirà istruzioni dettagliate ed esempi di codice Java per raggiungere questo obiettivo senza problemi.
 

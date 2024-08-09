@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/working-with-headers-and-footers/create-header-footer/
 ---
+## 介绍
 
 在文档中添加页眉和页脚可以提高文档的专业性和可读性。使用 Aspose.Words for .NET，您可以轻松为 Word 文档创建和自定义页眉和页脚。在本教程中，我们将逐步指导您完成该过程，确保您可以无缝实现这些功能。
 
@@ -168,22 +169,22 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## 常见问题解答
 
-### 问题1: 什么是Aspose.Words for .NET？
+### 什么是 Aspose.Words for .NET？
 
 Aspose.Words for .NET 是一个库，使开发人员能够在 .NET 应用程序内以编程方式创建、编辑和转换 Word 文档。
 
-### 问题 2：我可以向页眉或页脚添加图像吗？
+### 我可以在页眉或页脚添加图像吗？
 
 是的，您可以使用`DocumentBuilder.InsertImage`方法。
 
-### Q3：如何为第一页设置不同的页眉和页脚？
+### 如何为第一页设置不同的页眉和页脚？
 
 您可以使用`DifferentFirstPageHeaderFooter`的财产`PageSetup`班级。
 
-### 问题 4：在哪里可以找到有关 Aspose.Words 的更多文档？
+### 在哪里可以找到有关 Aspose.Words 的更多文档？
 
 您可以找到有关[Aspose.Words API 文档页面](https://reference.aspose.com/words/net/).
 
-### 问题5：是否支持Aspose.Words？
+### 是否支持 Aspose.Words？
 
 是的，Aspose 通过其提供支持[支持论坛](https://forum.aspose.com/c/words/8).

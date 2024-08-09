@@ -9,7 +9,7 @@ url: /sv/net/document-formatting/asian-typography-line-break-group/
 ---
 ## Introduktion
 
-Har du någonsin undrat hur du finjusterar typografin i dina Word-dokument till perfektion? Särskilt när man har att göra med asiatiska språk kan nyanserna av radbrytningar och formatering vara ganska knepiga. Men oroa dig inte, vi har dig täckt! I den här omfattande guiden fördjupar vi oss i hur du kan styra radbrytningar för asiatisk typografi i Word-dokument med Aspose.Words för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer denna steg-för-steg-handledning att gå igenom allt du behöver veta. Är du redo att få dina dokument att se oklanderliga ut? Låt oss börja!
+Har du någonsin undrat hur du finjusterar typografin i dina Word-dokument till perfektion? Särskilt när man har att göra med asiatiska språk kan nyanserna av radbrytningar och formatering vara ganska knepiga. Men oroa dig inte, vi har dig täckt! I den här omfattande guiden fördjupar vi oss i hur du kan styra radbrytningar för asiatisk typografi i Word-dokument med Aspose.Words för .NET. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer denna steg-för-steg-handledning att gå igenom allt du behöver veta. Är du redo att få dina dokument att se oklanderliga ut? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -20,7 +20,7 @@ Innan vi hoppar in i de fina detaljerna finns det några saker du måste ha på 
 - Grundläggande kunskaper om C#: Även om vi kommer att förklara allt, kommer en grundläggande förståelse av C# att vara fördelaktig.
 - Word-dokument med asiatisk typografi: Ha ett Word-dokument som innehåller asiatisk typografi. Detta kommer att vara vår arbetsfil.
 
-Har du allt? Bra! Låt oss gå vidare till att ställa in ditt projekt.
+Har du allt? Stor! Låt oss gå vidare till att ställa in ditt projekt.
 
 ## Importera namnområden
 

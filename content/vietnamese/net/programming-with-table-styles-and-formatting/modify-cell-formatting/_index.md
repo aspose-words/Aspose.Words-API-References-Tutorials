@@ -53,7 +53,7 @@ Tiếp theo, bạn cần truy cập vào bảng trong tài liệu của mình. H
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Ở đây, chúng tôi đang sử dụng`GetChild` phương pháp để có được bảng đầu tiên trong tài liệu. Các`NodeType.Table` tham số chỉ định rằng chúng tôi đang tìm kiếm một bảng và`0` chỉ ra bảng đầu tiên. Các`true` tham số đảm bảo tìm kiếm sâu, nghĩa là nó sẽ xem qua tất cả các nút con.
+Ở đây, chúng tôi đang sử dụng`GetChild` phương pháp để có được bảng đầu tiên trong tài liệu. các`NodeType.Table` tham số chỉ định rằng chúng tôi đang tìm kiếm một bảng và`0` chỉ ra bảng đầu tiên. các`true` tham số đảm bảo tìm kiếm sâu, nghĩa là nó sẽ xem qua tất cả các nút con.
 
 ## Bước 3: Chọn ô đầu tiên
 
@@ -97,7 +97,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chúng tôi đã sửa đổi thành công định dạng ô trong tài liệu Word bằng Aspose.Words cho .NET. Từ tải tài liệu đến áp dụng bóng, mỗi bước đều quan trọng trong việc làm cho tài liệu của bạn trông giống như bạn muốn. Hãy nhớ rằng đây chỉ là một vài ví dụ về những gì bạn có thể làm với định dạng ô. Aspose.Words for .NET cung cấp rất nhiều tính năng khác để khám phá.
+Và bạn có nó! Chúng tôi đã sửa đổi thành công định dạng ô trong tài liệu Word bằng Aspose.Words cho .NET. Từ tải tài liệu đến áp dụng bóng, mỗi bước đều quan trọng trong việc làm cho tài liệu của bạn trông giống như bạn muốn. Hãy nhớ rằng đây chỉ là một vài ví dụ về những gì bạn có thể làm với định dạng ô. Aspose.Words for .NET cung cấp rất nhiều tính năng khác để khám phá.
 
 ## Câu hỏi thường gặp
 

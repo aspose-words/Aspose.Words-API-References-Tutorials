@@ -9,7 +9,7 @@ url: /ko/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 ## 소개
 
-Aspose.Words for .NET의 매혹적인 세계로 뛰어들 준비가 되셨습니까? 버클을 채우세요. 마법 같은 글꼴 영역을 통해 여러분을 여행으로 안내할 것이기 때문입니다. 오늘은 Word 문서 작업 시 대상 컴퓨터의 글꼴을 사용하는 방법에 중점을 두고 있습니다. 이 멋진 기능은 문서를 보는 위치에 관계없이 문서가 의도한 대로 정확하게 보이도록 보장합니다. 시작하자!
+Aspose.Words for .NET의 매혹적인 세계로 뛰어들 준비가 되셨습니까? 버클을 채우세요. 마법 같은 글꼴 영역을 통해 여러분을 여행으로 안내할 것이기 때문입니다. 오늘은 Word 문서 작업 시 대상 컴퓨터의 글꼴을 사용하는 방법에 중점을 두고 있습니다. 이 멋진 기능은 문서를 보는 위치에 관계없이 문서가 의도한 대로 정확하게 보이도록 보장합니다. 시작해 봅시다!
 
 ## 전제 조건
 
@@ -104,10 +104,10 @@ System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseF
 대상 컴퓨터에 필요한 글꼴이 없으면 문서가 의도한 대로 렌더링되지 않을 수 있습니다. 필요한 경우 항상 글꼴을 포함하는 것이 좋습니다.
 
 ### 문서에 글꼴을 어떻게 포함하나요?
- 글꼴 포함은 다음을 사용하여 수행할 수 있습니다.`FontSettings` .NET용 Aspose.Words의 클래스입니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 글꼴 포함은 다음을 사용하여 수행할 수 있습니다.`FontSettings` .NET용 Aspose.Words의 클래스입니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### 문서를 저장하기 전에 미리 볼 수 있는 방법이 있나요?
- 예, 다음을 사용할 수 있습니다.`DocumentRenderer` 저장하기 전에 문서를 미리 보는 클래스입니다. .NET용 Aspose.Words를 확인하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은.
+ 예, 다음을 사용할 수 있습니다.`DocumentRenderer` 저장하기 전에 문서를 미리 보는 클래스입니다. .NET용 Aspose.Words를 확인하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### HTML 출력을 추가로 사용자 정의할 수 있나요?
  전적으로! 그만큼`HtmlFixedSaveOptions` 클래스는 HTML 출력을 사용자 정의하기 위한 다양한 속성을 제공합니다. 탐색[선적 서류 비치](https://reference.aspose.com/words/net/) 사용 가능한 모든 옵션에 대해.

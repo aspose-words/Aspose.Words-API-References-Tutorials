@@ -15,7 +15,7 @@ url: /es/net/programming-with-bookmarks/append-bookmarked-text/
 
 Antes de comenzar, asegurémonos de que tiene todo lo que necesita:
 
--  Aspose.Words para .NET: asegúrese de tenerlo instalado. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: asegúrese de tenerlo instalado. Si no, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: cualquier entorno de desarrollo .NET como Visual Studio.
 - Conocimientos básicos de C#: será útil comprender los conceptos básicos de programación de C#.
 - Documento de Word con marcadores: un documento de Word con marcadores configurados, que usaremos para agregar texto.
@@ -73,7 +73,7 @@ if (startPara.ParentNode != endPara.ParentNode)
     throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Paso 4: Identificar el nodo a detener
+## Paso 4: identificar el nodo a detener
 
 A continuación, debemos determinar el nodo donde dejaremos de copiar texto. Este será el nodo inmediatamente después del párrafo final.
 

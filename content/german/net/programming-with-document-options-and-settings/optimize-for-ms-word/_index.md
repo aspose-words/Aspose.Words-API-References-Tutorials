@@ -15,7 +15,7 @@ Hallo! Haben Sie sich schon einmal gefragt, wie Sie Ihre Word-Dokumente mit vers
 
 Bevor wir uns die Hände schmutzig machen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
-1.  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder jede andere IDE, die .NET unterstützt.
 3. Grundkenntnisse in C#: Sie müssen kein Zauberer sein, aber Kenntnisse in C# sind hilfreich.
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Gut, jetzt, da wir unsere Tools bereit haben, können wir mit der schrittweisen Optimierung Ihres Dokuments für MS Word beginnen.
+Gut, da wir nun unsere Tools bereit haben, können wir mit der schrittweisen Optimierung Ihres Dokuments für MS Word beginnen.
 
 ## Schritt 1: Einrichten Ihres Dokumentverzeichnisses
 

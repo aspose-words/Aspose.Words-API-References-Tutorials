@@ -85,7 +85,7 @@ doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");
 是的，Aspose.Words 在保留原始格式方面做得非常出色。
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
-雖然您可以使用臨時許可證進行評估，但您需要購買完整的許可證才能用於商業用途。查看[購買頁面](https://purchase.aspose.com/buy)更多細節。
+雖然您可以使用臨時許可證進行評估，但您需要購買完整的許可證才能用於商業用途。查看[購買頁面](https://purchase.aspose.com/buy)了解更多詳情。
 
 ### 我可以在不同的作業系統上使用 Aspose.Words for .NET 嗎？
 是的，Aspose.Words for .NET 是跨平台的，可以在 Windows、Linux 和 macOS 上使用。

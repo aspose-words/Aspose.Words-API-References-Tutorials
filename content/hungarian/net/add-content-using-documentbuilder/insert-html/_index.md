@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Rendben, bontsuk ezt le lépésről lépésre. Kész? Kezdjük el!
+Rendben, bontsuk ezt le lépésről lépésre. Kész? Kezdjük is!
 
 ## 1. lépés: A dokumentumkönyvtár beállítása
 
@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 4. lépés: HTML tartalom beszúrása
 
- Most jön a szórakoztató rész – a HTML-tartalom hozzáadása. Használni a`InsertHtml` módszere a`DocumentBuilder` osztályban közvetlenül beágyazhatjuk a HTML-t a Word dokumentumunkba.
+ Most jön a szórakoztató rész – a HTML-tartalom hozzáadása. A`InsertHtml` módszere a`DocumentBuilder` osztályban közvetlenül beágyazhatjuk a HTML-t a Word dokumentumunkba.
 
 ```csharp
 builder.InsertHtml(
@@ -82,7 +82,7 @@ Végül, de nem utolsósorban elmentjük a dokumentumunkat a megadott könyvtár
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-És megvan! Az Aspose.Words for .NET segítségével HTML-kódot szúrt be egy Word-dokumentumba. Pacsi!
+És megvan! Az Aspose.Words for .NET segítségével HTML-kódot szúrt be egy Word-dokumentumba. High five!
 
 ## Következtetés
 

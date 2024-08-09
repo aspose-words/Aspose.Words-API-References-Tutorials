@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Manipuluj zawartością dokumentu
 
- Użyj`DocumentBuilder` obiekt, aby w razie potrzeby manipulować zawartością. Na przykład dodaj tekst lub formatowanie.
+ Skorzystaj z`DocumentBuilder` obiekt, aby w razie potrzeby manipulować zawartością. Na przykład dodaj tekst lub formatowanie.
 
 ```csharp
 builder.Writeln("Insert your text or content manipulation code here!");

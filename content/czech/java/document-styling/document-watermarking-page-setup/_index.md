@@ -7,7 +7,7 @@ type: docs
 weight: 13
 url: /cs/java/document-styling/document-watermarking-page-setup/
 ---
-## Úvod
+## Zavedení
 
 V oblasti manipulace s dokumenty je Aspose.Words for Java mocným nástrojem, který umožňuje vývojářům ovládat každý aspekt zpracování dokumentů. V tomto komplexním průvodci se ponoříme do složitosti vodoznaku dokumentu a nastavení stránky pomocí Aspose.Words for Java. Ať už jste ostřílený vývojář nebo teprve vstupujete do světa zpracování dokumentů Java, tento podrobný průvodce vás vybaví znalostmi a zdrojovým kódem, které potřebujete.
 

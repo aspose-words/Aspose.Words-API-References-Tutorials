@@ -172,8 +172,8 @@ Aby usunąć ochronę hasłem z dokumentu chronionego hasłem, możesz otworzyć
 
 ### Czy mogę ustawić niestandardowe właściwości podczas zapisywania dokumentu w formacie OOXML?
 
- Tak, możesz ustawić niestandardowe właściwości dokumentu przed zapisaniem go w formacie OOXML. Użyj`BuiltInDocumentProperties`I`CustomDocumentProperties` klasy do ustawiania różnych właściwości, takich jak autor, tytuł, słowa kluczowe i właściwości niestandardowe.
+ Tak, możesz ustawić niestandardowe właściwości dokumentu przed zapisaniem go w formacie OOXML. Skorzystaj z`BuiltInDocumentProperties`I`CustomDocumentProperties` klasy do ustawiania różnych właściwości, takich jak autor, tytuł, słowa kluczowe i właściwości niestandardowe.
 
 ### Jaki jest domyślny poziom kompresji podczas zapisywania dokumentu w formacie OOXML?
 
- Domyślny poziom kompresji podczas zapisywania dokumentu w formacie OOXML przy użyciu Aspose.Words dla Java to`NORMAL` . Możesz zmienić poziom kompresji na`SUPER_FAST` Lub`MAXIMUM` w razie potrzeby.
+ Domyślny poziom kompresji podczas zapisywania dokumentu w formacie OOXML przy użyciu Aspose.Words dla Java to`NORMAL` . Możesz zmienić poziom kompresji na`SUPER_FAST` Lub`MAXIMUM` według potrzeb.

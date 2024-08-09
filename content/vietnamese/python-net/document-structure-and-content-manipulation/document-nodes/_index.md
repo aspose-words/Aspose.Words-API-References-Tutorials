@@ -30,7 +30,7 @@ doc.save("output.docx")
 
 ## Điều hướng cây tài liệu
 
-Tài liệu được cấu trúc dưới dạng cây gồm các nút, trong đó mỗi nút đại diện cho một phần tử như đoạn văn, bảng, hình ảnh, v.v. Việc điều hướng cây này là điều cần thiết để thao tác tài liệu.
+Tài liệu được cấu trúc dưới dạng cây gồm các nút, trong đó mỗi nút đại diện cho một phần tử như đoạn văn, bảng, hình ảnh, v.v. Việc điều hướng cây này là điều cần thiết để thao tác với tài liệu.
 
 ```python
 # Access the first paragraph of the document
@@ -43,7 +43,7 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, False):
 
 ## Làm việc với các đoạn văn và các dòng lệnh
 
-Đoạn văn chứa các dòng chạy, là các phần văn bản có cùng định dạng. Bạn có thể thêm đoạn văn mới, sửa đổi đoạn văn hiện có và áp dụng định dạng.
+Các đoạn văn chứa các đoạn văn là các phần văn bản có cùng định dạng. Bạn có thể thêm đoạn văn mới, sửa đổi đoạn văn hiện có và áp dụng định dạng.
 
 ```python
 # Add a new paragraph

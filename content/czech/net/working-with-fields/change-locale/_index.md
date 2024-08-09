@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/change-locale/
 ---
-## Úvod
+## Zavedení
 
 Práce s dokumenty aplikace Word často vyžaduje trochu jemnosti, zejména při práci s různými lokalitami a kulturami. V tomto tutoriálu prozkoumáme, jak změnit národní prostředí dokumentu aplikace Word pomocí Aspose.Words for .NET. Ať už vytváříte dokumenty pro globální publikum nebo jen potřebujete změnit formát data, tento průvodce vám pomůže.
 
@@ -15,11 +15,11 @@ Práce s dokumenty aplikace Word často vyžaduje trochu jemnosti, zejména při
 
 Než se ponoříme do toho nejnutnějšího, ujistěte se, že máme vše, co potřebujeme:
 
--  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Jakákoli verze, která podporuje .NET framework.
 - Základní znalost C#: Pochopení základů C# a .NET vám pomůže pokračovat.
 
- Ujistěte se, že jste nainstalovali Aspose.Words pro .NET. Pokud ne, můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo si to koupit[tady](https://purchase.aspose.com/buy).
+ Ujistěte se, že jste nainstalovali Aspose.Words pro .NET. Pokud ne, můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo si to koupit[zde](https://purchase.aspose.com/buy).
 
 ## Importovat jmenné prostory
 
@@ -107,10 +107,10 @@ Ano, Aspose.Words for .NET podporuje změnu národního prostředí na jakýkoli
 Změna národního prostředí ovlivní především formát data a čísla. Ostatní text zůstane nezměněn.
 
 ### Potřebuji k používání Aspose.Words pro .NET speciální licenci?
- Můžete začít s bezplatnou zkušební verzí, ale pro další používání si budete muset zakoupit licenci[tady](https://purchase.aspose.com/buy).
+ Můžete začít s bezplatnou zkušební verzí, ale pro další používání si budete muset zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Mohu se vrátit do původního národního prostředí, pokud se něco pokazí?
 Ano, uložením původní kultury a jejím pozdějším obnovením se můžete vrátit k původnímu národnímu prostředí.
 
 ### Kde mohu získat podporu, pokud narazím na problémy?
- Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Můžete získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).

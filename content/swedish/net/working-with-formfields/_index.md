@@ -12,7 +12,7 @@ Ordbehandling med formulärfält är en omfattande resurs för att lära dig hur
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Infoga formulärfält](./insert-form-fields/) | Lär dig hur du infogar dropdown-formulärfält i Word-dokument med Aspose.Words för .NET. |
-| [Formulärfält fungerar med egenskaper](./form-fields-work-with-properties/) | Lär dig hur du arbetar med formulärfältsegenskaper i Word-dokument med Aspose.Words för .NET. |
-| [Formulärfält Få formulärfältsamling](./form-fields-get-form-fields-collection/) | Lär dig hur du hämtar och manipulerar insamling av formulärfält i Word-dokument med Aspose.Words för .NET. |
-| [Formulärfält får efter namn](./form-fields-get-by-name/) | Lär dig hur du hämtar och ändrar formulärfält efter namn i Word-dokument med Aspose.Words för .NET. |
+| [Infoga formulärfält](./insert-form-fields/) | Lär dig hur du infogar ett formulärfält med kombinationsruta i ett Word-dokument med Aspose.Words för .NET med vår detaljerade steg-för-steg-guide. |
+| [Formulärfält fungerar med egenskaper](./form-fields-work-with-properties/) | Lär dig hur du manipulerar formulärfält i Word-dokument med Aspose.Words för .NET med vår detaljerade steg-för-steg-guide. |
+| [Formulärfält Hämta formulärfältsamling](./form-fields-get-form-fields-collection/) | Lär dig hur du hämtar och manipulerar formulärfält i Word-dokument med Aspose.Words för .NET med vår omfattande steg-för-steg-guide. |
+| [Formulärfält får efter namn](./form-fields-get-by-name/) | Lär dig hur du hämtar och ändrar formulärfält efter namn i Word-dokument med Aspose.Words för .NET med denna detaljerade, steg-för-steg-guide. |

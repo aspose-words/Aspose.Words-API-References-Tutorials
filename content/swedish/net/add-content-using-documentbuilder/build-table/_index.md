@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/build-table/
 ---
 ## Introduktion
 
-Hallå där! Vill du skapa tabeller i dina Word-dokument programmatiskt? Nåväl, du har kommit till rätt ställe! Idag ska vi dyka in i den magiska världen av Aspose.Words för .NET. Detta kraftfulla bibliotek låter dig manipulera Word-dokument som ett proffs. Föreställ dig att du är en trollkarl, och Aspose.Words är din trollstav, som gör att du kan skapa, redigera och formatera dokument med en handvändning (eller snarare en rad kod). I den här handledningen kommer vi att fokusera på att bygga en tabell i ett Word-dokument. Så ta tag i din kodningshatt och låt oss komma igång!
+Hej där! Vill du skapa tabeller i dina Word-dokument programmatiskt? Nåväl, du har kommit till rätt ställe! Idag ska vi dyka in i den magiska världen av Aspose.Words för .NET. Detta kraftfulla bibliotek låter dig manipulera Word-dokument som ett proffs. Föreställ dig att du är en trollkarl, och Aspose.Words är din trollstav, som gör att du kan skapa, redigera och formatera dokument med en handvändning (eller snarare en rad kod). I den här handledningen kommer vi att fokusera på att bygga en tabell i ett Word-dokument. Så ta tag i din kodningshatt och låt oss komma igång!
 
 ## Förutsättningar
 

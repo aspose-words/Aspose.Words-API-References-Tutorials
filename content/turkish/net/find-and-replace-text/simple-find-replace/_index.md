@@ -69,7 +69,7 @@ Console.WriteLine("Original document text: " + doc.Range.Text);
 
 ## Adım 4: Metni Değiştirme
 
-Sihir yapılan yer burasıdır! Değiştireceğiz"_CustomerName_ ""James Bond" ile`Replace` yöntem. 
+Sihrin gerçekleştiği yer burası! Değiştireceğiz"_CustomerName_ ""James Bond" ile`Replace` Yöntem. 
 
 ```csharp
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
@@ -97,7 +97,7 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki metni bulma ve değiştirme sürecini otomatikleştirdiniz. Artık manuel güncelleme ve hata yok. İster rapor hazırlıyor, ister kişiselleştirilmiş mektuplar oluşturuyor, ister yalnızca belge içeriğini yönetiyor olun, bu basit ama güçlü teknik size çok fazla zaman kazandırabilir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki metni bulma ve değiştirme sürecini otomatikleştirdiniz. Artık manuel güncelleme ve hata yok. İster rapor hazırlıyor, ister kişiselleştirilmiş mektuplar oluşturuyor, ister yalnızca belge içeriğini yönetiyor olun, bu basit ama güçlü teknik size çok fazla zaman kazandırabilir.
 
 ## SSS'ler
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-shapes/insert-shape/
 ---
-## introduzione
+## Introduzione
 
 Quando si tratta di creare documenti Word visivamente accattivanti e ben strutturati, le forme possono svolgere un ruolo fondamentale. Che tu stia aggiungendo frecce, riquadri o anche forme personalizzate complesse, la capacità di manipolare questi elementi a livello di codice offre una flessibilità senza pari. In questo tutorial esploreremo come inserire e manipolare forme nei documenti di Word utilizzando Aspose.Words per .NET.
 
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 
 ## Conclusione
 
-E il gioco è fatto! Hai inserito e manipolato con successo forme in un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ha trattato le nozioni di base, ma Aspose.Words offre molte funzionalità più avanzate per lavorare con le forme, come stili personalizzati, connettori e forme di gruppo.
+Ed ecco qua! Hai inserito e manipolato con successo forme in un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ha trattato le nozioni di base, ma Aspose.Words offre molte funzionalità più avanzate per lavorare con le forme, come stili personalizzati, connettori e forme di gruppo.
 
  Per informazioni più dettagliate, visitare il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/).
 

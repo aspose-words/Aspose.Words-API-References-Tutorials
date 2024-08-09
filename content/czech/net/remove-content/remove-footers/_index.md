@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/remove-content/remove-footers/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám někdy, že jste se snažili odstranit zápatí z dokumentu aplikace Word? Nejsi sám! Mnoho lidí čelí této výzvě, zejména při práci s dokumenty, které mají různá zápatí na různých stránkách. Naštěstí Aspose.Words pro .NET poskytuje bezproblémové řešení. V tomto tutoriálu vás provedeme odstraněním zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato příručka je ideální pro vývojáře, kteří chtějí snadno a efektivně programově manipulovat s dokumenty Wordu.
 
@@ -15,7 +15,7 @@ Stalo se vám někdy, že jste se snažili odstranit zápatí z dokumentu aplika
 
 Než se ponoříme do podrobností, ujistěte se, že máte vše, co potřebujete:
 
-- Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji z[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji z[zde](https://releases.aspose.com/words/net/).
 - .NET Framework: Ujistěte se, že máte nainstalovaný .NET Framework.
 - Integrované vývojové prostředí (IDE): Přednostně Visual Studio pro bezproblémovou integraci a kódování.
 
@@ -92,7 +92,7 @@ tady to máte! Úspěšně jste odstranili zápatí z dokumentu aplikace Word po
 ## FAQ
 
 ### Mohu odstranit záhlaví stejným způsobem?
- Ano, podobný přístup můžete použít k odstranění záhlaví pomocí přístupu`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` , a`HeaderFooterType.HeaderEven`.
+ Ano, podobný přístup můžete použít k odstranění záhlaví pomocí přístupu`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` a`HeaderFooterType.HeaderEven`.
 
 ### Je Aspose.Words for .NET zdarma k použití?
  Aspose.Words for .NET je komerční produkt, ale můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) vyzkoušet jeho vlastnosti.

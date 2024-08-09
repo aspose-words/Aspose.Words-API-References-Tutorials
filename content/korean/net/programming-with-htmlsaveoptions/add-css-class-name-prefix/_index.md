@@ -15,7 +15,7 @@ url: /ko/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
--  Aspose.Words for .NET: 아직 설치하지 않으셨다면,[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: 아직 설치하지 않으셨다면,[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio 또는 기타 C# IDE.
 -  Word 문서: 다음과 같은 문서를 사용하겠습니다.`Rendering.docx`. 프로젝트 디렉토리에 넣으세요.
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## 5단계: 출력 확인
 
- 프로젝트를 실행한 후`Documents` 폴더. 다음과 같은 HTML 파일을 찾아야 합니다.`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . 텍스트 편집기나 브라우저에서 이 파일을 열어 CSS 클래스에 접두사가 있는지 확인하세요.`pfx_`.
+ 프로젝트를 실행한 후`Documents` 접는 사람. 다음과 같은 HTML 파일을 찾아야 합니다.`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . 텍스트 편집기나 브라우저에서 이 파일을 열어 CSS 클래스에 접두사가 있는지 확인하세요.`pfx_`.
 
 ## 결론
 
@@ -120,7 +120,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  그만큼`CssClassNamePrefix`속성은 외부 CSS와 함께 작동합니다. 인라인 CSS의 경우 다른 접근 방식이 필요합니다.
 
 ### 다른 HTML 저장 옵션을 어떻게 포함할 수 있나요?
- 다양한 속성을 구성할 수 있습니다.`HtmlSaveOptions` HTML 출력을 사용자 정의합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 다양한 속성을 구성할 수 있습니다.`HtmlSaveOptions` HTML 출력을 사용자 정의합니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### HTML을 스트림에 저장할 수 있습니까?
  전적으로! 스트림 객체를 스트림에 전달하여 문서를 스트림에 저장할 수 있습니다.`Save` 방법.

@@ -1,6 +1,6 @@
 ---
-title: Νοημοσύνη εγγράφων
-linktitle: Νοημοσύνη εγγράφων
+title: Ευφυΐα εγγράφων
+linktitle: Ευφυΐα εγγράφων
 second_title: Aspose.API διαχείρισης εγγράφων Words Python
 description: Ξεκλειδώστε πολύτιμες πληροφορίες από τα έγγραφά σας με το Aspose.Words for Document Intelligence της Python. Αυτοματοποιήστε την ανάλυση, την εξαγωγή κειμένου και την ταξινόμηση.
 type: docs

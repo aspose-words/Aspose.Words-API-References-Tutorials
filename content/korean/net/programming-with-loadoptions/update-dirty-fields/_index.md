@@ -16,7 +16,7 @@ url: /ko/net/programming-with-loadoptions/update-dirty-fields/
 
 핵심 내용을 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
-1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. .NET Framework: Aspose.Words와 호환되는 모든 버전.
 3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 도움이 됩니다.
 4. 샘플 Word 문서: 업데이트가 필요한 더티 필드가 있는 문서입니다.

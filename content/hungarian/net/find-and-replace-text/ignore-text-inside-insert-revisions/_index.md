@@ -89,7 +89,7 @@ beszúrt szöveg figyelmen kívül hagyása segít az alapvető tartalomra össz
 Igen, visszaállíthatja a figyelmen kívül hagyott beszúrt szöveget a megfelelő FindReplaceOptions beállítások segítségével.
 
 ### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
- Meglátogatni a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes útmutatókért és API-referenciákért.
+ Látogassa meg a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes útmutatókért és API-referenciákért.
 
 ### Létezik közösségi fórum az Aspose.Words .NET-hez kapcsolódó lekérdezések megvitatására?
  Igen, meglátogathatja a[Aspose.Words fórum](https://forum.aspose.com/c/words/8) közösségi támogatásra és beszélgetésekre.

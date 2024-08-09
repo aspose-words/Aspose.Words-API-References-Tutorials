@@ -93,7 +93,7 @@ Cela enregistrera votre document non protégé dans le répertoire spécifié.
 
 ## Conclusion
 
-Et voila! Supprimer la protection d'un document Word à l'aide d'Aspose.Words pour .NET est un jeu d'enfant. Qu'il s'agisse d'un document protégé par mot de passe ou non, Aspose.Words vous offre la flexibilité nécessaire pour gérer la protection des documents sans effort. Vous pouvez désormais déverrouiller vos documents et en prendre le contrôle total avec seulement quelques lignes de code.
+Et voilà ! Supprimer la protection d'un document Word à l'aide d'Aspose.Words pour .NET est un jeu d'enfant. Qu'il s'agisse d'un document protégé par mot de passe ou non, Aspose.Words vous offre la flexibilité nécessaire pour gérer la protection des documents sans effort. Vous pouvez désormais déverrouiller vos documents et en prendre le contrôle total avec seulement quelques lignes de code.
 
 ## FAQ
 
@@ -107,7 +107,7 @@ Oui, vous pouvez parcourir une liste de documents et appliquer la même logique 
 
 ### Aspose.Words pour .NET est-il gratuit ?
 
- Aspose.Words for .NET est une bibliothèque payante, mais vous pouvez l'essayer gratuitement. Vérifiez[essai gratuit](https://releases.aspose.com/)!
+ Aspose.Words for .NET est une bibliothèque payante, mais vous pouvez l'essayer gratuitement. Découvrez le[essai gratuit](https://releases.aspose.com/)!
 
 ### Quels autres types de protection puis-je appliquer à un document Word ?
 

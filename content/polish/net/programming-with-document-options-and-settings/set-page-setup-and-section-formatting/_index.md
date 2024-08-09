@@ -15,7 +15,7 @@ Jeśli chodzi o manipulację dokumentami, kluczowe znaczenie ma prawidłowe usta
 
 Zanim zagłębimy się w kod, omówmy, czego potrzebujesz, aby zacząć.
 
--  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: dowolne IDE kompatybilne z .NET (np. Visual Studio).
 - Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest niezbędna.
 

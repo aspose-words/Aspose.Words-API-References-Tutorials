@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti nel meraviglioso mondo di Aspose.Words per .NET! Oggi approfondiremo un'elegante funzionalità che può farti risparmiare un sacco di tempo e fatica: l'esportazione di informazioni di andata e ritorno. Immagina di convertire un documento Word in HTML e viceversa, senza perdere dati o formattazione cruciali. Sembra un sogno, vero? Bene, è del tutto possibile con Aspose.Words. Allacciate le cinture e cominciamo questo entusiasmante viaggio!
 
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ## Conclusione
 
-E il gioco è fatto! Con solo poche righe di codice, hai esportato con successo informazioni di andata e ritorno da un documento Word in HTML utilizzando Aspose.Words per .NET. Questa potente funzionalità garantisce che i tuoi documenti mantengano la loro integrità e formattazione durante le conversioni, rendendoti la vita molto più semplice.
+Ed ecco qua! Con solo poche righe di codice, hai esportato con successo informazioni di andata e ritorno da un documento Word in HTML utilizzando Aspose.Words per .NET. Questa potente funzionalità garantisce che i tuoi documenti mantengano la loro integrità e formattazione durante le conversioni, rendendoti la vita molto più semplice.
 
 ## Domande frequenti
 

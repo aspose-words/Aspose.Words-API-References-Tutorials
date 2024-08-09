@@ -15,7 +15,7 @@ Khi làm việc với tài liệu Word, việc đảm bảo hai tài liệu gi�
 
 Trước khi đi sâu vào hướng dẫn từng bước, hãy đảm bảo chúng ta có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Nếu bạn chưa có nó, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Nếu bạn chưa có nó, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển .NET. Visual Studio rất được khuyến khích.
 3. Tài liệu mẫu: Chuẩn bị sẵn hai tài liệu Word mà bạn muốn so sánh.
 
@@ -57,7 +57,7 @@ Document docBClone = docB.Clone();
 
 ## Bước 4: Thực hiện so sánh
 
- Bây giờ, bạn đã sẵn sàng để so sánh các tài liệu. Các`Compare`phương pháp sẽ làm nổi bật sự khác biệt giữa hai tài liệu. Bạn có thể chỉ định người dùng đang thực hiện so sánh và ngày so sánh.
+ Bây giờ, bạn đã sẵn sàng để so sánh các tài liệu. các`Compare`phương pháp sẽ làm nổi bật sự khác biệt giữa hai tài liệu. Bạn có thể chỉ định người dùng đang thực hiện so sánh và ngày so sánh.
 
 ```csharp
 docA.Compare(docBClone, "user", DateTime.Now);

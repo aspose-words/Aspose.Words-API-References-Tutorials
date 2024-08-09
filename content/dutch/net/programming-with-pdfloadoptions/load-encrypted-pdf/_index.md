@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf");
 
 ## Stap 3: PDF-opslagopties met codering instellen
 
- Laten we nu wat beveiliging toevoegen aan onze PDF. Wij zetten de`PdfSaveOptions` om encryptiedetails op te nemen.
+ Laten we nu wat beveiliging toevoegen aan onze PDF. Wij zetten de`PdfSaveOptions` encryptiedetails op te nemen.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 En daar heb je het! Het laden van een gecodeerde PDF met Aspose.Words voor .NET is niet alleen eenvoudig, het is ronduit leuk. Door deze stappen te volgen, hebt u de mogelijkheid ontgrendeld om als een professional met PDF-codering om te gaan. Vergeet niet dat oefenen de sleutel is tot het beheersen van welk hulpmiddel dan ook, dus aarzel niet om te experimenteren en te verkennen.
 
- Als u vragen heeft of verdere hulp nodig heeft, kunt u terecht bij de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/)En[Helpforum](https://forum.aspose.com/c/words/8) zijn geweldige plekken om te beginnen.
+ Als u vragen heeft of verdere hulp nodig heeft, kunt u terecht bij de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/)En[ondersteuningsforum](https://forum.aspose.com/c/words/8) zijn geweldige plekken om te beginnen.
 
 ## Veelgestelde vragen
 

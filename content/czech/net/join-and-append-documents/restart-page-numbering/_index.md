@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/restart-page-numbering/
 ---
-## Úvod
+## Zavedení
 
 Už jste někdy měli potíže s vytvořením vyleštěného dokumentu s odlišnými sekcemi, z nichž každá začíná stránkou číslo 1? Představte si zprávu, kde kapitoly začínají znovu, nebo zdlouhavý návrh s oddělenými oddíly pro shrnutí a podrobné přílohy. Aspose.Words for .NET, výkonná knihovna pro zpracování dokumentů, vám umožňuje dosáhnout toho s jemností. Tento komplexní průvodce odhalí tajemství restartování číslování stránek a vybaví vás tak, abyste mohli bez námahy vytvářet profesionálně vypadající dokumenty.
 
@@ -37,7 +37,7 @@ Nyní se pojďme ponořit do praktických kroků spojených s restartováním č
 
  Definujte řetězcovou proměnnou`dataDir` pro uložení cesty k vašemu adresáři dokumentů. Nahraďte „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečným umístěním.
 
- Vytvořte dva`Document` objekty pomocí`Aspose.Words.Document`konstruktér. První (`srcDoc`) bude obsahovat zdrojový dokument obsahující obsah, který má být připojen. Druhý (`dstDoc`) představuje cílový dokument, do kterého integrujeme zdrojový obsah s restartovaným číslováním stránek.
+ Vytvořte dva`Document` objekty pomocí`Aspose.Words.Document`konstruktér. Ten první (`srcDoc`) bude obsahovat zdrojový dokument obsahující obsah, který má být připojen. Druhý (`dstDoc`) představuje cílový dokument, do kterého integrujeme zdrojový obsah s restartovaným číslováním stránek.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Nahraďte svým skutečným adresářem
@@ -51,7 +51,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
  Využijte`PageSetup` vlastnost sekce pro konfiguraci jejího chování rozvržení.
 
- Nastav`SectionStart` majetek`PageSetup` na`SectionStart.NewPage`. Tím se zajistí vytvoření nové stránky před připojením zdrojového obsahu k cílovému dokumentu.
+ Nastavte`SectionStart` vlastnictví`PageSetup` na`SectionStart.NewPage`. Tím se zajistí vytvoření nové stránky před připojením zdrojového obsahu k cílovému dokumentu.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -97,7 +97,7 @@ Na závěr, zvládnutí zalomení stránek a číslování v Aspose.Words pro .N
 
 ### Jak mohu upravit číslo úvodní stránky po restartu?
 
- I když poskytnutý kód zahájí číslování od 1, můžete si jej přizpůsobit. Využijte`PageNumber` majetek z`HeaderFooter` objekt v nové sekci. Nastavení této vlastnosti umožňuje definovat počáteční číslo stránky.
+ I když poskytnutý kód zahájí číslování od 1, můžete si jej přizpůsobit. Využijte`PageNumber` vlastnictvím`HeaderFooter` objekt v nové sekci. Nastavení této vlastnosti umožňuje definovat počáteční číslo stránky.
 
 ### Co se stane s existujícími čísly stránek ve zdrojovém dokumentu?
 
@@ -105,7 +105,7 @@ Stávající čísla stránek ve zdrojovém dokumentu zůstanou nedotčena. Pouz
 
 ### Mohu použít různé formáty číslování (např. římské číslice)?
 
- Absolutně! Aspose.Words nabízí rozsáhlou kontrolu nad formáty číslování stránek. Prozkoumat`NumberStyle` majetek z`HeaderFooter` objekt si můžete vybrat z různých stylů číslování, jako jsou římské číslice, písmena nebo vlastní formáty.
+ Absolutně! Aspose.Words nabízí rozsáhlou kontrolu nad formáty číslování stránek. Prozkoumat`NumberStyle` vlastnictvím`HeaderFooter` objekt si můžete vybrat z různých stylů číslování, jako jsou římské číslice, písmena nebo vlastní formáty.
 
 ### Kde najdu další zdroje nebo pomoc?
 

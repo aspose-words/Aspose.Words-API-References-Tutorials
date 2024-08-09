@@ -89,7 +89,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ## Wniosek
 
-I to wszystko! Pomyślnie usunąłeś ograniczenie tylko do odczytu z dokumentu programu Word przy użyciu Aspose.Words dla .NET. Proces ten jest prosty i zapewnia możliwość swobodnej edycji dokumentów, bez zbędnych ograniczeń. 
+I tyle! Pomyślnie usunąłeś ograniczenie tylko do odczytu z dokumentu programu Word przy użyciu Aspose.Words dla .NET. Proces ten jest prosty i zapewnia możliwość swobodnej edycji dokumentów, bez zbędnych ograniczeń. 
 
 Niezależnie od tego, czy pracujesz nad małym projektem, czy obsługujesz wiele dokumentów, wiedza o tym, jak zarządzać zabezpieczeniami dokumentów, może zaoszczędzić wiele czasu i kłopotów. Zatem śmiało wypróbuj to w swoich projektach. Miłego kodowania!
 

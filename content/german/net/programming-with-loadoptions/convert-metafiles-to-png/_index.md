@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-## Schritt für Schritt Anleitung
+## Schritt-für-Schritt-Anleitung
 
 Lassen Sie uns den Vorgang nun in leicht verständliche Schritte unterteilen.
 
@@ -82,7 +82,7 @@ Herzlichen Glückwunsch! Sie haben Metadateien in einem Word-Dokument mit Aspose
 ## FAQs
 
 ### Kann ich außer Metadateien auch andere Dateitypen in PNG konvertieren?
- Aspose.Words für .NET bietet umfassende Unterstützung für verschiedene Dateiformate. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Aspose.Words für .NET bietet umfassende Unterstützung für verschiedene Dateiformate. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Gibt es eine Möglichkeit, mehrere Dokumente stapelweise zu verarbeiten?
 Ja, Sie können ein Dokumentverzeichnis durchlaufen und auf jede Datei dieselben Ladeoptionen anwenden.
@@ -94,4 +94,4 @@ Metadateien bleiben in ihrem ursprünglichen Format, das möglicherweise nicht m
  Ja, für die volle Funktionalität ist eine Lizenz erforderlich. Sie erhalten eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zu Versuchszwecken.
 
 ### Kann ich diese Methode für andere Grafikformate wie JPEG oder GIF verwenden?
- Diese spezielle Methode ist für Metadateien gedacht, aber Aspose.Words für .NET unterstützt verschiedene Bildformate. Weitere Informationen finden Sie in der[Dokumentation](https://reference.aspose.com/words/net/) für mehr Informationen.
+ Diese spezielle Methode ist für Metadateien gedacht, aber Aspose.Words für .NET unterstützt verschiedene Bildformate. Weitere Informationen finden Sie in der[Dokumentation](https://reference.aspose.com/words/net/) für weitere Informationen.

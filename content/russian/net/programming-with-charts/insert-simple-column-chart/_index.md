@@ -94,4 +94,4 @@ doc.Save(dataDir + "InsertSimpleColumnChart.docx");
 Да, Aspose.Words for .NET позволяет динамически заполнять диаграммы данными из внешних источников, таких как базы данных или API.
 
 ### Где я могу найти дополнительные ресурсы и поддержку Aspose.Words для .NET?
- Посетить[Документация Aspose.Words для .NET](https://reference.aspose.com/words/net/) подробные ссылки и примеры API. Для поддержки вы также можете посетить[Форум Aspose.Words](https://forum.aspose.com/c/words/8).
+ Посетите[Документация Aspose.Words для .NET](https://reference.aspose.com/words/net/) подробные ссылки и примеры API. Для поддержки вы также можете посетить[Форум Aspose.Words](https://forum.aspose.com/c/words/8).

@@ -72,7 +72,7 @@ doc.Save("StyledDocument.docx");
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement définir les propriétés du thème dans un document Word à l'aide d'Aspose.Words pour .NET. Cet outil puissant ouvre un monde de possibilités pour personnaliser vos documents par programmation. Que vous travailliez sur un petit projet ou sur une application à grande échelle, la maîtrise de ces techniques améliorera l'apparence et le professionnalisme de vos documents Word.
+Et voilà ! En suivant ces étapes, vous pouvez facilement définir les propriétés du thème dans un document Word à l'aide d'Aspose.Words pour .NET. Cet outil puissant ouvre un monde de possibilités pour personnaliser vos documents par programmation. Que vous travailliez sur un petit projet ou sur une application à grande échelle, la maîtrise de ces techniques améliorera l'apparence et le professionnalisme de vos documents Word.
 
 ## FAQ
 
@@ -89,4 +89,4 @@ Absolument! Aspose.Words for .NET fournit des options étendues pour personnalis
  Vous pouvez vous référer au[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour des informations plus approfondies.
 
 ### Quelles options d'assistance sont disponibles si je rencontre des problèmes ?  
- Aspose fournit un[forum d'entraide](https://forum.aspose.com/c/words/8) où vous pouvez obtenir de l'aide de la communauté et de l'équipe Aspose.
+ Aspose fournit un[forum d'assistance](https://forum.aspose.com/c/words/8) où vous pouvez obtenir de l'aide de la communauté et de l'équipe Aspose.

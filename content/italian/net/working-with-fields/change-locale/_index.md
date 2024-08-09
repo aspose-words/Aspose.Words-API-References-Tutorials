@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/change-locale/
 ---
-## introduzione
+## Introduzione
 
 Lavorare con documenti Word spesso richiede un po' di abilità, soprattutto quando si ha a che fare con luoghi e culture diverse. In questo tutorial, esploreremo come modificare le impostazioni internazionali di un documento Word utilizzando Aspose.Words per .NET. Che tu stia creando documenti per un pubblico globale o semplicemente abbia bisogno di cambiare i formati delle date, questa guida ti copre.
 
@@ -70,7 +70,7 @@ Thread.CurrentThread.CurrentCulture = new CultureInfo("de-DE");
 
 ## Passaggio 5: eseguire la stampa unione
 
-Ora eseguiamo la stampa unione con la data corrente. Ciò applicherà le nuove impostazioni locali al formato della data.
+Ora eseguiamo la stampa unione con la data corrente. Ciò applicherà le nuove impostazioni internazionali al formato della data.
 
 ```csharp
 doc.MailMerge.Execute(new[] { "Date" }, new object[] { DateTime.Now });
@@ -92,7 +92,7 @@ Infine, salva il documento nella directory specificata.
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-il gioco è fatto! Hai modificato con successo le impostazioni internazionali nel tuo documento Word utilizzando Aspose.Words per .NET.
+Ed ecco qua! Hai modificato con successo le impostazioni internazionali nel tuo documento Word utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Zavedení
 
 Přidáním záhlaví a zápatí do dokumentů můžete zvýšit jejich profesionalitu a čitelnost. S Aspose.Words for .NET můžete snadno vytvářet a upravovat záhlaví a zápatí pro vaše dokumenty Word. V tomto tutoriálu vás provedeme procesem krok za krokem a zajistíme, že tyto funkce můžete bezproblémově implementovat.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Krok 2: Vytvořte nový dokument
 
- Vytvořte nový dokument a a`DocumentBuilder` pro usnadnění přidávání obsahu.
+ Vytvořte nový dokument a a`DocumentBuilder`pro usnadnění přidávání obsahu.
 
 ```csharp
 Document doc = new Document();
@@ -166,24 +167,24 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 Pomocí následujících kroků můžete efektivně přidávat a upravovat záhlaví a zápatí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tím se zlepší vzhled a profesionalita vašeho dokumentu, takže bude čitelnější a poutavější.
 
-## Nejčastější dotazy
+## FAQ
 
-### Q1: Co je Aspose.Words pro .NET?
+### Co je Aspose.Words for .NET?
 
 Aspose.Words for .NET je knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově v rámci aplikací .NET.
 
-### Q2: Mohu přidat obrázky do záhlaví nebo zápatí?
+### Mohu přidat obrázky do záhlaví nebo zápatí?
 
  Ano, obrázky můžete snadno přidat do záhlaví nebo zápatí pomocí`DocumentBuilder.InsertImage` metoda.
 
-### Q3: Jak nastavím různá záhlaví a zápatí pro první stránku?
+### Jak nastavím různá záhlaví a zápatí pro první stránku?
 
- Můžete nastavit různá záhlaví a zápatí pro první stránku pomocí`DifferentFirstPageHeaderFooter` majetek z`PageSetup` třída.
+ Můžete nastavit různá záhlaví a zápatí pro první stránku pomocí`DifferentFirstPageHeaderFooter` vlastnictvím`PageSetup` třída.
 
-### Q4: Kde najdu další dokumentaci k Aspose.Words?
+### Kde najdu další dokumentaci k Aspose.Words?
 
  Komplexní dokumentaci naleznete na[Stránka dokumentace API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### Q5: Je k dispozici podpora pro Aspose.Words?
+### Je k dispozici podpora pro Aspose.Words?
 
- Ano, Aspose nabízí podporu prostřednictvím jejich[Fórum podpory](https://forum.aspose.com/c/words/8).
+ Ano, Aspose nabízí podporu prostřednictvím jejich[fórum podpory](https://forum.aspose.com/c/words/8).

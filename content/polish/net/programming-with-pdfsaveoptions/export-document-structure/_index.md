@@ -15,7 +15,7 @@ Poruszanie się po świecie manipulacji dokumentami może czasami przypominać w
 
 Zanim wyruszymy w tę podróż, zbierzmy wszystkie niezbędne rzeczy, których potrzebujesz, aby rozpocząć.
 
-- Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+- Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: środowisko programistyczne zgodne z platformą .NET, takie jak Visual Studio.
 -  Przykładowy dokument: dokument programu Word (np.`Paragraphs.docx`), który przekonwertujesz na plik PDF.
 

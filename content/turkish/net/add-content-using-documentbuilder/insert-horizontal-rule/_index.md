@@ -9,7 +9,7 @@ url: /tr/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## giriiş
 
-Merhaba geliştirici arkadaşlar! Hiç kendinizi bir Word belgesi projesinin içinde buldunuz ve "Dostum, işleri ayırmak için buraya gerçekten yatay bir kural eklemem gerekiyor" diye düşündünüz mü? Öyleyse tahmin et? Şanslısın! Bugünkü dersimizde Aspose.Words for .NET kullanarak bir Word belgesine yatay kuralın nasıl ekleneceği konusunu ele alacağız. Bu sıradan bir eğitim değil; ayrıntılı adımlar, ilgi çekici açıklamalar ve biraz eğlenceyle dolu. O halde kemerlerinizi bağlayın ve Aspose.Words for .NET'i kullanma konusunda profesyonel olmaya hazırlanın!
+Merhaba geliştirici arkadaşlar! Hiç kendinizi bir Word belgesi projesinin içinde buldunuz mu ve "Dostum, işleri ayırmak için buraya gerçekten yatay bir kural eklemem gerekiyor" diye düşündünüz mü? Peki tahmin et ne oldu? Şanslısın! Bugünkü dersimizde Aspose.Words for .NET kullanarak bir Word belgesine yatay kuralın nasıl ekleneceği konusunu ele alacağız. Bu sıradan bir eğitim değil; ayrıntılı adımlar, ilgi çekici açıklamalar ve biraz eğlenceyle dolu. O halde kemerlerinizi bağlayın ve Aspose.Words for .NET'i kullanma konusunda profesyonel olmaya hazırlanın!
 
 ## Önkoşullar
 
@@ -97,11 +97,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesine yatay kuralı başarıyla eklediniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesine yatay kuralı başarıyla eklediniz.
 
 ## Çözüm
 
-Tebrikler, sonuna kadar ulaştınız! 🎉 Bu eğitimi takip ederek Aspose.Words for .NET kullanarak bir Word belgesine nasıl yatay kural ekleyeceğinizi öğrendiniz. Bu beceri, profesyonel ve iyi yapılandırılmış belgeler oluşturmak için inanılmaz derecede yararlı olabilir. Herhangi bir yeni araçta uzmanlaşmanın anahtarının pratik olduğunu unutmayın; bu nedenle Aspose.Words'teki farklı öğeler ve ayarlarla denemeler yapmaktan çekinmeyin.
+Tebrikler, sonuna kadar ulaştınız! 🎉 Bu öğreticiyi takip ederek Aspose.Words for .NET kullanarak bir Word belgesine nasıl yatay kural ekleyeceğinizi öğrendiniz. Bu beceri, profesyonel ve iyi yapılandırılmış belgeler oluşturmak için inanılmaz derecede yararlı olabilir. Herhangi bir yeni araçta uzmanlaşmanın anahtarının pratik olduğunu unutmayın; bu nedenle Aspose.Words'teki farklı öğeler ve ayarlarla denemeler yapmaktan çekinmeyin.
 
  Daha fazla bilgi için her zaman kontrol edebilirsiniz.[Aspose.Words belgeleri](https://reference.aspose.com/words/net/). Mutlu kodlama!
 
@@ -113,7 +113,7 @@ Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programl
 
 ### Aspose.Words for .NET'i kullanmaya nasıl başlarım?
 
- Kütüphaneyi şuradan indirerek başlayabilirsiniz:[İnternet sitesi](https://releases.aspose.com/words/net/) ve .NET projenize ekleme.
+ Kütüphaneyi şuradan indirerek başlayabilirsiniz:[web sitesi](https://releases.aspose.com/words/net/) ve .NET projenize ekleme.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
 

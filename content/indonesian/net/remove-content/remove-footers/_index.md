@@ -9,7 +9,7 @@ url: /id/net/remove-content/remove-footers/
 ---
 ## Perkenalan
 
-Pernahkah Anda kesulitan menghapus footer dari dokumen Word? Kamu tidak sendiri! Banyak orang menghadapi tantangan ini, terutama ketika berhadapan dengan dokumen yang memiliki footer berbeda di berbagai halaman. Untungnya, Aspose.Words untuk .NET memberikan solusi yang mulus untuk ini. Dalam tutorial ini, kami akan memandu Anda tentang cara menghapus footer dari dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini sangat cocok untuk pengembang yang ingin memanipulasi dokumen Word secara terprogram dengan mudah dan efisien.
+Pernahkah Anda kesulitan menghapus footer dari dokumen Word? Anda tidak sendirian! Banyak orang menghadapi tantangan ini, terutama ketika berhadapan dengan dokumen yang memiliki footer berbeda di berbagai halaman. Untungnya, Aspose.Words untuk .NET memberikan solusi yang mulus untuk ini. Dalam tutorial ini, kami akan memandu Anda tentang cara menghapus footer dari dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini sangat cocok untuk pengembang yang ingin memanipulasi dokumen Word secara terprogram dengan mudah dan efisien.
 
 ## Prasyarat
 
@@ -17,7 +17,7 @@ Sebelum kita mendalami detailnya, pastikan Anda memiliki semua yang Anda butuhka
 
 - Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh dari[Di Sini](https://releases.aspose.com/words/net/).
 - .NET Framework: Pastikan Anda telah menginstal .NET framework.
-- Lingkungan Pengembangan Terintegrasi (IDE): Lebih disukai Visual Studio untuk integrasi dan pengalaman pengkodean yang lancar.
+- Lingkungan Pengembangan Terpadu (IDE): Lebih disukai Visual Studio untuk integrasi dan pengalaman pengkodean yang lancar.
 
 Setelah Anda memilikinya, Anda siap untuk mulai menghapus footer yang mengganggu itu!
 

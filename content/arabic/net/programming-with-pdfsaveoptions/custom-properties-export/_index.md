@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 يدعم Aspose.Words for .NET التصدير إلى تنسيقات مختلفة، بما في ذلك DOCX وHTML وEPUB وغيرها الكثير.
 
 ### أين يمكنني الحصول على الدعم إذا واجهت مشاكل؟
- للحصول على الدعم، يمكنك زيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للمساعدة.
+ للحصول على الدعم، يمكنك زيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للحصول على المساعدة.

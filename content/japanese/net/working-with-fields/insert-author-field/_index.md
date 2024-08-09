@@ -138,7 +138,7 @@ Aspose.Wordsは無料トライアルを提供していますが、フル機能�
 
 ### Aspose.Words を使用して他のタイプのフィールドを追加できますか?
 
-はい、Aspose.Wordsは日付、時刻、ページ番号など、さまざまなフィールドタイプをサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、Aspose.Wordsは日付、時刻、ページ番号など、さまざまなフィールドタイプをサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)詳細については。
 
 ### 問題が発生した場合、どこでサポートを受けることができますか?
 

@@ -85,7 +85,7 @@ Assurez-vous que le chemin et le nom du fichier correspondent à vos besoins.
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous avez réussi à fusionner deux documents Word en un seul document continu à l'aide d'Aspose.Words pour .NET. Ce processus est non seulement simple mais également très efficace, garantissant que vos documents conservent leur formatage d'origine.
+Et voilà ! Avec seulement quelques lignes de code, vous avez réussi à fusionner deux documents Word en un seul document continu à l'aide d'Aspose.Words pour .NET. Ce processus est non seulement simple mais également très efficace, garantissant que vos documents conservent leur formatage d'origine.
 
 ## FAQ
 

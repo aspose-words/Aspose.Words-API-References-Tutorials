@@ -86,4 +86,4 @@ Aspose.Words för .NET tillhandahåller ett robust och lättanvänt API för att
 Aspose.Words för .NET stöder export till olika format, inklusive DOCX, HTML, EPUB och många fler.
 
 ### Var kan jag få support om jag stöter på problem?
- För support kan du besöka[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för assistens.
+ För support kan du besöka[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för hjälp.

@@ -52,7 +52,7 @@ Shape shape = builder.InsertHorizontalRule();
 
 ## Étape 3 : Personnaliser le format de la règle horizontale
 
- Accéder au`HorizontalRuleFormat` propriété de la forme insérée pour personnaliser l’apparence de la règle horizontale.
+ Accédez au`HorizontalRuleFormat` propriété de la forme insérée pour personnaliser l’apparence de la règle horizontale.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;

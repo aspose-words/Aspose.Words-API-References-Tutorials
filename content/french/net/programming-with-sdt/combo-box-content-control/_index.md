@@ -33,7 +33,7 @@ Très bien, passons à la partie amusante : le codage ! Nous décomposerons le
 
 ## Étape 1 : Configurez votre projet
 
-Tout d’abord, configurez un nouveau projet dans votre IDE. Voici comment:
+Tout d’abord, configurez un nouveau projet dans votre IDE. Voici comment procéder :
 
 - Ouvrez Visual Studio.
 - Créez un nouveau projet d’application console C#.
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 
 ## Conclusion
 
-Et voila! Vous avez créé avec succès un contrôle de contenu de zone de liste déroulante dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez ajouter des éléments interactifs à vos documents, améliorant ainsi leurs fonctionnalités et leur expérience utilisateur.
+Et voilà ! Vous avez créé avec succès un contrôle de contenu de zone de liste déroulante dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez ajouter des éléments interactifs à vos documents, améliorant ainsi leurs fonctionnalités et leur expérience utilisateur.
 
 N'hésitez pas à expérimenter différents types de contrôles de contenu et à les personnaliser en fonction de vos besoins. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à demander de l'aide.
 

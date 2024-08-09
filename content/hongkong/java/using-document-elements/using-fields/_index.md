@@ -16,7 +16,7 @@ Aspose.Words for Java 是任何在 Java 應用程式中處理 Word 文件的人�
 
 ## 2. 設定您的環境
 
-開始之前，請確保已安裝 Aspose.Words for Java。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/java/)。另外，請確保您的系統上安裝了 Java 和整合開發環境 (IDE)，例如 Eclipse 或 IntelliJ IDEA。
+開始之前，請確保您已安裝 Aspose.Words for Java。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/java/)。另外，請確保您的系統上安裝了 Java 和整合開發環境 (IDE)，例如 Eclipse 或 IntelliJ IDEA。
 
 ## 3. 載入Word文檔
 
@@ -239,7 +239,7 @@ HandleMergeField類別的原始碼
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            //沒做什麼。
+            //什麼都不做。
         }
         /// <摘要>
         /// 當郵件合併引擎遇到文件中的 Image:XXX 合併欄位時呼叫此函數。
@@ -320,7 +320,7 @@ HandleMergeField類別的原始碼
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            //沒做什麼。
+            //什麼都不做。
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;
@@ -353,7 +353,7 @@ HandleMergeField類別的原始碼
 }
 ```
 
-## 六，結論
+## 六、結論
 
 恭喜！您已經學習如何使用 Aspose.Words for Java 中的欄位來動態操作 Word 文件。這個強大的 API 使您能夠完全控製文檔，使其成為 Java 開發人員的寶貴資產。
 

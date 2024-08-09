@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/keep-table-together/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai sentito frustrato quando una tabella nel tuo documento Word si divide su due pagine? È come se le tue informazioni accuratamente disposte improvvisamente decidessero di fare una pausa a metà! Mantenere le tabelle insieme su una pagina è fondamentale per la leggibilità e la presentazione. Che si tratti di un rapporto, di una proposta di progetto o semplicemente di un documento personale, la suddivisione delle tabelle può essere piuttosto fastidiosa. Fortunatamente per noi, Aspose.Words per .NET ha un modo ingegnoso per risolvere questo problema. In questo tutorial, esamineremo i passaggi per mantenere le tue tabelle intatte e dall'aspetto nitido. Immergiamoci!
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 
 ## Conclusione
 
-il gioco è fatto! Con solo poche righe di codice, puoi evitare che le tabelle si dividano tra le pagine dei tuoi documenti Word. Questa soluzione semplice ma efficace garantisce che le tue tabelle rimangano ordinate e professionali, migliorando la leggibilità dei tuoi documenti. Aspose.Words per .NET rende la gestione di tali problemi di formattazione un gioco da ragazzi, permettendoti di concentrarti sulla creazione di ottimi contenuti.
+Ed ecco qua! Con solo poche righe di codice, puoi evitare che le tabelle si dividano tra le pagine dei tuoi documenti Word. Questa soluzione semplice ma efficace garantisce che le tue tabelle rimangano ordinate e professionali, migliorando la leggibilità dei tuoi documenti. Aspose.Words per .NET rende la gestione di tali problemi di formattazione un gioco da ragazzi, permettendoti di concentrarti sulla creazione di ottimi contenuti.
 
 ## Domande frequenti
 

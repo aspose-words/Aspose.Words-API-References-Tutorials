@@ -13,7 +13,7 @@ In deze tutorials leert u verschillende aspecten van de woordenverwerking met co
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Commentaar toevoegen](./add-comments/) | Leer met onze gids hoe u opmerkingen aan uw Word-documenten kunt toevoegen met Aspose.Words voor .NET. Verbeter moeiteloos uw samenwerkingsproces aan documenten. |
+| [Opmerkingen toevoegen](./add-comments/) | Leer met onze gids hoe u opmerkingen aan uw Word-documenten kunt toevoegen met Aspose.Words voor .NET. Verbeter moeiteloos uw samenwerkingsproces aan documenten. |
 | [Ankercommentaar](./anchor-comment/) | Leer hoe u ankeropmerkingen kunt toevoegen aan Word-documenten met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor efficiënte samenwerking aan documenten. |
 | [Voeg commentaar toe Antwoord verwijderen](./add-remove-comment-reply/) | Leer hoe u reactiereacties in Word-documenten kunt toevoegen en verwijderen met Aspose.Words voor .NET. Verbeter uw samenwerking aan documenten met deze stapsgewijze handleiding. |
 | [Commentaar opgelost en antwoorden](./comment-resolved-and-replies/) | Automatiseer het oplossen en beantwoorden van opmerkingen in Word-documenten met Aspose.Words voor .NET. Stap-voor-stap handleiding inbegrepen. |

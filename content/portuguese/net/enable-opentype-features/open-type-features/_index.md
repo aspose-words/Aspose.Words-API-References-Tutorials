@@ -34,7 +34,7 @@ Agora, vamos dividir o exemplo em várias etapas em formato de guia passo a pass
 
 ## Etapa 1: configure seu projeto
 
-### Criando um novo projeto
+### Criando um Novo Projeto
 
 Abra o Visual Studio e crie um novo projeto C#. Nomeie-o com algo significativo como "OpenTypeFeaturesDemo". Este será o nosso playground para experimentar os recursos OpenType.
 
@@ -106,7 +106,7 @@ HarfBuzz é um mecanismo de modelagem de texto de código aberto que fornece sup
 Sim, Aspose.Words oferece suporte a diferentes mecanismos de modelagem de texto. No entanto, HarfBuzz é altamente recomendado devido ao seu suporte abrangente a recursos OpenType.
 
 ### O Aspose.Words é compatível com todas as versões do .NET?
- Aspose.Words oferece suporte a várias versões do .NET, incluindo .NET Framework, .NET Core e .NET Standard. Verifica a[documentação](https://reference.aspose.com/words/net/) para obter informações detalhadas de compatibilidade.
+ Aspose.Words oferece suporte a várias versões do .NET, incluindo .NET Framework, .NET Core e .NET Standard. Verifique o[documentação](https://reference.aspose.com/words/net/) para obter informações detalhadas de compatibilidade.
 
 ### Como posso experimentar o Aspose.Words antes de comprar?
  Você pode baixar uma versão de teste gratuita no site[Aspor site](https://releases.aspose.com/) e solicite uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).

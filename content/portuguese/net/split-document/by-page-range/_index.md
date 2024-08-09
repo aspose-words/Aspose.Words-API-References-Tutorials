@@ -73,7 +73,7 @@ Dividir um documento do Word por intervalo de páginas usando Aspose.Words for .
 
 ### Posso dividir vários intervalos de páginas de uma vez?
 
-Sim você pode. Você precisará repetir o processo de extração para cada intervalo necessário e salvá-los como documentos separados.
+Sim, você pode. Você precisará repetir o processo de extração para cada intervalo necessário e salvá-los como documentos separados.
 
 ### E se eu precisar dividir por seções específicas em vez de intervalos de páginas?
 

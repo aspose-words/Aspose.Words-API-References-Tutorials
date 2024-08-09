@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 3: Schrijf de eerste tekst
 
- De ... gebruiken`DocumentBuilder`, schrijven we een eerste tekst in het document. Hiermee wordt de context ingesteld waarin onze hyperlink wordt ingevoegd.
+ Met behulp van de`DocumentBuilder`, schrijven we een eerste tekst in het document. Hiermee wordt de context ingesteld waarin onze hyperlink wordt ingevoegd.
 
 ```csharp
 builder.Write("Please make sure to visit ");

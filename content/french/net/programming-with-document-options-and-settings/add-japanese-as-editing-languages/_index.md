@@ -88,7 +88,7 @@ Ce code vérifie si la langue par défaut d'Extrême-Orient est définie sur le 
 
 ## Conclusion
 
-Et voila! Vous avez ajouté avec succès le japonais comme langue d'édition à votre document à l'aide d'Aspose.Words pour .NET. C'est comme si vous ajoutiez une nouvelle langue à votre carte, ce qui faciliterait la navigation et la compréhension. Que vous ayez affaire à des documents multilingues ou que vous ayez simplement besoin de vous assurer que votre texte est correctement formaté, Aspose.Words est là pour vous. Maintenant, allez-y et explorez le monde de l’automatisation des documents en toute confiance !
+Et voilà ! Vous avez ajouté avec succès le japonais comme langue d'édition à votre document à l'aide d'Aspose.Words pour .NET. C'est comme si vous ajoutiez une nouvelle langue à votre carte, ce qui faciliterait la navigation et la compréhension. Que vous ayez affaire à des documents multilingues ou que vous ayez simplement besoin de vous assurer que votre texte est correctement formaté, Aspose.Words est là pour vous. Maintenant, allez-y et explorez le monde de l’automatisation des documents en toute confiance !
 
 ## FAQ
 
@@ -99,7 +99,7 @@ Et voila! Vous avez ajouté avec succès le japonais comme langue d'édition à 
  Oui, vous avez besoin d'une licence pour un usage commercial. Vous pouvez en acheter un[ici](https://purchase.aspose.com/buy) ou obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
 
 ### Quelles autres fonctionnalités Aspose.Words pour .NET offre-t-il ?
- Aspose.Words for .NET offre un large éventail de fonctionnalités, notamment la génération, la conversion, la manipulation de documents, etc. Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Aspose.Words for .NET offre un large éventail de fonctionnalités, notamment la génération, la conversion, la manipulation de documents, etc. Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Puis-je essayer Aspose.Words pour .NET avant de l’acheter ?
  Absolument! Vous pouvez télécharger un essai gratuit[ici](https://releases.aspose.com/).

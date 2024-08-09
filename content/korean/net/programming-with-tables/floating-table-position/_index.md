@@ -15,7 +15,7 @@ url: /ko/net/programming-with-tables/floating-table-position/
 
 이 흥미진진한 여정을 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인합시다.
 
-1. .NET 라이브러리용 Aspose.Words: 최신 버전이 있는지 확인하세요. 그렇지 않으면,[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1. .NET 라이브러리용 Aspose.Words: 최신 버전이 있는지 확인하세요. 그렇지 않으면,[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. .NET Framework: 개발 환경이 .NET으로 설정되어 있는지 확인하세요.
 3. 개발 환경: Visual Studio 또는 선호하는 IDE.
 4. Word 문서: 표가 포함된 Word 문서를 준비합니다.

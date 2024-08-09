@@ -112,7 +112,7 @@ Son ürünü “JoinAndAppendDocuments.SmartStyleBehavior.docx” olarak belirti
 
 ## Çözüm
 
-Ve orada bunu millet var! Bu adımlarla, Aspose.Words for .NET kullanarak Word belgelerini benzersiz stillerini korurken nasıl birleştireceğinizi öğrendiniz. Artık stil sorunlarına veya biçimlendirme sorunlarına son; yalnızca her zaman pürüzsüz, şık belgeler. İster raporları, teklifleri, ister başka belgeleri birleştiriyor olun, bu yöntem her şeyin doğru görünmesini sağlar.
+Ve işte karşınızda millet! Bu adımlarla, Aspose.Words for .NET kullanarak Word belgelerini benzersiz stillerini korurken nasıl birleştireceğinizi öğrendiniz. Artık stil sorunlarına veya biçimlendirme sorunlarına son; yalnızca her zaman pürüzsüz, şık belgeler. İster raporları, teklifleri, ister başka belgeleri birleştiriyor olun, bu yöntem her şeyin doğru görünmesini sağlar.
 
 ## SSS'ler
 
@@ -128,5 +128,5 @@ Bu seçenek olmadan kaynak belgenin stilleri iyi bir şekilde bütünleşmeyebil
 ### Bu yöntemi farklı dosya formatları için kullanabilir miyim?
 Bu eğitim Word belgelerine (.docx) özeldir. Diğer formatlar için ek adımlara veya farklı yöntemlere ihtiyacınız olabilir.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
  Herhangi bir sorun için şu adresi ziyaret edin:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).

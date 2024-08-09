@@ -49,11 +49,11 @@ Pelajari cara memanipulasi header dan footer di dokumen Word menggunakan Aspose.
 ### [Mengelola Tanda Hubung dan Aliran Teks di Dokumen Word](./document-hyphenation/)
 Pelajari cara mengelola tanda hubung dan aliran teks di dokumen Word menggunakan Aspose.Words untuk Python. Buat dokumen yang bagus dan mudah dibaca dengan contoh langkah demi langkah dan kode sumber. 
 ### [Membuat dan Mengelola Daftar di Dokumen Word](./document-lists/)
-Pelajari cara membuat dan mengelola daftar di dokumen Word menggunakan Aspose.Words Python API. Panduan langkah demi langkah dengan kode sumber untuk pemformatan daftar, penyesuaian, penyusunan, dan banyak lagi. 
+Pelajari cara membuat dan mengelola daftar di dokumen Word menggunakan Aspose.Words Python API. Panduan langkah demi langkah dengan kode sumber untuk pemformatan daftar, penyesuaian, penyusunan susunan, dan banyak lagi. 
 ### [Memanfaatkan Pemformatan Penurunan Harga di Dokumen Word](./document-markdown/)
 Pelajari cara mengintegrasikan pemformatan Markdown ke dalam dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan contoh kode untuk pembuatan konten yang dinamis dan menarik secara visual. 
 ### [Memahami dan Menavigasi Node Dokumen](./document-nodes/)
-Belajar memanipulasi dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah ini mencakup pemuatan, pemformatan, tabel, gambar, dan lainnya. Tingkatkan keterampilan pemrosesan dokumen Anda hari ini!
+Belajar memanipulasi dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah ini mencakup pemuatan, pemformatan, tabel, gambar, dan banyak lagi. Tingkatkan keterampilan pemrosesan dokumen Anda hari ini!
 ### [Menyematkan Objek OLE dan Kontrol ActiveX di Dokumen Word](./document-ole-objects-active-x/)
  Pelajari cara menyematkan objek OLE dan kontrol ActiveX di dokumen Word menggunakan Aspose.Words untuk Python. Buat dokumen interaktif dan dinamis dengan lancar.
 ### [Memformat Paragraf dan Teks di Dokumen Word](./document-paragraphs/)
@@ -61,8 +61,8 @@ Pelajari cara memformat paragraf dan teks dalam dokumen Word menggunakan Aspose.
 ### [Melacak dan Meninjau Revisi Dokumen](./document-revisions/)
 Pelajari cara melacak dan meninjau revisi dokumen menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk kolaborasi yang efisien. Tingkatkan manajemen dokumen Anda hari ini!
 ### [Mengelola Bagian dan Tata Letak Dokumen](./document-sections/)
-Pelajari cara mengelola bagian dan tata letak dokumen dengan Aspose.Words untuk Python. Membuat, memodifikasi bagian, menyesuaikan tata letak, dan banyak lagi. Mulai sekarang! 
+Pelajari cara mengelola bagian dan tata letak dokumen dengan Aspose.Words untuk Python. Membuat, memodifikasi bagian, menyesuaikan tata letak, dan banyak lagi. Mulailah sekarang! 
 ### [Meningkatkan Konten Visual dengan Kotak Teks di Dokumen Word](./document-textboxes/)
 Sempurnakan visual dokumen menggunakan Aspose.Words Python! Pelajari langkah demi langkah cara membuat dan mengkustomisasi kotak teks di dokumen Word. Tingkatkan tata letak, pemformatan, dan gaya konten untuk dokumen yang menarik.
 ### [Membuka Kunci Otomatisasi Tingkat Lanjut dengan Makro VBA di Dokumen Word](./document-vba-macros/)
-Buka otomatisasi tingkat lanjut dalam dokumen Word menggunakan Aspose.Words Python API dan makro VBA. Pelajari langkah demi langkah dengan kode sumber dan FAQ. Tingkatkan produktivitas sekarang. Akses di[Tautan].
+Buka otomatisasi tingkat lanjut dalam dokumen Word menggunakan Aspose.Words Python API dan makro VBA. Pelajari langkah demi langkah dengan kode sumber dan FAQ. Tingkatkan produktivitas sekarang. Akses di[Link].

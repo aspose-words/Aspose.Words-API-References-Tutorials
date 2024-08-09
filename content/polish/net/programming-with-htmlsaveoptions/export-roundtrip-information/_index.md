@@ -15,10 +15,10 @@ Witamy w cudownym świecie Aspose.Words dla .NET! Dzisiaj zagłębiamy się w fa
 
 Zanim przejdziemy do konkretów, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję.[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję.[Pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE zgodne z C#.
 3. Podstawowa znajomość języka C#: Pomocna jest znajomość języka C# i platformy .NET.
-4. Licencja: Możesz użyć licencji tymczasowej, jeśli nie posiadasz pełnej. Zdobyć[Tutaj](https://purchase.aspose.com/temporary-license/).
+4. Licencja: Możesz użyć licencji tymczasowej, jeśli nie posiadasz pełnej. Dostać za swoje[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ## Importuj przestrzenie nazw
 

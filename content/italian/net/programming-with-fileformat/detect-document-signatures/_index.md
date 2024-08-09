@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-fileformat/detect-document-signatures/
 ---
-## introduzione
+## Introduzione
 
 Garantire l'integrità e l'autenticità dei tuoi documenti Word è fondamentale, soprattutto nell'era digitale di oggi. Un modo per raggiungere questo obiettivo è utilizzare le firme digitali. In questo tutorial, approfondiremo come rilevare le firme digitali su un documento Word utilizzando Aspose.Words per .NET. Tratteremo tutto, dalle nozioni di base alla guida passo passo, assicurandoti una comprensione completa alla fine.
 

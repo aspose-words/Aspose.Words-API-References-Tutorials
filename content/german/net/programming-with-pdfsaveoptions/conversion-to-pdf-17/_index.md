@@ -15,7 +15,7 @@ Die Konvertierung von Word-Dokumenten in PDF ist in vielen Bereichen, von der Wi
 
 Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere IDE, die .NET-Entwicklung unterstützt.
 3. Grundkenntnisse in C#: Das Verständnis der Grundlagen hilft Ihnen, den Codeausschnitten zu folgen.
 

@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a dokumentumot
 
- Töltse be a dokumentumot egy Aspose.Words-be`Document` tárgy. Ez a lépés lehetővé teszi, hogy programozottan dolgozzon a dokumentummal.
+ Töltse be a dokumentumot egy Aspose.Words-be`Document` objektum. Ez a lépés lehetővé teszi, hogy programozottan dolgozzon a dokumentummal.
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx");
@@ -138,7 +138,7 @@ A MetafileRenderingOptions olyan beállítások, amelyek meghatározzák, hogy a
 
 ### 4. kérdés: Hol találok támogatást az Aspose.Words számára?
 
- Meglátogatni a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
+ Látogassa meg a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
 
 ### 5. kérdés: Kapható-e ideiglenes licenc az Aspose.Words számára?
 

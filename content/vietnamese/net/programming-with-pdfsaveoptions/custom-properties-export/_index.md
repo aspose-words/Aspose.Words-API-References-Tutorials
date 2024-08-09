@@ -50,7 +50,7 @@ doc.CustomDocumentProperties.Add("Company", "Aspose");
 
 ## Bước 3: Định cấu hình tùy chọn lưu PDF
 
- Bây giờ, hãy định cấu hình các tùy chọn lưu PDF để đảm bảo rằng các thuộc tính tùy chỉnh được bao gồm khi xuất tài liệu. Các`PdfSaveOptions` lớp cung cấp nhiều cài đặt khác nhau để kiểm soát cách lưu tài liệu dưới dạng PDF.
+ Bây giờ, hãy định cấu hình các tùy chọn lưu PDF để đảm bảo rằng các thuộc tính tùy chỉnh được bao gồm khi xuất tài liệu. các`PdfSaveOptions` lớp cung cấp nhiều cài đặt khác nhau để kiểm soát cách lưu tài liệu dưới dạng PDF.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -61,7 +61,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Bước 4: Lưu tài liệu dưới dạng PDF
 
- Cuối cùng, lưu tài liệu dưới dạng PDF trong thư mục được chỉ định. Các`Save` phương pháp này kết hợp tất cả các bước trước đó và tạo ra một tệp PDF có các thuộc tính tùy chỉnh đi kèm.
+ Cuối cùng, lưu tài liệu dưới dạng PDF trong thư mục được chỉ định. các`Save` phương pháp này kết hợp tất cả các bước trước đó và tạo ra một tệp PDF có các thuộc tính tùy chỉnh đi kèm.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);

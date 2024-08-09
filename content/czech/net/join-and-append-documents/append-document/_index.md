@@ -8,20 +8,20 @@ weight: 10
 url: /cs/net/join-and-append-documents/append-document/
 ---
 
-## Úvod
+## Zavedení
 
-Nazdárek! Potřebovali jste někdy spojit dva dokumenty Wordu do jednoho a zachovat původní formátování nedotčené? Ať už sestavujete zprávy, vytváříte rozsáhlou projektovou dokumentaci nebo se jen snažíte zefektivnit správu dokumentů, Aspose.Words pro .NET vám může hodně usnadnit život. V tomto tutoriálu prozkoumáme, jak připojit jeden dokument aplikace Word k jinému pomocí Aspose.Words for .NET, přičemž podrobně rozebereme každý krok. Na konci této příručky budete slučovat dokumenty jako profesionál!
+Ahoj! Potřebovali jste někdy spojit dva dokumenty Wordu do jednoho a zachovat původní formátování nedotčené? Ať už sestavujete zprávy, vytváříte rozsáhlou projektovou dokumentaci nebo se jen snažíte zefektivnit správu dokumentů, Aspose.Words pro .NET vám může hodně usnadnit život. V tomto tutoriálu prozkoumáme, jak připojit jeden dokument aplikace Word k jinému pomocí Aspose.Words for .NET, přičemž podrobně rozebereme každý krok. Na konci této příručky budete slučovat dokumenty jako profesionál!
 
 ## Předpoklady
 
 Než se ponoříme do toho nejnutnějšího, ujistěte se, že máte vše, co potřebujete:
 
 1. Základní znalost C#: Měli byste být spokojeni se syntaxí a koncepty C#.
-2.  Aspose.Words pro .NET: Stáhněte si ji[tady](https://releases.aspose.com/words/net/) . Pokud teprve zkoumáte, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
+2.  Aspose.Words pro .NET: Stáhněte si ji[zde](https://releases.aspose.com/words/net/) . Pokud teprve zkoumáte, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
 3. Visual Studio: Jakákoli nejnovější verze by měla fungovat, ale doporučujeme nejnovější verzi.
 4. .NET Framework: Ujistěte se, že je ve vašem systému nainstalováno.
 
-Máte vše připraveno? Skvělý! Pojďme do toho.
+Máte vše připraveno? Velký! Pojďme do toho.
 
 ## Importovat jmenné prostory
 

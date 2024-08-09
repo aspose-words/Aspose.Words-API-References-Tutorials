@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ## Conclusión
 
-Si sigue estos pasos, habrá creado con éxito una tabla con una sección repetida asignada a una parte XML personalizada utilizando Aspose.Words para .NET. Esto permite la generación de contenido dinámico basado en datos estructurados, lo que hace que la creación de documentos sea más flexible y potente.
+Si sigue estos pasos, habrá creado con éxito una tabla con una sección repetida asignada a una parte XML personalizada utilizando Aspose.Words para .NET. Esto permite la generación de contenido dinámico basado en datos estructurados, lo que hace que la creación de documentos sea más flexible y poderosa.
 
 ## Preguntas frecuentes
 

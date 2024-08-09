@@ -15,7 +15,7 @@ Này! Bạn đã bao giờ tự hỏi làm cách nào để làm cho tài liệu
 
 Trước khi bắt tay vào việc, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
 
-1.  Aspose.Words cho .NET: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words cho .NET: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE nào khác hỗ trợ .NET.
 3. Kiến thức cơ bản về C#: Bạn không cần phải là một chuyên gia, nhưng biết cách sử dụng C# sẽ giúp ích.
 
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã tối ưu hóa tài liệu của mình cho MS Word 2016 bằng Aspose.Words cho .NET. Điều này đảm bảo rằng tài liệu của bạn trông đẹp mắt cho dù khán giả của bạn đang sử dụng phiên bản Word nào. Nó đơn giản và dễ hiểu. Vì vậy, hãy tiếp tục và thử xem! Tài liệu của bạn sẽ cảm ơn bạn.
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã tối ưu hóa tài liệu của mình cho MS Word 2016 bằng Aspose.Words for .NET. Điều này đảm bảo rằng tài liệu của bạn trông đẹp mắt cho dù khán giả của bạn đang sử dụng phiên bản Word nào. Nó đơn giản và dễ hiểu. Vì vậy, hãy tiếp tục và thử xem! Tài liệu của bạn sẽ cảm ơn bạn.
 
 ## Câu hỏi thường gặp
 

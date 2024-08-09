@@ -138,4 +138,4 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 Убедитесь, что путь к файлу правильный и у вас есть права на запись в указанный каталог. Проверьте наличие исключений или ошибок в коде.
 
 ### Где я могу получить поддержку для Aspose.Words?
- Найти поддержку и задать вопросы можно на сайте[Форум Aspose](https://forum.aspose.com/c/words/8).
+ Найти поддержку и задать вопросы можно на сайте[Aspose форум](https://forum.aspose.com/c/words/8).

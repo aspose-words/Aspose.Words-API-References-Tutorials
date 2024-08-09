@@ -75,7 +75,7 @@ In deze zelfstudie hebben we gedemonstreerd hoe u rijeinden op pagina's in een W
  Ja, u kunt rij-einden voor specifieke rijen uitschakelen door naar de gewenste rij te gaan en deze in te stellen`AllowBreakAcrossPages`eigendom aan`false`.
 
 ### Werkt deze methode voor tabellen met samengevoegde cellen?  
- Ja, deze methode werkt voor tabellen met samengevoegde cellen. Het eigendom`AllowBreakAcrossPages` is van toepassing op de hele rij, ongeacht het samenvoegen van cellen.
+ Ja, deze methode werkt voor tabellen met samengevoegde cellen. Het pand`AllowBreakAcrossPages` is van toepassing op de hele rij, ongeacht het samenvoegen van cellen.
 
 ### Werkt deze methode als de tabel in een andere tabel is genest?  
 Ja, u kunt geneste tabellen op dezelfde manier openen en wijzigen. Zorg ervoor dat u op de juiste manier naar de geneste tabel verwijst via de index of andere eigenschappen.

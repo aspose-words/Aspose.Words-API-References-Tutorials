@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
-## introduzione
+## Introduzione
 In questo tutorial imparerai come aggiungere in modo efficiente un sommario (TOC) ai tuoi documenti Word utilizzando Aspose.Words per .NET. Questa funzionalità è essenziale per organizzare e navigare documenti lunghi, migliorare la leggibilità e fornire una rapida panoramica delle sezioni del documento.
 
 ## Prerequisiti
@@ -33,7 +33,7 @@ Suddividiamo il processo in passaggi chiari:
 
 ## Passaggio 1: inizializzare il documento Aspose.Words e DocumentBuilder
 
- Innanzitutto, inizializza un nuovo Aspose.Words`Document` oggetto e a`DocumentBuilder` lavorare con:
+ Innanzitutto, inizializza un nuovo Aspose.Words`Document` oggetto e a`DocumentBuilder` con cui lavorare:
 
 ```csharp
 // Inizializza Document e DocumentBuilder

@@ -51,11 +51,11 @@ Document doc = new Document(dataDir + "Document.docx");
 ```
 
 - `string dataDir = "YOUR DOCUMENT DIRECTORY";` megadja a dokumentumkönyvtár elérési útját.
-- `Document doc = new Document(dataDir + "Document.docx");` betölti a Word dokumentumot a`doc` tárgy.
+- `Document doc = new Document(dataDir + "Document.docx");` betölti a Word dokumentumot a`doc` objektum.
 
 ## 3. lépés: Nyissa meg a szakaszt
 
-Ezután el kell érnünk a dokumentum egy meghatározott részét. Ebben a példában az első szakaszt fogjuk elérni.
+Ezután el kell érnünk a dokumentum egy meghatározott részét. Ebben a példában az első részt fogjuk elérni.
 
 ```csharp
 Section section = doc.Sections[0];
@@ -85,7 +85,7 @@ builder.MoveToSection(0);
 builder.Writeln("New content added to the first section.");
 ```
 
-- `DocumentBuilder builder = new DocumentBuilder(doc);` inicializálja a`DocumentBuilder` tárgy.
+- `DocumentBuilder builder = new DocumentBuilder(doc);` inicializálja a`DocumentBuilder` objektum.
 - `builder.MoveToSection(0);` áthelyezi az építőt az első szakaszba.
 - `builder.Writeln("New content added to the first section.");` új szöveget ad a szakaszhoz.
 

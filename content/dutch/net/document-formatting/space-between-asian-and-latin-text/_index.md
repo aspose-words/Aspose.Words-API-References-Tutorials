@@ -9,7 +9,7 @@ url: /nl/net/document-formatting/space-between-asian-and-latin-text/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit dat frustrerende moment gehad waarop u met een Word-document werkt en de afstand tussen Aziatische en Latijnse tekst er gewoon niet goed uitziet? Het is alsof je puzzelstukjes uit verschillende sets in elkaar probeert te passen, en iedereen wordt er gek van! Maar maak je geen zorgen, ik heb je gedekt. Vandaag duiken we in de wereld van Aspose.Words voor .NET om precies dit probleem aan te pakken. Aan het einde van deze tutorial weet u precies hoe u als een professional de ruimte tussen Aziatische en Latijnse tekst in uw Word-documenten automatisch kunt aanpassen.
+Hé daar! Heeft u ooit dat frustrerende moment gehad waarop u met een Word-document werkt en de afstand tussen Aziatische en Latijnse tekst er gewoon niet goed uitziet? Het is alsof je puzzelstukjes uit verschillende sets in elkaar probeert te passen, en iedereen wordt er gek van! Maar maak je geen zorgen, ik heb je gedekt. Vandaag duiken we in de wereld van Aspose.Words voor .NET om precies dit probleem aan te pakken. Aan het einde van deze tutorial weet u precies hoe u als een professional de ruimte tussen Aziatische en Latijnse tekst in uw Word-documenten automatisch kunt aanpassen.
 
 ## Vereisten
 

@@ -9,7 +9,7 @@ url: /nl/net/join-and-append-documents/append-with-import-format-options/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit meerdere Word-documenten moeten samenvoegen tot één document, maar kwam u vast te zitten met vervelende opmaakproblemen? Wees niet bang! Vandaag duiken we diep in hoe je het ene Word-document aan het andere kunt toevoegen met Aspose.Words voor .NET, terwijl je de opmaak netjes en overzichtelijk houdt. Zet uw gordel vast, want aan het einde van deze handleiding bent u een meester in het samenvoegen van documenten!
+Hé daar! Heeft u ooit meerdere Word-documenten moeten samenvoegen tot één document, maar kwam u vast te zitten met vervelende opmaakproblemen? Vrees niet! Vandaag duiken we diep in hoe je het ene Word-document aan het andere kunt toevoegen met Aspose.Words voor .NET, terwijl je de opmaak netjes en overzichtelijk houdt. Zet uw gordel vast, want aan het einde van deze handleiding bent u een meester in het samenvoegen van documenten!
 
 ## Vereisten
 
@@ -91,7 +91,7 @@ En daar heb je het! Door deze stappen te volgen, kunt u moeiteloos documenten to
 ## Veelgestelde vragen
 
 ### Kan ik de nummering van het doeldocument behouden in plaats van die van de bron?
- Ja, u kunt de`ImportFormatOptions` om dit te behalen.
+ Ja, u kunt de`ImportFormatOptions` om dit te bereiken.
 
 ### Wat moet ik doen als ik Aspose.Words voor .NET niet heb?
  U kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).

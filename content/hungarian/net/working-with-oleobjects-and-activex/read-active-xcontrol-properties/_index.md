@@ -2,106 +2,122 @@
 title: Olvassa el az Active XControl tulajdonságait a Word fájlból
 linktitle: Olvassa el az Active XControl tulajdonságait a Word fájlból
 second_title: Aspose.Words Document Processing API
-description: Olvassa be az ActiveX-vezérlők tulajdonságait egy Word-fájlban az Aspose.Words for .NET segítségével.
+description: A lépésenkénti útmutatóból megtudhatja, hogyan olvashatja ki az ActiveX-vezérlő tulajdonságait Word-fájlokból az Aspose.Words for .NET használatával. Fejlessze dokumentumautomatizálási készségeit.
 type: docs
 weight: 10
 url: /hu/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## Bevezetés
 
-Ebben a lépésenkénti útmutatóban bemutatjuk, hogyan olvashatja be az ActiveX-vezérlők tulajdonságait egy Word-fájlban az Aspose.Words for .NET használatával. Megadjuk Önnek a teljes forráskódot, és megmutatjuk, hogyan kell formázni a markdown kimenetet.
+A mai digitális korban az automatizálás kulcsfontosságú a termelékenység növelésében. Ha ActiveX-vezérlőket tartalmazó Word-dokumentumokkal dolgozik, előfordulhat, hogy különféle célokra el kell olvasnia azok tulajdonságait. Az ActiveX-vezérlők, például a jelölőnégyzetek és a gombok fontos adatokat tárolhatnak. Az Aspose.Words for .NET használatával hatékonyan kinyerheti és programozottan kezelheti ezeket az adatokat.
 
-## 1. lépés: A dokumentum inicializálása
+## Előfeltételek
 
- Az első lépés a`Document` objektumot az ActiveX-vezérlőket tartalmazó Word-dokumentum betöltésével. Feltétlenül cserélje ki`MyDir` a dokumentumot tartalmazó könyvtár tényleges elérési útjával.
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+
+1.  Aspose.Words for .NET Library: Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2. Visual Studio vagy bármely C# IDE: A kód írása és végrehajtása.
+3. Word-dokumentum ActiveX-vezérlőkkel: például "ActiveX-vezérlők.docx".
+4. C# alapismeretek: A C# programozás ismerete szükséges a követéshez.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket az Aspose.Words for .NET használatához.
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## 2. lépés: Az ActiveX-vezérlők helyreállítása
+## 1. lépés: Töltse be a Word-dokumentumot
 
- Ebben a lépésben mindegyiket megismételjük`Shape` dokumentumból az ActiveX-vezérlők lekéréséhez és tulajdonságaik beolvasásához.
+A kezdéshez be kell töltenie az ActiveX-vezérlőket tartalmazó Word-dokumentumot.
+
+```csharp
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## 2. lépés: Inicializáljon egy karakterláncot a tulajdonságok megtartásához
+
+Ezután inicializáljon egy üres karakterláncot az ActiveX-vezérlők tulajdonságainak tárolásához.
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-{
-     if (shape.OleFormat is null) break;
-
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
-
-         properties += "\n";
-     }
-}
-
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-Console.WriteLine("\n" + properties);
 ```
 
-### Példa forráskódra az Active XControl Properties olvasásához az Aspose.Words for .NET használatával
+## 3. lépés: Iteráljon alakzatokon keresztül a dokumentumban
 
-Itt található a teljes forráskód az ActiveX-vezérlők tulajdonságainak olvasásához az Aspose.Words for .NET használatával:
+Az ActiveX-vezérlők megtalálásához a dokumentum összes alakzatát át kell ismételnünk.
 
 ```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        // Az ActiveX-vezérlő feldolgozása
+    }
+}
+```
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+## 4. lépés: A tulajdonságok kibontása az ActiveX-vezérlőkből
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+A cikluson belül ellenőrizze, hogy a vezérlő Forms2OleControl-e. Ha igen, öntse ki, és vonja ki a tulajdonságokat.
 
-			properties += "\n";
-		}
-	}
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
+}
+
+properties += "\n";
+```
+
+## 5. lépés: Számolja meg az összes ActiveX-vezérlőt
+
+Az összes alakzat megismétlése után számolja meg a talált ActiveX-vezérlők teljes számát.
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## 6. lépés: Jelenítse meg a Tulajdonságokat
+
+Végül nyomtassa ki a kibontott tulajdonságokat a konzolra.
+
+```csharp
+Console.WriteLine("\n" + properties);
 ```
 
 ## Következtetés
 
-Ez az útmutató bemutatja, hogyan olvashatja be az ActiveX-vezérlők tulajdonságait Word-fájlban az Aspose.Words for .NET használatával. A leírt lépések követésével inicializálhatja a dokumentumot, lekérheti az ActiveX-vezérlőket, és beolvashatja azok tulajdonságait. Használja kiindulópontként a megadott mintakódot, és szabja testre egyedi igényei szerint.
+És megvan! Sikeresen megtanulta, hogyan olvassa be az ActiveX-vezérlő tulajdonságait egy Word-dokumentumból az Aspose.Words for .NET használatával. Ez az oktatóanyag egy dokumentum betöltését, az alakzatok iterációját és az ActiveX-vezérlők tulajdonságainak kinyerését tárgyalta. Ha követi ezeket a lépéseket, automatizálhatja a fontos adatok kinyerését a Word-dokumentumokból, javítva ezzel a munkafolyamat hatékonyságát.
 
-Az ActiveX-vezérlők tulajdonságainak beolvasása lehetővé teszi, hogy fontos információkat nyerjen ki az ezeket a vezérlőket tartalmazó Word-fájlokból. Az Aspose.Words for .NET hatékony szolgáltatásokat kínál az ActiveX-vezérlőkkel rendelkező szövegfeldolgozáshoz és a dokumentumfeldolgozás automatizálásához.
+## GYIK
 
-### GYIK
+### Mik azok az ActiveX-vezérlők a Word dokumentumokban?
+Az ActiveX-vezérlők Word dokumentumokba ágyazott interaktív objektumok, például jelölőnégyzetek, gombok és szövegmezők, amelyeket űrlapok létrehozására és feladatok automatizálására használnak.
 
-#### K: Mi az első lépés az ActiveX-vezérlők tulajdonságainak beolvasásához egy Word-fájlban?
+### Módosíthatom az ActiveX-vezérlők tulajdonságait az Aspose.Words for .NET használatával?
+Igen, az Aspose.Words for .NET lehetővé teszi az ActiveX-vezérlők tulajdonságainak programozott módosítását.
 
- V: Az első lépés a`Document` objektumot az ActiveX-vezérlőket tartalmazó Word-dokumentum betöltésével. Feltétlenül cserélje ki`MyDir` a dokumentumot tartalmazó könyvtár tényleges elérési útjával.
+### Ingyenesen használható az Aspose.Words for .NET?
+ Az Aspose.Words for .NET ingyenes próbaverziót kínál, de a további használathoz licencet kell vásárolnia. Ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).
 
-#### K: Hogyan tölthetek be ActiveX-vezérlőket a dokumentumba?
+### Használhatom az Aspose.Words for .NET-et a C#-on kívül más .NET-nyelvekkel is?
+Igen, az Aspose.Words for .NET bármely .NET nyelvvel használható, beleértve a VB.NET-et és az F#-ot is.
 
- V: Az ActiveX-vezérlők lekéréséhez mindegyiket ismételnie kell`Shape` dokumentumot, és ellenőrizze, hogy az ActiveX-vezérlő-e. Használja a`OleFormat` tulajdona`Shape` hozzáférni a`OleControl` objektumot és lekérni a szükséges tulajdonságokat.
-
-#### K: Az ActiveX-vezérlők milyen tulajdonságait olvashatom?
-
-V: Elolvashatja az ActiveX-vezérlők különféle tulajdonságait, például a feliratot, az értéket, az engedélyezett vagy letiltott állapotot, a típust és a vezérlőhöz társított gyermekcsomópontokat.
-
-#### K: Hogyan tudhatom meg a dokumentumban található ActiveX-vezérlők teljes számát?
-
- V: A dokumentumban található ActiveX-vezérlők teljes számának megtekintéséhez használja a`GetChildNodes` módszere a`Document` objektum megadja a`NodeType.Shape` típusát és a gyermek csomópontokat is beleértve.
+### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
+ Részletes dokumentációt találhat[itt](https://reference.aspose.com/words/net/).

@@ -9,13 +9,13 @@ url: /pl/net/apply-license/apply-license-from-stream/
 ---
 ## Wstęp
 
-Hej, drodzy koderzy! Jeśli nurkujesz w świecie Aspose.Words dla .NET, jedną z pierwszych rzeczy, które musisz zrobić, jest zastosowanie licencji, aby odblokować pełny potencjał biblioteki. W tym przewodniku przeprowadzimy Cię przez proces stosowania licencji ze strumienia. Zaufaj mi, jest to łatwiejsze niż się wydaje, a pod koniec tego samouczka Twoja aplikacja będzie działać sprawnie. Gotowy żeby zacząć? Wskoczmy od razu!
+Hej, drodzy koderzy! Jeśli nurkujesz w świecie Aspose.Words dla .NET, jedną z pierwszych rzeczy, które musisz zrobić, jest zastosowanie licencji, aby odblokować pełny potencjał biblioteki. W tym przewodniku przeprowadzimy Cię przez proces stosowania licencji ze strumienia. Zaufaj mi, jest to łatwiejsze niż się wydaje, a pod koniec tego samouczka Twoja aplikacja będzie działać sprawnie. Gotowy, aby zacząć? Wskoczmy od razu!
 
 ## Warunki wstępne
 
 Zanim ubrudzimy sobie ręce, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2.  Plik licencji: Potrzebujesz ważnego pliku licencji. Jeśli go nie masz, możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do celów testowych.
 3. Podstawowa znajomość języka C#: Zakłada się podstawową wiedzę na temat programowania w języku C#.
 

@@ -110,4 +110,4 @@ Sim, Aspose.Words oferece suporte a vários tipos de campo, incluindo datas e ca
 
 ### Onde posso encontrar mais informações ou obter ajuda se tiver problemas?
 
- Para documentação detalhada e suporte, visite o[Aspor Documentação](https://reference.aspose.com/words/net/) e a[Fórum de suporte Aspose](https://forum.aspose.com/c/words/8).
+ Para documentação detalhada e suporte, visite o[Aspor Documentação](https://reference.aspose.com/words/net/) e o[Fórum de suporte Aspose](https://forum.aspose.com/c/words/8).

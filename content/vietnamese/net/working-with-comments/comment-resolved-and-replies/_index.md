@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Comments.docx");
 
 ## Bước 2: Truy xuất bình luận
 
- Tiếp theo, chúng ta cần lấy tất cả các bình luận trong tài liệu. Chúng tôi sẽ sử dụng`GetChildNodes` phương pháp để lấy một bộ sưu tập`Comment` điểm giao.
+ Tiếp theo, chúng ta cần lấy tất cả các bình luận trong tài liệu. Chúng tôi sẽ sử dụng`GetChildNodes` phương pháp để lấy một bộ sưu tập`Comment` nút.
 
 ```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);

@@ -15,7 +15,7 @@ Reduzir o tamanho dos arquivos PDF pode ser crucial para um armazenamento eficie
 
 Antes de mergulhar no código, certifique-se de ter o seguinte:
 
--  Aspose.Words for .NET: Se ainda não o fez, baixe e instale-o no[Link para Download](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Se ainda não o fez, baixe e instale-o no[Baixar link](https://releases.aspose.com/words/net/).
 - Um ambiente de desenvolvimento .NET: o Visual Studio é uma escolha popular.
 - Um exemplo de documento do Word: tenha um arquivo DOCX pronto que deseja converter em PDF.
 
@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Definindo`FontEmbeddingMode` para`EmbedNone`, instruímos o Aspose.Words a não incluir essas fontes no PDF, reduzindo o tamanho do arquivo.
+ Ao definir`FontEmbeddingMode` para`EmbedNone`, instruímos o Aspose.Words a não incluir essas fontes no PDF, reduzindo o tamanho do arquivo.
 
 ## Etapa 3: salve o documento como PDF
 

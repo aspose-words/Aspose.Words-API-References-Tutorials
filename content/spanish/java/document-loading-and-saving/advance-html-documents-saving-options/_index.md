@@ -65,7 +65,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```
 
 ## 6. Convertir metarchivos a SVG
- Utilizar el`convertMetafilesToSvg` Método para convertir metarchivos al formato SVG. Este formato es ideal para mostrar gráficos vectoriales en documentos HTML.
+ Utilice el`convertMetafilesToSvg` Método para convertir metarchivos al formato SVG. Este formato es ideal para mostrar gráficos vectoriales en documentos HTML.
 
 ```java
 @Test

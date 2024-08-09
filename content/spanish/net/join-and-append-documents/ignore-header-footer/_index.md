@@ -73,7 +73,7 @@ Aquí está el código para configurar las opciones de importación:
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
- Configurando`IgnoreHeaderFooter` a`true`, le estamos diciendo a Aspose.Words que ignore los encabezados y pies de página durante el proceso de fusión.
+ Al configurar`IgnoreHeaderFooter` a`true`, le estamos diciendo a Aspose.Words que ignore los encabezados y pies de página durante el proceso de fusión.
 
 ## Paso 4: fusionar los documentos
 
@@ -117,12 +117,12 @@ Sí, Aspose.Words ofrece varias opciones para personalizar el proceso de importa
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?
 
- Sí, Aspose.Words para .NET es un producto comercial. Puedes conseguir un[prueba gratis](https://releases.aspose.com/) o comprar una licencia[aquí](https://purchase.aspose.com/buy).
+ Sí, Aspose.Words para .NET es un producto comercial. Puedes conseguir un[prueba gratuita](https://releases.aspose.com/) o comprar una licencia[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Puedo fusionar más de dos documentos usando este método?
 
  Sí, puede agregar varios documentos en un bucle repitiendo el`AppendDocument` método para cada documento adicional.
 
-### ¿Dónde puedo encontrar más ejemplos y documentación de Aspose.Words para .NET?
+### ¿Dónde puedo encontrar más ejemplos y documentación para Aspose.Words para .NET?
 
  Puede encontrar documentación completa y ejemplos en el[Aspose sitio web](https://reference.aspose.com/words/net/).

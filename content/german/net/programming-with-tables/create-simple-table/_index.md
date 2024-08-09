@@ -105,7 +105,7 @@ builder.EndTable();
 
 ## Schritt 9: Speichern Sie das Dokument
 
- Zum Schluss speichern wir das Dokument im angegebenen Verzeichnis mit dem`Save` Methode.
+ Zum Schluss speichern wir das Dokument im angegebenen Verzeichnis mit dem`Save` Verfahren.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
@@ -127,7 +127,7 @@ Ja, Aspose.Words für .NET unterstützt verschiedene Programmiersprachen, die au
  Ja, Sie können eine kostenlose Testversion herunterladen von[Hier](https://releases.aspose.com/).
 
 ### Wie erhalte ich Support für Aspose.Words für .NET?
- Sie können Unterstützung erhalten, indem Sie die Aspose.Words besuchen[Hilfeforum](https://forum.aspose.com/c/words/8).
+ Sie können Unterstützung erhalten, indem Sie die Aspose.Words besuchen[Support-Forum](https://forum.aspose.com/c/words/8).
 
 ### Wo finde ich ausführlichere Dokumentation für Aspose.Words für .NET?
  Detaillierte Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/).

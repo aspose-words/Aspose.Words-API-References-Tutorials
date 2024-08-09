@@ -239,7 +239,7 @@ HandleMergeField 클래스의 소스 코드
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // 아무것도하지 마세요.
+            // 아무것도 하지 마세요.
         }
         /// <요약>
         /// 메일 병합 엔진이 문서에서 Image:XXX 병합 필드를 발견하면 호출됩니다.
@@ -320,7 +320,7 @@ HandleMergeField 클래스의 소스 코드
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // 아무것도하지 마세요.
+            // 아무것도 하지 마세요.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

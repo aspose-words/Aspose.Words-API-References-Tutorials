@@ -62,7 +62,7 @@ Shape textBox = builder.InsertShape(ShapeType.TextBox, 200, 200);
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
- ในกรณีนี้,`TextBoxAnchor.Bottom`ตรวจสอบให้แน่ใจว่าข้อความจะถูกยึดไว้ที่ด้านล่างของกล่องข้อความ หากคุณต้องการให้อยู่กึ่งกลางหรือจัดชิดด้านบน คุณจะใช้`TextBoxAnchor.Center` หรือ`TextBoxAnchor.Top`ตามลำดับ
+ ในกรณีนี้`TextBoxAnchor.Bottom`ตรวจสอบให้แน่ใจว่าข้อความจะถูกยึดไว้ที่ด้านล่างของกล่องข้อความ หากคุณต้องการให้อยู่กึ่งกลางหรือจัดชิดด้านบน คุณจะใช้`TextBoxAnchor.Center` หรือ`TextBoxAnchor.Top`ตามลำดับ
 
 ## ขั้นตอนที่ 4: เพิ่มข้อความลงในกล่องข้อความ
 

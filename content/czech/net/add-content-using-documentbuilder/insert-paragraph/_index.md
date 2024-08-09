@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-paragraph/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v naší komplexní příručce o používání Aspose.Words pro .NET k programovému vkládání odstavců do dokumentů aplikace Word. Ať už jste zkušený vývojář nebo s manipulací s dokumenty v .NET teprve začínáte, tento tutoriál vás provede procesem s jasnými, podrobnými pokyny a příklady.
 
@@ -16,7 +16,7 @@ Vítejte v naší komplexní příručce o používání Aspose.Words pro .NET k
 Než se ponoříte do výukového programu, ujistěte se, že máte následující předpoklady:
 - Základní znalost programování v C# a .NET frameworku.
 - Visual Studio nainstalované na vašem počítači.
--  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 
 ## Importovat jmenné prostory
 
@@ -56,7 +56,7 @@ paragraphFormat.KeepTogether = true;
 
 ## Krok 3: Vložte odstavec
 
- Nyní přidejte požadovaný obsah pomocí`WriteLn` metoda`DocumentBuilder`.
+ Nyní přidejte požadovaný obsah pomocí`WriteLn` způsob`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
@@ -70,7 +70,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste vložili formátovaný odstavec do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento proces vám umožňuje dynamicky generovat bohatý obsah přizpůsobený potřebám vaší aplikace.
+Gratuluji! Úspěšně jste vložili formátovaný odstavec do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento proces vám umožňuje dynamicky generovat bohatý obsah přizpůsobený potřebám vaší aplikace.
 
 ## FAQ
 
@@ -78,7 +78,7 @@ Gratulujeme! Úspěšně jste vložili formátovaný odstavec do dokumentu aplik
 Ano, Aspose.Words for .NET podporuje aplikace .NET Core spolu s .NET Framework.
 
 ### Jak mohu získat dočasnou licenci pro Aspose.Words pro .NET?
- Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
+ Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Je Aspose.Words for .NET kompatibilní s verzemi Microsoft Word?
 Ano, Aspose.Words for .NET zajišťuje kompatibilitu s různými verzemi Microsoft Word, včetně nejnovějších verzí.

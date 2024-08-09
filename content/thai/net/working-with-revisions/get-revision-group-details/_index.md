@@ -2,104 +2,108 @@
 title: รับรายละเอียดกลุ่มการแก้ไข
 linktitle: รับรายละเอียดกลุ่มการแก้ไข
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: รับรายละเอียดกลุ่มการแก้ไขในเอกสาร Word ด้วย Aspose.Words for .NET
+description: รับรายละเอียดกลุ่มการแก้ไขในเอกสาร Word ได้อย่างง่ายดายโดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้ เหมาะสำหรับนักพัฒนา .NET
 type: docs
 weight: 10
 url: /th/net/working-with-revisions/get-revision-group-details/
 ---
+## การแนะนำ
 
-ในคำแนะนำทีละขั้นตอนนี้ เราจะแสดงวิธีรับรายละเอียดกลุ่มการแก้ไขในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เราจะจัดเตรียมซอร์สโค้ดที่สมบูรณ์ให้กับคุณ และแสดงวิธีจัดรูปแบบเอาต์พุตมาร์กดาวน์
+เคยพบว่าตัวเองจำเป็นต้องเจาะลึกรายละเอียดสำคัญของการแก้ไขในเอกสาร Word หรือไม่? บางทีคุณอาจกำลังทำงานร่วมกันในโครงการและคุณต้องติดตามการเปลี่ยนแปลงอย่างพิถีพิถัน เตรียมตัวให้พร้อมเพราะเรากำลังจะเข้าสู่บทช่วยสอนที่ยอดเยี่ยมเกี่ยวกับวิธีรับรายละเอียดกลุ่มการแก้ไขโดยใช้ Aspose.Words สำหรับ .NET ในตอนท้ายของคู่มือนี้ คุณจะเป็นมืออาชีพในการแยกและแสดงรายละเอียดการแก้ไข ทำให้การจัดการเอกสารของคุณเป็นเรื่องง่าย
 
-## ขั้นตอนที่ 1: กำลังโหลดเอกสาร
+## ข้อกำหนดเบื้องต้น
 
-ขั้นตอนแรกคือการอัปโหลดเอกสารที่มีการแก้ไข
+ก่อนที่เราจะเริ่มการเดินทางเขียนโค้ดนี้ เรามาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
+-  Aspose.Words สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งเวอร์ชันล่าสุดแล้ว ถ้าไม่คุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/words/net/).
+- สภาพแวดล้อม .NET: ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อมการพัฒนา .NET ที่ใช้งานได้ Visual Studio เป็นตัวเลือกที่ยอดเยี่ยม
+- เอกสาร Word พร้อมการแก้ไข: สำหรับบทช่วยสอนนี้ เราจะใช้เอกสาร Word ตัวอย่างพร้อมการแก้ไข (`Revisions.docx`-
+
+## นำเข้าเนมสเปซ
+
+ก่อนอื่น มานำเข้าเนมสเปซที่จำเป็นในโครงการของคุณกันก่อน นี่เป็นสิ่งสำคัญในการเข้าถึงฟังก์ชัน Aspose.Words
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using System;
 ```
 
-## ขั้นตอนที่ 2: เรียกดูการแก้ไข
+เอาล่ะ เรามาแจกแจงรายละเอียดนี้ทีละขั้นตอนกันดีกว่า แต่ละขั้นตอนจะแนะนำคุณตลอดกระบวนการรับรายละเอียดกลุ่มการแก้ไขโดยใช้ Aspose.Words สำหรับ .NET
 
-ต่อไป เราจะวนดูการแก้ไขที่มีอยู่ในเอกสารและแสดงรายละเอียด เช่น ประเภท ผู้แต่ง วันที่ และข้อความที่แก้ไข
+## ขั้นตอนที่ 1: โหลดเอกสาร Word
+
+ขั้นตอนแรกคือการโหลดเอกสาร Word ของคุณ นี่คือที่จัดเก็บการแก้ไขของคุณ
+
+```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสาร
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ ในตัวอย่างนี้ ให้แทนที่`"YOUR DOCUMENT DIRECTORY"` พร้อมเส้นทางจริงไปยังเอกสารของคุณ รหัสนี้จะโหลดไฟล์`Revisions.docx` ไฟล์ลงใน`doc` วัตถุ.
+
+## ขั้นตอนที่ 2: เข้าถึงคอลเลกชันการแก้ไข
+
+ ตอนนี้เรามาดูการแก้ไขในเอกสารกันดีกว่า Aspose.Words ให้`Revisions` คอลเลกชันที่เราสามารถทำซ้ำได้
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     string groupText = revision.Group != null
-         ? "Revision group text: " + revision.Group.Text
-         : "The revision does not belong to any group";
-
-     Console.WriteLine("Type: " + revision.RevisionType);
-     Console.WriteLine("Author: " + revision.Author);
-     Console.WriteLine("Date: " + revision.DateTime);
-     Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-     Console.WriteLine(groupText);
+    // ดำเนินการแก้ไขแต่ละครั้ง
 }
 ```
 
+การวนซ้ำนี้จะผ่านการแก้ไขแต่ละครั้งในเอกสาร เพื่อให้เราสามารถแยกรายละเอียดได้
 
-### ตัวอย่างซอร์สโค้ดสำหรับรับรายละเอียดกลุ่มการแก้ไขโดยใช้ Aspose.Words สำหรับ .NET
+## ขั้นตอนที่ 3: แยกรายละเอียดการแก้ไข
 
-นี่คือซอร์สโค้ดที่สมบูรณ์เพื่อรับรายละเอียดกลุ่มการแก้ไขในเอกสารโดยใช้ Aspose.Words สำหรับ .NET:
+ภายในลูป เราสามารถแยกรายละเอียดต่างๆ เกี่ยวกับการแก้ไขแต่ละครั้งได้ เช่น ประเภท ผู้แต่ง วันที่ และข้อความ
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
 foreach (Revision revision in doc.Revisions)
 {
-	 string groupText = revision.Group != null
-		 ? "Revision group text: " + revision.Group.Text
-		 : "The revision does not belong to any group";
-
-	 Console.WriteLine("Type: " + revision.RevisionType);
-	 Console.WriteLine("Author: " + revision.Author);
-	 Console.WriteLine("Date: " + revision.DateTime);
-	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-	 Console.WriteLine(groupText);
+    Console.WriteLine("Type: " + revision.RevisionType);
+    Console.WriteLine("Author: " + revision.Author);
+    Console.WriteLine("Date: " + revision.DateTime);
+    Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
 }
 ```
+
+รหัสนี้จะพิมพ์ประเภทการแก้ไข ผู้เขียน วันที่ และข้อความไปยังคอนโซล
+
+## ขั้นตอนที่ 4: ตรวจสอบกลุ่มการแก้ไข
+
+บางครั้ง การแก้ไขจะถูกจัดกลุ่มไว้ เราจำเป็นต้องตรวจสอบว่าการแก้ไขเป็นของกลุ่มหรือไม่ และแสดงข้อความของกลุ่มหากมี
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+    string groupText = revision.Group != null
+        ? "Revision group text: " + revision.Group.Text
+        : "The revision does not belong to any group";
+
+    Console.WriteLine(groupText);
+}
+```
+
+ตัวอย่างนี้จะพิมพ์ข้อความกลุ่มหากการแก้ไขเป็นส่วนหนึ่งของกลุ่มหรือระบุว่าไม่ได้อยู่ในกลุ่มใดๆ
 
 ## บทสรุป
 
-ในบทช่วยสอนนี้ เราได้เรียนรู้วิธีรับรายละเอียดกลุ่มการแก้ไขในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ด้วยการใช้ลูปและคุณสมบัติที่เหมาะสม เราสามารถแสดงรายละเอียด เช่น ประเภทการแก้ไข ผู้แต่ง วันที่ และข้อความที่แก้ไข Aspose.Words สำหรับ .NET นำเสนอคุณสมบัติที่มีประสิทธิภาพมากมายสำหรับการจัดการเอกสาร Word รวมถึงการจัดการการแก้ไข ตอนนี้คุณสามารถใช้ความรู้นี้เพื่อรับรายละเอียดกลุ่มการแก้ไขลงในเอกสาร Word ของคุณเองโดยใช้ Aspose.Words สำหรับ .NET
+และคุณก็ได้แล้ว! เมื่อทำตามขั้นตอนเหล่านี้ คุณจะสามารถรับข้อมูลโดยละเอียดเกี่ยวกับการแก้ไขในเอกสาร Word ได้อย่างง่ายดายโดยใช้ Aspose.Words for .NET เครื่องมืออันทรงพลังนี้ทำให้การจัดการและติดตามการเปลี่ยนแปลงเป็นเรื่องง่าย ทำให้มั่นใจได้ว่าโครงการความร่วมมือของคุณจะดำเนินไปอย่างราบรื่น
 
-### คำถามที่พบบ่อย
+## คำถามที่พบบ่อย
 
-#### ถาม: ฉันจะโหลดเอกสารที่มีการแก้ไขลงใน Aspose.Words สำหรับ .NET ได้อย่างไร
+### Aspose.Words สำหรับ .NET คืออะไร
+เป็นไลบรารี .NET ที่ทรงพลังสำหรับการสร้าง แก้ไข แปลง และพิมพ์เอกสาร Word โดยทางโปรแกรม
 
- ตอบ: ใช้`Document` คลาสของ Aspose.Words สำหรับ .NET เพื่อโหลดเอกสารจากไฟล์ที่มีการแก้ไข คุณสามารถระบุเส้นทางเอกสารแบบเต็มได้
+### ฉันสามารถใช้ Aspose.Words สำหรับ .NET กับภาษา .NET อื่นได้หรือไม่
+อย่างแน่นอน! คุณสามารถใช้กับภาษา .NET ใดก็ได้ รวมถึง C#, VB.NET และ ASP.NET
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### ฉันจะทดลองใช้ Aspose.Words สำหรับ .NET ฟรีได้อย่างไร
+ คุณสามารถทดลองใช้ฟรีได้[ที่นี่](https://releases.aspose.com/).
 
-#### ถาม: ฉันจะรับรายละเอียดของกลุ่มการแก้ไขใน Aspose.Words สำหรับ .NET ได้อย่างไร
+### ฉันต้องมีใบอนุญาตเพื่อใช้ Aspose.Words สำหรับ .NET หรือไม่
+ ใช่ Aspose.Words สำหรับ .NET จำเป็นต้องมีใบอนุญาตสำหรับการใช้งานเต็มรูปแบบ คุณสามารถซื้อได้[ที่นี่](https://purchase.aspose.com/buy) หรือได้รับใบอนุญาตชั่วคราว[ที่นี่](https://purchase.aspose.com/temporary-license/).
 
-ตอบ: ดำเนินการแก้ไขเอกสารโดยใช้การวนซ้ำและเข้าถึงคุณสมบัติของการแก้ไขแต่ละครั้งเพื่อดูรายละเอียดที่คุณต้องการ คุณสามารถใช้`RevisionType`, `Author`, `DateTime`และ`ParentNode` คุณสมบัติเพื่อรับประเภทการแก้ไข ผู้แต่ง วันที่ และข้อความที่แก้ไขตามลำดับ
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-      Console.WriteLine("Type: " + revision.RevisionType
-
-);
-      Console.WriteLine("Author: " + revision.Author);
-      Console.WriteLine("Date: " + revision.DateTime);
-      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-}
-```
-
-#### ถาม: จะตรวจสอบได้อย่างไรว่าการแก้ไขอยู่ในกลุ่มใน Aspose.Words for .NET หรือไม่
-
- ตอบ: ใช้`Group` ทรัพย์สินของ`Revision` วัตถุเพื่อตรวจสอบว่าการแก้ไขเป็นของกลุ่มหรือไม่ ถ้า`Group` ทรัพย์สินคือ`null`หมายความว่าการแก้ไขนั้นไม่ได้อยู่ในกลุ่มใดๆ
-
-```csharp
-if (revision.Group != null)
-{
-      // การแก้ไขเป็นของกลุ่ม
-}
-else
-{
-      // การแก้ไขไม่ได้เป็นของกลุ่มใด ๆ
-}
-```
+### ฉันจะหาเอกสารเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+ มีเอกสารรายละเอียดให้[ที่นี่](https://reference.aspose.com/words/net/).

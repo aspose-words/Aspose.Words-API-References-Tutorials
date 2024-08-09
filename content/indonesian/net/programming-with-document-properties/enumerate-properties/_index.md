@@ -15,7 +15,7 @@ Ingin bekerja dengan dokumen Word secara terprogram? Aspose.Words for .NET adala
 
 Sebelum kita mendalami tutorialnya, ada beberapa hal yang Anda perlukan untuk memulai:
 
--  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Visual Studio direkomendasikan, tetapi Anda dapat menggunakan C# IDE apa pun.
 - Pengetahuan Dasar tentang C#: Pemahaman mendasar tentang C# akan membantu Anda mengikutinya.
 
@@ -79,7 +79,7 @@ foreach (DocumentProperty prop in doc.BuiltInDocumentProperties)
 
 ## Langkah 6: Hitung Properti Kustom
 
-Properti khusus adalah properti metadata yang ditentukan pengguna. Ini bisa berupa apa pun yang ingin Anda tambahkan ke dokumen Anda.
+Properti khusus adalah properti metadata yang ditentukan pengguna. Ini bisa berupa apa saja yang ingin Anda tambahkan ke dokumen Anda.
 
 1.  Akses Properti Kustom: Gunakan`CustomDocumentProperties` koleksi.
 2. Loop Through Properties: Ulangi properti dan tampilkan nama dan nilainya.

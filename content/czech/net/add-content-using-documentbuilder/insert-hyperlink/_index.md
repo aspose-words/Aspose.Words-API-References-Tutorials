@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-hyperlink/
 ---
-## Úvod
+## Zavedení
 
 Vytváření a správa dokumentů aplikace Word je základním úkolem mnoha aplikací. Ať už se jedná o generování sestav, vytváření šablon nebo automatizaci tvorby dokumentů, Aspose.Words for .NET nabízí robustní řešení. Dnes se vrhneme na praktický příklad: vkládání hypertextových odkazů do dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Napište počáteční text
 
- Za použití`DocumentBuilder`, napíšeme do dokumentu nějaký počáteční text. Tím se nastaví kontext, do kterého bude náš hypertextový odkaz vložen.
+ Pomocí`DocumentBuilder`, napíšeme do dokumentu nějaký počáteční text. Tím se nastaví kontext, do kterého bude náš hypertextový odkaz vložen.
 
 ```csharp
 builder.Write("Please make sure to visit ");
@@ -114,7 +114,7 @@ Vkládání hypertextových odkazů do dokumentu aplikace Word pomocí Aspose.Wo
 
 ### Mohu k obrázku přidat hypertextový odkaz?
 
- Ano, můžete použít`InsertHyperlink` metoda v kombinaci s`InsertImage` pro přidání hypertextových odkazů k obrázkům.
+ Ano, můžete použít`InsertHyperlink` metoda v kombinaci s`InsertImage` přidat hypertextové odkazy na obrázky.
 
 ### Co se stane, když je adresa URL neplatná?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-shapes/layout-in-cell/
 ---
-## introduzione
+## Introduzione
 
 Se hai sempre desiderato ottimizzare a livello di programmazione il layout delle celle della tabella nei documenti di Word, sei nel posto giusto. Oggi approfondiremo come impostare il layout nella cella utilizzando Aspose.Words per .NET. Esamineremo un esempio pratico, analizzandolo passo dopo passo in modo che tu possa seguirlo facilmente.
 
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai creato con successo un documento Word con un layout di tabella personalizzato e aggiunto una filigrana utilizzando Aspose.Words per .NET. Questo tutorial mirava a fornire una guida chiara e passo passo per aiutarti a comprendere ogni parte del processo. Con queste competenze, ora puoi creare documenti Word più sofisticati e personalizzati a livello di programmazione.
+Ed ecco qua! Hai creato con successo un documento Word con un layout di tabella personalizzato e aggiunto una filigrana utilizzando Aspose.Words per .NET. Questo tutorial mirava a fornire una guida chiara e passo passo per aiutarti a comprendere ogni parte del processo. Con queste competenze, ora puoi creare documenti Word più sofisticati e personalizzati a livello di codice.
 
 ## Domande frequenti
 
@@ -140,7 +140,7 @@ E il gioco è fatto! Hai creato con successo un documento Word con un layout di 
 ### È possibile utilizzare un'immagine invece del testo per la filigrana?
  Assolutamente! Puoi creare un file`Shape` con il tipo`ShapeType.Image` e impostarne l'immagine utilizzando il file`ImageData.SetImage` metodo.
 
-### Posso creare tabelle con altezze di riga diverse?
+### Posso creare tabelle con altezze di riga variabili?
 Sì, puoi impostare altezze diverse per ogni riga modificando il file`RowFormat.Height` proprietà prima di inserire le celle in quella riga.
 
 ### Come rimuovo una filigrana dal documento?

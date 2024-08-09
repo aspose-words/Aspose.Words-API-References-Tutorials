@@ -106,7 +106,7 @@ HarfBuzz は、OpenType 機能を強力にサポートし、ドキュメント�
 はい、Aspose.Words はさまざまなテキスト シェーピング エンジンをサポートしています。ただし、包括的な OpenType 機能のサポートにより、HarfBuzz を強くお勧めします。
 
 ### Aspose.Words はすべての .NET バージョンと互換性がありますか?
- Aspose.Wordsは、.NET Framework、.NET Core、.NET Standardなど、さまざまな.NETバージョンをサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細な互換性情報については、こちらをご覧ください。
+ Aspose.Wordsは、.NET Framework、.NET Core、.NET Standardなど、さまざまな.NETバージョンをサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)詳細な互換性情報については、こちらをご覧ください。
 
 ### 購入前に Aspose.Words を試すにはどうすればいいですか?
 無料トライアルは以下からダウンロードできます。[Aspose ウェブサイト](https://releases.aspose.com/)一時ライセンスを申請する[ここ](https://purchase.aspose.com/temporary-license/).

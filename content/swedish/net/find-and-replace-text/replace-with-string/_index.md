@@ -10,7 +10,7 @@ url: /sv/net/find-and-replace-text/replace-with-string/
 
 ## Introduktion
 
-Hallå där! Har du någonsin hamnat i knä djupt i ett Word-dokument och behövt ersätta vissa ord eller fraser? Du är inte ensam. Oavsett om det handlar om att uppdatera termer, korrigera misstag eller helt enkelt piffa upp ditt innehåll, är det avgörande att veta hur man effektivt hittar och ersätter text i ett dokument. Idag dyker vi in i den underbara världen av Aspose.Words för .NET för att visa dig hur du ersätter strängar i dina Word-dokument som ett proffs.
+Hej där! Har du någonsin hamnat i knä djupt i ett Word-dokument och behövt ersätta vissa ord eller fraser? Du är inte ensam. Oavsett om det handlar om att uppdatera termer, korrigera misstag eller helt enkelt piffa upp ditt innehåll, är det avgörande att veta hur man effektivt hittar och ersätter text i ett dokument. Idag dyker vi in i den underbara världen av Aspose.Words för .NET för att visa dig hur du ersätter strängar i dina Word-dokument som ett proffs.
 
 ## Förutsättningar
 
@@ -40,7 +40,7 @@ Till att börja med behöver vi en katalog där våra dokument kommer att finnas
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din dokumentkatalog. Detta är hemmabasen för våra filer.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din dokumentkatalog. Detta är hemmabasen för våra filer.
 
 ## Steg 2: Initiera Document and Builder
 

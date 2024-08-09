@@ -15,7 +15,7 @@ url: /ar/net/clone-and-combine-documents/insert-document-at-mail-merge/
 
 قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-1.  Aspose.Words لـ .NET: يمكنك ذلك[تحميل أحدث نسخة هنا](https://releases.aspose.com/words/net/) . إذا كنت بحاجة إلى شراء ترخيص، يمكنك القيام بذلك[هنا](https://purchase.aspose.com/buy) . وبدلاً من ذلك، يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) أو جربه مع[تجربة مجانية](https://releases.aspose.com/).
+1.  Aspose.Words لـ .NET: يمكنك ذلك[قم بتنزيل أحدث إصدار هنا](https://releases.aspose.com/words/net/) . إذا كنت بحاجة إلى شراء ترخيص، يمكنك القيام بذلك[هنا](https://purchase.aspose.com/buy) . وبدلاً من ذلك، يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) أو جربه مع[تجربة مجانية](https://releases.aspose.com/).
 2. بيئة التطوير: Visual Studio أو أي C# IDE آخر.
 3. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيجعل هذا البرنامج التعليمي سهلاً.
 
@@ -58,7 +58,7 @@ mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 
 ## الخطوة 4: تنفيذ دمج المراسلات
 
-حان الوقت الآن لتنفيذ عملية دمج البريد. هذا هو المكان الذي يحدث السحر. ستحدد حقل الدمج والمستند الذي يجب إدراجه في هذا الحقل.
+حان الوقت الآن لتنفيذ عملية دمج البريد. هذا هو المكان الذي يحدث فيه السحر. ستحدد حقل الدمج والمستند الذي يجب إدراجه في هذا الحقل.
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
@@ -134,7 +134,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## خاتمة
 
-وهناك لديك! لقد قمت بإدراج المستندات بنجاح في حقول معينة أثناء عملية دمج البريد باستخدام Aspose.Words for .NET. يمكن لهذه الميزة القوية أن توفر عليك الكثير من الوقت والجهد، خاصة عند التعامل مع كميات كبيرة من المستندات. فكر في الأمر كأنك تمتلك مساعدًا شخصيًا يتولى جميع المهام الثقيلة نيابةً عنك. إذا انطلق وقم بالمحاولة. ترميز سعيد!
+وهنا لديك! لقد قمت بإدراج المستندات بنجاح في حقول معينة أثناء عملية دمج البريد باستخدام Aspose.Words for .NET. يمكن لهذه الميزة القوية أن توفر عليك الكثير من الوقت والجهد، خاصة عند التعامل مع كميات كبيرة من المستندات. فكر في الأمر كأنك تمتلك مساعدًا شخصيًا يتولى جميع المهام الثقيلة نيابةً عنك. لذا، تفضل وجربها. ترميز سعيد!
 
 ## الأسئلة الشائعة
 
@@ -142,7 +142,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 نعم يمكنك ذلك. ما عليك سوى تحديد حقول الدمج المناسبة ومسارات المستندات المقابلة في الملف`MailMerge.Execute` طريقة.
 
 ### هل من الممكن تنسيق المستند المدرج بشكل مختلف عن المستند الرئيسي؟
- قطعاً! يمكنك استخدام ال`ImportFormatMode` المعلمة في`NodeImporter` للتحكم في التنسيق
+ قطعاً! يمكنك استخدام`ImportFormatMode` المعلمة في`NodeImporter` للتحكم في التنسيق
 
 ### ماذا لو كان اسم حقل الدمج ديناميكيًا؟
 يمكنك التعامل مع أسماء حقول الدمج الديناميكي عن طريق تمريرها كمعلمات إلى معالج رد الاتصال.

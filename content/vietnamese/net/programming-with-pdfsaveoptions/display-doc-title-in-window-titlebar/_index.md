@@ -9,7 +9,7 @@ url: /vi/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titleba
 ---
 ## Giới thiệu
 
-Bạn đã sẵn sàng làm cho tệp PDF của mình trông chuyên nghiệp hơn nữa chưa? Một thay đổi nhỏ nhưng có tác động lớn là hiển thị tiêu đề tài liệu trên thanh tiêu đề cửa sổ. Nó giống như việc đặt thẻ tên trên tệp PDF của bạn, khiến nó có thể được nhận dạng ngay lập tức. Hôm nay, chúng ta sẽ đi sâu vào cách đạt được điều này bằng Aspose.Words cho .NET. Đến cuối hướng dẫn này, bạn sẽ hiểu rõ ràng về quy trình. Bắt đầu nào!
+Bạn đã sẵn sàng làm cho tệp PDF của mình trông chuyên nghiệp hơn nữa chưa? Một thay đổi nhỏ nhưng có tác động lớn là hiển thị tiêu đề tài liệu trên thanh tiêu đề cửa sổ. Nó giống như việc đặt thẻ tên trên tệp PDF của bạn, khiến nó có thể được nhận dạng ngay lập tức. Hôm nay, chúng ta sẽ đi sâu vào cách đạt được điều này bằng Aspose.Words cho .NET. Đến cuối hướng dẫn này, bạn sẽ hiểu rõ ràng về quy trình. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -68,7 +68,7 @@ Dòng mã này đảm nhiệm việc lưu tài liệu của bạn ở định d�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã định cấu hình thành công tệp PDF của mình để hiển thị tiêu đề tài liệu trên thanh tiêu đề cửa sổ bằng Aspose.Words for .NET. Cải tiến nhỏ này có thể làm cho tệp PDF của bạn trông bóng bẩy và chuyên nghiệp hơn.
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã định cấu hình thành công tệp PDF của mình để hiển thị tiêu đề tài liệu trên thanh tiêu đề cửa sổ bằng Aspose.Words for .NET. Cải tiến nhỏ này có thể làm cho tệp PDF của bạn trông bóng bẩy và chuyên nghiệp hơn.
 
 ## Câu hỏi thường gặp
 

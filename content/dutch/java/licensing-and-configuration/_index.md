@@ -17,7 +17,7 @@ Wanneer u aan uw reis begint om Aspose.Words voor Java te gebruiken, is de eerst
 
 2. Verkrijg het licentiebestand: Na aankoop ontvangt u een licentiebestand. Dit bestand is cruciaal voor het configureren van Aspose.Words in uw Java-project.
 
-3.  Integreer de licentie: Om Aspose.Words in te schakelen, integreert u de licentie in uw Java-applicatie. Meestal gaat dit gepaard met het laden van het licentiebestand en het toepassen ervan op Aspose.Words. Verwijs naar de[API-documentatie](https://reference.aspose.com/words/java/) voor gedetailleerde codevoorbeelden.
+3.  Integreer de licentie: Om Aspose.Words in te schakelen, integreert u de licentie in uw Java-applicatie. Meestal gaat dit gepaard met het laden van het licentiebestand en het toepassen ervan op Aspose.Words. Raadpleeg de[API-documentatie](https://reference.aspose.com/words/java/) voor gedetailleerde codevoorbeelden.
 
 ## Configuratie-instellingen
 

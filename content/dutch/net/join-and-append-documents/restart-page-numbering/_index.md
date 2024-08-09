@@ -15,7 +15,7 @@ Heeft u ooit moeite gehad om een gepolijst document te maken met verschillende s
 
 Zorg ervoor dat u over het volgende beschikt voordat u aan deze reis begint:
 
-1.  Aspose.Words voor .NET: Download de bibliotheek van de officiële website[Download link](https://releases.aspose.com/words/net/) . U kunt een gratis proefperiode verkennen[Gratis proeflink](https://releases.aspose.com/) of koop een licentie[koop link](https://purchase.aspose.com/buy) op basis van uw behoeften.
+1.  Aspose.Words voor .NET: Download de bibliotheek van de officiële website[Downloadlink](https://releases.aspose.com/words/net/) . U kunt een gratis proefperiode verkennen[Gratis proeflink](https://releases.aspose.com/) of koop een licentie[Koop link](https://purchase.aspose.com/buy) op basis van uw behoeften.
 2. AC#-ontwikkelomgeving: Visual Studio of een andere omgeving die .NET-ontwikkeling ondersteunt, werkt perfect.
 3. Een voorbeelddocument: Zoek een Word-document waarmee u wilt experimenteren.
 
@@ -37,7 +37,7 @@ Laten we nu eens kijken naar de praktische stappen die nodig zijn voor het opnie
 
  Definieer een stringvariabele`dataDir` om het pad naar uw documentmap op te slaan. Vervang "UW DOCUMENTENMAP" door de werkelijke locatie.
 
- Maak er twee`Document` objecten met behulp van de`Aspose.Words.Document`bouwer. De eerste (`srcDoc`) bevat het brondocument met de toe te voegen inhoud. De seconde (`dstDoc`) vertegenwoordigt het doeldocument waarin we de broninhoud integreren met opnieuw gestarte paginanummering.
+ Maak er twee`Document` objecten met behulp van de`Aspose.Words.Document`bouwer. De eerste (`srcDoc`) bevat het brondocument met de toe te voegen inhoud. De tweede (`dstDoc`) vertegenwoordigt het doeldocument waarin we de broninhoud integreren met opnieuw gestarte paginanummering.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Vervang door uw werkelijke map
@@ -47,7 +47,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
 ## Stap 2: Het instellen van de sectie-einde:
 
- Toegang krijgen tot`FirstSection` eigenschap van het brondocument (`srcDoc`) om de eerste sectie te manipuleren. De paginanummering van deze sectie wordt opnieuw gestart.
+ Toegang tot de`FirstSection` eigenschap van het brondocument (`srcDoc`) om de eerste sectie te manipuleren. De paginanummering van deze sectie wordt opnieuw gestart.
 
  Maak gebruik van de`PageSetup` eigenschap van de sectie om het lay-outgedrag ervan te configureren.
 

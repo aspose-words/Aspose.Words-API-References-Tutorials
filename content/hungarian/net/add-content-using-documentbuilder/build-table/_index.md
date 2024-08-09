@@ -9,7 +9,7 @@ url: /hu/net/add-content-using-documentbuilder/build-table/
 ---
 ## Bevezetés
 
-Halihó! Táblázatokat szeretne programozottan létrehozni Word-dokumentumaiban? Nos, jó helyre jött! Ma az Aspose.Words for .NET varázslatos világába merülünk. Ezzel a nagy teljesítményű könyvtárral profi módon kezelheti a Word dokumentumokat. Képzelje el, hogy Ön egy varázsló, és az Aspose.Words az Ön pálcája, amely lehetővé teszi, hogy egy csuklómozdulattal (vagy inkább egy kódsorral) hozzon létre, szerkeszthessen és formázzon dokumentumokat. Ebben az oktatóanyagban a táblázat Word-dokumentumban való felépítésére összpontosítunk. Szóval, fogd meg a kódoló kalapot, és kezdjük is!
+Szia! Táblázatokat szeretne programozottan létrehozni Word-dokumentumaiban? Nos, jó helyre jött! Ma az Aspose.Words for .NET varázslatos világába merülünk. Ezzel a nagy teljesítményű könyvtárral profi módon kezelheti a Word dokumentumokat. Képzelje el, hogy Ön egy varázsló, és az Aspose.Words az Ön pálcája, amely lehetővé teszi, hogy egy csuklómozdulattal (vagy inkább egy kódsorral) hozzon létre, szerkeszthessen és formázzon dokumentumokat. Ebben az oktatóanyagban a táblázat Word-dokumentumban való felépítésére összpontosítunk. Szóval, fogd meg a kódoló kalapot, és kezdjük is!
 
 ## Előfeltételek
 
@@ -35,7 +35,7 @@ Rendben, bontsuk fel kezelhető lépésekre a táblázat létrehozásának folya
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Először is be kell állítanunk a dokumentumunkat és a dokumentumkészítőnket. A`Document` osztály képviseli a Word dokumentumot, és`DocumentBuilder` a mi praktikus eszközünk tartalom hozzáadásához.
+ Először is be kell állítanunk a dokumentumunkat és a dokumentumkészítőnket. A`Document` osztály képviseli a Word dokumentumot, és`DocumentBuilder` praktikus eszközünk a tartalom hozzáadásához.
 
 ```csharp
 Document doc = new Document();
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Használva`StartTable` azt mondjuk Aspose-nak.Szavak, hogy egy táblázat létrehozására készülünk. A`InsertCell` metódus hozzáadja az első cellát, és`AutoFit` biztosítja, hogy oszlopaink fix szélességűek legyenek.
+ Használatával`StartTable` azt mondjuk Aspose-nak.Szavak, hogy egy táblázat létrehozására készülünk. A`InsertCell` metódus hozzáadja az első cellát, és`AutoFit` biztosítja, hogy oszlopaink fix szélességűek legyenek.
 
 ## 3. lépés: Formázza meg az első sort
 
@@ -74,7 +74,7 @@ Gondolj erre úgy, mint az abrosz megterítésére és az első edények elhelye
 
 ## 4. lépés: Hozza létre a második sort egyéni formázással
 
-Most pedig legyünk kreatívak a második sorral. Beállítjuk a sor magasságát, másképp igazítjuk a szöveget, és a szöveg tájolásának megváltoztatásával némi finomságot adunk.
+Legyünk kreatívak a második sorral. Beállítjuk a sor magasságát, másképp igazítjuk a szöveget, és a szöveg tájolásának megváltoztatásával némi finomságot adunk.
 
 ```csharp
 builder.InsertCell();
@@ -125,7 +125,7 @@ Ne feledje, gyakorlat teszi a mestert. Tehát ne habozzon kísérletezni a kül�
 Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való programozott munkavégzéshez. Lehetővé teszi dokumentumok létrehozását, szerkesztését és kezelését Microsoft Word nélkül.
 
 ### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
- tudsz[töltse le az Aspose.Words for .NET-et innen](https://releases.aspose.com/words/net/). Kövesse a mellékelt telepítési utasításokat a fejlesztői környezetben történő beállításához.
+ Tudod[töltse le az Aspose.Words for .NET-et innen](https://releases.aspose.com/words/net/). Kövesse a mellékelt telepítési utasításokat a fejlesztői környezetben történő beállításához.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
  Az Aspose.Words ajánlatok a[ingyenes próbaverzió](https://releases.aspose.com/) így tesztelheti a tulajdonságait. Hosszabb idejű használathoz licencet vásárolhat, vagy a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).

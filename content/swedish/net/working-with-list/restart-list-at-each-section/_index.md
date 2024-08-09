@@ -2,101 +2,111 @@
 title: Starta om lista vid varje avsnitt
 linktitle: Starta om lista vid varje avsnitt
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du återställer en numrerad lista till varje avsnitt i ett Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du startar om listor vid varje avsnitt i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade steg-för-steg-guide för att hantera listor effektivt.
 type: docs
 weight: 10
 url: /sv/net/working-with-list/restart-list-at-each-section/
 ---
+## Introduktion
 
-denna steg för steg handledning kommer vi att visa dig hur du återställer en numrerad lista till varje avsnitt i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+Att skapa strukturerade och välorganiserade dokument kan ibland kännas som att lösa ett komplext pussel. En bit i det pusslet är att hantera listor effektivt, särskilt när du vill att de ska starta om vid varje avsnitt. Med Aspose.Words för .NET kan du åstadkomma detta sömlöst. Låt oss dyka in i hur du kan starta om listor vid varje avsnitt i dina Word-dokument med Aspose.Words för .NET.
 
- För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Förutsättningar
 
-## Steg 1: Skapa dokumentet och listan
+Innan vi börjar, se till att du har följande:
 
-Skapa först ett nytt dokument och lägg till en numrerad standardlista:
+1.  Aspose.Words för .NET: Ladda ner och installera den senaste versionen från[Aspose släpper](https://releases.aspose.com/words/net/) sida.
+2. .NET-miljö: Konfigurera din utvecklingsmiljö med .NET installerat.
+3. Grundläggande förståelse för C#: Bekantskap med programmeringsspråket C# rekommenderas.
+4.  Aspose-licens: Du kan välja en[tillfällig licens](https://purchase.aspose.com/temporary-license/) om du inte har en.
+
+## Importera namnområden
+
+Innan du skriver koden, se till att du importerar de nödvändiga namnrymden:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Låt oss nu dela upp processen i flera steg för att göra det enkelt att följa.
+
+## Steg 1: Initiera dokumentet
+
+Först måste du skapa en ny dokumentinstans.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## Steg 2: Lägga till objekt i listan
+## Steg 2: Lägg till en numrerad lista
 
- Använd sedan a`DocumentBuilder` för att lägga till objekt i listan. Du kan använda en slinga för att lägga till flera objekt till listan:
+Lägg sedan till en numrerad lista till dokumentet. Denna lista kommer att följa ett standardnumreringsformat.
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## Steg 3: Öppna listan och ställ in omstartsegenskap
+
+Hämta listan du just skapade och ställ in dess`IsRestartAtEachSection`egendom till`true`. Detta säkerställer att listan startar om numreringen vid varje nytt avsnitt.
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## Steg 4: Skapa en dokumentbyggare och associera listan
+
+ Skapa en`DocumentBuilder` för att infoga innehåll i dokumentet och associera det med listan.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## Steg 5: Lägg till listobjekt och infoga avsnittsbrytning
+
+Lägg nu till objekt i listan. För att illustrera omstartsfunktionen infogar vi en avsnittsbrytning efter ett visst antal objekt.
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-I det här exemplet infogar vi en avsnittsbrytning efter den 15:e listposten för att illustrera omnumrering.
+## Steg 6: Spara dokumentet
 
-## Steg 3: Spara det ändrade dokumentet
-
-Spara slutligen det ändrade dokumentet:
+Slutligen, spara dokumentet med lämpliga alternativ för att säkerställa efterlevnad.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-Så ! Du har framgångsrikt återställt en numrerad lista till varje avsnitt i ett Word-dokument med Aspose.Words för .NET.
+## Slutsats
 
-### Exempel på källkod för att återställa listan vid varje avsnitt
+Och där har du det! Genom att följa dessa steg kan du enkelt starta om listor vid varje avsnitt i dina Word-dokument med Aspose.Words för .NET. Den här funktionen är otroligt användbar för att skapa välstrukturerade dokument som kräver separata avsnitt med egen listnumrering. Med Aspose.Words blir det enkelt att hantera sådana uppgifter, vilket gör att du kan fokusera på att skapa innehåll av hög kvalitet.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## FAQ's
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### Kan jag starta om listor vid varje sektion för olika listtyper?
+Ja, Aspose.Words för .NET låter dig starta om olika listtyper, inklusive punktlistor och numrerade listor.
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### Vad händer om jag vill anpassa numreringsformatet?
+ Du kan anpassa numreringsformatet genom att ändra`ListTemplate` egenskap när du skapar listan.
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### Finns det en gräns för antalet objekt i en lista?
+Nej, det finns ingen specifik gräns för antalet objekt du kan ha i en lista med Aspose.Words för .NET.
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### Kan jag använda den här funktionen i andra dokumentformat som PDF?
+Ja, du kan använda Aspose.Words för att konvertera Word-dokument till andra format som PDF samtidigt som liststrukturen behålls.
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-Använd gärna den här koden i dina egna projekt och modifiera den för att passa dina specifika behov.
-
-### FAQ's
-
-#### F: Hur kan jag starta om en lista vid varje avsnitt i Aspose.Words?
-
- S: För att starta om en lista vid varje avsnitt i Aspose.Words, måste du skapa en instans av`List`klass och tilldela en numrerad lista till den. Då kan du använda`List.IsRestartAtEachSection` egenskap för att ange att numrering ska startas om vid varje avsnitt. Du kan associera den här listan med ett eller flera avsnitt av ditt dokument så att numreringen startas om korrekt vid varje avsnitt.
-
-#### F: Kan jag anpassa numreringsformatet för listor i Aspose.Words?
-
- S: Ja, du kan anpassa numreringsformatet för listor i Aspose.Words. De`List` klass erbjuder flera fastigheter för detta, som t.ex`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, etc. Du kan använda dessa egenskaper för att ställa in listtyp (numrerad, punktlista, etc.), numreringsformat (arabiska siffror, romerska siffror, bokstäver, etc.) och andra numreringsformateringsalternativ.
-
-#### F: Är det möjligt att lägga till ytterligare nivåer till en numrerad lista i Aspose.Words?
-
- S: Ja, det är möjligt att lägga till ytterligare nivåer till en numrerad lista i Aspose.Words. De`ListLevel`class låter dig ställa in formateringsegenskaper för varje nivå i listan. Du kan ställa in alternativ som prefix, suffix, justering, indrag, etc. Detta låter dig skapa listor med flera nivåer av hierarki.
+### Hur kan jag få en gratis provversion av Aspose.Words för .NET?
+ Du kan få en gratis provperiod från[Aspose släpper](https://releases.aspose.com/) sida.

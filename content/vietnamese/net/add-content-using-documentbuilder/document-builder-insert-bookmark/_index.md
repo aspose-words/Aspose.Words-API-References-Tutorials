@@ -71,7 +71,7 @@ Sau khi dấu trang được bắt đầu, chúng ta có thể thêm bất kỳ 
 builder.Writeln("This is just a fine bookmark.");
 ```
 
- Các`Writeln` phương pháp thêm một đoạn văn mới với văn bản được chỉ định vào tài liệu.
+ các`Writeln` phương pháp thêm một đoạn văn mới với văn bản được chỉ định vào tài liệu.
 
 ## Bước 5: Kết thúc Bookmark
 
@@ -81,7 +81,7 @@ Sau khi thêm nội dung của chúng tôi, chúng tôi cần đóng dấu trang
 builder.EndBookmark("FineBookmark");
 ```
 
- Các`EndBookmark` phương pháp hoàn thành dấu trang mà chúng tôi đã bắt đầu trước đó.
+ các`EndBookmark` phương pháp hoàn thành dấu trang mà chúng tôi đã bắt đầu trước đó.
 
 ## Bước 6: Lưu tài liệu
 
@@ -95,7 +95,7 @@ Dòng này lưu tài liệu với tên được chỉ định trong thư mục m
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công dấu trang vào tài liệu Word bằng Aspose.Words for .NET. Đây có vẻ như là một bước nhỏ nhưng lại là một công cụ mạnh mẽ trong lĩnh vực tự động hóa tài liệu. Với dấu trang, bạn có thể tạo các tài liệu động và có tính tương tác, dễ điều hướng.
+Và bạn có nó! Bạn đã chèn thành công dấu trang vào tài liệu Word bằng Aspose.Words for .NET. Đây có vẻ như là một bước nhỏ nhưng lại là một công cụ mạnh mẽ trong lĩnh vực tự động hóa tài liệu. Với dấu trang, bạn có thể tạo các tài liệu động và có tính tương tác, dễ điều hướng.
 
 ## Câu hỏi thường gặp
 
@@ -106,7 +106,7 @@ Dấu trang trong tài liệu Word là điểm đánh dấu hoặc phần giữ 
 Có, bạn có thể thêm nhiều dấu trang. Chỉ cần đảm bảo mỗi dấu trang có một tên duy nhất.
 
 ### Làm cách nào tôi có thể điều hướng đến dấu trang theo chương trình?
- Bạn có thể dùng`Document.Range.Bookmarks` bộ sưu tập để điều hướng đến hoặc thao tác dấu trang theo chương trình.
+ Bạn có thể sử dụng`Document.Range.Bookmarks` bộ sưu tập để điều hướng đến hoặc thao tác dấu trang theo chương trình.
 
 ### Tôi có thể thêm nội dung phức tạp vào dấu trang không?
 Tuyệt đối! Bạn có thể thêm văn bản, bảng, hình ảnh hoặc bất kỳ thành phần nào khác trong dấu trang.

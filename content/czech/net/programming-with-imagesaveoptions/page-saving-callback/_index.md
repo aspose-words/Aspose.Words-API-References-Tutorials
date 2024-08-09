@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Cítili jste někdy potřebu uložit každou stránku dokumentu aplikace Word jako samostatné obrázky? Možná chcete rozdělit velkou sestavu do snadno stravitelných vizuálů nebo možná potřebujete vytvořit miniatury pro náhled. Ať už je váš důvod jakýkoli, pomocí Aspose.Words pro .NET je tento úkol hračkou. V této příručce vás provedeme procesem nastavení zpětného volání pro uložení stránky, aby se každá stránka dokumentu uložila jako samostatný obrázek PNG. Pojďme se rovnou ponořit!
+Ahoj! Cítili jste někdy potřebu uložit každou stránku dokumentu aplikace Word jako samostatné obrázky? Možná chcete rozdělit velkou sestavu do snadno stravitelných vizuálů nebo možná potřebujete vytvořit miniatury pro náhled. Ať už je váš důvod jakýkoli, pomocí Aspose.Words pro .NET je tento úkol hračkou. V této příručce vás provedeme procesem nastavení zpětného volání pro uložení stránky, aby se každá stránka dokumentu uložila jako samostatný obrázek PNG. Pojďme se rovnou ponořit!
 
 ## Předpoklady
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si a nainstalujte jej z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si a nainstalujte jej z[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Jakákoli verze by měla fungovat, ale pro tuto příručku budu používat Visual Studio 2019.
 3. Základní znalost C#: Abyste mohli pokračovat, budete potřebovat základní znalosti C#.
 
@@ -57,7 +57,7 @@ ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 };
 ```
 
- Tady,`PageSet` určuje rozsah stránek k uložení a`PageSavingCallback` ukazuje na naši vlastní třídu zpětného volání.
+ Zde,`PageSet` určuje rozsah stránek k uložení a`PageSavingCallback` ukazuje na naši vlastní třídu zpětného volání.
 
 ## Krok 4: Implementujte zpětné volání pro ukládání stránky
 

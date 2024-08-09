@@ -115,7 +115,7 @@ Puedes cambiar el`ShapeType` en el`InsertShape` Método para insertar diferentes
  Sí, puedes diseñar las formas estableciendo propiedades como`FillColor`, `StrokeColor` , y`StrokeWeight`.
 
 ### ¿Cómo coloco formas en relación con otros elementos?
- Utilizar el`RelativeHorizontalPosition`y`RelativeVerticalPosition` propiedades para posicionar formas en relación con otros elementos del documento.
+ Utilice el`RelativeHorizontalPosition`y`RelativeVerticalPosition` propiedades para posicionar formas en relación con otros elementos del documento.
 
 ### ¿Puedo agrupar varias formas?
  Sí, Aspose.Words para .NET le permite agrupar formas usando el`GroupShape` clase.

@@ -80,7 +80,7 @@ Ez a ciklus minden egyes strukturált dokumentumcímke címét nyomtatja ki a ko
 
 ## Következtetés
 
-Gratulálunk! Most már megtanulta, hogyan kell több szakaszból álló strukturált dokumentumcímkékkel dolgozni az Aspose.Words for .NET használatával. Az alábbi lépések követésével hatékonyan kezelheti a strukturált dokumentumcímkéket a Word-dokumentumokban. Akár automatizálja a dokumentum-munkafolyamatokat, akár összetett dokumentumokat kezel, ezek a készségek javítják a strukturált tartalom dinamikus kezelésének képességét.
+Gratulálok! Most már megtanulta, hogyan kell több szakaszból álló strukturált dokumentumcímkékkel dolgozni az Aspose.Words for .NET használatával. Az alábbi lépések követésével hatékonyan kezelheti a strukturált dokumentumcímkéket a Word-dokumentumokban. Akár automatizálja a dokumentum-munkafolyamatokat, akár összetett dokumentumokat kezel, ezek a készségek javítják a strukturált tartalom dinamikus kezelésének képességét.
 
  Nyugodtan kísérletezzen a kóddal, és alakítsa át saját igényeinek megfelelően. További speciális funkciókért és részletes dokumentációért tekintse meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/).
 
@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-Ez az! Sikeresen lekérte és feldolgozta a több szakaszból álló strukturált dokumentumcímkéket a Word-dokumentumban az Aspose.Words for .NET segítségével.
+Ennyi! Sikeresen lekérte és feldolgozta a több szakaszból álló strukturált dokumentumcímkéket a Word-dokumentumban az Aspose.Words for .NET segítségével.

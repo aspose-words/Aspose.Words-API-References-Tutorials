@@ -46,7 +46,7 @@ text_input_field = aspose.words.drawing.Shape(doc, aspose.words.drawing.ShapeTyp
 
 ### Kryssrutor och radioknappar
 
-Kryssrutor och alternativknappar används för flervalsval. Så här kan du skapa dem:
+Kryssrutor och alternativknappar används för flervalsval. Så här skapar du dem:
 
 ```python
 # Create a checkbox form field
@@ -82,7 +82,7 @@ Varje formulärfält har olika egenskaper som kan anpassas för att förbättra 
 
 ### Ställa in fältnamn
 
-Fältnamn ger en unik identifierare för varje formulärfält, vilket gör det enklare att hantera insamlad data. Ställ in ett fälts namn med hjälp av`Name` fast egendom:
+Fältnamn ger en unik identifierare för varje formulärfält, vilket gör det enklare att hantera insamlad data. Ställ in ett fälts namn med hjälp av`Name` egendom:
 
 ```python
 text_input_field.name = "full_name"
@@ -246,7 +246,7 @@ pip install aspose-words
 
 ### Kan jag ställa in standardvärden för formulärfält?
 
- Ja, du kan ställa in standardvärden för formulärfält med lämpliga egenskaper. Till exempel, för att ställa in standardtexten för ett textinmatningsfält, använd`text` fast egendom.
+ Ja, du kan ställa in standardvärden för formulärfält med lämpliga egenskaper. Till exempel, för att ställa in standardtexten för ett textinmatningsfält, använd`text` egendom.
 
 ### Är formulärfält tillgängliga för användare med funktionshinder?
 

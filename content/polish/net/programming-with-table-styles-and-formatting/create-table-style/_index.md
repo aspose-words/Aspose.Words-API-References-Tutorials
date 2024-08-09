@@ -14,7 +14,7 @@ Czy kiedykolwiek utknąłeś podczas próby stylizowania tabel w dokumentach pro
 ## Warunki wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
-- Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną tę potężną bibliotekę. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+- Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną tę potężną bibliotekę. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Visual Studio lub dowolne inne środowisko programistyczne .NET.
 - Podstawowa znajomość języka C#: Pomocna będzie pewna znajomość programowania w języku C#.
 

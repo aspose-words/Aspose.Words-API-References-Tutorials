@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ## 常見問題解答
 
 ### 我可以使用 Aspose.Words for .NET 轉換其他類型的欄位嗎？
-是的，Aspose.Words for .NET 允許您操作各種類型的字段，而不僅僅是 IF 字段。您可以探索[文件](https://reference.aspose.com/words/net/)更多細節。
+是的，Aspose.Words for .NET 允許您操作各種類型的字段，而不僅僅是 IF 字段。您可以探索[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### Word文件中的IF欄位是什麼？
 IF 欄位是根據特定條件顯示文字的條件欄位。它們通常用於在 Word 文件中建立動態內容。

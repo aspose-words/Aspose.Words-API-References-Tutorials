@@ -15,7 +15,7 @@ url: /ko/net/working-with-textboxes/check-sequence/
 
 코드를 시작하기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
-1.  .NET 라이브러리용 Aspose.Words: 최신 버전인지 확인하세요.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET 라이브러리용 Aspose.Words: 최신 버전인지 확인하세요.[여기서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 .NET 호환 개발 환경입니다.
 3. 기본 C# 지식: C# 구문 및 개념에 익숙하면 따라가는 데 도움이 됩니다.
 4. 샘플 Word 문서: 코드를 테스트할 Word 문서가 있으면 편리하지만 이 예에서는 모든 것을 처음부터 작성하겠습니다.

@@ -40,7 +40,7 @@ url: /ja/java/document-security/keep-documents-safe-secure/
 ドキュメントのセキュリティについて説明を進める前に、まず Aspose.Words for Java について理解しましょう。これは、Java 開発者が Word ドキュメントをプログラムで作成、変更、変換できるようにする機能豊富なライブラリです。開始するには、次の手順を実行します。
 
 1. ### Aspose.Words for Java をダウンロード:
- 訪問[Aspose.リリース](https://releases.aspose.com/words/java/)Aspose.Words for Java の最新バージョンをダウンロードしてください。
+ 訪問する[Aspose.リリース](https://releases.aspose.com/words/java/)Aspose.Words for Java の最新バージョンをダウンロードしてください。
 
 2. ### ライブラリをインストールします。
  ダウンロードが完了したら、インストール手順に従って、Java プロジェクトに Aspose.Words を設定します。

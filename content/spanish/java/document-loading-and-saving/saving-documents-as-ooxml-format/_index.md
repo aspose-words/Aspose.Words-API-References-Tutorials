@@ -37,7 +37,7 @@ doc.save("EncryptedDoc.docx", saveOptions);
 
 ## Configuración del cumplimiento de OOXML
 
-Puede especificar el nivel de cumplimiento de OOXML al guardar el documento. Por ejemplo, puede configurarlo en ISO 29500:2008 (estricto). Así es cómo:
+Puede especificar el nivel de cumplimiento de OOXML al guardar el documento. Por ejemplo, puede configurarlo en ISO 29500:2008 (estricto). He aquí cómo:
 
 ```java
 import com.aspose.words.Document;
@@ -61,7 +61,7 @@ doc.save("ComplianceDoc.docx", saveOptions);
 
 ## Actualización de la propiedad Hora del último guardado
 
-Puede optar por actualizar la propiedad "Última hora guardada" del documento al guardarlo. Así es cómo:
+Puede optar por actualizar la propiedad "Última hora guardada" del documento al guardarlo. He aquí cómo:
 
 ```java
 import com.aspose.words.Document;
@@ -80,7 +80,7 @@ doc.save("UpdatedLastSavedTime.docx", saveOptions);
 
 ## Mantener los personajes de control heredados
 
-Si su documento contiene caracteres de control heredados, puede optar por conservarlos mientras los guarda. Así es cómo:
+Si su documento contiene caracteres de control heredados, puede optar por conservarlos mientras los guarda. He aquí cómo:
 
 ```java
 import com.aspose.words.Document;
@@ -100,7 +100,7 @@ doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 
 ## Configuración del nivel de compresión
 
-Puede ajustar el nivel de compresión al guardar el documento. Por ejemplo, puedes configurarlo en SUPER_FAST para una compresión mínima. Así es cómo:
+Puede ajustar el nivel de compresión al guardar el documento. Por ejemplo, puedes configurarlo en SUPER_FAST para una compresión mínima. He aquí cómo:
 
 ```java
 import com.aspose.words.Document;
@@ -172,7 +172,7 @@ Para eliminar la protección con contraseña de un documento protegido con contr
 
 ### ¿Puedo establecer propiedades personalizadas al guardar un documento en formato OOXML?
 
- Sí, puede configurar propiedades personalizadas para un documento antes de guardarlo en formato OOXML. Utilizar el`BuiltInDocumentProperties`y`CustomDocumentProperties` clases para establecer varias propiedades, como autor, título, palabras clave y propiedades personalizadas.
+ Sí, puede configurar propiedades personalizadas para un documento antes de guardarlo en formato OOXML. Utilice el`BuiltInDocumentProperties`y`CustomDocumentProperties` clases para establecer varias propiedades como autor, título, palabras clave y propiedades personalizadas.
 
 ### ¿Cuál es el nivel de compresión predeterminado al guardar un documento en formato OOXML?
 

@@ -127,7 +127,7 @@ Igen, az Aspose.Words for .NET támogatja a .NET keretrendszeren futó különf�
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[itt](https://releases.aspose.com/).
 
 ### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
- Támogatást kaphat az Aspose.Words oldalon[támogatói fórum](https://forum.aspose.com/c/words/8).
+ Támogatást kaphat az Aspose.Words oldalon[támogatási fórum](https://forum.aspose.com/c/words/8).
 
 ### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-hez?
  A részletes dokumentáció megtalálható[itt](https://reference.aspose.com/words/net/).

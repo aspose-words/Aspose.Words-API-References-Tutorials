@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-digital-signatures/sign-document/
 ---
-## introduzione
+## Introduzione
 
 Nel mondo digitale di oggi, proteggere i tuoi documenti è più importante che mai. Le firme digitali forniscono un modo per garantire l'autenticità e l'integrità dei tuoi documenti. Se stai cercando di firmare un documento Word a livello di codice utilizzando Aspose.Words per .NET, sei nel posto giusto. Questa guida ti accompagnerà attraverso l'intero processo, passo dopo passo, in modo semplice e coinvolgente.
 
@@ -90,7 +90,7 @@ doc.Save(dataDir + "Document.Signed.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai firmato con successo un documento Word utilizzando Aspose.Words per .NET. Seguendo questi semplici passaggi, puoi assicurarti che i tuoi documenti siano firmati e autenticati in modo sicuro. Ricorda, le firme digitali sono uno strumento potente per proteggere l'integrità dei tuoi documenti, quindi usale quando necessario.
+Ed ecco qua! Hai firmato con successo un documento Word utilizzando Aspose.Words per .NET. Seguendo questi semplici passaggi, puoi assicurarti che i tuoi documenti siano firmati e autenticati in modo sicuro. Ricorda, le firme digitali sono uno strumento potente per proteggere l'integrità dei tuoi documenti, quindi usale quando necessario.
 
 ## Domande frequenti
 

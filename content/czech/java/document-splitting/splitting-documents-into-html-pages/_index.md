@@ -15,10 +15,10 @@ tomto komplexním průvodci prozkoumáme, jak rozdělit dokumenty do HTML strán
 Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 
-## Úvod
+## Zavedení
 
 V dnešním digitálním světě je převod dokumentů Wordu na stránky HTML běžným požadavkem. Aspose.Words zjednodušuje tento úkol tím, že poskytuje Java API, které nám umožňuje snadno rozdělit dokumenty aplikace Word na stránky HTML. Začněme.
 
@@ -34,7 +34,7 @@ V kódu Java musíte nejprve načíst dokument aplikace Word, který chcete rozd
 Document doc = new Document("your-document.docx");
 ```
 
- Nahradit`"your-document.docx"` s cestou k vašemu dokumentu aplikace Word.
+ Nahradit`"your-document.docx"` s cestou k dokumentu aplikace Word.
 
 ## Rozdělení dokumentu
 
@@ -71,7 +71,7 @@ Nyní můžete své dokumenty aplikace Word snadno převést na stránky HTML, �
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, stáhněte si knihovnu z[tady](https://releases.aspose.com/words/java/) a zahrňte soubory JAR do cesty třídy svého projektu Java.
+ Chcete-li nainstalovat Aspose.Words for Java, stáhněte si knihovnu z[zde](https://releases.aspose.com/words/java/) a zahrňte soubory JAR do cesty třídy svého projektu Java.
 
 ### Mohu přizpůsobit kritéria rozdělení?
 
@@ -87,7 +87,7 @@ Ano, v případě potřeby můžete stránky HTML převést zpět na dokumenty a
 
 ### Kde najdu další dokumentaci a příklady?
 
- Podrobnou dokumentaci a příklady kódu můžete najít na stránce dokumentace Aspose.Words for Java[tady](https://reference.aspose.com/words/java/).
+ Podrobnou dokumentaci a příklady kódu můžete najít na stránce dokumentace Aspose.Words for Java[zde](https://reference.aspose.com/words/java/).
 
 
 Nyní, když dobře rozumíte tomu, jak rozdělit dokumenty aplikace Word na stránky HTML pomocí Aspose.Words for Java, můžete začít implementovat tuto funkci do svých projektů. Šťastné kódování!

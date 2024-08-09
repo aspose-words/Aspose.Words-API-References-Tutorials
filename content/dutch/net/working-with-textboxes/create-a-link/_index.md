@@ -15,7 +15,7 @@ Hallo daar, tech-enthousiastelingen en documentwizards! 🌟 Heeft u ooit de uit
 
 Voordat we ingaan op de magie van het koppelen van tekstvakken, zorgen we ervoor dat u alle essentiële zaken bij de hand heeft:
 
-1. Aspose.Words voor .NET-bibliotheek: u hebt de nieuwste versie van Aspose.Words voor .NET nodig. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET-bibliotheek: u hebt de nieuwste versie van Aspose.Words voor .NET nodig. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Een .NET-ontwikkelomgeving, zoals Visual Studio, is noodzakelijk voor het schrijven en testen van uw code.
 3. Basiskennis van C#: Een basiskennis van C# zal u helpen de codevoorbeelden te volgen.
 4. Voorbeeld van een Word-document: Hoewel dit niet strikt noodzakelijk is voor deze zelfstudie, kan het nuttig zijn om een voorbeeld van een Word-document te hebben om uw gekoppelde tekstvakken te testen.
@@ -116,7 +116,7 @@ Hierdoor wordt het document opgeslagen met de bestandsnaam "LinkedTextBoxes.docx
 
 En daar heb je het! 🎉 U hebt met succes tekstvakken in een Word-document gemaakt en gekoppeld met Aspose.Words voor .NET. Deze tutorial begeleidt u bij het instellen van uw omgeving, het maken en koppelen van tekstvakken en het opslaan van uw document. Met deze vaardigheden kunt u uw Word-documenten uitbreiden met dynamische inhoudsstromen en uw documenten interactiever en gebruiksvriendelijker maken.
 
- Voor meer gedetailleerde informatie en geavanceerde functies, bekijk de[Aspose.Words API-documentatie](https://reference.aspose.com/words/net/) Als u vragen heeft of tegen problemen aanloopt, kunt u terecht bij de[Helpforum](https://forum.aspose.com/c/words/8) is een geweldige hulpbron.
+ Voor meer gedetailleerde informatie en geavanceerde functies, bekijk de[Aspose.Words API-documentatie](https://reference.aspose.com/words/net/) Als u vragen heeft of tegen problemen aanloopt, kunt u terecht bij de[ondersteuningsforum](https://forum.aspose.com/c/words/8) is een geweldige hulpbron.
 
 Veel codeerplezier en mogen uw tekstvakken altijd perfect aan elkaar gekoppeld zijn! 🚀
 

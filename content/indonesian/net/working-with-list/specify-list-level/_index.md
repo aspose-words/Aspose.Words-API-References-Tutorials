@@ -2,19 +2,41 @@
 title: Tentukan Tingkat Daftar
 linktitle: Tentukan Tingkat Daftar
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menentukan tingkat daftar dalam dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara membuat daftar bernomor dan berpoin bertingkat di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah disertakan. Sempurna untuk pengembang .NET.
 type: docs
 weight: 10
 url: /id/net/working-with-list/specify-list-level/
 ---
+## Perkenalan
 
-Dalam tutorial langkah demi langkah ini, kami akan menunjukkan kepada Anda cara menentukan tingkat daftar dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan kode sumber C# yang disediakan dan menunjukkan cara mengimplementasikannya di proyek Anda sendiri.
+Hai, rekan pembuat kode! Jika Anda pernah kesulitan membuat daftar yang dinamis dan canggih di dokumen Word menggunakan .NET, Anda siap menikmatinya. Hari ini, kita menyelami dunia Aspose.Words untuk .NET. Secara khusus, kami akan fokus pada penentuan level daftar. Anggap saja sebagai meningkatkan permainan dokumen Anda, memungkinkan Anda membuat daftar yang profesional dan sempurna dengan mudah. Di akhir panduan ini, Anda akan memiliki jalur yang jelas untuk membuat daftar bernomor dan berpoin dengan berbagai tingkatan. Siap? Ayo langsung masuk!
 
- Untuk memulai, pastikan Anda telah menginstal dan mengkonfigurasi Aspose.Words for .NET di lingkungan pengembangan Anda. Jika Anda belum melakukannya, unduh dan instal perpustakaan dari[Aspose.Rilis]https://releases.aspose.com/words/net/.
+## Prasyarat
 
-## Langkah 1: Membuat Dokumen dan Pembuat Dokumen
+Sebelum kita menyelami seluk beluknya, mari pastikan kita memiliki semua yang kita butuhkan. Berikut daftar periksa singkatnya:
 
-Pertama, buat dokumen baru dan pembuat dokumen terkait:
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: IDE seperti Visual Studio akan membuat hidup Anda lebih mudah.
+3. .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.
+4. Pemahaman Dasar C#: Tutorial ini mengasumsikan Anda sudah nyaman dengan pemrograman C# dasar.
+
+Punya segalanya? Besar! Mari kita mengotori tangan kita.
+
+## Impor Namespace
+
+Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan. Buka proyek C# Anda dan tambahkan arahan penggunaan berikut:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Ini menetapkan tahapan untuk bekerja dengan Aspose.Words dalam proyek Anda.
+
+## Langkah 1: Menyiapkan Dokumen dan DocumentBuilder
+
+ Mari kita mulai dengan membuat dokumen baru dan a`DocumentBuilder` keberatan untuk bekerja dengannya.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,113 +44,83 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Membuat dan Menerapkan Daftar Bernomor
+## Langkah 2: Membuat Daftar Bernomor
 
-Selanjutnya, buat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word dan terapkan ke paragraf saat ini di pembuat dokumen:
+ Sekarang, kita akan membuat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word dan menerapkannya pada`DocumentBuilder`'s paragraf saat ini.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## Langkah 3: Daftar Spesifikasi Tingkat
+## Langkah 3: Menerapkan Beberapa Level Daftar
 
- Gunakan pembuat dokumen`ListLevelNumber` properti untuk menentukan tingkat daftar dan menambahkan teks ke paragraf:
+Aspose.Words memungkinkan Anda menentukan hingga sembilan level untuk sebuah daftar. Mari terapkan semuanya untuk melihat cara kerjanya.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-Ulangi langkah-langkah ini untuk menentukan tingkat daftar dan menambahkan teks di setiap tingkat.
+Dalam perulangan ini, kita mengatur level daftar untuk setiap paragraf dan menulis sebaris teks yang menunjukkan level tersebut.
 
-## Langkah 4: Membuat dan Menerapkan Daftar Berpoin
+## Langkah 4: Membuat Daftar Berpoin
 
-Anda juga dapat membuat dan menerapkan daftar berpoin menggunakan salah satu templat daftar Microsoft Word:
+Selanjutnya, mari beralih dan membuat daftar poin. Kali ini, kita akan menggunakan templat daftar yang berbeda.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## Langkah 5: Menambahkan Teks ke Tingkat Daftar Berpoin
+## Langkah 5: Menerapkan Beberapa Tingkat ke Daftar Berpoin
 
- Menggunakan`ListLevelNumber` properti lagi untuk menentukan tingkat daftar berpoin dan menambahkan teks:
+Sama seperti daftar bernomor, kita akan menerapkan beberapa level pada daftar berpoin.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-## Langkah 6: Hentikan Pemformatan Daftar
+## Langkah 6: Menghentikan Pemformatan Daftar
 
- Untuk menghentikan pemformatan daftar, atur`null` ke`List`properti pembuat dokumen:
-
-```csharp
-builder. ListFormat. List = null;
-```
-
-## Langkah 7: Menyimpan dokumen yang dimodifikasi
-
-Simpan dokumen yang diubah:
+Terakhir, mari kita lihat bagaimana kita dapat menghentikan pemformatan daftar untuk kembali ke teks normal.
 
 ```csharp
-builder.Document.Save(dataDir + "SpecifyListLevel.docx");
-```
-
-Jadi ! Anda telah berhasil menentukan tingkat daftar dalam dokumen Word menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk menentukan tingkat daftar
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Buat daftar bernomor berdasarkan salah satu templat daftar Microsoft Word
-//dan menerapkannya pada paragraf pembuat dokumen saat ini.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
-
-// Ada sembilan level dalam daftar ini, mari kita coba semuanya.
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Buat daftar berpoin berdasarkan salah satu templat daftar Microsoft Word
-//dan menerapkannya pada paragraf pembuat dokumen saat ini.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
-
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Ini adalah cara untuk menghentikan pemformatan daftar.
 builder.ListFormat.List = null;
-
-builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
-            
 ```
 
-### FAQ
+## Langkah 7: Menyimpan Dokumen
 
-#### T: Bagaimana cara menentukan level daftar di Aspose.Words?
+Setelah semua kerja keras itu, saatnya menyimpan dokumen kita. Mari kita simpan dengan nama yang bermakna.
 
- J: Untuk menentukan level daftar di Aspose.Words, Anda perlu membuat instance dari`List` kelas dan berikan daftar bernomor. Kemudian Anda dapat menggunakan`Paragraph.ListFormat.ListLevelNumber` properti untuk menentukan level setiap item daftar. Anda dapat mengaitkan daftar ini dengan bagian dokumen Anda sehingga item daftar memiliki tingkat yang diinginkan.
+```csharp
+builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
+```
 
-#### T: Apakah mungkin mengubah format penomoran item daftar di Aspose.Words?
+Dan itu saja! Anda baru saja membuat dokumen dengan struktur daftar kompleks menggunakan Aspose.Words untuk .NET.
 
- A: Ya, Anda dapat mengubah format penomoran item daftar di Aspose.Words. Itu`ListLevel` class menawarkan beberapa properti untuk ini, seperti`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, dll. Anda dapat menggunakan properti ini untuk mengatur format penomoran item daftar, seperti angka Arab, angka Romawi, huruf, dll.
+## Kesimpulan
 
-#### T: Bisakah saya menambahkan level tambahan ke daftar bernomor di Aspose.Words?
+Membuat daftar terstruktur dan bertingkat di dokumen Word dapat meningkatkan keterbacaan dan profesionalisme secara signifikan. Dengan Aspose.Words untuk .NET, Anda dapat mengotomatiskan proses ini, menghemat waktu dan memastikan konsistensi. Kami harap panduan ini membantu Anda memahami cara menentukan level daftar secara efektif. Teruslah bereksperimen dan lihat betapa hebatnya alat ini untuk kebutuhan pemrosesan dokumen Anda.
 
- J: Ya, dimungkinkan untuk menambahkan level tambahan ke daftar bernomor di Aspose.Words. Itu`ListLevel`kelas memungkinkan Anda mengatur properti pemformatan untuk setiap level daftar. Anda dapat mengatur opsi seperti awalan, akhiran, perataan, indentasi, dll. Ini memungkinkan Anda membuat daftar dengan berbagai tingkat hierarki.
+## FAQ
 
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan Anda membuat, mengedit, mengonversi, dan mencetak dokumen Word secara terprogram dalam C#.
 
+### Bisakah saya menggunakan Aspose.Words secara gratis?
+Aspose.Words menawarkan versi uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/) . Untuk versi lengkap, Anda dapat memeriksa opsi pembelian[Di Sini](https://purchase.aspose.com/buy).
+
+### Berapa banyak level yang dapat saya tentukan dalam daftar menggunakan Aspose.Words?
+Anda dapat menentukan hingga sembilan level dalam daftar menggunakan Aspose.Words.
+
+### Apakah mungkin untuk menggabungkan daftar bernomor dan berpoin dalam satu dokumen?
+Ya, Anda bisa menggabungkan berbagai tipe daftar dalam satu dokumen dengan mengganti templat daftar sesuai kebutuhan.
+
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+ Anda dapat menemukan dokumentasi terperinci[Di Sini](https://reference.aspose.com/words/net/).

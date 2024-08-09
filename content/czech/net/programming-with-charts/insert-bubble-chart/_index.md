@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/insert-bubble-chart/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy o tom, jak udělat vaše dokumenty Word dynamičtějšími a vizuálně přitažlivějšími? Jedním ze způsobů, jak toho dosáhnout, je začlenění grafů. V této příručce se ponoříme do specifik vkládání bublinového grafu do dokumentu aplikace Word pomocí Aspose.Words for .NET. Je to jednodušší, než si možná myslíte, a na konci tohoto tutoriálu to zvládnete bez námahy.
 
@@ -83,13 +83,13 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste vložili bublinový graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výkonný nástroj vám umožňuje snadno vytvářet dynamické a vizuálně přitažlivé dokumenty. Ať už připravujete zprávy, prezentace nebo jakýkoli jiný typ dokumentu, zvládnutí této techniky nepochybně zvýší vaši produktivitu.
+Gratuluji! Úspěšně jste vložili bublinový graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výkonný nástroj vám umožňuje snadno vytvářet dynamické a vizuálně přitažlivé dokumenty. Ať už připravujete zprávy, prezentace nebo jakýkoli jiný typ dokumentu, zvládnutí této techniky nepochybně zvýší vaši produktivitu.
 
 ## FAQ
 
 ### Mohu přizpůsobit vzhled bublinového grafu?
 
- Absolutně! Aspose.Words for .NET nabízí širokou škálu možností přizpůsobení, od barev a štítků až po formátování datových řad. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Absolutně! Aspose.Words for .NET nabízí širokou škálu možností přizpůsobení, od barev a štítků až po formátování datových řad. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Je možné přidat více grafů do jednoho dokumentu?
 
@@ -101,7 +101,7 @@ Rozhodně. I když tato příručka používá C#, Aspose.Words for .NET je komp
 
 ### Jak získám bezplatnou zkušební verzi Aspose.Words pro .NET?
 
- Můžete získat bezplatnou zkušební verzi od[webová stránka](https://releases.aspose.com/). To vám umožní vyzkoušet funkce před nákupem.
+ Můžete získat bezplatnou zkušební verzi od[webové stránky](https://releases.aspose.com/). To vám umožní vyzkoušet funkce před nákupem.
 
 ### Kde najdu další návody a podporu pro Aspose.Words pro .NET?
 

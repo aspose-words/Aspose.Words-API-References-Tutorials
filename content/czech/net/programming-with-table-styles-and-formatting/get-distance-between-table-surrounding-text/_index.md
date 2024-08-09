@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
-## Úvod
+## Zavedení
 
 Představte si, že připravujete elegantní zprávu nebo důležitý dokument a chcete, aby vaše tabulky vypadaly správně. Musíte zajistit, aby byl mezi tabulkami a textem kolem nich dostatek místa, aby byl dokument snadno čitelný a vizuálně přitažlivý. Pomocí Aspose.Words for .NET můžete tyto vzdálenosti snadno programově načíst a upravit. Tento tutoriál vás provede kroky, jak toho dosáhnout, aby vaše dokumenty vynikly extra nádechem profesionality.
 
@@ -83,7 +83,7 @@ A tady to máte! Pomocí těchto kroků můžete snadno získat vzdálenosti mez
 ## FAQ
 
 ### Mohu upravit vzdálenosti programově?
- Ano, vzdálenosti můžete upravit programově pomocí Aspose.Words nastavením`DistanceTop`, `DistanceBottom`, `DistanceRight` , a`DistanceLeft` vlastnosti`Table` objekt.
+ Ano, vzdálenosti můžete upravit programově pomocí Aspose.Words nastavením`DistanceTop`, `DistanceBottom`, `DistanceRight` a`DistanceLeft` vlastnosti`Table` objekt.
 
 ### Co když můj dokument obsahuje více tabulek?
  Můžete procházet podřízené uzly dokumentu a aplikovat stejnou metodu na každou tabulku. Použití`GetChildNodes(NodeType.Table, true)` získat všechny stoly.
@@ -95,4 +95,4 @@ Absolutně! Aspose.Words podporuje .NET Core a stejný kód s drobnými úpravam
 Aspose.Words for .NET můžete nainstalovat prostřednictvím NuGet Package Manager v sadě Visual Studio. Jednoduše vyhledejte "Aspose.Words" a nainstalujte balíček.
 
 ### Existují nějaká omezení pro typy dokumentů podporované Aspose.Words?
- Aspose.Words podporuje širokou škálu formátů dokumentů, včetně DOCX, DOC, PDF, HTML a dalších. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) pro úplný seznam podporovaných formátů.
+ Aspose.Words podporuje širokou škálu formátů dokumentů, včetně DOCX, DOC, PDF, HTML a dalších. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro úplný seznam podporovaných formátů.

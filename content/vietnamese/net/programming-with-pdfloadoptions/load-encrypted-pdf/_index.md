@@ -9,7 +9,7 @@ url: /vi/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 ## Giới thiệu
 
-Này, những người đam mê công nghệ! Bạn đã bao giờ thấy mình bị vướng vào trang web làm việc với các tệp PDF được mã hóa chưa? Nếu vậy, bạn đang ở trong một điều trị. Hôm nay, chúng ta sẽ đi sâu vào thế giới của Aspose.Words for .NET, một công cụ tuyệt vời giúp việc xử lý các tệp PDF được mã hóa trở nên dễ dàng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn từng bước của quy trình. Sẵn sàng để mở khóa một số phép thuật PDF? Bắt đầu nào!
+Này, những người đam mê công nghệ! Bạn đã bao giờ thấy mình bị vướng vào trang web làm việc với các tệp PDF được mã hóa chưa? Nếu vậy, bạn đang ở trong một điều trị. Hôm nay, chúng ta sẽ đi sâu vào thế giới của Aspose.Words for .NET, một công cụ tuyệt vời giúp việc xử lý các tệp PDF được mã hóa trở nên dễ dàng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn từng bước của quy trình. Sẵn sàng để mở khóa một số phép thuật PDF? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -89,7 +89,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Tải một tệp PDF được mã hóa bằng Aspose.Words cho .NET không chỉ dễ dàng mà còn hết sức thú vị. Bằng cách làm theo các bước này, bạn đã mở khóa khả năng xử lý mã hóa PDF như một người chuyên nghiệp. Hãy nhớ rằng, chìa khóa để thành thạo bất kỳ công cụ nào là thực hành, vì vậy đừng ngần ngại thử nghiệm và khám phá.
+Và bạn có nó! Tải một tệp PDF được mã hóa bằng Aspose.Words cho .NET không chỉ dễ dàng mà còn hết sức thú vị. Bằng cách làm theo các bước này, bạn đã mở khóa khả năng xử lý mã hóa PDF như một người chuyên nghiệp. Hãy nhớ rằng, chìa khóa để thành thạo bất kỳ công cụ nào là thực hành, vì vậy đừng ngần ngại thử nghiệm và khám phá.
 
  Nếu bạn có thắc mắc hoặc cần hỗ trợ thêm,[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/)Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) là những nơi tuyệt vời để bắt đầu.
 

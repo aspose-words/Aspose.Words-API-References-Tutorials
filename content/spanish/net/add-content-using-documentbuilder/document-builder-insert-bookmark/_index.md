@@ -16,7 +16,7 @@ Crear y administrar documentos de Word mediante programación a veces puede pare
 Antes de ensuciarnos las manos con algún código, asegurémonos de tener todo lo que necesitamos:
 
 1.  Aspose.Words para .NET: descargue e instale la última versión desde[aquí](https://releases.aspose.com/words/net/).
-2. Entorno de desarrollo: asegúrese de tener un IDE como Visual Studio configurado para el desarrollo de .NET.
+2. Entorno de desarrollo: asegúrese de tener un IDE como Visual Studio configurado para el desarrollo .NET.
 3. Conocimientos básicos de C#: será útil tener cierta familiaridad con C#.
 
 ## Importar espacios de nombres

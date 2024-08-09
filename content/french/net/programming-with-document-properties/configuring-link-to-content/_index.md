@@ -78,7 +78,7 @@ string customPropertyValue = customProperty.Value.ToString();
 
 ## Conclusion
 
- Toutes nos félicitations! Vous avez configuré avec succès un lien vers le contenu d'un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez ajouter et gérer des propriétés personnalisées liées à un contenu spécifique dans vos documents Word, rendant ainsi votre gestion de documents plus dynamique et efficace. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou demander de l'aide sur le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
+ Félicitations! Vous avez configuré avec succès un lien vers le contenu d'un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez ajouter et gérer des propriétés personnalisées liées à un contenu spécifique dans vos documents Word, rendant ainsi votre gestion de documents plus dynamique et efficace. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou demander de l'aide sur le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 

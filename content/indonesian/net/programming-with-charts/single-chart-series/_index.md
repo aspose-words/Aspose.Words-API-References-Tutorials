@@ -68,7 +68,7 @@ series1.Name = "Chart Series Name 2";
 
 ## Langkah 5: Ratakan Garisnya
 
-Ingin garis-garis itu terlihat halus dan rapi? Mari kita lakukan itu menggunakan spline Catmull-Rom.
+Ingin garis-garis itu terlihat halus dan ramping? Mari kita lakukan itu menggunakan spline Catmull-Rom.
 
 ```csharp
 series0.Smooth = true;
@@ -77,7 +77,7 @@ series1.Smooth = true;
 
 ## Langkah 6: Tangani Nilai Negatif
 
-Terkadang, data bisa negatif. Mari kita pastikan bagan kita menanganinya dengan baik.
+Terkadang, data bisa negatif. Mari kita pastikan bagan kita menangani hal itu dengan baik.
 
 ```csharp
 series0.InvertIfNegative = true;

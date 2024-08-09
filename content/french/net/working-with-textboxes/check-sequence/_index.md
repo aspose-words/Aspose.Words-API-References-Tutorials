@@ -15,7 +15,7 @@ Bonjour, amis développeurs et passionnés de documents ! 🌟 Vous êtes-vous 
 
 Avant de passer au code, assurons-nous que vous disposez de tout ce dont vous avez besoin pour commencer :
 
-1.  Aspose.Words pour la bibliothèque .NET : assurez-vous de disposer de la dernière version.[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour la bibliothèque .NET : assurez-vous de disposer de la dernière version.[Téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un environnement de développement compatible .NET comme Visual Studio.
 3. Connaissances de base en C# : la familiarité avec la syntaxe et les concepts C# vous aidera à suivre.
 4. Exemple de document Word : il est pratique d'avoir un document Word sur lequel tester votre code, mais pour cet exemple, nous allons tout créer à partir de zéro.
@@ -151,4 +151,4 @@ Oui, les zones de texte peuvent être liées dans n'importe quel ordre, y compri
 Oui, vous pouvez styliser le texte dans chaque zone de texte indépendamment, ce qui vous offre une flexibilité en matière de conception et de formatage.
 
 ### Où puis-je trouver plus de ressources sur l'utilisation des zones de texte dans Aspose.Words ?
- Pour plus d'informations, consultez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/)et[forum d'entraide](https://forum.aspose.com/c/words/8).
+ Pour plus d'informations, consultez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/)et[forum d'assistance](https://forum.aspose.com/c/words/8).

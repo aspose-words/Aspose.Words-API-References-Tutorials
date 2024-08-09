@@ -15,10 +15,10 @@ Hallo, Word-documentwizards! Heeft u zich ooit afgevraagd wat er achter de scher
 
 Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET-bibliotheek: om met Word-documenten te werken, hebt u de nieuwste versie van Aspose.Words voor .NET nodig. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET-bibliotheek: om met Word-documenten te werken, hebt u de nieuwste versie van Aspose.Words voor .NET nodig. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Een .NET-ontwikkelomgeving, zoals Visual Studio, is essentieel voor het schrijven en testen van uw code.
 3. Basiskennis van C#: Een basiskennis van C# helpt u bij het navigeren door de codefragmenten en concepten.
-4.  Voorbeeld van een Word-document: Heb een[Word document](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) met gereed voor VBA-macro's. Dit zal onze bron zijn voor het lezen van de macro's.
+4.  Voorbeeld van een Word-document: Heb een[Word-document](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) met gereed voor VBA-macro's. Dit zal onze bron zijn voor het lezen van de macro's.
 
 ## Naamruimten importeren
 
@@ -117,7 +117,7 @@ Dit is een eenvoudig voorbeeld van een VBA-macro die een berichtvenster weergeef
 
 En daar heb je het! U hebt met succes VBA-macro's uit een Word-document gelezen met Aspose.Words voor .NET. In deze zelfstudie werd alles behandeld, van het instellen van uw omgeving en het laden van uw document tot het openen van het VBA-project en het lezen van de macro's. Met Aspose.Words beschikt u over een krachtig hulpmiddel om taken te automatiseren, documenten aan te passen en diep in de wereld van VBA te duiken.
 
- Als u graag meer wilt weten, kunt u terecht bij de[API-documentatie](https://reference.aspose.com/words/net/) is een geweldige plek om te beginnen. En als u ooit vragen heeft of hulp nodig heeft, kunt u terecht bij de[Helpforum](https://forum.aspose.com/c/words/8) is er voor jou.
+ Als u graag meer wilt weten, kunt u terecht bij de[API-documentatie](https://reference.aspose.com/words/net/) is een geweldige plek om te beginnen. En als u ooit vragen heeft of hulp nodig heeft, kunt u terecht bij de[ondersteuningsforum](https://forum.aspose.com/c/words/8) is er voor jou.
 
 Veel codeerplezier en mogen uw macro's altijd soepel werken!
 

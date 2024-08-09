@@ -73,7 +73,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-Вот и все! Теперь ваш документ подписан и сохранен в формате PDF.
+И все! Теперь ваш документ подписан и сохранен в формате PDF.
 
 ## Заключение
 

@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 3: Starten Sie die Tabelle
 
- Als nächstes beginnen Sie mit der Erstellung der Tabelle mit dem`StartTable` Methode.
+ Als nächstes beginnen Sie mit der Erstellung der Tabelle mit dem`StartTable` Verfahren.
 
 ```csharp
 Table table = builder.StartTable();
@@ -168,7 +168,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum programmgesteuert
 Ja, Sie können auf unterschiedliche Zeilen oder Zellen unterschiedliche Formatierungen, einschließlich Farben, anwenden.
 
 ### Ist Aspose.Words für .NET kostenlos?
- Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, aber Sie können eine[Kostenlose Testphase](https://releases.aspose.com/).
+ Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, aber Sie können eine[Kostenlose Testversion](https://releases.aspose.com/).
 
 ### Wie erhalte ich Unterstützung für Aspose.Words für .NET?
  Unterstützung erhalten Sie vom[Aspose-Community-Foren](https://forum.aspose.com/c/words/8).

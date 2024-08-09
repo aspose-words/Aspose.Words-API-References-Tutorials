@@ -2,7 +2,7 @@
 title: คู่มือขั้นสูงสุดในการแก้ไขเอกสาร
 linktitle: คู่มือขั้นสูงสุดในการแก้ไขเอกสาร
 second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: การแก้ไขเอกสารหลักด้วย Aspose.Words สำหรับ Java! จัดการการเปลี่ยนแปลง ยอมรับ/ปฏิเสธการแก้ไข และทำงานร่วมกันได้อย่างราบรื่น เริ่มตอนนี้เลย!
+description: การแก้ไขเอกสารหลักด้วย Aspose.Words สำหรับ Java! จัดการการเปลี่ยนแปลง ยอมรับ/ปฏิเสธการแก้ไข และทำงานร่วมกันได้อย่างราบรื่น เริ่มต้นทันที!
 type: docs
 weight: 10
 url: /th/java/document-revision/guide-document-revision/

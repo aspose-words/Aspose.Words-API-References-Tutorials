@@ -13,7 +13,7 @@ is_root: true
 ## Tutoriais
 | Título | Descrição |
 | --- | --- | 
-| [Aplicar Licença](./apply-license/) | Tutoriais de diferentes variações de aplicação de licenciamento ao Aspose.Words for .NET, incluindo aplicação de licença de arquivo, fluxo e licença medida. |  
+| [Aplicar licença](./apply-license/) | Tutoriais de diferentes variações de aplicação de licenciamento ao Aspose.Words for .NET, incluindo aplicação de licença de arquivo, fluxo e licença medida. |  
 | [Habilitar recursos OpenType](./enable-opentype-features/) | Aprenda como habilitar recursos OpenType em documentos do Word com Aspose.Words for .NET. Os tutoriais guiarão você pelas etapas para ativar recursos avançados de fontes OpenType. |  
 | [Processamento de palavras com comentários](./working-with-comments/) | Explore recursos de gerenciamento de comentários em documentos do Word com Aspose.Words for .NET. Aprenda como adicionar, excluir, pesquisar e formatar comentários usando tutoriais passo a passo. |  
 | [Processamento de palavras com campos](./working-with-fields/) | Um recurso abrangente para processamento de palavras com campos em documentos do Word usando Aspose.Words for .NET. Tutoriais, exemplos e explicações detalhadas. |  
@@ -69,6 +69,6 @@ is_root: true
 | [Processamento de palavras com Pclsaveoptions](./programming-with-pclsaveoptions/) | Explore o processamento de palavras com opções de salvamento PCL no Aspose.Words for .NET. Aprenda como manipular e personalizar o salvamento de documentos do Word no formato PCL com tutoriais passo a passo e exemplos de código. |  
 | [Processamento de palavras com opções Pdfsave](./programming-with-pdfsaveoptions/) | Explore o processamento de palavras com opções de salvamento de PDF no Aspose.Words for .NET. Aprenda como gerar documentos do Word para PDF com recursos avançados por meio de tutoriais passo a passo e exemplos de código. |  
 | [Processamento de palavras com opções Rtfsave](./programming-with-rtfsaveoptions/) | Explore o processamento de palavras com opções de salvamento RTF no Aspose.Words for .NET. Aprenda como salvar e personalizar documentos RTF com tutoriais passo a passo e exemplos de código C#. |  
-| [Processamento de palavras com opções Txtsave](./programming-with-txtsaveoptions/) | Aprenda como programar com opções de salvamento de arquivos de texto no Aspose.Words for .NET. Aprenda como especificar codificação, formatar texto, gerenciar quebras de linha e muito mais com tutoriais passo a passo e exemplos de código em C#. |  
+| [Processamento de palavras com opções Txtsave](./programming-with-txtsaveoptions/) | Aprenda como programar com opções de salvamento de arquivos de texto em Aspose.Words for .NET. Aprenda como especificar codificação, formatar texto, gerenciar quebras de linha e muito mais com tutoriais passo a passo e exemplos de código em C#. |  
 | [Conversões básicas](./basic-conversions/) | Aprenda conversões básicas com Aspose.Words for .NET. Converta facilmente documentos do Word para outros formatos, como PDF, HTML, RTF e muito mais. |  
 | [Processamento de palavras com formato de arquivo](./programming-with-fileformat/) | Aprenda como trabalhar com formatos de arquivo no Aspose.Words for .NET. Os tutoriais orientam você nos vários recursos, como detecção de formato de arquivo e conversão entre formatos. |  

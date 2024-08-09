@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-fonts/receive-warning-notification/
 ---
+## Introduktion
 
 Är du trött på att ta itu med oväntade teckensnittsproblem i dina dokument? Med Aspose.Words för .NET kan du få meddelanden om eventuella problem under dokumentbearbetningen, vilket gör det lättare att upprätthålla dokumentkvaliteten. Denna omfattande guide kommer att leda dig genom att ställa in varningsmeddelanden i Aspose.Words, vilket säkerställer att du aldrig missar en avgörande varning igen.
 
@@ -101,11 +102,11 @@ Nej, du kan bara ange ett standardteckensnitt för ersättning. Du kan dock konf
 
 ###  F3: Kan jag hantera andra typer av varningar med`IWarningCallback`?
 
- Ja den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
+ Ja, den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
 
 ### F4: Var kan jag hitta support för Aspose.Words?
 
- Besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för assistens.
+ Besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för hjälp.
 
 ### F5: Är det möjligt att få en tillfällig licens för Aspose.Words?
 

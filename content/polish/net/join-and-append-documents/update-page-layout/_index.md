@@ -9,13 +9,13 @@ url: /pl/net/join-and-append-documents/update-page-layout/
 ---
 ## Wstęp
 
-No hej! Jeśli kiedykolwiek programowo pracowałeś z dokumentami programu Word, wiesz, jak ważne jest efektywne zarządzanie układami stron. Niezależnie od tego, czy generujesz raporty, tworzysz szablony, czy po prostu poprawiasz projekty dokumentów, utrzymanie świeżości i dokładności układów stron ma kluczowe znaczenie. Dzisiaj zagłębimy się w sposób aktualizowania układów stron w dokumentach programu Word za pomocą Aspose.Words dla .NET. Przeprowadzimy Cię przez ten proces krok po kroku, dzięki czemu będziesz mógł pewnie zarządzać układami swoich dokumentów i mieć pewność, że wszystko wygląda dobrze.
+Hej tam! Jeśli kiedykolwiek programowo pracowałeś z dokumentami programu Word, wiesz, jak ważne jest efektywne zarządzanie układami stron. Niezależnie od tego, czy generujesz raporty, tworzysz szablony, czy po prostu poprawiasz projekty dokumentów, utrzymanie świeżości i dokładności układów stron ma kluczowe znaczenie. Dzisiaj zagłębimy się w sposób aktualizowania układów stron w dokumentach programu Word za pomocą Aspose.Words dla .NET. Przeprowadzimy Cię przez ten proces krok po kroku, dzięki czemu będziesz mógł pewnie zarządzać układem swoich dokumentów i mieć pewność, że wszystko wygląda dobrze.
 
 ## Warunki wstępne
 
 Zanim zaczniemy, upewnij się, że masz przygotowane następujące elementy:
 
-1.  Aspose.Words dla .NET: Ta biblioteka jest niezbędna do programowego manipulowania dokumentami programu Word. Jeśli jeszcze tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Ta biblioteka jest niezbędna do programowego manipulowania dokumentami programu Word. Jeśli jeszcze tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
    
 2. Visual Studio: będziesz potrzebować IDE, aby napisać i uruchomić kod .NET. Visual Studio to popularny wybór.
 

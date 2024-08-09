@@ -16,7 +16,7 @@ Si es un desarrollador que busca automatizar la creación y el formato de docume
 Antes de entrar en los detalles esenciales, asegurémonos de que tiene todo lo que necesita para seguir este tutorial.
 
 1. Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo. Visual Studio es una gran elección.
-2.  Aspose.Words para .NET: descargue e instale la biblioteca Aspose.Words para .NET. Puedes conseguirlo[aquí](https://releases.aspose.com/words/net/).
+2.  Aspose.Words para .NET: descargue e instale la biblioteca Aspose.Words para .NET. puedes conseguirlo[aquí](https://releases.aspose.com/words/net/).
 3.  Licencia: Obtenga una licencia temporal si no tiene una completa. Consíguelo[aquí](https://purchase.aspose.com/temporary-license/).
 4. Conocimientos básicos de C#: será beneficiosa la familiaridad con C# y .NET Framework.
 

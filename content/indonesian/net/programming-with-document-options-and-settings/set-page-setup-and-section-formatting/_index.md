@@ -15,7 +15,7 @@ Dalam hal manipulasi dokumen, mengatur tata letak halaman dan memformat bagian d
 
 Sebelum kita mendalami kodenya, mari kita bahas apa yang Anda perlukan untuk memulai.
 
--  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Semua IDE yang kompatibel dengan .NET (misalnya, Visual Studio).
 - Pengetahuan Dasar C#: Keakraban dengan pemrograman C# sangat penting.
 
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
 
 Dan itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda telah mempelajari cara mengatur orientasi halaman, menyesuaikan margin, dan memilih ukuran kertas menggunakan Aspose.Words untuk .NET. Fitur-fitur ini memungkinkan Anda membuat dokumen yang terstruktur dengan baik dan berformat profesional secara terprogram.
 
-Baik Anda mengerjakan proyek kecil atau menangani pemrosesan dokumen skala besar, menguasai pengaturan dasar ini dapat meningkatkan presentasi dan kegunaan dokumen Anda secara signifikan. Selami lebih dalam[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk fitur lanjutan dan opsi penyesuaian lainnya.
+Baik Anda mengerjakan proyek kecil atau menangani pemrosesan dokumen berskala besar, menguasai pengaturan dasar ini dapat meningkatkan presentasi dan kegunaan dokumen Anda secara signifikan. Selami lebih dalam[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk fitur lanjutan dan opsi penyesuaian lainnya.
 
 ## FAQ
 

@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt faktiska dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt faktiska dokument.
 
 ## Steg 2: Identifiera och konvertera fält
 
@@ -62,7 +62,7 @@ Spara det ändrade dokumentet efter att ha konverterat fälten:
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
- Justera`"WorkingWithFields.ConvertFieldsInBody.docx"` för att ange den önskade sökvägen för utdatafilen.
+ Justera`"WorkingWithFields.ConvertFieldsInBody.docx"` för att ange önskad sökväg för utdatafilen.
 
 ## Slutsats
 

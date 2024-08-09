@@ -79,7 +79,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- Ở đây, chúng tôi thêm ba phần tử vào danh sách của mình, mỗi phần tử có mức độ thụt lề tăng dần. Các`ListIndent` phương pháp được sử dụng để tăng mức độ thụt lề cho mỗi mục tiếp theo.
+ Ở đây, chúng tôi thêm ba phần tử vào danh sách của mình, mỗi phần tử có mức độ thụt lề tăng dần. các`ListIndent` phương pháp được sử dụng để tăng mức độ thụt lề cho mỗi mục tiếp theo.
 
 ## Bước 4: Định cấu hình tùy chọn lưu
 
@@ -92,7 +92,7 @@ saveOptions.ListIndentation.Count = 1;
 saveOptions.ListIndentation.Character = '\t';
 ```
 
- Chúng tôi cấu hình`TxtSaveOptions` để sử dụng các ký tự tab để thụt lề trong tệp văn bản đã lưu. Các`ListIndentation.Character` tài sản được đặt thành`'\t'`, đại diện cho một ký tự tab.
+ Chúng tôi cấu hình`TxtSaveOptions` để sử dụng các ký tự tab để thụt lề trong tệp văn bản đã lưu. các`ListIndentation.Character` tài sản được đặt thành`'\t'`, đại diện cho một ký tự tab.
 
 ## Bước 5: Lưu tài liệu
 

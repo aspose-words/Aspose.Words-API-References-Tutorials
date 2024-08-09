@@ -9,7 +9,7 @@ url: /hu/net/programming-with-rtfloadoptions/recognize-utf8-text/
 ---
 ## Bevezetés
 
-Készen állsz, hogy elmerülj néhány fantasztikus technikai dologban? Ma az UTF-8 szöveg felismerésével fogunk foglalkozni a Word dokumentumokban az Aspose.Words for .NET használatával. Ha több nyelven vagy speciális karakterekkel dolgozik, akkor ez egy játékmódot jelent. Szóval, csatt, és kezdjük!
+Készen állsz, hogy elmerülj néhány fantasztikus technikai dologban? Ma az UTF-8 szöveg felismerésével fogunk foglalkozni a Word dokumentumokban az Aspose.Words for .NET használatával. Ha több nyelven vagy speciális karakterekkel dolgozik, akkor ez egy játékmódot jelent. Szóval, kösd be, és kezdjük!
 
 ## Előfeltételek
 
@@ -49,7 +49,7 @@ Ezután konfigurálnunk kell a betöltési beállításokat az UTF-8 szöveg fel
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- A beállítással`RecognizeUtf8Text` nak nek`true`, azt mondjuk az Aspose.Words-nek, hogy vigyázzon az UTF-8 szövegekre. Ez rendkívül praktikus, ha különféle karaktereket tartalmazó dokumentumokat kezel.
+ Beállítás által`RecognizeUtf8Text` hogy`true`, azt mondjuk az Aspose.Words-nek, hogy vigyázzon az UTF-8 szövegekre. Ez rendkívül praktikus, ha különféle karaktereket tartalmazó dokumentumokat kezel.
 
 ## 3. lépés: Töltse be a dokumentumot
 
@@ -75,7 +75,7 @@ Ez a sor új néven menti a dokumentumot, így könnyen azonosítható a feldolg
 
 És megvan! Most tanulta meg, hogyan ismerhet fel UTF-8 szöveget Word dokumentumokban az Aspose.Words for .NET használatával. Ez a kis trükk rengeteg fejfájástól kíméli meg Önt, ha többnyelvű dokumentumokkal vagy speciális karakterekkel dolgozik.
 
-Ne feledje, hogy a legfontosabb lépések a betöltési beállítások beállítása, a dokumentum betöltése és mentése. Ennyire egyszerű! Szóval, menj és próbáld ki. Meg fog lepődni, hogy milyen egyszerű összetett szövegek kezelése a Word-dokumentumokban.
+Ne feledje, hogy a legfontosabb lépések a betöltési beállítások beállítása, a dokumentum betöltése és mentése. Ez ilyen egyszerű! Szóval, menj és próbáld ki. Meg fog lepődni, hogy milyen egyszerű összetett szövegek kezelése a Word-dokumentumokban.
 
 ## GYIK
 

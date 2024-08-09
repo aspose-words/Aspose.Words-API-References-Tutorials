@@ -8,7 +8,7 @@ weight: 11
 url: /it/python-net/content-extraction-and-manipulation/document-content-extraction/
 ---
 
-## introduzione
+## Introduzione
 
 L'estrazione efficiente del contenuto dai documenti Word è un requisito comune nell'elaborazione dei dati, nell'analisi del contenuto e altro ancora. Aspose.Words for Python è una potente libreria che fornisce strumenti completi per lavorare con documenti Word a livello di codice.
 

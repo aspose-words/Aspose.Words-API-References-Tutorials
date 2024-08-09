@@ -128,7 +128,7 @@ doc.save("output.txt", saveOptions);
 
 ### 텍스트 출력에 bidi 표시를 어떻게 추가합니까?
 
- 텍스트 출력에 bidi 표시를 추가하려면`AddBidiMarks` 의 자산`TxtSaveOptions` 에게`true`. 예를 들어:
+ 텍스트 출력에 bidi 표시를 추가하려면`AddBidiMarks` 재산`TxtSaveOptions` 에게`true`. 예를 들어:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -137,7 +137,7 @@ saveOptions.setAddBidiMarks(true);
 
 ### 목록 들여쓰기 문자를 사용자 정의할 수 있나요?
 
- 예, 다음을 구성하여 목록 들여쓰기 문자를 사용자 정의할 수 있습니다.`ListIndentation` 의 자산`TxtSaveOptions`. 예를 들어 목록 들여쓰기에 탭 문자를 사용하려면 다음을 수행할 수 있습니다.
+ 예, 다음을 구성하여 목록 들여쓰기 문자를 사용자 정의할 수 있습니다.`ListIndentation` 재산`TxtSaveOptions`. 예를 들어 목록 들여쓰기에 탭 문자를 사용하려면 다음을 수행할 수 있습니다.
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();

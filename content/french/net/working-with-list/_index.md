@@ -13,6 +13,6 @@ Le traitement de mots avec des listes est une ressource complète qui vous guide
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Redémarrer la liste à chaque section](./restart-list-at-each-section/)  | Découvrez comment réinitialiser une liste numérotée pour chaque section d'un document Word avec Aspose.Words pour .NET. |
-| [Spécifier le niveau de liste](./specify-list-level/) | Découvrez comment spécifier le niveau de liste dans un document Word avec Aspose.Words pour .NET. |
-| [Numéro de liste de redémarrage](./restart-list-number/) | Découvrez comment réinitialiser le numéro d'une liste dans un document Word avec Aspose.Words pour .NET. |
+| [Redémarrer la liste à chaque section](./restart-list-at-each-section/)  | Découvrez comment redémarrer des listes dans chaque section des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé étape par étape pour gérer efficacement les listes. |
+| [Spécifier le niveau de liste](./specify-list-level/) | Découvrez comment créer des listes numérotées et à puces à plusieurs niveaux dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape inclus. Parfait pour les développeurs .NET. |
+| [Numéro de liste de redémarrage](./restart-list-number/) | Découvrez comment redémarrer les numéros de liste dans les documents Word à l'aide d'Aspose.Words pour .NET. Ce guide détaillé de 2 000 mots couvre tout ce que vous devez savoir, de la configuration à la personnalisation avancée. |

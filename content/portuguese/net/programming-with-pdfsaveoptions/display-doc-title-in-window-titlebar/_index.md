@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Definindo`DisplayDocTitle` para`true`, instruímos o Aspose.Words a usar o título do documento na barra de título da janela do PDF.
+ Ao definir`DisplayDocTitle` para`true`, instruímos o Aspose.Words a usar o título do documento na barra de título da janela do PDF.
 
 ## Etapa 3: salve o documento como PDF
 

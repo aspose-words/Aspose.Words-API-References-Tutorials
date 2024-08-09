@@ -55,7 +55,7 @@ doc.FirstSection.Remove();
 ## 常見問題解答
 
 ### 我可以一次刪除多個部分嗎？
-是的你可以。只需循環瀏覽要刪除的部分並將其一一刪除即可。
+是的，你可以。只需循環瀏覽要刪除的部分並將其一一刪除即可。
 
 ### Aspose.Words for .NET 是免費的嗎？
  Aspose.Words 提供免費試用版，您可以取得[這裡](https://releases.aspose.com/)。如需完整功能，您需要購買許可證[這裡](https://purchase.aspose.com/buy).

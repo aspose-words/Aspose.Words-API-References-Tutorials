@@ -15,7 +15,7 @@ Les graphiques sont un outil puissant pour visualiser les données. Lorsque vous
 
 Avant de vous lancer dans le codage, vous devez mettre en place quelques prérequis :
 
-1. Aspose.Words for .NET : assurez-vous de disposer de la bibliothèque Aspose.Words for .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET : assurez-vous de disposer de la bibliothèque Aspose.Words for .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : vous avez besoin d'un environnement de développement intégré (IDE) comme Visual Studio.
 3. .NET Framework : assurez-vous que votre environnement de développement est configuré pour le développement .NET.
 4. Connaissance de base de C# : ce guide suppose que vous possédez une compréhension de base de la programmation C#.

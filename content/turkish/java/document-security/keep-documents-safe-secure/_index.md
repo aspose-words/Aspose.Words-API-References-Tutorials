@@ -24,7 +24,7 @@ Teknik konulara girmeden önce belge güvenliğinin temel kavramlarını anlayal
  Belgelerinize erişimi bir parolayla kısıtlayarak yalnızca yetkili kullanıcıların bunları açıp görüntüleyebilmesini sağlayın.
 - #### Şifreleme:
  Belgenin içeriğini şifreleme algoritmalarını kullanarak şifreli bir formata dönüştürün, böylece doğru şifre çözme anahtarı olmadan şifresi çözülemez hale gelir.
-- #### Dijital imzalar:
+- #### Dijital İmzalar:
  Belgenin gerçekliğini ve bütünlüğünü doğrulamak için dijital imzalar ekleyin.
 - #### Filigranlama:
  Sahipliği veya gizliliği belirtmek için görünür veya görünmez filigranları üst üste koyun.
@@ -37,7 +37,7 @@ Belge şifreleme, içeriği yetkisiz kullanıcılar tarafından okunamaz hale ge
 
 ## 3. Aspose.Words for Java'ya Başlarken
 
-Belge güvenliğine geçmeden önce Aspose.Words for Java'yı tanıyalım. Java geliştiricilerinin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan, zengin özelliklere sahip bir kitaplıktır. Başlamak:
+Belge güvenliğine geçmeden önce Aspose.Words for Java'yı tanıyalım. Java geliştiricilerinin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan, zengin özelliklere sahip bir kitaplıktır. Başlamak için:
 
 1. ### Aspose.Words for Java'yı indirin:
   Ziyaret edin[Aspose.Release'ler](https://releases.aspose.com/words/java/) ve Aspose.Words for Java'nın en son sürümünü indirin.
@@ -63,7 +63,7 @@ Aspose.Words for Java'nın kurulumu basit bir işlemdir. Kitaplığı Java proje
 
 Artık Aspose.Words for Java'yı kurduğumuza göre belgelerimizin güvenliğini sağlamaya geçebiliriz.
 
-## 5. Belgelerin Yüklenmesi ve Erişilmesi
+## 5. Belgeleri Yükleme ve Erişme
 
 Aspose.Words for Java kullanarak belgelerle çalışmak için bunları Java uygulamanıza yüklemeniz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
@@ -199,7 +199,7 @@ Güvenlik önlemlerini uyguladıktan sonra çeşitli senaryolarda güvende kald�
 
 ## 14. Sonuç
 
-Bu adım adım kılavuzda belge güvenliğinin önemini ve Aspose.Words for Java'nın belgelerinizi yetkisiz erişime karşı korumaya nasıl yardımcı olabileceğini inceledik. Kitaplığın parola koruması, şifreleme, dijital imza, filigran ekleme ve redaksiyon gibi özelliklerinden yararlanarak belgelerinizin güvende ve emniyette kalmasını sağlayabilirsiniz.
+Bu adım adım kılavuzda belge güvenliğinin önemini ve Aspose.Words for Java'nın belgelerinizi yetkisiz erişime karşı nasıl koruyabileceğini inceledik. Kitaplığın parola koruması, şifreleme, dijital imza, filigran ekleme ve redaksiyon gibi özelliklerinden yararlanarak belgelerinizin güvende ve emniyette kalmasını sağlayabilirsiniz.
 
 ## SSS
 

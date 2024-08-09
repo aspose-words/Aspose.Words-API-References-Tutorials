@@ -12,6 +12,6 @@ Processamento de palavras com hifenização é um recurso abrangente que orienta
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Hifenizar palavras de idiomas](./hyphenate-words-of-languages/) | Aprenda como hifenizar palavras em diferentes idiomas em documentos do Word usando Aspose.Words for .NET. |
-| [Carregar dicionário de hifenização para idioma](./load-hyphenation-dictionary-for-language/) |Aprenda como carregar um dicionário de hifenização para um idioma específico em Aspose.Words for .NET. |
-| [Retorno de chamada de hifenização](./hyphenation-callback/) | Aprenda como usar o retorno de chamada de hifenização em Aspose.Words for .NET para lidar com a hifenização de palavras. |
+| [Hifenizar palavras de idiomas](./hyphenate-words-of-languages/) | Aprenda como hifenizar palavras em diferentes idiomas usando Aspose.Words for .NET. Siga este guia passo a passo detalhado para melhorar a legibilidade do seu documento. |
+| [Carregar dicionário de hifenização para idioma](./load-hyphenation-dictionary-for-language/) | Aprenda como carregar um dicionário de hifenização para qualquer idioma usando Aspose.Words for .NET neste tutorial passo a passo abrangente. |
+| [Retorno de chamada de hifenização](./hyphenation-callback/) | Aprenda a implementar o retorno de chamada de hifenização no Aspose.Words for .NET para aprimorar a formatação de documentos com este guia passo a passo abrangente. |

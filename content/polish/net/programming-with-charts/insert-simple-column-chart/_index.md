@@ -94,4 +94,4 @@ Tak, możesz bezproblemowo eksportować dokumenty zawierające wykresy do różn
 Tak, Aspose.Words dla .NET umożliwia dynamiczne wypełnianie wykresów danymi ze źródeł zewnętrznych, takich jak bazy danych lub interfejsy API.
 
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words dla .NET?
- Odwiedzić[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe odniesienia do API i przykłady. Aby uzyskać pomoc, możesz również odwiedzić stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Odwiedź[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe odniesienia do API i przykłady. Aby uzyskać pomoc, możesz również odwiedzić stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

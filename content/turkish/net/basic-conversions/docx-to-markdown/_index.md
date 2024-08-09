@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. Adım: Belge İçeriğini Yönetin
 
- Kullan`DocumentBuilder` İçeriği gerektiği gibi değiştirmek için nesne. Örneğin, metin veya biçimlendirme ekleyin.
+ Kullanın`DocumentBuilder` İçeriği gerektiği gibi değiştirmek için nesne. Örneğin, metin veya biçimlendirme ekleyin.
 
 ```csharp
 builder.Writeln("Insert your text or content manipulation code here!");

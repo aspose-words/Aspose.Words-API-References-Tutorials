@@ -18,7 +18,7 @@ Les polices jouent un rôle crucial dans la conception et la lisibilité des doc
 
 Avant de plonger dans le code, assurez-vous d'avoir les conditions préalables suivantes en place :
 
-1.  Bibliothèque Aspose.Words pour Java : assurez-vous d'avoir téléchargé et installé la bibliothèque Aspose.Words pour Java. Tu peux[Télécharger les ici](https://releases.aspose.com/words/java/).
+1.  Bibliothèque Aspose.Words pour Java : assurez-vous d'avoir téléchargé et installé la bibliothèque Aspose.Words pour Java. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/java/).
 
 2. Environnement de développement Java : assurez-vous d'avoir configuré un environnement de développement Java.
 
@@ -69,7 +69,7 @@ public class FontFormattingDemo {
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris à utiliser les polices dans Aspose.Words pour Java. Ces connaissances vous permettront de créer des documents magnifiquement formatés et adaptés à vos besoins spécifiques.
+Félicitations! Vous avez appris à utiliser les polices dans Aspose.Words pour Java. Ces connaissances vous permettront de créer des documents magnifiquement formatés et adaptés à vos besoins spécifiques.
 
  Si vous ne l'avez pas déjà fait,[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/java/) dès maintenant et commencez à améliorer vos capacités de traitement de documents.
 

@@ -9,7 +9,7 @@ url: /vi/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thử thao tác các hình dạng trong tài liệu Word của mình và thắc mắc về kích thước chính xác của chúng chưa? Biết giới hạn chính xác của hình dạng có thể rất quan trọng đối với các tác vụ định dạng và chỉnh sửa tài liệu khác nhau. Cho dù bạn đang tạo một báo cáo chi tiết, một bản tin ưa thích hay một tờ rơi phức tạp, việc hiểu rõ kích thước hình dạng sẽ đảm bảo thiết kế của bạn trông vừa vặn. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách lấy giới hạn thực tế của các hình dạng theo điểm bằng cách sử dụng Aspose.Words cho .NET. Sẵn sàng để làm cho hình dạng của bạn trở nên hoàn hảo như tranh vẽ? Bắt đầu nào!
+Bạn đã bao giờ thử thao tác các hình dạng trong tài liệu Word của mình và thắc mắc về kích thước chính xác của chúng chưa? Biết giới hạn chính xác của hình dạng có thể rất quan trọng đối với các tác vụ định dạng và chỉnh sửa tài liệu khác nhau. Cho dù bạn đang tạo một báo cáo chi tiết, một bản tin ưa thích hay một tờ rơi phức tạp, việc hiểu rõ kích thước hình dạng sẽ đảm bảo thiết kế của bạn trông vừa vặn. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách lấy giới hạn thực tế của các hình dạng theo điểm bằng cách sử dụng Aspose.Words cho .NET. Sẵn sàng để làm cho hình dạng của bạn trở nên hoàn hảo như tranh vẽ? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -69,11 +69,11 @@ Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
- Các`GetShapeRenderer` phương thức cung cấp trình kết xuất cho hình dạng và`BoundsInPoints` cho chúng ta kích thước chính xác.
+ các`GetShapeRenderer` phương thức cung cấp trình kết xuất cho hình dạng và`BoundsInPoints` cho chúng ta kích thước chính xác.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã truy xuất thành công giới hạn thực tế của hình dạng theo điểm bằng Aspose.Words for .NET. Kiến thức này cho phép bạn thao tác và định vị các hình dạng một cách chính xác, đảm bảo tài liệu của bạn trông chính xác như cách bạn hình dung. Cho dù bạn đang thiết kế các bố cục phức tạp hay chỉ cần điều chỉnh một phần tử, việc hiểu các giới hạn hình dạng là yếu tố thay đổi cuộc chơi.
+Và bạn có nó! Bạn đã truy xuất thành công giới hạn thực tế của hình dạng theo điểm bằng Aspose.Words for .NET. Kiến thức này cho phép bạn thao tác và định vị các hình dạng một cách chính xác, đảm bảo tài liệu của bạn trông chính xác như cách bạn hình dung. Cho dù bạn đang thiết kế các bố cục phức tạp hay chỉ cần điều chỉnh một phần tử, việc hiểu các giới hạn hình dạng là yếu tố thay đổi cuộc chơi.
 
 ## Câu hỏi thường gặp
 

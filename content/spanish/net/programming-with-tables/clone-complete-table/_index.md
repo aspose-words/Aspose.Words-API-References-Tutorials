@@ -77,7 +77,7 @@ Table tableClone = (Table) table.Clone(true);
 
 ## Paso 5: inserte la tabla clonada en el documento
 
- Inserte la tabla clonada en el documento inmediatamente después de la tabla original. Utilizar el`InsertAfter` método para esto.
+ Inserte la tabla clonada en el documento inmediatamente después de la tabla original. Utilice el`InsertAfter` método para esto.
 
 ```csharp
 table.ParentNode.InsertAfter(tableClone, table);

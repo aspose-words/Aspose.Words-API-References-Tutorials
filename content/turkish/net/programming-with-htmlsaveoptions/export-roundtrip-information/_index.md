@@ -15,7 +15,7 @@ Aspose.Words for .NET'in muhteşem dünyasına hoş geldiniz! Bugün, çok fazla
 
 Somun ve cıvatalara geçmeden önce ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım:
 
-1.  Aspose.Words for .NET: En son sürüme sahip olduğunuzdan emin olun.[Buradan indir](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: En son sürüme sahip olduğunuzdan emin olun.[Buradan indirin](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya herhangi bir C# uyumlu IDE.
 3. Temel C# Bilgisi: C# ve .NET çerçevesine biraz aşina olmak yardımcı olur.
 4. Lisans: Tam lisansınız yoksa geçici bir lisans kullanabilirsiniz. Anla[Burada](https://purchase.aspose.com/temporary-license/).
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ## Çözüm
 
-İşte buyur! Yalnızca birkaç satır kodla, Aspose.Words for .NET'i kullanarak gidiş-dönüş bilgilerini bir Word belgesinden HTML'ye başarıyla aktardınız. Bu güçlü özellik, belgelerinizin dönüşümler sırasında bütünlüğünü ve formatını korumasını sağlayarak hayatınızı çok daha kolaylaştırır.
+Ve işte karşınızda! Yalnızca birkaç satır kodla, Aspose.Words for .NET'i kullanarak gidiş-dönüş bilgilerini bir Word belgesinden HTML'ye başarıyla aktardınız. Bu güçlü özellik, belgelerinizin dönüşümler sırasında bütünlüğünü ve formatını korumasını sağlayarak hayatınızı çok daha kolaylaştırır.
 
 ## SSS'ler
 

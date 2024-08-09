@@ -7,16 +7,16 @@ type: docs
 weight: 10
 url: /cs/net/apply-license/apply-license-from-file/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Pokud se ponoříte do světa Aspose.Words pro .NET, budete se těšit. Tato výkonná knihovna umožňuje vytvářet, upravovat a převádět dokumenty aplikace Word programově. Než ale začnete, je nezbytné vědět, jak použít licenci ze souboru, abyste odemkli jeho plný potenciál. V této příručce vás provedeme procesem krok za krokem a zajistíme, že si svou licenci nastavíte rychle a efektivně.
+Ahoj! Pokud se ponoříte do světa Aspose.Words pro .NET, budete se těšit. Tato výkonná knihovna umožňuje vytvářet, upravovat a převádět dokumenty aplikace Word programově. Než ale začnete, je nezbytné vědět, jak použít licenci ze souboru, abyste odemkli jeho plný potenciál. V této příručce vás provedeme procesem krok za krokem a zajistíme, že si svou licenci nastavíte rychle a efektivně.
 
 ## Předpoklady
 
 Než se ponoříme do hrubších detailů, ujistěte se, že máte vše, co potřebujete:
 
 1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[Aspose stránku vydání](https://releases.aspose.com/words/net/).
-2.  Platný licenční soubor Aspose: Pokud jej ještě nemáte, můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo si jeden kupte od[tady](https://purchase.aspose.com/buy).
+2.  Platný licenční soubor Aspose: Pokud jej ještě nemáte, můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo si jeden kupte od[zde](https://purchase.aspose.com/buy).
 3. Vývojové prostředí: IDE jako Visual Studio.
 4. Základní porozumění C#: To vám pomůže sledovat příklady kódu.
 
@@ -65,7 +65,7 @@ catch (Exception e)
 
 ## Krok 4: Ověřte licenci
 
- Jakmile licenci nastavíte, je dobré ověřit, zda byla správně aplikována. Můžete to udělat zaškrtnutím`IsLicensed` majetek z`License` třída.
+ Jakmile licenci nastavíte, je dobré ověřit, zda byla správně aplikována. Můžete to udělat zaškrtnutím`IsLicensed` vlastnictvím`License` třída.
 
 ```csharp
 if (license.IsLicensed)

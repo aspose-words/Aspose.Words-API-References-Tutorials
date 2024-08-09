@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
-## introduzione
+## Introduzione
 
 Immagina di preparare un report elegante o un documento importante e di volere che le tue tabelle abbiano l'aspetto giusto. È necessario assicurarsi che ci sia spazio sufficiente tra le tabelle e il testo attorno ad esse, rendendo il documento facile da leggere e visivamente accattivante. Utilizzando Aspose.Words per .NET, puoi facilmente recuperare e regolare queste distanze a livello di codice. Questo tutorial ti guiderà attraverso i passaggi per raggiungere questo obiettivo, facendo risaltare i tuoi documenti con quel tocco di professionalità in più.
 
@@ -78,7 +78,7 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, puoi facilmente recuperare le distanze tra una tabella e il testo circostante nei tuoi documenti Word utilizzando Aspose.Words per .NET. Questa tecnica semplice ma potente ti consente di ottimizzare il layout del tuo documento, rendendolo più leggibile e visivamente accattivante. Buona programmazione!
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente recuperare le distanze tra una tabella e il testo circostante nei tuoi documenti Word utilizzando Aspose.Words per .NET. Questa tecnica semplice ma potente ti consente di ottimizzare il layout del tuo documento, rendendolo più leggibile e visivamente accattivante. Buona programmazione!
 
 ## Domande frequenti
 

@@ -2,11 +2,12 @@
 title: Atur Pengaturan Penggantian Font
 linktitle: Atur Pengaturan Penggantian Font
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyiapkan Pengaturan Penggantian Font di Aspose.Words untuk .NET. Panduan komprehensif ini memastikan semua karakter dalam dokumen Anda ditampilkan dengan benar.
+description: Pelajari cara mengatur Pengaturan Penggantian Font di Aspose.Words untuk .NET. Panduan komprehensif ini memastikan semua karakter dalam dokumen Anda ditampilkan dengan benar.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Perkenalan
 
 Saat bekerja dengan dokumen yang berisi beragam elemen teks, seperti bahasa berbeda atau karakter khusus, penting untuk memastikan bahwa elemen tersebut ditampilkan dengan benar. Aspose.Words untuk .NET menawarkan fitur canggih yang disebut Pengaturan Penggantian Font, yang membantu dalam menentukan aturan untuk mengganti font ketika font asli tidak mendukung karakter tertentu. Dalam panduan ini, kita akan mempelajari cara menyiapkan Pengaturan Penggantian Font menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah.
 
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Langkah 4: Terapkan Pengaturan Font ke Dokumen
 
- Tetapkan yang dikonfigurasi`FontSettings` ke dokumen. Hal ini memastikan bahwa aturan penggantian font diterapkan saat merender dokumen.
+ Tetapkan yang dikonfigurasi`FontSettings`ke dokumen. Hal ini memastikan bahwa aturan penggantian font diterapkan saat merender dokumen.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -74,7 +75,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ## File XML: Aturan Penggantian Font
 
-Berikut adalah contoh tampilan file XML Anda yang mendefinisikan aturan penggantian font:
+Berikut adalah contoh tampilan file XML Anda yang menentukan aturan penggantian font:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

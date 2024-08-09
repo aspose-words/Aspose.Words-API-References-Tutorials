@@ -33,10 +33,10 @@ using Aspose.Words;
 
 ## الخطوة 1: قم بإعداد مشروعك
 
-قبل الغوص في التعليمات البرمجية، تحتاج إلى إعداد مشروعك. إليك الطريقة:
+قبل الغوص في التعليمات البرمجية، تحتاج إلى إعداد مشروعك. وإليك الطريقة:
 
 1. افتح Visual Studio: ابدأ بتشغيل Visual Studio وإنشاء مشروع C# جديد.
-2.  تثبيت Aspose.Words: استخدم NuGet Package Manager لتثبيت Aspose.Words لـ .NET. يمكن ان تجدها[هنا](https://releases.aspose.com/words/net/).
+2.  تثبيت Aspose.Words: استخدم NuGet Package Manager لتثبيت Aspose.Words لـ .NET. يمكنك العثور عليه[هنا](https://releases.aspose.com/words/net/).
 
 ```shell
 Install-Package Aspose.Words
@@ -74,7 +74,7 @@ Install-Package Aspose.Words
 
 ## خاتمة
 
-وهناك لديك! يعد تحويل ملف PDF إلى JPEG باستخدام Aspose.Words لـ .NET أمرًا سهلاً مثل الفطيرة. باستخدام بضعة أسطر فقط من التعليمات البرمجية، يمكنك تحويل مستنداتك وفتح عالم من الإمكانيات. سواء كنت مطورًا يتطلع إلى تبسيط سير العمل لديك أو مجرد شخص يحب تعديل التعليمات البرمجية، فإن Aspose.Words يوفر لك كل ما تحتاجه.
+وهنا لديك! يعد تحويل ملف PDF إلى JPEG باستخدام Aspose.Words لـ .NET أمرًا سهلاً مثل الفطيرة. باستخدام بضعة أسطر فقط من التعليمات البرمجية، يمكنك تحويل مستنداتك وفتح عالم من الإمكانيات. سواء كنت مطورًا يتطلع إلى تبسيط سير العمل لديك أو مجرد شخص يحب تعديل التعليمات البرمجية، فإن Aspose.Words يوفر لك كل ما تحتاجه.
 
 ## الأسئلة الشائعة
 
@@ -82,13 +82,13 @@ Install-Package Aspose.Words
 قطعاً! يمكنك التنقل عبر دليل ملفات PDF وتحويل كل منها إلى ملف JPEG.
 
 ### هل يدعم Aspose.Words تنسيقات الصور الأخرى؟
-نعم إنها كذلك! يمكنك حفظ ملفات PDF الخاصة بك بتنسيق PNG وBMP والمزيد.
+نعم، إنه كذلك! يمكنك حفظ ملفات PDF الخاصة بك بتنسيق PNG وBMP والمزيد.
 
 ### هل Aspose.Words متوافق مع .NET Core؟
-بالتاكيد هو. يدعم Aspose.Words كلاً من .NET Framework و.NET Core.
+في الواقع، هو كذلك. يدعم Aspose.Words كلاً من .NET Framework و.NET Core.
 
 ### هل أحتاج إلى ترخيص لاستخدام Aspose.Words؟
  يمكنك الحصول على نسخة تجريبية مجانية[هنا](https://releases.aspose.com/) أو شراء ترخيص[هنا](https://purchase.aspose.com/buy).
 
 ### أين يمكنني العثور على المزيد من البرامج التعليمية حول Aspose.Words؟
- تفحص ال[توثيق](https://reference.aspose.com/words/net/) للحصول على عدد كبير من الدروس والأدلة.
+ تحقق من[الوثائق](https://reference.aspose.com/words/net/) للحصول على عدد كبير من الدروس والأدلة.

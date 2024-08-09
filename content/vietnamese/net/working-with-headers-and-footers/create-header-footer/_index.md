@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Giới thiệu
 
 Việc thêm đầu trang và chân trang vào tài liệu của bạn có thể nâng cao tính chuyên nghiệp và khả năng đọc của chúng. Với Aspose.Words for .NET, bạn có thể dễ dàng tạo và tùy chỉnh đầu trang và chân trang cho tài liệu Word của mình. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn từng bước trong quy trình, đảm bảo bạn có thể triển khai các tính năng này một cách liền mạch.
 
@@ -14,7 +15,7 @@ Việc thêm đầu trang và chân trang vào tài liệu của bạn có thể
 
 Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
 
--  Aspose.Words for .NET: Tải xuống và cài đặt từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Tải xuống và cài đặt từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Chẳng hạn như Visual Studio, để viết và chạy mã của bạn.
 - Kiến thức cơ bản về C#: Hiểu biết về C# và .NET framework.
 - Tài liệu mẫu: Một tài liệu mẫu để áp dụng đầu trang và chân trang hoặc tạo một tài liệu mới như được hiển thị trong hướng dẫn.
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Bước 2: Tạo một tài liệu mới
 
- Tạo một tài liệu mới và một`DocumentBuilder` để thuận tiện cho việc bổ sung nội dung.
+ Tạo một tài liệu mới và một`DocumentBuilder`để thuận tiện cho việc bổ sung nội dung.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ Bằng cách làm theo các bước này, bạn có thể thêm và tùy chỉnh
 
 ## Câu hỏi thường gặp
 
-### Câu hỏi 1: Aspose.Words dành cho .NET là gì?
+### Aspose.Words cho .NET là gì?
 
 Aspose.Words for .NET là thư viện cho phép các nhà phát triển tạo, chỉnh sửa và chuyển đổi tài liệu Word theo chương trình trong các ứng dụng .NET.
 
-### Q2: Tôi có thể thêm hình ảnh vào đầu trang hoặc chân trang không?
+### Tôi có thể thêm hình ảnh vào đầu trang hoặc chân trang không?
 
  Có, bạn có thể dễ dàng thêm hình ảnh vào đầu trang hoặc chân trang bằng cách sử dụng`DocumentBuilder.InsertImage` phương pháp.
 
-### Câu hỏi 3: Làm cách nào để đặt đầu trang và chân trang khác nhau cho trang đầu tiên?
+### Làm cách nào để đặt đầu trang và chân trang khác nhau cho trang đầu tiên?
 
  Bạn có thể đặt đầu trang và chân trang khác nhau cho trang đầu tiên bằng cách sử dụng`DifferentFirstPageHeaderFooter` tài sản của`PageSetup` lớp học.
 
-### Câu hỏi 4: Tôi có thể tìm thêm tài liệu về Aspose.Words ở đâu?
+### Tôi có thể tìm thêm tài liệu về Aspose.Words ở đâu?
 
  Bạn có thể tìm thấy tài liệu đầy đủ về[Trang tài liệu API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### Câu hỏi 5: Aspose.Words có hỗ trợ không?
+### Có hỗ trợ nào cho Aspose.Words không?
 
  Có, Aspose cung cấp hỗ trợ thông qua[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8).

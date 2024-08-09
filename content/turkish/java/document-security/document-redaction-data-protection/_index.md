@@ -2,7 +2,7 @@
 title: Belge Düzenleme ve Veri Koruma
 linktitle: Belge Düzenleme ve Veri Koruma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak belgelerinizi nasıl güvence altına alacağınızı ve hassas verileri nasıl çıkaracağınızı öğrenin. Kaynak koduyla adım adım kılavuz.
+description: Aspose.Words for Java'yı kullanarak belgelerinizi nasıl güvence altına alacağınızı ve hassas verileri nasıl düzelteceğinizi öğrenin. Kaynak koduyla adım adım kılavuz.
 type: docs
 weight: 14
 url: /tr/java/document-security/document-redaction-data-protection/
@@ -16,7 +16,7 @@ Bu kılavuzda, Aspose.Words for Java'yı kullanarak Word belgelerinden hassas bi
 
 ## Geliştirme Ortamınızı Kurma
 
-Aspose.Words for Java ile çalışmaya başlamadan önce geliştirme ortamımızı kurmamız gerekiyor. Bu adımları takip et:
+Aspose.Words for Java ile çalışmaya başlamadan önce geliştirme ortamımızı kurmamız gerekiyor. Şu adımları izleyin:
 
 1.  Aspose.Words for Java'yı indirin ve yükleyin: Ziyaret edin[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) Aspose.Words for Java'nın en son sürümünü indirmek için.
 

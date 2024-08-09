@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-comments/anchor-comment/
 ---
-## Úvod
+## Zavedení
 
 Ocitli jste se někdy v situaci, kdy jste potřebovali programově přidávat komentáře ke konkrétním textovým oddílům v dokumentu aplikace Word? Představte si, že spolupracujete na dokumentu se svým týmem a potřebujete zvýraznit určité části komentáři, aby je ostatní mohli zkontrolovat. V tomto tutoriálu se ponoříme hluboko do toho, jak vkládat kotvící komentáře do dokumentů aplikace Word pomocí Aspose.Words for .NET. Tento proces rozdělíme do jednoduchých kroků, abyste jej mohli snadno sledovat a implementovat do svých projektů.
 
@@ -15,7 +15,7 @@ Ocitli jste se někdy v situaci, kdy jste potřebovali programově přidávat ko
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli vývojové prostředí .NET, jako je Visual Studio.
 - Základní porozumění C#: Znalost programování C# vám pomůže snadno postupovat podle kroků.
 
@@ -70,7 +70,7 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
- Zde vytvoříme dva odstavce s nějakým textem. Každý text je zapouzdřen v a`Run` objekt, který je poté přidán do odstavců.
+ Zde vytvoříme dva odstavce s nějakým textem. Každý text je zapouzdřen v a`Run` objekt, který je pak přidán do odstavců.
 
 ## Krok 3: Vytvořte komentář
 
@@ -128,10 +128,10 @@ Kotevní komentáře se používají ke zvýraznění a komentování konkrétn�
 Ano, do stejné textové části můžete přidat více komentářů definováním více rozsahů komentářů.
 
 ### Je Aspose.Words for .NET zdarma k použití?
-Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/) . Pro plné funkce si můžete zakoupit licenci[tady](https://purchase.aspose.com/buy).
+Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) . Pro plné funkce si můžete zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Mohu upravit vzhled komentářů?
 Zatímco Aspose.Words se zaměřuje na funkčnost, vzhled komentářů v dokumentech Wordu je obecně řízen samotným Wordem.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).

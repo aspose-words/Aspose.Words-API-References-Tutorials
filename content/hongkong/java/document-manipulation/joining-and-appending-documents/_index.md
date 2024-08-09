@@ -2,7 +2,7 @@
 title: 在 Aspose.Words for Java 中連接和附加文檔
 linktitle: 加入和附加文檔
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 輕鬆加入和附加文件。保留格式、管理頁首頁尾等。
+description: 了解如何使用 Aspose.Words for Java 輕鬆加入和追加文件。保留格式、管理頁首頁尾等。
 type: docs
 weight: 30
 url: /zh-hant/java/document-manipulation/joining-and-appending-documents/
@@ -10,7 +10,7 @@ url: /zh-hant/java/document-manipulation/joining-and-appending-documents/
 
 ## Aspose.Words for Java 中連接和附加文件簡介
 
-在本教學中，我們將探索如何使用 Aspose.Words for Java 函式庫加入和追加文件。您將學習如何無縫合併多個文檔，同時保留格式和結構。
+在本教學中，我們將探討如何使用 Aspose.Words for Java 函式庫加入和附加文件。您將學習如何無縫合併多個文檔，同時保留格式和結構。
 
 ## 先決條件
 
@@ -140,4 +140,4 @@ Aspose.Words for Java 提供了靈活且強大的工具來連接和附加文檔�
 
 ### 如果我想在文件之間連結/取消連結頁首和頁尾怎麼辦？
 
-您可以將頁首和頁尾連結到`linkToPrevious(true)`或取消它們的鏈接`linkToPrevious(false)`如所須。
+您可以將頁首和頁尾連結到`linkToPrevious(true)`或取消它們的鏈接`linkToPrevious(false)`根據需要。

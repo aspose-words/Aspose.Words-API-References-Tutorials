@@ -33,7 +33,7 @@ url: /ja/net/working-with-fields/insert-merge-field-using-dom/
 Aspose.Words を使用するには、プロジェクトに追加する必要があります。これは、NuGet パッケージ マネージャーを使用して実行できます。
 
 1. NuGet パッケージ マネージャーを開きます。ソリューション エクスプローラーでプロジェクトを右クリックし、[NuGet パッケージの管理] を選択します。
-2. Aspose.Words を検索: NuGet パッケージ マネージャーで、「Aspose.Words」を検索します。
+2. Aspose.Words を検索します。NuGet パッケージ マネージャーで、「Aspose.Words」を検索します。
 3. パッケージのインストール: 「インストール」をクリックして、Aspose.Words をプロジェクトに追加します。
 
 ## ステップ3: 名前空間をインポートする

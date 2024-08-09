@@ -9,7 +9,7 @@ url: /tr/net/working-with-section/delete-header-footer-content/
 ---
 ## giriiş
 
-Merhaba, Word belgesi düzenleyicileri! 📝 Hiç bir Word belgesindeki üstbilgileri ve altbilgileri temizlemeniz gerekti, ancak kendinizi sıkıcı manuel çabalar yüzünden çıkmaza girmiş halde buldunuz mu? Artık endişelenmeyin! Aspose.Words for .NET ile bu görevi yalnızca birkaç adımda otomatikleştirebilirsiniz. Bu kılavuz, Aspose.Words for .NET kullanarak bir Word belgesinden üstbilgi ve altbilgi içeriğini silme işleminde size yol gösterecektir. Bu belgeleri temizlemeye hazır mısınız? Başlayalım!
+Merhaba, Word belgesi düzenleyicileri! 📝 Hiç bir Word belgesindeki üstbilgileri ve altbilgileri temizlemeniz gerekti, ancak kendinizi sıkıcı manuel çabalar yüzünden çıkmaza girmiş halde buldunuz mu? Artık endişelenmeyin! Aspose.Words for .NET ile bu görevi yalnızca birkaç adımda otomatikleştirebilirsiniz. Bu kılavuz, Aspose.Words for .NET kullanarak bir Word belgesinden üstbilgi ve altbilgi içeriğini silme işleminde size yol gösterecektir. Bu belgeleri temizlemeye hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "Document_Without_Headers_Footers.docx");
 
 ## Çözüm
 
-İşte buyur! 🎉 Aspose.Words for .NET'i kullanarak bir Word belgesindeki üstbilgileri ve altbilgileri başarıyla temizlediniz. Bu kullanışlı özellik, özellikle büyük belgelerle veya tekrarlanan görevlerle uğraşırken size çok zaman kazandırabilir. Unutmayın, pratik mükemmelleştirir, bu yüzden gerçek bir belge işleme sihirbazı olmak için Aspose.Words'ün farklı özelliklerini denemeye devam edin. Mutlu kodlama!
+Ve işte karşınızda! 🎉 Aspose.Words for .NET'i kullanarak bir Word belgesindeki üstbilgileri ve altbilgileri başarıyla temizlediniz. Bu kullanışlı özellik, özellikle büyük belgelerle veya tekrarlanan görevlerle uğraşırken size çok zaman kazandırabilir. Unutmayın, pratik mükemmelleştirir, bu yüzden gerçek bir belge işleme sihirbazı olmak için Aspose.Words'ün farklı özelliklerini denemeye devam edin. Mutlu kodlama!
 
 ## SSS
 

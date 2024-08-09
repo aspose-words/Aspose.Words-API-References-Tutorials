@@ -8,15 +8,15 @@ weight: 10
 url: /it/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-## introduzione
+## Introduzione
 
-Ehilà! Ti sei mai trovato coinvolto nelle complessità della formattazione del testo, soprattutto quando hai a che fare con lingue che richiedono la sillabazione? Non sei solo. La sillabazione, sebbene cruciale per il corretto layout del testo, può essere un po’ un grattacapo. Ma indovina un po? Aspose.Words per .NET ti copre le spalle. Questa potente libreria ti consente di gestire la formattazione del testo senza problemi, inclusa la gestione della sillabazione attraverso un meccanismo di callback. Incuriosito? Immergiamoci nel nocciolo della questione di come è possibile implementare un callback di sillabazione utilizzando Aspose.Words per .NET.
+Ehilà! Ti sei mai trovato coinvolto nelle complessità della formattazione del testo, soprattutto quando hai a che fare con lingue che richiedono la sillabazione? Non sei solo. La sillabazione, sebbene cruciale per il corretto layout del testo, può essere un po’ un grattacapo. Ma indovina un po'? Aspose.Words per .NET ti copre le spalle. Questa potente libreria ti consente di gestire la formattazione del testo senza problemi, inclusa la gestione della sillabazione attraverso un meccanismo di callback. Incuriosito? Immergiamoci nel nocciolo della questione di come è possibile implementare un callback di sillabazione utilizzando Aspose.Words per .NET.
 
 ## Prerequisiti
 
 Prima di sporcarci le mani con il codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-1.  Aspose.Words per .NET: assicurati di avere la libreria. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+1. Aspose.Words per .NET: assicurati di avere la libreria. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
 2. IDE: un ambiente di sviluppo come Visual Studio.
 3. Conoscenza di base di C#: comprensione di C# e .NET framework.
 4. Dizionari di sillabazione: dizionari di sillabazione per le lingue che intendi utilizzare.
@@ -68,7 +68,7 @@ Ora carichiamo il documento che richiede la sillabazione.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Qui stiamo caricando un documento di testo tedesco. Puoi sostituire`"German text.docx"` con il nome file del tuo documento.
+Qui stiamo caricando un documento di testo tedesco. Puoi sostituire`"German text.docx"` con il nome file del tuo documento.
 
 ## Passaggio 4: salva il documento
 
@@ -129,7 +129,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato come implementare un callback di sillabazione in Aspose.Words per .NET. Seguendo questi passaggi, puoi assicurarti che i tuoi documenti siano ben formattati, indipendentemente dalla lingua. Che tu abbia a che fare con l'inglese, il tedesco o qualsiasi altra lingua, questo metodo ti consente di gestire la sillabazione senza sforzo.
+Ed ecco qua! Hai appena imparato come implementare un callback di sillabazione in Aspose.Words per .NET. Seguendo questi passaggi, puoi assicurarti che i tuoi documenti siano ben formattati, indipendentemente dalla lingua. Che tu abbia a che fare con l'inglese, il tedesco o qualsiasi altra lingua, questo metodo ti consente di gestire la sillabazione senza sforzo.
 
 ## Domande frequenti
 
@@ -140,10 +140,10 @@ Aspose.Words per .NET è una potente libreria di manipolazione di documenti che 
 La sillabazione migliora il layout del testo suddividendo le parole nei punti appropriati, garantendo un documento più leggibile e visivamente accattivante.
 
 ### Posso usare Aspose.Words gratuitamente?
- Aspose.Words offre una prova gratuita. Puoi prenderlo[Qui](https://releases.aspose.com/).
+ Aspose.Words offre una prova gratuita. Puoi ottenerlo[Qui](https://releases.aspose.com/).
 
 ### Come posso ottenere un dizionario di sillabazione?
 Puoi scaricare dizionari di sillabazione da varie risorse online o crearne uno tuo, se necessario.
 
 ### Cosa succede se manca un dizionario di sillabazione?
- Se manca un dizionario, il`RequestDictionary` Il metodo genera un'eccezione, che puoi gestire per informare l'utente o fornire un fallback.
+ Se manca un dizionario, il`RequestDictionary`Il metodo genera un'eccezione, che puoi gestire per informare l'utente o fornire un fallback.

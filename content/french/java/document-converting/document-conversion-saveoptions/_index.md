@@ -77,7 +77,7 @@ Dans ce guide complet, nous avons exploré le monde de la conversion de document
 
 ### Comment installer Aspose.Words pour Java ?
 
- L'installation d'Aspose.Words pour Java est simple. Visiter le[page de téléchargement](https://releases.aspose.com/words/java/)et suivez les instructions d'installation correspondant à votre environnement de développement.
+ L'installation d'Aspose.Words pour Java est simple. Visitez le[page de téléchargement](https://releases.aspose.com/words/java/)et suivez les instructions d'installation correspondant à votre environnement de développement.
 
 ### Que sont les options de sauvegarde dans Aspose.Words ?
 

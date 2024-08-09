@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/set-table-cell-formatting/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy o tom, jak udělat dokumenty Word profesionálnější a vizuálně přitažlivější? Jedním z klíčových prvků, jak toho dosáhnout, je zvládnutí formátování buněk tabulky. V tomto tutoriálu se ponoříme do specifik nastavení formátování buněk tabulky v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postup rozebereme krok za krokem a zajistíme, že budete moci tyto techniky sledovat a implementovat do svých vlastních projektů.
 
@@ -64,7 +64,7 @@ builder.InsertCell();
 
 ## Krok 4: Otevřete a nastavte vlastnosti formátu buňky
 
- Jakmile je buňka vložena, můžete přistupovat k jejím vlastnostem formátu pomocí`CellFormat` majetek z`DocumentBuilder`. Zde můžete nastavit různé možnosti formátování, jako je šířka a odsazení.
+ Jakmile je buňka vložena, můžete přistupovat k jejím vlastnostem formátu pomocí`CellFormat` vlastnictvím`DocumentBuilder`. Zde můžete nastavit různé možnosti formátování, jako je šířka a odsazení.
 
 ```csharp
 // Přístup a nastavení vlastností formátu buňky
@@ -120,7 +120,7 @@ Ano, můžete procházet buňkami a na každou z nich programově použít stejn
  Celkový formát tabulky můžete nastavit pomocí`Table` vlastnosti třídy a metody dostupné v Aspose.Words.
 
 ### Mohu změnit zarovnání textu v buňce?
- Ano, můžete změnit zarovnání textu pomocí`ParagraphFormat` majetek z`DocumentBuilder`.
+ Ano, můžete změnit zarovnání textu pomocí`ParagraphFormat` vlastnictvím`DocumentBuilder`.
 
 ### Existuje způsob, jak přidat ohraničení do buněk tabulky?
- Ano, můžete přidat ohraničení k buňkám tabulky nastavením`Borders` majetek z`CellFormat` třída.
+ Ano, můžete přidat ohraničení k buňkám tabulky nastavením`Borders` vlastnictvím`CellFormat` třída.

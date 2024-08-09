@@ -2,7 +2,7 @@
 title: Dokumentumok összehasonlítása a különbségekért
 linktitle: Dokumentumok összehasonlítása a különbségekért
 second_title: Aspose.Words Java Document Processing API
-description: Tanulja meg, hogyan hasonlíthatja össze a dokumentumokat a különbségek szempontjából az Aspose.Words használatával Java nyelven. Lépésről lépésre bemutatott útmutatónk biztosítja a pontos dokumentumkezelést.
+description: Ismerje meg, hogyan hasonlíthatja össze a dokumentumokat a különbségek szempontjából az Aspose.Words használatával Java nyelven. Lépésről lépésre bemutatott útmutatónk biztosítja a pontos dokumentumkezelést.
 type: docs
 weight: 12
 url: /hu/java/document-merging/comparing-documents-for-differences/
@@ -50,7 +50,7 @@ comparer.compare();
 
 ## 3. lépés: Mentse el az összehasonlítás eredményét
 
-A dokumentumok összehasonlítása után el kell mentenie az eredményt. Az Aspose.Words lehetővé teszi az összehasonlítás eredményének új dokumentumként történő elmentését. Itt van, hogyan:
+A dokumentumok összehasonlítása után el kell mentenie az eredményt. Az Aspose.Words lehetővé teszi az összehasonlítás eredményének új dokumentumként történő elmentését. Íme, hogyan:
 
 ```java
 // Mentse el az összehasonlítás eredményét

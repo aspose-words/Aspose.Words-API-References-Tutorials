@@ -15,7 +15,7 @@ Wenn Sie schon immer das Layout Ihrer Tabellenzellen in Word-Dokumenten programm
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Sie benötigen eine mit .NET eingerichtete Entwicklungsumgebung. Visual Studio ist eine gute Wahl, wenn Sie nach Empfehlungen suchen.
 3. Grundkenntnisse in C#: Ich werde zwar jeden Schritt erklären, aber Grundkenntnisse in C# helfen Ihnen dabei, den Anweisungen leichter zu folgen.
 4.  Dokumentverzeichnis: Bereiten Sie einen Verzeichnispfad vor, in dem Sie Ihre Dokumente speichern. Wir nennen dies`YOUR DOCUMENT DIRECTORY`.
@@ -138,10 +138,10 @@ Und da haben Sie es! Sie haben erfolgreich ein Word-Dokument mit einem angepasst
  Sie können die`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , Und`VerticalAlignment` Eigenschaften, um die Position des Wasserzeichens anzupassen.
 
 ### Ist es möglich, für das Wasserzeichen ein Bild statt Text zu verwenden?
- Auf jeden Fall! Sie können eine`Shape` mit dem Typ`ShapeType.Image` und legen Sie das Bild mit dem`ImageData.SetImage` Methode.
+ Auf jeden Fall! Sie können eine`Shape` mit dem Typ`ShapeType.Image` und legen Sie das Bild mit dem`ImageData.SetImage` Verfahren.
 
 ### Kann ich Tabellen mit unterschiedlichen Zeilenhöhen erstellen?
 Ja, Sie können für jede Reihe eine andere Höhe einstellen, indem Sie die`RowFormat.Height` -Eigenschaft, bevor Zellen in diese Zeile eingefügt werden.
 
 ### Wie entferne ich ein Wasserzeichen aus dem Dokument?
- Sie können das Wasserzeichen entfernen, indem Sie es in der Formensammlung des Dokuments suchen und den`Remove` Methode.
+ Sie können das Wasserzeichen entfernen, indem Sie es in der Formensammlung des Dokuments suchen und den`Remove` Verfahren.

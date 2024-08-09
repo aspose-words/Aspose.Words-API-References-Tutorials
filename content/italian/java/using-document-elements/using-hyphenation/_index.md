@@ -64,7 +64,7 @@ La sillabazione è il processo di aggiunta di trattini alla fine delle righe per
 
 ### 2. Posso utilizzare la sillabazione in più lingue?
 
-Si, puoi. Aspose.Words per Java ti consente di registrare e caricare dizionari di sillabazione per diverse lingue.
+Sì, puoi. Aspose.Words per Java ti consente di registrare e caricare dizionari di sillabazione per diverse lingue.
 
 ### 3. Aspose.Words per Java è facile da integrare nel mio progetto Java?
 

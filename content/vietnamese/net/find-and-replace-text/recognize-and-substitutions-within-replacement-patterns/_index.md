@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Các`Document` đối tượng là cốt lõi của Aspose.Words. Nó đại diện cho toàn bộ tài liệu Word.
+ các`Document` đối tượng là cốt lõi của Aspose.Words. Nó đại diện cho toàn bộ tài liệu Word.
 
 ## Bước 2: Thêm văn bản vào tài liệu
 
@@ -50,7 +50,7 @@ Tiếp theo, hãy thêm một số văn bản vào tài liệu. Văn bản này 
 builder.Write("Jason give money to Paul.");
 ```
 
- Các`DocumentBuilder` class là một công cụ mạnh mẽ để thêm văn bản và các thành phần khác vào tài liệu của bạn.
+ các`DocumentBuilder` class là một công cụ mạnh mẽ để thêm văn bản và các thành phần khác vào tài liệu của bạn.
 
 ## Bước 3: Xác định mẫu Regex
 
@@ -70,7 +70,7 @@ Aspose.Words cho phép bạn sử dụng các từ thay thế trong các từ th
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
- Các`FindReplaceOptions` lớp cung cấp nhiều tùy chọn khác nhau để tùy chỉnh các hoạt động tìm và thay thế của bạn.
+ các`FindReplaceOptions` lớp cung cấp nhiều tùy chọn khác nhau để tùy chỉnh các hoạt động tìm và thay thế của bạn.
 
 ## Bước 5: Thực hiện thay thế
 
@@ -102,7 +102,7 @@ Chúc mừng! Bạn đã học thành công cách nhận dạng và thay thế v
 Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word trong các ứng dụng .NET. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu theo chương trình.
 
 ### Làm cách nào tôi có thể cài đặt Aspose.Words cho .NET?
- Bạn có thể cài đặt Aspose.Words cho .NET từ[Liên kết tải xuống](https://releases.aspose.com/words/net/). Thực hiện theo các hướng dẫn cài đặt được cung cấp.
+ Bạn có thể cài đặt Aspose.Words cho .NET từ[liên kết tải xuống](https://releases.aspose.com/words/net/). Thực hiện theo các hướng dẫn cài đặt được cung cấp.
 
 ### Tôi có thể sử dụng biểu thức chính quy với Aspose.Words cho .NET không?
 Có, Aspose.Words hỗ trợ các biểu thức chính quy cho các thao tác tìm và thay thế, cho phép thực hiện các thao tác văn bản phức tạp.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
-## introduzione
+## Introduzione
 
 Stai cercando di padroneggiare l'automazione dei documenti con Aspose.Words per .NET? Sei arrivato nel posto giusto! Oggi ti spiegheremo come inserire un campo ASK senza utilizzare un Document Builder. Questa è una funzionalità utile quando desideri che il tuo documento richieda agli utenti input specifici, rendendo i tuoi documenti Word più interattivi e dinamici. Quindi, tuffiamoci e rendiamo i tuoi documenti più intelligenti!
 

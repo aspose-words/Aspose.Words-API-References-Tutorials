@@ -38,7 +38,7 @@ public class DocumentPrintingAutomation {
 
 ## Laddar dokumentet
 
- Nu måste vi ladda dokumentet som vi vill skriva ut. Byta ut`"path_to_your_document.docx"` med den faktiska sökvägen till din dokumentfil:
+ Nu måste vi ladda dokumentet som vi vill skriva ut. Ersätta`"path_to_your_document.docx"` med den faktiska sökvägen till din dokumentfil:
 
 ```java
 public static void main(String[] args) throws Exception {

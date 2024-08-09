@@ -40,7 +40,7 @@ Vamos dividir o processo de criação de uma tabela com diferentes configuraçõ
 
 Título: Criando um Novo Documento e DocumentBuilder
 
- Explicação: Comece criando um novo documento do Word e um`DocumentBuilder` instância. O`DocumentBuilder` class fornece uma maneira simples de adicionar conteúdo ao seu documento.
+ Explicação: Comece criando um novo documento do Word e um`DocumentBuilder` exemplo. O`DocumentBuilder` class fornece uma maneira simples de adicionar conteúdo ao seu documento.
 
 ```csharp
 // Defina o caminho para salvar o documento.

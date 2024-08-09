@@ -15,7 +15,7 @@ Dalam hal menangani PDF dalam aplikasi .NET, Aspose.Words untuk .NET adalah peng
 
 Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
 
-1. Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words. Jika Anda belum mendapatkannya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan Aspose.Words. Jika Anda belum mendapatkannya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan Anda dengan Visual Studio atau IDE pilihan lainnya.
 3.  Lisensi: Meskipun Aspose.Words menawarkan uji coba gratis, pertimbangkan untuk mendapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk fungsionalitas penuh tanpa batasan.
 

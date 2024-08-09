@@ -509,7 +509,7 @@ private ArrayList<Node> splitComposite(CompositeNode composite) throws Exception
 }
 private Iterable<Node> findChildSplitPositions(CompositeNode node) throws Exception {
 	// Một nút có thể trải dài trên nhiều trang, do đó, một danh sách các vị trí được phân chia sẽ được trả về.
-	//Nút phân chia là nút đầu tiên trên trang tiếp theo.
+	//Nút phân tách là nút đầu tiên trên trang tiếp theo.
 	ArrayList<Node> splitList = new ArrayList<Node>();
 	int startingPage = pageNumberFinder.getPage(node);
 	Node[] childNodes = node.getNodeType() == NodeType.SECTION

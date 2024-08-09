@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/rename-merge-fields/
 ---
-## Úvod
+## Zavedení
 
 Přejmenování slučovacích polí v dokumentech aplikace Word může být náročný úkol, pokud nejste obeznámeni se správnými nástroji a technikami. Ale nebojte se, mám vás zajištěné! V této příručce se ponoříme do procesu přejmenování slučovacích polí pomocí Aspose.Words for .NET, výkonné knihovny, se kterou je manipulace s dokumenty hračkou. Ať už jste zkušený vývojář nebo teprve začínáte, tento návod vás krok za krokem provede vším, co potřebujete vědět.
 
@@ -15,7 +15,7 @@ Přejmenování slučovacích polí v dokumentech aplikace Word může být nár
 
 Než se ponoříme do hrubších detailů, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 - Základní znalost C#: Užitečná bude znalost programování v C#.
 
@@ -103,4 +103,4 @@ Pokud slučovací pole neexistuje, kód jej jednoduše přeskočí. Nebudou vyvo
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
 
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).

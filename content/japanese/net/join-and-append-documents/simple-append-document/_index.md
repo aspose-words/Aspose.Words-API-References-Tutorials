@@ -106,7 +106,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 
 ### ドキュメントのフォーマットが異なる場合はどうなりますか?
 
-書式設定の処理方法は、`ImportFormatMode`パラメータ。オプションには以下が含まれます`KeepSourceFormatting`, `UseDestinationStyles`、 もっと。
+書式設定の処理方法は、`ImportFormatMode`パラメータ。オプションには以下が含まれます`KeepSourceFormatting`, `UseDestinationStyles`、などなど。
 
 ### Aspose.Words は無料で使用できますか?
 

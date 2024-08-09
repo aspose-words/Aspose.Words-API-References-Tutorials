@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-hyperlink/
 ---
-## introduzione
+## Introduzione
 
 Creare e gestire documenti Word è un compito fondamentale in molte applicazioni. Che si tratti di generare report, creare modelli o automatizzare la creazione di documenti, Aspose.Words per .NET offre soluzioni robuste. Oggi, tuffiamoci in un esempio pratico: inserimento di collegamenti ipertestuali in un documento Word utilizzando Aspose.Words per .NET.
 
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 3: scrivere il testo iniziale
 
- Usando il`DocumentBuilder`, scriveremo del testo iniziale nel documento. Questo imposta il contesto in cui verrà inserito il nostro collegamento ipertestuale.
+ Utilizzando il`DocumentBuilder`, scriveremo del testo iniziale nel documento. Questo imposta il contesto in cui verrà inserito il nostro collegamento ipertestuale.
 
 ```csharp
 builder.Write("Please make sure to visit ");

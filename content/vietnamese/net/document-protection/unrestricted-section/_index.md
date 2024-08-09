@@ -9,13 +9,13 @@ url: /vi/net/document-protection/unrestricted-section/
 ---
 ## Giới thiệu
 
-Này! Bạn đã sẵn sàng đi sâu vào thế giới Aspose.Words dành cho .NET chưa? Hôm nay, chúng tôi đang giải quyết một vấn đề siêu thực tế: cách mở khóa các phần cụ thể trong tài liệu Word trong khi vẫn bảo vệ các phần khác. Nếu bạn cần bảo vệ một số phần trong tài liệu của mình nhưng vẫn để mở những phần khác để chỉnh sửa thì hướng dẫn này là dành cho bạn. Bắt đầu nào!
+Này! Bạn đã sẵn sàng đi sâu vào thế giới Aspose.Words dành cho .NET chưa? Hôm nay, chúng tôi đang giải quyết một vấn đề siêu thực tế: cách mở khóa các phần cụ thể trong tài liệu Word trong khi vẫn bảo vệ các phần khác. Nếu bạn cần bảo vệ một số phần trong tài liệu của mình nhưng vẫn để mở những phần khác để chỉnh sửa thì hướng dẫn này là dành cho bạn. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo bạn có mọi thứ bạn cần:
 
--  Aspose.Words for .NET: Nếu chưa có, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Nếu chưa có, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Visual Studio: Hoặc bất kỳ IDE tương thích .NET nào khác.
 - Hiểu biết cơ bản về C#: Làm quen một chút với C# sẽ giúp bạn dễ dàng thực hiện hướng dẫn này.
 -  Giấy phép Aspose: Lấy một[dùng thử miễn phí](https://releases.aspose.com/) hoặc nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) nếu bạn cần nó để thử nghiệm.
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Các`Document` lớp khởi tạo một tài liệu mới và`DocumentBuilder` giúp chúng ta dễ dàng thêm nội dung vào tài liệu của mình.
+ các`Document` lớp khởi tạo một tài liệu mới và`DocumentBuilder` giúp chúng ta dễ dàng thêm nội dung vào tài liệu của mình.
 
 ## Bước 2: Chèn phần
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
- Các`InsertBreak` phương pháp chèn ngắt phần liên tục, cho phép chúng tôi có các cài đặt khác nhau cho từng phần.
+ các`InsertBreak` phương pháp chèn ngắt phần liên tục, cho phép chúng tôi có các cài đặt khác nhau cho từng phần.
 
 ## Bước 3: Bảo vệ tài liệu
 
@@ -124,7 +124,7 @@ Bước này đảm bảo rằng tài liệu được lưu đúng cách và có 
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã tạo thành công tài liệu Word có sự kết hợp giữa các phần được bảo vệ và không được bảo vệ bằng Aspose.Words cho .NET. Phương pháp này cực kỳ hữu ích khi bạn cần khóa một số phần nhất định của tài liệu trong khi vẫn để các phần khác có thể chỉnh sửa được.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn đã tạo thành công tài liệu Word có sự kết hợp giữa các phần được bảo vệ và không được bảo vệ bằng Aspose.Words cho .NET. Phương pháp này cực kỳ hữu ích khi bạn cần khóa một số phần nhất định của tài liệu trong khi vẫn để các phần khác có thể chỉnh sửa được.
 
 ## Câu hỏi thường gặp
 

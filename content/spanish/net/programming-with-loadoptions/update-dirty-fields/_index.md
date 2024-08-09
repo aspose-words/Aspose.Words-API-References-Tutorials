@@ -16,7 +16,7 @@ url: /es/net/programming-with-loadoptions/update-dirty-fields/
 
 Antes de profundizar en el meollo de la cuestión, asegurémonos de que tiene todo lo que necesita:
 
-1.  Aspose.Words para .NET: asegúrese de tener la última versión. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener la última versión. Si no, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: Cualquier versión compatible con Aspose.Words.
 3. Conocimientos básicos de C#: será beneficiosa la familiaridad con la programación en C#.
 4. Un documento de Word de muestra: un documento con campos sucios que necesitan actualización.
@@ -92,4 +92,4 @@ Sí, Aspose.Words brinda flexibilidad para actualizar campos específicos, pero 
 Sí, Aspose.Words es una poderosa biblioteca que simplifica el proceso de manipulación de documentos de Word mediante programación.
 
 ### ¿Dónde puedo encontrar más información sobre Aspose.Words?
- Revisar la[documentación](https://reference.aspose.com/words/net/) para guías detalladas y ejemplos.
+ Mira el[documentación](https://reference.aspose.com/words/net/) para guías detalladas y ejemplos.

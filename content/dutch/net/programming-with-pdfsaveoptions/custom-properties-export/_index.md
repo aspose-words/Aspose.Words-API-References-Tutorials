@@ -48,7 +48,7 @@ Vervolgens voegt u aangepaste eigenschappen aan uw document toe. Deze eigenschap
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-## Stap 3: Configureer PDF-opslagopties
+## Stap 3: Configureer de PDF-opslagopties
 
  Configureer nu de PDF-opslagopties om ervoor te zorgen dat de aangepaste eigenschappen worden opgenomen bij het exporteren van het document. De`PdfSaveOptions` class biedt verschillende instellingen om te bepalen hoe het document als PDF wordt opgeslagen.
 
@@ -86,4 +86,4 @@ Aspose.Words voor .NET biedt een robuuste en eenvoudig te gebruiken API voor het
 Aspose.Words voor .NET ondersteunt het exporteren naar verschillende formaten, waaronder DOCX, HTML, EPUB en nog veel meer.
 
 ### Waar kan ik ondersteuning krijgen als ik problemen tegenkom?
- Voor ondersteuning kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+ Voor ondersteuning kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.

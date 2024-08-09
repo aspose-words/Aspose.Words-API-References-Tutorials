@@ -9,7 +9,7 @@ url: /pl/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## Wstęp
 
-No hej! Czy zastanawiałeś się kiedyś, jak wyeksportować dokument programu Word do formatu Markdown z idealnie wyrównanymi tabelami? Niezależnie od tego, czy jesteś programistą pracującym nad dokumentacją, czy po prostu miłośnikiem Markdown, ten przewodnik jest dla Ciebie. Aby to osiągnąć, zagłębimy się w szczegóły korzystania z Aspose.Words dla .NET. Gotowy do przekształcenia tabel programu Word w starannie wyrównane tabele Markdown? Zacznijmy!
+Hej tam! Czy zastanawiałeś się kiedyś, jak wyeksportować dokument programu Word do formatu Markdown z idealnie wyrównanymi tabelami? Niezależnie od tego, czy jesteś programistą pracującym nad dokumentacją, czy po prostu miłośnikiem Markdown, ten przewodnik jest dla Ciebie. Aby to osiągnąć, zagłębimy się w szczegóły korzystania z Aspose.Words dla .NET. Gotowy do przekształcenia tabel programu Word w starannie wyrównane tabele Markdown? Zacznijmy!
 
 ## Warunki wstępne
 
@@ -108,7 +108,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom pr
  Tak, za pomocą`Auto` opcję wyrównania, możesz zastosować różne wyrównania w oparciu o pierwszy akapit w każdej kolumnie.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
- Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ### Czy można eksportować inne elementy dokumentu do Markdown za pomocą Aspose.Words?
 Tak, Aspose.Words obsługuje eksportowanie różnych elementów, takich jak nagłówki, listy i obrazy do formatu Markdown.

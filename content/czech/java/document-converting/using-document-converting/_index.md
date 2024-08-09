@@ -21,7 +21,7 @@ Převod dokumentů může být složitý proces, zejména pokud se jedná o růz
 ## Rozsáhlá podpora formátů: 
 Aspose.Words podporuje širokou škálu formátů dokumentů, včetně DOCX, DOC, RTF, PDF, EPUB, HTML a dalších. To znamená, že můžete snadno převádět dokumenty do az různých formátů.
 
-## Vysoce věrná konverze: 
+## High Fidelity konverze: 
 Při převodu dokumentů je zásadní zachování věrnosti obsahu. Aspose.Words zajišťuje, že převedené dokumenty přesně zachovávají původní formátování, styly, obrázky a další prvky.
 
 ## Sloučení dokumentů: 
@@ -61,7 +61,7 @@ doc.save("output.pdf", SaveFormat.PDF);
 
 ## Krok 4: Převod do jiných formátů
 
-Kromě PDF vám Aspose.Words for Java umožňuje převádět dokumenty do různých jiných formátů. Zde jsou nějaké příklady:
+Kromě PDF vám Aspose.Words for Java umožňuje převádět dokumenty do různých jiných formátů. Zde je několik příkladů:
 
 ### Převod do RTF
 

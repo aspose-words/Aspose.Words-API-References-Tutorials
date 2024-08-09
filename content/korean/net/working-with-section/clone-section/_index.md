@@ -160,4 +160,4 @@ Word 문서의 섹션은 머리글, 바닥글, 열과 같은 고유한 레이아
 
 ### Aspose.Words에 대한 추가 리소스는 어디에서 찾을 수 있나요?
 
- 자세한 내용은 다음을 방문하세요.[Aspose.Words 문서](https://reference.aspose.com/words/net/) 아니면 그[지원 포럼](https://forum.aspose.com/c/words/8) 도움과 토론을 위해.
+ 자세한 내용은 다음을 방문하세요.[Aspose.Words 문서](https://reference.aspose.com/words/net/) 또는[지원 포럼](https://forum.aspose.com/c/words/8) 도움과 토론을 위해.

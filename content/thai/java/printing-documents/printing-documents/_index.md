@@ -109,7 +109,7 @@ class MultipagePrintDocument implements Printable
         // เลือกหมายเลขหน้าสุดท้ายที่จะพิมพ์บนกระดาษแผ่นนี้
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //วนซ้ำหน้าที่เลือกจากหน้าปัจจุบันที่เก็บไว้เพื่อคำนวณ
-        // หน้าสุดท้าย.
+        // หน้าสุดท้าย
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // คำนวณดัชนีคอลัมน์และแถว
             int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());

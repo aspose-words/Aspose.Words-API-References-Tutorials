@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Belgeyi Yükleyin
 
- Oluşturmak`Document` Word dosyanızı yükleyerek nesne:
+ Bir oluştur`Document` Word dosyanızı yükleyerek nesne:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -77,7 +77,7 @@ Aspose.Words for .NET kullanarak bir Word belgesindeki Yapılandırılmış Belg
 
 ### SDT'ler için farklı renkler kullanabilir miyim?
 
- Evet mevcut olan herhangi bir rengi kullanabilirsiniz.`System.Drawing.Color` sınıf. Örneğin şunları kullanabilirsiniz:`Color.Blue`, `Color.Green`, vesaire.
+ Evet mevcut olan herhangi bir rengi kullanabilirsiniz.`System.Drawing.Color` sınıf. Örneğin, kullanabilirsiniz`Color.Blue`, `Color.Green`, vesaire.
 
 ### Bir belgedeki birden çok SDT'nin rengini nasıl değiştiririm?
 
@@ -85,12 +85,12 @@ Belgedeki tüm SDT'ler arasında geçiş yapmanız ve renk değişikliğini her 
 
 ### SDT'lerin renk dışında diğer özelliklerini ayarlamak mümkün müdür?
 
- Evet`StructuredDocumentTag` sınıfında yazı tipi boyutu, yazı tipi stili ve daha fazlası dahil olmak üzere ayarlayabileceğiniz çeşitli özellikler bulunur. Daha fazla ayrıntı için Aspose.Words belgelerine bakın.
+ Evet,`StructuredDocumentTag` sınıfında yazı tipi boyutu, yazı tipi stili ve daha fazlası dahil olmak üzere ayarlayabileceğiniz çeşitli özellikler bulunur. Daha fazla ayrıntı için Aspose.Words belgelerine bakın.
 
 ### Tıklama etkinlikleri gibi SDT'lere etkinlikler ekleyebilir miyim?
 
 Aspose.Words, SDT'ler için olay işlemeyi doğrudan desteklemez. Ancak SDT etkileşimlerini form alanları aracılığıyla yönetebilir veya kullanıcı girişlerini ve etkileşimlerini yönetmek için başka yöntemler kullanabilirsiniz.
 
-### Bir SDT'yi belgeden kaldırmak mümkün müdür?
+### Bir SDT'yi belgeden kaldırmak mümkün mü?
 
  Evet, SDT'yi arayarak kaldırabilirsiniz.`Remove()` SDT'nin üst düğümündeki yöntem.

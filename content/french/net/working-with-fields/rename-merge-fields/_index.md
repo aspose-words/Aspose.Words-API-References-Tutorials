@@ -9,7 +9,7 @@ url: /fr/net/working-with-fields/rename-merge-fields/
 ---
 ## Introduction
 
-Renommer les champs de fusion dans des documents Word peut être une tâche ardue si vous n'êtes pas familier avec les bons outils et techniques. Mais ne vous inquiétez pas, je suis là pour vous ! Dans ce guide, nous aborderons le processus de renommage des champs de fusion à l'aide d'Aspose.Words pour .NET, une bibliothèque puissante qui facilite la manipulation de documents. Que vous soyez un développeur chevronné ou débutant, ce tutoriel étape par étape vous guidera à travers tout ce que vous devez savoir.
+Renommer les champs de fusion dans des documents Word peut être une tâche ardue si vous n'êtes pas familier avec les bons outils et techniques. Mais ne vous inquiétez pas, je suis là pour vous ! Dans ce guide, nous allons plonger dans le processus de renommage des champs de fusion à l'aide d'Aspose.Words pour .NET, une bibliothèque puissante qui facilite la manipulation de documents. Que vous soyez un développeur chevronné ou débutant, ce tutoriel étape par étape vous guidera à travers tout ce que vous devez savoir.
 
 ## Conditions préalables
 
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 
 ## Conclusion
 
-Et voila! Renommer les champs de fusion dans les documents Word à l'aide d'Aspose.Words pour .NET est simple une fois que vous connaissez les étapes. En suivant ce guide, vous pouvez facilement manipuler et personnaliser vos documents Word en fonction de vos besoins. Que vous génériez des rapports, créiez des lettres personnalisées ou gériez des données, cette technique vous sera utile.
+Et voilà ! Renommer les champs de fusion dans les documents Word à l'aide d'Aspose.Words pour .NET est simple une fois que vous connaissez les étapes. En suivant ce guide, vous pouvez facilement manipuler et personnaliser vos documents Word en fonction de vos besoins. Que vous génériez des rapports, créiez des lettres personnalisées ou gériez des données, cette technique vous sera utile.
 
 ## FAQ
 

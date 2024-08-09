@@ -9,7 +9,7 @@ url: /pt/net/programming-with-sdt/set-content-control-color/
 ---
 ## Introdução
 
-Se você estiver trabalhando com documentos do Word e precisar personalizar a aparência das tags de documentos estruturados (SDTs), talvez queira alterar sua cor. Isso é particularmente útil quando você lida com formulários ou modelos onde a diferenciação visual dos elementos é essencial. Neste guia, percorreremos o processo de configuração da cor de um SDT usando Aspose.Words for .NET.
+Se você estiver trabalhando com documentos do Word e precisar personalizar a aparência das tags de documentos estruturados (SDTs), convém alterar sua cor. Isso é particularmente útil quando você lida com formulários ou modelos onde a diferenciação visual dos elementos é essencial. Neste guia, percorreremos o processo de configuração da cor de um SDT usando Aspose.Words for .NET.
 
 ## Pré-requisitos
 
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Etapa 2: carregue o documento
 
- Criar uma`Document` objeto carregando seu arquivo Word:
+ Crie um`Document` objeto carregando seu arquivo Word:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -85,7 +85,7 @@ Você precisaria percorrer todos os SDTs do documento e aplicar a mudança de co
 
 ### É possível definir outras propriedades dos SDTs além da cor?
 
- Sim o`StructuredDocumentTag` class possui várias propriedades que você pode definir, incluindo tamanho e estilo da fonte e muito mais. Consulte a documentação do Aspose.Words para obter mais detalhes.
+ Sim, o`StructuredDocumentTag` class possui várias propriedades que você pode definir, incluindo tamanho da fonte, estilo da fonte e muito mais. Consulte a documentação do Aspose.Words para obter mais detalhes.
 
 ### Posso adicionar eventos aos SDTs, como eventos de clique?
 

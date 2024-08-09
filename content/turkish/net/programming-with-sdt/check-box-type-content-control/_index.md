@@ -80,7 +80,7 @@ Bu satır, yeni eklenen onay kutusuyla birlikte belgeyi belirttiğiniz dizine ka
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenize başarıyla Onay Kutusu Türü İçerik Denetimi eklediniz. Bu özellik, etkileşimli ve kullanıcı dostu belgeler oluşturmak için inanılmaz derecede yararlı olabilir. Formlar, anketler veya kullanıcı girişi gerektiren herhangi bir belge oluşturuyorsanız, onay kutuları kullanılabilirliği geliştirmenin harika bir yoludur.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenize başarıyla Onay Kutusu Türü İçerik Denetimi eklediniz. Bu özellik, etkileşimli ve kullanıcı dostu belgeler oluşturmak için inanılmaz derecede yararlı olabilir. Formlar, anketler veya kullanıcı girişi gerektiren herhangi bir belge oluşturuyorsanız, onay kutuları kullanılabilirliği geliştirmenin harika bir yoludur.
 
  Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, şuraya göz atmaktan çekinmeyin:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) veya ziyaret edin[Aspose Destek Forumu](https://forum.aspose.com/c/words/8).
 
@@ -98,5 +98,5 @@ Evet, Aspose.Words metin, tarih ve birleşik giriş kutusu kontrolleri de dahil 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
  Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Web sitesi](https://releases.aspose.com/).
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
  Ziyaret edebilirsiniz[Aspose Destek Forumu](https://forum.aspose.com/c/words/8) yardım için.

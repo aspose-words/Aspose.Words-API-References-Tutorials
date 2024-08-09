@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/update-bookmark-data/
 ---
-## Úvod
+## Zavedení
 
 Už jste se někdy setkali se situací, kdy jste potřebovali dynamicky aktualizovat konkrétní sekce v dokumentu aplikace Word? Možná generujete sestavy se zástupnými symboly pro data nebo možná pracujete se šablonami, které vyžadují časté úpravy obsahu. No, už se netrap! Aspose.Words for .NET se vrhne jako váš rytíř v zářivém brnění a nabízí robustní a uživatelsky přívětivé řešení pro správu záložek a udržování vašich dokumentů v aktuálním stavu.
 
@@ -69,7 +69,7 @@ Tento fragment kódu načte aktuální název (`name`) a text (`text`) cílené 
 
 ## Krok 4: Aktualizujte název záložky (volitelné)
 
- Představte si přejmenování kapitoly v knize. Podobně můžete přejmenovat záložky, aby lépe odrážely jejich obsah nebo účel. Aspose.Words vám umožňuje upravit`Name` majetek z`Bookmark` objekt:
+ Představte si přejmenování kapitoly v knize. Podobně můžete přejmenovat záložky, aby lépe odrážely jejich obsah nebo účel. Aspose.Words vám umožňuje upravit`Name` vlastnictvím`Bookmark` objekt:
 
 ```csharp
 bookmark.Name = "RenamedBookmark";
@@ -79,7 +79,7 @@ Zde je další tip: Názvy záložek mohou obsahovat písmena, čísla a podtrž
 
 ## Krok 5: Aktualizujte text záložky
 
- Nyní přichází ta vzrušující část: úprava skutečného obsahu spojeného se záložkou. Aspose.Words vám umožňuje přímo aktualizovat`Text` majetek z`Bookmark` objekt:
+ Nyní přichází ta vzrušující část: úprava skutečného obsahu spojeného se záložkou. Aspose.Words vám umožňuje přímo aktualizovat`Text` vlastnictvím`Bookmark` objekt:
 
 ```csharp
 bookmark.Text = "This is a new bookmarked text.";

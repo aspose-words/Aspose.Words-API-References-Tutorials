@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-toafield-without-document-builder/
 ---
-## Úvod
+## Zavedení
 
 Vytvoření pole tabulky oprávnění (TOA) v dokumentu aplikace Word může připadat jako poskládání složitého puzzle. S pomocí Aspose.Words pro .NET se však proces stává hladkým a přímočarým. V tomto článku vás provedeme kroky k vložení pole TOA bez použití nástroje pro tvorbu dokumentů, což vám usnadní správu citací a právních odkazů v dokumentech aplikace Word.
 
@@ -122,5 +122,5 @@ Vzhled TOA můžete upravit úpravou vlastností pole TOA, jako je formátován�
 ### Mohu přidat pole TA programově do konkrétních částí dokumentu?
 Ano, pole TA můžete přidat na konkrétní místa tak, že je vložíte do požadovaných odstavců nebo sekcí.
 
-### Jak mohu zpracovat více polí TOA v jednom dokumentu?
+### Jak zpracuji více polí TOA v jednom dokumentu?
  Můžete spravovat více polí TOA přiřazením různých`EntryCategory` hodnoty a zajistit, aby každé pole TOA filtruje položky na základě své kategorie.

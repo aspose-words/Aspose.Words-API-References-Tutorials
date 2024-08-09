@@ -115,7 +115,7 @@ Ya, Aspose.Words mendukung berbagai jenis bagan, termasuk garis, batang, pai, da
 
 Anda dapat menyesuaikan tampilan dengan mengakses properti bagan dan mengatur gaya, warna, dan lainnya.
 
-### Apakah mungkin menambahkan beberapa rangkaian ke bagan?
+### Apakah mungkin untuk menambahkan beberapa rangkaian ke bagan?
 
  Sangat! Anda dapat menambahkan beberapa rangkaian ke bagan Anda dengan memanggil`Series.Add` metode beberapa kali dengan data yang berbeda.
 

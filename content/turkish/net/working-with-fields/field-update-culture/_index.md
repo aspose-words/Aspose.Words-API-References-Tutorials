@@ -64,7 +64,7 @@ builder.InsertField(FieldType.FieldTime, true);
 
 ## 3. Adım: Alan Güncelleme Kültürünü Yapılandırma
 
-Sihir yapılan yer burasıdır. Alanların belirtilen kültür ayarlarına göre güncellenmesini sağlamak için alan güncelleme kültürünü yapılandıracaksınız.
+Sihrin gerçekleştiği yer burasıdır. Alanların belirtilen kültür ayarlarına göre güncellenmesini sağlamak için alan güncelleme kültürünü yapılandıracaksınız.
 
 ```csharp
 // Alan güncelleme kültürünü yapılandırın.

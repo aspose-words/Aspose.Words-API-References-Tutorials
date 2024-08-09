@@ -9,7 +9,7 @@ url: /pl/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
 ## Wstęp
 
-Wyobraź sobie, że pracujesz z dokumentem programu Word zawierającym różne przekształcone elementy, takie jak obrócony tekst lub obrazy. Konwertując ten dokument do formatu PCL (Printer Command Language), warto upewnić się, że przekształcone elementy są poprawnie rastrowane. W tym samouczku przyjrzymy się, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET.
+Wyobraź sobie, że pracujesz z dokumentem programu Word zawierającym różne przekształcone elementy, takie jak obrócony tekst lub obrazy. Konwertując ten dokument do formatu PCL (Printer Command Language), warto upewnić się, że przekształcone elementy są poprawnie rasteryzowane. W tym samouczku przyjrzymy się, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET.
 
 ## Warunki wstępne
 
@@ -64,7 +64,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
- Tutaj,`RasterizeTransformedElements` jest ustawione na`false` , co oznacza, że przekształcone elementy nie zostaną zrasteryzowane. Możesz to ustawić`true` jeśli chcesz, aby były rasteryzowane.
+ Tutaj,`RasterizeTransformedElements` jest ustawiony na`false` , co oznacza, że przekształcone elementy nie zostaną zrasteryzowane. Możesz to ustawić`true` jeśli chcesz, aby były rasteryzowane.
 
 ## Krok 4: Konwertuj dokument
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl",
 
 ## Wniosek
 
-Konwersja dokumentów Worda z przekształconymi elementami do formatu PCL może być nieco trudna, ale dzięki Aspose.Words dla .NET staje się to prostym procesem. Wykonując kroki opisane w tym samouczku, możesz łatwo kontrolować, czy rasteryzować te elementy podczas konwersji.
+Konwertowanie dokumentów Worda z przekształconymi elementami do formatu PCL może być nieco trudne, ale dzięki Aspose.Words dla .NET staje się to prostym procesem. Wykonując kroki opisane w tym samouczku, możesz łatwo kontrolować, czy rasteryzować te elementy podczas konwersji.
 
 ## Często zadawane pytania
 

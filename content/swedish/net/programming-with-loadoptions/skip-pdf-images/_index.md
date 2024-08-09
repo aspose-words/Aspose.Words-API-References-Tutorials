@@ -55,7 +55,7 @@ Därefter måste du lägga till en referens till Aspose.Words för .NET. Du kan 
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din dokumentmapp.
+ Ersätta`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din dokumentmapp.
 
 ### Ställ in laddningsalternativ för att hoppa över PDF-bilder
 

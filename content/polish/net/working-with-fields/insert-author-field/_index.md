@@ -15,7 +15,7 @@ W tym samouczku zagłębiamy się w szczegóły wstawiania pola autora do dokume
 
 Zanim przejdziemy do samouczka, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
--  Aspose.Words dla biblioteki .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla biblioteki .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Visual Studio: tutaj napiszemy i uruchomimy nasz kod.
 - .NET Framework: Upewnij się, że masz go zainstalowany na swoim komputerze.
 - Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci podążać dalej.
@@ -128,7 +128,7 @@ Wstawianie pola autora do dokumentu Word przy użyciu Aspose.Words dla .NET jest
 
 Aspose.Words dla .NET obsługuje przede wszystkim języki .NET, w tym C# i VB.NET. W przypadku innych języków sprawdź odpowiednie produkty Aspose.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
 
 Aspose.Words oferuje bezpłatną wersję próbną, ale aby móc korzystać ze wszystkich funkcji i używać komercyjnie, musisz kupić licencję. Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
@@ -138,7 +138,7 @@ Aspose.Words oferuje bezpłatną wersję próbną, ale aby móc korzystać ze ws
 
 ### Czy mogę dodać inne typy pól za pomocą Aspose.Words?
 
- Tak, Aspose.Words obsługuje różne typy pól, w tym datę, godzinę, numer strony i inne. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) dla szczegółów.
+ Tak, Aspose.Words obsługuje różne typy pól, w tym datę, godzinę, numer strony i inne. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po szczegóły.
 
 ### Gdzie mogę znaleźć pomoc, jeśli napotkam problemy?
 

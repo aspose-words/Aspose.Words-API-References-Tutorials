@@ -74,7 +74,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 5: Das Quelldokument anhängen
 
- Hier geschieht die Magie! Wir hängen das Quelldokument an das Zieldokument an, indem wir`AppendDocument` Methode.
+ Hier geschieht die Magie! Wir hängen das Quelldokument an das Zieldokument an, indem wir`AppendDocument` Verfahren.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

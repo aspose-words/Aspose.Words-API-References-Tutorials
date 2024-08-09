@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Wstaw linię poziomą
 
- Użyj`InsertHorizontalRule()` metoda`DocumentBuilder` class, aby dodać linię poziomą.
+ Skorzystaj z`InsertHorizontalRule()` metoda`DocumentBuilder` class, aby dodać linię poziomą.
 
 ```csharp
 Shape shape = builder.InsertHorizontalRule();
@@ -52,7 +52,7 @@ Shape shape = builder.InsertHorizontalRule();
 
 ## Krok 3: Dostosuj format linii poziomej
 
- Uzyskać dostęp do`HorizontalRuleFormat` właściwość wstawionego kształtu, aby dostosować wygląd linii poziomej.
+ Uzyskaj dostęp do`HorizontalRuleFormat` właściwość wstawionego kształtu, aby dostosować wygląd linii poziomej.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;

@@ -102,7 +102,7 @@ Burada belgeyi "output.docx" olarak kaydediyoruz. Değişiklikleri görmek için
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki bölümleri başarıyla değiştirdiniz. Bu eğitimde belge oluşturmanın, bölümleri eklemenin ve içeriklerini değiştirmenin temelleri anlatıldı. Aspose.Words ile çok daha karmaşık işlemleri gerçekleştirebilirsiniz, bu yüzden keşfetmekten çekinmeyin.[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş özellikler için.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki bölümleri başarıyla değiştirdiniz. Bu eğitimde belge oluşturmanın, bölümleri eklemenin ve içeriklerini değiştirmenin temelleri anlatıldı. Aspose.Words ile çok daha karmaşık işlemleri gerçekleştirebilirsiniz, bu yüzden keşfetmekten çekinmeyin.[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş özellikler için.
 
 ## SSS
 

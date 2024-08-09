@@ -103,4 +103,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 もちろんです! この方法はさまざまなドキュメント要素に有効です。目的の要素をターゲットにするようにコードを調整するだけです。
 
 ### Aspose.Words は .NET 以外のプラットフォームもサポートしていますか?  
-はい、Aspose.WordsはJava、Cで利用可能です。++ 、その他のプラットフォーム。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、Aspose.WordsはJava、Cで利用可能です。++ 、その他のプラットフォーム。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。

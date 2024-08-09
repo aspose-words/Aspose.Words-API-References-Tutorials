@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## Conclusion
 
-Et voila! Vous avez modifié avec succès la source de culture de mise à jour de champ dans Aspose.Words pour .NET. En suivant ces étapes, vous pouvez vous assurer que vos documents Word affichent les dates et autres valeurs de champ en fonction des paramètres culturels spécifiés. Cela peut être particulièrement utile lors de la génération de documents destinés à un public international.
+Et voilà ! Vous avez modifié avec succès la source de culture de mise à jour de champ dans Aspose.Words pour .NET. En suivant ces étapes, vous pouvez vous assurer que vos documents Word affichent les dates et autres valeurs de champ en fonction des paramètres culturels spécifiés. Cela peut être particulièrement utile lors de la génération de documents destinés à un public international.
 
 ## FAQ
 

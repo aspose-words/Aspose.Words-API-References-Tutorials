@@ -15,7 +15,7 @@ url: /ko/net/programming-with-bookmarks/append-bookmarked-text/
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
--  .NET용 Aspose.Words: 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio와 같은 모든 .NET 개발 환경.
 - C# 기본 지식: 기본 C# 프로그래밍 개념을 이해하는 것이 도움이 됩니다.
 - 책갈피가 있는 Word 문서: 텍스트를 추가하는 데 사용할 책갈피가 설정된 Word 문서입니다.

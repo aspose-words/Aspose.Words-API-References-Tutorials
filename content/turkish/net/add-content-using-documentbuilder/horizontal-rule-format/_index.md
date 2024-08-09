@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Adım 2: Yatay Cetvel Ekle
 
- Kullan`InsertHorizontalRule()` yöntemi`DocumentBuilder` Yatay bir kural eklemek için sınıf.
+ Kullanın`InsertHorizontalRule()` yöntemi`DocumentBuilder` Yatay bir kural eklemek için sınıf.
 
 ```csharp
 Shape shape = builder.InsertHorizontalRule();
@@ -52,7 +52,7 @@ Shape shape = builder.InsertHorizontalRule();
 
 ## 3. Adım: Yatay Kural Formatını Özelleştirin
 
- Erişmek`HorizontalRuleFormat` Yatay kuralın görünümünü özelleştirmek için eklenen şeklin özelliği.
+ Erişim`HorizontalRuleFormat` Yatay kuralın görünümünü özelleştirmek için eklenen şeklin özelliği.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;

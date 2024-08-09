@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /net/working-with-node/enumerate-child-nodes/
 ---
+## Introduction
 
 Working with documents programmatically can be a breeze with the right tools. Aspose.Words for .NET is one such powerful library that allows developers to manipulate Word documents with ease. Today, we’ll walk through the process of enumerating child nodes within a Word document using Aspose.Words for .NET. This step-by-step guide will cover everything from prerequisites to practical examples, ensuring you have a solid understanding of the process.
 
@@ -86,20 +87,20 @@ Enumerating child nodes in a Word document using Aspose.Words for .NET is straig
 
 For more detailed documentation and advanced usage, visit the [Aspose.Words for .NET API documentation](https://reference.aspose.com/words/net/). If you need additional support, check out the [support forums](https://forum.aspose.com/c/words/8).
 
-## FAQs
+## FAQ's
 
-### 1. What types of nodes can a paragraph contain?
+### What types of nodes can a paragraph contain?
 A paragraph can contain nodes such as runs, shapes, comments, and other inline elements.
 
-### 2. How can I load an existing Word document?
+### How can I load an existing Word document?
 You can load an existing document using `Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Can I manipulate other node types besides Run?
+### Can I manipulate other node types besides Run?
 Yes, you can manipulate various node types like shapes, comments, and more by checking their `NodeType`.
 
-### 4. Do I need a license to use Aspose.Words for .NET?
+### Do I need a license to use Aspose.Words for .NET?
 You can start with a free trial or obtain a temporary license from [here](https://purchase.aspose.com/temporary-license/).
 
-### 5. Where can I find more examples and documentation?
+### Where can I find more examples and documentation?
 Visit the [Aspose.Words for .NET API documentation](https://reference.aspose.com/words/net/) for more examples and detailed documentation.
 

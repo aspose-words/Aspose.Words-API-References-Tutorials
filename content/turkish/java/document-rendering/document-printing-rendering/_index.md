@@ -41,7 +41,7 @@ Aspose.Words for Java kullanarak bir belgeyi yazdırmak çok kolaydır. İşte t
 doc.print("printerName");
 ```
 
- Yazıcı adını bağımsız değişken olarak belirtebilirsiniz.`print`yöntem. Bu, belgeyi yazdırılmak üzere belirtilen yazıcıya gönderecektir.
+ Yazıcı adını bağımsız değişken olarak belirtebilirsiniz.`print`Yöntem. Bu, belgeyi yazdırılmak üzere belirtilen yazıcıya gönderecektir.
 
 ## Belgeleri Oluşturma
 
@@ -74,7 +74,7 @@ Aspose.Words for Java, Java uygulamalarında belge yazdırma ve görüntüleme i
 
 ### Bir belgenin birden fazla kopyasını yazdırabilir miyim?
 
- Evet, çağrı sırasında kopya sayısını belirterek birden fazla kopya yazdırabilirsiniz.`print` yöntem.
+ Evet, çağrı sırasında kopya sayısını belirterek birden fazla kopya yazdırabilirsiniz.`print` Yöntem.
 
 ### Bir belgeyi resme nasıl dönüştürebilirim?
 

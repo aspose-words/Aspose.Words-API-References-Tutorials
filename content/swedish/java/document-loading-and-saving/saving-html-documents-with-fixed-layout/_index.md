@@ -27,7 +27,7 @@ Först måste vi ladda dokumentet som vi vill spara i HTML-format. Så här kan 
 Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
- Byta ut`"YourDocument.docx"` med sökvägen till ditt Word-dokument.
+ Ersätta`"YourDocument.docx"` med sökvägen till ditt Word-dokument.
 
 ## Steg 2: Konfigurera HTML Fixed Save Options
 
@@ -46,7 +46,7 @@ Låt oss nu spara dokumentet som HTML med den fasta layouten med de tidigare kon
 doc.save("Your Directory Path" + "FixedLayoutDocument.html", saveOptions);
 ```
 
- Byta ut`"FixedLayoutDocument.html"` med önskat namn för din HTML-fil.
+ Ersätta`"FixedLayoutDocument.html"` med önskat namn för din HTML-fil.
 
 ## Komplett källkod för att spara HTML-dokument med fast layout i Aspose.Words för Java
 

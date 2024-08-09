@@ -2,7 +2,7 @@
 title: Tạo dòng chữ ký mới và đặt Id nhà cung cấp
 linktitle: Tạo dòng chữ ký mới và đặt Id nhà cung cấp
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo dòng chữ ký mới và đặt ID nhà cung cấp trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước một.
+description: Tìm hiểu cách tạo dòng chữ ký mới và đặt ID nhà cung cấp trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước.
 type: docs
 weight: 10
 url: /vi/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Trong đoạn mã này, chúng tôi đang khởi tạo một`Document` và một`DocumentBuilder` . Các`DocumentBuilder` giúp chúng ta thêm các phần tử vào tài liệu của mình.
+ Trong đoạn mã này, chúng tôi đang khởi tạo một`Document` và một`DocumentBuilder` . các`DocumentBuilder` giúp chúng ta thêm các phần tử vào tài liệu của mình.
 
 ## Bước 2: Xác định các tùy chọn dòng chữ ký
 
@@ -125,7 +125,7 @@ Việc này sẽ ký vào tài liệu và lưu nó dưới dạng một tệp m�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công dòng chữ ký mới và đặt ID nhà cung cấp trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp việc quản lý và tự động hóa các tác vụ xử lý tài liệu trở nên cực kỳ dễ dàng. Hãy dùng thử và xem nó có thể hợp lý hóa quy trình làm việc của bạn như thế nào.
+Và bạn có nó! Bạn đã tạo thành công dòng chữ ký mới và đặt ID nhà cung cấp trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp việc quản lý và tự động hóa các tác vụ xử lý tài liệu trở nên cực kỳ dễ dàng. Hãy dùng thử và xem nó có thể hợp lý hóa quy trình làm việc của bạn như thế nào.
 
 ## Câu hỏi thường gặp
 

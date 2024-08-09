@@ -15,7 +15,7 @@ Hai! Siap terjun ke dunia manipulasi dokumen yang menakjubkan dengan Aspose.Word
 
 Sebelum kita mengotori tangan kita, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. .NET Framework: Versi apa pun yang mendukung Aspose.Words untuk .NET.
 3. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
 4. Pengetahuan C# Dasar: Hanya dasar-dasar untuk memahami sintaks dan struktur.
@@ -92,7 +92,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 Untuk memastikan kelancaran aliran, kita perlu menyesuaikan format paragraf di dokumen sumber.
 
- Ulangi semua paragraf dalam dokumen sumber dan atur`KeepWithNext` Properti.
+ Ulangi semua paragraf dalam dokumen sumber dan atur`KeepWithNext` milik.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))

@@ -107,17 +107,17 @@ public void doNotSavePictureBullet() throws Exception {
 
 ## Závěr
 
-Gratulujeme! Naučili jste se používat Aspose.Words for Java k provádění pokročilých možností ukládání. Ať už se jedná o šifrování dokumentů, manipulaci s metasoubory nebo správu obrázkových odrážek, Aspose.Words pro Java vám umožňuje převzít kontrolu nad vašimi dokumenty aplikace Word.
+Gratuluji! Naučili jste se používat Aspose.Words for Java k provádění pokročilých možností ukládání. Ať už se jedná o šifrování dokumentů, manipulaci s metasoubory nebo správu obrázkových odrážek, Aspose.Words pro Java vám umožňuje převzít kontrolu nad vašimi dokumenty aplikace Word.
 
 ## Nejčastější dotazy
 
 ### 1. Je Aspose.Words for Java bezplatná knihovna?
 
- Ne, Aspose.Words for Java je komerční knihovna. Podrobnosti o licencích najdete[tady](https://purchase.aspose.com/buy).
+ Ne, Aspose.Words for Java je komerční knihovna. Podrobnosti o licencích najdete[zde](https://purchase.aspose.com/buy).
 
 ### 2. Jak mohu získat bezplatnou zkušební verzi Aspose.Words for Java?
 
-Můžete získat bezplatnou zkušební verzi Aspose.Words for Java[tady](https://releases.aspose.com/).
+Můžete získat bezplatnou zkušební verzi Aspose.Words for Java[zde](https://releases.aspose.com/).
 
 ### 3. Kde najdu podporu pro Aspose.Words for Java?
 
@@ -129,6 +129,6 @@ Ano, Aspose.Words for Java je kompatibilní s různými Java knihovnami a framew
 
 ### 5. Je k dispozici možnost dočasné licence?
 
- Ano, můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Ano, můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 Začněte s Aspose.Words for Java ještě dnes a odemkněte plný potenciál manipulace s dokumenty ve svých aplikacích Java.

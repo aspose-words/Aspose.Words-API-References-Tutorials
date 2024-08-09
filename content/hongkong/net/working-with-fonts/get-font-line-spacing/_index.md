@@ -2,85 +2,100 @@
 title: 取得字體行距
 linktitle: 取得字體行距
 second_title: Aspose.Words 文件處理 API
-description: 在本教學中，了解如何使用 Aspose.Words for .NET 取得 Word 文件中的字體行間距。
+description: 透過此逐步教學，了解如何使用 Aspose.Words for .NET 取得字體行間距。非常適合開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/get-font-line-spacing/
 ---
-在本教學中，我們將告訴您如何使用 .NET 的 Aspose.Words 函式庫來取得 Word 文件中的字體行距。字體行距定義文字行之間的垂直間距。我們將逐步指導您瞭解並實作 .NET 專案中的程式碼。
+## 介紹
+
+Aspose.Words for .NET 是一個功能強大的程式庫，可讓您以程式設計方式建立、操作和轉換 Word 文件。您可能需要執行的常見任務是檢索文件中特定字體的行距。在本教學中，我們將逐步引導您完成流程，確保您可以使用 Aspose.Words for .NET 輕鬆取得字體行間距。 
 
 ## 先決條件
-在開始之前，請確保您擁有以下物品：
-- C# 程式語言的應用知識
-- 專案中安裝的 .NET 的 Aspose.Words 函式庫
 
-## 第 1 步：建立新文件和文件產生器
-首先，我們將透過實例化建立一個新文檔`Document`類別和文件建構器透過實例化`DocumentBuilder`班級。
+在我們深入研究程式碼之前，請確保您具備以下先決條件：
+
+1.  Aspose.Words for .NET Library：下載並安裝最新版本[這裡](https://releases.aspose.com/words/net/).
+2. 開發環境：確保您設定了類似 Visual Studio 的 IDE。
+3. C# 基礎知識：本教學假設您對 C# 程式設計有基本了解。
+
+## 導入命名空間
+
+首先，您需要在 C# 專案中匯入必要的命名空間。這些命名空間將允許您存取 Aspose.Words 功能。
 
 ```csharp
-//建立一個新文檔
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//建立文檔產生器
+讓我們將取得字體行距的過程分解為簡單、易於管理的步驟。
+
+## 第 1 步：建立一個新文檔
+
+第一步是使用 Aspose.Words for .NET 建立一個新的 Word 文件實例。
+
+```csharp
+Document doc = new Document();
+```
+
+## 第2步：初始化DocumentBuilder
+
+接下來我們需要初始化`DocumentBuilder`目的。該物件將幫助我們建立和操作文檔內容。
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 第2步：配置字體
-接下來，我們將透過設定來配置字體`Name`文檔生成器的屬性。
+## 步驟 3：設定字體屬性
+
+現在，我們為要插入的文字設定字體屬性。對於此範例，我們將使用“Calibri”字體。
 
 ```csharp
-//配置字體
 builder.Font.Name = "Calibri";
 ```
 
-## 步驟 3：為文件新增文本
-我們現在將使用文件產生器將格式化文字新增至文件。
+## 第 4 步：將文字寫入文檔
+
+使用`DocumentBuilder`對象，將一些文字寫入文件中。該文字將使用我們在上一步中設定的字體屬性。
 
 ```csharp
-//新增文字到文檔
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## 第四步：取得字體行距
-現在我們將訪問`Font`文檔第一段的物件並檢索該值`LineSpacing`財產。
+## 第 5 步：檢索字體對象
+
+為了取得行間距，我們需要存取剛剛新增的文字的字體物件。這可以透過瀏覽文件結構到第一段運行來完成。
 
 ```csharp
-//取得字體的行距
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### 使用 Aspose.Words for .NET 取得字體行間距的範例原始程式碼 
+## 第 6 步：取得行距
+
+最後，我們從字體物件中檢索行間距並將其列印到控制台。
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## 結論
-在本教學中，我們了解如何使用 Aspose.Words for .NET 取得 Word 文件中的字體行距。字體行距對於控製文字行之間的垂直間距很重要。請隨意使用此功能來自訂文件中文字的外觀。
 
-### 常見問題解答
+現在你就得到它了！當您將其分解為以下簡單步驟時，使用 Aspose.Words for .NET 檢索字體行間距非常簡單。無論您是建立新文檔還是使用現有文檔，Aspose.Words 都提供了有效管理字體屬性所需的所有工具。
 
-#### Q：如何更改Word文件中特定文字的行距？
+## 常見問題解答
 
-答：使用Aspose.Words，您可以輕鬆變更Word文件中特定文字的行距。使用 API 選擇所需的文字並透過指定適當的值來調整行間距。
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員使用 C# 以程式設計方式建立、操作和轉換 Word 文件。
 
-#### Q：是否可以在 Word 文件中套用精確的行間距？
+### 我可以在其他 .NET 語言中使用 Aspose.Words for .NET 嗎？
+是的，您可以將 Aspose.Words for .NET 與任何 .NET 語言一起使用，包括 VB.NET 和 F#。
 
-答：是的，Aspose.Words 允許您在 Word 文件中套用精確的行間距。您可以使用 API 指定行間距的精確值。
+### 如何下載 Aspose.Words for .NET？
+您可以從以下位置下載最新版本的 Aspose.Words for .NET[這裡](https://releases.aspose.com/words/net/).
 
-#### Q：如何調整整個Word文件的行距？
+### Aspose.Words for .NET 有沒有免費試用版？
+是的，您可以從以下位置獲得免費試用[這裡](https://releases.aspose.com/).
 
-答：使用Aspose.Words，您可以輕鬆調整整個Word文件的行距。使用 API 提供的方法指定整個文件所需的行距。
-
-#### Q：Aspose.Words 支援多行間距嗎？
-
-答：是的，Aspose.Words 支援 Word 文件中的多行間距。您可以為文字行設定多個間距，例如正常間距的 1.5 倍或 2 倍。
-
-#### Q：調整行距時如何避免行重疊問題？
-
-答：為避免調整行間距時出現行重疊問題，請務必選擇適當的間距值。也要測試文件的最終渲染，以確保文字保持可讀且格式良好。
+### 在哪裡可以找到 Aspose.Words for .NET 的文檔？
+ Aspose.Words for .NET 的文件已可用[這裡](https://reference.aspose.com/words/net/).

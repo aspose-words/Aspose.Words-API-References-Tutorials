@@ -2,75 +2,99 @@
 title: Nastavit složku písem
 linktitle: Nastavit složku písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak nastavit adresář písem v Aspose.Words pro .NET a zajistit dostupnost písem používaných ve vašich dokumentech.
+description: Zjistěte, jak nastavit vlastní složku písem v Aspose.Words for .NET, abyste zajistili, že vaše dokumenty Word budou vykresleny správně bez chybějících písem.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-fonts-folder/
 ---
-V tomto tutoriálu vám ukážeme, jak nastavit adresář písem v Aspose.Words pro .NET. Dozvíte se, jak určit adresář obsahující písma použitá v dokumentu aplikace Word.
+## Zavedení
+
+Setkali jste se někdy s problémy s chybějícími fonty při práci s dokumenty Wordu ve vaší aplikaci .NET? No, nejsi sám. Nastavení správné složky písem může tento problém bezproblémově vyřešit. V této příručce vás provedeme nastavením složky písem pomocí Aspose.Words for .NET. Pojďme se ponořit!
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
+
+Než začneme, ujistěte se, že máte následující:
+
+- Visual Studio nainstalované na vašem počítači
+- Nastavení rozhraní .NET Framework
+-  Aspose.Words pro knihovnu .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
+
+## Importovat jmenné prostory
+
+Nejprve musíte importovat potřebné jmenné prostory pro práci s Aspose.Words. Přidejte následující řádky na začátek souboru kódu:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
+
+Nastavení složky písem je jednoduché, pokud budete pečlivě postupovat podle těchto kroků.
 
 ## Krok 1: Definujte adresář dokumentů
-Začněte nastavením cesty k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+
+Před čímkoli jiným definujte cestu k adresáři dokumentů. Tento adresář bude obsahovat vaše dokumenty aplikace Word a písma, která chcete použít.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Nastavte adresář písem
- Vytvořte instanci souboru`FontSettings` třídy a použijte`SetFontsFolder` metoda k určení adresáře obsahujícího fonty. Nahradit`"Fonts"` s názvem aktuálního adresáře fontů.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## Krok 3: Načtěte dokument s nastavením písma
- Použijte`LoadOptions` třídy k určení nastavení písma v`FontSettings` volba. Poté použijte`Document` třídy k načtení dokumentu pomocí těchto možností.
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Ukázka zdrojového kódu pro složku Set Fonts pomocí Aspose.Words pro .NET 
-
-```csharp
-
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+ Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři.
+
+## Krok 2: Inicializujte nastavení písma
+
+ Nyní musíte inicializovat`FontSettings` objekt. Tento objekt umožňuje zadat vlastní složky písem.
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Krok 3: Nastavte složku Fonts
+
+ Pomocí`SetFontsFolder` metoda`FontSettings` objekt, zadejte složku, kde jsou uložena vaše vlastní písma.
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ Zde,`dataDir + "Fonts"` ukazuje na složku s názvem "Fonts" v adresáři dokumentů. Druhý parametr,`false`, označuje, že složka není rekurzivní.
+
+## Krok 4: Vytvořte LoadOptions
+
+ Dále vytvořte instanci souboru`LoadOptions` třída. Tato třída vám pomůže načíst dokument se zadaným nastavením písma.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## Krok 5: Vložte dokument
+
+ Nakonec načtěte dokument aplikace Word pomocí`Document` třída a`LoadOptions` objekt.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+ Ujistěte se`"Rendering.docx"` je název vašeho dokumentu aplikace Word. Můžete jej nahradit názvem vašeho souboru.
+
 ## Závěr
-gratuluji! Nyní víte, jak nastavit adresář písem v Aspose.Words pro .NET. Tuto funkci můžete použít k zajištění dostupnosti písem použitých ve vašem dokumentu a k zajištění konzistence zobrazení písem.
 
-### FAQ
+tady to máte! Podle těchto kroků můžete snadno nastavit vlastní složku písem v Aspose.Words for .NET a zajistit, že všechna vaše písma budou správně vykreslena. Toto jednoduché nastavení vám může ušetřit spoustu starostí a vaše dokumenty budou vypadat přesně tak, jak chcete.
 
-#### Otázka: Jak mohu nastavit vlastní složku písem v Aspose.Words?
+## FAQ
 
- A: Chcete-li nastavit vlastní složku písem v Aspose.Words, můžete použít`FontsFolder` třída a`SetFontsFolders` metoda určující cestu ke složce obsahující vaše písma.
+### Proč musím nastavit vlastní složku písem?
+Nastavením vlastní složky písem zajistíte, že všechna písma použitá v dokumentech aplikace Word budou správně vykreslena, čímž se zabrání problémům s chybějícími písmy.
 
-#### Otázka: Mohu v Aspose.Words nastavit více složek písem?
+### Mohu nastavit více složek písem?
+ Ano, můžete použít`SetFontsFolders` způsob zadání více složek.
 
- Odpověď: Ano, můžete nastavit více složek písem v Aspose.Words voláním`SetFontsFolders` vícekrát s cestami různých složek písem, které chcete použít.
+### Co se stane, když písmo nebude nalezeno?
+Aspose.Words se pokusí nahradit chybějící písmo podobným ze systémových písem.
 
-#### Otázka: Co se stane, když písmo použité v dokumentu není přítomno v definovaných složkách písem?
+### Je Aspose.Words kompatibilní s .NET Core?
+Ano, Aspose.Words podporuje .NET Core spolu s .NET Framework.
 
-Odpověď: Pokud se písmo použité v dokumentu nenachází ve složkách písem definovaných v Aspose.Words, použije se místo něj náhradní písmo. Tím je zajištěno, že text v dokumentu bude vždy zobrazen správně, i když není k dispozici původní písmo.
-
-#### Otázka: Mají složky písem definované v Aspose.Words přednost před písmy nainstalovanými v systému?
-
-Odpověď: Ano, složky písem definované v Aspose.Words mají přednost před písmy nainstalovanými v systému. To znamená, že pokud je písmo se stejným názvem přítomno jak v definovaných složkách písem, tak v systémových písmech, bude při zpracování dokumentů aplikace Word použita verze ve složce písem.
+### Kde mohu získat podporu v případě problémů?
+ Můžete získat podporu od[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).

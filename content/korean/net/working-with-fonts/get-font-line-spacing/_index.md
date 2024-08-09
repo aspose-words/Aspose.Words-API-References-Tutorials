@@ -2,85 +2,100 @@
 title: 글꼴 줄 간격 가져오기
 linktitle: 글꼴 줄 간격 가져오기
 second_title: Aspose.Words 문서 처리 API
-description: 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 글꼴 줄 간격을 얻는 방법을 알아봅니다.
+description: 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 글꼴 줄 간격을 얻는 방법을 알아보세요. 개발자에게 적합합니다.
 type: docs
 weight: 10
 url: /ko/net/working-with-fonts/get-font-line-spacing/
 ---
-이 튜토리얼에서는 .NET용 Aspose.Words 라이브러리를 사용하여 Word 문서에서 글꼴 줄 간격을 얻는 방법을 알려 드리겠습니다. 글꼴 줄 간격은 텍스트 줄 사이의 세로 간격을 정의합니다. .NET 프로젝트에서 코드를 이해하고 구현하는 데 도움이 되도록 단계별로 안내해 드리겠습니다.
+## 소개
+
+Aspose.Words for .NET은 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 라이브러리입니다. 수행해야 할 일반적인 작업 중 하나는 문서에서 특정 글꼴의 줄 간격을 검색하는 것입니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 글꼴 줄 간격을 쉽게 얻을 수 있도록 프로세스를 단계별로 안내합니다. 
 
 ## 전제 조건
-시작하기 전에 다음 항목이 있는지 확인하세요.
-- C# 프로그래밍 언어에 대한 실무 지식
-- 프로젝트에 설치된 .NET용 Aspose.Words 라이브러리
 
-## 1단계: 새 문서 및 문서 생성기 만들기
- 먼저, 인스턴스를 생성하여 새 문서를 만듭니다.`Document` 클래스와 문서 작성기를 인스턴스화하여`DocumentBuilder` 수업.
+코드를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
+
+1.  .NET 라이브러리용 Aspose.Words: 다음에서 최신 버전을 다운로드하여 설치하세요.[여기](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio와 같은 IDE가 설정되어 있는지 확인하세요.
+3. C#에 대한 기본 지식: 이 자습서에서는 사용자가 C# 프로그래밍에 대한 기본 지식을 가지고 있다고 가정합니다.
+
+## 네임스페이스 가져오기
+
+먼저 C# 프로젝트에서 필요한 네임스페이스를 가져와야 합니다. 이러한 네임스페이스를 사용하면 Aspose.Words 기능에 액세스할 수 있습니다.
 
 ```csharp
-// 새 문서 만들기
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//문서 생성기 만들기
+글꼴 줄 간격을 간단하고 관리하기 쉬운 단계로 나누는 과정을 살펴보겠습니다.
+
+## 1단계: 새 문서 만들기
+
+첫 번째 단계는 Aspose.Words for .NET을 사용하여 새 Word 문서 인스턴스를 만드는 것입니다.
+
+```csharp
+Document doc = new Document();
+```
+
+## 2단계: DocumentBuilder 초기화
+
+다음으로 초기화해야 합니다.`DocumentBuilder` 물체. 이 개체는 문서 내용을 구성하고 조작하는 데 도움이 됩니다.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2단계: 글꼴 구성
- 다음으로, 다음을 설정하여 글꼴을 구성하겠습니다.`Name` 문서 생성기의 속성입니다.
+## 3단계: 글꼴 속성 설정
+
+이제 삽입하려는 텍스트의 글꼴 속성을 설정합니다. 이 예에서는 "Calibri" 글꼴을 사용하겠습니다.
 
 ```csharp
-// 글꼴 구성
 builder.Font.Name = "Calibri";
 ```
 
-## 3단계: 문서에 텍스트 추가
-이제 문서 생성기를 사용하여 서식이 지정된 텍스트를 문서에 추가하겠습니다.
+## 4단계: 문서에 텍스트 쓰기
+
+ 사용하여`DocumentBuilder` 개체가 있으면 문서에 텍스트를 쓰세요. 이 텍스트는 이전 단계에서 설정한 글꼴 속성을 사용합니다.
 
 ```csharp
-// 문서에 텍스트 추가
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## 4단계: 글꼴 줄 간격 가져오기
- 이제 우리는`Font` 문서의 첫 번째 단락의 객체를 검색하고 해당 값을 검색합니다.`LineSpacing` 재산.
+## 5단계: 글꼴 개체 검색
+
+줄 간격을 얻으려면 방금 추가한 텍스트의 글꼴 개체에 액세스해야 합니다. 이는 문서 구조를 통해 첫 번째 단락 실행으로 이동하여 수행할 수 있습니다.
 
 ```csharp
-// 글꼴의 줄 간격을 가져옵니다.
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### .NET용 Aspose.Words를 사용하여 글꼴 줄 간격 가져오기에 대한 샘플 소스 코드 
+## 6단계: 줄 간격 가져오기
+
+마지막으로 글꼴 개체에서 줄 간격을 검색하여 콘솔에 인쇄합니다.
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## 결론
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 글꼴 줄 간격을 얻는 방법을 살펴보았습니다. 글꼴 줄 간격은 텍스트 줄 사이의 세로 간격을 제어하는 데 중요합니다. 이 기능을 자유롭게 사용하여 문서의 텍스트 모양을 사용자 정의하세요.
 
-### FAQ
+그리고 거기에 있습니다! Aspose.Words for .NET을 사용하여 글꼴 줄 간격을 검색하는 것은 다음과 같은 간단한 단계로 나누어 보면 간단합니다. 새 문서를 만들거나 기존 문서로 작업할 때 Aspose.Words는 글꼴 속성을 효율적으로 관리하는 데 필요한 모든 도구를 제공합니다.
 
-#### Q: Word 문서에서 특정 텍스트의 줄 간격을 어떻게 변경할 수 있나요?
+## FAQ
 
-A: Aspose.Words를 사용하면 Word 문서에서 특정 텍스트의 줄 간격을 쉽게 변경할 수 있습니다. API를 사용하여 원하는 텍스트를 선택하고 적절한 값을 지정하여 줄 사이의 간격을 조정하세요.
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 개발자가 C#을 사용하여 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 라이브러리입니다.
 
-#### Q: Word 문서에서 줄 사이에 정확한 간격을 적용할 수 있나요?
+### 다른 .NET 언어로 .NET용 Aspose.Words를 사용할 수 있나요?
+예, VB.NET 및 F#을 포함한 모든 .NET 언어로 Aspose.Words for .NET을 사용할 수 있습니다.
 
-A: 예, Aspose.Words를 사용하면 Word 문서의 줄 사이에 정확한 간격을 적용할 수 있습니다. API를 사용하여 줄 간격에 대한 정확한 값을 지정할 수 있습니다.
+### .NET용 Aspose.Words를 어떻게 다운로드할 수 있나요?
+ .NET용 Aspose.Words의 최신 버전은 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
 
-#### Q: 전체 Word 문서의 줄 간격을 조정하려면 어떻게 해야 합니까?
+### .NET용 Aspose.Words에 대한 무료 평가판이 있습니까?
+ 예, 다음에서 무료 평가판을 받을 수 있습니다.[여기](https://releases.aspose.com/).
 
-A: Aspose.Words를 사용하면 전체 Word 문서의 줄 간격을 쉽게 조정할 수 있습니다. API에서 제공하는 방법을 사용하여 전체 문서에 대해 원하는 줄 간격을 지정합니다.
-
-#### Q: Aspose.Words는 여러 줄 간격을 지원합니까?
-
-A: 예, Aspose.Words는 Word 문서에서 여러 줄 간격을 지원합니다. 텍스트 줄에 일반 간격의 1.5배 또는 2배 등 여러 간격을 설정할 수 있습니다.
-
-#### Q: 줄 간격을 조정할 때 줄이 겹치는 문제를 방지하려면 어떻게 해야 합니까?
-
-A: 줄 사이의 간격을 조정할 때 줄이 겹치는 문제를 방지하려면 적절한 간격 값을 선택해야 합니다. 또한 문서의 최종 렌더링을 테스트하여 텍스트를 읽을 수 있고 형식이 올바른지 확인하세요.
+### .NET용 Aspose.Words에 대한 설명서는 어디서 찾을 수 있나요?
+ .NET용 Aspose.Words에 대한 문서를 사용할 수 있습니다.[여기](https://reference.aspose.com/words/net/).

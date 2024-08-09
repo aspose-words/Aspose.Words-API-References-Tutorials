@@ -49,7 +49,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Rozpocznij budowanie stołu
 
- Aby rozpocząć budowę naszego stołu, wywołujemy metodę`StartTable` metoda na`DocumentBuilder`instancja. Ta metoda inicjuje nową tabelę w dokumencie.
+ Aby rozpocząć budowę naszego stołu, wywołujemy metodę`StartTable` metoda na`DocumentBuilder`przykład. Ta metoda inicjuje nową tabelę w dokumencie.
 
 ```csharp
 builder.StartTable();

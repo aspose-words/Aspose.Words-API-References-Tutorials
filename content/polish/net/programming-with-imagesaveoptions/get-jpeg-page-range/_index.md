@@ -15,7 +15,7 @@ Konwertowanie dokumentów programu Word na obrazy może być niezwykle przydatne
 
 Zanim zaczniemy, będziesz potrzebować kilku rzeczy:
 
--  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: środowisko programistyczne AC#, takie jak Visual Studio.
 - Przykładowy dokument: Dokument programu Word do pracy. W tym samouczku możesz użyć dowolnego pliku .docx.
 - Podstawowa znajomość języka C#: Znajomość programowania w języku C#.
@@ -77,7 +77,7 @@ masz to! Pomyślnie przekonwertowałeś określoną stronę dokumentu programu W
  Jakość pliku JPEG można dostosować za pomocą opcji`JpegQuality` nieruchomość w`ImageSaveOptions`.
 
 ### Czy mogę zapisywać obrazy w innych formatach?
- Tak, Aspose.Words obsługuje różne formaty obrazów, takie jak PNG, BMP i TIFF. Zmienić`SaveFormat` W`ImageSaveOptions` odpowiednio.
+ Tak, Aspose.Words obsługuje różne formaty obrazów, takie jak PNG, BMP i TIFF. Zmień`SaveFormat` W`ImageSaveOptions` odpowiednio.
 
 ### Czy istnieje sposób na podgląd obrazu przed zapisaniem?
 Będziesz musiał osobno zaimplementować mechanizm podglądu, ponieważ Aspose.Words nie zapewnia wbudowanej funkcji podglądu.

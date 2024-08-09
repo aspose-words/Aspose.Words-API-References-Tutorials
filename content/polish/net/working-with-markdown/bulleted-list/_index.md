@@ -2,95 +2,98 @@
 title: Lista punktowana
 linktitle: Lista punktowana
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak utworzyć listę punktowaną za pomocą Aspose.Words dla .NET Przewodnik krok po kroku.
+description: Dowiedz się, jak tworzyć i dostosowywać listy punktowane w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/bulleted-list/
 ---
+## Wstęp
 
-W tym samouczku powiemy Ci, jak utworzyć listę punktowaną za pomocą Aspose.Words dla .NET. Lista punktowana służy do wyszczególniania elementów bez stosowania numeracji.
+Gotowy do zanurzenia się w świat Aspose.Words dla .NET? Dzisiaj omówimy tworzenie listy punktowanej w dokumentach programu Word. Niezależnie od tego, czy porządkujesz pomysły, wymieniasz elementy, czy po prostu dodajesz odrobinę struktury do swojego dokumentu, listy punktowane są bardzo przydatne. Więc zaczynajmy!
 
-## Krok 1: Korzystanie z generatora dokumentów
+## Warunki wstępne
 
-Najpierw użyjemy generatora dokumentów, aby dodać treść do naszego dokumentu.
+Zanim przejdziemy do zabawy z kodowaniem, upewnijmy się, że masz wszystko, czego potrzebujesz:
+
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli jeszcze tego nie masz, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: środowisko programistyczne AC#, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Podstawowa znajomość programowania w języku C# pomoże Ci podążać dalej.
+
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw. Przypomina to przygotowanie gruntu pod płynne działanie naszego kodu.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Podzielmy teraz proces na łatwe i łatwe do wykonania etapy.
+
+## Krok 1: Utwórz nowy dokument
+
+W porządku, zacznijmy od utworzenia nowego dokumentu. To tutaj wydarzy się cała magia.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Stosowanie domyślnej listy punktowanej
+## Krok 2: Zastosuj format listy punktowanej
 
- Możemy zastosować domyślną listę punktowaną, korzystając z narzędzia do tworzenia dokumentów`ApplyBulletDefault` metoda.
+Następnie zastosujemy format listy punktowanej. To informuje dokument, że zaraz rozpoczniemy listę punktowaną.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Krok 3: Dostosowywanie formatu punktora
+## Krok 3: Dostosuj listę punktowaną
 
- Możemy dostosować format punktora, uzyskując dostęp do właściwości`ListFormat.List.ListLevels[0]`. W tym przykładzie użyliśmy myślnika „-” jako punktora.
+W tym miejscu dostosujemy listę punktowaną według własnych upodobań. W tym przykładzie użyjemy myślnika (-) jako naszego punktora.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Krok 4: Dodawanie pozycji do listy
+## Krok 4: Dodaj elementy listy
 
- Teraz możemy dodawać elementy do listy punktowanej, korzystając z narzędzia do tworzenia dokumentów`Writeln` metoda.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Krok 5: Usuwanie wcięcia z listy
-
- Jeśli chcemy utworzyć podlistę, możemy zwiększyć wcięcie za pomocą`ListFormat.ListIndent()` metoda. W tym przykładzie dodajemy podlistę do pozycji 2a i 2b.
+Dodajmy teraz kilka pozycji do naszej listy punktowanej. Tutaj możesz wykazać się kreatywnością i dodać dowolną treść, której potrzebujesz.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Przykładowy kod źródłowy listy punktowanej przy użyciu Aspose.Words dla .NET
-
-
-```csharp
-// Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak tworzyć listę punktowaną za pomocą Aspose.Words dla .NET.
+## Krok 5: Dodaj elementy podrzędne
 
-### Często zadawane pytania
+Aby było ciekawiej, dodajmy kilka podpozycji w „Pozycji 2”. Pomaga to w organizowaniu podpunktów.
 
-#### P: Jak utworzyć listę punktowaną w Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Wróć do poziomu listy głównej
+```
 
-Odp.: Aby utworzyć listę punktowaną w Markdown, zacznij każdy element listy symbolem punktora (`-`, `*` , Lub`+`), po którym następuje spacja.
+## Wniosek
 
-#### P: Czy w Markdown można zagnieżdżać listy punktowane?
+I masz to! Właśnie utworzyłeś listę punktowaną w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Jest to prosty proces, ale niezwykle przydatny w organizowaniu dokumentów. Niezależnie od tego, czy tworzysz proste listy, czy złożone listy zagnieżdżone, Aspose.Words pomoże Ci.
 
-O: Tak, możliwe jest zagnieżdżanie list punktowanych w Markdown poprzez dodanie czterech przesuniętych spacji przed każdym zagnieżdżonym elementem listy.
+Możesz eksperymentować z różnymi stylami i formatami list, aby dostosować je do swoich potrzeb. Miłego kodowania!
 
-#### P: Jak dostosować symbole punktorów?
+## Często zadawane pytania
 
-Odp.: W standardowym Markdown symbole punktorów są predefiniowane. Jednak niektóre edytory Markdown umożliwiają ich dostosowanie za pomocą określonych rozszerzeń.
+### Czy mogę używać różnych symboli punktorów na liście?
+    Tak, możesz dostosować symbole punktorów, zmieniając`NumberFormat` nieruchomość.
 
-#### P: Czy listy punktowane w Markdown obsługują wcięcia?
+### Jak dodać więcej poziomów wcięć?
+    Skorzystaj z`ListIndent` metoda dodawania kolejnych poziomów i`ListOutdent` wrócić na wyższy poziom.
 
-O: Tak, listy punktowane w Markdown obsługują wcięcia. Możesz dodać przesunięcie w lewo za pomocą spacji lub tabulatorów.
+### Czy można łączyć listy punktowane i numerowane?
+   Absolutnie! Możesz przełączać się między formatami punktorów i liczb za pomocą`ApplyNumberDefault`I`ApplyBulletDefault` metody.
 
-#### P: Czy do elementów listy można dodawać łącza lub tekst osadzony?
+### Czy mogę nadać styl tekstowi elementów listy?
+    Tak, możesz zastosować różne style, czcionki i formatowanie do tekstu w elementach listy za pomocą`Font` własność`DocumentBuilder`.
 
-Odp.: Tak, możesz dodawać łącza lub tekst osadzony do elementów listy, korzystając z odpowiedniej składni Markdown.
+### Jak utworzyć wielokolumnową listę punktowaną?
+   Formatowania tabeli można używać do tworzenia list wielokolumnowych, w których każda komórka zawiera osobną listę punktowaną.

@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", s
 
 ## Következtetés
 
-Gratulálunk! Sikeresen titkosított egy DOCX-fájlt az Aspose.Words for .NET használatával. Ezen egyszerű lépések követésével biztosíthatja, hogy dokumentumai biztonságosak legyenek, és csak a megfelelő jelszóval rendelkezők férhessenek hozzá. Ne feledje, hogy a titkosítás hatékony eszköz az érzékeny adatok védelmére, ezért tegye rendszeres részévé dokumentumkezelési gyakorlatának.
+Gratulálok! Sikeresen titkosított egy DOCX-fájlt az Aspose.Words for .NET használatával. Ezen egyszerű lépések követésével biztosíthatja, hogy dokumentumai biztonságosak legyenek, és csak a megfelelő jelszóval rendelkezők férhessenek hozzá. Ne feledje, hogy a titkosítás hatékony eszköz az érzékeny adatok védelmére, ezért tegye rendszeres részévé dokumentumkezelési gyakorlatának.
 
 ## GYIK
 
@@ -91,4 +91,4 @@ Ha elfelejti a jelszót, nincs mód a titkosított dokumentum visszaállításá
 
 ### Az Aspose.Words for .NET támogatja több dokumentum kötegelt titkosítását?
 
-Igen, írhat egy szkriptet, amellyel több dokumentumot is áthaladhat, és mindegyikre titkosítást alkalmazhat az oktatóanyagban ismertetett lépésekkel.
+Igen, írhat egy parancsfájlt, amellyel több dokumentumot is áthaladhat, és mindegyikre titkosítást alkalmazhat az oktatóanyagban ismertetett lépésekkel.

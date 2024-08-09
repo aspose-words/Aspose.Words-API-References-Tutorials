@@ -9,7 +9,7 @@ url: /pl/net/apply-license/apply-license-from-file/
 ---
 ## Wstęp
 
-No hej! Jeśli nurkujesz w świecie Aspose.Words dla .NET, czeka Cię prawdziwa gratka. Ta potężna biblioteka umożliwia programowe tworzenie, edytowanie i konwertowanie dokumentów programu Word. Ale zanim zaczniesz, ważne jest, aby wiedzieć, jak zastosować licencję z pliku, aby uwolnić jego pełny potencjał. W tym przewodniku przeprowadzimy Cię przez proces krok po kroku, zapewniając szybką i sprawną konfigurację licencji.
+Hej tam! Jeśli nurkujesz w świecie Aspose.Words dla .NET, czeka Cię prawdziwa gratka. Ta potężna biblioteka umożliwia programowe tworzenie, edytowanie i konwertowanie dokumentów programu Word. Ale zanim zaczniesz, ważne jest, aby wiedzieć, jak zastosować licencję z pliku, aby uwolnić jego pełny potencjał. W tym przewodniku przeprowadzimy Cię przez proces krok po kroku, zapewniając szybką i sprawną konfigurację licencji.
 
 ## Warunki wstępne
 
@@ -88,7 +88,7 @@ I masz to! Pomyślnie zastosowałeś licencję z pliku w Aspose.Words dla .NET. 
 Jeśli nie ustawisz licencji, Aspose.Words będzie działać w trybie próbnym, który ma ograniczenia, takie jak dokumenty ze znakami wodnymi i ograniczona funkcjonalność.
 
 ### Czy mogę skorzystać z licencji ze strumienia?  
- Tak, możesz załadować licencję ze strumienia, jeśli plik licencji jest osadzony jako zasób. Użyj`SetLicense` metoda akceptująca strumień.
+ Tak, możesz załadować licencję ze strumienia, jeśli plik licencji jest osadzony jako zasób. Skorzystaj z`SetLicense` metoda akceptująca strumień.
 
 ### Gdzie powinienem umieścić plik licencji?  
 Możesz umieścić plik licencji w tym samym katalogu co plik wykonywalny lub w dowolnej ścieżce dostępnej dla Twojej aplikacji.

@@ -54,7 +54,7 @@ Dadurch erhalten Sie Zugriff auf verschiedene Seiteneinrichtungseigenschaften wi
 
 ## Schritt 3: Zoll in Punkte umrechnen
 
- Aspose.Words verwendet standardmäßig Punkte als Maßeinheit. Um Ränder in Zoll festzulegen, müssen Sie Zoll in Punkte umrechnen. Verwenden Sie dazu`ConvertUtil.InchToPoint` Methode.
+ Aspose.Words verwendet standardmäßig Punkte als Maßeinheit. Um Ränder in Zoll festzulegen, müssen Sie Zoll in Punkte umrechnen. Verwenden Sie dazu`ConvertUtil.InchToPoint` Verfahren.
 
 ```csharp
 pageSetup.TopMargin = ConvertUtil.InchToPoint(1.0);
@@ -99,4 +99,4 @@ Obwohl Sie Aspose.Words ohne Lizenz verwenden können, sind einige erweiterte Fu
  Ja, Sie können Ränder und andere Einstellungen für verschiedene Abschnitte anpassen, indem Sie`Section` Klasse.
 
 ### Welche weiteren Funktionen bietet Aspose.Words?
- Aspose.Words unterstützt eine Vielzahl von Funktionen, darunter Dokumentkonvertierung, Serienbriefe und umfangreiche Formatierungsoptionen. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Aspose.Words unterstützt eine Vielzahl von Funktionen, darunter Dokumentkonvertierung, Serienbriefe und umfangreiche Formatierungsoptionen. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.

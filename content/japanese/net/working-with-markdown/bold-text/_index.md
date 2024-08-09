@@ -1,64 +1,72 @@
 ---
-title: 太字
-linktitle: 太字
+title: 太字テキスト
+linktitle: 太字テキスト
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してテキストを太字にする方法をステップバイステップ ガイドで学習します。
+description: Aspose.Words for .NET を使用して Word 文書内のテキストを太字にする方法を、ステップバイステップ ガイドで学習します。文書の書式設定を自動化するのに最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/bold-text/
 ---
+## 導入
 
-この例では、Aspose.Words for .NET を使用してテキストを太字にする方法を説明します。テキストを太字にすると、テキストがより目立つようになり、目立つようになります。
+ドキュメント愛好家の皆さん、こんにちは。Aspose.Words for .NET でドキュメント処理の世界に飛び込むなら、素晴らしい体験が待っています。この強力なライブラリには、Word ドキュメントをプログラムで操作するためのさまざまな機能が用意されています。今日は、そのような機能の 1 つである、Aspose.Words for .NET を使用してテキストを太字にする方法について説明します。レポートを生成する場合、動的なドキュメントを作成する場合、またはドキュメント作成プロセスを自動化する場合、テキストの書式設定を制御する方法を学ぶことは不可欠です。テキストを目立たせる準備はできていますか? さあ、始めましょう!
 
-## ステップ1: ドキュメントジェネレーターの使用
+## 前提条件
 
-まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
+コードに進む前に、設定する必要があるものがいくつかあります。
 
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-```
+1.  Aspose.Words for .NET: Aspose.Words for .NETの最新バージョンがインストールされていることを確認してください。まだインストールしていない場合は、こちらからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: コードを記述して実行するための Visual Studio などの IDE。
+3. C# の基本的な理解: C# プログラミングの知識があれば、例を理解するのに役立ちます。
 
-## ステップ2: 太字テキスト
+## 名前空間のインポート
 
-ドキュメントビルダーの`Font.Bold`財産に`true`.
-
-```csharp
-builder.Font.Bold = true;
-```
-
-## ステップ3: ドキュメントにコンテンツを追加する
-
-ドキュメントビルダーメソッドを使用して、ドキュメントにコンテンツを追加できるようになりました。`Writeln`、テキスト行を追加します。
+まず最初に、必要な名前空間をインポートしましょう。これにより、完全な名前空間パスを常に参照しなくても Aspose.Words の機能にアクセスできるようになります。
 
 ```csharp
-builder.Writeln("This text will be bold");
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Aspose.Words for .NET を使用した太字テキストのサンプル ソース コード
+ここで、Aspose.Words for .NET を使用して Word 文書内のテキストを太字にするプロセスを詳しく説明します。
 
+## ステップ1: DocumentBuilderを初期化する
+
+の`DocumentBuilder`クラスは、ドキュメントにコンテンツをすばやく簡単に追加する方法を提供します。初期化してみましょう。
 
 ```csharp
 //ドキュメント ビルダーを使用してドキュメントにコンテンツを追加します。
 DocumentBuilder builder = new DocumentBuilder();
-
-//テキストを太字にします。
-builder.Font.Bold = true;
-builder.Writeln("This text will be Bold");  
 ```
 
-おめでとうございます！Aspose.Words for .NET を使用してテキストを太字にする方法を学習しました。
+## ステップ2: テキストを太字にする
 
+次は楽しい部分、テキストを太字にする部分です。`Bold`の財産`Font`反対する`true`太字のテキストを記入します。
 
-### よくある質問
+```csharp
+//テキストを太字にします。
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");
+```
 
-#### Q: Aspose.Words でテキストを太字にするにはどうすればいいですか?
+## 結論
 
- A: Aspose.Wordsでテキストを太字にするには、`Font.Bold`の財産`Run`オブジェクト。このプロパティは次のように設定できます。`true`特定のテキストを太字にするには、例えば`run.Font.Bold=true`内のテキストを太字にする`Run`物体。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書内のテキストを太字にできました。このシンプルでありながら強力な機能は、Aspose.Words で実現できることのほんの一部にすぎません。ドキュメント自動化タスクの可能性を最大限に引き出すために、実験と探索を続けてください。
 
-#### Q: 同じ段落内の複数のテキストを太字にすることはできますか?
+## よくある質問
 
- A: はい、複数のテキストを1つの段落内で太字にすることができます。`Run`オブジェクトを複数作成できます`Run`オブジェクトを設定し、`Font.Bold`財産に`true`各オブジェクトでテキストの必要な部分を太字にすることができます。その後、`Paragraph.AppendChild(run)`方法。
+### テキストの一部だけを太字にすることはできますか?
+はい、できます。`DocumentBuilder`テキストの特定のセクションをフォーマットします。
 
-#### Q: Aspose.Words の表またはセル内のテキストを太字にできますか?
+### テキストの色も変更することは可能ですか?
+もちろんです！`builder.Font.Color`テキストの色を設定するプロパティ。
 
- A: はい、Aspose.Wordsではテーブルやセル内のテキストを太字にすることができます。適切な方法で目的のセルまたは段落に移動し、`Font.Bold`の財産`Run`または`Paragraph`物体。
+### 複数のフォントスタイルを一度に適用できますか?
+はい、できます。例えば、両方を設定することで、テキストを太字と斜体の両方にすることができます。`builder.Font.Bold`そして`builder.Font.Italic`に`true`.
+
+### 他にどのようなテキスト書式設定オプションが利用できますか?
+Aspose.Words は、フォント サイズ、下線、取り消し線など、幅広いテキスト書式設定オプションを提供します。
+
+### Aspose.Words を使用するにはライセンスが必要ですか?
+ Aspose.Wordsは無料トライアルまたは一時ライセンスで使用できますが、フル機能を使用するにはライセンスを購入することをお勧めします。[買う](https://purchase.aspose.com/buy)詳細についてはページをご覧ください。

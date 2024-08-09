@@ -36,7 +36,7 @@ Ces espaces de noms sont essentiels pour créer, manipuler et enregistrer des do
 
 ## Étape 1 : configuration du répertoire de documents
 
-Tout d'abord, nous devons spécifier le répertoire dans lequel nos documents sont stockés. Cela aide Aspose.Words à localiser les fichiers avec lesquels nous souhaitons travailler.
+Tout d'abord, nous devons spécifier le répertoire dans lequel nos documents sont stockés. Cela aide Aspose.Words à localiser les fichiers avec lesquels nous voulons travailler.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -77,7 +77,7 @@ Ici, nous enregistrons le document annexé avec un nom de fichier descriptif, in
 
 ## Conclusion
 
- Et voila! Vous avez appris avec succès comment ajouter un document Word à un autre à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert la configuration de votre environnement, le chargement de documents, l'ajout d'un document à un autre tout en conservant le formatage source et l'enregistrement du document combiné. Aspose.Words offre un large éventail de fonctionnalités, alors assurez-vous d'explorer le[Documentation API](https://reference.aspose.com/words/net/) pour libérer tout son potentiel.
+ Et voilà ! Vous avez appris avec succès comment ajouter un document Word à un autre à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert la configuration de votre environnement, le chargement de documents, l'ajout d'un document à un autre tout en conservant le formatage source et l'enregistrement du document combiné. Aspose.Words offre un large éventail de fonctionnalités, alors assurez-vous d'explorer le[Documentation API](https://reference.aspose.com/words/net/) pour libérer tout son potentiel.
 
 ## FAQ
 

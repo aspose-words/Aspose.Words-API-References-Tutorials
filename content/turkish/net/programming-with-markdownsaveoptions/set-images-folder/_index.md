@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 Belgeyi Markdown Olarak Kaydetme
 
- Kullanın`MemoryStream` Belgeyi Markdown formatında kaydetmek için.
+ Bir kullanın`MemoryStream` Belgeyi Markdown formatında kaydetmek için.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

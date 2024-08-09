@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/define-xyaxis-properties/
 ---
-## introduzione
+## Introduzione
 
 I grafici sono un potente strumento per visualizzare i dati. Quando hai bisogno di creare documenti professionali con grafici dinamici, Aspose.Words per .NET è una libreria inestimabile. Questo articolo ti guiderà attraverso il processo di definizione delle proprietà dell'asse XY in un grafico utilizzando Aspose.Words per .NET, suddividendo ogni passaggio per garantire chiarezza e facilità di comprensione.
 

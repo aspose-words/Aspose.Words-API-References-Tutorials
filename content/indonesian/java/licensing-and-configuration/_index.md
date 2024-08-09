@@ -19,7 +19,7 @@ Saat memulai perjalanan Anda untuk menggunakan Aspose.Words untuk Java, langkah 
 
 3.  Integrasikan Lisensi: Untuk mengaktifkan Aspose.Words, integrasikan lisensi ke dalam aplikasi Java Anda. Ini biasanya melibatkan memuat file lisensi dan menerapkannya ke Aspose.Words. Mengacu kepada[dokumentasi API](https://reference.aspose.com/words/java/) untuk contoh kode terperinci.
 
-## Pengaturan konfigurasi
+## Pengaturan Konfigurasi
 
 Setelah Anda melisensikan Aspose.Words, sekarang saatnya mengonfigurasinya untuk memenuhi kebutuhan spesifik Anda. Pengaturan konfigurasi memungkinkan Anda menyesuaikan perilaku toolkit. Berikut beberapa aspek penting yang perlu dipertimbangkan:
 
@@ -33,7 +33,7 @@ Setelah Anda melisensikan Aspose.Words, sekarang saatnya mengonfigurasinya untuk
 
 Dengan menyesuaikan pengaturan ini, Anda dapat menyesuaikan Aspose.Words agar sesuai dengan kebutuhan proyek Anda secara tepat.
 
-Melisensikan dan mengonfigurasi Aspose.Words untuk Java adalah aspek mendasar dalam memanfaatkan perangkat canggih ini secara efektif. Dengan pengaturan lisensi dan konfigurasi yang tepat, Anda dapat mengintegrasikan kemampuan pemrosesan dokumen ke dalam aplikasi Java Anda dengan lancar. Manfaatkan potensi penuh Aspose.Words dan tingkatkan tugas manajemen dokumen Anda ke tingkat yang lebih tinggi.
+Melisensikan dan mengonfigurasi Aspose.Words untuk Java adalah aspek mendasar dalam memanfaatkan perangkat canggih ini secara efektif. Dengan pengaturan lisensi dan konfigurasi yang tepat, Anda dapat dengan mudah mengintegrasikan kemampuan pemrosesan dokumen ke dalam aplikasi Java Anda. Manfaatkan potensi penuh Aspose.Words dan tingkatkan tugas manajemen dokumen Anda ke tingkat yang lebih tinggi.
 
  Ingat, untuk contoh kode terperinci dan panduan lebih lanjut, lihat[Aspose.Words untuk dokumentasi Java](https://reference.aspose.com/words/java/). Mulailah perjalanan Anda hari ini dan buka dunia kemungkinan yang ditawarkan Aspose.Words kepada pengembang Java.
 

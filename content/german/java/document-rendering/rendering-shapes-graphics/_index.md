@@ -106,7 +106,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 Sie können die Reihenfolge, in der die Formen angezeigt werden, mithilfe der Z-Reihenfolge steuern:
 
 ```java
-shape1.setZOrder(1); // Nach vorne bringen
+shape1.setZOrder(1); // In den Vordergrund bringen
 shape2.setZOrder(0); // Nach hinten senden
 ```
 

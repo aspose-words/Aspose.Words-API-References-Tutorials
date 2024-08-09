@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFont
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 跳過 Arial 和 Times Roman 字體的嵌入來優化 PDF 檔案大小。這個簡單的調整可以顯著減小檔案大小，使它們更易於共享和儲存。這就像去健身房看 PDF，減輕不必要的重量，同時保持所有必需品完好無損。
+現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 跳過 Arial 和 Times Roman 字體的嵌入來優化 PDF 檔案大小。這個簡單的調整可以顯著減小檔案大小，使它們更易於共享和儲存。這就像去健身房看 PDF，減輕不必要的重量，同時保持所有必需品完好無損。
 
 ## 常見問題解答
 

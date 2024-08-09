@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
-## Úvod
+## Zavedení
 
 Zkoušeli jste někdy, aby vaše dokumenty Word vypadaly profesionálněji tím, že jste si přizpůsobili okraje tabulek a buněk? Pokud ne, máte se na co těšit! Tento tutoriál vás provede procesem formátování tabulek a buněk s různými okraji pomocí Aspose.Words for .NET. Představte si, že máte možnost změnit vzhled svých tabulek pomocí pouhých několika řádků kódu. Zaujalo? Pojďme se ponořit a prozkoumat, jak toho můžete snadno dosáhnout.
 
@@ -16,8 +16,8 @@ Zkoušeli jste někdy, aby vaše dokumenty Word vypadaly profesionálněji tím,
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 - Základní znalost programování v C#.
 - Visual Studio nainstalované na vašem počítači.
--  Aspose.Words pro knihovnu .NET. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
--  Platná licence Aspose. Můžete získat bezplatnou zkušební verzi nebo dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words pro knihovnu .NET. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
+-  Platná licence Aspose. Můžete získat bezplatnou zkušební verzi nebo dočasnou licenci od[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 

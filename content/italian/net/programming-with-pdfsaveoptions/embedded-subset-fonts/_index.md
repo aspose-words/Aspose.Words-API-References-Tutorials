@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
-## introduzione
+## Introduzione
 
 Hai mai notato come alcuni file PDF siano molto più grandi di altri, anche quando contengono contenuti simili? Il colpevole spesso risiede nei caratteri. Incorporare i caratteri in un PDF garantisce che abbia lo stesso aspetto su qualsiasi dispositivo, ma può anche aumentare le dimensioni del file. Fortunatamente, Aspose.Words per .NET offre una pratica funzionalità per incorporare solo i sottoinsiemi di caratteri necessari, mantenendo i tuoi PDF snelli ed efficienti. Questo tutorial ti guiderà attraverso il processo, passo dopo passo.
 
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passaggio 2: configura le opzioni di salvataggio del PDF
 
- Successivamente, configuriamo il`PdfSaveOptions` per garantire che vengano incorporati solo i sottoinsiemi di caratteri necessari. IMPOSTANDO`EmbedFullFonts` A`false`, diciamo ad Aspose.Words di incorporare solo i glifi utilizzati nel documento.
+ Successivamente, configuriamo il`PdfSaveOptions` per garantire che vengano incorporati solo i sottoinsiemi di caratteri necessari. Impostando`EmbedFullFonts` A`false`, diciamo ad Aspose.Words di incorporare solo i glifi utilizzati nel documento.
 
 ```csharp
 // Il PDF di output conterrà sottoinsiemi di caratteri nel documento.
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## Conclusione
 
-il gioco è fatto! Seguendo questi semplici passaggi, puoi ridurre in modo efficiente la dimensione dei tuoi file PDF incorporando solo i sottoinsiemi di caratteri necessari utilizzando Aspose.Words per .NET. Ciò non solo consente di risparmiare spazio di archiviazione, ma garantisce anche tempi di caricamento più rapidi e prestazioni migliori, soprattutto per i documenti con caratteri estesi.
+Ed ecco qua! Seguendo questi semplici passaggi, puoi ridurre in modo efficiente la dimensione dei tuoi file PDF incorporando solo i sottoinsiemi di caratteri necessari utilizzando Aspose.Words per .NET. Ciò non solo consente di risparmiare spazio di archiviazione, ma garantisce anche tempi di caricamento più rapidi e prestazioni migliori, soprattutto per i documenti con caratteri estesi.
 
 ## Domande frequenti
 
@@ -73,7 +73,7 @@ il gioco è fatto! Seguendo questi semplici passaggi, puoi ridurre in modo effic
 Incorporando solo i sottoinsiemi di caratteri necessari è possibile ridurre significativamente le dimensioni del file PDF senza compromettere l'aspetto e la leggibilità del documento.
 
 ### Posso ripristinare l'incorporamento dei caratteri completi, se necessario?
- Si, puoi. Basta impostare il`EmbedFullFonts`proprietà a`true` nel`PdfSaveOptions`.
+ Sì, puoi. Basta impostare il`EmbedFullFonts`proprietà a`true` nel`PdfSaveOptions`.
 
 ### Aspose.Words per .NET supporta altre funzionalità di ottimizzazione dei PDF?
 Assolutamente! Aspose.Words per .NET offre una gamma di opzioni per l'ottimizzazione dei PDF, inclusa la compressione delle immagini e la rimozione di oggetti inutilizzati.

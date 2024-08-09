@@ -89,4 +89,4 @@ Sí, Aspose.Words para .NET se puede utilizar con cualquier lenguaje compatible 
  Puedes consultar el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para obtener información más detallada.
 
 ### ¿Qué opciones de soporte están disponibles si tengo problemas?  
- Aspose proporciona una[Foro de soporte](https://forum.aspose.com/c/words/8) donde puede obtener ayuda de la comunidad y del equipo de Aspose.
+ Aspose proporciona una[foro de soporte](https://forum.aspose.com/c/words/8) donde puede obtener ayuda de la comunidad y del equipo de Aspose.

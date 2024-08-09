@@ -36,7 +36,7 @@ Dessa namnutrymmen låter dig komma åt och arbeta med Aspose.Words API och hant
 
 ## Steg 1: Konfigurera dokumentsökvägen
 
- Först måste du ange sökvägen till ditt Word-dokument. Det är här Aspose.Words kommer att leta efter filen för att utföra operationer. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
+ Först måste du ange sökvägen till ditt Word-dokument. Det är här Aspose.Words kommer att leta efter filen för att utföra operationer. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
 
 ```csharp
 // Sökväg till din dokumentkatalog

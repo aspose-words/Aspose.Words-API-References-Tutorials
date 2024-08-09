@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 
 ## 結論
 
-你有它！您已使用 Aspose.Words for .NET 成功配置了 Word 文件以符合 OOXML ISO 29500_2008_Strict。本指南將引導您完成設定文件目錄、載入文件、針對 Word 2016 進行最佳化、設定合規性等級以及儲存文件。現在，您已準備好輕鬆確保您的文件符合最高合規性標準。
+給你了！您已使用 Aspose.Words for .NET 成功配置了 Word 文件以符合 OOXML ISO 29500_2008_Strict。本指南將引導您完成設定文件目錄、載入文件、針對 Word 2016 進行最佳化、設定合規性等級以及儲存文件。現在，您已準備好輕鬆確保您的文件符合最高合規性標準。
 
 ## 常見問題解答
 

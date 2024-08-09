@@ -106,7 +106,7 @@ dataPoint12.Marker.Size = 20;
 
  Voor het derde gegevenspunt in`series1`, we stellen het in op omkeren als de waarde negatief is, veranderen het markeringssymbool in een ster en stellen de markeringsgrootte in op 20.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Laten we tot slot ons document met alle aanpassingen opslaan.
 

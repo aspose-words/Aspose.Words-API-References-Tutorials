@@ -43,7 +43,7 @@ Innan vi börjar slå samman dokument måste vi ange katalogen där våra dokume
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Här anger vi sökvägen till katalogen där dina Word-dokument finns. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska vägen.
+ Här anger vi sökvägen till katalogen där dina Word-dokument finns. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska vägen.
 
 ## Steg 2: Enkel sammanfogning
 
@@ -103,7 +103,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
 
 ### Hur hanterar jag olika formatering under sammanslagning?
 
- Aspose.Words tillhandahåller olika sammanslagningsformatlägen som`KeepSourceFormatting`och`MergeFormatting` Referera till[API dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
+ Aspose.Words tillhandahåller olika sammanslagningsformatlägen som`KeepSourceFormatting`och`MergeFormatting` Se till[API dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
 
 ### Hur får jag support för Aspose.Words för .NET?
 

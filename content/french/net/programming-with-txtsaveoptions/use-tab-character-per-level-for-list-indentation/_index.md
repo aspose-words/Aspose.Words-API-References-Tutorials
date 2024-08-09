@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Dans cette section, nous allons créer une liste à plusieurs niveaux avec une indentation par onglets à l'aide d'Aspose.Words pour .NET. Suivez ces étapes:
+Dans cette section, nous allons créer une liste à plusieurs niveaux avec une indentation par onglets à l'aide d'Aspose.Words pour .NET. Suivez ces étapes :
 
 ## Étape 1 : Configurez votre document
 
@@ -62,7 +62,7 @@ builder.ListFormat.ApplyNumberDefault();
 
 Dans cette étape, nous appliquons le format de numérotation par défaut à notre liste. Cela aidera à créer une liste numérotée que nous pourrons ensuite personnaliser.
 
-## Étape 3 : Ajouter des éléments de liste avec différents niveaux
+## Étape 3 : ajouter des éléments de liste avec différents niveaux
 
 Insérer des éléments de liste et un retrait
 
@@ -121,7 +121,7 @@ Oui, Aspose.Words permet la personnalisation des styles de liste à différents 
  Utilisez le`ListFormat.ApplyBulletDefault()` méthode au lieu de`ApplyNumberDefault()` pour créer une liste à puces.
 
 ### Comment puis-je ajuster la taille du caractère de tabulation utilisé pour l’indentation ?
- Malheureusement, la taille de l'onglet dans`TxtSaveOptions`c'est réglé. Pour ajuster la taille de l'indentation, vous devrez peut-être utiliser des espaces ou personnaliser directement le formatage de la liste.
+ Malheureusement, la taille de l'onglet dans`TxtSaveOptions`est fixe. Pour ajuster la taille de l'indentation, vous devrez peut-être utiliser des espaces ou personnaliser directement le formatage de la liste.
 
 ### Puis-je utiliser ces paramètres lors de l'exportation vers d'autres formats comme PDF ou DOCX ?
 Les paramètres de caractères de tabulation spécifiques s'appliquent aux fichiers texte. Pour les formats tels que PDF ou DOCX, vous devrez ajuster les options de formatage dans ces formats.

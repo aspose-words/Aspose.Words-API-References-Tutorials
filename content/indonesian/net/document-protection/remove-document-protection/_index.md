@@ -53,7 +53,7 @@ Terkadang, dokumen dilindungi tanpa kata sandi. Dalam kasus seperti itu, kita cu
 doc.Unprotect();
 ```
 
-Itu dia! Dokumen Anda sekarang tidak terlindungi. Tapi bagaimana jika ada kata sandinya?
+Itu saja! Dokumen Anda sekarang tidak terlindungi. Tapi bagaimana jika ada kata sandinya?
 
 ## Langkah 3: Hapus Perlindungan dengan Kata Sandi
 

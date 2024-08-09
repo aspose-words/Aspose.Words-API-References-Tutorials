@@ -14,7 +14,7 @@ Profesyonel görünümlü raporlar, faturalar veya herhangi bir basılı materya
 
 ## Geliştirme Ortamını Kurma
 
-Başlamadan önce uygun bir geliştirme ortamına sahip olduğunuzdan emin olalım. İhtiyacın olacak:
+Başlamadan önce uygun bir geliştirme ortamına sahip olduğunuzdan emin olalım. İhtiyacınız olacak:
 
 - Java Geliştirme Kiti (JDK)
 - Eclipse veya IntelliJ IDEA gibi Entegre Geliştirme Ortamı (IDE)
@@ -26,7 +26,7 @@ Seçtiğiniz IDE'de yeni bir Java projesi oluşturarak başlayın. Ona anlamlı 
 
 ## Aspose.Words for Java'yı Projenize Ekleme
 
-Aspose.Words for Java'yı kullanmak için kütüphaneyi projenize eklemeniz gerekir. Bu adımları takip et:
+Aspose.Words for Java'yı kullanmak için kütüphaneyi projenize eklemeniz gerekir. Şu adımları izleyin:
 
 1.  Aspose.Words for Java kütüphanesini şu adresten indirin:[Burada](https://releases.aspose.com/words/java/).
 
@@ -79,7 +79,7 @@ Bu makalede Aspose.Words for Java kullanarak özel sayfa düzeniyle belgelerin n
 
 ### Bir belgenin birden fazla kopyasını yazdırabilir miyim?
 
- Evet, çağrı yapmadan önce yazdırma ayarlarında kopya sayısını ayarlayarak bir belgenin birden fazla kopyasını yazdırabilirsiniz.`print()` yöntem.
+ Evet, çağrı yapmadan önce yazdırma ayarlarında kopya sayısını ayarlayarak bir belgenin birden fazla kopyasını yazdırabilirsiniz.`print()` Yöntem.
 
 ### Aspose.Words for Java farklı belge formatlarıyla uyumlu mu?
 

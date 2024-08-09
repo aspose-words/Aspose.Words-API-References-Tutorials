@@ -55,7 +55,7 @@ builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 
 在這裡，我們指定形狀類型及其尺寸 (50x50)。想像一下，您正在文件上貼上一張剪得完美的小角貼紙。 
 
-## 步驟 3：定義符合要求的儲存選項
+## 第 3 步：定義符合要求的保存選項
 
 在儲存文件之前，我們需要定義儲存選項以確保我們的文件符合特定標準。我們將使用`OoxmlSaveOptions`為此類。
 
@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddCornersSnipped.docx", saveOptions);
 
 ## 結論
 
-你有它！使用 Aspose.Words for .NET 將自訂形狀新增至 Word 文件非常簡單，並且可以大幅增強文件的視覺吸引力。透過執行以下步驟，您可以輕鬆插入「剪角」形狀並確保您的文件符合所需的標準。快樂編碼！
+給你了！使用 Aspose.Words for .NET 將自訂形狀新增至 Word 文件非常簡單，並且可以大幅增強文件的視覺吸引力。透過執行以下步驟，您可以輕鬆插入「剪角」形狀並確保您的文件符合所需的標準。快樂編碼！
 
 ## 常見問題解答
 

@@ -16,7 +16,7 @@ Volt már olyan, hogy csalódott volt, amikor a Word-dokumentumban lévő tábl�
 Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkkel:
 
 1.  Aspose.Words for .NET – Ha még nem telepítette, letöltheti innen[itt](https://releases.aspose.com/words/net/).
-2. Word-dokumentum táblázattal – Olyan mintadokumentummal fogunk dolgozni, amelynek több oldalt átívelő táblázata van.
+2. Word-dokumentum táblázattal – Egy olyan mintadokumentummal fogunk dolgozni, amelynek több oldalt átívelő táblázata van.
 3. Alapvető C# ismerete – Ez az oktatóanyag feltételezi, hogy rendelkezik a C# programozás alapvető ismereteivel.
 
 ## Névterek importálása

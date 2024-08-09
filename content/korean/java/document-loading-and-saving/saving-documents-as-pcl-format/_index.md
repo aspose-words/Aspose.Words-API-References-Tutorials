@@ -79,7 +79,7 @@ doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformed
 
 Aspose.Words for Java는 주로 Word 문서를 다룹니다. PDF 또는 HTML과 같은 다른 형식을 PCL로 변환하려면 해당 특정 형식에 적합한 Aspose 제품을 사용하는 것이 좋습니다.
 
-### Aspose.Words for Java 평가판이 있나요?
+### Aspose.Words for Java 평가판이 있습니까?
 
 예, 구매하기 전에 Aspose.Words for Java 평가판에 액세스하여 기능을 살펴볼 수 있습니다. 자세한 내용은 Aspose 웹사이트를 방문하세요.
 

@@ -2,45 +2,61 @@
 title: Đặt tùy chọn chú thích cuối
 linktitle: Đặt tùy chọn chú thích cuối
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách đặt tùy chọn chú thích cuối trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước với mã nguồn mẫu.
+description: Tìm hiểu cách đặt tùy chọn chú thích cuối trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## Giới thiệu
 
-Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn cách sử dụng Aspose.Words cho .NET để đặt các tùy chọn chú thích cuối trong tài liệu Word. Chúng tôi sẽ giải thích mã nguồn C# được cung cấp và chỉ cho bạn cách triển khai nó trong các dự án của riêng bạn.
+Bạn đang tìm cách cải thiện tài liệu Word của mình bằng cách quản lý hiệu quả các chú thích cuối? Đừng tìm đâu xa! Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình thiết lập các tùy chọn chú thích cuối trong tài liệu Word bằng Aspose.Words cho .NET. Đến cuối hướng dẫn này, bạn sẽ trở thành chuyên gia trong việc tùy chỉnh chú thích cuối để phù hợp với nhu cầu tài liệu của mình.
 
- Để bắt đầu, hãy đảm bảo rằng bạn đã cài đặt và thiết lập Aspose.Words for .NET trong môi trường phát triển của mình. Nếu bạn chưa làm như vậy, hãy tải xuống và cài đặt thư viện từ[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Điều kiện tiên quyết
 
-## Bước 1: Khởi tạo đối tượng tài liệu
+Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
 
- Đầu tiên, khởi tạo`Document` đối tượng bằng cách cung cấp đường dẫn đến tài liệu nguồn của bạn:
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Thiết lập môi trường phát triển, chẳng hạn như Visual Studio.
+- Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C# sẽ có ích.
+
+## Nhập không gian tên
+
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết. Các không gian tên này cung cấp quyền truy cập vào các lớp và phương thức cần thiết để thao tác với tài liệu Word.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## Bước 1: Tải tài liệu
+
+ Trước tiên, hãy tải tài liệu nơi chúng tôi muốn đặt các tùy chọn chú thích cuối. Chúng tôi sẽ sử dụng`Document` class từ thư viện Aspose.Words để thực hiện việc này.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Bước 2: Khởi tạo đối tượng DocumentBuilder
+## Bước 2: Khởi tạo DocumentBuilder
 
- Tiếp theo, khởi tạo`DocumentBuilder` đối tượng thực hiện các thao tác trên tài liệu:
+ Tiếp theo, chúng ta sẽ khởi tạo`DocumentBuilder`lớp học. Lớp này cung cấp một cách đơn giản để thêm nội dung vào tài liệu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 3: Thêm văn bản và chú thích
+## Bước 3: Thêm văn bản và chèn chú thích
 
- Sử dụng`Write` phương pháp của`DocumentBuilder` đối tượng để thêm văn bản vào tài liệu và`InsertFootnote` phương pháp chèn chú thích cuối:
+ Bây giờ, hãy thêm một số văn bản vào tài liệu và chèn chú thích cuối. các`InsertFootnote` phương pháp của`DocumentBuilder` class cho phép chúng ta thêm chú thích cuối vào tài liệu.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## Bước 4: Thiết lập tùy chọn Endnote
+## Bước 4: Truy cập và đặt tùy chọn Endnote
 
- Truy cập`EndnoteOptions`thuộc tính của tài liệu để sửa đổi các tùy chọn chú thích cuối. Trong ví dụ này, chúng tôi đặt quy tắc khởi động lại để khởi động lại trên mỗi trang và vị trí ở cuối phần:
+ Để tùy chỉnh các tùy chọn ghi chú cuối, chúng ta cần truy cập vào`EndnoteOptions` tài sản của`Document` lớp học. Sau đó, chúng ta có thể đặt các tùy chọn khác nhau như quy tắc và vị trí khởi động lại.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -50,51 +66,29 @@ option.Position = EndnotePosition.EndOfSection;
 
 ## Bước 5: Lưu tài liệu
 
-Cuối cùng, lưu tài liệu đã sửa đổi:
+ Cuối cùng, hãy lưu tài liệu với các tùy chọn ghi chú được cập nhật. các`Save` phương pháp của`Document` class cho phép chúng ta lưu tài liệu vào thư mục đã chỉ định.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Đó là nó! Bạn đã đặt thành công các tùy chọn ghi chú cuối trong tài liệu Word bằng Aspose.Words cho .NET.
+## Phần kết luận
 
-### Mã nguồn mẫu cho Set Endnote Options sử dụng Aspose.Words for .NET
+Việc đặt tùy chọn chú thích cuối trong tài liệu Word của bạn bằng Aspose.Words cho .NET thật dễ dàng với các bước đơn giản này. Bằng cách tùy chỉnh quy tắc khởi động lại và vị trí của chú thích cuối, bạn có thể điều chỉnh tài liệu của mình để đáp ứng các yêu cầu cụ thể. Với Aspose.Words, khả năng thao tác tài liệu Word nằm trong tầm tay bạn.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Câu hỏi thường gặp
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ để thao tác các tài liệu Word theo chương trình. Nó cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu Word ở nhiều định dạng khác nhau.
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Tôi có thể sử dụng Aspose.Words miễn phí không?
+ Bạn có thể sử dụng Aspose.Words với bản dùng thử miễn phí. Để sử dụng lâu dài, bạn có thể mua giấy phép từ[đây](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### Chú thích cuối là gì?
+Chú thích cuối là tài liệu tham khảo hoặc ghi chú được đặt ở cuối phần hoặc tài liệu. Họ cung cấp thêm thông tin hoặc trích dẫn.
 
-Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa đổi nó theo yêu cầu cụ thể của bạn.
+### Làm cách nào để tùy chỉnh hình thức của chú thích cuối?
+ Bạn có thể tùy chỉnh các tùy chọn ghi chú cuối như đánh số, vị trí và quy tắc khởi động lại bằng cách sử dụng`EndnoteOptions` lớp trong Aspose.Words cho .NET.
 
-### Câu hỏi thường gặp
-
-#### Câu hỏi: Làm cách nào tôi có thể tạo kiểu cho chú thích cuối trong Aspose.Words?
-
- Đáp: Để tạo kiểu cho chú thích cuối trong Aspose.Words, bạn có thể sử dụng`EndnoteOptions` lớp học và`SeparatorNoteTextStyle` tài sản. Bạn có thể chỉ định kiểu phông chữ, kích thước, màu sắc, v.v. cho chú thích bằng thuộc tính này.
-
-#### Hỏi: Có thể tùy chỉnh cách đánh số chú thích cuối trong tài liệu không?
-
- Trả lời: Có, có thể tùy chỉnh cách đánh số chú thích cuối trong tài liệu. Bạn có thể dùng`RestartRule`Và`NumberStyle` thuộc tính của`EndnoteOptions` lớp để xác định các quy tắc khởi động lại và kiểu đánh số cụ thể.
-
-#### Câu hỏi: Làm cách nào tôi có thể định vị chú thích cuối trong tài liệu?
-
-Đáp: Để định vị chú thích cuối trong tài liệu, bạn có thể sử dụng`Position` tài sản của`EndnoteOptions` lớp học. Bạn có thể chỉ định nên đặt chú thích cuối ở cuối mỗi trang, ở cuối mỗi phần hay ở cuối tài liệu.
-
-#### Hỏi: Tôi có thể tùy chỉnh định dạng đánh số chú thích cuối trang không?
-
- Trả lời: Có, bạn có thể tùy chỉnh định dạng đánh số chú thích cuối trong Aspose.Words. Sử dụng`NumberFormat` tài sản của`EndnoteOptions` class để đặt định dạng mong muốn, chẳng hạn như chữ số Ả Rập, chữ số La Mã, chữ cái, v.v.
-
-#### Câu hỏi: Có thể tiếp tục đánh số chú thích cuối giữa các phần của tài liệu không?
-
- Đáp: Có, có thể tiếp tục đánh số chú thích cuối giữa các phần của tài liệu. Sử dụng`RestartRule` tài sản của`EndnoteOptions` lớp và đặt nó thành`RestartContinuous` để cho phép đánh số tiếp tục giữa các phần.
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+ Tài liệu chi tiết có sẵn trên[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) trang.

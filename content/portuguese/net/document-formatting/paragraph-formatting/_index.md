@@ -20,7 +20,7 @@ Antes de embarcarmos nesta aventura de formatação, vamos preparar nosso kit de
 3. .NET Framework: certifique-se de que esteja instalado.
 4. Conhecimento básico de C#: Não se preocupe, você não precisa ser um mago, apenas algum conhecimento básico bastará.
 
-Tem tudo? Ótimo! Vamos continuar.
+Tem tudo? Ótimo! Vamos em frente.
 
 ## Importar namespaces
 

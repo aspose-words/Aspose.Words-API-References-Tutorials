@@ -72,7 +72,7 @@ Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menge
 
 ### Bisakah saya mengekspor semua bookmark dari dokumen Word ke PDF?
 
- Ya kamu bisa. Dalam`PdfSaveOptions`, Anda dapat menyesuaikan pengaturan untuk menyertakan semua bookmark jika diperlukan.
+ Ya, kamu bisa. Di`PdfSaveOptions`, Anda dapat menyesuaikan pengaturan untuk menyertakan semua bookmark jika diperlukan.
 
 ### Bagaimana jika saya ingin mengekspor bookmark dari badan dokumen juga?
 
@@ -82,7 +82,7 @@ Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menge
 
  Sangat! Anda dapat menyesuaikannya`DefaultBookmarksOutlineLevel` properti untuk mengatur tingkat garis besar yang berbeda untuk bookmark Anda.
 
-### Bagaimana cara menangani dokumen tanpa penanda?
+### Bagaimana cara menangani dokumen tanpa bookmark?
 
 Jika dokumen Anda tidak memiliki penanda, PDF akan dihasilkan tanpa kerangka penanda apa pun. Pastikan dokumen Anda berisi penanda jika Anda memerlukannya dalam PDF.
 

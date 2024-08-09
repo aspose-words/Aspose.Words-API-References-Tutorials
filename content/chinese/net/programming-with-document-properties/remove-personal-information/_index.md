@@ -76,7 +76,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ### Aspose.Words for .NET 免费吗？
 
- Aspose.Words 提供[免费试用](https://releases.aspose.com/)您可以试用一下，但需要购买许可证才能使用完整功能。查看[价钱](https://purchase.aspose.com/buy)更多细节。
+ Aspose.Words 提供[免费试用](https://releases.aspose.com/)您可以试用一下，但需要购买许可证才能使用完整功能。查看[定价](https://purchase.aspose.com/buy)了解更多详情。
 
 ### 我可以将 Aspose.Words 用于其他文档格式吗？
 

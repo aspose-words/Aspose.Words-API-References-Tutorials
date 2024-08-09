@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
  ใช่ คุณสามารถได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) หรือซื้อใบอนุญาตแบบเต็ม[ที่นี่](https://purchase.aspose.com/buy).
 
 ### มีการทดลองใช้ฟรีหรือไม่?
- ใช่ คุณสามารถดาวน์โหลด[ทดลองฟรี](https://releases.aspose.com/) ของ Aspose.Words สำหรับ .NET
+ ใช่ คุณสามารถดาวน์โหลด[ทดลองใช้ฟรี](https://releases.aspose.com/) ของ Aspose.Words สำหรับ .NET
 
 ### ฉันจะหาเอกสารเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
  เอกสารรายละเอียดมีอยู่ที่[เว็บไซต์กำหนด](https://reference.aspose.com/words/net/).

@@ -55,7 +55,7 @@ Lassen Sie uns jetzt die Aspose.Words-Bibliothek in unser Projekt integrieren.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  Ein ... kreieren`Document` Objekt und laden Sie das Dokument:
+2.  Erstellen Sie ein`Document` Objekt und laden Sie das Dokument:
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
     ```
@@ -115,4 +115,4 @@ Absolut! Aspose.Words unterstützt verschiedene Formate wie DOC, DOCX, ODT, RTF 
 Ja, Sie können Aspose.Words in Webanwendungen, Desktopanwendungen und mehr integrieren.
 
 ### Wo finde ich weitere Beispiele und Dokumentation?
- Besuche die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Anleitungen.
+ Schauen Sie sich die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Anleitungen.

@@ -9,7 +9,7 @@ url: /hu/net/compare-documents/comparison-target/
 ---
 ## Bevezetés
 
-Halihó! Volt már olyan, hogy egy Word-dokumentum két verzióját hasonlította össze, és minden apró változást manuálisan követett? Mintha tűt keresnénk a szénakazalban, igaz? Nos, mi lenne, ha azt mondanám, hogy van egy szuper egyszerű módja ennek az Aspose.Words for .NET használatával? Úgy van! Ezzel a hatékony könyvtárral egy pillanat alatt összehasonlíthatja a Word-dokumentumokat. Ma lépésről lépésre végigvezetem a folyamaton. Készen áll arra, hogy dokumentum-összehasonlító varázslóvá váljon? Merüljünk el!
+Szia! Volt már olyan, hogy egy Word-dokumentum két verzióját hasonlította össze, és minden apró változást manuálisan követett? Mintha tűt keresnénk a szénakazalban, igaz? Nos, mi lenne, ha azt mondanám, hogy van egy szuper egyszerű módja ennek az Aspose.Words for .NET használatával? így van! Ezzel a hatékony könyvtárral egy pillanat alatt összehasonlíthatja a Word-dokumentumokat. Ma lépésről lépésre végigvezetem a folyamaton. Készen áll arra, hogy dokumentum-összehasonlító varázslóvá váljon? Merüljünk el!
 
 ## Előfeltételek
 
@@ -59,7 +59,7 @@ Document docA = new Document(dataDir + "DocumentA.docx");
 Document docB = new Document(dataDir + "DocumentB.docx");
 ```
 
-## 4. lépés: Klónozza a dokumentumot
+## 4. lépés: A dokumentum klónozása
 
 A klónozás olyan, mintha egy azonos ikertestvért készítenél a dokumentumból. Ez a lépés biztosítja, hogy legyen egy biztonsági másolat, amelyet összehasonlíthat az eredetivel.
 

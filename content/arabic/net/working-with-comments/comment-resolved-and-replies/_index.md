@@ -32,7 +32,7 @@ using Aspose.Words.Comments;
 
 ## الخطوة 1: قم بتحميل المستند
 
- للبدء، قم بتحميل مستند Word الذي يحتوي على التعليقات. استخدم ال`Document` فئة لهذا.
+ للبدء، قم بتحميل مستند Word الذي يحتوي على التعليقات. استخدم`Document` فئة لهذا.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

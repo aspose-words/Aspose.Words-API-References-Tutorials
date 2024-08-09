@@ -146,7 +146,7 @@ public void setImagesFolder() throws Exception
 
  Markdown 파일에 이미지를 포함하려면 다음을 사용하여 이미지 폴더 경로를 설정하세요.`setImagesFolder`방법`MarkdownSaveOptions`. 이미지 파일이 지정된 폴더에 저장되어 있는지 확인하세요. 그러면 Aspose.Words for Java가 그에 따라 이미지 참조를 처리합니다.
 
-### Aspose.Words for Java 평가판이 있나요?
+### Aspose.Words for Java 평가판이 있습니까?
 
 예, Aspose 웹사이트에서 Java용 Aspose.Words 평가판을 구할 수 있습니다. 평가판을 사용하면 라이센스를 구매하기 전에 라이브러리의 기능을 평가할 수 있습니다.
 

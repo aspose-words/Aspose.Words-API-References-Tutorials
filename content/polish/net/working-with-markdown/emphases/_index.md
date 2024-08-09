@@ -2,127 +2,125 @@
 title: Podkreśla
 linktitle: Podkreśla
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać wyróżnień (pogrubienie i kursywa) w Aspose.Words dla .NET Przewodnik krok po kroku.
+description: Dowiedz się, jak tworzyć wyróżniony tekst w Markdown przy użyciu Aspose.Words dla .NET. W tym przewodniku omówiono style pogrubione, kursywę i łączone wraz z instrukcjami krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/emphases/
 ---
+## Wstęp
 
-W tym przykładzie wyjaśnimy, jak używać akcentów w Aspose.Words dla .NET. akcenty służą do podkreślenia pewnych części tekstu, np. pogrubienia i kursywy.
+Markdown to lekki język znaczników, którego można używać do dodawania elementów formatowania do dokumentów tekstowych w postaci zwykłego tekstu. W tym przewodniku zagłębimy się w szczegóły używania Aspose.Words dla .NET do tworzenia plików Markdown z wyróżnionym tekstem, takim jak pogrubienie i kursywa. Niezależnie od tego, czy tworzysz dokumentację, post na blogu, czy jakikolwiek tekst wymagający odrobiny sprytu, ten samouczek przeprowadzi Cię przez każdy etap procesu.
 
-## Krok 1: Inicjalizacja dokumentu
+## Warunki wstępne
 
- Najpierw zainicjujemy dokument, tworząc instancję klasy`Document` klasa.
+Zanim przejdziemy do kodu, upewnijmy się, że mamy wszystko, czego potrzebujemy, aby zacząć:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-```
+1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną najnowszą wersję Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: odpowiednie środowisko programistyczne .NET, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Zrozumienie podstaw programowania w języku C# będzie korzystne.
+4. Podstawy Markdown: Znajomość składni Markdown pomoże Ci lepiej zrozumieć kontekst.
 
-## Krok 2: Korzystanie z generatora dokumentów
+## Importuj przestrzenie nazw
 
-Następnie użyjemy generatora dokumentów, aby dodać treść do naszego dokumentu.
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Krok 3: Dodaj tekst z podkreśleniami
-
-Możemy dodać podkreślenie tekstu, zmieniając właściwości czcionki generatora dokumentów. W tym przykładzie użyliśmy pogrubienia i kursywy, aby podkreślić różne części tekstu.
+Aby pracować z Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw. Dodaj następujące dyrektywy using na górze pliku kodu:
 
 ```csharp
-builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
-builder.Write("You can write");
-
-builder.Font.Bold = true;
-builder.Write("bold");
-
-builder.Font.Bold = false;
-builder.Write(" or ");
-
-builder.Font.Italic = true;
-builder.Write("italic");
-
-builder.Font.Italic = false;
-builder.Writeln(".");
-
-builder.Write("You can also write ");
-builder.Font.Bold = true;
-
-builder.Font.Italic = true;
-builder.Write("bold and italic");
-
-builder.Font.Bold = false;
-builder.Font.Italic = false;
-builder. Write(".");
-
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Krok 4: Zapisywanie dokumentu
+## Krok 1: Konfigurowanie dokumentu i narzędzia DocumentBuider
 
- Wreszcie możemy zapisać dokument w żądanym formacie. W tym przykładzie używamy`.md` rozszerzenie formatu Markdown.
-
-```csharp
-builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
-```
-
-Gratulacje! Nauczyłeś się teraz, jak używać akcentów w Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy dla Emphases przy użyciu Aspose.Words dla .NET
-
+Po pierwsze, musimy utworzyć nowy dokument Word i zainicjować plik`DocumentBuilder` aby rozpocząć dodawanie treści.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ The`dataDir` zmienna jest symbolem zastępczym katalogu, w którym zapiszesz plik Markdown. Pamiętaj, aby zastąpić „TWOJ KATALOG DOKUMENTÓW” rzeczywistą ścieżką.
+
+## Krok 2: Pisanie zwykłego tekstu
+
+Dodajmy teraz do naszego dokumentu zwykły tekst. Będzie to służyć jako podstawa do zademonstrowania nacisku na tekst.
+
+```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as indicators of emphases.");
 builder.Write("You can write ");
+```
 
+ Tutaj,`Writeln` dodaje nową linię po tekście, while`Write` kontynuuje tę samą linię.
+
+## Krok 3: Dodawanie pogrubionego tekstu
+
+ Aby dodać pogrubiony tekst w Markdown, zawiń żądany tekst w podwójną gwiazdkę (``). W Aspose.Words dla .NET możesz to osiągnąć poprzez ustawienie`Bold` własność`Font` oponować`true`.
+
+```csharp
 builder.Font.Bold = true;
 builder.Write("bold");
-
 builder.Font.Bold = false;
 builder.Write(" or ");
+```
 
+Ten fragment kodu ustawia „pogrubienie” na pogrubienie, a następnie przywraca normalny tekst dla słowa „lub”.
+
+## Krok 4: Dodawanie tekstu kursywą
+
+Tekst kursywy w Markdown jest zawijany pojedynczymi gwiazdkami (`*` ). Podobnie ustaw`Italic` własność`Font` oponować`true`.
+
+```csharp
 builder.Font.Italic = true;
 builder.Write("italic");
-
 builder.Font.Italic = false;
-builder.Writeln(" text. ");
+builder.Writeln(" text.");
+```
 
+Spowoduje to wyświetlenie „kursywy” w stylu kursywy, po której nastąpi zwykły tekst.
+
+## Krok 5: Łączenie tekstu pogrubionego i kursywy
+
+Możesz łączyć style pogrubienia i kursywy, zawijając tekst potrójnymi gwiazdkami (`*` ). Ustaw oba`Bold`I`Italic` właściwości do`true`.
+
+```csharp
 builder.Write("You can also write ");
 builder.Font.Bold = true;
-
 builder.Font.Italic = true;
 builder.Write("BoldItalic");
-
 builder.Font.Bold = false;
 builder.Font.Italic = false;
-builder.Write("text.");
+builder.Write(" text.");
+```
 
+Ten fragment demonstruje, jak zastosować do „BoldItalic” zarówno pogrubienie, jak i kursywę.
+
+## Krok 6: Zapisywanie dokumentu jako Markdown
+
+Po dodaniu całego podkreślonego tekstu czas zapisać dokument jako plik Markdown.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-### Często zadawane pytania
+Ta linia zapisuje dokument w określonym katalogu pod nazwą pliku „WorkingWithMarkdown.Emphases.md”.
 
-#### P: Jak wyróżnić tekst za pomocą Markdown?
+## Wniosek
 
- Odp.: Aby wyróżnić tekst za pomocą Markdown, po prostu otocz tekst odpowiednimi symbolami. Używać`*` Lub`_` dla kursywy,`**` Lub`__` za pogrubienie i`~~` do przekreślenia.
+masz to! Opanowałeś teraz sposób tworzenia wyróżnionego tekstu w Markdown przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka ułatwia programowe manipulowanie dokumentami programu Word i eksportowanie ich do różnych formatów, w tym Markdown. Wykonując czynności opisane w tym przewodniku, możesz ulepszyć swoje dokumenty, dodając pogrubiony i pochylony tekst, dzięki czemu będą bardziej atrakcyjne i czytelne.
 
-#### P: Czy możemy połączyć różne wyróżnienia w tym samym tekście?
+## Często zadawane pytania
 
- Odp.: Tak, możliwe jest łączenie różnych wyróżnień w tym samym tekście. Na przykład możesz pogrubić i pochylić słowo, używając obu`**`I`*` dookoła świata.
+### Czy mogę używać innych stylów tekstu w Markdown z Aspose.Words dla .NET?
+Tak, możesz używać innych stylów, takich jak nagłówki, listy i bloki kodu. Aspose.Words dla .NET obsługuje szeroką gamę opcji formatowania Markdown.
 
-#### P: Jakie opcje wyróżniania są dostępne w Markdown?
+### Jak mogę zainstalować Aspose.Words dla .NET?
+ Bibliotekę można pobrać ze strony[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/) i postępuj zgodnie z dostarczonymi instrukcjami instalacji.
 
-Odp.: Opcje wyróżniania dostępne w Markdown są pisane kursywą (`*` Lub`_`), pogrubiony (`**` Lub`__`) i przekreślenie (`~~`).
+### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz pobrać plik[bezpłatna wersja próbna](https://releases.aspose.com/) aby przetestować funkcje Aspose.Words dla .NET.
 
-#### P: Jak postępować w przypadkach, gdy tekst zawiera znaki specjalne używane przez Markdown do wyróżniania?
+### Czy mogę uzyskać pomoc, jeśli napotkam problemy?
+ Absolutnie! Możesz odwiedzić[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) aby uzyskać pomoc od społeczności i zespołu Aspose.
 
- Odp.: Jeśli Twój tekst zawiera znaki specjalne używane przez Markdown do wyróżniania, możesz je pominąć, poprzedzając je znakiem a`\` . Na przykład,`\*` wyświetli dosłowną gwiazdkę.
-
-#### P: Czy możemy dostosować wygląd podświetlenia za pomocą CSS?
-
-Odp.: Podświetlanie w Markdown jest zwykle renderowane przy użyciu domyślnych stylów przeglądarki. Jeśli przekonwertujesz Markdown na HTML, możesz dostosować wygląd podświetlania za pomocą reguł CSS.
+### Jak uzyskać tymczasową licencję na Aspose.Words dla .NET?
+ Można uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) ocenić pełne możliwości biblioteki.

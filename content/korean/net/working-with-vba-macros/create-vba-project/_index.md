@@ -16,7 +16,7 @@ url: /ko/net/working-with-vba-macros/create-vba-project/
 
 코딩을 시작하기 전에 따라야 할 모든 것이 있는지 확인하십시오.
 
-1.  .NET 라이브러리용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 필요합니다. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET 라이브러리용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 필요합니다. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 .NET 개발 환경은 코드를 작성하고 테스트하는 데 필수적입니다.
 3. 기본 C# 지식: 코드를 탐색할 때 C#에 대한 기본적인 이해가 도움이 됩니다.
 4. 샘플 문서 디렉터리: Word 문서를 저장할 디렉터리를 준비하세요. 이곳이 바로 마법이 일어나는 곳입니다!
@@ -128,7 +128,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 Aspose.Words for .NET은 개발자가 .NET 애플리케이션에서 Word 문서를 생성, 편집 및 변환할 수 있는 포괄적인 라이브러리입니다. VBA를 사용하여 문서 작업 흐름을 자동화하고 기능을 향상시키는 데 적합합니다.
 
 ### Aspose.Words를 무료로 사용해 볼 수 있나요?  
- 예, Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 예, Aspose.Words를 사용해 볼 수 있습니다.[무료 평가판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ### Word 문서에 VBA 코드를 어떻게 추가하나요?  
  VBA 코드를 생성하여 추가할 수 있습니다.`VbaModule` 그리고 그것을 설정`SourceCode` 매크로 코드로 속성을 지정하세요. 그런 다음 모듈을`VbaProject`.

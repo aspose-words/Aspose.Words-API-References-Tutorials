@@ -58,7 +58,7 @@ mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 
 ## Langkah 4: Menjalankan Mail Merge
 
-Sekarang saatnya untuk mengeksekusi gabungan surat. Ini adalah dimana keajaiban terjadi. Anda akan menentukan bidang gabungan dan dokumen yang harus disisipkan di bidang ini.
+Sekarang saatnya untuk mengeksekusi gabungan surat. Di sinilah keajaiban terjadi. Anda akan menentukan bidang gabungan dan dokumen yang harus disisipkan di bidang ini.
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
@@ -139,7 +139,7 @@ Dan itu dia! Anda telah berhasil menyisipkan dokumen ke dalam bidang tertentu se
 ## FAQ
 
 ### Bisakah saya menyisipkan banyak dokumen di bidang gabungan yang berbeda?
-Ya kamu bisa. Cukup tentukan bidang gabungan yang sesuai dan jalur dokumen terkait di`MailMerge.Execute` metode.
+Ya, kamu bisa. Cukup tentukan bidang gabungan yang sesuai dan jalur dokumen terkait di`MailMerge.Execute` metode.
 
 ### Apakah mungkin untuk memformat dokumen yang disisipkan secara berbeda dari dokumen utama?
  Sangat! Anda dapat menggunakan`ImportFormatMode` parameter di`NodeImporter` untuk mengontrol pemformatan.

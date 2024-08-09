@@ -22,7 +22,7 @@ Mielőtt belevetnénk magunkat a dokumentumautomatizálás világába, győződj
 
 - Mintadokumentum: Készítsen egy mintadokumentumot, amelynek nyomtatási folyamatát automatizálni szeretné.
 
-## Elkezdeni
+## Kezdő lépések
 
 Kezdjük a szükséges könyvtárak importálásával és a Java alkalmazásunk alapszerkezetének beállításával. Alább található a kódrészlet a kezdéshez:
 

@@ -108,7 +108,7 @@ Belgeleri ekledikten sonra son adım, birleştirilmiş belgeyi belirttiğiniz di
    dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
    ```
 
-İşte buyur! Aspose.Words for .NET kullanarak bir belgeyi boş bir belgeye başarıyla eklediniz. Bu düşündüğünden daha kolay olmadı mı?
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir belgeyi boş bir belgeye başarıyla eklediniz. Bu düşündüğünden daha kolay olmadı mı?
 
 ## Çözüm
 

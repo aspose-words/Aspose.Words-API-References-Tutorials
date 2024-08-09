@@ -10,7 +10,7 @@ url: /fr/net/find-and-replace-text/replace-with-string/
 
 ## Introduction
 
-Salut! Vous êtes-vous déjà retrouvé plongé dans un document Word, devant remplacer certains mots ou expressions ? Tu n'es pas seul. Qu'il s'agisse de mettre à jour des termes, de corriger des erreurs ou simplement d'améliorer votre contenu, il est crucial de savoir comment rechercher et remplacer efficacement du texte dans un document. Aujourd'hui, nous plongeons dans le monde merveilleux d'Aspose.Words for .NET pour vous montrer comment remplacer des chaînes dans vos documents Word comme un pro.
+Salut! Vous êtes-vous déjà retrouvé plongé dans un document Word, devant remplacer certains mots ou expressions ? Vous n'êtes pas seul. Qu'il s'agisse de mettre à jour des termes, de corriger des erreurs ou simplement d'améliorer votre contenu, il est crucial de savoir comment rechercher et remplacer efficacement du texte dans un document. Aujourd'hui, nous plongeons dans le monde merveilleux d'Aspose.Words for .NET pour vous montrer comment remplacer des chaînes dans vos documents Word comme un pro.
 
 ## Conditions préalables
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 
 ## Conclusion
 
-Voilà! Avec Aspose.Words pour .NET, remplacer des chaînes dans un document Word est un jeu d'enfant. Cet outil est incroyablement puissant, vous permettant de manipuler facilement des documents par programmation. Que vous mettiez à jour un seul mot ou que vous révisiez des sections entières, Aspose.Words est là pour vous.
+Et voilà ! Avec Aspose.Words pour .NET, remplacer des chaînes dans un document Word est un jeu d'enfant. Cet outil est incroyablement puissant, vous permettant de manipuler facilement des documents par programmation. Que vous mettiez à jour un seul mot ou que vous révisiez des sections entières, Aspose.Words est là pour vous.
 
 ## FAQ
 

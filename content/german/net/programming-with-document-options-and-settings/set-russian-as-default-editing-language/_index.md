@@ -50,7 +50,7 @@ loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian
 
 ## Schritt 2: Laden Sie das Dokument
 
- Als nächstes müssen wir das Word-Dokument mit dem`LoadOptions` im vorherigen Schritt konfiguriert. Dazu müssen Sie den Pfad zu Ihrem Dokument angeben und den`LoadOptions` Instanz an die`Document` Konstrukteur.
+ Als nächstes müssen wir das Word-Dokument mit dem`LoadOptions` im vorherigen Schritt konfiguriert. Dazu müssen Sie den Pfad zu Ihrem Dokument angeben und den`LoadOptions` Instanz an die`Document` Konstruktor.
 
 ### Dokumentpfad angeben
 

@@ -9,16 +9,16 @@ url: /vi/net/working-with-vba-macros/modify-vba-macros/
 ---
 ## Giới thiệu
 
-Xin chào các bạn lập trình viên và những người đam mê tự động hóa tài liệu! Bạn đã sẵn sàng đưa trò chơi tài liệu Word của mình lên một tầm cao mới chưa? Hôm nay, chúng ta sẽ đi sâu vào thế giới macro VBA (Visual Basic for Application) hấp dẫn trong tài liệu Word. Cụ thể, chúng ta sẽ khám phá cách sửa đổi macro VBA hiện có bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa các tác vụ, tùy chỉnh tài liệu và thậm chí điều chỉnh các macro phiền phức đó. Cho dù bạn đang tìm cách cập nhật macro của mình hay chỉ tò mò về quy trình, hướng dẫn này sẽ giúp bạn. Vậy hãy bắt đầu!
+Xin chào các bạn lập trình viên và những người đam mê tự động hóa tài liệu! Bạn đã sẵn sàng đưa trò chơi tài liệu Word của mình lên một tầm cao mới chưa? Hôm nay, chúng ta sẽ đi sâu vào thế giới macro VBA (Visual Basic for Application) hấp dẫn trong tài liệu Word. Cụ thể, chúng ta sẽ khám phá cách sửa đổi macro VBA hiện có bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa các tác vụ, tùy chỉnh tài liệu và thậm chí điều chỉnh các macro phiền phức đó. Cho dù bạn đang tìm cách cập nhật macro của mình hay chỉ tò mò về quy trình, hướng dẫn này sẽ giúp bạn. Vì vậy, hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản Aspose.Words mới nhất cho .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản Aspose.Words mới nhất cho .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển .NET như Visual Studio rất cần thiết để viết và kiểm tra mã của bạn.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp bạn theo dõi các đoạn mã.
-4.  Tài liệu Word mẫu: Có một[Tài liệu văn bản](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) với các macro VBA hiện có đã sẵn sàng. Đây sẽ là đối tượng thử nghiệm của chúng tôi để sửa đổi macro.
+4.  Tài liệu Word mẫu: Có một[tài liệu Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) với các macro VBA hiện có đã sẵn sàng. Đây sẽ là đối tượng thử nghiệm của chúng tôi để sửa đổi macro.
 
 ## Nhập không gian tên
 
@@ -73,7 +73,7 @@ Hãy truy cập dự án VBA như thế này:
 VbaProject project = doc.VbaProject;
 ```
 
- Dòng này truy xuất dự án VBA từ tài liệu đã tải và lưu trữ nó trong`project` Biến đổi.
+ Dòng này truy xuất dự án VBA từ tài liệu đã tải và lưu trữ nó trong`project` biến.
 
 ## Bước 4: Sửa đổi Macro VBA
 
@@ -108,7 +108,7 @@ Dòng này lưu tài liệu với macro VBA đã sửa đổi dưới dạng "Wo
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã sửa đổi thành công macro VBA trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm mọi thứ từ tải tài liệu của bạn và truy cập dự án VBA đến thay đổi mã macro và lưu tài liệu đã sửa đổi. Với Aspose.Words, bạn có thể dễ dàng tự động hóa các tác vụ, tùy chỉnh tài liệu của mình và thậm chí thử nghiệm các macro VBA để phù hợp với nhu cầu của bạn.
+Và bạn có nó! Bạn đã sửa đổi thành công macro VBA trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm mọi thứ từ tải tài liệu của bạn và truy cập dự án VBA đến thay đổi mã macro và lưu tài liệu đã sửa đổi. Với Aspose.Words, bạn có thể dễ dàng tự động hóa các tác vụ, tùy chỉnh tài liệu của mình và thậm chí thử nghiệm các macro VBA để phù hợp với nhu cầu của bạn.
 
  Nếu bạn háo hức khám phá thêm,[Tài liệu API](https://reference.aspose.com/words/net/) là một nguồn tài nguyên tuyệt vời. Và nếu bạn từng gặp khó khăn,[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) luôn ở đó để giúp đỡ bạn.
 

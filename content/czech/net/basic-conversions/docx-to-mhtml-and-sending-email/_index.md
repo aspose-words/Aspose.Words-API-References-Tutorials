@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
-## Úvod
+## Zavedení
 
 V dnešní digitální době je převod dokumentů z jednoho formátu do druhého a jejich odesílání e-mailem běžným úkolem. Tento článek vás provede procesem převodu souboru DOCX do formátu MHTML a jeho následného odeslání jako e-mailu pomocí Aspose.Words for .NET. Každý krok rozebereme v podrobném a snadno srozumitelném průvodci, který zajistí, že celý proces pochopíte od začátku do konce. Pojďme se ponořit!
 
@@ -81,7 +81,7 @@ client.Send(message);
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste převedli dokument DOCX do MHTML a odeslali jej e-mailem pomocí Aspose.Words for .NET. Tento proces zahrnuje načtení dokumentu, jeho převod do MHTML, vytvoření e-mailové zprávy a její odeslání pomocí klienta SMTP. Pomocí těchto kroků můžete snadno automatizovat převod a zasílání dokumentů ve vašich aplikacích e-mailem.
+Gratuluji! Úspěšně jste převedli dokument DOCX do MHTML a odeslali jej e-mailem pomocí Aspose.Words for .NET. Tento proces zahrnuje načtení dokumentu, jeho převod do MHTML, vytvoření e-mailové zprávy a její odeslání pomocí klienta SMTP. Pomocí těchto kroků můžete snadno automatizovat převod a zasílání dokumentů ve vašich aplikacích e-mailem.
 
 ## FAQ
 
@@ -89,7 +89,7 @@ Gratulujeme! Úspěšně jste převedli dokument DOCX do MHTML a odeslali jej e-
 Ano, Aspose.Words podporuje různé formáty a dokumenty jako DOC, DOCX, RTF a další můžete převádět do MHTML.
 
 ### Jak mohu k e-mailu přidat přílohy?
- Můžete použít`Attachments` majetek z`MailMessage`třídy a přidejte přílohy k e-mailu.
+ Můžete použít`Attachments` vlastnictvím`MailMessage`třídy a přidejte přílohy k e-mailu.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 Ano, Aspose.Words je kompatibilní s .NET Core. Můžete jej použít i v aplikacích .NET Core.
@@ -98,4 +98,4 @@ Ano, Aspose.Words je kompatibilní s .NET Core. Můžete jej použít i v aplika
  Ano, obě knihovny vyžadují licence. Dočasnou licenci můžete získat od[Aspose nákupní stránku](https://purchase.aspose.com/temporary-license/) pro účely hodnocení.
 
 ### Kde najdu další dokumentaci?
- Můžete najít podrobnou dokumentaci k Aspose.Words[tady](https://reference.aspose.com/words/net/) a pro Aspose.Email[tady](https://reference.aspose.com/email/net/).
+ Můžete najít podrobnou dokumentaci k Aspose.Words[zde](https://reference.aspose.com/words/net/) a pro Aspose.Email[zde](https://reference.aspose.com/email/net/).

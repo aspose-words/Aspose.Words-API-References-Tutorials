@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Stap 2: Configureer laadopties voor UTF-8-tekst
 
-Vervolgens moeten we de laadopties configureren om UTF-8-tekst te herkennen. Dit zorgt ervoor dat Aspose.Words alle speciale tekens of scripts in verschillende talen in uw document correct interpreteert.
+Vervolgens moeten we de laadopties configureren om UTF-8-tekst te herkennen. Dit zorgt ervoor dat Aspose.Words speciale tekens of scripts in verschillende talen in uw document correct interpreteert.
 
 ```csharp
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
@@ -63,7 +63,7 @@ Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 
 ## Stap 4: Sla het verwerkte document op
 
-Laten we ten slotte het document opslaan nadat Aspose.Words zijn ding heeft gedaan. Hierdoor wordt een nieuw RTF-bestand gegenereerd waarin de UTF-8-tekst correct wordt herkend.
+Laten we tot slot het document opslaan nadat Aspose.Words zijn ding heeft gedaan. Hierdoor wordt een nieuw RTF-bestand gegenereerd waarin de UTF-8-tekst correct wordt herkend.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");

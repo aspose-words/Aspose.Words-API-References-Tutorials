@@ -33,7 +33,7 @@ Muy bien, entremos en la parte divertida: ¡codificar! Dividiremos el proceso en
 
 ## Paso 1: configura tu proyecto
 
-Lo primero es lo primero, configure un nuevo proyecto en su IDE. Así es cómo:
+Lo primero es lo primero, configure un nuevo proyecto en su IDE. He aquí cómo:
 
 - Abra Visual Studio.
 - Cree un nuevo proyecto de aplicación de consola C#.

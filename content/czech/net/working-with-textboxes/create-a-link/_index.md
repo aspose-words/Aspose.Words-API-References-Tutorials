@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-textboxes/create-a-link/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, tech nadšenci a mágové s dokumenty! 🌟 Už jste někdy čelili výzvě propojení obsahu mezi textovými poli v dokumentech aplikace Word? Je to jako snažit se spojit tečky v krásném obrázku a Aspose.Words pro .NET dělá tento proces nejen možným, ale také přímočarým a efektivním. V tomto tutoriálu se ponoříme hluboko do umění vytváření vazeb mezi textovými poli pomocí Aspose.Words. Ať už jste ostřílený vývojář nebo teprve začínáte, tento průvodce vás provede každým krokem a zajistí, že můžete svá textová pole bezproblémově propojit jako profesionál. Takže popadněte svůj kódovací klobouk a můžeme začít!
 
@@ -15,7 +15,7 @@ Ahoj, tech nadšenci a mágové s dokumenty! 🌟 Už jste někdy čelili výzv�
 
 Než se ponoříme do kouzla propojování textových polí, ujistěte se, že máte připraveno vše podstatné:
 
-1. Aspose.Words for .NET Library: Budete potřebovat nejnovější verzi Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Budete potřebovat nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio, je nezbytné pro psaní a testování vašeho kódu.
 3. Základní znalost C#: Základní znalost C# vám pomůže sledovat příklady kódu.
 4. Ukázkový dokument aplikace Word: I když to není pro tento výukový program nezbytně nutné, může být užitečné mít ukázkový dokument aplikace Word k testování propojených textových polí.
@@ -116,7 +116,7 @@ Tím se dokument uloží s názvem "LinkedTextBoxes.docx". Nyní můžete soubor
 
 A tady to máte! 🎉 Úspěšně jste vytvořili a propojili textová pole v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento kurz vás provede nastavením prostředí, vytvářením a propojováním textových polí a ukládáním dokumentu. Díky těmto dovednostem můžete vylepšit své dokumenty aplikace Word pomocí dynamických toků obsahu a učinit své dokumenty interaktivnějšími a uživatelsky přívětivějšími.
 
- Pro podrobnější informace a pokročilé funkce se určitě podívejte na[Aspose.Words API dokumentace](https://reference.aspose.com/words/net/) Pokud máte nějaké dotazy nebo narazíte na problémy,[Fórum podpory](https://forum.aspose.com/c/words/8) je skvělým zdrojem.
+ Pro podrobnější informace a pokročilé funkce se určitě podívejte na[Aspose.Words API dokumentace](https://reference.aspose.com/words/net/) Pokud máte nějaké dotazy nebo narazíte na problémy,[fórum podpory](https://forum.aspose.com/c/words/8) je skvělým zdrojem.
 
 Šťastné kódování a ať se vaše textová pole vždy dokonale spojí! 🚀
 
@@ -132,7 +132,7 @@ Ano, můžete propojit více textových polí v sekvenci. Jen se ujistěte, že 
 Text uvnitř každého textového pole můžete stylizovat stejně jako jakýkoli jiný text v dokumentu aplikace Word pomocí bohatých možností formátování Aspose.Words nebo uživatelského rozhraní aplikace Word.
 
 ### Je možné odpojit textová pole, jakmile jsou propojena?
- Ano, můžete odpojit textová pole nastavením`Next` majetek z`TextBox` namítat proti`null`.
+ Ano, můžete odpojit textová pole nastavením`Next` vlastnictvím`TextBox` namítat proti`null`.
 
 ### Kde najdu další návody na Aspose.Words pro .NET?
  Další návody a zdroje naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

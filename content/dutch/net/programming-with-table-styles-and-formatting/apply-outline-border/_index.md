@@ -86,7 +86,7 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
- Elk randtype (links, rechts, boven, onder) wordt afzonderlijk ingesteld. We gebruiken`LineStyle.Single` voor een vaste lijn,`1.5` voor de lijndikte, en`Color.Green` voor de randkleur.
+ Elk randtype (links, rechts, boven, onder) wordt afzonderlijk ingesteld. Wij gebruiken`LineStyle.Single` voor een vaste lijn,`1.5` voor de lijndikte, en`Color.Green` voor de randkleur.
 
 ## Stap 6: Pas celschaduw toe
 

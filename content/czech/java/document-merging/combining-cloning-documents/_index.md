@@ -8,7 +8,7 @@ weight: 10
 url: /cs/java/document-merging/combining-cloning-documents/
 ---
 
-## Úvod
+## Zavedení
 
 Aspose.Words for Java je robustní knihovna, která vám umožňuje pracovat s dokumenty Wordu programově. Poskytuje širokou škálu funkcí, včetně vytváření, manipulace a formátování dokumentů. V této příručce se zaměříme na dva základní úkoly: sloučení více dokumentů do jednoho a klonování dokumentu při provádění úprav.
 
@@ -148,4 +148,4 @@ Absolutně! Aspose.Words umožňuje použít vlastní styl a formátování na k
 
 ### Kde najdu další zdroje a dokumentaci k Aspose.Words for Java?
 
- Komplexní dokumentaci a další zdroje pro Aspose.Words for Java najdete na[tady](https://reference.aspose.com/words/java/).
+ Komplexní dokumentaci a další zdroje pro Aspose.Words for Java najdete na[zde](https://reference.aspose.com/words/java/).

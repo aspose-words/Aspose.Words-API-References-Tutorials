@@ -8,7 +8,7 @@ weight: 11
 url: /cs/java/word-processing/generate-word-document/
 ---
 
-## Úvod
+## Zavedení
 
 tomto tutoriálu vás provedeme procesem generování dokumentu aplikace Word pomocí Aspose.Words for Java. Aspose.Words je výkonná knihovna, která umožňuje vývojářům pracovat s dokumenty Wordu programově. Ať už chcete vytvářet dynamické sestavy, generovat faktury nebo jednoduše manipulovat s dokumenty aplikace Word, Aspose.Words for Java poskytuje komplexní sadu funkcí pro zefektivnění úloh zpracování dokumentů.
 
@@ -160,7 +160,7 @@ Ujistěte se, že ukládáte dokumenty v kompatibilních formátech, abyste pře
 
 U velkých dokumentů zvažte použití třídy DocumentBuilder, která poskytuje lepší výkon pro rozsáhlé vkládání obsahu.
 
-### 9.3 Problémy s písmem a stylingem
+### 9.3 Problémy s písmem a stylem
 
 Ověřte, zda jsou písma a styly použité ve vašem dokumentu dostupné a kompatibilní napříč systémy.
 

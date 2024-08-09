@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. Adım: Tabloyu Başlatın
 
- Daha sonra tabloyu kullanarak tabloyu oluşturmaya başlayın.`StartTable` yöntem.
+ Daha sonra tabloyu kullanarak tabloyu oluşturmaya başlayın.`StartTable` Yöntem.
 
 ```csharp
 Table table = builder.StartTable();
@@ -157,7 +157,7 @@ Bu, biçimlendirilmiş tabloyla bir Word belgesi oluşturup kaydedecektir.
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak bir Word belgesinde iyi biçimlendirilmiş bir tablo oluşturabilirsiniz. Bu güçlü kitaplık, Word belgelerini programlı olarak düzenlemeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak bir Word belgesinde iyi biçimlendirilmiş bir tablo oluşturabilirsiniz. Bu güçlü kitaplık, Word belgelerini programlı olarak düzenlemeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar.
 
 ## SSS'ler
 
@@ -174,4 +174,4 @@ Evet, farklı satırlara veya hücrelere renkler de dahil olmak üzere farklı b
  adresinden destek alabilirsiniz.[Topluluk forumlarını görevlendirin](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words for .NET ile başka türde belgeler oluşturabilir miyim?
-Evet, Aspose.Words for .NET; PDF, HTML ve TXT dahil olmak üzere çeşitli belge formatlarını destekler.
+Evet, Aspose.Words for .NET, PDF, HTML ve TXT dahil olmak üzere çeşitli belge formatlarını destekler.

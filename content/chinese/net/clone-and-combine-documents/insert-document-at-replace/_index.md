@@ -37,7 +37,7 @@ using Aspose.Words.Tables;
 
 ## 步骤 1：设置文档目录
 
-首先，我们需要指定存储文档的目录。这就像在大型演出前设置舞台一样。
+首先，我们需要指定存储文档的目录。这就像大型演出前的准备工作。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -164,4 +164,4 @@ Aspose.Words for .NET 是一个功能强大的库，用于以编程方式操作 
 您可以通过访问获得支持[Aspose.Words 论坛](https://forum.aspose.com/c/words/8).
 
 ### 我可以保留插入文档的格式吗？
-是的`NodeImporter`类允许您指定在将节点从一个文档导入到另一个文档时如何处理格式。
+是的，`NodeImporter`类允许您指定在将节点从一个文档导入到另一个文档时如何处理格式。

@@ -93,7 +93,7 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 ## 結論
 
-現在你就擁有了！透過執行以下步驟，您可以輕鬆插入 FieldIncludeText，而無需在 Aspose.Words for .NET 中使用 DocumentBuilder。這種方法提供了一種將一個文件中的內容包含到另一個文件中的簡化方法，使您的文件自動化任務更加簡單。
+現在你就得到它了！透過執行以下步驟，您可以輕鬆插入 FieldIncludeText，而無需在 Aspose.Words for .NET 中使用 DocumentBuilder。這種方法提供了一種將一個文件中的內容包含到另一個文件中的簡化方法，使您的文件自動化任務更加簡單。
 
 ## 常見問題解答
 

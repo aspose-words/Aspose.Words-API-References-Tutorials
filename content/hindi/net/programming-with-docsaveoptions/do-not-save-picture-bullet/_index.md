@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Image bullet points.docx");
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- व्यवस्थित करके`SavePictureBullet` को`false`, आप Aspose.Words को आउटपुट दस्तावेज़ में चित्र बुलेट्स को न सहेजने का निर्देश देते हैं।
+ सेटिंग करके`SavePictureBullet` को`false`, आप Aspose.Words को आउटपुट दस्तावेज़ में चित्र बुलेट्स को न सहेजने का निर्देश देते हैं।
 
 ## चरण 4: दस्तावेज़ सहेजें
 

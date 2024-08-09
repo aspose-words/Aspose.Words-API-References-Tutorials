@@ -82,7 +82,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak kullanılmayan stilleri ve listeleri kaldırarak Word belgenizi başarıyla temizlediniz. Bu, dijital masanızın dağınıklığını gidermek, belgelerinizi daha yönetilebilir ve verimli hale getirmek gibidir. İyi yapılmış bir iş için kendinizin sırtını sıvazlayın!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak kullanılmayan stilleri ve listeleri kaldırarak Word belgenizi başarıyla temizlediniz. Bu, dijital masanızın dağınıklığını gidermek, belgelerinizi daha yönetilebilir ve verimli hale getirmek gibidir. İyi yapılmış bir iş için kendinizin sırtını sıvazlayın!
 
 ## SSS'ler
 

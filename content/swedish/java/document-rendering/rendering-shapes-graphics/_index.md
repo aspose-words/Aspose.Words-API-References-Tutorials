@@ -107,7 +107,7 @@ Du kan styra i vilken ordning former visas med hjälp av Z-ordningen:
 
 ```java
 shape1.setZOrder(1); // Ta fram
-shape2.setZOrder(0); // Skicka tillbaka
+shape2.setZOrder(0); // Skicka till baksidan
 ```
 
 ## Sparar dokumentet

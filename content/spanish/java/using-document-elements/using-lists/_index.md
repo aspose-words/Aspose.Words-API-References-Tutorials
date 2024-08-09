@@ -216,7 +216,7 @@ Si sigue estos pasos, puede crear documentos con niveles de lista personalizados
 
 ¡Felicidades! Ha aprendido a trabajar con listas en Aspose.Words para Java de forma eficaz. Las listas son cruciales para organizar y presentar el contenido de sus documentos. Ya sea que necesite reiniciar listas en cada sección o especificar niveles de lista, Aspose.Words para Java proporciona las herramientas que necesita para crear documentos de apariencia profesional.
 
-Ahora puede utilizar estas funciones con confianza para mejorar sus tareas de generación y formato de documentos. Si tiene alguna pregunta o necesita más ayuda, no dude en comunicarse con el[Aspose foro de la comunidad](https://forum.aspose.com/) para soporte.
+Ahora puede utilizar estas funciones con confianza para mejorar sus tareas de generación y formato de documentos. Si tiene alguna pregunta o necesita más ayuda, no dude en comunicarse con el[Aspose foro de la comunidad](https://forum.aspose.com/) para apoyo.
 
 ## Preguntas frecuentes
 

@@ -14,7 +14,7 @@ Moderne documenten gaan niet alleen over de inhoud die ze bevatten; hun visuele 
 
 ## De omgeving instellen
 
- Voordat we ons verdiepen in het maken van indrukwekkende documentvormen, moet je ervoor zorgen dat Aspose.Words voor Python is geïnstalleerd. Je kunt het downloaden van de[download link](https://releases.aspose.com/words/python/) . Raadpleeg bovendien de[documentatie](https://reference.aspose.com/words/python-net/) voor uitgebreide richtlijnen voor het gebruik van de bibliotheek.
+ Voordat we ons verdiepen in het maken van indrukwekkende documentvormen, moet je ervoor zorgen dat Aspose.Words voor Python is geïnstalleerd. Je kunt het downloaden van de[downloadlink](https://releases.aspose.com/words/python/) . Raadpleeg bovendien de[documentatie](https://reference.aspose.com/words/python-net/) voor uitgebreide richtlijnen voor het gebruik van de bibliotheek.
 
 ## Een basisdocument maken
 
@@ -86,10 +86,10 @@ Het maken van visueel indrukwekkende documentvormen en lay-outs is niet langer e
 ## Veelgestelde vragen
 
 ### Hoe download ik Aspose.Words voor Python?
- U kunt Aspose.Words voor Python downloaden van de[download link](https://releases.aspose.com/words/python/).
+ U kunt Aspose.Words voor Python downloaden van de[downloadlink](https://releases.aspose.com/words/python/).
 
 ### Waar kan ik uitgebreide documentatie vinden voor Aspose.Words voor Python?
- Verwijs naar de[documentatie](https://reference.aspose.com/words/python-net/) voor gedetailleerde richtlijnen voor het gebruik van Aspose.Words voor Python.
+ Raadpleeg de[documentatie](https://reference.aspose.com/words/python-net/) voor gedetailleerde richtlijnen voor het gebruik van Aspose.Words voor Python.
 
 ### Kan ik de kleuren en stijlen van vormen aanpassen?
 Absoluut! Aspose.Words voor Python biedt opties om de kleuren, maten en stijlen van vormen aan te passen aan uw ontwerpvoorkeuren.

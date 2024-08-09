@@ -9,7 +9,7 @@ url: /tr/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## giriiş
 
-Profesyonel bir Word belgesi oluşturmaya ihtiyaç duyduysanız, İçindekiler Tablosunun (TOC) ne kadar önemli olabileceğini bilirsiniz. Yalnızca içeriğinizi düzenlemekle kalmaz, aynı zamanda profesyonellik dokunuşu da katar. Ancak TOC'yi tarzınıza uyacak şekilde özelleştirmek biraz yanıltıcı olabilir. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki TOC stilinin nasıl değiştirileceğini açıklayacağız. Dalmaya hazır mısınız? Başlayalım!
+Profesyonel bir Word belgesi oluşturmaya ihtiyaç duyduysanız, İçindekiler Tablosunun (TOC) ne kadar önemli olabileceğini bilirsiniz. Yalnızca içeriğinizi düzenlemekle kalmaz, aynı zamanda profesyonellik dokunuşu da katar. Ancak TOC'yi tarzınıza uyacak şekilde özelleştirmek biraz yanıltıcı olabilir. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki TOC stilinin nasıl değiştirileceğini açıklayacağız. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki İçindekiler stilini başarıyla değiştirdiniz. Bu küçük özelleştirme, belgenizin genel görünümünde ve hissinde büyük bir fark yaratabilir. İçindekiler'inizi tamamen özelleştirmek için diğer stilleri ve seviyeleri denemeyi unutmayın.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki İçindekiler stilini başarıyla değiştirdiniz. Bu küçük özelleştirme, belgenizin genel görünümünde ve hissinde büyük bir fark yaratabilir. İçindekiler'inizi tamamen özelleştirmek için diğer stilleri ve seviyeleri denemeyi unutmayın.
 
 ## SSS'ler
 

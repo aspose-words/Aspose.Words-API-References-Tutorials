@@ -80,7 +80,7 @@ builder.InsertField(@"MERGEFIELD MyFieldName \* MERGEFORMAT");
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-Вот и все! Вы успешно вставили поле в документ Word.
+И все! Вы успешно вставили поле в документ Word.
 
 ## Заключение
 

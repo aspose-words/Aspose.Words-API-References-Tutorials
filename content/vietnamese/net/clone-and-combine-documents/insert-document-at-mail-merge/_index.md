@@ -15,7 +15,7 @@ Chào mừng bạn đến với thế giới tự động hóa tài liệu với
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
-1.  Aspose.Words cho .NET: Bạn có thể[Tải về phiên bản mới nhất tại đây](https://releases.aspose.com/words/net/) . Nếu bạn cần mua giấy phép, bạn có thể làm như vậy[đây](https://purchase.aspose.com/buy) . Ngoài ra, bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) hoặc thử nó với một[dùng thử miễn phí](https://releases.aspose.com/).
+1.  Aspose.Words cho .NET: Bạn có thể[tải phiên bản mới nhất tại đây](https://releases.aspose.com/words/net/) . Nếu bạn cần mua giấy phép, bạn có thể làm như vậy[đây](https://purchase.aspose.com/buy) . Ngoài ra, bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) hoặc thử nó với một[dùng thử miễn phí](https://releases.aspose.com/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE C# nào khác.
 3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp cho hướng dẫn này trở nên dễ dàng.
 
@@ -134,7 +134,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công tài liệu vào các trường cụ thể trong quá trình trộn thư bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý khối lượng tài liệu lớn. Hãy nghĩ về việc có một trợ lý cá nhân đảm nhận mọi công việc nặng nhọc cho bạn. Vì vậy, hãy tiếp tục và thử xem. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã chèn thành công tài liệu vào các trường cụ thể trong quá trình trộn thư bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý khối lượng tài liệu lớn. Hãy nghĩ về việc có một trợ lý cá nhân đảm nhận mọi công việc nặng nhọc cho bạn. Vì vậy, hãy tiếp tục và thử xem. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -142,7 +142,7 @@ Và bạn có nó rồi đấy! Bạn đã chèn thành công tài liệu vào c
 Vâng, bạn có thể. Chỉ cần chỉ định các trường hợp nhất thích hợp và đường dẫn tài liệu tương ứng trong`MailMerge.Execute` phương pháp.
 
 ### Có thể định dạng tài liệu được chèn khác với tài liệu chính không?
- Tuyệt đối! Bạn có thể dùng`ImportFormatMode` tham số trong`NodeImporter` để kiểm soát việc định dạng.
+ Tuyệt đối! Bạn có thể sử dụng`ImportFormatMode` tham số trong`NodeImporter` để kiểm soát việc định dạng.
 
 ### Điều gì xảy ra nếu tên trường hợp nhất là động?
 Bạn có thể xử lý tên trường hợp nhất động bằng cách chuyển chúng dưới dạng tham số cho trình xử lý gọi lại.

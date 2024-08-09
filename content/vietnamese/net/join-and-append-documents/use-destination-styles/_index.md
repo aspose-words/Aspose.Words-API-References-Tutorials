@@ -55,7 +55,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Bước 4: Nối tài liệu nguồn bằng kiểu đích
 
- Bây giờ đến phần quan trọng: nối tài liệu nguồn vào tài liệu đích trong khi sử dụng kiểu của tài liệu đích. Các`AppendDocument` phương pháp của`Document` lớp cho phép bạn làm điều này. Các`ImportFormatMode.UseDestinationStyles` tham số đảm bảo rằng kiểu của tài liệu đích được sử dụng.
+ Bây giờ đến phần quan trọng: nối tài liệu nguồn vào tài liệu đích trong khi sử dụng kiểu của tài liệu đích. các`AppendDocument` phương pháp của`Document` lớp cho phép bạn làm điều này. các`ImportFormatMode.UseDestinationStyles` tham số đảm bảo rằng kiểu của tài liệu đích được sử dụng.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
@@ -71,7 +71,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể nối liền mạch tài liệu này với tài liệu khác trong khi sử dụng các kiểu của tài liệu đích. Kỹ thuật này đặc biệt hữu ích khi bạn cần duy trì giao diện nhất quán trên nhiều tài liệu.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể nối liền mạch tài liệu này với tài liệu khác trong khi sử dụng các kiểu của tài liệu đích. Kỹ thuật này đặc biệt hữu ích khi bạn cần duy trì giao diện nhất quán trên nhiều tài liệu.
 
 ## Câu hỏi thường gặp
 

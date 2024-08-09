@@ -9,14 +9,14 @@ url: /hu/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 ## Bevezetés
 
-Halihó! Előfordult már, hogy egy Word-dokumentumba temetve próbálta kitalálni, hogyan navigáljon egy adott egyesítési mezőhöz? Mintha egy labirintusban lennénk térkép nélkül, igaz? Nos, ne aggódj tovább! Az Aspose.Words for .NET segítségével zökkenőmentesen léphet át a dokumentum egyesítési mezőjébe. Akár jelentéseket készít, akár személyre szabott leveleket hoz létre, vagy csak automatizálja Word-dokumentumait, ez az útmutató lépésről lépésre végigvezeti a teljes folyamaton. Merüljünk el!
+Szia! Előfordult már, hogy egy Word-dokumentumba temetve próbálta kitalálni, hogyan navigáljon egy adott egyesítési mezőhöz? Mintha egy labirintusban lennénk térkép nélkül, igaz? Nos, ne aggódj tovább! Az Aspose.Words for .NET segítségével zökkenőmentesen léphet át a dokumentum egyesítési mezőjébe. Akár jelentéseket készít, akár személyre szabott leveleket hoz létre, vagy csak automatizálja Word-dokumentumait, ez az útmutató lépésről lépésre végigvezeti a teljes folyamaton. Merüljünk el!
 
 ## Előfeltételek
 
 Mielőtt belevágnánk a kacsikba, szedjük sorba a kacsainkat. Íme, mire van szüksége az induláshoz:
 
 -  Visual Studio: Győződjön meg arról, hogy a Visual Studio telepítve van a gépen. Ha nem, akkor letöltheti[itt](https://visualstudio.microsoft.com/).
--  Aspose.Words for .NET: Szüksége van az Aspose.Words könyvtárra. Letöltheti innen[ez a link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Szüksége van az Aspose.Words könyvtárra. Letöltheti innen[ezt a linket](https://releases.aspose.com/words/net/).
 - .NET-keretrendszer: Győződjön meg arról, hogy telepítve van a .NET-keretrendszer.
 
 ## Névterek importálása
@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ebben a lépésben inicializálunk egy új dokumentumot, és a`DocumentBuilder` tárgy. A`DocumentBuilder` az Ön eszköze a dokumentum elkészítéséhez.
+ Ebben a lépésben inicializálunk egy új dokumentumot, és a`DocumentBuilder` objektum. A`DocumentBuilder` az Ön eszköze a dokumentum elkészítéséhez.
 
 ## 2. lépés: Szúrjon be egy összevonási mezőt
 
@@ -115,7 +115,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
  Igen, az Aspose.Words for .NET kompatibilis a .NET Core-al. További részleteket a[dokumentáció](https://reference.aspose.com/words/net/).
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words számára?
- Ideiglenes jogosítványt szerezhet be[ez a link](https://purchase.aspose.com/temporary-license/).
+ Ideiglenes jogosítványt szerezhet be[ezt a linket](https://purchase.aspose.com/temporary-license/).
 
 ### Hol találok további példákat és támogatást az Aspose.Words for .NET-hez?
  További példákért és támogatásért keresse fel a[Aspose.Words for .NET fórum](https://forum.aspose.com/c/words/8).

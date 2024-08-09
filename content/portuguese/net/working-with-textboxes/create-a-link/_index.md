@@ -116,7 +116,7 @@ Isso salva o documento com o nome de arquivo "LinkedTextBoxes.docx". Agora você
 
 E aí está! 🎉 Você criou e vinculou caixas de texto com sucesso em um documento do Word usando Aspose.Words for .NET. Este tutorial orientou você na configuração do seu ambiente, na criação e vinculação de caixas de texto e no salvamento do documento. Com essas habilidades, você pode aprimorar seus documentos do Word com fluxos de conteúdo dinâmicos e torná-los mais interativos e fáceis de usar.
 
- Para obter informações mais detalhadas e recursos avançados, não deixe de conferir o[Documentação da API Aspose.Words](https://reference.aspose.com/words/net/) Se você tiver alguma dúvida ou tiver problemas, o[Fórum de suporte](https://forum.aspose.com/c/words/8) é um ótimo recurso.
+ Para obter informações mais detalhadas e recursos avançados, não deixe de conferir o[Documentação da API Aspose.Words](https://reference.aspose.com/words/net/) Se você tiver alguma dúvida ou tiver problemas, o[fórum de suporte](https://forum.aspose.com/c/words/8) é um ótimo recurso.
 
 Boa codificação e que suas caixas de texto sempre se vinculem perfeitamente! 🚀
 

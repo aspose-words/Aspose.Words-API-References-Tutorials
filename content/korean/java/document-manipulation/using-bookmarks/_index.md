@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 // 색인별:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// 이름으로:
+// 이름별:
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 

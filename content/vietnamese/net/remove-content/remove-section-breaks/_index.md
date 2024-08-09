@@ -87,7 +87,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã loại bỏ thành công dấu ngắt phần khỏi tài liệu Word của mình bằng Aspose.Words for .NET. Phương pháp này đảm bảo rằng tài liệu của bạn được sắp xếp hợp lý và không có các ngắt phần không cần thiết, giúp quản lý và chỉnh sửa dễ dàng hơn nhiều.
+Và bạn có nó! Bạn đã loại bỏ thành công dấu ngắt phần khỏi tài liệu Word của mình bằng Aspose.Words for .NET. Phương pháp này đảm bảo rằng tài liệu của bạn được sắp xếp hợp lý và không có các ngắt phần không cần thiết, giúp quản lý và chỉnh sửa dễ dàng hơn nhiều.
 
 ## Câu hỏi thường gặp
 

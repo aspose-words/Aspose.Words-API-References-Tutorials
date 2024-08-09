@@ -2,186 +2,128 @@
 title: Revize tvaru
 linktitle: Revize tvaru
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Revidujte tvary v dokumentu aplikace Word pomocí Aspose.Words pro .NET.
+description: Naučte se, jak zacházet s revizemi tvarů v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto komplexního průvodce. Ovládněte sledování změn, vkládání tvarů a další.
 type: docs
 weight: 10
 url: /cs/net/working-with-revisions/shape-revision/
 ---
+## Zavedení
 
-tomto podrobném průvodci vás provedeme tím, jak provádět revize tvarů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
+Programové úpravy dokumentů Wordu mohou být skličující úkol, zejména pokud jde o manipulaci s tvary. Ať už vytváříte sestavy, navrhujete šablony nebo jednoduše automatizujete vytváření dokumentů, schopnost sledovat a spravovat revize tvarů je zásadní. Aspose.Words for .NET nabízí výkonné API, aby byl tento proces bezproblémový a efektivní. V tomto tutoriálu se ponoříme do specifik revizí tvarů v dokumentech aplikace Word a zajistíme, že budete mít nástroje a znalosti pro snadnou správu dokumentů.
 
-## Krok 1: Vytvoření dokumentu a přidání tvarů
+## Předpoklady
 
-Prvním krokem je vytvoření nového dokumentu a přidání tvarů.
+Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
+
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Měli byste mít nastavené vývojové prostředí, jako je Visual Studio.
+- Základní porozumění C#: Seznámení s programovacím jazykem C# a základními pojmy objektově orientovaného programování.
+- Dokument aplikace Word: Dokument aplikace Word, se kterým můžete pracovat, nebo jej můžete vytvořit během kurzu.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Ty nám poskytnou přístup ke třídám a metodám potřebným pro práci s dokumenty a tvary aplikace Word.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## Krok 1: Nastavení adresáře dokumentů
+
+Než začneme pracovat s tvary, musíme definovat cestu k našemu adresáři dokumentů. Zde uložíme naše upravené dokumenty.
+
+```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Krok 2: Vytvoření nového dokumentu
+
+Vytvořme nový dokument aplikace Word, do kterého budeme vkládat a upravovat tvary.
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Krok 2: Sledujte revize a přidejte další tvar
+## Krok 3: Vložení inline tvaru
 
-Zapneme sledování revizí a přidáme další tvar.
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## Krok 3: Získejte kolekci tvarů a zkontrolujte revize
-
-Získáme kolekci tvarů z dokumentu a zkontrolujeme revize spojené s každým tvarem.
+Začneme vložením vloženého tvaru do našeho dokumentu bez sledování revizí. Vložený tvar je takový, který splývá s textem.
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## Krok 4: Kontrola revizí přesunu tvaru
-
-Chystáme se načíst existující dokument obsahující revize posunutí tvaru a zkontrolovat související revize.
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### Příklad zdrojového kódu pro revizi tvaru pomocí Aspose.Words pro .NET
-
-Zde je úplný zdrojový kód pro provádění revizí tvarů v dokumentu pomocí Aspose.Words pro .NET:
-
-```csharp
-Document doc = new Document();
-
-//Vložte vložený tvar bez revizí sledování.
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Začněte sledovat revize a poté vložte jiný tvar.
+## Krok 4: Zahájení sledování revizí
+
+Abychom mohli sledovat změny v našem dokumentu, musíme povolit sledování revizí. To je nezbytné pro identifikaci provedených úprav tvarů.
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## Krok 5: Vložení jiného tvaru s revizemi
+
+Nyní, když je povoleno sledování revizí, vložíme další tvar. Tentokrát budou všechny změny sledovány.
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Získejte kolekci tvarů dokumentu, která obsahuje pouze dva tvary, které jsme přidali.
+## Krok 6: Načtení a úprava tvarů
+
+Můžeme načíst všechny tvary v dokumentu a upravit je podle potřeby. Zde získáme tvary a odstraníme první.
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Odstraňte první tvar.
 shapes[0].Remove();
+```
 
-// Protože jsme tento tvar odstranili během sledování změn, tvar se počítá jako odstraněná revize.
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## Krok 7: Uložení dokumentu
 
-// A při sledování změn jsme vložili další tvar, takže tento tvar se bude počítat jako revize vložení.
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+Po provedení změn musíme dokument uložit. Tím je zajištěno uložení všech revizí a úprav.
 
-// Dokument má jeden tvar, který byl přesunut, ale revize přesunu tvaru budou mít dvě instance tohoto tvaru.
-// Jeden bude tvar v místě jeho příletu a druhý bude tvar v jeho původním umístění.
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## Krok 8: Práce s revizemi přesunu tvaru
+
+Když se tvar přesune, Aspose.Words to sleduje jako revizi. To znamená, že budou existovat dvě instance tvaru: jedna v původním umístění a druhá v novém umístění.
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Toto je přechod na revizi, také tvar v místě příjezdu.
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-// Toto je posun od revize, což je tvar na svém původním místě.
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak provádět revize tvarů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Sledováním kroků vytvoření dokumentu, povolením sledování revizí, kontrolou revizí spojených s každým tvarem a kontrolou revizí pro přesun tvarů jsme byli schopni úspěšně spravovat revize. Aspose.Words for .NET nabízí výkonné rozhraní API pro zpracování textu s recenzemi a formuláři v dokumentech aplikace Word.
+A tady to máte! Úspěšně jste se naučili, jak zacházet s revizemi tvarů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ať už spravujete šablony dokumentů, automatizujete sestavy nebo jednoduše sledujete změny, tyto dovednosti jsou neocenitelné. Podle tohoto podrobného průvodce jste nejen zvládli základy, ale také získali přehled o pokročilejších technikách manipulace s dokumenty.
 
-### FAQ
+## FAQ
 
-#### Otázka: Jak mohu vytvořit nový dokument a přidat tvary v Aspose.Words pro .NET?
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty Wordu programově pomocí C#.
 
-A: Chcete-li vytvořit nový dokument a přidat tvary v Aspose.Words pro .NET, můžete použít následující kód. Zde přidáme do první části dokumentu dva tvary, krychli a slunce:
+### Mohu sledovat změny provedené v jiných prvcích v dokumentu aplikace Word?
+Ano, Aspose.Words for .NET podporuje sledování změn různých prvků, včetně textu, tabulek a dalších.
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
+ Můžete získat bezplatnou zkušební verzi Aspose.Words pro .NET[zde](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### Je možné přijímat nebo odmítat revize programově?
+Ano, Aspose.Words for .NET poskytuje metody pro programové přijetí nebo odmítnutí revizí.
 
-#### Otázka: Jak povolím sledování revizí v Aspose.Words pro .NET?
-
- A: Chcete-li povolit sledování revizí v Aspose.Words pro .NET, můžete použít`StartTrackRevisions` metoda`Document` objekt. Tato metoda bere jako parametr jméno autora revizí:
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### Otázka: Jak mohu zkontrolovat revize spojené s každým obrazcem v dokumentu Aspose.Words for .NET?
-
-Odpověď: Chcete-li zkontrolovat revize spojené s každým tvarem v dokumentu Aspose.Words for .NET, můžete získat kolekci tvarů dokumentu pomocí`GetChildNodes` metoda s`NodeType.Shape` typ uzlu. Poté můžete přistupovat ke každému tvaru`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , a`IsMoveToRevision` vlastnosti k určení, jaký typ revize je spojen s tvarem:
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### Otázka: Jak mohu zkontrolovat revize přemístění tvarů v dokumentu Aspose.Words for .NET?
-
- Odpověď: Chcete-li zkontrolovat revize posunutí tvaru v dokumentu Aspose.Words for .NET, můžete načíst existující dokument, který obsahuje revize posunutí tvaru. Poté můžete přistupovat ke každému tvaru`IsMoveFromRevision`a`IsMoveToRevision` vlastnosti, abyste zjistili, zda se přesouvá, a pokud ano, odkud a kam:
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### Mohu používat Aspose.Words pro .NET s jinými jazyky .NET kromě C#?
+Absolutně! Aspose.Words for .NET lze použít s jakýmkoli jazykem .NET, včetně VB.NET a F#.

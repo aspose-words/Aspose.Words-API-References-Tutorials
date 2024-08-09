@@ -10,7 +10,7 @@ url: /sv/java/using-document-elements/using-comments/
 
 en värld av dokumentbehandling kan det vara en viktig funktion att lägga till kommentarer till dina dokument. Det möjliggör samarbete, feedback och kommentarer om innehållet. Aspose.Words för Java tillhandahåller ett robust och mångsidigt API för att arbeta med dokument, och i denna steg-för-steg-handledning kommer vi att utforska hur man använder kommentarer i Aspose.Words för Java.
 
-## 1. Introduktion
+## 1. Inledning
 Kommentarer är värdefulla för att dokumentera din kod eller ge förklaringar i ett dokument. Aspose.Words för Java låter dig lägga till kommentarer programmässigt till dina dokument, vilket gör det till ett utmärkt val för att generera dynamiska och interaktiva dokument.
 
 ## 2. Ställa in miljön

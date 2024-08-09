@@ -14,7 +14,7 @@ Mencetak dokumen dengan pengaturan halaman yang tepat sangat penting dalam membu
 
 ## Menyiapkan Lingkungan Pembangunan
 
-Sebelum memulai, pastikan Anda memiliki lingkungan pengembangan yang sesuai. Kamu akan membutuhkan:
+Sebelum memulai, pastikan Anda memiliki lingkungan pengembangan yang sesuai. Anda membutuhkan:
 
 - Kit Pengembangan Java (JDK)
 - Lingkungan Pengembangan Terintegrasi (IDE) seperti Eclipse atau IntelliJ IDEA
@@ -26,7 +26,7 @@ Mulailah dengan membuat proyek Java baru di IDE pilihan Anda. Beri nama yang ber
 
 ## Menambahkan Aspose.Words untuk Java ke Proyek Anda
 
-Untuk menggunakan Aspose.Words untuk Java, Anda perlu menambahkan perpustakaan ke proyek Anda. Ikuti langkah ini:
+Untuk menggunakan Aspose.Words untuk Java, Anda perlu menambahkan perpustakaan ke proyek Anda. Ikuti langkah-langkah berikut:
 
 1.  Unduh perpustakaan Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).
 

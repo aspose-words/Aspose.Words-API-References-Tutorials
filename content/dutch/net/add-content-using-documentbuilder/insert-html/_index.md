@@ -15,7 +15,7 @@ Hallo daar, mede-coderingsliefhebber! Heeft u zich ooit afgevraagd hoe u HTML in
 
 Voordat we in de stapsgewijze handleiding duiken, zorgen we ervoor dat we alles hebben wat we nodig hebben. Hier is een korte checklist:
 
-1. Aspose.Words voor .NET-bibliotheek: als u dat nog niet heeft gedaan, moet u de Aspose.Words voor .NET-bibliotheek downloaden. Je kan het krijgen[hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET-bibliotheek: als u dat nog niet heeft gedaan, moet u de Aspose.Words voor .NET-bibliotheek downloaden. Je kunt het krijgen[hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Zorg ervoor dat u een ontwikkelomgeving hebt ingesteld, zoals Visual Studio.
 3. .NET Framework: Zorg ervoor dat het .NET-framework op uw computer is geïnstalleerd.
 4. Basiskennis van C#: Met een beetje bekendheid met C# kom je al een heel eind.
@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 4: HTML-inhoud invoegen
 
- Nu komt het leuke gedeelte: het toevoegen van de HTML-inhoud. De ... gebruiken`InsertHtml` werkwijze van de`DocumentBuilder` klasse, kunnen we HTML rechtstreeks in ons Word-document insluiten.
+ Nu komt het leuke gedeelte: het toevoegen van de HTML-inhoud. Met behulp van de`InsertHtml` werkwijze van de`DocumentBuilder` klasse, kunnen we HTML rechtstreeks in ons Word-document insluiten.
 
 ```csharp
 builder.InsertHtml(

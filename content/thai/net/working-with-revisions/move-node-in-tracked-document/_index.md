@@ -2,144 +2,130 @@
 title: ย้ายโหนดในเอกสารที่ติดตาม
 linktitle: ย้ายโหนดในเอกสารที่ติดตาม
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: ย้ายโหนดในเอกสารที่ติดตามด้วย Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีย้ายโหนดในเอกสาร Word ที่ติดตามโดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำโดยละเอียดทีละขั้นตอนของเรา เหมาะสำหรับนักพัฒนา
 type: docs
 weight: 10
 url: /th/net/working-with-revisions/move-node-in-tracked-document/
 ---
+## การแนะนำ
 
-ในคำแนะนำทีละขั้นตอนนี้ เราจะอธิบายวิธีย้ายโหนดในเอกสาร Word ที่ติดตามโดยใช้ Aspose.Words สำหรับ .NET เราจะจัดเตรียมซอร์สโค้ดที่สมบูรณ์ให้กับคุณ และแสดงวิธีจัดรูปแบบเอาต์พุตมาร์กดาวน์
+สวัสดีผู้ชื่นชอบ Aspose.Words! หากคุณจำเป็นต้องย้ายโหนดในเอกสาร Word ในขณะที่ติดตามการแก้ไข แสดงว่าคุณมาถูกที่แล้ว วันนี้ เรากำลังเจาะลึกถึงวิธีการบรรลุเป้าหมายนี้โดยใช้ Aspose.Words สำหรับ .NET ไม่เพียงแต่คุณจะได้เรียนรู้กระบวนการทีละขั้นตอนเท่านั้น แต่คุณยังจะได้รับคำแนะนำและเคล็ดลับเพื่อทำให้การจัดการเอกสารของคุณราบรื่นและมีประสิทธิภาพ
 
-## ขั้นตอนที่ 1: การสร้างเอกสาร
+## ข้อกำหนดเบื้องต้น
 
-ขั้นตอนแรกคือการสร้างเอกสารใหม่และเพิ่มย่อหน้า
+ก่อนที่เราจะจัดการโค้ดให้สกปรก เรามาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการแล้ว:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Paragraph 1");
-builder.Writeln("Paragraph 2");
-builder.Writeln("Paragraph 3");
-builder.Writeln("Paragraph 4");
-builder.Writeln("Paragraph 5");
-builder.Writeln("Paragraph 6");
-Body body = doc.FirstSection.Body;
-Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
-```
+-  Aspose.Words สำหรับ .NET: ดาวน์โหลด[ที่นี่](https://releases.aspose.com/words/net/).
+- สภาพแวดล้อม .NET: ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อมการพัฒนา .NET ที่เข้ากันได้
+- ความรู้พื้นฐานเกี่ยวกับ C#: บทช่วยสอนนี้ถือว่าคุณมีความเข้าใจพื้นฐานเกี่ยวกับ C#
 
-## ขั้นตอนที่ 2: ติดตามการแก้ไข
+ได้ทุกอย่างแล้วเหรอ? ยอดเยี่ยม! มาดูเนมสเปซที่เราต้องนำเข้ากันดีกว่า
 
-เราจะเปิดใช้งานการติดตามการแก้ไขในเอกสาร
+## นำเข้าเนมสเปซ
+
+ก่อนอื่น เราต้องนำเข้าเนมสเปซที่จำเป็นก่อน สิ่งเหล่านี้จำเป็นสำหรับการทำงานกับ Aspose.Words และการจัดการโหนดเอกสาร
 
 ```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+using Aspose.Words;
+using System;
 ```
 
-## ขั้นตอนที่ 3: ย้ายโหนด
+เอาล่ะ เรามาแบ่งกระบวนการออกเป็นขั้นตอนที่สามารถจัดการได้ แต่ละขั้นตอนจะมีการอธิบายโดยละเอียดเพื่อให้แน่ใจว่าคุณเข้าใจสิ่งที่เกิดขึ้นในทุกจุด
 
-เราจะย้ายโหนด (ย่อหน้า) จากตำแหน่งหนึ่งไปยังอีกตำแหน่งหนึ่งในขณะที่สร้างการแก้ไข
+## ขั้นตอนที่ 1: เริ่มต้นเอกสาร
 
-```csharp
-Node node = body.Paragraphs[3];
-Node endNode = body.Paragraphs[5].NextSibling;
-Node referenceNode = body.Paragraphs[0];
-while (node != endNode)
-{
-     Node nextNode = node. NextSibling;
-     body. InsertBefore(node, referenceNode);
-     node = nextNode;
-}
-```
-
-## ขั้นตอนที่ 4: หยุดการติดตามบทวิจารณ์
-
-เราจะหยุดติดตามการแก้ไขในเอกสาร
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-## ขั้นตอนที่ 5: บันทึกเอกสาร
-
- หลังจากแทรกฟิลด์แบบฟอร์มป้อนข้อความแล้ว ให้บันทึกเอกสารไปยังตำแหน่งที่ต้องการโดยใช้`Save`วิธี. ตรวจสอบให้แน่ใจว่าได้ระบุเส้นทางไฟล์ที่เหมาะสม:
-
-```csharp
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-```
-
-
-### ตัวอย่างซอร์สโค้ดสำหรับโหนดย้ายในเอกสารที่ถูกติดตามโดยใช้ Aspose.Words สำหรับ .NET
-
-นี่คือซอร์สโค้ดแบบเต็มสำหรับการย้ายโหนดในเอกสารที่ถูกติดตามโดยใช้ Aspose.Words สำหรับ .NET:
-
+ ในการเริ่มต้น เราต้องเริ่มต้นเอกสารใหม่และใช้ a`DocumentBuilder` เพื่อเพิ่มบางย่อหน้า
 
 ```csharp
 // เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// การเพิ่มย่อหน้าบางส่วน
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
 builder.Writeln("Paragraph 4");
 builder.Writeln("Paragraph 5");
 builder.Writeln("Paragraph 6");
+
+// ตรวจสอบการนับย่อหน้าเริ่มต้น
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+```
 
+## ขั้นตอนที่ 2: เริ่มการติดตามการแก้ไข
+
+ต่อไป เราต้องเริ่มติดตามการแก้ไข นี่เป็นสิ่งสำคัญเนื่องจากช่วยให้เราเห็นการเปลี่ยนแปลงที่เกิดขึ้นกับเอกสาร
+
+```csharp
 // เริ่มติดตามการแก้ไข
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
 
-// สร้างการแก้ไขเมื่อย้ายโหนดจากที่หนึ่งไปยังอีกที่หนึ่ง
+## ขั้นตอนที่ 3: ย้ายโหนด
+
+มาถึงส่วนหลักของงานของเราแล้ว: การย้ายโหนดจากที่หนึ่งไปยังอีกที่หนึ่ง เราจะย้ายย่อหน้าที่สามและวางไว้หน้าย่อหน้าแรก
+
+```csharp
+// กำหนดโหนดที่จะย้ายและช่วงสิ้นสุด
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
+
+// ย้ายโหนดภายในช่วงที่กำหนด
 while (node != endNode)
 {
-	Node nextNode = node.NextSibling;
-	body.InsertBefore(node, referenceNode);
-	node = nextNode;
+    Node nextNode = node.NextSibling;
+    body.InsertBefore(node, referenceNode);
+    node = nextNode;
 }
+```
 
-// หยุดกระบวนการติดตามการแก้ไข
+## ขั้นตอนที่ 4: หยุดการติดตามการแก้ไข
+
+เมื่อเราย้ายโหนดแล้ว เราจะต้องหยุดการติดตามการแก้ไข
+
+```csharp
+// หยุดการติดตามการแก้ไข
 doc.StopTrackRevisions();
+```
 
-// มีอีก 3 ย่อหน้าในช่วงการย้ายจาก
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+## ขั้นตอนที่ 5: บันทึกเอกสาร
+
+สุดท้ายนี้ ให้บันทึกเอกสารที่แก้ไขของเราลงในไดเร็กทอรีที่ระบุ
+
+```csharp
+// บันทึกเอกสารที่แก้ไข
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
+
+// ส่งออกจำนวนย่อหน้าสุดท้าย
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## บทสรุป
 
-ในบทช่วยสอนนี้ เราได้เรียนรู้วิธีย้ายโหนดในเอกสาร Word ที่ติดตามโดยใช้ Aspose.Words สำหรับ .NET ด้วยการทำตามขั้นตอนในการสร้างเอกสาร การเปิดใช้งานการติดตามการแก้ไข การย้ายโหนด และการหยุดการติดตามการแก้ไข เราจึงสามารถดำเนินการจัดการนี้ได้สำเร็จ Aspose.Words for .NET เป็นเครื่องมืออันทรงพลังสำหรับการประมวลผลคำด้วยเอกสาร Word และนำเสนอคุณสมบัติขั้นสูงสำหรับการจัดการการแก้ไข ตอนนี้คุณสามารถใช้ความรู้นี้เพื่อย้ายโหนดในเอกสาร Word ของคุณเองในขณะที่ติดตามการแก้ไขโดยใช้ Aspose.Words สำหรับ .NET
+และคุณก็ได้แล้ว! คุณได้ย้ายโหนดในเอกสารที่ถูกติดตามสำเร็จแล้วโดยใช้ Aspose.Words สำหรับ .NET ไลบรารีอันทรงพลังนี้ทำให้การจัดการเอกสาร Word โดยทางโปรแกรมเป็นเรื่องง่าย ไม่ว่าคุณจะสร้าง แก้ไข หรือติดตามการเปลี่ยนแปลง Aspose.Words ก็พร้อมช่วยเหลือคุณ ดังนั้นไปข้างหน้าและลองดู ขอให้มีความสุขในการเขียนโค้ด!
 
-### คำถามที่พบบ่อย
+## คำถามที่พบบ่อย
 
-#### ถาม: ฉันจะเปิดใช้งานการติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET ได้อย่างไร
+### Aspose.Words สำหรับ .NET คืออะไร
 
- ตอบ: หากต้องการเปิดใช้งานการติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET คุณสามารถใช้`StartTrackRevisions` วิธีการของ`Document` วัตถุ. วิธีการนี้ใช้พารามิเตอร์ชื่อผู้เขียนการแก้ไขและวันที่เริ่มต้นการติดตามผลการแก้ไข
+Aspose.Words for .NET เป็นไลบรารีคลาสสำหรับการทำงานกับเอกสาร Word โดยทางโปรแกรม ช่วยให้นักพัฒนาสามารถสร้าง แก้ไข แปลง และพิมพ์เอกสาร Word ภายในแอปพลิเคชัน .NET
 
-```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
-```
+### ฉันจะติดตามการแก้ไขในเอกสาร Word โดยใช้ Aspose.Words ได้อย่างไร
 
-#### ถาม: ฉันจะย้ายโหนดในเอกสารที่ถูกติดตามโดยไม่สร้างการแก้ไขได้อย่างไร
+ หากต้องการติดตามการแก้ไข ให้ใช้`StartTrackRevisions` วิธีการบน`Document` วัตถุ. ซึ่งจะทำให้สามารถติดตามการแก้ไขได้ โดยแสดงการเปลี่ยนแปลงใดๆ ที่เกิดขึ้นกับเอกสาร
 
- ตอบ: หากคุณต้องการย้ายโหนดในเอกสารที่ติดตามโดยไม่สร้างการแก้ไข คุณสามารถใช้`Remove`และ`InsertAfter` หรือ`InsertBefore` วิธีการของ`Node` วัตถุ. ตัวอย่างเช่น เมื่อต้องการย้ายย่อหน้าหลังจากย่อหน้าอื่น คุณสามารถใช้โค้ดต่อไปนี้:
+### ฉันสามารถย้ายหลายโหนดใน Aspose.Words ได้หรือไม่
 
-```csharp
-Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
-Node referenceNode = document.FirstSection.Body.Paragraphs[1];
-nodeToMove.Remove();
-document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
-```
+ใช่ คุณสามารถย้ายหลายโหนดได้โดยการวนซ้ำและใช้วิธีการเช่น`InsertBefore` หรือ`InsertAfter` เพื่อวางไว้ในตำแหน่งที่ต้องการ
 
-#### ถาม: ฉันจะหยุดการติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET ได้อย่างไร
+### ฉันจะหยุดติดตามการแก้ไขใน Aspose.Words ได้อย่างไร
 
- ตอบ: หากต้องการหยุดการติดตามการแก้ไขในเอกสาร Aspose.Words สำหรับ .NET คุณสามารถใช้`StopTrackRevisions` วิธีการของ`Document` วัตถุ.
+ ใช้`StopTrackRevisions` วิธีการบน`Document` คัดค้านเพื่อหยุดการติดตามการแก้ไข
 
-```csharp
-doc.StopTrackRevisions();
-```
+### ฉันจะหาเอกสารเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+
+ คุณสามารถค้นหาเอกสารรายละเอียดได้[ที่นี่](https://reference.aspose.com/words/net/).

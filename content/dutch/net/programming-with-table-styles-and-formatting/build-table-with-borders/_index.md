@@ -78,7 +78,7 @@ table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 
 In deze stap stellen we de randen in op een enkele lijnstijl, met een breedte van 1,5 punt, en een groene kleur.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het gewijzigde document op in de opgegeven map. Hierdoor wordt een nieuw document gemaakt met de toegepaste tabelopmaak:
 

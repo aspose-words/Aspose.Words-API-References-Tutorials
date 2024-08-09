@@ -14,7 +14,7 @@ Esses tutoriais oferecem instruções claras e detalhadas sobre como trabalhar p
 {{% /alert %}}
 
 Estes são links para alguns recursos úteis:
-- [Aplicar Licença](./net/apply-license/)   
+- [Aplicar licença](./net/apply-license/)   
 - [Habilitar recursos OpenType](./net/enable-opentype-features/)   
 - [Trabalhando com comentários](./net/working-with-comments/)   
 - [Trabalhando com Campos](./net/working-with-fields/)   

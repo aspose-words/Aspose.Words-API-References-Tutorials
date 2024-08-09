@@ -64,7 +64,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
-這裡，`RasterizeTransformedElements`被設定為`false`，這意味著變換後的元素不會被光柵化。您可以將其設定為`true`如果你想讓它們被光柵化。
+這裡，`RasterizeTransformedElements`設定為`false`，這意味著變換後的元素不會被光柵化。您可以將其設定為`true`如果你想讓它們被光柵化。
 
 ## 步驟 4：轉換文檔
 

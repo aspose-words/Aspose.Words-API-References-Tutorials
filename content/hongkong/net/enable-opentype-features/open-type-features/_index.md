@@ -90,14 +90,14 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功啟用 OpenType 功能。透過執行這些步驟，您可以解鎖高級排版功能，確保您的文件看起來專業且精美。
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功啟用 OpenType 功能。透過執行這些步驟，您可以解鎖高級排版功能，確保您的文件看起來專業且精美。
 
 但不要停在這裡！探索 Aspose.Words 的更多功能並了解如何進一步增強您的文件。請記住，熟能生巧，所以要不斷嘗試和學習。
 
 ## 常見問題解答
 
 ### OpenType 有哪些功能？
-OpenType 功能包括進階排版功能，例如連字、字距調整和樣式集，可改善文件中文字的外觀。
+OpenType 功能包括進階排版功能，例如連字、字距調整和風格設置，可改善文件中文字的外觀。
 
 ### 為什麼將 HarfBuzz 與 Aspose.Words 結合使用？
 HarfBuzz 是一個開源文字整形引擎，可為 OpenType 功能提供強大的支持，從而提高文件的排版品質。

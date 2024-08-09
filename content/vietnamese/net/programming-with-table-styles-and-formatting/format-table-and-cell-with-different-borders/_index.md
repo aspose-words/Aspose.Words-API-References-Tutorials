@@ -9,7 +9,7 @@ url: /vi/net/programming-with-table-styles-and-formatting/format-table-and-cell-
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thử làm cho tài liệu Word của mình trông chuyên nghiệp hơn bằng cách tùy chỉnh viền bảng và ô chưa? Nếu không, bạn sẽ được thưởng thức! Hướng dẫn này sẽ hướng dẫn bạn quy trình định dạng bảng và ô có các đường viền khác nhau bằng Aspose.Words cho .NET. Hãy tưởng tượng bạn có khả năng thay đổi giao diện bảng của mình chỉ bằng một vài dòng mã. Có mưu đồ? Hãy cùng tìm hiểu và khám phá cách bạn có thể đạt được điều này một cách dễ dàng.
+Bạn đã bao giờ thử làm cho tài liệu Word của mình trông chuyên nghiệp hơn bằng cách tùy chỉnh viền bảng và ô chưa? Nếu không, bạn sẽ được thưởng thức! Hướng dẫn này sẽ hướng dẫn bạn quy trình định dạng bảng và ô có các đường viền khác nhau bằng Aspose.Words cho .NET. Hãy tưởng tượng bạn có khả năng thay đổi giao diện bảng của mình chỉ bằng một vài dòng mã. Tò mò? Hãy cùng tìm hiểu và khám phá cách bạn có thể đạt được điều này một cách dễ dàng.
 
 ## Điều kiện tiên quyết
 
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách định dạng bảng và ô có đường viền khác nhau bằng Aspose.Words cho .NET. Bằng cách tùy chỉnh đường viền bảng và bóng ô, bạn có thể nâng cao đáng kể sự hấp dẫn trực quan của tài liệu của mình. Vì vậy, hãy tiếp tục, thử nghiệm các phong cách khác nhau và làm cho tài liệu của bạn trở nên nổi bật!
+Và bạn có nó! Bạn vừa học cách định dạng bảng và ô có đường viền khác nhau bằng Aspose.Words cho .NET. Bằng cách tùy chỉnh đường viền bảng và bóng ô, bạn có thể nâng cao đáng kể sự hấp dẫn trực quan của tài liệu của mình. Vì vậy, hãy tiếp tục, thử nghiệm các phong cách khác nhau và làm cho tài liệu của bạn trở nên nổi bật!
 
 ## Câu hỏi thường gặp
 

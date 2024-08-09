@@ -15,7 +15,7 @@ Bạn đang muốn tạo tài liệu chuyên nghiệp với biểu đồ trong .
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
--  Aspose.Words cho .NET: Bạn có thể[Tải xuống](https://releases.aspose.com/words/net/) phiên bản mới nhất hoặc sử dụng[dùng thử miễn phí](https://releases.aspose.com/).
+-  Aspose.Words cho .NET: Bạn có thể[tải về](https://releases.aspose.com/words/net/) phiên bản mới nhất hoặc sử dụng[dùng thử miễn phí](https://releases.aspose.com/).
 - .NET Framework: Đảm bảo bạn đã cài đặt .NET trên hệ thống của mình.
 - IDE: Môi trường phát triển như Visual Studio.
 

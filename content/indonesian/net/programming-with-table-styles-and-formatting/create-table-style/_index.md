@@ -14,9 +14,9 @@ Pernahkah Anda mengalami kebuntuan saat mencoba menata tabel di dokumen Word And
 ## Prasyarat
 
 Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
-- Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan yang kuat ini. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+- Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan yang kuat ini. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan .NET lainnya.
-- Pengetahuan Dasar tentang C#: Keakraban dengan pemrograman C# akan sangat membantu.
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan sangat membantu.
 
 ## Impor Namespace
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/retrieve-preferred-width-type/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come recuperare il tipo di larghezza preferito delle celle della tabella nei tuoi documenti Word utilizzando Aspose.Words per .NET? Bene, sei nel posto giusto! In questo tutorial, analizzeremo il processo passo dopo passo, rendendolo semplicissimo. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, troverai questa guida utile e coinvolgente. Quindi, tuffiamoci e scopriamo i segreti dietro la gestione della larghezza delle celle delle tabelle nei documenti di Word.
 
@@ -96,7 +96,7 @@ Queste righe stamperanno il tipo e il valore di larghezza preferiti sulla consol
 
 ## Conclusione
 
-E il gioco è fatto! Recuperare il tipo di larghezza preferito delle celle della tabella nei documenti Word utilizzando Aspose.Words per .NET è semplice se suddiviso in passaggi gestibili. Seguendo questa guida, puoi facilmente manipolare le proprietà delle tabelle nei tuoi documenti Word, rendendo le tue attività di gestione dei documenti molto più efficienti.
+Ed ecco qua! Recuperare il tipo di larghezza preferito delle celle della tabella nei documenti Word utilizzando Aspose.Words per .NET è semplice se suddiviso in passaggi gestibili. Seguendo questa guida, puoi facilmente manipolare le proprietà delle tabelle nei tuoi documenti Word, rendendo le tue attività di gestione dei documenti molto più efficienti.
 
 ## Domande frequenti
 

@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /net/working-with-fonts/font-settings-default-instance/
 ---
+## Introduction
 
-Welcome to this in-depth tutorial on managing font settings using Aspose.Words for .NET. If you've ever faced challenges with font handling in your documents, this guide will walk you through everything you need to know to customize and manage fonts effectively. Let's dive in!
+Welcome to this in-depth tutorial on managing font settings using Aspose.Words for .NET. If you've ever faced challenges with font handling in your documents, this guide will walk you through everything you need to know to customize and manage fonts effectively.
 
 ## Prerequisites
 
@@ -75,25 +76,25 @@ By following these steps, you've successfully configured custom font settings an
 
 Congratulations! You've mastered the basics of managing font settings using Aspose.Words for .NET. Whether you’re working on a simple project or a complex document processing system, these skills will help you ensure that your documents look just the way you want them to. Remember, the flexibility provided by Aspose.Words allows for a wide range of customizations, so don't hesitate to explore and experiment with different settings.
 
-## FAQs
+## FAQ's
 
-### Q1: Can I use fonts from multiple custom folders?
+### Can I use fonts from multiple custom folders?
 
 Yes, you can specify multiple `FolderFontSource` instances within the `SetFontsSources` method to include fonts from different folders.
 
-### Q2: How do I get a free trial of Aspose.Words for .NET?
+### How do I get a free trial of Aspose.Words for .NET?
 
 You can download a free trial from the [Aspose free trial page](https://releases.aspose.com/).
 
-### Q3: Is it possible to embed fonts directly into the document?
+### Is it possible to embed fonts directly into the document?
 
 Aspose.Words allows embedding fonts in some formats, like PDF. Check the documentation for more details on embedding fonts.
 
-### Q4: Where can I get support for Aspose.Words?
+### Where can I get support for Aspose.Words?
 
 For support, visit the [Aspose.Words support forum](https://forum.aspose.com/c/words/8).
 
-### Q5: Can I purchase a temporary license?
+### Can I purchase a temporary license?
 
 Yes, you can get a temporary license from the [temporary license page](https://purchase.aspose.com/temporary-license/).
 

@@ -9,13 +9,13 @@ url: /nl/net/join-and-append-documents/different-page-setup/
 ---
 ## Invoering
 
-Hallo daar! Klaar om in de fascinerende wereld van documentmanipulatie te duiken met Aspose.Words voor .NET? Vandaag pakken we iets heel leuks aan: het instellen van verschillende pagina-instellingen bij het combineren van Word-documenten. Of u nu rapporten samenvoegt, een roman maakt of gewoon voor de lol met documenten aan het prutsen bent, deze gids begeleidt u er stap voor stap doorheen. Laten we beginnen!
+Hé daar! Klaar om in de fascinerende wereld van documentmanipulatie te duiken met Aspose.Words voor .NET? Vandaag pakken we iets heel leuks aan: het instellen van verschillende pagina-instellingen bij het combineren van Word-documenten. Of u nu rapporten samenvoegt, een roman maakt of gewoon voor de lol met documenten aan het prutsen bent, deze gids begeleidt u er stap voor stap doorheen. Laten we beginnen!
 
 ## Vereisten
 
 Voordat we onze handen vuil maken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. .NET Framework: elke versie die Aspose.Words voor .NET ondersteunt.
 3. Ontwikkelomgeving: Visual Studio of een andere .NET-compatibele IDE.
 4. Basiskennis van C#: alleen de basis om de syntaxis en structuur te begrijpen.
@@ -133,7 +133,7 @@ U kunt de marge-instellingen ook afstemmen op de manier waarop we de paginabreed
 Ja, Aspose.Words voor .NET is volledig compatibel met .NET Core.
 
 ### Kan ik stijlen uit beide documenten behouden?
- Ja de`ImportFormatMode.KeepSourceFormatting` optie zorgt ervoor dat stijlen uit het brondocument behouden blijven.
+ Ja, de`ImportFormatMode.KeepSourceFormatting` optie zorgt ervoor dat stijlen uit het brondocument behouden blijven.
 
 ### Waar kan ik meer hulp krijgen met Aspose.Words?
- Bekijk de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of bezoek hun[Helpforum](https://forum.aspose.com/c/words/8) voor meer hulp.
+ Bekijk de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of bezoek hun[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor meer hulp.

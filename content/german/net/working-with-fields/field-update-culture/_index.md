@@ -23,7 +23,7 @@ Bevor wir uns in die Einzelheiten der Feldaktualisierungskultur vertiefen, gibt 
 
 4.  Aspose-Lizenz: Für die volle Funktionalität benötigen Sie möglicherweise eine Lizenz. Sie können eine erwerben[Hier](https://purchase.aspose.com/buy) oder holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
 
-5.  Zugriff auf Dokumentation und Support: Für weitere Hilfe steht Ihnen die[Aspose-Dokumentation](https://reference.aspose.com/words/net/)Und[Hilfeforum](https://forum.aspose.com/c/words/8) sind großartige Ressourcen.
+5.  Zugriff auf Dokumentation und Support: Für weitere Hilfe steht Ihnen die[Aspose-Dokumentation](https://reference.aspose.com/words/net/)Und[Support Forum](https://forum.aspose.com/c/words/8) sind großartige Ressourcen.
 
 ## Namespaces importieren
 
@@ -110,4 +110,4 @@ Ja, Aspose.Words unterstützt verschiedene Feldtypen, einschließlich Datumsanga
 
 ### Wo finde ich weitere Informationen oder bekomme Hilfe, wenn ich auf Probleme stoße?
 
- Ausführliche Dokumentation und Support finden Sie im[Aspose-Dokumentation](https://reference.aspose.com/words/net/) und das[Aspose Support Forum](https://forum.aspose.com/c/words/8).
+ Ausführliche Dokumentation und Support finden Sie im[Aspose-Dokumentation](https://reference.aspose.com/words/net/) und die[Aspose Support Forum](https://forum.aspose.com/c/words/8).

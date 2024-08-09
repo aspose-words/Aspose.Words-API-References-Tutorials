@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Zavedení
 
 Pokud pracujete s dokumenty v .NET a používáte Aspose.Words, může být správa zdrojů písem zásadním aspektem zajištění toho, aby vaše dokumenty vypadaly podle očekávání. Aspose.Words nabízí výkonný způsob práce s fonty, včetně použití toků zdrojů. V tomto průvodci si projdeme použití zdroje zdrojů jako zdroje písem s Aspose.Words for .NET. Pojďme se ponořit!
 
@@ -17,7 +18,7 @@ Než začneme, ujistěte se, že máte následující:
 - Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
 -  Aspose.Words for .NET Library: Stáhněte a nainstalujte ji z[odkaz ke stažení](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění vašeho kódu.
--  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven otestovat nastavení písma.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven k testování nastavení písma.
 
 ## Importovat jmenné prostory
 
@@ -103,7 +104,7 @@ Nyní jste zvládli proces používání toku prostředků jako zdroje písem po
 
 ### Q4: Kde najdu podporu pro Aspose.Words?
 
- Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.
+ Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### Q5: Je možné získat dočasnou licenci pro Aspose.Words?
 

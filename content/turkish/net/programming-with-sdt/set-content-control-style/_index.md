@@ -9,7 +9,7 @@ url: /tr/net/programming-with-sdt/set-content-control-style/
 ---
 ## giriiş
 
-Hiç Word belgelerinizi bazı özel stillerle canlandırmak istediniz mi, ancak kendinizi teknik yabani otların arasında buldunuz mu? Şanslısın! Bugün Aspose.Words for .NET'i kullanarak içerik kontrol stillerini ayarlama dünyasına dalıyoruz. Düşündüğünüzden daha kolay ve bu eğitimin sonunda belgelerinizi bir profesyonel gibi şekillendirebileceksiniz. Sürecin her bölümünü anladığınızdan emin olmak için size her şeyi adım adım anlatacağız. Word belgelerinizi dönüştürmeye hazır mısınız? Başlayalım!
+Hiç Word belgelerinizi bazı özel stillerle canlandırmak istediniz mi, ancak kendinizi teknik yabani otların arasında buldunuz mu? Şanslısın! Bugün Aspose.Words for .NET'i kullanarak içerik kontrol stillerini ayarlama dünyasına dalıyoruz. Düşündüğünüzden daha kolay ve bu eğitimin sonunda belgelerinizi bir profesyonel gibi şekillendirebileceksiniz. Sürecin her bölümünü anladığınızdan emin olmak için size her şeyi adım adım anlatacağız. Word belgelerinizi dönüştürmeye hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -86,7 +86,7 @@ Bu adımda, orijinal dosyayı korumak için değiştirilen belgeyi yeni bir adla
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak Word belgelerinde içerik kontrol stillerini nasıl ayarlayacağınızı öğrendiniz. Bu basit adımları izleyerek Word belgelerinizin görünümünü kolayca özelleştirerek onları daha ilgi çekici ve profesyonel hale getirebilirsiniz. Aspose.Words'ün gücünü tam anlamıyla açığa çıkarmak için farklı stiller ve belge öğeleriyle denemeler yapmaya devam edin.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgelerinde içerik kontrol stillerini nasıl ayarlayacağınızı öğrendiniz. Bu basit adımları izleyerek Word belgelerinizin görünümünü kolayca özelleştirerek onları daha ilgi çekici ve profesyonel hale getirebilirsiniz. Aspose.Words'ün gücünü tam anlamıyla açığa çıkarmak için farklı stiller ve belge öğeleriyle denemeler yapmaya devam edin.
 
 ## SSS'ler
 

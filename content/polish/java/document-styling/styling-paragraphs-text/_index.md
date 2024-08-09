@@ -185,7 +185,7 @@ Tworzenie list z punktorami lub numeracją jest częstym zadaniem formatowania d
 // Utwórz nowy dokument
 Document doc = new Document();
 
-// Stwórz listę
+// Utwórz listę
 List list = new List(doc);
 
 // Dodaj elementy listy za pomocą punktorów

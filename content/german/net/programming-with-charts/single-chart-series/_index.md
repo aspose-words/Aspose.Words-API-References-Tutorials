@@ -104,7 +104,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich eine einzelne Diagrammreihe in einem Word-Dokument mit Aspose.Words für .NET angepasst. Ziemlich cool, oder? Dies ist nur die Spitze des Eisbergs; mit Aspose.Words können Sie noch viel mehr tun. Experimentieren Sie also weiter und erstellen Sie fantastische Dokumente!
+Und da haben Sie es! Sie haben erfolgreich eine einzelne Diagrammreihe in einem Word-Dokument mit Aspose.Words für .NET angepasst. Ziemlich cool, oder? Dies ist nur die Spitze des Eisbergs; es gibt noch so viel mehr, was Sie mit Aspose.Words tun können. Experimentieren Sie also weiter und erstellen Sie fantastische Dokumente!
 
 ## Häufig gestellte Fragen
 
@@ -112,7 +112,7 @@ Und da haben Sie es! Sie haben erfolgreich eine einzelne Diagrammreihe in einem 
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert erstellen, bearbeiten, konvertieren und bearbeiten können.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Ja, Sie können beginnen mit einem[Kostenlose Testphase](https://releases.aspose.com/).
+ Ja, Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/).
 
 ### Wie erhalte ich Support für Aspose.Words?
  Sie können Unterstützung von der Aspose-Community erhalten auf deren[Forum](https://forum.aspose.com/c/words/8).
@@ -121,4 +121,4 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dok
 Auf jeden Fall! Aspose.Words unterstützt verschiedene Diagrammtypen wie Balken-, Kreis- und Streudiagramme.
 
 ### Wo finde ich weitere Dokumentation?
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) für ausführlichere Anleitungen und Beispiele.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für ausführlichere Anleitungen und Beispiele.

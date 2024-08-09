@@ -93,7 +93,7 @@ Aspose.Words unterstützt eine Vielzahl von Formaten, darunter PDF, HTML, EPUB u
  Derzeit`RasterizeTransformedElements` Option gilt für alle transformierten Elemente im Dokument. Für eine genauere Kontrolle können Sie die Elemente vor der Konvertierung separat verarbeiten.
 
 ### Wie kann ich Probleme bei der Dokumentkonvertierung beheben?  
- Stellen Sie sicher, dass Sie die neueste Version von Aspose.Words haben, und überprüfen Sie die Dokumentation auf spezifische Konvertierungsprobleme. Darüber hinaus ist die[Hilfeforum](https://forum.aspose.com/c/words/8) ist ein großartiger Ort, um um Hilfe zu bitten.
+ Stellen Sie sicher, dass Sie die neueste Version von Aspose.Words haben, und überprüfen Sie die Dokumentation auf spezifische Konvertierungsprobleme. Darüber hinaus ist die[Support-Forum](https://forum.aspose.com/c/words/8) ist ein großartiger Ort, um um Hilfe zu bitten.
 
 ### Gibt es irgendwelche Einschränkungen bei der Testversion von Aspose.Words für .NET?  
  Die Testversion hat einige Einschränkungen, wie z. B. das Evaluierungswasserzeichen. Für eine voll funktionsfähige Erfahrung sollten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).

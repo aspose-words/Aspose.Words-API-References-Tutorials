@@ -104,4 +104,4 @@ Viel Spaß beim Programmieren!
 Erwägen Sie bei großen Dokumenten die Stapelverarbeitung der Seiten, um die Speichernutzung effektiv zu verwalten.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?  
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) für umfassende Anleitungen und Beispiele.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für umfassende Anleitungen und Beispiele.

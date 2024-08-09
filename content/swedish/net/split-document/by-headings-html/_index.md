@@ -89,7 +89,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dok
 Ja, Aspose.Words låter dig dela upp dokument efter olika kriterier som sektioner, sidor och mer.
 
 ### Är Aspose.Words gratis?
- Aspose.Words erbjuder en gratis provperiod, men för alla funktioner måste du köpa en licens. Kolla deras[köpsida](https://purchase.aspose.com/buy) för mer detaljer.
+ Aspose.Words erbjuder en gratis provperiod, men för alla funktioner måste du köpa en licens. Kolla deras[köpsida](https://purchase.aspose.com/buy) för mer information.
 
 ### Var kan jag hitta dokumentationen?
  Omfattande dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).

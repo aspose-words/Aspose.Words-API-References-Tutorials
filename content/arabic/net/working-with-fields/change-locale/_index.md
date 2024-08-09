@@ -92,7 +92,7 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-وهناك لديك! لقد نجحت في تغيير الإعدادات المحلية في مستند Word الخاص بك باستخدام Aspose.Words لـ .NET.
+وهنا لديك! لقد نجحت في تغيير الإعدادات المحلية في مستند Word الخاص بك باستخدام Aspose.Words لـ .NET.
 
 ## خاتمة
 

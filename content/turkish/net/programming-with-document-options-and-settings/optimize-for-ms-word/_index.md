@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla belgenizi MS Word 2016 için optimize ettiniz. Bu, hedef kitlenizin hangi Word sürümünü kullandığına bakılmaksızın belgenizin harika görünmesini sağlar. Bu kadar basit ve anlaşılır. Öyleyse devam edin ve deneyin! Belgeleriniz size teşekkür edecek.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla belgenizi MS Word 2016 için optimize ettiniz. Bu, hedef kitlenizin hangi Word sürümünü kullandığına bakılmaksızın belgenizin harika görünmesini sağlar. Bu kadar basit ve anlaşılır. Öyleyse devam edin ve deneyin! Belgeleriniz size teşekkür edecek.
 
 ## SSS'ler
 

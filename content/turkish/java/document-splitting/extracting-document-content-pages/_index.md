@@ -18,7 +18,7 @@ Aspose.Words for Java, Word belgeleriyle programlı olarak çalışma konusunda 
 
 ### Geliştirme Ortamınızı Kurma
 
-Aspose.Words for Java ile çalışmaya başlamadan önce geliştirme ortamımızı kurmamız gerekiyor. Bu adımları takip et:
+Aspose.Words for Java ile çalışmaya başlamadan önce geliştirme ortamımızı kurmamız gerekiyor. Şu adımları izleyin:
 
 1. Java'yı yükleyin: Java yüklü değilse, web sitesinden en son sürümü indirip yükleyin.
 

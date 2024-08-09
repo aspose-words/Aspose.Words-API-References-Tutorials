@@ -43,7 +43,7 @@ public class DocumentListExample {
         // Zainicjuj nowy dokument
         Document doc = new Document();
 
-        // Stwórz listę
+        // Utwórz listę
         List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
 
         // Dodaj elementy listy
@@ -125,7 +125,7 @@ Tak, możesz dostosować formatowanie elementów listy, w tym czcionkę, rozmiar
 Absolutnie! Aspose.Words dla Java obsługuje szeroką gamę formatów dokumentów, w tym DOCX, PDF, HTML i inne.
 
 ### Jak mogę przekonwertować listę dokumentów na format PDF?
-Aby przekonwertować listę dokumentów na format PDF, po prostu załaduj dokument za pomocą Aspose.Words for Java i zapisz go w formacie PDF. To jest takie proste!
+Aby przekonwertować listę dokumentów na format PDF, po prostu załaduj dokument za pomocą Aspose.Words for Java i zapisz go w formacie PDF. To takie proste!
 
 ### Czy Aspose.Words for Java obsługuje pracę z tabelami w dokumentach?
 Tak, Aspose.Words dla Java zapewnia szerokie wsparcie pracy z tabelami, umożliwiając łatwe tworzenie, modyfikowanie i wyodrębnianie danych tabelarycznych.

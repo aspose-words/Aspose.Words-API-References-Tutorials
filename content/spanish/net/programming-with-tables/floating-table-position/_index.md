@@ -15,7 +15,7 @@ url: /es/net/programming-with-tables/floating-table-position/
 
 Antes de embarcarnos en este emocionante viaje, asegurémonos de tener todo lo que necesitamos:
 
-1. Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión. Si no lo haces,[descarguelo aqui](https://releases.aspose.com/words/net/).
+1. Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión. Si no lo haces,[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: asegúrese de que su entorno de desarrollo esté configurado con .NET.
 3. Entorno de desarrollo: Visual Studio o cualquier IDE preferido.
 4. Un documento de Word: Tenga listo un documento de Word que contenga una tabla.
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Guía paso por paso
+## Guía paso a paso
 
 Ahora, dividamos el proceso en pasos simples y digeribles.
 

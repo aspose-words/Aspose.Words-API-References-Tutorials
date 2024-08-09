@@ -9,7 +9,7 @@ url: /vi/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## Giới thiệu
 
-Này, các chuyên gia tài liệu! Bạn đã bao giờ thấy mình đắm chìm trong mã nguồn, cố gắng tìm ra cách chèn một tài liệu Word vào một tài liệu Word khác một cách liền mạch chưa? Đừng lo, vì hôm nay chúng ta sẽ đi sâu vào thế giới Aspose.Words dành cho .NET để thực hiện công việc đó một cách dễ dàng. Chúng tôi sẽ hướng dẫn chi tiết từng bước về cách sử dụng thư viện mạnh mẽ này để chèn tài liệu vào các điểm cụ thể trong quá trình tìm và thay thế. Bạn đã sẵn sàng trở thành chuyên gia Aspose.Words chưa? Bắt đầu nào!
+Này, các chuyên gia tài liệu! Bạn đã bao giờ thấy mình đắm chìm trong mã nguồn, cố gắng tìm ra cách chèn một tài liệu Word vào một tài liệu Word khác một cách liền mạch chưa? Đừng lo, vì hôm nay chúng ta sẽ đi sâu vào thế giới Aspose.Words dành cho .NET để thực hiện công việc đó một cách dễ dàng. Chúng tôi sẽ hướng dẫn chi tiết từng bước về cách sử dụng thư viện mạnh mẽ này để chèn tài liệu vào các điểm cụ thể trong quá trình tìm và thay thế. Bạn đã sẵn sàng trở thành chuyên gia Aspose.Words chưa? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -147,7 +147,7 @@ Phương pháp này đảm nhiệm việc nhập các nút từ tài liệu cầ
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Hướng dẫn toàn diện để chèn tài liệu này vào tài liệu khác bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng tự động hóa các tác vụ thao tác và lắp ráp tài liệu. Cho dù bạn đang xây dựng một hệ thống quản lý tài liệu hay chỉ cần hợp lý hóa quy trình xử lý tài liệu của mình, Aspose.Words là người bạn đồng hành đáng tin cậy của bạn.
+Và bạn có nó! Hướng dẫn toàn diện để chèn tài liệu này vào tài liệu khác bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng tự động hóa các tác vụ thao tác và lắp ráp tài liệu. Cho dù bạn đang xây dựng một hệ thống quản lý tài liệu hay chỉ cần hợp lý hóa quy trình xử lý tài liệu của mình, Aspose.Words là người bạn đồng hành đáng tin cậy của bạn.
 
 ## Câu hỏi thường gặp
 
@@ -164,4 +164,4 @@ Có, bạn có thể sửa đổi trình xử lý gọi lại để xử lý nhi
 Bạn có thể nhận được hỗ trợ bằng cách truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Tôi có thể giữ nguyên định dạng của tài liệu được chèn không?
- Vâng`NodeImporter` lớp cho phép bạn chỉ định cách xử lý định dạng khi nhập các nút từ tài liệu này sang tài liệu khác.
+ Vâng, cái`NodeImporter` lớp cho phép bạn chỉ định cách xử lý định dạng khi nhập các nút từ tài liệu này sang tài liệu khác.

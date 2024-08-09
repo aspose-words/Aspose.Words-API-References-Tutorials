@@ -80,7 +80,7 @@ Wenn Sie die Technik beherrschen, Text in eingefügten Revisionen mit Aspose.Wor
 ## Häufig gestellte Fragen
 
 ### Wie kann ich mit Aspose.Words für .NET mit der Revisionsverfolgung in einem Word-Dokument beginnen?
- Um mit der Nachverfolgung von Revisionen zu beginnen, verwenden Sie`doc.StartTrackRevisions(author, date)` Methode.
+ Um mit der Nachverfolgung von Revisionen zu beginnen, verwenden Sie`doc.StartTrackRevisions(author, date)` Verfahren.
 
 ### Welchen Vorteil bietet das Ignorieren eingefügten Textes bei Dokumentrevisionen?
 Durch das Ignorieren von eingefügtem Text bleibt der Fokus auf dem Kerninhalt erhalten, während Dokumentänderungen effizient verwaltet werden.
@@ -89,7 +89,7 @@ Durch das Ignorieren von eingefügtem Text bleibt der Fokus auf dem Kerninhalt e
 Ja, Sie können ignorierten eingefügten Text mit den entsprechenden FindReplaceOptions-Einstellungen rückgängig machen.
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
- Besuche den[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für ausführliche Anleitungen und API-Referenzen.
+ Besuchen Sie die[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für ausführliche Anleitungen und API-Referenzen.
 
 ### Gibt es ein Community-Forum zur Diskussion von Aspose.Words für .NET-bezogene Anfragen?
  Ja, Sie können die[Aspose.Words-Forum](https://forum.aspose.com/c/words/8) für Community-Unterstützung und Diskussionen.

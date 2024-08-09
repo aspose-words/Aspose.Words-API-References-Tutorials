@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-## Úvod
+## Zavedení
 
 Aspose.Words pro .NET nadšence! Dnes se ponoříme do fascinující funkce, díky které je manipulace se seznamy v dokumentech s prostým textem hračkou. Už jste se někdy zabývali textovými soubory, kde by některé řádky měly být seznamy, ale po načtení do dokumentu aplikace Word prostě nevypadají úplně správně? No, máme v rukávu úhledný trik: detekce číslování pomocí mezer. Tento tutoriál vás provede tím, jak používat`DetectNumberingWithWhitespaces` možnost v Aspose.Words pro .NET, abyste zajistili, že vaše seznamy budou správně rozpoznány, i když je mezi čísly a textem mezera.
 
@@ -66,7 +66,7 @@ const string textDoc = "Full stop delimiters:\n" +
 
 ## Krok 3: Nakonfigurujte LoadOptions
 
- Abychom zjistili číslování s mezerami, musíme nastavit`DetectNumberingWithWhitespaces` možnost`true` v`TxtLoadOptions` objekt.
+ Abychom zjistili číslování s mezerami, musíme nastavit`DetectNumberingWithWhitespaces` možnost`true` v a`TxtLoadOptions` objekt.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };

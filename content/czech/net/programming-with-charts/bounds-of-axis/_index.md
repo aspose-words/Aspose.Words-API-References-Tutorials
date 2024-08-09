@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/bounds-of-axis/
 ---
-## Úvod
+## Zavedení
 
 Chcete vytvářet profesionální dokumenty s grafy v .NET? Jste na správném místě! Tato příručka vás provede procesem použití Aspose.Words pro .NET k nastavení hranic osy v grafu. Každý krok rozebereme, abyste se ujistili, že je můžete snadno sledovat, i když jste v knihovně noví. Takže, pojďme se ponořit a začít!
 
@@ -15,7 +15,7 @@ Chcete vytvářet profesionální dokumenty s grafy v .NET? Jste na správném m
 
 Než začneme, ujistěte se, že máte následující:
 
--  Aspose.Words pro .NET: Můžete[stažení](https://releases.aspose.com/words/net/) nejnovější verzi nebo použijte a[zkušební verze zdarma](https://releases.aspose.com/).
+-  Aspose.Words pro .NET: Můžete[stáhnout](https://releases.aspose.com/words/net/) nejnovější verzi nebo použijte a[zkušební verze zdarma](https://releases.aspose.com/).
 - .NET Framework: Ujistěte se, že máte ve svém systému nainstalované rozhraní .NET.
 - IDE: Vývojové prostředí jako Visual Studio.
 
@@ -100,7 +100,7 @@ Nakonec uložte dokument do určeného adresáře.
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-to je vše! Úspěšně jste vytvořili dokument s grafem pomocí Aspose.Words for .NET. 
+je to! Úspěšně jste vytvořili dokument s grafem pomocí Aspose.Words for .NET. 
 
 ## Závěr
 
@@ -112,13 +112,13 @@ Pomocí Aspose.Words for .NET můžete snadno vytvářet a manipulovat s grafy v
 Aspose.Words for .NET je knihovna, která umožňuje vytvářet, upravovat a převádět dokumenty Wordu programově pomocí rozhraní .NET.
 
 ### Jak nastavím Aspose.Words pro .NET?
- Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
+ Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu používat Aspose.Words zdarma?
  Ano, můžete použít a[zkušební verze zdarma](https://releases.aspose.com/) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
- K dispozici je podrobná dokumentace[tady](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat podporu pro Aspose.Words?
- Můžete navštívit[Fórum podpory](https://forum.aspose.com/c/words/8) pro pomoc.
+ Můžete navštívit[fórum podpory](https://forum.aspose.com/c/words/8) o pomoc.

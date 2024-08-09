@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /es/net/working-with-fonts/receive-notifications-of-fonts/
 ---
+## Introducción
 
-
-Si alguna vez ha tenido problemas con las fuentes que no se muestran correctamente en sus documentos, no está solo. Administrar la configuración de fuentes y recibir notificaciones sobre sustituciones de fuentes puede ahorrarle muchos dolores de cabeza. En esta guía completa, exploraremos cómo manejar las notificaciones de fuentes usando Aspose.Words para .NET, asegurando que sus documentos siempre luzcan lo mejor posible.
+Si alguna vez ha tenido problemas con las fuentes que no se representan correctamente en sus documentos, no está solo. Administrar la configuración de fuentes y recibir notificaciones sobre sustituciones de fuentes puede ahorrarle muchos dolores de cabeza. En esta guía completa, exploraremos cómo manejar las notificaciones de fuentes usando Aspose.Words para .NET, asegurando que sus documentos siempre luzcan lo mejor posible.
 
 ## Requisitos previos
 
@@ -113,11 +113,11 @@ No, solo puedes especificar una fuente predeterminada para la sustitución. Sin 
 
 ###  P3: ¿Puedo manejar otros tipos de advertencias con`IWarningCallback`?
 
- Sí el`IWarningCallback`La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
+ Sí, el`IWarningCallback`La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
 
 ### P4: ¿Dónde puedo encontrar soporte para Aspose.Words?
 
- Visita el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) para asistencia.
+ Visita el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) para obtener ayuda.
 
 ### P5: ¿Es posible obtener una licencia temporal para Aspose.Words?
 

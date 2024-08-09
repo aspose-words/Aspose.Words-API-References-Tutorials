@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Wstaw tabelę HTML
 
- Teraz zaczyna się zabawa! Będziesz korzystać z`DocumentBuilder` , aby wstawić tabelę HTML do dokumentu programu Word. Pamiętaj, że ustawienia AutoFit nie mają zastosowania do tabel wstawianych z HTML, więc Twoja tabela będzie wyglądać dokładnie tak, jak zdefiniowano w kodzie HTML.
+ Teraz nadchodzi przyjemna część! Będziesz korzystać z`DocumentBuilder` , aby wstawić tabelę HTML do dokumentu programu Word. Pamiętaj, że ustawienia AutoFit nie mają zastosowania do tabel wstawianych z HTML, więc Twoja tabela będzie wyglądać dokładnie tak, jak zdefiniowano w kodzie HTML.
 
 ```csharp
 //Wstaw tabelę HTML
@@ -77,11 +77,11 @@ Na koniec, po wstawieniu tabeli, należy zapisać dokument. Ten krok gwarantuje,
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-I to wszystko! Pomyślnie wstawiłeś tabelę z HTML do dokumentu Word przy użyciu Aspose.Words dla .NET.
+I tyle! Pomyślnie wstawiłeś tabelę z HTML do dokumentu Word przy użyciu Aspose.Words dla .NET.
 
 ## Wniosek
 
-Wstawienie tabeli z kodu HTML do dokumentu programu Word może znacząco usprawnić pracę, szczególnie w przypadku pracy z dynamiczną zawartością ze źródeł internetowych. Aspose.Words dla .NET sprawia, że proces ten jest niezwykle prosty i wydajny. Wykonując kroki opisane w tym samouczku, możesz łatwo przekonwertować tabele HTML na dokumenty programu Word, zapewniając, że Twoje dokumenty będą zawsze aktualne i profesjonalnie sformatowane.
+Wstawienie tabeli z kodu HTML do dokumentu programu Word może znacznie usprawnić przepływ pracy, zwłaszcza w przypadku treści dynamicznych ze źródeł internetowych. Aspose.Words dla .NET sprawia, że proces ten jest niezwykle prosty i wydajny. Wykonując kroki opisane w tym samouczku, możesz łatwo przekonwertować tabele HTML na dokumenty programu Word, zapewniając, że Twoje dokumenty będą zawsze aktualne i profesjonalnie sformatowane.
 
 ## Często zadawane pytania
 

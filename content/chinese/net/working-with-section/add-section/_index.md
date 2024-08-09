@@ -129,4 +129,4 @@ Word 文档中的节是可以拥有自己的布局和格式（如页眉、页脚
 
 ### 在哪里可以找到有关 Aspose.Words 的更多资源？
 
-欲了解更多信息，请访问[Aspose.Words 文档](https://reference.aspose.com/words/net/)或者[支持论坛](https://forum.aspose.com/c/words/8)寻求帮助和讨论。
+欲了解更多信息，请访问[Aspose.Words 文档](https://reference.aspose.com/words/net/)或[支持论坛](https://forum.aspose.com/c/words/8)寻求帮助和讨论。

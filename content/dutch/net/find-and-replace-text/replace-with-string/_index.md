@@ -10,7 +10,7 @@ url: /nl/net/find-and-replace-text/replace-with-string/
 
 ## Invoering
 
-Hallo daar! Heeft u ooit met uw knieën in een Word-document gezeten en bepaalde woorden of zinsneden moeten vervangen? Je bent niet alleen. Of het nu gaat om het bijwerken van termen, het corrigeren van fouten of het eenvoudigweg verfraaien van uw inhoud, het is van cruciaal belang dat u weet hoe u tekst in een document efficiënt kunt vinden en vervangen. Vandaag duiken we in de wondere wereld van Aspose.Words voor .NET om u te laten zien hoe u tekenreeksen in uw Word-documenten als een professional kunt vervangen.
+Hé daar! Heeft u ooit met uw knieën in een Word-document gezeten en bepaalde woorden of zinsneden moeten vervangen? Je bent niet de enige. Of het nu gaat om het bijwerken van termen, het corrigeren van fouten of het simpelweg verfraaien van uw inhoud, het is van cruciaal belang dat u weet hoe u tekst in een document efficiënt kunt vinden en vervangen. Vandaag duiken we in de wondere wereld van Aspose.Words voor .NET om u te laten zien hoe u tekenreeksen in uw Word-documenten als een professional kunt vervangen.
 
 ## Vereisten
 
@@ -73,7 +73,7 @@ doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forw
 
  De`Replace`methode is eenvoudig. We specificeren het te vinden woord, het vervangende woord en de opties voor de zoek-en-vervang-bewerking.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte slaan we het gewijzigde document op. Dit is het moment waarop we ons voltooide meesterwerk inlijsten.
 

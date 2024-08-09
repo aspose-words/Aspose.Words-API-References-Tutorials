@@ -163,10 +163,10 @@ pip install aspose-words
  Ja, Sie können Absätzen und Überschriften verschiedene Stile zuweisen, indem Sie`paragraph_format.style` Eigentum.
 
 ### Ist es möglich, meinen Dokumenten Bilder hinzuzufügen?
- Auf jeden Fall! Sie können Bilder in Ihre Dokumente einfügen, indem Sie`insert_image` Methode.
+ Auf jeden Fall! Sie können Bilder in Ihre Dokumente einfügen, indem Sie`insert_image` Verfahren.
 
 ### Kann ich mein Dokument mit einem Passwort schützen?
- Ja, Sie können Ihr Dokument schützen, indem Sie den Dokumentschutz über das`protect` Methode.
+ Ja, Sie können Ihr Dokument schützen, indem Sie den Dokumentschutz über das`protect` Verfahren.
 
 ### In welche Formate kann ich meine Dokumente exportieren?
 Mit Aspose.Words können Sie Ihre Dokumente in verschiedene Formate exportieren, darunter PDF, DOCX und mehr.

@@ -133,4 +133,4 @@ Aspose.Words ondersteunt verschillende formaten voor het opslaan van documenten,
 
 ### Is er een manier om de prestaties van webextensies te optimaliseren?
 
-Om de prestaties van webextensies te optimaliseren, externe verzoeken te minimaliseren, asynchroon laden te gebruiken en grondige tests uit te voeren op verschillende browsers en apparaten.
+Om de prestaties van webextensies te optimaliseren, minimaliseert u externe verzoeken, gebruikt u asynchroon laden en voert u grondige tests uit op verschillende browsers en apparaten.

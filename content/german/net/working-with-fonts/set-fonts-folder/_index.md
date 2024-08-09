@@ -2,75 +2,99 @@
 title: Schriftartenordner festlegen
 linktitle: Schriftartenordner festlegen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie das Schriftartenverzeichnis in Aspose.Words für .NET festlegen und die Verfügbarkeit der in Ihren Dokumenten verwendeten Schriftarten sicherstellen.
+description: Erfahren Sie, wie Sie in Aspose.Words für .NET einen benutzerdefinierten Schriftartenordner einrichten, um sicherzustellen, dass Ihre Word-Dokumente korrekt und ohne fehlende Schriftarten gerendert werden.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-fonts-folder/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie das Schriftartenverzeichnis in Aspose.Words für .NET festlegen. Sie erfahren, wie Sie das Verzeichnis angeben, das die in Ihrem Word-Dokument verwendeten Schriftarten enthält.
+## Einführung
+
+Hatten Sie beim Arbeiten mit Word-Dokumenten in Ihrer .NET-Anwendung schon einmal Probleme mit fehlenden Schriftarten? Nun, Sie sind nicht allein. Das Einrichten des richtigen Schriftartenordners kann dieses Problem nahtlos lösen. In dieser Anleitung zeigen wir Ihnen, wie Sie den Schriftartenordner mit Aspose.Words für .NET einrichten. Lassen Sie uns eintauchen!
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:
-- Gute Kenntnisse der Programmiersprache C#
-- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## Schritt 1: Dokumentverzeichnis festlegen
-Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+Bevor wir beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+
+- Auf Ihrem Computer installiertes Visual Studio
+- .NET Framework einrichten
+-  Aspose.Words für .NET-Bibliothek. Falls noch nicht geschehen, können Sie es hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
+
+## Namespaces importieren
+
+Zuerst müssen Sie die erforderlichen Namespaces importieren, um mit Aspose.Words arbeiten zu können. Fügen Sie oben in Ihrer Codedatei die folgenden Zeilen hinzu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Schritt 2: Schriftartenverzeichnis festlegen
- Erstellen Sie eine Instanz des`FontSettings` Klasse und verwenden Sie die`SetFontsFolder` Methode, um das Verzeichnis anzugeben, das die Schriftarten enthält. Ersetzen Sie`"Fonts"` durch den Namen des aktuellen Schriftartenverzeichnisses.
+Das Einrichten des Schriftartenordners ist unkompliziert, wenn Sie diese Schritte sorgfältig befolgen.
+
+## Schritt 1: Dokumentverzeichnis definieren
+
+Definieren Sie zunächst den Pfad zu Ihrem Dokumentverzeichnis. In diesem Verzeichnis werden Ihre Word-Dokumente und die Schriftarten gespeichert, die Sie verwenden möchten.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## Schritt 3: Laden Sie das Dokument mit den Schrifteinstellungen
- Verwenden Sie die`LoadOptions` Klasse zum Festlegen von Schrifteinstellungen in der`FontSettings` Option. Verwenden Sie dann die`Document` Klasse, um das Dokument mit diesen Optionen zu laden.
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Beispielquellcode für den Ordner „Set Fonts“ mit Aspose.Words für .NET 
-
-```csharp
-
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+ Ersetzen Sie unbedingt`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Verzeichnis.
+
+## Schritt 2: FontSettings initialisieren
+
+ Nun müssen Sie die`FontSettings` Objekt. Mit diesem Objekt können Sie benutzerdefinierte Schriftartordner angeben.
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Schritt 3: Legen Sie den Schriftartenordner fest
+
+ Mit dem`SetFontsFolder` Methode der`FontSettings` Objekt, geben Sie den Ordner an, in dem Ihre benutzerdefinierten Schriftarten gespeichert sind.
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ Hier,`dataDir + "Fonts"` verweist auf den Ordner "Fonts" in Ihrem Dokumentverzeichnis. Der zweite Parameter,`false`, gibt an, dass der Ordner nicht rekursiv ist.
+
+## Schritt 4: LoadOptions erstellen
+
+ Erstellen Sie als nächstes eine Instanz des`LoadOptions` Klasse. Diese Klasse hilft Ihnen, das Dokument mit den angegebenen Schrifteinstellungen zu laden.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## Schritt 5: Laden Sie das Dokument
+
+ Laden Sie abschließend das Word-Dokument mit dem`Document` Klasse und die`LoadOptions` Objekt.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+ Stellen Sie sicher, dass`"Rendering.docx"` ist der Name Ihres Word-Dokuments. Sie können ihn durch den Namen Ihrer Datei ersetzen.
+
 ## Abschluss
-Herzlichen Glückwunsch! Sie wissen jetzt, wie Sie das Schriftartenverzeichnis in Aspose.Words für .NET festlegen. Mit dieser Funktion können Sie die Verfügbarkeit der in Ihrem Dokument verwendeten Schriftarten sicherstellen und eine einheitliche Anzeige der Schriftarten gewährleisten.
 
-### Häufig gestellte Fragen
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie ganz einfach einen benutzerdefinierten Schriftartenordner in Aspose.Words für .NET einrichten und so sicherstellen, dass alle Ihre Schriftarten korrekt wiedergegeben werden. Diese einfache Einrichtung kann Ihnen viel Kopfzerbrechen ersparen und dafür sorgen, dass Ihre Dokumente genau so aussehen, wie Sie es möchten.
 
-#### F: Wie kann ich in Aspose.Words einen benutzerdefinierten Schriftartordner festlegen?
+## Häufig gestellte Fragen
 
- A: Um einen benutzerdefinierten Schriftartenordner in Aspose.Words einzurichten, können Sie den`FontsFolder` Klasse und die`SetFontsFolders` Methode, die den Pfad zum Ordner angibt, der Ihre Schriftarten enthält.
+### Warum muss ich einen benutzerdefinierten Schriftartenordner einrichten?
+Durch das Einrichten eines benutzerdefinierten Schriftartenordners wird sichergestellt, dass alle in Ihren Word-Dokumenten verwendeten Schriftarten korrekt wiedergegeben werden und Probleme mit fehlenden Schriftarten vermieden werden.
 
-#### F: Kann ich in Aspose.Words mehrere Schriftartenordner festlegen?
+### Kann ich mehrere Schriftartenordner festlegen?
+ Ja, Sie können die`SetFontsFolders` Methode zum Angeben mehrerer Ordner.
 
- A: Ja, Sie können mehrere Schriftartenordner in Aspose.Words festlegen, indem Sie den`SetFontsFolders` Methode mehrmals mit den Pfaden der verschiedenen Schriftartordner, die Sie verwenden möchten.
+### Was passiert, wenn eine Schriftart nicht gefunden wird?
+Aspose.Words versucht, die fehlende Schriftart durch eine ähnliche aus den Systemschriftarten zu ersetzen.
 
-#### F: Was passiert, wenn eine im Dokument verwendete Schriftart nicht in den definierten Schriftartenordnern vorhanden ist?
+### Ist Aspose.Words mit .NET Core kompatibel?
+Ja, Aspose.Words unterstützt .NET Core zusammen mit .NET Framework.
 
-A: Wenn eine im Dokument verwendete Schriftart nicht in den in Aspose.Words definierten Schriftartenordnern vorhanden ist, wird stattdessen eine Ersatzschriftart verwendet. Dadurch wird sichergestellt, dass der Text im Dokument immer korrekt angezeigt wird, auch wenn die Originalschriftart nicht verfügbar ist.
-
-#### F: Haben in Aspose.Words definierte Schriftartenordner Vorrang vor auf dem System installierten Schriftarten?
-
-A: Ja, in Aspose.Words definierte Schriftartenordner haben Vorrang vor auf dem System installierten Schriftarten. Das bedeutet, dass bei der Verarbeitung von Word-Dokumenten die Version im Schriftartenordner verwendet wird, wenn eine Schriftart mit demselben Namen sowohl in den definierten Schriftartenordnern als auch in den Systemschriftarten vorhanden ist.
+### Wo erhalte ich Unterstützung, wenn Probleme auftreten?
+ Unterstützung erhalten Sie vom[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8).

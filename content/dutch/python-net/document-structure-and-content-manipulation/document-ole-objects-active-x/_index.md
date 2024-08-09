@@ -99,4 +99,4 @@ Als het ActiveX-besturingselement niet werkt, kan dit te wijten zijn aan de beve
 
 ## Conclusie
 
-Het integreren van OLE-objecten en ActiveX-besturingselementen met behulp van Aspose.Words voor Python opent een wereld aan mogelijkheden voor het maken van dynamische en interactieve Word-documenten. Of u nu spreadsheets, multimedia of interactieve formulieren wilt insluiten, deze functie stelt u in staat uw ideeën effectief te communiceren.
+Het integreren van OLE-objecten en ActiveX-besturingselementen met behulp van Aspose.Words voor Python opent een wereld aan mogelijkheden voor het creëren van dynamische en interactieve Word-documenten. Of u nu spreadsheets, multimedia of interactieve formulieren wilt insluiten, deze functie stelt u in staat uw ideeën effectief te communiceren.

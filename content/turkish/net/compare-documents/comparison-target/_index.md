@@ -42,7 +42,7 @@ Projemizi hazırlayalım. Geliştirme ortamınızı harekete geçirin ve yeni bi
 
 ## Adım 2: Aspose.Words for .NET'i yükleyin
 
-Daha sonra Aspose.Words'ü projenize eklemeniz gerekiyor. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Aspose.Words'ü arayın ve yükleyin. Basit!
+Daha sonra Aspose.Words'ü projenize eklemeniz gerekiyor. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Aspose.Words'ü arayın ve yükleyin. Kolay gelsin!
 
 ```bash
 Install-Package Aspose.Words
@@ -81,7 +81,7 @@ CompareOptions options = new CompareOptions
 
 ## Adım 6: Belgeleri Karşılaştırın
 
-Ve şimdi, hepimizin beklediği an geldi; belgelerin karşılaştırılması! Sihir yapılan yer burasıdır. Aspose.Words belgeleri karşılaştıracak ve farklılıkları vurgulayacaktır.
+Ve şimdi, hepimizin beklediği an geldi; belgelerin karşılaştırılması! Sihrin gerçekleştiği yer burasıdır. Aspose.Words belgeleri karşılaştıracak ve farklılıkları vurgulayacaktır.
 
 ```csharp
 docA.Compare(docB, "user", DateTime.Now, options);

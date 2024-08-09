@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Wstęp
 
 Jeśli pracujesz z dokumentami w .NET i używasz Aspose.Words, zarządzanie źródłami czcionek może być kluczowym aspektem zapewniającym, że Twoje dokumenty będą wyglądać zgodnie z oczekiwaniami. Aspose.Words oferuje potężny sposób obsługi czcionek, w tym korzystania ze strumieni zasobów. W tym przewodniku omówimy wykorzystanie strumienia zasobów jako źródła czcionek w Aspose.Words dla .NET. Zanurzmy się!
 
@@ -81,7 +82,7 @@ Na koniec zapisz dokument po zastosowaniu ustawień czcionki. Zapisz go w wybran
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-Wykonując te kroki, skonfigurowałeś aplikację tak, aby korzystała ze strumienia zasobów jako źródła czcionek, co gwarantuje, że niezbędne czcionki są osadzone i dostępne dla Twoich dokumentów.
+Wykonując poniższe kroki, skonfigurowałeś aplikację tak, aby korzystała ze strumienia zasobów jako źródła czcionek, co gwarantuje, że niezbędne czcionki są osadzone i dostępne dla Twoich dokumentów.
 
 ## Wniosek
 
@@ -99,11 +100,11 @@ Opanowałeś teraz proces używania strumienia zasobów jako źródła czcionek 
 
 ###  P3: Czy mogę obsługiwać inne typy ostrzeżeń za pomocą`IWarningCallback`?
 
- Tak`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
+ Tak,`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
 
 ### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 
- Odwiedzić[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) do pomocy.
+ Odwiedź[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### P5: Czy można uzyskać tymczasową licencję na Aspose.Words?
 

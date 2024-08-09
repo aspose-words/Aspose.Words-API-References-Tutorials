@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/bookmark-table-columns/
 ---
-## introduzione
+## Introduzione
 
 Se stai cercando di migliorare le tue capacità di automazione dei documenti, allora sei pronto per una sorpresa. Questo tutorial ti guiderà attraverso il processo di aggiunta dei segnalibri alle colonne della tabella in un documento Word utilizzando Aspose.Words per .NET. Pronti a tuffarvi? Iniziamo!
 
@@ -107,7 +107,7 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Conclusione
 
-E il gioco è fatto! Hai aggiunto con successo le colonne della tabella ai segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questo processo non solo aiuta a organizzare il documento, ma semplifica anche la navigazione e la manipolazione di sezioni specifiche. L'aggiunta di segnalibri è una funzionalità potente che può migliorare significativamente le capacità di gestione dei documenti.
+Ed ecco qua! Hai aggiunto con successo le colonne della tabella ai segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questo processo non solo aiuta a organizzare il documento, ma semplifica anche la navigazione e la manipolazione di sezioni specifiche. L'aggiunta di segnalibri è una funzionalità potente che può migliorare significativamente le capacità di gestione dei documenti.
 
 ## Domande frequenti
 
@@ -121,7 +121,7 @@ Aspose.Words per .NET è una potente libreria per lavorare con documenti Word a 
 Sì, Aspose.Words per .NET può essere utilizzato con qualsiasi linguaggio supportato da .NET, inclusi C#, VB.NET e F#.
 
 ### Come posso ottenere supporto per Aspose.Words per .NET?
- Puoi ottenere supporto dalla comunità e dagli esperti di Aspose visitando il sito[Forum di assistenza](https://forum.aspose.com/c/words/8).
+ Puoi ottenere supporto dalla comunità e dagli esperti di Aspose visitando il sito[forum di supporto](https://forum.aspose.com/c/words/8).
 
 ### È disponibile una versione di prova di Aspose.Words per .NET?
  Sì, puoi ottenere una prova gratuita da[Qui](https://releases.aspose.com/).

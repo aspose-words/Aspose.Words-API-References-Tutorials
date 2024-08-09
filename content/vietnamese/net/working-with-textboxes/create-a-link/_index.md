@@ -15,7 +15,7 @@ Xin chào những người đam mê công nghệ và phù thủy tài liệu! �
 
 Trước khi chúng ta đi sâu vào sự kỳ diệu của việc liên kết các hộp văn bản, hãy đảm bảo rằng bạn đã chuẩn bị sẵn tất cả những thứ cần thiết:
 
-1. Aspose.Words for .NET Library: Bạn sẽ cần phiên bản Aspose.Words mới nhất cho .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Bạn sẽ cần phiên bản Aspose.Words mới nhất cho .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển .NET, như Visual Studio, cần thiết để viết và kiểm tra mã của bạn.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp bạn theo dõi các ví dụ về mã.
 4. Tài liệu Word mẫu: Mặc dù không thực sự cần thiết cho hướng dẫn này nhưng việc có một tài liệu Word mẫu để kiểm tra các hộp văn bản được liên kết của bạn có thể hữu ích.
@@ -114,7 +114,7 @@ Thao tác này sẽ lưu tài liệu với tên tệp "LinkedTextBoxes.docx". B�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! 🎉 Bạn đã tạo và liên kết thành công các hộp văn bản trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đã hướng dẫn bạn cách thiết lập môi trường, tạo và liên kết các hộp văn bản cũng như lưu tài liệu của bạn. Với những kỹ năng này, bạn có thể cải thiện tài liệu Word của mình bằng các luồng nội dung động và làm cho tài liệu của bạn trở nên tương tác và thân thiện hơn với người dùng.
+Và bạn có nó! 🎉 Bạn đã tạo và liên kết thành công các hộp văn bản trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đã hướng dẫn bạn cách thiết lập môi trường, tạo và liên kết các hộp văn bản cũng như lưu tài liệu của bạn. Với những kỹ năng này, bạn có thể cải thiện tài liệu Word của mình bằng các luồng nội dung động và làm cho tài liệu của bạn trở nên tương tác và thân thiện hơn với người dùng.
 
  Để biết thêm thông tin chi tiết và các tính năng nâng cao, hãy nhớ kiểm tra[Tài liệu API Aspose.Words](https://reference.aspose.com/words/net/) Nếu bạn có bất kỳ câu hỏi hoặc gặp vấn đề gì,[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) là một nguồn tài nguyên tuyệt vời
 
@@ -132,7 +132,7 @@ Có, bạn có thể liên kết nhiều hộp văn bản theo trình tự. Ch�
 Bạn có thể tạo kiểu cho văn bản bên trong mỗi hộp văn bản giống như bất kỳ văn bản nào khác trong tài liệu Word bằng cách sử dụng các tùy chọn định dạng phong phú của Aspose.Words hoặc Word UI.
 
 ### Có thể hủy liên kết các hộp văn bản sau khi chúng được liên kết không?
- Có, bạn có thể hủy liên kết các hộp văn bản bằng cách đặt`Next` tài sản của`TextBox` chủ đề`null`.
+ Có, bạn có thể hủy liên kết các hộp văn bản bằng cách đặt`Next` tài sản của`TextBox` phản đối`null`.
 
 ### Tôi có thể tìm thêm hướng dẫn về Aspose.Words cho .NET ở đâu?
  Bạn có thể tìm thêm hướng dẫn và tài nguyên trên[Trang tài liệu Aspose.Words cho .NET](https://reference.aspose.com/words/net/).

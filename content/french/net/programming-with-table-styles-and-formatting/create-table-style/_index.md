@@ -9,12 +9,12 @@ url: /fr/net/programming-with-table-styles-and-formatting/create-table-style/
 ---
 ## Introduction
 
-Vous êtes-vous déjà retrouvé coincé en essayant de styliser des tableaux dans vos documents Word à l'aide de .NET ? Ne t'inquiètes pas! Nous plongeons aujourd'hui dans le monde fantastique d'Aspose.Words for .NET. Nous expliquerons comment créer un tableau, appliquer des styles personnalisés et enregistrer votre document, le tout sur un ton simple et conversationnel. Que vous soyez débutant ou professionnel chevronné, ce guide aura quelque chose pour vous. Prêt à transformer vos tables ennuyeuses en tables élégantes et professionnelles ? Commençons!
+Vous êtes-vous déjà retrouvé coincé en essayant de styliser des tableaux dans vos documents Word à l'aide de .NET ? Ne vous inquiétez pas ! Nous plongeons aujourd'hui dans le monde fantastique d'Aspose.Words for .NET. Nous expliquerons comment créer un tableau, appliquer des styles personnalisés et enregistrer votre document, le tout sur un ton simple et conversationnel. Que vous soyez débutant ou professionnel chevronné, ce guide aura quelque chose pour vous. Prêt à transformer vos tables ennuyeuses en tables élégantes et professionnelles ? Commençons !
 
 ## Conditions préalables
 
 Avant de passer au code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
-- Aspose.Words pour .NET : assurez-vous que cette puissante bibliothèque est installée. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+- Aspose.Words pour .NET : assurez-vous que cette puissante bibliothèque est installée. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : Visual Studio ou tout autre environnement de développement .NET.
 - Connaissance de base de C# : Une certaine familiarité avec la programmation C# sera utile.
 
@@ -89,7 +89,7 @@ Explication : Nous enregistrons notre document dans le répertoire spécifié av
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à créer et à styliser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide, vous pouvez désormais ajouter des tableaux d'aspect professionnel à vos documents, améliorant ainsi leur lisibilité et leur attrait visuel. Continuez à expérimenter différents styles et personnalisations pour faire ressortir vos documents !
+Félicitations! Vous avez réussi à créer et à styliser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide, vous pouvez désormais ajouter des tableaux d'aspect professionnel à vos documents, améliorant ainsi leur lisibilité et leur attrait visuel. Continuez à expérimenter différents styles et personnalisations pour faire ressortir vos documents !
 
 ## FAQ
 

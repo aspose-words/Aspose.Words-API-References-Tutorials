@@ -20,7 +20,7 @@ Innan vi hoppar in i det nitty-gritty, låt oss se till att du har allt du behö
 3. .NET Framework: Se till att du har .NET Framework installerat.
 4. Ett Word-dokument: Du behöver ett exempel på Word-dokument att arbeta med.
 
-Har du allt? Bra! Låt oss gå vidare.
+Har du allt? Stor! Låt oss gå vidare.
 
 ## Importera namnområden
 
@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 3: Flytta till önskat stycke
 
- Det är här magin händer. Vi flyttar till önskat stycke med hjälp av`MoveToParagraph` metod. Denna metod tar två parametrar: indexet för stycket och teckenpositionen i det stycket.
+ Här händer magin. Vi flyttar till önskat stycke med hjälp av`MoveToParagraph` metod. Denna metod tar två parametrar: indexet för stycket och teckenpositionen i det stycket.
 
 ```csharp
 builder.MoveToParagraph(2, 0);

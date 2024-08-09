@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
 ```
 
- I det här steget, byt ut`"YOUR DOCUMENTS DIRECTORY"` med sökvägen där ditt dokument är lagrat. De`Document` klass används för att ladda Word-filen i minnet.
+ I detta steg, byt ut`"YOUR DOCUMENTS DIRECTORY"` med sökvägen där ditt dokument är lagrat. De`Document` klass används för att ladda Word-filen i minnet.
 
 ## Steg 2: Uppdatera fält
 
@@ -93,7 +93,7 @@ Du kan uppdatera olika fälttyper, inklusive datumfält, dokumentegenskaper och 
 ### Kan jag uppdatera fält i en specifik del av dokumentet?  
  Ja, du kan använda`Document.Sections` egendom för att komma åt specifika avsnitt och uppdatera fält inom dem.
 
-### Hur hanterar jag fält som kräver användarinput?  
+### Hur hanterar jag fält som kräver användarinmatning?  
 Fält som kräver användarinmatning (som formulärfält) kommer att behöva fyllas i manuellt eller genom ytterligare kod.
 
 ### Är det möjligt att visa fältresultat i ett annat format?  

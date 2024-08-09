@@ -52,7 +52,7 @@ Agora que nosso projeto está configurado, precisamos inicializar um novo docume
 
 ### Inicializar documento
 
-1.  Na tua`Program.cs` arquivo, comece criando um novo documento:
+1.  Em seu`Program.cs` arquivo, comece criando um novo documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -126,7 +126,7 @@ Isso salva o documento com o campo avançado incluído.
 
 ## Conclusão
 
-E aí está! Você inseriu com êxito um campo avançado em um documento do Word sem usar a classe DocumentBuilder. Seguindo essas etapas, você aproveitou o poder do Aspose.Words for .NET para manipular documentos do Word programaticamente. Esteja você automatizando a geração de relatórios ou criando modelos de documentos complexos, esse conhecimento será, sem dúvida, útil. Continue experimentando e explorando os recursos do Aspose.Words para levar o processamento de seus documentos para o próximo nível!
+E aí está! Você inseriu com êxito um campo avançado em um documento do Word sem usar a classe DocumentBuilder. Seguindo essas etapas, você aproveitou o poder do Aspose.Words for .NET para manipular documentos do Word programaticamente. Esteja você automatizando a geração de relatórios ou criando modelos de documentos complexos, esse conhecimento sem dúvida será útil. Continue experimentando e explorando os recursos do Aspose.Words para levar o processamento de seus documentos para o próximo nível!
 
 ## Perguntas frequentes
 

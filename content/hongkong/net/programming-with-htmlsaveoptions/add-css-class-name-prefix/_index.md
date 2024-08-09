@@ -109,7 +109,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## 結論
 
-現在你就擁有了！透過執行這些步驟，您已成功使用 Aspose.Words for .NET 將 CSS 類別名稱前綴新增至 HTML 輸出。這個簡單而強大的功能可以幫助您在 HTML 文件中保持乾淨且無衝突的樣式。
+現在你就得到它了！透過執行這些步驟，您已成功使用 Aspose.Words for .NET 將 CSS 類別名稱前綴新增至 HTML 輸出。這個簡單而強大的功能可以幫助您在 HTML 文件中保持乾淨且無衝突的樣式。
 
 ## 常見問題解答
 
@@ -120,7 +120,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 這`CssClassNamePrefix`屬性與外部 CSS 一起使用。對於內聯 CSS，您需要不同的方法。
 
 ### 如何包含其他 HTML 保存選項？
-您可以配置各種屬性`HtmlSaveOptions`自訂您的 HTML 輸出。檢查[文件](https://reference.aspose.com/words/net/)更多細節。
+您可以配置各種屬性`HtmlSaveOptions`自訂您的 HTML 輸出。檢查[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 是否可以將 HTML 儲存到流中？
 絕對地！您可以透過將流物件傳遞給`Save`方法。

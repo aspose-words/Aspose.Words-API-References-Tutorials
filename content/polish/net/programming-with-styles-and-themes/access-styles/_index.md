@@ -15,7 +15,7 @@ Czy jesteś gotowy, aby zanurzyć się w świat stylizacji dokumentów w program
 
 Zanim przystąpimy do działania, upewnij się, że masz następujące elementy:
 
-1.  Aspose.Words dla .NET: Musisz mieć tę bibliotekę zainstalowaną w swoim środowisku .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Musisz mieć tę bibliotekę zainstalowaną w swoim środowisku .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Podstawowa znajomość .NET: Znajomość C# lub innego języka .NET pomoże Ci zrozumieć dostarczone fragmenty kodu.
 3. Środowisko programistyczne: upewnij się, że masz skonfigurowane środowisko IDE, takie jak Visual Studio, do pisania i wykonywania kodu .NET.
 

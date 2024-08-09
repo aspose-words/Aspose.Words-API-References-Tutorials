@@ -76,7 +76,7 @@ A dokumentum végére lépéssel és oldaltörés beszúrásával biztosítjuk, 
 
 ## 4. lépés: Állítsa be az Intelligens stílus viselkedését
 
- Mielőtt összevonnánk a dokumentumokat, be kell állítani a`SmartStyleBehavior` nak nek`true`. Ez az opció segít a stílusok intelligens karbantartásában a forrásdokumentumból.
+ Mielőtt összevonnánk a dokumentumokat, be kell állítani a`SmartStyleBehavior` hogy`true`. Ez az opció segít a stílusok intelligens karbantartásában a forrásdokumentumból.
 
 ```csharp
 // Állítson be intelligens stílusú viselkedést

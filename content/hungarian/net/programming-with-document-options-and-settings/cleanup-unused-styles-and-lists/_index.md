@@ -9,7 +9,7 @@ url: /hu/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## Bevezetés
 
-Halihó! Érezte már valaha, hogy Word-dokumentumai egy kicsit zsúfoltak? Tudja, azok a használaton kívüli stílusok és listák, amelyek csak ott vannak, helyet foglalnak, és a kelleténél bonyolultabbnak tűnnek a dokumentumai? Nos, szerencséd van! Ma egy ügyes kis trükkben merülünk el az Aspose.Words for .NET használatával a nem használt stílusok és listák megtisztítására. Ez olyan, mintha egy kellemes, frissítő fürdőt adna a dokumentumának. Szóval, fogd a kávét, dőlj hátra, és kezdjük!
+Szia! Érezte már valaha, hogy Word-dokumentumai egy kicsit zsúfoltak? Tudja, azok a használaton kívüli stílusok és listák, amelyek csak ott vannak, helyet foglalnak, és a kelleténél bonyolultabbnak tűnnek a dokumentumai? Nos, szerencséd van! Ma egy ügyes kis trükkben merülünk el az Aspose.Words for .NET használatával a nem használt stílusok és listák megtisztítására. Ez olyan, mintha egy kellemes, frissítő fürdőt adna a dokumentumának. Szóval, fogd a kávét, dőlj hátra, és kezdjük!
 
 ## Előfeltételek
 
@@ -90,7 +90,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi Word-dokumentumok programozott létrehozását, módosítását és konvertálását C# használatával.
 
 ### Eltávolíthatom egyszerre a fel nem használt stílusokat és listákat?
-Igen, mindkettőt beállíthatja`UnusedLists`és`UnusedStyles` nak nek`true` ban,-ben`CleanupOptions` mindkettő eltávolításához.
+Igen, mindkettőt beállíthatja`UnusedLists`és`UnusedStyles` hogy`true` a`CleanupOptions` mindkettő eltávolításához.
 
 ### Vissza lehet vonni a tisztítást?
 Nem, a tisztítás befejezése és a dokumentum mentése után a módosítások nem vonhatók vissza. Mindig készítsen biztonsági másolatot az eredeti dokumentumról.

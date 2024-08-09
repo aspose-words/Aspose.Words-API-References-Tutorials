@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
-## introduzione
+## Introduzione
 
 Ridurre le dimensioni dei file PDF può essere fondamentale per un'archiviazione efficiente e una condivisione rapida. Un modo efficace per farlo è disabilitare i caratteri incorporati, soprattutto quando i caratteri standard sono già disponibili sulla maggior parte dei sistemi. In questo tutorial esploreremo come ridurre le dimensioni del PDF disabilitando i caratteri incorporati utilizzando Aspose.Words per .NET. Esamineremo ogni passaggio per assicurarci che tu possa facilmente implementarlo nei tuoi progetti.
 
@@ -15,7 +15,7 @@ Ridurre le dimensioni dei file PDF può essere fondamentale per un'archiviazione
 
 Prima di immergerti nel codice, assicurati di avere quanto segue:
 
--  Aspose.Words per .NET: se non lo hai già fatto, scaricalo e installalo da[Link per scaricare](https://releases.aspose.com/words/net/).
+-  Aspose.Words per .NET: se non lo hai già fatto, scaricalo e installalo da[Collegamento per il download](https://releases.aspose.com/words/net/).
 - Un ambiente di sviluppo .NET: Visual Studio è una scelta popolare.
 - Un documento Word di esempio: tieni pronto un file DOCX che desideri convertire in PDF.
 
@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- IMPOSTANDO`FontEmbeddingMode` A`EmbedNone`, chiediamo ad Aspose.Words di non includere questi caratteri nel PDF, riducendo la dimensione del file.
+ Impostando`FontEmbeddingMode` A`EmbedNone`, chiediamo ad Aspose.Words di non includere questi caratteri nel PDF, riducendo la dimensione del file.
 
 ## Passaggio 3: salva il documento come PDF
 
@@ -85,4 +85,4 @@ Sì, Aspose.Words per .NET ti consente di personalizzare i caratteri incorporati
 Sì, Aspose.Words per .NET fornisce le funzionalità necessarie per configurare le opzioni di incorporamento dei caratteri nei PDF.
 
 ### Come posso ottenere supporto se riscontro problemi?
- Puoi visitare il[Forum di assistenza](https://forum.aspose.com/c/words/8) per assistenza in caso di problemi riscontrati.
+ Puoi visitare il[Forum di supporto](https://forum.aspose.com/c/words/8) per assistenza in caso di problemi riscontrati.

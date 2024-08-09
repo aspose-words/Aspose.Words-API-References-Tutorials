@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Baiklah, sekarang kita sudah menyelesaikan prasyaratnya, mari kita uraikan prosesnya langkah demi langkah. Setiap langkah akan memiliki judul dan penjelasan agar sangat mudah untuk diikuti.
+Baiklah, sekarang kita sudah menyelesaikan prasyaratnya, mari kita uraikan prosesnya langkah demi langkah. Setiap langkah akan memiliki judul dan penjelasan agar sangat mudah diikuti.
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
 
@@ -99,4 +99,4 @@ Anda dapat menemukan daftar ID lokal di dokumentasi Microsoft atau dalam dokumen
 
 ### Bagaimana cara memperbarui perpustakaan Aspose.Words ke versi terbaru?
 
- Anda dapat mengunduh Aspose.Words untuk .NET versi terbaru dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+ Anda dapat mengunduh Aspose.Words untuk .NET versi terbaru dari[halaman unduhan](https://releases.aspose.com/words/net/).

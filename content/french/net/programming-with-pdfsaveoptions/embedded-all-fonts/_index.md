@@ -76,7 +76,7 @@ Dans cette ligne, nous enregistrons le document au format PDF dans le répertoir
 
 ## Conclusion
 
-Et voila! Vous avez intégré avec succès des polices dans un document PDF à l'aide d'Aspose.Words for .NET. Grâce à ces connaissances, vous pouvez garantir que vos PDF conservent leur apparence souhaitée, quel que soit l'endroit où ils sont consultés. N'est-ce pas cool ? Maintenant, allez-y et essayez avec vos propres documents.
+Et voilà ! Vous avez intégré avec succès des polices dans un document PDF à l'aide d'Aspose.Words for .NET. Grâce à ces connaissances, vous pouvez garantir que vos PDF conservent leur apparence souhaitée, quel que soit l'endroit où ils sont consultés. N'est-ce pas cool ? Maintenant, allez-y et essayez avec vos propres documents.
 
 ## FAQ
 

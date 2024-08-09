@@ -78,7 +78,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ## Perguntas frequentes
 
 ### Posso importar documentos com diferentes estilos de formatação?
- Sim o`NodeImporter` classe suporta a importação de documentos com estilos de formatação variados.
+ Sim, o`NodeImporter` classe suporta a importação de documentos com estilos de formatação variados.
 
 ### E se meus documentos contiverem tabelas e imagens complexas?
 Aspose.Words for .NET lida com estruturas complexas como tabelas e imagens durante operações de importação.
@@ -90,4 +90,4 @@ Aspose.Words oferece suporte às versões .NET Framework e .NET Core para integr
 Use blocos try-catch para lidar com exceções que podem ocorrer durante o processo de importação.
 
 ### Onde posso encontrar documentação mais detalhada sobre Aspose.Words for .NET?
- Visite a[documentação](https://reference.aspose.com/words/net/) para guias abrangentes e referências de API.
+ Visite o[documentação](https://reference.aspose.com/words/net/) para guias abrangentes e referências de API.

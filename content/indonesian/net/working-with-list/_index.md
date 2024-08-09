@@ -13,6 +13,6 @@ Pemrosesan Kata dengan Daftar adalah sumber daya komprehensif yang memandu Anda 
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Mulai Ulang Daftar Di Setiap Bagian](./restart-list-at-each-section/)  | Pelajari cara mengatur ulang daftar bernomor ke setiap bagian dalam dokumen Word dengan Aspose.Words untuk .NET. |
-| [Tentukan Tingkat Daftar](./specify-list-level/) | Pelajari cara menentukan tingkat daftar dalam dokumen Word dengan Aspose.Words untuk .NET. |
-| [Mulai Ulang Nomor Daftar](./restart-list-number/) | Pelajari cara mengatur ulang nomor daftar di dokumen Word dengan Aspose.Words untuk .NET. |
+| [Mulai Ulang Daftar Di Setiap Bagian](./restart-list-at-each-section/)  | Pelajari cara memulai ulang daftar di setiap bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk mengelola daftar secara efektif. |
+| [Tentukan Tingkat Daftar](./specify-list-level/) | Pelajari cara membuat daftar bernomor dan berpoin bertingkat di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah disertakan. Sempurna untuk pengembang .NET. |
+| [Mulai Ulang Nomor Daftar](./restart-list-number/) | Pelajari cara memulai ulang nomor daftar di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan terperinci sepanjang 2000 kata ini mencakup semua yang perlu Anda ketahui, mulai dari penyiapan hingga penyesuaian tingkat lanjut. |

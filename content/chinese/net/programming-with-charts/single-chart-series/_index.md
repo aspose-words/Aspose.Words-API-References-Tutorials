@@ -96,7 +96,7 @@ series1.Marker.Size = 10;
 
 ## 步骤 8：保存文档
 
-最后，让我们保存文档。这里是欣赏我们作品的地方。
+最后，让我们保存我们的文档。这是我们欣赏我们的作品的地方。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");

@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", s
 
 ### Aspose.Words for .NET で別の暗号化アルゴリズムを使用できますか?
 
-はい、Aspose.Words for .NETはさまざまな暗号化アルゴリズムをサポートしています。暗号化設定は、`OoxmlSaveOptions`クラス。
+はい、Aspose.Words for .NETはさまざまな暗号化アルゴリズムをサポートしています。`OoxmlSaveOptions`クラス。
 
 ### DOCX ファイルから暗号化を削除することは可能ですか?
 

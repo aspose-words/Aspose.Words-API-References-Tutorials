@@ -16,7 +16,7 @@ Günümüzün dijital dünyasında otomasyon verimliliği artırmanın anahtarı
 Koda dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
 1. Visual Studio: Bilgisayarınızda Visual Studio'nun kurulu olması gerekmektedir.
-2.  Aspose.Words for .NET: Aspose.Words for .NET'i şu adresten indirip yükleyin:[İndirme: {link](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Aspose.Words for .NET'i şu adresten indirip yükleyin:[indirme bağlantısı](https://releases.aspose.com/words/net/).
 3. Temel C# Bilgisi: C# programlama diline aşina olmak faydalı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
@@ -82,7 +82,7 @@ Aspose.Words for .NET, Word belgelerini programlı olarak yönetmeyi inanılmaz 
 ## SSS'ler
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
- Aspose.Words for .NET'i şu adresten indirip yükleyebilirsiniz:[İndirme: {link](https://releases.aspose.com/words/net/).
+ Aspose.Words for .NET'i şu adresten indirip yükleyebilirsiniz:[indirme bağlantısı](https://releases.aspose.com/words/net/).
 
 ### Aspose.Words for .NET'i diğer .NET dilleriyle kullanabilir miyim?
 Evet, Aspose.Words for .NET, VB.NET ve F# dahil tüm .NET dillerini destekler.

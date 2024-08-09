@@ -75,7 +75,7 @@ Ebben az oktatóanyagban bemutattuk, hogyan lehet letiltani a sortöréseket egy
  Igen, letilthatja a sortöréseket adott soroknál, ha eléri a kívánt sort, és beállítja azt`AllowBreakAcrossPages`tulajdonát`false`.
 
 ### Működik ez a módszer egyesített cellákat tartalmazó táblázatoknál?  
- Igen, ez a módszer összevont cellákat tartalmazó táblázatoknál működik. A tulajdon`AllowBreakAcrossPages` a teljes sorra vonatkozik, függetlenül a cellaegyesítéstől.
+ Igen, ez a módszer összevont cellákat tartalmazó táblázatoknál működik. Az ingatlan`AllowBreakAcrossPages` a teljes sorra vonatkozik, függetlenül a cellaegyesítéstől.
 
 ### Működni fog ez a módszer, ha a tábla egy másik táblába van beágyazva?  
 Igen, a beágyazott táblákat ugyanúgy elérheti és módosíthatja. Győződjön meg róla, hogy megfelelően hivatkozik a beágyazott táblára annak indexe vagy egyéb tulajdonságai alapján.

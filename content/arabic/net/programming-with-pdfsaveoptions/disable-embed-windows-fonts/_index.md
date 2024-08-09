@@ -84,5 +84,5 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", sav
 ### هل أحتاج إلى Aspose.Words لـ .NET لتعطيل الخطوط المضمنة في ملفات PDF؟
 نعم، يوفر Aspose.Words for .NET الوظائف اللازمة لتكوين خيارات تضمين الخط في ملفات PDF.
 
-### كيف يمكنني الحصول على الدعم إذا واجهت مشكلات؟
+### كيف يمكنني الحصول على الدعم إذا واجهت مشاكل؟
  يمكنك زيارة[منتدى الدعم](https://forum.aspose.com/c/words/8) للمساعدة في أي مشاكل تواجهها.

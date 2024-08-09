@@ -40,7 +40,7 @@ Document doc = new Document(dataDir + "Unused styles.docx");
 
 ## 第 2 步：检查当前样式和列表
 
-在开始清理之前，最好先看看文档中目前有多少样式和列表。这将为我们在清理后提供比较的基准。
+在开始清理之前，最好先查看文档中当前有多少样式和列表。这将为我们在清理后提供比较的基准。
 
 ```csharp
 Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
@@ -90,7 +90,7 @@ doc.Save(dataDir + "CleanedDocument.docx");
 Aspose.Words for .NET 是一个功能强大的库，允许您使用 C# 以编程方式创建、修改和转换 Word 文档。
 
 ### 我可以同时删除未使用的样式和列表吗？
-是的，你可以同时设置`UnusedLists`和`UnusedStyles`到`true`在里面`CleanupOptions`删除两者。
+是的，你可以同时设置`UnusedLists`和`UnusedStyles`到`true`在`CleanupOptions`删除两者。
 
 ### 是否可以撤消清理？
 不可以，一旦清理完成并保存了文档，您就无法撤消更改。请始终保留原始文档的备份。

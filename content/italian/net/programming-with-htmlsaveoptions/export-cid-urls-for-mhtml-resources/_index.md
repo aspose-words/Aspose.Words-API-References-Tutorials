@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resources/
 ---
-## introduzione
+## Introduzione
 
 Sei pronto a padroneggiare l'arte di esportare URL Cid per risorse MHTML utilizzando Aspose.Words per .NET? Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida completa ti guiderà attraverso ogni passaggio. Alla fine di questo articolo avrai una comprensione cristallina di come gestire in modo efficiente le risorse MHTML nei tuoi documenti Word. Immergiamoci!
 
@@ -96,7 +96,7 @@ Congratulazioni! Hai esportato con successo gli URL Cid per le risorse MHTML uti
 L'esportazione degli URL Cid per le risorse MHTML garantisce che le risorse incorporate nel file MHTML siano referenziate correttamente, migliorando la portabilità e l'integrità del documento.
 
 ### Posso personalizzare ulteriormente il formato di output?
- Sì, Aspose.Words per .NET offre ampie opzioni di personalizzazione per il salvataggio dei documenti. Fare riferimento al[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ Sì, Aspose.Words per .NET offre ampie opzioni di personalizzazione per il salvataggio dei documenti. Fare riferimento al[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli
 
 ### Ho bisogno di una licenza per utilizzare Aspose.Words per .NET?
  Sì, è necessaria una licenza per utilizzare Aspose.Words per .NET. Puoi ottenere una prova gratuita[Qui](https://releases.aspose.com/) o acquistare una licenza[Qui](https://purchase.aspose.com/buy).

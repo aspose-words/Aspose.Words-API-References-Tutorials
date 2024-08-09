@@ -1,96 +1,99 @@
 ---
-title: Maddeli liste
-linktitle: Maddeli liste
+title: Madde İşaretli Liste
+linktitle: Madde İşaretli Liste
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile madde işaretli liste oluşturmayı öğrenin. Adım adım kılavuz.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde madde işaretli listeler oluşturmayı ve özelleştirmeyi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/bulleted-list/
 ---
+## giriiş
 
-Bu eğitimde size Aspose.Words for .NET ile madde işaretli listenin nasıl oluşturulacağını anlatacağız. Madde işaretli liste, öğeleri numaralandırma kullanılmadan listelemek için kullanılır.
+Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün, Word belgelerinizde madde işaretli bir liste oluşturmanın üzerinden geçeceğiz. İster fikirlerinizi düzenliyor, ister öğeleri listeliyor, ister yalnızca belgenize biraz yapı ekliyor olun, madde işaretli listeler son derece kullanışlıdır. Öyleyse başlayalım!
 
-## 1. Adım: Belge oluşturucuyu kullanma
+## Önkoşullar
 
-Öncelikle belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
+Kodlama eğlencesine geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Henüz sahip değilseniz, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi AC# geliştirme ortamı.
+3. Temel C# Bilgisi: C# programlamaya ilişkin temel bir anlayış, ilerlemenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bu, kodumuzun sorunsuz çalışması için gerekli ortamı hazırlamak gibidir.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Şimdi süreci kolay, yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+Tamam, yeni bir belge oluşturarak başlayalım. Burası tüm sihrin gerçekleşeceği yer.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Adım 2: Varsayılan Madde İşaretli Liste Uygulama
+## Adım 2: Madde İşaretli Liste Formatını Uygulayın
 
- Belge oluşturucuyu kullanarak varsayılan madde işaretli listeyi uygulayabiliriz.`ApplyBulletDefault` yöntem.
+Daha sonra madde işaretli liste formatını uygulayacağız. Bu, belgeye madde işaretli bir liste başlatmak üzere olduğumuzu bildirir.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## 3. Adım: Madde İşareti Formatını Özelleştirme
+## Adım 3: Madde İşareti Listesini Özelleştirin
 
- Özelliklerine erişerek madde işareti biçimini özelleştirebiliriz.`ListFormat.List.ListLevels[0]`. Bu örnekte, madde işareti olarak "-" çizgisini kullanıyoruz.
+Burada madde işareti listesini beğenimize göre özelleştireceğiz. Bu örnekte madde işareti olarak kısa çizgi (-) kullanacağız.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## 4. Adım: Listeye öğe ekleme
+## 4. Adım: Liste Öğelerini Ekleme
 
- Artık belge oluşturucuyu kullanarak madde işaretli listeye öğeler ekleyebiliriz.`Writeln` yöntem.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Adım 5: Girintiyi listeden kaldırma
-
- Bir alt liste oluşturmak istiyorsak girintiyi aşağıdaki komutu kullanarak artırabiliriz:`ListFormat.ListIndent()` yöntem. Bu örnekte 2a ve 2b öğelerine bir alt liste ekliyoruz.
+Şimdi madde işaretli listemize bazı öğeler ekleyelim. Burası yaratıcı olabileceğiniz ve ihtiyacınız olan içeriği ekleyebileceğiniz yerdir.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Aspose.Words for .NET kullanan Madde İşaretli Liste için örnek kaynak kodu
-
-
-```csharp
-// Belgeye içerik eklemek için belge oluşturucuyu kullanın.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Tebrikler! Artık Aspose.Words for .NET ile madde işaretli liste oluşturmayı öğrendiniz.
+## Adım 5: Alt Öğeleri Ekleyin
 
-### SSS'ler
+İşleri daha ilginç hale getirmek için "Öğe 2"nin altına bazı alt öğeler ekleyelim. Bu, alt noktaların düzenlenmesine yardımcı olur.
 
-#### S: Markdown'da madde işaretli liste nasıl oluşturulur?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Ana liste düzeyine dön
+```
 
-C: Markdown'da madde işaretli bir liste oluşturmak için her liste öğesine bir madde işareti simgesiyle başlayın (`-`, `*` , veya`+`), ardından bir boşluk gelir.
+## Çözüm
 
-#### S: Madde işaretli listeleri Markdown'da iç içe yerleştirebilir misiniz?
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde madde işaretli bir liste oluşturdunuz. Bu basit bir işlemdir ancak belgelerinizi düzenlemek için inanılmaz derecede güçlüdür. İster basit listeler, ister karmaşık iç içe geçmiş listeler oluşturuyor olun, Aspose.Words ihtiyacınızı karşılar.
 
-C: Evet, iç içe geçmiş her liste öğesinin önüne dört boşluk ekleyerek madde işaretli listeleri Markdown'da iç içe yerleştirmek mümkündür.
+İhtiyaçlarınıza uyacak farklı liste stillerini ve formatlarını denemekten çekinmeyin. Mutlu kodlama!
 
-#### S: Madde işareti sembolleri nasıl özelleştirilir?
+## SSS'ler
 
-C: Standart Markdown'da madde işareti sembolleri önceden tanımlanmıştır. Ancak bazı Markdown düzenleyicileri, bunları belirli uzantıları kullanarak özelleştirmenize olanak tanır.
+### Listede farklı madde işareti sembolleri kullanabilir miyim?
+    Evet, madde işareti simgelerini değiştirerek özelleştirebilirsiniz.`NumberFormat` mülk.
 
-#### S: Markdown'daki madde işaretli listeler girintiyi destekliyor mu?
+### Daha fazla girinti düzeyini nasıl eklerim?
+    Kullanın`ListIndent` daha fazla seviye ekleme yöntemi ve`ListOutdent` daha yüksek bir seviyeye geri dönmek için.
 
-C: Evet, Markdown'daki madde işaretli listeler girintiyi destekler. Boşlukları veya sekmeleri kullanarak sola kaydırma ekleyebilirsiniz.
+### Madde işareti ve numara listelerini karıştırmak mümkün mü?
+   Kesinlikle! kullanarak madde işareti ve sayı formatları arasında geçiş yapabilirsiniz.`ApplyNumberDefault`Ve`ApplyBulletDefault` yöntemler.
 
-#### S: Liste öğelerine bağlantılar veya satır içi metin eklenebilir mi?
+### Liste öğelerindeki metne stil uygulayabilir miyim?
+    Evet, liste öğeleri içindeki metne farklı stiller, yazı tipleri ve biçimlendirme uygulayabilirsiniz.`Font` mülkiyeti`DocumentBuilder`.
 
-C: Evet, uygun Markdown sözdizimini kullanarak liste öğelerine bağlantılar veya satır içi metin ekleyebilirsiniz.
+### Çok sütunlu madde işaretli listeyi nasıl oluşturabilirim?
+   Her hücrenin ayrı bir madde işaretli liste içerdiği çok sütunlu listeler oluşturmak için tablo biçimlendirmesini kullanabilirsiniz.

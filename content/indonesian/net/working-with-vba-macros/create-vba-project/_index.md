@@ -16,10 +16,10 @@ Hai, penggemar teknologi! Apakah Anda siap menjelajahi dunia VBA (Visual Basic f
 
 Sebelum kita mulai coding, pastikan Anda memiliki semua yang perlu Anda ikuti:
 
-1.  Perpustakaan Aspose.Words untuk .NET: Anda memerlukan versi terbaru Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Perpustakaan Aspose.Words untuk .NET: Anda memerlukan versi terbaru Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio akan sangat penting untuk menulis dan menguji kode Anda.
 3. Pengetahuan Dasar C#: Pemahaman dasar tentang C# akan sangat membantu saat kita menavigasi kode.
-4. Contoh Direktori Dokumen: Siapkan direktori tempat Anda akan menyimpan dokumen Word Anda. Ini adalah dimana keajaiban terjadi!
+4. Contoh Direktori Dokumen: Siapkan direktori tempat Anda akan menyimpan dokumen Word Anda. Di sinilah keajaiban terjadi!
 
 ## Impor Namespace
 

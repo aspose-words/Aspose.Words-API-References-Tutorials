@@ -14,7 +14,7 @@ Trong thời đại kỹ thuật số ngày nay, việc bảo mật các tài li
 
 ## 1. Bảo mật tài liệu là gì?
 
-Bảo mật tài liệu đề cập đến việc thực hành bảo vệ tài liệu kỹ thuật số khỏi sự truy cập, thay đổi hoặc phân phối trái phép. Nó bao gồm nhiều biện pháp khác nhau để bảo vệ thông tin nhạy cảm và đảm bảo rằng chỉ những cá nhân được ủy quyền mới có thể truy cập và sửa đổi nội dung. Bảo mật tài liệu đóng một vai trò quan trọng trong việc duy trì tính bảo mật, tính toàn vẹn và tính sẵn sàng của dữ liệu.
+Bảo mật tài liệu đề cập đến việc thực hành bảo vệ tài liệu kỹ thuật số khỏi bị truy cập, thay đổi hoặc phân phối trái phép. Nó bao gồm nhiều biện pháp khác nhau để bảo vệ thông tin nhạy cảm và đảm bảo rằng chỉ những cá nhân được ủy quyền mới có thể truy cập và sửa đổi nội dung. Bảo mật tài liệu đóng một vai trò quan trọng trong việc duy trì tính bảo mật, tính toàn vẹn và tính sẵn sàng của dữ liệu.
 
 ## 2. Hiểu tầm quan trọng của việc bảo mật tài liệu
 

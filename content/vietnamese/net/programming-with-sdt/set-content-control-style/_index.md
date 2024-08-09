@@ -9,7 +9,7 @@ url: /vi/net/programming-with-sdt/set-content-control-style/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ muốn làm nổi bật tài liệu Word của mình bằng một số kiểu tùy chỉnh nhưng lại thấy mình bị vướng vào các vấn đề kỹ thuật? Vâng, bạn thật may mắn! Hôm nay, chúng ta sẽ đi sâu vào thế giới thiết lập các kiểu kiểm soát nội dung bằng Aspose.Words cho .NET. Việc này dễ dàng hơn bạn nghĩ và khi kết thúc hướng dẫn này, bạn sẽ tạo kiểu cho tài liệu của mình như một người chuyên nghiệp. Chúng tôi sẽ hướng dẫn bạn từng bước một để đảm bảo bạn hiểu từng phần của quy trình. Bạn đã sẵn sàng chuyển đổi tài liệu Word của mình chưa? Bắt đầu nào!
+Bạn đã bao giờ muốn làm nổi bật tài liệu Word của mình bằng một số kiểu tùy chỉnh nhưng lại thấy mình bị vướng vào các vấn đề kỹ thuật? Vâng, bạn thật may mắn! Hôm nay, chúng ta sẽ đi sâu vào thế giới thiết lập các kiểu kiểm soát nội dung bằng Aspose.Words cho .NET. Việc này dễ dàng hơn bạn nghĩ và khi kết thúc hướng dẫn này, bạn sẽ tạo kiểu cho tài liệu của mình như một người chuyên nghiệp. Chúng tôi sẽ hướng dẫn bạn từng bước một để đảm bảo bạn hiểu từng phần của quy trình. Bạn đã sẵn sàng chuyển đổi tài liệu Word của mình chưa? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
- Các`Styles` tài sản của`Document` class cho phép chúng ta truy cập vào tất cả các kiểu có sẵn trong tài liệu. Chúng tôi sử dụng`StyleIdentifier.Quote`để chọn kiểu trích dẫn.
+ các`Styles` tài sản của`Document` class cho phép chúng ta truy cập vào tất cả các kiểu có sẵn trong tài liệu. Chúng tôi sử dụng`StyleIdentifier.Quote`để chọn kiểu trích dẫn.
 
 ## Bước 4: Áp dụng Kiểu cho Thẻ tài liệu có cấu trúc
 
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách đặt kiểu kiểm soát nội dung trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể dễ dàng tùy chỉnh giao diện tài liệu Word của mình, khiến chúng trở nên hấp dẫn và chuyên nghiệp hơn. Tiếp tục thử nghiệm các phong cách và thành phần tài liệu khác nhau để phát huy hoàn toàn sức mạnh của Aspose.Words.
+Và bạn có nó! Bạn vừa học cách đặt kiểu kiểm soát nội dung trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể dễ dàng tùy chỉnh giao diện tài liệu Word của mình, khiến chúng trở nên hấp dẫn và chuyên nghiệp hơn. Tiếp tục thử nghiệm các phong cách và thành phần tài liệu khác nhau để phát huy hoàn toàn sức mạnh của Aspose.Words.
 
 ## Câu hỏi thường gặp
 

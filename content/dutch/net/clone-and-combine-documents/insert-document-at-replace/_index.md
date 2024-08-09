@@ -164,4 +164,4 @@ Ja, u kunt de callback-handler aanpassen om meerdere invoegingen af te handelen 
  kunt ondersteuning krijgen door naar de[Aspose.Words-forum](https://forum.aspose.com/c/words/8).
 
 ### Kan ik de opmaak van het ingevoegde document behouden?
- Ja de`NodeImporter` Met class kunt u opgeven hoe de opmaak wordt afgehandeld bij het importeren van knooppunten van het ene document naar het andere.
+ Ja, de`NodeImporter` Met class kunt u opgeven hoe de opmaak wordt afgehandeld bij het importeren van knooppunten van het ene document naar het andere.

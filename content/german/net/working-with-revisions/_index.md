@@ -16,12 +16,12 @@ Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials helfen I
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Änderungen akzeptieren](./accept-revisions/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Revisionen an einem Word-Dokument akzeptieren. |
-| [Holen Sie sich Revisionsarten von Wörtern](./get-revision-types/) | Holen Sie sich mit Aspose.Words für .NET Revisionstypen von Wörtern in einem Word-Dokument. |
-| [Revisionsgruppen abrufen](./get-revision-groups/) | Erhalten Sie mit Aspose.Words für .NET Revisionsgruppendetails in einem Word-Dokument. |
-| [Kommentare in PDF-Datei entfernen](./remove-comments-in-pdf/) | Entfernen Sie Kommentare in einer PDF-Datei mit Aspose.Words für .NET. |
-| [Revisionen in Sprechblasen anzeigen](./show-revisions-in-balloons/) | Zeigen Sie Revisionen in Sprechblasen mit Aspose.Words für .NET an. |
-| [Revisionsgruppendetails abrufen](./get-revision-group-details/) | Erhalten Sie mit Aspose.Words für .NET Revisionsgruppendetails in einem Word-Dokument. |
-| [Zugriff auf überarbeitete Version](./access-revised-version/) | Greifen Sie mit Aspose.Words für .NET auf eine überarbeitete Version eines Word-Dokuments zu. |
-| [Knoten im verfolgten Dokument verschieben](./move-node-in-tracked-document/) | Verschieben Sie Knoten in einem verfolgten Dokument mit Aspose.Words für .NET. |
-| [Formrevision](./shape-revision/) | Überarbeiten Sie Formen in einem Word-Dokument mit Aspose.Words für .NET. |
+| [Änderungen akzeptieren](./accept-revisions/) | Meistern Sie Dokumentrevisionen mit Aspose.Words für .NET. Lernen Sie, Änderungen mühelos zu verfolgen, anzunehmen und abzulehnen. Verbessern Sie Ihre Fähigkeiten im Dokumentenmanagement. |
+| [Holen Sie sich Revisionsarten von Wörtern](./get-revision-types/) |Erfahren Sie, wie Sie mit Aspose.Words für .NET Revisionstypen von Wörtern in einem Word-Dokument erhalten. Diese Schritt-für-Schritt-Anleitung hilft Ihnen, Dokumentrevisionen effizient durchzuführen. |
+| [Revisionsgruppen abrufen](./get-revision-groups/) | Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Revisionsgruppen aus Word-Dokumenten abrufen. Perfekt für die Dokumentenverwaltung. |
+| [Kommentare in PDF-Datei entfernen](./remove-comments-in-pdf/) | Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Kommentare aus einer PDF-Datei entfernen. |
+| [Revisionen in Sprechblasen anzeigen](./show-revisions-in-balloons/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Revisionen in Sprechblasen anzeigen. Diese ausführliche Anleitung führt Sie durch jeden Schritt und stellt sicher, dass Ihre Dokumentänderungen klar und organisiert sind. |
+| [Revisionsgruppendetails abrufen](./get-revision-group-details/) | Mit dieser Schritt-für-Schritt-Anleitung erhalten Sie mit Aspose.Words für .NET ganz einfach Revisionsgruppendetails in Word-Dokumenten. Perfekt für .NET-Entwickler. |
+| [Zugriff auf überarbeitete Version](./access-revised-version/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET auf die überarbeitete Version eines Dokuments zugreifen und diese anzeigen. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentenverwaltung. |
+| [Knoten im verfolgten Dokument verschieben](./move-node-in-tracked-document/) | Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Knoten in einem verfolgten Word-Dokument verschieben. Perfekt für Entwickler. |
+| [Formrevision](./shape-revision/) | Erfahren Sie in diesem umfassenden Handbuch, wie Sie mit Aspose.Words für .NET Formrevisionen in Word-Dokumenten handhaben. Meistern Sie das Verfolgen von Änderungen, das Einfügen von Formen und mehr. |

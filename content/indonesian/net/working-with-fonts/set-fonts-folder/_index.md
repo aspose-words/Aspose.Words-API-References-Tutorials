@@ -2,75 +2,99 @@
 title: Atur Folder Font
 linktitle: Atur Folder Font
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur direktori font di Aspose.Words untuk .NET dan memastikan ketersediaan font yang digunakan dalam dokumen Anda.
+description: Pelajari cara mengatur folder font khusus di Aspose.Words untuk .NET untuk memastikan dokumen Word Anda dirender dengan benar tanpa kehilangan font.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/set-fonts-folder/
 ---
-Dalam tutorial ini, kami akan menunjukkan cara mengatur direktori font di Aspose.Words untuk .NET. Anda akan belajar cara menentukan direktori yang berisi font yang digunakan dalam dokumen Word Anda.
+## Perkenalan
+
+Pernahkah Anda menghadapi masalah dengan font yang hilang saat bekerja dengan dokumen Word di aplikasi .NET Anda? Ya, kamu tidak sendirian. Mengatur folder font yang benar dapat mengatasi masalah ini dengan mulus. Dalam panduan ini, kami akan memandu Anda tentang cara mengatur folder font menggunakan Aspose.Words untuk .NET. Ayo selami!
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
 
-## Langkah 1: Tentukan direktori dokumen
-Mulailah dengan mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
+
+- Visual Studio diinstal pada mesin Anda
+- Pengaturan .NET Framework
+-  Aspose.Words untuk perpustakaan .NET. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+
+## Impor Namespace
+
+Pertama, Anda perlu mengimpor namespace yang diperlukan untuk bekerja dengan Aspose.Words. Tambahkan baris berikut di bagian atas file kode Anda:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Langkah 2: Atur direktori font
- Buat sebuah instance dari`FontSettings` kelas dan gunakan`SetFontsFolder` metode untuk menentukan direktori yang berisi font. Mengganti`"Fonts"` dengan nama direktori font sebenarnya.
+Menyiapkan folder font sangatlah mudah jika Anda mengikuti langkah-langkah ini dengan cermat.
+
+## Langkah 1: Tentukan Direktori Dokumen
+
+Sebelum melakukan hal lain, tentukan jalur ke direktori dokumen Anda. Direktori ini akan berisi dokumen Word Anda dan font yang ingin Anda gunakan.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## Langkah 3: Muat dokumen dengan pengaturan font
- Menggunakan`LoadOptions` kelas untuk menentukan pengaturan font di`FontSettings` pilihan. Kemudian gunakan`Document` kelas untuk memuat dokumen menggunakan opsi ini.
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Contoh kode sumber untuk Mengatur Folder Font menggunakan Aspose.Words untuk .NET 
-
-```csharp
-
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+ Pastikan untuk mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori Anda.
+
+## Langkah 2: Inisialisasi Pengaturan Font
+
+ Sekarang, Anda perlu menginisialisasi`FontSettings` obyek. Objek ini memungkinkan Anda menentukan folder font khusus.
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Langkah 3: Atur Folder Font
+
+ Menggunakan`SetFontsFolder` metode`FontSettings` objek, tentukan folder tempat font khusus Anda disimpan.
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ Di Sini,`dataDir + "Fonts"` menunjuk ke folder bernama "Font" di dalam direktori dokumen Anda. Parameter kedua,`false`, menunjukkan bahwa folder tersebut tidak rekursif.
+
+## Langkah 4: Buat LoadOptions
+
+ Selanjutnya, buat sebuah instance dari`LoadOptions` kelas. Kelas ini akan membantu Anda memuat dokumen dengan pengaturan font yang ditentukan.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## Langkah 5: Muat Dokumen
+
+ Terakhir, muat dokumen Word menggunakan`Document` kelas dan`LoadOptions` obyek.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+ Pastikan itu`"Rendering.docx"` adalah nama dokumen Word Anda. Anda dapat menggantinya dengan nama file Anda.
+
 ## Kesimpulan
-Selamat! Anda sekarang tahu cara mengatur direktori font di Aspose.Words untuk .NET. Anda dapat menggunakan fitur ini untuk memastikan ketersediaan font yang digunakan dalam dokumen Anda dan untuk memastikan konsistensi dalam tampilan font.
 
-### FAQ
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengatur folder font kustom di Aspose.Words untuk .NET, memastikan bahwa semua font Anda dirender dengan benar. Penyiapan sederhana ini dapat menghemat banyak kerumitan dan membuat dokumen Anda terlihat persis seperti yang Anda inginkan.
 
-#### T: Bagaimana cara mengatur folder font khusus di Aspose.Words?
+## FAQ
 
- A: Untuk mengatur folder font khusus di Aspose.Words, Anda dapat menggunakan`FontsFolder` kelas dan`SetFontsFolders` metode yang menentukan jalur ke folder yang berisi font Anda.
+### Mengapa saya perlu mengatur folder font khusus?
+Menyetel folder font khusus memastikan bahwa semua font yang digunakan dalam dokumen Word Anda dirender dengan benar, menghindari masalah font yang hilang.
 
-#### T: Bisakah saya mengatur beberapa folder font di Aspose.Words?
+### Bisakah saya mengatur beberapa folder font?
+ Ya, Anda dapat menggunakan`SetFontsFolders` metode untuk menentukan beberapa folder.
 
- A: Ya, Anda dapat mengatur beberapa folder font di Aspose.Words dengan memanggil`SetFontsFolders` metode beberapa kali dengan jalur folder font berbeda yang ingin Anda gunakan.
+### Apa yang terjadi jika font tidak ditemukan?
+Aspose.Words akan mencoba mengganti font yang hilang dengan font serupa dari font sistem.
 
-#### T: Apa yang terjadi jika font yang digunakan dalam dokumen tidak ada dalam folder font yang ditentukan?
+### Apakah Aspose.Words kompatibel dengan .NET Core?
+Ya, Aspose.Words mendukung .NET Core bersama dengan .NET Framework.
 
-J: Jika font yang digunakan dalam dokumen tidak ada dalam folder font yang ditentukan di Aspose.Words, font pengganti akan digunakan. Hal ini memastikan bahwa teks dalam dokumen akan selalu ditampilkan dengan benar, meskipun font aslinya tidak tersedia.
-
-#### T: Apakah folder font yang ditentukan di Aspose.Words memiliki prioritas dibandingkan font yang diinstal pada sistem?
-
-J: Ya, folder font yang ditentukan di Aspose.Words lebih diutamakan daripada font yang diinstal pada sistem. Artinya, jika font dengan nama yang sama ada di folder font yang ditentukan dan di font sistem, versi di folder font tersebut akan digunakan saat memproses dokumen Word.
+### Di mana saya bisa mendapatkan dukungan jika saya menghadapi masalah?
+ Anda bisa mendapatkan dukungan dari[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).

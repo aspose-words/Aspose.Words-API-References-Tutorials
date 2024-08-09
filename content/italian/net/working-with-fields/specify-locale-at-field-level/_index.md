@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/specify-locale-at-field-level/
 ---
-## introduzione
+## Introduzione
 
 Sei pronto per tuffarti nel mondo di Aspose.Words per .NET? Oggi esploreremo come specificare la locale a livello di campo. Questa pratica funzionalità è particolarmente utile quando hai bisogno che i tuoi documenti aderiscano a formati culturali o regionali specifici. Immagina di dare al tuo documento un passaporto che gli dice come comportarsi in base al luogo in cui si sta "visitando". Alla fine di questo tutorial sarai in grado di personalizzare facilmente le impostazioni locali per i campi nei tuoi documenti Word. Iniziamo!
 
@@ -77,7 +77,7 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.doc
 
 ## Conclusione
 
-E il gioco è fatto! Hai specificato con successo la locale per un campo nel tuo documento Word utilizzando Aspose.Words per .NET. Questa potente funzionalità ti consente di personalizzare i tuoi documenti per soddisfare specifici requisiti culturali e regionali, rendendo le tue applicazioni più versatili e facili da usare. Buona programmazione!
+Ed ecco qua! Hai specificato con successo la locale per un campo nel tuo documento Word utilizzando Aspose.Words per .NET. Questa potente funzionalità ti consente di personalizzare i tuoi documenti per soddisfare specifici requisiti culturali e regionali, rendendo le tue applicazioni più versatili e facili da usare. Buona programmazione!
 
 ## Domande frequenti
 

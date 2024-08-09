@@ -137,7 +137,7 @@ Este código guarda el documento con la tabla insertada.
  Puede descargar Aspose.Words para .NET desde el[pagina de descarga](https://releases.aspose.com/words/net/).
 
 ### ¿Puedo probar Aspose.Words para .NET antes de comprarlo?
- Sí, puedes solicitar un[prueba gratis](https://releases.aspose.com/) evaluar la biblioteca antes de comprarla.
+ Sí, puedes solicitar un[prueba gratuita](https://releases.aspose.com/) evaluar la biblioteca antes de comprarla.
 
 ### ¿Cómo compro Aspose.Words para .NET?
 Puede comprar Aspose.Words para .NET desde[pagina de compra](https://purchase.aspose.com/buy).

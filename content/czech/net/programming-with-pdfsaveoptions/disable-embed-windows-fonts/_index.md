@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
-## Úvod
+## Zavedení
 
 Zmenšení velikosti souborů PDF může být zásadní pro efektivní ukládání a rychlé sdílení. Jedním z účinných způsobů, jak toho dosáhnout, je zakázat vložená písma, zvláště když jsou standardní písma již k dispozici na většině systémů. V tomto tutoriálu prozkoumáme, jak zmenšit velikost PDF deaktivací vložených písem pomocí Aspose.Words for .NET. Projdeme si každý krok, abychom se ujistili, že to můžete snadno implementovat do svých vlastních projektů.
 
@@ -32,7 +32,7 @@ Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky. Každý 
 
 ## Krok 1: Inicializujte svůj dokument
 
-Nejprve musíme načíst dokument aplikace Word, který chcete převést do formátu PDF. Tady začíná vaše cesta.
+Nejprve musíme načíst dokument aplikace Word, který chcete převést do formátu PDF. Tady vaše cesta začíná.
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Tady,`dataDir` je zástupný symbol pro adresář, kde je umístěn váš dokument. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou.
+ Zde,`dataDir` je zástupný symbol pro adresář, kde je umístěn váš dokument. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou.
 
 ## Krok 2: Nakonfigurujte možnosti uložení PDF
 

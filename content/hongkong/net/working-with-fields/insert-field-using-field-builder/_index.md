@@ -55,7 +55,7 @@ Document doc = new Document();
 FieldBuilder 是這裡的關鍵角色。它允許我們動態建構字段。
 
 ```csharp
-//使用 FieldBuilder 建構 IF 欄位。
+//使用 FieldBuilder 建立 IF 欄位。
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
     .AddArgument("left expression")
     .AddArgument("=")
@@ -95,7 +95,7 @@ field.Update();
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將欄位插入 Word 文件中。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將欄位插入 Word 文件中。
 
 ## 結論
 

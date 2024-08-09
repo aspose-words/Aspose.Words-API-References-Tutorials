@@ -15,8 +15,8 @@ Aspose.Words for .NET 教程“使用 OLE 和 ActiveX 对象进行文字处理�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [在 Word 文档中插入 Ole 对象](./insert-ole-object/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入 OLE 对象。 |
-| [使用 Ole 包在 Word 中插入 Ole 对象](./insert-ole-object-with-ole-package/) | 了解如何使用 Aspose.Words for .NET 将带有 OLE 包的 OLE 对象插入到文档中。 |
-| [在 Word 文档中将 Ole 对象作为图标插入](./insert-ole-object-as-icon/) | 了解如何使用 Aspose.Words for .NET 将 OLE 对象作为图标插入到 Word 文档中。 |
-| [使用流插入 Ole 对象作为图标](./insert-ole-object-as-icon-using-stream/) | 了解如何使用 Aspose.Words for .NET 的流将 OLE 对象作为图标插入。 |
-| [从 Word 文件读取 Active XControl 属性](./read-active-xcontrol-properties/) | 使用 Aspose.Words for .NET 读取 Word 文件中 ActiveX 控件的属性。 |
+| [在 Word 文档中插入 Ole 对象](./insert-ole-object/) | 通过本分步指南学习如何使用 Aspose.Words for .NET 在 Word 文档中插入 OLE 对象。使用嵌入内容增强您的文档。 |
+| [使用 Ole 包在 Word 中插入 Ole 对象](./insert-ole-object-with-ole-package/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入 OLE 对象。按照我们详细的分步指南无缝嵌入文件。 |
+| [在 Word 文档中将 Ole 对象作为图标插入](./insert-ole-object-as-icon/) | 了解如何使用 Aspose.Words for .NET 将 OLE 对象作为图标插入 Word 文档中。按照我们的分步指南来增强您的文档。 |
+| [使用流插入 Ole 对象作为图标](./insert-ole-object-as-icon-using-stream/) | 在本详细的分步教程中学习如何使用 Aspose.Words for .NET 的流将 OLE 对象作为图标插入。 |
+| [从 Word 文件读取 Active XControl 属性](./read-active-xcontrol-properties/) | 通过分步指南了解如何使用 Aspose.Words for .NET 从 Word 文件中读取 ActiveX 控件属性。增强您的文档自动化技能。 |

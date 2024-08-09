@@ -8,15 +8,15 @@ weight: 10
 url: /cs/net/find-and-replace-text/replace-with-string/
 ---
 
-## Úvod
+## Zavedení
 
-Nazdárek! Přistihli jste se někdy po kolena v dokumentu aplikace Word a potřebovali jste nahradit určitá slova nebo fráze? Nejsi sám. Ať už se jedná o aktualizaci podmínek, opravu chyb nebo jednoduše zpestření obsahu, vědět, jak efektivně najít a nahradit text v dokumentu, je zásadní. Dnes se ponoříme do nádherného světa Aspose.Words pro .NET, abychom vám ukázali, jak nahradit řetězce ve vašich dokumentech Word jako profesionál.
+Ahoj! Přistihli jste se někdy po kolena v dokumentu aplikace Word a potřebovali jste nahradit určitá slova nebo fráze? Nejsi sám. Ať už se jedná o aktualizaci podmínek, opravu chyb nebo jednoduše zpestření obsahu, vědět, jak efektivně najít a nahradit text v dokumentu, je zásadní. Dnes se ponoříme do nádherného světa Aspose.Words pro .NET, abychom vám ukázali, jak nahradit řetězce ve vašich dokumentech Word jako profesionál.
 
 ## Předpoklady
 
 Než si ušpiníme ruce kódem, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Stáhněte si nejnovější verzi[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Stáhněte si nejnovější verzi[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli C# IDE.
 3. Základní znalost C#: Určitá znalost C# bude užitečná.
 
@@ -51,7 +51,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tady,`Document` představuje dokument aplikace Word, se kterým budeme pracovat, a`DocumentBuilder` je náš nástroj k jeho úpravě.
+ Zde,`Document` představuje dokument aplikace Word, se kterým budeme pracovat, a`DocumentBuilder` je náš nástroj k jeho úpravě.
 
 ## Krok 3: Přidejte počáteční obsah
 

@@ -8,15 +8,15 @@ weight: 10
 url: /cs/net/working-with-section/clone-section/
 ---
 
-## Úvod
+## Zavedení
 
-Ahoj, kolegové kodéři! 🚀 Už jste se někdy ocitli po kolena v projektu dokumentu Word a přáli si, abyste mohli jen naklonovat sekci, než abyste předělávali všechnu tu tvrdou práci? No, hádejte co? S Aspose.Words for .NET můžete snadno klonovat sekce ve svých dokumentech aplikace Word. Tento tutoriál vás provede procesem krok za krokem, takže replikace sekcí ve vašich dokumentech bude hračkou. Pojďme se tedy ponořit a usnadnit si práci s dokumenty mnohem jednodušší!
+Ahoj, kolegové kodéři! 🚀 Už jste se někdy ocitli po kolena v projektu dokumentu Word a přáli si, abyste mohli jen naklonovat sekci, než abyste předělávali všechnu tu tvrdou práci? Hádej co? S Aspose.Words for .NET můžete snadno klonovat sekce ve svých dokumentech aplikace Word. Tento tutoriál vás provede procesem krok za krokem, takže replikace sekcí ve vašich dokumentech bude hračkou. Pojďme se tedy ponořit a usnadnit si práci s dokumenty mnohem jednodušší!
 
 ## Předpoklady
 
 Než si ušpiníme ruce kódem, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Získejte nejnovější verzi z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Získejte nejnovější verzi z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE kompatibilní s .NET, jako je Visual Studio.
 3. Základní znalost C#: Znalost základů C# vám pomůže hladce pokračovat.
 4. Ukázkový dokument Word: K demonstraci procesu klonování použijeme ukázkový dokument.
@@ -97,7 +97,7 @@ Pojďme si příklad rozebrat do podrobného průvodce krok za krokem, abychom z
 
 Než se ponoříte do kódu, ujistěte se, že máte nainstalovanou knihovnu Aspose.Words a připravený vzorový dokument aplikace Word.
 
-1.  Stáhněte a nainstalujte Aspose.Words: Get it[tady](https://releases.aspose.com/words/net/).
+1.  Stáhněte a nainstalujte Aspose.Words: Get it[zde](https://releases.aspose.com/words/net/).
 2. Nastavení projektu: Otevřete Visual Studio a vytvořte nový projekt .NET.
 3. Přidat referenci Aspose.Words: Zahrňte do projektu knihovnu Aspose.Words.
 
@@ -160,4 +160,4 @@ Ano, Aspose.Words podporuje různé formáty Wordu, včetně DOC, DOCX, RTF a da
 
 ### Kde najdu další zdroje na Aspose.Words?
 
- Pro více informací můžete navštívit[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo[Fórum podpory](https://forum.aspose.com/c/words/8) za pomoc a diskusi.
+ Pro více informací můžete navštívit[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo[fórum podpory](https://forum.aspose.com/c/words/8) za pomoc a diskusi.

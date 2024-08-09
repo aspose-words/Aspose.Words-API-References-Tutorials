@@ -2,119 +2,137 @@
 title: Zugriff auf überarbeitete Version
 linktitle: Zugriff auf überarbeitete Version
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Greifen Sie mit Aspose.Words für .NET auf eine überarbeitete Version eines Word-Dokuments zu.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET auf die überarbeitete Version eines Dokuments zugreifen und diese anzeigen. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentenverwaltung.
 type: docs
 weight: 10
 url: /de/net/working-with-revisions/access-revised-version/
 ---
+## Einführung
 
-In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET auf die überarbeitete Version eines Word-Dokuments zugreifen. Wir stellen Ihnen den vollständigen Quellcode zur Verfügung und zeigen Ihnen, wie Sie die Markdown-Ausgabe formatieren.
+Mussten Sie schon einmal programmgesteuert auf die überarbeitete Version eines Dokuments zugreifen? Egal, ob Sie an Gemeinschaftsprojekten arbeiten oder einfach nur Dokumentrevisionen verwalten müssen, Aspose.Words für .NET ist Ihr Tool der Wahl. Dieses Tutorial führt Sie durch den gesamten Prozess, vom Einrichten Ihrer Umgebung bis zum Zugriff auf und Anzeigen von Revisionen in einem Word-Dokument. Also, legen wir gleich los!
 
-## Schritt 1: Dokument einlegen
+## Voraussetzungen
 
-Der erste Schritt besteht darin, das Dokument mit den Revisionen hochzuladen.
+Bevor wir beginnen, benötigen Sie einige Dinge:
+
+1.  Aspose.Words für .NET-Bibliothek: Sie können sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Visual Studio oder jede andere IDE, die .NET unterstützt.
+3. Grundkenntnisse in C#: Dies wird Ihnen helfen, dem Codierungsteil zu folgen.
+
+Stellen Sie sicher, dass diese Voraussetzungen erfüllt sind, bevor Sie mit den nächsten Schritten fortfahren.
+
+## Namespaces importieren
+
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Dies ist ein entscheidender Schritt, um sicherzustellen, dass Ihr Code die Aspose.Words-Bibliothek für .NET erkennt.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Lassen Sie uns den Prozess in einfache, leicht zu befolgende Schritte unterteilen.
+
+## Schritt 1: Einrichten des Dokumentpfads
+
+Bevor Sie mit dem Dokument arbeiten können, müssen Sie den Pfad angeben, in dem sich Ihr Dokument befindet. Dies ist wichtig, damit der Code die Datei finden und bearbeiten kann.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Schritt 2: Laden des Dokuments
+
+ Als nächstes laden Sie das Dokument in Ihre Anwendung. In diesem Schritt erstellen Sie ein neues`Document` Objekt und initialisieren Sie es mit dem Pfad zu Ihrem Dokument.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## Schritt 3: Aktualisieren der Listenbeschriftungen
+
+Wenn Ihr Dokument Listen enthält, ist es wichtig, die Listenbeschriftungen zu aktualisieren. Dadurch wird sichergestellt, dass alle Listenelemente richtig nummeriert und formatiert sind.
+
+```csharp
 doc.UpdateListLabels();
 ```
 
-## Schritt 2: Zugriff auf die überarbeitete Version
+## Schritt 4: Umstellung auf die überarbeitete Version
 
-Wir kommen nun zur überarbeiteten Version des Dokuments.
-
-```csharp
-doc.RevisionsView = RevisionsView.Final;
-```
-
-## Schritt 3: Revisionen durchsuchen
-
-Als Nächstes durchlaufen wir alle im Dokument vorhandenen Revisionen und zeigen spezifische Informationen für Absätze an, bei denen es sich um Listenelemente handelt.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-     if (revision.ParentNode.NodeType == NodeType.Paragraph)
-     {
-         Paragraph paragraph = (Paragraph)revision.ParentNode;
-         if (paragraph.IsListItem)
-         {
-             Console.WriteLine(paragraph.ListLabel.LabelString);
-             Console.WriteLine(paragraph.ListFormat.ListLevel);
-         }
-     }
-}
-```
-
-### Beispielquellcode für Access Revised Version mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode für den Zugriff auf die überarbeitete Version eines Dokuments mit Aspose.Words für .NET:
-
-```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-doc.UpdateListLabels();
-
-// Wechseln Sie zur überarbeiteten Version des Dokuments.
-doc.RevisionsView = RevisionsView.Final;
-
-foreach (Revision revision in doc.Revisions)
-{
-	 if (revision.ParentNode.NodeType == NodeType.Paragraph)
-	 {
-		 Paragraph paragraph = (Paragraph)revision.ParentNode;
-		 if (paragraph.IsListItem)
-		 {
-			 Console.WriteLine(paragraph.ListLabel.LabelString);
-			 Console.WriteLine(paragraph.ListFormat.ListLevel);
-		 }
-	 }
-}
-```
-
-## Abschluss
-
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET auf die überarbeitete Version eines Word-Dokuments zugreift. Indem wir das Dokument geladen, zur überarbeiteten Version navigiert und die Überarbeitungen durchsucht haben, konnten wir spezifische Informationen zu Absätzen abrufen, die Listenelemente sind. Aspose.Words für .NET bietet leistungsstarke Funktionen zum Bearbeiten von Word-Dokumenten, einschließlich des Zugriffs auf Überarbeitungen. Dieses Wissen können Sie nun nutzen, um mit Aspose.Words für .NET auf die überarbeitete Version Ihrer eigenen Word-Dokumente zuzugreifen.
-
-### Häufig gestellte Fragen
-
-#### F: Wie lade ich ein Dokument mit Revisionen in Aspose.Words für .NET?
-
- A: Verwenden Sie die`Document` Klasse von Aspose.Words für .NET, um ein Dokument aus einer Datei mit Revisionen zu laden. Sie können den vollständigen Dokumentpfad angeben.
-
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
-
-#### F: Wie greife ich in Aspose.Words für .NET auf die überarbeitete Version eines Dokuments zu?
-
- A: Verwenden Sie die`RevisionsView` Eigentum der`Document` Objekt, um auf die überarbeitete Version des Dokuments zuzugreifen. Sie können den Wert des`RevisionsView`Eigentum an`RevisionsView.Final` um die endgültige Version ohne die Überarbeitungen anzuzeigen.
+Wechseln wir nun zur überarbeiteten Version des Dokuments. Dieser Schritt ist wichtig, wenn Sie auf die Überarbeitungen zugreifen und diese anzeigen möchten.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
 ```
 
-#### F: Wie durchsuche ich Dokumentrevisionen in Aspose.Words für .NET?
+## Schritt 5: Durch Revisionen iterieren
 
-A: Verwenden Sie ein`foreach` Schleife, um durch die im Dokument vorhandenen Revisionen zu iterieren. Sie können die`Revisions` Eigentum der`Document` Objekt, um eine Sammlung aller Revisionen des Dokuments zu erhalten.
+ Um auf die Revisionen zuzugreifen, müssen Sie die`Revisions` Sammlung des Dokuments. Dieser Schritt beinhaltet die Verwendung eines`foreach` Schleife, um jede Revision durchzugehen.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     // Bearbeiten Sie hier jede Revision
+    // Hier kommt zusätzlicher Code rein
 }
 ```
 
-#### F: Wie kann ich in Aspose.Words für .NET überprüfen, ob ein Absatz ein Listenelement ist?
+## Schritt 6: Überprüfen des übergeordneten Knotentyps
 
- A: Verwenden Sie die`IsListItem` Eigentum der`Paragraph` Objekt, um zu prüfen, ob ein Absatz ein Listenelement ist. Das`IsListItem` Immobilienrenditen`true` wenn der Absatz ein Listenelement ist, andernfalls wird zurückgegeben`false`.
+ Überprüfen Sie bei jeder Revision, ob der übergeordnete Knoten vom Typ ist`Paragraph`. Dies ist wichtig, da wir auf den Absatz zugreifen möchten, der die Revision enthält.
+
+```csharp
+if (revision.ParentNode.NodeType == NodeType.Paragraph)
+{
+    // Hier kommt zusätzlicher Code rein
+}
+```
+
+## Schritt 7: Zugriff auf den Absatz
+
+ Sobald Sie bestätigt haben, dass der übergeordnete Knoten ein Absatz ist, konvertieren Sie ihn in einen`Paragraph` Objekt. In diesem Schritt können Sie mit dem Absatz und seinen Eigenschaften arbeiten.
+
+```csharp
+Paragraph paragraph = (Paragraph)revision.ParentNode;
+```
+
+## Schritt 8: Überprüfen, ob der Absatz ein Listenelement ist
+
+Überprüfen Sie als Nächstes, ob der Absatz ein Listenelement ist. Dies ist wichtig, da Listenelemente bestimmte Eigenschaften haben, auf die wir zugreifen müssen.
 
 ```csharp
 if (paragraph.IsListItem)
 {
-     // Der Absatz ist ein Listenelement
-}
-else
-{
-     // Der Absatz ist kein Listenelement
+    // Hier kommt zusätzlicher Code rein
 }
 ```
+
+## Schritt 9: Anzeigen der Listenbezeichnung und -ebene
+
+Zeigen Sie abschließend die Listenbeschriftung und die Listenebene des Absatzes an. Dieser Schritt liefert nützliche Informationen zum Listenelement, beispielsweise dessen Nummerierung und Einrückungsebene.
+
+```csharp
+Console.WriteLine(paragraph.ListLabel.LabelString);
+Console.WriteLine(paragraph.ListFormat.ListLevel);
+```
+
+## Abschluss
+
+Und da haben Sie es! Sie haben erfolgreich auf die überarbeitete Version eines Dokuments mit Aspose.Words für .NET zugegriffen. Indem Sie diese Schritte befolgen, können Sie Dokumentrevisionen problemlos verwalten und anzeigen. Egal, ob Sie an Gemeinschaftsprojekten arbeiten oder einfach nur den Überblick über Änderungen behalten müssen, Aspose.Words für .NET ist für Sie da.
+
+## Häufig gestellte Fragen
+
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert erstellen, bearbeiten und bearbeiten können.
+
+### Kann ich in jedem Word-Dokument auf Revisionen zugreifen?
+Ja, solange das Dokument Revisionen enthält, können Sie mit Aspose.Words für .NET darauf zugreifen.
+
+### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
+ Ja, Sie können eine Lizenz erhalten von[Hier](https://purchase.aspose.com/buy) Sie bieten auch eine[Kostenlose Testversion](https://releases.aspose.com/) und ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+
+### Ist Aspose.Words für .NET mit allen .NET-Versionen kompatibel?
+Aspose.Words für .NET ist mit einer Vielzahl von .NET-Versionen kompatibel. Weitere Details finden Sie im[Dokumentation](https://reference.aspose.com/words/net/).
+
+### Wo erhalte ich Support für Aspose.Words für .NET?
+ Sie können Unterstützung von der Aspose-Community erhalten auf deren[Forum](https://forum.aspose.com/c/words/8).

@@ -12,6 +12,6 @@ Procesamiento de palabras con separación de palabras es un recurso integral que
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Separar palabras de idiomas con guiones](./hyphenate-words-of-languages/) | Aprenda a dividir palabras en diferentes idiomas en documentos de Word usando Aspose.Words para .NET. |
-| [Cargar diccionario de separación de palabras para el idioma](./load-hyphenation-dictionary-for-language/) |Aprenda a cargar un diccionario de separación de palabras para un idioma específico en Aspose.Words para .NET. |
-| [Devolución de llamada de separación de palabras](./hyphenation-callback/) | Aprenda a utilizar la devolución de llamada de separación de palabras en Aspose.Words para .NET para manejar la separación de palabras. |
+| [Separar palabras de idiomas con guiones](./hyphenate-words-of-languages/) | Aprenda a dividir palabras en diferentes idiomas usando Aspose.Words para .NET. Siga esta guía detallada paso a paso para mejorar la legibilidad de su documento. |
+| [Cargar diccionario de separación de palabras para el idioma](./load-hyphenation-dictionary-for-language/) | Aprenda a cargar un diccionario de separación de palabras para cualquier idioma usando Aspose.Words para .NET en este completo tutorial paso a paso. |
+| [Devolución de llamada de separación de palabras](./hyphenation-callback/) | Aprenda a implementar la devolución de llamada de separación de palabras en Aspose.Words para .NET para mejorar el formato de documentos con esta guía completa paso a paso. |

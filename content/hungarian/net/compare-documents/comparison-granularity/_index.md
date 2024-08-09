@@ -100,9 +100,9 @@ V: Az Aspose.Words for .NET-ben a Comparison Granularity használatához kövess
 #### K: Milyen szintek érhetők el az Aspose.Words for .NET-ben az Összehasonlítási részletességnek?
 
 V: Az Aspose.Words for .NET három szintű összehasonlítási részletességet biztosít:
-- `Granularity.CharLevel`: Összehasonlítja a dokumentumokat karakterszinten.
+- `Granularity.CharLevel`: Összehasonlítja a dokumentumokat karakter szinten.
 - `Granularity.WordLevel`: A dokumentumokat szószinten hasonlítja össze.
-- `Granularity.BlockLevel`: A dokumentumokat blokk szinten hasonlítja össze.
+- `Granularity.BlockLevel`: A dokumentumokat blokkszinten hasonlítja össze.
 
 #### K: Hogyan értelmezhetem az összehasonlítási eredményeket karakterszintű részletességgel?
 

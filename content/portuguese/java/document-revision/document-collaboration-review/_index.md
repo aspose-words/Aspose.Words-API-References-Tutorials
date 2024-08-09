@@ -45,7 +45,7 @@ doc.startTrackRevisions("Author Name");
 
 Os membros da equipe podem revisar as alterações feitas no documento e fornecer comentários ou sugestões. Aspose.Words for Java permite que você acesse e processe programaticamente esses comentários.
 
-## Revisão de documento
+## Revisão de documentos
 
 A revisão de um documento envolve analisar as alterações feitas e tomar decisões sobre aceitá-las ou rejeitá-las.
 

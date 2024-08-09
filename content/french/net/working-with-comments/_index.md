@@ -13,7 +13,7 @@ Dans ces didacticiels, vous apprendrez divers aspects du traitement de mots avec
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Ajoutez des commentaires](./add-comments/) | Découvrez comment ajouter des commentaires à vos documents Word à l'aide d'Aspose.Words for .NET avec notre guide. Améliorez votre processus de collaboration documentaire sans effort. |
+| [Ajouter des commentaires](./add-comments/) | Découvrez comment ajouter des commentaires à vos documents Word à l'aide d'Aspose.Words for .NET avec notre guide. Améliorez votre processus de collaboration documentaire sans effort. |
 | [Commentaire d'ancrage](./anchor-comment/) | Découvrez comment ajouter des commentaires d'ancrage dans des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour une collaboration documentaire efficace. |
 | [Ajouter Supprimer Commentaire Répondre](./add-remove-comment-reply/) | Découvrez comment ajouter et supprimer des réponses aux commentaires dans des documents Word à l'aide d'Aspose.Words pour .NET. Améliorez votre collaboration documentaire avec ce guide étape par étape. |
 | [Commentaire résolu et réponses](./comment-resolved-and-replies/) | Automatisez la résolution et la réponse aux commentaires dans les documents Word avec Aspose.Words pour .NET. Guide étape par étape inclus. |

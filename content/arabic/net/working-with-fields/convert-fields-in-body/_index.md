@@ -13,7 +13,7 @@ url: /ar/net/working-with-fields/convert-fields-in-body/
 
 ## المتطلبات الأساسية
 
-قبل الخوض في البرنامج التعليمي حول تحويل الحقول في نص المستند باستخدام Aspose.Words لـ .NET، تأكد من أن لديك المتطلبات الأساسية التالية:
+قبل الخوض في البرنامج التعليمي حول تحويل الحقول في نص المستند باستخدام Aspose.Words for .NET، تأكد من أن لديك المتطلبات الأساسية التالية:
 
 - Visual Studio: تم تثبيته وتكوينه لتطوير .NET.
 -  Aspose.Words for .NET: تم تنزيله والإشارة إليه في مشروع Visual Studio الخاص بك. يمكنك الحصول عليه من[هنا](https://releases.aspose.com/words/net/).

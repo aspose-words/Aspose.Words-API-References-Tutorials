@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokument
 
- Stwórz`Document` obiekt, ładując plik Word:
+ Utwórz`Document` obiekt, ładując plik Word:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -85,7 +85,7 @@ Należy przejrzeć wszystkie SDT w dokumencie i zastosować zmianę koloru do ka
 
 ### Czy można ustawić inne właściwości SDT poza kolorem?
 
- Tak`StructuredDocumentTag` class ma różne właściwości, które można ustawić, w tym rozmiar czcionki, styl czcionki i inne. Więcej szczegółów znajdziesz w dokumentacji Aspose.Words.
+ Tak,`StructuredDocumentTag` class ma różne właściwości, które można ustawić, w tym rozmiar czcionki, styl czcionki i inne. Więcej szczegółów znajdziesz w dokumentacji Aspose.Words.
 
 ### Czy mogę dodawać zdarzenia do zestawów SDT, np. zdarzenia kliknięcia?
 

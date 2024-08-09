@@ -103,7 +103,7 @@ section.page_setup.orientation = aw.Orientation.LANDSCAPE
 
 ## A dokumentum mentése és exportálása
 
-Miután befejeztük a munkát a dokumentummal, elmenthetjük különböző formátumokban.
+Miután befejeztük a munkát a dokumentummal, különböző formátumokba menthetjük.
 
 ```python
 # Save the document to a file

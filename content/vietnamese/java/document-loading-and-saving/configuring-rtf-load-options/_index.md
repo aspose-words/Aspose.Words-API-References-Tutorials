@@ -14,7 +14,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá cách định cấu hình c
 
 ## Điều kiện tiên quyết
 
- Trước khi bắt đầu, hãy đảm bảo bạn đã tích hợp thư viện Aspose.Words for Java vào dự án của mình. Bạn có thể tải nó xuống từ[trang mạng](https://releases.aspose.com/words/java/).
+ Trước khi bắt đầu, hãy đảm bảo bạn đã tích hợp thư viện Aspose.Words for Java vào dự án của mình. Bạn có thể tải nó xuống từ[trang web](https://releases.aspose.com/words/java/).
 
 ## Bước 1: Thiết lập tùy chọn tải RTF
 

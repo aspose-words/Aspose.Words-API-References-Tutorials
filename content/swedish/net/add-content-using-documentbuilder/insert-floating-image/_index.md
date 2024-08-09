@@ -71,7 +71,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 string imagePath = dataDir + "Transparent background logo.png";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där din bild lagras.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där din bild lagras.
 
 ## Steg 4: Infoga den flytande bilden
 

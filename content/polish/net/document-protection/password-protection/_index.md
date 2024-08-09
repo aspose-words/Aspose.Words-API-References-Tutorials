@@ -9,16 +9,16 @@ url: /pl/net/document-protection/password-protection/
 ---
 ## Wstęp
 
-No hej! Czy zastanawiałeś się kiedyś, jak zabezpieczyć dokumenty programu Word przed niechcianymi zmianami i podglądaczami? Cóż, masz szczęście, ponieważ dzisiaj zanurzamy się w świat ochrony hasłem przy użyciu Aspose.Words dla .NET. To jak założenie blokady na swój pamiętnik – tylko fajniejszy i bardziej zaawansowany technologicznie. Wyruszmy razem w tę podróż i dowiedzmy się, jak chronić nasze dokumenty!
+Hej tam! Czy zastanawiałeś się kiedyś, jak zabezpieczyć dokumenty programu Word przed niechcianymi zmianami i podglądaczami? Cóż, masz szczęście, ponieważ dzisiaj zanurzamy się w świat ochrony hasłem przy użyciu Aspose.Words dla .NET. To jak założenie blokady na swój pamiętnik – tylko fajniejszy i bardziej zaawansowany technologicznie. Wyruszmy razem w tę podróż i dowiedzmy się, jak chronić nasze dokumenty!
 
 ## Warunki wstępne
 
 Zanim zagłębimy się w szczegóły zabezpieczania dokumentów programu Word hasłem, będziesz potrzebować kilku rzeczy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne środowisko programistyczne C#.
 3. Podstawowa znajomość języka C#: Podstawowa znajomość programowania w języku C#.
-4.  Licencja Aspose: Uzyskaj licencję od[Tutaj](https://purchase.aspose.com/buy)lub użyj A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+4.  Licencja Aspose: Uzyskaj licencję od[Tutaj](https://purchase.aspose.com/buy)lub użyj A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ## Importuj przestrzenie nazw
 
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 Teraz, gdy nasz projekt jest już skonfigurowany, utwórzmy dokument programu Word, który będziemy mogli chronić.
 
- W Twoim`Program.cs` pliku, zainicjuj nową instancję pliku`Document` klasa. Ta klasa reprezentuje dokument programu Word, z którym będziesz pracować.
+ W twoim`Program.cs` pliku, zainicjuj nową instancję pliku`Document` klasa. Ta klasa reprezentuje dokument programu Word, z którym będziesz pracować.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -68,7 +68,7 @@ To tutaj dzieje się magia. Zastosujemy ochronę hasłem do naszego dokumentu, a
 
 ### Zastosuj ochronę
 
- Użyj`Protect` metoda`Document` class, aby zastosować ochronę hasłem. 
+ Skorzystaj z`Protect` metoda`Document` class, aby zastosować ochronę hasłem. 
 
 ```csharp
 // Zastosuj ochronę dokumentów.
@@ -80,7 +80,7 @@ doc.Protect(ProtectionType.NoProtection, "password");
 Na koniec zapiszmy nasz chroniony dokument w określonym katalogu.
 
 
- Użyj`Save` metoda zapisania dokumentu. Podaj ścieżkę, w której chcesz zapisać dokument, wraz z nazwą pliku.
+ Skorzystaj z`Save` metoda zapisania dokumentu. Podaj ścieżkę, w której chcesz zapisać dokument, wraz z nazwą pliku.
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");

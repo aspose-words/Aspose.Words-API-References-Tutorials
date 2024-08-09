@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Perkenalan
 
 Jika Anda bekerja dengan dokumen di .NET dan menggunakan Aspose.Words, mengelola sumber font dapat menjadi aspek penting untuk memastikan dokumen Anda terlihat seperti yang diharapkan. Aspose.Words menawarkan cara yang ampuh untuk menangani font, termasuk menggunakan aliran sumber daya. Dalam panduan ini, kita akan membahas penggunaan aliran sumber daya sebagai sumber font dengan Aspose.Words untuk .NET. Ayo selami!
 
@@ -99,11 +100,11 @@ Anda sekarang telah menguasai proses penggunaan aliran sumber daya sebagai sumbe
 
 ###  Q3: Dapatkah saya menangani jenis peringatan lainnya`IWarningCallback`?
 
- Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
+ Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, tidak hanya penggantian font.
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 
- Mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
+ Kunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
 
 ### Q5: Apakah mungkin untuk mendapatkan lisensi sementara untuk Aspose.Words?
 

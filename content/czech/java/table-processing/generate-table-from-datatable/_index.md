@@ -68,11 +68,11 @@ Nakonec uložte dokument s vygenerovanou tabulkou na požadované místo.
 doc.save(""output.docx"");
 ```
 
-Pomocí těchto kroků můžete úspěšně vygenerovat tabulku z DataTable a začlenit ji do aplikace pro zpracování dokumentů pomocí Aspose.Words for Java. Tato knihovna bohatá na funkce zjednodušuje úlohy zpracování tabulek a textového editoru a umožňuje vám bez námahy vytvářet profesionální a dobře organizované dokumenty.
+Podle těchto kroků můžete úspěšně vygenerovat tabulku z DataTable a začlenit ji do aplikace pro zpracování dokumentů pomocí Aspose.Words for Java. Tato knihovna bohatá na funkce zjednodušuje úlohy zpracování tabulek a textového editoru a umožňuje vám bez námahy vytvářet profesionální a dobře organizované dokumenty.
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili, jak generovat tabulku z DataTable pomocí Aspose.Words for Java. Tento podrobný průvodce demonstroval proces přípravy DataTable, vytvoření a formátování tabulky v dokumentu aplikace Word a uložení konečného výstupu. Aspose.Words for Java nabízí výkonné a flexibilní API pro zpracování tabulek, což usnadňuje správu tabulkových dat a jejich začlenění do vašich projektů zpracování textu.
+Gratuluji! Úspěšně jste se naučili, jak generovat tabulku z DataTable pomocí Aspose.Words for Java. Tento podrobný průvodce demonstroval proces přípravy DataTable, vytvoření a formátování tabulky v dokumentu aplikace Word a uložení konečného výstupu. Aspose.Words for Java nabízí výkonné a flexibilní API pro zpracování tabulek, což usnadňuje správu tabulkových dat a jejich začlenění do vašich projektů zpracování textu.
 
 Využitím možností Aspose.Words můžete zpracovávat složité struktury tabulek, používat vlastní formátování a hladce integrovat tabulky do vašich dokumentů. Ať už generujete zprávy, faktury nebo jakýkoli jiný dokument vyžadující tabulkovou reprezentaci, Aspose.Words vám umožňuje snadno dosáhnout profesionálních výsledků.
 

@@ -9,7 +9,7 @@ url: /pl/net/join-and-append-documents/append-with-import-format-options/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek miałeś potrzebę połączenia wielu dokumentów programu Word w jeden, ale utknąłeś w tych irytujących problemach z formatowaniem? Nie bój się! Dzisiaj zagłębiamy się w sposób, w jaki można dołączać jeden dokument programu Word do drugiego za pomocą Aspose.Words dla .NET, zachowując przy tym porządek w formatowaniu. Zapnij pasy, bo pod koniec tego przewodnika będziesz mistrzem łączenia dokumentów!
+Hej tam! Czy kiedykolwiek miałeś potrzebę połączenia wielu dokumentów programu Word w jeden, ale utknąłeś w tych irytujących problemach z formatowaniem? Nie bój się! Dzisiaj zagłębiamy się w sposób, w jaki można dołączać jeden dokument programu Word do drugiego za pomocą Aspose.Words dla .NET, zachowując przy tym porządek w formatowaniu. Zapnij pasy, bo pod koniec tego przewodnika będziesz mistrzem łączenia dokumentów!
 
 ## Warunki wstępne
 
@@ -82,7 +82,7 @@ Na koniec zapiszmy nasz nowo połączony dokument. To jak położyć wisienkę n
 dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
 
-Bum! Pomyślnie połączyłeś dwa dokumenty programu Word, zachowując nienaruszone formatowanie. 
+Wysięgnik! Pomyślnie połączyłeś dwa dokumenty programu Word, zachowując nienaruszone formatowanie. 
 
 ## Wniosek
 
@@ -91,7 +91,7 @@ masz to! Wykonując poniższe kroki, możesz bez wysiłku dołączać dokumenty 
 ## Często zadawane pytania
 
 ### Czy mogę zachować numerację dokumentu docelowego zamiast numeracji źródłowej?
- Tak, możesz modyfikować`ImportFormatOptions` osiągnąć to.
+ Tak, możesz modyfikować`ImportFormatOptions` aby to osiągnąć.
 
 ### Co się stanie, jeśli nie mam Aspose.Words dla .NET?
  Możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/).

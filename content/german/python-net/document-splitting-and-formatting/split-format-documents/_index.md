@@ -58,7 +58,7 @@ document.save("path/to/save/updated_document.docx")
 ## FAQs
 
 ### Wie kann ich ein Dokument in mehrere Dateien aufteilen?
-Sie können ein Dokument in mehrere Dateien aufteilen, indem Sie die Abschnitte durchlaufen und jeden Abschnitt als separates Dokument speichern. Hier ist ein Beispiel:
+Sie können ein Dokument in mehrere Dateien aufteilen, indem Sie die Abschnitte durchlaufen und jeden Abschnitt als separates Dokument speichern. Hier ein Beispiel:
 
 ```python
 for i, section in enumerate(sections):
@@ -88,7 +88,7 @@ for paragraph in section.paragraphs:
 ```
 
 ### Ist es möglich, einen bestimmten Abschnitt aus dem Dokument zu entfernen?
- Ja, Sie können einen bestimmten Abschnitt aus dem Dokument entfernen, indem Sie`sections.remove(section)` Methode.
+ Ja, Sie können einen bestimmten Abschnitt aus dem Dokument entfernen, indem Sie`sections.remove(section)` Verfahren.
 
 ```python
 document.sections.remove(section_to_remove)

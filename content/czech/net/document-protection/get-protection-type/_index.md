@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/document-protection/get-protection-type/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přemýšleli jste někdy, jak programově zkontrolovat typ ochrany vašich dokumentů Word? Ať už zajišťujete citlivá data nebo se jen zajímáte o stav dokumentu, vědět, jak získat typ ochrany, může být velmi užitečné. Dnes si tento proces projdeme pomocí Aspose.Words for .NET, výkonné knihovny, se kterou je práce s dokumenty Wordu hračkou. Připoutejte se a pojďme se ponořit!
+Ahoj! Přemýšleli jste někdy, jak programově zkontrolovat typ ochrany vašich dokumentů Word? Ať už zajišťujete citlivá data nebo se jen zajímáte o stav dokumentu, vědět, jak získat typ ochrany, může být velmi užitečné. Dnes si tento proces projdeme pomocí Aspose.Words for .NET, výkonné knihovny, se kterou je práce s dokumenty Wordu hračkou. Připoutejte se a pojďme se ponořit!
 
 ## Předpoklady
 
@@ -81,7 +81,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vytvářet, uprav
 Aspose.Words dokáže detekovat různé typy ochrany, jako je NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments a AllowOnlyFormFields.
 
 ### Jak mohu získat podporu, pokud narazím na problémy?
- V případě jakýchkoli problémů můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8)pro pomoc.
+ V případě jakýchkoli problémů můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pomoc.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 Ano, Aspose.Words je kompatibilní s .NET Framework i .NET Core.

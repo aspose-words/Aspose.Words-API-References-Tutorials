@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 
 ## Conclusion
 
-Et voila! Vous avez réussi à mapper une partie XML à une balise de document structuré dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante vous permet de créer sans effort des documents dynamiques et basés sur les données. Que vous génériez des rapports, des factures ou tout autre type de document, le mappage XML peut considérablement rationaliser votre flux de travail.
+Et voilà ! Vous avez réussi à mapper une partie XML à une balise de document structuré dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante vous permet de créer sans effort des documents dynamiques et basés sur les données. Que vous génériez des rapports, des factures ou tout autre type de document, le mappage XML peut considérablement rationaliser votre flux de travail.
 
 ## FAQ
 

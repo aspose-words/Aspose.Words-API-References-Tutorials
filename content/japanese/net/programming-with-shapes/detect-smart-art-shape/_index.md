@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を学習しました。このチュートリアルでは、環境の設定、文書の読み込み、SmartArt 図形の検出、コードの実行について説明しました。Aspose.Words は幅広い機能を提供しているので、ぜひ試してみてください。[APIドキュメント](https://reference.aspose.com/words/net/)その潜在能力を最大限に引き出すために。
+これで完了です。Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を学習しました。このチュートリアルでは、環境の設定、文書の読み込み、SmartArt 図形の検出、コードの実行について説明しました。Aspose.Words は幅広い機能を提供しているので、ぜひ詳細を確認してください。[APIドキュメント](https://reference.aspose.com/words/net/)その潜在能力を最大限に引き出すために。
 
 ## よくある質問
 
@@ -94,7 +94,7 @@ Aspose.Words for .NET は、開発者が Word ドキュメントをプログラ�
 
 ### 3. ドキュメント内の他の種類の図形を検出するにはどうすればよいですか?
 
- LINQクエリを変更して、他のプロパティや図形の種類をチェックすることもできます。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+ LINQクエリを変更して、他のプロパティや図形の種類をチェックすることもできます。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### 4. Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
 
@@ -102,4 +102,4 @@ Aspose.Words for .NET は、開発者が Word ドキュメントをプログラ�
 
 ### 5. SmartArt 図形をプログラムで操作できますか?
 
-はい、Aspose.WordsではSmartArt図形をプログラムで操作できます。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細な手順については、こちらをご覧ください。
+はい、Aspose.WordsではSmartArt図形をプログラムで操作できます。[ドキュメント](https://reference.aspose.com/words/net/)詳細な手順については、こちらをご覧ください。

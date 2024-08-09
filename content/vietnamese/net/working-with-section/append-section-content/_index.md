@@ -16,7 +16,7 @@ Này! Bạn đã bao giờ tự hỏi làm thế nào để thao tác các tài 
 Trước khi chúng ta bắt đầu, có một số điều bạn cần:
 
 1. Kiến thức cơ bản về C#: Bạn không cần phải là chuyên gia, nhưng hiểu biết cơ bản về C# sẽ rất hữu ích.
-2.  Aspose.Words cho .NET: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/) . Nếu chưa muốn mua ngay, bạn có thể chọn mua[dùng thử miễn phí](https://releases.aspose.com/).
+2.  Aspose.Words cho .NET: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/) . Nếu chưa muốn mua ngay, bạn có thể chọn mua[dùng thử miễn phí](https://releases.aspose.com/).
 3. Visual Studio: Mọi phiên bản đều hoạt động nhưng nên sử dụng phiên bản mới nhất.
 4. .NET Framework: Đảm bảo bạn đã cài đặt nó trên máy của mình.
 
@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Trong bước này, chúng tôi khởi tạo một tài liệu mới và trình tạo tài liệu. Các`DocumentBuilder` là một công cụ tiện dụng giúp chúng ta thêm nội dung vào tài liệu.
+ Trong bước này, chúng tôi khởi tạo một tài liệu mới và trình tạo tài liệu. các`DocumentBuilder` là một công cụ tiện dụng giúp chúng ta thêm nội dung vào tài liệu.
 
 ## Bước 2: Thêm phần vào tài liệu
 
@@ -98,11 +98,11 @@ Sau khi thao tác các phần, đã đến lúc lưu tài liệu của chúng ta
 doc.Save("output.docx");
 ```
 
-Ở đây, chúng tôi lưu tài liệu dưới dạng "output.docx". Bạn có thể mở tệp này trong Microsoft Word để xem các thay đổi.
+Ở đây, chúng tôi lưu tài liệu dưới dạng "output.docx". Bạn có thể mở tệp này trong Microsoft Word để xem những thay đổi.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thao tác thành công các phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này trình bày những kiến thức cơ bản về tạo tài liệu, thêm các phần và thao tác với nội dung của chúng. Với Aspose.Words, bạn có thể thực hiện các thao tác phức tạp hơn nhiều, vì vậy đừng ngần ngại khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để biết thêm các tính năng nâng cao.
+Và bạn có nó! Bạn đã thao tác thành công các phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này trình bày những kiến thức cơ bản về tạo tài liệu, thêm các phần và thao tác với nội dung của chúng. Với Aspose.Words, bạn có thể thực hiện các thao tác phức tạp hơn nhiều, vì vậy đừng ngần ngại khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để biết thêm các tính năng nâng cao.
 
 ## Câu hỏi thường gặp
 

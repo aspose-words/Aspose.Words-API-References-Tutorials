@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/remove-personal-information/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přistihli jste se někdy, že se utápíte v úkolech správy dokumentů? Všichni jsme tam byli. Ať už se zabýváte smlouvami, zprávami nebo jen každodenním papírováním, nástroj, který celý proces zjednoduší, vám zachrání život. Zadejte Aspose.Words pro .NET. Tento klenot knihovny vám umožňuje automatizovat vytváření, manipulaci a konverzi dokumentů jako profesionál. Dnes vás provedeme super praktickou funkcí: odstranění osobních údajů z dokumentu. Pojďme se ponořit!
+Ahoj! Přistihli jste se někdy, že se utápíte v úkolech správy dokumentů? Všichni jsme tam byli. Ať už se zabýváte smlouvami, zprávami nebo jen každodenním papírováním, nástroj, který celý proces zjednoduší, vám zachrání život. Zadejte Aspose.Words pro .NET. Tento klenot knihovny vám umožňuje automatizovat vytváření, manipulaci a konverzi dokumentů jako profesionál. Dnes vás provedeme super praktickou funkcí: odstranění osobních údajů z dokumentu. Pojďme se ponořit!
 
 ## Předpoklady
 
 Než si ušpiníme ruce, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[tady](https://releases.aspose.com/words/net/) . Můžete také chytit a[zkušební verze zdarma](https://releases.aspose.com/) pokud právě začínáte.
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[zde](https://releases.aspose.com/words/net/) . Můžete také chytit a[zkušební verze zdarma](https://releases.aspose.com/) pokud právě začínáte.
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET, které preferujete.
 3. Základní znalost C#: Nemusíte být kouzelník, ale trocha znalosti vám hodně pomůže.
 
@@ -76,7 +76,7 @@ Osobní údaje zahrnují jména autorů, vlastnosti dokumentu a další metadata
 
 ### Je Aspose.Words for .NET zdarma?
 
- Aspose.Words nabízí a[zkušební verze zdarma](https://releases.aspose.com/) takže si to můžete vyzkoušet, ale pro plnou funkčnost si budete muset zakoupit licenci. Podívejte se na[stanovení cen](https://purchase.aspose.com/buy) Více podrobností.
+ Aspose.Words nabízí a[zkušební verze zdarma](https://releases.aspose.com/) takže si to můžete vyzkoušet, ale pro plnou funkčnost si budete muset zakoupit licenci. Podívejte se na[stanovení cen](https://purchase.aspose.com/buy) pro více podrobností.
 
 ### Mohu použít Aspose.Words pro jiné formáty dokumentů?
 
@@ -84,7 +84,7 @@ Absolutně! Aspose.Words podporuje různé formáty včetně DOCX, PDF, HTML a d
 
 ### Jak získám podporu, pokud narazím na problémy?
 
- Můžete navštívit Aspose.Words[Fórum podpory](https://forum.aspose.com/c/words/8) pro pomoc s jakýmikoli problémy nebo dotazy, které byste mohli mít.
+ Můžete navštívit Aspose.Words[fórum podpory](https://forum.aspose.com/c/words/8) pro pomoc s jakýmikoli problémy nebo dotazy, které byste mohli mít.
 
 ### Jaké další funkce Aspose.Words nabízí?
 

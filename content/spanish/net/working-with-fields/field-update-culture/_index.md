@@ -104,7 +104,7 @@ Sí, Aspose.Words admite varios tipos de campos, incluidas fechas y campos perso
 
  Para una funcionalidad completa, es posible que necesite una licencia Aspose válida. Puedes obtener uno a través de[Página de compra de Aspose](https://purchase.aspose.com/buy) o utilizar una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
 
-### ¿Cómo puedo personalizar aún más la cultura de actualización de campo?
+### ¿Cómo puedo personalizar aún más la cultura de actualización de campos?
 
  Puedes extender el`FieldUpdateCultureProvider` clase para crear un proveedor de cultura personalizado adaptado a sus necesidades específicas.
 

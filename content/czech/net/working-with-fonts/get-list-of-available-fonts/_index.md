@@ -2,93 +2,113 @@
 title: Získejte seznam dostupných písem
 linktitle: Získejte seznam dostupných písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: V tomto tutoriálu se dozvíte, jak získat seznam písem dostupných v Aspose.Words pro .NET.
+description: Zjistěte, jak získat seznam dostupných písem pomocí Aspose.Words pro .NET v tomto podrobném návodu krok za krokem. Zvyšte své dovednosti v oblasti správy písem.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/get-list-of-available-fonts/
 ---
-tomto tutoriálu vysvětlíme, jak získat seznam písem dostupných v Aspose.Words pro .NET. Seznam dostupných písem vám dává vědět, která písma můžete použít ve svých dokumentech. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+## Zavedení
+
+Přistihli jste se někdy, že máte problémy se správou písem v dokumentech aplikace Word? Pokud jste vývojář .NET, Aspose.Words for .NET je tu, aby vás zachránil! Tato výkonná knihovna vám nejen pomáhá vytvářet a manipulovat s dokumenty Wordu programově, ale nabízí také rozsáhlé možnosti správy písem. V této příručce vás provedeme podrobným návodem, jak získat seznam dostupných písem pomocí Aspose.Words pro .NET. Rozdělíme to do stravitelných kroků, abyste se ujistili, že je budete snadno sledovat. Pojďme se tedy ponořit a udělat ze správy písem hračku!
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
 
-## Krok 1: Definujte adresář dokumentů
- Nejprve musíte nastavit cestu k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+Než začneme, budete potřebovat několik věcí:
+
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
+- Visual Studio: Tento příklad používá Visual Studio jako vývojové prostředí.
+- .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
+- Adresář dokumentů: Cesta k adresáři, kde jsou uloženy vaše dokumenty.
+
+## Importovat jmenné prostory
+
+Nejprve do projektu importujte potřebné jmenné prostory:
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 2: Nakonfigurujte zdroje písem
- Dále vytvoříme instanci`FontSettings` a získat existující zdroje písem pomocí`GetFontsSources()` metoda. Přidáme také nový zdroj písem zadáním složky obsahující písma.
+## Krok 1: Inicializujte nastavení písma
+
+Prvním krokem je inicializace nastavení písma. To vám umožní spravovat zdroje písem pro vaše dokumenty.
 
 ```csharp
-// Konfigurace zdrojů písem
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-// Přidejte nový zdroj písem
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## Krok 3: Získejte seznam dostupných písem
- Nyní budeme procházet dostupná písma pomocí`GetAvailableFonts()` metoda na prvním aktualizovaném zdroji písem.
+- FontSettings: Tato třída se používá ke specifikaci nastavení pro nahrazování písem a zdroje písem.
+- Zdroje písem: Vytváříme seznam existujících zdrojů písem z aktuálního nastavení písem.
+
+## Krok 2: Definujte adresář dokumentů
+
+Dále zadejte cestu k adresáři dokumentů. Zde bude Aspose.Words hledat fonty.
 
 ```csharp
-// Získejte seznam dostupných písem
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### Ukázka zdrojového kódu pro získání seznamu dostupných písem pomocí Aspose.Words pro .NET 
-
-```csharp
-
-// Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Přidejte nový zdroj složky, který dá Aspose.Words pokyn k hledání písem v následující složce.
+-  dataDir: Tato řetězcová proměnná obsahuje cestu k adresáři, kde jsou umístěny vaše fonty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou.
+
+## Krok 3: Přidejte vlastní složku písem
+
+Nyní přidejte nový zdroj složky a instruujte Aspose.Words, aby v této složce hledala písma.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Přidejte vlastní složku, která obsahuje naše písma, do seznamu existujících zdrojů písem.
+```
+
+- FolderFontSource: Tato třída představuje zdroj písem složky. Druhý parametr (`true`) označuje, zda se mají písma hledat rekurzivně v podsložkách.
+
+## Krok 4: Aktualizujte zdroje písem
+
+Přidejte složku vlastních písem do seznamu existujících zdrojů písem a aktualizujte nastavení písem.
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- fontSources.Add(folderFontSource): Přidá vlastní složku písem ke stávajícím zdrojům písem.
+- updatedFontSources: Převede seznam zdrojů písem na pole.
+
+## Krok 5: Načtení a zobrazení písem
+
+Nakonec načtěte dostupná písma a zobrazte jejich podrobnosti.
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts(): Načte seznam dostupných písem z prvního zdroje písem v aktualizovaném seznamu.
+-  fontInfo: Instance`PhysicalFontInfo` obsahující podrobnosti o každém fontu.
+
 ## Závěr
-tomto tutoriálu jsme viděli, jak získat seznam písem dostupných v Aspose.Words pro .NET. Díky tomu zjistíte, která písma můžete ve svých dokumentech použít. Neváhejte použít tuto funkci k výběru vhodných písem pro vaše potřeby.
 
-### FAQ
+Gratuluji! Úspěšně jste získali seznam dostupných písem pomocí Aspose.Words for .NET. Tento tutoriál vás provede každým krokem, od inicializace nastavení písma až po zobrazení podrobností o písmu. S těmito znalostmi nyní můžete snadno spravovat písma v dokumentech aplikace Word. Pamatujte, že Aspose.Words for .NET je výkonný nástroj, který může výrazně zlepšit vaše možnosti zpracování dokumentů. Takže pokračujte a prozkoumejte další funkce, aby byl váš vývojový proces ještě efektivnější.
 
-#### Otázka: Jak mohu získat seznam písem dostupných v Aspose.Words?
+## FAQ
 
- A: Chcete-li získat seznam písem dostupných v Aspose.Words, můžete použít`FontsProvider` třída a`GetAvailableFonts` metoda. Tato metoda vrátí seznam všech písem nainstalovaných ve vašem systému.
+### Mohu používat Aspose.Words pro .NET s jinými frameworky .NET?
+Ano, Aspose.Words for .NET je kompatibilní s různými frameworky .NET včetně .NET Core a .NET 5+.
 
-#### Otázka: Mohu filtrovat seznam dostupných písem podle určitých kritérií v Aspose.Words?
+### Jak nainstaluji Aspose.Words for .NET?
+Můžete jej nainstalovat přes NuGet Package Manager ve Visual Studiu vyhledáním „Aspose.Words“.
 
-Odpověď: Ano, můžete filtrovat seznam písem dostupných v Aspose.Words pomocí specifických kritérií. Můžete například filtrovat písma podle rodiny, stylu nebo jazyka.
+### Je možné přidat více vlastních složek písem?
+ Ano, můžete přidat více vlastních složek písem vytvořením více`FolderFontSource` instance a jejich přidání do seznamu zdrojů písem.
 
-#### Otázka: Jak mohu použít seznam dostupných písem v dokumentech aplikace Word?
+### Mohu načíst podrobnosti o písmu z konkrétního zdroje písem?
+ Ano, podrobnosti o písmu můžete načíst z libovolného zdroje písem zadáním indexu zdroje písem v souboru`updatedFontSources` pole.
 
- Odpověď: Chcete-li použít seznam písem dostupných ve vašich dokumentech aplikace Word, můžete procházet seznam a vybrat vhodná písma pomocí metod a vlastností`FontSettings` třídy v Aspose.Words.
+### Podporuje Aspose.Words for .NET náhradu písem?
+Ano, podporuje nahrazování písem, aby bylo zajištěno, že se text vykreslí správně, i když původní písmo není k dispozici.

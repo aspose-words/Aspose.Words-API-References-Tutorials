@@ -121,4 +121,4 @@ Aspose.Words for .NET は、開発者がプログラムによって Word 文書�
 もちろんです! 説明した方法は、より大規模なアプリケーションに組み込んで、ドキュメント処理タスクを自動化できます。
 
 ### より多くのリソースとサポートはどこで見つかりますか?  
-詳細については、[ドキュメンテーション](https://reference.aspose.com/words/net/) 、または[サポートフォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
+詳細については、[ドキュメント](https://reference.aspose.com/words/net/) 、または[サポートフォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。

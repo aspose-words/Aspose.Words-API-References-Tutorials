@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.ViewOptions.ViewType = ViewType.PageLayout;
 ```
 
-ここでは、ビュータイプを`PageLayout`これは、Microsoft Word の印刷レイアウト表示に似ています。これにより、文書が印刷されたときにどのように表示されるかがより正確に表現されます。
+ここでは、ビュータイプを`PageLayout`これは、Microsoft Word の印刷レイアウト表示に似ています。これにより、文書が印刷されたときにどのように表示されるかをより正確に表現できます。
 
 ## ステップ3: ズームレベルを調整する
 
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書の表示オプションを変更するのは、手順がわかれば簡単です。このチュートリアルでは、文書の読み込み、表示タイプの変更、ズーム レベルの調整、新しい設定での文書の保存方法を学習しました。Aspose.Words for .NET をマスターするには実践が鍵となることを忘れないでください。さまざまな設定を試して、自分に最適なものを見つけてください。コーディングを楽しんでください。
+これで完了です。Aspose.Words for .NET を使用して Word 文書の表示オプションを変更するのは、手順がわかれば簡単です。このチュートリアルに従うことで、文書の読み込み、表示タイプの変更、ズーム レベルの調整、新しい設定での文書の保存方法を学習しました。Aspose.Words for .NET をマスターするには実践が鍵となることを忘れないでください。さまざまな設定を試して、自分に最適なものを見つけてください。コーディングを楽しんでください。
 
 ## よくある質問
 

@@ -239,7 +239,7 @@ Codice sorgente della classe HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Fare niente.
+            // Non fare nulla.
         }
         /// <riepilogo>
         /// Viene chiamato quando il motore di stampa unione rileva il campo unione Immagine:XXX nel documento.
@@ -320,7 +320,7 @@ Codice sorgente della classe HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Fare niente.
+            // Non fare nulla.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

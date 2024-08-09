@@ -85,7 +85,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 ## Steg 5: Flytta bokmärkesänden
 
-Slutligen, om villkoren är uppfyllda, flyttar vi bokmärkets slutnod till slutet av det sista stycket i den översta radens sista cell. Detta steg löser effektivt bokmärket.
+Slutligen, om villkoren är uppfyllda, flyttar vi bokmärkets slutnod till slutet av det sista stycket i den översta radens sista cell. Detta steg löser bokmärket effektivt.
 
 Steg 5 Rubrik: Flytta bokmärkesänden
 
@@ -111,7 +111,7 @@ Den här handledningen tar upp bokmärken som sträcker sig över två intilligg
 
 ### Finns det en testversion av Aspose.Words för .NET tillgänglig?
 
- Jo det kan du[ladda ner en gratis testversion](https://releases.aspose.com/) från Asposes webbplats för att utforska bibliotekets funktioner.
+ Ja, det kan du[ladda ner en gratis testversion](https://releases.aspose.com/) från Asposes webbplats för att utforska bibliotekets funktioner.
 
 ### Hur kan jag få support om jag stöter på problem?
 

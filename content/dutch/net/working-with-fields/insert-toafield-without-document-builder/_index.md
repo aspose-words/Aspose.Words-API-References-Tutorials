@@ -94,7 +94,7 @@ fieldToa.Update();
 
 Deze opdracht vernieuwt het TOA-veld en zorgt ervoor dat alle gemarkeerde vermeldingen correct in de tabel worden weergegeven.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte uw document op met het nieuw toegevoegde TOA-veld.
 

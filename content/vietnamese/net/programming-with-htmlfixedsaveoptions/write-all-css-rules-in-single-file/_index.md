@@ -9,13 +9,13 @@ url: /vi/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình bị vướng vào mạng lưới các quy tắc CSS nằm rải rác khắp nơi khi chuyển đổi tài liệu Word sang HTML chưa? Không boăn khoăn! Hôm nay, chúng ta sẽ đi sâu vào một tính năng thú vị của Aspose.Words dành cho .NET cho phép bạn viết tất cả các quy tắc CSS trong một tệp duy nhất. Điều này không chỉ giúp bạn dọn dẹp mã mà còn giúp cuộc sống của bạn dễ dàng hơn rất nhiều. Hãy thắt dây an toàn và hãy bắt đầu hành trình tạo ra đầu ra HTML sạch hơn, hiệu quả hơn!
+Bạn đã bao giờ thấy mình bị vướng vào mạng lưới các quy tắc CSS nằm rải rác khắp nơi khi chuyển đổi tài liệu Word sang HTML chưa? Đừng lo lắng! Hôm nay, chúng ta sẽ đi sâu vào một tính năng thú vị của Aspose.Words dành cho .NET cho phép bạn viết tất cả các quy tắc CSS trong một tệp duy nhất. Điều này không chỉ giúp bạn dọn dẹp mã mà còn giúp cuộc sống của bạn dễ dàng hơn rất nhiều. Hãy thắt dây an toàn và hãy bắt đầu hành trình tạo ra đầu ra HTML sạch hơn, hiệu quả hơn!
 
 ## Điều kiện tiên quyết
 
 Trước khi đi sâu vào nội dung chi tiết, chúng ta hãy sắp xếp các con vịt của mình thành một hàng. Đây là những gì bạn cần để bắt đầu:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Nếu bạn chưa có nó, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Nếu bạn chưa có nó, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển .NET: Bạn sẽ cần thiết lập môi trường phát triển .NET trên máy của mình. Visual Studio là một lựa chọn phổ biến.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C# sẽ rất hữu ích.
 4. Tài liệu Word: Chuẩn bị sẵn tài liệu Word (.docx) mà bạn muốn chuyển đổi.
@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã chuyển đổi thành công tài liệu Word sang HTML với tất cả các quy tắc CSS được sắp xếp gọn gàng trong một tệp duy nhất. Phương pháp này không chỉ đơn giản hóa việc quản lý CSS mà còn nâng cao khả năng bảo trì tài liệu HTML của bạn. Vì vậy, lần tới khi bạn được giao nhiệm vụ chuyển đổi tài liệu Word, bạn sẽ biết chính xác cách giữ mọi thứ gọn gàng!
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã chuyển đổi thành công tài liệu Word sang HTML với tất cả các quy tắc CSS được sắp xếp gọn gàng trong một tệp duy nhất. Phương pháp này không chỉ đơn giản hóa việc quản lý CSS mà còn nâng cao khả năng bảo trì tài liệu HTML của bạn. Vì vậy, lần tới khi bạn được giao nhiệm vụ chuyển đổi tài liệu Word, bạn sẽ biết chính xác cách giữ mọi thứ gọn gàng!
 
 ## Câu hỏi thường gặp
 
@@ -83,7 +83,7 @@ Việc sử dụng một tệp CSS giúp đơn giản hóa việc quản lý và
  Có, bằng cách thiết lập`SaveFontFaceCssSeparately` ĐẾN`true`, bạn có thể tách các quy tắc CSS về phông chữ thành một tệp khác.
 
 ### Aspose.Words cho .NET có được sử dụng miễn phí không?
- Aspose.Words cung cấp bản dùng thử miễn phí mà bạn có thể[tải xuống ở đây](https://releases.aspose.com/) . Để tiếp tục sử dụng, hãy cân nhắc việc mua giấy phép[đây](https://purchase.aspose.com/buy).
+ Aspose.Words cung cấp bản dùng thử miễn phí mà bạn có thể[tải về ở đây](https://releases.aspose.com/) . Để tiếp tục sử dụng, hãy cân nhắc việc mua giấy phép[đây](https://purchase.aspose.com/buy).
 
 ### Aspose.Words cho .NET có thể chuyển đổi sang những định dạng nào khác?
 Aspose.Words for .NET hỗ trợ nhiều định dạng khác nhau bao gồm PDF, TXT và các định dạng hình ảnh như JPEG và PNG.

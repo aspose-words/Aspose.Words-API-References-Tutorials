@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/build-table/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Hledáte programově vytvářet tabulky v dokumentech aplikace Word? Tak to jste na správném místě! Dnes se ponoříme do kouzelného světa Aspose.Words pro .NET. Tato výkonná knihovna vám umožní manipulovat s dokumenty Wordu jako profesionál. Představte si, že jste čaroděj a Aspose.Words je vaše hůlka, která vám umožňuje vytvářet, upravovat a formátovat dokumenty pohybem zápěstí (nebo spíše řádkem kódu). V tomto tutoriálu se zaměříme na vytvoření tabulky v dokumentu aplikace Word. Takže popadněte svůj kódovací klobouk a můžeme začít!
+Ahoj! Hledáte programově vytvářet tabulky v dokumentech aplikace Word? Tak to jste na správném místě! Dnes se ponoříme do kouzelného světa Aspose.Words pro .NET. Tato výkonná knihovna vám umožní manipulovat s dokumenty Wordu jako profesionál. Představte si, že jste čaroděj a Aspose.Words je vaše hůlka, která vám umožňuje vytvářet, upravovat a formátovat dokumenty pohybem zápěstí (nebo spíše řádkem kódu). V tomto tutoriálu se zaměříme na vytvoření tabulky v dokumentu aplikace Word. Takže popadněte svůj kódovací klobouk a můžeme začít!
 
 ## Předpoklady
 
@@ -54,7 +54,7 @@ builder.InsertCell();
 table.AutoFit(AutoFitBehavior.FixedColumnWidths);
 ```
 
- Používáním`StartTable` říkáme Aspose.Words, že se chystáme vytvořit tabulku. The`InsertCell` metoda přidá první buňku a`AutoFit` zajišťuje, že naše sloupy mají pevnou šířku.
+ Použitím`StartTable` říkáme Aspose.Words, že se chystáme vytvořit tabulku. The`InsertCell` metoda přidá první buňku a`AutoFit` zajišťuje, že naše sloupy mají pevnou šířku.
 
 ## Krok 3: Naformátujte první řádek
 
@@ -125,7 +125,7 @@ Pamatujte, cvičení dělá mistra. Neváhejte tedy experimentovat s různými f
 Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu. Umožňuje vám vytvářet, upravovat a manipulovat s dokumenty, aniž byste potřebovali Microsoft Word.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Můžeš[stáhněte si Aspose.Words pro .NET zde](https://releases.aspose.com/words/net/). Postupujte podle pokynů k instalaci a nastavte jej ve svém vývojovém prostředí.
+ Můžete[stáhněte si Aspose.Words pro .NET zde](https://releases.aspose.com/words/net/). Postupujte podle pokynů k instalaci a nastavte jej ve svém vývojovém prostředí.
 
 ### Mohu používat Aspose.Words zdarma?
  Aspose.Words nabízí a[zkušební verze zdarma](https://releases.aspose.com/) takže si můžete vyzkoušet jeho vlastnosti. Pro rozšířené použití si můžete zakoupit licenci nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).

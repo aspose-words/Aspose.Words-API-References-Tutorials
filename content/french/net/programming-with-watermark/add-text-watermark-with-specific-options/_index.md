@@ -109,4 +109,4 @@ Aspose.Words prend en charge l'ajout d'un filigrane à la fois. Pour ajouter plu
 
 ### Que faire si j'ai besoin d'un filigrane semi-transparent ?
 
- Met le`IsSemitrasparent`propriété à`true` pour rendre votre filigrane semi-transparent.
+ Réglez le`IsSemitrasparent`propriété à`true` pour rendre votre filigrane semi-transparent.

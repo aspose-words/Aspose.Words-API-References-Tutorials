@@ -23,7 +23,7 @@ Ezeknek az oktatóanyagoknak a végére olyan ismeretekkel és készségekkel re
 
 Tehát merüljön el a fent felsorolt oktatóanyagokban, és aknázza ki az Aspose.Words for Java teljes potenciálját a dokumentumokkal kapcsolatos projektjeiben. Boldog kódolást!
 
- További információkért tekintse meg a[Aspose.Words for Java API dokumentáció](https://reference.aspose.com/words/java/) , és a kezdéshez töltse le a webhelyről[itt](https://releases.aspose.com/words/java/) . Ha bármilyen kérdése van, vagy segítségre van szüksége, forduljon bizalommal hozzánk[támogatói fórum](https://forum.aspose.com/).
+ További információkért tekintse meg a[Aspose.Words for Java API dokumentáció](https://reference.aspose.com/words/java/) , és a kezdéshez töltse le innen[itt](https://releases.aspose.com/words/java/) . Ha bármilyen kérdése van, vagy segítségre van szüksége, forduljon bizalommal hozzánk[támogatási fórum](https://forum.aspose.com/).
 
 ## Dokumentumkonverziós és exportálási oktatóanyagok
 ### [Egyéni vonalkód-címkék generálása az Aspose.Words for Java programban](./generating-custom-barcode-labels/)

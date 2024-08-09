@@ -2,144 +2,130 @@
 title: Di chuyển nút trong tài liệu được theo dõi
 linktitle: Di chuyển nút trong tài liệu được theo dõi
 second_title: API xử lý tài liệu Aspose.Words
-description: Di chuyển các nút trong tài liệu được theo dõi bằng Aspose.Words for .NET.
+description: Tìm hiểu cách di chuyển các nút trong tài liệu Word được theo dõi bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/move-node-in-tracked-document/
 ---
+## Giới thiệu
 
-Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn cách di chuyển nút trong tài liệu Word được theo dõi bằng Aspose.Words cho .NET. Chúng tôi sẽ cung cấp cho bạn mã nguồn hoàn chỉnh và chỉ cho bạn cách định dạng đầu ra đánh dấu.
+Xin chào những người đam mê Aspose.Words! Nếu bạn cần di chuyển một nút trong tài liệu Word trong khi theo dõi các bản sửa đổi thì bạn đã đến đúng nơi. Hôm nay, chúng ta sẽ đi sâu vào cách đạt được điều này bằng Aspose.Words for .NET. Bạn không chỉ tìm hiểu quy trình từng bước mà còn học được một số mẹo và thủ thuật để giúp thao tác tài liệu của bạn trơn tru và hiệu quả.
 
-## Bước 1: Tạo tài liệu
+## Điều kiện tiên quyết
 
-Bước đầu tiên là tạo một tài liệu mới và thêm các đoạn văn.
+Trước khi bắt tay vào làm một số mã, hãy đảm bảo rằng bạn có mọi thứ mình cần:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Paragraph 1");
-builder.Writeln("Paragraph 2");
-builder.Writeln("Paragraph 3");
-builder.Writeln("Paragraph 4");
-builder.Writeln("Paragraph 5");
-builder.Writeln("Paragraph 6");
-Body body = doc.FirstSection.Body;
-Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
-```
+-  Aspose.Words cho .NET: Tải xuống[đây](https://releases.aspose.com/words/net/).
+- Môi trường .NET: Đảm bảo bạn đã thiết lập môi trường phát triển .NET tương thích.
+- Kiến thức cơ bản về C#: Hướng dẫn này giả sử bạn có hiểu biết cơ bản về C#.
 
-## Bước 2: Theo dõi các sửa đổi
+Có mọi thứ? Tuyệt vời! Hãy chuyển sang các không gian tên mà chúng ta cần nhập.
 
-Chúng tôi sẽ kích hoạt tính năng theo dõi sửa đổi trong tài liệu.
+## Nhập không gian tên
+
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết. Đây là những điều cần thiết để làm việc với Aspose.Words và xử lý các nút tài liệu.
 
 ```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+using Aspose.Words;
+using System;
 ```
 
-## Bước 3: Di chuyển một nút
+Được rồi, hãy chia quy trình thành các bước có thể quản lý được. Mỗi bước sẽ được giải thích chi tiết để đảm bảo bạn hiểu điều gì đang xảy ra ở mọi thời điểm.
 
-Chúng tôi sẽ di chuyển một nút (đoạn) từ vị trí này sang vị trí khác trong khi tạo các bản sửa đổi.
+## Bước 1: Khởi tạo tài liệu
 
-```csharp
-Node node = body.Paragraphs[3];
-Node endNode = body.Paragraphs[5].NextSibling;
-Node referenceNode = body.Paragraphs[0];
-while (node != endNode)
-{
-     Node nextNode = node. NextSibling;
-     body. InsertBefore(node, referenceNode);
-     node = nextNode;
-}
-```
-
-## Bước 4: Dừng theo dõi đánh giá
-
-Chúng tôi sẽ ngừng theo dõi các sửa đổi trong tài liệu.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-## Bước 5: Lưu tài liệu
-
- Sau khi chèn trường biểu mẫu nhập văn bản, hãy lưu tài liệu vào vị trí mong muốn bằng cách sử dụng`Save`phương pháp. Đảm bảo cung cấp đường dẫn tệp thích hợp:
-
-```csharp
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-```
-
-
-### Mã nguồn ví dụ cho Di chuyển nút trong tài liệu được theo dõi bằng Aspose.Words cho .NET
-
-Đây là mã nguồn đầy đủ để di chuyển một nút trong tài liệu được theo dõi bằng Aspose.Words cho .NET:
-
+ Để bắt đầu, chúng ta cần khởi tạo một tài liệu mới và sử dụng một`DocumentBuilder` để thêm một số đoạn văn.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Bổ sung một số đoạn văn
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
 builder.Writeln("Paragraph 4");
 builder.Writeln("Paragraph 5");
 builder.Writeln("Paragraph 6");
+
+// Kiểm tra số đoạn văn ban đầu
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+```
 
-// Bắt đầu theo dõi các sửa đổi.
+## Bước 2: Bắt đầu theo dõi các bản sửa đổi
+
+Tiếp theo, chúng ta cần bắt đầu theo dõi các sửa đổi. Điều này rất quan trọng vì nó cho phép chúng ta xem những thay đổi được thực hiện đối với tài liệu.
+
+```csharp
+// Bắt đầu theo dõi các sửa đổi
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
 
-// Tạo các bản sửa đổi khi di chuyển một nút từ vị trí này sang vị trí khác.
+## Bước 3: Di chuyển nút
+
+Bây giờ đến phần cốt lõi của nhiệm vụ của chúng ta: di chuyển một nút từ vị trí này sang vị trí khác. Chúng ta sẽ di chuyển đoạn thứ ba và đặt nó trước đoạn đầu tiên.
+
+```csharp
+// Xác định nút cần di chuyển và phạm vi kết thúc của nó
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
+
+// Di chuyển các nút trong phạm vi xác định
 while (node != endNode)
 {
-	Node nextNode = node.NextSibling;
-	body.InsertBefore(node, referenceNode);
-	node = nextNode;
+    Node nextNode = node.NextSibling;
+    body.InsertBefore(node, referenceNode);
+    node = nextNode;
 }
+```
 
-// Dừng quá trình theo dõi sửa đổi.
+## Bước 4: Dừng theo dõi các bản sửa đổi
+
+Khi chúng tôi đã di chuyển các nút, chúng tôi cần ngừng theo dõi các bản sửa đổi.
+
+```csharp
+// Dừng theo dõi các bản sửa đổi
 doc.StopTrackRevisions();
+```
 
-// Có 3 đoạn văn bổ sung trong phạm vi chuyển từ.
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, hãy lưu tài liệu đã sửa đổi của chúng ta vào thư mục đã chỉ định.
+
+```csharp
+// Lưu tài liệu đã sửa đổi
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
+
+// Xuất số đoạn văn cuối cùng
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã học cách di chuyển một nút trong tài liệu Word được theo dõi bằng Aspose.Words cho .NET. Bằng cách làm theo các bước tạo tài liệu, bật theo dõi sửa đổi, di chuyển nút và dừng theo dõi sửa đổi, chúng tôi có thể thực hiện thao tác này thành công. Aspose.Words for .NET là một công cụ mạnh mẽ để Xử lý Từ bằng tài liệu Word và cung cấp các tính năng nâng cao để quản lý các bản sửa đổi. Giờ đây, bạn có thể sử dụng kiến thức này để di chuyển các nút trong tài liệu Word của riêng mình trong khi theo dõi các bản sửa đổi bằng Aspose.Words cho .NET.
+Và bạn có nó! Bạn đã di chuyển thành công một nút trong tài liệu được theo dõi bằng Aspose.Words for .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác các tài liệu Word theo chương trình. Cho dù bạn đang tạo, chỉnh sửa hay theo dõi các thay đổi, Aspose.Words đều có thể hỗ trợ bạn. Vì vậy, hãy tiếp tục và thử xem. Chúc mừng mã hóa!
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Làm cách nào tôi có thể bật tính năng theo dõi sửa đổi trong tài liệu Aspose.Words for .NET?
+### Aspose.Words cho .NET là gì?
 
- Trả lời: Để bật tính năng theo dõi sửa đổi trong tài liệu Aspose.Words for .NET, bạn có thể sử dụng`StartTrackRevisions` phương pháp của`Document` sự vật. Phương pháp này lấy tham số là tên tác giả của các bản sửa đổi và ngày bắt đầu theo dõi các bản sửa đổi.
+Aspose.Words for .NET là một thư viện lớp để làm việc với các tài liệu Word theo chương trình. Nó cho phép các nhà phát triển tạo, chỉnh sửa, chuyển đổi và in tài liệu Word trong các ứng dụng .NET.
 
-```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
-```
+### Làm cách nào để theo dõi các bản sửa đổi trong tài liệu Word bằng Aspose.Words?
 
-#### Câu hỏi: Làm cách nào tôi có thể di chuyển một nút trong tài liệu được theo dõi mà không tạo ra các bản sửa đổi?
+ Để theo dõi các sửa đổi, hãy sử dụng`StartTrackRevisions` phương pháp trên`Document` sự vật. Điều này sẽ cho phép theo dõi sửa đổi, hiển thị mọi thay đổi được thực hiện đối với tài liệu.
 
- Trả lời: Nếu bạn muốn di chuyển một nút trong tài liệu được theo dõi mà không tạo ra các bản sửa đổi, bạn có thể sử dụng`Remove`Và`InsertAfter` hoặc`InsertBefore` các phương pháp của`Node` sự vật. Ví dụ: để di chuyển một đoạn này sang đoạn khác, bạn có thể sử dụng đoạn mã sau:
+### Tôi có thể di chuyển nhiều nút trong Aspose.Words không?
 
-```csharp
-Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
-Node referenceNode = document.FirstSection.Body.Paragraphs[1];
-nodeToMove.Remove();
-document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
-```
+Có, bạn có thể di chuyển nhiều nút bằng cách lặp lại chúng và sử dụng các phương thức như`InsertBefore` hoặc`InsertAfter` để đặt chúng vào vị trí mong muốn.
 
-#### Câu hỏi: Làm cách nào tôi có thể ngừng theo dõi sửa đổi trong tài liệu Aspose.Words for .NET?
+### Làm cách nào để ngừng theo dõi các bản sửa đổi trong Aspose.Words?
 
- Đáp: Để ngừng theo dõi các bản sửa đổi trong tài liệu Aspose.Words for .NET, bạn có thể sử dụng`StopTrackRevisions` phương pháp của`Document` sự vật.
+ Sử dụng`StopTrackRevisions` phương pháp trên`Document` phản đối việc ngừng theo dõi các phiên bản.
 
-```csharp
-doc.StopTrackRevisions();
-```
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+
+ Bạn có thể tìm tài liệu chi tiết[đây](https://reference.aspose.com/words/net/).

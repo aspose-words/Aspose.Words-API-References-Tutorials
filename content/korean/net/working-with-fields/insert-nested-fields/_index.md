@@ -109,7 +109,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 예, IF 필드 내에 DATE, TIME, AUTHOR와 같은 다양한 필드를 중첩하여 동적 콘텐츠를 생성할 수 있습니다.
 
 ### .NET용 Aspose.Words는 무료인가요?
- Aspose.Words for .NET은 상용 라이브러리이지만[무료 시험판](https://releases.aspose.com/) 그것을 시험해보려고.
+ Aspose.Words for .NET은 상용 라이브러리이지만[무료 평가판](https://releases.aspose.com/) 그것을 시험해보려고.
 
 ### Aspose.Words를 다른 .NET 언어와 함께 사용할 수 있나요?
 예, Aspose.Words는 VB.NET 및 F#을 포함한 모든 .NET 언어를 지원합니다.

@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 2. .NET Framework : assurez-vous que vous disposez de .NET Framework 4.0 ou version ultérieure.
 3.  Aspose.Words for .NET : téléchargez et installez Aspose.Words for .NET à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
 4. Connaissance de base de C# : Une connaissance de la programmation C# est essentielle.
-5.  Une licence valide : obtenez une[permis temporaire](https://purchase.aspose.com/temporary-license/) ou achetez-en un chez[acheter un lien](https://purchase.aspose.com/buy).
+5.  Une licence valide : obtenez une[permis temporaire](https://purchase.aspose.com/temporary-license/) ou achetez-en un chez[lien d'achat](https://purchase.aspose.com/buy).
 
 ## Importer des espaces de noms
 
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 
 ## Conclusion
 
- Toutes nos félicitations! Vous avez personnalisé avec succès les étiquettes de données de graphique à l’aide d’Aspose.Words pour .NET. Cette bibliothèque offre une solution robuste pour gérer les documents Word par programmation, permettant aux développeurs de créer plus facilement des applications de traitement de documents sophistiquées et dynamiques. Plongez dans le[Documentation](https://reference.aspose.com/words/net/) pour explorer plus de fonctionnalités et de capacités.
+ Félicitations! Vous avez personnalisé avec succès les étiquettes de données de graphique à l’aide d’Aspose.Words pour .NET. Cette bibliothèque offre une solution robuste pour gérer les documents Word par programmation, permettant aux développeurs de créer plus facilement des applications de traitement de documents sophistiquées et dynamiques. Plongez dans le[documentation](https://reference.aspose.com/words/net/) pour explorer plus de fonctionnalités et de capacités.
 
 ## FAQ
 
@@ -132,4 +132,4 @@ Aspose.Words for .NET est une puissante bibliothèque de traitement de documents
 Oui, Aspose.Words pour .NET est compatible avec .NET Core, .NET Standard et .NET Framework.
 
 ### Où puis-je obtenir de l’assistance pour Aspose.Words pour .NET ?
- Vous pouvez visiter le[forum d'entraide](https://forum.aspose.com/c/words/8) pour l’aide et l’assistance de la communauté Aspose et des experts.
+ Vous pouvez visiter le[forum d'assistance](https://forum.aspose.com/c/words/8) pour l’aide et l’assistance de la communauté Aspose et des experts.

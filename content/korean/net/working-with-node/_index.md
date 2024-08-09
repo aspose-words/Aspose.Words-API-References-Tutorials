@@ -14,9 +14,9 @@ Aspose.Words for .NET의 노드는 단락, 표, 이미지 등과 같은 Word 문
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [노드 유형 사용](./use-node-type/) | Aspose.Words for .NET으로 문서별 정보에 액세스하기 위해 노드 유형을 사용하는 방법을 알아보세요. |
-| [상위 노드 가져오기](./get-parent-node/) | .NET용 Aspose.Words를 사용하여 특정 요소의 상위 노드를 가져오는 방법을 알아보세요. |
-| [소유자 문서](./owner-document/) | .NET용 Aspose.Words에서 소유자 문서를 사용하는 방법을 알아보세요. |
-| [하위 노드 열거](./enumerate-child-nodes/) | Aspose.Words for .NET을 사용하여 단락의 하위 노드를 열거하는 방법을 알아보세요. |
-| [유형화된 액세스](./typed-access/) | Aspose.Words for .NET에서 테이블을 조작하기 위해 형식화된 액세스를 사용하는 방법을 알아보세요. |
-| [단락 노드 생성 및 추가](./create-and-add-paragraph-node/) | Aspose.Words for .NET을 사용하여 Word 문서에 단락 노드를 만들고 추가하세요. |
+| [노드 유형 사용](./use-node-type/) | 자세한 가이드를 통해 .NET용 Aspose.Words의 NodeType 속성을 마스터하는 방법을 알아보세요. 문서 처리 기술을 향상시키려는 개발자에게 적합합니다. |
+| [상위 노드 가져오기](./get-parent-node/) | 이 상세한 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 문서 섹션의 상위 노드를 얻는 방법을 알아보세요. |
+| [소유자 문서](./owner-document/) | .NET용 Aspose.Words에서 소유자 문서로 작업하는 방법을 알아보세요. 이 단계별 가이드에서는 문서 내에서 노드를 만들고 조작하는 방법을 다룹니다. |
+| [하위 노드 열거](./enumerate-child-nodes/) | 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 하위 노드를 열거하는 방법을 알아보세요. |
+| [유형화된 액세스](./typed-access/) | .NET용 Aspose.Words에서 형식화된 액세스를 사용하여 테이블 및 행과 같은 문서 요소를 쉽게 조작하는 방법을 알아보세요. 이 단계별 가이드는 작업 흐름을 단순화합니다. |
+| [단락 노드 생성 및 추가](./create-and-add-paragraph-node/) | 이 상세한 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 문서에 단락 노드를 만들고 추가하는 방법을 알아보세요. |

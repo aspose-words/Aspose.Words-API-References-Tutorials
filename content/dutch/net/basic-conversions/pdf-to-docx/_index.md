@@ -85,7 +85,7 @@ Ja, u kunt meerdere PDF's doorlopen en ze allemaal op dezelfde manier convertere
 Ja, Aspose.Words doet uitstekend werk door de originele opmaak te behouden.
 
 ### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
- Hoewel u een tijdelijke licentie voor evaluatie kunt gebruiken, moet u voor commercieel gebruik een volledige licentie aanschaffen. Bekijk de[aankooppagina](https://purchase.aspose.com/buy) voor meer details.
+ Hoewel u een tijdelijke licentie voor evaluatie kunt gebruiken, moet u voor commercieel gebruik een volledige licentie aanschaffen. Bekijk de[aankooppagina](https://purchase.aspose.com/buy) voor meer informatie.
 
 ### Kan ik Aspose.Words voor .NET op verschillende besturingssystemen gebruiken?
 Ja, Aspose.Words voor .NET is platformonafhankelijk en kan worden gebruikt op Windows, Linux en macOS.

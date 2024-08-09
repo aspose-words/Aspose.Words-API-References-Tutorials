@@ -14,7 +14,7 @@ url: /zh-hant/net/programming-with-tables/get-table-position/
 ## 先決條件
 
 在我們深入討論細節之前，讓我們確保您已擁有所需的一切：
--  Aspose.Words for .NET：確保您擁有最新版本。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：確保您擁有最新版本。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
 - Visual Studio：任何版本都可以，但總是建議使用最新版本。
 - .NET Framework：確保您擁有 .NET Framework 4.0 或更高版本。
 - Word 文件：在本教學中，我們將使用名為的文檔`Tables.docx`.
@@ -79,7 +79,7 @@ else
 
 ## 結論
 
-現在你就擁有了！透過執行這些簡單的步驟，您已了解如何使用 Aspose.Words for .NET 確定 Word 文件中表格的位置。無論是為了完美對齊還是只是為了滿足您的好奇心，了解如何獲得桌子的位置都非常有用。不斷嘗試和探索 Aspose.Words 的更多功能，成為真正的 Word 文件大師！
+現在你就得到它了！透過執行這些簡單的步驟，您已了解如何使用 Aspose.Words for .NET 確定 Word 文件中表格的位置。無論是為了完美對齊還是只是為了滿足您的好奇心，了解如何獲得桌子的位置都非常有用。不斷嘗試和探索 Aspose.Words 的更多功能，成為真正的 Word 文件大師！
 
 ## 常見問題解答
 

@@ -15,13 +15,13 @@ Khi làm việc với các tài liệu động, điều cần thiết là phải
 
 Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có những điều sau:
 
-1.  Aspose.Words for .NET Library: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[trang mạng](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[trang web](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: Bất kỳ phiên bản Visual Studio nào hỗ trợ phát triển .NET. Đảm bảo bạn đã thiết lập dự án .NET nơi bạn có thể tích hợp Aspose.Words.
 
 3. Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C# và .NET framework.
 
-4.  Giấy phép Aspose: Nếu bạn đang sử dụng phiên bản Aspose.Words được cấp phép, hãy đảm bảo giấy phép của bạn được định cấu hình đúng. Bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) Nếu cần thiết.
+4.  Giấy phép Aspose: Nếu bạn đang sử dụng phiên bản Aspose.Words được cấp phép, hãy đảm bảo giấy phép của bạn được định cấu hình đúng. Bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) nếu cần.
 
 5. Hiểu biết về Trường Từ: Kiến thức về trường Word, cụ thể là trường IF, sẽ hữu ích nhưng không bắt buộc.
 
@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder();
 FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 ```
 
- Đây,`builder.InsertField` được sử dụng để chèn một trường vào vị trí con trỏ hiện tại. Loại trường được chỉ định là`"IF 1 = 1"` , đây là một điều kiện đơn giản trong đó 1 bằng 1. Điều này sẽ luôn đánh giá là đúng. Các`null` tham số biểu thị rằng không cần định dạng bổ sung cho trường này.
+ Đây,`builder.InsertField` được sử dụng để chèn một trường vào vị trí con trỏ hiện tại. Loại trường được chỉ định là`"IF 1 = 1"` , đây là một điều kiện đơn giản trong đó 1 bằng 1. Điều này sẽ luôn đánh giá là đúng. các`null` tham số biểu thị rằng không cần định dạng bổ sung cho trường này.
 
 ## Bước 3: Đánh giá điều kiện IF
 
@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- Các`EvaluateCondition` phương thức trả về một`FieldIfComparisonResult` enum đại diện cho kết quả đánh giá điều kiện. Enum này có thể có các giá trị như`True`, `False` , hoặc`Unknown`.
+ các`EvaluateCondition` phương thức trả về một`FieldIfComparisonResult` enum đại diện cho kết quả đánh giá điều kiện. Enum này có thể có các giá trị như`True`, `False` , hoặc`Unknown`.
 
 ## Bước 4: Hiển thị kết quả
 
@@ -93,7 +93,7 @@ Trường IF là trường Word cho phép bạn chèn logic điều kiện vào 
  Bạn có thể chèn trường IF bằng cách sử dụng`InsertField` phương pháp của`DocumentBuilder` lớp, chỉ định điều kiện bạn muốn đánh giá.
 
 ###  làm gì`EvaluateCondition` method do?
- Các`EvaluateCondition` phương thức đánh giá điều kiện được chỉ định trong trường IF và trả về kết quả, cho biết điều kiện đó là đúng hay sai.
+ các`EvaluateCondition` phương thức đánh giá điều kiện được chỉ định trong trường IF và trả về kết quả, cho biết điều kiện đó là đúng hay sai.
 
 ### Tôi có thể sử dụng các điều kiện phức tạp với trường IF không?
 Có, bạn có thể sử dụng các điều kiện phức tạp với trường IF bằng cách chỉ định các biểu thức và so sánh khác nhau nếu cần.

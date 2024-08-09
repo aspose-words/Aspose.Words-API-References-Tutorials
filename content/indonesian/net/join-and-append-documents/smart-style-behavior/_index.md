@@ -15,7 +15,7 @@ Halo, para ahli kata! Pernahkah Anda terjebak dalam kerumitan menggabungkan doku
 
 Sebelum kita memulai petualangan penggabungan dokumen ini, pastikan kita memiliki semua yang kita perlukan:
 
--  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Jika tidak, ambil dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Jika tidak, ambil dari[halaman unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Lingkungan apa pun yang kompatibel dengan .NET dapat digunakan, seperti Visual Studio.
 - Dua Dokumen Word: Untuk tutorial ini, kita akan menggunakan “Document source.docx” dan “Northwind trader.docx”.
 -  Lisensi Aspose: Untuk menghindari batasan apa pun, dapatkan[izin sementara](https://purchase.aspose.com/temporary-license/)jika Anda belum membelinya.

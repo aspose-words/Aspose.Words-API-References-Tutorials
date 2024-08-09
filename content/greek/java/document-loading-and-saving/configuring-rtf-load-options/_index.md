@@ -58,7 +58,7 @@ Document doc = new Document("Your Directory Path" + "UTF-8 characters.rtf", load
 doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
  Σε αυτό το σεμινάριο, μάθατε πώς να διαμορφώνετε τις επιλογές φόρτωσης RTF στο Aspose.Words για Java. Συγκεκριμένα, εστιάσαμε στην ενεργοποίηση του`RecognizeUtf8Text` επιλογή χειρισμού κωδικοποιημένου κειμένου UTF-8 στα έγγραφά σας RTF. Αυτή η δυνατότητα σάς επιτρέπει να εργάζεστε με ένα ευρύ φάσμα κωδικοποιήσεων κειμένου, βελτιώνοντας την ευελιξία των εργασιών επεξεργασίας εγγράφων σας.
 

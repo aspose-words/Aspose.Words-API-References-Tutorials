@@ -10,7 +10,7 @@ url: /hu/net/programming-with-shapes/detect-smart-art-shape/
 
 ## Bevezetés
 
-Halihó! Szüksége volt már arra, hogy a Word-dokumentumok SmartArt-jával programozottan dolgozzon? Legyen szó jelentések automatizálásáról, dinamikus dokumentumok létrehozásáról vagy egyszerűen csak belemerül a dokumentumfeldolgozásba, az Aspose.Words for .NET megoldást nyújt Önnek. Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet felismerni a SmartArt-alakzatokat Word-dokumentumokban az Aspose.Words for .NET használatával. Az egyes lépéseket egy részletes, könnyen követhető útmutatóban részletezzük. A cikk végére könnyedén azonosíthatja a SmartArt alakzatokat bármely Word-dokumentumban!
+Szia! Szüksége volt már arra, hogy a Word-dokumentumok SmartArt-jával programozottan dolgozzon? Legyen szó jelentések automatizálásáról, dinamikus dokumentumok létrehozásáról vagy egyszerűen csak belemerül a dokumentumfeldolgozásba, az Aspose.Words for .NET megoldást nyújt Önnek. Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet felismerni a SmartArt-alakzatokat Word-dokumentumokban az Aspose.Words for .NET használatával. Az egyes lépéseket egy részletes, könnyen követhető útmutatóban részletezzük. A cikk végére könnyedén azonosíthatja a SmartArt alakzatokat bármely Word-dokumentumban!
 
 ## Előfeltételek
 
@@ -21,7 +21,7 @@ Mielőtt belemerülnénk a részletekbe, győződjön meg arról, hogy mindent b
 3. Visual Studio: Bármelyik legújabb verziónak működnie kell, de a legújabb verzió ajánlott.
 4. .NET-keretrendszer: Győződjön meg arról, hogy telepítve van a rendszerére.
 
-Készen áll az indulásra? Fantasztikus! Egyből ugorjunk be.
+Készen áll az indulásra? Döbbenetes! Egyből ugorjunk be.
 
 ## Névterek importálása
 
@@ -94,7 +94,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### 3. Hogyan ismerhetek fel más típusú alakzatokat egy dokumentumban?
 
- Módosíthatja a LINQ-lekérdezést, hogy más tulajdonságokat vagy alakzattípusokat keressen. Utal[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Módosíthatja a LINQ-lekérdezést, hogy más tulajdonságokat vagy alakzattípusokat keressen. Lásd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 
@@ -102,4 +102,4 @@ Támogatást kaphat, ha ellátogat a[Aspose támogatási fórum](https://forum.a
 
 ### 5. Manipulálhatom a SmartArt alakzatokat programozottan?
 
- Igen, az Aspose.Words lehetővé teszi a SmartArt-alakzatok programozott kezelését. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
+ Igen, az Aspose.Words lehetővé teszi a SmartArt-alakzatok programozott kezelését. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.

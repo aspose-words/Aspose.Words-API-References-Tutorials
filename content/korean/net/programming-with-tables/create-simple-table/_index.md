@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2단계: 문서 및 DocumentBuilder 초기화
 
- 다음으로, 새로운 인스턴스를 초기화합니다.`Document` 수업. 이 인스턴스는 Word 문서를 나타냅니다. 우리는 또한`DocumentBuilder` 클래스는 문서의 내용을 구성하는 데 도움이 됩니다.
+ 다음으로, 새로운 인스턴스를 초기화합니다.`Document` 수업. 이 인스턴스는 Word 문서를 나타냅니다. 우리는 또한`DocumentBuilder` 문서의 내용을 구성하는 데 도움이 되는 클래스입니다.
 
 ```csharp
 Document doc = new Document();

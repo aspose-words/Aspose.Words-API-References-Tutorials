@@ -61,7 +61,7 @@ doc.save("output.pdf", SaveFormat.PDF);
 
 ## Paso 4: convertir a otros formatos
 
-Además de PDF, Aspose.Words para Java le permite convertir documentos a otros formatos. Aquí hay unos ejemplos:
+Además de PDF, Aspose.Words para Java le permite convertir documentos a otros formatos. A continuación se muestran algunos ejemplos:
 
 ### Conversión a RTF
 

@@ -14,7 +14,7 @@ V tomto tutoriálu prozkoumáme, jak používat webová rozšíření v Aspose.W
 
 ## Předpoklady
 
- Než začnete, ujistěte se, že máte v projektu nastavené Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než začnete, ujistěte se, že máte v projektu nastavené Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Přidání podokna úloh webového rozšíření
 
@@ -26,7 +26,7 @@ Chcete-li do dokumentu přidat podokno úloh webového rozšíření, postupujte
 Document doc = new Document();
 ```
 
-##  Vytvořit`TaskPane` instance and add it to the document's web extension task panes:
+##  Vytvořte a`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();
@@ -103,4 +103,4 @@ Přestože Aspose.Words for Java poskytuje robustní podporu pro webová rozší
 
 ### Jak najdu další informace a zdroje o používání webových rozšíření v Aspose.Words for Java?
 
- Podrobnou dokumentaci a zdroje o používání webových rozšíření v Aspose.Words pro Java najdete v dokumentaci Aspose na adrese[tady](https://reference.aspose.com/words/java/). Poskytuje podrobné informace, příklady a pokyny pro práci s webovými rozšířeními pro vylepšení funkčnosti vašeho dokumentu.
+ Podrobnou dokumentaci a zdroje o používání webových rozšíření v Aspose.Words pro Java najdete v dokumentaci Aspose na adrese[zde](https://reference.aspose.com/words/java/). Poskytuje podrobné informace, příklady a pokyny pro práci s webovými rozšířeními pro vylepšení funkčnosti vašeho dokumentu.

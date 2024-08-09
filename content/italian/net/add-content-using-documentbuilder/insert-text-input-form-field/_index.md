@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial, ci immergiamo nel mondo di Aspose.Words per .NET per imparare come inserire un campo modulo di input di testo in un documento Word. Allacciate le cinture, perché stiamo per intraprendere un viaggio che renderà le vostre attività di automazione dei documenti un gioco da ragazzi. Che tu stia creando moduli, modelli o documenti interattivi, padroneggiare questa abilità eleverà le tue applicazioni .NET al livello successivo.
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx
 
 ## Conclusione
 
-E il gioco è fatto! Hai inserito con successo un campo modulo di input di testo in un documento di Word utilizzando Aspose.Words per .NET. Questa è solo la punta dell'iceberg. Con Aspose.Words puoi automatizzare e migliorare le attività di elaborazione dei documenti in innumerevoli modi. Dalla creazione di modelli complessi alla generazione di moduli interattivi, le possibilità sono infinite.
+Ed ecco qua! Hai inserito con successo un campo modulo di input di testo in un documento di Word utilizzando Aspose.Words per .NET. Questa è solo la punta dell'iceberg. Con Aspose.Words puoi automatizzare e migliorare le attività di elaborazione dei documenti in innumerevoli modi. Dalla creazione di modelli complessi alla generazione di moduli interattivi, le possibilità sono infinite.
 
 ## Domande frequenti
 

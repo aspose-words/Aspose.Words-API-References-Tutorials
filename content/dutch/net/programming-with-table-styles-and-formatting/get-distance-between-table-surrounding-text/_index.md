@@ -9,13 +9,13 @@ url: /nl/net/programming-with-table-styles-and-formatting/get-distance-between-t
 ---
 ## Invoering
 
-Stel je voor dat je een strak rapport of een belangrijk document aan het voorbereiden bent, en je wilt dat je tabellen er precies goed uitzien. U moet ervoor zorgen dat er voldoende ruimte is tussen de tabellen en de tekst eromheen, zodat het document gemakkelijk leesbaar en visueel aantrekkelijk is. Met Aspose.Words voor .NET kunt u deze afstanden eenvoudig programmatisch ophalen en aanpassen. Deze tutorial leidt u door de stappen om dit te bereiken, waardoor uw documenten opvallen met dat extra vleugje professionaliteit.
+Stel u voor dat u een strak rapport of een belangrijk document aan het voorbereiden bent, en u wilt dat uw tabellen er precies goed uitzien. U moet ervoor zorgen dat er voldoende ruimte is tussen de tabellen en de tekst eromheen, zodat het document gemakkelijk leesbaar en visueel aantrekkelijk is. Met Aspose.Words voor .NET kunt u deze afstanden eenvoudig programmatisch ophalen en aanpassen. Deze tutorial leidt u door de stappen om dit te bereiken, waardoor uw documenten opvallen met dat extra vleugje professionaliteit.
 
 ## Vereisten
 
 Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET-bibliotheek: U moet de Aspose.Words voor .NET-bibliotheek geïnstalleerd hebben. Als u dat nog niet heeft gedaan, kunt u deze downloaden via de[Aspose-releases](https://releases.aspose.com/words/net/) bladzijde.
+1.  Aspose.Words voor .NET-bibliotheek: U moet de Aspose.Words voor .NET-bibliotheek geïnstalleerd hebben. Als u dat nog niet heeft gedaan, kunt u deze downloaden via de[Aspose-releases](https://releases.aspose.com/words/net/) pagina.
 2. Ontwikkelomgeving: een werkende ontwikkelomgeving waarop .NET Framework is geïnstalleerd. Visual Studio is een goede optie.
 3. Voorbeelddocument: een Word-document (.docx) met ten minste één tabel om de code te testen.
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Laten we het proces nu opsplitsen in eenvoudig te volgen stappen. Wij verzorgen alles, van het laden van uw document tot het opvragen van de afstanden rond uw tafel.
+Laten we het proces nu opsplitsen in eenvoudig te volgen stappen. Wij verzorgen alles, van het laden van uw document tot het opvragen van de afstanden rondom uw tafel.
 
 ## Stap 1: Laad uw document
 

@@ -2,127 +2,125 @@
 title: Penekanan
 linktitle: Penekanan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan penekanan (tebal dan miring) dengan Aspose.Words for .NET Panduan langkah demi langkah.
+description: Pelajari cara membuat teks yang ditekankan di Markdown menggunakan Aspose.Words untuk .NET. Panduan ini mencakup gaya tebal, miring, dan gabungan dengan petunjuk langkah demi langkah.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/emphases/
 ---
+## Perkenalan
 
-Dalam contoh ini, kami akan menjelaskan cara menggunakan penekanan dengan Aspose.Words untuk .NET. Penekanan digunakan untuk menekankan bagian tertentu dari teks, seperti huruf tebal dan miring.
+Penurunan harga adalah bahasa markup ringan yang dapat Anda gunakan untuk menambahkan elemen pemformatan ke dokumen teks biasa. Dalam panduan ini, kita akan mendalami seluk beluk penggunaan Aspose.Words untuk .NET untuk membuat file Markdown dengan teks yang ditekankan, seperti gaya tebal dan miring. Baik Anda membuat dokumentasi, postingan blog, atau teks apa pun yang memerlukan sedikit bakat, tutorial ini akan memandu Anda melalui setiap langkah prosesnya.
 
-## Langkah 1: Inisialisasi dokumen
+## Prasyarat
 
- Pertama, kita akan menginisialisasi dokumen dengan membuat sebuah instance dari`Document` kelas.
+Sebelum kita beralih ke kode, pastikan kita memiliki semua yang kita perlukan untuk memulai:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-```
+1.  Perpustakaan Aspose.Words for .NET: Pastikan Anda menginstal Aspose.Words for .NET versi terbaru. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan .NET yang sesuai, seperti Visual Studio.
+3. Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan bermanfaat.
+4. Dasar-dasar Penurunan Harga: Keakraban dengan sintaksis Penurunan Harga akan membantu Anda memahami konteks dengan lebih baik.
 
-## Langkah 2: Menggunakan pembuat dokumen
+## Impor Namespace
 
-Selanjutnya, kita akan menggunakan pembuat dokumen untuk menambahkan konten ke dokumen kita.
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Langkah 3: Tambahkan teks dengan Penekanan
-
-Kita dapat menambahkan teks penekanan dengan mengubah properti font pembuat dokumen. Dalam contoh ini, kami menggunakan huruf tebal dan miring untuk menekankan bagian teks yang berbeda.
+Untuk bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan. Tambahkan arahan penggunaan berikut di bagian atas file kode Anda:
 
 ```csharp
-builder.Writeln("Markdown treats asterisks (*) and underscores (_) as emphases indicators.");
-builder.Write("You can write");
-
-builder.Font.Bold = true;
-builder.Write("bold");
-
-builder.Font.Bold = false;
-builder.Write(" or ");
-
-builder.Font.Italic = true;
-builder.Write("italic");
-
-builder.Font.Italic = false;
-builder.Writeln(".");
-
-builder.Write("You can also write ");
-builder.Font.Bold = true;
-
-builder.Font.Italic = true;
-builder.Write("bold and italic");
-
-builder.Font.Bold = false;
-builder.Font.Italic = false;
-builder. Write(".");
-
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Langkah 4: Menyimpan dokumen
+## Langkah 1: Menyiapkan Dokumen dan DocumentBuilder
 
- Terakhir, kita bisa menyimpan dokumen dalam format yang diinginkan. Dalam contoh ini, kami menggunakan`.md` ekstensi untuk format penurunan harga.
-
-```csharp
-builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
-```
-
-Selamat! Anda sekarang telah mempelajari cara menggunakan penekanan dengan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Penekanan menggunakan Aspose.Words untuk .NET
-
+Hal pertama yang pertama, kita perlu membuat dokumen Word baru dan menginisialisasi a`DocumentBuilder` untuk mulai menambahkan konten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ Itu`dataDir` Variabel adalah pengganti direktori tempat Anda akan menyimpan file Markdown. Pastikan untuk mengganti "DIREKTORI DOKUMEN ANDA" dengan jalur sebenarnya.
+
+## Langkah 2: Menulis Teks Biasa
+
+Sekarang, mari tambahkan beberapa teks biasa ke dokumen kita. Ini akan berfungsi sebagai dasar untuk menunjukkan penekanan teks.
+
+```csharp
 builder.Writeln("Markdown treats asterisks (*) and underscores (_) as indicators of emphases.");
 builder.Write("You can write ");
+```
 
+ Di Sini,`Writeln` menambahkan baris baru setelah teks, sementara`Write` berlanjut pada baris yang sama.
+
+## Langkah 3: Menambahkan Teks Tebal
+
+ Untuk menambahkan teks tebal di Markdown, bungkus teks yang diinginkan dengan tanda bintang ganda (``). Di Aspose.Words untuk .NET, Anda dapat mencapainya dengan mengatur`Bold` properti dari`Font` keberatan dengan`true`.
+
+```csharp
 builder.Font.Bold = true;
 builder.Write("bold");
-
 builder.Font.Bold = false;
 builder.Write(" or ");
+```
 
+Cuplikan kode ini menyetel teks "tebal" menjadi tebal dan kemudian kembali ke teks normal untuk kata "atau".
+
+## Langkah 4: Menambahkan Teks Miring
+
+Teks miring di Markdown dibungkus dengan tanda bintang tunggal (`*` ). Demikian pula, atur`Italic` properti dari`Font` keberatan dengan`true`.
+
+```csharp
 builder.Font.Italic = true;
 builder.Write("italic");
-
 builder.Font.Italic = false;
-builder.Writeln(" text. ");
+builder.Writeln(" text.");
+```
 
+Ini akan membuat "miring" dalam gaya miring, diikuti dengan teks biasa.
+
+## Langkah 5: Menggabungkan Teks Tebal dan Miring
+
+Anda dapat menggabungkan gaya tebal dan miring dengan membungkus teks dalam tanda bintang tiga (`*` ). Tetapkan keduanya`Bold`Dan`Italic` properti ke`true`.
+
+```csharp
 builder.Write("You can also write ");
 builder.Font.Bold = true;
-
 builder.Font.Italic = true;
 builder.Write("BoldItalic");
-
 builder.Font.Bold = false;
 builder.Font.Italic = false;
-builder.Write("text.");
+builder.Write(" text.");
+```
 
+Cuplikan ini menunjukkan cara menerapkan gaya tebal dan miring ke "BoldItalic".
+
+## Langkah 6: Menyimpan Dokumen sebagai Penurunan Harga
+
+Setelah menambahkan semua teks yang ditekankan, saatnya menyimpan dokumen sebagai file Markdown.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 ```
 
-### FAQ
+Baris ini menyimpan dokumen di direktori yang ditentukan dengan nama file "WorkingWithMarkdown.Emphases.md".
 
-#### T: Bagaimana cara menyorot teks menggunakan Markdown?
+## Kesimpulan
 
- J: Untuk menyorot teks menggunakan Markdown, cukup kelilingi teks dengan simbol yang sesuai. Menggunakan`*` atau`_` untuk huruf miring,`**` atau`__` untuk berani, dan`~~` untuk dicoret.
+Dan itu dia! Anda sekarang telah menguasai cara membuat teks yang ditekankan di Markdown menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan manipulasi dokumen Word secara terprogram dan mengekspornya ke berbagai format, termasuk Markdown. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat menyempurnakan dokumen Anda dengan teks tebal dan miring, menjadikannya lebih menarik dan mudah dibaca.
 
-#### T: Bisakah kita menggabungkan sorotan berbeda dalam teks yang sama?
+## FAQ
 
- J: Ya, dimungkinkan untuk menggabungkan sorotan berbeda dalam teks yang sama. Misalnya, Anda dapat mencetak tebal dan miring sebuah kata dengan menggunakan keduanya`**`Dan`*` di sekitar kata.
+### Bisakah saya menggunakan gaya teks lain di Markdown dengan Aspose.Words untuk .NET?
+Ya, Anda bisa menggunakan gaya lain seperti header, daftar, dan blok kode. Aspose.Words untuk .NET mendukung berbagai opsi pemformatan penurunan harga.
 
-#### T: Opsi penyorotan apa yang tersedia di Markdown?
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
+ Anda dapat mengunduh perpustakaan dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/) dan ikuti petunjuk instalasi yang diberikan.
 
-J: Opsi penyorotan yang tersedia di Markdown dicetak miring (`*` atau`_`), berani (`**` atau`__`), dan coretan (`~~`).
+### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
+ Ya, Anda dapat mengunduh a[uji coba gratis](https://releases.aspose.com/) untuk menguji fitur Aspose.Words untuk .NET.
 
-#### T: Bagaimana cara menangani kasus ketika teks berisi karakter khusus yang digunakan oleh Markdown untuk menyorot?
+### Bisakah saya mendapatkan dukungan jika saya mengalami masalah?
+ Sangat! Anda dapat mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk mendapatkan bantuan dari komunitas dan tim Aspose.
 
- J: Jika teks Anda berisi karakter khusus yang digunakan oleh Markdown untuk menyorot, Anda dapat menghindarinya dengan mengawalinya dengan a`\` . Misalnya,`\*` akan menampilkan tanda bintang literal.
-
-#### T: Bisakah kami menyesuaikan tampilan penyorotan menggunakan CSS?
-
-J: Penyorotan di Markdown biasanya dirender menggunakan gaya default browser. Jika Anda mengonversi Markdown ke HTML, Anda dapat menyesuaikan tampilan penyorotan menggunakan aturan CSS.
+### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
+ Anda dapat memperoleh a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk mengevaluasi kemampuan penuh perpustakaan.

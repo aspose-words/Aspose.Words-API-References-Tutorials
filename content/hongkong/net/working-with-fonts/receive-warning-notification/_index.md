@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/receive-warning-notification/
 ---
+## 介紹
 
 您是否厭倦了處理文件中意外的字體問題？透過 Aspose.Words for .NET，您可以收到任何潛在問題在文件處理過程中的通知，從而更輕鬆地維護文件品質。這份綜合指南將引導您在 Aspose.Words 中設定警告通知，確保您不會再錯過重要的警告。
 
@@ -17,7 +18,7 @@ url: /zh-hant/net/working-with-fonts/receive-warning-notification/
 - C# 基礎知識：熟悉 C# 將有助於您理解和實施這些步驟。
 -  Aspose.Words for .NET Library：從以下位置下載並安裝：[下載連結](https://releases.aspose.com/words/net/).
 - 開發環境：用於編寫和執行程式碼的 Visual Studio 等設定。
-- 範例文件：有一個範例文件（例如，`Rendering.docx`） 跟...共事。
+- 範例文件：有一個範例文件（例如，`Rendering.docx`）一起工作。
 
 ## 導入命名空間
 
@@ -83,7 +84,7 @@ doc.UpdatePageLayout();
 doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 ```
 
-透過執行這些步驟，您已將應用程式配置為正常處理字體替換，並在發生替換時接收通知。
+透過執行這些步驟，您已將應用程式配置為正常處理字體替換，並在替換發生時接收通知。
 
 ## 結論
 
@@ -101,7 +102,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ###  Q3：我可以處理其他類型的警告嗎？`IWarningCallback`?
 
-是的`IWarningCallback`介面可以處理各種類型的警告，而不僅僅是字體替換。
+是的，`IWarningCallback`介面可以處理各種類型的警告，而不僅僅是字體替換。
 
 ### Q4：在哪裡可以找到對 Aspose.Words 的支援？
 

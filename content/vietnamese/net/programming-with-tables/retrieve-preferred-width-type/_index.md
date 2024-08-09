@@ -81,7 +81,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Những dòng mã này truy cập vào ô đầu tiên ở hàng đầu tiên của bảng và truy xuất loại và giá trị chiều rộng ưa thích của nó. Các`PreferredWidthType` có thể`Auto`, `Percent` , hoặc`Point`, cho biết cách xác định chiều rộng.
+ Những dòng mã này truy cập vào ô đầu tiên ở hàng đầu tiên của bảng và truy xuất loại và giá trị chiều rộng ưa thích của nó. các`PreferredWidthType` có thể`Auto`, `Percent` , hoặc`Point`, cho biết cách xác định chiều rộng.
 
 ## Bước 6: Hiển thị kết quả
 
@@ -96,7 +96,7 @@ Những dòng này sẽ in loại và giá trị chiều rộng ưa thích ra b�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Việc truy xuất loại ô bảng có chiều rộng ưa thích trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản khi được chia thành các bước có thể quản lý. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng thao tác các thuộc tính bảng trong tài liệu Word, giúp công việc quản lý tài liệu của bạn hiệu quả hơn nhiều.
+Và bạn có nó! Việc truy xuất loại ô bảng có chiều rộng ưa thích trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản khi được chia thành các bước có thể quản lý. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng thao tác các thuộc tính bảng trong tài liệu Word, giúp công việc quản lý tài liệu của bạn hiệu quả hơn nhiều.
 
 ## Câu hỏi thường gặp
 

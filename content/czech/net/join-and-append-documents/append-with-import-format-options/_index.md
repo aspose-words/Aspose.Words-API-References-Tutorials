@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/append-with-import-format-options/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přistihli jste se někdy, že potřebujete sloučit více dokumentů Wordu do jednoho, ale uvízli jste v těch otravných problémech s formátováním? Neboj se! Dnes se ponoříme hluboko do toho, jak můžete připojit jeden dokument Wordu k druhému pomocí Aspose.Words for .NET a zároveň zachovat úhledné a uklizené formátování. Připoutejte se, protože na konci této příručky z vás bude maestro spojující dokumenty!
+Ahoj! Přistihli jste se někdy, že potřebujete sloučit více dokumentů Wordu do jednoho, ale uvízli jste v těch otravných problémech s formátováním? Neboj se! Dnes se ponoříme hluboko do toho, jak můžete připojit jeden dokument Wordu k druhému pomocí Aspose.Words for .NET a zároveň zachovat úhledné a uklizené formátování. Připoutejte se, protože na konci této příručky z vás bude maestro spojující dokumenty!
 
 ## Předpoklady
 
 Než se vrhneme na zábavnou část, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto knihovnu. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto knihovnu. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Jakékoli prostředí kompatibilní s .NET, jako je Visual Studio.
 3. Základní znalost C#: Nemusíte být kouzelník, ale trocha znalosti C# vám pomůže.
 
@@ -91,10 +91,10 @@ tady to máte! Podle těchto kroků můžete snadno přidávat dokumenty pomocí
 ## FAQ
 
 ### Mohu ponechat číslování cílového dokumentu místo čísla zdroje?
- Ano, můžete upravit`ImportFormatOptions` dosáhnout toho.
+ Ano, můžete upravit`ImportFormatOptions` abychom toho dosáhli.
 
 ### Co když nemám Aspose.Words pro .NET?
- Bezplatnou zkušební verzi si můžete stáhnout z[tady](https://releases.aspose.com/).
+ Bezplatnou zkušební verzi si můžete stáhnout z[zde](https://releases.aspose.com/).
 
 ### Mohu tuto metodu použít pro jiné typy dokumentů, jako jsou PDF?
 Aspose.Words je speciálně pro dokumenty aplikace Word. Pro soubory PDF můžete potřebovat Aspose.PDF.

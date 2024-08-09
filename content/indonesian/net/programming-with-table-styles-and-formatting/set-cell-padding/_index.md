@@ -55,7 +55,7 @@ builder.InsertCell();
 
 ## Langkah 3: Atur Bantalan Sel
 
-Ini adalah dimana keajaiban terjadi! Kita akan mengatur jumlah ruang (dalam poin) untuk ditambahkan ke kiri, atas, kanan, dan bawah konten sel.
+Di sinilah keajaiban terjadi! Kita akan mengatur jumlah ruang (dalam poin) untuk ditambahkan ke kiri, atas, kanan, dan bawah konten sel.
 
 ```csharp
 // Atur padding untuk sel

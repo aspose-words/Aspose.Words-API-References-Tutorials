@@ -74,7 +74,7 @@ FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 
 ## Adım 5: Değiştirmeyi Gerçekleştirin
 
-Şimdi değiştirme işlemini gerçekleştirelim. Sihir yapılan yer burasıdır!
+Şimdi değiştirme işlemini gerçekleştirelim. Sihrin gerçekleştiği yer burası!
 
 ```csharp
 doc.Range.Replace(regex, @"$2 take money from $1", options);
@@ -102,7 +102,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak değiştirme kalıpları içindeki
 Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için güçlü bir kütüphanedir. Belgeleri programlı olarak oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanır.
 
 ### Aspose.Words for .NET'i nasıl kurabilirim?
- Aspose.Words for .NET'i şuradan yükleyebilirsiniz:[İndirme: {link](https://releases.aspose.com/words/net/). Sağlanan kurulum talimatlarını izleyin.
+ Aspose.Words for .NET'i şuradan yükleyebilirsiniz:[indirme bağlantısı](https://releases.aspose.com/words/net/). Sağlanan kurulum talimatlarını izleyin.
 
 ### Aspose.Words for .NET ile normal ifadeler kullanabilir miyim?
 Evet, Aspose.Words bulma ve değiştirme işlemleri için normal ifadeleri destekleyerek karmaşık metin işlemlerine olanak tanır.

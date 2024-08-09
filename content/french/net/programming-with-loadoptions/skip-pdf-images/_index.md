@@ -73,11 +73,11 @@ Une fois les options de chargement définies, vous êtes prêt à charger le doc
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Veiller à ce que`"Pdf Document.pdf"` est le nom de votre fichier PDF dans le répertoire spécifié.
+ Assurez-vous que`"Pdf Document.pdf"` est le nom de votre fichier PDF dans le répertoire spécifié.
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à ignorer des images dans un document PDF à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est incroyablement utile lorsque vous devez traiter des PDF contenant beaucoup de texte sans encombrement d'images. N'oubliez pas que la pratique rend parfait, alors essayez d'expérimenter différents PDF pour voir comment cette fonctionnalité fonctionne dans différents scénarios.
+Et voilà ! Vous venez d'apprendre à ignorer des images dans un document PDF à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est incroyablement utile lorsque vous devez traiter des PDF contenant beaucoup de texte sans encombrement d'images. N'oubliez pas que la pratique rend parfait, alors essayez d'expérimenter différents PDF pour voir comment cette fonctionnalité fonctionne dans différents scénarios.
 
 ## FAQ
 

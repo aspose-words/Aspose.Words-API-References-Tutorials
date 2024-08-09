@@ -9,7 +9,7 @@ url: /fr/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman
 ---
 ## Introduction
 
-Vous êtes-vous déjà retrouvé dans une situation où la taille de votre fichier PDF est tout simplement trop volumineuse ? C'est comme faire ses valises pour des vacances et se rendre compte que sa valise est pleine à craquer. Vous savez que vous devez perdre du poids, mais que lâchez-vous ? Lorsque vous travaillez avec des fichiers PDF, en particulier ceux convertis à partir de documents Word, les polices intégrées peuvent augmenter la taille de votre fichier. Heureusement, Aspose.Words for .NET fournit une solution élégante pour que vos PDF restent simples et efficaces. Dans ce didacticiel, nous verrons comment optimiser la taille de votre PDF en ignorant les polices Arial et Times Roman intégrées. Commençons!
+Vous êtes-vous déjà retrouvé dans une situation où la taille de votre fichier PDF est tout simplement trop volumineuse ? C'est comme faire ses valises pour des vacances et se rendre compte que sa valise est pleine à craquer. Vous savez que vous devez perdre du poids, mais que lâchez-vous ? Lorsque vous travaillez avec des fichiers PDF, en particulier ceux convertis à partir de documents Word, les polices intégrées peuvent augmenter la taille de votre fichier. Heureusement, Aspose.Words for .NET fournit une solution élégante pour que vos PDF restent simples et efficaces. Dans ce didacticiel, nous verrons comment optimiser la taille de votre PDF en ignorant les polices Arial et Times Roman intégrées. Commençons !
 
 ## Conditions préalables
 
@@ -67,7 +67,7 @@ Cette commande enregistre votre document au format PDF nommé "OptimizedPDF.pdf"
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre comment optimiser la taille de votre fichier PDF en évitant l'intégration des polices Arial et Times Roman à l'aide d'Aspose.Words pour .NET. Ce simple ajustement peut réduire considérablement la taille de vos fichiers, les rendant plus faciles à partager et à stocker. C'est comme aller à la salle de sport pour vos PDF, perdre du poids inutile tout en gardant tous les éléments essentiels intacts.
+Et voilà ! Vous venez d'apprendre comment optimiser la taille de votre fichier PDF en évitant l'intégration des polices Arial et Times Roman à l'aide d'Aspose.Words pour .NET. Ce simple ajustement peut réduire considérablement la taille de vos fichiers, les rendant plus faciles à partager et à stocker. C'est comme aller à la salle de sport pour vos PDF, perdre du poids inutile tout en gardant tous les éléments essentiels intacts.
 
 ## FAQ
 

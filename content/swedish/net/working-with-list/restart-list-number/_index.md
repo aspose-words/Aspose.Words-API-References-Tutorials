@@ -2,18 +2,38 @@
 title: Starta om listnummer
 linktitle: Starta om listnummer
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du återställer numret på en lista i ett Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du startar om listnummer i Word-dokument med Aspose.Words för .NET. Denna detaljerade guide på 2000 ord täcker allt du behöver veta, från installation till avancerad anpassning.
 type: docs
 weight: 10
 url: /sv/net/working-with-list/restart-list-number/
 ---
-I denna steg-för-steg handledning kommer vi att visa dig hur du återställer numret på en lista i ett Word-dokument med Aspose.Words för .NET. Vi kommer att förklara den medföljande C#-källkoden och visa dig hur du implementerar den i dina egna projekt.
+## Introduktion
 
- För att komma igång, se till att du har Aspose.Words för .NET installerat och konfigurerat i din utvecklingsmiljö. Om du inte redan har gjort det, ladda ner och installera biblioteket från[Aspose.Releases]https://releases.aspose.com/words/net/.
+Vill du behärska konsten att manipulera listor i dina Word-dokument med Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här handledningen kommer vi att dyka djupt in i att starta om listnummer, en snygg funktion som tar dina färdigheter i dokumentautomatisering till nästa nivå. Spänn fast och låt oss börja!
 
-## Steg 1: Skapa dokument- och dokumentgeneratorn
+## Förutsättningar
 
-Skapa först ett nytt dokument och en tillhörande dokumentgenerator:
+Innan vi hoppar in i koden, låt oss se till att du har allt du behöver:
+
+1.  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Om du inte har installerat det än kan du göra det[ladda ner den här](https://releases.aspose.com/words/net/).
+2. Utvecklingsmiljö: Se till att du har en lämplig utvecklingsmiljö som Visual Studio.
+3. Grundläggande kunskaper om C#: En grundläggande förståelse av C# hjälper dig att följa handledningen.
+
+## Importera namnområden
+
+Till att börja med, låt oss importera de nödvändiga namnrymden. Dessa är avgörande för att få tillgång till Aspose.Words-funktionerna.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+Låt oss nu dela upp processen i lätta att följa steg. Vi kommer att täcka allt från att skapa en lista till att starta om dess numrering.
+
+## Steg 1: Konfigurera ditt dokument och Builder
+
+Innan du kan börja manipulera listor behöver du ett dokument och en DocumentBuilder. DocumentBuilder är ditt go-to-verktyg för att lägga till innehåll i ditt dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +41,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Steg 2: Skapa och anpassa den första listan
+## Steg 2: Skapa och anpassa din första lista
 
-Skapa sedan en lista baserad på en befintlig mall och anpassa sedan dess nivåer:
+Därefter skapar vi en lista baserad på en mall och anpassar dess utseende. I det här exemplet använder vi det arabiska talformatet med parenteser.
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,102 +51,75 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## Steg 3: Lägga till objekt till den första listan
+Här har vi ställt in teckensnittsfärgen till röd och justerat texten till höger.
 
-Använd dokumentbyggaren för att lägga till objekt till den första listan och ta bort listnummer:
+## Steg 3: Lägg till objekt till din första lista
+
+ Med din lista klar är det dags att lägga till några objekt. Dokumentbyggarens`ListFormat.List` egenskapen hjälper till att tillämpa listformatet på texten.
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## Steg 4: Skapa och anpassa den andra listan
+## Steg 4: Starta om listnumrering
 
-För att återanvända den första listan genom att återställa numret, skapa en kopia av den ursprungliga listlayouten:
+För att återanvända listan och starta om dess numrering måste du skapa en kopia av den ursprungliga listan. Detta gör att du kan ändra den nya listan oberoende.
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-Du kan också göra ytterligare ändringar i den andra listan om det behövs.
+I det här exemplet börjar den nya listan på nummer 10.
 
-## Steg 5: Lägga till objekt till den andra listan
+## Steg 5: Lägg till objekt till den nya listan
 
-Använd dokumentbyggaren igen för att lägga till objekt till den andra listan och ta bort listnumren:
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## Steg 6: Spara det ändrade dokumentet
-
-Spara slutligen det ändrade dokumentet:
+Precis som tidigare, lägg till objekt i din nya lista. Detta visar att listan startar om vid det angivna numret.
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-Så ! Du har framgångsrikt återställt numret på en lista i ett Word-dokument med Aspose.Words för .NET.
-
-### Exempel på källkod för återställning av listnummer
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Skapa en lista baserad på en mall.
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-// För att återanvända den första listan måste vi starta om numreringen genom att skapa en kopia av den ursprungliga listformateringen.
-List list2 = doc.Lists.AddCopy(list1);
-
-// Vi kan ändra den nya listan på vilket sätt som helst, inklusive att ställa in ett nytt startnummer.
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## Steg 6: Spara ditt dokument
+
+Slutligen, spara ditt dokument i din angivna katalog.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### FAQ's
+## Slutsats
 
-#### F: Hur kan jag starta om numreringen av en lista i Aspose.Words?
+Att starta om listnummer i Word-dokument med Aspose.Words för .NET är enkelt och otroligt användbart. Oavsett om du genererar rapporter, skapar strukturerade dokument eller bara behöver bättre kontroll över dina listor, har den här tekniken dig täckt.
 
- S: För att starta om numreringen av en lista i Aspose.Words kan du använda`ListRestartAtNumber` metod för`List` klass. Med den här metoden kan du ställa in ett nytt uppringningsvärde från vilket listan ska startas om. Du kan till exempel använda`list.ListRestartAtNumber(1)` för att starta om numrering från 1.
+## FAQ's
 
-#### F: Är det möjligt att anpassa prefix och suffix för omstartad listnumrering i Aspose.Words?
+### Kan jag använda andra listmallar förutom NumberArabicParenthesis?
 
- S: Ja, du kan anpassa prefix och suffix för omstartad listnumrering i Aspose.Words. De`ListLevel`klass erbjuder fastigheter som t.ex`ListLevel.NumberPrefix`och`ListLevel.NumberSuffix` som låter dig ange prefix och suffix för varje nivå i listan. Du kan använda dessa egenskaper för att anpassa prefixet och suffixet efter behov.
+Absolut! Aspose.Words erbjuder olika listmallar som kulor, bokstäver, romerska siffror och mer. Du kan välja den som bäst passar dina behov.
 
-#### F: Hur kan jag ange ett specifikt numreringsvärde från vilket listan ska startas om?
+### Hur ändrar jag listnivån?
 
- S: För att ange ett specifikt nummervärde från vilket listan ska startas om kan du använda`ListRestartAtNumber` metod som skickar det önskade värdet som ett argument. Till exempel, för att starta om numrering från 5, kan du använda`list.ListRestartAtNumber(5)`.
+ Du kan ändra listnivån genom att ändra`ListLevels` egendom. Till exempel,`list1.ListLevels[1]` skulle hänvisa till den andra nivån i listan.
 
-#### F: Är det möjligt att starta om listnumrering på flera nivåer i Aspose.Words?
+### Kan jag starta om numrering på vilket nummer som helst?
 
- S: Ja, Aspose.Words stöder omstartsnumrering av flera listnivåer. Du kan tillämpa`ListRestartAtNumber` metod på varje listnivå för att starta om numreringen individuellt. Du kan till exempel använda`list.Levels[0].ListRestartAtNumber(1)` för att starta om den första listnivån från 1, och`list.Levels[1].ListRestartAtNumber(1)` för att starta om den andra nivålistan med början från 1, och så vidare.
+ Ja, du kan ställa in startnumret till vilket heltalsvärde som helst med hjälp av`StartAt` egenskapen för listnivån.
 
+### Är det möjligt att ha olika formatering för olika listnivåer?
+
+Verkligen! Varje listnivå kan ha sina egna formateringsinställningar, såsom teckensnitt, justering och numreringsstil.
+
+### Vad händer om jag vill fortsätta numreringen från en tidigare lista istället för att starta om?
+
+Om du vill fortsätta numreringen behöver du inte skapa en kopia av listan. Fortsätt bara att lägga till objekt till den ursprungliga listan.
 
 

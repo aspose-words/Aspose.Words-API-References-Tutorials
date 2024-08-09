@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/image-compression/
 ---
-## introduzione
+## Introduzione
 
 Nell'era digitale di oggi, la gestione delle dimensioni dei documenti è fondamentale sia per le prestazioni che per l'efficienza di archiviazione. Che tu abbia a che fare con report di grandi dimensioni o presentazioni complesse, ridurre le dimensioni del file senza sacrificare la qualità è essenziale. La compressione delle immagini nei documenti PDF è una tecnica chiave per raggiungere questo obiettivo. Se lavori con Aspose.Words per .NET, sei fortunato! Questo tutorial ti guiderà attraverso il processo di compressione delle immagini nei documenti PDF utilizzando Aspose.Words per .NET. Esploreremo diverse opzioni di compressione e come applicarle in modo efficace per garantire che i tuoi PDF siano ottimizzati sia in termini di qualità che di dimensioni.
 
@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passaggio 3: configurare la compressione immagine di base
 
- Creare un`PdfSaveOptions`oggetto per configurare le opzioni di salvataggio del PDF, inclusa la compressione delle immagini. Impostare il`ImageCompression`proprietà a`PdfImageCompression.Jpeg` per utilizzare la compressione JPEG per le immagini.
+ Crea un`PdfSaveOptions`oggetto per configurare le opzioni di salvataggio del PDF, inclusa la compressione delle immagini. Imposta il`ImageCompression`proprietà a`PdfImageCompression.Jpeg` per utilizzare la compressione JPEG per le immagini.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -83,14 +83,14 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## Passaggio 5: configura la compressione avanzata con conformità PDF/A
 
- Per una compressione ancora migliore, soprattutto se devi rispettare gli standard PDF/A, puoi configurare opzioni aggiuntive. Impostare il`Compliance`proprietà a`PdfCompliance.PdfA2u` e regolare il`JpegQuality` proprietà.
+ Per una compressione ancora migliore, soprattutto se devi rispettare gli standard PDF/A, puoi configurare opzioni aggiuntive. Imposta il`Compliance`proprietà a`PdfCompliance.PdfA2u` e regolare il`JpegQuality` proprietà.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
 {
 	// Imposta la conformità su PDF/A-2u
     Compliance = PdfCompliance.PdfA2u,
-	// Utilizza la compressione JPEG
+	// Usa la compressione JPEG
     ImageCompression = PdfImageCompression.Jpeg,
 	// Regola la qualità JPEG per controllare il livello di compressione
     JpegQuality = 100 

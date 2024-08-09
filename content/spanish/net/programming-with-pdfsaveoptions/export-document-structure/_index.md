@@ -15,7 +15,7 @@ Navegar por el mundo de la manipulación de documentos a veces puede parecer com
 
 Antes de embarcarnos en este viaje, reunamos todos los elementos esenciales que necesitará para comenzar.
 
-- Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+- Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words. Si no, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: un entorno de desarrollo compatible con .NET como Visual Studio.
 -  Documento de muestra: un documento de Word (p. ej.,`Paragraphs.docx`) que convertirá a PDF.
 

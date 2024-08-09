@@ -110,4 +110,4 @@ doc.Save(dataDir + "WorkingWithSdt.BindSDTtoCustomXmlPart.doc");
 نعم، يمكنك ربط SDTs بسمات XML عن طريق تحديد تعبير XPath المناسب الذي يستهدف السمة المطلوبة.
 
 ### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words لـ .NET؟
- يمكنك العثور على وثائق شاملة عن Aspose.Words لـ .NET على الموقع[Aspose.توثيق الكلمات](https://reference.aspose.com/words/net/).
+ يمكنك العثور على وثائق شاملة حول Aspose.Words لـ .NET على الموقع[Aspose.توثيق الكلمات](https://reference.aspose.com/words/net/).

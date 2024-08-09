@@ -2,63 +2,78 @@
 title: Üstü çizili
 linktitle: Üstü çizili
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile üstü çizili metin stilini nasıl uygulayacağınızı öğrenin. Adım adım kılavuz.
+description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak metne üstü çizili formatlamayı nasıl uygulayacağınızı öğrenin. Belge işleme becerilerinizi geliştirin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/strikethrough/
 ---
+## giriiş
 
+Aspose.Words for .NET kullanılarak metne üstü çizili formatın nasıl uygulanacağıyla ilgili bu ayrıntılı kılavuza hoş geldiniz. Belge işleme becerilerinizi geliştirmek ve metninize benzersiz bir dokunuş katmak istiyorsanız doğru yerdesiniz. Hadi dalalım!
 
-Bu örnekte, üstü çizili metin stilini Aspose.Words for .NET kullanarak nasıl uygulayacağınız konusunda size yol göstereceğiz. Üstü çizili metin, metnin silindiğini veya artık geçerli olmadığını belirtmek için kullanılır.
+## Önkoşullar
 
-## 1. Adım: Belge oluşturucuyu kullanma
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-Öncelikle belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
+-  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/).
+- .NET Framework: Sisteminizde .NET Framework'ün kurulu olduğundan emin olun.
+- Geliştirme Ortamı: Visual Studio benzeri bir IDE.
+- Temel C# Bilgisi: C# programlamaya aşinalık gereklidir.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bunlar Aspose.Words kütüphanesine ve özelliklerine erişim için gereklidir.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. Adım: DocumentBuilder'ı başlatın
+
+`DocumentBuilder` class, Aspose.Words'te belgenize kolaylıkla içerik eklemenizi sağlayan güçlü bir araçtır.
+
+```csharp
+// Bir DocumentBuilder'ı başlatın.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. Adım: Üstü çizili metin stilini uygulayın
+## Adım 2: Üstü Çizili Özelliğini Ayarlayın
 
- Üstü çizili metin stilini ayarlayarak etkinleştireceğiz`StrikeThrough` mülkiyeti`Font` itiraz etmek`true`.
-
-```csharp
-builder.Font.StrikeThrough = true;
-```
-
-## 3. Adım: Üstü çizili metin ekleyin
-
- Artık belge oluşturucuyu kullanarak üstü çizili metin ekleyebiliriz`Writeln` yöntem.
+Şimdi üstü çizili özelliğini metnimize uygulayalım. Bu,`StrikeThrough` mülkiyeti`Font` itiraz etmek`true`.
 
 ```csharp
-builder.Writeln("This text will be StrikeThrough");
-```
-
-
-### Aspose.Words for .NET ile üstü çizili metin için örnek kaynak kodu
-
-```csharp
-// Belgeye içerik eklemek için belge oluşturucuyu kullanın.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Metnin üzerini çizin.
 builder.Font.StrikeThrough = true;
+```
+
+## 3. Adım: Üstü Çizili Metin Yazın
+
+ Üstü çizili özellik seti ile artık metnimizi ekleyebiliriz.`Writeln` yöntem metni belgeye ekleyecektir.
+
+```csharp
+// Üstü çizili olarak metin yazın.
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-Tebrikler! Artık üstü çizili metin stilini Aspose.Words for .NET ile nasıl uygulayacağınızı öğrendiniz.
+## Çözüm
 
-### SSS'ler
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak metninize üstü çizili formatı başarıyla eklediniz. Bu güçlü kitaplık, belge işleme ve özelleştirme için bir olasılıklar dünyasının kapılarını açar. İster rapor, ister mektup, ister başka türde bir belge oluşturuyor olun, bu özelliklerde uzmanlaşmak hiç şüphesiz üretkenliğinizi ve çıktılarınızın kalitesini artıracaktır.
 
-#### S: Üstü çizili metni Aspose.Words'e nasıl ekleyebilirim?
+## SSS'ler
 
- C: Aspose.Words'e üstü çizili metin eklemek için`Font.StrikeThrough` mülkiyeti`Run` nesne. Bu özelliği şu şekilde ayarlayabilirsiniz:`true` Belirli bir metne üstü çizili metin eklemek için. Örneğin şunları kullanabilirsiniz:`run.Font.StrikeThrough=true` üstü çizili metni eklemek için`Run` nesne.
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır.
 
-#### S: Üstü çizili metni aynı paragraftaki birkaç metin parçasına eklemek mümkün mü?
+### Aspose.Words for .NET'i ticari bir projede kullanabilir miyim?
+ Evet, Aspose.Words for .NET'i ticari projelerde kullanabilirsiniz. Satın alma seçenekleri için şu adresi ziyaret edin:[satın alma sayfası](https://purchase.aspose.com/buy).
 
- C: Evet, tek bir paragrafta metnin birden çok bölümüne birden çok satır kullanarak üstü çizili metin ekleyebilirsiniz.`Run` nesneler. Birden fazla oluşturabilirsiniz`Run` nesneleri ayarlayın ve`Font.StrikeThrough`mülkiyet`true` Her nesne için üstü çizili metni istenen metin bölümlerine eklemek için. Daha sonra bunları kullanarak paragrafa ekleyebilirsiniz.`Paragraph.AppendChild(run)` yöntem.
+### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
+ Evet, ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/).
 
-#### S: Aspose.Words'te bir tablo veya hücredeki metne üstü çizili metin ekleyebilir miyim?
+### Aspose.Words for .NET için nasıl destek alabilirim?
+Aspose topluluğundan ve uzmanlardan bu konuda destek alabilirsiniz.[destek forumu](https://forum.aspose.com/c/words/8).
 
- C: Evet, Aspose.Words'te bir tablo veya hücredeki metne üstü çizili metin ekleyebilirsiniz. Uygun yöntemleri kullanarak istediğiniz hücreye veya paragrafa atlayabilir ve ardından üstü çizili metin biçimlendirmesini aşağıdaki düğmeyi kullanarak uygulayabilirsiniz:`Font.StrikeThrough` mülkiyeti`Run` veya`Paragraph` nesne.
+### Aspose.Words for .NET'i kullanarak diğer metin formatlama seçeneklerini uygulayabilir miyim?
+Kesinlikle! Aspose.Words for .NET, kalın, italik, altı çizili ve daha fazlasını içeren çok çeşitli metin formatlama seçeneklerini destekler.

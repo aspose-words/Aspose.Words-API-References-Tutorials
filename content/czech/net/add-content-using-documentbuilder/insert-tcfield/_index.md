@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-tcfield/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Pokud se noříte do světa automatizace dokumentů, jste na správném místě. Dnes se podíváme na to, jak vložit pole TC (Table of Contents) do dokumentu aplikace Word pomocí Aspose.Words for .NET. Věřte mi, že na konci tohoto tutoriálu si budete připadat jako čaroděj, který kouzlí v dokumentech aplikace Word. Jste připraveni začít? Pojďme to udělat!
+Ahoj! Pokud se noříte do světa automatizace dokumentů, jste na správném místě. Dnes se podíváme na to, jak vložit pole TC (Table of Contents) do dokumentu aplikace Word pomocí Aspose.Words for .NET. Věřte mi, že na konci tohoto tutoriálu si budete připadat jako čaroděj, který kouzlí v dokumentech aplikace Word. Jste připraveni začít? Pojďme na to!
 
 ## Předpoklady
 
@@ -18,7 +18,7 @@ Než se pustíme do hrubky, ujistěte se, že máte vše, co potřebujete:
 1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, budete si muset stáhnout a nainstalovat Aspose.Words for .NET. Můžete to získat z[stránka ke stažení](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Postačí jakékoli vývojové prostředí .NET, ale velmi doporučujeme Visual Studio.
 3. Základní znalost C#: Měli byste znát základy programování v C#.
-4.  Dočasná licence: Chcete-li odemknout všechny možnosti Aspose.Words, možná budete potřebovat dočasnou licenci, kterou můžete získat[tady](https://purchase.aspose.com/temporary-license/).
+4.  Dočasná licence: Chcete-li odemknout všechny možnosti Aspose.Words, možná budete potřebovat dočasnou licenci, kterou můžete získat[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 
@@ -79,7 +79,7 @@ Výložník! Právě jste vytvořili dokument aplikace Word s polem TC. Jak úž
 
 ## Závěr
 
- A tady to máte! Prošli jsme tím, jak vložit pole TC do dokumentu aplikace Word pomocí Aspose.Words for .NET. Je to docela jednoduché, že? S těmito dovednostmi nyní můžete automatizovat a přizpůsobovat své dokumenty Word jako profesionál. Pokud máte nějaké dotazy nebo narazíte na nějaké problémy, neváhejte se podívat na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se obrátit na jejich[Fórum podpory](https://forum.aspose.com/c/words/8). Šťastné kódování!
+ A tady to máte! Prošli jsme tím, jak vložit pole TC do dokumentu aplikace Word pomocí Aspose.Words for .NET. Je to docela jednoduché, že? S těmito dovednostmi nyní můžete automatizovat a přizpůsobovat své dokumenty Word jako profesionál. Pokud máte nějaké dotazy nebo narazíte na nějaké problémy, neváhejte se podívat na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se obrátit na jejich[fórum podpory](https://forum.aspose.com/c/words/8). Šťastné kódování!
 
 ## FAQ
 
@@ -89,7 +89,7 @@ Pole TC (Table of Contents) ve Wordu se používá k označení konkrétních po
 
 ### 2. Potřebuji licenci k používání Aspose.Words pro .NET?
 
- Ano, můžete použít dočasnou licenci k odemknutí všech funkcí Aspose.Words. Můžete získat jeden[tady](https://purchase.aspose.com/temporary-license/).
+ Ano, můžete použít dočasnou licenci k odemknutí všech funkcí Aspose.Words. Můžete získat jeden[zde](https://purchase.aspose.com/temporary-license/).
 
 ### 3. Mohu používat Aspose.Words s jinými programovacími jazyky?
 

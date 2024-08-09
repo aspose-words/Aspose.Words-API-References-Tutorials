@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Perkenalan
 
 Menambahkan header dan footer ke dokumen Anda dapat meningkatkan profesionalisme dan keterbacaannya. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah membuat dan mengkustomisasi header dan footer untuk dokumen Word Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah, memastikan Anda dapat mengimplementasikan fitur-fitur ini dengan lancar.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Langkah 2: Buat Dokumen Baru
 
- Buat dokumen baru dan a`DocumentBuilder` untuk memudahkan penambahan konten.
+ Buat dokumen baru dan a`DocumentBuilder`untuk memudahkan penambahan konten.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ Dengan mengikuti langkah-langkah ini, Anda dapat secara efektif menambahkan dan 
 
 ## FAQ
 
-### Q1: Apa itu Aspose.Words untuk .NET?
+### Apa itu Aspose.Words untuk .NET?
 
 Aspose.Words untuk .NET adalah pustaka yang memungkinkan pengembang membuat, mengedit, dan mengonversi dokumen Word secara terprogram dalam aplikasi .NET.
 
-### Q2: Bisakah saya menambahkan gambar ke header atau footer?
+### Bisakah saya menambahkan gambar ke header atau footer?
 
  Ya, Anda dapat dengan mudah menambahkan gambar ke header atau footer menggunakan`DocumentBuilder.InsertImage` metode.
 
-### Q3: Bagaimana cara mengatur header dan footer yang berbeda untuk halaman pertama?
+### Bagaimana cara mengatur header dan footer yang berbeda untuk halaman pertama?
 
  Anda dapat mengatur header dan footer yang berbeda untuk halaman pertama dengan menggunakan`DifferentFirstPageHeaderFooter` properti dari`PageSetup` kelas.
 
-### Q4: Di mana saya dapat menemukan lebih banyak dokumentasi tentang Aspose.Words?
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words?
 
  Anda dapat menemukan dokumentasi lengkap di[Halaman dokumentasi Aspose.Words API](https://reference.aspose.com/words/net/).
 
-### Q5: Apakah tersedia dukungan untuk Aspose.Words?
+### Apakah ada dukungan yang tersedia untuk Aspose.Words?
 
  Ya, Aspose menawarkan dukungan melalui mereka[forum dukungan](https://forum.aspose.com/c/words/8).

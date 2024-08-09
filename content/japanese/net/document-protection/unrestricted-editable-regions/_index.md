@@ -114,7 +114,7 @@ using Aspose.Words.Editing;
 
 これで完了です。Aspose.Words for .NET を使用して、Word 文書に制限のない編集可能な領域を作成することができました。この機能は、文書の特定の部分をそのままにして、他の部分を編集する必要がある共同作業環境で非常に役立ちます。 
 
-より複雑なシナリオやさまざまな保護レベルを試して、Aspose.Wordsを最大限に活用してください。質問や問題がある場合は、[ドキュメンテーション](https://reference.aspose.com/words/net/)または連絡する[サポート](https://forum.aspose.com/c/words/8).
+より複雑なシナリオやさまざまな保護レベルを試して、Aspose.Wordsを最大限に活用してください。質問や問題がある場合は、[ドキュメント](https://reference.aspose.com/words/net/)または連絡する[サポート](https://forum.aspose.com/c/words/8).
 
 ## よくある質問
 

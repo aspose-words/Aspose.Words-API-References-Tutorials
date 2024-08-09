@@ -9,7 +9,7 @@ url: /hu/net/programming-with-charts/default-options-for-data-labels/
 ---
 ## Bevezetés
 
-Halihó! Izgatottan várod, hogy belemerülj a dokumentumautomatizálás világába? Ma azt vizsgáljuk meg, hogyan használhatjuk az Aspose.Words for .NET-et lenyűgöző dokumentumok programozott létrehozására. Az Aspose.Words egy hatékony könyvtár, amely lehetővé teszi a Word-dokumentumok egyszerű kezelését, és ebben az oktatóanyagban a diagramon szereplő adatcímkék alapértelmezett beállításainak beállítására összpontosítunk. Akár tapasztalt fejlesztő, akár kezdő, ez az útmutató végigvezeti Önt minden lépésen, hogy pillanatok alatt elinduljon.
+Szia! Izgatottan várod, hogy belemerülj a dokumentumautomatizálás világába? Ma azt vizsgáljuk meg, hogyan használhatjuk az Aspose.Words for .NET-et lenyűgöző dokumentumok programozott létrehozására. Az Aspose.Words egy hatékony könyvtár, amely lehetővé teszi a Word-dokumentumok egyszerű kezelését, és ebben az oktatóanyagban a diagramon szereplő adatcímkék alapértelmezett beállításainak beállítására összpontosítunk. Akár tapasztalt fejlesztő, akár kezdő, ez az útmutató végigvezeti Önt minden lépésen, hogy pillanatok alatt elinduljon.
 
 ## Előfeltételek
 
@@ -135,7 +135,7 @@ Az Aspose.Words ingyenesen használható a[ideiglenes engedély](https://purchas
  A támogatást a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).
 
 ### Hozzáadhatok más típusú diagramokat?
- Igen, az Aspose.Words különféle diagramtípusokat támogat, például sáv-, vonal- és oszlopdiagramokat. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Igen, az Aspose.Words különféle diagramtípusokat támogat, például sáv-, vonal- és oszlopdiagramokat. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### Az Aspose.Words kompatibilis a .NET Core-al?
  Igen, az Aspose.Words kompatibilis a .NET Core-al. További információt a[dokumentáció](https://reference.aspose.com/words/net/).

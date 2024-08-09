@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-vba-macros/create-vba-project/
 ---
 
-## Úvod
+## Zavedení
 
 Ahoj, tech nadšenci! Jste připraveni prozkoumat fascinující svět VBA (Visual Basic for Applications) v dokumentech aplikace Word? Ať už jste zkušený vývojář nebo teprve začínáte, tato příručka vám ukáže, jak vytvořit projekt VBA v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna vám umožňuje automatizovat úlohy, vytvářet makra a vylepšovat funkčnost vašich dokumentů aplikace Word. Takže si vyhrňme rukávy a ponořme se do tohoto návodu krok za krokem!
 
@@ -116,9 +116,9 @@ Tento řádek uloží dokument jako "WorkingWithVba.CreateVbaProject.docm" ve va
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste vytvořili projekt VBA v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento tutoriál pokryl vše od nastavení prostředí až po psaní a ukládání kódu VBA. S Aspose.Words můžete automatizovat úkoly, vytvářet makra a přizpůsobovat své dokumenty Word způsobem, o kterém jste si nikdy nemysleli, že je to možné.
+Gratuluji! Úspěšně jste vytvořili projekt VBA v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento tutoriál pokryl vše od nastavení prostředí až po psaní a ukládání kódu VBA. S Aspose.Words můžete automatizovat úkoly, vytvářet makra a přizpůsobovat své dokumenty Word způsobem, o kterém jste si nikdy nemysleli, že je to možné.
 
- Pokud toužíte prozkoumat více,[API dokumentace](https://reference.aspose.com/words/net/) je pokladnicí informací. A pokud budete někdy potřebovat pomoc,[Fórum podpory](https://forum.aspose.com/c/words/8) je vzdáleno pouhé kliknutí.
+ Pokud toužíte prozkoumat více,[API dokumentace](https://reference.aspose.com/words/net/) je pokladnicí informací. A pokud budete někdy potřebovat pomoc,[fórum podpory](https://forum.aspose.com/c/words/8) je vzdáleno pouhé kliknutí.
 
 Šťastné kódování a pamatujte, že jediným limitem je vaše představivost!
 

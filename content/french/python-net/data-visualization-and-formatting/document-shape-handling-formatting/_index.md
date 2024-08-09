@@ -14,7 +14,7 @@ Les documents modernes ne se limitent pas au contenu qu’ils contiennent ; leur
 
 ## Configuration de l'environnement
 
- Avant de nous lancer dans la création de formes de documents impressionnantes, assurez-vous que Aspose.Words for Python est installé. Vous pouvez le télécharger depuis le[lien de téléchargement](https://releases.aspose.com/words/python/) . De plus, reportez-vous au[Documentation](https://reference.aspose.com/words/python-net/) pour des conseils complets sur l’utilisation de la bibliothèque.
+ Avant de nous lancer dans la création de formes de documents impressionnantes, assurez-vous que Aspose.Words for Python est installé. Vous pouvez le télécharger depuis le[lien de téléchargement](https://releases.aspose.com/words/python/) . De plus, reportez-vous au[documentation](https://reference.aspose.com/words/python-net/) pour des conseils complets sur l’utilisation de la bibliothèque.
 
 ## Création d'un document de base
 
@@ -89,7 +89,7 @@ Créer des formes et des mises en page de documents visuellement impressionnante
  Vous pouvez télécharger Aspose.Words pour Python à partir du[lien de téléchargement](https://releases.aspose.com/words/python/).
 
 ### Où puis-je trouver une documentation complète pour Aspose.Words pour Python ?
- Se référer au[Documentation](https://reference.aspose.com/words/python-net/) pour des conseils détaillés sur l’utilisation d’Aspose.Words pour Python.
+ Référez-vous au[documentation](https://reference.aspose.com/words/python-net/) pour des conseils détaillés sur l’utilisation d’Aspose.Words pour Python.
 
 ### Puis-je personnaliser les couleurs et les styles des formes ?
 Absolument! Aspose.Words for Python fournit des options pour personnaliser les couleurs, les tailles et les styles des formes en fonction de vos préférences de conception.

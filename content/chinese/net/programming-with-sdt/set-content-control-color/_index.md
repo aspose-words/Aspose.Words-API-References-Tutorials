@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlColor.docx");
 
 ### 除了颜色之外，还可以设置 SDT 的其他属性吗？
 
-是的`StructuredDocumentTag`类具有各种可设置的属性，包括字体大小、字体样式等。有关更多详细信息，请参阅 Aspose.Words 文档。
+是的，`StructuredDocumentTag`类具有各种可设置的属性，包括字体大小、字体样式等。有关更多详细信息，请参阅 Aspose.Words 文档。
 
 ### 我可以向 SDT 添加事件（例如点击事件）吗？
 

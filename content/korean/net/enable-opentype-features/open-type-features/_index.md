@@ -9,7 +9,7 @@ url: /ko/net/enable-opentype-features/open-type-features/
 ---
 ## 소개
 
-.NET용 Aspose.Words를 사용하여 OpenType 기능의 세계로 뛰어들 준비가 되셨습니까? 버클을 채우세요. 우리는 귀하의 Word 문서를 향상시킬 뿐만 아니라 귀하를 Aspose.Words 전문가로 만들어 줄 매력적인 여정을 시작할 예정입니다. 시작하자!
+.NET용 Aspose.Words를 사용하여 OpenType 기능의 세계로 뛰어들 준비가 되셨습니까? 버클을 채우세요. 우리는 귀하의 Word 문서를 향상시킬 뿐만 아니라 귀하를 Aspose.Words 전문가로 만들어 줄 매력적인 여정을 시작할 예정입니다. 시작해 봅시다!
 
 ## 전제 조건
 
@@ -106,7 +106,7 @@ HarfBuzz는 OpenType 기능에 대한 강력한 지원을 제공하여 문서의
 예, Aspose.Words는 다양한 텍스트 형성 엔진을 지원합니다. 그러나 포괄적인 OpenType 기능 지원으로 인해 HarfBuzz를 적극 권장합니다.
 
 ### Aspose.Words는 모든 .NET 버전과 호환됩니까?
- Aspose.Words는 .NET Framework, .NET Core 및 .NET Standard를 포함한 다양한 .NET 버전을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 호환성 정보를 확인하세요.
+ Aspose.Words는 .NET Framework, .NET Core 및 .NET Standard를 포함한 다양한 .NET 버전을 지원합니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 호환성 정보를 확인하세요.
 
 ### Aspose.Words를 구매하기 전에 어떻게 시험해 볼 수 있나요?
  다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/) 그리고 임시 라이센스를 요청하세요[여기](https://purchase.aspose.com/temporary-license/).

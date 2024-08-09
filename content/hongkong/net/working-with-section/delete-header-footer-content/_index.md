@@ -18,7 +18,7 @@ url: /zh-hant/net/working-with-section/delete-header-footer-content/
 1.  Aspose.Words for .NET Library：下載最新版本[這裡](https://releases.aspose.com/words/net/).
 2. 開發環境：與 .NET 相容的 IDE，如 Visual Studio。
 3. C# 基礎知識：熟悉 C# 將有助於您跟進。
-4. 範例 Word 文件：準備好一個用於測試的 Word 文件。
+4. 範例 Word 文件：準備好用於測試的 Word 文件。
 
 ## 導入命名空間
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "Document_Without_Headers_Footers.docx");
 
 ## 結論
 
-現在你就擁有了！ 🎉 您已使用 Aspose.Words for .NET 成功清除了 Word 文件中的頁首和頁尾。這個方便的功能可以為您節省大量時間，特別是在處理大型文件或重複性任務時。請記住，熟能生巧，因此請不斷嘗試 Aspose.Words 的不同功能，以成為真正的文件操作精靈。快樂編碼！
+現在你就得到它了！ 🎉 您已使用 Aspose.Words for .NET 成功清除了 Word 文件中的頁首和頁尾。這個方便的功能可以為您節省大量時間，特別是在處理大型文件或重複性任務時。請記住，熟能生巧，因此請不斷嘗試 Aspose.Words 的不同功能，以成為真正的文件操作精靈。快樂編碼！
 
 ## 常見問題解答
 

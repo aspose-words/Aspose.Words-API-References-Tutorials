@@ -140,4 +140,4 @@ Set`importFormatOptions.setIgnoreTextBoxes(false)` om tekstvakken op te nemen ti
 
 ### Wat moet ik doen als ik kop- en voetteksten tussen documenten wil koppelen/ontkoppelen?
 
- U kunt kop- en voetteksten koppelen met`linkToPrevious(true)` of ontkoppel ze`linkToPrevious(false)` zoals nodig.
+ U kunt kop- en voetteksten koppelen met`linkToPrevious(true)` of ontkoppel ze`linkToPrevious(false)` indien nodig.

@@ -55,7 +55,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtB
 
 ## Paso 4: Insertar documentos durante la combinación de correspondencia
 
-Puede insertar documentos durante una operación de combinación de correspondencia en Aspose.Words para Java. Así es cómo:
+Puede insertar documentos durante una operación de combinación de correspondencia en Aspose.Words para Java. He aquí cómo:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");

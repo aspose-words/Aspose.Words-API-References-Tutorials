@@ -42,7 +42,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Write("Open document as read-only");
 ```
 
-Giải trình:
+Giải thích:
 
 - Chúng tôi bắt đầu bằng cách xác định đường dẫn thư mục nơi tài liệu sẽ được lưu.
 -  Một cái mới`Document` đối tượng được tạo ra và một`DocumentBuilder` được liên kết với nó.
@@ -57,9 +57,9 @@ Tiếp theo, chúng ta cần đặt mật khẩu để bảo vệ ghi. Mật kh�
 doc.WriteProtection.SetPassword("MyPassword");
 ```
 
-Giải trình:
+Giải thích:
 
--  Các`SetPassword` phương thức được gọi trên`WriteProtection` thuộc tính của tài liệu.
+-  các`SetPassword` phương thức được gọi trên`WriteProtection` thuộc tính của tài liệu.
 - Chúng tôi cung cấp mật khẩu ("MyPassword" trong trường hợp này) sẽ được yêu cầu để xóa tính năng bảo vệ.
 
 ## Bước 3: Kích hoạt đề xuất chỉ đọc
@@ -71,9 +71,9 @@ Trong bước này, chúng tôi đề xuất tài liệu ở chế độ chỉ �
 doc.WriteProtection.ReadOnlyRecommended = true;
 ```
 
-Giải trình:
+Giải thích:
 
--  Các`ReadOnlyRecommended` tài sản được đặt thành`true`.
+-  các`ReadOnlyRecommended` tài sản được đặt thành`true`.
 - Điều này sẽ nhắc người dùng mở tài liệu ở chế độ chỉ đọc, mặc dù họ có thể chọn bỏ qua đề xuất.
 
 ## Bước 4: Áp dụng Bảo vệ chỉ đọc
@@ -85,9 +85,9 @@ Cuối cùng, chúng tôi áp dụng chế độ bảo vệ chỉ đọc cho tà
 doc.Protect(ProtectionType.ReadOnly);
 ```
 
-Giải trình:
+Giải thích:
 
--  Các`Protect` phương thức được gọi trên tài liệu với`ProtectionType.ReadOnly` như lập luận.
+-  các`Protect` phương thức được gọi trên tài liệu với`ProtectionType.ReadOnly` như lập luận.
 - Phương pháp này thực thi chế độ bảo vệ chỉ đọc, ngăn chặn mọi sửa đổi đối với tài liệu mà không cần mật khẩu.
 
 ## Bước 5: Lưu tài liệu
@@ -99,14 +99,14 @@ Bước cuối cùng là lưu tài liệu với cài đặt bảo vệ được 
 doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 ```
 
-Giải trình:
+Giải thích:
 
--  Các`Save` phương thức được gọi trên tài liệu, chỉ định đường dẫn và tên của tệp.
+-  các`Save` phương thức được gọi trên tài liệu, chỉ định đường dẫn và tên của tệp.
 - Tài liệu được lưu với chế độ bảo vệ chỉ đọc.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công tài liệu Word được bảo vệ chỉ đọc bằng Aspose.Words cho .NET. Tính năng này đảm bảo rằng nội dung tài liệu của bạn vẫn nguyên vẹn và không bị thay đổi, cung cấp thêm một lớp bảo mật. Cho dù bạn đang chia sẻ thông tin nhạy cảm hay tài liệu pháp lý, tính năng bảo vệ chỉ đọc là công cụ bắt buộc phải có trong kho quản lý tài liệu của bạn.
+Và bạn có nó! Bạn đã tạo thành công tài liệu Word được bảo vệ chỉ đọc bằng Aspose.Words cho .NET. Tính năng này đảm bảo rằng nội dung tài liệu của bạn vẫn nguyên vẹn và không bị thay đổi, cung cấp thêm một lớp bảo mật. Cho dù bạn đang chia sẻ thông tin nhạy cảm hay tài liệu pháp lý, tính năng bảo vệ chỉ đọc là công cụ bắt buộc phải có trong kho quản lý tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 

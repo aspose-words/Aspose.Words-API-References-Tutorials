@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/append-bookmarked-text/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Hai mai provato ad aggiungere testo da una sezione con segnalibro in un documento di Word e l'hai trovato complicato? Sei fortunato! Questo tutorial ti guiderà attraverso il processo utilizzando Aspose.Words per .NET. Lo suddivideremo in semplici passaggi in modo che tu possa seguirlo facilmente. Immergiamoci e aggiungiamo il testo ai segnalibri come un professionista!
 
@@ -104,7 +104,7 @@ dstDoc.Save("appended_document.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai aggiunto con successo il testo da una sezione con segnalibro in un documento di Word utilizzando Aspose.Words per .NET. Questo potente strumento semplifica la manipolazione dei documenti e ora hai un altro asso nella manica. Buona programmazione!
+Ed ecco qua! Hai aggiunto con successo il testo da una sezione con segnalibro in un documento di Word utilizzando Aspose.Words per .NET. Questo potente strumento semplifica la manipolazione dei documenti e ora hai un altro asso nella manica. Buona programmazione!
 
 ## Domande frequenti
 

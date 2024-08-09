@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### 내보낸 HTML을 사용자 정의할 수 있나요?
 
- 전적으로! Aspose.Words는 HTML 출력을 사용자 정의할 수 있는 다양한 옵션을 제공합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 전적으로! Aspose.Words는 HTML 출력을 사용자 정의할 수 있는 다양한 옵션을 제공합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### Aspose.Words는 .NET Core와 호환됩니까?
 

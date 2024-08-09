@@ -9,7 +9,7 @@ url: /tr/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 ## giriiş
 
-Aspose.Words for .NET'in büyüleyici dünyasına dalmaya hazır mısınız? Kemerlerinizi bağlayın çünkü sizi yazı tiplerinin büyülü diyarında bir yolculuğa çıkarmak üzereyiz. Bugün, Word belgeleriyle çalışırken hedef makinedeki yazı tiplerinin nasıl kullanılacağına odaklanıyoruz. Bu şık özellik, belgenizin nerede görüntülendiğine bakılmaksızın tam olarak istediğiniz gibi görünmesini sağlar. Başlayalım!
+Aspose.Words for .NET'in büyüleyici dünyasına dalmaya hazır mısınız? Kemerlerinizi bağlayın çünkü sizi yazı tiplerinin büyülü diyarında bir yolculuğa çıkarmak üzereyiz. Bugün, Word belgeleriyle çalışırken hedef makinedeki yazı tiplerinin nasıl kullanılacağına odaklanıyoruz. Bu şık özellik, belgenizin nerede görüntülendiğine bakılmaksızın tam olarak istediğiniz gibi görünmesini sağlar. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## Adım 1: Word Belgesini Yükleyin
 
- Eğitimimizin ilk adımı Word belgesini yüklemektir. Hepsi burada başlıyorlar. biz kullanacağız`Document` Bunu başarmak için Aspose.Words kütüphanesinden sınıf.
+ Eğitimimizin ilk adımı Word belgesini yüklemektir. Her şeyin başladığı yer burası. biz kullanacağız`Document` Bunu başarmak için Aspose.Words kütüphanesinden sınıf.
 
 ### Adım 1.1: Belge Yolunu Tanımlayın
 
@@ -69,7 +69,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 
 ## 3. Adım: Belgeyi Kaydedin
 
-Son olarak belgeyi sabit bir HTML dosyası olarak kaydediyoruz. Sihir yapılan yer burasıdır!
+Son olarak belgeyi sabit bir HTML dosyası olarak kaydediyoruz. Sihrin gerçekleştiği yer burası!
 
  biz kullanacağız`Save` Belgeyi yapılandırılmış kaydetme seçenekleriyle kaydetme yöntemi.
 
@@ -89,7 +89,7 @@ HTML dosyasını kaydettiğiniz dizine gidin ve dosyayı bir web tarayıcısınd
 System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak hedef makinedeki yazı tiplerini Word belgenizde başarıyla kullandınız.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak hedef makinedeki yazı tiplerini Word belgenizde başarıyla kullandınız.
 
 ## Çözüm
 
@@ -104,7 +104,7 @@ Evet, Aspose.Words for .NET çeşitli belge formatlarını destekler ve farklı 
 Hedef makinede gerekli yazı tipleri yoksa belge istendiği gibi oluşturulamayabilir. Gerektiğinde yazı tiplerini gömmek her zaman iyi bir fikirdir.
 
 ### Yazı tiplerini bir belgeye nasıl gömebilirim?
- Yazı tiplerini gömme işlemi aşağıdakiler kullanılarak yapılabilir:`FontSettings` Aspose.Words for .NET'teki sınıf. Bakın[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Yazı tiplerini gömme işlemi aşağıdakiler kullanılarak yapılabilir:`FontSettings` Aspose.Words for .NET'teki sınıf. Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
 ### Kaydetmeden önce belgeyi önizlemenin bir yolu var mı?
  Evet, kullanabilirsiniz`DocumentRenderer` Kaydetmeden önce belgeyi önizlemek için sınıf. Aspose.Words for .NET'e göz atın[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla bilgi için.
